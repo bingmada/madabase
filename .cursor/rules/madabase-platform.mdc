@@ -1,0 +1,14 @@
+---
+description: Madabase architecture and implementation constraints
+alwaysApply: true
+---
+
+# Madabase Project Rules
+
+- Build the platform as SSR-first Next.js app, never static export.
+- Keep phase 1 database-free; tools should run in the browser.
+- Use path-based i18n with locale prefixes like `/en/...` and `/zh/...`.
+- Centralize tool definitions in a registry; do not duplicate page logic per tool.
+- Keep SEO metadata, sitemap, robots, and navigation driven from shared config.
+- Reserve ad slots as placeholders until monetization is enabled.
+- Prefer composable components and data-driven rendering for future scale.

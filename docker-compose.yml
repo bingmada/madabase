@@ -1,0 +1,18 @@
+version: '3.9'
+services:
+  web:
+    build: .
+    environment:
+      NODE_ENV: production
+    command: npm run start --workspace apps/web
+    expose:
+      - '3000'
+
+  nginx:
+    image: nginx:1.27-alpine
+    depends_on:
+      - web
+    ports:
+      - '80:80'
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
