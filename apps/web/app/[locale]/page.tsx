@@ -5,7 +5,7 @@ import { toolRegistry } from "@/lib/tools";
 import { isLocale, locales, type Locale } from "@/lib/i18n";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { AdSlot } from "@/components/AdSlot";
+// import { AdSlot } from "@/components/AdSlot";
 import { ToolIcon } from "@/components/ToolIcon";
 
 function ToolCard({

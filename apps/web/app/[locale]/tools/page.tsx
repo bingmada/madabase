@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { AdSlot } from "@/components/AdSlot";
+// import { AdSlot } from "@/components/AdSlot";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { ToolIcon } from "@/components/ToolIcon";
