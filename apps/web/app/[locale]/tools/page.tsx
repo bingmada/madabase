@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-// import { AdSlot } from "@/components/AdSlot";
+import { AdSlot } from "@/components/AdSlot";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { ToolIcon } from "@/components/ToolIcon";
@@ -46,7 +46,7 @@ export default async function ToolsPage({ params }: { params: Promise<{ locale: 
     <div className="min-h-screen bg-transparent">
       <Header locale={locale} pathname="/tools" />
       <main className="page-shell">
-        {/* <AdSlot locale={locale} position="header" /> */}
+        <AdSlot locale={locale} position="header" />
         <section className="surface-card-strong overflow-hidden">
           <div className="grid gap-0 lg:grid-cols-[0.95fr_1.05fr]">
             <div className="p-6 sm:p-8 lg:p-10">
@@ -82,7 +82,7 @@ export default async function ToolsPage({ params }: { params: Promise<{ locale: 
             </Link>
           ))}
         </section>
-        {/* <AdSlot locale={locale} position="content" /> */}
+        <AdSlot locale={locale} position="content" />
       </main>
       <Footer />
     </div>

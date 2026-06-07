@@ -5,7 +5,7 @@ import { toolRegistry } from "@/lib/tools";
 import { isLocale, locales, type Locale } from "@/lib/i18n";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-// import { AdSlot } from "@/components/AdSlot";
+import { AdSlot } from "@/components/AdSlot";
 import { ToolIcon } from "@/components/ToolIcon";
 
 function ToolCard({
@@ -77,7 +77,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
     <div className="min-h-screen bg-transparent">
       <Header locale={locale} pathname="/" />
       <main className="page-shell">
-        {/* <AdSlot locale={locale} position="header" /> */}
+        <AdSlot locale={locale} position="header" />
         <section className="surface-card-strong overflow-hidden">
           <div className="grid gap-0 lg:grid-cols-[1.05fr_0.95fr]">
             <div className="p-6 sm:p-8 lg:p-10">
@@ -119,7 +119,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
               <ToolCard key={tool.slug} locale={locale} slug={tool.slug} title={tool.h1[locale]} description={tool.description[locale]} component={tool.component} />
             ))}
           </div>
-          {/* <AdSlot locale={locale} position="content" /> */}
+          <AdSlot locale={locale} position="content" />
         </section>
 
         {/* <section className="surface-card mt-16 p-6 sm:p-8">
