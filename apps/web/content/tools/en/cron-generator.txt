@@ -1,0 +1,28 @@
+[TITLE]
+Free Online Cron Generator
+[H1]
+Free Cron Generator Online
+[DESCRIPTION]
+Generate cron expressions for scheduled jobs.
+[SEO_TITLE]
+Free Cron Generator Online
+[SEO_DESCRIPTION]
+Build cron expressions quickly for recurring scheduled tasks.
+[INTRO]
+Cron generators are useful when configuring scheduled jobs, scripts, reports, and recurring background tasks.
+[HOW_TO_USE]
+Choose time fields
+Set the minute and hour values for your schedule.
+---
+Generate expression
+Create a valid cron string you can reuse.
+---
+Copy into your scheduler
+Paste it into your OS cron, CI, or task runner.
+[EXAMPLES]
+minute=0, hour=9
+===
+0 9 * * *
+[FAQ]
+What is a cron expression?
+A cron expression defines when a recurring scheduled task should run.

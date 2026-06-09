@@ -1,0 +1,30 @@
+[TITLE]
+Free Online SQL Formatter
+[H1]
+Free SQL Formatter Online
+[DESCRIPTION]
+Format SQL queries for readability and review.
+[SEO_TITLE]
+Free SQL Formatter Online
+[SEO_DESCRIPTION]
+Beautify SQL queries and make clauses easier to scan during debugging.
+[INTRO]
+SQL formatting improves readability when debugging joins, filters, ordering, and long queries in logs or dashboards.
+[HOW_TO_USE]
+Paste SQL
+Insert the query you want to clean up.
+---
+Run formatter
+Break major clauses onto separate lines.
+---
+Review structure
+Check select, where, group by, and order by more easily.
+[EXAMPLES]
+select * from users where active=1
+===
+SELECT ...
+FROM users
+WHERE active=1
+[FAQ]
+Why format SQL?
+Readable SQL is easier to review, debug, and share.

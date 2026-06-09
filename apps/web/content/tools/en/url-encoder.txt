@@ -1,0 +1,28 @@
+[TITLE]
+Free Online URL Encoder and Decoder
+[H1]
+Free URL Encoder and Decoder
+[DESCRIPTION]
+Encode and decode URL strings safely.
+[SEO_TITLE]
+Free URL Encoder and Decoder
+[SEO_DESCRIPTION]
+Encode query strings and URL components safely with a browser-based URL encoder.
+[INTRO]
+URL encoding keeps special characters safe inside query strings, path segments, and redirect parameters.
+[HOW_TO_USE]
+Paste the text
+Insert a query parameter, path value, or full string.
+---
+Encode or decode
+Transform special characters into URL-safe values or restore them.
+---
+Reuse the output
+Copy the result into your app, link, or redirect flow.
+[EXAMPLES]
+hello world?x=1
+===
+hello%20world%3Fx%3D1
+[FAQ]
+What characters are usually encoded?
+Spaces, punctuation, and reserved URL characters are commonly encoded.

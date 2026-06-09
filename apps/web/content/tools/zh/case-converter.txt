@@ -1,0 +1,28 @@
+[TITLE]
+免费在线 Case Converter
+[H1]
+免费 Case Converter 工具
+[DESCRIPTION]
+转换为大写、小写和标题格式。
+[SEO_TITLE]
+免费 Case Converter 工具
+[SEO_DESCRIPTION]
+快速切换文本大小写，适合标题、文案和内容整理。
+[INTRO]
+大小写转换器适合调整标题、UI 文案、slug 和文档内容格式。
+[HOW_TO_USE]
+粘贴文本
+输入需要转换的字符串。
+---
+执行转换
+生成大写、小写和标题格式。
+---
+复制需要的结果
+选择适合当前场景的版本。
+[EXAMPLES]
+madabase growth
+===
+Madabase Growth
+[FAQ]
+最常见的几种大小写是什么？
+最常见的是大写、小写和标题格式。

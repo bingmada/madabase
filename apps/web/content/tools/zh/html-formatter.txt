@@ -1,0 +1,30 @@
+[TITLE]
+免费在线 HTML 格式化工具
+[H1]
+免费 HTML 格式化工具
+[DESCRIPTION]
+即时美化与格式化 HTML。
+[SEO_TITLE]
+免费 HTML 格式化工具
+[SEO_DESCRIPTION]
+快速整理 HTML 结构，方便调试模板、片段和嵌入代码。
+[INTRO]
+HTML 格式化可以提升代码可读性，适合检查片段、邮件模板和生成后的标记。
+[HOW_TO_USE]
+粘贴 HTML
+输入紧凑片段或自动生成的 HTML。
+---
+运行格式化
+将内容整理成更易阅读的结构。
+---
+检查并复制
+确认嵌套正确后再复制使用。
+[EXAMPLES]
+<div><p>Hello</p></div>
+===
+<div>
+<p>Hello</p>
+</div>
+[FAQ]
+它会改变 HTML 结构吗？
+它主要处理简单标记的空白和缩进。复杂模板格式化后建议人工检查。

@@ -1,0 +1,28 @@
+[TITLE]
+Free Online YAML Formatter
+[H1]
+Free YAML Formatter Online
+[DESCRIPTION]
+Format YAML for cleaner configs and manifests.
+[SEO_TITLE]
+Free YAML Formatter Online
+[SEO_DESCRIPTION]
+Format YAML files and configuration snippets in the browser.
+[INTRO]
+YAML formatting helps when reviewing config files, CI pipelines, Kubernetes manifests, and static site settings.
+[HOW_TO_USE]
+Paste YAML
+Insert the configuration snippet you want to clean up.
+---
+Run formatter
+Normalize lines and spacing for better readability.
+---
+Copy the result
+Reuse the formatted YAML in CI, infra, or app config.
+[EXAMPLES]
+name:Madabase
+===
+name: Madabase
+[FAQ]
+Where is YAML commonly used?
+YAML is common in CI files, manifests, and configuration systems.

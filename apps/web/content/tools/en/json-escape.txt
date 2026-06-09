@@ -1,0 +1,28 @@
+[TITLE]
+Free Online JSON Escape Tool
+[H1]
+Free JSON Escape Tool
+[DESCRIPTION]
+Escape JSON strings for code, logs, and payloads.
+[SEO_TITLE]
+Free JSON Escape Tool
+[SEO_DESCRIPTION]
+Escape quotes and special characters in JSON strings instantly.
+[INTRO]
+Escaping JSON strings is useful when embedding payloads inside source code, shell commands, or nested data.
+[HOW_TO_USE]
+Paste raw text
+Add the string you need to escape for JSON usage.
+---
+Run escape
+Convert quotes and special characters into safe JSON string form.
+---
+Copy output
+Paste the escaped result into code or config files.
+[EXAMPLES]
+hello "world"
+===
+"hello \"world\""
+[FAQ]
+Why escape a JSON string?
+Escaping lets you embed text safely inside JSON and source code.

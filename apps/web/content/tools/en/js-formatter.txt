@@ -1,0 +1,29 @@
+[TITLE]
+Free Online JavaScript Formatter
+[H1]
+Free JavaScript Formatter Online
+[DESCRIPTION]
+Format JavaScript snippets for readability.
+[SEO_TITLE]
+Free JavaScript Formatter Online
+[SEO_DESCRIPTION]
+Beautify JavaScript code and inspect snippets more easily in the browser.
+[INTRO]
+JavaScript formatting is useful when debugging copied snippets, generated code, or quick examples from logs and docs.
+[HOW_TO_USE]
+Paste JavaScript
+Insert the snippet you want to reformat.
+---
+Run formatter
+Break statements and blocks onto more readable lines.
+---
+Copy the result
+Reuse it for review or editing.
+[EXAMPLES]
+const a=1;console.log(a);
+===
+const a=1;
+console.log(a);
+[FAQ]
+When is a JS formatter useful?
+It is useful when reading compressed snippets or generated JavaScript.

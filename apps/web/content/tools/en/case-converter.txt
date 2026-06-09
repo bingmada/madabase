@@ -1,0 +1,28 @@
+[TITLE]
+Free Online Case Converter
+[H1]
+Free Case Converter Online
+[DESCRIPTION]
+Convert text to upper, lower, and title case.
+[SEO_TITLE]
+Free Case Converter Online
+[SEO_DESCRIPTION]
+Change text case instantly for headlines, code snippets, and content cleanup.
+[INTRO]
+Case converters save time when adapting content for headings, UI labels, slugs, and docs.
+[HOW_TO_USE]
+Paste text
+Add the string you want to transform.
+---
+Run conversion
+Generate uppercase, lowercase, and title case versions.
+---
+Copy the needed style
+Reuse the version that fits your workflow.
+[EXAMPLES]
+madabase growth
+===
+Madabase Growth
+[FAQ]
+What cases are most common?
+Uppercase, lowercase, and title case are the most common quick conversions.

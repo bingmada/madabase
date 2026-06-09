@@ -1,0 +1,28 @@
+[TITLE]
+Free Online Text Cleaner
+[H1]
+Free Text Cleaner Online
+[DESCRIPTION]
+Clean text by removing extra spaces and line noise.
+[SEO_TITLE]
+Free Text Cleaner Online
+[SEO_DESCRIPTION]
+Normalize messy text, remove extra spaces, and clean pasted content fast.
+[INTRO]
+Text cleaners help when content is copied from PDFs, chats, emails, or editors with messy spacing.
+[HOW_TO_USE]
+Paste messy text
+Insert copied content with extra whitespace.
+---
+Run cleanup
+Normalize spaces and compress noisy formatting.
+---
+Copy the cleaned text
+Reuse the output in docs, forms, or writing workflows.
+[EXAMPLES]
+hello   world
+===
+hello world
+[FAQ]
+What kinds of text need cleaning?
+Copied text from PDFs, chat logs, and rich editors often needs cleanup.

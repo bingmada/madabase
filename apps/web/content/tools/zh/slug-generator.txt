@@ -1,0 +1,28 @@
+[TITLE]
+免费在线 Slug Generator
+[H1]
+免费 Slug Generator 工具
+[DESCRIPTION]
+从标题生成干净的 URL slug。
+[SEO_TITLE]
+免费 Slug Generator 工具
+[SEO_DESCRIPTION]
+将标题快速转换为适合 SEO 的 URL slug。
+[INTRO]
+Slug 生成器适合博客文章、文档页面、分类页和其它需要 SEO 友好链接的场景。
+[HOW_TO_USE]
+输入标题
+粘贴要转成 slug 的标题或短语。
+---
+生成 slug
+自动规范大小写、空格和标点。
+---
+复制到链接中
+用于路由、CMS 或博客系统。
+[EXAMPLES]
+Best Online Developer Tools
+===
+best-online-developer-tools
+[FAQ]
+为什么需要 slug？
+清晰的 slug 有助于阅读、管理内容和组织路由。

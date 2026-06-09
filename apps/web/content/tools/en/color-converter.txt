@@ -1,0 +1,28 @@
+[TITLE]
+Free Online Color Converter
+[H1]
+Free Color Converter Online
+[DESCRIPTION]
+Convert color values like HEX to RGB.
+[SEO_TITLE]
+Free Color Converter Online
+[SEO_DESCRIPTION]
+Convert hex colors to RGB instantly for web and design workflows.
+[INTRO]
+Color converters help designers and frontend developers move between CSS-ready color formats quickly.
+[HOW_TO_USE]
+Enter a HEX color
+Use a six-character CSS color value.
+---
+Convert to RGB
+The tool calculates the matching red, green, and blue values.
+---
+Reuse in CSS
+Copy the output into styles or design specs.
+[EXAMPLES]
+#0f766e
+===
+rgb(15, 118, 110)
+[FAQ]
+When do designers use this?
+Color conversion is useful when moving between design tools and CSS.

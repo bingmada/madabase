@@ -1,0 +1,28 @@
+[TITLE]
+Free Online QR Code Generator
+[H1]
+Free QR Code Generator Online
+[DESCRIPTION]
+Generate QR codes for links and text.
+[SEO_TITLE]
+Free QR Code Generator Online
+[SEO_DESCRIPTION]
+Create QR codes for URLs, text, and sharing workflows instantly.
+[INTRO]
+QR code generators are useful for links, event materials, product packaging, docs, and offline-to-online sharing.
+[HOW_TO_USE]
+Enter text or URL
+Paste the destination link or content you want to encode.
+---
+Generate the QR code
+The tool renders a browser-side QR-style SVG.
+---
+Copy or export
+Reuse the SVG in your workflow or assets.
+[EXAMPLES]
+https://madabase.com
+===
+Rendered QR SVG
+[FAQ]
+What can a QR code contain?
+QR codes can contain URLs, plain text, and other machine-readable values.

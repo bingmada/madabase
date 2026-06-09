@@ -1,0 +1,28 @@
+[TITLE]
+Free Online Regex Tester
+[H1]
+Free Regex Tester Online
+[DESCRIPTION]
+Test regular expressions against sample text.
+[SEO_TITLE]
+Free Regex Tester Online
+[SEO_DESCRIPTION]
+Test regex patterns and view matches directly in the browser.
+[INTRO]
+Regex testers help you validate patterns for validation, parsing, replacements, and search rules before shipping them.
+[HOW_TO_USE]
+Enter a regex pattern
+Add the expression and flags you want to test.
+---
+Paste sample text
+Use the real string you want to validate or parse.
+---
+Review matches
+Inspect returned matches and refine the pattern.
+[EXAMPLES]
+pattern: \d+
+===
+Finds all number sequences
+[FAQ]
+Who needs a regex tester?
+Developers, analysts, and content teams use regex testers to validate patterns.

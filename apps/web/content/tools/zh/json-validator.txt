@@ -1,0 +1,28 @@
+[TITLE]
+免费在线 JSON 校验器
+[H1]
+免费 JSON 校验器
+[DESCRIPTION]
+校验 JSON 并展示有用的语法错误提示。
+[SEO_TITLE]
+免费 JSON 校验器
+[SEO_DESCRIPTION]
+快速检查 JSON 语法错误，避免接口、配置或脚本解析失败。
+[INTRO]
+JSON 校验器可以帮助你发现缺少逗号、引号错误或尾部多余字符等常见问题。
+[HOW_TO_USE]
+粘贴 JSON 输入
+把需要检查的 JSON 片段放入输入框。
+---
+运行校验
+工具会在浏览器中检查 JSON.parse 是否能通过。
+---
+根据提示修复
+按错误信息修复语法，再次校验即可。
+[EXAMPLES]
+{"name":"Madabase",}
+===
+语法错误：JSON 不支持尾逗号
+[FAQ]
+它能发现哪些错误？
+它会检测 JSON.parse 能识别的语法错误，并显示浏览器返回的错误信息。

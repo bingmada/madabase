@@ -1,0 +1,31 @@
+[TITLE]
+免费在线 JSON 格式化工具
+[H1]
+免费 JSON 格式化工具
+[DESCRIPTION]
+在浏览器中快速格式化、压缩并校验 JSON。
+[SEO_TITLE]
+免费 JSON 格式化工具
+[SEO_DESCRIPTION]
+快速美化、压缩并校验 JSON，适合调试接口与配置内容。
+[INTRO]
+JSON 格式化工具可以把紧凑数据转成易读结构，方便调试接口返回、配置文件和日志。
+[HOW_TO_USE]
+粘贴 JSON
+将接口响应、配置文件或日志里的 JSON 粘贴进输入框。
+---
+选择格式化或压缩
+阅读时用格式化，传输或复制时可选择压缩。
+---
+复制前先校验
+先检查语法是否正确，再复制输出结果。
+[EXAMPLES]
+{"name":"Madabase","active":true}
+===
+{
+  "name": "Madabase",
+  "active": true
+}
+[FAQ]
+JSON 格式化工具做什么？
+它可以在浏览器本地完成 JSON 格式化、压缩与校验。

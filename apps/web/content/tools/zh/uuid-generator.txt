@@ -1,0 +1,28 @@
+[TITLE]
+免费在线 UUID 生成器
+[H1]
+免费 UUID 生成器
+[DESCRIPTION]
+一键生成安全的 UUID。
+[SEO_TITLE]
+免费 UUID 生成器
+[SEO_DESCRIPTION]
+快速生成 UUID v4，适合测试数据、记录 ID 和临时标识符。
+[INTRO]
+UUID 生成器适合需要低冲突唯一 ID 的场景，比如测试数据、数据库记录和链接标识。
+[HOW_TO_USE]
+生成 UUID
+点击生成，在浏览器本地创建新的 UUID。
+---
+复制结果
+可用于 mock 数据、数据库记录或测试流程。
+---
+按需重复
+每次需要新标识符时都可以重新生成。
+[EXAMPLES]
+生成
+===
+550e8400-e29b-41d4-a716-446655440000
+[FAQ]
+生成的是哪个 UUID 版本？
+该工具会在浏览器中生成 UUID v4 风格标识符。

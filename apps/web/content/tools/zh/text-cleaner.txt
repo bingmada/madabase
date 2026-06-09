@@ -1,0 +1,28 @@
+[TITLE]
+免费在线 Text Cleaner
+[H1]
+免费 Text Cleaner 工具
+[DESCRIPTION]
+清理文本中的多余空格和杂乱换行。
+[SEO_TITLE]
+免费 Text Cleaner 工具
+[SEO_DESCRIPTION]
+快速清理复制文本中的多余空格和格式噪音。
+[INTRO]
+当文本来自 PDF、聊天记录、邮件或编辑器时，Text Cleaner 很适合做快速整理。
+[HOW_TO_USE]
+粘贴杂乱文本
+输入带有多余空格或格式噪音的内容。
+---
+执行清理
+统一空格并压缩无用格式。
+---
+复制清理结果
+可继续用于文档、表单或写作场景。
+[EXAMPLES]
+hello   world
+===
+hello world
+[FAQ]
+哪些文本最需要清理？
+来自 PDF、聊天记录和富文本编辑器的复制内容最常需要清理。

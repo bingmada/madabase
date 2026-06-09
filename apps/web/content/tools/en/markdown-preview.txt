@@ -1,0 +1,29 @@
+[TITLE]
+Free Online Markdown Preview
+[H1]
+Free Markdown Preview Online
+[DESCRIPTION]
+Preview Markdown content in real time.
+[SEO_TITLE]
+Free Markdown Preview Online
+[SEO_DESCRIPTION]
+Write Markdown and preview headings, lists, links, and code blocks instantly.
+[INTRO]
+Markdown preview tools help writers and developers review structure before publishing docs, changelogs, or articles.
+[HOW_TO_USE]
+Write or paste Markdown
+Use headings, lists, code blocks, and links in the editor.
+---
+Preview in real time
+Check visual structure as you type.
+---
+Refine before publishing
+Adjust formatting before sending content to GitHub, docs, or blogs.
+[EXAMPLES]
+# Title
+- item
+===
+Rendered heading and list preview
+[FAQ]
+What is Markdown good for?
+Markdown is commonly used for documentation, READMEs, and blog drafts.

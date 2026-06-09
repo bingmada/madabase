@@ -1,0 +1,28 @@
+[TITLE]
+Free Online Character Counter
+[H1]
+Free Character Counter Online
+[DESCRIPTION]
+Count characters in text instantly.
+[SEO_TITLE]
+Free Character Counter Online
+[SEO_DESCRIPTION]
+Measure character length for titles, posts, and SEO descriptions.
+[INTRO]
+Character counters are useful for meta descriptions, social captions, UI copy, and input limits.
+[HOW_TO_USE]
+Paste text
+Add the text you want to measure.
+---
+Read the count
+See how many characters are currently used.
+---
+Adjust for limits
+Refine the text to fit SEO or UI constraints.
+[EXAMPLES]
+Madabase
+===
+8 characters
+[FAQ]
+Why track character length?
+Length limits matter for SEO snippets, buttons, captions, and forms.

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { trackEvent } from "@/lib/analytics";
 import { CopyButton, ResetButton, StatusMessage, ToolButton, ToolPanel, ToolTextarea } from "./ToolPrimitives";
 
 const sample = '{"name":"Madabase","tools":["JSON Formatter","JWT Decoder"],"online":true}';
@@ -19,6 +20,7 @@ export function JsonFormatter() {
       setInput(JSON.stringify(parseJson(), null, 2));
       setMessage("JSON formatted successfully.");
       setTone("success");
+      trackEvent({ event: "tool_use", tool: "json-formatter" });
     } catch (error) {
       setMessage(error instanceof Error ? error.message : "Invalid JSON.");
       setTone("error");
@@ -30,6 +32,7 @@ export function JsonFormatter() {
       setInput(JSON.stringify(parseJson()));
       setMessage("JSON minified successfully.");
       setTone("success");
+      trackEvent({ event: "tool_use", tool: "json-formatter" });
     } catch (error) {
       setMessage(error instanceof Error ? error.message : "Invalid JSON.");
       setTone("error");
@@ -41,6 +44,7 @@ export function JsonFormatter() {
       parseJson();
       setMessage("Valid JSON.");
       setTone("success");
+      trackEvent({ event: "tool_use", tool: "json-formatter" });
     } catch (error) {
       setMessage(error instanceof Error ? error.message : "Invalid JSON.");
       setTone("error");

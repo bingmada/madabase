@@ -1,0 +1,31 @@
+[TITLE]
+JSON 转 TypeScript Interface 工具
+[H1]
+JSON 转 TypeScript Interface 工具
+[DESCRIPTION]
+从 JSON 示例自动生成 TypeScript Interface。
+[SEO_TITLE]
+JSON 转 TypeScript Interface 工具
+[SEO_DESCRIPTION]
+把 JSON 数据结构转换为 TypeScript 接口，适合前后端开发。
+[INTRO]
+通过示例 JSON 生成类型定义，可以更快完成 API 类型、DTO 和页面状态建模。
+[HOW_TO_USE]
+粘贴示例 JSON
+使用有代表性的对象或接口返回数据。
+---
+生成接口
+工具会推断基础类型、嵌套对象和数组。
+---
+按业务调整
+生成后可以继续修改命名和可选字段。
+[EXAMPLES]
+{"id":1,"name":"Ada"}
+===
+interface Root {
+  id: number;
+  name: string;
+}
+[FAQ]
+可以识别嵌套对象吗？
+可以。MVP 版本会为对象字段和数组生成嵌套接口。

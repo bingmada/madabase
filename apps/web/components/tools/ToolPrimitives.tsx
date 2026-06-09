@@ -49,6 +49,36 @@ export function ToolTextarea({
   );
 }
 
+export function ToolInput({
+  label,
+  value,
+  onChange,
+  placeholder,
+  readOnly = false,
+  type = "text",
+}: {
+  label: string;
+  value: string;
+  onChange?: (value: string) => void;
+  placeholder?: string;
+  readOnly?: boolean;
+  type?: "text" | "number";
+}) {
+  return (
+    <label className="block">
+      <span className="code-font text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-soft)]">{label}</span>
+      <input
+        type={type}
+        value={value}
+        onChange={(event) => onChange?.(event.target.value)}
+        placeholder={placeholder}
+        readOnly={readOnly}
+        className="code-font mt-2 h-11 w-full rounded-md border border-[var(--border)] bg-white px-3 text-sm text-[var(--text)] outline-none transition placeholder:text-[var(--text-soft)] focus:border-[var(--brand)] focus:ring-2 focus:ring-[rgba(15,118,110,0.13)]"
+      />
+    </label>
+  );
+}
+
 export function ToolButton({
   children,
   onClick,

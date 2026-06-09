@@ -1,0 +1,28 @@
+[TITLE]
+免费在线 Hash Generator
+[H1]
+免费 Hash Generator 工具
+[DESCRIPTION]
+从文本生成简单哈希值。
+[SEO_TITLE]
+免费 Hash Generator 工具
+[SEO_DESCRIPTION]
+快速生成文本哈希，适合本地测试、演示和工具流程。
+[INTRO]
+哈希生成器适合演示、示例或轻量本地校验，需要稳定派生值时很方便。
+[HOW_TO_USE]
+输入文本
+粘贴需要转换的字符串。
+---
+生成哈希
+将文本转换为确定性的输出结果。
+---
+复制使用
+可用于测试或示例场景。
+[EXAMPLES]
+Madabase
+===
+5d4140
+[FAQ]
+它适合安全加密用途吗？
+不适合。这个 MVP 工具主要面向轻量本地哈希演示。

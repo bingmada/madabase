@@ -1,0 +1,28 @@
+[TITLE]
+免费在线 Cron Generator
+[H1]
+免费 Cron Generator 工具
+[DESCRIPTION]
+生成定时任务 cron 表达式。
+[SEO_TITLE]
+免费 Cron Generator 工具
+[SEO_DESCRIPTION]
+快速创建 cron 表达式，用于计划任务和周期性脚本。
+[INTRO]
+Cron 生成器适合配置定时任务、自动脚本、报表和后台周期执行流程。
+[HOW_TO_USE]
+设置时间字段
+填写分钟和小时等基础调度信息。
+---
+生成表达式
+快速得到可复用的 cron 字符串。
+---
+复制到调度系统
+可直接用于系统 cron、CI 或任务调度器。
+[EXAMPLES]
+minute=0, hour=9
+===
+0 9 * * *
+[FAQ]
+什么是 cron 表达式？
+cron 表达式用于定义周期性任务的执行时间。

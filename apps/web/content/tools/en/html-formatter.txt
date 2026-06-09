@@ -1,0 +1,30 @@
+[TITLE]
+Free Online HTML Formatter
+[H1]
+Free HTML Formatter Online
+[DESCRIPTION]
+Beautify and format HTML instantly.
+[SEO_TITLE]
+Free HTML Formatter Online
+[SEO_DESCRIPTION]
+Beautify HTML markup and make templates easier to debug and review.
+[INTRO]
+HTML formatting improves readability when you inspect snippets, email templates, embedded widgets, or generated markup.
+[HOW_TO_USE]
+Paste HTML
+Insert a compact snippet or generated markup.
+---
+Run formatter
+Beautify the structure into more readable lines.
+---
+Review and copy
+Check nesting before reusing the formatted output.
+[EXAMPLES]
+<div><p>Hello</p></div>
+===
+<div>
+<p>Hello</p>
+</div>
+[FAQ]
+Does it change the HTML structure?
+It only formats whitespace and indentation for simple markup. Always review complex templates after formatting.

@@ -1,0 +1,30 @@
+[TITLE]
+Free Online URL Parser
+[H1]
+Free URL Parser Online
+[DESCRIPTION]
+Parse URLs into protocol, host, path, query, and hash.
+[SEO_TITLE]
+Free URL Parser Online
+[SEO_DESCRIPTION]
+Break down URLs into readable components instantly in your browser.
+[INTRO]
+URL parsing helps when debugging redirects, callback URLs, query strings, routing bugs, and tracking links.
+[HOW_TO_USE]
+Paste a full URL
+Insert the address you want to inspect.
+---
+Parse the parts
+Extract protocol, host, pathname, query, and hash.
+---
+Review components
+Use the output to debug links or route handling.
+[EXAMPLES]
+https://madabase.com/en/tools?ref=seo#faq
+===
+{
+  "protocol": "https:"
+}
+[FAQ]
+Why parse URLs?
+Parsing makes it easier to inspect query strings, paths, and fragments.

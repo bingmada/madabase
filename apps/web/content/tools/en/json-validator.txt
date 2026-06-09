@@ -1,0 +1,28 @@
+[TITLE]
+Free Online JSON Validator
+[H1]
+Free JSON Validator Online
+[DESCRIPTION]
+Validate JSON and surface syntax errors with useful hints.
+[SEO_TITLE]
+Free JSON Validator Online
+[SEO_DESCRIPTION]
+Validate JSON instantly and catch syntax problems before your app breaks.
+[INTRO]
+Use a JSON validator to catch missing commas, invalid quotes, or trailing characters before JSON enters your application.
+[HOW_TO_USE]
+Paste JSON input
+Add the JSON snippet you want to verify.
+---
+Run validation
+The tool checks JSON.parse compatibility in your browser.
+---
+Fix reported errors
+Correct the reported syntax issue and validate again.
+[EXAMPLES]
+{"name":"Madabase",}
+===
+Syntax error: trailing comma is not valid JSON
+[FAQ]
+What errors can it detect?
+It detects JSON.parse syntax errors and shows the browser-provided error message.

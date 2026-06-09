@@ -1,0 +1,28 @@
+[TITLE]
+免费在线 Character Counter
+[H1]
+免费 Character Counter 工具
+[DESCRIPTION]
+快速统计文本字符数。
+[SEO_TITLE]
+免费 Character Counter 工具
+[SEO_DESCRIPTION]
+适合 SEO 描述、标题、文案和输入长度限制场景。
+[INTRO]
+字符计数适合控制 meta description、社媒文案、按钮文字和输入上限。
+[HOW_TO_USE]
+粘贴文本
+输入需要计算长度的内容。
+---
+查看结果
+立即知道当前字符总数。
+---
+按限制调整
+根据 SEO 或 UI 限制优化文案。
+[EXAMPLES]
+Madabase
+===
+8 characters
+[FAQ]
+为什么要关注字符数？
+SEO 摘要、按钮文案、表单和社媒内容常常有长度限制。

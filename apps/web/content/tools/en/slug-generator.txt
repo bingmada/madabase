@@ -1,0 +1,28 @@
+[TITLE]
+Free Online Slug Generator
+[H1]
+Free Slug Generator Online
+[DESCRIPTION]
+Generate clean URL slugs from titles.
+[SEO_TITLE]
+Free Slug Generator Online
+[SEO_DESCRIPTION]
+Turn titles into SEO-friendly URL slugs instantly.
+[INTRO]
+Slug generators are useful for blog posts, docs pages, category pages, and other SEO-friendly URLs.
+[HOW_TO_USE]
+Enter a title
+Paste the heading or phrase you want to turn into a slug.
+---
+Generate the slug
+Normalize spacing, casing, and punctuation.
+---
+Reuse in URLs
+Copy the slug into routes, CMS entries, or blog systems.
+[EXAMPLES]
+Best Online Developer Tools
+===
+best-online-developer-tools
+[FAQ]
+Why use slugs?
+Clean slugs improve readability and help organize routes and content.

@@ -1,0 +1,31 @@
+[TITLE]
+Free Online CSS Formatter
+[H1]
+Free CSS Formatter Online
+[DESCRIPTION]
+Beautify CSS for easier editing and debugging.
+[SEO_TITLE]
+Free CSS Formatter Online
+[SEO_DESCRIPTION]
+Format CSS rules and declarations into a cleaner readable layout.
+[INTRO]
+CSS formatters help when inspecting compressed styles, snippets, generated code, or copied stylesheets.
+[HOW_TO_USE]
+Paste CSS
+Insert the compact CSS snippet you want to tidy up.
+---
+Run formatter
+Break declarations onto cleaner lines.
+---
+Review and copy
+Use the result in debugging or editing workflows.
+[EXAMPLES]
+body{margin:0;color:#111}
+===
+body {
+margin:0;
+color:#111;
+}
+[FAQ]
+Why format CSS?
+Readable styles are easier to debug and edit.

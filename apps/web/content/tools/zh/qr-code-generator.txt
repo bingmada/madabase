@@ -1,0 +1,28 @@
+[TITLE]
+免费在线 QR Code Generator
+[H1]
+免费 QR Code Generator 工具
+[DESCRIPTION]
+为链接和文本生成二维码。
+[SEO_TITLE]
+免费 QR Code Generator 工具
+[SEO_DESCRIPTION]
+快速生成用于链接、文本和分享场景的二维码。
+[INTRO]
+二维码生成器适合链接分享、活动物料、产品包装、文档和线下导流场景。
+[HOW_TO_USE]
+输入文本或链接
+粘贴目标 URL 或需要编码的内容。
+---
+生成二维码
+工具会在浏览器中生成二维码样式 SVG。
+---
+复制或导出
+可继续用于设计资源或分享流程。
+[EXAMPLES]
+https://madabase.com
+===
+渲染后的二维码 SVG
+[FAQ]
+二维码能包含什么内容？
+它可以包含 URL、纯文本或其它可机器读取的值。

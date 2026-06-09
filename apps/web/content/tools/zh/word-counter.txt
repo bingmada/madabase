@@ -1,0 +1,28 @@
+[TITLE]
+免费在线 Word Counter
+[H1]
+免费 Word Counter 工具
+[DESCRIPTION]
+快速统计文本中的单词数量。
+[SEO_TITLE]
+免费 Word Counter 工具
+[SEO_DESCRIPTION]
+适合文章、作文和文案草稿的单词计数工具。
+[INTRO]
+Word Counter 适合博客草稿、作文、社交内容和需要控制篇幅的文案任务。
+[HOW_TO_USE]
+粘贴文本
+输入段落、草稿或文章内容。
+---
+查看字数
+工具会立即统计当前单词总数。
+---
+按目标调整
+根据要求增减内容长度。
+[EXAMPLES]
+Madabase builds online tools
+===
+4 words
+[FAQ]
+什么时候需要统计单词数？
+作文、博客提纲和内容任务通常都有字数要求。

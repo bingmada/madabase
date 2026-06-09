@@ -1,0 +1,28 @@
+[TITLE]
+免费在线 Color Converter
+[H1]
+免费 Color Converter 工具
+[DESCRIPTION]
+转换颜色值，例如 HEX 转 RGB。
+[SEO_TITLE]
+免费 Color Converter 工具
+[SEO_DESCRIPTION]
+快速把十六进制颜色转换成 RGB，适合前端和设计流程。
+[INTRO]
+颜色转换器适合前端和设计师在不同 CSS 颜色格式之间快速切换。
+[HOW_TO_USE]
+输入 HEX 颜色
+填写六位十六进制颜色值。
+---
+转换为 RGB
+工具会计算出对应的 RGB 结果。
+---
+用于 CSS
+复制到样式代码或设计说明中。
+[EXAMPLES]
+#0f766e
+===
+rgb(15, 118, 110)
+[FAQ]
+设计师什么时候会用到它？
+当设计稿和 CSS 需要在不同颜色格式之间切换时会很有用。

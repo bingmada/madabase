@@ -1,0 +1,28 @@
+[TITLE]
+免费在线 Regex Tester
+[H1]
+免费 Regex Tester 工具
+[DESCRIPTION]
+对示例文本测试正则表达式。
+[SEO_TITLE]
+免费 Regex Tester 工具
+[SEO_DESCRIPTION]
+在浏览器中测试正则模式并查看匹配结果。
+[INTRO]
+Regex Tester 适合在上线前验证校验规则、解析模式、替换逻辑和搜索表达式。
+[HOW_TO_USE]
+输入正则模式
+填写要测试的表达式和 flags。
+---
+粘贴示例文本
+尽量使用真实业务中的字符串。
+---
+查看匹配结果
+根据返回内容继续优化模式。
+[EXAMPLES]
+pattern: \d+
+===
+匹配所有数字片段
+[FAQ]
+谁会用到 Regex Tester？
+开发者、分析人员和内容团队都会用它来验证匹配规则。

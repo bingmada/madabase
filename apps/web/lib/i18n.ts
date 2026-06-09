@@ -11,3 +11,9 @@ export const localeLabels: Record<Locale, string> = {
 export function isLocale(value: string): value is Locale {
   return locales.includes(value as Locale);
 }
+
+export function getLocaleAlternates(path: string) {
+  const normalizedPath = path.startsWith("/") ? path : `/${path}`;
+
+  return Object.fromEntries(locales.map((locale) => [locale, `/${locale}${normalizedPath}`])) as Record<Locale, string>;
+}

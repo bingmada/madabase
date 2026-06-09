@@ -1,0 +1,30 @@
+[TITLE]
+免费在线 SQL 格式化工具
+[H1]
+免费 SQL 格式化工具
+[DESCRIPTION]
+格式化 SQL 查询，提高可读性。
+[SEO_TITLE]
+免费 SQL 格式化工具
+[SEO_DESCRIPTION]
+快速美化 SQL 语句，更方便调试和审查查询逻辑。
+[INTRO]
+SQL 格式化适合排查 join、条件过滤、排序和日志中的长查询语句。
+[HOW_TO_USE]
+粘贴 SQL
+输入需要整理的查询语句。
+---
+执行格式化
+将主要子句拆分到独立行。
+---
+检查结构
+更容易查看 select、where、group by 和 order by。
+[EXAMPLES]
+select * from users where active=1
+===
+SELECT ...
+FROM users
+WHERE active=1
+[FAQ]
+为什么要格式化 SQL？
+更易读的 SQL 更方便调试、审查和分享。

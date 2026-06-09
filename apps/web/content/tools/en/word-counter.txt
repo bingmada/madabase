@@ -1,0 +1,28 @@
+[TITLE]
+Free Online Word Counter
+[H1]
+Free Word Counter Online
+[DESCRIPTION]
+Count words in plain text instantly.
+[SEO_TITLE]
+Free Word Counter Online
+[SEO_DESCRIPTION]
+Count words quickly for articles, essays, and content drafts.
+[INTRO]
+Word counters are useful for blog drafts, essays, social content, and copywriting tasks with length targets.
+[HOW_TO_USE]
+Paste your text
+Insert the paragraph, draft, or article.
+---
+Read the word count
+The tool calculates the current total instantly.
+---
+Edit as needed
+Trim or expand content to fit your target length.
+[EXAMPLES]
+Madabase builds online tools
+===
+4 words
+[FAQ]
+When does word count matter?
+Word count matters for essays, blog briefs, and editorial guidelines.

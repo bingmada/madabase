@@ -12,8 +12,9 @@ export function Header({ locale, pathname = "/" }: { locale: Locale; pathname?: 
           </span>
           <span className="text-base font-semibold text-[var(--text)]">Madabase</span>
         </Link>
-        <nav className="flex min-w-0 items-center gap-2 text-sm text-[var(--text-muted)] sm:gap-3">
+        <nav className="flex min-w-0 items-center gap-1 text-sm text-[var(--text-muted)] sm:gap-2">
           <Link href={`/${locale}/tools`} className="rounded-md px-2.5 py-1.5 font-medium transition hover:bg-white hover:text-[var(--text)]">Tools</Link>
+          <Link href={`/${locale}/blog`} className="rounded-md px-2.5 py-1.5 font-medium transition hover:bg-white hover:text-[var(--text)]">Blog</Link>
           <Link href={`/${locale}/ai`} className="rounded-md px-2.5 py-1.5 font-medium transition hover:bg-white hover:text-[var(--text)]">AI</Link>
           <LanguageSwitcher locale={locale} pathname={pathname} />
         </nav>

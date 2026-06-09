@@ -1,0 +1,28 @@
+[TITLE]
+免费在线 JSON Escape 工具
+[H1]
+免费 JSON Escape 工具
+[DESCRIPTION]
+转义 JSON 字符串，适用于代码、日志和请求体。
+[SEO_TITLE]
+免费 JSON Escape 工具
+[SEO_DESCRIPTION]
+快速转义引号和特殊字符，便于在代码或配置中嵌入 JSON。
+[INTRO]
+当你需要把 JSON 内容嵌入代码、命令行或嵌套数据时，转义工具会很有用。
+[HOW_TO_USE]
+粘贴原始文本
+输入要转成 JSON 字符串的内容。
+---
+执行转义
+把引号和特殊字符转换为安全格式。
+---
+复制输出
+可直接用于代码或配置文件。
+[EXAMPLES]
+hello "world"
+===
+"hello \"world\""
+[FAQ]
+为什么要转义 JSON 字符串？
+转义后才能更安全地嵌入 JSON、源码或配置内容。

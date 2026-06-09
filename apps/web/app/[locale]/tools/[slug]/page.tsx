@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
-import { toolMap, toolRegistry } from "@/lib/tools";
+import { getRelatedTools, toolMap, toolRegistry } from "@/lib/tools";
 import { isLocale, locales } from "@/lib/i18n";
-import { buildLocaleCanonical, buildToolMetadata } from "@/lib/seo";
+import { buildToolMetadata } from "@/lib/seo";
 import { ToolLayout } from "@/components/ToolLayout";
 import { ToolIcon } from "@/components/ToolIcon";
 import { ToolRenderer } from "@/components/tools/ToolRenderer";
@@ -18,10 +19,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   if (!tool) return {};
 
   return buildToolMetadata({
-    title: `${tool.title[locale]} | Madabase`,
-    description: tool.description[locale],
+    title: tool.seoTitle[locale],
+    description: tool.seoDescription[locale],
     keywords: tool.keywords,
-    canonical: buildLocaleCanonical(locale, `/tools/${tool.slug}`),
+    locale,
+    path: `/tools/${tool.slug}`,
   });
 }
 
@@ -32,9 +34,10 @@ export default async function ToolPage({ params }: { params: Promise<{ locale: s
   if (!tool) notFound();
 
   const faq = tool.faq[locale];
+  const relatedTools = getRelatedTools(tool.slug);
 
   return (
-    <ToolLayout locale={locale} pathname={`/tools/${tool.slug}`}>
+    <ToolLayout locale={locale} pathname={`/tools/${tool.slug}`} tool={tool.slug}>
       <article className="surface-card-strong overflow-hidden">
         <header className="border-b border-[var(--border)] p-5 sm:p-7">
           <div className="flex items-start gap-4">
@@ -53,17 +56,46 @@ export default async function ToolPage({ params }: { params: Promise<{ locale: s
           <ToolRenderer component={tool.component} />
         </section>
 
-        <section className="space-y-6 p-5 sm:p-7">
-          {tool.body[locale].map((section) => (
-            <div key={section.heading}>
-              <h2 className="text-2xl font-bold text-[var(--text)]">{section.heading}</h2>
-              <p className="mt-3 leading-7 text-[var(--text-muted)]">{section.text}</p>
-            </div>
-          ))}
+        <section className="border-t border-[var(--border)] p-5 sm:p-7">
+          <h2 className="text-2xl font-bold text-[var(--text)]">{locale === "en" ? "Introduction" : "介绍"}</h2>
+          <p className="mt-3 leading-7 text-[var(--text-muted)]">{tool.intro[locale]}</p>
+        </section>
+
+        <section className="border-t border-[var(--border)] p-5 sm:p-7">
+          <h2 className="text-2xl font-bold text-[var(--text)]">{locale === "en" ? "How To Use" : "如何使用"}</h2>
+          <div className="mt-5 grid gap-4">
+            {tool.howToUse[locale].map((step, index) => (
+              <div key={step.title} className="rounded-md border border-[var(--border)] bg-white p-5">
+                <p className="code-font text-xs font-semibold uppercase tracking-[0.16em] text-[var(--text-soft)]">{locale === "en" ? `Step ${index + 1}` : `步骤 ${index + 1}`}</p>
+                <h3 className="mt-2 text-lg font-semibold text-[var(--text)]">{step.title}</h3>
+                <p className="mt-2 text-sm leading-6 text-[var(--text-muted)]">{step.content}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="border-t border-[var(--border)] p-5 sm:p-7">
+          <h2 className="text-2xl font-bold text-[var(--text)]">{locale === "en" ? "Examples" : "示例"}</h2>
+          <div className="mt-5 grid gap-4">
+            {tool.examples[locale].map((example, index) => (
+              <div key={`${tool.slug}-${index}`} className="rounded-md border border-[var(--border)] bg-white p-5">
+                <div className="grid gap-4 lg:grid-cols-2">
+                  <div>
+                    <p className="code-font text-xs font-semibold uppercase tracking-[0.16em] text-[var(--text-soft)]">{locale === "en" ? "Input" : "输入"}</p>
+                    <pre className="code-font mt-2 overflow-x-auto rounded-md bg-[var(--surface-muted)] p-3 text-sm text-[var(--text)]">{example.input}</pre>
+                  </div>
+                  <div>
+                    <p className="code-font text-xs font-semibold uppercase tracking-[0.16em] text-[var(--text-soft)]">{locale === "en" ? "Output" : "输出"}</p>
+                    <pre className="code-font mt-2 overflow-x-auto rounded-md bg-[var(--surface-muted)] p-3 text-sm text-[var(--text)]">{example.output}</pre>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </section>
 
         {faq.length > 0 ? (
-          <section className="border-t border-[var(--border)] p-5 sm:p-7">
+          <section className="border-t border-[var(--border)] p-5 sm:p-7" id="faq">
             <h2 className="text-2xl font-bold text-[var(--text)]">FAQ</h2>
             <div className="mt-5 space-y-4">
               {faq.map((item) => (
@@ -71,6 +103,30 @@ export default async function ToolPage({ params }: { params: Promise<{ locale: s
                   <summary className="cursor-pointer font-semibold text-[var(--text)]">{item.q}</summary>
                   <p className="mt-3 text-sm leading-6 text-[var(--text-muted)]">{item.a}</p>
                 </details>
+              ))}
+            </div>
+          </section>
+        ) : null}
+
+        {relatedTools.length > 0 ? (
+          <section className="border-t border-[var(--border)] p-5 sm:p-7">
+            <div className="flex items-center justify-between gap-3">
+              <h2 className="text-2xl font-bold text-[var(--text)]">{locale === "en" ? "You may also like" : "你可能也会喜欢"}</h2>
+              <Link href={`/${locale}/tools`} className="text-sm font-semibold text-[var(--brand-strong)]">{locale === "en" ? "Explore all tools" : "查看全部工具"}</Link>
+            </div>
+            <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {relatedTools.map((relatedTool) => (
+                <Link key={relatedTool.slug} href={`/${locale}/tools/${relatedTool.slug}`} className="group rounded-md border border-[var(--border)] bg-white p-4 transition hover:-translate-y-0.5 hover:border-[var(--brand)] hover:shadow-[var(--shadow-soft)]">
+                  <div className="flex items-start gap-3">
+                    <span className="grid h-10 w-10 shrink-0 place-items-center rounded-md border border-[var(--border)] bg-[var(--surface-muted)] text-[var(--brand-strong)] transition group-hover:bg-[var(--brand-soft)]">
+                      <ToolIcon component={relatedTool.component} />
+                    </span>
+                    <div>
+                      <h3 className="text-base font-semibold text-[var(--text)]">{relatedTool.h1[locale]}</h3>
+                      <p className="mt-1 text-sm leading-6 text-[var(--text-muted)]">{relatedTool.description[locale]}</p>
+                    </div>
+                  </div>
+                </Link>
               ))}
             </div>
           </section>

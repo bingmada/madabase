@@ -1,0 +1,30 @@
+[TITLE]
+Free Online JSON Diff
+[H1]
+Free JSON Diff Online
+[DESCRIPTION]
+Compare two JSON documents and inspect differences.
+[SEO_TITLE]
+Free JSON Diff Online
+[SEO_DESCRIPTION]
+Compare JSON objects quickly and review structural differences in the browser.
+[INTRO]
+JSON diff tools are useful for comparing API responses, config snapshots, and test fixtures during debugging.
+[HOW_TO_USE]
+Paste both JSON documents
+Place the left and right payloads in the editor with a separator.
+---
+Run comparison
+Normalize both inputs and inspect differences.
+---
+Review output
+Use the result to debug changed fields or missing values.
+[EXAMPLES]
+{"a":1}
+---
+{"a":2}
+===
+Left and right JSON shown with different values
+[FAQ]
+When is JSON diff most useful?
+It is useful when comparing API responses, config files, and test fixtures.

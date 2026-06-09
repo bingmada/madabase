@@ -1,0 +1,28 @@
+[TITLE]
+Free Online Base64 Encoder and Decoder
+[H1]
+Free Base64 Encoder and Decoder
+[DESCRIPTION]
+Encode and decode Base64 text in the browser.
+[SEO_TITLE]
+Free Base64 Encoder and Decoder
+[SEO_DESCRIPTION]
+Encode plain text to Base64 or decode Base64 strings instantly in the browser.
+[INTRO]
+Base64 is commonly used in tokens, data URLs, email payloads, and transport-safe text conversions.
+[HOW_TO_USE]
+Enter your text
+Paste plain text or a Base64 string depending on your goal.
+---
+Choose encode or decode
+Convert to Base64 or back into readable text.
+---
+Copy the result
+Reuse the transformed string in your app or document.
+[EXAMPLES]
+Madabase
+===
+TWFkYWJhc2U=
+[FAQ]
+Can it handle Unicode text?
+Yes. The encoder uses UTF-8 handling so non-ASCII text can be encoded and decoded.

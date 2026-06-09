@@ -1,0 +1,30 @@
+[TITLE]
+免费在线 JSON Diff 工具
+[H1]
+免费 JSON Diff 工具
+[DESCRIPTION]
+比较两个 JSON 文档并查看差异。
+[SEO_TITLE]
+免费 JSON Diff 工具
+[SEO_DESCRIPTION]
+快速比较两个 JSON 对象，适合调试接口返回和配置差异。
+[INTRO]
+JSON Diff 适合比较接口响应、配置快照和测试数据中的结构变化。
+[HOW_TO_USE]
+粘贴两份 JSON
+把左右两份数据放入编辑器，并用分隔符隔开。
+---
+执行比较
+工具会标准化输入并展示差异。
+---
+查看输出
+定位字段变化、缺失值或调试差异。
+[EXAMPLES]
+{"a":1}
+---
+{"a":2}
+===
+展示左右 JSON 中不同的值
+[FAQ]
+什么场景适合用 JSON Diff？
+它适合比较 API 返回、配置快照和测试数据中的变化。

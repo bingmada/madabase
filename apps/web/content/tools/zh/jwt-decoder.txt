@@ -1,0 +1,30 @@
+[TITLE]
+免费在线 JWT 解码器
+[H1]
+免费 JWT 解码器
+[DESCRIPTION]
+快速解码 JWT 的 Header 与 Payload。
+[SEO_TITLE]
+免费 JWT 解码器
+[SEO_DESCRIPTION]
+在浏览器中安全解码 JWT，查看头信息、声明和过期时间。
+[INTRO]
+JWT 解码适合查看 exp、iss、sub 和自定义字段，无需把 token 发到服务端。
+[HOW_TO_USE]
+粘贴 Token
+把完整 JWT 字符串放入解码器。
+---
+查看 Header 和 Payload
+检查算法、过期时间、签发方和自定义声明。
+---
+签名需单独校验
+这个工具只做查看用途，签名校验应在认证系统中完成。
+[EXAMPLES]
+eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjMifQ.signature
+===
+{
+  "sub": "123"
+}
+[FAQ]
+它会校验签名吗？
+不会。它只用于解码查看内容，不做签名校验。

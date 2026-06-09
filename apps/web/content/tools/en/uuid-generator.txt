@@ -1,0 +1,28 @@
+[TITLE]
+Free Online UUID Generator
+[H1]
+Free UUID Generator Online
+[DESCRIPTION]
+Generate secure UUIDs in one click.
+[SEO_TITLE]
+Free UUID Generator Online
+[SEO_DESCRIPTION]
+Generate UUID v4 values instantly for apps, tests, and temporary identifiers.
+[INTRO]
+UUID generators are useful when you need collision-resistant IDs for testing, records, links, and mock data.
+[HOW_TO_USE]
+Generate a UUID
+Click generate to create a new browser-side UUID.
+---
+Copy the result
+Use it in mock data, database records, or testing flows.
+---
+Repeat as needed
+Generate fresh values whenever you need unique identifiers.
+[EXAMPLES]
+Generate
+===
+550e8400-e29b-41d4-a716-446655440000
+[FAQ]
+Which UUID version is generated?
+The tool generates UUID v4 style identifiers in the browser.

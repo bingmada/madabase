@@ -1,0 +1,28 @@
+[TITLE]
+Free Online HTML Encoder
+[H1]
+Free HTML Encoder Online
+[DESCRIPTION]
+Encode HTML entities safely.
+[SEO_TITLE]
+Free HTML Encoder Online
+[SEO_DESCRIPTION]
+Escape HTML tags and special characters for safe display in docs and code blocks.
+[INTRO]
+HTML encoding is useful when you want to display markup as text instead of letting the browser render it.
+[HOW_TO_USE]
+Paste HTML
+Enter the markup or snippet you want to escape.
+---
+Encode entities
+Convert angle brackets and quotes into safe HTML entities.
+---
+Copy result
+Use it in docs, examples, emails, or tutorials.
+[EXAMPLES]
+<div>Hello</div>
+===
+&lt;div&gt;Hello&lt;/div&gt;
+[FAQ]
+Why escape HTML?
+Escaping prevents the browser from rendering markup when you want to show code.

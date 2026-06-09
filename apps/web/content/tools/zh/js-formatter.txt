@@ -1,0 +1,29 @@
+[TITLE]
+免费在线 JavaScript Formatter
+[H1]
+免费 JavaScript Formatter 工具
+[DESCRIPTION]
+格式化 JavaScript 片段，提高可读性。
+[SEO_TITLE]
+免费 JavaScript Formatter 工具
+[SEO_DESCRIPTION]
+快速整理 JavaScript 代码，方便审查和调试。
+[INTRO]
+JavaScript 格式化适合查看复制来的片段、生成代码和日志或文档中的示例。
+[HOW_TO_USE]
+粘贴 JavaScript
+输入需要整理的代码片段。
+---
+运行格式化
+把语句和代码块拆分成更清晰的结构。
+---
+复制输出
+继续用于阅读、调试或编辑。
+[EXAMPLES]
+const a=1;console.log(a);
+===
+const a=1;
+console.log(a);
+[FAQ]
+什么时候需要 JS Formatter？
+当你需要阅读压缩片段或生成代码时会很有帮助。

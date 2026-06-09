@@ -1,0 +1,28 @@
+[TITLE]
+免费在线 Base64 编码解码工具
+[H1]
+免费 Base64 编码解码工具
+[DESCRIPTION]
+在浏览器中进行 Base64 编码和解码。
+[SEO_TITLE]
+免费 Base64 编码解码工具
+[SEO_DESCRIPTION]
+快速把文本转成 Base64，或把 Base64 解码回可读内容。
+[INTRO]
+Base64 常用于 token、data URL、邮件内容和传输安全文本转换。
+[HOW_TO_USE]
+输入内容
+根据需求粘贴普通文本或 Base64 字符串。
+---
+选择编码或解码
+把文本转为 Base64，或恢复为可读字符串。
+---
+复制结果
+可继续用于应用、配置或文档。
+[EXAMPLES]
+Madabase
+===
+TWFkYWJhc2U=
+[FAQ]
+可以处理中文等 Unicode 文本吗？
+可以。编码器使用 UTF-8 处理非 ASCII 文本。

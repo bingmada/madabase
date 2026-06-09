@@ -1,0 +1,28 @@
+[TITLE]
+免费在线 YAML 格式化工具
+[H1]
+免费 YAML 格式化工具
+[DESCRIPTION]
+整理 YAML 配置，让结构更清晰。
+[SEO_TITLE]
+免费 YAML 格式化工具
+[SEO_DESCRIPTION]
+快速格式化 YAML 文件和配置片段。
+[INTRO]
+YAML 格式化适合查看配置文件、CI 流水线、Kubernetes 清单和站点设置。
+[HOW_TO_USE]
+粘贴 YAML
+输入需要整理的配置片段。
+---
+运行格式化
+标准化空格与换行，提升可读性。
+---
+复制结果
+可继续用于 CI、基础设施或应用配置。
+[EXAMPLES]
+name:Madabase
+===
+name: Madabase
+[FAQ]
+YAML 常用在哪？
+YAML 常用于 CI 文件、配置系统和基础设施清单。

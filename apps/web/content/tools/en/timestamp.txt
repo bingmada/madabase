@@ -1,0 +1,28 @@
+[TITLE]
+Free Online Timestamp Converter
+[H1]
+Free Timestamp Converter Online
+[DESCRIPTION]
+Convert Unix timestamps to human-readable dates.
+[SEO_TITLE]
+Free Timestamp Converter Online
+[SEO_DESCRIPTION]
+Convert Unix timestamps to UTC and local dates instantly in your browser.
+[INTRO]
+Unix timestamps appear in logs, APIs, databases, and analytics systems, and often need fast human-readable conversion.
+[HOW_TO_USE]
+Enter a timestamp
+Paste seconds or milliseconds from logs or APIs.
+---
+Read local and UTC time
+Review the converted time in the formats you need.
+---
+Generate current time
+Use the current timestamp for testing or debugging workflows.
+[EXAMPLES]
+1717812000
+===
+2024-06-08 12:00:00 UTC
+[FAQ]
+Does it support milliseconds?
+Yes. It can read seconds or milliseconds and shows both current formats.

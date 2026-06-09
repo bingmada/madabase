@@ -1,0 +1,28 @@
+[TITLE]
+免费在线 HTML Encoder
+[H1]
+免费 HTML Encoder 工具
+[DESCRIPTION]
+安全编码 HTML 实体。
+[SEO_TITLE]
+免费 HTML Encoder 工具
+[SEO_DESCRIPTION]
+将 HTML 标签和特殊字符转义，便于在文档和教程中展示。
+[INTRO]
+当你想显示 HTML 代码文本而不是让浏览器渲染它时，HTML Encoder 很有用。
+[HOW_TO_USE]
+粘贴 HTML
+输入要转义的标记或片段。
+---
+执行编码
+将尖括号和引号转成安全的 HTML 实体。
+---
+复制结果
+适合文档、示例、邮件和教程内容。
+[EXAMPLES]
+<div>Hello</div>
+===
+&lt;div&gt;Hello&lt;/div&gt;
+[FAQ]
+为什么要转义 HTML？
+转义后浏览器不会把代码当成真实标记渲染。

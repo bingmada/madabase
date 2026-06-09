@@ -4,8 +4,10 @@ import { notFound } from "next/navigation";
 import { AdSlot } from "@/components/AdSlot";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { PageViewTracker } from "@/components/PageViewTracker";
 import { ToolIcon } from "@/components/ToolIcon";
 import { isLocale, locales } from "@/lib/i18n";
+import { buildPageMetadata } from "@/lib/seo";
 import { toolRegistry } from "@/lib/tools";
 
 export function generateStaticParams() {
@@ -15,14 +17,16 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   if (!isLocale(locale)) return {};
-  return {
-    title: locale === "en" ? "Free Online Developer Tools | Madabase" : "免费在线开发者工具 | Madabase",
+  return buildPageMetadata({
+    title: locale === "en" ? "Free Online Developer Tools" : "免费在线开发者工具",
     description:
       locale === "en"
-        ? "Browse free browser-based developer tools for JSON, JWT, Base64, URLs, timestamps, Markdown, and HTML."
-        : "浏览免费的浏览器端开发者工具，覆盖 JSON、JWT、Base64、URL、时间戳、Markdown 和 HTML。",
-    alternates: { canonical: `/${locale}/tools` },
-  };
+        ? "Browse free browser-based developer tools for JSON, JWT, Base64, URLs, timestamps, Markdown, SQL, regex, and more."
+        : "浏览免费的浏览器端开发者工具，覆盖 JSON、JWT、Base64、URL、时间戳、Markdown、SQL、正则等。",
+    locale,
+    path: "/tools",
+    keywords: ["developer tools", "online tools", "free formatter", "json tools"],
+  });
 }
 
 export default async function ToolsPage({ params }: { params: Promise<{ locale: string }> }) {
@@ -32,13 +36,13 @@ export default async function ToolsPage({ params }: { params: Promise<{ locale: 
   const copy = {
     en: {
       eyebrow: "Tool directory",
-      title: "A clean bench for everyday developer work.",
-      description: "Format, validate, encode, decode, generate, and preview common developer inputs directly in your browser.",
+      title: "Free online tools for developers, creators, and web workflows.",
+      description: "Format, validate, encode, decode, count, parse, and generate content directly in your browser without sign-in.",
     },
     zh: {
       eyebrow: "工具目录",
-      title: "面向日常开发工作的清爽工作台。",
-      description: "在浏览器中直接完成格式化、校验、编码、解码、生成和预览等常见开发任务。",
+      title: "面向开发者、创作者与 Web 工作流的免费在线工具。",
+      description: "无需登录，直接在浏览器中完成格式化、校验、编码、解码、统计、解析与生成任务。",
     },
   }[locale];
 
@@ -46,7 +50,8 @@ export default async function ToolsPage({ params }: { params: Promise<{ locale: 
     <div className="min-h-screen bg-transparent">
       <Header locale={locale} pathname="/tools" />
       <main className="page-shell">
-        <AdSlot locale={locale} position="header" />
+        <PageViewTracker locale={locale} />
+        <AdSlot locale={locale} position="header" size="banner" />
         <section className="surface-card-strong overflow-hidden">
           <div className="grid gap-0 lg:grid-cols-[0.95fr_1.05fr]">
             <div className="p-6 sm:p-8 lg:p-10">
@@ -56,7 +61,7 @@ export default async function ToolsPage({ params }: { params: Promise<{ locale: 
             </div>
             <div className="workbench-grid border-t border-[var(--border)] bg-[var(--surface-muted)] p-5 lg:border-l lg:border-t-0">
               <div className="grid grid-cols-5 gap-2">
-                {toolRegistry.slice(0, 10).map((tool) => (
+                {toolRegistry.slice(0, 15).map((tool) => (
                   <div key={tool.slug} className="grid aspect-square place-items-center rounded-md border border-[var(--border)] bg-white text-[var(--brand-strong)] shadow-sm">
                     <ToolIcon component={tool.component} className="h-5 w-5" />
                   </div>
@@ -82,7 +87,7 @@ export default async function ToolsPage({ params }: { params: Promise<{ locale: 
             </Link>
           ))}
         </section>
-        <AdSlot locale={locale} position="content" />
+        <AdSlot locale={locale} position="content" size="native" />
       </main>
       <Footer />
     </div>

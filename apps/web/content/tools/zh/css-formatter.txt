@@ -1,0 +1,31 @@
+[TITLE]
+免费在线 CSS Formatter
+[H1]
+免费 CSS Formatter 工具
+[DESCRIPTION]
+格式化 CSS，便于编辑和调试。
+[SEO_TITLE]
+免费 CSS Formatter 工具
+[SEO_DESCRIPTION]
+快速整理 CSS 规则和声明，让代码更易阅读。
+[INTRO]
+CSS 格式化适合检查压缩样式、片段代码、生成样式和复制来的样式表。
+[HOW_TO_USE]
+粘贴 CSS
+输入要整理的紧凑 CSS 代码。
+---
+运行格式化
+将声明拆分成更清晰的行结构。
+---
+检查并复制
+用于调试或后续编辑。
+[EXAMPLES]
+body{margin:0;color:#111}
+===
+body {
+margin:0;
+color:#111;
+}
+[FAQ]
+为什么要格式化 CSS？
+更易读的样式代码更方便调试和修改。

@@ -1,0 +1,30 @@
+[TITLE]
+免费在线 URL Parser
+[H1]
+免费 URL Parser 工具
+[DESCRIPTION]
+解析 URL 的协议、域名、路径、查询参数和锚点。
+[SEO_TITLE]
+免费 URL Parser 工具
+[SEO_DESCRIPTION]
+快速拆解 URL，适合调试重定向、路由和追踪参数。
+[INTRO]
+URL 解析适合排查跳转链接、回调地址、查询参数、路由问题和追踪链接。
+[HOW_TO_USE]
+粘贴完整 URL
+输入需要检查的链接地址。
+---
+解析各部分
+提取协议、域名、路径、查询和锚点。
+---
+查看输出
+用于调试链接或路由处理逻辑。
+[EXAMPLES]
+https://madabase.com/en/tools?ref=seo#faq
+===
+{
+  "protocol": "https:"
+}
+[FAQ]
+为什么要解析 URL？
+解析后更容易检查查询参数、路径和锚点。

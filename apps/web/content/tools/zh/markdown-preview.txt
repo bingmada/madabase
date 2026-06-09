@@ -1,0 +1,29 @@
+[TITLE]
+免费在线 Markdown 预览工具
+[H1]
+免费 Markdown 预览工具
+[DESCRIPTION]
+实时预览 Markdown 内容。
+[SEO_TITLE]
+免费 Markdown 预览工具
+[SEO_DESCRIPTION]
+输入 Markdown 后立即查看标题、列表、链接和代码块效果。
+[INTRO]
+Markdown 预览适合在发布文档、更新日志和文章前快速检查结构。
+[HOW_TO_USE]
+输入或粘贴 Markdown
+在编辑器中使用标题、列表、代码块和链接。
+---
+实时查看预览
+输入时即可看到结构和排版效果。
+---
+发布前调整
+发到 GitHub、文档系统或博客前先优化格式。
+[EXAMPLES]
+# Title
+- item
+===
+渲染后的标题与列表预览
+[FAQ]
+Markdown 适合什么场景？
+Markdown 常用于文档、README、知识库和博客草稿。

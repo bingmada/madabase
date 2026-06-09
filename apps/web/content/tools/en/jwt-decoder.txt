@@ -1,0 +1,30 @@
+[TITLE]
+Free Online JWT Decoder
+[H1]
+Free JWT Decoder Online
+[DESCRIPTION]
+Decode JWT header and payload instantly.
+[SEO_TITLE]
+Free JWT Decoder Online
+[SEO_DESCRIPTION]
+Decode JWT tokens safely in the browser and inspect headers, claims, and expiration times.
+[INTRO]
+JWT decoding helps you inspect claims like exp, iss, sub, and custom fields without sending your token to a server.
+[HOW_TO_USE]
+Paste the token
+Insert the complete JWT string into the decoder.
+---
+Review header and payload
+Inspect algorithms, expiration time, issuer, and custom claims.
+---
+Verify separately
+Use this decoder for reading only; signature verification should happen in your auth stack.
+[EXAMPLES]
+eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjMifQ.signature
+===
+{
+  "sub": "123"
+}
+[FAQ]
+Does this verify the signature?
+No. It decodes the token for inspection only and does not verify signatures.
