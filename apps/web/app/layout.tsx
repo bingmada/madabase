@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+// import { Inter, JetBrains_Mono } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { getSiteUrl } from "@/lib/seo";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
-const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
+// const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
+// const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
 
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
@@ -46,7 +46,7 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
       </head>
-      <body className={`${inter.variable} ${jetbrainsMono.variable}`}>
+      <body>
         {children}
         <Script id="madabase-performance-observer" strategy="afterInteractive">
           {`window.__MADABASE_SITE_URL__=${JSON.stringify(getSiteUrl())};`}
