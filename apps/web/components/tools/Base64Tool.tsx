@@ -1,6 +1,6 @@
 "use client";
-
 import { useState } from "react";
+import { fireAndForgetToolExecution } from "@/lib/tool-usage-client";
 import { CopyButton, ResetButton, StatusMessage, ToolButton, ToolPanel, ToolTextarea } from "./ToolPrimitives";
 
 const sample = "Hello Madabase";
@@ -29,6 +29,7 @@ export function Base64Tool() {
     try {
       setOutput(mode === "encode" ? encodeBase64(input) : decodeBase64(input));
       setMessage("");
+      fireAndForgetToolExecution("base64-tool");
     } catch (error) {
       setMessage(error instanceof Error ? error.message : "Unable to process Base64 input.");
     }

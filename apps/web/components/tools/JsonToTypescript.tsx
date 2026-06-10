@@ -1,6 +1,6 @@
 "use client";
-
 import { useMemo, useState } from "react";
+import { fireAndForgetToolExecution } from "@/lib/tool-usage-client";
 import { CopyButton, ResetButton, StatusMessage, ToolButton, ToolPanel, ToolTextarea } from "./ToolPrimitives";
 
 const sample = '{\n  "id": 1,\n  "name": "Madabase",\n  "tags": ["tools", "ai"],\n  "owner": {\n    "email": "hello@madabase.com"\n  }\n}';
@@ -84,7 +84,7 @@ export function JsonToTypescript() {
         </label>
         <ToolTextarea label="JSON sample" value={input} onChange={(value) => { setInput(value); setSubmitted(false); }} rows={10} />
         <div className="flex flex-wrap gap-2">
-          <ToolButton onClick={() => setSubmitted(true)}>Generate Interface</ToolButton>
+          <ToolButton onClick={() => { setSubmitted(true); fireAndForgetToolExecution("json-to-typescript"); }}>Generate Interface</ToolButton>
           <CopyButton value={result.output} />
           <ResetButton onClick={() => { setInput(sample); setRootName("Root"); setSubmitted(false); }} />
         </div>

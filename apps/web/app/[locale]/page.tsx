@@ -8,6 +8,7 @@ import { ToolIcon } from "@/components/ToolIcon";
 import { AdSlot } from "@/components/AdSlot";
 import { JsonLd, buildBreadcrumbSchema } from "@/components/JsonLd";
 import { PopularToolsClient } from "@/components/PopularToolsClient";
+import { PersonalizedToolsPanel } from "@/components/PersonalizedToolsPanel";
 import { isPremium, premiumFeatures } from "@/lib/features";
 import { getLatestBlogPosts } from "@/lib/blog";
 import { buildAbsoluteUrl, buildPageMetadata } from "@/lib/seo";
@@ -163,6 +164,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         </section>
 
         <section className="mt-14" id="popular-tools">
+          <PersonalizedToolsPanel locale={locale} />
           <div className="mb-6 flex items-end justify-between gap-4">
             <h2 className="text-2xl font-bold text-[var(--text)]">{copy.popular}</h2>
             <p className="code-font hidden text-xs uppercase tracking-[0.16em] text-[var(--text-soft)] sm:block">search intent / evergreen / tools-first</p>

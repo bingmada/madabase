@@ -1,6 +1,6 @@
 "use client";
-
 import { useState } from "react";
+import { fireAndForgetToolExecution } from "@/lib/tool-usage-client";
 import { CopyButton, ResetButton, StatusMessage, ToolButton, ToolPanel, ToolTextarea } from "./ToolPrimitives";
 
 const sample = "https://madabase.com/tools/json-formatter?query=hello world";
@@ -14,6 +14,7 @@ export function UrlEncoder() {
     try {
       setOutput(mode === "encode" ? encodeURIComponent(input) : decodeURIComponent(input));
       setMessage("");
+      fireAndForgetToolExecution("url-encoder");
     } catch (error) {
       setMessage(error instanceof Error ? error.message : "Unable to process URL input.");
     }

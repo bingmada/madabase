@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { FavoriteButton } from "@/components/FavoriteButton";
+import { getCurrentUser } from "@/lib/auth/services/sessionService";
+import { getFavoriteState } from "@/lib/favorites";
 import { getRelatedTools, toolMap, toolRegistry } from "@/lib/tools";
 import { isLocale, locales } from "@/lib/i18n";
 import { buildAbsoluteUrl, buildToolMetadata } from "@/lib/seo";
 import { ToolLayout } from "@/components/ToolLayout";
 import { ToolIcon } from "@/components/ToolIcon";
 import { ToolRenderer } from "@/components/tools/ToolRenderer";
+import { ToolUsageTracker } from "@/components/ToolUsageTracker";
 import { JsonLd, buildBreadcrumbSchema, buildSoftwareApplicationSchema } from "@/components/JsonLd";
 
 export function generateStaticParams() {
@@ -34,6 +38,8 @@ export default async function ToolPage({ params }: { params: Promise<{ locale: s
   const tool = toolMap.get(slug);
   if (!tool) notFound();
 
+  const currentUser = await getCurrentUser();
+  const isFavorited = currentUser ? await getFavoriteState(currentUser.id, tool.slug) : false;
   const faq = tool.faq[locale];
   const relatedTools = getRelatedTools(tool.slug);
   const canonicalUrl = buildAbsoluteUrl(`/${locale}/tools/${tool.slug}`);
@@ -67,15 +73,22 @@ export default async function ToolPage({ params }: { params: Promise<{ locale: s
             <span className="grid h-12 w-12 shrink-0 place-items-center rounded-md border border-[var(--border)] bg-[var(--brand-soft)] text-[var(--brand-strong)]">
               <ToolIcon component={tool.component} className="h-6 w-6" />
             </span>
-            <div className="min-w-0">
+            <div className="min-w-0 flex-1">
               <p className="eyebrow">{tool.category}</p>
               <h1 className="mt-2 text-3xl font-black tracking-tight text-[var(--text)] sm:text-4xl">{tool.h1[locale]}</h1>
               <p className="mt-3 text-base leading-7 text-[var(--text-muted)] sm:text-lg">{tool.description[locale]}</p>
+              <FavoriteButton
+                locale={locale}
+                toolSlug={tool.slug}
+                initialFavorited={isFavorited}
+                requireLoginHref={`/${locale}/login`}
+              />
             </div>
           </div>
         </header>
 
         <section className="bg-[var(--surface-muted)] p-3 sm:p-5">
+          <ToolUsageTracker toolSlug={tool.slug} />
           <ToolRenderer component={tool.component} toolSlug={tool.slug} />
         </section>
 

@@ -1,6 +1,6 @@
 "use client";
-
 import { useState } from "react";
+import { fireAndForgetToolExecution } from "@/lib/tool-usage-client";
 import { CopyButton, ResetButton, StatusMessage, ToolButton, ToolPanel, ToolTextarea } from "./ToolPrimitives";
 
 const sample = '<main><h1>Madabase</h1><p>Free developer tools.</p><ul><li>JSON</li><li>JWT</li></ul></main>';
@@ -37,6 +37,7 @@ export function HtmlFormatter() {
     try {
       setOutput(formatHtml(input));
       setMessage("");
+      fireAndForgetToolExecution("html-formatter");
     } catch (error) {
       setMessage(error instanceof Error ? error.message : "Unable to format HTML.");
     }

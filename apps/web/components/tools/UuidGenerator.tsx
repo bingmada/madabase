@@ -1,6 +1,6 @@
 "use client";
-
 import { useState } from "react";
+import { fireAndForgetToolExecution } from "@/lib/tool-usage-client";
 import { CopyButton, ToolButton, ToolPanel } from "./ToolPrimitives";
 
 function createUuid() {
@@ -16,6 +16,7 @@ export function UuidGenerator() {
 
   function generate() {
     setUuids(Array.from({ length: count }, createUuid));
+    fireAndForgetToolExecution("uuid-generator");
   }
 
   return (

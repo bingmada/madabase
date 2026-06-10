@@ -1,7 +1,8 @@
 "use client";
 
-import { useMemo, useState } from "react";
-import { ResetButton, ToolPanel, ToolTextarea } from "./ToolPrimitives";
+import { useState } from "react";
+import { fireAndForgetToolExecution } from "@/lib/tool-usage-client";
+import { ResetButton, StatusMessage, ToolButton, ToolPanel, ToolTextarea } from "./ToolPrimitives";
 
 const sample = `# Madabase
 
@@ -58,19 +59,35 @@ function MarkdownContent({ value }: { value: string }) {
 
 export function MarkdownPreview() {
   const [input, setInput] = useState(sample);
-  const preview = useMemo(() => <MarkdownContent value={input} />, [input]);
+  const [previewInput, setPreviewInput] = useState(sample);
+  const [message, setMessage] = useState("Edit markdown and click preview.");
+  const [tone, setTone] = useState<"neutral" | "success" | "error">("neutral");
+
+  function preview() {
+    setPreviewInput(input);
+    setMessage("Preview updated.");
+    setTone("success");
+    fireAndForgetToolExecution("markdown-preview");
+  }
 
   return (
     <ToolPanel>
       <div className="space-y-4">
-        <div className="flex justify-end">
-          <ResetButton onClick={() => setInput(sample)} />
+        <div className="flex flex-wrap justify-end gap-2">
+          <ToolButton onClick={preview}>Preview Markdown</ToolButton>
+          <ResetButton onClick={() => {
+            setInput(sample);
+            setPreviewInput(sample);
+            setMessage("Edit markdown and click preview.");
+            setTone("neutral");
+          }} />
         </div>
+        <StatusMessage message={message} tone={tone} />
         <div className="grid gap-4 lg:grid-cols-2">
           <ToolTextarea label="Markdown" value={input} onChange={setInput} rows={16} />
           <section className="rounded-md border border-[var(--border)] bg-white p-4">
             <h2 className="code-font mb-3 text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-soft)]">Preview</h2>
-            {preview}
+            <MarkdownContent value={previewInput} />
           </section>
         </div>
       </div>

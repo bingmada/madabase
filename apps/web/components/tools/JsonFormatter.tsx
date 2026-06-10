@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { recordToolExecution } from "@/lib/limits";
-import { trackEvent } from "@/lib/analytics";
+import { trackToolExecution } from "@/lib/tool-usage-client";
 import { CopyButton, ResetButton, StatusMessage, ToolButton, ToolPanel, ToolTextarea } from "./ToolPrimitives";
 
 const sample = '{"name":"Madabase","tools":["JSON Formatter","JWT Decoder"],"online":true}';
@@ -16,21 +16,21 @@ export function JsonFormatter({ toolSlug = "json-formatter" }: { toolSlug?: stri
     return JSON.parse(input);
   }
 
-  function markExecution() {
+  async function markExecution() {
     const result = recordToolExecution(toolSlug);
     if (!result.allowed) {
       setMessage(result.reason ?? "Daily free limit reached.");
       setTone("error");
       return false;
     }
-    trackEvent({ event: "tool_execute", tool: toolSlug });
+    await trackToolExecution(toolSlug);
     return true;
   }
 
-  function format() {
+  async function format() {
     try {
       setInput(JSON.stringify(parseJson(), null, 2));
-      if (!markExecution()) return;
+      if (!(await markExecution())) return;
       setMessage("JSON formatted successfully.");
       setTone("success");
     } catch (error) {
@@ -39,10 +39,10 @@ export function JsonFormatter({ toolSlug = "json-formatter" }: { toolSlug?: stri
     }
   }
 
-  function minify() {
+  async function minify() {
     try {
       setInput(JSON.stringify(parseJson()));
-      if (!markExecution()) return;
+      if (!(await markExecution())) return;
       setMessage("JSON minified successfully.");
       setTone("success");
     } catch (error) {
@@ -51,10 +51,10 @@ export function JsonFormatter({ toolSlug = "json-formatter" }: { toolSlug?: stri
     }
   }
 
-  function validate() {
+  async function validate() {
     try {
       parseJson();
-      if (!markExecution()) return;
+      if (!(await markExecution())) return;
       setMessage("Valid JSON.");
       setTone("success");
     } catch (error) {
@@ -68,9 +68,9 @@ export function JsonFormatter({ toolSlug = "json-formatter" }: { toolSlug?: stri
       <div className="space-y-4">
         <ToolTextarea label="JSON input" value={input} onChange={setInput} rows={12} />
         <div className="flex flex-wrap gap-2">
-          <ToolButton onClick={format}>Format</ToolButton>
-          <ToolButton onClick={minify} variant="secondary">Minify</ToolButton>
-          <ToolButton onClick={validate} variant="secondary">Validate</ToolButton>
+          <ToolButton onClick={() => void format()}>Format</ToolButton>
+          <ToolButton onClick={() => void minify()} variant="secondary">Minify</ToolButton>
+          <ToolButton onClick={() => void validate()} variant="secondary">Validate</ToolButton>
           <CopyButton value={input} />
           <ResetButton onClick={() => setInput(sample)} />
         </div>

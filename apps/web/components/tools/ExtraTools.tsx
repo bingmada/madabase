@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { trackEvent } from "@/lib/analytics";
+import { fireAndForgetToolExecution } from "@/lib/tool-usage-client";
 import { CopyButton, ResetButton, StatusMessage, ToolButton, ToolInput, ToolPanel, ToolTextarea } from "./ToolPrimitives";
 
 function simpleFormatMarkup(input: string) {
@@ -112,7 +112,7 @@ function GenericTextTransformTool({
       setOutput(nextOutput);
       setMessage("Done.");
       setTone("success");
-      trackEvent({ event: "tool_execute", tool });
+      fireAndForgetToolExecution(tool);
     } catch (error) {
       setMessage(error instanceof Error ? error.message : "Unable to process input.");
       setTone("error");
@@ -182,7 +182,7 @@ export function RegexTester() {
       setOutput(matches.length ? matches.join("\n") : "No matches.");
       setMessage(`Found ${matches.length} match${matches.length === 1 ? "" : "es"}.`);
       setTone("success");
-      trackEvent({ event: "tool_execute", tool: "regex-tester" });
+      fireAndForgetToolExecution("regex-tester");
     } catch (error) {
       setMessage(error instanceof Error ? error.message : "Invalid regex.");
       setTone("error");
@@ -223,7 +223,7 @@ export function CronGenerator() {
         <ToolTextarea label="Cron expression" value={expression} readOnly rows={4} />
         <div className="flex flex-wrap gap-2">
           <CopyButton value={expression} />
-          <ToolButton onClick={() => trackEvent({ event: "tool_execute", tool: "cron-generator" })}>Generate</ToolButton>
+          <ToolButton onClick={() => fireAndForgetToolExecution("cron-generator")}>Generate</ToolButton>
         </div>
       </div>
     </ToolPanel>
@@ -260,7 +260,7 @@ export function PasswordGenerator() {
         <ToolTextarea label="Generated password" value={output} readOnly rows={4} />
         <div className="flex flex-wrap gap-2">
           <CopyButton value={output} />
-          <ToolButton onClick={() => trackEvent({ event: "tool_execute", tool: "password-generator" })}>Generate</ToolButton>
+          <ToolButton onClick={() => fireAndForgetToolExecution("password-generator")}>Generate</ToolButton>
         </div>
       </div>
     </ToolPanel>
@@ -298,7 +298,7 @@ export function QrCodeGenerator() {
           <ToolInput label="Text or URL" value={input} onChange={setInput} />
           <div className="flex flex-wrap gap-2">
             <CopyButton value={svg} label="Copy SVG" />
-            <ToolButton onClick={() => trackEvent({ event: "tool_execute", tool: "qr-code-generator" })}>Generate QR</ToolButton>
+            <ToolButton onClick={() => fireAndForgetToolExecution("qr-code-generator")}>Generate QR</ToolButton>
           </div>
         </div>
         <div className="rounded-md border border-[var(--border)] bg-white p-4">

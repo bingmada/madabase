@@ -1,6 +1,6 @@
 "use client";
-
 import { useMemo, useState } from "react";
+import { fireAndForgetToolExecution } from "@/lib/tool-usage-client";
 import { ToolButton, ToolPanel } from "./ToolPrimitives";
 
 function normalizeTimestamp(value: string) {
@@ -38,8 +38,8 @@ export function TimestampConverter() {
           />
         </label>
         <div className="flex flex-wrap gap-2">
-          <ToolButton onClick={() => setTimestamp(Math.floor(Date.now() / 1000).toString())}>Use current seconds</ToolButton>
-          <ToolButton onClick={() => setTimestamp(Date.now().toString())} variant="secondary">Use current milliseconds</ToolButton>
+          <ToolButton onClick={() => { setTimestamp(Math.floor(Date.now() / 1000).toString()); fireAndForgetToolExecution("timestamp-converter"); }}>Use current seconds</ToolButton>
+          <ToolButton onClick={() => { setTimestamp(Date.now().toString()); fireAndForgetToolExecution("timestamp-converter"); }} variant="secondary">Use current milliseconds</ToolButton>
         </div>
         {result ? (
           <dl className="grid gap-3 rounded-md border border-[var(--border)] bg-white p-4 text-sm sm:grid-cols-2">
