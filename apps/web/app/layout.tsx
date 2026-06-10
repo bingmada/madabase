@@ -14,6 +14,21 @@ export const metadata: Metadata = {
     template: "%s | Madabase",
   },
   description: "Madabase offers free online developer tools, SEO-friendly content pages, and a growing library of practical resources.",
+  alternates: {
+    canonical: getSiteUrl(),
+  },
+  openGraph: {
+    title: "Madabase",
+    description: "Madabase offers free online developer tools, SEO-friendly content pages, and a growing library of practical resources.",
+    url: getSiteUrl(),
+    siteName: "Madabase",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Madabase",
+    description: "Madabase offers free online developer tools, SEO-friendly content pages, and a growing library of practical resources.",
+  },
 };
 
 export default function RootLayout({

@@ -4,10 +4,11 @@ import { notFound } from "next/navigation";
 import { AdSlot } from "@/components/AdSlot";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { JsonLd, buildBreadcrumbSchema } from "@/components/JsonLd";
 import { PageViewTracker } from "@/components/PageViewTracker";
 import { ToolIcon } from "@/components/ToolIcon";
 import { isLocale, locales } from "@/lib/i18n";
-import { buildPageMetadata } from "@/lib/seo";
+import { buildAbsoluteUrl, buildPageMetadata } from "@/lib/seo";
 import { toolRegistry } from "@/lib/tools";
 
 export function generateStaticParams() {
@@ -25,7 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         : "浏览免费的浏览器端开发者工具，覆盖 JSON、JWT、Base64、URL、时间戳、Markdown、SQL、正则等。",
     locale,
     path: "/tools",
-    keywords: ["developer tools", "online tools", "free formatter", "json tools"],
+    keywords: ["developer tools", "online tools", "free formatter", "json tools", "developer tools online"],
   });
 }
 
@@ -46,10 +47,16 @@ export default async function ToolsPage({ params }: { params: Promise<{ locale: 
     },
   }[locale];
 
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Madabase", item: buildAbsoluteUrl(`/${locale}`) },
+    { name: locale === "en" ? "Tools" : "工具", item: buildAbsoluteUrl(`/${locale}/tools`) },
+  ]);
+
   return (
     <div className="min-h-screen bg-transparent">
       <Header locale={locale} pathname="/tools" />
       <main className="page-shell">
+        <JsonLd id="tools-index-breadcrumbs" data={breadcrumbSchema} />
         <PageViewTracker locale={locale} />
         <AdSlot locale={locale} position="header" size="banner" />
         <section className="surface-card-strong overflow-hidden">

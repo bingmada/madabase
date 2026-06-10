@@ -3,11 +3,12 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { JsonLd, buildBreadcrumbSchema } from "@/components/JsonLd";
 import { PageViewTracker } from "@/components/PageViewTracker";
 import { AdSlot } from "@/components/AdSlot";
 import { getAllBlogPosts } from "@/lib/blog";
 import { isLocale, locales } from "@/lib/i18n";
-import { buildPageMetadata } from "@/lib/seo";
+import { buildAbsoluteUrl, buildPageMetadata } from "@/lib/seo";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -25,7 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         : "阅读关于 JSON、JWT、Base64、Markdown、正则、时间戳和开发者生产力的实用文章。",
     locale,
     path: "/blog",
-    keywords: ["developer blog", "json guide", "jwt explained", "regex tutorial"],
+    keywords: ["developer blog", "json guide", "jwt explained", "regex tutorial", "developer tools"],
   });
 }
 
@@ -34,11 +35,16 @@ export default async function BlogIndexPage({ params }: { params: Promise<{ loca
   if (!isLocale(locale)) notFound();
 
   const posts = await getAllBlogPosts(locale);
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Madabase", item: buildAbsoluteUrl(`/${locale}`) },
+    { name: locale === "en" ? "Blog" : "博客", item: buildAbsoluteUrl(`/${locale}/blog`) },
+  ]);
 
   return (
     <div className="min-h-screen bg-transparent">
       <Header locale={locale} pathname="/blog" />
       <main className="page-shell">
+        <JsonLd id="blog-index-breadcrumbs" data={breadcrumbSchema} />
         <PageViewTracker locale={locale} />
         <AdSlot locale={locale} position="header" size="banner" />
         <section className="surface-card-strong p-6 sm:p-8 lg:p-10">

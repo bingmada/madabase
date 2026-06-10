@@ -1,12 +1,13 @@
 "use client";
 
 import { useState } from "react";
+import { recordToolExecution } from "@/lib/limits";
 import { trackEvent } from "@/lib/analytics";
 import { CopyButton, ResetButton, StatusMessage, ToolButton, ToolPanel, ToolTextarea } from "./ToolPrimitives";
 
 const sample = '{"name":"Madabase","tools":["JSON Formatter","JWT Decoder"],"online":true}';
 
-export function JsonFormatter() {
+export function JsonFormatter({ toolSlug = "json-formatter" }: { toolSlug?: string }) {
   const [input, setInput] = useState(sample);
   const [message, setMessage] = useState("");
   const [tone, setTone] = useState<"success" | "error">("success");
@@ -15,12 +16,23 @@ export function JsonFormatter() {
     return JSON.parse(input);
   }
 
+  function markExecution() {
+    const result = recordToolExecution(toolSlug);
+    if (!result.allowed) {
+      setMessage(result.reason ?? "Daily free limit reached.");
+      setTone("error");
+      return false;
+    }
+    trackEvent({ event: "tool_execute", tool: toolSlug });
+    return true;
+  }
+
   function format() {
     try {
       setInput(JSON.stringify(parseJson(), null, 2));
+      if (!markExecution()) return;
       setMessage("JSON formatted successfully.");
       setTone("success");
-      trackEvent({ event: "tool_use", tool: "json-formatter" });
     } catch (error) {
       setMessage(error instanceof Error ? error.message : "Invalid JSON.");
       setTone("error");
@@ -30,9 +42,9 @@ export function JsonFormatter() {
   function minify() {
     try {
       setInput(JSON.stringify(parseJson()));
+      if (!markExecution()) return;
       setMessage("JSON minified successfully.");
       setTone("success");
-      trackEvent({ event: "tool_use", tool: "json-formatter" });
     } catch (error) {
       setMessage(error instanceof Error ? error.message : "Invalid JSON.");
       setTone("error");
@@ -42,9 +54,9 @@ export function JsonFormatter() {
   function validate() {
     try {
       parseJson();
+      if (!markExecution()) return;
       setMessage("Valid JSON.");
       setTone("success");
-      trackEvent({ event: "tool_use", tool: "json-formatter" });
     } catch (error) {
       setMessage(error instanceof Error ? error.message : "Invalid JSON.");
       setTone("error");

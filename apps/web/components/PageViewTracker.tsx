@@ -7,7 +7,7 @@ export function PageViewTracker({ locale, tool }: { locale: string; tool?: strin
   useEffect(() => {
     trackEvent({ event: "page_view", locale, tool });
     if (tool) {
-      trackEvent({ event: "tool_open", locale, tool });
+      trackEvent({ event: "tool_view", locale, tool });
     }
   }, [locale, tool]);
 

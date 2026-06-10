@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import type { Locale } from "./i18n";
-import { locales } from "./i18n";
+import { defaultLocale, locales } from "./i18n";
 
 export function getSiteUrl() {
   return process.env.NEXT_PUBLIC_SITE_URL ?? "https://madabase.com";
@@ -15,13 +15,25 @@ export function buildAbsoluteUrl(path: string) {
   return new URL(normalizedPath, getSiteUrl()).toString();
 }
 
-export function buildHreflangAlternates(path: string) {
+export function buildHreflangAlternates(path: string, canonicalLocale: Locale = defaultLocale) {
   const normalizedPath = path.startsWith("/") ? path : `/${path}`;
   const languages = Object.fromEntries(locales.map((locale) => [locale, buildAbsoluteUrl(`/${locale}${normalizedPath}`)])) as Record<Locale, string>;
 
   return {
-    canonical: buildAbsoluteUrl(`/${locales[0]}${normalizedPath}`),
-    languages,
+    canonical: buildAbsoluteUrl(`/${canonicalLocale}${normalizedPath}`),
+    languages: {
+      ...languages,
+      "x-default": buildAbsoluteUrl(`/${canonicalLocale}${normalizedPath}`),
+    },
+  };
+}
+
+function buildOpenGraphImage(title: string) {
+  return {
+    url: buildAbsoluteUrl(`/og?title=${encodeURIComponent(title)}`),
+    width: 1200,
+    height: 630,
+    alt: title,
   };
 }
 
@@ -40,8 +52,10 @@ export function buildPageMetadata({
   keywords?: string[];
   type?: "website" | "article";
 }): Metadata {
-  const canonical = buildAbsoluteUrl(`/${locale}${path.startsWith("/") ? path : `/${path}`}`);
-  const languages = Object.fromEntries(locales.map((altLocale) => [altLocale, buildAbsoluteUrl(`/${altLocale}${path.startsWith("/") ? path : `/${path}`}`)])) as Record<Locale, string>;
+  const normalizedPath = path.startsWith("/") ? path : `/${path}`;
+  const canonical = buildAbsoluteUrl(`/${locale}${normalizedPath}`);
+  const alternates = buildHreflangAlternates(normalizedPath, locale);
+  const image = buildOpenGraphImage(title);
 
   return {
     title,
@@ -49,7 +63,7 @@ export function buildPageMetadata({
     keywords,
     alternates: {
       canonical,
-      languages,
+      languages: alternates.languages,
     },
     openGraph: {
       title,
@@ -58,11 +72,13 @@ export function buildPageMetadata({
       siteName: "Madabase",
       locale: locale === "zh" ? "zh_CN" : "en_US",
       type,
+      images: [image],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
+      images: [image.url],
     },
   };
 }

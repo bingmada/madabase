@@ -4,20 +4,19 @@ import { notFound } from "next/navigation";
 import { AdSlot } from "@/components/AdSlot";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { JsonLd, buildArticleSchema, buildBreadcrumbSchema } from "@/components/JsonLd";
 import { PageViewTracker } from "@/components/PageViewTracker";
 import { getAllBlogPosts, getBlogPost } from "@/lib/blog";
 import { isLocale, locales } from "@/lib/i18n";
-import { buildPageMetadata } from "@/lib/seo";
+import { buildAbsoluteUrl, buildPageMetadata } from "@/lib/seo";
 
-export async function generateStaticParams() {
-  const params = await Promise.all(
-    locales.map(async (locale) => {
-      const posts = await getAllBlogPosts(locale);
-      return posts.map((post) => ({ locale, slug: post.slug }));
-    }),
-  );
+export function generateStaticParams() {
+  const params = locales.map(async (locale) => {
+    const posts = await getAllBlogPosts(locale);
+    return posts.map((post) => ({ locale, slug: post.slug }));
+  });
 
-  return params.flat();
+  return Promise.all(params).then((items) => items.flat());
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string; slug: string }> }): Promise<Metadata> {
@@ -32,7 +31,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     description: post.description,
     locale,
     path: `/blog/${post.slug}`,
-    keywords: [post.slug, "developer blog", "online tools"],
+    keywords: [post.slug, "developer blog", "online tools", "free online tools"],
     type: "article",
   });
 }
@@ -44,14 +43,37 @@ export default async function BlogPostPage({ params }: { params: Promise<{ local
   const post = await getBlogPost(locale, slug);
   if (!post) notFound();
 
+  const canonicalUrl = buildAbsoluteUrl(`/${locale}/blog/${post.slug}`);
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Madabase", item: buildAbsoluteUrl(`/${locale}`) },
+    { name: locale === "en" ? "Blog" : "博客", item: buildAbsoluteUrl(`/${locale}/blog`) },
+    { name: post.title, item: canonicalUrl },
+  ]);
+  const articleSchema = buildArticleSchema({
+    headline: post.title,
+    description: post.description,
+    url: canonicalUrl,
+    datePublished: post.date,
+    locale,
+  });
+
   return (
     <div className="min-h-screen bg-transparent">
       <Header locale={locale} pathname={`/blog/${post.slug}`} />
       <main className="content-shell">
+        <JsonLd id={`blog-breadcrumbs-${post.slug}`} data={breadcrumbSchema} />
+        <JsonLd id={`blog-article-${post.slug}`} data={articleSchema} />
         <PageViewTracker locale={locale} />
         <AdSlot locale={locale} position="header" size="banner" />
         <article className="surface-card-strong overflow-hidden">
           <header className="border-b border-[var(--border)] p-6 sm:p-8">
+            <nav className="mb-4 flex flex-wrap items-center gap-2 text-sm text-[var(--text-soft)]">
+              <Link href={`/${locale}`} className="transition hover:text-[var(--brand-strong)]">Madabase</Link>
+              <span>/</span>
+              <Link href={`/${locale}/blog`} className="transition hover:text-[var(--brand-strong)]">{locale === "en" ? "Blog" : "博客"}</Link>
+              <span>/</span>
+              <span className="text-[var(--text)]">{post.title}</span>
+            </nav>
             <p className="code-font text-xs uppercase tracking-[0.18em] text-[var(--text-soft)]">{post.date}</p>
             <h1 className="mt-3 text-4xl font-black tracking-tight text-[var(--text)]">{post.title}</h1>
             <p className="mt-4 text-lg leading-8 text-[var(--text-muted)]">{post.description}</p>

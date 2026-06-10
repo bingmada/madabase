@@ -48,3 +48,8 @@ export async function getAllBlogPosts(locale: Locale) {
     .filter((post): post is BlogPost => Boolean(post))
     .sort((a, b) => (a.date < b.date ? 1 : -1));
 }
+
+export async function getLatestBlogPosts(locale: Locale, limit = 4) {
+  const posts = await getAllBlogPosts(locale);
+  return posts.slice(0, limit);
+}

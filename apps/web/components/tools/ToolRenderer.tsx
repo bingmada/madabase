@@ -34,7 +34,7 @@ import { TimestampConverter } from "./TimestampConverter";
 import { UrlEncoder } from "./UrlEncoder";
 import { UuidGenerator } from "./UuidGenerator";
 
-const toolComponents: Record<ToolComponentName, React.ComponentType> = {
+const toolComponents: Record<ToolComponentName, React.ComponentType<{ toolSlug?: string }>> = {
   JsonFormatter,
   JsonValidator,
   JsonToTypescript,
@@ -67,7 +67,7 @@ const toolComponents: Record<ToolComponentName, React.ComponentType> = {
   UrlParser,
 };
 
-export function ToolRenderer({ component }: { component: ToolComponentName }) {
+export function ToolRenderer({ component, toolSlug }: { component: ToolComponentName; toolSlug?: string }) {
   const Component = toolComponents[component];
-  return <Component />;
+  return <Component toolSlug={toolSlug} />;
 }

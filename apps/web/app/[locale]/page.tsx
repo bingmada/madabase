@@ -6,8 +6,12 @@ import { Header } from "@/components/Header";
 import { PageViewTracker } from "@/components/PageViewTracker";
 import { ToolIcon } from "@/components/ToolIcon";
 import { AdSlot } from "@/components/AdSlot";
+import { JsonLd, buildBreadcrumbSchema } from "@/components/JsonLd";
+import { PopularToolsClient } from "@/components/PopularToolsClient";
+import { isPremium, premiumFeatures } from "@/lib/features";
+import { getLatestBlogPosts } from "@/lib/blog";
+import { buildAbsoluteUrl, buildPageMetadata } from "@/lib/seo";
 import { isLocale, locales, type Locale } from "@/lib/i18n";
-import { buildPageMetadata } from "@/lib/seo";
 import { getPopularTools, getToolsByCategory, toolRegistry } from "@/lib/tools";
 
 function ToolCard({
@@ -53,7 +57,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         : "Madabase 是一个 SEO 优先的免费在线开发者工具、生产力内容与未来 AI 工作流平台。",
     locale,
     path: "/",
-    keywords: ["developer tools", "ai tools", "online formatter", "madabase"],
+    keywords: ["developer tools", "ai tools", "online formatter", "madabase", "free online tools"],
   });
 }
 
@@ -62,6 +66,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   if (!isLocale(locale)) notFound();
 
   const popularTools = getPopularTools();
+  const latestPosts = await getLatestBlogPosts(locale, 4);
   const categoryCards = [
     {
       key: "developer",
@@ -70,14 +75,14 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       tools: getToolsByCategory("developer").slice(0, 4),
     },
     {
-      key: "ai",
-      title: locale === "en" ? "AI Tools" : "AI 工具",
-      description: locale === "en" ? "Future AI workflows reserved for the next product phase." : "为下一阶段产品预留的 AI 工作流方向。",
-      tools: [],
+      key: "web",
+      title: locale === "en" ? "Web Tools" : "Web 工具",
+      description: locale === "en" ? "Encoding, HTML, CSS, URLs, and QR workflows." : "编码、HTML、CSS、URL 与二维码工具。",
+      tools: getToolsByCategory("web").slice(0, 4),
     },
     {
       key: "creator",
-      title: locale === "en" ? "Creator Tools" : "创作者工具",
+      title: locale === "en" ? "Creator & Text" : "创作与文本",
       description: locale === "en" ? "Markdown, counters, slugs, and content cleanup tools." : "Markdown、计数、slug 与内容清理工具。",
       tools: [...getToolsByCategory("creator"), ...getToolsByCategory("text")].slice(0, 4),
     },
@@ -92,6 +97,11 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       secondaryCta: "Popular Tools",
       popular: "Popular Tools",
       categories: "Categories",
+      latestBlog: "Latest Blog",
+      premiumPreview: "Premium Preview",
+      premiumDescription: "Feature flags are now in place for future upgrades like ad-free usage, larger files, and export workflows.",
+      featureOn: "Enabled",
+      featureOff: "Coming soon",
     },
     zh: {
       eyebrow: "AI 与开发者工具",
@@ -101,13 +111,23 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       secondaryCta: "热门工具",
       popular: "热门工具",
       categories: "分类",
+      latestBlog: "最新博客",
+      premiumPreview: "高级功能预览",
+      premiumDescription: "已为未来升级版能力预留 feature flags，包括去广告、大文件处理与导出流程。",
+      featureOn: "已启用",
+      featureOff: "即将推出",
     },
   }[locale];
+
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Madabase", item: buildAbsoluteUrl(`/${locale}`) },
+  ]);
 
   return (
     <div className="min-h-screen bg-transparent">
       <Header locale={locale} pathname="/" />
       <main className="page-shell">
+        <JsonLd id="home-breadcrumbs" data={breadcrumbSchema} />
         <PageViewTracker locale={locale} />
         <AdSlot locale={locale} position="header" size="banner" />
         <section className="surface-card-strong overflow-hidden">
@@ -124,6 +144,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                   {copy.secondaryCta}
                 </a>
               </div>
+              <PopularToolsClient locale={locale} />
             </div>
             <div className="workbench-grid border-t border-[var(--border)] bg-[var(--surface-muted)] p-5 lg:border-l lg:border-t-0">
               <div className="rounded-md border border-[var(--border-strong)] bg-[var(--surface-code)] p-4 text-white shadow-[var(--shadow-panel)]">
@@ -164,20 +185,49 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                 <h3 className="text-lg font-bold text-[var(--text)]">{category.title}</h3>
                 <p className="mt-2 text-sm leading-6 text-[var(--text-muted)]">{category.description}</p>
                 <div className="mt-4 space-y-3">
-                  {category.tools.length > 0 ? category.tools.map((tool) => (
+                  {category.tools.map((tool) => (
                     <Link key={tool.slug} href={`/${locale}/tools/${tool.slug}`} className="block rounded-md border border-[var(--border)] bg-white px-3 py-2 text-sm font-medium text-[var(--text)] transition hover:border-[var(--brand)] hover:bg-[var(--brand-soft)]">
                       {tool.h1[locale]}
                     </Link>
-                  )) : (
-                    <div className="rounded-md border border-dashed border-[var(--border)] bg-white px-3 py-2 text-sm text-[var(--text-muted)]">
-                      {locale === "en" ? "Reserved for next-phase AI products" : "预留给下一阶段 AI 产品"}
-                    </div>
-                  )}
+                  ))}
                 </div>
               </section>
             ))}
           </div>
           <AdSlot locale={locale} position="content" size="native" />
+        </section>
+
+        <section className="mt-14 grid gap-5 lg:grid-cols-[1.2fr_0.8fr]">
+          <div className="surface-card p-5">
+            <div className="mb-5 flex items-end justify-between gap-4">
+              <h2 className="text-2xl font-bold text-[var(--text)]">{copy.latestBlog}</h2>
+              <Link href={`/${locale}/blog`} className="text-sm font-semibold text-[var(--brand-strong)]">{locale === "en" ? "Browse all" : "查看全部"}</Link>
+            </div>
+            <div className="grid gap-4 sm:grid-cols-2">
+              {latestPosts.map((post) => (
+                <Link key={post.slug} href={`/${locale}/blog/${post.slug}`} className="rounded-md border border-[var(--border)] bg-white p-4 transition hover:border-[var(--brand)] hover:bg-[var(--brand-soft)]">
+                  <p className="code-font text-xs uppercase tracking-[0.16em] text-[var(--text-soft)]">{post.date}</p>
+                  <h3 className="mt-2 text-lg font-semibold text-[var(--text)]">{post.title}</h3>
+                  <p className="mt-2 text-sm leading-6 text-[var(--text-muted)]">{post.description}</p>
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          <div className="surface-card p-5">
+            <h2 className="text-2xl font-bold text-[var(--text)]">{copy.premiumPreview}</h2>
+            <p className="mt-3 text-sm leading-6 text-[var(--text-muted)]">{copy.premiumDescription}</p>
+            <div className="mt-5 space-y-3">
+              {Object.keys(premiumFeatures).map((feature) => (
+                <div key={feature} className="flex items-center justify-between rounded-md border border-[var(--border)] bg-white px-4 py-3">
+                  <span className="code-font text-sm text-[var(--text)]">{feature}</span>
+                  <span className={`rounded-full px-2.5 py-1 text-xs font-semibold ${isPremium(feature as keyof typeof premiumFeatures) ? "bg-emerald-100 text-emerald-700" : "bg-amber-100 text-amber-700"}`}>
+                    {isPremium(feature as keyof typeof premiumFeatures) ? copy.featureOn : copy.featureOff}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
         </section>
       </main>
       <Footer />

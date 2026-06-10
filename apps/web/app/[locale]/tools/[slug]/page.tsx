@@ -3,10 +3,11 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getRelatedTools, toolMap, toolRegistry } from "@/lib/tools";
 import { isLocale, locales } from "@/lib/i18n";
-import { buildToolMetadata } from "@/lib/seo";
+import { buildAbsoluteUrl, buildToolMetadata } from "@/lib/seo";
 import { ToolLayout } from "@/components/ToolLayout";
 import { ToolIcon } from "@/components/ToolIcon";
 import { ToolRenderer } from "@/components/tools/ToolRenderer";
+import { JsonLd, buildBreadcrumbSchema, buildSoftwareApplicationSchema } from "@/components/JsonLd";
 
 export function generateStaticParams() {
   return locales.flatMap((locale) => toolRegistry.map((tool) => ({ locale, slug: tool.slug })));
@@ -35,11 +36,33 @@ export default async function ToolPage({ params }: { params: Promise<{ locale: s
 
   const faq = tool.faq[locale];
   const relatedTools = getRelatedTools(tool.slug);
+  const canonicalUrl = buildAbsoluteUrl(`/${locale}/tools/${tool.slug}`);
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Madabase", item: buildAbsoluteUrl(`/${locale}`) },
+    { name: locale === "en" ? "Tools" : "工具", item: buildAbsoluteUrl(`/${locale}/tools`) },
+    { name: tool.h1[locale], item: canonicalUrl },
+  ]);
+  const softwareSchema = buildSoftwareApplicationSchema({
+    name: tool.h1[locale],
+    description: tool.seoDescription[locale],
+    url: canonicalUrl,
+    category: tool.category,
+    locale,
+  });
 
   return (
     <ToolLayout locale={locale} pathname={`/tools/${tool.slug}`} tool={tool.slug}>
+      <JsonLd id={`tool-breadcrumbs-${tool.slug}`} data={breadcrumbSchema} />
+      <JsonLd id={`tool-schema-${tool.slug}`} data={softwareSchema} />
       <article className="surface-card-strong overflow-hidden">
         <header className="border-b border-[var(--border)] p-5 sm:p-7">
+          <nav className="mb-4 flex flex-wrap items-center gap-2 text-sm text-[var(--text-soft)]">
+            <Link href={`/${locale}`} className="transition hover:text-[var(--brand-strong)]">Madabase</Link>
+            <span>/</span>
+            <Link href={`/${locale}/tools`} className="transition hover:text-[var(--brand-strong)]">{locale === "en" ? "Tools" : "工具"}</Link>
+            <span>/</span>
+            <span className="text-[var(--text)]">{tool.h1[locale]}</span>
+          </nav>
           <div className="flex items-start gap-4">
             <span className="grid h-12 w-12 shrink-0 place-items-center rounded-md border border-[var(--border)] bg-[var(--brand-soft)] text-[var(--brand-strong)]">
               <ToolIcon component={tool.component} className="h-6 w-6" />
@@ -53,7 +76,7 @@ export default async function ToolPage({ params }: { params: Promise<{ locale: s
         </header>
 
         <section className="bg-[var(--surface-muted)] p-3 sm:p-5">
-          <ToolRenderer component={tool.component} />
+          <ToolRenderer component={tool.component} toolSlug={tool.slug} />
         </section>
 
         <section className="border-t border-[var(--border)] p-5 sm:p-7">
