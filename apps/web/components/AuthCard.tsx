@@ -25,7 +25,7 @@ export function AuthCard({
       requestCode: "Send code",
       verify: mode === "login" ? "Log in" : "Create account",
       hint: "Email + verification code. No password required.",
-      sent: "Verification code sent. In development it is printed to the server console.",
+      sent: "Verification code sent.",
       invalid: "Something went wrong. Please try again.",
     },
     zh: {
@@ -34,7 +34,7 @@ export function AuthCard({
       requestCode: "发送验证码",
       verify: mode === "login" ? "登录" : "创建账户",
       hint: "邮箱 + 验证码，无需密码。",
-      sent: "验证码已发送。开发环境下会打印在服务端日志中。",
+      sent: "验证码已发送。",
       invalid: "操作失败，请重试。",
     },
   }[locale];
