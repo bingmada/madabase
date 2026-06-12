@@ -1,31 +1,69 @@
 [TITLE]
-JSON to TypeScript Interface Generator
+Free Online JSON to TypeScript Converter
 [H1]
 JSON to TypeScript Interface Generator
 [DESCRIPTION]
-Generate TypeScript interfaces from JSON samples.
+Generate TypeScript interfaces from JSON samples automatically. Copy-paste ready.
 [SEO_TITLE]
-JSON to TypeScript Interface Generator
+JSON to TypeScript Interface Generator - Convert JSON to Types
 [SEO_DESCRIPTION]
-Convert JSON objects into TypeScript interfaces for frontend and backend development.
+Generate TypeScript interfaces from JSON samples automatically. Includes proper types for arrays, optional fields, and nested objects.
 [INTRO]
-Generate starter interfaces from sample JSON so you can speed up typing for APIs, DTOs, and UI state models.
+TypeScript interfaces provide type safety for your JavaScript applications. When working with API responses or configuration data, manually creating interfaces can be tedious and error-prone. A JSON to TypeScript converter automates this process.
+
+This free online tool generates TypeScript interfaces from JSON samples instantly. Simply paste your JSON, and the tool creates properly typed TypeScript interfaces with correct array types, optional fields, and nested object types.
+
+The generated TypeScript code is clean, properly formatted, and ready to use in your TypeScript projects.
 [HOW_TO_USE]
-Paste sample JSON
-Use a representative object or payload sample.
+Paste your JSON sample
+Enter a JSON object or array that represents the data structure you want to type. More complete samples produce better type definitions.
 ---
-Generate the interface
-The tool infers primitive values, nested objects, and arrays.
+View generated TypeScript
+The tool generates TypeScript interfaces based on your JSON. It handles nested objects, arrays, and various data types.
 ---
-Refine names and optionality
-Review the generated types and adjust domain-specific naming.
+Copy the interface
+Copy the generated TypeScript code and use it in your project.
 [EXAMPLES]
-{"id":1,"name":"Ada"}
+{"name":"test","age":25,"active":true}
 ===
 interface Root {
-  id: number;
   name: string;
+  age: number;
+  active: boolean;
 }
 [FAQ]
-Can it infer nested objects?
-Yes. The MVP generator creates nested interfaces for object fields and arrays.
+What does JSON to TypeScript do?
+It converts JSON data samples into TypeScript interface definitions. This provides type safety for working with JSON data in TypeScript projects.
+
+What TypeScript types are generated?
+The tool generates appropriate types: string, number, boolean for primitives, array types for arrays, and nested interfaces for objects.
+
+Does it handle optional fields?
+Yes. If a field is not present in all samples, it may be marked as optional with a ? suffix.
+
+Can it handle arrays?
+Yes. Arrays are typed with element types, like string[] or nested interface arrays.
+
+What about null and undefined?
+The tool analyzes the actual values in your JSON to determine appropriate types. Missing or null values are handled appropriately.
+
+Is the generated code production-ready?
+The generated interfaces are functional and can be used directly. You may want to add JSDoc comments or further customize for your needs.
+
+Does it support discriminated unions?
+This basic version generates standard interfaces. For complex union types, you would need to manually adjust the output.
+
+Is my JSON uploaded?
+No. All conversion happens locally in your browser.
+[RELATED_TOOLS]
+json-formatter
+json-validator
+js-formatter
+[CATEGORY]
+developer
+[KEYWORDS]
+json to typescript
+typescript interface generator
+json types
+typescript types from json
+convert json to typescript

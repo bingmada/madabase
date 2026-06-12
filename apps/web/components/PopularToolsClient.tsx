@@ -4,14 +4,14 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { getPopularToolsFromEvents } from "@/lib/analytics";
 import type { Locale } from "@/lib/i18n";
-import { toolMap } from "@/lib/tools";
+import { toolMap } from "@/lib/tool-registry";
 
 export function PopularToolsClient({ locale }: { locale: Locale }) {
-  const [items, setItems] = useState(() => getPopularToolsFromEvents(6));
+  const [items, setItems] = useState<Array<{ slug: string; count: number }>>([]);
 
   useEffect(() => {
+    setItems(getPopularToolsFromEvents(6));
     const update = () => setItems(getPopularToolsFromEvents(6));
-    update();
     window.addEventListener("madabase:analytics", update as EventListener);
     return () => window.removeEventListener("madabase:analytics", update as EventListener);
   }, []);

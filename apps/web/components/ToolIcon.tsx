@@ -19,7 +19,7 @@ import {
   WholeWord,
   WrapText,
 } from "lucide-react";
-import type { ToolComponentName } from "@/lib/tools";
+import type { ToolComponentName } from "@/lib/tool-registry";
 
 const iconMap = {
   JsonFormatter: Braces,

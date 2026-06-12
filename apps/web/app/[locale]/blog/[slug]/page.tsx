@@ -6,6 +6,7 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { JsonLd, buildArticleSchema, buildBreadcrumbSchema } from "@/components/JsonLd";
 import { PageViewTracker } from "@/components/PageViewTracker";
+import { Breadcrumb } from "@/components/Breadcrumb";
 import { getAllBlogPosts, getBlogPost } from "@/lib/blog";
 import { isLocale, locales } from "@/lib/i18n";
 import { buildAbsoluteUrl, buildPageMetadata } from "@/lib/seo";
@@ -67,13 +68,14 @@ export default async function BlogPostPage({ params }: { params: Promise<{ local
         <AdSlot locale={locale} position="header" size="banner" />
         <article className="surface-card-strong overflow-hidden">
           <header className="border-b border-[var(--border)] p-6 sm:p-8">
-            <nav className="mb-4 flex flex-wrap items-center gap-2 text-sm text-[var(--text-soft)]">
-              <Link href={`/${locale}`} className="transition hover:text-[var(--brand-strong)]">Madabase</Link>
-              <span>/</span>
-              <Link href={`/${locale}/blog`} className="transition hover:text-[var(--brand-strong)]">{locale === "en" ? "Blog" : "博客"}</Link>
-              <span>/</span>
-              <span className="text-[var(--text)]">{post.title}</span>
-            </nav>
+            <Breadcrumb
+              locale={locale}
+              items={[
+                { label: "Madabase", href: `/${locale}` },
+                { label: locale === "en" ? "Blog" : "博客", href: `/${locale}/blog` },
+                { label: post.title },
+              ]}
+            />
             <p className="code-font text-xs uppercase tracking-[0.18em] text-[var(--text-soft)]">{post.date}</p>
             <h1 className="mt-3 text-4xl font-black tracking-tight text-[var(--text)]">{post.title}</h1>
             <p className="mt-4 text-lg leading-8 text-[var(--text-muted)]">{post.description}</p>

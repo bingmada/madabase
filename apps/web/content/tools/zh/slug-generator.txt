@@ -1,28 +1,66 @@
 [TITLE]
-免费在线 Slug Generator
+免费在线 Slug 生成器
 [H1]
-免费 Slug Generator 工具
+免费 Slug 生成器
 [DESCRIPTION]
-从标题生成干净的 URL slug。
+从任何文本生成 URL 友好的 slug。小写、带连字符。
 [SEO_TITLE]
-免费 Slug Generator 工具
+免费 Slug 生成器 - 在线创建 URL Slug
 [SEO_DESCRIPTION]
-将标题快速转换为适合 SEO 的 URL slug。
+从标题和文本生成干净的、SEO 友好的 URL slug。自动转换为小写，移除特殊字符，用连字符替换空格。
 [INTRO]
-Slug 生成器适合博客文章、文档页面、分类页和其它需要 SEO 友好链接的场景。
+URL slug 是文本的 URL 友好版本，用于 URL 的路径部分。好的 slug 是小写的，使用连字符分隔单词，只包含字母、数字和连字符。创建一致的、可读的 slug 对 SEO 和用户体验都很重要。
+
+这款免费的在线 slug 生成器将任何文本转换为干净的、URL 友好的 slug。无论你是创建博客文章、产品页面还是分类页面，这个工具都可以轻松生成正确的 slug。
+
+Slug 优化对 SEO 很重要：可读的 slug 帮助搜索引擎理解你的内容并提高搜索结果中的点击率。
 [HOW_TO_USE]
-输入标题
-粘贴要转成 slug 的标题或短语。
+输入你的文本
+输入或粘贴你想转换为 slug 的文本。这可以是标题、标题或任何文本。
 ---
-生成 slug
-自动规范大小写、空格和标点。
+查看 slug
+Slug 会实时自动生成。它转换为小写，移除特殊字符，用连字符替换空格。
 ---
-复制到链接中
-用于路由、CMS 或博客系统。
+复制和使用
+复制生成的 slug 用于你的 URL。
 [EXAMPLES]
-Best Online Developer Tools
+欢迎使用在线工具
 ===
-best-online-developer-tools
+welcome-use-online-tool
 [FAQ]
-为什么需要 slug？
-清晰的 slug 有助于阅读、管理内容和组织路由。
+什么是 URL slug？
+URL slug 是 URL 中以人类可读方式标识特定页面的部分。它通常来自页面标题，使用连字符分隔单词。
+
+如何创建好的 slug？
+好的 slug 是：小写、使用连字符分隔单词、只包含字母和数字、描述页面内容、不要太长。
+
+为什么要用连字符而不是下划线？
+搜索引擎将连字符视为单词分隔符，但通常将下划线视为单词的一部分。使用连字符以获得更好的 SEO。
+
+slug 应该多长？
+保持 slug 在 50-60 个字符以下以获得最佳兼容性。在 slug 前面包含最重要的关键字。
+
+我应该在 slug 中包含日期吗？
+对于博客，像 /2024/01/文章名称 这样的日期前缀可能有用，但可能会使 URL 结构复杂化。许多人更喜欢没有日期的干净 slug。
+
+它处理特殊字符吗？
+是的。工具移除或转换特殊字符，同时保留核心单词。非 ASCII 字符尽可能转换为 ASCII 等效字符。
+
+我可以自定义输出吗？
+这个工具生成遵循最佳实践的 slug。对于自定义格式，你可以手动修改输出。
+
+我的文本上传了吗？
+没有。所有 slug 生成都在浏览器本地进行。
+[RELATED_TOOLS]
+url-encoder
+case-converter
+word-counter
+[CATEGORY]
+text
+[KEYWORDS]
+slug 生成器
+url slug
+创建 slug
+seo slug
+永久链接生成器
+url 友好

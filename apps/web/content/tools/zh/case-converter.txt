@@ -1,28 +1,62 @@
 [TITLE]
-免费在线 Case Converter
+免费在线大小写转换器
 [H1]
-免费 Case Converter 工具
+免费大小写转换器
 [DESCRIPTION]
-转换为大写、小写和标题格式。
+在不同大小写格式之间转换文本：大写、小写、标题大小写、句子大小写。
 [SEO_TITLE]
-免费 Case Converter 工具
+免费大小写转换器 - 在线转换文本大小写
 [SEO_DESCRIPTION]
-快速切换文本大小写，适合标题、文案和内容整理。
+即时将文本转换为大写、小写、标题大小写或句子大小写。快速、免费，完全在浏览器中运行。
 [INTRO]
-大小写转换器适合调整标题、UI 文案、slug 和文档内容格式。
+文本大小写转换是处理编程标识符、标题、标题和用户生成内容时的常见任务。不同上下文需要不同的大小写样式：snake_case 用于编程变量，Title Case 用于标题，或 Sentence Case 用于段落。
+
+这款免费的大小写转换器即时在不同大小写格式之间转换文本。无论你是格式化代码、标准化数据还是准备内容，这个工具让大小写转换变得轻松。
+
+了解何时使用每种大小写样式对于代码质量和一致的内容呈现很重要。
 [HOW_TO_USE]
-粘贴文本
-输入需要转换的字符串。
+输入你的文本
+在输入区域输入或粘贴你想转换的文本。
 ---
-执行转换
-生成大写、小写和标题格式。
+选择目标大小写
+选择所需的格式：小写、大写、标题大小写、句子大小写、camelCase、snake_case、kebab-case 或 PascalCase。
 ---
-复制需要的结果
-选择适合当前场景的版本。
+复制转换后的文本
+点击复制以获取你选择的格式的转换后文本。
 [EXAMPLES]
-madabase growth
+hello world example
 ===
-Madabase Growth
+标题大小写: Hello World Example
+camelCase: helloWorldExample
+snake_case: hello_world_example
 [FAQ]
-最常见的几种大小写是什么？
-最常见的是大写、小写和标题格式。
+支持哪些大小写格式？
+常见格式包括：小写、大写、标题大小写、句子大小写、camelCase、PascalCase、snake_case 和 kebab-case。
+
+什么是 camelCase？
+camelCase 将单词组合，第一个单词小写，后续单词首字母大写。例如：helloWorldExample。常见于 JavaScript 变量命名。
+
+什么是 snake_case？
+snake_case 使用小写字母，单词之间用下划线分隔。例如：hello_world_example。常见于 Python 和 SQL。
+
+什么是 kebab-case？
+kebab-case 使用小写字母，单词之间用连字符分隔。例如：hello-world-example。常见于 URL 和 CSS。
+
+什么是 Title Case？
+标题大小写将每个主要单词的首字母大写。例如：Hello World Example。常见于标题和标题。
+
+我的文本上传了吗？
+没有。所有转换都在浏览器本地进行。
+[RELATED_TOOLS]
+text-cleaner
+slug-generator
+word-counter
+[CATEGORY]
+text
+[KEYWORDS]
+大小写转换器
+文本大小写
+大小写转换
+标题大小写
+驼峰命名
+下划线命名

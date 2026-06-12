@@ -3,28 +3,71 @@
 [H1]
 免费 JWT 解码器
 [DESCRIPTION]
-快速解码 JWT 的 Header 与 Payload。
+在浏览器中快速解码 JWT 令牌，查看 Header、Payload 和 Signature。
 [SEO_TITLE]
-免费 JWT 解码器
+免费 JWT 解码器 - 在线解码 JWT 令牌
 [SEO_DESCRIPTION]
-在浏览器中安全解码 JWT，查看头信息、声明和过期时间。
+在浏览器中快速解码 JWT 令牌，查看 Header、Payload 和 Signature。无需上传，数据本地处理。
 [INTRO]
-JWT 解码适合查看 exp、iss、sub 和自定义字段，无需把 token 发到服务端。
+JSON Web Token (JWT) 是一种在各方之间安全传输信息的流行方式，以 JSON 对象形式表示。它们广泛用于现代身份验证系统，特别是单页应用和微服务架构。了解 JWT 令牌的结构对于开发者调试身份验证流程、检查声明或排查令牌相关问题至关重要。
+
+这款免费的在线 JWT 解码器允许你检查 JWT 令牌，无需任何服务器交互。粘贴 JWT 令牌后即可立即查看其三部分：Header（头部）、Payload（负载）和 Signature（签名）。工具完全在浏览器中运行，你的令牌永远不会离开你的设备。
+
+JWT 常用于用户身份验证、API 授权和信息交换。它们由三个用点分隔的 Base64URL 编码部分组成：Header（算法和令牌类型）、Payload（声明）和 Signature（签名）。这种模块化结构使 JWT 高效且可扩展，适用于分布式系统。
 [HOW_TO_USE]
-粘贴 Token
-把完整 JWT 字符串放入解码器。
+粘贴你的 JWT 令牌
+从应用、浏览器存储或 API 响应中复制 JWT 令牌。令牌应该是三个用点分隔的 Base64URL 编码字符串。
 ---
-查看 Header 和 Payload
-检查算法、过期时间、签发方和自定义声明。
+查看解码后的部分
+工具会立即解码并显示 Header（通常显示算法）、Payload（包含用户信息、过期时间和自定义声明）和 Signature 部分。
 ---
-签名需单独校验
-这个工具只做查看用途，签名校验应在认证系统中完成。
+检查声明和时间戳
+查看解码后的 Payload 以检查用户 ID、角色、权限、过期时间以及任何自定义声明。注意，没有密钥无法验证签名。
 [EXAMPLES]
-eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjMifQ.signature
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
 ===
+Header:
 {
-  "sub": "123"
+  "alg": "HS256",
+  "typ": "JWT"
+}
+Payload:
+{
+  "sub": "1234567890",
+  "name": "John Doe",
+  "iat": 1516239022
 }
 [FAQ]
-它会校验签名吗？
-不会。它只用于解码查看内容，不做签名校验。
+什么是 JWT 令牌？
+JSON Web Token (JWT) 是一种紧凑的、URL 安全的表示声明的方式，用于在两方之间传输。它由三部分组成：Header、Payload 和 Signature，以 Base64URL 格式编码。
+
+JWT 解码器做什么？
+它通过拆分三个 Base64URL 编码的部分来解码 JWT 令牌，并以人类可读的 JSON 格式显示它们。它显示算法、令牌类型、声明和时间戳。
+
+解码和验证有什么区别？
+解码显示令牌内容而不检查是否有效。验证使用密钥确认令牌未被篡改。此工具仅解码；没有密钥无法验证签名。
+
+我的 JWT 令牌会发送到服务器吗？
+不会。所有解码都在浏览器本地进行。你的 JWT 令牌完全在你的设备上处理，不会传输到任何地方。
+
+Header 包含什么？
+Header 通常包含两部分：用于签名的算法（如 HS256 或 RS256）和令牌类型（通常是 JWT）。
+
+Payload 中有什么信息？
+Payload 包含声明，即关于实体（通常是用户）的陈述和附加元数据。常见声明包括 sub（用户 ID）、exp（过期时间）、iat（发布时间）、name 以及应用特定的自定义声明。
+
+如何读取过期时间？
+JWT 时间戳通常是 Unix 纪元格式（自 1970 年 1 月 1 日起的秒数）。你可以使用我们的时间戳转换器工具将其转换为人可读的日期。
+[RELATED_TOOLS]
+base64
+json-formatter
+json-validator
+[CATEGORY]
+developer
+[KEYWORDS]
+jwt 解码器
+jwt 解码
+jwt 解析器
+jwt 查看器
+json web token 解码器
+jwt 检查器

@@ -3,28 +3,58 @@
 [H1]
 免费 XML 格式化工具
 [DESCRIPTION]
-美化 XML，适合接口、订阅和配置内容。
+格式化和美化 XML 文档以提高可读性。
 [SEO_TITLE]
-免费 XML 格式化工具
+免费 XML 格式化工具 - 在线美化 XML
 [SEO_DESCRIPTION]
-快速整理 XML 结构，让嵌套标签更容易检查。
+即时格式化和美化 XML 文档。修复缩进、校验语法、清理 XML。对于 API 开发者和数据工程师必不可少。
 [INTRO]
-XML 依然常见于订阅源、配置文件和旧系统集成中，调试时需要更清晰的结构。
+XML（eXtensible Markup Language）是一种用于编码文档和数据结构的标记语言。虽然在 API 中不如 JSON 常见，但 XML 仍然广泛用于企业系统、SOAP API、RSS 订阅源和配置文件。
+
+这款免费的在线 XML 格式化工具即时美化你的 XML 文档。无论你是处理 SOAP API、RSS 订阅源、配置文件还是数据交换格式，这个工具帮助你保持可读的 XML。
+
+适当的 XML 格式对于调试、代码审查和维护基于 XML 的系统至关重要。
 [HOW_TO_USE]
-粘贴 XML
-输入需要查看的紧凑 XML 字符串。
+粘贴你的 XML
+在输入区域输入或粘贴你的 XML 内容。
 ---
-运行格式化
-把标签拆分成更易阅读的多行结构。
+查看格式化结果
+查看带有适当缩进和结构的 XML。
 ---
-检查嵌套
-复制前确认层级关系是否正确。
+复制格式化的 XML
+复制干净的、适当格式化的 XML。
 [EXAMPLES]
-<root><a>1</a></root>
+<root><item>test</item></root>
 ===
 <root>
-<a>1</a>
+  <item>test</item>
 </root>
 [FAQ]
-为什么还需要 XML 工具？
-XML 在订阅源、配置和旧系统集成中仍然很常见。
+什么是 XML 格式化工具？
+XML 格式化工具（XML 美化器）向 XML 文档添加适当的缩进和结构，使它们可读。
+
+XML 什么时候还在使用？
+XML 在企业系统、SOAP API、RSS 订阅源、Microsoft Office 文档和配置文件中很常见。
+
+它会校验 XML 吗？
+格式化工具检查基本 XML 语法并可能报告明显错误。
+
+XML 和 JSON 有什么区别？
+XML 是带有开始和结束标签的标记语言。JSON 是带有键值对的数据格式。JSON 在现代 Web API 中更常见。
+
+可以格式化带命名空间的 XML 吗？
+是的。命名空间和前缀会被保留并适当格式化。
+
+我的 XML 数据安全吗？
+没有。所有格式化都在浏览器本地进行。
+[RELATED_TOOLS]
+html-formatter
+yaml-formatter
+json-formatter
+[CATEGORY]
+web
+[KEYWORDS]
+xml 格式化工具
+xml 美化器
+格式化 xml
+xml 校验器

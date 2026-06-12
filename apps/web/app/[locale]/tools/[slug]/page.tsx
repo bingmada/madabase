@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { FavoriteButton } from "@/components/FavoriteButton";
 import { getCurrentUser } from "@/lib/auth/services/sessionService";
 import { getFavoriteState } from "@/lib/favorites";
-import { getRelatedTools, toolMap, toolRegistry } from "@/lib/tools";
+import { getRelatedTools, toolMap, toolRegistry } from "@/lib/tool-registry";
 import { isLocale, locales } from "@/lib/i18n";
 import { buildAbsoluteUrl, buildToolMetadata } from "@/lib/seo";
 import { ToolLayout } from "@/components/ToolLayout";
@@ -12,6 +12,9 @@ import { ToolIcon } from "@/components/ToolIcon";
 import { ToolRenderer } from "@/components/tools/ToolRenderer";
 import { ToolUsageTracker } from "@/components/ToolUsageTracker";
 import { JsonLd, buildBreadcrumbSchema, buildSoftwareApplicationSchema } from "@/components/JsonLd";
+import { Breadcrumb } from "@/components/Breadcrumb";
+import { loadToolContent } from "@/lib/tool-content";
+import type { Locale } from "@/lib/i18n";
 
 export function generateStaticParams() {
   return locales.flatMap((locale) => toolRegistry.map((tool) => ({ locale, slug: tool.slug })));
@@ -20,66 +23,80 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ locale: string; slug: string }> }): Promise<Metadata> {
   const { locale, slug } = await params;
   if (!isLocale(locale)) return {};
-  const tool = toolMap.get(slug);
-  if (!tool) return {};
+
+  const registryEntry = toolMap.get(slug);
+  if (!registryEntry) return {};
+
+  // Try to load content from file, fallback to basic metadata
+  const content = await loadToolContent(slug, locale);
+  if (!content) return {};
 
   return buildToolMetadata({
-    title: tool.seoTitle[locale],
-    description: tool.seoDescription[locale],
-    keywords: tool.keywords,
+    title: content.seo[locale].title,
+    description: content.seo[locale].description,
+    keywords: content.seo[locale].keywords,
     locale,
-    path: `/tools/${tool.slug}`,
+    path: `/tools/${slug}`,
   });
 }
 
 export default async function ToolPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
   const { locale, slug } = await params;
   if (!isLocale(locale)) notFound();
-  const tool = toolMap.get(slug);
-  if (!tool) notFound();
+
+  const registryEntry = toolMap.get(slug);
+  if (!registryEntry) notFound();
+
+  // Load content from file system
+  const content = await loadToolContent(slug, locale);
+  if (!content) notFound();
 
   const currentUser = await getCurrentUser();
-  const isFavorited = currentUser ? await getFavoriteState(currentUser.id, tool.slug) : false;
-  const faq = tool.faq[locale];
-  const relatedTools = getRelatedTools(tool.slug);
-  const canonicalUrl = buildAbsoluteUrl(`/${locale}/tools/${tool.slug}`);
+  const isFavorited = currentUser ? await getFavoriteState(currentUser.id, slug) : false;
+  const relatedTools = getRelatedTools(slug);
+  const canonicalUrl = buildAbsoluteUrl(`/${locale}/tools/${slug}`);
+
   const breadcrumbSchema = buildBreadcrumbSchema([
     { name: "Madabase", item: buildAbsoluteUrl(`/${locale}`) },
     { name: locale === "en" ? "Tools" : "工具", item: buildAbsoluteUrl(`/${locale}/tools`) },
-    { name: tool.h1[locale], item: canonicalUrl },
+    { name: content.h1[locale], item: canonicalUrl },
   ]);
+
   const softwareSchema = buildSoftwareApplicationSchema({
-    name: tool.h1[locale],
-    description: tool.seoDescription[locale],
+    name: content.h1[locale],
+    description: content.seo[locale].description,
     url: canonicalUrl,
-    category: tool.category,
+    category: content.category,
     locale,
   });
 
+  const faq = content.faq[locale];
+
   return (
-    <ToolLayout locale={locale} pathname={`/tools/${tool.slug}`} tool={tool.slug}>
-      <JsonLd id={`tool-breadcrumbs-${tool.slug}`} data={breadcrumbSchema} />
-      <JsonLd id={`tool-schema-${tool.slug}`} data={softwareSchema} />
+    <ToolLayout locale={locale} pathname={`/tools/${slug}`} tool={slug}>
+      <JsonLd id={`tool-breadcrumbs-${slug}`} data={breadcrumbSchema} />
+      <JsonLd id={`tool-schema-${slug}`} data={softwareSchema} />
       <article className="surface-card-strong overflow-hidden">
         <header className="border-b border-[var(--border)] p-5 sm:p-7">
-          <nav className="mb-4 flex flex-wrap items-center gap-2 text-sm text-[var(--text-soft)]">
-            <Link href={`/${locale}`} className="transition hover:text-[var(--brand-strong)]">Madabase</Link>
-            <span>/</span>
-            <Link href={`/${locale}/tools`} className="transition hover:text-[var(--brand-strong)]">{locale === "en" ? "Tools" : "工具"}</Link>
-            <span>/</span>
-            <span className="text-[var(--text)]">{tool.h1[locale]}</span>
-          </nav>
+          <Breadcrumb
+            locale={locale}
+            items={[
+              { label: "Madabase", href: `/${locale}` },
+              { label: locale === "en" ? "Tools" : "工具", href: `/${locale}/tools` },
+              { label: content.h1[locale] },
+            ]}
+          />
           <div className="flex items-start gap-4">
             <span className="grid h-12 w-12 shrink-0 place-items-center rounded-md border border-[var(--border)] bg-[var(--brand-soft)] text-[var(--brand-strong)]">
-              <ToolIcon component={tool.component} className="h-6 w-6" />
+              <ToolIcon component={registryEntry.component} className="h-6 w-6" />
             </span>
             <div className="min-w-0 flex-1">
-              <p className="eyebrow">{tool.category}</p>
-              <h1 className="mt-2 text-3xl font-black tracking-tight text-[var(--text)] sm:text-4xl">{tool.h1[locale]}</h1>
-              <p className="mt-3 text-base leading-7 text-[var(--text-muted)] sm:text-lg">{tool.description[locale]}</p>
+              <p className="eyebrow">{content.category}</p>
+              <h1 className="mt-2 text-3xl font-black tracking-tight text-[var(--text)] sm:text-4xl">{content.h1[locale]}</h1>
+              <p className="mt-3 text-base leading-7 text-[var(--text-muted)] sm:text-lg">{content.description[locale]}</p>
               <FavoriteButton
                 locale={locale}
-                toolSlug={tool.slug}
+                toolSlug={slug}
                 initialFavorited={isFavorited}
                 requireLoginHref={`/${locale}/login`}
               />
@@ -88,19 +105,19 @@ export default async function ToolPage({ params }: { params: Promise<{ locale: s
         </header>
 
         <section className="bg-[var(--surface-muted)] p-3 sm:p-5">
-          <ToolUsageTracker toolSlug={tool.slug} />
-          <ToolRenderer component={tool.component} toolSlug={tool.slug} />
+          <ToolUsageTracker toolSlug={slug} />
+          <ToolRenderer component={registryEntry.component} toolSlug={slug} />
         </section>
 
         <section className="border-t border-[var(--border)] p-5 sm:p-7">
           <h2 className="text-2xl font-bold text-[var(--text)]">{locale === "en" ? "Introduction" : "介绍"}</h2>
-          <p className="mt-3 leading-7 text-[var(--text-muted)]">{tool.intro[locale]}</p>
+          <p className="mt-3 leading-7 text-[var(--text-muted)]">{content.intro[locale]}</p>
         </section>
 
         <section className="border-t border-[var(--border)] p-5 sm:p-7">
           <h2 className="text-2xl font-bold text-[var(--text)]">{locale === "en" ? "How To Use" : "如何使用"}</h2>
           <div className="mt-5 grid gap-4">
-            {tool.howToUse[locale].map((step, index) => (
+            {content.howToUse[locale].map((step, index) => (
               <div key={step.title} className="rounded-md border border-[var(--border)] bg-white p-5">
                 <p className="code-font text-xs font-semibold uppercase tracking-[0.16em] text-[var(--text-soft)]">{locale === "en" ? `Step ${index + 1}` : `步骤 ${index + 1}`}</p>
                 <h3 className="mt-2 text-lg font-semibold text-[var(--text)]">{step.title}</h3>
@@ -113,8 +130,8 @@ export default async function ToolPage({ params }: { params: Promise<{ locale: s
         <section className="border-t border-[var(--border)] p-5 sm:p-7">
           <h2 className="text-2xl font-bold text-[var(--text)]">{locale === "en" ? "Examples" : "示例"}</h2>
           <div className="mt-5 grid gap-4">
-            {tool.examples[locale].map((example, index) => (
-              <div key={`${tool.slug}-${index}`} className="rounded-md border border-[var(--border)] bg-white p-5">
+            {content.examples[locale].map((example, index) => (
+              <div key={`${slug}-${index}`} className="rounded-md border border-[var(--border)] bg-white p-5">
                 <div className="grid gap-4 lg:grid-cols-2">
                   <div>
                     <p className="code-font text-xs font-semibold uppercase tracking-[0.16em] text-[var(--text-soft)]">{locale === "en" ? "Input" : "输入"}</p>
@@ -158,8 +175,7 @@ export default async function ToolPage({ params }: { params: Promise<{ locale: s
                       <ToolIcon component={relatedTool.component} />
                     </span>
                     <div>
-                      <h3 className="text-base font-semibold text-[var(--text)]">{relatedTool.h1[locale]}</h3>
-                      <p className="mt-1 text-sm leading-6 text-[var(--text-muted)]">{relatedTool.description[locale]}</p>
+                      <h3 className="text-base font-semibold text-[var(--text)]">{relatedTool.slug}</h3>
                     </div>
                   </div>
                 </Link>

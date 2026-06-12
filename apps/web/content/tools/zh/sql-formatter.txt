@@ -3,28 +3,68 @@
 [H1]
 免费 SQL 格式化工具
 [DESCRIPTION]
-格式化 SQL 查询，提高可读性。
+格式化和美化 SQL 查询以提高可读性和调试效率。
 [SEO_TITLE]
-免费 SQL 格式化工具
+免费 SQL 格式化工具 - 在线美化 SQL 查询
 [SEO_DESCRIPTION]
-快速美化 SQL 语句，更方便调试和审查查询逻辑。
+即时格式化和美化 SQL 查询。提高可读性，修复缩进，调试复杂查询。支持多种 SQL 方言。
 [INTRO]
-SQL 格式化适合排查 join、条件过滤、排序和日志中的长查询语句。
+SQL（结构化查询语言）是管理关系数据库的标准语言。SQL 查询可能变得复杂且难以阅读，尤其是涉及多个连接、子查询和条件时。SQL 格式化工具帮助清理和组织查询以提高可读性和调试效率。
+
+这款免费的在线 SQL 格式化工具即时美化你的 SQL 查询。无论你是在调试复杂查询、审查他人代码还是准备文档中的查询，这个工具让 SQL 变得可读。
+
+适当的 SQL 格式对于代码维护、团队协作和性能调试至关重要。干净的 SQL 更容易审查、修改和优化。
 [HOW_TO_USE]
-粘贴 SQL
-输入需要整理的查询语句。
+粘贴你的 SQL 查询
+在输入区域输入或粘贴你的 SQL 查询。格式化工具处理各种复杂度的查询。
 ---
-执行格式化
-将主要子句拆分到独立行。
+选择格式化选项
+选择缩进样式、关键字大小写和其他格式偏好。
 ---
-检查结构
-更容易查看 select、where、group by 和 order by。
+查看格式化结果
+复制带有适当缩进和结构的格式化 SQL。
 [EXAMPLES]
-select * from users where active=1
+select id,name,email from users where active=1 order by name
 ===
-SELECT ...
+SELECT id, name, email
 FROM users
-WHERE active=1
+WHERE active = 1
+ORDER BY name;
 [FAQ]
+SQL 格式化工具做什么？
+SQL 格式化工具（SQL 美化器）获取混乱或格式不好的 SQL 查询，并添加适当的缩进、换行和大写以使其可读。
+
 为什么要格式化 SQL？
-更易读的 SQL 更方便调试、审查和分享。
+格式化的 SQL 更容易阅读、调试和维护。它有助于识别缺失的关键字、放置错误的条件和复杂的嵌套结构。
+
+支持哪些 SQL 方言？
+格式化工具处理标准 ANSI SQL 和常见变体。对于特定数据库方言（MySQL、PostgreSQL、Oracle），某些语法可能有所不同。
+
+它如何处理长的 WHERE 子句？
+长的 WHERE 子句通常跨多行拆分，AND/OR 对齐以提高可读性。
+
+可以自定义关键字大小写吗？
+是的。选择大写、小写或首字母大写用于 SQL 关键字，同时保留标识符的大小写。
+
+它会验证 SQL 语法吗？
+格式化工具专注于格式化而非验证。它可能会标记一些明显的语法问题，但不是完整的 SQL 验证器。
+
+可以格式化子查询吗？
+是的。格式化工具处理嵌套子查询和 CTE（公共表表达式），并带有适当的缩进。
+
+我的 SQL 上传了吗？
+没有。所有格式化都在浏览器本地进行。
+[RELATED_TOOLS]
+json-formatter
+yaml-formatter
+regex-tester
+[CATEGORY]
+developer
+[KEYWORDS]
+sql 格式化工具
+sql 美化器
+格式化 sql
+美化 sql
+sql 格式化在线
+格式化 mysql
+格式化 postgresql

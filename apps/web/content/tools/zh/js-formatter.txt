@@ -1,29 +1,58 @@
 [TITLE]
-免费在线 JavaScript Formatter
+免费在线 JavaScript 格式化工具
 [H1]
-免费 JavaScript Formatter 工具
+免费 JavaScript 格式化工具
 [DESCRIPTION]
-格式化 JavaScript 片段，提高可读性。
+格式化和美化 JavaScript 代码以提高可读性。
 [SEO_TITLE]
-免费 JavaScript Formatter 工具
+免费 JavaScript 格式化工具 - 在线美化 JS
 [SEO_DESCRIPTION]
-快速整理 JavaScript 代码，方便审查和调试。
+即时格式化和美化 JavaScript 代码。修复缩进、添加适当间距、清理代码。对于 Web 开发者必不可少。
 [INTRO]
-JavaScript 格式化适合查看复制来的片段、生成代码和日志或文档中的示例。
+JavaScript 是 Web 的编程语言。JavaScript 代码可能变得复杂且难以阅读，尤其是在压缩文件或格式不好的项目中。JavaScript 格式化工具帮助清理和组织代码以提高可读性。
+
+这款免费的在线 JavaScript 格式化工具即时美化你的 JS 代码。无论你是调试、审查代码还是准备代码审查，这个工具让 JavaScript 变得可读。
+
+干净的 JavaScript 对于代码可维护性、团队协作和高效调试至关重要。
 [HOW_TO_USE]
-粘贴 JavaScript
-输入需要整理的代码片段。
+粘贴你的 JavaScript
+在输入区域输入或粘贴你的 JavaScript 代码。
 ---
-运行格式化
-把语句和代码块拆分成更清晰的结构。
+查看格式化结果
+查看你的代码，带有适当的缩进和结构。
 ---
-复制输出
-继续用于阅读、调试或编辑。
+复制格式化的代码
+复制干净的、适当格式化的 JavaScript。
 [EXAMPLES]
-const a=1;console.log(a);
+function test(){const x=1;return x+1}
 ===
-const a=1;
-console.log(a);
+function test() {
+  const x = 1;
+  return x + 1;
+}
 [FAQ]
-什么时候需要 JS Formatter？
-当你需要阅读压缩片段或生成代码时会很有帮助。
+JavaScript 格式化工具做什么？
+JavaScript 格式化工具（JS 美化器）向 JavaScript 代码添加适当的缩进、间距和结构，使其可读。
+
+可以格式化压缩的 JavaScript 吗？
+是的。压缩代码通常移除了所有间距；格式化工具会恢复可读结构。
+
+它理解 ES6+ 语法吗？
+是的。格式化工具支持现代 JavaScript，包括箭头函数、解构、模板字面量和 async/await。
+
+可以格式化 TypeScript 吗？
+不。TypeScript 需要专门的格式化工具，如带有 TypeScript 支持的 Prettier。
+
+我的代码安全吗？
+没有。所有格式化都在浏览器本地进行。
+[RELATED_TOOLS]
+json-formatter
+css-formatter
+html-formatter
+[CATEGORY]
+developer
+[KEYWORDS]
+javascript 格式化工具
+js 格式化工具
+格式化 javascript
+美化 javascript

@@ -3,27 +3,69 @@
 [H1]
 免费 Markdown 预览工具
 [DESCRIPTION]
-实时预览 Markdown 内容。
+实时编写和预览 Markdown。支持 GitHub 风格的 Markdown。
 [SEO_TITLE]
-免费 Markdown 预览工具
+免费 Markdown 预览工具 - 在线编写和预览 Markdown
 [SEO_DESCRIPTION]
-输入 Markdown 后立即查看标题、列表、链接和代码块效果。
+编写 Markdown 并即时查看格式化预览。支持 GitHub 风格的 Markdown。无需注册，无需上传。
 [INTRO]
-Markdown 预览适合在发布文档、更新日志和文章前快速检查结构。
+Markdown 是一种轻量级标记语言，允许你使用简单语法格式化文本。它广泛用于文档、README 文件、博客文章和内容创作。实时预览 Markdown 的能力使写作和编辑变得更加容易。
+
+这款免费的在线 Markdown 预览工具提供分屏编辑器，实时预览。在左侧编写 Markdown，在右侧查看格式化结果。工具支持 GitHub 风格的 Markdown (GFM)，包括表格、任务列表和代码块。
+
+Markdown 受欢迎是因为它作为纯文本可读，可以进行版本控制，并可轻松转换为 HTML。许多平台包括 GitHub、Reddit 和许多博客系统都原生支持 Markdown。
 [HOW_TO_USE]
-输入或粘贴 Markdown
-在编辑器中使用标题、列表、代码块和链接。
+编写你的 Markdown
+在左侧编辑器中输入或粘贴你的 Markdown 内容。编辑器支持标准 Markdown 语法，包括标题、列表、链接和图片。
 ---
-实时查看预览
-输入时即可看到结构和排版效果。
+预览结果
+右侧的格式化预览会实时更新。查看你的 Markdown 渲染后的样子。
 ---
-发布前调整
-发到 GitHub、文档系统或博客前先优化格式。
+复制 Markdown 或使用它
+复制 Markdown 源代码用于你的文档或导出 HTML 用于嵌入。
 [EXAMPLES]
-# Title
-- item
+# 你好
+这是**粗体**和*斜体*文本。
 ===
-渲染后的标题与列表预览
+<h1>你好</h1>
+<p>这是<strong>粗体</strong>和<em>斜体</em>文本。</p>
 [FAQ]
-Markdown 适合什么场景？
-Markdown 常用于文档、README、知识库和博客草稿。
+什么是 Markdown？
+Markdown 是一种轻量级标记语言，使用简单的文本语法来格式化内容。它由 John Gruber 于 2004 年创建，作为一种编写结构化文本的方式，原始形式易于阅读。
+
+支持什么 Markdown 语法？
+这个工具支持 GitHub 风格的 Markdown (GFM)，包括标题、强调、列表、链接、图片、代码块、表格、任务列表和删除线。
+
+如何创建标题？
+使用 # 符号：# 表示 H1，## 表示 H2，### 表示 H3，以此类推到 H6。
+
+如何创建链接和图片？
+链接：[文字](url)，图片：![alt](url)。两者都可以包含标题：[文字](url "标题")。
+
+可以创建表格吗？
+可以。使用管道符号：| 表头 | 表头 | 然后是 | --- | --- | 再是数据行。
+
+如何创建代码块？
+使用三个反引号表示带可选语法高亮的代码块。使用单个反引号表示行内代码。
+
+什么是 GitHub 风格的 Markdown？
+GFM 是 GitHub 使用的 Markdown 变体，带有扩展功能。包括表格、任务列表、自动链接和删除线。
+
+我的 Markdown 会存储在任何地方吗？
+不会。所有处理都在浏览器中进行。你的 Markdown 内容永远不会发送到任何服务器或永久存储。
+
+可以导出 HTML 吗？
+可以。你可以从预览中复制渲染后的 HTML 或导出它用于其他地方。
+[RELATED_TOOLS]
+word-counter
+character-counter
+html-formatter
+[CATEGORY]
+creator
+[KEYWORDS]
+markdown 预览
+markdown 编辑器
+markdown 预览器
+编写 markdown
+markdown 生成器
+gfm 预览

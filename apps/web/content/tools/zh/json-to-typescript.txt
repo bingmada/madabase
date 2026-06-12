@@ -1,31 +1,69 @@
 [TITLE]
-JSON 转 TypeScript Interface 工具
+免费在线 JSON 转 TypeScript 工具
 [H1]
-JSON 转 TypeScript Interface 工具
+JSON 转 TypeScript Interface 生成器
 [DESCRIPTION]
-从 JSON 示例自动生成 TypeScript Interface。
+从 JSON 示例自动生成 TypeScript 接口。复制即用。
 [SEO_TITLE]
-JSON 转 TypeScript Interface 工具
+JSON 转 TypeScript Interface 生成器 - JSON 转类型
 [SEO_DESCRIPTION]
-把 JSON 数据结构转换为 TypeScript 接口，适合前后端开发。
+从 JSON 示例自动生成 TypeScript 接口。包含数组、可选字段和嵌套对象的正确类型。
 [INTRO]
-通过示例 JSON 生成类型定义，可以更快完成 API 类型、DTO 和页面状态建模。
+TypeScript 接口为你的 JavaScript 应用程序提供类型安全。在处理 API 响应或配置数据时，手动创建接口可能既繁琐又容易出错。JSON 转 TypeScript 转换器可以自动完成这一过程。
+
+这款免费的在线工具从 JSON 示例即时生成 TypeScript 接口。只需粘贴你的 JSON，工具就会创建带有正确数组类型、可选字段和嵌套对象类型的正确类型化 TypeScript 接口。
+
+生成的 TypeScript 代码干净、格式正确，可以在你的 TypeScript 项目中直接使用。
 [HOW_TO_USE]
-粘贴示例 JSON
-使用有代表性的对象或接口返回数据。
+粘贴你的 JSON 示例
+输入代表你要类型化的数据结构的 JSON 对象或数组。更完整的示例会产生更好的类型定义。
 ---
-生成接口
-工具会推断基础类型、嵌套对象和数组。
+查看生成的 TypeScript
+工具根据你的 JSON 生成 TypeScript 接口。它处理嵌套对象、数组和各种数据类型。
 ---
-按业务调整
-生成后可以继续修改命名和可选字段。
+复制接口
+复制生成的 TypeScript 代码并在你的项目中使用。
 [EXAMPLES]
-{"id":1,"name":"Ada"}
+{"name":"test","age":25,"active":true}
 ===
 interface Root {
-  id: number;
   name: string;
+  age: number;
+  active: boolean;
 }
 [FAQ]
-可以识别嵌套对象吗？
-可以。MVP 版本会为对象字段和数组生成嵌套接口。
+JSON 转 TypeScript 做什么？
+它将 JSON 数据示例转换为 TypeScript 接口定义。这为在 TypeScript 项目中使用 JSON 数据提供了类型安全。
+
+生成哪些 TypeScript 类型？
+工具生成适当的类型：字符串、数字、布尔值用于基本类型，数组类型用于数组，嵌套接口用于对象。
+
+它处理可选字段吗？
+是的。如果某个字段并非在所有示例中都存在，它可能会被标记为可选字段（带 ? 后缀）。
+
+可以处理数组吗？
+是的。数组使用元素类型进行类型化，如 string[] 或嵌套接口数组。
+
+null 和 undefined 呢？
+工具分析你的 JSON 中的实际值以确定适当的类型。缺失或 null 值会得到适当处理。
+
+生成的代码可以用于生产吗？
+生成的接口是功能性的，可以直接使用。你可能需要添加 JSDoc 注释或进一步自定义以满足你的需求。
+
+支持可辨识联合类型吗？
+这个基础版本生成标准接口。对于复杂的联合类型，你需要手动调整输出。
+
+我的 JSON 上传了吗？
+没有。所有转换都在浏览器本地进行。
+[RELATED_TOOLS]
+json-formatter
+json-validator
+js-formatter
+[CATEGORY]
+developer
+[KEYWORDS]
+json 转 typescript
+typescript 接口生成器
+json 类型
+typescript 类型
+从 json 生成类型

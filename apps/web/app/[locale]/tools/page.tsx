@@ -7,9 +7,12 @@ import { Header } from "@/components/Header";
 import { JsonLd, buildBreadcrumbSchema } from "@/components/JsonLd";
 import { PageViewTracker } from "@/components/PageViewTracker";
 import { ToolIcon } from "@/components/ToolIcon";
+import { Breadcrumb } from "@/components/Breadcrumb";
 import { isLocale, locales } from "@/lib/i18n";
 import { buildAbsoluteUrl, buildPageMetadata } from "@/lib/seo";
-import { toolRegistry } from "@/lib/tools";
+import { toolRegistry } from "@/lib/tool-registry";
+import { loadToolContent } from "@/lib/tool-content";
+import type { Locale } from "@/lib/i18n";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -52,6 +55,14 @@ export default async function ToolsPage({ params }: { params: Promise<{ locale: 
     { name: locale === "en" ? "Tools" : "工具", item: buildAbsoluteUrl(`/${locale}/tools`) },
   ]);
 
+  // Load tool content for display titles
+  const toolsWithContent = await Promise.all(
+    toolRegistry.map(async (tool) => {
+      const content = await loadToolContent(tool.slug, locale);
+      return { tool, content };
+    })
+  );
+
   return (
     <div className="min-h-screen bg-transparent">
       <Header locale={locale} pathname="/tools" />
@@ -79,7 +90,7 @@ export default async function ToolsPage({ params }: { params: Promise<{ locale: 
         </section>
 
         <section className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {toolRegistry.map((tool) => (
+          {toolsWithContent.map(({ tool, content }) => (
             <Link key={tool.slug} href={`/${locale}/tools/${tool.slug}`} className="group surface-card p-5 transition hover:-translate-y-0.5 hover:border-[var(--brand)] hover:shadow-[var(--shadow-panel)]">
               <div className="flex items-start gap-3">
                 <span className="grid h-11 w-11 shrink-0 place-items-center rounded-md border border-[var(--border)] bg-[var(--surface-muted)] text-[var(--brand-strong)] transition group-hover:bg-[var(--brand-soft)]">
@@ -87,8 +98,8 @@ export default async function ToolsPage({ params }: { params: Promise<{ locale: 
                 </span>
                 <div>
                   <p className="code-font text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--text-soft)]">{tool.category}</p>
-                  <h2 className="mt-1 text-lg font-bold text-[var(--text)]">{tool.h1[locale]}</h2>
-                  <p className="mt-2 text-sm leading-6 text-[var(--text-muted)]">{tool.description[locale]}</p>
+                  <h2 className="mt-1 text-lg font-bold text-[var(--text)]">{content?.h1[locale] || tool.slug}</h2>
+                  <p className="mt-2 text-sm leading-6 text-[var(--text-muted)]">{content?.description[locale] || ""}</p>
                 </div>
               </div>
             </Link>

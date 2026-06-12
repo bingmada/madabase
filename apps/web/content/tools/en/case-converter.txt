@@ -3,26 +3,60 @@ Free Online Case Converter
 [H1]
 Free Case Converter Online
 [DESCRIPTION]
-Convert text to upper, lower, and title case.
+Convert text between different cases: uppercase, lowercase, title case, sentence case.
 [SEO_TITLE]
-Free Case Converter Online
+Free Case Converter Online - Change Text Case Instantly
 [SEO_DESCRIPTION]
-Change text case instantly for headlines, code snippets, and content cleanup.
+Convert text to uppercase, lowercase, title case, or sentence case instantly. Fast, free, and works entirely in your browser.
 [INTRO]
-Case converters save time when adapting content for headings, UI labels, slugs, and docs.
+Text case conversion is a common task when working with programming identifiers, titles, headings, and user-generated content. Different contexts require different casing styles: snake_case for programming variables, Title Case for headings, or sentence case for paragraphs.
+
+This free online case converter transforms text between common case formats instantly. Whether you are formatting code, standardizing data, or preparing content, this tool makes case conversion effortless.
+
+Understanding when to use each case style is important for code quality and consistent content presentation.
 [HOW_TO_USE]
-Paste text
-Add the string you want to transform.
+Enter your text
+Type or paste the text you want to convert into the input area.
 ---
-Run conversion
-Generate uppercase, lowercase, and title case versions.
+Choose target case
+Select the desired case format: lowercase, UPPERCASE, Title Case, Sentence case, camelCase, snake_case, kebab-case, or PascalCase.
 ---
-Copy the needed style
-Reuse the version that fits your workflow.
+Copy converted text
+Click to copy the converted text with your chosen case format.
 [EXAMPLES]
-madabase growth
+hello world example
 ===
-Madabase Growth
+Title Case: Hello World Example
+camelCase: helloWorldExample
+snake_case: hello_world_example
 [FAQ]
-What cases are most common?
-Uppercase, lowercase, and title case are the most common quick conversions.
+What case formats are supported?
+Common formats include: lowercase, UPPERCASE, Title Case, Sentence case, camelCase, PascalCase, snake_case, and kebab-case.
+
+What is camelCase?
+camelCase combines words with the first word lowercase and subsequent words capitalized. Example: helloWorldExample. Common in JavaScript variable naming.
+
+What is snake_case?
+snake_case uses lowercase letters with underscores separating words. Example: hello_world_example. Common in Python and SQL.
+
+What is kebab-case?
+kebab-case uses lowercase letters with hyphens separating words. Example: hello-world-example. Common in URLs and CSS.
+
+What is Title Case?
+Title Case capitalizes the first letter of each major word. Example: Hello World Example. Common in titles and headings.
+
+Is my text uploaded?
+No. All conversion happens locally in your browser.
+[RELATED_TOOLS]
+text-cleaner
+slug-generator
+word-counter
+[CATEGORY]
+text
+[KEYWORDS]
+case converter
+text case
+uppercase lowercase
+title case
+camel case
+snake case

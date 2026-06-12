@@ -1,6 +1,6 @@
 "use client";
 
-import type { ToolComponentName } from "@/lib/tools";
+import type { ToolComponentName } from "@/lib/tool-registry";
 import { Base64Tool } from "./Base64Tool";
 import {
   CaseConverter,

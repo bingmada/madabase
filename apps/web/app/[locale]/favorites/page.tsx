@@ -7,7 +7,7 @@ import { requireUser } from "@/lib/auth/services/sessionService";
 import { prisma } from "@/lib/db/client";
 import { isLocale, locales } from "@/lib/i18n";
 import { buildPageMetadata } from "@/lib/seo";
-import { toolMap } from "@/lib/tools";
+import { toolMap } from "@/lib/tool-registry";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));

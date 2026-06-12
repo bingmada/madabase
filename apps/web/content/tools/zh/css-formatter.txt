@@ -1,31 +1,58 @@
 [TITLE]
-免费在线 CSS Formatter
+免费在线 CSS 格式化工具
 [H1]
-免费 CSS Formatter 工具
+免费 CSS 格式化工具
 [DESCRIPTION]
-格式化 CSS，便于编辑和调试。
+格式化和美化 CSS 代码以提高可读性和调试效率。
 [SEO_TITLE]
-免费 CSS Formatter 工具
+免费 CSS 格式化工具 - 在线美化 CSS
 [SEO_DESCRIPTION]
-快速整理 CSS 规则和声明，让代码更易阅读。
+即时格式化和美化 CSS 代码。修复缩进、整理属性、清理样式表。对于 Web 开发者必不可少。
 [INTRO]
-CSS 格式化适合检查压缩样式、片段代码、生成样式和复制来的样式表。
+CSS（层叠样式表）是用于设置网页样式的语言。CSS 代码可能变得混乱且难以维护，尤其是在大型样式表中。CSS 格式化工具帮助清理和组织 CSS 以提高可读性和可维护性。
+
+这款免费的在线 CSS 格式化工具即时美化你的 CSS 代码。无论你是处理内联样式、嵌入 CSS 还是外部样式表，这个工具都会添加适当的格式化和缩进。
+
+干净的 CSS 对于代码可维护性、团队协作和高效调试至关重要。
 [HOW_TO_USE]
-粘贴 CSS
-输入要整理的紧凑 CSS 代码。
+粘贴你的 CSS
+在输入区域输入或粘贴你的 CSS 代码。
 ---
-运行格式化
-将声明拆分成更清晰的行结构。
+选择格式化选项
+选择缩进样式和属性排序偏好。
 ---
-检查并复制
-用于调试或后续编辑。
+查看格式化结果
+复制干净的、适当格式化的 CSS。
 [EXAMPLES]
-body{margin:0;color:#111}
+a{color:red;margin:0}
 ===
-body {
-margin:0;
-color:#111;
+a {
+  color: red;
+  margin: 0;
 }
 [FAQ]
-为什么要格式化 CSS？
-更易读的样式代码更方便调试和修改。
+CSS 格式化工具做什么？
+CSS 格式化工具（CSS 美化器）向 CSS 代码添加适当的缩进、间距和结构，使其可读和可维护。
+
+有哪些格式化选项可用？
+常见选项包括缩进样式（空格或制表符）、属性排序和删除空行。
+
+它如何处理 CSS3 和现代特性？
+格式化工具支持所有现代 CSS 特性，包括 flexbox、grid、自定义属性和媒体查询。
+
+可以格式化 SCSS 或 SASS 吗？
+不。这个工具格式化标准 CSS 语法。对于 SCSS/SASS，使用专门的预处理器工具。
+
+我的 CSS 代码安全吗？
+没有。所有格式化都在浏览器本地进行。
+[RELATED_TOOLS]
+html-formatter
+js-formatter
+color-converter
+[CATEGORY]
+web
+[KEYWORDS]
+css 格式化工具
+css 美化器
+格式化 css
+css 代码格式化器

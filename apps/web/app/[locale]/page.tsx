@@ -13,7 +13,7 @@ import { isPremium, premiumFeatures } from "@/lib/features";
 import { getLatestBlogPosts } from "@/lib/blog";
 import { buildAbsoluteUrl, buildPageMetadata } from "@/lib/seo";
 import { isLocale, locales, type Locale } from "@/lib/i18n";
-import { getPopularTools, getToolsByCategory, toolRegistry } from "@/lib/tools";
+import { getPopularTools, getToolsByCategory, toolRegistry } from "@/lib/tool-registry";
 
 function ToolCard({
   locale,
@@ -184,7 +184,12 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           <div className="grid gap-5 lg:grid-cols-3">
             {categoryCards.map((category) => (
               <section key={category.key} className="surface-card p-5">
-                <h3 className="text-lg font-bold text-[var(--text)]">{category.title}</h3>
+                <div className="flex items-center justify-between">
+                  <h3 className="text-lg font-bold text-[var(--text)]">{category.title}</h3>
+                  <Link href={`/${locale}/tools/category/${category.key}`} className="text-xs font-semibold text-[var(--brand-strong)]">
+                    {locale === "en" ? "View all" : "查看全部"}
+                  </Link>
+                </div>
                 <p className="mt-2 text-sm leading-6 text-[var(--text-muted)]">{category.description}</p>
                 <div className="mt-4 space-y-3">
                   {category.tools.map((tool) => (

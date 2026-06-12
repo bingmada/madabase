@@ -1,28 +1,64 @@
 [TITLE]
-免费在线 HTML Encoder
+免费在线 HTML 编码器
 [H1]
 免费 HTML Encoder 工具
 [DESCRIPTION]
-安全编码 HTML 实体。
+编码 HTML 实体并转义特殊字符以安全显示。
 [SEO_TITLE]
-免费 HTML Encoder 工具
+免费 HTML 编码器 - 安全转义 HTML 字符
 [SEO_DESCRIPTION]
-将 HTML 标签和特殊字符转义，便于在文档和教程中展示。
+编码 HTML 实体并转义特殊字符以便安全插入 HTML 文档。对于防止 XSS 和显示用户内容必不可少。
 [INTRO]
-当你想显示 HTML 代码文本而不是让浏览器渲染它时，HTML Encoder 很有用。
+HTML 编码将特殊字符转换为其 HTML 实体等效项。这对于安全显示用户生成的内容、防止 XSS 攻击以及确保特殊字符在 HTML 文档中正确呈现至关重要。
+
+这款免费的在线 HTML 编码器将特殊字符如 <、>、&、" 和 ' 转换为其 HTML 实体等效项（&lt;、&gt;、&amp;、&quot;、&#39;）。无论你是准备 HTML 内容、清理用户输入还是调试编码问题，这个工具让 HTML 编码变得轻松。
+
+HTML 编码是任何显示用户内容的应用程序的基本安全实践。
 [HOW_TO_USE]
-粘贴 HTML
-输入要转义的标记或片段。
+输入你的文本
+在输入区域输入或粘贴你想编码的文本。
 ---
-执行编码
-将尖括号和引号转成安全的 HTML 实体。
+查看编码结果
+查看你的文本，HTML 实体已转换。
 ---
-复制结果
-适合文档、示例、邮件和教程内容。
+复制编码后的文本
+复制编码后的文本以便安全插入 HTML。
 [EXAMPLES]
-<div>Hello</div>
+<div>你好 & "世界"</div>
 ===
-&lt;div&gt;Hello&lt;/div&gt;
+&lt;div&gt;你好 &amp; &quot;世界&quot;&lt;/div&gt;
 [FAQ]
-为什么要转义 HTML？
-转义后浏览器不会把代码当成真实标记渲染。
+什么是 HTML 编码？
+HTML 编码将特殊字符转换为 HTML 实体代码。例如，< 变成 &lt;，& 变成 &amp;。
+
+为什么要编码 HTML？
+编码防止浏览器将内容解释为 HTML。这对于安全显示用户输入和防止 XSS 攻击至关重要。
+
+哪些字符被编码？
+通常：<、>、&、" 和 '。一些编码器也处理其他特殊字符。
+
+什么是 XSS？
+XSS（跨站脚本攻击）发生在攻击者通过未编码的用户输入注入恶意脚本时。HTML 编码可以防止这种情况。
+
+可以编码用于 JavaScript 而不是 HTML 吗？
+不。这个工具用于 HTML 编码。对于 JavaScript，使用 JavaScript 字符串转义是不同的。
+
+编码和清理一样吗？
+不一样。编码将字符转换为安全等效项。清理完全移除或拒绝危险内容。
+
+什么时候应该编码？
+在 HTML 中显示用户生成内容时都要编码。这包括评论、消息、用户名和任何动态内容。
+
+我的文本上传了吗？
+没有。所有编码都在浏览器本地进行。
+[RELATED_TOOLS]
+html-formatter
+url-encoder
+base64
+[CATEGORY]
+web
+[KEYWORDS]
+html 编码器
+转义 html
+html 实体
+xss 预防

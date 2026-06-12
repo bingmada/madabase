@@ -3,26 +3,70 @@
 [H1]
 免费 YAML 格式化工具
 [DESCRIPTION]
-整理 YAML 配置，让结构更清晰。
+格式化和校验 YAML 文件，让配置更清晰，调试更容易。
 [SEO_TITLE]
-免费 YAML 格式化工具
+免费 YAML 格式化工具 - 在线美化 YAML
 [SEO_DESCRIPTION]
-快速格式化 YAML 文件和配置片段。
+即时格式化和美化 YAML 文件。修复缩进、校验语法、清理配置文件。无需上传数据。
 [INTRO]
-YAML 格式化适合查看配置文件、CI 流水线、Kubernetes 清单和站点设置。
+YAML（YAML Ain't Markup Language）是一种人类可读的数据序列化格式，常用于配置文件。YAML 文件被 Docker、Kubernetes、Ansible 和许多其他 DevOps 工具使用。然而，YAML 对缩进敏感，因此格式问题很常见。
+
+这款免费的在线 YAML 格式化工具即时格式化和校验 YAML 文件。无论你是在编辑 Docker Compose 文件、Kubernetes 清单还是应用程序配置，这个工具帮助你保持干净、无错误的 YAML。
+
+YAML 格式对于配置可靠性至关重要。不正确的缩进可能导致难以调试的微妙错误。
 [HOW_TO_USE]
-粘贴 YAML
-输入需要整理的配置片段。
+粘贴你的 YAML
+在输入区域输入或粘贴你的 YAML 内容。格式化工具处理任何复杂度的 YAML。
 ---
-运行格式化
-标准化空格与换行，提升可读性。
+查看格式化结果
+格式化的 YAML 会实时更新，带有适当的缩进和结构。
 ---
-复制结果
-可继续用于 CI、基础设施或应用配置。
+复制格式化的 YAML
+复制干净的、适当缩进的 YAML 用于你的项目。
 [EXAMPLES]
-name:Madabase
+name: example
+items:
+- item1
+- item2
 ===
-name: Madabase
+name: example
+items:
+  - item1
+  - item2
 [FAQ]
-YAML 常用在哪？
-YAML 常用于 CI 文件、配置系统和基础设施清单。
+什么是 YAML？
+YAML（YAML Ain't Markup Language）是一种人类可读的数据序列化格式。它常用于 Docker、Kubernetes 和 Ansible 等 DevOps 工具中的配置文件。
+
+YAML 格式化工具做什么？
+YAML 格式化工具（YAML 美化器）获取混乱或缩进不正确的 YAML，并重新格式化以获得一致的缩进、适当的间距和干净的结构。
+
+为什么 YAML 缩进很重要？
+YAML 使用缩进来定义结构。不正确的缩进会改变 YAML 的含义，并可能导致配置错误。格式化工具确保一致、正确的缩进。
+
+它如何处理嵌套结构？
+格式化工具保留并正确缩进嵌套对象和数组，保持正确的 YAML 结构。
+
+它会校验 YAML 吗？
+是的。格式化工具检查 YAML 语法并报告任何带行号的错误，帮助你修复问题。
+
+它捕获哪些常见的 YAML 错误？
+常见错误包括不一致的缩进、错误的列表语法、缺失的冒号和不正确的字符串引号。
+
+可以格式化多文档 YAML 吗？
+是的。用 --- 分隔的多文档 YAML 文件会被正确处理。
+
+我的 YAML 上传了吗？
+没有。所有格式化和校验都在浏览器本地进行。
+[RELATED_TOOLS]
+json-formatter
+xml-formatter
+sql-formatter
+[CATEGORY]
+developer
+[KEYWORDS]
+yaml 格式化工具
+yaml 美化器
+格式化 yaml
+美化 yaml
+yaml 校验器
+yaml 格式化在线

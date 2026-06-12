@@ -2,7 +2,7 @@ import Link from "next/link";
 import { getCurrentUser } from "@/lib/auth/services/sessionService";
 import { prisma } from "@/lib/db/client";
 import type { Locale } from "@/lib/i18n";
-import { toolMap } from "@/lib/tools";
+import { toolMap } from "@/lib/tool-registry";
 import { ToolIcon } from "./ToolIcon";
 
 export async function PersonalizedToolsPanel({ locale }: { locale: Locale }) {
