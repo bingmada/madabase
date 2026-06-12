@@ -14,7 +14,6 @@ import { ToolUsageTracker } from "@/components/ToolUsageTracker";
 import { JsonLd, buildBreadcrumbSchema, buildSoftwareApplicationSchema } from "@/components/JsonLd";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { loadToolContent } from "@/lib/tool-content";
-import type { Locale } from "@/lib/i18n";
 
 export function generateStaticParams() {
   return locales.flatMap((locale) => toolRegistry.map((tool) => ({ locale, slug: tool.slug })));
@@ -79,7 +78,6 @@ export default async function ToolPage({ params }: { params: Promise<{ locale: s
       <article className="surface-card-strong overflow-hidden">
         <header className="border-b border-[var(--border)] p-5 sm:p-7">
           <Breadcrumb
-            locale={locale}
             items={[
               { label: "Madabase", href: `/${locale}` },
               { label: locale === "en" ? "Tools" : "工具", href: `/${locale}/tools` },

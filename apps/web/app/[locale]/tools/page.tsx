@@ -7,12 +7,10 @@ import { Header } from "@/components/Header";
 import { JsonLd, buildBreadcrumbSchema } from "@/components/JsonLd";
 import { PageViewTracker } from "@/components/PageViewTracker";
 import { ToolIcon } from "@/components/ToolIcon";
-import { Breadcrumb } from "@/components/Breadcrumb";
 import { isLocale, locales } from "@/lib/i18n";
 import { buildAbsoluteUrl, buildPageMetadata } from "@/lib/seo";
 import { toolRegistry } from "@/lib/tool-registry";
 import { loadToolContent } from "@/lib/tool-content";
-import type { Locale } from "@/lib/i18n";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));

@@ -69,7 +69,6 @@ export default async function BlogPostPage({ params }: { params: Promise<{ local
         <article className="surface-card-strong overflow-hidden">
           <header className="border-b border-[var(--border)] p-6 sm:p-8">
             <Breadcrumb
-              locale={locale}
               items={[
                 { label: "Madabase", href: `/${locale}` },
                 { label: locale === "en" ? "Blog" : "博客", href: `/${locale}/blog` },

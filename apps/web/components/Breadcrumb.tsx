@@ -8,10 +8,8 @@ export type BreadcrumbItem = {
 };
 
 export function Breadcrumb({
-  locale,
   items,
 }: {
-  locale: string;
   items: BreadcrumbItem[];
 }) {
   return (

@@ -92,7 +92,6 @@ export default async function CategoryPage({ params }: { params: Promise<{ local
         <section className="surface-card-strong overflow-hidden">
           <div className="p-6 sm:p-8 lg:p-10">
             <Breadcrumb
-              locale={locale}
               items={[
                 { label: "Madabase", href: `/${locale}` },
                 { label: locale === "en" ? "Tools" : "工具", href: `/${locale}/tools` },
