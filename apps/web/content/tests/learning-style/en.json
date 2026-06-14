@@ -1,0 +1,64 @@
+{
+  "title": "Learning Style Test",
+  "description": "Rate 32 study situations to find the learning approach that helps you understand and retain information.",
+  "instructions": [
+    "Answer based on how you actually learn when the material is difficult.",
+    "Think about comprehension and retention, not entertainment.",
+    "Most people use mixed strategies; your result highlights the strongest starting point."
+  ],
+  "reportLabels": {
+    "strengths": "Learning strengths",
+    "weaknesses": "Study traps",
+    "careers": "Best study methods",
+    "relationships": "Helpful environments",
+    "growth": "Upgrade plan"
+  },
+  "scale": [
+    { "id": "1", "text": "Strongly disagree", "value": 1 },
+    { "id": "2", "text": "Disagree", "value": 2 },
+    { "id": "3", "text": "Neutral", "value": 3 },
+    { "id": "4", "text": "Agree", "value": 4 },
+    { "id": "5", "text": "Strongly agree", "value": 5 }
+  ],
+  "scaleQuestions": [
+    { "id": "v1", "question": "Diagrams help me understand a topic faster than paragraphs alone.", "scoreKey": "VISUAL" },
+    { "id": "v2", "question": "I remember layouts, colors, maps, or spatial relationships well.", "scoreKey": "VISUAL" },
+    { "id": "v3", "question": "I like turning notes into charts, timelines, or mind maps.", "scoreKey": "VISUAL" },
+    { "id": "v4", "question": "A visual example often makes an abstract idea click.", "scoreKey": "VISUAL" },
+    { "id": "v5", "question": "I notice patterns when information is arranged visually.", "scoreKey": "VISUAL" },
+    { "id": "v6", "question": "I prefer slides or sketches when someone explains something complex.", "scoreKey": "VISUAL" },
+    { "id": "v7", "question": "I use highlighting or spacing to make material easier to scan.", "scoreKey": "VISUAL" },
+    { "id": "v8", "question": "I can often picture where information appeared on a page.", "scoreKey": "VISUAL" },
+    { "id": "w1", "question": "Explaining an idea in words helps me understand it.", "scoreKey": "VERBAL" },
+    { "id": "w2", "question": "I learn well from reading, writing, or listening to clear explanations.", "scoreKey": "VERBAL" },
+    { "id": "w3", "question": "I remember phrases, definitions, or verbal summaries.", "scoreKey": "VERBAL" },
+    { "id": "w4", "question": "Discussing a topic helps me organize my thoughts.", "scoreKey": "VERBAL" },
+    { "id": "w5", "question": "I like writing summaries in my own words.", "scoreKey": "VERBAL" },
+    { "id": "w6", "question": "A well-structured lecture or article works well for me.", "scoreKey": "VERBAL" },
+    { "id": "w7", "question": "I learn by asking questions out loud or in writing.", "scoreKey": "VERBAL" },
+    { "id": "w8", "question": "Precise language helps me separate similar concepts.", "scoreKey": "VERBAL" },
+    { "id": "h1", "question": "I understand best when I can try something myself.", "scoreKey": "HANDS_ON" },
+    { "id": "h2", "question": "Practice problems teach me more than passive review.", "scoreKey": "HANDS_ON" },
+    { "id": "h3", "question": "I prefer learning through examples, labs, projects, or simulations.", "scoreKey": "HANDS_ON" },
+    { "id": "h4", "question": "I need to make mistakes before the lesson sticks.", "scoreKey": "HANDS_ON" },
+    { "id": "h5", "question": "I remember better when learning includes movement or action.", "scoreKey": "HANDS_ON" },
+    { "id": "h6", "question": "I like building a small version of what I am studying.", "scoreKey": "HANDS_ON" },
+    { "id": "h7", "question": "Real-world tasks make theory easier to remember.", "scoreKey": "HANDS_ON" },
+    { "id": "h8", "question": "I learn fastest when feedback comes from doing the task.", "scoreKey": "HANDS_ON" },
+    { "id": "s1", "question": "I learn better with a clear sequence and milestones.", "scoreKey": "STRUCTURED" },
+    { "id": "s2", "question": "Checklists help me stay focused while studying.", "scoreKey": "STRUCTURED" },
+    { "id": "s3", "question": "I like knowing the learning goal before starting.", "scoreKey": "STRUCTURED" },
+    { "id": "s4", "question": "I retain more when material is broken into modules.", "scoreKey": "STRUCTURED" },
+    { "id": "s5", "question": "I prefer examples that move from simple to complex.", "scoreKey": "STRUCTURED" },
+    { "id": "s6", "question": "A study schedule makes hard material less overwhelming.", "scoreKey": "STRUCTURED" },
+    { "id": "s7", "question": "I learn well when rules, exceptions, and review points are explicit.", "scoreKey": "STRUCTURED" },
+    { "id": "s8", "question": "I like measuring progress with quizzes or checkpoints.", "scoreKey": "STRUCTURED" }
+  ],
+  "results": {
+    "VISUAL": { "title": "Visual Learner", "summary": "You learn best when information is spatial, visible, and easy to scan.", "traits": ["Spatial", "Pattern-aware", "Image-led"], "strengths": ["Sees relationships quickly", "Remembers layouts", "Uses visual organization well"], "weaknesses": ["Dense text can slow you down", "Pretty notes can replace real recall", "Audio-only learning may fade quickly"], "careers": ["Mind maps", "Diagrams", "Color-coded summaries", "Concept maps"], "relationships": ["Slides, whiteboards, screenshots, and visual examples help."], "growthPlan": ["Turn every topic into one diagram", "Use retrieval practice after visual notes", "Pair visuals with short written definitions"] },
+    "VERBAL": { "title": "Verbal Learner", "summary": "You learn through language: reading, writing, listening, explaining, and discussion.", "traits": ["Language-led", "Reflective", "Explanation-oriented"], "strengths": ["Clarifies ideas through words", "Remembers definitions", "Benefits from discussion"], "weaknesses": ["May mistake fluent reading for mastery", "Can over-rely on summaries", "Visual material may need translation into words"], "careers": ["Written summaries", "Teach-back", "Discussion groups", "Question lists"], "relationships": ["Clear explanations, examples, and time to articulate ideas help."], "growthPlan": ["Explain topics without notes", "Write short recall answers", "Add examples to every definition"] },
+    "HANDS_ON": { "title": "Hands-on Learner", "summary": "You understand best by doing, testing, building, and learning from feedback.", "traits": ["Practical", "Experimental", "Action-led"], "strengths": ["Learns through practice", "Adapts from mistakes", "Connects theory to reality"], "weaknesses": ["May skip foundations", "Passive lectures can feel useless", "Unstructured experimentation can scatter"], "careers": ["Practice problems", "Projects", "Labs", "Simulations"], "relationships": ["Examples, exercises, demos, and immediate feedback help."], "growthPlan": ["Start with a small task", "Review the principle after doing", "Keep a mistake log"] },
+    "STRUCTURED": { "title": "Structured Learner", "summary": "You learn best when material has sequence, goals, checkpoints, and clear expectations.", "traits": ["Organized", "Goal-led", "Methodical"], "strengths": ["Builds steady progress", "Handles complex material in steps", "Tracks learning gaps"], "weaknesses": ["May freeze when the path is unclear", "Can over-plan before practicing", "May resist exploratory learning"], "careers": ["Study plans", "Checklists", "Modules", "Practice schedules"], "relationships": ["Roadmaps, rubrics, deadlines, and explicit success criteria help."], "growthPlan": ["Create a simple syllabus", "Schedule review checkpoints", "Add one open-ended exploration block"] }
+  }
+}
+

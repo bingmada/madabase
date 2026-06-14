@@ -14,6 +14,7 @@ import { ToolUsageTracker } from "@/components/ToolUsageTracker";
 import { JsonLd, buildBreadcrumbSchema, buildSoftwareApplicationSchema } from "@/components/JsonLd";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { loadToolContent } from "@/lib/tool-content";
+import { getPopularTests } from "@/lib/test-registry";
 
 export function generateStaticParams() {
   return locales.flatMap((locale) => toolRegistry.map((tool) => ({ locale, slug: tool.slug })));
@@ -53,6 +54,7 @@ export default async function ToolPage({ params }: { params: Promise<{ locale: s
   const currentUser = await getCurrentUser();
   const isFavorited = currentUser ? await getFavoriteState(currentUser.id, slug) : false;
   const relatedTools = getRelatedTools(slug);
+  const relatedTests = getPopularTests();
   const canonicalUrl = buildAbsoluteUrl(`/${locale}/tools/${slug}`);
 
   const breadcrumbSchema = buildBreadcrumbSchema([
@@ -96,7 +98,7 @@ export default async function ToolPage({ params }: { params: Promise<{ locale: s
                 locale={locale}
                 toolSlug={slug}
                 initialFavorited={isFavorited}
-                requireLoginHref={`/${locale}/login`}
+                requireLoginHref={`/${locale}/login?next=${encodeURIComponent(`/${locale}/tools/${slug}`)}`}
               />
             </div>
           </div>
@@ -176,6 +178,24 @@ export default async function ToolPage({ params }: { params: Promise<{ locale: s
                       <h3 className="text-base font-semibold text-[var(--text)]">{relatedTool.slug}</h3>
                     </div>
                   </div>
+                </Link>
+              ))}
+            </div>
+          </section>
+        ) : null}
+
+        {relatedTests.length > 0 ? (
+          <section className="border-t border-[var(--border)] p-5 sm:p-7">
+            <div className="flex items-center justify-between gap-3">
+              <h2 className="text-2xl font-bold text-[var(--text)]">{locale === "en" ? "Related tests" : "相关测试"}</h2>
+              <Link href={`/${locale}/tests`} className="text-sm font-semibold text-[var(--brand-strong)]">{locale === "en" ? "Explore all tests" : "查看全部测试"}</Link>
+            </div>
+            <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {relatedTests.map((test) => (
+                <Link key={test.slug} href={`/${locale}/tests/${test.slug}`} className="group rounded-md border border-[var(--border)] bg-white p-4 transition hover:-translate-y-0.5 hover:border-[var(--brand)] hover:shadow-[var(--shadow-soft)]">
+                  <p className="code-font text-xs font-semibold uppercase tracking-[0.16em] text-[var(--text-soft)]">{test.category}</p>
+                  <h3 className="mt-2 text-base font-semibold text-[var(--text)]">{test.title[locale]}</h3>
+                  <p className="mt-2 text-sm leading-6 text-[var(--text-muted)]">{test.description[locale]}</p>
                 </Link>
               ))}
             </div>

@@ -1,0 +1,63 @@
+{
+  "title": "爱的语言测试",
+  "description": "通过 30 个亲密关系场景，了解最能让你感受到爱的表达方式。",
+  "instructions": [
+    "请根据亲密关系中什么会让你感到被在乎来作答。",
+    "关注长期反复出现的偏好，不要只依据某一次特别经历。",
+    "本测试描述沟通偏好，不等同于关系匹配度判断。"
+  ],
+  "reportLabels": {
+    "strengths": "它如何帮助关系",
+    "weaknesses": "误解风险",
+    "careers": "日常实践",
+    "relationships": "关系信号",
+    "growth": "沟通问题"
+  },
+  "scale": [
+    { "id": "1", "text": "不重要", "value": 1 },
+    { "id": "2", "text": "有一点重要", "value": 2 },
+    { "id": "3", "text": "比较重要", "value": 3 },
+    { "id": "4", "text": "很重要", "value": 4 },
+    { "id": "5", "text": "非常重要", "value": 5 }
+  ],
+  "scaleQuestions": [
+    { "id": "w1", "question": "对方具体说出欣赏你的地方。", "scoreKey": "WORDS" },
+    { "id": "w2", "question": "在你压力很大的一天前发来贴心消息。", "scoreKey": "WORDS" },
+    { "id": "w3", "question": "告诉你他们为你处理某件事的方式感到骄傲。", "scoreKey": "WORDS" },
+    { "id": "w4", "question": "清楚道歉，并说明以后会怎么改变。", "scoreKey": "WORDS" },
+    { "id": "w5", "question": "在你怀疑自己时鼓励你。", "scoreKey": "WORDS" },
+    { "id": "w6", "question": "注意到你的努力并说出来。", "scoreKey": "WORDS" },
+    { "id": "t1", "question": "对方放下手机，把注意力完整给你。", "scoreKey": "TIME" },
+    { "id": "t2", "question": "固定留出只属于你们两个人的时间。", "scoreKey": "TIME" },
+    { "id": "t3", "question": "即使活动很简单，也愿意和你一起做。", "scoreKey": "TIME" },
+    { "id": "t4", "question": "认真追问并保持在场。", "scoreKey": "TIME" },
+    { "id": "t5", "question": "选择共同体验，而不是一边陪你一边忙别的。", "scoreKey": "TIME" },
+    { "id": "t6", "question": "给一段不被催促的谈话时间。", "scoreKey": "TIME" },
+    { "id": "a1", "question": "主动处理一件压在你心上的任务。", "scoreKey": "ACTS" },
+    { "id": "a2", "question": "在你反复开口前就提供帮助。", "scoreKey": "ACTS" },
+    { "id": "a3", "question": "用实际方式让你的一天轻松一点。", "scoreKey": "ACTS" },
+    { "id": "a4", "question": "记得某项责任并替你处理好。", "scoreKey": "ACTS" },
+    { "id": "a5", "question": "通过一起解决现实问题来支持你。", "scoreKey": "ACTS" },
+    { "id": "a6", "question": "不用提醒也兑现承诺。", "scoreKey": "ACTS" },
+    { "id": "g1", "question": "带来一个小东西，说明他们想到了你。", "scoreKey": "GIFTS" },
+    { "id": "g2", "question": "选择符合你品味或共同记忆的礼物。", "scoreKey": "GIFTS" },
+    { "id": "g3", "question": "保存一件和共同经历有关的纪念物。", "scoreKey": "GIFTS" },
+    { "id": "g4", "question": "用实用或私人化的小惊喜表达在意。", "scoreKey": "GIFTS" },
+    { "id": "g5", "question": "用有形的方式记住重要日期。", "scoreKey": "GIFTS" },
+    { "id": "g6", "question": "留意你喜欢什么，并据此做选择。", "scoreKey": "GIFTS" },
+    { "id": "p1", "question": "在语言不够时给你一个拥抱。", "scoreKey": "TOUCH" },
+    { "id": "p2", "question": "安静相处时坐得离你近一些。", "scoreKey": "TOUCH" },
+    { "id": "p3", "question": "无论公开还是私下，都愿意牵你的手。", "scoreKey": "TOUCH" },
+    { "id": "p4", "question": "在你压力大时给予让你安心的身体接触。", "scoreKey": "TOUCH" },
+    { "id": "p5", "question": "用身体亲近来修复一段距离感。", "scoreKey": "TOUCH" },
+    { "id": "p6", "question": "让日常亲密显得自然且安全。", "scoreKey": "TOUCH" }
+  ],
+  "results": {
+    "WORDS": { "title": "肯定的语言", "summary": "当关心被清楚、具体、真诚地说出来时，你最容易感到被爱。", "traits": ["重语言", "需要鼓励", "重意义"], "strengths": ["让欣赏变得明确", "增强情感信心", "通过清晰表达修复紧张"], "weaknesses": ["沉默可能像疏离", "泛泛夸奖可能显得空", "伤人的话会停留很久"], "careers": ["每天说出一个具体欣赏", "重要时刻用文字记录", "冲突后说明修复计划"], "relationships": ["你会在意语气、时机和具体程度。"], "growthPlan": ["问：什么样的话最能支持你？", "问：哪些表达真诚，哪些像流程？", "问：说错话后我们如何修复？"] },
+    "TIME": { "title": "高质量陪伴", "summary": "当对方在场、专注并愿意分享不被打断的时间时，你最容易感到被爱。", "traits": ["重在场", "重体验", "对注意力敏感"], "strengths": ["创造深层连接", "鼓励倾听", "积累共同记忆"], "weaknesses": ["分心可能被你解读为不在乎", "忙碌阶段容易像被拒绝", "日常陪伴也需要刻意经营"], "careers": ["安排固定专属时间", "建立无手机时段", "创造简单但重复的共同体验"], "relationships": ["你常把注意力读作爱，把分心读作距离。"], "growthPlan": ["问：对我们来说什么算高质量陪伴？", "问：忙碌时如何保留连接？", "问：哪些共同仪式现实可行？"] },
+    "ACTS": { "title": "服务的行动", "summary": "当关心变成实际帮助、可靠和共同承担时，你最容易感到被爱。", "traits": ["务实", "重可靠", "支持型"], "strengths": ["把爱变成真实减负", "通过兑现建立信任", "能看见日常负担"], "weaknesses": ["失约会格外刺痛", "帮助若不沟通可能被忽略", "你可能替别人承担太多"], "careers": ["询问什么帮助真的减压", "让兑现变得可见", "在支持前确认边界"], "relationships": ["你会观察对方是否把心意变成行动。"], "growthPlan": ["问：哪些任务最能让你感到被支持？", "问：帮助什么时候像关心，什么时候像控制？", "问：隐形劳动如何分担？"] },
+    "GIFTS": { "title": "用心的礼物", "summary": "当有形的表达体现记忆、关注和个人意义时，你最容易感到被爱。", "traits": ["重象征", "细心", "重记忆"], "strengths": ["让关心可见", "尊重个人细节", "留下有意义的提醒"], "weaknesses": ["被忘记的重要日子会刺痛", "重点不是昂贵", "别人可能误解为物质"], "careers": ["选择小而有意义的物件", "用纪念物标记重要阶段", "讲出礼物背后的故事"], "relationships": ["你在意物件背后的心思，而不是价格。"], "growthPlan": ["问：什么样的有形表达有意义？", "问：哪些日期或时刻最重要？", "问：如何让礼物用心但不造成压力？"] },
+    "TOUCH": { "title": "身体亲近", "summary": "安全、被欢迎的身体靠近和触碰，最容易让你感到被安抚和被爱。", "traits": ["身体化", "温暖", "需要安抚"], "strengths": ["快速带来平静", "传达语言之外的关心", "帮助关系重新连接"], "weaknesses": ["身体距离可能像情感距离", "同意和时机很重要", "压力会改变触碰偏好"], "careers": ["使用双方同意的小动作", "直接讨论舒适边界", "建立修复后的重新连接仪式"], "relationships": ["你会把靠近、温度和身体安抚读作关心。"], "growthPlan": ["问：什么触碰让你安心？", "问：什么时候你更需要空间？", "问：冲突后如何重新靠近？"] }
+  }
+}
+

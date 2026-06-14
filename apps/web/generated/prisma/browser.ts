@@ -52,3 +52,23 @@ export type Credit = Prisma.CreditModel
  * 
  */
 export type CreditTransaction = Prisma.CreditTransactionModel
+/**
+ * Model UserUnlock
+ * 
+ */
+export type UserUnlock = Prisma.UserUnlockModel
+/**
+ * Model TestAttempt
+ * 
+ */
+export type TestAttempt = Prisma.TestAttemptModel
+/**
+ * Model TestShareLink
+ * 
+ */
+export type TestShareLink = Prisma.TestShareLinkModel
+/**
+ * Model ReferralReward
+ * 
+ */
+export type ReferralReward = Prisma.ReferralRewardModel

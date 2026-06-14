@@ -14,6 +14,7 @@ import { getLatestBlogPosts } from "@/lib/blog";
 import { buildAbsoluteUrl, buildPageMetadata } from "@/lib/seo";
 import { isLocale, locales, type Locale } from "@/lib/i18n";
 import { getPopularTools, getToolsByCategory, toolRegistry } from "@/lib/tool-registry";
+import { getPopularTests } from "@/lib/test-registry";
 
 function ToolCard({
   locale,
@@ -95,8 +96,9 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       title: "Madabase",
       description: "A growing library of free browser-first tools, SEO-friendly landing pages, and practical content designed to earn search traffic.",
       primaryCta: "Explore Tools",
-      secondaryCta: "Popular Tools",
+      secondaryCta: "Take Tests",
       popular: "Popular Tools",
+      tests: "Popular Tests",
       categories: "Categories",
       latestBlog: "Latest Blog",
       premiumPreview: "Premium Preview",
@@ -109,8 +111,9 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       title: "Madabase",
       description: "一个持续增长的免费浏览器工具与 SEO 内容平台，专注获取搜索流量并承接未来 AI 产品。",
       primaryCta: "探索工具",
-      secondaryCta: "热门工具",
+      secondaryCta: "开始测试",
       popular: "热门工具",
+      tests: "热门测试",
       categories: "分类",
       latestBlog: "最新博客",
       premiumPreview: "高级功能预览",
@@ -123,6 +126,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   const breadcrumbSchema = buildBreadcrumbSchema([
     { name: "Madabase", item: buildAbsoluteUrl(`/${locale}`) },
   ]);
+  const popularTests = getPopularTests();
 
   return (
     <div className="min-h-screen bg-transparent">
@@ -141,9 +145,9 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                 <Link href={`/${locale}/tools`} className="inline-flex h-11 items-center rounded-md bg-[var(--surface-code)] px-4 text-sm font-semibold text-white shadow-sm transition hover:bg-[var(--brand-strong)]">
                   {copy.primaryCta}
                 </Link>
-                <a href="#popular-tools" className="inline-flex h-11 items-center rounded-md border border-[var(--border)] bg-white px-4 text-sm font-semibold text-[var(--text)] transition hover:border-[var(--brand)]">
+                <Link href={`/${locale}/tests`} className="inline-flex h-11 items-center rounded-md border border-[var(--border)] bg-white px-4 text-sm font-semibold text-[var(--text)] transition hover:border-[var(--brand)]">
                   {copy.secondaryCta}
-                </a>
+                </Link>
               </div>
               <PopularToolsClient locale={locale} />
             </div>
@@ -172,6 +176,23 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {popularTools.map((tool) => (
               <ToolCard key={tool.slug} locale={locale} slug={tool.slug} title={tool.h1[locale]} description={tool.description[locale]} component={tool.component} />
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-14">
+          <div className="mb-6 flex items-end justify-between gap-4">
+            <h2 className="text-2xl font-bold text-[var(--text)]">{copy.tests}</h2>
+            <Link href={`/${locale}/tests`} className="text-sm font-semibold text-[var(--brand-strong)]">{locale === "en" ? "Explore tests" : "查看测试"}</Link>
+          </div>
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {popularTests.map((test) => (
+              <Link key={test.slug} href={`/${locale}/tests/${test.slug}`} className="group surface-card p-5 transition hover:-translate-y-0.5 hover:border-[var(--brand)] hover:shadow-[var(--shadow-panel)]">
+                <p className="code-font text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--text-soft)]">{test.category}</p>
+                <h3 className="mt-2 text-lg font-bold text-[var(--text)]">{test.title[locale]}</h3>
+                <p className="mt-2 text-sm leading-6 text-[var(--text-muted)]">{test.description[locale]}</p>
+                <p className="mt-4 text-sm font-semibold text-[var(--brand-strong)]">{test.questionCount} {locale === "en" ? "questions" : "题"}</p>
+              </Link>
             ))}
           </div>
         </section>

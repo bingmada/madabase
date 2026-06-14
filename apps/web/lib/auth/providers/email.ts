@@ -7,7 +7,7 @@ async function sendViaResend({ email, code }: { email: string; code: string }) {
   if (!apiKey || !from) {
     throw new Error("Missing RESEND_API_KEY or AUTH_EMAIL_FROM.");
   }
-
+  console.log("Sending email to", email, apiKey);
   const response = await fetch("https://api.resend.com/emails", {
     method: "POST",
     headers: {

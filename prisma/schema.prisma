@@ -28,6 +28,11 @@ model User {
   toolUsages        ToolUsage[]
   credits           Credit?
   creditTransactions CreditTransaction[]
+  testAttempts      TestAttempt[]
+  unlocks           UserUnlock[]
+  testShareLinks    TestShareLink[]         @relation("TestShareLinks")
+  referralRewardsGiven ReferralReward[]     @relation("ReferralRewardsGiven")
+  referralRewardsReceived ReferralReward[]  @relation("ReferralRewardsReceived")
   verificationCodes EmailVerificationCode[]
 }
 
@@ -92,8 +97,68 @@ model CreditTransaction {
   userId    String
   amount    Int
   type      CreditTransactionType
+  description String?
   createdAt DateTime              @default(now())
   user      User                  @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([userId, createdAt])
+}
+
+model UserUnlock {
+  id         String   @id @default(cuid())
+  userId     String
+  testSlug   String
+  resultType String
+  attemptId  String
+  createdAt  DateTime @default(now())
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, testSlug, resultType, attemptId])
+  @@index([testSlug, resultType])
+  @@index([userId, attemptId])
+}
+
+model TestAttempt {
+  id         String   @id @default(cuid())
+  userId     String
+  testSlug   String
+  resultType String
+  attemptId  String
+  createdAt  DateTime @default(now())
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, attemptId])
+  @@index([userId, createdAt])
+  @@index([testSlug, resultType])
+}
+
+model TestShareLink {
+  id        String           @id @default(cuid())
+  code      String           @unique
+  userId    String
+  testSlug  String
+  createdAt DateTime         @default(now())
+  user      User             @relation("TestShareLinks", fields: [userId], references: [id], onDelete: Cascade)
+  rewards   ReferralReward[]
+
+  @@unique([userId, testSlug])
+  @@index([testSlug])
+}
+
+model ReferralReward {
+  id             String        @id @default(cuid())
+  shareLinkId    String
+  referrerUserId String
+  referredUserId String
+  testSlug       String
+  resultType     String
+  amount         Int
+  createdAt      DateTime      @default(now())
+  shareLink      TestShareLink @relation(fields: [shareLinkId], references: [id], onDelete: Cascade)
+  referrer       User          @relation("ReferralRewardsGiven", fields: [referrerUserId], references: [id], onDelete: Cascade)
+  referred       User          @relation("ReferralRewardsReceived", fields: [referredUserId], references: [id], onDelete: Cascade)
+
+  @@unique([shareLinkId, referredUserId])
+  @@index([referrerUserId, createdAt])
+  @@index([referredUserId, createdAt])
 }

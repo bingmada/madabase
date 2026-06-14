@@ -1,0 +1,64 @@
+{
+  "title": "学习风格测试",
+  "description": "通过 32 个学习场景评分，找到更能帮助你理解和记忆的学习方式。",
+  "instructions": [
+    "请根据材料困难时你真实有效的学习方式作答。",
+    "关注理解和记忆效果，不只看是否有趣。",
+    "多数人会混合使用多种策略，结果会提示你的最强起点。"
+  ],
+  "reportLabels": {
+    "strengths": "学习优势",
+    "weaknesses": "学习陷阱",
+    "careers": "适合方法",
+    "relationships": "有利环境",
+    "growth": "升级计划"
+  },
+  "scale": [
+    { "id": "1", "text": "非常不同意", "value": 1 },
+    { "id": "2", "text": "不同意", "value": 2 },
+    { "id": "3", "text": "一般", "value": 3 },
+    { "id": "4", "text": "同意", "value": 4 },
+    { "id": "5", "text": "非常同意", "value": 5 }
+  ],
+  "scaleQuestions": [
+    { "id": "v1", "question": "图表比单纯段落更快帮助我理解主题。", "scoreKey": "VISUAL" },
+    { "id": "v2", "question": "我容易记住布局、颜色、地图或空间关系。", "scoreKey": "VISUAL" },
+    { "id": "v3", "question": "我喜欢把笔记整理成图表、时间线或思维导图。", "scoreKey": "VISUAL" },
+    { "id": "v4", "question": "视觉示例常常能让我理解抽象概念。", "scoreKey": "VISUAL" },
+    { "id": "v5", "question": "信息被视觉化排列时，我更容易发现模式。", "scoreKey": "VISUAL" },
+    { "id": "v6", "question": "别人解释复杂内容时，我更喜欢配合幻灯片或草图。", "scoreKey": "VISUAL" },
+    { "id": "v7", "question": "我会用高亮或间距让材料更容易扫读。", "scoreKey": "VISUAL" },
+    { "id": "v8", "question": "我常能想起信息在页面上的大致位置。", "scoreKey": "VISUAL" },
+    { "id": "w1", "question": "用语言解释一个想法会帮助我理解它。", "scoreKey": "VERBAL" },
+    { "id": "w2", "question": "阅读、写作或听清晰讲解对我很有效。", "scoreKey": "VERBAL" },
+    { "id": "w3", "question": "我容易记住短语、定义或文字总结。", "scoreKey": "VERBAL" },
+    { "id": "w4", "question": "讨论主题能帮助我整理思路。", "scoreKey": "VERBAL" },
+    { "id": "w5", "question": "我喜欢用自己的话写总结。", "scoreKey": "VERBAL" },
+    { "id": "w6", "question": "结构清楚的讲座或文章对我很有帮助。", "scoreKey": "VERBAL" },
+    { "id": "w7", "question": "我通过口头或书面提问来学习。", "scoreKey": "VERBAL" },
+    { "id": "w8", "question": "精确语言能帮助我区分类似概念。", "scoreKey": "VERBAL" },
+    { "id": "h1", "question": "我亲自尝试后理解得最好。", "scoreKey": "HANDS_ON" },
+    { "id": "h2", "question": "做练习题比被动复习更能教会我。", "scoreKey": "HANDS_ON" },
+    { "id": "h3", "question": "我偏好通过案例、实验、项目或模拟学习。", "scoreKey": "HANDS_ON" },
+    { "id": "h4", "question": "我需要犯一些错，知识才真正留下来。", "scoreKey": "HANDS_ON" },
+    { "id": "h5", "question": "学习中包含动作或操作时，我记得更牢。", "scoreKey": "HANDS_ON" },
+    { "id": "h6", "question": "我喜欢做一个小版本来理解正在学的东西。", "scoreKey": "HANDS_ON" },
+    { "id": "h7", "question": "真实任务能让我更容易记住理论。", "scoreKey": "HANDS_ON" },
+    { "id": "h8", "question": "来自行动结果的反馈让我学得最快。", "scoreKey": "HANDS_ON" },
+    { "id": "s1", "question": "有清晰顺序和里程碑时，我学得更好。", "scoreKey": "STRUCTURED" },
+    { "id": "s2", "question": "清单能帮助我在学习时保持专注。", "scoreKey": "STRUCTURED" },
+    { "id": "s3", "question": "开始前知道学习目标会让我更安心。", "scoreKey": "STRUCTURED" },
+    { "id": "s4", "question": "材料被拆成模块后，我保留得更多。", "scoreKey": "STRUCTURED" },
+    { "id": "s5", "question": "我喜欢从简单到复杂推进的例子。", "scoreKey": "STRUCTURED" },
+    { "id": "s6", "question": "学习计划会让困难材料没那么压倒人。", "scoreKey": "STRUCTURED" },
+    { "id": "s7", "question": "规则、例外和复习点明确时，我学得更好。", "scoreKey": "STRUCTURED" },
+    { "id": "s8", "question": "我喜欢用小测或检查点衡量进展。", "scoreKey": "STRUCTURED" }
+  ],
+  "results": {
+    "VISUAL": { "title": "视觉型学习者", "summary": "当信息可视化、有空间结构且容易扫读时，你学得最好。", "traits": ["空间感", "模式敏感", "图像驱动"], "strengths": ["快速看见关系", "记得布局", "善用视觉组织"], "weaknesses": ["密集文字会拖慢你", "漂亮笔记可能替代真正回忆", "纯音频学习容易淡掉"], "careers": ["思维导图", "图解", "颜色编码总结", "概念地图"], "relationships": ["幻灯片、白板、截图和视觉示例会很有帮助。"], "growthPlan": ["把每个主题变成一张图", "视觉笔记后做主动回忆", "给图配短定义"] },
+    "VERBAL": { "title": "语言型学习者", "summary": "你通过语言学习：阅读、写作、倾听、解释和讨论。", "traits": ["语言驱动", "反思型", "重解释"], "strengths": ["通过语言澄清想法", "记得定义", "从讨论中受益"], "weaknesses": ["可能把读得顺误认为掌握", "过度依赖总结", "视觉材料需要翻译成语言"], "careers": ["文字总结", "复述教学", "讨论小组", "问题清单"], "relationships": ["清晰解释、例子和表达想法的时间会有帮助。"], "growthPlan": ["不用笔记解释主题", "写短答案做回忆", "给每个定义补例子"] },
+    "HANDS_ON": { "title": "实践型学习者", "summary": "你最容易通过动手、测试、构建和反馈理解内容。", "traits": ["务实", "实验型", "行动驱动"], "strengths": ["通过练习学习", "从错误中适应", "把理论连到现实"], "weaknesses": ["可能跳过基础", "被动听课会觉得无用", "无结构实验容易分散"], "careers": ["练习题", "项目", "实验", "模拟"], "relationships": ["案例、练习、演示和即时反馈会有帮助。"], "growthPlan": ["从一个小任务开始", "做完后回看原理", "保留错误日志"] },
+    "STRUCTURED": { "title": "结构型学习者", "summary": "当材料有顺序、目标、检查点和明确预期时，你学得最好。", "traits": ["有组织", "目标导向", "方法化"], "strengths": ["稳定推进", "分步处理复杂材料", "能追踪学习缺口"], "weaknesses": ["路径不清时容易卡住", "可能练习前计划过多", "可能抗拒探索式学习"], "careers": ["学习计划", "清单", "模块", "练习日程"], "relationships": ["路线图、评分标准、截止日期和成功标准会有帮助。"], "growthPlan": ["创建简单课程表", "安排复习检查点", "加入一个开放探索时段"] }
+  }
+}
+

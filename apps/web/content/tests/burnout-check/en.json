@@ -1,0 +1,62 @@
+{
+  "title": "Burnout Risk Check",
+  "description": "Rate 30 recent work-life signals to understand your current burnout risk. This is not a clinical diagnosis.",
+  "instructions": [
+    "Answer based on the last two to four weeks.",
+    "Choose frequency, not what you think should be true.",
+    "If your result feels serious or you feel unsafe, seek qualified support."
+  ],
+  "reportLabels": {
+    "strengths": "Current protective factors",
+    "weaknesses": "Risk signals",
+    "careers": "Work adjustments",
+    "relationships": "Support signals",
+    "growth": "Recovery plan"
+  },
+  "scale": [
+    { "id": "1", "text": "Never", "value": 1 },
+    { "id": "2", "text": "Rarely", "value": 2 },
+    { "id": "3", "text": "Sometimes", "value": 3 },
+    { "id": "4", "text": "Often", "value": 4 },
+    { "id": "5", "text": "Very often", "value": 5 }
+  ],
+  "scaleQuestions": [
+    { "id": "q1", "question": "I feel emotionally drained before the workday even starts.", "scoreKey": "STRESS" },
+    { "id": "q2", "question": "Small requests feel heavier than they should.", "scoreKey": "STRESS" },
+    { "id": "q3", "question": "I need much longer than usual to recover after work.", "scoreKey": "STRESS" },
+    { "id": "q4", "question": "I feel detached from work that used to matter to me.", "scoreKey": "STRESS" },
+    { "id": "q5", "question": "I catch myself becoming more cynical or impatient.", "scoreKey": "STRESS" },
+    { "id": "q6", "question": "It is hard to focus even on tasks I understand.", "scoreKey": "STRESS" },
+    { "id": "q7", "question": "I postpone simple tasks because they feel mentally expensive.", "scoreKey": "STRESS" },
+    { "id": "q8", "question": "My sleep, appetite, or body tension has been affected by work pressure.", "scoreKey": "STRESS" },
+    { "id": "q9", "question": "I feel guilty when I rest.", "scoreKey": "STRESS" },
+    { "id": "q10", "question": "I have less patience for people I care about after work.", "scoreKey": "STRESS" },
+    { "id": "q11", "question": "I feel like no amount of effort is enough.", "scoreKey": "STRESS" },
+    { "id": "q12", "question": "I avoid checking messages because I expect more demands.", "scoreKey": "STRESS" },
+    { "id": "q13", "question": "My work feels misaligned with my values.", "scoreKey": "STRESS" },
+    { "id": "q14", "question": "I feel trapped by responsibilities or expectations.", "scoreKey": "STRESS" },
+    { "id": "q15", "question": "I have stopped feeling satisfied after completing work.", "scoreKey": "STRESS" },
+    { "id": "q16", "question": "I recover energy through sleep, breaks, or weekends.", "scoreKey": "STRESS", "reverse": true },
+    { "id": "q17", "question": "I can name what matters most this week.", "scoreKey": "STRESS", "reverse": true },
+    { "id": "q18", "question": "I can say no or renegotiate when my workload is unrealistic.", "scoreKey": "STRESS", "reverse": true },
+    { "id": "q19", "question": "I have someone I can speak honestly with about pressure.", "scoreKey": "STRESS", "reverse": true },
+    { "id": "q20", "question": "I still experience moments of curiosity or enjoyment at work.", "scoreKey": "STRESS", "reverse": true },
+    { "id": "q21", "question": "I can take breaks without feeling watched or punished.", "scoreKey": "STRESS", "reverse": true },
+    { "id": "q22", "question": "My responsibilities are clear enough to prioritize.", "scoreKey": "STRESS", "reverse": true },
+    { "id": "q23", "question": "I have enough control over how I do my work.", "scoreKey": "STRESS", "reverse": true },
+    { "id": "q24", "question": "I can separate urgent work from important work.", "scoreKey": "STRESS", "reverse": true },
+    { "id": "q25", "question": "I feel recognized for meaningful effort.", "scoreKey": "STRESS", "reverse": true },
+    { "id": "q26", "question": "I feel pressure to be available outside reasonable hours.", "scoreKey": "STRESS" },
+    { "id": "q27", "question": "I use distraction to avoid noticing how tired I am.", "scoreKey": "STRESS" },
+    { "id": "q28", "question": "I feel numb rather than rested after downtime.", "scoreKey": "STRESS" },
+    { "id": "q29", "question": "I worry that slowing down will cause everything to fall apart.", "scoreKey": "STRESS" },
+    { "id": "q30", "question": "I feel less like myself because of work pressure.", "scoreKey": "STRESS" }
+  ],
+  "results": {
+    "LOW": { "title": "Low Burnout Risk", "summary": "Your current answers suggest manageable pressure and several recovery resources.", "traits": ["Recovering", "Resourced", "Stable"], "strengths": ["You still have recovery capacity", "Priorities may be relatively clear", "Support signals are present"], "weaknesses": ["Pressure can still accumulate quietly", "Protective routines need maintenance", "Low risk is not the same as no stress"], "careers": ["Keep boundaries explicit", "Protect deep work and breaks", "Review workload before busy periods"], "relationships": ["Stay connected before pressure spikes."], "growthPlan": ["Keep a weekly recovery checkpoint", "Name one boundary worth protecting", "Track early warning signs"] },
+    "MODERATE": { "title": "Moderate Burnout Risk", "summary": "Your result suggests stress is beginning to affect energy, focus, or emotional bandwidth.", "traits": ["Strained", "Still responsive", "Needs adjustment"], "strengths": ["There is still room to intervene early", "Some recovery signals remain", "Awareness can prevent escalation"], "weaknesses": ["Fatigue may be normalizing", "Focus and patience may be more fragile", "Rest may not fully restore you"], "careers": ["Reduce unclear work", "Renegotiate timelines", "Add recovery blocks before collapse"], "relationships": ["Tell someone what pressure looks like for you."], "growthPlan": ["Pick two workload changes", "Create a no-work recovery window", "Review sleep and availability patterns"] },
+    "HIGH": { "title": "High Burnout Risk", "summary": "Your answers show significant strain. You may need concrete workload, boundary, and support changes soon.", "traits": ["Depleted", "Overloaded", "At risk"], "strengths": ["Naming the pattern is a strong first step", "Specific stressors can be changed", "Support can reduce isolation"], "weaknesses": ["Emotional exhaustion may be high", "Cynicism or numbness may be increasing", "Recovery may require structural change"], "careers": ["Escalate workload concerns", "Remove nonessential commitments", "Clarify what can pause or move"], "relationships": ["Do not carry the pressure silently."], "growthPlan": ["Talk to a manager, mentor, or professional", "Set immediate availability limits", "Plan real recovery, not only distraction"] },
+    "SEVERE": { "title": "Severe Burnout Risk", "summary": "Your answers suggest intense strain and low recovery. Consider seeking qualified help and immediate practical support.", "traits": ["Exhausted", "Low recovery", "Needs support"], "strengths": ["This result can justify asking for help", "Immediate changes may reduce harm", "You do not need to solve it alone"], "weaknesses": ["Functioning may be sustained by adrenaline", "Rest may no longer feel restorative", "Health and relationships may be affected"], "careers": ["Reduce load urgently", "Document concrete pressure points", "Discuss leave, coverage, or professional support"], "relationships": ["Tell a trusted person what is happening today."], "growthPlan": ["Contact qualified support if possible", "Make a 24-hour safety and recovery plan", "Remove one major demand immediately"] }
+  }
+}
+

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getCurrentUser } from "@/lib/auth/services/sessionService";
 import type { Locale } from "@/lib/i18n";
+import { getExistingCreditBalance } from "@/lib/user-dashboard";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { MobileNav } from "./MobileNav";
 import { UserMenu } from "./UserMenu";
@@ -11,8 +12,10 @@ function navLinkClassName(active: boolean) {
 
 export async function Header({ locale, pathname = "/" }: { locale: Locale; pathname?: string }) {
   const user = await getCurrentUser();
+  const creditBalance = user ? await getExistingCreditBalance(user.id) : 0;
   const copy = {
     tools: locale === "en" ? "Tools" : "工具",
+    tests: locale === "en" ? "Tests" : "测试",
     blog: locale === "en" ? "Blog" : "博客",
     ai: locale === "en" ? "AI" : "AI",
     login: locale === "en" ? "Log in" : "登录",
@@ -20,6 +23,7 @@ export async function Header({ locale, pathname = "/" }: { locale: Locale; pathn
 
   const navItems = [
     { href: `/${locale}/tools`, label: copy.tools, active: pathname === "/tools" || pathname.startsWith("/tools/") },
+    { href: `/${locale}/tests`, label: copy.tests, active: pathname === "/tests" || pathname.startsWith("/tests/") },
     { href: `/${locale}/blog`, label: copy.blog, active: pathname === "/blog" || pathname.startsWith("/blog/") },
     { href: `/${locale}/ai`, label: copy.ai, active: pathname === "/ai" || pathname.startsWith("/ai/") },
   ];
@@ -45,7 +49,7 @@ export async function Header({ locale, pathname = "/" }: { locale: Locale; pathn
             </Link>
           ))}
           {user ? (
-            <UserMenu locale={locale} email={user.email} nickname={user.nickname} pathname={pathname} />
+            <UserMenu locale={locale} email={user.email} nickname={user.nickname} pathname={pathname} creditBalance={creditBalance} />
           ) : (
             <Link href={`/${locale}/login`} className="inline-flex h-10 items-center rounded-full bg-[var(--surface-code)] px-4 text-sm font-semibold text-white shadow-sm transition hover:bg-[var(--brand-strong)]">
               {copy.login}

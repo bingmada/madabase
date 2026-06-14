@@ -390,7 +390,11 @@ export const ModelName = {
   Favorite: 'Favorite',
   ToolUsage: 'ToolUsage',
   Credit: 'Credit',
-  CreditTransaction: 'CreditTransaction'
+  CreditTransaction: 'CreditTransaction',
+  UserUnlock: 'UserUnlock',
+  TestAttempt: 'TestAttempt',
+  TestShareLink: 'TestShareLink',
+  ReferralReward: 'ReferralReward'
 } as const
 
 export type ModelName = (typeof ModelName)[keyof typeof ModelName]
@@ -406,7 +410,7 @@ export type TypeMap<ExtArgs extends runtime.Types.Extensions.InternalArgs = runt
     omit: GlobalOmitOptions
   }
   meta: {
-    modelProps: "user" | "session" | "emailVerificationCode" | "favorite" | "toolUsage" | "credit" | "creditTransaction"
+    modelProps: "user" | "session" | "emailVerificationCode" | "favorite" | "toolUsage" | "credit" | "creditTransaction" | "userUnlock" | "testAttempt" | "testShareLink" | "referralReward"
     txIsolationLevel: TransactionIsolationLevel
   }
   model: {
@@ -928,6 +932,302 @@ export type TypeMap<ExtArgs extends runtime.Types.Extensions.InternalArgs = runt
         }
       }
     }
+    UserUnlock: {
+      payload: Prisma.$UserUnlockPayload<ExtArgs>
+      fields: Prisma.UserUnlockFieldRefs
+      operations: {
+        findUnique: {
+          args: Prisma.UserUnlockFindUniqueArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$UserUnlockPayload> | null
+        }
+        findUniqueOrThrow: {
+          args: Prisma.UserUnlockFindUniqueOrThrowArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$UserUnlockPayload>
+        }
+        findFirst: {
+          args: Prisma.UserUnlockFindFirstArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$UserUnlockPayload> | null
+        }
+        findFirstOrThrow: {
+          args: Prisma.UserUnlockFindFirstOrThrowArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$UserUnlockPayload>
+        }
+        findMany: {
+          args: Prisma.UserUnlockFindManyArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$UserUnlockPayload>[]
+        }
+        create: {
+          args: Prisma.UserUnlockCreateArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$UserUnlockPayload>
+        }
+        createMany: {
+          args: Prisma.UserUnlockCreateManyArgs<ExtArgs>
+          result: BatchPayload
+        }
+        createManyAndReturn: {
+          args: Prisma.UserUnlockCreateManyAndReturnArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$UserUnlockPayload>[]
+        }
+        delete: {
+          args: Prisma.UserUnlockDeleteArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$UserUnlockPayload>
+        }
+        update: {
+          args: Prisma.UserUnlockUpdateArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$UserUnlockPayload>
+        }
+        deleteMany: {
+          args: Prisma.UserUnlockDeleteManyArgs<ExtArgs>
+          result: BatchPayload
+        }
+        updateMany: {
+          args: Prisma.UserUnlockUpdateManyArgs<ExtArgs>
+          result: BatchPayload
+        }
+        updateManyAndReturn: {
+          args: Prisma.UserUnlockUpdateManyAndReturnArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$UserUnlockPayload>[]
+        }
+        upsert: {
+          args: Prisma.UserUnlockUpsertArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$UserUnlockPayload>
+        }
+        aggregate: {
+          args: Prisma.UserUnlockAggregateArgs<ExtArgs>
+          result: runtime.Types.Utils.Optional<Prisma.AggregateUserUnlock>
+        }
+        groupBy: {
+          args: Prisma.UserUnlockGroupByArgs<ExtArgs>
+          result: runtime.Types.Utils.Optional<Prisma.UserUnlockGroupByOutputType>[]
+        }
+        count: {
+          args: Prisma.UserUnlockCountArgs<ExtArgs>
+          result: runtime.Types.Utils.Optional<Prisma.UserUnlockCountAggregateOutputType> | number
+        }
+      }
+    }
+    TestAttempt: {
+      payload: Prisma.$TestAttemptPayload<ExtArgs>
+      fields: Prisma.TestAttemptFieldRefs
+      operations: {
+        findUnique: {
+          args: Prisma.TestAttemptFindUniqueArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$TestAttemptPayload> | null
+        }
+        findUniqueOrThrow: {
+          args: Prisma.TestAttemptFindUniqueOrThrowArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$TestAttemptPayload>
+        }
+        findFirst: {
+          args: Prisma.TestAttemptFindFirstArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$TestAttemptPayload> | null
+        }
+        findFirstOrThrow: {
+          args: Prisma.TestAttemptFindFirstOrThrowArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$TestAttemptPayload>
+        }
+        findMany: {
+          args: Prisma.TestAttemptFindManyArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$TestAttemptPayload>[]
+        }
+        create: {
+          args: Prisma.TestAttemptCreateArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$TestAttemptPayload>
+        }
+        createMany: {
+          args: Prisma.TestAttemptCreateManyArgs<ExtArgs>
+          result: BatchPayload
+        }
+        createManyAndReturn: {
+          args: Prisma.TestAttemptCreateManyAndReturnArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$TestAttemptPayload>[]
+        }
+        delete: {
+          args: Prisma.TestAttemptDeleteArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$TestAttemptPayload>
+        }
+        update: {
+          args: Prisma.TestAttemptUpdateArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$TestAttemptPayload>
+        }
+        deleteMany: {
+          args: Prisma.TestAttemptDeleteManyArgs<ExtArgs>
+          result: BatchPayload
+        }
+        updateMany: {
+          args: Prisma.TestAttemptUpdateManyArgs<ExtArgs>
+          result: BatchPayload
+        }
+        updateManyAndReturn: {
+          args: Prisma.TestAttemptUpdateManyAndReturnArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$TestAttemptPayload>[]
+        }
+        upsert: {
+          args: Prisma.TestAttemptUpsertArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$TestAttemptPayload>
+        }
+        aggregate: {
+          args: Prisma.TestAttemptAggregateArgs<ExtArgs>
+          result: runtime.Types.Utils.Optional<Prisma.AggregateTestAttempt>
+        }
+        groupBy: {
+          args: Prisma.TestAttemptGroupByArgs<ExtArgs>
+          result: runtime.Types.Utils.Optional<Prisma.TestAttemptGroupByOutputType>[]
+        }
+        count: {
+          args: Prisma.TestAttemptCountArgs<ExtArgs>
+          result: runtime.Types.Utils.Optional<Prisma.TestAttemptCountAggregateOutputType> | number
+        }
+      }
+    }
+    TestShareLink: {
+      payload: Prisma.$TestShareLinkPayload<ExtArgs>
+      fields: Prisma.TestShareLinkFieldRefs
+      operations: {
+        findUnique: {
+          args: Prisma.TestShareLinkFindUniqueArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$TestShareLinkPayload> | null
+        }
+        findUniqueOrThrow: {
+          args: Prisma.TestShareLinkFindUniqueOrThrowArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$TestShareLinkPayload>
+        }
+        findFirst: {
+          args: Prisma.TestShareLinkFindFirstArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$TestShareLinkPayload> | null
+        }
+        findFirstOrThrow: {
+          args: Prisma.TestShareLinkFindFirstOrThrowArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$TestShareLinkPayload>
+        }
+        findMany: {
+          args: Prisma.TestShareLinkFindManyArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$TestShareLinkPayload>[]
+        }
+        create: {
+          args: Prisma.TestShareLinkCreateArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$TestShareLinkPayload>
+        }
+        createMany: {
+          args: Prisma.TestShareLinkCreateManyArgs<ExtArgs>
+          result: BatchPayload
+        }
+        createManyAndReturn: {
+          args: Prisma.TestShareLinkCreateManyAndReturnArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$TestShareLinkPayload>[]
+        }
+        delete: {
+          args: Prisma.TestShareLinkDeleteArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$TestShareLinkPayload>
+        }
+        update: {
+          args: Prisma.TestShareLinkUpdateArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$TestShareLinkPayload>
+        }
+        deleteMany: {
+          args: Prisma.TestShareLinkDeleteManyArgs<ExtArgs>
+          result: BatchPayload
+        }
+        updateMany: {
+          args: Prisma.TestShareLinkUpdateManyArgs<ExtArgs>
+          result: BatchPayload
+        }
+        updateManyAndReturn: {
+          args: Prisma.TestShareLinkUpdateManyAndReturnArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$TestShareLinkPayload>[]
+        }
+        upsert: {
+          args: Prisma.TestShareLinkUpsertArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$TestShareLinkPayload>
+        }
+        aggregate: {
+          args: Prisma.TestShareLinkAggregateArgs<ExtArgs>
+          result: runtime.Types.Utils.Optional<Prisma.AggregateTestShareLink>
+        }
+        groupBy: {
+          args: Prisma.TestShareLinkGroupByArgs<ExtArgs>
+          result: runtime.Types.Utils.Optional<Prisma.TestShareLinkGroupByOutputType>[]
+        }
+        count: {
+          args: Prisma.TestShareLinkCountArgs<ExtArgs>
+          result: runtime.Types.Utils.Optional<Prisma.TestShareLinkCountAggregateOutputType> | number
+        }
+      }
+    }
+    ReferralReward: {
+      payload: Prisma.$ReferralRewardPayload<ExtArgs>
+      fields: Prisma.ReferralRewardFieldRefs
+      operations: {
+        findUnique: {
+          args: Prisma.ReferralRewardFindUniqueArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$ReferralRewardPayload> | null
+        }
+        findUniqueOrThrow: {
+          args: Prisma.ReferralRewardFindUniqueOrThrowArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$ReferralRewardPayload>
+        }
+        findFirst: {
+          args: Prisma.ReferralRewardFindFirstArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$ReferralRewardPayload> | null
+        }
+        findFirstOrThrow: {
+          args: Prisma.ReferralRewardFindFirstOrThrowArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$ReferralRewardPayload>
+        }
+        findMany: {
+          args: Prisma.ReferralRewardFindManyArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$ReferralRewardPayload>[]
+        }
+        create: {
+          args: Prisma.ReferralRewardCreateArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$ReferralRewardPayload>
+        }
+        createMany: {
+          args: Prisma.ReferralRewardCreateManyArgs<ExtArgs>
+          result: BatchPayload
+        }
+        createManyAndReturn: {
+          args: Prisma.ReferralRewardCreateManyAndReturnArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$ReferralRewardPayload>[]
+        }
+        delete: {
+          args: Prisma.ReferralRewardDeleteArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$ReferralRewardPayload>
+        }
+        update: {
+          args: Prisma.ReferralRewardUpdateArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$ReferralRewardPayload>
+        }
+        deleteMany: {
+          args: Prisma.ReferralRewardDeleteManyArgs<ExtArgs>
+          result: BatchPayload
+        }
+        updateMany: {
+          args: Prisma.ReferralRewardUpdateManyArgs<ExtArgs>
+          result: BatchPayload
+        }
+        updateManyAndReturn: {
+          args: Prisma.ReferralRewardUpdateManyAndReturnArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$ReferralRewardPayload>[]
+        }
+        upsert: {
+          args: Prisma.ReferralRewardUpsertArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$ReferralRewardPayload>
+        }
+        aggregate: {
+          args: Prisma.ReferralRewardAggregateArgs<ExtArgs>
+          result: runtime.Types.Utils.Optional<Prisma.AggregateReferralReward>
+        }
+        groupBy: {
+          args: Prisma.ReferralRewardGroupByArgs<ExtArgs>
+          result: runtime.Types.Utils.Optional<Prisma.ReferralRewardGroupByOutputType>[]
+        }
+        count: {
+          args: Prisma.ReferralRewardCountArgs<ExtArgs>
+          result: runtime.Types.Utils.Optional<Prisma.ReferralRewardCountAggregateOutputType> | number
+        }
+      }
+    }
   }
 } & {
   other: {
@@ -1041,10 +1341,60 @@ export const CreditTransactionScalarFieldEnum = {
   userId: 'userId',
   amount: 'amount',
   type: 'type',
+  description: 'description',
   createdAt: 'createdAt'
 } as const
 
 export type CreditTransactionScalarFieldEnum = (typeof CreditTransactionScalarFieldEnum)[keyof typeof CreditTransactionScalarFieldEnum]
+
+
+export const UserUnlockScalarFieldEnum = {
+  id: 'id',
+  userId: 'userId',
+  testSlug: 'testSlug',
+  resultType: 'resultType',
+  attemptId: 'attemptId',
+  createdAt: 'createdAt'
+} as const
+
+export type UserUnlockScalarFieldEnum = (typeof UserUnlockScalarFieldEnum)[keyof typeof UserUnlockScalarFieldEnum]
+
+
+export const TestAttemptScalarFieldEnum = {
+  id: 'id',
+  userId: 'userId',
+  testSlug: 'testSlug',
+  resultType: 'resultType',
+  attemptId: 'attemptId',
+  createdAt: 'createdAt'
+} as const
+
+export type TestAttemptScalarFieldEnum = (typeof TestAttemptScalarFieldEnum)[keyof typeof TestAttemptScalarFieldEnum]
+
+
+export const TestShareLinkScalarFieldEnum = {
+  id: 'id',
+  code: 'code',
+  userId: 'userId',
+  testSlug: 'testSlug',
+  createdAt: 'createdAt'
+} as const
+
+export type TestShareLinkScalarFieldEnum = (typeof TestShareLinkScalarFieldEnum)[keyof typeof TestShareLinkScalarFieldEnum]
+
+
+export const ReferralRewardScalarFieldEnum = {
+  id: 'id',
+  shareLinkId: 'shareLinkId',
+  referrerUserId: 'referrerUserId',
+  referredUserId: 'referredUserId',
+  testSlug: 'testSlug',
+  resultType: 'resultType',
+  amount: 'amount',
+  createdAt: 'createdAt'
+} as const
+
+export type ReferralRewardScalarFieldEnum = (typeof ReferralRewardScalarFieldEnum)[keyof typeof ReferralRewardScalarFieldEnum]
 
 
 export const SortOrder = {
@@ -1270,6 +1620,10 @@ export type GlobalOmitConfig = {
   toolUsage?: Prisma.ToolUsageOmit
   credit?: Prisma.CreditOmit
   creditTransaction?: Prisma.CreditTransactionOmit
+  userUnlock?: Prisma.UserUnlockOmit
+  testAttempt?: Prisma.TestAttemptOmit
+  testShareLink?: Prisma.TestShareLinkOmit
+  referralReward?: Prisma.ReferralRewardOmit
 }
 
 /* Types for Logging */

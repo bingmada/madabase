@@ -23,15 +23,23 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   });
 }
 
-export default async function LoginPage({ params }: { params: Promise<{ locale: string }> }) {
+export default async function LoginPage({
+  params,
+  searchParams,
+}: {
+  params: Promise<{ locale: string }>;
+  searchParams: Promise<{ next?: string }>;
+}) {
   const { locale } = await params;
+  const { next } = await searchParams;
   if (!isLocale(locale)) notFound();
+  const redirectTo = next && next.startsWith(`/${locale}/`) ? next : undefined;
 
   return (
     <div className="min-h-screen bg-transparent">
       <Header locale={locale} pathname="/login" />
       <main className="content-shell py-12">
-        <AuthCard locale={locale} mode="login" />
+        <AuthCard locale={locale} mode="login" redirectTo={redirectTo} />
         <p className="mt-5 text-center text-sm text-[var(--text-muted)]">
           {locale === "en" ? "No account yet?" : "还没有账号？"}{" "}
           <Link href={`/${locale}/register`} className="font-semibold text-[var(--brand-strong)]">

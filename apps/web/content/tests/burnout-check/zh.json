@@ -1,0 +1,62 @@
+{
+  "title": "职业倦怠风险测试",
+  "description": "根据最近 2-4 周的 30 个工作生活信号，了解你的职业倦怠风险。本测试不作医学诊断。",
+  "instructions": [
+    "请基于最近两到四周的真实状态作答。",
+    "选择发生频率，而不是你认为自己应该怎样。",
+    "如果结果严重或你感到不安全，请寻求专业支持。"
+  ],
+  "reportLabels": {
+    "strengths": "当前保护因素",
+    "weaknesses": "风险信号",
+    "careers": "工作调整",
+    "relationships": "支持信号",
+    "growth": "恢复计划"
+  },
+  "scale": [
+    { "id": "1", "text": "从不", "value": 1 },
+    { "id": "2", "text": "很少", "value": 2 },
+    { "id": "3", "text": "有时", "value": 3 },
+    { "id": "4", "text": "经常", "value": 4 },
+    { "id": "5", "text": "非常经常", "value": 5 }
+  ],
+  "scaleQuestions": [
+    { "id": "q1", "question": "工作日还没开始，我就已经感到情绪耗尽。", "scoreKey": "STRESS" },
+    { "id": "q2", "question": "小请求也会让我觉得异常沉重。", "scoreKey": "STRESS" },
+    { "id": "q3", "question": "下班后我需要比平时更久才能恢复。", "scoreKey": "STRESS" },
+    { "id": "q4", "question": "我对曾经在意的工作产生疏离感。", "scoreKey": "STRESS" },
+    { "id": "q5", "question": "我发现自己更容易冷嘲、烦躁或不耐烦。", "scoreKey": "STRESS" },
+    { "id": "q6", "question": "即使是熟悉任务，我也很难集中注意力。", "scoreKey": "STRESS" },
+    { "id": "q7", "question": "我拖延简单任务，因为它们显得很耗心力。", "scoreKey": "STRESS" },
+    { "id": "q8", "question": "睡眠、食欲或身体紧张受到工作压力影响。", "scoreKey": "STRESS" },
+    { "id": "q9", "question": "休息时我会感到内疚。", "scoreKey": "STRESS" },
+    { "id": "q10", "question": "下班后我对在乎的人更没有耐心。", "scoreKey": "STRESS" },
+    { "id": "q11", "question": "我觉得再怎么努力也不够。", "scoreKey": "STRESS" },
+    { "id": "q12", "question": "我逃避查看消息，因为预期会有更多要求。", "scoreKey": "STRESS" },
+    { "id": "q13", "question": "工作和我的价值感越来越不一致。", "scoreKey": "STRESS" },
+    { "id": "q14", "question": "我被责任或期待困住。", "scoreKey": "STRESS" },
+    { "id": "q15", "question": "完成工作后我不再感到满足。", "scoreKey": "STRESS" },
+    { "id": "q16", "question": "我能通过睡眠、休息或周末恢复能量。", "scoreKey": "STRESS", "reverse": true },
+    { "id": "q17", "question": "我能说清本周最重要的事情。", "scoreKey": "STRESS", "reverse": true },
+    { "id": "q18", "question": "当工作量不现实，我能拒绝或重新协商。", "scoreKey": "STRESS", "reverse": true },
+    { "id": "q19", "question": "我有可以诚实谈压力的人。", "scoreKey": "STRESS", "reverse": true },
+    { "id": "q20", "question": "工作中仍有让我好奇或享受的时刻。", "scoreKey": "STRESS", "reverse": true },
+    { "id": "q21", "question": "我可以休息而不觉得被监视或被惩罚。", "scoreKey": "STRESS", "reverse": true },
+    { "id": "q22", "question": "我的职责足够清楚，能帮助我排序优先级。", "scoreKey": "STRESS", "reverse": true },
+    { "id": "q23", "question": "我对如何完成工作有足够控制感。", "scoreKey": "STRESS", "reverse": true },
+    { "id": "q24", "question": "我能区分紧急工作和重要工作。", "scoreKey": "STRESS", "reverse": true },
+    { "id": "q25", "question": "有意义的努力能被看见或认可。", "scoreKey": "STRESS", "reverse": true },
+    { "id": "q26", "question": "我感到自己必须在非合理时间也保持在线。", "scoreKey": "STRESS" },
+    { "id": "q27", "question": "我用分心来回避注意自己有多累。", "scoreKey": "STRESS" },
+    { "id": "q28", "question": "休息后我不是恢复，而是麻木。", "scoreKey": "STRESS" },
+    { "id": "q29", "question": "我担心一慢下来一切都会崩掉。", "scoreKey": "STRESS" },
+    { "id": "q30", "question": "工作压力让我越来越不像自己。", "scoreKey": "STRESS" }
+  ],
+  "results": {
+    "LOW": { "title": "低倦怠风险", "summary": "你的答案显示压力目前相对可控，并且仍有恢复资源。", "traits": ["可恢复", "有资源", "稳定"], "strengths": ["仍有恢复能力", "优先级可能较清楚", "支持信号仍存在"], "weaknesses": ["压力仍可能悄悄累积", "保护性习惯需要维护", "低风险不等于没有压力"], "careers": ["明确边界", "保护深度工作和休息", "忙季前检查工作量"], "relationships": ["在压力升高前保持连接。"], "growthPlan": ["建立每周恢复检查", "说出一个值得保护的边界", "记录早期预警信号"] },
+    "MODERATE": { "title": "中度倦怠风险", "summary": "结果显示压力开始影响精力、专注或情绪余量。", "traits": ["紧绷", "仍可调整", "需要干预"], "strengths": ["仍有早期干预空间", "部分恢复信号仍在", "觉察能防止升级"], "weaknesses": ["疲惫可能正在正常化", "专注和耐心更脆弱", "休息不一定完全恢复"], "careers": ["减少不清晰工作", "重新协商时间线", "在崩溃前加入恢复块"], "relationships": ["告诉一个人压力在你身上如何表现。"], "growthPlan": ["选择两个工作量调整", "创建无工作恢复窗口", "检查睡眠和在线模式"] },
+    "HIGH": { "title": "高倦怠风险", "summary": "你的答案显示明显消耗，近期需要具体的工作量、边界和支持调整。", "traits": ["消耗", "超载", "高风险"], "strengths": ["识别模式是重要第一步", "具体压力源可以改变", "支持能减少孤立感"], "weaknesses": ["情绪耗竭可能较高", "冷漠或麻木可能增加", "恢复可能需要结构性变化"], "careers": ["升级沟通工作量问题", "移除非必要承诺", "明确哪些事可暂停或延后"], "relationships": ["不要独自扛着压力。"], "growthPlan": ["和主管、导师或专业人士谈谈", "立刻设置可用时间边界", "安排真实恢复，而不只是分心"] },
+    "SEVERE": { "title": "严重倦怠风险", "summary": "你的答案显示强烈消耗和低恢复。建议尽快寻求合格支持和现实帮助。", "traits": ["极度疲惫", "低恢复", "需要支持"], "strengths": ["这个结果可以帮助你开口求助", "立即调整可能降低伤害", "你不需要独自解决"], "weaknesses": ["可能靠肾上腺素维持运转", "休息可能不再恢复", "健康和关系可能受影响"], "careers": ["紧急降低负荷", "记录具体压力点", "讨论请假、覆盖或专业支持"], "relationships": ["今天就告诉一个可信任的人发生了什么。"], "growthPlan": ["尽可能联系专业支持", "制定 24 小时安全与恢复计划", "立刻移除一个主要要求"] }
+  }
+}
+

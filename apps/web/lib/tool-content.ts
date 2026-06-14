@@ -46,7 +46,7 @@ export async function loadToolContent(slug: string, locale: Locale): Promise<Too
     const filePath = pathModule.join(process.cwd(), "content", "tools", locale, `${slug}.txt`);
     const content = await fs.promises.readFile(filePath, "utf-8");
     
-    const parsed = parseToolContent(content);
+    const parsed = parseToolContent(content, locale);
     
     return {
       ...parsed,
@@ -60,17 +60,40 @@ export async function loadToolContent(slug: string, locale: Locale): Promise<Too
   }
 }
 
-function parseToolContent(content: string) {
+function parseToolContent(content: string, requestedLocale: Locale) {
   const lines = content.split("\n");
   const result: Record<string, Record<string, unknown>> = {
     en: {},
     zh: {},
   };
 
-  let currentLocale: "en" | "zh" = "en";
+  const hasLocaleDelimiter = lines.some((line) => line.trim() === "///");
+  let currentLocale: "en" | "zh" = hasLocaleDelimiter ? "en" : requestedLocale;
   let currentSection: string | null = null;
   let currentList: string[] = [];
   let sectionData: Record<string, string> = {};
+  let exampleSide: "input" | "output" = "input";
+
+  const flushSectionData = () => {
+    if (currentSection === "howToUse" && (sectionData.title || sectionData.content)) {
+      currentList.push(JSON.stringify(sectionData));
+    } else if (currentSection === "examples" && (sectionData.input || sectionData.output)) {
+      currentList.push(JSON.stringify(sectionData));
+    } else if (currentSection === "faq" && (sectionData.q || sectionData.a)) {
+      currentList.push(JSON.stringify(sectionData));
+    }
+    sectionData = {};
+  };
+
+  const flushList = (locale: "en" | "zh") => {
+    if (currentList.length === 0) return;
+    if (currentSection === "howToUse") result[locale].howToUse = currentList;
+    else if (currentSection === "examples") result[locale].examples = currentList;
+    else if (currentSection === "faq") result[locale].faq = currentList;
+    else if (currentSection === "relatedTools") result[locale].relatedTools = currentList;
+    else if (currentSection === "keywords") result[locale].keywords = currentList;
+    currentList = [];
+  };
 
   for (const line of lines) {
     const trimmedLine = line.trim();
@@ -82,66 +105,61 @@ function parseToolContent(content: string) {
     if (trimmedLine === "[SEO_DESCRIPTION]") { currentSection = "seoDescription"; continue; }
     if (trimmedLine === "[INTRO]") { currentSection = "intro"; continue; }
     if (trimmedLine === "[HOW_TO_USE]") {
-      if (sectionData.title || sectionData.content) {
-        currentList.push(JSON.stringify(sectionData));
-        sectionData = {};
-      }
-      if (currentList.length > 0) result[currentLocale].howToUse = currentList;
-      currentList = [];
+      flushSectionData();
+      flushList(currentLocale);
       currentSection = "howToUse";
       continue;
     }
     if (trimmedLine === "[EXAMPLES]") {
-      if (sectionData.title || sectionData.content) {
-        currentList.push(JSON.stringify(sectionData));
-        sectionData = {};
-      }
-      if (currentList.length > 0) result[currentLocale].howToUse = currentList;
-      currentList = [];
+      flushSectionData();
+      flushList(currentLocale);
+      exampleSide = "input";
       currentSection = "examples";
       continue;
     }
     if (trimmedLine === "[FAQ]") {
-      if (currentList.length > 0) result[currentLocale].examples = currentList;
-      currentList = [];
+      flushSectionData();
+      flushList(currentLocale);
       currentSection = "faq";
       continue;
     }
     if (trimmedLine === "[RELATED_TOOLS]") {
-      if (currentList.length > 0) result[currentLocale].faq = currentList;
-      currentList = [];
+      flushSectionData();
+      flushList(currentLocale);
       currentSection = "relatedTools";
       continue;
     }
-    if (trimmedLine === "[KEYWORDS]") { currentSection = "keywords"; continue; }
-    if (trimmedLine === "[CATEGORY]") { currentSection = "category"; continue; }
+    if (trimmedLine === "[KEYWORDS]") {
+      flushSectionData();
+      flushList(currentLocale);
+      currentSection = "keywords";
+      continue;
+    }
+    if (trimmedLine === "[CATEGORY]") {
+      flushSectionData();
+      flushList(currentLocale);
+      currentSection = "category";
+      continue;
+    }
 
     if (trimmedLine === "---") {
-      if (sectionData.title || sectionData.content) {
-        currentList.push(JSON.stringify(sectionData));
-        sectionData = {};
-      }
+      flushSectionData();
+      exampleSide = "input";
       continue;
     }
     if (trimmedLine === "===") {
-      if (sectionData.input || sectionData.output) {
-        currentList.push(JSON.stringify(sectionData));
-        sectionData = {};
+      if (currentSection === "examples") {
+        exampleSide = "output";
+      } else {
+        flushSectionData();
       }
       continue;
     }
     if (trimmedLine === "///") {
+      const previousLocale = currentLocale;
+      flushSectionData();
+      flushList(previousLocale);
       currentLocale = currentLocale === "en" ? "zh" : "en";
-      if (sectionData.title || sectionData.content) {
-        currentList.push(JSON.stringify(sectionData));
-        sectionData = {};
-      }
-      if (currentList.length > 0) {
-        if (currentSection === "howToUse") result[currentLocale === "en" ? "zh" : "en"].howToUse = currentList;
-        else if (currentSection === "examples") result[currentLocale === "en" ? "zh" : "en"].examples = currentList;
-        else if (currentSection === "faq") result[currentLocale === "en" ? "zh" : "en"].faq = currentList;
-      }
-      currentList = [];
       continue;
     }
 
@@ -149,28 +167,28 @@ function parseToolContent(content: string) {
       if (!sectionData.title) sectionData.title = trimmedLine;
       else sectionData.content = trimmedLine;
     } else if (currentSection === "examples") {
-      if (!sectionData.input) sectionData.input = trimmedLine;
-      else sectionData.output = trimmedLine;
+      sectionData[exampleSide] = sectionData[exampleSide] ? `${sectionData[exampleSide]}\n${trimmedLine}` : trimmedLine;
     } else if (currentSection === "faq") {
-      if (!sectionData.q) sectionData.q = trimmedLine;
-      else sectionData.a = trimmedLine;
+      const isQuestion = /[?？]$/.test(trimmedLine);
+      if (isQuestion) {
+        flushSectionData();
+        sectionData.q = trimmedLine;
+      } else if (sectionData.q) {
+        sectionData.a = sectionData.a ? `${sectionData.a}\n${trimmedLine}` : trimmedLine;
+      }
     } else if (currentSection === "relatedTools") {
       currentList.push(trimmedLine);
     } else if (currentSection === "keywords") {
       currentList.push(trimmedLine);
     } else if (currentSection === "category") {
-      result.en.category = trimmedLine;
+      result[currentLocale].category = trimmedLine;
     } else if (currentSection && ["title", "h1", "description", "seoTitle", "seoDescription", "intro"].includes(currentSection)) {
       if (!result[currentLocale][currentSection]) result[currentLocale][currentSection] = trimmedLine;
     }
   }
 
-  if (sectionData.title || sectionData.content) currentList.push(JSON.stringify(sectionData));
-  if (currentList.length > 0) {
-    if (currentSection === "howToUse") result[currentLocale].howToUse = currentList;
-    else if (currentSection === "examples") result[currentLocale].examples = currentList;
-    else if (currentSection === "faq") result[currentLocale].faq = currentList;
-  }
+  flushSectionData();
+  flushList(currentLocale);
 
   return {
     slug: "",
@@ -202,7 +220,7 @@ function parseToolContent(content: string) {
       en: (result.en.faq as string[] || []).map((s) => JSON.parse(s)),
       zh: (result.zh.faq as string[] || []).map((s) => JSON.parse(s)),
     },
-    relatedTools: (result.en.relatedTools as string[]) || [],
-    category: (result.en.category as ToolContent["category"]) || "developer",
+    relatedTools: ((result.en.relatedTools as string[]) || (result.zh.relatedTools as string[])) || [],
+    category: ((result.en.category as ToolContent["category"]) || (result.zh.category as ToolContent["category"])) || "developer",
   };
 }

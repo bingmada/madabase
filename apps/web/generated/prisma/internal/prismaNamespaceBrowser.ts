@@ -57,7 +57,11 @@ export const ModelName = {
   Favorite: 'Favorite',
   ToolUsage: 'ToolUsage',
   Credit: 'Credit',
-  CreditTransaction: 'CreditTransaction'
+  CreditTransaction: 'CreditTransaction',
+  UserUnlock: 'UserUnlock',
+  TestAttempt: 'TestAttempt',
+  TestShareLink: 'TestShareLink',
+  ReferralReward: 'ReferralReward'
 } as const
 
 export type ModelName = (typeof ModelName)[keyof typeof ModelName]
@@ -150,10 +154,60 @@ export const CreditTransactionScalarFieldEnum = {
   userId: 'userId',
   amount: 'amount',
   type: 'type',
+  description: 'description',
   createdAt: 'createdAt'
 } as const
 
 export type CreditTransactionScalarFieldEnum = (typeof CreditTransactionScalarFieldEnum)[keyof typeof CreditTransactionScalarFieldEnum]
+
+
+export const UserUnlockScalarFieldEnum = {
+  id: 'id',
+  userId: 'userId',
+  testSlug: 'testSlug',
+  resultType: 'resultType',
+  attemptId: 'attemptId',
+  createdAt: 'createdAt'
+} as const
+
+export type UserUnlockScalarFieldEnum = (typeof UserUnlockScalarFieldEnum)[keyof typeof UserUnlockScalarFieldEnum]
+
+
+export const TestAttemptScalarFieldEnum = {
+  id: 'id',
+  userId: 'userId',
+  testSlug: 'testSlug',
+  resultType: 'resultType',
+  attemptId: 'attemptId',
+  createdAt: 'createdAt'
+} as const
+
+export type TestAttemptScalarFieldEnum = (typeof TestAttemptScalarFieldEnum)[keyof typeof TestAttemptScalarFieldEnum]
+
+
+export const TestShareLinkScalarFieldEnum = {
+  id: 'id',
+  code: 'code',
+  userId: 'userId',
+  testSlug: 'testSlug',
+  createdAt: 'createdAt'
+} as const
+
+export type TestShareLinkScalarFieldEnum = (typeof TestShareLinkScalarFieldEnum)[keyof typeof TestShareLinkScalarFieldEnum]
+
+
+export const ReferralRewardScalarFieldEnum = {
+  id: 'id',
+  shareLinkId: 'shareLinkId',
+  referrerUserId: 'referrerUserId',
+  referredUserId: 'referredUserId',
+  testSlug: 'testSlug',
+  resultType: 'resultType',
+  amount: 'amount',
+  createdAt: 'createdAt'
+} as const
+
+export type ReferralRewardScalarFieldEnum = (typeof ReferralRewardScalarFieldEnum)[keyof typeof ReferralRewardScalarFieldEnum]
 
 
 export const SortOrder = {

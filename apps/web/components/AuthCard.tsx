@@ -6,9 +6,11 @@ import { useRouter } from "next/navigation";
 export function AuthCard({
   locale,
   mode,
+  redirectTo,
 }: {
   locale: "en" | "zh";
   mode: "login" | "register";
+  redirectTo?: string;
 }) {
   const router = useRouter();
   const [email, setEmail] = useState("");
@@ -70,7 +72,7 @@ export function AuthCard({
       });
       const payload = await response.json();
       if (!response.ok) throw new Error(payload.error ?? copy.invalid);
-      router.push(`/${locale}/profile`);
+      router.push(redirectTo && redirectTo.startsWith(`/${locale}/`) ? redirectTo : `/${locale}/profile`);
       router.refresh();
     } catch (error) {
       setMessage(error instanceof Error ? error.message : copy.invalid);

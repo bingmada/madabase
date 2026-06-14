@@ -1,0 +1,63 @@
+{
+  "title": "Love Language Test",
+  "description": "Answer 30 relationship scenarios to find the affection signal that lands most strongly for you.",
+  "instructions": [
+    "Answer for what makes you feel cared for in a close relationship.",
+    "Think about repeated patterns, not one memorable event.",
+    "This test describes communication preferences, not relationship compatibility."
+  ],
+  "reportLabels": {
+    "strengths": "How this helps",
+    "weaknesses": "Misunderstanding risks",
+    "careers": "Daily practices",
+    "relationships": "Relationship signals",
+    "growth": "Conversation prompts"
+  },
+  "scale": [
+    { "id": "1", "text": "Not important", "value": 1 },
+    { "id": "2", "text": "Slightly important", "value": 2 },
+    { "id": "3", "text": "Somewhat important", "value": 3 },
+    { "id": "4", "text": "Very important", "value": 4 },
+    { "id": "5", "text": "Extremely important", "value": 5 }
+  ],
+  "scaleQuestions": [
+    { "id": "w1", "question": "They tell you specifically what they appreciate about you.", "scoreKey": "WORDS" },
+    { "id": "w2", "question": "They send a thoughtful message before a stressful day.", "scoreKey": "WORDS" },
+    { "id": "w3", "question": "They say they are proud of how you handled something.", "scoreKey": "WORDS" },
+    { "id": "w4", "question": "They apologize clearly and name what they will do differently.", "scoreKey": "WORDS" },
+    { "id": "w5", "question": "They encourage you when you doubt yourself.", "scoreKey": "WORDS" },
+    { "id": "w6", "question": "They notice your effort and say it out loud.", "scoreKey": "WORDS" },
+    { "id": "t1", "question": "They put their phone away and give you full attention.", "scoreKey": "TIME" },
+    { "id": "t2", "question": "They protect regular time for just the two of you.", "scoreKey": "TIME" },
+    { "id": "t3", "question": "They join you in an activity even if it is simple.", "scoreKey": "TIME" },
+    { "id": "t4", "question": "They ask follow-up questions and stay present.", "scoreKey": "TIME" },
+    { "id": "t5", "question": "They choose shared experiences over multitasking.", "scoreKey": "TIME" },
+    { "id": "t6", "question": "They make time for a conversation without rushing it.", "scoreKey": "TIME" },
+    { "id": "a1", "question": "They handle a task that has been weighing on you.", "scoreKey": "ACTS" },
+    { "id": "a2", "question": "They help before you have to ask twice.", "scoreKey": "ACTS" },
+    { "id": "a3", "question": "They make your day easier in a practical way.", "scoreKey": "ACTS" },
+    { "id": "a4", "question": "They remember a responsibility and take care of it.", "scoreKey": "ACTS" },
+    { "id": "a5", "question": "They show support by solving a real-life problem with you.", "scoreKey": "ACTS" },
+    { "id": "a6", "question": "They follow through on promises without needing reminders.", "scoreKey": "ACTS" },
+    { "id": "g1", "question": "They bring you a small item that shows they were thinking of you.", "scoreKey": "GIFTS" },
+    { "id": "g2", "question": "They choose a present that reflects your taste or history.", "scoreKey": "GIFTS" },
+    { "id": "g3", "question": "They save something meaningful from a shared moment.", "scoreKey": "GIFTS" },
+    { "id": "g4", "question": "They surprise you with something useful or personal.", "scoreKey": "GIFTS" },
+    { "id": "g5", "question": "They mark important dates with a tangible gesture.", "scoreKey": "GIFTS" },
+    { "id": "g6", "question": "They notice what you like and choose accordingly.", "scoreKey": "GIFTS" },
+    { "id": "p1", "question": "They hug you when words are not enough.", "scoreKey": "TOUCH" },
+    { "id": "p2", "question": "They sit close to you during quiet moments.", "scoreKey": "TOUCH" },
+    { "id": "p3", "question": "They hold your hand in public or private.", "scoreKey": "TOUCH" },
+    { "id": "p4", "question": "They offer comforting touch when you are stressed.", "scoreKey": "TOUCH" },
+    { "id": "p5", "question": "They use physical affection to reconnect after distance.", "scoreKey": "TOUCH" },
+    { "id": "p6", "question": "They make everyday affection feel natural and safe.", "scoreKey": "TOUCH" }
+  ],
+  "results": {
+    "WORDS": { "title": "Words of Affirmation", "summary": "You feel loved when care is spoken clearly, specifically, and sincerely.", "traits": ["Verbal", "Encouragement-led", "Meaning-focused"], "strengths": ["Makes appreciation explicit", "Builds emotional confidence", "Repairs tension through clear language"], "weaknesses": ["Silence can feel like distance", "Generic praise may feel empty", "Harsh words may linger"], "careers": ["Share one specific appreciation daily", "Use written notes for important moments", "Name repair plans after conflict"], "relationships": ["You notice tone, timing, and specificity in language."], "growthPlan": ["Ask: What words help you feel supported?", "Ask: Which phrases feel meaningful versus automatic?", "Ask: How should we repair careless words?"] },
+    "TIME": { "title": "Quality Time", "summary": "You feel loved when someone is present, attentive, and willing to share unhurried time.", "traits": ["Present", "Experience-led", "Attention-sensitive"], "strengths": ["Creates deep connection", "Encourages listening", "Builds shared memories"], "weaknesses": ["Distraction can feel personal", "Busy seasons may feel like rejection", "Routine time may need intentionality"], "careers": ["Schedule protected time", "Create phone-free rituals", "Share small recurring experiences"], "relationships": ["You read attention as affection and distraction as distance."], "growthPlan": ["Ask: What counts as quality time for each of us?", "Ask: How do we protect time during busy weeks?", "Ask: What shared rituals feel realistic?"] },
+    "ACTS": { "title": "Acts of Service", "summary": "You feel loved when care becomes practical help, reliability, and shared responsibility.", "traits": ["Practical", "Reliability-led", "Supportive"], "strengths": ["Turns care into real relief", "Builds trust through follow-through", "Notices everyday burdens"], "weaknesses": ["Broken promises can feel especially painful", "Help may be invisible if not discussed", "You may over-function for others"], "careers": ["Ask what help would actually reduce pressure", "Follow through visibly", "Balance support with consent"], "relationships": ["You notice whether effort becomes action."], "growthPlan": ["Ask: Which tasks feel most supportive?", "Ask: When does help feel caring versus controlling?", "Ask: How do we divide invisible labor?"] },
+    "GIFTS": { "title": "Thoughtful Gifts", "summary": "You feel loved when tangible gestures show memory, attention, and personal meaning.", "traits": ["Symbolic", "Thoughtful", "Memory-led"], "strengths": ["Makes care visible", "Honors personal details", "Creates meaningful reminders"], "weaknesses": ["Forgotten dates may sting", "Expensive gifts are not the point", "Others may misread this as materialism"], "careers": ["Choose small meaningful tokens", "Mark transitions with a keepsake", "Explain the story behind a gift"], "relationships": ["You notice the thought behind the object more than the price."], "growthPlan": ["Ask: What kinds of gestures feel meaningful?", "Ask: Which dates or moments matter most?", "Ask: How can we keep gifts thoughtful but not pressured?"] },
+    "TOUCH": { "title": "Physical Affection", "summary": "You feel loved through safe, welcome physical closeness and embodied reassurance.", "traits": ["Embodied", "Warm", "Reassurance-led"], "strengths": ["Creates calm quickly", "Communicates care beyond words", "Supports reconnection"], "weaknesses": ["Physical distance may feel emotionally distant", "Consent and timing matter deeply", "Stress can change touch preferences"], "careers": ["Use small consensual gestures", "Discuss comfort levels directly", "Create reconnection rituals"], "relationships": ["You read closeness, warmth, and physical reassurance as care."], "growthPlan": ["Ask: What touch feels comforting?", "Ask: When do you need space instead?", "Ask: How should we reconnect after conflict?"] }
+  }
+}
+

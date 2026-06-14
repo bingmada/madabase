@@ -211,6 +211,11 @@ export type UserWhereInput = {
   toolUsages?: Prisma.ToolUsageListRelationFilter
   credits?: Prisma.XOR<Prisma.CreditNullableScalarRelationFilter, Prisma.CreditWhereInput> | null
   creditTransactions?: Prisma.CreditTransactionListRelationFilter
+  testAttempts?: Prisma.TestAttemptListRelationFilter
+  unlocks?: Prisma.UserUnlockListRelationFilter
+  testShareLinks?: Prisma.TestShareLinkListRelationFilter
+  referralRewardsGiven?: Prisma.ReferralRewardListRelationFilter
+  referralRewardsReceived?: Prisma.ReferralRewardListRelationFilter
   verificationCodes?: Prisma.EmailVerificationCodeListRelationFilter
 }
 
@@ -228,6 +233,11 @@ export type UserOrderByWithRelationInput = {
   toolUsages?: Prisma.ToolUsageOrderByRelationAggregateInput
   credits?: Prisma.CreditOrderByWithRelationInput
   creditTransactions?: Prisma.CreditTransactionOrderByRelationAggregateInput
+  testAttempts?: Prisma.TestAttemptOrderByRelationAggregateInput
+  unlocks?: Prisma.UserUnlockOrderByRelationAggregateInput
+  testShareLinks?: Prisma.TestShareLinkOrderByRelationAggregateInput
+  referralRewardsGiven?: Prisma.ReferralRewardOrderByRelationAggregateInput
+  referralRewardsReceived?: Prisma.ReferralRewardOrderByRelationAggregateInput
   verificationCodes?: Prisma.EmailVerificationCodeOrderByRelationAggregateInput
 }
 
@@ -248,6 +258,11 @@ export type UserWhereUniqueInput = Prisma.AtLeast<{
   toolUsages?: Prisma.ToolUsageListRelationFilter
   credits?: Prisma.XOR<Prisma.CreditNullableScalarRelationFilter, Prisma.CreditWhereInput> | null
   creditTransactions?: Prisma.CreditTransactionListRelationFilter
+  testAttempts?: Prisma.TestAttemptListRelationFilter
+  unlocks?: Prisma.UserUnlockListRelationFilter
+  testShareLinks?: Prisma.TestShareLinkListRelationFilter
+  referralRewardsGiven?: Prisma.ReferralRewardListRelationFilter
+  referralRewardsReceived?: Prisma.ReferralRewardListRelationFilter
   verificationCodes?: Prisma.EmailVerificationCodeListRelationFilter
 }, "id" | "email">
 
@@ -293,6 +308,11 @@ export type UserCreateInput = {
   toolUsages?: Prisma.ToolUsageCreateNestedManyWithoutUserInput
   credits?: Prisma.CreditCreateNestedOneWithoutUserInput
   creditTransactions?: Prisma.CreditTransactionCreateNestedManyWithoutUserInput
+  testAttempts?: Prisma.TestAttemptCreateNestedManyWithoutUserInput
+  unlocks?: Prisma.UserUnlockCreateNestedManyWithoutUserInput
+  testShareLinks?: Prisma.TestShareLinkCreateNestedManyWithoutUserInput
+  referralRewardsGiven?: Prisma.ReferralRewardCreateNestedManyWithoutReferrerInput
+  referralRewardsReceived?: Prisma.ReferralRewardCreateNestedManyWithoutReferredInput
   verificationCodes?: Prisma.EmailVerificationCodeCreateNestedManyWithoutUserInput
 }
 
@@ -310,6 +330,11 @@ export type UserUncheckedCreateInput = {
   toolUsages?: Prisma.ToolUsageUncheckedCreateNestedManyWithoutUserInput
   credits?: Prisma.CreditUncheckedCreateNestedOneWithoutUserInput
   creditTransactions?: Prisma.CreditTransactionUncheckedCreateNestedManyWithoutUserInput
+  testAttempts?: Prisma.TestAttemptUncheckedCreateNestedManyWithoutUserInput
+  unlocks?: Prisma.UserUnlockUncheckedCreateNestedManyWithoutUserInput
+  testShareLinks?: Prisma.TestShareLinkUncheckedCreateNestedManyWithoutUserInput
+  referralRewardsGiven?: Prisma.ReferralRewardUncheckedCreateNestedManyWithoutReferrerInput
+  referralRewardsReceived?: Prisma.ReferralRewardUncheckedCreateNestedManyWithoutReferredInput
   verificationCodes?: Prisma.EmailVerificationCodeUncheckedCreateNestedManyWithoutUserInput
 }
 
@@ -327,6 +352,11 @@ export type UserUpdateInput = {
   toolUsages?: Prisma.ToolUsageUpdateManyWithoutUserNestedInput
   credits?: Prisma.CreditUpdateOneWithoutUserNestedInput
   creditTransactions?: Prisma.CreditTransactionUpdateManyWithoutUserNestedInput
+  testAttempts?: Prisma.TestAttemptUpdateManyWithoutUserNestedInput
+  unlocks?: Prisma.UserUnlockUpdateManyWithoutUserNestedInput
+  testShareLinks?: Prisma.TestShareLinkUpdateManyWithoutUserNestedInput
+  referralRewardsGiven?: Prisma.ReferralRewardUpdateManyWithoutReferrerNestedInput
+  referralRewardsReceived?: Prisma.ReferralRewardUpdateManyWithoutReferredNestedInput
   verificationCodes?: Prisma.EmailVerificationCodeUpdateManyWithoutUserNestedInput
 }
 
@@ -344,6 +374,11 @@ export type UserUncheckedUpdateInput = {
   toolUsages?: Prisma.ToolUsageUncheckedUpdateManyWithoutUserNestedInput
   credits?: Prisma.CreditUncheckedUpdateOneWithoutUserNestedInput
   creditTransactions?: Prisma.CreditTransactionUncheckedUpdateManyWithoutUserNestedInput
+  testAttempts?: Prisma.TestAttemptUncheckedUpdateManyWithoutUserNestedInput
+  unlocks?: Prisma.UserUnlockUncheckedUpdateManyWithoutUserNestedInput
+  testShareLinks?: Prisma.TestShareLinkUncheckedUpdateManyWithoutUserNestedInput
+  referralRewardsGiven?: Prisma.ReferralRewardUncheckedUpdateManyWithoutReferrerNestedInput
+  referralRewardsReceived?: Prisma.ReferralRewardUncheckedUpdateManyWithoutReferredNestedInput
   verificationCodes?: Prisma.EmailVerificationCodeUncheckedUpdateManyWithoutUserNestedInput
 }
 
@@ -525,6 +560,76 @@ export type UserUpdateOneRequiredWithoutCreditTransactionsNestedInput = {
   update?: Prisma.XOR<Prisma.XOR<Prisma.UserUpdateToOneWithWhereWithoutCreditTransactionsInput, Prisma.UserUpdateWithoutCreditTransactionsInput>, Prisma.UserUncheckedUpdateWithoutCreditTransactionsInput>
 }
 
+export type UserCreateNestedOneWithoutUnlocksInput = {
+  create?: Prisma.XOR<Prisma.UserCreateWithoutUnlocksInput, Prisma.UserUncheckedCreateWithoutUnlocksInput>
+  connectOrCreate?: Prisma.UserCreateOrConnectWithoutUnlocksInput
+  connect?: Prisma.UserWhereUniqueInput
+}
+
+export type UserUpdateOneRequiredWithoutUnlocksNestedInput = {
+  create?: Prisma.XOR<Prisma.UserCreateWithoutUnlocksInput, Prisma.UserUncheckedCreateWithoutUnlocksInput>
+  connectOrCreate?: Prisma.UserCreateOrConnectWithoutUnlocksInput
+  upsert?: Prisma.UserUpsertWithoutUnlocksInput
+  connect?: Prisma.UserWhereUniqueInput
+  update?: Prisma.XOR<Prisma.XOR<Prisma.UserUpdateToOneWithWhereWithoutUnlocksInput, Prisma.UserUpdateWithoutUnlocksInput>, Prisma.UserUncheckedUpdateWithoutUnlocksInput>
+}
+
+export type UserCreateNestedOneWithoutTestAttemptsInput = {
+  create?: Prisma.XOR<Prisma.UserCreateWithoutTestAttemptsInput, Prisma.UserUncheckedCreateWithoutTestAttemptsInput>
+  connectOrCreate?: Prisma.UserCreateOrConnectWithoutTestAttemptsInput
+  connect?: Prisma.UserWhereUniqueInput
+}
+
+export type UserUpdateOneRequiredWithoutTestAttemptsNestedInput = {
+  create?: Prisma.XOR<Prisma.UserCreateWithoutTestAttemptsInput, Prisma.UserUncheckedCreateWithoutTestAttemptsInput>
+  connectOrCreate?: Prisma.UserCreateOrConnectWithoutTestAttemptsInput
+  upsert?: Prisma.UserUpsertWithoutTestAttemptsInput
+  connect?: Prisma.UserWhereUniqueInput
+  update?: Prisma.XOR<Prisma.XOR<Prisma.UserUpdateToOneWithWhereWithoutTestAttemptsInput, Prisma.UserUpdateWithoutTestAttemptsInput>, Prisma.UserUncheckedUpdateWithoutTestAttemptsInput>
+}
+
+export type UserCreateNestedOneWithoutTestShareLinksInput = {
+  create?: Prisma.XOR<Prisma.UserCreateWithoutTestShareLinksInput, Prisma.UserUncheckedCreateWithoutTestShareLinksInput>
+  connectOrCreate?: Prisma.UserCreateOrConnectWithoutTestShareLinksInput
+  connect?: Prisma.UserWhereUniqueInput
+}
+
+export type UserUpdateOneRequiredWithoutTestShareLinksNestedInput = {
+  create?: Prisma.XOR<Prisma.UserCreateWithoutTestShareLinksInput, Prisma.UserUncheckedCreateWithoutTestShareLinksInput>
+  connectOrCreate?: Prisma.UserCreateOrConnectWithoutTestShareLinksInput
+  upsert?: Prisma.UserUpsertWithoutTestShareLinksInput
+  connect?: Prisma.UserWhereUniqueInput
+  update?: Prisma.XOR<Prisma.XOR<Prisma.UserUpdateToOneWithWhereWithoutTestShareLinksInput, Prisma.UserUpdateWithoutTestShareLinksInput>, Prisma.UserUncheckedUpdateWithoutTestShareLinksInput>
+}
+
+export type UserCreateNestedOneWithoutReferralRewardsGivenInput = {
+  create?: Prisma.XOR<Prisma.UserCreateWithoutReferralRewardsGivenInput, Prisma.UserUncheckedCreateWithoutReferralRewardsGivenInput>
+  connectOrCreate?: Prisma.UserCreateOrConnectWithoutReferralRewardsGivenInput
+  connect?: Prisma.UserWhereUniqueInput
+}
+
+export type UserCreateNestedOneWithoutReferralRewardsReceivedInput = {
+  create?: Prisma.XOR<Prisma.UserCreateWithoutReferralRewardsReceivedInput, Prisma.UserUncheckedCreateWithoutReferralRewardsReceivedInput>
+  connectOrCreate?: Prisma.UserCreateOrConnectWithoutReferralRewardsReceivedInput
+  connect?: Prisma.UserWhereUniqueInput
+}
+
+export type UserUpdateOneRequiredWithoutReferralRewardsGivenNestedInput = {
+  create?: Prisma.XOR<Prisma.UserCreateWithoutReferralRewardsGivenInput, Prisma.UserUncheckedCreateWithoutReferralRewardsGivenInput>
+  connectOrCreate?: Prisma.UserCreateOrConnectWithoutReferralRewardsGivenInput
+  upsert?: Prisma.UserUpsertWithoutReferralRewardsGivenInput
+  connect?: Prisma.UserWhereUniqueInput
+  update?: Prisma.XOR<Prisma.XOR<Prisma.UserUpdateToOneWithWhereWithoutReferralRewardsGivenInput, Prisma.UserUpdateWithoutReferralRewardsGivenInput>, Prisma.UserUncheckedUpdateWithoutReferralRewardsGivenInput>
+}
+
+export type UserUpdateOneRequiredWithoutReferralRewardsReceivedNestedInput = {
+  create?: Prisma.XOR<Prisma.UserCreateWithoutReferralRewardsReceivedInput, Prisma.UserUncheckedCreateWithoutReferralRewardsReceivedInput>
+  connectOrCreate?: Prisma.UserCreateOrConnectWithoutReferralRewardsReceivedInput
+  upsert?: Prisma.UserUpsertWithoutReferralRewardsReceivedInput
+  connect?: Prisma.UserWhereUniqueInput
+  update?: Prisma.XOR<Prisma.XOR<Prisma.UserUpdateToOneWithWhereWithoutReferralRewardsReceivedInput, Prisma.UserUpdateWithoutReferralRewardsReceivedInput>, Prisma.UserUncheckedUpdateWithoutReferralRewardsReceivedInput>
+}
+
 export type UserCreateWithoutSessionsInput = {
   id?: string
   email: string
@@ -538,6 +643,11 @@ export type UserCreateWithoutSessionsInput = {
   toolUsages?: Prisma.ToolUsageCreateNestedManyWithoutUserInput
   credits?: Prisma.CreditCreateNestedOneWithoutUserInput
   creditTransactions?: Prisma.CreditTransactionCreateNestedManyWithoutUserInput
+  testAttempts?: Prisma.TestAttemptCreateNestedManyWithoutUserInput
+  unlocks?: Prisma.UserUnlockCreateNestedManyWithoutUserInput
+  testShareLinks?: Prisma.TestShareLinkCreateNestedManyWithoutUserInput
+  referralRewardsGiven?: Prisma.ReferralRewardCreateNestedManyWithoutReferrerInput
+  referralRewardsReceived?: Prisma.ReferralRewardCreateNestedManyWithoutReferredInput
   verificationCodes?: Prisma.EmailVerificationCodeCreateNestedManyWithoutUserInput
 }
 
@@ -554,6 +664,11 @@ export type UserUncheckedCreateWithoutSessionsInput = {
   toolUsages?: Prisma.ToolUsageUncheckedCreateNestedManyWithoutUserInput
   credits?: Prisma.CreditUncheckedCreateNestedOneWithoutUserInput
   creditTransactions?: Prisma.CreditTransactionUncheckedCreateNestedManyWithoutUserInput
+  testAttempts?: Prisma.TestAttemptUncheckedCreateNestedManyWithoutUserInput
+  unlocks?: Prisma.UserUnlockUncheckedCreateNestedManyWithoutUserInput
+  testShareLinks?: Prisma.TestShareLinkUncheckedCreateNestedManyWithoutUserInput
+  referralRewardsGiven?: Prisma.ReferralRewardUncheckedCreateNestedManyWithoutReferrerInput
+  referralRewardsReceived?: Prisma.ReferralRewardUncheckedCreateNestedManyWithoutReferredInput
   verificationCodes?: Prisma.EmailVerificationCodeUncheckedCreateNestedManyWithoutUserInput
 }
 
@@ -586,6 +701,11 @@ export type UserUpdateWithoutSessionsInput = {
   toolUsages?: Prisma.ToolUsageUpdateManyWithoutUserNestedInput
   credits?: Prisma.CreditUpdateOneWithoutUserNestedInput
   creditTransactions?: Prisma.CreditTransactionUpdateManyWithoutUserNestedInput
+  testAttempts?: Prisma.TestAttemptUpdateManyWithoutUserNestedInput
+  unlocks?: Prisma.UserUnlockUpdateManyWithoutUserNestedInput
+  testShareLinks?: Prisma.TestShareLinkUpdateManyWithoutUserNestedInput
+  referralRewardsGiven?: Prisma.ReferralRewardUpdateManyWithoutReferrerNestedInput
+  referralRewardsReceived?: Prisma.ReferralRewardUpdateManyWithoutReferredNestedInput
   verificationCodes?: Prisma.EmailVerificationCodeUpdateManyWithoutUserNestedInput
 }
 
@@ -602,6 +722,11 @@ export type UserUncheckedUpdateWithoutSessionsInput = {
   toolUsages?: Prisma.ToolUsageUncheckedUpdateManyWithoutUserNestedInput
   credits?: Prisma.CreditUncheckedUpdateOneWithoutUserNestedInput
   creditTransactions?: Prisma.CreditTransactionUncheckedUpdateManyWithoutUserNestedInput
+  testAttempts?: Prisma.TestAttemptUncheckedUpdateManyWithoutUserNestedInput
+  unlocks?: Prisma.UserUnlockUncheckedUpdateManyWithoutUserNestedInput
+  testShareLinks?: Prisma.TestShareLinkUncheckedUpdateManyWithoutUserNestedInput
+  referralRewardsGiven?: Prisma.ReferralRewardUncheckedUpdateManyWithoutReferrerNestedInput
+  referralRewardsReceived?: Prisma.ReferralRewardUncheckedUpdateManyWithoutReferredNestedInput
   verificationCodes?: Prisma.EmailVerificationCodeUncheckedUpdateManyWithoutUserNestedInput
 }
 
@@ -619,6 +744,11 @@ export type UserCreateWithoutVerificationCodesInput = {
   toolUsages?: Prisma.ToolUsageCreateNestedManyWithoutUserInput
   credits?: Prisma.CreditCreateNestedOneWithoutUserInput
   creditTransactions?: Prisma.CreditTransactionCreateNestedManyWithoutUserInput
+  testAttempts?: Prisma.TestAttemptCreateNestedManyWithoutUserInput
+  unlocks?: Prisma.UserUnlockCreateNestedManyWithoutUserInput
+  testShareLinks?: Prisma.TestShareLinkCreateNestedManyWithoutUserInput
+  referralRewardsGiven?: Prisma.ReferralRewardCreateNestedManyWithoutReferrerInput
+  referralRewardsReceived?: Prisma.ReferralRewardCreateNestedManyWithoutReferredInput
 }
 
 export type UserUncheckedCreateWithoutVerificationCodesInput = {
@@ -635,6 +765,11 @@ export type UserUncheckedCreateWithoutVerificationCodesInput = {
   toolUsages?: Prisma.ToolUsageUncheckedCreateNestedManyWithoutUserInput
   credits?: Prisma.CreditUncheckedCreateNestedOneWithoutUserInput
   creditTransactions?: Prisma.CreditTransactionUncheckedCreateNestedManyWithoutUserInput
+  testAttempts?: Prisma.TestAttemptUncheckedCreateNestedManyWithoutUserInput
+  unlocks?: Prisma.UserUnlockUncheckedCreateNestedManyWithoutUserInput
+  testShareLinks?: Prisma.TestShareLinkUncheckedCreateNestedManyWithoutUserInput
+  referralRewardsGiven?: Prisma.ReferralRewardUncheckedCreateNestedManyWithoutReferrerInput
+  referralRewardsReceived?: Prisma.ReferralRewardUncheckedCreateNestedManyWithoutReferredInput
 }
 
 export type UserCreateOrConnectWithoutVerificationCodesInput = {
@@ -667,6 +802,11 @@ export type UserUpdateWithoutVerificationCodesInput = {
   toolUsages?: Prisma.ToolUsageUpdateManyWithoutUserNestedInput
   credits?: Prisma.CreditUpdateOneWithoutUserNestedInput
   creditTransactions?: Prisma.CreditTransactionUpdateManyWithoutUserNestedInput
+  testAttempts?: Prisma.TestAttemptUpdateManyWithoutUserNestedInput
+  unlocks?: Prisma.UserUnlockUpdateManyWithoutUserNestedInput
+  testShareLinks?: Prisma.TestShareLinkUpdateManyWithoutUserNestedInput
+  referralRewardsGiven?: Prisma.ReferralRewardUpdateManyWithoutReferrerNestedInput
+  referralRewardsReceived?: Prisma.ReferralRewardUpdateManyWithoutReferredNestedInput
 }
 
 export type UserUncheckedUpdateWithoutVerificationCodesInput = {
@@ -683,6 +823,11 @@ export type UserUncheckedUpdateWithoutVerificationCodesInput = {
   toolUsages?: Prisma.ToolUsageUncheckedUpdateManyWithoutUserNestedInput
   credits?: Prisma.CreditUncheckedUpdateOneWithoutUserNestedInput
   creditTransactions?: Prisma.CreditTransactionUncheckedUpdateManyWithoutUserNestedInput
+  testAttempts?: Prisma.TestAttemptUncheckedUpdateManyWithoutUserNestedInput
+  unlocks?: Prisma.UserUnlockUncheckedUpdateManyWithoutUserNestedInput
+  testShareLinks?: Prisma.TestShareLinkUncheckedUpdateManyWithoutUserNestedInput
+  referralRewardsGiven?: Prisma.ReferralRewardUncheckedUpdateManyWithoutReferrerNestedInput
+  referralRewardsReceived?: Prisma.ReferralRewardUncheckedUpdateManyWithoutReferredNestedInput
 }
 
 export type UserCreateWithoutFavoritesInput = {
@@ -698,6 +843,11 @@ export type UserCreateWithoutFavoritesInput = {
   toolUsages?: Prisma.ToolUsageCreateNestedManyWithoutUserInput
   credits?: Prisma.CreditCreateNestedOneWithoutUserInput
   creditTransactions?: Prisma.CreditTransactionCreateNestedManyWithoutUserInput
+  testAttempts?: Prisma.TestAttemptCreateNestedManyWithoutUserInput
+  unlocks?: Prisma.UserUnlockCreateNestedManyWithoutUserInput
+  testShareLinks?: Prisma.TestShareLinkCreateNestedManyWithoutUserInput
+  referralRewardsGiven?: Prisma.ReferralRewardCreateNestedManyWithoutReferrerInput
+  referralRewardsReceived?: Prisma.ReferralRewardCreateNestedManyWithoutReferredInput
   verificationCodes?: Prisma.EmailVerificationCodeCreateNestedManyWithoutUserInput
 }
 
@@ -714,6 +864,11 @@ export type UserUncheckedCreateWithoutFavoritesInput = {
   toolUsages?: Prisma.ToolUsageUncheckedCreateNestedManyWithoutUserInput
   credits?: Prisma.CreditUncheckedCreateNestedOneWithoutUserInput
   creditTransactions?: Prisma.CreditTransactionUncheckedCreateNestedManyWithoutUserInput
+  testAttempts?: Prisma.TestAttemptUncheckedCreateNestedManyWithoutUserInput
+  unlocks?: Prisma.UserUnlockUncheckedCreateNestedManyWithoutUserInput
+  testShareLinks?: Prisma.TestShareLinkUncheckedCreateNestedManyWithoutUserInput
+  referralRewardsGiven?: Prisma.ReferralRewardUncheckedCreateNestedManyWithoutReferrerInput
+  referralRewardsReceived?: Prisma.ReferralRewardUncheckedCreateNestedManyWithoutReferredInput
   verificationCodes?: Prisma.EmailVerificationCodeUncheckedCreateNestedManyWithoutUserInput
 }
 
@@ -746,6 +901,11 @@ export type UserUpdateWithoutFavoritesInput = {
   toolUsages?: Prisma.ToolUsageUpdateManyWithoutUserNestedInput
   credits?: Prisma.CreditUpdateOneWithoutUserNestedInput
   creditTransactions?: Prisma.CreditTransactionUpdateManyWithoutUserNestedInput
+  testAttempts?: Prisma.TestAttemptUpdateManyWithoutUserNestedInput
+  unlocks?: Prisma.UserUnlockUpdateManyWithoutUserNestedInput
+  testShareLinks?: Prisma.TestShareLinkUpdateManyWithoutUserNestedInput
+  referralRewardsGiven?: Prisma.ReferralRewardUpdateManyWithoutReferrerNestedInput
+  referralRewardsReceived?: Prisma.ReferralRewardUpdateManyWithoutReferredNestedInput
   verificationCodes?: Prisma.EmailVerificationCodeUpdateManyWithoutUserNestedInput
 }
 
@@ -762,6 +922,11 @@ export type UserUncheckedUpdateWithoutFavoritesInput = {
   toolUsages?: Prisma.ToolUsageUncheckedUpdateManyWithoutUserNestedInput
   credits?: Prisma.CreditUncheckedUpdateOneWithoutUserNestedInput
   creditTransactions?: Prisma.CreditTransactionUncheckedUpdateManyWithoutUserNestedInput
+  testAttempts?: Prisma.TestAttemptUncheckedUpdateManyWithoutUserNestedInput
+  unlocks?: Prisma.UserUnlockUncheckedUpdateManyWithoutUserNestedInput
+  testShareLinks?: Prisma.TestShareLinkUncheckedUpdateManyWithoutUserNestedInput
+  referralRewardsGiven?: Prisma.ReferralRewardUncheckedUpdateManyWithoutReferrerNestedInput
+  referralRewardsReceived?: Prisma.ReferralRewardUncheckedUpdateManyWithoutReferredNestedInput
   verificationCodes?: Prisma.EmailVerificationCodeUncheckedUpdateManyWithoutUserNestedInput
 }
 
@@ -778,6 +943,11 @@ export type UserCreateWithoutToolUsagesInput = {
   favorites?: Prisma.FavoriteCreateNestedManyWithoutUserInput
   credits?: Prisma.CreditCreateNestedOneWithoutUserInput
   creditTransactions?: Prisma.CreditTransactionCreateNestedManyWithoutUserInput
+  testAttempts?: Prisma.TestAttemptCreateNestedManyWithoutUserInput
+  unlocks?: Prisma.UserUnlockCreateNestedManyWithoutUserInput
+  testShareLinks?: Prisma.TestShareLinkCreateNestedManyWithoutUserInput
+  referralRewardsGiven?: Prisma.ReferralRewardCreateNestedManyWithoutReferrerInput
+  referralRewardsReceived?: Prisma.ReferralRewardCreateNestedManyWithoutReferredInput
   verificationCodes?: Prisma.EmailVerificationCodeCreateNestedManyWithoutUserInput
 }
 
@@ -794,6 +964,11 @@ export type UserUncheckedCreateWithoutToolUsagesInput = {
   favorites?: Prisma.FavoriteUncheckedCreateNestedManyWithoutUserInput
   credits?: Prisma.CreditUncheckedCreateNestedOneWithoutUserInput
   creditTransactions?: Prisma.CreditTransactionUncheckedCreateNestedManyWithoutUserInput
+  testAttempts?: Prisma.TestAttemptUncheckedCreateNestedManyWithoutUserInput
+  unlocks?: Prisma.UserUnlockUncheckedCreateNestedManyWithoutUserInput
+  testShareLinks?: Prisma.TestShareLinkUncheckedCreateNestedManyWithoutUserInput
+  referralRewardsGiven?: Prisma.ReferralRewardUncheckedCreateNestedManyWithoutReferrerInput
+  referralRewardsReceived?: Prisma.ReferralRewardUncheckedCreateNestedManyWithoutReferredInput
   verificationCodes?: Prisma.EmailVerificationCodeUncheckedCreateNestedManyWithoutUserInput
 }
 
@@ -826,6 +1001,11 @@ export type UserUpdateWithoutToolUsagesInput = {
   favorites?: Prisma.FavoriteUpdateManyWithoutUserNestedInput
   credits?: Prisma.CreditUpdateOneWithoutUserNestedInput
   creditTransactions?: Prisma.CreditTransactionUpdateManyWithoutUserNestedInput
+  testAttempts?: Prisma.TestAttemptUpdateManyWithoutUserNestedInput
+  unlocks?: Prisma.UserUnlockUpdateManyWithoutUserNestedInput
+  testShareLinks?: Prisma.TestShareLinkUpdateManyWithoutUserNestedInput
+  referralRewardsGiven?: Prisma.ReferralRewardUpdateManyWithoutReferrerNestedInput
+  referralRewardsReceived?: Prisma.ReferralRewardUpdateManyWithoutReferredNestedInput
   verificationCodes?: Prisma.EmailVerificationCodeUpdateManyWithoutUserNestedInput
 }
 
@@ -842,6 +1022,11 @@ export type UserUncheckedUpdateWithoutToolUsagesInput = {
   favorites?: Prisma.FavoriteUncheckedUpdateManyWithoutUserNestedInput
   credits?: Prisma.CreditUncheckedUpdateOneWithoutUserNestedInput
   creditTransactions?: Prisma.CreditTransactionUncheckedUpdateManyWithoutUserNestedInput
+  testAttempts?: Prisma.TestAttemptUncheckedUpdateManyWithoutUserNestedInput
+  unlocks?: Prisma.UserUnlockUncheckedUpdateManyWithoutUserNestedInput
+  testShareLinks?: Prisma.TestShareLinkUncheckedUpdateManyWithoutUserNestedInput
+  referralRewardsGiven?: Prisma.ReferralRewardUncheckedUpdateManyWithoutReferrerNestedInput
+  referralRewardsReceived?: Prisma.ReferralRewardUncheckedUpdateManyWithoutReferredNestedInput
   verificationCodes?: Prisma.EmailVerificationCodeUncheckedUpdateManyWithoutUserNestedInput
 }
 
@@ -858,6 +1043,11 @@ export type UserCreateWithoutCreditsInput = {
   favorites?: Prisma.FavoriteCreateNestedManyWithoutUserInput
   toolUsages?: Prisma.ToolUsageCreateNestedManyWithoutUserInput
   creditTransactions?: Prisma.CreditTransactionCreateNestedManyWithoutUserInput
+  testAttempts?: Prisma.TestAttemptCreateNestedManyWithoutUserInput
+  unlocks?: Prisma.UserUnlockCreateNestedManyWithoutUserInput
+  testShareLinks?: Prisma.TestShareLinkCreateNestedManyWithoutUserInput
+  referralRewardsGiven?: Prisma.ReferralRewardCreateNestedManyWithoutReferrerInput
+  referralRewardsReceived?: Prisma.ReferralRewardCreateNestedManyWithoutReferredInput
   verificationCodes?: Prisma.EmailVerificationCodeCreateNestedManyWithoutUserInput
 }
 
@@ -874,6 +1064,11 @@ export type UserUncheckedCreateWithoutCreditsInput = {
   favorites?: Prisma.FavoriteUncheckedCreateNestedManyWithoutUserInput
   toolUsages?: Prisma.ToolUsageUncheckedCreateNestedManyWithoutUserInput
   creditTransactions?: Prisma.CreditTransactionUncheckedCreateNestedManyWithoutUserInput
+  testAttempts?: Prisma.TestAttemptUncheckedCreateNestedManyWithoutUserInput
+  unlocks?: Prisma.UserUnlockUncheckedCreateNestedManyWithoutUserInput
+  testShareLinks?: Prisma.TestShareLinkUncheckedCreateNestedManyWithoutUserInput
+  referralRewardsGiven?: Prisma.ReferralRewardUncheckedCreateNestedManyWithoutReferrerInput
+  referralRewardsReceived?: Prisma.ReferralRewardUncheckedCreateNestedManyWithoutReferredInput
   verificationCodes?: Prisma.EmailVerificationCodeUncheckedCreateNestedManyWithoutUserInput
 }
 
@@ -906,6 +1101,11 @@ export type UserUpdateWithoutCreditsInput = {
   favorites?: Prisma.FavoriteUpdateManyWithoutUserNestedInput
   toolUsages?: Prisma.ToolUsageUpdateManyWithoutUserNestedInput
   creditTransactions?: Prisma.CreditTransactionUpdateManyWithoutUserNestedInput
+  testAttempts?: Prisma.TestAttemptUpdateManyWithoutUserNestedInput
+  unlocks?: Prisma.UserUnlockUpdateManyWithoutUserNestedInput
+  testShareLinks?: Prisma.TestShareLinkUpdateManyWithoutUserNestedInput
+  referralRewardsGiven?: Prisma.ReferralRewardUpdateManyWithoutReferrerNestedInput
+  referralRewardsReceived?: Prisma.ReferralRewardUpdateManyWithoutReferredNestedInput
   verificationCodes?: Prisma.EmailVerificationCodeUpdateManyWithoutUserNestedInput
 }
 
@@ -922,6 +1122,11 @@ export type UserUncheckedUpdateWithoutCreditsInput = {
   favorites?: Prisma.FavoriteUncheckedUpdateManyWithoutUserNestedInput
   toolUsages?: Prisma.ToolUsageUncheckedUpdateManyWithoutUserNestedInput
   creditTransactions?: Prisma.CreditTransactionUncheckedUpdateManyWithoutUserNestedInput
+  testAttempts?: Prisma.TestAttemptUncheckedUpdateManyWithoutUserNestedInput
+  unlocks?: Prisma.UserUnlockUncheckedUpdateManyWithoutUserNestedInput
+  testShareLinks?: Prisma.TestShareLinkUncheckedUpdateManyWithoutUserNestedInput
+  referralRewardsGiven?: Prisma.ReferralRewardUncheckedUpdateManyWithoutReferrerNestedInput
+  referralRewardsReceived?: Prisma.ReferralRewardUncheckedUpdateManyWithoutReferredNestedInput
   verificationCodes?: Prisma.EmailVerificationCodeUncheckedUpdateManyWithoutUserNestedInput
 }
 
@@ -938,6 +1143,11 @@ export type UserCreateWithoutCreditTransactionsInput = {
   favorites?: Prisma.FavoriteCreateNestedManyWithoutUserInput
   toolUsages?: Prisma.ToolUsageCreateNestedManyWithoutUserInput
   credits?: Prisma.CreditCreateNestedOneWithoutUserInput
+  testAttempts?: Prisma.TestAttemptCreateNestedManyWithoutUserInput
+  unlocks?: Prisma.UserUnlockCreateNestedManyWithoutUserInput
+  testShareLinks?: Prisma.TestShareLinkCreateNestedManyWithoutUserInput
+  referralRewardsGiven?: Prisma.ReferralRewardCreateNestedManyWithoutReferrerInput
+  referralRewardsReceived?: Prisma.ReferralRewardCreateNestedManyWithoutReferredInput
   verificationCodes?: Prisma.EmailVerificationCodeCreateNestedManyWithoutUserInput
 }
 
@@ -954,6 +1164,11 @@ export type UserUncheckedCreateWithoutCreditTransactionsInput = {
   favorites?: Prisma.FavoriteUncheckedCreateNestedManyWithoutUserInput
   toolUsages?: Prisma.ToolUsageUncheckedCreateNestedManyWithoutUserInput
   credits?: Prisma.CreditUncheckedCreateNestedOneWithoutUserInput
+  testAttempts?: Prisma.TestAttemptUncheckedCreateNestedManyWithoutUserInput
+  unlocks?: Prisma.UserUnlockUncheckedCreateNestedManyWithoutUserInput
+  testShareLinks?: Prisma.TestShareLinkUncheckedCreateNestedManyWithoutUserInput
+  referralRewardsGiven?: Prisma.ReferralRewardUncheckedCreateNestedManyWithoutReferrerInput
+  referralRewardsReceived?: Prisma.ReferralRewardUncheckedCreateNestedManyWithoutReferredInput
   verificationCodes?: Prisma.EmailVerificationCodeUncheckedCreateNestedManyWithoutUserInput
 }
 
@@ -986,6 +1201,11 @@ export type UserUpdateWithoutCreditTransactionsInput = {
   favorites?: Prisma.FavoriteUpdateManyWithoutUserNestedInput
   toolUsages?: Prisma.ToolUsageUpdateManyWithoutUserNestedInput
   credits?: Prisma.CreditUpdateOneWithoutUserNestedInput
+  testAttempts?: Prisma.TestAttemptUpdateManyWithoutUserNestedInput
+  unlocks?: Prisma.UserUnlockUpdateManyWithoutUserNestedInput
+  testShareLinks?: Prisma.TestShareLinkUpdateManyWithoutUserNestedInput
+  referralRewardsGiven?: Prisma.ReferralRewardUpdateManyWithoutReferrerNestedInput
+  referralRewardsReceived?: Prisma.ReferralRewardUpdateManyWithoutReferredNestedInput
   verificationCodes?: Prisma.EmailVerificationCodeUpdateManyWithoutUserNestedInput
 }
 
@@ -1002,6 +1222,511 @@ export type UserUncheckedUpdateWithoutCreditTransactionsInput = {
   favorites?: Prisma.FavoriteUncheckedUpdateManyWithoutUserNestedInput
   toolUsages?: Prisma.ToolUsageUncheckedUpdateManyWithoutUserNestedInput
   credits?: Prisma.CreditUncheckedUpdateOneWithoutUserNestedInput
+  testAttempts?: Prisma.TestAttemptUncheckedUpdateManyWithoutUserNestedInput
+  unlocks?: Prisma.UserUnlockUncheckedUpdateManyWithoutUserNestedInput
+  testShareLinks?: Prisma.TestShareLinkUncheckedUpdateManyWithoutUserNestedInput
+  referralRewardsGiven?: Prisma.ReferralRewardUncheckedUpdateManyWithoutReferrerNestedInput
+  referralRewardsReceived?: Prisma.ReferralRewardUncheckedUpdateManyWithoutReferredNestedInput
+  verificationCodes?: Prisma.EmailVerificationCodeUncheckedUpdateManyWithoutUserNestedInput
+}
+
+export type UserCreateWithoutUnlocksInput = {
+  id?: string
+  email: string
+  emailVerified?: boolean
+  avatar?: string | null
+  nickname?: string | null
+  locale?: string
+  createdAt?: Date | string
+  updatedAt?: Date | string
+  sessions?: Prisma.SessionCreateNestedManyWithoutUserInput
+  favorites?: Prisma.FavoriteCreateNestedManyWithoutUserInput
+  toolUsages?: Prisma.ToolUsageCreateNestedManyWithoutUserInput
+  credits?: Prisma.CreditCreateNestedOneWithoutUserInput
+  creditTransactions?: Prisma.CreditTransactionCreateNestedManyWithoutUserInput
+  testAttempts?: Prisma.TestAttemptCreateNestedManyWithoutUserInput
+  testShareLinks?: Prisma.TestShareLinkCreateNestedManyWithoutUserInput
+  referralRewardsGiven?: Prisma.ReferralRewardCreateNestedManyWithoutReferrerInput
+  referralRewardsReceived?: Prisma.ReferralRewardCreateNestedManyWithoutReferredInput
+  verificationCodes?: Prisma.EmailVerificationCodeCreateNestedManyWithoutUserInput
+}
+
+export type UserUncheckedCreateWithoutUnlocksInput = {
+  id?: string
+  email: string
+  emailVerified?: boolean
+  avatar?: string | null
+  nickname?: string | null
+  locale?: string
+  createdAt?: Date | string
+  updatedAt?: Date | string
+  sessions?: Prisma.SessionUncheckedCreateNestedManyWithoutUserInput
+  favorites?: Prisma.FavoriteUncheckedCreateNestedManyWithoutUserInput
+  toolUsages?: Prisma.ToolUsageUncheckedCreateNestedManyWithoutUserInput
+  credits?: Prisma.CreditUncheckedCreateNestedOneWithoutUserInput
+  creditTransactions?: Prisma.CreditTransactionUncheckedCreateNestedManyWithoutUserInput
+  testAttempts?: Prisma.TestAttemptUncheckedCreateNestedManyWithoutUserInput
+  testShareLinks?: Prisma.TestShareLinkUncheckedCreateNestedManyWithoutUserInput
+  referralRewardsGiven?: Prisma.ReferralRewardUncheckedCreateNestedManyWithoutReferrerInput
+  referralRewardsReceived?: Prisma.ReferralRewardUncheckedCreateNestedManyWithoutReferredInput
+  verificationCodes?: Prisma.EmailVerificationCodeUncheckedCreateNestedManyWithoutUserInput
+}
+
+export type UserCreateOrConnectWithoutUnlocksInput = {
+  where: Prisma.UserWhereUniqueInput
+  create: Prisma.XOR<Prisma.UserCreateWithoutUnlocksInput, Prisma.UserUncheckedCreateWithoutUnlocksInput>
+}
+
+export type UserUpsertWithoutUnlocksInput = {
+  update: Prisma.XOR<Prisma.UserUpdateWithoutUnlocksInput, Prisma.UserUncheckedUpdateWithoutUnlocksInput>
+  create: Prisma.XOR<Prisma.UserCreateWithoutUnlocksInput, Prisma.UserUncheckedCreateWithoutUnlocksInput>
+  where?: Prisma.UserWhereInput
+}
+
+export type UserUpdateToOneWithWhereWithoutUnlocksInput = {
+  where?: Prisma.UserWhereInput
+  data: Prisma.XOR<Prisma.UserUpdateWithoutUnlocksInput, Prisma.UserUncheckedUpdateWithoutUnlocksInput>
+}
+
+export type UserUpdateWithoutUnlocksInput = {
+  id?: Prisma.StringFieldUpdateOperationsInput | string
+  email?: Prisma.StringFieldUpdateOperationsInput | string
+  emailVerified?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  avatar?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  nickname?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  locale?: Prisma.StringFieldUpdateOperationsInput | string
+  createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
+  updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
+  sessions?: Prisma.SessionUpdateManyWithoutUserNestedInput
+  favorites?: Prisma.FavoriteUpdateManyWithoutUserNestedInput
+  toolUsages?: Prisma.ToolUsageUpdateManyWithoutUserNestedInput
+  credits?: Prisma.CreditUpdateOneWithoutUserNestedInput
+  creditTransactions?: Prisma.CreditTransactionUpdateManyWithoutUserNestedInput
+  testAttempts?: Prisma.TestAttemptUpdateManyWithoutUserNestedInput
+  testShareLinks?: Prisma.TestShareLinkUpdateManyWithoutUserNestedInput
+  referralRewardsGiven?: Prisma.ReferralRewardUpdateManyWithoutReferrerNestedInput
+  referralRewardsReceived?: Prisma.ReferralRewardUpdateManyWithoutReferredNestedInput
+  verificationCodes?: Prisma.EmailVerificationCodeUpdateManyWithoutUserNestedInput
+}
+
+export type UserUncheckedUpdateWithoutUnlocksInput = {
+  id?: Prisma.StringFieldUpdateOperationsInput | string
+  email?: Prisma.StringFieldUpdateOperationsInput | string
+  emailVerified?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  avatar?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  nickname?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  locale?: Prisma.StringFieldUpdateOperationsInput | string
+  createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
+  updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
+  sessions?: Prisma.SessionUncheckedUpdateManyWithoutUserNestedInput
+  favorites?: Prisma.FavoriteUncheckedUpdateManyWithoutUserNestedInput
+  toolUsages?: Prisma.ToolUsageUncheckedUpdateManyWithoutUserNestedInput
+  credits?: Prisma.CreditUncheckedUpdateOneWithoutUserNestedInput
+  creditTransactions?: Prisma.CreditTransactionUncheckedUpdateManyWithoutUserNestedInput
+  testAttempts?: Prisma.TestAttemptUncheckedUpdateManyWithoutUserNestedInput
+  testShareLinks?: Prisma.TestShareLinkUncheckedUpdateManyWithoutUserNestedInput
+  referralRewardsGiven?: Prisma.ReferralRewardUncheckedUpdateManyWithoutReferrerNestedInput
+  referralRewardsReceived?: Prisma.ReferralRewardUncheckedUpdateManyWithoutReferredNestedInput
+  verificationCodes?: Prisma.EmailVerificationCodeUncheckedUpdateManyWithoutUserNestedInput
+}
+
+export type UserCreateWithoutTestAttemptsInput = {
+  id?: string
+  email: string
+  emailVerified?: boolean
+  avatar?: string | null
+  nickname?: string | null
+  locale?: string
+  createdAt?: Date | string
+  updatedAt?: Date | string
+  sessions?: Prisma.SessionCreateNestedManyWithoutUserInput
+  favorites?: Prisma.FavoriteCreateNestedManyWithoutUserInput
+  toolUsages?: Prisma.ToolUsageCreateNestedManyWithoutUserInput
+  credits?: Prisma.CreditCreateNestedOneWithoutUserInput
+  creditTransactions?: Prisma.CreditTransactionCreateNestedManyWithoutUserInput
+  unlocks?: Prisma.UserUnlockCreateNestedManyWithoutUserInput
+  testShareLinks?: Prisma.TestShareLinkCreateNestedManyWithoutUserInput
+  referralRewardsGiven?: Prisma.ReferralRewardCreateNestedManyWithoutReferrerInput
+  referralRewardsReceived?: Prisma.ReferralRewardCreateNestedManyWithoutReferredInput
+  verificationCodes?: Prisma.EmailVerificationCodeCreateNestedManyWithoutUserInput
+}
+
+export type UserUncheckedCreateWithoutTestAttemptsInput = {
+  id?: string
+  email: string
+  emailVerified?: boolean
+  avatar?: string | null
+  nickname?: string | null
+  locale?: string
+  createdAt?: Date | string
+  updatedAt?: Date | string
+  sessions?: Prisma.SessionUncheckedCreateNestedManyWithoutUserInput
+  favorites?: Prisma.FavoriteUncheckedCreateNestedManyWithoutUserInput
+  toolUsages?: Prisma.ToolUsageUncheckedCreateNestedManyWithoutUserInput
+  credits?: Prisma.CreditUncheckedCreateNestedOneWithoutUserInput
+  creditTransactions?: Prisma.CreditTransactionUncheckedCreateNestedManyWithoutUserInput
+  unlocks?: Prisma.UserUnlockUncheckedCreateNestedManyWithoutUserInput
+  testShareLinks?: Prisma.TestShareLinkUncheckedCreateNestedManyWithoutUserInput
+  referralRewardsGiven?: Prisma.ReferralRewardUncheckedCreateNestedManyWithoutReferrerInput
+  referralRewardsReceived?: Prisma.ReferralRewardUncheckedCreateNestedManyWithoutReferredInput
+  verificationCodes?: Prisma.EmailVerificationCodeUncheckedCreateNestedManyWithoutUserInput
+}
+
+export type UserCreateOrConnectWithoutTestAttemptsInput = {
+  where: Prisma.UserWhereUniqueInput
+  create: Prisma.XOR<Prisma.UserCreateWithoutTestAttemptsInput, Prisma.UserUncheckedCreateWithoutTestAttemptsInput>
+}
+
+export type UserUpsertWithoutTestAttemptsInput = {
+  update: Prisma.XOR<Prisma.UserUpdateWithoutTestAttemptsInput, Prisma.UserUncheckedUpdateWithoutTestAttemptsInput>
+  create: Prisma.XOR<Prisma.UserCreateWithoutTestAttemptsInput, Prisma.UserUncheckedCreateWithoutTestAttemptsInput>
+  where?: Prisma.UserWhereInput
+}
+
+export type UserUpdateToOneWithWhereWithoutTestAttemptsInput = {
+  where?: Prisma.UserWhereInput
+  data: Prisma.XOR<Prisma.UserUpdateWithoutTestAttemptsInput, Prisma.UserUncheckedUpdateWithoutTestAttemptsInput>
+}
+
+export type UserUpdateWithoutTestAttemptsInput = {
+  id?: Prisma.StringFieldUpdateOperationsInput | string
+  email?: Prisma.StringFieldUpdateOperationsInput | string
+  emailVerified?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  avatar?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  nickname?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  locale?: Prisma.StringFieldUpdateOperationsInput | string
+  createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
+  updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
+  sessions?: Prisma.SessionUpdateManyWithoutUserNestedInput
+  favorites?: Prisma.FavoriteUpdateManyWithoutUserNestedInput
+  toolUsages?: Prisma.ToolUsageUpdateManyWithoutUserNestedInput
+  credits?: Prisma.CreditUpdateOneWithoutUserNestedInput
+  creditTransactions?: Prisma.CreditTransactionUpdateManyWithoutUserNestedInput
+  unlocks?: Prisma.UserUnlockUpdateManyWithoutUserNestedInput
+  testShareLinks?: Prisma.TestShareLinkUpdateManyWithoutUserNestedInput
+  referralRewardsGiven?: Prisma.ReferralRewardUpdateManyWithoutReferrerNestedInput
+  referralRewardsReceived?: Prisma.ReferralRewardUpdateManyWithoutReferredNestedInput
+  verificationCodes?: Prisma.EmailVerificationCodeUpdateManyWithoutUserNestedInput
+}
+
+export type UserUncheckedUpdateWithoutTestAttemptsInput = {
+  id?: Prisma.StringFieldUpdateOperationsInput | string
+  email?: Prisma.StringFieldUpdateOperationsInput | string
+  emailVerified?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  avatar?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  nickname?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  locale?: Prisma.StringFieldUpdateOperationsInput | string
+  createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
+  updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
+  sessions?: Prisma.SessionUncheckedUpdateManyWithoutUserNestedInput
+  favorites?: Prisma.FavoriteUncheckedUpdateManyWithoutUserNestedInput
+  toolUsages?: Prisma.ToolUsageUncheckedUpdateManyWithoutUserNestedInput
+  credits?: Prisma.CreditUncheckedUpdateOneWithoutUserNestedInput
+  creditTransactions?: Prisma.CreditTransactionUncheckedUpdateManyWithoutUserNestedInput
+  unlocks?: Prisma.UserUnlockUncheckedUpdateManyWithoutUserNestedInput
+  testShareLinks?: Prisma.TestShareLinkUncheckedUpdateManyWithoutUserNestedInput
+  referralRewardsGiven?: Prisma.ReferralRewardUncheckedUpdateManyWithoutReferrerNestedInput
+  referralRewardsReceived?: Prisma.ReferralRewardUncheckedUpdateManyWithoutReferredNestedInput
+  verificationCodes?: Prisma.EmailVerificationCodeUncheckedUpdateManyWithoutUserNestedInput
+}
+
+export type UserCreateWithoutTestShareLinksInput = {
+  id?: string
+  email: string
+  emailVerified?: boolean
+  avatar?: string | null
+  nickname?: string | null
+  locale?: string
+  createdAt?: Date | string
+  updatedAt?: Date | string
+  sessions?: Prisma.SessionCreateNestedManyWithoutUserInput
+  favorites?: Prisma.FavoriteCreateNestedManyWithoutUserInput
+  toolUsages?: Prisma.ToolUsageCreateNestedManyWithoutUserInput
+  credits?: Prisma.CreditCreateNestedOneWithoutUserInput
+  creditTransactions?: Prisma.CreditTransactionCreateNestedManyWithoutUserInput
+  testAttempts?: Prisma.TestAttemptCreateNestedManyWithoutUserInput
+  unlocks?: Prisma.UserUnlockCreateNestedManyWithoutUserInput
+  referralRewardsGiven?: Prisma.ReferralRewardCreateNestedManyWithoutReferrerInput
+  referralRewardsReceived?: Prisma.ReferralRewardCreateNestedManyWithoutReferredInput
+  verificationCodes?: Prisma.EmailVerificationCodeCreateNestedManyWithoutUserInput
+}
+
+export type UserUncheckedCreateWithoutTestShareLinksInput = {
+  id?: string
+  email: string
+  emailVerified?: boolean
+  avatar?: string | null
+  nickname?: string | null
+  locale?: string
+  createdAt?: Date | string
+  updatedAt?: Date | string
+  sessions?: Prisma.SessionUncheckedCreateNestedManyWithoutUserInput
+  favorites?: Prisma.FavoriteUncheckedCreateNestedManyWithoutUserInput
+  toolUsages?: Prisma.ToolUsageUncheckedCreateNestedManyWithoutUserInput
+  credits?: Prisma.CreditUncheckedCreateNestedOneWithoutUserInput
+  creditTransactions?: Prisma.CreditTransactionUncheckedCreateNestedManyWithoutUserInput
+  testAttempts?: Prisma.TestAttemptUncheckedCreateNestedManyWithoutUserInput
+  unlocks?: Prisma.UserUnlockUncheckedCreateNestedManyWithoutUserInput
+  referralRewardsGiven?: Prisma.ReferralRewardUncheckedCreateNestedManyWithoutReferrerInput
+  referralRewardsReceived?: Prisma.ReferralRewardUncheckedCreateNestedManyWithoutReferredInput
+  verificationCodes?: Prisma.EmailVerificationCodeUncheckedCreateNestedManyWithoutUserInput
+}
+
+export type UserCreateOrConnectWithoutTestShareLinksInput = {
+  where: Prisma.UserWhereUniqueInput
+  create: Prisma.XOR<Prisma.UserCreateWithoutTestShareLinksInput, Prisma.UserUncheckedCreateWithoutTestShareLinksInput>
+}
+
+export type UserUpsertWithoutTestShareLinksInput = {
+  update: Prisma.XOR<Prisma.UserUpdateWithoutTestShareLinksInput, Prisma.UserUncheckedUpdateWithoutTestShareLinksInput>
+  create: Prisma.XOR<Prisma.UserCreateWithoutTestShareLinksInput, Prisma.UserUncheckedCreateWithoutTestShareLinksInput>
+  where?: Prisma.UserWhereInput
+}
+
+export type UserUpdateToOneWithWhereWithoutTestShareLinksInput = {
+  where?: Prisma.UserWhereInput
+  data: Prisma.XOR<Prisma.UserUpdateWithoutTestShareLinksInput, Prisma.UserUncheckedUpdateWithoutTestShareLinksInput>
+}
+
+export type UserUpdateWithoutTestShareLinksInput = {
+  id?: Prisma.StringFieldUpdateOperationsInput | string
+  email?: Prisma.StringFieldUpdateOperationsInput | string
+  emailVerified?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  avatar?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  nickname?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  locale?: Prisma.StringFieldUpdateOperationsInput | string
+  createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
+  updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
+  sessions?: Prisma.SessionUpdateManyWithoutUserNestedInput
+  favorites?: Prisma.FavoriteUpdateManyWithoutUserNestedInput
+  toolUsages?: Prisma.ToolUsageUpdateManyWithoutUserNestedInput
+  credits?: Prisma.CreditUpdateOneWithoutUserNestedInput
+  creditTransactions?: Prisma.CreditTransactionUpdateManyWithoutUserNestedInput
+  testAttempts?: Prisma.TestAttemptUpdateManyWithoutUserNestedInput
+  unlocks?: Prisma.UserUnlockUpdateManyWithoutUserNestedInput
+  referralRewardsGiven?: Prisma.ReferralRewardUpdateManyWithoutReferrerNestedInput
+  referralRewardsReceived?: Prisma.ReferralRewardUpdateManyWithoutReferredNestedInput
+  verificationCodes?: Prisma.EmailVerificationCodeUpdateManyWithoutUserNestedInput
+}
+
+export type UserUncheckedUpdateWithoutTestShareLinksInput = {
+  id?: Prisma.StringFieldUpdateOperationsInput | string
+  email?: Prisma.StringFieldUpdateOperationsInput | string
+  emailVerified?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  avatar?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  nickname?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  locale?: Prisma.StringFieldUpdateOperationsInput | string
+  createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
+  updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
+  sessions?: Prisma.SessionUncheckedUpdateManyWithoutUserNestedInput
+  favorites?: Prisma.FavoriteUncheckedUpdateManyWithoutUserNestedInput
+  toolUsages?: Prisma.ToolUsageUncheckedUpdateManyWithoutUserNestedInput
+  credits?: Prisma.CreditUncheckedUpdateOneWithoutUserNestedInput
+  creditTransactions?: Prisma.CreditTransactionUncheckedUpdateManyWithoutUserNestedInput
+  testAttempts?: Prisma.TestAttemptUncheckedUpdateManyWithoutUserNestedInput
+  unlocks?: Prisma.UserUnlockUncheckedUpdateManyWithoutUserNestedInput
+  referralRewardsGiven?: Prisma.ReferralRewardUncheckedUpdateManyWithoutReferrerNestedInput
+  referralRewardsReceived?: Prisma.ReferralRewardUncheckedUpdateManyWithoutReferredNestedInput
+  verificationCodes?: Prisma.EmailVerificationCodeUncheckedUpdateManyWithoutUserNestedInput
+}
+
+export type UserCreateWithoutReferralRewardsGivenInput = {
+  id?: string
+  email: string
+  emailVerified?: boolean
+  avatar?: string | null
+  nickname?: string | null
+  locale?: string
+  createdAt?: Date | string
+  updatedAt?: Date | string
+  sessions?: Prisma.SessionCreateNestedManyWithoutUserInput
+  favorites?: Prisma.FavoriteCreateNestedManyWithoutUserInput
+  toolUsages?: Prisma.ToolUsageCreateNestedManyWithoutUserInput
+  credits?: Prisma.CreditCreateNestedOneWithoutUserInput
+  creditTransactions?: Prisma.CreditTransactionCreateNestedManyWithoutUserInput
+  testAttempts?: Prisma.TestAttemptCreateNestedManyWithoutUserInput
+  unlocks?: Prisma.UserUnlockCreateNestedManyWithoutUserInput
+  testShareLinks?: Prisma.TestShareLinkCreateNestedManyWithoutUserInput
+  referralRewardsReceived?: Prisma.ReferralRewardCreateNestedManyWithoutReferredInput
+  verificationCodes?: Prisma.EmailVerificationCodeCreateNestedManyWithoutUserInput
+}
+
+export type UserUncheckedCreateWithoutReferralRewardsGivenInput = {
+  id?: string
+  email: string
+  emailVerified?: boolean
+  avatar?: string | null
+  nickname?: string | null
+  locale?: string
+  createdAt?: Date | string
+  updatedAt?: Date | string
+  sessions?: Prisma.SessionUncheckedCreateNestedManyWithoutUserInput
+  favorites?: Prisma.FavoriteUncheckedCreateNestedManyWithoutUserInput
+  toolUsages?: Prisma.ToolUsageUncheckedCreateNestedManyWithoutUserInput
+  credits?: Prisma.CreditUncheckedCreateNestedOneWithoutUserInput
+  creditTransactions?: Prisma.CreditTransactionUncheckedCreateNestedManyWithoutUserInput
+  testAttempts?: Prisma.TestAttemptUncheckedCreateNestedManyWithoutUserInput
+  unlocks?: Prisma.UserUnlockUncheckedCreateNestedManyWithoutUserInput
+  testShareLinks?: Prisma.TestShareLinkUncheckedCreateNestedManyWithoutUserInput
+  referralRewardsReceived?: Prisma.ReferralRewardUncheckedCreateNestedManyWithoutReferredInput
+  verificationCodes?: Prisma.EmailVerificationCodeUncheckedCreateNestedManyWithoutUserInput
+}
+
+export type UserCreateOrConnectWithoutReferralRewardsGivenInput = {
+  where: Prisma.UserWhereUniqueInput
+  create: Prisma.XOR<Prisma.UserCreateWithoutReferralRewardsGivenInput, Prisma.UserUncheckedCreateWithoutReferralRewardsGivenInput>
+}
+
+export type UserCreateWithoutReferralRewardsReceivedInput = {
+  id?: string
+  email: string
+  emailVerified?: boolean
+  avatar?: string | null
+  nickname?: string | null
+  locale?: string
+  createdAt?: Date | string
+  updatedAt?: Date | string
+  sessions?: Prisma.SessionCreateNestedManyWithoutUserInput
+  favorites?: Prisma.FavoriteCreateNestedManyWithoutUserInput
+  toolUsages?: Prisma.ToolUsageCreateNestedManyWithoutUserInput
+  credits?: Prisma.CreditCreateNestedOneWithoutUserInput
+  creditTransactions?: Prisma.CreditTransactionCreateNestedManyWithoutUserInput
+  testAttempts?: Prisma.TestAttemptCreateNestedManyWithoutUserInput
+  unlocks?: Prisma.UserUnlockCreateNestedManyWithoutUserInput
+  testShareLinks?: Prisma.TestShareLinkCreateNestedManyWithoutUserInput
+  referralRewardsGiven?: Prisma.ReferralRewardCreateNestedManyWithoutReferrerInput
+  verificationCodes?: Prisma.EmailVerificationCodeCreateNestedManyWithoutUserInput
+}
+
+export type UserUncheckedCreateWithoutReferralRewardsReceivedInput = {
+  id?: string
+  email: string
+  emailVerified?: boolean
+  avatar?: string | null
+  nickname?: string | null
+  locale?: string
+  createdAt?: Date | string
+  updatedAt?: Date | string
+  sessions?: Prisma.SessionUncheckedCreateNestedManyWithoutUserInput
+  favorites?: Prisma.FavoriteUncheckedCreateNestedManyWithoutUserInput
+  toolUsages?: Prisma.ToolUsageUncheckedCreateNestedManyWithoutUserInput
+  credits?: Prisma.CreditUncheckedCreateNestedOneWithoutUserInput
+  creditTransactions?: Prisma.CreditTransactionUncheckedCreateNestedManyWithoutUserInput
+  testAttempts?: Prisma.TestAttemptUncheckedCreateNestedManyWithoutUserInput
+  unlocks?: Prisma.UserUnlockUncheckedCreateNestedManyWithoutUserInput
+  testShareLinks?: Prisma.TestShareLinkUncheckedCreateNestedManyWithoutUserInput
+  referralRewardsGiven?: Prisma.ReferralRewardUncheckedCreateNestedManyWithoutReferrerInput
+  verificationCodes?: Prisma.EmailVerificationCodeUncheckedCreateNestedManyWithoutUserInput
+}
+
+export type UserCreateOrConnectWithoutReferralRewardsReceivedInput = {
+  where: Prisma.UserWhereUniqueInput
+  create: Prisma.XOR<Prisma.UserCreateWithoutReferralRewardsReceivedInput, Prisma.UserUncheckedCreateWithoutReferralRewardsReceivedInput>
+}
+
+export type UserUpsertWithoutReferralRewardsGivenInput = {
+  update: Prisma.XOR<Prisma.UserUpdateWithoutReferralRewardsGivenInput, Prisma.UserUncheckedUpdateWithoutReferralRewardsGivenInput>
+  create: Prisma.XOR<Prisma.UserCreateWithoutReferralRewardsGivenInput, Prisma.UserUncheckedCreateWithoutReferralRewardsGivenInput>
+  where?: Prisma.UserWhereInput
+}
+
+export type UserUpdateToOneWithWhereWithoutReferralRewardsGivenInput = {
+  where?: Prisma.UserWhereInput
+  data: Prisma.XOR<Prisma.UserUpdateWithoutReferralRewardsGivenInput, Prisma.UserUncheckedUpdateWithoutReferralRewardsGivenInput>
+}
+
+export type UserUpdateWithoutReferralRewardsGivenInput = {
+  id?: Prisma.StringFieldUpdateOperationsInput | string
+  email?: Prisma.StringFieldUpdateOperationsInput | string
+  emailVerified?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  avatar?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  nickname?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  locale?: Prisma.StringFieldUpdateOperationsInput | string
+  createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
+  updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
+  sessions?: Prisma.SessionUpdateManyWithoutUserNestedInput
+  favorites?: Prisma.FavoriteUpdateManyWithoutUserNestedInput
+  toolUsages?: Prisma.ToolUsageUpdateManyWithoutUserNestedInput
+  credits?: Prisma.CreditUpdateOneWithoutUserNestedInput
+  creditTransactions?: Prisma.CreditTransactionUpdateManyWithoutUserNestedInput
+  testAttempts?: Prisma.TestAttemptUpdateManyWithoutUserNestedInput
+  unlocks?: Prisma.UserUnlockUpdateManyWithoutUserNestedInput
+  testShareLinks?: Prisma.TestShareLinkUpdateManyWithoutUserNestedInput
+  referralRewardsReceived?: Prisma.ReferralRewardUpdateManyWithoutReferredNestedInput
+  verificationCodes?: Prisma.EmailVerificationCodeUpdateManyWithoutUserNestedInput
+}
+
+export type UserUncheckedUpdateWithoutReferralRewardsGivenInput = {
+  id?: Prisma.StringFieldUpdateOperationsInput | string
+  email?: Prisma.StringFieldUpdateOperationsInput | string
+  emailVerified?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  avatar?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  nickname?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  locale?: Prisma.StringFieldUpdateOperationsInput | string
+  createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
+  updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
+  sessions?: Prisma.SessionUncheckedUpdateManyWithoutUserNestedInput
+  favorites?: Prisma.FavoriteUncheckedUpdateManyWithoutUserNestedInput
+  toolUsages?: Prisma.ToolUsageUncheckedUpdateManyWithoutUserNestedInput
+  credits?: Prisma.CreditUncheckedUpdateOneWithoutUserNestedInput
+  creditTransactions?: Prisma.CreditTransactionUncheckedUpdateManyWithoutUserNestedInput
+  testAttempts?: Prisma.TestAttemptUncheckedUpdateManyWithoutUserNestedInput
+  unlocks?: Prisma.UserUnlockUncheckedUpdateManyWithoutUserNestedInput
+  testShareLinks?: Prisma.TestShareLinkUncheckedUpdateManyWithoutUserNestedInput
+  referralRewardsReceived?: Prisma.ReferralRewardUncheckedUpdateManyWithoutReferredNestedInput
+  verificationCodes?: Prisma.EmailVerificationCodeUncheckedUpdateManyWithoutUserNestedInput
+}
+
+export type UserUpsertWithoutReferralRewardsReceivedInput = {
+  update: Prisma.XOR<Prisma.UserUpdateWithoutReferralRewardsReceivedInput, Prisma.UserUncheckedUpdateWithoutReferralRewardsReceivedInput>
+  create: Prisma.XOR<Prisma.UserCreateWithoutReferralRewardsReceivedInput, Prisma.UserUncheckedCreateWithoutReferralRewardsReceivedInput>
+  where?: Prisma.UserWhereInput
+}
+
+export type UserUpdateToOneWithWhereWithoutReferralRewardsReceivedInput = {
+  where?: Prisma.UserWhereInput
+  data: Prisma.XOR<Prisma.UserUpdateWithoutReferralRewardsReceivedInput, Prisma.UserUncheckedUpdateWithoutReferralRewardsReceivedInput>
+}
+
+export type UserUpdateWithoutReferralRewardsReceivedInput = {
+  id?: Prisma.StringFieldUpdateOperationsInput | string
+  email?: Prisma.StringFieldUpdateOperationsInput | string
+  emailVerified?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  avatar?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  nickname?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  locale?: Prisma.StringFieldUpdateOperationsInput | string
+  createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
+  updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
+  sessions?: Prisma.SessionUpdateManyWithoutUserNestedInput
+  favorites?: Prisma.FavoriteUpdateManyWithoutUserNestedInput
+  toolUsages?: Prisma.ToolUsageUpdateManyWithoutUserNestedInput
+  credits?: Prisma.CreditUpdateOneWithoutUserNestedInput
+  creditTransactions?: Prisma.CreditTransactionUpdateManyWithoutUserNestedInput
+  testAttempts?: Prisma.TestAttemptUpdateManyWithoutUserNestedInput
+  unlocks?: Prisma.UserUnlockUpdateManyWithoutUserNestedInput
+  testShareLinks?: Prisma.TestShareLinkUpdateManyWithoutUserNestedInput
+  referralRewardsGiven?: Prisma.ReferralRewardUpdateManyWithoutReferrerNestedInput
+  verificationCodes?: Prisma.EmailVerificationCodeUpdateManyWithoutUserNestedInput
+}
+
+export type UserUncheckedUpdateWithoutReferralRewardsReceivedInput = {
+  id?: Prisma.StringFieldUpdateOperationsInput | string
+  email?: Prisma.StringFieldUpdateOperationsInput | string
+  emailVerified?: Prisma.BoolFieldUpdateOperationsInput | boolean
+  avatar?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  nickname?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  locale?: Prisma.StringFieldUpdateOperationsInput | string
+  createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
+  updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
+  sessions?: Prisma.SessionUncheckedUpdateManyWithoutUserNestedInput
+  favorites?: Prisma.FavoriteUncheckedUpdateManyWithoutUserNestedInput
+  toolUsages?: Prisma.ToolUsageUncheckedUpdateManyWithoutUserNestedInput
+  credits?: Prisma.CreditUncheckedUpdateOneWithoutUserNestedInput
+  creditTransactions?: Prisma.CreditTransactionUncheckedUpdateManyWithoutUserNestedInput
+  testAttempts?: Prisma.TestAttemptUncheckedUpdateManyWithoutUserNestedInput
+  unlocks?: Prisma.UserUnlockUncheckedUpdateManyWithoutUserNestedInput
+  testShareLinks?: Prisma.TestShareLinkUncheckedUpdateManyWithoutUserNestedInput
+  referralRewardsGiven?: Prisma.ReferralRewardUncheckedUpdateManyWithoutReferrerNestedInput
   verificationCodes?: Prisma.EmailVerificationCodeUncheckedUpdateManyWithoutUserNestedInput
 }
 
@@ -1015,6 +1740,11 @@ export type UserCountOutputType = {
   favorites: number
   toolUsages: number
   creditTransactions: number
+  testAttempts: number
+  unlocks: number
+  testShareLinks: number
+  referralRewardsGiven: number
+  referralRewardsReceived: number
   verificationCodes: number
 }
 
@@ -1023,6 +1753,11 @@ export type UserCountOutputTypeSelect<ExtArgs extends runtime.Types.Extensions.I
   favorites?: boolean | UserCountOutputTypeCountFavoritesArgs
   toolUsages?: boolean | UserCountOutputTypeCountToolUsagesArgs
   creditTransactions?: boolean | UserCountOutputTypeCountCreditTransactionsArgs
+  testAttempts?: boolean | UserCountOutputTypeCountTestAttemptsArgs
+  unlocks?: boolean | UserCountOutputTypeCountUnlocksArgs
+  testShareLinks?: boolean | UserCountOutputTypeCountTestShareLinksArgs
+  referralRewardsGiven?: boolean | UserCountOutputTypeCountReferralRewardsGivenArgs
+  referralRewardsReceived?: boolean | UserCountOutputTypeCountReferralRewardsReceivedArgs
   verificationCodes?: boolean | UserCountOutputTypeCountVerificationCodesArgs
 }
 
@@ -1067,6 +1802,41 @@ export type UserCountOutputTypeCountCreditTransactionsArgs<ExtArgs extends runti
 /**
  * UserCountOutputType without action
  */
+export type UserCountOutputTypeCountTestAttemptsArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  where?: Prisma.TestAttemptWhereInput
+}
+
+/**
+ * UserCountOutputType without action
+ */
+export type UserCountOutputTypeCountUnlocksArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  where?: Prisma.UserUnlockWhereInput
+}
+
+/**
+ * UserCountOutputType without action
+ */
+export type UserCountOutputTypeCountTestShareLinksArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  where?: Prisma.TestShareLinkWhereInput
+}
+
+/**
+ * UserCountOutputType without action
+ */
+export type UserCountOutputTypeCountReferralRewardsGivenArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  where?: Prisma.ReferralRewardWhereInput
+}
+
+/**
+ * UserCountOutputType without action
+ */
+export type UserCountOutputTypeCountReferralRewardsReceivedArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  where?: Prisma.ReferralRewardWhereInput
+}
+
+/**
+ * UserCountOutputType without action
+ */
 export type UserCountOutputTypeCountVerificationCodesArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   where?: Prisma.EmailVerificationCodeWhereInput
 }
@@ -1086,6 +1856,11 @@ export type UserSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs = r
   toolUsages?: boolean | Prisma.User$toolUsagesArgs<ExtArgs>
   credits?: boolean | Prisma.User$creditsArgs<ExtArgs>
   creditTransactions?: boolean | Prisma.User$creditTransactionsArgs<ExtArgs>
+  testAttempts?: boolean | Prisma.User$testAttemptsArgs<ExtArgs>
+  unlocks?: boolean | Prisma.User$unlocksArgs<ExtArgs>
+  testShareLinks?: boolean | Prisma.User$testShareLinksArgs<ExtArgs>
+  referralRewardsGiven?: boolean | Prisma.User$referralRewardsGivenArgs<ExtArgs>
+  referralRewardsReceived?: boolean | Prisma.User$referralRewardsReceivedArgs<ExtArgs>
   verificationCodes?: boolean | Prisma.User$verificationCodesArgs<ExtArgs>
   _count?: boolean | Prisma.UserCountOutputTypeDefaultArgs<ExtArgs>
 }, ExtArgs["result"]["user"]>
@@ -1130,6 +1905,11 @@ export type UserInclude<ExtArgs extends runtime.Types.Extensions.InternalArgs = 
   toolUsages?: boolean | Prisma.User$toolUsagesArgs<ExtArgs>
   credits?: boolean | Prisma.User$creditsArgs<ExtArgs>
   creditTransactions?: boolean | Prisma.User$creditTransactionsArgs<ExtArgs>
+  testAttempts?: boolean | Prisma.User$testAttemptsArgs<ExtArgs>
+  unlocks?: boolean | Prisma.User$unlocksArgs<ExtArgs>
+  testShareLinks?: boolean | Prisma.User$testShareLinksArgs<ExtArgs>
+  referralRewardsGiven?: boolean | Prisma.User$referralRewardsGivenArgs<ExtArgs>
+  referralRewardsReceived?: boolean | Prisma.User$referralRewardsReceivedArgs<ExtArgs>
   verificationCodes?: boolean | Prisma.User$verificationCodesArgs<ExtArgs>
   _count?: boolean | Prisma.UserCountOutputTypeDefaultArgs<ExtArgs>
 }
@@ -1144,6 +1924,11 @@ export type $UserPayload<ExtArgs extends runtime.Types.Extensions.InternalArgs =
     toolUsages: Prisma.$ToolUsagePayload<ExtArgs>[]
     credits: Prisma.$CreditPayload<ExtArgs> | null
     creditTransactions: Prisma.$CreditTransactionPayload<ExtArgs>[]
+    testAttempts: Prisma.$TestAttemptPayload<ExtArgs>[]
+    unlocks: Prisma.$UserUnlockPayload<ExtArgs>[]
+    testShareLinks: Prisma.$TestShareLinkPayload<ExtArgs>[]
+    referralRewardsGiven: Prisma.$ReferralRewardPayload<ExtArgs>[]
+    referralRewardsReceived: Prisma.$ReferralRewardPayload<ExtArgs>[]
     verificationCodes: Prisma.$EmailVerificationCodePayload<ExtArgs>[]
   }
   scalars: runtime.Types.Extensions.GetPayloadResult<{
@@ -1554,6 +2339,11 @@ export interface Prisma__UserClient<T, Null = never, ExtArgs extends runtime.Typ
   toolUsages<T extends Prisma.User$toolUsagesArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.User$toolUsagesArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$ToolUsagePayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
   credits<T extends Prisma.User$creditsArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.User$creditsArgs<ExtArgs>>): Prisma.Prisma__CreditClient<runtime.Types.Result.GetResult<Prisma.$CreditPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
   creditTransactions<T extends Prisma.User$creditTransactionsArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.User$creditTransactionsArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$CreditTransactionPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+  testAttempts<T extends Prisma.User$testAttemptsArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.User$testAttemptsArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$TestAttemptPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+  unlocks<T extends Prisma.User$unlocksArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.User$unlocksArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$UserUnlockPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+  testShareLinks<T extends Prisma.User$testShareLinksArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.User$testShareLinksArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$TestShareLinkPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+  referralRewardsGiven<T extends Prisma.User$referralRewardsGivenArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.User$referralRewardsGivenArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$ReferralRewardPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+  referralRewardsReceived<T extends Prisma.User$referralRewardsReceivedArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.User$referralRewardsReceivedArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$ReferralRewardPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
   verificationCodes<T extends Prisma.User$verificationCodesArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.User$verificationCodesArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$EmailVerificationCodePayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
   /**
    * Attaches callbacks for the resolution and/or rejection of the Promise.
@@ -2097,6 +2887,126 @@ export type User$creditTransactionsArgs<ExtArgs extends runtime.Types.Extensions
   take?: number
   skip?: number
   distinct?: Prisma.CreditTransactionScalarFieldEnum | Prisma.CreditTransactionScalarFieldEnum[]
+}
+
+/**
+ * User.testAttempts
+ */
+export type User$testAttemptsArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  /**
+   * Select specific fields to fetch from the TestAttempt
+   */
+  select?: Prisma.TestAttemptSelect<ExtArgs> | null
+  /**
+   * Omit specific fields from the TestAttempt
+   */
+  omit?: Prisma.TestAttemptOmit<ExtArgs> | null
+  /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.TestAttemptInclude<ExtArgs> | null
+  where?: Prisma.TestAttemptWhereInput
+  orderBy?: Prisma.TestAttemptOrderByWithRelationInput | Prisma.TestAttemptOrderByWithRelationInput[]
+  cursor?: Prisma.TestAttemptWhereUniqueInput
+  take?: number
+  skip?: number
+  distinct?: Prisma.TestAttemptScalarFieldEnum | Prisma.TestAttemptScalarFieldEnum[]
+}
+
+/**
+ * User.unlocks
+ */
+export type User$unlocksArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  /**
+   * Select specific fields to fetch from the UserUnlock
+   */
+  select?: Prisma.UserUnlockSelect<ExtArgs> | null
+  /**
+   * Omit specific fields from the UserUnlock
+   */
+  omit?: Prisma.UserUnlockOmit<ExtArgs> | null
+  /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.UserUnlockInclude<ExtArgs> | null
+  where?: Prisma.UserUnlockWhereInput
+  orderBy?: Prisma.UserUnlockOrderByWithRelationInput | Prisma.UserUnlockOrderByWithRelationInput[]
+  cursor?: Prisma.UserUnlockWhereUniqueInput
+  take?: number
+  skip?: number
+  distinct?: Prisma.UserUnlockScalarFieldEnum | Prisma.UserUnlockScalarFieldEnum[]
+}
+
+/**
+ * User.testShareLinks
+ */
+export type User$testShareLinksArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  /**
+   * Select specific fields to fetch from the TestShareLink
+   */
+  select?: Prisma.TestShareLinkSelect<ExtArgs> | null
+  /**
+   * Omit specific fields from the TestShareLink
+   */
+  omit?: Prisma.TestShareLinkOmit<ExtArgs> | null
+  /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.TestShareLinkInclude<ExtArgs> | null
+  where?: Prisma.TestShareLinkWhereInput
+  orderBy?: Prisma.TestShareLinkOrderByWithRelationInput | Prisma.TestShareLinkOrderByWithRelationInput[]
+  cursor?: Prisma.TestShareLinkWhereUniqueInput
+  take?: number
+  skip?: number
+  distinct?: Prisma.TestShareLinkScalarFieldEnum | Prisma.TestShareLinkScalarFieldEnum[]
+}
+
+/**
+ * User.referralRewardsGiven
+ */
+export type User$referralRewardsGivenArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  /**
+   * Select specific fields to fetch from the ReferralReward
+   */
+  select?: Prisma.ReferralRewardSelect<ExtArgs> | null
+  /**
+   * Omit specific fields from the ReferralReward
+   */
+  omit?: Prisma.ReferralRewardOmit<ExtArgs> | null
+  /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.ReferralRewardInclude<ExtArgs> | null
+  where?: Prisma.ReferralRewardWhereInput
+  orderBy?: Prisma.ReferralRewardOrderByWithRelationInput | Prisma.ReferralRewardOrderByWithRelationInput[]
+  cursor?: Prisma.ReferralRewardWhereUniqueInput
+  take?: number
+  skip?: number
+  distinct?: Prisma.ReferralRewardScalarFieldEnum | Prisma.ReferralRewardScalarFieldEnum[]
+}
+
+/**
+ * User.referralRewardsReceived
+ */
+export type User$referralRewardsReceivedArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  /**
+   * Select specific fields to fetch from the ReferralReward
+   */
+  select?: Prisma.ReferralRewardSelect<ExtArgs> | null
+  /**
+   * Omit specific fields from the ReferralReward
+   */
+  omit?: Prisma.ReferralRewardOmit<ExtArgs> | null
+  /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.ReferralRewardInclude<ExtArgs> | null
+  where?: Prisma.ReferralRewardWhereInput
+  orderBy?: Prisma.ReferralRewardOrderByWithRelationInput | Prisma.ReferralRewardOrderByWithRelationInput[]
+  cursor?: Prisma.ReferralRewardWhereUniqueInput
+  take?: number
+  skip?: number
+  distinct?: Prisma.ReferralRewardScalarFieldEnum | Prisma.ReferralRewardScalarFieldEnum[]
 }
 
 /**

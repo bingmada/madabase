@@ -18,11 +18,13 @@ export function UserMenu({
   email,
   nickname,
   pathname,
+  creditBalance,
 }: {
   locale: Locale;
   email: string;
   nickname?: string | null;
   pathname: string;
+  creditBalance: number;
 }) {
   const [open, setOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -57,6 +59,7 @@ export function UserMenu({
   const copy = {
     profile: locale === "en" ? "Profile" : "个人中心",
     favorites: locale === "en" ? "Favorites" : "我的收藏",
+    credits: locale === "en" ? "Credits" : "积分",
     signOut: locale === "en" ? "Sign out" : "退出登录",
   };
 
@@ -80,6 +83,9 @@ export function UserMenu({
           <div className="border-b border-[var(--border)] px-3 py-2">
             <p className="text-sm font-semibold text-[var(--text)]">{displayName}</p>
             <p className="mt-1 text-xs text-[var(--text-soft)]">{email}</p>
+            <p className="mt-2 rounded-md bg-[var(--surface-muted)] px-2 py-1 text-xs font-semibold text-[var(--brand-strong)]">
+              {copy.credits}: {creditBalance}
+            </p>
           </div>
           <div className="pt-2">
             <Link href={`/${locale}/profile`} onClick={() => setOpen(false)} className={itemClassName(pathname === "/profile")}>
