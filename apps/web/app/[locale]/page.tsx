@@ -167,8 +167,8 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           </div>
         </section>
 
+        <PersonalizedToolsPanel locale={locale} />
         <section className="mt-14" id="popular-tools">
-          <PersonalizedToolsPanel locale={locale} />
           <div className="mb-6 flex items-end justify-between gap-4">
             <h2 className="text-2xl font-bold text-[var(--text)]">{copy.popular}</h2>
             <p className="code-font hidden text-xs uppercase tracking-[0.16em] text-[var(--text-soft)] sm:block">search intent / evergreen / tools-first</p>
