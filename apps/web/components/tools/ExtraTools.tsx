@@ -324,3 +324,224 @@ export function JsFormatter() {
 export function UrlParser() {
   return <GenericTextTransformTool label="URL input" sample="https://madabase.com/en/tools/json-formatter?ref=seo#faq" tool="url-parser" transform={parseUrl} outputLabel="Parsed URL" />;
 }
+
+const genericToolConfigs: Record<string, { label: string; sample: string; outputLabel: string; transform: (value: string) => string }> = {
+  "line-sorter": {
+    label: "Lines",
+    sample: "banana\napple\ncarrot",
+    outputLabel: "Sorted lines",
+    transform: (value) => normalizeLines(value).split("\n").sort((a, b) => a.localeCompare(b)).join("\n"),
+  },
+  "line-deduplicator": {
+    label: "Lines",
+    sample: "api\njson\napi\nseo",
+    outputLabel: "Unique lines",
+    transform: (value) => Array.from(new Set(normalizeLines(value).split("\n"))).join("\n"),
+  },
+  "empty-line-remover": {
+    label: "Text",
+    sample: "Madabase\n\n\nTools\n\nTests",
+    outputLabel: "Cleaned text",
+    transform: (value) => value.split("\n").filter((line) => line.trim()).join("\n"),
+  },
+  "whitespace-normalizer": {
+    label: "Text",
+    sample: "Madabase     builds\t\tuseful tools.",
+    outputLabel: "Normalized text",
+    transform: (value) => value.replace(/\s+/g, " ").trim(),
+  },
+  "text-diff": {
+    label: "Left text, then --- then right text",
+    sample: "old title\nold summary\n---\nnew title\nold summary",
+    outputLabel: "Line comparison",
+    transform: (value) => {
+      const [left = "", right = ""] = value.split("\n---\n");
+      const rightLines = new Set(right.split("\n"));
+      return left.split("\n").map((line) => `${rightLines.has(line) ? " " : "-"} ${line}`).concat(
+        right.split("\n").filter((line) => !left.split("\n").includes(line)).map((line) => `+ ${line}`),
+      ).join("\n");
+    },
+  },
+  "email-extractor": {
+    label: "Text",
+    sample: "Contact hello@madabase.com or team@example.dev for access.",
+    outputLabel: "Emails",
+    transform: (value) => [...value.matchAll(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi)].map((match) => match[0]).join("\n") || "No emails found.",
+  },
+  "url-extractor": {
+    label: "Text",
+    sample: "Visit https://madabase.com and https://example.com/docs.",
+    outputLabel: "URLs",
+    transform: (value) => [...value.matchAll(/https?:\/\/[^\s<>"']+/gi)].map((match) => match[0]).join("\n") || "No URLs found.",
+  },
+  "number-extractor": {
+    label: "Text",
+    sample: "Orders: 24 today, 138 this week, 1200 this month.",
+    outputLabel: "Numbers",
+    transform: (value) => [...value.matchAll(/-?\d+(?:\.\d+)?/g)].map((match) => match[0]).join("\n") || "No numbers found.",
+  },
+  "csv-to-json": {
+    label: "CSV",
+    sample: "name,role\nAda,Engineer\nLin,Designer",
+    outputLabel: "JSON",
+    transform: (value) => {
+      const [headerLine = "", ...rows] = normalizeLines(value).split("\n");
+      const headers = headerLine.split(",").map((item) => item.trim());
+      return JSON.stringify(rows.map((row) => Object.fromEntries(row.split(",").map((cell, index) => [headers[index] ?? `field${index + 1}`, cell.trim()]))), null, 2);
+    },
+  },
+  "json-to-csv": {
+    label: "JSON array",
+    sample: '[{"name":"Ada","role":"Engineer"},{"name":"Lin","role":"Designer"}]',
+    outputLabel: "CSV",
+    transform: (value) => {
+      const rows = JSON.parse(value) as Array<Record<string, unknown>>;
+      const headers = Array.from(new Set(rows.flatMap((row) => Object.keys(row))));
+      return [headers.join(","), ...rows.map((row) => headers.map((header) => String(row[header] ?? "")).join(","))].join("\n");
+    },
+  },
+  "json-to-yaml": {
+    label: "JSON",
+    sample: '{"name":"Madabase","tools":60}',
+    outputLabel: "YAML-like output",
+    transform: (value) => Object.entries(JSON.parse(value) as Record<string, unknown>).map(([key, item]) => `${key}: ${String(item)}`).join("\n"),
+  },
+  "yaml-to-json": {
+    label: "Simple YAML",
+    sample: "name: Madabase\ntools: 60",
+    outputLabel: "JSON",
+    transform: (value) => JSON.stringify(Object.fromEntries(normalizeLines(value).split("\n").map((line) => {
+      const [key = "", ...rest] = line.split(":");
+      return [key.trim(), rest.join(":").trim()];
+    })), null, 2),
+  },
+  "env-to-json": {
+    label: ".env content",
+    sample: "APP_NAME=Madabase\nFEATURE_TESTS=true",
+    outputLabel: "JSON",
+    transform: (value) => JSON.stringify(Object.fromEntries(normalizeLines(value).split("\n").map((line) => {
+      const [key = "", ...rest] = line.split("=");
+      return [key.trim(), rest.join("=").trim()];
+    })), null, 2),
+  },
+  "json-to-env": {
+    label: "JSON",
+    sample: '{"APP_NAME":"Madabase","FEATURE_TESTS":"true"}',
+    outputLabel: ".env",
+    transform: (value) => Object.entries(JSON.parse(value) as Record<string, unknown>).map(([key, item]) => `${key}=${String(item)}`).join("\n"),
+  },
+  "toml-to-json": {
+    label: "Simple TOML",
+    sample: 'name = "Madabase"\ntools = 60',
+    outputLabel: "JSON",
+    transform: (value) => JSON.stringify(Object.fromEntries(normalizeLines(value).split("\n").map((line) => {
+      const [key = "", ...rest] = line.split("=");
+      return [key.trim(), rest.join("=").trim().replace(/^"|"$/g, "")];
+    })), null, 2),
+  },
+  "query-string-parser": {
+    label: "Query string",
+    sample: "utm_source=seo&tool=json&lang=en",
+    outputLabel: "Parsed query",
+    transform: (value) => JSON.stringify(Object.fromEntries(new URLSearchParams(value.replace(/^\?/, ""))), null, 2),
+  },
+  "query-string-builder": {
+    label: "JSON object",
+    sample: '{"utm_source":"seo","tool":"json","lang":"en"}',
+    outputLabel: "Query string",
+    transform: (value) => new URLSearchParams(JSON.parse(value) as Record<string, string>).toString(),
+  },
+  "http-header-parser": {
+    label: "HTTP headers",
+    sample: "content-type: application/json\ncache-control: no-cache",
+    outputLabel: "JSON headers",
+    transform: (value) => JSON.stringify(Object.fromEntries(normalizeLines(value).split("\n").map((line) => {
+      const [key = "", ...rest] = line.split(":");
+      return [key.trim().toLowerCase(), rest.join(":").trim()];
+    })), null, 2),
+  },
+  "user-agent-parser": {
+    label: "User agent",
+    sample: "Mozilla/5.0 AppleWebKit/537.36 Chrome/126.0 Safari/537.36",
+    outputLabel: "UA summary",
+    transform: (value) => `Browser: ${value.includes("Chrome") ? "Chrome" : value.includes("Firefox") ? "Firefox" : value.includes("Safari") ? "Safari" : "Unknown"}\nMobile: ${/Mobile|Android|iPhone/i.test(value) ? "yes" : "no"}\nRaw: ${value}`,
+  },
+  "unicode-escape": {
+    label: "Text",
+    sample: "Madabase 工具",
+    outputLabel: "Unicode escaped",
+    transform: (value) => value.split("").map((char) => `\\u${char.charCodeAt(0).toString(16).padStart(4, "0")}`).join(""),
+  },
+  "unicode-unescape": {
+    label: "Unicode escaped text",
+    sample: "\\u004d\\u0061\\u0064\\u0061\\u0062\\u0061\\u0073\\u0065",
+    outputLabel: "Text",
+    transform: (value) => value.replace(/\\u([\dA-F]{4})/gi, (_, code: string) => String.fromCharCode(Number.parseInt(code, 16))),
+  },
+  "hex-to-text": {
+    label: "Hex",
+    sample: "4d61646162617365",
+    outputLabel: "Text",
+    transform: (value) => value.replace(/\s+/g, "").match(/.{1,2}/g)?.map((item) => String.fromCharCode(Number.parseInt(item, 16))).join("") ?? "",
+  },
+  "text-to-hex": {
+    label: "Text",
+    sample: "Madabase",
+    outputLabel: "Hex",
+    transform: (value) => value.split("").map((char) => char.charCodeAt(0).toString(16).padStart(2, "0")).join(""),
+  },
+  "binary-to-text": {
+    label: "Binary",
+    sample: "01001101 01100001 01100100 01100001",
+    outputLabel: "Text",
+    transform: (value) => value.trim().split(/\s+/).map((item) => String.fromCharCode(Number.parseInt(item, 2))).join(""),
+  },
+  "text-to-binary": {
+    label: "Text",
+    sample: "Mada",
+    outputLabel: "Binary",
+    transform: (value) => value.split("").map((char) => char.charCodeAt(0).toString(2).padStart(8, "0")).join(" "),
+  },
+  "html-stripper": {
+    label: "HTML",
+    sample: "<article><h1>Madabase</h1><p>Useful tools.</p></article>",
+    outputLabel: "Plain text",
+    transform: (value) => value.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim(),
+  },
+  "markdown-to-text": {
+    label: "Markdown",
+    sample: "# Madabase\n\nBuild **useful** tools with [links](https://madabase.com).",
+    outputLabel: "Plain text",
+    transform: (value) => value.replace(/[#*_`>-]/g, "").replace(/\[([^\]]+)\]\([^)]+\)/g, "$1").replace(/\s+/g, " ").trim(),
+  },
+  "reading-time": {
+    label: "Article text",
+    sample: "Madabase helps teams format JSON, run tests, and build small workflows faster.",
+    outputLabel: "Reading time",
+    transform: (value) => `${Math.max(1, Math.ceil(value.trim().split(/\s+/).filter(Boolean).length / 200))} min read`,
+  },
+  "lorem-ipsum": {
+    label: "Paragraph count",
+    sample: "3",
+    outputLabel: "Generated text",
+    transform: (value) => Array.from({ length: Math.max(1, Math.min(10, Number(value) || 3)) }, () => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae sem at nibh facilisis posuere.").join("\n\n"),
+  },
+  "list-randomizer": {
+    label: "Lines",
+    sample: "alpha\nbeta\ngamma\ndelta",
+    outputLabel: "Randomized lines",
+    transform: (value) => normalizeLines(value).split("\n").sort((a, b) => simpleHash(b).localeCompare(simpleHash(a))).join("\n"),
+  },
+};
+
+const fallbackGenericTool = {
+  label: "Input",
+  sample: "Paste text here",
+  outputLabel: "Output",
+  transform: (value: string) => value,
+};
+
+export function GenericTextTool({ toolSlug = "generic-text-tool" }: { toolSlug?: string }) {
+  const config = genericToolConfigs[toolSlug] ?? fallbackGenericTool;
+  return <GenericTextTransformTool label={config.label} sample={config.sample} tool={toolSlug} transform={config.transform} outputLabel={config.outputLabel} />;
+}

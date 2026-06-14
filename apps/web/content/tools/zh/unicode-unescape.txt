@@ -1,0 +1,40 @@
+[TITLE]
+免费Unicode 反转义工具
+[H1]
+免费Unicode 反转义工具
+[DESCRIPTION]
+将 Unicode 转义序列还原为文本。
+[SEO_TITLE]
+免费Unicode 反转义工具 | Madabase
+[SEO_DESCRIPTION]
+将 Unicode 转义序列还原为文本。 在浏览器中快速处理并复制结果。
+[INTRO]
+当你需要快速清理、转换、调试或准备内容时，可以使用这个Unicode 反转义工具。它适合日常小任务，不需要打开复杂软件。
+[HOW_TO_USE]
+粘贴输入
+输入你要处理的文本、数据或片段。
+---
+运行工具
+点击操作按钮，立即生成结果。
+---
+复制结果
+检查输出内容，并复制到你的工作流中。
+[EXAMPLES]
+Madabase 工具
+===
+处理后的 Madabase 工具
+[FAQ]
+这个Unicode 反转义工具免费吗？
+是的。当前版本可以在浏览器中免费使用。
+可以处理私密数据吗？
+工具界面在浏览器中运行，但仍建议不要把敏感密钥粘贴到任何网页。
+[RELATED_TOOLS]
+text-cleaner
+json-formatter
+url-encoder
+[KEYWORDS]
+unicode unescape
+免费 unicode unescape
+在线 unicode unescape
+[CATEGORY]
+developer

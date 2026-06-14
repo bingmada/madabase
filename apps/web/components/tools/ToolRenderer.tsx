@@ -8,6 +8,7 @@ import {
   ColorConverter,
   CronGenerator,
   CssFormatter,
+  GenericTextTool,
   HashGenerator,
   HtmlEncoder,
   JsFormatter,
@@ -65,6 +66,7 @@ const toolComponents: Record<ToolComponentName, React.ComponentType<{ toolSlug?:
   CssFormatter,
   JsFormatter,
   UrlParser,
+  GenericTextTool,
 };
 
 export function ToolRenderer({ component, toolSlug }: { component: ToolComponentName; toolSlug?: string }) {

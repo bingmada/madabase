@@ -1,0 +1,288 @@
+{
+  "title": "Leadership Style Test",
+  "description": "Answer 24 quick prompts to explore your leadership style pattern.",
+  "instructions": [
+    "Answer based on recent real behavior, not an ideal version of yourself.",
+    "Use the whole scale when a statement clearly fits or does not fit.",
+    "Your report highlights the strongest pattern and practical next steps."
+  ],
+  "scale": [
+    {
+      "id": "1",
+      "text": "Strongly disagree",
+      "value": 1
+    },
+    {
+      "id": "2",
+      "text": "Disagree",
+      "value": 2
+    },
+    {
+      "id": "3",
+      "text": "Neutral",
+      "value": 3
+    },
+    {
+      "id": "4",
+      "text": "Agree",
+      "value": 4
+    },
+    {
+      "id": "5",
+      "text": "Strongly agree",
+      "value": 5
+    }
+  ],
+  "scaleQuestions": [
+    {
+      "id": "coach_1",
+      "question": "In relevant situations, I often show a Coach pattern.",
+      "scoreKey": "COACH"
+    },
+    {
+      "id": "coach_2",
+      "question": "In relevant situations, I often show a Coach pattern.",
+      "scoreKey": "COACH"
+    },
+    {
+      "id": "coach_3",
+      "question": "In relevant situations, I often show a Coach pattern.",
+      "scoreKey": "COACH"
+    },
+    {
+      "id": "coach_4",
+      "question": "In relevant situations, I often show a Coach pattern.",
+      "scoreKey": "COACH"
+    },
+    {
+      "id": "coach_5",
+      "question": "In relevant situations, I often show a Coach pattern.",
+      "scoreKey": "COACH"
+    },
+    {
+      "id": "coach_6",
+      "question": "In relevant situations, I often show a Coach pattern.",
+      "scoreKey": "COACH"
+    },
+    {
+      "id": "visionary_1",
+      "question": "In relevant situations, I often show a Visionary pattern.",
+      "scoreKey": "VISIONARY"
+    },
+    {
+      "id": "visionary_2",
+      "question": "In relevant situations, I often show a Visionary pattern.",
+      "scoreKey": "VISIONARY"
+    },
+    {
+      "id": "visionary_3",
+      "question": "In relevant situations, I often show a Visionary pattern.",
+      "scoreKey": "VISIONARY"
+    },
+    {
+      "id": "visionary_4",
+      "question": "In relevant situations, I often show a Visionary pattern.",
+      "scoreKey": "VISIONARY"
+    },
+    {
+      "id": "visionary_5",
+      "question": "In relevant situations, I often show a Visionary pattern.",
+      "scoreKey": "VISIONARY"
+    },
+    {
+      "id": "visionary_6",
+      "question": "In relevant situations, I often show a Visionary pattern.",
+      "scoreKey": "VISIONARY"
+    },
+    {
+      "id": "operator_1",
+      "question": "In relevant situations, I often show a Operator pattern.",
+      "scoreKey": "OPERATOR"
+    },
+    {
+      "id": "operator_2",
+      "question": "In relevant situations, I often show a Operator pattern.",
+      "scoreKey": "OPERATOR"
+    },
+    {
+      "id": "operator_3",
+      "question": "In relevant situations, I often show a Operator pattern.",
+      "scoreKey": "OPERATOR"
+    },
+    {
+      "id": "operator_4",
+      "question": "In relevant situations, I often show a Operator pattern.",
+      "scoreKey": "OPERATOR"
+    },
+    {
+      "id": "operator_5",
+      "question": "In relevant situations, I often show a Operator pattern.",
+      "scoreKey": "OPERATOR"
+    },
+    {
+      "id": "operator_6",
+      "question": "In relevant situations, I often show a Operator pattern.",
+      "scoreKey": "OPERATOR"
+    },
+    {
+      "id": "democratic_1",
+      "question": "In relevant situations, I often show a Democratic pattern.",
+      "scoreKey": "DEMOCRATIC"
+    },
+    {
+      "id": "democratic_2",
+      "question": "In relevant situations, I often show a Democratic pattern.",
+      "scoreKey": "DEMOCRATIC"
+    },
+    {
+      "id": "democratic_3",
+      "question": "In relevant situations, I often show a Democratic pattern.",
+      "scoreKey": "DEMOCRATIC"
+    },
+    {
+      "id": "democratic_4",
+      "question": "In relevant situations, I often show a Democratic pattern.",
+      "scoreKey": "DEMOCRATIC"
+    },
+    {
+      "id": "democratic_5",
+      "question": "In relevant situations, I often show a Democratic pattern.",
+      "scoreKey": "DEMOCRATIC"
+    },
+    {
+      "id": "democratic_6",
+      "question": "In relevant situations, I often show a Democratic pattern.",
+      "scoreKey": "DEMOCRATIC"
+    }
+  ],
+  "results": {
+    "COACH": {
+      "title": "Coach",
+      "summary": "Your primary result points to a Coach pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    },
+    "VISIONARY": {
+      "title": "Visionary",
+      "summary": "Your primary result points to a Visionary pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    },
+    "OPERATOR": {
+      "title": "Operator",
+      "summary": "Your primary result points to a Operator pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    },
+    "DEMOCRATIC": {
+      "title": "Democratic",
+      "summary": "Your primary result points to a Democratic pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    }
+  }
+}

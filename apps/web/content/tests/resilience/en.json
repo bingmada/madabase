@@ -1,0 +1,288 @@
+{
+  "title": "Resilience Test",
+  "description": "Answer 24 quick prompts to explore your resilience pattern.",
+  "instructions": [
+    "Answer based on recent real behavior, not an ideal version of yourself.",
+    "Use the whole scale when a statement clearly fits or does not fit.",
+    "Your report highlights the strongest pattern and practical next steps."
+  ],
+  "scale": [
+    {
+      "id": "1",
+      "text": "Strongly disagree",
+      "value": 1
+    },
+    {
+      "id": "2",
+      "text": "Disagree",
+      "value": 2
+    },
+    {
+      "id": "3",
+      "text": "Neutral",
+      "value": 3
+    },
+    {
+      "id": "4",
+      "text": "Agree",
+      "value": 4
+    },
+    {
+      "id": "5",
+      "text": "Strongly agree",
+      "value": 5
+    }
+  ],
+  "scaleQuestions": [
+    {
+      "id": "steady_1",
+      "question": "In relevant situations, I often show a Steady pattern.",
+      "scoreKey": "STEADY"
+    },
+    {
+      "id": "steady_2",
+      "question": "In relevant situations, I often show a Steady pattern.",
+      "scoreKey": "STEADY"
+    },
+    {
+      "id": "steady_3",
+      "question": "In relevant situations, I often show a Steady pattern.",
+      "scoreKey": "STEADY"
+    },
+    {
+      "id": "steady_4",
+      "question": "In relevant situations, I often show a Steady pattern.",
+      "scoreKey": "STEADY"
+    },
+    {
+      "id": "steady_5",
+      "question": "In relevant situations, I often show a Steady pattern.",
+      "scoreKey": "STEADY"
+    },
+    {
+      "id": "steady_6",
+      "question": "In relevant situations, I often show a Steady pattern.",
+      "scoreKey": "STEADY"
+    },
+    {
+      "id": "recovering_1",
+      "question": "In relevant situations, I often show a Recovering pattern.",
+      "scoreKey": "RECOVERING"
+    },
+    {
+      "id": "recovering_2",
+      "question": "In relevant situations, I often show a Recovering pattern.",
+      "scoreKey": "RECOVERING"
+    },
+    {
+      "id": "recovering_3",
+      "question": "In relevant situations, I often show a Recovering pattern.",
+      "scoreKey": "RECOVERING"
+    },
+    {
+      "id": "recovering_4",
+      "question": "In relevant situations, I often show a Recovering pattern.",
+      "scoreKey": "RECOVERING"
+    },
+    {
+      "id": "recovering_5",
+      "question": "In relevant situations, I often show a Recovering pattern.",
+      "scoreKey": "RECOVERING"
+    },
+    {
+      "id": "recovering_6",
+      "question": "In relevant situations, I often show a Recovering pattern.",
+      "scoreKey": "RECOVERING"
+    },
+    {
+      "id": "strained_1",
+      "question": "In relevant situations, I often show a Strained pattern.",
+      "scoreKey": "STRAINED"
+    },
+    {
+      "id": "strained_2",
+      "question": "In relevant situations, I often show a Strained pattern.",
+      "scoreKey": "STRAINED"
+    },
+    {
+      "id": "strained_3",
+      "question": "In relevant situations, I often show a Strained pattern.",
+      "scoreKey": "STRAINED"
+    },
+    {
+      "id": "strained_4",
+      "question": "In relevant situations, I often show a Strained pattern.",
+      "scoreKey": "STRAINED"
+    },
+    {
+      "id": "strained_5",
+      "question": "In relevant situations, I often show a Strained pattern.",
+      "scoreKey": "STRAINED"
+    },
+    {
+      "id": "strained_6",
+      "question": "In relevant situations, I often show a Strained pattern.",
+      "scoreKey": "STRAINED"
+    },
+    {
+      "id": "fragile_1",
+      "question": "In relevant situations, I often show a Fragile pattern.",
+      "scoreKey": "FRAGILE"
+    },
+    {
+      "id": "fragile_2",
+      "question": "In relevant situations, I often show a Fragile pattern.",
+      "scoreKey": "FRAGILE"
+    },
+    {
+      "id": "fragile_3",
+      "question": "In relevant situations, I often show a Fragile pattern.",
+      "scoreKey": "FRAGILE"
+    },
+    {
+      "id": "fragile_4",
+      "question": "In relevant situations, I often show a Fragile pattern.",
+      "scoreKey": "FRAGILE"
+    },
+    {
+      "id": "fragile_5",
+      "question": "In relevant situations, I often show a Fragile pattern.",
+      "scoreKey": "FRAGILE"
+    },
+    {
+      "id": "fragile_6",
+      "question": "In relevant situations, I often show a Fragile pattern.",
+      "scoreKey": "FRAGILE"
+    }
+  ],
+  "results": {
+    "STEADY": {
+      "title": "Steady",
+      "summary": "Your primary result points to a Steady pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    },
+    "RECOVERING": {
+      "title": "Recovering",
+      "summary": "Your primary result points to a Recovering pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    },
+    "STRAINED": {
+      "title": "Strained",
+      "summary": "Your primary result points to a Strained pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    },
+    "FRAGILE": {
+      "title": "Fragile",
+      "summary": "Your primary result points to a Fragile pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    }
+  }
+}

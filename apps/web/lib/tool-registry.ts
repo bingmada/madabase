@@ -1,4 +1,5 @@
 import type { Locale } from "./i18n";
+import { expandedToolRegistry } from "./expanded-tool-registry";
 
 export type ToolComponentName =
   | "JsonFormatter"
@@ -30,7 +31,8 @@ export type ToolComponentName =
   | "HtmlEncoder"
   | "CssFormatter"
   | "JsFormatter"
-  | "UrlParser";
+  | "UrlParser"
+  | "GenericTextTool";
 
 export type ToolCategory = "developer" | "ai" | "text" | "web" | "creator";
 
@@ -46,7 +48,7 @@ export type ToolRegistryEntry = {
 };
 
 // Registry with display info for SSR
-export const toolRegistry: ToolRegistryEntry[] = [
+const baseToolRegistry: ToolRegistryEntry[] = [
   { slug: "json-formatter", component: "JsonFormatter", category: "developer", popular: true, relatedTools: ["json-validator", "json-to-typescript", "json-diff"], keywords: ["json formatter", "json beautifier", "format json online"], h1: { en: "Free JSON Formatter Online", zh: "免费 JSON 格式化工具" }, description: { en: "Format, minify, and validate JSON instantly in your browser.", zh: "在浏览器中快速格式化、压缩并校验 JSON。" } },
   { slug: "json-validator", component: "JsonValidator", category: "developer", popular: true, relatedTools: ["json-formatter", "json-diff", "json-escape"], keywords: ["json validator", "json lint", "validate json"], h1: { en: "Free JSON Validator Online", zh: "免费 JSON 校验器" }, description: { en: "Validate JSON and surface syntax errors with useful hints.", zh: "校验 JSON 并展示有用的语法错误提示。" } },
   { slug: "json-to-typescript", component: "JsonToTypescript", category: "developer", popular: true, relatedTools: ["json-formatter", "json-validator", "js-formatter"], keywords: ["json to typescript", "typescript interface generator"], h1: { en: "JSON to TypeScript Interface Generator", zh: "JSON 转 TypeScript Interface 工具" }, description: { en: "Generate TypeScript interfaces from JSON samples.", zh: "从 JSON 示例自动生成 TypeScript Interface。" } },
@@ -78,6 +80,8 @@ export const toolRegistry: ToolRegistryEntry[] = [
   { slug: "js-formatter", component: "JsFormatter", category: "developer", relatedTools: ["json-formatter", "css-formatter", "html-formatter"], keywords: ["javascript formatter", "js beautifier"], h1: { en: "Free JavaScript Formatter Online", zh: "免费 JavaScript 格式化工具" }, description: { en: "Format JavaScript snippets for readability.", zh: "格式化 JavaScript 片段，提高可读性。" } },
   { slug: "url-parser", component: "UrlParser", category: "web", relatedTools: ["url-encoder", "slug-generator", "qr-code-generator"], keywords: ["url parser", "parse url online"], h1: { en: "Free URL Parser Online", zh: "免费 URL 解析器" }, description: { en: "Parse URLs into protocol, host, path, query, and hash.", zh: "解析 URL 的协议、域名、路径、查询参数和锚点。" } },
 ];
+
+export const toolRegistry: ToolRegistryEntry[] = [...baseToolRegistry, ...expandedToolRegistry];
 
 export const toolMap = new Map(toolRegistry.map((tool) => [tool.slug, tool]));
 

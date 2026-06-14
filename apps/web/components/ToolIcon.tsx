@@ -4,6 +4,7 @@ import {
   CaseSensitive,
   Clock3,
   Code2,
+  FileText,
   Diff,
   FileCode2,
   Fingerprint,
@@ -52,6 +53,7 @@ const iconMap = {
   CssFormatter: Code2,
   JsFormatter: FileCode2,
   UrlParser: Link2,
+  GenericTextTool: FileText,
 } satisfies Record<ToolComponentName, React.ComponentType<{ className?: string }>>;
 
 export function ToolIcon({ component, className = "h-5 w-5" }: { component: ToolComponentName; className?: string }) {

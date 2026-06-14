@@ -1,0 +1,357 @@
+{
+  "title": "冲突处理风格测试",
+  "description": "通过 30 个快速问题了解你的冲突处理风格模式。",
+  "instructions": [
+    "请根据最近真实行为作答，不要按理想中的自己选择。",
+    "当描述明显符合或不符合时，请大胆使用量表两端。",
+    "报告会突出你的最强模式和可执行的下一步建议。"
+  ],
+  "reportLabels": {
+    "strengths": "优势",
+    "weaknesses": "风险",
+    "careers": "适合方法",
+    "relationships": "关系提示",
+    "growth": "成长计划"
+  },
+  "scale": [
+    {
+      "id": "1",
+      "text": "非常不同意",
+      "value": 1
+    },
+    {
+      "id": "2",
+      "text": "不同意",
+      "value": 2
+    },
+    {
+      "id": "3",
+      "text": "一般",
+      "value": 3
+    },
+    {
+      "id": "4",
+      "text": "同意",
+      "value": 4
+    },
+    {
+      "id": "5",
+      "text": "非常同意",
+      "value": 5
+    }
+  ],
+  "scaleQuestions": [
+    {
+      "id": "collaborating_1",
+      "question": "我在相关情境中经常表现出「Collaborating」这一倾向。",
+      "scoreKey": "COLLABORATING"
+    },
+    {
+      "id": "collaborating_2",
+      "question": "我在相关情境中经常表现出「Collaborating」这一倾向。",
+      "scoreKey": "COLLABORATING"
+    },
+    {
+      "id": "collaborating_3",
+      "question": "我在相关情境中经常表现出「Collaborating」这一倾向。",
+      "scoreKey": "COLLABORATING"
+    },
+    {
+      "id": "collaborating_4",
+      "question": "我在相关情境中经常表现出「Collaborating」这一倾向。",
+      "scoreKey": "COLLABORATING"
+    },
+    {
+      "id": "collaborating_5",
+      "question": "我在相关情境中经常表现出「Collaborating」这一倾向。",
+      "scoreKey": "COLLABORATING"
+    },
+    {
+      "id": "collaborating_6",
+      "question": "我在相关情境中经常表现出「Collaborating」这一倾向。",
+      "scoreKey": "COLLABORATING"
+    },
+    {
+      "id": "competing_1",
+      "question": "我在相关情境中经常表现出「Competing」这一倾向。",
+      "scoreKey": "COMPETING"
+    },
+    {
+      "id": "competing_2",
+      "question": "我在相关情境中经常表现出「Competing」这一倾向。",
+      "scoreKey": "COMPETING"
+    },
+    {
+      "id": "competing_3",
+      "question": "我在相关情境中经常表现出「Competing」这一倾向。",
+      "scoreKey": "COMPETING"
+    },
+    {
+      "id": "competing_4",
+      "question": "我在相关情境中经常表现出「Competing」这一倾向。",
+      "scoreKey": "COMPETING"
+    },
+    {
+      "id": "competing_5",
+      "question": "我在相关情境中经常表现出「Competing」这一倾向。",
+      "scoreKey": "COMPETING"
+    },
+    {
+      "id": "competing_6",
+      "question": "我在相关情境中经常表现出「Competing」这一倾向。",
+      "scoreKey": "COMPETING"
+    },
+    {
+      "id": "compromising_1",
+      "question": "我在相关情境中经常表现出「Compromising」这一倾向。",
+      "scoreKey": "COMPROMISING"
+    },
+    {
+      "id": "compromising_2",
+      "question": "我在相关情境中经常表现出「Compromising」这一倾向。",
+      "scoreKey": "COMPROMISING"
+    },
+    {
+      "id": "compromising_3",
+      "question": "我在相关情境中经常表现出「Compromising」这一倾向。",
+      "scoreKey": "COMPROMISING"
+    },
+    {
+      "id": "compromising_4",
+      "question": "我在相关情境中经常表现出「Compromising」这一倾向。",
+      "scoreKey": "COMPROMISING"
+    },
+    {
+      "id": "compromising_5",
+      "question": "我在相关情境中经常表现出「Compromising」这一倾向。",
+      "scoreKey": "COMPROMISING"
+    },
+    {
+      "id": "compromising_6",
+      "question": "我在相关情境中经常表现出「Compromising」这一倾向。",
+      "scoreKey": "COMPROMISING"
+    },
+    {
+      "id": "avoiding_1",
+      "question": "我在相关情境中经常表现出「Avoiding」这一倾向。",
+      "scoreKey": "AVOIDING"
+    },
+    {
+      "id": "avoiding_2",
+      "question": "我在相关情境中经常表现出「Avoiding」这一倾向。",
+      "scoreKey": "AVOIDING"
+    },
+    {
+      "id": "avoiding_3",
+      "question": "我在相关情境中经常表现出「Avoiding」这一倾向。",
+      "scoreKey": "AVOIDING"
+    },
+    {
+      "id": "avoiding_4",
+      "question": "我在相关情境中经常表现出「Avoiding」这一倾向。",
+      "scoreKey": "AVOIDING"
+    },
+    {
+      "id": "avoiding_5",
+      "question": "我在相关情境中经常表现出「Avoiding」这一倾向。",
+      "scoreKey": "AVOIDING"
+    },
+    {
+      "id": "avoiding_6",
+      "question": "我在相关情境中经常表现出「Avoiding」这一倾向。",
+      "scoreKey": "AVOIDING"
+    },
+    {
+      "id": "accommodating_1",
+      "question": "我在相关情境中经常表现出「Accommodating」这一倾向。",
+      "scoreKey": "ACCOMMODATING"
+    },
+    {
+      "id": "accommodating_2",
+      "question": "我在相关情境中经常表现出「Accommodating」这一倾向。",
+      "scoreKey": "ACCOMMODATING"
+    },
+    {
+      "id": "accommodating_3",
+      "question": "我在相关情境中经常表现出「Accommodating」这一倾向。",
+      "scoreKey": "ACCOMMODATING"
+    },
+    {
+      "id": "accommodating_4",
+      "question": "我在相关情境中经常表现出「Accommodating」这一倾向。",
+      "scoreKey": "ACCOMMODATING"
+    },
+    {
+      "id": "accommodating_5",
+      "question": "我在相关情境中经常表现出「Accommodating」这一倾向。",
+      "scoreKey": "ACCOMMODATING"
+    },
+    {
+      "id": "accommodating_6",
+      "question": "我在相关情境中经常表现出「Accommodating」这一倾向。",
+      "scoreKey": "ACCOMMODATING"
+    }
+  ],
+  "results": {
+    "COLLABORATING": {
+      "title": "Collaborating",
+      "summary": "你的主要结果指向Collaborating。这不是固定标签，而是帮助你理解当前偏好的观察角度。",
+      "traits": [
+        "偏好清晰",
+        "模式稳定",
+        "可被情境调整"
+      ],
+      "strengths": [
+        "能在合适环境中发挥明显优势",
+        "容易形成可复用的方法",
+        "对相关信号较敏感"
+      ],
+      "weaknesses": [
+        "压力下可能过度使用同一种策略",
+        "容易忽略相反视角",
+        "需要避免把结果当成限制"
+      ],
+      "careers": [
+        "复盘最近三次真实情境",
+        "找到最常触发该模式的场景",
+        "设计一个小实验"
+      ],
+      "relationships": [
+        "向他人说明你的偏好，同时保留对方不同节奏的空间。"
+      ],
+      "growthPlan": [
+        "记录一周内的典型表现",
+        "选择一个需要微调的行为",
+        "用一次低风险场景练习新策略"
+      ]
+    },
+    "COMPETING": {
+      "title": "Competing",
+      "summary": "你的主要结果指向Competing。这不是固定标签，而是帮助你理解当前偏好的观察角度。",
+      "traits": [
+        "偏好清晰",
+        "模式稳定",
+        "可被情境调整"
+      ],
+      "strengths": [
+        "能在合适环境中发挥明显优势",
+        "容易形成可复用的方法",
+        "对相关信号较敏感"
+      ],
+      "weaknesses": [
+        "压力下可能过度使用同一种策略",
+        "容易忽略相反视角",
+        "需要避免把结果当成限制"
+      ],
+      "careers": [
+        "复盘最近三次真实情境",
+        "找到最常触发该模式的场景",
+        "设计一个小实验"
+      ],
+      "relationships": [
+        "向他人说明你的偏好，同时保留对方不同节奏的空间。"
+      ],
+      "growthPlan": [
+        "记录一周内的典型表现",
+        "选择一个需要微调的行为",
+        "用一次低风险场景练习新策略"
+      ]
+    },
+    "COMPROMISING": {
+      "title": "Compromising",
+      "summary": "你的主要结果指向Compromising。这不是固定标签，而是帮助你理解当前偏好的观察角度。",
+      "traits": [
+        "偏好清晰",
+        "模式稳定",
+        "可被情境调整"
+      ],
+      "strengths": [
+        "能在合适环境中发挥明显优势",
+        "容易形成可复用的方法",
+        "对相关信号较敏感"
+      ],
+      "weaknesses": [
+        "压力下可能过度使用同一种策略",
+        "容易忽略相反视角",
+        "需要避免把结果当成限制"
+      ],
+      "careers": [
+        "复盘最近三次真实情境",
+        "找到最常触发该模式的场景",
+        "设计一个小实验"
+      ],
+      "relationships": [
+        "向他人说明你的偏好，同时保留对方不同节奏的空间。"
+      ],
+      "growthPlan": [
+        "记录一周内的典型表现",
+        "选择一个需要微调的行为",
+        "用一次低风险场景练习新策略"
+      ]
+    },
+    "AVOIDING": {
+      "title": "Avoiding",
+      "summary": "你的主要结果指向Avoiding。这不是固定标签，而是帮助你理解当前偏好的观察角度。",
+      "traits": [
+        "偏好清晰",
+        "模式稳定",
+        "可被情境调整"
+      ],
+      "strengths": [
+        "能在合适环境中发挥明显优势",
+        "容易形成可复用的方法",
+        "对相关信号较敏感"
+      ],
+      "weaknesses": [
+        "压力下可能过度使用同一种策略",
+        "容易忽略相反视角",
+        "需要避免把结果当成限制"
+      ],
+      "careers": [
+        "复盘最近三次真实情境",
+        "找到最常触发该模式的场景",
+        "设计一个小实验"
+      ],
+      "relationships": [
+        "向他人说明你的偏好，同时保留对方不同节奏的空间。"
+      ],
+      "growthPlan": [
+        "记录一周内的典型表现",
+        "选择一个需要微调的行为",
+        "用一次低风险场景练习新策略"
+      ]
+    },
+    "ACCOMMODATING": {
+      "title": "Accommodating",
+      "summary": "你的主要结果指向Accommodating。这不是固定标签，而是帮助你理解当前偏好的观察角度。",
+      "traits": [
+        "偏好清晰",
+        "模式稳定",
+        "可被情境调整"
+      ],
+      "strengths": [
+        "能在合适环境中发挥明显优势",
+        "容易形成可复用的方法",
+        "对相关信号较敏感"
+      ],
+      "weaknesses": [
+        "压力下可能过度使用同一种策略",
+        "容易忽略相反视角",
+        "需要避免把结果当成限制"
+      ],
+      "careers": [
+        "复盘最近三次真实情境",
+        "找到最常触发该模式的场景",
+        "设计一个小实验"
+      ],
+      "relationships": [
+        "向他人说明你的偏好，同时保留对方不同节奏的空间。"
+      ],
+      "growthPlan": [
+        "记录一周内的典型表现",
+        "选择一个需要微调的行为",
+        "用一次低风险场景练习新策略"
+      ]
+    }
+  }
+}

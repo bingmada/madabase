@@ -1,0 +1,605 @@
+{
+  "title": "九型人格测试",
+  "description": "通过 54 个快速问题了解你的九型人格模式。",
+  "instructions": [
+    "请根据最近真实行为作答，不要按理想中的自己选择。",
+    "当描述明显符合或不符合时，请大胆使用量表两端。",
+    "报告会突出你的最强模式和可执行的下一步建议。"
+  ],
+  "reportLabels": {
+    "strengths": "优势",
+    "weaknesses": "风险",
+    "careers": "适合方法",
+    "relationships": "关系提示",
+    "growth": "成长计划"
+  },
+  "scale": [
+    {
+      "id": "1",
+      "text": "非常不同意",
+      "value": 1
+    },
+    {
+      "id": "2",
+      "text": "不同意",
+      "value": 2
+    },
+    {
+      "id": "3",
+      "text": "一般",
+      "value": 3
+    },
+    {
+      "id": "4",
+      "text": "同意",
+      "value": 4
+    },
+    {
+      "id": "5",
+      "text": "非常同意",
+      "value": 5
+    }
+  ],
+  "scaleQuestions": [
+    {
+      "id": "reformer_1",
+      "question": "我在相关情境中经常表现出「Reformer」这一倾向。",
+      "scoreKey": "REFORMER"
+    },
+    {
+      "id": "reformer_2",
+      "question": "我在相关情境中经常表现出「Reformer」这一倾向。",
+      "scoreKey": "REFORMER"
+    },
+    {
+      "id": "reformer_3",
+      "question": "我在相关情境中经常表现出「Reformer」这一倾向。",
+      "scoreKey": "REFORMER"
+    },
+    {
+      "id": "reformer_4",
+      "question": "我在相关情境中经常表现出「Reformer」这一倾向。",
+      "scoreKey": "REFORMER"
+    },
+    {
+      "id": "reformer_5",
+      "question": "我在相关情境中经常表现出「Reformer」这一倾向。",
+      "scoreKey": "REFORMER"
+    },
+    {
+      "id": "reformer_6",
+      "question": "我在相关情境中经常表现出「Reformer」这一倾向。",
+      "scoreKey": "REFORMER"
+    },
+    {
+      "id": "helper_1",
+      "question": "我在相关情境中经常表现出「Helper」这一倾向。",
+      "scoreKey": "HELPER"
+    },
+    {
+      "id": "helper_2",
+      "question": "我在相关情境中经常表现出「Helper」这一倾向。",
+      "scoreKey": "HELPER"
+    },
+    {
+      "id": "helper_3",
+      "question": "我在相关情境中经常表现出「Helper」这一倾向。",
+      "scoreKey": "HELPER"
+    },
+    {
+      "id": "helper_4",
+      "question": "我在相关情境中经常表现出「Helper」这一倾向。",
+      "scoreKey": "HELPER"
+    },
+    {
+      "id": "helper_5",
+      "question": "我在相关情境中经常表现出「Helper」这一倾向。",
+      "scoreKey": "HELPER"
+    },
+    {
+      "id": "helper_6",
+      "question": "我在相关情境中经常表现出「Helper」这一倾向。",
+      "scoreKey": "HELPER"
+    },
+    {
+      "id": "achiever_1",
+      "question": "我在相关情境中经常表现出「Achiever」这一倾向。",
+      "scoreKey": "ACHIEVER"
+    },
+    {
+      "id": "achiever_2",
+      "question": "我在相关情境中经常表现出「Achiever」这一倾向。",
+      "scoreKey": "ACHIEVER"
+    },
+    {
+      "id": "achiever_3",
+      "question": "我在相关情境中经常表现出「Achiever」这一倾向。",
+      "scoreKey": "ACHIEVER"
+    },
+    {
+      "id": "achiever_4",
+      "question": "我在相关情境中经常表现出「Achiever」这一倾向。",
+      "scoreKey": "ACHIEVER"
+    },
+    {
+      "id": "achiever_5",
+      "question": "我在相关情境中经常表现出「Achiever」这一倾向。",
+      "scoreKey": "ACHIEVER"
+    },
+    {
+      "id": "achiever_6",
+      "question": "我在相关情境中经常表现出「Achiever」这一倾向。",
+      "scoreKey": "ACHIEVER"
+    },
+    {
+      "id": "individualist_1",
+      "question": "我在相关情境中经常表现出「Individualist」这一倾向。",
+      "scoreKey": "INDIVIDUALIST"
+    },
+    {
+      "id": "individualist_2",
+      "question": "我在相关情境中经常表现出「Individualist」这一倾向。",
+      "scoreKey": "INDIVIDUALIST"
+    },
+    {
+      "id": "individualist_3",
+      "question": "我在相关情境中经常表现出「Individualist」这一倾向。",
+      "scoreKey": "INDIVIDUALIST"
+    },
+    {
+      "id": "individualist_4",
+      "question": "我在相关情境中经常表现出「Individualist」这一倾向。",
+      "scoreKey": "INDIVIDUALIST"
+    },
+    {
+      "id": "individualist_5",
+      "question": "我在相关情境中经常表现出「Individualist」这一倾向。",
+      "scoreKey": "INDIVIDUALIST"
+    },
+    {
+      "id": "individualist_6",
+      "question": "我在相关情境中经常表现出「Individualist」这一倾向。",
+      "scoreKey": "INDIVIDUALIST"
+    },
+    {
+      "id": "investigator_1",
+      "question": "我在相关情境中经常表现出「Investigator」这一倾向。",
+      "scoreKey": "INVESTIGATOR"
+    },
+    {
+      "id": "investigator_2",
+      "question": "我在相关情境中经常表现出「Investigator」这一倾向。",
+      "scoreKey": "INVESTIGATOR"
+    },
+    {
+      "id": "investigator_3",
+      "question": "我在相关情境中经常表现出「Investigator」这一倾向。",
+      "scoreKey": "INVESTIGATOR"
+    },
+    {
+      "id": "investigator_4",
+      "question": "我在相关情境中经常表现出「Investigator」这一倾向。",
+      "scoreKey": "INVESTIGATOR"
+    },
+    {
+      "id": "investigator_5",
+      "question": "我在相关情境中经常表现出「Investigator」这一倾向。",
+      "scoreKey": "INVESTIGATOR"
+    },
+    {
+      "id": "investigator_6",
+      "question": "我在相关情境中经常表现出「Investigator」这一倾向。",
+      "scoreKey": "INVESTIGATOR"
+    },
+    {
+      "id": "loyalist_1",
+      "question": "我在相关情境中经常表现出「Loyalist」这一倾向。",
+      "scoreKey": "LOYALIST"
+    },
+    {
+      "id": "loyalist_2",
+      "question": "我在相关情境中经常表现出「Loyalist」这一倾向。",
+      "scoreKey": "LOYALIST"
+    },
+    {
+      "id": "loyalist_3",
+      "question": "我在相关情境中经常表现出「Loyalist」这一倾向。",
+      "scoreKey": "LOYALIST"
+    },
+    {
+      "id": "loyalist_4",
+      "question": "我在相关情境中经常表现出「Loyalist」这一倾向。",
+      "scoreKey": "LOYALIST"
+    },
+    {
+      "id": "loyalist_5",
+      "question": "我在相关情境中经常表现出「Loyalist」这一倾向。",
+      "scoreKey": "LOYALIST"
+    },
+    {
+      "id": "loyalist_6",
+      "question": "我在相关情境中经常表现出「Loyalist」这一倾向。",
+      "scoreKey": "LOYALIST"
+    },
+    {
+      "id": "enthusiast_1",
+      "question": "我在相关情境中经常表现出「Enthusiast」这一倾向。",
+      "scoreKey": "ENTHUSIAST"
+    },
+    {
+      "id": "enthusiast_2",
+      "question": "我在相关情境中经常表现出「Enthusiast」这一倾向。",
+      "scoreKey": "ENTHUSIAST"
+    },
+    {
+      "id": "enthusiast_3",
+      "question": "我在相关情境中经常表现出「Enthusiast」这一倾向。",
+      "scoreKey": "ENTHUSIAST"
+    },
+    {
+      "id": "enthusiast_4",
+      "question": "我在相关情境中经常表现出「Enthusiast」这一倾向。",
+      "scoreKey": "ENTHUSIAST"
+    },
+    {
+      "id": "enthusiast_5",
+      "question": "我在相关情境中经常表现出「Enthusiast」这一倾向。",
+      "scoreKey": "ENTHUSIAST"
+    },
+    {
+      "id": "enthusiast_6",
+      "question": "我在相关情境中经常表现出「Enthusiast」这一倾向。",
+      "scoreKey": "ENTHUSIAST"
+    },
+    {
+      "id": "challenger_1",
+      "question": "我在相关情境中经常表现出「Challenger」这一倾向。",
+      "scoreKey": "CHALLENGER"
+    },
+    {
+      "id": "challenger_2",
+      "question": "我在相关情境中经常表现出「Challenger」这一倾向。",
+      "scoreKey": "CHALLENGER"
+    },
+    {
+      "id": "challenger_3",
+      "question": "我在相关情境中经常表现出「Challenger」这一倾向。",
+      "scoreKey": "CHALLENGER"
+    },
+    {
+      "id": "challenger_4",
+      "question": "我在相关情境中经常表现出「Challenger」这一倾向。",
+      "scoreKey": "CHALLENGER"
+    },
+    {
+      "id": "challenger_5",
+      "question": "我在相关情境中经常表现出「Challenger」这一倾向。",
+      "scoreKey": "CHALLENGER"
+    },
+    {
+      "id": "challenger_6",
+      "question": "我在相关情境中经常表现出「Challenger」这一倾向。",
+      "scoreKey": "CHALLENGER"
+    },
+    {
+      "id": "peacemaker_1",
+      "question": "我在相关情境中经常表现出「Peacemaker」这一倾向。",
+      "scoreKey": "PEACEMAKER"
+    },
+    {
+      "id": "peacemaker_2",
+      "question": "我在相关情境中经常表现出「Peacemaker」这一倾向。",
+      "scoreKey": "PEACEMAKER"
+    },
+    {
+      "id": "peacemaker_3",
+      "question": "我在相关情境中经常表现出「Peacemaker」这一倾向。",
+      "scoreKey": "PEACEMAKER"
+    },
+    {
+      "id": "peacemaker_4",
+      "question": "我在相关情境中经常表现出「Peacemaker」这一倾向。",
+      "scoreKey": "PEACEMAKER"
+    },
+    {
+      "id": "peacemaker_5",
+      "question": "我在相关情境中经常表现出「Peacemaker」这一倾向。",
+      "scoreKey": "PEACEMAKER"
+    },
+    {
+      "id": "peacemaker_6",
+      "question": "我在相关情境中经常表现出「Peacemaker」这一倾向。",
+      "scoreKey": "PEACEMAKER"
+    }
+  ],
+  "results": {
+    "REFORMER": {
+      "title": "Reformer",
+      "summary": "你的主要结果指向Reformer。这不是固定标签，而是帮助你理解当前偏好的观察角度。",
+      "traits": [
+        "偏好清晰",
+        "模式稳定",
+        "可被情境调整"
+      ],
+      "strengths": [
+        "能在合适环境中发挥明显优势",
+        "容易形成可复用的方法",
+        "对相关信号较敏感"
+      ],
+      "weaknesses": [
+        "压力下可能过度使用同一种策略",
+        "容易忽略相反视角",
+        "需要避免把结果当成限制"
+      ],
+      "careers": [
+        "复盘最近三次真实情境",
+        "找到最常触发该模式的场景",
+        "设计一个小实验"
+      ],
+      "relationships": [
+        "向他人说明你的偏好，同时保留对方不同节奏的空间。"
+      ],
+      "growthPlan": [
+        "记录一周内的典型表现",
+        "选择一个需要微调的行为",
+        "用一次低风险场景练习新策略"
+      ]
+    },
+    "HELPER": {
+      "title": "Helper",
+      "summary": "你的主要结果指向Helper。这不是固定标签，而是帮助你理解当前偏好的观察角度。",
+      "traits": [
+        "偏好清晰",
+        "模式稳定",
+        "可被情境调整"
+      ],
+      "strengths": [
+        "能在合适环境中发挥明显优势",
+        "容易形成可复用的方法",
+        "对相关信号较敏感"
+      ],
+      "weaknesses": [
+        "压力下可能过度使用同一种策略",
+        "容易忽略相反视角",
+        "需要避免把结果当成限制"
+      ],
+      "careers": [
+        "复盘最近三次真实情境",
+        "找到最常触发该模式的场景",
+        "设计一个小实验"
+      ],
+      "relationships": [
+        "向他人说明你的偏好，同时保留对方不同节奏的空间。"
+      ],
+      "growthPlan": [
+        "记录一周内的典型表现",
+        "选择一个需要微调的行为",
+        "用一次低风险场景练习新策略"
+      ]
+    },
+    "ACHIEVER": {
+      "title": "Achiever",
+      "summary": "你的主要结果指向Achiever。这不是固定标签，而是帮助你理解当前偏好的观察角度。",
+      "traits": [
+        "偏好清晰",
+        "模式稳定",
+        "可被情境调整"
+      ],
+      "strengths": [
+        "能在合适环境中发挥明显优势",
+        "容易形成可复用的方法",
+        "对相关信号较敏感"
+      ],
+      "weaknesses": [
+        "压力下可能过度使用同一种策略",
+        "容易忽略相反视角",
+        "需要避免把结果当成限制"
+      ],
+      "careers": [
+        "复盘最近三次真实情境",
+        "找到最常触发该模式的场景",
+        "设计一个小实验"
+      ],
+      "relationships": [
+        "向他人说明你的偏好，同时保留对方不同节奏的空间。"
+      ],
+      "growthPlan": [
+        "记录一周内的典型表现",
+        "选择一个需要微调的行为",
+        "用一次低风险场景练习新策略"
+      ]
+    },
+    "INDIVIDUALIST": {
+      "title": "Individualist",
+      "summary": "你的主要结果指向Individualist。这不是固定标签，而是帮助你理解当前偏好的观察角度。",
+      "traits": [
+        "偏好清晰",
+        "模式稳定",
+        "可被情境调整"
+      ],
+      "strengths": [
+        "能在合适环境中发挥明显优势",
+        "容易形成可复用的方法",
+        "对相关信号较敏感"
+      ],
+      "weaknesses": [
+        "压力下可能过度使用同一种策略",
+        "容易忽略相反视角",
+        "需要避免把结果当成限制"
+      ],
+      "careers": [
+        "复盘最近三次真实情境",
+        "找到最常触发该模式的场景",
+        "设计一个小实验"
+      ],
+      "relationships": [
+        "向他人说明你的偏好，同时保留对方不同节奏的空间。"
+      ],
+      "growthPlan": [
+        "记录一周内的典型表现",
+        "选择一个需要微调的行为",
+        "用一次低风险场景练习新策略"
+      ]
+    },
+    "INVESTIGATOR": {
+      "title": "Investigator",
+      "summary": "你的主要结果指向Investigator。这不是固定标签，而是帮助你理解当前偏好的观察角度。",
+      "traits": [
+        "偏好清晰",
+        "模式稳定",
+        "可被情境调整"
+      ],
+      "strengths": [
+        "能在合适环境中发挥明显优势",
+        "容易形成可复用的方法",
+        "对相关信号较敏感"
+      ],
+      "weaknesses": [
+        "压力下可能过度使用同一种策略",
+        "容易忽略相反视角",
+        "需要避免把结果当成限制"
+      ],
+      "careers": [
+        "复盘最近三次真实情境",
+        "找到最常触发该模式的场景",
+        "设计一个小实验"
+      ],
+      "relationships": [
+        "向他人说明你的偏好，同时保留对方不同节奏的空间。"
+      ],
+      "growthPlan": [
+        "记录一周内的典型表现",
+        "选择一个需要微调的行为",
+        "用一次低风险场景练习新策略"
+      ]
+    },
+    "LOYALIST": {
+      "title": "Loyalist",
+      "summary": "你的主要结果指向Loyalist。这不是固定标签，而是帮助你理解当前偏好的观察角度。",
+      "traits": [
+        "偏好清晰",
+        "模式稳定",
+        "可被情境调整"
+      ],
+      "strengths": [
+        "能在合适环境中发挥明显优势",
+        "容易形成可复用的方法",
+        "对相关信号较敏感"
+      ],
+      "weaknesses": [
+        "压力下可能过度使用同一种策略",
+        "容易忽略相反视角",
+        "需要避免把结果当成限制"
+      ],
+      "careers": [
+        "复盘最近三次真实情境",
+        "找到最常触发该模式的场景",
+        "设计一个小实验"
+      ],
+      "relationships": [
+        "向他人说明你的偏好，同时保留对方不同节奏的空间。"
+      ],
+      "growthPlan": [
+        "记录一周内的典型表现",
+        "选择一个需要微调的行为",
+        "用一次低风险场景练习新策略"
+      ]
+    },
+    "ENTHUSIAST": {
+      "title": "Enthusiast",
+      "summary": "你的主要结果指向Enthusiast。这不是固定标签，而是帮助你理解当前偏好的观察角度。",
+      "traits": [
+        "偏好清晰",
+        "模式稳定",
+        "可被情境调整"
+      ],
+      "strengths": [
+        "能在合适环境中发挥明显优势",
+        "容易形成可复用的方法",
+        "对相关信号较敏感"
+      ],
+      "weaknesses": [
+        "压力下可能过度使用同一种策略",
+        "容易忽略相反视角",
+        "需要避免把结果当成限制"
+      ],
+      "careers": [
+        "复盘最近三次真实情境",
+        "找到最常触发该模式的场景",
+        "设计一个小实验"
+      ],
+      "relationships": [
+        "向他人说明你的偏好，同时保留对方不同节奏的空间。"
+      ],
+      "growthPlan": [
+        "记录一周内的典型表现",
+        "选择一个需要微调的行为",
+        "用一次低风险场景练习新策略"
+      ]
+    },
+    "CHALLENGER": {
+      "title": "Challenger",
+      "summary": "你的主要结果指向Challenger。这不是固定标签，而是帮助你理解当前偏好的观察角度。",
+      "traits": [
+        "偏好清晰",
+        "模式稳定",
+        "可被情境调整"
+      ],
+      "strengths": [
+        "能在合适环境中发挥明显优势",
+        "容易形成可复用的方法",
+        "对相关信号较敏感"
+      ],
+      "weaknesses": [
+        "压力下可能过度使用同一种策略",
+        "容易忽略相反视角",
+        "需要避免把结果当成限制"
+      ],
+      "careers": [
+        "复盘最近三次真实情境",
+        "找到最常触发该模式的场景",
+        "设计一个小实验"
+      ],
+      "relationships": [
+        "向他人说明你的偏好，同时保留对方不同节奏的空间。"
+      ],
+      "growthPlan": [
+        "记录一周内的典型表现",
+        "选择一个需要微调的行为",
+        "用一次低风险场景练习新策略"
+      ]
+    },
+    "PEACEMAKER": {
+      "title": "Peacemaker",
+      "summary": "你的主要结果指向Peacemaker。这不是固定标签，而是帮助你理解当前偏好的观察角度。",
+      "traits": [
+        "偏好清晰",
+        "模式稳定",
+        "可被情境调整"
+      ],
+      "strengths": [
+        "能在合适环境中发挥明显优势",
+        "容易形成可复用的方法",
+        "对相关信号较敏感"
+      ],
+      "weaknesses": [
+        "压力下可能过度使用同一种策略",
+        "容易忽略相反视角",
+        "需要避免把结果当成限制"
+      ],
+      "careers": [
+        "复盘最近三次真实情境",
+        "找到最常触发该模式的场景",
+        "设计一个小实验"
+      ],
+      "relationships": [
+        "向他人说明你的偏好，同时保留对方不同节奏的空间。"
+      ],
+      "growthPlan": [
+        "记录一周内的典型表现",
+        "选择一个需要微调的行为",
+        "用一次低风险场景练习新策略"
+      ]
+    }
+  }
+}

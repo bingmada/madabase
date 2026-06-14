@@ -1,0 +1,288 @@
+{
+  "title": "DISC Personality Test",
+  "description": "Answer 24 quick prompts to explore your disc personality pattern.",
+  "instructions": [
+    "Answer based on recent real behavior, not an ideal version of yourself.",
+    "Use the whole scale when a statement clearly fits or does not fit.",
+    "Your report highlights the strongest pattern and practical next steps."
+  ],
+  "scale": [
+    {
+      "id": "1",
+      "text": "Strongly disagree",
+      "value": 1
+    },
+    {
+      "id": "2",
+      "text": "Disagree",
+      "value": 2
+    },
+    {
+      "id": "3",
+      "text": "Neutral",
+      "value": 3
+    },
+    {
+      "id": "4",
+      "text": "Agree",
+      "value": 4
+    },
+    {
+      "id": "5",
+      "text": "Strongly agree",
+      "value": 5
+    }
+  ],
+  "scaleQuestions": [
+    {
+      "id": "dominance_1",
+      "question": "In relevant situations, I often show a Dominance pattern.",
+      "scoreKey": "DOMINANCE"
+    },
+    {
+      "id": "dominance_2",
+      "question": "In relevant situations, I often show a Dominance pattern.",
+      "scoreKey": "DOMINANCE"
+    },
+    {
+      "id": "dominance_3",
+      "question": "In relevant situations, I often show a Dominance pattern.",
+      "scoreKey": "DOMINANCE"
+    },
+    {
+      "id": "dominance_4",
+      "question": "In relevant situations, I often show a Dominance pattern.",
+      "scoreKey": "DOMINANCE"
+    },
+    {
+      "id": "dominance_5",
+      "question": "In relevant situations, I often show a Dominance pattern.",
+      "scoreKey": "DOMINANCE"
+    },
+    {
+      "id": "dominance_6",
+      "question": "In relevant situations, I often show a Dominance pattern.",
+      "scoreKey": "DOMINANCE"
+    },
+    {
+      "id": "influence_1",
+      "question": "In relevant situations, I often show a Influence pattern.",
+      "scoreKey": "INFLUENCE"
+    },
+    {
+      "id": "influence_2",
+      "question": "In relevant situations, I often show a Influence pattern.",
+      "scoreKey": "INFLUENCE"
+    },
+    {
+      "id": "influence_3",
+      "question": "In relevant situations, I often show a Influence pattern.",
+      "scoreKey": "INFLUENCE"
+    },
+    {
+      "id": "influence_4",
+      "question": "In relevant situations, I often show a Influence pattern.",
+      "scoreKey": "INFLUENCE"
+    },
+    {
+      "id": "influence_5",
+      "question": "In relevant situations, I often show a Influence pattern.",
+      "scoreKey": "INFLUENCE"
+    },
+    {
+      "id": "influence_6",
+      "question": "In relevant situations, I often show a Influence pattern.",
+      "scoreKey": "INFLUENCE"
+    },
+    {
+      "id": "steadiness_1",
+      "question": "In relevant situations, I often show a Steadiness pattern.",
+      "scoreKey": "STEADINESS"
+    },
+    {
+      "id": "steadiness_2",
+      "question": "In relevant situations, I often show a Steadiness pattern.",
+      "scoreKey": "STEADINESS"
+    },
+    {
+      "id": "steadiness_3",
+      "question": "In relevant situations, I often show a Steadiness pattern.",
+      "scoreKey": "STEADINESS"
+    },
+    {
+      "id": "steadiness_4",
+      "question": "In relevant situations, I often show a Steadiness pattern.",
+      "scoreKey": "STEADINESS"
+    },
+    {
+      "id": "steadiness_5",
+      "question": "In relevant situations, I often show a Steadiness pattern.",
+      "scoreKey": "STEADINESS"
+    },
+    {
+      "id": "steadiness_6",
+      "question": "In relevant situations, I often show a Steadiness pattern.",
+      "scoreKey": "STEADINESS"
+    },
+    {
+      "id": "compliance_1",
+      "question": "In relevant situations, I often show a Compliance pattern.",
+      "scoreKey": "COMPLIANCE"
+    },
+    {
+      "id": "compliance_2",
+      "question": "In relevant situations, I often show a Compliance pattern.",
+      "scoreKey": "COMPLIANCE"
+    },
+    {
+      "id": "compliance_3",
+      "question": "In relevant situations, I often show a Compliance pattern.",
+      "scoreKey": "COMPLIANCE"
+    },
+    {
+      "id": "compliance_4",
+      "question": "In relevant situations, I often show a Compliance pattern.",
+      "scoreKey": "COMPLIANCE"
+    },
+    {
+      "id": "compliance_5",
+      "question": "In relevant situations, I often show a Compliance pattern.",
+      "scoreKey": "COMPLIANCE"
+    },
+    {
+      "id": "compliance_6",
+      "question": "In relevant situations, I often show a Compliance pattern.",
+      "scoreKey": "COMPLIANCE"
+    }
+  ],
+  "results": {
+    "DOMINANCE": {
+      "title": "Dominance",
+      "summary": "Your primary result points to a Dominance pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    },
+    "INFLUENCE": {
+      "title": "Influence",
+      "summary": "Your primary result points to a Influence pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    },
+    "STEADINESS": {
+      "title": "Steadiness",
+      "summary": "Your primary result points to a Steadiness pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    },
+    "COMPLIANCE": {
+      "title": "Compliance",
+      "summary": "Your primary result points to a Compliance pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    }
+  }
+}

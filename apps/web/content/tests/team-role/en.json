@@ -1,0 +1,350 @@
+{
+  "title": "Team Role Test",
+  "description": "Answer 30 quick prompts to explore your team role pattern.",
+  "instructions": [
+    "Answer based on recent real behavior, not an ideal version of yourself.",
+    "Use the whole scale when a statement clearly fits or does not fit.",
+    "Your report highlights the strongest pattern and practical next steps."
+  ],
+  "scale": [
+    {
+      "id": "1",
+      "text": "Strongly disagree",
+      "value": 1
+    },
+    {
+      "id": "2",
+      "text": "Disagree",
+      "value": 2
+    },
+    {
+      "id": "3",
+      "text": "Neutral",
+      "value": 3
+    },
+    {
+      "id": "4",
+      "text": "Agree",
+      "value": 4
+    },
+    {
+      "id": "5",
+      "text": "Strongly agree",
+      "value": 5
+    }
+  ],
+  "scaleQuestions": [
+    {
+      "id": "coordinator_1",
+      "question": "In relevant situations, I often show a Coordinator pattern.",
+      "scoreKey": "COORDINATOR"
+    },
+    {
+      "id": "coordinator_2",
+      "question": "In relevant situations, I often show a Coordinator pattern.",
+      "scoreKey": "COORDINATOR"
+    },
+    {
+      "id": "coordinator_3",
+      "question": "In relevant situations, I often show a Coordinator pattern.",
+      "scoreKey": "COORDINATOR"
+    },
+    {
+      "id": "coordinator_4",
+      "question": "In relevant situations, I often show a Coordinator pattern.",
+      "scoreKey": "COORDINATOR"
+    },
+    {
+      "id": "coordinator_5",
+      "question": "In relevant situations, I often show a Coordinator pattern.",
+      "scoreKey": "COORDINATOR"
+    },
+    {
+      "id": "coordinator_6",
+      "question": "In relevant situations, I often show a Coordinator pattern.",
+      "scoreKey": "COORDINATOR"
+    },
+    {
+      "id": "creator_1",
+      "question": "In relevant situations, I often show a Creator pattern.",
+      "scoreKey": "CREATOR"
+    },
+    {
+      "id": "creator_2",
+      "question": "In relevant situations, I often show a Creator pattern.",
+      "scoreKey": "CREATOR"
+    },
+    {
+      "id": "creator_3",
+      "question": "In relevant situations, I often show a Creator pattern.",
+      "scoreKey": "CREATOR"
+    },
+    {
+      "id": "creator_4",
+      "question": "In relevant situations, I often show a Creator pattern.",
+      "scoreKey": "CREATOR"
+    },
+    {
+      "id": "creator_5",
+      "question": "In relevant situations, I often show a Creator pattern.",
+      "scoreKey": "CREATOR"
+    },
+    {
+      "id": "creator_6",
+      "question": "In relevant situations, I often show a Creator pattern.",
+      "scoreKey": "CREATOR"
+    },
+    {
+      "id": "implementer_1",
+      "question": "In relevant situations, I often show a Implementer pattern.",
+      "scoreKey": "IMPLEMENTER"
+    },
+    {
+      "id": "implementer_2",
+      "question": "In relevant situations, I often show a Implementer pattern.",
+      "scoreKey": "IMPLEMENTER"
+    },
+    {
+      "id": "implementer_3",
+      "question": "In relevant situations, I often show a Implementer pattern.",
+      "scoreKey": "IMPLEMENTER"
+    },
+    {
+      "id": "implementer_4",
+      "question": "In relevant situations, I often show a Implementer pattern.",
+      "scoreKey": "IMPLEMENTER"
+    },
+    {
+      "id": "implementer_5",
+      "question": "In relevant situations, I often show a Implementer pattern.",
+      "scoreKey": "IMPLEMENTER"
+    },
+    {
+      "id": "implementer_6",
+      "question": "In relevant situations, I often show a Implementer pattern.",
+      "scoreKey": "IMPLEMENTER"
+    },
+    {
+      "id": "analyst_1",
+      "question": "In relevant situations, I often show a Analyst pattern.",
+      "scoreKey": "ANALYST"
+    },
+    {
+      "id": "analyst_2",
+      "question": "In relevant situations, I often show a Analyst pattern.",
+      "scoreKey": "ANALYST"
+    },
+    {
+      "id": "analyst_3",
+      "question": "In relevant situations, I often show a Analyst pattern.",
+      "scoreKey": "ANALYST"
+    },
+    {
+      "id": "analyst_4",
+      "question": "In relevant situations, I often show a Analyst pattern.",
+      "scoreKey": "ANALYST"
+    },
+    {
+      "id": "analyst_5",
+      "question": "In relevant situations, I often show a Analyst pattern.",
+      "scoreKey": "ANALYST"
+    },
+    {
+      "id": "analyst_6",
+      "question": "In relevant situations, I often show a Analyst pattern.",
+      "scoreKey": "ANALYST"
+    },
+    {
+      "id": "supporter_1",
+      "question": "In relevant situations, I often show a Supporter pattern.",
+      "scoreKey": "SUPPORTER"
+    },
+    {
+      "id": "supporter_2",
+      "question": "In relevant situations, I often show a Supporter pattern.",
+      "scoreKey": "SUPPORTER"
+    },
+    {
+      "id": "supporter_3",
+      "question": "In relevant situations, I often show a Supporter pattern.",
+      "scoreKey": "SUPPORTER"
+    },
+    {
+      "id": "supporter_4",
+      "question": "In relevant situations, I often show a Supporter pattern.",
+      "scoreKey": "SUPPORTER"
+    },
+    {
+      "id": "supporter_5",
+      "question": "In relevant situations, I often show a Supporter pattern.",
+      "scoreKey": "SUPPORTER"
+    },
+    {
+      "id": "supporter_6",
+      "question": "In relevant situations, I often show a Supporter pattern.",
+      "scoreKey": "SUPPORTER"
+    }
+  ],
+  "results": {
+    "COORDINATOR": {
+      "title": "Coordinator",
+      "summary": "Your primary result points to a Coordinator pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    },
+    "CREATOR": {
+      "title": "Creator",
+      "summary": "Your primary result points to a Creator pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    },
+    "IMPLEMENTER": {
+      "title": "Implementer",
+      "summary": "Your primary result points to a Implementer pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    },
+    "ANALYST": {
+      "title": "Analyst",
+      "summary": "Your primary result points to a Analyst pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    },
+    "SUPPORTER": {
+      "title": "Supporter",
+      "summary": "Your primary result points to a Supporter pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    }
+  }
+}

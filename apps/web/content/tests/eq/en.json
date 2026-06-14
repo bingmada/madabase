@@ -1,0 +1,288 @@
+{
+  "title": "Emotional Intelligence Test",
+  "description": "Answer 24 quick prompts to explore your emotional intelligence pattern.",
+  "instructions": [
+    "Answer based on recent real behavior, not an ideal version of yourself.",
+    "Use the whole scale when a statement clearly fits or does not fit.",
+    "Your report highlights the strongest pattern and practical next steps."
+  ],
+  "scale": [
+    {
+      "id": "1",
+      "text": "Strongly disagree",
+      "value": 1
+    },
+    {
+      "id": "2",
+      "text": "Disagree",
+      "value": 2
+    },
+    {
+      "id": "3",
+      "text": "Neutral",
+      "value": 3
+    },
+    {
+      "id": "4",
+      "text": "Agree",
+      "value": 4
+    },
+    {
+      "id": "5",
+      "text": "Strongly agree",
+      "value": 5
+    }
+  ],
+  "scaleQuestions": [
+    {
+      "id": "self_awareness_1",
+      "question": "In relevant situations, I often show a Self Awareness pattern.",
+      "scoreKey": "SELF_AWARENESS"
+    },
+    {
+      "id": "self_awareness_2",
+      "question": "In relevant situations, I often show a Self Awareness pattern.",
+      "scoreKey": "SELF_AWARENESS"
+    },
+    {
+      "id": "self_awareness_3",
+      "question": "In relevant situations, I often show a Self Awareness pattern.",
+      "scoreKey": "SELF_AWARENESS"
+    },
+    {
+      "id": "self_awareness_4",
+      "question": "In relevant situations, I often show a Self Awareness pattern.",
+      "scoreKey": "SELF_AWARENESS"
+    },
+    {
+      "id": "self_awareness_5",
+      "question": "In relevant situations, I often show a Self Awareness pattern.",
+      "scoreKey": "SELF_AWARENESS"
+    },
+    {
+      "id": "self_awareness_6",
+      "question": "In relevant situations, I often show a Self Awareness pattern.",
+      "scoreKey": "SELF_AWARENESS"
+    },
+    {
+      "id": "self_regulation_1",
+      "question": "In relevant situations, I often show a Self Regulation pattern.",
+      "scoreKey": "SELF_REGULATION"
+    },
+    {
+      "id": "self_regulation_2",
+      "question": "In relevant situations, I often show a Self Regulation pattern.",
+      "scoreKey": "SELF_REGULATION"
+    },
+    {
+      "id": "self_regulation_3",
+      "question": "In relevant situations, I often show a Self Regulation pattern.",
+      "scoreKey": "SELF_REGULATION"
+    },
+    {
+      "id": "self_regulation_4",
+      "question": "In relevant situations, I often show a Self Regulation pattern.",
+      "scoreKey": "SELF_REGULATION"
+    },
+    {
+      "id": "self_regulation_5",
+      "question": "In relevant situations, I often show a Self Regulation pattern.",
+      "scoreKey": "SELF_REGULATION"
+    },
+    {
+      "id": "self_regulation_6",
+      "question": "In relevant situations, I often show a Self Regulation pattern.",
+      "scoreKey": "SELF_REGULATION"
+    },
+    {
+      "id": "empathy_1",
+      "question": "In relevant situations, I often show a Empathy pattern.",
+      "scoreKey": "EMPATHY"
+    },
+    {
+      "id": "empathy_2",
+      "question": "In relevant situations, I often show a Empathy pattern.",
+      "scoreKey": "EMPATHY"
+    },
+    {
+      "id": "empathy_3",
+      "question": "In relevant situations, I often show a Empathy pattern.",
+      "scoreKey": "EMPATHY"
+    },
+    {
+      "id": "empathy_4",
+      "question": "In relevant situations, I often show a Empathy pattern.",
+      "scoreKey": "EMPATHY"
+    },
+    {
+      "id": "empathy_5",
+      "question": "In relevant situations, I often show a Empathy pattern.",
+      "scoreKey": "EMPATHY"
+    },
+    {
+      "id": "empathy_6",
+      "question": "In relevant situations, I often show a Empathy pattern.",
+      "scoreKey": "EMPATHY"
+    },
+    {
+      "id": "social_skill_1",
+      "question": "In relevant situations, I often show a Social Skill pattern.",
+      "scoreKey": "SOCIAL_SKILL"
+    },
+    {
+      "id": "social_skill_2",
+      "question": "In relevant situations, I often show a Social Skill pattern.",
+      "scoreKey": "SOCIAL_SKILL"
+    },
+    {
+      "id": "social_skill_3",
+      "question": "In relevant situations, I often show a Social Skill pattern.",
+      "scoreKey": "SOCIAL_SKILL"
+    },
+    {
+      "id": "social_skill_4",
+      "question": "In relevant situations, I often show a Social Skill pattern.",
+      "scoreKey": "SOCIAL_SKILL"
+    },
+    {
+      "id": "social_skill_5",
+      "question": "In relevant situations, I often show a Social Skill pattern.",
+      "scoreKey": "SOCIAL_SKILL"
+    },
+    {
+      "id": "social_skill_6",
+      "question": "In relevant situations, I often show a Social Skill pattern.",
+      "scoreKey": "SOCIAL_SKILL"
+    }
+  ],
+  "results": {
+    "SELF_AWARENESS": {
+      "title": "Self Awareness",
+      "summary": "Your primary result points to a Self Awareness pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    },
+    "SELF_REGULATION": {
+      "title": "Self Regulation",
+      "summary": "Your primary result points to a Self Regulation pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    },
+    "EMPATHY": {
+      "title": "Empathy",
+      "summary": "Your primary result points to a Empathy pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    },
+    "SOCIAL_SKILL": {
+      "title": "Social Skill",
+      "summary": "Your primary result points to a Social Skill pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    }
+  }
+}

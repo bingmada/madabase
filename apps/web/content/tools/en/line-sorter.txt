@@ -1,0 +1,40 @@
+[TITLE]
+Free Line Sorter Online
+[H1]
+Free Line Sorter Online
+[DESCRIPTION]
+Sort lines alphabetically and clean up list data.
+[SEO_TITLE]
+Free Line Sorter Online | Madabase
+[SEO_DESCRIPTION]
+Sort lines alphabetically and clean up list data. Run it locally in your browser with a clean copyable output.
+[INTRO]
+Use this line sorter when you need a fast browser-based utility for cleanup, conversion, debugging, or content preparation.
+[HOW_TO_USE]
+Paste your input
+Add the text, data, or snippet you want to process.
+---
+Run the tool
+Click the action button to transform the input instantly.
+---
+Copy the result
+Review the output and copy it into your workflow.
+[EXAMPLES]
+Madabase tools
+===
+Processed Madabase tools
+[FAQ]
+Is this line sorter free?
+Yes. The first release is free to use in your browser.
+Can I use private data?
+The tool runs locally in the browser UI, but you should still avoid pasting secrets into any web page you do not control.
+[RELATED_TOOLS]
+text-cleaner
+json-formatter
+url-encoder
+[KEYWORDS]
+line sorter
+free line sorter
+online line sorter
+[CATEGORY]
+text

@@ -1,0 +1,40 @@
+[TITLE]
+Free Binary to Text Converter Online
+[H1]
+Free Binary to Text Converter Online
+[DESCRIPTION]
+Decode binary byte strings into text.
+[SEO_TITLE]
+Free Binary to Text Converter Online | Madabase
+[SEO_DESCRIPTION]
+Decode binary byte strings into text. Run it locally in your browser with a clean copyable output.
+[INTRO]
+Use this binary to text converter when you need a fast browser-based utility for cleanup, conversion, debugging, or content preparation.
+[HOW_TO_USE]
+Paste your input
+Add the text, data, or snippet you want to process.
+---
+Run the tool
+Click the action button to transform the input instantly.
+---
+Copy the result
+Review the output and copy it into your workflow.
+[EXAMPLES]
+Madabase tools
+===
+Processed Madabase tools
+[FAQ]
+Is this binary to text converter free?
+Yes. The first release is free to use in your browser.
+Can I use private data?
+The tool runs locally in the browser UI, but you should still avoid pasting secrets into any web page you do not control.
+[RELATED_TOOLS]
+text-cleaner
+json-formatter
+url-encoder
+[KEYWORDS]
+binary to text
+free binary to text
+online binary to text
+[CATEGORY]
+developer

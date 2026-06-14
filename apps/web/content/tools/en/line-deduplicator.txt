@@ -1,0 +1,40 @@
+[TITLE]
+Free Line Deduplicator Online
+[H1]
+Free Line Deduplicator Online
+[DESCRIPTION]
+Remove duplicate lines while keeping one clean list.
+[SEO_TITLE]
+Free Line Deduplicator Online | Madabase
+[SEO_DESCRIPTION]
+Remove duplicate lines while keeping one clean list. Run it locally in your browser with a clean copyable output.
+[INTRO]
+Use this line deduplicator when you need a fast browser-based utility for cleanup, conversion, debugging, or content preparation.
+[HOW_TO_USE]
+Paste your input
+Add the text, data, or snippet you want to process.
+---
+Run the tool
+Click the action button to transform the input instantly.
+---
+Copy the result
+Review the output and copy it into your workflow.
+[EXAMPLES]
+Madabase tools
+===
+Processed Madabase tools
+[FAQ]
+Is this line deduplicator free?
+Yes. The first release is free to use in your browser.
+Can I use private data?
+The tool runs locally in the browser UI, but you should still avoid pasting secrets into any web page you do not control.
+[RELATED_TOOLS]
+text-cleaner
+json-formatter
+url-encoder
+[KEYWORDS]
+line deduplicator
+free line deduplicator
+online line deduplicator
+[CATEGORY]
+text

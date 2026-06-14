@@ -1,0 +1,357 @@
+{
+  "title": "大五人格测试",
+  "description": "通过 30 个快速问题了解你的大五人格模式。",
+  "instructions": [
+    "请根据最近真实行为作答，不要按理想中的自己选择。",
+    "当描述明显符合或不符合时，请大胆使用量表两端。",
+    "报告会突出你的最强模式和可执行的下一步建议。"
+  ],
+  "reportLabels": {
+    "strengths": "优势",
+    "weaknesses": "风险",
+    "careers": "适合方法",
+    "relationships": "关系提示",
+    "growth": "成长计划"
+  },
+  "scale": [
+    {
+      "id": "1",
+      "text": "非常不同意",
+      "value": 1
+    },
+    {
+      "id": "2",
+      "text": "不同意",
+      "value": 2
+    },
+    {
+      "id": "3",
+      "text": "一般",
+      "value": 3
+    },
+    {
+      "id": "4",
+      "text": "同意",
+      "value": 4
+    },
+    {
+      "id": "5",
+      "text": "非常同意",
+      "value": 5
+    }
+  ],
+  "scaleQuestions": [
+    {
+      "id": "openness_1",
+      "question": "我在相关情境中经常表现出「开放探索」这一倾向。",
+      "scoreKey": "OPENNESS"
+    },
+    {
+      "id": "openness_2",
+      "question": "我在相关情境中经常表现出「开放探索」这一倾向。",
+      "scoreKey": "OPENNESS"
+    },
+    {
+      "id": "openness_3",
+      "question": "我在相关情境中经常表现出「开放探索」这一倾向。",
+      "scoreKey": "OPENNESS"
+    },
+    {
+      "id": "openness_4",
+      "question": "我在相关情境中经常表现出「开放探索」这一倾向。",
+      "scoreKey": "OPENNESS"
+    },
+    {
+      "id": "openness_5",
+      "question": "我在相关情境中经常表现出「开放探索」这一倾向。",
+      "scoreKey": "OPENNESS"
+    },
+    {
+      "id": "openness_6",
+      "question": "我在相关情境中经常表现出「开放探索」这一倾向。",
+      "scoreKey": "OPENNESS"
+    },
+    {
+      "id": "conscientiousness_1",
+      "question": "我在相关情境中经常表现出「尽责规划」这一倾向。",
+      "scoreKey": "CONSCIENTIOUSNESS"
+    },
+    {
+      "id": "conscientiousness_2",
+      "question": "我在相关情境中经常表现出「尽责规划」这一倾向。",
+      "scoreKey": "CONSCIENTIOUSNESS"
+    },
+    {
+      "id": "conscientiousness_3",
+      "question": "我在相关情境中经常表现出「尽责规划」这一倾向。",
+      "scoreKey": "CONSCIENTIOUSNESS"
+    },
+    {
+      "id": "conscientiousness_4",
+      "question": "我在相关情境中经常表现出「尽责规划」这一倾向。",
+      "scoreKey": "CONSCIENTIOUSNESS"
+    },
+    {
+      "id": "conscientiousness_5",
+      "question": "我在相关情境中经常表现出「尽责规划」这一倾向。",
+      "scoreKey": "CONSCIENTIOUSNESS"
+    },
+    {
+      "id": "conscientiousness_6",
+      "question": "我在相关情境中经常表现出「尽责规划」这一倾向。",
+      "scoreKey": "CONSCIENTIOUSNESS"
+    },
+    {
+      "id": "extraversion_1",
+      "question": "我在相关情境中经常表现出「外向能量」这一倾向。",
+      "scoreKey": "EXTRAVERSION"
+    },
+    {
+      "id": "extraversion_2",
+      "question": "我在相关情境中经常表现出「外向能量」这一倾向。",
+      "scoreKey": "EXTRAVERSION"
+    },
+    {
+      "id": "extraversion_3",
+      "question": "我在相关情境中经常表现出「外向能量」这一倾向。",
+      "scoreKey": "EXTRAVERSION"
+    },
+    {
+      "id": "extraversion_4",
+      "question": "我在相关情境中经常表现出「外向能量」这一倾向。",
+      "scoreKey": "EXTRAVERSION"
+    },
+    {
+      "id": "extraversion_5",
+      "question": "我在相关情境中经常表现出「外向能量」这一倾向。",
+      "scoreKey": "EXTRAVERSION"
+    },
+    {
+      "id": "extraversion_6",
+      "question": "我在相关情境中经常表现出「外向能量」这一倾向。",
+      "scoreKey": "EXTRAVERSION"
+    },
+    {
+      "id": "agreeableness_1",
+      "question": "我在相关情境中经常表现出「宜人合作」这一倾向。",
+      "scoreKey": "AGREEABLENESS"
+    },
+    {
+      "id": "agreeableness_2",
+      "question": "我在相关情境中经常表现出「宜人合作」这一倾向。",
+      "scoreKey": "AGREEABLENESS"
+    },
+    {
+      "id": "agreeableness_3",
+      "question": "我在相关情境中经常表现出「宜人合作」这一倾向。",
+      "scoreKey": "AGREEABLENESS"
+    },
+    {
+      "id": "agreeableness_4",
+      "question": "我在相关情境中经常表现出「宜人合作」这一倾向。",
+      "scoreKey": "AGREEABLENESS"
+    },
+    {
+      "id": "agreeableness_5",
+      "question": "我在相关情境中经常表现出「宜人合作」这一倾向。",
+      "scoreKey": "AGREEABLENESS"
+    },
+    {
+      "id": "agreeableness_6",
+      "question": "我在相关情境中经常表现出「宜人合作」这一倾向。",
+      "scoreKey": "AGREEABLENESS"
+    },
+    {
+      "id": "neuroticism_1",
+      "question": "我在相关情境中经常表现出「情绪敏感」这一倾向。",
+      "scoreKey": "NEUROTICISM"
+    },
+    {
+      "id": "neuroticism_2",
+      "question": "我在相关情境中经常表现出「情绪敏感」这一倾向。",
+      "scoreKey": "NEUROTICISM"
+    },
+    {
+      "id": "neuroticism_3",
+      "question": "我在相关情境中经常表现出「情绪敏感」这一倾向。",
+      "scoreKey": "NEUROTICISM"
+    },
+    {
+      "id": "neuroticism_4",
+      "question": "我在相关情境中经常表现出「情绪敏感」这一倾向。",
+      "scoreKey": "NEUROTICISM"
+    },
+    {
+      "id": "neuroticism_5",
+      "question": "我在相关情境中经常表现出「情绪敏感」这一倾向。",
+      "scoreKey": "NEUROTICISM"
+    },
+    {
+      "id": "neuroticism_6",
+      "question": "我在相关情境中经常表现出「情绪敏感」这一倾向。",
+      "scoreKey": "NEUROTICISM"
+    }
+  ],
+  "results": {
+    "OPENNESS": {
+      "title": "开放探索",
+      "summary": "你的主要结果指向开放探索。这不是固定标签，而是帮助你理解当前偏好的观察角度。",
+      "traits": [
+        "偏好清晰",
+        "模式稳定",
+        "可被情境调整"
+      ],
+      "strengths": [
+        "能在合适环境中发挥明显优势",
+        "容易形成可复用的方法",
+        "对相关信号较敏感"
+      ],
+      "weaknesses": [
+        "压力下可能过度使用同一种策略",
+        "容易忽略相反视角",
+        "需要避免把结果当成限制"
+      ],
+      "careers": [
+        "复盘最近三次真实情境",
+        "找到最常触发该模式的场景",
+        "设计一个小实验"
+      ],
+      "relationships": [
+        "向他人说明你的偏好，同时保留对方不同节奏的空间。"
+      ],
+      "growthPlan": [
+        "记录一周内的典型表现",
+        "选择一个需要微调的行为",
+        "用一次低风险场景练习新策略"
+      ]
+    },
+    "CONSCIENTIOUSNESS": {
+      "title": "尽责规划",
+      "summary": "你的主要结果指向尽责规划。这不是固定标签，而是帮助你理解当前偏好的观察角度。",
+      "traits": [
+        "偏好清晰",
+        "模式稳定",
+        "可被情境调整"
+      ],
+      "strengths": [
+        "能在合适环境中发挥明显优势",
+        "容易形成可复用的方法",
+        "对相关信号较敏感"
+      ],
+      "weaknesses": [
+        "压力下可能过度使用同一种策略",
+        "容易忽略相反视角",
+        "需要避免把结果当成限制"
+      ],
+      "careers": [
+        "复盘最近三次真实情境",
+        "找到最常触发该模式的场景",
+        "设计一个小实验"
+      ],
+      "relationships": [
+        "向他人说明你的偏好，同时保留对方不同节奏的空间。"
+      ],
+      "growthPlan": [
+        "记录一周内的典型表现",
+        "选择一个需要微调的行为",
+        "用一次低风险场景练习新策略"
+      ]
+    },
+    "EXTRAVERSION": {
+      "title": "外向能量",
+      "summary": "你的主要结果指向外向能量。这不是固定标签，而是帮助你理解当前偏好的观察角度。",
+      "traits": [
+        "偏好清晰",
+        "模式稳定",
+        "可被情境调整"
+      ],
+      "strengths": [
+        "能在合适环境中发挥明显优势",
+        "容易形成可复用的方法",
+        "对相关信号较敏感"
+      ],
+      "weaknesses": [
+        "压力下可能过度使用同一种策略",
+        "容易忽略相反视角",
+        "需要避免把结果当成限制"
+      ],
+      "careers": [
+        "复盘最近三次真实情境",
+        "找到最常触发该模式的场景",
+        "设计一个小实验"
+      ],
+      "relationships": [
+        "向他人说明你的偏好，同时保留对方不同节奏的空间。"
+      ],
+      "growthPlan": [
+        "记录一周内的典型表现",
+        "选择一个需要微调的行为",
+        "用一次低风险场景练习新策略"
+      ]
+    },
+    "AGREEABLENESS": {
+      "title": "宜人合作",
+      "summary": "你的主要结果指向宜人合作。这不是固定标签，而是帮助你理解当前偏好的观察角度。",
+      "traits": [
+        "偏好清晰",
+        "模式稳定",
+        "可被情境调整"
+      ],
+      "strengths": [
+        "能在合适环境中发挥明显优势",
+        "容易形成可复用的方法",
+        "对相关信号较敏感"
+      ],
+      "weaknesses": [
+        "压力下可能过度使用同一种策略",
+        "容易忽略相反视角",
+        "需要避免把结果当成限制"
+      ],
+      "careers": [
+        "复盘最近三次真实情境",
+        "找到最常触发该模式的场景",
+        "设计一个小实验"
+      ],
+      "relationships": [
+        "向他人说明你的偏好，同时保留对方不同节奏的空间。"
+      ],
+      "growthPlan": [
+        "记录一周内的典型表现",
+        "选择一个需要微调的行为",
+        "用一次低风险场景练习新策略"
+      ]
+    },
+    "NEUROTICISM": {
+      "title": "情绪敏感",
+      "summary": "你的主要结果指向情绪敏感。这不是固定标签，而是帮助你理解当前偏好的观察角度。",
+      "traits": [
+        "偏好清晰",
+        "模式稳定",
+        "可被情境调整"
+      ],
+      "strengths": [
+        "能在合适环境中发挥明显优势",
+        "容易形成可复用的方法",
+        "对相关信号较敏感"
+      ],
+      "weaknesses": [
+        "压力下可能过度使用同一种策略",
+        "容易忽略相反视角",
+        "需要避免把结果当成限制"
+      ],
+      "careers": [
+        "复盘最近三次真实情境",
+        "找到最常触发该模式的场景",
+        "设计一个小实验"
+      ],
+      "relationships": [
+        "向他人说明你的偏好，同时保留对方不同节奏的空间。"
+      ],
+      "growthPlan": [
+        "记录一周内的典型表现",
+        "选择一个需要微调的行为",
+        "用一次低风险场景练习新策略"
+      ]
+    }
+  }
+}

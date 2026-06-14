@@ -1,0 +1,288 @@
+{
+  "title": "Creativity Style Test",
+  "description": "Answer 24 quick prompts to explore your creativity style pattern.",
+  "instructions": [
+    "Answer based on recent real behavior, not an ideal version of yourself.",
+    "Use the whole scale when a statement clearly fits or does not fit.",
+    "Your report highlights the strongest pattern and practical next steps."
+  ],
+  "scale": [
+    {
+      "id": "1",
+      "text": "Strongly disagree",
+      "value": 1
+    },
+    {
+      "id": "2",
+      "text": "Disagree",
+      "value": 2
+    },
+    {
+      "id": "3",
+      "text": "Neutral",
+      "value": 3
+    },
+    {
+      "id": "4",
+      "text": "Agree",
+      "value": 4
+    },
+    {
+      "id": "5",
+      "text": "Strongly agree",
+      "value": 5
+    }
+  ],
+  "scaleQuestions": [
+    {
+      "id": "ideator_1",
+      "question": "In relevant situations, I often show a Ideator pattern.",
+      "scoreKey": "IDEATOR"
+    },
+    {
+      "id": "ideator_2",
+      "question": "In relevant situations, I often show a Ideator pattern.",
+      "scoreKey": "IDEATOR"
+    },
+    {
+      "id": "ideator_3",
+      "question": "In relevant situations, I often show a Ideator pattern.",
+      "scoreKey": "IDEATOR"
+    },
+    {
+      "id": "ideator_4",
+      "question": "In relevant situations, I often show a Ideator pattern.",
+      "scoreKey": "IDEATOR"
+    },
+    {
+      "id": "ideator_5",
+      "question": "In relevant situations, I often show a Ideator pattern.",
+      "scoreKey": "IDEATOR"
+    },
+    {
+      "id": "ideator_6",
+      "question": "In relevant situations, I often show a Ideator pattern.",
+      "scoreKey": "IDEATOR"
+    },
+    {
+      "id": "maker_1",
+      "question": "In relevant situations, I often show a Maker pattern.",
+      "scoreKey": "MAKER"
+    },
+    {
+      "id": "maker_2",
+      "question": "In relevant situations, I often show a Maker pattern.",
+      "scoreKey": "MAKER"
+    },
+    {
+      "id": "maker_3",
+      "question": "In relevant situations, I often show a Maker pattern.",
+      "scoreKey": "MAKER"
+    },
+    {
+      "id": "maker_4",
+      "question": "In relevant situations, I often show a Maker pattern.",
+      "scoreKey": "MAKER"
+    },
+    {
+      "id": "maker_5",
+      "question": "In relevant situations, I often show a Maker pattern.",
+      "scoreKey": "MAKER"
+    },
+    {
+      "id": "maker_6",
+      "question": "In relevant situations, I often show a Maker pattern.",
+      "scoreKey": "MAKER"
+    },
+    {
+      "id": "refiner_1",
+      "question": "In relevant situations, I often show a Refiner pattern.",
+      "scoreKey": "REFINER"
+    },
+    {
+      "id": "refiner_2",
+      "question": "In relevant situations, I often show a Refiner pattern.",
+      "scoreKey": "REFINER"
+    },
+    {
+      "id": "refiner_3",
+      "question": "In relevant situations, I often show a Refiner pattern.",
+      "scoreKey": "REFINER"
+    },
+    {
+      "id": "refiner_4",
+      "question": "In relevant situations, I often show a Refiner pattern.",
+      "scoreKey": "REFINER"
+    },
+    {
+      "id": "refiner_5",
+      "question": "In relevant situations, I often show a Refiner pattern.",
+      "scoreKey": "REFINER"
+    },
+    {
+      "id": "refiner_6",
+      "question": "In relevant situations, I often show a Refiner pattern.",
+      "scoreKey": "REFINER"
+    },
+    {
+      "id": "connector_1",
+      "question": "In relevant situations, I often show a Connector pattern.",
+      "scoreKey": "CONNECTOR"
+    },
+    {
+      "id": "connector_2",
+      "question": "In relevant situations, I often show a Connector pattern.",
+      "scoreKey": "CONNECTOR"
+    },
+    {
+      "id": "connector_3",
+      "question": "In relevant situations, I often show a Connector pattern.",
+      "scoreKey": "CONNECTOR"
+    },
+    {
+      "id": "connector_4",
+      "question": "In relevant situations, I often show a Connector pattern.",
+      "scoreKey": "CONNECTOR"
+    },
+    {
+      "id": "connector_5",
+      "question": "In relevant situations, I often show a Connector pattern.",
+      "scoreKey": "CONNECTOR"
+    },
+    {
+      "id": "connector_6",
+      "question": "In relevant situations, I often show a Connector pattern.",
+      "scoreKey": "CONNECTOR"
+    }
+  ],
+  "results": {
+    "IDEATOR": {
+      "title": "Ideator",
+      "summary": "Your primary result points to a Ideator pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    },
+    "MAKER": {
+      "title": "Maker",
+      "summary": "Your primary result points to a Maker pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    },
+    "REFINER": {
+      "title": "Refiner",
+      "summary": "Your primary result points to a Refiner pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    },
+    "CONNECTOR": {
+      "title": "Connector",
+      "summary": "Your primary result points to a Connector pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    }
+  }
+}

@@ -1,0 +1,295 @@
+{
+  "title": "心理韧性测试",
+  "description": "通过 24 个快速问题了解你的心理韧性模式。",
+  "instructions": [
+    "请根据最近真实行为作答，不要按理想中的自己选择。",
+    "当描述明显符合或不符合时，请大胆使用量表两端。",
+    "报告会突出你的最强模式和可执行的下一步建议。"
+  ],
+  "reportLabels": {
+    "strengths": "优势",
+    "weaknesses": "风险",
+    "careers": "适合方法",
+    "relationships": "关系提示",
+    "growth": "成长计划"
+  },
+  "scale": [
+    {
+      "id": "1",
+      "text": "非常不同意",
+      "value": 1
+    },
+    {
+      "id": "2",
+      "text": "不同意",
+      "value": 2
+    },
+    {
+      "id": "3",
+      "text": "一般",
+      "value": 3
+    },
+    {
+      "id": "4",
+      "text": "同意",
+      "value": 4
+    },
+    {
+      "id": "5",
+      "text": "非常同意",
+      "value": 5
+    }
+  ],
+  "scaleQuestions": [
+    {
+      "id": "steady_1",
+      "question": "我在相关情境中经常表现出「Steady」这一倾向。",
+      "scoreKey": "STEADY"
+    },
+    {
+      "id": "steady_2",
+      "question": "我在相关情境中经常表现出「Steady」这一倾向。",
+      "scoreKey": "STEADY"
+    },
+    {
+      "id": "steady_3",
+      "question": "我在相关情境中经常表现出「Steady」这一倾向。",
+      "scoreKey": "STEADY"
+    },
+    {
+      "id": "steady_4",
+      "question": "我在相关情境中经常表现出「Steady」这一倾向。",
+      "scoreKey": "STEADY"
+    },
+    {
+      "id": "steady_5",
+      "question": "我在相关情境中经常表现出「Steady」这一倾向。",
+      "scoreKey": "STEADY"
+    },
+    {
+      "id": "steady_6",
+      "question": "我在相关情境中经常表现出「Steady」这一倾向。",
+      "scoreKey": "STEADY"
+    },
+    {
+      "id": "recovering_1",
+      "question": "我在相关情境中经常表现出「Recovering」这一倾向。",
+      "scoreKey": "RECOVERING"
+    },
+    {
+      "id": "recovering_2",
+      "question": "我在相关情境中经常表现出「Recovering」这一倾向。",
+      "scoreKey": "RECOVERING"
+    },
+    {
+      "id": "recovering_3",
+      "question": "我在相关情境中经常表现出「Recovering」这一倾向。",
+      "scoreKey": "RECOVERING"
+    },
+    {
+      "id": "recovering_4",
+      "question": "我在相关情境中经常表现出「Recovering」这一倾向。",
+      "scoreKey": "RECOVERING"
+    },
+    {
+      "id": "recovering_5",
+      "question": "我在相关情境中经常表现出「Recovering」这一倾向。",
+      "scoreKey": "RECOVERING"
+    },
+    {
+      "id": "recovering_6",
+      "question": "我在相关情境中经常表现出「Recovering」这一倾向。",
+      "scoreKey": "RECOVERING"
+    },
+    {
+      "id": "strained_1",
+      "question": "我在相关情境中经常表现出「Strained」这一倾向。",
+      "scoreKey": "STRAINED"
+    },
+    {
+      "id": "strained_2",
+      "question": "我在相关情境中经常表现出「Strained」这一倾向。",
+      "scoreKey": "STRAINED"
+    },
+    {
+      "id": "strained_3",
+      "question": "我在相关情境中经常表现出「Strained」这一倾向。",
+      "scoreKey": "STRAINED"
+    },
+    {
+      "id": "strained_4",
+      "question": "我在相关情境中经常表现出「Strained」这一倾向。",
+      "scoreKey": "STRAINED"
+    },
+    {
+      "id": "strained_5",
+      "question": "我在相关情境中经常表现出「Strained」这一倾向。",
+      "scoreKey": "STRAINED"
+    },
+    {
+      "id": "strained_6",
+      "question": "我在相关情境中经常表现出「Strained」这一倾向。",
+      "scoreKey": "STRAINED"
+    },
+    {
+      "id": "fragile_1",
+      "question": "我在相关情境中经常表现出「Fragile」这一倾向。",
+      "scoreKey": "FRAGILE"
+    },
+    {
+      "id": "fragile_2",
+      "question": "我在相关情境中经常表现出「Fragile」这一倾向。",
+      "scoreKey": "FRAGILE"
+    },
+    {
+      "id": "fragile_3",
+      "question": "我在相关情境中经常表现出「Fragile」这一倾向。",
+      "scoreKey": "FRAGILE"
+    },
+    {
+      "id": "fragile_4",
+      "question": "我在相关情境中经常表现出「Fragile」这一倾向。",
+      "scoreKey": "FRAGILE"
+    },
+    {
+      "id": "fragile_5",
+      "question": "我在相关情境中经常表现出「Fragile」这一倾向。",
+      "scoreKey": "FRAGILE"
+    },
+    {
+      "id": "fragile_6",
+      "question": "我在相关情境中经常表现出「Fragile」这一倾向。",
+      "scoreKey": "FRAGILE"
+    }
+  ],
+  "results": {
+    "STEADY": {
+      "title": "Steady",
+      "summary": "你的主要结果指向Steady。这不是固定标签，而是帮助你理解当前偏好的观察角度。",
+      "traits": [
+        "偏好清晰",
+        "模式稳定",
+        "可被情境调整"
+      ],
+      "strengths": [
+        "能在合适环境中发挥明显优势",
+        "容易形成可复用的方法",
+        "对相关信号较敏感"
+      ],
+      "weaknesses": [
+        "压力下可能过度使用同一种策略",
+        "容易忽略相反视角",
+        "需要避免把结果当成限制"
+      ],
+      "careers": [
+        "复盘最近三次真实情境",
+        "找到最常触发该模式的场景",
+        "设计一个小实验"
+      ],
+      "relationships": [
+        "向他人说明你的偏好，同时保留对方不同节奏的空间。"
+      ],
+      "growthPlan": [
+        "记录一周内的典型表现",
+        "选择一个需要微调的行为",
+        "用一次低风险场景练习新策略"
+      ]
+    },
+    "RECOVERING": {
+      "title": "Recovering",
+      "summary": "你的主要结果指向Recovering。这不是固定标签，而是帮助你理解当前偏好的观察角度。",
+      "traits": [
+        "偏好清晰",
+        "模式稳定",
+        "可被情境调整"
+      ],
+      "strengths": [
+        "能在合适环境中发挥明显优势",
+        "容易形成可复用的方法",
+        "对相关信号较敏感"
+      ],
+      "weaknesses": [
+        "压力下可能过度使用同一种策略",
+        "容易忽略相反视角",
+        "需要避免把结果当成限制"
+      ],
+      "careers": [
+        "复盘最近三次真实情境",
+        "找到最常触发该模式的场景",
+        "设计一个小实验"
+      ],
+      "relationships": [
+        "向他人说明你的偏好，同时保留对方不同节奏的空间。"
+      ],
+      "growthPlan": [
+        "记录一周内的典型表现",
+        "选择一个需要微调的行为",
+        "用一次低风险场景练习新策略"
+      ]
+    },
+    "STRAINED": {
+      "title": "Strained",
+      "summary": "你的主要结果指向Strained。这不是固定标签，而是帮助你理解当前偏好的观察角度。",
+      "traits": [
+        "偏好清晰",
+        "模式稳定",
+        "可被情境调整"
+      ],
+      "strengths": [
+        "能在合适环境中发挥明显优势",
+        "容易形成可复用的方法",
+        "对相关信号较敏感"
+      ],
+      "weaknesses": [
+        "压力下可能过度使用同一种策略",
+        "容易忽略相反视角",
+        "需要避免把结果当成限制"
+      ],
+      "careers": [
+        "复盘最近三次真实情境",
+        "找到最常触发该模式的场景",
+        "设计一个小实验"
+      ],
+      "relationships": [
+        "向他人说明你的偏好，同时保留对方不同节奏的空间。"
+      ],
+      "growthPlan": [
+        "记录一周内的典型表现",
+        "选择一个需要微调的行为",
+        "用一次低风险场景练习新策略"
+      ]
+    },
+    "FRAGILE": {
+      "title": "Fragile",
+      "summary": "你的主要结果指向Fragile。这不是固定标签，而是帮助你理解当前偏好的观察角度。",
+      "traits": [
+        "偏好清晰",
+        "模式稳定",
+        "可被情境调整"
+      ],
+      "strengths": [
+        "能在合适环境中发挥明显优势",
+        "容易形成可复用的方法",
+        "对相关信号较敏感"
+      ],
+      "weaknesses": [
+        "压力下可能过度使用同一种策略",
+        "容易忽略相反视角",
+        "需要避免把结果当成限制"
+      ],
+      "careers": [
+        "复盘最近三次真实情境",
+        "找到最常触发该模式的场景",
+        "设计一个小实验"
+      ],
+      "relationships": [
+        "向他人说明你的偏好，同时保留对方不同节奏的空间。"
+      ],
+      "growthPlan": [
+        "记录一周内的典型表现",
+        "选择一个需要微调的行为",
+        "用一次低风险场景练习新策略"
+      ]
+    }
+  }
+}

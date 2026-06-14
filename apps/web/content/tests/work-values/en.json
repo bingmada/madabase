@@ -1,0 +1,350 @@
+{
+  "title": "Work Values Test",
+  "description": "Answer 30 quick prompts to explore your work values pattern.",
+  "instructions": [
+    "Answer based on recent real behavior, not an ideal version of yourself.",
+    "Use the whole scale when a statement clearly fits or does not fit.",
+    "Your report highlights the strongest pattern and practical next steps."
+  ],
+  "scale": [
+    {
+      "id": "1",
+      "text": "Strongly disagree",
+      "value": 1
+    },
+    {
+      "id": "2",
+      "text": "Disagree",
+      "value": 2
+    },
+    {
+      "id": "3",
+      "text": "Neutral",
+      "value": 3
+    },
+    {
+      "id": "4",
+      "text": "Agree",
+      "value": 4
+    },
+    {
+      "id": "5",
+      "text": "Strongly agree",
+      "value": 5
+    }
+  ],
+  "scaleQuestions": [
+    {
+      "id": "autonomy_1",
+      "question": "In relevant situations, I often show a Autonomy pattern.",
+      "scoreKey": "AUTONOMY"
+    },
+    {
+      "id": "autonomy_2",
+      "question": "In relevant situations, I often show a Autonomy pattern.",
+      "scoreKey": "AUTONOMY"
+    },
+    {
+      "id": "autonomy_3",
+      "question": "In relevant situations, I often show a Autonomy pattern.",
+      "scoreKey": "AUTONOMY"
+    },
+    {
+      "id": "autonomy_4",
+      "question": "In relevant situations, I often show a Autonomy pattern.",
+      "scoreKey": "AUTONOMY"
+    },
+    {
+      "id": "autonomy_5",
+      "question": "In relevant situations, I often show a Autonomy pattern.",
+      "scoreKey": "AUTONOMY"
+    },
+    {
+      "id": "autonomy_6",
+      "question": "In relevant situations, I often show a Autonomy pattern.",
+      "scoreKey": "AUTONOMY"
+    },
+    {
+      "id": "impact_1",
+      "question": "In relevant situations, I often show a Impact pattern.",
+      "scoreKey": "IMPACT"
+    },
+    {
+      "id": "impact_2",
+      "question": "In relevant situations, I often show a Impact pattern.",
+      "scoreKey": "IMPACT"
+    },
+    {
+      "id": "impact_3",
+      "question": "In relevant situations, I often show a Impact pattern.",
+      "scoreKey": "IMPACT"
+    },
+    {
+      "id": "impact_4",
+      "question": "In relevant situations, I often show a Impact pattern.",
+      "scoreKey": "IMPACT"
+    },
+    {
+      "id": "impact_5",
+      "question": "In relevant situations, I often show a Impact pattern.",
+      "scoreKey": "IMPACT"
+    },
+    {
+      "id": "impact_6",
+      "question": "In relevant situations, I often show a Impact pattern.",
+      "scoreKey": "IMPACT"
+    },
+    {
+      "id": "security_1",
+      "question": "In relevant situations, I often show a Security pattern.",
+      "scoreKey": "SECURITY"
+    },
+    {
+      "id": "security_2",
+      "question": "In relevant situations, I often show a Security pattern.",
+      "scoreKey": "SECURITY"
+    },
+    {
+      "id": "security_3",
+      "question": "In relevant situations, I often show a Security pattern.",
+      "scoreKey": "SECURITY"
+    },
+    {
+      "id": "security_4",
+      "question": "In relevant situations, I often show a Security pattern.",
+      "scoreKey": "SECURITY"
+    },
+    {
+      "id": "security_5",
+      "question": "In relevant situations, I often show a Security pattern.",
+      "scoreKey": "SECURITY"
+    },
+    {
+      "id": "security_6",
+      "question": "In relevant situations, I often show a Security pattern.",
+      "scoreKey": "SECURITY"
+    },
+    {
+      "id": "mastery_1",
+      "question": "In relevant situations, I often show a Mastery pattern.",
+      "scoreKey": "MASTERY"
+    },
+    {
+      "id": "mastery_2",
+      "question": "In relevant situations, I often show a Mastery pattern.",
+      "scoreKey": "MASTERY"
+    },
+    {
+      "id": "mastery_3",
+      "question": "In relevant situations, I often show a Mastery pattern.",
+      "scoreKey": "MASTERY"
+    },
+    {
+      "id": "mastery_4",
+      "question": "In relevant situations, I often show a Mastery pattern.",
+      "scoreKey": "MASTERY"
+    },
+    {
+      "id": "mastery_5",
+      "question": "In relevant situations, I often show a Mastery pattern.",
+      "scoreKey": "MASTERY"
+    },
+    {
+      "id": "mastery_6",
+      "question": "In relevant situations, I often show a Mastery pattern.",
+      "scoreKey": "MASTERY"
+    },
+    {
+      "id": "recognition_1",
+      "question": "In relevant situations, I often show a Recognition pattern.",
+      "scoreKey": "RECOGNITION"
+    },
+    {
+      "id": "recognition_2",
+      "question": "In relevant situations, I often show a Recognition pattern.",
+      "scoreKey": "RECOGNITION"
+    },
+    {
+      "id": "recognition_3",
+      "question": "In relevant situations, I often show a Recognition pattern.",
+      "scoreKey": "RECOGNITION"
+    },
+    {
+      "id": "recognition_4",
+      "question": "In relevant situations, I often show a Recognition pattern.",
+      "scoreKey": "RECOGNITION"
+    },
+    {
+      "id": "recognition_5",
+      "question": "In relevant situations, I often show a Recognition pattern.",
+      "scoreKey": "RECOGNITION"
+    },
+    {
+      "id": "recognition_6",
+      "question": "In relevant situations, I often show a Recognition pattern.",
+      "scoreKey": "RECOGNITION"
+    }
+  ],
+  "results": {
+    "AUTONOMY": {
+      "title": "Autonomy",
+      "summary": "Your primary result points to a Autonomy pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    },
+    "IMPACT": {
+      "title": "Impact",
+      "summary": "Your primary result points to a Impact pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    },
+    "SECURITY": {
+      "title": "Security",
+      "summary": "Your primary result points to a Security pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    },
+    "MASTERY": {
+      "title": "Mastery",
+      "summary": "Your primary result points to a Mastery pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    },
+    "RECOGNITION": {
+      "title": "Recognition",
+      "summary": "Your primary result points to a Recognition pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    }
+  }
+}

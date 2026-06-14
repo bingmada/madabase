@@ -1,4 +1,5 @@
 import type { Locale } from "./i18n";
+import { expandedTestConfigs } from "./expanded-test-registry";
 
 export type TestCategory = "personality" | "career" | "relationship" | "intelligence" | "learning";
 
@@ -89,7 +90,7 @@ function calculateBurnout(answers: TestAnswer[]): TestResult {
   return { type, scores };
 }
 
-export const testRegistry: TestRegistryEntry[] = [
+const baseTestRegistry: TestRegistryEntry[] = [
   {
     slug: "mbti",
     category: "personality",
@@ -231,6 +232,11 @@ export const testRegistry: TestRegistryEntry[] = [
     },
     calculator: calculateTopScore,
   },
+];
+
+export const testRegistry: TestRegistryEntry[] = [
+  ...baseTestRegistry,
+  ...expandedTestConfigs.map((test) => ({ ...test, calculator: calculateTopScore })),
 ];
 
 export const testMap = new Map(testRegistry.map((test) => [test.slug, test]));

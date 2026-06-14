@@ -1,0 +1,288 @@
+{
+  "title": "Attachment Style Test",
+  "description": "Answer 24 quick prompts to explore your attachment style pattern.",
+  "instructions": [
+    "Answer based on recent real behavior, not an ideal version of yourself.",
+    "Use the whole scale when a statement clearly fits or does not fit.",
+    "Your report highlights the strongest pattern and practical next steps."
+  ],
+  "scale": [
+    {
+      "id": "1",
+      "text": "Strongly disagree",
+      "value": 1
+    },
+    {
+      "id": "2",
+      "text": "Disagree",
+      "value": 2
+    },
+    {
+      "id": "3",
+      "text": "Neutral",
+      "value": 3
+    },
+    {
+      "id": "4",
+      "text": "Agree",
+      "value": 4
+    },
+    {
+      "id": "5",
+      "text": "Strongly agree",
+      "value": 5
+    }
+  ],
+  "scaleQuestions": [
+    {
+      "id": "secure_1",
+      "question": "In relevant situations, I often show a Secure pattern.",
+      "scoreKey": "SECURE"
+    },
+    {
+      "id": "secure_2",
+      "question": "In relevant situations, I often show a Secure pattern.",
+      "scoreKey": "SECURE"
+    },
+    {
+      "id": "secure_3",
+      "question": "In relevant situations, I often show a Secure pattern.",
+      "scoreKey": "SECURE"
+    },
+    {
+      "id": "secure_4",
+      "question": "In relevant situations, I often show a Secure pattern.",
+      "scoreKey": "SECURE"
+    },
+    {
+      "id": "secure_5",
+      "question": "In relevant situations, I often show a Secure pattern.",
+      "scoreKey": "SECURE"
+    },
+    {
+      "id": "secure_6",
+      "question": "In relevant situations, I often show a Secure pattern.",
+      "scoreKey": "SECURE"
+    },
+    {
+      "id": "anxious_1",
+      "question": "In relevant situations, I often show a Anxious pattern.",
+      "scoreKey": "ANXIOUS"
+    },
+    {
+      "id": "anxious_2",
+      "question": "In relevant situations, I often show a Anxious pattern.",
+      "scoreKey": "ANXIOUS"
+    },
+    {
+      "id": "anxious_3",
+      "question": "In relevant situations, I often show a Anxious pattern.",
+      "scoreKey": "ANXIOUS"
+    },
+    {
+      "id": "anxious_4",
+      "question": "In relevant situations, I often show a Anxious pattern.",
+      "scoreKey": "ANXIOUS"
+    },
+    {
+      "id": "anxious_5",
+      "question": "In relevant situations, I often show a Anxious pattern.",
+      "scoreKey": "ANXIOUS"
+    },
+    {
+      "id": "anxious_6",
+      "question": "In relevant situations, I often show a Anxious pattern.",
+      "scoreKey": "ANXIOUS"
+    },
+    {
+      "id": "avoidant_1",
+      "question": "In relevant situations, I often show a Avoidant pattern.",
+      "scoreKey": "AVOIDANT"
+    },
+    {
+      "id": "avoidant_2",
+      "question": "In relevant situations, I often show a Avoidant pattern.",
+      "scoreKey": "AVOIDANT"
+    },
+    {
+      "id": "avoidant_3",
+      "question": "In relevant situations, I often show a Avoidant pattern.",
+      "scoreKey": "AVOIDANT"
+    },
+    {
+      "id": "avoidant_4",
+      "question": "In relevant situations, I often show a Avoidant pattern.",
+      "scoreKey": "AVOIDANT"
+    },
+    {
+      "id": "avoidant_5",
+      "question": "In relevant situations, I often show a Avoidant pattern.",
+      "scoreKey": "AVOIDANT"
+    },
+    {
+      "id": "avoidant_6",
+      "question": "In relevant situations, I often show a Avoidant pattern.",
+      "scoreKey": "AVOIDANT"
+    },
+    {
+      "id": "fearful_1",
+      "question": "In relevant situations, I often show a Fearful pattern.",
+      "scoreKey": "FEARFUL"
+    },
+    {
+      "id": "fearful_2",
+      "question": "In relevant situations, I often show a Fearful pattern.",
+      "scoreKey": "FEARFUL"
+    },
+    {
+      "id": "fearful_3",
+      "question": "In relevant situations, I often show a Fearful pattern.",
+      "scoreKey": "FEARFUL"
+    },
+    {
+      "id": "fearful_4",
+      "question": "In relevant situations, I often show a Fearful pattern.",
+      "scoreKey": "FEARFUL"
+    },
+    {
+      "id": "fearful_5",
+      "question": "In relevant situations, I often show a Fearful pattern.",
+      "scoreKey": "FEARFUL"
+    },
+    {
+      "id": "fearful_6",
+      "question": "In relevant situations, I often show a Fearful pattern.",
+      "scoreKey": "FEARFUL"
+    }
+  ],
+  "results": {
+    "SECURE": {
+      "title": "Secure",
+      "summary": "Your primary result points to a Secure pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    },
+    "ANXIOUS": {
+      "title": "Anxious",
+      "summary": "Your primary result points to a Anxious pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    },
+    "AVOIDANT": {
+      "title": "Avoidant",
+      "summary": "Your primary result points to a Avoidant pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    },
+    "FEARFUL": {
+      "title": "Fearful",
+      "summary": "Your primary result points to a Fearful pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    }
+  }
+}

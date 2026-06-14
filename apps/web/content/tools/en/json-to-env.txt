@@ -1,0 +1,40 @@
+[TITLE]
+Free JSON to ENV Converter Online
+[H1]
+Free JSON to ENV Converter Online
+[DESCRIPTION]
+Convert flat JSON objects into .env lines.
+[SEO_TITLE]
+Free JSON to ENV Converter Online | Madabase
+[SEO_DESCRIPTION]
+Convert flat JSON objects into .env lines. Run it locally in your browser with a clean copyable output.
+[INTRO]
+Use this json to env converter when you need a fast browser-based utility for cleanup, conversion, debugging, or content preparation.
+[HOW_TO_USE]
+Paste your input
+Add the text, data, or snippet you want to process.
+---
+Run the tool
+Click the action button to transform the input instantly.
+---
+Copy the result
+Review the output and copy it into your workflow.
+[EXAMPLES]
+Madabase tools
+===
+Processed Madabase tools
+[FAQ]
+Is this json to env converter free?
+Yes. The first release is free to use in your browser.
+Can I use private data?
+The tool runs locally in the browser UI, but you should still avoid pasting secrets into any web page you do not control.
+[RELATED_TOOLS]
+text-cleaner
+json-formatter
+url-encoder
+[KEYWORDS]
+json to env
+free json to env
+online json to env
+[CATEGORY]
+developer

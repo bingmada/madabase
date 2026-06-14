@@ -1,0 +1,598 @@
+{
+  "title": "Enneagram Test",
+  "description": "Answer 54 quick prompts to explore your enneagram pattern.",
+  "instructions": [
+    "Answer based on recent real behavior, not an ideal version of yourself.",
+    "Use the whole scale when a statement clearly fits or does not fit.",
+    "Your report highlights the strongest pattern and practical next steps."
+  ],
+  "scale": [
+    {
+      "id": "1",
+      "text": "Strongly disagree",
+      "value": 1
+    },
+    {
+      "id": "2",
+      "text": "Disagree",
+      "value": 2
+    },
+    {
+      "id": "3",
+      "text": "Neutral",
+      "value": 3
+    },
+    {
+      "id": "4",
+      "text": "Agree",
+      "value": 4
+    },
+    {
+      "id": "5",
+      "text": "Strongly agree",
+      "value": 5
+    }
+  ],
+  "scaleQuestions": [
+    {
+      "id": "reformer_1",
+      "question": "In relevant situations, I often show a Reformer pattern.",
+      "scoreKey": "REFORMER"
+    },
+    {
+      "id": "reformer_2",
+      "question": "In relevant situations, I often show a Reformer pattern.",
+      "scoreKey": "REFORMER"
+    },
+    {
+      "id": "reformer_3",
+      "question": "In relevant situations, I often show a Reformer pattern.",
+      "scoreKey": "REFORMER"
+    },
+    {
+      "id": "reformer_4",
+      "question": "In relevant situations, I often show a Reformer pattern.",
+      "scoreKey": "REFORMER"
+    },
+    {
+      "id": "reformer_5",
+      "question": "In relevant situations, I often show a Reformer pattern.",
+      "scoreKey": "REFORMER"
+    },
+    {
+      "id": "reformer_6",
+      "question": "In relevant situations, I often show a Reformer pattern.",
+      "scoreKey": "REFORMER"
+    },
+    {
+      "id": "helper_1",
+      "question": "In relevant situations, I often show a Helper pattern.",
+      "scoreKey": "HELPER"
+    },
+    {
+      "id": "helper_2",
+      "question": "In relevant situations, I often show a Helper pattern.",
+      "scoreKey": "HELPER"
+    },
+    {
+      "id": "helper_3",
+      "question": "In relevant situations, I often show a Helper pattern.",
+      "scoreKey": "HELPER"
+    },
+    {
+      "id": "helper_4",
+      "question": "In relevant situations, I often show a Helper pattern.",
+      "scoreKey": "HELPER"
+    },
+    {
+      "id": "helper_5",
+      "question": "In relevant situations, I often show a Helper pattern.",
+      "scoreKey": "HELPER"
+    },
+    {
+      "id": "helper_6",
+      "question": "In relevant situations, I often show a Helper pattern.",
+      "scoreKey": "HELPER"
+    },
+    {
+      "id": "achiever_1",
+      "question": "In relevant situations, I often show a Achiever pattern.",
+      "scoreKey": "ACHIEVER"
+    },
+    {
+      "id": "achiever_2",
+      "question": "In relevant situations, I often show a Achiever pattern.",
+      "scoreKey": "ACHIEVER"
+    },
+    {
+      "id": "achiever_3",
+      "question": "In relevant situations, I often show a Achiever pattern.",
+      "scoreKey": "ACHIEVER"
+    },
+    {
+      "id": "achiever_4",
+      "question": "In relevant situations, I often show a Achiever pattern.",
+      "scoreKey": "ACHIEVER"
+    },
+    {
+      "id": "achiever_5",
+      "question": "In relevant situations, I often show a Achiever pattern.",
+      "scoreKey": "ACHIEVER"
+    },
+    {
+      "id": "achiever_6",
+      "question": "In relevant situations, I often show a Achiever pattern.",
+      "scoreKey": "ACHIEVER"
+    },
+    {
+      "id": "individualist_1",
+      "question": "In relevant situations, I often show a Individualist pattern.",
+      "scoreKey": "INDIVIDUALIST"
+    },
+    {
+      "id": "individualist_2",
+      "question": "In relevant situations, I often show a Individualist pattern.",
+      "scoreKey": "INDIVIDUALIST"
+    },
+    {
+      "id": "individualist_3",
+      "question": "In relevant situations, I often show a Individualist pattern.",
+      "scoreKey": "INDIVIDUALIST"
+    },
+    {
+      "id": "individualist_4",
+      "question": "In relevant situations, I often show a Individualist pattern.",
+      "scoreKey": "INDIVIDUALIST"
+    },
+    {
+      "id": "individualist_5",
+      "question": "In relevant situations, I often show a Individualist pattern.",
+      "scoreKey": "INDIVIDUALIST"
+    },
+    {
+      "id": "individualist_6",
+      "question": "In relevant situations, I often show a Individualist pattern.",
+      "scoreKey": "INDIVIDUALIST"
+    },
+    {
+      "id": "investigator_1",
+      "question": "In relevant situations, I often show a Investigator pattern.",
+      "scoreKey": "INVESTIGATOR"
+    },
+    {
+      "id": "investigator_2",
+      "question": "In relevant situations, I often show a Investigator pattern.",
+      "scoreKey": "INVESTIGATOR"
+    },
+    {
+      "id": "investigator_3",
+      "question": "In relevant situations, I often show a Investigator pattern.",
+      "scoreKey": "INVESTIGATOR"
+    },
+    {
+      "id": "investigator_4",
+      "question": "In relevant situations, I often show a Investigator pattern.",
+      "scoreKey": "INVESTIGATOR"
+    },
+    {
+      "id": "investigator_5",
+      "question": "In relevant situations, I often show a Investigator pattern.",
+      "scoreKey": "INVESTIGATOR"
+    },
+    {
+      "id": "investigator_6",
+      "question": "In relevant situations, I often show a Investigator pattern.",
+      "scoreKey": "INVESTIGATOR"
+    },
+    {
+      "id": "loyalist_1",
+      "question": "In relevant situations, I often show a Loyalist pattern.",
+      "scoreKey": "LOYALIST"
+    },
+    {
+      "id": "loyalist_2",
+      "question": "In relevant situations, I often show a Loyalist pattern.",
+      "scoreKey": "LOYALIST"
+    },
+    {
+      "id": "loyalist_3",
+      "question": "In relevant situations, I often show a Loyalist pattern.",
+      "scoreKey": "LOYALIST"
+    },
+    {
+      "id": "loyalist_4",
+      "question": "In relevant situations, I often show a Loyalist pattern.",
+      "scoreKey": "LOYALIST"
+    },
+    {
+      "id": "loyalist_5",
+      "question": "In relevant situations, I often show a Loyalist pattern.",
+      "scoreKey": "LOYALIST"
+    },
+    {
+      "id": "loyalist_6",
+      "question": "In relevant situations, I often show a Loyalist pattern.",
+      "scoreKey": "LOYALIST"
+    },
+    {
+      "id": "enthusiast_1",
+      "question": "In relevant situations, I often show a Enthusiast pattern.",
+      "scoreKey": "ENTHUSIAST"
+    },
+    {
+      "id": "enthusiast_2",
+      "question": "In relevant situations, I often show a Enthusiast pattern.",
+      "scoreKey": "ENTHUSIAST"
+    },
+    {
+      "id": "enthusiast_3",
+      "question": "In relevant situations, I often show a Enthusiast pattern.",
+      "scoreKey": "ENTHUSIAST"
+    },
+    {
+      "id": "enthusiast_4",
+      "question": "In relevant situations, I often show a Enthusiast pattern.",
+      "scoreKey": "ENTHUSIAST"
+    },
+    {
+      "id": "enthusiast_5",
+      "question": "In relevant situations, I often show a Enthusiast pattern.",
+      "scoreKey": "ENTHUSIAST"
+    },
+    {
+      "id": "enthusiast_6",
+      "question": "In relevant situations, I often show a Enthusiast pattern.",
+      "scoreKey": "ENTHUSIAST"
+    },
+    {
+      "id": "challenger_1",
+      "question": "In relevant situations, I often show a Challenger pattern.",
+      "scoreKey": "CHALLENGER"
+    },
+    {
+      "id": "challenger_2",
+      "question": "In relevant situations, I often show a Challenger pattern.",
+      "scoreKey": "CHALLENGER"
+    },
+    {
+      "id": "challenger_3",
+      "question": "In relevant situations, I often show a Challenger pattern.",
+      "scoreKey": "CHALLENGER"
+    },
+    {
+      "id": "challenger_4",
+      "question": "In relevant situations, I often show a Challenger pattern.",
+      "scoreKey": "CHALLENGER"
+    },
+    {
+      "id": "challenger_5",
+      "question": "In relevant situations, I often show a Challenger pattern.",
+      "scoreKey": "CHALLENGER"
+    },
+    {
+      "id": "challenger_6",
+      "question": "In relevant situations, I often show a Challenger pattern.",
+      "scoreKey": "CHALLENGER"
+    },
+    {
+      "id": "peacemaker_1",
+      "question": "In relevant situations, I often show a Peacemaker pattern.",
+      "scoreKey": "PEACEMAKER"
+    },
+    {
+      "id": "peacemaker_2",
+      "question": "In relevant situations, I often show a Peacemaker pattern.",
+      "scoreKey": "PEACEMAKER"
+    },
+    {
+      "id": "peacemaker_3",
+      "question": "In relevant situations, I often show a Peacemaker pattern.",
+      "scoreKey": "PEACEMAKER"
+    },
+    {
+      "id": "peacemaker_4",
+      "question": "In relevant situations, I often show a Peacemaker pattern.",
+      "scoreKey": "PEACEMAKER"
+    },
+    {
+      "id": "peacemaker_5",
+      "question": "In relevant situations, I often show a Peacemaker pattern.",
+      "scoreKey": "PEACEMAKER"
+    },
+    {
+      "id": "peacemaker_6",
+      "question": "In relevant situations, I often show a Peacemaker pattern.",
+      "scoreKey": "PEACEMAKER"
+    }
+  ],
+  "results": {
+    "REFORMER": {
+      "title": "Reformer",
+      "summary": "Your primary result points to a Reformer pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    },
+    "HELPER": {
+      "title": "Helper",
+      "summary": "Your primary result points to a Helper pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    },
+    "ACHIEVER": {
+      "title": "Achiever",
+      "summary": "Your primary result points to a Achiever pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    },
+    "INDIVIDUALIST": {
+      "title": "Individualist",
+      "summary": "Your primary result points to a Individualist pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    },
+    "INVESTIGATOR": {
+      "title": "Investigator",
+      "summary": "Your primary result points to a Investigator pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    },
+    "LOYALIST": {
+      "title": "Loyalist",
+      "summary": "Your primary result points to a Loyalist pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    },
+    "ENTHUSIAST": {
+      "title": "Enthusiast",
+      "summary": "Your primary result points to a Enthusiast pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    },
+    "CHALLENGER": {
+      "title": "Challenger",
+      "summary": "Your primary result points to a Challenger pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    },
+    "PEACEMAKER": {
+      "title": "Peacemaker",
+      "summary": "Your primary result points to a Peacemaker pattern. Treat it as a useful lens, not a fixed label.",
+      "traits": [
+        "Clear preference",
+        "Repeatable pattern",
+        "Context sensitive"
+      ],
+      "strengths": [
+        "You can create real leverage in the right environment",
+        "You tend to build repeatable strategies",
+        "You notice relevant signals quickly"
+      ],
+      "weaknesses": [
+        "Under pressure, you may overuse one strategy",
+        "Opposite perspectives can be easy to miss",
+        "The result should guide you rather than limit you"
+      ],
+      "careers": [
+        "Review three recent real situations",
+        "Find where this pattern appears most often",
+        "Design one small experiment"
+      ],
+      "relationships": [
+        "Explain your preference clearly while leaving room for other people's pace and style."
+      ],
+      "growthPlan": [
+        "Track the pattern for one week",
+        "Choose one behavior to adjust",
+        "Practice the new move in a low-risk situation"
+      ]
+    }
+  }
+}
