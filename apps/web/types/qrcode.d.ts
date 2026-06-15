@@ -15,10 +15,24 @@ declare module "qrcode" {
     },
   ): Promise<void>;
 
+  export function toString(
+    text: string,
+    options?: {
+      type?: "svg";
+      errorCorrectionLevel?: QRCodeErrorCorrectionLevel;
+      margin?: number;
+      width?: number;
+      color?: {
+        dark?: string;
+        light?: string;
+      };
+    },
+  ): Promise<string>;
+
   const QRCode: {
     toCanvas: typeof toCanvas;
+    toString: typeof toString;
   };
 
   export default QRCode;
 }
-

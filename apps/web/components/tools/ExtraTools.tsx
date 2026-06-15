@@ -1,15 +1,128 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import QRCode from "qrcode";
+import { useEffect, useMemo, useState } from "react";
 import { fireAndForgetToolExecution } from "@/lib/tool-usage-client";
 import { CopyButton, ResetButton, StatusMessage, ToolButton, ToolInput, ToolPanel, ToolTextarea } from "./ToolPrimitives";
 
-function simpleFormatMarkup(input: string) {
-  return input
-    .replace(/>\s*</g, ">\n<")
+function formatXml(input: string) {
+  const trimmed = input.trim();
+  if (!trimmed) return "";
+
+  const parser = new DOMParser();
+  const parsed = parser.parseFromString(trimmed, "application/xml");
+  const error = parsed.querySelector("parsererror");
+  if (error) {
+    throw new Error("Invalid XML. Check tag names, nesting, and closing tags.");
+  }
+
+  const compact = trimmed.replace(/>\s+</g, "><");
+  const tokens = compact.match(/<[^>]+>|[^<]+/g) ?? [];
+  let indent = 0;
+
+  return tokens
+    .map((token) => {
+      const current = token.trim();
+      if (!current) return "";
+      if (/^<\//.test(current)) indent = Math.max(indent - 1, 0);
+      const line = `${"  ".repeat(indent)}${current}`;
+      if (/^<[^!?/][^>]*[^/]?>$/.test(current) && !current.includes("</")) indent += 1;
+      return line;
+    })
+    .filter(Boolean)
+    .join("\n");
+}
+
+function formatYaml(input: string) {
+  const lines = input.replace(/\t/g, "  ").split("\n");
+  const trimmed = lines
+    .map((line) => line.replace(/\s+$/g, ""))
+    .join("\n")
+    .trim();
+  if (!trimmed) return "";
+
+  const stack: number[] = [];
+  for (const line of trimmed.split("\n")) {
+    if (!line.trim() || line.trim().startsWith("#")) continue;
+    const indent = line.match(/^\s*/)?.[0].length ?? 0;
+    if (indent % 2 !== 0) {
+      throw new Error("YAML indentation should use an even number of spaces.");
+    }
+    while (stack.length > 0 && indent < stack[stack.length - 1]) stack.pop();
+    if (stack.length > 0 && indent > stack[stack.length - 1] + 2) {
+      throw new Error("YAML indentation jumps too far. Use two spaces per level.");
+    }
+    if (!stack.includes(indent)) stack.push(indent);
+  }
+
+  return trimmed;
+}
+
+const sqlLineKeywords = [
+  "SELECT",
+  "FROM",
+  "WHERE",
+  "GROUP BY",
+  "ORDER BY",
+  "HAVING",
+  "LIMIT",
+  "OFFSET",
+  "INNER JOIN",
+  "LEFT JOIN",
+  "RIGHT JOIN",
+  "FULL JOIN",
+  "JOIN",
+  "VALUES",
+  "SET",
+  "RETURNING",
+];
+
+function formatSql(input: string) {
+  let inSingleQuote = false;
+  let inDoubleQuote = false;
+  let output = "";
+
+  for (let index = 0; index < input.length; index += 1) {
+    const char = input[index];
+    if (char === "'" && !inDoubleQuote) inSingleQuote = !inSingleQuote;
+    if (char === '"' && !inSingleQuote) inDoubleQuote = !inDoubleQuote;
+    output += inSingleQuote || inDoubleQuote ? char : char.toUpperCase();
+  }
+
+  for (const keyword of sqlLineKeywords) {
+    output = output.replace(new RegExp(`\\s*\\b${keyword.replace(" ", "\\s+")}\\b\\s*`, "g"), `\n${keyword} `);
+  }
+
+  return output
+    .replace(/[ \t]*,[ \t]*/g, ",\n  ")
+    .replace(/\(\s*/g, "(\n  ")
+    .replace(/\s*\)/g, "\n)")
+    .split("\n")
+    .map((line) => line.replace(/[ \t]+/g, " ").trim())
+    .filter(Boolean)
+    .map((line) => (sqlLineKeywords.some((keyword) => line.startsWith(keyword)) || line.startsWith(")") ? line : `  ${line}`))
+    .join("\n")
+    .replace(/^SELECT\s+/g, "SELECT\n  ")
+    .trim();
+}
+
+function formatBraceCode(input: string) {
+  const normalized = input
+    .replace(/\s*([{};])\s*/g, "$1\n")
+    .replace(/\s*,\s*/g, ", ")
+    .replace(/\n+/g, "\n");
+  let indent = 0;
+
+  return normalized
     .split("\n")
     .map((line) => line.trim())
     .filter(Boolean)
+    .map((line) => {
+      if (line.startsWith("}")) indent = Math.max(indent - 1, 0);
+      const formatted = `${"  ".repeat(indent)}${line}`;
+      if (line.endsWith("{")) indent += 1;
+      return formatted;
+    })
     .join("\n");
 }
 
@@ -27,13 +140,10 @@ function normalizeLines(value: string) {
     .join("\n");
 }
 
-function simpleHash(input: string) {
-  let hash = 0;
-  for (let index = 0; index < input.length; index += 1) {
-    hash = (hash << 5) - hash + input.charCodeAt(index);
-    hash |= 0;
-  }
-  return Math.abs(hash).toString(16);
+async function digestText(input: string, algorithm: "SHA-1" | "SHA-256" | "SHA-384" | "SHA-512") {
+  const bytes = new TextEncoder().encode(input);
+  const hash = await crypto.subtle.digest(algorithm, bytes);
+  return Array.from(new Uint8Array(hash), (byte) => byte.toString(16).padStart(2, "0")).join("");
 }
 
 function makeSlug(input: string) {
@@ -63,31 +173,6 @@ function parseUrl(input: string) {
   );
 }
 
-function buildQrSvg(text: string) {
-  const cells = 21;
-  const size = 8;
-  let seed = 0;
-  for (let index = 0; index < text.length; index += 1) {
-    seed = (seed + text.charCodeAt(index) * (index + 1)) % 9973;
-  }
-
-  const rects: string[] = [];
-  for (let row = 0; row < cells; row += 1) {
-    for (let col = 0; col < cells; col += 1) {
-      const isFinder =
-        (row < 7 && col < 7) ||
-        (row < 7 && col >= cells - 7) ||
-        (row >= cells - 7 && col < 7);
-      const on = isFinder || ((row * 31 + col * 17 + seed) % 5 < 2);
-      if (on) {
-        rects.push(`<rect x="${col * size}" y="${row * size}" width="${size}" height="${size}" fill="#111827" />`);
-      }
-    }
-  }
-
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${cells * size} ${cells * size}" width="${cells * size}" height="${cells * size}"><rect width="100%" height="100%" fill="#fff"/>${rects.join("")}</svg>`;
-}
-
 function GenericTextTransformTool({
   label,
   sample,
@@ -97,7 +182,7 @@ function GenericTextTransformTool({
 }: {
   label: string;
   sample: string;
-  transform: (value: string) => string;
+  transform: (value: string) => string | Promise<string>;
   tool: string;
   outputLabel?: string;
 }) {
@@ -106,9 +191,9 @@ function GenericTextTransformTool({
   const [message, setMessage] = useState("");
   const [tone, setTone] = useState<"success" | "error">("success");
 
-  function run() {
+  async function run() {
     try {
-      const nextOutput = transform(input);
+      const nextOutput = await transform(input);
       setOutput(nextOutput);
       setMessage("Done.");
       setTone("success");
@@ -156,15 +241,15 @@ export function JsonEscape() {
 }
 
 export function YamlFormatter() {
-  return <GenericTextTransformTool label="YAML input" sample={"name: Madabase\ntools:\n  - JSON Formatter\n  - JWT Decoder"} tool="yaml-formatter" transform={normalizeLines} outputLabel="Formatted YAML" />;
+  return <GenericTextTransformTool label="YAML input" sample={"name: Madabase\ntools:\n  - JSON Formatter\n  - JWT Decoder"} tool="yaml-formatter" transform={formatYaml} outputLabel="Formatted YAML" />;
 }
 
 export function XmlFormatter() {
-  return <GenericTextTransformTool label="XML input" sample={'<root><tool>Madabase</tool><type>formatter</type></root>'} tool="xml-formatter" transform={simpleFormatMarkup} outputLabel="Formatted XML" />;
+  return <GenericTextTransformTool label="XML input" sample={'<root><tool>Madabase</tool><type>formatter</type></root>'} tool="xml-formatter" transform={formatXml} outputLabel="Formatted XML" />;
 }
 
 export function SqlFormatter() {
-  return <GenericTextTransformTool label="SQL input" sample={"select id,name from users where status='active' order by created_at desc"} tool="sql-formatter" transform={(value) => value.replace(/\b(select|from|where|order by|group by|insert into|values|update|set|delete)\b/gi, (match) => `\n${match.toUpperCase()}` ).trim()} outputLabel="Formatted SQL" />;
+  return <GenericTextTransformTool label="SQL input" sample={"select id,name from users where status='active' order by created_at desc"} tool="sql-formatter" transform={formatSql} outputLabel="Formatted SQL" />;
 }
 
 export function RegexTester() {
@@ -231,7 +316,15 @@ export function CronGenerator() {
 }
 
 export function HashGenerator() {
-  return <GenericTextTransformTool label="Plain text" sample="Madabase" tool="hash-generator" transform={simpleHash} outputLabel="Hash output" />;
+  return <GenericTextTransformTool label="Plain text" sample="Madabase" tool="hash-generator" transform={async (value) => {
+    const [sha1, sha256, sha384, sha512] = await Promise.all([
+      digestText(value, "SHA-1"),
+      digestText(value, "SHA-256"),
+      digestText(value, "SHA-384"),
+      digestText(value, "SHA-512"),
+    ]);
+    return [`SHA-1: ${sha1}`, `SHA-256: ${sha256}`, `SHA-384: ${sha384}`, `SHA-512: ${sha512}`].join("\n\n");
+  }} outputLabel="Hash output" />;
 }
 
 export function ColorConverter() {
@@ -289,7 +382,50 @@ export function SlugGenerator() {
 
 export function QrCodeGenerator() {
   const [input, setInput] = useState("https://madabase.com/en/tools");
-  const svg = useMemo(() => buildQrSvg(input), [input]);
+  const [svg, setSvg] = useState("");
+  const [message, setMessage] = useState("");
+  const [tone, setTone] = useState<"success" | "error">("success");
+
+  useEffect(() => {
+    let cancelled = false;
+
+    async function render() {
+      if (!input.trim()) {
+        setSvg("");
+        setMessage("");
+        return;
+      }
+
+      try {
+        const nextSvg = await QRCode.toString(input, {
+          type: "svg",
+          errorCorrectionLevel: "M",
+          margin: 2,
+          width: 196,
+          color: {
+            dark: "#111827",
+            light: "#ffffff",
+          },
+        });
+        if (!cancelled) {
+          setSvg(nextSvg);
+          setMessage("Valid QR code generated.");
+          setTone("success");
+        }
+      } catch (error) {
+        if (!cancelled) {
+          setSvg("");
+          setMessage(error instanceof Error ? error.message : "Unable to generate QR code.");
+          setTone("error");
+        }
+      }
+    }
+
+    render();
+    return () => {
+      cancelled = true;
+    };
+  }, [input]);
 
   return (
     <ToolPanel>
@@ -300,9 +436,10 @@ export function QrCodeGenerator() {
             <CopyButton value={svg} label="Copy SVG" />
             <ToolButton onClick={() => fireAndForgetToolExecution("qr-code-generator")}>Generate QR</ToolButton>
           </div>
+          <StatusMessage message={message} tone={tone} />
         </div>
         <div className="rounded-md border border-[var(--border)] bg-white p-4">
-          <div dangerouslySetInnerHTML={{ __html: svg }} />
+          {svg ? <div dangerouslySetInnerHTML={{ __html: svg }} /> : <div className="grid aspect-square place-items-center text-sm text-[var(--text-soft)]">No QR code</div>}
         </div>
       </div>
     </ToolPanel>
@@ -314,18 +451,18 @@ export function HtmlEncoder() {
 }
 
 export function CssFormatter() {
-  return <GenericTextTransformTool label="CSS input" sample={"body{margin:0;color:#111827}.card{padding:16px;border-radius:8px}"} tool="css-formatter" transform={(value) => value.replaceAll("}", "}\n").replaceAll(";", ";\n").replaceAll("{", " {\n").trim()} outputLabel="Formatted CSS" />;
+  return <GenericTextTransformTool label="CSS input" sample={"body{margin:0;color:#111827}.card{padding:16px;border-radius:8px}"} tool="css-formatter" transform={formatBraceCode} outputLabel="Formatted CSS" />;
 }
 
 export function JsFormatter() {
-  return <GenericTextTransformTool label="JavaScript input" sample={"const tools=['json','jwt'];tools.forEach(tool=>console.log(tool));"} tool="js-formatter" transform={(value) => value.replaceAll(";", ";\n").replaceAll("{", "{\n").replaceAll("}", "\n}")} outputLabel="Formatted JavaScript" />;
+  return <GenericTextTransformTool label="JavaScript input" sample={"const tools=['json','jwt'];tools.forEach(tool=>console.log(tool));"} tool="js-formatter" transform={formatBraceCode} outputLabel="Formatted JavaScript" />;
 }
 
 export function UrlParser() {
   return <GenericTextTransformTool label="URL input" sample="https://madabase.com/en/tools/json-formatter?ref=seo#faq" tool="url-parser" transform={parseUrl} outputLabel="Parsed URL" />;
 }
 
-const genericToolConfigs: Record<string, { label: string; sample: string; outputLabel: string; transform: (value: string) => string }> = {
+const genericToolConfigs: Record<string, { label: string; sample: string; outputLabel: string; transform: (value: string) => string | Promise<string> }> = {
   "line-sorter": {
     label: "Lines",
     sample: "banana\napple\ncarrot",
@@ -530,7 +667,7 @@ const genericToolConfigs: Record<string, { label: string; sample: string; output
     label: "Lines",
     sample: "alpha\nbeta\ngamma\ndelta",
     outputLabel: "Randomized lines",
-    transform: (value) => normalizeLines(value).split("\n").sort((a, b) => simpleHash(b).localeCompare(simpleHash(a))).join("\n"),
+    transform: (value) => normalizeLines(value).split("\n").sort(() => Math.random() - 0.5).join("\n"),
   },
 };
 
