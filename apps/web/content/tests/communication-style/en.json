@@ -1,10 +1,10 @@
 {
   "title": "Communication Style Test",
-  "description": "Answer 24 quick prompts to explore your communication style pattern.",
+  "description": "Explore your communication style pattern with practical, scenario-based questions.",
   "instructions": [
-    "Answer based on recent real behavior, not an ideal version of yourself.",
-    "Use the whole scale when a statement clearly fits or does not fit.",
-    "Your report highlights the strongest pattern and practical next steps."
+    "Answer from recent real behavior, not an ideal version of yourself.",
+    "If a statement reminds you of a concrete situation, it is usually more useful.",
+    "Use the result for reflection and communication, not as a diagnosis."
   ],
   "scale": [
     {
@@ -36,138 +36,138 @@
   "scaleQuestions": [
     {
       "id": "assertive_1",
-      "question": "In relevant situations, I often show a Assertive pattern.",
+      "question": "In recent real situations, I can see a clear Assertive pattern in how I choose and act.",
       "scoreKey": "ASSERTIVE"
     },
     {
       "id": "assertive_2",
-      "question": "In relevant situations, I often show a Assertive pattern.",
+      "question": "When pressure rises, I often rely on a Assertive strategy instead of switching styles.",
       "scoreKey": "ASSERTIVE"
     },
     {
       "id": "assertive_3",
-      "question": "In relevant situations, I often show a Assertive pattern.",
+      "question": "People who work with me would probably notice my Assertive tendency.",
       "scoreKey": "ASSERTIVE"
     },
     {
       "id": "assertive_4",
-      "question": "In relevant situations, I often show a Assertive pattern.",
+      "question": "If an environment blocks Assertive for too long, my motivation drops.",
       "scoreKey": "ASSERTIVE"
     },
     {
       "id": "assertive_5",
-      "question": "In relevant situations, I often show a Assertive pattern.",
+      "question": "During collaboration, I often bring Assertive into the way I contribute.",
       "scoreKey": "ASSERTIVE"
     },
     {
       "id": "assertive_6",
-      "question": "In relevant situations, I often show a Assertive pattern.",
+      "question": "Looking back over the last month, Assertive describes a repeated behavior pattern for me.",
       "scoreKey": "ASSERTIVE"
     },
     {
       "id": "analytical_1",
-      "question": "In relevant situations, I often show a Analytical pattern.",
+      "question": "In recent real situations, I can see a clear Analytical pattern in how I choose and act.",
       "scoreKey": "ANALYTICAL"
     },
     {
       "id": "analytical_2",
-      "question": "In relevant situations, I often show a Analytical pattern.",
+      "question": "When pressure rises, I often rely on a Analytical strategy instead of switching styles.",
       "scoreKey": "ANALYTICAL"
     },
     {
       "id": "analytical_3",
-      "question": "In relevant situations, I often show a Analytical pattern.",
+      "question": "People who work with me would probably notice my Analytical tendency.",
       "scoreKey": "ANALYTICAL"
     },
     {
       "id": "analytical_4",
-      "question": "In relevant situations, I often show a Analytical pattern.",
+      "question": "If an environment blocks Analytical for too long, my motivation drops.",
       "scoreKey": "ANALYTICAL"
     },
     {
       "id": "analytical_5",
-      "question": "In relevant situations, I often show a Analytical pattern.",
+      "question": "During collaboration, I often bring Analytical into the way I contribute.",
       "scoreKey": "ANALYTICAL"
     },
     {
       "id": "analytical_6",
-      "question": "In relevant situations, I often show a Analytical pattern.",
+      "question": "Looking back over the last month, Analytical describes a repeated behavior pattern for me.",
       "scoreKey": "ANALYTICAL"
     },
     {
       "id": "expressive_1",
-      "question": "In relevant situations, I often show a Expressive pattern.",
+      "question": "In recent real situations, I can see a clear Expressive pattern in how I choose and act.",
       "scoreKey": "EXPRESSIVE"
     },
     {
       "id": "expressive_2",
-      "question": "In relevant situations, I often show a Expressive pattern.",
+      "question": "When pressure rises, I often rely on a Expressive strategy instead of switching styles.",
       "scoreKey": "EXPRESSIVE"
     },
     {
       "id": "expressive_3",
-      "question": "In relevant situations, I often show a Expressive pattern.",
+      "question": "People who work with me would probably notice my Expressive tendency.",
       "scoreKey": "EXPRESSIVE"
     },
     {
       "id": "expressive_4",
-      "question": "In relevant situations, I often show a Expressive pattern.",
+      "question": "If an environment blocks Expressive for too long, my motivation drops.",
       "scoreKey": "EXPRESSIVE"
     },
     {
       "id": "expressive_5",
-      "question": "In relevant situations, I often show a Expressive pattern.",
+      "question": "During collaboration, I often bring Expressive into the way I contribute.",
       "scoreKey": "EXPRESSIVE"
     },
     {
       "id": "expressive_6",
-      "question": "In relevant situations, I often show a Expressive pattern.",
+      "question": "Looking back over the last month, Expressive describes a repeated behavior pattern for me.",
       "scoreKey": "EXPRESSIVE"
     },
     {
       "id": "supportive_1",
-      "question": "In relevant situations, I often show a Supportive pattern.",
+      "question": "In recent real situations, I can see a clear Supportive pattern in how I choose and act.",
       "scoreKey": "SUPPORTIVE"
     },
     {
       "id": "supportive_2",
-      "question": "In relevant situations, I often show a Supportive pattern.",
+      "question": "When pressure rises, I often rely on a Supportive strategy instead of switching styles.",
       "scoreKey": "SUPPORTIVE"
     },
     {
       "id": "supportive_3",
-      "question": "In relevant situations, I often show a Supportive pattern.",
+      "question": "People who work with me would probably notice my Supportive tendency.",
       "scoreKey": "SUPPORTIVE"
     },
     {
       "id": "supportive_4",
-      "question": "In relevant situations, I often show a Supportive pattern.",
+      "question": "If an environment blocks Supportive for too long, my motivation drops.",
       "scoreKey": "SUPPORTIVE"
     },
     {
       "id": "supportive_5",
-      "question": "In relevant situations, I often show a Supportive pattern.",
+      "question": "During collaboration, I often bring Supportive into the way I contribute.",
       "scoreKey": "SUPPORTIVE"
     },
     {
       "id": "supportive_6",
-      "question": "In relevant situations, I often show a Supportive pattern.",
+      "question": "Looking back over the last month, Supportive describes a repeated behavior pattern for me.",
       "scoreKey": "SUPPORTIVE"
     }
   ],
   "results": {
     "ASSERTIVE": {
       "title": "Assertive",
-      "summary": "Your primary result points to a Assertive pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Communication Style Test, your result is Assertive. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Assertive",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Assertive",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -175,12 +175,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Assertive clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",
@@ -190,16 +190,16 @@
     },
     "ANALYTICAL": {
       "title": "Analytical",
-      "summary": "Your primary result points to a Analytical pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Communication Style Test, your result is Analytical. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Analytical",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Analytical",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -207,12 +207,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Analytical clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",
@@ -222,16 +222,16 @@
     },
     "EXPRESSIVE": {
       "title": "Expressive",
-      "summary": "Your primary result points to a Expressive pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Communication Style Test, your result is Expressive. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Expressive",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Expressive",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -239,12 +239,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Expressive clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",
@@ -254,16 +254,16 @@
     },
     "SUPPORTIVE": {
       "title": "Supportive",
-      "summary": "Your primary result points to a Supportive pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Communication Style Test, your result is Supportive. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Supportive",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Supportive",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -271,12 +271,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Supportive clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",

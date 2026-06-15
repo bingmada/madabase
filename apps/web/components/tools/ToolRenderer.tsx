@@ -1,6 +1,7 @@
 "use client";
 
 import type { ToolComponentName } from "@/lib/tool-registry";
+import type { Locale } from "@/lib/i18n";
 import { Base64Tool } from "./Base64Tool";
 import {
   CaseConverter,
@@ -35,7 +36,7 @@ import { TimestampConverter } from "./TimestampConverter";
 import { UrlEncoder } from "./UrlEncoder";
 import { UuidGenerator } from "./UuidGenerator";
 
-const toolComponents: Record<ToolComponentName, React.ComponentType<{ toolSlug?: string }>> = {
+const toolComponents: Record<ToolComponentName, React.ComponentType<{ toolSlug?: string; locale?: Locale }>> = {
   JsonFormatter,
   JsonValidator,
   JsonToTypescript,
@@ -69,7 +70,7 @@ const toolComponents: Record<ToolComponentName, React.ComponentType<{ toolSlug?:
   GenericTextTool,
 };
 
-export function ToolRenderer({ component, toolSlug }: { component: ToolComponentName; toolSlug?: string }) {
+export function ToolRenderer({ component, toolSlug, locale }: { component: ToolComponentName; toolSlug?: string; locale?: Locale }) {
   const Component = toolComponents[component];
-  return <Component toolSlug={toolSlug} />;
+  return <Component toolSlug={toolSlug} locale={locale} />;
 }

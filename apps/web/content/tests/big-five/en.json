@@ -1,10 +1,10 @@
 {
   "title": "Big Five Personality Test",
-  "description": "Answer 30 quick prompts to explore your big five personality pattern.",
+  "description": "Explore your big five personality pattern with practical, scenario-based questions.",
   "instructions": [
-    "Answer based on recent real behavior, not an ideal version of yourself.",
-    "Use the whole scale when a statement clearly fits or does not fit.",
-    "Your report highlights the strongest pattern and practical next steps."
+    "Answer from recent real behavior, not an ideal version of yourself.",
+    "If a statement reminds you of a concrete situation, it is usually more useful.",
+    "Use the result for reflection and communication, not as a diagnosis."
   ],
   "scale": [
     {
@@ -36,168 +36,168 @@
   "scaleQuestions": [
     {
       "id": "openness_1",
-      "question": "In relevant situations, I often show a Openness pattern.",
+      "question": "In recent real situations, I can see a clear Openness pattern in how I choose and act.",
       "scoreKey": "OPENNESS"
     },
     {
       "id": "openness_2",
-      "question": "In relevant situations, I often show a Openness pattern.",
+      "question": "When pressure rises, I often rely on a Openness strategy instead of switching styles.",
       "scoreKey": "OPENNESS"
     },
     {
       "id": "openness_3",
-      "question": "In relevant situations, I often show a Openness pattern.",
+      "question": "People who work with me would probably notice my Openness tendency.",
       "scoreKey": "OPENNESS"
     },
     {
       "id": "openness_4",
-      "question": "In relevant situations, I often show a Openness pattern.",
+      "question": "If an environment blocks Openness for too long, my motivation drops.",
       "scoreKey": "OPENNESS"
     },
     {
       "id": "openness_5",
-      "question": "In relevant situations, I often show a Openness pattern.",
+      "question": "During collaboration, I often bring Openness into the way I contribute.",
       "scoreKey": "OPENNESS"
     },
     {
       "id": "openness_6",
-      "question": "In relevant situations, I often show a Openness pattern.",
+      "question": "Looking back over the last month, Openness describes a repeated behavior pattern for me.",
       "scoreKey": "OPENNESS"
     },
     {
       "id": "conscientiousness_1",
-      "question": "In relevant situations, I often show a Conscientiousness pattern.",
+      "question": "In recent real situations, I can see a clear Conscientiousness pattern in how I choose and act.",
       "scoreKey": "CONSCIENTIOUSNESS"
     },
     {
       "id": "conscientiousness_2",
-      "question": "In relevant situations, I often show a Conscientiousness pattern.",
+      "question": "When pressure rises, I often rely on a Conscientiousness strategy instead of switching styles.",
       "scoreKey": "CONSCIENTIOUSNESS"
     },
     {
       "id": "conscientiousness_3",
-      "question": "In relevant situations, I often show a Conscientiousness pattern.",
+      "question": "People who work with me would probably notice my Conscientiousness tendency.",
       "scoreKey": "CONSCIENTIOUSNESS"
     },
     {
       "id": "conscientiousness_4",
-      "question": "In relevant situations, I often show a Conscientiousness pattern.",
+      "question": "If an environment blocks Conscientiousness for too long, my motivation drops.",
       "scoreKey": "CONSCIENTIOUSNESS"
     },
     {
       "id": "conscientiousness_5",
-      "question": "In relevant situations, I often show a Conscientiousness pattern.",
+      "question": "During collaboration, I often bring Conscientiousness into the way I contribute.",
       "scoreKey": "CONSCIENTIOUSNESS"
     },
     {
       "id": "conscientiousness_6",
-      "question": "In relevant situations, I often show a Conscientiousness pattern.",
+      "question": "Looking back over the last month, Conscientiousness describes a repeated behavior pattern for me.",
       "scoreKey": "CONSCIENTIOUSNESS"
     },
     {
       "id": "extraversion_1",
-      "question": "In relevant situations, I often show a Extraversion pattern.",
+      "question": "In recent real situations, I can see a clear Extraversion pattern in how I choose and act.",
       "scoreKey": "EXTRAVERSION"
     },
     {
       "id": "extraversion_2",
-      "question": "In relevant situations, I often show a Extraversion pattern.",
+      "question": "When pressure rises, I often rely on a Extraversion strategy instead of switching styles.",
       "scoreKey": "EXTRAVERSION"
     },
     {
       "id": "extraversion_3",
-      "question": "In relevant situations, I often show a Extraversion pattern.",
+      "question": "People who work with me would probably notice my Extraversion tendency.",
       "scoreKey": "EXTRAVERSION"
     },
     {
       "id": "extraversion_4",
-      "question": "In relevant situations, I often show a Extraversion pattern.",
+      "question": "If an environment blocks Extraversion for too long, my motivation drops.",
       "scoreKey": "EXTRAVERSION"
     },
     {
       "id": "extraversion_5",
-      "question": "In relevant situations, I often show a Extraversion pattern.",
+      "question": "During collaboration, I often bring Extraversion into the way I contribute.",
       "scoreKey": "EXTRAVERSION"
     },
     {
       "id": "extraversion_6",
-      "question": "In relevant situations, I often show a Extraversion pattern.",
+      "question": "Looking back over the last month, Extraversion describes a repeated behavior pattern for me.",
       "scoreKey": "EXTRAVERSION"
     },
     {
       "id": "agreeableness_1",
-      "question": "In relevant situations, I often show a Agreeableness pattern.",
+      "question": "In recent real situations, I can see a clear Agreeableness pattern in how I choose and act.",
       "scoreKey": "AGREEABLENESS"
     },
     {
       "id": "agreeableness_2",
-      "question": "In relevant situations, I often show a Agreeableness pattern.",
+      "question": "When pressure rises, I often rely on a Agreeableness strategy instead of switching styles.",
       "scoreKey": "AGREEABLENESS"
     },
     {
       "id": "agreeableness_3",
-      "question": "In relevant situations, I often show a Agreeableness pattern.",
+      "question": "People who work with me would probably notice my Agreeableness tendency.",
       "scoreKey": "AGREEABLENESS"
     },
     {
       "id": "agreeableness_4",
-      "question": "In relevant situations, I often show a Agreeableness pattern.",
+      "question": "If an environment blocks Agreeableness for too long, my motivation drops.",
       "scoreKey": "AGREEABLENESS"
     },
     {
       "id": "agreeableness_5",
-      "question": "In relevant situations, I often show a Agreeableness pattern.",
+      "question": "During collaboration, I often bring Agreeableness into the way I contribute.",
       "scoreKey": "AGREEABLENESS"
     },
     {
       "id": "agreeableness_6",
-      "question": "In relevant situations, I often show a Agreeableness pattern.",
+      "question": "Looking back over the last month, Agreeableness describes a repeated behavior pattern for me.",
       "scoreKey": "AGREEABLENESS"
     },
     {
       "id": "neuroticism_1",
-      "question": "In relevant situations, I often show a Neuroticism pattern.",
+      "question": "In recent real situations, I can see a clear Emotional Sensitivity pattern in how I choose and act.",
       "scoreKey": "NEUROTICISM"
     },
     {
       "id": "neuroticism_2",
-      "question": "In relevant situations, I often show a Neuroticism pattern.",
+      "question": "When pressure rises, I often rely on a Emotional Sensitivity strategy instead of switching styles.",
       "scoreKey": "NEUROTICISM"
     },
     {
       "id": "neuroticism_3",
-      "question": "In relevant situations, I often show a Neuroticism pattern.",
+      "question": "People who work with me would probably notice my Emotional Sensitivity tendency.",
       "scoreKey": "NEUROTICISM"
     },
     {
       "id": "neuroticism_4",
-      "question": "In relevant situations, I often show a Neuroticism pattern.",
+      "question": "If an environment blocks Emotional Sensitivity for too long, my motivation drops.",
       "scoreKey": "NEUROTICISM"
     },
     {
       "id": "neuroticism_5",
-      "question": "In relevant situations, I often show a Neuroticism pattern.",
+      "question": "During collaboration, I often bring Emotional Sensitivity into the way I contribute.",
       "scoreKey": "NEUROTICISM"
     },
     {
       "id": "neuroticism_6",
-      "question": "In relevant situations, I often show a Neuroticism pattern.",
+      "question": "Looking back over the last month, Emotional Sensitivity describes a repeated behavior pattern for me.",
       "scoreKey": "NEUROTICISM"
     }
   ],
   "results": {
     "OPENNESS": {
       "title": "Openness",
-      "summary": "Your primary result points to a Openness pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Big Five Personality Test, your result is Openness. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Openness",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Openness",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -205,12 +205,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Openness clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",
@@ -220,16 +220,16 @@
     },
     "CONSCIENTIOUSNESS": {
       "title": "Conscientiousness",
-      "summary": "Your primary result points to a Conscientiousness pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Big Five Personality Test, your result is Conscientiousness. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Conscientiousness",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Conscientiousness",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -237,12 +237,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Conscientiousness clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",
@@ -252,16 +252,16 @@
     },
     "EXTRAVERSION": {
       "title": "Extraversion",
-      "summary": "Your primary result points to a Extraversion pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Big Five Personality Test, your result is Extraversion. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Extraversion",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Extraversion",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -269,12 +269,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Extraversion clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",
@@ -284,16 +284,16 @@
     },
     "AGREEABLENESS": {
       "title": "Agreeableness",
-      "summary": "Your primary result points to a Agreeableness pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Big Five Personality Test, your result is Agreeableness. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Agreeableness",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Agreeableness",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -301,12 +301,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Agreeableness clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",
@@ -315,17 +315,17 @@
       ]
     },
     "NEUROTICISM": {
-      "title": "Neuroticism",
-      "summary": "Your primary result points to a Neuroticism pattern. Treat it as a useful lens, not a fixed label.",
+      "title": "Emotional Sensitivity",
+      "summary": "In this Big Five Personality Test, your result is Emotional Sensitivity. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Emotional Sensitivity",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Emotional Sensitivity",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -333,12 +333,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Emotional Sensitivity clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",

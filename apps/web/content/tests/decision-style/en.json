@@ -1,10 +1,10 @@
 {
   "title": "Decision Style Test",
-  "description": "Answer 24 quick prompts to explore your decision style pattern.",
+  "description": "Explore your decision style pattern with practical, scenario-based questions.",
   "instructions": [
-    "Answer based on recent real behavior, not an ideal version of yourself.",
-    "Use the whole scale when a statement clearly fits or does not fit.",
-    "Your report highlights the strongest pattern and practical next steps."
+    "Answer from recent real behavior, not an ideal version of yourself.",
+    "If a statement reminds you of a concrete situation, it is usually more useful.",
+    "Use the result for reflection and communication, not as a diagnosis."
   ],
   "scale": [
     {
@@ -36,138 +36,138 @@
   "scaleQuestions": [
     {
       "id": "analytical_1",
-      "question": "In relevant situations, I often show a Analytical pattern.",
+      "question": "In recent real situations, I can see a clear Analytical pattern in how I choose and act.",
       "scoreKey": "ANALYTICAL"
     },
     {
       "id": "analytical_2",
-      "question": "In relevant situations, I often show a Analytical pattern.",
+      "question": "When pressure rises, I often rely on a Analytical strategy instead of switching styles.",
       "scoreKey": "ANALYTICAL"
     },
     {
       "id": "analytical_3",
-      "question": "In relevant situations, I often show a Analytical pattern.",
+      "question": "People who work with me would probably notice my Analytical tendency.",
       "scoreKey": "ANALYTICAL"
     },
     {
       "id": "analytical_4",
-      "question": "In relevant situations, I often show a Analytical pattern.",
+      "question": "If an environment blocks Analytical for too long, my motivation drops.",
       "scoreKey": "ANALYTICAL"
     },
     {
       "id": "analytical_5",
-      "question": "In relevant situations, I often show a Analytical pattern.",
+      "question": "During collaboration, I often bring Analytical into the way I contribute.",
       "scoreKey": "ANALYTICAL"
     },
     {
       "id": "analytical_6",
-      "question": "In relevant situations, I often show a Analytical pattern.",
+      "question": "Looking back over the last month, Analytical describes a repeated behavior pattern for me.",
       "scoreKey": "ANALYTICAL"
     },
     {
       "id": "intuitive_1",
-      "question": "In relevant situations, I often show a Intuitive pattern.",
+      "question": "In recent real situations, I can see a clear Intuitive pattern in how I choose and act.",
       "scoreKey": "INTUITIVE"
     },
     {
       "id": "intuitive_2",
-      "question": "In relevant situations, I often show a Intuitive pattern.",
+      "question": "When pressure rises, I often rely on a Intuitive strategy instead of switching styles.",
       "scoreKey": "INTUITIVE"
     },
     {
       "id": "intuitive_3",
-      "question": "In relevant situations, I often show a Intuitive pattern.",
+      "question": "People who work with me would probably notice my Intuitive tendency.",
       "scoreKey": "INTUITIVE"
     },
     {
       "id": "intuitive_4",
-      "question": "In relevant situations, I often show a Intuitive pattern.",
+      "question": "If an environment blocks Intuitive for too long, my motivation drops.",
       "scoreKey": "INTUITIVE"
     },
     {
       "id": "intuitive_5",
-      "question": "In relevant situations, I often show a Intuitive pattern.",
+      "question": "During collaboration, I often bring Intuitive into the way I contribute.",
       "scoreKey": "INTUITIVE"
     },
     {
       "id": "intuitive_6",
-      "question": "In relevant situations, I often show a Intuitive pattern.",
+      "question": "Looking back over the last month, Intuitive describes a repeated behavior pattern for me.",
       "scoreKey": "INTUITIVE"
     },
     {
       "id": "dependent_1",
-      "question": "In relevant situations, I often show a Dependent pattern.",
+      "question": "In recent real situations, I can see a clear Dependent pattern in how I choose and act.",
       "scoreKey": "DEPENDENT"
     },
     {
       "id": "dependent_2",
-      "question": "In relevant situations, I often show a Dependent pattern.",
+      "question": "When pressure rises, I often rely on a Dependent strategy instead of switching styles.",
       "scoreKey": "DEPENDENT"
     },
     {
       "id": "dependent_3",
-      "question": "In relevant situations, I often show a Dependent pattern.",
+      "question": "People who work with me would probably notice my Dependent tendency.",
       "scoreKey": "DEPENDENT"
     },
     {
       "id": "dependent_4",
-      "question": "In relevant situations, I often show a Dependent pattern.",
+      "question": "If an environment blocks Dependent for too long, my motivation drops.",
       "scoreKey": "DEPENDENT"
     },
     {
       "id": "dependent_5",
-      "question": "In relevant situations, I often show a Dependent pattern.",
+      "question": "During collaboration, I often bring Dependent into the way I contribute.",
       "scoreKey": "DEPENDENT"
     },
     {
       "id": "dependent_6",
-      "question": "In relevant situations, I often show a Dependent pattern.",
+      "question": "Looking back over the last month, Dependent describes a repeated behavior pattern for me.",
       "scoreKey": "DEPENDENT"
     },
     {
       "id": "spontaneous_1",
-      "question": "In relevant situations, I often show a Spontaneous pattern.",
+      "question": "In recent real situations, I can see a clear Spontaneous pattern in how I choose and act.",
       "scoreKey": "SPONTANEOUS"
     },
     {
       "id": "spontaneous_2",
-      "question": "In relevant situations, I often show a Spontaneous pattern.",
+      "question": "When pressure rises, I often rely on a Spontaneous strategy instead of switching styles.",
       "scoreKey": "SPONTANEOUS"
     },
     {
       "id": "spontaneous_3",
-      "question": "In relevant situations, I often show a Spontaneous pattern.",
+      "question": "People who work with me would probably notice my Spontaneous tendency.",
       "scoreKey": "SPONTANEOUS"
     },
     {
       "id": "spontaneous_4",
-      "question": "In relevant situations, I often show a Spontaneous pattern.",
+      "question": "If an environment blocks Spontaneous for too long, my motivation drops.",
       "scoreKey": "SPONTANEOUS"
     },
     {
       "id": "spontaneous_5",
-      "question": "In relevant situations, I often show a Spontaneous pattern.",
+      "question": "During collaboration, I often bring Spontaneous into the way I contribute.",
       "scoreKey": "SPONTANEOUS"
     },
     {
       "id": "spontaneous_6",
-      "question": "In relevant situations, I often show a Spontaneous pattern.",
+      "question": "Looking back over the last month, Spontaneous describes a repeated behavior pattern for me.",
       "scoreKey": "SPONTANEOUS"
     }
   ],
   "results": {
     "ANALYTICAL": {
       "title": "Analytical",
-      "summary": "Your primary result points to a Analytical pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Decision Style Test, your result is Analytical. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Analytical",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Analytical",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -175,12 +175,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Analytical clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",
@@ -190,16 +190,16 @@
     },
     "INTUITIVE": {
       "title": "Intuitive",
-      "summary": "Your primary result points to a Intuitive pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Decision Style Test, your result is Intuitive. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Intuitive",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Intuitive",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -207,12 +207,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Intuitive clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",
@@ -222,16 +222,16 @@
     },
     "DEPENDENT": {
       "title": "Dependent",
-      "summary": "Your primary result points to a Dependent pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Decision Style Test, your result is Dependent. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Dependent",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Dependent",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -239,12 +239,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Dependent clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",
@@ -254,16 +254,16 @@
     },
     "SPONTANEOUS": {
       "title": "Spontaneous",
-      "summary": "Your primary result points to a Spontaneous pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Decision Style Test, your result is Spontaneous. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Spontaneous",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Spontaneous",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -271,12 +271,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Spontaneous clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",

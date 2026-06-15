@@ -90,6 +90,26 @@ function calculateBurnout(answers: TestAnswer[]): TestResult {
   return { type, scores };
 }
 
+function calculateProcrastination(answers: TestAnswer[]): TestResult {
+  const scores = sumScores(answers);
+  const total = scores.PROCRASTINATION ?? 0;
+  const type = total >= 97 ? "SEVERE" : total >= 73 ? "HIGH" : total >= 49 ? "MODERATE" : "LOW";
+  return { type, scores };
+}
+
+function calculateResilience(answers: TestAnswer[]): TestResult {
+  const scores = sumScores(answers);
+  const total = scores.RESILIENCE ?? 0;
+  const type = total >= 96 ? "STEADY" : total >= 72 ? "RECOVERING" : total >= 48 ? "STRAINED" : "FRAGILE";
+  return { type, scores };
+}
+
+function getExpandedCalculator(slug: string) {
+  if (slug === "procrastination") return calculateProcrastination;
+  if (slug === "resilience") return calculateResilience;
+  return calculateTopScore;
+}
+
 const baseTestRegistry: TestRegistryEntry[] = [
   {
     slug: "mbti",
@@ -236,7 +256,7 @@ const baseTestRegistry: TestRegistryEntry[] = [
 
 export const testRegistry: TestRegistryEntry[] = [
   ...baseTestRegistry,
-  ...expandedTestConfigs.map((test) => ({ ...test, calculator: calculateTopScore })),
+  ...expandedTestConfigs.map((test) => ({ ...test, calculator: getExpandedCalculator(test.slug) })),
 ];
 
 export const testMap = new Map(testRegistry.map((test) => [test.slug, test]));

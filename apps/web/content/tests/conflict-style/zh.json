@@ -1,15 +1,15 @@
 {
   "title": "冲突处理风格测试",
-  "description": "通过 30 个快速问题了解你的冲突处理风格模式。",
+  "description": "通过更贴近真实场景的问题，了解你的冲突处理风格模式。",
   "instructions": [
     "请根据最近真实行为作答，不要按理想中的自己选择。",
-    "当描述明显符合或不符合时，请大胆使用量表两端。",
-    "报告会突出你的最强模式和可执行的下一步建议。"
+    "如果某句话让你想到具体经历，通常说明它更有参考价值。",
+    "结果用于自我理解和沟通参考，不是诊断或定论。"
   ],
   "reportLabels": {
     "strengths": "优势",
     "weaknesses": "风险",
-    "careers": "适合方法",
+    "careers": "适合场景",
     "relationships": "关系提示",
     "growth": "成长计划"
   },
@@ -43,314 +43,314 @@
   "scaleQuestions": [
     {
       "id": "collaborating_1",
-      "question": "我在相关情境中经常表现出「Collaborating」这一倾向。",
+      "question": "遇到重要选择时，我会自然地把「协作型」放在很靠前的位置。",
       "scoreKey": "COLLABORATING"
     },
     {
       "id": "collaborating_2",
-      "question": "我在相关情境中经常表现出「Collaborating」这一倾向。",
+      "question": "别人评价我时，常会提到我在「协作型」上的表现。",
       "scoreKey": "COLLABORATING"
     },
     {
       "id": "collaborating_3",
-      "question": "我在相关情境中经常表现出「Collaborating」这一倾向。",
+      "question": "压力变大时，我仍会下意识用「协作型」的方式处理问题。",
       "scoreKey": "COLLABORATING"
     },
     {
       "id": "collaborating_4",
-      "question": "我在相关情境中经常表现出「Collaborating」这一倾向。",
+      "question": "如果环境长期压制「协作型」，我会明显感到不舒服。",
       "scoreKey": "COLLABORATING"
     },
     {
       "id": "collaborating_5",
-      "question": "我在相关情境中经常表现出「Collaborating」这一倾向。",
+      "question": "和别人合作时，我通常会把「协作型」带进互动方式里。",
       "scoreKey": "COLLABORATING"
     },
     {
       "id": "collaborating_6",
-      "question": "我在相关情境中经常表现出「Collaborating」这一倾向。",
+      "question": "回看最近三个月，我确实多次表现出「协作型」这一模式。",
       "scoreKey": "COLLABORATING"
     },
     {
       "id": "competing_1",
-      "question": "我在相关情境中经常表现出「Competing」这一倾向。",
+      "question": "遇到重要选择时，我会自然地把「竞争型」放在很靠前的位置。",
       "scoreKey": "COMPETING"
     },
     {
       "id": "competing_2",
-      "question": "我在相关情境中经常表现出「Competing」这一倾向。",
+      "question": "别人评价我时，常会提到我在「竞争型」上的表现。",
       "scoreKey": "COMPETING"
     },
     {
       "id": "competing_3",
-      "question": "我在相关情境中经常表现出「Competing」这一倾向。",
+      "question": "压力变大时，我仍会下意识用「竞争型」的方式处理问题。",
       "scoreKey": "COMPETING"
     },
     {
       "id": "competing_4",
-      "question": "我在相关情境中经常表现出「Competing」这一倾向。",
+      "question": "如果环境长期压制「竞争型」，我会明显感到不舒服。",
       "scoreKey": "COMPETING"
     },
     {
       "id": "competing_5",
-      "question": "我在相关情境中经常表现出「Competing」这一倾向。",
+      "question": "和别人合作时，我通常会把「竞争型」带进互动方式里。",
       "scoreKey": "COMPETING"
     },
     {
       "id": "competing_6",
-      "question": "我在相关情境中经常表现出「Competing」这一倾向。",
+      "question": "回看最近三个月，我确实多次表现出「竞争型」这一模式。",
       "scoreKey": "COMPETING"
     },
     {
       "id": "compromising_1",
-      "question": "我在相关情境中经常表现出「Compromising」这一倾向。",
+      "question": "遇到重要选择时，我会自然地把「折中型」放在很靠前的位置。",
       "scoreKey": "COMPROMISING"
     },
     {
       "id": "compromising_2",
-      "question": "我在相关情境中经常表现出「Compromising」这一倾向。",
+      "question": "别人评价我时，常会提到我在「折中型」上的表现。",
       "scoreKey": "COMPROMISING"
     },
     {
       "id": "compromising_3",
-      "question": "我在相关情境中经常表现出「Compromising」这一倾向。",
+      "question": "压力变大时，我仍会下意识用「折中型」的方式处理问题。",
       "scoreKey": "COMPROMISING"
     },
     {
       "id": "compromising_4",
-      "question": "我在相关情境中经常表现出「Compromising」这一倾向。",
+      "question": "如果环境长期压制「折中型」，我会明显感到不舒服。",
       "scoreKey": "COMPROMISING"
     },
     {
       "id": "compromising_5",
-      "question": "我在相关情境中经常表现出「Compromising」这一倾向。",
+      "question": "和别人合作时，我通常会把「折中型」带进互动方式里。",
       "scoreKey": "COMPROMISING"
     },
     {
       "id": "compromising_6",
-      "question": "我在相关情境中经常表现出「Compromising」这一倾向。",
+      "question": "回看最近三个月，我确实多次表现出「折中型」这一模式。",
       "scoreKey": "COMPROMISING"
     },
     {
       "id": "avoiding_1",
-      "question": "我在相关情境中经常表现出「Avoiding」这一倾向。",
+      "question": "遇到重要选择时，我会自然地把「回避型」放在很靠前的位置。",
       "scoreKey": "AVOIDING"
     },
     {
       "id": "avoiding_2",
-      "question": "我在相关情境中经常表现出「Avoiding」这一倾向。",
+      "question": "别人评价我时，常会提到我在「回避型」上的表现。",
       "scoreKey": "AVOIDING"
     },
     {
       "id": "avoiding_3",
-      "question": "我在相关情境中经常表现出「Avoiding」这一倾向。",
+      "question": "压力变大时，我仍会下意识用「回避型」的方式处理问题。",
       "scoreKey": "AVOIDING"
     },
     {
       "id": "avoiding_4",
-      "question": "我在相关情境中经常表现出「Avoiding」这一倾向。",
+      "question": "如果环境长期压制「回避型」，我会明显感到不舒服。",
       "scoreKey": "AVOIDING"
     },
     {
       "id": "avoiding_5",
-      "question": "我在相关情境中经常表现出「Avoiding」这一倾向。",
+      "question": "和别人合作时，我通常会把「回避型」带进互动方式里。",
       "scoreKey": "AVOIDING"
     },
     {
       "id": "avoiding_6",
-      "question": "我在相关情境中经常表现出「Avoiding」这一倾向。",
+      "question": "回看最近三个月，我确实多次表现出「回避型」这一模式。",
       "scoreKey": "AVOIDING"
     },
     {
       "id": "accommodating_1",
-      "question": "我在相关情境中经常表现出「Accommodating」这一倾向。",
+      "question": "遇到重要选择时，我会自然地把「迁就型」放在很靠前的位置。",
       "scoreKey": "ACCOMMODATING"
     },
     {
       "id": "accommodating_2",
-      "question": "我在相关情境中经常表现出「Accommodating」这一倾向。",
+      "question": "别人评价我时，常会提到我在「迁就型」上的表现。",
       "scoreKey": "ACCOMMODATING"
     },
     {
       "id": "accommodating_3",
-      "question": "我在相关情境中经常表现出「Accommodating」这一倾向。",
+      "question": "压力变大时，我仍会下意识用「迁就型」的方式处理问题。",
       "scoreKey": "ACCOMMODATING"
     },
     {
       "id": "accommodating_4",
-      "question": "我在相关情境中经常表现出「Accommodating」这一倾向。",
+      "question": "如果环境长期压制「迁就型」，我会明显感到不舒服。",
       "scoreKey": "ACCOMMODATING"
     },
     {
       "id": "accommodating_5",
-      "question": "我在相关情境中经常表现出「Accommodating」这一倾向。",
+      "question": "和别人合作时，我通常会把「迁就型」带进互动方式里。",
       "scoreKey": "ACCOMMODATING"
     },
     {
       "id": "accommodating_6",
-      "question": "我在相关情境中经常表现出「Accommodating」这一倾向。",
+      "question": "回看最近三个月，我确实多次表现出「迁就型」这一模式。",
       "scoreKey": "ACCOMMODATING"
     }
   ],
   "results": {
     "COLLABORATING": {
-      "title": "Collaborating",
-      "summary": "你的主要结果指向Collaborating。这不是固定标签，而是帮助你理解当前偏好的观察角度。",
+      "title": "协作型",
+      "summary": "在这份冲突处理风格测试中，你的结果是「协作型」。这表示你的作答更集中在「协作型」所代表的行为、需求或反应方式。",
       "traits": [
-        "偏好清晰",
-        "模式稳定",
-        "可被情境调整"
+        "重视协作型",
+        "模式较稳定",
+        "会受环境影响"
       ],
       "strengths": [
-        "能在合适环境中发挥明显优势",
-        "容易形成可复用的方法",
-        "对相关信号较敏感"
+        "在需要协作型的任务里更容易进入状态",
+        "容易形成可复用的处理方式",
+        "能较快捕捉到影响表现的关键线索"
       ],
       "weaknesses": [
-        "压力下可能过度使用同一种策略",
+        "压力下可能过度依赖单一策略",
         "容易忽略相反视角",
-        "需要避免把结果当成限制"
+        "需要避免把测评结果当成限制"
       ],
       "careers": [
-        "复盘最近三次真实情境",
-        "找到最常触发该模式的场景",
-        "设计一个小实验"
+        "找出最常触发这种模式的具体任务",
+        "选择更匹配该倾向的工作安排",
+        "用一次小实验验证调整方向"
       ],
       "relationships": [
-        "向他人说明你的偏好，同时保留对方不同节奏的空间。"
+        "向他人说明你对「协作型」的需求，同时保留对方不同节奏的空间。"
       ],
       "growthPlan": [
         "记录一周内的典型表现",
         "选择一个需要微调的行为",
-        "用一次低风险场景练习新策略"
+        "在低压力场景练习新的回应方式"
       ]
     },
     "COMPETING": {
-      "title": "Competing",
-      "summary": "你的主要结果指向Competing。这不是固定标签，而是帮助你理解当前偏好的观察角度。",
+      "title": "竞争型",
+      "summary": "在这份冲突处理风格测试中，你的结果是「竞争型」。这表示你的作答更集中在「竞争型」所代表的行为、需求或反应方式。",
       "traits": [
-        "偏好清晰",
-        "模式稳定",
-        "可被情境调整"
+        "重视竞争型",
+        "模式较稳定",
+        "会受环境影响"
       ],
       "strengths": [
-        "能在合适环境中发挥明显优势",
-        "容易形成可复用的方法",
-        "对相关信号较敏感"
+        "在需要竞争型的任务里更容易进入状态",
+        "容易形成可复用的处理方式",
+        "能较快捕捉到影响表现的关键线索"
       ],
       "weaknesses": [
-        "压力下可能过度使用同一种策略",
+        "压力下可能过度依赖单一策略",
         "容易忽略相反视角",
-        "需要避免把结果当成限制"
+        "需要避免把测评结果当成限制"
       ],
       "careers": [
-        "复盘最近三次真实情境",
-        "找到最常触发该模式的场景",
-        "设计一个小实验"
+        "找出最常触发这种模式的具体任务",
+        "选择更匹配该倾向的工作安排",
+        "用一次小实验验证调整方向"
       ],
       "relationships": [
-        "向他人说明你的偏好，同时保留对方不同节奏的空间。"
+        "向他人说明你对「竞争型」的需求，同时保留对方不同节奏的空间。"
       ],
       "growthPlan": [
         "记录一周内的典型表现",
         "选择一个需要微调的行为",
-        "用一次低风险场景练习新策略"
+        "在低压力场景练习新的回应方式"
       ]
     },
     "COMPROMISING": {
-      "title": "Compromising",
-      "summary": "你的主要结果指向Compromising。这不是固定标签，而是帮助你理解当前偏好的观察角度。",
+      "title": "折中型",
+      "summary": "在这份冲突处理风格测试中，你的结果是「折中型」。这表示你的作答更集中在「折中型」所代表的行为、需求或反应方式。",
       "traits": [
-        "偏好清晰",
-        "模式稳定",
-        "可被情境调整"
+        "重视折中型",
+        "模式较稳定",
+        "会受环境影响"
       ],
       "strengths": [
-        "能在合适环境中发挥明显优势",
-        "容易形成可复用的方法",
-        "对相关信号较敏感"
+        "在需要折中型的任务里更容易进入状态",
+        "容易形成可复用的处理方式",
+        "能较快捕捉到影响表现的关键线索"
       ],
       "weaknesses": [
-        "压力下可能过度使用同一种策略",
+        "压力下可能过度依赖单一策略",
         "容易忽略相反视角",
-        "需要避免把结果当成限制"
+        "需要避免把测评结果当成限制"
       ],
       "careers": [
-        "复盘最近三次真实情境",
-        "找到最常触发该模式的场景",
-        "设计一个小实验"
+        "找出最常触发这种模式的具体任务",
+        "选择更匹配该倾向的工作安排",
+        "用一次小实验验证调整方向"
       ],
       "relationships": [
-        "向他人说明你的偏好，同时保留对方不同节奏的空间。"
+        "向他人说明你对「折中型」的需求，同时保留对方不同节奏的空间。"
       ],
       "growthPlan": [
         "记录一周内的典型表现",
         "选择一个需要微调的行为",
-        "用一次低风险场景练习新策略"
+        "在低压力场景练习新的回应方式"
       ]
     },
     "AVOIDING": {
-      "title": "Avoiding",
-      "summary": "你的主要结果指向Avoiding。这不是固定标签，而是帮助你理解当前偏好的观察角度。",
+      "title": "回避型",
+      "summary": "在这份冲突处理风格测试中，你的结果是「回避型」。这表示你的作答更集中在「回避型」所代表的行为、需求或反应方式。",
       "traits": [
-        "偏好清晰",
-        "模式稳定",
-        "可被情境调整"
+        "重视回避型",
+        "模式较稳定",
+        "会受环境影响"
       ],
       "strengths": [
-        "能在合适环境中发挥明显优势",
-        "容易形成可复用的方法",
-        "对相关信号较敏感"
+        "在需要回避型的任务里更容易进入状态",
+        "容易形成可复用的处理方式",
+        "能较快捕捉到影响表现的关键线索"
       ],
       "weaknesses": [
-        "压力下可能过度使用同一种策略",
+        "压力下可能过度依赖单一策略",
         "容易忽略相反视角",
-        "需要避免把结果当成限制"
+        "需要避免把测评结果当成限制"
       ],
       "careers": [
-        "复盘最近三次真实情境",
-        "找到最常触发该模式的场景",
-        "设计一个小实验"
+        "找出最常触发这种模式的具体任务",
+        "选择更匹配该倾向的工作安排",
+        "用一次小实验验证调整方向"
       ],
       "relationships": [
-        "向他人说明你的偏好，同时保留对方不同节奏的空间。"
+        "向他人说明你对「回避型」的需求，同时保留对方不同节奏的空间。"
       ],
       "growthPlan": [
         "记录一周内的典型表现",
         "选择一个需要微调的行为",
-        "用一次低风险场景练习新策略"
+        "在低压力场景练习新的回应方式"
       ]
     },
     "ACCOMMODATING": {
-      "title": "Accommodating",
-      "summary": "你的主要结果指向Accommodating。这不是固定标签，而是帮助你理解当前偏好的观察角度。",
+      "title": "迁就型",
+      "summary": "在这份冲突处理风格测试中，你的结果是「迁就型」。这表示你的作答更集中在「迁就型」所代表的行为、需求或反应方式。",
       "traits": [
-        "偏好清晰",
-        "模式稳定",
-        "可被情境调整"
+        "重视迁就型",
+        "模式较稳定",
+        "会受环境影响"
       ],
       "strengths": [
-        "能在合适环境中发挥明显优势",
-        "容易形成可复用的方法",
-        "对相关信号较敏感"
+        "在需要迁就型的任务里更容易进入状态",
+        "容易形成可复用的处理方式",
+        "能较快捕捉到影响表现的关键线索"
       ],
       "weaknesses": [
-        "压力下可能过度使用同一种策略",
+        "压力下可能过度依赖单一策略",
         "容易忽略相反视角",
-        "需要避免把结果当成限制"
+        "需要避免把测评结果当成限制"
       ],
       "careers": [
-        "复盘最近三次真实情境",
-        "找到最常触发该模式的场景",
-        "设计一个小实验"
+        "找出最常触发这种模式的具体任务",
+        "选择更匹配该倾向的工作安排",
+        "用一次小实验验证调整方向"
       ],
       "relationships": [
-        "向他人说明你的偏好，同时保留对方不同节奏的空间。"
+        "向他人说明你对「迁就型」的需求，同时保留对方不同节奏的空间。"
       ],
       "growthPlan": [
         "记录一周内的典型表现",
         "选择一个需要微调的行为",
-        "用一次低风险场景练习新策略"
+        "在低压力场景练习新的回应方式"
       ]
     }
   }

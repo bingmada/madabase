@@ -8,7 +8,7 @@ import { JsonLd, buildBreadcrumbSchema } from "@/components/JsonLd";
 import { PageViewTracker } from "@/components/PageViewTracker";
 import { ToolIcon } from "@/components/ToolIcon";
 import { Breadcrumb } from "@/components/Breadcrumb";
-import { isLocale, locales } from "@/lib/i18n";
+import { getCategoryLabel, isLocale, locales, toolCategoryLabels } from "@/lib/i18n";
 import { buildAbsoluteUrl, buildPageMetadata } from "@/lib/seo";
 import { getToolsByCategory, getCategories, type ToolCategory } from "@/lib/tool-registry";
 
@@ -30,8 +30,8 @@ const categoryMeta: Record<ToolCategory, { en: { title: string; description: str
     zh: { title: "创作工具", description: "Markdown 预览、内容格式化和创作者、写作者工具。", keywords: ["创作工具", "markdown 预览", "内容工具", "写作工具"] },
   },
   ai: {
-    en: { title: "AI Tools", description: "AI-powered tools and workflows coming soon.", keywords: ["ai tools", "artificial intelligence", "machine learning"] },
-    zh: { title: "AI 工具", description: "AI 驱动的工具和工作流即将推出。", keywords: ["ai 工具", "人工智能", "机器学习"] },
+    en: { title: "Smart Tools", description: "Useful planning, writing, and workflow tools for everyday tasks.", keywords: ["smart tools", "workflow tools", "online tools"] },
+    zh: { title: "效率工具", description: "面向日常规划、写作和工作流的小工具。", keywords: ["效率工具", "工作流工具", "在线工具"] },
   },
 };
 
@@ -119,7 +119,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ local
                   <ToolIcon component={tool.component} />
                 </span>
                 <div>
-                  <p className="code-font text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--text-soft)]">{tool.category}</p>
+                  <p className="text-[11px] font-semibold text-[var(--text-soft)]">{getCategoryLabel(tool.category, locale, toolCategoryLabels)}</p>
                   <h2 className="mt-1 text-lg font-bold text-[var(--text)]">{tool.h1[locale]}</h2>
                   <p className="mt-2 text-sm leading-6 text-[var(--text-muted)]">{tool.description[locale]}</p>
                 </div>

@@ -1,294 +1,294 @@
 {
   "title": "拖延程度测试",
-  "description": "通过 24 个快速问题了解你的拖延程度模式。",
+  "description": "通过近期任务启动、截止压力和回避行为，评估你的拖延程度。",
   "instructions": [
     "请根据最近真实行为作答，不要按理想中的自己选择。",
-    "当描述明显符合或不符合时，请大胆使用量表两端。",
-    "报告会突出你的最强模式和可执行的下一步建议。"
+    "如果某句话让你想到具体经历，通常说明它更有参考价值。",
+    "结果用于自我理解和沟通参考，不是诊断或定论。"
   ],
   "reportLabels": {
-    "strengths": "优势",
-    "weaknesses": "风险",
-    "careers": "适合方法",
-    "relationships": "关系提示",
-    "growth": "成长计划"
+    "strengths": "可用优势",
+    "weaknesses": "主要风险",
+    "careers": "行动建议",
+    "relationships": "协作提示",
+    "growth": "改善计划"
   },
   "scale": [
     {
       "id": "1",
-      "text": "非常不同意",
+      "text": "完全不符合",
       "value": 1
     },
     {
       "id": "2",
-      "text": "不同意",
+      "text": "较少符合",
       "value": 2
     },
     {
       "id": "3",
-      "text": "一般",
+      "text": "有时符合",
       "value": 3
     },
     {
       "id": "4",
-      "text": "同意",
+      "text": "比较符合",
       "value": 4
     },
     {
       "id": "5",
-      "text": "非常同意",
+      "text": "非常符合",
       "value": 5
     }
   ],
   "scaleQuestions": [
     {
-      "id": "low_1",
-      "question": "我在相关情境中经常表现出「低风险」这一倾向。",
-      "scoreKey": "LOW"
+      "id": "procrastination_1",
+      "question": "明知道任务重要，我仍会先去做更轻松的小事。",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "low_2",
-      "question": "我在相关情境中经常表现出「低风险」这一倾向。",
-      "scoreKey": "LOW"
+      "id": "procrastination_2",
+      "question": "任务越复杂，我越容易迟迟不开始。",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "low_3",
-      "question": "我在相关情境中经常表现出「低风险」这一倾向。",
-      "scoreKey": "LOW"
+      "id": "procrastination_3",
+      "question": "没有明确截止日期时，我很难主动推进。",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "low_4",
-      "question": "我在相关情境中经常表现出「低风险」这一倾向。",
-      "scoreKey": "LOW"
+      "id": "procrastination_4",
+      "question": "我经常等到压力足够大，才真正进入状态。",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "low_5",
-      "question": "我在相关情境中经常表现出「低风险」这一倾向。",
-      "scoreKey": "LOW"
+      "id": "procrastination_5",
+      "question": "开始前，我会反复准备资料，却没有实际推进。",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "low_6",
-      "question": "我在相关情境中经常表现出「低风险」这一倾向。",
-      "scoreKey": "LOW"
+      "id": "procrastination_6",
+      "question": "我会用刷手机、整理桌面或查资料来回避核心任务。",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "moderate_1",
-      "question": "我在相关情境中经常表现出「中等风险」这一倾向。",
-      "scoreKey": "MODERATE"
+      "id": "procrastination_7",
+      "question": "想到任务结果可能不够好时，我会更想推迟。",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "moderate_2",
-      "question": "我在相关情境中经常表现出「中等风险」这一倾向。",
-      "scoreKey": "MODERATE"
+      "id": "procrastination_8",
+      "question": "别人询问进度时，我才意识到自己拖了很久。",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "moderate_3",
-      "question": "我在相关情境中经常表现出「中等风险」这一倾向。",
-      "scoreKey": "MODERATE"
+      "id": "procrastination_9",
+      "question": "任务拆得不清楚时，我会直接停在原地。",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "moderate_4",
-      "question": "我在相关情境中经常表现出「中等风险」这一倾向。",
-      "scoreKey": "MODERATE"
+      "id": "procrastination_10",
+      "question": "我常低估完成任务需要的时间。",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "moderate_5",
-      "question": "我在相关情境中经常表现出「中等风险」这一倾向。",
-      "scoreKey": "MODERATE"
+      "id": "procrastination_11",
+      "question": "拖延后，我会陷入自责，但下一次仍重复类似模式。",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "moderate_6",
-      "question": "我在相关情境中经常表现出「中等风险」这一倾向。",
-      "scoreKey": "MODERATE"
+      "id": "procrastination_12",
+      "question": "临近截止时，我的睡眠或情绪会被明显影响。",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "high_1",
-      "question": "我在相关情境中经常表现出「高风险」这一倾向。",
-      "scoreKey": "HIGH"
+      "id": "procrastination_13",
+      "question": "我会因为不知道从哪里开始而放弃开始。",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "high_2",
-      "question": "我在相关情境中经常表现出「高风险」这一倾向。",
-      "scoreKey": "HIGH"
+      "id": "procrastination_14",
+      "question": "即使有时间，我也常把重要任务留到最后。",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "high_3",
-      "question": "我在相关情境中经常表现出「高风险」这一倾向。",
-      "scoreKey": "HIGH"
+      "id": "procrastination_15",
+      "question": "我需要外部提醒或监督，才能稳定推进。",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "high_4",
-      "question": "我在相关情境中经常表现出「高风险」这一倾向。",
-      "scoreKey": "HIGH"
+      "id": "procrastination_16",
+      "question": "当任务涉及评价或比较时，我更容易拖延。",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "high_5",
-      "question": "我在相关情境中经常表现出「高风险」这一倾向。",
-      "scoreKey": "HIGH"
+      "id": "procrastination_17",
+      "question": "我经常把任务想得很大，导致第一步变得很难。",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "high_6",
-      "question": "我在相关情境中经常表现出「高风险」这一倾向。",
-      "scoreKey": "HIGH"
+      "id": "procrastination_18",
+      "question": "我会在多个任务之间切换，却很少真正完成。",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "severe_1",
-      "question": "我在相关情境中经常表现出「严重风险」这一倾向。",
-      "scoreKey": "SEVERE"
+      "id": "procrastination_19",
+      "question": "拖延已经影响到我的学习、工作或协作节奏。",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "severe_2",
-      "question": "我在相关情境中经常表现出「严重风险」这一倾向。",
-      "scoreKey": "SEVERE"
+      "id": "procrastination_20",
+      "question": "我常用“状态不好”作为推迟开始的理由。",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "severe_3",
-      "question": "我在相关情境中经常表现出「严重风险」这一倾向。",
-      "scoreKey": "SEVERE"
+      "id": "procrastination_21",
+      "question": "如果任务没有即时反馈，我会很快失去动力。",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "severe_4",
-      "question": "我在相关情境中经常表现出「严重风险」这一倾向。",
-      "scoreKey": "SEVERE"
+      "id": "procrastination_22",
+      "question": "我会逃避查看和任务有关的信息或消息。",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "severe_5",
-      "question": "我在相关情境中经常表现出「严重风险」这一倾向。",
-      "scoreKey": "SEVERE"
+      "id": "procrastination_23",
+      "question": "我经常需要最后一刻的紧张感才能完成。",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "severe_6",
-      "question": "我在相关情境中经常表现出「严重风险」这一倾向。",
-      "scoreKey": "SEVERE"
+      "id": "procrastination_24",
+      "question": "拖延带来的后果已经让我想认真调整。",
+      "scoreKey": "PROCRASTINATION"
     }
   ],
   "results": {
     "LOW": {
-      "title": "低风险",
-      "summary": "你的主要结果指向低风险。这不是固定标签，而是帮助你理解当前偏好的观察角度。",
+      "title": "低拖延风险",
+      "summary": "你的拖延指数较低。多数任务能够正常启动和完成，偶尔拖延更可能来自任务不清晰或短期疲劳。",
       "traits": [
-        "偏好清晰",
-        "模式稳定",
-        "可被情境调整"
+        "启动较快",
+        "能自我修正",
+        "拖延影响较小"
       ],
       "strengths": [
-        "能在合适环境中发挥明显优势",
-        "容易形成可复用的方法",
-        "对相关信号较敏感"
+        "多数任务能按时推进",
+        "能较快从分心中拉回",
+        "自我管理基础较好"
       ],
       "weaknesses": [
-        "压力下可能过度使用同一种策略",
-        "容易忽略相反视角",
-        "需要避免把结果当成限制"
+        "仍可能在模糊任务上拖延",
+        "容易低估长期项目",
+        "忙碌时会牺牲复盘"
       ],
       "careers": [
-        "复盘最近三次真实情境",
-        "找到最常触发该模式的场景",
-        "设计一个小实验"
+        "把任务拆成 15 分钟起步动作",
+        "先定义完成标准，再开始执行",
+        "为重要任务设置中途检查点"
       ],
       "relationships": [
-        "向他人说明你的偏好，同时保留对方不同节奏的空间。"
+        "如果拖延影响协作，请提前说明进度和下一步，不要等到最后一刻才解释。"
       ],
       "growthPlan": [
-        "记录一周内的典型表现",
-        "选择一个需要微调的行为",
-        "用一次低风险场景练习新策略"
+        "今天选一个被拖延的任务，只做第一步",
+        "把下一个截止日期提前 24 小时",
+        "记录一周内最常触发拖延的任务类型"
       ]
     },
     "MODERATE": {
-      "title": "中等风险",
-      "summary": "你的主要结果指向中等风险。这不是固定标签，而是帮助你理解当前偏好的观察角度。",
+      "title": "中等拖延风险",
+      "summary": "你的拖延指数处于中等水平。你并不是不想完成任务，而是容易在任务复杂、反馈模糊或压力不足时卡住。",
       "traits": [
-        "偏好清晰",
-        "模式稳定",
-        "可被情境调整"
+        "偶尔卡住",
+        "受任务清晰度影响",
+        "需要更稳定的启动机制"
       ],
       "strengths": [
-        "能在合适环境中发挥明显优势",
-        "容易形成可复用的方法",
-        "对相关信号较敏感"
+        "已经能觉察拖延模式",
+        "适合从降低启动门槛开始",
+        "通过外部结构能明显改善"
       ],
       "weaknesses": [
-        "压力下可能过度使用同一种策略",
-        "容易忽略相反视角",
-        "需要避免把结果当成限制"
+        "任务越大越容易回避",
+        "截止前压力会明显上升",
+        "容易用自责替代行动"
       ],
       "careers": [
-        "复盘最近三次真实情境",
-        "找到最常触发该模式的场景",
-        "设计一个小实验"
+        "把任务拆成 15 分钟起步动作",
+        "先定义完成标准，再开始执行",
+        "为重要任务设置中途检查点"
       ],
       "relationships": [
-        "向他人说明你的偏好，同时保留对方不同节奏的空间。"
+        "如果拖延影响协作，请提前说明进度和下一步，不要等到最后一刻才解释。"
       ],
       "growthPlan": [
-        "记录一周内的典型表现",
-        "选择一个需要微调的行为",
-        "用一次低风险场景练习新策略"
+        "今天选一个被拖延的任务，只做第一步",
+        "把下一个截止日期提前 24 小时",
+        "记录一周内最常触发拖延的任务类型"
       ]
     },
     "HIGH": {
-      "title": "高风险",
-      "summary": "你的主要结果指向高风险。这不是固定标签，而是帮助你理解当前偏好的观察角度。",
+      "title": "高拖延风险",
+      "summary": "你的拖延指数偏高。拖延已经开始影响任务质量、截止压力或协作节奏，需要建立更明确的启动和反馈机制。",
       "traits": [
-        "偏好清晰",
-        "模式稳定",
-        "可被情境调整"
+        "偶尔卡住",
+        "受任务清晰度影响",
+        "需要更稳定的启动机制"
       ],
       "strengths": [
-        "能在合适环境中发挥明显优势",
-        "容易形成可复用的方法",
-        "对相关信号较敏感"
+        "已经能觉察拖延模式",
+        "适合从降低启动门槛开始",
+        "通过外部结构能明显改善"
       ],
       "weaknesses": [
-        "压力下可能过度使用同一种策略",
-        "容易忽略相反视角",
-        "需要避免把结果当成限制"
+        "任务越大越容易回避",
+        "截止前压力会明显上升",
+        "容易用自责替代行动"
       ],
       "careers": [
-        "复盘最近三次真实情境",
-        "找到最常触发该模式的场景",
-        "设计一个小实验"
+        "把任务拆成 15 分钟起步动作",
+        "先定义完成标准，再开始执行",
+        "为重要任务设置中途检查点"
       ],
       "relationships": [
-        "向他人说明你的偏好，同时保留对方不同节奏的空间。"
+        "如果拖延影响协作，请提前说明进度和下一步，不要等到最后一刻才解释。"
       ],
       "growthPlan": [
-        "记录一周内的典型表现",
-        "选择一个需要微调的行为",
-        "用一次低风险场景练习新策略"
+        "今天选一个被拖延的任务，只做第一步",
+        "把下一个截止日期提前 24 小时",
+        "记录一周内最常触发拖延的任务类型"
       ]
     },
     "SEVERE": {
-      "title": "严重风险",
-      "summary": "你的主要结果指向严重风险。这不是固定标签，而是帮助你理解当前偏好的观察角度。",
+      "title": "严重拖延风险",
+      "summary": "你的拖延指数很高。拖延可能已经明显影响学习、工作或生活节奏，建议优先降低任务压力并寻求外部支持。",
       "traits": [
-        "偏好清晰",
-        "模式稳定",
-        "可被情境调整"
+        "启动困难明显",
+        "压力累积较高",
+        "影响学习或工作节奏"
       ],
       "strengths": [
-        "能在合适环境中发挥明显优势",
-        "容易形成可复用的方法",
-        "对相关信号较敏感"
+        "已经能觉察拖延模式",
+        "适合从降低启动门槛开始",
+        "通过外部结构能明显改善"
       ],
       "weaknesses": [
-        "压力下可能过度使用同一种策略",
-        "容易忽略相反视角",
-        "需要避免把结果当成限制"
+        "任务越大越容易回避",
+        "截止前压力会明显上升",
+        "容易用自责替代行动"
       ],
       "careers": [
-        "复盘最近三次真实情境",
-        "找到最常触发该模式的场景",
-        "设计一个小实验"
+        "把任务拆成 15 分钟起步动作",
+        "先定义完成标准，再开始执行",
+        "为重要任务设置中途检查点"
       ],
       "relationships": [
-        "向他人说明你的偏好，同时保留对方不同节奏的空间。"
+        "如果拖延影响协作，请提前说明进度和下一步，不要等到最后一刻才解释。"
       ],
       "growthPlan": [
-        "记录一周内的典型表现",
-        "选择一个需要微调的行为",
-        "用一次低风险场景练习新策略"
+        "今天选一个被拖延的任务，只做第一步",
+        "把下一个截止日期提前 24 小时",
+        "记录一周内最常触发拖延的任务类型"
       ]
     }
   }

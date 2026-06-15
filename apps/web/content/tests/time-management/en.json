@@ -1,10 +1,10 @@
 {
   "title": "Time Management Style Test",
-  "description": "Answer 24 quick prompts to explore your time management style pattern.",
+  "description": "Explore your time management style pattern with practical, scenario-based questions.",
   "instructions": [
-    "Answer based on recent real behavior, not an ideal version of yourself.",
-    "Use the whole scale when a statement clearly fits or does not fit.",
-    "Your report highlights the strongest pattern and practical next steps."
+    "Answer from recent real behavior, not an ideal version of yourself.",
+    "If a statement reminds you of a concrete situation, it is usually more useful.",
+    "Use the result for reflection and communication, not as a diagnosis."
   ],
   "scale": [
     {
@@ -36,138 +36,138 @@
   "scaleQuestions": [
     {
       "id": "planner_1",
-      "question": "In relevant situations, I often show a Planner pattern.",
+      "question": "In recent real situations, I can see a clear Planner pattern in how I choose and act.",
       "scoreKey": "PLANNER"
     },
     {
       "id": "planner_2",
-      "question": "In relevant situations, I often show a Planner pattern.",
+      "question": "When pressure rises, I often rely on a Planner strategy instead of switching styles.",
       "scoreKey": "PLANNER"
     },
     {
       "id": "planner_3",
-      "question": "In relevant situations, I often show a Planner pattern.",
+      "question": "People who work with me would probably notice my Planner tendency.",
       "scoreKey": "PLANNER"
     },
     {
       "id": "planner_4",
-      "question": "In relevant situations, I often show a Planner pattern.",
+      "question": "If an environment blocks Planner for too long, my motivation drops.",
       "scoreKey": "PLANNER"
     },
     {
       "id": "planner_5",
-      "question": "In relevant situations, I often show a Planner pattern.",
+      "question": "During collaboration, I often bring Planner into the way I contribute.",
       "scoreKey": "PLANNER"
     },
     {
       "id": "planner_6",
-      "question": "In relevant situations, I often show a Planner pattern.",
+      "question": "Looking back over the last month, Planner describes a repeated behavior pattern for me.",
       "scoreKey": "PLANNER"
     },
     {
       "id": "sprinter_1",
-      "question": "In relevant situations, I often show a Sprinter pattern.",
+      "question": "In recent real situations, I can see a clear Sprinter pattern in how I choose and act.",
       "scoreKey": "SPRINTER"
     },
     {
       "id": "sprinter_2",
-      "question": "In relevant situations, I often show a Sprinter pattern.",
+      "question": "When pressure rises, I often rely on a Sprinter strategy instead of switching styles.",
       "scoreKey": "SPRINTER"
     },
     {
       "id": "sprinter_3",
-      "question": "In relevant situations, I often show a Sprinter pattern.",
+      "question": "People who work with me would probably notice my Sprinter tendency.",
       "scoreKey": "SPRINTER"
     },
     {
       "id": "sprinter_4",
-      "question": "In relevant situations, I often show a Sprinter pattern.",
+      "question": "If an environment blocks Sprinter for too long, my motivation drops.",
       "scoreKey": "SPRINTER"
     },
     {
       "id": "sprinter_5",
-      "question": "In relevant situations, I often show a Sprinter pattern.",
+      "question": "During collaboration, I often bring Sprinter into the way I contribute.",
       "scoreKey": "SPRINTER"
     },
     {
       "id": "sprinter_6",
-      "question": "In relevant situations, I often show a Sprinter pattern.",
+      "question": "Looking back over the last month, Sprinter describes a repeated behavior pattern for me.",
       "scoreKey": "SPRINTER"
     },
     {
       "id": "flexible_1",
-      "question": "In relevant situations, I often show a Flexible pattern.",
+      "question": "In recent real situations, I can see a clear Flexible pattern in how I choose and act.",
       "scoreKey": "FLEXIBLE"
     },
     {
       "id": "flexible_2",
-      "question": "In relevant situations, I often show a Flexible pattern.",
+      "question": "When pressure rises, I often rely on a Flexible strategy instead of switching styles.",
       "scoreKey": "FLEXIBLE"
     },
     {
       "id": "flexible_3",
-      "question": "In relevant situations, I often show a Flexible pattern.",
+      "question": "People who work with me would probably notice my Flexible tendency.",
       "scoreKey": "FLEXIBLE"
     },
     {
       "id": "flexible_4",
-      "question": "In relevant situations, I often show a Flexible pattern.",
+      "question": "If an environment blocks Flexible for too long, my motivation drops.",
       "scoreKey": "FLEXIBLE"
     },
     {
       "id": "flexible_5",
-      "question": "In relevant situations, I often show a Flexible pattern.",
+      "question": "During collaboration, I often bring Flexible into the way I contribute.",
       "scoreKey": "FLEXIBLE"
     },
     {
       "id": "flexible_6",
-      "question": "In relevant situations, I often show a Flexible pattern.",
+      "question": "Looking back over the last month, Flexible describes a repeated behavior pattern for me.",
       "scoreKey": "FLEXIBLE"
     },
     {
       "id": "reactive_1",
-      "question": "In relevant situations, I often show a Reactive pattern.",
+      "question": "In recent real situations, I can see a clear Reactive pattern in how I choose and act.",
       "scoreKey": "REACTIVE"
     },
     {
       "id": "reactive_2",
-      "question": "In relevant situations, I often show a Reactive pattern.",
+      "question": "When pressure rises, I often rely on a Reactive strategy instead of switching styles.",
       "scoreKey": "REACTIVE"
     },
     {
       "id": "reactive_3",
-      "question": "In relevant situations, I often show a Reactive pattern.",
+      "question": "People who work with me would probably notice my Reactive tendency.",
       "scoreKey": "REACTIVE"
     },
     {
       "id": "reactive_4",
-      "question": "In relevant situations, I often show a Reactive pattern.",
+      "question": "If an environment blocks Reactive for too long, my motivation drops.",
       "scoreKey": "REACTIVE"
     },
     {
       "id": "reactive_5",
-      "question": "In relevant situations, I often show a Reactive pattern.",
+      "question": "During collaboration, I often bring Reactive into the way I contribute.",
       "scoreKey": "REACTIVE"
     },
     {
       "id": "reactive_6",
-      "question": "In relevant situations, I often show a Reactive pattern.",
+      "question": "Looking back over the last month, Reactive describes a repeated behavior pattern for me.",
       "scoreKey": "REACTIVE"
     }
   ],
   "results": {
     "PLANNER": {
       "title": "Planner",
-      "summary": "Your primary result points to a Planner pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Time Management Style Test, your result is Planner. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Planner",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Planner",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -175,12 +175,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Planner clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",
@@ -190,16 +190,16 @@
     },
     "SPRINTER": {
       "title": "Sprinter",
-      "summary": "Your primary result points to a Sprinter pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Time Management Style Test, your result is Sprinter. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Sprinter",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Sprinter",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -207,12 +207,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Sprinter clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",
@@ -222,16 +222,16 @@
     },
     "FLEXIBLE": {
       "title": "Flexible",
-      "summary": "Your primary result points to a Flexible pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Time Management Style Test, your result is Flexible. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Flexible",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Flexible",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -239,12 +239,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Flexible clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",
@@ -254,16 +254,16 @@
     },
     "REACTIVE": {
       "title": "Reactive",
-      "summary": "Your primary result points to a Reactive pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Time Management Style Test, your result is Reactive. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Reactive",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Reactive",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -271,12 +271,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Reactive clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",

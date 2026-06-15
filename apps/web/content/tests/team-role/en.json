@@ -1,10 +1,10 @@
 {
   "title": "Team Role Test",
-  "description": "Answer 30 quick prompts to explore your team role pattern.",
+  "description": "Explore your team role pattern with practical, scenario-based questions.",
   "instructions": [
-    "Answer based on recent real behavior, not an ideal version of yourself.",
-    "Use the whole scale when a statement clearly fits or does not fit.",
-    "Your report highlights the strongest pattern and practical next steps."
+    "Answer from recent real behavior, not an ideal version of yourself.",
+    "If a statement reminds you of a concrete situation, it is usually more useful.",
+    "Use the result for reflection and communication, not as a diagnosis."
   ],
   "scale": [
     {
@@ -36,168 +36,168 @@
   "scaleQuestions": [
     {
       "id": "coordinator_1",
-      "question": "In relevant situations, I often show a Coordinator pattern.",
+      "question": "In recent real situations, I can see a clear Coordinator pattern in how I choose and act.",
       "scoreKey": "COORDINATOR"
     },
     {
       "id": "coordinator_2",
-      "question": "In relevant situations, I often show a Coordinator pattern.",
+      "question": "When pressure rises, I often rely on a Coordinator strategy instead of switching styles.",
       "scoreKey": "COORDINATOR"
     },
     {
       "id": "coordinator_3",
-      "question": "In relevant situations, I often show a Coordinator pattern.",
+      "question": "People who work with me would probably notice my Coordinator tendency.",
       "scoreKey": "COORDINATOR"
     },
     {
       "id": "coordinator_4",
-      "question": "In relevant situations, I often show a Coordinator pattern.",
+      "question": "If an environment blocks Coordinator for too long, my motivation drops.",
       "scoreKey": "COORDINATOR"
     },
     {
       "id": "coordinator_5",
-      "question": "In relevant situations, I often show a Coordinator pattern.",
+      "question": "During collaboration, I often bring Coordinator into the way I contribute.",
       "scoreKey": "COORDINATOR"
     },
     {
       "id": "coordinator_6",
-      "question": "In relevant situations, I often show a Coordinator pattern.",
+      "question": "Looking back over the last month, Coordinator describes a repeated behavior pattern for me.",
       "scoreKey": "COORDINATOR"
     },
     {
       "id": "creator_1",
-      "question": "In relevant situations, I often show a Creator pattern.",
+      "question": "In recent real situations, I can see a clear Creator pattern in how I choose and act.",
       "scoreKey": "CREATOR"
     },
     {
       "id": "creator_2",
-      "question": "In relevant situations, I often show a Creator pattern.",
+      "question": "When pressure rises, I often rely on a Creator strategy instead of switching styles.",
       "scoreKey": "CREATOR"
     },
     {
       "id": "creator_3",
-      "question": "In relevant situations, I often show a Creator pattern.",
+      "question": "People who work with me would probably notice my Creator tendency.",
       "scoreKey": "CREATOR"
     },
     {
       "id": "creator_4",
-      "question": "In relevant situations, I often show a Creator pattern.",
+      "question": "If an environment blocks Creator for too long, my motivation drops.",
       "scoreKey": "CREATOR"
     },
     {
       "id": "creator_5",
-      "question": "In relevant situations, I often show a Creator pattern.",
+      "question": "During collaboration, I often bring Creator into the way I contribute.",
       "scoreKey": "CREATOR"
     },
     {
       "id": "creator_6",
-      "question": "In relevant situations, I often show a Creator pattern.",
+      "question": "Looking back over the last month, Creator describes a repeated behavior pattern for me.",
       "scoreKey": "CREATOR"
     },
     {
       "id": "implementer_1",
-      "question": "In relevant situations, I often show a Implementer pattern.",
+      "question": "In recent real situations, I can see a clear Implementer pattern in how I choose and act.",
       "scoreKey": "IMPLEMENTER"
     },
     {
       "id": "implementer_2",
-      "question": "In relevant situations, I often show a Implementer pattern.",
+      "question": "When pressure rises, I often rely on a Implementer strategy instead of switching styles.",
       "scoreKey": "IMPLEMENTER"
     },
     {
       "id": "implementer_3",
-      "question": "In relevant situations, I often show a Implementer pattern.",
+      "question": "People who work with me would probably notice my Implementer tendency.",
       "scoreKey": "IMPLEMENTER"
     },
     {
       "id": "implementer_4",
-      "question": "In relevant situations, I often show a Implementer pattern.",
+      "question": "If an environment blocks Implementer for too long, my motivation drops.",
       "scoreKey": "IMPLEMENTER"
     },
     {
       "id": "implementer_5",
-      "question": "In relevant situations, I often show a Implementer pattern.",
+      "question": "During collaboration, I often bring Implementer into the way I contribute.",
       "scoreKey": "IMPLEMENTER"
     },
     {
       "id": "implementer_6",
-      "question": "In relevant situations, I often show a Implementer pattern.",
+      "question": "Looking back over the last month, Implementer describes a repeated behavior pattern for me.",
       "scoreKey": "IMPLEMENTER"
     },
     {
       "id": "analyst_1",
-      "question": "In relevant situations, I often show a Analyst pattern.",
+      "question": "In recent real situations, I can see a clear Analyst pattern in how I choose and act.",
       "scoreKey": "ANALYST"
     },
     {
       "id": "analyst_2",
-      "question": "In relevant situations, I often show a Analyst pattern.",
+      "question": "When pressure rises, I often rely on a Analyst strategy instead of switching styles.",
       "scoreKey": "ANALYST"
     },
     {
       "id": "analyst_3",
-      "question": "In relevant situations, I often show a Analyst pattern.",
+      "question": "People who work with me would probably notice my Analyst tendency.",
       "scoreKey": "ANALYST"
     },
     {
       "id": "analyst_4",
-      "question": "In relevant situations, I often show a Analyst pattern.",
+      "question": "If an environment blocks Analyst for too long, my motivation drops.",
       "scoreKey": "ANALYST"
     },
     {
       "id": "analyst_5",
-      "question": "In relevant situations, I often show a Analyst pattern.",
+      "question": "During collaboration, I often bring Analyst into the way I contribute.",
       "scoreKey": "ANALYST"
     },
     {
       "id": "analyst_6",
-      "question": "In relevant situations, I often show a Analyst pattern.",
+      "question": "Looking back over the last month, Analyst describes a repeated behavior pattern for me.",
       "scoreKey": "ANALYST"
     },
     {
       "id": "supporter_1",
-      "question": "In relevant situations, I often show a Supporter pattern.",
+      "question": "In recent real situations, I can see a clear Supporter pattern in how I choose and act.",
       "scoreKey": "SUPPORTER"
     },
     {
       "id": "supporter_2",
-      "question": "In relevant situations, I often show a Supporter pattern.",
+      "question": "When pressure rises, I often rely on a Supporter strategy instead of switching styles.",
       "scoreKey": "SUPPORTER"
     },
     {
       "id": "supporter_3",
-      "question": "In relevant situations, I often show a Supporter pattern.",
+      "question": "People who work with me would probably notice my Supporter tendency.",
       "scoreKey": "SUPPORTER"
     },
     {
       "id": "supporter_4",
-      "question": "In relevant situations, I often show a Supporter pattern.",
+      "question": "If an environment blocks Supporter for too long, my motivation drops.",
       "scoreKey": "SUPPORTER"
     },
     {
       "id": "supporter_5",
-      "question": "In relevant situations, I often show a Supporter pattern.",
+      "question": "During collaboration, I often bring Supporter into the way I contribute.",
       "scoreKey": "SUPPORTER"
     },
     {
       "id": "supporter_6",
-      "question": "In relevant situations, I often show a Supporter pattern.",
+      "question": "Looking back over the last month, Supporter describes a repeated behavior pattern for me.",
       "scoreKey": "SUPPORTER"
     }
   ],
   "results": {
     "COORDINATOR": {
       "title": "Coordinator",
-      "summary": "Your primary result points to a Coordinator pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Team Role Test, your result is Coordinator. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Coordinator",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Coordinator",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -205,12 +205,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Coordinator clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",
@@ -220,16 +220,16 @@
     },
     "CREATOR": {
       "title": "Creator",
-      "summary": "Your primary result points to a Creator pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Team Role Test, your result is Creator. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Creator",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Creator",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -237,12 +237,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Creator clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",
@@ -252,16 +252,16 @@
     },
     "IMPLEMENTER": {
       "title": "Implementer",
-      "summary": "Your primary result points to a Implementer pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Team Role Test, your result is Implementer. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Implementer",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Implementer",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -269,12 +269,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Implementer clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",
@@ -284,16 +284,16 @@
     },
     "ANALYST": {
       "title": "Analyst",
-      "summary": "Your primary result points to a Analyst pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Team Role Test, your result is Analyst. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Analyst",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Analyst",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -301,12 +301,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Analyst clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",
@@ -316,16 +316,16 @@
     },
     "SUPPORTER": {
       "title": "Supporter",
-      "summary": "Your primary result points to a Supporter pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Team Role Test, your result is Supporter. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Supporter",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Supporter",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -333,12 +333,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Supporter clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",

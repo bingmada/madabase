@@ -31,10 +31,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   if (!test || !test.resultTypes.includes(type.toUpperCase())) return {};
   const content = await loadTestContent(slug, locale);
   const result = content ? getResultContent(content, type) : null;
-  if (!result) return {};
+  if (!content || !result) return {};
 
   return buildPageMetadata({
-    title: locale === "en" ? `${type.toUpperCase()} Personality Type Test Result` : `${type.toUpperCase()} 人格类型测试结果`,
+    title: locale === "en" ? `${content.title}: ${result.title} Result` : `${content.title}：${result.title}结果`,
     description: result.summary,
     locale,
     path: `/tests/${slug}/result/${type.toLowerCase()}`,
@@ -101,6 +101,7 @@ export default async function TestResultPage({
   const copy = {
     en: {
       result: "Your type is",
+      outcome: "Your result is",
       free: "Free summary",
       full: "Full report",
       traits: "Core traits",
@@ -123,6 +124,7 @@ export default async function TestResultPage({
     },
     zh: {
       result: "你的类型是",
+      outcome: "你的结果是",
       free: "免费摘要",
       full: "完整报告",
       traits: "核心特质",
@@ -151,6 +153,15 @@ export default async function TestResultPage({
     relationships: copy.relationships,
     growth: copy.growth,
   };
+  const scoreMaxes = getScoreMaxes(content.questions);
+  const scoreLabels = {
+    ...Object.fromEntries(Object.entries(content.results).map(([key, value]) => [key, value.title])),
+    STRESS: locale === "en" ? "Burnout risk index" : "倦怠风险指数",
+    PROCRASTINATION: locale === "en" ? "Procrastination index" : "拖延指数",
+    RESILIENCE: locale === "en" ? "Resilience index" : "心理韧性指数",
+  };
+  const snapshotTitle = Object.keys(scoreMaxes).length === 1 ? (locale === "en" ? "Score index" : "分数指数") : undefined;
+  const resultHeading = slug === "mbti" ? copy.result : copy.outcome;
 
   const breadcrumbSchema = buildBreadcrumbSchema([
     { name: "Madabase", item: buildAbsoluteUrl(`/${locale}`) },
@@ -178,14 +189,14 @@ export default async function TestResultPage({
           <header className="border-b border-[var(--border)] p-5 sm:p-7">
             <p className="eyebrow">{content.title}</p>
             <h1 className="mt-3 text-4xl font-black tracking-tight text-[var(--text)] sm:text-5xl">
-              {copy.result} <span className="text-[var(--brand-strong)]">{normalizedType}</span>
+              {resultHeading} <span className="text-[var(--brand-strong)]">{slug === "mbti" ? normalizedType : result.title}</span>
             </h1>
             <p className="mt-3 text-xl font-semibold text-[var(--text)]">{result.title}</p>
             <p className="mt-4 max-w-3xl text-base leading-7 text-[var(--text-muted)] sm:text-lg">{result.summary}</p>
             <Link href={`/${locale}/tests/${slug}/start`} className="mt-6 inline-flex h-11 items-center rounded-md border border-[var(--border)] bg-white px-4 text-sm font-semibold text-[var(--text)] transition hover:border-[var(--brand)]">
               {copy.retake}
             </Link>
-            <ResultSharePoster locale={locale} testTitle={content.title} resultType={normalizedType} result={result} testUrl={posterTestUrl} />
+            <ResultSharePoster locale={locale} testTitle={content.title} resultType={normalizedType} resultLabel={slug === "mbti" ? normalizedType : result.title} result={result} testUrl={posterTestUrl} />
           </header>
 
           <section className="grid gap-0 lg:grid-cols-[0.85fr_1.15fr]">
@@ -200,7 +211,7 @@ export default async function TestResultPage({
               </div>
               <p className="mt-5 text-sm leading-6 text-[var(--text-muted)]">{result.summary}</p>
               <div className="mt-5">
-                <ResultScoreSnapshot locale={locale} slug={slug} attemptId={attempt} resultType={normalizedType} />
+                <ResultScoreSnapshot locale={locale} slug={slug} attemptId={attempt} resultType={normalizedType} scoreMaxes={scoreMaxes} scoreLabels={scoreLabels} title={snapshotTitle} />
               </div>
             </div>
 
@@ -215,9 +226,6 @@ export default async function TestResultPage({
 
               {unlocked ? (
                 <div className="mt-5 grid gap-4 sm:grid-cols-2">
-                  <div className="sm:col-span-2">
-                    <ResultScoreSnapshot locale={locale} slug={slug} attemptId={attempt} resultType={normalizedType} />
-                  </div>
                   <div className="sm:col-span-2">
                     <DetailedReport locale={locale} resultType={normalizedType} title={result.title} summary={result.summary} traits={result.traits} strengths={result.strengths} weaknesses={result.weaknesses} growthPlan={result.growthPlan} />
                   </div>
@@ -269,6 +277,20 @@ export default async function TestResultPage({
       <Footer />
     </div>
   );
+}
+
+function getScoreMaxes(questions: Array<{ options: Array<{ score: Record<string, number | undefined> }> }>) {
+  const maxes: Record<string, number> = {};
+
+  for (const question of questions) {
+    const keys = new Set(question.options.flatMap((option) => Object.keys(option.score)));
+    for (const key of keys) {
+      const maxForQuestion = Math.max(...question.options.map((option) => option.score[key] ?? 0), 0);
+      maxes[key] = (maxes[key] ?? 0) + maxForQuestion;
+    }
+  }
+
+  return maxes;
 }
 
 function LockedPreviewBlock({ title, items }: { title: string; items: string[] }) {

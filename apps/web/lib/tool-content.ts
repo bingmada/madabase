@@ -56,8 +56,59 @@ export async function loadToolContent(slug: string, locale: Locale): Promise<Too
       },
     };
   } catch {
-    return null;
+    return getRegistryToolContent(slug);
   }
+}
+
+async function getRegistryToolContent(slug: string): Promise<ToolContent | null> {
+  const { toolMap } = await import("./tool-registry");
+  const tool = toolMap.get(slug);
+  if (!tool) return null;
+
+  return {
+    slug,
+    title: tool.h1,
+    h1: tool.h1,
+    description: tool.description,
+    seo: {
+      en: {
+        title: `${tool.h1.en} | Madabase`,
+        description: tool.description.en,
+        keywords: tool.keywords,
+      },
+      zh: {
+        title: `${tool.h1.zh} | Madabase`,
+        description: tool.description.zh,
+        keywords: tool.keywords,
+      },
+    },
+    intro: {
+      en: `${tool.description.en} Use this browser-based utility for quick calculations, planning, or everyday decisions.`,
+      zh: `${tool.description.zh} 这个工具适合快速计算、规划和日常决策。`,
+    },
+    howToUse: {
+      en: [
+        { title: "Enter your inputs", content: "Paste or type the values requested by the tool." },
+        { title: "Run the tool", content: "Click the action button to calculate or generate the result locally." },
+        { title: "Review the output", content: "Use the result as a practical reference and adjust the assumptions if needed." },
+      ],
+      zh: [
+        { title: "输入信息", content: "按工具提示输入文本、数字或日期。" },
+        { title: "运行工具", content: "点击按钮，在浏览器本地生成结果。" },
+        { title: "查看结果", content: "把结果作为参考，并根据实际情况调整假设。" },
+      ],
+    },
+    examples: {
+      en: [{ input: "Sample input", output: "Calculated output" }],
+      zh: [{ input: "示例输入", output: "计算结果" }],
+    },
+    faq: {
+      en: [localFaq.en],
+      zh: [localFaq.zh],
+    },
+    relatedTools: tool.relatedTools,
+    category: tool.category,
+  };
 }
 
 function parseToolContent(content: string, requestedLocale: Locale) {

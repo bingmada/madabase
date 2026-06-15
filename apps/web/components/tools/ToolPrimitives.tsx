@@ -1,9 +1,13 @@
 "use client";
 
 import { Clipboard, RotateCcw } from "lucide-react";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 
-export function ToolPanel({ children }: { children: React.ReactNode }) {
+export function ToolPanel({ children, label = "local browser tool" }: { children: React.ReactNode; label?: string }) {
+  const pathname = usePathname();
+  const displayLabel = label === "local browser tool" && pathname.startsWith("/zh/") ? "本地浏览器工具" : label;
+
   return (
     <div className="overflow-hidden rounded-md border border-[var(--border-strong)] bg-white shadow-[var(--shadow-soft)]">
       <div className="flex items-center justify-between border-b border-[var(--border)] bg-[var(--surface-code)] px-4 py-2.5">
@@ -12,7 +16,7 @@ export function ToolPanel({ children }: { children: React.ReactNode }) {
           <span className="h-2.5 w-2.5 rounded-full bg-[#f59e0b]" />
           <span className="h-2.5 w-2.5 rounded-full bg-[#10b981]" />
         </div>
-        <span className="code-font text-[11px] font-semibold uppercase tracking-[0.18em] text-[#cbd8d2]">local browser tool</span>
+        <span className="text-[11px] font-semibold text-[#cbd8d2]">{displayLabel}</span>
       </div>
       <div className="workbench-grid bg-[var(--surface-muted)] p-3 sm:p-4">{children}</div>
     </div>
@@ -112,7 +116,7 @@ export function StatusMessage({ message, tone = "neutral" }: { message: string; 
   return <div className={`rounded-md border px-3 py-2 text-sm font-medium ${toneClass}`}>{message}</div>;
 }
 
-export function CopyButton({ value, label = "Copy" }: { value: string; label?: string }) {
+export function CopyButton({ value, label = "Copy", copiedLabel = "Copied" }: { value: string; label?: string; copiedLabel?: string }) {
   const [copied, setCopied] = useState(false);
 
   async function copy() {
@@ -130,21 +134,21 @@ export function CopyButton({ value, label = "Copy" }: { value: string; label?: s
       title={label}
     >
       <Clipboard className="h-4 w-4" aria-hidden="true" />
-      {copied ? "Copied" : label}
+      {copied ? copiedLabel : label}
     </button>
   );
 }
 
-export function ResetButton({ onClick }: { onClick: () => void }) {
+export function ResetButton({ onClick, label = "Reset" }: { onClick: () => void; label?: string }) {
   return (
     <button
       type="button"
       onClick={onClick}
       className="inline-flex h-10 items-center gap-2 rounded-md border border-[var(--border)] bg-white px-3 text-sm font-semibold text-[var(--text)] shadow-sm transition hover:border-[var(--brand)] hover:bg-[var(--brand-soft)]"
-      title="Reset"
+      title={label}
     >
       <RotateCcw className="h-4 w-4" aria-hidden="true" />
-      Reset
+      {label}
     </button>
   );
 }

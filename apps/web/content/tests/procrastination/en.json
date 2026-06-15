@@ -1,287 +1,287 @@
 {
   "title": "Procrastination Test",
-  "description": "Answer 24 quick prompts to explore your procrastination pattern.",
+  "description": "Measure procrastination through recent task starts, deadline pressure, and avoidance behavior.",
   "instructions": [
-    "Answer based on recent real behavior, not an ideal version of yourself.",
-    "Use the whole scale when a statement clearly fits or does not fit.",
-    "Your report highlights the strongest pattern and practical next steps."
+    "Answer from recent real behavior, not an ideal version of yourself.",
+    "If a statement reminds you of a concrete situation, it is usually more useful.",
+    "Use the result for reflection and communication, not as a diagnosis."
   ],
   "scale": [
     {
       "id": "1",
-      "text": "Strongly disagree",
+      "text": "Not at all true",
       "value": 1
     },
     {
       "id": "2",
-      "text": "Disagree",
+      "text": "Rarely true",
       "value": 2
     },
     {
       "id": "3",
-      "text": "Neutral",
+      "text": "Sometimes true",
       "value": 3
     },
     {
       "id": "4",
-      "text": "Agree",
+      "text": "Often true",
       "value": 4
     },
     {
       "id": "5",
-      "text": "Strongly agree",
+      "text": "Very true",
       "value": 5
     }
   ],
   "scaleQuestions": [
     {
-      "id": "low_1",
-      "question": "In relevant situations, I often show a Low pattern.",
-      "scoreKey": "LOW"
+      "id": "procrastination_1",
+      "question": "I know a task matters, but I still choose easier small tasks first.",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "low_2",
-      "question": "In relevant situations, I often show a Low pattern.",
-      "scoreKey": "LOW"
+      "id": "procrastination_2",
+      "question": "The more complex a task is, the harder it is for me to start.",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "low_3",
-      "question": "In relevant situations, I often show a Low pattern.",
-      "scoreKey": "LOW"
+      "id": "procrastination_3",
+      "question": "Without a clear deadline, I struggle to move work forward.",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "low_4",
-      "question": "In relevant situations, I often show a Low pattern.",
-      "scoreKey": "LOW"
+      "id": "procrastination_4",
+      "question": "I often need pressure before I can fully engage.",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "low_5",
-      "question": "In relevant situations, I often show a Low pattern.",
-      "scoreKey": "LOW"
+      "id": "procrastination_5",
+      "question": "I prepare around the task without actually progressing.",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "low_6",
-      "question": "In relevant situations, I often show a Low pattern.",
-      "scoreKey": "LOW"
+      "id": "procrastination_6",
+      "question": "I use phone checks, desk cleaning, or research to avoid the core task.",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "moderate_1",
-      "question": "In relevant situations, I often show a Moderate pattern.",
-      "scoreKey": "MODERATE"
+      "id": "procrastination_7",
+      "question": "When the result may not be good enough, I want to delay.",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "moderate_2",
-      "question": "In relevant situations, I often show a Moderate pattern.",
-      "scoreKey": "MODERATE"
+      "id": "procrastination_8",
+      "question": "I notice how long I have delayed only when someone asks for progress.",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "moderate_3",
-      "question": "In relevant situations, I often show a Moderate pattern.",
-      "scoreKey": "MODERATE"
+      "id": "procrastination_9",
+      "question": "When the next step is unclear, I stop.",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "moderate_4",
-      "question": "In relevant situations, I often show a Moderate pattern.",
-      "scoreKey": "MODERATE"
+      "id": "procrastination_10",
+      "question": "I often underestimate how long a task will take.",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "moderate_5",
-      "question": "In relevant situations, I often show a Moderate pattern.",
-      "scoreKey": "MODERATE"
+      "id": "procrastination_11",
+      "question": "After delaying, I feel guilty but repeat the pattern.",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "moderate_6",
-      "question": "In relevant situations, I often show a Moderate pattern.",
-      "scoreKey": "MODERATE"
+      "id": "procrastination_12",
+      "question": "Close deadlines noticeably affect my sleep or mood.",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "high_1",
-      "question": "In relevant situations, I often show a High pattern.",
-      "scoreKey": "HIGH"
+      "id": "procrastination_13",
+      "question": "Not knowing where to begin keeps me from beginning at all.",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "high_2",
-      "question": "In relevant situations, I often show a High pattern.",
-      "scoreKey": "HIGH"
+      "id": "procrastination_14",
+      "question": "Even when I have time, I leave important tasks until late.",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "high_3",
-      "question": "In relevant situations, I often show a High pattern.",
-      "scoreKey": "HIGH"
+      "id": "procrastination_15",
+      "question": "I need reminders or supervision to keep moving.",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "high_4",
-      "question": "In relevant situations, I often show a High pattern.",
-      "scoreKey": "HIGH"
+      "id": "procrastination_16",
+      "question": "Tasks involving evaluation or comparison make me delay more.",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "high_5",
-      "question": "In relevant situations, I often show a High pattern.",
-      "scoreKey": "HIGH"
+      "id": "procrastination_17",
+      "question": "I make tasks feel so large that the first step becomes hard.",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "high_6",
-      "question": "In relevant situations, I often show a High pattern.",
-      "scoreKey": "HIGH"
+      "id": "procrastination_18",
+      "question": "I switch between tasks without finishing much.",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "severe_1",
-      "question": "In relevant situations, I often show a Severe pattern.",
-      "scoreKey": "SEVERE"
+      "id": "procrastination_19",
+      "question": "Procrastination affects my study, work, or collaboration rhythm.",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "severe_2",
-      "question": "In relevant situations, I often show a Severe pattern.",
-      "scoreKey": "SEVERE"
+      "id": "procrastination_20",
+      "question": "I often use not being in the right state as a reason to postpone.",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "severe_3",
-      "question": "In relevant situations, I often show a Severe pattern.",
-      "scoreKey": "SEVERE"
+      "id": "procrastination_21",
+      "question": "If a task has no immediate feedback, I lose motivation quickly.",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "severe_4",
-      "question": "In relevant situations, I often show a Severe pattern.",
-      "scoreKey": "SEVERE"
+      "id": "procrastination_22",
+      "question": "I avoid checking messages or information related to the task.",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "severe_5",
-      "question": "In relevant situations, I often show a Severe pattern.",
-      "scoreKey": "SEVERE"
+      "id": "procrastination_23",
+      "question": "I often need last-minute pressure to finish.",
+      "scoreKey": "PROCRASTINATION"
     },
     {
-      "id": "severe_6",
-      "question": "In relevant situations, I often show a Severe pattern.",
-      "scoreKey": "SEVERE"
+      "id": "procrastination_24",
+      "question": "The consequences of delay have made me want to change seriously.",
+      "scoreKey": "PROCRASTINATION"
     }
   ],
   "results": {
     "LOW": {
-      "title": "Low",
-      "summary": "Your primary result points to a Low pattern. Treat it as a useful lens, not a fixed label.",
+      "title": "Low procrastination risk",
+      "summary": "Your procrastination index is low. Most tasks start and finish normally; delays usually come from unclear tasks or short-term fatigue.",
       "traits": [
-        "Clear preference",
-        "Repeatable pattern",
-        "Context sensitive"
+        "Starts quickly",
+        "Self-corrects",
+        "Low disruption"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
-        "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "Most tasks move on time",
+        "You recover from distraction quickly",
+        "Your self-management base is solid"
       ],
       "weaknesses": [
-        "Under pressure, you may overuse one strategy",
-        "Opposite perspectives can be easy to miss",
-        "The result should guide you rather than limit you"
+        "Ambiguous tasks can still stall",
+        "Long projects may be underestimated",
+        "Reflection can disappear when busy"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Break tasks into a 15-minute start",
+        "Define done before execution",
+        "Set midpoint checks for important work"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "If delay affects collaboration, share progress and the next step early instead of explaining at the last minute."
       ],
       "growthPlan": [
-        "Track the pattern for one week",
-        "Choose one behavior to adjust",
-        "Practice the new move in a low-risk situation"
+        "Choose one delayed task and do only the first step today",
+        "Move the next deadline 24 hours earlier",
+        "Track the task types that trigger delay this week"
       ]
     },
     "MODERATE": {
-      "title": "Moderate",
-      "summary": "Your primary result points to a Moderate pattern. Treat it as a useful lens, not a fixed label.",
+      "title": "Moderate procrastination risk",
+      "summary": "Your procrastination index is moderate. You are not unwilling to finish; you tend to get stuck when tasks are complex, feedback is vague, or pressure is low.",
       "traits": [
-        "Clear preference",
-        "Repeatable pattern",
-        "Context sensitive"
+        "Sometimes stuck",
+        "Sensitive to task clarity",
+        "Needs a steadier start routine"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
-        "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You can already notice the delay pattern",
+        "Lowering the start barrier will help",
+        "External structure can improve follow-through"
       ],
       "weaknesses": [
-        "Under pressure, you may overuse one strategy",
-        "Opposite perspectives can be easy to miss",
-        "The result should guide you rather than limit you"
+        "Large tasks can trigger avoidance",
+        "Pressure rises close to deadlines",
+        "Self-blame can replace action"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Break tasks into a 15-minute start",
+        "Define done before execution",
+        "Set midpoint checks for important work"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "If delay affects collaboration, share progress and the next step early instead of explaining at the last minute."
       ],
       "growthPlan": [
-        "Track the pattern for one week",
-        "Choose one behavior to adjust",
-        "Practice the new move in a low-risk situation"
+        "Choose one delayed task and do only the first step today",
+        "Move the next deadline 24 hours earlier",
+        "Track the task types that trigger delay this week"
       ]
     },
     "HIGH": {
-      "title": "High",
-      "summary": "Your primary result points to a High pattern. Treat it as a useful lens, not a fixed label.",
+      "title": "High procrastination risk",
+      "summary": "Your procrastination index is high. Delay is starting to affect quality, deadline pressure, or collaboration rhythm.",
       "traits": [
-        "Clear preference",
-        "Repeatable pattern",
-        "Context sensitive"
+        "Sometimes stuck",
+        "Sensitive to task clarity",
+        "Needs a steadier start routine"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
-        "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You can already notice the delay pattern",
+        "Lowering the start barrier will help",
+        "External structure can improve follow-through"
       ],
       "weaknesses": [
-        "Under pressure, you may overuse one strategy",
-        "Opposite perspectives can be easy to miss",
-        "The result should guide you rather than limit you"
+        "Large tasks can trigger avoidance",
+        "Pressure rises close to deadlines",
+        "Self-blame can replace action"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Break tasks into a 15-minute start",
+        "Define done before execution",
+        "Set midpoint checks for important work"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "If delay affects collaboration, share progress and the next step early instead of explaining at the last minute."
       ],
       "growthPlan": [
-        "Track the pattern for one week",
-        "Choose one behavior to adjust",
-        "Practice the new move in a low-risk situation"
+        "Choose one delayed task and do only the first step today",
+        "Move the next deadline 24 hours earlier",
+        "Track the task types that trigger delay this week"
       ]
     },
     "SEVERE": {
-      "title": "Severe",
-      "summary": "Your primary result points to a Severe pattern. Treat it as a useful lens, not a fixed label.",
+      "title": "Severe procrastination risk",
+      "summary": "Your procrastination index is very high. Delay may be affecting study, work, or daily rhythm; reduce task pressure and seek outside support first.",
       "traits": [
-        "Clear preference",
-        "Repeatable pattern",
-        "Context sensitive"
+        "Hard to start",
+        "High pressure buildup",
+        "Work rhythm is affected"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
-        "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You can already notice the delay pattern",
+        "Lowering the start barrier will help",
+        "External structure can improve follow-through"
       ],
       "weaknesses": [
-        "Under pressure, you may overuse one strategy",
-        "Opposite perspectives can be easy to miss",
-        "The result should guide you rather than limit you"
+        "Large tasks can trigger avoidance",
+        "Pressure rises close to deadlines",
+        "Self-blame can replace action"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Break tasks into a 15-minute start",
+        "Define done before execution",
+        "Set midpoint checks for important work"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "If delay affects collaboration, share progress and the next step early instead of explaining at the last minute."
       ],
       "growthPlan": [
-        "Track the pattern for one week",
-        "Choose one behavior to adjust",
-        "Practice the new move in a low-risk situation"
+        "Choose one delayed task and do only the first step today",
+        "Move the next deadline 24 hours earlier",
+        "Track the task types that trigger delay this week"
       ]
     }
   }

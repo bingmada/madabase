@@ -45,12 +45,14 @@ export function ResultSharePoster({
   locale,
   testTitle,
   resultType,
+  resultLabel,
   result,
   testUrl,
 }: {
   locale: Locale;
   testTitle: string;
   resultType: string;
+  resultLabel?: string;
   result: PosterResult;
   testUrl: string;
 }) {
@@ -89,7 +91,7 @@ export function ResultSharePoster({
 
       ctx.fillStyle = ink;
       ctx.font = "900 132px Arial, sans-serif";
-      ctx.fillText(resultType, 82, 278);
+      ctx.fillText(resultLabel ?? resultType, 82, 278);
       ctx.fillStyle = accent;
       ctx.font = "900 54px Arial, sans-serif";
       wrapText(ctx, result.title, 88, 350, 720, 62, 2);
@@ -140,7 +142,7 @@ export function ResultSharePoster({
     return () => {
       cancelled = true;
     };
-  }, [accent, ink, locale, primary, result.summary, result.title, result.traits, resultType, testTitle, testUrl]);
+  }, [accent, ink, locale, primary, result.summary, result.title, result.traits, resultLabel, resultType, testTitle, testUrl]);
 
   function download() {
     const canvas = canvasRef.current;
@@ -161,7 +163,7 @@ export function ResultSharePoster({
       if (!blob) return;
       const file = new File([blob], `madabase-${resultType.toLowerCase()}-result.png`, { type: "image/png" });
       if (navigator.canShare?.({ files: [file] })) {
-        await navigator.share({ files: [file], title: `${testTitle}: ${resultType}` });
+        await navigator.share({ files: [file], title: `${testTitle}: ${resultLabel ?? resultType}` });
       } else {
         download();
       }

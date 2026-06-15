@@ -1,294 +1,294 @@
 {
   "title": "心理韧性测试",
-  "description": "通过 24 个快速问题了解你的心理韧性模式。",
+  "description": "通过压力后的恢复速度、情绪稳定和持续行动能力，评估你的心理韧性。",
   "instructions": [
     "请根据最近真实行为作答，不要按理想中的自己选择。",
-    "当描述明显符合或不符合时，请大胆使用量表两端。",
-    "报告会突出你的最强模式和可执行的下一步建议。"
+    "如果某句话让你想到具体经历，通常说明它更有参考价值。",
+    "结果用于自我理解和沟通参考，不是诊断或定论。"
   ],
   "reportLabels": {
-    "strengths": "优势",
-    "weaknesses": "风险",
-    "careers": "适合方法",
-    "relationships": "关系提示",
-    "growth": "成长计划"
+    "strengths": "可用资源",
+    "weaknesses": "脆弱点",
+    "careers": "恢复建议",
+    "relationships": "支持提示",
+    "growth": "改善计划"
   },
   "scale": [
     {
       "id": "1",
-      "text": "非常不同意",
+      "text": "完全不符合",
       "value": 1
     },
     {
       "id": "2",
-      "text": "不同意",
+      "text": "较少符合",
       "value": 2
     },
     {
       "id": "3",
-      "text": "一般",
+      "text": "有时符合",
       "value": 3
     },
     {
       "id": "4",
-      "text": "同意",
+      "text": "比较符合",
       "value": 4
     },
     {
       "id": "5",
-      "text": "非常同意",
+      "text": "非常符合",
       "value": 5
     }
   ],
   "scaleQuestions": [
     {
-      "id": "steady_1",
-      "question": "我在相关情境中经常表现出「Steady」这一倾向。",
-      "scoreKey": "STEADY"
+      "id": "resilience_1",
+      "question": "遇到挫折后，我能在较短时间内重新开始行动。",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "steady_2",
-      "question": "我在相关情境中经常表现出「Steady」这一倾向。",
-      "scoreKey": "STEADY"
+      "id": "resilience_2",
+      "question": "压力很大时，我仍能分清哪些事可以控制。",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "steady_3",
-      "question": "我在相关情境中经常表现出「Steady」这一倾向。",
-      "scoreKey": "STEADY"
+      "id": "resilience_3",
+      "question": "我有固定的方法帮助自己从疲惫中恢复。",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "steady_4",
-      "question": "我在相关情境中经常表现出「Steady」这一倾向。",
-      "scoreKey": "STEADY"
+      "id": "resilience_4",
+      "question": "计划被打乱后，我能重新安排优先级。",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "steady_5",
-      "question": "我在相关情境中经常表现出「Steady」这一倾向。",
-      "scoreKey": "STEADY"
+      "id": "resilience_5",
+      "question": "情绪低落时，我仍能完成最关键的小任务。",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "steady_6",
-      "question": "我在相关情境中经常表现出「Steady」这一倾向。",
-      "scoreKey": "STEADY"
+      "id": "resilience_6",
+      "question": "我能比较早觉察自己快要过载。",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "recovering_1",
-      "question": "我在相关情境中经常表现出「Recovering」这一倾向。",
-      "scoreKey": "RECOVERING"
+      "id": "resilience_7",
+      "question": "连续忙碌后，我会主动安排休息而不是硬撑。",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "recovering_2",
-      "question": "我在相关情境中经常表现出「Recovering」这一倾向。",
-      "scoreKey": "RECOVERING"
+      "id": "resilience_8",
+      "question": "遇到批评或失败时，我能把事件和自我价值分开。",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "recovering_3",
-      "question": "我在相关情境中经常表现出「Recovering」这一倾向。",
-      "scoreKey": "RECOVERING"
+      "id": "resilience_9",
+      "question": "我愿意在压力过大时寻求帮助。",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "recovering_4",
-      "question": "我在相关情境中经常表现出「Recovering」这一倾向。",
-      "scoreKey": "RECOVERING"
+      "id": "resilience_10",
+      "question": "睡眠不足或疲惫时，我会降低要求而不是彻底放弃。",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "recovering_5",
-      "question": "我在相关情境中经常表现出「Recovering」这一倾向。",
-      "scoreKey": "RECOVERING"
+      "id": "resilience_11",
+      "question": "面对不确定性，我能先做一个可控的小动作。",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "recovering_6",
-      "question": "我在相关情境中经常表现出「Recovering」这一倾向。",
-      "scoreKey": "RECOVERING"
+      "id": "resilience_12",
+      "question": "我能从过去的困难里总结出下一次可用的方法。",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "strained_1",
-      "question": "我在相关情境中经常表现出「Strained」这一倾向。",
-      "scoreKey": "STRAINED"
+      "id": "resilience_13",
+      "question": "压力上来时，我会先稳定呼吸或节奏。",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "strained_2",
-      "question": "我在相关情境中经常表现出「Strained」这一倾向。",
-      "scoreKey": "STRAINED"
+      "id": "resilience_14",
+      "question": "我能接受恢复需要时间，而不是强迫自己立刻正常。",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "strained_3",
-      "question": "我在相关情境中经常表现出「Strained」这一倾向。",
-      "scoreKey": "STRAINED"
+      "id": "resilience_15",
+      "question": "我会减少无谓消耗，把精力留给真正重要的事。",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "strained_4",
-      "question": "我在相关情境中经常表现出「Strained」这一倾向。",
-      "scoreKey": "STRAINED"
+      "id": "resilience_16",
+      "question": "当别人情绪很强时，我能保护自己的边界。",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "strained_5",
-      "question": "我在相关情境中经常表现出「Strained」这一倾向。",
-      "scoreKey": "STRAINED"
+      "id": "resilience_17",
+      "question": "我能把大问题拆成今天能处理的一部分。",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "strained_6",
-      "question": "我在相关情境中经常表现出「Strained」这一倾向。",
-      "scoreKey": "STRAINED"
+      "id": "resilience_18",
+      "question": "我能在不完美的状态下继续前进。",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "fragile_1",
-      "question": "我在相关情境中经常表现出「Fragile」这一倾向。",
-      "scoreKey": "FRAGILE"
+      "id": "resilience_19",
+      "question": "我知道哪些人或环境能帮助我恢复。",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "fragile_2",
-      "question": "我在相关情境中经常表现出「Fragile」这一倾向。",
-      "scoreKey": "FRAGILE"
+      "id": "resilience_20",
+      "question": "压力结束后，我会复盘而不是只想逃开。",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "fragile_3",
-      "question": "我在相关情境中经常表现出「Fragile」这一倾向。",
-      "scoreKey": "FRAGILE"
+      "id": "resilience_21",
+      "question": "我能识别身体发出的疲惫信号。",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "fragile_4",
-      "question": "我在相关情境中经常表现出「Fragile」这一倾向。",
-      "scoreKey": "FRAGILE"
+      "id": "resilience_22",
+      "question": "遇到长期压力时，我会调整节奏而不是一直加速。",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "fragile_5",
-      "question": "我在相关情境中经常表现出「Fragile」这一倾向。",
-      "scoreKey": "FRAGILE"
+      "id": "resilience_23",
+      "question": "我能在失败后重新建立信心。",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "fragile_6",
-      "question": "我在相关情境中经常表现出「Fragile」这一倾向。",
-      "scoreKey": "FRAGILE"
+      "id": "resilience_24",
+      "question": "最近一个月，我整体上能从压力中恢复过来。",
+      "scoreKey": "RESILIENCE"
     }
   ],
   "results": {
     "STEADY": {
-      "title": "Steady",
-      "summary": "你的主要结果指向Steady。这不是固定标签，而是帮助你理解当前偏好的观察角度。",
+      "title": "稳定恢复型",
+      "summary": "你的心理韧性指数较高。你通常能在压力后恢复节奏，并继续推进关键任务。",
       "traits": [
-        "偏好清晰",
-        "模式稳定",
-        "可被情境调整"
+        "恢复速度较好",
+        "压力下仍能行动",
+        "节奏相对稳定"
       ],
       "strengths": [
-        "能在合适环境中发挥明显优势",
-        "容易形成可复用的方法",
-        "对相关信号较敏感"
+        "遇到挫折后能较快回到任务",
+        "能区分问题和情绪",
+        "有一定自我修复方法"
       ],
       "weaknesses": [
-        "压力下可能过度使用同一种策略",
-        "容易忽略相反视角",
-        "需要避免把结果当成限制"
+        "可能忽略早期疲劳信号",
+        "容易替别人多承担",
+        "长期压力下仍需要恢复窗口"
       ],
       "careers": [
-        "复盘最近三次真实情境",
-        "找到最常触发该模式的场景",
-        "设计一个小实验"
+        "保留固定恢复时间",
+        "把压力源分成可控和不可控",
+        "在高压项目中提前设置求助点"
       ],
       "relationships": [
-        "向他人说明你的偏好，同时保留对方不同节奏的空间。"
+        "让身边人知道你在压力下需要什么支持：安静、陪伴、具体帮助或更清晰的信息。"
       ],
       "growthPlan": [
-        "记录一周内的典型表现",
-        "选择一个需要微调的行为",
-        "用一次低风险场景练习新策略"
+        "本周固定一个恢复时段",
+        "列出三个最常见压力源",
+        "给一个可信任的人说明你的支持需求"
       ]
     },
     "RECOVERING": {
-      "title": "Recovering",
-      "summary": "你的主要结果指向Recovering。这不是固定标签，而是帮助你理解当前偏好的观察角度。",
+      "title": "恢复调整型",
+      "summary": "你的心理韧性处于可恢复区间。你能从压力中回来，但需要更稳定的休息、边界和支持。",
       "traits": [
-        "偏好清晰",
-        "模式稳定",
-        "可被情境调整"
+        "恢复能力有波动",
+        "压力下容易紧绷",
+        "需要更稳定的恢复安排"
       ],
       "strengths": [
-        "能在合适环境中发挥明显优势",
-        "容易形成可复用的方法",
-        "对相关信号较敏感"
+        "已经能识别消耗信号",
+        "通过睡眠、边界和支持能改善",
+        "适合先恢复基本节奏"
       ],
       "weaknesses": [
-        "压力下可能过度使用同一种策略",
-        "容易忽略相反视角",
-        "需要避免把结果当成限制"
+        "连续压力会明显影响专注",
+        "容易把短期挫折放大",
+        "恢复不足时判断会变保守"
       ],
       "careers": [
-        "复盘最近三次真实情境",
-        "找到最常触发该模式的场景",
-        "设计一个小实验"
+        "保留固定恢复时间",
+        "把压力源分成可控和不可控",
+        "在高压项目中提前设置求助点"
       ],
       "relationships": [
-        "向他人说明你的偏好，同时保留对方不同节奏的空间。"
+        "让身边人知道你在压力下需要什么支持：安静、陪伴、具体帮助或更清晰的信息。"
       ],
       "growthPlan": [
-        "记录一周内的典型表现",
-        "选择一个需要微调的行为",
-        "用一次低风险场景练习新策略"
+        "本周固定一个恢复时段",
+        "列出三个最常见压力源",
+        "给一个可信任的人说明你的支持需求"
       ]
     },
     "STRAINED": {
-      "title": "Strained",
-      "summary": "你的主要结果指向Strained。这不是固定标签，而是帮助你理解当前偏好的观察角度。",
+      "title": "持续紧绷型",
+      "summary": "你的心理韧性正在被持续压力消耗。你还能撑住一部分任务，但恢复速度和情绪稳定已经受到影响。",
       "traits": [
-        "偏好清晰",
-        "模式稳定",
-        "可被情境调整"
+        "恢复能力有波动",
+        "压力下容易紧绷",
+        "需要更稳定的恢复安排"
       ],
       "strengths": [
-        "能在合适环境中发挥明显优势",
-        "容易形成可复用的方法",
-        "对相关信号较敏感"
+        "已经能识别消耗信号",
+        "通过睡眠、边界和支持能改善",
+        "适合先恢复基本节奏"
       ],
       "weaknesses": [
-        "压力下可能过度使用同一种策略",
-        "容易忽略相反视角",
-        "需要避免把结果当成限制"
+        "连续压力会明显影响专注",
+        "容易把短期挫折放大",
+        "恢复不足时判断会变保守"
       ],
       "careers": [
-        "复盘最近三次真实情境",
-        "找到最常触发该模式的场景",
-        "设计一个小实验"
+        "保留固定恢复时间",
+        "把压力源分成可控和不可控",
+        "在高压项目中提前设置求助点"
       ],
       "relationships": [
-        "向他人说明你的偏好，同时保留对方不同节奏的空间。"
+        "让身边人知道你在压力下需要什么支持：安静、陪伴、具体帮助或更清晰的信息。"
       ],
       "growthPlan": [
-        "记录一周内的典型表现",
-        "选择一个需要微调的行为",
-        "用一次低风险场景练习新策略"
+        "本周固定一个恢复时段",
+        "列出三个最常见压力源",
+        "给一个可信任的人说明你的支持需求"
       ]
     },
     "FRAGILE": {
-      "title": "Fragile",
-      "summary": "你的主要结果指向Fragile。这不是固定标签，而是帮助你理解当前偏好的观察角度。",
+      "title": "脆弱消耗型",
+      "summary": "你的心理韧性指数偏低。当前最重要的不是继续硬撑，而是先恢复睡眠、支持和基本节奏。",
       "traits": [
-        "偏好清晰",
-        "模式稳定",
-        "可被情境调整"
+        "恢复变慢",
+        "容易被压力打断",
+        "需要优先补充资源"
       ],
       "strengths": [
-        "能在合适环境中发挥明显优势",
-        "容易形成可复用的方法",
-        "对相关信号较敏感"
+        "已经能识别消耗信号",
+        "通过睡眠、边界和支持能改善",
+        "适合先恢复基本节奏"
       ],
       "weaknesses": [
-        "压力下可能过度使用同一种策略",
-        "容易忽略相反视角",
-        "需要避免把结果当成限制"
+        "连续压力会明显影响专注",
+        "容易把短期挫折放大",
+        "恢复不足时判断会变保守"
       ],
       "careers": [
-        "复盘最近三次真实情境",
-        "找到最常触发该模式的场景",
-        "设计一个小实验"
+        "保留固定恢复时间",
+        "把压力源分成可控和不可控",
+        "在高压项目中提前设置求助点"
       ],
       "relationships": [
-        "向他人说明你的偏好，同时保留对方不同节奏的空间。"
+        "让身边人知道你在压力下需要什么支持：安静、陪伴、具体帮助或更清晰的信息。"
       ],
       "growthPlan": [
-        "记录一周内的典型表现",
-        "选择一个需要微调的行为",
-        "用一次低风险场景练习新策略"
+        "本周固定一个恢复时段",
+        "列出三个最常见压力源",
+        "给一个可信任的人说明你的支持需求"
       ]
     }
   }

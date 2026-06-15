@@ -1,287 +1,287 @@
 {
   "title": "Resilience Test",
-  "description": "Answer 24 quick prompts to explore your resilience pattern.",
+  "description": "Measure resilience through recovery speed, emotional steadiness, and ability to keep acting after stress.",
   "instructions": [
-    "Answer based on recent real behavior, not an ideal version of yourself.",
-    "Use the whole scale when a statement clearly fits or does not fit.",
-    "Your report highlights the strongest pattern and practical next steps."
+    "Answer from recent real behavior, not an ideal version of yourself.",
+    "If a statement reminds you of a concrete situation, it is usually more useful.",
+    "Use the result for reflection and communication, not as a diagnosis."
   ],
   "scale": [
     {
       "id": "1",
-      "text": "Strongly disagree",
+      "text": "Not at all true",
       "value": 1
     },
     {
       "id": "2",
-      "text": "Disagree",
+      "text": "Rarely true",
       "value": 2
     },
     {
       "id": "3",
-      "text": "Neutral",
+      "text": "Sometimes true",
       "value": 3
     },
     {
       "id": "4",
-      "text": "Agree",
+      "text": "Often true",
       "value": 4
     },
     {
       "id": "5",
-      "text": "Strongly agree",
+      "text": "Very true",
       "value": 5
     }
   ],
   "scaleQuestions": [
     {
-      "id": "steady_1",
-      "question": "In relevant situations, I often show a Steady pattern.",
-      "scoreKey": "STEADY"
+      "id": "resilience_1",
+      "question": "After a setback, I can restart action within a reasonable time.",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "steady_2",
-      "question": "In relevant situations, I often show a Steady pattern.",
-      "scoreKey": "STEADY"
+      "id": "resilience_2",
+      "question": "Under pressure, I can still tell what is controllable.",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "steady_3",
-      "question": "In relevant situations, I often show a Steady pattern.",
-      "scoreKey": "STEADY"
+      "id": "resilience_3",
+      "question": "I have reliable ways to recover from fatigue.",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "steady_4",
-      "question": "In relevant situations, I often show a Steady pattern.",
-      "scoreKey": "STEADY"
+      "id": "resilience_4",
+      "question": "When plans break, I can reset priorities.",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "steady_5",
-      "question": "In relevant situations, I often show a Steady pattern.",
-      "scoreKey": "STEADY"
+      "id": "resilience_5",
+      "question": "When low, I can still complete the smallest key task.",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "steady_6",
-      "question": "In relevant situations, I often show a Steady pattern.",
-      "scoreKey": "STEADY"
+      "id": "resilience_6",
+      "question": "I notice overload early.",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "recovering_1",
-      "question": "In relevant situations, I often show a Recovering pattern.",
-      "scoreKey": "RECOVERING"
+      "id": "resilience_7",
+      "question": "After busy stretches, I schedule rest instead of only pushing through.",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "recovering_2",
-      "question": "In relevant situations, I often show a Recovering pattern.",
-      "scoreKey": "RECOVERING"
+      "id": "resilience_8",
+      "question": "After criticism or failure, I can separate the event from my worth.",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "recovering_3",
-      "question": "In relevant situations, I often show a Recovering pattern.",
-      "scoreKey": "RECOVERING"
+      "id": "resilience_9",
+      "question": "I am willing to ask for help when pressure is too high.",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "recovering_4",
-      "question": "In relevant situations, I often show a Recovering pattern.",
-      "scoreKey": "RECOVERING"
+      "id": "resilience_10",
+      "question": "When tired, I lower the bar instead of quitting entirely.",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "recovering_5",
-      "question": "In relevant situations, I often show a Recovering pattern.",
-      "scoreKey": "RECOVERING"
+      "id": "resilience_11",
+      "question": "With uncertainty, I can take one controllable small action.",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "recovering_6",
-      "question": "In relevant situations, I often show a Recovering pattern.",
-      "scoreKey": "RECOVERING"
+      "id": "resilience_12",
+      "question": "I can turn past difficulties into methods for next time.",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "strained_1",
-      "question": "In relevant situations, I often show a Strained pattern.",
-      "scoreKey": "STRAINED"
+      "id": "resilience_13",
+      "question": "When stress rises, I first stabilize my breath or rhythm.",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "strained_2",
-      "question": "In relevant situations, I often show a Strained pattern.",
-      "scoreKey": "STRAINED"
+      "id": "resilience_14",
+      "question": "I can accept that recovery takes time.",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "strained_3",
-      "question": "In relevant situations, I often show a Strained pattern.",
-      "scoreKey": "STRAINED"
+      "id": "resilience_15",
+      "question": "I reduce unnecessary drain and save energy for what matters.",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "strained_4",
-      "question": "In relevant situations, I often show a Strained pattern.",
-      "scoreKey": "STRAINED"
+      "id": "resilience_16",
+      "question": "When others are emotional, I can protect my boundary.",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "strained_5",
-      "question": "In relevant situations, I often show a Strained pattern.",
-      "scoreKey": "STRAINED"
+      "id": "resilience_17",
+      "question": "I can break a big problem into one part for today.",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "strained_6",
-      "question": "In relevant situations, I often show a Strained pattern.",
-      "scoreKey": "STRAINED"
+      "id": "resilience_18",
+      "question": "I can keep moving while imperfect.",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "fragile_1",
-      "question": "In relevant situations, I often show a Fragile pattern.",
-      "scoreKey": "FRAGILE"
+      "id": "resilience_19",
+      "question": "I know which people or environments help me recover.",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "fragile_2",
-      "question": "In relevant situations, I often show a Fragile pattern.",
-      "scoreKey": "FRAGILE"
+      "id": "resilience_20",
+      "question": "After pressure ends, I reflect instead of only escaping.",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "fragile_3",
-      "question": "In relevant situations, I often show a Fragile pattern.",
-      "scoreKey": "FRAGILE"
+      "id": "resilience_21",
+      "question": "I can identify body signals of fatigue.",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "fragile_4",
-      "question": "In relevant situations, I often show a Fragile pattern.",
-      "scoreKey": "FRAGILE"
+      "id": "resilience_22",
+      "question": "Under long pressure, I adjust pace instead of only accelerating.",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "fragile_5",
-      "question": "In relevant situations, I often show a Fragile pattern.",
-      "scoreKey": "FRAGILE"
+      "id": "resilience_23",
+      "question": "I can rebuild confidence after failure.",
+      "scoreKey": "RESILIENCE"
     },
     {
-      "id": "fragile_6",
-      "question": "In relevant situations, I often show a Fragile pattern.",
-      "scoreKey": "FRAGILE"
+      "id": "resilience_24",
+      "question": "Over the last month, I have generally recovered from stress.",
+      "scoreKey": "RESILIENCE"
     }
   ],
   "results": {
     "STEADY": {
-      "title": "Steady",
-      "summary": "Your primary result points to a Steady pattern. Treat it as a useful lens, not a fixed label.",
+      "title": "Steady recovery",
+      "summary": "Your resilience index is high. You usually recover rhythm after stress and keep moving on key tasks.",
       "traits": [
-        "Clear preference",
-        "Repeatable pattern",
-        "Context sensitive"
+        "Recovers well",
+        "Keeps acting under stress",
+        "Stable rhythm"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
-        "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You return to tasks after setbacks",
+        "You can separate problems from emotion",
+        "You have some repair routines"
       ],
       "weaknesses": [
-        "Under pressure, you may overuse one strategy",
-        "Opposite perspectives can be easy to miss",
-        "The result should guide you rather than limit you"
+        "Early fatigue cues may be missed",
+        "You may carry too much for others",
+        "Long pressure still needs recovery windows"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Protect regular recovery time",
+        "Separate controllable and uncontrollable stressors",
+        "Set help points before high-pressure projects"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Tell people what support helps under stress: quiet, company, practical help, or clearer information."
       ],
       "growthPlan": [
-        "Track the pattern for one week",
-        "Choose one behavior to adjust",
-        "Practice the new move in a low-risk situation"
+        "Block one recovery period this week",
+        "List your three most common stressors",
+        "Tell one trusted person what support you need"
       ]
     },
     "RECOVERING": {
       "title": "Recovering",
-      "summary": "Your primary result points to a Recovering pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "Your resilience is in a recoverable range. You can come back from stress, but need steadier rest, boundaries, and support.",
       "traits": [
-        "Clear preference",
-        "Repeatable pattern",
-        "Context sensitive"
+        "Recovery fluctuates",
+        "Stress creates tension",
+        "Needs a steadier recovery plan"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
-        "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You can identify depletion signals",
+        "Sleep, boundaries, and support can help",
+        "Rebuilding rhythm is the best first move"
       ],
       "weaknesses": [
-        "Under pressure, you may overuse one strategy",
-        "Opposite perspectives can be easy to miss",
-        "The result should guide you rather than limit you"
+        "Repeated stress affects focus",
+        "Short setbacks can feel larger",
+        "Low recovery can make judgment too cautious"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Protect regular recovery time",
+        "Separate controllable and uncontrollable stressors",
+        "Set help points before high-pressure projects"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Tell people what support helps under stress: quiet, company, practical help, or clearer information."
       ],
       "growthPlan": [
-        "Track the pattern for one week",
-        "Choose one behavior to adjust",
-        "Practice the new move in a low-risk situation"
+        "Block one recovery period this week",
+        "List your three most common stressors",
+        "Tell one trusted person what support you need"
       ]
     },
     "STRAINED": {
       "title": "Strained",
-      "summary": "Your primary result points to a Strained pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "Your resilience is being drained by sustained pressure. You can still carry some tasks, but recovery speed and emotional steadiness are affected.",
       "traits": [
-        "Clear preference",
-        "Repeatable pattern",
-        "Context sensitive"
+        "Recovery fluctuates",
+        "Stress creates tension",
+        "Needs a steadier recovery plan"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
-        "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You can identify depletion signals",
+        "Sleep, boundaries, and support can help",
+        "Rebuilding rhythm is the best first move"
       ],
       "weaknesses": [
-        "Under pressure, you may overuse one strategy",
-        "Opposite perspectives can be easy to miss",
-        "The result should guide you rather than limit you"
+        "Repeated stress affects focus",
+        "Short setbacks can feel larger",
+        "Low recovery can make judgment too cautious"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Protect regular recovery time",
+        "Separate controllable and uncontrollable stressors",
+        "Set help points before high-pressure projects"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Tell people what support helps under stress: quiet, company, practical help, or clearer information."
       ],
       "growthPlan": [
-        "Track the pattern for one week",
-        "Choose one behavior to adjust",
-        "Practice the new move in a low-risk situation"
+        "Block one recovery period this week",
+        "List your three most common stressors",
+        "Tell one trusted person what support you need"
       ]
     },
     "FRAGILE": {
       "title": "Fragile",
-      "summary": "Your primary result points to a Fragile pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "Your resilience index is low. The priority is not pushing harder; it is repairing sleep, support, and basic rhythm.",
       "traits": [
-        "Clear preference",
-        "Repeatable pattern",
-        "Context sensitive"
+        "Recovery is slower",
+        "Stress interrupts focus",
+        "Needs resource repair first"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
-        "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You can identify depletion signals",
+        "Sleep, boundaries, and support can help",
+        "Rebuilding rhythm is the best first move"
       ],
       "weaknesses": [
-        "Under pressure, you may overuse one strategy",
-        "Opposite perspectives can be easy to miss",
-        "The result should guide you rather than limit you"
+        "Repeated stress affects focus",
+        "Short setbacks can feel larger",
+        "Low recovery can make judgment too cautious"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Protect regular recovery time",
+        "Separate controllable and uncontrollable stressors",
+        "Set help points before high-pressure projects"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Tell people what support helps under stress: quiet, company, practical help, or clearer information."
       ],
       "growthPlan": [
-        "Track the pattern for one week",
-        "Choose one behavior to adjust",
-        "Practice the new move in a low-risk situation"
+        "Block one recovery period this week",
+        "List your three most common stressors",
+        "Tell one trusted person what support you need"
       ]
     }
   }

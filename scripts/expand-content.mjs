@@ -142,7 +142,7 @@ function makeQuestions(types, locale) {
   return types.flatMap((type) =>
     Array.from({ length: 6 }, (_, index) => ({
       id: `${type.toLowerCase()}_${index + 1}`,
-      question: locale === "zh" ? `我在相关情境中经常表现出「${zhType(type)}」这一倾向。` : `In relevant situations, I often show a ${human(type)} pattern.`,
+      question: locale === "zh" ? `在最近的真实任务、关系或选择中，我经常表现出「${zhType(type)}」这一倾向。` : `In recent real tasks, relationships, or choices, I often show a ${human(type)} pattern.`,
       scoreKey: type,
     })),
   );
@@ -155,11 +155,11 @@ function result(type, locale) {
       title: name,
       summary: `你的主要结果指向${name}。这不是固定标签，而是帮助你理解当前偏好的观察角度。`,
       traits: ["偏好清晰", "模式稳定", "可被情境调整"],
-      strengths: ["能在合适环境中发挥明显优势", "容易形成可复用的方法", "对相关信号较敏感"],
+      strengths: ["能在匹配的任务或关系中发挥明显优势", "容易形成可复用的方法", "能较快捕捉影响表现的关键线索"],
       weaknesses: ["压力下可能过度使用同一种策略", "容易忽略相反视角", "需要避免把结果当成限制"],
       careers: ["复盘最近三次真实情境", "找到最常触发该模式的场景", "设计一个小实验"],
       relationships: ["向他人说明你的偏好，同时保留对方不同节奏的空间。"],
-      growthPlan: ["记录一周内的典型表现", "选择一个需要微调的行为", "用一次低风险场景练习新策略"],
+      growthPlan: ["记录一周内的典型表现", "选择一个需要微调的行为", "先在低压力任务里练习新的回应方式"],
     };
   }
   return {
@@ -170,7 +170,7 @@ function result(type, locale) {
     weaknesses: ["Under pressure, you may overuse one strategy", "Opposite perspectives can be easy to miss", "The result should guide you rather than limit you"],
     careers: ["Review three recent real situations", "Find where this pattern appears most often", "Design one small experiment"],
     relationships: ["Explain your preference clearly while leaving room for other people's pace and style."],
-    growthPlan: ["Track the pattern for one week", "Choose one behavior to adjust", "Practice the new move in a low-risk situation"],
+    growthPlan: ["Track the pattern for one week", "Choose one behavior to adjust", "Practice the new move in a low-pressure situation"],
   };
 }
 

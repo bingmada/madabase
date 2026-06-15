@@ -1,10 +1,10 @@
 {
   "title": "Work Values Test",
-  "description": "Answer 30 quick prompts to explore your work values pattern.",
+  "description": "Explore your work values pattern with practical, scenario-based questions.",
   "instructions": [
-    "Answer based on recent real behavior, not an ideal version of yourself.",
-    "Use the whole scale when a statement clearly fits or does not fit.",
-    "Your report highlights the strongest pattern and practical next steps."
+    "Answer from recent real behavior, not an ideal version of yourself.",
+    "If a statement reminds you of a concrete situation, it is usually more useful.",
+    "Use the result for reflection and communication, not as a diagnosis."
   ],
   "scale": [
     {
@@ -36,168 +36,168 @@
   "scaleQuestions": [
     {
       "id": "autonomy_1",
-      "question": "In relevant situations, I often show a Autonomy pattern.",
+      "question": "In recent real situations, I can see a clear Autonomy pattern in how I choose and act.",
       "scoreKey": "AUTONOMY"
     },
     {
       "id": "autonomy_2",
-      "question": "In relevant situations, I often show a Autonomy pattern.",
+      "question": "When pressure rises, I often rely on a Autonomy strategy instead of switching styles.",
       "scoreKey": "AUTONOMY"
     },
     {
       "id": "autonomy_3",
-      "question": "In relevant situations, I often show a Autonomy pattern.",
+      "question": "People who work with me would probably notice my Autonomy tendency.",
       "scoreKey": "AUTONOMY"
     },
     {
       "id": "autonomy_4",
-      "question": "In relevant situations, I often show a Autonomy pattern.",
+      "question": "If an environment blocks Autonomy for too long, my motivation drops.",
       "scoreKey": "AUTONOMY"
     },
     {
       "id": "autonomy_5",
-      "question": "In relevant situations, I often show a Autonomy pattern.",
+      "question": "During collaboration, I often bring Autonomy into the way I contribute.",
       "scoreKey": "AUTONOMY"
     },
     {
       "id": "autonomy_6",
-      "question": "In relevant situations, I often show a Autonomy pattern.",
+      "question": "Looking back over the last month, Autonomy describes a repeated behavior pattern for me.",
       "scoreKey": "AUTONOMY"
     },
     {
       "id": "impact_1",
-      "question": "In relevant situations, I often show a Impact pattern.",
+      "question": "In recent real situations, I can see a clear Impact pattern in how I choose and act.",
       "scoreKey": "IMPACT"
     },
     {
       "id": "impact_2",
-      "question": "In relevant situations, I often show a Impact pattern.",
+      "question": "When pressure rises, I often rely on a Impact strategy instead of switching styles.",
       "scoreKey": "IMPACT"
     },
     {
       "id": "impact_3",
-      "question": "In relevant situations, I often show a Impact pattern.",
+      "question": "People who work with me would probably notice my Impact tendency.",
       "scoreKey": "IMPACT"
     },
     {
       "id": "impact_4",
-      "question": "In relevant situations, I often show a Impact pattern.",
+      "question": "If an environment blocks Impact for too long, my motivation drops.",
       "scoreKey": "IMPACT"
     },
     {
       "id": "impact_5",
-      "question": "In relevant situations, I often show a Impact pattern.",
+      "question": "During collaboration, I often bring Impact into the way I contribute.",
       "scoreKey": "IMPACT"
     },
     {
       "id": "impact_6",
-      "question": "In relevant situations, I often show a Impact pattern.",
+      "question": "Looking back over the last month, Impact describes a repeated behavior pattern for me.",
       "scoreKey": "IMPACT"
     },
     {
       "id": "security_1",
-      "question": "In relevant situations, I often show a Security pattern.",
+      "question": "In recent real situations, I can see a clear Security pattern in how I choose and act.",
       "scoreKey": "SECURITY"
     },
     {
       "id": "security_2",
-      "question": "In relevant situations, I often show a Security pattern.",
+      "question": "When pressure rises, I often rely on a Security strategy instead of switching styles.",
       "scoreKey": "SECURITY"
     },
     {
       "id": "security_3",
-      "question": "In relevant situations, I often show a Security pattern.",
+      "question": "People who work with me would probably notice my Security tendency.",
       "scoreKey": "SECURITY"
     },
     {
       "id": "security_4",
-      "question": "In relevant situations, I often show a Security pattern.",
+      "question": "If an environment blocks Security for too long, my motivation drops.",
       "scoreKey": "SECURITY"
     },
     {
       "id": "security_5",
-      "question": "In relevant situations, I often show a Security pattern.",
+      "question": "During collaboration, I often bring Security into the way I contribute.",
       "scoreKey": "SECURITY"
     },
     {
       "id": "security_6",
-      "question": "In relevant situations, I often show a Security pattern.",
+      "question": "Looking back over the last month, Security describes a repeated behavior pattern for me.",
       "scoreKey": "SECURITY"
     },
     {
       "id": "mastery_1",
-      "question": "In relevant situations, I often show a Mastery pattern.",
+      "question": "In recent real situations, I can see a clear Mastery pattern in how I choose and act.",
       "scoreKey": "MASTERY"
     },
     {
       "id": "mastery_2",
-      "question": "In relevant situations, I often show a Mastery pattern.",
+      "question": "When pressure rises, I often rely on a Mastery strategy instead of switching styles.",
       "scoreKey": "MASTERY"
     },
     {
       "id": "mastery_3",
-      "question": "In relevant situations, I often show a Mastery pattern.",
+      "question": "People who work with me would probably notice my Mastery tendency.",
       "scoreKey": "MASTERY"
     },
     {
       "id": "mastery_4",
-      "question": "In relevant situations, I often show a Mastery pattern.",
+      "question": "If an environment blocks Mastery for too long, my motivation drops.",
       "scoreKey": "MASTERY"
     },
     {
       "id": "mastery_5",
-      "question": "In relevant situations, I often show a Mastery pattern.",
+      "question": "During collaboration, I often bring Mastery into the way I contribute.",
       "scoreKey": "MASTERY"
     },
     {
       "id": "mastery_6",
-      "question": "In relevant situations, I often show a Mastery pattern.",
+      "question": "Looking back over the last month, Mastery describes a repeated behavior pattern for me.",
       "scoreKey": "MASTERY"
     },
     {
       "id": "recognition_1",
-      "question": "In relevant situations, I often show a Recognition pattern.",
+      "question": "In recent real situations, I can see a clear Recognition pattern in how I choose and act.",
       "scoreKey": "RECOGNITION"
     },
     {
       "id": "recognition_2",
-      "question": "In relevant situations, I often show a Recognition pattern.",
+      "question": "When pressure rises, I often rely on a Recognition strategy instead of switching styles.",
       "scoreKey": "RECOGNITION"
     },
     {
       "id": "recognition_3",
-      "question": "In relevant situations, I often show a Recognition pattern.",
+      "question": "People who work with me would probably notice my Recognition tendency.",
       "scoreKey": "RECOGNITION"
     },
     {
       "id": "recognition_4",
-      "question": "In relevant situations, I often show a Recognition pattern.",
+      "question": "If an environment blocks Recognition for too long, my motivation drops.",
       "scoreKey": "RECOGNITION"
     },
     {
       "id": "recognition_5",
-      "question": "In relevant situations, I often show a Recognition pattern.",
+      "question": "During collaboration, I often bring Recognition into the way I contribute.",
       "scoreKey": "RECOGNITION"
     },
     {
       "id": "recognition_6",
-      "question": "In relevant situations, I often show a Recognition pattern.",
+      "question": "Looking back over the last month, Recognition describes a repeated behavior pattern for me.",
       "scoreKey": "RECOGNITION"
     }
   ],
   "results": {
     "AUTONOMY": {
       "title": "Autonomy",
-      "summary": "Your primary result points to a Autonomy pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Work Values Test, your result is Autonomy. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Autonomy",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Autonomy",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -205,12 +205,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Autonomy clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",
@@ -220,16 +220,16 @@
     },
     "IMPACT": {
       "title": "Impact",
-      "summary": "Your primary result points to a Impact pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Work Values Test, your result is Impact. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Impact",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Impact",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -237,12 +237,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Impact clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",
@@ -252,16 +252,16 @@
     },
     "SECURITY": {
       "title": "Security",
-      "summary": "Your primary result points to a Security pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Work Values Test, your result is Security. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Security",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Security",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -269,12 +269,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Security clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",
@@ -284,16 +284,16 @@
     },
     "MASTERY": {
       "title": "Mastery",
-      "summary": "Your primary result points to a Mastery pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Work Values Test, your result is Mastery. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Mastery",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Mastery",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -301,12 +301,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Mastery clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",
@@ -316,16 +316,16 @@
     },
     "RECOGNITION": {
       "title": "Recognition",
-      "summary": "Your primary result points to a Recognition pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Work Values Test, your result is Recognition. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Recognition",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Recognition",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -333,12 +333,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Recognition clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",

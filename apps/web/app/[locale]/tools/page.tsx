@@ -7,7 +7,7 @@ import { Header } from "@/components/Header";
 import { JsonLd, buildBreadcrumbSchema } from "@/components/JsonLd";
 import { PageViewTracker } from "@/components/PageViewTracker";
 import { ToolIcon } from "@/components/ToolIcon";
-import { isLocale, locales } from "@/lib/i18n";
+import { getCategoryLabel, isLocale, locales, toolCategoryLabels } from "@/lib/i18n";
 import { buildAbsoluteUrl, buildPageMetadata } from "@/lib/seo";
 import { toolRegistry } from "@/lib/tool-registry";
 import { loadToolContent } from "@/lib/tool-content";
@@ -95,7 +95,7 @@ export default async function ToolsPage({ params }: { params: Promise<{ locale: 
                   <ToolIcon component={tool.component} />
                 </span>
                 <div>
-                  <p className="code-font text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--text-soft)]">{tool.category}</p>
+                  <p className="text-[11px] font-semibold text-[var(--text-soft)]">{getCategoryLabel(tool.category, locale, toolCategoryLabels)}</p>
                   <h2 className="mt-1 text-lg font-bold text-[var(--text)]">{content?.h1[locale] || tool.slug}</h2>
                   <p className="mt-2 text-sm leading-6 text-[var(--text-muted)]">{content?.description[locale] || ""}</p>
                 </div>

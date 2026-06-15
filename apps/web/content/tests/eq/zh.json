@@ -1,15 +1,15 @@
 {
   "title": "情绪智力测试",
-  "description": "通过 24 个快速问题了解你的情绪智力模式。",
+  "description": "通过更贴近真实场景的问题，了解你的情绪智力模式。",
   "instructions": [
     "请根据最近真实行为作答，不要按理想中的自己选择。",
-    "当描述明显符合或不符合时，请大胆使用量表两端。",
-    "报告会突出你的最强模式和可执行的下一步建议。"
+    "如果某句话让你想到具体经历，通常说明它更有参考价值。",
+    "结果用于自我理解和沟通参考，不是诊断或定论。"
   ],
   "reportLabels": {
     "strengths": "优势",
     "weaknesses": "风险",
-    "careers": "适合方法",
+    "careers": "适合场景",
     "relationships": "关系提示",
     "growth": "成长计划"
   },
@@ -43,252 +43,252 @@
   "scaleQuestions": [
     {
       "id": "self_awareness_1",
-      "question": "我在相关情境中经常表现出「Self Awareness」这一倾向。",
+      "question": "情绪上来时，我通常能看见自己在「自我觉察」上的真实状态。",
       "scoreKey": "SELF_AWARENESS"
     },
     {
       "id": "self_awareness_2",
-      "question": "我在相关情境中经常表现出「Self Awareness」这一倾向。",
+      "question": "和别人沟通矛盾时，「自我觉察」会明显影响我的处理方式。",
       "scoreKey": "SELF_AWARENESS"
     },
     {
       "id": "self_awareness_3",
-      "question": "我在相关情境中经常表现出「Self Awareness」这一倾向。",
+      "question": "面对压力或误解，我常用「自我觉察」帮助自己稳住局面。",
       "scoreKey": "SELF_AWARENESS"
     },
     {
       "id": "self_awareness_4",
-      "question": "我在相关情境中经常表现出「Self Awareness」这一倾向。",
+      "question": "我能从对方的语气和表情里捕捉到与「自我觉察」有关的线索。",
       "scoreKey": "SELF_AWARENESS"
     },
     {
       "id": "self_awareness_5",
-      "question": "我在相关情境中经常表现出「Self Awareness」这一倾向。",
+      "question": "团队气氛紧张时，我会主动运用「自我觉察」让交流继续下去。",
       "scoreKey": "SELF_AWARENESS"
     },
     {
       "id": "self_awareness_6",
-      "question": "我在相关情境中经常表现出「Self Awareness」这一倾向。",
+      "question": "最近一次冲突里，我能看到自己使用了「自我觉察」能力。",
       "scoreKey": "SELF_AWARENESS"
     },
     {
       "id": "self_regulation_1",
-      "question": "我在相关情境中经常表现出「Self Regulation」这一倾向。",
+      "question": "情绪上来时，我通常能看见自己在「情绪调节」上的真实状态。",
       "scoreKey": "SELF_REGULATION"
     },
     {
       "id": "self_regulation_2",
-      "question": "我在相关情境中经常表现出「Self Regulation」这一倾向。",
+      "question": "和别人沟通矛盾时，「情绪调节」会明显影响我的处理方式。",
       "scoreKey": "SELF_REGULATION"
     },
     {
       "id": "self_regulation_3",
-      "question": "我在相关情境中经常表现出「Self Regulation」这一倾向。",
+      "question": "面对压力或误解，我常用「情绪调节」帮助自己稳住局面。",
       "scoreKey": "SELF_REGULATION"
     },
     {
       "id": "self_regulation_4",
-      "question": "我在相关情境中经常表现出「Self Regulation」这一倾向。",
+      "question": "我能从对方的语气和表情里捕捉到与「情绪调节」有关的线索。",
       "scoreKey": "SELF_REGULATION"
     },
     {
       "id": "self_regulation_5",
-      "question": "我在相关情境中经常表现出「Self Regulation」这一倾向。",
+      "question": "团队气氛紧张时，我会主动运用「情绪调节」让交流继续下去。",
       "scoreKey": "SELF_REGULATION"
     },
     {
       "id": "self_regulation_6",
-      "question": "我在相关情境中经常表现出「Self Regulation」这一倾向。",
+      "question": "最近一次冲突里，我能看到自己使用了「情绪调节」能力。",
       "scoreKey": "SELF_REGULATION"
     },
     {
       "id": "empathy_1",
-      "question": "我在相关情境中经常表现出「Empathy」这一倾向。",
+      "question": "情绪上来时，我通常能看见自己在「共情理解」上的真实状态。",
       "scoreKey": "EMPATHY"
     },
     {
       "id": "empathy_2",
-      "question": "我在相关情境中经常表现出「Empathy」这一倾向。",
+      "question": "和别人沟通矛盾时，「共情理解」会明显影响我的处理方式。",
       "scoreKey": "EMPATHY"
     },
     {
       "id": "empathy_3",
-      "question": "我在相关情境中经常表现出「Empathy」这一倾向。",
+      "question": "面对压力或误解，我常用「共情理解」帮助自己稳住局面。",
       "scoreKey": "EMPATHY"
     },
     {
       "id": "empathy_4",
-      "question": "我在相关情境中经常表现出「Empathy」这一倾向。",
+      "question": "我能从对方的语气和表情里捕捉到与「共情理解」有关的线索。",
       "scoreKey": "EMPATHY"
     },
     {
       "id": "empathy_5",
-      "question": "我在相关情境中经常表现出「Empathy」这一倾向。",
+      "question": "团队气氛紧张时，我会主动运用「共情理解」让交流继续下去。",
       "scoreKey": "EMPATHY"
     },
     {
       "id": "empathy_6",
-      "question": "我在相关情境中经常表现出「Empathy」这一倾向。",
+      "question": "最近一次冲突里，我能看到自己使用了「共情理解」能力。",
       "scoreKey": "EMPATHY"
     },
     {
       "id": "social_skill_1",
-      "question": "我在相关情境中经常表现出「Social Skill」这一倾向。",
+      "question": "情绪上来时，我通常能看见自己在「社交协调」上的真实状态。",
       "scoreKey": "SOCIAL_SKILL"
     },
     {
       "id": "social_skill_2",
-      "question": "我在相关情境中经常表现出「Social Skill」这一倾向。",
+      "question": "和别人沟通矛盾时，「社交协调」会明显影响我的处理方式。",
       "scoreKey": "SOCIAL_SKILL"
     },
     {
       "id": "social_skill_3",
-      "question": "我在相关情境中经常表现出「Social Skill」这一倾向。",
+      "question": "面对压力或误解，我常用「社交协调」帮助自己稳住局面。",
       "scoreKey": "SOCIAL_SKILL"
     },
     {
       "id": "social_skill_4",
-      "question": "我在相关情境中经常表现出「Social Skill」这一倾向。",
+      "question": "我能从对方的语气和表情里捕捉到与「社交协调」有关的线索。",
       "scoreKey": "SOCIAL_SKILL"
     },
     {
       "id": "social_skill_5",
-      "question": "我在相关情境中经常表现出「Social Skill」这一倾向。",
+      "question": "团队气氛紧张时，我会主动运用「社交协调」让交流继续下去。",
       "scoreKey": "SOCIAL_SKILL"
     },
     {
       "id": "social_skill_6",
-      "question": "我在相关情境中经常表现出「Social Skill」这一倾向。",
+      "question": "最近一次冲突里，我能看到自己使用了「社交协调」能力。",
       "scoreKey": "SOCIAL_SKILL"
     }
   ],
   "results": {
     "SELF_AWARENESS": {
-      "title": "Self Awareness",
-      "summary": "你的主要结果指向Self Awareness。这不是固定标签，而是帮助你理解当前偏好的观察角度。",
+      "title": "自我觉察",
+      "summary": "在这份情绪智力测试中，你的结果是「自我觉察」。这表示你的作答更集中在「自我觉察」所代表的行为、需求或反应方式。",
       "traits": [
-        "偏好清晰",
-        "模式稳定",
-        "可被情境调整"
+        "重视自我觉察",
+        "模式较稳定",
+        "会受环境影响"
       ],
       "strengths": [
-        "能在合适环境中发挥明显优势",
-        "容易形成可复用的方法",
-        "对相关信号较敏感"
+        "在需要自我觉察的任务里更容易进入状态",
+        "容易形成可复用的处理方式",
+        "能较快捕捉到影响表现的关键线索"
       ],
       "weaknesses": [
-        "压力下可能过度使用同一种策略",
+        "压力下可能过度依赖单一策略",
         "容易忽略相反视角",
-        "需要避免把结果当成限制"
+        "需要避免把测评结果当成限制"
       ],
       "careers": [
-        "复盘最近三次真实情境",
-        "找到最常触发该模式的场景",
-        "设计一个小实验"
+        "找出最常触发这种模式的具体任务",
+        "选择更匹配该倾向的工作安排",
+        "用一次小实验验证调整方向"
       ],
       "relationships": [
-        "向他人说明你的偏好，同时保留对方不同节奏的空间。"
+        "向他人说明你对「自我觉察」的需求，同时保留对方不同节奏的空间。"
       ],
       "growthPlan": [
         "记录一周内的典型表现",
         "选择一个需要微调的行为",
-        "用一次低风险场景练习新策略"
+        "在低压力场景练习新的回应方式"
       ]
     },
     "SELF_REGULATION": {
-      "title": "Self Regulation",
-      "summary": "你的主要结果指向Self Regulation。这不是固定标签，而是帮助你理解当前偏好的观察角度。",
+      "title": "情绪调节",
+      "summary": "在这份情绪智力测试中，你的结果是「情绪调节」。这表示你的作答更集中在「情绪调节」所代表的行为、需求或反应方式。",
       "traits": [
-        "偏好清晰",
-        "模式稳定",
-        "可被情境调整"
+        "重视情绪调节",
+        "模式较稳定",
+        "会受环境影响"
       ],
       "strengths": [
-        "能在合适环境中发挥明显优势",
-        "容易形成可复用的方法",
-        "对相关信号较敏感"
+        "在需要情绪调节的任务里更容易进入状态",
+        "容易形成可复用的处理方式",
+        "能较快捕捉到影响表现的关键线索"
       ],
       "weaknesses": [
-        "压力下可能过度使用同一种策略",
+        "压力下可能过度依赖单一策略",
         "容易忽略相反视角",
-        "需要避免把结果当成限制"
+        "需要避免把测评结果当成限制"
       ],
       "careers": [
-        "复盘最近三次真实情境",
-        "找到最常触发该模式的场景",
-        "设计一个小实验"
+        "找出最常触发这种模式的具体任务",
+        "选择更匹配该倾向的工作安排",
+        "用一次小实验验证调整方向"
       ],
       "relationships": [
-        "向他人说明你的偏好，同时保留对方不同节奏的空间。"
+        "向他人说明你对「情绪调节」的需求，同时保留对方不同节奏的空间。"
       ],
       "growthPlan": [
         "记录一周内的典型表现",
         "选择一个需要微调的行为",
-        "用一次低风险场景练习新策略"
+        "在低压力场景练习新的回应方式"
       ]
     },
     "EMPATHY": {
-      "title": "Empathy",
-      "summary": "你的主要结果指向Empathy。这不是固定标签，而是帮助你理解当前偏好的观察角度。",
+      "title": "共情理解",
+      "summary": "在这份情绪智力测试中，你的结果是「共情理解」。这表示你的作答更集中在「共情理解」所代表的行为、需求或反应方式。",
       "traits": [
-        "偏好清晰",
-        "模式稳定",
-        "可被情境调整"
+        "重视共情理解",
+        "模式较稳定",
+        "会受环境影响"
       ],
       "strengths": [
-        "能在合适环境中发挥明显优势",
-        "容易形成可复用的方法",
-        "对相关信号较敏感"
+        "在需要共情理解的任务里更容易进入状态",
+        "容易形成可复用的处理方式",
+        "能较快捕捉到影响表现的关键线索"
       ],
       "weaknesses": [
-        "压力下可能过度使用同一种策略",
+        "压力下可能过度依赖单一策略",
         "容易忽略相反视角",
-        "需要避免把结果当成限制"
+        "需要避免把测评结果当成限制"
       ],
       "careers": [
-        "复盘最近三次真实情境",
-        "找到最常触发该模式的场景",
-        "设计一个小实验"
+        "找出最常触发这种模式的具体任务",
+        "选择更匹配该倾向的工作安排",
+        "用一次小实验验证调整方向"
       ],
       "relationships": [
-        "向他人说明你的偏好，同时保留对方不同节奏的空间。"
+        "向他人说明你对「共情理解」的需求，同时保留对方不同节奏的空间。"
       ],
       "growthPlan": [
         "记录一周内的典型表现",
         "选择一个需要微调的行为",
-        "用一次低风险场景练习新策略"
+        "在低压力场景练习新的回应方式"
       ]
     },
     "SOCIAL_SKILL": {
-      "title": "Social Skill",
-      "summary": "你的主要结果指向Social Skill。这不是固定标签，而是帮助你理解当前偏好的观察角度。",
+      "title": "社交协调",
+      "summary": "在这份情绪智力测试中，你的结果是「社交协调」。这表示你的作答更集中在「社交协调」所代表的行为、需求或反应方式。",
       "traits": [
-        "偏好清晰",
-        "模式稳定",
-        "可被情境调整"
+        "重视社交协调",
+        "模式较稳定",
+        "会受环境影响"
       ],
       "strengths": [
-        "能在合适环境中发挥明显优势",
-        "容易形成可复用的方法",
-        "对相关信号较敏感"
+        "在需要社交协调的任务里更容易进入状态",
+        "容易形成可复用的处理方式",
+        "能较快捕捉到影响表现的关键线索"
       ],
       "weaknesses": [
-        "压力下可能过度使用同一种策略",
+        "压力下可能过度依赖单一策略",
         "容易忽略相反视角",
-        "需要避免把结果当成限制"
+        "需要避免把测评结果当成限制"
       ],
       "careers": [
-        "复盘最近三次真实情境",
-        "找到最常触发该模式的场景",
-        "设计一个小实验"
+        "找出最常触发这种模式的具体任务",
+        "选择更匹配该倾向的工作安排",
+        "用一次小实验验证调整方向"
       ],
       "relationships": [
-        "向他人说明你的偏好，同时保留对方不同节奏的空间。"
+        "向他人说明你对「社交协调」的需求，同时保留对方不同节奏的空间。"
       ],
       "growthPlan": [
         "记录一周内的典型表现",
         "选择一个需要微调的行为",
-        "用一次低风险场景练习新策略"
+        "在低压力场景练习新的回应方式"
       ]
     }
   }

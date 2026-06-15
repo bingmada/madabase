@@ -1,10 +1,10 @@
 {
   "title": "Emotional Intelligence Test",
-  "description": "Answer 24 quick prompts to explore your emotional intelligence pattern.",
+  "description": "Explore your emotional intelligence pattern with practical, scenario-based questions.",
   "instructions": [
-    "Answer based on recent real behavior, not an ideal version of yourself.",
-    "Use the whole scale when a statement clearly fits or does not fit.",
-    "Your report highlights the strongest pattern and practical next steps."
+    "Answer from recent real behavior, not an ideal version of yourself.",
+    "If a statement reminds you of a concrete situation, it is usually more useful.",
+    "Use the result for reflection and communication, not as a diagnosis."
   ],
   "scale": [
     {
@@ -36,138 +36,138 @@
   "scaleQuestions": [
     {
       "id": "self_awareness_1",
-      "question": "In relevant situations, I often show a Self Awareness pattern.",
+      "question": "In recent real situations, I can see a clear Self Awareness pattern in how I choose and act.",
       "scoreKey": "SELF_AWARENESS"
     },
     {
       "id": "self_awareness_2",
-      "question": "In relevant situations, I often show a Self Awareness pattern.",
+      "question": "When pressure rises, I often rely on a Self Awareness strategy instead of switching styles.",
       "scoreKey": "SELF_AWARENESS"
     },
     {
       "id": "self_awareness_3",
-      "question": "In relevant situations, I often show a Self Awareness pattern.",
+      "question": "People who work with me would probably notice my Self Awareness tendency.",
       "scoreKey": "SELF_AWARENESS"
     },
     {
       "id": "self_awareness_4",
-      "question": "In relevant situations, I often show a Self Awareness pattern.",
+      "question": "If an environment blocks Self Awareness for too long, my motivation drops.",
       "scoreKey": "SELF_AWARENESS"
     },
     {
       "id": "self_awareness_5",
-      "question": "In relevant situations, I often show a Self Awareness pattern.",
+      "question": "During collaboration, I often bring Self Awareness into the way I contribute.",
       "scoreKey": "SELF_AWARENESS"
     },
     {
       "id": "self_awareness_6",
-      "question": "In relevant situations, I often show a Self Awareness pattern.",
+      "question": "Looking back over the last month, Self Awareness describes a repeated behavior pattern for me.",
       "scoreKey": "SELF_AWARENESS"
     },
     {
       "id": "self_regulation_1",
-      "question": "In relevant situations, I often show a Self Regulation pattern.",
+      "question": "In recent real situations, I can see a clear Self Regulation pattern in how I choose and act.",
       "scoreKey": "SELF_REGULATION"
     },
     {
       "id": "self_regulation_2",
-      "question": "In relevant situations, I often show a Self Regulation pattern.",
+      "question": "When pressure rises, I often rely on a Self Regulation strategy instead of switching styles.",
       "scoreKey": "SELF_REGULATION"
     },
     {
       "id": "self_regulation_3",
-      "question": "In relevant situations, I often show a Self Regulation pattern.",
+      "question": "People who work with me would probably notice my Self Regulation tendency.",
       "scoreKey": "SELF_REGULATION"
     },
     {
       "id": "self_regulation_4",
-      "question": "In relevant situations, I often show a Self Regulation pattern.",
+      "question": "If an environment blocks Self Regulation for too long, my motivation drops.",
       "scoreKey": "SELF_REGULATION"
     },
     {
       "id": "self_regulation_5",
-      "question": "In relevant situations, I often show a Self Regulation pattern.",
+      "question": "During collaboration, I often bring Self Regulation into the way I contribute.",
       "scoreKey": "SELF_REGULATION"
     },
     {
       "id": "self_regulation_6",
-      "question": "In relevant situations, I often show a Self Regulation pattern.",
+      "question": "Looking back over the last month, Self Regulation describes a repeated behavior pattern for me.",
       "scoreKey": "SELF_REGULATION"
     },
     {
       "id": "empathy_1",
-      "question": "In relevant situations, I often show a Empathy pattern.",
+      "question": "In recent real situations, I can see a clear Empathy pattern in how I choose and act.",
       "scoreKey": "EMPATHY"
     },
     {
       "id": "empathy_2",
-      "question": "In relevant situations, I often show a Empathy pattern.",
+      "question": "When pressure rises, I often rely on a Empathy strategy instead of switching styles.",
       "scoreKey": "EMPATHY"
     },
     {
       "id": "empathy_3",
-      "question": "In relevant situations, I often show a Empathy pattern.",
+      "question": "People who work with me would probably notice my Empathy tendency.",
       "scoreKey": "EMPATHY"
     },
     {
       "id": "empathy_4",
-      "question": "In relevant situations, I often show a Empathy pattern.",
+      "question": "If an environment blocks Empathy for too long, my motivation drops.",
       "scoreKey": "EMPATHY"
     },
     {
       "id": "empathy_5",
-      "question": "In relevant situations, I often show a Empathy pattern.",
+      "question": "During collaboration, I often bring Empathy into the way I contribute.",
       "scoreKey": "EMPATHY"
     },
     {
       "id": "empathy_6",
-      "question": "In relevant situations, I often show a Empathy pattern.",
+      "question": "Looking back over the last month, Empathy describes a repeated behavior pattern for me.",
       "scoreKey": "EMPATHY"
     },
     {
       "id": "social_skill_1",
-      "question": "In relevant situations, I often show a Social Skill pattern.",
+      "question": "In recent real situations, I can see a clear Social Skill pattern in how I choose and act.",
       "scoreKey": "SOCIAL_SKILL"
     },
     {
       "id": "social_skill_2",
-      "question": "In relevant situations, I often show a Social Skill pattern.",
+      "question": "When pressure rises, I often rely on a Social Skill strategy instead of switching styles.",
       "scoreKey": "SOCIAL_SKILL"
     },
     {
       "id": "social_skill_3",
-      "question": "In relevant situations, I often show a Social Skill pattern.",
+      "question": "People who work with me would probably notice my Social Skill tendency.",
       "scoreKey": "SOCIAL_SKILL"
     },
     {
       "id": "social_skill_4",
-      "question": "In relevant situations, I often show a Social Skill pattern.",
+      "question": "If an environment blocks Social Skill for too long, my motivation drops.",
       "scoreKey": "SOCIAL_SKILL"
     },
     {
       "id": "social_skill_5",
-      "question": "In relevant situations, I often show a Social Skill pattern.",
+      "question": "During collaboration, I often bring Social Skill into the way I contribute.",
       "scoreKey": "SOCIAL_SKILL"
     },
     {
       "id": "social_skill_6",
-      "question": "In relevant situations, I often show a Social Skill pattern.",
+      "question": "Looking back over the last month, Social Skill describes a repeated behavior pattern for me.",
       "scoreKey": "SOCIAL_SKILL"
     }
   ],
   "results": {
     "SELF_AWARENESS": {
       "title": "Self Awareness",
-      "summary": "Your primary result points to a Self Awareness pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Emotional Intelligence Test, your result is Self Awareness. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Self Awareness",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Self Awareness",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -175,12 +175,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Self Awareness clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",
@@ -190,16 +190,16 @@
     },
     "SELF_REGULATION": {
       "title": "Self Regulation",
-      "summary": "Your primary result points to a Self Regulation pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Emotional Intelligence Test, your result is Self Regulation. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Self Regulation",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Self Regulation",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -207,12 +207,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Self Regulation clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",
@@ -222,16 +222,16 @@
     },
     "EMPATHY": {
       "title": "Empathy",
-      "summary": "Your primary result points to a Empathy pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Emotional Intelligence Test, your result is Empathy. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Empathy",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Empathy",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -239,12 +239,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Empathy clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",
@@ -254,16 +254,16 @@
     },
     "SOCIAL_SKILL": {
       "title": "Social Skill",
-      "summary": "Your primary result points to a Social Skill pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Emotional Intelligence Test, your result is Social Skill. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Social Skill",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Social Skill",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -271,12 +271,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Social Skill clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",

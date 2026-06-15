@@ -1,10 +1,10 @@
 {
   "title": "Enneagram Test",
-  "description": "Answer 54 quick prompts to explore your enneagram pattern.",
+  "description": "Explore your enneagram pattern with practical, scenario-based questions.",
   "instructions": [
-    "Answer based on recent real behavior, not an ideal version of yourself.",
-    "Use the whole scale when a statement clearly fits or does not fit.",
-    "Your report highlights the strongest pattern and practical next steps."
+    "Answer from recent real behavior, not an ideal version of yourself.",
+    "If a statement reminds you of a concrete situation, it is usually more useful.",
+    "Use the result for reflection and communication, not as a diagnosis."
   ],
   "scale": [
     {
@@ -36,288 +36,288 @@
   "scaleQuestions": [
     {
       "id": "reformer_1",
-      "question": "In relevant situations, I often show a Reformer pattern.",
+      "question": "In recent real situations, I can see a clear Reformer pattern in how I choose and act.",
       "scoreKey": "REFORMER"
     },
     {
       "id": "reformer_2",
-      "question": "In relevant situations, I often show a Reformer pattern.",
+      "question": "When pressure rises, I often rely on a Reformer strategy instead of switching styles.",
       "scoreKey": "REFORMER"
     },
     {
       "id": "reformer_3",
-      "question": "In relevant situations, I often show a Reformer pattern.",
+      "question": "People who work with me would probably notice my Reformer tendency.",
       "scoreKey": "REFORMER"
     },
     {
       "id": "reformer_4",
-      "question": "In relevant situations, I often show a Reformer pattern.",
+      "question": "If an environment blocks Reformer for too long, my motivation drops.",
       "scoreKey": "REFORMER"
     },
     {
       "id": "reformer_5",
-      "question": "In relevant situations, I often show a Reformer pattern.",
+      "question": "During collaboration, I often bring Reformer into the way I contribute.",
       "scoreKey": "REFORMER"
     },
     {
       "id": "reformer_6",
-      "question": "In relevant situations, I often show a Reformer pattern.",
+      "question": "Looking back over the last month, Reformer describes a repeated behavior pattern for me.",
       "scoreKey": "REFORMER"
     },
     {
       "id": "helper_1",
-      "question": "In relevant situations, I often show a Helper pattern.",
+      "question": "In recent real situations, I can see a clear Helper pattern in how I choose and act.",
       "scoreKey": "HELPER"
     },
     {
       "id": "helper_2",
-      "question": "In relevant situations, I often show a Helper pattern.",
+      "question": "When pressure rises, I often rely on a Helper strategy instead of switching styles.",
       "scoreKey": "HELPER"
     },
     {
       "id": "helper_3",
-      "question": "In relevant situations, I often show a Helper pattern.",
+      "question": "People who work with me would probably notice my Helper tendency.",
       "scoreKey": "HELPER"
     },
     {
       "id": "helper_4",
-      "question": "In relevant situations, I often show a Helper pattern.",
+      "question": "If an environment blocks Helper for too long, my motivation drops.",
       "scoreKey": "HELPER"
     },
     {
       "id": "helper_5",
-      "question": "In relevant situations, I often show a Helper pattern.",
+      "question": "During collaboration, I often bring Helper into the way I contribute.",
       "scoreKey": "HELPER"
     },
     {
       "id": "helper_6",
-      "question": "In relevant situations, I often show a Helper pattern.",
+      "question": "Looking back over the last month, Helper describes a repeated behavior pattern for me.",
       "scoreKey": "HELPER"
     },
     {
       "id": "achiever_1",
-      "question": "In relevant situations, I often show a Achiever pattern.",
+      "question": "In recent real situations, I can see a clear Achiever pattern in how I choose and act.",
       "scoreKey": "ACHIEVER"
     },
     {
       "id": "achiever_2",
-      "question": "In relevant situations, I often show a Achiever pattern.",
+      "question": "When pressure rises, I often rely on a Achiever strategy instead of switching styles.",
       "scoreKey": "ACHIEVER"
     },
     {
       "id": "achiever_3",
-      "question": "In relevant situations, I often show a Achiever pattern.",
+      "question": "People who work with me would probably notice my Achiever tendency.",
       "scoreKey": "ACHIEVER"
     },
     {
       "id": "achiever_4",
-      "question": "In relevant situations, I often show a Achiever pattern.",
+      "question": "If an environment blocks Achiever for too long, my motivation drops.",
       "scoreKey": "ACHIEVER"
     },
     {
       "id": "achiever_5",
-      "question": "In relevant situations, I often show a Achiever pattern.",
+      "question": "During collaboration, I often bring Achiever into the way I contribute.",
       "scoreKey": "ACHIEVER"
     },
     {
       "id": "achiever_6",
-      "question": "In relevant situations, I often show a Achiever pattern.",
+      "question": "Looking back over the last month, Achiever describes a repeated behavior pattern for me.",
       "scoreKey": "ACHIEVER"
     },
     {
       "id": "individualist_1",
-      "question": "In relevant situations, I often show a Individualist pattern.",
+      "question": "In recent real situations, I can see a clear Individualist pattern in how I choose and act.",
       "scoreKey": "INDIVIDUALIST"
     },
     {
       "id": "individualist_2",
-      "question": "In relevant situations, I often show a Individualist pattern.",
+      "question": "When pressure rises, I often rely on a Individualist strategy instead of switching styles.",
       "scoreKey": "INDIVIDUALIST"
     },
     {
       "id": "individualist_3",
-      "question": "In relevant situations, I often show a Individualist pattern.",
+      "question": "People who work with me would probably notice my Individualist tendency.",
       "scoreKey": "INDIVIDUALIST"
     },
     {
       "id": "individualist_4",
-      "question": "In relevant situations, I often show a Individualist pattern.",
+      "question": "If an environment blocks Individualist for too long, my motivation drops.",
       "scoreKey": "INDIVIDUALIST"
     },
     {
       "id": "individualist_5",
-      "question": "In relevant situations, I often show a Individualist pattern.",
+      "question": "During collaboration, I often bring Individualist into the way I contribute.",
       "scoreKey": "INDIVIDUALIST"
     },
     {
       "id": "individualist_6",
-      "question": "In relevant situations, I often show a Individualist pattern.",
+      "question": "Looking back over the last month, Individualist describes a repeated behavior pattern for me.",
       "scoreKey": "INDIVIDUALIST"
     },
     {
       "id": "investigator_1",
-      "question": "In relevant situations, I often show a Investigator pattern.",
+      "question": "In recent real situations, I can see a clear Investigator pattern in how I choose and act.",
       "scoreKey": "INVESTIGATOR"
     },
     {
       "id": "investigator_2",
-      "question": "In relevant situations, I often show a Investigator pattern.",
+      "question": "When pressure rises, I often rely on a Investigator strategy instead of switching styles.",
       "scoreKey": "INVESTIGATOR"
     },
     {
       "id": "investigator_3",
-      "question": "In relevant situations, I often show a Investigator pattern.",
+      "question": "People who work with me would probably notice my Investigator tendency.",
       "scoreKey": "INVESTIGATOR"
     },
     {
       "id": "investigator_4",
-      "question": "In relevant situations, I often show a Investigator pattern.",
+      "question": "If an environment blocks Investigator for too long, my motivation drops.",
       "scoreKey": "INVESTIGATOR"
     },
     {
       "id": "investigator_5",
-      "question": "In relevant situations, I often show a Investigator pattern.",
+      "question": "During collaboration, I often bring Investigator into the way I contribute.",
       "scoreKey": "INVESTIGATOR"
     },
     {
       "id": "investigator_6",
-      "question": "In relevant situations, I often show a Investigator pattern.",
+      "question": "Looking back over the last month, Investigator describes a repeated behavior pattern for me.",
       "scoreKey": "INVESTIGATOR"
     },
     {
       "id": "loyalist_1",
-      "question": "In relevant situations, I often show a Loyalist pattern.",
+      "question": "In recent real situations, I can see a clear Loyalist pattern in how I choose and act.",
       "scoreKey": "LOYALIST"
     },
     {
       "id": "loyalist_2",
-      "question": "In relevant situations, I often show a Loyalist pattern.",
+      "question": "When pressure rises, I often rely on a Loyalist strategy instead of switching styles.",
       "scoreKey": "LOYALIST"
     },
     {
       "id": "loyalist_3",
-      "question": "In relevant situations, I often show a Loyalist pattern.",
+      "question": "People who work with me would probably notice my Loyalist tendency.",
       "scoreKey": "LOYALIST"
     },
     {
       "id": "loyalist_4",
-      "question": "In relevant situations, I often show a Loyalist pattern.",
+      "question": "If an environment blocks Loyalist for too long, my motivation drops.",
       "scoreKey": "LOYALIST"
     },
     {
       "id": "loyalist_5",
-      "question": "In relevant situations, I often show a Loyalist pattern.",
+      "question": "During collaboration, I often bring Loyalist into the way I contribute.",
       "scoreKey": "LOYALIST"
     },
     {
       "id": "loyalist_6",
-      "question": "In relevant situations, I often show a Loyalist pattern.",
+      "question": "Looking back over the last month, Loyalist describes a repeated behavior pattern for me.",
       "scoreKey": "LOYALIST"
     },
     {
       "id": "enthusiast_1",
-      "question": "In relevant situations, I often show a Enthusiast pattern.",
+      "question": "In recent real situations, I can see a clear Enthusiast pattern in how I choose and act.",
       "scoreKey": "ENTHUSIAST"
     },
     {
       "id": "enthusiast_2",
-      "question": "In relevant situations, I often show a Enthusiast pattern.",
+      "question": "When pressure rises, I often rely on a Enthusiast strategy instead of switching styles.",
       "scoreKey": "ENTHUSIAST"
     },
     {
       "id": "enthusiast_3",
-      "question": "In relevant situations, I often show a Enthusiast pattern.",
+      "question": "People who work with me would probably notice my Enthusiast tendency.",
       "scoreKey": "ENTHUSIAST"
     },
     {
       "id": "enthusiast_4",
-      "question": "In relevant situations, I often show a Enthusiast pattern.",
+      "question": "If an environment blocks Enthusiast for too long, my motivation drops.",
       "scoreKey": "ENTHUSIAST"
     },
     {
       "id": "enthusiast_5",
-      "question": "In relevant situations, I often show a Enthusiast pattern.",
+      "question": "During collaboration, I often bring Enthusiast into the way I contribute.",
       "scoreKey": "ENTHUSIAST"
     },
     {
       "id": "enthusiast_6",
-      "question": "In relevant situations, I often show a Enthusiast pattern.",
+      "question": "Looking back over the last month, Enthusiast describes a repeated behavior pattern for me.",
       "scoreKey": "ENTHUSIAST"
     },
     {
       "id": "challenger_1",
-      "question": "In relevant situations, I often show a Challenger pattern.",
+      "question": "In recent real situations, I can see a clear Challenger pattern in how I choose and act.",
       "scoreKey": "CHALLENGER"
     },
     {
       "id": "challenger_2",
-      "question": "In relevant situations, I often show a Challenger pattern.",
+      "question": "When pressure rises, I often rely on a Challenger strategy instead of switching styles.",
       "scoreKey": "CHALLENGER"
     },
     {
       "id": "challenger_3",
-      "question": "In relevant situations, I often show a Challenger pattern.",
+      "question": "People who work with me would probably notice my Challenger tendency.",
       "scoreKey": "CHALLENGER"
     },
     {
       "id": "challenger_4",
-      "question": "In relevant situations, I often show a Challenger pattern.",
+      "question": "If an environment blocks Challenger for too long, my motivation drops.",
       "scoreKey": "CHALLENGER"
     },
     {
       "id": "challenger_5",
-      "question": "In relevant situations, I often show a Challenger pattern.",
+      "question": "During collaboration, I often bring Challenger into the way I contribute.",
       "scoreKey": "CHALLENGER"
     },
     {
       "id": "challenger_6",
-      "question": "In relevant situations, I often show a Challenger pattern.",
+      "question": "Looking back over the last month, Challenger describes a repeated behavior pattern for me.",
       "scoreKey": "CHALLENGER"
     },
     {
       "id": "peacemaker_1",
-      "question": "In relevant situations, I often show a Peacemaker pattern.",
+      "question": "In recent real situations, I can see a clear Peacemaker pattern in how I choose and act.",
       "scoreKey": "PEACEMAKER"
     },
     {
       "id": "peacemaker_2",
-      "question": "In relevant situations, I often show a Peacemaker pattern.",
+      "question": "When pressure rises, I often rely on a Peacemaker strategy instead of switching styles.",
       "scoreKey": "PEACEMAKER"
     },
     {
       "id": "peacemaker_3",
-      "question": "In relevant situations, I often show a Peacemaker pattern.",
+      "question": "People who work with me would probably notice my Peacemaker tendency.",
       "scoreKey": "PEACEMAKER"
     },
     {
       "id": "peacemaker_4",
-      "question": "In relevant situations, I often show a Peacemaker pattern.",
+      "question": "If an environment blocks Peacemaker for too long, my motivation drops.",
       "scoreKey": "PEACEMAKER"
     },
     {
       "id": "peacemaker_5",
-      "question": "In relevant situations, I often show a Peacemaker pattern.",
+      "question": "During collaboration, I often bring Peacemaker into the way I contribute.",
       "scoreKey": "PEACEMAKER"
     },
     {
       "id": "peacemaker_6",
-      "question": "In relevant situations, I often show a Peacemaker pattern.",
+      "question": "Looking back over the last month, Peacemaker describes a repeated behavior pattern for me.",
       "scoreKey": "PEACEMAKER"
     }
   ],
   "results": {
     "REFORMER": {
       "title": "Reformer",
-      "summary": "Your primary result points to a Reformer pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Enneagram Test, your result is Reformer. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Reformer",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Reformer",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -325,12 +325,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Reformer clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",
@@ -340,16 +340,16 @@
     },
     "HELPER": {
       "title": "Helper",
-      "summary": "Your primary result points to a Helper pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Enneagram Test, your result is Helper. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Helper",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Helper",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -357,12 +357,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Helper clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",
@@ -372,16 +372,16 @@
     },
     "ACHIEVER": {
       "title": "Achiever",
-      "summary": "Your primary result points to a Achiever pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Enneagram Test, your result is Achiever. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Achiever",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Achiever",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -389,12 +389,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Achiever clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",
@@ -404,16 +404,16 @@
     },
     "INDIVIDUALIST": {
       "title": "Individualist",
-      "summary": "Your primary result points to a Individualist pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Enneagram Test, your result is Individualist. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Individualist",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Individualist",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -421,12 +421,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Individualist clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",
@@ -436,16 +436,16 @@
     },
     "INVESTIGATOR": {
       "title": "Investigator",
-      "summary": "Your primary result points to a Investigator pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Enneagram Test, your result is Investigator. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Investigator",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Investigator",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -453,12 +453,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Investigator clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",
@@ -468,16 +468,16 @@
     },
     "LOYALIST": {
       "title": "Loyalist",
-      "summary": "Your primary result points to a Loyalist pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Enneagram Test, your result is Loyalist. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Loyalist",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Loyalist",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -485,12 +485,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Loyalist clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",
@@ -500,16 +500,16 @@
     },
     "ENTHUSIAST": {
       "title": "Enthusiast",
-      "summary": "Your primary result points to a Enthusiast pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Enneagram Test, your result is Enthusiast. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Enthusiast",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Enthusiast",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -517,12 +517,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Enthusiast clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",
@@ -532,16 +532,16 @@
     },
     "CHALLENGER": {
       "title": "Challenger",
-      "summary": "Your primary result points to a Challenger pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Enneagram Test, your result is Challenger. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Challenger",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Challenger",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -549,12 +549,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Challenger clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",
@@ -564,16 +564,16 @@
     },
     "PEACEMAKER": {
       "title": "Peacemaker",
-      "summary": "Your primary result points to a Peacemaker pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Enneagram Test, your result is Peacemaker. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Peacemaker",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Peacemaker",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -581,12 +581,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Peacemaker clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",

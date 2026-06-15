@@ -2,6 +2,7 @@
 
 import QRCode from "qrcode";
 import { useEffect, useMemo, useState } from "react";
+import type { Locale } from "@/lib/i18n";
 import { fireAndForgetToolExecution } from "@/lib/tool-usage-client";
 import { CopyButton, ResetButton, StatusMessage, ToolButton, ToolInput, ToolPanel, ToolTextarea } from "./ToolPrimitives";
 
@@ -190,18 +191,208 @@ function parseUrl(input: string) {
   );
 }
 
+function parseLooseFields(value: string) {
+  return Object.fromEntries(
+    value
+      .split(/\n|,/)
+      .map((line) => {
+        const [key = "", ...rest] = line.split(/[:=]/);
+        return [key.trim().toLowerCase(), rest.join(":").trim()];
+      })
+      .filter(([key, item]) => key && item),
+  );
+}
+
+function fieldNumber(fields: Record<string, string>, keys: string[], fallback = 0) {
+  const key = keys.find((item) => fields[item] !== undefined);
+  if (!key) return fallback;
+  const value = Number(fields[key].replace(/[^\d.-]/g, ""));
+  return Number.isFinite(value) ? value : fallback;
+}
+
+function money(value: number) {
+  return new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 }).format(value);
+}
+
+function generateEnglishNames(input: string, locale: Locale = "en") {
+  const fields = parseLooseFields(input);
+  const style = `${fields.style ?? fields["风格"] ?? "classic"}`.toLowerCase();
+  const initial = `${fields.initial ?? fields["首字母"] ?? ""}`.trim().charAt(0).toUpperCase();
+  const gender = `${fields.gender ?? fields["性别"] ?? "neutral"}`.toLowerCase();
+  const names = [
+    { name: "Alex", gender: "neutral", style: "modern", meaning: "defender" },
+    { name: "Avery", gender: "neutral", style: "modern", meaning: "wise" },
+    { name: "Ethan", gender: "male", style: "classic", meaning: "strong" },
+    { name: "Lucas", gender: "male", style: "classic", meaning: "light" },
+    { name: "Noah", gender: "male", style: "gentle", meaning: "rest" },
+    { name: "Leo", gender: "male", style: "short", meaning: "lion" },
+    { name: "Emma", gender: "female", style: "classic", meaning: "whole" },
+    { name: "Olivia", gender: "female", style: "elegant", meaning: "olive tree" },
+    { name: "Mia", gender: "female", style: "short", meaning: "beloved" },
+    { name: "Clara", gender: "female", style: "elegant", meaning: "bright" },
+    { name: "Iris", gender: "female", style: "artistic", meaning: "rainbow" },
+    { name: "Rowan", gender: "neutral", style: "artistic", meaning: "tree of protection" },
+  ];
+  const filtered = names.filter((item) => {
+    const genderOk = gender.includes("neutral") || gender.includes("不限") || item.gender === "neutral" || gender.includes(item.gender) || (gender.includes("男") && item.gender === "male") || (gender.includes("女") && item.gender === "female");
+    const styleOk = style === "classic" ? item.style === "classic" : item.style.includes(style) || style.includes(item.style) || item.style === "classic";
+    const initialOk = !initial || item.name.startsWith(initial);
+    return genderOk && styleOk && initialOk;
+  });
+  const picked = (filtered.length ? filtered : names).slice(0, 8);
+  return picked.map((item, index) => `${index + 1}. ${item.name} - ${locale === "zh" ? "含义" : "meaning"}: ${item.meaning}; ${locale === "zh" ? "风格" : "style"}: ${item.style}`).join("\n");
+}
+
+const zodiacSigns = ["aries", "taurus", "gemini", "cancer", "leo", "virgo", "libra", "scorpio", "sagittarius", "capricorn", "aquarius", "pisces"];
+const zodiacZh: Record<string, string> = {
+  "白羊": "aries",
+  "金牛": "taurus",
+  "双子": "gemini",
+  "巨蟹": "cancer",
+  "狮子": "leo",
+  "处女": "virgo",
+  "天秤": "libra",
+  "天蝎": "scorpio",
+  "射手": "sagittarius",
+  "摩羯": "capricorn",
+  "水瓶": "aquarius",
+  "双鱼": "pisces",
+};
+
+function normalizeZodiac(value: string) {
+  const lower = value.toLowerCase();
+  return zodiacSigns.find((sign) => lower.includes(sign)) ?? Object.entries(zodiacZh).find(([key]) => value.includes(key))?.[1] ?? "aries";
+}
+
+function zodiacCompatibility(input: string, locale: Locale = "en") {
+  const parts = input.split(/\n|,|，|\/|\+/).map((item) => item.trim()).filter(Boolean);
+  const first = normalizeZodiac(parts[0] ?? input);
+  const second = normalizeZodiac(parts[1] ?? input);
+  const a = zodiacSigns.indexOf(first);
+  const b = zodiacSigns.indexOf(second);
+  const distance = Math.min(Math.abs(a - b), 12 - Math.abs(a - b));
+  const score = Math.max(52, 94 - distance * 7 + (a % 4 === b % 4 ? 8 : 0));
+  if (locale === "zh") {
+    return [
+      `${first.toUpperCase()} + ${second.toUpperCase()}`,
+      `契合度：${Math.min(98, score)}%`,
+      distance <= 2 ? "相处风格：自然顺畅，但需要持续制造新鲜感。" : "相处风格：互补性更强，需要通过明确沟通磨合节奏。",
+      "提示：星座配对适合作为聊天参考，不是关系结论。",
+    ].join("\n");
+  }
+  return [`${first.toUpperCase()} + ${second.toUpperCase()}`, `Compatibility: ${Math.min(98, score)}%`, distance <= 2 ? "Style: naturally smooth, but remember to keep novelty alive." : "Style: complementary, with more room for growth through clear communication.", "Tip: use this as a conversation prompt, not a relationship verdict."].join("\n");
+}
+
+function fiveElements(input: string, locale: Locale = "en") {
+  const date = new Date(input.trim());
+  if (Number.isNaN(date.getTime())) throw new Error("Enter a date like 1995-08-17.");
+  const stems = ["Wood", "Wood", "Fire", "Fire", "Earth", "Earth", "Metal", "Metal", "Water", "Water"];
+  const branches = ["Water", "Earth", "Wood", "Wood", "Earth", "Fire", "Fire", "Earth", "Metal", "Metal", "Earth", "Water"];
+  const year = date.getFullYear();
+  const yearStem = stems[(year - 4) % 10];
+  const yearBranch = branches[(year - 4) % 12];
+  const monthElement = stems[date.getMonth() % stems.length];
+  const dayElement = branches[date.getDate() % branches.length];
+  const counts = [yearStem, yearBranch, monthElement, dayElement].reduce<Record<string, number>>((acc, item) => {
+    acc[item] = (acc[item] ?? 0) + 1;
+    return acc;
+  }, {});
+  const elementZh: Record<string, string> = { Wood: "木", Fire: "火", Earth: "土", Metal: "金", Water: "水" };
+  if (locale === "zh") {
+    return [
+      `出生日期：${date.toISOString().slice(0, 10)}`,
+      `五行估算：${Object.entries(counts).map(([key, count]) => `${elementZh[key] ?? key} x${count}`).join("，")}`,
+      `较强元素：${elementZh[Object.entries(counts).sort((a, b) => b[1] - a[1])[0]?.[0] ?? ""] ?? "较均衡"}`,
+      "提示：这是基于日期的轻量参考，不是完整八字排盘。",
+    ].join("\n");
+  }
+  return [`Birth date: ${date.toISOString().slice(0, 10)}`, `Estimated elements: ${Object.entries(counts).map(([key, count]) => `${key} x${count}`).join(", ")}`, `Strongest: ${Object.entries(counts).sort((a, b) => b[1] - a[1])[0]?.[0] ?? "Balanced"}`, "Note: this is a lightweight calendar-based reference, not a full BaZi reading."].join("\n");
+}
+
+function bmi(input: string, locale: Locale = "en") {
+  const fields = parseLooseFields(input);
+  const heightCm = fieldNumber(fields, ["height", "身高", "height cm"], 170);
+  const weightKg = fieldNumber(fields, ["weight", "体重", "weight kg"], 65);
+  const value = weightKg / (heightCm / 100) ** 2;
+  const category = value < 18.5 ? ["Underweight", "偏瘦"] : value < 25 ? ["Normal", "正常"] : value < 30 ? ["Overweight", "超重"] : ["Obesity", "肥胖"];
+  return locale === "zh"
+    ? [`BMI：${value.toFixed(1)}`, `分类：${category[1]}`, `身高：${heightCm} cm`, `体重：${weightKg} kg`].join("\n")
+    : [`BMI: ${value.toFixed(1)}`, `Category: ${category[0]}`, `Height: ${heightCm} cm`, `Weight: ${weightKg} kg`].join("\n");
+}
+
+function calories(input: string, locale: Locale = "en") {
+  const fields = parseLooseFields(input);
+  const sex = `${fields.sex ?? fields["性别"] ?? "male"}`.toLowerCase();
+  const age = fieldNumber(fields, ["age", "年龄"], 30);
+  const height = fieldNumber(fields, ["height", "身高"], 170);
+  const weight = fieldNumber(fields, ["weight", "体重"], 65);
+  const activity = fieldNumber(fields, ["activity", "活动系数"], 1.375);
+  const bmr = 10 * weight + 6.25 * height - 5 * age + (sex.includes("female") || sex.includes("女") ? -161 : 5);
+  const tdee = bmr * activity;
+  return locale === "zh"
+    ? [`基础代谢：${Math.round(bmr)} kcal/天`, `维持热量：${Math.round(tdee)} kcal/天`, `减脂参考：${Math.round(tdee - 400)} kcal/天`, `增肌参考：${Math.round(tdee + 250)} kcal/天`].join("\n")
+    : [`BMR: ${Math.round(bmr)} kcal/day`, `Maintenance calories: ${Math.round(tdee)} kcal/day`, `Fat loss reference: ${Math.round(tdee - 400)} kcal/day`, `Muscle gain reference: ${Math.round(tdee + 250)} kcal/day`].join("\n");
+}
+
+function financialGoal(input: string, locale: Locale = "en") {
+  const fields = parseLooseFields(input);
+  const target = fieldNumber(fields, ["target", "目标"], 100000);
+  const current = fieldNumber(fields, ["current", "已有"], 10000);
+  const months = Math.max(1, fieldNumber(fields, ["months", "月数"], 36));
+  const annualReturn = fieldNumber(fields, ["return", "收益率"], 4) / 100;
+  const monthlyRate = annualReturn / 12;
+  const futureCurrent = current * (1 + monthlyRate) ** months;
+  const monthly = monthlyRate === 0 ? (target - current) / months : (target - futureCurrent) * monthlyRate / ((1 + monthlyRate) ** months - 1);
+  return locale === "zh"
+    ? [`目标金额：${money(target)}`, `已有资金预计增长到：${money(futureCurrent)}`, `每月需储蓄：${money(Math.max(0, monthly))}`, `假设年化收益：${(annualReturn * 100).toFixed(1)}%`].join("\n")
+    : [`Target: ${money(target)}`, `Current projected value: ${money(futureCurrent)}`, `Required monthly savings: ${money(Math.max(0, monthly))}`, `Assumption: ${(annualReturn * 100).toFixed(1)}% annual return`].join("\n");
+}
+
+function sleepPlan(input: string, locale: Locale = "en") {
+  const fields = parseLooseFields(input);
+  const wake = fields.wake ?? fields["起床"] ?? "07:00";
+  const [hour = 7, minute = 0] = wake.split(":").map(Number);
+  const wakeDate = new Date();
+  wakeDate.setHours(hour, minute, 0, 0);
+  const options = [6, 5, 4].map((cycles) => {
+    const bedtime = new Date(wakeDate.getTime() - cycles * 90 * 60 * 1000 - 15 * 60 * 1000);
+    return locale === "zh" ? `${cycles} 个睡眠周期：建议 ${bedtime.toTimeString().slice(0, 5)} 入睡` : `${cycles} cycles: ${bedtime.toTimeString().slice(0, 5)} bedtime`;
+  });
+  return locale === "zh"
+    ? [`起床时间：${wakeDate.toTimeString().slice(0, 5)}`, ...options, "已预留 15 分钟入睡缓冲。"].join("\n")
+    : [`Wake time: ${wakeDate.toTimeString().slice(0, 5)}`, ...options, "Includes a 15-minute fall-asleep buffer."].join("\n");
+}
+
+function retirement(input: string, locale: Locale = "en") {
+  const fields = parseLooseFields(input);
+  const age = fieldNumber(fields, ["age", "年龄"], 30);
+  const retireAge = fieldNumber(fields, ["retire", "退休年龄"], 60);
+  const current = fieldNumber(fields, ["current", "已有"], 100000);
+  const monthly = fieldNumber(fields, ["monthly", "每月"], 3000);
+  const annualReturn = fieldNumber(fields, ["return", "收益率"], 5) / 100;
+  const months = Math.max(0, (retireAge - age) * 12);
+  const monthlyRate = annualReturn / 12;
+  const futureCurrent = current * (1 + monthlyRate) ** months;
+  const futureMonthly = monthlyRate === 0 ? monthly * months : monthly * (((1 + monthlyRate) ** months - 1) / monthlyRate);
+  return locale === "zh"
+    ? [`距离退休：${Math.max(0, retireAge - age)} 年`, `预计退休储蓄：${money(futureCurrent + futureMonthly)}`, `已有资金贡献：${money(futureCurrent)}`, `每月投入贡献：${money(futureMonthly)}`].join("\n")
+    : [`Years to retirement: ${Math.max(0, retireAge - age)}`, `Projected savings: ${money(futureCurrent + futureMonthly)}`, `From current savings: ${money(futureCurrent)}`, `From monthly contributions: ${money(futureMonthly)}`].join("\n");
+}
+
 function GenericTextTransformTool({
   label,
   sample,
   transform,
   tool,
   outputLabel = "Output",
+  locale = "en",
 }: {
   label: string;
   sample: string;
-  transform: (value: string) => string | Promise<string>;
+  transform: (value: string, locale: Locale) => string | Promise<string>;
   tool: string;
   outputLabel?: string;
+  locale?: Locale;
 }) {
   const [input, setInput] = useState(sample);
   const [output, setOutput] = useState("");
@@ -210,33 +401,33 @@ function GenericTextTransformTool({
 
   async function run() {
     try {
-      const nextOutput = await transform(input);
+      const nextOutput = await transform(input, locale);
       setOutput(nextOutput);
-      setMessage("Done.");
+      setMessage(locale === "zh" ? "已完成。" : "Done.");
       setTone("success");
       fireAndForgetToolExecution(tool);
     } catch (error) {
-      setMessage(error instanceof Error ? error.message : "Unable to process input.");
+      setMessage(error instanceof Error ? error.message : locale === "zh" ? "无法处理输入。" : "Unable to process input.");
       setTone("error");
     }
   }
 
   return (
-    <ToolPanel>
+    <ToolPanel label={locale === "zh" ? "本地浏览器工具" : "local browser tool"}>
       <div className="grid gap-4 lg:grid-cols-2">
         <div className="space-y-4">
           <ToolTextarea label={label} value={input} onChange={setInput} rows={10} />
           <div className="flex flex-wrap gap-2">
-            <ToolButton onClick={run}>Run</ToolButton>
-            <ResetButton onClick={() => { setInput(sample); setOutput(""); setMessage(""); }} />
+            <ToolButton onClick={run}>{locale === "zh" ? "运行" : "Run"}</ToolButton>
+            <ResetButton label={locale === "zh" ? "重置" : "Reset"} onClick={() => { setInput(sample); setOutput(""); setMessage(""); }} />
           </div>
           <StatusMessage message={message} tone={tone} />
         </div>
         <div className="space-y-4">
           <ToolTextarea label={outputLabel} value={output} readOnly rows={10} />
           <div className="flex flex-wrap gap-2">
-            <CopyButton value={output} />
-            <ToolButton variant="secondary" onClick={() => downloadTextFile(`${tool}-output.txt`, output)}>Download</ToolButton>
+            <CopyButton value={output} label={locale === "zh" ? "复制" : "Copy"} copiedLabel={locale === "zh" ? "已复制" : "Copied"} />
+            <ToolButton variant="secondary" onClick={() => downloadTextFile(`${tool}-output.txt`, output)}>{locale === "zh" ? "下载" : "Download"}</ToolButton>
           </div>
         </div>
       </div>
@@ -726,7 +917,19 @@ export function UrlParser() {
   return <GenericTextTransformTool label="URL input" sample="https://madabase.com/en/tools/json-formatter?ref=seo#faq" tool="url-parser" transform={parseUrl} outputLabel="Parsed URL" />;
 }
 
-const genericToolConfigs: Record<string, { label: string; sample: string; outputLabel: string; transform: (value: string) => string | Promise<string> }> = {
+type LocalizedText = string | Record<Locale, string>;
+type GenericToolConfig = {
+  label: LocalizedText;
+  sample: LocalizedText;
+  outputLabel: LocalizedText;
+  transform: (value: string, locale: Locale) => string | Promise<string>;
+};
+
+function localizeText(value: LocalizedText, locale: Locale) {
+  return typeof value === "string" ? value : value[locale];
+}
+
+const genericToolConfigs: Record<string, GenericToolConfig> = {
   "line-sorter": {
     label: "Lines",
     sample: "banana\napple\ncarrot",
@@ -933,6 +1136,54 @@ const genericToolConfigs: Record<string, { label: string; sample: string; output
     outputLabel: "Randomized lines",
     transform: (value) => normalizeLines(value).split("\n").sort(() => Math.random() - 0.5).join("\n"),
   },
+  "english-name-generator": {
+    label: { en: "Style fields", zh: "偏好信息" },
+    sample: { en: "gender: neutral\nstyle: classic\ninitial: A", zh: "性别: 不限\n风格: classic\n首字母: A" },
+    outputLabel: { en: "Name ideas", zh: "英文名建议" },
+    transform: generateEnglishNames,
+  },
+  "zodiac-compatibility": {
+    label: { en: "Two zodiac signs", zh: "两个星座" },
+    sample: { en: "Leo, Aquarius", zh: "狮子, 水瓶" },
+    outputLabel: { en: "Compatibility", zh: "配对结果" },
+    transform: zodiacCompatibility,
+  },
+  "birthday-five-elements": {
+    label: { en: "Birth date", zh: "出生日期" },
+    sample: { en: "1995-08-17", zh: "1995-08-17" },
+    outputLabel: { en: "Five elements estimate", zh: "五行估算" },
+    transform: fiveElements,
+  },
+  "bmi-calculator": {
+    label: { en: "Body data", zh: "身体数据" },
+    sample: { en: "height: 170\nweight: 65", zh: "身高: 170\n体重: 65" },
+    outputLabel: { en: "BMI result", zh: "BMI 结果" },
+    transform: bmi,
+  },
+  "calorie-calculator": {
+    label: { en: "Profile", zh: "个人信息" },
+    sample: { en: "sex: female\nage: 30\nheight: 165\nweight: 58\nactivity: 1.375", zh: "性别: 女\n年龄: 30\n身高: 165\n体重: 58\n活动系数: 1.375" },
+    outputLabel: { en: "Calorie estimate", zh: "热量估算" },
+    transform: calories,
+  },
+  "financial-goal-calculator": {
+    label: { en: "Goal fields", zh: "目标信息" },
+    sample: { en: "target: 100000\ncurrent: 10000\nmonths: 36\nreturn: 4", zh: "目标: 100000\n已有: 10000\n月数: 36\n收益率: 4" },
+    outputLabel: { en: "Savings plan", zh: "储蓄计划" },
+    transform: financialGoal,
+  },
+  "sleep-calculator": {
+    label: { en: "Wake time", zh: "起床时间" },
+    sample: { en: "wake: 07:00", zh: "起床: 07:00" },
+    outputLabel: { en: "Sleep plan", zh: "睡眠计划" },
+    transform: sleepPlan,
+  },
+  "retirement-calculator": {
+    label: { en: "Retirement fields", zh: "退休信息" },
+    sample: { en: "age: 30\nretire: 60\ncurrent: 100000\nmonthly: 3000\nreturn: 5", zh: "年龄: 30\n退休年龄: 60\n已有: 100000\n每月: 3000\n收益率: 5" },
+    outputLabel: { en: "Retirement estimate", zh: "退休估算" },
+    transform: retirement,
+  },
 };
 
 const fallbackGenericTool = {
@@ -942,7 +1193,16 @@ const fallbackGenericTool = {
   transform: (value: string) => value,
 };
 
-export function GenericTextTool({ toolSlug = "generic-text-tool" }: { toolSlug?: string }) {
+export function GenericTextTool({ toolSlug = "generic-text-tool", locale = "en" }: { toolSlug?: string; locale?: Locale }) {
   const config = genericToolConfigs[toolSlug] ?? fallbackGenericTool;
-  return <GenericTextTransformTool label={config.label} sample={config.sample} tool={toolSlug} transform={config.transform} outputLabel={config.outputLabel} />;
+  return (
+    <GenericTextTransformTool
+      label={localizeText(config.label, locale)}
+      sample={localizeText(config.sample, locale)}
+      tool={toolSlug}
+      transform={config.transform}
+      outputLabel={localizeText(config.outputLabel, locale)}
+      locale={locale}
+    />
+  );
 }

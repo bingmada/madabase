@@ -12,7 +12,7 @@ import { PersonalizedToolsPanel } from "@/components/PersonalizedToolsPanel";
 import { isPremium, premiumFeatures } from "@/lib/features";
 import { getLatestBlogPosts } from "@/lib/blog";
 import { buildAbsoluteUrl, buildPageMetadata } from "@/lib/seo";
-import { isLocale, locales, type Locale } from "@/lib/i18n";
+import { getCategoryLabel, isLocale, locales, testCategoryLabels, type Locale } from "@/lib/i18n";
 import { getPopularTools, getToolsByCategory, toolRegistry } from "@/lib/tool-registry";
 import { getPopularTests } from "@/lib/test-registry";
 
@@ -188,7 +188,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {popularTests.map((test) => (
               <Link key={test.slug} href={`/${locale}/tests/${test.slug}`} className="group surface-card p-5 transition hover:-translate-y-0.5 hover:border-[var(--brand)] hover:shadow-[var(--shadow-panel)]">
-                <p className="code-font text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--text-soft)]">{test.category}</p>
+                <p className="text-[11px] font-semibold text-[var(--text-soft)]">{getCategoryLabel(test.category, locale, testCategoryLabels)}</p>
                 <h3 className="mt-2 text-lg font-bold text-[var(--text)]">{test.title[locale]}</h3>
                 <p className="mt-2 text-sm leading-6 text-[var(--text-muted)]">{test.description[locale]}</p>
                 <p className="mt-4 text-sm font-semibold text-[var(--brand-strong)]">{test.questionCount} {locale === "en" ? "questions" : "题"}</p>

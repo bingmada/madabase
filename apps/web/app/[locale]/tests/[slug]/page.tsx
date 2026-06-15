@@ -8,7 +8,7 @@ import { Header } from "@/components/Header";
 import { JsonLd, buildBreadcrumbSchema } from "@/components/JsonLd";
 import { ToolIcon } from "@/components/ToolIcon";
 import { TestReferralCapture } from "@/components/tests/TestReferralCapture";
-import { isLocale, locales } from "@/lib/i18n";
+import { getCategoryLabel, isLocale, locales, testCategoryLabels } from "@/lib/i18n";
 import { buildAbsoluteUrl, buildPageMetadata } from "@/lib/seo";
 import { loadTestContent } from "@/lib/test-content";
 import { testMap, testRegistry } from "@/lib/test-registry";
@@ -110,7 +110,7 @@ export default async function TestDetailPage({
                 <Brain className="h-6 w-6" />
               </span>
               <div className="min-w-0 flex-1">
-                <p className="eyebrow">{test.category}</p>
+                <p className="eyebrow">{getCategoryLabel(test.category, locale, testCategoryLabels)}</p>
                 <h1 className="mt-2 text-3xl font-black tracking-tight text-[var(--text)] sm:text-4xl">{content.title}</h1>
                 <p className="mt-3 text-base leading-7 text-[var(--text-muted)] sm:text-lg">{content.description}</p>
               </div>

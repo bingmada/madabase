@@ -1,10 +1,10 @@
 {
   "title": "Leadership Style Test",
-  "description": "Answer 24 quick prompts to explore your leadership style pattern.",
+  "description": "Explore your leadership style pattern with practical, scenario-based questions.",
   "instructions": [
-    "Answer based on recent real behavior, not an ideal version of yourself.",
-    "Use the whole scale when a statement clearly fits or does not fit.",
-    "Your report highlights the strongest pattern and practical next steps."
+    "Answer from recent real behavior, not an ideal version of yourself.",
+    "If a statement reminds you of a concrete situation, it is usually more useful.",
+    "Use the result for reflection and communication, not as a diagnosis."
   ],
   "scale": [
     {
@@ -36,138 +36,138 @@
   "scaleQuestions": [
     {
       "id": "coach_1",
-      "question": "In relevant situations, I often show a Coach pattern.",
+      "question": "In recent real situations, I can see a clear Coach pattern in how I choose and act.",
       "scoreKey": "COACH"
     },
     {
       "id": "coach_2",
-      "question": "In relevant situations, I often show a Coach pattern.",
+      "question": "When pressure rises, I often rely on a Coach strategy instead of switching styles.",
       "scoreKey": "COACH"
     },
     {
       "id": "coach_3",
-      "question": "In relevant situations, I often show a Coach pattern.",
+      "question": "People who work with me would probably notice my Coach tendency.",
       "scoreKey": "COACH"
     },
     {
       "id": "coach_4",
-      "question": "In relevant situations, I often show a Coach pattern.",
+      "question": "If an environment blocks Coach for too long, my motivation drops.",
       "scoreKey": "COACH"
     },
     {
       "id": "coach_5",
-      "question": "In relevant situations, I often show a Coach pattern.",
+      "question": "During collaboration, I often bring Coach into the way I contribute.",
       "scoreKey": "COACH"
     },
     {
       "id": "coach_6",
-      "question": "In relevant situations, I often show a Coach pattern.",
+      "question": "Looking back over the last month, Coach describes a repeated behavior pattern for me.",
       "scoreKey": "COACH"
     },
     {
       "id": "visionary_1",
-      "question": "In relevant situations, I often show a Visionary pattern.",
+      "question": "In recent real situations, I can see a clear Visionary pattern in how I choose and act.",
       "scoreKey": "VISIONARY"
     },
     {
       "id": "visionary_2",
-      "question": "In relevant situations, I often show a Visionary pattern.",
+      "question": "When pressure rises, I often rely on a Visionary strategy instead of switching styles.",
       "scoreKey": "VISIONARY"
     },
     {
       "id": "visionary_3",
-      "question": "In relevant situations, I often show a Visionary pattern.",
+      "question": "People who work with me would probably notice my Visionary tendency.",
       "scoreKey": "VISIONARY"
     },
     {
       "id": "visionary_4",
-      "question": "In relevant situations, I often show a Visionary pattern.",
+      "question": "If an environment blocks Visionary for too long, my motivation drops.",
       "scoreKey": "VISIONARY"
     },
     {
       "id": "visionary_5",
-      "question": "In relevant situations, I often show a Visionary pattern.",
+      "question": "During collaboration, I often bring Visionary into the way I contribute.",
       "scoreKey": "VISIONARY"
     },
     {
       "id": "visionary_6",
-      "question": "In relevant situations, I often show a Visionary pattern.",
+      "question": "Looking back over the last month, Visionary describes a repeated behavior pattern for me.",
       "scoreKey": "VISIONARY"
     },
     {
       "id": "operator_1",
-      "question": "In relevant situations, I often show a Operator pattern.",
+      "question": "In recent real situations, I can see a clear Operator pattern in how I choose and act.",
       "scoreKey": "OPERATOR"
     },
     {
       "id": "operator_2",
-      "question": "In relevant situations, I often show a Operator pattern.",
+      "question": "When pressure rises, I often rely on a Operator strategy instead of switching styles.",
       "scoreKey": "OPERATOR"
     },
     {
       "id": "operator_3",
-      "question": "In relevant situations, I often show a Operator pattern.",
+      "question": "People who work with me would probably notice my Operator tendency.",
       "scoreKey": "OPERATOR"
     },
     {
       "id": "operator_4",
-      "question": "In relevant situations, I often show a Operator pattern.",
+      "question": "If an environment blocks Operator for too long, my motivation drops.",
       "scoreKey": "OPERATOR"
     },
     {
       "id": "operator_5",
-      "question": "In relevant situations, I often show a Operator pattern.",
+      "question": "During collaboration, I often bring Operator into the way I contribute.",
       "scoreKey": "OPERATOR"
     },
     {
       "id": "operator_6",
-      "question": "In relevant situations, I often show a Operator pattern.",
+      "question": "Looking back over the last month, Operator describes a repeated behavior pattern for me.",
       "scoreKey": "OPERATOR"
     },
     {
       "id": "democratic_1",
-      "question": "In relevant situations, I often show a Democratic pattern.",
+      "question": "In recent real situations, I can see a clear Democratic pattern in how I choose and act.",
       "scoreKey": "DEMOCRATIC"
     },
     {
       "id": "democratic_2",
-      "question": "In relevant situations, I often show a Democratic pattern.",
+      "question": "When pressure rises, I often rely on a Democratic strategy instead of switching styles.",
       "scoreKey": "DEMOCRATIC"
     },
     {
       "id": "democratic_3",
-      "question": "In relevant situations, I often show a Democratic pattern.",
+      "question": "People who work with me would probably notice my Democratic tendency.",
       "scoreKey": "DEMOCRATIC"
     },
     {
       "id": "democratic_4",
-      "question": "In relevant situations, I often show a Democratic pattern.",
+      "question": "If an environment blocks Democratic for too long, my motivation drops.",
       "scoreKey": "DEMOCRATIC"
     },
     {
       "id": "democratic_5",
-      "question": "In relevant situations, I often show a Democratic pattern.",
+      "question": "During collaboration, I often bring Democratic into the way I contribute.",
       "scoreKey": "DEMOCRATIC"
     },
     {
       "id": "democratic_6",
-      "question": "In relevant situations, I often show a Democratic pattern.",
+      "question": "Looking back over the last month, Democratic describes a repeated behavior pattern for me.",
       "scoreKey": "DEMOCRATIC"
     }
   ],
   "results": {
     "COACH": {
       "title": "Coach",
-      "summary": "Your primary result points to a Coach pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Leadership Style Test, your result is Coach. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Coach",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Coach",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -175,12 +175,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Coach clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",
@@ -190,16 +190,16 @@
     },
     "VISIONARY": {
       "title": "Visionary",
-      "summary": "Your primary result points to a Visionary pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Leadership Style Test, your result is Visionary. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Visionary",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Visionary",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -207,12 +207,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Visionary clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",
@@ -222,16 +222,16 @@
     },
     "OPERATOR": {
       "title": "Operator",
-      "summary": "Your primary result points to a Operator pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Leadership Style Test, your result is Operator. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Operator",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Operator",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -239,12 +239,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Operator clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",
@@ -254,16 +254,16 @@
     },
     "DEMOCRATIC": {
       "title": "Democratic",
-      "summary": "Your primary result points to a Democratic pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this Leadership Style Test, your result is Democratic. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Democratic",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Democratic",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -271,12 +271,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Democratic clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",

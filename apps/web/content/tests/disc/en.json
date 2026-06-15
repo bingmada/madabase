@@ -1,10 +1,10 @@
 {
   "title": "DISC Personality Test",
-  "description": "Answer 24 quick prompts to explore your disc personality pattern.",
+  "description": "Explore your disc personality pattern with practical, scenario-based questions.",
   "instructions": [
-    "Answer based on recent real behavior, not an ideal version of yourself.",
-    "Use the whole scale when a statement clearly fits or does not fit.",
-    "Your report highlights the strongest pattern and practical next steps."
+    "Answer from recent real behavior, not an ideal version of yourself.",
+    "If a statement reminds you of a concrete situation, it is usually more useful.",
+    "Use the result for reflection and communication, not as a diagnosis."
   ],
   "scale": [
     {
@@ -36,138 +36,138 @@
   "scaleQuestions": [
     {
       "id": "dominance_1",
-      "question": "In relevant situations, I often show a Dominance pattern.",
+      "question": "In recent real situations, I can see a clear Dominance pattern in how I choose and act.",
       "scoreKey": "DOMINANCE"
     },
     {
       "id": "dominance_2",
-      "question": "In relevant situations, I often show a Dominance pattern.",
+      "question": "When pressure rises, I often rely on a Dominance strategy instead of switching styles.",
       "scoreKey": "DOMINANCE"
     },
     {
       "id": "dominance_3",
-      "question": "In relevant situations, I often show a Dominance pattern.",
+      "question": "People who work with me would probably notice my Dominance tendency.",
       "scoreKey": "DOMINANCE"
     },
     {
       "id": "dominance_4",
-      "question": "In relevant situations, I often show a Dominance pattern.",
+      "question": "If an environment blocks Dominance for too long, my motivation drops.",
       "scoreKey": "DOMINANCE"
     },
     {
       "id": "dominance_5",
-      "question": "In relevant situations, I often show a Dominance pattern.",
+      "question": "During collaboration, I often bring Dominance into the way I contribute.",
       "scoreKey": "DOMINANCE"
     },
     {
       "id": "dominance_6",
-      "question": "In relevant situations, I often show a Dominance pattern.",
+      "question": "Looking back over the last month, Dominance describes a repeated behavior pattern for me.",
       "scoreKey": "DOMINANCE"
     },
     {
       "id": "influence_1",
-      "question": "In relevant situations, I often show a Influence pattern.",
+      "question": "In recent real situations, I can see a clear Influence pattern in how I choose and act.",
       "scoreKey": "INFLUENCE"
     },
     {
       "id": "influence_2",
-      "question": "In relevant situations, I often show a Influence pattern.",
+      "question": "When pressure rises, I often rely on a Influence strategy instead of switching styles.",
       "scoreKey": "INFLUENCE"
     },
     {
       "id": "influence_3",
-      "question": "In relevant situations, I often show a Influence pattern.",
+      "question": "People who work with me would probably notice my Influence tendency.",
       "scoreKey": "INFLUENCE"
     },
     {
       "id": "influence_4",
-      "question": "In relevant situations, I often show a Influence pattern.",
+      "question": "If an environment blocks Influence for too long, my motivation drops.",
       "scoreKey": "INFLUENCE"
     },
     {
       "id": "influence_5",
-      "question": "In relevant situations, I often show a Influence pattern.",
+      "question": "During collaboration, I often bring Influence into the way I contribute.",
       "scoreKey": "INFLUENCE"
     },
     {
       "id": "influence_6",
-      "question": "In relevant situations, I often show a Influence pattern.",
+      "question": "Looking back over the last month, Influence describes a repeated behavior pattern for me.",
       "scoreKey": "INFLUENCE"
     },
     {
       "id": "steadiness_1",
-      "question": "In relevant situations, I often show a Steadiness pattern.",
+      "question": "In recent real situations, I can see a clear Steadiness pattern in how I choose and act.",
       "scoreKey": "STEADINESS"
     },
     {
       "id": "steadiness_2",
-      "question": "In relevant situations, I often show a Steadiness pattern.",
+      "question": "When pressure rises, I often rely on a Steadiness strategy instead of switching styles.",
       "scoreKey": "STEADINESS"
     },
     {
       "id": "steadiness_3",
-      "question": "In relevant situations, I often show a Steadiness pattern.",
+      "question": "People who work with me would probably notice my Steadiness tendency.",
       "scoreKey": "STEADINESS"
     },
     {
       "id": "steadiness_4",
-      "question": "In relevant situations, I often show a Steadiness pattern.",
+      "question": "If an environment blocks Steadiness for too long, my motivation drops.",
       "scoreKey": "STEADINESS"
     },
     {
       "id": "steadiness_5",
-      "question": "In relevant situations, I often show a Steadiness pattern.",
+      "question": "During collaboration, I often bring Steadiness into the way I contribute.",
       "scoreKey": "STEADINESS"
     },
     {
       "id": "steadiness_6",
-      "question": "In relevant situations, I often show a Steadiness pattern.",
+      "question": "Looking back over the last month, Steadiness describes a repeated behavior pattern for me.",
       "scoreKey": "STEADINESS"
     },
     {
       "id": "compliance_1",
-      "question": "In relevant situations, I often show a Compliance pattern.",
+      "question": "In recent real situations, I can see a clear Compliance pattern in how I choose and act.",
       "scoreKey": "COMPLIANCE"
     },
     {
       "id": "compliance_2",
-      "question": "In relevant situations, I often show a Compliance pattern.",
+      "question": "When pressure rises, I often rely on a Compliance strategy instead of switching styles.",
       "scoreKey": "COMPLIANCE"
     },
     {
       "id": "compliance_3",
-      "question": "In relevant situations, I often show a Compliance pattern.",
+      "question": "People who work with me would probably notice my Compliance tendency.",
       "scoreKey": "COMPLIANCE"
     },
     {
       "id": "compliance_4",
-      "question": "In relevant situations, I often show a Compliance pattern.",
+      "question": "If an environment blocks Compliance for too long, my motivation drops.",
       "scoreKey": "COMPLIANCE"
     },
     {
       "id": "compliance_5",
-      "question": "In relevant situations, I often show a Compliance pattern.",
+      "question": "During collaboration, I often bring Compliance into the way I contribute.",
       "scoreKey": "COMPLIANCE"
     },
     {
       "id": "compliance_6",
-      "question": "In relevant situations, I often show a Compliance pattern.",
+      "question": "Looking back over the last month, Compliance describes a repeated behavior pattern for me.",
       "scoreKey": "COMPLIANCE"
     }
   ],
   "results": {
     "DOMINANCE": {
       "title": "Dominance",
-      "summary": "Your primary result points to a Dominance pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this DISC Personality Test, your result is Dominance. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Dominance",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Dominance",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -175,12 +175,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Dominance clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",
@@ -190,16 +190,16 @@
     },
     "INFLUENCE": {
       "title": "Influence",
-      "summary": "Your primary result points to a Influence pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this DISC Personality Test, your result is Influence. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Influence",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Influence",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -207,12 +207,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Influence clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",
@@ -222,16 +222,16 @@
     },
     "STEADINESS": {
       "title": "Steadiness",
-      "summary": "Your primary result points to a Steadiness pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this DISC Personality Test, your result is Steadiness. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Steadiness",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Steadiness",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -239,12 +239,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Steadiness clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",
@@ -254,16 +254,16 @@
     },
     "COMPLIANCE": {
       "title": "Compliance",
-      "summary": "Your primary result points to a Compliance pattern. Treat it as a useful lens, not a fixed label.",
+      "summary": "In this DISC Personality Test, your result is Compliance. Your answers cluster around the behaviors, needs, or reactions represented by this pattern.",
       "traits": [
-        "Clear preference",
+        "Values Compliance",
         "Repeatable pattern",
         "Context sensitive"
       ],
       "strengths": [
-        "You can create real leverage in the right environment",
+        "You can create leverage in tasks that reward Compliance",
         "You tend to build repeatable strategies",
-        "You notice relevant signals quickly"
+        "You notice the cues that affect your performance"
       ],
       "weaknesses": [
         "Under pressure, you may overuse one strategy",
@@ -271,12 +271,12 @@
         "The result should guide you rather than limit you"
       ],
       "careers": [
-        "Review three recent real situations",
-        "Find where this pattern appears most often",
-        "Design one small experiment"
+        "Find the situations that trigger this pattern",
+        "Choose tasks that fit the tendency",
+        "Test one small adjustment"
       ],
       "relationships": [
-        "Explain your preference clearly while leaving room for other people's pace and style."
+        "Explain your need for Compliance clearly while leaving room for other people's pace and style."
       ],
       "growthPlan": [
         "Track the pattern for one week",

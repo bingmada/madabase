@@ -5,7 +5,7 @@ import { FavoriteButton } from "@/components/FavoriteButton";
 import { getCurrentUser } from "@/lib/auth/services/sessionService";
 import { getFavoriteState } from "@/lib/favorites";
 import { getRelatedTools, toolMap, toolRegistry } from "@/lib/tool-registry";
-import { isLocale, locales } from "@/lib/i18n";
+import { getCategoryLabel, isLocale, locales, testCategoryLabels, toolCategoryLabels } from "@/lib/i18n";
 import { buildAbsoluteUrl, buildToolMetadata } from "@/lib/seo";
 import { ToolLayout } from "@/components/ToolLayout";
 import { ToolIcon } from "@/components/ToolIcon";
@@ -91,7 +91,7 @@ export default async function ToolPage({ params }: { params: Promise<{ locale: s
               <ToolIcon component={registryEntry.component} className="h-6 w-6" />
             </span>
             <div className="min-w-0 flex-1">
-              <p className="eyebrow">{content.category}</p>
+              <p className="eyebrow">{getCategoryLabel(content.category, locale, toolCategoryLabels)}</p>
               <h1 className="mt-2 text-3xl font-black tracking-tight text-[var(--text)] sm:text-4xl">{content.h1[locale]}</h1>
               <p className="mt-3 text-base leading-7 text-[var(--text-muted)] sm:text-lg">{content.description[locale]}</p>
               <FavoriteButton
@@ -106,7 +106,7 @@ export default async function ToolPage({ params }: { params: Promise<{ locale: s
 
         <section className="bg-[var(--surface-muted)] p-3 sm:p-5">
           <ToolUsageTracker toolSlug={slug} />
-          <ToolRenderer component={registryEntry.component} toolSlug={slug} />
+          <ToolRenderer component={registryEntry.component} toolSlug={slug} locale={locale} />
         </section>
 
         <section className="border-t border-[var(--border)] p-5 sm:p-7">
@@ -175,7 +175,7 @@ export default async function ToolPage({ params }: { params: Promise<{ locale: s
                       <ToolIcon component={relatedTool.component} />
                     </span>
                     <div>
-                      <h3 className="text-base font-semibold text-[var(--text)]">{relatedTool.slug}</h3>
+                      <h3 className="text-base font-semibold text-[var(--text)]">{relatedTool.h1[locale]}</h3>
                     </div>
                   </div>
                 </Link>
@@ -193,7 +193,7 @@ export default async function ToolPage({ params }: { params: Promise<{ locale: s
             <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {relatedTests.map((test) => (
                 <Link key={test.slug} href={`/${locale}/tests/${test.slug}`} className="group rounded-md border border-[var(--border)] bg-white p-4 transition hover:-translate-y-0.5 hover:border-[var(--brand)] hover:shadow-[var(--shadow-soft)]">
-                  <p className="code-font text-xs font-semibold uppercase tracking-[0.16em] text-[var(--text-soft)]">{test.category}</p>
+                  <p className="text-xs font-semibold text-[var(--text-soft)]">{getCategoryLabel(test.category, locale, testCategoryLabels)}</p>
                   <h3 className="mt-2 text-base font-semibold text-[var(--text)]">{test.title[locale]}</h3>
                   <p className="mt-2 text-sm leading-6 text-[var(--text-muted)]">{test.description[locale]}</p>
                 </Link>

@@ -7,7 +7,7 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { JsonLd, buildBreadcrumbSchema } from "@/components/JsonLd";
 import { PageViewTracker } from "@/components/PageViewTracker";
-import { isLocale, locales } from "@/lib/i18n";
+import { getCategoryLabel, isLocale, locales, testCategoryLabels } from "@/lib/i18n";
 import { buildAbsoluteUrl, buildPageMetadata } from "@/lib/seo";
 import { loadTestContent } from "@/lib/test-content";
 import { getTestCategories, testRegistry } from "@/lib/test-registry";
@@ -91,7 +91,7 @@ export default async function TestsPage({ params }: { params: Promise<{ locale: 
                 {getTestCategories().slice(0, 3).map((category) => (
                   <div key={category} className="rounded-md border border-[var(--border)] bg-white p-4">
                     <p className="code-font text-xs font-semibold uppercase tracking-[0.16em] text-[var(--text-soft)]">{copy.categories}</p>
-                    <p className="mt-2 text-lg font-bold capitalize text-[var(--text)]">{category}</p>
+                    <p className="mt-2 text-lg font-bold text-[var(--text)]">{getCategoryLabel(category, locale, testCategoryLabels)}</p>
                   </div>
                 ))}
               </div>
@@ -109,7 +109,7 @@ export default async function TestsPage({ params }: { params: Promise<{ locale: 
                     <Brain className="h-5 w-5" />
                   </span>
                   <div>
-                    <p className="code-font text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--text-soft)]">{test.category}</p>
+                    <p className="text-[11px] font-semibold text-[var(--text-soft)]">{getCategoryLabel(test.category, locale, testCategoryLabels)}</p>
                     <h3 className="mt-1 text-lg font-bold text-[var(--text)]">{content?.title ?? test.title[locale]}</h3>
                     <p className="mt-2 text-sm leading-6 text-[var(--text-muted)]">{content?.description ?? test.description[locale]}</p>
                   </div>
@@ -134,4 +134,3 @@ export default async function TestsPage({ params }: { params: Promise<{ locale: 
     </div>
   );
 }
-
