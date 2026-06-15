@@ -6,6 +6,7 @@ import { Header } from "@/components/Header";
 import { requireUser } from "@/lib/auth/services/sessionService";
 import { getRecentToolUsage } from "@/lib/tool-usage";
 import { isLocale, locales } from "@/lib/i18n";
+import { canAccessOps } from "@/lib/ops-access";
 import { buildPageMetadata } from "@/lib/seo";
 import { testMap } from "@/lib/test-registry";
 import { toolMap } from "@/lib/tool-registry";
@@ -34,6 +35,7 @@ export default async function ProfilePage({ params }: { params: Promise<{ locale
   const recentUsage = await getRecentToolUsage(user.id, 8);
   const creditBalance = await getExistingCreditBalance(user.id);
   const testHistory = await getTestUnlockHistory(user.id, 12);
+  const showOpsDashboard = canAccessOps(user.email);
 
   return (
     <div className="min-h-screen bg-transparent">
@@ -63,6 +65,11 @@ export default async function ProfilePage({ params }: { params: Promise<{ locale
             <Link href={`/${locale}/settings`} className="rounded-md border border-[var(--border)] bg-white px-4 py-2 text-sm font-semibold text-[var(--text)] transition hover:border-[var(--brand)]">
               {locale === "en" ? "Settings" : "设置"}
             </Link>
+            {showOpsDashboard ? (
+              <Link href={`/${locale}/ops`} className="rounded-md border border-[var(--border)] bg-white px-4 py-2 text-sm font-semibold text-[var(--text)] transition hover:border-[var(--brand)]">
+                {locale === "en" ? "Ops Dashboard" : "运营面板"}
+              </Link>
+            ) : null}
           </div>
         </section>
 

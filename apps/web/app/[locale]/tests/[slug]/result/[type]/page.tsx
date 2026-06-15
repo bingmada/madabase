@@ -7,6 +7,7 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { JsonLd, buildArticleSchema, buildBreadcrumbSchema } from "@/components/JsonLd";
 import { ResultSharePoster } from "@/components/tests/ResultSharePoster";
+import { ResultScoreSnapshot } from "@/components/tests/ResultScoreSnapshot";
 import { TestReferralCapture } from "@/components/tests/TestReferralCapture";
 import { TestShareCard } from "@/components/tests/TestShareCard";
 import { getCurrentUser } from "@/lib/auth/services/sessionService";
@@ -112,6 +113,8 @@ export default async function TestResultPage({
       login: "Log in to unlock",
       balance: "Credit balance",
       cost: "Cost",
+      preview: "What unlocks",
+      scoreSnapshot: "Score snapshot",
       retake: "Retake test",
       locked: "Unlock career analysis, relationship patterns, strengths, weaknesses, and a practical growth plan.",
       insufficient: "You do not have enough credits to unlock this report yet.",
@@ -132,6 +135,8 @@ export default async function TestResultPage({
       login: "登录后解锁",
       balance: "当前积分",
       cost: "消耗",
+      preview: "解锁内容",
+      scoreSnapshot: "分数快照",
       retake: "重新测试",
       locked: "解锁职业分析、关系模式、优势、注意点与可执行成长计划。",
       insufficient: "你当前积分不足，暂时不能解锁这份报告。",
@@ -194,6 +199,9 @@ export default async function TestResultPage({
                 ))}
               </div>
               <p className="mt-5 text-sm leading-6 text-[var(--text-muted)]">{result.summary}</p>
+              <div className="mt-5">
+                <ResultScoreSnapshot locale={locale} slug={slug} attemptId={attempt} resultType={normalizedType} />
+              </div>
             </div>
 
             <div className="p-5 sm:p-7">
@@ -207,6 +215,9 @@ export default async function TestResultPage({
 
               {unlocked ? (
                 <div className="mt-5 grid gap-4 sm:grid-cols-2">
+                  <div className="sm:col-span-2">
+                    <ResultScoreSnapshot locale={locale} slug={slug} attemptId={attempt} resultType={normalizedType} />
+                  </div>
                   <div className="sm:col-span-2">
                     <DetailedReport locale={locale} resultType={normalizedType} title={result.title} summary={result.summary} traits={result.traits} strengths={result.strengths} weaknesses={result.weaknesses} growthPlan={result.growthPlan} />
                   </div>
@@ -222,6 +233,12 @@ export default async function TestResultPage({
                 <div className="mt-5 rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-5">
                   <Sparkles className="h-6 w-6 text-[var(--brand-strong)]" />
                   <p className="mt-3 text-sm leading-6 text-[var(--text-muted)]">{copy.locked}</p>
+                  <div className="mt-4 grid gap-3 sm:grid-cols-2">
+                    <LockedPreviewBlock title={reportLabels.strengths} items={result.strengths.slice(0, 2)} />
+                    <LockedPreviewBlock title={reportLabels.careers} items={result.careers.slice(0, 2)} />
+                    <LockedPreviewBlock title={reportLabels.relationships} items={result.relationships.slice(0, 2)} />
+                    <LockedPreviewBlock title={reportLabels.growth} items={result.growthPlan.slice(0, 2)} />
+                  </div>
                   <p className="mt-3 code-font text-xs font-semibold uppercase tracking-[0.16em] text-[var(--text-soft)]">
                     {copy.cost}: {unlockCost} {copy.credits}
                   </p>
@@ -251,6 +268,21 @@ export default async function TestResultPage({
       </main>
       <Footer />
     </div>
+  );
+}
+
+function LockedPreviewBlock({ title, items }: { title: string; items: string[] }) {
+  return (
+    <section className="rounded-md border border-[var(--border)] bg-white p-3">
+      <h3 className="text-sm font-bold text-[var(--text)]">{title}</h3>
+      <ul className="mt-2 space-y-1">
+        {items.map((item) => (
+          <li key={item} className="line-clamp-1 text-xs leading-5 text-[var(--text-muted)]">
+            {item}
+          </li>
+        ))}
+      </ul>
+    </section>
   );
 }
 

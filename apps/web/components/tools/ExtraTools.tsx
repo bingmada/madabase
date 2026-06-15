@@ -5,6 +5,8 @@ import { useEffect, useMemo, useState } from "react";
 import { fireAndForgetToolExecution } from "@/lib/tool-usage-client";
 import { CopyButton, ResetButton, StatusMessage, ToolButton, ToolInput, ToolPanel, ToolTextarea } from "./ToolPrimitives";
 
+type JsonDiffRow = { path: string; status: "added" | "removed" | "changed"; before?: string; after?: string };
+
 function formatXml(input: string) {
   const trimmed = input.trim();
   if (!trimmed) return "";
@@ -126,6 +128,21 @@ function formatBraceCode(input: string) {
     .join("\n");
 }
 
+function escapeHtml(value: string) {
+  return value.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
+}
+
+function downloadTextFile(filename: string, value: string) {
+  if (!value) return;
+  const blob = new Blob([value], { type: "text/plain;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = filename;
+  link.click();
+  URL.revokeObjectURL(url);
+}
+
 function toTitleCase(value: string) {
   return value
     .replace(/[-_]/g, " ")
@@ -217,7 +234,10 @@ function GenericTextTransformTool({
         </div>
         <div className="space-y-4">
           <ToolTextarea label={outputLabel} value={output} readOnly rows={10} />
-          <CopyButton value={output} />
+          <div className="flex flex-wrap gap-2">
+            <CopyButton value={output} />
+            <ToolButton variant="secondary" onClick={() => downloadTextFile(`${tool}-output.txt`, output)}>Download</ToolButton>
+          </div>
         </div>
       </div>
     </ToolPanel>
@@ -225,15 +245,104 @@ function GenericTextTransformTool({
 }
 
 export function JsonDiff() {
-  const sample = '{"name":"Madabase","mode":"old"}\n---\n{"name":"Madabase","mode":"new"}';
-  return <GenericTextTransformTool label="Left JSON, then --- then Right JSON" sample={sample} tool="json-diff" transform={(value) => {
-    const [leftRaw, rightRaw] = value.split("\n---\n");
-    if (!leftRaw || !rightRaw) throw new Error("Separate two JSON documents with --- on its own line.");
-    const left = JSON.stringify(JSON.parse(leftRaw), null, 2);
-    const right = JSON.stringify(JSON.parse(rightRaw), null, 2);
-    if (left === right) return "No differences found.";
-    return `Left:\n${left}\n\nRight:\n${right}`;
-  }} outputLabel="Diff result" />;
+  const sampleLeft = '{"name":"Madabase","mode":"old","tools":["json","jwt"],"active":true}';
+  const sampleRight = '{"name":"Madabase","mode":"new","tools":["json","jwt","qr"],"active":true}';
+  const [left, setLeft] = useState(sampleLeft);
+  const [right, setRight] = useState(sampleRight);
+  const [rows, setRows] = useState<JsonDiffRow[]>([]);
+  const [output, setOutput] = useState("");
+  const [message, setMessage] = useState("");
+  const [tone, setTone] = useState<"success" | "error">("success");
+
+  function flattenJson(value: unknown, prefix = "$", result: Record<string, unknown> = {}) {
+    if (Array.isArray(value)) {
+      value.forEach((item, index) => flattenJson(item, `${prefix}[${index}]`, result));
+      if (value.length === 0) result[prefix] = [];
+      return result;
+    }
+    if (value && typeof value === "object") {
+      const entries = Object.entries(value as Record<string, unknown>);
+      if (entries.length === 0) result[prefix] = {};
+      entries.forEach(([key, item]) => flattenJson(item, `${prefix}.${key}`, result));
+      return result;
+    }
+    result[prefix] = value;
+    return result;
+  }
+
+  function run() {
+    try {
+      const leftJson = JSON.parse(left) as unknown;
+      const rightJson = JSON.parse(right) as unknown;
+      const leftFlat = flattenJson(leftJson);
+      const rightFlat = flattenJson(rightJson);
+      const keys = Array.from(new Set([...Object.keys(leftFlat), ...Object.keys(rightFlat)])).sort();
+      const nextRows: JsonDiffRow[] = [];
+      for (const key of keys) {
+        const before = leftFlat[key];
+        const after = rightFlat[key];
+        if (!(key in leftFlat)) {
+          nextRows.push({ path: key, status: "added", after: JSON.stringify(after) });
+          continue;
+        }
+        if (!(key in rightFlat)) {
+          nextRows.push({ path: key, status: "removed", before: JSON.stringify(before) });
+          continue;
+        }
+        if (JSON.stringify(before) !== JSON.stringify(after)) {
+          nextRows.push({ path: key, status: "changed", before: JSON.stringify(before), after: JSON.stringify(after) });
+        }
+      }
+      const nextOutput = nextRows.length
+        ? nextRows.map((row) => `${row.status.toUpperCase()} ${row.path}\n- ${row.before ?? ""}\n+ ${row.after ?? ""}`).join("\n\n")
+        : "No differences found.";
+      setRows(nextRows);
+      setOutput(nextOutput);
+      setMessage(nextRows.length ? `${nextRows.length} changed path${nextRows.length === 1 ? "" : "s"} found.` : "No differences found.");
+      setTone("success");
+      fireAndForgetToolExecution("json-diff");
+    } catch (error) {
+      setMessage(error instanceof Error ? error.message : "Invalid JSON input.");
+      setTone("error");
+    }
+  }
+
+  return (
+    <ToolPanel>
+      <div className="grid gap-4 lg:grid-cols-2">
+        <div className="space-y-4">
+          <ToolTextarea label="Left JSON" value={left} onChange={setLeft} rows={10} />
+          <ToolTextarea label="Right JSON" value={right} onChange={setRight} rows={10} />
+          <div className="flex flex-wrap gap-2">
+            <ToolButton onClick={run}>Compare JSON</ToolButton>
+            <ResetButton onClick={() => { setLeft(sampleLeft); setRight(sampleRight); setRows([]); setOutput(""); setMessage(""); }} />
+          </div>
+          <StatusMessage message={message} tone={tone} />
+        </div>
+        <div className="space-y-4">
+          <div className="min-h-[280px] rounded-md border border-[var(--border)] bg-white p-3">
+            <p className="code-font text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-soft)]">Path diff</p>
+            <div className="mt-3 space-y-2">
+              {rows.length > 0 ? rows.map((row) => (
+                <div key={`${row.path}-${row.status}`} className="rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-3">
+                  <div className="flex flex-wrap items-center justify-between gap-2">
+                    <code className="text-xs font-semibold text-[var(--text)]">{row.path}</code>
+                    <span className={`rounded-full px-2 py-0.5 text-[11px] font-bold uppercase ${row.status === "added" ? "bg-emerald-100 text-emerald-700" : row.status === "removed" ? "bg-rose-100 text-rose-700" : "bg-amber-100 text-amber-700"}`}>{row.status}</span>
+                  </div>
+                  {row.before ? <pre className="mt-2 overflow-auto rounded bg-rose-50 px-2 py-1 text-xs text-rose-800">- {row.before}</pre> : null}
+                  {row.after ? <pre className="mt-2 overflow-auto rounded bg-emerald-50 px-2 py-1 text-xs text-emerald-800">+ {row.after}</pre> : null}
+                </div>
+              )) : <p className="text-sm text-[var(--text-muted)]">Run a comparison to inspect changed JSON paths.</p>}
+            </div>
+          </div>
+          <div className="flex flex-wrap gap-2">
+            <CopyButton value={output} />
+            <ToolButton variant="secondary" onClick={() => downloadTextFile("json-diff.txt", output)}>Download</ToolButton>
+          </div>
+        </div>
+      </div>
+    </ToolPanel>
+  );
 }
 
 export function JsonEscape() {
@@ -256,15 +365,31 @@ export function RegexTester() {
   const [pattern, setPattern] = useState("madabase");
   const [flags, setFlags] = useState("gi");
   const [input, setInput] = useState("Madabase builds tools. madabase writes SEO pages.");
+  const [replacement, setReplacement] = useState("toolbox");
   const [output, setOutput] = useState("");
+  const [highlighted, setHighlighted] = useState("");
   const [message, setMessage] = useState("");
   const [tone, setTone] = useState<"success" | "error">("success");
 
   function run() {
     try {
       const regex = new RegExp(pattern, flags);
-      const matches = [...input.matchAll(regex)].map((item) => item[0]);
-      setOutput(matches.length ? matches.join("\n") : "No matches.");
+      const matchRegex = regex.global ? regex : new RegExp(regex.source, `${regex.flags}g`);
+      const matches = [...input.matchAll(matchRegex)];
+      let cursor = 0;
+      const parts: string[] = [];
+      for (const match of matches) {
+        const index = match.index ?? 0;
+        parts.push(escapeHtml(input.slice(cursor, index)));
+        parts.push(`<mark class="rounded bg-amber-200 px-1 text-[var(--text)]">${escapeHtml(match[0])}</mark>`);
+        cursor = index + match[0].length;
+      }
+      parts.push(escapeHtml(input.slice(cursor)));
+      setHighlighted(parts.join(""));
+      setOutput(matches.length ? matches.map((item, index) => {
+        const groups = item.slice(1).map((group, groupIndex) => `  group ${groupIndex + 1}: ${group ?? ""}`).join("\n");
+        return `match ${index + 1}: ${item[0]}\nindex: ${item.index ?? 0}${groups ? `\n${groups}` : ""}`;
+      }).join("\n\n") + `\n\nReplacement preview:\n${input.replace(matchRegex, replacement)}` : "No matches.");
       setMessage(`Found ${matches.length} match${matches.length === 1 ? "" : "es"}.`);
       setTone("success");
       fireAndForgetToolExecution("regex-tester");
@@ -281,12 +406,18 @@ export function RegexTester() {
           <ToolInput label="Pattern" value={pattern} onChange={setPattern} />
           <ToolInput label="Flags" value={flags} onChange={setFlags} />
         </div>
+        <ToolInput label="Replacement" value={replacement} onChange={setReplacement} />
         <ToolTextarea label="Test text" value={input} onChange={setInput} rows={8} />
         <div className="flex flex-wrap gap-2">
           <ToolButton onClick={run}>Test regex</ToolButton>
           <CopyButton value={output} />
+          <ToolButton variant="secondary" onClick={() => downloadTextFile("regex-result.txt", output)}>Download</ToolButton>
         </div>
         <StatusMessage message={message} tone={tone} />
+        <div className="rounded-md border border-[var(--border)] bg-white p-3">
+          <p className="code-font text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-soft)]">Highlighted matches</p>
+          <div className="mt-2 whitespace-pre-wrap text-sm leading-6 text-[var(--text)]" dangerouslySetInnerHTML={{ __html: highlighted || escapeHtml(input) }} />
+        </div>
         <ToolTextarea label="Matches" value={output} readOnly rows={8} />
       </div>
     </ToolPanel>
@@ -296,18 +427,50 @@ export function RegexTester() {
 export function CronGenerator() {
   const [minute, setMinute] = useState("0");
   const [hour, setHour] = useState("9");
-  const expression = `${minute || "*"} ${hour || "*"} * * *`;
+  const [dayOfWeek, setDayOfWeek] = useState("*");
+  const runs = useMemo(() => {
+    const minuteValue = Number(minute);
+    const hourValue = Number(hour);
+    if (!Number.isInteger(minuteValue) || !Number.isInteger(hourValue) || minuteValue < 0 || minuteValue > 59 || hourValue < 0 || hourValue > 23) {
+      return ["Use numeric hour 0-23 and minute 0-59 to preview runs."];
+    }
+    const items: string[] = [];
+    const cursor = new Date();
+    cursor.setSeconds(0, 0);
+    for (let offset = 0; items.length < 5 && offset < 14; offset += 1) {
+      const candidate = new Date(cursor);
+      candidate.setDate(cursor.getDate() + offset);
+      candidate.setHours(hourValue, minuteValue, 0, 0);
+      if (candidate <= cursor) continue;
+      if (dayOfWeek !== "*" && candidate.getDay() !== Number(dayOfWeek)) continue;
+      items.push(candidate.toLocaleString());
+    }
+    return items.length ? items : ["No run in the next 14 days."];
+  }, [dayOfWeek, hour, minute]);
+  const cronExpression = `${minute || "*"} ${hour || "*"} * * ${dayOfWeek || "*"}`;
 
   return (
     <ToolPanel>
       <div className="space-y-4">
-        <div className="grid gap-4 md:grid-cols-2">
+        <div className="grid gap-4 md:grid-cols-3">
           <ToolInput label="Minute" value={minute} onChange={setMinute} />
           <ToolInput label="Hour" value={hour} onChange={setHour} />
+          <ToolInput label="Day of week" value={dayOfWeek} onChange={setDayOfWeek} />
         </div>
-        <ToolTextarea label="Cron expression" value={expression} readOnly rows={4} />
         <div className="flex flex-wrap gap-2">
-          <CopyButton value={expression} />
+          {[
+            ["Daily 9 AM", "0", "9", "*"],
+            ["Hourly", "0", "*", "*"],
+            ["Monday 9 AM", "0", "9", "1"],
+            ["Friday 5 PM", "0", "17", "5"],
+          ].map(([label, nextMinute, nextHour, nextDay]) => (
+            <ToolButton key={label} variant="secondary" onClick={() => { setMinute(nextMinute); setHour(nextHour); setDayOfWeek(nextDay); }}>{label}</ToolButton>
+          ))}
+        </div>
+        <ToolTextarea label="Cron expression" value={cronExpression} readOnly rows={3} />
+        <ToolTextarea label="Next runs" value={runs.join("\n")} readOnly rows={5} />
+        <div className="flex flex-wrap gap-2">
+          <CopyButton value={cronExpression} />
           <ToolButton onClick={() => fireAndForgetToolExecution("cron-generator")}>Generate</ToolButton>
         </div>
       </div>
@@ -328,33 +491,134 @@ export function HashGenerator() {
 }
 
 export function ColorConverter() {
-  return <GenericTextTransformTool label="Hex color" sample="#0f766e" tool="color-converter" transform={(value) => {
-    const normalized = value.replace("#", "");
-    if (normalized.length !== 6) throw new Error("Use a 6-character hex value.");
-    const red = Number.parseInt(normalized.slice(0, 2), 16);
-    const green = Number.parseInt(normalized.slice(2, 4), 16);
-    const blue = Number.parseInt(normalized.slice(4, 6), 16);
-    return `rgb(${red}, ${green}, ${blue})`;
-  }} outputLabel="RGB output" />;
+  const [input, setInput] = useState("#0f766e");
+  const [output, setOutput] = useState("");
+  const [preview, setPreview] = useState("#0f766e");
+  const [message, setMessage] = useState("");
+  const [tone, setTone] = useState<"success" | "error">("success");
+
+  function parseColor(value: string) {
+    const normalized = value.trim();
+    if (/^#[\dA-F]{3}$/i.test(normalized)) {
+      const [, r, g, b] = normalized;
+      return [r, g, b].map((part) => Number.parseInt(`${part}${part}`, 16));
+    }
+    if (/^#[\dA-F]{6}$/i.test(normalized)) {
+      return [normalized.slice(1, 3), normalized.slice(3, 5), normalized.slice(5, 7)].map((part) => Number.parseInt(part, 16));
+    }
+    const rgb = normalized.match(/^rgb\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*\)$/i);
+    if (rgb) return rgb.slice(1).map(Number);
+    throw new Error("Use HEX like #0f766e or RGB like rgb(15, 118, 110).");
+  }
+
+  function convert() {
+    try {
+      const [red, green, blue] = parseColor(input);
+      if ([red, green, blue].some((item) => item < 0 || item > 255)) throw new Error("RGB values must be between 0 and 255.");
+      const max = Math.max(red, green, blue) / 255;
+      const min = Math.min(red, green, blue) / 255;
+      const lightness = (max + min) / 2;
+      const delta = max - min;
+      const saturation = delta === 0 ? 0 : delta / (1 - Math.abs(2 * lightness - 1));
+      let hue = 0;
+      if (delta !== 0) {
+        const r = red / 255;
+        const g = green / 255;
+        const b = blue / 255;
+        hue = max === r ? ((g - b) / delta) % 6 : max === g ? (b - r) / delta + 2 : (r - g) / delta + 4;
+      }
+      const h = Math.round(hue * 60 < 0 ? hue * 60 + 360 : hue * 60);
+      const hex = `#${[red, green, blue].map((item) => item.toString(16).padStart(2, "0")).join("")}`;
+      setPreview(hex);
+      setOutput([`HEX: ${hex}`, `RGB: rgb(${red}, ${green}, ${blue})`, `HSL: hsl(${h}, ${Math.round(saturation * 100)}%, ${Math.round(lightness * 100)}%)`, `CSS variable: --color: ${hex};`].join("\n"));
+      setMessage("Color converted.");
+      setTone("success");
+      fireAndForgetToolExecution("color-converter");
+    } catch (error) {
+      setMessage(error instanceof Error ? error.message : "Unable to convert color.");
+      setTone("error");
+    }
+  }
+
+  return (
+    <ToolPanel>
+      <div className="grid gap-4 lg:grid-cols-[1fr_220px]">
+        <div className="space-y-4">
+          <ToolInput label="Color" value={input} onChange={setInput} />
+          <div className="flex flex-wrap gap-2">
+            <ToolButton onClick={convert}>Convert</ToolButton>
+            <CopyButton value={output} />
+          </div>
+          <StatusMessage message={message} tone={tone} />
+          <ToolTextarea label="Converted values" value={output} readOnly rows={6} />
+        </div>
+        <div className="rounded-md border border-[var(--border)] bg-white p-4">
+          <div className="aspect-square rounded-md border border-[var(--border)]" style={{ background: preview }} />
+          <p className="mt-3 text-sm font-semibold text-[var(--text)]">{preview}</p>
+        </div>
+      </div>
+    </ToolPanel>
+  );
 }
 
 export function PasswordGenerator() {
   const [length, setLength] = useState("16");
-  const output = useMemo(() => {
-    const chars = "ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz23456789!@#$%^&*";
-    const size = Math.max(8, Number(length) || 16);
-    return Array.from({ length: size }, (_, index) => chars[(index * 13 + size * 7) % chars.length]).join("");
-  }, [length]);
+  const [includeUppercase, setIncludeUppercase] = useState(true);
+  const [includeLowercase, setIncludeLowercase] = useState(true);
+  const [includeNumbers, setIncludeNumbers] = useState(true);
+  const [includeSymbols, setIncludeSymbols] = useState(true);
+  const [output, setOutput] = useState("");
+  const [message, setMessage] = useState("");
+
+  function generate() {
+    const pools = [
+      includeUppercase ? "ABCDEFGHJKLMNPQRSTUVWXYZ" : "",
+      includeLowercase ? "abcdefghijkmnopqrstuvwxyz" : "",
+      includeNumbers ? "23456789" : "",
+      includeSymbols ? "!@#$%^&*_-+=" : "",
+    ].filter(Boolean);
+    const chars = pools.join("");
+    const size = Math.max(8, Math.min(128, Number(length) || 16));
+    if (!chars) {
+      setMessage("Choose at least one character set.");
+      return;
+    }
+    const bytes = new Uint32Array(size);
+    crypto.getRandomValues(bytes);
+    setOutput(Array.from(bytes, (item) => chars[item % chars.length]).join(""));
+    setMessage(`Generated a ${size}-character password with ${pools.length} character set${pools.length === 1 ? "" : "s"}.`);
+    fireAndForgetToolExecution("password-generator");
+  }
+
+  useEffect(() => {
+    generate();
+    // Generate once on mount; later changes wait for the explicit button.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <ToolPanel>
       <div className="space-y-4">
         <ToolInput label="Password length" value={length} onChange={setLength} type="number" />
+        <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
+          {[
+            { label: "Uppercase", checked: includeUppercase, setter: setIncludeUppercase },
+            { label: "Lowercase", checked: includeLowercase, setter: setIncludeLowercase },
+            { label: "Numbers", checked: includeNumbers, setter: setIncludeNumbers },
+            { label: "Symbols", checked: includeSymbols, setter: setIncludeSymbols },
+          ].map((option) => (
+            <label key={option.label} className="flex items-center gap-2 rounded-md border border-[var(--border)] bg-white px-3 py-2 text-sm font-semibold text-[var(--text)]">
+              <input type="checkbox" checked={option.checked} onChange={(event) => option.setter(event.target.checked)} />
+              {option.label}
+            </label>
+          ))}
+        </div>
         <ToolTextarea label="Generated password" value={output} readOnly rows={4} />
         <div className="flex flex-wrap gap-2">
           <CopyButton value={output} />
-          <ToolButton onClick={() => fireAndForgetToolExecution("password-generator")}>Generate</ToolButton>
+          <ToolButton onClick={generate}>Generate</ToolButton>
         </div>
+        <StatusMessage message={message} tone="success" />
       </div>
     </ToolPanel>
   );
