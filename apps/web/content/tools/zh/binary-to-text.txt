@@ -1,11 +1,11 @@
 [TITLE]
-免费二进制转文本工具
+在线二进制转文本工具
 [H1]
-免费二进制转文本工具
+在线二进制转文本工具
 [DESCRIPTION]
 将二进制字节串解码为文本。
 [SEO_TITLE]
-免费二进制转文本工具 | Madabase
+在线二进制转文本工具 | Madabase
 [SEO_DESCRIPTION]
 将二进制字节串解码为文本。 在浏览器中快速处理并复制结果。
 [INTRO]
@@ -24,8 +24,8 @@ Madabase 工具
 ===
 处理后的 Madabase 工具
 [FAQ]
-这个二进制转文本工具免费吗？
-是的。当前版本可以在浏览器中免费使用。
+这个二进制转文本工具在线吗？
+是的。当前版本可以在浏览器中在线使用。
 可以处理私密数据吗？
 工具界面在浏览器中运行，但仍建议不要把敏感密钥粘贴到任何网页。
 [RELATED_TOOLS]
@@ -34,7 +34,7 @@ json-formatter
 url-encoder
 [KEYWORDS]
 binary to text
-免费 binary to text
+在线binary to text
 在线 binary to text
 [CATEGORY]
 developer

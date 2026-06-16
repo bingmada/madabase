@@ -1,11 +1,11 @@
 [TITLE]
-免费User Agent 解析器
+在线User Agent 解析器
 [H1]
-免费User Agent 解析器
+在线User Agent 解析器
 [DESCRIPTION]
 从 User Agent 字符串识别浏览器和设备线索。
 [SEO_TITLE]
-免费User Agent 解析器 | Madabase
+在线User Agent 解析器 | Madabase
 [SEO_DESCRIPTION]
 从 User Agent 字符串识别浏览器和设备线索。 在浏览器中快速处理并复制结果。
 [INTRO]
@@ -24,8 +24,8 @@ Madabase 工具
 ===
 处理后的 Madabase 工具
 [FAQ]
-这个User Agent 解析器免费吗？
-是的。当前版本可以在浏览器中免费使用。
+这个User Agent 解析器在线吗？
+是的。当前版本可以在浏览器中在线使用。
 可以处理私密数据吗？
 工具界面在浏览器中运行，但仍建议不要把敏感密钥粘贴到任何网页。
 [RELATED_TOOLS]
@@ -34,7 +34,7 @@ json-formatter
 url-encoder
 [KEYWORDS]
 user agent parser
-免费 user agent parser
+在线user agent parser
 在线 user agent parser
 [CATEGORY]
 web

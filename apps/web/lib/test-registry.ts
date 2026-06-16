@@ -112,6 +112,37 @@ function getExpandedCalculator(slug: string) {
 
 const baseTestRegistry: TestRegistryEntry[] = [
   {
+    slug: "sbti",
+    category: "personality",
+    title: {
+      en: "SBTI Meme Personality Test",
+      zh: "SBTI 抽象人格测试",
+    },
+    description: {
+      en: "A social-media-style meme personality test for humor, self-reflection, and shareable identity labels.",
+      zh: "一套偏社交分享和自我调侃的抽象人格测试，用轻松题目生成你的 SBTI 风格标签。",
+    },
+    questionCount: 31,
+    estimatedMinutes: 5,
+    unlockCost: 5,
+    popular: true,
+    relatedTools: ["zodiac-compatibility", "word-counter", "text-cleaner"],
+    resultTypes: ["CTRL", "ATM", "BOSS", "THANK", "GOGO", "SEXY", "LOVER", "SOLO", "WILD", "ZEN", "SOFT", "HAHA"],
+    seo: {
+      en: {
+        title: "Online SBTI Meme Personality Test",
+        description: "Take a 31-question SBTI-style meme personality test and get a shareable personality label with traits and advice.",
+        keywords: ["SBTI test", "meme personality test", "personality quiz", "online SBTI"],
+      },
+      zh: {
+        title: "在线 SBTI 抽象人格测试",
+        description: "完成 31 道 SBTI 风格趣味题，获得可分享的人格标签、特质解析和相处建议。",
+        keywords: ["SBTI 测试", "抽象人格测试", "人格测试", "在线 SBTI"],
+      },
+    },
+    calculator: calculateTopScore,
+  },
+  {
     slug: "mbti",
     category: "personality",
     title: {
@@ -130,14 +161,14 @@ const baseTestRegistry: TestRegistryEntry[] = [
     resultTypes: mbtiResultTypes,
     seo: {
       en: {
-        title: "Free MBTI Personality Test Online",
+        title: "Online MBTI Personality Test",
         description: "Take a 60-question MBTI-style personality test and discover your type, traits, strengths, and growth direction.",
-        keywords: ["mbti test", "personality test", "free mbti test", "personality type"],
+        keywords: ["mbti test", "personality test", "online mbti test", "personality type"],
       },
       zh: {
-        title: "免费 MBTI 人格测试在线版",
+        title: "在线 MBTI 人格测试",
         description: "完成 60 道 MBTI 风格人格测试题，了解你的人格类型、特质、优势与成长方向。",
-        keywords: ["MBTI 测试", "人格测试", "免费 MBTI", "性格测试"],
+        keywords: ["MBTI 测试", "人格测试", "在线 MBTI", "性格测试"],
       },
     },
     calculator: calculateMbti,
@@ -158,12 +189,12 @@ const baseTestRegistry: TestRegistryEntry[] = [
     resultTypes: ["REALISTIC", "INVESTIGATIVE", "ARTISTIC", "SOCIAL", "ENTERPRISING", "CONVENTIONAL"],
     seo: {
       en: {
-        title: "Free Career Interest Test Online",
+        title: "Online Career Interest Test",
         description: "Take a practical career interest test inspired by RIASEC dimensions and discover your strongest work preference.",
         keywords: ["career test", "career interest test", "riasec test", "career aptitude"],
       },
       zh: {
-        title: "免费职业兴趣测试在线版",
+        title: "在线职业兴趣测试",
         description: "基于 RIASEC 六维职业兴趣框架完成职业兴趣测试，找到更匹配你的工作方向。",
         keywords: ["职业兴趣测试", "霍兰德测试", "职业测试", "职业倾向"],
       },
@@ -186,12 +217,12 @@ const baseTestRegistry: TestRegistryEntry[] = [
     resultTypes: ["WORDS", "TIME", "ACTS", "GIFTS", "TOUCH"],
     seo: {
       en: {
-        title: "Free Love Language Test Online",
+        title: "Online Love Language Test",
         description: "Take a 30-question relationship communication test and discover your primary love language.",
         keywords: ["love language test", "relationship test", "communication style test"],
       },
       zh: {
-        title: "免费爱的语言测试在线版",
+        title: "在线爱的语言测试",
         description: "完成 30 道亲密关系沟通测试，了解你的主要爱的语言。",
         keywords: ["爱的语言测试", "亲密关系测试", "恋爱测试", "关系沟通"],
       },
@@ -213,12 +244,12 @@ const baseTestRegistry: TestRegistryEntry[] = [
     resultTypes: ["LOW", "MODERATE", "HIGH", "SEVERE"],
     seo: {
       en: {
-        title: "Free Burnout Risk Check Online",
+        title: "Online Burnout Risk Check",
         description: "Take a 30-question burnout risk check for work stress, recovery, motivation, and emotional load.",
         keywords: ["burnout test", "work stress test", "burnout risk", "stress check"],
       },
       zh: {
-        title: "免费职业倦怠风险测试在线版",
+        title: "在线职业倦怠风险测试",
         description: "通过 30 道题评估工作压力、恢复状态、动机与情绪负荷，了解你的倦怠风险。",
         keywords: ["职业倦怠测试", "压力测试", "工作压力", "倦怠风险"],
       },
@@ -240,12 +271,12 @@ const baseTestRegistry: TestRegistryEntry[] = [
     resultTypes: ["VISUAL", "VERBAL", "HANDS_ON", "STRUCTURED"],
     seo: {
       en: {
-        title: "Free Learning Style Test Online",
+        title: "Online Learning Style Test",
         description: "Take a practical learning style test and discover whether visual, verbal, hands-on, or structured study fits you best.",
         keywords: ["learning style test", "study style test", "visual learner", "learning preference"],
       },
       zh: {
-        title: "免费学习风格测试在线版",
+        title: "在线学习风格测试",
         description: "完成学习风格测试，了解视觉、语言、实践或结构化学习哪种方式更适合你。",
         keywords: ["学习风格测试", "学习方式测试", "学习偏好", "学习效率"],
       },

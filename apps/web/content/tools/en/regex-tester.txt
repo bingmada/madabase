@@ -1,17 +1,17 @@
 [TITLE]
-Free Online Regex Tester
+Online Regex Tester
 [H1]
-Free Regex Tester Online
+Online Regex Tester
 [DESCRIPTION]
 Test regular expressions against sample text with real-time matching. Supports JavaScript regex syntax.
 [SEO_TITLE]
-Free Regex Tester Online - Test Regular Expressions Instantly
+Online Regex Tester - Test Regular Expressions Instantly
 [SEO_DESCRIPTION]
 Test regular expressions against sample text with real-time matching and highlighting. Supports JavaScript regex syntax. No data upload.
 [INTRO]
 Regular expressions (regex) are powerful patterns used to match character combinations in text. They are essential tools for developers working with text processing, form validation, search-and-replace operations, and data extraction. Writing and testing regex patterns can be challenging, especially for complex patterns.
 
-This free online regex tester allows you to test your regular expressions against sample text in real-time. Matches are highlighted immediately as you type, making it easy to debug and refine your patterns. The tool supports JavaScript regex syntax, which is widely used in web development.
+This online regex tester allows you to test your regular expressions against sample text in real-time. Matches are highlighted immediately as you type, making it easy to debug and refine your patterns. The tool supports JavaScript regex syntax, which is widely used in web development.
 
 Regular expressions are used in many scenarios: validating user input (email, phone numbers), extracting data from text (log parsing), search and replace operations in text editors, and data transformation pipelines. Learning regex is a valuable skill for any developer working with text.
 [HOW_TO_USE]

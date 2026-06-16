@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   if (!test) return {};
 
   return buildPageMetadata({
-    title: locale === "en" ? `Start ${test.title.en}` : `开始${test.title.zh}`,
+    title: locale === "en" ? `Start ${test.title.en}` : `开始 ${test.title.zh}`,
     description: test.description[locale],
     locale,
     path: `/tests/${slug}/start`,

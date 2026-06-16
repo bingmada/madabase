@@ -1,17 +1,17 @@
 [TITLE]
-免费在线 HTML 编码器
+在线 HTML 编码器
 [H1]
-免费 HTML Encoder 工具
+在线HTML Encoder 工具
 [DESCRIPTION]
 编码 HTML 实体并转义特殊字符以安全显示。
 [SEO_TITLE]
-免费 HTML 编码器 - 安全转义 HTML 字符
+在线HTML 编码器 - 安全转义 HTML 字符
 [SEO_DESCRIPTION]
 编码 HTML 实体并转义特殊字符以便安全插入 HTML 文档。对于防止 XSS 和显示用户内容必不可少。
 [INTRO]
 HTML 编码将特殊字符转换为其 HTML 实体等效项。这对于安全显示用户生成的内容、防止 XSS 攻击以及确保特殊字符在 HTML 文档中正确呈现至关重要。
 
-这款免费的在线 HTML 编码器将特殊字符如 <、>、&、" 和 ' 转换为其 HTML 实体等效项（&lt;、&gt;、&amp;、&quot;、&#39;）。无论你是准备 HTML 内容、清理用户输入还是调试编码问题，这个工具让 HTML 编码变得轻松。
+这款在线的在线 HTML 编码器将特殊字符如 <、>、&、" 和 ' 转换为其 HTML 实体等效项（&lt;、&gt;、&amp;、&quot;、&#39;）。无论你是准备 HTML 内容、清理用户输入还是调试编码问题，这个工具让 HTML 编码变得轻松。
 
 HTML 编码是任何显示用户内容的应用程序的基本安全实践。
 [HOW_TO_USE]

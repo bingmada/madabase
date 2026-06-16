@@ -1,11 +1,11 @@
 [TITLE]
-Free User Agent Parser Online
+Online User Agent Parser
 [H1]
-Free User Agent Parser Online
+Online User Agent Parser
 [DESCRIPTION]
 Inspect browser and device hints from user agent strings.
 [SEO_TITLE]
-Free User Agent Parser Online | Madabase
+Online User Agent Parser | Madabase
 [SEO_DESCRIPTION]
 Inspect browser and device hints from user agent strings. Run it locally in your browser with a clean copyable output.
 [INTRO]
@@ -24,8 +24,8 @@ Madabase tools
 ===
 Processed Madabase tools
 [FAQ]
-Is this user agent parser free?
-Yes. The first release is free to use in your browser.
+Is this user agent parser online?
+Yes. The first release is online to use in your browser.
 Can I use private data?
 The tool runs locally in the browser UI, but you should still avoid pasting secrets into any web page you do not control.
 [RELATED_TOOLS]
@@ -34,7 +34,7 @@ json-formatter
 url-encoder
 [KEYWORDS]
 user agent parser
-free user agent parser
+online user agent parser
 online user agent parser
 [CATEGORY]
 web

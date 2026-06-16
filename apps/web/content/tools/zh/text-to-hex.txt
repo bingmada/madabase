@@ -1,11 +1,11 @@
 [TITLE]
-免费文本转 Hex 工具
+在线文本转 Hex 工具
 [H1]
-免费文本转 Hex 工具
+在线文本转 Hex 工具
 [DESCRIPTION]
 将文本编码为十六进制字节。
 [SEO_TITLE]
-免费文本转 Hex 工具 | Madabase
+在线文本转 Hex 工具 | Madabase
 [SEO_DESCRIPTION]
 将文本编码为十六进制字节。 在浏览器中快速处理并复制结果。
 [INTRO]
@@ -24,8 +24,8 @@ Madabase 工具
 ===
 处理后的 Madabase 工具
 [FAQ]
-这个文本转 Hex 工具免费吗？
-是的。当前版本可以在浏览器中免费使用。
+这个文本转 Hex 工具在线吗？
+是的。当前版本可以在浏览器中在线使用。
 可以处理私密数据吗？
 工具界面在浏览器中运行，但仍建议不要把敏感密钥粘贴到任何网页。
 [RELATED_TOOLS]
@@ -34,7 +34,7 @@ json-formatter
 url-encoder
 [KEYWORDS]
 text to hex
-免费 text to hex
+在线text to hex
 在线 text to hex
 [CATEGORY]
 developer

@@ -1,17 +1,17 @@
 [TITLE]
-Free Online Case Converter
+Online Case Converter
 [H1]
-Free Case Converter Online
+Online Case Converter
 [DESCRIPTION]
 Convert text between different cases: uppercase, lowercase, title case, sentence case.
 [SEO_TITLE]
-Free Case Converter Online - Change Text Case Instantly
+Online Case Converter - Change Text Case Instantly
 [SEO_DESCRIPTION]
-Convert text to uppercase, lowercase, title case, or sentence case instantly. Fast, free, and works entirely in your browser.
+Convert text to uppercase, lowercase, title case, or sentence case instantly. Fast, online, and works entirely in your browser.
 [INTRO]
 Text case conversion is a common task when working with programming identifiers, titles, headings, and user-generated content. Different contexts require different casing styles: snake_case for programming variables, Title Case for headings, or sentence case for paragraphs.
 
-This free online case converter transforms text between common case formats instantly. Whether you are formatting code, standardizing data, or preparing content, this tool makes case conversion effortless.
+This online case converter transforms text between common case formats instantly. Whether you are formatting code, standardizing data, or preparing content, this tool makes case conversion effortless.
 
 Understanding when to use each case style is important for code quality and consistent content presentation.
 [HOW_TO_USE]

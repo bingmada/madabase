@@ -1,5 +1,5 @@
 [TITLE]
-Free Online JSON to TypeScript Converter
+Online JSON to TypeScript Converter
 [H1]
 JSON to TypeScript Interface Generator
 [DESCRIPTION]
@@ -11,7 +11,7 @@ Generate TypeScript interfaces from JSON samples automatically. Includes proper 
 [INTRO]
 TypeScript interfaces provide type safety for your JavaScript applications. When working with API responses or configuration data, manually creating interfaces can be tedious and error-prone. A JSON to TypeScript converter automates this process.
 
-This free online tool generates TypeScript interfaces from JSON samples instantly. Simply paste your JSON, and the tool creates properly typed TypeScript interfaces with correct array types, optional fields, and nested object types.
+This online tool generates TypeScript interfaces from JSON samples instantly. Simply paste your JSON, and the tool creates properly typed TypeScript interfaces with correct array types, optional fields, and nested object types.
 
 The generated TypeScript code is clean, properly formatted, and ready to use in your TypeScript projects.
 [HOW_TO_USE]

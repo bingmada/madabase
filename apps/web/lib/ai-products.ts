@@ -16,8 +16,8 @@ export const aiProducts: AiProduct[] = [
       zh: "把粗略需求转成适合编程、写作和分析工作流的结构化 Prompt。",
     },
     features: {
-      en: ["Prompt rewriting", "Output structure suggestions", "Free daily usage limit", "Pro unlimited usage planned"],
-      zh: ["Prompt 改写", "输出结构建议", "免费每日次数限制", "规划 Pro 无限使用"],
+      en: ["Prompt rewriting", "Output structure suggestions", "Daily usage limit", "Pro unlimited usage planned"],
+      zh: ["Prompt 改写", "输出结构建议", "在线每日次数限制", "规划 Pro 无限使用"],
     },
   },
   {

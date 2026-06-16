@@ -1,17 +1,17 @@
 [TITLE]
-Free Online JWT Decoder
+Online JWT Decoder
 [H1]
-Free JWT Decoder Online
+Online JWT Decoder
 [DESCRIPTION]
 Decode JWT tokens and inspect header, payload, and signature instantly in your browser.
 [SEO_TITLE]
-Free JWT Decoder Online - Decode JWT Tokens Instantly
+Online JWT Decoder - Decode JWT Tokens Instantly
 [SEO_DESCRIPTION]
 Decode JWT tokens instantly in your browser. Inspect header, payload, and signature without sending data to any server.
 [INTRO]
 JSON Web Tokens (JWT) are a popular method for securely transmitting information between parties as JSON objects. They are widely used in modern authentication systems, particularly for single-page applications and microservices architectures. Understanding the structure of JWT tokens is essential for developers debugging authentication flows, inspecting claims, or troubleshooting token-related issues.
 
-This free online JWT decoder allows you to inspect JWT tokens without any server interaction. Paste a JWT token and instantly see its three parts: the header, the payload (containing the claims), and the signature. The tool runs entirely in your browser, so your tokens never leave your device.
+This online JWT decoder allows you to inspect JWT tokens without any server interaction. Paste a JWT token and instantly see its three parts: the header, the payload (containing the claims), and the signature. The tool runs entirely in your browser, so your tokens never leave your device.
 
 JWTs are commonly used for user authentication, API authorization, and information exchange. They consist of three Base64URL-encoded parts separated by dots: the header (algorithm and token type), the payload (claims), and the signature (verification). This modular structure makes JWTs efficient and scalable for distributed systems.
 [HOW_TO_USE]

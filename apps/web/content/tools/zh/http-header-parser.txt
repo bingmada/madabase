@@ -1,11 +1,11 @@
 [TITLE]
-免费HTTP Header 解析器
+在线HTTP Header 解析器
 [H1]
-免费HTTP Header 解析器
+在线HTTP Header 解析器
 [DESCRIPTION]
 将 HTTP 头解析为结构化 JSON。
 [SEO_TITLE]
-免费HTTP Header 解析器 | Madabase
+在线HTTP Header 解析器 | Madabase
 [SEO_DESCRIPTION]
 将 HTTP 头解析为结构化 JSON。 在浏览器中快速处理并复制结果。
 [INTRO]
@@ -24,8 +24,8 @@ Madabase 工具
 ===
 处理后的 Madabase 工具
 [FAQ]
-这个HTTP Header 解析器免费吗？
-是的。当前版本可以在浏览器中免费使用。
+这个HTTP Header 解析器在线吗？
+是的。当前版本可以在浏览器中在线使用。
 可以处理私密数据吗？
 工具界面在浏览器中运行，但仍建议不要把敏感密钥粘贴到任何网页。
 [RELATED_TOOLS]
@@ -34,7 +34,7 @@ json-formatter
 url-encoder
 [KEYWORDS]
 http header parser
-免费 http header parser
+在线http header parser
 在线 http header parser
 [CATEGORY]
 developer

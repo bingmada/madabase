@@ -14,8 +14,8 @@ import { getToolsByCategory, getCategories, type ToolCategory } from "@/lib/tool
 
 const categoryMeta: Record<ToolCategory, { en: { title: string; description: string; keywords: string[] }; zh: { title: string; description: string; keywords: string[] } }> = {
   developer: {
-    en: { title: "Developer Tools", description: "Free browser-based developer tools for JSON, JWT, SQL, regex, timestamps, and more. No sign-up required.", keywords: ["developer tools", "json tools", "jwt decoder", "sql formatter", "regex tester", "timestamp converter"] },
-    zh: { title: "开发者工具", description: "免费的浏览器端开发者工具，覆盖 JSON、JWT、SQL、正则、时间戳等。无需注册。", keywords: ["开发者工具", "json 工具", "jwt 解码器", "sql 格式化", "正则测试", "时间戳转换"] },
+    en: { title: "Developer Tools", description: "Online browser-based developer tools for JSON, JWT, SQL, regex, timestamps, and more. No sign-up required.", keywords: ["developer tools", "json tools", "jwt decoder", "sql formatter", "regex tester", "timestamp converter"] },
+    zh: { title: "开发者工具", description: "在线的浏览器端开发者工具，覆盖 JSON、JWT、SQL、正则、时间戳等。无需注册。", keywords: ["开发者工具", "json 工具", "jwt 解码器", "sql 格式化", "正则测试", "时间戳转换"] },
   },
   web: {
     en: { title: "Web Tools", description: "Encoding, HTML, CSS, URLs, QR codes, and web workflow tools. All running locally in your browser.", keywords: ["web tools", "html formatter", "css formatter", "url encoder", "qr code generator"] },

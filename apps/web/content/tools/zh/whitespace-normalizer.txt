@@ -1,11 +1,11 @@
 [TITLE]
-免费空白字符规范化工具
+在线空白字符规范化工具
 [H1]
-免费空白字符规范化工具
+在线空白字符规范化工具
 [DESCRIPTION]
 规范化多余空格、制表符和换行。
 [SEO_TITLE]
-免费空白字符规范化工具 | Madabase
+在线空白字符规范化工具 | Madabase
 [SEO_DESCRIPTION]
 规范化多余空格、制表符和换行。 在浏览器中快速处理并复制结果。
 [INTRO]
@@ -24,8 +24,8 @@ Madabase 工具
 ===
 处理后的 Madabase 工具
 [FAQ]
-这个空白字符规范化工具免费吗？
-是的。当前版本可以在浏览器中免费使用。
+这个空白字符规范化工具在线吗？
+是的。当前版本可以在浏览器中在线使用。
 可以处理私密数据吗？
 工具界面在浏览器中运行，但仍建议不要把敏感密钥粘贴到任何网页。
 [RELATED_TOOLS]
@@ -34,7 +34,7 @@ json-formatter
 url-encoder
 [KEYWORDS]
 whitespace normalizer
-免费 whitespace normalizer
+在线whitespace normalizer
 在线 whitespace normalizer
 [CATEGORY]
 text

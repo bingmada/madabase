@@ -6,7 +6,7 @@ import { ResetButton, StatusMessage, ToolButton, ToolPanel, ToolTextarea } from 
 
 const sample = `# Madabase
 
-Free developer tools today.
+Online developer tools today.
 
 - JSON Formatter
 - JWT Decoder

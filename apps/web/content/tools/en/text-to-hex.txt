@@ -1,11 +1,11 @@
 [TITLE]
-Free Text to Hex Converter Online
+Online Text to Hex Converter
 [H1]
-Free Text to Hex Converter Online
+Online Text to Hex Converter
 [DESCRIPTION]
 Encode text as hexadecimal bytes.
 [SEO_TITLE]
-Free Text to Hex Converter Online | Madabase
+Online Text to Hex Converter | Madabase
 [SEO_DESCRIPTION]
 Encode text as hexadecimal bytes. Run it locally in your browser with a clean copyable output.
 [INTRO]
@@ -24,8 +24,8 @@ Madabase tools
 ===
 Processed Madabase tools
 [FAQ]
-Is this text to hex converter free?
-Yes. The first release is free to use in your browser.
+Is this text to hex converter online?
+Yes. The first release is online to use in your browser.
 Can I use private data?
 The tool runs locally in the browser UI, but you should still avoid pasting secrets into any web page you do not control.
 [RELATED_TOOLS]
@@ -34,7 +34,7 @@ json-formatter
 url-encoder
 [KEYWORDS]
 text to hex
-free text to hex
+online text to hex
 online text to hex
 [CATEGORY]
 developer

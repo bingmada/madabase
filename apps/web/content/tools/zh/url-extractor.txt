@@ -1,11 +1,11 @@
 [TITLE]
-免费链接提取工具
+在线链接提取工具
 [H1]
-免费链接提取工具
+在线链接提取工具
 [DESCRIPTION]
 从文档、日志和消息中提取链接。
 [SEO_TITLE]
-免费链接提取工具 | Madabase
+在线链接提取工具 | Madabase
 [SEO_DESCRIPTION]
 从文档、日志和消息中提取链接。 在浏览器中快速处理并复制结果。
 [INTRO]
@@ -24,8 +24,8 @@ Madabase 工具
 ===
 处理后的 Madabase 工具
 [FAQ]
-这个链接提取工具免费吗？
-是的。当前版本可以在浏览器中免费使用。
+这个链接提取工具在线吗？
+是的。当前版本可以在浏览器中在线使用。
 可以处理私密数据吗？
 工具界面在浏览器中运行，但仍建议不要把敏感密钥粘贴到任何网页。
 [RELATED_TOOLS]
@@ -34,7 +34,7 @@ json-formatter
 url-encoder
 [KEYWORDS]
 url extractor
-免费 url extractor
+在线url extractor
 在线 url extractor
 [CATEGORY]
 web

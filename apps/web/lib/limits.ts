@@ -1,14 +1,14 @@
 import { premiumFeatures, type PremiumFeature } from "./features";
 
 export type ToolLimitConfig = {
-  freePerDay: number;
+  onlinePerDay: number;
   premiumPerDay: number | "unlimited";
   feature?: PremiumFeature;
 };
 
 export const toolLimits: Partial<Record<string, ToolLimitConfig>> = {
   "json-formatter": {
-    freePerDay: 100,
+    onlinePerDay: 100,
     premiumPerDay: "unlimited",
     feature: "large_file",
   },
@@ -53,7 +53,7 @@ export function getToolLimit(toolSlug: string) {
   return toolLimits[toolSlug] ?? null;
 }
 
-export function getRemainingFreeUses(toolSlug: string) {
+export function getRemainingOnlineUses(toolSlug: string) {
   const config = getToolLimit(toolSlug);
   if (!config) return null;
 
@@ -61,7 +61,7 @@ export function getRemainingFreeUses(toolSlug: string) {
   const key = getUsageKey(toolSlug);
   const today = getDayBucket(Date.now());
   const usesToday = (store[key] ?? []).filter((timestamp) => getDayBucket(timestamp) === today).length;
-  return Math.max(config.freePerDay - usesToday, 0);
+  return Math.max(config.onlinePerDay - usesToday, 0);
 }
 
 export function canExecuteTool(toolSlug: string) {
@@ -74,7 +74,7 @@ export function canExecuteTool(toolSlug: string) {
     return { allowed: true as const, remaining: null as number | null, reason: null as string | null };
   }
 
-  const remaining = getRemainingFreeUses(toolSlug);
+  const remaining = getRemainingOnlineUses(toolSlug);
   if (remaining === null || remaining > 0) {
     return { allowed: true as const, remaining, reason: null as string | null };
   }
@@ -82,7 +82,7 @@ export function canExecuteTool(toolSlug: string) {
   return {
     allowed: false as const,
     remaining: 0,
-    reason: `Daily free limit reached for ${toolSlug}.`,
+    reason: `Daily online usage limit reached for ${toolSlug}.`,
   };
 }
 
@@ -107,7 +107,7 @@ export function recordToolExecution(toolSlug: string) {
 
   return {
     allowed: true as const,
-    remaining: getRemainingFreeUses(toolSlug),
+    remaining: getRemainingOnlineUses(toolSlug),
     reason: null as string | null,
   };
 }

@@ -9,7 +9,6 @@ import { AdSlot } from "@/components/AdSlot";
 import { JsonLd, buildBreadcrumbSchema } from "@/components/JsonLd";
 import { PopularToolsClient } from "@/components/PopularToolsClient";
 import { PersonalizedToolsPanel } from "@/components/PersonalizedToolsPanel";
-import { isPremium, premiumFeatures } from "@/lib/features";
 import { getLatestBlogPosts } from "@/lib/blog";
 import { buildAbsoluteUrl, buildPageMetadata } from "@/lib/seo";
 import { getCategoryLabel, isLocale, locales, testCategoryLabels, type Locale } from "@/lib/i18n";
@@ -55,11 +54,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     title: locale === "en" ? "Madabase - AI & Developer Tools" : "Madabase - AI 与开发者工具",
     description:
       locale === "en"
-        ? "Madabase is an SEO-first platform for free online developer tools, productivity resources, and future AI workflows."
-        : "Madabase 是一个 SEO 优先的免费在线开发者工具、生产力内容与未来 AI 工作流平台。",
+        ? "Madabase is an SEO-first platform for online developer tools, productivity resources, and future AI workflows."
+        : "Madabase 是一个 SEO 优先的在线开发者工具、生产力内容与未来 AI 工作流平台。",
     locale,
     path: "/",
-    keywords: ["developer tools", "ai tools", "online formatter", "madabase", "free online tools"],
+    keywords: ["developer tools", "ai tools", "online formatter", "madabase", "online tools"],
   });
 }
 
@@ -94,32 +93,24 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
     en: {
       eyebrow: "AI & Developer Tools",
       title: "Madabase",
-      description: "A growing library of free browser-first tools, SEO-friendly landing pages, and practical content designed to earn search traffic.",
+      description: "A growing library of browser-first online tools, SEO-friendly landing pages, and practical content designed to earn search traffic.",
       primaryCta: "Explore Tools",
       secondaryCta: "Take Tests",
       popular: "Popular Tools",
       tests: "Popular Tests",
       categories: "Categories",
       latestBlog: "Latest Blog",
-      premiumPreview: "Premium Preview",
-      premiumDescription: "Feature flags are now in place for future upgrades like ad-free usage, larger files, and export workflows.",
-      featureOn: "Enabled",
-      featureOff: "Coming soon",
     },
     zh: {
       eyebrow: "AI 与开发者工具",
       title: "Madabase",
-      description: "一个持续增长的免费浏览器工具与 SEO 内容平台，专注获取搜索流量并承接未来 AI 产品。",
+      description: "一个持续增长的在线浏览器工具与 SEO 内容平台，专注获取搜索流量并承接未来 AI 产品。",
       primaryCta: "探索工具",
       secondaryCta: "开始测试",
       popular: "热门工具",
       tests: "热门测试",
       categories: "分类",
       latestBlog: "最新博客",
-      premiumPreview: "高级功能预览",
-      premiumDescription: "已为未来升级版能力预留 feature flags，包括去广告、大文件处理与导出流程。",
-      featureOn: "已启用",
-      featureOff: "即将推出",
     },
   }[locale];
 
@@ -135,36 +126,19 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         <JsonLd id="home-breadcrumbs" data={breadcrumbSchema} />
         <PageViewTracker locale={locale} />
         <AdSlot locale={locale} position="header" size="banner" />
-        <section className="surface-card-strong overflow-hidden">
-          <div className="grid gap-0 lg:grid-cols-[1.05fr_0.95fr]">
-            <div className="p-6 sm:p-8 lg:p-10">
-              <p className="eyebrow">{copy.eyebrow}</p>
-              <h1 className="mt-5 text-5xl font-black tracking-tight text-[var(--text)] sm:text-6xl">{copy.title}</h1>
-              <p className="mt-5 max-w-2xl text-lg leading-8 text-[var(--text-muted)]">{copy.description}</p>
-              <div className="mt-7 flex flex-wrap gap-3">
-                <Link href={`/${locale}/tools`} className="inline-flex h-11 items-center rounded-md bg-[var(--surface-code)] px-4 text-sm font-semibold text-white shadow-sm transition hover:bg-[var(--brand-strong)]">
-                  {copy.primaryCta}
-                </Link>
-                <Link href={`/${locale}/tests`} className="inline-flex h-11 items-center rounded-md border border-[var(--border)] bg-white px-4 text-sm font-semibold text-[var(--text)] transition hover:border-[var(--brand)]">
-                  {copy.secondaryCta}
-                </Link>
-              </div>
-              <PopularToolsClient locale={locale} />
-            </div>
-            <div className="workbench-grid border-t border-[var(--border)] bg-[var(--surface-muted)] p-5 lg:border-l lg:border-t-0">
-              <div className="rounded-md border border-[var(--border-strong)] bg-[var(--surface-code)] p-4 text-white shadow-[var(--shadow-panel)]">
-                <div className="mb-4 flex items-center justify-between border-b border-white/10 pb-3">
-                  <span className="code-font text-xs uppercase tracking-[0.18em] text-teal-100">madabase.run</span>
-                  <span className="h-2 w-2 rounded-full bg-[var(--success)]" />
-                </div>
-                <div className="code-font space-y-2 text-sm text-[#dbe4df]">
-                  <p><span className="text-amber-300">$</span> tools.count {toolRegistry.length}</p>
-                  <p><span className="text-amber-300">$</span> locales {locales.length}</p>
-                  <p><span className="text-amber-300">$</span> route /{locale}/tools/json-formatter</p>
-                </div>
-              </div>
-            </div>
+        <section className="surface-card-strong p-6 sm:p-8 lg:p-10">
+          <p className="eyebrow">{copy.eyebrow}</p>
+          <h1 className="mt-5 text-5xl font-black tracking-tight text-[var(--text)] sm:text-6xl">{copy.title}</h1>
+          <p className="mt-5 max-w-3xl text-lg leading-8 text-[var(--text-muted)]">{copy.description}</p>
+          <div className="mt-7 flex flex-wrap gap-3">
+            <Link href={`/${locale}/tools`} className="inline-flex h-11 items-center rounded-md bg-[var(--surface-code)] px-4 text-sm font-semibold text-white shadow-sm transition hover:bg-[var(--brand-strong)]">
+              {copy.primaryCta}
+            </Link>
+            <Link href={`/${locale}/tests`} className="inline-flex h-11 items-center rounded-md border border-[var(--border)] bg-white px-4 text-sm font-semibold text-[var(--text)] transition hover:border-[var(--brand)]">
+              {copy.secondaryCta}
+            </Link>
           </div>
+          <PopularToolsClient locale={locale} />
         </section>
 
         <PersonalizedToolsPanel locale={locale} />
@@ -225,7 +199,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           <AdSlot locale={locale} position="content" size="native" />
         </section>
 
-        <section className="mt-14 grid gap-5 lg:grid-cols-[1.2fr_0.8fr]">
+        <section className="mt-14">
           <div className="surface-card p-5">
             <div className="mb-5 flex items-end justify-between gap-4">
               <h2 className="text-2xl font-bold text-[var(--text)]">{copy.latestBlog}</h2>
@@ -238,21 +212,6 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                   <h3 className="mt-2 text-lg font-semibold text-[var(--text)]">{post.title}</h3>
                   <p className="mt-2 text-sm leading-6 text-[var(--text-muted)]">{post.description}</p>
                 </Link>
-              ))}
-            </div>
-          </div>
-
-          <div className="surface-card p-5">
-            <h2 className="text-2xl font-bold text-[var(--text)]">{copy.premiumPreview}</h2>
-            <p className="mt-3 text-sm leading-6 text-[var(--text-muted)]">{copy.premiumDescription}</p>
-            <div className="mt-5 space-y-3">
-              {Object.keys(premiumFeatures).map((feature) => (
-                <div key={feature} className="flex items-center justify-between rounded-md border border-[var(--border)] bg-white px-4 py-3">
-                  <span className="code-font text-sm text-[var(--text)]">{feature}</span>
-                  <span className={`rounded-full px-2.5 py-1 text-xs font-semibold ${isPremium(feature as keyof typeof premiumFeatures) ? "bg-emerald-100 text-emerald-700" : "bg-amber-100 text-amber-700"}`}>
-                    {isPremium(feature as keyof typeof premiumFeatures) ? copy.featureOn : copy.featureOff}
-                  </span>
-                </div>
               ))}
             </div>
           </div>

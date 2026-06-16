@@ -1,17 +1,17 @@
 [TITLE]
-免费在线 XML 格式化工具
+在线 XML 格式化工具
 [H1]
-免费 XML 格式化工具
+在线XML 格式化工具
 [DESCRIPTION]
 格式化和美化 XML 文档以提高可读性。
 [SEO_TITLE]
-免费 XML 格式化工具 - 在线美化 XML
+在线XML 格式化工具 - 在线美化 XML
 [SEO_DESCRIPTION]
 即时格式化和美化 XML 文档。修复缩进、校验语法、清理 XML。对于 API 开发者和数据工程师必不可少。
 [INTRO]
 XML（eXtensible Markup Language）是一种用于编码文档和数据结构的标记语言。虽然在 API 中不如 JSON 常见，但 XML 仍然广泛用于企业系统、SOAP API、RSS 订阅源和配置文件。
 
-这款免费的在线 XML 格式化工具即时美化你的 XML 文档。无论你是处理 SOAP API、RSS 订阅源、配置文件还是数据交换格式，这个工具帮助你保持可读的 XML。
+这款在线的在线 XML 格式化工具即时美化你的 XML 文档。无论你是处理 SOAP API、RSS 订阅源、配置文件还是数据交换格式，这个工具帮助你保持可读的 XML。
 
 适当的 XML 格式对于调试、代码审查和维护基于 XML 的系统至关重要。
 [HOW_TO_USE]

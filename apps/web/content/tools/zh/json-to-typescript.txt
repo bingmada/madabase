@@ -1,5 +1,5 @@
 [TITLE]
-免费在线 JSON 转 TypeScript 工具
+在线 JSON 转 TypeScript 工具
 [H1]
 JSON 转 TypeScript Interface 生成器
 [DESCRIPTION]
@@ -11,7 +11,7 @@ JSON 转 TypeScript Interface 生成器 - JSON 转类型
 [INTRO]
 TypeScript 接口为你的 JavaScript 应用程序提供类型安全。在处理 API 响应或配置数据时，手动创建接口可能既繁琐又容易出错。JSON 转 TypeScript 转换器可以自动完成这一过程。
 
-这款免费的在线工具从 JSON 示例即时生成 TypeScript 接口。只需粘贴你的 JSON，工具就会创建带有正确数组类型、可选字段和嵌套对象类型的正确类型化 TypeScript 接口。
+这款在线的在线工具从 JSON 示例即时生成 TypeScript 接口。只需粘贴你的 JSON，工具就会创建带有正确数组类型、可选字段和嵌套对象类型的正确类型化 TypeScript 接口。
 
 生成的 TypeScript 代码干净、格式正确，可以在你的 TypeScript 项目中直接使用。
 [HOW_TO_USE]

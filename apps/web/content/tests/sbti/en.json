@@ -1,0 +1,1910 @@
+{
+  "title": "SBTI Meme Personality Test",
+  "description": "Answer 31 playful but concrete prompts to get an SBTI-style meme personality label for self-reflection and sharing.",
+  "instructions": [
+    "Answer based on your recent real behavior, not your ideal self.",
+    "This is a playful self-reflection quiz, not a clinical or scientific diagnosis.",
+    "No label is better than another; use the result as a conversation starter."
+  ],
+  "reportLabels": {
+    "strengths": "Highlights",
+    "weaknesses": "Watchouts",
+    "careers": "Good scenarios",
+    "relationships": "Relationship notes",
+    "growth": "Growth plan"
+  },
+  "scale": [
+    {
+      "id": "1",
+      "text": "Not me at all",
+      "value": 1
+    },
+    {
+      "id": "2",
+      "text": "A little like me",
+      "value": 2
+    },
+    {
+      "id": "3",
+      "text": "Depends",
+      "value": 3
+    },
+    {
+      "id": "4",
+      "text": "Quite like me",
+      "value": 4
+    },
+    {
+      "id": "5",
+      "text": "Exactly me",
+      "value": 5
+    }
+  ],
+  "scaleQuestions": [
+    {
+      "id": "q1",
+      "question": "When a group chat goes quiet, I often jump in to keep it alive.",
+      "scoreKey": "HAHA",
+      "options": [
+        {
+          "id": "1",
+          "text": "Not me at all",
+          "score": {
+            "HAHA": 3,
+            "GOGO": 1
+          }
+        },
+        {
+          "id": "2",
+          "text": "A little like me",
+          "score": {
+            "HAHA": 6,
+            "GOGO": 2
+          }
+        },
+        {
+          "id": "3",
+          "text": "Depends",
+          "score": {
+            "HAHA": 9,
+            "GOGO": 3
+          }
+        },
+        {
+          "id": "4",
+          "text": "Quite like me",
+          "score": {
+            "HAHA": 12,
+            "GOGO": 4
+          }
+        },
+        {
+          "id": "5",
+          "text": "Exactly me",
+          "score": {
+            "HAHA": 15,
+            "GOGO": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "When someone says “anything is fine”, I start planning routes, times, and backups.",
+      "scoreKey": "CTRL",
+      "options": [
+        {
+          "id": "1",
+          "text": "Not me at all",
+          "score": {
+            "CTRL": 3,
+            "BOSS": 1
+          }
+        },
+        {
+          "id": "2",
+          "text": "A little like me",
+          "score": {
+            "CTRL": 6,
+            "BOSS": 2
+          }
+        },
+        {
+          "id": "3",
+          "text": "Depends",
+          "score": {
+            "CTRL": 9,
+            "BOSS": 3
+          }
+        },
+        {
+          "id": "4",
+          "text": "Quite like me",
+          "score": {
+            "CTRL": 12,
+            "BOSS": 4
+          }
+        },
+        {
+          "id": "5",
+          "text": "Exactly me",
+          "score": {
+            "CTRL": 15,
+            "BOSS": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "When a friend feels low, I want to offer food, money, resources, or practical help.",
+      "scoreKey": "ATM",
+      "options": [
+        {
+          "id": "1",
+          "text": "Not me at all",
+          "score": {
+            "ATM": 3,
+            "SOFT": 1
+          }
+        },
+        {
+          "id": "2",
+          "text": "A little like me",
+          "score": {
+            "ATM": 6,
+            "SOFT": 2
+          }
+        },
+        {
+          "id": "3",
+          "text": "Depends",
+          "score": {
+            "ATM": 9,
+            "SOFT": 3
+          }
+        },
+        {
+          "id": "4",
+          "text": "Quite like me",
+          "score": {
+            "ATM": 12,
+            "SOFT": 4
+          }
+        },
+        {
+          "id": "5",
+          "text": "Exactly me",
+          "score": {
+            "ATM": 15,
+            "SOFT": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "In messy situations, I instinctively take over the rhythm.",
+      "scoreKey": "BOSS",
+      "options": [
+        {
+          "id": "1",
+          "text": "Not me at all",
+          "score": {
+            "BOSS": 3,
+            "CTRL": 1
+          }
+        },
+        {
+          "id": "2",
+          "text": "A little like me",
+          "score": {
+            "BOSS": 6,
+            "CTRL": 2
+          }
+        },
+        {
+          "id": "3",
+          "text": "Depends",
+          "score": {
+            "BOSS": 9,
+            "CTRL": 3
+          }
+        },
+        {
+          "id": "4",
+          "text": "Quite like me",
+          "score": {
+            "BOSS": 12,
+            "CTRL": 4
+          }
+        },
+        {
+          "id": "5",
+          "text": "Exactly me",
+          "score": {
+            "BOSS": 15,
+            "CTRL": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "I say thanks sincerely because I remember what people do for me.",
+      "scoreKey": "THANK",
+      "options": [
+        {
+          "id": "1",
+          "text": "Not me at all",
+          "score": {
+            "THANK": 3,
+            "SOFT": 1
+          }
+        },
+        {
+          "id": "2",
+          "text": "A little like me",
+          "score": {
+            "THANK": 6,
+            "SOFT": 2
+          }
+        },
+        {
+          "id": "3",
+          "text": "Depends",
+          "score": {
+            "THANK": 9,
+            "SOFT": 3
+          }
+        },
+        {
+          "id": "4",
+          "text": "Quite like me",
+          "score": {
+            "THANK": 12,
+            "SOFT": 4
+          }
+        },
+        {
+          "id": "5",
+          "text": "Exactly me",
+          "score": {
+            "THANK": 15,
+            "SOFT": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "If something can be finished today, I dislike leaving it for tomorrow.",
+      "scoreKey": "GOGO",
+      "options": [
+        {
+          "id": "1",
+          "text": "Not me at all",
+          "score": {
+            "GOGO": 3,
+            "CTRL": 1
+          }
+        },
+        {
+          "id": "2",
+          "text": "A little like me",
+          "score": {
+            "GOGO": 6,
+            "CTRL": 2
+          }
+        },
+        {
+          "id": "3",
+          "text": "Depends",
+          "score": {
+            "GOGO": 9,
+            "CTRL": 3
+          }
+        },
+        {
+          "id": "4",
+          "text": "Quite like me",
+          "score": {
+            "GOGO": 12,
+            "CTRL": 4
+          }
+        },
+        {
+          "id": "5",
+          "text": "Exactly me",
+          "score": {
+            "GOGO": 15,
+            "CTRL": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "I may not perform loudly, but people still notice me.",
+      "scoreKey": "SEXY",
+      "options": [
+        {
+          "id": "1",
+          "text": "Not me at all",
+          "score": {
+            "SEXY": 3,
+            "SOFT": 1
+          }
+        },
+        {
+          "id": "2",
+          "text": "A little like me",
+          "score": {
+            "SEXY": 6,
+            "SOFT": 2
+          }
+        },
+        {
+          "id": "3",
+          "text": "Depends",
+          "score": {
+            "SEXY": 9,
+            "SOFT": 3
+          }
+        },
+        {
+          "id": "4",
+          "text": "Quite like me",
+          "score": {
+            "SEXY": 12,
+            "SOFT": 4
+          }
+        },
+        {
+          "id": "5",
+          "text": "Exactly me",
+          "score": {
+            "SEXY": 15,
+            "SOFT": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "question": "A song, sentence, or glance can start a whole movie in my head.",
+      "scoreKey": "LOVER",
+      "options": [
+        {
+          "id": "1",
+          "text": "Not me at all",
+          "score": {
+            "LOVER": 3,
+            "SOFT": 1
+          }
+        },
+        {
+          "id": "2",
+          "text": "A little like me",
+          "score": {
+            "LOVER": 6,
+            "SOFT": 2
+          }
+        },
+        {
+          "id": "3",
+          "text": "Depends",
+          "score": {
+            "LOVER": 9,
+            "SOFT": 3
+          }
+        },
+        {
+          "id": "4",
+          "text": "Quite like me",
+          "score": {
+            "LOVER": 12,
+            "SOFT": 4
+          }
+        },
+        {
+          "id": "5",
+          "text": "Exactly me",
+          "score": {
+            "LOVER": 15,
+            "SOFT": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "q9",
+      "question": "I enjoy eating, shopping, and deciding alone without needing company.",
+      "scoreKey": "SOLO",
+      "options": [
+        {
+          "id": "1",
+          "text": "Not me at all",
+          "score": {
+            "SOLO": 3,
+            "ZEN": 1
+          }
+        },
+        {
+          "id": "2",
+          "text": "A little like me",
+          "score": {
+            "SOLO": 6,
+            "ZEN": 2
+          }
+        },
+        {
+          "id": "3",
+          "text": "Depends",
+          "score": {
+            "SOLO": 9,
+            "ZEN": 3
+          }
+        },
+        {
+          "id": "4",
+          "text": "Quite like me",
+          "score": {
+            "SOLO": 12,
+            "ZEN": 4
+          }
+        },
+        {
+          "id": "5",
+          "text": "Exactly me",
+          "score": {
+            "SOLO": 15,
+            "ZEN": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "question": "If a rule makes no sense, I want to question it or work around it.",
+      "scoreKey": "WILD",
+      "options": [
+        {
+          "id": "1",
+          "text": "Not me at all",
+          "score": {
+            "WILD": 3,
+            "BOSS": 1
+          }
+        },
+        {
+          "id": "2",
+          "text": "A little like me",
+          "score": {
+            "WILD": 6,
+            "BOSS": 2
+          }
+        },
+        {
+          "id": "3",
+          "text": "Depends",
+          "score": {
+            "WILD": 9,
+            "BOSS": 3
+          }
+        },
+        {
+          "id": "4",
+          "text": "Quite like me",
+          "score": {
+            "WILD": 12,
+            "BOSS": 4
+          }
+        },
+        {
+          "id": "5",
+          "text": "Exactly me",
+          "score": {
+            "WILD": 15,
+            "BOSS": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "question": "I understand many things; I just do not want to get involved.",
+      "scoreKey": "ZEN",
+      "options": [
+        {
+          "id": "1",
+          "text": "Not me at all",
+          "score": {
+            "ZEN": 3,
+            "SOLO": 1
+          }
+        },
+        {
+          "id": "2",
+          "text": "A little like me",
+          "score": {
+            "ZEN": 6,
+            "SOLO": 2
+          }
+        },
+        {
+          "id": "3",
+          "text": "Depends",
+          "score": {
+            "ZEN": 9,
+            "SOLO": 3
+          }
+        },
+        {
+          "id": "4",
+          "text": "Quite like me",
+          "score": {
+            "ZEN": 12,
+            "SOLO": 4
+          }
+        },
+        {
+          "id": "5",
+          "text": "Exactly me",
+          "score": {
+            "ZEN": 15,
+            "SOLO": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "question": "Small kindness, old messages, or gentle words can hit me hard.",
+      "scoreKey": "SOFT",
+      "options": [
+        {
+          "id": "1",
+          "text": "Not me at all",
+          "score": {
+            "SOFT": 3,
+            "LOVER": 1
+          }
+        },
+        {
+          "id": "2",
+          "text": "A little like me",
+          "score": {
+            "SOFT": 6,
+            "LOVER": 2
+          }
+        },
+        {
+          "id": "3",
+          "text": "Depends",
+          "score": {
+            "SOFT": 9,
+            "LOVER": 3
+          }
+        },
+        {
+          "id": "4",
+          "text": "Quite like me",
+          "score": {
+            "SOFT": 12,
+            "LOVER": 4
+          }
+        },
+        {
+          "id": "5",
+          "text": "Exactly me",
+          "score": {
+            "SOFT": 15,
+            "LOVER": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "q13",
+      "question": "The more awkward the moment, the more likely I use jokes to soften it.",
+      "scoreKey": "HAHA",
+      "options": [
+        {
+          "id": "1",
+          "text": "Not me at all",
+          "score": {
+            "HAHA": 3,
+            "SEXY": 1
+          }
+        },
+        {
+          "id": "2",
+          "text": "A little like me",
+          "score": {
+            "HAHA": 6,
+            "SEXY": 2
+          }
+        },
+        {
+          "id": "3",
+          "text": "Depends",
+          "score": {
+            "HAHA": 9,
+            "SEXY": 3
+          }
+        },
+        {
+          "id": "4",
+          "text": "Quite like me",
+          "score": {
+            "HAHA": 12,
+            "SEXY": 4
+          }
+        },
+        {
+          "id": "5",
+          "text": "Exactly me",
+          "score": {
+            "HAHA": 15,
+            "SEXY": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "q14",
+      "question": "My notes, saved items, or pinned chats have a private order only I understand.",
+      "scoreKey": "CTRL",
+      "options": [
+        {
+          "id": "1",
+          "text": "Not me at all",
+          "score": {
+            "CTRL": 3,
+            "SOLO": 1
+          }
+        },
+        {
+          "id": "2",
+          "text": "A little like me",
+          "score": {
+            "CTRL": 6,
+            "SOLO": 2
+          }
+        },
+        {
+          "id": "3",
+          "text": "Depends",
+          "score": {
+            "CTRL": 9,
+            "SOLO": 3
+          }
+        },
+        {
+          "id": "4",
+          "text": "Quite like me",
+          "score": {
+            "CTRL": 12,
+            "SOLO": 4
+          }
+        },
+        {
+          "id": "5",
+          "text": "Exactly me",
+          "score": {
+            "CTRL": 15,
+            "SOLO": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "q15",
+      "question": "When friends need money, material, or advice, they often think of me.",
+      "scoreKey": "ATM",
+      "options": [
+        {
+          "id": "1",
+          "text": "Not me at all",
+          "score": {
+            "ATM": 3,
+            "THANK": 1
+          }
+        },
+        {
+          "id": "2",
+          "text": "A little like me",
+          "score": {
+            "ATM": 6,
+            "THANK": 2
+          }
+        },
+        {
+          "id": "3",
+          "text": "Depends",
+          "score": {
+            "ATM": 9,
+            "THANK": 3
+          }
+        },
+        {
+          "id": "4",
+          "text": "Quite like me",
+          "score": {
+            "ATM": 12,
+            "THANK": 4
+          }
+        },
+        {
+          "id": "5",
+          "text": "Exactly me",
+          "score": {
+            "ATM": 15,
+            "THANK": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "q16",
+      "question": "In team work, I naturally ask who owns it, when it is due, and what the standard is.",
+      "scoreKey": "BOSS",
+      "options": [
+        {
+          "id": "1",
+          "text": "Not me at all",
+          "score": {
+            "BOSS": 3,
+            "CTRL": 1
+          }
+        },
+        {
+          "id": "2",
+          "text": "A little like me",
+          "score": {
+            "BOSS": 6,
+            "CTRL": 2
+          }
+        },
+        {
+          "id": "3",
+          "text": "Depends",
+          "score": {
+            "BOSS": 9,
+            "CTRL": 3
+          }
+        },
+        {
+          "id": "4",
+          "text": "Quite like me",
+          "score": {
+            "BOSS": 12,
+            "CTRL": 4
+          }
+        },
+        {
+          "id": "5",
+          "text": "Exactly me",
+          "score": {
+            "BOSS": 15,
+            "CTRL": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "q17",
+      "question": "When someone is kind to me once, I may remember it for a long time.",
+      "scoreKey": "THANK",
+      "options": [
+        {
+          "id": "1",
+          "text": "Not me at all",
+          "score": {
+            "THANK": 3,
+            "LOVER": 1
+          }
+        },
+        {
+          "id": "2",
+          "text": "A little like me",
+          "score": {
+            "THANK": 6,
+            "LOVER": 2
+          }
+        },
+        {
+          "id": "3",
+          "text": "Depends",
+          "score": {
+            "THANK": 9,
+            "LOVER": 3
+          }
+        },
+        {
+          "id": "4",
+          "text": "Quite like me",
+          "score": {
+            "THANK": 12,
+            "LOVER": 4
+          }
+        },
+        {
+          "id": "5",
+          "text": "Exactly me",
+          "score": {
+            "THANK": 15,
+            "LOVER": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "q18",
+      "question": "I do not love long explanations; doing first suits me better.",
+      "scoreKey": "GOGO",
+      "options": [
+        {
+          "id": "1",
+          "text": "Not me at all",
+          "score": {
+            "GOGO": 3,
+            "WILD": 1
+          }
+        },
+        {
+          "id": "2",
+          "text": "A little like me",
+          "score": {
+            "GOGO": 6,
+            "WILD": 2
+          }
+        },
+        {
+          "id": "3",
+          "text": "Depends",
+          "score": {
+            "GOGO": 9,
+            "WILD": 3
+          }
+        },
+        {
+          "id": "4",
+          "text": "Quite like me",
+          "score": {
+            "GOGO": 12,
+            "WILD": 4
+          }
+        },
+        {
+          "id": "5",
+          "text": "Exactly me",
+          "score": {
+            "GOGO": 15,
+            "WILD": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "q19",
+      "question": "I have a quiet confidence in my appearance, vibe, or presence.",
+      "scoreKey": "SEXY",
+      "options": [
+        {
+          "id": "1",
+          "text": "Not me at all",
+          "score": {
+            "SEXY": 3,
+            "BOSS": 1
+          }
+        },
+        {
+          "id": "2",
+          "text": "A little like me",
+          "score": {
+            "SEXY": 6,
+            "BOSS": 2
+          }
+        },
+        {
+          "id": "3",
+          "text": "Depends",
+          "score": {
+            "SEXY": 9,
+            "BOSS": 3
+          }
+        },
+        {
+          "id": "4",
+          "text": "Quite like me",
+          "score": {
+            "SEXY": 12,
+            "BOSS": 4
+          }
+        },
+        {
+          "id": "5",
+          "text": "Exactly me",
+          "score": {
+            "SEXY": 15,
+            "BOSS": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "q20",
+      "question": "I overread relationship details even when I look calm outside.",
+      "scoreKey": "LOVER",
+      "options": [
+        {
+          "id": "1",
+          "text": "Not me at all",
+          "score": {
+            "LOVER": 3,
+            "SOFT": 1
+          }
+        },
+        {
+          "id": "2",
+          "text": "A little like me",
+          "score": {
+            "LOVER": 6,
+            "SOFT": 2
+          }
+        },
+        {
+          "id": "3",
+          "text": "Depends",
+          "score": {
+            "LOVER": 9,
+            "SOFT": 3
+          }
+        },
+        {
+          "id": "4",
+          "text": "Quite like me",
+          "score": {
+            "LOVER": 12,
+            "SOFT": 4
+          }
+        },
+        {
+          "id": "5",
+          "text": "Exactly me",
+          "score": {
+            "LOVER": 15,
+            "SOFT": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "q21",
+      "question": "If socializing drains me, I disappear for a while to recharge.",
+      "scoreKey": "SOLO",
+      "options": [
+        {
+          "id": "1",
+          "text": "Not me at all",
+          "score": {
+            "SOLO": 3,
+            "ZEN": 1
+          }
+        },
+        {
+          "id": "2",
+          "text": "A little like me",
+          "score": {
+            "SOLO": 6,
+            "ZEN": 2
+          }
+        },
+        {
+          "id": "3",
+          "text": "Depends",
+          "score": {
+            "SOLO": 9,
+            "ZEN": 3
+          }
+        },
+        {
+          "id": "4",
+          "text": "Quite like me",
+          "score": {
+            "SOLO": 12,
+            "ZEN": 4
+          }
+        },
+        {
+          "id": "5",
+          "text": "Exactly me",
+          "score": {
+            "SOLO": 15,
+            "ZEN": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "q22",
+      "question": "I hate meaningless control; the more I am pressed, the more I push back.",
+      "scoreKey": "WILD",
+      "options": [
+        {
+          "id": "1",
+          "text": "Not me at all",
+          "score": {
+            "WILD": 3,
+            "GOGO": 1
+          }
+        },
+        {
+          "id": "2",
+          "text": "A little like me",
+          "score": {
+            "WILD": 6,
+            "GOGO": 2
+          }
+        },
+        {
+          "id": "3",
+          "text": "Depends",
+          "score": {
+            "WILD": 9,
+            "GOGO": 3
+          }
+        },
+        {
+          "id": "4",
+          "text": "Quite like me",
+          "score": {
+            "WILD": 12,
+            "GOGO": 4
+          }
+        },
+        {
+          "id": "5",
+          "text": "Exactly me",
+          "score": {
+            "WILD": 15,
+            "GOGO": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "q23",
+      "question": "A lot of my stability comes from saying “whatever, let it go”.",
+      "scoreKey": "ZEN",
+      "options": [
+        {
+          "id": "1",
+          "text": "Not me at all",
+          "score": {
+            "ZEN": 3,
+            "HAHA": 1
+          }
+        },
+        {
+          "id": "2",
+          "text": "A little like me",
+          "score": {
+            "ZEN": 6,
+            "HAHA": 2
+          }
+        },
+        {
+          "id": "3",
+          "text": "Depends",
+          "score": {
+            "ZEN": 9,
+            "HAHA": 3
+          }
+        },
+        {
+          "id": "4",
+          "text": "Quite like me",
+          "score": {
+            "ZEN": 12,
+            "HAHA": 4
+          }
+        },
+        {
+          "id": "5",
+          "text": "Exactly me",
+          "score": {
+            "ZEN": 15,
+            "HAHA": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "q24",
+      "question": "I say it is fine, but I silently remember many details.",
+      "scoreKey": "SOFT",
+      "options": [
+        {
+          "id": "1",
+          "text": "Not me at all",
+          "score": {
+            "SOFT": 3,
+            "THANK": 1
+          }
+        },
+        {
+          "id": "2",
+          "text": "A little like me",
+          "score": {
+            "SOFT": 6,
+            "THANK": 2
+          }
+        },
+        {
+          "id": "3",
+          "text": "Depends",
+          "score": {
+            "SOFT": 9,
+            "THANK": 3
+          }
+        },
+        {
+          "id": "4",
+          "text": "Quite like me",
+          "score": {
+            "SOFT": 12,
+            "THANK": 4
+          }
+        },
+        {
+          "id": "5",
+          "text": "Exactly me",
+          "score": {
+            "SOFT": 15,
+            "THANK": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "q25",
+      "question": "I do not mean to be funny, but people often laugh at what I say.",
+      "scoreKey": "HAHA",
+      "options": [
+        {
+          "id": "1",
+          "text": "Not me at all",
+          "score": {
+            "HAHA": 3,
+            "WILD": 1
+          }
+        },
+        {
+          "id": "2",
+          "text": "A little like me",
+          "score": {
+            "HAHA": 6,
+            "WILD": 2
+          }
+        },
+        {
+          "id": "3",
+          "text": "Depends",
+          "score": {
+            "HAHA": 9,
+            "WILD": 3
+          }
+        },
+        {
+          "id": "4",
+          "text": "Quite like me",
+          "score": {
+            "HAHA": 12,
+            "WILD": 4
+          }
+        },
+        {
+          "id": "5",
+          "text": "Exactly me",
+          "score": {
+            "HAHA": 15,
+            "WILD": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "q26",
+      "question": "I like controlling the controllable because it makes me feel safe.",
+      "scoreKey": "CTRL",
+      "options": [
+        {
+          "id": "1",
+          "text": "Not me at all",
+          "score": {
+            "CTRL": 3
+          }
+        },
+        {
+          "id": "2",
+          "text": "A little like me",
+          "score": {
+            "CTRL": 6
+          }
+        },
+        {
+          "id": "3",
+          "text": "Depends",
+          "score": {
+            "CTRL": 9
+          }
+        },
+        {
+          "id": "4",
+          "text": "Quite like me",
+          "score": {
+            "CTRL": 12
+          }
+        },
+        {
+          "id": "5",
+          "text": "Exactly me",
+          "score": {
+            "CTRL": 15
+          }
+        }
+      ]
+    },
+    {
+      "id": "q27",
+      "question": "I can care for others, but I do not want my effort taken for granted.",
+      "scoreKey": "ATM",
+      "options": [
+        {
+          "id": "1",
+          "text": "Not me at all",
+          "score": {
+            "ATM": 3,
+            "SOFT": 1
+          }
+        },
+        {
+          "id": "2",
+          "text": "A little like me",
+          "score": {
+            "ATM": 6,
+            "SOFT": 2
+          }
+        },
+        {
+          "id": "3",
+          "text": "Depends",
+          "score": {
+            "ATM": 9,
+            "SOFT": 3
+          }
+        },
+        {
+          "id": "4",
+          "text": "Quite like me",
+          "score": {
+            "ATM": 12,
+            "SOFT": 4
+          }
+        },
+        {
+          "id": "5",
+          "text": "Exactly me",
+          "score": {
+            "ATM": 15,
+            "SOFT": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "q28",
+      "question": "I have a stubborn need to make things actually happen.",
+      "scoreKey": "BOSS",
+      "options": [
+        {
+          "id": "1",
+          "text": "Not me at all",
+          "score": {
+            "BOSS": 3,
+            "GOGO": 1
+          }
+        },
+        {
+          "id": "2",
+          "text": "A little like me",
+          "score": {
+            "BOSS": 6,
+            "GOGO": 2
+          }
+        },
+        {
+          "id": "3",
+          "text": "Depends",
+          "score": {
+            "BOSS": 9,
+            "GOGO": 3
+          }
+        },
+        {
+          "id": "4",
+          "text": "Quite like me",
+          "score": {
+            "BOSS": 12,
+            "GOGO": 4
+          }
+        },
+        {
+          "id": "5",
+          "text": "Exactly me",
+          "score": {
+            "BOSS": 15,
+            "GOGO": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "q29",
+      "question": "When the vibe is right, I become highly contagious energy.",
+      "scoreKey": "SEXY",
+      "options": [
+        {
+          "id": "1",
+          "text": "Not me at all",
+          "score": {
+            "SEXY": 3,
+            "HAHA": 1
+          }
+        },
+        {
+          "id": "2",
+          "text": "A little like me",
+          "score": {
+            "SEXY": 6,
+            "HAHA": 2
+          }
+        },
+        {
+          "id": "3",
+          "text": "Depends",
+          "score": {
+            "SEXY": 9,
+            "HAHA": 3
+          }
+        },
+        {
+          "id": "4",
+          "text": "Quite like me",
+          "score": {
+            "SEXY": 12,
+            "HAHA": 4
+          }
+        },
+        {
+          "id": "5",
+          "text": "Exactly me",
+          "score": {
+            "SEXY": 15,
+            "HAHA": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "q30",
+      "question": "I can be intense or distant depending on whether someone is worth it.",
+      "scoreKey": "LOVER",
+      "options": [
+        {
+          "id": "1",
+          "text": "Not me at all",
+          "score": {
+            "LOVER": 2,
+            "SOLO": 2,
+            "WILD": 1
+          }
+        },
+        {
+          "id": "2",
+          "text": "A little like me",
+          "score": {
+            "LOVER": 4,
+            "SOLO": 4,
+            "WILD": 2
+          }
+        },
+        {
+          "id": "3",
+          "text": "Depends",
+          "score": {
+            "LOVER": 6,
+            "SOLO": 6,
+            "WILD": 3
+          }
+        },
+        {
+          "id": "4",
+          "text": "Quite like me",
+          "score": {
+            "LOVER": 8,
+            "SOLO": 8,
+            "WILD": 4
+          }
+        },
+        {
+          "id": "5",
+          "text": "Exactly me",
+          "score": {
+            "LOVER": 10,
+            "SOLO": 10,
+            "WILD": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "q31",
+      "question": "My real state is often more complex than people assume.",
+      "scoreKey": "SOFT",
+      "options": [
+        {
+          "id": "1",
+          "text": "Not me at all",
+          "score": {
+            "SOFT": 1,
+            "ZEN": 1,
+            "CTRL": 1,
+            "LOVER": 1
+          }
+        },
+        {
+          "id": "2",
+          "text": "A little like me",
+          "score": {
+            "SOFT": 2,
+            "ZEN": 2,
+            "CTRL": 2,
+            "LOVER": 2
+          }
+        },
+        {
+          "id": "3",
+          "text": "Depends",
+          "score": {
+            "SOFT": 3,
+            "ZEN": 3,
+            "CTRL": 3,
+            "LOVER": 3
+          }
+        },
+        {
+          "id": "4",
+          "text": "Quite like me",
+          "score": {
+            "SOFT": 4,
+            "ZEN": 4,
+            "CTRL": 4,
+            "LOVER": 4
+          }
+        },
+        {
+          "id": "5",
+          "text": "Exactly me",
+          "score": {
+            "SOFT": 5,
+            "ZEN": 5,
+            "CTRL": 5,
+            "LOVER": 5
+          }
+        }
+      ]
+    }
+  ],
+  "results": {
+    "CTRL": {
+      "title": "Controller",
+      "summary": "Controller is your strongest SBTI-style label. Treat it as a playful social mirror, not a serious diagnosis.",
+      "traits": [
+        "有掌控感",
+        "会做备选方案",
+        "能稳定局面"
+      ],
+      "strengths": [
+        "能把混乱拆成步骤",
+        "擅长提前发现风险",
+        "关键时刻可靠"
+      ],
+      "weaknesses": [
+        "容易替别人操心过多",
+        "可能显得强势",
+        "对失控容忍度低"
+      ],
+      "careers": [
+        "项目推进",
+        "运营统筹",
+        "产品管理",
+        "流程优化"
+      ],
+      "relationships": [
+        "Use this result as a conversation starter. Your best matches are people who respect the pattern without turning it into a fixed box."
+      ],
+      "growthPlan": [
+        "Notice when the pattern helps you",
+        "Notice when it becomes a habit",
+        "Try one small adjustment this week"
+      ]
+    },
+    "ATM": {
+      "title": "Support Bank",
+      "summary": "Support Bank is your strongest SBTI-style label. Treat it as a playful social mirror, not a serious diagnosis.",
+      "traits": [
+        "实际照顾",
+        "资源敏感",
+        "愿意兜底"
+      ],
+      "strengths": [
+        "能快速发现别人缺什么",
+        "愿意提供具体帮助",
+        "关系中很有安全感"
+      ],
+      "weaknesses": [
+        "容易被过度消耗",
+        "可能用付出来换认同",
+        "不擅长拒绝"
+      ],
+      "careers": [
+        "客户成功",
+        "人力支持",
+        "社群运营",
+        "服务型工作"
+      ],
+      "relationships": [
+        "Use this result as a conversation starter. Your best matches are people who respect the pattern without turning it into a fixed box."
+      ],
+      "growthPlan": [
+        "Notice when the pattern helps you",
+        "Notice when it becomes a habit",
+        "Try one small adjustment this week"
+      ]
+    },
+    "BOSS": {
+      "title": "Boss Mode",
+      "summary": "Boss Mode is your strongest SBTI-style label. Treat it as a playful social mirror, not a serious diagnosis.",
+      "traits": [
+        "目标感强",
+        "能定方向",
+        "执行有压迫感"
+      ],
+      "strengths": [
+        "推动事情落地",
+        "敢做关键决定",
+        "能给团队信心"
+      ],
+      "weaknesses": [
+        "容易急于推进",
+        "可能忽略他人感受",
+        "对慢节奏不耐烦"
+      ],
+      "careers": [
+        "管理",
+        "创业",
+        "销售领导",
+        "战略执行"
+      ],
+      "relationships": [
+        "Use this result as a conversation starter. Your best matches are people who respect the pattern without turning it into a fixed box."
+      ],
+      "growthPlan": [
+        "Notice when the pattern helps you",
+        "Notice when it becomes a habit",
+        "Try one small adjustment this week"
+      ]
+    },
+    "THANK": {
+      "title": "Gratitude Engine",
+      "summary": "Gratitude Engine is your strongest SBTI-style label. Treat it as a playful social mirror, not a serious diagnosis.",
+      "traits": [
+        "记得好意",
+        "重视礼貌",
+        "情绪细腻"
+      ],
+      "strengths": [
+        "让人感到被看见",
+        "关系维护能力强",
+        "能营造温和氛围"
+      ],
+      "weaknesses": [
+        "容易欠人情压力",
+        "可能过度内耗",
+        "不喜欢麻烦别人"
+      ],
+      "careers": [
+        "服务体验",
+        "教育",
+        "内容运营",
+        "用户关系"
+      ],
+      "relationships": [
+        "Use this result as a conversation starter. Your best matches are people who respect the pattern without turning it into a fixed box."
+      ],
+      "growthPlan": [
+        "Notice when the pattern helps you",
+        "Notice when it becomes a habit",
+        "Try one small adjustment this week"
+      ]
+    },
+    "GOGO": {
+      "title": "Go-Go",
+      "summary": "Go-Go is your strongest SBTI-style label. Treat it as a playful social mirror, not a serious diagnosis.",
+      "traits": [
+        "行动快",
+        "讨厌拖泥带水",
+        "结果导向"
+      ],
+      "strengths": [
+        "启动速度快",
+        "能打破僵局",
+        "适合现场解决问题"
+      ],
+      "weaknesses": [
+        "可能跳过复盘",
+        "容易低估细节",
+        "耐心不足"
+      ],
+      "careers": [
+        "活动执行",
+        "销售",
+        "创业早期",
+        "应急处理"
+      ],
+      "relationships": [
+        "Use this result as a conversation starter. Your best matches are people who respect the pattern without turning it into a fixed box."
+      ],
+      "growthPlan": [
+        "Notice when the pattern helps you",
+        "Notice when it becomes a habit",
+        "Try one small adjustment this week"
+      ]
+    },
+    "SEXY": {
+      "title": "Main Character",
+      "summary": "Main Character is your strongest SBTI-style label. Treat it as a playful social mirror, not a serious diagnosis.",
+      "traits": [
+        "存在感强",
+        "会制造氛围",
+        "有吸引力"
+      ],
+      "strengths": [
+        "容易带动现场",
+        "表达有记忆点",
+        "能把普通事情变得有趣"
+      ],
+      "weaknesses": [
+        "可能被误解为高调",
+        "容易被评价影响",
+        "需要真实连接"
+      ],
+      "careers": [
+        "品牌",
+        "内容创作",
+        "销售",
+        "公众表达"
+      ],
+      "relationships": [
+        "Use this result as a conversation starter. Your best matches are people who respect the pattern without turning it into a fixed box."
+      ],
+      "growthPlan": [
+        "Notice when the pattern helps you",
+        "Notice when it becomes a habit",
+        "Try one small adjustment this week"
+      ]
+    },
+    "LOVER": {
+      "title": "Romantic Overthinker",
+      "summary": "Romantic Overthinker is your strongest SBTI-style label. Treat it as a playful social mirror, not a serious diagnosis.",
+      "traits": [
+        "浪漫脑",
+        "细节敏感",
+        "情绪联想强"
+      ],
+      "strengths": [
+        "共情深",
+        "表达有画面感",
+        "能珍惜关系里的小事"
+      ],
+      "weaknesses": [
+        "容易过度解读",
+        "情绪起伏受关系影响",
+        "可能理想化他人"
+      ],
+      "careers": [
+        "写作",
+        "设计",
+        "心理陪伴",
+        "内容策划"
+      ],
+      "relationships": [
+        "Use this result as a conversation starter. Your best matches are people who respect the pattern without turning it into a fixed box."
+      ],
+      "growthPlan": [
+        "Notice when the pattern helps you",
+        "Notice when it becomes a habit",
+        "Try one small adjustment this week"
+      ]
+    },
+    "SOLO": {
+      "title": "Solo Player",
+      "summary": "Solo Player is your strongest SBTI-style label. Treat it as a playful social mirror, not a serious diagnosis.",
+      "traits": [
+        "独立",
+        "边界清晰",
+        "低社交消耗"
+      ],
+      "strengths": [
+        "能独立做决定",
+        "不轻易被裹挟",
+        "适合深度专注"
+      ],
+      "weaknesses": [
+        "可能显得疏离",
+        "遇事不求助",
+        "别人难以靠近"
+      ],
+      "careers": [
+        "研究",
+        "写作",
+        "技术",
+        "自由职业"
+      ],
+      "relationships": [
+        "Use this result as a conversation starter. Your best matches are people who respect the pattern without turning it into a fixed box."
+      ],
+      "growthPlan": [
+        "Notice when the pattern helps you",
+        "Notice when it becomes a habit",
+        "Try one small adjustment this week"
+      ]
+    },
+    "WILD": {
+      "title": "Wild Card",
+      "summary": "Wild Card is your strongest SBTI-style label. Treat it as a playful social mirror, not a serious diagnosis.",
+      "traits": [
+        "反骨但有活力",
+        "讨厌无聊",
+        "敢表达"
+      ],
+      "strengths": [
+        "能打破僵化",
+        "有感染力",
+        "不怕挑战默认答案"
+      ],
+      "weaknesses": [
+        "容易冲动",
+        "可能误伤别人",
+        "不喜欢长期约束"
+      ],
+      "careers": [
+        "创意",
+        "创业",
+        "传播",
+        "新业务探索"
+      ],
+      "relationships": [
+        "Use this result as a conversation starter. Your best matches are people who respect the pattern without turning it into a fixed box."
+      ],
+      "growthPlan": [
+        "Notice when the pattern helps you",
+        "Notice when it becomes a habit",
+        "Try one small adjustment this week"
+      ]
+    },
+    "ZEN": {
+      "title": "Low-Battery Sage",
+      "summary": "Low-Battery Sage is your strongest SBTI-style label. Treat it as a playful social mirror, not a serious diagnosis.",
+      "traits": [
+        "低消耗",
+        "看得开",
+        "慢热稳定"
+      ],
+      "strengths": [
+        "不轻易被带节奏",
+        "能降低冲突强度",
+        "适合做冷静观察者"
+      ],
+      "weaknesses": [
+        "可能显得没动力",
+        "容易逃避表达",
+        "机会也可能被放掉"
+      ],
+      "careers": [
+        "分析",
+        "后台支持",
+        "研究",
+        "稳定运营"
+      ],
+      "relationships": [
+        "Use this result as a conversation starter. Your best matches are people who respect the pattern without turning it into a fixed box."
+      ],
+      "growthPlan": [
+        "Notice when the pattern helps you",
+        "Notice when it becomes a habit",
+        "Try one small adjustment this week"
+      ]
+    },
+    "SOFT": {
+      "title": "Soft Signal",
+      "summary": "Soft Signal is your strongest SBTI-style label. Treat it as a playful social mirror, not a serious diagnosis.",
+      "traits": [
+        "敏感",
+        "善良",
+        "细节记忆强"
+      ],
+      "strengths": [
+        "能察觉微妙变化",
+        "照顾他人感受",
+        "关系中很真诚"
+      ],
+      "weaknesses": [
+        "容易受伤",
+        "不擅长表达不满",
+        "可能把问题都归咎自己"
+      ],
+      "careers": [
+        "内容",
+        "设计",
+        "照护",
+        "用户体验"
+      ],
+      "relationships": [
+        "Use this result as a conversation starter. Your best matches are people who respect the pattern without turning it into a fixed box."
+      ],
+      "growthPlan": [
+        "Notice when the pattern helps you",
+        "Notice when it becomes a habit",
+        "Try one small adjustment this week"
+      ]
+    },
+    "HAHA": {
+      "title": "Laugh Generator",
+      "summary": "Laugh Generator is your strongest SBTI-style label. Treat it as a playful social mirror, not a serious diagnosis.",
+      "traits": [
+        "幽默",
+        "反应快",
+        "气氛组"
+      ],
+      "strengths": [
+        "缓解压力",
+        "让人靠近",
+        "能把困难讲得轻一点"
+      ],
+      "weaknesses": [
+        "可能用玩笑遮住真实感受",
+        "容易被当成永远开心",
+        "严肃需求被忽略"
+      ],
+      "careers": [
+        "内容创作",
+        "社群",
+        "主持",
+        "品牌传播"
+      ],
+      "relationships": [
+        "Use this result as a conversation starter. Your best matches are people who respect the pattern without turning it into a fixed box."
+      ],
+      "growthPlan": [
+        "Notice when the pattern helps you",
+        "Notice when it becomes a habit",
+        "Try one small adjustment this week"
+      ]
+    }
+  }
+}

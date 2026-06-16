@@ -1,17 +1,17 @@
 [TITLE]
-Free Online JSON Escape Tool
+Online JSON Escape Tool
 [H1]
-Free JSON Escape Tool Online
+Online JSON Escape Tool
 [DESCRIPTION]
 Escape and unescape JSON strings for safe insertion into code, logs, and payloads.
 [SEO_TITLE]
-Free JSON Escape Tool - Escape JSON Strings Safely
+Online JSON Escape Tool - Escape JSON Strings Safely
 [SEO_DESCRIPTION]
 Escape JSON strings for safe insertion into code, logs, and payloads. Convert special characters to escape sequences. No data upload.
 [INTRO]
 JSON escaping is necessary when you need to insert JSON strings into other JSON documents, code, logs, or text that will be parsed as JSON. Special characters like quotes, newlines, and backslashes must be escaped to avoid breaking the JSON structure.
 
-This free online JSON escape tool converts special characters to their escaped equivalents. Whether you are preparing JSON for API requests, logging, or embedding JSON in code, this tool makes escaping straightforward.
+This online JSON escape tool converts special characters to their escaped equivalents. Whether you are preparing JSON for API requests, logging, or embedding JSON in code, this tool makes escaping straightforward.
 
 JSON escaping is essential for API development, logging systems, and any application that processes JSON data.
 [HOW_TO_USE]

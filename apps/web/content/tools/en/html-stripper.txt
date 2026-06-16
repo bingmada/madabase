@@ -1,11 +1,11 @@
 [TITLE]
-Free HTML Tag Stripper Online
+Online HTML Tag Stripper
 [H1]
-Free HTML Tag Stripper Online
+Online HTML Tag Stripper
 [DESCRIPTION]
 Remove HTML tags and keep plain text.
 [SEO_TITLE]
-Free HTML Tag Stripper Online | Madabase
+Online HTML Tag Stripper | Madabase
 [SEO_DESCRIPTION]
 Remove HTML tags and keep plain text. Run it locally in your browser with a clean copyable output.
 [INTRO]
@@ -24,8 +24,8 @@ Madabase tools
 ===
 Processed Madabase tools
 [FAQ]
-Is this html tag stripper free?
-Yes. The first release is free to use in your browser.
+Is this html tag stripper online?
+Yes. The first release is online to use in your browser.
 Can I use private data?
 The tool runs locally in the browser UI, but you should still avoid pasting secrets into any web page you do not control.
 [RELATED_TOOLS]
@@ -34,7 +34,7 @@ json-formatter
 url-encoder
 [KEYWORDS]
 html stripper
-free html stripper
+online html stripper
 online html stripper
 [CATEGORY]
 web

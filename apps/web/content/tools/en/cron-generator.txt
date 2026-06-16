@@ -1,17 +1,17 @@
 [TITLE]
-Free Online Cron Generator
+Online Cron Generator
 [H1]
-Free Cron Generator Online
+Online Cron Generator
 [DESCRIPTION]
 Generate cron expressions and see the next scheduled execution times.
 [SEO_TITLE]
-Free Cron Generator Online - Create Cron Expressions Easily
+Online Cron Generator - Create Cron Expressions Easily
 [SEO_DESCRIPTION]
 Generate cron expressions with an interactive interface. See next execution times and understand cron syntax. Essential for scheduled tasks.
 [INTRO]
 Cron is a time-based job scheduler in Unix-like systems. Cron expressions define schedule patterns using five fields: minute, hour, day of month, month, and day of week. Understanding cron syntax is essential for configuring scheduled tasks.
 
-This free online cron generator helps you create cron expressions through an interactive interface. Instead of memorizing the cryptic cron syntax, select your desired schedule and see the generated expression and upcoming execution times.
+This online cron generator helps you create cron expressions through an interactive interface. Instead of memorizing the cryptic cron syntax, select your desired schedule and see the generated expression and upcoming execution times.
 
 Cron is widely used for automation: backups, report generation, data synchronization, cleanup tasks, and monitoring jobs.
 [HOW_TO_USE]

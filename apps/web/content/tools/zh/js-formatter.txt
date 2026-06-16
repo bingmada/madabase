@@ -1,17 +1,17 @@
 [TITLE]
-免费在线 JavaScript 格式化工具
+在线 JavaScript 格式化工具
 [H1]
-免费 JavaScript 格式化工具
+在线JavaScript 格式化工具
 [DESCRIPTION]
 格式化和美化 JavaScript 代码以提高可读性。
 [SEO_TITLE]
-免费 JavaScript 格式化工具 - 在线美化 JS
+在线JavaScript 格式化工具 - 在线美化 JS
 [SEO_DESCRIPTION]
 即时格式化和美化 JavaScript 代码。修复缩进、添加适当间距、清理代码。对于 Web 开发者必不可少。
 [INTRO]
 JavaScript 是 Web 的编程语言。JavaScript 代码可能变得复杂且难以阅读，尤其是在压缩文件或格式不好的项目中。JavaScript 格式化工具帮助清理和组织代码以提高可读性。
 
-这款免费的在线 JavaScript 格式化工具即时美化你的 JS 代码。无论你是调试、审查代码还是准备代码审查，这个工具让 JavaScript 变得可读。
+这款在线的在线 JavaScript 格式化工具即时美化你的 JS 代码。无论你是调试、审查代码还是准备代码审查，这个工具让 JavaScript 变得可读。
 
 干净的 JavaScript 对于代码可维护性、团队协作和高效调试至关重要。
 [HOW_TO_USE]

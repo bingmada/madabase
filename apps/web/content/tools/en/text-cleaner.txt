@@ -1,17 +1,17 @@
 [TITLE]
-Free Online Text Cleaner
+Online Text Cleaner
 [H1]
-Free Text Cleaner Online
+Online Text Cleaner
 [DESCRIPTION]
 Clean text by removing extra spaces, line breaks, and unwanted characters.
 [SEO_TITLE]
-Free Text Cleaner Online - Remove Extra Spaces & Clean Text
+Online Text Cleaner - Remove Extra Spaces & Clean Text
 [SEO_DESCRIPTION]
 Clean and format text instantly. Remove extra spaces, normalize line breaks, and remove unwanted characters. Perfect for preparing text for databases and documents.
 [INTRO]
 Text often contains inconsistencies that need to be cleaned before use: extra spaces, inconsistent line breaks, special characters, and formatting artifacts. A text cleaner helps prepare text for databases, documents, and content management systems.
 
-This free online text cleaner removes unwanted formatting and normalizes text. Whether you are preparing text for import, cleaning web content, or normalizing user input, this tool makes it easy.
+This online text cleaner removes unwanted formatting and normalizes text. Whether you are preparing text for import, cleaning web content, or normalizing user input, this tool makes it easy.
 
 Clean, consistent text is essential for data quality, SEO, and professional appearance.
 [HOW_TO_USE]

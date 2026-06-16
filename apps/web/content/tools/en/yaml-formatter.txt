@@ -1,17 +1,17 @@
 [TITLE]
-Free Online YAML Formatter
+Online YAML Formatter
 [H1]
-Free YAML Formatter Online
+Online YAML Formatter
 [DESCRIPTION]
 Format and validate YAML files for cleaner configuration and easier debugging.
 [SEO_TITLE]
-Free YAML Formatter Online - Beautify YAML Instantly
+Online YAML Formatter - Beautify YAML Instantly
 [SEO_DESCRIPTION]
 Format and beautify YAML files instantly. Fix indentation, validate syntax, and clean up configuration files. No data upload.
 [INTRO]
 YAML (YAML Ain't Markup Language) is a human-readable data serialization format commonly used for configuration files. YAML files are used by Docker, Kubernetes, Ansible, and many other DevOps tools. However, YAML is sensitive to indentation, making formatting issues common.
 
-This free online YAML formatter beautifies and validates YAML files instantly. Whether you are editing Docker Compose files, Kubernetes manifests, or application configurations, this tool helps you maintain clean, error-free YAML.
+This online YAML formatter beautifies and validates YAML files instantly. Whether you are editing Docker Compose files, Kubernetes manifests, or application configurations, this tool helps you maintain clean, error-online YAML.
 
 YAML formatting is essential for configuration reliability. Improper indentation can cause subtle bugs that are difficult to debug.
 [HOW_TO_USE]

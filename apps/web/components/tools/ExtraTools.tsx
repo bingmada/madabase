@@ -214,35 +214,6 @@ function money(value: number) {
   return new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 }).format(value);
 }
 
-function generateEnglishNames(input: string, locale: Locale = "en") {
-  const fields = parseLooseFields(input);
-  const style = `${fields.style ?? fields["风格"] ?? "classic"}`.toLowerCase();
-  const initial = `${fields.initial ?? fields["首字母"] ?? ""}`.trim().charAt(0).toUpperCase();
-  const gender = `${fields.gender ?? fields["性别"] ?? "neutral"}`.toLowerCase();
-  const names = [
-    { name: "Alex", gender: "neutral", style: "modern", meaning: "defender" },
-    { name: "Avery", gender: "neutral", style: "modern", meaning: "wise" },
-    { name: "Ethan", gender: "male", style: "classic", meaning: "strong" },
-    { name: "Lucas", gender: "male", style: "classic", meaning: "light" },
-    { name: "Noah", gender: "male", style: "gentle", meaning: "rest" },
-    { name: "Leo", gender: "male", style: "short", meaning: "lion" },
-    { name: "Emma", gender: "female", style: "classic", meaning: "whole" },
-    { name: "Olivia", gender: "female", style: "elegant", meaning: "olive tree" },
-    { name: "Mia", gender: "female", style: "short", meaning: "beloved" },
-    { name: "Clara", gender: "female", style: "elegant", meaning: "bright" },
-    { name: "Iris", gender: "female", style: "artistic", meaning: "rainbow" },
-    { name: "Rowan", gender: "neutral", style: "artistic", meaning: "tree of protection" },
-  ];
-  const filtered = names.filter((item) => {
-    const genderOk = gender.includes("neutral") || gender.includes("不限") || item.gender === "neutral" || gender.includes(item.gender) || (gender.includes("男") && item.gender === "male") || (gender.includes("女") && item.gender === "female");
-    const styleOk = style === "classic" ? item.style === "classic" : item.style.includes(style) || style.includes(item.style) || item.style === "classic";
-    const initialOk = !initial || item.name.startsWith(initial);
-    return genderOk && styleOk && initialOk;
-  });
-  const picked = (filtered.length ? filtered : names).slice(0, 8);
-  return picked.map((item, index) => `${index + 1}. ${item.name} - ${locale === "zh" ? "含义" : "meaning"}: ${item.meaning}; ${locale === "zh" ? "风格" : "style"}: ${item.style}`).join("\n");
-}
-
 const zodiacSigns = ["aries", "taurus", "gemini", "cancer", "leo", "virgo", "libra", "scorpio", "sagittarius", "capricorn", "aquarius", "pisces"];
 const zodiacZh: Record<string, string> = {
   "白羊": "aries",
@@ -1135,12 +1106,6 @@ const genericToolConfigs: Record<string, GenericToolConfig> = {
     sample: "alpha\nbeta\ngamma\ndelta",
     outputLabel: "Randomized lines",
     transform: (value) => normalizeLines(value).split("\n").sort(() => Math.random() - 0.5).join("\n"),
-  },
-  "english-name-generator": {
-    label: { en: "Style fields", zh: "偏好信息" },
-    sample: { en: "gender: neutral\nstyle: classic\ninitial: A", zh: "性别: 不限\n风格: classic\n首字母: A" },
-    outputLabel: { en: "Name ideas", zh: "英文名建议" },
-    transform: generateEnglishNames,
   },
   "zodiac-compatibility": {
     label: { en: "Two zodiac signs", zh: "两个星座" },

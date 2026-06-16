@@ -1,12 +1,12 @@
 ---
-title: Free Online Tools 如何加快日常调试
-description: 了解 free online tools 如何帮助开发者校验 payload、检查 URL、解码 token 并提升调试效率。
-slug: free-online-tools-for-debugging
+title: 在线工具如何加快日常调试
+description: 了解在线工具如何帮助开发者校验 payload、检查 URL、解码 token 并提升调试效率。
+slug: online-tools-for-debugging
 date: 2026-06-10
 ---
-# Free Online Tools 如何加快日常调试
+# 在线工具如何加快日常调试
 
-**free online tools** 可以为每次调试节省数分钟时间。
+**在线工具** 可以为每次调试节省数分钟时间。
 
 ## 常用示例
 

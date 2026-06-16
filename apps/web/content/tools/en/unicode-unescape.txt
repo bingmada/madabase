@@ -1,11 +1,11 @@
 [TITLE]
-Free Unicode Unescape Tool Online
+Online Unicode Unescape Tool
 [H1]
-Free Unicode Unescape Tool Online
+Online Unicode Unescape Tool
 [DESCRIPTION]
 Decode Unicode escape sequences back to text.
 [SEO_TITLE]
-Free Unicode Unescape Tool Online | Madabase
+Online Unicode Unescape Tool | Madabase
 [SEO_DESCRIPTION]
 Decode Unicode escape sequences back to text. Run it locally in your browser with a clean copyable output.
 [INTRO]
@@ -24,8 +24,8 @@ Madabase tools
 ===
 Processed Madabase tools
 [FAQ]
-Is this unicode unescape tool free?
-Yes. The first release is free to use in your browser.
+Is this unicode unescape tool online?
+Yes. The first release is online to use in your browser.
 Can I use private data?
 The tool runs locally in the browser UI, but you should still avoid pasting secrets into any web page you do not control.
 [RELATED_TOOLS]
@@ -34,7 +34,7 @@ json-formatter
 url-encoder
 [KEYWORDS]
 unicode unescape
-free unicode unescape
+online unicode unescape
 online unicode unescape
 [CATEGORY]
 developer

@@ -1,17 +1,17 @@
 [TITLE]
-Free Online SQL Formatter
+Online SQL Formatter
 [H1]
-Free SQL Formatter Online
+Online SQL Formatter
 [DESCRIPTION]
 Format and beautify SQL queries for better readability and debugging.
 [SEO_TITLE]
-Free SQL Formatter Online - Beautify SQL Queries Instantly
+Online SQL Formatter - Beautify SQL Queries Instantly
 [SEO_DESCRIPTION]
 Format and beautify SQL queries instantly. Improve readability, fix indentation, and debug complex queries. Supports multiple SQL dialects.
 [INTRO]
 SQL (Structured Query Language) is the standard language for managing relational databases. SQL queries can become complex and difficult to read, especially with multiple joins, subqueries, and conditions. A SQL formatter helps clean up and structure queries for better readability and debugging.
 
-This free online SQL formatter beautifies your SQL queries instantly. Whether you are debugging a complex query, reviewing someone else's code, or preparing queries for documentation, this tool makes SQL readable.
+This online SQL formatter beautifies your SQL queries instantly. Whether you are debugging a complex query, reviewing someone else's code, or preparing queries for documentation, this tool makes SQL readable.
 
 Proper SQL formatting is essential for code maintainability, team collaboration, and performance debugging. Clean SQL is easier to review, modify, and optimize.
 [HOW_TO_USE]

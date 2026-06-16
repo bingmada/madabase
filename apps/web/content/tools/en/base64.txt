@@ -1,17 +1,17 @@
 [TITLE]
-Free Online Base64 Encoder and Decoder
+Online Base64 Encoder and Decoder
 [H1]
-Free Base64 Encoder and Decoder
+Online Base64 Encoder and Decoder
 [DESCRIPTION]
 Encode and decode Base64 text in the browser. Supports UTF-8, Unicode, and binary data.
 [SEO_TITLE]
-Free Base64 Encoder and Decoder - Encode & Decode Base64 Instantly
+Online Base64 Encoder and Decoder - Encode & Decode Base64 Instantly
 [SEO_DESCRIPTION]
 Encode plain text to Base64 or decode Base64 strings instantly in the browser. Supports UTF-8 and Unicode. No data upload.
 [INTRO]
 Base64 encoding is a fundamental technique in modern web development and data transmission. It converts binary data into ASCII text format, making it safe for transmission over protocols that only support text. Whether you are working with JWT tokens, data URLs, email attachments, or API payloads, understanding Base64 encoding is essential.
 
-This free online Base64 encoder and decoder runs entirely in your browser, so your data never leaves your device. No server uploads, no logging, no tracking. Simply paste your text or Base64 string, choose encode or decode, and get your result instantly.
+This online Base64 encoder and decoder runs entirely in your browser, so your data never leaves your device. No server uploads, no logging, no tracking. Simply paste your text or Base64 string, choose encode or decode, and get your result instantly.
 
 Base64 is commonly used in many scenarios: embedding images in CSS or HTML as data URLs, passing binary data in JSON payloads, encoding authentication tokens, transmitting files via email, and storing binary data in text-based formats like XML or JSON configuration files.
 [HOW_TO_USE]

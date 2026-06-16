@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     description: post.description,
     locale,
     path: `/blog/${post.slug}`,
-    keywords: [post.slug, "developer blog", "online tools", "free online tools"],
+    keywords: [post.slug, "developer blog", "online tools", "browser tools"],
     type: "article",
   });
 }

@@ -1,17 +1,17 @@
 [TITLE]
-免费在线 JWT 解码器
+在线 JWT 解码器
 [H1]
-免费 JWT 解码器
+在线JWT 解码器
 [DESCRIPTION]
 在浏览器中快速解码 JWT 令牌，查看 Header、Payload 和 Signature。
 [SEO_TITLE]
-免费 JWT 解码器 - 在线解码 JWT 令牌
+在线JWT 解码器 - 在线解码 JWT 令牌
 [SEO_DESCRIPTION]
 在浏览器中快速解码 JWT 令牌，查看 Header、Payload 和 Signature。无需上传，数据本地处理。
 [INTRO]
 JSON Web Token (JWT) 是一种在各方之间安全传输信息的流行方式，以 JSON 对象形式表示。它们广泛用于现代身份验证系统，特别是单页应用和微服务架构。了解 JWT 令牌的结构对于开发者调试身份验证流程、检查声明或排查令牌相关问题至关重要。
 
-这款免费的在线 JWT 解码器允许你检查 JWT 令牌，无需任何服务器交互。粘贴 JWT 令牌后即可立即查看其三部分：Header（头部）、Payload（负载）和 Signature（签名）。工具完全在浏览器中运行，你的令牌永远不会离开你的设备。
+这款在线的在线 JWT 解码器允许你检查 JWT 令牌，无需任何服务器交互。粘贴 JWT 令牌后即可立即查看其三部分：Header（头部）、Payload（负载）和 Signature（签名）。工具完全在浏览器中运行，你的令牌永远不会离开你的设备。
 
 JWT 常用于用户身份验证、API 授权和信息交换。它们由三个用点分隔的 Base64URL 编码部分组成：Header（算法和令牌类型）、Payload（声明）和 Signature（签名）。这种模块化结构使 JWT 高效且可扩展，适用于分布式系统。
 [HOW_TO_USE]

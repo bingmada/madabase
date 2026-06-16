@@ -1,17 +1,17 @@
 [TITLE]
-Free Online URL Encoder and Decoder
+Online URL Encoder and Decoder
 [H1]
-Free URL Encoder and Decoder
+Online URL Encoder and Decoder
 [DESCRIPTION]
 Encode and decode URL strings safely. Convert special characters to percent-encoded format.
 [SEO_TITLE]
-Free URL Encoder and Decoder - Encode & Decode URLs Instantly
+Online URL Encoder and Decoder - Encode & Decode URLs Instantly
 [SEO_DESCRIPTION]
 Encode special characters in URLs and decode percent-encoded strings. Essential for API development and web debugging. No data upload.
 [INTRO]
 URL encoding (also known as percent-encoding) is essential for safely transmitting data in URLs. URLs can only contain a limited set of characters (ASCII letters, digits, and a few special characters). Special characters, spaces, and non-ASCII text must be encoded to be safely transmitted as part of a URL.
 
-This free online URL encoder and decoder handles the conversion between readable text and percent-encoded format. Whether you are debugging API requests, building URLs dynamically, or processing user input, this tool makes encoding and decoding effortless.
+This online URL encoder and decoder handles the conversion between readable text and percent-encoded format. Whether you are debugging API requests, building URLs dynamically, or processing user input, this tool makes encoding and decoding effortless.
 
 URL encoding replaces unsafe ASCII characters with a "%" followed by two hexadecimal digits. For example, spaces become %20, and special characters like & become %26. This encoding is defined by the RFC 3986 standard.
 [HOW_TO_USE]

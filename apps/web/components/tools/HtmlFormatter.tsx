@@ -3,7 +3,7 @@ import { useState } from "react";
 import { fireAndForgetToolExecution } from "@/lib/tool-usage-client";
 import { CopyButton, ResetButton, StatusMessage, ToolButton, ToolPanel, ToolTextarea } from "./ToolPrimitives";
 
-const sample = '<main><h1>Madabase</h1><p>Free developer tools.</p><ul><li>JSON</li><li>JWT</li></ul></main>';
+const sample = '<main><h1>Madabase</h1><p>Online developer tools.</p><ul><li>JSON</li><li>JWT</li></ul></main>';
 const inlineTags = new Set(["a", "abbr", "b", "br", "code", "em", "i", "img", "span", "strong"]);
 const voidTags = new Set(["area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"]);
 

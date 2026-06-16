@@ -1,11 +1,11 @@
 [TITLE]
-Free Markdown to Text Converter Online
+Online Markdown to Text Converter
 [H1]
-Free Markdown to Text Converter Online
+Online Markdown to Text Converter
 [DESCRIPTION]
 Strip Markdown syntax for clean plain text.
 [SEO_TITLE]
-Free Markdown to Text Converter Online | Madabase
+Online Markdown to Text Converter | Madabase
 [SEO_DESCRIPTION]
 Strip Markdown syntax for clean plain text. Run it locally in your browser with a clean copyable output.
 [INTRO]
@@ -24,8 +24,8 @@ Madabase tools
 ===
 Processed Madabase tools
 [FAQ]
-Is this markdown to text converter free?
-Yes. The first release is free to use in your browser.
+Is this markdown to text converter online?
+Yes. The first release is online to use in your browser.
 Can I use private data?
 The tool runs locally in the browser UI, but you should still avoid pasting secrets into any web page you do not control.
 [RELATED_TOOLS]
@@ -34,7 +34,7 @@ json-formatter
 url-encoder
 [KEYWORDS]
 markdown to text
-free markdown to text
+online markdown to text
 online markdown to text
 [CATEGORY]
 creator

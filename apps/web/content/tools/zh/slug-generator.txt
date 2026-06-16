@@ -1,17 +1,17 @@
 [TITLE]
-免费在线 Slug 生成器
+在线 Slug 生成器
 [H1]
-免费 Slug 生成器
+在线Slug 生成器
 [DESCRIPTION]
 从任何文本生成 URL 友好的 slug。小写、带连字符。
 [SEO_TITLE]
-免费 Slug 生成器 - 在线创建 URL Slug
+在线Slug 生成器 - 在线创建 URL Slug
 [SEO_DESCRIPTION]
 从标题和文本生成干净的、SEO 友好的 URL slug。自动转换为小写，移除特殊字符，用连字符替换空格。
 [INTRO]
 URL slug 是文本的 URL 友好版本，用于 URL 的路径部分。好的 slug 是小写的，使用连字符分隔单词，只包含字母、数字和连字符。创建一致的、可读的 slug 对 SEO 和用户体验都很重要。
 
-这款免费的在线 slug 生成器将任何文本转换为干净的、URL 友好的 slug。无论你是创建博客文章、产品页面还是分类页面，这个工具都可以轻松生成正确的 slug。
+这款在线的在线 slug 生成器将任何文本转换为干净的、URL 友好的 slug。无论你是创建博客文章、产品页面还是分类页面，这个工具都可以轻松生成正确的 slug。
 
 Slug 优化对 SEO 很重要：可读的 slug 帮助搜索引擎理解你的内容并提高搜索结果中的点击率。
 [HOW_TO_USE]

@@ -1,11 +1,11 @@
 [TITLE]
-免费占位文本生成器
+在线占位文本生成器
 [H1]
-免费占位文本生成器
+在线占位文本生成器
 [DESCRIPTION]
 为草稿和布局生成占位段落。
 [SEO_TITLE]
-免费占位文本生成器 | Madabase
+在线占位文本生成器 | Madabase
 [SEO_DESCRIPTION]
 为草稿和布局生成占位段落。 在浏览器中快速处理并复制结果。
 [INTRO]
@@ -24,8 +24,8 @@ Madabase 工具
 ===
 处理后的 Madabase 工具
 [FAQ]
-这个占位文本生成器免费吗？
-是的。当前版本可以在浏览器中免费使用。
+这个占位文本生成器在线吗？
+是的。当前版本可以在浏览器中在线使用。
 可以处理私密数据吗？
 工具界面在浏览器中运行，但仍建议不要把敏感密钥粘贴到任何网页。
 [RELATED_TOOLS]
@@ -34,7 +34,7 @@ json-formatter
 url-encoder
 [KEYWORDS]
 lorem ipsum
-免费 lorem ipsum
+在线lorem ipsum
 在线 lorem ipsum
 [CATEGORY]
 creator

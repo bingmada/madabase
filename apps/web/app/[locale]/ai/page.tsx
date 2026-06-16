@@ -34,12 +34,12 @@ export default async function AiPage({ params }: { params: Promise<{ locale: str
     en: {
       eyebrow: "AI roadmap",
       title: "Future AI workflows, staged with care.",
-      description: "The first launch focuses on free tools. These pages keep the future AI product structure visible without adding premature backend complexity.",
+      description: "The first launch focuses on online tools. These pages keep the future AI product structure visible without adding premature backend complexity.",
     },
     zh: {
       eyebrow: "AI 路线图",
       title: "为未来 AI 工作流预留清晰结构。",
-      description: "首版聚焦免费工具。这些页面先保留未来 AI 产品结构，不提前引入复杂后端。",
+      description: "首版聚焦在线工具。这些页面先保留未来 AI 产品结构，不提前引入复杂后端。",
     },
   }[locale];
 

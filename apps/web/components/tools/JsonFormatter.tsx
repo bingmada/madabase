@@ -19,7 +19,7 @@ export function JsonFormatter({ toolSlug = "json-formatter" }: { toolSlug?: stri
   async function markExecution() {
     const result = recordToolExecution(toolSlug);
     if (!result.allowed) {
-      setMessage(result.reason ?? "Daily free limit reached.");
+      setMessage(result.reason ?? "Daily online usage limit reached.");
       setTone("error");
       return false;
     }

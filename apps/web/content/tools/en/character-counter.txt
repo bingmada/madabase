@@ -1,17 +1,17 @@
 [TITLE]
-Free Online Character Counter
+Online Character Counter
 [H1]
-Free Character Counter Online
+Online Character Counter
 [DESCRIPTION]
 Count characters in text with and without spaces. Essential for social media limits.
 [SEO_TITLE]
-Free Character Counter Online - Count Characters Instantly
+Online Character Counter - Count Characters Instantly
 [SEO_DESCRIPTION]
 Count characters in any text with or without spaces. Essential for Twitter, SEO meta descriptions, and content with character limits.
 [INTRO]
 Character counting is essential for content creators, social media managers, and writers. Many platforms impose character limits: Twitter (now X) allows 280 characters, meta descriptions should be under 160 characters, and many forms have input length restrictions.
 
-This free online character counter provides instant character counts with and without spaces. Whether you are crafting tweets, writing meta descriptions, or preparing content for platforms with character limits, this tool helps you stay within limits.
+This online character counter provides instant character counts with and without spaces. Whether you are crafting tweets, writing meta descriptions, or preparing content for platforms with character limits, this tool helps you stay within limits.
 
 Character counts are also important for programming: database field limits, form validation, and API constraints often use character counts.
 [HOW_TO_USE]

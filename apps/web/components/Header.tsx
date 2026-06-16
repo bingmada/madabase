@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Search } from "lucide-react";
 import { getCurrentUser } from "@/lib/auth/services/sessionService";
 import type { Locale } from "@/lib/i18n";
 import { getExistingCreditBalance } from "@/lib/user-dashboard";
@@ -18,6 +19,7 @@ export async function Header({ locale, pathname = "/" }: { locale: Locale; pathn
     tests: locale === "en" ? "Tests" : "测试",
     blog: locale === "en" ? "Blog" : "博客",
     ai: locale === "en" ? "AI" : "AI",
+    search: locale === "en" ? "Search" : "搜索",
     login: locale === "en" ? "Log in" : "登录",
   };
 
@@ -26,6 +28,7 @@ export async function Header({ locale, pathname = "/" }: { locale: Locale; pathn
     { href: `/${locale}/tests`, label: copy.tests, active: pathname === "/tests" || pathname.startsWith("/tests/") },
     { href: `/${locale}/blog`, label: copy.blog, active: pathname === "/blog" || pathname.startsWith("/blog/") },
     { href: `/${locale}/ai`, label: copy.ai, active: pathname === "/ai" || pathname.startsWith("/ai/") },
+    { href: `/${locale}/search`, label: copy.search, active: pathname === "/search" },
   ];
 
   return (
@@ -45,7 +48,7 @@ export async function Header({ locale, pathname = "/" }: { locale: Locale; pathn
         <nav className="hidden min-w-0 items-center gap-1 text-sm text-[var(--text-muted)] md:flex md:gap-2">
           {navItems.map((item) => (
             <Link key={item.href} href={item.href} className={navLinkClassName(item.active)}>
-              {item.label}
+              {item.label === copy.search ? <span className="inline-flex items-center gap-1.5"><Search className="h-3.5 w-3.5" />{item.label}</span> : item.label}
             </Link>
           ))}
           {user ? (

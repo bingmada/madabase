@@ -1,17 +1,17 @@
 [TITLE]
-Free Online JSON Diff
+Online JSON Diff
 [H1]
-Free JSON Diff Online
+Online JSON Diff
 [DESCRIPTION]
 Compare two JSON documents and see the differences highlighted instantly.
 [SEO_TITLE]
-Free JSON Diff Online - Compare JSON Files Instantly
+Online JSON Diff - Compare JSON Files Instantly
 [SEO_DESCRIPTION]
 Compare two JSON documents and visualize differences. See added, removed, and changed values highlighted. Essential for debugging and API comparison.
 [INTRO]
 Comparing JSON documents is essential when debugging API changes, reviewing configuration differences, or understanding data modifications. Manual comparison of large JSON files is tedious and error-prone.
 
-This free online JSON diff tool compares two JSON documents and highlights the differences. Whether you are comparing API responses, configuration files, or database exports, this tool makes differences immediately visible.
+This online JSON diff tool compares two JSON documents and highlights the differences. Whether you are comparing API responses, configuration files, or database exports, this tool makes differences immediately visible.
 
 JSON diff visualization helps you understand exactly what changed between two versions of data.
 [HOW_TO_USE]

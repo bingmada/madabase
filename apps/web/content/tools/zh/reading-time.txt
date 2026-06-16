@@ -1,11 +1,11 @@
 [TITLE]
-免费阅读时间计算器
+在线阅读时间计算器
 [H1]
-免费阅读时间计算器
+在线阅读时间计算器
 [DESCRIPTION]
 根据文章文本估算阅读时间。
 [SEO_TITLE]
-免费阅读时间计算器 | Madabase
+在线阅读时间计算器 | Madabase
 [SEO_DESCRIPTION]
 根据文章文本估算阅读时间。 在浏览器中快速处理并复制结果。
 [INTRO]
@@ -24,8 +24,8 @@ Madabase 工具
 ===
 处理后的 Madabase 工具
 [FAQ]
-这个阅读时间计算器免费吗？
-是的。当前版本可以在浏览器中免费使用。
+这个阅读时间计算器在线吗？
+是的。当前版本可以在浏览器中在线使用。
 可以处理私密数据吗？
 工具界面在浏览器中运行，但仍建议不要把敏感密钥粘贴到任何网页。
 [RELATED_TOOLS]
@@ -34,7 +34,7 @@ json-formatter
 url-encoder
 [KEYWORDS]
 reading time
-免费 reading time
+在线reading time
 在线 reading time
 [CATEGORY]
 creator

@@ -2,6 +2,8 @@
 
 import type { ToolComponentName } from "@/lib/tool-registry";
 import type { Locale } from "@/lib/i18n";
+import { ZodiacCompatibilityWidget } from "@/components/culture/ZodiacCompatibilityWidget";
+import { BmiCalculator, CalorieCalculator, FinancialGoalCalculator, FiveElementsReference, RetirementCalculator, SleepCalculator } from "./CalculatorTools";
 import { Base64Tool } from "./Base64Tool";
 import {
   CaseConverter,
@@ -71,6 +73,16 @@ const toolComponents: Record<ToolComponentName, React.ComponentType<{ toolSlug?:
 };
 
 export function ToolRenderer({ component, toolSlug, locale }: { component: ToolComponentName; toolSlug?: string; locale?: Locale }) {
+  if (toolSlug === "zodiac-compatibility") {
+    return <ZodiacCompatibilityWidget locale={locale ?? "en"} />;
+  }
+  if (toolSlug === "bmi-calculator") return <BmiCalculator locale={locale ?? "en"} />;
+  if (toolSlug === "calorie-calculator") return <CalorieCalculator locale={locale ?? "en"} />;
+  if (toolSlug === "sleep-calculator") return <SleepCalculator locale={locale ?? "en"} />;
+  if (toolSlug === "financial-goal-calculator") return <FinancialGoalCalculator locale={locale ?? "en"} />;
+  if (toolSlug === "retirement-calculator") return <RetirementCalculator locale={locale ?? "en"} />;
+  if (toolSlug === "birthday-five-elements") return <FiveElementsReference locale={locale ?? "en"} />;
+
   const Component = toolComponents[component];
   return <Component toolSlug={toolSlug} locale={locale} />;
 }

@@ -1,11 +1,11 @@
 [TITLE]
-Free Number Extractor Online
+Online Number Extractor
 [H1]
-Free Number Extractor Online
+Online Number Extractor
 [DESCRIPTION]
 Extract numbers from text for quick cleanup.
 [SEO_TITLE]
-Free Number Extractor Online | Madabase
+Online Number Extractor | Madabase
 [SEO_DESCRIPTION]
 Extract numbers from text for quick cleanup. Run it locally in your browser with a clean copyable output.
 [INTRO]
@@ -24,8 +24,8 @@ Madabase tools
 ===
 Processed Madabase tools
 [FAQ]
-Is this number extractor free?
-Yes. The first release is free to use in your browser.
+Is this number extractor online?
+Yes. The first release is online to use in your browser.
 Can I use private data?
 The tool runs locally in the browser UI, but you should still avoid pasting secrets into any web page you do not control.
 [RELATED_TOOLS]
@@ -34,7 +34,7 @@ json-formatter
 url-encoder
 [KEYWORDS]
 number extractor
-free number extractor
+online number extractor
 online number extractor
 [CATEGORY]
 text

@@ -1,17 +1,17 @@
 [TITLE]
-Free Online JSON Validator
+Online JSON Validator
 [H1]
-Free JSON Validator Online
+Online JSON Validator
 [DESCRIPTION]
 Validate JSON syntax and surface errors with helpful line numbers and messages.
 [SEO_TITLE]
-Free JSON Validator Online - Check JSON Syntax Errors
+Online JSON Validator - Check JSON Syntax Errors
 [SEO_DESCRIPTION]
 Validate JSON syntax instantly with helpful error messages and line numbers. Debug invalid JSON quickly. No data upload.
 [INTRO]
 JSON validation is crucial when working with APIs, configuration files, and data interchange. Invalid JSON can cause API calls to fail, applications to crash, and data processing pipelines to break. A good JSON validator helps you catch and fix errors before they cause problems.
 
-This free online JSON validator checks your JSON syntax and provides helpful error messages with line numbers. Whether you are debugging API responses, validating configuration files, or testing data structures, this tool makes validation quick and easy.
+This online JSON validator checks your JSON syntax and provides helpful error messages with line numbers. Whether you are debugging API responses, validating configuration files, or testing data structures, this tool makes validation quick and easy.
 
 The validator uses the same JSON parsing engine as modern JavaScript runtimes, ensuring your JSON will work in real applications.
 [HOW_TO_USE]

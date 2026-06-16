@@ -9,7 +9,7 @@ import { toolRegistry, getCategories } from "@/lib/tool-registry";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = getSiteUrl();
-  const routes = ["", "/tools", "/tests", "/ai", "/blog"];
+  const routes = ["", "/tools", "/tests", "/ai", "/blog", "/contact", "/search"];
   const categories = getCategories();
 
   const blogEntries = await Promise.all(

@@ -10,7 +10,7 @@ import { PageViewTracker } from "@/components/PageViewTracker";
 import { getCategoryLabel, isLocale, locales, testCategoryLabels } from "@/lib/i18n";
 import { buildAbsoluteUrl, buildPageMetadata } from "@/lib/seo";
 import { loadTestContent } from "@/lib/test-content";
-import { getTestCategories, testRegistry } from "@/lib/test-registry";
+import { testRegistry } from "@/lib/test-registry";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   if (!isLocale(locale)) return {};
 
   return buildPageMetadata({
-    title: locale === "en" ? "Free Online Personality Tests" : "免费在线人格测试",
+    title: locale === "en" ? "Online Personality Tests" : "在线人格测试",
     description:
       locale === "en"
         ? "Take interactive personality, career, relationship, and self-discovery tests on Madabase."
@@ -49,7 +49,6 @@ export default async function TestsPage({ params }: { params: Promise<{ locale: 
       title: "Interactive tests for personality, career, and self-discovery.",
       description: "Start with a fast MBTI-style assessment, then unlock deeper reports with credits as the platform grows.",
       allTests: "All tests",
-      categories: "Categories",
       questions: "questions",
       minutes: "min",
       start: "Start test",
@@ -59,7 +58,6 @@ export default async function TestsPage({ params }: { params: Promise<{ locale: 
       title: "面向人格、职业与自我探索的互动测试。",
       description: "先从 MBTI 风格测试开始，后续可用积分解锁更深入的完整报告。",
       allTests: "全部测试",
-      categories: "分类",
       questions: "题",
       minutes: "分钟",
       start: "开始测试",
@@ -79,24 +77,10 @@ export default async function TestsPage({ params }: { params: Promise<{ locale: 
         <PageViewTracker locale={locale} />
         <AdSlot locale={locale} position="header" size="banner" />
 
-        <section className="surface-card-strong overflow-hidden">
-          <div className="grid gap-0 lg:grid-cols-[1fr_0.9fr]">
-            <div className="p-6 sm:p-8 lg:p-10">
-              <p className="eyebrow">{copy.eyebrow}</p>
-              <h1 className="mt-4 max-w-3xl text-4xl font-black tracking-tight text-[var(--text)] sm:text-5xl">{copy.title}</h1>
-              <p className="mt-5 max-w-2xl text-lg leading-8 text-[var(--text-muted)]">{copy.description}</p>
-            </div>
-            <div className="border-t border-[var(--border)] bg-[var(--surface-muted)] p-5 lg:border-l lg:border-t-0">
-              <div className="grid gap-3 sm:grid-cols-3 lg:grid-cols-1">
-                {getTestCategories().slice(0, 3).map((category) => (
-                  <div key={category} className="rounded-md border border-[var(--border)] bg-white p-4">
-                    <p className="code-font text-xs font-semibold uppercase tracking-[0.16em] text-[var(--text-soft)]">{copy.categories}</p>
-                    <p className="mt-2 text-lg font-bold text-[var(--text)]">{getCategoryLabel(category, locale, testCategoryLabels)}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
+        <section className="surface-card-strong p-6 sm:p-8 lg:p-10">
+          <p className="eyebrow">{copy.eyebrow}</p>
+          <h1 className="mt-4 max-w-3xl text-4xl font-black tracking-tight text-[var(--text)] sm:text-5xl">{copy.title}</h1>
+          <p className="mt-5 max-w-3xl text-lg leading-8 text-[var(--text-muted)]">{copy.description}</p>
         </section>
 
         <section className="mt-10">

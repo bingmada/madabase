@@ -1,11 +1,11 @@
 [TITLE]
-免费行去重工具
+在线行去重工具
 [H1]
-免费行去重工具
+在线行去重工具
 [DESCRIPTION]
 移除重复行，保留一份干净列表。
 [SEO_TITLE]
-免费行去重工具 | Madabase
+在线行去重工具 | Madabase
 [SEO_DESCRIPTION]
 移除重复行，保留一份干净列表。 在浏览器中快速处理并复制结果。
 [INTRO]
@@ -24,8 +24,8 @@ Madabase 工具
 ===
 处理后的 Madabase 工具
 [FAQ]
-这个行去重工具免费吗？
-是的。当前版本可以在浏览器中免费使用。
+这个行去重工具在线吗？
+是的。当前版本可以在浏览器中在线使用。
 可以处理私密数据吗？
 工具界面在浏览器中运行，但仍建议不要把敏感密钥粘贴到任何网页。
 [RELATED_TOOLS]
@@ -34,7 +34,7 @@ json-formatter
 url-encoder
 [KEYWORDS]
 line deduplicator
-免费 line deduplicator
+在线line deduplicator
 在线 line deduplicator
 [CATEGORY]
 text

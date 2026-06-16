@@ -1,12 +1,12 @@
 ---
-title: Free Online Tools for Faster Debugging
-description: See how free online tools help developers validate payloads, inspect URLs, decode tokens, and speed up daily debugging.
-slug: free-online-tools-for-debugging
+title: Online Tools for Faster Debugging
+description: See how online tools help developers validate payloads, inspect URLs, decode tokens, and speed up daily debugging.
+slug: online-tools-for-debugging
 date: 2026-06-10
 ---
-# Free Online Tools for Faster Debugging
+# Online Tools for Faster Debugging
 
-**Free online tools** can remove minutes from every debugging session.
+**online tools** can remove minutes from every debugging session.
 
 ## Useful examples
 

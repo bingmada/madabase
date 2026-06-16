@@ -1,11 +1,11 @@
 [TITLE]
-Free Line Sorter Online
+Online Line Sorter
 [H1]
-Free Line Sorter Online
+Online Line Sorter
 [DESCRIPTION]
 Sort lines alphabetically and clean up list data.
 [SEO_TITLE]
-Free Line Sorter Online | Madabase
+Online Line Sorter | Madabase
 [SEO_DESCRIPTION]
 Sort lines alphabetically and clean up list data. Run it locally in your browser with a clean copyable output.
 [INTRO]
@@ -24,8 +24,8 @@ Madabase tools
 ===
 Processed Madabase tools
 [FAQ]
-Is this line sorter free?
-Yes. The first release is free to use in your browser.
+Is this line sorter online?
+Yes. The first release is online to use in your browser.
 Can I use private data?
 The tool runs locally in the browser UI, but you should still avoid pasting secrets into any web page you do not control.
 [RELATED_TOOLS]
@@ -34,7 +34,7 @@ json-formatter
 url-encoder
 [KEYWORDS]
 line sorter
-free line sorter
+online line sorter
 online line sorter
 [CATEGORY]
 text

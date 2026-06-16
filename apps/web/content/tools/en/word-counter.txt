@@ -1,17 +1,17 @@
 [TITLE]
-Free Online Word Counter
+Online Word Counter
 [H1]
-Free Word Counter Online
+Online Word Counter
 [DESCRIPTION]
 Count words, characters, sentences, and paragraphs in your text instantly.
 [SEO_TITLE]
-Free Word Counter Online - Count Words Instantly
+Online Word Counter - Count Words Instantly
 [SEO_DESCRIPTION]
 Count words, characters, sentences, and paragraphs in any text. Get detailed statistics for writing, SEO, and content planning.
 [INTRO]
 Word counting is essential for writers, students, bloggers, and content creators. Whether you need to meet a word count requirement, optimize content for SEO, or track your writing progress, a word counter helps you measure and achieve your goals.
 
-This free online word counter analyzes your text and provides detailed statistics including word count, character count, sentence count, paragraph count, and reading time estimates. All analysis happens instantly in your browser.
+This online word counter analyzes your text and provides detailed statistics including word count, character count, sentence count, paragraph count, and reading time estimates. All analysis happens instantly in your browser.
 
 Word counts matter for many contexts: academic papers, blog posts, social media character limits, SEO content length, and professional writing requirements.
 [HOW_TO_USE]

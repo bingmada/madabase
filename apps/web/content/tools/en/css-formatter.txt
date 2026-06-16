@@ -1,17 +1,17 @@
 [TITLE]
-Free Online CSS Formatter
+Online CSS Formatter
 [H1]
-Free CSS Formatter Online
+Online CSS Formatter
 [DESCRIPTION]
 Format and beautify CSS code for better readability and debugging.
 [SEO_TITLE]
-Free CSS Formatter Online - Beautify CSS Instantly
+Online CSS Formatter - Beautify CSS Instantly
 [SEO_DESCRIPTION]
 Format and beautify CSS code instantly. Fix indentation, organize properties, and clean up stylesheets. Essential for web developers.
 [INTRO]
 CSS (Cascading Style Sheets) is the language for styling web pages. CSS code can become messy and hard to maintain, especially in large stylesheets. A CSS formatter helps clean up and organize CSS for better readability and maintainability.
 
-This free online CSS formatter beautifies your CSS code instantly. Whether you are working with inline styles, embedded CSS, or external stylesheets, this tool adds proper formatting and indentation.
+This online CSS formatter beautifies your CSS code instantly. Whether you are working with inline styles, embedded CSS, or external stylesheets, this tool adds proper formatting and indentation.
 
 Clean CSS is essential for code maintainability, team collaboration, and efficient debugging.
 [HOW_TO_USE]

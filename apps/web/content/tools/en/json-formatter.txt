@@ -1,15 +1,15 @@
 [TITLE]
-Free Online JSON Formatter
+Online JSON Formatter
 [H1]
-Free JSON Formatter Online
+Online JSON Formatter
 [DESCRIPTION]
 Format, minify, and validate JSON instantly in your browser.
 [SEO_TITLE]
-Free JSON Formatter Online - Beautify & Minify JSON Instantly
+Online JSON Formatter - Beautify & Minify JSON Instantly
 [SEO_DESCRIPTION]
 Beautify and minify JSON instantly with a fast, browser-based JSON formatter. No sign-up required, your data stays local.
 [INTRO]
-A JSON formatter turns compact data into readable structure so you can debug payloads, APIs, and config files faster. Whether you are working with API responses, configuration files, or application logs, this free JSON formatter helps you quickly format, minify, and validate your JSON data right in your browser. No sign-up, no uploads, no waiting — just paste, format, and copy.
+A JSON formatter turns compact data into readable structure so you can debug payloads, APIs, and config files faster. Whether you are working with API responses, configuration files, or application logs, this online JSON formatter helps you quickly format, minify, and validate your JSON data right in your browser. No sign-up, no uploads, no waiting — just paste, format, and copy.
 
 JSON (JavaScript Object Notation) is the de facto standard for data exchange on the web. Almost every modern API returns data in JSON format, and configuration files for tools like npm, webpack, and Docker are typically written in JSON. But when you receive minified or compact JSON from an API response, reading it becomes challenging. This is where a JSON formatter becomes essential.
 

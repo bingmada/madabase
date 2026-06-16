@@ -54,8 +54,8 @@ export default async function BlogIndexPage({ params }: { params: Promise<{ loca
           </h1>
           <p className="mt-5 max-w-3xl text-lg leading-8 text-[var(--text-muted)]">
             {locale === "en"
-              ? "Madabase combines free browser tools with SEO-friendly articles that explain the concepts behind everyday developer tasks."
-              : "Madabase 将免费浏览器工具与 SEO 内容结合起来，让每个页面同时具备实用性与解释能力。"}
+              ? "Madabase combines online browser tools with SEO-friendly articles that explain the concepts behind everyday developer tasks."
+              : "Madabase 将在线浏览器工具与 SEO 内容结合起来，让每个页面同时具备实用性与解释能力。"}
           </p>
         </section>
 

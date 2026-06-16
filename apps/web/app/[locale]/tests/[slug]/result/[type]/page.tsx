@@ -102,7 +102,7 @@ export default async function TestResultPage({
     en: {
       result: "Your type is",
       outcome: "Your result is",
-      free: "Free summary",
+      summary: "Summary",
       full: "Full report",
       traits: "Core traits",
       strengths: "Strengths",
@@ -125,7 +125,7 @@ export default async function TestResultPage({
     zh: {
       result: "你的类型是",
       outcome: "你的结果是",
-      free: "免费摘要",
+      summary: "在线摘要",
       full: "完整报告",
       traits: "核心特质",
       strengths: "优势",
@@ -201,7 +201,7 @@ export default async function TestResultPage({
 
           <section className="grid gap-0 lg:grid-cols-[0.85fr_1.15fr]">
             <div className="border-b border-[var(--border)] bg-[var(--surface-muted)] p-5 sm:p-7 lg:border-b-0 lg:border-r">
-              <h2 className="text-2xl font-bold text-[var(--text)]">{copy.free}</h2>
+              <h2 className="text-2xl font-bold text-[var(--text)]">{copy.summary}</h2>
               <div className="mt-5 flex flex-wrap gap-2">
                 {result.traits.map((trait) => (
                   <span key={trait} className="rounded-full border border-[var(--border)] bg-white px-3 py-1 text-sm font-semibold text-[var(--text)]">

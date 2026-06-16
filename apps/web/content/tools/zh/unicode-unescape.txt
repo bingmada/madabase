@@ -1,11 +1,11 @@
 [TITLE]
-免费Unicode 反转义工具
+在线Unicode 反转义工具
 [H1]
-免费Unicode 反转义工具
+在线Unicode 反转义工具
 [DESCRIPTION]
 将 Unicode 转义序列还原为文本。
 [SEO_TITLE]
-免费Unicode 反转义工具 | Madabase
+在线Unicode 反转义工具 | Madabase
 [SEO_DESCRIPTION]
 将 Unicode 转义序列还原为文本。 在浏览器中快速处理并复制结果。
 [INTRO]
@@ -24,8 +24,8 @@ Madabase 工具
 ===
 处理后的 Madabase 工具
 [FAQ]
-这个Unicode 反转义工具免费吗？
-是的。当前版本可以在浏览器中免费使用。
+这个Unicode 反转义工具在线吗？
+是的。当前版本可以在浏览器中在线使用。
 可以处理私密数据吗？
 工具界面在浏览器中运行，但仍建议不要把敏感密钥粘贴到任何网页。
 [RELATED_TOOLS]
@@ -34,7 +34,7 @@ json-formatter
 url-encoder
 [KEYWORDS]
 unicode unescape
-免费 unicode unescape
+在线unicode unescape
 在线 unicode unescape
 [CATEGORY]
 developer

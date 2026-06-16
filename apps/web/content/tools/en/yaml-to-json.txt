@@ -1,11 +1,11 @@
 [TITLE]
-Free YAML to JSON Converter Online
+Online YAML to JSON Converter
 [H1]
-Free YAML to JSON Converter Online
+Online YAML to JSON Converter
 [DESCRIPTION]
 Convert simple key-value YAML into JSON.
 [SEO_TITLE]
-Free YAML to JSON Converter Online | Madabase
+Online YAML to JSON Converter | Madabase
 [SEO_DESCRIPTION]
 Convert simple key-value YAML into JSON. Run it locally in your browser with a clean copyable output.
 [INTRO]
@@ -24,8 +24,8 @@ Madabase tools
 ===
 Processed Madabase tools
 [FAQ]
-Is this yaml to json converter free?
-Yes. The first release is free to use in your browser.
+Is this yaml to json converter online?
+Yes. The first release is online to use in your browser.
 Can I use private data?
 The tool runs locally in the browser UI, but you should still avoid pasting secrets into any web page you do not control.
 [RELATED_TOOLS]
@@ -34,7 +34,7 @@ json-formatter
 url-encoder
 [KEYWORDS]
 yaml to json
-free yaml to json
+online yaml to json
 online yaml to json
 [CATEGORY]
 developer

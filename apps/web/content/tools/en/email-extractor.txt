@@ -1,11 +1,11 @@
 [TITLE]
-Free Email Extractor Online
+Online Email Extractor
 [H1]
-Free Email Extractor Online
+Online Email Extractor
 [DESCRIPTION]
 Extract email addresses from messy text.
 [SEO_TITLE]
-Free Email Extractor Online | Madabase
+Online Email Extractor | Madabase
 [SEO_DESCRIPTION]
 Extract email addresses from messy text. Run it locally in your browser with a clean copyable output.
 [INTRO]
@@ -24,8 +24,8 @@ Madabase tools
 ===
 Processed Madabase tools
 [FAQ]
-Is this email extractor free?
-Yes. The first release is free to use in your browser.
+Is this email extractor online?
+Yes. The first release is online to use in your browser.
 Can I use private data?
 The tool runs locally in the browser UI, but you should still avoid pasting secrets into any web page you do not control.
 [RELATED_TOOLS]
@@ -34,7 +34,7 @@ json-formatter
 url-encoder
 [KEYWORDS]
 email extractor
-free email extractor
+online email extractor
 online email extractor
 [CATEGORY]
 text

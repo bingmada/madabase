@@ -13,13 +13,13 @@ export const metadata: Metadata = {
     default: "Madabase",
     template: "%s | Madabase",
   },
-  description: "Madabase offers free online developer tools, SEO-friendly content pages, and a growing library of practical resources.",
+  description: "Madabase offers online developer tools, SEO-friendly content pages, and a growing library of practical resources.",
   alternates: {
     canonical: getSiteUrl(),
   },
   openGraph: {
     title: "Madabase",
-    description: "Madabase offers free online developer tools, SEO-friendly content pages, and a growing library of practical resources.",
+    description: "Madabase offers online developer tools, SEO-friendly content pages, and a growing library of practical resources.",
     url: getSiteUrl(),
     siteName: "Madabase",
     type: "website",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Madabase",
-    description: "Madabase offers free online developer tools, SEO-friendly content pages, and a growing library of practical resources.",
+    description: "Madabase offers online developer tools, SEO-friendly content pages, and a growing library of practical resources.",
   },
 };
 
