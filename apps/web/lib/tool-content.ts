@@ -1,8 +1,8 @@
 import type { Locale } from "./i18n";
 
 const localFaq = {
-  en: { q: "Does this tool upload my input?", a: "No. This tool runs in your browser for the first release, so your input stays local." },
-  zh: { q: "这个工具会上传我的输入吗？", a: "不会。第一版工具在浏览器本地运行，你输入的内容会保留在本地。" },
+  en: { q: "Does this tool upload my input?", a: "No. The tool runs in your browser, so your input stays on your device." },
+  zh: { q: "这个工具会上传我的输入吗？", a: "不会。工具在浏览器本地运行，你输入的内容会保留在你的设备上。" },
 };
 
 export type LocalizedStep = {

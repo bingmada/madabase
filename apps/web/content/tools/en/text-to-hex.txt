@@ -25,7 +25,7 @@ Madabase tools
 Processed Madabase tools
 [FAQ]
 Is this text to hex converter online?
-Yes. The first release is online to use in your browser.
+Yes. You can use it directly in your browser.
 Can I use private data?
 The tool runs locally in the browser UI, but you should still avoid pasting secrets into any web page you do not control.
 [RELATED_TOOLS]

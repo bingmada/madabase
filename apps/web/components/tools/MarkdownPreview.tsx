@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import type { Locale } from "@/lib/i18n";
 import { fireAndForgetToolExecution } from "@/lib/tool-usage-client";
 import { ResetButton, StatusMessage, ToolButton, ToolPanel, ToolTextarea } from "./ToolPrimitives";
 
@@ -57,15 +58,23 @@ function MarkdownContent({ value }: { value: string }) {
   );
 }
 
-export function MarkdownPreview() {
+export function MarkdownPreview({ locale = "en" }: { locale?: Locale }) {
   const [input, setInput] = useState(sample);
   const [previewInput, setPreviewInput] = useState(sample);
-  const [message, setMessage] = useState("Edit markdown and click preview.");
+  const [message, setMessage] = useState(locale === "zh" ? "编辑 Markdown 后点击预览。" : "Edit markdown and click preview.");
   const [tone, setTone] = useState<"neutral" | "success" | "error">("neutral");
+  const copy = {
+    preview: locale === "zh" ? "预览 Markdown" : "Preview Markdown",
+    reset: locale === "zh" ? "重置" : "Reset",
+    idle: locale === "zh" ? "编辑 Markdown 后点击预览。" : "Edit markdown and click preview.",
+    updated: locale === "zh" ? "预览已更新。" : "Preview updated.",
+    input: locale === "zh" ? "Markdown 输入" : "Markdown",
+    output: locale === "zh" ? "预览结果" : "Preview",
+  };
 
   function preview() {
     setPreviewInput(input);
-    setMessage("Preview updated.");
+    setMessage(copy.updated);
     setTone("success");
     fireAndForgetToolExecution("markdown-preview");
   }
@@ -74,19 +83,19 @@ export function MarkdownPreview() {
     <ToolPanel>
       <div className="space-y-4">
         <div className="flex flex-wrap justify-end gap-2">
-          <ToolButton onClick={preview}>Preview Markdown</ToolButton>
+          <ToolButton onClick={preview}>{copy.preview}</ToolButton>
           <ResetButton onClick={() => {
             setInput(sample);
             setPreviewInput(sample);
-            setMessage("Edit markdown and click preview.");
+            setMessage(copy.idle);
             setTone("neutral");
-          }} />
+          }} label={copy.reset} />
         </div>
         <StatusMessage message={message} tone={tone} />
         <div className="grid gap-4 lg:grid-cols-2">
-          <ToolTextarea label="Markdown" value={input} onChange={setInput} rows={16} />
+          <ToolTextarea label={copy.input} value={input} onChange={setInput} rows={16} />
           <section className="rounded-md border border-[var(--border)] bg-white p-4">
-            <h2 className="code-font mb-3 text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-soft)]">Preview</h2>
+            <h2 className="code-font mb-3 text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-soft)]">{copy.output}</h2>
             <MarkdownContent value={previewInput} />
           </section>
         </div>

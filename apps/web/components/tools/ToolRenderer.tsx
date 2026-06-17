@@ -24,6 +24,7 @@ import {
   SqlFormatter,
   TextCleaner,
   UrlParser,
+  UserAgentParser,
   WordCounter,
   XmlFormatter,
   YamlFormatter,
@@ -69,6 +70,7 @@ const toolComponents: Record<ToolComponentName, React.ComponentType<{ toolSlug?:
   CssFormatter,
   JsFormatter,
   UrlParser,
+  UserAgentParser,
   GenericTextTool,
 };
 

@@ -18,7 +18,6 @@ export async function Header({ locale, pathname = "/" }: { locale: Locale; pathn
     tools: locale === "en" ? "Tools" : "工具",
     tests: locale === "en" ? "Tests" : "测试",
     blog: locale === "en" ? "Blog" : "博客",
-    ai: locale === "en" ? "AI" : "AI",
     search: locale === "en" ? "Search" : "搜索",
     login: locale === "en" ? "Log in" : "登录",
   };
@@ -27,7 +26,6 @@ export async function Header({ locale, pathname = "/" }: { locale: Locale; pathn
     { href: `/${locale}/tools`, label: copy.tools, active: pathname === "/tools" || pathname.startsWith("/tools/") },
     { href: `/${locale}/tests`, label: copy.tests, active: pathname === "/tests" || pathname.startsWith("/tests/") },
     { href: `/${locale}/blog`, label: copy.blog, active: pathname === "/blog" || pathname.startsWith("/blog/") },
-    { href: `/${locale}/ai`, label: copy.ai, active: pathname === "/ai" || pathname.startsWith("/ai/") },
     { href: `/${locale}/search`, label: copy.search, active: pathname === "/search" },
   ];
 

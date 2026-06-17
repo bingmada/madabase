@@ -116,8 +116,12 @@ export function StatusMessage({ message, tone = "neutral" }: { message: string; 
   return <div className={`rounded-md border px-3 py-2 text-sm font-medium ${toneClass}`}>{message}</div>;
 }
 
-export function CopyButton({ value, label = "Copy", copiedLabel = "Copied" }: { value: string; label?: string; copiedLabel?: string }) {
+export function CopyButton({ value, label, copiedLabel }: { value: string; label?: string; copiedLabel?: string }) {
   const [copied, setCopied] = useState(false);
+  const pathname = usePathname();
+  const isZh = pathname.startsWith("/zh/");
+  const displayLabel = label ?? (isZh ? "复制" : "Copy");
+  const displayCopiedLabel = copiedLabel ?? (isZh ? "已复制" : "Copied");
 
   async function copy() {
     if (!value) return;
@@ -131,24 +135,26 @@ export function CopyButton({ value, label = "Copy", copiedLabel = "Copied" }: { 
       type="button"
       onClick={copy}
       className="inline-flex h-10 items-center gap-2 rounded-md border border-[var(--border)] bg-white px-3 text-sm font-semibold text-[var(--text)] shadow-sm transition hover:border-[var(--brand)] hover:bg-[var(--brand-soft)]"
-      title={label}
+      title={displayLabel}
     >
       <Clipboard className="h-4 w-4" aria-hidden="true" />
-      {copied ? copiedLabel : label}
+      {copied ? displayCopiedLabel : displayLabel}
     </button>
   );
 }
 
-export function ResetButton({ onClick, label = "Reset" }: { onClick: () => void; label?: string }) {
+export function ResetButton({ onClick, label }: { onClick: () => void; label?: string }) {
+  const pathname = usePathname();
+  const displayLabel = label ?? (pathname.startsWith("/zh/") ? "重置" : "Reset");
   return (
     <button
       type="button"
       onClick={onClick}
       className="inline-flex h-10 items-center gap-2 rounded-md border border-[var(--border)] bg-white px-3 text-sm font-semibold text-[var(--text)] shadow-sm transition hover:border-[var(--brand)] hover:bg-[var(--brand-soft)]"
-      title={label}
+      title={displayLabel}
     >
       <RotateCcw className="h-4 w-4" aria-hidden="true" />
-      {label}
+      {displayLabel}
     </button>
   );
 }

@@ -9,6 +9,7 @@ import { AdSlot } from "@/components/AdSlot";
 import { JsonLd, buildBreadcrumbSchema } from "@/components/JsonLd";
 import { PopularToolsClient } from "@/components/PopularToolsClient";
 import { PersonalizedToolsPanel } from "@/components/PersonalizedToolsPanel";
+import { getCurrentUser } from "@/lib/auth/services/sessionService";
 import { getLatestBlogPosts } from "@/lib/blog";
 import { buildAbsoluteUrl, buildPageMetadata } from "@/lib/seo";
 import { getCategoryLabel, isLocale, locales, testCategoryLabels, type Locale } from "@/lib/i18n";
@@ -51,14 +52,14 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   if (!isLocale(locale)) return {};
   return buildPageMetadata({
-    title: locale === "en" ? "Madabase - AI & Developer Tools" : "Madabase - AI 与开发者工具",
+    title: locale === "en" ? "Madabase - Online Tools and Tests" : "Madabase - 在线工具与测试",
     description:
       locale === "en"
-        ? "Madabase is an SEO-first platform for online developer tools, productivity resources, and future AI workflows."
-        : "Madabase 是一个 SEO 优先的在线开发者工具、生产力内容与未来 AI 工作流平台。",
+        ? "Madabase is a browser-first platform for online developer tools, practical calculators, personality tests, and useful reference content."
+        : "Madabase 是一个浏览器优先的在线工具、常用计算器、趣味测试与实用内容平台。",
     locale,
     path: "/",
-    keywords: ["developer tools", "ai tools", "online formatter", "madabase", "online tools"],
+    keywords: ["developer tools", "online formatter", "madabase", "online tools", "personality tests"],
   });
 }
 
@@ -68,6 +69,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
   const popularTools = getPopularTools();
   const latestPosts = await getLatestBlogPosts(locale, 4);
+  const user = await getCurrentUser();
   const categoryCards = [
     {
       key: "developer",
@@ -91,26 +93,32 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
   const copy = {
     en: {
-      eyebrow: "AI & Developer Tools",
+      eyebrow: "Online tools and tests",
       title: "Madabase",
-      description: "A growing library of browser-first online tools, SEO-friendly landing pages, and practical content designed to earn search traffic.",
+      description: "A growing library of browser-first tools, practical calculators, personality tests, and reference pages for everyday workflows.",
       primaryCta: "Explore Tools",
       secondaryCta: "Take Tests",
       popular: "Popular Tools",
       tests: "Popular Tests",
       categories: "Categories",
       latestBlog: "Latest Blog",
+      loginTitle: "Log in to make the tools yours",
+      loginDescription: "Save favorite tools, see recently used tools, and continue common workflows faster next time.",
+      loginCta: "Log in",
     },
     zh: {
-      eyebrow: "AI 与开发者工具",
+      eyebrow: "在线工具与测试",
       title: "Madabase",
-      description: "一个持续增长的在线浏览器工具与 SEO 内容平台，专注获取搜索流量并承接未来 AI 产品。",
+      description: "一个持续增长的在线浏览器工具、常用计算器、趣味测试与实用内容平台。",
       primaryCta: "探索工具",
       secondaryCta: "开始测试",
       popular: "热门工具",
       tests: "热门测试",
       categories: "分类",
       latestBlog: "最新博客",
+      loginTitle: "登录后使用更顺手",
+      loginDescription: "登录后可以收藏常用工具、查看最近使用记录，下次继续处理会更快。",
+      loginCta: "去登录",
     },
   }[locale];
 
@@ -138,6 +146,15 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
               {copy.secondaryCta}
             </Link>
           </div>
+          {!user ? (
+            <div className="mt-6 max-w-3xl rounded-md border border-[var(--border)] bg-white p-4">
+              <p className="text-sm font-semibold text-[var(--text)]">{copy.loginTitle}</p>
+              <p className="mt-1 text-sm leading-6 text-[var(--text-muted)]">{copy.loginDescription}</p>
+              <Link href={`/${locale}/login`} className="mt-3 inline-flex h-10 items-center rounded-md bg-[var(--surface-code)] px-4 text-sm font-semibold text-white shadow-sm transition hover:bg-[var(--brand-strong)]">
+                {copy.loginCta}
+              </Link>
+            </div>
+          ) : null}
           <PopularToolsClient locale={locale} />
         </section>
 

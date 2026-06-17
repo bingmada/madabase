@@ -1,40 +1,60 @@
 [TITLE]
-在线User Agent 解析器
+在线 User Agent 解析器
 [H1]
-在线User Agent 解析器
+在线 User Agent 解析器
 [DESCRIPTION]
-从 User Agent 字符串识别浏览器和设备线索。
+把 User Agent 字符串解析为浏览器、操作系统、设备类型、渲染内核和爬虫线索。
 [SEO_TITLE]
-在线User Agent 解析器 | Madabase
+在线 User Agent 解析器 - 浏览器和设备识别
 [SEO_DESCRIPTION]
-从 User Agent 字符串识别浏览器和设备线索。 在浏览器中快速处理并复制结果。
+在线解析 User Agent 字符串，识别浏览器、操作系统、设备类型、渲染内核、移动端标记、WebView 和爬虫线索。
 [INTRO]
-当你需要快速清理、转换、调试或准备内容时，可以使用这个User Agent 解析器。它适合日常小任务，不需要打开复杂软件。
+User Agent 字符串会由浏览器、爬虫、机器人和各种 HTTP 客户端发送。它可以提供浏览器、操作系统、设备类别、渲染内核，以及请求是否可能来自自动化程序的线索。
+
+这个在线 User Agent 解析器会把冗长的 User Agent 字符串转换成可读的 JSON 摘要。它适合排查 analytics、日志、重定向、移动端识别、浏览器兼容性和 bot 流量问题。
+
+User Agent 解析只能作为线索。现代浏览器可能会减少或冻结部分 User Agent 信息，所以结果适合调试和路由判断，不适合做身份识别或安全决策。
 [HOW_TO_USE]
-粘贴输入
-输入你要处理的文本、数据或片段。
+粘贴 User Agent
+从日志、浏览器开发者工具、请求头或分析系统中复制 User Agent 字符串并粘贴。
 ---
-运行工具
-点击操作按钮，立即生成结果。
+执行解析
+运行解析器，提取浏览器、操作系统、设备类型、渲染内核和常用标记。
 ---
-复制结果
-检查输出内容，并复制到你的工作流中。
+复制结构化结果
+把 JSON 结果复制到工单、调试记录、日志分析或浏览器兼容性报告中。
 [EXAMPLES]
-Madabase 工具
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
 ===
-处理后的 Madabase 工具
+浏览器：Chrome
+系统：Windows 10/11
+设备：Desktop
+---
+Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1
+===
+浏览器：Safari
+系统：iOS
+设备：Mobile
 [FAQ]
-这个User Agent 解析器在线吗？
-是的。当前版本可以在浏览器中在线使用。
-可以处理私密数据吗？
-工具界面在浏览器中运行，但仍建议不要把敏感密钥粘贴到任何网页。
+什么是 User Agent 字符串？
+User Agent 是 HTTP 请求头中的一段文本，用来描述发起请求的客户端，例如浏览器、App、爬虫或机器人。
+User Agent 能识别精确设备型号吗？
+通常不能。它能提供移动端、平板、桌面、系统和浏览器线索，但精确设备识别并不可靠。
+为什么 Chrome 和 Edge 的 User Agent 里也有 Safari？
+很多浏览器为了兼容历史网站会保留兼容性标记。解析时要看完整字符串，不能只看单个词。
+可以用它判断 bot 吗？
+可以发现明显的 crawler、bot、spider 标记，但 User Agent 可以伪造，不能单独用于安全判断。
+我的日志会上传吗？
+不会。解析过程在浏览器本地执行。
 [RELATED_TOOLS]
-text-cleaner
+url-parser
+http-header-parser
 json-formatter
-url-encoder
-[KEYWORDS]
-user agent parser
-在线user agent parser
-在线 user agent parser
 [CATEGORY]
 web
+[KEYWORDS]
+user agent parser online
+user agent parser
+parse user agent
+浏览器识别
+设备识别

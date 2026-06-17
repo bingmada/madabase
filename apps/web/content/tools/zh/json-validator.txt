@@ -1,60 +1,53 @@
 [TITLE]
 在线 JSON 校验器
 [H1]
-在线JSON 校验器
+在线 JSON 校验器
 [DESCRIPTION]
-校验 JSON 语法并以有用的行号和错误信息显示问题。
+校验 JSON 语法，定位解析错误，修复缺少逗号、尾随逗号、单引号和括号未闭合等常见问题。
 [SEO_TITLE]
-在线JSON 校验器 - 检查 JSON 语法错误
+在线 JSON 校验器 - Validate JSON Syntax
 [SEO_DESCRIPTION]
-即时校验 JSON 语法，提供有用的错误消息和行号。快速调试无效 JSON。无需上传数据。
+在线校验 JSON 语法，检查缺少逗号、尾随逗号、引号、括号和无效 JSON 结构。输入内容在浏览器本地处理。
 [INTRO]
-JSON 校验对于处理 API、配置文件和数据交换至关重要。无效的 JSON 会导致 API 调用失败、应用程序崩溃和数据处理管道中断。好的 JSON 校验器帮助你在问题发生之前发现并修复错误。
+JSON 校验是排查 API 响应、配置文件、Webhook 数据和复制数据问题的最快方式之一。一个缺失的逗号或多余的尾随逗号，就可能导致整段请求失败。
 
-这款在线的在线 JSON 校验器检查你的 JSON 语法并提供有用的错误消息和行号。无论你是在调试 API 响应、校验配置文件还是测试数据结构，这个工具让校验变得快速简单。
+这个在线 JSON 校验器会检查输入是否为有效 JSON，并给出实用的语法提示。你可以在发送接口请求、保存配置、粘贴文档或对比 JSON 之前先验证数据。
 
-校验器使用与现代 JavaScript 运行时相同的 JSON 解析引擎，确保你的 JSON 将在实际应用程序中正常工作。
+如果你搜索的是 validar JSON online、JSON validator、JSON lint 或 validate JSON online，这个页面会先给出可直接使用的工具，再帮助你理解如何修复错误。
 [HOW_TO_USE]
-粘贴你的 JSON
-在输入区域输入或粘贴你的 JSON 内容。校验器接受任何 JSON 文本。
+粘贴 JSON
+把 JSON 对象、数组、接口响应或配置片段粘贴到输入框。
 ---
-查看校验结果
-工具会校验你的 JSON 并显示结果：有效的 JSON 显示成功消息，而无效的 JSON 显示具体错误和行号。
+执行校验
+运行校验后，有效 JSON 会显示成功提示；无效 JSON 会显示解析问题。
 ---
-修复并重新校验
-使用错误信息修复问题，然后再次点击校验确认修复。
+修复后复查
+根据提示修复引号、逗号、括号或值，再次校验直到 JSON 通过。
 [EXAMPLES]
-{"name":"test","value":123}
+{"name":"Madabase","tools":3}
 ===
-有效的 JSON
-[EXAMPLES]
-{"name":"test"
+有效 JSON
+---
+{"name":"Madabase",}
 ===
-第 2 行错误：缺少逗号
+无效 JSON：结束花括号前存在尾随逗号
+---
+{'name':'Madabase'}
+===
+无效 JSON：字符串和键名必须使用双引号
 [FAQ]
-JSON 校验器做什么？
-JSON 校验器检查你的 JSON 文本是否符合正确的 JSON 语法规则。它识别语法错误并提供有用的错误消息和行号。
-
-什么算作无效 JSON？
-常见问题包括缺少逗号、键未加引号、尾部逗号、单引号而非双引号，以及未闭合的方括号或花括号。
-
-为什么需要校验 JSON？
-JSON 用于 API、配置文件和数据存储。无效的 JSON 会在所有这些场景中导致失败。使用前校验可以防止应用程序出错。
-
-JSON 和 JavaScript 对象有什么区别？
-JSON 是一种遵循特定语法规则的文本格式。JavaScript 对象字面量是 JavaScript 代码的一部分，具有略微不同的语法（如单引号、尾部逗号和函数）。
-
-如何修复常见的 JSON 错误？
-检查属性之间是否缺少逗号，确保所有字符串使用双引号，删除尾部逗号，并验证所有方括号和花括号是否正确闭合。
-
-可以处理大型 JSON 文件吗？
-可以。校验器处理各种大小的 JSON。非常大的文件可能需要一点时间，但所有处理都在浏览器本地进行。
-
-它适用于 JSONP 吗？
-不。这个工具只校验 JSON 数据。对于 JSONP 校验，你需要先提取 JSON 部分。
-
-我的 JSON 数据安全吗？
-是的。所有校验都在浏览器本地进行。你的 JSON 永远不会发送到任何服务器。
+JSON 校验器有什么用？
+它会检查文本是否符合 JSON 语法规则，确认是否可以被解析为有效 JSON。
+常见 JSON 错误有哪些？
+常见错误包括尾随逗号、缺少逗号、单引号、键名未加引号、注释、undefined 值和括号未闭合。
+JSON 可以使用单引号吗？
+不可以。标准 JSON 的字符串和对象键名都必须使用双引号。
+JSON 可以写注释吗？
+标准 JSON 不允许注释。有些配置格式支持注释，但那不是标准 JSON。
+JSON 校验器和 JSON 格式化工具有什么区别？
+校验器检查 JSON 是否有效；格式化工具美化有效 JSON。实际调试中通常会两个一起用。
+我的 JSON 会上传吗？
+不会。校验过程在浏览器本地执行。
 [RELATED_TOOLS]
 json-formatter
 json-diff
@@ -62,9 +55,9 @@ json-escape
 [CATEGORY]
 developer
 [KEYWORDS]
-json 校验器
+json validator
+validar json online
+validate json online
 json lint
-json 语法检查器
-校验 json
-json 错误检查器
+json 语法检查
 json 解析器

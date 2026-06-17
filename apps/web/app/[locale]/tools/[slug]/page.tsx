@@ -11,7 +11,7 @@ import { ToolLayout } from "@/components/ToolLayout";
 import { ToolIcon } from "@/components/ToolIcon";
 import { ToolRenderer } from "@/components/tools/ToolRenderer";
 import { ToolUsageTracker } from "@/components/ToolUsageTracker";
-import { JsonLd, buildBreadcrumbSchema, buildSoftwareApplicationSchema } from "@/components/JsonLd";
+import { JsonLd, buildBreadcrumbSchema, buildFaqSchema, buildSoftwareApplicationSchema } from "@/components/JsonLd";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { loadToolContent } from "@/lib/tool-content";
 import { getPopularTests } from "@/lib/test-registry";
@@ -77,6 +77,7 @@ export default async function ToolPage({ params }: { params: Promise<{ locale: s
     <ToolLayout locale={locale} pathname={`/tools/${slug}`} tool={slug}>
       <JsonLd id={`tool-breadcrumbs-${slug}`} data={breadcrumbSchema} />
       <JsonLd id={`tool-schema-${slug}`} data={softwareSchema} />
+      {faq.length > 0 ? <JsonLd id={`tool-faq-${slug}`} data={buildFaqSchema(faq, locale)} /> : null}
       <article className="surface-card-strong overflow-hidden">
         <header className="border-b border-[var(--border)] p-5 sm:p-7">
           <Breadcrumb

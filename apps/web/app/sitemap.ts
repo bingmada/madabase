@@ -1,5 +1,4 @@
 import type { MetadataRoute } from "next";
-import { aiProducts } from "@/lib/ai-products";
 import { getAllBlogPosts } from "@/lib/blog";
 import { locales } from "@/lib/i18n";
 import { mbtiSeoPages } from "@/lib/mbti-seo";
@@ -9,7 +8,7 @@ import { toolRegistry, getCategories } from "@/lib/tool-registry";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = getSiteUrl();
-  const routes = ["", "/tools", "/tests", "/ai", "/blog", "/contact", "/search"];
+  const routes = ["", "/tools", "/tests", "/blog", "/contact", "/search"];
   const categories = getCategories();
 
   const blogEntries = await Promise.all(
@@ -26,7 +25,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...testRegistry.map((test) => ({ url: `${baseUrl}/${locale}/tests/${test.slug}`, lastModified: new Date() })),
     ...testRegistry.flatMap((test) => test.resultTypes.map((type) => ({ url: `${baseUrl}/${locale}/tests/${test.slug}/result/${type.toLowerCase()}`, lastModified: new Date() }))),
     ...mbtiSeoPages.map((page) => ({ url: `${baseUrl}/${locale}/tests/mbti/seo/${page.topic}/${page.slug}`, lastModified: new Date() })),
-    ...aiProducts.map((product) => ({ url: `${baseUrl}/${locale}/ai/${product.slug}`, lastModified: new Date() })),
     ...blogEntries[locales.indexOf(locale)],
   ]);
 }

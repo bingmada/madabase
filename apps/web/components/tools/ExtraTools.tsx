@@ -191,6 +191,67 @@ function parseUrl(input: string) {
   );
 }
 
+function parseUserAgentString(input: string) {
+  const value = input.trim();
+  if (!value) throw new Error("Paste a user agent string first.");
+  const lower = value.toLowerCase();
+  const edge = /edg\/([\d.]+)/i.exec(value);
+  const opera = /opr\/([\d.]+)/i.exec(value);
+  const chrome = /chrome\/([\d.]+)/i.exec(value);
+  const firefox = /firefox\/([\d.]+)/i.exec(value);
+  const safari = /version\/([\d.]+).*safari/i.exec(value);
+  const ie = /msie\s([\d.]+)/i.exec(value) ?? /trident\/.*rv:([\d.]+)/i.exec(value);
+  const android = /android\s([\d.]+)/i.exec(value);
+  const iphone = /iphone os ([\d_]+)/i.exec(value);
+  const ipad = /cpu os ([\d_]+)/i.exec(value);
+  const mac = /mac os x ([\d_]+)/i.exec(value);
+  const webkit = /applewebkit\/([\d.]+)/i.exec(value);
+  const gecko = /gecko\/([\d.]+)/i.exec(value);
+  const trident = /trident\/([\d.]+)/i.exec(value);
+
+  const browser = edge
+    ? `Microsoft Edge ${edge[1]}`
+    : opera
+      ? `Opera ${opera[1]}`
+      : chrome && !/chromium/i.test(value)
+        ? `Chrome ${chrome[1]}`
+        : firefox
+          ? `Firefox ${firefox[1]}`
+          : safari
+            ? `Safari ${safari[1]}`
+            : ie
+              ? `Internet Explorer ${ie[1]}`
+              : "Unknown browser";
+
+  const os = /windows nt 10/i.test(value)
+    ? "Windows 10/11"
+    : /windows nt 6\.3/i.test(value)
+      ? "Windows 8.1"
+      : /windows nt 6\.1/i.test(value)
+        ? "Windows 7"
+        : android
+          ? `Android ${android[1]}`
+          : iphone
+            ? `iOS ${iphone[1].replaceAll("_", ".")}`
+            : ipad
+              ? `iPadOS ${ipad[1].replaceAll("_", ".")}`
+              : mac
+                ? `macOS ${mac[1].replaceAll("_", ".")}`
+                : /linux/i.test(value)
+                  ? "Linux"
+                  : "Unknown OS";
+
+  const device = /ipad|tablet/i.test(value) ? "Tablet" : /mobile|iphone|android/i.test(value) ? "Mobile" : "Desktop or bot";
+  const engine = webkit ? `WebKit/Blink ${webkit[1]}` : gecko && firefox ? `Gecko ${gecko[1]}` : trident ? `Trident ${trident[1]}` : "Unknown engine";
+  const flags = [
+    lower.includes("bot") || lower.includes("crawler") || lower.includes("spider") ? "Possible bot/crawler" : null,
+    lower.includes("wv") ? "Android WebView" : null,
+    lower.includes("mobile") ? "Mobile token present" : null,
+  ].filter(Boolean);
+
+  return JSON.stringify({ browser, operatingSystem: os, deviceType: device, renderingEngine: engine, flags, raw: value }, null, 2);
+}
+
 function parseLooseFields(value: string) {
   return Object.fromEntries(
     value
@@ -586,15 +647,40 @@ export function RegexTester() {
   );
 }
 
-export function CronGenerator() {
+export function CronGenerator({ locale = "en" }: { locale?: Locale }) {
   const [minute, setMinute] = useState("0");
   const [hour, setHour] = useState("9");
   const [dayOfWeek, setDayOfWeek] = useState("*");
+  const copy = {
+    minute: locale === "zh" ? "分钟" : "Minute",
+    hour: locale === "zh" ? "小时" : "Hour",
+    dayOfWeek: locale === "zh" ? "星期" : "Day of week",
+    invalid: locale === "zh" ? "请输入 0-23 的小时和 0-59 的分钟来预览执行时间。" : "Use numeric hour 0-23 and minute 0-59 to preview runs.",
+    noRun: locale === "zh" ? "未来 14 天内没有匹配的执行时间。" : "No run in the next 14 days.",
+    presets: locale === "zh"
+      ? [
+          ["每天 9 点", "0", "9", "*"],
+          ["每小时", "0", "*", "*"],
+          ["周一 9 点", "0", "9", "1"],
+          ["周五 17 点", "0", "17", "5"],
+        ]
+      : [
+          ["Daily 9 AM", "0", "9", "*"],
+          ["Hourly", "0", "*", "*"],
+          ["Monday 9 AM", "0", "9", "1"],
+          ["Friday 5 PM", "0", "17", "5"],
+        ],
+    expression: locale === "zh" ? "Cron 表达式" : "Cron expression",
+    nextRuns: locale === "zh" ? "接下来执行时间" : "Next runs",
+    copy: locale === "zh" ? "复制" : "Copy",
+    copied: locale === "zh" ? "已复制" : "Copied",
+    generate: locale === "zh" ? "生成" : "Generate",
+  };
   const runs = useMemo(() => {
     const minuteValue = Number(minute);
     const hourValue = Number(hour);
     if (!Number.isInteger(minuteValue) || !Number.isInteger(hourValue) || minuteValue < 0 || minuteValue > 59 || hourValue < 0 || hourValue > 23) {
-      return ["Use numeric hour 0-23 and minute 0-59 to preview runs."];
+      return [copy.invalid];
     }
     const items: string[] = [];
     const cursor = new Date();
@@ -607,33 +693,28 @@ export function CronGenerator() {
       if (dayOfWeek !== "*" && candidate.getDay() !== Number(dayOfWeek)) continue;
       items.push(candidate.toLocaleString());
     }
-    return items.length ? items : ["No run in the next 14 days."];
-  }, [dayOfWeek, hour, minute]);
+    return items.length ? items : [copy.noRun];
+  }, [copy.invalid, copy.noRun, dayOfWeek, hour, minute]);
   const cronExpression = `${minute || "*"} ${hour || "*"} * * ${dayOfWeek || "*"}`;
 
   return (
     <ToolPanel>
       <div className="space-y-4">
         <div className="grid gap-4 md:grid-cols-3">
-          <ToolInput label="Minute" value={minute} onChange={setMinute} />
-          <ToolInput label="Hour" value={hour} onChange={setHour} />
-          <ToolInput label="Day of week" value={dayOfWeek} onChange={setDayOfWeek} />
+          <ToolInput label={copy.minute} value={minute} onChange={setMinute} />
+          <ToolInput label={copy.hour} value={hour} onChange={setHour} />
+          <ToolInput label={copy.dayOfWeek} value={dayOfWeek} onChange={setDayOfWeek} />
         </div>
         <div className="flex flex-wrap gap-2">
-          {[
-            ["Daily 9 AM", "0", "9", "*"],
-            ["Hourly", "0", "*", "*"],
-            ["Monday 9 AM", "0", "9", "1"],
-            ["Friday 5 PM", "0", "17", "5"],
-          ].map(([label, nextMinute, nextHour, nextDay]) => (
+          {copy.presets.map(([label, nextMinute, nextHour, nextDay]) => (
             <ToolButton key={label} variant="secondary" onClick={() => { setMinute(nextMinute); setHour(nextHour); setDayOfWeek(nextDay); }}>{label}</ToolButton>
           ))}
         </div>
-        <ToolTextarea label="Cron expression" value={cronExpression} readOnly rows={3} />
-        <ToolTextarea label="Next runs" value={runs.join("\n")} readOnly rows={5} />
+        <ToolTextarea label={copy.expression} value={cronExpression} readOnly rows={3} />
+        <ToolTextarea label={copy.nextRuns} value={runs.join("\n")} readOnly rows={5} />
         <div className="flex flex-wrap gap-2">
-          <CopyButton value={cronExpression} />
-          <ToolButton onClick={() => fireAndForgetToolExecution("cron-generator")}>Generate</ToolButton>
+          <CopyButton value={cronExpression} label={copy.copy} copiedLabel={copy.copied} />
+          <ToolButton onClick={() => fireAndForgetToolExecution("cron-generator")}>{copy.generate}</ToolButton>
         </div>
       </div>
     </ToolPanel>
@@ -886,6 +967,19 @@ export function JsFormatter() {
 
 export function UrlParser() {
   return <GenericTextTransformTool label="URL input" sample="https://madabase.com/en/tools/json-formatter?ref=seo#faq" tool="url-parser" transform={parseUrl} outputLabel="Parsed URL" />;
+}
+
+export function UserAgentParser({ locale = "en" }: { locale?: Locale }) {
+  return (
+    <GenericTextTransformTool
+      label={locale === "zh" ? "User Agent 字符串" : "User agent string"}
+      sample="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
+      tool="user-agent-parser"
+      transform={parseUserAgentString}
+      outputLabel={locale === "zh" ? "解析结果" : "Parsed user agent"}
+      locale={locale}
+    />
+  );
 }
 
 type LocalizedText = string | Record<Locale, string>;

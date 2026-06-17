@@ -3,38 +3,58 @@ Online User Agent Parser
 [H1]
 Online User Agent Parser
 [DESCRIPTION]
-Inspect browser and device hints from user agent strings.
+Parse a user agent string into browser, operating system, device type, rendering engine, and crawler hints.
 [SEO_TITLE]
-Online User Agent Parser | Madabase
+User Agent Parser Online - Browser and Device Detector
 [SEO_DESCRIPTION]
-Inspect browser and device hints from user agent strings. Run it locally in your browser with a clean copyable output.
+Parse user agent strings online. Identify browser, OS, device type, rendering engine, mobile tokens, webviews, and possible crawler hints.
 [INTRO]
-Use this user agent parser when you need a fast browser-based utility for cleanup, conversion, debugging, or content preparation.
+A user agent string is sent by browsers, bots, crawlers, and many HTTP clients. It can reveal useful hints about the browser, operating system, device class, rendering engine, and whether the request may be from automation.
+
+This online user agent parser turns a long user agent string into a readable JSON summary. It is useful when debugging analytics, logs, redirects, mobile detection, browser compatibility reports, and bot traffic.
+
+User agent parsing is always a best-effort hint. Modern browsers may reduce or freeze some user agent details, so use the result for debugging and routing clues rather than identity or security decisions.
 [HOW_TO_USE]
-Paste your input
-Add the text, data, or snippet you want to process.
+Paste the user agent
+Copy a user agent string from logs, browser devtools, request headers, or analytics data and paste it into the input box.
 ---
-Run the tool
-Click the action button to transform the input instantly.
+Parse the string
+Run the parser to extract browser, operating system, device type, rendering engine, and useful flags.
 ---
-Copy the result
-Review the output and copy it into your workflow.
+Use the structured output
+Copy the JSON result into a ticket, debugging note, log analysis, or browser compatibility report.
 [EXAMPLES]
-Madabase tools
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
 ===
-Processed Madabase tools
+Browser: Chrome
+OS: Windows 10/11
+Device: Desktop
+---
+Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1
+===
+Browser: Safari
+OS: iOS
+Device: Mobile
 [FAQ]
-Is this user agent parser online?
-Yes. The first release is online to use in your browser.
-Can I use private data?
-The tool runs locally in the browser UI, but you should still avoid pasting secrets into any web page you do not control.
+What is a user agent string?
+A user agent string is an HTTP header value that describes the client making a request, such as a browser, app, crawler, or bot.
+Can user agent parsing identify the exact device?
+Not reliably. It can provide hints such as mobile, tablet, desktop, OS, and browser, but exact device identification is often incomplete.
+Why do Chrome and Edge both include Safari in the user agent?
+Many browsers include compatibility tokens for historical reasons. A parser must look at the whole string, not one token.
+Can I use this for bot detection?
+It can flag obvious crawler tokens, but user agents can be spoofed. Do not use user agent parsing alone for security decisions.
+Does this tool upload my logs?
+No. Parsing runs in your browser.
 [RELATED_TOOLS]
-text-cleaner
+url-parser
+http-header-parser
 json-formatter
-url-encoder
-[KEYWORDS]
-user agent parser
-online user agent parser
-online user agent parser
 [CATEGORY]
 web
+[KEYWORDS]
+user agent parser online
+user agent parser
+parse user agent
+browser detector
+device detector

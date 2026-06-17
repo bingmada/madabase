@@ -1,12 +1,10 @@
-import Script from "next/script";
-
 export type BreadcrumbItem = {
   name: string;
   item: string;
 };
 
 export function JsonLd({ id, data }: { id: string; data: Record<string, unknown> }) {
-  return <Script id={id} type="application/ld+json" strategy="afterInteractive" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;
+  return <script id={id} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;
 }
 
 export function buildBreadcrumbSchema(items: BreadcrumbItem[]) {
@@ -50,6 +48,22 @@ export function buildSoftwareApplicationSchema({
       priceCurrency: "USD",
     },
     inLanguage: locale,
+  };
+}
+
+export function buildFaqSchema(items: Array<{ q: string; a: string }>, locale: string) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: locale,
+    mainEntity: items.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.a,
+      },
+    })),
   };
 }
 

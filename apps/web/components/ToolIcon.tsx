@@ -53,6 +53,7 @@ const iconMap = {
   CssFormatter: Code2,
   JsFormatter: FileCode2,
   UrlParser: Link2,
+  UserAgentParser: ScanSearch,
   GenericTextTool: FileText,
 } satisfies Record<ToolComponentName, React.ComponentType<{ className?: string }>>;
 

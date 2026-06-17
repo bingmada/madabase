@@ -32,6 +32,7 @@ export type ToolComponentName =
   | "CssFormatter"
   | "JsFormatter"
   | "UrlParser"
+  | "UserAgentParser"
   | "GenericTextTool";
 
 export type ToolCategory = "developer" | "ai" | "text" | "web" | "creator";
@@ -57,7 +58,7 @@ const baseToolRegistry: ToolRegistryEntry[] = [
   { slug: "base64", component: "Base64Tool", category: "developer", popular: true, relatedTools: ["jwt-decoder", "url-encoder", "html-encoder"], keywords: ["base64 encode", "base64 decode"], h1: { en: "Online Base64 Encoder and Decoder", zh: "在线 Base64 编码解码工具" }, description: { en: "Encode and decode Base64 text in the browser.", zh: "在浏览器中进行 Base64 编码和解码。" } },
   { slug: "url-encoder", component: "UrlEncoder", category: "web", relatedTools: ["url-parser", "base64", "slug-generator"], keywords: ["url encode", "url decode"], h1: { en: "Online URL Encoder and Decoder", zh: "在线 URL 编码解码工具" }, description: { en: "Encode and decode URL strings safely.", zh: "安全地对 URL 字符串进行编码与解码。" } },
   { slug: "timestamp", component: "TimestampConverter", category: "developer", popular: true, relatedTools: ["cron-generator", "uuid-generator", "json-formatter"], keywords: ["timestamp converter", "unix timestamp converter"], h1: { en: "Online Timestamp Converter", zh: "在线时间戳转换器" }, description: { en: "Convert Unix timestamps to human-readable dates.", zh: "将 Unix 时间戳转换为可读日期。" } },
-  { slug: "markdown-preview", component: "MarkdownPreview", category: "creator", relatedTools: ["word-counter", "character-counter", "html-formatter"], keywords: ["markdown preview", "markdown editor online"], h1: { en: "Online Markdown Preview", zh: "在线Markdown 预览工具" }, description: { en: "Preview Markdown content in real time.", zh: "实时预览 Markdown 内容。" } },
+  { slug: "markdown-preview", component: "MarkdownPreview", category: "creator", popular: true, relatedTools: ["word-counter", "character-counter", "html-formatter"], keywords: ["markdown preview", "markdown editor online"], h1: { en: "Online Markdown Preview", zh: "在线Markdown 预览工具" }, description: { en: "Preview Markdown content in real time.", zh: "实时预览 Markdown 内容。" } },
   { slug: "html-formatter", component: "HtmlFormatter", category: "web", relatedTools: ["html-encoder", "css-formatter", "js-formatter"], keywords: ["html formatter", "html beautifier"], h1: { en: "Online HTML Formatter", zh: "在线HTML 格式化工具" }, description: { en: "Beautify and format HTML instantly.", zh: "即时美化与格式化 HTML。" } },
   { slug: "json-diff", component: "JsonDiff", category: "developer", relatedTools: ["json-formatter", "json-validator", "json-escape"], keywords: ["json diff", "compare json online"], h1: { en: "Online JSON Diff", zh: "在线JSON 差异对比工具" }, description: { en: "Compare two JSON documents and inspect differences.", zh: "比较两个 JSON 文档并查看差异。" } },
   { slug: "json-escape", component: "JsonEscape", category: "developer", relatedTools: ["json-formatter", "json-validator", "base64"], keywords: ["json escape", "escape json string"], h1: { en: "Online JSON Escape Tool", zh: "在线JSON 转义工具" }, description: { en: "Escape JSON strings for code, logs, and payloads.", zh: "转义 JSON 字符串，适用于代码、日志和请求体。" } },
@@ -65,7 +66,7 @@ const baseToolRegistry: ToolRegistryEntry[] = [
   { slug: "xml-formatter", component: "XmlFormatter", category: "web", relatedTools: ["html-formatter", "yaml-formatter", "json-formatter"], keywords: ["xml formatter", "xml beautifier"], h1: { en: "Online XML Formatter", zh: "在线XML 格式化工具" }, description: { en: "Beautify XML for feeds, configs, and API payloads.", zh: "美化 XML，适合接口、订阅和配置内容。" } },
   { slug: "sql-formatter", component: "SqlFormatter", category: "developer", relatedTools: ["json-formatter", "yaml-formatter", "regex-tester"], keywords: ["sql formatter", "sql beautifier"], h1: { en: "Online SQL Formatter", zh: "在线SQL 格式化工具" }, description: { en: "Format SQL queries for readability and review.", zh: "格式化 SQL 查询，提高可读性。" } },
   { slug: "regex-tester", component: "RegexTester", category: "developer", popular: true, relatedTools: ["word-counter", "text-cleaner", "slug-generator"], keywords: ["regex tester", "regular expression tester"], h1: { en: "Online Regex Tester", zh: "在线正则测试工具" }, description: { en: "Test regular expressions against sample text.", zh: "对示例文本测试正则表达式。" } },
-  { slug: "cron-generator", component: "CronGenerator", category: "developer", relatedTools: ["timestamp", "regex-tester", "uuid-generator"], keywords: ["cron generator", "cron expression generator"], h1: { en: "Online Cron Generator", zh: "在线Cron 表达式生成器" }, description: { en: "Generate cron expressions for scheduled jobs.", zh: "生成定时任务 cron 表达式。" } },
+  { slug: "cron-generator", component: "CronGenerator", category: "developer", popular: true, relatedTools: ["timestamp", "regex-tester", "uuid-generator"], keywords: ["cron generator", "cron expression generator"], h1: { en: "Online Cron Generator", zh: "在线Cron 表达式生成器" }, description: { en: "Generate cron expressions for scheduled jobs.", zh: "生成定时任务 cron 表达式。" } },
   { slug: "hash-generator", component: "HashGenerator", category: "developer", relatedTools: ["password-generator", "uuid-generator", "base64"], keywords: ["hash generator", "text hash generator"], h1: { en: "Online Hash Generator", zh: "在线哈希生成器" }, description: { en: "Generate a simple hash from plain text.", zh: "从文本生成简单哈希值。" } },
   { slug: "color-converter", component: "ColorConverter", category: "web", relatedTools: ["css-formatter", "html-formatter", "qr-code-generator"], keywords: ["color converter", "hex to rgb"], h1: { en: "Online Color Converter", zh: "在线颜色转换器" }, description: { en: "Convert color values like HEX to RGB.", zh: "转换颜色值，例如 HEX 转 RGB。" } },
   { slug: "password-generator", component: "PasswordGenerator", category: "developer", popular: true, relatedTools: ["uuid-generator", "hash-generator", "base64"], keywords: ["password generator", "random password generator"], h1: { en: "Online Password Generator", zh: "在线密码生成器" }, description: { en: "Generate strong passwords instantly.", zh: "立即生成强密码。" } },
@@ -104,5 +105,5 @@ export function getAllSlugs() {
 }
 
 export function getCategories(): ToolRegistryEntry["category"][] {
-  return ["developer", "ai", "text", "web", "creator"];
+  return ["developer", "text", "web", "creator"];
 }
