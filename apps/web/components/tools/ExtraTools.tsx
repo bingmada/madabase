@@ -3,8 +3,43 @@
 import QRCode from "qrcode";
 import { useEffect, useMemo, useState } from "react";
 import type { Locale } from "@/lib/i18n";
+import {
+  addCenterImageToSvg,
+  binaryToText,
+  caseReport,
+  cleanWhitespace,
+  csvToJson,
+  dedupeLines,
+  extractEmails,
+  extractNumbers,
+  extractUrls,
+  formatCss,
+  formatJavascript,
+  formatSql,
+  formatYaml,
+  hexToText,
+  jsonToCsv,
+  jsonToYaml,
+  loremIpsum,
+  markdownToText,
+  parseUrlParts,
+  randomizeLines,
+  readingTime,
+  removeEmptyLines,
+  runRegexTest,
+  sortLines,
+  stripHtml,
+  textStatsReport,
+  textToBinary,
+  textToHex,
+  tomlToJson,
+  unicodeEscape,
+  unicodeUnescape,
+  yamlToJson,
+} from "@/lib/tool-transforms";
+import { localizeText, toolCopy, type LocalizedText } from "@/lib/tool-ui-copy";
 import { fireAndForgetToolExecution } from "@/lib/tool-usage-client";
-import { CopyButton, ResetButton, StatusMessage, ToolButton, ToolInput, ToolPanel, ToolTextarea } from "./ToolPrimitives";
+import { CopyButton, ResetButton, StatusMessage, ToolButton, ToolHistory, ToolInput, ToolPanel, ToolTextarea, useToolHistory } from "./ToolPrimitives";
 
 type JsonDiffRow = { path: string; status: "added" | "removed" | "changed"; before?: string; after?: string };
 
@@ -36,99 +71,6 @@ function formatXml(input: string) {
     .join("\n");
 }
 
-function formatYaml(input: string) {
-  const lines = input.replace(/\t/g, "  ").split("\n");
-  const trimmed = lines
-    .map((line) => line.replace(/\s+$/g, ""))
-    .join("\n")
-    .trim();
-  if (!trimmed) return "";
-
-  const stack: number[] = [];
-  for (const line of trimmed.split("\n")) {
-    if (!line.trim() || line.trim().startsWith("#")) continue;
-    const indent = line.match(/^\s*/)?.[0].length ?? 0;
-    if (indent % 2 !== 0) {
-      throw new Error("YAML indentation should use an even number of spaces.");
-    }
-    while (stack.length > 0 && indent < stack[stack.length - 1]) stack.pop();
-    if (stack.length > 0 && indent > stack[stack.length - 1] + 2) {
-      throw new Error("YAML indentation jumps too far. Use two spaces per level.");
-    }
-    if (!stack.includes(indent)) stack.push(indent);
-  }
-
-  return trimmed;
-}
-
-const sqlLineKeywords = [
-  "SELECT",
-  "FROM",
-  "WHERE",
-  "GROUP BY",
-  "ORDER BY",
-  "HAVING",
-  "LIMIT",
-  "OFFSET",
-  "INNER JOIN",
-  "LEFT JOIN",
-  "RIGHT JOIN",
-  "FULL JOIN",
-  "JOIN",
-  "VALUES",
-  "SET",
-  "RETURNING",
-];
-
-function formatSql(input: string) {
-  let inSingleQuote = false;
-  let inDoubleQuote = false;
-  let output = "";
-
-  for (let index = 0; index < input.length; index += 1) {
-    const char = input[index];
-    if (char === "'" && !inDoubleQuote) inSingleQuote = !inSingleQuote;
-    if (char === '"' && !inSingleQuote) inDoubleQuote = !inDoubleQuote;
-    output += inSingleQuote || inDoubleQuote ? char : char.toUpperCase();
-  }
-
-  for (const keyword of sqlLineKeywords) {
-    output = output.replace(new RegExp(`\\s*\\b${keyword.replace(" ", "\\s+")}\\b\\s*`, "g"), `\n${keyword} `);
-  }
-
-  return output
-    .replace(/[ \t]*,[ \t]*/g, ",\n  ")
-    .replace(/\(\s*/g, "(\n  ")
-    .replace(/\s*\)/g, "\n)")
-    .split("\n")
-    .map((line) => line.replace(/[ \t]+/g, " ").trim())
-    .filter(Boolean)
-    .map((line) => (sqlLineKeywords.some((keyword) => line.startsWith(keyword)) || line.startsWith(")") ? line : `  ${line}`))
-    .join("\n")
-    .replace(/^SELECT\s+/g, "SELECT\n  ")
-    .trim();
-}
-
-function formatBraceCode(input: string) {
-  const normalized = input
-    .replace(/\s*([{};])\s*/g, "$1\n")
-    .replace(/\s*,\s*/g, ", ")
-    .replace(/\n+/g, "\n");
-  let indent = 0;
-
-  return normalized
-    .split("\n")
-    .map((line) => line.trim())
-    .filter(Boolean)
-    .map((line) => {
-      if (line.startsWith("}")) indent = Math.max(indent - 1, 0);
-      const formatted = `${"  ".repeat(indent)}${line}`;
-      if (line.endsWith("{")) indent += 1;
-      return formatted;
-    })
-    .join("\n");
-}
-
 function escapeHtml(value: string) {
   return value.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
 }
@@ -142,12 +84,6 @@ function downloadTextFile(filename: string, value: string) {
   link.download = filename;
   link.click();
   URL.revokeObjectURL(url);
-}
-
-function toTitleCase(value: string) {
-  return value
-    .replace(/[-_]/g, " ")
-    .replace(/\b\w/g, (char) => char.toUpperCase());
 }
 
 function normalizeLines(value: string) {
@@ -172,23 +108,6 @@ function makeSlug(input: string) {
     .trim()
     .replace(/\s+/g, "-")
     .replace(/-+/g, "-");
-}
-
-function parseUrl(input: string) {
-  const url = new URL(input);
-  return JSON.stringify(
-    {
-      href: url.href,
-      protocol: url.protocol,
-      host: url.host,
-      hostname: url.hostname,
-      pathname: url.pathname,
-      search: url.search,
-      hash: url.hash,
-    },
-    null,
-    2,
-  );
 }
 
 function parseUserAgentString(input: string) {
@@ -426,20 +345,23 @@ function GenericTextTransformTool({
   outputLabel?: string;
   locale?: Locale;
 }) {
+  const copy = toolCopy(locale);
   const [input, setInput] = useState(sample);
   const [output, setOutput] = useState("");
   const [message, setMessage] = useState("");
   const [tone, setTone] = useState<"success" | "error">("success");
+  const history = useToolHistory(`madabase:${tool}:history`);
 
   async function run() {
     try {
       const nextOutput = await transform(input, locale);
       setOutput(nextOutput);
-      setMessage(locale === "zh" ? "已完成。" : "Done.");
+      history.remember(input, nextOutput);
+      setMessage(copy.done);
       setTone("success");
       fireAndForgetToolExecution(tool);
     } catch (error) {
-      setMessage(error instanceof Error ? error.message : locale === "zh" ? "无法处理输入。" : "Unable to process input.");
+      setMessage(error instanceof Error ? error.message : copy.unable);
       setTone("error");
     }
   }
@@ -450,16 +372,302 @@ function GenericTextTransformTool({
         <div className="space-y-4">
           <ToolTextarea label={label} value={input} onChange={setInput} rows={10} />
           <div className="flex flex-wrap gap-2">
-            <ToolButton onClick={run}>{locale === "zh" ? "运行" : "Run"}</ToolButton>
-            <ResetButton label={locale === "zh" ? "重置" : "Reset"} onClick={() => { setInput(sample); setOutput(""); setMessage(""); }} />
+            <ToolButton onClick={run}>{copy.run}</ToolButton>
+            <ResetButton label={copy.reset} onClick={() => { setInput(sample); setOutput(""); setMessage(""); }} />
           </div>
           <StatusMessage message={message} tone={tone} />
         </div>
         <div className="space-y-4">
           <ToolTextarea label={outputLabel} value={output} readOnly rows={10} />
           <div className="flex flex-wrap gap-2">
-            <CopyButton value={output} label={locale === "zh" ? "复制" : "Copy"} copiedLabel={locale === "zh" ? "已复制" : "Copied"} />
-            <ToolButton variant="secondary" onClick={() => downloadTextFile(`${tool}-output.txt`, output)}>{locale === "zh" ? "下载" : "Download"}</ToolButton>
+            <CopyButton value={output} label={copy.copy} copiedLabel={copy.copied} />
+            <ToolButton variant="secondary" onClick={() => downloadTextFile(`${tool}-output.txt`, output)}>{copy.download}</ToolButton>
+          </div>
+          <ToolHistory
+            items={history.items}
+            locale={locale}
+            onClear={history.clear}
+            onUse={(item) => {
+              setInput(item.input);
+              setOutput(item.output);
+              setMessage("");
+            }}
+          />
+        </div>
+      </div>
+    </ToolPanel>
+  );
+}
+
+type UtilityGroup = "text" | "list" | "extract" | "encoding" | "writing";
+
+type UtilityOperation = {
+  id: string;
+  label: LocalizedText;
+  sample: LocalizedText;
+  outputLabel: LocalizedText;
+  transform: (value: string, locale: Locale) => string | Promise<string>;
+};
+
+const utilityOperations: Record<UtilityGroup, UtilityOperation[]> = {
+  text: [
+    {
+      id: "text-stats",
+      label: { en: "Text stats", zh: "字数统计" },
+      sample: { en: "Madabase helps developers ship faster with useful browser tools.", zh: "Madabase 提供 JSON、二维码、文本清理等在线工具，帮助团队更快完成日常处理。" },
+      outputLabel: { en: "Statistics", zh: "统计结果" },
+      transform: textStatsReport,
+    },
+    {
+      id: "clean-whitespace",
+      label: { en: "Clean whitespace", zh: "清理空白" },
+      sample: { en: "  Madabase    builds   tools.\n\n  Clean   this text.  ", zh: "  这是一段   从网页复制来的文本。\n\n\n  里面有多余空格、空行和缩进。  " },
+      outputLabel: { en: "Clean text", zh: "清理结果" },
+      transform: (value) => cleanWhitespace(value),
+    },
+    {
+      id: "clean-pdf-copy",
+      label: { en: "Clean PDF copy", zh: "清理 PDF 复制文本" },
+      sample: { en: "This is a hyphen-\nated line from a PDF.\nThe next line should continue.", zh: "这是一段从 PDF\n复制出来的文本。\n英文 hyphen-\nation 会被合并。" },
+      outputLabel: { en: "Clean text", zh: "清理结果" },
+      transform: (value) => cleanWhitespace(value, "pdf"),
+    },
+    {
+      id: "normalize-lines",
+      label: { en: "Preserve paragraphs", zh: "保留段落清理" },
+      sample: { en: "  Keep   this paragraph.\n  Trim each line.\n\n  Keep the next paragraph.  ", zh: "  保留这个段落。\n  每行只清理多余空格。\n\n  第二段仍然保留。  " },
+      outputLabel: { en: "Clean text", zh: "清理结果" },
+      transform: (value) => cleanWhitespace(value, "preserve-lines"),
+    },
+    {
+      id: "case-report",
+      label: { en: "Convert case", zh: "大小写转换" },
+      sample: { en: "madabase growth infrastructure", zh: "madabase growth infrastructure" },
+      outputLabel: { en: "Converted cases", zh: "转换结果" },
+      transform: caseReport,
+    },
+    {
+      id: "html-stripper",
+      label: { en: "HTML to text", zh: "HTML 转纯文本" },
+      sample: { en: "<article><h1>Madabase</h1><p>Useful tools.</p></article>", zh: "<article><h1>Madabase</h1><p>实用在线工具。</p></article>" },
+      outputLabel: { en: "Plain text", zh: "纯文本" },
+      transform: stripHtml,
+    },
+    {
+      id: "markdown-to-text",
+      label: { en: "Markdown to text", zh: "Markdown 转纯文本" },
+      sample: { en: "# Madabase\n\nBuild **useful** tools with [links](https://madabase.com).", zh: "# Madabase\n\n把 **Markdown** 内容转换成纯文本，保留链接文字。" },
+      outputLabel: { en: "Plain text", zh: "纯文本" },
+      transform: markdownToText,
+    },
+  ],
+  list: [
+    {
+      id: "line-sorter",
+      label: { en: "Sort lines", zh: "行排序" },
+      sample: { en: "banana\napple\ncarrot", zh: "香蕉\n苹果\n胡萝卜" },
+      outputLabel: { en: "Sorted lines", zh: "排序结果" },
+      transform: sortLines,
+    },
+    {
+      id: "line-deduplicator",
+      label: { en: "Deduplicate", zh: "按行去重" },
+      sample: { en: "api\njson\napi\nseo", zh: "接口\nJSON\n接口\nSEO" },
+      outputLabel: { en: "Unique lines", zh: "去重结果" },
+      transform: dedupeLines,
+    },
+    {
+      id: "empty-line-remover",
+      label: { en: "Remove empty lines", zh: "移除空行" },
+      sample: { en: "Madabase\n\n\nTools\n\nTests", zh: "第一行\n\n\n第二行\n\n第三行" },
+      outputLabel: { en: "Cleaned text", zh: "处理结果" },
+      transform: removeEmptyLines,
+    },
+    {
+      id: "list-randomizer",
+      label: { en: "Randomize", zh: "随机打乱" },
+      sample: { en: "alpha\nbeta\ngamma\ndelta", zh: "方案 A\n方案 B\n方案 C\n方案 D" },
+      outputLabel: { en: "Randomized lines", zh: "随机结果" },
+      transform: randomizeLines,
+    },
+  ],
+  extract: [
+    {
+      id: "email-extractor",
+      label: { en: "Extract emails", zh: "提取邮箱" },
+      sample: { en: "Contact hello@madabase.com or team@example.dev for access.", zh: "请联系 hello@madabase.com 或 team@example.dev 获取权限。" },
+      outputLabel: { en: "Emails", zh: "邮箱列表" },
+      transform: extractEmails,
+    },
+    {
+      id: "url-extractor",
+      label: { en: "Extract URLs", zh: "提取 URL" },
+      sample: { en: "Visit https://madabase.com and https://example.com/docs.", zh: "访问 https://madabase.com 和 https://example.com/docs 查看示例。" },
+      outputLabel: { en: "URLs", zh: "URL 列表" },
+      transform: extractUrls,
+    },
+    {
+      id: "number-extractor",
+      label: { en: "Extract numbers", zh: "提取数字" },
+      sample: { en: "Orders: 24 today, 138 this week, 1200 this month.", zh: "今天 24 单，本周 138 单，本月 1200 单。" },
+      outputLabel: { en: "Numbers", zh: "数字列表" },
+      transform: extractNumbers,
+    },
+  ],
+  encoding: [
+    {
+      id: "unicode-escape",
+      label: { en: "Unicode escape", zh: "Unicode 转义" },
+      sample: { en: "Madabase Tools", zh: "Madabase 工具" },
+      outputLabel: { en: "Escaped text", zh: "转义结果" },
+      transform: unicodeEscape,
+    },
+    {
+      id: "unicode-unescape",
+      label: { en: "Unicode unescape", zh: "Unicode 反转义" },
+      sample: "\\u004d\\u0061\\u0064\\u0061\\u0062\\u0061\\u0073\\u0065",
+      outputLabel: { en: "Text", zh: "文本" },
+      transform: unicodeUnescape,
+    },
+    {
+      id: "text-to-hex",
+      label: { en: "Text to hex", zh: "文本转 Hex" },
+      sample: { en: "Madabase", zh: "工具" },
+      outputLabel: { en: "Hex", zh: "Hex 结果" },
+      transform: textToHex,
+    },
+    {
+      id: "hex-to-text",
+      label: { en: "Hex to text", zh: "Hex 转文本" },
+      sample: "4d61646162617365",
+      outputLabel: { en: "Text", zh: "文本" },
+      transform: hexToText,
+    },
+    {
+      id: "text-to-binary",
+      label: { en: "Text to binary", zh: "文本转二进制" },
+      sample: { en: "Mada", zh: "码" },
+      outputLabel: { en: "Binary", zh: "二进制结果" },
+      transform: textToBinary,
+    },
+    {
+      id: "binary-to-text",
+      label: { en: "Binary to text", zh: "二进制转文本" },
+      sample: "01001101 01100001 01100100 01100001",
+      outputLabel: { en: "Text", zh: "文本" },
+      transform: binaryToText,
+    },
+  ],
+  writing: [
+    {
+      id: "reading-time",
+      label: { en: "Reading time", zh: "阅读时间" },
+      sample: { en: "Madabase helps teams format JSON, run tests, and build small workflows faster.", zh: "Madabase 帮助团队快速格式化 JSON、运行测试，并完成日常文本处理。" },
+      outputLabel: { en: "Reading estimate", zh: "阅读估算" },
+      transform: readingTime,
+    },
+    {
+      id: "lorem-ipsum",
+      label: { en: "Lorem ipsum", zh: "占位文本" },
+      sample: "3",
+      outputLabel: { en: "Generated text", zh: "生成文本" },
+      transform: loremIpsum,
+    },
+  ],
+};
+
+const utilitySlugMap: Record<string, { group: UtilityGroup; operation: string }> = {
+  "word-counter": { group: "text", operation: "text-stats" },
+  "character-counter": { group: "text", operation: "text-stats" },
+  "case-converter": { group: "text", operation: "case-report" },
+  "text-cleaner": { group: "text", operation: "clean-whitespace" },
+  "html-stripper": { group: "text", operation: "html-stripper" },
+  "markdown-to-text": { group: "text", operation: "markdown-to-text" },
+  "line-sorter": { group: "list", operation: "line-sorter" },
+  "line-deduplicator": { group: "list", operation: "line-deduplicator" },
+  "empty-line-remover": { group: "list", operation: "empty-line-remover" },
+  "list-randomizer": { group: "list", operation: "list-randomizer" },
+  "email-extractor": { group: "extract", operation: "email-extractor" },
+  "url-extractor": { group: "extract", operation: "url-extractor" },
+  "number-extractor": { group: "extract", operation: "number-extractor" },
+  "unicode-escape": { group: "encoding", operation: "unicode-escape" },
+  "unicode-unescape": { group: "encoding", operation: "unicode-unescape" },
+  "hex-to-text": { group: "encoding", operation: "hex-to-text" },
+  "text-to-hex": { group: "encoding", operation: "text-to-hex" },
+  "binary-to-text": { group: "encoding", operation: "binary-to-text" },
+  "text-to-binary": { group: "encoding", operation: "text-to-binary" },
+  "reading-time": { group: "writing", operation: "reading-time" },
+  "lorem-ipsum": { group: "writing", operation: "lorem-ipsum" },
+};
+
+function UtilityToolbox({ group, initialOperation, tool, locale = "en" }: { group: UtilityGroup; initialOperation: string; tool: string; locale?: Locale }) {
+  const copy = toolCopy(locale);
+  const operations = utilityOperations[group];
+  const initial = operations.find((operation) => operation.id === initialOperation) ?? operations[0];
+  const [operationId, setOperationId] = useState(initial.id);
+  const operation = operations.find((item) => item.id === operationId) ?? initial;
+  const [input, setInput] = useState(localizeText(operation.sample, locale));
+  const [output, setOutput] = useState("");
+  const [message, setMessage] = useState("");
+  const [tone, setTone] = useState<"success" | "error">("success");
+  const history = useToolHistory(`madabase:${tool}:${operation.id}:history`);
+
+  function selectOperation(nextOperation: UtilityOperation) {
+    setOperationId(nextOperation.id);
+    setInput(localizeText(nextOperation.sample, locale));
+    setOutput("");
+    setMessage("");
+  }
+
+  async function run() {
+    try {
+      const nextOutput = await operation.transform(input, locale);
+      setOutput(nextOutput);
+      history.remember(input, nextOutput);
+      setMessage(copy.done);
+      setTone("success");
+      fireAndForgetToolExecution(tool);
+    } catch (error) {
+      setMessage(error instanceof Error ? error.message : copy.unable);
+      setTone("error");
+    }
+  }
+
+  return (
+    <ToolPanel label={locale === "zh" ? "工具箱" : "Toolbox"}>
+      <div className="space-y-4">
+        <div className="flex flex-wrap gap-2">
+          {operations.map((item) => (
+            <ToolButton key={item.id} variant={item.id === operation.id ? "primary" : "secondary"} onClick={() => selectOperation(item)}>
+              {localizeText(item.label, locale)}
+            </ToolButton>
+          ))}
+        </div>
+        <div className="grid gap-4 lg:grid-cols-2">
+          <div className="space-y-4">
+            <ToolTextarea label={copy.input} value={input} onChange={setInput} rows={10} />
+            <div className="flex flex-wrap gap-2">
+              <ToolButton onClick={run}>{copy.run}</ToolButton>
+              <ResetButton label={copy.reset} onClick={() => { setInput(localizeText(operation.sample, locale)); setOutput(""); setMessage(""); }} />
+            </div>
+            <StatusMessage message={message} tone={tone} />
+          </div>
+          <div className="space-y-4">
+            <ToolTextarea label={localizeText(operation.outputLabel, locale)} value={output} readOnly rows={10} />
+            <div className="flex flex-wrap gap-2">
+              <CopyButton value={output} label={copy.copy} copiedLabel={copy.copied} />
+              <ToolButton variant="secondary" onClick={() => downloadTextFile(`${operation.id}-output.txt`, output)}>{copy.download}</ToolButton>
+            </div>
+            <ToolHistory
+              items={history.items}
+              locale={locale}
+              onClear={history.clear}
+              onUse={(item) => {
+                setInput(item.input);
+                setOutput(item.output);
+                setMessage("");
+              }}
+            />
           </div>
         </div>
       </div>
@@ -467,7 +675,8 @@ function GenericTextTransformTool({
   );
 }
 
-export function JsonDiff() {
+export function JsonDiff({ locale = "en" }: { locale?: Locale }) {
+  const copy = toolCopy(locale);
   const sampleLeft = '{"name":"Madabase","mode":"old","tools":["json","jwt"],"active":true}';
   const sampleRight = '{"name":"Madabase","mode":"new","tools":["json","jwt","qr"],"active":true}';
   const [left, setLeft] = useState(sampleLeft);
@@ -518,14 +727,14 @@ export function JsonDiff() {
       }
       const nextOutput = nextRows.length
         ? nextRows.map((row) => `${row.status.toUpperCase()} ${row.path}\n- ${row.before ?? ""}\n+ ${row.after ?? ""}`).join("\n\n")
-        : "No differences found.";
+        : locale === "zh" ? "未发现差异。" : "No differences found.";
       setRows(nextRows);
       setOutput(nextOutput);
-      setMessage(nextRows.length ? `${nextRows.length} changed path${nextRows.length === 1 ? "" : "s"} found.` : "No differences found.");
+      setMessage(nextRows.length ? (locale === "zh" ? `找到 ${nextRows.length} 处变更路径。` : `${nextRows.length} changed path${nextRows.length === 1 ? "" : "s"} found.`) : locale === "zh" ? "未发现差异。" : "No differences found.");
       setTone("success");
       fireAndForgetToolExecution("json-diff");
     } catch (error) {
-      setMessage(error instanceof Error ? error.message : "Invalid JSON input.");
+      setMessage(error instanceof Error ? error.message : locale === "zh" ? "JSON 输入无效。" : "Invalid JSON input.");
       setTone("error");
     }
   }
@@ -534,33 +743,33 @@ export function JsonDiff() {
     <ToolPanel>
       <div className="grid gap-4 lg:grid-cols-2">
         <div className="space-y-4">
-          <ToolTextarea label="Left JSON" value={left} onChange={setLeft} rows={10} />
-          <ToolTextarea label="Right JSON" value={right} onChange={setRight} rows={10} />
+          <ToolTextarea label={locale === "zh" ? "左侧 JSON" : "Left JSON"} value={left} onChange={setLeft} rows={10} />
+          <ToolTextarea label={locale === "zh" ? "右侧 JSON" : "Right JSON"} value={right} onChange={setRight} rows={10} />
           <div className="flex flex-wrap gap-2">
-            <ToolButton onClick={run}>Compare JSON</ToolButton>
-            <ResetButton onClick={() => { setLeft(sampleLeft); setRight(sampleRight); setRows([]); setOutput(""); setMessage(""); }} />
+            <ToolButton onClick={run}>{locale === "zh" ? "对比 JSON" : "Compare JSON"}</ToolButton>
+            <ResetButton label={copy.reset} onClick={() => { setLeft(sampleLeft); setRight(sampleRight); setRows([]); setOutput(""); setMessage(""); }} />
           </div>
           <StatusMessage message={message} tone={tone} />
         </div>
         <div className="space-y-4">
           <div className="min-h-[280px] rounded-md border border-[var(--border)] bg-white p-3">
-            <p className="code-font text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-soft)]">Path diff</p>
+            <p className="code-font text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-soft)]">{locale === "zh" ? "路径差异" : "Path diff"}</p>
             <div className="mt-3 space-y-2">
               {rows.length > 0 ? rows.map((row) => (
                 <div key={`${row.path}-${row.status}`} className="rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-3">
                   <div className="flex flex-wrap items-center justify-between gap-2">
                     <code className="text-xs font-semibold text-[var(--text)]">{row.path}</code>
-                    <span className={`rounded-full px-2 py-0.5 text-[11px] font-bold uppercase ${row.status === "added" ? "bg-emerald-100 text-emerald-700" : row.status === "removed" ? "bg-rose-100 text-rose-700" : "bg-amber-100 text-amber-700"}`}>{row.status}</span>
+                    <span className={`rounded-full px-2 py-0.5 text-[11px] font-bold uppercase ${row.status === "added" ? "bg-emerald-100 text-emerald-700" : row.status === "removed" ? "bg-rose-100 text-rose-700" : "bg-amber-100 text-amber-700"}`}>{locale === "zh" ? ({ added: "新增", removed: "删除", changed: "变更" }[row.status]) : row.status}</span>
                   </div>
                   {row.before ? <pre className="mt-2 overflow-auto rounded bg-rose-50 px-2 py-1 text-xs text-rose-800">- {row.before}</pre> : null}
                   {row.after ? <pre className="mt-2 overflow-auto rounded bg-emerald-50 px-2 py-1 text-xs text-emerald-800">+ {row.after}</pre> : null}
                 </div>
-              )) : <p className="text-sm text-[var(--text-muted)]">Run a comparison to inspect changed JSON paths.</p>}
+              )) : <p className="text-sm text-[var(--text-muted)]">{locale === "zh" ? "运行对比后查看变更路径。" : "Run a comparison to inspect changed JSON paths."}</p>}
             </div>
           </div>
           <div className="flex flex-wrap gap-2">
-            <CopyButton value={output} />
-            <ToolButton variant="secondary" onClick={() => downloadTextFile("json-diff.txt", output)}>Download</ToolButton>
+            <CopyButton value={output} label={copy.copy} copiedLabel={copy.copied} />
+            <ToolButton variant="secondary" onClick={() => downloadTextFile("json-diff.txt", output)}>{copy.download}</ToolButton>
           </div>
         </div>
       </div>
@@ -568,23 +777,24 @@ export function JsonDiff() {
   );
 }
 
-export function JsonEscape() {
-  return <GenericTextTransformTool label="JSON string" sample={'{"message":"hello \"world\""}'} tool="json-escape" transform={(value) => JSON.stringify(value)} outputLabel="Escaped output" />;
+export function JsonEscape({ locale = "en" }: { locale?: Locale }) {
+  return <GenericTextTransformTool label={locale === "zh" ? "JSON 字符串" : "JSON string"} sample={'{"message":"hello \"world\""}'} tool="json-escape" transform={(value) => JSON.stringify(value)} outputLabel={locale === "zh" ? "转义结果" : "Escaped output"} locale={locale} />;
 }
 
-export function YamlFormatter() {
-  return <GenericTextTransformTool label="YAML input" sample={"name: Madabase\ntools:\n  - JSON Formatter\n  - JWT Decoder"} tool="yaml-formatter" transform={formatYaml} outputLabel="Formatted YAML" />;
+export function YamlFormatter({ locale = "en" }: { locale?: Locale }) {
+  return <GenericTextTransformTool label={locale === "zh" ? "YAML 输入" : "YAML input"} sample={"name: Madabase\ntools:\n  - JSON Formatter\n  - JWT Decoder"} tool="yaml-formatter" transform={formatYaml} outputLabel={locale === "zh" ? "格式化后的 YAML" : "Formatted YAML"} locale={locale} />;
 }
 
-export function XmlFormatter() {
-  return <GenericTextTransformTool label="XML input" sample={'<root><tool>Madabase</tool><type>formatter</type></root>'} tool="xml-formatter" transform={formatXml} outputLabel="Formatted XML" />;
+export function XmlFormatter({ locale = "en" }: { locale?: Locale }) {
+  return <GenericTextTransformTool label={locale === "zh" ? "XML 输入" : "XML input"} sample={'<root><tool>Madabase</tool><type>formatter</type></root>'} tool="xml-formatter" transform={formatXml} outputLabel={locale === "zh" ? "格式化后的 XML" : "Formatted XML"} locale={locale} />;
 }
 
-export function SqlFormatter() {
-  return <GenericTextTransformTool label="SQL input" sample={"select id,name from users where status='active' order by created_at desc"} tool="sql-formatter" transform={formatSql} outputLabel="Formatted SQL" />;
+export function SqlFormatter({ locale = "en" }: { locale?: Locale }) {
+  return <GenericTextTransformTool label={locale === "zh" ? "SQL 输入" : "SQL input"} sample={"select id,name from users where status='active' order by created_at desc"} tool="sql-formatter" transform={formatSql} outputLabel={locale === "zh" ? "格式化后的 SQL" : "Formatted SQL"} locale={locale} />;
 }
 
-export function RegexTester() {
+export function RegexTester({ locale = "en" }: { locale?: Locale }) {
+  const copy = toolCopy(locale);
   const [pattern, setPattern] = useState("madabase");
   const [flags, setFlags] = useState("gi");
   const [input, setInput] = useState("Madabase builds tools. madabase writes SEO pages.");
@@ -596,9 +806,8 @@ export function RegexTester() {
 
   function run() {
     try {
-      const regex = new RegExp(pattern, flags);
-      const matchRegex = regex.global ? regex : new RegExp(regex.source, `${regex.flags}g`);
-      const matches = [...input.matchAll(matchRegex)];
+      const result = runRegexTest(pattern, flags, input, replacement);
+      const matches = result.matches;
       let cursor = 0;
       const parts: string[] = [];
       for (const match of matches) {
@@ -609,15 +818,12 @@ export function RegexTester() {
       }
       parts.push(escapeHtml(input.slice(cursor)));
       setHighlighted(parts.join(""));
-      setOutput(matches.length ? matches.map((item, index) => {
-        const groups = item.slice(1).map((group, groupIndex) => `  group ${groupIndex + 1}: ${group ?? ""}`).join("\n");
-        return `match ${index + 1}: ${item[0]}\nindex: ${item.index ?? 0}${groups ? `\n${groups}` : ""}`;
-      }).join("\n\n") + `\n\nReplacement preview:\n${input.replace(matchRegex, replacement)}` : "No matches.");
-      setMessage(`Found ${matches.length} match${matches.length === 1 ? "" : "es"}.`);
+      setOutput(result.output);
+      setMessage(locale === "zh" ? `找到 ${matches.length} 个匹配。` : `Found ${matches.length} match${matches.length === 1 ? "" : "es"}.`);
       setTone("success");
       fireAndForgetToolExecution("regex-tester");
     } catch (error) {
-      setMessage(error instanceof Error ? error.message : "Invalid regex.");
+      setMessage(error instanceof Error ? error.message : locale === "zh" ? "正则表达式无效。" : "Invalid regex.");
       setTone("error");
     }
   }
@@ -626,22 +832,22 @@ export function RegexTester() {
     <ToolPanel>
       <div className="space-y-4">
         <div className="grid gap-4 md:grid-cols-2">
-          <ToolInput label="Pattern" value={pattern} onChange={setPattern} />
-          <ToolInput label="Flags" value={flags} onChange={setFlags} />
+          <ToolInput label={locale === "zh" ? "正则表达式" : "Pattern"} value={pattern} onChange={setPattern} />
+          <ToolInput label={locale === "zh" ? "标志" : "Flags"} value={flags} onChange={setFlags} />
         </div>
-        <ToolInput label="Replacement" value={replacement} onChange={setReplacement} />
-        <ToolTextarea label="Test text" value={input} onChange={setInput} rows={8} />
+        <ToolInput label={locale === "zh" ? "替换文本" : "Replacement"} value={replacement} onChange={setReplacement} />
+        <ToolTextarea label={locale === "zh" ? "测试文本" : "Test text"} value={input} onChange={setInput} rows={8} />
         <div className="flex flex-wrap gap-2">
-          <ToolButton onClick={run}>Test regex</ToolButton>
-          <CopyButton value={output} />
-          <ToolButton variant="secondary" onClick={() => downloadTextFile("regex-result.txt", output)}>Download</ToolButton>
+          <ToolButton onClick={run}>{locale === "zh" ? "测试正则" : "Test regex"}</ToolButton>
+          <CopyButton value={output} label={copy.copy} copiedLabel={copy.copied} />
+          <ToolButton variant="secondary" onClick={() => downloadTextFile("regex-result.txt", output)}>{copy.download}</ToolButton>
         </div>
         <StatusMessage message={message} tone={tone} />
         <div className="rounded-md border border-[var(--border)] bg-white p-3">
-          <p className="code-font text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-soft)]">Highlighted matches</p>
+          <p className="code-font text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-soft)]">{locale === "zh" ? "高亮匹配" : "Highlighted matches"}</p>
           <div className="mt-2 whitespace-pre-wrap text-sm leading-6 text-[var(--text)]" dangerouslySetInnerHTML={{ __html: highlighted || escapeHtml(input) }} />
         </div>
-        <ToolTextarea label="Matches" value={output} readOnly rows={8} />
+        <ToolTextarea label={locale === "zh" ? "匹配结果" : "Matches"} value={output} readOnly rows={8} />
       </div>
     </ToolPanel>
   );
@@ -721,8 +927,8 @@ export function CronGenerator({ locale = "en" }: { locale?: Locale }) {
   );
 }
 
-export function HashGenerator() {
-  return <GenericTextTransformTool label="Plain text" sample="Madabase" tool="hash-generator" transform={async (value) => {
+export function HashGenerator({ locale = "en" }: { locale?: Locale }) {
+  return <GenericTextTransformTool label={locale === "zh" ? "纯文本" : "Plain text"} sample="Madabase" tool="hash-generator" transform={async (value) => {
     const [sha1, sha256, sha384, sha512] = await Promise.all([
       digestText(value, "SHA-1"),
       digestText(value, "SHA-256"),
@@ -730,10 +936,11 @@ export function HashGenerator() {
       digestText(value, "SHA-512"),
     ]);
     return [`SHA-1: ${sha1}`, `SHA-256: ${sha256}`, `SHA-384: ${sha384}`, `SHA-512: ${sha512}`].join("\n\n");
-  }} outputLabel="Hash output" />;
+  }} outputLabel={locale === "zh" ? "哈希结果" : "Hash output"} locale={locale} />;
 }
 
-export function ColorConverter() {
+export function ColorConverter({ locale = "en" }: { locale?: Locale }) {
+  const copy = toolCopy(locale);
   const [input, setInput] = useState("#0f766e");
   const [output, setOutput] = useState("");
   const [preview, setPreview] = useState("#0f766e");
@@ -751,13 +958,13 @@ export function ColorConverter() {
     }
     const rgb = normalized.match(/^rgb\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*\)$/i);
     if (rgb) return rgb.slice(1).map(Number);
-    throw new Error("Use HEX like #0f766e or RGB like rgb(15, 118, 110).");
+    throw new Error(locale === "zh" ? "请输入 #0f766e 这样的 HEX，或 rgb(15, 118, 110) 这样的 RGB。" : "Use HEX like #0f766e or RGB like rgb(15, 118, 110).");
   }
 
   function convert() {
     try {
       const [red, green, blue] = parseColor(input);
-      if ([red, green, blue].some((item) => item < 0 || item > 255)) throw new Error("RGB values must be between 0 and 255.");
+      if ([red, green, blue].some((item) => item < 0 || item > 255)) throw new Error(locale === "zh" ? "RGB 数值必须在 0 到 255 之间。" : "RGB values must be between 0 and 255.");
       const max = Math.max(red, green, blue) / 255;
       const min = Math.min(red, green, blue) / 255;
       const lightness = (max + min) / 2;
@@ -774,11 +981,11 @@ export function ColorConverter() {
       const hex = `#${[red, green, blue].map((item) => item.toString(16).padStart(2, "0")).join("")}`;
       setPreview(hex);
       setOutput([`HEX: ${hex}`, `RGB: rgb(${red}, ${green}, ${blue})`, `HSL: hsl(${h}, ${Math.round(saturation * 100)}%, ${Math.round(lightness * 100)}%)`, `CSS variable: --color: ${hex};`].join("\n"));
-      setMessage("Color converted.");
+      setMessage(locale === "zh" ? "颜色已转换。" : "Color converted.");
       setTone("success");
       fireAndForgetToolExecution("color-converter");
     } catch (error) {
-      setMessage(error instanceof Error ? error.message : "Unable to convert color.");
+      setMessage(error instanceof Error ? error.message : locale === "zh" ? "无法转换颜色。" : "Unable to convert color.");
       setTone("error");
     }
   }
@@ -787,13 +994,13 @@ export function ColorConverter() {
     <ToolPanel>
       <div className="grid gap-4 lg:grid-cols-[1fr_220px]">
         <div className="space-y-4">
-          <ToolInput label="Color" value={input} onChange={setInput} />
+          <ToolInput label={locale === "zh" ? "颜色" : "Color"} value={input} onChange={setInput} />
           <div className="flex flex-wrap gap-2">
-            <ToolButton onClick={convert}>Convert</ToolButton>
-            <CopyButton value={output} />
+            <ToolButton onClick={convert}>{locale === "zh" ? "转换" : "Convert"}</ToolButton>
+            <CopyButton value={output} label={copy.copy} copiedLabel={copy.copied} />
           </div>
           <StatusMessage message={message} tone={tone} />
-          <ToolTextarea label="Converted values" value={output} readOnly rows={6} />
+          <ToolTextarea label={locale === "zh" ? "转换结果" : "Converted values"} value={output} readOnly rows={6} />
         </div>
         <div className="rounded-md border border-[var(--border)] bg-white p-4">
           <div className="aspect-square rounded-md border border-[var(--border)]" style={{ background: preview }} />
@@ -804,7 +1011,8 @@ export function ColorConverter() {
   );
 }
 
-export function PasswordGenerator() {
+export function PasswordGenerator({ locale = "en" }: { locale?: Locale }) {
+  const copy = toolCopy(locale);
   const [length, setLength] = useState("16");
   const [includeUppercase, setIncludeUppercase] = useState(true);
   const [includeLowercase, setIncludeLowercase] = useState(true);
@@ -823,13 +1031,13 @@ export function PasswordGenerator() {
     const chars = pools.join("");
     const size = Math.max(8, Math.min(128, Number(length) || 16));
     if (!chars) {
-      setMessage("Choose at least one character set.");
+      setMessage(locale === "zh" ? "至少选择一种字符集。" : "Choose at least one character set.");
       return;
     }
     const bytes = new Uint32Array(size);
     crypto.getRandomValues(bytes);
     setOutput(Array.from(bytes, (item) => chars[item % chars.length]).join(""));
-    setMessage(`Generated a ${size}-character password with ${pools.length} character set${pools.length === 1 ? "" : "s"}.`);
+    setMessage(locale === "zh" ? `已生成 ${size} 位密码，包含 ${pools.length} 种字符集。` : `Generated a ${size}-character password with ${pools.length} character set${pools.length === 1 ? "" : "s"}.`);
     fireAndForgetToolExecution("password-generator");
   }
 
@@ -842,13 +1050,13 @@ export function PasswordGenerator() {
   return (
     <ToolPanel>
       <div className="space-y-4">
-        <ToolInput label="Password length" value={length} onChange={setLength} type="number" />
+        <ToolInput label={locale === "zh" ? "密码长度" : "Password length"} value={length} onChange={setLength} type="number" />
         <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
           {[
-            { label: "Uppercase", checked: includeUppercase, setter: setIncludeUppercase },
-            { label: "Lowercase", checked: includeLowercase, setter: setIncludeLowercase },
-            { label: "Numbers", checked: includeNumbers, setter: setIncludeNumbers },
-            { label: "Symbols", checked: includeSymbols, setter: setIncludeSymbols },
+            { label: locale === "zh" ? "大写字母" : "Uppercase", checked: includeUppercase, setter: setIncludeUppercase },
+            { label: locale === "zh" ? "小写字母" : "Lowercase", checked: includeLowercase, setter: setIncludeLowercase },
+            { label: locale === "zh" ? "数字" : "Numbers", checked: includeNumbers, setter: setIncludeNumbers },
+            { label: locale === "zh" ? "符号" : "Symbols", checked: includeSymbols, setter: setIncludeSymbols },
           ].map((option) => (
             <label key={option.label} className="flex items-center gap-2 rounded-md border border-[var(--border)] bg-white px-3 py-2 text-sm font-semibold text-[var(--text)]">
               <input type="checkbox" checked={option.checked} onChange={(event) => option.setter(event.target.checked)} />
@@ -856,10 +1064,10 @@ export function PasswordGenerator() {
             </label>
           ))}
         </div>
-        <ToolTextarea label="Generated password" value={output} readOnly rows={4} />
+        <ToolTextarea label={locale === "zh" ? "生成的密码" : "Generated password"} value={output} readOnly rows={4} />
         <div className="flex flex-wrap gap-2">
-          <CopyButton value={output} />
-          <ToolButton onClick={generate}>Generate</ToolButton>
+          <CopyButton value={output} label={copy.copy} copiedLabel={copy.copied} />
+          <ToolButton onClick={generate}>{copy.generate}</ToolButton>
         </div>
         <StatusMessage message={message} tone="success" />
       </div>
@@ -867,29 +1075,44 @@ export function PasswordGenerator() {
   );
 }
 
-export function WordCounter() {
-  return <GenericTextTransformTool label="Text input" sample="Madabase helps developers ship faster with useful browser tools." tool="word-counter" transform={(value) => `${value.trim().split(/\s+/).filter(Boolean).length} words`} outputLabel="Count result" />;
+export function WordCounter({ locale = "en" }: { locale?: Locale }) {
+  return <UtilityToolbox group="text" initialOperation="text-stats" tool="word-counter" locale={locale} />;
 }
 
-export function CharacterCounter() {
-  return <GenericTextTransformTool label="Text input" sample="Madabase" tool="character-counter" transform={(value) => `${value.length} characters`} outputLabel="Count result" />;
+export function CharacterCounter({ locale = "en" }: { locale?: Locale }) {
+  return <UtilityToolbox group="text" initialOperation="text-stats" tool="character-counter" locale={locale} />;
 }
 
-export function CaseConverter() {
-  return <GenericTextTransformTool label="Text input" sample="madabase growth infrastructure" tool="case-converter" transform={(value) => `UPPERCASE: ${value.toUpperCase()}\n\nlowercase: ${value.toLowerCase()}\n\nTitle Case: ${toTitleCase(value)}`} outputLabel="Converted cases" />;
+export function CaseConverter({ locale = "en" }: { locale?: Locale }) {
+  return <UtilityToolbox group="text" initialOperation="case-report" tool="case-converter" locale={locale} />;
 }
 
-export function TextCleaner() {
-  return <GenericTextTransformTool label="Messy text" sample={"  Madabase    builds   tools.\n\n  Clean   this text.  "} tool="text-cleaner" transform={(value) => value.replace(/\s+/g, " ").trim()} outputLabel="Clean text" />;
+export function TextCleaner({ locale = "en" }: { locale?: Locale }) {
+  return <UtilityToolbox group="text" initialOperation="clean-whitespace" tool="text-cleaner" locale={locale} />;
 }
 
-export function SlugGenerator() {
-  return <GenericTextTransformTool label="Title" sample="Best Online Developer Tools" tool="slug-generator" transform={makeSlug} outputLabel="Generated slug" />;
+export function SlugGenerator({ locale = "en" }: { locale?: Locale }) {
+  return (
+    <GenericTextTransformTool
+      label={locale === "zh" ? "标题" : "Title"}
+      sample={locale === "zh" ? "最好用的在线开发者工具" : "Best Online Developer Tools"}
+      tool="slug-generator"
+      transform={makeSlug}
+      outputLabel={locale === "zh" ? "生成的 Slug" : "Generated slug"}
+      locale={locale}
+    />
+  );
 }
 
-export function QrCodeGenerator() {
+export function QrCodeGenerator({ locale = "en" }: { locale?: Locale }) {
+  const copy = toolCopy(locale);
   const [input, setInput] = useState("https://madabase.com/en/tools");
   const [svg, setSvg] = useState("");
+  const [logoDataUrl, setLogoDataUrl] = useState("");
+  const [logoName, setLogoName] = useState("");
+  const [logoSize, setLogoSize] = useState(44);
+  const [darkColor, setDarkColor] = useState("#111827");
+  const [lightColor, setLightColor] = useState("#ffffff");
   const [message, setMessage] = useState("");
   const [tone, setTone] = useState<"success" | "error">("success");
 
@@ -906,23 +1129,23 @@ export function QrCodeGenerator() {
       try {
         const nextSvg = await QRCode.toString(input, {
           type: "svg",
-          errorCorrectionLevel: "M",
+          errorCorrectionLevel: "H",
           margin: 2,
           width: 196,
           color: {
-            dark: "#111827",
-            light: "#ffffff",
+            dark: darkColor,
+            light: lightColor,
           },
         });
         if (!cancelled) {
-          setSvg(nextSvg);
-          setMessage("Valid QR code generated.");
+          setSvg(logoDataUrl ? addCenterImageToSvg(nextSvg, logoDataUrl, { size: logoSize }) : nextSvg);
+          setMessage(locale === "zh" ? "二维码已生成。" : "Valid QR code generated.");
           setTone("success");
         }
       } catch (error) {
         if (!cancelled) {
           setSvg("");
-          setMessage(error instanceof Error ? error.message : "Unable to generate QR code.");
+          setMessage(error instanceof Error ? error.message : locale === "zh" ? "无法生成二维码。" : "Unable to generate QR code.");
           setTone("error");
         }
       }
@@ -932,41 +1155,132 @@ export function QrCodeGenerator() {
     return () => {
       cancelled = true;
     };
-  }, [input]);
+  }, [darkColor, input, lightColor, locale, logoDataUrl, logoSize]);
+
+  function handleLogoUpload(file: File | undefined) {
+    if (!file) return;
+    const allowedTypes = new Set(["image/png", "image/jpeg", "image/webp", "image/gif"]);
+    if (!allowedTypes.has(file.type)) {
+      setMessage(locale === "zh" ? "请上传 PNG、JPG、WebP 或 GIF 图片作为中心 Logo。" : "Upload a PNG, JPG, WebP, or GIF image for the center logo.");
+      setTone("error");
+      return;
+    }
+    const reader = new FileReader();
+    reader.onload = () => {
+      setLogoDataUrl(typeof reader.result === "string" ? reader.result : "");
+      setLogoName(file.name);
+      setMessage(locale === "zh" ? "中心图片已添加。" : "Center image added.");
+      setTone("success");
+    };
+    reader.onerror = () => {
+      setMessage(locale === "zh" ? "无法读取上传的图片。" : "Unable to read the uploaded image.");
+      setTone("error");
+    };
+    reader.readAsDataURL(file);
+  }
+
+  function clearLogo() {
+    setLogoDataUrl("");
+    setLogoName("");
+  }
+
+  function downloadSvg() {
+    downloadTextFile("madabase-qr.svg", svg);
+  }
+
+  function downloadPng() {
+    if (!svg) return;
+    const image = new Image();
+    const url = URL.createObjectURL(new Blob([svg], { type: "image/svg+xml;charset=utf-8" }));
+    image.onload = () => {
+      const canvas = document.createElement("canvas");
+      canvas.width = 512;
+      canvas.height = 512;
+      const context = canvas.getContext("2d");
+      if (!context) return;
+      context.fillStyle = lightColor;
+      context.fillRect(0, 0, canvas.width, canvas.height);
+      context.drawImage(image, 0, 0, canvas.width, canvas.height);
+      URL.revokeObjectURL(url);
+      const link = document.createElement("a");
+      link.href = canvas.toDataURL("image/png");
+      link.download = "madabase-qr.png";
+      link.click();
+    };
+    image.onerror = () => {
+      URL.revokeObjectURL(url);
+      setMessage(locale === "zh" ? "无法导出 PNG。" : "Unable to export PNG.");
+      setTone("error");
+    };
+    image.src = url;
+  }
 
   return (
     <ToolPanel>
       <div className="grid gap-4 lg:grid-cols-[1fr_220px]">
         <div className="space-y-4">
-          <ToolInput label="Text or URL" value={input} onChange={setInput} />
+          <ToolInput label={locale === "zh" ? "文本或 URL" : "Text or URL"} value={input} onChange={setInput} />
+          <div className="grid gap-4 sm:grid-cols-2">
+            <ToolInput label={locale === "zh" ? "前景色" : "Foreground color"} value={darkColor} onChange={setDarkColor} />
+            <ToolInput label={locale === "zh" ? "背景色" : "Background color"} value={lightColor} onChange={setLightColor} />
+          </div>
+          <label className="block">
+            <span className="code-font text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-soft)]">{locale === "zh" ? "中心图片" : "Center image"}</span>
+            <input
+              type="file"
+              accept="image/png,image/jpeg,image/webp,image/gif"
+              onChange={(event) => handleLogoUpload(event.target.files?.[0])}
+              className="mt-2 block w-full rounded-md border border-[var(--border)] bg-white px-3 py-2 text-sm text-[var(--text)] file:mr-3 file:rounded-md file:border-0 file:bg-[var(--surface-code)] file:px-3 file:py-1.5 file:text-sm file:font-semibold file:text-white"
+            />
+          </label>
+          {logoName ? (
+            <div className="flex flex-wrap items-center gap-2 rounded-md border border-[var(--border)] bg-white px-3 py-2 text-sm text-[var(--text-muted)]">
+              <span className="font-semibold text-[var(--text)]">{logoName}</span>
+              <ToolButton variant="secondary" onClick={clearLogo}>{locale === "zh" ? "移除图片" : "Remove image"}</ToolButton>
+            </div>
+          ) : null}
+          <label className="block">
+            <span className="code-font text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-soft)]">{locale === "zh" ? "Logo 大小" : "Logo size"}</span>
+            <input
+              type="range"
+              min={28}
+              max={72}
+              value={logoSize}
+              onChange={(event) => setLogoSize(Number(event.target.value))}
+              className="mt-2 w-full accent-[var(--brand)]"
+            />
+            <span className="mt-1 block text-xs text-[var(--text-muted)]">{logoSize}px</span>
+          </label>
           <div className="flex flex-wrap gap-2">
-            <CopyButton value={svg} label="Copy SVG" />
-            <ToolButton onClick={() => fireAndForgetToolExecution("qr-code-generator")}>Generate QR</ToolButton>
+            <CopyButton value={svg} label={locale === "zh" ? "复制 SVG" : "Copy SVG"} copiedLabel={copy.copied} />
+            <ToolButton variant="secondary" onClick={downloadSvg}>{locale === "zh" ? "下载 SVG" : "Download SVG"}</ToolButton>
+            <ToolButton variant="secondary" onClick={downloadPng}>{locale === "zh" ? "下载 PNG" : "Download PNG"}</ToolButton>
+            <ToolButton onClick={() => fireAndForgetToolExecution("qr-code-generator")}>{locale === "zh" ? "生成二维码" : "Generate QR"}</ToolButton>
           </div>
           <StatusMessage message={message} tone={tone} />
         </div>
         <div className="rounded-md border border-[var(--border)] bg-white p-4">
-          {svg ? <div dangerouslySetInnerHTML={{ __html: svg }} /> : <div className="grid aspect-square place-items-center text-sm text-[var(--text-soft)]">No QR code</div>}
+          {svg ? <div dangerouslySetInnerHTML={{ __html: svg }} /> : <div className="grid aspect-square place-items-center text-sm text-[var(--text-soft)]">{locale === "zh" ? "暂无二维码" : "No QR code"}</div>}
         </div>
       </div>
     </ToolPanel>
   );
 }
 
-export function HtmlEncoder() {
-  return <GenericTextTransformTool label="HTML input" sample={'<div class="card">Madabase</div>'} tool="html-encoder" transform={(value) => value.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;")} outputLabel="Encoded HTML" />;
+export function HtmlEncoder({ locale = "en" }: { locale?: Locale }) {
+  return <GenericTextTransformTool label={locale === "zh" ? "HTML 输入" : "HTML input"} sample={'<div class="card">Madabase</div>'} tool="html-encoder" transform={(value) => value.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;")} outputLabel={locale === "zh" ? "编码后的 HTML" : "Encoded HTML"} locale={locale} />;
 }
 
-export function CssFormatter() {
-  return <GenericTextTransformTool label="CSS input" sample={"body{margin:0;color:#111827}.card{padding:16px;border-radius:8px}"} tool="css-formatter" transform={formatBraceCode} outputLabel="Formatted CSS" />;
+export function CssFormatter({ locale = "en" }: { locale?: Locale }) {
+  return <GenericTextTransformTool label={locale === "zh" ? "CSS 输入" : "CSS input"} sample={"body{margin:0;color:#111827}.card{padding:16px;border-radius:8px}"} tool="css-formatter" transform={formatCss} outputLabel={locale === "zh" ? "格式化后的 CSS" : "Formatted CSS"} locale={locale} />;
 }
 
-export function JsFormatter() {
-  return <GenericTextTransformTool label="JavaScript input" sample={"const tools=['json','jwt'];tools.forEach(tool=>console.log(tool));"} tool="js-formatter" transform={formatBraceCode} outputLabel="Formatted JavaScript" />;
+export function JsFormatter({ locale = "en" }: { locale?: Locale }) {
+  return <GenericTextTransformTool label={locale === "zh" ? "JavaScript 输入" : "JavaScript input"} sample={"const tools=['json','jwt'];tools.forEach(tool=>console.log(tool));"} tool="js-formatter" transform={formatJavascript} outputLabel={locale === "zh" ? "格式化后的 JavaScript" : "Formatted JavaScript"} locale={locale} />;
 }
 
-export function UrlParser() {
-  return <GenericTextTransformTool label="URL input" sample="https://madabase.com/en/tools/json-formatter?ref=seo#faq" tool="url-parser" transform={parseUrl} outputLabel="Parsed URL" />;
+export function UrlParser({ locale = "en" }: { locale?: Locale }) {
+  return <GenericTextTransformTool label={locale === "zh" ? "URL 输入" : "URL input"} sample="https://madabase.com/en/tools/json-formatter?ref=seo#faq" tool="url-parser" transform={parseUrlParts} outputLabel={locale === "zh" ? "URL 解析结果" : "Parsed URL"} locale={locale} />;
 }
 
 export function UserAgentParser({ locale = "en" }: { locale?: Locale }) {
@@ -982,17 +1296,12 @@ export function UserAgentParser({ locale = "en" }: { locale?: Locale }) {
   );
 }
 
-type LocalizedText = string | Record<Locale, string>;
 type GenericToolConfig = {
   label: LocalizedText;
   sample: LocalizedText;
   outputLabel: LocalizedText;
   transform: (value: string, locale: Locale) => string | Promise<string>;
 };
-
-function localizeText(value: LocalizedText, locale: Locale) {
-  return typeof value === "string" ? value : value[locale];
-}
 
 const genericToolConfigs: Record<string, GenericToolConfig> = {
   "line-sorter": {
@@ -1053,36 +1362,25 @@ const genericToolConfigs: Record<string, GenericToolConfig> = {
     label: "CSV",
     sample: "name,role\nAda,Engineer\nLin,Designer",
     outputLabel: "JSON",
-    transform: (value) => {
-      const [headerLine = "", ...rows] = normalizeLines(value).split("\n");
-      const headers = headerLine.split(",").map((item) => item.trim());
-      return JSON.stringify(rows.map((row) => Object.fromEntries(row.split(",").map((cell, index) => [headers[index] ?? `field${index + 1}`, cell.trim()]))), null, 2);
-    },
+    transform: csvToJson,
   },
   "json-to-csv": {
     label: "JSON array",
     sample: '[{"name":"Ada","role":"Engineer"},{"name":"Lin","role":"Designer"}]',
     outputLabel: "CSV",
-    transform: (value) => {
-      const rows = JSON.parse(value) as Array<Record<string, unknown>>;
-      const headers = Array.from(new Set(rows.flatMap((row) => Object.keys(row))));
-      return [headers.join(","), ...rows.map((row) => headers.map((header) => String(row[header] ?? "")).join(","))].join("\n");
-    },
+    transform: jsonToCsv,
   },
   "json-to-yaml": {
     label: "JSON",
     sample: '{"name":"Madabase","tools":60}',
     outputLabel: "YAML-like output",
-    transform: (value) => Object.entries(JSON.parse(value) as Record<string, unknown>).map(([key, item]) => `${key}: ${String(item)}`).join("\n"),
+    transform: jsonToYaml,
   },
   "yaml-to-json": {
     label: "Simple YAML",
     sample: "name: Madabase\ntools: 60",
     outputLabel: "JSON",
-    transform: (value) => JSON.stringify(Object.fromEntries(normalizeLines(value).split("\n").map((line) => {
-      const [key = "", ...rest] = line.split(":");
-      return [key.trim(), rest.join(":").trim()];
-    })), null, 2),
+    transform: yamlToJson,
   },
   "env-to-json": {
     label: ".env content",
@@ -1103,10 +1401,7 @@ const genericToolConfigs: Record<string, GenericToolConfig> = {
     label: "Simple TOML",
     sample: 'name = "Madabase"\ntools = 60',
     outputLabel: "JSON",
-    transform: (value) => JSON.stringify(Object.fromEntries(normalizeLines(value).split("\n").map((line) => {
-      const [key = "", ...rest] = line.split("=");
-      return [key.trim(), rest.join("=").trim().replace(/^"|"$/g, "")];
-    })), null, 2),
+    transform: tomlToJson,
   },
   "query-string-parser": {
     label: "Query string",
@@ -1253,6 +1548,11 @@ const fallbackGenericTool = {
 };
 
 export function GenericTextTool({ toolSlug = "generic-text-tool", locale = "en" }: { toolSlug?: string; locale?: Locale }) {
+  const utility = utilitySlugMap[toolSlug];
+  if (utility) {
+    return <UtilityToolbox group={utility.group} initialOperation={utility.operation} tool={toolSlug} locale={locale} />;
+  }
+
   const config = genericToolConfigs[toolSlug] ?? fallbackGenericTool;
   return (
     <GenericTextTransformTool

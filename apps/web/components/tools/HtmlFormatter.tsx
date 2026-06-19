@@ -1,59 +1,48 @@
 "use client";
 import { useState } from "react";
+import type { Locale } from "@/lib/i18n";
+import { formatHtml } from "@/lib/tool-transforms";
+import { toolCopy } from "@/lib/tool-ui-copy";
 import { fireAndForgetToolExecution } from "@/lib/tool-usage-client";
 import { CopyButton, ResetButton, StatusMessage, ToolButton, ToolPanel, ToolTextarea } from "./ToolPrimitives";
 
 const sample = '<main><h1>Madabase</h1><p>Online developer tools.</p><ul><li>JSON</li><li>JWT</li></ul></main>';
-const inlineTags = new Set(["a", "abbr", "b", "br", "code", "em", "i", "img", "span", "strong"]);
-const voidTags = new Set(["area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"]);
+const sampleOutput = `<main>
+  <h1>Madabase</h1>
+  <p>Online developer tools.</p>
+  <ul>
+    <li>JSON</li>
+    <li>JWT</li>
+  </ul>
+</main>`;
 
-function formatHtml(html: string) {
-  const tokens = html.replace(/>\s+</g, "><").split(/(<[^>]+>)/).filter((token) => token.trim());
-  let indent = 0;
-  const lines: string[] = [];
-
-  tokens.forEach((rawToken) => {
-    const token = rawToken.trim();
-    const tagMatch = token.match(/^<\/?([a-zA-Z0-9-]+)/);
-    const tag = tagMatch?.[1]?.toLowerCase();
-    const isClosing = token.startsWith("</");
-    const isOpening = token.startsWith("<") && !isClosing && !token.endsWith("/>") && tag && !voidTags.has(tag);
-    const isInline = tag ? inlineTags.has(tag) : false;
-
-    if (isClosing && !isInline) indent = Math.max(0, indent - 1);
-    lines.push(`${"  ".repeat(indent)}${token}`);
-    if (isOpening && !isInline) indent += 1;
-  });
-
-  return lines.join("\n");
-}
-
-export function HtmlFormatter() {
+export function HtmlFormatter({ locale = "en" }: { locale?: Locale }) {
+  const copy = toolCopy(locale);
   const [input, setInput] = useState(sample);
-  const [output, setOutput] = useState(formatHtml(sample));
+  const [output, setOutput] = useState(sampleOutput);
   const [message, setMessage] = useState("");
 
-  function format() {
+  async function format() {
     try {
-      setOutput(formatHtml(input));
+      setOutput(await formatHtml(input));
       setMessage("");
       fireAndForgetToolExecution("html-formatter");
     } catch (error) {
-      setMessage(error instanceof Error ? error.message : "Unable to format HTML.");
+      setMessage(error instanceof Error ? error.message : locale === "zh" ? "无法格式化 HTML。" : "Unable to format HTML.");
     }
   }
 
   return (
     <ToolPanel>
       <div className="space-y-4">
-        <ToolTextarea label="HTML input" value={input} onChange={setInput} rows={8} />
+        <ToolTextarea label={locale === "zh" ? "HTML 输入" : "HTML input"} value={input} onChange={setInput} rows={8} />
         <div className="flex flex-wrap gap-2">
-          <ToolButton onClick={format}>Format HTML</ToolButton>
-          <CopyButton value={output} />
-          <ResetButton onClick={() => { setInput(sample); setOutput(formatHtml(sample)); setMessage(""); }} />
+          <ToolButton onClick={format}>{locale === "zh" ? "格式化 HTML" : "Format HTML"}</ToolButton>
+          <CopyButton value={output} label={copy.copy} copiedLabel={copy.copied} />
+          <ResetButton label={copy.reset} onClick={() => { setInput(sample); setOutput(sampleOutput); setMessage(""); }} />
         </div>
         <StatusMessage message={message} tone="error" />
-        <ToolTextarea label="Formatted HTML" value={output} readOnly rows={10} />
+        <ToolTextarea label={locale === "zh" ? "格式化后的 HTML" : "Formatted HTML"} value={output} readOnly rows={10} />
       </div>
     </ToolPanel>
   );

@@ -14,6 +14,7 @@ import { ToolUsageTracker } from "@/components/ToolUsageTracker";
 import { JsonLd, buildBreadcrumbSchema, buildFaqSchema, buildSoftwareApplicationSchema } from "@/components/JsonLd";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { loadToolContent } from "@/lib/tool-content";
+import { getToolRetentionHint } from "@/lib/tool-retention";
 import { getPopularTests } from "@/lib/test-registry";
 
 export function generateStaticParams() {
@@ -72,6 +73,7 @@ export default async function ToolPage({ params }: { params: Promise<{ locale: s
   });
 
   const faq = content.faq[locale];
+  const retentionHint = getToolRetentionHint(slug, locale);
 
   return (
     <ToolLayout locale={locale} pathname={`/tools/${slug}`} tool={slug}>
@@ -108,6 +110,21 @@ export default async function ToolPage({ params }: { params: Promise<{ locale: s
         <section className="bg-[var(--surface-muted)] p-3 sm:p-5">
           <ToolUsageTracker toolSlug={slug} />
           <ToolRenderer component={registryEntry.component} toolSlug={slug} locale={locale} />
+        </section>
+
+        <section className="border-t border-[var(--border)] bg-white p-5 sm:p-7">
+          <div className="grid gap-4 md:grid-cols-3">
+            {[
+              { title: locale === "en" ? "Real Example" : "真实示例", body: retentionHint.example },
+              { title: locale === "en" ? "Error Check" : "错误检查", body: retentionHint.error },
+              { title: locale === "en" ? "Workflow" : "工作流", body: retentionHint.workflow },
+            ].map((item) => (
+              <div key={item.title} className="rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-4">
+                <p className="code-font text-xs font-semibold uppercase tracking-[0.16em] text-[var(--text-soft)]">{item.title}</p>
+                <p className="mt-2 text-sm leading-6 text-[var(--text-muted)]">{item.body}</p>
+              </div>
+            ))}
+          </div>
         </section>
 
         <section className="border-t border-[var(--border)] p-5 sm:p-7">

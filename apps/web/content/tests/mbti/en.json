@@ -3,8 +3,8 @@
   "description": "Answer 60 questions to discover your MBTI-style personality type.",
   "instructions": [
     "Choose the option that feels most natural most of the time.",
-    "Do not overthink edge cases; your first instinct is usually useful.",
-    "There are no good or bad types. The result is a reflection tool, not a diagnosis."
+    "Answer from repeated patterns in daily life, not from one unusually stressful week.",
+    "There are no good or bad types. This is an MBTI-style reflection tool, not an official assessment, diagnosis, or hiring instrument."
   ],
   "questions": [
     { "id": "q1", "question": "After a demanding week, what restores you more?", "options": [{ "id": "a", "text": "Quiet time with your own thoughts", "score": { "I": 1 } }, { "id": "b", "text": "Time with people who energize you", "score": { "E": 1 } }] },

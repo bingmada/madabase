@@ -2,7 +2,53 @@
 
 import { Clipboard, RotateCcw } from "lucide-react";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+
+export type ToolHistoryItem = {
+  input: string;
+  output: string;
+  createdAt: string;
+};
+
+export function useToolHistory(storageKey: string, limit = 5) {
+  const [items, setItems] = useState<ToolHistoryItem[]>([]);
+
+  useEffect(() => {
+    try {
+      const parsed = JSON.parse(window.localStorage.getItem(storageKey) ?? "[]") as ToolHistoryItem[];
+      setItems(Array.isArray(parsed) ? parsed.slice(0, limit) : []);
+    } catch {
+      setItems([]);
+    }
+  }, [limit, storageKey]);
+
+  function remember(input: string, output: string) {
+    if (!input.trim() && !output.trim()) return;
+    setItems((current) => {
+      const next = [{ input, output, createdAt: new Date().toISOString() }, ...current.filter((item) => item.input !== input || item.output !== output)].slice(0, limit);
+      window.localStorage.setItem(storageKey, JSON.stringify(next));
+      return next;
+    });
+  }
+
+  function clear() {
+    window.localStorage.removeItem(storageKey);
+    setItems([]);
+  }
+
+  return { items, remember, clear };
+}
+
+export function downloadText(filename: string, value: string) {
+  if (!value) return;
+  const blob = new Blob([value], { type: "text/plain;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = filename;
+  link.click();
+  URL.revokeObjectURL(url);
+}
 
 export function ToolPanel({ children, label = "local browser tool" }: { children: React.ReactNode; label?: string }) {
   const pathname = usePathname();
@@ -156,5 +202,42 @@ export function ResetButton({ onClick, label }: { onClick: () => void; label?: s
       <RotateCcw className="h-4 w-4" aria-hidden="true" />
       {displayLabel}
     </button>
+  );
+}
+
+export function ToolHistory({
+  items,
+  onUse,
+  onClear,
+  locale = "en",
+}: {
+  items: ToolHistoryItem[];
+  onUse: (item: ToolHistoryItem) => void;
+  onClear: () => void;
+  locale?: "en" | "zh";
+}) {
+  if (items.length === 0) return null;
+  return (
+    <div className="rounded-md border border-[var(--border)] bg-white p-3">
+      <div className="flex items-center justify-between gap-3">
+        <p className="code-font text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-soft)]">{locale === "zh" ? "历史记录" : "History"}</p>
+        <button type="button" onClick={onClear} className="text-xs font-semibold text-[var(--text-muted)] transition hover:text-[var(--brand)]">
+          {locale === "zh" ? "清空" : "Clear"}
+        </button>
+      </div>
+      <div className="mt-2 flex flex-wrap gap-2">
+        {items.map((item) => (
+          <button
+            key={`${item.createdAt}-${item.input.slice(0, 24)}`}
+            type="button"
+            onClick={() => onUse(item)}
+            className="max-w-full truncate rounded-md border border-[var(--border)] bg-[var(--surface-muted)] px-2.5 py-1.5 text-xs font-semibold text-[var(--text)] transition hover:border-[var(--brand)] hover:bg-[var(--brand-soft)]"
+            title={item.input}
+          >
+            {item.input.trim().slice(0, 42) || (locale === "zh" ? "空输入" : "Empty input")}
+          </button>
+        ))}
+      </div>
+    </div>
   );
 }

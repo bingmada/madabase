@@ -3,8 +3,8 @@
   "description": "Explore your big five personality pattern with practical, scenario-based questions.",
   "instructions": [
     "Answer from recent real behavior, not an ideal version of yourself.",
-    "If a statement reminds you of a concrete situation, it is usually more useful.",
-    "Use the result for reflection and communication, not as a diagnosis."
+    "Prefer evidence from the last three months: work habits, relationships, conflict, and recovery.",
+    "Use the result for reflection and communication. It is not a clinical diagnosis, hiring score, or fixed identity."
   ],
   "scale": [
     {
@@ -36,32 +36,32 @@
   "scaleQuestions": [
     {
       "id": "openness_1",
-      "question": "In recent real situations, I can see a clear Openness pattern in how I choose and act.",
+      "question": "I actively seek new ideas, formats, or perspectives even when the familiar option would be easier.",
       "scoreKey": "OPENNESS"
     },
     {
       "id": "openness_2",
-      "question": "When pressure rises, I often rely on a Openness strategy instead of switching styles.",
+      "question": "I enjoy connecting unrelated topics and imagining what else a situation could become.",
       "scoreKey": "OPENNESS"
     },
     {
       "id": "openness_3",
-      "question": "People who work with me would probably notice my Openness tendency.",
+      "question": "When a plan changes, I can usually stay curious long enough to explore the new possibility.",
       "scoreKey": "OPENNESS"
     },
     {
       "id": "openness_4",
-      "question": "If an environment blocks Openness for too long, my motivation drops.",
+      "question": "Repetitive work drains me faster when there is no room for experimentation or interpretation.",
       "scoreKey": "OPENNESS"
     },
     {
       "id": "openness_5",
-      "question": "During collaboration, I often bring Openness into the way I contribute.",
+      "question": "In collaboration, I often contribute by reframing the problem or suggesting a different angle.",
       "scoreKey": "OPENNESS"
     },
     {
       "id": "openness_6",
-      "question": "Looking back over the last month, Openness describes a repeated behavior pattern for me.",
+      "question": "I make time for art, learning, exploration, or reflection even when no one requires it.",
       "scoreKey": "OPENNESS"
     },
     {

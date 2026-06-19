@@ -4,7 +4,7 @@
   "instructions": [
     "Answer based on the last two to four weeks.",
     "Choose frequency, not what you think should be true.",
-    "If your result feels serious or you feel unsafe, seek qualified support."
+    "This is not a medical diagnosis. If the result feels serious, your functioning is impaired, or you feel unsafe, seek qualified professional or emergency support."
   ],
   "reportLabels": {
     "strengths": "Current protective factors",
@@ -59,4 +59,3 @@
     "SEVERE": { "title": "Severe Burnout Risk", "summary": "Your answers suggest intense strain and low recovery. Consider seeking qualified help and immediate practical support.", "traits": ["Exhausted", "Low recovery", "Needs support"], "strengths": ["This result can justify asking for help", "Immediate changes may reduce harm", "You do not need to solve it alone"], "weaknesses": ["Functioning may be sustained by adrenaline", "Rest may no longer feel restorative", "Health and relationships may be affected"], "careers": ["Reduce load urgently", "Document concrete pressure points", "Discuss leave, coverage, or professional support"], "relationships": ["Tell a trusted person what is happening today."], "growthPlan": ["Contact qualified support if possible", "Make a 24-hour safety and recovery plan", "Remove one major demand immediately"] }
   }
 }
-

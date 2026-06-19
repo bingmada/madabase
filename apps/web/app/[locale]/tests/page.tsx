@@ -47,7 +47,7 @@ export default async function TestsPage({ params }: { params: Promise<{ locale: 
     en: {
       eyebrow: "Test platform",
       title: "Interactive tests for personality, career, and self-discovery.",
-      description: "Start with a fast MBTI-style assessment, then unlock deeper reports with credits as the platform grows.",
+      description: "Explore personality, career, relationship, and resilience tests. Get a quick result first, then use credits to unlock deeper full reports when you want more detail.",
       allTests: "All tests",
       questions: "questions",
       minutes: "min",
@@ -56,7 +56,7 @@ export default async function TestsPage({ params }: { params: Promise<{ locale: 
     zh: {
       eyebrow: "测试平台",
       title: "面向人格、职业与自我探索的互动测试。",
-      description: "先从 MBTI 风格测试开始，后续可用积分解锁更深入的完整报告。",
+      description: "这里包含人格、职业、关系、压力与复原力等多类测试。你可以先获得快速结果，想了解更深入的分析时，再使用积分解锁完整报告。",
       allTests: "全部测试",
       questions: "题",
       minutes: "分钟",

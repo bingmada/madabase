@@ -1,5 +1,7 @@
 "use client";
 import { useMemo, useState } from "react";
+import type { Locale } from "@/lib/i18n";
+import { toolCopy } from "@/lib/tool-ui-copy";
 import { fireAndForgetToolExecution } from "@/lib/tool-usage-client";
 import { CopyButton, ResetButton, StatusMessage, ToolButton, ToolPanel, ToolTextarea } from "./ToolPrimitives";
 
@@ -58,7 +60,8 @@ function generateTypes(input: string, rootName: string) {
   return declarations.reverse().join("\n\n");
 }
 
-export function JsonToTypescript() {
+export function JsonToTypescript({ locale = "en" }: { locale?: Locale }) {
+  const copy = toolCopy(locale);
   const [input, setInput] = useState(sample);
   const [rootName, setRootName] = useState("Root");
   const [submitted, setSubmitted] = useState(false);
@@ -67,29 +70,29 @@ export function JsonToTypescript() {
     try {
       return { output: generateTypes(input, rootName), error: "" };
     } catch (error) {
-      return { output: "", error: error instanceof Error ? error.message : "Invalid JSON." };
+      return { output: "", error: error instanceof Error ? error.message : locale === "zh" ? "JSON 无效。" : "Invalid JSON." };
     }
-  }, [input, rootName]);
+  }, [input, locale, rootName]);
 
   return (
     <ToolPanel>
       <div className="space-y-4">
         <label className="block">
-          <span className="code-font text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-soft)]">Root interface name</span>
+          <span className="code-font text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-soft)]">{locale === "zh" ? "根接口名称" : "Root interface name"}</span>
           <input
             value={rootName}
             onChange={(event) => setRootName(event.target.value)}
             className="code-font mt-2 h-10 w-full rounded-md border border-[var(--border)] bg-white px-3 text-sm text-[var(--text)] outline-none focus:border-[var(--brand)] focus:ring-2 focus:ring-[rgba(15,118,110,0.13)]"
           />
         </label>
-        <ToolTextarea label="JSON sample" value={input} onChange={(value) => { setInput(value); setSubmitted(false); }} rows={10} />
+        <ToolTextarea label={locale === "zh" ? "JSON 示例" : "JSON sample"} value={input} onChange={(value) => { setInput(value); setSubmitted(false); }} rows={10} />
         <div className="flex flex-wrap gap-2">
-          <ToolButton onClick={() => { setSubmitted(true); fireAndForgetToolExecution("json-to-typescript"); }}>Generate Interface</ToolButton>
-          <CopyButton value={result.output} />
-          <ResetButton onClick={() => { setInput(sample); setRootName("Root"); setSubmitted(false); }} />
+          <ToolButton onClick={() => { setSubmitted(true); fireAndForgetToolExecution("json-to-typescript"); }}>{locale === "zh" ? "生成接口" : "Generate Interface"}</ToolButton>
+          <CopyButton value={result.output} label={copy.copy} copiedLabel={copy.copied} />
+          <ResetButton label={copy.reset} onClick={() => { setInput(sample); setRootName("Root"); setSubmitted(false); }} />
         </div>
         <StatusMessage message={submitted && result.error ? result.error : ""} tone="error" />
-        <ToolTextarea label="TypeScript output" value={result.output} readOnly rows={12} />
+        <ToolTextarea label={locale === "zh" ? "TypeScript 输出" : "TypeScript output"} value={result.output} readOnly rows={12} />
       </div>
     </ToolPanel>
   );

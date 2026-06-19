@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import type { Locale } from "@/lib/i18n";
+import { decodeUrlComponent, encodeUrlComponent } from "@/lib/tool-transforms";
 import { fireAndForgetToolExecution } from "@/lib/tool-usage-client";
 import { CopyButton, ResetButton, StatusMessage, ToolButton, ToolPanel, ToolTextarea } from "./ToolPrimitives";
 
@@ -20,7 +21,7 @@ export function UrlEncoder({ locale = "en" }: { locale?: Locale }) {
 
   function run(mode: "encode" | "decode") {
     try {
-      setOutput(mode === "encode" ? encodeURIComponent(input) : decodeURIComponent(input));
+      setOutput(mode === "encode" ? encodeUrlComponent(input) : decodeUrlComponent(input));
       setMessage("");
       fireAndForgetToolExecution("url-encoder");
     } catch (error) {
@@ -36,7 +37,7 @@ export function UrlEncoder({ locale = "en" }: { locale?: Locale }) {
           <ToolButton onClick={() => run("encode")}>{copy.encode}</ToolButton>
           <ToolButton onClick={() => run("decode")} variant="secondary">{copy.decode}</ToolButton>
           <CopyButton value={output} />
-          <ResetButton onClick={() => { setInput(sample); setOutput(encodeURIComponent(sample)); setMessage(""); }} />
+          <ResetButton onClick={() => { setInput(sample); setOutput(encodeUrlComponent(sample)); setMessage(""); }} />
         </div>
         <StatusMessage message={message} tone="error" />
         <ToolTextarea label={copy.output} value={output} readOnly rows={6} />

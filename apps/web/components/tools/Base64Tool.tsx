@@ -1,25 +1,11 @@
 "use client";
 import { useState } from "react";
 import type { Locale } from "@/lib/i18n";
+import { decodeBase64, encodeBase64 } from "@/lib/tool-transforms";
 import { fireAndForgetToolExecution } from "@/lib/tool-usage-client";
 import { CopyButton, ResetButton, StatusMessage, ToolButton, ToolPanel, ToolTextarea } from "./ToolPrimitives";
 
 const sample = "Hello Madabase";
-
-function encodeBase64(value: string) {
-  const bytes = new TextEncoder().encode(value);
-  let binary = "";
-  bytes.forEach((byte) => {
-    binary += String.fromCharCode(byte);
-  });
-  return btoa(binary);
-}
-
-function decodeBase64(value: string) {
-  const binary = atob(value.trim());
-  const bytes = Uint8Array.from(binary, (char) => char.charCodeAt(0));
-  return new TextDecoder().decode(bytes);
-}
 
 export function Base64Tool({ locale = "en" }: { locale?: Locale }) {
   const [input, setInput] = useState(sample);

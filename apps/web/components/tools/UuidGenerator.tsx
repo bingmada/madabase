@@ -1,5 +1,7 @@
 "use client";
 import { useState } from "react";
+import type { Locale } from "@/lib/i18n";
+import { toolCopy } from "@/lib/tool-ui-copy";
 import { fireAndForgetToolExecution } from "@/lib/tool-usage-client";
 import { CopyButton, ToolButton, ToolPanel } from "./ToolPrimitives";
 
@@ -10,7 +12,8 @@ function createUuid() {
   );
 }
 
-export function UuidGenerator() {
+export function UuidGenerator({ locale = "en" }: { locale?: Locale }) {
+  const copy = toolCopy(locale);
   const [count, setCount] = useState(5);
   const [uuids, setUuids] = useState(() => Array.from({ length: 5 }, createUuid));
 
@@ -23,7 +26,7 @@ export function UuidGenerator() {
     <ToolPanel>
       <div className="space-y-4">
         <label className="block">
-          <span className="code-font text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-soft)]">How many UUIDs?</span>
+          <span className="code-font text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-soft)]">{locale === "zh" ? "生成多少个 UUID？" : "How many UUIDs?"}</span>
           <input
             type="number"
             min={1}
@@ -34,14 +37,14 @@ export function UuidGenerator() {
           />
         </label>
         <div className="flex flex-wrap gap-2">
-          <ToolButton onClick={generate}>Generate UUIDs</ToolButton>
-          <CopyButton value={uuids.join("\n")} label="Copy all" />
+          <ToolButton onClick={generate}>{locale === "zh" ? "生成 UUID" : "Generate UUIDs"}</ToolButton>
+          <CopyButton value={uuids.join("\n")} label={locale === "zh" ? "复制全部" : "Copy all"} copiedLabel={copy.copied} />
         </div>
         <div className="rounded-md border border-[var(--border)] bg-white">
           {uuids.map((uuid) => (
             <div key={uuid} className="flex items-center justify-between gap-3 border-b border-[var(--border)] px-3 py-2 last:border-b-0">
               <code className="code-font break-all text-sm text-[var(--text)]">{uuid}</code>
-              <CopyButton value={uuid} label="Copy" />
+              <CopyButton value={uuid} label={copy.copy} copiedLabel={copy.copied} />
             </div>
           ))}
         </div>

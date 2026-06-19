@@ -1,5 +1,6 @@
 "use client";
 import { useMemo, useState } from "react";
+import type { Locale } from "@/lib/i18n";
 import { fireAndForgetToolExecution } from "@/lib/tool-usage-client";
 import { ToolButton, ToolPanel } from "./ToolPrimitives";
 
@@ -9,7 +10,7 @@ function normalizeTimestamp(value: string) {
   return numeric < 10_000_000_000 ? numeric * 1000 : numeric;
 }
 
-export function TimestampConverter() {
+export function TimestampConverter({ locale = "en" }: { locale?: Locale }) {
   const [timestamp, setTimestamp] = useState(() => Math.floor(Date.now() / 1000).toString());
 
   const result = useMemo(() => {
@@ -30,7 +31,7 @@ export function TimestampConverter() {
     <ToolPanel>
       <div className="space-y-4">
         <label className="block">
-          <span className="code-font text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-soft)]">Unix timestamp</span>
+          <span className="code-font text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-soft)]">{locale === "zh" ? "Unix 时间戳" : "Unix timestamp"}</span>
           <input
             value={timestamp}
             onChange={(event) => setTimestamp(event.target.value)}
@@ -38,20 +39,20 @@ export function TimestampConverter() {
           />
         </label>
         <div className="flex flex-wrap gap-2">
-          <ToolButton onClick={() => { setTimestamp(Math.floor(Date.now() / 1000).toString()); fireAndForgetToolExecution("timestamp-converter"); }}>Use current seconds</ToolButton>
-          <ToolButton onClick={() => { setTimestamp(Date.now().toString()); fireAndForgetToolExecution("timestamp-converter"); }} variant="secondary">Use current milliseconds</ToolButton>
+          <ToolButton onClick={() => { setTimestamp(Math.floor(Date.now() / 1000).toString()); fireAndForgetToolExecution("timestamp-converter"); }}>{locale === "zh" ? "使用当前秒级时间戳" : "Use current seconds"}</ToolButton>
+          <ToolButton onClick={() => { setTimestamp(Date.now().toString()); fireAndForgetToolExecution("timestamp-converter"); }} variant="secondary">{locale === "zh" ? "使用当前毫秒时间戳" : "Use current milliseconds"}</ToolButton>
         </div>
         {result ? (
           <dl className="grid gap-3 rounded-md border border-[var(--border)] bg-white p-4 text-sm sm:grid-cols-2">
             {Object.entries(result).map(([key, value]) => (
               <div key={key}>
-                <dt className="font-semibold capitalize text-[var(--text-soft)]">{key}</dt>
+                <dt className="font-semibold capitalize text-[var(--text-soft)]">{locale === "zh" ? ({ local: "本地时间", utc: "UTC 时间", seconds: "秒级时间戳", milliseconds: "毫秒时间戳", iso: "ISO 时间" }[key] ?? key) : key}</dt>
                 <dd className="code-font mt-1 break-all text-[var(--text)]">{value}</dd>
               </div>
             ))}
           </dl>
         ) : (
-          <div className="rounded-lg border border-rose-200 bg-rose-50 px-3 py-2 text-sm text-rose-700">Enter a valid seconds or milliseconds timestamp.</div>
+          <div className="rounded-lg border border-rose-200 bg-rose-50 px-3 py-2 text-sm text-rose-700">{locale === "zh" ? "请输入有效的秒级或毫秒级时间戳。" : "Enter a valid seconds or milliseconds timestamp."}</div>
         )}
       </div>
     </ToolPanel>
