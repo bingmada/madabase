@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --bg: #f8faf8;
+  --surface: #ffffff;
+  --surface-muted: #f1f5f3;
+  --text: #17201b;
+  --muted: #607067;
+  --soft: #8b9a91;
+  --border: #dce5df;
+  --brand: #126a5f;
+  --brand-strong: #0d4f47;
+  --brand-soft: #dff5ef;
+  --accent: #a8551a;
+  --accent-soft: #fff0df;
+  --radius: 8px;
+  --shadow: 0 16px 45px rgba(20, 30, 25, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Aptos", "Segoe UI Variable", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+::selection {
+  background: var(--brand-soft);
+  color: var(--brand-strong);
+}
+
+@layer components {
+  .shell {
+    @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .section {
+    @apply py-10 sm:py-14;
+  }
+
+  .panel {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+  }
+
+  .button-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-md px-4 py-2.5 text-sm font-semibold text-white transition;
+    background: var(--brand);
+  }
+
+  .button-primary:hover {
+    background: var(--brand-strong);
+  }
+
+  .button-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-md border px-4 py-2.5 text-sm font-semibold transition;
+    border-color: var(--border);
+    background: var(--surface);
+    color: var(--text);
+  }
+
+  .button-secondary:hover {
+    background: var(--surface-muted);
+  }
+
+  .eyebrow {
+    @apply text-xs font-bold uppercase;
+    color: var(--brand-strong);
+    letter-spacing: 0.08em;
+  }
+
+  .prose-lite h2 {
+    @apply mt-9 text-2xl font-bold;
+  }
+
+  .prose-lite h3 {
+    @apply mt-7 text-xl font-bold;
+  }
+
+  .prose-lite p {
+    @apply mt-4 leading-8;
+    color: var(--muted);
+  }
+
+  .prose-lite ul {
+    @apply mt-4 space-y-2 pl-5;
+    color: var(--muted);
+  }
+}

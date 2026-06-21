@@ -1,0 +1,38 @@
+{
+  "name": "affiliate",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "next dev",
+    "dev:pet": "NEXT_PUBLIC_AFFILIATE_SITE=pet next dev",
+    "dev:homeoffice": "NEXT_PUBLIC_AFFILIATE_SITE=homeoffice next dev",
+    "dev:baby": "NEXT_PUBLIC_AFFILIATE_SITE=baby next dev",
+    "build": "next build",
+    "build:pet": "NEXT_PUBLIC_AFFILIATE_SITE=pet next build",
+    "build:homeoffice": "NEXT_PUBLIC_AFFILIATE_SITE=homeoffice next build",
+    "build:baby": "NEXT_PUBLIC_AFFILIATE_SITE=baby next build",
+    "start": "next start",
+    "start:pet": "NEXT_PUBLIC_AFFILIATE_SITE=pet next start",
+    "start:homeoffice": "NEXT_PUBLIC_AFFILIATE_SITE=homeoffice next start",
+    "start:baby": "NEXT_PUBLIC_AFFILIATE_SITE=baby next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.536.0",
+    "next": "15.3.3",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "@types/react": "^19.1.3",
+    "@types/react-dom": "^19.1.3",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.25.0",
+    "eslint-config-next": "15.3.3",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.8.3"
+  }
+}
