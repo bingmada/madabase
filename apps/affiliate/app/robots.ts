@@ -1,8 +1,8 @@
 import type { MetadataRoute } from "next";
-import { getSiteByKey } from "@/lib/sites";
+import { getCurrentSite } from "@/lib/sites";
 
-export default function robots(): MetadataRoute.Robots {
-  const site = getSiteByKey(process.env.NEXT_PUBLIC_AFFILIATE_SITE);
+export default async function robots(): Promise<MetadataRoute.Robots> {
+  const site = await getCurrentSite();
 
   return {
     rules: {

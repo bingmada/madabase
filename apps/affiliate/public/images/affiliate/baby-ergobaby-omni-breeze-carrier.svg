@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Ergobaby Omni Breeze Baby Carrier">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2eadf"/>
+      <stop offset="0.58" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e2f4f2"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#846036"/>
+      <stop offset="1" stop-color="#2f6f73"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <circle cx="980" cy="130" r="210" fill="#e2f4f2" opacity="0.9"/>
+  <circle cx="190" cy="650" r="260" fill="#f2eadf" opacity="0.95"/>
+  <rect x="120" y="150" width="960" height="500" rx="34" fill="#fff" opacity="0.82"/>
+  <rect x="170" y="205" width="250" height="250" rx="42" fill="url(#mark)" opacity="0.95"/>
+  <path d="M235 360c45-85 100-85 145 0" fill="none" stroke="#fff" stroke-width="24" stroke-linecap="round"/>
+  <circle cx="255" cy="292" r="22" fill="#fff" opacity="0.92"/>
+  <circle cx="338" cy="292" r="22" fill="#fff" opacity="0.92"/>
+  <text x="470" y="285" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#2f6f73">travel</text>
+  <foreignObject x="470" y="320" width="520" height="180">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Arial, Helvetica, sans-serif; font-size: 52px; line-height: 1.08; font-weight: 800; color: #846036; letter-spacing: 0;">Ergobaby Omni Breeze Baby Carrier</div>
+  </foreignObject>
+  <rect x="470" y="545" width="290" height="18" rx="9" fill="#846036" opacity="0.18"/>
+  <rect x="470" y="582" width="430" height="18" rx="9" fill="#2f6f73" opacity="0.14"/>
+</svg>

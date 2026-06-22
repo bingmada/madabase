@@ -23,13 +23,13 @@ export type SiteConfig = {
 export const sites: Record<SiteKey, SiteConfig> = {
   pet: {
     key: "pet",
-    name: "PawSelect Lab",
-    tagline: "Evidence-led picks for calmer pet care.",
-    description: "Pet product reviews, comparison guides, and practical calculators for feeders, cameras, litter, beds, and air quality.",
+    name: "PawSelect Picks",
+    tagline: "Calmer pet-care choices for busy homes.",
+    description: "Pet buying notes, comparison guides, and practical calculators for feeders, cameras, litter, beds, pet hair, and air quality.",
     domain: process.env.NEXT_PUBLIC_PET_SITE_URL ?? "https://pets.example.com",
     hostHints: ["pet", "paw"],
-    disclosure: "As an Amazon Associate I earn from qualifying purchases. PawSelect Lab may also earn commissions from other retailer links. Recommendations are based on fit, evidence, and trade-offs, not commission size.",
-    heroImage: "https://images.unsplash.com/photo-1560807707-8cc77767d783?auto=format&fit=crop&w=1600&q=80",
+    disclosure: "As an Amazon Associate I earn from qualifying purchases. PawSelect Picks may also earn commissions from other retailer links. Recommendations are based on routine fit, specifications, cleaning effort, and trade-offs.",
+    heroImage: "/images/affiliate/hero-pet.jpg",
     theme: {
       brand: "#126a5f",
       brandStrong: "#0d4f47",
@@ -51,7 +51,7 @@ export const sites: Record<SiteKey, SiteConfig> = {
     domain: process.env.NEXT_PUBLIC_HOMEOFFICE_SITE_URL ?? "https://homeoffice.example.com",
     hostHints: ["homeoffice", "desk", "office"],
     disclosure: "As an Amazon Associate I earn from qualifying purchases. Deskwise Picks may also earn commissions from other retailer links. Recommendations are based on use-case fit, specifications, ergonomics, and long-term value.",
-    heroImage: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=80",
+    heroImage: "/images/affiliate/hero-homeoffice.jpg",
     theme: {
       brand: "#245b75",
       brandStrong: "#183e51",
@@ -67,13 +67,13 @@ export const sites: Record<SiteKey, SiteConfig> = {
   },
   baby: {
     key: "baby",
-    name: "NestCheck Baby",
-    tagline: "Clear baby gear guidance for tired decision-makers.",
-    description: "Baby gear reviews, safety-minded buying guides, and planning tools for monitors, strollers, carriers, bottles, and diapers.",
+    name: "NestCheck Picks",
+    tagline: "Clear baby gear choices for tired decision-makers.",
+    description: "Baby gear buying notes, safety-minded guides, and planning tools for monitors, strollers, carriers, bottles, sleep, and diapers.",
     domain: process.env.NEXT_PUBLIC_BABY_SITE_URL ?? "https://baby.example.com",
     hostHints: ["baby", "nest"],
-    disclosure: "As an Amazon Associate I earn from qualifying purchases. NestCheck Baby may also earn commissions from other retailer links. We keep safety notes, limitations, and fit guidance visible on buying pages.",
-    heroImage: "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&w=1600&q=80",
+    disclosure: "As an Amazon Associate I earn from qualifying purchases. NestCheck Picks may also earn commissions from other retailer links. We keep safety notes, limitations, and fit guidance visible on buying pages.",
+    heroImage: "/images/affiliate/hero-baby.jpg",
     theme: {
       brand: "#846036",
       brandStrong: "#5d4226",
@@ -106,7 +106,21 @@ export function getSiteFromHost(host: string | null | undefined) {
   return siteKeys.map((key) => sites[key]).find((site) => site.hostHints.some((hint) => normalized.includes(hint))) ?? sites.pet;
 }
 
+function getRequestDomain(headerList: Headers) {
+  const host = headerList.get("x-forwarded-host") ?? headerList.get("host");
+  if (!host) return null;
+
+  const forwardedProto = headerList.get("x-forwarded-proto")?.split(",")[0]?.trim();
+  const protocol = forwardedProto ?? (host.includes("localhost") || host.startsWith("127.") ? "http" : "https");
+
+  return `${protocol}://${host}`;
+}
+
 export async function getCurrentSite() {
   const headerList = await headers();
-  return getSiteFromHost(headerList.get("host"));
+  const host = headerList.get("x-forwarded-host") ?? headerList.get("host");
+  const site = getSiteFromHost(host);
+  const requestDomain = getRequestDomain(headerList);
+
+  return requestDomain ? { ...site, domain: requestDomain } : site;
 }

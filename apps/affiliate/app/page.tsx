@@ -4,6 +4,25 @@ import { Hero, ProductCard, RoundupCard, TrustBar } from "@/components/LayoutPar
 import { siteGuides, siteProducts, siteRoundups, siteTools } from "@/lib/content";
 import { organizationSchema, pageMetadata } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
+import type { SiteKey } from "@/lib/types";
+
+const homeCopy: Record<SiteKey, { eyebrow: string; heading: string; body: string }> = {
+  pet: {
+    eyebrow: "Pet buying guides",
+    heading: "Choose calmer daily-care gear for feeding, watching, cleaning, and comfort.",
+    body: "Compare automatic feeders, pet cameras, odor-control tools, beds, hair removers, and air purifiers by the problem they solve in a real home.",
+  },
+  homeoffice: {
+    eyebrow: "Work-from-home buying guides",
+    heading: "Build a cleaner desk, better calls, and a setup your body can tolerate.",
+    body: "Compare compact standing desks, ergonomic chairs, monitor arms, lighting, and cable-management upgrades by the problem they solve in a real home office.",
+  },
+  baby: {
+    eyebrow: "Baby gear buying guides",
+    heading: "Make safer, calmer choices for sleep, travel, feeding, and daily routines.",
+    body: "Compare monitors, travel strollers, sterilizers, carriers, sound machines, and feeding helpers by safety fit, cleaning effort, storage, and everyday friction.",
+  },
+};
 
 export async function generateMetadata() {
   const site = await getCurrentSite();
@@ -17,6 +36,7 @@ export default async function HomePage() {
   const linkedProducts = products.filter((product) => product.offers.length > 0);
   const guides = siteGuides(site.key);
   const tools = siteTools(site.key);
+  const copy = homeCopy[site.key];
 
   return (
     <main>
@@ -26,10 +46,10 @@ export default async function HomePage() {
       <section className="section bg-white" id="reviews">
         <div className="shell">
           <div className="max-w-2xl">
-            <p className="eyebrow">Work-from-home buying guides</p>
-            <h2 className="mt-3 text-3xl font-black">Build a cleaner desk, better calls, and a setup your body can tolerate.</h2>
+            <p className="eyebrow">{copy.eyebrow}</p>
+            <h2 className="mt-3 text-3xl font-black">{copy.heading}</h2>
             <p className="mt-4 leading-8 text-[var(--muted)]">
-              Compare compact standing desks, ergonomic chairs, monitor arms, lighting, and cable-management upgrades by the problem they solve in a real home office.
+              {copy.body}
             </p>
           </div>
           <div className="mt-8 grid gap-5 md:grid-cols-2">
