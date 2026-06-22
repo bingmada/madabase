@@ -15,7 +15,8 @@
     "start:pet": "NEXT_PUBLIC_AFFILIATE_SITE=pet next start",
     "start:homeoffice": "NEXT_PUBLIC_AFFILIATE_SITE=homeoffice next start",
     "start:baby": "NEXT_PUBLIC_AFFILIATE_SITE=baby next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "sync:amazon": "node scripts/sync-amazon-paapi.mjs"
   },
   "dependencies": {
     "clsx": "^2.1.1",

@@ -8,6 +8,11 @@ export type Score = {
 export type Product = {
   slug: string;
   site: SiteKey;
+  asin?: string;
+  amazonTitle?: string;
+  amazonImage?: string;
+  amazonDetailUrl?: string;
+  amazonFeatures?: string[];
   name: string;
   brand: string;
   category: string;

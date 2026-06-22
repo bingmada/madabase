@@ -7,12 +7,18 @@ import { findProduct } from "@/lib/content";
 import { breadcrumbSchema, pageMetadata } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 
+function siteContext(siteKey: string) {
+  if (siteKey === "pet") return "pet-care routine";
+  if (siteKey === "baby") return "baby-care routine";
+  return "home-office setup";
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const site = await getCurrentSite();
   const { slug } = await params;
   const product = findProduct(site.key, slug);
   if (!product) return {};
-  return pageMetadata(site, `/reviews/${slug}`, `${product.name} Buying Notes`, product.summary, product.image);
+  return pageMetadata(site, `/reviews/${slug}`, `${product.amazonTitle ?? product.name} Buying Notes`, product.summary, product.amazonImage ?? product.image);
 }
 
 export default async function ReviewPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -20,15 +26,20 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
   const { slug } = await params;
   const product = findProduct(site.key, slug);
   if (!product) notFound();
+  const displayName = product.amazonTitle ?? product.name;
+  const displayImage = product.amazonImage ?? product.image;
 
   const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
-    name: product.name,
+    name: displayName,
     brand: { "@type": "Brand", name: product.brand },
-    image: product.image,
+    sku: product.asin,
+    image: displayImage,
     description: product.summary,
   };
+
+  const context = siteContext(site.key);
 
   return (
     <main className="section">
@@ -38,7 +49,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
         <div className="grid gap-8 lg:grid-cols-[1fr_380px]">
           <article>
             <p className="eyebrow">{product.brand}</p>
-            <h1 className="mt-3 text-4xl font-black leading-tight">{product.name} Buying Notes</h1>
+            <h1 className="mt-3 text-4xl font-black leading-tight">{displayName} Buying Notes</h1>
             <p className="mt-5 text-lg leading-8 text-[var(--muted)]">{product.summary}</p>
             <div className="mt-6 flex flex-wrap items-center gap-3">
               <span className="inline-flex items-center rounded-md bg-[var(--accent-soft)] px-3 py-2 font-bold text-[var(--accent)]">
@@ -47,23 +58,40 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
               <span className="rounded-md bg-[var(--brand-soft)] px-3 py-2 font-semibold text-[var(--brand-strong)]">{product.bestFor}</span>
             </div>
             <div className="relative mt-8 aspect-[16/9] w-full overflow-hidden rounded-md">
-              <Image className="object-cover" src={product.image} alt={product.name} fill priority sizes="(min-width: 1024px) 720px, 100vw" />
+              <Image className="object-cover" src={displayImage} alt={displayName} fill priority sizes="(min-width: 1024px) 720px, 100vw" />
             </div>
             <div className="prose-lite mt-8">
+              <div className="not-prose rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-5">
+                <h2 className="text-xl font-bold">Quick verdict</h2>
+                <div className="mt-4 grid gap-4 sm:grid-cols-3">
+                  <div>
+                    <p className="text-xs font-bold uppercase text-[var(--muted)]">Best fit</p>
+                    <p className="mt-1 font-semibold">{product.bestFor}</p>
+                  </div>
+                  <div>
+                    <p className="text-xs font-bold uppercase text-[var(--muted)]">Main upside</p>
+                    <p className="mt-1 font-semibold">{product.pros[0]}</p>
+                  </div>
+                  <div>
+                    <p className="text-xs font-bold uppercase text-[var(--muted)]">Check first</p>
+                    <p className="mt-1 font-semibold">{product.cons[0]}</p>
+                  </div>
+                </div>
+              </div>
               <h2>Our take</h2>
               <p>
                 {product.verdict ??
-                  "This page uses an editorial fit score, not an Amazon customer rating. We score the product for the specific home-office job it is meant to solve, then separate the upside from the trade-offs so the recommendation is easier to compare."}
+                  `This pick works best when the product's strengths match your ${context}. The notes below separate the main upside from the trade-offs so it is easier to compare with nearby alternatives.`}
               </p>
               {product.whyItMatters ? (
                 <>
-                  <h2>Why it matters in a home office</h2>
+                  <h2>Why it matters</h2>
                   <p>{product.whyItMatters}</p>
                 </>
               ) : null}
               <h2>Where it wins</h2>
               <ul>
-                {product.pros.map((pro) => (
+                {(product.amazonFeatures?.length ? product.amazonFeatures.slice(0, 3) : product.pros).map((pro) => (
                   <li key={pro}>{pro}</li>
                 ))}
               </ul>
@@ -81,11 +109,11 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
               </ul>
               <h2>Who should buy it</h2>
               <p>
-                Consider {product.name} if your priority is {product.bestFor.toLowerCase()} and you want a product that fits the {product.category} part of a home-office setup without adding unnecessary complexity.
+                Consider {displayName} if your priority is {product.bestFor.toLowerCase()} and you want a product that fits your {context} without adding unnecessary complexity.
               </p>
               <h2>Who should skip it</h2>
               <p>
-                Skip it if the trade-offs above touch your main workflow. For home-office gear, fit and compatibility matter more than a high star count on a marketplace listing.
+                Skip it if the trade-offs above touch your main use case. The better buy is usually the product whose size, setup, accessories, and return path match your situation.
               </p>
               {product.alternatives?.length ? (
                 <>
@@ -100,9 +128,9 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
               <h2>Before you buy</h2>
               <ul>
                 <li>Check the exact Amazon listing, seller, return window, and current dimensions before ordering.</li>
-                <li>Compare the product specs against your desk size, monitor weight, laptop ports, room lighting, or chair fit needs.</li>
-                <li>Use Amazon customer reviews to spot recurring quality-control issues, but do not treat the marketplace score as the same thing as the fit score on this page.</li>
-                <li>These notes are organized around setup fit, listed specs, compatibility, and trade-offs so you can make a cleaner buying decision.</li>
+                <li>Compare the product specs against your room, device, pet, baby, size, or compatibility needs.</li>
+                <li>Use Amazon customer reviews to spot recurring quality-control issues after you confirm the exact version and accessories.</li>
+                <li>These notes focus on setup fit, listed specs, compatibility, and trade-offs so you can make a cleaner buying decision.</li>
                 <li>Our Amazon links may earn commission from qualifying purchases, at no extra cost to you.</li>
               </ul>
             </div>

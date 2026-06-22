@@ -24,6 +24,7 @@
     "start:affiliate:baby": "npm run start:baby --workspace apps/affiliate",
     "lint": "npm run lint --workspace apps/web",
     "lint:affiliate": "npm run lint --workspace apps/affiliate",
+    "sync:affiliate:amazon": "npm run sync:amazon --workspace apps/affiliate",
     "test": "npm run test --workspace apps/web",
     "db:generate": "npm exec --workspace apps/web prisma generate -- --schema ../../prisma/schema.prisma"
   }

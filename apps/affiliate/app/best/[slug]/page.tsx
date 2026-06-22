@@ -1,7 +1,8 @@
 import { notFound } from "next/navigation";
+import { AffiliateButton } from "@/components/AffiliateButton";
 import { JsonLd } from "@/components/JsonLd";
 import { Disclosure, MethodologyList, ProductCard } from "@/components/LayoutParts";
-import { findRoundup, products } from "@/lib/content";
+import { findProduct, findRoundup } from "@/lib/content";
 import { absoluteUrl, breadcrumbSchema, pageMetadata } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 
@@ -18,7 +19,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
   const { slug } = await params;
   const roundup = findRoundup(site.key, slug);
   if (!roundup) notFound();
-  const picks = roundup.productSlugs.map((productSlug) => products.find((product) => product.site === site.key && product.slug === productSlug)).filter(Boolean);
+  const picks = roundup.productSlugs.map((productSlug) => findProduct(site.key, productSlug)).filter(Boolean);
 
   const itemListSchema = {
     "@context": "https://schema.org",
@@ -46,6 +47,43 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
         <div className="mt-8 grid gap-5 lg:grid-cols-[1fr_320px]">
           <div className="space-y-5">
             <Disclosure site={site} />
+            {picks.length ? (
+              <section className="panel overflow-hidden">
+                <div className="border-b border-[var(--border)] p-5">
+                  <h2 className="text-xl font-bold">Quick comparison</h2>
+                  <p className="mt-2 text-sm leading-6 text-[var(--muted)]">Start here if you already know the job you need the product to solve.</p>
+                </div>
+                <div className="divide-y divide-[var(--border)]">
+                  {picks.map((product, index) =>
+                    product ? (
+                      <div className="grid gap-4 p-5 md:grid-cols-[44px_1.2fr_1fr_1fr_auto]" key={product.slug}>
+                        <div className="flex h-9 w-9 items-center justify-center rounded-md bg-[var(--brand-soft)] text-sm font-black text-[var(--brand-strong)]">
+                          {index + 1}
+                        </div>
+                        <div>
+                          <p className="text-xs font-bold uppercase text-[var(--muted)]">{product.brand}</p>
+                          <h3 className="mt-1 font-bold">{product.amazonTitle ?? product.name}</h3>
+                        </div>
+                        <div>
+                          <p className="text-xs font-bold uppercase text-[var(--muted)]">Best for</p>
+                          <p className="mt-1 text-sm leading-6">{product.bestFor}</p>
+                        </div>
+                        <div>
+                          <p className="text-xs font-bold uppercase text-[var(--muted)]">Check first</p>
+                          <p className="mt-1 text-sm leading-6">{product.cons[0]}</p>
+                        </div>
+                        <div className="flex flex-wrap items-start gap-2 md:justify-end">
+                          <a className="button-secondary" href={`/reviews/${product.slug}`}>
+                            Notes
+                          </a>
+                          {product.offers[0] ? <AffiliateButton site={site.key} product={product} offer={product.offers[0]} position={`roundup-table-${index + 1}`} /> : null}
+                        </div>
+                      </div>
+                    ) : null,
+                  )}
+                </div>
+              </section>
+            ) : null}
             {roundup.decisionGuide?.length ? (
               <section className="panel p-5">
                 <h2 className="text-xl font-bold">Quick picks by situation</h2>

@@ -76,16 +76,19 @@ export function TrustBar() {
 }
 
 export function ProductCard({ site, product, position }: { site: SiteConfig; product: Product; position: string }) {
+  const displayName = product.amazonTitle ?? product.name;
+  const displayImage = product.amazonImage ?? product.image;
+
   return (
     <article className="panel overflow-hidden">
       <div className="relative h-52 w-full">
-        <Image className="object-cover" src={product.image} alt={product.name} fill sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" />
+        <Image className="object-cover" src={displayImage} alt={displayName} fill sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" />
       </div>
       <div className="p-5">
         <div className="flex items-start justify-between gap-3">
           <div>
             <p className="text-xs font-bold uppercase text-[var(--muted)]">{product.brand}</p>
-            <h3 className="mt-1 text-xl font-bold">{product.name}</h3>
+            <h3 className="mt-1 text-xl font-bold">{displayName}</h3>
           </div>
           <div className="rounded-md bg-[var(--accent-soft)] px-2 py-1 text-right text-xs font-bold text-[var(--accent)]">
             <span className="block leading-tight">Fit score</span>
