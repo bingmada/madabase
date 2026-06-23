@@ -21,7 +21,26 @@ export function SiteChrome({ site, children }: { site: SiteConfig; children: Rea
       {children}
       <footer className="border-t border-[var(--border)] bg-white">
         <div className="shell py-8 text-sm leading-6 text-[var(--muted)]">
-          <p className="font-semibold text-[var(--text)]">{site.name}</p>
+          <div className="flex flex-wrap items-center justify-between gap-4">
+            <p className="font-semibold text-[var(--text)]">{site.name}</p>
+            <nav className="flex flex-wrap gap-x-4 gap-y-2 font-semibold" aria-label="Site information">
+              <Link className="hover:text-[var(--brand-strong)]" href="/about">
+                About
+              </Link>
+              <Link className="hover:text-[var(--brand-strong)]" href="/methodology">
+                Methodology
+              </Link>
+              <Link className="hover:text-[var(--brand-strong)]" href="/editorial-policy">
+                Editorial policy
+              </Link>
+              <Link className="hover:text-[var(--brand-strong)]" href="/affiliate-disclosure">
+                Affiliate disclosure
+              </Link>
+              <Link className="hover:text-[var(--brand-strong)]" href="/contact">
+                Contact
+              </Link>
+            </nav>
+          </div>
           <p className="mt-2 max-w-3xl">{site.disclosure}</p>
         </div>
       </footer>

@@ -72,3 +72,10 @@ export type Tool = {
   kind: "feeding" | "desk" | "diapers";
   relatedRoundups: string[];
 };
+
+export type StaticPage = {
+  slug: string;
+  title: string;
+  dek: string;
+  sections: Array<{ heading: string; body: string }>;
+};
