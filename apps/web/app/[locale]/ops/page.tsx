@@ -8,7 +8,7 @@ import { requireUser } from "@/lib/auth/services/sessionService";
 import { isLocale, locales } from "@/lib/i18n";
 import { canAccessOps } from "@/lib/ops-access";
 import { getOpsDashboardStats } from "@/lib/ops-dashboard";
-import { buildPageMetadata } from "@/lib/seo";
+import { buildPageMetadata, withNoIndex } from "@/lib/seo";
 import { testMap } from "@/lib/test-registry";
 import { toolMap } from "@/lib/tool-registry";
 
@@ -19,13 +19,13 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   if (!isLocale(locale)) return {};
-  return buildPageMetadata({
+  return withNoIndex(buildPageMetadata({
     title: locale === "en" ? "Operations Dashboard" : "运营数据面板",
     description: locale === "en" ? "Internal usage, test, unlock, and referral metrics for Madabase." : "Madabase 内部工具使用、测评、解锁与推荐数据。",
     locale,
     path: "/ops",
     keywords: ["madabase ops", "tool analytics"],
-  });
+  }));
 }
 
 export default async function OpsPage({ params }: { params: Promise<{ locale: string }> }) {

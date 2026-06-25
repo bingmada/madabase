@@ -1,0 +1,43 @@
+[TITLE]
+Online Sleep Calculator
+[H1]
+Online Sleep Calculator
+[DESCRIPTION]
+Plan bedtime or wake-up time around 90-minute sleep cycles.
+[SEO_TITLE]
+Online Sleep Calculator - Bedtime and Wake-Up Planner
+[SEO_DESCRIPTION]
+Plan bedtime or wake-up time using 90-minute sleep cycles. Use this online sleep calculator for quick schedule planning.
+[INTRO]
+A sleep calculator helps plan bedtime or wake-up time around common 90-minute sleep cycles. It is a simple scheduling reference for evenings, early mornings, travel days, and routine planning. Sleep quality depends on many factors, but cycle-based planning can make a schedule easier to reason about.
+[HOW_TO_USE]
+Choose your target
+Decide whether you want to calculate a bedtime from a wake-up time or a wake-up time from a bedtime.
+---
+Enter the time
+Add the target time and run the calculator.
+---
+Pick a practical option
+Review the suggested times and choose the one that fits your schedule.
+[EXAMPLES]
+Wake-up time: 7:00 AM
+===
+Suggested bedtimes: 9:30 PM, 11:00 PM, or 12:30 AM
+[FAQ]
+Why use 90-minute cycles?
+Many sleep planning tools use 90 minutes as a rough sleep-cycle estimate. Real sleep cycles vary by person and night.
+Does this guarantee better sleep?
+No. It is only a planning aid. Light, caffeine, stress, routine, and health factors also matter.
+Should I include time to fall asleep?
+Yes. If you usually need 10 to 20 minutes to fall asleep, account for that before choosing a bedtime.
+[RELATED_TOOLS]
+bmi-calculator
+calorie-calculator
+timestamp
+[KEYWORDS]
+sleep calculator
+bedtime calculator
+wake up time calculator
+sleep cycle calculator
+[CATEGORY]
+web

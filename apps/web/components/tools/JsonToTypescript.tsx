@@ -20,16 +20,40 @@ function propertyName(key: string) {
   return /^[a-zA-Z_$][a-zA-Z0-9_$]*$/.test(key) ? key : JSON.stringify(key);
 }
 
-function inferType(value: unknown, name: string, declarations: string[]): string {
+function unionTypes(types: string[]) {
+  const unique = Array.from(new Set(types));
+  return unique.length === 1 ? unique[0] : unique.join(" | ");
+}
+
+function mergeObjectArray(items: Array<Record<string, unknown>>) {
+  const keys = Array.from(new Set(items.flatMap((item) => Object.keys(item))));
+  const merged: Record<string, unknown[]> = {};
+  const optional = new Set<string>();
+  for (const key of keys) {
+    const values = items.map((item) => item[key]);
+    merged[key] = values.filter((item) => item !== undefined);
+    if (values.some((item) => item === undefined)) optional.add(key);
+  }
+  return { merged, optional };
+}
+
+function inferType(value: unknown, name: string, declarations: Map<string, string>): string {
   if (value === null) return "null";
   if (Array.isArray(value)) {
     if (value.length === 0) return "unknown[]";
-    const types = Array.from(new Set(value.map((item, index) => inferType(item, `${name}${index + 1}`, declarations))));
-    return `${types.length === 1 ? types[0] : `(${types.join(" | ")})`}[]`;
+    const objectItems = value.filter((item): item is Record<string, unknown> => Boolean(item) && typeof item === "object" && !Array.isArray(item));
+    if (objectItems.length === value.length) {
+      const interfaceName = `${toPascalCase(name)}Item`;
+      buildInterfaceFromArray(objectItems, interfaceName, declarations);
+      return `${interfaceName}[]`;
+    }
+    const types = value.map((item, index) => inferType(item, `${name}${index + 1}`, declarations));
+    const itemType = unionTypes(types);
+    return `${itemType.includes(" | ") ? `(${itemType})` : itemType}[]`;
   }
   if (typeof value === "object") {
     const interfaceName = toPascalCase(name);
-    declarations.push(buildInterface(value as Record<string, unknown>, interfaceName, declarations));
+    buildInterface(value as Record<string, unknown>, interfaceName, declarations);
     return interfaceName;
   }
   if (typeof value === "string") return "string";
@@ -38,26 +62,45 @@ function inferType(value: unknown, name: string, declarations: string[]): string
   return "unknown";
 }
 
-function buildInterface(value: Record<string, unknown>, name: string, declarations: string[]) {
+function buildInterface(value: Record<string, unknown>, name: string, declarations: Map<string, string>) {
+  if (declarations.has(name)) return name;
   const lines = Object.entries(value).map(([key, item]) => `  ${propertyName(key)}: ${inferType(item, `${name}${toPascalCase(key)}`, declarations)};`);
-  return `export interface ${name} {\n${lines.join("\n")}\n}`;
+  declarations.set(name, `export interface ${name} {\n${lines.join("\n")}\n}`);
+  return name;
+}
+
+function buildInterfaceFromArray(items: Array<Record<string, unknown>>, name: string, declarations: Map<string, string>) {
+  if (declarations.has(name)) return name;
+  const { merged, optional } = mergeObjectArray(items);
+  const lines = Object.entries(merged).map(([key, values]) => {
+    const type = unionTypes(values.map((item, index) => inferType(item, `${name}${toPascalCase(key)}${index + 1}`, declarations)));
+    return `  ${propertyName(key)}${optional.has(key) ? "?" : ""}: ${type};`;
+  });
+  declarations.set(name, `export interface ${name} {\n${lines.join("\n")}\n}`);
+  return name;
 }
 
 function generateTypes(input: string, rootName: string) {
   const parsed = JSON.parse(input) as unknown;
-  const declarations: string[] = [];
+  const declarations = new Map<string, string>();
+  const root = toPascalCase(rootName);
   if (Array.isArray(parsed)) {
-    const item = parsed[0] ?? {};
-    if (typeof item !== "object" || item === null || Array.isArray(item)) {
-      return `export type ${toPascalCase(rootName)} = ${inferType(item, rootName, declarations)};`;
+    if (parsed.length === 0) {
+      return `export type ${root} = unknown[];`;
     }
-    declarations.push(buildInterface(item as Record<string, unknown>, toPascalCase(rootName), declarations));
+    const objectItems = parsed.filter((item): item is Record<string, unknown> => Boolean(item) && typeof item === "object" && !Array.isArray(item));
+    if (objectItems.length === parsed.length) {
+      const itemName = `${root}Item`;
+      buildInterfaceFromArray(objectItems, itemName, declarations);
+      return [`export type ${root} = ${itemName}[];`, ...Array.from(declarations.values()).reverse()].join("\n\n");
+    }
+    return `export type ${root} = ${inferType(parsed, root, declarations)};`;
   } else if (typeof parsed === "object" && parsed !== null) {
-    declarations.push(buildInterface(parsed as Record<string, unknown>, toPascalCase(rootName), declarations));
+    buildInterface(parsed as Record<string, unknown>, root, declarations);
   } else {
-    return `export type ${toPascalCase(rootName)} = ${inferType(parsed, rootName, declarations)};`;
+    return `export type ${root} = ${inferType(parsed, root, declarations)};`;
   }
-  return declarations.reverse().join("\n\n");
+  return Array.from(declarations.values()).reverse().join("\n\n");
 }
 
 export function JsonToTypescript({ locale = "en" }: { locale?: Locale }) {

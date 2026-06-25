@@ -41,7 +41,9 @@ export function BmiCalculator({ locale = "en" }: { locale?: Locale }) {
   const [weight, setWeight] = useState("65");
   const bmi = numberValue(weight, 65) / (numberValue(height, 170) / 100) ** 2;
   const category = bmi < 18.5 ? (locale === "zh" ? "偏瘦" : "Underweight") : bmi < 24 ? (locale === "zh" ? "正常" : "Normal") : bmi < 28 ? (locale === "zh" ? "超重" : "Overweight") : (locale === "zh" ? "肥胖" : "Obesity");
-  const summary = locale === "zh" ? `BMI ${bmi.toFixed(1)}，分类：${category}` : `BMI ${bmi.toFixed(1)}, category: ${category}`;
+  const summary = locale === "zh"
+    ? [`BMI：${bmi.toFixed(1)}`, `分类：${category}`, `身高：${numberValue(height, 170)} cm`, `体重：${numberValue(weight, 65)} kg`].join("\n")
+    : [`BMI: ${bmi.toFixed(1)}`, `Category: ${category}`, `Height: ${numberValue(height, 170)} cm`, `Weight: ${numberValue(weight, 65)} kg`].join("\n");
 
   return (
     <ToolPanel label={locale === "zh" ? "BMI 计算器" : "BMI calculator"}>
@@ -68,7 +70,9 @@ export function CalorieCalculator({ locale = "en" }: { locale?: Locale }) {
   const [activity, setActivity] = useState("1.375");
   const bmr = 10 * numberValue(weight, 58) + 6.25 * numberValue(height, 165) - 5 * numberValue(age, 30) + (sex === "female" ? -161 : 5);
   const tdee = bmr * numberValue(activity, 1.375);
-  const summary = locale === "zh" ? `基础代谢约 ${Math.round(bmr)} kcal/天，维持热量约 ${Math.round(tdee)} kcal/天。` : `BMR about ${Math.round(bmr)} kcal/day, maintenance about ${Math.round(tdee)} kcal/day.`;
+  const summary = locale === "zh"
+    ? [`基础代谢：${Math.round(bmr)} kcal/天`, `维持热量：${Math.round(tdee)} kcal/天`, `减脂参考：${Math.round(tdee - 400)} kcal/天`, `增肌参考：${Math.round(tdee + 250)} kcal/天`].join("\n")
+    : [`BMR: ${Math.round(bmr)} kcal/day`, `Maintenance: ${Math.round(tdee)} kcal/day`, `Fat loss reference: ${Math.round(tdee - 400)} kcal/day`, `Muscle gain reference: ${Math.round(tdee + 250)} kcal/day`].join("\n");
 
   return (
     <ToolPanel label={locale === "zh" ? "卡路里计算器" : "Calorie calculator"}>
@@ -90,7 +94,10 @@ export function CalorieCalculator({ locale = "en" }: { locale?: Locale }) {
           <ResultCard title={locale === "zh" ? "维持热量" : "Maintenance"} value={`${Math.round(tdee)} kcal`} />
           <ResultCard title={locale === "zh" ? "减脂参考" : "Fat loss"} value={`${Math.round(tdee - 400)} kcal`} />
           <ResultCard title={locale === "zh" ? "增肌参考" : "Muscle gain"} value={`${Math.round(tdee + 250)} kcal`} />
-          <CopyButton value={summary} label={locale === "zh" ? "复制结果" : "Copy result"} copiedLabel={locale === "zh" ? "已复制" : "Copied"} />
+          <div className="flex flex-wrap gap-2 sm:col-span-2">
+            <ResetButton label={locale === "zh" ? "重置" : "Reset"} onClick={() => { setSex("female"); setAge("30"); setHeight("165"); setWeight("58"); setActivity("1.375"); }} />
+            <CopyButton value={summary} label={locale === "zh" ? "复制结果" : "Copy result"} copiedLabel={locale === "zh" ? "已复制" : "Copied"} />
+          </div>
         </div>
       </div>
     </ToolPanel>
@@ -110,13 +117,23 @@ export function SleepCalculator({ locale = "en" }: { locale?: Locale }) {
       return { cycles, time: date.toTimeString().slice(0, 5) };
     });
   }, [mode, time]);
+  const summary = [
+    mode === "wake"
+      ? (locale === "zh" ? `目标起床时间：${time}` : `Target wake time: ${time}`)
+      : (locale === "zh" ? `计划入睡时间：${time}` : `Planned bedtime: ${time}`),
+    ...options.map((option) => `${option.cycles} ${locale === "zh" ? "个睡眠周期" : "cycles"}: ${option.time}`),
+  ].join("\n");
 
   return (
     <ToolPanel label={locale === "zh" ? "睡眠计算器" : "Sleep calculator"}>
       <div className="grid gap-4 lg:grid-cols-[0.8fr_1.2fr]">
         <div className="space-y-4">
           <SelectField label={locale === "zh" ? "模式" : "Mode"} value={mode} onChange={setMode} options={[{ value: "wake", label: locale === "zh" ? "按起床时间反推" : "Plan by wake time" }, { value: "sleep", label: locale === "zh" ? "从入睡时间推算" : "Plan by bedtime" }]} />
-          <ToolInput label={locale === "zh" ? "时间" : "Time"} value={time} onChange={setTime} />
+          <ToolInput label={locale === "zh" ? "时间" : "Time"} value={time} onChange={setTime} type="time" />
+          <div className="flex flex-wrap gap-2">
+            <ResetButton label={locale === "zh" ? "重置" : "Reset"} onClick={() => { setMode("wake"); setTime("07:00"); }} />
+            <CopyButton value={summary} label={locale === "zh" ? "复制结果" : "Copy result"} copiedLabel={locale === "zh" ? "已复制" : "Copied"} />
+          </div>
         </div>
         <div className="grid gap-4 sm:grid-cols-2">
           {options.map((option) => (
@@ -137,6 +154,11 @@ export function FinancialGoalCalculator({ locale = "en" }: { locale?: Locale }) 
   const monthCount = Math.max(1, numberValue(months, 36));
   const futureCurrent = numberValue(current, 10000) * (1 + monthlyRate) ** monthCount;
   const monthly = monthlyRate === 0 ? (numberValue(target, 100000) - numberValue(current, 10000)) / monthCount : (numberValue(target, 100000) - futureCurrent) * monthlyRate / ((1 + monthlyRate) ** monthCount - 1);
+  const monthlyNeeded = Math.max(0, monthly);
+  const targetReached = monthly <= 0;
+  const summary = locale === "zh"
+    ? [`目标金额：${money(numberValue(target, 100000), locale)}`, `已有资金预计：${money(futureCurrent, locale)}`, `每月需储蓄：${money(monthlyNeeded, locale)}`, `年化收益率假设：${numberValue(rate, 4)}%`, targetReached ? "按当前假设，已有资金预计可覆盖目标。" : ""].filter(Boolean).join("\n")
+    : [`Target: ${money(numberValue(target, 100000), locale)}`, `Projected current savings: ${money(futureCurrent, locale)}`, `Required monthly saving: ${money(monthlyNeeded, locale)}`, `Annual return assumption: ${numberValue(rate, 4)}%`, targetReached ? "Under these assumptions, current savings are projected to cover the goal." : ""].filter(Boolean).join("\n");
 
   return (
     <ToolPanel label={locale === "zh" ? "理财目标计算器" : "Financial goal calculator"}>
@@ -148,8 +170,12 @@ export function FinancialGoalCalculator({ locale = "en" }: { locale?: Locale }) 
           <ToolInput label={locale === "zh" ? "年化收益率 %" : "Annual return %"} value={rate} onChange={setRate} type="number" />
         </div>
         <div className="grid gap-4 sm:grid-cols-2">
-          <ResultCard title={locale === "zh" ? "每月需储蓄" : "Monthly saving"} value={money(monthly, locale)} />
+          <ResultCard title={locale === "zh" ? "每月需储蓄" : "Monthly saving"} value={money(monthlyNeeded, locale)} detail={targetReached ? (locale === "zh" ? "当前假设下目标已覆盖" : "Goal covered under current assumptions") : undefined} />
           <ResultCard title={locale === "zh" ? "已有资金预计" : "Projected current"} value={money(futureCurrent, locale)} />
+          <div className="flex flex-wrap gap-2 sm:col-span-2">
+            <ResetButton label={locale === "zh" ? "重置" : "Reset"} onClick={() => { setTarget("100000"); setCurrent("10000"); setMonths("36"); setRate("4"); }} />
+            <CopyButton value={summary} label={locale === "zh" ? "复制结果" : "Copy result"} copiedLabel={locale === "zh" ? "已复制" : "Copied"} />
+          </div>
         </div>
       </div>
     </ToolPanel>
@@ -167,6 +193,9 @@ export function RetirementCalculator({ locale = "en" }: { locale?: Locale }) {
   const monthlyRate = numberValue(rate, 5) / 100 / 12;
   const futureCurrent = numberValue(current, 100000) * (1 + monthlyRate) ** months;
   const futureMonthly = monthlyRate === 0 ? numberValue(monthly, 3000) * months : numberValue(monthly, 3000) * (((1 + monthlyRate) ** months - 1) / monthlyRate);
+  const summary = locale === "zh"
+    ? [`距离退休：${years} 年`, `预计退休储蓄：${money(futureCurrent + futureMonthly, locale)}`, `已有资金贡献：${money(futureCurrent, locale)}`, `每月投入贡献：${money(futureMonthly, locale)}`, `年化收益率假设：${numberValue(rate, 5)}%`].join("\n")
+    : [`Years to retirement: ${years}`, `Projected savings: ${money(futureCurrent + futureMonthly, locale)}`, `From current savings: ${money(futureCurrent, locale)}`, `From monthly contributions: ${money(futureMonthly, locale)}`, `Annual return assumption: ${numberValue(rate, 5)}%`].join("\n");
 
   return (
     <ToolPanel label={locale === "zh" ? "退休计算器" : "Retirement calculator"}>
@@ -183,6 +212,10 @@ export function RetirementCalculator({ locale = "en" }: { locale?: Locale }) {
           <ResultCard title={locale === "zh" ? "预计退休储蓄" : "Projected savings"} value={money(futureCurrent + futureMonthly, locale)} />
           <ResultCard title={locale === "zh" ? "已有资金贡献" : "From current"} value={money(futureCurrent, locale)} />
           <ResultCard title={locale === "zh" ? "每月投入贡献" : "From monthly"} value={money(futureMonthly, locale)} />
+          <div className="flex flex-wrap gap-2 sm:col-span-2">
+            <ResetButton label={locale === "zh" ? "重置" : "Reset"} onClick={() => { setAge("30"); setRetireAge("60"); setCurrent("100000"); setMonthly("3000"); setRate("5"); }} />
+            <CopyButton value={summary} label={locale === "zh" ? "复制结果" : "Copy result"} copiedLabel={locale === "zh" ? "已复制" : "Copied"} />
+          </div>
         </div>
       </div>
     </ToolPanel>
@@ -203,6 +236,9 @@ export function FiveElementsReference({ locale = "en" }: { locale?: Locale }) {
       }, {})
     : {};
   const strongest = Object.entries(counts).sort((a, b) => b[1] - a[1])[0]?.[0];
+  const summary = locale === "zh"
+    ? [`出生日期：${date}`, ...["Wood", "Fire", "Earth", "Metal", "Water"].map((element) => `${elementZh[element]}：${counts[element] ?? 0}`), `较强元素：${strongest ? elementZh[strongest] : "-"}`, "提示：仅供文化兴趣和自我观察参考。"].join("\n")
+    : [`Birth date: ${date}`, ...["Wood", "Fire", "Earth", "Metal", "Water"].map((element) => `${element}: ${counts[element] ?? 0}`), `Strongest: ${strongest ?? "-"}`, "Note: for cultural interest and reflection only."].join("\n");
 
   return (
     <ToolPanel label={locale === "zh" ? "生日五行参考" : "Five elements reference"}>
@@ -212,6 +248,10 @@ export function FiveElementsReference({ locale = "en" }: { locale?: Locale }) {
           <p className="text-sm leading-6 text-[var(--text-muted)]">
             {locale === "zh" ? "这是基于公历日期的轻量参考，不等同于完整八字排盘。" : "This is a lightweight date-based reference, not a full BaZi chart."}
           </p>
+          <div className="flex flex-wrap gap-2">
+            <ResetButton label={locale === "zh" ? "重置" : "Reset"} onClick={() => setDate("1995-08-17")} />
+            <CopyButton value={summary} label={locale === "zh" ? "复制结果" : "Copy result"} copiedLabel={locale === "zh" ? "已复制" : "Copied"} />
+          </div>
         </div>
         <div className="grid gap-4 sm:grid-cols-2">
           {["Wood", "Fire", "Earth", "Metal", "Water"].map((element) => (

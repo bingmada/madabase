@@ -13,8 +13,6 @@ export function Footer() {
       tools: "Tools",
       blog: "Blog",
       contact: "Contact",
-      login: "Login",
-      profile: "Profile",
     },
     zh: {
       description: "在线工具、实用 SEO 内容，以及面向开发者和创作者的高效工作流。",
@@ -22,8 +20,6 @@ export function Footer() {
       tools: "工具",
       blog: "博客",
       contact: "联系我们",
-      login: "登录",
-      profile: "个人中心",
     },
   }[locale];
 
@@ -40,8 +36,6 @@ export function Footer() {
             <Link href={`/${locale}/tools`}>{copy.tools}</Link>
             <Link href={`/${locale}/blog`}>{copy.blog}</Link>
             <Link href={`/${locale}/contact`}>{copy.contact}</Link>
-            <Link href={`/${locale}/login`}>{copy.login}</Link>
-            <Link href={`/${locale}/profile`}>{copy.profile}</Link>
           </div>
         </div>
         <div className="flex flex-col justify-between gap-2">

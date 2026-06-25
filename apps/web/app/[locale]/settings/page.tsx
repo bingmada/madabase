@@ -4,7 +4,7 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { requireUser } from "@/lib/auth/services/sessionService";
 import { isLocale, locales } from "@/lib/i18n";
-import { buildPageMetadata } from "@/lib/seo";
+import { buildPageMetadata, withNoIndex } from "@/lib/seo";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -13,13 +13,13 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   if (!isLocale(locale)) return {};
-  return buildPageMetadata({
+  return withNoIndex(buildPageMetadata({
     title: locale === "en" ? "Settings" : "设置",
     description: locale === "en" ? "Manage locale, account preferences, and future sync settings." : "管理语言、账户偏好和未来同步设置。",
     locale,
     path: "/settings",
     keywords: ["madabase settings"],
-  });
+  }));
 }
 
 export default async function SettingsPage({ params }: { params: Promise<{ locale: string }> }) {

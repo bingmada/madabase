@@ -2,7 +2,7 @@
 import { useMemo, useState } from "react";
 import type { Locale } from "@/lib/i18n";
 import { fireAndForgetToolExecution } from "@/lib/tool-usage-client";
-import { ResetButton, StatusMessage, ToolButton, ToolPanel, ToolTextarea } from "./ToolPrimitives";
+import { CopyButton, ResetButton, StatusMessage, ToolButton, ToolPanel, ToolTextarea } from "./ToolPrimitives";
 
 const sample = '{\n  "status": "ok",\n  "count": 3\n}';
 
@@ -20,12 +20,22 @@ export function JsonValidator({ locale = "en" }: { locale?: Locale }) {
 
   const result = useMemo(() => {
     try {
-      JSON.parse(input);
-      return { message: copy.valid, tone: "success" as const };
+      const parsed = JSON.parse(input) as unknown;
+      const type = Array.isArray(parsed) ? "array" : parsed === null ? "null" : typeof parsed;
+      const topLevel = Array.isArray(parsed)
+        ? `${parsed.length} ${locale === "zh" ? "项" : "items"}`
+        : parsed && typeof parsed === "object"
+          ? `${Object.keys(parsed).length} ${locale === "zh" ? "个顶层键" : "top-level keys"}`
+          : locale === "zh" ? "标量值" : "scalar value";
+      const formatted = JSON.stringify(parsed, null, 2);
+      const summary = locale === "zh"
+        ? [`类型：${type}`, `结构：${topLevel}`, `字符数：${input.length}`, `字节数：${new TextEncoder().encode(input).length}`].join("\n")
+        : [`Type: ${type}`, `Shape: ${topLevel}`, `Characters: ${input.length}`, `Bytes: ${new TextEncoder().encode(input).length}`].join("\n");
+      return { message: copy.valid, tone: "success" as const, summary, formatted };
     } catch (error) {
-      return { message: error instanceof Error ? error.message : copy.invalid, tone: "error" as const };
+      return { message: error instanceof Error ? error.message : copy.invalid, tone: "error" as const, summary: "", formatted: "" };
     }
-  }, [copy.invalid, copy.valid, input]);
+  }, [copy.invalid, copy.valid, input, locale]);
 
   return (
     <ToolPanel>
@@ -36,6 +46,19 @@ export function JsonValidator({ locale = "en" }: { locale?: Locale }) {
           <ResetButton label={copy.reset} onClick={() => { setInput(sample); setValidated(false); }} />
         </div>
         <StatusMessage message={validated ? result.message : copy.idle} tone={validated ? result.tone : "neutral"} />
+        {validated && result.tone === "success" ? (
+          <div className="grid gap-4 lg:grid-cols-[0.8fr_1.2fr]">
+            <div className="space-y-3 rounded-md border border-[var(--border)] bg-white p-4">
+              <p className="code-font text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-soft)]">{locale === "zh" ? "摘要" : "Summary"}</p>
+              <pre className="code-font whitespace-pre-wrap text-sm leading-6 text-[var(--text)]">{result.summary}</pre>
+              <CopyButton value={result.summary} />
+            </div>
+            <div className="space-y-3">
+              <ToolTextarea label={locale === "zh" ? "格式化预览" : "Formatted preview"} value={result.formatted} readOnly rows={8} />
+              <CopyButton value={result.formatted} />
+            </div>
+          </div>
+        ) : null}
       </div>
     </ToolPanel>
   );

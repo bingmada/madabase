@@ -1,0 +1,46 @@
+[TITLE]
+Online Calorie Calculator
+[H1]
+Online Calorie Calculator
+[DESCRIPTION]
+Estimate daily calories from age, sex, height, weight, and activity.
+[SEO_TITLE]
+Online Calorie Calculator - Estimate Daily Calories
+[SEO_DESCRIPTION]
+Estimate daily calorie needs from basic body and activity inputs. Use this browser-based calorie calculator for lightweight planning.
+[INTRO]
+A calorie calculator estimates daily energy needs from simple inputs such as age, sex, height, weight, and activity level. The result is a planning estimate, not a personalized nutrition prescription. It can help you compare maintenance, weight-loss, or weight-gain scenarios before deciding what to track more carefully.
+[HOW_TO_USE]
+Enter profile details
+Add age, sex, height, weight, and activity level as requested by the tool.
+---
+Review estimated calories
+Use the calculated result as a starting point for daily energy planning.
+---
+Adjust the assumptions
+Change activity level or body weight to compare different scenarios.
+[EXAMPLES]
+Age: 30
+Height: 175 cm
+Weight: 70 kg
+Activity: Moderate
+===
+Estimated daily calories: about 2300 kcal
+[FAQ]
+Is this calorie estimate exact?
+No. It is an estimate based on common formulas and simple assumptions.
+Can I use it for weight loss planning?
+You can use it as a starting reference, but health goals should be adjusted carefully and ideally with professional advice.
+What affects daily calorie needs?
+Age, sex, height, weight, body composition, activity, sleep, stress, and health conditions can all affect the number.
+[RELATED_TOOLS]
+bmi-calculator
+sleep-calculator
+retirement-calculator
+[KEYWORDS]
+calorie calculator
+daily calorie calculator
+tdee calculator
+calorie needs
+[CATEGORY]
+web

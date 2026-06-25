@@ -52,14 +52,14 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   if (!isLocale(locale)) return {};
   return buildPageMetadata({
-    title: locale === "en" ? "Madabase - Online Tools and Tests" : "Madabase - 在线工具与测试",
+    title: locale === "en" ? "Madabase - Online Developer Tools" : "Madabase - 在线开发者工具",
     description:
       locale === "en"
-        ? "Madabase is a browser-first platform for online developer tools, practical calculators, personality tests, and useful reference content."
-        : "Madabase 是一个浏览器优先的在线工具、常用计算器、趣味测试与实用内容平台。",
+        ? "Madabase is a browser-first library of online developer tools for JSON, JWT, Base64, URLs, timestamps, Markdown, SQL, regex, and practical workflows."
+        : "Madabase 是一个浏览器优先的在线开发者工具库，覆盖 JSON、JWT、Base64、URL、时间戳、Markdown、SQL、正则和实用工作流。",
     locale,
     path: "/",
-    keywords: ["developer tools", "online formatter", "madabase", "online tools", "personality tests"],
+    keywords: ["developer tools", "online formatter", "json formatter", "online tools", "madabase"],
   });
 }
 
@@ -93,9 +93,9 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
   const copy = {
     en: {
-      eyebrow: "Online tools and tests",
+      eyebrow: "Online developer tools",
       title: "Madabase",
-      description: "A growing library of browser-first tools, practical calculators, personality tests, and reference pages for everyday workflows.",
+      description: "A growing library of browser-first developer tools, practical calculators, and reference pages for everyday workflows.",
       primaryCta: "Explore Tools",
       secondaryCta: "Take Tests",
       popular: "Popular Tools",
@@ -107,9 +107,9 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       loginCta: "Log in",
     },
     zh: {
-      eyebrow: "在线工具与测试",
+      eyebrow: "在线开发者工具",
       title: "Madabase",
-      description: "一个持续增长的在线浏览器工具、常用计算器、趣味测试与实用内容平台。",
+      description: "一个持续增长的浏览器端开发者工具、常用计算器与实用内容平台。",
       primaryCta: "探索工具",
       secondaryCta: "开始测试",
       popular: "热门工具",

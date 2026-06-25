@@ -4,7 +4,7 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { SearchClient } from "@/components/SearchClient";
 import { isLocale, locales } from "@/lib/i18n";
-import { buildPageMetadata } from "@/lib/seo";
+import { buildPageMetadata, withNoIndex } from "@/lib/seo";
 import { getSearchIndex } from "@/lib/search-index";
 
 export function generateStaticParams() {
@@ -14,13 +14,13 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   if (!isLocale(locale)) return {};
-  return buildPageMetadata({
+  return withNoIndex(buildPageMetadata({
     title: locale === "en" ? "Search Madabase" : "搜索 Madabase",
     description: locale === "en" ? "Search tools, tests, and articles on Madabase." : "搜索 Madabase 的工具、测试和文章。",
     locale,
     path: "/search",
     keywords: ["search", "tools", "tests", "madabase"],
-  });
+  }));
 }
 
 export default async function SearchPage({ params }: { params: Promise<{ locale: string }> }) {

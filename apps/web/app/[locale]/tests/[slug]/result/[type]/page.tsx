@@ -11,18 +11,12 @@ import { ResultScoreSnapshot } from "@/components/tests/ResultScoreSnapshot";
 import { TestReferralCapture } from "@/components/tests/TestReferralCapture";
 import { TestShareCard } from "@/components/tests/TestShareCard";
 import { getCurrentUser } from "@/lib/auth/services/sessionService";
-import { isLocale, locales } from "@/lib/i18n";
+import { isLocale } from "@/lib/i18n";
 import { buildAbsoluteUrl, buildPageMetadata } from "@/lib/seo";
 import { getResultContent, loadTestContent } from "@/lib/test-content";
 import { getOrCreateTestShareLink, parseReferralCookieValue, referralRewardAmount, testReferralCookieName } from "@/lib/test-referrals";
 import { getUserCreditBalance, hasUnlockedTestResult, recordTestAttempt, unlockTestResult } from "@/lib/test-unlocks";
-import { testMap, testRegistry } from "@/lib/test-registry";
-
-export function generateStaticParams() {
-  return locales.flatMap((locale) =>
-    testRegistry.flatMap((test) => test.resultTypes.map((type) => ({ locale, slug: test.slug, type: type.toLowerCase() })))
-  );
-}
+import { testMap } from "@/lib/test-registry";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string; slug: string; type: string }> }): Promise<Metadata> {
   const { locale, slug, type } = await params;
@@ -33,7 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const result = content ? getResultContent(content, type) : null;
   if (!content || !result) return {};
 
-  return buildPageMetadata({
+  const metadata = buildPageMetadata({
     title: locale === "en" ? `${content.title}: ${result.title} Result` : `${content.title}：${result.title}结果`,
     description: result.summary,
     locale,
@@ -41,6 +35,14 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     keywords: [type.toUpperCase(), "personality type", "mbti result", ...test.seo[locale].keywords],
     type: "article",
   });
+
+  return {
+    ...metadata,
+    robots: {
+      index: false,
+      follow: true,
+    },
+  };
 }
 
 export default async function TestResultPage({

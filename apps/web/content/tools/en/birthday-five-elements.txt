@@ -1,0 +1,43 @@
+[TITLE]
+Online Five Elements Reference
+[H1]
+Online Five Elements Reference
+[DESCRIPTION]
+Estimate five-element tendencies from a birth date for lightweight reflection.
+[SEO_TITLE]
+Online Five Elements Reference - Birthday Element Tool
+[SEO_DESCRIPTION]
+Use a birth date to get a lightweight five-elements reference for reflection, conversation, and cultural interest.
+[INTRO]
+This five elements reference uses a birth date as a lightweight cultural reflection prompt. It is designed for entertainment, self-observation, and conversation, not fortune telling or professional advice. The result can help you explore symbolic tendencies and compare them with how you actually make decisions.
+[HOW_TO_USE]
+Enter a birth date
+Choose the date requested by the tool.
+---
+Review the element reference
+Read the generated five-elements tendency and short explanation.
+---
+Reflect lightly
+Use the result as a cultural prompt rather than a fixed identity label.
+[EXAMPLES]
+Birth date: 1995-05-12
+===
+Element reference: a lightweight tendency summary for reflection
+[FAQ]
+Is this fortune telling?
+No. It is a cultural and entertainment reference, not a prediction.
+Can the result define my personality?
+No. Treat it as a prompt for reflection, not a fixed identity.
+Can I share the result?
+Yes. It works well as a light conversation starter.
+[RELATED_TOOLS]
+zodiac-compatibility
+timestamp
+sleep-calculator
+[KEYWORDS]
+five elements calculator
+birthday element
+birth date five elements
+five elements reference
+[CATEGORY]
+creator

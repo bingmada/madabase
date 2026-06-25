@@ -4,14 +4,10 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { TestReferralCapture } from "@/components/tests/TestReferralCapture";
 import { TestRunner } from "@/components/tests/TestRunner";
-import { isLocale, locales } from "@/lib/i18n";
+import { isLocale } from "@/lib/i18n";
 import { buildPageMetadata } from "@/lib/seo";
 import { loadTestContent } from "@/lib/test-content";
-import { testMap, testRegistry } from "@/lib/test-registry";
-
-export function generateStaticParams() {
-  return locales.flatMap((locale) => testRegistry.map((test) => ({ locale, slug: test.slug })));
-}
+import { testMap } from "@/lib/test-registry";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string; slug: string }> }): Promise<Metadata> {
   const { locale, slug } = await params;
@@ -19,13 +15,21 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const test = testMap.get(slug);
   if (!test) return {};
 
-  return buildPageMetadata({
+  const metadata = buildPageMetadata({
     title: locale === "en" ? `Start ${test.title.en}` : `开始 ${test.title.zh}`,
     description: test.description[locale],
     locale,
     path: `/tests/${slug}/start`,
     keywords: test.seo[locale].keywords,
   });
+
+  return {
+    ...metadata,
+    robots: {
+      index: false,
+      follow: true,
+    },
+  };
 }
 
 export default async function TestStartPage({

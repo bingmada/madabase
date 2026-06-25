@@ -183,6 +183,146 @@ function parseLooseFields(value: string) {
   );
 }
 
+function splitDiffInput(value: string) {
+  const delimiter = /\n-{3,}\n/;
+  const parts = value.split(delimiter);
+  if (parts.length < 2) {
+    throw new Error("Separate the two text blocks with a line containing ---.");
+  }
+  return [parts[0] ?? "", parts.slice(1).join("\n---\n")];
+}
+
+function lineDiffReport(value: string, locale: Locale = "en") {
+  const [left, right] = splitDiffInput(value);
+  const leftLines = left.split(/\r\n|\r|\n/);
+  const rightLines = right.split(/\r\n|\r|\n/);
+  const max = Math.max(leftLines.length, rightLines.length);
+  const rows: string[] = [];
+  let added = 0;
+  let removed = 0;
+  let changed = 0;
+
+  for (let index = 0; index < max; index += 1) {
+    const before = leftLines[index];
+    const after = rightLines[index];
+    if (before === after) {
+      rows.push(`  ${String(index + 1).padStart(3, " ")}  ${before ?? ""}`);
+      continue;
+    }
+    if (before === undefined) {
+      added += 1;
+      rows.push(`+ ${String(index + 1).padStart(3, " ")}  ${after ?? ""}`);
+      continue;
+    }
+    if (after === undefined) {
+      removed += 1;
+      rows.push(`- ${String(index + 1).padStart(3, " ")}  ${before}`);
+      continue;
+    }
+    changed += 1;
+    rows.push(`- ${String(index + 1).padStart(3, " ")}  ${before}`);
+    rows.push(`+ ${String(index + 1).padStart(3, " ")}  ${after}`);
+  }
+
+  const header = locale === "zh"
+    ? `变更摘要：新增 ${added} 行，删除 ${removed} 行，修改 ${changed} 行`
+    : `Summary: ${added} added, ${removed} removed, ${changed} changed`;
+  return `${header}\n\n${rows.join("\n")}`;
+}
+
+function parseEnvToJson(value: string) {
+  const result: Record<string, string> = {};
+  const lines = value.split(/\r\n|\r|\n/);
+  for (const rawLine of lines) {
+    const line = rawLine.trim();
+    if (!line || line.startsWith("#")) continue;
+    const normalized = line.startsWith("export ") ? line.slice(7).trim() : line;
+    const equalsIndex = normalized.indexOf("=");
+    if (equalsIndex <= 0) {
+      throw new Error(`Invalid .env line: ${rawLine}`);
+    }
+    const key = normalized.slice(0, equalsIndex).trim();
+    let item = normalized.slice(equalsIndex + 1).trim();
+    if (!/^[A-Za-z_][A-Za-z0-9_]*$/.test(key)) {
+      throw new Error(`Invalid environment variable name: ${key}`);
+    }
+    if ((item.startsWith('"') && item.endsWith('"')) || (item.startsWith("'") && item.endsWith("'"))) {
+      item = item.slice(1, -1);
+    }
+    result[key] = item;
+  }
+  return JSON.stringify(result, null, 2);
+}
+
+function quoteEnvValue(value: unknown) {
+  const text = typeof value === "string" ? value : JSON.stringify(value);
+  if (/^[A-Za-z0-9_./:-]*$/.test(text)) return text;
+  return JSON.stringify(text);
+}
+
+function jsonToEnvLines(value: string) {
+  const parsed = JSON.parse(value) as unknown;
+  if (!parsed || Array.isArray(parsed) || typeof parsed !== "object") {
+    throw new Error("JSON to ENV expects a flat JSON object.");
+  }
+  return Object.entries(parsed as Record<string, unknown>)
+    .map(([key, item]) => {
+      if (!/^[A-Za-z_][A-Za-z0-9_]*$/.test(key)) {
+        throw new Error(`Invalid environment variable name: ${key}`);
+      }
+      return `${key}=${quoteEnvValue(item)}`;
+    })
+    .join("\n");
+}
+
+function parseQueryString(value: string) {
+  const input = value.trim().replace(/^[^?]*\?/, "").replace(/^#/, "");
+  const params = new URLSearchParams(input);
+  const result: Record<string, string | string[]> = {};
+  for (const [key, item] of params.entries()) {
+    const current = result[key];
+    if (current === undefined) result[key] = item;
+    else if (Array.isArray(current)) current.push(item);
+    else result[key] = [current, item];
+  }
+  return JSON.stringify(result, null, 2);
+}
+
+function buildQueryString(value: string) {
+  const parsed = JSON.parse(value) as unknown;
+  if (!parsed || Array.isArray(parsed) || typeof parsed !== "object") {
+    throw new Error("Query string builder expects a JSON object.");
+  }
+  const params = new URLSearchParams();
+  for (const [key, item] of Object.entries(parsed as Record<string, unknown>)) {
+    if (Array.isArray(item)) {
+      item.forEach((entry) => params.append(key, String(entry)));
+    } else if (item !== undefined && item !== null) {
+      params.set(key, String(item));
+    }
+  }
+  return params.toString();
+}
+
+function parseHttpHeaders(value: string) {
+  const result: Record<string, string | string[]> = {};
+  for (const rawLine of value.split(/\r\n|\r|\n/)) {
+    const line = rawLine.trim();
+    if (!line) continue;
+    const separator = line.indexOf(":");
+    if (separator <= 0) {
+      throw new Error(`Invalid header line: ${rawLine}`);
+    }
+    const key = line.slice(0, separator).trim().toLowerCase();
+    const item = line.slice(separator + 1).trim();
+    const current = result[key];
+    if (current === undefined) result[key] = item;
+    else if (Array.isArray(current)) current.push(item);
+    else result[key] = [current, item];
+  }
+  return JSON.stringify(result, null, 2);
+}
+
 function fieldNumber(fields: Record<string, string>, keys: string[], fallback = 0) {
   const key = keys.find((item) => fields[item] !== undefined);
   if (!key) return fallback;
@@ -1113,6 +1253,8 @@ export function QrCodeGenerator({ locale = "en" }: { locale?: Locale }) {
   const [logoSize, setLogoSize] = useState(44);
   const [darkColor, setDarkColor] = useState("#111827");
   const [lightColor, setLightColor] = useState("#ffffff");
+  const [errorCorrection, setErrorCorrection] = useState<"L" | "M" | "Q" | "H">("H");
+  const [pngSize, setPngSize] = useState("512");
   const [message, setMessage] = useState("");
   const [tone, setTone] = useState<"success" | "error">("success");
 
@@ -1129,7 +1271,7 @@ export function QrCodeGenerator({ locale = "en" }: { locale?: Locale }) {
       try {
         const nextSvg = await QRCode.toString(input, {
           type: "svg",
-          errorCorrectionLevel: "H",
+          errorCorrectionLevel: errorCorrection,
           margin: 2,
           width: 196,
           color: {
@@ -1155,7 +1297,7 @@ export function QrCodeGenerator({ locale = "en" }: { locale?: Locale }) {
     return () => {
       cancelled = true;
     };
-  }, [darkColor, input, lightColor, locale, logoDataUrl, logoSize]);
+  }, [darkColor, errorCorrection, input, lightColor, locale, logoDataUrl, logoSize]);
 
   function handleLogoUpload(file: File | undefined) {
     if (!file) return;
@@ -1194,8 +1336,9 @@ export function QrCodeGenerator({ locale = "en" }: { locale?: Locale }) {
     const url = URL.createObjectURL(new Blob([svg], { type: "image/svg+xml;charset=utf-8" }));
     image.onload = () => {
       const canvas = document.createElement("canvas");
-      canvas.width = 512;
-      canvas.height = 512;
+      const size = Math.max(128, Math.min(2048, Number(pngSize) || 512));
+      canvas.width = size;
+      canvas.height = size;
       const context = canvas.getContext("2d");
       if (!context) return;
       context.fillStyle = lightColor;
@@ -1223,6 +1366,18 @@ export function QrCodeGenerator({ locale = "en" }: { locale?: Locale }) {
           <div className="grid gap-4 sm:grid-cols-2">
             <ToolInput label={locale === "zh" ? "前景色" : "Foreground color"} value={darkColor} onChange={setDarkColor} />
             <ToolInput label={locale === "zh" ? "背景色" : "Background color"} value={lightColor} onChange={setLightColor} />
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2">
+            <label className="block">
+              <span className="code-font text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-soft)]">{locale === "zh" ? "纠错等级" : "Error correction"}</span>
+              <select value={errorCorrection} onChange={(event) => setErrorCorrection(event.target.value as "L" | "M" | "Q" | "H")} className="mt-2 h-11 w-full rounded-md border border-[var(--border)] bg-white px-3 text-sm font-semibold text-[var(--text)] outline-none transition focus:border-[var(--brand)] focus:ring-2 focus:ring-[rgba(15,118,110,0.13)]">
+                <option value="L">L - 7%</option>
+                <option value="M">M - 15%</option>
+                <option value="Q">Q - 25%</option>
+                <option value="H">H - 30%</option>
+              </select>
+            </label>
+            <ToolInput label={locale === "zh" ? "PNG 尺寸 px" : "PNG size px"} value={pngSize} onChange={setPngSize} type="number" />
           </div>
           <label className="block">
             <span className="code-font text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-soft)]">{locale === "zh" ? "中心图片" : "Center image"}</span>
@@ -1255,6 +1410,7 @@ export function QrCodeGenerator({ locale = "en" }: { locale?: Locale }) {
             <CopyButton value={svg} label={locale === "zh" ? "复制 SVG" : "Copy SVG"} copiedLabel={copy.copied} />
             <ToolButton variant="secondary" onClick={downloadSvg}>{locale === "zh" ? "下载 SVG" : "Download SVG"}</ToolButton>
             <ToolButton variant="secondary" onClick={downloadPng}>{locale === "zh" ? "下载 PNG" : "Download PNG"}</ToolButton>
+            <ResetButton label={copy.reset} onClick={() => { setInput("https://madabase.com/en/tools"); setLogoDataUrl(""); setLogoName(""); setLogoSize(44); setDarkColor("#111827"); setLightColor("#ffffff"); setErrorCorrection("H"); setPngSize("512"); }} />
             <ToolButton onClick={() => fireAndForgetToolExecution("qr-code-generator")}>{locale === "zh" ? "生成二维码" : "Generate QR"}</ToolButton>
           </div>
           <StatusMessage message={message} tone={tone} />
@@ -1330,15 +1486,9 @@ const genericToolConfigs: Record<string, GenericToolConfig> = {
   },
   "text-diff": {
     label: "Left text, then --- then right text",
-    sample: "old title\nold summary\n---\nnew title\nold summary",
-    outputLabel: "Line comparison",
-    transform: (value) => {
-      const [left = "", right = ""] = value.split("\n---\n");
-      const rightLines = new Set(right.split("\n"));
-      return left.split("\n").map((line) => `${rightLines.has(line) ? " " : "-"} ${line}`).concat(
-        right.split("\n").filter((line) => !left.split("\n").includes(line)).map((line) => `+ ${line}`),
-      ).join("\n");
-    },
+    sample: "Title: Old JSON Guide\nStatus: Draft\nCTA: Format now\n---\nTitle: New JSON Guide\nStatus: Published\nCTA: Format JSON now",
+    outputLabel: "Line diff",
+    transform: lineDiffReport,
   },
   "email-extractor": {
     label: "Text",
@@ -1384,18 +1534,15 @@ const genericToolConfigs: Record<string, GenericToolConfig> = {
   },
   "env-to-json": {
     label: ".env content",
-    sample: "APP_NAME=Madabase\nFEATURE_TESTS=true",
+    sample: '# App settings\nAPP_NAME=Madabase\nFEATURE_TESTS=true\nPUBLIC_URL="https://madabase.com"',
     outputLabel: "JSON",
-    transform: (value) => JSON.stringify(Object.fromEntries(normalizeLines(value).split("\n").map((line) => {
-      const [key = "", ...rest] = line.split("=");
-      return [key.trim(), rest.join("=").trim()];
-    })), null, 2),
+    transform: parseEnvToJson,
   },
   "json-to-env": {
     label: "JSON",
-    sample: '{"APP_NAME":"Madabase","FEATURE_TESTS":"true"}',
+    sample: '{"APP_NAME":"Madabase","FEATURE_TESTS":true,"PUBLIC_URL":"https://madabase.com"}',
     outputLabel: ".env",
-    transform: (value) => Object.entries(JSON.parse(value) as Record<string, unknown>).map(([key, item]) => `${key}=${String(item)}`).join("\n"),
+    transform: jsonToEnvLines,
   },
   "toml-to-json": {
     label: "Simple TOML",
@@ -1405,24 +1552,21 @@ const genericToolConfigs: Record<string, GenericToolConfig> = {
   },
   "query-string-parser": {
     label: "Query string",
-    sample: "utm_source=seo&tool=json&lang=en",
+    sample: "https://madabase.com/en/tools/json-formatter?utm_source=seo&tool=json&tag=formatter&tag=developer",
     outputLabel: "Parsed query",
-    transform: (value) => JSON.stringify(Object.fromEntries(new URLSearchParams(value.replace(/^\?/, ""))), null, 2),
+    transform: parseQueryString,
   },
   "query-string-builder": {
     label: "JSON object",
-    sample: '{"utm_source":"seo","tool":"json","lang":"en"}',
+    sample: '{"utm_source":"seo","tool":"json","tag":["formatter","developer"],"lang":"en"}',
     outputLabel: "Query string",
-    transform: (value) => new URLSearchParams(JSON.parse(value) as Record<string, string>).toString(),
+    transform: buildQueryString,
   },
   "http-header-parser": {
     label: "HTTP headers",
-    sample: "content-type: application/json\ncache-control: no-cache",
+    sample: "content-type: application/json\ncache-control: no-cache\nset-cookie: session=abc\nset-cookie: theme=light",
     outputLabel: "JSON headers",
-    transform: (value) => JSON.stringify(Object.fromEntries(normalizeLines(value).split("\n").map((line) => {
-      const [key = "", ...rest] = line.split(":");
-      return [key.trim().toLowerCase(), rest.join(":").trim()];
-    })), null, 2),
+    transform: parseHttpHeaders,
   },
   "user-agent-parser": {
     label: "User agent",
@@ -1434,49 +1578,49 @@ const genericToolConfigs: Record<string, GenericToolConfig> = {
     label: "Text",
     sample: "Madabase 工具",
     outputLabel: "Unicode escaped",
-    transform: (value) => value.split("").map((char) => `\\u${char.charCodeAt(0).toString(16).padStart(4, "0")}`).join(""),
+    transform: unicodeEscape,
   },
   "unicode-unescape": {
     label: "Unicode escaped text",
     sample: "\\u004d\\u0061\\u0064\\u0061\\u0062\\u0061\\u0073\\u0065",
     outputLabel: "Text",
-    transform: (value) => value.replace(/\\u([\dA-F]{4})/gi, (_, code: string) => String.fromCharCode(Number.parseInt(code, 16))),
+    transform: unicodeUnescape,
   },
   "hex-to-text": {
     label: "Hex",
     sample: "4d61646162617365",
     outputLabel: "Text",
-    transform: (value) => value.replace(/\s+/g, "").match(/.{1,2}/g)?.map((item) => String.fromCharCode(Number.parseInt(item, 16))).join("") ?? "",
+    transform: hexToText,
   },
   "text-to-hex": {
     label: "Text",
     sample: "Madabase",
     outputLabel: "Hex",
-    transform: (value) => value.split("").map((char) => char.charCodeAt(0).toString(16).padStart(2, "0")).join(""),
+    transform: textToHex,
   },
   "binary-to-text": {
     label: "Binary",
     sample: "01001101 01100001 01100100 01100001",
     outputLabel: "Text",
-    transform: (value) => value.trim().split(/\s+/).map((item) => String.fromCharCode(Number.parseInt(item, 2))).join(""),
+    transform: binaryToText,
   },
   "text-to-binary": {
     label: "Text",
     sample: "Mada",
     outputLabel: "Binary",
-    transform: (value) => value.split("").map((char) => char.charCodeAt(0).toString(2).padStart(8, "0")).join(" "),
+    transform: textToBinary,
   },
   "html-stripper": {
     label: "HTML",
     sample: "<article><h1>Madabase</h1><p>Useful tools.</p></article>",
     outputLabel: "Plain text",
-    transform: (value) => value.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim(),
+    transform: stripHtml,
   },
   "markdown-to-text": {
     label: "Markdown",
     sample: "# Madabase\n\nBuild **useful** tools with [links](https://madabase.com).",
     outputLabel: "Plain text",
-    transform: (value) => value.replace(/[#*_`>-]/g, "").replace(/\[([^\]]+)\]\([^)]+\)/g, "$1").replace(/\s+/g, " ").trim(),
+    transform: markdownToText,
   },
   "reading-time": {
     label: "Article text",

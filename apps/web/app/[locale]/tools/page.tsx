@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { AdSlot } from "@/components/AdSlot";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-import { JsonLd, buildBreadcrumbSchema } from "@/components/JsonLd";
+import { JsonLd, buildBreadcrumbSchema, buildItemListSchema } from "@/components/JsonLd";
 import { PageViewTracker } from "@/components/PageViewTracker";
 import { ToolIcon } from "@/components/ToolIcon";
 import { getCategoryLabel, isLocale, locales, toolCategoryLabels } from "@/lib/i18n";
@@ -82,6 +82,17 @@ export default async function ToolsPage({ params }: { params: Promise<{ locale: 
     { name: "Madabase", item: buildAbsoluteUrl(`/${locale}`) },
     { name: locale === "en" ? "Tools" : "工具", item: buildAbsoluteUrl(`/${locale}/tools`) },
   ]);
+  const itemListSchema = buildItemListSchema({
+    name: copy.title,
+    description: copy.description,
+    url: buildAbsoluteUrl(`/${locale}/tools`),
+    locale,
+    items: toolRegistry.map((tool) => ({
+      name: tool.h1[locale],
+      description: tool.description[locale],
+      url: buildAbsoluteUrl(`/${locale}/tools/${tool.slug}`),
+    })),
+  });
 
   // Load tool content for display titles
   const toolsWithContent = await Promise.all(
@@ -122,6 +133,7 @@ export default async function ToolsPage({ params }: { params: Promise<{ locale: 
       <Header locale={locale} pathname="/tools" />
       <main className="page-shell">
         <JsonLd id="tools-index-breadcrumbs" data={breadcrumbSchema} />
+        <JsonLd id="tools-index-list" data={itemListSchema} />
         <PageViewTracker locale={locale} />
         <AdSlot locale={locale} position="header" size="banner" />
         <section className="surface-card-strong p-6 sm:p-8 lg:p-10">

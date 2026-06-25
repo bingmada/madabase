@@ -51,6 +51,36 @@ export function buildSoftwareApplicationSchema({
   };
 }
 
+export function buildItemListSchema({
+  name,
+  description,
+  url,
+  items,
+  locale,
+}: {
+  name: string;
+  description: string;
+  url: string;
+  items: Array<{ name: string; description: string; url: string }>;
+  locale: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name,
+    description,
+    url,
+    inLanguage: locale,
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      url: item.url,
+      name: item.name,
+      description: item.description,
+    })),
+  };
+}
+
 export function buildFaqSchema(items: Array<{ q: string; a: string }>, locale: string) {
   return {
     "@context": "https://schema.org",

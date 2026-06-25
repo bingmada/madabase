@@ -28,6 +28,15 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
   if (!product) notFound();
   const displayName = product.amazonTitle ?? product.name;
   const displayImage = product.amazonImage ?? product.image;
+  const productFacts = [
+    ["Exact product", displayName],
+    ["Brand", product.brand],
+    ["Best use case", product.bestFor],
+    ["Category", product.category],
+    ["ASIN", product.asin ?? product.specs.ASIN ?? "Confirm on the current Amazon listing"],
+    ["Price band", product.priceBand],
+  ];
+  const compatibilityChecks = product.evidence.slice(0, 5);
 
   const productSchema = {
     "@context": "https://schema.org",
@@ -77,6 +86,30 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                     <p className="mt-1 font-semibold">{product.cons[0]}</p>
                   </div>
                 </div>
+              </div>
+              <div className="not-prose mt-5 grid gap-5 lg:grid-cols-2">
+                <section className="rounded-md border border-[var(--border)] bg-white p-5">
+                  <h2 className="text-xl font-bold">Product facts</h2>
+                  <dl className="mt-4 divide-y divide-[var(--border)]">
+                    {productFacts.map(([label, value]) => (
+                      <div className="grid grid-cols-[130px_1fr] gap-3 py-3 text-sm" key={label}>
+                        <dt className="font-semibold text-[var(--muted)]">{label}</dt>
+                        <dd className="font-bold text-[var(--text)]">{value}</dd>
+                      </div>
+                    ))}
+                  </dl>
+                </section>
+                <section className="rounded-md border border-[var(--border)] bg-white p-5">
+                  <h2 className="text-xl font-bold">Compatibility checks</h2>
+                  <ul className="mt-4 space-y-3 text-sm leading-6 text-[var(--muted)]">
+                    {compatibilityChecks.map((item) => (
+                      <li className="flex gap-2" key={item}>
+                        <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--brand)]" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </section>
               </div>
               <h2>Our take</h2>
               <p>

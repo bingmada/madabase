@@ -5,19 +5,9 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { JsonLd, buildArticleSchema, buildBreadcrumbSchema } from "@/components/JsonLd";
-import { isLocale, locales } from "@/lib/i18n";
-import { mbtiSeoPageMap, mbtiSeoPages } from "@/lib/mbti-seo";
+import { isLocale } from "@/lib/i18n";
+import { mbtiSeoPageMap } from "@/lib/mbti-seo";
 import { buildAbsoluteUrl, buildPageMetadata } from "@/lib/seo";
-
-export function generateStaticParams() {
-  return locales.flatMap((locale) =>
-    mbtiSeoPages.map((page) => ({
-      locale,
-      topic: page.topic,
-      seoSlug: page.slug,
-    })),
-  );
-}
 
 export async function generateMetadata({
   params,
@@ -29,7 +19,7 @@ export async function generateMetadata({
   const page = mbtiSeoPageMap.get(`${topic}/${seoSlug}`);
   if (!page) return {};
 
-  return buildPageMetadata({
+  const metadata = buildPageMetadata({
     title: page.title[locale],
     description: page.description[locale],
     locale,
@@ -37,6 +27,14 @@ export async function generateMetadata({
     keywords: [page.type, page.secondaryType, page.title[locale], "MBTI", "personality"].filter(Boolean) as string[],
     type: "article",
   });
+
+  return {
+    ...metadata,
+    robots: {
+      index: false,
+      follow: true,
+    },
+  };
 }
 
 export default async function MbtiSeoPage({

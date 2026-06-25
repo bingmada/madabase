@@ -2,7 +2,7 @@
 import { useMemo, useState } from "react";
 import type { Locale } from "@/lib/i18n";
 import { fireAndForgetToolExecution } from "@/lib/tool-usage-client";
-import { ToolButton, ToolPanel } from "./ToolPrimitives";
+import { CopyButton, ResetButton, ToolButton, ToolInput, ToolPanel } from "./ToolPrimitives";
 
 function normalizeTimestamp(value: string) {
   const numeric = Number(value);
@@ -10,8 +10,14 @@ function normalizeTimestamp(value: string) {
   return numeric < 10_000_000_000 ? numeric * 1000 : numeric;
 }
 
+function toDateTimeLocal(value: Date) {
+  const offset = value.getTimezoneOffset() * 60_000;
+  return new Date(value.getTime() - offset).toISOString().slice(0, 16);
+}
+
 export function TimestampConverter({ locale = "en" }: { locale?: Locale }) {
   const [timestamp, setTimestamp] = useState(() => Math.floor(Date.now() / 1000).toString());
+  const [dateInput, setDateInput] = useState(() => toDateTimeLocal(new Date()));
 
   const result = useMemo(() => {
     const normalized = normalizeTimestamp(timestamp);
@@ -26,21 +32,35 @@ export function TimestampConverter({ locale = "en" }: { locale?: Locale }) {
       iso: date.toISOString(),
     };
   }, [timestamp]);
+  const summary = result ? Object.entries(result).map(([key, value]) => `${key}: ${value}`).join("\n") : "";
+
+  function applyCurrentTime(unit: "seconds" | "milliseconds") {
+    const now = new Date();
+    setDateInput(toDateTimeLocal(now));
+    setTimestamp(unit === "seconds" ? Math.floor(now.getTime() / 1000).toString() : now.getTime().toString());
+    fireAndForgetToolExecution("timestamp-converter");
+  }
+
+  function convertDateToTimestamp() {
+    const date = new Date(dateInput);
+    if (Number.isNaN(date.getTime())) return;
+    setTimestamp(Math.floor(date.getTime() / 1000).toString());
+    fireAndForgetToolExecution("timestamp-converter");
+  }
 
   return (
     <ToolPanel>
       <div className="space-y-4">
-        <label className="block">
-          <span className="code-font text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-soft)]">{locale === "zh" ? "Unix 时间戳" : "Unix timestamp"}</span>
-          <input
-            value={timestamp}
-            onChange={(event) => setTimestamp(event.target.value)}
-            className="code-font mt-2 h-11 w-full rounded-md border border-[var(--border)] bg-white px-3 text-sm outline-none focus:border-[var(--brand)] focus:ring-2 focus:ring-[rgba(15,118,110,0.13)]"
-          />
-        </label>
+        <div className="grid gap-4 md:grid-cols-2">
+          <ToolInput label={locale === "zh" ? "Unix 时间戳" : "Unix timestamp"} value={timestamp} onChange={setTimestamp} />
+          <ToolInput label={locale === "zh" ? "日期时间" : "Date and time"} value={dateInput} onChange={setDateInput} type="datetime-local" />
+        </div>
         <div className="flex flex-wrap gap-2">
-          <ToolButton onClick={() => { setTimestamp(Math.floor(Date.now() / 1000).toString()); fireAndForgetToolExecution("timestamp-converter"); }}>{locale === "zh" ? "使用当前秒级时间戳" : "Use current seconds"}</ToolButton>
-          <ToolButton onClick={() => { setTimestamp(Date.now().toString()); fireAndForgetToolExecution("timestamp-converter"); }} variant="secondary">{locale === "zh" ? "使用当前毫秒时间戳" : "Use current milliseconds"}</ToolButton>
+          <ToolButton onClick={() => applyCurrentTime("seconds")}>{locale === "zh" ? "当前秒级" : "Current seconds"}</ToolButton>
+          <ToolButton onClick={() => applyCurrentTime("milliseconds")} variant="secondary">{locale === "zh" ? "当前毫秒级" : "Current milliseconds"}</ToolButton>
+          <ToolButton onClick={convertDateToTimestamp} variant="secondary">{locale === "zh" ? "日期转时间戳" : "Date to timestamp"}</ToolButton>
+          <CopyButton value={summary} />
+          <ResetButton onClick={() => { const now = new Date(); setTimestamp(Math.floor(now.getTime() / 1000).toString()); setDateInput(toDateTimeLocal(now)); }} />
         </div>
         {result ? (
           <dl className="grid gap-3 rounded-md border border-[var(--border)] bg-white p-4 text-sm sm:grid-cols-2">

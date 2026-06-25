@@ -5,7 +5,7 @@ import { AuthCard } from "@/components/AuthCard";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { isLocale, locales } from "@/lib/i18n";
-import { buildPageMetadata } from "@/lib/seo";
+import { buildPageMetadata, withNoIndex } from "@/lib/seo";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -14,13 +14,13 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   if (!isLocale(locale)) return {};
-  return buildPageMetadata({
+  return withNoIndex(buildPageMetadata({
     title: locale === "en" ? "Login" : "登录",
     description: locale === "en" ? "Log in to Madabase with email and a verification code." : "使用邮箱与验证码登录 Madabase。",
     locale,
     path: "/login",
     keywords: ["madabase login", "email login"],
-  });
+  }));
 }
 
 export default async function LoginPage({

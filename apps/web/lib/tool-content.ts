@@ -64,6 +64,8 @@ async function getRegistryToolContent(slug: string): Promise<ToolContent | null>
   const { toolMap } = await import("./tool-registry");
   const tool = toolMap.get(slug);
   if (!tool) return null;
+  const relatedTools = tool.relatedTools.filter((relatedSlug) => toolMap.has(relatedSlug));
+  const primaryKeyword = tool.keywords[0] ?? tool.h1.en.toLowerCase();
 
   return {
     slug,
@@ -72,41 +74,41 @@ async function getRegistryToolContent(slug: string): Promise<ToolContent | null>
     description: tool.description,
     seo: {
       en: {
-        title: `${tool.h1.en} | Madabase`,
-        description: tool.description.en,
+        title: `${tool.h1.en} - Free Browser-Based Tool`,
+        description: `${tool.description.en} Use this free online tool in your browser with no sign-up required.`,
         keywords: tool.keywords,
       },
       zh: {
-        title: `${tool.h1.zh} | Madabase`,
-        description: tool.description.zh,
+        title: `${tool.h1.zh} - 免费浏览器工具`,
+        description: `${tool.description.zh} 无需注册，直接在浏览器中使用。`,
         keywords: tool.keywords,
       },
     },
     intro: {
-      en: `${tool.description.en} Use this browser-based utility for quick calculations, planning, or everyday decisions.`,
-      zh: `${tool.description.zh} 这个工具适合快速计算、规划和日常决策。`,
+      en: `${tool.description.en} This ${primaryKeyword} is designed for quick browser-based work: enter your inputs, review the result, and adjust the assumptions until the output fits your situation. It is useful for lightweight planning, everyday calculations, cleanup tasks, and repeatable workflows where you want a fast answer without creating an account.`,
+      zh: `${tool.description.zh} 这个工具适合在浏览器里快速完成轻量计算、整理或规划：输入必要信息，查看结果，再根据实际情况调整假设。无需注册，适合日常决策、内容处理和重复性工作流。`,
     },
     howToUse: {
       en: [
-        { title: "Enter your inputs", content: "Paste or type the values requested by the tool." },
-        { title: "Run the tool", content: "Click the action button to calculate or generate the result locally." },
-        { title: "Review the output", content: "Use the result as a practical reference and adjust the assumptions if needed." },
+        { title: "Enter the required values", content: "Add the text, numbers, dates, or options the tool asks for. Use realistic inputs so the result is easier to interpret." },
+        { title: "Generate the result", content: "Run the tool and review the output immediately in your browser. Most workflows are designed for quick iteration." },
+        { title: "Adjust and reuse", content: "Change one input at a time to compare scenarios, then copy or save the result you want to keep." },
       ],
       zh: [
-        { title: "输入信息", content: "按工具提示输入文本、数字或日期。" },
-        { title: "运行工具", content: "点击按钮，在浏览器本地生成结果。" },
-        { title: "查看结果", content: "把结果作为参考，并根据实际情况调整假设。" },
+        { title: "输入必要信息", content: "按工具提示填写文本、数字、日期或选项。输入越贴近真实场景，结果越容易参考。" },
+        { title: "生成结果", content: "运行工具并在浏览器中直接查看输出，大多数流程都适合快速反复调整。" },
+        { title: "调整并复用", content: "一次修改一个输入，对比不同结果，然后复制或保留最适合当前场景的输出。" },
       ],
     },
     examples: {
-      en: [{ input: "Sample input", output: "Calculated output" }],
-      zh: [{ input: "示例输入", output: "计算结果" }],
+      en: [{ input: `Use ${tool.h1.en} with a realistic value or short sample.`, output: `The tool returns a clear ${tool.category} workflow result you can review, adjust, or copy.` }],
+      zh: [{ input: `使用${tool.h1.zh}并输入一个真实示例。`, output: `工具会生成清晰的${tool.category}类结果，便于查看、调整或复制。` }],
     },
     faq: {
       en: [localFaq.en],
       zh: [localFaq.zh],
     },
-    relatedTools: tool.relatedTools,
+    relatedTools,
     category: tool.category,
   };
 }

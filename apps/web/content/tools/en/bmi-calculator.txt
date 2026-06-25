@@ -1,0 +1,45 @@
+[TITLE]
+Online BMI Calculator
+[H1]
+Online BMI Calculator
+[DESCRIPTION]
+Calculate body mass index from height and weight.
+[SEO_TITLE]
+Online BMI Calculator - Body Mass Index Tool
+[SEO_DESCRIPTION]
+Calculate BMI from height and weight with a fast browser-based BMI calculator. Review the basic category and compare different weight scenarios.
+[INTRO]
+A BMI calculator estimates body mass index from height and weight. It is a quick reference for understanding whether a weight sits in a common underweight, normal, overweight, or obesity range. BMI is not a medical diagnosis, but it can be useful for routine tracking, goal planning, and conversations with a health professional.
+[HOW_TO_USE]
+Enter height and weight
+Type your current height and weight using the units shown in the tool.
+---
+Calculate BMI
+Run the calculator to get your BMI value and the basic category.
+---
+Compare scenarios
+Adjust the weight value to see how the BMI changes for planning or reference.
+[EXAMPLES]
+Height: 175 cm
+Weight: 70 kg
+===
+BMI: 22.9
+Category: Normal range
+[FAQ]
+What does BMI mean?
+BMI means body mass index. It compares weight with height and gives a simple population-level reference number.
+Is BMI a medical diagnosis?
+No. BMI does not measure body fat, muscle, age, or health history. Use it as a rough reference, not a diagnosis.
+Can athletes have a high BMI?
+Yes. People with more muscle can have a higher BMI even when their body composition is healthy.
+[RELATED_TOOLS]
+calorie-calculator
+sleep-calculator
+reading-time
+[KEYWORDS]
+bmi calculator
+body mass index
+calculate bmi online
+height weight bmi
+[CATEGORY]
+web

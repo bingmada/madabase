@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { AdSlot } from "@/components/AdSlot";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-import { JsonLd, buildBreadcrumbSchema } from "@/components/JsonLd";
+import { JsonLd, buildBreadcrumbSchema, buildItemListSchema } from "@/components/JsonLd";
 import { PageViewTracker } from "@/components/PageViewTracker";
 import { ToolIcon } from "@/components/ToolIcon";
 import { Breadcrumb } from "@/components/Breadcrumb";
@@ -69,6 +69,17 @@ export default async function CategoryPage({ params }: { params: Promise<{ local
     { name: locale === "en" ? "Tools" : "工具", item: buildAbsoluteUrl(`/${locale}/tools`) },
     { name: meta[locale].title, item: buildAbsoluteUrl(`/${locale}/tools/category/${category}`) },
   ]);
+  const itemListSchema = buildItemListSchema({
+    name: meta[locale].title,
+    description: meta[locale].description,
+    url: buildAbsoluteUrl(`/${locale}/tools/category/${category}`),
+    locale,
+    items: tools.map((tool) => ({
+      name: tool.h1[locale],
+      description: tool.description[locale],
+      url: buildAbsoluteUrl(`/${locale}/tools/${tool.slug}`),
+    })),
+  });
 
   const copy = {
     en: {
@@ -86,6 +97,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ local
       <Header locale={locale} pathname={`/tools/category/${category}`} />
       <main className="page-shell">
         <JsonLd id={`category-${category}-breadcrumbs`} data={breadcrumbSchema} />
+        <JsonLd id={`category-${category}-list`} data={itemListSchema} />
         <PageViewTracker locale={locale} />
         <AdSlot locale={locale} position="header" size="banner" />
 

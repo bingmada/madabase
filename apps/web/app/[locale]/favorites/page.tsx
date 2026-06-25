@@ -6,7 +6,7 @@ import { Header } from "@/components/Header";
 import { requireUser } from "@/lib/auth/services/sessionService";
 import { prisma } from "@/lib/db/client";
 import { isLocale, locales } from "@/lib/i18n";
-import { buildPageMetadata } from "@/lib/seo";
+import { buildPageMetadata, withNoIndex } from "@/lib/seo";
 import { toolMap } from "@/lib/tool-registry";
 
 export function generateStaticParams() {
@@ -16,13 +16,13 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   if (!isLocale(locale)) return {};
-  return buildPageMetadata({
+  return withNoIndex(buildPageMetadata({
     title: locale === "en" ? "Favorites" : "收藏",
     description: locale === "en" ? "View your saved favorite tools." : "查看你收藏的工具。",
     locale,
     path: "/favorites",
     keywords: ["madabase favorites"],
-  });
+  }));
 }
 
 export default async function FavoritesPage({ params }: { params: Promise<{ locale: string }> }) {

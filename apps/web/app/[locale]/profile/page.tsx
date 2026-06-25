@@ -8,7 +8,7 @@ import { requireUser } from "@/lib/auth/services/sessionService";
 import { getRecentToolUsage } from "@/lib/tool-usage";
 import { isLocale, locales } from "@/lib/i18n";
 import { canAccessOps } from "@/lib/ops-access";
-import { buildPageMetadata } from "@/lib/seo";
+import { buildPageMetadata, withNoIndex } from "@/lib/seo";
 import { testMap } from "@/lib/test-registry";
 import { toolMap } from "@/lib/tool-registry";
 import { getExistingCreditBalance, getProfileDashboard, getTestUnlockHistory } from "@/lib/user-dashboard";
@@ -20,13 +20,13 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   if (!isLocale(locale)) return {};
-  return buildPageMetadata({
+  return withNoIndex(buildPageMetadata({
     title: locale === "en" ? "Profile" : "个人中心",
     description: locale === "en" ? "Manage your Madabase account profile." : "管理你的 Madabase 账户资料。",
     locale,
     path: "/profile",
     keywords: ["madabase profile"],
-  });
+  }));
 }
 
 function formatDate(date: Date, locale: "en" | "zh") {

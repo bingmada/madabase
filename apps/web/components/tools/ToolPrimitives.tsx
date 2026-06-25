@@ -112,7 +112,7 @@ export function ToolInput({
   onChange?: (value: string) => void;
   placeholder?: string;
   readOnly?: boolean;
-  type?: "text" | "number";
+  type?: "text" | "number" | "time" | "datetime-local";
 }) {
   return (
     <label className="block">

@@ -1,0 +1,43 @@
+[TITLE]
+Online Zodiac Compatibility Calculator
+[H1]
+Online Zodiac Compatibility Calculator
+[DESCRIPTION]
+Compare two zodiac signs and get a simple compatibility score.
+[SEO_TITLE]
+Online Zodiac Compatibility Calculator - Compare Two Signs
+[SEO_DESCRIPTION]
+Compare two zodiac signs with a lightweight compatibility score, attraction points, conflict points, and relationship prompts.
+[INTRO]
+A zodiac compatibility calculator compares two signs and turns the result into a lightweight reflection prompt. It is meant for entertainment, conversation, and self-observation rather than serious relationship prediction. Use it to explore attraction points, possible friction, and simple ways to communicate better.
+[HOW_TO_USE]
+Choose two signs
+Select your zodiac sign and the other person's sign.
+---
+Review the score
+Read the compatibility score, strengths, and possible conflict points.
+---
+Use it as a prompt
+Treat the result as a conversation starter, not a fixed rule about the relationship.
+[EXAMPLES]
+Aries + Leo
+===
+High energy match with strong attraction, but both sides may need space for pride and independence.
+[FAQ]
+Is zodiac compatibility scientific?
+No. This tool is for entertainment and reflection, not scientific or relationship diagnosis.
+Can two low-score signs still work well?
+Yes. Real relationships depend on communication, values, timing, effort, and mutual care.
+How should I use the result?
+Use it as a fun prompt to discuss preferences, conflict styles, and expectations.
+[RELATED_TOOLS]
+birthday-five-elements
+list-randomizer
+text-cleaner
+[KEYWORDS]
+zodiac compatibility
+horoscope compatibility
+zodiac match
+star sign compatibility
+[CATEGORY]
+creator

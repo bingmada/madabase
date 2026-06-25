@@ -105,3 +105,13 @@ export function buildToolMetadata({
     type: "website",
   });
 }
+
+export function withNoIndex(metadata: Metadata): Metadata {
+  return {
+    ...metadata,
+    robots: {
+      index: false,
+      follow: true,
+    },
+  };
+}
