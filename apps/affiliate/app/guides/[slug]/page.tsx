@@ -2,8 +2,91 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/JsonLd";
 import { findGuide, findRoundup } from "@/lib/content";
-import { breadcrumbSchema, pageMetadata } from "@/lib/seo";
+import { breadcrumbSchema, guideSchema, pageMetadata } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
+import type { SiteKey } from "@/lib/types";
+
+type AdviceBlock = {
+  checklist: string[];
+  mistakes: string[];
+  decision: string;
+};
+
+const siteAdvice: Record<SiteKey, AdviceBlock> = {
+  pet: {
+    checklist: [
+      "Confirm the product fits the pet's size, food type, room layout, and cleaning routine.",
+      "Check replacement parts, filters, bags, refills, or app features before comparing price.",
+      "Read recent owner feedback for noise, durability, chewing risk, and setup friction.",
+    ],
+    mistakes: [
+      "Buying the largest or smartest option before checking daily cleaning effort.",
+      "Treating odor, hydration, feeding, or monitoring gear as a substitute for the routine itself.",
+      "Ignoring where the pet actually eats, sleeps, waits, or makes messes during the day.",
+    ],
+    decision: "Choose the simpler product when the problem is routine consistency; choose the more specialized product only when it removes a repeated chore you already know you have.",
+  },
+  homeoffice: {
+    checklist: [
+      "Measure the desk, chair clearance, monitor distance, wall outlet path, and device count first.",
+      "Check return policy for body-fit products such as chairs, desks, arms, and lighting.",
+      "Confirm compatibility with your laptop, monitor weight, desk edge, cable path, and room lighting.",
+    ],
+    mistakes: [
+      "Buying an ergonomic-looking product without checking the adjustment range.",
+      "Solving visual clutter before solving posture, power, and daily connection friction.",
+      "Assuming one accessory can fix a desk layout that lacks depth or cable slack.",
+    ],
+    decision: "Spend more when the product affects daily posture or every workday setup; spend less when the item is only organizing a stable setup you already like.",
+  },
+  baby: {
+    checklist: [
+      "Read the exact age, weight, position, cleaning, and safety-use limits for the model.",
+      "Check whether the product solves a daily routine problem or only looks useful on a registry.",
+      "Confirm the current bundle, accessories, replacement parts, and return path before buying.",
+    ],
+    mistakes: [
+      "Buying for every possible scenario instead of the next few months of real care.",
+      "Letting app features, analytics, or premium bundles distract from safe-use guidance.",
+      "Choosing a large appliance or stroller before checking storage and cleaning friction.",
+    ],
+    decision: "Prefer the product that makes repeated care safer and easier; skip upgrades that add cleaning, charging, storage, or app work without solving a current routine problem.",
+  },
+  network: {
+    checklist: [
+      "Map the modem or ONT location, office desk, TV area, and any rooms that need wired stability.",
+      "Check WAN/LAN port speeds, wired backhaul options, and whether your internet plan actually needs Wi-Fi 7.",
+      "Count fixed devices separately from phones, tablets, and smart-home gear before buying a bigger system.",
+    ],
+    mistakes: [
+      "Buying the fastest advertised Wi-Fi number while leaving the router in a bad location.",
+      "Ignoring Ethernet paths that could make mesh nodes, TVs, consoles, or office desks more stable.",
+      "Choosing a premium router before checking client device support, subscription features, and return path.",
+    ],
+    decision: "Spend more when coverage, wired backhaul, multi-gig ports, or device count solves a known bottleneck; spend less when placement or one Ethernet run fixes the problem first.",
+  },
+};
+
+const categoryAdvice: Record<string, string[]> = {
+  feeding: ["Capacity matters only after you count real daily parts or meals.", "Cleaning access is a buying feature, not a minor detail.", "Recurring parts and refills can change the total cost more than the sale price."],
+  "home-care": ["Separate source control from air or surface cleanup.", "Noise and placement matter because these products live in shared rooms.", "Replacement filters, bags, and refills should be checked before purchase."],
+  comfort: ["Fit, washable materials, and long-term durability matter more than product photos.", "Measure the actual sleeping or resting area before choosing size.", "Skip soft upgrades that create more cleaning work than comfort."],
+  desks: ["Depth and cable path usually matter more than desktop width.", "Standing setups need safe slack through the full height range.", "Measure the room path, chair pullout, and outlet location before buying."],
+  ergonomics: ["Adjustment range is more important than an ergonomic label.", "Body-fit products need a realistic return path.", "Monitor and keyboard height should be solved separately."],
+  meetings: ["Light placement usually improves calls before a new camera does.", "Avoid gear that requires awkward controls during meeting days.", "Check glare, background brightness, and audio before buying more accessories."],
+  sleep: ["Safe-use guidance comes before convenience features.", "Night controls should be simple when caregivers are tired.", "Treat analytics and smart alerts as optional, not required."],
+  travel: ["Folded size, carry weight, and storage routine matter together.", "Check age and weight limits before comparing style.", "The right travel product should also survive ordinary errands."],
+  wifi: ["Coverage claims assume ideal rooms; walls, floors, and router placement change the result.", "Multi-gig ports matter only when the modem, router, switch, and client path can use them.", "Mesh is easier, but wired backhaul is usually the cleaner long-term upgrade."],
+  wired: ["A cheap switch is fine for simple rooms, but port speed and management features matter for NAS or office setups.", "Cable category should match run length and future speed needs.", "Adapters and hubs should be checked against laptop charging, display, and Ethernet needs together."],
+  backup: ["UPS sizing starts with modem, ONT, router, and mesh node power draw.", "Runtime claims depend on load, battery age, and outlet layout.", "Keep network backup simple enough that it still works during a real outage."],
+};
+
+function guideAdvice(siteKey: SiteKey, category: string) {
+  return {
+    ...siteAdvice[siteKey],
+    categoryChecks: categoryAdvice[category] ?? ["Check the exact model, room fit, cleaning routine, and return policy before buying.", "Compare total ownership cost, not only the first checkout price.", "Choose the option that solves the recurring problem with the least added friction."],
+  };
+}
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const site = await getCurrentSite();
@@ -18,10 +101,12 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
   const { slug } = await params;
   const guide = findGuide(site.key, slug);
   if (!guide) notFound();
+  const advice = guideAdvice(site.key, guide.category);
 
   return (
     <main className="section">
       <JsonLd data={breadcrumbSchema(site, [{ name: "Home", path: "/" }, { name: guide.title, path: `/guides/${slug}` }])} />
+      <JsonLd data={guideSchema(site, guide)} />
       <div className="shell max-w-4xl">
         <p className="eyebrow">{guide.category}</p>
         <h1 className="mt-3 text-4xl font-black leading-tight">{guide.title}</h1>
@@ -34,6 +119,40 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             </section>
           ))}
         </article>
+        <section className="mt-10">
+          <p className="eyebrow">Buying framework</p>
+          <h2 className="mt-3 text-2xl font-bold">What to check before you choose</h2>
+          <div className="mt-5 grid gap-6 md:grid-cols-3">
+            <div>
+              <h3 className="font-bold">Checklist</h3>
+              <ul className="mt-3 space-y-3 text-sm leading-6 text-[var(--muted)]">
+                {advice.checklist.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-bold">Common mistakes</h3>
+              <ul className="mt-3 space-y-3 text-sm leading-6 text-[var(--muted)]">
+                {advice.mistakes.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-bold">Category checks</h3>
+              <ul className="mt-3 space-y-3 text-sm leading-6 text-[var(--muted)]">
+                {advice.categoryChecks.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <div className="mt-6 rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-5">
+            <h3 className="font-bold">Decision rule</h3>
+            <p className="mt-2 leading-7 text-[var(--muted)]">{advice.decision}</p>
+          </div>
+        </section>
         <div className="mt-10 grid gap-4 sm:grid-cols-2">
           {guide.relatedRoundups.map((slug) => {
             const roundup = findRoundup(site.key, slug);

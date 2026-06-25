@@ -2,7 +2,7 @@ import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
 import { Hero, ProductCard, RoundupCard, TrustBar } from "@/components/LayoutParts";
 import { siteGuides, siteProducts, siteRoundups, siteTools } from "@/lib/content";
-import { organizationSchema, pageMetadata } from "@/lib/seo";
+import { itemListSchema, organizationSchema, pageMetadata, websiteSchema } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 import type { SiteKey } from "@/lib/types";
 
@@ -22,6 +22,11 @@ const homeCopy: Record<SiteKey, { eyebrow: string; heading: string; body: string
     heading: "Make safer, calmer choices for sleep, travel, feeding, and daily routines.",
     body: "Compare monitors, travel strollers, sterilizers, carriers, sound machines, and feeding helpers by safety fit, cleaning effort, storage, and everyday friction.",
   },
+  network: {
+    eyebrow: "Home network buying guides",
+    heading: "Build a faster, calmer network for Wi-Fi, wired rooms, travel, and backup power.",
+    body: "Compare mesh Wi-Fi, Wi-Fi 7 routers, switches, Ethernet cables, USB-C network adapters, and router UPS options by layout, device count, wired backhaul, and setup friction.",
+  },
 };
 
 export async function generateMetadata() {
@@ -37,10 +42,18 @@ export default async function HomePage() {
   const guides = siteGuides(site.key);
   const tools = siteTools(site.key);
   const copy = homeCopy[site.key];
+  const discoveryItems = [
+    ...roundups.map((roundup) => ({ name: roundup.title, path: `/best/${roundup.slug}` })),
+    ...linkedProducts.slice(0, 8).map((product) => ({ name: product.amazonTitle ?? product.name, path: `/reviews/${product.slug}` })),
+    ...guides.map((guide) => ({ name: guide.title, path: `/guides/${guide.slug}` })),
+    ...tools.map((tool) => ({ name: tool.title, path: `/tools/${tool.slug}` })),
+  ];
 
   return (
     <main>
       <JsonLd data={organizationSchema(site)} />
+      <JsonLd data={websiteSchema(site)} />
+      <JsonLd data={itemListSchema(site, `${site.name} buying guides and tools`, discoveryItems)} />
       <Hero site={site} />
       <TrustBar />
       <section className="section bg-white" id="reviews">

@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { CalculatorTool } from "@/components/Calculator";
 import { JsonLd } from "@/components/JsonLd";
 import { findRoundup, findTool } from "@/lib/content";
-import { breadcrumbSchema, pageMetadata } from "@/lib/seo";
+import { breadcrumbSchema, pageMetadata, toolSchema } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
@@ -23,6 +23,7 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
   return (
     <main className="section">
       <JsonLd data={breadcrumbSchema(site, [{ name: "Home", path: "/" }, { name: tool.title, path: `/tools/${slug}` }])} />
+      <JsonLd data={toolSchema(site, tool)} />
       <div className="shell max-w-4xl">
         <p className="eyebrow">Calculator</p>
         <h1 className="mt-3 text-4xl font-black leading-tight">{tool.title}</h1>

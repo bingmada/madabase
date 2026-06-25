@@ -6,18 +6,24 @@ import { getCurrentSite } from "@/lib/sites";
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const site = await getCurrentSite();
   const now = new Date();
-  const urls = [
-    "",
-    ...staticPageSlugs.map((slug) => `/${slug}`),
-    ...site.categories.map((category) => `/categories/${category.slug}`),
-    ...roundups.filter((item) => item.site === site.key).map((item) => `/best/${item.slug}`),
-    ...products.filter((item) => item.site === site.key).map((item) => `/reviews/${item.slug}`),
-    ...guides.filter((item) => item.site === site.key).map((item) => `/guides/${item.slug}`),
-    ...tools.filter((item) => item.site === site.key).map((item) => `/tools/${item.slug}`),
+  const urls: Array<{
+    path: string;
+    changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"];
+    priority: number;
+  }> = [
+    { path: "", changeFrequency: "weekly", priority: 1 },
+    ...staticPageSlugs.map((slug) => ({ path: `/${slug}`, changeFrequency: "monthly" as const, priority: 0.45 })),
+    ...site.categories.map((category) => ({ path: `/categories/${category.slug}`, changeFrequency: "weekly" as const, priority: 0.75 })),
+    ...roundups.filter((item) => item.site === site.key).map((item) => ({ path: `/best/${item.slug}`, changeFrequency: "weekly" as const, priority: 0.9 })),
+    ...products.filter((item) => item.site === site.key).map((item) => ({ path: `/reviews/${item.slug}`, changeFrequency: "weekly" as const, priority: 0.82 })),
+    ...guides.filter((item) => item.site === site.key).map((item) => ({ path: `/guides/${item.slug}`, changeFrequency: "monthly" as const, priority: 0.72 })),
+    ...tools.filter((item) => item.site === site.key).map((item) => ({ path: `/tools/${item.slug}`, changeFrequency: "monthly" as const, priority: 0.68 })),
   ];
 
-  return urls.map((path) => ({
-    url: new URL(path || "/", site.domain).toString(),
+  return urls.map((entry) => ({
+    url: new URL(entry.path || "/", site.domain).toString(),
     lastModified: now,
+    changeFrequency: entry.changeFrequency,
+    priority: entry.priority,
   }));
 }

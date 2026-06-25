@@ -13,6 +13,11 @@ export function Footer() {
       tools: "Tools",
       blog: "Blog",
       contact: "Contact",
+      buyingGuides: "Buying Guides",
+      petPicks: "Pet gear",
+      officePicks: "Home office",
+      babyPicks: "Baby gear",
+      networkPicks: "Home network",
     },
     zh: {
       description: "在线工具、实用 SEO 内容，以及面向开发者和创作者的高效工作流。",
@@ -20,12 +25,17 @@ export function Footer() {
       tools: "工具",
       blog: "博客",
       contact: "联系我们",
+      buyingGuides: "选购指南",
+      petPicks: "宠物用品",
+      officePicks: "居家办公",
+      babyPicks: "母婴用品",
+      networkPicks: "家庭网络",
     },
   }[locale];
 
   return (
     <footer className="border-t border-[var(--border)] bg-white/60">
-      <div className="mx-auto grid max-w-6xl gap-6 px-4 py-8 text-sm text-[var(--text-muted)] sm:px-6 lg:px-8 md:grid-cols-[1.2fr_0.8fr_0.8fr]">
+      <div className="mx-auto grid max-w-6xl gap-6 px-4 py-8 text-sm text-[var(--text-muted)] sm:px-6 lg:px-8 md:grid-cols-[1.2fr_0.8fr_0.8fr_0.8fr]">
         <div>
           <p className="font-semibold text-[var(--text)]">Madabase</p>
           <p className="mt-2 leading-6">{copy.description}</p>
@@ -36,6 +46,15 @@ export function Footer() {
             <Link href={`/${locale}/tools`}>{copy.tools}</Link>
             <Link href={`/${locale}/blog`}>{copy.blog}</Link>
             <Link href={`/${locale}/contact`}>{copy.contact}</Link>
+          </div>
+        </div>
+        <div>
+          <p className="font-semibold text-[var(--text)]">{copy.buyingGuides}</p>
+          <div className="mt-2 flex flex-col gap-2">
+            <a href="https://pets.madabase.com">{copy.petPicks}</a>
+            <a href="https://homeoffice.madabase.com">{copy.officePicks}</a>
+            <a href="https://baby.madabase.com">{copy.babyPicks}</a>
+            <a href="https://network.madabase.com">{copy.networkPicks}</a>
           </div>
         </div>
         <div className="flex flex-col justify-between gap-2">

@@ -1,5 +1,6 @@
 import type { Guide, Product, Roundup, SiteKey, Tool } from "./types";
 import { amazonProductOverrides } from "./amazon-overrides";
+import { networkGuides, networkProducts, networkRoundups, networkTools } from "./network-content";
 
 export const products: Product[] = [
   {
@@ -605,27 +606,27 @@ export const products: Product[] = [
   },
   {
     site: "baby",
-    slug: "philips-avent-bottle-sterilizer",
-    name: "Philips Avent Bottle Sterilizer",
-    brand: "Philips Avent",
+    slug: "momcozy-kleanpal-pro-baby-bottle-washer",
+    name: "Momcozy KleanPal Pro Baby Bottle Washer, Sterilizer & Dryer",
+    brand: "Momcozy",
     category: "feeding",
-    image: "/images/affiliate/baby-philips-avent-bottle-sterilizer.webp",
-    summary: "A countertop sterilizer for families who want a dedicated bottle routine without relying on microwave bags.",
-    verdict: "Philips Avent is a familiar sterilizer option for bottle-heavy households that want a clear countertop routine and broad bottle-brand recognition.",
-    whyItMatters: "Feeding gear is used when parents are tired. Capacity, drying expectations, and cleaning steps matter more than fancy buttons.",
-    bestFor: "Families cleaning several bottles per day",
-    priceBand: "$",
-    rating: 4.3,
+    image: "/images/affiliate/baby-momcozy-kleanpal-pro-baby-bottle-washer.webp",
+    summary: "An all-in-one bottle washer, sterilizer, and dryer for families who want less hand-washing across bottles, pump parts, and baby feeding essentials.",
+    verdict: "Momcozy KleanPal Pro makes sense when washing is the bottleneck, not just sterilizing. It is the bigger counter-space commitment for parents who want a machine to handle more of the bottle routine from start to finish.",
+    whyItMatters: "Bottle cleanup is not one step. Washing, sterilizing, drying, and storing clean parts all compete for time and counter space, so an all-in-one machine should be judged by the routine it replaces.",
+    bestFor: "Bottle-heavy homes that want washing plus sterilizing and drying",
+    priceBand: "$$$",
+    rating: 4.4,
     scores: [
-      { label: "Capacity", value: 8 },
+      { label: "Hands-off cleaning", value: 9 },
       { label: "Routine fit", value: 8 },
-      { label: "Counter footprint", value: 7 },
+      { label: "Counter footprint", value: 5 },
     ],
-    pros: ["Dedicated routine for bottles and small feeding parts", "Recognizable brand for registry shoppers", "Useful when counter space is available"],
-    cons: ["Takes more space than microwave bags", "Drying needs vary by exact model"],
-    specs: { "Product type": "Bottle sterilizer", "Use case": "Bottle routine", "Link status": "Amazon affiliate link added" },
-    evidence: ["Check the exact Philips Avent sterilizer model because drying features vary", "Compare bottle, nipple, cap, and pump-part capacity", "Verify compatibility with the bottle system you actually use"],
-    alternatives: ["Choose microwave sterilizer bags for occasional use.", "Choose a washer-style device only if budget and counter space allow."],
+    pros: ["Combines washing, sterilizing, and drying in one machine", "Useful for bottles, pump parts, and repeated daily feeding cleanup", "Can reduce hand-washing time when bottle volume is high"],
+    cons: ["Much larger and pricier than basic sterilizers", "Part compatibility, detergent needs, and cycle time need checking"],
+    specs: { "Product type": "Bottle washer, sterilizer, and dryer", "Use case": "All-in-one feeding-part cleanup", "Link status": "Amazon affiliate link added" },
+    evidence: ["Confirm the exact Momcozy KleanPal Pro bundle and compatible bottle or pump-part shapes", "Check wash, sterilize, dry, and storage cycle options before comparing price", "Measure counter footprint and review detergent or maintenance requirements"],
+    alternatives: ["Choose Baby Brezza if drying is the main upgrade and you do not need automatic washing.", "Use microwave bags or a basic sterilizer if counter space is tight."],
     offers: [{ merchant: "Amazon US", url: "https://amzn.to/4xCYDLT", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." }],
   },
   {
@@ -650,7 +651,7 @@ export const products: Product[] = [
     cons: ["Costs more than basic sterilizers", "Counter footprint and cycle time need checking"],
     specs: { "Product type": "Sterilizer dryer", "Use case": "Bottle and pump-part routine", "Link status": "Amazon affiliate link added" },
     evidence: ["Compare Baby Brezza cycle options, drying modes, and capacity", "Check counter footprint and where clean parts will land after a cycle", "Verify part compatibility for your bottle and pump system"],
-    alternatives: ["Choose Philips Avent for a simpler countertop routine.", "Use microwave bags if space is more important than drying convenience."],
+    alternatives: ["Choose Momcozy KleanPal Pro if washing bottles and pump parts is the main bottleneck.", "Use microwave bags if space is more important than drying convenience."],
     offers: [{ merchant: "Amazon US", url: "https://amzn.to/3SpGssK", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." }],
   },
   {
@@ -963,7 +964,7 @@ export const roundups: Roundup[] = [
       { label: "Registry upgrade", detail: "Convenience matters most if the unit will be used daily." },
     ],
     methodology: ["Compare bottle and pump-part capacity", "Check drying function versus sterilizing-only models", "Measure counter footprint before buying"],
-    productSlugs: ["philips-avent-bottle-sterilizer", "baby-brezza-sterilizer-dryer-advanced"],
+    productSlugs: ["momcozy-kleanpal-pro-baby-bottle-washer", "baby-brezza-sterilizer-dryer-advanced"],
     faqs: [
       { question: "Do all parents need a bottle sterilizer?", answer: "No. Needs vary by feeding routine, medical guidance, and how many bottles or pump parts are used each day." },
       { question: "Is a dryer worth it?", answer: "It can be useful when drying space is limited or parts need to be ready faster." },
@@ -1385,6 +1386,11 @@ export const tools: Tool[] = [
     relatedRoundups: ["best-bottle-sterilizers-and-dryers"],
   },
 ];
+
+products.push(...networkProducts);
+roundups.push(...networkRoundups);
+guides.push(...networkGuides);
+tools.push(...networkTools);
 
 export function siteProducts(site: SiteKey) {
   return products.filter((product) => product.site === site).map(applyAmazonOverride);

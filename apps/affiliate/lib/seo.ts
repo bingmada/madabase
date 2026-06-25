@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import type { SiteConfig } from "./sites";
+import type { Guide, Product, Roundup, Tool } from "./types";
 
 export function absoluteUrl(site: SiteConfig, path = "/") {
   return new URL(path, site.domain).toString();
@@ -38,6 +39,22 @@ export function organizationSchema(site: SiteConfig) {
     "@type": "Organization",
     name: site.name,
     url: site.domain,
+    description: site.description,
+  };
+}
+
+export function websiteSchema(site: SiteConfig) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: site.name,
+    url: site.domain,
+    description: site.description,
+    publisher: {
+      "@type": "Organization",
+      name: site.name,
+      url: site.domain,
+    },
   };
 }
 
@@ -51,5 +68,104 @@ export function breadcrumbSchema(site: SiteConfig, items: Array<{ name: string; 
       name: item.name,
       item: absoluteUrl(site, item.path),
     })),
+  };
+}
+
+export function itemListSchema(site: SiteConfig, name: string, items: Array<{ name: string; path: string }>) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name,
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      url: absoluteUrl(site, item.path),
+    })),
+  };
+}
+
+export function faqPageSchema(faqs: Roundup["faqs"]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
+}
+
+export function reviewSchema(site: SiteConfig, product: Product) {
+  const displayName = product.amazonTitle ?? product.name;
+  const displayImage = product.amazonImage ?? product.image;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "Review",
+    name: `${displayName} Buying Notes`,
+    url: absoluteUrl(site, `/reviews/${product.slug}`),
+    reviewBody: product.verdict ?? product.summary,
+    itemReviewed: {
+      "@type": "Product",
+      name: displayName,
+      brand: { "@type": "Brand", name: product.brand },
+      sku: product.asin ?? product.specs.ASIN,
+      image: absoluteUrl(site, displayImage),
+      description: product.summary,
+    },
+    reviewRating: {
+      "@type": "Rating",
+      ratingValue: product.rating,
+      bestRating: 5,
+      worstRating: 1,
+    },
+    author: {
+      "@type": "Organization",
+      name: site.name,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: site.name,
+      url: site.domain,
+    },
+  };
+}
+
+export function guideSchema(site: SiteConfig, guide: Guide) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: guide.title,
+    description: guide.dek,
+    url: absoluteUrl(site, `/guides/${guide.slug}`),
+    articleSection: guide.category,
+    publisher: {
+      "@type": "Organization",
+      name: site.name,
+      url: site.domain,
+    },
+  };
+}
+
+export function toolSchema(site: SiteConfig, tool: Tool) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: tool.title,
+    description: tool.dek,
+    url: absoluteUrl(site, `/tools/${tool.slug}`),
+    applicationCategory: "UtilityApplication",
+    operatingSystem: "Any",
+    isAccessibleForFree: true,
+    publisher: {
+      "@type": "Organization",
+      name: site.name,
+      url: site.domain,
+    },
   };
 }

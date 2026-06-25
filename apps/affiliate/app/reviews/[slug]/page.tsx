@@ -4,7 +4,7 @@ import { AffiliateButton } from "@/components/AffiliateButton";
 import { JsonLd } from "@/components/JsonLd";
 import { Disclosure } from "@/components/LayoutParts";
 import { findProduct } from "@/lib/content";
-import { breadcrumbSchema, pageMetadata } from "@/lib/seo";
+import { breadcrumbSchema, pageMetadata, reviewSchema } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 
 function siteContext(siteKey: string) {
@@ -38,22 +38,12 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
   ];
   const compatibilityChecks = product.evidence.slice(0, 5);
 
-  const productSchema = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: displayName,
-    brand: { "@type": "Brand", name: product.brand },
-    sku: product.asin,
-    image: displayImage,
-    description: product.summary,
-  };
-
   const context = siteContext(site.key);
 
   return (
     <main className="section">
       <JsonLd data={breadcrumbSchema(site, [{ name: "Home", path: "/" }, { name: product.name, path: `/reviews/${slug}` }])} />
-      <JsonLd data={productSchema} />
+      <JsonLd data={reviewSchema(site, product)} />
       <div className="shell">
         <div className="grid gap-8 lg:grid-cols-[1fr_380px]">
           <article>

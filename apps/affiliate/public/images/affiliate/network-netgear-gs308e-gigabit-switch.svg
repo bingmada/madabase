@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="NETGEAR GS308E Gigabit Switch">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e4f1fb"/><stop offset="1" stop-color="#fff4dc"/></linearGradient></defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <circle cx="1035" cy="130" r="220" fill="#fff" opacity="0.62"/><circle cx="150" cy="675" r="260" fill="#fff" opacity="0.58"/>
+  <rect x="150" y="135" width="900" height="560" rx="36" fill="#fff" opacity="0.84"/>
+  <g transform="translate(80 130) scale(0.82)">
+    <rect x="135" y="285" width="505" height="190" rx="34" fill="#fff" stroke="#255f8f" stroke-width="10"/>
+    <rect x="185" y="345" width="34" height="38" rx="8" fill="#255f8f" opacity="0.9"/><rect x="237" y="345" width="34" height="38" rx="8" fill="#7a5a20" opacity="0.9"/><rect x="289" y="345" width="34" height="38" rx="8" fill="#255f8f" opacity="0.9"/><rect x="341" y="345" width="34" height="38" rx="8" fill="#7a5a20" opacity="0.9"/><rect x="393" y="345" width="34" height="38" rx="8" fill="#255f8f" opacity="0.9"/><rect x="445" y="345" width="34" height="38" rx="8" fill="#7a5a20" opacity="0.9"/><rect x="497" y="345" width="34" height="38" rx="8" fill="#255f8f" opacity="0.9"/><rect x="549" y="345" width="34" height="38" rx="8" fill="#7a5a20" opacity="0.9"/>
+    <path d="M190 420h395" stroke="#8fb0c7" stroke-width="14" stroke-linecap="round"/>
+    <path d="M245 475v70M530 475v70" stroke="#173f63" stroke-width="14" stroke-linecap="round"/></g>
+  <g transform="translate(700 225)">
+    <text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#255f8f">wired</text>
+    <text x="0" y="70" font-family="Arial, Helvetica, sans-serif" font-size="50" font-weight="800" fill="#173f63">NETGEAR GS308E</text>
+    <text x="0" y="130" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="800" fill="#173f63">Gigabit Switch</text>
+    <rect x="0" y="205" width="315" height="16" rx="8" fill="#7a5a20" opacity="0.18"/>
+    <rect x="0" y="240" width="410" height="16" rx="8" fill="#255f8f" opacity="0.14"/>
+    <text x="0" y="315" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#255f8f">layout + ports + setup fit</text>
+  </g>
+</svg>

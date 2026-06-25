@@ -4,9 +4,17 @@ import { Calculator, RotateCcw } from "lucide-react";
 import { useMemo, useState } from "react";
 import type { Tool } from "@/lib/types";
 
+function getDefaultPrimary(kind: Tool["kind"]) {
+  return kind === "desk" ? 68 : kind === "diapers" ? 2 : kind === "wifi" ? 1800 : 10;
+}
+
+function getDefaultSecondary(kind: Tool["kind"]) {
+  return kind === "feeding" ? 220 : kind === "wifi" ? 35 : 0;
+}
+
 export function CalculatorTool({ tool }: { tool: Tool }) {
-  const [primary, setPrimary] = useState(tool.kind === "desk" ? 68 : tool.kind === "diapers" ? 2 : 10);
-  const [secondary, setSecondary] = useState(tool.kind === "feeding" ? 220 : 0);
+  const [primary, setPrimary] = useState(getDefaultPrimary(tool.kind));
+  const [secondary, setSecondary] = useState(getDefaultSecondary(tool.kind));
 
   const result = useMemo(() => {
     if (tool.kind === "desk") {
@@ -23,6 +31,17 @@ export function CalculatorTool({ tool }: { tool: Tool }) {
       return {
         title: "Estimated diaper planning number",
         lines: [`About ${daily} diapers per day`, `About ${daily * 7} diapers per week`, "Keep one backup pack before changing sizes."],
+      };
+    }
+
+    if (tool.kind === "wifi") {
+      const squareFeet = Math.max(200, Math.round(primary));
+      const devices = Math.max(1, Math.round(secondary));
+      const meshNodes = squareFeet <= 1200 ? 1 : squareFeet <= 2600 ? 2 : squareFeet <= 4500 ? 3 : 4;
+      const deviceTier = devices > 100 ? "high-device home" : devices > 50 ? "busy family network" : "normal home network";
+      return {
+        title: "Estimated network planning target",
+        lines: [`Start with about ${meshNodes} Wi-Fi node${meshNodes > 1 ? "s" : ""}`, `Plan for a ${deviceTier}`, "Use wired backhaul where possible for office, TV, NAS, or gaming rooms."],
       };
     }
 
@@ -43,13 +62,13 @@ export function CalculatorTool({ tool }: { tool: Tool }) {
       <div className="mt-5 grid gap-4 sm:grid-cols-2">
         <label className="block">
           <span className="text-sm font-semibold text-[var(--muted)]">
-            {tool.kind === "desk" ? "Your height in inches" : tool.kind === "diapers" ? "Baby age in months" : "Meals per day"}
+            {tool.kind === "desk" ? "Your height in inches" : tool.kind === "diapers" ? "Baby age in months" : tool.kind === "wifi" ? "Home size in square feet" : "Meals per day"}
           </span>
           <input className="mt-2 w-full rounded-md border border-[var(--border)] px-3 py-2" type="number" value={primary} min={1} onChange={(event) => setPrimary(Number(event.target.value))} />
         </label>
-        {tool.kind === "feeding" ? (
+        {tool.kind === "feeding" || tool.kind === "wifi" ? (
           <label className="block">
-            <span className="text-sm font-semibold text-[var(--muted)]">Daily calorie target</span>
+            <span className="text-sm font-semibold text-[var(--muted)]">{tool.kind === "wifi" ? "Connected devices" : "Daily calorie target"}</span>
             <input className="mt-2 w-full rounded-md border border-[var(--border)] px-3 py-2" type="number" value={secondary} min={1} onChange={(event) => setSecondary(Number(event.target.value))} />
           </label>
         ) : (
@@ -66,7 +85,14 @@ export function CalculatorTool({ tool }: { tool: Tool }) {
           ))}
         </ul>
       </div>
-      <button className="button-secondary mt-5" type="button" onClick={() => setPrimary(tool.kind === "desk" ? 68 : tool.kind === "diapers" ? 2 : 10)}>
+      <button
+        className="button-secondary mt-5"
+        type="button"
+        onClick={() => {
+          setPrimary(getDefaultPrimary(tool.kind));
+          setSecondary(getDefaultSecondary(tool.kind));
+        }}
+      >
         <RotateCcw aria-hidden="true" size={16} />
         Reset
       </button>

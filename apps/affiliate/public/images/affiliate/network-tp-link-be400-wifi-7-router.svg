@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="TP-Link BE400 Wi-Fi 7 Router">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e4f1fb"/><stop offset="1" stop-color="#fff4dc"/></linearGradient></defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <circle cx="1035" cy="130" r="220" fill="#fff" opacity="0.62"/><circle cx="150" cy="675" r="260" fill="#fff" opacity="0.58"/>
+  <rect x="150" y="135" width="900" height="560" rx="36" fill="#fff" opacity="0.84"/>
+  <g transform="translate(80 130) scale(0.82)">
+    <rect x="150" y="330" width="455" height="145" rx="34" fill="#fff" stroke="#255f8f" stroke-width="10"/>
+    <path d="M220 330l-55-115M535 330l55-115" stroke="#173f63" stroke-width="16" stroke-linecap="round"/>
+    <circle cx="245" cy="402" r="18" fill="#255f8f"/><circle cx="310" cy="402" r="18" fill="#7a5a20"/><circle cx="375" cy="402" r="18" fill="#9bb8c9"/>
+    <path d="M185 500h395" stroke="#173f63" stroke-width="16" stroke-linecap="round"/>
+    <path d="M665 255c54 52 54 148 0 200M95 255c-54 52-54 148 0 200" fill="none" stroke="#7a5a20" stroke-width="14" stroke-linecap="round" opacity="0.48"/></g>
+  <g transform="translate(700 225)">
+    <text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#255f8f">wifi</text>
+    <text x="0" y="70" font-family="Arial, Helvetica, sans-serif" font-size="50" font-weight="800" fill="#173f63">TP-Link BE400</text>
+    <text x="0" y="130" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="800" fill="#173f63">Wi-Fi 7 Router</text>
+    <rect x="0" y="205" width="315" height="16" rx="8" fill="#7a5a20" opacity="0.18"/>
+    <rect x="0" y="240" width="410" height="16" rx="8" fill="#255f8f" opacity="0.14"/>
+    <text x="0" y="315" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#255f8f">layout + ports + setup fit</text>
+  </g>
+</svg>

@@ -87,6 +87,28 @@ export const sites: Record<SiteKey, SiteConfig> = {
       { slug: "feeding", name: "Feeding", description: "Bottles, sterilizers, pumps, and clean-up routines." },
     ],
   },
+  network: {
+    key: "network",
+    name: "Signalwise Picks",
+    tagline: "Cleaner home networks without the spec-sheet fog.",
+    description: "Home network buying notes, router comparisons, mesh Wi-Fi guides, Ethernet planning tools, and practical setup checklists.",
+    domain: process.env.NEXT_PUBLIC_NETWORK_SITE_URL ?? "https://network.madabase.com",
+    hostHints: ["network", "wifi", "router", "signal"],
+    disclosure: "As an Amazon Associate I earn from qualifying purchases. Signalwise Picks may also earn commissions from other retailer links. Recommendations are based on home layout, wired backhaul options, speed needs, device count, and setup trade-offs.",
+    heroImage: "/images/affiliate/hero-network.webp",
+    theme: {
+      brand: "#255f8f",
+      brandStrong: "#173f63",
+      brandSoft: "#e4f1fb",
+      accent: "#7a5a20",
+      accentSoft: "#fff4dc",
+    },
+    categories: [
+      { slug: "wifi", name: "Wi-Fi", description: "Mesh systems, routers, coverage planning, and wireless upgrades." },
+      { slug: "wired", name: "Wired networking", description: "Ethernet switches, cables, adapters, and reliable wired paths." },
+      { slug: "backup", name: "Backup power", description: "UPS planning for routers, modems, ONTs, and small network shelves." },
+    ],
+  },
 };
 
 export const siteKeys = Object.keys(sites) as SiteKey[];

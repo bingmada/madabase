@@ -2,26 +2,37 @@
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#f2eadf"/>
-      <stop offset="0.58" stop-color="#ffffff"/>
       <stop offset="1" stop-color="#e2f4f2"/>
     </linearGradient>
-    <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#846036"/>
-      <stop offset="1" stop-color="#2f6f73"/>
+    <linearGradient id="carrier" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2f6f73"/>
+      <stop offset="1" stop-color="#5f8f91"/>
     </linearGradient>
   </defs>
   <rect width="1200" height="800" fill="url(#bg)"/>
-  <circle cx="980" cy="130" r="210" fill="#e2f4f2" opacity="0.9"/>
-  <circle cx="190" cy="650" r="260" fill="#f2eadf" opacity="0.95"/>
-  <rect x="120" y="150" width="960" height="500" rx="34" fill="#fff" opacity="0.82"/>
-  <rect x="170" y="205" width="250" height="250" rx="42" fill="url(#mark)" opacity="0.95"/>
-  <path d="M235 360c45-85 100-85 145 0" fill="none" stroke="#fff" stroke-width="24" stroke-linecap="round"/>
-  <circle cx="255" cy="292" r="22" fill="#fff" opacity="0.92"/>
-  <circle cx="338" cy="292" r="22" fill="#fff" opacity="0.92"/>
-  <text x="470" y="285" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#2f6f73">travel</text>
-  <foreignObject x="470" y="320" width="520" height="180">
-    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Arial, Helvetica, sans-serif; font-size: 52px; line-height: 1.08; font-weight: 800; color: #846036; letter-spacing: 0;">Ergobaby Omni Breeze Baby Carrier</div>
-  </foreignObject>
-  <rect x="470" y="545" width="290" height="18" rx="9" fill="#846036" opacity="0.18"/>
-  <rect x="470" y="582" width="430" height="18" rx="9" fill="#2f6f73" opacity="0.14"/>
+  <circle cx="1030" cy="150" r="220" fill="#ffffff" opacity="0.58"/>
+  <circle cx="170" cy="680" r="240" fill="#ffffff" opacity="0.62"/>
+  <rect x="150" y="135" width="900" height="560" rx="36" fill="#ffffff" opacity="0.78"/>
+
+  <g transform="translate(70 130) scale(0.86)">
+    <path d="M195 154c-74 36-112 106-112 210 0 138 93 248 222 248s222-110 222-248c0-104-38-174-112-210" fill="#f6e6d9" stroke="#d7b99f" stroke-width="8"/>
+    <circle cx="305" cy="95" r="72" fill="#f6d7c4" stroke="#d7b99f" stroke-width="8"/>
+    <path d="M128 204c60-72 296-72 354 0" fill="none" stroke="#846036" stroke-width="34" stroke-linecap="round"/>
+    <path d="M174 228c76 54 186 54 262 0l42 290c-92 62-254 62-346 0z" fill="url(#carrier)" stroke="#1d575a" stroke-width="9"/>
+    <path d="M176 242c-86 76-112 172-76 290" fill="none" stroke="#2f6f73" stroke-width="34" stroke-linecap="round"/>
+    <path d="M434 242c86 76 112 172 76 290" fill="none" stroke="#2f6f73" stroke-width="34" stroke-linecap="round"/>
+    <path d="M214 332h182" stroke="#dff4f0" stroke-width="14" stroke-linecap="round" opacity="0.95"/>
+    <path d="M232 386h146" stroke="#dff4f0" stroke-width="14" stroke-linecap="round" opacity="0.95"/>
+    <path d="M251 440h108" stroke="#dff4f0" stroke-width="14" stroke-linecap="round" opacity="0.95"/>
+  </g>
+
+  <g transform="translate(690 245)">
+    <text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#2f6f73">travel</text>
+    <text x="0" y="68" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="800" fill="#846036">Ergobaby</text>
+    <text x="0" y="128" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="800" fill="#846036">Omni Breeze</text>
+    <text x="0" y="176" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#846036">Baby Carrier</text>
+    <rect x="0" y="224" width="280" height="16" rx="8" fill="#846036" opacity="0.18"/>
+    <rect x="0" y="260" width="390" height="16" rx="8" fill="#2f6f73" opacity="0.14"/>
+    <text x="0" y="330" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#2f6f73">hands-free carrying</text>
+  </g>
 </svg>

@@ -1,4 +1,4 @@
-export type SiteKey = "pet" | "homeoffice" | "baby";
+export type SiteKey = "pet" | "homeoffice" | "baby" | "network";
 
 export type Score = {
   label: string;
@@ -69,7 +69,7 @@ export type Tool = {
   title: string;
   dek: string;
   category: string;
-  kind: "feeding" | "desk" | "diapers";
+  kind: "feeding" | "desk" | "diapers" | "wifi";
   relatedRoundups: string[];
 };
 
