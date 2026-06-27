@@ -8,7 +8,7 @@ import { requireUser } from "@/lib/auth/services/sessionService";
 import { isLocale, locales } from "@/lib/i18n";
 import { canAccessOps } from "@/lib/ops-access";
 import { getOpsDashboardStats } from "@/lib/ops-dashboard";
-import { buildPageMetadata, withNoIndex } from "@/lib/seo";
+import { buildPageMetadata, getTestSiteUrl, withNoIndex } from "@/lib/seo";
 import { testMap } from "@/lib/test-registry";
 import { toolMap } from "@/lib/tool-registry";
 
@@ -34,6 +34,7 @@ export default async function OpsPage({ params }: { params: Promise<{ locale: st
   const user = await requireUser(locale);
   if (!canAccessOps(user.email)) notFound();
   const stats = await getOpsDashboardStats();
+  const testSiteUrl = getTestSiteUrl();
   const copy = {
     en: {
       eyebrow: "Internal",
@@ -104,7 +105,7 @@ export default async function OpsPage({ params }: { params: Promise<{ locale: st
             {stats.topTests.map((item) => {
               const test = testMap.get(item.testSlug);
               return (
-                <Link key={item.testSlug} href={`/${locale}/tests/${item.testSlug}`} className="block rounded-md border border-[var(--border)] bg-white p-4 transition hover:border-[var(--brand)]">
+                <Link key={item.testSlug} href={`${testSiteUrl}/${locale}/${item.testSlug}`} className="block rounded-md border border-[var(--border)] bg-white p-4 transition hover:border-[var(--brand)]">
                   <div className="flex items-center justify-between gap-3">
                     <p className="text-sm font-semibold text-[var(--text)]">{test?.title[locale] ?? item.testSlug}</p>
                     <span className="code-font text-xs font-bold text-[var(--brand-strong)]">{item.attempts}</span>

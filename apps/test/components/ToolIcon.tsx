@@ -1,0 +1,63 @@
+import {
+  Binary,
+  Braces,
+  CaseSensitive,
+  Clock3,
+  Code2,
+  FileText,
+  Diff,
+  FileCode2,
+  Fingerprint,
+  Hash,
+  KeyRound,
+  Link2,
+  Palette,
+  QrCode,
+  ScanSearch,
+  ScanText,
+  Shield,
+  Type,
+  WholeWord,
+  WrapText,
+} from "lucide-react";
+import type { ToolComponentName } from "@/lib/tool-registry";
+
+const iconMap = {
+  JsonFormatter: Braces,
+  JsonValidator: ScanText,
+  JsonToTypescript: Type,
+  JwtDecoder: KeyRound,
+  UuidGenerator: Fingerprint,
+  Base64Tool: Binary,
+  UrlEncoder: Link2,
+  TimestampConverter: Clock3,
+  MarkdownPreview: FileCode2,
+  HtmlFormatter: Code2,
+  JsonDiff: Diff,
+  JsonEscape: Shield,
+  YamlFormatter: WrapText,
+  XmlFormatter: Code2,
+  SqlFormatter: ScanText,
+  RegexTester: ScanSearch,
+  CronGenerator: Clock3,
+  HashGenerator: Hash,
+  ColorConverter: Palette,
+  PasswordGenerator: Fingerprint,
+  WordCounter: WholeWord,
+  CharacterCounter: Type,
+  CaseConverter: CaseSensitive,
+  TextCleaner: WrapText,
+  SlugGenerator: Link2,
+  QrCodeGenerator: QrCode,
+  HtmlEncoder: Code2,
+  CssFormatter: Code2,
+  JsFormatter: FileCode2,
+  UrlParser: Link2,
+  UserAgentParser: ScanSearch,
+  GenericTextTool: FileText,
+} satisfies Record<ToolComponentName, React.ComponentType<{ className?: string }>>;
+
+export function ToolIcon({ component, className = "h-5 w-5" }: { component: ToolComponentName; className?: string }) {
+  const Icon = iconMap[component];
+  return <Icon className={className} aria-hidden="true" />;
+}

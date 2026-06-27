@@ -1,10 +1,9 @@
 import { getAllBlogPosts } from "./blog";
 import type { Locale } from "./i18n";
-import { testRegistry } from "./test-registry";
 import { toolRegistry } from "./tool-registry";
 
 export type SearchItem = {
-  type: "tool" | "test" | "blog";
+  type: "tool" | "blog";
   title: string;
   description: string;
   href: string;
@@ -20,13 +19,6 @@ export async function getSearchIndex(locale: Locale): Promise<SearchItem[]> {
       description: tool.description[locale],
       href: `/${locale}/tools/${tool.slug}`,
       keywords: [tool.slug, ...tool.keywords, tool.category].join(" "),
-    })),
-    ...testRegistry.map((test) => ({
-      type: "test" as const,
-      title: test.title[locale],
-      description: test.description[locale],
-      href: `/${locale}/tests/${test.slug}`,
-      keywords: [test.slug, test.category, ...test.resultTypes].join(" "),
     })),
     ...posts.map((post) => ({
       type: "blog" as const,

@@ -3,6 +3,11 @@ generator client {
   output   = "../apps/web/generated/prisma"
 }
 
+generator testClient {
+  provider = "prisma-client"
+  output   = "../apps/test/generated/prisma"
+}
+
 datasource db {
   provider = "postgresql"
 }

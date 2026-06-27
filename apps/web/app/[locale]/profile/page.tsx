@@ -8,7 +8,7 @@ import { requireUser } from "@/lib/auth/services/sessionService";
 import { getRecentToolUsage } from "@/lib/tool-usage";
 import { isLocale, locales } from "@/lib/i18n";
 import { canAccessOps } from "@/lib/ops-access";
-import { buildPageMetadata, withNoIndex } from "@/lib/seo";
+import { buildPageMetadata, getTestSiteUrl, withNoIndex } from "@/lib/seo";
 import { testMap } from "@/lib/test-registry";
 import { toolMap } from "@/lib/tool-registry";
 import { getExistingCreditBalance, getProfileDashboard, getTestUnlockHistory } from "@/lib/user-dashboard";
@@ -66,6 +66,7 @@ export default async function ProfilePage({ params }: { params: Promise<{ locale
   const dashboard = await getProfileDashboard(user.id);
   const showOpsDashboard = canAccessOps(user.email);
   const unlockedReports = testHistory.filter((item) => item.unlocked);
+  const testSiteUrl = getTestSiteUrl();
   const suggestedTools = recentUsage.length > 0
     ? recentUsage.flatMap((item) => toolMap.get(item.toolSlug)?.relatedTools ?? []).filter((slug, index, list) => list.indexOf(slug) === index).slice(0, 4)
     : ["json-formatter", "text-cleaner", "qr-code-generator", "word-counter"];
@@ -113,12 +114,12 @@ export default async function ProfilePage({ params }: { params: Promise<{ locale
           <section className="surface-card p-6">
             <div className="flex flex-wrap items-center justify-between gap-3">
               <h2 className="text-xl font-bold text-[var(--text)]">{locale === "en" ? "My Reports" : "我的报告"}</h2>
-              <Link href={`/${locale}/tests`} className="text-sm font-semibold text-[var(--brand-strong)]">{locale === "en" ? "Take another test" : "继续测试"}</Link>
+              <Link href={`${testSiteUrl}/${locale}`} className="text-sm font-semibold text-[var(--brand-strong)]">{locale === "en" ? "Take another test" : "继续测试"}</Link>
             </div>
             <div className="mt-4 space-y-3">
               {unlockedReports.length > 0 ? unlockedReports.map((item) => {
                 const test = testMap.get(item.testSlug);
-                const resultHref = `/${locale}/tests/${item.testSlug}/result/${item.resultType.toLowerCase()}?attempt=${encodeURIComponent(item.attemptId)}`;
+                const resultHref = `${testSiteUrl}/${locale}/${item.testSlug}/result/${item.resultType.toLowerCase()}?attempt=${encodeURIComponent(item.attemptId)}`;
                 return (
                   <Link href={resultHref} key={item.id} className="block rounded-md border border-[var(--border)] bg-white p-4 transition hover:-translate-y-0.5 hover:border-[var(--brand)] hover:shadow-[var(--shadow-soft)]">
                     <div className="flex flex-wrap items-center justify-between gap-3">
@@ -162,7 +163,7 @@ export default async function ProfilePage({ params }: { params: Promise<{ locale
           <div className="mt-4 grid gap-3 lg:grid-cols-2">
             {testHistory.length > 0 ? testHistory.map((item) => {
               const test = testMap.get(item.testSlug);
-              const resultHref = `/${locale}/tests/${item.testSlug}/result/${item.resultType.toLowerCase()}?attempt=${encodeURIComponent(item.attemptId)}`;
+              const resultHref = `${testSiteUrl}/${locale}/${item.testSlug}/result/${item.resultType.toLowerCase()}?attempt=${encodeURIComponent(item.attemptId)}`;
               return (
                 <Link href={resultHref} key={item.id} className="block rounded-md border border-[var(--border)] bg-white p-4 transition hover:-translate-y-0.5 hover:border-[var(--brand)] hover:shadow-[var(--shadow-soft)]">
                   <div className="flex flex-wrap items-center justify-between gap-3">

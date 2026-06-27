@@ -26,7 +26,6 @@ export function SearchClient({ locale, items }: { locale: Locale; items: SearchI
 
   const typeLabel = {
     tool: locale === "zh" ? "工具" : "Tool",
-    test: locale === "zh" ? "测试" : "Test",
     blog: locale === "zh" ? "博客" : "Blog",
   };
 

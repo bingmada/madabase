@@ -1,0 +1,133 @@
+export type BreadcrumbItem = {
+  name: string;
+  item: string;
+};
+
+export function JsonLd({ id, data }: { id: string; data: Record<string, unknown> }) {
+  return <script id={id} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;
+}
+
+export function buildBreadcrumbSchema(items: BreadcrumbItem[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      item: item.item,
+    })),
+  };
+}
+
+export function buildSoftwareApplicationSchema({
+  name,
+  description,
+  url,
+  category,
+  locale,
+}: {
+  name: string;
+  description: string;
+  url: string;
+  category: string;
+  locale: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name,
+    description,
+    url,
+    applicationCategory: category,
+    operatingSystem: "Any",
+    browserRequirements: "Requires a modern web browser",
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "USD",
+    },
+    inLanguage: locale,
+  };
+}
+
+export function buildItemListSchema({
+  name,
+  description,
+  url,
+  items,
+  locale,
+}: {
+  name: string;
+  description: string;
+  url: string;
+  items: Array<{ name: string; description: string; url: string }>;
+  locale: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name,
+    description,
+    url,
+    inLanguage: locale,
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      url: item.url,
+      name: item.name,
+      description: item.description,
+    })),
+  };
+}
+
+export function buildFaqSchema(items: Array<{ q: string; a: string }>, locale: string) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: locale,
+    mainEntity: items.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.a,
+      },
+    })),
+  };
+}
+
+export function buildArticleSchema({
+  headline,
+  description,
+  url,
+  datePublished,
+  dateModified,
+  locale,
+}: {
+  headline: string;
+  description: string;
+  url: string;
+  datePublished: string;
+  dateModified?: string;
+  locale: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline,
+    description,
+    mainEntityOfPage: url,
+    datePublished,
+    dateModified: dateModified ?? datePublished,
+    inLanguage: locale,
+    author: {
+      "@type": "Organization",
+      name: "Madabase",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Madabase",
+    },
+  };
+}

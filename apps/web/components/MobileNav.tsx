@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import type { Locale } from "@/lib/i18n";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { SignOutButton } from "./SignOutButton";
@@ -83,7 +83,9 @@ export function MobileNav({
             )}
 
             <div className="mt-2">
-              <LanguageSwitcher locale={locale} pathname={pathname} />
+              <Suspense fallback={null}>
+                <LanguageSwitcher locale={locale} pathname={pathname} />
+              </Suspense>
             </div>
           </div>
         </div>

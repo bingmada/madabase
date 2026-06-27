@@ -6,6 +6,10 @@ export function getSiteUrl() {
   return process.env.NEXT_PUBLIC_SITE_URL ?? "https://madabase.com";
 }
 
+export function getTestSiteUrl() {
+  return process.env.NEXT_PUBLIC_TEST_SITE_URL ?? "https://test.madabase.com";
+}
+
 export function buildLocaleCanonical(locale: string, path: string) {
   return `/${locale}${path.startsWith("/") ? path : `/${path}`}`;
 }

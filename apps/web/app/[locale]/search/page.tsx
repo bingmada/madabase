@@ -16,10 +16,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   if (!isLocale(locale)) return {};
   return withNoIndex(buildPageMetadata({
     title: locale === "en" ? "Search Madabase" : "搜索 Madabase",
-    description: locale === "en" ? "Search tools, tests, and articles on Madabase." : "搜索 Madabase 的工具、测试和文章。",
+    description: locale === "en" ? "Search tools and articles on Madabase." : "搜索 Madabase 的工具和文章。",
     locale,
     path: "/search",
-    keywords: ["search", "tools", "tests", "madabase"],
+    keywords: ["search", "tools", "madabase"],
   }));
 }
 
@@ -34,7 +34,7 @@ export default async function SearchPage({ params }: { params: Promise<{ locale:
       <main className="page-shell">
         <section className="surface-card-strong p-6 sm:p-8 lg:p-10">
           <p className="eyebrow">{locale === "en" ? "Site search" : "站内搜索"}</p>
-          <h1 className="mt-4 max-w-3xl text-4xl font-black tracking-tight text-[var(--text)] sm:text-5xl">{locale === "en" ? "Search tools, tests, and articles." : "搜索工具、测试和文章。"}</h1>
+          <h1 className="mt-4 max-w-3xl text-4xl font-black tracking-tight text-[var(--text)] sm:text-5xl">{locale === "en" ? "Search tools and articles." : "搜索工具和文章。"}</h1>
           <p className="mt-5 max-w-3xl text-lg leading-8 text-[var(--text-muted)]">{locale === "en" ? "Find the page you need without browsing every category." : "不用逐个分类翻找，直接找到需要的页面。"}</p>
         </section>
         <div className="mt-10">
