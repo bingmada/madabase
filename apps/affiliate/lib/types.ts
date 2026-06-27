@@ -59,6 +59,8 @@ export type Guide = {
   title: string;
   dek: string;
   category: string;
+  updatedAt?: string;
+  sources?: Array<{ name: string; url: string; note?: string }>;
   sections: Array<{ heading: string; body: string }>;
   relatedRoundups: string[];
 };

@@ -1,5 +1,6 @@
 import type { Guide, Product, Roundup, SiteKey, Tool } from "./types";
 import { amazonProductOverrides } from "./amazon-overrides";
+import { expansionGuides } from "./expansion-guides";
 import { networkGuides, networkProducts, networkRoundups, networkTools } from "./network-content";
 
 export const products: Product[] = [
@@ -39,7 +40,7 @@ export const products: Product[] = [
     image: "/images/affiliate/pet-catit-flower-cat-water-fountain.webp",
     summary: "A cat water fountain for homes where encouraging drinking matters more than smart tracking.",
     verdict: "The Catit Flower Fountain is a practical first fountain because it is easy to understand, easy to place, and focused on the one job most cats need: fresher moving water.",
-    whyItMatters: "Water fountains can help some cats drink more, but only if the unit is quiet enough, easy enough to clean, and does not become another ignored appliance.",
+    whyItMatters: "Moving water may encourage some cats to use a fountain, but the unit still needs to be quiet enough, easy enough to clean, and useful alongside fresh backup water.",
     bestFor: "Cats that prefer moving water",
     priceBand: "$",
     rating: 4.3,
@@ -65,7 +66,7 @@ export const products: Product[] = [
     image: "/images/affiliate/pet-furbo-360-dog-camera.webp",
     summary: "A treat-tossing pet camera for dog owners who want check-ins, two-way audio, and a more interactive camera.",
     verdict: "Furbo 360 makes the most sense when the camera is part reassurance and part routine interaction, especially for dogs that respond well to voice and treats.",
-    whyItMatters: "Pet cameras are easy to overbuy. The useful question is whether alerts, app access, audio, and treat features reduce anxiety or just add more notifications.",
+    whyItMatters: "Pet cameras are easy to overbuy. The useful question is whether alerts, app access, audio, and treat features reduce owner uncertainty or just add more notifications.",
     bestFor: "Dog owners who want interactive check-ins",
     priceBand: "$$",
     rating: 4.5,
@@ -334,7 +335,7 @@ export const products: Product[] = [
     category: "ergonomics",
     image: "/images/affiliate/homeoffice-branch-ergonomic-chair.webp",
     summary: "A mid-range ergonomic chair for home workers who need adjustment without premium chair pricing.",
-    verdict: "The Branch Ergonomic Chair is the safer middle path for people leaving a dining chair behind. It has enough adjustment to solve common home-office pain points without jumping into premium-chair pricing.",
+    verdict: "The Branch Ergonomic Chair is a balanced middle option for people leaving a dining chair behind. It has enough adjustment to address common home-office setup frustrations without jumping into premium-chair pricing.",
     whyItMatters: "Chair fit is personal, but most home workers need the same basics first: seat height that lets feet rest flat, arms that do not force shoulders upward, and back support that stays useful after lunch.",
     bestFor: "Remote workers upgrading from a dining chair",
     priceBand: "$$",
@@ -843,7 +844,7 @@ export const roundups: Roundup[] = [
     site: "homeoffice",
     slug: "best-monitor-arms-for-home-office",
     title: "Best Monitor Arms for Home Office Desks",
-    dek: "Monitor arms are one of the fastest ways to recover desk depth, reduce neck strain, and make a compact workstation easier to clean.",
+    dek: "Monitor arms are one of the fastest ways to recover desk depth, support more flexible display placement, and make a compact workstation easier to clean.",
     category: "ergonomics",
     intent: "Choose a monitor arm that matches monitor weight, desk edge, cable path, and adjustment needs.",
     intro: "A monitor arm can make a small desk feel more expensive than it is. The win is not the arm itself; it is the desk depth you get back, the cleaner keyboard area, and the ability to put the display where your neck wants it. The risk is buying an arm before checking monitor weight, VESA support, and clamp clearance.",
@@ -1390,6 +1391,7 @@ export const tools: Tool[] = [
 products.push(...networkProducts);
 roundups.push(...networkRoundups);
 guides.push(...networkGuides);
+guides.push(...expansionGuides);
 tools.push(...networkTools);
 
 export function siteProducts(site: SiteKey) {

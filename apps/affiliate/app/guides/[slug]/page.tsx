@@ -50,7 +50,7 @@ const siteAdvice: Record<SiteKey, AdviceBlock> = {
       "Letting app features, analytics, or premium bundles distract from safe-use guidance.",
       "Choosing a large appliance or stroller before checking storage and cleaning friction.",
     ],
-    decision: "Prefer the product that makes repeated care safer and easier; skip upgrades that add cleaning, charging, storage, or app work without solving a current routine problem.",
+    decision: "Prefer the product that is easier to use consistently within manufacturer guidance; skip upgrades that add cleaning, charging, storage, or app work without solving a current routine problem.",
   },
   network: {
     checklist: [
@@ -111,6 +111,10 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         <p className="eyebrow">{guide.category}</p>
         <h1 className="mt-3 text-4xl font-black leading-tight">{guide.title}</h1>
         <p className="mt-5 text-lg leading-8 text-[var(--muted)]">{guide.dek}</p>
+        <div className="mt-5 flex flex-wrap gap-x-4 gap-y-2 text-sm font-semibold text-[var(--muted)]">
+          <span>Prepared by the {site.name} editorial desk</span>
+          {guide.updatedAt ? <span>Updated {guide.updatedAt}</span> : null}
+        </div>
         <article className="prose-lite mt-8">
           {guide.sections.map((section) => (
             <section key={section.heading}>
@@ -119,6 +123,22 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             </section>
           ))}
         </article>
+        {guide.sources?.length ? (
+          <section className="mt-10 rounded-md border border-[var(--border)] bg-white p-5">
+            <p className="eyebrow">Primary sources</p>
+            <h2 className="mt-3 text-2xl font-bold">References used for this guide</h2>
+            <ul className="mt-4 space-y-4">
+              {guide.sources.map((source) => (
+                <li key={source.url}>
+                  <a className="font-bold text-[var(--brand-strong)] underline-offset-4 hover:underline" href={source.url} rel="noopener noreferrer" target="_blank">
+                    {source.name}
+                  </a>
+                  {source.note ? <p className="mt-1 text-sm leading-6 text-[var(--muted)]">{source.note}</p> : null}
+                </li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
         <section className="mt-10">
           <p className="eyebrow">Buying framework</p>
           <h2 className="mt-3 text-2xl font-bold">What to check before you choose</h2>

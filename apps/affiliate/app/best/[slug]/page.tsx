@@ -52,7 +52,7 @@ const roundupAdvice: Record<SiteKey, Record<string, { spendMore: string; spendLe
   },
   baby: {
     sleep: {
-      spendMore: "Spend more when the product improves safe, repeatable overnight care without adding confusing controls.",
+      spendMore: "Spend more when the product supports a clear, repeatable overnight routine within manufacturer guidance without adding confusing controls.",
       spendLess: "Spend less when the premium feature is analytics, app polish, or a bundle you do not need yet.",
       compare: ["Safe-use guidance", "Night controls", "Connection style", "Privacy and alerts"],
     },

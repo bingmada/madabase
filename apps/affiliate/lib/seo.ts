@@ -100,29 +100,25 @@ export function faqPageSchema(faqs: Roundup["faqs"]) {
   };
 }
 
-export function reviewSchema(site: SiteConfig, product: Product) {
+export function productNotesSchema(site: SiteConfig, product: Product) {
   const displayName = product.amazonTitle ?? product.name;
   const displayImage = product.amazonImage ?? product.image;
 
   return {
     "@context": "https://schema.org",
-    "@type": "Review",
+    "@type": "Article",
     name: `${displayName} Buying Notes`,
+    headline: `${displayName} Buying Notes`,
     url: absoluteUrl(site, `/reviews/${product.slug}`),
-    reviewBody: product.verdict ?? product.summary,
-    itemReviewed: {
+    description: product.summary,
+    image: absoluteUrl(site, displayImage),
+    about: {
       "@type": "Product",
       name: displayName,
       brand: { "@type": "Brand", name: product.brand },
       sku: product.asin ?? product.specs.ASIN,
       image: absoluteUrl(site, displayImage),
       description: product.summary,
-    },
-    reviewRating: {
-      "@type": "Rating",
-      ratingValue: product.rating,
-      bestRating: 5,
-      worstRating: 1,
     },
     author: {
       "@type": "Organization",
@@ -144,6 +140,12 @@ export function guideSchema(site: SiteConfig, guide: Guide) {
     description: guide.dek,
     url: absoluteUrl(site, `/guides/${guide.slug}`),
     articleSection: guide.category,
+    ...(guide.updatedAt ? { dateModified: new Date(guide.updatedAt).toISOString() } : {}),
+    author: {
+      "@type": "Organization",
+      name: `${site.name} editorial desk`,
+      url: absoluteUrl(site, "/about"),
+    },
     publisher: {
       "@type": "Organization",
       name: site.name,

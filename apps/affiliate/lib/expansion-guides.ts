@@ -1,0 +1,198 @@
+import type { Guide } from "./types";
+
+export const expansionGuides: Guide[] = [
+  {
+    site: "network",
+    slug: "mesh-wifi-vs-single-router-guide",
+    title: "Mesh Wi-Fi vs. a Single Router: Which Setup Fits Your Home?",
+    dek: "A room-by-room decision guide for choosing between one well-placed router and a multi-node mesh system.",
+    category: "wifi",
+    updatedAt: "June 27, 2026",
+    relatedRoundups: ["best-mesh-wifi-for-apartments-and-homes", "best-wifi-7-routers-for-home-networks"],
+    sources: [
+      {
+        name: "Google Home: What is a mesh network?",
+        url: "https://support.google.com/googlehome/answer/7182746?hl=en",
+        note: "Primary explanation of mesh points, coverage, obstructions, and the difference from a traditional single-router network.",
+      },
+    ],
+    sections: [
+      { heading: "Start with the floor plan, not the Wi-Fi generation", body: "A single centrally placed router is often enough for an apartment or compact one-floor home. Mesh earns its extra cost when distance, dense walls, multiple floors, or an inconvenient modem location create repeatable dead zones." },
+      { heading: "One strong router is the simpler baseline", body: "A single router has fewer radios, power adapters, app settings, and update points to manage. Before buying mesh, test whether moving the router into the open and closer to the center of the home solves the weak-room problem." },
+      { heading: "Mesh solves distance by adding connection points", body: "Mesh places additional points closer to rooms that a single router cannot reach well. Those points still need a strong path back to the main router; placing a node inside the dead zone can simply repeat a weak connection." },
+      { heading: "Count wired ports and backhaul options", body: "Some mesh points have Ethernet ports and some do not. Check whether the system supports wired backhaul, whether a switch is needed, and whether the main unit still has enough ports for desktops, TVs, consoles, or a NAS." },
+      { heading: "Use a two-step buying rule", body: "Try central router placement first. Move to mesh only when the measured weak areas remain and you can place each node where it receives a good connection rather than where the signal has already failed." },
+    ],
+  },
+  {
+    site: "network",
+    slug: "ethernet-stuck-at-100-mbps-guide",
+    title: "Why Is Ethernet Stuck at 100 Mbps? A Home Troubleshooting Checklist",
+    dek: "Work through the cable, port, adapter, and negotiation path before replacing your router or internet plan.",
+    category: "wired",
+    updatedAt: "June 27, 2026",
+    relatedRoundups: ["best-wired-networking-upgrades"],
+    sources: [
+      {
+        name: "Intel Support: Ethernet Link Speed Capped at 100 Mbps",
+        url: "https://www.intel.com/content/www/us/en/support/articles/000058908/ethernet-products/intel-killer-ethernet-products.html",
+        note: "Primary troubleshooting reference for cable damage, link speed, and gigabit-capable connections.",
+      },
+    ],
+    sections: [
+      { heading: "Separate internet speed from Ethernet link speed", body: "A speed test can be limited by the ISP, server, Wi-Fi, or device. First check the operating system or router interface for the negotiated Ethernet link rate; a 100 Mbps link points to the local wired path." },
+      { heading: "Swap the cable before changing settings", body: "Gigabit Ethernet depends on all four twisted pairs. A damaged connector, pinched cable, poor termination, or marginal cable can still connect while falling back to 100 Mbps, so test with a short known-good Cat5e-or-better cable." },
+      { heading: "Check every port in the chain", body: "The slowest port sets the ceiling. Confirm that the router LAN port, switch port, wall jack path, USB adapter, dock, and computer interface all support gigabit or faster speeds." },
+      { heading: "Leave auto-negotiation enabled unless diagnosing a specific fault", body: "Manually forcing a speed can create a mismatch rather than fix the cable. Restore automatic speed and duplex settings, reconnect the cable, and confirm the negotiated rate at both ends." },
+      { heading: "Change one component at a time", body: "Test device-to-router with one short cable, then add the switch, wall run, dock, or adapter back one by one. This turns a vague speed complaint into a specific failed cable, port, or intermediate device." },
+    ],
+  },
+  {
+    site: "network",
+    slug: "wired-vs-wireless-mesh-backhaul-guide",
+    title: "Wired vs. Wireless Mesh Backhaul for Home Networks",
+    dek: "How to decide whether Ethernet between mesh nodes is worth the installation effort.",
+    category: "wifi",
+    updatedAt: "June 27, 2026",
+    relatedRoundups: ["best-mesh-wifi-for-apartments-and-homes", "best-wired-networking-upgrades"],
+    sources: [
+      {
+        name: "Google Home: Hardwire Nest Wifi with Ethernet",
+        url: "https://support.google.com/googlehome/answer/7215624?hl=en-GB",
+        note: "Primary vendor documentation showing supported wired-backhaul layouts and model limitations.",
+      },
+    ],
+    sections: [
+      { heading: "Backhaul is the path between nodes", body: "Client devices connect to a nearby mesh point, but that point still needs a path to the main router. Wireless backhaul uses radio capacity for that trip; wired backhaul moves it onto Ethernet." },
+      { heading: "Wireless backhaul wins on installation simplicity", body: "Wireless nodes need only power and sensible placement. It is the practical choice for rentals and finished homes where running Ethernet would be disruptive, provided each node can receive a strong upstream signal." },
+      { heading: "Wired backhaul improves consistency", body: "Ethernet can reduce the effect of walls, floors, interference, and node-to-node distance on the backhaul path. It is especially useful for fixed offices, media rooms, and multi-floor homes that already have usable cabling." },
+      { heading: "Confirm the exact model supports the topology", body: "Do not assume every point has Ethernet ports or that mixed generations can be hardwired together. Check the manufacturer diagram, port roles, switch placement, and whether setup must be completed wirelessly first." },
+      { heading: "Use wiring where it changes a real bottleneck", body: "Wire the node serving the busiest or most difficult room first. If performance is already stable and the household rarely saturates the network, the installation effort may be better spent on router placement or one direct Ethernet run to a key device." },
+    ],
+  },
+  {
+    site: "homeoffice",
+    slug: "48-vs-55-inch-desk-guide",
+    title: "48-Inch vs. 55-Inch Desk for a Home Office",
+    dek: "Compare usable depth, monitor layout, room clearance, and moving space before choosing desk width.",
+    category: "desks",
+    updatedAt: "June 27, 2026",
+    relatedRoundups: ["best-standing-desks-for-small-spaces"],
+    sources: [
+      {
+        name: "OSHA Computer Workstations Purchasing Guide",
+        url: "https://www.osha.gov/etools/computer-workstations/checklists/purchasing-guide",
+        note: "Primary workstation checklist covering desk depth, equipment space, leg clearance, and keyboard height.",
+      },
+    ],
+    sections: [
+      { heading: "Depth often matters before width", body: "A 55-inch desk is not automatically more comfortable if both options have the same shallow top. Reserve enough depth for the monitor, keyboard, and a readable viewing distance before using width as the deciding number." },
+      { heading: "A 48-inch desk suits focused setups", body: "Forty-eight inches can work for a laptop plus one monitor, or two modest displays on arms, when speakers and storage stay compact. It is easier to fit in bedrooms, rentals, and rooms that still need a clear walking path." },
+      { heading: "A 55-inch desk buys separation", body: "The extra width helps when two monitors, a desktop tower, writing space, or frequent paper work must stay available together. It also gives monitor arms and clamps more freedom without crowding the keyboard zone." },
+      { heading: "Measure the room in working mode", body: "Include chair pullout, drawers, closet doors, bed clearance, baseboards, outlets, and the route used to carry the desktop into the room. A desk that technically fits against the wall can still make the room frustrating to use." },
+      { heading: "Sketch the equipment footprint", body: "Mark monitor bases or arm clamps, keyboard, mouse, laptop, dock, microphone, and speakers on a 48-by-depth rectangle. Move to 55 inches only when the sketch shows a recurring collision rather than a desire to fill empty wall space." },
+    ],
+  },
+  {
+    site: "homeoffice",
+    slug: "monitor-arm-compatibility-checklist",
+    title: "Monitor Arm Compatibility Checklist",
+    dek: "Check VESA pattern, monitor weight, desk clamp clearance, and cable movement before ordering an arm.",
+    category: "ergonomics",
+    updatedAt: "June 27, 2026",
+    relatedRoundups: ["best-monitor-arms-for-home-office"],
+    sources: [
+      {
+        name: "VESA Flat Display Mounting Interface",
+        url: "https://vesa.org/resources/mounting-standard/",
+        note: "Primary standards reference for compliant display mounting interfaces.",
+      },
+      {
+        name: "OSHA Workstation Monitor Guidance",
+        url: "https://www.osha.gov/etools/computer-workstations/components/monitors",
+        note: "Primary guidance for monitor distance, height, viewing angle, and desk-space considerations.",
+      },
+    ],
+    sections: [
+      { heading: "Confirm the VESA mounting pattern", body: "Check the monitor manual or rear mounting holes for the stated VESA pattern. If the display lacks a standard interface, use only a model-specific adapter that preserves access to ports and does not exceed the arm's limits." },
+      { heading: "Use the monitor-only weight", body: "Compare the arm rating with the display weight after removing the original stand. Stay inside both the minimum and maximum range because an arm designed for a heavier screen may not hold a light monitor in position." },
+      { heading: "Inspect the desk edge from above and below", body: "A clamp needs a flat, strong contact area. Measure desktop thickness and check for aprons, cable trays, beveled edges, drawers, wall gaps, glass panels, or hollow sections that can block or weaken the mount." },
+      { heading: "Plan the movement envelope", body: "The arm needs space behind and beside the display when it moves. Check wall clearance, portrait rotation, webcam position, laptop screens, and whether two arms will collide near the center of the desk." },
+      { heading: "Leave enough cable slack", body: "Route power, display, and USB cables through the full height and depth range before tightening clips. The arm should move without pulling connectors, lifting a dock, or forcing a sharp bend at the monitor port." },
+    ],
+  },
+  {
+    site: "pet",
+    slug: "automatic-feeder-cleaning-checklist",
+    title: "Automatic Pet Feeder Cleaning Checklist",
+    dek: "A repeatable cleaning routine for bowls, chutes, hoppers, seals, and food-contact tools.",
+    category: "feeding",
+    updatedAt: "June 27, 2026",
+    relatedRoundups: ["best-automatic-cat-feeders"],
+    sources: [
+      {
+        name: "FDA: Proper Storage of Pet Food and Treats",
+        url: "https://www.fda.gov/animal-veterinary/animal-health-literacy/proper-storage-pet-food-treats",
+        note: "Primary food-handling guidance for washing bowls and utensils and keeping dry pet food cool, dry, and secure.",
+      },
+    ],
+    sections: [
+      { heading: "Follow the model manual first", body: "Automatic feeders combine washable food-contact parts with motors and electronics that must stay dry. Identify which bowl, hopper, lid, rotor, and chute pieces are removable or dishwasher-safe before taking the unit apart." },
+      { heading: "Clean the bowl and utensils as food-contact items", body: "Wash and dry the feeding bowl and any scoop or measuring tool on a regular schedule. Do not let an automated schedule make leftover crumbs, oils, or moisture invisible." },
+      { heading: "Empty old food before wiping the hopper", body: "Transfer usable kibble into a clean, dry container rather than topping up indefinitely. Remove crumbs from corners and seals, dry every washable part completely, and avoid returning food to a damp hopper." },
+      { heading: "Inspect the chute and portion mechanism", body: "Look for oily buildup, broken kibble, jams, insects, and wear around the rotor or dispensing path. Use only the brush or cleaning method allowed by the manufacturer so water does not enter the motor housing." },
+      { heading: "Test one meal after reassembly", body: "Reconnect power, confirm the clock and schedule, and dispense a test portion while you are present. Check that the bowl is seated, the chute is clear, and backup batteries or notifications still work." },
+    ],
+  },
+  {
+    site: "pet",
+    slug: "pet-camera-subscription-cost-checklist",
+    title: "Pet Camera Subscription Cost Checklist",
+    dek: "Separate free live-view features from paid alerts, cloud history, multi-camera fees, and renewal terms.",
+    category: "home-care",
+    updatedAt: "June 27, 2026",
+    relatedRoundups: ["best-pet-cameras-for-apartments"],
+    sources: [
+      {
+        name: "Furbo Help Center: Nanny Plans and Pricing",
+        url: "https://help.furbo.com/hc/en-us/articles/17462739016089-Furbo-Nanny-Plans-and-Pricing",
+        note: "Primary vendor source for current plan tiers, storage windows, and additional-camera pricing; verify again before purchase because plans change.",
+      },
+    ],
+    sections: [
+      { heading: "Write down the free baseline", body: "Confirm whether live view, two-way audio, treat tossing, local storage, and basic motion or sound alerts work without a plan. A camera can be useful without paying monthly if those are the only features you need." },
+      { heading: "Identify the feature that triggers payment", body: "Cloud history, longer clips, pet-specific detection, smart summaries, emergency-style alerts, and downloadable recordings are commonly separated into paid tiers. Name the one feature you would actually miss before comparing plan labels." },
+      { heading: "Calculate the full household cost", body: "Check monthly, annual, and multi-year billing plus taxes, trial conversion, renewal price, and additional-camera fees. Compare the first-year promotion with the normal renewal total rather than treating the cheapest displayed monthly number as permanent." },
+      { heading: "Check cancellation and storage consequences", body: "Find out how to cancel, when access ends, and whether saved cloud clips disappear after downgrade. Export any recordings you need before changing plans and avoid assuming that a hardware return automatically cancels a subscription." },
+      { heading: "Recheck pricing at checkout", body: "Subscription features and tiers change more often than camera hardware. Use this checklist to compare the structure, then confirm the current vendor plan page and terms immediately before buying or starting a trial." },
+    ],
+  },
+  {
+    site: "baby",
+    slug: "bottle-washer-vs-sterilizer-vs-dryer-guide",
+    title: "Bottle Washer vs. Sterilizer vs. Dryer",
+    dek: "Separate cleaning, sanitizing, and drying so you can choose the appliance that matches the real bottleneck.",
+    category: "feeding",
+    updatedAt: "June 27, 2026",
+    relatedRoundups: ["best-bottle-sterilizers-and-dryers"],
+    sources: [
+      {
+        name: "CDC: Clean, Sanitize, and Store Infant Feeding Items",
+        url: "https://www.cdc.gov/hygiene/about/clean-sanitize-store-infant-feeding-items.html",
+        note: "Primary public-health guidance distinguishing cleaning, sanitizing, complete air-drying, and storage.",
+      },
+      {
+        name: "CDC: How to Clean and Sanitize Breast Pumps",
+        url: "https://www.cdc.gov/hygiene/about/about-breast-pump-hygiene.html",
+        note: "Primary guidance for pump-part cleaning and following the pump manufacturer's instructions.",
+      },
+    ],
+    sections: [
+      { heading: "Cleaning, sanitizing, and drying are different jobs", body: "A washer removes milk residue with water and detergent. A sterilizer or sanitizing cycle adds an extra germ-reduction step after cleaning, while a dryer removes moisture; a machine name does not guarantee that it performs all three." },
+      { heading: "Choose a washer when scrubbing is the bottleneck", body: "An all-in-one washer can help when many bottles, valves, nipples, and compatible pump parts accumulate each day. Confirm detergent requirements, spray coverage, filter maintenance, cycle time, and exact part compatibility." },
+      { heading: "Choose a sterilizer when guidance calls for sanitizing", body: "CDC guidance notes that sanitizing needs vary with age and health circumstances and may be unnecessary as a separate step when compatible items use an appropriate dishwasher cycle. Follow current public-health, medical, and manufacturer guidance for your situation." },
+      { heading: "Choose a dryer when clean parts stay wet", body: "Drying can be the useful upgrade when counter space is crowded or parts are needed again quickly. Check whether the cycle dries small valves and narrow pieces completely and where finished parts will be stored without recontamination." },
+      { heading: "Map one full day before buying", body: "Count every bottle and part, note when each is needed again, and mark which steps currently consume time. Buy the appliance that removes that repeated bottleneck rather than the model with the longest list of overlapping cycle names." },
+    ],
+  },
+];

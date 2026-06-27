@@ -4,7 +4,7 @@ import { AffiliateButton } from "@/components/AffiliateButton";
 import { JsonLd } from "@/components/JsonLd";
 import { Disclosure } from "@/components/LayoutParts";
 import { findProduct } from "@/lib/content";
-import { breadcrumbSchema, pageMetadata, reviewSchema } from "@/lib/seo";
+import { breadcrumbSchema, pageMetadata, productNotesSchema } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 
 function siteContext(siteKey: string) {
@@ -43,7 +43,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
   return (
     <main className="section">
       <JsonLd data={breadcrumbSchema(site, [{ name: "Home", path: "/" }, { name: product.name, path: `/reviews/${slug}` }])} />
-      <JsonLd data={reviewSchema(site, product)} />
+      <JsonLd data={productNotesSchema(site, product)} />
       <div className="shell">
         <div className="grid gap-8 lg:grid-cols-[1fr_380px]">
           <article>
@@ -51,9 +51,6 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
             <h1 className="mt-3 text-4xl font-black leading-tight">{displayName} Buying Notes</h1>
             <p className="mt-5 text-lg leading-8 text-[var(--muted)]">{product.summary}</p>
             <div className="mt-6 flex flex-wrap items-center gap-3">
-              <span className="inline-flex items-center rounded-md bg-[var(--accent-soft)] px-3 py-2 font-bold text-[var(--accent)]">
-                Fit score: {product.rating} / 5
-              </span>
               <span className="rounded-md bg-[var(--brand-soft)] px-3 py-2 font-semibold text-[var(--brand-strong)]">{product.bestFor}</span>
             </div>
             <div className="relative mt-8 aspect-[16/9] w-full overflow-hidden rounded-md">
@@ -161,20 +158,13 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
           <aside className="space-y-5">
             <Disclosure site={site} />
             <div className="panel p-5">
-              <h2 className="text-xl font-bold">Scorecard</h2>
-              <div className="mt-4 space-y-4">
+              <h2 className="text-xl font-bold">Decision factors</h2>
+              <p className="mt-2 text-sm leading-6 text-[var(--muted)]">Use these factors to compare the product with nearby alternatives.</p>
+              <ul className="mt-4 space-y-3 text-sm font-semibold">
                 {product.scores.map((score) => (
-                  <div key={score.label}>
-                    <div className="flex justify-between text-sm font-semibold">
-                      <span>{score.label}</span>
-                      <span>{score.value}/10</span>
-                    </div>
-                    <div className="mt-2 h-2 rounded-full bg-[var(--surface-muted)]">
-                      <div className="h-2 rounded-full bg-[var(--brand)]" style={{ width: `${score.value * 10}%` }} />
-                    </div>
-                  </div>
+                  <li className="rounded-md bg-[var(--surface-muted)] px-3 py-2" key={score.label}>{score.label}</li>
                 ))}
-              </div>
+              </ul>
             </div>
             <div className="panel p-5">
               <h2 className="text-xl font-bold">Specs</h2>

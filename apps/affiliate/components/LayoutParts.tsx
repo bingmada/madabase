@@ -104,15 +104,9 @@ export function ProductCard({ site, product, position }: { site: SiteConfig; pro
         <Image className="object-cover" src={displayImage} alt={displayName} fill sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" />
       </div>
       <div className="p-5">
-        <div className="flex items-start justify-between gap-3">
-          <div>
-            <p className="text-xs font-bold uppercase text-[var(--muted)]">{product.brand}</p>
-            <h3 className="mt-1 text-xl font-bold">{displayName}</h3>
-          </div>
-          <div className="rounded-md bg-[var(--accent-soft)] px-2 py-1 text-right text-xs font-bold text-[var(--accent)]">
-            <span className="block leading-tight">Fit score</span>
-            <span className="block leading-tight">{product.rating}/5</span>
-          </div>
+        <div>
+          <p className="text-xs font-bold uppercase text-[var(--muted)]">{product.brand}</p>
+          <h3 className="mt-1 text-xl font-bold">{displayName}</h3>
         </div>
         <p className="mt-3 leading-7 text-[var(--muted)]">{product.summary}</p>
         <p className="mt-3 text-sm font-semibold text-[var(--brand-strong)]">Best for: {product.bestFor}</p>

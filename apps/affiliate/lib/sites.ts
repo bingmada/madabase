@@ -82,7 +82,7 @@ export const sites: Record<SiteKey, SiteConfig> = {
       accentSoft: "#e2f4f2",
     },
     categories: [
-      { slug: "sleep", name: "Sleep", description: "Monitors, safe sleep accessories, sound, and nursery basics." },
+      { slug: "sleep", name: "Sleep", description: "Monitors, sound machines, nursery setup, and routine basics." },
       { slug: "travel", name: "Travel", description: "Strollers, carriers, travel bags, and lightweight gear." },
       { slug: "feeding", name: "Feeding", description: "Bottles, sterilizers, pumps, and clean-up routines." },
     ],

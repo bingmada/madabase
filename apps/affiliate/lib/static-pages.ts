@@ -26,14 +26,14 @@ export function getStaticPages(site: SiteConfig): StaticPage[] {
         },
         {
           heading: "What we avoid",
-          body: "We do not present marketplace star ratings as our own scores, publish fake hands-on testing, or hide affiliate relationships. When a product has version, accessory, subscription, or sizing risk, that risk belongs on the page.",
+          body: "We do not present marketplace star ratings as our own evaluation, publish fake hands-on testing, or hide affiliate relationships. When a product has version, accessory, subscription, or sizing risk, that risk belongs on the page.",
         },
       ],
     },
     {
       slug: "methodology",
       title: "How We Evaluate Products",
-      dek: "The comparison process behind our roundups, review notes, fit scores, and buying checklists.",
+      dek: "The comparison process behind our roundups, buying notes, decision factors, and buying checklists.",
       sections: [
         {
           heading: "We start with the use case",
@@ -44,8 +44,8 @@ export function getStaticPages(site: SiteConfig): StaticPage[] {
           body: "Every recommendation needs both sides: where it wins and what to verify. That is why our pages call out size, compatibility, accessories, subscriptions, replacement parts, return windows, and setup limits.",
         },
         {
-          heading: "Fit score is not a marketplace rating",
-          body: "The fit score is an editorial comparison aid for the stated use case. Before buying, readers should still confirm the exact Amazon listing, seller, version, price, shipping, and current customer feedback.",
+          heading: "Decision factors, not star ratings",
+          body: "Our decision factors show what to compare for the stated use case without assigning unsupported numeric ratings. Before buying, readers should still confirm the exact Amazon listing, seller, version, price, shipping, and current customer feedback.",
         },
       ],
     },

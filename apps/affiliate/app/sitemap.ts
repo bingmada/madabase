@@ -5,7 +5,6 @@ import { getCurrentSite } from "@/lib/sites";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const site = await getCurrentSite();
-  const now = new Date();
   const urls: Array<{
     path: string;
     changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"];
@@ -22,7 +21,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   return urls.map((entry) => ({
     url: new URL(entry.path || "/", site.domain).toString(),
-    lastModified: now,
     changeFrequency: entry.changeFrequency,
     priority: entry.priority,
   }));

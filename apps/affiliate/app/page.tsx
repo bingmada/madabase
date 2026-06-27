@@ -14,13 +14,13 @@ const homeCopy: Record<SiteKey, { eyebrow: string; heading: string; body: string
   },
   homeoffice: {
     eyebrow: "Work-from-home buying guides",
-    heading: "Build a cleaner desk, better calls, and a setup your body can tolerate.",
+    heading: "Build a cleaner desk, better calls, and a setup that stays comfortable through the workday.",
     body: "Compare compact standing desks, ergonomic chairs, monitor arms, lighting, and cable-management upgrades by the problem they solve in a real home office.",
   },
   baby: {
     eyebrow: "Baby gear buying guides",
-    heading: "Make safer, calmer choices for sleep, travel, feeding, and daily routines.",
-    body: "Compare monitors, travel strollers, sterilizers, carriers, sound machines, and feeding helpers by safety fit, cleaning effort, storage, and everyday friction.",
+    heading: "Compare baby gear with stated safety limits and everyday routines in view.",
+    body: "Compare monitors, travel strollers, sterilizers, carriers, sound machines, and feeding helpers by stated age, weight, position, and use limits, plus cleaning effort, storage, and everyday friction.",
   },
   network: {
     eyebrow: "Home network buying guides",
