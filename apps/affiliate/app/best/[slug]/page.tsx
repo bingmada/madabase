@@ -186,6 +186,12 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
                 </div>
               </section>
             ) : null}
+            {roundup.sections?.map((section) => (
+              <section className="panel p-5" key={section.heading}>
+                <h2 className="text-xl font-bold">{section.heading}</h2>
+                <p className="mt-3 leading-7 text-[var(--muted)]">{section.body}</p>
+              </section>
+            ))}
             <section className="panel p-5">
               <h2 className="text-xl font-bold">How to choose without overbuying</h2>
               <div className="mt-4 grid gap-5 md:grid-cols-2">

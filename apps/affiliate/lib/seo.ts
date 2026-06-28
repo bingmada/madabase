@@ -103,15 +103,17 @@ export function faqPageSchema(faqs: Roundup["faqs"]) {
 export function productNotesSchema(site: SiteConfig, product: Product) {
   const displayName = product.amazonTitle ?? product.name;
   const displayImage = product.amazonImage ?? product.image;
+  const headline = product.seoTitle ?? `${displayName} Buying Notes`;
 
   return {
     "@context": "https://schema.org",
     "@type": "Article",
-    name: `${displayName} Buying Notes`,
-    headline: `${displayName} Buying Notes`,
+    name: headline,
+    headline,
     url: absoluteUrl(site, `/reviews/${product.slug}`),
     description: product.summary,
     image: absoluteUrl(site, displayImage),
+    ...(product.updatedAt ? { dateModified: new Date(product.updatedAt).toISOString() } : {}),
     about: {
       "@type": "Product",
       name: displayName,

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/JsonLd";
-import { findGuide, findRoundup } from "@/lib/content";
+import { findGuide, findProduct, findRoundup } from "@/lib/content";
 import { breadcrumbSchema, guideSchema, pageMetadata } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 import type { SiteKey } from "@/lib/types";
@@ -174,6 +174,16 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
           </div>
         </section>
         <div className="mt-10 grid gap-4 sm:grid-cols-2">
+          {(guide.relatedProducts ?? []).map((slug) => {
+            const product = findProduct(site.key, slug);
+            return product ? (
+              <Link className="panel p-5" href={`/reviews/${product.slug}`} key={product.slug}>
+                <p className="eyebrow">Related product guide</p>
+                <h2 className="mt-3 text-xl font-bold">{product.name}</h2>
+                <p className="mt-3 leading-7 text-[var(--muted)]">{product.summary}</p>
+              </Link>
+            ) : null;
+          })}
           {guide.relatedRoundups.map((slug) => {
             const roundup = findRoundup(site.key, slug);
             return roundup ? (

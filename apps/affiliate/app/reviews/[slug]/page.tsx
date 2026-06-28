@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AffiliateButton } from "@/components/AffiliateButton";
 import { JsonLd } from "@/components/JsonLd";
@@ -18,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const product = findProduct(site.key, slug);
   if (!product) return {};
-  return pageMetadata(site, `/reviews/${slug}`, `${product.amazonTitle ?? product.name} Buying Notes`, product.summary, product.amazonImage ?? product.image);
+  return pageMetadata(site, `/reviews/${slug}`, product.seoTitle ?? `${product.amazonTitle ?? product.name} Buying Notes`, product.summary, product.amazonImage ?? product.image);
 }
 
 export default async function ReviewPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -37,6 +38,9 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
     ["Price band", product.priceBand],
   ];
   const compatibilityChecks = product.evidence.slice(0, 5);
+  const comparisonProducts = (product.compareSlugs ?? [])
+    .map((comparisonSlug) => findProduct(site.key, comparisonSlug))
+    .filter(Boolean);
 
   const context = siteContext(site.key);
 
@@ -48,8 +52,14 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
         <div className="grid gap-8 lg:grid-cols-[1fr_380px]">
           <article>
             <p className="eyebrow">{product.brand}</p>
-            <h1 className="mt-3 text-4xl font-black leading-tight">{displayName} Buying Notes</h1>
+            <h1 className="mt-3 text-4xl font-black leading-tight">{product.seoTitle ?? `${displayName} Buying Notes`}</h1>
             <p className="mt-5 text-lg leading-8 text-[var(--muted)]">{product.summary}</p>
+            {product.updatedAt ? (
+              <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm font-semibold text-[var(--muted)]">
+                <span>Prepared by the {site.name} editorial desk</span>
+                <span>Updated {product.updatedAt}</span>
+              </div>
+            ) : null}
             <div className="mt-6 flex flex-wrap items-center gap-3">
               <span className="rounded-md bg-[var(--brand-soft)] px-3 py-2 font-semibold text-[var(--brand-strong)]">{product.bestFor}</span>
             </div>
@@ -109,6 +119,12 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                   <p>{product.whyItMatters}</p>
                 </>
               ) : null}
+              {product.editorialSections?.map((section) => (
+                <section key={section.heading}>
+                  <h2>{section.heading}</h2>
+                  <p>{section.body}</p>
+                </section>
+              ))}
               <h2>Where it wins</h2>
               <ul>
                 {(product.amazonFeatures?.length ? product.amazonFeatures.slice(0, 3) : product.pros).map((pro) => (
@@ -145,6 +161,22 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                   </ul>
                 </>
               ) : null}
+              {comparisonProducts.length ? (
+                <>
+                  <h2>Compare nearby options</h2>
+                  <div className="not-prose grid gap-4 sm:grid-cols-2">
+                    {comparisonProducts.map((comparison) =>
+                      comparison ? (
+                        <Link className="rounded-md border border-[var(--border)] bg-white p-5" href={`/reviews/${comparison.slug}`} key={comparison.slug}>
+                          <p className="text-xs font-bold uppercase text-[var(--muted)]">{comparison.brand}</p>
+                          <h3 className="mt-2 font-bold">{comparison.name}</h3>
+                          <p className="mt-2 text-sm leading-6 text-[var(--muted)]">{comparison.bestFor}</p>
+                        </Link>
+                      ) : null,
+                    )}
+                  </div>
+                </>
+              ) : null}
               <h2>Before you buy</h2>
               <ul>
                 <li>Check the exact Amazon listing, seller, return window, and current dimensions before ordering.</li>
@@ -153,6 +185,19 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                 <li>These notes focus on setup fit, listed specs, compatibility, and trade-offs so you can make a cleaner buying decision.</li>
                 <li>Our Amazon links may earn commission from qualifying purchases, at no extra cost to you.</li>
               </ul>
+              {product.sources?.length ? (
+                <>
+                  <h2>Primary sources</h2>
+                  <ul>
+                    {product.sources.map((source) => (
+                      <li key={source.url}>
+                        <a href={source.url} rel="noopener noreferrer" target="_blank">{source.name}</a>
+                        {source.note ? ` — ${source.note}` : ""}
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              ) : null}
             </div>
           </article>
           <aside className="space-y-5">

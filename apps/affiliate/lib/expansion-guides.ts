@@ -7,7 +7,8 @@ export const expansionGuides: Guide[] = [
     title: "Mesh Wi-Fi vs. a Single Router: Which Setup Fits Your Home?",
     dek: "A room-by-room decision guide for choosing between one well-placed router and a multi-node mesh system.",
     category: "wifi",
-    updatedAt: "June 27, 2026",
+    updatedAt: "June 28, 2026",
+    relatedProducts: ["tp-link-deco-be63-wifi-7-mesh"],
     relatedRoundups: ["best-mesh-wifi-for-apartments-and-homes", "best-wifi-7-routers-for-home-networks"],
     sources: [
       {
@@ -53,7 +54,8 @@ export const expansionGuides: Guide[] = [
     title: "Wired vs. Wireless Mesh Backhaul for Home Networks",
     dek: "How to decide whether Ethernet between mesh nodes is worth the installation effort.",
     category: "wifi",
-    updatedAt: "June 27, 2026",
+    updatedAt: "June 28, 2026",
+    relatedProducts: ["tp-link-deco-be63-wifi-7-mesh"],
     relatedRoundups: ["best-mesh-wifi-for-apartments-and-homes", "best-wired-networking-upgrades"],
     sources: [
       {
@@ -99,7 +101,7 @@ export const expansionGuides: Guide[] = [
     title: "Monitor Arm Compatibility Checklist",
     dek: "Check VESA pattern, monitor weight, desk clamp clearance, and cable movement before ordering an arm.",
     category: "ergonomics",
-    updatedAt: "June 27, 2026",
+    updatedAt: "June 28, 2026",
     relatedRoundups: ["best-monitor-arms-for-home-office"],
     sources: [
       {
@@ -119,6 +121,7 @@ export const expansionGuides: Guide[] = [
       { heading: "Inspect the desk edge from above and below", body: "A clamp needs a flat, strong contact area. Measure desktop thickness and check for aprons, cable trays, beveled edges, drawers, wall gaps, glass panels, or hollow sections that can block or weaken the mount." },
       { heading: "Plan the movement envelope", body: "The arm needs space behind and beside the display when it moves. Check wall clearance, portrait rotation, webcam position, laptop screens, and whether two arms will collide near the center of the desk." },
       { heading: "Leave enough cable slack", body: "Route power, display, and USB cables through the full height and depth range before tightening clips. The arm should move without pulling connectors, lifting a dock, or forcing a sharp bend at the monitor port." },
+      { heading: "Using a monitor arm with a walking pad or treadmill desk", body: "A walking desk adds repeated movement that a seated setup does not. Use a rigid desk, a clamp area with flat support above and below, and an arm that keeps the monitor comfortably inside its weight range. Start at a slow walking speed and watch for screen oscillation, clamp movement, or a desktop that flexes. Leave enough power and display-cable slack for both arm adjustment and any sit-stand travel, and stop to reposition the screen instead of adjusting a bouncing arm while walking." },
     ],
   },
   {

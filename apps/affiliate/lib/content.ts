@@ -658,14 +658,16 @@ export const products: Product[] = [
   {
     site: "baby",
     slug: "ergobaby-omni-breeze-carrier",
+    seoTitle: "Ergobaby Omni Breeze Buying Guide: Fit, Carry Positions & Airflow",
+    updatedAt: "June 28, 2026",
     name: "Ergobaby Omni Breeze Baby Carrier",
     brand: "Ergobaby",
     category: "travel",
     image: "/images/affiliate/baby-ergobaby-omni-breeze-carrier.webp",
-    summary: "A structured baby carrier for families who want hands-free errands, walks, and travel days.",
-    verdict: "Ergobaby Omni Breeze is the carrier to compare when adjustability and airflow matter, especially for parents who expect frequent carrier use.",
+    summary: "A research-based guide to the Omni Breeze's newborn requirements, four carry positions, SoftFlex mesh, adjustment steps, and the fit questions that product photos cannot answer.",
+    verdict: "Ergobaby Omni Breeze is worth comparing when you want one structured carrier from newborn size through toddler use and expect airflow and lumbar support to matter. Fit is personal, so the return path and a careful first adjustment matter more than the feature count.",
     whyItMatters: "A carrier has to fit both baby and adult. Strap adjustment, hip support, heat, and carry positions matter more than color or pattern.",
-    bestFor: "Hands-free errands and travel",
+    bestFor: "A breathable, structured carrier with four positions",
     priceBand: "$$",
     rating: 4.5,
     scores: [
@@ -673,11 +675,57 @@ export const products: Product[] = [
       { label: "Airflow", value: 8 },
       { label: "Learning curve", value: 6 },
     ],
-    pros: ["Multiple carry positions", "Good fit for warm-weather carrier shoppers", "Useful alternative to stroller-only travel"],
-    cons: ["Needs proper adjustment", "Some parents prefer softer wraps for newborn days"],
-    specs: { "Product type": "Baby carrier", "Use case": "Hands-free travel", "Link status": "Amazon affiliate link added" },
-    evidence: ["Check Ergobaby's age, weight, and position guidance for the exact Omni Breeze listing", "Compare fit for both caregivers before choosing it as the only carrier", "Review safe positioning instructions before use"],
-    alternatives: ["Choose a soft wrap for slower newborn days at home.", "Use a stroller when heat or back comfort is the limiting factor."],
+    pros: ["Four positions: front inward, front outward, hip, and back", "SoftFlex mesh is designed to increase airflow", "Adjustable seat, padded straps, and lumbar-support waistbelt"],
+    cons: ["Requires position-specific setup and a learning period", "A structured carrier can feel bulky compared with a soft wrap", "Mesh improves airflow but does not eliminate heat for baby or caregiver"],
+    specs: {
+      "Product type": "Structured baby carrier",
+      "Listed overall range": "7–45lb / 3.2–20.4kg; minimum height 20in / 50.8cm",
+      "Front inward": "From the listed newborn minimum",
+      "Front outward": "Strong head/neck control; over 25in; about 5–6 months",
+      "Hip and back": "Sits unassisted; minimum 17.2lb; usually about 6 months",
+      Material: "SoftFlex mesh",
+      "Infant insert": "Not required within the listed newborn limits",
+    },
+    evidence: ["Confirm the baby meets both the weight, height, and developmental requirements for the intended position", "Adjust the seat width to the baby's height using the waistbelt markings", "Make sure the face remains visible and follow the manual's head-and-neck-support instructions", "Fit each caregiver separately instead of assuming one strap setting works for everyone"],
+    editorialSections: [
+      {
+        heading: "A note about this guide",
+        body: "This is a research-based buying guide built from Ergobaby's current product page and instructions; it is not a hands-on test and does not claim that one carrier fits every body. Use the manufacturer manual for setup and position changes, and use the return window to evaluate caregiver comfort and fit.",
+      },
+      {
+        heading: "Newborn fit has specific conditions",
+        body: "Ergobaby lists the Omni Breeze from 7lb and 20in, with a newborn carried on the front facing inward; no infant insert is required. The seat setting and head-and-neck support change with the baby's size and development. “From birth” should therefore be read as meeting the stated minimums and following the newborn setup—not as permission to use every carry position.",
+      },
+      {
+        heading: "Carry positions are milestone-dependent",
+        body: "Front inward is the starting position. Ergobaby says outward facing requires strong head and neck control, the chin above the panel, and height over 25in, usually around 5–6 months; its FAQ also recommends a 14–30lb range for that position. Hip and back carry require the baby to sit upright unassisted and weigh at least 17.2lb, usually around 6 months.",
+      },
+      {
+        heading: "Adjustment mistakes to avoid",
+        body: "Set the seat width for the baby's height before tightening the carrier, keep the waistband level and secure, and check that the panel and head support match the chosen position. Do not reuse one caregiver's settings without checking the fit. Before trying a new position, follow the position-specific manual or official video rather than copying a product photo.",
+      },
+      {
+        heading: "What SoftFlex mesh can—and cannot—do",
+        body: "The mesh is intended to improve airflow and may be preferable to a heavier fabric in warm weather. It cannot make babywearing cool in every climate: the adult and baby still share body heat, and comfort changes with clothing, shade, activity, and trip length. Shorter carries or a stroller may be the better tool on very hot days.",
+      },
+      {
+        heading: "Who should skip it",
+        body: "Skip or compare another format if you want the compact feel of a wrap, dislike a structured waistband, need a carrier below the stated newborn limits, or cannot get comfortable after careful adjustment. Families using a carrier only occasionally may not benefit enough from the premium mesh design to justify the price.",
+      },
+    ],
+    alternatives: ["Compare a soft wrap if compact storage and slower newborn use matter more than four carry positions.", "Use a stroller when heat, caregiver comfort, or a long outing makes body carrying impractical."],
+    sources: [
+      {
+        name: "Ergobaby Omni Breeze product page and FAQ",
+        url: "https://ergobaby.com/omni-breeze-baby-carrier-all",
+        note: "Official weight, height, position, adjustment, material, and infant-insert guidance.",
+      },
+      {
+        name: "Ergobaby Omni Breeze instructions",
+        url: "https://ergobaby.com/instructions-omni-breeze/",
+        note: "Official manuals and position-specific setup videos.",
+      },
+    ],
     offers: [{ merchant: "Amazon US", url: "https://amzn.to/43PAsfm", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." }],
   },
   {
@@ -848,18 +896,26 @@ export const roundups: Roundup[] = [
     category: "ergonomics",
     intent: "Choose a monitor arm that matches monitor weight, desk edge, cable path, and adjustment needs.",
     intro: "A monitor arm can make a small desk feel more expensive than it is. The win is not the arm itself; it is the desk depth you get back, the cleaner keyboard area, and the ability to put the display where your neck wants it. The risk is buying an arm before checking monitor weight, VESA support, and clamp clearance.",
+    sections: [
+      {
+        heading: "Using a Monitor Arm with a Walking Pad or Treadmill Desk",
+        body: "For a walking desk, stability matters more than maximum arm reach. Confirm the VESA pattern and monitor-only weight, then inspect the desk for a flat, rigid clamp area that does not flex. Keep the display comfortably inside the arm's rated range, shorten unnecessary extension, and test at a slow walking speed for screen oscillation or clamp movement. Leave slack in power, video, and USB cables through the arm's full range and the desk's full sit-stand travel. No arm can fully cancel vibration from a flexible desktop or an uneven walking pad, so solve the desk movement before upgrading the arm.",
+      },
+    ],
     decisionGuide: [
       { label: "Premium single monitor", detail: "Choose a smoother arm if you adjust height or depth throughout the week." },
       { label: "Budget setup", detail: "A basic arm can still free meaningful desk space if the monitor weight is within range." },
       { label: "Thick or unusual desk edge", detail: "Measure clamp clearance before buying. Some desks need a different mount plan." },
       { label: "Dual monitor setup", detail: "Consider two single arms for easier positioning unless you know the exact layout." },
+      { label: "Walking pad or treadmill desk", detail: "Prioritize a rigid clamp point, modest arm extension, cable slack, and low screen movement over decorative features." },
     ],
-    methodology: ["Check VESA pattern and monitor weight before brand preference", "Compare clamp clearance against the actual desk edge", "Prioritize smooth height and depth adjustment over decorative cable covers"],
+    methodology: ["Check VESA pattern and monitor weight before brand preference", "Compare clamp clearance against the actual desk edge", "Prioritize smooth height and depth adjustment over decorative cable covers", "For walking desks, evaluate desktop flex, clamp movement, cable slack, and screen oscillation"],
     productSlugs: ["huanuo-titanlift-heavy-duty-monitor-arm", "amazon-basics-monitor-arm"],
     faqs: [
       { question: "Do all monitors work with monitor arms?", answer: "No. You need a compatible VESA mount pattern or a reliable adapter, and the monitor weight must sit within the arm's supported range." },
       { question: "Are monitor arms worth it for small desks?", answer: "Often yes. Removing the stock stand can free several inches of usable depth, which matters more than width in many apartments." },
       { question: "Should I buy single or dual monitor arms?", answer: "Single arms are easier to position and upgrade. Dual arms can work well, but they need more careful weight and desk-edge planning." },
+      { question: "What monitor arm works best with a walking pad desk?", answer: "Choose an arm that matches the monitor's VESA pattern and keeps its monitor-only weight comfortably within range, then mount it to a rigid, flat desk edge. A shorter extension and stable clamp can reduce movement, but the desk and walking pad are usually the main sources of vibration." },
     ],
   },
   {
@@ -1292,6 +1348,8 @@ export const guides: Guide[] = [
     title: "Baby Carrier Guide for Warm Weather",
     dek: "How to compare airflow, caregiver fit, carry positions, safe-use guidance, and learning curve.",
     category: "travel",
+    updatedAt: "June 28, 2026",
+    relatedProducts: ["ergobaby-omni-breeze-carrier"],
     relatedRoundups: ["best-baby-carriers-and-sleep-routine-upgrades"],
     sections: [
       { heading: "Airflow is only one part of comfort", body: "Mesh panels can help, but carrier comfort also depends on strap adjustment, waistband support, caregiver body shape, and how long the carrier is worn." },

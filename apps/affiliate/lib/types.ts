@@ -8,6 +8,11 @@ export type Score = {
 export type Product = {
   slug: string;
   site: SiteKey;
+  seoTitle?: string;
+  updatedAt?: string;
+  sources?: Array<{ name: string; url: string; note?: string }>;
+  editorialSections?: Array<{ heading: string; body: string }>;
+  compareSlugs?: string[];
   asin?: string;
   amazonTitle?: string;
   amazonImage?: string;
@@ -47,6 +52,7 @@ export type Roundup = {
   category: string;
   intent: string;
   intro?: string;
+  sections?: Array<{ heading: string; body: string }>;
   decisionGuide?: Array<{ label: string; detail: string }>;
   methodology: string[];
   productSlugs: string[];
@@ -63,6 +69,7 @@ export type Guide = {
   sources?: Array<{ name: string; url: string; note?: string }>;
   sections: Array<{ heading: string; body: string }>;
   relatedRoundups: string[];
+  relatedProducts?: string[];
 };
 
 export type Tool = {
