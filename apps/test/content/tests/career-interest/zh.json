@@ -6,6 +6,36 @@
     "选择真实偏好，不要选择听起来更体面的答案。",
     "结果适合用于职业探索，不代表固定职业结论。"
   ],
+  "overviewSections": [
+    {
+      "heading": "六类工作兴趣",
+      "body": "48 道题平均覆盖现实型、研究型、艺术型、社会型、企业型和常规型活动。这些是工作兴趣主题，不是人格诊断，也不衡量智力。"
+    },
+    {
+      "heading": "分数如何形成",
+      "body": "每个回答会为一个兴趣方向计分。最高分代表你评价最积极的工作活动类型；如果多个方向分数接近，这些组合信息同样值得参考。"
+    },
+    {
+      "heading": "结果能说明什么",
+      "body": "你可以用结果比较日常任务、工作环境和潜在职业方向。它不会判断你是否已经具备某个职业需要的技能、学历、健康条件或当地资质。"
+    },
+    {
+      "heading": "独立编写的 RIASEC 风格测试",
+      "body": "Madabase 独立编写并计分这 48 道题，本测试不是 O*NET 官方 Interest Profiler。开始前，本页会明确显示完整报告所需积分。"
+    }
+  ],
+  "sources": [
+    {
+      "name": "O*NET Interest Profiler Manual",
+      "url": "https://www.onetcenter.org/reports/IP_Manual.html",
+      "note": "RIASEC 职业探索框架的一手背景资料。Madabase 与 O*NET 不存在隶属或官方背书关系。"
+    },
+    {
+      "name": "O*NET RIASEC interest areas",
+      "url": "https://services.onetcenter.org/reference/mnm/ip/ip_interests",
+      "note": "六类职业兴趣概念的官方说明，用作框架参考。"
+    }
+  ],
   "reportLabels": {
     "strengths": "工作优势",
     "weaknesses": "潜在盲点",
@@ -79,4 +109,3 @@
     "CONVENTIONAL": { "title": "常规型组织者", "summary": "你偏好结构、准确性、系统和可靠执行。", "traits": ["有组织", "精确", "可靠"], "strengths": ["保持工作准确", "建立可重复流程", "在压力下维持秩序"], "weaknesses": ["可能抗拒模糊岗位", "容易被规则限制", "可能低估自己的战略价值"], "careers": ["运营", "财务", "行政", "合规"], "relationships": ["清晰标准、可预测流程、责任边界和稳定预期。"], "growthPlan": ["寻找拥有流程所有权的岗位", "练习解释业务影响", "尝试可控的小变化"] }
   }
 }
-

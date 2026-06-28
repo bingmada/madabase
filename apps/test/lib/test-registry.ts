@@ -189,13 +189,13 @@ const baseTestRegistry: TestRegistryEntry[] = [
     resultTypes: ["REALISTIC", "INVESTIGATIVE", "ARTISTIC", "SOCIAL", "ENTERPRISING", "CONVENTIONAL"],
     seo: {
       en: {
-        title: "Online Career Interest Test",
-        description: "Take a practical career interest test inspired by RIASEC dimensions and discover your strongest work preference.",
-        keywords: ["career test", "career interest test", "riasec test", "career aptitude"],
+        title: "Career Interest Test (RIASEC-Style)",
+        description: "Rate 48 work activities across six RIASEC-style interest areas and use your strongest pattern to explore better-fitting work environments.",
+        keywords: ["interest test", "career interest test", "riasec test", "career test", "work interest assessment"],
       },
       zh: {
-        title: "在线职业兴趣测试",
-        description: "基于 RIASEC 六维职业兴趣框架完成职业兴趣测试，找到更匹配你的工作方向。",
+        title: "职业兴趣测试（RIASEC 六维）",
+        description: "通过 48 项工作活动了解六类 RIASEC 风格职业兴趣，用优势兴趣方向探索更匹配的工作环境。",
         keywords: ["职业兴趣测试", "霍兰德测试", "职业测试", "职业倾向"],
       },
     },

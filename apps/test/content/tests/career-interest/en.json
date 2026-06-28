@@ -6,6 +6,36 @@
     "Answer for your real preferences, not what sounds impressive.",
     "Use the result as a career exploration map, not a fixed career prescription."
   ],
+  "overviewSections": [
+    {
+      "heading": "Six work-interest areas",
+      "body": "The 48 questions are divided evenly across Realistic, Investigative, Artistic, Social, Enterprising, and Conventional activities. These are work-interest themes, not personality diagnoses or measures of intelligence."
+    },
+    {
+      "heading": "How the score is formed",
+      "body": "Each answer adds to one interest area. Your highest area identifies the kind of work activity you rated most positively; nearby scores can be just as useful when your interests span more than one direction."
+    },
+    {
+      "heading": "What the result can tell you",
+      "body": "Use the result to compare daily tasks, work environments, and possible career directions. It does not measure whether you already have the skills, qualifications, health requirements, or local credentials for a particular occupation."
+    },
+    {
+      "heading": "Independent RIASEC-style assessment",
+      "body": "Madabase wrote and scores these 48 items independently. This is not the official O*NET Interest Profiler. The full-report credit cost is displayed on this page before you begin."
+    }
+  ],
+  "sources": [
+    {
+      "name": "O*NET Interest Profiler Manual",
+      "url": "https://www.onetcenter.org/reports/IP_Manual.html",
+      "note": "Primary background on the RIASEC model used for career exploration. Madabase is not affiliated with or endorsed by O*NET."
+    },
+    {
+      "name": "O*NET RIASEC interest areas",
+      "url": "https://services.onetcenter.org/reference/mnm/ip/ip_interests",
+      "note": "Primary descriptions of the six interest-area concepts used as framework references."
+    }
+  ],
   "reportLabels": {
     "strengths": "Work strengths",
     "weaknesses": "Possible blind spots",
@@ -79,4 +109,3 @@
     "CONVENTIONAL": { "title": "Conventional Organizer", "summary": "You prefer structure, accuracy, systems, and reliable execution.", "traits": ["Organized", "Precise", "Dependable"], "strengths": ["Keeps work accurate", "Builds repeatable processes", "Maintains order under pressure"], "weaknesses": ["May resist ambiguous roles", "Can become too rule-bound", "May undersell your strategic value"], "careers": ["Operations", "Finance", "Administration", "Compliance"], "relationships": ["Clear standards, predictable workflows, accountability, and stable expectations."], "growthPlan": ["Look for roles with process ownership", "Practice explaining business impact", "Experiment with controlled change"] }
   }
 }
-

@@ -72,6 +72,8 @@ export default async function TestDetailPage({
       relatedTools: "Related tools",
       fullReport: "Full report costs",
       credits: "credits",
+      overview: "What this test measures",
+      sources: "Framework references",
     },
     zh: {
       instructions: "说明",
@@ -81,6 +83,8 @@ export default async function TestDetailPage({
       relatedTools: "相关工具",
       fullReport: "完整报告消耗",
       credits: "积分",
+      overview: "这项测试衡量什么",
+      sources: "框架参考资料",
     },
   }[locale];
 
@@ -145,6 +149,36 @@ export default async function TestDetailPage({
               <ArrowRight className="h-4 w-4" />
             </Link>
           </section>
+
+          {content.overviewSections?.length ? (
+            <section className="border-t border-[var(--border)] p-5 sm:p-7">
+              <h2 className="text-2xl font-bold text-[var(--text)]">{copy.overview}</h2>
+              <div className="mt-5 grid gap-4 md:grid-cols-2">
+                {content.overviewSections.map((section) => (
+                  <article className="rounded-md border border-[var(--border)] bg-white p-5" key={section.heading}>
+                    <h3 className="text-lg font-bold text-[var(--text)]">{section.heading}</h3>
+                    <p className="mt-3 leading-7 text-[var(--text-muted)]">{section.body}</p>
+                  </article>
+                ))}
+              </div>
+            </section>
+          ) : null}
+
+          {content.sources?.length ? (
+            <section className="border-t border-[var(--border)] bg-[var(--surface-muted)] p-5 sm:p-7">
+              <h2 className="text-xl font-bold text-[var(--text)]">{copy.sources}</h2>
+              <ul className="mt-4 grid gap-3">
+                {content.sources.map((source) => (
+                  <li className="rounded-md border border-[var(--border)] bg-white p-4" key={source.url}>
+                    <a className="font-semibold text-[var(--brand-strong)] underline-offset-4 hover:underline" href={source.url} rel="noopener noreferrer" target="_blank">
+                      {source.name}
+                    </a>
+                    {source.note ? <p className="mt-2 text-sm leading-6 text-[var(--text-muted)]">{source.note}</p> : null}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : null}
 
           {relatedTools.length > 0 ? (
             <section className="border-t border-[var(--border)] p-5 sm:p-7">

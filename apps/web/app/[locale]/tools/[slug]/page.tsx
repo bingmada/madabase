@@ -127,7 +127,7 @@ export default async function ToolPage({ params }: { params: Promise<{ locale: s
 
         <section className="border-t border-[var(--border)] p-5 sm:p-7">
           <h2 className="text-2xl font-bold text-[var(--text)]">{locale === "en" ? "Introduction" : "介绍"}</h2>
-          <p className="mt-3 leading-7 text-[var(--text-muted)]">{content.intro[locale]}</p>
+          <p className="mt-3 whitespace-pre-line leading-7 text-[var(--text-muted)]">{content.intro[locale]}</p>
         </section>
 
         <section className="border-t border-[var(--border)] p-5 sm:p-7">

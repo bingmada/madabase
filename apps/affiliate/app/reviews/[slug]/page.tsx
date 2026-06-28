@@ -214,12 +214,14 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
             <div className="panel p-5">
               <h2 className="text-xl font-bold">Specs</h2>
               <dl className="mt-4 divide-y divide-[var(--border)]">
-                {Object.entries(product.specs).map(([key, value]) => (
+                {Object.entries(product.specs)
+                  .filter(([key]) => key !== "Link status")
+                  .map(([key, value]) => (
                   <div className="flex justify-between gap-4 py-3 text-sm" key={key}>
                     <dt className="font-semibold text-[var(--muted)]">{key}</dt>
                     <dd className="text-right font-bold">{value}</dd>
                   </div>
-                ))}
+                  ))}
               </dl>
             </div>
             <div className="panel p-5">

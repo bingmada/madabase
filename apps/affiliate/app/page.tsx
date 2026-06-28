@@ -83,6 +83,7 @@ export default async function HomePage() {
       </section>
       <section className="section bg-white" id="guides">
         <div className="shell grid gap-5 md:grid-cols-3">
+          <span className="sr-only" id="tools" aria-hidden="true" />
           {guides.map((guide) => (
             <Link className="panel p-5" href={`/guides/${guide.slug}`} key={guide.slug}>
               <p className="eyebrow">{guide.category}</p>
@@ -91,7 +92,7 @@ export default async function HomePage() {
             </Link>
           ))}
           {tools.map((tool) => (
-            <Link className="panel p-5" href={`/tools/${tool.slug}`} key={tool.slug} id="tools">
+            <Link className="panel p-5" href={`/tools/${tool.slug}`} key={tool.slug}>
               <p className="eyebrow">Tool</p>
               <h3 className="mt-3 text-xl font-bold">{tool.title}</h3>
               <p className="mt-3 leading-7 text-[var(--muted)]">{tool.dek}</p>

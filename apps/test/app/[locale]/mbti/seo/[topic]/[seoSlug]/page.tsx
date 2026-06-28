@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { JsonLd, buildArticleSchema, buildBreadcrumbSchema } from "@/components/JsonLd";
 import { isLocale } from "@/lib/i18n";
-import { mbtiSeoPageMap } from "@/lib/mbti-seo";
+import { famousLegacyRedirectMap, mbtiSeoPageMap } from "@/lib/mbti-seo";
 import { buildAbsoluteUrl, buildPageMetadata } from "@/lib/seo";
 
 export async function generateMetadata({
@@ -28,12 +28,11 @@ export async function generateMetadata({
     type: "article",
   });
 
+  if (page.topic === "famous") return metadata;
+
   return {
     ...metadata,
-    robots: {
-      index: false,
-      follow: true,
-    },
+    robots: { index: false, follow: true },
   };
 }
 
@@ -44,6 +43,8 @@ export default async function MbtiSeoPage({
 }) {
   const { locale, topic, seoSlug } = await params;
   if (!isLocale(locale)) notFound();
+  const legacyFamousTarget = topic === "famous" ? famousLegacyRedirectMap.get(seoSlug) : undefined;
+  if (legacyFamousTarget) permanentRedirect(`/${locale}/mbti/seo/famous/${legacyFamousTarget}`);
   const page = mbtiSeoPageMap.get(`${topic}/${seoSlug}`);
   if (!page) notFound();
 
@@ -103,9 +104,11 @@ export default async function MbtiSeoPage({
               <Link href={`/${locale}/mbti/start`} className="inline-flex h-11 items-center rounded-md bg-[var(--surface-code)] px-4 text-sm font-semibold text-white shadow-sm transition hover:bg-[var(--brand-strong)]">
                 {copy.takeTest}
               </Link>
-              <Link href={`/${locale}/mbti/result/${page.type.toLowerCase()}`} className="inline-flex h-11 items-center rounded-md border border-[var(--border)] bg-white px-4 text-sm font-semibold text-[var(--text)] transition hover:border-[var(--brand)]">
-                {page.type}
-              </Link>
+              {page.type ? (
+                <Link href={`/${locale}/mbti/result/${page.type.toLowerCase()}`} className="inline-flex h-11 items-center rounded-md border border-[var(--border)] bg-white px-4 text-sm font-semibold text-[var(--text)] transition hover:border-[var(--brand)]">
+                  {page.type}
+                </Link>
+              ) : null}
             </div>
           </header>
 

@@ -7,7 +7,6 @@ import { toolRegistry, getCategories } from "@/lib/tool-registry";
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = getSiteUrl();
   const categories = getCategories();
-  const now = new Date();
   const staticRoutes = [
     { path: "", priority: 1, changeFrequency: "weekly" as const },
     { path: "/tools", priority: 0.95, changeFrequency: "weekly" as const },
@@ -28,9 +27,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   );
 
   return locales.flatMap((locale) => [
-    ...staticRoutes.map((route) => ({ url: `${baseUrl}/${locale}${route.path}`, lastModified: now, changeFrequency: route.changeFrequency, priority: route.priority })),
-    ...categories.map((category) => ({ url: `${baseUrl}/${locale}/tools/category/${category}`, lastModified: now, changeFrequency: "weekly" as const, priority: 0.85 })),
-    ...toolRegistry.map((tool) => ({ url: `${baseUrl}/${locale}/tools/${tool.slug}`, lastModified: now, changeFrequency: "monthly" as const, priority: tool.popular ? 0.9 : 0.8 })),
+    ...staticRoutes.map((route) => ({ url: `${baseUrl}/${locale}${route.path}`, changeFrequency: route.changeFrequency, priority: route.priority })),
+    ...categories.map((category) => ({ url: `${baseUrl}/${locale}/tools/category/${category}`, changeFrequency: "weekly" as const, priority: 0.85 })),
+    ...toolRegistry.map((tool) => ({ url: `${baseUrl}/${locale}/tools/${tool.slug}`, changeFrequency: "monthly" as const, priority: tool.popular ? 0.9 : 0.8 })),
     ...blogEntries[locales.indexOf(locale)],
   ]);
 }

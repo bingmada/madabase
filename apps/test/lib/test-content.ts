@@ -42,10 +42,23 @@ const resultContentSchema = z.object({
   growthPlan: z.array(z.string()),
 });
 
+const overviewSectionSchema = z.object({
+  heading: z.string(),
+  body: z.string(),
+});
+
+const sourceSchema = z.object({
+  name: z.string(),
+  url: z.string().url(),
+  note: z.string().optional(),
+});
+
 const testContentSchema = z.object({
   title: z.string(),
   description: z.string(),
   instructions: z.array(z.string()),
+  overviewSections: z.array(overviewSectionSchema).optional(),
+  sources: z.array(sourceSchema).optional(),
   reportLabels: z
     .object({
       strengths: z.string(),
@@ -77,6 +90,8 @@ export type TestContent = {
   title: string;
   description: string;
   instructions: string[];
+  overviewSections?: Array<z.infer<typeof overviewSectionSchema>>;
+  sources?: Array<z.infer<typeof sourceSchema>>;
   reportLabels?: {
     strengths: string;
     weaknesses: string;
@@ -118,6 +133,8 @@ export async function loadTestContent(slug: string, locale: Locale): Promise<Tes
       title: parsed.title,
       description: parsed.description,
       instructions: parsed.instructions,
+      overviewSections: parsed.overviewSections,
+      sources: parsed.sources,
       reportLabels: parsed.reportLabels,
       questions: [...directQuestions, ...scaleQuestions] as TestQuestion[],
       results: parsed.results,

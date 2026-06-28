@@ -230,12 +230,17 @@ function parseToolContent(content: string, requestedLocale: Locale) {
         sectionData.a = sectionData.a ? `${sectionData.a}\n${trimmedLine}` : trimmedLine;
       }
     } else if (currentSection === "relatedTools") {
-      currentList.push(trimmedLine);
+      if (trimmedLine) currentList.push(trimmedLine);
     } else if (currentSection === "keywords") {
-      currentList.push(trimmedLine);
+      if (trimmedLine) currentList.push(trimmedLine);
     } else if (currentSection === "category") {
-      result[currentLocale].category = trimmedLine;
-    } else if (currentSection && ["title", "h1", "description", "seoTitle", "seoDescription", "intro"].includes(currentSection)) {
+      if (trimmedLine) result[currentLocale].category = trimmedLine;
+    } else if (currentSection === "intro") {
+      if (trimmedLine) {
+        const existing = result[currentLocale].intro as string | undefined;
+        result[currentLocale].intro = existing ? `${existing}\n\n${trimmedLine}` : trimmedLine;
+      }
+    } else if (currentSection && ["title", "h1", "description", "seoTitle", "seoDescription"].includes(currentSection)) {
       if (!result[currentLocale][currentSection]) result[currentLocale][currentSection] = trimmedLine;
     }
   }

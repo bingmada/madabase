@@ -1,11 +1,7 @@
 import type { Metadata } from "next";
-// import { Inter, JetBrains_Mono } from "next/font/google";
 import Script from "next/script";
-import "./globals.css";
+import "../globals.css";
 import { getSiteUrl } from "@/lib/seo";
-
-// const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
-// const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
 
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
@@ -31,13 +27,17 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function LocaleLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }>) {
+  const { locale } = await params;
+
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang={locale === "zh" ? "zh" : "en"} suppressHydrationWarning>
       <head>
         <meta name="google-adsense-account" content="ca-pub-4491218467179399" />
         <meta name="baidu-site-verification" content="codeva-c4utHf4AR0" />

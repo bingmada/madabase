@@ -18,11 +18,39 @@ export function SiteChrome({ site, children }: { site: SiteConfig; children: Rea
         } as React.CSSProperties
       }
     >
+      <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-white/95 backdrop-blur">
+        <div className="shell flex min-h-16 items-center justify-between gap-5 py-3">
+          <Link className="text-lg font-black text-[var(--brand-strong)]" href="/">
+            {site.name}
+          </Link>
+          <nav className="flex flex-wrap items-center justify-end gap-x-4 gap-y-2 text-sm font-semibold" aria-label="Primary navigation">
+            <Link className="hover:text-[var(--brand-strong)]" href="/">
+              Home
+            </Link>
+            {site.categories.map((category) => (
+              <Link className="hover:text-[var(--brand-strong)]" href={`/categories/${category.slug}`} key={category.slug}>
+                {category.name}
+              </Link>
+            ))}
+            <Link className="hover:text-[var(--brand-strong)]" href="/#guides">
+              Guides
+            </Link>
+            <Link className="hover:text-[var(--brand-strong)]" href="/#tools">
+              Tools
+            </Link>
+            <Link className="hover:text-[var(--brand-strong)]" href="/methodology">
+              Methodology
+            </Link>
+          </nav>
+        </div>
+      </header>
       {children}
       <footer className="border-t border-[var(--border)] bg-white">
         <div className="shell py-8 text-sm leading-6 text-[var(--muted)]">
           <div className="flex flex-wrap items-center justify-between gap-4">
-            <p className="font-semibold text-[var(--text)]">{site.name}</p>
+            <Link className="font-semibold text-[var(--text)] hover:text-[var(--brand-strong)]" href="/">
+              {site.name}
+            </Link>
             <nav className="flex flex-wrap gap-x-4 gap-y-2 font-semibold" aria-label="Site information">
               <Link className="hover:text-[var(--brand-strong)]" href="/about">
                 About

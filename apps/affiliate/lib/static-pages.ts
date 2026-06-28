@@ -6,6 +6,7 @@ export const staticPageSlugs = ["about", "methodology", "editorial-policy", "aff
 function focusLine(site: SiteConfig) {
   if (site.key === "pet") return "pet-care routines, cleaning effort, replacement parts, home fit, and whether a product reduces daily friction.";
   if (site.key === "baby") return "baby-care routines, safe-use limits, cleaning effort, storage, caregiver comfort, and version-specific compatibility.";
+  if (site.key === "network") return "home layout, port requirements, wired backhaul, client-device support, setup friction, and whether the network stays reliable under everyday load.";
   return "desk fit, ergonomics, device compatibility, setup friction, cable paths, and whether a product solves a real home-office problem.";
 }
 

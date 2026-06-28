@@ -42,7 +42,7 @@ export type MbtiSeoPage = {
   title: Localized;
   description: Localized;
   h1: Localized;
-  type: MbtiType;
+  type?: MbtiType;
   secondaryType?: MbtiType;
   sections: Array<{ title: Localized; body: Localized; bullets: Localized[] }>;
   related: Array<{ topic: MbtiSeoTopic; slug: string; label: Localized }>;
@@ -174,20 +174,69 @@ function matchPage(left: MbtiType, right: MbtiType): MbtiSeoPage {
   };
 }
 
-function famousPage(type: MbtiType, person: FamousPerson): MbtiSeoPage {
+function relatedFamous(person: FamousPerson): MbtiSeoPage["related"] {
+  return famousPeople
+    .filter((candidate) => candidate.slug !== person.slug)
+    .slice(0, 3)
+    .map((candidate) => ({
+      topic: "famous" as const,
+      slug: `${candidate.slug}-personality-type`,
+      label: {
+        en: `${candidate.name} personality type`,
+        zh: `${candidate.name} 的人格类型`,
+      },
+    }));
+}
+
+function famousPage(person: FamousPerson): MbtiSeoPage {
   return {
     topic: "famous",
-    slug: `${type.toLowerCase()}-${person.slug}`,
-    type,
-    title: { en: `Is ${person.name} ${type}?`, zh: `${person.name} 是 ${type} 吗` },
-    description: { en: `A careful personality-style analysis of whether ${person.name} looks like ${type}, based on public behavior signals.`, zh: `基于公开行为线索，分析 ${person.name} 是否像 ${type}。` },
-    h1: { en: `Is ${person.name} an ${type}?`, zh: `${person.name} 是 ${type} 吗？` },
+    slug: `${person.slug}-personality-type`,
+    title: { en: `${person.name} MBTI and Personality Type: What Can Be Verified?`, zh: `${person.name} 的 MBTI 人格类型：哪些信息可以确认？` },
+    description: {
+      en: `A careful look at ${person.name}'s commonly discussed personality type, why online MBTI claims conflict, and what public behavior can and cannot establish.`,
+      zh: `谨慎梳理关于 ${person.name} 人格类型的网络说法、不同 MBTI 结论为何冲突，以及公开行为能够和不能说明什么。`,
+    },
+    h1: { en: `What is ${person.name}'s MBTI personality type?`, zh: `${person.name} 的 MBTI 人格类型是什么？` },
     sections: [
-      { title: { en: "Short Answer", zh: "简短结论" }, body: { en: `${person.name} is often discussed as a ${person.role.en}. Public behavior can resemble ${type}, but no public typing should be treated as certain without a direct assessment.`, zh: `${person.name} 常被视为${person.role.zh}。公开行为可能呈现 ${type} 的某些特征，但未亲自测评前不应当作确定结论。` }, bullets: typeProfiles[type].strengths },
-      { title: { en: "Visible Signals", zh: "可观察线索" }, body: { en: `Look for repeated patterns in decisions, communication, stress response, and work style rather than isolated quotes.`, zh: `判断时应看决策、沟通、压力反应和工作方式的重复模式，而不是单句语录。` }, bullets: [{ en: "Decision style", zh: "决策风格" }, { en: "Communication rhythm", zh: "沟通节奏" }, { en: "Stress behavior", zh: "压力行为" }] },
-      { title: { en: "Better Use", zh: "更好的用法" }, body: { en: `Use famous-person comparisons as a reflection prompt: which traits do you recognize, and which are just projection?`, zh: `名人对比更适合当作自我观察：哪些特质你真的认同，哪些只是投射？` }, bullets: [{ en: "Compare behavior, not status", zh: "比较行为，不比较身份" }, { en: "Avoid treating type as proof", zh: "不要把类型当证据" }] },
+      {
+        title: { en: "Short answer", zh: "简短结论" },
+        body: {
+          en: `This page does not rely on a verified, first-person MBTI result that would let us state ${person.name}'s four-letter type as fact. Online answers are interpretations of a public ${person.role.en}, not evidence of a documented personal assessment.`,
+          zh: `本页没有采用经过本人确认的一手 MBTI 测评结果，因此不会把 ${person.name} 的四字母类型写成事实。网络结论只是对一位${person.role.zh}公开形象的解读，不能证明本人完成过有记录的测评。`,
+        },
+        bullets: [
+          { en: "No public self-assessment is verified here", zh: "本页未发现可核实的本人公开测评" },
+          { en: "A public persona is not a full personality record", zh: "公众形象不等于完整人格记录" },
+          { en: "Type labels should remain hypotheses", zh: "类型标签只能作为假设" },
+        ],
+      },
+      {
+        title: { en: "Why online answers conflict", zh: "为什么网络答案互相冲突" },
+        body: {
+          en: `Writers can read the same speech, interview, or career decision through different personality frameworks. Selective examples, changing public roles, and the lack of private context make confident typing unreliable.`,
+          zh: `不同作者会用不同人格框架解读同一段演讲、采访或职业决定。选择性举例、公众角色变化以及缺少私人情境，都会让过度确定的类型判断失去可靠性。`,
+        },
+        bullets: [
+          { en: "Different evidence is selected", zh: "选取的证据不同" },
+          { en: "Public roles reward performed behavior", zh: "公众角色会塑造外在表现" },
+          { en: "MBTI preferences cannot be diagnosed from one quote", zh: "不能用一句话判断 MBTI 偏好" },
+        ],
+      },
+      {
+        title: { en: "How to use this comparison responsibly", zh: "如何更负责任地使用名人对比" },
+        body: {
+          en: `Treat famous-person typing as a reflection prompt rather than proof. Compare specific behaviors, keep alternative explanations open, and use your own assessment to explore your preferences instead of borrowing a celebrity label.`,
+          zh: `把名人类型当作自我观察提示，而不是证明。比较具体行为、保留其他解释，并通过自己的测评探索偏好，而不是直接套用名人标签。`,
+        },
+        bullets: [
+          { en: "Compare behavior, not status", zh: "比较行为，不比较身份" },
+          { en: "Separate observation from inference", zh: "区分观察与推断" },
+          { en: "Do not treat type as a clinical conclusion", zh: "不要把类型当作临床结论" },
+        ],
+      },
     ],
-    related: relatedFor(type),
+    related: relatedFamous(person),
   };
 }
 
@@ -213,10 +262,19 @@ export function getMbtiSeoPages(): MbtiSeoPage[] {
     ...mbtiTypes.flatMap((type) => careerTopics.map((topic) => careerPage(type, topic))),
     ...mbtiTypes.map((type) => lovePage(type)),
     ...mbtiTypes.flatMap((left) => mbtiTypes.map((right) => matchPage(left, right))),
-    ...mbtiTypes.flatMap((type) => famousPeople.map((person) => famousPage(type, person))),
+    ...famousPeople.map((person) => famousPage(person)),
     ...mbtiTypes.map((type) => alikePage(type)),
   ];
 }
 
 export const mbtiSeoPages = getMbtiSeoPages();
 export const mbtiSeoPageMap = new Map(mbtiSeoPages.map((page) => [`${page.topic}/${page.slug}`, page]));
+export const famousPersonalityPages = mbtiSeoPages.filter((page) => page.topic === "famous");
+export const famousLegacyRedirectMap: Map<string, string> = new Map(
+  mbtiTypes.flatMap((type) =>
+    famousPeople.map((person) => [
+      `${type.toLowerCase()}-${person.slug}`,
+      `${person.slug}-personality-type`,
+    ] as const),
+  ),
+);
