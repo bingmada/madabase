@@ -115,11 +115,8 @@ export function productNotesSchema(site: SiteConfig, product: Product) {
     image: absoluteUrl(site, displayImage),
     ...(product.updatedAt ? { dateModified: new Date(product.updatedAt).toISOString() } : {}),
     about: {
-      "@type": "Product",
+      "@type": "Thing",
       name: displayName,
-      brand: { "@type": "Brand", name: product.brand },
-      sku: product.asin ?? product.specs.ASIN,
-      image: absoluteUrl(site, displayImage),
       description: product.summary,
     },
     author: {
