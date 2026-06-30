@@ -89,6 +89,17 @@ export const networkProducts: Product[] = [
   {
     site: "network",
     slug: "amazon-eero-6-mesh-wifi-system",
+    seoTitle: "eero 6 Mesh Guide: Router vs Extender, Ports & Coverage",
+    updatedAt: "June 30, 2026",
+    sources: [
+      { name: "eero 6 product page", url: "https://eero.com/shop/eero-6", note: "Wi-Fi generation, listed coverage, package options, and device positioning." },
+      { name: "eero product comparison", url: "https://support.eero.com/hc/en-us/articles/115002718486-eero-Mesh-WiFi-Product-Comparison", note: "Router, extender, port, speed, and generation differences." },
+    ],
+    editorialSections: [
+      { heading: "Count routers and extenders separately", body: "An eero 6 router has two auto-sensing gigabit ports; an eero 6 extender has none. Check the exact 3-pack composition before assuming every node can use Ethernet backhaul or connect a wired device." },
+      { heading: "Coverage is a planning estimate", body: "eero lists up to 1,500 square feet per eero 6 unit under ideal conditions. Floors, masonry, utilities, placement, and neighboring networks can reduce useful coverage." },
+      { heading: "Simplicity has boundaries", body: "The app-led setup is the attraction, but an eero account is part of the experience and some optional features are subscription-based. Advanced network tinkerers may prefer more exposed controls." },
+    ],
     name: "Amazon eero 6 Mesh Wi-Fi System",
     brand: "Amazon eero",
     category: "wifi",
@@ -215,6 +226,17 @@ export const networkProducts: Product[] = [
   {
     site: "network",
     slug: "netgear-gs308e-gigabit-switch",
+    seoTitle: "NETGEAR GS308E Guide: VLANs, QoS & Hardware Version Checks",
+    updatedAt: "June 30, 2026",
+    sources: [
+      { name: "NETGEAR GS308E product page", url: "https://www.netgear.com/business/wired/switches/easy-smart/gs308e/", note: "Port count, fanless design, management features, and support." },
+      { name: "NETGEAR GS305E/GS308E data sheet", url: "https://www.netgear.com/images/datasheet/switches/WebManagedSwitches/GS305E_GS308E.pdf", note: "Model specifications and feature summary." },
+    ],
+    editorialSections: [
+      { heading: "Buy it for one clear management need", body: "The GS308E adds basic web-managed features such as VLAN, QoS, and port monitoring to eight gigabit ports. If none of those has a defined use, the unmanaged GS308 is simpler." },
+      { heading: "It is not PoE or multi-gig", body: "All eight ports are gigabit-class data ports. The switch does not create 2.5GbE paths or power access points and cameras, so check those requirements before choosing on port count alone." },
+      { heading: "Hardware revision matters", body: "NETGEAR feature details and management methods can differ by hardware version. Match the live listing, underside label, current manual, and firmware support before following a setup guide." },
+    ],
     name: "NETGEAR GS308E 8-Port Gigabit Switch",
     brand: "NETGEAR",
     category: "wired",

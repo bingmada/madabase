@@ -65,6 +65,19 @@ const siteAdvice: Record<SiteKey, AdviceBlock> = {
     ],
     decision: "Spend more when coverage, wired backhaul, multi-gig ports, or device count solves a known bottleneck; spend less when placement or one Ethernet run fixes the problem first.",
   },
+  smarthome: {
+    checklist: [
+      "Confirm the exact lock, doorbell, thermostat, controller, and ecosystem versions before buying.",
+      "Check what remains available locally when Wi-Fi, cloud service, or a subscription is unavailable.",
+      "Map wiring, door dimensions, radio coverage, storage, and household access before installation.",
+    ],
+    mistakes: [
+      "Treating Matter, Thread, Zigbee, Wi-Fi, and Bluetooth as interchangeable labels.",
+      "Buying an ecosystem feature before confirming the required hub, controller, or border router.",
+      "Ignoring subscription boundaries, batteries, replacement access, and emergency fallback controls.",
+    ],
+    decision: "Choose the device with the clearest compatibility and local fallback path; add premium ecosystem features only when they remove a recurring household problem.",
+  },
 };
 
 const categoryAdvice: Record<string, string[]> = {
@@ -79,6 +92,10 @@ const categoryAdvice: Record<string, string[]> = {
   wifi: ["Coverage claims assume ideal rooms; walls, floors, and router placement change the result.", "Multi-gig ports matter only when the modem, router, switch, and client path can use them.", "Mesh is easier, but wired backhaul is usually the cleaner long-term upgrade."],
   wired: ["A cheap switch is fine for simple rooms, but port speed and management features matter for NAS or office setups.", "Cable category should match run length and future speed needs.", "Adapters and hubs should be checked against laptop charging, display, and Ethernet needs together."],
   backup: ["UPS sizing starts with modem, ONT, router, and mesh node power draw.", "Runtime claims depend on load, battery age, and outlet layout.", "Keep network backup simple enough that it still works during a real outage."],
+  access: ["Measure the door and existing deadbolt before comparing unlock methods.", "Keep at least one dependable local fallback entry method.", "Confirm which hub or controller unlocks remote and cross-platform features."],
+  cameras: ["Compare storage and alert features before comparing headline resolution.", "Battery placement is easier, but wired power can reduce charging work.", "Check what the subscription changes after any trial ends."],
+  climate: ["Use the manufacturer's compatibility checker before removing the old thermostat.", "A C-wire or power adapter can matter more than app preference.", "Room sensors help only when placement and HVAC behavior match the problem."],
+  automation: ["Matter is an application standard; Thread and Zigbee are network technologies.", "A Matter controller and a Thread border router are different roles.", "Prefer physical and local fallback controls for essential routines."],
 };
 
 function guideAdvice(siteKey: SiteKey, category: string) {

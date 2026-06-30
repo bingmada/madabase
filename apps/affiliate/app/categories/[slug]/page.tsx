@@ -64,6 +64,24 @@ const categoryFrameworks: Record<SiteKey, Record<string, { focus: string; checks
       checks: ["Router and modem wattage", "Outlet count", "Runtime expectation", "Battery replacement path"],
     },
   },
+  smarthome: {
+    access: {
+      focus: "A smart lock should fit the existing door, preserve a dependable local entry method, and match the household's phone and hub ecosystem.",
+      checks: ["Deadbolt and door dimensions", "Local backup entry", "Hub or controller requirements", "Battery and weather rating"],
+    },
+    cameras: {
+      focus: "A video doorbell is a camera, alert system, and recurring storage decision—not only a resolution number.",
+      checks: ["Field of view and placement", "Battery or wiring path", "Local versus cloud storage", "Subscription feature boundaries"],
+    },
+    climate: {
+      focus: "Thermostat choice starts at the HVAC wiring panel; app design and automation matter only after system compatibility is confirmed.",
+      checks: ["HVAC compatibility", "C-wire or adapter need", "Included room sensors", "Ecosystem and subscription"],
+    },
+    automation: {
+      focus: "Home-automation standards describe different layers. Plan controllers, border routers, radios, and fallback controls before choosing logos.",
+      checks: ["Matter controller", "Thread border router", "Zigbee hub", "Local control when offline"],
+    },
+  },
 };
 
 function getCategoryFramework(siteKey: SiteKey, category: string) {

@@ -84,6 +84,28 @@ const roundupAdvice: Record<SiteKey, Record<string, { spendMore: string; spendLe
       compare: ["VA and watt rating", "Outlet spacing", "USB charging needs", "Expected router and modem runtime"],
     },
   },
+  smarthome: {
+    access: {
+      spendMore: "Spend more when the upgrade adds a dependable entry method your household will use, while preserving key, keypad, or emergency access.",
+      spendLess: "Spend less when fingerprint or keypad access solves the problem and UWB, Home Key, or advanced automation would add unused complexity.",
+      compare: ["Door and deadbolt fit", "Entry methods", "Hub and ecosystem requirements", "Battery and backup access"],
+    },
+    cameras: {
+      spendMore: "Spend more for the field of view, wiring flexibility, storage path, and alerts you will use—not for resolution alone.",
+      spendLess: "Spend less when local storage and basic person alerts cover the entrance without a recurring plan.",
+      compare: ["Battery versus hardwire", "Local and cloud storage", "Included chime", "Subscription-only features"],
+    },
+    climate: {
+      spendMore: "Spend more when remote sensors, HVAC compatibility, and room-aware control solve real comfort problems.",
+      spendLess: "Spend less when a basic programmable thermostat already handles the schedule and remote sensors are unnecessary.",
+      compare: ["HVAC and wiring support", "Included sensors", "Ecosystem control", "Optional service features"],
+    },
+    automation: {
+      spendMore: "Spend more on the required controller or border router when it creates a stable local foundation for several devices.",
+      spendLess: "Spend less when one vendor app and local physical controls already meet the need.",
+      compare: ["Controller roles", "Radio support", "Local fallback", "Cross-platform sharing"],
+    },
+  },
 };
 
 function getRoundupAdvice(siteKey: SiteKey, category: string) {

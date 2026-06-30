@@ -27,6 +27,11 @@ const homeCopy: Record<SiteKey, { eyebrow: string; heading: string; body: string
     heading: "Build a faster, calmer network for Wi-Fi, wired rooms, travel, and backup power.",
     body: "Compare mesh Wi-Fi, Wi-Fi 7 routers, switches, Ethernet cables, USB-C network adapters, and router UPS options by layout, device count, wired backhaul, and setup friction.",
   },
+  smarthome: {
+    eyebrow: "Smart-home buying guides",
+    heading: "Choose connected-home gear by compatibility, control, and recurring cost.",
+    body: "Compare smart locks, video doorbells, thermostats, and home-automation standards by door fit, wiring, hubs, subscriptions, privacy, and the controls your household will actually use.",
+  },
 };
 
 export async function generateMetadata() {

@@ -2,20 +2,23 @@ import type { Guide, Product, Roundup, SiteKey, Tool } from "./types";
 import { amazonProductOverrides } from "./amazon-overrides";
 import { expansionGuides } from "./expansion-guides";
 import { networkGuides, networkProducts, networkRoundups, networkTools } from "./network-content";
+import { smartHomeGuides, smartHomeProducts, smartHomeRoundups } from "./smarthome-content";
 
 export const products: Product[] = [
   {
     site: "pet",
     slug: "petlibro-granary-automatic-cat-feeder",
     asin: "B0BYD73PHN",
-    name: "PETLIBRO Granary Automatic Cat Feeder",
+    seoTitle: "PETLIBRO Granary Smart Feeder Guide: Portions, Wi-Fi & Backup Power",
+    updatedAt: "June 29, 2026",
+    name: "PETLIBRO Granary Smart Cat Feeder",
     brand: "PETLIBRO",
     category: "feeding",
     image: "/images/affiliate/pet-petlibro-granary-automatic-cat-feeder.webp",
-    summary: "An automatic dry-food feeder for cats and small dogs where steady meal timing matters more than extra smart features.",
-    verdict: "The PETLIBRO Granary is the feeder to start with when the goal is dependable scheduled feeding without turning every meal into an app project.",
-    whyItMatters: "Automatic feeders solve routine friction only if the food path stays clean, portions are predictable, and the pet cannot easily break into the hopper.",
-    bestFor: "Cats that need scheduled dry-food meals",
+    summary: "A research-based guide to the Wi-Fi Granary feeder family, including scheduled portions, dry-kibble limits, app alerts, battery behavior, and the 3L-versus-5L variant check buyers should make before ordering.",
+    verdict: "The Granary Smart Feeder is worth comparing when a cat or small dog needs repeatable dry-food schedules and remote changes are genuinely useful. It is not a substitute for checking actual food intake, and buyers should confirm the exact capacity because PETLIBRO sells several Granary versions under closely related names.",
+    whyItMatters: "Automatic feeders reduce routine friction only when the selected kibble dispenses consistently, the programmed volume matches the pet's diet, and someone still checks the bowl, hopper, and pet. App control adds convenience, but local schedules and backup-power behavior matter more during an outage.",
+    bestFor: "Scheduled dry-food feeding with app control and local backup",
     priceBand: "$",
     rating: 4.6,
     scores: [
@@ -23,11 +26,63 @@ export const products: Product[] = [
       { label: "Cleaning", value: 7 },
       { label: "Reliability", value: 8 },
     ],
-    pros: ["Good fit for timed dry-kibble routines", "Sealed hopper helps keep food fresher", "Simple enough for non-smart-home households"],
-    cons: ["Not for wet food", "Large or irregular kibble can still be a compatibility risk"],
-    specs: { ASIN: "B0BYD73PHN", "Product type": "Automatic feeder", "Use case": "Scheduled meals", "Link status": "Amazon affiliate link added" },
-    evidence: ["Confirm the exact Granary capacity and Wi-Fi/app version on Amazon", "Verify kibble-size compatibility before relying on scheduled portions", "Compare power backup, bowl access, and chute cleaning steps"],
-    alternatives: ["Choose a larger feeder only if you travel often or feed multiple pets.", "Use a slow feeder bowl if the main issue is eating speed rather than timing."],
+    pros: ["Schedules and feeding history can be managed in the PETLIBRO app", "Supports both 2.4GHz and 5GHz Wi-Fi", "Battery backup continues scheduled meals when normal power is unavailable"],
+    cons: ["Dry food only, with a listed 2–15mm kibble range", "Portions are measured by volume and can vary in weight with kibble shape and density", "Wi-Fi and some controls are disabled while operating only on backup batteries"],
+    specs: {
+      ASIN: "B0BYD73PHN",
+      "Model family": "PLAF103 Granary Smart Feeder",
+      "Listing capacity": "Confirm 3L or 5L before checkout",
+      Network: "2.4GHz and 5GHz Wi-Fi",
+      Schedules: "Up to 10 meals",
+      Portions: "1–50 portions per meal; about 20mL per portion",
+      "Allowed food": "Dry kibble, 2–15mm",
+      Power: "5V adapter; 3 alkaline D batteries for backup",
+    },
+    evidence: [
+      "Confirm the selected Amazon variation, capacity, bowl count, and PLAF103 model before checkout",
+      "Weigh several real dispenses with the pet's usual kibble instead of treating a volume portion as a fixed calorie amount",
+      "Test the saved schedule and battery switchover before depending on the feeder during a long absence",
+      "Inspect the outlet, bowl, food level, and desiccant regularly even when app alerts are enabled",
+    ],
+    editorialSections: [
+      {
+        heading: "A note about this guide",
+        body: "This is a research-based buying guide built from PETLIBRO's current Granary Smart Feeder page and support material; it is not a hands-on reliability test. The linked ASIN and the official page can expose different capacity or bowl variants, so the exact selection at checkout controls the specifications you receive.",
+      },
+      {
+        heading: "Check 3L versus 5L before comparing price",
+        body: "Granary names are reused across automatic, Wi-Fi, camera, single-bowl, and dual-bowl products. The linked ASIN has appeared as a Wi-Fi PLAF103 listing, while PETLIBRO's current official PLAF103 page describes a 5L configuration. Confirm capacity, color, bowl count, camera presence, and model number in the selected Amazon variation rather than relying on the family name alone.",
+      },
+      {
+        heading: "A portion is volume, not a nutrition promise",
+        body: "PETLIBRO describes Granary portions in milliliters. The actual grams and calories change with kibble diameter, shape, freshness, and density. Start by weighing repeated dispenses of the exact food, then set the schedule around a veterinarian-approved daily amount. Recheck after changing food instead of assuming the old portion count still applies.",
+      },
+      {
+        heading: "What happens during a power or network outage",
+        body: "PETLIBRO lists three alkaline D batteries as emergency backup. Scheduled meals can continue on battery power, but Wi-Fi and some controls are disabled to conserve energy. That makes a tested local schedule valuable, but it does not eliminate the need for a person to check the feeder during a prolonged trip.",
+      },
+      {
+        heading: "Cleaning and jam prevention are part of reliability",
+        body: "Use only dry food within the listed 2–15mm range, keep the base and electronics dry, and let washable parts dry completely before reassembly. App alerts for low food or blockage are useful signals, not proof that a meal reached the bowl or that the pet ate it.",
+      },
+      {
+        heading: "Who should skip it",
+        body: "Skip this feeder for wet food, very large or irregular kibble, pets that need individual access control, or a household that cannot tolerate app and Wi-Fi setup. A simple non-connected feeder may be better when remote schedule changes and feeding history would go unused.",
+      },
+    ],
+    alternatives: ["Choose a non-Wi-Fi feeder when a local schedule is enough and app setup would add friction.", "Choose an access-controlled or RFID feeder when one pet steals another pet's food.", "Use a slow-feed bowl when eating speed, rather than meal timing, is the main problem."],
+    sources: [
+      {
+        name: "PETLIBRO Granary Smart Feeder product page",
+        url: "https://petlibro.com/products/petlibro-5g-wifi-automatic-pet-feeder",
+        note: "Official PLAF103 capacity, Wi-Fi, schedule, portion, kibble, power, cleaning, and battery-mode information.",
+      },
+      {
+        name: "PETLIBRO portion-size guidance",
+        url: "https://uk.petlibro.com/pages/how-much-is-in-one-feeding-portion-plaf001-002-101-102-plaf003-004-plaf005-006-103-203-plaf008-plaf107-plaf108-plaf301",
+        note: "Official explanation that feeder portions are volumetric and vary with the food.",
+      },
+    ],
     offers: [{ merchant: "Amazon US", url: "https://amzn.to/3Qj2NaW", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." }],
   },
   {
@@ -60,14 +115,16 @@ export const products: Product[] = [
     site: "pet",
     slug: "furbo-360-dog-camera",
     asin: "B0BWN22T25",
+    seoTitle: "Furbo 360 Dog Camera Guide: Free Features, Nanny Plan & Treat Fit",
+    updatedAt: "June 29, 2026",
     name: "Furbo 360 Dog Camera",
     brand: "Furbo",
     category: "home-care",
     image: "/images/affiliate/pet-furbo-360-dog-camera.webp",
-    summary: "A treat-tossing pet camera for dog owners who want check-ins, two-way audio, and a more interactive camera.",
-    verdict: "Furbo 360 makes the most sense when the camera is part reassurance and part routine interaction, especially for dogs that respond well to voice and treats.",
-    whyItMatters: "Pet cameras are easy to overbuy. The useful question is whether alerts, app access, audio, and treat features reduce owner uncertainty or just add more notifications.",
-    bestFor: "Dog owners who want interactive check-ins",
+    summary: "A research-based guide to Furbo 360's rotating 1080p camera, treat tosser, free standalone features, optional Nanny features, placement requirements, and the subscription terms that vary by purchase model.",
+    verdict: "Furbo 360 makes sense when live check-ins, two-way audio, bark alerts, tracking, and treat tossing will become part of a calm routine. Before buying, confirm whether the selected listing is a standalone camera or a Subscription Required offer, because that changes the ongoing commitment more than the hardware feature list.",
+    whyItMatters: "Pet cameras can reduce uncertainty, but notifications and cloud clips are not the same as pet care. The practical decision is whether the free live features are enough, whether paid detection has real value, and whether the dog reacts calmly to the motor, voice, and treat launcher.",
+    bestFor: "Interactive dog check-ins with rotating live view and treat tossing",
     priceBand: "$$",
     rating: 4.5,
     scores: [
@@ -75,11 +132,73 @@ export const products: Product[] = [
       { label: "Alerts", value: 8 },
       { label: "Interaction", value: 9 },
     ],
-    pros: ["Treat tossing can make check-ins more engaging", "Wide rotating view suits open rooms", "Strong brand recognition for pet-camera shoppers"],
-    cons: ["Smart alerts and cloud features can involve ongoing cost", "Treat compatibility and placement need checking"],
-    specs: { ASIN: "B0BWN22T25", "Product type": "Pet camera", "Use case": "Interactive monitoring", "Link status": "Amazon affiliate link added" },
-    evidence: ["Compare which alerts require a Furbo subscription", "Check treat-size compatibility and whether your dog reacts calmly", "Verify camera placement, 360-degree room coverage, and privacy comfort"],
-    alternatives: ["Choose a basic Wyze-style camera if you only need live view.", "Skip treat tossing if your dog gets overexcited or guards food."],
+    pros: ["Standalone models retain live view, two-way audio, treat tossing, and bark alerts without Furbo Nanny", "1080p camera, night vision, and rotating view cover more of an open room", "Live-view Auto Dog Tracking can follow movement without a Nanny subscription"],
+    cons: ["AI detection, automatic cloud recording, and some advanced alerts require Furbo Nanny", "Subscription Required listings can impose a minimum paid-plan commitment", "Treat size, stable placement, 2.4GHz Wi-Fi, and the dog's reaction all need checking"],
+    specs: {
+      ASIN: "B0BWN22T25",
+      Camera: "1080p FHD; 132° lens; 4x digital zoom; automatic night vision",
+      Rotation: "360° viewing coverage through a rotating base",
+      Audio: "Built-in microphone and speaker",
+      Treats: "About 100 pieces; round treats around 0.5in / 1cm recommended",
+      Connectivity: "2.4GHz Wi-Fi; Bluetooth 4.2 for setup",
+      "App requirements": "iOS 14+ or Android 10+ listed",
+      "Purchase plan": "Confirm standalone or Subscription Required before checkout",
+    },
+    evidence: [
+      "Confirm whether the selected Amazon offer is the standalone camera or a Subscription Required model and read the minimum term",
+      "Map free live-view, audio, treat, bark-alert, and live-tracking features separately from paid cloud and AI features",
+      "Place the camera on a stable surface within the official height and router-distance guidance without obstructing rotation",
+      "Introduce the sound, movement, voice, and treat launcher while someone is home before using them remotely",
+    ],
+    editorialSections: [
+      {
+        heading: "A note about this guide",
+        body: "This is a research-based buying guide built from Furbo's product and support pages; it is not a hands-on camera or behavior test. Furbo sells similar hardware through standalone and subscription-linked offers, so current checkout terms take priority over older reviews or screenshots.",
+      },
+      {
+        heading: "The standalone camera still has useful free features",
+        body: "Furbo says standalone models retain live video, two-way audio, treat tossing, and barking alerts without a Nanny subscription. Live-view Auto Dog Tracking also works without Nanny. That free set may be enough for owners who open the app deliberately and do not need automatic behavior clips.",
+      },
+      {
+        heading: "What the Nanny plan changes",
+        body: "Furbo Nanny adds services such as advanced AI alerts and automatic cloud recording. Furbo also sells Subscription Required packages with their own minimum terms. Do not compare only the camera's sale price: identify the purchase model, minimum commitment, renewal terms, cancellation timing, and which alerts you would actually use.",
+      },
+      {
+        heading: "Placement controls the useful view",
+        body: "Furbo recommends an elevated, uncluttered position and placement close enough to the Wi-Fi router. Leave room for the base to rotate, keep the USB cable secure, and aim the starting view at the pet's real resting area rather than the room entrance. A rotating camera cannot see through furniture or compensate for weak Wi-Fi.",
+      },
+      {
+        heading: "Treat tossing needs a calm introduction",
+        body: "Use treats close to Furbo's recommended size and make sure they fit the dog's diet. Test the launcher while present: some dogs enjoy the cue, while others may bark at the sound, guard food, paw at the camera, or become more aroused. In those cases, live view without treats may be the better routine.",
+      },
+      {
+        heading: "Privacy and care limits",
+        body: "An indoor camera captures household activity as well as the pet. Review account access, cloud-storage choices, microphone use, placement, and the comfort of everyone who enters the room. Furbo can show a problem and support a check-in; it cannot replace exercise, supervision, temperature safety, medication, or an in-person backup plan.",
+      },
+      {
+        heading: "Who should skip it",
+        body: "Choose a simpler indoor camera if live view is the only requirement. Skip treat tossing if the dog guards food or reacts poorly to the mechanism, and avoid a subscription-linked listing if paid alerts and cloud recording do not justify the ongoing cost.",
+      },
+    ],
+    alternatives: ["Choose a basic Wyze-style pan camera if live view and room coverage matter more than pet-specific features.", "Use a fixed local-storage camera when cloud clips and treat tossing are unnecessary.", "Skip remote treats when the dog becomes overexcited or guards food."],
+    compareSlugs: ["wyze-cam-pan-v3-pet-camera"],
+    sources: [
+      {
+        name: "Furbo 360 Dog Camera product specifications",
+        url: "https://furbo.com/us/products/legacy-furbo-360-dog-camera",
+        note: "Official camera, audio, treat, connectivity, device-requirement, size, and weight specifications.",
+      },
+      {
+        name: "Furbo features available without Nanny",
+        url: "https://help.furbo.com/hc/en-us/articles/17462722245785-Basic-Features-you-can-use-without-Furbo-Nanny",
+        note: "Official distinction between free standalone features and subscription-linked offers.",
+      },
+      {
+        name: "Furbo 360 quick-start and placement guide",
+        url: "https://help.furbo.com/hc/en-us/articles/29794759618201-Quick-Start-Guide-to-Furbo-360-Dog-Camera",
+        note: "Official placement, power, setup, and included-feature guidance.",
+      },
+    ],
     offers: [{ merchant: "Amazon US", url: "https://amzn.to/43SYVR1", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." }],
   },
   {
@@ -313,6 +432,14 @@ export const products: Product[] = [
   {
     site: "homeoffice",
     slug: "branch-ergonomic-chair",
+    seoTitle: "Branch Ergonomic Chair Guide: Fit, Adjustments & Warranty",
+    updatedAt: "June 30, 2026",
+    sources: [{ name: "Branch Ergonomic Chair", url: "https://www.branchfurniture.com/products/ergonomic-chair", note: "Adjustment points, user range, certification, capacity, and warranty." }],
+    editorialSections: [
+      { heading: "Fit before features", body: "Branch lists eight adjustment points and a suggested 5'2\"–6'2\" user range, but body proportions vary. Set seat depth so the front edge does not press behind the knees and keep shoulders relaxed at the armrests." },
+      { heading: "What the mid-range price buys", body: "The chair adds adjustable seat depth, lumbar support, tilt, height, tension, and removable 3D arms without entering premium contract-chair pricing. That is meaningful only if those ranges fit the user." },
+      { heading: "Use the return window", body: "A chair cannot be validated from a feature table. Confirm the current return terms, assembly condition requirements, 275lb listed capacity, and seven-year warranty before discarding packaging." },
+    ],
     asin: "B0GWGK4JFK",
     name: "Branch Ergonomic Chair",
     brand: "Branch",
@@ -366,14 +493,16 @@ export const products: Product[] = [
     site: "homeoffice",
     slug: "huanuo-titanlift-heavy-duty-monitor-arm",
     asin: "B0DQ19YC9H",
+    seoTitle: "HUANUO TitanLift Monitor Arm Guide: 49-Inch & 44lb Fit Checks",
+    updatedAt: "June 29, 2026",
     name: "HUANUO TitanLift Heavy Duty Monitor Arm",
     brand: "HUANUO",
     category: "ergonomics",
     image: "/images/affiliate/homeoffice-huanuo-titanlift-heavy-duty-monitor-arm.webp",
-    summary: "A heavy-duty monitor arm for larger screens where weight rating and desk clamp fit matter before cable tidiness.",
-    verdict: "The HUANUO TitanLift is the monitor-arm pick to inspect when you run a heavier ultrawide or large display and a basic arm feels risky.",
-    whyItMatters: "A monitor arm is not just a tidiness accessory. For large screens, the real buying question is whether the arm supports the monitor weight, VESA pattern, and desk edge without sagging or crowding the setup.",
-    bestFor: "Large or heavier single-monitor setups",
+    summary: "A research-based fit guide to the non-RGB TitanLift listing, including its 44lb limit, VESA patterns, large-screen range, clamp requirements, adjustment envelope, and the stability checks that matter on standing or walking desks.",
+    verdict: "TitanLift is worth shortlisting for a heavy ultrawide only after the monitor weight, VESA pattern, rear shape, and desk mounting area all pass. It is unnecessary for a light 24- or 27-inch display, and no arm can fully remove movement from a flexible standing desk or walking setup.",
+    whyItMatters: "A large monitor arm is a compatibility system, not just an accessory. Screen size alone is insufficient: monitor-only weight, VESA position, recessed mounting areas, desk thickness, underside obstructions, desktop stiffness, and arm extension all affect whether the setup holds position safely.",
+    bestFor: "Heavy single monitors and ultrawides that pass every fit check",
     priceBand: "$$",
     rating: 4.7,
     scores: [
@@ -381,16 +510,83 @@ export const products: Product[] = [
       { label: "Adjustment", value: 9 },
       { label: "Value", value: 7 },
     ],
-    pros: ["Higher weight-rating focus than basic monitor arms", "Helps recover desk depth with large displays", "Useful for ultrawide and gaming-monitor shoppers"],
-    cons: ["More arm than a standard 24-inch monitor needs", "Clamp clearance, desk thickness, and VESA support must be checked carefully"],
-    specs: { ASIN: "B0DQ19YC9H", "Arm type": "Heavy-duty single monitor arm", "Use case": "Large screen support", "Link status": "Amazon affiliate link added" },
-    evidence: ["Verify monitor weight and screen size before brand preference", "Check VESA pattern, desk-edge clearance, and clamp/grommet mounting options", "Compare with budget Amazon Basics arm if your monitor is standard size"],
-    alternatives: ["Choose Amazon Basics if price matters more than heavy-screen support.", "Use the stock stand if your monitor is already at eye height and desk depth is not a problem."],
+    pros: ["Listed for monitors up to 49 inches and 44lb", "Supports 75x75mm and 100x100mm VESA patterns", "C-clamp/grommet mounting, quick-release VESA head, and cable management support a cleaner setup"],
+    cons: ["Large screen size does not guarantee compatibility with weight, VESA, or rear-panel shape", "A heavy monitor creates substantial leverage on thin, hollow, glass, or flexible desktops", "Maximum extension can increase visible movement on sit-stand and walking desks"],
+    specs: {
+      ASIN: "B0DQ19YC9H",
+      "Listing style": "Non-RGB TitanLift single arm",
+      "Screen range": "17–49in listed",
+      "Weight range": "6.6–44lb / 3–20kg listed",
+      VESA: "75x75mm or 100x100mm",
+      Tilt: "+50° to -50°",
+      Swivel: "180°",
+      Rotation: "360°; screen-size limits apply",
+      "Height adjustment": "Up to 19.6in to VESA center",
+      Mounting: "C-clamp or grommet; confirm exact desk-thickness range",
+    },
+    evidence: [
+      "Use monitor-only weight without the stock stand and leave margin below the arm's maximum rating",
+      "Confirm VESA spacing, screw requirements, recessed areas, curvature, and port clearance on the exact monitor",
+      "Inspect desktop material, thickness, rear-edge depth, underside beams, cable trays, and wall clearance before mounting",
+      "For a standing or walking desk, keep extension modest, leave cable slack, and test movement at the slowest walking speed",
+    ],
+    editorialSections: [
+      {
+        heading: "A note about this guide",
+        body: "This is a research-based fit guide built from HUANUO's current TitanLift family page and the exact Amazon listing; it is not a hands-on load or wobble test. TitanLift variants differ, including RGB and non-RGB versions, so the selected ASIN and included mounting hardware should be checked before purchase.",
+      },
+      {
+        heading: "All three monitor checks must pass",
+        body: "The linked non-RGB listing identifies a 17–49-inch range, 6.6–44lb load range, and 75x75mm or 100x100mm VESA support. Treat these as simultaneous conditions. Also inspect recessed VESA areas, curved rear housings, required spacers, cable ports, and the monitor manufacturer's mounting guidance.",
+      },
+      {
+        heading: "Desk compatibility is more than thickness",
+        body: "A clamp needs a flat top and underside with enough depth for the base and pressure plate. Rear aprons, beveled edges, drawers, cable trays, wall gaps, and metal support bars can block installation even when thickness is nominally acceptable. Glass, hollow-core, particleboard, or flexible tops may need manufacturer approval or reinforcement.",
+      },
+      {
+        heading: "How extension changes stability",
+        body: "A heavy display held far forward creates more leverage on the arm and desk. Use only as much reach as the working position requires, calibrate tension for the installed monitor, and check that tilt and height stay put. The highest load rating is a compatibility ceiling, not a promise of identical movement at every extension.",
+      },
+      {
+        heading: "Using TitanLift with a standing or walking desk",
+        body: "Desk movement can travel through the clamp and arm into the screen. Mount to the most rigid edge available, avoid unnecessary extension, route cables with slack through the full height range, and test at a slow walking speed. If the desktop flexes or the walking pad is uneven, solve that source before expecting a heavier arm to remove oscillation.",
+      },
+      {
+        heading: "Installation and periodic checks",
+        body: "Support the monitor during attachment, use the correct VESA screws and spacers, tighten the mount according to the instructions, then calibrate tension. Recheck the clamp, fasteners, desk surface, and cable pull after initial use and after moving the desk. Stop using the setup if the top deforms, the clamp shifts, or the monitor will not hold position.",
+      },
+      {
+        heading: "Who should skip it",
+        body: "Choose a smaller arm for an ordinary light monitor, keep the stock stand when it already provides good height and depth, and avoid clamp mounting when the desk edge is obstructed or structurally questionable. A wall mount may be better when the desk cannot safely carry the leverage.",
+      },
+    ],
+    alternatives: ["Choose Amazon Basics when a standard-size monitor is comfortably within a lighter-duty arm's limits.", "Keep the stock stand when it already provides good ergonomics and the desk edge cannot take a clamp.", "Consider a compatible wall mount when the desktop is weak or blocked."],
+    compareSlugs: ["amazon-basics-monitor-arm"],
+    sources: [
+      {
+        name: "HUANUO TitanLift product page",
+        url: "https://www.huanuostand.com/product/huanuo-titanlift-monitor-arm-for-ultrawide-screens-up-to-49%E2%80%B3-heavy-duty-single-mount-holds-44-lbs-fully-adjustable-gaming-monitor-arm-with-c-clamp-grommet-base-max-vesa-100-x-100mm-rgb4-2/",
+        note: "Official TitanLift family load, VESA, screen, mounting, adjustment, and installation specifications; verify variant differences.",
+      },
+      {
+        name: "HUANUO TitanLift ASIN B0DQ19YC9H listing",
+        url: "https://www.amazon.com/dp/B0DQ19YC9H",
+        note: "Exact non-RGB marketplace variant and current included-hardware details.",
+      },
+    ],
     offers: [{ merchant: "Amazon US", url: "https://amzn.to/43O98hI", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." }],
   },
   {
     site: "homeoffice",
     slug: "amazon-basics-monitor-arm",
+    seoTitle: "Amazon Basics Gas-Spring Monitor Arm Guide: 27-Inch Fit Checks",
+    updatedAt: "June 30, 2026",
+    sources: [{ name: "Amazon listing B0CQXMT3QC", url: "https://www.amazon.com/dp/B0CQXMT3QC", note: "Exact single-arm listing, current dimensions, weight limit, VESA support, and included hardware." }],
+    editorialSections: [
+      { heading: "Match the exact listing", body: "ASIN B0CQXMT3QC is a gas-spring single-monitor arm marketed for screens up to 27 inches. Verify the current monitor-only weight range and VESA patterns on the live listing because Amazon Basics models can look similar." },
+      { heading: "Inspect the desk, not only the screen", body: "Check desktop thickness, rear-edge clearance, underside bracing, wall distance, and cable slack. Particleboard and thin hollow desktops may need reinforcement even when the clamp physically fits." },
+      { heading: "Budget arm, standard job", body: "This model makes sense for lifting a normal single display off its stock stand. A heavy ultrawide, recessed VESA mount, or walking-desk stability problem calls for a more specialized arm." },
+    ],
     asin: "B0CQXMT3QC",
     name: "Amazon Basics Monitor Arm",
     brand: "Amazon Basics",
@@ -492,6 +688,14 @@ export const products: Product[] = [
   {
     site: "baby",
     slug: "infant-optics-dxr-8-pro",
+    seoTitle: "Infant Optics DXR-8 Pro Guide: Range, Cameras & Safe Placement",
+    updatedAt: "June 30, 2026",
+    sources: [{ name: "DXR-8 Pro user manual", url: "https://fccid.io/2AAAM-DXR8PPZ-ABU/User-Manual/Users-Manual-4799058.pdf", note: "Setup, safety placement, camera pairing, radio interference, and operating guidance." }],
+    editorialSections: [
+      { heading: "Why a dedicated monitor still fits", body: "The DXR-8 Pro uses a separate parent unit rather than household Wi-Fi or a phone app. That reduces phone dependency, but it also means range and 2.4GHz interference should be tested in the actual home." },
+      { heading: "Camera placement is a safety check", body: "The manual says to keep the unit and cord at least 3 feet (0.9m) from the crib and out of reach. Secure cords and never place the camera or adapter inside the sleep space." },
+      { heading: "Know the system limits", body: "The parent unit can pair with multiple cameras, but this is a convenience monitor—not a supervision substitute or medical device. Test alerts, sound, night view, charging, and camera switching before relying on it overnight." },
+    ],
     name: "Infant Optics DXR-8 PRO Baby Monitor",
     brand: "Infant Optics",
     category: "sleep",
@@ -592,6 +796,17 @@ export const products: Product[] = [
   {
     site: "baby",
     slug: "momcozy-kleanpal-pro-baby-bottle-washer",
+    seoTitle: "Momcozy KleanPal Pro Guide: Cycles, Capacity & Counter Fit",
+    updatedAt: "June 30, 2026",
+    sources: [
+      { name: "Momcozy KleanPal Pro", url: "https://momcozy.com/products/momcozy-kleanpal-pro-baby-bottle-washer", note: "BS03 capacity, modes, water use, filter, and storage claims." },
+      { name: "Momcozy support", url: "https://support.momcozy.com/article/54468237368857", note: "Operation and maintenance guidance." },
+    ],
+    editorialSections: [
+      { heading: "It replaces more than sterilizing", body: "KleanPal Pro is designed to wash, steam, dry, and store. Momcozy lists space for four bottles plus accessories and about 2.5L of water per cycle, so it best fits homes where hand-washing is the actual bottleneck." },
+      { heading: "Counter and drain planning", body: "Measure the machine, lid clearance, clean-water access, outlet, and drain route as one setup. A large all-in-one appliance saves labor only when loading and draining are easy every day." },
+      { heading: "Use the specified consumables", body: "Follow Momcozy's low-suds detergent and filter guidance rather than substituting normal dish soap. Hot steam and recently completed parts need cooling time before handling." },
+    ],
     name: "Momcozy KleanPal Pro Baby Bottle Washer, Sterilizer & Dryer",
     brand: "Momcozy",
     category: "feeding",
@@ -1437,6 +1652,9 @@ roundups.push(...networkRoundups);
 guides.push(...networkGuides);
 guides.push(...expansionGuides);
 tools.push(...networkTools);
+products.push(...smartHomeProducts);
+roundups.push(...smartHomeRoundups);
+guides.push(...smartHomeGuides);
 
 export function siteProducts(site: SiteKey) {
   return products.filter((product) => product.site === site).map(applyAmazonOverride);

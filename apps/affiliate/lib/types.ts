@@ -1,4 +1,4 @@
-export type SiteKey = "pet" | "homeoffice" | "baby" | "network";
+export type SiteKey = "pet" | "homeoffice" | "baby" | "network" | "smarthome";
 
 export type Score = {
   label: string;

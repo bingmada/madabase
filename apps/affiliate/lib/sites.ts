@@ -109,6 +109,29 @@ export const sites: Record<SiteKey, SiteConfig> = {
       { slug: "backup", name: "Backup power", description: "UPS planning for routers, modems, ONTs, and small network shelves." },
     ],
   },
+  smarthome: {
+    key: "smarthome",
+    name: "Dwellwise Picks",
+    tagline: "Smart-home choices that still work after setup day.",
+    description: "Research-based smart lock, doorbell, thermostat, and home-automation comparisons with compatibility, subscription, wiring, and ecosystem checks kept visible.",
+    domain: process.env.NEXT_PUBLIC_SMARTHOME_SITE_URL ?? "https://smarthome.madabase.com",
+    hostHints: ["smarthome", "smart-home", "dwell"],
+    disclosure: "As an Amazon Associate I earn from qualifying purchases. Dwellwise Picks may also earn commissions from other retailer links. Recommendations are based on compatibility, installation requirements, privacy choices, subscriptions, and everyday control paths.",
+    heroImage: "/images/affiliate/hero-smarthome.svg",
+    theme: {
+      brand: "#176b6b",
+      brandStrong: "#114b56",
+      brandSoft: "#dff4f1",
+      accent: "#8b4d2f",
+      accentSoft: "#fff0e7",
+    },
+    categories: [
+      { slug: "access", name: "Smart access", description: "Smart locks, entry methods, door fit, hubs, and guest access." },
+      { slug: "cameras", name: "Doorbells & cameras", description: "Video doorbells, local storage, subscriptions, and notification choices." },
+      { slug: "climate", name: "Smart climate", description: "Thermostats, room sensors, HVAC compatibility, and energy controls." },
+      { slug: "automation", name: "Automation basics", description: "Matter, Thread, Zigbee, hubs, and ecosystem planning." },
+    ],
+  },
 };
 
 export const siteKeys = Object.keys(sites) as SiteKey[];
