@@ -266,7 +266,7 @@ export const adjacentExpansionProducts: Product[] = [
         note: "Official material, size range, positions, and adjustment guidance.",
       },
     ],
-    compareSlugs: ["ergobaby-omni-breeze-carrier"],
+    compareSlugs: ["babybjorn-carrier-mini-3d-mesh", "ergobaby-omni-breeze-carrier"],
     offers: [
       {
         merchant: "Amazon US",
@@ -334,7 +334,7 @@ export const adjacentExpansionProducts: Product[] = [
         note: "Official wireless class, coverage, ports, backhaul, and feature specifications.",
       },
     ],
-    compareSlugs: ["tp-link-deco-be63-wifi-7-mesh"],
+    compareSlugs: ["tp-link-deco-be63-wifi-7-mesh", "tp-link-deco-be85-wifi-7-mesh"],
     offers: [
       {
         merchant: "Amazon US",
@@ -407,7 +407,7 @@ export const adjacentExpansionProducts: Product[] = [
         note: "Independent directory for current certified room-air-cleaner performance data.",
       },
     ],
-    compareSlugs: ["shark-neverchange-max-air-purifier"],
+    compareSlugs: ["coway-airmega-mighty2-air-purifier", "winix-5510-air-purifier", "shark-neverchange-max-air-purifier"],
     offers: [
       {
         merchant: "Amazon US",

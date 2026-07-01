@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="ASUS ZenWiFi BT6 Wi-Fi 7 mesh">
+  <rect width="1200" height="800" rx="48" fill="#eef0f5"/><circle cx="600" cy="355" r="285" fill="#dfe3ec"/>
+  <g fill="#fafafa" stroke="#949dac" stroke-width="12"><path d="M300 580V250l45-55h210l45 55v330z"/><path d="M650 580V250l45-55h210l45 55v330z"/></g>
+  <g fill="#303846"><circle cx="450" cy="535" r="11"/><circle cx="800" cy="535" r="11"/></g>
+  <text x="600" y="710" text-anchor="middle" font-family="Arial,sans-serif" font-size="48" font-weight="700" fill="#303846">ASUS ZenWiFi BT6</text>
+</svg>

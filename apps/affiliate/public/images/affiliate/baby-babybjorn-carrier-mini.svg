@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="BabyBjorn Carrier Mini">
+  <rect width="1200" height="800" rx="48" fill="#f7efe8"/><circle cx="600" cy="350" r="285" fill="#ebddd1"/>
+  <path d="M420 185q180 110 360 0l-55 165v250H475V350z" fill="#91a8ac" stroke="#536e74" stroke-width="14"/>
+  <path d="M475 350q125 80 250 0M470 590l-95 70M730 590l95 70" fill="none" stroke="#536e74" stroke-width="22" stroke-linecap="round"/>
+  <text x="600" y="720" text-anchor="middle" font-family="Arial,sans-serif" font-size="48" font-weight="700" fill="#5a4a40">BabyBjörn Carrier Mini</text>
+</svg>

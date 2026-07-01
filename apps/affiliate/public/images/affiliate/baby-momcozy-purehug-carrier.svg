@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Momcozy PureHug baby carrier">
+  <rect width="1200" height="800" rx="48" fill="#f8eee9"/><circle cx="600" cy="350" r="285" fill="#eedbd2"/>
+  <path d="M390 190q210 120 420 0l-70 180-20 250H480l-20-250z" fill="#86766f" stroke="#574b46" stroke-width="14"/>
+  <path d="M470 365q130 85 260 0M480 610l-120 55M720 610l120 55" fill="none" stroke="#574b46" stroke-width="24" stroke-linecap="round"/>
+  <text x="600" y="720" text-anchor="middle" font-family="Arial,sans-serif" font-size="48" font-weight="700" fill="#574b46">Momcozy PureHug</text>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Winix 5510 air purifier">
+  <rect width="1200" height="800" rx="48" fill="#eef4f6"/><circle cx="600" cy="350" r="280" fill="#dce9ed"/>
+  <rect x="400" y="135" width="400" height="515" rx="38" fill="#f9fafb" stroke="#a4b6bc" stroke-width="14"/>
+  <g stroke="#c0cdd1" stroke-width="8"><path d="M455 350h290M455 390h290M455 430h290M455 470h290M455 510h290"/></g><circle cx="600" cy="190" r="15" fill="#3ca8c1"/>
+  <text x="600" y="720" text-anchor="middle" font-family="Arial,sans-serif" font-size="48" font-weight="700" fill="#36535e">Winix 5510 Air Purifier</text>
+</svg>

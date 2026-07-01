@@ -115,7 +115,7 @@ export const smartHomeProducts: Product[] = [
       { name: "Ring Battery Doorbell Plus (2nd Gen)", url: "https://ring.com/products/battery-doorbell-plus-2nd-gen", note: "Video, view, power, network, and plan information." },
       { name: "Ring product support", url: "https://ring.com/support/products/doorbells/battery-doorbell-plus-2nd-gen?page=1", note: "Setup and model-specific support." },
     ],
-    compareSlugs: ["tapo-d210-video-doorbell"],
+    compareSlugs: ["eufy-video-doorbell-e340", "tapo-d210-video-doorbell"],
     offers: [{ merchant: "Amazon", url: "https://amzn.to/4gKFmlp", label: "Check Ring + Chime Plus bundle on Amazon", priceNote: "This link is a bundle; confirm the 2nd Gen doorbell, Chime Plus, finish, and current plan trial." }],
   },
   {

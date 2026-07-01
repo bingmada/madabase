@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Yale Assure Lock 2 Touch">
+  <rect width="1200" height="800" rx="48" fill="#f0f2f3"/><circle cx="600" cy="350" r="280" fill="#e0e5e7"/>
+  <rect x="475" y="120" width="250" height="525" rx="34" fill="#22282b" stroke="#7b878c" stroke-width="14"/>
+  <path d="M540 250q60-70 120 0v80q0 70-60 105-60-35-60-105z" fill="none" stroke="#68b4c9" stroke-width="14"/><circle cx="600" cy="520" r="58" fill="#9ca8ad"/>
+  <text x="600" y="720" text-anchor="middle" font-family="Arial,sans-serif" font-size="48" font-weight="700" fill="#344247">Yale Assure Lock 2 Touch</text>
+</svg>

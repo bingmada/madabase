@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Ergotron HX monitor arm">
+  <rect width="1200" height="800" rx="48" fill="#eef2f6"/><circle cx="600" cy="350" r="280" fill="#dce5ee"/>
+  <rect x="665" y="190" width="390" height="255" rx="24" fill="#26323f"/><rect x="700" y="225" width="320" height="185" rx="12" fill="#9bc9df"/>
+  <path d="M690 455L555 345 420 470v150M360 620h120" fill="none" stroke="#6f7f8d" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="600" y="720" text-anchor="middle" font-family="Arial,sans-serif" font-size="48" font-weight="700" fill="#354656">Ergotron HX Monitor Arm</text>
+</svg>

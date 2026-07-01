@@ -5,9 +5,15 @@ import {
   adjacentExpansionRoundups,
 } from "./adjacent-expansion-content";
 import { amazonProductOverrides } from "./amazon-overrides";
+import {
+  commercialExpansionGuides,
+  commercialExpansionProducts,
+  commercialExpansionRoundups,
+} from "./commercial-expansion-content";
 import { expansionGuides } from "./expansion-guides";
 import { networkGuides, networkProducts, networkRoundups, networkTools } from "./network-content";
 import { smartHomeGuides, smartHomeProducts, smartHomeRoundups } from "./smarthome-content";
+import { topicClusterGuides, topicClusterTools } from "./topic-cluster-content";
 
 export const products: Product[] = [
   {
@@ -919,7 +925,7 @@ export const products: Product[] = [
       },
     ],
     alternatives: ["Compare a soft wrap if compact storage and slower newborn use matter more than four carry positions.", "Use a stroller when heat, caregiver comfort, or a long outing makes body carrying impractical."],
-    compareSlugs: ["babybjorn-carrier-harmony"],
+    compareSlugs: ["babybjorn-carrier-harmony", "momcozy-purehug-baby-carrier"],
     sources: [
       {
         name: "Ergobaby Omni Breeze product page and FAQ",
@@ -1021,7 +1027,7 @@ export const roundups: Roundup[] = [
       { label: "Small apartment", detail: "Choose compact tools that can live near the problem area." },
     ],
     methodology: ["Separate litter odor from fabric odor", "Check recurring refill or filter costs", "Match purifier size to the actual room"],
-    productSlugs: ["litter-genie-plus-pail", "shark-neverchange-max-air-purifier", "levoit-vital-200s-p-air-purifier", "chomchom-roller-pet-hair-remover"],
+    productSlugs: ["litter-genie-plus-pail", "coway-airmega-mighty2-air-purifier", "winix-5510-air-purifier", "shark-neverchange-max-air-purifier", "levoit-vital-200s-p-air-purifier", "chomchom-roller-pet-hair-remover"],
     faqs: [
       { question: "Will an air purifier remove litter smell?", answer: "It can help with airborne particles and some odors, but it cannot replace scooping, litter changes, or cleaning the box." },
       { question: "Are litter disposal pails worth it?", answer: "They are useful when the outside trash is inconvenient and daily scooping needs better odor containment." },
@@ -1116,7 +1122,7 @@ export const roundups: Roundup[] = [
       { label: "Walking pad or treadmill desk", detail: "Prioritize a rigid clamp point, modest arm extension, cable slack, and low screen movement over decorative features." },
     ],
     methodology: ["Check VESA pattern and monitor weight before brand preference", "Compare clamp clearance against the actual desk edge", "Prioritize smooth height and depth adjustment over decorative cable covers", "For walking desks, evaluate desktop flex, clamp movement, cable slack, and screen oscillation"],
-    productSlugs: ["huanuo-titanlift-heavy-duty-monitor-arm", "amazon-basics-monitor-arm"],
+    productSlugs: ["ergotron-hx-monitor-arm", "huanuo-titanlift-heavy-duty-monitor-arm", "amazon-basics-monitor-arm"],
     faqs: [
       { question: "Do all monitors work with monitor arms?", answer: "No. You need a compatible VESA mount pattern or a reliable adapter, and the monitor weight must sit within the arm's supported range." },
       { question: "Are monitor arms worth it for small desks?", answer: "Often yes. Removing the stock stand can free several inches of usable depth, which matters more than width in many apartments." },
@@ -1249,7 +1255,7 @@ export const roundups: Roundup[] = [
       { label: "Minimal setup", detail: "Skip app-heavy features if simple controls are enough." },
     ],
     methodology: ["Check age and weight guidance first", "Compare caregiver fit and learning curve", "Keep sleep products aligned with safe sleep guidance"],
-    productSlugs: ["ergobaby-omni-breeze-carrier", "babybjorn-carrier-harmony", "hatch-rest-sound-machine"],
+    productSlugs: ["babybjorn-carrier-mini-3d-mesh", "momcozy-purehug-baby-carrier", "ergobaby-omni-breeze-carrier", "babybjorn-carrier-harmony", "hatch-rest-sound-machine"],
     faqs: [
       { question: "Can a carrier replace a stroller?", answer: "For short errands and travel moments, sometimes. For long walks or hot days, a stroller can still be easier." },
       { question: "Are sound machines safe?", answer: "Use moderate volume and sensible placement. Follow pediatric guidance and avoid placing devices too close to the baby." },
@@ -1665,6 +1671,11 @@ guides.push(...smartHomeGuides);
 products.push(...adjacentExpansionProducts);
 roundups.push(...adjacentExpansionRoundups);
 guides.push(...adjacentExpansionGuides);
+guides.push(...topicClusterGuides);
+tools.push(...topicClusterTools);
+products.push(...commercialExpansionProducts);
+roundups.push(...commercialExpansionRoundups);
+guides.push(...commercialExpansionGuides);
 
 export function siteProducts(site: SiteKey) {
   return products.filter((product) => product.site === site).map(applyAmazonOverride);

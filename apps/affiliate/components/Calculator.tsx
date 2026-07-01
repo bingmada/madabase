@@ -5,11 +5,43 @@ import { useMemo, useState } from "react";
 import type { Tool } from "@/lib/types";
 
 function getDefaultPrimary(kind: Tool["kind"]) {
-  return kind === "desk" ? 68 : kind === "diapers" ? 2 : kind === "wifi" ? 1800 : 10;
+  if (kind === "desk") return 68;
+  if (kind === "diapers") return 2;
+  if (kind === "wifi") return 1800;
+  if (kind === "air") return 240;
+  if (kind === "mesh") return 2200;
+  if (kind === "matter") return 3;
+  return 10;
 }
 
 function getDefaultSecondary(kind: Tool["kind"]) {
-  return kind === "feeding" ? 220 : kind === "wifi" ? 35 : 0;
+  if (kind === "feeding") return 220;
+  if (kind === "wifi") return 35;
+  if (kind === "air") return 8;
+  if (kind === "mesh") return 2;
+  if (kind === "matter") return 2;
+  return 0;
+}
+
+function primaryLabel(kind: Tool["kind"]) {
+  if (kind === "desk") return "Your height in inches";
+  if (kind === "diapers") return "Baby age in months";
+  if (kind === "wifi" || kind === "mesh") return "Home size in square feet";
+  if (kind === "air") return "Room area in square feet";
+  if (kind === "matter") return "Planned Thread devices";
+  return "Meals per day";
+}
+
+function secondaryLabel(kind: Tool["kind"]) {
+  if (kind === "wifi") return "Connected devices";
+  if (kind === "air") return "Ceiling height in feet";
+  if (kind === "mesh") return "Number of floors";
+  if (kind === "matter") return "Planned Wi-Fi Matter devices";
+  return "Daily calorie target";
+}
+
+function hasSecondaryInput(kind: Tool["kind"]) {
+  return ["feeding", "wifi", "air", "mesh", "matter"].includes(kind);
 }
 
 export function CalculatorTool({ tool }: { tool: Tool }) {
@@ -45,6 +77,50 @@ export function CalculatorTool({ tool }: { tool: Tool }) {
       };
     }
 
+    if (tool.kind === "air") {
+      const area = Math.max(25, Math.round(primary));
+      const ceiling = Math.max(6, Math.round(secondary * 10) / 10);
+      const volume = Math.round(area * ceiling);
+      const cadr = Math.round((volume * 5) / 60);
+      return {
+        title: "Estimated pet-room filtration target",
+        lines: [
+          `Room volume: about ${volume.toLocaleString()} cubic feet`,
+          `For roughly 5 air changes per hour, target about ${cadr} CFM CADR`,
+          "Use smoke CADR as a conservative comparison and keep litter, bedding, and surface cleaning in the routine.",
+        ],
+      };
+    }
+
+    if (tool.kind === "mesh") {
+      const squareFeet = Math.max(200, Math.round(primary));
+      const floors = Math.max(1, Math.round(secondary));
+      const sizeNodes = squareFeet <= 1300 ? 1 : squareFeet <= 2800 ? 2 : squareFeet <= 4600 ? 3 : 4;
+      const meshNodes = Math.max(sizeNodes, floors);
+      return {
+        title: "Estimated mesh starting plan",
+        lines: [
+          `Start testing with about ${meshNodes} node${meshNodes > 1 ? "s" : ""}`,
+          floors > 1 ? "Prioritize Ethernet backhaul between floors when practical." : "Place the first node centrally before adding another.",
+          "Dense walls, long wings, and an edge-located modem can change the estimate.",
+        ],
+      };
+    }
+
+    if (tool.kind === "matter") {
+      const threadDevices = Math.max(0, Math.round(primary));
+      const wifiDevices = Math.max(0, Math.round(secondary));
+      const hasDevices = threadDevices + wifiDevices > 0;
+      return {
+        title: "Estimated compatibility requirements",
+        lines: [
+          hasDevices ? "You need a compatible Matter controller in the primary ecosystem." : "Add at least one planned device to generate requirements.",
+          threadDevices > 0 ? "Thread devices also require a compatible Thread border router." : "No Thread border router is required for the current Wi-Fi-only plan.",
+          wifiDevices > 0 ? "Confirm each Wi-Fi Matter device's supported band and local network requirements." : "No Wi-Fi Matter accessories are included in this plan.",
+        ],
+      };
+    }
+
     const meals = Math.max(1, Math.round(primary));
     const calories = Math.max(1, Math.round(secondary));
     return {
@@ -62,14 +138,14 @@ export function CalculatorTool({ tool }: { tool: Tool }) {
       <div className="mt-5 grid gap-4 sm:grid-cols-2">
         <label className="block">
           <span className="text-sm font-semibold text-[var(--muted)]">
-            {tool.kind === "desk" ? "Your height in inches" : tool.kind === "diapers" ? "Baby age in months" : tool.kind === "wifi" ? "Home size in square feet" : "Meals per day"}
+            {primaryLabel(tool.kind)}
           </span>
-          <input className="mt-2 w-full rounded-md border border-[var(--border)] px-3 py-2" type="number" value={primary} min={1} onChange={(event) => setPrimary(Number(event.target.value))} />
+          <input className="mt-2 w-full rounded-md border border-[var(--border)] px-3 py-2" type="number" value={primary} min={tool.kind === "matter" ? 0 : 1} onChange={(event) => setPrimary(Number(event.target.value))} />
         </label>
-        {tool.kind === "feeding" || tool.kind === "wifi" ? (
+        {hasSecondaryInput(tool.kind) ? (
           <label className="block">
-            <span className="text-sm font-semibold text-[var(--muted)]">{tool.kind === "wifi" ? "Connected devices" : "Daily calorie target"}</span>
-            <input className="mt-2 w-full rounded-md border border-[var(--border)] px-3 py-2" type="number" value={secondary} min={1} onChange={(event) => setSecondary(Number(event.target.value))} />
+            <span className="text-sm font-semibold text-[var(--muted)]">{secondaryLabel(tool.kind)}</span>
+            <input className="mt-2 w-full rounded-md border border-[var(--border)] px-3 py-2" type="number" value={secondary} min={tool.kind === "matter" ? 0 : 1} onChange={(event) => setSecondary(Number(event.target.value))} />
           </label>
         ) : (
           <div className="rounded-md bg-[var(--surface-muted)] p-4 text-sm leading-6 text-[var(--muted)]">

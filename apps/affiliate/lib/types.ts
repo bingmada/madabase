@@ -78,7 +78,7 @@ export type Tool = {
   title: string;
   dek: string;
   category: string;
-  kind: "feeding" | "desk" | "diapers" | "wifi";
+  kind: "feeding" | "desk" | "diapers" | "wifi" | "air" | "mesh" | "matter";
   relatedRoundups: string[];
 };
 

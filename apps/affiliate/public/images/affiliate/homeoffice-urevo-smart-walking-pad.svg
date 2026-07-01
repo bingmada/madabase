@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="UREVO smart walking pad">
+  <rect width="1200" height="800" rx="48" fill="#edf3f1"/><circle cx="600" cy="365" r="290" fill="#dce9e5"/>
+  <path d="M190 485l130-210h610l90 210-135 105H295z" fill="#303b3c" stroke="#172223" stroke-width="14"/>
+  <path d="M330 315h555l55 150-95 80H330l-65-65z" fill="#59696a"/>
+  <circle cx="330" cy="590" r="28" fill="#192324"/><circle cx="860" cy="590" r="28" fill="#192324"/>
+  <text x="600" y="710" text-anchor="middle" font-family="Arial,sans-serif" font-size="48" font-weight="700" fill="#2c4744">UREVO Smart Walking Pad</text>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Schlage Encode Plus smart lock">
+  <rect width="1200" height="800" rx="48" fill="#f1f0ec"/><circle cx="600" cy="350" r="280" fill="#e4e1d9"/>
+  <rect x="465" y="125" width="270" height="520" rx="38" fill="#252525" stroke="#72716c" stroke-width="14"/>
+  <g fill="#d6d4ca" font-family="Arial,sans-serif" font-size="42" text-anchor="middle"><text x="535" y="260">1</text><text x="600" y="260">2</text><text x="665" y="260">3</text><text x="535" y="325">4</text><text x="600" y="325">5</text><text x="665" y="325">6</text></g>
+  <circle cx="600" cy="500" r="62" fill="#c6a45c"/><text x="600" y="720" text-anchor="middle" font-family="Arial,sans-serif" font-size="48" font-weight="700" fill="#403d36">Schlage Encode Plus</text>
+</svg>
