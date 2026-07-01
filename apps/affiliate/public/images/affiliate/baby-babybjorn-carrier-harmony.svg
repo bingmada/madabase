@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">BabyBjörn Carrier Harmony illustration</title>
+  <desc id="desc">A soft structured silver mesh baby carrier.</desc>
+  <rect width="1200" height="800" rx="48" fill="#f5efe7"/>
+  <circle cx="600" cy="360" r="275" fill="#e8ddd0"/>
+  <g fill="none" stroke="#7a726b" stroke-width="42" stroke-linecap="round">
+    <path d="M455 235c-125 110-145 290-80 405"/>
+    <path d="M745 235c125 110 145 290 80 405"/>
+  </g>
+  <path d="M455 205c55-58 235-58 290 0l-35 420c-90 55-130 55-220 0z" fill="#bcc4c4" stroke="#727d7d" stroke-width="14"/>
+  <path d="M495 315c55 35 155 35 210 0l-20 220c-52 40-118 40-170 0z" fill="#dce1df"/>
+  <g fill="none" stroke="#eef2ef" stroke-width="8" opacity=".9">
+    <path d="M485 260h230M480 305h240M475 350h250M470 395h260M465 440h270M460 485h280"/>
+    <path d="M520 225l-20 360M575 215l-10 390M630 215l10 390M685 225l20 360"/>
+  </g>
+  <text x="600" y="720" text-anchor="middle" font-family="Arial,sans-serif" font-size="44" font-weight="700" fill="#5d4226">BabyBjörn Carrier Harmony</text>
+</svg>

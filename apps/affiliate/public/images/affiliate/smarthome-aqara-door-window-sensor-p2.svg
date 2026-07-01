@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Aqara Door and Window Sensor P2 illustration</title>
+  <desc id="desc">Two white contact sensor pieces installed beside a door.</desc>
+  <rect width="1200" height="800" rx="48" fill="#eef7f5"/>
+  <rect x="205" y="110" width="610" height="540" rx="28" fill="#d4ebe6"/>
+  <rect x="260" y="155" width="500" height="495" rx="20" fill="#fbfdfd"/>
+  <rect x="775" y="245" width="95" height="260" rx="34" fill="#ffffff" stroke="#bdd8d2" stroke-width="10"/>
+  <rect x="895" y="280" width="58" height="190" rx="24" fill="#ffffff" stroke="#bdd8d2" stroke-width="10"/>
+  <circle cx="823" cy="375" r="10" fill="#42b49f"/>
+  <g fill="none" stroke="#176b6b" stroke-width="16" stroke-linecap="round">
+    <path d="M1005 315c52 34 52 126 0 160"/>
+    <path d="M1055 270c94 68 94 182 0 250"/>
+  </g>
+  <text x="600" y="730" text-anchor="middle" font-family="Arial,sans-serif" font-size="42" font-weight="700" fill="#114b56">Matter over Thread Contact Sensor</text>
+</svg>

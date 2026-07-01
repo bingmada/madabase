@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">TP-Link Deco BE67 mesh illustration</title>
+  <desc id="desc">Two white cylindrical Wi-Fi 7 mesh nodes with wireless waves.</desc>
+  <rect width="1200" height="800" rx="48" fill="#e8f2fa"/>
+  <circle cx="600" cy="360" r="285" fill="#d4e7f5"/>
+  <g fill="#fff" stroke="#b8d2e5" stroke-width="12">
+    <path d="M260 295c0-48 43-80 150-80s150 32 150 80v280c0 48-43 80-150 80s-150-32-150-80z"/>
+    <path d="M640 245c0-48 43-80 150-80s150 32 150 80v330c0 48-43 80-150 80s-150-32-150-80z"/>
+  </g>
+  <g fill="none" stroke="#255f8f" stroke-width="18" stroke-linecap="round">
+    <path d="M490 190c70-80 150-80 220 0"/>
+    <path d="M535 235c40-45 90-45 130 0"/>
+  </g>
+  <circle cx="600" cy="270" r="14" fill="#37a8d8"/>
+  <circle cx="410" cy="560" r="10" fill="#37a8d8"/>
+  <circle cx="790" cy="560" r="10" fill="#37a8d8"/>
+  <text x="600" y="730" text-anchor="middle" font-family="Arial,sans-serif" font-size="46" font-weight="700" fill="#173f63">Deco BE67 • Wi-Fi 7</text>
+</svg>

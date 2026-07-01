@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Levoit Vital 200S-P air purifier illustration</title>
+  <desc id="desc">A white rectangular air purifier with pet hair entering the lower grille.</desc>
+  <rect width="1200" height="800" rx="48" fill="#e7f5ef"/>
+  <circle cx="600" cy="360" r="285" fill="#cfe9dd"/>
+  <rect x="370" y="135" width="460" height="510" rx="62" fill="#fff" stroke="#b4d5c6" stroke-width="12"/>
+  <rect x="420" y="190" width="360" height="70" rx="28" fill="#e8f0ed"/>
+  <circle cx="600" cy="225" r="18" fill="#45ad84"/>
+  <g stroke="#b7cec4" stroke-width="10" stroke-linecap="round">
+    <path d="M440 390h320M440 430h320M440 470h320M440 510h320M440 550h320"/>
+  </g>
+  <g fill="none" stroke="#2f8d6d" stroke-width="16" stroke-linecap="round">
+    <path d="M250 410c65-45 65 45 130 0"/>
+    <path d="M820 360c65-45 65 45 130 0"/>
+    <path d="M830 455c70-40 75 45 140 5"/>
+  </g>
+  <text x="600" y="730" text-anchor="middle" font-family="Arial,sans-serif" font-size="46" font-weight="700" fill="#0d4f47">Levoit Vital 200S-P</text>
+</svg>

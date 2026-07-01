@@ -4,13 +4,15 @@ import { notFound } from "next/navigation";
 import { AffiliateButton } from "@/components/AffiliateButton";
 import { JsonLd } from "@/components/JsonLd";
 import { Disclosure } from "@/components/LayoutParts";
-import { findProduct } from "@/lib/content";
+import { findProduct, siteGuides } from "@/lib/content";
 import { breadcrumbSchema, pageMetadata, productNotesSchema } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 
 function siteContext(siteKey: string) {
   if (siteKey === "pet") return "pet-care routine";
   if (siteKey === "baby") return "baby-care routine";
+  if (siteKey === "network") return "home-network setup";
+  if (siteKey === "smarthome") return "smart-home setup";
   return "home-office setup";
 }
 
@@ -41,6 +43,9 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
   const comparisonProducts = (product.compareSlugs ?? [])
     .map((comparisonSlug) => findProduct(site.key, comparisonSlug))
     .filter(Boolean);
+  const relatedGuides = siteGuides(site.key)
+    .filter((guide) => guide.relatedProducts?.includes(product.slug))
+    .slice(0, 6);
 
   const context = siteContext(site.key);
 
@@ -174,6 +179,20 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                         </Link>
                       ) : null,
                     )}
+                  </div>
+                </>
+              ) : null}
+              {relatedGuides.length ? (
+                <>
+                  <h2>Related setup guides</h2>
+                  <div className="not-prose grid gap-4 sm:grid-cols-2">
+                    {relatedGuides.map((guide) => (
+                      <Link className="rounded-md border border-[var(--border)] bg-white p-5" href={`/guides/${guide.slug}`} key={guide.slug}>
+                        <p className="text-xs font-bold uppercase text-[var(--muted)]">{guide.category}</p>
+                        <h3 className="mt-2 font-bold">{guide.title}</h3>
+                        <p className="mt-2 text-sm leading-6 text-[var(--muted)]">{guide.dek}</p>
+                      </Link>
+                    ))}
                   </div>
                 </>
               ) : null}

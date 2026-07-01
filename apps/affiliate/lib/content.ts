@@ -1,4 +1,9 @@
 import type { Guide, Product, Roundup, SiteKey, Tool } from "./types";
+import {
+  adjacentExpansionGuides,
+  adjacentExpansionProducts,
+  adjacentExpansionRoundups,
+} from "./adjacent-expansion-content";
 import { amazonProductOverrides } from "./amazon-overrides";
 import { expansionGuides } from "./expansion-guides";
 import { networkGuides, networkProducts, networkRoundups, networkTools } from "./network-content";
@@ -367,6 +372,7 @@ export const products: Product[] = [
       },
     ],
     alternatives: ["Choose a smaller purifier when one closed bedroom is the only target.", "Prioritize litter, accident, and fabric cleaning when odor starts at a persistent source."],
+    compareSlugs: ["levoit-vital-200s-p-air-purifier"],
     sources: [
       {
         name: "Shark NeverChange Air Purifier MAX HP302",
@@ -913,6 +919,7 @@ export const products: Product[] = [
       },
     ],
     alternatives: ["Compare a soft wrap if compact storage and slower newborn use matter more than four carry positions.", "Use a stroller when heat, caregiver comfort, or a long outing makes body carrying impractical."],
+    compareSlugs: ["babybjorn-carrier-harmony"],
     sources: [
       {
         name: "Ergobaby Omni Breeze product page and FAQ",
@@ -1014,7 +1021,7 @@ export const roundups: Roundup[] = [
       { label: "Small apartment", detail: "Choose compact tools that can live near the problem area." },
     ],
     methodology: ["Separate litter odor from fabric odor", "Check recurring refill or filter costs", "Match purifier size to the actual room"],
-    productSlugs: ["litter-genie-plus-pail", "shark-neverchange-max-air-purifier", "chomchom-roller-pet-hair-remover"],
+    productSlugs: ["litter-genie-plus-pail", "shark-neverchange-max-air-purifier", "levoit-vital-200s-p-air-purifier", "chomchom-roller-pet-hair-remover"],
     faqs: [
       { question: "Will an air purifier remove litter smell?", answer: "It can help with airborne particles and some odors, but it cannot replace scooping, litter changes, or cleaning the box." },
       { question: "Are litter disposal pails worth it?", answer: "They are useful when the outside trash is inconvenient and daily scooping needs better odor containment." },
@@ -1242,7 +1249,7 @@ export const roundups: Roundup[] = [
       { label: "Minimal setup", detail: "Skip app-heavy features if simple controls are enough." },
     ],
     methodology: ["Check age and weight guidance first", "Compare caregiver fit and learning curve", "Keep sleep products aligned with safe sleep guidance"],
-    productSlugs: ["ergobaby-omni-breeze-carrier", "hatch-rest-sound-machine"],
+    productSlugs: ["ergobaby-omni-breeze-carrier", "babybjorn-carrier-harmony", "hatch-rest-sound-machine"],
     faqs: [
       { question: "Can a carrier replace a stroller?", answer: "For short errands and travel moments, sometimes. For long walks or hot days, a stroller can still be easier." },
       { question: "Are sound machines safe?", answer: "Use moderate volume and sensible placement. Follow pediatric guidance and avoid placing devices too close to the baby." },
@@ -1655,6 +1662,9 @@ tools.push(...networkTools);
 products.push(...smartHomeProducts);
 roundups.push(...smartHomeRoundups);
 guides.push(...smartHomeGuides);
+products.push(...adjacentExpansionProducts);
+roundups.push(...adjacentExpansionRoundups);
+guides.push(...adjacentExpansionGuides);
 
 export function siteProducts(site: SiteKey) {
   return products.filter((product) => product.site === site).map(applyAmazonOverride);

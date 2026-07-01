@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Tapo P125M smart plug illustration</title>
+  <desc id="desc">Three compact white Matter smart plugs.</desc>
+  <rect width="1200" height="800" rx="48" fill="#e7f5f4"/>
+  <circle cx="600" cy="360" r="280" fill="#cdebe7"/>
+  <g stroke="#aacfc9" stroke-width="10">
+    <rect x="220" y="245" width="260" height="300" rx="62" fill="#fff"/>
+    <rect x="470" y="190" width="260" height="355" rx="62" fill="#fff"/>
+    <rect x="720" y="245" width="260" height="300" rx="62" fill="#fff"/>
+  </g>
+  <g fill="#23434a">
+    <rect x="315" y="325" width="22" height="72" rx="10"/>
+    <rect x="363" y="325" width="22" height="72" rx="10"/>
+    <rect x="565" y="295" width="22" height="72" rx="10"/>
+    <rect x="613" y="295" width="22" height="72" rx="10"/>
+    <rect x="815" y="325" width="22" height="72" rx="10"/>
+    <rect x="863" y="325" width="22" height="72" rx="10"/>
+  </g>
+  <g fill="#48bca7">
+    <circle cx="350" cy="460" r="15"/>
+    <circle cx="600" cy="445" r="15"/>
+    <circle cx="850" cy="460" r="15"/>
+  </g>
+  <text x="600" y="690" text-anchor="middle" font-family="Arial,sans-serif" font-size="46" font-weight="700" fill="#114b56">Tapo P125M • 3-Pack</text>
+</svg>

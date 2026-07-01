@@ -71,7 +71,7 @@ export const networkProducts: Product[] = [
       },
     ],
     alternatives: ["Compare eero 6 when lower cost and a simple app-led setup matter more than Wi-Fi 7 or multi-gig ports.", "Compare TP-Link BE400 when one router can cover the home and mesh nodes would add unnecessary cost."],
-    compareSlugs: ["amazon-eero-6-mesh-wifi-system", "tp-link-be400-wifi-7-router"],
+    compareSlugs: ["tp-link-deco-be67-wifi-7-mesh", "amazon-eero-6-mesh-wifi-system", "tp-link-be400-wifi-7-router"],
     sources: [
       {
         name: "TP-Link Deco BE63 product specifications",
@@ -357,7 +357,7 @@ export const networkRoundups: Roundup[] = [
       { label: "Travel and rentals", detail: "Use Beryl AX for portable networks, not whole-home coverage." },
     ],
     methodology: ["Map layout before speed class", "Check wired backhaul and port speeds", "Separate simplicity from enthusiast controls"],
-    productSlugs: ["tp-link-deco-be63-wifi-7-mesh", "amazon-eero-6-mesh-wifi-system", "netgear-orbi-970-wifi-7-mesh", "glinet-beryl-ax-travel-router"],
+    productSlugs: ["tp-link-deco-be63-wifi-7-mesh", "tp-link-deco-be67-wifi-7-mesh", "amazon-eero-6-mesh-wifi-system", "netgear-orbi-970-wifi-7-mesh", "glinet-beryl-ax-travel-router"],
     faqs: [
       { question: "Do I need Wi-Fi 7 mesh?", answer: "Only if your devices, internet plan, or wired backhaul can benefit. Many homes still do well with simpler Wi-Fi 6 mesh." },
       { question: "Is wired backhaul worth it?", answer: "Usually yes when it is available. It keeps mesh nodes from competing for the same wireless path." },
