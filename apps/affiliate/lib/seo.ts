@@ -104,24 +104,32 @@ export function productNotesSchema(site: SiteConfig, product: Product) {
   const displayName = product.amazonTitle ?? product.name;
   const displayImage = product.amazonImage ?? product.image;
   const headline = product.seoTitle ?? `${displayName} Buying Notes`;
+  const url = absoluteUrl(site, `/reviews/${product.slug}`);
 
   return {
     "@context": "https://schema.org",
     "@type": "Article",
     name: headline,
     headline,
-    url: absoluteUrl(site, `/reviews/${product.slug}`),
+    url,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": url,
+    },
     description: product.summary,
     image: absoluteUrl(site, displayImage),
+    articleSection: product.category,
     ...(product.updatedAt ? { dateModified: new Date(product.updatedAt).toISOString() } : {}),
     about: {
       "@type": "Thing",
       name: displayName,
       description: product.summary,
+      ...(product.asin ? { identifier: product.asin } : {}),
     },
     author: {
       "@type": "Organization",
-      name: site.name,
+      name: `${site.name} editorial desk`,
+      url: absoluteUrl(site, "/about"),
     },
     publisher: {
       "@type": "Organization",
@@ -132,12 +140,18 @@ export function productNotesSchema(site: SiteConfig, product: Product) {
 }
 
 export function guideSchema(site: SiteConfig, guide: Guide) {
+  const url = absoluteUrl(site, `/guides/${guide.slug}`);
+
   return {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: guide.title,
     description: guide.dek,
-    url: absoluteUrl(site, `/guides/${guide.slug}`),
+    url,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": url,
+    },
     articleSection: guide.category,
     ...(guide.updatedAt ? { dateModified: new Date(guide.updatedAt).toISOString() } : {}),
     author: {

@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/JsonLd";
-import { RoundupCard } from "@/components/LayoutParts";
-import { siteGuides, siteRoundups, siteTools } from "@/lib/content";
+import { ProductCard, RoundupCard } from "@/components/LayoutParts";
+import { siteGuides, siteProducts, siteRoundups, siteTools } from "@/lib/content";
 import { breadcrumbSchema, itemListSchema, pageMetadata } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 import type { SiteKey } from "@/lib/types";
@@ -104,10 +104,14 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
   const { slug } = await params;
   const category = site.categories.find((item) => item.slug === slug);
   if (!category) notFound();
+  const products = siteProducts(site.key)
+    .filter((item) => item.category === slug && item.offers.length > 0)
+    .reverse();
   const roundups = siteRoundups(site.key).filter((item) => item.category === slug);
   const guides = siteGuides(site.key).filter((item) => item.category === slug);
   const tools = siteTools(site.key).filter((item) => item.category === slug);
   const categoryItems = [
+    ...products.map((product) => ({ name: product.amazonTitle ?? product.name, path: `/reviews/${product.slug}` })),
     ...roundups.map((roundup) => ({ name: roundup.title, path: `/best/${roundup.slug}` })),
     ...guides.map((guide) => ({ name: guide.title, path: `/guides/${guide.slug}` })),
     ...tools.map((tool) => ({ name: tool.title, path: `/tools/${tool.slug}` })),
@@ -133,6 +137,27 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
             ))}
           </div>
         </section>
+        {products.length ? (
+          <section className="mt-10" aria-labelledby="product-reviews-heading">
+            <div className="max-w-2xl">
+              <p className="eyebrow">Product reviews</p>
+              <h2 className="mt-3 text-3xl font-black" id="product-reviews-heading">Compare products in this category</h2>
+              <p className="mt-4 leading-8 text-[var(--muted)]">
+                Check model-specific strengths, trade-offs, compatibility details, and alternatives before opening the retailer listing.
+              </p>
+            </div>
+            <div className="mt-8 grid gap-5 lg:grid-cols-3">
+              {products.map((product, index) => (
+                <ProductCard key={product.slug} site={site} product={product} position={`category-${slug}-product-${index + 1}`} />
+              ))}
+            </div>
+          </section>
+        ) : null}
+        <section className="mt-10" aria-labelledby="category-guides-heading">
+          <div className="max-w-2xl">
+            <p className="eyebrow">Comparisons and guides</p>
+            <h2 className="mt-3 text-3xl font-black" id="category-guides-heading">Choose with the full setup in view</h2>
+          </div>
         <div className="mt-8 grid gap-5 md:grid-cols-2">
           {roundups.map((roundup) => (
             <RoundupCard roundup={roundup} key={roundup.slug} />
@@ -152,6 +177,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
             </Link>
           ))}
         </div>
+        </section>
       </div>
     </main>
   );

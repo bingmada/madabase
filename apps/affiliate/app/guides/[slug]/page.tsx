@@ -119,13 +119,26 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
   const guide = findGuide(site.key, slug);
   if (!guide) notFound();
   const advice = guideAdvice(site.key, guide.category);
+  const category = site.categories.find((item) => item.slug === guide.category);
 
   return (
     <main className="section">
-      <JsonLd data={breadcrumbSchema(site, [{ name: "Home", path: "/" }, { name: guide.title, path: `/guides/${slug}` }])} />
+      <JsonLd
+        data={breadcrumbSchema(site, [
+          { name: "Home", path: "/" },
+          ...(category ? [{ name: category.name, path: `/categories/${category.slug}` }] : []),
+          { name: guide.title, path: `/guides/${slug}` },
+        ])}
+      />
       <JsonLd data={guideSchema(site, guide)} />
       <div className="shell max-w-4xl">
-        <p className="eyebrow">{guide.category}</p>
+        {category ? (
+          <Link className="eyebrow hover:underline" href={`/categories/${category.slug}`}>
+            {category.name}
+          </Link>
+        ) : (
+          <p className="eyebrow">{guide.category}</p>
+        )}
         <h1 className="mt-3 text-4xl font-black leading-tight">{guide.title}</h1>
         <p className="mt-5 text-lg leading-8 text-[var(--muted)]">{guide.dek}</p>
         <div className="mt-5 flex flex-wrap gap-x-4 gap-y-2 text-sm font-semibold text-[var(--muted)]">

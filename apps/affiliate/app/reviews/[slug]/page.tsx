@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { AffiliateButton } from "@/components/AffiliateButton";
 import { JsonLd } from "@/components/JsonLd";
 import { Disclosure } from "@/components/LayoutParts";
-import { findProduct, siteGuides } from "@/lib/content";
+import { findProduct, siteGuides, siteRoundups } from "@/lib/content";
 import { breadcrumbSchema, pageMetadata, productNotesSchema } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 
@@ -40,9 +40,13 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
     ["Price band", product.priceBand],
   ];
   const compatibilityChecks = product.evidence.slice(0, 5);
+  const category = site.categories.find((item) => item.slug === product.category);
   const comparisonProducts = (product.compareSlugs ?? [])
     .map((comparisonSlug) => findProduct(site.key, comparisonSlug))
     .filter(Boolean);
+  const relatedRoundups = siteRoundups(site.key)
+    .filter((roundup) => roundup.productSlugs.includes(product.slug))
+    .slice(0, 6);
   const relatedGuides = siteGuides(site.key)
     .filter((guide) => guide.relatedProducts?.includes(product.slug))
     .slice(0, 6);
@@ -51,12 +55,25 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
 
   return (
     <main className="section">
-      <JsonLd data={breadcrumbSchema(site, [{ name: "Home", path: "/" }, { name: product.name, path: `/reviews/${slug}` }])} />
+      <JsonLd
+        data={breadcrumbSchema(site, [
+          { name: "Home", path: "/" },
+          ...(category ? [{ name: category.name, path: `/categories/${category.slug}` }] : []),
+          { name: product.name, path: `/reviews/${slug}` },
+        ])}
+      />
       <JsonLd data={productNotesSchema(site, product)} />
       <div className="shell">
         <div className="grid gap-8 lg:grid-cols-[1fr_380px]">
           <article>
-            <p className="eyebrow">{product.brand}</p>
+            <div className="flex flex-wrap items-center gap-3">
+              <p className="eyebrow">{product.brand}</p>
+              {category ? (
+                <Link className="text-xs font-bold uppercase text-[var(--brand-strong)] hover:underline" href={`/categories/${category.slug}`}>
+                  {category.name}
+                </Link>
+              ) : null}
+            </div>
             <h1 className="mt-3 text-4xl font-black leading-tight">{product.seoTitle ?? `${displayName} Buying Notes`}</h1>
             <p className="mt-5 text-lg leading-8 text-[var(--muted)]">{product.summary}</p>
             {product.updatedAt ? (
@@ -191,6 +208,20 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                         <p className="text-xs font-bold uppercase text-[var(--muted)]">{guide.category}</p>
                         <h3 className="mt-2 font-bold">{guide.title}</h3>
                         <p className="mt-2 text-sm leading-6 text-[var(--muted)]">{guide.dek}</p>
+                      </Link>
+                    ))}
+                  </div>
+                </>
+              ) : null}
+              {relatedRoundups.length ? (
+                <>
+                  <h2>Comparisons featuring this product</h2>
+                  <div className="not-prose grid gap-4 sm:grid-cols-2">
+                    {relatedRoundups.map((roundup) => (
+                      <Link className="rounded-md border border-[var(--border)] bg-white p-5" href={`/best/${roundup.slug}`} key={roundup.slug}>
+                        <p className="text-xs font-bold uppercase text-[var(--muted)]">Comparison</p>
+                        <h3 className="mt-2 font-bold">{roundup.title}</h3>
+                        <p className="mt-2 text-sm leading-6 text-[var(--muted)]">{roundup.dek}</p>
                       </Link>
                     ))}
                   </div>

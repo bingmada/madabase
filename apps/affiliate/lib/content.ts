@@ -378,7 +378,7 @@ export const products: Product[] = [
       },
     ],
     alternatives: ["Choose a smaller purifier when one closed bedroom is the only target.", "Prioritize litter, accident, and fabric cleaning when odor starts at a persistent source."],
-    compareSlugs: ["levoit-vital-200s-p-air-purifier"],
+    compareSlugs: ["coway-airmega-mighty2-air-purifier", "levoit-vital-200s-p-air-purifier"],
     sources: [
       {
         name: "Shark NeverChange Air Purifier MAX HP302",
@@ -869,7 +869,7 @@ export const products: Product[] = [
   {
     site: "baby",
     slug: "ergobaby-omni-breeze-carrier",
-    seoTitle: "Ergobaby Omni Breeze Buying Guide: Fit, Carry Positions & Airflow",
+    seoTitle: "Ergobaby Omni Breeze Guide: Newborn Weight, Fit & Positions",
     updatedAt: "June 28, 2026",
     name: "Ergobaby Omni Breeze Baby Carrier",
     brand: "Ergobaby",
@@ -1103,8 +1103,8 @@ export const roundups: Roundup[] = [
   {
     site: "homeoffice",
     slug: "best-monitor-arms-for-home-office",
-    title: "Best Monitor Arms for Home Office Desks",
-    dek: "Monitor arms are one of the fastest ways to recover desk depth, support more flexible display placement, and make a compact workstation easier to clean.",
+    title: "Best Monitor Arms for Home Office and Walking Desks",
+    dek: "Compare monitor arms for ordinary and walking desks by weight range, VESA fit, clamp stability, screen movement, cable slack, and usable desk depth.",
     category: "ergonomics",
     intent: "Choose a monitor arm that matches monitor weight, desk edge, cable path, and adjustment needs.",
     intro: "A monitor arm can make a small desk feel more expensive than it is. The win is not the arm itself; it is the desk depth you get back, the cleaner keyboard area, and the ability to put the display where your neck wants it. The risk is buying an arm before checking monitor weight, VESA support, and clamp clearance.",

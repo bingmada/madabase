@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { AffiliateButton } from "@/components/AffiliateButton";
 import { JsonLd } from "@/components/JsonLd";
 import { Disclosure, MethodologyList, ProductCard } from "@/components/LayoutParts";
-import { findProduct, findRoundup } from "@/lib/content";
+import { findProduct, findRoundup, siteGuides } from "@/lib/content";
 import { breadcrumbSchema, faqPageSchema, itemListSchema, pageMetadata } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 import type { SiteKey } from "@/lib/types";
@@ -130,17 +130,33 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
   const roundup = findRoundup(site.key, slug);
   if (!roundup) notFound();
   const picks = roundup.productSlugs.map((productSlug) => findProduct(site.key, productSlug)).filter(Boolean);
+  const category = site.categories.find((item) => item.slug === roundup.category);
+  const relatedGuides = siteGuides(site.key)
+    .filter((guide) => guide.relatedRoundups.includes(roundup.slug))
+    .slice(0, 6);
   const answer = quickAnswer(roundup.title, roundup.intent, picks);
   const advice = getRoundupAdvice(site.key, roundup.category);
 
   return (
     <main className="section">
-      <JsonLd data={breadcrumbSchema(site, [{ name: "Home", path: "/" }, { name: roundup.title, path: `/best/${slug}` }])} />
+      <JsonLd
+        data={breadcrumbSchema(site, [
+          { name: "Home", path: "/" },
+          ...(category ? [{ name: category.name, path: `/categories/${category.slug}` }] : []),
+          { name: roundup.title, path: `/best/${slug}` },
+        ])}
+      />
       <JsonLd data={itemListSchema(site, roundup.title, picks.map((product) => ({ name: product!.name, path: `/reviews/${product!.slug}` })))} />
       <JsonLd data={faqPageSchema(roundup.faqs)} />
       <div className="shell">
         <div className="max-w-3xl">
-          <p className="eyebrow">{roundup.category}</p>
+          {category ? (
+            <Link className="eyebrow hover:underline" href={`/categories/${category.slug}`}>
+              {category.name}
+            </Link>
+          ) : (
+            <p className="eyebrow">{roundup.category}</p>
+          )}
           <h1 className="mt-3 text-4xl font-black leading-tight">{roundup.title}</h1>
           <p className="mt-5 text-lg leading-8 text-[var(--muted)]">{roundup.dek}</p>
           {roundup.intro ? <p className="mt-4 max-w-3xl leading-8 text-[var(--muted)]">{roundup.intro}</p> : null}
@@ -237,6 +253,20 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
                 </div>
               </div>
             </section>
+            {relatedGuides.length ? (
+              <section className="panel p-5">
+                <h2 className="text-xl font-bold">Related setup and buying guides</h2>
+                <div className="mt-4 grid gap-4 sm:grid-cols-2">
+                  {relatedGuides.map((guide) => (
+                    <Link className="rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-4" href={`/guides/${guide.slug}`} key={guide.slug}>
+                      <p className="text-xs font-bold uppercase text-[var(--muted)]">{guide.category}</p>
+                      <h3 className="mt-2 font-bold">{guide.title}</h3>
+                      <p className="mt-2 text-sm leading-6 text-[var(--muted)]">{guide.dek}</p>
+                    </Link>
+                  ))}
+                </div>
+              </section>
+            ) : null}
             {picks.map((product, index) => product && <ProductCard key={product.slug} site={site} product={product} position={`roundup-${index + 1}`} />)}
             <section className="panel p-5">
               <h2 className="text-xl font-bold">FAQ</h2>

@@ -91,8 +91,8 @@ export function Hero({ site }: { site: SiteConfig }) {
               Start comparing
               <ArrowRight aria-hidden="true" size={16} />
             </Link>
-            <Link className="button-secondary bg-white/95" href="#tools">
-              Use a calculator
+            <Link className="button-secondary bg-white/95" href="#guides">
+              Browse buying guides
             </Link>
           </div>
         </div>

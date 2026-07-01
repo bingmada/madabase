@@ -221,6 +221,7 @@ export const networkProducts: Product[] = [
     specs: { "Product type": "8-port Ethernet switch", Speed: "Gigabit", Design: "Unmanaged, fanless", "Use case": "Wired expansion" },
     evidence: ["Count ports with two spares before buying", "Confirm whether gigabit is enough for NAS or multi-gig internet", "Use quality patch cables and avoid hiding the switch where heat builds up"],
     alternatives: ["Choose NETGEAR GS308E if you want easy smart management features.", "Choose a 2.5G switch if your wired devices exceed gigabit."],
+    compareSlugs: ["netgear-gs308e-gigabit-switch"],
     offers: offer(links.sg108),
   },
   {
@@ -253,6 +254,7 @@ export const networkProducts: Product[] = [
     specs: { "Product type": "Easy smart gigabit switch", Speed: "Gigabit", Ports: "8", "Use case": "Home network hub" },
     evidence: ["Confirm GS308E rather than unmanaged GS308 if smart features matter", "Check port count against future wired devices", "Use only the management options you understand"],
     alternatives: ["Choose TP-Link TL-SG108 for simpler plug-and-play use.", "Choose a multi-gig switch for NAS or 2.5G office paths."],
+    compareSlugs: ["tp-link-tl-sg108-gigabit-switch"],
     offers: offer(links.gs308e),
   },
   {
@@ -499,7 +501,8 @@ export const networkGuides: Guide[] = [
     title: "Home Ethernet Switch Buying Guide",
     dek: "How to pick port count, speed, fanless operation, and smart features for a small home network.",
     category: "wired",
-    relatedRoundups: ["best-wired-networking-upgrades"],
+    relatedProducts: ["netgear-gs308e-gigabit-switch", "tp-link-tl-sg108-gigabit-switch"],
+    relatedRoundups: ["netgear-gs308e-vs-tp-link-tl-sg108", "best-wired-networking-upgrades"],
     sections: [
       { heading: "Count ports with room to grow", body: "Buy for the devices you have plus a few spares. TV stands and desks often grow extra wired devices over time." },
       { heading: "Gigabit is still practical", body: "A gigabit switch is enough for many rooms. Multi-gig matters when internet, NAS, or client devices can actually exceed gigabit." },

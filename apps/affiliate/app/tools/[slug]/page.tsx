@@ -19,13 +19,27 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const tool = findTool(site.key, slug);
   if (!tool) notFound();
+  const category = site.categories.find((item) => item.slug === tool.category);
 
   return (
     <main className="section">
-      <JsonLd data={breadcrumbSchema(site, [{ name: "Home", path: "/" }, { name: tool.title, path: `/tools/${slug}` }])} />
+      <JsonLd
+        data={breadcrumbSchema(site, [
+          { name: "Home", path: "/" },
+          ...(category ? [{ name: category.name, path: `/categories/${category.slug}` }] : []),
+          { name: tool.title, path: `/tools/${slug}` },
+        ])}
+      />
       <JsonLd data={toolSchema(site, tool)} />
       <div className="shell max-w-4xl">
-        <p className="eyebrow">Calculator</p>
+        <div className="flex flex-wrap items-center gap-3">
+          <p className="eyebrow">Calculator</p>
+          {category ? (
+            <Link className="text-xs font-bold uppercase text-[var(--brand-strong)] hover:underline" href={`/categories/${category.slug}`}>
+              {category.name}
+            </Link>
+          ) : null}
+        </div>
         <h1 className="mt-3 text-4xl font-black leading-tight">{tool.title}</h1>
         <p className="mt-5 text-lg leading-8 text-[var(--muted)]">{tool.dek}</p>
         <div className="mt-8">
