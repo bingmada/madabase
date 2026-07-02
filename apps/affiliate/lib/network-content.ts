@@ -403,7 +403,7 @@ export const networkRoundups: Roundup[] = [
       { label: "Laptop desk", detail: "Use the UGREEN hub when Ethernet is part of a broader USB-C setup." },
     ],
     methodology: ["Count ports before choosing switch size", "Separate patch cables from room runs", "Check laptop hub display and charging compatibility"],
-    productSlugs: ["tp-link-tl-sg108-gigabit-switch", "netgear-gs308e-gigabit-switch", "jadaol-cat6-flat-ethernet-cable", "monoprice-slimrun-cat6a-ethernet-patch-cable", "ugreen-revodok-usb-c-gigabit-ethernet-hub"],
+    productSlugs: ["trendnet-teg-s380-2-5g-switch", "tp-link-tl-sg108-gigabit-switch", "netgear-gs308e-gigabit-switch", "jadaol-cat6-flat-ethernet-cable", "monoprice-slimrun-cat6a-ethernet-patch-cable", "ugreen-revodok-usb-c-gigabit-ethernet-hub"],
     faqs: [
       { question: "Should I wire devices instead of upgrading Wi-Fi?", answer: "For desks, TVs, consoles, and NAS devices, Ethernet is often more stable than a stronger wireless router." },
       { question: "Is gigabit enough?", answer: "For many homes yes, but multi-gig internet, NAS transfers, or newer desktops may justify 2.5G or 10G planning." },
@@ -501,7 +501,7 @@ export const networkGuides: Guide[] = [
     title: "Home Ethernet Switch Buying Guide",
     dek: "How to pick port count, speed, fanless operation, and smart features for a small home network.",
     category: "wired",
-    relatedProducts: ["netgear-gs308e-gigabit-switch", "tp-link-tl-sg108-gigabit-switch"],
+    relatedProducts: ["trendnet-teg-s380-2-5g-switch", "netgear-gs308e-gigabit-switch", "tp-link-tl-sg108-gigabit-switch"],
     relatedRoundups: ["netgear-gs308e-vs-tp-link-tl-sg108", "best-wired-networking-upgrades"],
     sections: [
       { heading: "Count ports with room to grow", body: "Buy for the devices you have plus a few spares. TV stands and desks often grow extra wired devices over time." },

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Stylized ULTRALOQ Bolt SE fingerprint smart lock">
+  <rect width="1200" height="800" rx="48" fill="#edf2f4"/>
+  <circle cx="600" cy="360" r="285" fill="#d9e4e8"/>
+  <rect x="420" y="130" width="360" height="500" rx="72" fill="#25323a"/>
+  <circle cx="600" cy="245" r="72" fill="#101b20" stroke="#63c0b1" stroke-width="11"/>
+  <path d="M572 245c18-26 46-26 58 0-6 35-19 55-29 67-10-12-23-32-29-67z" fill="none" stroke="#d7f3ed" stroke-width="9" stroke-linecap="round"/>
+  <g fill="#d5e0e4"><circle cx="530" cy="380" r="13"/><circle cx="600" cy="380" r="13"/><circle cx="670" cy="380" r="13"/><circle cx="530" cy="440" r="13"/><circle cx="600" cy="440" r="13"/><circle cx="670" cy="440" r="13"/><circle cx="530" cy="500" r="13"/><circle cx="600" cy="500" r="13"/><circle cx="670" cy="500" r="13"/></g>
+  <circle cx="600" cy="565" r="31" fill="#b9c6cb"/>
+  <path d="M825 260q85 82 0 164M860 225q125 120 0 236" fill="none" stroke="#4c9d91" stroke-width="14" stroke-linecap="round"/>
+  <text x="600" y="720" text-anchor="middle" font-family="Arial,sans-serif" font-size="46" font-weight="700" fill="#274d54">Bolt SE • Fingerprint • Matter</text>
+</svg>

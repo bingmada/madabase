@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Stylized TRENDnet TEG-S380 eight-port 2.5 gigabit switch">
+  <rect width="1200" height="800" rx="48" fill="#edf3f7"/>
+  <circle cx="600" cy="355" r="285" fill="#d8e5ed"/>
+  <path d="M180 300h840l-70 260H250z" fill="#26333b"/>
+  <path d="M220 330h760l-48 178H268z" fill="#344751"/>
+  <g fill="#0d181d" stroke="#7fa5b8" stroke-width="7">
+    <rect x="285" y="370" width="70" height="72" rx="7"/><rect x="365" y="370" width="70" height="72" rx="7"/>
+    <rect x="445" y="370" width="70" height="72" rx="7"/><rect x="525" y="370" width="70" height="72" rx="7"/>
+    <rect x="605" y="370" width="70" height="72" rx="7"/><rect x="685" y="370" width="70" height="72" rx="7"/>
+    <rect x="765" y="370" width="70" height="72" rx="7"/><rect x="845" y="370" width="70" height="72" rx="7"/>
+  </g>
+  <g fill="#62d29b"><circle cx="320" cy="354" r="8"/><circle cx="400" cy="354" r="8"/><circle cx="480" cy="354" r="8"/><circle cx="560" cy="354" r="8"/><circle cx="640" cy="354" r="8"/><circle cx="720" cy="354" r="8"/><circle cx="800" cy="354" r="8"/><circle cx="880" cy="354" r="8"/></g>
+  <text x="600" y="700" text-anchor="middle" font-family="Arial,sans-serif" font-size="47" font-weight="700" fill="#214b60">8 Ports • 2.5GbE • Fanless</text>
+</svg>

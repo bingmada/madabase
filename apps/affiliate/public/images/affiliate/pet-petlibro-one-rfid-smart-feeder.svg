@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Stylized PETLIBRO One RFID smart feeder">
+  <rect width="1200" height="800" rx="48" fill="#eef7f2"/>
+  <circle cx="600" cy="360" r="285" fill="#d9eee2"/>
+  <path d="M400 180h400l-24 330H424z" fill="#273a36"/>
+  <path d="M445 220h310l-14 190H459z" fill="#eef5f1" opacity=".9"/>
+  <rect x="465" y="455" width="270" height="92" rx="28" fill="#162825"/>
+  <path d="M370 545h460l-55 110H425z" fill="#b7d7c3"/>
+  <path d="M505 560h190l-24 55H529z" fill="#fff"/>
+  <path d="M315 520c-55 45-68 112-28 152M885 520c55 45 68 112 28 152" fill="none" stroke="#2c8a68" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="275" cy="500" r="45" fill="#fff" stroke="#2c8a68" stroke-width="12"/>
+  <text x="600" y="730" text-anchor="middle" font-family="Arial,sans-serif" font-size="46" font-weight="700" fill="#205c48">One RFID • Personal Meals</text>
+</svg>

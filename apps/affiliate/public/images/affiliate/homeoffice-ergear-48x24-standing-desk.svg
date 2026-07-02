@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Stylized ErGear 48 by 24 electric standing desk with wheels">
+  <rect width="1200" height="800" rx="48" fill="#f4f0e8"/>
+  <circle cx="600" cy="360" r="290" fill="#e8ddc8"/>
+  <rect x="210" y="210" width="780" height="92" rx="18" fill="#79553b"/>
+  <path d="M600 210v92" stroke="#ab8668" stroke-width="8"/>
+  <rect x="315" y="300" width="58" height="300" rx="14" fill="#2f3b42"/>
+  <rect x="827" y="300" width="58" height="300" rx="14" fill="#2f3b42"/>
+  <path d="M344 555h512" stroke="#506068" stroke-width="30" stroke-linecap="round"/>
+  <path d="M278 620h130M792 620h130" stroke="#2f3b42" stroke-width="28" stroke-linecap="round"/>
+  <g fill="#fff" stroke="#2f3b42" stroke-width="12"><circle cx="300" cy="655" r="32"/><circle cx="386" cy="655" r="32"/><circle cx="814" cy="655" r="32"/><circle cx="900" cy="655" r="32"/></g>
+  <rect x="745" y="302" width="120" height="42" rx="10" fill="#141d22"/>
+  <circle cx="780" cy="323" r="7" fill="#77d4b2"/><circle cx="810" cy="323" r="7" fill="#77d4b2"/>
+  <text x="600" y="740" text-anchor="middle" font-family="Arial,sans-serif" font-size="45" font-weight="700" fill="#59412f">48×24 • Memory • Casters</text>
+</svg>

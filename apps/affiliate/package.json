@@ -21,13 +21,18 @@
     "start:baby": "NEXT_PUBLIC_AFFILIATE_SITE=baby next start",
     "start:network": "NEXT_PUBLIC_AFFILIATE_SITE=network next start",
     "start:smarthome": "NEXT_PUBLIC_AFFILIATE_SITE=smarthome next start",
+    "check:affiliate-links": "node scripts/check-affiliate-links.mjs",
+    "report:affiliate-clicks": "node scripts/report-affiliate-clicks.mjs",
     "lint": "eslint",
     "sync:amazon": "node scripts/sync-amazon-paapi.mjs"
   },
   "dependencies": {
+    "@prisma/adapter-pg": "^7.8.0",
+    "@prisma/client": "^7.8.0",
     "clsx": "^2.1.1",
     "lucide-react": "^0.536.0",
     "next": "15.3.3",
+    "pg": "^8.21.0",
     "react": "19.1.0",
     "react-dom": "19.1.0"
   },

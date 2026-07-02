@@ -321,7 +321,7 @@ export const smartHomeGuides: Guide[] = [
       { name: "Connectivity Standards Alliance — Matter", url: "https://csa-iot.org/all-solutions/matter/", note: "Matter scope and ecosystem role." },
       { name: "Thread Group — What is Thread?", url: "https://www.threadgroup.org/What-is-Thread/Overview", note: "Thread network and border-router fundamentals." },
     ],
-    relatedRoundups: ["aqara-u400-vs-u100"], relatedProducts: ["aqara-smart-lock-u400", "aqara-smart-lock-u100"],
+    relatedRoundups: ["ultraloq-bolt-se-vs-aqara-u400", "aqara-u400-vs-u100"], relatedProducts: ["ultraloq-bolt-se-smart-lock", "aqara-smart-lock-u400", "aqara-smart-lock-u100"],
   },
   {
     site: "smarthome", slug: "smart-lock-door-fit-hub-compatibility", category: "access", updatedAt,
@@ -337,7 +337,7 @@ export const smartHomeGuides: Guide[] = [
       { name: "Aqara U400 product page", url: "https://www.aqara.com/us/product/smart-lock-u400/", note: "Example fit and controller requirements." },
       { name: "Aqara U100 product page", url: "https://www.aqara.com/us/product/smart-lock-u100/", note: "Example deadbolt, battery, and hub requirements." },
     ],
-    relatedRoundups: ["aqara-u400-vs-u100"], relatedProducts: ["aqara-smart-lock-u400", "aqara-smart-lock-u100"],
+    relatedRoundups: ["ultraloq-bolt-se-vs-aqara-u400", "aqara-u400-vs-u100"], relatedProducts: ["ultraloq-bolt-se-smart-lock", "aqara-smart-lock-u400", "aqara-smart-lock-u100"],
   },
   {
     site: "smarthome", slug: "video-doorbell-battery-storage-subscription-guide", category: "cameras", updatedAt,

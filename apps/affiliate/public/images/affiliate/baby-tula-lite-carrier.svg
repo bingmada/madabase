@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Stylized Baby Tula Lite packable carrier">
+  <rect width="1200" height="800" rx="48" fill="#f7f0eb"/>
+  <circle cx="600" cy="355" r="285" fill="#eadbd1"/>
+  <path d="M410 205c-45 45-72 126-72 226v175h74V410c0-74 17-126 48-164zM790 205c45 45 72 126 72 226v175h-74V410c0-74-17-126-48-164z" fill="#5f6c79"/>
+  <path d="M455 180h290l48 350c-56 71-330 71-386 0z" fill="#71808e"/>
+  <path d="M475 225h250l28 236c-44 52-262 52-306 0z" fill="#8d99a5"/>
+  <g stroke="#aeb8c1" stroke-width="5" opacity=".65"><path d="M490 250h220M475 310h250M465 370h270M455 430h290"/><path d="M520 220l-35 260M590 220l-12 280M670 220l30 260"/></g>
+  <path d="M385 545h430v105H385z" fill="#55626e"/>
+  <rect x="515" y="565" width="170" height="58" rx="18" fill="#dce3e8"/>
+  <text x="600" y="725" text-anchor="middle" font-family="Arial,sans-serif" font-size="46" font-weight="700" fill="#4b5761">Tula Lite • 12–30 lb</text>
+</svg>

@@ -8,6 +8,11 @@ generator testClient {
   output   = "../apps/test/generated/prisma"
 }
 
+generator affiliateClient {
+  provider = "prisma-client"
+  output   = "../apps/affiliate/generated/prisma"
+}
+
 datasource db {
   provider = "postgresql"
 }
@@ -166,4 +171,19 @@ model ReferralReward {
   @@unique([shareLinkId, referredUserId])
   @@index([referrerUserId, createdAt])
   @@index([referredUserId, createdAt])
+}
+
+model AffiliateClick {
+  id          String   @id @default(cuid())
+  eventId     String   @unique
+  site        String
+  productSlug String
+  merchant    String
+  position    String
+  path        String
+  createdAt   DateTime @default(now())
+
+  @@index([site, createdAt])
+  @@index([productSlug, createdAt])
+  @@index([path, createdAt])
 }

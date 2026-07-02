@@ -15,10 +15,16 @@ export function AffiliateButton({
   position: string;
 }) {
   function trackClick() {
+    const eventId =
+      typeof crypto !== "undefined" && "randomUUID" in crypto
+        ? crypto.randomUUID()
+        : `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+
     void fetch("/api/affiliate-clicks", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({
+        eventId,
         site,
         productSlug: product.slug,
         merchant: offer.merchant,
@@ -30,7 +36,13 @@ export function AffiliateButton({
   }
 
   return (
-    <a className="button-primary" href={offer.url} target="_blank" rel="sponsored nofollow noopener noreferrer" onClick={trackClick}>
+    <a
+      className="button-primary"
+      href={offer.url}
+      target="_blank"
+      rel="sponsored nofollow noopener noreferrer"
+      onClick={trackClick}
+    >
       {offer.label}
       <ExternalLink aria-hidden="true" size={16} />
     </a>

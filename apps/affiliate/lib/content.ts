@@ -14,6 +14,11 @@ import { expansionGuides } from "./expansion-guides";
 import { networkGuides, networkProducts, networkRoundups, networkTools } from "./network-content";
 import { smartHomeGuides, smartHomeProducts, smartHomeRoundups } from "./smarthome-content";
 import { topicClusterGuides, topicClusterTools } from "./topic-cluster-content";
+import {
+  verifiedAffiliateBatchGuides,
+  verifiedAffiliateBatchProducts,
+  verifiedAffiliateBatchRoundups,
+} from "./verified-affiliate-batch-content";
 
 export const products: Product[] = [
   {
@@ -1096,7 +1101,7 @@ export const roundups: Roundup[] = [
       { label: "Multiple pets", detail: "Check whether one pet can steal meals before assuming a single feeder is enough." },
     ],
     methodology: ["Check dry-food compatibility before app features", "Compare hopper size against real feeding schedule", "Prioritize cleaning access around the chute and bowl"],
-    productSlugs: ["petlibro-granary-automatic-cat-feeder"],
+    productSlugs: ["petlibro-one-rfid-smart-feeder", "petlibro-granary-automatic-cat-feeder"],
     faqs: [
       { question: "Are automatic feeders safe for wet food?", answer: "Most are designed for dry kibble. Wet-food feeders need cooling packs and shorter holding times." },
       { question: "What matters most for cats on a diet?", answer: "Portion repeatability and a tamper-resistant lid matter more than camera or voice features." },
@@ -1194,7 +1199,7 @@ export const roundups: Roundup[] = [
       { label: "Rental apartment", detail: "Favor easy assembly, fewer wall-mounted accessories, and cable routing that can move with you." },
     ],
     methodology: ["Prioritize desktop depth before width for monitor distance", "Check lift range against sitting and standing elbow height", "Account for monitor arms, laptop docks, and cable trays before buying accessories"],
-    productSlugs: ["flexispot-e7-mini-standing-desk", "uplift-v3-standing-desk"],
+    productSlugs: ["ergear-48x24-electric-standing-desk", "flexispot-e7-mini-standing-desk", "uplift-v3-standing-desk"],
     faqs: [
       { question: "Is 48 inches wide enough for a home office desk?", answer: "Yes for a laptop plus one or two monitors if you use a monitor arm and keep accessories narrow." },
       { question: "Is a 40-inch standing desk wide enough?", answer: "It can be enough for a laptop and one monitor, especially with a monitor arm. Measure the display, keyboard, dock, and any speakers together rather than judging the desk by width alone." },
@@ -1380,7 +1385,7 @@ export const roundups: Roundup[] = [
       { label: "Minimal setup", detail: "Skip app-heavy features if simple controls are enough." },
     ],
     methodology: ["Check age and weight guidance first", "Compare caregiver fit and learning curve", "Keep sleep products aligned with safe sleep guidance"],
-    productSlugs: ["babybjorn-carrier-mini-3d-mesh", "momcozy-purehug-baby-carrier", "ergobaby-omni-breeze-carrier", "babybjorn-carrier-harmony", "hatch-rest-sound-machine"],
+    productSlugs: ["baby-tula-lite-carrier", "babybjorn-carrier-mini-3d-mesh", "momcozy-purehug-baby-carrier", "ergobaby-omni-breeze-carrier", "babybjorn-carrier-harmony", "hatch-rest-sound-machine"],
     faqs: [
       { question: "Can a carrier replace a stroller?", answer: "For short errands and travel moments, sometimes. For long walks or hot days, a stroller can still be easier." },
       { question: "Are sound machines safe?", answer: "Use moderate volume and sensible placement. Follow pediatric guidance and avoid placing devices too close to the baby." },
@@ -1804,6 +1809,9 @@ tools.push(...topicClusterTools);
 products.push(...commercialExpansionProducts);
 roundups.push(...commercialExpansionRoundups);
 guides.push(...commercialExpansionGuides);
+products.push(...verifiedAffiliateBatchProducts);
+roundups.push(...verifiedAffiliateBatchRoundups);
+guides.push(...verifiedAffiliateBatchGuides);
 
 export function siteProducts(site: SiteKey) {
   return products.filter((product) => product.site === site).map(applyAmazonOverride);
