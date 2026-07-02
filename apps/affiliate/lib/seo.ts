@@ -11,7 +11,10 @@ export function pageMetadata(site: SiteConfig, path: string, title: string, desc
 
   return {
     metadataBase: new URL(site.domain),
-    title,
+    // Article and comparison titles already carry their primary query. Keeping
+    // them absolute avoids appending a second site-name suffix that pushes
+    // model-specific titles beyond a useful search-result length.
+    title: { absolute: title },
     description,
     alternates: {
       canonical: url,

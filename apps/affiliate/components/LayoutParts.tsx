@@ -19,12 +19,12 @@ export function SiteChrome({ site, children }: { site: SiteConfig; children: Rea
       }
     >
       <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-white/95 backdrop-blur">
-        <div className="shell flex min-h-16 items-center justify-between gap-5 py-3">
-          <Link className="text-lg font-black text-[var(--brand-strong)]" href="/">
+        <div className="shell flex min-h-16 items-center justify-between gap-4 overflow-hidden py-3">
+          <Link className="shrink-0 whitespace-nowrap text-lg font-black text-[var(--brand-strong)]" href="/">
             {site.name}
           </Link>
-          <nav className="flex flex-wrap items-center justify-end gap-x-4 gap-y-2 text-sm font-semibold" aria-label="Primary navigation">
-            <Link className="hover:text-[var(--brand-strong)]" href="/">
+          <nav className="flex min-w-0 flex-nowrap items-center justify-start gap-x-3 overflow-x-auto whitespace-nowrap text-xs font-semibold sm:justify-end sm:gap-x-4 sm:text-sm" aria-label="Primary navigation">
+            <Link className="hidden hover:text-[var(--brand-strong)] sm:inline" href="/">
               Home
             </Link>
             {site.categories.map((category) => (
@@ -32,13 +32,13 @@ export function SiteChrome({ site, children }: { site: SiteConfig; children: Rea
                 {category.name}
               </Link>
             ))}
-            <Link className="hover:text-[var(--brand-strong)]" href="/#guides">
+            <Link className="hidden hover:text-[var(--brand-strong)] sm:inline" href="/#guides">
               Guides
             </Link>
-            <Link className="hover:text-[var(--brand-strong)]" href="/#tools">
+            <Link className="hidden hover:text-[var(--brand-strong)] sm:inline" href="/#tools">
               Tools
             </Link>
-            <Link className="hover:text-[var(--brand-strong)]" href="/methodology">
+            <Link className="hidden hover:text-[var(--brand-strong)] sm:inline" href="/methodology">
               Methodology
             </Link>
           </nav>

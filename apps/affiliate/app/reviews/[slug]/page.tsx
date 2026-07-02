@@ -16,6 +16,42 @@ function siteContext(siteKey: string) {
   return "home-office setup";
 }
 
+function beforeYouBuyChecks(siteKey: string) {
+  if (siteKey === "pet") {
+    return [
+      "Confirm size, food or filter compatibility, cleaning steps, and recurring replacement costs.",
+      "Check the exact retailer listing, seller, return window, and current model before ordering.",
+      "Treat feeding, monitoring, odor, and air-quality products as support for daily care—not substitutes for it.",
+    ];
+  }
+  if (siteKey === "baby") {
+    return [
+      "Read the current manufacturer instructions and confirm every age, weight, position, and safe-use limit.",
+      "Check the exact retailer listing, seller, included accessories, return window, and current model before ordering.",
+      "Make sure the product fits the family's real cleaning, storage, charging, and travel routine.",
+    ];
+  }
+  if (siteKey === "network") {
+    return [
+      "Confirm the exact hardware version, pack quantity, port speeds, regional model, and current firmware support.",
+      "Check the retailer listing, seller, return window, and whether subscriptions change any advertised feature.",
+      "Map placement, Ethernet backhaul, client support, and the actual internet bottleneck before upgrading.",
+    ];
+  }
+  if (siteKey === "smarthome") {
+    return [
+      "Confirm the exact model, region, wiring or door fit, required hub, and supported ecosystem before ordering.",
+      "Check the retailer listing, seller, bundle contents, return window, and subscription boundaries.",
+      "Keep a dependable local fallback for entry, climate, cameras, and essential automations.",
+    ];
+  }
+  return [
+    "Measure the room, desk edge, chair path, monitor position, cable travel, and outlet location before ordering.",
+    "Confirm the exact retailer listing, seller, configuration, dimensions, return window, and warranty path.",
+    "For body- or equipment-fit products, keep the packaging until the complete workstation has been tested.",
+  ];
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const site = await getCurrentSite();
   const { slug } = await params;
@@ -52,6 +88,9 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
     .slice(0, 6);
 
   const context = siteContext(site.key);
+  const primaryOffer = product.offers[0];
+  const hasSpecificSkipSection = product.editorialSections?.some((section) => section.heading.toLowerCase().includes("who should skip"));
+  const purchaseChecks = beforeYouBuyChecks(site.key);
 
   return (
     <main className="section">
@@ -85,6 +124,15 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
             <div className="mt-6 flex flex-wrap items-center gap-3">
               <span className="rounded-md bg-[var(--brand-soft)] px-3 py-2 font-semibold text-[var(--brand-strong)]">{product.bestFor}</span>
             </div>
+            {primaryOffer ? (
+              <div className="mt-5 rounded-md border border-[var(--border)] bg-white p-4 lg:hidden">
+                <p className="text-xs font-bold uppercase text-[var(--muted)]">Check the exact configuration</p>
+                <p className="mt-2 text-sm leading-6 text-[var(--muted)]">{primaryOffer.priceNote}</p>
+                <div className="mt-3">
+                  <AffiliateButton site={site.key} product={product} offer={primaryOffer} position="review-mobile-intro" />
+                </div>
+              </div>
+            ) : null}
             <div className="relative mt-8 aspect-[16/9] w-full overflow-hidden rounded-md">
               <Image className="object-cover" src={displayImage} alt={displayName} fill priority sizes="(min-width: 1024px) 720px, 100vw" />
             </div>
@@ -169,10 +217,14 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
               <p>
                 Consider {displayName} if your priority is {product.bestFor.toLowerCase()} and you want a product that fits your {context} without adding unnecessary complexity.
               </p>
-              <h2>Who should skip it</h2>
-              <p>
-                Skip it if the trade-offs above touch your main use case. The better buy is usually the product whose size, setup, accessories, and return path match your situation.
-              </p>
+              {!hasSpecificSkipSection ? (
+                <>
+                  <h2>Who should skip it</h2>
+                  <p>
+                    Skip it if the trade-offs above touch your main use case. The better buy is usually the product whose size, setup, accessories, and return path match your situation.
+                  </p>
+                </>
+              ) : null}
               {product.alternatives?.length ? (
                 <>
                   <h2>Also compare</h2>
@@ -229,10 +281,10 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
               ) : null}
               <h2>Before you buy</h2>
               <ul>
-                <li>Check the exact Amazon listing, seller, return window, and current dimensions before ordering.</li>
-                <li>Compare the product specs against your room, device, pet, baby, size, or compatibility needs.</li>
-                <li>Use Amazon customer reviews to spot recurring quality-control issues after you confirm the exact version and accessories.</li>
-                <li>These notes focus on setup fit, listed specs, compatibility, and trade-offs so you can make a cleaner buying decision.</li>
+                {purchaseChecks.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+                <li>Use recent owner feedback to look for recurring quality-control issues after confirming the exact model.</li>
                 <li>Our Amazon links may earn commission from qualifying purchases, at no extra cost to you.</li>
               </ul>
               {product.sources?.length ? (
@@ -252,6 +304,21 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
           </article>
           <aside className="space-y-5">
             <Disclosure site={site} />
+            <div className="panel p-5">
+              <h2 className="text-xl font-bold">Buying options</h2>
+              <div className="mt-4 space-y-3">
+                {product.offers.length === 0 ? <p className="text-sm leading-6 text-[var(--muted)]">Buying links are being updated.</p> : null}
+                {product.offers.map((offer) => (
+                  <div className="rounded-md border border-[var(--border)] p-3" key={offer.merchant}>
+                    <p className="font-bold">{offer.merchant}</p>
+                    <p className="mt-1 text-sm text-[var(--muted)]">{offer.priceNote}</p>
+                    <div className="mt-3">
+                      <AffiliateButton site={site.key} product={product} offer={offer} position="review-sidebar" />
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
             <div className="panel p-5">
               <h2 className="text-xl font-bold">Decision factors</h2>
               <p className="mt-2 text-sm leading-6 text-[var(--muted)]">Use these factors to compare the product with nearby alternatives.</p>
@@ -273,21 +340,6 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                   </div>
                   ))}
               </dl>
-            </div>
-            <div className="panel p-5">
-              <h2 className="text-xl font-bold">Buying options</h2>
-              <div className="mt-4 space-y-3">
-                {product.offers.length === 0 ? <p className="text-sm leading-6 text-[var(--muted)]">Buying links are being updated.</p> : null}
-                {product.offers.map((offer) => (
-                  <div className="rounded-md border border-[var(--border)] p-3" key={offer.merchant}>
-                    <p className="font-bold">{offer.merchant}</p>
-                    <p className="mt-1 text-sm text-[var(--muted)]">{offer.priceNote}</p>
-                    <div className="mt-3">
-                      <AffiliateButton site={site.key} product={product} offer={offer} position="review-sidebar" />
-                    </div>
-                  </div>
-                ))}
-              </div>
             </div>
           </aside>
         </div>
