@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/JsonLd";
 import { ProductCard, RoundupCard } from "@/components/LayoutParts";
+import { StyleCategoryPage } from "@/components/StyleExperience";
 import { siteGuides, siteProducts, siteRoundups, siteTools } from "@/lib/content";
 import { breadcrumbSchema, itemListSchema, pageMetadata } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
@@ -82,6 +83,32 @@ const categoryFrameworks: Record<SiteKey, Record<string, { focus: string; checks
       checks: ["Matter controller", "Thread border router", "Zigbee hub", "Local control when offline"],
     },
   },
+  style: {
+    jewelry: {
+      focus: "Statement jewelry should be visually specific without becoming physically annoying; scale, weight, closure, material claims, and outfit role matter together.",
+      checks: ["Length and face scale", "Closure and earlobe comfort", "Metal and material claims", "One clear outfit focal point"],
+    },
+    bags: {
+      focus: "An expressive bag still has to carry the day: measure the opening, strap range, interior, and actual essentials before buying the character or shape.",
+      checks: ["Exterior dimensions", "Phone and wallet fit", "Strap adjustment", "Seller and return path"],
+    },
+    hair: {
+      focus: "A decorative clip works only when its opening, spring tension, teeth, and weight match the wearer's hair volume and intended style.",
+      checks: ["Clip opening and size", "Hair volume and texture", "Teeth and spring tension", "Snag points and finish"],
+    },
+    scarves: {
+      focus: "Scarf material, dimensions, edge finish, and care determine whether it works at the neck, in hair, on a bag, or only in product photos.",
+      checks: ["Fiber claim", "Length and width", "Edge finish", "Care and color transfer"],
+    },
+    socks: {
+      focus: "Statement socks still need a usable cuff, fiber blend, wash routine, and shoe fit; the graphic is only one part of the choice.",
+      checks: ["Size range", "Fiber blend", "Cuff pressure", "Pattern after stretching"],
+    },
+    styling: {
+      focus: "The easiest expressive outfits use one deliberate focal piece, repeat one color or shape, and keep the remaining elements quieter.",
+      checks: ["Choose the focal item", "Repeat one color", "Balance visual scale", "Match the dress code"],
+    },
+  },
 };
 
 function getCategoryFramework(siteKey: SiteKey, category: string) {
@@ -105,7 +132,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
   const category = site.categories.find((item) => item.slug === slug);
   if (!category) notFound();
   const products = siteProducts(site.key)
-    .filter((item) => item.category === slug && item.offers.length > 0)
+    .filter((item) => item.category === slug && (site.key === "style" || item.offers.length > 0))
     .reverse();
   const roundups = siteRoundups(site.key).filter((item) => item.category === slug);
   const guides = siteGuides(site.key).filter((item) => item.category === slug);
@@ -117,6 +144,18 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
     ...tools.map((tool) => ({ name: tool.title, path: `/tools/${tool.slug}` })),
   ];
   const framework = getCategoryFramework(site.key, slug);
+  if (site.key === "style") {
+    return (
+      <StyleCategoryPage
+        site={site}
+        title={category.name}
+        description={category.description}
+        products={products}
+        roundups={roundups}
+        guides={guides}
+      />
+    );
+  }
 
   return (
     <main className="section">

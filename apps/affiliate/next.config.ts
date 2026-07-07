@@ -26,6 +26,20 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  async redirects() {
+    return [
+      {
+        source: "/reviews/ergotron-lx-monitor-arm",
+        destination: "/best/best-monitor-arms-for-home-office",
+        permanent: true,
+      },
+      {
+        source: "/reviews/philips-avent-bottle-sterilizer",
+        destination: "/best/best-bottle-sterilizers-and-dryers",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

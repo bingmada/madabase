@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { AffiliateButton } from "@/components/AffiliateButton";
 import { JsonLd } from "@/components/JsonLd";
 import { Disclosure, MethodologyList, ProductCard } from "@/components/LayoutParts";
+import { StyleCollectionPage } from "@/components/StyleExperience";
 import { findProduct, findRoundup, siteGuides } from "@/lib/content";
 import { breadcrumbSchema, faqPageSchema, itemListSchema, pageMetadata } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
@@ -106,6 +107,38 @@ const roundupAdvice: Record<SiteKey, Record<string, { spendMore: string; spendLe
       compare: ["Controller roles", "Radio support", "Local fallback", "Cross-platform sharing"],
     },
   },
+  style: {
+    jewelry: {
+      spendMore: "Spend more when the exact materials, closure, construction, and dimensions support comfortable repeat wear.",
+      spendLess: "Spend less when the piece is highly occasion-specific or the listing does not identify the material details you need.",
+      compare: ["Length and width", "Closure style", "Exact material claims", "Seller and return path"],
+    },
+    bags: {
+      spendMore: "Spend more when construction, strap adjustment, usable capacity, and licensed design all support regular carry.",
+      spendLess: "Spend less when a neutral bag plus a removable charm creates the same outfit effect with more flexibility.",
+      compare: ["Exterior and opening size", "Real carry list", "Strap range", "Material and care"],
+    },
+    hair: {
+      spendMore: "Spend more when the spring, teeth, finish, and size support the hairstyle you repeat most often.",
+      spendLess: "Spend less on highly seasonal motifs or multipacks when only one clip size fits your hair.",
+      compare: ["Clip dimensions", "Hair volume", "Spring and teeth", "Snag risk"],
+    },
+    scarves: {
+      spendMore: "Spend more for a verified fiber, finished edges, and dimensions that support several real tying methods.",
+      spendLess: "Spend less when the scarf will mainly decorate a bag handle or serve one event outfit.",
+      compare: ["Fiber claim", "Dimensions", "Edge finish", "Care"],
+    },
+    socks: {
+      spendMore: "Spend more when the fiber blend, heel shape, cuff, and wash performance make the pair easy to repeat.",
+      spendLess: "Spend less on multipacks when novelty matters more than long-term structure.",
+      compare: ["Size range", "Fiber blend", "Cuff fit", "Pattern stretch"],
+    },
+    styling: {
+      spendMore: "Spend more on one focal accessory that works with several owned outfits and is comfortable enough to repeat.",
+      spendLess: "Spend less on a trend-specific motif that requires several new clothing purchases to make it work.",
+      compare: ["Focal zone", "Color repetition", "Visual scale", "Dress-code fit"],
+    },
+  },
 };
 
 function getRoundupAdvice(siteKey: SiteKey, category: string) {
@@ -136,6 +169,22 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
     .slice(0, 6);
   const answer = quickAnswer(roundup.title, roundup.intent, picks);
   const advice = getRoundupAdvice(site.key, roundup.category);
+  if (site.key === "style") {
+    return (
+      <>
+        <JsonLd
+          data={breadcrumbSchema(site, [
+            { name: "Home", path: "/" },
+            ...(category ? [{ name: category.name, path: `/categories/${category.slug}` }] : []),
+            { name: roundup.title, path: `/best/${slug}` },
+          ])}
+        />
+        <JsonLd data={itemListSchema(site, roundup.title, picks.map((product) => ({ name: product!.name, path: `/reviews/${product!.slug}` })))} />
+        <JsonLd data={faqPageSchema(roundup.faqs)} />
+        <StyleCollectionPage site={site} roundup={roundup} products={picks.filter((product): product is NonNullable<typeof product> => Boolean(product))} />
+      </>
+    );
+  }
 
   return (
     <main className="section">

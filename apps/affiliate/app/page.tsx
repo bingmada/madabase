@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
 import { Hero, ProductCard, RoundupCard, TrustBar } from "@/components/LayoutParts";
+import { StyleHome } from "@/components/StyleExperience";
 import { siteGuides, siteProducts, siteRoundups, siteTools } from "@/lib/content";
 import { itemListSchema, organizationSchema, pageMetadata, websiteSchema } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
@@ -32,6 +33,11 @@ const homeCopy: Record<SiteKey, { eyebrow: string; heading: string; body: string
     heading: "Choose connected-home gear by compatibility, control, and recurring cost.",
     body: "Compare smart locks, video doorbells, thermostats, and home-automation standards by door fit, wiring, hubs, subscriptions, privacy, and the controls your household will actually use.",
   },
+  style: {
+    eyebrow: "Expressive accessory guides",
+    heading: "Find the interesting piece, then build an outfit that lets it work.",
+    body: "Compare statement earrings, character bags, and other playful accessories by size, weight, material, closure, capacity, and how easily they fit real outfits.",
+  },
 };
 
 function newestAndFoundational<T extends { slug: string }>(items: T[], newestCount: number, foundationalCount: number) {
@@ -55,6 +61,9 @@ export default async function HomePage() {
   const featuredProducts = newestAndFoundational(linkedProducts, 6, 3);
   const featuredGuides = newestAndFoundational(guides, 6, 6);
   const copy = homeCopy[site.key];
+  if (site.key === "style") {
+    return <StyleHome site={site} products={products} roundups={roundups} guides={guides} />;
+  }
   const discoveryItems = [
     ...featuredRoundups.map((roundup) => ({ name: roundup.title, path: `/best/${roundup.slug}` })),
     ...featuredProducts.map((product) => ({ name: product.amazonTitle ?? product.name, path: `/reviews/${product.slug}` })),

@@ -13,12 +13,20 @@ import {
 import { expansionGuides } from "./expansion-guides";
 import { networkGuides, networkProducts, networkRoundups, networkTools } from "./network-content";
 import { smartHomeGuides, smartHomeProducts, smartHomeRoundups } from "./smarthome-content";
+import { styleCatalogProducts, styleCatalogRoundups } from "./style-catalog-expansion";
+import { styleCatalog50Products, styleCatalog50Roundups } from "./style-catalog-50";
 import { topicClusterGuides, topicClusterTools } from "./topic-cluster-content";
+import { styleGuides, styleProducts, styleRoundups } from "./style-content";
 import {
   verifiedAffiliateBatchGuides,
   verifiedAffiliateBatchProducts,
   verifiedAffiliateBatchRoundups,
 } from "./verified-affiliate-batch-content";
+import {
+  nextReleaseGuides,
+  nextReleaseProducts,
+  nextReleaseRoundups,
+} from "./next-release-content";
 
 export const products: Product[] = [
   {
@@ -557,7 +565,14 @@ export const products: Product[] = [
         note: "Official frame dimensions, supported desktop range, height, capacity, speed, noise, cable management, certifications, and warranty information.",
       },
     ],
-    offers: [],
+    offers: [
+      {
+        merchant: "UPLIFT Desk",
+        url: "https://www.upliftdesk.com/2-leg-standing-desk/",
+        label: "Configure at UPLIFT Desk",
+        priceNote: "Confirm desktop size, frame color, accessories, shipping, assembly options, and current warranty terms on UPLIFT's official configurator.",
+      },
+    ],
   },
   {
     site: "homeoffice",
@@ -1801,6 +1816,13 @@ tools.push(...networkTools);
 products.push(...smartHomeProducts);
 roundups.push(...smartHomeRoundups);
 guides.push(...smartHomeGuides);
+products.push(...styleProducts);
+roundups.push(...styleRoundups);
+guides.push(...styleGuides);
+products.push(...styleCatalogProducts);
+roundups.push(...styleCatalogRoundups);
+products.push(...styleCatalog50Products);
+roundups.push(...styleCatalog50Roundups);
 products.push(...adjacentExpansionProducts);
 roundups.push(...adjacentExpansionRoundups);
 guides.push(...adjacentExpansionGuides);
@@ -1812,38 +1834,47 @@ guides.push(...commercialExpansionGuides);
 products.push(...verifiedAffiliateBatchProducts);
 roundups.push(...verifiedAffiliateBatchRoundups);
 guides.push(...verifiedAffiliateBatchGuides);
+products.push(...nextReleaseProducts);
+roundups.push(...nextReleaseRoundups);
+guides.push(...nextReleaseGuides);
+
+const includeDrafts = process.env.AFFILIATE_INCLUDE_DRAFTS === "1";
+
+export function isContentVisible(item: { publicationStatus?: "published" | "draft" }) {
+  return includeDrafts || item.publicationStatus !== "draft";
+}
 
 export function siteProducts(site: SiteKey) {
-  return products.filter((product) => product.site === site).map(applyAmazonOverride);
+  return products.filter((product) => product.site === site && isContentVisible(product)).map(applyAmazonOverride);
 }
 
 export function siteRoundups(site: SiteKey) {
-  return roundups.filter((roundup) => roundup.site === site);
+  return roundups.filter((roundup) => roundup.site === site && isContentVisible(roundup));
 }
 
 export function siteGuides(site: SiteKey) {
-  return guides.filter((guide) => guide.site === site);
+  return guides.filter((guide) => guide.site === site && isContentVisible(guide));
 }
 
 export function siteTools(site: SiteKey) {
-  return tools.filter((tool) => tool.site === site);
+  return tools.filter((tool) => tool.site === site && isContentVisible(tool));
 }
 
 export function findProduct(site: SiteKey, slug: string) {
-  const product = products.find((item) => item.site === site && item.slug === slug);
+  const product = products.find((item) => item.site === site && item.slug === slug && isContentVisible(item));
   return product ? applyAmazonOverride(product) : undefined;
 }
 
 export function findRoundup(site: SiteKey, slug: string) {
-  return roundups.find((roundup) => roundup.site === site && roundup.slug === slug);
+  return roundups.find((roundup) => roundup.site === site && roundup.slug === slug && isContentVisible(roundup));
 }
 
 export function findGuide(site: SiteKey, slug: string) {
-  return guides.find((guide) => guide.site === site && guide.slug === slug);
+  return guides.find((guide) => guide.site === site && guide.slug === slug && isContentVisible(guide));
 }
 
 export function findTool(site: SiteKey, slug: string) {
-  return tools.find((tool) => tool.site === site && tool.slug === slug);
+  return tools.find((tool) => tool.site === site && tool.slug === slug && isContentVisible(tool));
 }
 
 export function applyAmazonOverride(product: Product): Product {

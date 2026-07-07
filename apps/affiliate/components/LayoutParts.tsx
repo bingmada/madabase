@@ -70,6 +70,15 @@ export function SiteChrome({ site, children }: { site: SiteConfig; children: Rea
             </nav>
           </div>
           <p className="mt-2 max-w-3xl">{site.disclosure}</p>
+          <nav className="mt-5 flex flex-wrap gap-x-4 gap-y-2 text-xs font-semibold uppercase tracking-[0.12em]" aria-label="Madabase network">
+            <a className="hover:text-[var(--brand-strong)]" href="https://madabase.com">Madabase tools</a>
+            <a className="hover:text-[var(--brand-strong)]" href="https://pets.madabase.com">Pet gear</a>
+            <a className="hover:text-[var(--brand-strong)]" href="https://homeoffice.madabase.com">Home office</a>
+            <a className="hover:text-[var(--brand-strong)]" href="https://baby.madabase.com">Baby gear</a>
+            <a className="hover:text-[var(--brand-strong)]" href="https://network.madabase.com">Home network</a>
+            <a className="hover:text-[var(--brand-strong)]" href="https://smarthome.madabase.com">Smart home</a>
+            <a className="hover:text-[var(--brand-strong)]" href="https://style.madabase.com">Style accessories</a>
+          </nav>
         </div>
       </footer>
     </body>

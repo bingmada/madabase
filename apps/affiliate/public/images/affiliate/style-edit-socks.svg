@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100">
+  <rect width="900" height="1100" fill="#f2e4df"/>
+  <path d="M230 210h230v430q0 75-85 100l-165 45q-80 20-105-55-22-70 55-112l70-38z" fill="#477c74"/>
+  <path d="M470 210h230v430q0 75-85 100l-165 45q-80 20-105-55-22-70 55-112l70-38z" fill="#b85573"/>
+  <circle cx="350" cy="360" r="48" fill="#f4d29b"/><circle cx="590" cy="360" r="48" fill="#f4d29b"/>
+  <path d="M305 470h90M545 470h90" stroke="#fff8f1" stroke-width="28" stroke-linecap="round"/>
+  <text x="450" y="940" text-anchor="middle" font-family="Georgia,serif" font-size="58" fill="#352b29">good mood, ankle first</text>
+</svg>

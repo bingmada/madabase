@@ -1,11 +1,17 @@
-export type SiteKey = "pet" | "homeoffice" | "baby" | "network" | "smarthome";
+export type SiteKey = "pet" | "homeoffice" | "baby" | "network" | "smarthome" | "style";
+
+export type PublicationStatus = "published" | "draft";
+
+type Publishable = {
+  publicationStatus?: PublicationStatus;
+};
 
 export type Score = {
   label: string;
   value: number;
 };
 
-export type Product = {
+export type Product = Publishable & {
   slug: string;
   site: SiteKey;
   seoTitle?: string;
@@ -44,7 +50,7 @@ export type AffiliateOffer = {
   priceNote: string;
 };
 
-export type Roundup = {
+export type Roundup = Publishable & {
   slug: string;
   site: SiteKey;
   title: string;
@@ -59,7 +65,7 @@ export type Roundup = {
   faqs: Array<{ question: string; answer: string }>;
 };
 
-export type Guide = {
+export type Guide = Publishable & {
   slug: string;
   site: SiteKey;
   title: string;
@@ -72,7 +78,7 @@ export type Guide = {
   relatedProducts?: string[];
 };
 
-export type Tool = {
+export type Tool = Publishable & {
   slug: string;
   site: SiteKey;
   title: string;

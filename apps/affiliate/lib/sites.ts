@@ -132,6 +132,31 @@ export const sites: Record<SiteKey, SiteConfig> = {
       { slug: "automation", name: "Automation basics", description: "Matter, Thread, Zigbee, hubs, and ecosystem planning." },
     ],
   },
+  style: {
+    key: "style",
+    name: "Sideglance Style",
+    tagline: "Wear the interesting thing. Keep the rest intentional.",
+    description: "Practical styling notes for statement jewelry, character bags, hair accessories, scarves, socks, and expressive extras—judged by scale, comfort, materials, outfit fit, and return risk.",
+    domain: process.env.NEXT_PUBLIC_STYLE_SITE_URL ?? "https://style.madabase.com",
+    hostHints: ["style", "wear", "accessory"],
+    disclosure: "As an Amazon Associate I earn from qualifying purchases. Sideglance Style may also earn commissions from other retailer links. Recommendations are based on stated materials, measurements, closure, carrying comfort, outfit versatility, and return risk.",
+    heroImage: "/images/affiliate/hero-style.svg",
+    theme: {
+      brand: "#9a3655",
+      brandStrong: "#65223b",
+      brandSoft: "#fae8ef",
+      accent: "#39706a",
+      accentSoft: "#e3f3ef",
+    },
+    categories: [
+      { slug: "jewelry", name: "Statement jewelry", description: "Novelty, mismatched, celestial, floral, and conversation-starting pieces." },
+      { slug: "bags", name: "Expressive bags", description: "Character bags, unusual shapes, mini backpacks, and practical statement pieces." },
+      { slug: "hair", name: "Hair accessories", description: "Sculptural clips, pearls, florals, butterflies, and playful finishing pieces." },
+      { slug: "scarves", name: "Scarves & wraps", description: "Silk, satin, skinny, and multipurpose scarves for the neck, hair, bag, or waist." },
+      { slug: "socks", name: "Statement socks", description: "Colorful food, fruit, cat, animal, and graphic socks that make basics less quiet." },
+      { slug: "styling", name: "How to wear it", description: "Outfit formulas, scale checks, comfort notes, and ways to avoid costume territory." },
+    ],
+  },
 };
 
 export const siteKeys = Object.keys(sites) as SiteKey[];

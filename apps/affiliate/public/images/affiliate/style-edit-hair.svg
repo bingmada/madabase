@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100">
+  <rect width="900" height="1100" fill="#f3e8de"/>
+  <path d="M280 600c0-220 70-370 170-370s170 150 170 370" fill="none" stroke="#372d2b" stroke-width="130" stroke-linecap="round"/>
+  <path d="M210 520q240-260 480 0l-55 210q-185 120-370 0z" fill="#b75d78"/>
+  <path d="m300 500 80-75 70 90 70-90 80 75-52 145H352z" fill="#f7d7df" stroke="#6e3d4c" stroke-width="18" stroke-linejoin="round"/>
+  <circle cx="450" cy="515" r="34" fill="#44766e"/>
+  <text x="450" y="960" text-anchor="middle" font-family="Georgia,serif" font-size="58" fill="#3b302d">top it off</text>
+</svg>

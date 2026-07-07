@@ -18,6 +18,8 @@ export function Footer() {
       officePicks: "Home office",
       babyPicks: "Baby gear",
       networkPicks: "Home network",
+      smartHomePicks: "Smart home",
+      stylePicks: "Style accessories",
     },
     zh: {
       description: "在线工具、实用 SEO 内容，以及面向开发者和创作者的高效工作流。",
@@ -30,6 +32,8 @@ export function Footer() {
       officePicks: "居家办公",
       babyPicks: "母婴用品",
       networkPicks: "家庭网络",
+      smartHomePicks: "智能家居",
+      stylePicks: "穿搭配饰",
     },
   }[locale];
 
@@ -55,6 +59,8 @@ export function Footer() {
             <a href="https://homeoffice.madabase.com">{copy.officePicks}</a>
             <a href="https://baby.madabase.com">{copy.babyPicks}</a>
             <a href="https://network.madabase.com">{copy.networkPicks}</a>
+            <a href="https://smarthome.madabase.com">{copy.smartHomePicks}</a>
+            <a href="https://style.madabase.com">{copy.stylePicks}</a>
           </div>
         </div>
         <div className="flex flex-col justify-between gap-2">

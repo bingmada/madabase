@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100">
+  <defs><linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f6dce3"/><stop offset="1" stop-color="#efe8d7"/></linearGradient></defs>
+  <rect width="900" height="1100" fill="url(#b)"/>
+  <circle cx="450" cy="520" r="280" fill="#fff8f3" opacity=".75"/>
+  <path d="M330 290c-40 70-48 151-16 224 28 64 76 108 143 132-91 18-184-25-228-110-53-103-13-229 90-282z" fill="#bc607d"/>
+  <path d="m600 290 27 65 70 6-53 46 16 68-60-36-60 36 16-68-53-46 70-6z" fill="#43766f"/>
+  <circle cx="336" cy="720" r="38" fill="#e5aebd"/><circle cx="604" cy="720" r="38" fill="#9bbcb5"/>
+  <path d="M336 646v-90M604 646V475" stroke="#6d4d56" stroke-width="14" stroke-linecap="round"/>
+  <text x="450" y="940" text-anchor="middle" font-family="Georgia,serif" font-size="58" fill="#3b2c30">conversation pieces</text>
+</svg>

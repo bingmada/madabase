@@ -4,7 +4,8 @@ import { notFound } from "next/navigation";
 import { AffiliateButton } from "@/components/AffiliateButton";
 import { JsonLd } from "@/components/JsonLd";
 import { Disclosure } from "@/components/LayoutParts";
-import { findProduct, siteGuides, siteRoundups } from "@/lib/content";
+import { StyleProductPage } from "@/components/StyleExperience";
+import { findProduct, siteGuides, siteProducts, siteRoundups } from "@/lib/content";
 import { breadcrumbSchema, pageMetadata, productNotesSchema } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 
@@ -91,6 +92,25 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
   const primaryOffer = product.offers[0];
   const hasSpecificSkipSection = product.editorialSections?.some((section) => section.heading.toLowerCase().includes("who should skip"));
   const purchaseChecks = beforeYouBuyChecks(site.key);
+  if (site.key === "style") {
+    const related = siteProducts(site.key)
+      .filter((item) => item.category === product.category && item.slug !== product.slug)
+      .reverse()
+      .slice(0, 6);
+    return (
+      <>
+        <JsonLd
+          data={breadcrumbSchema(site, [
+            { name: "Home", path: "/" },
+            ...(category ? [{ name: category.name, path: `/categories/${category.slug}` }] : []),
+            { name: product.name, path: `/reviews/${slug}` },
+          ])}
+        />
+        <JsonLd data={productNotesSchema(site, product)} />
+        <StyleProductPage site={site} product={product} related={related} />
+      </>
+    );
+  }
 
   return (
     <main className="section">

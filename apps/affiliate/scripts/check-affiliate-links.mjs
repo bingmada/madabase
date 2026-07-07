@@ -7,6 +7,10 @@ const root = path.resolve(new URL("../../..", import.meta.url).pathname);
 const contentDirectory = path.join(root, "apps/affiliate/lib");
 const partnerTag = process.env.AMAZON_AFFILIATE_TAG ?? "bingmada-20";
 const inventoryOnly = process.argv.includes("--inventory");
+const siteArgument = process.argv.find((argument) =>
+  argument.startsWith("--site="),
+);
+const siteFilter = siteArgument?.slice("--site=".length);
 const jsonArgument = process.argv.find((argument) =>
   argument.startsWith("--json="),
 );
@@ -63,6 +67,12 @@ function urlsBelow(node) {
   return urls;
 }
 
+function fallbackAmazonUrl(asin) {
+  return asin
+    ? `https://www.amazon.com/dp/${asin}?tag=${partnerTag}&linkCode=ll2&language=en_US&ref_=as_li_ss_tl`
+    : null;
+}
+
 function contentFiles() {
   return fs
     .readdirSync(contentDirectory)
@@ -97,11 +107,19 @@ function buildInventory() {
         const site = literalText(propertyValue(node, "site"));
         const asin = literalText(propertyValue(node, "asin"));
         const offers = propertyValue(node, "offers");
+        const affiliateUrl = literalText(propertyValue(node, "affiliateUrl"));
 
         if (slug && offers) {
           for (const url of urlsBelow(offers)) {
             add(url, { slug, site, expectedAsin: asin });
           }
+        }
+
+        if (slug && affiliateUrl && isAffiliateUrl(affiliateUrl)) {
+          add(affiliateUrl, { slug, site, expectedAsin: asin });
+        } else if (slug && affiliateUrl?.startsWith("PENDING-")) {
+          const url = fallbackAmazonUrl(asin);
+          if (url) add(url, { slug, site, expectedAsin: asin });
         }
       }
 
@@ -253,7 +271,9 @@ async function check(record) {
 }
 
 async function main() {
-  const inventory = buildInventory();
+  const inventory = buildInventory().filter(
+    (item) => !siteFilter || item.site === siteFilter,
+  );
 
   if (inventoryOnly) {
     console.log(`Found ${inventory.length} Amazon affiliate URLs.`);

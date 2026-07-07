@@ -78,6 +78,19 @@ const siteAdvice: Record<SiteKey, AdviceBlock> = {
     ],
     decision: "Choose the device with the clearest compatibility and local fallback path; add premium ecosystem features only when they remove a recurring household problem.",
   },
+  style: {
+    checklist: [
+      "Use stated dimensions and compare them with an accessory already comfortable to wear or carry.",
+      "Check closure, strap range, material language, seller, and return path before choosing the motif.",
+      "Name the accessory's outfit role: focal point, color repeat, texture, or practical carry.",
+    ],
+    mistakes: [
+      "Judging scale only from close-up product photography.",
+      "Treating nickel-free, plated, base metal, and hypoallergenic as interchangeable claims.",
+      "Combining several large novelty motifs without a shared palette or quiet clothing base.",
+    ],
+    decision: "Choose the expressive item that fits a real outfit and physical routine first; the most unusual design is useful only when its scale, comfort, and carry method make it easy to wear.",
+  },
 };
 
 const categoryAdvice: Record<string, string[]> = {
@@ -96,6 +109,12 @@ const categoryAdvice: Record<string, string[]> = {
   cameras: ["Compare storage and alert features before comparing headline resolution.", "Battery placement is easier, but wired power can reduce charging work.", "Check what the subscription changes after any trial ends."],
   climate: ["Use the manufacturer's compatibility checker before removing the old thermostat.", "A C-wire or power adapter can matter more than app preference.", "Room sensors help only when placement and HVAC behavior match the problem."],
   automation: ["Matter is an application standard; Thread and Zigbee are network technologies.", "A Matter controller and a Thread border router are different roles.", "Prefer physical and local fallback controls for essential routines."],
+  jewelry: ["Length, width, closure, and exact material claims matter together.", "Compare listed dimensions with an owned pair.", "Let one face-and-neckline item be the focal point."],
+  bags: ["Exterior dimensions overstate usable capacity.", "Check the zipper opening, strap range, and real carry list.", "Confirm the seller and inspect construction during the return window."],
+  hair: ["Match clip size to hair volume, not only the motif.", "Check teeth, spring tension, and decorative snag points.", "A large claw should hold the intended twist without scalp pressure."],
+  scarves: ["Dimensions decide whether a scarf works at the neck, hair, bag, or waist.", "Read fiber claims literally: satin describes a weave, not necessarily silk.", "Check care instructions and color transfer before tying against light clothing."],
+  socks: ["Check the stated size range and fiber blend.", "A graphic can distort when stretched across the foot or calf.", "Choose cuff pressure and shoe thickness before choosing the joke."],
+  styling: ["Assign one focal zone.", "Repeat one color or shape once.", "Use a full-body photo to check balance."],
 };
 
 function guideAdvice(siteKey: SiteKey, category: string) {

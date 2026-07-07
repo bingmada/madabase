@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { SiteChrome } from "@/components/LayoutParts";
+import { StyleChrome } from "@/components/StyleExperience";
 import { getCurrentSite } from "@/lib/sites";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -25,7 +26,7 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
         {/* @ts-expect-error Impact verification requires its non-standard meta value attribute. */}
         <meta name="impact-site-verification" value="4c2eb61e-515e-47e0-b623-7a198fb35667" />
       </head>
-      <SiteChrome site={site}>{children}</SiteChrome>
+      {site.key === "style" ? <StyleChrome site={site}>{children}</StyleChrome> : <SiteChrome site={site}>{children}</SiteChrome>}
     </html>
   );
 }

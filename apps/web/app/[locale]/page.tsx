@@ -89,6 +89,38 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       tools: [...getToolsByCategory("creator"), ...getToolsByCategory("text")].slice(0, 4),
     },
   ];
+  const buyingGuides = [
+    {
+      href: "https://network.madabase.com",
+      title: locale === "en" ? "Home network picks" : "家庭网络选购",
+      description: locale === "en" ? "Mesh Wi-Fi, routers, Ethernet, and backup power notes." : "Mesh Wi-Fi、路由器、网线网络和备用电源选购笔记。",
+    },
+    {
+      href: "https://homeoffice.madabase.com",
+      title: locale === "en" ? "Home office picks" : "居家办公选购",
+      description: locale === "en" ? "Desks, chairs, monitor arms, lighting, and setup trade-offs." : "桌子、椅子、显示器支架、灯光和办公配置取舍。",
+    },
+    {
+      href: "https://baby.madabase.com",
+      title: locale === "en" ? "Baby gear picks" : "母婴用品选购",
+      description: locale === "en" ? "Monitors, strollers, carriers, feeding, and nursery routines." : "监控器、推车、背带、喂养和睡眠用品选购。",
+    },
+    {
+      href: "https://pets.madabase.com",
+      title: locale === "en" ? "Pet gear picks" : "宠物用品选购",
+      description: locale === "en" ? "Feeders, cameras, beds, litter, pet hair, and air quality." : "喂食器、摄像头、窝垫、猫砂、毛发和空气质量用品。",
+    },
+    {
+      href: "https://smarthome.madabase.com",
+      title: locale === "en" ? "Smart-home picks" : "智能家居选购",
+      description: locale === "en" ? "Locks, doorbells, thermostats, Matter, Thread, and setup checks." : "门锁、门铃、温控器、Matter、Thread 和安装检查。",
+    },
+    {
+      href: "https://style.madabase.com",
+      title: locale === "en" ? "Style accessory picks" : "穿搭配饰选购",
+      description: locale === "en" ? "Statement jewelry, bags, hair accessories, scarves, and socks." : "个性耳饰、包、发饰、丝巾和袜子搭配选购。",
+    },
+  ];
 
   const copy = {
     en: {
@@ -194,6 +226,21 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             ))}
           </div>
           <AdSlot locale={locale} position="content" size="native" />
+        </section>
+
+        <section className="mt-14">
+          <div className="mb-6 flex items-end justify-between gap-4">
+            <h2 className="text-2xl font-bold text-[var(--text)]">{locale === "en" ? "Practical buying guides" : "实用选购指南"}</h2>
+            <p className="code-font hidden text-xs uppercase tracking-[0.16em] text-[var(--text-soft)] sm:block">research notes / comparisons / checklists</p>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {buyingGuides.map((guide) => (
+              <a key={guide.href} href={guide.href} className="rounded-md border border-[var(--border)] bg-white p-4 transition hover:border-[var(--brand)] hover:bg-[var(--brand-soft)]">
+                <h3 className="text-base font-semibold text-[var(--text)]">{guide.title}</h3>
+                <p className="mt-2 text-sm leading-6 text-[var(--text-muted)]">{guide.description}</p>
+              </a>
+            ))}
+          </div>
         </section>
 
         <section className="mt-14">
