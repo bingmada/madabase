@@ -1,4 +1,5 @@
 import type { Product, Roundup } from "./types";
+import { ebaySearchOffer } from "./ebay";
 
 const updatedAt = "July 5, 2026";
 
@@ -57,6 +58,11 @@ function catalogProduct(input: CatalogInput): Product {
         label: "Check price on Amazon",
         priceNote: "Check the live variation, seller, price, shipping, and availability on Amazon.",
       },
+      ...(input.slug === "loungefly-minnie-rock-the-dots-backpack"
+        ? [
+            ebaySearchOffer("Loungefly Minnie Rock the Dots Backpack", "style-loungefly-minnie-rock-the-dots-backpack", { condition: "new" }),
+          ]
+        : []),
     ],
   };
 }

@@ -1,4 +1,5 @@
 import type { Guide, Product, Roundup, SiteKey, Tool } from "./types";
+import { ebaySearchOffer } from "./ebay";
 import {
   adjacentExpansionGuides,
   adjacentExpansionProducts,
@@ -223,7 +224,10 @@ export const products: Product[] = [
         note: "Official placement, power, setup, and included-feature guidance.",
       },
     ],
-    offers: [{ merchant: "Amazon US", url: "https://amzn.to/43SYVR1", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." }],
+    offers: [
+      { merchant: "Amazon US", url: "https://amzn.to/43SYVR1", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." },
+      ebaySearchOffer("Furbo 360 Dog Camera", "pet-furbo-360-dog-camera"),
+    ],
   },
   {
     site: "pet",
@@ -778,7 +782,10 @@ export const products: Product[] = [
     specs: { "Light type": "Compact video light", "Use case": "Meetings", "Link status": "Amazon affiliate link added" },
     evidence: ["Confirm the current Logitech Litra Glow mount and power connection on Amazon", "Compare with desk lamps and larger key lights", "Check whether it fits your monitor or laptop placement"],
     alternatives: ["Choose BenQ ScreenBar Halo if desk illumination matters more than face lighting.", "Use a regular lamp if it can sit in front of you without glare."],
-    offers: [{ merchant: "Amazon US", url: "https://amzn.to/4eUoqaK", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." }],
+    offers: [
+      { merchant: "Amazon US", url: "https://amzn.to/4eUoqaK", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." },
+      ebaySearchOffer("Logitech Litra Glow", "homeoffice-logitech-litra-glow"),
+    ],
   },
   {
     site: "homeoffice",
@@ -803,7 +810,10 @@ export const products: Product[] = [
     specs: { "Light type": "Monitor light bar", "Use case": "Desk illumination", "Link status": "Amazon affiliate link added" },
     evidence: ["Confirm BenQ ScreenBar Halo compatibility with the monitor shape and bezel", "Check whether the included controller and backlight matter for your desk", "Compare with Logitech Litra Glow for camera-focused lighting"],
     alternatives: ["Choose Logitech Litra Glow if your main issue is how your face looks on calls.", "Choose a standard desk lamp if you need room lighting, not just desktop lighting."],
-    offers: [{ merchant: "Amazon US", url: "https://amzn.to/4gw54dg", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." }],
+    offers: [
+      { merchant: "Amazon US", url: "https://amzn.to/4gw54dg", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." },
+      ebaySearchOffer("BenQ ScreenBar Halo", "homeoffice-benq-screenbar-halo"),
+    ],
   },
   {
     site: "homeoffice",
@@ -828,7 +838,10 @@ export const products: Product[] = [
     specs: { "Device type": "USB-C docking station", "Use case": "Cable management", "Link status": "Amazon affiliate link added" },
     evidence: ["Confirm the current Anker 675 port layout against your laptop and monitor", "Verify charging wattage, display support, and cable placement before buying", "Use as an optional upgrade rather than a universal recommendation"],
     alternatives: ["Use a cheaper USB-C hub if you only connect one monitor and a keyboard.", "Skip a dock if your laptop rarely leaves the desk."],
-    offers: [{ merchant: "Amazon US", url: "https://amzn.to/4xZcT1J", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." }],
+    offers: [
+      { merchant: "Amazon US", url: "https://amzn.to/4xZcT1J", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." },
+      ebaySearchOffer("Anker 675 USB-C Docking Station", "homeoffice-anker-675-usb-c-docking-station"),
+    ],
   },
   {
     site: "baby",
@@ -861,7 +874,10 @@ export const products: Product[] = [
     specs: { "Product type": "Baby monitor", "Use case": "Local overnight monitoring", "Link status": "Amazon affiliate link added" },
     evidence: ["Confirm the DXR-8 PRO bundle contents, lens options, and parent-unit details on Amazon", "Compare local monitor versus Wi-Fi preference", "Check room layout, range needs, and overnight charging routine"],
     alternatives: ["Choose Nanit if app insights and wall-mounted tracking matter more.", "Choose a simpler audio monitor if video adds more anxiety than value."],
-    offers: [{ merchant: "Amazon US", url: "https://amzn.to/44mp7Ub", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." }],
+    offers: [
+      { merchant: "Amazon US", url: "https://amzn.to/44mp7Ub", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." },
+      ebaySearchOffer("Infant Optics DXR-8 PRO", "baby-infant-optics-dxr-8-pro", { condition: "new" }),
+    ],
   },
   {
     site: "baby",
@@ -911,7 +927,10 @@ export const products: Product[] = [
     specs: { "Product type": "Travel stroller", "Use case": "Errands and travel", "Link status": "Amazon affiliate link added" },
     evidence: ["Confirm the exact City Tour 2 version, color, and included accessories on Amazon", "Compare folded dimensions against trunk, hallway, and travel storage needs", "Check age, weight, recline, basket access, and car-seat adapter compatibility"],
     alternatives: ["Choose Summer 3Dlite if price and simplicity matter more.", "Choose a full-size stroller if rough sidewalks are daily reality."],
-    offers: [{ merchant: "Amazon US", url: "https://amzn.to/3SoHfKv", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." }],
+    offers: [
+      { merchant: "Amazon US", url: "https://amzn.to/3SoHfKv", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." },
+      ebaySearchOffer("Baby Jogger City Tour 2 Stroller", "baby-baby-jogger-city-tour-2-stroller", { condition: "new" }),
+    ],
   },
   {
     site: "baby",
@@ -936,7 +955,10 @@ export const products: Product[] = [
     specs: { "Product type": "Lightweight stroller", "Use case": "Budget travel", "Link status": "Amazon affiliate link added" },
     evidence: ["Check the current Summer 3Dlite model, color, and weight limit", "Compare folded size to car trunk or closet space", "Use as a value lightweight stroller rather than an all-terrain stroller"],
     alternatives: ["Choose Baby Jogger City Tour 2 for a more compact travel-first setup.", "Choose a full-size stroller if storage and suspension are priorities."],
-    offers: [{ merchant: "Amazon US", url: "https://amzn.to/4w6SNRm", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." }],
+    offers: [
+      { merchant: "Amazon US", url: "https://amzn.to/4w6SNRm", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." },
+      ebaySearchOffer("Summer 3Dlite Convenience Stroller", "baby-summer-3dlite-convenience-stroller", { condition: "new" }),
+    ],
   },
   {
     site: "baby",
@@ -1071,7 +1093,10 @@ export const products: Product[] = [
         note: "Official manuals and position-specific setup videos.",
       },
     ],
-    offers: [{ merchant: "Amazon US", url: "https://amzn.to/43PAsfm", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." }],
+    offers: [
+      { merchant: "Amazon US", url: "https://amzn.to/43PAsfm", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." },
+      ebaySearchOffer("Ergobaby Omni Breeze Baby Carrier", "baby-ergobaby-omni-breeze-carrier", { condition: "new" }),
+    ],
   },
   {
     site: "baby",
@@ -1096,7 +1121,10 @@ export const products: Product[] = [
     specs: { "Product type": "Sound machine", "Use case": "Sleep routine", "Link status": "Amazon affiliate link added" },
     evidence: ["Confirm which Hatch Rest generation and app features the Amazon listing includes", "Check room brightness, sound controls, and whether portability matters", "Use alongside safe sleep guidance rather than as a sleep guarantee"],
     alternatives: ["Choose a simple white-noise machine if app features are unnecessary.", "Use a separate dim night light if sound is not needed."],
-    offers: [{ merchant: "Amazon US", url: "https://amzn.to/4eW2tbl", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." }],
+    offers: [
+      { merchant: "Amazon US", url: "https://amzn.to/4eW2tbl", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." },
+      ebaySearchOffer("Hatch Rest Sound Machine", "baby-hatch-rest-sound-machine", { condition: "new" }),
+    ],
   },
 ];
 

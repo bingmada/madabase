@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { SiteConfig } from "@/lib/sites";
 import type { Guide, Product, Roundup } from "@/lib/types";
-import { AffiliateButton } from "./AffiliateButton";
+import { AffiliateButtonGroup } from "./AffiliateButton";
 
 export function StyleChrome({ site, children }: { site: SiteConfig; children: React.ReactNode }) {
   return (
@@ -87,7 +87,7 @@ function StyleProductCard({ site, product, position, tall = false }: { site: Sit
           <Link className="style-link" href={`/reviews/${product.slug}`}>
             Styling notes <ArrowRight size={14} />
           </Link>
-          {product.offers[0] ? <AffiliateButton site={site.key} product={product} offer={product.offers[0]} position={position} /> : null}
+          <AffiliateButtonGroup site={site.key} product={product} position={position} />
         </div>
       </div>
     </article>
@@ -285,7 +285,7 @@ export function StyleProductPage({
 }) {
   const name = product.amazonTitle ?? product.name;
   const image = product.amazonImage ?? product.image;
-  const offer = product.offers[0];
+  const hasOffer = product.offers.length > 0;
   const badge =
     {
       bags: "Character carry",
@@ -319,14 +319,14 @@ export function StyleProductPage({
               <p className="mt-2 font-serif text-2xl">{product.bestFor}</p>
             </div>
             <div className="mt-7 flex flex-wrap gap-3">
-              {offer ? <AffiliateButton site={site.key} product={product} offer={offer} position="style-product-hero" /> : null}
+              <AffiliateButtonGroup site={site.key} product={product} position="style-product-hero" />
               <Link className="style-cta-secondary" href={`/best/${roundupSlug}`}>
                 See similar energy
               </Link>
             </div>
             <p className="mt-4 text-xs leading-5 text-[#897b75]">
-              {offer
-                ? "Affiliate link. Check the selected variation, seller, materials, dimensions, and return terms on Amazon."
+              {hasOffer
+                ? "Affiliate links. Check the selected variation, seller, materials, dimensions, and return terms at the retailer."
                 : "The retailer link is still being verified. Product notes stay visible, but no unverified purchase link is shown."}
             </p>
           </div>

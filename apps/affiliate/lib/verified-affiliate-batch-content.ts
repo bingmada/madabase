@@ -1,4 +1,5 @@
 import type { Guide, Product, Roundup } from "./types";
+import { ebaySearchOffer } from "./ebay";
 
 const updatedAt = "July 2, 2026";
 
@@ -100,6 +101,7 @@ export const verifiedAffiliateBatchProducts: Product[] = [
         priceNote:
           "Confirm ASIN B0FJMFYPNH, pack quantity, color, seller, and included dedicated collar tag.",
       },
+      ebaySearchOffer("PETLIBRO One RFID Smart Feeder", "pet-petlibro-one-rfid-smart-feeder"),
     ],
   },
   {
@@ -199,6 +201,7 @@ export const verifiedAffiliateBatchProducts: Product[] = [
         priceNote:
           "Confirm ASIN B0B6JJKSNM, 48×24 size, wheels, finish, height range, capacity, seller, and warranty.",
       },
+      ebaySearchOffer("ErGear 48x24 Electric Standing Desk", "homeoffice-ergear-48x24-electric-standing-desk"),
     ],
   },
   {
@@ -501,6 +504,7 @@ export const verifiedAffiliateBatchProducts: Product[] = [
         priceNote:
           "Confirm ASIN B0FQC6VCDW, Matter or Wi-Fi technology, finish, seller, and included hardware.",
       },
+      ebaySearchOffer("ULTRALOQ Bolt SE Smart Lock", "smarthome-ultraloq-bolt-se-smart-lock"),
     ],
   },
 ];

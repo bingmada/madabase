@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { AffiliateButton } from "@/components/AffiliateButton";
+import { AffiliateButton, AffiliateButtonGroup } from "@/components/AffiliateButton";
 import { JsonLd } from "@/components/JsonLd";
 import { Disclosure } from "@/components/LayoutParts";
 import { StyleProductPage } from "@/components/StyleExperience";
@@ -89,7 +89,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
     .slice(0, 6);
 
   const context = siteContext(site.key);
-  const primaryOffer = product.offers[0];
+  const primaryOffers = product.offers.slice(0, 2);
   const hasSpecificSkipSection = product.editorialSections?.some((section) => section.heading.toLowerCase().includes("who should skip"));
   const purchaseChecks = beforeYouBuyChecks(site.key);
   if (site.key === "style") {
@@ -144,12 +144,18 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
             <div className="mt-6 flex flex-wrap items-center gap-3">
               <span className="rounded-md bg-[var(--brand-soft)] px-3 py-2 font-semibold text-[var(--brand-strong)]">{product.bestFor}</span>
             </div>
-            {primaryOffer ? (
+            {primaryOffers.length ? (
               <div className="mt-5 rounded-md border border-[var(--border)] bg-white p-4 lg:hidden">
                 <p className="text-xs font-bold uppercase text-[var(--muted)]">Check the exact configuration</p>
-                <p className="mt-2 text-sm leading-6 text-[var(--muted)]">{primaryOffer.priceNote}</p>
-                <div className="mt-3">
-                  <AffiliateButton site={site.key} product={product} offer={primaryOffer} position="review-mobile-intro" />
+                <div className="mt-2 space-y-2 text-sm leading-6 text-[var(--muted)]">
+                  {primaryOffers.map((offer) => (
+                    <p key={offer.merchant}>
+                      <span className="font-semibold text-[var(--text)]">{offer.merchant}:</span> {offer.priceNote}
+                    </p>
+                  ))}
+                </div>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  <AffiliateButtonGroup site={site.key} product={product} position="review-mobile-intro" />
                 </div>
               </div>
             ) : null}

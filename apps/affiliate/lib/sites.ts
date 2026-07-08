@@ -181,7 +181,8 @@ function getRequestDomain(headerList: Headers) {
   if (!host) return null;
 
   const forwardedProto = headerList.get("x-forwarded-proto")?.split(",")[0]?.trim();
-  const protocol = forwardedProto ?? (host.includes("localhost") || host.startsWith("127.") ? "http" : "https");
+  const isLocalHost = host.includes("localhost") || host.startsWith("127.") || host.startsWith("[::1]");
+  const protocol = isLocalHost ? (forwardedProto ?? "http") : "https";
 
   return `${protocol}://${host}`;
 }

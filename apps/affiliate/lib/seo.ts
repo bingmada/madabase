@@ -2,8 +2,27 @@ import type { Metadata } from "next";
 import type { SiteConfig } from "./sites";
 import type { Guide, Product, Roundup, Tool } from "./types";
 
+const contentDateFormatter = new Intl.DateTimeFormat("en-CA", {
+  timeZone: "UTC",
+  year: "numeric",
+  month: "2-digit",
+  day: "2-digit",
+});
+
 export function absoluteUrl(site: SiteConfig, path = "/") {
   return new URL(path, site.domain).toString();
+}
+
+export function contentDate(value: string | undefined) {
+  if (!value) return undefined;
+  const parsed = new Date(`${value} 00:00:00 UTC`);
+  if (Number.isNaN(parsed.getTime())) return undefined;
+
+  return {
+    date: parsed,
+    isoDate: contentDateFormatter.format(parsed),
+    isoDateTime: parsed.toISOString(),
+  };
 }
 
 export function pageMetadata(site: SiteConfig, path: string, title: string, description: string, image = site.heroImage): Metadata {
@@ -108,6 +127,7 @@ export function productNotesSchema(site: SiteConfig, product: Product) {
   const displayImage = product.amazonImage ?? product.image;
   const headline = product.seoTitle ?? `${displayName} Buying Notes`;
   const url = absoluteUrl(site, `/reviews/${product.slug}`);
+  const updated = contentDate(product.updatedAt);
 
   return {
     "@context": "https://schema.org",
@@ -122,7 +142,7 @@ export function productNotesSchema(site: SiteConfig, product: Product) {
     description: product.summary,
     image: absoluteUrl(site, displayImage),
     articleSection: product.category,
-    ...(product.updatedAt ? { dateModified: new Date(product.updatedAt).toISOString() } : {}),
+    ...(updated ? { dateModified: updated.isoDateTime } : {}),
     about: {
       "@type": "Thing",
       name: displayName,
@@ -144,6 +164,7 @@ export function productNotesSchema(site: SiteConfig, product: Product) {
 
 export function guideSchema(site: SiteConfig, guide: Guide) {
   const url = absoluteUrl(site, `/guides/${guide.slug}`);
+  const updated = contentDate(guide.updatedAt);
 
   return {
     "@context": "https://schema.org",
@@ -156,7 +177,7 @@ export function guideSchema(site: SiteConfig, guide: Guide) {
       "@id": url,
     },
     articleSection: guide.category,
-    ...(guide.updatedAt ? { dateModified: new Date(guide.updatedAt).toISOString() } : {}),
+    ...(updated ? { dateModified: updated.isoDateTime } : {}),
     author: {
       "@type": "Organization",
       name: `${site.name} editorial desk`,

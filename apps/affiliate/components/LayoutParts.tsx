@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { SiteConfig } from "@/lib/sites";
 import type { Product, Roundup } from "@/lib/types";
-import { AffiliateButton } from "./AffiliateButton";
+import { AffiliateButtonGroup } from "./AffiliateButton";
 
 export function SiteChrome({ site, children }: { site: SiteConfig; children: React.ReactNode }) {
   return (
@@ -151,7 +151,7 @@ export function ProductCard({ site, product, position }: { site: SiteConfig; pro
           <Link className="button-secondary" href={`/reviews/${product.slug}`}>
             Read notes
           </Link>
-          {product.offers[0] ? <AffiliateButton site={site.key} product={product} offer={product.offers[0]} position={position} /> : null}
+          <AffiliateButtonGroup site={site.key} product={product} position={position} />
         </div>
       </div>
     </article>

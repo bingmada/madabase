@@ -1,3 +1,4 @@
+import { ebaySearchOffer } from "./ebay";
 import type { Guide, Product, Roundup, Tool } from "./types";
 
 const links = {
@@ -23,21 +24,21 @@ export const networkProducts: Product[] = [
   {
     site: "network",
     slug: "tp-link-deco-be63-wifi-7-mesh",
-    seoTitle: "TP-Link Deco BE63 Buying Guide: Wi-Fi 7, 2.5G Ports & Backhaul",
-    updatedAt: "June 28, 2026",
+    seoTitle: "TP-Link Deco BE63 Review: Wi-Fi 7 Mesh, 2.5G Backhaul & BE67 Alternatives",
+    updatedAt: "July 8, 2026",
     name: "TP-Link Deco BE63 Wi-Fi 7 Mesh System",
     brand: "TP-Link",
     category: "wifi",
     image: "/images/affiliate/network-tp-link-deco-be63-wifi-7-mesh.webp",
-    summary: "A research-based buying guide to the tri-band Deco BE63, including its Wi-Fi 7 radios, four 2.5Gbps ports per unit, wired-backhaul options, and the homes where a simpler router may be enough.",
-    verdict: "The Deco BE63 is worth shortlisting when you need mesh coverage and can use its multi-gig ports or Ethernet backhaul. A small home with a modest internet plan may get the same practical result from a cheaper Wi-Fi 6 mesh kit or one well-placed router.",
+    summary: "A research-based TP-Link Deco BE63 review for Wi-Fi 7 mesh buyers comparing BE63 vs BE67, BE85, BE25, eero, and single-router alternatives by ports, backhaul, pack size, and real home layout.",
+    verdict: "The Deco BE63 is the disciplined Wi-Fi 7 mesh pick when you need coverage, Ethernet backhaul, and several 2.5Gbps ports without jumping to a BE67 or BE85 budget. It is less compelling for small apartments, mostly Wi-Fi 6 clients, or homes where one well-placed router would solve the problem.",
     whyItMatters: "Mesh speed claims only matter when coverage, node placement, and backhaul are realistic. Multi-gig ports are especially useful if your modem, office, or switch can use them.",
     bestFor: "Wi-Fi 7 mesh with 2.5G wired backhaul",
     priceBand: "$$$",
     rating: 4.6,
     scores: [{ label: "Coverage", value: 9 }, { label: "Wired backhaul", value: 9 }, { label: "Value discipline", value: 8 }],
     pros: ["Tri-band BE10000 Wi-Fi 7 platform", "Four auto-sensing 2.5Gbps WAN/LAN ports on each unit", "Supports Ethernet backhaul and router or access-point mode"],
-    cons: ["Overkill for small homes with modest internet plans", "Older client devices cannot use the newest Wi-Fi 7 features", "Real coverage and speed still depend on layout, interference, clients, and backhaul"],
+    cons: ["Overkill for small homes with modest internet plans", "BE67 and BE85 are worth comparing when 10GbE paths matter", "Real coverage and speed still depend on layout, interference, clients, and backhaul"],
     specs: {
       "Product type": "Tri-band Wi-Fi 7 mesh system",
       "Listed Wi-Fi class": "BE10000",
@@ -47,7 +48,7 @@ export const networkProducts: Product[] = [
       Modes: "Router and access point",
       Backhaul: "Wireless, Ethernet, or combined",
     },
-    evidence: ["Confirm whether the Amazon listing is a 1-, 2-, or 3-pack", "Check whether the modem, switches, cabling, and wired clients can use 2.5Gbps", "Plan node locations and any Ethernet path before relying on coverage claims", "Complete initial mesh setup before connecting Ethernet backhaul, following TP-Link's instructions"],
+    evidence: ["Confirm whether the Amazon listing is a 1-, 2-, or 3-pack", "Check whether the modem, switches, cabling, and wired clients can use 2.5Gbps", "Compare BE63, BE67, and BE85 only after drawing the actual wired path", "Complete initial mesh setup before connecting Ethernet backhaul, following TP-Link's instructions"],
     editorialSections: [
       {
         heading: "The hardware facts that matter",
@@ -66,12 +67,20 @@ export const networkProducts: Product[] = [
         body: "TP-Link says Deco units should first be set up wirelessly in the app and can then be connected by Ethernet. Mixed wired and wireless nodes are supported, while the allowed switch topology differs between router and access-point mode. The four 2.5Gbps ports per unit make the BE63 unusually flexible, but switches, cables, and the rest of the path must also support the speed you expect.",
       },
       {
+        heading: "BE63 vs BE67 vs BE85 in plain terms",
+        body: "Treat BE63 as the value-minded multi-gig mesh, BE67 as the step-up when 10GbE ports or higher aggregate capacity matter, and BE85 as the premium branch for homes that can actually use 10GbE/SFP+ planning. If the modem, switch, NAS, desktop, or backhaul path stops at 2.5Gbps, BE63 may be the more disciplined buy.",
+      },
+      {
+        heading: "Two-pack versus three-pack",
+        body: "A three-pack can help a long or multi-floor home, but extra nodes are not automatically better. Too many wireless nodes can create awkward handoffs and weak upstream links. Start by mapping the router location, the rooms that need reliable speed, and any Ethernet runs before choosing pack size.",
+      },
+      {
         heading: "Who should skip the Deco BE63",
         body: "Skip it when one good router already covers the home, the internet plan is comfortably below gigabit, most important devices are older Wi-Fi 5 or Wi-Fi 6 clients, or there is no real need for multi-gig wired ports. Paying for a newer wireless class does not repair poor placement or make older clients use Wi-Fi 7 features.",
       },
     ],
-    alternatives: ["Compare eero 6 when lower cost and a simple app-led setup matter more than Wi-Fi 7 or multi-gig ports.", "Compare TP-Link BE400 when one router can cover the home and mesh nodes would add unnecessary cost."],
-    compareSlugs: ["tp-link-deco-be25-wifi-7-mesh", "tp-link-deco-be67-wifi-7-mesh", "asus-zenwifi-bt6-wifi-7-mesh", "amazon-eero-6-mesh-wifi-system", "tp-link-be400-wifi-7-router"],
+    alternatives: ["Compare Deco BE67 if 10GbE ports, a higher Wi-Fi class, or a more premium mesh budget are realistic.", "Compare Deco BE85 if the home already has or plans a serious 10GbE/SFP+ wired backbone.", "Compare eero 6 when lower cost and a simple app-led setup matter more than Wi-Fi 7 or multi-gig ports.", "Compare TP-Link BE400 when one router can cover the home and mesh nodes would add unnecessary cost."],
+    compareSlugs: ["tp-link-deco-be25-wifi-7-mesh", "tp-link-deco-be67-wifi-7-mesh", "tp-link-deco-be85-wifi-7-mesh", "asus-zenwifi-bt6-wifi-7-mesh", "amazon-eero-6-mesh-wifi-system", "tp-link-be400-wifi-7-router"],
     sources: [
       {
         name: "TP-Link Deco BE63 product specifications",
@@ -84,7 +93,10 @@ export const networkProducts: Product[] = [
         note: "Official setup order, topology, mixed-backhaul, and switch guidance.",
       },
     ],
-    offers: offer(links.deco),
+    offers: [
+      ...offer(links.deco),
+      ebaySearchOffer("TP-Link Deco BE63", "network-tp-link-deco-be63-wifi-7-mesh"),
+    ],
   },
   {
     site: "network",
@@ -158,7 +170,10 @@ export const networkProducts: Product[] = [
     specs: { "Product type": "Wi-Fi 7 router", "Listed speed class": "BE6500", Ports: "Dual 2.5Gbps ports", "Listed coverage": "Up to 2,400 sq. ft." },
     evidence: ["Check router placement before choosing single-router coverage", "Confirm whether your internet plan or wired devices need 2.5Gbps", "Compare HomeShield and security features before relying on them"],
     alternatives: ["Choose Deco BE63 if you need mesh coverage.", "Choose ASUS RT-BE86U if gaming and a 10G port matter more."],
-    offers: offer(links.be400),
+    offers: [
+      ...offer(links.be400),
+      ebaySearchOffer("TP-Link Archer BE400 WiFi 7 router", "network-tp-link-be400-wifi-7-router"),
+    ],
   },
   {
     site: "network",
@@ -179,7 +194,10 @@ export const networkProducts: Product[] = [
     specs: { "Product type": "Wi-Fi 7 gaming router", "Listed speed": "Up to 6.8Gbps", Ports: "10G port listed", "Use case": "Gaming, VPN, advanced controls" },
     evidence: ["Check firmware features you actually need before paying for them", "Confirm whether a single router can cover the home", "Plan wired paths for gaming PCs or consoles where possible"],
     alternatives: ["Choose TP-Link BE400 for a simpler Wi-Fi 7 router.", "Choose Deco BE63 if coverage matters more than advanced controls."],
-    offers: offer(links.asus),
+    offers: [
+      ...offer(links.asus),
+      ebaySearchOffer("ASUS RT-BE86U WiFi 7 router", "network-asus-rt-be86u-wifi-7-gaming-router"),
+    ],
   },
   {
     site: "network",
@@ -200,7 +218,10 @@ export const networkProducts: Product[] = [
     specs: { "Product type": "Travel router", Wireless: "Wi-Fi 6", Ports: "2.5G router listed", "Use case": "Travel, VPN, public networks" },
     evidence: ["Check VPN protocol support against your provider", "Confirm power, port, and tethering needs for your travel kit", "Test captive portal behavior before relying on it for work trips"],
     alternatives: ["Choose a home router if the device will stay in one house.", "Use a USB-C Ethernet hub if the main need is one wired laptop."],
-    offers: offer(links.beryl),
+    offers: [
+      ...offer(links.beryl),
+      ebaySearchOffer("GL.iNet GL-MT3000 Beryl AX", "network-glinet-beryl-ax-travel-router"),
+    ],
   },
   {
     site: "network",
@@ -222,7 +243,10 @@ export const networkProducts: Product[] = [
     evidence: ["Count ports with two spares before buying", "Confirm whether gigabit is enough for NAS or multi-gig internet", "Use quality patch cables and avoid hiding the switch where heat builds up"],
     alternatives: ["Choose NETGEAR GS308E if you want easy smart management features.", "Choose a 2.5G switch if your wired devices exceed gigabit."],
     compareSlugs: ["netgear-gs308e-gigabit-switch"],
-    offers: offer(links.sg108),
+    offers: [
+      ...offer(links.sg108),
+      ebaySearchOffer("TP-Link TL-SG108", "network-tp-link-tl-sg108-gigabit-switch"),
+    ],
   },
   {
     site: "network",
@@ -255,7 +279,10 @@ export const networkProducts: Product[] = [
     evidence: ["Confirm GS308E rather than unmanaged GS308 if smart features matter", "Check port count against future wired devices", "Use only the management options you understand"],
     alternatives: ["Choose TP-Link TL-SG108 for simpler plug-and-play use.", "Choose a multi-gig switch for NAS or 2.5G office paths."],
     compareSlugs: ["tp-link-tl-sg108-gigabit-switch"],
-    offers: offer(links.gs308e),
+    offers: [
+      ...offer(links.gs308e),
+      ebaySearchOffer("NETGEAR GS308E", "network-netgear-gs308e-gigabit-switch"),
+    ],
   },
   {
     site: "network",
@@ -435,6 +462,43 @@ export const networkRoundups: Roundup[] = [
 ];
 
 export const networkGuides: Guide[] = [
+  {
+    site: "network",
+    slug: "deco-be63-vs-be67-vs-be85-buying-guide",
+    title: "Deco BE63 vs BE67 vs BE85 Buying Guide",
+    dek: "How to choose between TP-Link's Wi-Fi 7 Deco mesh systems by 2.5GbE, 10GbE, SFP+, pack size, wired backhaul, and the home network you actually have.",
+    category: "wifi",
+    updatedAt: "July 8, 2026",
+    relatedProducts: ["tp-link-deco-be63-wifi-7-mesh", "tp-link-deco-be67-wifi-7-mesh", "tp-link-deco-be85-wifi-7-mesh"],
+    relatedRoundups: ["best-mesh-wifi-for-apartments-and-homes", "tp-link-deco-be67-vs-be63", "deco-be85-vs-be67"],
+    sources: [
+      { name: "TP-Link Deco BE63", url: "https://www.tp-link.com/us/deco-mesh-wifi/product-family/deco-be63/", note: "Official BE63 radio, port, and backhaul specifications." },
+      { name: "TP-Link Deco BE67", url: "https://www.tp-link.com/us/deco-mesh-wifi/product-family/deco-be67/", note: "Official BE67 wireless and Ethernet specifications." },
+      { name: "TP-Link Deco BE85", url: "https://www.tp-link.com/us/deco-mesh-wifi/product-family/deco-be85/", note: "Official BE85 10GbE, SFP+, wireless, and backhaul specifications." },
+    ],
+    sections: [
+      {
+        heading: "Start with the wired path",
+        body: "BE63 is usually the disciplined choice when a 2.5Gbps modem, switch, office, or wired backhaul path is the real upgrade. BE67 and BE85 make more sense only when 10GbE hardware, a fast NAS, a multi-gig desktop, or a planned network shelf can use the extra ports.",
+      },
+      {
+        heading: "Do not buy aggregate speed without clients",
+        body: "The higher Wi-Fi class on a box is not a single-device speed promise. Phones, laptops, adapters, distance, channel conditions, and backhaul decide what a client can actually use. A BE63 placed well can beat a more expensive kit placed poorly.",
+      },
+      {
+        heading: "Two-pack versus three-pack is a layout question",
+        body: "Use a two-pack when the router and one satellite can cover the important rooms with a strong upstream link. Use a three-pack when floors, long hallways, or masonry create separate zones. Avoid placing a wireless node inside the dead zone just because the pack includes one.",
+      },
+      {
+        heading: "When BE67 is the better step-up",
+        body: "Choose BE67 over BE63 when 10GbE ports are part of the plan, you are comparing equal pack sizes, and the home has enough Wi-Fi 7 or wired demand to justify the price difference. If everything downstream is still 1GbE or 2.5GbE, the upgrade may be hard to feel.",
+      },
+      {
+        heading: "When BE85 is not overkill",
+        body: "BE85 belongs in a premium network plan: 10GbE or SFP+ infrastructure, heavy local transfers, a large home, and users willing to tune placement and cabling. For ordinary web, streaming, calls, and gaming, the money is often better spent on Ethernet runs, a switch, or better node placement.",
+      },
+    ],
+  },
   {
     site: "network",
     slug: "wifi-7-vs-wifi-6-guide",

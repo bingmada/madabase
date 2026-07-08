@@ -48,3 +48,26 @@ export function AffiliateButton({
     </a>
   );
 }
+
+export function AffiliateButtonGroup({
+  site,
+  product,
+  position,
+  limit = 2,
+}: {
+  site: SiteKey;
+  product: Product;
+  position: string;
+  limit?: number;
+}) {
+  const offers = product.offers.slice(0, limit);
+  if (offers.length === 0) return null;
+
+  return (
+    <>
+      {offers.map((offer) => (
+        <AffiliateButton key={offer.merchant} site={site} product={product} offer={offer} position={position} />
+      ))}
+    </>
+  );
+}

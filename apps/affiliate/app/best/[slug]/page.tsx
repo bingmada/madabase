@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { AffiliateButton } from "@/components/AffiliateButton";
+import { AffiliateButtonGroup } from "@/components/AffiliateButton";
 import { JsonLd } from "@/components/JsonLd";
 import { Disclosure, MethodologyList, ProductCard } from "@/components/LayoutParts";
 import { StyleCollectionPage } from "@/components/StyleExperience";
@@ -252,7 +252,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
                           <Link className="button-secondary" href={`/reviews/${product.slug}`}>
                             Notes
                           </Link>
-                          {product.offers[0] ? <AffiliateButton site={site.key} product={product} offer={product.offers[0]} position={`roundup-table-${index + 1}`} /> : null}
+                          <AffiliateButtonGroup site={site.key} product={product} position={`roundup-table-${index + 1}`} />
                         </div>
                       </div>
                     ) : null,

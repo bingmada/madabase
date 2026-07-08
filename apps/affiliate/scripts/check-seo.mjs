@@ -10,7 +10,7 @@ const errors = [];
 const warnings = [];
 const entries = [];
 const productFactoryNames = new Set(["catalogProduct", "expandedProduct"]);
-const allowedOfferHosts = new Set(["amzn.to", "www.amazon.com", "amazon.com", "www.upliftdesk.com", "upliftdesk.com"]);
+const allowedOfferHosts = new Set(["amzn.to", "www.amazon.com", "amazon.com", "www.ebay.com", "ebay.com", "www.upliftdesk.com", "upliftdesk.com"]);
 
 function propertyName(node) {
   if (ts.isIdentifier(node) || ts.isStringLiteral(node)) return node.text;

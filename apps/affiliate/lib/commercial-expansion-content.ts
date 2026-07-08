@@ -1,4 +1,5 @@
 import type { Guide, Product, Roundup } from "./types";
+import { ebaySearchOffer } from "./ebay";
 
 const updatedAt = "July 1, 2026";
 
@@ -31,7 +32,10 @@ export const commercialExpansionProducts: Product[] = [
     ],
     sources: [{ name: "TP-Link Deco BE25", url: "https://www.tp-link.com/us/deco-mesh-wifi/product-family/deco-be25/", note: "Official wireless, port, pack, and backhaul specifications." }],
     compareSlugs: ["tp-link-deco-be63-wifi-7-mesh", "tp-link-deco-be67-wifi-7-mesh"],
-    offers: [{ merchant: "Amazon US", url: "https://amzn.to/4awL2M6", label: "Check Deco BE25 2-pack price on Amazon", priceNote: "Confirm ASIN B0DKVDMPT9 and two-pack quantity." }],
+    offers: [
+      { merchant: "Amazon US", url: "https://amzn.to/4awL2M6", label: "Check Deco BE25 2-pack price on Amazon", priceNote: "Confirm ASIN B0DKVDMPT9 and two-pack quantity." },
+      ebaySearchOffer("TP-Link Deco BE25", "network-tp-link-deco-be25-wifi-7-mesh"),
+    ],
   },
   {
     site: "network",
@@ -61,7 +65,10 @@ export const commercialExpansionProducts: Product[] = [
     ],
     sources: [{ name: "TP-Link Deco BE85", url: "https://www.tp-link.com/us/deco-mesh-wifi/product-family/deco-be85/", note: "Official radios, ports, modes, and backhaul specifications." }],
     compareSlugs: ["tp-link-deco-be67-wifi-7-mesh", "tp-link-deco-be63-wifi-7-mesh"],
-    offers: [{ merchant: "Amazon US", url: "https://amzn.to/44JlsQs", label: "Check Deco BE85 2-pack price on Amazon", priceNote: "Confirm ASIN B0C4W1L4B3, two-pack quantity, and hardware version." }],
+    offers: [
+      { merchant: "Amazon US", url: "https://amzn.to/44JlsQs", label: "Check Deco BE85 2-pack price on Amazon", priceNote: "Confirm ASIN B0C4W1L4B3, two-pack quantity, and hardware version." },
+      ebaySearchOffer("TP-Link Deco BE85", "network-tp-link-deco-be85-wifi-7-mesh"),
+    ],
   },
   {
     site: "network",
@@ -91,7 +98,10 @@ export const commercialExpansionProducts: Product[] = [
     ],
     sources: [{ name: "ASUS ZenWiFi BT6", url: "https://www.asus.com/networking-iot-servers/whole-home-mesh-wifi-system/zenwifi-wifi-systems/asus-zenwifi-bt6/", note: "Official wireless, port, security, and mesh information." }],
     compareSlugs: ["tp-link-deco-be63-wifi-7-mesh", "tp-link-deco-be25-wifi-7-mesh"],
-    offers: [{ merchant: "Amazon US", url: "https://amzn.to/4v5cdow", label: "Check ASUS ZenWiFi BT6 price on Amazon", priceNote: "Confirm ASIN B0DHWBW4MZ and two-pack quantity." }],
+    offers: [
+      { merchant: "Amazon US", url: "https://amzn.to/4v5cdow", label: "Check ASUS ZenWiFi BT6 price on Amazon", priceNote: "Confirm ASIN B0DHWBW4MZ and two-pack quantity." },
+      ebaySearchOffer("ASUS ZenWiFi BT6", "network-asus-zenwifi-bt6-wifi-7-mesh"),
+    ],
   },
   {
     site: "baby",

@@ -34,8 +34,33 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/reviews/ergotron-hx",
+        destination: "/reviews/ergotron-hx-monitor-arm",
+        permanent: true,
+      },
+      {
         source: "/reviews/philips-avent-bottle-sterilizer",
         destination: "/best/best-bottle-sterilizers-and-dryers",
+        permanent: true,
+      },
+      {
+        source: "/reviews/philips-avent-sterilizer",
+        destination: "/best/best-bottle-sterilizers-and-dryers",
+        permanent: true,
+      },
+      {
+        source: "/reviews/tp-link-deco-be63",
+        destination: "/reviews/tp-link-deco-be63-wifi-7-mesh",
+        permanent: true,
+      },
+      {
+        source: "/best/deco-be63-vs-be67",
+        destination: "/best/tp-link-deco-be67-vs-be63",
+        permanent: true,
+      },
+      {
+        source: "/best/best-wifi-7-mesh",
+        destination: "/best/best-mesh-wifi-for-apartments-and-homes",
         permanent: true,
       },
     ];
