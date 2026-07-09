@@ -1,5 +1,34 @@
 import type { NextConfig } from "next";
 
+const pageCacheHeaders = [
+  {
+    key: "Cache-Control",
+    value: "public, max-age=0, s-maxage=3600, stale-while-revalidate=86400",
+  },
+  {
+    key: "CDN-Cache-Control",
+    value: "public, max-age=3600, stale-while-revalidate=86400",
+  },
+];
+
+const cacheablePageSources = [
+  "/",
+  "/about",
+  "/methodology",
+  "/editorial-policy",
+  "/affiliate-disclosure",
+  "/contact",
+  "/categories/:path*",
+  "/best/:path*",
+  "/reviews/:path*",
+  "/guides/:path*",
+  "/tools/:path*",
+  "/sitemap.xml",
+  "/sitemap-index.xml",
+  "/robots.txt",
+  "/llms.txt",
+];
+
 const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
@@ -15,6 +44,10 @@ const nextConfig: NextConfig = {
   },
   async headers() {
     return [
+      ...cacheablePageSources.map((source) => ({
+        source,
+        headers: pageCacheHeaders,
+      })),
       {
         source: "/images/affiliate/:path*",
         headers: [

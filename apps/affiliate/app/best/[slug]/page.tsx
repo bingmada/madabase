@@ -5,9 +5,9 @@ import { JsonLd } from "@/components/JsonLd";
 import { Disclosure, MethodologyList, ProductCard } from "@/components/LayoutParts";
 import { StyleCollectionPage } from "@/components/StyleExperience";
 import { findProduct, findRoundup, siteGuides } from "@/lib/content";
-import { breadcrumbSchema, faqPageSchema, itemListSchema, pageMetadata } from "@/lib/seo";
+import { breadcrumbSchema, faqPageSchema, pageMetadata, roundupProductListSchema } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
-import type { SiteKey } from "@/lib/types";
+import type { Product, SiteKey } from "@/lib/types";
 
 function quickAnswer(roundupTitle: string, intent: string, picks: Array<ReturnType<typeof findProduct>>) {
   const firstPick = picks.find(Boolean);
@@ -149,6 +149,16 @@ function getRoundupAdvice(siteKey: SiteKey, category: string) {
   };
 }
 
+function officialSourceLinks(products: Product[]) {
+  return Array.from(
+    new Map(
+      products
+        .flatMap((product) => product.sources ?? [])
+        .map((source) => [source.url, source]),
+    ).values(),
+  ).slice(0, 8);
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const site = await getCurrentSite();
   const { slug } = await params;
@@ -162,13 +172,18 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
   const { slug } = await params;
   const roundup = findRoundup(site.key, slug);
   if (!roundup) notFound();
-  const picks = roundup.productSlugs.map((productSlug) => findProduct(site.key, productSlug)).filter(Boolean);
+  const picks = roundup.productSlugs
+    .map((productSlug) => findProduct(site.key, productSlug))
+    .filter((product): product is NonNullable<ReturnType<typeof findProduct>> => Boolean(product));
+  const topPick = picks[0];
+  const topPickTradeOff = topPick?.cons[0] ?? "Confirm exact model, seller, and current configuration before checkout.";
   const category = site.categories.find((item) => item.slug === roundup.category);
   const relatedGuides = siteGuides(site.key)
     .filter((guide) => guide.relatedRoundups.includes(roundup.slug))
     .slice(0, 6);
   const answer = quickAnswer(roundup.title, roundup.intent, picks);
   const advice = getRoundupAdvice(site.key, roundup.category);
+  const sources = officialSourceLinks(picks);
   if (site.key === "style") {
     return (
       <>
@@ -179,9 +194,9 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
             { name: roundup.title, path: `/best/${slug}` },
           ])}
         />
-        <JsonLd data={itemListSchema(site, roundup.title, picks.map((product) => ({ name: product!.name, path: `/reviews/${product!.slug}` })))} />
+        <JsonLd data={roundupProductListSchema(site, roundup.title, picks)} />
         <JsonLd data={faqPageSchema(roundup.faqs)} />
-        <StyleCollectionPage site={site} roundup={roundup} products={picks.filter((product): product is NonNullable<typeof product> => Boolean(product))} />
+        <StyleCollectionPage site={site} roundup={roundup} products={picks} />
       </>
     );
   }
@@ -195,7 +210,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
           { name: roundup.title, path: `/best/${slug}` },
         ])}
       />
-      <JsonLd data={itemListSchema(site, roundup.title, picks.map((product) => ({ name: product!.name, path: `/reviews/${product!.slug}` })))} />
+      <JsonLd data={roundupProductListSchema(site, roundup.title, picks)} />
       <JsonLd data={faqPageSchema(roundup.faqs)} />
       <div className="shell">
         <div className="max-w-3xl">
@@ -213,6 +228,22 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
             <p className="text-xs font-bold uppercase text-[var(--muted)]">Quick answer</p>
             <p className="mt-2 text-lg font-bold leading-8 text-[var(--text)]">{answer}</p>
           </div>
+          {topPick ? (
+            <div className="mt-4 grid gap-4 rounded-md border border-[var(--border)] bg-white p-5 sm:grid-cols-[1fr_auto]">
+              <div>
+                <p className="text-xs font-bold uppercase text-[var(--muted)]">Best starting pick</p>
+                <h2 className="mt-2 text-xl font-bold">{topPick.amazonTitle ?? topPick.name}</h2>
+                <p className="mt-2 text-sm leading-6 text-[var(--muted)]">Best for: {topPick.bestFor}</p>
+                <p className="mt-1 text-sm leading-6 text-[var(--muted)]">Skip if: {topPickTradeOff}</p>
+              </div>
+              <div className="flex flex-wrap items-start gap-2 sm:justify-end">
+                <Link className="button-secondary" href={`/reviews/${topPick.slug}`}>
+                  Evidence notes
+                </Link>
+                <AffiliateButtonGroup site={site.key} product={topPick} position="roundup-hero-primary" limit={1} />
+              </div>
+            </div>
+          ) : null}
         </div>
         <div className="mt-8 grid gap-5 lg:grid-cols-[1fr_320px]">
           <div className="space-y-5">
@@ -252,12 +283,59 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
                           <Link className="button-secondary" href={`/reviews/${product.slug}`}>
                             Notes
                           </Link>
-                          <AffiliateButtonGroup site={site.key} product={product} position={`roundup-table-${index + 1}`} />
+                          <AffiliateButtonGroup site={site.key} product={product} position={`roundup-table-${index + 1}`} limit={1} />
                         </div>
                       </div>
                     ) : null,
                   )}
                 </div>
+              </section>
+            ) : null}
+            {picks.length ? (
+              <section className="panel p-5">
+                <h2 className="text-xl font-bold">Evidence basis and listing risk</h2>
+                <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
+                  We use manufacturer specs where available, then treat Amazon as a listing-verification step for ASIN, bundle, seller, coupon, and return-window risk.
+                </p>
+                <div className="mt-4 overflow-x-auto rounded-md border border-[var(--border)]">
+                  <table className="w-full min-w-[820px] text-left text-sm">
+                    <thead className="bg-[var(--surface-muted)] text-xs uppercase text-[var(--muted)]">
+                      <tr>
+                        <th className="px-4 py-3">Pick</th>
+                        <th className="px-4 py-3">Official specs</th>
+                        <th className="px-4 py-3">Amazon/listing anchor</th>
+                        <th className="px-4 py-3">Version or price risk</th>
+                        <th className="px-4 py-3">Updated</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-[var(--border)] bg-white">
+                      {picks.map((product) => (
+                        <tr key={product.slug}>
+                          <th className="px-4 py-4 font-bold">
+                            <Link className="hover:text-[var(--brand-strong)] hover:underline" href={`/reviews/${product.slug}`}>
+                              {product.amazonTitle ?? product.name}
+                            </Link>
+                          </th>
+                          <td className="px-4 py-4 text-[var(--muted)]">
+                            {product.sources?.length ? `${product.sources.length} source${product.sources.length === 1 ? "" : "s"}` : "Source link pending"}
+                          </td>
+                          <td className="px-4 py-4 text-[var(--muted)]">{product.asin ? `ASIN ${product.asin}` : product.specs.ASIN ?? "Confirm live listing"}</td>
+                          <td className="px-4 py-4 text-[var(--muted)]">{product.offers[0]?.priceNote ?? product.evidence[0] ?? "Confirm seller, bundle, and return path"}</td>
+                          <td className="px-4 py-4 text-[var(--muted)]">{product.updatedAt ?? "Pending"}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+                {sources.length ? (
+                  <div className="mt-4 grid gap-3 sm:grid-cols-2">
+                    {sources.map((source) => (
+                      <a className="rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-4 text-sm font-semibold text-[var(--brand-strong)] hover:underline" href={source.url} key={source.url} rel="noopener noreferrer" target="_blank">
+                        {source.name}
+                      </a>
+                    ))}
+                  </div>
+                ) : null}
               </section>
             ) : null}
             {roundup.decisionGuide?.length ? (
@@ -316,7 +394,9 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
                 </div>
               </section>
             ) : null}
-            {picks.map((product, index) => product && <ProductCard key={product.slug} site={site} product={product} position={`roundup-${index + 1}`} />)}
+            {picks.map((product, index) => (
+              <ProductCard key={product.slug} site={site} product={product} position={`roundup-${index + 1}`} offerLimit={1} />
+            ))}
             <section className="panel p-5">
               <h2 className="text-xl font-bold">FAQ</h2>
               <div className="mt-4 divide-y divide-[var(--border)]">
@@ -329,7 +409,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
               </div>
             </section>
           </div>
-          <aside className="space-y-5">
+          <aside className="space-y-5 lg:sticky lg:top-24 lg:self-start">
             <MethodologyList items={roundup.methodology} />
             <div className="panel p-5">
               <h2 className="text-xl font-bold">Who this helps</h2>

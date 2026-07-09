@@ -377,7 +377,7 @@ export const commercialExpansionProducts: Product[] = [
 
 export const commercialExpansionRoundups: Roundup[] = [
   {
-    site: "network", slug: "deco-be25-vs-be63", title: "TP-Link Deco BE25 vs. BE63", dek: "Compare dual-band and tri-band Wi-Fi 7, 6GHz, port count, wireless backhaul, pack pricing, and the value of Ethernet.", category: "wifi",
+    site: "network", slug: "deco-be25-vs-be63", title: "Deco BE25 vs BE63: Which TP-Link Wi-Fi 7 Mesh Should You Buy?", dek: "Compare dual-band and tri-band Wi-Fi 7, 6GHz, port count, wireless backhaul, pack pricing, and whether Ethernet makes BE25 the better value.", category: "wifi",
     intent: "Choose the least expensive Deco that still fits the home's backhaul and wired-device plan.",
     intro: "BE25 wins on price; BE63 adds 6GHz and four 2.5GbE ports. Ethernet availability is often the deciding factor.",
     decisionGuide: [{ label: "Best value", detail: "Choose BE25 when dual-band mesh and two ports are enough." }, { label: "Wireless backhaul", detail: "Choose BE63 for a separate 6GHz path and higher capacity." }, { label: "More wired devices", detail: "BE63 provides four 2.5GbE ports per node." }, { label: "Gigabit home", detail: "BE25 often leaves budget for wiring." }],
@@ -385,7 +385,7 @@ export const commercialExpansionRoundups: Roundup[] = [
     faqs: [{ question: "Does BE25 have 6GHz?", answer: "No. It is a dual-band Wi-Fi 7 system." }, { question: "Can BE25 use Ethernet backhaul?", answer: "Yes, with the rest of the wired path setting the speed." }, { question: "Is BE63 always faster?", answer: "No. Placement, clients, WAN speed, and backhaul still control results." }],
   },
   {
-    site: "network", slug: "deco-be85-vs-be67", title: "TP-Link Deco BE85 vs. BE67", dek: "Compare flagship BE22000 capacity, 10GbE and SFP+ ports, BE14000 value, backhaul, and the clients needed to notice the difference.", category: "wifi",
+    site: "network", slug: "deco-be85-vs-be67", title: "Deco BE85 vs BE67: Is the Flagship Wi-Fi 7 Mesh Worth It?", dek: "Compare BE85 flagship capacity, 10GbE and SFP+ ports, BE67 value, backhaul, and the clients needed to notice the difference.", category: "wifi",
     intent: "Decide whether BE85's flagship radio and port layout solve a real 10GbE or wireless-capacity requirement.",
     intro: "BE85 is the technical ceiling; BE67 is the more disciplined premium purchase. The existing network should decide.",
     decisionGuide: [{ label: "10GbE and SFP+", detail: "BE85 has the richer wired layout." }, { label: "Premium without excess", detail: "BE67 retains a 10GbE path at lower cost." }, { label: "Fast NAS", detail: "Map the switch and storage path before choosing." }, { label: "Ordinary clients", detail: "Neither flagship number becomes one-device throughput." }],
@@ -393,7 +393,7 @@ export const commercialExpansionRoundups: Roundup[] = [
     faqs: [{ question: "Who needs BE85?", answer: "Homes with a defined premium backhaul, high-end client, fast NAS, or 10GbE requirement." }, { question: "Does BE67 support 10GbE?", answer: "Yes, but with a less expansive port layout than BE85." }, { question: "Will BE85 improve gigabit internet?", answer: "Not automatically; placement and coverage may matter more." }],
   },
   {
-    site: "network", slug: "asus-zenwifi-bt6-vs-deco-be63", title: "ASUS ZenWiFi BT6 vs. TP-Link Deco BE63", dek: "Compare software control, 6GHz mesh, multi-gig ports, security features, app simplicity, and wired backhaul.", category: "wifi",
+    site: "network", slug: "asus-zenwifi-bt6-vs-deco-be63", title: "ASUS ZenWiFi BT6 vs Deco BE63: Control or Simpler Multi-Gig Mesh?", dek: "Compare ASUS software control with Deco simplicity, including 6GHz mesh, multi-gig ports, security features, app flow, and wired backhaul.", category: "wifi",
     intent: "Choose between ASUS control depth and Deco's simpler multi-port mesh design.",
     intro: "BT6 and BE63 target similar tri-band Wi-Fi 7 homes but differ sharply in software and port layout.",
     decisionGuide: [{ label: "More controls", detail: "ASUS BT6 is the enthusiast-friendly choice." }, { label: "Four 2.5GbE ports", detail: "Deco BE63 is easier for wired rooms." }, { label: "Simpler app", detail: "Deco keeps setup more guided." }, { label: "Security features", detail: "Compare current firmware and subscription boundaries." }],
@@ -489,7 +489,7 @@ export const commercialExpansionRoundups: Roundup[] = [
     faqs: [{ question: "Will either remove all pet odor?", answer: "No. Litter, bedding, fabrics, and cleaning remain the primary source-control steps." }, { question: "Does NeverChange mean no maintenance?", answer: "No. Screens, sensors, placement, and eventual filter replacement still require attention." }, { question: "Which is better for a bedroom?", answer: "Compare room size, tolerated noise, light controls, and placement clearance rather than brand alone." }],
   },
   {
-    site: "network", slug: "netgear-gs308e-vs-tp-link-tl-sg108", title: "NETGEAR GS308E vs. TP-Link TL-SG108", dek: "Compare easy-smart management with plug-and-play simplicity, including VLANs, QoS, port monitoring, fanless operation, gigabit limits, and model-number traps.", category: "wired",
+    site: "network", slug: "netgear-gs308e-vs-tp-link-tl-sg108", title: "NETGEAR GS308E vs TP-Link TL-SG108: Managed or Unmanaged 8-Port Switch?", dek: "Compare easy-smart management with plug-and-play simplicity, including VLANs, QoS, port monitoring, fanless operation, gigabit limits, and model-number traps.", category: "wired",
     intent: "Choose an 8-port gigabit switch by deciding whether basic management features solve a real network need.",
     intro: "GS308E adds a small management layer; TL-SG108 keeps the network simpler. Both remain fanless eight-port gigabit switches.",
     decisionGuide: [{ label: "Plug and play", detail: "Choose TL-SG108 when the job is simply adding ports." }, { label: "VLAN or port monitoring", detail: "Choose GS308E after confirming the exact hardware version and supported features." }, { label: "NAS above gigabit", detail: "Skip both and compare 2.5GbE or faster switches." }, { label: "Desk or TV stand", detail: "Both use quiet fanless designs suited to shared rooms." }],
@@ -500,7 +500,7 @@ export const commercialExpansionRoundups: Roundup[] = [
 
 export const commercialExpansionGuides: Guide[] = [
   {
-    site: "network", slug: "wifi-7-mesh-budget-midrange-premium-guide", title: "Wi-Fi 7 Mesh: Budget vs. Midrange vs. Premium", dek: "Compare BE25, BE63, BE67, BE85, and ASUS BT6 by bands, backhaul, ports, client support, and actual network bottlenecks.", category: "wifi", updatedAt,
+    site: "network", slug: "wifi-7-mesh-budget-midrange-premium-guide", title: "Wi-Fi 7 Mesh Buying Guide: Budget BE25 vs Midrange BE63 vs Premium BE85", dek: "Compare BE25, BE63, BE67, BE85, and ASUS BT6 by bands, backhaul, ports, client support, and actual network bottlenecks.", category: "wifi", updatedAt,
     relatedProducts: ["tp-link-deco-be25-wifi-7-mesh", "tp-link-deco-be63-wifi-7-mesh", "tp-link-deco-be67-wifi-7-mesh", "tp-link-deco-be85-wifi-7-mesh", "asus-zenwifi-bt6-wifi-7-mesh"],
     relatedRoundups: ["best-mesh-wifi-for-apartments-and-homes", "deco-be25-vs-be63", "deco-be85-vs-be67"],
     sources: [{ name: "Wi-Fi Alliance Wi-Fi 7", url: "https://www.wi-fi.org/discover-wi-fi/wi-fi-certified-7", note: "Primary overview of Wi-Fi 7 capabilities." }],

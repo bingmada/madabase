@@ -66,8 +66,8 @@ export const topicClusterGuides: Guide[] = [
   {
     site: "network",
     slug: "deco-be63-be67-two-pack-vs-three-pack",
-    title: "Deco BE63 and BE67: 2-Pack vs. 3-Pack",
-    dek: "Choose node count from floors, wall density, Ethernet paths, and measured weak areas instead of maximum square-foot figures.",
+    title: "Deco BE63 3-Pack vs. 2-Pack: When the 3-Piece Mesh Kit Makes Sense",
+    dek: "Choose a Deco BE63 or BE67 2-pack versus 3-piece whole-home mesh kit from floors, wall density, Ethernet paths, and measured weak areas instead of maximum square-foot figures.",
     category: "wifi",
     updatedAt,
     relatedProducts: ["tp-link-deco-be63-wifi-7-mesh", "tp-link-deco-be67-wifi-7-mesh"],
@@ -80,7 +80,7 @@ export const topicClusterGuides: Guide[] = [
       { heading: "Start with the rooms that actually fail", body: "Map the modem, work areas, TVs, bedrooms, outdoor edges, and floors. A third node is useful only when it creates a strong intermediate path or serves a distinct floor or wing." },
       { heading: "Too many wireless nodes can compete", body: "Nodes placed too close together can add airtime and roaming complexity without fixing coverage. Begin with two well-positioned units when the layout allows and add only after measurement." },
       { heading: "Wired backhaul changes node placement", body: "Ethernet lets a satellite sit where client coverage is needed instead of where a strong wireless relay remains available. Check switch speeds and wall-jack paths before selecting the pack." },
-      { heading: "Match pack size when comparing price", body: "Retail listings can mix one-, two-, and three-packs under similar names. Compare the same model, hardware version, and node count before treating one offer as cheaper." },
+      { heading: "Match pack size when comparing price", body: "Retail listings can describe the Deco BE63 as a 3-pack, 3-piece, or whole-home mesh system. Compare the same model, hardware version, region, and node count before treating one offer as cheaper." },
     ],
   },
   {
@@ -225,8 +225,8 @@ export const topicClusterGuides: Guide[] = [
   {
     site: "smarthome",
     slug: "matter-controller-vs-thread-border-router",
-    title: "Matter Controller vs. Thread Border Router",
-    dek: "Understand the two roles, when one device provides both, and why a Matter-over-Thread accessory may still fail to commission.",
+    title: "Thread Border Router vs. Matter Controller",
+    dek: "Understand what a Thread border router does, how it differs from a Matter controller, when one device provides both, and why a Matter-over-Thread accessory may still fail to commission.",
     category: "automation",
     updatedAt,
     relatedProducts: ["aqara-hub-m3", "aqara-door-and-window-sensor-p2", "tapo-p125m-matter-smart-plug"],
@@ -236,8 +236,8 @@ export const topicClusterGuides: Guide[] = [
       { name: "Thread overview", url: "https://www.threadgroup.org/What-is-Thread", note: "Primary Thread networking overview." },
     ],
     sections: [
+      { heading: "The Thread border router carries network traffic", body: "It connects the low-power Thread mesh to the wider IP network. If a device says Matter over Thread, the home needs a compatible Thread border router somewhere in the ecosystem path. Wi-Fi Matter devices such as a compatible smart plug do not need Thread for their radio path." },
       { heading: "The Matter controller manages the accessory", body: "It commissions devices, applies the ecosystem's permissions, and exposes controls and automations. Phones can assist setup without always serving as the always-home controller." },
-      { heading: "The Thread border router carries network traffic", body: "It connects the low-power Thread mesh to the wider IP network. Wi-Fi Matter devices such as a compatible smart plug do not need Thread for their radio path." },
       { heading: "One hub can provide both roles", body: "Some Apple, Google, Amazon, SmartThings, Aqara, and Home Assistant hardware combines the jobs. Check the exact generation and current software rather than the brand alone." },
       { heading: "Write both requirements before purchase", body: "For a Matter-over-Thread device, name the primary Matter controller and at least one compatible Thread border router. This prevents the common assumption that either role automatically includes the other." },
     ],
@@ -326,8 +326,8 @@ export const topicClusterTools: Tool[] = [
   {
     site: "smarthome",
     slug: "matter-thread-compatibility-checker",
-    title: "Matter and Thread Compatibility Checker",
-    dek: "Translate planned Thread and Wi-Fi Matter devices into controller, border-router, and network requirements.",
+    title: "Matter and Thread Border Router Compatibility Checker",
+    dek: "Translate planned Thread and Wi-Fi Matter devices into Matter controller, Thread border-router, and network requirements.",
     category: "automation",
     kind: "matter",
     relatedRoundups: ["matter-starter-kit-hub-sensor-smart-plug"],

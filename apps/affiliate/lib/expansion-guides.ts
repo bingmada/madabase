@@ -4,8 +4,8 @@ export const expansionGuides: Guide[] = [
   {
     site: "network",
     slug: "mesh-wifi-vs-single-router-guide",
-    title: "Mesh Wi-Fi vs. a Single Router: Which Setup Fits Your Home?",
-    dek: "A room-by-room decision guide for choosing between one well-placed router and a multi-node mesh system.",
+    title: "Mesh Wi-Fi vs Single Router: Which Should You Buy for Your Home?",
+    dek: "Choose between one well-placed router and multi-node mesh by checking layout, dead zones, wired ports, and backhaul first.",
     category: "wifi",
     updatedAt: "June 28, 2026",
     relatedProducts: ["tp-link-deco-be63-wifi-7-mesh"],
@@ -28,8 +28,8 @@ export const expansionGuides: Guide[] = [
   {
     site: "network",
     slug: "ethernet-stuck-at-100-mbps-guide",
-    title: "Why Is Ethernet Stuck at 100 Mbps? A Home Troubleshooting Checklist",
-    dek: "Work through the cable, port, adapter, and negotiation path before replacing your router or internet plan.",
+    title: "Ethernet Stuck at 100 Mbps? What to Check Before Buying New Gear",
+    dek: "Work through the cable, port, adapter, wall jack, and negotiation path before replacing your router, switch, or internet plan.",
     category: "wired",
     updatedAt: "June 27, 2026",
     relatedRoundups: ["best-wired-networking-upgrades"],
@@ -51,8 +51,8 @@ export const expansionGuides: Guide[] = [
   {
     site: "network",
     slug: "wired-vs-wireless-mesh-backhaul-guide",
-    title: "Wired vs. Wireless Mesh Backhaul for Home Networks",
-    dek: "How to decide whether Ethernet between mesh nodes is worth the installation effort.",
+    title: "Wired vs Wireless Mesh Backhaul: When Ethernet Between Nodes Is Worth It",
+    dek: "Decide whether Ethernet between mesh nodes is worth the installation effort by checking room layout, ports, switch placement, and node signal.",
     category: "wifi",
     updatedAt: "June 28, 2026",
     relatedProducts: ["tp-link-deco-be63-wifi-7-mesh"],

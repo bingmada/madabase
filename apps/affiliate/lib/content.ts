@@ -1024,13 +1024,13 @@ export const products: Product[] = [
   {
     site: "baby",
     slug: "ergobaby-omni-breeze-carrier",
-    seoTitle: "Ergobaby Omni Breeze Guide: Newborn Weight, Fit & Positions",
-    updatedAt: "June 28, 2026",
+    seoTitle: "Ergobaby Omni Breeze Review: Newborn Fit, Weight Limit & Positions",
+    updatedAt: "July 9, 2026",
     name: "Ergobaby Omni Breeze Baby Carrier",
     brand: "Ergobaby",
     category: "travel",
     image: "/images/affiliate/baby-ergobaby-omni-breeze-carrier.webp",
-    summary: "A research-based guide to the Omni Breeze's newborn requirements, four carry positions, SoftFlex mesh, adjustment steps, and the fit questions that product photos cannot answer.",
+    summary: "A research-based Ergobaby Omni Breeze review covering newborn fit, weight and height limits, four carry positions, SoftFlex mesh, adjustment steps, and the fit questions that product photos cannot answer.",
     verdict: "Ergobaby Omni Breeze is worth comparing when you want one structured carrier from newborn size through toddler use and expect airflow and lumbar support to matter. Fit is personal, so the return path and a careful first adjustment matter more than the feature count.",
     whyItMatters: "A carrier has to fit both baby and adult. Strap adjustment, hip support, heat, and carry positions matter more than color or pattern.",
     bestFor: "A breathable, structured carrier with four positions",
@@ -1051,12 +1051,17 @@ export const products: Product[] = [
       "Hip and back": "Sits unassisted; minimum 17.2lb; usually about 6 months",
       Material: "SoftFlex mesh",
       "Infant insert": "Not required within the listed newborn limits",
+      "Common searches answered": "Ergobaby Omni Breeze review, newborn fit, weight limit, and carry positions",
     },
     evidence: ["Confirm the baby meets both the weight, height, and developmental requirements for the intended position", "Adjust the seat width to the baby's height using the waistbelt markings", "Make sure the face remains visible and follow the manual's head-and-neck-support instructions", "Fit each caregiver separately instead of assuming one strap setting works for everyone"],
     editorialSections: [
       {
         heading: "A note about this guide",
         body: "This is a research-based buying guide built from Ergobaby's current product page and instructions; it is not a hands-on test and does not claim that one carrier fits every body. Use the manufacturer manual for setup and position changes, and use the return window to evaluate caregiver comfort and fit.",
+      },
+      {
+        heading: "Quick answer for shoppers",
+        body: "The Omni Breeze is most compelling when you want one structured carrier that starts at the listed newborn minimum and can continue through toddler use, but the buying decision should center on weight, height, position readiness, and caregiver comfort. It is not automatically the best carrier for every newborn or every adult body.",
       },
       {
         heading: "Newborn fit has specific conditions",

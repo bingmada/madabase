@@ -131,7 +131,7 @@ export function TrustBar() {
   );
 }
 
-export function ProductCard({ site, product, position }: { site: SiteConfig; product: Product; position: string }) {
+export function ProductCard({ site, product, position, offerLimit = 2 }: { site: SiteConfig; product: Product; position: string; offerLimit?: number }) {
   const displayName = product.amazonTitle ?? product.name;
   const displayImage = product.amazonImage ?? product.image;
 
@@ -151,7 +151,7 @@ export function ProductCard({ site, product, position }: { site: SiteConfig; pro
           <Link className="button-secondary" href={`/reviews/${product.slug}`}>
             Read notes
           </Link>
-          <AffiliateButtonGroup site={site.key} product={product} position={position} />
+          <AffiliateButtonGroup site={site.key} product={product} position={position} limit={offerLimit} />
         </div>
       </div>
     </article>

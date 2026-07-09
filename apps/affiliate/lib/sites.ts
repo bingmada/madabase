@@ -161,16 +161,22 @@ export const sites: Record<SiteKey, SiteConfig> = {
 
 export const siteKeys = Object.keys(sites) as SiteKey[];
 
+function getEnvSite() {
+  const envSite = process.env.NEXT_PUBLIC_AFFILIATE_SITE;
+
+  return siteKeys.includes(envSite as SiteKey) ? sites[envSite as SiteKey] : null;
+}
+
 export function getSiteByKey(key: string | undefined | null) {
   return sites[siteKeys.includes(key as SiteKey) ? (key as SiteKey) : "pet"];
 }
 
 export function getSiteFromHost(host: string | null | undefined) {
   const normalized = (host ?? "").toLowerCase();
-  const envSite = process.env.NEXT_PUBLIC_AFFILIATE_SITE;
+  const envSite = getEnvSite();
 
-  if (envSite && siteKeys.includes(envSite as SiteKey)) {
-    return sites[envSite as SiteKey];
+  if (envSite) {
+    return envSite;
   }
 
   return siteKeys.map((key) => sites[key]).find((site) => site.hostHints.some((hint) => normalized.includes(hint))) ?? sites.pet;
@@ -188,6 +194,9 @@ function getRequestDomain(headerList: Headers) {
 }
 
 export async function getCurrentSite() {
+  const envSite = getEnvSite();
+  if (envSite) return envSite;
+
   const headerList = await headers();
   const host = headerList.get("x-forwarded-host") ?? headerList.get("host");
   const site = getSiteFromHost(host);

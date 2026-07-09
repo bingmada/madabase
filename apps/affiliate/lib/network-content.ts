@@ -24,13 +24,14 @@ export const networkProducts: Product[] = [
   {
     site: "network",
     slug: "tp-link-deco-be63-wifi-7-mesh",
-    seoTitle: "TP-Link Deco BE63 Review: Wi-Fi 7 Mesh, 2.5G Backhaul & BE67 Alternatives",
-    updatedAt: "July 8, 2026",
+    seoTitle: "TP-Link Deco BE63 BE10000 Review: 3-Pack Wi-Fi 7 Mesh & 2.5G Ports",
+    updatedAt: "July 9, 2026",
     name: "TP-Link Deco BE63 Wi-Fi 7 Mesh System",
+    amazonTitle: "TP-Link Deco BE63 BE10000 Wireless Tri-Band 2.5G 3-Piece Whole Home Mesh System",
     brand: "TP-Link",
     category: "wifi",
     image: "/images/affiliate/network-tp-link-deco-be63-wifi-7-mesh.webp",
-    summary: "A research-based TP-Link Deco BE63 review for Wi-Fi 7 mesh buyers comparing BE63 vs BE67, BE85, BE25, eero, and single-router alternatives by ports, backhaul, pack size, and real home layout.",
+    summary: "A research-based TP-Link Deco BE63 BE10000 review for shoppers checking the 3-piece wireless tri-band Wi-Fi 7 mesh listing, 2.5G ports, Deco 7 Pro BE63 naming, wired backhaul, and BE67 or BE85 alternatives.",
     verdict: "The Deco BE63 is the disciplined Wi-Fi 7 mesh pick when you need coverage, Ethernet backhaul, and several 2.5Gbps ports without jumping to a BE67 or BE85 budget. It is less compelling for small apartments, mostly Wi-Fi 6 clients, or homes where one well-placed router would solve the problem.",
     whyItMatters: "Mesh speed claims only matter when coverage, node placement, and backhaul are realistic. Multi-gig ports are especially useful if your modem, office, or switch can use them.",
     bestFor: "Wi-Fi 7 mesh with 2.5G wired backhaul",
@@ -41,6 +42,8 @@ export const networkProducts: Product[] = [
     cons: ["Overkill for small homes with modest internet plans", "BE67 and BE85 are worth comparing when 10GbE paths matter", "Real coverage and speed still depend on layout, interference, clients, and backhaul"],
     specs: {
       "Product type": "Tri-band Wi-Fi 7 mesh system",
+      "Common listing title": "TP-Link Deco BE63 BE10000 Wireless Tri-Band 2.5G 3-Piece Whole Home Mesh System",
+      "Also searched as": "Deco 7 Pro BE63",
       "Listed Wi-Fi class": "BE10000",
       "Listed radio rates": "6GHz 5188Mbps; 5GHz 4324Mbps; 2.4GHz 574Mbps",
       Ports: "4x 2.5Gbps WAN/LAN auto-sensing ports per unit",
@@ -48,8 +51,12 @@ export const networkProducts: Product[] = [
       Modes: "Router and access point",
       Backhaul: "Wireless, Ethernet, or combined",
     },
-    evidence: ["Confirm whether the Amazon listing is a 1-, 2-, or 3-pack", "Check whether the modem, switches, cabling, and wired clients can use 2.5Gbps", "Compare BE63, BE67, and BE85 only after drawing the actual wired path", "Complete initial mesh setup before connecting Ethernet backhaul, following TP-Link's instructions"],
+    evidence: ["Confirm whether the listing is the BE10000 3-piece / 3-pack Deco BE63 kit or a single add-on unit", "Treat Deco 7 Pro BE63 wording as a retailer/search alias and verify the official BE63 model on the product page", "Check whether the modem, switches, cabling, and wired clients can use 2.5Gbps", "Compare BE63, BE67, and BE85 only after drawing the actual wired path", "Complete initial mesh setup before connecting Ethernet backhaul, following TP-Link's instructions"],
     editorialSections: [
+      {
+        heading: "Exact listing title and Deco 7 Pro naming",
+        body: "Many shoppers see the product as “TP-Link Deco BE63 BE10000 Wireless Tri-Band 2.5G 3-Piece Whole Home Mesh System” or search for “Deco 7 Pro BE63 review.” Treat those as listing and search phrases for the same BE63 family, then verify the official model, pack quantity, region, power accessories, and seller before checkout.",
+      },
       {
         heading: "The hardware facts that matter",
         body: "TP-Link lists the Deco BE63 as a tri-band BE10000 system with 6GHz, 5GHz, and 2.4GHz radios. Each unit has four auto-sensing 2.5Gbps WAN/LAN ports and one USB 3.0 port. Those ports are the most practical reason to pay more: they can serve a multi-gig modem, wired backhaul, a switch, or a fast local device without forcing every connection through one shared gigabit port.",
@@ -95,7 +102,7 @@ export const networkProducts: Product[] = [
     ],
     offers: [
       ...offer(links.deco),
-      ebaySearchOffer("TP-Link Deco BE63", "network-tp-link-deco-be63-wifi-7-mesh"),
+      ebaySearchOffer("TP-Link Deco BE63 BE10000 3-Pack", "network-tp-link-deco-be63-wifi-7-mesh"),
     ],
   },
   {
@@ -374,10 +381,10 @@ export const networkRoundups: Roundup[] = [
   {
     site: "network",
     slug: "best-mesh-wifi-for-apartments-and-homes",
-    title: "Best Mesh Wi-Fi Systems for Apartments and Homes",
-    dek: "The right mesh system should match layout, wall density, wired backhaul options, internet speed, and how much setup control you want.",
+    title: "Best Mesh Wi-Fi for Apartments and Multi-Floor Homes",
+    dek: "Compare Deco BE25, BE63, BE67, BE85, eero, Orbi, and travel-router edge cases by pack size, wired backhaul, port speed, and layout risk.",
     category: "wifi",
-    intent: "Choose mesh Wi-Fi that fixes coverage without overbuying speed you cannot use.",
+    intent: "Choose mesh Wi-Fi that fixes coverage without overbuying speed, nodes, or premium ports you cannot use.",
     intro: "Mesh Wi-Fi is most useful when one router cannot cover the home cleanly. Start with node placement, wired backhaul, and internet plan speed before comparing the biggest number on the box.",
     decisionGuide: [
       { label: "Wi-Fi 7 upgrade", detail: "Choose Deco BE63 when multi-gig ports and newer client support matter." },
@@ -396,8 +403,8 @@ export const networkRoundups: Roundup[] = [
   {
     site: "network",
     slug: "best-wifi-7-routers-for-home-networks",
-    title: "Best Wi-Fi 7 Routers for Home Networks",
-    dek: "Single-router Wi-Fi 7 upgrades make sense when placement is good, the home is not too spread out, and wired ports matter.",
+    title: "Best Wi-Fi 7 Router for One-Router Homes",
+    dek: "Compare practical Wi-Fi 7 routers against mesh when placement, WAN/LAN ports, firmware controls, and client support decide the real upgrade.",
     category: "wifi",
     intent: "Pick a Wi-Fi 7 router without buying mesh when one strong router is enough.",
     intro: "A Wi-Fi 7 router can be a cleaner upgrade than mesh if the router can sit near the center of the home. Compare ports, firmware controls, client support, and whether the router solves the real bottleneck.",
@@ -418,8 +425,8 @@ export const networkRoundups: Roundup[] = [
   {
     site: "network",
     slug: "best-wired-networking-upgrades",
-    title: "Best Wired Networking Upgrades for Home Offices and TV Rooms",
-    dek: "Switches, cables, and USB-C Ethernet adapters can fix stability problems that a router upgrade will never solve.",
+    title: "Best Wired Networking Upgrades for Home Offices, TV Rooms and Router Shelves",
+    dek: "Compare home switches, Cat6/Cat6A cables, and USB-C Ethernet adapters before replacing a router that is not the real bottleneck.",
     category: "wired",
     intent: "Build a stable wired path for desks, consoles, streamers, access points, and network shelves.",
     intro: "Wired networking is often the boring fix that actually works. A switch, the right cable route, or a laptop Ethernet hub can make office calls and downloads more stable than another Wi-Fi upgrade.",
@@ -440,8 +447,8 @@ export const networkRoundups: Roundup[] = [
   {
     site: "network",
     slug: "best-ups-for-router-and-modem",
-    title: "Best UPS for Router and Modem Backup Power",
-    dek: "A router UPS should keep the whole internet chain online: modem or ONT, router, and any essential mesh node.",
+    title: "Best UPS for Router, Modem and ONT Backup Power",
+    dek: "Pick a router UPS by counting the whole internet chain: modem or ONT, router, switch, mesh node, outlet spacing, and expected runtime.",
     category: "backup",
     intent: "Keep home internet online through short outages without buying the wrong battery backup.",
     intro: "Backup power for networking only works when every required box stays on. Before buying a UPS, list the modem, ONT, router, switch, and mesh node that must survive the outage.",
@@ -465,7 +472,7 @@ export const networkGuides: Guide[] = [
   {
     site: "network",
     slug: "deco-be63-vs-be67-vs-be85-buying-guide",
-    title: "Deco BE63 vs BE67 vs BE85 Buying Guide",
+    title: "Deco BE63 vs BE67 vs BE85: Which Wi-Fi 7 Mesh Should You Buy?",
     dek: "How to choose between TP-Link's Wi-Fi 7 Deco mesh systems by 2.5GbE, 10GbE, SFP+, pack size, wired backhaul, and the home network you actually have.",
     category: "wifi",
     updatedAt: "July 8, 2026",
@@ -502,8 +509,8 @@ export const networkGuides: Guide[] = [
   {
     site: "network",
     slug: "wifi-7-vs-wifi-6-guide",
-    title: "Wi-Fi 7 vs Wi-Fi 6 Buying Guide",
-    dek: "How to decide whether Wi-Fi 7 is worth paying for in a real home network.",
+    title: "Wi-Fi 7 vs Wi-Fi 6: Is the Upgrade Worth It for Home Internet?",
+    dek: "Decide whether Wi-Fi 7 is worth paying for by checking client support, multi-gig ports, coverage, and the next real bottleneck.",
     category: "wifi",
     updatedAt: "June 28, 2026",
     relatedProducts: ["tp-link-deco-be63-wifi-7-mesh"],
@@ -518,8 +525,8 @@ export const networkGuides: Guide[] = [
   {
     site: "network",
     slug: "mesh-wifi-node-placement-guide",
-    title: "Mesh Wi-Fi Node Placement Guide",
-    dek: "How to place mesh nodes so they solve coverage instead of repeating a weak signal.",
+    title: "Mesh Wi-Fi Node Placement Guide: Fix Dead Zones Without Overbuying",
+    dek: "Place mesh nodes so they solve coverage instead of repeating a weak signal or tempting you into an unnecessary extra pack.",
     category: "wifi",
     updatedAt: "June 28, 2026",
     relatedProducts: ["tp-link-deco-be63-wifi-7-mesh"],
@@ -534,8 +541,8 @@ export const networkGuides: Guide[] = [
   {
     site: "network",
     slug: "router-placement-guide",
-    title: "Router Placement Guide for Apartments and Small Homes",
-    dek: "How to choose a router location before buying another mesh node or extender.",
+    title: "Router Placement Guide Before Buying Mesh Wi-Fi",
+    dek: "Choose a router location for apartments and small homes before buying another mesh node, extender, or flagship router.",
     category: "wifi",
     relatedRoundups: ["best-wifi-7-routers-for-home-networks"],
     sections: [
@@ -548,8 +555,8 @@ export const networkGuides: Guide[] = [
   {
     site: "network",
     slug: "ethernet-cable-category-guide",
-    title: "Ethernet Cable Category Guide",
-    dek: "How to choose Cat6, Cat6A, flat cables, and patch cables without overbuying.",
+    title: "Cat6 vs Cat6A vs Flat Ethernet Cable: What to Buy for Home",
+    dek: "Choose Cat6, Cat6A, flat cable, or short patch cables by run length, placement, speed target, and damage risk.",
     category: "wired",
     relatedRoundups: ["best-wired-networking-upgrades"],
     sections: [
@@ -562,8 +569,8 @@ export const networkGuides: Guide[] = [
   {
     site: "network",
     slug: "home-ethernet-switch-guide",
-    title: "Home Ethernet Switch Buying Guide",
-    dek: "How to pick port count, speed, fanless operation, and smart features for a small home network.",
+    title: "Home Ethernet Switch Buying Guide: Gigabit, 2.5G and Smart Features",
+    dek: "Pick a home Ethernet switch by port count, speed, fanless operation, VLAN needs, desk placement, and room to grow.",
     category: "wired",
     relatedProducts: ["trendnet-teg-s380-2-5g-switch", "netgear-gs308e-gigabit-switch", "tp-link-tl-sg108-gigabit-switch"],
     relatedRoundups: ["netgear-gs308e-vs-tp-link-tl-sg108", "best-wired-networking-upgrades"],
@@ -577,8 +584,8 @@ export const networkGuides: Guide[] = [
   {
     site: "network",
     slug: "usb-c-ethernet-adapter-guide",
-    title: "USB-C Ethernet Adapter Guide",
-    dek: "How to decide between a simple Ethernet dongle, USB-C hub, or full docking station.",
+    title: "USB-C Ethernet Adapter vs Dock: What to Buy for a Laptop",
+    dek: "Decide between a simple Ethernet dongle, USB-C hub, or full dock by display, charging, laptop support, and desk workflow.",
     category: "wired",
     relatedRoundups: ["best-wired-networking-upgrades"],
     sections: [
@@ -591,8 +598,8 @@ export const networkGuides: Guide[] = [
   {
     site: "network",
     slug: "router-ups-runtime-guide",
-    title: "Router UPS Runtime Planning Guide",
-    dek: "How to estimate backup power needs for modem, ONT, router, switch, and one mesh node.",
+    title: "Router UPS Runtime: How Big a UPS for Modem, ONT and Mesh?",
+    dek: "Estimate backup power needs by adding modem, ONT, router, switch, and mesh-node wattage before choosing a UPS.",
     category: "backup",
     relatedRoundups: ["best-ups-for-router-and-modem"],
     sections: [
@@ -605,8 +612,8 @@ export const networkGuides: Guide[] = [
   {
     site: "network",
     slug: "travel-router-vpn-guide",
-    title: "Travel Router and VPN Setup Guide",
-    dek: "When a portable router helps with hotels, rentals, RVs, cruises, and public Wi-Fi.",
+    title: "Best Travel Router Use Cases: Hotels, Rentals, RVs and VPNs",
+    dek: "Decide when a portable router is worth buying for hotels, rentals, RVs, cruises, public Wi-Fi, and repeatable VPN setups.",
     category: "wifi",
     relatedRoundups: ["best-mesh-wifi-for-apartments-and-homes"],
     sections: [

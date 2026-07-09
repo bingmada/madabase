@@ -41,6 +41,7 @@ export function AffiliateButton({
       href={offer.url}
       target="_blank"
       rel="sponsored nofollow noopener noreferrer"
+      aria-label={`${offer.label} for ${product.amazonTitle ?? product.name}`}
       onClick={trackClick}
     >
       {offer.label}

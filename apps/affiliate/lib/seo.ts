@@ -9,6 +9,29 @@ const contentDateFormatter = new Intl.DateTimeFormat("en-CA", {
   day: "2-digit",
 });
 
+function metaDescription(description: string) {
+  const clean = description.replace(/\s+/g, " ").trim();
+  if (clean.length <= 160) return clean;
+
+  const boundary = clean.lastIndexOf(" ", 157);
+  const end = boundary >= 120 ? boundary : 157;
+  return `${clean.slice(0, end).trim()}...`;
+}
+
+function noteList(items: string[] | undefined) {
+  const notes = items?.filter(Boolean).slice(0, 5) ?? [];
+  if (notes.length === 0) return undefined;
+
+  return {
+    "@type": "ItemList",
+    itemListElement: notes.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item,
+    })),
+  };
+}
+
 export function absoluteUrl(site: SiteConfig, path = "/") {
   return new URL(path, site.domain).toString();
 }
@@ -27,6 +50,7 @@ export function contentDate(value: string | undefined) {
 
 export function pageMetadata(site: SiteConfig, path: string, title: string, description: string, image = site.heroImage): Metadata {
   const url = absoluteUrl(site, path);
+  const descriptionText = metaDescription(description);
 
   return {
     metadataBase: new URL(site.domain),
@@ -34,13 +58,13 @@ export function pageMetadata(site: SiteConfig, path: string, title: string, desc
     // them absolute avoids appending a second site-name suffix that pushes
     // model-specific titles beyond a useful search-result length.
     title: { absolute: title },
-    description,
+    description: descriptionText,
     alternates: {
       canonical: url,
     },
     openGraph: {
       title,
-      description,
+      description: descriptionText,
       url,
       siteName: site.name,
       type: "website",
@@ -49,7 +73,7 @@ export function pageMetadata(site: SiteConfig, path: string, title: string, desc
     twitter: {
       card: "summary_large_image",
       title,
-      description,
+      description: descriptionText,
       images: [image],
     },
   };
@@ -107,6 +131,50 @@ export function itemListSchema(site: SiteConfig, name: string, items: Array<{ na
   };
 }
 
+export function roundupProductListSchema(site: SiteConfig, name: string, products: Product[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name,
+    itemListElement: products.map((product, index) => {
+      const displayName = product.amazonTitle ?? product.name;
+      const displayImage = product.amazonImage ?? product.image;
+      const url = absoluteUrl(site, `/reviews/${product.slug}`);
+
+      return {
+        "@type": "ListItem",
+        position: index + 1,
+        name: displayName,
+        url,
+        item: {
+          "@type": "Product",
+          "@id": `${url}#product`,
+          name: displayName,
+          alternateName: product.name !== displayName ? product.name : undefined,
+          description: product.summary,
+          image: absoluteUrl(site, displayImage),
+          url,
+          category: product.category,
+          brand: {
+            "@type": "Brand",
+            name: product.brand,
+          },
+          sku: product.asin ?? product.slug,
+          ...(product.asin ? { identifier: product.asin } : {}),
+          additionalProperty: Object.entries(product.specs)
+            .filter(([, value]) => Boolean(value))
+            .slice(0, 8)
+            .map(([propertyName, value]) => ({
+              "@type": "PropertyValue",
+              name: propertyName,
+              value,
+            })),
+        },
+      };
+    }),
+  };
+}
+
 export function faqPageSchema(faqs: Roundup["faqs"]) {
   return {
     "@context": "https://schema.org",
@@ -127,38 +195,83 @@ export function productNotesSchema(site: SiteConfig, product: Product) {
   const displayImage = product.amazonImage ?? product.image;
   const headline = product.seoTitle ?? `${displayName} Buying Notes`;
   const url = absoluteUrl(site, `/reviews/${product.slug}`);
+  const productId = `${url}#product`;
   const updated = contentDate(product.updatedAt);
+  const author = {
+    "@type": "Organization",
+    name: `${site.name} editorial desk`,
+    url: absoluteUrl(site, "/about"),
+  };
+  const publisher = {
+    "@type": "Organization",
+    name: site.name,
+    url: site.domain,
+  };
 
   return {
     "@context": "https://schema.org",
-    "@type": "Article",
-    name: headline,
-    headline,
-    url,
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": url,
-    },
-    description: product.summary,
-    image: absoluteUrl(site, displayImage),
-    articleSection: product.category,
-    ...(updated ? { dateModified: updated.isoDateTime } : {}),
-    about: {
-      "@type": "Thing",
-      name: displayName,
-      description: product.summary,
-      ...(product.asin ? { identifier: product.asin } : {}),
-    },
-    author: {
-      "@type": "Organization",
-      name: `${site.name} editorial desk`,
-      url: absoluteUrl(site, "/about"),
-    },
-    publisher: {
-      "@type": "Organization",
-      name: site.name,
-      url: site.domain,
-    },
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": `${url}#article`,
+        name: headline,
+        headline,
+        url,
+        mainEntityOfPage: {
+          "@type": "WebPage",
+          "@id": url,
+        },
+        description: product.summary,
+        image: absoluteUrl(site, displayImage),
+        articleSection: product.category,
+        ...(updated ? { dateModified: updated.isoDateTime } : {}),
+        about: {
+          "@id": productId,
+        },
+        ...(product.sources?.length ? { citation: product.sources.map((source) => source.url) } : {}),
+        author,
+        publisher,
+      },
+      {
+        "@type": "Product",
+        "@id": productId,
+        name: displayName,
+        alternateName: product.name !== displayName ? product.name : undefined,
+        description: product.summary,
+        image: absoluteUrl(site, displayImage),
+        url,
+        category: product.category,
+        brand: {
+          "@type": "Brand",
+          name: product.brand,
+        },
+        sku: product.asin ?? product.slug,
+        ...(product.asin ? { identifier: product.asin } : {}),
+        additionalProperty: Object.entries(product.specs)
+          .filter(([, value]) => Boolean(value))
+          .slice(0, 12)
+          .map(([name, value]) => ({
+            "@type": "PropertyValue",
+            name,
+            value,
+          })),
+        review: {
+          "@type": "Review",
+          "@id": `${url}#editorial-review`,
+          name: headline,
+          headline,
+          reviewBody: product.verdict ?? product.summary,
+          itemReviewed: {
+            "@id": productId,
+          },
+          positiveNotes: noteList(product.pros),
+          negativeNotes: noteList(product.cons),
+          ...(updated ? { dateModified: updated.isoDateTime } : {}),
+          author,
+          publisher,
+        },
+      },
+    ],
   };
 }
 

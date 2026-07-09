@@ -1,17 +1,17 @@
 [TITLE]
-Online HTML Formatter & Beautifier
+Format HTML Online - HTML Formatter & Beautifier
 [H1]
-Online HTML Formatter & Beautifier
+Format HTML Online
 [DESCRIPTION]
-Format messy or minified HTML into readable, consistently indented code.
+Format messy or minified HTML online into readable, consistently indented code.
 [SEO_TITLE]
-Online HTML Formatter & Beautifier
+Format HTML Online - Free HTML Formatter & Beautifier
 [SEO_DESCRIPTION]
-Format and beautify messy or minified HTML online. Add consistent indentation and readable line breaks locally in your browser.
+Format HTML online with a free HTML formatter and beautifier. Add consistent indentation and readable line breaks locally in your browser.
 [INTRO]
-HTML often becomes compressed into one line or develops inconsistent indentation after copying templates, generated markup, email layouts, and page fragments. That makes nested elements harder to follow and creates noisy code reviews.
+When you need to format HTML online, the usual problem is simple: markup has been compressed into one line or copied with inconsistent indentation from templates, generated code, email layouts, and page fragments. That makes nested elements harder to follow and creates noisy code reviews.
 
-This online HTML formatter uses a consistent two-space style to add indentation and line breaks to full documents or HTML fragments. Paste the markup, format it, review the result, and copy the readable version.
+This online HTML formatter and beautifier uses a consistent two-space style to add indentation and line breaks to full documents or HTML fragments. Paste the markup, format it, review the result, and copy the readable version.
 
 Formatting changes presentation, not meaning. It is useful for reading and editing markup, but it is not a standards validator and does not guarantee that malformed HTML is correct. Processing happens in your browser; the HTML you paste is not uploaded for formatting.
 [HOW_TO_USE]
@@ -61,8 +61,12 @@ js-formatter
 web
 [KEYWORDS]
 html formatter
+html formatter online
 html beautifier
 format html
+format html online
+html online format
+formatting html online
 beautify html
 indent html
 html code formatter

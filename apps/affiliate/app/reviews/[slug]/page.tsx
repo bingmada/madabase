@@ -8,6 +8,7 @@ import { StyleProductPage } from "@/components/StyleExperience";
 import { findProduct, siteGuides, siteProducts, siteRoundups } from "@/lib/content";
 import { breadcrumbSchema, pageMetadata, productNotesSchema } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
+import type { AffiliateOffer, Product } from "@/lib/types";
 
 function siteContext(siteKey: string) {
   if (siteKey === "pet") return "pet-care routine";
@@ -53,6 +54,29 @@ function beforeYouBuyChecks(siteKey: string) {
   ];
 }
 
+function listingVerificationRows(product: Product, displayName: string, offers: AffiliateOffer[]) {
+  const asin = product.asin ?? product.specs.ASIN;
+  const amazonOffer = offers.find((offer) => offer.merchant.toLowerCase().includes("amazon"));
+  const modelOrPack = product.specs.Model ?? product.specs.Pack ?? product.specs["Product type"] ?? displayName;
+
+  return [
+    ["Amazon listing anchor", asin ? `ASIN ${asin}` : "Confirm ASIN on the live Amazon listing before purchase"],
+    ["Listing title to match", displayName],
+    ["Model or bundle", modelOrPack],
+    ["Version risk", product.evidence[0] ?? "Confirm exact model, region, hardware revision, and included accessories"],
+    ["Price handling", amazonOffer?.priceNote ?? offers[0]?.priceNote ?? "No exact Amazon price is copied; verify live price, coupon, seller, and return window"],
+  ];
+}
+
+function updateRecord(product: Product, sourceCount: number, offers: AffiliateOffer[]) {
+  return [
+    ["Content updated", product.updatedAt ?? "Update date pending"],
+    ["Official source links", sourceCount ? `${sourceCount} linked source${sourceCount === 1 ? "" : "s"}` : "No official source link stored yet"],
+    ["Retail listing check", product.asin ?? product.specs.ASIN ? `Amazon ASIN ${product.asin ?? product.specs.ASIN}` : "ASIN still needs live listing confirmation"],
+    ["Price policy", offers.length ? "Exact prices are not copied; merchant page controls final price and availability" : "Buying links are being refreshed"],
+  ];
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const site = await getCurrentSite();
   const { slug } = await params;
@@ -80,7 +104,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
   const category = site.categories.find((item) => item.slug === product.category);
   const comparisonProducts = (product.compareSlugs ?? [])
     .map((comparisonSlug) => findProduct(site.key, comparisonSlug))
-    .filter(Boolean);
+    .filter((comparison): comparison is Product => Boolean(comparison));
   const relatedRoundups = siteRoundups(site.key)
     .filter((roundup) => roundup.productSlugs.includes(product.slug))
     .slice(0, 6);
@@ -90,6 +114,30 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
 
   const context = siteContext(site.key);
   const primaryOffers = product.offers.slice(0, 2);
+  const sourceCount = product.sources?.length ?? 0;
+  const listingRows = listingVerificationRows(product, displayName, primaryOffers);
+  const updateRows = updateRecord(product, sourceCount, primaryOffers);
+  const officialSpecRows = Object.entries(product.specs)
+    .filter(([key, value]) => key !== "Link status" && Boolean(value))
+    .slice(0, 8);
+  const comparisonRows = [product, ...comparisonProducts].slice(0, 4);
+  const decisionBranches = [
+    ["Buy if", `Your priority is ${product.bestFor.toLowerCase()} and the exact listing matches the specs below.`],
+    ["Skip if", product.cons[0] ?? "The main trade-off touches your most important use case."],
+    ["Compare if", product.alternatives?.[0] ?? comparisonProducts[0]?.bestFor ?? "A nearby model fits the room, setup, or budget better."],
+    ["Verify first", product.evidence[0] ?? "Confirm model, seller, bundle, and return path before checkout."],
+  ];
+  const evidenceSnapshot = [
+    ["Updated", product.updatedAt ?? "Review schedule pending"],
+    [
+      "Source basis",
+      sourceCount
+        ? `${sourceCount} primary source${sourceCount === 1 ? "" : "s"} plus retailer listing checks`
+        : "Retailer listing, current seller, and product details should be verified before purchase",
+    ],
+    ["Version risk", product.evidence[0] ?? "Confirm exact model, bundle, and hardware version before checkout"],
+    ["Price or bundle risk", primaryOffers[0]?.priceNote ?? "Buying links are being updated; confirm seller and return window before purchase"],
+  ];
   const hasSpecificSkipSection = product.editorialSections?.some((section) => section.heading.toLowerCase().includes("who should skip"));
   const purchaseChecks = beforeYouBuyChecks(site.key);
   if (site.key === "style") {
@@ -143,6 +191,11 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
             ) : null}
             <div className="mt-6 flex flex-wrap items-center gap-3">
               <span className="rounded-md bg-[var(--brand-soft)] px-3 py-2 font-semibold text-[var(--brand-strong)]">{product.bestFor}</span>
+              {primaryOffers.length ? (
+                <a className="button-secondary" href="#buying-options">
+                  Check buying options
+                </a>
+              ) : null}
             </div>
             {primaryOffers.length ? (
               <div className="mt-5 rounded-md border border-[var(--border)] bg-white p-4 lg:hidden">
@@ -180,6 +233,41 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                   </div>
                 </div>
               </div>
+              <div className="not-prose mt-5 rounded-md border border-[var(--border)] bg-white p-5">
+                <h2 className="text-xl font-bold">Evidence snapshot</h2>
+                <dl className="mt-4 divide-y divide-[var(--border)]">
+                  {evidenceSnapshot.map(([label, value]) => (
+                    <div className="grid gap-2 py-3 text-sm sm:grid-cols-[150px_1fr]" key={label}>
+                      <dt className="font-semibold text-[var(--muted)]">{label}</dt>
+                      <dd className="break-words font-semibold text-[var(--text)]">{value}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
+              <div className="not-prose mt-5 grid gap-5 lg:grid-cols-2">
+                <section className="rounded-md border border-[var(--border)] bg-white p-5">
+                  <h2 className="text-xl font-bold">Amazon listing verification</h2>
+                  <dl className="mt-4 divide-y divide-[var(--border)]">
+                    {listingRows.map(([label, value]) => (
+                      <div className="grid gap-2 py-3 text-sm sm:grid-cols-[140px_1fr]" key={label}>
+                        <dt className="font-semibold text-[var(--muted)]">{label}</dt>
+                        <dd className="break-words font-semibold text-[var(--text)]">{value}</dd>
+                      </div>
+                    ))}
+                  </dl>
+                </section>
+                <section className="rounded-md border border-[var(--border)] bg-white p-5">
+                  <h2 className="text-xl font-bold">Update record</h2>
+                  <dl className="mt-4 divide-y divide-[var(--border)]">
+                    {updateRows.map(([label, value]) => (
+                      <div className="grid gap-2 py-3 text-sm sm:grid-cols-[140px_1fr]" key={label}>
+                        <dt className="font-semibold text-[var(--muted)]">{label}</dt>
+                        <dd className="break-words font-semibold text-[var(--text)]">{value}</dd>
+                      </div>
+                    ))}
+                  </dl>
+                </section>
+              </div>
               <div className="not-prose mt-5 grid gap-5 lg:grid-cols-2">
                 <section className="rounded-md border border-[var(--border)] bg-white p-5">
                   <h2 className="text-xl font-bold">Product facts</h2>
@@ -202,6 +290,54 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                       </li>
                     ))}
                   </ul>
+                </section>
+              </div>
+              <div className="not-prose mt-5 grid gap-5 lg:grid-cols-2">
+                <section className="rounded-md border border-[var(--border)] bg-white p-5">
+                  <h2 className="text-xl font-bold">Official specs referenced</h2>
+                  <div className="mt-4 overflow-x-auto">
+                    <table className="w-full min-w-[420px] text-left text-sm">
+                      <thead className="text-xs uppercase text-[var(--muted)]">
+                        <tr>
+                          <th className="border-b border-[var(--border)] pb-2 pr-4">Spec</th>
+                          <th className="border-b border-[var(--border)] pb-2">Value to verify</th>
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-[var(--border)]">
+                        {officialSpecRows.map(([key, value]) => (
+                          <tr key={key}>
+                            <th className="py-3 pr-4 font-semibold text-[var(--muted)]">{key}</th>
+                            <td className="py-3 font-bold text-[var(--text)]">{value}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                  {product.sources?.length ? (
+                    <div className="mt-4 space-y-2 text-sm leading-6 text-[var(--muted)]">
+                      {product.sources.slice(0, 3).map((source) => (
+                        <p key={source.url}>
+                          <a className="font-bold text-[var(--brand-strong)] hover:underline" href={source.url} rel="noopener noreferrer" target="_blank">
+                            {source.name}
+                          </a>
+                          {source.note ? `: ${source.note}` : ""}
+                        </p>
+                      ))}
+                    </div>
+                  ) : (
+                    <p className="mt-4 text-sm leading-6 text-[var(--muted)]">Official source link is pending; confirm the manufacturer page before relying on a retail listing.</p>
+                  )}
+                </section>
+                <section className="rounded-md border border-[var(--border)] bg-white p-5">
+                  <h2 className="text-xl font-bold">Fit / skip decision tree</h2>
+                  <div className="mt-4 grid gap-3">
+                    {decisionBranches.map(([label, detail]) => (
+                      <div className="rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-4" key={label}>
+                        <h3 className="text-sm font-bold uppercase text-[var(--muted)]">{label}</h3>
+                        <p className="mt-2 text-sm font-semibold leading-6 text-[var(--text)]">{detail}</p>
+                      </div>
+                    ))}
+                  </div>
                 </section>
               </div>
               <h2>Our take</h2>
@@ -264,7 +400,35 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
               {comparisonProducts.length ? (
                 <>
                   <h2>Compare nearby options</h2>
-                  <div className="not-prose grid gap-4 sm:grid-cols-2">
+                  <div className="not-prose overflow-x-auto rounded-md border border-[var(--border)] bg-white">
+                    <table className="w-full min-w-[760px] text-left text-sm">
+                      <thead className="bg-[var(--surface-muted)] text-xs uppercase text-[var(--muted)]">
+                        <tr>
+                          <th className="px-4 py-3">Product</th>
+                          <th className="px-4 py-3">Best for</th>
+                          <th className="px-4 py-3">Check first</th>
+                          <th className="px-4 py-3">Price band</th>
+                          <th className="px-4 py-3">Listing anchor</th>
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-[var(--border)]">
+                        {comparisonRows.map((item) => (
+                          <tr key={item.slug}>
+                            <th className="px-4 py-4 font-bold">
+                              <Link className="hover:text-[var(--brand-strong)] hover:underline" href={`/reviews/${item.slug}`}>
+                                {item.amazonTitle ?? item.name}
+                              </Link>
+                            </th>
+                            <td className="px-4 py-4 text-[var(--muted)]">{item.bestFor}</td>
+                            <td className="px-4 py-4 text-[var(--muted)]">{item.cons[0]}</td>
+                            <td className="px-4 py-4 font-bold">{item.priceBand}</td>
+                            <td className="px-4 py-4 text-[var(--muted)]">{item.asin ? `ASIN ${item.asin}` : item.category}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                  <div className="not-prose mt-4 grid gap-4 sm:grid-cols-2">
                     {comparisonProducts.map((comparison) =>
                       comparison ? (
                         <Link className="rounded-md border border-[var(--border)] bg-white p-5" href={`/reviews/${comparison.slug}`} key={comparison.slug}>
@@ -305,6 +469,11 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                   </div>
                 </>
               ) : null}
+              <h2>Version and price risk</h2>
+              <p>
+                Treat the exact listing as part of the product. Confirm the model number, hardware revision, included accessories, seller, coupon state, and return path before checkout.
+                {primaryOffers[0]?.priceNote ? ` Current link note: ${primaryOffers[0].priceNote}` : ""}
+              </p>
               <h2>Before you buy</h2>
               <ul>
                 {purchaseChecks.map((item) => (
@@ -328,9 +497,9 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
               ) : null}
             </div>
           </article>
-          <aside className="space-y-5">
+          <aside className="space-y-5 lg:sticky lg:top-24 lg:self-start">
             <Disclosure site={site} />
-            <div className="panel p-5">
+            <div className="panel p-5" id="buying-options">
               <h2 className="text-xl font-bold">Buying options</h2>
               <div className="mt-4 space-y-3">
                 {product.offers.length === 0 ? <p className="text-sm leading-6 text-[var(--muted)]">Buying links are being updated.</p> : null}
