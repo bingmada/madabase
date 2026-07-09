@@ -12,7 +12,22 @@ import {
   commercialExpansionRoundups,
 } from "./commercial-expansion-content";
 import { expansionGuides } from "./expansion-guides";
+import {
+  networkAccessoryExpansionGuides,
+  networkAccessoryExpansionProducts,
+  networkAccessoryExpansionRoundups,
+} from "./network-accessory-expansion-content";
 import { networkGuides, networkProducts, networkRoundups, networkTools } from "./network-content";
+import {
+  networkPoeExpansionGuides,
+  networkPoeExpansionProducts,
+  networkPoeExpansionRoundups,
+} from "./network-poe-expansion-content";
+import {
+  smartHomeLeakExpansionGuides,
+  smartHomeLeakExpansionProducts,
+  smartHomeLeakExpansionRoundups,
+} from "./smarthome-leak-expansion-content";
 import { smartHomeGuides, smartHomeProducts, smartHomeRoundups } from "./smarthome-content";
 import { styleCatalogProducts, styleCatalogRoundups } from "./style-catalog-expansion";
 import { styleCatalog50Products, styleCatalog50Roundups } from "./style-catalog-50";
@@ -1846,9 +1861,18 @@ roundups.push(...networkRoundups);
 guides.push(...networkGuides);
 guides.push(...expansionGuides);
 tools.push(...networkTools);
+products.push(...networkAccessoryExpansionProducts);
+roundups.push(...networkAccessoryExpansionRoundups);
+guides.push(...networkAccessoryExpansionGuides);
+products.push(...networkPoeExpansionProducts);
+roundups.push(...networkPoeExpansionRoundups);
+guides.push(...networkPoeExpansionGuides);
 products.push(...smartHomeProducts);
 roundups.push(...smartHomeRoundups);
 guides.push(...smartHomeGuides);
+products.push(...smartHomeLeakExpansionProducts);
+roundups.push(...smartHomeLeakExpansionRoundups);
+guides.push(...smartHomeLeakExpansionGuides);
 products.push(...styleProducts);
 roundups.push(...styleRoundups);
 guides.push(...styleGuides);

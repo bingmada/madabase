@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">TP-Link TL-SG1005P PoE switch illustration</title>
+  <desc id="desc">A compact five port PoE switch with four powered ports and one uplink.</desc>
+  <rect width="1200" height="800" fill="#f5f8fb"/>
+  <rect x="170" y="235" width="860" height="315" rx="42" fill="#243447"/>
+  <rect x="210" y="275" width="780" height="106" rx="18" fill="#e8eef5"/>
+  <g fill="#26394d">
+    <rect x="248" y="304" width="96" height="48" rx="8"/>
+    <rect x="370" y="304" width="96" height="48" rx="8"/>
+    <rect x="492" y="304" width="96" height="48" rx="8"/>
+    <rect x="614" y="304" width="96" height="48" rx="8"/>
+    <rect x="782" y="304" width="118" height="48" rx="8"/>
+  </g>
+  <g fill="#67d391">
+    <circle cx="296" cy="404" r="16"/>
+    <circle cx="418" cy="404" r="16"/>
+    <circle cx="540" cy="404" r="16"/>
+    <circle cx="662" cy="404" r="16"/>
+  </g>
+  <circle cx="842" cy="404" r="16" fill="#8fb7dc"/>
+  <path d="M296 455v70M418 455v70M540 455v70M662 455v70" stroke="#67d391" stroke-width="14" stroke-linecap="round"/>
+  <path d="M250 602h700" stroke="#9fb2c7" stroke-width="16" stroke-linecap="round"/>
+  <text x="600" y="695" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#243447">TL-SG1005P PoE starter</text>
+</svg>

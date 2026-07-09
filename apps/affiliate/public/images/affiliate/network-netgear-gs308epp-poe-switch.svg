@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">NETGEAR GS308EPP PoE switch illustration</title>
+  <desc id="desc">An eight port PoE+ switch with a larger power budget and all powered ports.</desc>
+  <rect width="1200" height="800" fill="#f7f9fb"/>
+  <rect x="130" y="225" width="940" height="335" rx="46" fill="#1f3342"/>
+  <rect x="180" y="285" width="840" height="128" rx="20" fill="#e8f0f6"/>
+  <g fill="#1f3342">
+    <rect x="226" y="318" width="76" height="50" rx="8"/>
+    <rect x="326" y="318" width="76" height="50" rx="8"/>
+    <rect x="426" y="318" width="76" height="50" rx="8"/>
+    <rect x="526" y="318" width="76" height="50" rx="8"/>
+    <rect x="626" y="318" width="76" height="50" rx="8"/>
+    <rect x="726" y="318" width="76" height="50" rx="8"/>
+    <rect x="826" y="318" width="76" height="50" rx="8"/>
+    <rect x="926" y="318" width="52" height="50" rx="8"/>
+  </g>
+  <g fill="#65db93">
+    <circle cx="264" cy="448" r="15"/>
+    <circle cx="364" cy="448" r="15"/>
+    <circle cx="464" cy="448" r="15"/>
+    <circle cx="564" cy="448" r="15"/>
+    <circle cx="664" cy="448" r="15"/>
+    <circle cx="764" cy="448" r="15"/>
+    <circle cx="864" cy="448" r="15"/>
+    <circle cx="952" cy="448" r="15"/>
+  </g>
+  <path d="M310 595h580" stroke="#65db93" stroke-width="18" stroke-linecap="round"/>
+  <path d="M360 535h480" stroke="#e2b43b" stroke-width="20" stroke-linecap="round"/>
+  <text x="600" y="705" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#1f3342">GS308EPP 8-port PoE+</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Stylized Motorola MB8611 cable modem">
+  <rect width="1200" height="800" rx="48" fill="#eef4f7"/>
+  <circle cx="600" cy="360" r="285" fill="#dbe7ee"/>
+  <rect x="420" y="150" width="360" height="460" rx="44" fill="#1f2f39"/>
+  <rect x="460" y="195" width="280" height="360" rx="30" fill="#314954"/>
+  <g fill="#78d6a1">
+    <circle cx="520" cy="260" r="12"/><circle cx="520" cy="320" r="12"/><circle cx="520" cy="380" r="12"/><circle cx="520" cy="440" r="12"/>
+  </g>
+  <rect x="610" y="240" width="78" height="64" rx="8" fill="#0f1b22" stroke="#91b5c5" stroke-width="7"/>
+  <rect x="610" y="335" width="78" height="64" rx="8" fill="#0f1b22" stroke="#91b5c5" stroke-width="7"/>
+  <text x="600" y="710" text-anchor="middle" font-family="Arial,sans-serif" font-size="48" font-weight="700" fill="#244b5d">MB8611 • Cable Modem</text>
+</svg>

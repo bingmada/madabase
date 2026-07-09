@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Stylized Hitron CODA56 cable modem">
+  <rect width="1200" height="800" rx="48" fill="#f1f6f8"/>
+  <circle cx="600" cy="360" r="285" fill="#dceaf0"/>
+  <rect x="440" y="155" width="320" height="455" rx="70" fill="#ffffff" stroke="#9ebeca" stroke-width="12"/>
+  <path d="M500 260h200M500 335h200M500 410h200" stroke="#bfd3db" stroke-width="18" stroke-linecap="round"/>
+  <rect x="552" y="500" width="96" height="70" rx="9" fill="#203541" stroke="#7fa5b8" stroke-width="7"/>
+  <text x="600" y="710" text-anchor="middle" font-family="Arial,sans-serif" font-size="48" font-weight="700" fill="#214b60">CODA56 • 2.5GbE Modem</text>
+</svg>

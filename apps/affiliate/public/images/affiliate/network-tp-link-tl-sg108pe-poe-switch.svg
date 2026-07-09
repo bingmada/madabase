@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">TP-Link TL-SG108PE Easy Smart PoE switch illustration</title>
+  <desc id="desc">An eight port Easy Smart PoE switch with powered ports and VLAN control marks.</desc>
+  <rect width="1200" height="800" fill="#f6f8fb"/>
+  <rect x="130" y="220" width="940" height="340" rx="46" fill="#26364a"/>
+  <rect x="175" y="272" width="850" height="128" rx="20" fill="#edf2f7"/>
+  <g fill="#26364a">
+    <rect x="215" y="306" width="78" height="48" rx="8"/>
+    <rect x="315" y="306" width="78" height="48" rx="8"/>
+    <rect x="415" y="306" width="78" height="48" rx="8"/>
+    <rect x="515" y="306" width="78" height="48" rx="8"/>
+    <rect x="642" y="306" width="78" height="48" rx="8"/>
+    <rect x="742" y="306" width="78" height="48" rx="8"/>
+    <rect x="842" y="306" width="78" height="48" rx="8"/>
+    <rect x="942" y="306" width="48" height="48" rx="8"/>
+  </g>
+  <g fill="#72d99a">
+    <circle cx="254" cy="432" r="15"/>
+    <circle cx="354" cy="432" r="15"/>
+    <circle cx="454" cy="432" r="15"/>
+    <circle cx="554" cy="432" r="15"/>
+  </g>
+  <g fill="#93b8da">
+    <circle cx="681" cy="432" r="15"/>
+    <circle cx="781" cy="432" r="15"/>
+    <circle cx="881" cy="432" r="15"/>
+    <circle cx="966" cy="432" r="15"/>
+  </g>
+  <path d="M280 506h180M520 506h180M760 506h180" stroke="#72d99a" stroke-width="12" stroke-linecap="round"/>
+  <path d="M372 590l36 36 72-86M612 590l36 36 72-86M852 590l36 36 72-86" fill="none" stroke="#e2b43b" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="600" y="705" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#26364a">TL-SG108PE Easy Smart</text>
+</svg>

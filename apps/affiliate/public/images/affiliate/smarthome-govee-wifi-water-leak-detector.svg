@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Govee WiFi water leak detector illustration</title>
+  <desc id="desc">Three leak sensors connected to a Wi-Fi gateway with alert waves.</desc>
+  <rect width="1200" height="800" fill="#f8fbf7"/>
+  <rect x="130" y="140" width="940" height="520" rx="38" fill="#ffffff" stroke="#c9dcc8" stroke-width="8"/>
+  <rect x="520" y="180" width="160" height="220" rx="42" fill="#1f2f27"/>
+  <circle cx="600" cy="256" r="30" fill="#6ee08e"/>
+  <rect x="560" y="315" width="80" height="16" rx="8" fill="#8ca39a"/>
+  <circle cx="338" cy="492" r="88" fill="#eef4ef" stroke="#83a589" stroke-width="9"/>
+  <circle cx="600" cy="492" r="88" fill="#eef4ef" stroke="#83a589" stroke-width="9"/>
+  <circle cx="862" cy="492" r="88" fill="#eef4ef" stroke="#83a589" stroke-width="9"/>
+  <path d="M338 442c18 30 38 55 38 82a38 38 0 0 1-76 0c0-27 20-52 38-82Z" fill="#2e9bd0"/>
+  <path d="M600 442c18 30 38 55 38 82a38 38 0 0 1-76 0c0-27 20-52 38-82Z" fill="#2e9bd0"/>
+  <path d="M862 442c18 30 38 55 38 82a38 38 0 0 1-76 0c0-27 20-52 38-82Z" fill="#2e9bd0"/>
+  <path d="M508 254c-54 22-94 58-120 110" fill="none" stroke="#6ee08e" stroke-width="12" stroke-linecap="round" stroke-dasharray="16 20"/>
+  <path d="M692 254c54 22 94 58 120 110" fill="none" stroke="#6ee08e" stroke-width="12" stroke-linecap="round" stroke-dasharray="16 20"/>
+  <text x="600" y="715" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#1f2f27">Govee Wi-Fi 3-pack</text>
+</svg>

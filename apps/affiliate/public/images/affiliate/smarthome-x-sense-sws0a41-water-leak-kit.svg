@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">X-Sense SWS0A41 water leak kit illustration</title>
+  <desc id="desc">Four slim water leak sensors around a base station with an alarm indicator.</desc>
+  <rect width="1200" height="800" fill="#f7f8fc"/>
+  <rect x="125" y="125" width="950" height="550" rx="44" fill="#ffffff" stroke="#d7dae8" stroke-width="8"/>
+  <rect x="514" y="205" width="172" height="244" rx="36" fill="#f1f3f9" stroke="#7d879b" stroke-width="10"/>
+  <circle cx="600" cy="286" r="28" fill="#ff6b55"/>
+  <path d="M560 350h80M560 385h80" stroke="#7d879b" stroke-width="14" stroke-linecap="round"/>
+  <rect x="268" y="462" width="145" height="78" rx="24" fill="#edf4fb" stroke="#7a91aa" stroke-width="8"/>
+  <rect x="458" y="510" width="145" height="78" rx="24" fill="#edf4fb" stroke="#7a91aa" stroke-width="8"/>
+  <rect x="648" y="510" width="145" height="78" rx="24" fill="#edf4fb" stroke="#7a91aa" stroke-width="8"/>
+  <rect x="838" y="462" width="145" height="78" rx="24" fill="#edf4fb" stroke="#7a91aa" stroke-width="8"/>
+  <path d="M333 493h18M523 541h18M713 541h18M903 493h18" stroke="#2988c8" stroke-width="12" stroke-linecap="round"/>
+  <path d="M472 254c-42 24-76 60-102 108M728 254c42 24 76 60 102 108" fill="none" stroke="#ff8b75" stroke-width="12" stroke-linecap="round"/>
+  <path d="M600 160c76 0 138 36 176 92M600 160c-76 0-138 36-176 92" fill="none" stroke="#ff8b75" stroke-width="9" stroke-linecap="round" opacity=".55"/>
+  <text x="600" y="715" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#253247">X-Sense 4-sensor kit</text>
+</svg>

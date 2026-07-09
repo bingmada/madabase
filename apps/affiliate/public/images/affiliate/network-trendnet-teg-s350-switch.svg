@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Stylized TRENDnet TEG-S350 five-port 2.5G switch">
+  <rect width="1200" height="800" rx="48" fill="#edf3f7"/>
+  <circle cx="600" cy="355" r="285" fill="#d8e5ed"/>
+  <path d="M250 320h700l-58 220H308z" fill="#26333b"/>
+  <path d="M288 350h624l-36 140H324z" fill="#344751"/>
+  <g fill="#0d181d" stroke="#7fa5b8" stroke-width="7">
+    <rect x="375" y="385" width="75" height="72" rx="7"/><rect x="465" y="385" width="75" height="72" rx="7"/><rect x="555" y="385" width="75" height="72" rx="7"/><rect x="645" y="385" width="75" height="72" rx="7"/><rect x="735" y="385" width="75" height="72" rx="7"/>
+  </g>
+  <g fill="#62d29b"><circle cx="413" cy="368" r="8"/><circle cx="503" cy="368" r="8"/><circle cx="593" cy="368" r="8"/><circle cx="683" cy="368" r="8"/><circle cx="773" cy="368" r="8"/></g>
+  <text x="600" y="700" text-anchor="middle" font-family="Arial,sans-serif" font-size="47" font-weight="700" fill="#214b60">5 Ports • 2.5GbE</text>
+</svg>
