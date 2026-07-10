@@ -12,7 +12,7 @@ import {
   commercialExpansionRoundups,
 } from "./commercial-expansion-content";
 import { expansionGuides } from "./expansion-guides";
-import { gscPriorityGuides, gscPriorityRoundups } from "./gsc-priority-expansion-content";
+import { gscPriorityGuides, gscPriorityProducts, gscPriorityRoundups } from "./gsc-priority-expansion-content";
 import {
   networkAccessoryExpansionGuides,
   networkAccessoryExpansionProducts,
@@ -1339,7 +1339,7 @@ export const roundups: Roundup[] = [
       { label: "Glare-sensitive monitor", detail: "Choose lights with angle control and test placement before keeping the box." },
     ],
     methodology: ["Match the light to the camera position, not just the desk surface", "Check whether the light causes monitor glare", "Prefer compact controls for frequent meeting days"],
-    productSlugs: ["logitech-litra-glow", "benq-screenbar-halo"],
+    productSlugs: ["logitech-litra-glow", "elgato-key-light-neo", "lume-cube-edge-2-desk-light", "benq-screenbar-halo"],
     faqs: [
       { question: "Is a desk lamp enough for video calls?", answer: "Sometimes. A lamp can help if it lights your face from the front or side, but it can also create harsh shadows or monitor glare." },
       { question: "Do I need a key light?", answer: "A small video light is usually enough for home meetings. Larger key lights make sense for creators or presenters who record often." },
@@ -1427,7 +1427,13 @@ export const roundups: Roundup[] = [
       { label: "Registry upgrade", detail: "Convenience matters most if the unit will be used daily." },
     ],
     methodology: ["Compare bottle and pump-part capacity", "Check drying function versus sterilizing-only models", "Measure counter footprint before buying"],
-    productSlugs: ["momcozy-kleanpal-pro-baby-bottle-washer", "baby-brezza-sterilizer-dryer-advanced"],
+    productSlugs: [
+      "baby-brezza-sterilizer-dryer-advanced",
+      "dr-browns-all-in-one-sterilizer-dryer",
+      "chicco-advanced-sterilizer-dryer",
+      "grownsy-bottle-sterilizer-dryer",
+      "momcozy-kleanpal-pro-baby-bottle-washer",
+    ],
     faqs: [
       { question: "Do all parents need a bottle sterilizer?", answer: "No. Needs vary by feeding routine, medical guidance, and how many bottles or pump parts are used each day." },
       { question: "Is a dryer worth it?", answer: "It can be useful when drying space is limited or parts need to be ready faster." },
@@ -1895,6 +1901,7 @@ guides.push(...verifiedAffiliateBatchGuides);
 products.push(...nextReleaseProducts);
 roundups.push(...nextReleaseRoundups);
 guides.push(...nextReleaseGuides);
+products.push(...gscPriorityProducts);
 roundups.push(...gscPriorityRoundups);
 guides.push(...gscPriorityGuides);
 

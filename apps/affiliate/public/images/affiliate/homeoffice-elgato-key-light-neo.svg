@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Elgato Key Light Neo illustration</title>
+  <desc id="desc">Monitor-mounted video call light illuminating a centered webcam setup.</desc>
+  <rect width="1200" height="900" fill="#f7f8fb"/>
+  <rect x="130" y="100" width="940" height="690" rx="36" fill="#ffffff" stroke="#dce1e8" stroke-width="4"/>
+  <rect x="280" y="250" width="640" height="360" rx="28" fill="#202b3a"/>
+  <rect x="320" y="292" width="560" height="260" rx="18" fill="#ebf3fb"/>
+  <rect x="465" y="170" width="270" height="90" rx="30" fill="#fff7d9" stroke="#e0b653" stroke-width="8"/>
+  <circle cx="600" cy="215" r="20" fill="#e0b653"/>
+  <path d="M430 300c45-55 295-55 340 0" fill="none" stroke="#ffd86b" stroke-width="16" stroke-linecap="round" opacity=".8"/>
+  <circle cx="600" cy="423" r="58" fill="#8db3d9"/>
+  <path d="M500 535c28-74 172-74 200 0" fill="#8db3d9"/>
+  <rect x="560" y="610" width="80" height="98" rx="10" fill="#202b3a"/>
+  <rect x="410" y="708" width="380" height="30" rx="15" fill="#202b3a"/>
+  <text x="600" y="820" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#202b3a">Monitor-Mounted Call Light</text>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">GROWNSY bottle sterilizer and dryer illustration</title>
+  <desc id="desc">Compact countertop bottle sterilizer and dryer with small kitchen measurement cues.</desc>
+  <rect width="1200" height="900" fill="#fbfaf6"/>
+  <rect x="130" y="120" width="940" height="660" rx="40" fill="#ffffff" stroke="#e7dcc8" stroke-width="4"/>
+  <rect x="375" y="205" width="450" height="515" rx="50" fill="#f4f0e8" stroke="#9d8262" stroke-width="8"/>
+  <rect x="430" y="255" width="340" height="355" rx="32" fill="#fffaf0" stroke="#d7b98e" stroke-width="5"/>
+  <g fill="#d7b98e" stroke="#7d6447" stroke-width="5">
+    <path d="M472 365h48v145c0 19-11 34-24 34s-24-15-24-34z"/>
+    <path d="M568 345h48v165c0 19-11 34-24 34s-24-15-24-34z"/>
+    <path d="M664 365h48v145c0 19-11 34-24 34s-24-15-24-34z"/>
+  </g>
+  <path d="M300 720h600" stroke="#37515f" stroke-width="8" stroke-linecap="round"/>
+  <path d="M375 745v-50M825 745v-50" stroke="#37515f" stroke-width="6" stroke-linecap="round"/>
+  <text x="600" y="168" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#37515f">Compact Counter Fit</text>
+  <text x="600" y="770" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" fill="#7d6447">Measure bottles, parts, lid clearance</text>
+</svg>

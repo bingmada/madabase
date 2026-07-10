@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Chicco Advanced Sterilizer and Dryer illustration</title>
+  <desc id="desc">Tall six-bottle sterilizer dryer with cycle controls and filtered drying motif.</desc>
+  <rect width="1200" height="900" fill="#f7fbf8"/>
+  <rect x="120" y="110" width="960" height="680" rx="44" fill="#ffffff" stroke="#d6eadb" stroke-width="4"/>
+  <rect x="340" y="165" width="520" height="580" rx="56" fill="#eef8ef" stroke="#609b70" stroke-width="8"/>
+  <rect x="400" y="230" width="400" height="360" rx="34" fill="#ffffff" opacity=".9"/>
+  <g fill="#b7dcbf" stroke="#477b55" stroke-width="5">
+    <path d="M430 350h42v155c0 17-10 31-21 31s-21-14-21-31z"/>
+    <path d="M500 330h42v175c0 17-10 31-21 31s-21-14-21-31z"/>
+    <path d="M570 350h42v155c0 17-10 31-21 31s-21-14-21-31z"/>
+    <path d="M640 330h42v175c0 17-10 31-21 31s-21-14-21-31z"/>
+    <path d="M710 350h42v155c0 17-10 31-21 31s-21-14-21-31z"/>
+  </g>
+  <rect x="455" y="630" width="290" height="62" rx="31" fill="#ffffff" stroke="#609b70" stroke-width="5"/>
+  <circle cx="505" cy="661" r="14" fill="#609b70"/>
+  <circle cx="600" cy="661" r="14" fill="#609b70"/>
+  <circle cx="695" cy="661" r="14" fill="#609b70"/>
+  <path d="M910 280c55 45 80 95 80 150s-25 105-80 150" fill="none" stroke="#f0b35a" stroke-width="10" stroke-linecap="round"/>
+  <text x="600" y="817" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#34583d">Six-Bottle Capacity</text>
+</svg>
