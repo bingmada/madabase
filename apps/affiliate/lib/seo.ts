@@ -32,6 +32,24 @@ function noteList(items: string[] | undefined) {
   };
 }
 
+function productOffersSchema(product: Product) {
+  const offers = product.offers.filter((offer) => offer.url).slice(0, 3);
+  if (offers.length === 0) return undefined;
+
+  return offers.map((offer) => ({
+    "@type": "Offer",
+    url: offer.url,
+    name: offer.label,
+    priceCurrency: "USD",
+    availability: "https://schema.org/InStock",
+    itemCondition: "https://schema.org/NewCondition",
+    seller: {
+      "@type": "Organization",
+      name: offer.merchant,
+    },
+  }));
+}
+
 export function absoluteUrl(site: SiteConfig, path = "/") {
   return new URL(path, site.domain).toString();
 }
@@ -161,6 +179,7 @@ export function roundupProductListSchema(site: SiteConfig, name: string, product
           },
           sku: product.asin ?? product.slug,
           ...(product.asin ? { identifier: product.asin } : {}),
+          offers: productOffersSchema(product),
           additionalProperty: Object.entries(product.specs)
             .filter(([, value]) => Boolean(value))
             .slice(0, 8)
@@ -247,6 +266,7 @@ export function productNotesSchema(site: SiteConfig, product: Product) {
         },
         sku: product.asin ?? product.slug,
         ...(product.asin ? { identifier: product.asin } : {}),
+        offers: productOffersSchema(product),
         additionalProperty: Object.entries(product.specs)
           .filter(([, value]) => Boolean(value))
           .slice(0, 12)

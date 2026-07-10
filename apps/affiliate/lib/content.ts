@@ -12,6 +12,7 @@ import {
   commercialExpansionRoundups,
 } from "./commercial-expansion-content";
 import { expansionGuides } from "./expansion-guides";
+import { gscPriorityGuides, gscPriorityRoundups } from "./gsc-priority-expansion-content";
 import {
   networkAccessoryExpansionGuides,
   networkAccessoryExpansionProducts,
@@ -1240,8 +1241,8 @@ export const roundups: Roundup[] = [
   {
     site: "homeoffice",
     slug: "best-standing-desks-for-small-spaces",
-    title: "Best Standing Desks for Small Spaces",
-    dek: "Compact desks need stable lift columns, usable depth, realistic monitor placement, and cable routing that does not eat the work surface.",
+    title: "Best Standing Desks for Small Spaces and Bedrooms",
+    dek: "Compact desks need stable lift columns, usable depth, realistic monitor placement, wheel and cable decisions, and a footprint that still leaves the room usable.",
     category: "desks",
     intent: "Find a standing desk that fits a bedroom, rental, or apartment corner without feeling like a temporary folding table.",
     intro: "Small-space standing desks are easy to overbuy. A desk can have a great motor and still be wrong if the top is too shallow, the cable path snags when it rises, or the room no longer works as a bedroom after work. Start with the footprint, then check whether the desk can support your monitor, keyboard, and laptop routine without turning every accessory into a separate project.",
@@ -1326,8 +1327,8 @@ export const roundups: Roundup[] = [
   {
     site: "homeoffice",
     slug: "best-video-call-lighting-for-home-office",
-    title: "Best Video Call Lighting for Home Offices",
-    dek: "Better lighting can improve webcam quality more than buying a new camera, especially in bedrooms, rentals, and dim multipurpose rooms.",
+    title: "Best Home Office Lighting for Video Calls",
+    dek: "Better lighting can improve Zoom, Meet, and Teams calls more than buying a new webcam, especially in bedrooms, rentals, and dim multipurpose rooms.",
     category: "meetings",
     intent: "Pick lighting that improves face exposure without creating glare, desk clutter, or a complicated studio setup.",
     intro: "Video-call lighting should make you look clearer without turning your desk into a studio. For most people, the right move is a small controllable light near the camera, not a giant panel. If your face is dark but the background is bright, even an expensive webcam will struggle.",
@@ -1414,8 +1415,8 @@ export const roundups: Roundup[] = [
   {
     site: "baby",
     slug: "best-bottle-sterilizers-and-dryers",
-    title: "Best Bottle Sterilizers and Dryers for Daily Feeding Routines",
-    dek: "The right sterilizer should match bottle count, pump parts, drying expectations, counter space, and how tired the routine feels.",
+    title: "Best Baby Bottle Sterilizers and Dryers",
+    dek: "The right sterilizer should match baby bottle count, pump parts, drying expectations, counter space, and how tired the feeding cleanup routine feels.",
     category: "feeding",
     intent: "Make bottle cleanup easier without buying a countertop appliance that creates more work.",
     intro: "Bottle sterilizers are most useful when they reduce daily friction. A basic sterilizer can be enough for occasional use, while a sterilizer-dryer combo helps when bottles and pump parts pile up every day. Capacity and drying expectations matter before brand preference.",
@@ -1894,6 +1895,8 @@ guides.push(...verifiedAffiliateBatchGuides);
 products.push(...nextReleaseProducts);
 roundups.push(...nextReleaseRoundups);
 guides.push(...nextReleaseGuides);
+roundups.push(...gscPriorityRoundups);
+guides.push(...gscPriorityGuides);
 
 const includeDrafts = process.env.AFFILIATE_INCLUDE_DRAFTS === "1";
 
