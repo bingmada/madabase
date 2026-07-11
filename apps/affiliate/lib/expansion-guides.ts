@@ -201,10 +201,10 @@ export const expansionGuides: Guide[] = [
   {
     site: "baby",
     slug: "ergobaby-omni-breeze-positions-by-age",
-    title: "Ergobaby Omni Breeze Carry Positions by Age and Milestone",
-    dek: "A position-by-position guide to inward, outward, hip, and back carry without treating age alone as permission to switch.",
+    title: "Ergobaby Omni Breeze Forward-Facing Age Guide",
+    dek: "When can a baby face out? Check weight, height, head and neck control, seat width, inward, outward, hip, and back carry requirements.",
     category: "travel",
-    updatedAt: "July 1, 2026",
+    updatedAt: "July 11, 2026",
     relatedProducts: ["ergobaby-omni-breeze-carrier"],
     relatedRoundups: ["best-baby-carriers-and-sleep-routine-upgrades"],
     sources: [

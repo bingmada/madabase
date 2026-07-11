@@ -109,14 +109,14 @@ export const verifiedAffiliateBatchProducts: Product[] = [
     slug: "ergear-48x24-electric-standing-desk",
     asin: "B0B6JJKSNM",
     seoTitle:
-      "ErGear 48×24 Standing Desk Review: Wheels, Depth & Small-Office Fit",
-    updatedAt,
+      "ErGear 48×24 Electric Standing Desk Review: Is It Good for Small Spaces?",
+    updatedAt: "July 11, 2026",
     name: "ErGear 48×24 Electric Standing Desk with Wheels",
     brand: "ErGear",
     category: "desks",
     image: "/images/affiliate/homeoffice-ergear-48x24-standing-desk.svg",
     summary:
-      "A listing-specific guide to ErGear's 48-by-24-inch electric desk with casters, memory controls, and a split desktop, focused on room fit, monitor distance, wheel stability, cable travel, and configuration checks.",
+      "A buyer-focused review of ErGear's 48-by-24-inch electric standing desk with wheels, covering small-room fit, monitor distance, seated height, wheel stability, cable travel, and the exact listing configuration.",
     verdict:
       "This ErGear is worth comparing when a compact desk must move between rooms or clear a shared space. A fixed-foot desk is the safer choice when maximum stability, a heavy monitor arm, or a one-piece top matters more than mobility.",
     whyItMatters:
@@ -576,8 +576,8 @@ export const verifiedAffiliateBatchRoundups: Roundup[] = [
   {
     site: "homeoffice",
     slug: "ergear-48x24-vs-flexispot-e7-mini",
-    title: "ErGear 48×24 vs FlexiSpot E7 Mini: Mobile Desk or Stiffer Frame?",
-    dek: "Compare a compact desk with wheels against a more permanent frame by room fit, low height, monitor support, desktop construction, cable routing, and price.",
+    title: "FlexiSpot E7 Mini vs ErGear 48×24: Which Small Standing Desk Is Better?",
+    dek: "Compare FlexiSpot vs ErGear by wheels, low height, monitor support, desktop construction, cable routing, room fit, and price.",
     category: "desks",
     intent: "choosing a compact standing desk for a bedroom or shared room",
     intro:

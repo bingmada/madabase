@@ -323,9 +323,9 @@ export const smartHomeRoundups: Roundup[] = [
 
 export const smartHomeGuides: Guide[] = [
   {
-    site: "smarthome", slug: "matter-vs-thread-vs-zigbee", category: "automation", updatedAt,
-    title: "Matter vs Thread vs Zigbee: What Each Smart-Home Label Means",
-    dek: "A plain-language map of application standards, mesh networks, controllers, border routers, hubs, and offline control.",
+    site: "smarthome", slug: "matter-vs-thread-vs-zigbee", category: "automation", updatedAt: "July 11, 2026",
+    title: "Matter vs Zigbee vs Thread: Which Smart-Home Standard Do You Need?",
+    dek: "Understand Matter vs Zigbee vs Thread, including radios, controllers, border routers, hubs, compatibility, and offline control.",
     sections: [
       { heading: "Matter is the common application language", body: "Matter defines how supported device types can be commissioned and controlled across compatible ecosystems. A Matter logo does not identify the radio by itself; Matter can run over Wi-Fi, Ethernet, or Thread." },
       { heading: "Thread is an IP mesh network", body: "Thread is a low-power IPv6 mesh used by devices such as sensors and locks. Thread devices need a compatible border router to connect the Thread mesh with the home's other IP networks." },

@@ -205,10 +205,10 @@ export const topicClusterGuides: Guide[] = [
   {
     site: "smarthome",
     slug: "tapo-p125m-vs-p110m",
-    title: "Tapo P125M vs. P110M",
-    dek: "Compare compact outlet fit, Matter control, energy monitoring, pack options, and the model-number details hidden by similar Tapo names.",
+    title: "Tapo P110M vs P125M: Energy Monitoring or Matter?",
+    dek: "Compare Tapo P110M vs P125M by energy monitoring, Matter control, outlet fit, pack options, electrical limits, and model-number details.",
     category: "automation",
-    updatedAt,
+    updatedAt: "July 11, 2026",
     relatedProducts: ["tapo-p125m-matter-smart-plug"],
     relatedRoundups: ["matter-starter-kit-hub-sensor-smart-plug"],
     sources: [

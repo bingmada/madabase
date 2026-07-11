@@ -19,6 +19,7 @@ import {
   networkAccessoryExpansionRoundups,
 } from "./network-accessory-expansion-content";
 import { networkGuides, networkProducts, networkRoundups, networkTools } from "./network-content";
+import { networkMultigigGuides, networkMultigigRoundups } from "./network-multigig-expansion-content";
 import {
   networkPoeExpansionGuides,
   networkPoeExpansionProducts,
@@ -1241,8 +1242,8 @@ export const roundups: Roundup[] = [
   {
     site: "homeoffice",
     slug: "best-standing-desks-for-small-spaces",
-    title: "Best Standing Desks for Small Spaces and Bedrooms",
-    dek: "Compact desks need stable lift columns, usable depth, realistic monitor placement, wheel and cable decisions, and a footprint that still leaves the room usable.",
+    title: "Best Standing Desk for Small Spaces: 3 Compact Picks",
+    dek: "Compare three compact standing desks for bedrooms and apartments by footprint, depth, wheels, monitor placement, cable travel, and stability.",
     category: "desks",
     intent: "Find a standing desk that fits a bedroom, rental, or apartment corner without feeling like a temporary folding table.",
     intro: "Small-space standing desks are easy to overbuy. A desk can have a great motor and still be wrong if the top is too shallow, the cable path snags when it rises, or the room no longer works as a bedroom after work. Start with the footprint, then check whether the desk can support your monitor, keyboard, and laptop routine without turning every accessory into a separate project.",
@@ -1415,8 +1416,8 @@ export const roundups: Roundup[] = [
   {
     site: "baby",
     slug: "best-bottle-sterilizers-and-dryers",
-    title: "Best Baby Bottle Sterilizers and Dryers",
-    dek: "The right sterilizer should match baby bottle count, pump parts, drying expectations, counter space, and how tired the feeding cleanup routine feels.",
+    title: "Best Baby Bottle Sterilizer and Dryer: 5 Picks for Pump Parts",
+    dek: "Compare five bottle sterilizer and dryer options by bottle count, pump-part fit, drying, counter space, cycle modes, and cleanup routine.",
     category: "feeding",
     intent: "Make bottle cleanup easier without buying a countertop appliance that creates more work.",
     intro: "Bottle sterilizers are most useful when they reduce daily friction. A basic sterilizer can be enough for occasional use, while a sterilizer-dryer combo helps when bottles and pump parts pile up every day. Capacity and drying expectations matter before brand preference.",
@@ -1866,6 +1867,8 @@ export const tools: Tool[] = [
 products.push(...networkProducts);
 roundups.push(...networkRoundups);
 guides.push(...networkGuides);
+roundups.push(...networkMultigigRoundups);
+guides.push(...networkMultigigGuides);
 guides.push(...expansionGuides);
 tools.push(...networkTools);
 products.push(...networkAccessoryExpansionProducts);
