@@ -13,7 +13,7 @@ export const nextReleaseProducts: Product[] = [
     name: "TP-Link Deco BE65 Pro Wi-Fi 7 Mesh",
     brand: "TP-Link",
     category: "wifi",
-    image: "/images/affiliate/network-tp-link-deco-be65-pro-wifi-7-mesh.svg",
+    image: "/images/affiliate/network-mesh-router-generic-realistic.webp",
     summary:
       "A research-based guide to the US Deco BE65 Pro, including its tri-band BE11000 radios, two 5GbE ports, one 2.5GbE port, 6GHz backhaul options, and the narrower situations where it is worth choosing over Deco BE63.",
     verdict:

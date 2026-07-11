@@ -29,7 +29,7 @@ export const sites: Record<SiteKey, SiteConfig> = {
     domain: process.env.NEXT_PUBLIC_PET_SITE_URL ?? "https://pets.madabase.com",
     hostHints: ["pet", "paw"],
     disclosure: "As an Amazon Associate I earn from qualifying purchases. PawSelect Picks may also earn commissions from other retailer links. Recommendations are based on routine fit, specifications, cleaning effort, and trade-offs.",
-    heroImage: "/images/affiliate/hero-pet.webp",
+    heroImage: "/images/affiliate/hero-pet-realistic.webp",
     theme: {
       brand: "#126a5f",
       brandStrong: "#0d4f47",
@@ -51,7 +51,7 @@ export const sites: Record<SiteKey, SiteConfig> = {
     domain: process.env.NEXT_PUBLIC_HOMEOFFICE_SITE_URL ?? "https://homeoffice.madabase.com",
     hostHints: ["homeoffice", "desk", "office"],
     disclosure: "As an Amazon Associate I earn from qualifying purchases. Deskwise Picks may also earn commissions from other retailer links. Recommendations are based on use-case fit, specifications, ergonomics, and long-term value.",
-    heroImage: "/images/affiliate/hero-homeoffice.webp",
+    heroImage: "/images/affiliate/hero-homeoffice-realistic.webp",
     theme: {
       brand: "#245b75",
       brandStrong: "#183e51",
@@ -73,7 +73,7 @@ export const sites: Record<SiteKey, SiteConfig> = {
     domain: process.env.NEXT_PUBLIC_BABY_SITE_URL ?? "https://baby.madabase.com",
     hostHints: ["baby", "nest"],
     disclosure: "As an Amazon Associate I earn from qualifying purchases. NestCheck Picks may also earn commissions from other retailer links. We keep safety notes, limitations, and fit guidance visible on buying pages.",
-    heroImage: "/images/affiliate/hero-baby.webp",
+    heroImage: "/images/affiliate/hero-baby-realistic.webp",
     theme: {
       brand: "#846036",
       brandStrong: "#5d4226",
@@ -95,7 +95,7 @@ export const sites: Record<SiteKey, SiteConfig> = {
     domain: process.env.NEXT_PUBLIC_NETWORK_SITE_URL ?? "https://network.madabase.com",
     hostHints: ["network", "wifi", "router", "signal"],
     disclosure: "As an Amazon Associate I earn from qualifying purchases. Signalwise Picks may also earn commissions from other retailer links. Recommendations are based on home layout, wired backhaul options, speed needs, device count, and setup trade-offs.",
-    heroImage: "/images/affiliate/hero-network.webp",
+    heroImage: "/images/affiliate/hero-network-realistic.webp",
     theme: {
       brand: "#255f8f",
       brandStrong: "#173f63",
@@ -117,7 +117,7 @@ export const sites: Record<SiteKey, SiteConfig> = {
     domain: process.env.NEXT_PUBLIC_SMARTHOME_SITE_URL ?? "https://smarthome.madabase.com",
     hostHints: ["smarthome", "smart-home", "dwell"],
     disclosure: "As an Amazon Associate I earn from qualifying purchases. Dwellwise Picks may also earn commissions from other retailer links. Recommendations are based on compatibility, installation requirements, privacy choices, subscriptions, and everyday control paths.",
-    heroImage: "/images/affiliate/hero-smarthome.svg",
+    heroImage: "/images/affiliate/hero-smarthome-realistic.webp",
     theme: {
       brand: "#176b6b",
       brandStrong: "#114b56",

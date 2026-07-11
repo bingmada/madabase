@@ -927,7 +927,7 @@ export const products: Product[] = [
     name: "Baby Jogger City Tour 2 Stroller",
     brand: "Baby Jogger",
     category: "travel",
-    image: "/images/affiliate/baby-baby-jogger-city-tour-2-stroller.svg",
+    image: "/images/affiliate/baby-travel-stroller-realistic.webp",
     summary: "A compact travel stroller for families who need a smaller fold without giving up everyday errand usability.",
     verdict: "City Tour 2 is a practical travel-stroller pick when storage and car-trunk space matter, but the stroller still needs to feel useful outside the airport.",
     whyItMatters: "Travel strollers are often bought for one trip, then used for errands every week. Fold size, recline, basket access, and wheel behavior all matter.",

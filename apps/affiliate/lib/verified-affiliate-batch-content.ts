@@ -14,7 +14,7 @@ export const verifiedAffiliateBatchProducts: Product[] = [
     name: "PETLIBRO One RFID Smart Feeder",
     brand: "PETLIBRO",
     category: "feeding",
-    image: "/images/affiliate/pet-petlibro-one-rfid-smart-feeder.svg",
+    image: "/images/affiliate/pet-smart-feeder-realistic.webp",
     summary:
       "A model-specific guide to PETLIBRO's PLAF301 access-controlled feeder, including its dedicated collar tag, one-tag limit, dry-food range, meal schedules, reader mat, Wi-Fi, and backup-power behavior.",
     verdict:
@@ -114,7 +114,7 @@ export const verifiedAffiliateBatchProducts: Product[] = [
     name: "ErGear 48×24 Electric Standing Desk with Wheels",
     brand: "ErGear",
     category: "desks",
-    image: "/images/affiliate/homeoffice-ergear-48x24-standing-desk.svg",
+    image: "/images/affiliate/homeoffice-ergear-48x24-standing-desk-realistic.webp",
     summary:
       "A buyer-focused review of ErGear's 48-by-24-inch electric standing desk with wheels, covering small-room fit, monitor distance, seated height, wheel stability, cable travel, and the exact listing configuration.",
     verdict:
@@ -214,7 +214,7 @@ export const verifiedAffiliateBatchProducts: Product[] = [
     name: "Baby Tula Lite Carrier",
     brand: "Baby Tula",
     category: "travel",
-    image: "/images/affiliate/baby-tula-lite-carrier.svg",
+    image: "/images/affiliate/baby-carrier-realistic.webp",
     summary:
       "A safety-first guide to the packable ripstop Tula Lite, including its 12–30 lb range, inward-front and back carry positions, attached storage pouch, hood, fit checks, and newborn and outward-facing limits.",
     verdict:
@@ -314,7 +314,7 @@ export const verifiedAffiliateBatchProducts: Product[] = [
     name: "TRENDnet TEG-S380 8-Port 2.5G Switch",
     brand: "TRENDnet",
     category: "wired",
-    image: "/images/affiliate/network-trendnet-teg-s380-switch.svg",
+    image: "/images/affiliate/network-ethernet-switch-realistic.webp",
     summary:
       "A version-aware guide to TRENDnet's unmanaged eight-port 2.5GbE switch, including fanless operation, Cat5e-or-better cabling, its 40Gbps official switching specification, and the hardware-version check the Amazon title does not make obvious.",
     verdict:
@@ -414,7 +414,7 @@ export const verifiedAffiliateBatchProducts: Product[] = [
     name: "ULTRALOQ Bolt SE Smart Lock",
     brand: "ULTRALOQ",
     category: "access",
-    image: "/images/affiliate/smarthome-ultraloq-bolt-se.svg",
+    image: "/images/affiliate/smarthome-smart-lock-realistic.webp",
     summary:
       "A variant-aware guide to the Bolt SE fingerprint deadbolt, covering Matter over Thread versus Wi-Fi connectivity, controller requirements, entry methods, battery routine, weather rating, door measurements, and physical-key fallback.",
     verdict:

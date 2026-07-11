@@ -30,7 +30,7 @@ export const networkProducts: Product[] = [
     amazonTitle: "TP-Link Deco BE63 BE10000 Wireless Tri-Band 2.5G 3-Piece Whole Home Mesh System",
     brand: "TP-Link",
     category: "wifi",
-    image: "/images/affiliate/network-tp-link-deco-be63-wifi-7-mesh.webp",
+    image: "/images/affiliate/network-tp-link-deco-be63-wifi-7-mesh-realistic.webp",
     summary: "A research-based TP-Link Deco BE63 BE10000 review for shoppers checking the 3-piece wireless tri-band Wi-Fi 7 mesh listing, 2.5G ports, Deco 7 Pro BE63 naming, wired backhaul, and BE67 or BE85 alternatives.",
     verdict: "The Deco BE63 is the disciplined Wi-Fi 7 mesh pick when you need coverage, Ethernet backhaul, and several 2.5Gbps ports without jumping to a BE67 or BE85 budget. It is less compelling for small apartments, mostly Wi-Fi 6 clients, or homes where one well-placed router would solve the problem.",
     whyItMatters: "Mesh speed claims only matter when coverage, node placement, and backhaul are realistic. Multi-gig ports are especially useful if your modem, office, or switch can use them.",

@@ -215,6 +215,11 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
             <div className="relative mt-8 aspect-[16/9] w-full overflow-hidden rounded-md">
               <Image className="object-cover" src={displayImage} alt={displayName} fill priority sizes="(min-width: 1024px) 720px, 100vw" />
             </div>
+            {displayImage.includes("-realistic.webp") ? (
+              <p className="mt-2 text-xs leading-5 text-[var(--muted)]">
+                Editorial image for visual context; the linked listing may have a different product appearance or configuration.
+              </p>
+            ) : null}
             <div className="prose-lite mt-8">
               <div className="not-prose rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-5">
                 <h2 className="text-xl font-bold">Quick verdict</h2>
