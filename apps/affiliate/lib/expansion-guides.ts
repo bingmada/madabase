@@ -28,11 +28,12 @@ export const expansionGuides: Guide[] = [
   {
     site: "network",
     slug: "ethernet-stuck-at-100-mbps-guide",
-    title: "Ethernet Stuck at 100 Mbps? What to Check Before Buying New Gear",
-    dek: "Work through the cable, port, adapter, wall jack, and negotiation path before replacing your router, switch, or internet plan.",
+    title: "Ethernet Stuck at 100 Mbps? Fix the Cable, Port or Adapter",
+    dek: "Find the local link bottleneck in the cable, port, adapter, wall jack, or negotiation path before replacing your router or internet plan.",
     category: "wired",
-    updatedAt: "June 27, 2026",
+    updatedAt: "July 12, 2026",
     relatedRoundups: ["best-wired-networking-upgrades"],
+    relatedProducts: ["jadaol-cat6-flat-ethernet-cable", "netgear-gs308e-gigabit-switch", "tp-link-ue302c-2-5g-usb-c-ethernet-adapter"],
     sources: [
       {
         name: "Intel Support: Ethernet Link Speed Capped at 100 Mbps",
@@ -260,10 +261,10 @@ export const expansionGuides: Guide[] = [
   {
     site: "network",
     slug: "deco-be63-ethernet-backhaul-setup",
-    title: "Deco BE63 Ethernet Backhaul Setup and Topology Guide",
-    dek: "Wire BE63 nodes in the correct order, understand router and access-point layouts, and avoid loops before blaming Wi-Fi 7.",
+    title: "Deco BE63 Ethernet Backhaul: How to Connect Nodes Safely",
+    dek: "Connect BE63 nodes in the correct order, understand router and access-point layouts, and avoid loops before blaming Wi-Fi 7.",
     category: "wifi",
-    updatedAt: "July 1, 2026",
+    updatedAt: "July 12, 2026",
     relatedProducts: ["tp-link-deco-be63-wifi-7-mesh"],
     relatedRoundups: ["best-mesh-wifi-for-apartments-and-homes", "best-wired-networking-upgrades"],
     sources: [

@@ -377,7 +377,7 @@ export const commercialExpansionProducts: Product[] = [
 
 export const commercialExpansionRoundups: Roundup[] = [
   {
-    site: "network", slug: "deco-be25-vs-be63", title: "Deco BE25 vs BE63: Which TP-Link Wi-Fi 7 Mesh Should You Buy?", dek: "Compare dual-band and tri-band Wi-Fi 7, 6GHz, port count, wireless backhaul, pack pricing, and whether Ethernet makes BE25 the better value.", category: "wifi",
+    site: "network", slug: "deco-be25-vs-be63", title: "Deco BE25 vs BE63: 6GHz, Ports and Which Wi-Fi 7 Mesh to Buy", dek: "Compare dual-band BE25 with tri-band BE63 by 6GHz, 2.5GbE port count, wireless backhaul, pack pricing, and value.", category: "wifi",
     intent: "Choose the least expensive Deco that still fits the home's backhaul and wired-device plan.",
     intro: "BE25 wins on price; BE63 adds 6GHz and four 2.5GbE ports. Ethernet availability is often the deciding factor.",
     decisionGuide: [{ label: "Best value", detail: "Choose BE25 when dual-band mesh and two ports are enough." }, { label: "Wireless backhaul", detail: "Choose BE63 for a separate 6GHz path and higher capacity." }, { label: "More wired devices", detail: "BE63 provides four 2.5GbE ports per node." }, { label: "Gigabit home", detail: "BE25 often leaves budget for wiring." }],
