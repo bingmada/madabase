@@ -13,7 +13,7 @@ function quickAnswer(roundupTitle: string, intent: string, picks: Array<ReturnTy
   const firstPick = picks.find(Boolean);
   if (!firstPick) return intent;
 
-  return `${roundupTitle}: start with ${firstPick.name} if your main need is ${firstPick.bestFor.toLowerCase()}. Compare the trade-offs before buying, especially ${firstPick.cons[0].toLowerCase()}.`;
+  return `Start with ${firstPick.name} if your main need is ${firstPick.bestFor.toLowerCase()}. Compare the trade-offs before buying, especially ${firstPick.cons[0].toLowerCase()}.`;
 }
 
 const roundupAdvice: Record<SiteKey, Record<string, { spendMore: string; spendLess: string; compare: string[] }>> = {
@@ -235,6 +235,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
                 <h2 className="mt-2 text-xl font-bold">{topPick.amazonTitle ?? topPick.name}</h2>
                 <p className="mt-2 text-sm leading-6 text-[var(--muted)]">Best for: {topPick.bestFor}</p>
                 <p className="mt-1 text-sm leading-6 text-[var(--muted)]">Skip if: {topPickTradeOff}</p>
+                <p className="mt-1 text-sm font-semibold leading-6 text-[var(--brand-strong)]">Price band: {topPick.priceBand}</p>
               </div>
               <div className="flex flex-wrap items-start gap-2 sm:justify-end">
                 <Link className="button-secondary" href={`/reviews/${topPick.slug}`}>

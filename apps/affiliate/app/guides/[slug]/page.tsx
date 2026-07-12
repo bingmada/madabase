@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { AffiliateButtonGroup } from "@/components/AffiliateButton";
 import { JsonLd } from "@/components/JsonLd";
 import { findGuide, findProduct, findRoundup } from "@/lib/content";
 import { breadcrumbSchema, guideSchema, pageMetadata } from "@/lib/seo";
@@ -139,6 +140,13 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
   if (!guide) notFound();
   const advice = guideAdvice(site.key, guide.category);
   const category = site.categories.find((item) => item.slug === guide.category);
+  const relatedProducts = (guide.relatedProducts ?? [])
+    .map((productSlug) => findProduct(site.key, productSlug))
+    .filter((product): product is NonNullable<ReturnType<typeof findProduct>> => Boolean(product));
+  const topProduct = relatedProducts[0];
+  const topRoundup = guide.relatedRoundups
+    .map((roundupSlug) => findRoundup(site.key, roundupSlug))
+    .find(Boolean);
 
   return (
     <main className="section">
@@ -164,6 +172,31 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
           <span>Prepared by the {site.name} editorial desk</span>
           {guide.updatedAt ? <span>Updated {guide.updatedAt}</span> : null}
         </div>
+        {topProduct || topRoundup ? (
+          <section className="mt-8 rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-5">
+            <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <p className="eyebrow">Best starting point</p>
+                <h2 className="mt-2 text-2xl font-bold">{topProduct ? topProduct.name : "Compare the short list"}</h2>
+                <p className="mt-2 max-w-2xl leading-7 text-[var(--muted)]">
+                  {topProduct
+                    ? `Start with the evidence page for ${topProduct.name}, then compare the alternatives against your layout, budget, and compatibility needs.`
+                    : "Use the comparison page to narrow the choices before reading the setup details below."}
+                </p>
+                {topProduct ? <p className="mt-2 text-sm font-semibold text-[var(--brand-strong)]">Price band: {topProduct.priceBand}</p> : null}
+              </div>
+              <div className="flex shrink-0 flex-wrap gap-2 sm:justify-end">
+                {topProduct ? (
+                  <>
+                    <Link className="button-secondary" href={`/reviews/${topProduct.slug}`}>Read evidence</Link>
+                    <AffiliateButtonGroup site={site.key} product={topProduct} position="guide-hero-primary" limit={1} />
+                  </>
+                ) : null}
+                {topRoundup ? <Link className="button-secondary" href={`/best/${topRoundup.slug}`}>Compare picks</Link> : null}
+              </div>
+            </div>
+          </section>
+        ) : null}
         <article className="prose-lite mt-8">
           {guide.sections.map((section) => (
             <section key={section.heading}>

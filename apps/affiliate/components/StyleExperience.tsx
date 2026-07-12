@@ -39,6 +39,7 @@ export function StyleChrome({ site, children }: { site: SiteConfig; children: Re
             <Link href="/methodology">How we choose</Link>
             <Link href="/editorial-policy">Editorial policy</Link>
             <Link href="/affiliate-disclosure">Affiliate disclosure</Link>
+            <Link href="/privacy">Privacy</Link>
             <Link href="/contact">Contact</Link>
           </nav>
           <nav className="md:col-span-2 flex flex-wrap gap-x-4 gap-y-2 text-xs font-bold uppercase tracking-[0.14em] text-[#cfc2ba]" aria-label="Madabase network">

@@ -171,55 +171,62 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
       />
       <JsonLd data={productNotesSchema(site, product)} />
       <div className="shell">
-        <div className="grid gap-8 lg:grid-cols-[1fr_380px]">
-          <article>
-            <div className="flex flex-wrap items-center gap-3">
-              <p className="eyebrow">{product.brand}</p>
-              {category ? (
-                <Link className="text-xs font-bold uppercase text-[var(--brand-strong)] hover:underline" href={`/categories/${category.slug}`}>
-                  {category.name}
-                </Link>
-              ) : null}
-            </div>
-            <h1 className="mt-3 text-4xl font-black leading-tight">{product.seoTitle ?? `${displayName} Buying Notes`}</h1>
-            <p className="mt-5 text-lg leading-8 text-[var(--muted)]">{product.summary}</p>
-            {product.updatedAt ? (
-              <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm font-semibold text-[var(--muted)]">
-                <span>Prepared by the {site.name} editorial desk</span>
-                <span>Updated {product.updatedAt}</span>
-              </div>
-            ) : null}
-            <div className="mt-6 flex flex-wrap items-center gap-3">
-              <span className="rounded-md bg-[var(--brand-soft)] px-3 py-2 font-semibold text-[var(--brand-strong)]">{product.bestFor}</span>
-              {primaryOffers.length ? (
-                <a className="button-secondary" href="#buying-options">
-                  Check buying options
-                </a>
-              ) : null}
-            </div>
-            {primaryOffers.length ? (
-              <div className="mt-5 rounded-md border border-[var(--border)] bg-white p-4 lg:hidden">
-                <p className="text-xs font-bold uppercase text-[var(--muted)]">Check the exact configuration</p>
-                <div className="mt-2 space-y-2 text-sm leading-6 text-[var(--muted)]">
-                  {primaryOffers.map((offer) => (
-                    <p key={offer.merchant}>
-                      <span className="font-semibold text-[var(--text)]">{offer.merchant}:</span> {offer.priceNote}
-                    </p>
-                  ))}
+        <div className="grid min-w-0 gap-8 lg:grid-cols-[minmax(0,1fr)_380px]">
+          <article className="min-w-0">
+            <div className="grid gap-7 md:grid-cols-[minmax(0,1fr)_minmax(250px,0.78fr)] md:items-start">
+              <div>
+                <div className="flex flex-wrap items-center gap-3">
+                  <p className="eyebrow">{product.brand}</p>
+                  {category ? (
+                    <Link className="text-xs font-bold uppercase text-[var(--brand-strong)] hover:underline" href={`/categories/${category.slug}`}>
+                      {category.name}
+                    </Link>
+                  ) : null}
                 </div>
-                <div className="mt-3 flex flex-wrap gap-2">
-                  <AffiliateButtonGroup site={site.key} product={product} position="review-mobile-intro" />
+                <h1 className="mt-3 text-4xl font-black leading-tight">{product.seoTitle ?? `${displayName} Buying Notes`}</h1>
+                <p className="mt-5 text-lg leading-8 text-[var(--muted)]">{product.summary}</p>
+                {product.updatedAt ? (
+                  <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm font-semibold text-[var(--muted)]">
+                    <span>Prepared by the {site.name} editorial desk</span>
+                    <span>Updated {product.updatedAt}</span>
+                  </div>
+                ) : null}
+                <div className="mt-6 flex flex-wrap items-center gap-3">
+                  <span className="rounded-md bg-[var(--brand-soft)] px-3 py-2 font-semibold text-[var(--brand-strong)]">{product.bestFor}</span>
+                  <span className="rounded-md border border-[var(--border)] bg-white px-3 py-2 text-sm font-semibold text-[var(--muted)]">Price band: {product.priceBand}</span>
+                  {primaryOffers.length ? (
+                    <a className="button-secondary" href="#buying-options">
+                      Check buying options
+                    </a>
+                  ) : null}
                 </div>
+                {primaryOffers.length ? (
+                  <div className="mt-5 rounded-md border border-[var(--border)] bg-white p-4 md:hidden">
+                    <p className="text-xs font-bold uppercase text-[var(--muted)]">Check the exact configuration</p>
+                    <div className="mt-2 space-y-2 text-sm leading-6 text-[var(--muted)]">
+                      {primaryOffers.map((offer) => (
+                        <p key={offer.merchant}>
+                          <span className="font-semibold text-[var(--text)]">{offer.merchant}:</span> {offer.priceNote}
+                        </p>
+                      ))}
+                    </div>
+                    <div className="mt-3 flex flex-wrap gap-2">
+                      <AffiliateButtonGroup site={site.key} product={product} position="review-mobile-intro" />
+                    </div>
+                  </div>
+                ) : null}
               </div>
-            ) : null}
-            <div className="relative mt-8 aspect-[16/9] w-full overflow-hidden rounded-md">
-              <Image className="object-cover" src={displayImage} alt={displayName} fill priority sizes="(min-width: 1024px) 720px, 100vw" />
+              <div>
+                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-md bg-[var(--surface-muted)]">
+                  <Image className="object-cover" src={displayImage} alt={displayName} fill priority sizes="(min-width: 768px) 300px, 100vw" />
+                </div>
+                {displayImage.includes("-realistic.webp") ? (
+                  <p className="mt-2 text-xs leading-5 text-[var(--muted)]">
+                    Editorial image for visual context; the linked listing may have a different product appearance or configuration.
+                  </p>
+                ) : null}
+              </div>
             </div>
-            {displayImage.includes("-realistic.webp") ? (
-              <p className="mt-2 text-xs leading-5 text-[var(--muted)]">
-                Editorial image for visual context; the linked listing may have a different product appearance or configuration.
-              </p>
-            ) : null}
             <div className="prose-lite mt-8">
               <div className="not-prose rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-5">
                 <h2 className="text-xl font-bold">Quick verdict</h2>
@@ -249,8 +256,8 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                   ))}
                 </dl>
               </div>
-              <div className="not-prose mt-5 grid gap-5 lg:grid-cols-2">
-                <section className="rounded-md border border-[var(--border)] bg-white p-5">
+              <div className="not-prose mt-5 grid min-w-0 gap-5 lg:grid-cols-2">
+                <section className="min-w-0 rounded-md border border-[var(--border)] bg-white p-5">
                   <h2 className="text-xl font-bold">Amazon listing verification</h2>
                   <dl className="mt-4 divide-y divide-[var(--border)]">
                     {listingRows.map(([label, value]) => (
@@ -261,7 +268,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                     ))}
                   </dl>
                 </section>
-                <section className="rounded-md border border-[var(--border)] bg-white p-5">
+                <section className="min-w-0 rounded-md border border-[var(--border)] bg-white p-5">
                   <h2 className="text-xl font-bold">Update record</h2>
                   <dl className="mt-4 divide-y divide-[var(--border)]">
                     {updateRows.map(([label, value]) => (
@@ -297,8 +304,8 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                   </ul>
                 </section>
               </div>
-              <div className="not-prose mt-5 grid gap-5 lg:grid-cols-2">
-                <section className="rounded-md border border-[var(--border)] bg-white p-5">
+              <div className="not-prose mt-5 grid min-w-0 gap-5 lg:grid-cols-2">
+                <section className="min-w-0 rounded-md border border-[var(--border)] bg-white p-5">
                   <h2 className="text-xl font-bold">Official specs referenced</h2>
                   <div className="mt-4 overflow-x-auto">
                     <table className="w-full min-w-[420px] text-left text-sm">
@@ -333,7 +340,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                     <p className="mt-4 text-sm leading-6 text-[var(--muted)]">Official source link is pending; confirm the manufacturer page before relying on a retail listing.</p>
                   )}
                 </section>
-                <section className="rounded-md border border-[var(--border)] bg-white p-5">
+                <section className="min-w-0 rounded-md border border-[var(--border)] bg-white p-5">
                   <h2 className="text-xl font-bold">Fit / skip decision tree</h2>
                   <div className="mt-4 grid gap-3">
                     {decisionBranches.map(([label, detail]) => (
@@ -502,7 +509,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
               ) : null}
             </div>
           </article>
-          <aside className="space-y-5 lg:sticky lg:top-24 lg:self-start">
+          <aside className="min-w-0 space-y-5 lg:sticky lg:top-24 lg:self-start">
             <Disclosure site={site} />
             <div className="panel p-5" id="buying-options">
               <h2 className="text-xl font-bold">Buying options</h2>

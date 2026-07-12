@@ -1,4 +1,4 @@
-import { ArrowRight, CheckCircle2, Scale, Search, ShieldCheck } from "lucide-react";
+import { ArrowRight, CheckCircle2, Menu, Scale, Search, ShieldCheck } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import type { SiteConfig } from "@/lib/sites";
@@ -19,11 +19,11 @@ export function SiteChrome({ site, children }: { site: SiteConfig; children: Rea
       }
     >
       <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-white/95 backdrop-blur">
-        <div className="shell flex min-h-16 items-center justify-between gap-4 overflow-hidden py-3">
+        <div className="shell flex min-h-16 items-center justify-between gap-4 py-3">
           <Link className="shrink-0 whitespace-nowrap text-lg font-black text-[var(--brand-strong)]" href="/">
             {site.name}
           </Link>
-          <nav className="flex min-w-0 flex-nowrap items-center justify-start gap-x-3 overflow-x-auto whitespace-nowrap text-xs font-semibold sm:justify-end sm:gap-x-4 sm:text-sm" aria-label="Primary navigation">
+          <nav className="hidden min-w-0 flex-nowrap items-center justify-end gap-x-3 whitespace-nowrap text-xs font-semibold sm:flex sm:gap-x-4 sm:text-sm" aria-label="Primary navigation">
             <Link className="hidden hover:text-[var(--brand-strong)] sm:inline" href="/">
               Home
             </Link>
@@ -42,6 +42,25 @@ export function SiteChrome({ site, children }: { site: SiteConfig; children: Rea
               Methodology
             </Link>
           </nav>
+          <details className="relative sm:hidden">
+            <summary className="button-secondary list-none cursor-pointer px-3 py-2" aria-label="Open navigation menu">
+              <Menu aria-hidden="true" size={17} />
+              <span>Browse</span>
+            </summary>
+            <div className="panel absolute right-0 top-full z-50 mt-2 w-56 p-2 shadow-[var(--shadow)]">
+              <nav className="grid gap-1 text-sm font-semibold" aria-label="Mobile navigation">
+                <Link className="rounded-md px-3 py-2 hover:bg-[var(--surface-muted)]" href="/">Home</Link>
+                {site.categories.map((category) => (
+                  <Link className="rounded-md px-3 py-2 hover:bg-[var(--surface-muted)]" href={`/categories/${category.slug}`} key={category.slug}>
+                    {category.name}
+                  </Link>
+                ))}
+                <Link className="rounded-md px-3 py-2 hover:bg-[var(--surface-muted)]" href="/#guides">Guides</Link>
+                <Link className="rounded-md px-3 py-2 hover:bg-[var(--surface-muted)]" href="/#tools">Tools</Link>
+                <Link className="rounded-md px-3 py-2 hover:bg-[var(--surface-muted)]" href="/methodology">Methodology</Link>
+              </nav>
+            </div>
+          </details>
         </div>
       </header>
       {children}
@@ -63,6 +82,9 @@ export function SiteChrome({ site, children }: { site: SiteConfig; children: Rea
               </Link>
               <Link className="hover:text-[var(--brand-strong)]" href="/affiliate-disclosure">
                 Affiliate disclosure
+              </Link>
+              <Link className="hover:text-[var(--brand-strong)]" href="/privacy">
+                Privacy
               </Link>
               <Link className="hover:text-[var(--brand-strong)]" href="/contact">
                 Contact

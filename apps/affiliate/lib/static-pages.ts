@@ -1,7 +1,7 @@
 import type { SiteConfig } from "./sites";
 import type { StaticPage } from "./types";
 
-export const staticPageSlugs = ["about", "methodology", "editorial-policy", "affiliate-disclosure", "contact"] as const;
+export const staticPageSlugs = ["about", "methodology", "editorial-policy", "affiliate-disclosure", "privacy", "contact"] as const;
 
 function focusLine(site: SiteConfig) {
   if (site.key === "pet") return "pet-care routines, cleaning effort, replacement parts, home fit, and whether a product reduces daily friction.";
@@ -86,6 +86,29 @@ export function getStaticPages(site: SiteConfig): StaticPage[] {
         {
           heading: "Editorial independence",
           body: "A commission can support the site, but it does not remove the need to show trade-offs, alternatives, and skip-it cases. Pages should still help readers avoid buying the wrong product.",
+        },
+      ],
+    },
+    {
+      slug: "privacy",
+      title: "Privacy and Cookies",
+      dek: `How ${site.name} handles contact messages, basic usage data, cookies, and retailer links.`,
+      sections: [
+        {
+          heading: "Information you provide",
+          body: "If you email us or submit a correction, we may receive the contact details and message you choose to provide. We use that information to respond, investigate the issue, protect the site, and maintain accurate buying notes. Please do not send passwords, payment details, private keys, or other sensitive information in a correction email.",
+        },
+        {
+          heading: "Site usage and cookies",
+          body: "The site may process basic technical and usage information needed for security, reliability, measurement, and performance. Cookies or similar technologies may be used by the site, analytics providers, affiliate networks, Amazon, eBay, or other linked retailers. Third-party services apply their own privacy policies and cookie controls.",
+        },
+        {
+          heading: "Affiliate and external links",
+          body: "When you follow a retailer link, the destination may set its own cookies or record the visit for attribution. Prices, inventory, seller information, checkout, and account handling belong to the retailer. Review the destination site's privacy policy before completing a purchase or submitting personal information.",
+        },
+        {
+          heading: "Your choices and contact",
+          body: "You can use browser settings to limit cookies and can contact 15797688584@163.com with a privacy question about a message you sent us. We may update this page when the site's analytics, affiliate relationships, or legal requirements change.",
         },
       ],
     },
