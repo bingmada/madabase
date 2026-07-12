@@ -323,6 +323,25 @@ export const smartHomeRoundups: Roundup[] = [
 
 export const smartHomeGuides: Guide[] = [
   {
+    site: "smarthome", slug: "matter-over-thread-hub-checklist", category: "automation", updatedAt: "July 12, 2026",
+    title: "Matter Over Thread Hub: Controller and Border Router Checklist",
+    dek: "Match the Matter controller, Thread border router, Wi-Fi path, ecosystem, and accessory before buying a hub for Matter over Thread devices.",
+    sections: [
+      { heading: "Matter and Thread answer different questions", body: "Matter describes the device-control layer, while Thread provides a low-power IP mesh for supported accessories. A Matter-over-Thread sensor or lock needs both a Matter commissioning path and a compatible Thread network path." },
+      { heading: "Name the controller and border router separately", body: "The Matter controller commissions and manages the accessory. The Thread border router connects the Thread mesh to the wider IP network. One hub can perform both roles, but a phone, speaker, display, or hub should be checked by its exact model and software." },
+      { heading: "Wi-Fi Matter devices do not need Thread", body: "A Matter device using Wi-Fi can join the home without a Thread radio path, while a Matter-over-Thread accessory cannot simply use the Wi-Fi password. Confirm the transport shown in the exact product listing before buying a border router." },
+      { heading: "Plan the ecosystem and multi-admin path", body: "Decide whether the accessory will live in Apple Home, Google Home, Alexa, SmartThings, Home Assistant, or more than one ecosystem. Check controller support, Thread border-router availability, and whether the desired multi-admin setup is supported before opening the box." },
+      { heading: "Keep local recovery visible", body: "Locks, sensors, and lights should still have a recovery plan when the internet, hub, or phone is unavailable. Record the reset process, keep physical entry or manual controls available, and avoid assuming Matter removes every vendor account requirement." },
+    ],
+    sources: [
+      { name: "Connectivity Standards Alliance: Matter", url: "https://csa-iot.org/all-solutions/matter/", note: "Primary Matter scope and ecosystem reference." },
+      { name: "Thread Group: What is Thread?", url: "https://www.threadgroup.org/What-is-Thread/Overview", note: "Primary Thread mesh and border-router reference." },
+      { name: "Aqara Hub M3", url: "https://www.aqara.com/us/product/hub-m3/", note: "Concrete hub example with Matter controller, Thread border-router, Zigbee, and network roles." },
+    ],
+    relatedRoundups: ["matter-starter-kit-hub-sensor-smart-plug"],
+    relatedProducts: ["aqara-hub-m3", "aqara-door-and-window-sensor-p2", "aqara-smart-lock-u400", "tapo-p125m-matter-smart-plug"],
+  },
+  {
     site: "smarthome", slug: "matter-vs-thread-vs-zigbee", category: "automation", updatedAt: "July 11, 2026",
     title: "Matter vs Zigbee vs Thread: Which Smart-Home Standard Do You Need?",
     dek: "Understand Matter vs Zigbee vs Thread, including radios, controllers, border routers, hubs, compatibility, and offline control.",

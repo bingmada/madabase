@@ -10,6 +10,14 @@ export type BlogPost = BlogFrontmatter & {
   html: string;
 };
 
+const minimumIndexableBodyLength = 1200;
+
+export function isIndexableBlogPost(post: BlogPost) {
+  const body = post.content.replace(/\s+/g, " ").trim();
+  const sectionCount = (post.content.match(/^##\s+/gm) || []).length;
+  return body.length >= minimumIndexableBodyLength && sectionCount >= 3;
+}
+
 const blogRoot = path.join(process.cwd(), "content", "blog");
 
 async function readMarkdownFile(filePath: string) {
@@ -49,7 +57,12 @@ export async function getAllBlogPosts(locale: Locale) {
     .sort((a, b) => (a.date < b.date ? 1 : -1));
 }
 
-export async function getLatestBlogPosts(locale: Locale, limit = 4) {
+export async function getIndexableBlogPosts(locale: Locale) {
   const posts = await getAllBlogPosts(locale);
+  return posts.filter(isIndexableBlogPost);
+}
+
+export async function getLatestBlogPosts(locale: Locale, limit = 4) {
+  const posts = await getIndexableBlogPosts(locale);
   return posts.slice(0, limit);
 }

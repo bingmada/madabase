@@ -6,7 +6,7 @@ import { Header } from "@/components/Header";
 import { JsonLd, buildBreadcrumbSchema } from "@/components/JsonLd";
 import { PageViewTracker } from "@/components/PageViewTracker";
 import { AdSlot } from "@/components/AdSlot";
-import { getAllBlogPosts } from "@/lib/blog";
+import { getIndexableBlogPosts } from "@/lib/blog";
 import { isLocale, locales } from "@/lib/i18n";
 import { buildAbsoluteUrl, buildPageMetadata } from "@/lib/seo";
 
@@ -34,7 +34,7 @@ export default async function BlogIndexPage({ params }: { params: Promise<{ loca
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
 
-  const posts = await getAllBlogPosts(locale);
+  const posts = await getIndexableBlogPosts(locale);
   const breadcrumbSchema = buildBreadcrumbSchema([
     { name: "Madabase", item: buildAbsoluteUrl(`/${locale}`) },
     { name: locale === "en" ? "Blog" : "博客", item: buildAbsoluteUrl(`/${locale}/blog`) },
@@ -54,8 +54,8 @@ export default async function BlogIndexPage({ params }: { params: Promise<{ loca
           </h1>
           <p className="mt-5 max-w-3xl text-lg leading-8 text-[var(--text-muted)]">
             {locale === "en"
-              ? "Madabase combines online browser tools with SEO-friendly articles that explain the concepts behind everyday developer tasks."
-              : "Madabase 将在线浏览器工具与 SEO 内容结合起来，让每个页面同时具备实用性与解释能力。"}
+              ? "Madabase combines browser tools with practical articles that explain the concepts behind everyday developer tasks."
+              : "Madabase 将在线浏览器工具与实用文章结合起来，解释日常开发任务背后的概念和方法。"}
           </p>
         </section>
 

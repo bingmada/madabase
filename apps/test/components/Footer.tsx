@@ -12,11 +12,15 @@ export function Footer() {
       description: "Interactive tests for personality, career, relationships, and self-discovery.",
       tests: "All tests",
       tools: "Madabase tools",
+      privacy: "Privacy",
+      terms: "Terms",
     },
     zh: {
       description: "面向人格、职业、关系与自我探索的互动测试。",
       tests: "全部测试",
       tools: "Madabase 工具",
+      privacy: "隐私政策",
+      terms: "使用条款",
     },
   }[locale];
 
@@ -30,6 +34,8 @@ export function Footer() {
         <div className="flex flex-wrap items-center gap-5">
           <Link href={`/${locale}`}>{copy.tests}</Link>
           <a href={`${mainSiteUrl}/${locale}/tools`}>{copy.tools}</a>
+          <a href={`${mainSiteUrl}/${locale}/privacy`}>{copy.privacy}</a>
+          <a href={`${mainSiteUrl}/${locale}/terms`}>{copy.terms}</a>
           <span>© 2026 Madabase</span>
         </div>
       </div>

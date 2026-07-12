@@ -51,6 +51,35 @@ export const expansionGuides: Guide[] = [
   },
   {
     site: "network",
+    slug: "netgear-gs908e-review",
+    title: "NETGEAR GS908E Review: Smart Managed Plus or Old Gigabit Switch?",
+    dek: "Check GS908E's eight gigabit ports, smart management, cable routing, hardware region, and whether GS308E or 2.5GbE is the better buy.",
+    category: "wired",
+    updatedAt: "July 12, 2026",
+    relatedProducts: ["netgear-gs308e-gigabit-switch", "trendnet-teg-s350-2-5g-switch"],
+    relatedRoundups: ["netgear-gs308e-vs-tp-link-tl-sg108", "best-wired-networking-upgrades"],
+    sources: [
+      {
+        name: "NETGEAR GS908E data sheet",
+        url: "https://www.netgear.com/media/GS908_GS908E_tcm148-62499.pdf",
+        note: "Official port count, gigabit limit, smart-management positioning, cable-management design, and regional ordering information.",
+      },
+      {
+        name: "NETGEAR GS908E user manual",
+        url: "https://www.downloads.netgear.com/files/GDC/GS908E/GS908E_UM_EN.pdf",
+        note: "Official setup, web-management, port, and hardware guidance.",
+      },
+    ],
+    sections: [
+      { heading: "GS908E is an eight-port gigabit switch", body: "The GS908E is a Smart Managed Plus gigabit switch. It can add ports and basic management to a home network, but it does not create a 2.5GbE or 10GbE path for a multi-gig internet plan, NAS, or workstation." },
+      { heading: "The E suffix is the buying reason", body: "The managed version is for a defined need such as VLANs, QoS, port status, or troubleshooting visibility. If the job is only to connect a TV, console, desktop, and mesh node, an unmanaged switch may be simpler." },
+      { heading: "Cable management helps placement, not speed", body: "The lifestyle enclosure and cable-routing design can keep a visible desk or media shelf tidier. Route cables with enough bend room and label the uplink, but do not treat a cleaner enclosure as evidence of faster throughput." },
+      { heading: "GS908E versus GS308E versus 2.5GbE", body: "Compare GS908E with GS308E by management features, hardware version, price, and placement. Choose a 2.5GbE switch instead when the Deco BE63, NAS, desktop, or backhaul path must actually exceed gigabit." },
+      { heading: "Check region and current availability", body: "NETGEAR lists separate regional ordering codes and older hardware can remain in search results after the market has moved on. Verify the exact model suffix, authorized seller, warranty, power supply, and return policy before using a low price as the deciding factor." },
+    ],
+  },
+  {
+    site: "network",
     slug: "wired-vs-wireless-mesh-backhaul-guide",
     title: "Wired vs Wireless Mesh Backhaul: When Ethernet Between Nodes Is Worth It",
     dek: "Decide whether Ethernet between mesh nodes is worth the installation effort by checking room layout, ports, switch placement, and node signal.",

@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getAllBlogPosts } from "@/lib/blog";
+import { getIndexableBlogPosts } from "@/lib/blog";
 import { locales } from "@/lib/i18n";
 import { getSiteUrl } from "@/lib/seo";
 import { toolRegistry, getCategories } from "@/lib/tool-registry";
@@ -11,12 +11,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: "", priority: 1, changeFrequency: "weekly" as const },
     { path: "/tools", priority: 0.95, changeFrequency: "weekly" as const },
     { path: "/blog", priority: 0.75, changeFrequency: "weekly" as const },
+    { path: "/about", priority: 0.3, changeFrequency: "yearly" as const },
+    { path: "/editorial-policy", priority: 0.3, changeFrequency: "yearly" as const },
+    { path: "/privacy", priority: 0.2, changeFrequency: "yearly" as const },
+    { path: "/terms", priority: 0.2, changeFrequency: "yearly" as const },
     { path: "/contact", priority: 0.25, changeFrequency: "yearly" as const },
   ];
 
   const blogEntries = await Promise.all(
     locales.map(async (locale) => {
-      const posts = await getAllBlogPosts(locale);
+      const posts = await getIndexableBlogPosts(locale);
       return posts.map((post) => ({
         url: `${baseUrl}/${locale}/blog/${post.slug}`,
         lastModified: new Date(post.date),

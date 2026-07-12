@@ -28,8 +28,6 @@ export async function generateMetadata({
     type: "article",
   });
 
-  if (page.topic === "famous") return metadata;
-
   return {
     ...metadata,
     robots: { index: false, follow: true },
@@ -67,13 +65,13 @@ export default async function MbtiSeoPage({
       eyebrow: "MBTI guide",
       takeTest: "Take the MBTI test",
       related: "Related MBTI pages",
-      disclaimer: "This guide is for self-reflection and SEO discovery. It is not a clinical, hiring, or relationship diagnosis.",
+      disclaimer: "This guide is for self-reflection and general reference. It is not a clinical, hiring, or relationship diagnosis.",
     },
     zh: {
       eyebrow: "MBTI 指南",
       takeTest: "开始 MBTI 测试",
       related: "相关 MBTI 页面",
-      disclaimer: "本页用于自我观察和内容参考，不作为临床、招聘或亲密关系诊断。",
+      disclaimer: "本页用于自我观察和一般参考，不作为临床、招聘或亲密关系诊断。",
     },
   }[locale];
 

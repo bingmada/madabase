@@ -8,11 +8,15 @@ export function Footer() {
   const locale = pathname.startsWith("/zh") ? "zh" : "en";
   const copy = {
     en: {
-      description: "Online tools, practical SEO content, and useful workflows for developers and creators.",
+      description: "Online tools, practical developer guides, and useful workflows for developers and creators.",
       platform: "Platform",
       tools: "Tools",
       blog: "Blog",
       contact: "Contact",
+      about: "About",
+      editorial: "Editorial policy",
+      privacy: "Privacy",
+      terms: "Terms",
       buyingGuides: "Buying Guides",
       petPicks: "Pet gear",
       officePicks: "Home office",
@@ -22,11 +26,15 @@ export function Footer() {
       stylePicks: "Style accessories",
     },
     zh: {
-      description: "在线工具、实用 SEO 内容，以及面向开发者和创作者的高效工作流。",
+      description: "在线工具、实用开发指南，以及面向开发者和创作者的高效工作流。",
       platform: "平台",
       tools: "工具",
       blog: "博客",
       contact: "联系我们",
+      about: "关于我们",
+      editorial: "编辑政策",
+      privacy: "隐私政策",
+      terms: "使用条款",
       buyingGuides: "选购指南",
       petPicks: "宠物用品",
       officePicks: "居家办公",
@@ -50,6 +58,10 @@ export function Footer() {
             <Link href={`/${locale}/tools`}>{copy.tools}</Link>
             <Link href={`/${locale}/blog`}>{copy.blog}</Link>
             <Link href={`/${locale}/contact`}>{copy.contact}</Link>
+            <Link href={`/${locale}/about`}>{copy.about}</Link>
+            <Link href={`/${locale}/editorial-policy`}>{copy.editorial}</Link>
+            <Link href={`/${locale}/privacy`}>{copy.privacy}</Link>
+            <Link href={`/${locale}/terms`}>{copy.terms}</Link>
           </div>
         </div>
         <div>

@@ -1,4 +1,4 @@
-import { getAllBlogPosts } from "@/lib/blog";
+import { getIndexableBlogPosts } from "@/lib/blog";
 import { getSiteUrl } from "@/lib/seo";
 import { getPopularTools, toolRegistry } from "@/lib/tool-registry";
 
@@ -7,7 +7,7 @@ export const dynamic = "force-static";
 export async function GET() {
   const baseUrl = getSiteUrl();
   const popularTools = getPopularTools();
-  const posts = await getAllBlogPosts("en");
+  const posts = await getIndexableBlogPosts("en");
   const topTools = popularTools.length > 0 ? popularTools : toolRegistry.slice(0, 12);
 
   const lines = [
@@ -23,6 +23,10 @@ export async function GET() {
     `- Text tools: ${baseUrl}/en/tools/category/text`,
     `- Creator tools: ${baseUrl}/en/tools/category/creator`,
     `- Blog: ${baseUrl}/en/blog`,
+    `- About: ${baseUrl}/en/about`,
+    `- Editorial policy: ${baseUrl}/en/editorial-policy`,
+    `- Privacy: ${baseUrl}/en/privacy`,
+    `- Terms: ${baseUrl}/en/terms`,
     `- Contact: ${baseUrl}/en/contact`,
     "- Pet gear buying guides: https://pets.madabase.com",
     "- Home office buying guides: https://homeoffice.madabase.com",

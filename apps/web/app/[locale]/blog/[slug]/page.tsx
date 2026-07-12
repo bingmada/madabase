@@ -7,7 +7,7 @@ import { Header } from "@/components/Header";
 import { JsonLd, buildArticleSchema, buildBreadcrumbSchema } from "@/components/JsonLd";
 import { PageViewTracker } from "@/components/PageViewTracker";
 import { Breadcrumb } from "@/components/Breadcrumb";
-import { getAllBlogPosts, getBlogPost } from "@/lib/blog";
+import { getAllBlogPosts, getBlogPost, isIndexableBlogPost } from "@/lib/blog";
 import { isLocale, locales } from "@/lib/i18n";
 import { buildAbsoluteUrl, buildPageMetadata } from "@/lib/seo";
 
@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const post = await getBlogPost(locale, slug);
   if (!post) return {};
 
-  return buildPageMetadata({
+  const metadata = buildPageMetadata({
     title: post.title,
     description: post.description,
     locale,
@@ -35,6 +35,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     keywords: [post.slug, "developer blog", "online tools", "browser tools"],
     type: "article",
   });
+
+  return isIndexableBlogPost(post) ? metadata : { ...metadata, robots: { index: false, follow: true } };
 }
 
 export default async function BlogPostPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
