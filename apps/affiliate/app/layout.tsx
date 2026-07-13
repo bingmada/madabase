@@ -25,6 +25,8 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
       <head>
         {/* @ts-expect-error Impact verification requires its non-standard meta value attribute. */}
         <meta name="impact-site-verification" value="4c2eb61e-515e-47e0-b623-7a198fb35667" />
+        <meta name="msvalidate.01" content="1925B816DE0B8EE2EF64514E52A1D382" />
+        <meta name="p:domain_verify" content="b0c3e6f557905e271f2868a46ca16d75" />
       </head>
       {site.key === "style" ? <StyleChrome site={site}>{children}</StyleChrome> : <SiteChrome site={site}>{children}</SiteChrome>}
     </html>
