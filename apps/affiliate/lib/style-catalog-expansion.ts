@@ -25,9 +25,11 @@ type CatalogInput = {
 };
 
 function catalogProduct(input: CatalogInput): Product {
+  const { affiliateUrl, ...product } = input;
+
   return {
     updatedAt,
-    ...input,
+    ...product,
     whyItMatters:
       input.category === "jewelry"
         ? "Statement earrings are easiest to wear when motif, scale, closure, and material claims are checked before the close-up product photo wins."
@@ -54,7 +56,7 @@ function catalogProduct(input: CatalogInput): Product {
     offers: [
       {
         merchant: "Amazon US",
-        url: input.affiliateUrl,
+        url: affiliateUrl,
         label: "Check price on Amazon",
         priceNote: "Check the live variation, seller, price, shipping, and availability on Amazon.",
       },

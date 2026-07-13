@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { SiteChrome } from "@/components/LayoutParts";
 import { StyleChrome } from "@/components/StyleExperience";
+import { ClarityAnalytics } from "@/components/ClarityAnalytics";
 import { getCurrentSite } from "@/lib/sites";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -19,6 +20,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const site = await getCurrentSite();
+  const clarityProjectId = process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID ?? "xlte5zsd33";
 
   return (
     <html lang="en">
@@ -28,7 +30,17 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
         <meta name="msvalidate.01" content="1925B816DE0B8EE2EF64514E52A1D382" />
         <meta name="p:domain_verify" content="b0c3e6f557905e271f2868a46ca16d75" />
       </head>
-      {site.key === "style" ? <StyleChrome site={site}>{children}</StyleChrome> : <SiteChrome site={site}>{children}</SiteChrome>}
+      {site.key === "style" ? (
+        <StyleChrome site={site}>
+          <ClarityAnalytics projectId={clarityProjectId} site={site.key} />
+          {children}
+        </StyleChrome>
+      ) : (
+        <SiteChrome site={site}>
+          <ClarityAnalytics projectId={clarityProjectId} site={site.key} />
+          {children}
+        </SiteChrome>
+      )}
     </html>
   );
 }

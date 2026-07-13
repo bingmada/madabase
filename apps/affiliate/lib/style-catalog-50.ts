@@ -56,13 +56,14 @@ const categoryNotes = {
 
 function expandedProduct(input: ExpandedInput): Product {
   const notes = categoryNotes[input.category];
-  const affiliateUrl = input.affiliateUrl.startsWith("https://")
-    ? input.affiliateUrl
+  const { affiliateUrl: sourceAffiliateUrl, ...product } = input;
+  const affiliateUrl = sourceAffiliateUrl.startsWith("https://")
+    ? sourceAffiliateUrl
     : `https://www.amazon.com/dp/${input.asin}?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl`;
 
   return {
     updatedAt,
-    ...input,
+    ...product,
     image: notes.image,
     verdict: `${input.name} is worth considering when ${input.bestFor.toLowerCase()} is the real use case. Confirm the selected variation and practical fit before treating the motif as the deciding factor.`,
     whyItMatters: notes.why,

@@ -18,6 +18,7 @@ const siteKeys = new Set<SiteKey>([
   "baby",
   "network",
   "smarthome",
+  "style",
 ]);
 
 function cleanText(value: string | undefined, maxLength: number) {

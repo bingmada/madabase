@@ -1,5 +1,6 @@
 import type { Guide, Product, Roundup, SiteKey, Tool } from "./types";
 import { ebaySearchOffer } from "./ebay";
+import { applySiteAffiliateTracking } from "./affiliate-tracking";
 import {
   adjacentExpansionGuides,
   adjacentExpansionProducts,
@@ -1949,5 +1950,5 @@ export function findTool(site: SiteKey, slug: string) {
 
 export function applyAmazonOverride(product: Product): Product {
   const override = amazonProductOverrides[product.slug];
-  return override ? { ...product, ...override } : product;
+  return applySiteAffiliateTracking(override ? { ...product, ...override } : product);
 }

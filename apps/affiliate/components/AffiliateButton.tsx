@@ -1,6 +1,7 @@
 "use client";
 
 import { ExternalLink } from "lucide-react";
+import { trackClarityAffiliateClick } from "./ClarityAnalytics";
 import type { AffiliateOffer, Product, SiteKey } from "@/lib/types";
 
 export function AffiliateButton({
@@ -19,6 +20,13 @@ export function AffiliateButton({
       typeof crypto !== "undefined" && "randomUUID" in crypto
         ? crypto.randomUUID()
         : `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+
+    trackClarityAffiliateClick({
+      site,
+      productSlug: product.slug,
+      merchant: offer.merchant,
+      position,
+    });
 
     void fetch("/api/affiliate-clicks", {
       method: "POST",
