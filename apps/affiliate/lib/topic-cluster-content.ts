@@ -66,10 +66,10 @@ export const topicClusterGuides: Guide[] = [
   {
     site: "network",
     slug: "deco-be63-be67-two-pack-vs-three-pack",
-    title: "Deco BE63 3-Pack vs. 2-Pack: When the 3-Piece Mesh Kit Makes Sense",
-    dek: "Choose a Deco BE63 or BE67 2-pack versus 3-piece whole-home mesh kit from floors, wall density, Ethernet paths, and measured weak areas instead of maximum square-foot figures.",
+    title: "Deco BE63 vs BE67 2-Pack vs 3-Pack: Which Mesh Size Fits?",
+    dek: "Choose a Deco BE63 or BE67 2-pack versus 3-pack from floors, wall density, Ethernet paths, and measured weak areas instead of maximum square-foot figures.",
     category: "wifi",
-    updatedAt,
+    updatedAt: "July 13, 2026",
     relatedProducts: ["tp-link-deco-be63-wifi-7-mesh", "tp-link-deco-be67-wifi-7-mesh"],
     relatedRoundups: ["tp-link-deco-be67-vs-be63", "best-mesh-wifi-for-apartments-and-homes"],
     sources: [
@@ -86,10 +86,10 @@ export const topicClusterGuides: Guide[] = [
   {
     site: "network",
     slug: "is-deco-be67-worth-it-for-gigabit-internet",
-    title: "Is Deco BE67 Worth It for 1Gbps or 2.5Gbps Internet?",
-    dek: "Separate WAN speed, local transfers, wireless backhaul, client support, and future plans before paying for BE14000 and 10GbE.",
+    title: "Is Deco BE67 Worth It? 1Gbps vs 2.5Gbps vs 10GbE",
+    dek: "Decide whether Deco BE67 is worth the upgrade by separating WAN speed, local transfers, wireless backhaul, client support, and the actual 10GbE path.",
     category: "wifi",
-    updatedAt,
+    updatedAt: "July 13, 2026",
     relatedProducts: ["tp-link-deco-be67-wifi-7-mesh", "tp-link-deco-be63-wifi-7-mesh"],
     relatedRoundups: ["tp-link-deco-be67-vs-be63"],
     sources: [

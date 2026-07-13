@@ -430,8 +430,8 @@ export const products: Product[] = [
   {
     site: "homeoffice",
     slug: "flexispot-e7-mini-standing-desk",
-    seoTitle: "FlexiSpot E7 Mini Guide: Small Standing Desk Size, Height & Fit",
-    updatedAt: "July 2, 2026",
+    seoTitle: "FlexiSpot E7 Mini Review: Dimensions, Height & Small-Desk Fit",
+    updatedAt: "July 13, 2026",
     asin: "B0F9X3FDYY",
     name: "FlexiSpot E7 Mini Standing Desk",
     brand: "FlexiSpot",
