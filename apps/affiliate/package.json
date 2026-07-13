@@ -25,8 +25,13 @@
     "start:smarthome": "NEXT_PUBLIC_AFFILIATE_SITE=smarthome next start",
     "start:style": "NEXT_PUBLIC_AFFILIATE_SITE=style next start",
     "check:affiliate-links": "node scripts/check-affiliate-links.mjs",
+    "check:distribution": "node scripts/check-distribution.mjs",
     "check:seo": "node scripts/check-seo.mjs",
     "report:affiliate-clicks": "node scripts/report-affiliate-clicks.mjs",
+    "indexnow:preview": "node scripts/submit-indexnow.mjs",
+    "indexnow:submit": "node scripts/submit-indexnow.mjs --submit",
+    "pinterest:queue": "node scripts/export-pinterest-queue.mjs",
+    "community:queue": "node scripts/export-community-research.mjs",
     "lint": "eslint",
     "sync:amazon": "node scripts/sync-amazon-paapi.mjs"
   },
@@ -38,7 +43,8 @@
     "next": "15.3.3",
     "pg": "^8.21.0",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "sharp": "^0.34.5"
   },
   "devDependencies": {
     "@types/node": "^22.15.3",
