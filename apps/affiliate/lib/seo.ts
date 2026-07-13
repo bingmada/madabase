@@ -33,13 +33,17 @@ function noteList(items: string[] | undefined) {
 }
 
 function productOffersSchema(product: Product) {
-  const offers = product.offers.filter((offer) => offer.url).slice(0, 3);
+  // Merchant listings require a current numeric price. Affiliate links here
+  // intentionally point to live prices, so omit Offer markup until a verified
+  // price is stored instead of publishing an invalid merchant listing.
+  const offers = product.offers.filter((offer) => offer.url && typeof offer.price === "number" && Number.isFinite(offer.price) && offer.price > 0).slice(0, 3);
   if (offers.length === 0) return undefined;
 
   return offers.map((offer) => ({
     "@type": "Offer",
     url: offer.url,
     name: offer.label,
+    price: offer.price,
     priceCurrency: "USD",
     availability: "https://schema.org/InStock",
     itemCondition: "https://schema.org/NewCondition",

@@ -48,6 +48,7 @@ export type AffiliateOffer = {
   url: string;
   label: string;
   priceNote: string;
+  price?: number;
 };
 
 export type Roundup = Publishable & {
