@@ -54,6 +54,8 @@ export type AffiliateOffer = {
 export type Roundup = Publishable & {
   slug: string;
   site: SiteKey;
+  seoTitle?: string;
+  updatedAt?: string;
   title: string;
   dek: string;
   category: string;

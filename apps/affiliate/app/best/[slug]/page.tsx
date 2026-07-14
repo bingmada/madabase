@@ -164,7 +164,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const roundup = findRoundup(site.key, slug);
   if (!roundup) return {};
-  return pageMetadata(site, `/best/${slug}`, roundup.title, roundup.dek);
+  return pageMetadata(site, `/best/${slug}`, roundup.seoTitle ?? roundup.title, roundup.dek);
 }
 
 export default async function RoundupPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -223,13 +223,14 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
           )}
           <h1 className="mt-3 text-4xl font-black leading-tight">{roundup.title}</h1>
           <p className="mt-5 text-lg leading-8 text-[var(--muted)]">{roundup.dek}</p>
-          {roundup.intro ? <p className="mt-4 max-w-3xl leading-8 text-[var(--muted)]">{roundup.intro}</p> : null}
-          <div className="mt-6 rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-5">
-            <p className="text-xs font-bold uppercase text-[var(--muted)]">Quick answer</p>
-            <p className="mt-2 text-lg font-bold leading-8 text-[var(--text)]">{answer}</p>
-          </div>
+          {roundup.updatedAt ? (
+            <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm font-semibold text-[var(--muted)]">
+              <span>Prepared by the {site.name} editorial desk</span>
+              <span>Updated {roundup.updatedAt}</span>
+            </div>
+          ) : null}
           {topPick ? (
-            <div className="mt-4 grid gap-4 rounded-md border border-[var(--border)] bg-white p-5 sm:grid-cols-[1fr_auto]">
+            <div className="mt-5 grid gap-4 rounded-md border border-[var(--border)] bg-white p-5 sm:grid-cols-[1fr_auto]">
               <div>
                 <p className="text-xs font-bold uppercase text-[var(--muted)]">Best starting pick</p>
                 <h2 className="mt-2 text-xl font-bold">{topPick.amazonTitle ?? topPick.name}</h2>
@@ -245,9 +246,14 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
               </div>
             </div>
           ) : null}
+          {roundup.intro ? <p className="mt-5 max-w-3xl leading-8 text-[var(--muted)]">{roundup.intro}</p> : null}
+          <div className="mt-6 rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-5">
+            <p className="text-xs font-bold uppercase text-[var(--muted)]">Quick answer</p>
+            <p className="mt-2 text-lg font-bold leading-8 text-[var(--text)]">{answer}</p>
+          </div>
         </div>
-        <div className="mt-8 grid gap-5 lg:grid-cols-[1fr_320px]">
-          <div className="space-y-5">
+        <div className="mt-8 grid min-w-0 gap-5 lg:grid-cols-[minmax(0,1fr)_320px]">
+          <div className="min-w-0 space-y-5">
             <Disclosure site={site} />
             {picks.length ? (
               <section className="panel overflow-hidden">
