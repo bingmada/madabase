@@ -472,15 +472,16 @@ export const networkGuides: Guide[] = [
   {
     site: "network",
     slug: "deco-be63-vs-be67-vs-be85-buying-guide",
-    title: "Deco BE63 vs BE67 vs BE85: Which Wi-Fi 7 Mesh Should You Buy?",
-    dek: "How to choose between TP-Link's Wi-Fi 7 Deco mesh systems by 2.5GbE, 10GbE, SFP+, pack size, wired backhaul, and the home network you actually have.",
+    title: "Deco BE63 vs BE67 vs BE85: Ports, Speed and Best Value",
+    dek: "Compare Deco BE63, BE67, and BE85 by 2.5GbE and 10GbE ports, Wi-Fi class, pack size, wired backhaul, hardware version, and the network you actually have.",
     category: "wifi",
-    updatedAt: "July 8, 2026",
+    updatedAt: "July 15, 2026",
     relatedProducts: ["tp-link-deco-be63-wifi-7-mesh", "tp-link-deco-be67-wifi-7-mesh", "tp-link-deco-be85-wifi-7-mesh"],
     relatedRoundups: ["best-mesh-wifi-for-apartments-and-homes", "tp-link-deco-be67-vs-be63", "deco-be85-vs-be67"],
     sources: [
       { name: "TP-Link Deco BE63", url: "https://www.tp-link.com/us/deco-mesh-wifi/product-family/deco-be63/", note: "Official BE63 radio, port, and backhaul specifications." },
       { name: "TP-Link Deco BE67", url: "https://www.tp-link.com/us/deco-mesh-wifi/product-family/deco-be67/", note: "Official BE67 wireless and Ethernet specifications." },
+      { name: "TP-Link Deco BE67 support", url: "https://www.tp-link.com/us/support/download/deco-be67/", note: "Official regional hardware-version and firmware guidance." },
       { name: "TP-Link Deco BE85", url: "https://www.tp-link.com/us/deco-mesh-wifi/product-family/deco-be85/", note: "Official BE85 10GbE, SFP+, wireless, and backhaul specifications." },
     ],
     sections: [
@@ -503,6 +504,10 @@ export const networkGuides: Guide[] = [
       {
         heading: "When BE85 is not overkill",
         body: "BE85 belongs in a premium network plan: 10GbE or SFP+ infrastructure, heavy local transfers, a large home, and users willing to tune placement and cabling. For ordinary web, streaming, calls, and gaming, the money is often better spent on Ethernet runs, a switch, or better node placement.",
+      },
+      {
+        heading: "Check the exact hardware version before comparing firmware",
+        body: "Regional model pages and support downloads can expose different hardware revisions and release timing. Match the label on the selected kit to the correct regional support page before treating a firmware feature, rollback path, or troubleshooting step as universal across BE63, BE67, and BE85.",
       },
     ],
   },

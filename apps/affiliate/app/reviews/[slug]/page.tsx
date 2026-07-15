@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { AffiliateButton, AffiliateButtonGroup } from "@/components/AffiliateButton";
+import { AffiliateButton } from "@/components/AffiliateButton";
 import { JsonLd } from "@/components/JsonLd";
 import { Disclosure } from "@/components/LayoutParts";
 import { StyleProductPage } from "@/components/StyleExperience";
@@ -194,10 +194,8 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                 <div className="mt-6 flex flex-wrap items-center gap-3">
                   <span className="rounded-md bg-[var(--brand-soft)] px-3 py-2 font-semibold text-[var(--brand-strong)]">{product.bestFor}</span>
                   <span className="rounded-md border border-[var(--border)] bg-white px-3 py-2 text-sm font-semibold text-[var(--muted)]">Price band: {product.priceBand}</span>
-                  {primaryOffers.length ? (
-                    <a className="button-secondary" href="#buying-options">
-                      Check buying options
-                    </a>
+                  {primaryOffers[0] ? (
+                    <AffiliateButton site={site.key} product={product} offer={primaryOffers[0]} position="review-hero" />
                   ) : null}
                 </div>
                 {primaryOffers.length ? (
@@ -209,9 +207,6 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                           <span className="font-semibold text-[var(--text)]">{offer.merchant}:</span> {offer.priceNote}
                         </p>
                       ))}
-                    </div>
-                    <div className="mt-3 flex flex-wrap gap-2">
-                      <AffiliateButtonGroup site={site.key} product={product} position="review-mobile-intro" />
                     </div>
                   </div>
                 ) : null}

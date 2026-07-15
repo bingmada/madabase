@@ -370,13 +370,13 @@ export const adjacentExpansionProducts: Product[] = [
     site: "network",
     slug: "tp-link-deco-be67-wifi-7-mesh",
     asin: "B0FQYQRZQX",
-    seoTitle: "TP-Link Deco BE67 Review: Is 10GbE Worth It? BE63 vs BE67",
-    updatedAt: "July 13, 2026",
+    seoTitle: "TP-Link Deco BE67 Review (2026): 10GbE vs BE63",
+    updatedAt: "July 15, 2026",
     name: "TP-Link Deco BE67 Wi-Fi 7 Mesh (2-Pack)",
     brand: "TP-Link",
     category: "wifi",
     image: "/images/affiliate/network-tp-link-deco-be67-wifi-7-mesh-realistic.webp",
-    summary: "A research-based Deco BE67 review for 1Gbps, 2.5Gbps, and 10GbE homes, covering BE14000 tri-band Wi-Fi 7, 6GHz, wired backhaul, device compatibility, and when it is worth paying more than BE63.",
+    summary: "A 2026 Deco BE67 review covering the BE14000 two-pack, 10GbE and 2.5GbE ports, 6GHz backhaul, current firmware, and when it is worth paying more than BE63.",
     verdict: "Deco BE67 is the stronger choice for multi-gig homes that can use its 10GbE path and higher wireless capacity. BE63 remains the value choice when four 2.5GbE ports and BE10000 performance already cover the actual network.",
     whyItMatters: "The faster mesh only pays off when the modem, wired backhaul, switch, and clients can use it. Otherwise better placement or the less expensive BE63 can deliver the same practical result.",
     bestFor: "Premium Wi-Fi 7 mesh with a real 10GbE use case",
@@ -402,6 +402,7 @@ export const adjacentExpansionProducts: Product[] = [
       "Confirm the linked offer is the BE67 two-pack and ASIN B0FQYQRZQX",
       "Map the modem, WAN, switch, backhaul, and client port speeds before paying for 10GbE",
       "Check exact client support for Wi-Fi 7, 6GHz, 320MHz channels, and MLO",
+      "Match the regional hardware version before installing firmware; TP-Link lists separate BE67 support releases by version",
     ],
     editorialSections: [
       {
@@ -416,12 +417,21 @@ export const adjacentExpansionProducts: Product[] = [
         heading: "Coverage remains a placement problem",
         body: "The listed square footage is a planning figure, not a guarantee through every wall and floor. Start with two well-connected nodes and test before adding more mesh units.",
       },
+      {
+        heading: "Firmware and hardware version are part of the purchase",
+        body: "TP-Link's US support page lists BE67 firmware by hardware version and warns buyers to use the regional release that matches the unit. Current V1.6 firmware adds features such as Hybrid Mesh and Internet Backup, but a listing, used unit, or different region may ship with another version or feature set.",
+      },
     ],
     sources: [
       {
         name: "TP-Link Deco BE67 product page",
         url: "https://www.tp-link.com/us/deco-mesh-wifi/product-family/deco-be67/",
         note: "Official wireless class, coverage, ports, backhaul, and feature specifications.",
+      },
+      {
+        name: "TP-Link Deco BE67 support and firmware",
+        url: "https://www.tp-link.com/us/support/download/deco-be67/",
+        note: "Official hardware-version, regional-firmware, release-date, and current feature notes.",
       },
     ],
     compareSlugs: ["tp-link-deco-be63-wifi-7-mesh", "tp-link-deco-be85-wifi-7-mesh"],
