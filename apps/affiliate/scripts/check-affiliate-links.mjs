@@ -6,6 +6,14 @@ import ts from "typescript";
 const root = path.resolve(new URL("../../..", import.meta.url).pathname);
 const contentDirectory = path.join(root, "apps/affiliate/lib");
 const partnerTag = process.env.AMAZON_AFFILIATE_TAG ?? "bingmada-20";
+const siteTrackingIds = {
+  network: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_NETWORK ?? "madanetwork-20",
+  smarthome: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_SMARTHOME ?? "madasmart-20",
+  homeoffice: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_HOMEOFFICE ?? "madaoffice-20",
+  baby: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_BABY ?? "madababy-20",
+  pet: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_PET ?? "madapets-20",
+  style: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_STYLE ?? "madastyle-20",
+};
 const inventoryOnly = process.argv.includes("--inventory");
 const siteArgument = process.argv.find((argument) =>
   argument.startsWith("--site="),
@@ -106,20 +114,25 @@ function buildInventory() {
         const slug = literalText(propertyValue(node, "slug"));
         const site = literalText(propertyValue(node, "site"));
         const asin = literalText(propertyValue(node, "asin"));
+        const specs = propertyValue(node, "specs");
+        const specsAsin = specs && ts.isObjectLiteralExpression(specs)
+          ? literalText(propertyValue(specs, "ASIN"))
+          : undefined;
+        const expectedAsin = asin ?? specsAsin;
         const offers = propertyValue(node, "offers");
         const affiliateUrl = literalText(propertyValue(node, "affiliateUrl"));
 
         if (slug && offers) {
           for (const url of urlsBelow(offers)) {
-            add(url, { slug, site, expectedAsin: asin });
+            add(url, { slug, site, expectedAsin });
           }
         }
 
         if (slug && affiliateUrl && isAffiliateUrl(affiliateUrl)) {
-          add(affiliateUrl, { slug, site, expectedAsin: asin });
+          add(affiliateUrl, { slug, site, expectedAsin });
         } else if (slug && affiliateUrl?.startsWith("PENDING-")) {
-          const url = fallbackAmazonUrl(asin);
-          if (url) add(url, { slug, site, expectedAsin: asin });
+          const url = fallbackAmazonUrl(expectedAsin);
+          if (url) add(url, { slug, site, expectedAsin });
         }
       }
 
@@ -155,6 +168,31 @@ function asinFromUrl(value) {
 
 function isAmazonHost(hostname) {
   return hostname === "amazon.com" || hostname.endsWith(".amazon.com");
+}
+
+function expectedTag(record) {
+  return siteTrackingIds[record.site] ?? partnerTag;
+}
+
+function runtimeAffiliateUrl(record) {
+  const source = new URL(record.url);
+  const tag = expectedTag(record);
+
+  if (isAmazonHost(source.hostname)) {
+    source.searchParams.set("tag", tag);
+    return source.toString();
+  }
+
+  if (source.hostname === "amzn.to" && record.expectedAsin) {
+    const direct = new URL(`/dp/${record.expectedAsin}`, "https://www.amazon.com");
+    direct.searchParams.set("tag", tag);
+    direct.searchParams.set("linkCode", "ll2");
+    direct.searchParams.set("language", "en_US");
+    direct.searchParams.set("ref_", "as_li_ss_tl");
+    return direct.toString();
+  }
+
+  return record.url;
 }
 
 async function request(url, method) {
@@ -231,10 +269,12 @@ async function follow(url) {
 
 async function check(record) {
   try {
-    const response = await follow(record.url);
+    const runtimeUrl = runtimeAffiliateUrl(record);
+    const response = await follow(runtimeUrl);
     const final = new URL(response.finalUrl);
     const actualAsin = asinFromUrl(response.finalUrl);
     const actualTag = final.searchParams.get("tag");
+    const requiredTag = expectedTag(record);
     const problems = [];
 
     if (
@@ -244,7 +284,7 @@ async function check(record) {
       problems.push(`http_${response.status}`);
     if (!isAmazonHost(final.hostname))
       problems.push(`unexpected_host:${final.hostname}`);
-    if (actualTag !== partnerTag)
+    if (actualTag !== requiredTag)
       problems.push(`missing_or_wrong_tag:${actualTag ?? "none"}`);
     if (record.expectedAsin && actualAsin !== record.expectedAsin) {
       problems.push(`asin_mismatch:${actualAsin ?? "none"}`);
@@ -252,6 +292,8 @@ async function check(record) {
 
     return {
       ...record,
+      runtimeUrl,
+      expectedTag: requiredTag,
       ok: problems.length === 0,
       status: response.status,
       finalUrl: response.finalUrl,
@@ -296,11 +338,12 @@ async function main() {
   const failed = results.filter((result) => !result.ok);
   const report = {
     checkedAt: new Date().toISOString(),
-    partnerTag,
+    sourcePartnerTag: partnerTag,
+    siteTrackingIds,
     total: results.length,
     passed: results.length - failed.length,
     failed: failed.length,
-    note: "This automated check validates short-link resolution, Amazon destination, partner tag, and known ASINs. Live product availability and Associates exclusion status still require a signed-in Amazon/SiteStripe check.",
+    note: "This automated check simulates runtime site-tag rewriting, validates short-link resolution, Amazon destination, the expected site tracking ID, and known ASINs. Live product availability and Associates exclusion status still require a signed-in Amazon/SiteStripe check.",
     results,
   };
 

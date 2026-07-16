@@ -7,8 +7,10 @@ export const smartHomeProducts: Product[] = [
   {
     site: "smarthome",
     slug: "aqara-smart-lock-u400",
+    asin: "B0FRS6T6HL",
+    amazonTitle: "Aqara UWB Smart Lock U400",
     seoTitle: "Aqara U400 Review Guide: UWB, Matter over Thread & Door Fit",
-    updatedAt,
+    updatedAt: "July 16, 2026",
     name: "Aqara Smart Lock U400",
     brand: "Aqara",
     category: "access",
@@ -23,12 +25,14 @@ export const smartHomeProducts: Product[] = [
     pros: ["UWB approach unlocking on supported devices", "Matter over Thread and Apple Home Key support", "Fingerprint, keypad, NFC, app, and physical-key fallbacks"],
     cons: ["Advanced ecosystem features require compatible controllers and phones", "Single-cylinder deadbolt and door measurements must be checked", "A rechargeable battery creates a charging routine"],
     specs: {
+      ASIN: "B0FRS6T6HL",
       "Primary network": "Matter over Thread",
       "Entry methods": "UWB, fingerprint, keypad, Home Key, NFC, app, physical key",
       "Door type": "Compatible single-cylinder deadbolt; verify dimensions",
       Battery: "Rechargeable; Aqara states up to 6 months under stated conditions",
       Weather: "Exterior assembly rated IP65",
       "Before buying": "Confirm regional version, phone support, Matter controller, and Thread border router",
+      "Link status": "Amazon affiliate link verified July 16, 2026",
     },
     evidence: ["Aqara lists UWB approach unlocking as the U400's differentiating feature.", "The manufacturer requires a compatible Thread-enabled controller for ecosystem integrations.", "Battery life is an estimate under stated conditions, not a guaranteed interval for every door."],
     editorialSections: [
@@ -39,7 +43,7 @@ export const smartHomeProducts: Product[] = [
     sources: [{ name: "Aqara U400 product page", url: "https://www.aqara.com/us/product/smart-lock-u400/", note: "Features, compatibility, battery, weather rating, and installation requirements." }],
     compareSlugs: ["aqara-smart-lock-u100"],
     offers: [
-      { merchant: "Amazon", url: "https://amzn.to/4oWMygy", label: "Check Aqara U400 price on Amazon", priceNote: "Confirm the exact regional version, finish, seller, and included accessories." },
+      { merchant: "Amazon", url: "https://www.amazon.com/dp/B0FRS6T6HL?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check Aqara U400 price on Amazon", priceNote: "Confirm ASIN B0FRS6T6HL, the exact regional version, finish, seller, and included accessories." },
       ebaySearchOffer("Aqara Smart Lock U400", "smarthome-aqara-smart-lock-u400"),
     ],
   },
@@ -89,8 +93,10 @@ export const smartHomeProducts: Product[] = [
   {
     site: "smarthome",
     slug: "ring-battery-doorbell-plus-2nd-gen",
+    asin: "B0H2FZR33K",
+    amazonTitle: "Ring Battery Doorbell Plus (2nd Gen) with Chime Plus",
     seoTitle: "Ring Battery Doorbell Plus 2nd Gen Guide: 2K Video & Subscription",
-    updatedAt,
+    updatedAt: "July 16, 2026",
     name: "Ring Battery Doorbell Plus (2nd Gen)",
     brand: "Ring",
     category: "cameras",
@@ -105,12 +111,14 @@ export const smartHomeProducts: Product[] = [
     pros: ["2K video with a square head-to-toe view", "Removable battery plus optional 8–24VAC wiring", "Dual-band Wi-Fi 6 and broad Ring/Alexa ecosystem"],
     cons: ["Recording history and some features require a Ring plan", "The linked Amazon offer is a Doorbell Plus and Chime Plus bundle", "Frequent motion can shorten the charging interval"],
     specs: {
+      ASIN: "B0H2FZR33K",
       Video: "Retinal 2K",
       "Field of view": "140° horizontal × 140° vertical; 178° diagonal",
       Power: "Quick-release battery or optional 8–24VAC hardwire",
       Network: "Dual-band Wi-Fi 6",
       Weather: "IP55",
       "Linked offer": "Battery Doorbell Plus (2nd Gen) with Chime Plus",
+      "Link status": "Amazon affiliate link verified July 16, 2026",
     },
     evidence: ["Ring lists 2K video, 6× zoom, and a 140° by 140° view.", "Optional low-voltage wiring can keep the removable battery charged but does not turn it into every wired Ring model.", "Recording and advanced feature availability changes with the selected Ring plan."],
     editorialSections: [
@@ -124,7 +132,7 @@ export const smartHomeProducts: Product[] = [
     ],
     compareSlugs: ["eufy-video-doorbell-e340", "tapo-d210-video-doorbell"],
     offers: [
-      { merchant: "Amazon", url: "https://amzn.to/4gKFmlp", label: "Check Ring + Chime Plus bundle on Amazon", priceNote: "This link is a bundle; confirm the 2nd Gen doorbell, Chime Plus, finish, and current plan trial." },
+      { merchant: "Amazon", url: "https://www.amazon.com/dp/B0H2FZR33K?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check Ring + Chime Plus bundle on Amazon", priceNote: "Confirm ASIN B0H2FZR33K, the 2nd Gen doorbell, Chime Plus, finish, and current plan trial." },
       ebaySearchOffer("Ring Battery Doorbell Plus 2nd Gen", "smarthome-ring-battery-doorbell-plus-2nd-gen"),
     ],
   },
@@ -208,8 +216,10 @@ export const smartHomeProducts: Product[] = [
   {
     site: "smarthome",
     slug: "google-nest-learning-thermostat-4th-gen",
+    asin: "B01HHQZHRK",
+    amazonTitle: "Google Nest Learning Thermostat (4th Gen) with Nest Temperature Sensor",
     seoTitle: "Nest Learning Thermostat 4th Gen Guide: Matter, Wiring & Sensor",
-    updatedAt,
+    updatedAt: "July 16, 2026",
     name: "Google Nest Learning Thermostat (4th Gen)",
     brand: "Google Nest",
     category: "climate",
@@ -224,12 +234,14 @@ export const smartHomeProducts: Product[] = [
     pros: ["Large 2.7-inch 600×600 display", "Matter support and Google Home app control", "The supplied offer includes a Nest Temperature Sensor"],
     cons: ["Exact 24V HVAC and power compatibility must be checked", "Some advanced household integrations remain ecosystem-dependent", "Premium display and design raise the purchase price"],
     specs: {
+      ASIN: "B01HHQZHRK",
       Display: "2.7-inch, 600 × 600",
       Sensors: "Temperature, humidity, ambient light, and Soli presence sensing",
       HVAC: "Most 24V systems; verify exact equipment",
       Network: "Dual-band Wi-Fi",
       "Smart home": "Matter; Google Home app",
       "Linked offer": "Polished Gold thermostat with Nest Temperature Sensor",
+      "Link status": "Amazon affiliate link verified July 16, 2026",
     },
     evidence: ["Google lists a 2.7-inch 600×600 display and built-in environmental sensing.", "The thermostat supports Matter but still requires compatible HVAC equipment and power.", "The supplied Amazon title includes a remote Nest Temperature Sensor."],
     editorialSections: [
@@ -243,7 +255,7 @@ export const smartHomeProducts: Product[] = [
     ],
     compareSlugs: ["ecobee-smart-thermostat-premium"],
     offers: [
-      { merchant: "Amazon", url: "https://amzn.to/4gKFbXh", label: "Check Nest 4th Gen bundle on Amazon", priceNote: "Confirm the Polished Gold finish, included temperature sensor, seller, and HVAC compatibility." },
+      { merchant: "Amazon", url: "https://www.amazon.com/dp/B01HHQZHRK?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check Nest 4th Gen bundle on Amazon", priceNote: "Confirm ASIN B01HHQZHRK, the Polished Gold finish, included temperature sensor, seller, and HVAC compatibility." },
       ebaySearchOffer("Google Nest Learning Thermostat 4th Gen", "smarthome-google-nest-learning-thermostat-4th-gen"),
     ],
   },
