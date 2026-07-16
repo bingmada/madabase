@@ -52,6 +52,8 @@ function parseArgs(argv) {
     help: false,
     from: "HEAD^",
     to: "HEAD",
+    fromProvided: false,
+    toProvided: false,
     since: null,
     sites: new Set(),
     urls: [],
@@ -74,10 +76,12 @@ function parseArgs(argv) {
     } else if (arg === "--from" || arg.startsWith("--from=")) {
       const result = readValue(argv, index, "--from");
       options.from = result.value;
+      options.fromProvided = true;
       index += result.consumed;
     } else if (arg === "--to" || arg.startsWith("--to=")) {
       const result = readValue(argv, index, "--to");
       options.to = result.value;
+      options.toProvided = true;
       index += result.consumed;
     } else if (arg === "--since" || arg.startsWith("--since=")) {
       const result = readValue(argv, index, "--since");
@@ -115,7 +119,7 @@ Usage:
 
 Options:
   --site <key>    Restrict to a site; repeat for more than one site
-  --url <url>     Add an explicit URL; repeat for more than one URL
+  --url <url>     Submit only explicit URLs by default; repeat for more than one URL
   --from <ref>    Compare content from this Git ref (default: HEAD^)
   --to <ref>      Compare content at this Git ref (default: HEAD)
   --since <date>  Read live sitemaps and include URLs with lastmod on/after YYYY-MM-DD
@@ -423,7 +427,7 @@ async function main() {
       const discovered = await sitemapUrls(site, options.since, options.all);
       discovered.forEach((url) => urls.add(url));
     }
-  } else {
+  } else if (options.urls.length === 0 || options.fromProvided || options.toProvided) {
     const changed = changedUrls(options.from, options.to, options.sites);
     changed.urls.forEach((url) => urls.add(url));
     changedRecords = changed.changedRecords;
