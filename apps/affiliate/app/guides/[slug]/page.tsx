@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AffiliateButtonGroup } from "@/components/AffiliateButton";
@@ -130,7 +131,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const guide = findGuide(site.key, slug);
   if (!guide) return {};
-  return pageMetadata(site, `/guides/${slug}`, guide.title, guide.dek);
+  return pageMetadata(site, `/guides/${slug}`, guide.title, guide.dek, guide.image);
 }
 
 export default async function GuidePage({ params }: { params: Promise<{ slug: string }> }) {
@@ -143,6 +144,10 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
   const relatedProducts = (guide.relatedProducts ?? [])
     .map((productSlug) => findProduct(site.key, productSlug))
     .filter((product): product is NonNullable<ReturnType<typeof findProduct>> => Boolean(product));
+  const relatedGuides = (guide.relatedGuides ?? [])
+    .filter((guideSlug) => guideSlug !== guide.slug)
+    .map((guideSlug) => findGuide(site.key, guideSlug))
+    .filter((item): item is NonNullable<ReturnType<typeof findGuide>> => Boolean(item));
   const topProduct = relatedProducts[0];
   const topRoundup = guide.relatedRoundups
     .map((roundupSlug) => findRoundup(site.key, roundupSlug))
@@ -166,7 +171,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         ) : (
           <p className="eyebrow">{guide.category}</p>
         )}
-        <h1 className="mt-3 text-4xl font-black leading-tight">{guide.title}</h1>
+        <h1 className="mt-3 text-3xl font-black leading-tight sm:text-4xl">{guide.title}</h1>
         <p className="mt-5 text-lg leading-8 text-[var(--muted)]">{guide.dek}</p>
         <div className="mt-5 flex flex-wrap gap-x-4 gap-y-2 text-sm font-semibold text-[var(--muted)]">
           <span>Prepared by the {site.name} editorial desk</span>
@@ -178,11 +183,6 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
               <div>
                 <p className="eyebrow">Best starting point</p>
                 <h2 className="mt-2 text-2xl font-bold">{topProduct ? topProduct.name : "Compare the short list"}</h2>
-                <p className="mt-2 max-w-2xl leading-7 text-[var(--muted)]">
-                  {topProduct
-                    ? `Start with the evidence page for ${topProduct.name}, then compare the alternatives against your layout, budget, and compatibility needs.`
-                    : "Use the comparison page to narrow the choices before reading the setup details below."}
-                </p>
                 {topProduct ? <p className="mt-2 text-sm font-semibold text-[var(--brand-strong)]">Price band: {topProduct.priceBand}</p> : null}
               </div>
               <div className="flex shrink-0 flex-wrap gap-2 sm:justify-end">
@@ -195,7 +195,31 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
                 {topRoundup ? <Link className="button-secondary" href={`/best/${topRoundup.slug}`}>Compare picks</Link> : null}
               </div>
             </div>
+            <p className="mt-4 max-w-2xl leading-7 text-[var(--muted)]">
+              {topProduct
+                ? `Start with the evidence page for ${topProduct.name}, then compare the alternatives against your layout, budget, and compatibility needs.`
+                : "Use the comparison page to narrow the choices before reading the setup details below."}
+            </p>
           </section>
+        ) : null}
+        {guide.image ? (
+          <figure className="mt-8">
+            <div className="relative aspect-[16/9] w-full overflow-hidden rounded-md bg-[var(--surface-muted)]">
+              <Image
+                alt={guide.imageAlt ?? guide.title}
+                className="object-cover"
+                fill
+                priority
+                sizes="(min-width: 1024px) 896px, 100vw"
+                src={guide.image}
+              />
+            </div>
+            {guide.image.includes("-realistic.webp") ? (
+              <figcaption className="mt-2 text-xs leading-5 text-[var(--muted)]">
+                Editorial image for visual context; device appearance and configuration can vary by model and region.
+              </figcaption>
+            ) : null}
+          </figure>
         ) : null}
         <article className="prose-lite mt-8">
           {guide.sections.map((section) => (
@@ -205,6 +229,36 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             </section>
           ))}
         </article>
+        {guide.comparisonTable ? (
+          <section className="mt-10">
+            <p className="eyebrow">Decision evidence</p>
+            <h2 className="mt-3 text-2xl font-bold">{guide.comparisonTable.title}</h2>
+            <div className="mt-5 overflow-x-auto rounded-md border border-[var(--border)] bg-white">
+              <table className="w-full min-w-[680px] text-left text-sm">
+                <thead className="bg-[var(--surface-muted)] text-xs uppercase text-[var(--muted)]">
+                  <tr>
+                    <th className="px-4 py-3">Check</th>
+                    {guide.comparisonTable.columns.map((column) => (
+                      <th className="px-4 py-3" key={column}>{column}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-[var(--border)]">
+                  {guide.comparisonTable.rows.map((row) => (
+                    <tr key={row.label}>
+                      <th className="px-4 py-4 font-bold">{row.label}</th>
+                      {guide.comparisonTable?.columns.map((column, index) => (
+                        <td className="px-4 py-4 leading-6 text-[var(--muted)]" key={`${row.label}-${column}`}>
+                          {row.values[index] ?? "Confirm before purchase"}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
+        ) : null}
         {guide.sources?.length ? (
           <section className="mt-10 rounded-md border border-[var(--border)] bg-white p-5">
             <p className="eyebrow">Primary sources</p>
@@ -256,6 +310,13 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
           </div>
         </section>
         <div className="mt-10 grid gap-4 sm:grid-cols-2">
+          {relatedGuides.map((item) => (
+            <Link className="panel p-5" href={`/guides/${item.slug}`} key={item.slug}>
+              <p className="eyebrow">Related guide</p>
+              <h2 className="mt-3 text-xl font-bold">{item.title}</h2>
+              <p className="mt-3 leading-7 text-[var(--muted)]">{item.dek}</p>
+            </Link>
+          ))}
           {(guide.relatedProducts ?? []).map((slug) => {
             const product = findProduct(site.key, slug);
             return product ? (

@@ -308,6 +308,7 @@ export function guideSchema(site: SiteConfig, guide: Guide) {
     "@type": "Article",
     headline: guide.title,
     description: guide.dek,
+    ...(guide.image ? { image: absoluteUrl(site, guide.image) } : {}),
     url,
     mainEntityOfPage: {
       "@type": "WebPage",
@@ -315,6 +316,7 @@ export function guideSchema(site: SiteConfig, guide: Guide) {
     },
     articleSection: guide.category,
     ...(updated ? { dateModified: updated.isoDateTime } : {}),
+    ...(guide.sources?.length ? { citation: guide.sources.map((source) => source.url) } : {}),
     author: {
       "@type": "Organization",
       name: `${site.name} editorial desk`,

@@ -81,6 +81,7 @@ function addEntry(sourceFile, node, kind) {
     productSlugs: stringArray(props.get("productSlugs")),
     relatedProducts: stringArray(props.get("relatedProducts")),
     relatedRoundups: stringArray(props.get("relatedRoundups")),
+    relatedGuides: stringArray(props.get("relatedGuides")),
     offerUrls: kind === "product" && props.has("affiliateUrl") ? productFactoryOfferUrls(props) : offerUrls(props.get("offers")),
     location: `${path.basename(sourceFile.fileName)}:${position.line + 1}`,
   });
@@ -154,6 +155,7 @@ for (const entry of entries) {
 
 const productEntries = new Map(entries.filter((entry) => entry.kind === "product").map((entry) => [`${entry.site}:${entry.slug}`, entry]));
 const roundupEntries = new Map(entries.filter((entry) => entry.kind === "roundup").map((entry) => [`${entry.site}:${entry.slug}`, entry]));
+const guideEntries = new Map(entries.filter((entry) => entry.kind === "guide").map((entry) => [`${entry.site}:${entry.slug}`, entry]));
 
 for (const entry of entries) {
   for (const slug of [...entry.productSlugs, ...entry.relatedProducts]) {
@@ -171,6 +173,15 @@ for (const entry of entries) {
       errors.push(`Missing related roundup ${entry.site}:${slug} referenced by ${entry.kind}:${entry.slug}`);
     } else if (entry.status === "published" && target.status === "draft") {
       errors.push(`Published ${entry.kind}:${entry.slug} references draft roundup ${slug}`);
+    }
+  }
+
+  for (const slug of entry.relatedGuides) {
+    const target = guideEntries.get(`${entry.site}:${slug}`);
+    if (!target) {
+      errors.push(`Missing related guide ${entry.site}:${slug} referenced by ${entry.kind}:${entry.slug}`);
+    } else if (entry.status === "published" && target.status === "draft") {
+      errors.push(`Published ${entry.kind}:${entry.slug} references draft guide ${slug}`);
     }
   }
 }

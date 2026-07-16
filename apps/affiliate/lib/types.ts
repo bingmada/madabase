@@ -75,10 +75,18 @@ export type Guide = Publishable & {
   dek: string;
   category: string;
   updatedAt?: string;
+  image?: string;
+  imageAlt?: string;
+  comparisonTable?: {
+    title: string;
+    columns: string[];
+    rows: Array<{ label: string; values: string[] }>;
+  };
   sources?: Array<{ name: string; url: string; note?: string }>;
   sections: Array<{ heading: string; body: string }>;
   relatedRoundups: string[];
   relatedProducts?: string[];
+  relatedGuides?: string[];
 };
 
 export type Tool = Publishable & {
