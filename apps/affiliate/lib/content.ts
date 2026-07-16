@@ -6,6 +6,10 @@ import {
   adjacentExpansionProducts,
   adjacentExpansionRoundups,
 } from "./adjacent-expansion-content";
+import {
+  aggressivePortfolioGuides,
+  aggressivePortfolioRoundups,
+} from "./aggressive-portfolio-expansion-content";
 import { amazonProductOverrides } from "./amazon-overrides";
 import {
   commercialExpansionGuides,
@@ -1922,6 +1926,8 @@ guides.push(...nextReleaseGuides);
 products.push(...gscPriorityProducts);
 roundups.push(...gscPriorityRoundups);
 guides.push(...gscPriorityGuides);
+roundups.push(...aggressivePortfolioRoundups);
+guides.push(...aggressivePortfolioGuides);
 
 const includeDrafts = process.env.AFFILIATE_INCLUDE_DRAFTS === "1";
 
