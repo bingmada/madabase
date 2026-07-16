@@ -60,6 +60,16 @@ export async function GET(
 
   if (!item) return new Response("Not found", { status: 404 });
 
+  // Pinterest appends these parameters when a user clicks a Pin saved from this image URL.
+  if (requestUrl.searchParams.get("utm_source")?.toLowerCase() === "pinterest") {
+    const destination = new URL(item.path, site.domain);
+    destination.searchParams.set("utm_source", "pinterest");
+    destination.searchParams.set("utm_medium", "organic_social");
+    destination.searchParams.set("utm_campaign", `${site.key}_evidence_pages`);
+    destination.searchParams.set("utm_content", `${item.kind}_${item.slug}`);
+    return Response.redirect(destination, 307);
+  }
+
   const imageUrl = await localImageDataUrl(item.image, item.kind === "reviews" || site.key === "style" ? "contain" : "cover");
 
   return new ImageResponse(
