@@ -158,16 +158,16 @@ export const products: Product[] = [
     site: "pet",
     slug: "furbo-360-dog-camera",
     asin: "B0BWN22T25",
-    seoTitle: "Furbo 360 Dog Camera Guide: Free Features, Nanny Plan & Treat Fit",
-    updatedAt: "June 29, 2026",
+    seoTitle: "Furbo 360 Dog Camera Review: Nanny Cost, Free Features & Treat Fit",
+    updatedAt: "July 16, 2026",
     name: "Furbo 360 Dog Camera",
     brand: "Furbo",
     category: "home-care",
-    image: "/images/affiliate/pet-furbo-360-dog-camera.webp",
-    summary: "A research-based guide to Furbo 360's rotating 1080p camera, treat tosser, free standalone features, optional Nanny features, placement requirements, and the subscription terms that vary by purchase model.",
-    verdict: "Furbo 360 makes sense when live check-ins, two-way audio, bark alerts, tracking, and treat tossing will become part of a calm routine. Before buying, confirm whether the selected listing is a standalone camera or a Subscription Required offer, because that changes the ongoing commitment more than the hardware feature list.",
-    whyItMatters: "Pet cameras can reduce uncertainty, but notifications and cloud clips are not the same as pet care. The practical decision is whether the free live features are enough, whether paid detection has real value, and whether the dog reacts calmly to the motor, voice, and treat launcher.",
-    bestFor: "Interactive dog check-ins with rotating live view and treat tossing",
+    image: "/images/affiliate/pet-furbo-360-dog-camera-editorial-realistic.webp",
+    summary: "A research-based Furbo 360 review covering its rotating 1080p camera, treat tosser, free standalone features, current US Nanny plan pricing, placement requirements, and the subscription terms that vary by purchase model.",
+    verdict: "Furbo 360 is a good fit when live check-ins, two-way audio, bark alerts, tracking, and treat tossing will become part of a calm routine. Skip the paid Nanny plan if live view and manual check-ins are enough; otherwise budget from the current $9.99-per-month Standard list price and verify whether the selected camera offer carries a minimum subscription commitment.",
+    whyItMatters: "The camera price is only half of this decision. Owners need to separate the useful free controls from paid detection and cloud history, compare the current plan's billed total and renewal terms, and make sure the dog reacts calmly to the motor, voice, and treat launcher.",
+    bestFor: "Dog owners who want rotating live view, two-way audio, and treat tossing",
     priceBand: "$$",
     rating: 4.5,
     scores: [
@@ -176,7 +176,7 @@ export const products: Product[] = [
       { label: "Interaction", value: 9 },
     ],
     pros: ["Standalone models retain live view, two-way audio, treat tossing, and bark alerts without Furbo Nanny", "1080p camera, night vision, and rotating view cover more of an open room", "Live-view Auto Dog Tracking can follow movement without a Nanny subscription"],
-    cons: ["AI detection, automatic cloud recording, and some advanced alerts require Furbo Nanny", "Subscription Required listings can impose a minimum paid-plan commitment", "Treat size, stable placement, 2.4GHz Wi-Fi, and the dog's reaction all need checking"],
+    cons: ["Furbo Nanny Standard currently lists from $9.99 per month in the US", "Subscription Required listings can impose a minimum paid-plan commitment", "Treat size, stable placement, 2.4GHz Wi-Fi, and the dog's reaction all need checking"],
     specs: {
       ASIN: "B0BWN22T25",
       Camera: "1080p FHD; 132° lens; 4x digital zoom; automatic night vision",
@@ -185,6 +185,8 @@ export const products: Product[] = [
       Treats: "About 100 pieces; round treats around 0.5in / 1cm recommended",
       Connectivity: "2.4GHz Wi-Fi; Bluetooth 4.2 for setup",
       "App requirements": "iOS 14+ or Android 10+ listed",
+      "Nanny list pricing": "US Standard $9.99 monthly; Premium $12.49 monthly; longer terms reduce the monthly equivalent",
+      "Extra cameras": "$2 per month for each additional camera on Standard and Premium",
       "Purchase plan": "Confirm standalone or Subscription Required before checkout",
     },
     evidence: [
@@ -201,6 +203,10 @@ export const products: Product[] = [
       {
         heading: "The standalone camera still has useful free features",
         body: "Furbo says standalone models retain live video, two-way audio, treat tossing, and barking alerts without a Nanny subscription. Live-view Auto Dog Tracking also works without Nanny. That free set may be enough for owners who open the app deliberately and do not need automatic behavior clips.",
+      },
+      {
+        heading: "What Furbo Nanny costs in July 2026",
+        body: "Furbo's US help center lists Standard at $9.99 month to month, $7.99 per month on a yearly term, or $7.49 per month on a two-year term. Premium lists at $12.49, $9.99, or $9.37 per month on those same terms. Each additional camera adds $2 per month. Furbo's product page can show a lower first-year or bundle promotion, so compare the amount billed today, renewal price, minimum term, and cancellation deadline rather than relying on the headline monthly equivalent.",
       },
       {
         heading: "What the Nanny plan changes",
@@ -228,8 +234,13 @@ export const products: Product[] = [
     sources: [
       {
         name: "Furbo 360 Dog Camera product specifications",
-        url: "https://furbo.com/us/products/legacy-furbo-360-dog-camera",
-        note: "Official camera, audio, treat, connectivity, device-requirement, size, and weight specifications.",
+        url: "https://furbo.com/us/products/furbo-360-dog-camera",
+        note: "Current official camera page, purchase-model details, promotional pricing, warranty, and product specifications.",
+      },
+      {
+        name: "Furbo Nanny plans and US pricing",
+        url: "https://help.furbo.com/hc/en-us/articles/17462739016089-Furbo-Nanny-Plans-and-Pricing",
+        note: "Official Standard and Premium monthly, yearly, two-year, and additional-camera pricing checked July 16, 2026.",
       },
       {
         name: "Furbo features available without Nanny",
