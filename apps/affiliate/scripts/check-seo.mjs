@@ -47,6 +47,13 @@ function offerUrls(node) {
   });
 }
 
+function objectArrayProperties(node) {
+  if (!node || !ts.isArrayLiteralExpression(node)) return [];
+  return node.elements
+    .filter(ts.isObjectLiteralExpression)
+    .map((element) => properties(element));
+}
+
 function productFactoryOfferUrls(props) {
   const affiliateUrl = stringValue(props.get("affiliateUrl"));
   const asin = stringValue(props.get("asin"));
@@ -83,6 +90,9 @@ function addEntry(sourceFile, node, kind) {
     relatedRoundups: stringArray(props.get("relatedRoundups")),
     relatedGuides: stringArray(props.get("relatedGuides")),
     offerUrls: kind === "product" && props.has("affiliateUrl") ? productFactoryOfferUrls(props) : offerUrls(props.get("offers")),
+    evidenceMode: stringValue(props.get("evidenceMode")),
+    researchNote: stringValue(props.get("researchNote")),
+    externalTests: objectArrayProperties(props.get("externalTests")),
     location: `${path.basename(sourceFile.fileName)}:${position.line + 1}`,
   });
 }
@@ -151,6 +161,35 @@ for (const entry of entries) {
       errors.push(`Unexpected affiliate host ${parsed.hostname} for ${routeKey}`);
     }
   }
+
+  if (entry.kind === "product") {
+    const allowedEvidenceModes = new Set(["hands-on", "research-synthesis", "official-spec"]);
+    if (entry.evidenceMode && !allowedEvidenceModes.has(entry.evidenceMode)) {
+      errors.push(`Invalid evidence mode ${entry.evidenceMode} for ${routeKey}`);
+    }
+    if (entry.evidenceMode === "research-synthesis" && (!entry.researchNote || !entry.externalTests.length)) {
+      errors.push(`Research synthesis ${routeKey} must include a disclosure and attributed external tests`);
+    }
+    if (entry.evidenceMode === "hands-on" && !entry.researchNote) {
+      errors.push(`Hands-on product ${routeKey} must include a first-hand setup and limitations note`);
+    }
+    entry.externalTests.forEach((test, index) => {
+      const requiredFields = ["source", "url", "testSetup", "result", "interpretation", "limitation"];
+      const missing = requiredFields.filter((field) => !stringValue(test.get(field)));
+      if (missing.length) {
+        errors.push(`External test ${index + 1} for ${routeKey} is missing ${missing.join(", ")}`);
+      }
+      const testUrl = stringValue(test.get("url"));
+      if (testUrl) {
+        try {
+          const parsed = new URL(testUrl);
+          if (parsed.protocol !== "https:") errors.push(`External test ${index + 1} for ${routeKey} must use HTTPS`);
+        } catch {
+          errors.push(`External test ${index + 1} for ${routeKey} has an invalid URL`);
+        }
+      }
+    });
+  }
 }
 
 const productEntries = new Map(entries.filter((entry) => entry.kind === "product").map((entry) => [`${entry.site}:${entry.slug}`, entry]));
@@ -192,6 +231,9 @@ if (!seoSource.includes('alternates:') || !seoSource.includes("canonical: url"))
 }
 if (!seoSource.includes('export function productNotesSchema') || !seoSource.includes('"@type": "Article"')) {
   errors.push("Product-note pages must use Article structured data unless genuine offer/review data is available");
+}
+if (!seoSource.includes('product.evidenceMode === "hands-on"')) {
+  errors.push("Review structured data must be limited to explicitly labeled hands-on products");
 }
 
 const contentSource = fs.readFileSync(path.join(libDir, "content.ts"), "utf8");

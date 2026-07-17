@@ -220,6 +220,10 @@ export function productNotesSchema(site: SiteConfig, product: Product) {
   const url = absoluteUrl(site, `/reviews/${product.slug}`);
   const productId = `${url}#product`;
   const updated = contentDate(product.updatedAt);
+  const citations = [...new Set([
+    ...(product.sources?.map((source) => source.url) ?? []),
+    ...(product.externalTests?.map((test) => test.url) ?? []),
+  ])];
   const author = {
     "@type": "Organization",
     name: `${site.name} editorial desk`,
@@ -230,6 +234,23 @@ export function productNotesSchema(site: SiteConfig, product: Product) {
     name: site.name,
     url: site.domain,
   };
+  const editorialReview = product.evidenceMode === "hands-on"
+    ? {
+        "@type": "Review",
+        "@id": `${url}#editorial-review`,
+        name: headline,
+        headline,
+        reviewBody: product.verdict ?? product.summary,
+        itemReviewed: {
+          "@id": productId,
+        },
+        positiveNotes: noteList(product.pros),
+        negativeNotes: noteList(product.cons),
+        ...(updated ? { dateModified: updated.isoDateTime } : {}),
+        author,
+        publisher,
+      }
+    : undefined;
 
   return {
     "@context": "https://schema.org",
@@ -251,7 +272,7 @@ export function productNotesSchema(site: SiteConfig, product: Product) {
         about: {
           "@id": productId,
         },
-        ...(product.sources?.length ? { citation: product.sources.map((source) => source.url) } : {}),
+        ...(citations.length ? { citation: citations } : {}),
         author,
         publisher,
       },
@@ -279,21 +300,7 @@ export function productNotesSchema(site: SiteConfig, product: Product) {
             name,
             value,
           })),
-        review: {
-          "@type": "Review",
-          "@id": `${url}#editorial-review`,
-          name: headline,
-          headline,
-          reviewBody: product.verdict ?? product.summary,
-          itemReviewed: {
-            "@id": productId,
-          },
-          positiveNotes: noteList(product.pros),
-          negativeNotes: noteList(product.cons),
-          ...(updated ? { dateModified: updated.isoDateTime } : {}),
-          author,
-          publisher,
-        },
+        ...(editorialReview ? { review: editorialReview } : {}),
       },
     ],
   };

@@ -96,6 +96,16 @@ const nextConfig: NextConfig = {
         destination: "/best/best-mesh-wifi-for-apartments-and-homes",
         permanent: true,
       },
+      {
+        source: "/guides/baby-carrier-for-warm-weather-guide",
+        destination: "/guides/baby-carrier-hot-weather-and-caregiver-fit-guide",
+        permanent: true,
+      },
+      {
+        source: "/guides/standing-desk-wheels-pros-cons-small-spaces",
+        destination: "/guides/standing-desk-casters-stability-guide",
+        permanent: true,
+      },
     ];
   },
 };

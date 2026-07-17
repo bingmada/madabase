@@ -31,7 +31,7 @@ export const topicClusterGuides: Guide[] = [
     category: "travel",
     updatedAt,
     relatedProducts: ["babybjorn-carrier-harmony"],
-    relatedRoundups: ["babybjorn-harmony-vs-ergobaby-omni-breeze"],
+    relatedRoundups: ["babybjorn-harmony-vs-ergobaby-omni-breeze", "best-baby-carriers-and-sleep-routine-upgrades"],
     sources: [
       { name: "BabyBjörn Carrier Harmony", url: "https://www.babybjorn.com/products/baby-carriers/baby-carrier-harmony/", note: "Official size, position, and adjustment guidance." },
       { name: "BabyBjörn Harmony manual", url: "https://www.babybjorn.com/customer-service/manuals/", note: "Official manuals and model-specific instructions." },
@@ -61,6 +61,7 @@ export const topicClusterGuides: Guide[] = [
       { heading: "Check the adjustment range on the actual wearer", body: "Product ranges do not describe torso length, shoulder shape, waist placement, or pressure sensitivity. Use the return window to test strap access and load distribution with realistic weight." },
       { heading: "Do not share one strap setup", body: "Mark or remember each caregiver's settings and reset the carrier when it changes hands. The baby should remain high, centered, visible, and supported after every adjustment." },
       { heading: "Choose another tool when conditions demand it", body: "A stroller, shaded break, or shorter outing can be safer and more comfortable when either person overheats or when the carrier cannot be adjusted without pressure or slumping." },
+      { heading: "Treat airflow as one decision factor", body: "Mesh can reduce fabric resistance, but trip length, humidity, shade, clothing, waistband pressure, and safe positioning still control whether a carrier is practical. Compare the complete fit instead of choosing from a mesh label alone." },
     ],
   },
   {

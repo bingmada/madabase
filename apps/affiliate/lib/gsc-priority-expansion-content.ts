@@ -502,25 +502,6 @@ export const gscPriorityGuides: Guide[] = [
   },
   {
     site: "homeoffice",
-    slug: "standing-desk-wheels-pros-cons-small-spaces",
-    title: "Standing Desk Wheels: Pros and Cons for Small Spaces",
-    dek: "Decide whether casters help a compact standing desk or create wobble, cable risk, floor damage, and monitor-arm instability.",
-    category: "desks",
-    updatedAt,
-    relatedProducts: ["ergear-48x24-electric-standing-desk", "flexispot-e7-mini-standing-desk"],
-    relatedRoundups: ["best-standing-desks-for-small-spaces", "best-home-office-cable-management"],
-    sources: [
-      { name: "OSHA workstation desks guidance", url: "https://www.osha.gov/etools/computer-workstations/components/desks", note: "Primary desk and equipment-placement guidance." },
-    ],
-    sections: [
-      { heading: "Wheels help only when the desk must move", body: "Casters can be useful in a multipurpose room, rental, or cleaning-heavy setup. If the desk stays in one place, stability usually matters more than mobility." },
-      { heading: "Check lift stability at standing height", body: "A compact desk can feel stable when seated and still wobble when raised. Wheels add another movement point, especially with a monitor arm or heavy display." },
-      { heading: "Plan cables before rolling", body: "Power, monitor, dock, light, and charger cables need slack and strain relief. Rolling a desk with tight cables can pull connectors or drag a power strip." },
-      { heading: "Protect the floor and lock the position", body: "Use locking casters suited to the floor type, test chair clearance, and recheck level after moving. A desk that shifts during typing or calls is not a good trade." },
-    ],
-  },
-  {
-    site: "homeoffice",
     slug: "standing-desk-designs-for-small-spaces-guide",
     title: "Standing Desk Designs for Small Spaces",
     dek: "Compare narrow electric desks, wall-facing layouts, monitor arms, rolling setups, cable paths, and storage trade-offs for bedrooms and rentals.",

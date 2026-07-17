@@ -11,11 +11,26 @@ export type Score = {
   value: number;
 };
 
+export type EvidenceMode = "hands-on" | "research-synthesis" | "official-spec";
+
+export type ExternalTestEvidence = {
+  source: string;
+  url: string;
+  date?: string;
+  testSetup: string;
+  result: string;
+  interpretation: string;
+  limitation: string;
+};
+
 export type Product = Publishable & {
   slug: string;
   site: SiteKey;
   seoTitle?: string;
   updatedAt?: string;
+  evidenceMode?: EvidenceMode;
+  researchNote?: string;
+  externalTests?: ExternalTestEvidence[];
   sources?: Array<{ name: string; url: string; note?: string }>;
   editorialSections?: Array<{ heading: string; body: string }>;
   compareSlugs?: string[];

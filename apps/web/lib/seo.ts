@@ -10,8 +10,13 @@ export function getTestSiteUrl() {
   return process.env.NEXT_PUBLIC_TEST_SITE_URL ?? "https://test.madabase.com";
 }
 
+function buildLocalizedPath(locale: string, path: string) {
+  const normalizedPath = path.startsWith("/") ? path : `/${path}`;
+  return normalizedPath === "/" ? `/${locale}` : `/${locale}${normalizedPath}`;
+}
+
 export function buildLocaleCanonical(locale: string, path: string) {
-  return `/${locale}${path.startsWith("/") ? path : `/${path}`}`;
+  return buildLocalizedPath(locale, path);
 }
 
 export function buildAbsoluteUrl(path: string) {
@@ -20,14 +25,13 @@ export function buildAbsoluteUrl(path: string) {
 }
 
 export function buildHreflangAlternates(path: string, canonicalLocale: Locale = defaultLocale) {
-  const normalizedPath = path.startsWith("/") ? path : `/${path}`;
-  const languages = Object.fromEntries(locales.map((locale) => [locale, buildAbsoluteUrl(`/${locale}${normalizedPath}`)])) as Record<Locale, string>;
+  const languages = Object.fromEntries(locales.map((locale) => [locale, buildAbsoluteUrl(buildLocalizedPath(locale, path))])) as Record<Locale, string>;
 
   return {
-    canonical: buildAbsoluteUrl(`/${canonicalLocale}${normalizedPath}`),
+    canonical: buildAbsoluteUrl(buildLocalizedPath(canonicalLocale, path)),
     languages: {
       ...languages,
-      "x-default": buildAbsoluteUrl(`/${canonicalLocale}${normalizedPath}`),
+      "x-default": buildAbsoluteUrl(buildLocalizedPath(canonicalLocale, path)),
     },
   };
 }
@@ -57,7 +61,7 @@ export function buildPageMetadata({
   type?: "website" | "article";
 }): Metadata {
   const normalizedPath = path.startsWith("/") ? path : `/${path}`;
-  const canonical = buildAbsoluteUrl(`/${locale}${normalizedPath}`);
+  const canonical = buildAbsoluteUrl(buildLocalizedPath(locale, normalizedPath));
   const alternates = buildHreflangAlternates(normalizedPath, locale);
   const image = buildOpenGraphImage(title);
 

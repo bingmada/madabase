@@ -115,6 +115,20 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
   const context = siteContext(site.key);
   const primaryOffers = product.offers.slice(0, 2);
   const sourceCount = product.sources?.length ?? 0;
+  const evidenceMode = product.evidenceMode ?? "official-spec";
+  const externalTests = product.externalTests ?? [];
+  const evidenceModeLabel = evidenceMode === "hands-on"
+    ? "Hands-on review"
+    : evidenceMode === "research-synthesis"
+      ? "Independent evidence synthesis"
+      : "Official-spec research guide";
+  const researchNote = product.researchNote ?? (
+    evidenceMode === "hands-on"
+      ? "This page includes first-hand use. Test conditions and measurements are stated beside the relevant findings."
+      : evidenceMode === "research-synthesis"
+        ? "We have not tested this product ourselves. This guide compares manufacturer documentation and attributed independent tests; results are not treated as directly comparable when hardware, firmware, clients, or environments differ."
+        : "We have not tested this product ourselves. This guide uses current manufacturer documentation and listing checks to identify fit, compatibility, version, and purchase risks."
+  );
   const listingRows = listingVerificationRows(product, displayName, primaryOffers);
   const updateRows = updateRecord(product, sourceCount, primaryOffers);
   const officialSpecRows = Object.entries(product.specs)
@@ -131,8 +145,10 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
     ["Updated", product.updatedAt ?? "Review schedule pending"],
     [
       "Source basis",
-      sourceCount
-        ? `${sourceCount} primary source${sourceCount === 1 ? "" : "s"} plus retailer listing checks`
+      externalTests.length
+        ? `${externalTests.length} attributed independent test${externalTests.length === 1 ? "" : "s"}, ${sourceCount} linked source${sourceCount === 1 ? "" : "s"}, and retailer checks`
+        : sourceCount
+          ? `${sourceCount} linked source${sourceCount === 1 ? "" : "s"} plus retailer listing checks`
         : "Retailer listing, current seller, and product details should be verified before purchase",
     ],
     ["Version risk", product.evidence[0] ?? "Confirm exact model, bundle, and hardware version before checkout"],
@@ -223,7 +239,11 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
               </div>
             </div>
             <div className="prose-lite mt-8">
-              <div className="not-prose rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-5">
+              <div className="not-prose rounded-md border border-[var(--brand)] bg-[var(--brand-soft)] p-5">
+                <p className="text-xs font-bold uppercase text-[var(--brand-strong)]">{evidenceModeLabel}</p>
+                <p className="mt-2 text-sm font-semibold leading-6 text-[var(--text)]">{researchNote}</p>
+              </div>
+              <div className="not-prose mt-5 rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-5">
                 <h2 className="text-xl font-bold">Quick verdict</h2>
                 <div className="mt-4 grid gap-4 sm:grid-cols-3">
                   <div>
@@ -251,6 +271,61 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                   ))}
                 </dl>
               </div>
+              {externalTests.length ? (
+                <section className="not-prose mt-5 rounded-md border border-[var(--border)] bg-white p-5" aria-labelledby="independent-test-evidence">
+                  <p className="text-xs font-bold uppercase text-[var(--muted)]">Attributed evidence</p>
+                  <h2 className="mt-2 text-xl font-bold" id="independent-test-evidence">Independent test results compared</h2>
+                  <p className="mt-2 text-sm leading-6 text-[var(--muted)]">These rows preserve each source&apos;s setup and limitations. Numbers from different environments are not combined into a synthetic benchmark.</p>
+                  <div className="mt-4 divide-y divide-[var(--border)] md:hidden">
+                    {externalTests.map((test) => (
+                      <article className="py-5 first:pt-0 last:pb-0" key={test.url}>
+                        <a className="font-bold text-[var(--brand-strong)] hover:underline" href={test.url} rel="noopener noreferrer" target="_blank">{test.source}</a>
+                        {test.date ? <span className="mt-1 block text-xs font-semibold text-[var(--muted)]">{test.date}</span> : null}
+                        <dl className="mt-4 space-y-4">
+                          {[
+                            ["Test conditions", test.testSetup],
+                            ["Published result", test.result],
+                            ["What it means", test.interpretation],
+                            ["Limits", test.limitation],
+                          ].map(([label, value]) => (
+                            <div key={label}>
+                              <dt className="text-xs font-bold uppercase text-[var(--muted)]">{label}</dt>
+                              <dd className="mt-1 break-words text-sm font-semibold leading-6 text-[var(--text)]">{value}</dd>
+                            </div>
+                          ))}
+                        </dl>
+                      </article>
+                    ))}
+                  </div>
+                  <div className="mt-4 hidden overflow-x-auto md:block">
+                    <table className="w-full min-w-[1050px] text-left text-sm">
+                      <thead className="text-xs uppercase text-[var(--muted)]">
+                        <tr>
+                          <th className="border-b border-[var(--border)] px-3 py-3">Source</th>
+                          <th className="border-b border-[var(--border)] px-3 py-3">Test conditions</th>
+                          <th className="border-b border-[var(--border)] px-3 py-3">Published result</th>
+                          <th className="border-b border-[var(--border)] px-3 py-3">What it means</th>
+                          <th className="border-b border-[var(--border)] px-3 py-3">Limits</th>
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-[var(--border)] align-top">
+                        {externalTests.map((test) => (
+                          <tr key={test.url}>
+                            <th className="px-3 py-4 font-bold">
+                              <a className="text-[var(--brand-strong)] hover:underline" href={test.url} rel="noopener noreferrer" target="_blank">{test.source}</a>
+                              {test.date ? <span className="mt-1 block text-xs font-semibold text-[var(--muted)]">{test.date}</span> : null}
+                            </th>
+                            <td className="px-3 py-4 leading-6 text-[var(--muted)]">{test.testSetup}</td>
+                            <td className="px-3 py-4 font-semibold leading-6 text-[var(--text)]">{test.result}</td>
+                            <td className="px-3 py-4 leading-6 text-[var(--muted)]">{test.interpretation}</td>
+                            <td className="px-3 py-4 leading-6 text-[var(--muted)]">{test.limitation}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </section>
+              ) : null}
               <div className="not-prose mt-5 grid min-w-0 gap-5 lg:grid-cols-2">
                 <section className="min-w-0 rounded-md border border-[var(--border)] bg-white p-5">
                   <h2 className="text-xl font-bold">Amazon listing verification</h2>

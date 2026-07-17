@@ -1824,22 +1824,6 @@ export const guides: Guide[] = [
   },
   {
     site: "baby",
-    slug: "baby-carrier-for-warm-weather-guide",
-    title: "Baby Carrier Guide for Warm Weather",
-    dek: "How to compare airflow, caregiver fit, carry positions, safe-use guidance, and learning curve.",
-    category: "travel",
-    updatedAt: "June 28, 2026",
-    relatedProducts: ["ergobaby-omni-breeze-carrier"],
-    relatedRoundups: ["best-baby-carriers-and-sleep-routine-upgrades"],
-    sections: [
-      { heading: "Airflow is only one part of comfort", body: "Mesh panels can help, but carrier comfort also depends on strap adjustment, waistband support, caregiver body shape, and how long the carrier is worn." },
-      { heading: "Check baby fit first", body: "Read the exact age, weight, and position guidance for the carrier. Safe positioning matters more than color, storage pockets, or extra modes." },
-      { heading: "Fit both caregivers if possible", body: "A carrier that works for one adult may be awkward for another. If multiple caregivers will use it, adjustment range and easy resizing become more important." },
-      { heading: "Know when a stroller is better", body: "On hot days or long walks, a stroller can be easier for both baby and adult. A carrier is a tool for certain routines, not a full replacement for every outing." },
-    ],
-  },
-  {
-    site: "baby",
     slug: "nursery-sound-machine-night-light-guide",
     title: "Nursery Sound Machine and Night Light Guide",
     dek: "How to choose sound, light, app controls, portability, and placement without treating a device as a sleep guarantee.",

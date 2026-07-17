@@ -46,6 +46,14 @@ export function getStaticPages(site: SiteConfig): StaticPage[] {
           body: "Every recommendation needs both sides: where it wins and what to verify. That is why our pages call out size, compatibility, accessories, subscriptions, replacement parts, return windows, and setup limits.",
         },
         {
+          heading: "We label the evidence behind each page",
+          body: "Hands-on review means we used the product ourselves and can describe that direct experience. Independent evidence synthesis compares attributed third-party tests while preserving each source's setup, result, and limitations. Official-spec research guide means the decision is based on manufacturer documentation and verified compatibility sources, without claiming hands-on testing.",
+        },
+        {
+          heading: "Different test environments stay separate",
+          body: "Router placement, walls, clients, firmware, pack size, backhaul, room conditions, and test methods can change results. We do not average incompatible benchmarks into a made-up score. Conflicting model, port, bundle, or hardware-version details are shown as a checkout risk to resolve.",
+        },
+        {
           heading: "Decision factors, not star ratings",
           body: "Our decision factors show what to compare for the stated use case without assigning unsupported numeric ratings. Before buying, readers should still confirm the exact Amazon listing, seller, version, price, shipping, and current customer feedback.",
         },

@@ -752,6 +752,7 @@ export const verifiedAffiliateBatchGuides: Guide[] = [
     relatedRoundups: [
       "ergear-48x24-vs-flexispot-e7-mini",
       "best-standing-desks-for-small-spaces",
+      "best-home-office-cable-management",
     ],
     sources: [
       {
@@ -759,8 +760,17 @@ export const verifiedAffiliateBatchGuides: Guide[] = [
         url: "https://www.osha.gov/etools/computer-workstations/positions",
         note: "Primary neutral-position guidance.",
       },
+      {
+        name: "OSHA workstation desks guidance",
+        url: "https://www.osha.gov/etools/computer-workstations/components/desks",
+        note: "Primary desk and equipment-placement guidance.",
+      },
     ],
     sections: [
+      {
+        heading: "Use wheels only for a real room constraint",
+        body: "Casters earn their trade-offs in a shared room, rental, or cleaning-heavy setup where the desk must move. If the desk stays parked, fixed feet usually protect seated height and stability better.",
+      },
       {
         heading: "Add caster height before checking fit",
         body: "Wheels can raise the lowest desk position. Compare the finished keyboard height with seated elbow height rather than relying on the frame's number without casters.",
