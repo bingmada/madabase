@@ -140,7 +140,7 @@ export const sites: Record<SiteKey, SiteConfig> = {
     domain: process.env.NEXT_PUBLIC_STYLE_SITE_URL ?? "https://style.madabase.com",
     hostHints: ["style", "wear", "accessory"],
     disclosure: "As an Amazon Associate I earn from qualifying purchases. Sideglance Style may also earn commissions from other retailer links. Recommendations are based on stated materials, measurements, closure, carrying comfort, outfit versatility, and return risk.",
-    heroImage: "/images/affiliate/hero-style.svg",
+    heroImage: "/images/affiliate/hero-style-realistic.webp",
     theme: {
       brand: "#9a3655",
       brandStrong: "#65223b",

@@ -149,6 +149,10 @@ for (const entry of entries) {
     if (!fs.existsSync(imagePath)) errors.push(`Missing image ${entry.image} for ${routeKey}`);
   }
 
+  if (entry.image?.toLowerCase().endsWith(".svg")) {
+    errors.push(`Content image ${entry.image} for ${routeKey} must use a photographic bitmap instead of a placeholder SVG`);
+  }
+
   for (const url of entry.offerUrls) {
     let parsed;
     try {
@@ -190,6 +194,11 @@ for (const entry of entries) {
       }
     });
   }
+}
+
+const sitesSource = fs.readFileSync(path.join(libDir, "sites.ts"), "utf8");
+for (const match of sitesSource.matchAll(/heroImage:\s*"([^"]+\.svg)"/g)) {
+  errors.push(`Site hero ${match[1]} must use a photographic bitmap instead of a placeholder SVG`);
 }
 
 const productEntries = new Map(entries.filter((entry) => entry.kind === "product").map((entry) => [`${entry.site}:${entry.slug}`, entry]));

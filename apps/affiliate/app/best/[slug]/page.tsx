@@ -196,7 +196,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
         />
         <JsonLd data={roundupProductListSchema(site, roundup.title, picks)} />
         <JsonLd data={faqPageSchema(roundup.faqs)} />
-        <StyleCollectionPage site={site} roundup={roundup} products={picks} />
+        <StyleCollectionPage roundup={roundup} products={picks} />
       </>
     );
   }
@@ -401,8 +401,8 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
                 </div>
               </section>
             ) : null}
-            {picks.map((product, index) => (
-              <ProductCard key={product.slug} site={site} product={product} position={`roundup-${index + 1}`} offerLimit={1} />
+            {picks.map((product) => (
+              <ProductCard key={product.slug} product={product} />
             ))}
             <section className="panel p-5">
               <h2 className="text-xl font-bold">FAQ</h2>

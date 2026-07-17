@@ -146,14 +146,17 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
   const framework = getCategoryFramework(site.key, slug);
   if (site.key === "style") {
     return (
-      <StyleCategoryPage
-        site={site}
-        title={category.name}
-        description={category.description}
-        products={products}
-        roundups={roundups}
-        guides={guides}
-      />
+      <>
+        <JsonLd data={breadcrumbSchema(site, [{ name: "Home", path: "/" }, { name: category.name, path: `/categories/${slug}` }])} />
+        <JsonLd data={itemListSchema(site, `${category.name} buying guides`, categoryItems)} />
+        <StyleCategoryPage
+          title={category.name}
+          description={category.description}
+          products={products}
+          roundups={roundups}
+          guides={guides}
+        />
+      </>
     );
   }
 
@@ -186,9 +189,9 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
               </p>
             </div>
             <div className="mt-8 grid gap-5 lg:grid-cols-3">
-              {products.map((product, index) => (
-                <ProductCard key={product.slug} site={site} product={product} position={`category-${slug}-product-${index + 1}`} />
-              ))}
+            {products.map((product) => (
+              <ProductCard key={product.slug} product={product} />
+            ))}
             </div>
           </section>
         ) : null}

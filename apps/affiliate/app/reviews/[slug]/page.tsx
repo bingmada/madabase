@@ -160,7 +160,13 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
           ])}
         />
         <JsonLd data={productNotesSchema(site, product)} />
-        <StyleProductPage site={site} product={product} related={related} />
+        <StyleProductPage
+          site={site}
+          product={product}
+          related={related}
+          relatedRoundups={relatedRoundups}
+          relatedGuides={relatedGuides}
+        />
       </>
     );
   }

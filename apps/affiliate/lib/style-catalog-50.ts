@@ -18,35 +18,35 @@ type ExpandedInput = {
 
 const categoryNotes = {
   jewelry: {
-    image: "/images/affiliate/style-edit-jewelry.svg",
+    image: "/images/affiliate/style-edit-jewelry-realistic.webp",
     why: "Novelty jewelry earns its place when the motif is specific, the scale is wearable, and the closure and material language survive a closer read.",
     pros: ["A clear focal point without changing the whole outfit", "Easy to repeat through one color or metal tone", "Compact enough to test during the return window"],
     cons: ["Exact weight may not be listed", "Fashion-metal claims require care for sensitive ears", "Close-up photos can hide real scale"],
     checks: ["Compare dimensions with an owned pair", "Confirm the selected design and closure", "Keep the nearby neckline visually quiet"],
   },
   bags: {
-    image: "/images/affiliate/style-edit-bag.svg",
+    image: "/images/affiliate/style-edit-bag-realistic.webp",
     why: "A character bag still has to carry the day. Opening size, strap adjustment, construction, seller, and return path matter as much as the artwork.",
     pros: ["Hands-free character focal point", "A familiar mini-backpack format", "Easy palette cue for a simple outfit"],
     cons: ["Mini capacity limits bottles and layers", "Print and applique alignment can vary", "Amazon sellers and offers can rotate"],
     checks: ["Measure the real carry before checkout", "Confirm seller and return terms", "Inspect seams, zipper, and applique on arrival"],
   },
   hair: {
-    image: "/images/affiliate/style-edit-hair.svg",
+    image: "/images/affiliate/style-edit-hair-realistic.webp",
     why: "A decorative clip succeeds when its size, teeth, spring, and weight match the wearer's hair volume instead of merely looking good in a close crop.",
     pros: ["Adds a focal point above the neckline", "Works with simple clothing", "Can change the mood without adding jewelry"],
     cons: ["Hold varies by hair texture and volume", "Decorative edges can snag", "Multipack quality may be inconsistent"],
     checks: ["Compare clip length and opening", "Test the spring and teeth at home", "Check for rough edges before a full-day wear"],
   },
   scarves: {
-    image: "/images/affiliate/style-edit-scarf.svg",
+    image: "/images/affiliate/style-edit-scarf-realistic.webp",
     why: "Fiber, dimensions, edge finish, and care decide whether a scarf works at the neck, hair, bag, or waist—satin alone does not mean silk.",
     pros: ["Several possible styling zones", "Adds color without changing the outfit base", "Easy to remove when temperature or dress code changes"],
     cons: ["Fiber terms are often easy to misread", "Slippery fabrics may loosen", "Color transfer and care need checking"],
     checks: ["Read the exact fiber claim", "Match dimensions to the intended tie", "Test color transfer against a white cloth"],
   },
   socks: {
-    image: "/images/affiliate/style-edit-socks.svg",
+    image: "/images/affiliate/style-edit-socks-realistic.webp",
     why: "Novelty socks are useful only when the size range, cuff, fiber blend, wash routine, and shoe thickness work before the graphic enters the decision.",
     pros: ["Low-commitment color and humor", "Easy gift category", "Works with otherwise ordinary shoes and trousers"],
     cons: ["Graphics can distort when stretched", "Multipacks may fit inconsistently", "Cuff pressure and shoe bulk vary by wearer"],

@@ -470,7 +470,7 @@ export const aggressivePortfolioGuides: Guide[] = [
     dek: "Choose the bag after packing the actual phone, wallet, charger, medication, sunscreen, bottle, layer, and family supplies; character artwork comes second.",
     category: "bags",
     updatedAt,
-    image: "/images/affiliate/style-loungefly-minnie-backpack.svg",
+    image: "/images/affiliate/style-loungefly-minnie-backpack-realistic.webp",
     imageAlt: "Minnie-themed mini backpack prepared for a small park-day carry",
     sources: [
       { name: "Walt Disney World park rules", url: "https://disneyworld.disney.go.com/park-rules/", note: "Official current bag-size and prohibited-item starting point; verify rules for the destination and date." },
@@ -493,7 +493,7 @@ export const aggressivePortfolioGuides: Guide[] = [
     dek: "Protect applique, edge paint, lining, straps, and hardware with conservative spot cleaning, prompt drying, sensible storage, and an inspection during the return window.",
     category: "bags",
     updatedAt,
-    image: "/images/affiliate/style-loungefly-minnie-backpack.svg",
+    image: "/images/affiliate/style-loungefly-minnie-backpack-realistic.webp",
     imageAlt: "Minnie-themed faux-leather mini backpack stored upright and dry",
     sources: [
       { name: "Loungefly Minnie Rock the Dots look book", url: "https://loungefly.com/ca/loungefly-blog-home/the-loungefly-2026-minnie-rock-the-dots-look-book.html", note: "Official collection material and design context." },

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AffiliateButtonGroup } from "@/components/AffiliateButton";
 import { JsonLd } from "@/components/JsonLd";
+import { StyleGuidePage } from "@/components/StyleExperience";
 import { findGuide, findProduct, findRoundup } from "@/lib/content";
 import { breadcrumbSchema, guideSchema, pageMetadata } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
@@ -149,9 +150,32 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
     .map((guideSlug) => findGuide(site.key, guideSlug))
     .filter((item): item is NonNullable<ReturnType<typeof findGuide>> => Boolean(item));
   const topProduct = relatedProducts[0];
-  const topRoundup = guide.relatedRoundups
+  const relatedRoundups = guide.relatedRoundups
     .map((roundupSlug) => findRoundup(site.key, roundupSlug))
-    .find(Boolean);
+    .filter((roundup): roundup is NonNullable<ReturnType<typeof findRoundup>> => Boolean(roundup));
+  const topRoundup = relatedRoundups[0];
+
+  if (site.key === "style") {
+    return (
+      <>
+        <JsonLd
+          data={breadcrumbSchema(site, [
+            { name: "Home", path: "/" },
+            ...(category ? [{ name: category.name, path: `/categories/${category.slug}` }] : []),
+            { name: guide.title, path: `/guides/${slug}` },
+          ])}
+        />
+        <JsonLd data={guideSchema(site, guide)} />
+        <StyleGuidePage
+          guide={guide}
+          relatedProducts={relatedProducts}
+          relatedGuides={relatedGuides}
+          relatedRoundups={relatedRoundups}
+          advice={advice}
+        />
+      </>
+    );
+  }
 
   return (
     <main className="section">

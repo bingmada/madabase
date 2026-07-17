@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import type { SiteConfig } from "@/lib/sites";
 import type { Product, Roundup } from "@/lib/types";
-import { AffiliateButtonGroup } from "./AffiliateButton";
 
 export function SiteChrome({ site, children }: { site: SiteConfig; children: React.ReactNode }) {
   return (
@@ -110,8 +109,8 @@ export function SiteChrome({ site, children }: { site: SiteConfig; children: Rea
 export function Hero({ site }: { site: SiteConfig }) {
   return (
     <section className="relative overflow-hidden bg-[#111814] text-white">
-      <Image className="absolute inset-0 h-full w-full object-cover opacity-45" src={site.heroImage} alt="" fill priority sizes="100vw" />
-      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/48 to-black/12" />
+      <Image className="absolute inset-0 h-full w-full object-cover" src={site.heroImage} alt="" fill priority sizes="100vw" />
+      <div className="absolute inset-0 bg-black/60" />
       <div className="shell relative grid min-h-[520px] content-end pb-12 pt-24">
         <div className="max-w-3xl">
           <p className="eyebrow text-white/80">{site.name}</p>
@@ -153,15 +152,15 @@ export function TrustBar() {
   );
 }
 
-export function ProductCard({ site, product, position, offerLimit = 2 }: { site: SiteConfig; product: Product; position: string; offerLimit?: number }) {
+export function ProductCard({ product }: { product: Product }) {
   const displayName = product.amazonTitle ?? product.name;
   const displayImage = product.amazonImage ?? product.image;
 
   return (
     <article className="panel overflow-hidden">
-      <div className="relative h-52 w-full">
+      <Link className="relative block h-52 w-full" href={`/reviews/${product.slug}`}>
         <Image className="object-cover" src={displayImage} alt={displayName} fill sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" />
-      </div>
+      </Link>
       <div className="p-5">
         <div>
           <p className="text-xs font-bold uppercase text-[var(--muted)]">{product.brand}</p>
@@ -169,11 +168,12 @@ export function ProductCard({ site, product, position, offerLimit = 2 }: { site:
         </div>
         <p className="mt-3 leading-7 text-[var(--muted)]">{product.summary}</p>
         <p className="mt-3 text-sm font-semibold text-[var(--brand-strong)]">Best for: {product.bestFor}</p>
+        <p className="mt-2 text-sm leading-6 text-[var(--muted)]">Main caution: {product.cons[0]}</p>
         <div className="mt-5 flex flex-wrap gap-2">
           <Link className="button-secondary" href={`/reviews/${product.slug}`}>
-            Read notes
+            Compare fit and trade-offs
+            <ArrowRight aria-hidden="true" size={16} />
           </Link>
-          <AffiliateButtonGroup site={site.key} product={product} position={position} limit={offerLimit} />
         </div>
       </div>
     </article>
