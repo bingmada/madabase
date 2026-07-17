@@ -259,12 +259,15 @@ export const expansionGuides: Guide[] = [
   {
     site: "baby",
     slug: "ergobaby-omni-breeze-positions-by-age",
-    title: "Ergobaby Omni Breeze Forward-Facing Age Guide",
-    dek: "When can a baby face out? Check weight, height, head and neck control, seat width, inward, outward, hip, and back carry requirements.",
+    title: "Ergobaby Omni Breeze Positions by Age: Inward, Outward, Hip & Back",
+    dek: "Map every Omni Breeze carry position by size and development, including newborn inward carry, forward-facing readiness, hip carry, back carry, seat width, and setup changes.",
     category: "travel",
-    updatedAt: "July 11, 2026",
+    updatedAt: "July 17, 2026",
+    image: "/images/affiliate/baby-carrier-realistic.webp",
+    imageAlt: "Caregiver wearing a realistic structured mesh baby carrier in a safe inward-facing position",
     relatedProducts: ["ergobaby-omni-breeze-carrier"],
-    relatedRoundups: ["best-baby-carriers-and-sleep-routine-upgrades"],
+    relatedRoundups: ["best-baby-carriers-by-age-and-position", "best-baby-carriers-and-sleep-routine-upgrades"],
+    relatedGuides: ["ergobaby-omni-breeze-forward-facing-age-guide", "ergobaby-omni-breeze-newborn-fit-checklist", "ergobaby-omni-breeze-vs-babybjorn-harmony-by-age"],
     sources: [
       {
         name: "Ergobaby Omni Breeze product guidance",
@@ -280,7 +283,7 @@ export const expansionGuides: Guide[] = [
     sections: [
       { heading: "Age is only a shorthand", body: "The Omni Breeze positions depend on weight, height, head and neck control, and the ability to sit unassisted. Use the age ranges as planning estimates, then apply the exact product instructions and the baby's current developmental milestones." },
       { heading: "Front inward is the newborn starting position", body: "Ergobaby lists the carrier from 7lb and 20in, with the newborn carried facing inward. Set the seat width for the baby's height, provide the instructed head and neck support, and keep the face visible and close enough to monitor." },
-      { heading: "Front outward requires head and neck control", body: "Ergobaby says the baby should have strong head and neck control, clear the top of the panel with the chin, and be over 25in—typically around 5–6 months. Turn the baby inward if sleepy, overstimulated, slumped, or unable to maintain the position." },
+      { heading: "Front outward requires head and neck control", body: "Ergobaby says the baby should have strong head and neck control, clear the top of the panel with the chin, and be over 25in, typically around 5 to 6 months. Turn the baby inward if sleepy, overstimulated, slumped, or unable to maintain the position." },
       { heading: "Hip and back carry come later", body: "The Omni Breeze guidance places hip and back carry after the baby can sit upright unassisted and meets the listed minimum weight, generally around 6 months. Practice over a soft surface with another adult until the transfer and strap sequence are controlled." },
       { heading: "Recheck the setup whenever the position changes", body: "Seat width, head support, button or slider settings, strap tension, and waistband height can change between positions. Follow the relevant official video rather than rotating the baby inside a configuration set for another carry mode." },
     ],
