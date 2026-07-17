@@ -6,6 +6,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { Disclosure } from "@/components/LayoutParts";
 import { StyleProductPage } from "@/components/StyleExperience";
 import { findProduct, siteGuides, siteProducts, siteRoundups } from "@/lib/content";
+import { productEvidencePresentation } from "@/lib/evidence";
 import { breadcrumbSchema, pageMetadata, productNotesSchema } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 import type { AffiliateOffer, Product } from "@/lib/types";
@@ -115,20 +116,8 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
   const context = siteContext(site.key);
   const primaryOffers = product.offers.slice(0, 2);
   const sourceCount = product.sources?.length ?? 0;
-  const evidenceMode = product.evidenceMode ?? "official-spec";
   const externalTests = product.externalTests ?? [];
-  const evidenceModeLabel = evidenceMode === "hands-on"
-    ? "Hands-on review"
-    : evidenceMode === "research-synthesis"
-      ? "Independent evidence synthesis"
-      : "Official-spec research guide";
-  const researchNote = product.researchNote ?? (
-    evidenceMode === "hands-on"
-      ? "This page includes first-hand use. Test conditions and measurements are stated beside the relevant findings."
-      : evidenceMode === "research-synthesis"
-        ? "We have not tested this product ourselves. This guide compares manufacturer documentation and attributed independent tests; results are not treated as directly comparable when hardware, firmware, clients, or environments differ."
-        : "We have not tested this product ourselves. This guide uses current manufacturer documentation and listing checks to identify fit, compatibility, version, and purchase risks."
-  );
+  const evidencePresentation = productEvidencePresentation(product);
   const listingRows = listingVerificationRows(product, displayName, primaryOffers);
   const updateRows = updateRecord(product, sourceCount, primaryOffers);
   const officialSpecRows = Object.entries(product.specs)
@@ -240,8 +229,8 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
             </div>
             <div className="prose-lite mt-8">
               <div className="not-prose rounded-md border border-[var(--brand)] bg-[var(--brand-soft)] p-5">
-                <p className="text-xs font-bold uppercase text-[var(--brand-strong)]">{evidenceModeLabel}</p>
-                <p className="mt-2 text-sm font-semibold leading-6 text-[var(--text)]">{researchNote}</p>
+                <p className="text-xs font-bold uppercase text-[var(--brand-strong)]">{evidencePresentation.label}</p>
+                <p className="mt-2 text-sm font-semibold leading-6 text-[var(--text)]">{evidencePresentation.note}</p>
               </div>
               <div className="not-prose mt-5 rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-5">
                 <h2 className="text-xl font-bold">Quick verdict</h2>

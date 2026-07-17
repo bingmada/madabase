@@ -1,6 +1,7 @@
 import { ArrowRight, Check, Heart, Sparkles } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { productEvidencePresentation } from "@/lib/evidence";
 import type { SiteConfig } from "@/lib/sites";
 import type { Guide, Product, Roundup } from "@/lib/types";
 import { AffiliateButtonGroup } from "./AffiliateButton";
@@ -287,6 +288,7 @@ export function StyleProductPage({
   const name = product.amazonTitle ?? product.name;
   const image = product.amazonImage ?? product.image;
   const hasOffer = product.offers.length > 0;
+  const evidencePresentation = productEvidencePresentation(product);
   const badge =
     {
       bags: "Character carry",
@@ -315,6 +317,10 @@ export function StyleProductPage({
             <Link className="style-kicker" href={`/categories/${product.category}`}>{product.brand}</Link>
             <h1 className="mt-4 font-serif text-5xl leading-[1.02] tracking-[-0.035em] sm:text-6xl">{name}</h1>
             <p className="mt-6 text-lg leading-8 text-[#6b5f59]">{product.summary}</p>
+            <div className="mt-7 border-l-2 border-[#a24d67] bg-[#fffaf6] px-5 py-4">
+              <p className="text-xs font-bold uppercase tracking-[0.12em] text-[#986174]">{evidencePresentation.label}</p>
+              <p className="mt-2 text-sm font-semibold leading-6 text-[#4f4540]">{evidencePresentation.note}</p>
+            </div>
             <div className="mt-7 border-y border-[#d9ccc4] py-5">
               <p className="text-xs font-bold uppercase tracking-[0.12em] text-[#986174]">Wear it for</p>
               <p className="mt-2 font-serif text-2xl">{product.bestFor}</p>

@@ -60,6 +60,7 @@ export const networkProducts: Product[] = [
     amazonTitle: "TP-Link Deco BE63 BE10000 Wireless Tri-Band 2.5G 3-Piece Whole Home Mesh System",
     brand: "TP-Link",
     category: "wifi",
+    asin: "B0CN8QLS4K",
     image: "/images/affiliate/network-tp-link-deco-be63-wifi-7-mesh-realistic.webp",
     summary: "A source-attributed Deco BE63 research guide comparing independent speed, range, wired-throughput, and satellite-latency findings with official US specifications, hardware-version risks, pack size, and BE67 or BE85 alternatives.",
     verdict: "The Deco BE63 is the disciplined Wi-Fi 7 mesh pick when you need coverage, Ethernet backhaul, and several 2.5Gbps ports without jumping to a BE67 or BE85 budget. It is less compelling for small apartments, mostly Wi-Fi 6 clients, or homes where one well-placed router would solve the problem.",
@@ -72,6 +73,7 @@ export const networkProducts: Product[] = [
     cons: ["Overkill for small homes with modest internet plans", "BE67 and BE85 are worth comparing when 10GbE paths matter", "Real coverage and speed still depend on layout, interference, clients, and backhaul"],
     specs: {
       "Product type": "Tri-band Wi-Fi 7 mesh system",
+      ASIN: "B0CN8QLS4K",
       "Common listing title": "TP-Link Deco BE63 BE10000 Wireless Tri-Band 2.5G 3-Piece Whole Home Mesh System",
       "Also searched as": "Deco 7 Pro BE63",
       "Listed Wi-Fi class": "BE10000",
@@ -81,7 +83,7 @@ export const networkProducts: Product[] = [
       Modes: "Router and access point",
       Backhaul: "Wireless, Ethernet, or combined",
     },
-    evidence: ["Confirm whether the listing is the BE10000 3-piece / 3-pack Deco BE63 kit or a single add-on unit", "Treat Deco 7 Pro BE63 wording as a retailer/search alias and verify the official BE63 model on the product page", "Check whether the modem, switches, cabling, and wired clients can use 2.5Gbps", "Compare BE63, BE67, and BE85 only after drawing the actual wired path", "Complete initial mesh setup before connecting Ethernet backhaul, following TP-Link's instructions"],
+    evidence: ["Confirm ASIN B0CN8QLS4K and the BE10000 3-piece / 3-pack Deco BE63 kit rather than a single add-on unit", "Treat Deco 7 Pro BE63 wording as a retailer/search alias and verify the official BE63 model on the product page", "Check whether the modem, switches, cabling, and wired clients can use 2.5Gbps", "Compare BE63, BE67, and BE85 only after drawing the actual wired path", "Complete initial mesh setup before connecting Ethernet backhaul, following TP-Link's instructions"],
     editorialSections: [
       {
         heading: "Exact listing title and Deco 7 Pro naming",
