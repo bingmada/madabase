@@ -223,6 +223,10 @@ body {
   padding-block: clamp(3.5rem, 7vw, 6rem);
 }
 
+.style-product-hero {
+  padding-top: 3rem;
+}
+
 .style-product-image {
   position: relative;
   display: block;

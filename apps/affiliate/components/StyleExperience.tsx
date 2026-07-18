@@ -479,7 +479,7 @@ export function StyleProductPage({
   ];
   return (
     <main>
-      <section className="style-section pt-8 sm:pt-12">
+      <section className="style-section style-product-hero">
         <div className="style-shell grid gap-10 lg:grid-cols-[1.05fr_0.95fr]">
           <figure className="order-2 lg:order-1">
             <div className="relative aspect-[4/5] overflow-hidden bg-[#efe5df]">
