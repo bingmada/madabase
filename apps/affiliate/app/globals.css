@@ -306,6 +306,10 @@ body {
 }
 
 @media (max-width: 760px) {
+  .style-product-hero {
+    padding-top: 2.5rem;
+  }
+
   .style-header .style-shell {
     min-height: 64px;
     align-items: center;

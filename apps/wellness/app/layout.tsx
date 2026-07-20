@@ -23,6 +23,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* @ts-expect-error Impact verification requires its non-standard meta value attribute. */}
+        <meta name="impact-site-verification" value="ba96bb1e-788f-4f05-80ec-38b7ceb8d31a" />
+      </head>
       <body>
         <header className="site-header">
           <Link className="brand" href="/">
