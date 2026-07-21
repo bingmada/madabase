@@ -1,6 +1,6 @@
 "use client";
 
-import { Calculator, RotateCcw } from "lucide-react";
+import { Calculator, Copy, RotateCcw } from "lucide-react";
 import { useMemo, useState } from "react";
 import type { Tool } from "@/lib/types";
 
@@ -47,6 +47,7 @@ function hasSecondaryInput(kind: Tool["kind"]) {
 export function CalculatorTool({ tool }: { tool: Tool }) {
   const [primary, setPrimary] = useState(getDefaultPrimary(tool.kind));
   const [secondary, setSecondary] = useState(getDefaultSecondary(tool.kind));
+  const [copied, setCopied] = useState(false);
 
   const result = useMemo(() => {
     if (tool.kind === "desk") {
@@ -129,6 +130,16 @@ export function CalculatorTool({ tool }: { tool: Tool }) {
     };
   }, [primary, secondary, tool.kind]);
 
+  async function copyPlan() {
+    try {
+      await navigator.clipboard.writeText([tool.title, result.title, ...result.lines].join("\n"));
+      setCopied(true);
+      window.setTimeout(() => setCopied(false), 1800);
+    } catch {
+      setCopied(false);
+    }
+  }
+
   return (
     <div className="panel p-5 sm:p-6">
       <div className="flex items-center gap-2">
@@ -161,17 +172,23 @@ export function CalculatorTool({ tool }: { tool: Tool }) {
           ))}
         </ul>
       </div>
-      <button
-        className="button-secondary mt-5"
-        type="button"
-        onClick={() => {
-          setPrimary(getDefaultPrimary(tool.kind));
-          setSecondary(getDefaultSecondary(tool.kind));
-        }}
-      >
-        <RotateCcw aria-hidden="true" size={16} />
-        Reset
-      </button>
+      <div className="mt-5 flex flex-wrap gap-3">
+        <button className="button-secondary" type="button" onClick={() => void copyPlan()}>
+          <Copy aria-hidden="true" size={16} />
+          {copied ? "Copied" : "Copy plan"}
+        </button>
+        <button
+          className="button-secondary"
+          type="button"
+          onClick={() => {
+            setPrimary(getDefaultPrimary(tool.kind));
+            setSecondary(getDefaultSecondary(tool.kind));
+          }}
+        >
+          <RotateCcw aria-hidden="true" size={16} />
+          Reset
+        </button>
+      </div>
     </div>
   );
 }

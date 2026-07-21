@@ -9,13 +9,23 @@ const contentDateFormatter = new Intl.DateTimeFormat("en-CA", {
   day: "2-digit",
 });
 
-function metaDescription(description: string) {
-  const clean = description.replace(/\s+/g, " ").trim();
-  if (clean.length <= 160) return clean;
+function descriptionSuffix(path: string) {
+  if (path.startsWith("/reviews/")) return " Compare fit, compatibility, recurring costs, and the exact model checks that matter before buying.";
+  if (path.startsWith("/best/")) return " Compare the leading options by fit, trade-offs, and practical buying checks before deciding.";
+  if (path.startsWith("/guides/")) return " Use the setup, compatibility, and decision checks to avoid an expensive wrong turn.";
+  if (path.startsWith("/tools/")) return " Use the result as a planning starting point, then verify the room, setup, and product limits.";
+  if (path.startsWith("/categories/")) return " Explore current comparisons, setup guides, and practical checks for a better shortlist.";
+  return " Explore research notes, comparisons, and practical checks before choosing what to buy.";
+}
 
-  const boundary = clean.lastIndexOf(" ", 157);
+export function metaDescription(description: string, path = "/") {
+  const clean = description.replace(/\s+/g, " ").trim();
+  const expanded = clean.length >= 120 ? clean : `${clean.replace(/[.?!]+$/, "")}.${descriptionSuffix(path)}`;
+  if (expanded.length <= 160) return expanded;
+
+  const boundary = expanded.lastIndexOf(" ", 157);
   const end = boundary >= 120 ? boundary : 157;
-  return `${clean.slice(0, end).trim()}...`;
+  return `${expanded.slice(0, end).trim()}...`;
 }
 
 function noteList(items: string[] | undefined) {
@@ -72,7 +82,7 @@ export function contentDate(value: string | undefined) {
 
 export function pageMetadata(site: SiteConfig, path: string, title: string, description: string, image = site.heroImage): Metadata {
   const url = absoluteUrl(site, path);
-  const descriptionText = metaDescription(description);
+  const descriptionText = metaDescription(description, path);
 
   return {
     metadataBase: new URL(site.domain),
