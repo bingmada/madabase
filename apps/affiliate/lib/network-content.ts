@@ -13,7 +13,6 @@ const links = {
   jadaol: "https://www.amazon.com/Jadaol-Ethernet-High-Speed-Internet-Streaming/dp/B00WD017GQ?crid=3MKTT3A4G7T3R&dib=eyJ2IjoiMSJ9.Hh6NJ6Ids09d07FKqKJbixbvyMiKiB3hm5FoarpRdTKeE5ztzRu3TkSKTC1RXYztSjAUFxLQaYSj_OmS5cUfVZbfYO2uE03ls6KcnGu8PIxiYOnL9-Cxj8h3KDnEtqhery89yFhzTpIwieTRYsUG3N9hfxSF3zPvoRReokhPGhdTJtlahrngTpmjKUe8JHB6ViBavTP33VaH5aN4DSe2dEK-ZWgwCzXL69UHhhoMwp8.NX8liGhqSv1ZU3KEE3CUR320pH_TdOQS2Ay70A2Gqvg&dib_tag=se&keywords=Cable%2BMatters%2BCat%2B6%2BEthernet%2BCable&qid=1782376494&sprefix=netgear%2Bgs308%2Caps%2C1307&sr=8-1&th=1&linkCode=ll2&tag=bingmada-20&linkId=db90af78777b92f51f5d5f8efba1cd39&language=en_US&ref_=as_li_ss_tl",
   monoprice: "https://www.amazon.com/Monoprice-SlimRun-Cat6A-Ethernet-Patch/dp/B01BGV2YP0?dib=eyJ2IjoiMSJ9.cF3HQHQ4_8mhmcMRXmR-ry2YMXMrQeS1PSG7kVoR-Vy8WQe5bbP3Pa35vI-rHGiBUBqzBFOYqPbBnjafskZgZsKycDPsq2UUcXsL9B27eyaDU8lV5BGmXAMU-YBZVW11dSB5f5vTEkfnET1GnNcu9WilHDySDSkGSJ9rnxkMx2qPQ0AT40DjlpgQtEfCgXiPzLcKwHectDfqb4Y0VkN9q7H9phmOoa7bnEbrgqpKwYU.WxX6bXBLt5LScVcZa4Kl6mEcKDaFZrJK5F1OQHDjgZY&dib_tag=se&keywords=Monoprice%2BCat6A%2BEthernet%2BCable&qid=1782376531&sr=8-1&th=1&linkCode=ll2&tag=bingmada-20&linkId=01124a5b12ac51c49d64951ec938a5f6&language=en_US&ref_=as_li_ss_tl",
   ugreen: "https://www.amazon.com/UGREEN-Ethernet-Delivery-Compatible-Chromebook/dp/B0BW2TLQ8S?dib=eyJ2IjoiMSJ9.a9XujlHZit9up3oMeDdq8ZrilN5pL6zaHU9ittIMI2dz_xu5EwkN6Al0aoBKRVU96SAx7nYK5l7FSFAhHAXJ77EpoQubX_lZOdengVBxIXJ-qhOMR5H5ofGqQby0ove_IezDAeEOxIs-7vnazYJ3FEEcIn49OF6uzBUaA2YG0WqfEbA2Z_Fk6zGrSiBHJvZCnfxGUM4yY3I7MdomX0dO0akoFNmj_1Vi3JER7gWnMkM.zZpzDRwCWRQXzgeVz28GqpGl9iAgw01qbOZVKyejrXc&dib_tag=se&keywords=Anker+USB-C+to+Ethernet+Adapter&qid=1782376569&sr=8-1&linkCode=ll2&tag=bingmada-20&linkId=0b087ba99c4427001f31fd9a2567ad7b&language=en_US&ref_=as_li_ss_tl",
-  apc: "https://www.amazon.com/APC-Battery-Protector-Back-UPS-Uninterruptible/dp/B08SH8B7MT?crid=PDLO7LHKMHEJ&dib=eyJ2IjoiMSJ9.O4NdwAUSzXkvqZS-PCKYc2j7epY0gfcm2Em06Wm0d3PnRmgqruWVOJF7tcYN8EohcEqB9syhdcgDii2kAllRdRW7LDfPHgCoJl77EcvKK6TMTRTD0dSC40W9rMlFQm8K65v0l5iqVvSEIPD1tUrTR18cnWkXHT0wnysKOZFjnSbulxQGXbrLmN5Es7b0vmp77DwxxSpG21H38XPsi2OJga15jor68kWN6Hs_LB6EblY.iRxBuMjLzwTiTidj2uIn-CBy6K1cJQ3RC2jUxCOjCWA&dib_tag=se&keywords=APC+BE600M1+%2F+APC+Back-UPS+600VA&qid=1782376632&sprefix=anker+usb-c+to+ethernet+adapter%2Caps%2C976&sr=8-1&linkCode=ll2&tag=bingmada-20&linkId=5df28d176b5b98a728876aa23e217b70&language=en_US&ref_=as_li_ss_tl",
 };
 
 function offer(url: string) {
@@ -410,27 +409,6 @@ export const networkProducts: Product[] = [
     alternatives: ["Choose a simple USB-C Ethernet adapter if you do not need HDMI or USB-A.", "Choose a full docking station for multiple displays and permanent desks."],
     offers: offer(links.ugreen),
   },
-  {
-    site: "network",
-    slug: "apc-back-ups-router-modem-bundle",
-    name: "APC Back-UPS Router and Modem Backup Bundle",
-    brand: "APC",
-    category: "backup",
-    image: "/images/affiliate/network-apc-back-ups-router-modem-bundle.webp",
-    summary: "A battery backup bundle for keeping router, modem, ONT, and small network devices online during short power interruptions.",
-    verdict: "APC Back-UPS is the network resilience pick when your home loses power briefly and you want the internet path to survive the interruption.",
-    whyItMatters: "A router UPS only helps if the modem or ONT and ISP path also stay online. The right setup starts by plugging in the whole network chain, not just the router.",
-    bestFor: "Router, modem, and ONT backup power",
-    priceBand: "$$",
-    rating: 4.5,
-    scores: [{ label: "Outage resilience", value: 8 }, { label: "Outlet usefulness", value: 8 }, { label: "Network-specific fit", value: 6 }],
-    pros: ["Bundle includes 850VA and 600VA units in the listing", "Useful for router, modem, ONT, and USB charging needs", "Recognizable UPS brand for home networks"],
-    cons: ["Runtime depends on actual watt load and battery condition", "May be more bundle than a tiny router shelf needs"],
-    specs: { "Product type": "UPS battery backup bundle", Included: "850VA and 600VA units listed", "Use case": "Router and modem backup power" },
-    evidence: ["List the modem, ONT, router, and mesh node wattage before estimating runtime", "Check outlet spacing for power bricks", "Confirm whether internet service remains active during local outages"],
-    alternatives: ["Choose a smaller single UPS for one router and modem.", "Use no UPS if your ISP equipment outside the home loses power immediately."],
-    offers: offer(links.apc),
-  },
 ];
 
 export const networkRoundups: Roundup[] = [
@@ -498,28 +476,6 @@ export const networkRoundups: Roundup[] = [
       { question: "Should I wire devices instead of upgrading Wi-Fi?", answer: "For desks, TVs, consoles, and NAS devices, Ethernet is often more stable than a stronger wireless router." },
       { question: "Is gigabit enough?", answer: "For many homes yes, but multi-gig internet, NAS transfers, or newer desktops may justify 2.5G or 10G planning." },
       { question: "Are flat Ethernet cables okay?", answer: "They can be useful for room routing, but avoid harsh bends and do not treat them as a universal in-wall cable." },
-    ],
-  },
-  {
-    site: "network",
-    slug: "best-ups-for-router-and-modem",
-    title: "Best UPS for Router, Modem and ONT Backup Power",
-    dek: "Pick a router UPS by counting the whole internet chain: modem or ONT, router, switch, mesh node, outlet spacing, and expected runtime.",
-    category: "backup",
-    intent: "Keep home internet online through short outages without buying the wrong battery backup.",
-    intro: "Backup power for networking only works when every required box stays on. Before buying a UPS, list the modem, ONT, router, switch, and mesh node that must survive the outage.",
-    decisionGuide: [
-      { label: "Router plus modem", detail: "APC Back-UPS is the starting point for common home network backup." },
-      { label: "Power brick crowding", detail: "Check outlet spacing before assuming every device fits." },
-      { label: "Long outage", detail: "Runtime depends on watt load and battery age, not just VA number." },
-      { label: "ISP outage too", detail: "Skip overspending if the upstream service fails whenever power drops." },
-    ],
-    methodology: ["Count every network device that needs power", "Compare watt load against UPS capacity", "Check outlet spacing and battery replacement path"],
-    productSlugs: ["apc-back-ups-router-modem-bundle"],
-    faqs: [
-      { question: "Will a UPS keep internet working?", answer: "Only if the modem or ONT, router, and upstream service remain powered and active." },
-      { question: "What should plug into the UPS?", answer: "Start with modem or ONT, router, one key switch, and possibly one mesh node." },
-      { question: "Do I need a huge UPS?", answer: "Not always. Network gear usually draws less power than desktops, but runtime depends on the actual load." },
     ],
   },
 ];
@@ -654,20 +610,6 @@ export const networkGuides: Guide[] = [
       { heading: "Check display compatibility", body: "USB-C hubs vary by HDMI resolution, refresh rate, and laptop support. Do not assume every port works the same on every computer." },
       { heading: "Power delivery matters", body: "A hub that passes through less power than your laptop needs can be annoying during long work sessions." },
       { heading: "Use Ethernet for stability", body: "A wired adapter is most useful for video calls, large downloads, gaming, or rooms where Wi-Fi is inconsistent." },
-    ],
-  },
-  {
-    site: "network",
-    slug: "router-ups-runtime-guide",
-    title: "Router UPS Runtime: How Big a UPS for Modem, ONT and Mesh?",
-    dek: "Estimate backup power needs by adding modem, ONT, router, switch, and mesh-node wattage before choosing a UPS.",
-    category: "backup",
-    relatedRoundups: ["best-ups-for-router-and-modem"],
-    sections: [
-      { heading: "List the whole internet chain", body: "A UPS only helps if every required device stays powered: modem or ONT, router, switch, and sometimes a mesh node." },
-      { heading: "Runtime depends on watts", body: "VA ratings are not runtime promises. Add up device wattage and leave margin for battery age." },
-      { heading: "Check outlet shape", body: "Router and modem power bricks can block nearby outlets. Outlet spacing is part of the buying decision." },
-      { heading: "Know the upstream limit", body: "Some internet service equipment outside the home may fail during local outages, limiting what your UPS can solve." },
     ],
   },
   {

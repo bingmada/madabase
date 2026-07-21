@@ -196,7 +196,7 @@ export const networkAccessoryExpansionProducts: Product[] = [
       { heading: "Who should skip it", body: "Skip it for VLAN work, PoE cameras or access points, or any setup likely to exceed five wired devices soon." },
     ],
     alternatives: ["Choose TRENDnet TEG-S380 for eight 2.5GbE ports.", "Choose TP-Link TL-SG108 if gigabit is enough."],
-    compareSlugs: ["trendnet-teg-s380-2-5g-switch", "tp-link-tl-sg108-gigabit-switch"],
+    compareSlugs: ["tp-link-tl-sg105-m2-2-5g-switch", "netgear-ms305-2-5g-switch", "trendnet-teg-s380-2-5g-switch"],
     sources: [
       { name: "TRENDnet TEG-S350", url: "https://www.trendnet.com/products/2-5g-switch/5-port-unmanaged-2-5g-switch-TEG-S350", note: "Official port count, switching capacity, fanless, and unmanaged design details." },
       { name: "Amazon listing for ASIN B08XWK4HNT", url: "https://www.amazon.com/dp/B08XWK4HNT", note: "Exact linked Amazon listing; confirm model and seller." },

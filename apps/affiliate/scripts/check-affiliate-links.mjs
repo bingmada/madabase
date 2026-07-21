@@ -61,13 +61,24 @@ function isAffiliateUrl(value) {
   }
 }
 
-function urlsBelow(node) {
+function affiliateUrlsBelow(node) {
   const urls = [];
 
   function visit(child) {
     if (ts.isStringLiteral(child) && isAffiliateUrl(child.text)) {
       urls.push(child.text);
     }
+
+    if (
+      ts.isCallExpression(child) &&
+      ts.isIdentifier(child.expression) &&
+      child.expression.text === "amazonUrl"
+    ) {
+      const asin = literalText(child.arguments[0]);
+      const url = fallbackAmazonUrl(asin);
+      if (url) urls.push(url);
+    }
+
     ts.forEachChild(child, visit);
   }
 
@@ -123,7 +134,7 @@ function buildInventory() {
         const affiliateUrl = literalText(propertyValue(node, "affiliateUrl"));
 
         if (slug && offers) {
-          for (const url of urlsBelow(offers)) {
+          for (const url of affiliateUrlsBelow(offers)) {
             add(url, { slug, site, expectedAsin });
           }
         }

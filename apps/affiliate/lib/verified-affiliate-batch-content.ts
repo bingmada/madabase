@@ -379,8 +379,9 @@ export const verifiedAffiliateBatchProducts: Product[] = [
       "Choose a 10GbE or SFP+ switch when the NAS backbone already exceeds 2.5GbE.",
     ],
     compareSlugs: [
-      "tp-link-tl-sg108-gigabit-switch",
-      "netgear-gs308e-gigabit-switch",
+      "tp-link-tl-sg105-m2-2-5g-switch",
+      "netgear-ms305-2-5g-switch",
+      "trendnet-teg-s350-2-5g-switch",
     ],
     sources: [
       {

@@ -26,6 +26,12 @@ import {
 import { networkGuides, networkProducts, networkRoundups, networkTools } from "./network-content";
 import { networkMultigigGuides, networkMultigigRoundups } from "./network-multigig-expansion-content";
 import {
+  networkSwitchClusterGuides,
+  networkSwitchClusterProducts,
+  networkSwitchClusterRoundups,
+} from "./network-switch-cluster-content";
+import { networkUpsGuides, networkUpsProducts, networkUpsRoundups } from "./network-ups-content";
+import {
   networkPoeExpansionGuides,
   networkPoeExpansionProducts,
   networkPoeExpansionRoundups,
@@ -35,6 +41,16 @@ import {
   smartHomeLeakExpansionProducts,
   smartHomeLeakExpansionRoundups,
 } from "./smarthome-leak-expansion-content";
+import {
+  smartHomeWaterShutoffGuides,
+  smartHomeWaterShutoffProducts,
+  smartHomeWaterShutoffRoundups,
+} from "./smarthome-water-shutoff-content";
+import {
+  homeofficeDockGuides,
+  homeofficeDockProducts,
+  homeofficeDockRoundups,
+} from "./homeoffice-dock-content";
 import { smartHomeGuides, smartHomeProducts, smartHomeRoundups } from "./smarthome-content";
 import { styleCatalogProducts, styleCatalogRoundups } from "./style-catalog-expansion";
 import { styleCatalog50Products, styleCatalog50Roundups } from "./style-catalog-50";
@@ -864,29 +880,93 @@ export const products: Product[] = [
     slug: "anker-675-usb-c-docking-station",
     asin: "B0BNZ4D72B",
     amazonTitle: "Anker 675 USB-C Docking Station (12-in-1, Monitor Stand, Wireless)",
-    updatedAt: "July 16, 2026",
+    seoTitle: "Anker 675 Review: One-Monitor Dock and Stand, Not Dual Display",
+    updatedAt: "July 21, 2026",
+    evidenceMode: "official-spec",
+    researchNote:
+      "We have not used this stand. The page uses Anker's current official FAQ and the exact Amazon identity. It supports one external HDMI monitor, not two, and USB-C ports do not output video.",
     name: "Anker 675 USB-C Docking Station",
     brand: "Anker",
     category: "desks",
     image: "/images/affiliate/homeoffice-anker-675-usb-c-docking-station.webp",
-    summary: "A docking station for laptop users who want a cleaner desk, charging, and quick monitor/peripheral connections.",
-    verdict: "The Anker 675 is best for laptop-first workers who want the desk to behave like a docking station instead of a nest of loose cables.",
-    whyItMatters: "Cable management is easiest when the connection routine is simple. If one cable can handle display, charging, and peripherals, the desk is more likely to stay clean after real workdays.",
-    bestFor: "Laptop-first workers who dock and undock daily",
-    priceBand: "$$",
+    summary:
+      "A 12-in-1 powered monitor stand and one-monitor USB-C dock with wireless charging, up to 100W laptop charging, a 180W adapter, and a strict single-HDMI display limit.",
+    verdict:
+      "Anker 675 is a cable-management and monitor-stand purchase for one external 4K60 screen. It is not a dual-monitor dock, and buyers who need two external displays should move to the DisplayLink or native Thunderbolt decision path before comparing ports.",
+    whyItMatters:
+      "The earlier page treated display support as a generic compatibility check. Anker's official FAQ is explicit: one HDMI monitor only, with no display output from the USB-C ports.",
+    bestFor: "One-monitor desks that need a powered stand and cable cleanup",
+    priceBand: "$$$",
     rating: 4.3,
     scores: [
       { label: "Cable cleanup", value: 9 },
-      { label: "Laptop workflow", value: 8 },
-      { label: "Budget fit", value: 6 },
+      { label: "One-monitor workflow", value: 8 },
+      { label: "Dual-monitor fit", value: 1 },
     ],
-    pros: ["Natural fit for cable-managed laptop desks", "Useful for one-cable laptop desk setups", "Pairs well with standing desks and monitor arms"],
-    cons: ["Port needs vary by laptop", "Higher cost than simple USB hubs"],
-    specs: { ASIN: "B0BNZ4D72B", "Device type": "12-in-1 USB-C docking station and monitor stand", "Use case": "Cable management", "Link status": "Amazon affiliate link verified July 16, 2026" },
-    evidence: ["Confirm ASIN B0BNZ4D72B and the current Anker 675 port layout against your laptop and monitor", "Verify charging wattage, display support, and cable placement before buying", "Use as an optional upgrade rather than a universal recommendation"],
-    alternatives: ["Use a cheaper USB-C hub if you only connect one monitor and a keyboard.", "Skip a dock if your laptop rarely leaves the desk."],
+    pros: [
+      "Combines a monitor stand, powered dock, cable-routing surface, and wireless charging area",
+      "One HDMI output supports up to 4K60 under Anker's official guidance",
+      "Included 180W adapter supports up to 100W laptop charging and additional accessory charging",
+    ],
+    cons: [
+      "Supports only one external monitor",
+      "USB-C ports do not output display video",
+      "Large fixed stand costs more and is less portable than a compact dock",
+    ],
+    specs: {
+      ASIN: "B0BNZ4D72B",
+      "Device type": "12-in-1 USB-C docking station and monitor stand",
+      Display: "1 x HDMI, up to 4K60; USB-C ports do not output video",
+      Host: "Full-function USB-C; Windows 10/11 or macOS 10.14+ listed",
+      Charging: "Up to 100W laptop charging; 45W shared USB-C accessory charging listed",
+      Power: "180W AC adapter included",
+      "Stand load": "One monitor or all-in-one up to 22 lb recommended",
+    },
+    evidence: [
+      "Confirm ASIN B0BNZ4D72B and Anker 675 rather than a compact Anker dock",
+      "Buy only for one external HDMI monitor; neither USB-C port adds a second display",
+      "Confirm the laptop has a full-function USB-C port and use the supplied upstream cable",
+      "Check monitor footprint and keep the stand load at or below Anker's listed 22 lb recommendation",
+      "Verify seller, 180W adapter inclusion, regional plug, delivery, and return terms",
+    ],
+    editorialSections: [
+      {
+        heading: "This is not a dual-monitor dock",
+        body: "Anker's official FAQ says the 675 supports one external monitor through HDMI at up to 4K60. Its USB-C ports do not carry display output. Two physical USB-C sockets should not be mistaken for two video paths.",
+      },
+      {
+        heading: "The stand is the reason to buy it",
+        body: "The 675 replaces a monitor riser, powered hub, charging area, and some loose cable routing with one fixed desk surface. That is useful when the monitor footprint and 22 lb recommended load fit; it is wasteful when a compact dock can hide behind the screen.",
+      },
+      {
+        heading: "Power is generous but still host-dependent",
+        body: "Anker lists a 180W adapter, up to 100W laptop charging, and a separate accessory-charging budget. The laptop must support charging and display over its full-function USB-C port, and its sustained load should fit the available host power.",
+      },
+      {
+        heading: "Who should skip it",
+        body: "Skip it for two external screens, a portable setup, a monitor heavier than the documented stand recommendation, or a desk that already has a monitor arm. Choose DisplayLink for a base-Mac workaround or native Thunderbolt when the host supports dual displays.",
+      },
+    ],
+    alternatives: [
+      "Choose Plugable USBC-6950PDZ for two DisplayLink office screens on a base M-series Mac.",
+      "Choose Plugable TBT4-UD5 for native dual HDMI on a compatible Thunderbolt host.",
+      "Choose CalDigit TS4 when 2.5GbE, 98W charging, and a larger premium port set matter.",
+    ],
+    compareSlugs: ["plugable-usbc-6950pdz-displaylink-dock", "plugable-tbt4-ud5-thunderbolt-dock", "caldigit-ts4-thunderbolt-dock"],
+    sources: [
+      {
+        name: "Anker 675 official FAQ",
+        url: "https://service.anker.com/article-description/Anker-675-USB-C-Docking-Station-12-in-1-Monitor-Stand-Wireless-FAQ",
+        note: "Official single-monitor limit, HDMI resolution, USB-C video exclusion, charging, cable, adapter, OS, and stand-load guidance.",
+      },
+      {
+        name: "Amazon listing for ASIN B0BNZ4D72B",
+        url: "https://www.amazon.com/dp/B0BNZ4D72B",
+        note: "Exact current marketplace identity; confirm seller, adapter, regional plug, stock, and delivery.",
+      },
+    ],
     offers: [
-      { merchant: "Amazon US", url: "https://www.amazon.com/dp/B0BNZ4D72B?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check price on Amazon", priceNote: "Confirm ASIN B0BNZ4D72B, laptop compatibility, seller, live price, and availability." },
+      { merchant: "Amazon US", url: "https://www.amazon.com/dp/B0BNZ4D72B?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check Anker 675 price on Amazon", priceNote: "Confirm ASIN B0BNZ4D72B, one-monitor limit, 180W adapter, regional plug, seller, and return terms." },
       ebaySearchOffer("Anker 675 USB-C Docking Station", "homeoffice-anker-675-usb-c-docking-station"),
     ],
   },
@@ -1716,15 +1796,50 @@ export const guides: Guide[] = [
   {
     site: "homeoffice",
     slug: "usb-c-dock-ports-explained-guide",
-    title: "USB-C Dock Ports Explained for Home Offices",
-    dek: "How to check charging, display support, USB speed, Ethernet, and cable placement before buying a dock.",
+    title: "USB-C Dock Ports Explained: DisplayLink, Thunderbolt and Dual Screens",
+    dek: "Decode USB-C, Thunderbolt, DisplayLink, charging, video streams, Ethernet, and cable bandwidth before buying a one- or two-monitor dock.",
     category: "desks",
-    relatedRoundups: ["best-home-office-cable-management"],
+    updatedAt: "July 21, 2026",
+    image: "/images/affiliate/homeoffice-dual-monitor-dock-editorial-realistic.webp",
+    imageAlt: "Laptop and compact dock connected to two external monitors with visible cable paths",
+    relatedRoundups: ["best-dual-monitor-docks-mac-windows", "displaylink-vs-thunderbolt-dock-dual-monitors", "best-home-office-cable-management"],
+    relatedProducts: ["plugable-usbc-6950pdz-displaylink-dock", "plugable-tbt4-ud5-thunderbolt-dock", "caldigit-ts4-thunderbolt-dock", "anker-675-usb-c-docking-station"],
+    relatedGuides: ["macbook-dual-monitor-dock-chip-compatibility-guide", "usb-c-dock-vs-monitor-hub-guide"],
+    comparisonTable: {
+      title: "The label on the port does not answer the display question",
+      columns: ["Path", "What it carries", "Main buying risk"],
+      rows: [
+        { label: "USB-C Alt Mode", values: ["Native video supplied by host", "Host may expose only one stream"] },
+        { label: "Thunderbolt 4 / USB4", values: ["High-bandwidth data and native display streams", "Exact chip still controls display count"] },
+        { label: "DisplayLink", values: ["Software-driven USB graphics", "Driver, permission, HDCP, motion, and policy limits"] },
+        { label: "USB-C charging", values: ["Negotiated power to host or accessory", "Input wattage and host wattage are different"] },
+      ],
+    },
+    sources: [
+      {
+        name: "Plugable USBC-6950PDZ product page",
+        url: "https://plugable.com/products/usbc-6950pdz",
+        note: "Official DisplayLink, dual-display, driver, charging, and workload limitations.",
+      },
+      {
+        name: "Plugable TBT4-UD5 product page",
+        url: "https://plugable.com/products/tbt4-ud5",
+        note: "Official native-display, host-chip, charging, and port compatibility.",
+      },
+      {
+        name: "Anker 675 official FAQ",
+        url: "https://service.anker.com/article-description/Anker-675-USB-C-Docking-Station-12-in-1-Monitor-Stand-Wireless-FAQ",
+        note: "Example of a dock whose USB-C ports do not output video and whose HDMI supports only one monitor.",
+      },
+    ],
     sections: [
-      { heading: "List the devices first", body: "Count monitors, keyboard, mouse, webcam, microphone, light, storage, and Ethernet before comparing docks. A dock is useful only if it removes daily connection friction." },
-      { heading: "Display support is the hard part", body: "USB-C does not guarantee the same monitor support on every laptop. Check resolution, refresh rate, DisplayPort mode, HDMI limits, and whether the laptop supports the required output." },
-      { heading: "Charging wattage should match the laptop", body: "A dock that underpowers the laptop may work lightly and still drain battery under load. Compare the dock's power delivery with the laptop charger rating." },
-      { heading: "Cable placement affects cleanliness", body: "Ports on the front, side, or back change how the desk looks and works. Choose the layout around where the laptop, monitor, and power strip actually sit." },
+      { heading: "Start with the exact laptop chip and port", body: "Record the computer model, processor, OS, and whether the port is full-function USB-C, Thunderbolt 3, Thunderbolt 4, Thunderbolt 5, or USB4. A USB-C shape alone says nothing conclusive about native display count, charging, or data speed." },
+      { heading: "Count native video streams before HDMI sockets", body: "A native dock routes display streams supplied by the host. Base M1 and M2 Macs remain one-display systems through a native dock even when it has two HDMI ports. Other Mac chips and Windows systems have different limits that must be checked exactly." },
+      { heading: "DisplayLink is a separate graphics path", body: "DisplayLink can create two office screens on a host with a one-display native limit, but it requires software and can conflict with HDCP-protected content, gaming, 3D, color work, screen-recording policy, or managed-device restrictions." },
+      { heading: "Charging wattage has an input and an output", body: "A dock may accept a 100W charger and deliver less to the laptop after powering itself and peripherals. Check whether the power adapter is included, the host-output figure, the laptop's sustained need, and accessory charging under load." },
+      { heading: "USB speed is shared through the upstream link", body: "Several 10Gbps labels do not guarantee every storage device, Ethernet interface, card reader, and camera gets full speed simultaneously. Map the highest-bandwidth peripherals and prefer direct host connections for a critical scratch disk or capture device when needed." },
+      { heading: "Ethernet can be Gigabit or 2.5GbE", body: "A 2.5GbE dock only helps when the router or switch, cable, server, adapter path, and workload can exceed Gigabit. Otherwise it is an expensive checkbox rather than a desk improvement." },
+      { heading: "Test the complete desk during the return window", body: "Verify cold boot, login, sleep, wake, clamshell mode, display arrangement, fullscreen video, conferencing, storage, Ethernet, charging, audio, and every cable. A setup that works once after reconnecting is not yet reliable." },
     ],
   },
   {
@@ -1920,6 +2035,12 @@ tools.push(...networkTools);
 products.push(...networkAccessoryExpansionProducts);
 roundups.push(...networkAccessoryExpansionRoundups);
 guides.push(...networkAccessoryExpansionGuides);
+products.push(...networkSwitchClusterProducts);
+roundups.push(...networkSwitchClusterRoundups);
+guides.push(...networkSwitchClusterGuides);
+products.push(...networkUpsProducts);
+roundups.push(...networkUpsRoundups);
+guides.push(...networkUpsGuides);
 products.push(...networkPoeExpansionProducts);
 roundups.push(...networkPoeExpansionRoundups);
 guides.push(...networkPoeExpansionGuides);
@@ -1929,6 +2050,12 @@ guides.push(...smartHomeGuides);
 products.push(...smartHomeLeakExpansionProducts);
 roundups.push(...smartHomeLeakExpansionRoundups);
 guides.push(...smartHomeLeakExpansionGuides);
+products.push(...smartHomeWaterShutoffProducts);
+roundups.push(...smartHomeWaterShutoffRoundups);
+guides.push(...smartHomeWaterShutoffGuides);
+products.push(...homeofficeDockProducts);
+roundups.push(...homeofficeDockRoundups);
+guides.push(...homeofficeDockGuides);
 products.push(...styleProducts);
 roundups.push(...styleRoundups);
 guides.push(...styleGuides);
