@@ -481,7 +481,7 @@ export const networkRoundups: Roundup[] = [
   {
     site: "network",
     slug: "best-wired-networking-upgrades",
-    title: "Best Wired Networking Upgrades for Home Offices, TV Rooms and Router Shelves",
+    title: "Best Wired Home Network Upgrades: Switches, Cables & Hubs",
     dek: "Compare home switches, Cat6/Cat6A cables, and USB-C Ethernet adapters before replacing a router that is not the real bottleneck.",
     category: "wired",
     intent: "Build a stable wired path for desks, consoles, streamers, access points, and network shelves.",

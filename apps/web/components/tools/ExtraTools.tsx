@@ -596,7 +596,7 @@ const utilityOperations: Record<UtilityGroup, UtilityOperation[]> = {
     {
       id: "markdown-to-text",
       label: { en: "Markdown to text", zh: "Markdown 转纯文本" },
-      sample: { en: "# Madabase\n\nBuild **useful** tools with [links](https://madabase.com).", zh: "# Madabase\n\n把 **Markdown** 内容转换成纯文本，保留链接文字。" },
+      sample: { en: "# Madabase Tools\n\nBuild **useful** tools with [links](https://tools.madabase.com).", zh: "# Madabase Tools\n\n把 **Markdown** 内容转换成纯文本，保留链接文字。" },
       outputLabel: { en: "Plain text", zh: "纯文本" },
       transform: markdownToText,
     },
@@ -642,7 +642,7 @@ const utilityOperations: Record<UtilityGroup, UtilityOperation[]> = {
     {
       id: "url-extractor",
       label: { en: "Extract URLs", zh: "提取 URL" },
-      sample: { en: "Visit https://madabase.com and https://example.com/docs.", zh: "访问 https://madabase.com 和 https://example.com/docs 查看示例。" },
+      sample: { en: "Visit https://tools.madabase.com and https://example.com/docs.", zh: "访问 https://tools.madabase.com 和 https://example.com/docs 查看示例。" },
       outputLabel: { en: "URLs", zh: "URL 列表" },
       transform: extractUrls,
     },
@@ -1246,7 +1246,7 @@ export function SlugGenerator({ locale = "en" }: { locale?: Locale }) {
 
 export function QrCodeGenerator({ locale = "en" }: { locale?: Locale }) {
   const copy = toolCopy(locale);
-  const [input, setInput] = useState("https://madabase.com/en/tools");
+  const [input, setInput] = useState("https://tools.madabase.com/en/tools");
   const [svg, setSvg] = useState("");
   const [logoDataUrl, setLogoDataUrl] = useState("");
   const [logoName, setLogoName] = useState("");
@@ -1410,7 +1410,7 @@ export function QrCodeGenerator({ locale = "en" }: { locale?: Locale }) {
             <CopyButton value={svg} label={locale === "zh" ? "复制 SVG" : "Copy SVG"} copiedLabel={copy.copied} />
             <ToolButton variant="secondary" onClick={downloadSvg}>{locale === "zh" ? "下载 SVG" : "Download SVG"}</ToolButton>
             <ToolButton variant="secondary" onClick={downloadPng}>{locale === "zh" ? "下载 PNG" : "Download PNG"}</ToolButton>
-            <ResetButton label={copy.reset} onClick={() => { setInput("https://madabase.com/en/tools"); setLogoDataUrl(""); setLogoName(""); setLogoSize(44); setDarkColor("#111827"); setLightColor("#ffffff"); setErrorCorrection("H"); setPngSize("512"); }} />
+            <ResetButton label={copy.reset} onClick={() => { setInput("https://tools.madabase.com/en/tools"); setLogoDataUrl(""); setLogoName(""); setLogoSize(44); setDarkColor("#111827"); setLightColor("#ffffff"); setErrorCorrection("H"); setPngSize("512"); }} />
             <ToolButton onClick={() => fireAndForgetToolExecution("qr-code-generator")}>{locale === "zh" ? "生成二维码" : "Generate QR"}</ToolButton>
           </div>
           <StatusMessage message={message} tone={tone} />
@@ -1436,7 +1436,7 @@ export function JsFormatter({ locale = "en" }: { locale?: Locale }) {
 }
 
 export function UrlParser({ locale = "en" }: { locale?: Locale }) {
-  return <GenericTextTransformTool label={locale === "zh" ? "URL 输入" : "URL input"} sample="https://madabase.com/en/tools/json-formatter?ref=seo#faq" tool="url-parser" transform={parseUrlParts} outputLabel={locale === "zh" ? "URL 解析结果" : "Parsed URL"} locale={locale} />;
+  return <GenericTextTransformTool label={locale === "zh" ? "URL 输入" : "URL input"} sample="https://tools.madabase.com/en/tools/json-formatter?ref=seo#faq" tool="url-parser" transform={parseUrlParts} outputLabel={locale === "zh" ? "URL 解析结果" : "Parsed URL"} locale={locale} />;
 }
 
 export function UserAgentParser({ locale = "en" }: { locale?: Locale }) {
@@ -1498,7 +1498,7 @@ const genericToolConfigs: Record<string, GenericToolConfig> = {
   },
   "url-extractor": {
     label: "Text",
-    sample: "Visit https://madabase.com and https://example.com/docs.",
+    sample: "Visit https://tools.madabase.com and https://example.com/docs.",
     outputLabel: "URLs",
     transform: (value) => [...value.matchAll(/https?:\/\/[^\s<>"']+/gi)].map((match) => match[0]).join("\n") || "No URLs found.",
   },
@@ -1534,13 +1534,13 @@ const genericToolConfigs: Record<string, GenericToolConfig> = {
   },
   "env-to-json": {
     label: ".env content",
-    sample: '# App settings\nAPP_NAME=Madabase\nFEATURE_TESTS=true\nPUBLIC_URL="https://madabase.com"',
+    sample: '# App settings\nAPP_NAME=Madabase Tools\nFEATURE_TESTS=true\nPUBLIC_URL="https://tools.madabase.com"',
     outputLabel: "JSON",
     transform: parseEnvToJson,
   },
   "json-to-env": {
     label: "JSON",
-    sample: '{"APP_NAME":"Madabase","FEATURE_TESTS":true,"PUBLIC_URL":"https://madabase.com"}',
+    sample: '{"APP_NAME":"Madabase Tools","FEATURE_TESTS":true,"PUBLIC_URL":"https://tools.madabase.com"}',
     outputLabel: ".env",
     transform: jsonToEnvLines,
   },
@@ -1552,7 +1552,7 @@ const genericToolConfigs: Record<string, GenericToolConfig> = {
   },
   "query-string-parser": {
     label: "Query string",
-    sample: "https://madabase.com/en/tools/json-formatter?utm_source=seo&tool=json&tag=formatter&tag=developer",
+    sample: "https://tools.madabase.com/en/tools/json-formatter?utm_source=seo&tool=json&tag=formatter&tag=developer",
     outputLabel: "Parsed query",
     transform: parseQueryString,
   },
@@ -1618,7 +1618,7 @@ const genericToolConfigs: Record<string, GenericToolConfig> = {
   },
   "markdown-to-text": {
     label: "Markdown",
-    sample: "# Madabase\n\nBuild **useful** tools with [links](https://madabase.com).",
+    sample: "# Madabase Tools\n\nBuild **useful** tools with [links](https://tools.madabase.com).",
     outputLabel: "Plain text",
     transform: markdownToText,
   },

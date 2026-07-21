@@ -24,7 +24,7 @@
 下载你的二维码
 选择 PNG 或 SVG 格式并下载二维码。PNG 适合大多数用途，而 SVG 提供可缩放的矢量图用于打印。
 [EXAMPLES]
-https://madabase.com
+https://tools.madabase.com
 ===
 [URL 的二维码]
 [FAQ]

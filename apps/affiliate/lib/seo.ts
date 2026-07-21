@@ -28,6 +28,25 @@ export function metaDescription(description: string, path = "/") {
   return `${expanded.slice(0, end).trim()}...`;
 }
 
+export function productPageTitle(product: Product) {
+  if (product.seoTitle) return product.seoTitle;
+
+  const suffix = {
+    pet: "Review: Fit, Cleaning & Buying Guide",
+    homeoffice: "Review: Fit, Specs & Buying Guide",
+    baby: "Review: Age, Fit & Buying Guide",
+    network: "Review: Specs, Setup & Buying Guide",
+    smarthome: "Review: Compatibility & Buying Guide",
+    style: "Review: Size, Materials & Fit",
+  }[product.site];
+
+  const detailedTitle = `${product.name} ${suffix}`;
+  if (detailedTitle.length <= 72) return detailedTitle;
+
+  const compactTitle = `${product.name} Review & Buying Guide`;
+  return compactTitle.length <= 72 ? compactTitle : `${product.name} Review`;
+}
+
 function noteList(items: string[] | undefined) {
   const notes = items?.filter(Boolean).slice(0, 5) ?? [];
   if (notes.length === 0) return undefined;
@@ -223,10 +242,48 @@ export function faqPageSchema(faqs: Roundup["faqs"]) {
   };
 }
 
+export function roundupArticleSchema(site: SiteConfig, roundup: Roundup, products: Product[]) {
+  const url = absoluteUrl(site, `/best/${roundup.slug}`);
+  const updated = contentDate(roundup.updatedAt);
+  const citations = [...new Set(products.flatMap((product) => product.sources?.map((source) => source.url) ?? []))];
+  const firstImage = products[0]?.amazonImage ?? products[0]?.image;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: roundup.seoTitle ?? roundup.title,
+    description: roundup.dek,
+    url,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": url,
+    },
+    articleSection: roundup.category,
+    ...(firstImage ? { image: absoluteUrl(site, firstImage) } : {}),
+    ...(updated ? { dateModified: updated.isoDateTime } : {}),
+    ...(citations.length ? { citation: citations } : {}),
+    about: products.map((product) => ({
+      "@type": "Product",
+      name: product.amazonTitle ?? product.name,
+      url: absoluteUrl(site, `/reviews/${product.slug}`),
+    })),
+    author: {
+      "@type": "Organization",
+      name: `${site.name} editorial desk`,
+      url: absoluteUrl(site, "/about"),
+    },
+    publisher: {
+      "@type": "Organization",
+      name: site.name,
+      url: site.domain,
+    },
+  };
+}
+
 export function productNotesSchema(site: SiteConfig, product: Product) {
   const displayName = product.amazonTitle ?? product.name;
   const displayImage = product.amazonImage ?? product.image;
-  const headline = product.seoTitle ?? `${displayName} Buying Notes`;
+  const headline = productPageTitle(product);
   const url = absoluteUrl(site, `/reviews/${product.slug}`);
   const productId = `${url}#product`;
   const updated = contentDate(product.updatedAt);

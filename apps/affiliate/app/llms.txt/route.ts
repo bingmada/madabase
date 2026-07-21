@@ -1,12 +1,18 @@
-import { siteGuides, siteRoundups, siteTools } from "@/lib/content";
+import { siteGuides, siteProducts, siteRoundups, siteTools } from "@/lib/content";
 import { getCurrentSite } from "@/lib/sites";
 
-function linesFor(label: string, items: Array<{ title: string; slug: string }>, prefix: string) {
-  return [`## ${label}`, ...items.map((item) => `- ${item.title}: ${prefix}/${item.slug}`)];
+type LlmIndexItem = { slug: string } & ({ title: string } | { name: string });
+
+function linesFor(label: string, items: LlmIndexItem[], prefix: string) {
+  return [
+    `## ${label}`,
+    ...items.map((item) => `- ${"title" in item ? item.title : item.name}: ${prefix}/${item.slug}`),
+  ];
 }
 
 export async function GET() {
   const site = await getCurrentSite();
+  const products = siteProducts(site.key);
   const roundups = siteRoundups(site.key);
   const guides = siteGuides(site.key);
   const tools = siteTools(site.key);
@@ -19,6 +25,8 @@ export async function GET() {
     "This site publishes practical buying notes, comparison guides, and decision checklists. It focuses on use-case fit, compatibility checks, product trade-offs, and affiliate disclosure.",
     "",
     "Affiliate disclosure: As an Amazon Associate, this site may earn from qualifying purchases. Prices, availability, seller details, and product versions should be confirmed on the retailer page before buying.",
+    "",
+    ...linesFor("Product evidence pages", products, "/reviews"),
     "",
     ...linesFor("Comparison pages", roundups, "/best"),
     "",

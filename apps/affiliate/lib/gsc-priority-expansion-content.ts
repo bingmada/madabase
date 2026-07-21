@@ -9,7 +9,7 @@ export const gscPriorityProducts: Product[] = [
     asin: "B089QWNQXC",
     amazonTitle: "Dr. Brown's All-in-One Sterilizer and Dryer for Baby Bottles, Parts and Other Newborn Essentials",
     amazonDetailUrl: "https://www.amazon.com/dp/B089QWNQXC",
-    seoTitle: "Dr. Brown's All-in-One Sterilizer and Dryer Review: Capacity, Drying & Fit",
+    seoTitle: "Dr. Brown's Sterilizer Dryer Review: Capacity & Drying",
     updatedAt,
     sources: [
       { name: "Amazon listing: Dr. Brown's All-in-One Sterilizer and Dryer", url: "https://www.amazon.com/dp/B089QWNQXC", note: "ASIN, title, bottle capacity, cycle modes, and current listing details." },
@@ -111,7 +111,7 @@ export const gscPriorityProducts: Product[] = [
     asin: "B0BG67HG7S",
     amazonTitle: "Chicco Advanced Electric Steam Sterilizer and Dryer for Baby Bottles, Pacifiers & Feeding Accessories",
     amazonDetailUrl: "https://www.amazon.com/dp/B0BG67HG7S",
-    seoTitle: "Chicco Advanced Sterilizer and Dryer Review: 6-Bottle Capacity & Delay Start",
+    seoTitle: "Chicco Sterilizer Dryer Review: 6-Bottle Capacity",
     updatedAt,
     sources: [
       { name: "Amazon listing: Chicco Advanced Electric Steam Sterilizer and Dryer", url: "https://www.amazon.com/dp/B0BG67HG7S", note: "ASIN, title, listed capacity, cycle options, dimensions, and style details." },

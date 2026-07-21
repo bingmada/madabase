@@ -19,7 +19,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: "", changeFrequency: "weekly", priority: 1 },
     ...staticPageSlugs.map((slug) => ({ path: `/${slug}`, changeFrequency: "monthly" as const, priority: 0.45 })),
     ...site.categories.map((category) => ({ path: `/categories/${category.slug}`, changeFrequency: "weekly" as const, priority: 0.75 })),
-    ...roundups.map((item) => ({ path: `/best/${item.slug}`, changeFrequency: "weekly" as const, priority: 0.9 })),
+    ...roundups.map((item) => {
+      const updated = contentDate(item.updatedAt);
+
+      return {
+        path: `/best/${item.slug}`,
+        changeFrequency: "weekly" as const,
+        priority: 0.9,
+        ...(updated ? { lastModified: updated.date } : {}),
+      };
+    }),
     ...products.map((item) => {
       const updated = contentDate(item.updatedAt);
 

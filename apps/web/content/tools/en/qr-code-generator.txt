@@ -24,7 +24,7 @@ The QR code updates in real-time as you type. Adjust the size and error correcti
 Download your QR code
 Choose PNG or SVG format and download the QR code. PNG is ideal for most uses, while SVG provides a scalable vector for print.
 [EXAMPLES]
-https://madabase.com
+https://tools.madabase.com
 ===
 [QR Code for URL]
 [FAQ]

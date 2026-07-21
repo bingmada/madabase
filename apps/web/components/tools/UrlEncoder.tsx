@@ -5,7 +5,7 @@ import { decodeUrlComponent, encodeUrlComponent } from "@/lib/tool-transforms";
 import { fireAndForgetToolExecution } from "@/lib/tool-usage-client";
 import { CopyButton, ResetButton, StatusMessage, ToolButton, ToolPanel, ToolTextarea } from "./ToolPrimitives";
 
-const sample = "https://madabase.com/tools/json-formatter?query=hello world";
+const sample = "https://tools.madabase.com/en/tools/json-formatter?query=hello world";
 
 export function UrlEncoder({ locale = "en" }: { locale?: Locale }) {
   const [input, setInput] = useState(sample);

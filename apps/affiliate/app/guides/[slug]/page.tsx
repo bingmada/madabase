@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { AffiliateButtonGroup } from "@/components/AffiliateButton";
 import { JsonLd } from "@/components/JsonLd";
 import { StyleGuidePage } from "@/components/StyleExperience";
-import { findGuide, findProduct, findRoundup } from "@/lib/content";
+import { findGuide, findProduct, findRoundup, siteGuides } from "@/lib/content";
 import { breadcrumbSchema, guideSchema, pageMetadata } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 import type { SiteKey } from "@/lib/types";
@@ -145,15 +145,22 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
   const relatedProducts = (guide.relatedProducts ?? [])
     .map((productSlug) => findProduct(site.key, productSlug))
     .filter((product): product is NonNullable<ReturnType<typeof findProduct>> => Boolean(product));
-  const relatedGuides = (guide.relatedGuides ?? [])
+  const explicitRelatedGuides = (guide.relatedGuides ?? [])
     .filter((guideSlug) => guideSlug !== guide.slug)
     .map((guideSlug) => findGuide(site.key, guideSlug))
     .filter((item): item is NonNullable<ReturnType<typeof findGuide>> => Boolean(item));
+  const relatedGuides = [
+    ...explicitRelatedGuides,
+    ...siteGuides(site.key).filter((item) => item.slug !== guide.slug && item.category === guide.category),
+  ]
+    .filter((item, index, items) => items.findIndex((candidate) => candidate.slug === item.slug) === index)
+    .slice(0, 4);
   const topProduct = relatedProducts[0];
   const relatedRoundups = guide.relatedRoundups
     .map((roundupSlug) => findRoundup(site.key, roundupSlug))
     .filter((roundup): roundup is NonNullable<ReturnType<typeof findRoundup>> => Boolean(roundup));
   const topRoundup = relatedRoundups[0];
+  const directAnswer = guide.sections[0]?.body ?? advice.decision;
 
   if (site.key === "style") {
     return (
@@ -201,6 +208,11 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
           <span>Prepared by the {site.name} editorial desk</span>
           {guide.updatedAt ? <span>Updated {guide.updatedAt}</span> : null}
         </div>
+        <section className="mt-8 rounded-md border border-[var(--brand)] bg-[var(--brand-soft)] p-5" aria-labelledby="guide-quick-answer">
+          <p className="eyebrow">Quick answer</p>
+          <h2 className="mt-2 text-xl font-bold" id="guide-quick-answer">The practical answer</h2>
+          <p className="mt-3 leading-7 text-[var(--text)]">{directAnswer}</p>
+        </section>
         {topProduct || topRoundup ? (
           <section className="mt-8 rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-5">
             <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">

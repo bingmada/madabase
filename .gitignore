@@ -4,3 +4,4 @@ node_modules
 .env.*
 .affiliate-distribution
 docs
+deploy

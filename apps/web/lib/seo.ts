@@ -3,7 +3,7 @@ import type { Locale } from "./i18n";
 import { defaultLocale, locales } from "./i18n";
 
 export function getSiteUrl() {
-  return process.env.NEXT_PUBLIC_SITE_URL ?? "https://madabase.com";
+  return process.env.NEXT_PUBLIC_SITE_URL ?? "https://tools.madabase.com";
 }
 
 export function getTestSiteUrl() {

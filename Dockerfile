@@ -8,6 +8,8 @@ RUN npm install
 
 FROM node:20-alpine AS builder
 WORKDIR /app
+ARG NEXT_PUBLIC_SITE_URL=https://tools.madabase.com
+ENV NEXT_PUBLIC_SITE_URL=$NEXT_PUBLIC_SITE_URL
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 RUN npm run build --workspace apps/web
@@ -15,6 +17,8 @@ RUN npm run build --workspace apps/web
 FROM node:20-alpine AS runner
 WORKDIR /app
 ENV NODE_ENV=production
+ARG NEXT_PUBLIC_SITE_URL=https://tools.madabase.com
+ENV NEXT_PUBLIC_SITE_URL=$NEXT_PUBLIC_SITE_URL
 COPY --from=builder /app/package.json ./package.json
 COPY --from=builder /app/package-lock.json* ./
 COPY --from=builder /app/apps/web/.next ./apps/web/.next

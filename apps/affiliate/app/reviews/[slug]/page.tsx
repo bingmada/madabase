@@ -7,7 +7,7 @@ import { Disclosure } from "@/components/LayoutParts";
 import { StyleProductPage } from "@/components/StyleExperience";
 import { findProduct, siteGuides, siteProducts, siteRoundups } from "@/lib/content";
 import { productEvidencePresentation } from "@/lib/evidence";
-import { breadcrumbSchema, pageMetadata, productNotesSchema } from "@/lib/seo";
+import { breadcrumbSchema, pageMetadata, productNotesSchema, productPageTitle } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 import type { AffiliateOffer, Product } from "@/lib/types";
 
@@ -83,7 +83,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const product = findProduct(site.key, slug);
   if (!product) return {};
-  return pageMetadata(site, `/reviews/${slug}`, product.seoTitle ?? `${product.amazonTitle ?? product.name} Buying Notes`, product.summary, product.amazonImage ?? product.image);
+  return pageMetadata(site, `/reviews/${slug}`, productPageTitle(product), product.summary, product.amazonImage ?? product.image);
 }
 
 export default async function ReviewPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -92,6 +92,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
   const product = findProduct(site.key, slug);
   if (!product) notFound();
   const displayName = product.amazonTitle ?? product.name;
+  const pageTitle = productPageTitle(product);
   const displayImage = product.amazonImage ?? product.image;
   const productFacts = [
     ["Exact product", displayName],
@@ -194,7 +195,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                     </Link>
                   ) : null}
                 </div>
-                <h1 className="mt-3 text-4xl font-black leading-tight">{product.seoTitle ?? `${displayName} Buying Notes`}</h1>
+                <h1 className="mt-3 text-4xl font-black leading-tight">{pageTitle}</h1>
                 <p className="mt-5 text-lg leading-8 text-[var(--muted)]">{product.summary}</p>
                 {product.updatedAt ? (
                   <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm font-semibold text-[var(--muted)]">

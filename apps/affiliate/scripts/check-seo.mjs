@@ -244,6 +244,22 @@ if (!seoSource.includes('export function productNotesSchema') || !seoSource.incl
 if (!seoSource.includes('product.evidenceMode === "hands-on"')) {
   errors.push("Review structured data must be limited to explicitly labeled hands-on products");
 }
+if (!seoSource.includes("export function roundupArticleSchema")) {
+  errors.push("Roundup pages must emit Article data alongside ItemList data");
+}
+if (!seoSource.includes("export function productPageTitle")) {
+  errors.push("Product pages must use the shared query-oriented title fallback");
+}
+
+const robotsSource = fs.readFileSync(path.join(workspaceDir, "app", "robots.ts"), "utf8");
+if (!robotsSource.includes('userAgent: "OAI-SearchBot"') || !robotsSource.includes('allow: "/"')) {
+  errors.push("robots.ts must explicitly allow OAI-SearchBot on public pages");
+}
+
+const llmsSource = fs.readFileSync(path.join(workspaceDir, "app", "llms.txt", "route.ts"), "utf8");
+if (!llmsSource.includes("siteProducts(site.key)") || !llmsSource.includes('"Product evidence pages"')) {
+  errors.push("llms.txt must list product evidence pages as well as guides and comparisons");
+}
 
 const contentSource = fs.readFileSync(path.join(libDir, "content.ts"), "utf8");
 const sitemapSource = fs.readFileSync(path.join(workspaceDir, "app", "sitemap.ts"), "utf8");

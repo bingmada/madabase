@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "test": "vitest run",
+    "verify:tools-migration": "node scripts/verify-tools-migration.mjs",
     "db:generate": "prisma generate --schema ../../prisma/schema.prisma"
   },
   "dependencies": {

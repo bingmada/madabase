@@ -7,9 +7,9 @@ describe("SEO URL normalization", () => {
     expect(buildLocaleCanonical("zh", "/")).toBe("/zh");
 
     const alternates = buildHreflangAlternates("/", "en");
-    expect(alternates.canonical).toBe("https://madabase.com/en");
-    expect(alternates.languages.en).toBe("https://madabase.com/en");
-    expect(alternates.languages.zh).toBe("https://madabase.com/zh");
+    expect(alternates.canonical).toBe("https://tools.madabase.com/en");
+    expect(alternates.languages.en).toBe("https://tools.madabase.com/en");
+    expect(alternates.languages.zh).toBe("https://tools.madabase.com/zh");
   });
 
   it("preserves canonical paths below a locale root", () => {
@@ -20,6 +20,6 @@ describe("SEO URL normalization", () => {
       path: "/tools/json-formatter",
     });
 
-    expect(metadata.alternates?.canonical).toBe("https://madabase.com/en/tools/json-formatter");
+    expect(metadata.alternates?.canonical).toBe("https://tools.madabase.com/en/tools/json-formatter");
   });
 });

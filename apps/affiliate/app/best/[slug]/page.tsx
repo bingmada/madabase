@@ -5,7 +5,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { Disclosure, MethodologyList, ProductCard } from "@/components/LayoutParts";
 import { StyleCollectionPage } from "@/components/StyleExperience";
 import { findProduct, findRoundup, siteGuides } from "@/lib/content";
-import { breadcrumbSchema, faqPageSchema, pageMetadata, roundupProductListSchema } from "@/lib/seo";
+import { breadcrumbSchema, faqPageSchema, pageMetadata, roundupArticleSchema, roundupProductListSchema } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 import type { Product, SiteKey } from "@/lib/types";
 
@@ -195,6 +195,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
           ])}
         />
         <JsonLd data={roundupProductListSchema(site, roundup.title, picks)} />
+        <JsonLd data={roundupArticleSchema(site, roundup, picks)} />
         <JsonLd data={faqPageSchema(roundup.faqs)} />
         <StyleCollectionPage roundup={roundup} products={picks} />
       </>
@@ -211,6 +212,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
         ])}
       />
       <JsonLd data={roundupProductListSchema(site, roundup.title, picks)} />
+      <JsonLd data={roundupArticleSchema(site, roundup, picks)} />
       <JsonLd data={faqPageSchema(roundup.faqs)} />
       <div className="shell">
         <div className="max-w-3xl">
