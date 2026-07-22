@@ -29,17 +29,33 @@ function audienceLabel(audience: string[]) {
 export function CostumeCatalogCard({ product }: { product: CostumeCatalogProduct }) {
   return (
     <article className="panel flex h-full flex-col overflow-hidden">
-      <div className="costume-card-art grid min-h-40 content-between p-5">
-        <div className="flex flex-wrap gap-2">
+      <div className="costume-card-art relative grid min-h-48 content-between overflow-hidden p-5">
+        {product.authorizedImage ? (
+          <>
+            {/* Feed URLs are rendered only after the database stores the official CJ permission reference. */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              alt={product.authorizedImage.altText || product.title}
+              className="absolute inset-0 h-full w-full object-contain bg-white"
+              loading="lazy"
+              referrerPolicy="no-referrer"
+              src={product.authorizedImage.url}
+            />
+            <div className="absolute inset-x-0 top-0 h-20 bg-gradient-to-b from-black/70 to-transparent" aria-hidden="true" />
+          </>
+        ) : null}
+        <div className="relative z-10 flex flex-wrap gap-2">
           {product.premium ? <span className="costume-chip">$1,000+</span> : null}
           {product.professional ? <span className="costume-chip">Professional</span> : null}
           {product.halloween ? <span className="costume-chip">Halloween</span> : null}
           {product.rental ? <span className="costume-chip">Rental</span> : null}
         </div>
-        <div className="flex items-center gap-2 text-xs font-black uppercase tracking-[0.14em] text-white/80">
-          <ImageOff aria-hidden="true" size={16} />
-          Image permission pending
-        </div>
+        {!product.authorizedImage ? (
+          <div className="relative z-10 flex items-center gap-2 text-xs font-black uppercase tracking-[0.14em] text-white/80">
+            <ImageOff aria-hidden="true" size={16} />
+            Image permission pending
+          </div>
+        ) : <span className="sr-only">CJ Product Feed image</span>}
       </div>
       <div className="flex flex-1 flex-col p-5">
         <p className="eyebrow">{product.brand || product.productType || "Abracadabra NYC"}</p>

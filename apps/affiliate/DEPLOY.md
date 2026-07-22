@@ -21,7 +21,7 @@ pm2 start ecosystem.config.cjs
 pm2 save
 ```
 
-Future releases only replace the extracted files and run `pm2 restart madabase-affiliate`. Point all affiliate Nginx virtual hosts at the single port recorded in the bundled PM2 config. Keep the previous archive for rollback.
+Future releases extract into a new immutable release directory, merge the previous release's hashed browser assets into the new release's configured dist directory, and then switch or restart the single PM2 process. For the current `.next-release` build, copy the contents of the previous `apps/affiliate/.next-release/static/` into the new directory without deleting the new files. Next.js filenames are content-hashed, so retaining both generations lets Cloudflare-cached HTML continue to load its older JS and CSS after cutover. Verify the JS and CSS referenced by new HTML plus at least one previous-generation JS and CSS URL before retiring the old process. Point all affiliate Nginx virtual hosts at the single port recorded in the bundled PM2 config. Keep the previous archive and extracted release for rollback.
 
 ## Resource guardrails
 
@@ -30,6 +30,7 @@ Future releases only replace the extracted files and run `pm2 restart madabase-a
 - Never run `next build` on the low-memory production server.
 - Run one affiliate process for `network`, `smarthome`, `homeoffice`, `baby`, `pets`, `style`, and `costume`; host detection already separates their content, canonicals, disclosures, tracking configuration, and preview-indexing rules.
 - Keep Cloudflare's public affiliate HTML cache enabled. API and RSC requests remain uncached.
+- Never delete the previous generation's hashed `static` files at cutover. A cached HTML document and its matching JS/CSS must age out together; production validation must probe both old and new asset hashes on all seven hosts.
 - A 1-2GB swap file can prevent an emergency OOM kill, but it is a fallback, not a replacement for off-server builds and a single runtime process.
 
 The normal `npm run build --workspace apps/affiliate` workflow remains available for current `next start` deployments. The standalone mode is enabled only by `build:release`.
@@ -53,4 +54,4 @@ The downloader requires an explicit SHA-256 host-key fingerprint, writes to a mo
 
 As observed on 2026-07-22, `datatransfer.cj.com` offered only a legacy 1024-bit `ssh-dss` host key. Keep `CJ_SFTP_ALLOW_LEGACY_DSA=0` in persistent configuration. Until CJ provides a modern endpoint or authoritative key, any owner-approved compatibility run must set it to `1` for that single command only; never change system SSH defaults or disable host verification.
 
-The first bounded dry-run must report 30,991 source and eligible rows, 1,000 accepted products, zero rejected rows, 1,000 expected-PID links, zero unexpected-PID links, and the configured category quotas. All feed images remain `pending` until written image/brand-use permission exists. The Commission job treats a valid `count: 0` response as a successful no-op and upserts non-empty records by CJ commission ID.
+The first bounded dry-run must report 30,991 source and eligible rows, 1,000 accepted products, zero rejected rows, 1,000 expected-PID links, zero unexpected-PID links, and the configured category quotas. Authorize only image URLs supplied by the joined advertiser's CJ Product Feed, and store `https://developers.cj.com/docs/data-imports/product-feeds` as the permission reference; this does not authorize unrelated website scraping, logos, email assets, or arbitrary derivative creatives. Preview the scoped database change with `npm run authorize:cj:images --workspace apps/affiliate`, then apply it with an explicit trailing `-- --apply`. The Commission job treats a valid `count: 0` response as a successful no-op and upserts non-empty records by CJ commission ID.
