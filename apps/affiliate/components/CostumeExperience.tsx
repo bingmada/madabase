@@ -11,7 +11,7 @@ export function CostumePreviewNotice() {
     <aside className="border-b border-[#e1c68d] bg-[#fff4d8]" aria-label="Preview status">
       <div className="shell flex flex-col gap-2 py-4 text-sm leading-6 text-[#5f4514] sm:flex-row sm:items-center sm:justify-between">
         <p>
-          <strong>Editorial preview:</strong> this site is noindex. The bounded CJ catalog and inventory filters are connected; product images and purchase buttons stay disabled until written image rights, exact page review, and link activation pass.
+          <strong>Editorial preview:</strong> this site is noindex. The bounded CJ catalog, inventory filters, and CJ Feed product images are connected; purchase buttons stay disabled until exact page review and link activation pass.
         </p>
         <Link className="shrink-0 font-bold underline underline-offset-4" href="/methodology">See the launch gates</Link>
       </div>

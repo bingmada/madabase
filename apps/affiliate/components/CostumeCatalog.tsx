@@ -241,7 +241,7 @@ export function CostumePurchaseState({ product }: { product: CostumeCatalogProdu
     <div className="panel p-5">
       <Link2Off aria-hidden="true" className="text-[var(--brand)]" size={22} />
       <h2 className="mt-4 text-xl font-bold">Purchase link intentionally disabled</h2>
-      <p className="mt-3 text-sm leading-6 text-[var(--muted)]">This exact product still needs all launch gates together: current identity and availability, written image permission, distinct editorial review, and a verified active CJ link.</p>
+      <p className="mt-3 text-sm leading-6 text-[var(--muted)]">This exact product still needs all launch gates together: current identity and availability, documented CJ Feed image authorization, distinct editorial review, and a verified active CJ link.</p>
     </div>
   );
 }

@@ -69,7 +69,7 @@ export default async function CostumeProductPage({ params }: { params: Promise<{
       "Exact Feed product and variant identity",
       "Current price, stock, shipping, and return terms",
       "Measurements, included pieces, materials, or dimensions",
-      "Written image permission and verified CJ attribution",
+      "Documented CJ Feed image authorization and verified CJ attribution",
     ];
 
     return (
@@ -107,7 +107,7 @@ export default async function CostumeProductPage({ params }: { params: Promise<{
               ) : (
                 <section className="costume-card-art mt-8 min-h-64 rounded-md p-6 text-white" aria-label="Editorial placeholder; merchant image permission pending">
                   <p className="text-xs font-black uppercase tracking-[0.14em] text-white/70">Rights-gated placeholder</p>
-                  <p className="mt-24 max-w-xl text-2xl font-black">The Feed image stays off this page until Abracadabra or CJ grants written public-use permission and the record stores that permission reference.</p>
+                  <p className="mt-24 max-w-xl text-2xl font-black">The Feed image stays off this page until its database record stores the applicable CJ or advertiser permission reference.</p>
                 </section>
               )}
               <section className="mt-9">
@@ -214,9 +214,9 @@ export default async function CostumeProductPage({ params }: { params: Promise<{
             <p className="eyebrow">{product.typeLabel} · launch candidate</p>
             <h1 className="mt-3 text-4xl font-black leading-tight">{product.name}</h1>
             <p className="mt-5 max-w-3xl text-lg leading-8 text-[var(--muted)]">{product.summary}</p>
-            <section className="costume-card-art mt-8 min-h-64 rounded-md p-6 text-white" aria-label="Editorial placeholder; merchant image permission pending">
+            <section className="costume-card-art mt-8 min-h-64 rounded-md p-6 text-white" aria-label="Editorial placeholder; exact Feed image mapping pending">
               <p className="text-xs font-black uppercase tracking-[0.14em] text-white/70">Editorial placeholder</p>
-              <p className="mt-24 max-w-xl text-2xl font-black">Official product imagery stays off this preview until CJ feed terms or written authorization cover public use.</p>
+              <p className="mt-24 max-w-xl text-2xl font-black">This legacy preview has no exact current Feed image mapping, so it does not render a merchant product image.</p>
             </section>
             <section className="mt-9">
               <p className="eyebrow">The buyer&apos;s job</p>
