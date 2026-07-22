@@ -482,8 +482,23 @@ try {
            ) VALUES ($1, 'cj', $2, $3, 'costume', $4, $5, $6, $7, $8, false, NOW(), NOW())
            ON CONFLICT ("clickToken") DO UPDATE SET
              "merchantProductId" = EXCLUDED."merchantProductId", "destinationUrl" = EXCLUDED."destinationUrl",
-             "trackingUrl" = EXCLUDED."trackingUrl", "aid" = EXCLUDED."aid", "active" = false,
-             "verifiedAt" = NULL, "updatedAt" = NOW()`,
+             "trackingUrl" = EXCLUDED."trackingUrl", "aid" = EXCLUDED."aid",
+             "active" = CASE
+               WHEN "AffiliateLink"."trackingUrl" = EXCLUDED."trackingUrl"
+                 AND "AffiliateLink"."destinationUrl" = EXCLUDED."destinationUrl"
+                 AND "AffiliateLink"."aid" = EXCLUDED."aid"
+               THEN "AffiliateLink"."active" ELSE false END,
+             "verifiedAt" = CASE
+               WHEN "AffiliateLink"."trackingUrl" = EXCLUDED."trackingUrl"
+                 AND "AffiliateLink"."destinationUrl" = EXCLUDED."destinationUrl"
+                 AND "AffiliateLink"."aid" = EXCLUDED."aid"
+               THEN "AffiliateLink"."verifiedAt" ELSE NULL END,
+             "lastCheckedAt" = CASE
+               WHEN "AffiliateLink"."trackingUrl" = EXCLUDED."trackingUrl"
+                 AND "AffiliateLink"."destinationUrl" = EXCLUDED."destinationUrl"
+                 AND "AffiliateLink"."aid" = EXCLUDED."aid"
+               THEN "AffiliateLink"."lastCheckedAt" ELSE NULL END,
+             "updatedAt" = NOW()`,
           [crypto.randomUUID(), merchantId, productId, product.tracking.pid, product.tracking.aid, stableToken(`${product.externalId}:${product.variantId}:${expectedPid}:${product.tracking.aid}`), product.destinationUrl, product.trackingUrl],
         );
       }

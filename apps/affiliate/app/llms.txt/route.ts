@@ -1,6 +1,6 @@
 import { siteGuides, siteProducts, siteRoundups, siteTools } from "@/lib/content";
 import { getCurrentSite } from "@/lib/sites";
-import { costumeProductCandidates } from "@/lib/costume-content";
+import { listIndexableCostumeProducts } from "@/lib/costume-catalog";
 
 type LlmIndexItem = { slug: string } & ({ title: string } | { name: string });
 
@@ -17,6 +17,7 @@ export async function GET() {
   const roundups = siteRoundups(site.key);
   const guides = siteGuides(site.key);
   const tools = siteTools(site.key);
+  const costumeProducts = site.key === "costume" ? await listIndexableCostumeProducts(100) : [];
 
   const body = [
     `# ${site.name}`,
@@ -26,11 +27,11 @@ export async function GET() {
     "This site publishes practical buying notes, comparison guides, and decision checklists. It focuses on use-case fit, compatibility checks, product trade-offs, and affiliate disclosure.",
     "",
     site.key === "costume"
-      ? "Affiliate disclosure: this noindex preview has no live purchase links. Production Abracadabra links will use CJ and the dedicated Costume promotional-property PID after product and attribution verification."
+      ? "Affiliate disclosure: eligible Abracadabra purchase links use CJ and the dedicated Costume promotional-property PID. A link is shown only after the exact product destination and attribution path are checked."
       : "Affiliate disclosure: As an Amazon Associate, this site may earn from qualifying purchases. Prices, availability, seller details, and product versions should be confirmed on the retailer page before buying.",
     "",
     ...(site.key === "costume"
-      ? linesFor("Product decision previews", costumeProductCandidates, "/products")
+      ? linesFor("Reviewed product pages", costumeProducts, "/products")
       : linesFor("Product evidence pages", products, "/reviews")),
     "",
     ...linesFor("Comparison pages", roundups, "/best"),

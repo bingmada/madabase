@@ -165,9 +165,8 @@ export const sites: Record<SiteKey, SiteConfig> = {
     description: "Year-round costume, prop, mask, wig, makeup, accessory, and party-effect buying guides with a Premium & Professional edit and seasonal Halloween merchandising.",
     domain: process.env.NEXT_PUBLIC_COSTUME_SITE_URL ?? "https://costumes.madabase.com",
     hostHints: ["costume", "halloween"],
-    disclosure: "Madabase Costume Guide plans to earn commissions from qualifying Abracadabra NYC purchases through CJ. Costume PID 101838067 and one formal product-link path are verified, but purchase links remain disabled during this noindex preview until feed product identity, image-use terms, and page-to-link mappings pass. Commissions will not change the price a reader pays.",
+    disclosure: "Madabase Costume Guide may earn commissions from qualifying Abracadabra NYC purchases through CJ. Eligible buttons use the dedicated Costume promotional-property PID and are enabled only for the exact product after its destination and attribution path are checked. Commissions do not change the price a reader pays.",
     heroImage: "/images/affiliate/hero-costume-studio-v1.webp",
-    previewNoIndex: true,
     theme: {
       brand: "#7a2e45",
       brandStrong: "#4a1b2b",

@@ -49,9 +49,9 @@ export default async function PremiumCostumePage({
       </section>
       <section className="section">
         <div className="shell">
-          <p className="eyebrow">Feed-backed edit</p>
+          <p className="eyebrow">Premium & Professional selection</p>
           <h2 className="mt-3 text-3xl font-black">High-consideration products</h2>
-          <p className="mt-4 max-w-3xl leading-8 text-[var(--muted)]">Filter the current Premium and Professional working set. CJ Feed product images use the documented publisher-image scope; every record remains a noindex preview until current inventory, distinct editorial review, and CJ attribution pass together.</p>
+          <p className="mt-4 max-w-3xl leading-8 text-[var(--muted)]">Compare higher-priced and professional-use options by construction, sizing, repeat use, transport, care, and total ownership cost. Confirm current availability and the exact variant before checkout.</p>
           <div className="mt-8">
             <CostumeCatalogExplorer basePath="/premium" filters={filters} lockedFeature="premium-professional" site={site} />
           </div>

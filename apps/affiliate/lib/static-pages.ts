@@ -95,7 +95,7 @@ export function getStaticPages(site: SiteConfig): StaticPage[] {
         {
           heading: "How links are handled",
           body: site.key === "costume"
-            ? "During this noindex preview, no commissioned purchase buttons are enabled. Production buttons will first create a local click record, then use the dedicated Costume promotional-property PID and an eligible Abracadabra CJ link. Prices, coupons, shipping, stock, product variants, and return windows can change, so the final Abracadabra listing remains the checkout source."
+            ? "Eligible purchase buttons first create a local click record, then use the dedicated Costume promotional-property PID and the matching Abracadabra CJ product link. A button is shown only after the product, destination, image source, and attribution path are checked. Prices, coupons, shipping, stock, product variants, and return windows can change, so the final Abracadabra listing remains the checkout source."
             : "Commissioned purchase buttons currently send readers only to Amazon. Prices, coupons, shipping, stock, seller details, and return windows can change after publication, so the Amazon listing is the final source before ordering.",
         },
         {

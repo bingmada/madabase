@@ -3,6 +3,7 @@ import { siteGuides, siteProducts, siteRoundups, siteTools } from "@/lib/content
 import { contentDate } from "@/lib/seo";
 import { staticPageSlugs } from "@/lib/static-pages";
 import { getCurrentSite } from "@/lib/sites";
+import { listIndexableCostumeProducts } from "@/lib/costume-catalog";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const site = await getCurrentSite();
@@ -11,6 +12,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const roundups = siteRoundups(site.key);
   const guides = siteGuides(site.key);
   const tools = siteTools(site.key);
+  const costumeProducts = site.key === "costume" ? await listIndexableCostumeProducts(100) : [];
   const urls: Array<{
     path: string;
     changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"];
@@ -18,6 +20,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     lastModified?: Date;
   }> = [
     { path: "", changeFrequency: "weekly", priority: 1 },
+    ...(site.key === "costume" ? [{ path: "/premium", changeFrequency: "weekly" as const, priority: 0.82 }] : []),
     ...staticPageSlugs.map((slug) => ({ path: `/${slug}`, changeFrequency: "monthly" as const, priority: 0.45 })),
     ...site.categories.map((category) => ({ path: `/categories/${category.slug}`, changeFrequency: "weekly" as const, priority: 0.75 })),
     ...roundups.map((item) => {
@@ -40,6 +43,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         ...(updated ? { lastModified: updated.date } : {}),
       };
     }),
+    ...costumeProducts.map((item) => ({
+      path: `/products/${item.slug}`,
+      changeFrequency: "weekly" as const,
+      priority: 0.84,
+      lastModified: item.lastSeenAt,
+    })),
     ...guides.map((item) => {
       const updated = contentDate(item.updatedAt);
 

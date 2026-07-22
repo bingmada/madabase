@@ -3,7 +3,6 @@ import "./globals.css";
 import { SiteChrome } from "@/components/LayoutParts";
 import { StyleChrome } from "@/components/StyleExperience";
 import { ClarityAnalytics } from "@/components/ClarityAnalytics";
-import { CostumePreviewNotice } from "@/components/CostumeExperience";
 import { getCurrentSite } from "@/lib/sites";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -49,7 +48,6 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
       ) : (
         <SiteChrome site={site}>
           <ClarityAnalytics projectId={clarityProjectId} site={site.key} />
-          {site.key === "costume" ? <CostumePreviewNotice /> : null}
           {children}
         </SiteChrome>
       )}

@@ -285,6 +285,41 @@ export async function relatedCostumeCatalogProducts(product: CostumeCatalogProdu
   }
 }
 
+export function isCostumeProductIndexable(product: CostumeCatalogProduct) {
+  return Boolean(
+    product.editorial?.status === "published"
+      && product.editorial.indexable
+      && product.authorizedImage
+      && product.activeLink
+      && product.availability !== "out of stock",
+  );
+}
+
+export async function listIndexableCostumeProducts(take = 30) {
+  if (!hasDatabaseUrl()) return [];
+  try {
+    const prisma = getAffiliatePrisma();
+    const products = await prisma.merchantProduct.findMany({
+      where: {
+        merchant: { slug: "abracadabra-nyc", advertiserCid: "7889430" },
+        softRetiredAt: null,
+        availability: { not: "out of stock" },
+        images: { some: { usageStatus: "authorized", permissionRef: { not: null } } },
+        affiliateLinks: { some: { site: "costume", active: true, verifiedAt: { not: null } } },
+        editorial: { is: { status: "published", indexable: true } },
+      },
+      include: productInclude,
+      orderBy: [{ editorial: { publishedAt: "desc" } }, ...productOrder("featured")],
+      take: Math.min(Math.max(take, 1), 100),
+    });
+
+    return products.map(catalogProduct).filter(isCostumeProductIndexable);
+  } catch {
+    console.error("Indexable Costume product query failed.");
+    return [];
+  }
+}
+
 export async function getCostumeCatalogStats() {
   if (!hasDatabaseUrl()) return null;
   try {

@@ -32,7 +32,7 @@ export function CostumeCatalogCard({ product }: { product: CostumeCatalogProduct
       <div className="costume-card-art relative grid min-h-48 content-between overflow-hidden p-5">
         {product.authorizedImage ? (
           <>
-            {/* Feed URLs are rendered only after the database stores the official CJ permission reference. */}
+            {/* Product images are rendered only after an authorized source is stored. */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               alt={product.authorizedImage.altText || product.title}
@@ -53,9 +53,9 @@ export function CostumeCatalogCard({ product }: { product: CostumeCatalogProduct
         {!product.authorizedImage ? (
           <div className="relative z-10 flex items-center gap-2 text-xs font-black uppercase tracking-[0.14em] text-white/80">
             <ImageOff aria-hidden="true" size={16} />
-            Image permission pending
+            Image unavailable
           </div>
-        ) : <span className="sr-only">CJ Product Feed image</span>}
+        ) : null}
       </div>
       <div className="flex flex-1 flex-col p-5">
         <p className="eyebrow">{product.brand || product.productType || "Abracadabra NYC"}</p>
@@ -63,7 +63,7 @@ export function CostumeCatalogCard({ product }: { product: CostumeCatalogProduct
         <p className="mt-3 text-sm font-semibold text-[var(--brand-strong)]">{formatCostumePrice(product)} · {product.availability}</p>
         <p className="mt-2 flex-1 text-sm leading-6 text-[var(--muted)]">{audienceLabel(product.audience)}</p>
         <Link className="button-secondary mt-5 self-start" href={`/products/${product.slug}`}>
-          Check fit and product status
+          View product details
           <ArrowRight aria-hidden="true" size={16} />
         </Link>
       </div>
@@ -179,8 +179,8 @@ export async function CostumeCatalogExplorer({
       <CatalogFilters basePath={basePath} filters={filters} lockedCategory={lockedCategory} lockedFeature={lockedFeature} site={site} />
       {!result.available ? (
         <div className="panel mt-8 p-6">
-          <h2 className="text-2xl font-bold">Catalog database is not configured in this environment.</h2>
-          <p className="mt-3 leading-7 text-[var(--muted)]">The public deployment reads the bounded Abracadabra catalog from PostgreSQL. Static editorial guides remain available while this environment is disconnected.</p>
+          <h2 className="text-2xl font-bold">The catalog is temporarily unavailable.</h2>
+          <p className="mt-3 leading-7 text-[var(--muted)]">Please try again shortly. The buying guides remain available while product information reconnects.</p>
         </div>
       ) : result.items.length ? (
         <>
@@ -205,18 +205,18 @@ export async function CostumeCatalogExplorer({
       ) : (
         <div className="panel mt-8 p-6">
           <h2 className="text-2xl font-bold">No products match these filters.</h2>
-          <p className="mt-3 leading-7 text-[var(--muted)]">Clear one filter or search a broader product term. The site does not invent catalog results outside the current CJ Feed selection.</p>
+          <p className="mt-3 leading-7 text-[var(--muted)]">Clear one filter or search a broader product term.</p>
           <Link className="button-secondary mt-5" href={basePath}>Clear filters</Link>
         </div>
       )}
       <aside className="mt-10 grid gap-4 md:grid-cols-2">
         <div className="panel flex gap-3 p-5">
           <ImageOff aria-hidden="true" className="mt-1 shrink-0 text-[var(--brand)]" size={21} />
-          <p className="text-sm leading-6 text-[var(--muted)]"><strong className="text-[var(--text)]">Images remain rights-gated.</strong> Only images marked authorized with a permission reference can enter product queries; none are displayed while authorization is pending.</p>
+          <p className="text-sm leading-6 text-[var(--muted)]"><strong className="text-[var(--text)]">Images come from authorized sources.</strong> Product images are supplied through the retailer&apos;s CJ catalog or other approved merchant materials.</p>
         </div>
         <div className="panel flex gap-3 p-5">
           <ShieldCheck aria-hidden="true" className="mt-1 shrink-0 text-[var(--brand)]" size={21} />
-          <p className="text-sm leading-6 text-[var(--muted)]"><strong className="text-[var(--text)]">Links remain attribution-gated.</strong> A purchase button appears only after that exact product link is active and verified. A direct merchant URL is never substituted.</p>
+          <p className="text-sm leading-6 text-[var(--muted)]"><strong className="text-[var(--text)]">Retailer links are product-specific.</strong> A purchase button appears only after the exact Abracadabra destination and CJ attribution path are checked.</p>
         </div>
       </aside>
     </>
@@ -230,8 +230,8 @@ export function CostumePurchaseState({ product }: { product: CostumeCatalogProdu
     return (
       <div className="panel p-5">
         <ShieldCheck aria-hidden="true" className="text-[var(--brand)]" size={22} />
-        <h2 className="mt-4 text-xl font-bold">Verified Abracadabra link</h2>
-        <p className="mt-3 text-sm leading-6 text-[var(--muted)]">This exact product, destination, Costume PID, image permission, and editorial review passed.</p>
+        <h2 className="mt-4 text-xl font-bold">Available at Abracadabra NYC</h2>
+        <p className="mt-3 text-sm leading-6 text-[var(--muted)]">Check the exact variant, current availability, shipping, and return terms on the retailer page.</p>
         <Link className="button-primary mt-5" href={`/go/cj/${product.activeLink.clickToken}`} rel="nofollow sponsored">Check at Abracadabra NYC <ArrowRight aria-hidden="true" size={16} /></Link>
       </div>
     );
@@ -240,8 +240,8 @@ export function CostumePurchaseState({ product }: { product: CostumeCatalogProdu
   return (
     <div className="panel p-5">
       <Link2Off aria-hidden="true" className="text-[var(--brand)]" size={22} />
-      <h2 className="mt-4 text-xl font-bold">Purchase link intentionally disabled</h2>
-      <p className="mt-3 text-sm leading-6 text-[var(--muted)]">This exact product still needs all launch gates together: current identity and availability, documented CJ Feed image authorization, distinct editorial review, and a verified active CJ link.</p>
+      <h2 className="mt-4 text-xl font-bold">Retailer link unavailable</h2>
+      <p className="mt-3 text-sm leading-6 text-[var(--muted)]">We show a retailer button only after confirming the exact product and destination. You can still use the details and buying checks on this page to compare options.</p>
     </div>
   );
 }
