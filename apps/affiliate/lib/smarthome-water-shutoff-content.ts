@@ -1,6 +1,6 @@
 import type { Guide, Product, Roundup } from "./types";
 
-const updatedAt = "July 21, 2026";
+const updatedAt = "July 22, 2026";
 const amazonUrl = (asin: string) =>
   `https://www.amazon.com/dp/${asin}?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl`;
 

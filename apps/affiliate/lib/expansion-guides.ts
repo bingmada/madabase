@@ -502,7 +502,7 @@ export const expansionGuides: Guide[] = [
     title: "USB-C Dock vs Monitor Hub: Which Home Office Upgrade Should You Buy?",
     dek: "Choose a standalone dock or USB-C monitor hub by exact laptop display support, replaceability, charging, Ethernet, DisplayLink needs, and the cable you touch every day.",
     category: "ergonomics",
-    updatedAt: "July 21, 2026",
+    updatedAt: "July 22, 2026",
     image: "/images/affiliate/homeoffice-dual-monitor-dock-editorial-realistic.webp",
     imageAlt: "Dual-monitor desk connected through a compact docking station",
     relatedProducts: ["anker-675-usb-c-docking-station", "plugable-usbc-6950pdz-displaylink-dock", "plugable-tbt4-ud5-thunderbolt-dock", "caldigit-ts4-thunderbolt-dock"],

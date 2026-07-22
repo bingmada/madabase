@@ -881,7 +881,7 @@ export const products: Product[] = [
     asin: "B0BNZ4D72B",
     amazonTitle: "Anker 675 USB-C Docking Station (12-in-1, Monitor Stand, Wireless)",
     seoTitle: "Anker 675 Review: One-Monitor Dock and Stand, Not Dual Display",
-    updatedAt: "July 21, 2026",
+    updatedAt: "July 22, 2026",
     evidenceMode: "official-spec",
     researchNote:
       "We have not used this stand. The page uses Anker's current official FAQ and the exact Amazon identity. It supports one external HDMI monitor, not two, and USB-C ports do not output video.",
@@ -1799,7 +1799,7 @@ export const guides: Guide[] = [
     title: "USB-C Dock Ports Explained: DisplayLink, Thunderbolt and Dual Screens",
     dek: "Decode USB-C, Thunderbolt, DisplayLink, charging, video streams, Ethernet, and cable bandwidth before buying a one- or two-monitor dock.",
     category: "desks",
-    updatedAt: "July 21, 2026",
+    updatedAt: "July 22, 2026",
     image: "/images/affiliate/homeoffice-dual-monitor-dock-editorial-realistic.webp",
     imageAlt: "Laptop and compact dock connected to two external monitors with visible cable paths",
     relatedRoundups: ["best-dual-monitor-docks-mac-windows", "displaylink-vs-thunderbolt-dock-dual-monitors", "best-home-office-cable-management"],
