@@ -38,6 +38,7 @@ export function productPageTitle(product: Product) {
     network: "Review: Specs, Setup & Buying Guide",
     smarthome: "Review: Compatibility & Buying Guide",
     style: "Review: Size, Materials & Fit",
+    costume: "Buying Guide: Fit, Use & Trade-offs",
   }[product.site];
 
   const detailedTitle = `${product.name} ${suffix}`;
@@ -110,6 +111,16 @@ export function pageMetadata(site: SiteConfig, path: string, title: string, desc
     // model-specific titles beyond a useful search-result length.
     title: { absolute: title },
     description: descriptionText,
+    ...(site.previewNoIndex
+      ? {
+          robots: {
+            index: false,
+            follow: true,
+            nocache: true,
+            googleBot: { index: false, follow: true, noimageindex: true },
+          },
+        }
+      : {}),
     alternates: {
       canonical: url,
     },

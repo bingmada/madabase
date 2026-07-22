@@ -101,3 +101,38 @@ export type ReferralReward = Prisma.ReferralRewardModel
  *
  */
 export type AffiliateClick = Prisma.AffiliateClickModel
+/**
+ * Model Merchant
+ *
+ */
+export type Merchant = Prisma.MerchantModel
+/**
+ * Model MerchantProduct
+ *
+ */
+export type MerchantProduct = Prisma.MerchantProductModel
+/**
+ * Model MerchantProductImage
+ *
+ */
+export type MerchantProductImage = Prisma.MerchantProductImageModel
+/**
+ * Model AffiliateLink
+ *
+ */
+export type AffiliateLink = Prisma.AffiliateLinkModel
+/**
+ * Model EditorialProduct
+ *
+ */
+export type EditorialProduct = Prisma.EditorialProductModel
+/**
+ * Model AffiliateTransaction
+ *
+ */
+export type AffiliateTransaction = Prisma.AffiliateTransactionModel
+/**
+ * Model ProductSyncRun
+ *
+ */
+export type ProductSyncRun = Prisma.ProductSyncRunModel

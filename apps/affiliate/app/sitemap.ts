@@ -6,6 +6,7 @@ import { getCurrentSite } from "@/lib/sites";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const site = await getCurrentSite();
+  if (site.previewNoIndex) return [];
   const products = siteProducts(site.key);
   const roundups = siteRoundups(site.key);
   const guides = siteGuides(site.key);

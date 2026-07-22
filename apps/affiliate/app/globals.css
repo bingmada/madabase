@@ -350,6 +350,34 @@ a {
   text-decoration: none;
 }
 
+.costume-card-art {
+  background:
+    radial-gradient(circle at 78% 22%, rgb(245 213 151 / 36%), transparent 30%),
+    linear-gradient(145deg, #27131d 0%, #66243c 58%, #a46e23 140%);
+}
+
+.costume-chip {
+  display: inline-flex;
+  border: 1px solid rgb(255 255 255 / 42%);
+  border-radius: 999px;
+  background: rgb(26 12 19 / 52%);
+  padding: 0.35rem 0.65rem;
+  color: white;
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.costume-premium-panel {
+  border: 1px solid #513422;
+  border-radius: var(--radius);
+  background:
+    radial-gradient(circle at 82% 16%, rgb(234 198 123 / 22%), transparent 32%),
+    linear-gradient(145deg, #1d1418 0%, #3e2027 65%, #6c4620 130%);
+  color: white;
+}
+
 button,
 input,
 select {

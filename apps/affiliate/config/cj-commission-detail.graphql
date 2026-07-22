@@ -1,0 +1,49 @@
+query CostumePublisherCommissions(
+  $publisherIds: [String!]!
+  $advertiserIds: [String!]
+  $websiteIds: [String!]
+  $sincePostingDate: String
+  $beforePostingDate: String
+) {
+  publisherCommissions(
+    forPublishers: $publisherIds
+    advertiserIds: $advertiserIds
+    websiteIds: $websiteIds
+    sincePostingDate: $sincePostingDate
+    beforePostingDate: $beforePostingDate
+  ) {
+    count
+    limit
+    maxCommissionId
+    payloadComplete
+    records {
+      commissionId
+      originalActionId
+      actionTrackerId
+      actionTrackerName
+      actionStatus
+      actionType
+      advertiserId
+      advertiserName
+      aid
+      websiteId
+      websiteName
+      eventDate
+      postingDate
+      lockingDate
+      orderId
+      saleAmountPubCurrency
+      saleAmountUsd
+      pubCommissionAmountPubCurrency
+      pubCommissionAmountUsd
+      shopperId
+      items {
+        commissionItemId
+        sku
+        quantity
+        perItemSaleAmountPubCurrency
+        totalCommissionPubCurrency
+      }
+    }
+  }
+}

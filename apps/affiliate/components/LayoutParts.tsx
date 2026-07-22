@@ -34,9 +34,11 @@ export function SiteChrome({ site, children }: { site: SiteConfig; children: Rea
             <Link className="hidden hover:text-[var(--brand-strong)] sm:inline" href="/#guides">
               Guides
             </Link>
-            <Link className="hidden hover:text-[var(--brand-strong)] sm:inline" href="/#tools">
-              Tools
-            </Link>
+            {site.key === "costume" ? (
+              <Link className="hidden hover:text-[var(--brand-strong)] sm:inline" href="/premium">Premium</Link>
+            ) : (
+              <Link className="hidden hover:text-[var(--brand-strong)] sm:inline" href="/#tools">Tools</Link>
+            )}
             <Link className="hidden hover:text-[var(--brand-strong)] sm:inline" href="/methodology">
               Methodology
             </Link>
@@ -55,7 +57,11 @@ export function SiteChrome({ site, children }: { site: SiteConfig; children: Rea
                   </Link>
                 ))}
                 <Link className="rounded-md px-3 py-2 hover:bg-[var(--surface-muted)]" href="/#guides">Guides</Link>
-                <Link className="rounded-md px-3 py-2 hover:bg-[var(--surface-muted)]" href="/#tools">Tools</Link>
+                {site.key === "costume" ? (
+                  <Link className="rounded-md px-3 py-2 hover:bg-[var(--surface-muted)]" href="/premium">Premium & Professional</Link>
+                ) : (
+                  <Link className="rounded-md px-3 py-2 hover:bg-[var(--surface-muted)]" href="/#tools">Tools</Link>
+                )}
                 <Link className="rounded-md px-3 py-2 hover:bg-[var(--surface-muted)]" href="/methodology">Methodology</Link>
               </nav>
             </div>

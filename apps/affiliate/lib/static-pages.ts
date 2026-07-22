@@ -8,7 +8,12 @@ function focusLine(site: SiteConfig) {
   if (site.key === "baby") return "baby-care routines, safe-use limits, cleaning effort, storage, caregiver comfort, and version-specific compatibility.";
   if (site.key === "network") return "home layout, port requirements, wired backhaul, client-device support, setup friction, and whether the network stays reliable under everyday load.";
   if (site.key === "smarthome") return "door and HVAC compatibility, hub requirements, local controls, subscriptions, privacy, installation effort, and what still works when the internet is unavailable.";
+  if (site.key === "costume") return "body and garment measurements, included pieces, materials, visibility, movement, application, removal, power, venue fit, delivery timing, returns, care, and storage.";
   return "desk fit, ergonomics, device compatibility, setup friction, cable paths, and whether a product solves a real home-office problem.";
+}
+
+function checkoutSource(site: SiteConfig) {
+  return site.key === "costume" ? "the exact Abracadabra listing reached through the verified CJ tracking path" : "the exact Amazon listing";
 }
 
 export function getStaticPages(site: SiteConfig): StaticPage[] {
@@ -55,7 +60,7 @@ export function getStaticPages(site: SiteConfig): StaticPage[] {
         },
         {
           heading: "Decision factors, not star ratings",
-          body: "Our decision factors show what to compare for the stated use case without assigning unsupported numeric ratings. Before buying, readers should still confirm the exact Amazon listing, seller, version, price, shipping, and current customer feedback.",
+          body: `Our decision factors show what to compare for the stated use case without assigning unsupported numeric ratings. Before buying, readers should still confirm ${checkoutSource(site)}, exact version, price, availability, shipping, and current return terms.`,
         },
       ],
     },
@@ -89,7 +94,9 @@ export function getStaticPages(site: SiteConfig): StaticPage[] {
         },
         {
           heading: "How links are handled",
-          body: "Commissioned purchase buttons currently send readers only to Amazon. Prices, coupons, shipping, stock, seller details, and return windows can change after publication, so the Amazon listing is the final source before ordering.",
+          body: site.key === "costume"
+            ? "During this noindex preview, no commissioned purchase buttons are enabled. Production buttons will first create a local click record, then use the dedicated Costume promotional-property PID and an eligible Abracadabra CJ link. Prices, coupons, shipping, stock, product variants, and return windows can change, so the final Abracadabra listing remains the checkout source."
+            : "Commissioned purchase buttons currently send readers only to Amazon. Prices, coupons, shipping, stock, seller details, and return windows can change after publication, so the Amazon listing is the final source before ordering.",
         },
         {
           heading: "Editorial independence",
@@ -108,7 +115,7 @@ export function getStaticPages(site: SiteConfig): StaticPage[] {
         },
         {
           heading: "Site usage and cookies",
-          body: "The site may process basic technical and usage information needed for security, reliability, measurement, and performance. Microsoft Clarity may record interaction signals such as page visits, scrolling, clicks, device details, and session replays so we can identify usability problems. Amazon may also use cookies or similar technologies for affiliate attribution. Third-party services apply their own privacy policies and cookie controls.",
+          body: `The site may process basic technical and usage information needed for security, reliability, measurement, and performance. Microsoft Clarity may record interaction signals such as page visits, scrolling, clicks, device details, and session replays so we can identify usability problems. ${site.key === "costume" ? "CJ and Abracadabra may use cookies or similar technologies for affiliate attribution after tracked links are enabled." : "Amazon may also use cookies or similar technologies for affiliate attribution."} Third-party services apply their own privacy policies and cookie controls.`,
         },
         {
           heading: "Affiliate and external links",
@@ -131,7 +138,9 @@ export function getStaticPages(site: SiteConfig): StaticPage[] {
         },
         {
           heading: "Affiliate and product inquiries",
-          body: "We may review products that fit the site's categories, but coverage is not guaranteed. Useful pitches include the exact model, Amazon ASIN or retailer URL, key specs, replacement-part information, and who the product is best for.",
+          body: site.key === "costume"
+            ? "We may review products that fit the site's categories, but coverage is not guaranteed. Useful pitches include the exact Abracadabra product or CJ feed identity, current URL, variant, measurements, materials, included pieces, availability, care details, and who the product is best for. Product samples are not requested because the editorial owner is based in China."
+            : "We may review products that fit the site's categories, but coverage is not guaranteed. Useful pitches include the exact model, Amazon ASIN or retailer URL, key specs, replacement-part information, and who the product is best for.",
         },
         {
           heading: "Email",

@@ -94,6 +94,19 @@ const siteAdvice: Record<SiteKey, AdviceBlock> = {
     ],
     decision: "Choose the expressive item that fits a real outfit and physical routine first; the most unusual design is useful only when its scale, comfort, and carry method make it easy to wear.",
   },
+  costume: {
+    checklist: [
+      "Confirm the exact product or variant, included pieces, dimensions, materials, availability, delivery timing, and current return terms.",
+      "Plan the full event workflow: fitting, movement, visibility, power, application, removal, transport, cleaning, and storage.",
+      "Treat seasonal photography and a familiar license as starting points, not proof of fit, construction, or repeat-use value.",
+    ],
+    mistakes: [
+      "Choosing from the character image without checking measurements and included components.",
+      "Buying a large prop or effect before measuring doors, venue paths, power, weather exposure, and storage.",
+      "Leaving delivery, exchanges, alterations, makeup practice, or prop testing until the final week.",
+    ],
+    decision: "Choose the option that can be fitted, used, transported, removed, cleaned, and stored safely for the real event; spend more only when construction or repeat use solves a known need.",
+  },
 };
 
 const categoryAdvice: Record<string, string[]> = {
@@ -118,6 +131,11 @@ const categoryAdvice: Record<string, string[]> = {
   scarves: ["Dimensions decide whether a scarf works at the neck, hair, bag, or waist.", "Read fiber claims literally: satin describes a weave, not necessarily silk.", "Check care instructions and color transfer before tying against light clothing."],
   socks: ["Check the stated size range and fiber blend.", "A graphic can distort when stretched across the foot or calf.", "Choose cuff pressure and shoe thickness before choosing the joke."],
   styling: ["Assign one focal zone.", "Repeat one color or shape once.", "Use a full-body photo to check balance."],
+  costumes: ["Use the exact product size chart.", "List every included and missing piece.", "Test sitting, walking, stairs, and visibility before the event."],
+  "props-animatronics": ["Measure the shipping and setup route.", "Confirm power, sound, motion, weather, and supervision limits.", "Plan transport and off-season storage."],
+  "masks-prosthetics": ["Check head or face measurements and visibility.", "Identify every skin-contact material.", "Follow exact application and removal instructions."],
+  "wigs-makeup": ["Check cap fit, fiber, and heat limits.", "Use only compatible skin and hair products.", "Plan touch-ups, removal, cleaning, and shape-preserving storage."],
+  "accessories-party-effects": ["Confirm dimensions, quantity, power, and consumables.", "Match indoor or outdoor limits to the venue.", "Budget setup, cleanup, and storage time."],
 };
 
 function guideAdvice(siteKey: SiteKey, category: string) {

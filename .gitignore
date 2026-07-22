@@ -1,7 +1,10 @@
 node_modules
 .next
+.next-release
+*.tsbuildinfo
 .env
 .env.*
 .affiliate-distribution
+.release
 docs
 deploy

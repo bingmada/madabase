@@ -2,9 +2,13 @@
   "name": "web",
   "private": true,
   "version": "0.1.0",
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:release": "NEXT_RELEASE_DIST_DIR=.next-release NEXT_STANDALONE_RELEASE=1 next build && NEXT_RELEASE_DIST_DIR=.next-release node ../../scripts/package-next-standalone.mjs web",
     "start": "next start",
     "lint": "eslint",
     "test": "vitest run",

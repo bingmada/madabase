@@ -1,4 +1,4 @@
-export type SiteKey = "pet" | "homeoffice" | "baby" | "network" | "smarthome" | "style";
+export type SiteKey = "pet" | "homeoffice" | "baby" | "network" | "smarthome" | "style" | "costume";
 
 export type PublicationStatus = "published" | "draft";
 

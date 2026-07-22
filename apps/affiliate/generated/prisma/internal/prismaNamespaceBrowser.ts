@@ -62,7 +62,14 @@ export const ModelName = {
   TestAttempt: 'TestAttempt',
   TestShareLink: 'TestShareLink',
   ReferralReward: 'ReferralReward',
-  AffiliateClick: 'AffiliateClick'
+  AffiliateClick: 'AffiliateClick',
+  Merchant: 'Merchant',
+  MerchantProduct: 'MerchantProduct',
+  MerchantProductImage: 'MerchantProductImage',
+  AffiliateLink: 'AffiliateLink',
+  EditorialProduct: 'EditorialProduct',
+  AffiliateTransaction: 'AffiliateTransaction',
+  ProductSyncRun: 'ProductSyncRun'
 } as const
 
 export type ModelName = (typeof ModelName)[keyof typeof ModelName]
@@ -219,10 +226,162 @@ export const AffiliateClickScalarFieldEnum = {
   merchant: 'merchant',
   position: 'position',
   path: 'path',
+  network: 'network',
+  pid: 'pid',
+  aid: 'aid',
+  sid: 'sid',
+  destinationUrl: 'destinationUrl',
+  affiliateLinkId: 'affiliateLinkId',
+  merchantProductId: 'merchantProductId',
   createdAt: 'createdAt'
 } as const
 
 export type AffiliateClickScalarFieldEnum = (typeof AffiliateClickScalarFieldEnum)[keyof typeof AffiliateClickScalarFieldEnum]
+
+
+export const MerchantScalarFieldEnum = {
+  id: 'id',
+  slug: 'slug',
+  name: 'name',
+  network: 'network',
+  advertiserCid: 'advertiserCid',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
+} as const
+
+export type MerchantScalarFieldEnum = (typeof MerchantScalarFieldEnum)[keyof typeof MerchantScalarFieldEnum]
+
+
+export const MerchantProductScalarFieldEnum = {
+  id: 'id',
+  merchantId: 'merchantId',
+  externalId: 'externalId',
+  variantId: 'variantId',
+  sourceFeedId: 'sourceFeedId',
+  slug: 'slug',
+  title: 'title',
+  description: 'description',
+  brand: 'brand',
+  productType: 'productType',
+  categorySlug: 'categorySlug',
+  tags: 'tags',
+  audience: 'audience',
+  price: 'price',
+  currency: 'currency',
+  availability: 'availability',
+  destinationUrl: 'destinationUrl',
+  premium: 'premium',
+  professional: 'professional',
+  halloween: 'halloween',
+  rental: 'rental',
+  firstSeenAt: 'firstSeenAt',
+  lastSeenAt: 'lastSeenAt',
+  sourceUpdatedAt: 'sourceUpdatedAt',
+  softRetiredAt: 'softRetiredAt',
+  raw: 'raw',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
+} as const
+
+export type MerchantProductScalarFieldEnum = (typeof MerchantProductScalarFieldEnum)[keyof typeof MerchantProductScalarFieldEnum]
+
+
+export const MerchantProductImageScalarFieldEnum = {
+  id: 'id',
+  productId: 'productId',
+  url: 'url',
+  position: 'position',
+  altText: 'altText',
+  usageStatus: 'usageStatus',
+  permissionRef: 'permissionRef',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
+} as const
+
+export type MerchantProductImageScalarFieldEnum = (typeof MerchantProductImageScalarFieldEnum)[keyof typeof MerchantProductImageScalarFieldEnum]
+
+
+export const AffiliateLinkScalarFieldEnum = {
+  id: 'id',
+  network: 'network',
+  merchantId: 'merchantId',
+  merchantProductId: 'merchantProductId',
+  site: 'site',
+  pid: 'pid',
+  aid: 'aid',
+  networkLinkId: 'networkLinkId',
+  clickToken: 'clickToken',
+  destinationUrl: 'destinationUrl',
+  trackingUrl: 'trackingUrl',
+  active: 'active',
+  verifiedAt: 'verifiedAt',
+  lastCheckedAt: 'lastCheckedAt',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
+} as const
+
+export type AffiliateLinkScalarFieldEnum = (typeof AffiliateLinkScalarFieldEnum)[keyof typeof AffiliateLinkScalarFieldEnum]
+
+
+export const EditorialProductScalarFieldEnum = {
+  id: 'id',
+  merchantProductId: 'merchantProductId',
+  slug: 'slug',
+  status: 'status',
+  indexable: 'indexable',
+  buyerJob: 'buyerJob',
+  summary: 'summary',
+  guidance: 'guidance',
+  evidence: 'evidence',
+  curatedAt: 'curatedAt',
+  publishedAt: 'publishedAt',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
+} as const
+
+export type EditorialProductScalarFieldEnum = (typeof EditorialProductScalarFieldEnum)[keyof typeof EditorialProductScalarFieldEnum]
+
+
+export const AffiliateTransactionScalarFieldEnum = {
+  id: 'id',
+  network: 'network',
+  externalActionId: 'externalActionId',
+  merchantId: 'merchantId',
+  merchantProductId: 'merchantProductId',
+  affiliateClickId: 'affiliateClickId',
+  sid: 'sid',
+  status: 'status',
+  saleAmount: 'saleAmount',
+  commissionAmount: 'commissionAmount',
+  currency: 'currency',
+  eventAt: 'eventAt',
+  lockingDate: 'lockingDate',
+  sourceUpdatedAt: 'sourceUpdatedAt',
+  raw: 'raw',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
+} as const
+
+export type AffiliateTransactionScalarFieldEnum = (typeof AffiliateTransactionScalarFieldEnum)[keyof typeof AffiliateTransactionScalarFieldEnum]
+
+
+export const ProductSyncRunScalarFieldEnum = {
+  id: 'id',
+  merchantId: 'merchantId',
+  source: 'source',
+  status: 'status',
+  cursor: 'cursor',
+  seenCount: 'seenCount',
+  insertedCount: 'insertedCount',
+  updatedCount: 'updatedCount',
+  retiredCount: 'retiredCount',
+  failedCount: 'failedCount',
+  errorSummary: 'errorSummary',
+  startedAt: 'startedAt',
+  completedAt: 'completedAt'
+} as const
+
+export type ProductSyncRunScalarFieldEnum = (typeof ProductSyncRunScalarFieldEnum)[keyof typeof ProductSyncRunScalarFieldEnum]
 
 
 export const SortOrder = {
@@ -231,6 +390,14 @@ export const SortOrder = {
 } as const
 
 export type SortOrder = (typeof SortOrder)[keyof typeof SortOrder]
+
+
+export const NullableJsonNullValueInput = {
+  DbNull: DbNull,
+  JsonNull: JsonNull
+} as const
+
+export type NullableJsonNullValueInput = (typeof NullableJsonNullValueInput)[keyof typeof NullableJsonNullValueInput]
 
 
 export const QueryMode = {
@@ -247,4 +414,13 @@ export const NullsOrder = {
 } as const
 
 export type NullsOrder = (typeof NullsOrder)[keyof typeof NullsOrder]
+
+
+export const JsonNullValueFilter = {
+  DbNull: DbNull,
+  JsonNull: JsonNull,
+  AnyNull: AnyNull
+} as const
+
+export type JsonNullValueFilter = (typeof JsonNullValueFilter)[keyof typeof JsonNullValueFilter]
 

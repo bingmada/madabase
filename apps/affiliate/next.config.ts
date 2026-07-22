@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { resolve } from "node:path";
 
 const pageCacheHeaders = [
   {
@@ -30,6 +31,11 @@ const cacheablePageSources = [
 ];
 
 const nextConfig: NextConfig = {
+  distDir: process.env.NEXT_RELEASE_DIST_DIR ?? ".next",
+  // Keep the existing `next build` + `next start` path unchanged. The
+  // low-resource release command opts into the traced standalone runtime.
+  output: process.env.NEXT_STANDALONE_RELEASE === "1" ? "standalone" : undefined,
+  outputFileTracingRoot: resolve(process.cwd(), "../.."),
   images: {
     remotePatterns: [
       {

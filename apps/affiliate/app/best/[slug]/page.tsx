@@ -139,6 +139,7 @@ const roundupAdvice: Record<SiteKey, Record<string, { spendMore: string; spendLe
       compare: ["Focal zone", "Color repetition", "Visual scale", "Dress-code fit"],
     },
   },
+  costume: {},
 };
 
 function getRoundupAdvice(siteKey: SiteKey, category: string) {

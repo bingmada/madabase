@@ -25,48 +25,48 @@ enum CreditTransactionType {
 }
 
 model User {
-  id                String                  @id @default(cuid())
-  email             String                  @unique
-  emailVerified     Boolean                 @default(false)
-  avatar            String?
-  nickname          String?
-  locale            String                  @default("en")
-  createdAt         DateTime                @default(now())
-  updatedAt         DateTime                @updatedAt
-  sessions          Session[]
-  favorites         Favorite[]
-  toolUsages        ToolUsage[]
-  credits           Credit?
-  creditTransactions CreditTransaction[]
-  testAttempts      TestAttempt[]
-  unlocks           UserUnlock[]
-  testShareLinks    TestShareLink[]         @relation("TestShareLinks")
-  referralRewardsGiven ReferralReward[]     @relation("ReferralRewardsGiven")
-  referralRewardsReceived ReferralReward[]  @relation("ReferralRewardsReceived")
-  verificationCodes EmailVerificationCode[]
+  id                      String                  @id @default(cuid())
+  email                   String                  @unique
+  emailVerified           Boolean                 @default(false)
+  avatar                  String?
+  nickname                String?
+  locale                  String                  @default("en")
+  createdAt               DateTime                @default(now())
+  updatedAt               DateTime                @updatedAt
+  sessions                Session[]
+  favorites               Favorite[]
+  toolUsages              ToolUsage[]
+  credits                 Credit?
+  creditTransactions      CreditTransaction[]
+  testAttempts            TestAttempt[]
+  unlocks                 UserUnlock[]
+  testShareLinks          TestShareLink[]         @relation("TestShareLinks")
+  referralRewardsGiven    ReferralReward[]        @relation("ReferralRewardsGiven")
+  referralRewardsReceived ReferralReward[]        @relation("ReferralRewardsReceived")
+  verificationCodes       EmailVerificationCode[]
 }
 
 model Session {
-  id         String   @id @default(cuid())
-  userId     String
-  tokenHash  String   @unique
-  expiresAt  DateTime
-  createdAt  DateTime @default(now())
-  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  id        String   @id @default(cuid())
+  userId    String
+  tokenHash String   @unique
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([userId])
   @@index([expiresAt])
 }
 
 model EmailVerificationCode {
-  id         String   @id @default(cuid())
+  id         String    @id @default(cuid())
   userId     String?
   email      String
   code       String
   expiresAt  DateTime
   consumedAt DateTime?
-  createdAt  DateTime @default(now())
-  user       User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+  createdAt  DateTime  @default(now())
+  user       User?     @relation(fields: [userId], references: [id], onDelete: SetNull)
 
   @@index([email, expiresAt])
 }
@@ -84,11 +84,11 @@ model Favorite {
 
 model ToolUsage {
   id         String   @id @default(cuid())
-  userId      String
-  toolSlug    String
-  count       Int      @default(0)
-  lastUsedAt  DateTime @default(now())
-  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId     String
+  toolSlug   String
+  count      Int      @default(0)
+  lastUsedAt DateTime @default(now())
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@unique([userId, toolSlug])
   @@index([toolSlug, lastUsedAt])
@@ -103,13 +103,13 @@ model Credit {
 }
 
 model CreditTransaction {
-  id        String                @id @default(cuid())
-  userId    String
-  amount    Int
-  type      CreditTransactionType
+  id          String                @id @default(cuid())
+  userId      String
+  amount      Int
+  type        CreditTransactionType
   description String?
-  createdAt DateTime              @default(now())
-  user      User                  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt   DateTime              @default(now())
+  user        User                  @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([userId, createdAt])
 }
@@ -174,16 +174,199 @@ model ReferralReward {
 }
 
 model AffiliateClick {
-  id          String   @id @default(cuid())
-  eventId     String   @unique
-  site        String
-  productSlug String
-  merchant    String
-  position    String
-  path        String
-  createdAt   DateTime @default(now())
+  id                String                 @id @default(cuid())
+  eventId           String                 @unique
+  site              String
+  productSlug       String
+  merchant          String
+  position          String
+  path              String
+  network           String?
+  pid               String?
+  aid               String?
+  sid               String?                @unique
+  destinationUrl    String?
+  affiliateLinkId   String?
+  merchantProductId String?
+  createdAt         DateTime               @default(now())
+  affiliateLink     AffiliateLink?         @relation(fields: [affiliateLinkId], references: [id], onDelete: SetNull)
+  merchantProduct   MerchantProduct?       @relation(fields: [merchantProductId], references: [id], onDelete: SetNull)
+  transactions      AffiliateTransaction[]
 
   @@index([site, createdAt])
   @@index([productSlug, createdAt])
   @@index([path, createdAt])
+  @@index([affiliateLinkId, createdAt])
+  @@index([merchantProductId, createdAt])
+}
+
+model Merchant {
+  id             String                 @id @default(cuid())
+  slug           String                 @unique
+  name           String
+  network        String
+  advertiserCid  String
+  createdAt      DateTime               @default(now())
+  updatedAt      DateTime               @updatedAt
+  products       MerchantProduct[]
+  affiliateLinks AffiliateLink[]
+  transactions   AffiliateTransaction[]
+  syncRuns       ProductSyncRun[]
+
+  @@unique([network, advertiserCid])
+}
+
+model MerchantProduct {
+  id              String                 @id @default(cuid())
+  merchantId      String
+  externalId      String
+  variantId       String                 @default("")
+  sourceFeedId    String?
+  slug            String                 @unique
+  title           String
+  description     String?
+  brand           String?
+  productType     String?
+  categorySlug    String?
+  tags            String[]               @default([])
+  audience        String[]               @default([])
+  price           Decimal?               @db.Decimal(12, 2)
+  currency        String                 @default("USD")
+  availability    String                 @default("unknown")
+  destinationUrl  String
+  premium         Boolean                @default(false)
+  professional    Boolean                @default(false)
+  halloween       Boolean                @default(false)
+  rental          Boolean                @default(false)
+  firstSeenAt     DateTime               @default(now())
+  lastSeenAt      DateTime               @default(now())
+  sourceUpdatedAt DateTime?
+  softRetiredAt   DateTime?
+  raw             Json?
+  createdAt       DateTime               @default(now())
+  updatedAt       DateTime               @updatedAt
+  merchant        Merchant               @relation(fields: [merchantId], references: [id], onDelete: Cascade)
+  images          MerchantProductImage[]
+  affiliateLinks  AffiliateLink[]
+  editorial       EditorialProduct?
+  clicks          AffiliateClick[]
+  transactions    AffiliateTransaction[]
+
+  @@unique([merchantId, externalId, variantId])
+  @@index([merchantId, availability, lastSeenAt])
+  @@index([categorySlug, availability])
+  @@index([premium, professional])
+  @@index([softRetiredAt])
+}
+
+model MerchantProductImage {
+  id            String          @id @default(cuid())
+  productId     String
+  url           String
+  position      Int             @default(0)
+  altText       String?
+  usageStatus   String          @default("pending")
+  permissionRef String?
+  createdAt     DateTime        @default(now())
+  updatedAt     DateTime        @updatedAt
+  product       MerchantProduct @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  @@unique([productId, url])
+  @@index([productId, position])
+  @@index([usageStatus])
+}
+
+model AffiliateLink {
+  id                String           @id @default(cuid())
+  network           String           @default("cj")
+  merchantId        String
+  merchantProductId String?
+  site              String
+  pid               String
+  aid               String
+  networkLinkId     String?
+  clickToken        String           @unique
+  destinationUrl    String
+  trackingUrl       String
+  active            Boolean          @default(false)
+  verifiedAt        DateTime?
+  lastCheckedAt     DateTime?
+  createdAt         DateTime         @default(now())
+  updatedAt         DateTime         @updatedAt
+  merchant          Merchant         @relation(fields: [merchantId], references: [id], onDelete: Cascade)
+  merchantProduct   MerchantProduct? @relation(fields: [merchantProductId], references: [id], onDelete: Cascade)
+  clicks            AffiliateClick[]
+
+  @@index([merchantId, site, active])
+  @@index([merchantProductId, active])
+  @@index([pid, aid])
+}
+
+model EditorialProduct {
+  id                String          @id @default(cuid())
+  merchantProductId String          @unique
+  slug              String          @unique
+  status            String          @default("draft")
+  indexable         Boolean         @default(false)
+  buyerJob          String?
+  summary           String?
+  guidance          Json?
+  evidence          Json?
+  curatedAt         DateTime?
+  publishedAt       DateTime?
+  createdAt         DateTime        @default(now())
+  updatedAt         DateTime        @updatedAt
+  merchantProduct   MerchantProduct @relation(fields: [merchantProductId], references: [id], onDelete: Cascade)
+
+  @@index([status, indexable])
+}
+
+model AffiliateTransaction {
+  id                String           @id @default(cuid())
+  network           String           @default("cj")
+  externalActionId  String
+  merchantId        String?
+  merchantProductId String?
+  affiliateClickId  String?
+  sid               String?
+  status            String
+  saleAmount        Decimal?         @db.Decimal(14, 2)
+  commissionAmount  Decimal          @db.Decimal(14, 2)
+  currency          String           @default("USD")
+  eventAt           DateTime
+  lockingDate       DateTime?
+  sourceUpdatedAt   DateTime?
+  raw               Json?
+  createdAt         DateTime         @default(now())
+  updatedAt         DateTime         @updatedAt
+  merchant          Merchant?        @relation(fields: [merchantId], references: [id], onDelete: SetNull)
+  merchantProduct   MerchantProduct? @relation(fields: [merchantProductId], references: [id], onDelete: SetNull)
+  affiliateClick    AffiliateClick?  @relation(fields: [affiliateClickId], references: [id], onDelete: SetNull)
+
+  @@unique([network, externalActionId])
+  @@index([merchantId, eventAt])
+  @@index([merchantProductId, eventAt])
+  @@index([affiliateClickId])
+  @@index([sid])
+  @@index([status, lockingDate])
+}
+
+model ProductSyncRun {
+  id            String    @id @default(cuid())
+  merchantId    String
+  source        String
+  status        String
+  cursor        String?
+  seenCount     Int       @default(0)
+  insertedCount Int       @default(0)
+  updatedCount  Int       @default(0)
+  retiredCount  Int       @default(0)
+  failedCount   Int       @default(0)
+  errorSummary  String?
+  startedAt     DateTime  @default(now())
+  completedAt   DateTime?
+  merchant      Merchant  @relation(fields: [merchantId], references: [id], onDelete: Cascade)
+
+  @@index([merchantId, startedAt])
+  @@index([status, startedAt])
 }

@@ -1,6 +1,6 @@
 import type { AffiliateOffer, Product, SiteKey } from "./types";
 
-export const amazonTrackingIds: Record<SiteKey, string> = {
+export const amazonTrackingIds: Partial<Record<SiteKey, string>> = {
   network: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_NETWORK ?? "madanetwork-20",
   smarthome: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_SMARTHOME ?? "madasmart-20",
   homeoffice: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_HOMEOFFICE ?? "madaoffice-20",
@@ -27,6 +27,7 @@ function isAmazonOffer(offer: AffiliateOffer) {
 
 function trackedAmazonUrl(site: SiteKey, product: Product, offer: AffiliateOffer) {
   const trackingId = amazonTrackingIds[site];
+  if (!trackingId) return offer.url;
 
   try {
     const existing = new URL(offer.url);
@@ -50,6 +51,10 @@ function trackedAmazonUrl(site: SiteKey, product: Product, offer: AffiliateOffer
 }
 
 export function applySiteAffiliateTracking(product: Product): Product {
+  if (product.site === "costume") {
+    return { ...product, offers: [] };
+  }
+
   return {
     ...product,
     offers: product.offers

@@ -16,6 +16,7 @@ import {
   commercialExpansionRoundups,
 } from "./commercial-expansion-content";
 import { expansionGuides } from "./expansion-guides";
+import { costumeGuides } from "./costume-content";
 import { gscPriorityGuides, gscPriorityProducts, gscPriorityRoundups } from "./gsc-priority-expansion-content";
 import {
   networkAccessoryExpansionGuides,
@@ -2065,6 +2066,7 @@ roundups.push(...gscPriorityRoundups);
 guides.push(...gscPriorityGuides);
 roundups.push(...aggressivePortfolioRoundups);
 guides.push(...aggressivePortfolioGuides);
+guides.push(...costumeGuides);
 
 const includeDrafts = process.env.AFFILIATE_INCLUDE_DRAFTS === "1";
 

@@ -3,10 +3,12 @@ import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/JsonLd";
 import { ProductCard, RoundupCard } from "@/components/LayoutParts";
 import { StyleCategoryPage } from "@/components/StyleExperience";
+import { CostumeCategoryPage } from "@/components/CostumeExperience";
 import { siteGuides, siteProducts, siteRoundups, siteTools } from "@/lib/content";
 import { breadcrumbSchema, itemListSchema, pageMetadata } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 import type { SiteKey } from "@/lib/types";
+import type { CostumeProductCandidate } from "@/lib/costume-content";
 
 const categoryFrameworks: Record<SiteKey, Record<string, { focus: string; checks: string[] }>> = {
   pet: {
@@ -109,6 +111,28 @@ const categoryFrameworks: Record<SiteKey, Record<string, { focus: string; checks
       checks: ["Choose the focal item", "Repeat one color", "Balance visual scale", "Match the dress code"],
     },
   },
+  costume: {
+    costumes: {
+      focus: "Costume choice begins with the wearer, measurements, movement, event duration, included pieces, and return risk—not the character image alone.",
+      checks: ["Exact product and included pieces", "Body and garment measurements", "Movement, visibility, and layers", "Delivery and return terms"],
+    },
+    "props-animatronics": {
+      focus: "Props and animatronics need a verified route, footprint, material, power plan, venue fit, supervision plan, and storage location.",
+      checks: ["Dimensions and weight", "Power and moving parts", "Venue and weather limits", "Shipping, setup, and storage"],
+    },
+    "masks-prosthetics": {
+      focus: "Masks and prosthetics should be compared by fit, visibility, breathing, material identity, application, removal, and realistic wear time.",
+      checks: ["Head and face fit", "Visibility and ventilation", "Material and adhesive compatibility", "Application and removal time"],
+    },
+    "wigs-makeup": {
+      focus: "Wigs, facial hair, makeup, and effects work as a system: confirm fit, fiber, heat limits, skin-contact materials, touch-ups, removal, and care.",
+      checks: ["Cap and hairline fit", "Fiber and heat limits", "Compatible application products", "Removal, cleaning, and storage"],
+    },
+    "accessories-party-effects": {
+      focus: "Accessories and party effects should match the room, audience, setup time, power, cleanup, delivery window, and repeat-use plan.",
+      checks: ["Dimensions and quantity", "Power or consumables", "Indoor or outdoor fit", "Setup, cleanup, and storage"],
+    },
+  },
 };
 
 function getCategoryFramework(siteKey: SiteKey, category: string) {
@@ -131,6 +155,9 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
   const { slug } = await params;
   const category = site.categories.find((item) => item.slug === slug);
   if (!category) notFound();
+  if (site.key === "costume") {
+    return <CostumeCategoryPage site={site} slug={slug as CostumeProductCandidate["category"]} />;
+  }
   const products = siteProducts(site.key)
     .filter((item) => item.category === slug && (site.key === "style" || item.offers.length > 0))
     .reverse();

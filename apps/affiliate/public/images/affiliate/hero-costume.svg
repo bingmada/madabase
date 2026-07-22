@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">A theatrical costume planning scene</title>
+  <desc id="desc">Editorial illustration of stage curtains, a costume form, a mask, and prop silhouettes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#161019"/>
+      <stop offset="0.55" stop-color="#3b1727"/>
+      <stop offset="1" stop-color="#6f2b43"/>
+    </linearGradient>
+    <radialGradient id="light" cx="52%" cy="34%" r="55%">
+      <stop offset="0" stop-color="#f7dca8" stop-opacity=".62"/>
+      <stop offset=".48" stop-color="#d89664" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f0d294"/>
+      <stop offset="1" stop-color="#a86e2b"/>
+    </linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#080408" flood-opacity=".65"/></filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#light)"/>
+  <path d="M0 0h310c-14 150 0 275 44 375-59 118-77 293-54 525H0z" fill="#541a30"/>
+  <path d="M1600 0h-310c14 150 0 275-44 375 59 118 77 293 54 525h300z" fill="#541a30"/>
+  <path d="M64 0c20 166 16 311-13 436M157 0c13 153 9 293-12 421M1536 0c-20 166-16 311 13 436M1443 0c-13 153-9 293 12 421" fill="none" stroke="#8b3652" stroke-width="24" opacity=".72"/>
+  <ellipse cx="820" cy="818" rx="435" ry="53" fill="#08060a" opacity=".52"/>
+  <g filter="url(#shadow)">
+    <path d="M744 204c24-34 47-50 76-50s52 16 76 50c12 18 15 43 5 64l-38 76v72c76 43 129 133 143 271H634c14-138 67-228 143-271v-72l-38-76c-10-21-7-46 5-64z" fill="#141116" stroke="url(#gold)" stroke-width="7"/>
+    <path d="M778 345c28 15 56 22 84 0M709 503c73 38 148 38 222 0" fill="none" stroke="#c69852" stroke-width="5" opacity=".72"/>
+    <path d="M759 474l61 143 61-143" fill="none" stroke="#8e304e" stroke-width="20"/>
+    <path d="M634 687h372v28H634z" fill="url(#gold)"/>
+  </g>
+  <g transform="translate(1035 310) rotate(8)" filter="url(#shadow)">
+    <path d="M0 54c42-62 138-72 201-15 24 21 41 52 45 85-52 47-116 65-179 37C28 143 4 104 0 54z" fill="#e8cf9b"/>
+    <path d="M22 68c35-34 70-43 104-28-13 49-55 67-91 46zM143 37c34 2 62 22 80 55-34 25-78 6-88-31z" fill="#291521"/>
+    <path d="M80 128c34 14 66 12 96-8" fill="none" stroke="#7a2e45" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(404 352) rotate(-12)" filter="url(#shadow)">
+    <path d="M82 8h42v328H82z" fill="#9a6b36"/>
+    <path d="M103 0c35 35 73 54 114 58-36 31-73 47-114 49-41-2-78-18-114-49C30 54 68 35 103 0z" fill="#d5b779" stroke="#f1dda7" stroke-width="5"/>
+    <path d="M20 336h166v28H20z" fill="#2b2024"/>
+  </g>
+  <g fill="#f2dcae" opacity=".88">
+    <circle cx="1210" cy="177" r="5"/><circle cx="1260" cy="228" r="3"/><circle cx="1118" cy="196" r="4"/>
+    <circle cx="421" cy="183" r="4"/><circle cx="363" cy="238" r="3"/><circle cx="514" cy="219" r="5"/>
+  </g>
+</svg>

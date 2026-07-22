@@ -15,7 +15,7 @@ export function GET() {
   const body = [
     '<?xml version="1.0" encoding="UTF-8"?>',
     '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
-    ...siteKeys.map((key) => {
+    ...siteKeys.filter((key) => !sites[key].previewNoIndex).map((key) => {
       const loc = new URL("/sitemap.xml", sites[key].domain).toString();
 
       return `  <sitemap><loc>${escapeXml(loc)}</loc></sitemap>`;

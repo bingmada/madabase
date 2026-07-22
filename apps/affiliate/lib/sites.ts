@@ -10,6 +10,7 @@ export type SiteConfig = {
   hostHints: string[];
   disclosure: string;
   heroImage: string;
+  previewNoIndex?: boolean;
   theme: {
     brand: string;
     brandStrong: string;
@@ -155,6 +156,31 @@ export const sites: Record<SiteKey, SiteConfig> = {
       { slug: "scarves", name: "Scarves & wraps", description: "Silk, satin, skinny, and multipurpose scarves for the neck, hair, bag, or waist." },
       { slug: "socks", name: "Statement socks", description: "Colorful food, fruit, cat, animal, and graphic socks that make basics less quiet." },
       { slug: "styling", name: "How to wear it", description: "Outfit formulas, scale checks, comfort notes, and ways to avoid costume territory." },
+    ],
+  },
+  costume: {
+    key: "costume",
+    name: "Madabase Costume Guide",
+    tagline: "Choose the costume, prop, and effect that fits the whole event.",
+    description: "Year-round costume, prop, mask, wig, makeup, accessory, and party-effect buying guides with a Premium & Professional edit and seasonal Halloween merchandising.",
+    domain: process.env.NEXT_PUBLIC_COSTUME_SITE_URL ?? "https://costumes.madabase.com",
+    hostHints: ["costume", "halloween"],
+    disclosure: "Madabase Costume Guide plans to earn commissions from qualifying Abracadabra NYC purchases through CJ. Costume PID 101838067 and one formal product-link path are verified, but purchase links remain disabled during this noindex preview until feed product identity, image-use terms, and page-to-link mappings pass. Commissions will not change the price a reader pays.",
+    heroImage: "/images/affiliate/hero-costume-studio-v1.webp",
+    previewNoIndex: true,
+    theme: {
+      brand: "#7a2e45",
+      brandStrong: "#4a1b2b",
+      brandSoft: "#f5e3e8",
+      accent: "#a46e23",
+      accentSoft: "#fff1d5",
+    },
+    categories: [
+      { slug: "costumes", name: "Costumes", description: "Adult, kids, licensed, theatrical, group, cosplay, inflatable, and occasion costumes compared by fit and use." },
+      { slug: "props-animatronics", name: "Props", description: "Carry props, display pieces, large effects, and animatronics compared by dimensions, power, venue, and storage." },
+      { slug: "masks-prosthetics", name: "Masks", description: "Masks and prosthetics compared by fit, visibility, materials, application, removal, and wear time." },
+      { slug: "wigs-makeup", name: "Wigs & Makeup", description: "Wigs, facial hair, makeup, and special effects planned as a compatible application and care system." },
+      { slug: "accessories-party-effects", name: "Party Effects", description: "Accessories, decor, lighting, and atmosphere pieces chosen for the room, event, timing, and cleanup." },
     ],
   },
 };

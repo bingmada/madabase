@@ -2,6 +2,7 @@ import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
 import { Hero, ProductCard, RoundupCard, TrustBar } from "@/components/LayoutParts";
 import { StyleHome } from "@/components/StyleExperience";
+import { CostumeHome } from "@/components/CostumeExperience";
 import { siteGuides, siteProducts, siteRoundups, siteTools } from "@/lib/content";
 import { itemListSchema, organizationSchema, pageMetadata, websiteSchema } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
@@ -38,6 +39,11 @@ const homeCopy: Record<SiteKey, { eyebrow: string; heading: string; body: string
     heading: "Find the interesting piece, then build an outfit that lets it work.",
     body: "Compare statement earrings, character bags, and other playful accessories by size, weight, material, closure, capacity, and how easily they fit real outfits.",
   },
+  costume: {
+    eyebrow: "Costume and prop buying guides",
+    heading: "Plan fit, materials, movement, timing, and storage before choosing the look.",
+    body: "Compare costumes, props, masks, wigs, makeup, and party effects by the full event job rather than scrolling an undifferentiated catalog.",
+  },
 };
 
 function newestAndFoundational<T extends { slug: string }>(items: T[], newestCount: number, foundationalCount: number) {
@@ -61,6 +67,9 @@ export default async function HomePage() {
   const featuredProducts = newestAndFoundational(linkedProducts, 6, 3);
   const featuredGuides = newestAndFoundational(guides, 6, 6);
   const copy = homeCopy[site.key];
+  if (site.key === "costume") {
+    return <CostumeHome site={site} />;
+  }
   if (site.key === "style") {
     return <StyleHome site={site} products={products} roundups={roundups} guides={guides} />;
   }
