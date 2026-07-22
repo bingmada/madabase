@@ -48,7 +48,7 @@ npm run sync:cj:products --workspace apps/affiliate
 npm run sync:cj:commissions --workspace apps/affiliate
 ```
 
-Normal daily refreshes run the download, product sync, and commission sync without repeating the dry-run. Keep `CJ_SYNC_LIMIT=1000` in production initially. The product sync streams all 30,991 source rows, retains only a category-balanced 1,000-product working catalog, and writes the selected set in database batches. It does not hold the full export in memory. Increase the working catalog only after the existing catalog produces a real navigation, search, or conversion need.
+Normal daily refreshes run the download, product sync, and commission sync without repeating the dry-run. Keep `CJ_SYNC_LIMIT=1000` in production initially. The product sync streams all 30,991 source rows, retains only a category-balanced 1,000-product working catalog, and writes the selected set in database batches. It does not hold the full export in memory. Images newly supplied by this exact Abracadabra CJ Feed inherit the same official CJ documentation permission reference; images from any other source do not. Increase the working catalog only after the existing catalog produces a real navigation, search, or conversion need.
 
 The downloader requires an explicit SHA-256 host-key fingerprint, writes to a mode-600 `.part` file, verifies the remote and local byte counts, and only then replaces the configured export path. A wrong fingerprint must fail before any download.
 

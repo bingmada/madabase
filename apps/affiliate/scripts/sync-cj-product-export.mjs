@@ -9,6 +9,8 @@ const databaseUrl = process.env.DATABASE_URL;
 const expectedPid = process.env.CJ_COSTUME_PID;
 const subscriptionId = process.env.CJ_PRODUCT_EXPORT_SUBSCRIPTION_ID || "319553";
 const merchantCid = "7889430";
+const imagePermissionRef = (process.env.CJ_PRODUCT_IMAGE_PERMISSION_REF
+  ?? "https://developers.cj.com/docs/data-imports/product-feeds (accessed 2026-07-22; CJ Product Feed image-link and additional-image-link publisher-use guidance)").trim();
 const dryRun = process.argv.includes("--dry-run") || process.env.CJ_SYNC_DRY_RUN === "1";
 const selectionLimit = Number(process.env.CJ_SYNC_LIMIT || 1000);
 
@@ -24,6 +26,9 @@ if (missing.length) {
 }
 if (!Number.isInteger(selectionLimit) || selectionLimit < 1 || selectionLimit > 50_000) {
   throw new Error("CJ_SYNC_LIMIT must be an integer between 1 and 50000");
+}
+if (!imagePermissionRef.startsWith("https://developers.cj.com/")) {
+  throw new Error("CJ_PRODUCT_IMAGE_PERMISSION_REF must point to the official developers.cj.com documentation used for Feed-image authorization");
 }
 
 function openExport(pathname) {
@@ -460,10 +465,12 @@ try {
       if (!productId) continue;
       for (const [position, url] of product.imageUrls.entries()) {
         await client.query(
-          `INSERT INTO "MerchantProductImage" ("id", "productId", "url", "position", "usageStatus", "createdAt", "updatedAt")
-           VALUES ($1, $2, $3, $4, 'pending', NOW(), NOW())
-           ON CONFLICT ("productId", "url") DO UPDATE SET "position" = EXCLUDED."position", "updatedAt" = NOW()`,
-          [crypto.randomUUID(), productId, url, position],
+          `INSERT INTO "MerchantProductImage" ("id", "productId", "url", "position", "usageStatus", "permissionRef", "createdAt", "updatedAt")
+           VALUES ($1, $2, $3, $4, 'authorized', $5, NOW(), NOW())
+           ON CONFLICT ("productId", "url") DO UPDATE SET
+             "position" = EXCLUDED."position", "usageStatus" = 'authorized',
+             "permissionRef" = EXCLUDED."permissionRef", "updatedAt" = NOW()`,
+          [crypto.randomUUID(), productId, url, position, imagePermissionRef],
         );
       }
 
