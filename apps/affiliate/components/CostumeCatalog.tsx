@@ -224,7 +224,7 @@ export async function CostumeCatalogExplorer({
 }
 
 export function CostumePurchaseState({ product }: { product: CostumeCatalogProduct }) {
-  const ready = Boolean(product.activeLink && product.authorizedImage && product.editorial?.status === "published");
+  const ready = Boolean(product.activeLink && product.authorizedImage && product.availability !== "out of stock");
 
   if (ready && product.activeLink) {
     return (
