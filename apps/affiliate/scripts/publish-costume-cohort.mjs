@@ -82,7 +82,7 @@ function score(product) {
 function chooseCategory(products, category) {
   const rule = categoryRules[category];
   const eligible = products
-    .filter((product) => product.categorySlug === category && rule.include.test(product.title) && !rule.exclude.test(product.title))
+    .filter((product) => rule.include.test(product.title) && !rule.exclude.test(product.title))
     .filter(validateLink)
     .sort((a, b) => score(b) - score(a) || a.title.localeCompare(b.title));
   const selected = [];
@@ -98,14 +98,14 @@ function chooseCategory(products, category) {
   for (const band of bands) {
     const match = eligible.find((product) => band(product) && !usedTitles.has(normalizedTitle(product.title)));
     if (!match) continue;
-    selected.push(match);
+    selected.push({ ...match, targetCategory: category });
     usedTitles.add(normalizedTitle(match.title));
   }
   for (const product of eligible) {
     if (selected.length >= targetPerCategory) break;
     const titleKey = normalizedTitle(product.title);
     if (usedTitles.has(titleKey)) continue;
-    selected.push(product);
+    selected.push({ ...product, targetCategory: category });
     usedTitles.add(titleKey);
   }
   if (selected.length !== targetPerCategory) {
@@ -115,7 +115,7 @@ function chooseCategory(products, category) {
 }
 
 function editorialFor(product) {
-  const rule = categoryRules[product.categorySlug];
+  const rule = categoryRules[product.targetCategory];
   const price = product.price ? new Intl.NumberFormat("en-US", { style: "currency", currency: product.currency }).format(Number(product.price)) : "a currently listed price";
   const flags = [product.premium ? "premium-priced" : null, product.professional ? "professional-use" : null, product.halloween ? "Halloween-relevant" : null].filter(Boolean);
   const position = flags.length ? `${flags.join(", ")} option` : "listed option";
@@ -163,16 +163,27 @@ try {
        AND mp."softRetiredAt" IS NULL AND mp."availability" <> 'out of stock'`,
     [expectedPid],
   );
-  const selected = Object.keys(categoryRules).flatMap((category) => chooseCategory(result.rows, category));
+  const selected = [];
+  const usedProductIds = new Set();
+  const usedProductTitles = new Set();
+  for (const category of Object.keys(categoryRules)) {
+    const available = result.rows.filter((product) => !usedProductIds.has(product.id) && !usedProductTitles.has(normalizedTitle(product.title)));
+    const categorySelection = chooseCategory(available, category);
+    for (const product of categorySelection) {
+      selected.push(product);
+      usedProductIds.add(product.id);
+      usedProductTitles.add(normalizedTitle(product.title));
+    }
+  }
   const validation = {
     mode: apply ? "apply" : "preview",
     selected: selected.length,
-    categories: Object.fromEntries(Object.keys(categoryRules).map((category) => [category, selected.filter((product) => product.categorySlug === category).length])),
+    categories: Object.fromEntries(Object.keys(categoryRules).map((category) => [category, selected.filter((product) => product.targetCategory === category).length])),
     exactLinks: selected.filter(validateLink).length,
     authorizedImages: selected.filter((product) => product.permissionRef).length,
   };
   console.log(JSON.stringify(validation));
-  selected.forEach((product) => console.log(`${product.categorySlug} | ${product.price ?? "n/a"} ${product.currency} | ${product.title} | ${product.slug}`));
+  selected.forEach((product) => console.log(`${product.targetCategory} | ${product.price ?? "n/a"} ${product.currency} | ${product.title} | ${product.slug}`));
   if (!apply) process.exit(0);
 
   await client.query("BEGIN");
@@ -194,6 +205,10 @@ try {
   );
   for (const product of selected) {
     const editorial = editorialFor(product);
+    await client.query(
+      `UPDATE "MerchantProduct" SET "categorySlug" = $1, "updatedAt" = NOW() WHERE "id" = $2`,
+      [product.targetCategory, product.id],
+    );
     await client.query(
       `UPDATE "AffiliateLink" SET "active" = true, "verifiedAt" = NOW(), "lastCheckedAt" = NOW(), "updatedAt" = NOW()
        WHERE "id" = $1 AND "merchantProductId" = $2 AND "site" = 'costume' AND "pid" = $3`,

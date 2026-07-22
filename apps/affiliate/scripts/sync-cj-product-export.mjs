@@ -154,12 +154,14 @@ function slugify(value) {
   return value.toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 90) || "product";
 }
 
-function classify(text) {
-  const value = text.toLowerCase();
-  if (/mask|prosthetic|latex/.test(value)) return "masks-prosthetics";
-  if (/wig|facial hair|makeup|cosmetic|eyelash/.test(value)) return "wigs-makeup";
-  if (/prop|animatronic|weapon|sword|axe|skeleton|statue|figure/.test(value)) return "props-animatronics";
-  if (/costume|dress|jacket|coat|suit|robe|tights|corset|catsuit/.test(value)) return "costumes";
+function classify(title, productType, description) {
+  const primary = `${title} ${productType}`.toLowerCase();
+  const secondary = description.toLowerCase();
+  if (/\b(prop|animatronic|animated|weapon|sword|axe|skeleton|statue|figure|decoration)\b/.test(primary)) return "props-animatronics";
+  if (/\b(mask|prosthetic|appliance|fangs?|teeth|latex mask)\b/.test(primary)) return "masks-prosthetics";
+  if (/\b(wig|facial hair|makeup|make-up|cosmetic|eyelash|beard|moustache|mustache|face paint)\b/.test(primary)) return "wigs-makeup";
+  if (/\b(costume|dress|jacket|coat|suit|robe|tights|corset|catsuit|mascot|uniform)\b/.test(primary)) return "costumes";
+  if (/\b(prosthetic|wig|makeup|facial hair)\b/.test(secondary)) return /\b(prosthetic)\b/.test(secondary) ? "masks-prosthetics" : "wigs-makeup";
   return "accessories-party-effects";
 }
 
@@ -265,7 +267,9 @@ function normalizeProduct(row) {
   }
 
   const variantId = destination.searchParams.get("variant") || pick(row, ["variant_id", "item_group_id"]) || "";
-  const categorySource = [title, pick(row, ["product_type", "google_product_category", "category"]), pick(row, ["description"])].join(" ");
+  const productType = pick(row, ["product_type", "google_product_category", "category"]);
+  const description = pick(row, ["description"]);
+  const categorySource = [title, productType, description].join(" ");
   const priceText = pick(row, ["sale_price", "price"]);
   const currency = (priceText.match(/\b[A-Z]{3}\b/)?.[0] || pick(row, ["currency"]) || "USD").toUpperCase();
   const imageUrls = [
@@ -283,10 +287,10 @@ function normalizeProduct(row) {
     sourceFeedId: pick(row, ["feed_id", "catalog_id"]) || subscriptionId,
     slug: `${slugify(title)}-${stableToken(`${externalId}:${variantId}`).slice(0, 7).toLowerCase()}`,
     title,
-    description: pick(row, ["description"]),
+    description,
     brand: pick(row, ["brand", "manufacturer"]),
-    productType: pick(row, ["product_type", "google_product_category", "category"]),
-    categorySlug: classify(categorySource),
+    productType,
+    categorySlug: classify(title, productType, description),
     tags: pick(row, ["tags", "keywords"]).split(/[,|]/).map((value) => value.trim()).filter(Boolean).slice(0, 40),
     audience: [pick(row, ["age_group"]), pick(row, ["gender"])].filter(Boolean),
     price,
