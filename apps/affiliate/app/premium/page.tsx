@@ -1,6 +1,6 @@
 import { BadgeDollarSign, Hammer, Ruler, RotateCcw } from "lucide-react";
-import { CostumeProductCard } from "@/components/CostumeExperience";
-import { premiumCostumeProducts } from "@/lib/costume-content";
+import { CostumeCatalogExplorer } from "@/components/CostumeCatalog";
+import { parseCostumeCatalogFilters } from "@/lib/costume-catalog";
 import { pageMetadata } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 import { notFound } from "next/navigation";
@@ -11,10 +11,16 @@ export async function generateMetadata() {
   return pageMetadata(site, "/premium", "Premium & Professional Costumes and Props", "High-consideration costumes and props compared by construction, fit, repeat use, care, transport, and total ownership cost.");
 }
 
-export default async function PremiumCostumePage() {
+export const dynamic = "force-dynamic";
+
+export default async function PremiumCostumePage({
+  searchParams,
+}: {
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+}) {
   const site = await getCurrentSite();
   if (site.key !== "costume") notFound();
-  const products = premiumCostumeProducts();
+  const filters = parseCostumeCatalogFilters(await searchParams, { feature: "premium-professional" });
 
   return (
     <main>
@@ -43,11 +49,11 @@ export default async function PremiumCostumePage() {
       </section>
       <section className="section">
         <div className="shell">
-          <p className="eyebrow">Initial edit</p>
-          <h2 className="mt-3 text-3xl font-black">High-consideration launch candidates</h2>
-          <p className="mt-4 max-w-3xl leading-8 text-[var(--muted)]">Every record remains a noindex editorial preview until feed identity, current inventory, image permission, and CJ attribution pass.</p>
-          <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {products.map((product) => <CostumeProductCard key={product.slug} product={product} />)}
+          <p className="eyebrow">Feed-backed edit</p>
+          <h2 className="mt-3 text-3xl font-black">High-consideration products</h2>
+          <p className="mt-4 max-w-3xl leading-8 text-[var(--muted)]">Filter the current Premium and Professional working set. Every record remains a noindex preview until current inventory, written image permission, distinct editorial review, and CJ attribution pass together.</p>
+          <div className="mt-8">
+            <CostumeCatalogExplorer basePath="/premium" filters={filters} lockedFeature="premium-professional" site={site} />
           </div>
         </div>
       </section>

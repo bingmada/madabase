@@ -47,7 +47,15 @@ if (!(appName in pm2Defaults)) {
 rmSync(releaseRoot, { recursive: true, force: true });
 mkdirSync(runtimeRoot, { recursive: true });
 cpSync(standaloneRoot, runtimeRoot, { recursive: true });
-cpSync(join(buildRoot, "static"), join(appRuntime, ".next", "static"), { recursive: true });
+// The generated standalone server keeps the configured distDir in its embedded
+// Next config. Browser assets must therefore live under that same directory;
+// copying them to a hard-coded `.next/static` makes every JS/CSS request 404
+// when an isolated release build uses `.next-release`.
+const runtimeStaticRoot = join(appRuntime, distDir, "static");
+cpSync(join(buildRoot, "static"), runtimeStaticRoot, { recursive: true });
+if (!existsSync(runtimeStaticRoot)) {
+  throw new Error(`Unable to package browser assets at ${relative(repoRoot, runtimeStaticRoot)}.`);
+}
 
 const copiedRuntimeDirectories = [];
 for (const directory of ["public", "content"]) {

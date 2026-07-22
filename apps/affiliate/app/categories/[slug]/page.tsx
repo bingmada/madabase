@@ -8,7 +8,7 @@ import { siteGuides, siteProducts, siteRoundups, siteTools } from "@/lib/content
 import { breadcrumbSchema, itemListSchema, pageMetadata } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 import type { SiteKey } from "@/lib/types";
-import type { CostumeProductCandidate } from "@/lib/costume-content";
+import { parseCostumeCatalogFilters, type CostumeCatalogCategory } from "@/lib/costume-catalog";
 
 const categoryFrameworks: Record<SiteKey, Record<string, { focus: string; checks: string[] }>> = {
   pet: {
@@ -150,13 +150,21 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return pageMetadata(site, `/categories/${slug}`, `${category.name} Buying Guides`, category.description);
 }
 
-export default async function CategoryPage({ params }: { params: Promise<{ slug: string }> }) {
+export default async function CategoryPage({
+  params,
+  searchParams,
+}: {
+  params: Promise<{ slug: string }>;
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+}) {
   const site = await getCurrentSite();
   const { slug } = await params;
   const category = site.categories.find((item) => item.slug === slug);
   if (!category) notFound();
   if (site.key === "costume") {
-    return <CostumeCategoryPage site={site} slug={slug as CostumeProductCandidate["category"]} />;
+    const categorySlug = slug as CostumeCatalogCategory;
+    const filters = parseCostumeCatalogFilters(await searchParams, { category: categorySlug });
+    return <CostumeCategoryPage filters={filters} site={site} slug={categorySlug} />;
   }
   const products = siteProducts(site.key)
     .filter((item) => item.category === slug && (site.key === "style" || item.offers.length > 0))

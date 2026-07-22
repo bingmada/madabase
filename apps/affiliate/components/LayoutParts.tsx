@@ -26,6 +26,7 @@ export function SiteChrome({ site, children }: { site: SiteConfig; children: Rea
             <Link className="hidden hover:text-[var(--brand-strong)] sm:inline" href="/">
               Home
             </Link>
+            {site.key === "costume" ? <Link className="hover:text-[var(--brand-strong)]" href="/catalog">Catalog</Link> : null}
             {site.categories.map((category) => (
               <Link className="hover:text-[var(--brand-strong)]" href={`/categories/${category.slug}`} key={category.slug}>
                 {category.name}
@@ -51,6 +52,7 @@ export function SiteChrome({ site, children }: { site: SiteConfig; children: Rea
             <div className="panel absolute right-0 top-full z-50 mt-2 w-56 p-2 shadow-[var(--shadow)]">
               <nav className="grid gap-1 text-sm font-semibold" aria-label="Mobile navigation">
                 <Link className="rounded-md px-3 py-2 hover:bg-[var(--surface-muted)]" href="/">Home</Link>
+                {site.key === "costume" ? <Link className="rounded-md px-3 py-2 hover:bg-[var(--surface-muted)]" href="/catalog">Catalog</Link> : null}
                 {site.categories.map((category) => (
                   <Link className="rounded-md px-3 py-2 hover:bg-[var(--surface-muted)]" href={`/categories/${category.slug}`} key={category.slug}>
                     {category.name}
