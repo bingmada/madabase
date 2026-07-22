@@ -223,22 +223,22 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
           ) : (
             <p className="eyebrow">{roundup.category}</p>
           )}
-          <h1 className="mt-3 text-4xl font-black leading-tight">{roundup.title}</h1>
-          <p className="mt-5 text-lg leading-8 text-[var(--muted)]">{roundup.dek}</p>
+          <h1 className="mt-3 text-3xl font-black leading-tight sm:text-4xl">{roundup.title}</h1>
+          <p className="mt-4 text-base leading-7 text-[var(--muted)] sm:mt-5 sm:text-lg sm:leading-8">{roundup.dek}</p>
           {roundup.updatedAt ? (
-            <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm font-semibold text-[var(--muted)]">
-              <span>Prepared by the {site.name} editorial desk</span>
+            <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-xs font-semibold text-[var(--muted)] sm:mt-4 sm:gap-y-2 sm:text-sm">
+              <span className="hidden sm:inline">Prepared by the {site.name} editorial desk</span>
               <span>Updated {roundup.updatedAt}</span>
             </div>
           ) : null}
           {topPick ? (
-            <div className="mt-5 grid gap-4 rounded-md border border-[var(--border)] bg-white p-5 sm:grid-cols-[1fr_auto]">
+            <div className="mt-4 grid gap-3 rounded-md border border-[var(--border)] bg-white p-4 sm:mt-5 sm:gap-4 sm:p-5 sm:grid-cols-[1fr_auto]">
               <div>
                 <p className="text-xs font-bold uppercase text-[var(--muted)]">Best starting pick</p>
-                <h2 className="mt-2 text-xl font-bold">{topPick.amazonTitle ?? topPick.name}</h2>
-                <p className="mt-2 text-sm leading-6 text-[var(--muted)]">Best for: {topPick.bestFor}</p>
-                <p className="mt-1 text-sm leading-6 text-[var(--muted)]">Skip if: {topPickTradeOff}</p>
-                <p className="mt-1 text-sm font-semibold leading-6 text-[var(--brand-strong)]">Price band: {topPick.priceBand}</p>
+                <h2 className="mt-2 text-lg font-bold sm:text-xl">{topPick.amazonTitle ?? topPick.name}</h2>
+                <p className="mt-2 text-sm leading-5 text-[var(--muted)] sm:leading-6">Best for: {topPick.bestFor}</p>
+                <p className="mt-1 text-sm leading-5 text-[var(--muted)] sm:leading-6">Skip if: {topPickTradeOff}</p>
+                <p className="mt-1 text-sm font-semibold leading-5 text-[var(--brand-strong)] sm:leading-6">Price band: {topPick.priceBand}</p>
               </div>
               <div className="flex flex-wrap items-start gap-2 sm:justify-end">
                 <Link className="button-secondary" href={`/reviews/${topPick.slug}`}>
