@@ -11,6 +11,7 @@ const SITE_DOMAINS = {
   baby: process.env.NEXT_PUBLIC_BABY_SITE_URL ?? "https://baby.madabase.com",
   pet: process.env.NEXT_PUBLIC_PET_SITE_URL ?? "https://pets.madabase.com",
   style: process.env.NEXT_PUBLIC_STYLE_SITE_URL ?? "https://style.madabase.com",
+  costume: process.env.NEXT_PUBLIC_COSTUME_SITE_URL ?? "https://costumes.madabase.com",
 };
 const SITE_KEYS = Object.keys(SITE_DOMAINS);
 const STATIC_PATHS = [
@@ -28,6 +29,7 @@ const SITE_CATEGORIES = {
   baby: ["sleep", "travel", "feeding"],
   pet: ["feeding", "home-care", "comfort"],
   style: ["jewelry", "bags", "hair", "scarves", "socks", "styling"],
+  costume: [],
 };
 const REPO_ROOT = execFileSync("git", ["rev-parse", "--show-toplevel"], { encoding: "utf8" }).trim();
 
