@@ -81,7 +81,9 @@ async function fetchDestination(product) {
           headers: { "user-agent": "Madabase-CJ-Link-Validator/1.0", range: "bytes=0-0" },
         });
       }
-      if (response.ok && sameProductDestination(product.destinationUrl, response.url)) return null;
+      const sameDestination = sameProductDestination(product.destinationUrl, response.url);
+      if (response.ok && sameDestination) return { ok: true, rateLimited: false };
+      if (response.status === 429 && sameDestination) return { ok: true, rateLimited: true };
       lastFailure = `HTTP ${response.status} or product destination drift (${response.url})`;
       if (response.status !== 429 && response.status < 500) break;
     } catch (error) {
@@ -91,7 +93,7 @@ async function fetchDestination(product) {
     }
     await new Promise((resolve) => setTimeout(resolve, 500 * (attempt + 1)));
   }
-  return lastFailure;
+  return { ok: false, reason: lastFailure };
 }
 
 async function mapConcurrent(items, worker) {
@@ -149,10 +151,12 @@ try {
   }
 
   const networkFailures = [];
+  let networkRateLimited = 0;
   if (networkDirect) {
     const checks = await mapConcurrent(structurallyValid, fetchDestination);
-    checks.forEach((reason, index) => {
-      if (reason) networkFailures.push({ slug: structurallyValid[index].slug, reason });
+    checks.forEach((check, index) => {
+      if (check.rateLimited) networkRateLimited += 1;
+      if (!check.ok) networkFailures.push({ slug: structurallyValid[index].slug, reason: check.reason });
     });
   }
   const failedSlugs = new Set([...structuralFailures, ...networkFailures].map((item) => item.slug));
@@ -166,6 +170,7 @@ try {
     expectedCatalogCount,
     structurallyValid: structurallyValid.length,
     destinationChecked: networkDirect ? structurallyValid.length : 0,
+    destinationRateLimited: networkRateLimited,
     eligible: eligible.length,
     structuralFailures: structuralFailures.length,
     networkFailures: networkFailures.length,
