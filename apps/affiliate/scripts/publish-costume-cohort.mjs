@@ -45,7 +45,7 @@ const categoryRules = {
   },
   "accessories-party-effects": {
     include: /\b(hat|crown|headpiece|hair clip|pasties|gloves?|cape|tail|ears?|jewelry|necklace|bracelet|stockings?|tights|boots?|shoes?|bag|wand|sword|shield|accessor)\b/i,
-    exclude: /\b(animatronic|animated prop|costume|dress|mascot|uniform)\b/i,
+    exclude: /\b(animatronic|animated prop|costume|dress|mascot|uniform|mask|prosthetic)\b/i,
     use: "a costume finishing piece, party, parade, stage look, or themed event",
     checks: ["dimensions, quantity, fit, and included pieces", "materials, closures, movement, and comfort", "how it works with the rest of the outfit or venue", "delivery timing, care, storage, and current return terms"],
   },
