@@ -2,7 +2,7 @@
 
 The repository-wide workflow is documented in `../../DEPLOYMENT.md`. This file records the affiliate-specific topology.
 
-The six existing affiliate hosts plus the noindex Costume preview are handled by one host-aware Next.js application. Do not build or run one copy per subdomain.
+The six existing affiliate hosts plus the launched Costume publication are handled by one host-aware Next.js application. Do not build or run one copy per subdomain.
 
 ## Build away from production
 
@@ -28,7 +28,7 @@ Future releases extract into a new immutable release directory, merge the previo
 - Production must use Node 20.x. The packaged launcher refuses older Node versions.
 - Never upload `.next/cache`, the repository `node_modules`, or the source tree as part of this release.
 - Never run `next build` on the low-memory production server.
-- Run one affiliate process for `network`, `smarthome`, `homeoffice`, `baby`, `pets`, `style`, and `costume`; host detection already separates their content, canonicals, disclosures, tracking configuration, and preview-indexing rules.
+- Run one affiliate process for `network`, `smarthome`, `homeoffice`, `baby`, `pets`, `style`, and `costume`; host detection already separates their content, canonicals, disclosures, tracking configuration, and indexing rules.
 - Keep Cloudflare's public affiliate HTML cache enabled. API and RSC requests remain uncached.
 - Never delete the previous generation's hashed `static` files at cutover. A cached HTML document and its matching JS/CSS must age out together; production validation must probe both old and new asset hashes on all seven hosts.
 - A 1-2GB swap file can prevent an emergency OOM kill, but it is a fallback, not a replacement for off-server builds and a single runtime process.
@@ -49,6 +49,14 @@ npm run sync:cj:commissions --workspace apps/affiliate
 ```
 
 Normal daily refreshes run the download, product sync, and commission sync without repeating the dry-run. Keep `CJ_SYNC_LIMIT=1000` in production initially. The product sync streams all 30,991 source rows, retains only a category-balanced 1,000-product working catalog, and writes the selected set in database batches. It does not hold the full export in memory. Images newly supplied by this exact Abracadabra CJ Feed inherit the same official CJ documentation permission reference; images from any other source do not. Increase the working catalog only after the existing catalog produces a real navigation, search, or conversion need.
+
+Run Commission Detail reconciliation under the repository lock wrapper. It loads the affiliate environment, uses a rolling 45-day posting window, and exits before starting if another reconciliation still holds the lock:
+
+```bash
+npm run sync:cj:commissions:locked --workspace apps/affiliate
+```
+
+The public Costume launch exposes exactly 25 editor-reviewed product URLs. The home, category, Premium, guide, and policy pages are indexable; `/catalog`, filter combinations, and every product outside the reviewed cohort stay `noindex,follow` and out of the sitemap. Use `npm run publish:costume:cohort --workspace apps/affiliate` to preview a cohort change and append `-- --apply` only after the preview passes exact-link, image, availability, and category checks.
 
 The downloader requires an explicit SHA-256 host-key fingerprint, writes to a mode-600 `.part` file, verifies the remote and local byte counts, and only then replaces the configured export path. A wrong fingerprint must fail before any download.
 

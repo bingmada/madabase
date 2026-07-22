@@ -34,12 +34,19 @@ async function loadPayload() {
     throw new Error("Set CJ_COMMISSION_DETAIL_PATH, or set CJ_COMMISSION_GRAPHQL_ENDPOINT, CJ_COMMISSION_QUERY_PATH, and CJ_API_TOKEN");
   }
 
+  const variables = JSON.parse(process.env.CJ_COMMISSION_QUERY_VARIABLES ?? "{}");
+  const lookbackDays = Number(process.env.CJ_COMMISSION_LOOKBACK_DAYS ?? "");
+  if (Number.isFinite(lookbackDays) && lookbackDays > 0) {
+    variables.sincePostingDate = new Date(Date.now() - lookbackDays * 86_400_000).toISOString();
+    delete variables.beforePostingDate;
+  }
+
   const response = await fetch(endpoint, {
     method: "POST",
     headers: { Authorization: `Bearer ${token}`, "content-type": "application/json" },
     body: JSON.stringify({
       query: fs.readFileSync(resolveInputPath(queryPath), "utf8"),
-      variables: JSON.parse(process.env.CJ_COMMISSION_QUERY_VARIABLES ?? "{}"),
+      variables,
     }),
   });
   const payload = await response.json();

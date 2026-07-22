@@ -46,6 +46,7 @@
     "sync:cj:products": "node scripts/sync-cj-product-export.mjs",
     "sync:cj:products:dry-run": "node scripts/sync-cj-product-export.mjs --dry-run",
     "sync:cj:commissions": "node scripts/reconcile-cj-commissions.mjs",
+    "sync:cj:commissions:locked": "bash scripts/run-cj-commissions-locked.sh",
     "authorize:cj:images": "node scripts/authorize-cj-product-images.mjs",
     "verify:cj:link": "node scripts/verify-cj-product-link.mjs",
     "publish:costume:cohort": "node scripts/publish-costume-cohort.mjs"
