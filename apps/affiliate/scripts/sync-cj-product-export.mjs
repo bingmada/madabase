@@ -1,6 +1,7 @@
 import crypto from "node:crypto";
 import fs from "node:fs";
-import { execFileSync } from "node:child_process";
+import { spawn } from "node:child_process";
+import { finished } from "node:stream/promises";
 import { Pool } from "pg";
 
 const exportPath = process.env.CJ_PRODUCT_EXPORT_PATH;
@@ -9,6 +10,7 @@ const expectedPid = process.env.CJ_COSTUME_PID;
 const subscriptionId = process.env.CJ_PRODUCT_EXPORT_SUBSCRIPTION_ID || "319553";
 const merchantCid = "7889430";
 const dryRun = process.argv.includes("--dry-run") || process.env.CJ_SYNC_DRY_RUN === "1";
+const selectionLimit = Number(process.env.CJ_SYNC_LIMIT || 1000);
 
 const missing = [
   ["CJ_PRODUCT_EXPORT_PATH", exportPath],
@@ -20,52 +22,78 @@ if (missing.length) {
   console.error(`Missing required env vars: ${missing.map(([key]) => key).join(", ")}`);
   process.exit(1);
 }
-
-function readExport(pathname) {
-  if (!fs.existsSync(pathname)) throw new Error(`CJ export does not exist: ${pathname}`);
-  if (pathname.toLowerCase().endsWith(".zip")) {
-    return execFileSync("unzip", ["-p", pathname], { encoding: "utf8", maxBuffer: 512 * 1024 * 1024 });
-  }
-  return fs.readFileSync(pathname, "utf8");
+if (!Number.isInteger(selectionLimit) || selectionLimit < 1 || selectionLimit > 50_000) {
+  throw new Error("CJ_SYNC_LIMIT must be an integer between 1 and 50000");
 }
 
-function parseDelimited(text, delimiter = "\t") {
-  const rows = [];
+function openExport(pathname) {
+  if (!fs.existsSync(pathname)) throw new Error(`CJ export does not exist: ${pathname}`);
+  if (pathname.toLowerCase().endsWith(".zip")) {
+    const child = spawn("unzip", ["-p", pathname], { stdio: ["ignore", "pipe", "pipe"] });
+    let stderr = "";
+    child.stderr.setEncoding("utf8");
+    child.stderr.on("data", (chunk) => {
+      stderr = `${stderr}${chunk}`.slice(-8_000);
+    });
+    const completion = new Promise((resolve, reject) => {
+      child.once("error", reject);
+      child.once("close", (code) => {
+        if (code === 0) resolve();
+        else reject(new Error(stderr.trim() || `unzip exited with status ${code}`));
+      });
+    });
+    return { stream: child.stdout, completion };
+  }
+  const stream = fs.createReadStream(pathname, { encoding: "utf8" });
+  return { stream, completion: finished(stream) };
+}
+
+async function* parseDelimited(stream, delimiter = "\t") {
+  stream.setEncoding("utf8");
   let row = [];
   let field = "";
   let quoted = false;
+  let pending = "";
 
-  for (let index = 0; index < text.length; index += 1) {
-    const char = text[index];
-    if (quoted) {
-      if (char === '"' && text[index + 1] === '"') {
-        field += '"';
-        index += 1;
-      } else if (char === '"') {
-        quoted = false;
-      } else {
-        field += char;
+  for await (const chunk of stream) {
+    const text = pending + chunk;
+    pending = "";
+    for (let index = 0; index < text.length; index += 1) {
+      const char = text[index];
+      if (quoted) {
+        if (char === '"') {
+          if (index + 1 === text.length) {
+            pending = '"';
+            break;
+          }
+          if (text[index + 1] === '"') {
+            field += '"';
+            index += 1;
+          } else quoted = false;
+        } else field += char;
+        continue;
       }
-      continue;
-    }
 
-    if (char === '"' && field === "") quoted = true;
-    else if (char === delimiter) {
-      row.push(field);
-      field = "";
-    } else if (char === "\n") {
-      row.push(field.replace(/\r$/, ""));
-      rows.push(row);
-      row = [];
-      field = "";
-    } else field += char;
+      if (char === '"' && field === "") quoted = true;
+      else if (char === delimiter) {
+        row.push(field);
+        field = "";
+      } else if (char === "\n") {
+        row.push(field.replace(/\r$/, ""));
+        yield row;
+        row = [];
+        field = "";
+      } else field += char;
+    }
   }
 
+  if (pending === '"' && quoted) quoted = false;
+  else field += pending;
+  if (quoted) throw new Error("CJ export contains an unterminated quoted field");
   if (field || row.length) {
     row.push(field.replace(/\r$/, ""));
-    rows.push(row);
+    yield row;
   }
-  return rows;
 }
 
 function normalizeHeader(value) {
@@ -140,6 +168,68 @@ function stableToken(value) {
   return crypto.createHash("sha256").update(value).digest("base64url").slice(0, 32);
 }
 
+const categoryShares = [
+  ["costumes", 0.30],
+  ["accessories-party-effects", 0.20],
+  ["masks-prosthetics", 0.18],
+  ["props-animatronics", 0.18],
+  ["wigs-makeup", 0.14],
+];
+
+function categoryQuotas(limit) {
+  const quotas = new Map();
+  let allocated = 0;
+  for (const [category, share] of categoryShares) {
+    const quota = Math.floor(limit * share);
+    quotas.set(category, quota);
+    allocated += quota;
+  }
+  for (let index = 0; allocated < limit; index = (index + 1) % categoryShares.length) {
+    const category = categoryShares[index][0];
+    quotas.set(category, quotas.get(category) + 1);
+    allocated += 1;
+  }
+  return quotas;
+}
+
+function selectionScore(product) {
+  let score = 0;
+  if (product.tracking?.pid === expectedPid) score += 500;
+  else if (product.tracking) score += 100;
+  if (product.availability === "in stock") score += 140;
+  else if (product.availability === "preorder" || product.availability === "backorder") score += 45;
+  else if (product.availability === "out of stock") score -= 180;
+  if (product.price != null) score += 30;
+  if (product.imageUrls.length) score += 15;
+  if (product.description) score += 10;
+  if (product.brand) score += 5;
+  if (product.productType) score += 15;
+  if (product.premium) score += 45;
+  if (product.professional) score += 55;
+  if (product.halloween) score += 20;
+  if (product.rental) score += 5;
+  return score;
+}
+
+function compareCandidate(left, right) {
+  return right.score - left.score || left.key.localeCompare(right.key);
+}
+
+function addBoundedCandidate(bucket, candidate, limit) {
+  if (limit < 1) return;
+  bucket.push(candidate);
+  if (bucket.length >= limit * 2) {
+    bucket.sort(compareCandidate);
+    bucket.length = limit;
+  }
+}
+
+function finalizeCandidates(bucket, limit) {
+  bucket.sort(compareCandidate);
+  bucket.length = Math.min(bucket.length, limit);
+  return bucket;
+}
+
 function chunk(items, size) {
   const batches = [];
   for (let index = 0; index < items.length; index += size) batches.push(items.slice(index, index + size));
@@ -154,16 +244,7 @@ function databaseProduct(product) {
   return copy;
 }
 
-const parsed = parseDelimited(readExport(exportPath));
-if (parsed.length < 2) throw new Error("CJ export has no product rows");
-const headers = parsed[0].map(normalizeHeader);
-const inputRows = parsed.slice(1).filter((values) => values.some(Boolean)).map((values) => Object.fromEntries(headers.map((header, index) => [header, values[index] ?? ""])));
-const now = new Date();
-const normalized = [];
-let rejected = 0;
-const rejectionReasons = { missingIdentity: 0, invalidDestination: 0 };
-
-for (const row of inputRows) {
+function normalizeProduct(row) {
   const externalId = pick(row, ["id", "sku", "advertiser_sku", "manufacturer_sku", "merchant_product_id"]);
   const title = pick(row, ["title", "name", "product_name"]);
   const rawLink = pick(row, ["link", "buy_url", "buyurl", "tracking_url", "affiliate_url", "advertiser_deep_link"]);
@@ -173,14 +254,10 @@ for (const row of inputRows) {
     "abracadabranyc.com",
   );
   if (!externalId || !title) {
-    rejected += 1;
-    rejectionReasons.missingIdentity += 1;
-    continue;
+    return { rejection: "missingIdentity" };
   }
   if (!destination) {
-    rejected += 1;
-    rejectionReasons.invalidDestination += 1;
-    continue;
+    return { rejection: "invalidDestination" };
   }
 
   const variantId = destination.searchParams.get("variant") || pick(row, ["variant_id", "item_group_id"]) || "";
@@ -195,7 +272,7 @@ for (const row of inputRows) {
   const tracking = cjLink?.tracking || null;
   const price = parsePrice(priceText);
 
-  normalized.push({
+  return { product: {
     id: crypto.randomUUID(),
     externalId,
     variantId,
@@ -220,13 +297,73 @@ for (const row of inputRows) {
     imageUrls: [...new Set(imageUrls)],
     trackingUrl,
     tracking,
-  });
+  } };
 }
+
+const quotas = categoryQuotas(selectionLimit);
+const categoryBuckets = new Map(categoryShares.map(([category]) => [category, []]));
+const globalCandidates = [];
+const eligibleCategories = Object.fromEntries(categoryShares.map(([category]) => [category, 0]));
+const { stream: exportStream, completion: exportCompletion } = openExport(exportPath);
+let headers = null;
+let sourceRows = 0;
+let eligible = 0;
+let rejected = 0;
+const rejectionReasons = { missingIdentity: 0, invalidDestination: 0 };
+
+for await (const values of parseDelimited(exportStream)) {
+  if (!headers) {
+    headers = values.map(normalizeHeader);
+    continue;
+  }
+  if (!values.some(Boolean)) continue;
+  sourceRows += 1;
+  const row = Object.fromEntries(headers.map((header, index) => [header, values[index] ?? ""]));
+  const { product, rejection } = normalizeProduct(row);
+  if (!product) {
+    rejected += 1;
+    rejectionReasons[rejection] += 1;
+    continue;
+  }
+
+  eligible += 1;
+  eligibleCategories[product.categorySlug] += 1;
+  const candidate = {
+    product,
+    score: selectionScore(product),
+    key: `${product.externalId}\u0000${product.variantId}`,
+  };
+  addBoundedCandidate(categoryBuckets.get(product.categorySlug), candidate, quotas.get(product.categorySlug));
+  addBoundedCandidate(globalCandidates, candidate, selectionLimit);
+}
+await exportCompletion;
+if (!headers || sourceRows === 0) throw new Error("CJ export has no product rows");
+
+const selectedCandidates = [];
+const selectedKeys = new Set();
+for (const [category] of categoryShares) {
+  for (const candidate of finalizeCandidates(categoryBuckets.get(category), quotas.get(category))) {
+    selectedCandidates.push(candidate);
+    selectedKeys.add(candidate.key);
+  }
+}
+for (const candidate of finalizeCandidates(globalCandidates, selectionLimit)) {
+  if (selectedCandidates.length >= selectionLimit) break;
+  if (selectedKeys.has(candidate.key)) continue;
+  selectedCandidates.push(candidate);
+  selectedKeys.add(candidate.key);
+}
+selectedCandidates.sort(compareCandidate);
+const normalized = selectedCandidates.map(({ product }) => product);
+const now = new Date();
 
 const audit = {
   ok: true,
   dryRun,
-  sourceRows: inputRows.length,
+  sourceRows,
+  eligible,
+  selectionLimit,
+  selectionMode: "balanced-relevance",
   accepted: normalized.length,
   rejected,
   rejectionReasons,
@@ -242,6 +379,7 @@ const audit = {
       .sort()
       .map((category) => [category, normalized.filter((product) => product.categorySlug === category).length]),
   ),
+  eligibleCategories,
 };
 
 if (dryRun) {
