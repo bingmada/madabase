@@ -8,8 +8,8 @@ const categoryTargets = {
   costumes: 5,
   "props-animatronics": 5,
   "masks-prosthetics": 5,
-  "wigs-makeup": 4,
-  "accessories-party-effects": 6,
+  "wigs-makeup": 2,
+  "accessories-party-effects": 8,
 };
 const allowedTrackingHosts = ["anrdoezrs.net", "dpbolvw.net", "jdoqocy.com", "kqzyfj.com", "qksrv.net", "tkqlhce.com"];
 
@@ -38,14 +38,14 @@ const categoryRules = {
     checks: ["head or face fit and the exact material", "visibility, ventilation, speech, and realistic wear time", "skin-contact compatibility, adhesives, and application supplies", "safe removal, cleanup, storage, and current return terms"],
   },
   "wigs-makeup": {
-    include: /\b(wig|makeup|make-up|face paint|body paint|hair|beard|moustache|mustache|eyelash|lipstick|spirit gum|adhesive|fake blood|glitter)\b/i,
-    exclude: /\b(animatronic|animated prop|costume|mascot)\b/i,
+    include: /\b(wig|makeup|make-up|face paint|body paint|beard|moustache|mustache|eyelash|lipstick|spirit gum|fake blood)\b/i,
+    exclude: /\b(animatronic|animated prop|costume|mascot|hair clip|pasties)\b/i,
     use: "a wig, character transformation, cosplay, theater, or special-effects makeup plan",
     checks: ["cap, fiber, shade, material, or skin-contact details", "heat limits and compatible application products", "practice time, touch-ups, ventilation, and event duration", "removal, cleaning, shape-preserving storage, and current return terms"],
   },
   "accessories-party-effects": {
-    include: /\b(hat|crown|headpiece|gloves?|cape|tail|ears?|jewelry|necklace|bracelet|stockings?|tights|boots?|shoes?|bag|wand|sword|shield|accessor)\b/i,
-    exclude: /\b(animatronic|animated prop)\b/i,
+    include: /\b(hat|crown|headpiece|hair clip|pasties|gloves?|cape|tail|ears?|jewelry|necklace|bracelet|stockings?|tights|boots?|shoes?|bag|wand|sword|shield|accessor)\b/i,
+    exclude: /\b(animatronic|animated prop|costume|dress|mascot|uniform)\b/i,
     use: "a costume finishing piece, party, parade, stage look, or themed event",
     checks: ["dimensions, quantity, fit, and included pieces", "materials, closures, movement, and comfort", "how it works with the rest of the outfit or venue", "delivery timing, care, storage, and current return terms"],
   },
