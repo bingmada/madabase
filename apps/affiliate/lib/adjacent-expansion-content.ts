@@ -1,5 +1,4 @@
 import type { Guide, Product, Roundup } from "./types";
-import { ebaySearchOffer } from "./ebay";
 
 const updatedAt = "July 1, 2026";
 
@@ -113,7 +112,6 @@ export const adjacentExpansionProducts: Product[] = [
         label: "Check Aqara Hub M3 price on Amazon",
         priceNote: "Confirm ASIN B0CWLHSKYC, regional version, seller, and included power accessories.",
       },
-      ebaySearchOffer("Aqara Hub M3", "smarthome-aqara-hub-m3"),
     ],
   },
   {
@@ -195,7 +193,6 @@ export const adjacentExpansionProducts: Product[] = [
         label: "Check Aqara P2 price on Amazon",
         priceNote: "Confirm ASIN B0BTL8B72D and the Matter-over-Thread P2 model.",
       },
-      ebaySearchOffer("Aqara Door and Window Sensor P2", "smarthome-aqara-door-and-window-sensor-p2"),
     ],
   },
   {
@@ -416,7 +413,6 @@ export const adjacentExpansionProducts: Product[] = [
         label: "Check BabyBjörn Harmony price on Amazon",
         priceNote: "Confirm ASIN B0947B35TG, 3D Mesh material, color, and seller.",
       },
-      ebaySearchOffer("BabyBjorn Carrier Harmony 3D Mesh", "baby-babybjorn-carrier-harmony", { condition: "new" }),
     ],
   },
   {
@@ -495,7 +491,6 @@ export const adjacentExpansionProducts: Product[] = [
         label: "Check Deco BE67 2-pack price on Amazon",
         priceNote: "Confirm ASIN B0FQYQRZQX, model BE67, and two-pack quantity.",
       },
-      ebaySearchOffer("TP-Link Deco BE67", "network-tp-link-deco-be67-wifi-7-mesh"),
     ],
   },
   {
@@ -619,7 +614,6 @@ export const adjacentExpansionProducts: Product[] = [
         label: "Check Levoit Vital 200S-P price on Amazon",
         priceNote: "Confirm ASIN B0BGPF71Q6, white Vital 200S-P, seller, and included filter.",
       },
-      ebaySearchOffer("Levoit Vital 200S-P Air Purifier", "pet-levoit-vital-200s-p-air-purifier"),
     ],
   },
 ];

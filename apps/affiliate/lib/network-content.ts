@@ -1,4 +1,3 @@
-import { ebaySearchOffer } from "./ebay";
 import type { Guide, Product, Roundup, Tool } from "./types";
 
 const links = {
@@ -157,7 +156,6 @@ export const networkProducts: Product[] = [
     ],
     offers: [
       ...offer(links.deco),
-      ebaySearchOffer("TP-Link Deco BE63 BE10000 3-Pack", "network-tp-link-deco-be63-wifi-7-mesh"),
     ],
   },
   {
@@ -234,7 +232,6 @@ export const networkProducts: Product[] = [
     alternatives: ["Choose Deco BE63 if you need mesh coverage.", "Choose ASUS RT-BE86U if gaming and a 10G port matter more."],
     offers: [
       ...offer(links.be400),
-      ebaySearchOffer("TP-Link Archer BE400 WiFi 7 router", "network-tp-link-be400-wifi-7-router"),
     ],
   },
   {
@@ -258,7 +255,6 @@ export const networkProducts: Product[] = [
     alternatives: ["Choose TP-Link BE400 for a simpler Wi-Fi 7 router.", "Choose Deco BE63 if coverage matters more than advanced controls."],
     offers: [
       ...offer(links.asus),
-      ebaySearchOffer("ASUS RT-BE86U WiFi 7 router", "network-asus-rt-be86u-wifi-7-gaming-router"),
     ],
   },
   {
@@ -282,7 +278,6 @@ export const networkProducts: Product[] = [
     alternatives: ["Choose a home router if the device will stay in one house.", "Use a USB-C Ethernet hub if the main need is one wired laptop."],
     offers: [
       ...offer(links.beryl),
-      ebaySearchOffer("GL.iNet GL-MT3000 Beryl AX", "network-glinet-beryl-ax-travel-router"),
     ],
   },
   {
@@ -307,7 +302,6 @@ export const networkProducts: Product[] = [
     compareSlugs: ["netgear-gs308e-gigabit-switch"],
     offers: [
       ...offer(links.sg108),
-      ebaySearchOffer("TP-Link TL-SG108", "network-tp-link-tl-sg108-gigabit-switch"),
     ],
   },
   {
@@ -343,7 +337,6 @@ export const networkProducts: Product[] = [
     compareSlugs: ["tp-link-tl-sg108-gigabit-switch"],
     offers: [
       ...offer(links.gs308e),
-      ebaySearchOffer("NETGEAR GS308E", "network-netgear-gs308e-gigabit-switch"),
     ],
   },
   {

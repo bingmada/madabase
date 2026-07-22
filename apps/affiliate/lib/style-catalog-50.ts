@@ -1,5 +1,4 @@
 import type { Product, Roundup } from "./types";
-import { ebaySearchOffer } from "./ebay";
 
 const updatedAt = "July 6, 2026";
 
@@ -100,12 +99,6 @@ function expandedProduct(input: ExpandedInput): Product {
         label: "Check price on Amazon",
         priceNote: "Check the live variation, seller, price, shipping, and availability on Amazon.",
       },
-      ...(input.slug === "betsey-johnson-bee-stud-earrings"
-        ? [ebaySearchOffer("Betsey Johnson Bee Stud Earrings", "style-betsey-johnson-bee-stud-earrings", { condition: "new" })]
-        : []),
-      ...(input.slug === "loungefly-minnie-floral-rock-the-dots-backpack"
-        ? [ebaySearchOffer("Loungefly Minnie Floral Rock the Dots Backpack", "style-loungefly-minnie-floral-rock-the-dots-backpack", { condition: "new" })]
-        : []),
     ],
   };
 }

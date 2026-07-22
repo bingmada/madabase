@@ -89,7 +89,7 @@ export function getStaticPages(site: SiteConfig): StaticPage[] {
         },
         {
           heading: "How links are handled",
-          body: "Affiliate buttons may send readers to Amazon or another retailer. Prices, coupons, shipping, stock, seller details, and return windows can change after publication, so the retailer page is the final source before ordering.",
+          body: "Commissioned purchase buttons currently send readers only to Amazon. Prices, coupons, shipping, stock, seller details, and return windows can change after publication, so the Amazon listing is the final source before ordering.",
         },
         {
           heading: "Editorial independence",
@@ -108,7 +108,7 @@ export function getStaticPages(site: SiteConfig): StaticPage[] {
         },
         {
           heading: "Site usage and cookies",
-          body: "The site may process basic technical and usage information needed for security, reliability, measurement, and performance. Microsoft Clarity may record interaction signals such as page visits, scrolling, clicks, device details, and session replays so we can identify usability problems. Cookies or similar technologies may also be used by affiliate networks, Amazon, eBay, or other linked retailers. Third-party services apply their own privacy policies and cookie controls.",
+          body: "The site may process basic technical and usage information needed for security, reliability, measurement, and performance. Microsoft Clarity may record interaction signals such as page visits, scrolling, clicks, device details, and session replays so we can identify usability problems. Amazon may also use cookies or similar technologies for affiliate attribution. Third-party services apply their own privacy policies and cookie controls.",
         },
         {
           heading: "Affiliate and external links",

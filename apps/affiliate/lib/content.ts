@@ -1,5 +1,4 @@
 import type { Guide, Product, Roundup, SiteKey, Tool } from "./types";
-import { ebaySearchOffer } from "./ebay";
 import { applySiteAffiliateTracking } from "./affiliate-tracking";
 import {
   adjacentExpansionGuides,
@@ -275,7 +274,6 @@ export const products: Product[] = [
     ],
     offers: [
       { merchant: "Amazon US", url: "https://amzn.to/43SYVR1", label: "Check standalone camera price on Amazon", priceNote: "Check the live price, selected model, and whether checkout says standalone or Subscription Required." },
-      ebaySearchOffer("Furbo 360 Dog Camera", "pet-furbo-360-dog-camera"),
     ],
   },
   {
@@ -618,14 +616,7 @@ export const products: Product[] = [
         note: "Official frame dimensions, supported desktop range, height, capacity, speed, noise, cable management, certifications, and warranty information.",
       },
     ],
-    offers: [
-      {
-        merchant: "UPLIFT Desk",
-        url: "https://www.upliftdesk.com/2-leg-standing-desk/",
-        label: "Configure at UPLIFT Desk",
-        priceNote: "Confirm desktop size, frame color, accessories, shipping, assembly options, and current warranty terms on UPLIFT's official configurator.",
-      },
-    ],
+    offers: [],
   },
   {
     site: "homeoffice",
@@ -841,7 +832,6 @@ export const products: Product[] = [
     alternatives: ["Choose BenQ ScreenBar Halo if desk illumination matters more than face lighting.", "Use a regular lamp if it can sit in front of you without glare."],
     offers: [
       { merchant: "Amazon US", url: "https://www.amazon.com/dp/B097QZGRCQ?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check price on Amazon", priceNote: "Confirm ASIN B097QZGRCQ, seller, live price, and availability." },
-      ebaySearchOffer("Logitech Litra Glow", "homeoffice-logitech-litra-glow"),
     ],
   },
   {
@@ -872,7 +862,6 @@ export const products: Product[] = [
     alternatives: ["Choose Logitech Litra Glow if your main issue is how your face looks on calls.", "Choose a standard desk lamp if you need room lighting, not just desktop lighting."],
     offers: [
       { merchant: "Amazon US", url: "https://www.amazon.com/dp/B0DK59YKRS?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check price on Amazon", priceNote: "Confirm ASIN B0DK59YKRS, ScreenBar Halo 2, seller, live price, and availability." },
-      ebaySearchOffer("BenQ ScreenBar Halo 2", "homeoffice-benq-screenbar-halo"),
     ],
   },
   {
@@ -967,7 +956,6 @@ export const products: Product[] = [
     ],
     offers: [
       { merchant: "Amazon US", url: "https://www.amazon.com/dp/B0BNZ4D72B?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check Anker 675 price on Amazon", priceNote: "Confirm ASIN B0BNZ4D72B, one-monitor limit, 180W adapter, regional plug, seller, and return terms." },
-      ebaySearchOffer("Anker 675 USB-C Docking Station", "homeoffice-anker-675-usb-c-docking-station"),
     ],
   },
   {
@@ -1005,7 +993,6 @@ export const products: Product[] = [
     alternatives: ["Choose Nanit if app insights and wall-mounted tracking matter more.", "Choose a simpler audio monitor if video adds more anxiety than value."],
     offers: [
       { merchant: "Amazon US", url: "https://www.amazon.com/dp/B08FF4GV5C?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check price on Amazon", priceNote: "Confirm ASIN B08FF4GV5C, bundle contents, seller, live price, and availability." },
-      ebaySearchOffer("Infant Optics DXR-8 PRO", "baby-infant-optics-dxr-8-pro", { condition: "new" }),
     ],
   },
   {
@@ -1069,7 +1056,6 @@ export const products: Product[] = [
     alternatives: ["Choose Summer 3Dlite if price and simplicity matter more.", "Choose a full-size stroller if rough sidewalks are daily reality."],
     offers: [
       { merchant: "Amazon US", url: "https://www.amazon.com/dp/B0CN79NZ8J?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check price on Amazon", priceNote: "Confirm ASIN B0CN79NZ8J, Eco Black variant, belly bar, seller, live price, and availability." },
-      ebaySearchOffer("Baby Jogger City Tour 2 Stroller", "baby-baby-jogger-city-tour-2-stroller", { condition: "new" }),
     ],
   },
   {
@@ -1100,7 +1086,6 @@ export const products: Product[] = [
     alternatives: ["Choose Baby Jogger City Tour 2 for a more compact travel-first setup.", "Choose a full-size stroller if storage and suspension are priorities."],
     offers: [
       { merchant: "Amazon US", url: "https://www.amazon.com/dp/B0D5BGKNBX?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check price on Amazon", priceNote: "Confirm ASIN B0D5BGKNBX, variant, seller, live price, and availability." },
-      ebaySearchOffer("Summer 3Dlite Convenience Stroller", "baby-summer-3dlite-convenience-stroller", { condition: "new" }),
     ],
   },
   {
@@ -1252,7 +1237,6 @@ export const products: Product[] = [
     ],
     offers: [
       { merchant: "Amazon US", url: "https://www.amazon.com/dp/B0CCNT3HLW?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check price on Amazon", priceNote: "Confirm ASIN B0CCNT3HLW, color, seller, live price, and availability." },
-      ebaySearchOffer("Ergobaby Omni Breeze Baby Carrier", "baby-ergobaby-omni-breeze-carrier", { condition: "new" }),
     ],
   },
   {
@@ -1284,7 +1268,6 @@ export const products: Product[] = [
     alternatives: ["Choose a simple white-noise machine if app features are unnecessary.", "Use a separate dim night light if sound is not needed."],
     offers: [
       { merchant: "Amazon US", url: "https://www.amazon.com/dp/B0F7C6XJ3P?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check price on Amazon", priceNote: "Confirm ASIN B0F7C6XJ3P, Putty color, included content, seller, live price, and availability." },
-      ebaySearchOffer("Hatch Baby Sound Machine", "baby-hatch-rest-sound-machine", { condition: "new" }),
     ],
   },
 ];

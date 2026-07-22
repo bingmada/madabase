@@ -14,11 +14,6 @@ const allowedOfferHosts = new Set([
   "amzn.to",
   "www.amazon.com",
   "amazon.com",
-  "www.ebay.com",
-  "ebay.com",
-  "www.upliftdesk.com",
-  "upliftdesk.com",
-  "shop.yosmart.com",
 ]);
 
 function propertyName(node) {
@@ -53,6 +48,15 @@ function offerUrls(node) {
     if (!ts.isObjectLiteralExpression(element)) return [];
     const url = stringValue(properties(element).get("url"));
     return url ? [url] : [];
+  });
+}
+
+function offerMerchants(node) {
+  if (!node || !ts.isArrayLiteralExpression(node)) return [];
+  return node.elements.flatMap((element) => {
+    if (!ts.isObjectLiteralExpression(element)) return [];
+    const merchant = stringValue(properties(element).get("merchant"));
+    return merchant ? [merchant] : [];
   });
 }
 
@@ -99,6 +103,7 @@ function addEntry(sourceFile, node, kind) {
     relatedRoundups: stringArray(props.get("relatedRoundups")),
     relatedGuides: stringArray(props.get("relatedGuides")),
     offerUrls: kind === "product" && props.has("affiliateUrl") ? productFactoryOfferUrls(props) : offerUrls(props.get("offers")),
+    offerMerchants: offerMerchants(props.get("offers")),
     evidenceMode: stringValue(props.get("evidenceMode")),
     researchNote: stringValue(props.get("researchNote")),
     externalTests: objectArrayProperties(props.get("externalTests")),
@@ -172,6 +177,12 @@ for (const entry of entries) {
     }
     if (!allowedOfferHosts.has(parsed.hostname)) {
       errors.push(`Unexpected affiliate host ${parsed.hostname} for ${routeKey}`);
+    }
+  }
+
+  for (const merchant of entry.offerMerchants) {
+    if (!merchant.toLowerCase().includes("amazon")) {
+      errors.push(`Unauthorized non-Amazon merchant ${merchant} for ${routeKey}`);
     }
   }
 

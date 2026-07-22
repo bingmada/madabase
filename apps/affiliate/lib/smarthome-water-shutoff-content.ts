@@ -121,13 +121,13 @@ export const smartHomeWaterShutoffProducts: Product[] = [
     updatedAt,
     evidenceMode: "official-spec",
     researchNote:
-      "We have not installed this system. The direct merchant and specifications are YoLink's official current product page. A previously suspected Amazon ASIN now resolves to an unrelated plumbing product, so this page intentionally does not use an Amazon link.",
+      "We have not installed this system. The specifications come from YoLink's official product page. A previously suspected Amazon ASIN resolves to an unrelated plumbing product, so this page intentionally has no purchase button until an exact Amazon listing is verified.",
     name: "YoLink X3 Valve Controller & Bulldog Valve Robot",
     brand: "YoLink",
     category: "automation",
     image: "/images/affiliate/smarthome-water-valve-retrofit-editorial-realistic.webp",
     summary:
-      "A battery-powered LoRa controller and bolt-on Bulldog actuator for an existing ball valve, with device-to-device pairing, long-range placement, IP67 controller housing, and a direct official merchant path.",
+      "A battery-powered LoRa controller and bolt-on Bulldog actuator for an existing ball valve, with device-to-device pairing, long-range placement, IP67 controller housing, and official product documentation.",
     verdict:
       "YoLink X3 Bulldog is the retrofit choice for a basement, utility room, or detached space where long range and local sensor-to-valve pairing matter more than Matter branding. Its high purchase price and mechanical valve-fit check make it a deliberate system, not a casual add-on.",
     whyItMatters:
@@ -197,14 +197,7 @@ export const smartHomeWaterShutoffProducts: Product[] = [
         note: "Official current merchant, exact kit contents, hub requirement, controller, actuator, radio, power, warranty, and installation details.",
       },
     ],
-    offers: [
-      {
-        merchant: "YoLink direct",
-        url: "https://shop.yosmart.com/products/ys5001-bdog",
-        label: "Check X3 Bulldog kit at YoLink",
-        priceNote: "Confirm YS5001 plus BDOG contents, hub requirement, valve fit, current price, shipping region, warranty, and return terms.",
-      },
-    ],
+    offers: [],
   },
   {
     site: "smarthome",

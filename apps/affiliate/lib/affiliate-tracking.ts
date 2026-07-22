@@ -15,7 +15,14 @@ function amazonAsin(product: Product) {
 }
 
 function isAmazonOffer(offer: AffiliateOffer) {
-  return offer.merchant.toLowerCase().includes("amazon");
+  if (!offer.merchant.toLowerCase().includes("amazon")) return false;
+
+  try {
+    const hostname = new URL(offer.url).hostname;
+    return hostname === "amzn.to" || hostname === "amazon.com" || hostname.endsWith(".amazon.com");
+  } catch {
+    return false;
+  }
 }
 
 function trackedAmazonUrl(site: SiteKey, product: Product, offer: AffiliateOffer) {
@@ -45,10 +52,8 @@ function trackedAmazonUrl(site: SiteKey, product: Product, offer: AffiliateOffer
 export function applySiteAffiliateTracking(product: Product): Product {
   return {
     ...product,
-    offers: product.offers.map((offer) =>
-      isAmazonOffer(offer)
-        ? { ...offer, url: trackedAmazonUrl(product.site, product, offer) }
-        : offer,
-    ),
+    offers: product.offers
+      .filter(isAmazonOffer)
+      .map((offer) => ({ ...offer, url: trackedAmazonUrl(product.site, product, offer) })),
   };
 }

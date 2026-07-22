@@ -1,5 +1,4 @@
 import type { Guide, Product, Roundup } from "./types";
-import { ebaySearchOffer } from "./ebay";
 
 const updatedAt = "June 30, 2026";
 
@@ -44,7 +43,6 @@ export const smartHomeProducts: Product[] = [
     compareSlugs: ["aqara-smart-lock-u100"],
     offers: [
       { merchant: "Amazon", url: "https://www.amazon.com/dp/B0FRS6T6HL?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check Aqara U400 price on Amazon", priceNote: "Confirm ASIN B0FRS6T6HL, the exact regional version, finish, seller, and included accessories." },
-      ebaySearchOffer("Aqara Smart Lock U400", "smarthome-aqara-smart-lock-u400"),
     ],
   },
   {
@@ -87,7 +85,6 @@ export const smartHomeProducts: Product[] = [
     compareSlugs: ["aqara-smart-lock-u400"],
     offers: [
       { merchant: "Amazon", url: "https://amzn.to/4ybD4SS", label: "Check Aqara U100 price on Amazon", priceNote: "Confirm ASIN B0BZSD2L1W, finish, seller, and included accessories." },
-      ebaySearchOffer("Aqara Smart Lock U100", "smarthome-aqara-smart-lock-u100"),
     ],
   },
   {
@@ -133,7 +130,6 @@ export const smartHomeProducts: Product[] = [
     compareSlugs: ["eufy-video-doorbell-e340", "tapo-d210-video-doorbell"],
     offers: [
       { merchant: "Amazon", url: "https://www.amazon.com/dp/B0H2FZR33K?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check Ring + Chime Plus bundle on Amazon", priceNote: "Confirm ASIN B0H2FZR33K, the 2nd Gen doorbell, Chime Plus, finish, and current plan trial." },
-      ebaySearchOffer("Ring Battery Doorbell Plus 2nd Gen", "smarthome-ring-battery-doorbell-plus-2nd-gen"),
     ],
   },
   {
@@ -210,7 +206,6 @@ export const smartHomeProducts: Product[] = [
     compareSlugs: ["google-nest-learning-thermostat-4th-gen"],
     offers: [
       { merchant: "Amazon", url: "https://amzn.to/4aoAX3U", label: "Check ecobee Comfort and Security bundle on Amazon", priceNote: "ASIN B0B1X7G9J2 is a bundle with door/window sensors and a trial; compare with thermostat-only pricing." },
-      ebaySearchOffer("ecobee Smart Thermostat Premium", "smarthome-ecobee-smart-thermostat-premium"),
     ],
   },
   {
@@ -256,7 +251,6 @@ export const smartHomeProducts: Product[] = [
     compareSlugs: ["ecobee-smart-thermostat-premium"],
     offers: [
       { merchant: "Amazon", url: "https://www.amazon.com/dp/B01HHQZHRK?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check Nest 4th Gen bundle on Amazon", priceNote: "Confirm ASIN B01HHQZHRK, the Polished Gold finish, included temperature sensor, seller, and HVAC compatibility." },
-      ebaySearchOffer("Google Nest Learning Thermostat 4th Gen", "smarthome-google-nest-learning-thermostat-4th-gen"),
     ],
   },
 ];
