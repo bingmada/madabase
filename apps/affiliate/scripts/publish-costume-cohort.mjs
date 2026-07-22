@@ -4,7 +4,13 @@ import { Pool } from "pg";
 const apply = process.argv.includes("--apply");
 const databaseUrl = process.env.DATABASE_URL;
 const expectedPid = process.env.CJ_COSTUME_PID;
-const targetPerCategory = 5;
+const categoryTargets = {
+  costumes: 5,
+  "props-animatronics": 5,
+  "masks-prosthetics": 5,
+  "wigs-makeup": 4,
+  "accessories-party-effects": 6,
+};
 const allowedTrackingHosts = ["anrdoezrs.net", "dpbolvw.net", "jdoqocy.com", "kqzyfj.com", "qksrv.net", "tkqlhce.com"];
 
 if (!databaseUrl || !expectedPid) {
@@ -81,6 +87,7 @@ function score(product) {
 
 function chooseCategory(products, category) {
   const rule = categoryRules[category];
+  const target = categoryTargets[category];
   const eligible = products
     .filter((product) => rule.include.test(product.title) && !rule.exclude.test(product.title))
     .filter(validateLink)
@@ -102,14 +109,14 @@ function chooseCategory(products, category) {
     usedTitles.add(normalizedTitle(match.title));
   }
   for (const product of eligible) {
-    if (selected.length >= targetPerCategory) break;
+    if (selected.length >= target) break;
     const titleKey = normalizedTitle(product.title);
     if (usedTitles.has(titleKey)) continue;
     selected.push({ ...product, targetCategory: category });
     usedTitles.add(titleKey);
   }
-  if (selected.length !== targetPerCategory) {
-    throw new Error(`${category} produced ${selected.length}/${targetPerCategory} publishable products after category and link checks`);
+  if (selected.length !== target) {
+    throw new Error(`${category} produced ${selected.length}/${target} publishable products after category and link checks`);
   }
   return selected;
 }
