@@ -4,8 +4,8 @@ const apply = process.argv.includes("--apply");
 const networkDirect = process.argv.includes("--network-direct");
 const databaseUrl = process.env.DATABASE_URL;
 const expectedPid = process.env.CJ_COSTUME_PID;
-const concurrency = Math.min(Math.max(Number(process.env.CJ_LINK_VERIFY_CONCURRENCY ?? 6), 1), 12);
-const timeoutMs = Math.min(Math.max(Number(process.env.CJ_LINK_VERIFY_TIMEOUT_MS ?? 15_000), 3_000), 60_000);
+const concurrency = Math.min(Math.max(Number(process.env.CJ_LINK_VERIFY_CONCURRENCY ?? 8), 1), 16);
+const timeoutMs = Math.min(Math.max(Number(process.env.CJ_LINK_VERIFY_TIMEOUT_MS ?? 10_000), 3_000), 60_000);
 const expectedCatalogCount = Math.max(Number(process.env.CJ_EXPECTED_CATALOG_COUNT ?? 1_000), 1);
 const minActivationRatio = Math.min(Math.max(Number(process.env.CJ_MIN_ACTIVATION_RATIO ?? 0.9), 0.5), 1);
 const allowedTrackingHosts = ["anrdoezrs.net", "dpbolvw.net", "jdoqocy.com", "kqzyfj.com", "qksrv.net", "tkqlhce.com"];
@@ -97,11 +97,17 @@ async function fetchDestination(product) {
 async function mapConcurrent(items, worker) {
   const results = new Array(items.length);
   let nextIndex = 0;
+  let completed = 0;
+  const startedAt = Date.now();
   async function run() {
     while (nextIndex < items.length) {
       const index = nextIndex;
       nextIndex += 1;
       results[index] = await worker(items[index]);
+      completed += 1;
+      if (completed % 50 === 0 || completed === items.length) {
+        console.log(JSON.stringify({ progress: completed, total: items.length, elapsedSeconds: Math.round((Date.now() - startedAt) / 1_000) }));
+      }
     }
   }
   await Promise.all(Array.from({ length: Math.min(concurrency, items.length) }, run));
