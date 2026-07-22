@@ -205,7 +205,6 @@ function selectionScore(product) {
   if (product.brand) score += 5;
   if (product.productType) score += 15;
   if (product.premium) score += 45;
-  if (product.professional) score += 55;
   if (product.halloween) score += 20;
   if (product.rental) score += 5;
   return score;
@@ -374,6 +373,18 @@ const audit = {
   withPrices: normalized.filter((product) => product.price != null).length,
   premium: normalized.filter((product) => product.premium).length,
   professional: normalized.filter((product) => product.professional).length,
+  halloween: normalized.filter((product) => product.halloween).length,
+  availability: Object.fromEntries(
+    [...new Set(normalized.map((product) => product.availability))]
+      .sort()
+      .map((availability) => [availability, normalized.filter((product) => product.availability === availability).length]),
+  ),
+  priceBands: {
+    under50: normalized.filter((product) => product.price != null && product.price < 50).length,
+    from50To199: normalized.filter((product) => product.price != null && product.price >= 50 && product.price < 200).length,
+    from200To999: normalized.filter((product) => product.price != null && product.price >= 200 && product.price < 1000).length,
+    from1000: normalized.filter((product) => product.price != null && product.price >= 1000).length,
+  },
   categories: Object.fromEntries(
     [...new Set(normalized.map((product) => product.categorySlug))]
       .sort()

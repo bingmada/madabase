@@ -38,7 +38,7 @@ The normal `npm run build --workspace apps/affiliate` workflow remains available
 
 Store the CJ SFTP password, PAT, host-key fingerprint, export path, query variables, and production `DATABASE_URL` in the deployment secret manager. Never copy `.env.local` to the server or put credentials in a command line, process manager file, archive, or Git.
 
-Run the catalog jobs in this order under a single-job lock:
+For the first production import, or after a feed schema/PID change, run the catalog jobs in this order under a single-job lock:
 
 ```bash
 npm run download:cj:products --workspace apps/affiliate
@@ -47,8 +47,10 @@ npm run sync:cj:products --workspace apps/affiliate
 npm run sync:cj:commissions --workspace apps/affiliate
 ```
 
+Normal daily refreshes run the download, product sync, and commission sync without repeating the dry-run. Keep `CJ_SYNC_LIMIT=1000` in production initially. The product sync streams all 30,991 source rows, retains only a category-balanced 1,000-product working catalog, and writes the selected set in database batches. It does not hold the full export in memory. Increase the working catalog only after the existing catalog produces a real navigation, search, or conversion need.
+
 The downloader requires an explicit SHA-256 host-key fingerprint, writes to a mode-600 `.part` file, verifies the remote and local byte counts, and only then replaces the configured export path. A wrong fingerprint must fail before any download.
 
 As observed on 2026-07-22, `datatransfer.cj.com` offered only a legacy 1024-bit `ssh-dss` host key. Keep `CJ_SFTP_ALLOW_LEGACY_DSA=0` in persistent configuration. Until CJ provides a modern endpoint or authoritative key, any owner-approved compatibility run must set it to `1` for that single command only; never change system SSH defaults or disable host verification.
 
-The product dry-run must accept the expected row count with zero invalid destinations and zero unexpected PIDs before the database write runs. All feed images remain `pending` until written image/brand-use permission exists. The Commission job treats a valid `count: 0` response as a successful no-op and upserts non-empty records by CJ commission ID.
+The first bounded dry-run must report 30,991 source and eligible rows, 1,000 accepted products, zero rejected rows, 1,000 expected-PID links, zero unexpected-PID links, and the configured category quotas. All feed images remain `pending` until written image/brand-use permission exists. The Commission job treats a valid `count: 0` response as a successful no-op and upserts non-empty records by CJ commission ID.
