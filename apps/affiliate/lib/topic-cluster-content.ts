@@ -160,6 +160,8 @@ export const topicClusterGuides: Guide[] = [
       { heading: "Avoid blowing directly across litter", body: "Strong exhaust can move dust and litter or make the cat avoid the box. Place the purifier nearby but outside the digging and exit path." },
       { heading: "Protect the purifier from accidents", body: "Keep cords, controls, filters, and air-quality sensors away from spray, tracked litter, and cleaning liquids. Use a stable floor position that cannot be tipped." },
       { heading: "Source control stays first", body: "Scoop, replace litter, clean the box, wash nearby surfaces, and ventilate appropriately. Filtration supports the routine but cannot remove waste that remains in the room." },
+      { heading: "Treat carbon as a consumable", body: "Odor control depends on enough gas-phase media such as activated carbon. A thin or exhausted carbon layer cannot keep up with persistent litter odor regardless of fan speed, so price and inspect the correct replacement filter." },
+      { heading: "Keep filter access practical", body: "Do not wedge the purifier behind the litter area. Put it where the prefilter can be cleaned and the main filter can be replaced without spilling captured hair and dust back into the room." },
     ],
   },
   {

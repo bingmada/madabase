@@ -112,6 +112,11 @@ const nextConfig: NextConfig = {
         destination: "/guides/standing-desk-casters-stability-guide",
         permanent: true,
       },
+      {
+        source: "/guides/litter-box-air-purifier-placement-guide",
+        destination: "/guides/air-purifier-placement-near-litter-box",
+        permanent: true,
+      },
     ];
   },
 };

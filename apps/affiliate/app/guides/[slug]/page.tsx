@@ -3,8 +3,10 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AffiliateButtonGroup } from "@/components/AffiliateButton";
 import { JsonLd } from "@/components/JsonLd";
+import { SearchOpportunityBacklinks, SearchOpportunityBlock } from "@/components/SearchOpportunityBlock";
 import { StyleGuidePage } from "@/components/StyleExperience";
 import { findGuide, findProduct, findRoundup, siteGuides } from "@/lib/content";
+import { findSearchOpportunity } from "@/lib/search-opportunities";
 import { breadcrumbSchema, guideSchema, pageMetadata } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 import type { SiteKey } from "@/lib/types";
@@ -158,6 +160,8 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
   const { slug } = await params;
   const guide = findGuide(site.key, slug);
   if (!guide) notFound();
+  const searchOpportunity = findSearchOpportunity(site.key, "guide", slug);
+  const effectiveUpdatedAt = searchOpportunity?.updatedAt ?? guide.updatedAt;
   const advice = guideAdvice(site.key, guide.category);
   const category = site.categories.find((item) => item.slug === guide.category);
   const relatedProducts = (guide.relatedProducts ?? [])
@@ -170,6 +174,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
   const relatedGuides = [
     ...explicitRelatedGuides,
     ...siteGuides(site.key).filter((item) => item.slug !== guide.slug && item.category === guide.category),
+    ...siteGuides(site.key).filter((item) => item.slug !== guide.slug),
   ]
     .filter((item, index, items) => items.findIndex((candidate) => candidate.slug === item.slug) === index)
     .slice(0, 4);
@@ -198,6 +203,9 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
           relatedRoundups={relatedRoundups}
           advice={advice}
         />
+        <div className="style-shell pb-12">
+          <SearchOpportunityBacklinks site={site.key} kind="guide" slug={slug} />
+        </div>
       </>
     );
   }
@@ -224,13 +232,15 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         <p className="mt-5 text-lg leading-8 text-[var(--muted)]">{guide.dek}</p>
         <div className="mt-5 flex flex-wrap gap-x-4 gap-y-2 text-sm font-semibold text-[var(--muted)]">
           <span>Prepared by the {site.name} editorial desk</span>
-          {guide.updatedAt ? <span>Updated {guide.updatedAt}</span> : null}
+          {effectiveUpdatedAt ? <span>Updated {effectiveUpdatedAt}</span> : null}
         </div>
         <section className="mt-8 rounded-md border border-[var(--brand)] bg-[var(--brand-soft)] p-5" aria-labelledby="guide-quick-answer">
           <p className="eyebrow">Quick answer</p>
           <h2 className="mt-2 text-xl font-bold" id="guide-quick-answer">The practical answer</h2>
           <p className="mt-3 leading-7 text-[var(--text)]">{directAnswer}</p>
         </section>
+        {searchOpportunity ? <SearchOpportunityBlock opportunity={searchOpportunity} /> : null}
+        <SearchOpportunityBacklinks site={site.key} kind="guide" slug={slug} />
         {topProduct || topRoundup ? (
           <section className="mt-8 rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-5">
             <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">

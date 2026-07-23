@@ -1,6 +1,6 @@
 import { getIndexableBlogPosts } from "@/lib/blog";
 import { getSiteUrl } from "@/lib/seo";
-import { getPopularTools, toolRegistry } from "@/lib/tool-registry";
+import { discoverableToolRegistry, getPopularTools } from "@/lib/tool-registry";
 
 export const dynamic = "force-static";
 
@@ -8,7 +8,7 @@ export async function GET() {
   const baseUrl = getSiteUrl();
   const popularTools = getPopularTools();
   const posts = await getIndexableBlogPosts("en");
-  const topTools = popularTools.length > 0 ? popularTools : toolRegistry.slice(0, 12);
+  const topTools = popularTools.length > 0 ? popularTools : discoverableToolRegistry.slice(0, 12);
 
   const lines = [
     "# Madabase",

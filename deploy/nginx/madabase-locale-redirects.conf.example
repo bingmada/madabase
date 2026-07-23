@@ -1,0 +1,15 @@
+# Place both locations before the existing `location /` block in the
+# HTTPS server for madabase.com. It permanently moves every legacy
+# English and Chinese route to the identical path on the tools host.
+location ~ ^/(?:(?:en|zh)/)?tests(?:/|$) {
+    add_header X-Robots-Tag "noindex, nofollow" always;
+    return 410;
+}
+
+location ~ ^/(en|zh)(?:/.*)?$ {
+    return 308 https://tools.madabase.com$request_uri;
+}
+
+# Keep the existing root location temporarily. Until the replacement
+# root application is deployed, its current `/` redirect will ultimately
+# land on tools.madabase.com/en through the permanent locale rule above.

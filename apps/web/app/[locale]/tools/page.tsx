@@ -9,7 +9,7 @@ import { PageViewTracker } from "@/components/PageViewTracker";
 import { ToolIcon } from "@/components/ToolIcon";
 import { getCategoryLabel, isLocale, locales, toolCategoryLabels } from "@/lib/i18n";
 import { buildAbsoluteUrl, buildPageMetadata } from "@/lib/seo";
-import { toolRegistry } from "@/lib/tool-registry";
+import { discoverableToolRegistry } from "@/lib/tool-registry";
 import { loadToolContent } from "@/lib/tool-content";
 
 export function generateStaticParams() {
@@ -87,7 +87,7 @@ export default async function ToolsPage({ params }: { params: Promise<{ locale: 
     description: copy.description,
     url: buildAbsoluteUrl(`/${locale}/tools`),
     locale,
-    items: toolRegistry.map((tool) => ({
+    items: discoverableToolRegistry.map((tool) => ({
       name: tool.h1[locale],
       description: tool.description[locale],
       url: buildAbsoluteUrl(`/${locale}/tools/${tool.slug}`),
@@ -96,7 +96,7 @@ export default async function ToolsPage({ params }: { params: Promise<{ locale: 
 
   // Load tool content for display titles
   const toolsWithContent = await Promise.all(
-    toolRegistry.map(async (tool) => {
+    discoverableToolRegistry.map(async (tool) => {
       const content = await loadToolContent(tool.slug, locale);
       return { tool, content };
     })

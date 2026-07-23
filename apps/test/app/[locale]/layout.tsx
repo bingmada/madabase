@@ -25,6 +25,10 @@ export const metadata: Metadata = {
     title: "Madabase Tests",
     description: "Interactive personality, career, relationship, and self-discovery tests from Madabase.",
   },
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 export default async function LocaleLayout({

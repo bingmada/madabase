@@ -1,6 +1,7 @@
 import sharp from "sharp";
 
 const SITES = ["network", "smarthome", "homeoffice", "baby", "pet", "style"];
+const PROHIBITED_DESTINATION_HOSTS = new Set(["tools.madabase.com", "test.madabase.com"]);
 const baseUrl = process.argv[2] ?? "http://127.0.0.1:3011";
 const errors = [];
 let checked = 0;
@@ -52,6 +53,7 @@ for (const site of SITES) {
   const feed = await feedFor(site);
   for (const item of feed.items) {
     const destination = new URL(item.destinationUrl);
+    if (PROHIBITED_DESTINATION_HOSTS.has(destination.host)) errors.push(`${item.id}: retired Tools/Test destinations are prohibited`);
     if (destination.host !== new URL(feed.domain).host) errors.push(`${item.id}: destination host mismatch`);
     if (destination.searchParams.get("utm_source") !== "pinterest") errors.push(`${item.id}: missing Pinterest UTM source`);
     if (/amazon\.|amzn\./i.test(item.destinationUrl)) errors.push(`${item.id}: must route through the evidence page, not Amazon`);

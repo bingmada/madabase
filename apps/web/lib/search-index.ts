@@ -1,6 +1,6 @@
 import { getAllBlogPosts } from "./blog";
 import type { Locale } from "./i18n";
-import { toolRegistry } from "./tool-registry";
+import { discoverableToolRegistry } from "./tool-registry";
 
 export type SearchItem = {
   type: "tool" | "blog";
@@ -13,7 +13,7 @@ export type SearchItem = {
 export async function getSearchIndex(locale: Locale): Promise<SearchItem[]> {
   const posts = await getAllBlogPosts(locale);
   return [
-    ...toolRegistry.map((tool) => ({
+    ...discoverableToolRegistry.map((tool) => ({
       type: "tool" as const,
       title: tool.h1[locale],
       description: tool.description[locale],

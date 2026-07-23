@@ -1,0 +1,123 @@
+# Final production topology:
+# - madabase.com -> new root application on 127.0.0.1:3008
+# - tools.madabase.com -> apps/web on 127.0.0.1:3018
+# - every legacy /en and /zh URL -> identical path on tools.madabase.com
+
+server {
+    listen 80;
+    listen [::]:80;
+    server_name madabase.com www.madabase.com;
+
+    # Retire obsolete test routes without sending crawlers through Tools.
+    location ~ ^/(?:(?:en|zh)/)?tests(?:/|$) {
+        add_header X-Robots-Tag "noindex, nofollow" always;
+        return 410;
+    }
+
+    # Send migrated URLs directly to the final host in one hop.
+    location ~ ^/(en|zh)(?:/.*)?$ {
+        return 308 https://tools.madabase.com$request_uri;
+    }
+
+    location / {
+        return 301 https://madabase.com$request_uri;
+    }
+}
+
+server {
+    listen 443 ssl http2;
+    listen [::]:443 ssl http2;
+    server_name www.madabase.com;
+
+    ssl_certificate /etc/nginx/ssl/madabase.com.crt;
+    ssl_certificate_key /etc/nginx/ssl/madabase.com.key;
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_ciphers HIGH:!aNULL:!MD5;
+
+    location ~ ^/(?:(?:en|zh)/)?tests(?:/|$) {
+        add_header X-Robots-Tag "noindex, nofollow" always;
+        return 410;
+    }
+
+    # Avoid a www -> apex -> tools redirect chain.
+    location ~ ^/(en|zh)(?:/.*)?$ {
+        return 308 https://tools.madabase.com$request_uri;
+    }
+
+    location / {
+        return 308 https://madabase.com$request_uri;
+    }
+}
+
+server {
+    listen 443 ssl http2;
+    listen [::]:443 ssl http2;
+    server_name madabase.com;
+
+    ssl_certificate /etc/nginx/ssl/madabase.com.crt;
+    ssl_certificate_key /etc/nginx/ssl/madabase.com.key;
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_ciphers HIGH:!aNULL:!MD5;
+
+    location ~ ^/(?:(?:en|zh)/)?tests(?:/|$) {
+        add_header X-Robots-Tag "noindex, nofollow" always;
+        return 410;
+    }
+
+    # Permanent migration rule. Keep it after the new root site launches.
+    location ~ ^/(en|zh)(?:/.*)?$ {
+        return 308 https://tools.madabase.com$request_uri;
+    }
+
+    location = /ads.txt {
+        default_type text/plain;
+        return 200 "google.com, pub-4491218467179399, DIRECT, f08c47fec0942fa0";
+    }
+
+    # The new root application owns /, /robots.txt, /sitemap.xml, and all
+    # newly designed non-locale routes.
+    location / {
+        proxy_pass http://127.0.0.1:3008;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header X-Forwarded-Host $host;
+    }
+}
+
+server {
+    listen 80;
+    listen [::]:80;
+    server_name tools.madabase.com;
+
+    return 301 https://tools.madabase.com$request_uri;
+}
+
+server {
+    listen 443 ssl http2;
+    listen [::]:443 ssl http2;
+    server_name tools.madabase.com;
+
+    # The certificate must list tools.madabase.com or *.madabase.com.
+    ssl_certificate /etc/nginx/ssl/madabase.com.crt;
+    ssl_certificate_key /etc/nginx/ssl/madabase.com.key;
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_ciphers HIGH:!aNULL:!MD5;
+
+    location ~ ^/(?:(?:en|zh)/)?tests(?:/|$) {
+        add_header X-Robots-Tag "noindex, nofollow" always;
+        return 410;
+    }
+
+    location / {
+        proxy_pass http://127.0.0.1:3018;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header X-Forwarded-Host $host;
+    }
+}

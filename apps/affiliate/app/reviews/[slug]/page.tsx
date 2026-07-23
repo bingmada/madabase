@@ -4,9 +4,11 @@ import { notFound } from "next/navigation";
 import { AffiliateButton } from "@/components/AffiliateButton";
 import { JsonLd } from "@/components/JsonLd";
 import { Disclosure } from "@/components/LayoutParts";
+import { SearchOpportunityBacklinks, SearchOpportunityBlock } from "@/components/SearchOpportunityBlock";
 import { StyleProductPage } from "@/components/StyleExperience";
 import { findProduct, siteGuides, siteProducts, siteRoundups } from "@/lib/content";
 import { productEvidencePresentation } from "@/lib/evidence";
+import { findSearchOpportunity } from "@/lib/search-opportunities";
 import { breadcrumbSchema, pageMetadata, productNotesSchema, productPageTitle } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 import type { AffiliateOffer, Product } from "@/lib/types";
@@ -91,6 +93,8 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
   const { slug } = await params;
   const product = findProduct(site.key, slug);
   if (!product) notFound();
+  const searchOpportunity = findSearchOpportunity(site.key, "product", slug);
+  const effectiveUpdatedAt = searchOpportunity?.updatedAt ?? product.updatedAt;
   const displayName = product.amazonTitle ?? product.name;
   const pageTitle = productPageTitle(product);
   const displayImage = product.amazonImage ?? product.image;
@@ -168,6 +172,10 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
           relatedRoundups={relatedRoundups}
           relatedGuides={relatedGuides}
         />
+        <div className="style-shell pb-12">
+          {searchOpportunity ? <SearchOpportunityBlock opportunity={searchOpportunity} /> : null}
+          <SearchOpportunityBacklinks site={site.key} kind="product" slug={slug} />
+        </div>
       </>
     );
   }
@@ -197,10 +205,10 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                 </div>
                 <h1 className="mt-3 text-4xl font-black leading-tight">{pageTitle}</h1>
                 <p className="mt-5 text-lg leading-8 text-[var(--muted)]">{product.summary}</p>
-                {product.updatedAt ? (
+                {effectiveUpdatedAt ? (
                   <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm font-semibold text-[var(--muted)]">
                     <span>Prepared by the {site.name} editorial desk</span>
-                    <span>Updated {product.updatedAt}</span>
+                    <span>Updated {effectiveUpdatedAt}</span>
                   </div>
                 ) : null}
                 <div className="mt-6 flex flex-wrap items-center gap-3">
@@ -235,6 +243,8 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
               </div>
             </div>
             <div className="prose-lite mt-8">
+              {searchOpportunity ? <SearchOpportunityBlock opportunity={searchOpportunity} /> : null}
+              <SearchOpportunityBacklinks site={site.key} kind="product" slug={slug} />
               <div className="not-prose rounded-md border border-[var(--brand)] bg-[var(--brand-soft)] p-5">
                 <p className="text-xs font-bold uppercase text-[var(--brand-strong)]">{evidencePresentation.label}</p>
                 <p className="mt-2 text-sm font-semibold leading-6 text-[var(--text)]">{evidencePresentation.note}</p>

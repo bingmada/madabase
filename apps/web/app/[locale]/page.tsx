@@ -11,7 +11,7 @@ import { PopularToolsClient } from "@/components/PopularToolsClient";
 import { PersonalizedToolsPanel } from "@/components/PersonalizedToolsPanel";
 import { getCurrentUser } from "@/lib/auth/services/sessionService";
 import { getLatestBlogPosts } from "@/lib/blog";
-import { buildAbsoluteUrl, buildPageMetadata, getTestSiteUrl } from "@/lib/seo";
+import { buildAbsoluteUrl, buildPageMetadata } from "@/lib/seo";
 import { isLocale, locales, type Locale } from "@/lib/i18n";
 import { getPopularTools, getToolsByCategory, toolRegistry } from "@/lib/tool-registry";
 
@@ -128,7 +128,6 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       title: "Madabase",
       description: "A growing library of browser-first developer tools, practical calculators, and reference pages for everyday workflows.",
       primaryCta: "Explore Tools",
-      secondaryCta: "Take Tests",
       popular: "Popular Tools",
       categories: "Categories",
       latestBlog: "Latest Blog",
@@ -141,7 +140,6 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       title: "Madabase",
       description: "一个持续增长的浏览器端开发者工具、常用计算器与实用内容平台。",
       primaryCta: "探索工具",
-      secondaryCta: "开始测试",
       popular: "热门工具",
       categories: "分类",
       latestBlog: "最新博客",
@@ -154,8 +152,6 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   const breadcrumbSchema = buildBreadcrumbSchema([
     { name: "Madabase", item: buildAbsoluteUrl(`/${locale}`) },
   ]);
-  const testSiteUrl = getTestSiteUrl();
-
   return (
     <div className="min-h-screen bg-transparent">
       <Header locale={locale} pathname="/" />
@@ -170,9 +166,6 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           <div className="mt-7 flex flex-wrap gap-3">
             <Link href={`/${locale}/tools`} className="inline-flex h-11 items-center rounded-md bg-[var(--surface-code)] px-4 text-sm font-semibold text-white shadow-sm transition hover:bg-[var(--brand-strong)]">
               {copy.primaryCta}
-            </Link>
-            <Link href={`${testSiteUrl}/${locale}`} className="inline-flex h-11 items-center rounded-md border border-[var(--border)] bg-white px-4 text-sm font-semibold text-[var(--text)] transition hover:border-[var(--brand)]">
-              {copy.secondaryCta}
             </Link>
           </div>
           {!user ? (

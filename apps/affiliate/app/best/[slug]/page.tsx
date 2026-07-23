@@ -3,8 +3,10 @@ import { notFound } from "next/navigation";
 import { AffiliateButtonGroup } from "@/components/AffiliateButton";
 import { JsonLd } from "@/components/JsonLd";
 import { Disclosure, MethodologyList, ProductCard } from "@/components/LayoutParts";
+import { SearchOpportunityBacklinks, SearchOpportunityBlock } from "@/components/SearchOpportunityBlock";
 import { StyleCollectionPage } from "@/components/StyleExperience";
 import { findProduct, findRoundup, siteGuides } from "@/lib/content";
+import { findSearchOpportunity } from "@/lib/search-opportunities";
 import { breadcrumbSchema, faqPageSchema, pageMetadata, roundupArticleSchema, roundupProductListSchema } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 import type { Product, SiteKey } from "@/lib/types";
@@ -173,6 +175,8 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
   const { slug } = await params;
   const roundup = findRoundup(site.key, slug);
   if (!roundup) notFound();
+  const searchOpportunity = findSearchOpportunity(site.key, "roundup", slug);
+  const effectiveUpdatedAt = searchOpportunity?.updatedAt ?? roundup.updatedAt;
   const picks = roundup.productSlugs
     .map((productSlug) => findProduct(site.key, productSlug))
     .filter((product): product is NonNullable<ReturnType<typeof findProduct>> => Boolean(product));
@@ -199,6 +203,9 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
         <JsonLd data={roundupArticleSchema(site, roundup, picks)} />
         <JsonLd data={faqPageSchema(roundup.faqs)} />
         <StyleCollectionPage roundup={roundup} products={picks} />
+        <div className="style-shell pb-12">
+          <SearchOpportunityBacklinks site={site.key} kind="roundup" slug={slug} />
+        </div>
       </>
     );
   }
@@ -226,10 +233,10 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
           )}
           <h1 className="mt-3 text-3xl font-black leading-tight sm:text-4xl">{roundup.title}</h1>
           <p className="mt-4 text-base leading-7 text-[var(--muted)] sm:mt-5 sm:text-lg sm:leading-8">{roundup.dek}</p>
-          {roundup.updatedAt ? (
+          {effectiveUpdatedAt ? (
             <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-xs font-semibold text-[var(--muted)] sm:mt-4 sm:gap-y-2 sm:text-sm">
               <span className="hidden sm:inline">Prepared by the {site.name} editorial desk</span>
-              <span>Updated {roundup.updatedAt}</span>
+              <span>Updated {effectiveUpdatedAt}</span>
             </div>
           ) : null}
           {topPick ? (
@@ -254,6 +261,8 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
             <p className="text-xs font-bold uppercase text-[var(--muted)]">Quick answer</p>
             <p className="mt-2 text-lg font-bold leading-8 text-[var(--text)]">{answer}</p>
           </div>
+          {searchOpportunity ? <SearchOpportunityBlock opportunity={searchOpportunity} /> : null}
+          <SearchOpportunityBacklinks site={site.key} kind="roundup" slug={slug} />
         </div>
         <div className="mt-8 grid min-w-0 gap-5 lg:grid-cols-[minmax(0,1fr)_320px]">
           <div className="min-w-0 space-y-5">

@@ -15,6 +15,7 @@ const gscPath = valueFor("--gsc");
 const queryPath = valueFor("--queries");
 const reportPath = path.resolve(workspaceDir, valueFor("--report") ?? "../../docs/affiliate-search-portfolio.md");
 const csvPath = path.resolve(workspaceDir, valueFor("--csv") ?? "../../docs/affiliate-search-portfolio.csv");
+const recoveryCsvPath = path.resolve(workspaceDir, valueFor("--recovery-csv") ?? "../../docs/affiliate-search-recovery.csv");
 const reportDate = valueFor("--date") ?? new Date().toISOString().slice(0, 10);
 
 if (!gscPath) {
@@ -29,6 +30,7 @@ const siteHosts = {
   network: "network.madabase.com",
   smarthome: "smarthome.madabase.com",
   style: "style.madabase.com",
+  costume: "costumes.madabase.com",
 };
 const productFactoryNames = new Set(["catalogProduct", "expandedProduct"]);
 const entries = [];
@@ -167,6 +169,7 @@ function addEntry(sourceFile, constants, node, kind, factoryName) {
     url: `https://${siteHosts[site]}${pathPrefix}/${slug}`,
     title: explicitSeoTitle ?? (kind === "product" && baseTitle ? defaultProductTitle(site, baseTitle) : baseTitle),
     description: stringValue(props.get("summary"), constants) ?? stringValue(props.get("dek"), constants),
+    category: stringValue(props.get("category"), constants),
     status: stringValue(props.get("publicationStatus"), constants) ?? "published",
     updatedAt: stringValue(props.get("updatedAt"), constants) ?? (factoryName ? constants.get("updatedAt") : undefined),
     evidenceMode: stringValue(props.get("evidenceMode"), constants),
@@ -174,6 +177,10 @@ function addEntry(sourceFile, constants, node, kind, factoryName) {
     sectionCount: arrayLength(props.get("sections")) + arrayLength(props.get("editorialSections")),
     faqCount: arrayLength(props.get("faqs")),
     internalLinkCount: new Set([...relatedProducts, ...productSlugs, ...relatedRoundups, ...relatedGuides]).size,
+    relatedProducts,
+    productSlugs,
+    relatedRoundups,
+    relatedGuides,
     factoryName,
     location: `${path.basename(sourceFile.fileName)}:${position.line + 1}`,
   });
@@ -202,6 +209,43 @@ for (const filename of fs.readdirSync(libDir).filter((name) => name.endsWith(".t
   visit(sourceFile, sourceConstants(sourceFile), sourceFile);
 }
 
+function searchOpportunityEntries() {
+  const filename = path.join(libDir, "search-opportunities.ts");
+  const sourceFile = ts.createSourceFile(filename, fs.readFileSync(filename, "utf8"), ts.ScriptTarget.Latest, true, ts.ScriptKind.TS);
+  const constants = sourceConstants(sourceFile);
+  const result = [];
+
+  sourceFile.statements.forEach((statement) => {
+    if (!ts.isVariableStatement(statement)) return;
+    statement.declarationList.declarations.forEach((declaration) => {
+      if (!ts.isIdentifier(declaration.name) || declaration.name.text !== "searchOpportunities" || !declaration.initializer || !ts.isArrayLiteralExpression(declaration.initializer)) return;
+      declaration.initializer.elements.forEach((element) => {
+        if (!ts.isObjectLiteralExpression(element)) return;
+        const props = properties(element);
+        const site = stringValue(props.get("site"), constants);
+        const kind = stringValue(props.get("kind"), constants);
+        const slug = stringValue(props.get("slug"), constants);
+        const updatedAt = stringValue(props.get("updatedAt"), constants);
+        if (site && kind && slug) result.push({ site, kind, slug, updatedAt });
+      });
+    });
+  });
+
+  return result;
+}
+
+const opportunityByKey = new Map(
+  searchOpportunityEntries().map((item) => [`${item.site}:${item.kind}:${item.slug}`, item]),
+);
+
+entries.forEach((entry) => {
+  const opportunity = opportunityByKey.get(`${entry.site}:${entry.kind}:${entry.slug}`);
+  if (!opportunity) return;
+  entry.hasSearchOpportunity = true;
+  entry.internalLinkCount = Math.max(entry.internalLinkCount, 5);
+  entry.updatedAt = opportunity.updatedAt ?? entry.updatedAt;
+});
+
 function normalizedUrl(value) {
   try {
     const url = new URL(value);
@@ -222,7 +266,8 @@ const gscRecords = csvRecords(path.resolve(gscPath)).map((record) => ({
 }));
 const gscByUrl = new Map(gscRecords.map((record) => [record.url, record]));
 const queryRecords = queryPath ? csvRecords(path.resolve(queryPath)) : [];
-const domainStats = Object.values(gscRecords.reduce((result, record) => {
+function domainStatsFor(records) {
+  return Object.values(records.reduce((result, record) => {
   const host = new URL(record.url).hostname;
   const current = result[host] ?? { host, urls: 0, clicks: 0, impressions: 0, weightedPosition: 0 };
   current.urls += 1;
@@ -231,7 +276,17 @@ const domainStats = Object.values(gscRecords.reduce((result, record) => {
   current.weightedPosition += record.position * record.impressions;
   result[host] = current;
   return result;
-}, {})).sort((left, right) => right.impressions - left.impressions);
+  }, {})).sort((left, right) => right.impressions - left.impressions);
+}
+
+const qualifiedHosts = new Set(Object.values(siteHosts));
+const qualifiedGscRecords = gscRecords.filter((record) => qualifiedHosts.has(new URL(record.url).hostname));
+const excludedGscRecords = gscRecords.filter((record) => {
+  const host = new URL(record.url).hostname;
+  return host === "tools.madabase.com" || host === "test.madabase.com" || host === "madabase.com" || host === "www.madabase.com";
+});
+const domainStats = domainStatsFor(qualifiedGscRecords);
+const excludedDomainStats = domainStatsFor(excludedGscRecords);
 
 function daysSince(value) {
   if (!value) return undefined;
@@ -269,12 +324,28 @@ function localGaps(entry) {
   const gaps = [];
   if (!entry.title || entry.title.length < 28) gaps.push("weak-title");
   if (entry.title?.length > 72) gaps.push("long-title");
-  if (!entry.description || entry.description.length < 80) gaps.push("thin-summary");
+  if (!entry.description || entry.description.length < 60) gaps.push("thin-summary");
   if (!entry.updatedAt) gaps.push("missing-update-date");
   if (entry.kind === "product" && !entry.factoryName && entry.sourceCount === 0) gaps.push("no-source-link");
   if (entry.kind === "product" && !entry.factoryName && !entry.evidenceMode) gaps.push("implicit-evidence-mode");
-  if (entry.kind === "roundup" && entry.internalLinkCount < 3) gaps.push("small-product-set");
-  if (entry.kind === "guide" && entry.internalLinkCount < 3) gaps.push("underlinked-guide");
+  if (entry.kind === "guide") {
+    const sameSiteGuides = entries.filter(
+      (candidate) => candidate.status === "published" && candidate.kind === "guide" && candidate.site === entry.site && candidate.slug !== entry.slug,
+    );
+    const renderedRelatedGuides = [
+      ...sameSiteGuides.filter((candidate) => candidate.category === entry.category),
+      ...sameSiteGuides,
+    ]
+      .filter((candidate, index, candidates) => candidates.findIndex((item) => item.slug === candidate.slug) === index)
+      .slice(0, 4);
+    const renderedLinks = new Set([
+      ...entry.relatedProducts.map((slug) => `/reviews/${slug}`),
+      ...entry.relatedRoundups.map((slug) => `/best/${slug}`),
+      ...entry.relatedGuides.map((slug) => `/guides/${slug}`),
+      ...renderedRelatedGuides.map((candidate) => `/guides/${candidate.slug}`),
+    ]);
+    if (renderedLinks.size < 3) gaps.push("underlinked-guide");
+  }
   return gaps;
 }
 
@@ -290,8 +361,9 @@ const portfolio = entries
       metrics,
       band,
       action: primaryAction(band),
-      gaps: localGaps(entry),
-    };
+    gaps: localGaps(entry),
+    hasSearchOpportunity: Boolean(entry.hasSearchOpportunity),
+  };
   })
   .sort((left, right) => {
     const rank = {
@@ -312,7 +384,7 @@ function escapeCsv(value) {
   return /[",\n]/.test(text) ? `"${text.replaceAll('"', '""')}"` : text;
 }
 
-const csvHeaders = ["site", "kind", "url", "title", "updated_at", "age_days", "clicks", "impressions", "ctr_percent", "position", "band", "local_gaps", "primary_action", "source_location"];
+const csvHeaders = ["site", "kind", "url", "title", "updated_at", "age_days", "clicks", "impressions", "ctr_percent", "position", "band", "local_gaps", "search_opportunity", "primary_action", "source_location"];
 const csvRows = portfolio.map((entry) => [
   entry.site,
   entry.kind,
@@ -326,6 +398,7 @@ const csvRows = portfolio.map((entry) => [
   entry.metrics?.position,
   entry.band,
   entry.gaps.join(";"),
+  entry.hasSearchOpportunity ? "implemented" : "",
   entry.action,
   entry.location,
 ]);
@@ -344,7 +417,7 @@ const bandOrder = [
 const countsFor = (items, key) => Object.fromEntries([...new Set(items.map((item) => item[key]))].sort().map((value) => [value, items.filter((item) => item[key] === value).length]));
 const siteCounts = countsFor(portfolio, "site");
 const bandCounts = countsFor(portfolio, "band");
-const affiliateGscRecords = gscRecords.filter((record) => Object.values(siteHosts).includes(new URL(record.url).hostname));
+const affiliateGscRecords = qualifiedGscRecords;
 const unmatchedGsc = affiliateGscRecords.filter((record) => !portfolio.some((entry) => normalizedUrl(entry.url) === record.url));
 const noMetricEntries = portfolio.filter((entry) => !entry.metrics);
 const exposedEntries = portfolio.filter((entry) => entry.metrics);
@@ -355,6 +428,114 @@ const totalAffiliateMetrics = exposedEntries.reduce((result, entry) => ({
 const topQueue = portfolio.filter((entry) => !["protect-and-convert", "new-observation"].includes(entry.band)).slice(0, 40);
 const topQueries = queryRecords.slice(0, 30);
 
+function normalizedTitleTokens(value) {
+  return new Set(
+    String(value ?? "")
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, " ")
+      .split(/\s+/)
+      .filter((token) => token.length > 2 && !["and", "best", "buying", "for", "guide", "review", "the", "with"].includes(token)),
+  );
+}
+
+function titleSimilarity(left, right) {
+  const leftTokens = normalizedTitleTokens(left);
+  const rightTokens = normalizedTitleTokens(right);
+  const union = new Set([...leftTokens, ...rightTokens]);
+  if (!union.size) return 0;
+  let intersection = 0;
+  leftTokens.forEach((token) => {
+    if (rightTokens.has(token)) intersection += 1;
+  });
+  return intersection / union.size;
+}
+
+// Manually reviewed pairs that share vocabulary but serve different jobs.
+// Keeping them here prevents a title-token heuristic from becoming an
+// unreviewed merge recommendation.
+const distinctIntentPairs = new Set([
+  [
+    "https://baby.madabase.com/best/babybjorn-mini-vs-ergobaby-omni-breeze",
+    "https://baby.madabase.com/best/babybjorn-harmony-vs-ergobaby-omni-breeze",
+  ],
+  [
+    "https://homeoffice.madabase.com/guides/home-office-lighting-for-video-calls-checklist",
+    "https://homeoffice.madabase.com/best/best-video-call-lighting-for-home-office",
+  ],
+  [
+    "https://network.madabase.com/best/best-poe-switches-for-home-cameras-and-access-points",
+    "https://network.madabase.com/guides/poe-switch-for-home-cameras-and-access-points-guide",
+  ],
+  [
+    "https://network.madabase.com/best/best-poe-switches-for-home-cameras-and-access-points",
+    "https://network.madabase.com/guides/poe-vs-poe-plus-for-cameras-access-points",
+  ],
+  [
+    "https://network.madabase.com/guides/poe-switch-for-home-cameras-and-access-points-guide",
+    "https://network.madabase.com/guides/poe-vs-poe-plus-for-cameras-access-points",
+  ],
+  [
+    "https://smarthome.madabase.com/best/best-tapo-matter-smart-plug-for-energy-or-compact-control",
+    "https://smarthome.madabase.com/reviews/tapo-p125m-matter-smart-plug",
+  ],
+].map((pair) => pair.sort().join("|")));
+
+function duplicateCandidates(entry) {
+  return portfolio
+    .filter((candidate) => {
+      if (candidate.site !== entry.site || candidate.url === entry.url || titleSimilarity(entry.title, candidate.title) < 0.65) return false;
+      return !distinctIntentPairs.has([entry.url, candidate.url].sort().join("|"));
+    })
+    .sort((left, right) => titleSimilarity(entry.title, right.title) - titleSimilarity(entry.title, left.title))
+    .slice(0, 3)
+    .map((candidate) => candidate.url);
+}
+
+function recoveryDecision(entry, duplicates) {
+  if (entry.site === "style") return "maintenance-hold";
+  if (entry.age !== undefined && entry.age <= 7) return "observe-day-7";
+  if (entry.age !== undefined && entry.age <= 30) return "observe-day-30";
+  if (duplicates.length) return "duplicate-intent-review";
+  if (entry.gaps.some((gap) => ["underlinked-guide", "small-product-set", "weak-title", "thin-summary"].includes(gap))) return "repair-local-discovery";
+  return "demand-and-index-review";
+}
+
+const recoveryHeaders = [
+  "site",
+  "kind",
+  "url",
+  "title",
+  "age_days",
+  "local_gaps",
+  "duplicate_candidates",
+  "technical_status",
+  "decision",
+  "next_check",
+];
+const recoveryRows = noMetricEntries.map((entry) => {
+  const duplicates = duplicateCandidates(entry);
+  const decision = recoveryDecision(entry, duplicates);
+  return [
+    entry.site,
+    entry.kind,
+    entry.url,
+    entry.title,
+    entry.age,
+    entry.gaps.join(";"),
+    duplicates.join(";"),
+    entry.gaps.some((gap) => ["underlinked-guide", "weak-title", "thin-summary"].includes(gap))
+      ? "local-content-gap;live-url-inspection-pending"
+      : "local-template-pass;live-url-inspection-pending",
+    decision,
+    decision === "observe-day-7"
+      ? "day-7 indexing and query check"
+      : decision === "observe-day-30" || decision === "maintenance-hold"
+        ? "day-30 portfolio review"
+        : "manual URL inspection and demand review before rewrite, merge, or sitemap removal",
+  ];
+});
+fs.writeFileSync(recoveryCsvPath, `${[recoveryHeaders, ...recoveryRows].map((row) => row.map(escapeCsv).join(",")).join("\n")}\n`);
+
 const lines = [
   "# Affiliate Search Portfolio",
   "",
@@ -362,11 +543,21 @@ const lines = [
   "",
   "This report joins the complete published affiliate content inventory to a Google Search Console Pages export. A missing GSC row means no recorded impression in the export window, not automatic proof of an indexing failure.",
   "",
-  "## Domain-wide GSC context",
+  "## Qualified content-host GSC context",
+  "",
+  "Tools, Test, and legacy root-domain rows are permanently excluded from growth totals. The new editorial root is measured separately from its 2026-07-21 launch date so historical locale traffic cannot contaminate it.",
   "",
   "| Host | Exposed URLs | Clicks | Impressions | Weighted position |",
   "| --- | ---: | ---: | ---: | ---: |",
   ...domainStats.map((item) => `| ${item.host} | ${item.urls} | ${item.clicks} | ${item.impressions} | ${item.impressions ? (item.weightedPosition / item.impressions).toFixed(1) : "-"} |`),
+  "",
+  "## Excluded transition context",
+  "",
+  "These rows remain visible only for migration and retirement monitoring. They do not count toward search-growth targets.",
+  "",
+  "| Host | Exposed URLs | Clicks | Impressions | Weighted position |",
+  "| --- | ---: | ---: | ---: | ---: |",
+  ...excludedDomainStats.map((item) => `| ${item.host} | ${item.urls} | ${item.clicks} | ${item.impressions} | ${item.impressions ? (item.weightedPosition / item.impressions).toFixed(1) : "-"} |`),
   "",
   "## Portfolio baseline",
   "",
@@ -376,6 +567,8 @@ const lines = [
   `- Affiliate clicks represented: ${totalAffiliateMetrics.clicks}`,
   `- Affiliate impressions represented: ${totalAffiliateMetrics.impressions}`,
   `- Affiliate GSC URLs not matched to a content registry entry: ${unmatchedGsc.length}`,
+  `- Page-two search-answer and contextual-link modules implemented: ${portfolio.filter((entry) => entry.hasSearchOpportunity).length}`,
+  `- Recovery rows classified for no-impression inventory: ${noMetricEntries.length}`,
   "",
   "## Site inventory",
   "",
@@ -414,6 +607,7 @@ const lines = [
   "5. Re-import a 28-day Pages CSV weekly and use 24-hour data only for recent-change monitoring. The long window drives portfolio decisions; the short window catches release effects.",
   "",
   `Full queue: ${path.relative(path.dirname(reportPath), csvPath)}`,
+  `Recovery queue: ${path.relative(path.dirname(reportPath), recoveryCsvPath)}`,
   "",
 ];
 

@@ -216,6 +216,70 @@ for (const entry of entries) {
   }
 }
 
+const opportunityFile = path.join(libDir, "search-opportunities.ts");
+const opportunitySource = ts.createSourceFile(
+  opportunityFile,
+  fs.readFileSync(opportunityFile, "utf8"),
+  ts.ScriptTarget.Latest,
+  true,
+  ts.ScriptKind.TS,
+);
+const searchOpportunities = [];
+opportunitySource.statements.forEach((statement) => {
+  if (!ts.isVariableStatement(statement)) return;
+  statement.declarationList.declarations.forEach((declaration) => {
+    if (
+      !ts.isIdentifier(declaration.name) ||
+      declaration.name.text !== "searchOpportunities" ||
+      !declaration.initializer ||
+      !ts.isArrayLiteralExpression(declaration.initializer)
+    ) return;
+    declaration.initializer.elements.forEach((element) => {
+      if (!ts.isObjectLiteralExpression(element)) return;
+      const props = properties(element);
+      searchOpportunities.push({
+        site: stringValue(props.get("site")),
+        kind: stringValue(props.get("kind")),
+        slug: stringValue(props.get("slug")),
+        query: stringValue(props.get("query")),
+        answer: stringValue(props.get("answer")),
+        preferredPaths: stringArray(props.get("preferredPaths")),
+      });
+    });
+  });
+});
+
+if (searchOpportunities.length !== 44) {
+  errors.push(`Page-two opportunity registry must contain exactly 44 entries; found ${searchOpportunities.length}`);
+}
+const opportunityKeys = new Set();
+const publishedRoutePaths = new Set(
+  entries
+    .filter((entry) => entry.status === "published")
+    .map((entry) => `${entry.site}:${({ product: "/reviews", guide: "/guides", roundup: "/best", tool: "/tools" })[entry.kind]}/${entry.slug}`),
+);
+for (const opportunity of searchOpportunities) {
+  const key = `${opportunity.site}:${opportunity.kind}:${opportunity.slug}`;
+  if (opportunityKeys.has(key)) errors.push(`Duplicate search opportunity ${key}`);
+  opportunityKeys.add(key);
+  if (!routeKeys.has(key)) errors.push(`Search opportunity points to missing route ${key}`);
+  if (!opportunity.query || opportunity.query.length < 24) errors.push(`Search opportunity ${key} needs a specific query`);
+  if (!opportunity.answer || opportunity.answer.length < 100) errors.push(`Search opportunity ${key} needs a substantive direct answer`);
+  opportunity.preferredPaths.forEach((preferredPath) => {
+    if (!publishedRoutePaths.has(`${opportunity.site}:${preferredPath}`)) {
+      errors.push(`Search opportunity ${key} references missing preferred path ${preferredPath}`);
+    }
+  });
+  const relatedCandidateCount = entries.filter((entry) => entry.site === opportunity.site && entry.status === "published" && `${entry.kind}:${entry.slug}` !== `${opportunity.kind}:${opportunity.slug}`).length;
+  if (relatedCandidateCount < 5) errors.push(`Search opportunity ${key} cannot produce five verified contextual links`);
+}
+for (const [kind, route] of [["product", "reviews"], ["guide", "guides"], ["roundup", "best"]]) {
+  const routeSource = fs.readFileSync(path.join(workspaceDir, "app", route, "[slug]", "page.tsx"), "utf8");
+  if (!routeSource.includes(`SearchOpportunityBacklinks site={site.key} kind="${kind}" slug={slug}`)) {
+    errors.push(`${route} template must render reciprocal links to page-two search opportunities`);
+  }
+}
+
 const sitesSource = fs.readFileSync(path.join(libDir, "sites.ts"), "utf8");
 for (const match of sitesSource.matchAll(/heroImage:\s*"([^"]+\.svg)"/g)) {
   errors.push(`Site hero ${match[1]} must use a photographic bitmap instead of a placeholder SVG`);

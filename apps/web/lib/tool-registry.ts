@@ -1,5 +1,6 @@
 import type { Locale } from "./i18n";
 import { expandedToolRegistry } from "./expanded-tool-registry";
+import { isPhaseOneSunsetTool } from "./tool-sunset";
 
 export type ToolComponentName =
   | "JsonFormatter"
@@ -83,25 +84,28 @@ const baseToolRegistry: ToolRegistryEntry[] = [
 ];
 
 export const toolRegistry: ToolRegistryEntry[] = [...baseToolRegistry, ...expandedToolRegistry];
+export const discoverableToolRegistry = toolRegistry.filter((tool) => !isPhaseOneSunsetTool(tool.slug));
 
 export const toolMap = new Map(toolRegistry.map((tool) => [tool.slug, tool]));
 
 export function getRelatedTools(slug: string) {
   const tool = toolMap.get(slug);
   if (!tool) return [];
-  return tool.relatedTools.map((relatedSlug) => toolMap.get(relatedSlug)).filter((item): item is ToolRegistryEntry => Boolean(item));
+  return tool.relatedTools
+    .map((relatedSlug) => toolMap.get(relatedSlug))
+    .filter((item): item is ToolRegistryEntry => Boolean(item && !isPhaseOneSunsetTool(item.slug)));
 }
 
 export function getPopularTools() {
-  return toolRegistry.filter((tool) => tool.popular);
+  return discoverableToolRegistry.filter((tool) => tool.popular);
 }
 
 export function getToolsByCategory(category: ToolRegistryEntry["category"]) {
-  return toolRegistry.filter((tool) => tool.category === category);
+  return discoverableToolRegistry.filter((tool) => tool.category === category);
 }
 
 export function getAllSlugs() {
-  return toolRegistry.map((tool) => tool.slug);
+  return discoverableToolRegistry.map((tool) => tool.slug);
 }
 
 export function getCategories(): ToolRegistryEntry["category"][] {

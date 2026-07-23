@@ -3,7 +3,6 @@ import { Search } from "lucide-react";
 import { Suspense } from "react";
 import { getCurrentUser } from "@/lib/auth/services/sessionService";
 import type { Locale } from "@/lib/i18n";
-import { getTestSiteUrl } from "@/lib/seo";
 import { getExistingCreditBalance } from "@/lib/user-dashboard";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { MobileNav } from "./MobileNav";
@@ -16,10 +15,8 @@ function navLinkClassName(active: boolean) {
 export async function Header({ locale, pathname = "/" }: { locale: Locale; pathname?: string }) {
   const user = await getCurrentUser();
   const creditBalance = user ? await getExistingCreditBalance(user.id) : 0;
-  const testSiteUrl = getTestSiteUrl();
   const copy = {
     tools: locale === "en" ? "Tools" : "工具",
-    tests: locale === "en" ? "Tests" : "测试",
     blog: locale === "en" ? "Blog" : "博客",
     search: locale === "en" ? "Search" : "搜索",
     login: locale === "en" ? "Log in" : "登录",
@@ -27,7 +24,6 @@ export async function Header({ locale, pathname = "/" }: { locale: Locale; pathn
 
   const navItems = [
     { href: `/${locale}/tools`, label: copy.tools, active: pathname === "/tools" || pathname.startsWith("/tools/") },
-    { href: `${testSiteUrl}/${locale}`, label: copy.tests, active: false },
     { href: `/${locale}/blog`, label: copy.blog, active: pathname === "/blog" || pathname.startsWith("/blog/") },
     { href: `/${locale}/search`, label: copy.search, active: pathname === "/search" },
   ];

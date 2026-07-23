@@ -12,7 +12,7 @@ This audit uses a product-first rule: prefer improving, merging, or repositionin
 | B | Keep the page, but upgrade algorithm depth before pushing harder. | Replace heuristic logic with libraries/parsers and add edge-case tests. |
 | C | Useful capability, but too small or overlapping as a standalone page. | Merge into a broader toolbox while keeping route/SEO continuity where useful. |
 
-No current tool is marked for immediate removal. "Sunset" stays available as a future governance status, but the default posture is to optimize before hiding or deleting.
+Owner override, 2026-07-23: Tools is now in gradual retirement. Class A/B routes remain live for an observation window; all Class C routes entered phase-one sunset immediately. They stay functional and crawlable but are `noindex,follow` and removed from navigation, recommendations, site search, `/llms.txt`, and the sitemap. No page is redirected until an exact intent-equivalent replacement exists.
 
 ## Current Class Index
 
@@ -28,6 +28,8 @@ html-formatter, yaml-formatter, xml-formatter, sql-formatter, cron-generator, cs
 
 word-counter, character-counter, case-converter, text-cleaner, line-sorter, line-deduplicator, empty-line-remover, whitespace-normalizer, email-extractor, url-extractor, number-extractor, unicode-escape, unicode-unescape, hex-to-text, text-to-hex, binary-to-text, text-to-binary, reading-time, lorem-ipsum, list-randomizer.
 
+All 20 Class C slugs above are the phase-one sunset cohort. Their source of truth is `apps/web/lib/tool-sunset.ts`.
+
 ## Quality Tiers
 
 | Tier | Meaning | Action |
@@ -36,6 +38,8 @@ word-counter, character-counter, case-converter, text-cleaner, line-sorter, line
 | Improve | Good search intent, but implementation is too thin or brittle. | Upgrade parser/formatter/library and add examples. |
 | Merge | Small utility that is useful, but not strong enough as a standalone destination. | Keep route for SEO if needed, but unify UI into a broader toolbox. |
 | Sunset | Low trust, poor fit, or risky to present as a standalone utility. | Hide from navigation first; keep redirect or noindex plan before removal. |
+
+For this retirement, `Merge` routes use the phase-one Sunset mechanics while consolidation is pending: 200 + `noindex,follow`, no discovery links, and no sitemap entry. Later, use an exact 308 only for a genuine consolidated successor; otherwise use 410 after the observation window. Never redirect the cohort to the Tools or Main home page.
 
 ## Tool Decisions
 

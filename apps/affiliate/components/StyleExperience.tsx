@@ -55,7 +55,7 @@ export function StyleChrome({ site, children }: { site: SiteConfig; children: Re
             <Link href="/contact">Contact</Link>
           </nav>
           <nav className="md:col-span-2 flex flex-wrap gap-x-4 gap-y-2 text-xs font-bold uppercase tracking-[0.14em] text-[#cfc2ba]" aria-label="Madabase network">
-            <a className="hover:text-[#f7eee7]" href="https://madabase.com">Madabase tools</a>
+            <a className="hover:text-[#f7eee7]" href="https://madabase.com">Madabase research</a>
             <a className="hover:text-[#f7eee7]" href="https://pets.madabase.com">Pet gear</a>
             <a className="hover:text-[#f7eee7]" href="https://homeoffice.madabase.com">Home office</a>
             <a className="hover:text-[#f7eee7]" href="https://baby.madabase.com">Baby gear</a>

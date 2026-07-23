@@ -15,6 +15,7 @@ import { JsonLd, buildBreadcrumbSchema, buildFaqSchema, buildSoftwareApplication
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { loadToolContent } from "@/lib/tool-content";
 import { getToolRetentionHint } from "@/lib/tool-retention";
+import { isPhaseOneSunsetTool } from "@/lib/tool-sunset";
 
 export function generateStaticParams() {
   return locales.flatMap((locale) => toolRegistry.map((tool) => ({ locale, slug: tool.slug })));
@@ -31,13 +32,23 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const content = await loadToolContent(slug, locale);
   if (!content) return {};
 
-  return buildToolMetadata({
+  const metadata = buildToolMetadata({
     title: content.seo[locale].title,
     description: content.seo[locale].description,
     keywords: content.seo[locale].keywords,
     locale,
     path: `/tools/${slug}`,
   });
+
+  if (!isPhaseOneSunsetTool(slug)) return metadata;
+
+  return {
+    ...metadata,
+    robots: {
+      index: false,
+      follow: true,
+    },
+  };
 }
 
 export default async function ToolPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
@@ -72,6 +83,7 @@ export default async function ToolPage({ params }: { params: Promise<{ locale: s
 
   const faq = content.faq[locale];
   const retentionHint = getToolRetentionHint(slug, locale);
+  const phaseOneSunset = isPhaseOneSunsetTool(slug);
 
   return (
     <ToolLayout locale={locale} pathname={`/tools/${slug}`} tool={slug}>
@@ -87,6 +99,13 @@ export default async function ToolPage({ params }: { params: Promise<{ locale: s
               { label: content.h1[locale] },
             ]}
           />
+          {phaseOneSunset ? (
+            <div className="mb-5 rounded-md border border-amber-200 bg-amber-50 px-4 py-3 text-sm leading-6 text-amber-900">
+              {locale === "en"
+                ? "Maintenance notice: this low-demand standalone page is no longer promoted or included in the sitemap. The tool remains available during consolidation."
+                : "维护说明：这个低需求独立页面已停止推广并移出站点地图；在工具整合期间，功能仍可继续使用。"}
+            </div>
+          ) : null}
           <div className="flex items-start gap-4">
             <span className="grid h-12 w-12 shrink-0 place-items-center rounded-md border border-[var(--border)] bg-[var(--brand-soft)] text-[var(--brand-strong)]">
               <ToolIcon component={registryEntry.component} className="h-6 w-6" />

@@ -11,6 +11,7 @@ import { canAccessOps } from "@/lib/ops-access";
 import { buildPageMetadata, getTestSiteUrl, withNoIndex } from "@/lib/seo";
 import { testMap } from "@/lib/test-registry";
 import { toolMap } from "@/lib/tool-registry";
+import { isPhaseOneSunsetTool } from "@/lib/tool-sunset";
 import { getExistingCreditBalance, getProfileDashboard, getTestUnlockHistory } from "@/lib/user-dashboard";
 
 export function generateStaticParams() {
@@ -68,8 +69,8 @@ export default async function ProfilePage({ params }: { params: Promise<{ locale
   const unlockedReports = testHistory.filter((item) => item.unlocked);
   const testSiteUrl = getTestSiteUrl();
   const suggestedTools = recentUsage.length > 0
-    ? recentUsage.flatMap((item) => toolMap.get(item.toolSlug)?.relatedTools ?? []).filter((slug, index, list) => list.indexOf(slug) === index).slice(0, 4)
-    : ["json-formatter", "text-cleaner", "qr-code-generator", "word-counter"];
+    ? recentUsage.flatMap((item) => toolMap.get(item.toolSlug)?.relatedTools ?? []).filter((slug, index, list) => list.indexOf(slug) === index && !isPhaseOneSunsetTool(slug)).slice(0, 4)
+    : ["json-formatter", "slug-generator", "qr-code-generator", "regex-tester"];
 
   return (
     <div className="min-h-screen bg-transparent">
@@ -114,7 +115,9 @@ export default async function ProfilePage({ params }: { params: Promise<{ locale
           <section className="surface-card p-6">
             <div className="flex flex-wrap items-center justify-between gap-3">
               <h2 className="text-xl font-bold text-[var(--text)]">{locale === "en" ? "My Reports" : "我的报告"}</h2>
-              <Link href={`${testSiteUrl}/${locale}`} className="text-sm font-semibold text-[var(--brand-strong)]">{locale === "en" ? "Take another test" : "继续测试"}</Link>
+              <span className="text-xs font-semibold uppercase tracking-[0.12em] text-[var(--text-soft)]">
+                {locale === "en" ? "Existing reports only" : "仅保留已有报告"}
+              </span>
             </div>
             <div className="mt-4 space-y-3">
               {unlockedReports.length > 0 ? unlockedReports.map((item) => {

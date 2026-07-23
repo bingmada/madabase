@@ -72,11 +72,6 @@ export function Footer() {
           <Link href="/privacy">Privacy</Link>
           <Link href="/terms">Terms</Link>
         </div>
-        <div className="footer-elsewhere" aria-label="Other Madabase projects">
-          <span>Elsewhere</span>
-          <a href="https://tools.madabase.com">Free tools</a>
-          <a href="https://test.madabase.com">Self-assessments</a>
-        </div>
       </div>
     </footer>
   );

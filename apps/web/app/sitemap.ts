@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { getIndexableBlogPosts } from "@/lib/blog";
 import { locales } from "@/lib/i18n";
 import { getSiteUrl } from "@/lib/seo";
-import { toolRegistry, getCategories } from "@/lib/tool-registry";
+import { discoverableToolRegistry, getCategories } from "@/lib/tool-registry";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = getSiteUrl();
@@ -33,7 +33,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   return locales.flatMap((locale) => [
     ...staticRoutes.map((route) => ({ url: `${baseUrl}/${locale}${route.path}`, changeFrequency: route.changeFrequency, priority: route.priority })),
     ...categories.map((category) => ({ url: `${baseUrl}/${locale}/tools/category/${category}`, changeFrequency: "weekly" as const, priority: 0.85 })),
-    ...toolRegistry.map((tool) => ({ url: `${baseUrl}/${locale}/tools/${tool.slug}`, changeFrequency: "monthly" as const, priority: tool.popular ? 0.9 : 0.8 })),
+    ...discoverableToolRegistry.map((tool) => ({ url: `${baseUrl}/${locale}/tools/${tool.slug}`, changeFrequency: "monthly" as const, priority: tool.popular ? 0.9 : 0.8 })),
     ...blogEntries[locales.indexOf(locale)],
   ]);
 }

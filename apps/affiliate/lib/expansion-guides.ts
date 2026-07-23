@@ -551,21 +551,4 @@ export const expansionGuides: Guide[] = [
       { heading: "Compare first year and renewal cost", body: "Trials and bundles can make the first year look cheaper than the long-term plan. Compare the normal annual total before treating a smart monitor as the same price as a local-video monitor." },
     ],
   },
-  {
-    site: "pet",
-    slug: "litter-box-air-purifier-placement-guide",
-    title: "Where to Put an Air Purifier Near a Litter Box",
-    dek: "Reduce litter dust and odor more effectively by placing the purifier for airflow, source control, filter access, pet safety, and room size.",
-    category: "home-care",
-    updatedAt: "July 9, 2026",
-    relatedProducts: ["litter-genie-plus-pail", "shark-neverchange-max-air-purifier", "levoit-vital-200s-p-air-purifier"],
-    relatedRoundups: ["best-pet-odor-and-litter-upgrades"],
-    sections: [
-      { heading: "Do not block the litter box", body: "Place the purifier close enough to help the room, but not so close that noise, airflow, or the power cord makes the cat avoid the box." },
-      { heading: "Leave open intake and exhaust space", body: "A purifier needs clear airflow on the intake and outlet sides. Corners, curtains, furniture, and storage bins can make a strong unit perform like a weak one." },
-      { heading: "Treat carbon as a consumable", body: "Odor control depends on gas-phase media such as activated carbon. A thin or exhausted carbon layer will not keep up with persistent litter odor no matter how strong the fan is." },
-      { heading: "Keep source control first", body: "Scooping, litter depth, box washing, disposal, ventilation, and pet health matter before filtration. Use a purifier to support the routine, not to excuse a dirty box." },
-      { heading: "Make filter changes easy", body: "If the purifier is wedged behind the litter area, filter cleaning and replacement will be skipped. Put it where pre-filters can be reached without spreading dust." },
-    ],
-  },
 ];
