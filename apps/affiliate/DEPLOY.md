@@ -4,6 +4,22 @@ The repository-wide workflow is documented in `../../DEPLOYMENT.md`. This file r
 
 The six existing affiliate hosts plus the launched Costume publication are handled by one host-aware Next.js application. Do not build or run one copy per subdomain.
 
+## Fixed production layout
+
+Use these paths directly for Affiliate releases. The repository directory contains the historical spelling `newmadabse` without the second `a`; do not silently correct it in commands.
+
+- Git repository: `/snap/newmadabse/madabase`
+- Git branch: `lyd-0609`
+- Tracked release archive: `/snap/newmadabse/madabase/apps/affiliate/.release/affiliate-runtime.tgz`
+- Immutable releases: `/srv/madabase-affiliate/releases/<commit-sha>`
+- Release-specific PM2 configurations: `/snap/ecosystem-<commit-sha>.config.js`
+- Production process: `home` on port `3011`
+- Candidate process: `candidate-home` on port `3111`
+- Current release as of 2026-07-24: `ae6ac9b`
+- Retained rollback release: `2c629e2`
+
+`/snap/home.config.js` is the legacy source-tree `npm run start` configuration. Do not use it for an immutable standalone cutover. The release-specific `/snap/ecosystem-<commit-sha>.config.js` file is the production source of truth.
+
 ## Build away from production
 
 Use Node 20 on a development machine or CI runner:
@@ -22,6 +38,69 @@ pm2 save
 ```
 
 Future releases extract into a new immutable release directory, merge the previous release's hashed browser assets into the new release's configured dist directory, and then switch or restart the single PM2 process. For the current `.next-release` build, copy the contents of the previous `apps/affiliate/.next-release/static/` into the new directory without deleting the new files. Next.js filenames are content-hashed, so retaining both generations lets Cloudflare-cached HTML continue to load its older JS and CSS after cutover. Verify the JS and CSS referenced by new HTML plus at least one previous-generation JS and CSS URL before retiring the old process. Point all affiliate Nginx virtual hosts at the single port recorded in the bundled PM2 config. Keep the previous archive and extracted release for rollback.
+
+## Repeatable Git-to-production release
+
+The archive is committed locally and pushed to `origin/lyd-0609`. Production transfers it with Git; production never runs `next build`.
+
+1. Update the fixed repository and confirm the expected commit:
+
+   ```bash
+   cd /snap/newmadabse/madabase
+   git status --short --branch
+   git pull --ff-only origin lyd-0609
+   git rev-parse --short HEAD
+   sha256sum apps/affiliate/.release/affiliate-runtime.tgz
+   ```
+
+   Preserve unrelated untracked files. Stop if tracked production files are modified or the pull is not a fast-forward.
+
+2. Substitute the actual current and previous commit SHAs, create a new immutable directory, extract as root-owned files, and retain the previous hashed assets:
+
+   ```bash
+   mkdir -p /srv/madabase-affiliate/releases/<current-sha>
+   tar -xzf apps/affiliate/.release/affiliate-runtime.tgz --no-same-owner -C /srv/madabase-affiliate/releases/<current-sha>
+   cp -an /srv/madabase-affiliate/releases/<previous-sha>/apps/affiliate/.next-release/static/. /srv/madabase-affiliate/releases/<current-sha>/apps/affiliate/.next-release/static/
+   ```
+
+3. Copy the previous release-specific PM2 configuration inside `/snap`, replace only the Affiliate release path, and retain mode `600`. Do not print or rewrite its secret environment values:
+
+   ```bash
+   cp /snap/ecosystem-<previous-sha>.config.js /snap/ecosystem-<current-sha>.config.js
+   sed -i 's|/srv/madabase-affiliate/releases/<previous-sha>|/srv/madabase-affiliate/releases/<current-sha>|g' /snap/ecosystem-<current-sha>.config.js
+   chmod 600 /snap/ecosystem-<current-sha>.config.js
+   ```
+
+4. Start `candidate-home`, validate it on port `3111`, and do not touch `home` unless every check passes:
+
+   ```bash
+   pm2 start /snap/ecosystem-<current-sha>.config.js --only candidate-home
+   node apps/affiliate/scripts/check-distribution.mjs http://127.0.0.1:3111
+   ```
+
+   Also require HTTP 200 HTML from `network`, `smarthome`, `homeoffice`, `baby`, `pets`, `style`, and `costumes` with their respective `Host` headers.
+
+5. Cut over the production process, validate the public sites, and then remove the candidate:
+
+   ```bash
+   pm2 delete home
+   pm2 start /snap/ecosystem-<current-sha>.config.js --only home
+   node apps/affiliate/scripts/check-distribution.mjs https://network.madabase.com
+   pm2 delete candidate-home
+   pm2 save
+   ```
+
+   Confirm `home` is online on port `3011` and its `pm_cwd` and `pm_exec_path` reference `/srv/madabase-affiliate/releases/<current-sha>`. Verify Main, all seven Affiliate homepages, the distribution feed, current assets, and retained previous-generation JS/CSS before closing the release.
+
+6. Roll back by replacing `<previous-sha>` below with the retained release:
+
+   ```bash
+   pm2 delete home
+   pm2 start /snap/ecosystem-<previous-sha>.config.js --only home
+   pm2 save
+   ```
+
+   Re-run the same public health checks after rollback. Never delete the previous release or its PM2 configuration during the cutover.
 
 ## Resource guardrails
 
