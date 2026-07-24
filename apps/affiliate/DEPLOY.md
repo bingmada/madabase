@@ -12,7 +12,7 @@ Use Node 20 on a development machine or CI runner:
 npm run build:release --workspace apps/affiliate
 ```
 
-The command builds in the isolated `.next-release` directory and creates `apps/affiliate/.release/affiliate-runtime.tgz`. It contains the traced Next.js runtime, browser assets, and public images. It intentionally excludes source files, development dependencies, and build caches. The isolated directory also prevents a running local development server from overwriting release output.
+The command builds in the isolated `.next-release` directory and creates `apps/affiliate/.release/affiliate-runtime.tgz`. It contains the traced Next.js runtime, browser assets, public images, and the Linux x64 Sharp/libvips packages required by the production image routes. It intentionally excludes source files, development dependencies, and build caches. The isolated directory also prevents a running local development server from overwriting release output.
 
 Upload and extract the archive into the affiliate application's fixed release directory. On the one-time migration, start the bundled PM2 definition:
 
@@ -26,6 +26,7 @@ Future releases extract into a new immutable release directory, merge the previo
 ## Resource guardrails
 
 - Production must use Node 20.x. The packaged launcher refuses older Node versions.
+- The current production target is Linux x64. Keep `NEXT_STANDALONE_SHARP_TARGET=linux-x64` on the affiliate release build so image routes do not inherit the build machine's native Sharp package.
 - Never upload `.next/cache`, the repository `node_modules`, or the source tree as part of this release.
 - Never run `next build` on the low-memory production server.
 - Run one affiliate process for `network`, `smarthome`, `homeoffice`, `baby`, `pets`, `style`, and `costume`; host detection already separates their content, canonicals, disclosures, tracking configuration, and indexing rules.

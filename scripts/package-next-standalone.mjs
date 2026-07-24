@@ -1,4 +1,5 @@
-import { cpSync, existsSync, mkdirSync, readFileSync, rmSync, statSync, writeFileSync } from "node:fs";
+import { cpSync, existsSync, mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync } from "node:fs";
+import { tmpdir } from "node:os";
 import { dirname, join, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { spawnSync } from "node:child_process";
@@ -47,6 +48,93 @@ if (!(appName in pm2Defaults)) {
 rmSync(releaseRoot, { recursive: true, force: true });
 mkdirSync(runtimeRoot, { recursive: true });
 cpSync(standaloneRoot, runtimeRoot, { recursive: true });
+
+const targetNativeDependencies = [];
+const sharpTarget = process.env.NEXT_STANDALONE_SHARP_TARGET;
+if (sharpTarget) {
+  if (!/^(linux|linuxmusl)-(x64|arm64)$/.test(sharpTarget)) {
+    throw new Error(`Unsupported NEXT_STANDALONE_SHARP_TARGET: ${sharpTarget}`);
+  }
+
+  const sharpRoot = join(runtimeRoot, "node_modules", "sharp");
+  const sharpPackagePath = join(sharpRoot, "package.json");
+  if (!existsSync(sharpPackagePath)) {
+    throw new Error("NEXT_STANDALONE_SHARP_TARGET was set, but the traced runtime does not contain sharp.");
+  }
+
+  const sharpPackage = JSON.parse(readFileSync(sharpPackagePath, "utf8"));
+  const nativePackageNames = [
+    `@img/sharp-${sharpTarget}`,
+    `@img/sharp-libvips-${sharpTarget}`,
+  ];
+  const nativeStagingRoot = mkdtempSync(join(tmpdir(), "madabase-sharp-"));
+
+  try {
+    for (const nativePackageName of nativePackageNames) {
+      const nativeVersion = sharpPackage.optionalDependencies?.[nativePackageName];
+      if (!nativeVersion) {
+        throw new Error(`${nativePackageName} is not declared by sharp ${sharpPackage.version}.`);
+      }
+
+      const packed = spawnSync(
+        "npm",
+        ["pack", `${nativePackageName}@${nativeVersion}`, "--json"],
+        { cwd: nativeStagingRoot, encoding: "utf8" },
+      );
+      if (packed.status !== 0) {
+        throw new Error(packed.stderr || `Unable to download ${nativePackageName}@${nativeVersion}.`);
+      }
+
+      let packedMetadata;
+      try {
+        packedMetadata = JSON.parse(packed.stdout);
+      } catch {
+        throw new Error(`Unable to parse npm pack output for ${nativePackageName}: ${packed.stdout}`);
+      }
+      const packedFilename = packedMetadata?.[0]?.filename;
+      if (!packedFilename) {
+        throw new Error(`npm pack did not report a filename for ${nativePackageName}.`);
+      }
+
+      const destination = join(runtimeRoot, "node_modules", ...nativePackageName.split("/"));
+      mkdirSync(destination, { recursive: true });
+      const extracted = spawnSync(
+        "tar",
+        ["-xzf", join(nativeStagingRoot, packedFilename), "-C", destination, "--strip-components=1"],
+        { encoding: "utf8" },
+      );
+      if (extracted.status !== 0) {
+        throw new Error(extracted.stderr || `Unable to extract ${nativePackageName}.`);
+      }
+
+      targetNativeDependencies.push(`${nativePackageName}@${nativeVersion}`);
+    }
+  } finally {
+    rmSync(nativeStagingRoot, { recursive: true, force: true });
+  }
+
+  const sharpBinary = join(
+    runtimeRoot,
+    "node_modules",
+    "@img",
+    `sharp-${sharpTarget}`,
+    "lib",
+    `sharp-${sharpTarget}.node`,
+  );
+  const libvipsRoot = join(
+    runtimeRoot,
+    "node_modules",
+    "@img",
+    `sharp-libvips-${sharpTarget}`,
+    "lib",
+  );
+  const hasLibvipsBinary = existsSync(libvipsRoot)
+    && readdirSync(libvipsRoot).some((filename) => filename.startsWith("libvips-cpp."));
+  if (!existsSync(sharpBinary) || !hasLibvipsBinary) {
+    throw new Error(`Unable to package the complete sharp runtime for ${sharpTarget}.`);
+  }
+}
+
 // The generated standalone server keeps the configured distDir in its embedded
 // Next config. Browser assets must therefore live under that same directory;
 // copying them to a hard-coded `.next/static` makes every JS/CSS request 404
@@ -108,6 +196,7 @@ const manifest = {
   createdAt: new Date().toISOString(),
   node: process.version,
   runtimeDirectories: copiedRuntimeDirectories,
+  targetNativeDependencies,
   start: "HOSTNAME=127.0.0.1 PORT=3000 node start.mjs",
   pm2: {
     processName: pm2.name,
@@ -118,6 +207,7 @@ const manifest = {
   notes: [
     "Build this archive off-server and upload only its contents.",
     "Use Node 20.x on both the build machine and production server.",
+    "When a native runtime target is configured, keep the recorded target packages in the archive.",
     "Do not upload build caches, source files, or development dependencies.",
   ],
 };

@@ -15,7 +15,7 @@
     "dev:style": "NEXT_PUBLIC_AFFILIATE_SITE=style next dev",
     "dev:costume": "NEXT_PUBLIC_AFFILIATE_SITE=costume next dev",
     "build": "next build",
-    "build:release": "NEXT_RELEASE_DIST_DIR=.next-release NEXT_STANDALONE_RELEASE=1 next build && NEXT_RELEASE_DIST_DIR=.next-release node ../../scripts/package-next-standalone.mjs affiliate",
+    "build:release": "NEXT_RELEASE_DIST_DIR=.next-release NEXT_STANDALONE_RELEASE=1 next build && NEXT_RELEASE_DIST_DIR=.next-release NEXT_STANDALONE_SHARP_TARGET=linux-x64 node ../../scripts/package-next-standalone.mjs affiliate",
     "build:pet": "NEXT_PUBLIC_AFFILIATE_SITE=pet next build",
     "build:homeoffice": "NEXT_PUBLIC_AFFILIATE_SITE=homeoffice next build",
     "build:baby": "NEXT_PUBLIC_AFFILIATE_SITE=baby next build",
