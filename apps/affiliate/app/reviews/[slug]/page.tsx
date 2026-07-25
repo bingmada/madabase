@@ -219,16 +219,26 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                   ) : null}
                 </div>
                 {primaryOffers.length ? (
-                  <div className="mt-5 rounded-md border border-[var(--border)] bg-white p-4 md:hidden">
-                    <p className="text-xs font-bold uppercase text-[var(--muted)]">Check the exact configuration</p>
-                    <div className="mt-2 space-y-2 text-sm leading-6 text-[var(--muted)]">
-                      {primaryOffers.map((offer) => (
-                        <p key={offer.merchant}>
-                          <span className="font-semibold text-[var(--text)]">{offer.merchant}:</span> {offer.priceNote}
-                        </p>
-                      ))}
-                    </div>
-                  </div>
+                  <section
+                    aria-label="Mobile purchase decision checks"
+                    className="mt-5 rounded-md border border-[var(--border)] bg-white p-4 md:hidden"
+                  >
+                    <p className="text-xs font-bold uppercase text-[var(--muted)]">Decide before the product image</p>
+                    <dl className="mt-2 divide-y divide-[var(--border)] text-sm leading-6">
+                      <div className="grid gap-1 py-2">
+                        <dt className="font-bold text-[var(--text)]">Skip if</dt>
+                        <dd className="text-[var(--muted)]">{product.cons[0] ?? "The main trade-off conflicts with your most important use case."}</dd>
+                      </div>
+                      <div className="grid gap-1 py-2">
+                        <dt className="font-bold text-[var(--text)]">Verify first</dt>
+                        <dd className="text-[var(--muted)]">{product.evidence[0] ?? "Confirm the exact model, bundle, seller, and return path."}</dd>
+                      </div>
+                      <div className="grid gap-1 py-2">
+                        <dt className="font-bold text-[var(--text)]">{primaryOffers[0].merchant}</dt>
+                        <dd className="text-[var(--muted)]">{primaryOffers[0].priceNote}</dd>
+                      </div>
+                    </dl>
+                  </section>
                 ) : null}
               </div>
               <div>

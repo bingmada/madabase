@@ -280,6 +280,23 @@ for (const [kind, route] of [["product", "reviews"], ["guide", "guides"], ["roun
   }
 }
 
+const reviewTemplateSource = fs.readFileSync(path.join(workspaceDir, "app", "reviews", "[slug]", "page.tsx"), "utf8");
+const reviewImageIndex = reviewTemplateSource.indexOf("src={displayImage}");
+const reviewFirstScreenSource = reviewImageIndex === -1
+  ? ""
+  : reviewTemplateSource.slice(0, reviewImageIndex);
+if (
+  !reviewFirstScreenSource.includes('aria-label="Mobile purchase decision checks"') ||
+  !reviewFirstScreenSource.includes("md:hidden") ||
+  !reviewFirstScreenSource.includes("product.cons[0]") ||
+  !reviewFirstScreenSource.includes("product.evidence[0]")
+) {
+  errors.push("Product template must show mobile skip and verification checks before the product image");
+}
+if (!reviewFirstScreenSource.includes('position="review-hero"')) {
+  errors.push("Product template must show the primary sponsored CTA before the product image");
+}
+
 const sitesSource = fs.readFileSync(path.join(libDir, "sites.ts"), "utf8");
 for (const match of sitesSource.matchAll(/heroImage:\s*"([^"]+\.svg)"/g)) {
   errors.push(`Site hero ${match[1]} must use a photographic bitmap instead of a placeholder SVG`);
