@@ -320,6 +320,35 @@ export async function listIndexableCostumeProducts(take = 30) {
   }
 }
 
+export async function listCuratedCostumeProducts(slugs: string[]) {
+  if (!hasDatabaseUrl() || !slugs.length) return [];
+  const uniqueSlugs = [...new Set(slugs)].slice(0, 50);
+
+  try {
+    const prisma = getAffiliatePrisma();
+    const products = await prisma.merchantProduct.findMany({
+      where: {
+        slug: { in: uniqueSlugs },
+        merchant: { slug: "abracadabra-nyc", advertiserCid: "7889430" },
+        softRetiredAt: null,
+        availability: { not: "out of stock" },
+        images: { some: { usageStatus: "authorized", permissionRef: { not: null } } },
+        affiliateLinks: { some: { site: "costume", active: true, verifiedAt: { not: null } } },
+      },
+      include: productInclude,
+    });
+    const bySlug = new Map(products.map((product) => [product.slug, catalogProduct(product)]));
+
+    return uniqueSlugs.flatMap((slug) => {
+      const product = bySlug.get(slug);
+      return product?.authorizedImage && product.activeLink ? [product] : [];
+    });
+  } catch {
+    console.error("Curated Costume product query failed.");
+    return [];
+  }
+}
+
 export async function getCostumeCatalogStats() {
   if (!hasDatabaseUrl()) return null;
   try {

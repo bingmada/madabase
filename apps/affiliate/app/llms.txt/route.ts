@@ -31,6 +31,13 @@ export async function GET() {
       : "Affiliate disclosure: As an Amazon Associate, this site may earn from qualifying purchases. Prices, availability, seller details, and product versions should be confirmed on the retailer page before buying.",
     "",
     ...(site.key === "costume"
+      ? [
+          "Seasonal planning:",
+          "- Halloween 2026 costumes, masks, animatronics, and decorations: /halloween",
+          "",
+        ]
+      : []),
+    ...(site.key === "costume"
       ? linesFor("Reviewed product pages", costumeProducts, "/products")
       : linesFor("Product evidence pages", products, "/reviews")),
     "",

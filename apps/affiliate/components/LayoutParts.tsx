@@ -20,15 +20,21 @@ export function SiteChrome({ site, children }: { site: SiteConfig; children: Rea
       <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-white/95 backdrop-blur">
         <div className="shell flex min-h-16 items-center justify-between gap-4 py-3">
           <Link className="shrink-0 whitespace-nowrap text-lg font-black text-[var(--brand-strong)]" href="/">
-            {site.name}
+            {site.key === "costume" ? (
+              <>
+                <span className="sm:hidden">Madabase Halloween</span>
+                <span className="hidden sm:inline">{site.name}</span>
+              </>
+            ) : site.name}
           </Link>
           <nav className="hidden min-w-0 flex-nowrap items-center justify-end gap-x-3 whitespace-nowrap text-xs font-semibold sm:flex sm:gap-x-4 sm:text-sm" aria-label="Primary navigation">
             <Link className="hidden hover:text-[var(--brand-strong)] sm:inline" href="/">
               Home
             </Link>
+            {site.key === "costume" ? <Link className="font-black text-[#a14f1c] hover:text-[var(--brand-strong)]" href="/halloween">Halloween</Link> : null}
             {site.key === "costume" ? <Link className="hover:text-[var(--brand-strong)]" href="/catalog">Catalog</Link> : null}
             {site.categories.map((category) => (
-              <Link className="hover:text-[var(--brand-strong)]" href={`/categories/${category.slug}`} key={category.slug}>
+              <Link className={site.key === "costume" ? "hidden" : "hover:text-[var(--brand-strong)]"} href={`/categories/${category.slug}`} key={category.slug}>
                 {category.name}
               </Link>
             ))}
@@ -52,6 +58,7 @@ export function SiteChrome({ site, children }: { site: SiteConfig; children: Rea
             <div className="panel absolute right-0 top-full z-50 mt-2 w-56 p-2 shadow-[var(--shadow)]">
               <nav className="grid gap-1 text-sm font-semibold" aria-label="Mobile navigation">
                 <Link className="rounded-md px-3 py-2 hover:bg-[var(--surface-muted)]" href="/">Home</Link>
+                {site.key === "costume" ? <Link className="rounded-md px-3 py-2 font-black text-[#a14f1c] hover:bg-[var(--surface-muted)]" href="/halloween">Halloween 2026</Link> : null}
                 {site.key === "costume" ? <Link className="rounded-md px-3 py-2 hover:bg-[var(--surface-muted)]" href="/catalog">Catalog</Link> : null}
                 {site.categories.map((category) => (
                   <Link className="rounded-md px-3 py-2 hover:bg-[var(--surface-muted)]" href={`/categories/${category.slug}`} key={category.slug}>

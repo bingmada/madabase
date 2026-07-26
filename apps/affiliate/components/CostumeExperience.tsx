@@ -2,7 +2,8 @@ import { ArrowRight, BadgeDollarSign, CalendarClock, ListChecks, ShieldCheck } f
 import Link from "next/link";
 import type { SiteConfig } from "@/lib/sites";
 import { costumeGuides } from "@/lib/costume-content";
-import { getCostumeCatalogStats, listIndexableCostumeProducts, type CostumeCatalogCategory, type CostumeCatalogFilters } from "@/lib/costume-catalog";
+import { getCostumeCatalogStats, listCuratedCostumeProducts, listIndexableCostumeProducts, type CostumeCatalogCategory, type CostumeCatalogFilters } from "@/lib/costume-catalog";
+import { costumeHalloweenSlugs } from "@/lib/costume-halloween";
 import { CostumeCatalogCard, CostumeCatalogExplorer } from "./CostumeCatalog";
 import { Hero, TrustBar } from "./LayoutParts";
 
@@ -30,22 +31,43 @@ async function CostumeCatalogSnapshot() {
 }
 
 export async function CostumeHome({ site }: { site: SiteConfig }) {
-  const featuredProducts = await listIndexableCostumeProducts(9);
+  const halloweenProducts = await listCuratedCostumeProducts(costumeHalloweenSlugs);
+  const featuredProducts = halloweenProducts.length
+    ? halloweenProducts.slice(0, 9)
+    : await listIndexableCostumeProducts(9);
+  const featuredGuides = [...costumeGuides].sort((left, right) => {
+    const priority = ["when-to-order-a-halloween-costume", "costume-sizing-measurements-and-returns", "large-prop-animatronic-space-and-power-checklist"];
+    const leftIndex = priority.indexOf(left.slug);
+    const rightIndex = priority.indexOf(right.slug);
+    return (leftIndex === -1 ? priority.length : leftIndex) - (rightIndex === -1 ? priority.length : rightIndex);
+  });
 
   return (
     <main>
       <Hero site={site} />
       <TrustBar />
       <CostumeCatalogSnapshot />
+      <section className="border-b border-[#4a2b56] bg-[#1a1023] text-white">
+        <div className="shell flex flex-col gap-5 py-7 sm:flex-row sm:items-center sm:justify-between">
+          <div className="max-w-3xl">
+            <p className="text-xs font-black uppercase tracking-[0.14em] text-[#ffc56d]">Halloween 2026 starts here</p>
+            <h2 className="mt-2 text-2xl font-black text-white">Start with sizing, masks, haunted props, lighting, and delivery risk—not a wall of seasonal products.</h2>
+          </div>
+          <Link className="button-primary shrink-0 !bg-[#df7627] !text-white" href="/halloween">Open the Halloween guide <ArrowRight aria-hidden="true" size={16} /></Link>
+        </div>
+      </section>
       <section className="section bg-white" id="reviews">
         <div className="shell">
           <div className="max-w-3xl">
-            <p className="eyebrow">Year-round costume decisions</p>
-            <h2 className="mt-3 text-3xl font-black sm:text-4xl">Shop by the kind of decision, not by an endless product wall.</h2>
+            <p className="eyebrow">Halloween-first navigation</p>
+            <h2 className="mt-3 text-3xl font-black sm:text-4xl">Choose the Halloween job first, then narrow the product.</h2>
             <p className="mt-4 text-lg leading-8 text-[var(--muted)]">
-              Start with product type, then narrow by price, audience, occasion, rental, professional use, or seasonal relevance.
+              Start with a wearable look, creature transformation, haunted-scene prop, or party atmosphere. Then narrow by price, audience, size, venue, power, professional use, or repeat-use value.
             </p>
-            <Link className="button-primary mt-6" href="/catalog">Browse the filtered catalog <ArrowRight aria-hidden="true" size={16} /></Link>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <Link className="button-primary" href="/halloween">Plan Halloween 2026 <ArrowRight aria-hidden="true" size={16} /></Link>
+              <Link className="button-secondary" href="/catalog?occasion=halloween">Browse Halloween products</Link>
+            </div>
           </div>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {site.categories.map((category) => (
@@ -70,11 +92,11 @@ export async function CostumeHome({ site }: { site: SiteConfig }) {
         <div className="shell">
           <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
             <div className="max-w-2xl">
-              <p className="eyebrow">Editor-reviewed starting points</p>
-              <h2 className="mt-3 text-3xl font-black">Featured products with exact retailer destinations.</h2>
-              <p className="mt-4 leading-8 text-[var(--muted)]">These pages combine current merchant details with category-specific fit, use, transport, care, and storage checks.</p>
+              <p className="eyebrow">Halloween editor&apos;s starting points</p>
+              <h2 className="mt-3 text-3xl font-black">A small Halloween edit with a clear job for every product.</h2>
+              <p className="mt-4 leading-8 text-[var(--muted)]">Wearable transformations, haunted props, pumpkins, and lights are selected for distinct use cases and exact retailer destinations—not merely because a Feed row says “Halloween.”</p>
             </div>
-            <Link className="button-secondary" href="/catalog">Browse all products <ArrowRight aria-hidden="true" size={16} /></Link>
+            <Link className="button-secondary" href="/halloween">View all 12 Halloween picks <ArrowRight aria-hidden="true" size={16} /></Link>
           </div>
           {featuredProducts.length ? (
             <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -92,11 +114,11 @@ export async function CostumeHome({ site }: { site: SiteConfig }) {
       <section className="section bg-white" id="guides">
         <div className="shell">
           <div className="max-w-2xl">
-            <p className="eyebrow">Decision guides</p>
-            <h2 className="mt-3 text-3xl font-black">Resolve fit, timing, materials, and storage before checkout.</h2>
+              <p className="eyebrow">Halloween planning guides</p>
+              <h2 className="mt-3 text-3xl font-black">Resolve timing, fit, power, materials, and storage before October 31.</h2>
           </div>
           <div className="mt-8 grid gap-5 md:grid-cols-2">
-            {costumeGuides.map((guide) => (
+            {featuredGuides.map((guide) => (
               <Link className="panel p-5" href={`/guides/${guide.slug}`} key={guide.slug}>
                 <p className="eyebrow">{guide.category.replaceAll("-", " ")}</p>
                 <h3 className="mt-3 text-xl font-bold">{guide.title}</h3>
@@ -113,7 +135,7 @@ export async function CostumeHome({ site }: { site: SiteConfig }) {
             { icon: ListChecks, title: "Useful checks before checkout", body: "Product pages surface fit, included pieces, materials, setup, care, timing, and return questions that listings can leave unclear." },
             { icon: ShieldCheck, title: "Exact retailer destinations", body: "Purchase buttons are tied to the matching Abracadabra product and use the dedicated CJ attribution path." },
             { icon: BadgeDollarSign, title: "Price is a filter", body: "Premium is a flagship section; affordable costumes, accessories, props, and effects still belong in the same type-led site." },
-            { icon: CalendarClock, title: "Seasonal, not disposable", body: "Halloween changes merchandising and presentation while the core URLs continue serving cosplay, theater, parties, and professional use." },
+            { icon: CalendarClock, title: "Halloween-first, not disposable", body: "Halloween leads the site from summer through October while the same useful URLs continue serving cosplay, theater, parties, and professional use after the season." },
           ].map((item) => (
             <div className="panel p-5" key={item.title}>
               <item.icon aria-hidden="true" className="text-[var(--brand)]" size={22} />

@@ -19,6 +19,7 @@ const cacheablePageSources = [
   "/editorial-policy",
   "/affiliate-disclosure",
   "/contact",
+  "/halloween",
   "/categories/:path*",
   "/best/:path*",
   "/reviews/:path*",

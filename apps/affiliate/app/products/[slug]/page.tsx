@@ -1,4 +1,4 @@
-import { CheckCircle2, CircleDollarSign, PackageCheck } from "lucide-react";
+import { CalendarClock, CheckCircle2, CircleDollarSign, PackageCheck } from "lucide-react";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { JsonLd } from "@/components/JsonLd";
@@ -12,6 +12,7 @@ import {
   relatedCostumeCatalogProducts,
   type CostumeCatalogProduct,
 } from "@/lib/costume-catalog";
+import { costumeHalloweenPick } from "@/lib/costume-halloween";
 import { absoluteUrl, breadcrumbSchema, pageMetadata } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 
@@ -49,10 +50,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (site.key !== "costume") return {};
   const catalogProduct = await getCostumeCatalogProduct(slug) ?? await findCostumeCatalogAlias(slug);
   if (catalogProduct) {
+    const halloweenPick = costumeHalloweenPick(catalogProduct.slug);
     const metadata = pageMetadata(
       site,
       `/products/${catalogProduct.slug}`,
-      `${catalogProduct.title}: Price, Availability, and Buying Checks`,
+      halloweenPick
+        ? `${catalogProduct.title}: Halloween Fit and Setup Checks`
+        : `${catalogProduct.title}: Price, Availability, and Buying Checks`,
       catalogProduct.editorial?.summary ?? cleanFeedText(catalogProduct.description, 155) ?? `Check current price, availability, audience, fit, and buying considerations for ${catalogProduct.title}.`,
     );
     return {
@@ -76,6 +80,7 @@ export default async function CostumeProductPage({ params }: { params: Promise<{
     notFound();
   }
   if (catalogProduct) {
+    const halloweenPick = costumeHalloweenPick(catalogProduct.slug);
     const category = site.categories.find((item) => item.slug === catalogProduct.categorySlug);
     const relatedGuides = costumeGuides.filter((guide) => guide.category === catalogProduct.categorySlug).slice(0, 3);
     const relatedProducts = await relatedCostumeCatalogProducts(catalogProduct);
@@ -94,7 +99,9 @@ export default async function CostumeProductPage({ params }: { params: Promise<{
       <main className="section">
         <JsonLd data={breadcrumbSchema(site, [
           { name: "Home", path: "/" },
-          { name: "Catalog", path: "/catalog" },
+          ...(halloweenPick
+            ? [{ name: "Halloween 2026", path: "/halloween" }]
+            : [{ name: "Catalog", path: "/catalog" }]),
           ...(category ? [{ name: category.name, path: `/categories/${category.slug}` }] : []),
           { name: catalogProduct.title, path: `/products/${catalogProduct.slug}` },
         ])} />
@@ -122,6 +129,7 @@ export default async function CostumeProductPage({ params }: { params: Promise<{
           <div className="grid gap-8 lg:grid-cols-[minmax(0,1.35fr)_minmax(300px,.65fr)]">
             <article>
               <div className="flex flex-wrap gap-2">
+                {halloweenPick ? <span className="costume-chip !bg-[#a14f1c]">Halloween edit · {halloweenPick.collection}</span> : null}
                 {catalogProduct.premium ? <span className="costume-chip !bg-[var(--brand-strong)]">$1,000+ Premium</span> : null}
                 {catalogProduct.professional ? <span className="costume-chip !bg-[var(--brand-strong)]">Professional</span> : null}
                 {catalogProduct.halloween ? <span className="costume-chip !bg-[var(--brand-strong)]">Halloween</span> : null}
@@ -213,6 +221,13 @@ export default async function CostumeProductPage({ params }: { params: Promise<{
                   <CircleDollarSign aria-hidden="true" className="text-[#f4d79b]" size={22} />
                   <h2 className="mt-4 text-xl font-bold text-white">Premium & Professional edit</h2>
                   <p className="mt-2 text-sm leading-6 text-white/75">Compare repeat use, construction, alteration, transport, care, and storage before paying more.</p>
+                </Link>
+              ) : null}
+              {halloweenPick ? (
+                <Link className="panel block p-5" href="/halloween">
+                  <CalendarClock aria-hidden="true" className="text-[#a14f1c]" size={22} />
+                  <h2 className="mt-4 text-xl font-bold">Halloween 2026 edit</h2>
+                  <p className="mt-2 text-sm leading-6 text-[var(--muted)]">Return to the selected costumes, masks, haunted props, decorations, and ordering timeline.</p>
                 </Link>
               ) : null}
             </aside>

@@ -50,7 +50,8 @@
     "authorize:cj:images": "node scripts/authorize-cj-product-images.mjs",
     "verify:cj:link": "node scripts/verify-cj-product-link.mjs",
     "activate:cj:catalog-links": "node scripts/activate-cj-catalog-links.mjs",
-    "publish:costume:cohort": "node scripts/publish-costume-cohort.mjs"
+    "publish:costume:cohort": "node scripts/publish-costume-cohort.mjs",
+    "publish:costume:halloween": "node scripts/publish-costume-halloween-cohort.mjs"
   },
   "dependencies": {
     "@prisma/adapter-pg": "^7.8.0",
