@@ -698,10 +698,21 @@ export const adjacentExpansionRoundups: Roundup[] = [
     site: "smarthome",
     slug: "matter-starter-kit-hub-sensor-smart-plug",
     title: "Matter Starter Kit: Hub, Contact Sensor and Smart Plug",
+    updatedAt: "July 26, 2026",
     dek: "Build a small Matter setup with Aqara Hub M3, Aqara P2, and Tapo P125M while keeping Thread, Wi-Fi, controllers, and ecosystem sharing clear.",
     category: "automation",
     intent: "Start with a few useful Matter devices without buying overlapping controllers or confusing Thread with Wi-Fi.",
     intro: "A hub, contact sensor, and smart plug create a useful first automation: when a door opens after dark, a lamp can turn on. The setup works only when each device's network and controller requirements are understood.",
+    comparisonTable: {
+      title: "Starter-kit role map",
+      columns: ["Aqara Hub M3", "Aqara P2 sensor", "Tapo P125M plug"],
+      rows: [
+        { label: "Matter role", values: ["Controller and hub option", "Matter accessory", "Matter accessory"] },
+        { label: "Network path", values: ["Ethernet or Wi-Fi plus supported hub radios", "Matter over Thread", "Matter over 2.4GHz Wi-Fi"] },
+        { label: "Main requirement", values: ["Confirm whether an existing controller already covers the plan", "Compatible controller and Thread border router", "Compatible controller and reliable 2.4GHz coverage"] },
+        { label: "Physical fallback", values: ["Keep network and reset access", "Door still opens normally", "Use the plug's local button"] },
+      ],
+    },
     decisionGuide: [
       { label: "Need Thread", detail: "Hub M3 can provide a Thread border-router and Matter-controller path." },
       { label: "Door state", detail: "Aqara P2 reports open and closed over Matter over Thread." },

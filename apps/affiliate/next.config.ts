@@ -113,6 +113,61 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/guides/non-wifi-baby-monitor-guide",
+        destination: "/guides/wifi-vs-non-wifi-baby-monitor-guide",
+        permanent: true,
+      },
+      {
+        source: "/best/best-bottle-sterilizer-dryer-for-pump-parts",
+        destination: "/best/best-bottle-sterilizers-and-dryers",
+        permanent: true,
+      },
+      {
+        source: "/best/best-bottle-sterilizer-dryer-for-small-kitchens",
+        destination: "/best/best-bottle-sterilizers-and-dryers",
+        permanent: true,
+      },
+      {
+        source: "/guides/baby-bottle-sterilizer-dryer-counter-space-checklist",
+        destination: "/best/best-bottle-sterilizers-and-dryers",
+        permanent: true,
+      },
+      {
+        source: "/guides/bottle-sterilizer-vs-dryer-guide",
+        destination: "/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
+        permanent: true,
+      },
+      {
+        source: "/guides/standing-desk-for-small-bedroom-guide",
+        destination: "/best/best-standing-desks-for-small-spaces",
+        permanent: true,
+      },
+      {
+        source: "/guides/standing-desk-designs-for-small-spaces-guide",
+        destination: "/best/best-standing-desks-for-small-spaces",
+        permanent: true,
+      },
+      {
+        source: "/guides/ergonomic-chair-under-500-guide",
+        destination: "/best/best-ergonomic-chairs-under-500",
+        permanent: true,
+      },
+      {
+        source: "/best/best-video-call-lighting-for-home-office",
+        destination: "/best/best-home-office-lighting-for-video-calls-in-small-rooms",
+        permanent: true,
+      },
+      {
+        source: "/guides/home-office-lighting-for-video-calls-checklist",
+        destination: "/best/best-home-office-lighting-for-video-calls-in-small-rooms",
+        permanent: true,
+      },
+      {
+        source: "/guides/home-office-lighting-placement-guide",
+        destination: "/best/best-home-office-lighting-for-video-calls-in-small-rooms",
+        permanent: true,
+      },
+      {
         source: "/guides/litter-box-air-purifier-placement-guide",
         destination: "/guides/air-purifier-placement-near-litter-box",
         permanent: true,

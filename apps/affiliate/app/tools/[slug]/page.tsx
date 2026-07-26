@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { CalculatorTool } from "@/components/Calculator";
 import { JsonLd } from "@/components/JsonLd";
 import { findRoundup, findTool } from "@/lib/content";
-import { breadcrumbSchema, pageMetadata, toolSchema } from "@/lib/seo";
+import { breadcrumbSchema, faqPageSchema, pageMetadata, toolSchema } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
@@ -31,6 +31,7 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
         ])}
       />
       <JsonLd data={toolSchema(site, tool)} />
+      {tool.faqs?.length ? <JsonLd data={faqPageSchema(tool.faqs)} /> : null}
       <div className="shell max-w-4xl">
         <div className="flex flex-wrap items-center gap-3">
           <p className="eyebrow">Calculator</p>
@@ -42,9 +43,33 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
         </div>
         <h1 className="mt-3 text-4xl font-black leading-tight">{tool.title}</h1>
         <p className="mt-5 text-lg leading-8 text-[var(--muted)]">{tool.dek}</p>
+        {tool.updatedAt ? <p className="mt-3 text-sm font-semibold text-[var(--muted)]">Updated {tool.updatedAt} · Planning estimate, not a product guarantee</p> : null}
         <div className="mt-8">
           <CalculatorTool tool={tool} />
         </div>
+        {tool.sections?.length ? (
+          <section className="mt-10 space-y-5" aria-label="How to use this estimate">
+            {tool.sections.map((section) => (
+              <article className="panel p-6" key={section.heading}>
+                <h2 className="text-2xl font-black">{section.heading}</h2>
+                <p className="mt-3 leading-8 text-[var(--muted)]">{section.body}</p>
+              </article>
+            ))}
+          </section>
+        ) : null}
+        {tool.faqs?.length ? (
+          <section className="mt-10">
+            <h2 className="text-3xl font-black">Planning questions</h2>
+            <div className="mt-5 space-y-4">
+              {tool.faqs.map((faq) => (
+                <details className="panel p-5" key={faq.question}>
+                  <summary className="cursor-pointer font-bold">{faq.question}</summary>
+                  <p className="mt-3 leading-7 text-[var(--muted)]">{faq.answer}</p>
+                </details>
+              ))}
+            </div>
+          </section>
+        ) : null}
         <div className="mt-8 grid gap-4 sm:grid-cols-2">
           {tool.relatedRoundups.map((slug) => {
             const roundup = findRoundup(site.key, slug);

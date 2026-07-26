@@ -234,8 +234,18 @@ export const expansionGuides: Guide[] = [
     title: "Bottle Washer vs. Sterilizer vs. Dryer",
     dek: "Separate cleaning, sanitizing, and drying so you can choose the appliance that matches the real bottleneck.",
     category: "feeding",
-    updatedAt: "June 27, 2026",
+    updatedAt: "July 26, 2026",
     relatedRoundups: ["best-bottle-sterilizers-and-dryers"],
+    comparisonTable: {
+      title: "Match the appliance to the repeated feeding-cleanup job",
+      columns: ["Washer", "Sterilizer or sanitizing cycle", "Dryer"],
+      rows: [
+        { label: "Primary job", values: ["Remove milk residue using water and detergent", "Add a germ-reduction step after cleaning", "Remove remaining moisture"] },
+        { label: "Choose when", values: ["Hand-scrubbing compatible parts is the bottleneck", "Current health and manufacturer guidance calls for sanitizing", "Clean parts stay wet or are needed again quickly"] },
+        { label: "Does not prove", values: ["That every pump part is compatible", "That dirty parts have been cleaned", "That finished parts have clean storage"] },
+        { label: "Buying check", values: ["Spray path, detergent, filter, cycle, and part fit", "Exact cycle instructions and item compatibility", "Small-part airflow, cycle time, and storage path"] },
+      ],
+    },
     sources: [
       {
         name: "CDC: Clean, Sanitize, and Store Infant Feeding Items",

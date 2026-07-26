@@ -13,13 +13,18 @@ const valueFor = (flag) => {
 
 const gscPath = valueFor("--gsc");
 const queryPath = valueFor("--queries");
+const queryScope = valueFor("--query-scope") ?? "all-domain";
 const reportPath = path.resolve(workspaceDir, valueFor("--report") ?? "../../docs/affiliate-search-portfolio.md");
 const csvPath = path.resolve(workspaceDir, valueFor("--csv") ?? "../../docs/affiliate-search-portfolio.csv");
 const recoveryCsvPath = path.resolve(workspaceDir, valueFor("--recovery-csv") ?? "../../docs/affiliate-search-recovery.csv");
 const reportDate = valueFor("--date") ?? new Date().toISOString().slice(0, 10);
 
 if (!gscPath) {
-  console.error("Usage: node scripts/report-search-portfolio.mjs --gsc /path/to/Pages.csv [--queries /path/to/Queries.csv]");
+  console.error("Usage: node scripts/report-search-portfolio.mjs --gsc /path/to/Pages.csv [--queries /path/to/Queries.csv] [--query-scope all-domain|qualified]");
+  process.exit(1);
+}
+if (!["all-domain", "qualified"].includes(queryScope)) {
+  console.error("--query-scope must be either all-domain or qualified.");
   process.exit(1);
 }
 
@@ -84,8 +89,12 @@ function propertyName(node) {
 function properties(node) {
   return new Map(
     node.properties
-      .filter(ts.isPropertyAssignment)
-      .map((property) => [propertyName(property.name), property.initializer])
+      .filter((property) => ts.isPropertyAssignment(property) || ts.isShorthandPropertyAssignment(property))
+      .map((property) =>
+        ts.isShorthandPropertyAssignment(property)
+          ? [property.name.text, property.name]
+          : [propertyName(property.name), property.initializer],
+      )
       .filter(([name]) => Boolean(name)),
   );
 }
@@ -125,8 +134,8 @@ function stringArray(node, constants) {
 function entryKind(props) {
   if (props.has("priceBand") && props.has("offers")) return "product";
   if (props.has("productSlugs") && props.has("faqs")) return "roundup";
-  if (props.has("relatedRoundups") && props.has("sections")) return "guide";
   if (props.has("kind") && props.has("relatedRoundups")) return "tool";
+  if (props.has("relatedRoundups") && props.has("sections")) return "guide";
   return undefined;
 }
 
@@ -268,25 +277,70 @@ const gscByUrl = new Map(gscRecords.map((record) => [record.url, record]));
 const queryRecords = queryPath ? csvRecords(path.resolve(queryPath)) : [];
 function domainStatsFor(records) {
   return Object.values(records.reduce((result, record) => {
-  const host = new URL(record.url).hostname;
-  const current = result[host] ?? { host, urls: 0, clicks: 0, impressions: 0, weightedPosition: 0 };
-  current.urls += 1;
-  current.clicks += record.clicks;
-  current.impressions += record.impressions;
-  current.weightedPosition += record.position * record.impressions;
-  result[host] = current;
-  return result;
+    const host = new URL(record.url).hostname;
+    const current = result[host] ?? { host, urls: 0, clicks: 0, impressions: 0, weightedPosition: 0 };
+    current.urls += 1;
+    current.clicks += record.clicks;
+    current.impressions += record.impressions;
+    current.weightedPosition += record.position * record.impressions;
+    result[host] = current;
+    return result;
   }, {})).sort((left, right) => right.impressions - left.impressions);
+}
+
+function summaryStats(label, records) {
+  return records.reduce((result, record) => {
+    result.urls += 1;
+    result.clicks += record.clicks;
+    result.impressions += record.impressions;
+    result.weightedPosition += record.position * record.impressions;
+    return result;
+  }, { host: label, urls: 0, clicks: 0, impressions: 0, weightedPosition: 0 });
+}
+
+function isLegacyLocaleUrl(value) {
+  const url = new URL(value);
+  return url.hostname === "madabase.com" && /^\/(?:en|zh)(?:\/|$)/.test(url.pathname);
+}
+
+function isLegacyNamespaceUrl(value, namespace) {
+  const url = new URL(value);
+  return url.hostname === "madabase.com" && new RegExp(`^/(?:en|zh)/${namespace}(?:/|$)`).test(url.pathname);
 }
 
 const qualifiedHosts = new Set(Object.values(siteHosts));
 const qualifiedGscRecords = gscRecords.filter((record) => qualifiedHosts.has(new URL(record.url).hostname));
-const excludedGscRecords = gscRecords.filter((record) => {
+const toolsGscRecords = gscRecords.filter((record) => new URL(record.url).hostname === "tools.madabase.com");
+const legacyToolsGscRecords = gscRecords.filter((record) => isLegacyNamespaceUrl(record.url, "tools"));
+const legacyTestsGscRecords = gscRecords.filter((record) => isLegacyNamespaceUrl(record.url, "tests"));
+const legacyOtherLocaleGscRecords = gscRecords.filter(
+  (record) => isLegacyLocaleUrl(record.url) && !isLegacyNamespaceUrl(record.url, "tools") && !isLegacyNamespaceUrl(record.url, "tests"),
+);
+const toolsMigrationGscRecords = [...legacyToolsGscRecords, ...toolsGscRecords];
+const mainGscRecords = gscRecords.filter((record) => {
   const host = new URL(record.url).hostname;
-  return host === "tools.madabase.com" || host === "test.madabase.com" || host === "madabase.com" || host === "www.madabase.com";
+  return host === "madabase.com" && !isLegacyLocaleUrl(record.url);
+});
+const otherExcludedGscRecords = gscRecords.filter((record) => {
+  const host = new URL(record.url).hostname;
+  return host === "test.madabase.com" || host === "www.madabase.com";
 });
 const domainStats = domainStatsFor(qualifiedGscRecords);
-const excludedDomainStats = domainStatsFor(excludedGscRecords);
+const toolsMigrationStats = [
+  summaryStats("legacy madabase.com /en/tools/** + /zh/tools/**", legacyToolsGscRecords),
+  summaryStats("tools.madabase.com", toolsGscRecords),
+  summaryStats("migration subtotal", toolsMigrationGscRecords),
+];
+const mainStats = summaryStats("new Main (non-locale madabase.com)", mainGscRecords);
+const otherExcludedStats = [
+  summaryStats("legacy madabase.com /en/tests/** + /zh/tests/**", legacyTestsGscRecords),
+  summaryStats("legacy madabase.com other locale paths", legacyOtherLocaleGscRecords),
+  ...domainStatsFor(otherExcludedGscRecords),
+].filter((item) => item.urls);
+const representedPageImpressions = gscRecords.reduce((total, record) => total + record.impressions, 0);
+const toolsMigrationShare = representedPageImpressions
+  ? toolsMigrationStats.at(-1).impressions / representedPageImpressions * 100
+  : 0;
 
 function daysSince(value) {
   if (!value) return undefined;
@@ -427,6 +481,10 @@ const totalAffiliateMetrics = exposedEntries.reduce((result, entry) => ({
 }), { clicks: 0, impressions: 0 });
 const topQueue = portfolio.filter((entry) => !["protect-and-convert", "new-observation"].includes(entry.band)).slice(0, 40);
 const topQueries = queryRecords.slice(0, 30);
+const queryTotals = queryRecords.reduce((result, record) => ({
+  clicks: result.clicks + Number(record.Clicks || 0),
+  impressions: result.impressions + Number(record.Impressions || 0),
+}), { clicks: 0, impressions: 0 });
 
 function normalizedTitleTokens(value) {
   return new Set(
@@ -457,10 +515,6 @@ const distinctIntentPairs = new Set([
   [
     "https://baby.madabase.com/best/babybjorn-mini-vs-ergobaby-omni-breeze",
     "https://baby.madabase.com/best/babybjorn-harmony-vs-ergobaby-omni-breeze",
-  ],
-  [
-    "https://homeoffice.madabase.com/guides/home-office-lighting-for-video-calls-checklist",
-    "https://homeoffice.madabase.com/best/best-video-call-lighting-for-home-office",
   ],
   [
     "https://network.madabase.com/best/best-poe-switches-for-home-cameras-and-access-points",
@@ -496,9 +550,22 @@ function recoveryDecision(entry, duplicates) {
   if (entry.age !== undefined && entry.age <= 7) return "observe-day-7";
   if (entry.age !== undefined && entry.age <= 30) return "observe-day-30";
   if (duplicates.length) return "duplicate-intent-review";
+  if (entry.gaps.some((gap) => ["no-source-link", "implicit-evidence-mode"].includes(gap))) return "repair-content-integrity";
+  if (entry.gaps.includes("missing-update-date")) return "freshness-and-index-review";
   if (entry.gaps.some((gap) => ["underlinked-guide", "small-product-set", "weak-title", "thin-summary"].includes(gap))) return "repair-local-discovery";
   return "demand-and-index-review";
 }
+
+const recoveryActions = {
+  "observe-day-7": "Hold the query stable; check indexing and first query signals at day 7.",
+  "observe-day-30": "Hold through the 30-day gate unless a technical defect appears.",
+  "maintenance-hold": "Keep out of the growth queue; review with the maintenance portfolio at day 30.",
+  "duplicate-intent-review": "Compare intent and merge into the stronger canonical when the jobs overlap.",
+  "repair-content-integrity": "Add an explicit evidence mode, exact-product sources, and version checks before promotion.",
+  "freshness-and-index-review": "Review source freshness and original timing, then inspect the live index state.",
+  "repair-local-discovery": "Repair the local content or internal-link gap, then recheck discovery.",
+  "demand-and-index-review": "Inspect live index state and keyword demand before rewriting or retiring.",
+};
 
 const recoveryHeaders = [
   "site",
@@ -531,9 +598,18 @@ const recoveryRows = noMetricEntries.map((entry) => {
       ? "day-7 indexing and query check"
       : decision === "observe-day-30" || decision === "maintenance-hold"
         ? "day-30 portfolio review"
+        : decision === "repair-content-integrity"
+          ? "repair evidence, exact-product sources, and version checks before live inspection"
+          : decision === "freshness-and-index-review"
+            ? "review source freshness and original timing, then inspect the live index state"
         : "manual URL inspection and demand review before rewrite, merge, or sitemap removal",
   ];
 });
+const recoveryDecisionCounts = recoveryRows.reduce((counts, row) => {
+  const decision = row[8];
+  counts[decision] = (counts[decision] ?? 0) + 1;
+  return counts;
+}, {});
 fs.writeFileSync(recoveryCsvPath, `${[recoveryHeaders, ...recoveryRows].map((row) => row.map(escapeCsv).join(",")).join("\n")}\n`);
 
 const lines = [
@@ -545,19 +621,39 @@ const lines = [
   "",
   "## Qualified content-host GSC context",
   "",
-  "Tools, Test, and legacy root-domain rows are permanently excluded from growth totals. The new editorial root is measured separately from its 2026-07-21 launch date so historical locale traffic cannot contaminate it.",
+  "Tools, Test, and legacy root-locale rows are permanently excluded from growth totals. New editorial root URLs are listed separately and require a post-2026-07-21 date filter for growth claims. Counts below are represented page rows from the supplied Pages CSV, not the Search Console headline-card total.",
   "",
   "| Host | Exposed URLs | Clicks | Impressions | Weighted position |",
   "| --- | ---: | ---: | ---: | ---: |",
   ...domainStats.map((item) => `| ${item.host} | ${item.urls} | ${item.clicks} | ${item.impressions} | ${item.impressions ? (item.weightedPosition / item.impressions).toFixed(1) : "-"} |`),
   "",
-  "## Excluded transition context",
+  "## Tools migration transfer context",
   "",
-  "These rows remain visible only for migration and retirement monitoring. They do not count toward search-growth targets.",
+  "Legacy locale Tools paths and the Tools host are one migration cohort. Legacy Test and other locale paths are reported separately below. A host-level increase can therefore be a transfer from the old host rather than new demand. This cohort remains visible only for migration and retirement monitoring and never counts toward search-growth targets.",
   "",
-  "| Host | Exposed URLs | Clicks | Impressions | Weighted position |",
+  "| Segment | Exposed URLs | Clicks | Impressions | Weighted position |",
   "| --- | ---: | ---: | ---: | ---: |",
-  ...excludedDomainStats.map((item) => `| ${item.host} | ${item.urls} | ${item.clicks} | ${item.impressions} | ${item.impressions ? (item.weightedPosition / item.impressions).toFixed(1) : "-"} |`),
+  ...toolsMigrationStats.map((item) => `| ${item.host} | ${item.urls} | ${item.clicks} | ${item.impressions} | ${item.impressions ? (item.weightedPosition / item.impressions).toFixed(1) : "-"} |`),
+  "",
+  `Migration share of represented page-row impressions: ${toolsMigrationShare.toFixed(1)}%. This is not a share of a finite ranking quota and should not be read as impressions taken from affiliate pages.`,
+  "",
+  "## New Main cohort",
+  "",
+  "Main is structurally separated from locale paths. If the supplied export window begins before the 2026-07-21 launch, non-locale URL rows can still contain historical root-domain activity; use a post-launch date-filtered export before making a Main growth claim.",
+  "",
+  "| Segment | Exposed URLs | Clicks | Impressions | Weighted position |",
+  "| --- | ---: | ---: | ---: | ---: |",
+  `| ${mainStats.host} | ${mainStats.urls} | ${mainStats.clicks} | ${mainStats.impressions} | ${mainStats.impressions ? (mainStats.weightedPosition / mainStats.impressions).toFixed(1) : "-"} |`,
+  "",
+  "## Other excluded transition context",
+  "",
+  "Legacy Test, other locale, Test-host, and www rows remain visible only for cleanup monitoring.",
+  "",
+  "| Segment | Exposed URLs | Clicks | Impressions | Weighted position |",
+  "| --- | ---: | ---: | ---: | ---: |",
+  ...(otherExcludedStats.length
+    ? otherExcludedStats.map((item) => `| ${item.host} | ${item.urls} | ${item.clicks} | ${item.impressions} | ${item.impressions ? (item.weightedPosition / item.impressions).toFixed(1) : "-"} |`)
+    : ["| none | 0 | 0 | 0 | - |"]),
   "",
   "## Portfolio baseline",
   "",
@@ -582,6 +678,16 @@ const lines = [
   "| --- | ---: | --- |",
   ...bandOrder.map((band) => `| ${band} | ${bandCounts[band] ?? 0} | ${primaryAction(band)} |`),
   "",
+  "## No-impression recovery queue",
+  "",
+  "Every published page without a GSC impression row is assigned a decision gate. Observation rows are intentionally held stable; repair and review rows remain active work.",
+  "",
+  "| Decision | Pages | Next action |",
+  "| --- | ---: | --- |",
+  ...Object.entries(recoveryActions)
+    .filter(([decision]) => recoveryDecisionCounts[decision])
+    .map(([decision, action]) => `| ${decision} | ${recoveryDecisionCounts[decision]} | ${action} |`),
+  "",
   "## First remediation queue",
   "",
   "This queue is ordered by the closest organic opportunity first, then by impressions. The CSV contains every page.",
@@ -590,8 +696,23 @@ const lines = [
   "| --- | --- | ---: | ---: | ---: | --- | --- |",
   ...topQueue.map((entry) => `| ${entry.site} | [${entry.title}](${entry.url}) | ${entry.metrics?.clicks ?? "-"} | ${entry.metrics?.impressions ?? "-"} | ${entry.metrics?.position?.toFixed(1) ?? "-"} | ${entry.band} | ${entry.gaps.join(", ") || "none"} |`),
   "",
-  "## Query signals",
+  queryScope === "qualified" ? "## Qualified-filter query signals" : "## All-domain query context (not an affiliate priority queue)",
   "",
+  ...(queryPath
+    ? queryScope === "qualified"
+      ? [
+        "The supplied Queries CSV is labeled qualified only because the caller declared that it was exported under an exact affiliate page filter. The script cannot verify that UI filter. Query rows still omit anonymized queries, so their totals will not reconcile to the Pages CSV.",
+        "",
+        `Represented query rows: ${queryRecords.length}; row-sum clicks: ${queryTotals.clicks}; row-sum impressions: ${queryTotals.impressions}.`,
+        "",
+      ]
+      : [
+        "This all-domain Queries CSV cannot be joined to a host or page. It may contain Tools, legacy locale, Main, Test, and affiliate queries, and Search Console omits anonymized queries. It is context only: do not use it to prioritize affiliate rewrites without a page-filtered query drilldown.",
+        "",
+        `Represented query rows: ${queryRecords.length}; row-sum clicks: ${queryTotals.clicks}; row-sum impressions: ${queryTotals.impressions}. These totals are intentionally not compared with the Pages CSV.`,
+        "",
+      ]
+    : []),
   ...(topQueries.length ? [
     "| Query | Clicks | Impressions | CTR | Position |",
     "| --- | ---: | ---: | ---: | ---: |",

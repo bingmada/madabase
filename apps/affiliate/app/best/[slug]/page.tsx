@@ -370,6 +370,36 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
                 </div>
               </section>
             ) : null}
+            {roundup.comparisonTable ? (
+              <section className="panel p-5">
+                <p className="eyebrow">Decision evidence</p>
+                <h2 className="mt-3 text-xl font-bold">{roundup.comparisonTable.title}</h2>
+                <div className="mt-5 overflow-x-auto rounded-md border border-[var(--border)] bg-white">
+                  <table className="w-full min-w-[920px] text-left text-sm">
+                    <thead className="bg-[var(--surface-muted)] text-xs uppercase text-[var(--muted)]">
+                      <tr>
+                        <th className="px-4 py-3">Pick</th>
+                        {roundup.comparisonTable.columns.map((column) => (
+                          <th className="px-4 py-3" key={column}>{column}</th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-[var(--border)]">
+                      {roundup.comparisonTable.rows.map((row) => (
+                        <tr key={row.label}>
+                          <th className="px-4 py-4 font-bold">{row.label}</th>
+                          {roundup.comparisonTable?.columns.map((column, index) => (
+                            <td className="px-4 py-4 leading-6 text-[var(--muted)]" key={`${row.label}-${column}`}>
+                              {row.values[index] ?? "Confirm before purchase"}
+                            </td>
+                          ))}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+            ) : null}
             {roundup.sections?.map((section) => (
               <section className="panel p-5" key={section.heading}>
                 <h2 className="text-xl font-bold">{section.heading}</h2>

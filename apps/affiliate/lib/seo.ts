@@ -416,6 +416,8 @@ export function guideSchema(site: SiteConfig, guide: Guide) {
 }
 
 export function toolSchema(site: SiteConfig, tool: Tool) {
+  const updated = contentDate(tool.updatedAt);
+
   return {
     "@context": "https://schema.org",
     "@type": "WebApplication",
@@ -425,6 +427,7 @@ export function toolSchema(site: SiteConfig, tool: Tool) {
     applicationCategory: "UtilityApplication",
     operatingSystem: "Any",
     isAccessibleForFree: true,
+    ...(updated ? { dateModified: updated.isoDateTime } : {}),
     publisher: {
       "@type": "Organization",
       name: site.name,

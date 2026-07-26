@@ -24,8 +24,12 @@ function propertyName(node) {
 function properties(node) {
   return new Map(
     node.properties
-      .filter(ts.isPropertyAssignment)
-      .map((property) => [propertyName(property.name), property.initializer])
+      .filter((property) => ts.isPropertyAssignment(property) || ts.isShorthandPropertyAssignment(property))
+      .map((property) =>
+        ts.isShorthandPropertyAssignment(property)
+          ? [property.name.text, property.name]
+          : [propertyName(property.name), property.initializer],
+      )
       .filter(([name]) => Boolean(name)),
   );
 }
@@ -78,8 +82,8 @@ function productFactoryOfferUrls(props) {
 function entryKind(props) {
   if (props.has("priceBand") && props.has("offers")) return "product";
   if (props.has("productSlugs") && props.has("faqs")) return "roundup";
-  if (props.has("relatedRoundups") && props.has("sections")) return "guide";
   if (props.has("kind") && props.has("relatedRoundups")) return "tool";
+  if (props.has("relatedRoundups") && props.has("sections")) return "guide";
   return undefined;
 }
 
@@ -289,9 +293,9 @@ if (
   !reviewFirstScreenSource.includes('aria-label="Mobile purchase decision checks"') ||
   !reviewFirstScreenSource.includes("md:hidden") ||
   !reviewFirstScreenSource.includes("product.cons[0]") ||
-  !reviewFirstScreenSource.includes("product.evidence[0]")
+  !reviewFirstScreenSource.includes("primaryOffers[0].priceNote")
 ) {
-  errors.push("Product template must show mobile skip and verification checks before the product image");
+  errors.push("Product template must show mobile skip and merchant-listing verification checks before the product image");
 }
 if (!reviewFirstScreenSource.includes('position="review-hero"')) {
   errors.push("Product template must show the primary sponsored CTA before the product image");

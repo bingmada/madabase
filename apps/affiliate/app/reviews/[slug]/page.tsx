@@ -230,11 +230,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                         <dd className="text-[var(--muted)]">{product.cons[0] ?? "The main trade-off conflicts with your most important use case."}</dd>
                       </div>
                       <div className="grid gap-1 py-2">
-                        <dt className="font-bold text-[var(--text)]">Verify first</dt>
-                        <dd className="text-[var(--muted)]">{product.evidence[0] ?? "Confirm the exact model, bundle, seller, and return path."}</dd>
-                      </div>
-                      <div className="grid gap-1 py-2">
-                        <dt className="font-bold text-[var(--text)]">{primaryOffers[0].merchant}</dt>
+                        <dt className="font-bold text-[var(--text)]">Verify on {primaryOffers[0].merchant}</dt>
                         <dd className="text-[var(--muted)]">{primaryOffers[0].priceNote}</dd>
                       </div>
                     </dl>

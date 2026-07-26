@@ -316,18 +316,77 @@ export const topicClusterGuides: Guide[] = [
     title: "Thread Border Router vs. Matter Controller",
     dek: "Understand what a Thread border router does, how it differs from a Matter controller, when one device provides both, and why a Matter-over-Thread accessory may still fail to commission.",
     category: "automation",
-    updatedAt,
+    updatedAt: "July 26, 2026",
     relatedProducts: ["aqara-hub-m3", "aqara-door-and-window-sensor-p2", "tapo-p125m-matter-smart-plug"],
     relatedRoundups: ["matter-starter-kit-hub-sensor-smart-plug"],
     sources: [
       { name: "Matter overview", url: "https://csa-iot.org/all-solutions/matter/", note: "Primary standards-organization overview." },
       { name: "Thread overview", url: "https://www.threadgroup.org/What-is-Thread", note: "Primary Thread networking overview." },
+      { name: "Apple Thread border-router support", url: "https://support.apple.com/en-us/102078", note: "Official exact-generation list for Thread-enabled Apple home hubs and local iPhone support." },
+      { name: "Google Home Matter preparation", url: "https://support.google.com/googlehome/answer/12391458", note: "Official Google Home table separating Matter hubs with and without Thread border routing." },
+      { name: "Aqara Hub M3 manual", url: "https://www.aqara.com/wp-content/uploads/2024/05/M3-User-Manual-1.pdf", note: "Official Matter-access and Thread border-router roles for Hub M3." },
+      { name: "SmartThings Matter integration", url: "https://support.smartthings.com/hc/en-us/articles/11219700390804-SmartThings-x-Matter-Integration", note: "Official example of a Matter controller that may still require a separate Thread border router." },
     ],
+    comparisonTable: {
+      title: "Which role is present in common hubs?",
+      columns: ["Matter controller or ecosystem hub", "Thread border router", "Buying implication"],
+      rows: [
+        {
+          label: "HomePod mini / HomePod (2nd gen)",
+          values: [
+            "Yes, as an Apple home hub",
+            "Yes",
+            "Can cover both jobs for Apple Home; update software and keep the hub powered at home",
+          ],
+        },
+        {
+          label: "Apple TV 4K",
+          values: [
+            "Yes, when configured as an Apple home hub",
+            "2nd gen and 3rd-gen Wi-Fi + Ethernet models are on Apple's Thread-enabled list",
+            "Do not buy by the Apple TV 4K name alone; generation and configuration matter",
+          ],
+        },
+        {
+          label: "Nest Hub / Google Home hubs",
+          values: [
+            "Nest Hub generations and several Google speakers can act as Google Home Matter hubs",
+            "Nest Hub 2nd gen and Nest Hub Max include Thread; Nest Hub 1st gen does not",
+            "A Wi-Fi-only Matter hub controls Matter-over-Wi-Fi but still needs a separate border router for Thread",
+          ],
+        },
+        {
+          label: "Nest Wifi Pro / Google TV Streamer (4K)",
+          values: [
+            "Yes for Google Home",
+            "Yes",
+            "Both roles are published, but Thread credentials and the chosen ecosystem still need correct setup",
+          ],
+        },
+        {
+          label: "Aqara Hub M3",
+          values: [
+            "Yes for supported third-party Matter devices in Aqara Home",
+            "Yes",
+            "Also bridges supported Aqara devices; bridging a Zigbee child is not the same as converting it to Thread",
+          ],
+        },
+        {
+          label: "SmartThings 2015 Hub",
+          values: [
+            "Yes for Matter devices over Wi-Fi or LAN",
+            "No",
+            "A separate compatible Thread border router is required for Matter-over-Thread accessories",
+          ],
+        },
+      ],
+    },
     sections: [
-      { heading: "The Thread border router carries network traffic", body: "It connects the low-power Thread mesh to the wider IP network. If a device says Matter over Thread, the home needs a compatible Thread border router somewhere in the ecosystem path. Wi-Fi Matter devices such as a compatible smart plug do not need Thread for their radio path." },
-      { heading: "The Matter controller manages the accessory", body: "It commissions devices, applies the ecosystem's permissions, and exposes controls and automations. Phones can assist setup without always serving as the always-home controller." },
-      { heading: "One hub can provide both roles", body: "Some Apple, Google, Amazon, SmartThings, Aqara, and Home Assistant hardware combines the jobs. Check the exact generation and current software rather than the brand alone." },
-      { heading: "Write both requirements before purchase", body: "For a Matter-over-Thread device, name the primary Matter controller and at least one compatible Thread border router. This prevents the common assumption that either role automatically includes the other." },
+      { heading: "The short answer: routing is not controlling", body: "A Thread border router forwards IPv6 traffic between the low-power Thread mesh and the home's Wi-Fi or Ethernet network. It does not decide what a lock, sensor, light, or plug should do. A Matter controller commissions the accessory into an ecosystem, holds permissions, and exposes controls and automations. Matter-over-Thread normally needs both roles, even when one physical hub supplies them." },
+      { heading: "Matter-over-Wi-Fi needs a controller but not Thread", body: "A Matter accessory can communicate over Wi-Fi, Ethernet, or Thread. A Matter-over-Wi-Fi plug still needs a Matter controller or hub for the chosen ecosystem, but it does not need a Thread border router for its radio path. The Matter logo alone therefore does not tell you which network hardware is required; check the transport named on the box and current product page." },
+      { heading: "Exact generation beats the family name", body: "Apple lists HomePod mini, HomePod (2nd generation), Apple TV 4K (2nd generation), and Apple TV 4K (3rd generation) Wi-Fi + Ethernet as Thread-enabled devices. Google lists Nest Hub (2nd generation), Nest Hub Max, Nest Wifi Pro, and Google TV Streamer (4K) among its Thread border routers, while Nest Hub (1st generation) remains a Matter hub without Thread. Similar names do not guarantee the same radio." },
+      { heading: "A combined hub can still leave two separate Thread networks", body: "Buying a second border router does not automatically extend the first Thread mesh. Ecosystems may create separate Thread networks with different credentials, and multi-admin sharing controls the Matter fabric rather than magically merging every Thread credential set. Choose the primary ecosystem, verify credential sharing, and commission one accessory before resetting an existing installation." },
+      { heading: "Write both requirements before purchase", body: "For a Matter-over-Thread device, write down the exact accessory model and transport, the primary Matter ecosystem and always-home controller, the exact Thread border-router model and generation, and the phone or app used for commissioning. For a Wi-Fi Matter device, replace the border-router check with Wi-Fi band, LAN, and account requirements." },
     ],
   },
   {
@@ -396,10 +455,20 @@ export const topicClusterTools: Tool[] = [
   {
     site: "pet",
     slug: "pet-room-air-change-calculator",
-    title: "Pet Room Air-Change Calculator",
+    title: "Pet Room Air-Change and CADR Calculator",
     dek: "Estimate a planning CADR target from room area, ceiling height, and a pet-room air-change goal.",
     category: "home-care",
+    updatedAt: "July 26, 2026",
     kind: "air",
+    sections: [
+      { heading: "The result is a room-volume planning target", body: "The calculator multiplies floor area by ceiling height, then converts a five-air-changes-per-hour planning goal into cubic feet per minute. It does not measure the purifier's delivered airflow in the actual furnished room." },
+      { heading: "Compare CADR, not a maximum-room headline", body: "Use a current smoke CADR or another clearly defined clean-air delivery figure when screening purifiers. Open doors, high ceilings, furniture, filter loading, fan speed, noise tolerance, and room leakage can reduce the effective result." },
+      { heading: "Remove odor and hair at the source", body: "An air purifier can support airborne particle control, but litter, urine, damp fabric, bedding, visible hair, and ventilation problems still need scooping, washing, vacuuming, drying, and source correction." },
+    ],
+    faqs: [
+      { question: "Does a purifier remove pet hair from furniture?", answer: "No. A pre-filter may catch airborne hair, but floors, upholstery, bedding, and pet beds still need physical cleaning." },
+      { question: "Is five air changes per hour mandatory?", answer: "No. It is the planning goal used by this tool, not a universal medical or building requirement. Adjust the decision to the room, pollutant, noise, ventilation, and professional guidance." },
+    ],
     relatedRoundups: ["levoit-vital-200s-p-vs-shark-neverchange-max", "best-pet-odor-and-litter-upgrades"],
   },
   {
@@ -408,7 +477,17 @@ export const topicClusterTools: Tool[] = [
     title: "Mesh Node and Backhaul Planner",
     dek: "Estimate a starting node count from home size and floors, then identify where Ethernet backhaul deserves priority.",
     category: "wifi",
+    updatedAt: "July 26, 2026",
     kind: "mesh",
+    sections: [
+      { heading: "Floors create a placement problem, not an automatic shopping list", body: "The planner uses home size and floor count to create a first test layout. Stairwells, open landings, dense floor construction, long hallways, and the modem location decide whether nodes can hear one another; do not place one unit on every floor without checking the upstream path." },
+      { heading: "Prioritize wired backhaul at the hardest boundary", body: "When practical, use Ethernet between the router and the node separated by the densest floor or longest distance. Wired backhaul can improve stability and preserve wireless airtime more reliably than upgrading every node to a higher speed class." },
+      { heading: "Validate the smaller layout before adding a node", body: "Test the work area, bedrooms, TV, gaming, and outdoor edge with the first estimated layout. Move an existing node toward the weak area while preserving a strong link before buying another pack." },
+    ],
+    faqs: [
+      { question: "How is this different from the Wi-Fi coverage estimator?", answer: "This planner focuses on floor count and backhaul priority. The coverage estimator uses home size and connected-device count to screen node count and network load." },
+      { question: "Does every mesh node need Ethernet?", answer: "No. Wireless backhaul can work well with good placement, but Ethernet is especially useful across difficult floors, long distances, or busy office and media paths." },
+    ],
     relatedRoundups: ["best-mesh-wifi-for-apartments-and-homes", "tp-link-deco-be67-vs-be63"],
   },
   {
@@ -417,7 +496,17 @@ export const topicClusterTools: Tool[] = [
     title: "Matter and Thread Border Router Compatibility Checker",
     dek: "Translate planned Thread and Wi-Fi Matter devices into Matter controller, Thread border-router, and network requirements.",
     category: "automation",
+    updatedAt: "July 26, 2026",
     kind: "matter",
+    sections: [
+      { heading: "Count transport before choosing a hub", body: "A Matter-over-Thread sensor or lock needs a compatible Matter controller and Thread border router. A Wi-Fi Matter device needs a Matter controller and the supported Wi-Fi network, but it does not need Thread solely because it carries the Matter logo." },
+      { heading: "Check the exact controller hardware", body: "Phones can commission devices but should not automatically be counted as an always-available home controller or border router. Verify the exact speaker, display, TV box, hub, or Home Assistant radio and its current software against the chosen ecosystem." },
+      { heading: "Map ecosystem sharing and fallback", body: "Decide which ecosystem commissions first, whether multi-admin sharing is required, which vendor app retains advanced settings, and what local physical control remains when internet, hub, phone, or account access fails." },
+    ],
+    faqs: [
+      { question: "Does every Matter device need a Thread border router?", answer: "No. Matter can use Wi-Fi or Ethernet as well as Thread. Only the planned Matter-over-Thread path creates the Thread border-router requirement." },
+      { question: "Is a Matter controller the same as a Thread border router?", answer: "No. They are separate roles, although one physical product can perform both. Verify each role on the exact model and software version." },
+    ],
     relatedRoundups: ["matter-starter-kit-hub-sensor-smart-plug"],
   },
 ];

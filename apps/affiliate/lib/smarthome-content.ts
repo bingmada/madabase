@@ -351,9 +351,19 @@ export const smartHomeGuides: Guide[] = [
     relatedProducts: ["aqara-hub-m3", "aqara-door-and-window-sensor-p2", "aqara-smart-lock-u400", "tapo-p125m-matter-smart-plug"],
   },
   {
-    site: "smarthome", slug: "matter-vs-thread-vs-zigbee", category: "automation", updatedAt: "July 11, 2026",
+    site: "smarthome", slug: "matter-vs-thread-vs-zigbee", category: "automation", updatedAt: "July 26, 2026",
     title: "Matter vs Zigbee vs Thread: Which Smart-Home Standard Do You Need?",
     dek: "Understand Matter vs Zigbee vs Thread, including radios, controllers, border routers, hubs, compatibility, and offline control.",
+    comparisonTable: {
+      title: "Matter, Thread, and Zigbee answer different buying questions",
+      columns: ["Matter", "Thread", "Zigbee"],
+      rows: [
+        { label: "Primary role", values: ["Application and interoperability layer", "Low-power IP mesh network", "Low-power full-stack mesh system"] },
+        { label: "Required path", values: ["Compatible Matter controller", "Thread border router for the wider IP network", "Compatible coordinator or hub"] },
+        { label: "What the logo does not prove", values: ["Whether the device uses Wi-Fi or Thread", "Which ecosystem controls the accessory", "Whether every vendor-specific feature crosses hubs"] },
+        { label: "Buying check", values: ["Device type, transport, controller, and ecosystem", "Exact border-router model and software", "Hub compatibility and exposed features"] },
+      ],
+    },
     sections: [
       { heading: "Matter is the common application language", body: "Matter defines how supported device types can be commissioned and controlled across compatible ecosystems. A Matter logo does not identify the radio by itself; Matter can run over Wi-Fi, Ethernet, or Thread." },
       { heading: "Thread is an IP mesh network", body: "Thread is a low-power IPv6 mesh used by devices such as sensors and locks. Thread devices need a compatible border router to connect the Thread mesh with the home's other IP networks." },
@@ -364,6 +374,7 @@ export const smartHomeGuides: Guide[] = [
     sources: [
       { name: "Connectivity Standards Alliance — Matter", url: "https://csa-iot.org/all-solutions/matter/", note: "Matter scope and ecosystem role." },
       { name: "Thread Group — What is Thread?", url: "https://www.threadgroup.org/What-is-Thread/Overview", note: "Thread network and border-router fundamentals." },
+      { name: "Connectivity Standards Alliance — Zigbee", url: "https://csa-iot.org/all-solutions/zigbee/", note: "Zigbee mesh, application, and certification scope." },
     ],
     relatedRoundups: ["ultraloq-bolt-se-vs-aqara-u400", "aqara-u400-vs-u100"], relatedProducts: ["ultraloq-bolt-se-smart-lock", "aqara-smart-lock-u400", "aqara-smart-lock-u100"],
   },

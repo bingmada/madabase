@@ -78,6 +78,11 @@ export type Roundup = Publishable & {
   intro?: string;
   sections?: Array<{ heading: string; body: string }>;
   decisionGuide?: Array<{ label: string; detail: string }>;
+  comparisonTable?: {
+    title: string;
+    columns: string[];
+    rows: Array<{ label: string; values: string[] }>;
+  };
   methodology: string[];
   productSlugs: string[];
   faqs: Array<{ question: string; answer: string }>;
@@ -110,7 +115,10 @@ export type Tool = Publishable & {
   title: string;
   dek: string;
   category: string;
+  updatedAt?: string;
   kind: "feeding" | "desk" | "diapers" | "wifi" | "air" | "mesh" | "matter";
+  sections?: Array<{ heading: string; body: string }>;
+  faqs?: Array<{ question: string; answer: string }>;
   relatedRoundups: string[];
 };
 

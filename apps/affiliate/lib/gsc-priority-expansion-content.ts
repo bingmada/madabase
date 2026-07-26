@@ -1,6 +1,6 @@
 import type { Guide, Product, Roundup } from "./types";
 
-const updatedAt = "July 10, 2026";
+const updatedAt = "July 26, 2026";
 
 export const gscPriorityProducts: Product[] = [
   {
@@ -10,8 +10,9 @@ export const gscPriorityProducts: Product[] = [
     amazonTitle: "Dr. Brown's All-in-One Sterilizer and Dryer for Baby Bottles, Parts and Other Newborn Essentials",
     amazonDetailUrl: "https://www.amazon.com/dp/B089QWNQXC",
     seoTitle: "Dr. Brown's Sterilizer Dryer Review: Capacity & Drying",
-    updatedAt,
+    updatedAt: "July 26, 2026",
     sources: [
+      { name: "Dr. Brown's Bottle Sterilizer and Dryer", url: "https://drbrownsbaby.com/products/dr-browns-bottle-sterilizer-and-dryer", note: "Official capacity, cycle modes, HEPA-filter life, distilled-water, and closed-lid storage guidance." },
       { name: "Amazon listing: Dr. Brown's All-in-One Sterilizer and Dryer", url: "https://www.amazon.com/dp/B089QWNQXC", note: "ASIN, title, bottle capacity, cycle modes, and current listing details." },
     ],
     editorialSections: [
@@ -63,6 +64,7 @@ export const gscPriorityProducts: Product[] = [
     seoTitle: "GROWNSY Bottle Sterilizer and Dryer Review: Compact Counter Fit",
     updatedAt,
     sources: [
+      { name: "GROWNSY product manuals", url: "https://grownsy.com/pages/product-user-manual", note: "Official model 916 sterilizer-dryer manual index." },
       { name: "Amazon listing: GROWNSY Bottle Sterilizer and Dryer", url: "https://www.amazon.com/dp/B09HH7HSGV", note: "ASIN, compact model title, item model LS-BE916, dimensions, and listing bullets." },
     ],
     editorialSections: [
@@ -114,6 +116,7 @@ export const gscPriorityProducts: Product[] = [
     seoTitle: "Chicco Sterilizer Dryer Review: 6-Bottle Capacity",
     updatedAt,
     sources: [
+      { name: "Chicco Advanced Sterilizer and Dryer", url: "https://www.chiccousa.com/shop-our-products/feeding-and-soothing/feeding-accessories/advanced-sterilizer-and-dryer/00007392100070.html", note: "Official six-bottle capacity, four programs, under-40-minute full cycle, dimensions, filter, and descale guidance." },
       { name: "Amazon listing: Chicco Advanced Electric Steam Sterilizer and Dryer", url: "https://www.amazon.com/dp/B0BG67HG7S", note: "ASIN, title, listed capacity, cycle options, dimensions, and style details." },
     ],
     editorialSections: [
@@ -143,7 +146,9 @@ export const gscPriorityProducts: Product[] = [
       "Product type": "Electric steam sterilizer and dryer",
       "Listed capacity": "Up to six bottles plus accessories",
       "Cycle options": "Sterilize only, sterilize and dry, dry only, delay start",
-      "Amazon title verified": "July 10, 2026",
+      Dimensions: "10.75 x 7.9 x 14.75 inches",
+      "Published full cycle": "Under 40 minutes",
+      "Source details verified": "July 26, 2026",
     },
     evidence: [
       "Amazon listing verified ASIN B0BG67HG7S and Chicco Store byline",
@@ -295,79 +300,33 @@ export const gscPriorityRoundups: Roundup[] = [
     ],
   },
   {
-    site: "baby",
-    slug: "best-bottle-sterilizer-dryer-for-pump-parts",
-    title: "Best Bottle Sterilizer and Dryer for Pump Parts",
-    dek: "Choose between a sterilizer-dryer combo and a larger washer by counting valves, flanges, caps, bottles, drying space, and repeat cycles.",
-    category: "feeding",
-    intent: "Pick the feeding cleanup appliance that reduces daily pump-part and bottle friction.",
-    intro:
-      "A bottle sterilizer can be disappointing if the real problem is wet pump parts covering the counter. Count the small pieces first, then decide whether the daily bottleneck is washing, sanitizing, drying, or clean storage.",
-    decisionGuide: [
-      { label: "Drying is the pain point", detail: "A sterilizer-dryer combo can reduce counter clutter when clean parts stay wet too long." },
-      { label: "Hand-washing is the pain point", detail: "A washer-style appliance deserves attention when scrubbing bottles and pump parts consumes the routine." },
-      { label: "Small kitchen", detail: "Check footprint, lid clearance, drain route, and where clean parts will land after a cycle." },
-      { label: "Occasional sanitizing", detail: "A simpler or smaller approach may beat a large appliance that will not stay on the counter." },
-    ],
-    methodology: [
-      "Count bottles and pump parts instead of relying on headline bottle capacity",
-      "Separate washing, sanitizing, drying, and storage",
-      "Use CDC and manufacturer instructions as the safety baseline",
-    ],
-    productSlugs: [
-      "baby-brezza-sterilizer-dryer-advanced",
-      "dr-browns-all-in-one-sterilizer-dryer",
-      "chicco-advanced-sterilizer-dryer",
-      "grownsy-bottle-sterilizer-dryer",
-      "momcozy-kleanpal-pro-baby-bottle-washer",
-    ],
-    faqs: [
-      { question: "Do sterilizer dryers wash bottles?", answer: "Usually no. A sterilizer-dryer handles sanitizing and drying after cleaning unless the exact model includes a wash cycle." },
-      { question: "Should pump parts go in a sterilizer?", answer: "Only if the pump and appliance instructions allow it. Follow the pump maker, appliance manual, and current health guidance." },
-      { question: "Is drying worth paying for?", answer: "It can be if parts must be reused quickly or if clean wet pieces are creating counter clutter every day." },
-    ],
-  },
-  {
-    site: "baby",
-    slug: "best-bottle-sterilizer-dryer-for-small-kitchens",
-    title: "Best Bottle Sterilizer and Dryer for Small Kitchens",
-    dek: "Compare compact footprint, lid clearance, bottle capacity, pump-part space, drying, storage, and the counter trade-offs that matter in a small kitchen.",
-    category: "feeding",
-    intent: "Choose a bottle sterilizer and dryer that fits a small kitchen without sacrificing the parts the daily routine actually needs.",
-    intro: "The smallest appliance is not always the best small-kitchen choice. Measure the permanent footprint, lid swing, outlet, and clean landing area, then count pump valves and bottle parts before comparing capacity claims.",
-    decisionGuide: [
-      { label: "Smallest footprint", detail: "Start with GROWNSY when counter depth and storage after each cycle are the main constraints." },
-      { label: "Six-bottle routine", detail: "Compare Chicco or Baby Brezza only after measuring height, lid clearance, and accessory space." },
-      { label: "Recognizable middle option", detail: "Dr. Brown's fits families that want drying without moving to a full washer-style appliance." },
-      { label: "Pump-heavy routine", detail: "Count valves, flanges, caps, and tubing before trusting a bottle-only capacity number." },
-    ],
-    methodology: [
-      "Measure the appliance in its working position, including lid clearance",
-      "Count real bottles and pump parts instead of comparing headline capacity alone",
-      "Separate washing, sterilizing, drying, and clean storage",
-      "Check current model, bundle, seller, return policy, and electrical requirements",
-    ],
-    productSlugs: [
-      "grownsy-bottle-sterilizer-dryer",
-      "dr-browns-all-in-one-sterilizer-dryer",
-      "chicco-advanced-sterilizer-dryer",
-      "baby-brezza-sterilizer-dryer-advanced",
-    ],
-    faqs: [
-      { question: "Is a compact sterilizer dryer enough for pump parts?", answer: "It can be when the exact valves, flanges, caps, and tubing fit without blocking steam or airflow. Count the real daily load first." },
-      { question: "Does a small sterilizer dryer wash bottles?", answer: "Usually no. Clean feeding parts before sanitizing and drying unless the exact appliance includes a compatible wash cycle." },
-      { question: "Should the appliance stay on the counter?", answer: "Only when the lid can open safely, the outlet and steam path are clear, and the clean parts have a covered landing or storage plan." },
-    ],
-  },
-  {
     site: "homeoffice",
     slug: "best-home-office-lighting-for-video-calls-in-small-rooms",
     title: "Best Home Office Lighting for Video Calls in Small Rooms",
+    updatedAt: "July 26, 2026",
     dek: "Choose compact lighting for Zoom, Meet, and Teams calls by face exposure, glare, monitor space, window position, and desk clutter.",
     category: "meetings",
     intent: "Improve video-call appearance in a small home office without turning the desk into a studio.",
     intro:
       "Small-room video calls usually fail because the camera sees a bright window, overhead shadows, or a dark face. A compact front light can outperform a new webcam when it is placed near the camera and adjusted before meetings.",
+    sections: [
+      {
+        heading: "Light the face before the room",
+        body: "Put the first controllable light near or slightly above the camera path, reduce strong backlight from windows, and avoid relying on an overhead fixture alone. The camera needs a readable face, not merely a bright room.",
+      },
+      {
+        heading: "Separate call lighting from task lighting",
+        body: "A monitor bar can improve the keyboard and desk surface without adding a lamp base, while a camera-adjacent light is usually better for face exposure. A hybrid swing-arm lamp can do both jobs only when its clamp and reach let it move into the camera path.",
+      },
+      {
+        heading: "Use a repeatable glare test",
+        body: "Join a preview at the times calls actually happen, then check glasses, glossy screens, and bright windows. Lower brightness, raise the light, or move it sideways until reflections leave the camera view without making the face too dark.",
+      },
+      {
+        heading: "Measure mounts and controls before choosing",
+        body: "Check monitor thickness, laptop-lid strength, webcam position, desk-edge clamp clearance, wall space, USB power, and whether brightness controls remain reachable. A compact light that conflicts with the camera or needs an awkward daily setup will not stay useful.",
+      },
+    ],
     decisionGuide: [
       { label: "Face is too dark", detail: "Start with a compact video light near the camera rather than a desk lamp behind the screen." },
       { label: "Need keyboard light", detail: "A monitor light bar helps desk visibility but may not brighten your face enough for calls." },
@@ -378,7 +337,18 @@ export const gscPriorityRoundups: Roundup[] = [
       "Match the light to camera position first",
       "Check glare on glasses and glossy monitors",
       "Separate face lighting from desk lighting",
+      "Confirm mount, power, control, and return-window details on the exact listing",
     ],
+    comparisonTable: {
+      title: "Small-room video-call lighting comparison",
+      columns: ["Logitech Litra Glow", "Elgato Key Light Neo", "Lume Cube Edge 2.0", "BenQ ScreenBar Halo 2"],
+      rows: [
+        { label: "Primary job", values: ["Compact face light", "Stronger monitor-mounted face light", "Task lamp plus webcam light", "Keyboard and desk illumination"] },
+        { label: "Space use", values: ["Monitor or laptop mount", "Monitor mount", "Desk-edge clamp and swing arm", "Monitor-mounted light bar"] },
+        { label: "Main check", values: ["Mount and camera clearance", "Monitor fit and USB power", "Clamp, wall clearance, and camera angle", "Monitor shape and face-light expectations"] },
+        { label: "Best for", values: ["Simple recurring calls", "Dedicated call-light upgrade", "One light for desk and meetings", "Task lighting without a lamp base"] },
+      ],
+    },
     productSlugs: ["logitech-litra-glow", "elgato-key-light-neo", "lume-cube-edge-2-desk-light", "benq-screenbar-halo"],
     faqs: [
       { question: "Is a monitor light bar good for video calls?", answer: "It can help the desk, but it may not light the face as well as a camera-adjacent video light." },
@@ -454,69 +424,6 @@ export const gscPriorityGuides: Guide[] = [
       { heading: "Middle months: outward carry is milestone-bound", body: "Do not compare outward-facing as a simple age feature. Check each manual's head, neck, height, and weight requirements before using that position." },
       { heading: "Later months: support and back carry separate them", body: "For longer outings, compare waistband support, shoulder pressure, back-carry workflow, and whether the carrier remains comfortable as the child gets heavier." },
       { heading: "The better carrier is the one you can adjust correctly", body: "A feature-rich carrier loses value if one caregiver cannot get a secure fit. Return policy, instruction clarity, and real fit testing are part of the buying decision." },
-    ],
-  },
-  {
-    site: "baby",
-    slug: "baby-bottle-sterilizer-dryer-counter-space-checklist",
-    title: "Baby Bottle Sterilizer Dryer Counter Space Checklist",
-    dek: "Measure appliance footprint, lid swing, drying path, outlet location, pump-part capacity, and where clean parts go after the cycle.",
-    category: "feeding",
-    updatedAt,
-    relatedProducts: [
-      "momcozy-kleanpal-pro-baby-bottle-washer",
-      "baby-brezza-sterilizer-dryer-advanced",
-      "dr-browns-all-in-one-sterilizer-dryer",
-      "grownsy-bottle-sterilizer-dryer",
-      "chicco-advanced-sterilizer-dryer",
-    ],
-    relatedRoundups: ["best-bottle-sterilizers-and-dryers", "best-bottle-sterilizer-dryer-for-pump-parts"],
-    sources: [
-      { name: "CDC infant feeding item cleaning guidance", url: "https://www.cdc.gov/hygiene/about/clean-sanitize-store-infant-feeding-items.html", note: "Primary cleaning, sanitizing, drying, and storage guidance." },
-    ],
-    sections: [
-      { heading: "Measure the permanent footprint", body: "A large feeding appliance works only if it can stay accessible. Measure width, depth, lid clearance, outlet position, and the loading path with cabinets open." },
-      { heading: "Count small parts before bottles", body: "Nipples, rings, caps, valves, flanges, and pacifiers can consume more usable space than bottle bodies. Use the real daily routine before trusting a headline capacity number." },
-      { heading: "Plan clean storage after drying", body: "Dry parts still need a clean landing spot. Decide whether parts stay in the appliance, move to a covered bin, or get assembled immediately." },
-      { heading: "Keep washing and sanitizing separate", body: "A dryer or sterilizer does not remove milk residue unless the exact appliance includes a compatible wash cycle. Clean parts first according to the product and health guidance." },
-    ],
-  },
-  {
-    site: "homeoffice",
-    slug: "home-office-lighting-for-video-calls-checklist",
-    title: "Home Office Lighting for Video Calls Checklist",
-    dek: "Fix face exposure, window backlight, glasses glare, monitor reflections, color temperature, and desk clutter before buying a webcam.",
-    category: "meetings",
-    updatedAt,
-    relatedProducts: ["logitech-litra-glow", "elgato-key-light-neo", "lume-cube-edge-2-desk-light", "benq-screenbar-halo"],
-    relatedRoundups: ["best-video-call-lighting-for-home-office", "best-home-office-lighting-for-video-calls-in-small-rooms"],
-    sources: [
-      { name: "OSHA lighting guidance for computer workstations", url: "https://www.osha.gov/etools/computer-workstations/components/lighting", note: "Primary workstation lighting guidance for glare and reflections." },
-    ],
-    sections: [
-      { heading: "Put light near the camera path", body: "The camera needs the face lit, not just the room. Start with a small light near or above the camera and reduce strong backlight from windows." },
-      { heading: "Check glasses and glossy screens", body: "If the light appears as a white spot in glasses or the monitor, lower brightness, move it sideways, or raise the angle until the reflection leaves the camera view." },
-      { heading: "Separate call lighting from task lighting", body: "A monitor bar can make typing easier while a camera light makes the face clearer. Some desks need both, but each solves a different job." },
-      { heading: "Save a repeatable meeting preset", body: "Use the same brightness, color temperature, camera height, and chair position for recurring calls so setup friction does not make the light go unused." },
-    ],
-  },
-  {
-    site: "homeoffice",
-    slug: "standing-desk-designs-for-small-spaces-guide",
-    title: "Standing Desk Designs for Small Spaces",
-    dek: "Compare narrow electric desks, wall-facing layouts, monitor arms, rolling setups, cable paths, and storage trade-offs for bedrooms and rentals.",
-    category: "desks",
-    updatedAt,
-    relatedProducts: ["ergear-48x24-electric-standing-desk", "flexispot-e7-mini-standing-desk", "uplift-v3-standing-desk"],
-    relatedRoundups: ["best-standing-desks-for-small-spaces", "best-monitor-arms-for-home-office"],
-    sources: [
-      { name: "OSHA workstation purchasing guide", url: "https://www.osha.gov/etools/computer-workstations/checklists/purchasing-guide", note: "Primary desk purchasing guidance for work surface and equipment fit." },
-    ],
-    sections: [
-      { heading: "Design around depth first", body: "Many small desks are narrow and shallow. Protect monitor distance with an arm, laptop stand, or compact display before filling the width with accessories." },
-      { heading: "Use the wall but do not trap the desk", body: "Wall-facing layouts save space, but height movement, monitor-arm clearance, outlets, baseboards, and cable trays still need room behind the desktop." },
-      { heading: "Keep one clear conversion path", body: "If the room changes from bedroom to office each day, decide where the chair, walking pad, and cables go during each mode. A movable desk can help only when this path is planned." },
-      { heading: "Avoid decorative storage until the core setup works", body: "Shelves, pegboards, risers, and trays can crowd a compact desk. Solve keyboard, mouse, monitor, light, and power first, then add storage for specific recurring items." },
     ],
   },
 ];
