@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import "./globals.css";
 import { SiteChrome } from "@/components/LayoutParts";
 import { StyleChrome } from "@/components/StyleExperience";
 import { ClarityAnalytics } from "@/components/ClarityAnalytics";
+import { getMarketByRouteSlug } from "@/lib/markets";
 import { getCurrentSite } from "@/lib/sites";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -30,10 +32,12 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const site = await getCurrentSite();
+  const headerList = await headers();
+  const market = getMarketByRouteSlug(headerList.get("x-madabase-market"));
   const clarityProjectId = process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID ?? "xlte5zsd33";
 
   return (
-    <html lang="en">
+    <html lang={market?.languageTag ?? "en-US"}>
       <head>
         {/* @ts-expect-error Impact verification requires its non-standard meta value attribute. */}
         <meta name="impact-site-verification" value="ba96bb1e-788f-4f05-80ec-38b7ceb8d31a" />

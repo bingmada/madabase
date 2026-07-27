@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AffiliateButtonGroup } from "@/components/AffiliateButton";
 import { JsonLd } from "@/components/JsonLd";
+import { BaseMarketEditionLinks } from "@/components/MarketExperience";
 import { SearchOpportunityBacklinks, SearchOpportunityBlock } from "@/components/SearchOpportunityBlock";
 import { StyleGuidePage } from "@/components/StyleExperience";
 import { findGuide, findProduct, findRoundup, siteGuides } from "@/lib/content";
@@ -241,6 +242,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         </section>
         {searchOpportunity ? <SearchOpportunityBlock opportunity={searchOpportunity} /> : null}
         <SearchOpportunityBacklinks site={site.key} kind="guide" slug={slug} />
+        <BaseMarketEditionLinks site={site} basePath={`/guides/${slug}`} />
         {topProduct || topRoundup ? (
           <section className="mt-8 rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-5">
             <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">

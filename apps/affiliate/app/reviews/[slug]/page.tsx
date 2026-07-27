@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { AffiliateButton } from "@/components/AffiliateButton";
 import { JsonLd } from "@/components/JsonLd";
 import { Disclosure } from "@/components/LayoutParts";
+import { BaseMarketEditionLinks } from "@/components/MarketExperience";
 import { SearchOpportunityBacklinks, SearchOpportunityBlock } from "@/components/SearchOpportunityBlock";
 import { StyleProductPage } from "@/components/StyleExperience";
 import { findProduct, siteGuides, siteProducts, siteRoundups } from "@/lib/content";
@@ -251,6 +252,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
             <div className="prose-lite mt-8">
               {searchOpportunity ? <SearchOpportunityBlock opportunity={searchOpportunity} /> : null}
               <SearchOpportunityBacklinks site={site.key} kind="product" slug={slug} />
+              <BaseMarketEditionLinks site={site} basePath={`/reviews/${slug}`} />
               <div className="not-prose rounded-md border border-[var(--brand)] bg-[var(--brand-soft)] p-5">
                 <p className="text-xs font-bold uppercase text-[var(--brand-strong)]">{evidencePresentation.label}</p>
                 <p className="mt-2 text-sm font-semibold leading-6 text-[var(--text)]">{evidencePresentation.note}</p>

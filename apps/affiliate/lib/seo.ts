@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { localizedAlternatesForBasePath } from "./market-content";
+import { marketHomeAlternates, supportsMarketEditions } from "./markets";
 import type { SiteConfig } from "./sites";
 import type { Guide, Product, Roundup, Tool } from "./types";
 
@@ -103,6 +105,11 @@ export function contentDate(value: string | undefined) {
 export function pageMetadata(site: SiteConfig, path: string, title: string, description: string, image = site.heroImage): Metadata {
   const url = absoluteUrl(site, path);
   const descriptionText = metaDescription(description, path);
+  const languages = supportsMarketEditions(site.key)
+    ? path === "/"
+      ? marketHomeAlternates(site.domain)
+      : localizedAlternatesForBasePath(site.domain, site.key, path)
+    : undefined;
 
   return {
     metadataBase: new URL(site.domain),
@@ -123,6 +130,7 @@ export function pageMetadata(site: SiteConfig, path: string, title: string, desc
       : {}),
     alternates: {
       canonical: url,
+      ...(languages ? { languages } : {}),
     },
     openGraph: {
       title,

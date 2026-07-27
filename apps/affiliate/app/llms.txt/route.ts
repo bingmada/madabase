@@ -1,4 +1,6 @@
 import { siteGuides, siteProducts, siteRoundups, siteTools } from "@/lib/content";
+import { localizedMarketPagesForSite, localizedMarketPath } from "@/lib/market-content";
+import { marketKeys, marketPath, markets, supportsMarketEditions } from "@/lib/markets";
 import { getCurrentSite } from "@/lib/sites";
 import { listIndexableCostumeProducts } from "@/lib/costume-catalog";
 
@@ -18,6 +20,21 @@ export async function GET() {
   const guides = siteGuides(site.key);
   const tools = siteTools(site.key);
   const costumeProducts = site.key === "costume" ? await listIndexableCostumeProducts(100) : [];
+  const countryEditionLines = supportsMarketEditions(site.key)
+    ? [
+        "## Country editions",
+        ...marketKeys.flatMap((key) => {
+          const market = markets[key];
+          return [
+            `- ${market.localName} edition home: ${marketPath(market)}`,
+            ...localizedMarketPagesForSite(site.key, key).map(
+              ({ page, variant }) => `- ${variant.title}: ${localizedMarketPath(market, page)}`,
+            ),
+          ];
+        }),
+        "",
+      ]
+    : [];
 
   const body = [
     `# ${site.name}`,
@@ -47,6 +64,7 @@ export async function GET() {
     "",
     ...linesFor("Tools", tools, "/tools"),
     "",
+    ...countryEditionLines,
     "Important site information:",
     "- About: /about",
     "- Methodology: /methodology",

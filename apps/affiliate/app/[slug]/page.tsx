@@ -1,16 +1,32 @@
 import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/JsonLd";
+import { MarketHome } from "@/components/MarketExperience";
+import { marketHomeCopy } from "@/lib/market-content";
+import { getMarketByRouteSlug, marketHomeAlternates, marketPath, marketRouteSlugs, supportsMarketEditions } from "@/lib/markets";
 import { breadcrumbSchema, pageMetadata } from "@/lib/seo";
 import { findStaticPage, staticPageSlugs } from "@/lib/static-pages";
 import { getCurrentSite } from "@/lib/sites";
 
 export async function generateStaticParams() {
-  return staticPageSlugs.map((slug) => ({ slug }));
+  return [...staticPageSlugs, ...marketRouteSlugs].map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const site = await getCurrentSite();
   const { slug } = await params;
+  const market = getMarketByRouteSlug(slug);
+  const marketCopy = market ? marketHomeCopy[market.key][site.key] : undefined;
+  if (market && marketCopy && supportsMarketEditions(site.key)) {
+    const path = marketPath(market);
+    const metadata = pageMetadata(site, path, marketCopy.title, marketCopy.dek);
+    return {
+      ...metadata,
+      alternates: {
+        canonical: new URL(path, site.domain).toString(),
+        languages: marketHomeAlternates(site.domain),
+      },
+    };
+  }
   const page = findStaticPage(site, slug);
   if (!page) return {};
   return pageMetadata(site, `/${slug}`, page.title, page.dek);
@@ -19,6 +35,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 export default async function StaticPage({ params }: { params: Promise<{ slug: string }> }) {
   const site = await getCurrentSite();
   const { slug } = await params;
+  const market = getMarketByRouteSlug(slug);
+  if (market && supportsMarketEditions(site.key) && marketHomeCopy[market.key][site.key]) {
+    return <MarketHome site={site} market={market} />;
+  }
   const page = findStaticPage(site, slug);
   if (!page) notFound();
 

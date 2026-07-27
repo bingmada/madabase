@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { siteGuides, siteProducts, siteRoundups, siteTools } from "@/lib/content";
 import { contentDate } from "@/lib/seo";
+import { marketSitemapEntries } from "@/lib/market-content";
 import { searchOpportunityUpdatedAt } from "@/lib/search-opportunities";
 import { staticPageSlugs } from "@/lib/static-pages";
 import { getCurrentSite } from "@/lib/sites";
@@ -66,6 +67,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       };
     }),
     ...tools.map((item) => ({ path: `/tools/${item.slug}`, changeFrequency: "monthly" as const, priority: 0.68 })),
+    ...marketSitemapEntries(site.key).map((item) => {
+      const updated = contentDate(item.updatedAt);
+      return {
+        path: item.path,
+        changeFrequency: item.changeFrequency,
+        priority: item.priority,
+        ...(updated ? { lastModified: updated.date } : {}),
+      };
+    }),
   ];
 
   return urls.map((entry) => ({

@@ -1,11 +1,12 @@
 import { NextResponse } from "next/server";
 import { findProduct } from "@/lib/content";
 import { getAffiliatePrisma, hasDatabaseUrl } from "@/lib/db";
-import type { SiteKey } from "@/lib/types";
+import type { MarketKey, SiteKey } from "@/lib/types";
 
 type ClickPayload = {
   eventId?: string;
   site?: string;
+  market?: string;
   productSlug?: string;
   merchant?: string;
   position?: string;
@@ -20,6 +21,7 @@ const siteKeys = new Set<SiteKey>([
   "smarthome",
   "style",
 ]);
+const marketKeys = new Set<MarketKey>(["gb", "ca", "de", "nl"]);
 
 function cleanText(value: string | undefined, maxLength: number) {
   return value?.trim().slice(0, maxLength) ?? "";
@@ -28,6 +30,8 @@ function cleanText(value: string | undefined, maxLength: number) {
 export async function POST(request: Request) {
   const payload = (await request.json().catch(() => ({}))) as ClickPayload;
   const site = cleanText(payload.site, 40) as SiteKey;
+  const marketValue = cleanText(payload.market, 8);
+  const market = marketKeys.has(marketValue as MarketKey) ? (marketValue as MarketKey) : "us";
   const productSlug = cleanText(payload.productSlug, 120);
   const merchant = cleanText(payload.merchant, 80);
   const position = cleanText(payload.position, 80);
@@ -54,6 +58,7 @@ export async function POST(request: Request) {
   const cleanPayload = {
     eventId,
     site,
+    market,
     productSlug,
     merchant,
     position,

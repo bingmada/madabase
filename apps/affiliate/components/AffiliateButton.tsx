@@ -2,17 +2,19 @@
 
 import { ExternalLink } from "lucide-react";
 import { trackClarityAffiliateClick } from "./ClarityAnalytics";
-import type { AffiliateOffer, Product, SiteKey } from "@/lib/types";
+import type { AffiliateOffer, MarketKey, Product, SiteKey } from "@/lib/types";
 
 export function AffiliateButton({
   site,
   product,
   offer,
+  market,
   position,
 }: {
   site: SiteKey;
   product: Product;
   offer: AffiliateOffer;
+  market?: MarketKey;
   position: string;
 }) {
   function trackClick() {
@@ -23,6 +25,7 @@ export function AffiliateButton({
 
     trackClarityAffiliateClick({
       site,
+      market,
       productSlug: product.slug,
       merchant: offer.merchant,
       position,
@@ -34,6 +37,7 @@ export function AffiliateButton({
       body: JSON.stringify({
         eventId,
         site,
+        market: market ?? "us",
         productSlug: product.slug,
         merchant: offer.merchant,
         position,
@@ -61,11 +65,13 @@ export function AffiliateButton({
 export function AffiliateButtonGroup({
   site,
   product,
+  market,
   position,
   limit = 2,
 }: {
   site: SiteKey;
   product: Product;
+  market?: MarketKey;
   position: string;
   limit?: number;
 }) {
@@ -75,7 +81,7 @@ export function AffiliateButtonGroup({
   return (
     <>
       {offers.map((offer) => (
-        <AffiliateButton key={offer.merchant} site={site} product={product} offer={offer} position={position} />
+        <AffiliateButton key={offer.merchant} site={site} product={product} offer={offer} market={market} position={position} />
       ))}
     </>
   );
