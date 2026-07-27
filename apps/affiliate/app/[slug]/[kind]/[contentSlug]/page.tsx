@@ -27,14 +27,16 @@ export async function generateMetadata({ params }: { params: MarketPageParams })
   const resolved = await resolveMarketPage(params);
   if (!resolved) return {};
   const { site, market, page, variant } = resolved;
-  const product = findProduct(site.key, page.primaryProductSlug);
+  const product = page.primaryProductSlug
+    ? findProduct(site.key, page.primaryProductSlug)
+    : undefined;
   const path = localizedMarketPath(market, page);
   const metadata = pageMetadata(
     site,
     path,
     variant.title,
     variant.dek,
-    product?.amazonImage ?? product?.image ?? site.heroImage,
+    page.image ?? product?.amazonImage ?? product?.image ?? site.heroImage,
   );
 
   return {

@@ -386,6 +386,51 @@ if (!sitemapSource.includes("siteProducts(site.key)") || !sitemapSource.includes
   errors.push("Sitemap must use publication-aware content selectors");
 }
 
+const amazonSiteKeys = ["network", "smarthome", "homeoffice", "baby", "pet", "style"];
+const marketsSource = fs.readFileSync(path.join(libDir, "markets.ts"), "utf8");
+for (const siteKey of amazonSiteKeys) {
+  if (!marketsSource.match(new RegExp(`marketSiteKeys[^;]+["']${siteKey}["']`, "s"))) {
+    errors.push(`Amazon publication ${siteKey} must enable automatic country editions`);
+  }
+}
+
+const marketContentSource = fs.readFileSync(path.join(libDir, "market-content.ts"), "utf8");
+for (const requiredSelector of [
+  "siteProducts(siteKey)",
+  "siteRoundups(siteKey)",
+  "siteGuides(siteKey)",
+  "siteTools(siteKey)",
+  "site.categories.map",
+  "marketSiteKeys.flatMap(automaticPagesForSite)",
+]) {
+  if (!marketContentSource.includes(requiredSelector)) {
+    errors.push(`Automatic country-edition registry must use ${requiredSelector}`);
+  }
+}
+for (const [kind, route] of [
+  ["product", "reviews"],
+  ["roundup", "best"],
+  ["guide", "guides"],
+  ["tool", "tools"],
+  ["category", "categories"],
+]) {
+  const templateSource = fs.readFileSync(
+    path.join(workspaceDir, "app", route, "[slug]", "page.tsx"),
+    "utf8",
+  );
+  if (!templateSource.includes("BaseMarketEditionLinks")) {
+    errors.push(`${kind} template must expose all automatic country editions`);
+  }
+}
+
+const localizedRouteSource = fs.readFileSync(
+  path.join(workspaceDir, "app", "[slug]", "[kind]", "[contentSlug]", "page.tsx"),
+  "utf8",
+);
+if (!localizedRouteSource.includes("findLocalizedMarketPage")) {
+  errors.push("Country-edition route must resolve every generated market page");
+}
+
 const counts = entries.reduce((result, entry) => {
   const key = `${entry.status} ${entry.kind}s`;
   result[key] = (result[key] ?? 0) + 1;
@@ -394,6 +439,10 @@ const counts = entries.reduce((result, entry) => {
 
 console.log("Affiliate SEO audit");
 console.log(Object.entries(counts).sort().map(([key, value]) => `- ${key}: ${value}`).join("\n"));
+const automaticEditorialPages = entries.filter(
+  (entry) => entry.status === "published" && amazonSiteKeys.includes(entry.site),
+).length;
+console.log(`- automatic country-edition editorial routes: ${automaticEditorialPages * 4}`);
 if (warnings.length) {
   console.log(`\nWarnings (${warnings.length})`);
   warnings.forEach((warning) => console.log(`- ${warning}`));

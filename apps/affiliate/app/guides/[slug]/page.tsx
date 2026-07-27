@@ -207,6 +207,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         />
         <div className="style-shell pb-12">
           <SearchOpportunityBacklinks site={site.key} kind="guide" slug={slug} />
+          <BaseMarketEditionLinks site={site} basePath={`/guides/${slug}`} />
         </div>
       </>
     );

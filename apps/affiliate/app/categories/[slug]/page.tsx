@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/JsonLd";
+import { BaseMarketEditionLinks } from "@/components/MarketExperience";
 import { ProductCard, RoundupCard } from "@/components/LayoutParts";
 import { StyleCategoryPage } from "@/components/StyleExperience";
 import { CostumeCategoryPage } from "@/components/CostumeExperience";
@@ -191,6 +192,9 @@ export default async function CategoryPage({
           roundups={roundups}
           guides={guides}
         />
+        <div className="style-shell pb-12">
+          <BaseMarketEditionLinks site={site} basePath={`/categories/${slug}`} />
+        </div>
       </>
     );
   }
@@ -203,6 +207,7 @@ export default async function CategoryPage({
         <p className="eyebrow">Category</p>
         <h1 className="mt-3 text-4xl font-black">{category.name}</h1>
         <p className="mt-4 max-w-2xl text-lg leading-8 text-[var(--muted)]">{category.description}</p>
+        <BaseMarketEditionLinks site={site} basePath={`/categories/${slug}`} />
         <section className="mt-8 rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-5">
           <h2 className="text-xl font-bold">How to think about {category.name.toLowerCase()}</h2>
           <p className="mt-3 max-w-3xl leading-7 text-[var(--muted)]">{framework.focus}</p>

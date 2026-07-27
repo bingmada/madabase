@@ -1,7 +1,23 @@
-import { marketKeys, marketPath, markets, type MarketProfile } from "./markets";
+import {
+  marketKeys,
+  marketPath,
+  markets,
+  marketSiteKeys,
+  type MarketProfile,
+} from "./markets";
+import {
+  findGuide,
+  findProduct,
+  findRoundup,
+  siteGuides,
+  siteProducts,
+  siteRoundups,
+  siteTools,
+} from "./content";
+import { sites } from "./sites";
 import type { MarketKey, SiteKey } from "./types";
 
-export type MarketContentRoute = "reviews" | "guides" | "best";
+export type MarketContentRoute = "reviews" | "guides" | "best" | "tools" | "categories";
 
 export type MarketHomeCopy = {
   eyebrow: string;
@@ -23,7 +39,13 @@ export type LocalizedMarketPage = {
   site: SiteKey;
   route: MarketContentRoute;
   slug: string;
-  primaryProductSlug: string;
+  primaryProductSlug?: string;
+  sourceTitle?: string;
+  sourceDek?: string;
+  sourceDecision?: string;
+  sourceRisk?: string;
+  image?: string;
+  sourceLinks?: Array<{ name: string; url: string; note?: string }>;
   relatedPaths: Array<{ label: string; path: string }>;
   updatedAt: string;
   variants: Record<MarketKey, LocalizedMarketVariant>;
@@ -152,7 +174,51 @@ export const marketHomeCopy: Record<MarketKey, Partial<Record<SiteKey, MarketHom
   },
 };
 
-export const localizedMarketPages: LocalizedMarketPage[] = [
+function automaticMarketHomeCopy(
+  site: (typeof sites)[SiteKey],
+  market: MarketProfile,
+): MarketHomeCopy {
+  if (market.key === "de") {
+    return {
+      eyebrow: `${site.name} für Deutschland`,
+      title: `${site.name}: alle Kaufhilfen für Deutschland`,
+      dek: `Alle veröffentlichten Produktseiten, Vergleiche, Ratgeber, Kategorien und Tools mit zusätzlichen Prüfungen für das deutsche Modell und Angebot.`,
+      intro: "Die redaktionelle Hauptrecherche bleibt gemeinsam. Diese Länderausgabe ergänzt bei jedem Inhalt regionale Modellidentität, 230V-Stromversorgung, Lieferumfang, Verkäufer, Versand, Garantie und Rückgabe.",
+      focus: ["Deutsches beziehungsweise EU-Modell", "230V, Stecker, Funk und regionale Kompatibilität", "Euro-Preis, Verkäufer, Versand und Steuern", "Garantie, Rückgabe und lokale Verfügbarkeit"],
+    };
+  }
+  if (market.key === "nl") {
+    return {
+      eyebrow: `${site.name} voor Nederland`,
+      title: `${site.name}: alle koophulp voor Nederland`,
+      dek: "Alle gepubliceerde productpagina's, vergelijkingen, gidsen, categorieën en tools met extra controles voor het Nederlandse model en aanbod.",
+      intro: "Het hoofdonderzoek blijft gedeeld. Deze landeditie vult elk onderwerp aan met controle van regionale productidentiteit, 230V-voeding, pakket, verkoper, levering, garantie en retour.",
+      focus: ["Nederlands of EU-model", "230V, stekker, radio en regionale compatibiliteit", "Europrijs, verkoper, levering en belastingen", "Garantie, retour en lokale beschikbaarheid"],
+    };
+  }
+
+  const adjective = market.key === "gb" ? "UK" : "Canadian";
+  return {
+    eyebrow: `${site.name} research for ${market.countryName}`,
+    title: `${site.name}: all buying guides for ${market.countryName}`,
+    dek: `Every published product page, comparison, guide, category and tool with added ${adjective} model and checkout checks.`,
+    intro: `The main editorial research stays shared. This country edition adds regional product identity, power, bundle, seller, delivery, warranty and return checks to every topic.`,
+    focus: [
+      `${adjective} model and regional compatibility`,
+      "Power, plug, radio and included hardware",
+      `${market.currency} price, seller, delivery and taxes`,
+      "Warranty, returns and local availability",
+    ],
+  };
+}
+
+for (const marketKey of marketKeys) {
+  for (const siteKey of marketSiteKeys) {
+    marketHomeCopy[marketKey][siteKey] ??= automaticMarketHomeCopy(sites[siteKey], markets[marketKey]);
+  }
+}
+
+const curatedLocalizedMarketPages: LocalizedMarketPage[] = [
   {
     site: "network",
     route: "reviews",
@@ -387,6 +453,292 @@ export const localizedMarketPages: LocalizedMarketPage[] = [
   },
 ];
 
+type MarketPageDescriptor = Omit<LocalizedMarketPage, "variants">;
+
+function uniqueRelatedPaths(
+  paths: Array<{ label: string; path: string } | undefined>,
+  ownPath: string,
+) {
+  return paths
+    .filter((item): item is { label: string; path: string } => Boolean(item && item.path !== ownPath))
+    .filter((item, index, items) => items.findIndex((candidate) => candidate.path === item.path) === index)
+    .slice(0, 12);
+}
+
+function latestUpdate(values: Array<string | undefined>) {
+  const dated = values
+    .filter((value): value is string => Boolean(value))
+    .map((value) => ({ value, time: new Date(`${value} 00:00:00 UTC`).getTime() }))
+    .filter((item) => !Number.isNaN(item.time))
+    .sort((a, b) => b.time - a.time);
+  return dated[0]?.value ?? "July 27, 2026";
+}
+
+function automaticVariant(page: MarketPageDescriptor, market: MarketProfile): LocalizedMarketVariant {
+  const sourceTitle = page.sourceTitle ?? page.slug;
+  const sourceDek = page.sourceDek ?? `Regional buying checks for ${sourceTitle}.`;
+  const sourceDecision = page.sourceDecision ?? `Use the original research to decide whether ${sourceTitle} fits the actual household need.`;
+  const sourceRisk = page.sourceRisk ?? "Confirm the exact model, configuration and return path before checkout.";
+
+  if (market.key === "de") {
+    return {
+      title: `${sourceTitle}: Kaufberatung für Deutschland`,
+      dek: `Deutsche Länderausgabe mit regionaler Modell-, Kompatibilitäts- und Angebotsprüfung. Grundlage ist die redaktionelle Hauptrecherche zu „${sourceTitle}“.`,
+      quickAnswer: `Nutzen Sie die Hauptrecherche zu „${sourceTitle}“ für die Sachentscheidung und prüfen Sie danach das genaue deutsche beziehungsweise EU-Modell, bevor Sie ein Angebot auswählen.`,
+      sections: [
+        {
+          heading: "Hauptrecherche und Länderausgabe zusammen verwenden",
+          body: "Die technische oder praktische Bewertung auf der ursprünglichen englischen Seite bleibt maßgeblich. Diese Ausgabe ergänzt die Punkte, die sich für Deutschland unterscheiden können, ohne eine lokal geprüfte Produktidentität vorzutäuschen.",
+        },
+        {
+          heading: "Regionales Modell und Kompatibilität neu bestätigen",
+          body: "Gleiche Produktnamen können andere Modellnummern, Funkbänder, Stecker, Netzteile, Größen, Materialien, Sets oder App-Funktionen bezeichnen. Vergleichen Sie das konkrete deutsche beziehungsweise EU-Angebot mit den Herstellerunterlagen.",
+        },
+        {
+          heading: "Das vollständige Angebot bewerten",
+          body: "Prüfen Sie Euro-Preis, Verkäufer, Mehrwertsteuer, Versand, Lieferumfang, Garantie, Rückgabe und aktuelle Verfügbarkeit. Ein weitergeleiteter Link beweist weder Produktgleichheit noch regionale Unterstützung.",
+        },
+      ],
+      checkoutChecks: [
+        "Genaues deutsches beziehungsweise EU-Modell",
+        "230V, Stecker, Funk, Maße oder regionale Kompatibilität",
+        "Lieferumfang, Verkäufer, Versand und Mehrwertsteuer",
+        "Garantie, Rückgabe und aktuelle Verfügbarkeit",
+      ],
+    };
+  }
+
+  if (market.key === "nl") {
+    return {
+      title: `${sourceTitle}: koophulp voor Nederland`,
+      dek: `Nederlandse landeditie met controle van regionaal model, compatibiliteit en aanbod. Het redactionele hoofdonderzoek naar ‘${sourceTitle}’ blijft de inhoudelijke basis.`,
+      quickAnswer: `Gebruik het hoofdonderzoek naar ‘${sourceTitle}’ voor de inhoudelijke keuze en controleer daarna het exacte Nederlandse of EU-model voordat je een aanbod selecteert.`,
+      sections: [
+        {
+          heading: "Gebruik hoofdonderzoek en landeditie samen",
+          body: "De technische of praktische beoordeling op de oorspronkelijke Engelstalige pagina blijft leidend. Deze editie voegt de punten toe die voor Nederland kunnen verschillen, zonder een lokaal gecontroleerde productidentiteit te suggereren.",
+        },
+        {
+          heading: "Bevestig regionaal model en compatibiliteit opnieuw",
+          body: "Dezelfde productnaam kan andere modelnummers, radiobanden, stekkers, voedingen, maten, materialen, pakketten of appfuncties omvatten. Vergelijk het concrete Nederlandse of EU-aanbod met de documentatie van de fabrikant.",
+        },
+        {
+          heading: "Beoordeel het volledige aanbod",
+          body: "Controleer europrijs, verkoper, btw, levering, pakketinhoud, garantie, retour en actuele beschikbaarheid. Een doorgestuurde link bewijst niet dat product en regionale ondersteuning gelijk zijn.",
+        },
+      ],
+      checkoutChecks: [
+        "Exact Nederlands of EU-model",
+        "230V, stekker, radio, maten of regionale compatibiliteit",
+        "Pakketinhoud, verkoper, levering en btw",
+        "Garantie, retour en actuele beschikbaarheid",
+      ],
+    };
+  }
+
+  const isUk = market.key === "gb";
+  const regional = isUk ? "UK" : "Canadian";
+  const landedCost = isUk ? "GBP price" : "CAD price, applicable taxes";
+  return {
+    title: `${sourceTitle}: ${regional} buying and compatibility guide`,
+    dek: `${sourceDek} This ${regional} edition adds exact regional model, compatibility, seller, delivery, warranty and return checks.`,
+    quickAnswer: `${sourceDecision} For ${market.countryName}, verify the exact regional offer separately rather than assuming the US model or bundle is identical.`,
+    sections: [
+      {
+        heading: "Use the main research and country edition together",
+        body: `The original page remains the evidence base for the practical decision. This edition adds the model and checkout details that can differ in ${market.countryName}.`,
+      },
+      {
+        heading: `Match the exact ${regional} model`,
+        body: `A shared product name can hide different model numbers, wireless bands, plugs, power supplies, dimensions, materials, bundles or app features. Compare the selected ${regional} offer with current manufacturer documentation.`,
+      },
+      {
+        heading: "Check the complete landed offer",
+        body: `Confirm ${landedCost}, seller, delivery, included hardware, regional warranty, return handling and current availability. The main risk from the research is: ${sourceRisk}`,
+      },
+    ],
+    checkoutChecks: [
+      `Exact ${regional} model and configuration`,
+      "Power, plug, radio, dimensions or regional compatibility",
+      `${landedCost}, seller, delivery and included pieces`,
+      "Regional warranty, returns and current availability",
+    ],
+  };
+}
+
+function variantsFor(page: MarketPageDescriptor) {
+  return Object.fromEntries(
+    marketKeys.map((key) => [key, automaticVariant(page, markets[key])]),
+  ) as Record<MarketKey, LocalizedMarketVariant>;
+}
+
+function automaticPagesForSite(siteKey: SiteKey): LocalizedMarketPage[] {
+  const site = sites[siteKey];
+  const products = siteProducts(siteKey);
+  const roundups = siteRoundups(siteKey);
+  const guides = siteGuides(siteKey);
+  const tools = siteTools(siteKey);
+
+  const descriptors: MarketPageDescriptor[] = [
+    ...products.map((product) => {
+      const ownPath = `/reviews/${product.slug}`;
+      return {
+        site: siteKey,
+        route: "reviews" as const,
+        slug: product.slug,
+        primaryProductSlug: product.slug,
+        sourceTitle: product.amazonTitle ?? product.name,
+        sourceDek: product.summary,
+        sourceDecision: product.verdict ?? product.summary,
+        sourceRisk: product.cons[0],
+        image: product.amazonImage ?? product.image,
+        sourceLinks: product.sources ?? [],
+        updatedAt: product.updatedAt ?? "July 27, 2026",
+        relatedPaths: uniqueRelatedPaths([
+          { label: site.categories.find((item) => item.slug === product.category)?.name ?? product.category, path: `/categories/${product.category}` },
+          ...(product.compareSlugs ?? []).map((slug) => {
+            const related = findProduct(siteKey, slug);
+            return related ? { label: related.amazonTitle ?? related.name, path: `/reviews/${related.slug}` } : undefined;
+          }),
+          ...roundups
+            .filter((roundup) => roundup.productSlugs.includes(product.slug))
+            .map((roundup) => ({ label: roundup.title, path: `/best/${roundup.slug}` })),
+          ...guides
+            .filter((guide) => guide.relatedProducts?.includes(product.slug))
+            .map((guide) => ({ label: guide.title, path: `/guides/${guide.slug}` })),
+        ], ownPath),
+      };
+    }),
+    ...roundups.map((roundup) => {
+      const ownPath = `/best/${roundup.slug}`;
+      const picks = roundup.productSlugs
+        .map((slug) => findProduct(siteKey, slug))
+        .filter((product): product is NonNullable<ReturnType<typeof findProduct>> => Boolean(product));
+      const topPick = picks[0];
+      const sourceLinks = Array.from(
+        new Map(picks.flatMap((product) => product.sources ?? []).map((source) => [source.url, source])).values(),
+      ).slice(0, 8);
+      return {
+        site: siteKey,
+        route: "best" as const,
+        slug: roundup.slug,
+        primaryProductSlug: topPick?.slug,
+        sourceTitle: roundup.title,
+        sourceDek: roundup.dek,
+        sourceDecision: topPick
+          ? `Start with ${topPick.amazonTitle ?? topPick.name} when the priority is ${topPick.bestFor.toLowerCase()}.`
+          : roundup.intent,
+        sourceRisk: topPick?.cons[0],
+        image: topPick?.amazonImage ?? topPick?.image ?? site.heroImage,
+        sourceLinks,
+        updatedAt: roundup.updatedAt ?? latestUpdate(picks.map((product) => product.updatedAt)),
+        relatedPaths: uniqueRelatedPaths([
+          { label: site.categories.find((item) => item.slug === roundup.category)?.name ?? roundup.category, path: `/categories/${roundup.category}` },
+          ...picks.map((product) => ({ label: product.amazonTitle ?? product.name, path: `/reviews/${product.slug}` })),
+          ...guides
+            .filter((guide) => guide.relatedRoundups.includes(roundup.slug))
+            .map((guide) => ({ label: guide.title, path: `/guides/${guide.slug}` })),
+        ], ownPath),
+      };
+    }),
+    ...guides.map((guide) => {
+      const ownPath = `/guides/${guide.slug}`;
+      const primaryProduct = guide.relatedProducts
+        ?.map((slug) => findProduct(siteKey, slug))
+        .find(Boolean);
+      return {
+        site: siteKey,
+        route: "guides" as const,
+        slug: guide.slug,
+        primaryProductSlug: primaryProduct?.slug,
+        sourceTitle: guide.title,
+        sourceDek: guide.dek,
+        sourceDecision: guide.sections[0]?.body,
+        sourceRisk: primaryProduct?.cons[0],
+        image: guide.image ?? primaryProduct?.amazonImage ?? primaryProduct?.image ?? site.heroImage,
+        sourceLinks: guide.sources ?? primaryProduct?.sources ?? [],
+        updatedAt: guide.updatedAt ?? "July 27, 2026",
+        relatedPaths: uniqueRelatedPaths([
+          { label: site.categories.find((item) => item.slug === guide.category)?.name ?? guide.category, path: `/categories/${guide.category}` },
+          ...(guide.relatedProducts ?? []).map((slug) => {
+            const product = findProduct(siteKey, slug);
+            return product ? { label: product.amazonTitle ?? product.name, path: `/reviews/${product.slug}` } : undefined;
+          }),
+          ...guide.relatedRoundups.map((slug) => {
+            const roundup = findRoundup(siteKey, slug);
+            return roundup ? { label: roundup.title, path: `/best/${roundup.slug}` } : undefined;
+          }),
+          ...(guide.relatedGuides ?? []).map((slug) => {
+            const related = findGuide(siteKey, slug);
+            return related ? { label: related.title, path: `/guides/${related.slug}` } : undefined;
+          }),
+        ], ownPath),
+      };
+    }),
+    ...tools.map((tool) => {
+      const ownPath = `/tools/${tool.slug}`;
+      return {
+        site: siteKey,
+        route: "tools" as const,
+        slug: tool.slug,
+        sourceTitle: tool.title,
+        sourceDek: tool.dek,
+        sourceDecision: tool.sections?.[0]?.body ?? tool.dek,
+        image: site.heroImage,
+        updatedAt: tool.updatedAt ?? "July 27, 2026",
+        relatedPaths: uniqueRelatedPaths([
+          { label: site.categories.find((item) => item.slug === tool.category)?.name ?? tool.category, path: `/categories/${tool.category}` },
+          ...tool.relatedRoundups.map((slug) => {
+            const roundup = findRoundup(siteKey, slug);
+            return roundup ? { label: roundup.title, path: `/best/${roundup.slug}` } : undefined;
+          }),
+        ], ownPath),
+      };
+    }),
+    ...site.categories.map((category) => {
+      const ownPath = `/categories/${category.slug}`;
+      const categoryProducts = products.filter((item) => item.category === category.slug);
+      const categoryRoundups = roundups.filter((item) => item.category === category.slug);
+      const categoryGuides = guides.filter((item) => item.category === category.slug);
+      const categoryTools = tools.filter((item) => item.category === category.slug);
+      return {
+        site: siteKey,
+        route: "categories" as const,
+        slug: category.slug,
+        sourceTitle: category.name,
+        sourceDek: category.description,
+        sourceDecision: `Use this category to compare ${category.name.toLowerCase()} by exact need, compatibility and ownership trade-offs.`,
+        image: site.heroImage,
+        sourceLinks: categoryProducts.flatMap((product) => product.sources ?? []).slice(0, 8),
+        updatedAt: latestUpdate([
+          ...categoryProducts.map((item) => item.updatedAt),
+          ...categoryRoundups.map((item) => item.updatedAt),
+          ...categoryGuides.map((item) => item.updatedAt),
+          ...categoryTools.map((item) => item.updatedAt),
+        ]),
+        relatedPaths: uniqueRelatedPaths([
+          ...categoryProducts.slice(-4).reverse().map((product) => ({ label: product.amazonTitle ?? product.name, path: `/reviews/${product.slug}` })),
+          ...categoryRoundups.slice(-4).reverse().map((roundup) => ({ label: roundup.title, path: `/best/${roundup.slug}` })),
+          ...categoryGuides.slice(-4).reverse().map((guide) => ({ label: guide.title, path: `/guides/${guide.slug}` })),
+          ...categoryTools.map((tool) => ({ label: tool.title, path: `/tools/${tool.slug}` })),
+        ], ownPath),
+      };
+    }),
+  ];
+
+  return descriptors.map((page) => ({ ...page, variants: variantsFor(page) }));
+}
+
+const automaticLocalizedMarketPages = marketSiteKeys.flatMap(automaticPagesForSite);
+const curatedMarketPageMap = new Map(
+  curatedLocalizedMarketPages.map((page) => [`${page.site}:${page.route}:${page.slug}`, page]),
+);
+
+export const localizedMarketPages: LocalizedMarketPage[] = automaticLocalizedMarketPages.map((page) => {
+  const curated = curatedMarketPageMap.get(`${page.site}:${page.route}:${page.slug}`);
+  return curated ? { ...page, ...curated } : page;
+});
+
 export function findLocalizedMarketPage(site: SiteKey, market: MarketKey, route: string, slug: string) {
   const page = localizedMarketPages.find((item) => item.site === site && item.route === route && item.slug === slug);
   return page ? { page, variant: page.variants[market] } : undefined;
@@ -404,6 +756,17 @@ export function basePathForMarketPage(page: Pick<LocalizedMarketPage, "route" | 
 
 export function localizedMarketPath(market: MarketProfile, page: Pick<LocalizedMarketPage, "route" | "slug">) {
   return marketPath(market, basePathForMarketPage(page));
+}
+
+export function localizedMarketPathForBasePath(
+  market: MarketProfile,
+  site: SiteKey,
+  path: string,
+) {
+  const page = localizedMarketPages.find(
+    (item) => item.site === site && basePathForMarketPage(item) === path,
+  );
+  return page ? localizedMarketPath(market, page) : undefined;
 }
 
 export function localizedAlternatesForBasePath(domain: string, site: SiteKey, path: string) {
@@ -428,12 +791,30 @@ export function marketSitemapEntries(site: SiteKey) {
   return marketKeys.flatMap((key) => {
     const market = markets[key];
     const pages = localizedMarketPages.filter((page) => page.site === site);
+    const homeUpdatedAt = latestUpdate(pages.map((page) => page.updatedAt));
     return [
-      { path: marketPath(market), priority: 0.76, changeFrequency: "weekly" as const, updatedAt: "July 27, 2026" },
+      {
+        path: marketPath(market),
+        priority: 0.76,
+        changeFrequency: "weekly" as const,
+        updatedAt: homeUpdatedAt,
+      },
       ...pages.map((page) => ({
         path: localizedMarketPath(market, page),
-        priority: 0.8,
-        changeFrequency: "weekly" as const,
+        priority:
+          page.route === "best"
+            ? 0.85
+            : page.route === "reviews"
+              ? 0.82
+              : page.route === "guides"
+                ? 0.72
+                : page.route === "categories"
+                  ? 0.68
+                  : 0.64,
+        changeFrequency:
+          page.route === "tools" || page.route === "categories"
+            ? ("monthly" as const)
+            : ("weekly" as const),
         updatedAt: page.updatedAt,
       })),
     ];

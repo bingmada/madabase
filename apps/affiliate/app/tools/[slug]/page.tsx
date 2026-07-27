@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CalculatorTool } from "@/components/Calculator";
 import { JsonLd } from "@/components/JsonLd";
+import { BaseMarketEditionLinks } from "@/components/MarketExperience";
 import { findRoundup, findTool } from "@/lib/content";
 import { breadcrumbSchema, faqPageSchema, pageMetadata, toolSchema } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
@@ -44,6 +45,7 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
         <h1 className="mt-3 text-4xl font-black leading-tight">{tool.title}</h1>
         <p className="mt-5 text-lg leading-8 text-[var(--muted)]">{tool.dek}</p>
         {tool.updatedAt ? <p className="mt-3 text-sm font-semibold text-[var(--muted)]">Updated {tool.updatedAt} · Planning estimate, not a product guarantee</p> : null}
+        <BaseMarketEditionLinks site={site} basePath={`/tools/${slug}`} />
         <div className="mt-8">
           <CalculatorTool tool={tool} />
         </div>

@@ -9,6 +9,7 @@ import {
   localizedMarketPages,
   localizedMarketPagesForSite,
   localizedMarketPath,
+  localizedMarketPathForBasePath,
   marketHomeCopy,
   type LocalizedMarketPage,
   type LocalizedMarketVariant,
@@ -16,7 +17,7 @@ import {
 import { marketKeys, marketPath, markets, type MarketProfile } from "@/lib/markets";
 import { absoluteUrl } from "@/lib/seo";
 import type { SiteConfig } from "@/lib/sites";
-import { findGuide, findProduct } from "@/lib/content";
+import { findProduct } from "@/lib/content";
 
 function marketEditionLinks(currentMarket: MarketProfile, basePath = "/") {
   return marketKeys.map((key) => {
@@ -27,6 +28,43 @@ function marketEditionLinks(currentMarket: MarketProfile, basePath = "/") {
       current: market.key === currentMarket.key,
     };
   });
+}
+
+function marketRouteLabel(
+  market: MarketProfile,
+  route: LocalizedMarketPage["route"],
+) {
+  const labels = {
+    gb: {
+      reviews: "Product reviews",
+      best: "Comparisons and best picks",
+      guides: "Buying guides",
+      tools: "Tools and planners",
+      categories: "Categories",
+    },
+    ca: {
+      reviews: "Product reviews",
+      best: "Comparisons and best picks",
+      guides: "Buying guides",
+      tools: "Tools and planners",
+      categories: "Categories",
+    },
+    de: {
+      reviews: "Produktseiten",
+      best: "Vergleiche und Bestenlisten",
+      guides: "Kaufratgeber",
+      tools: "Tools und Planer",
+      categories: "Kategorien",
+    },
+    nl: {
+      reviews: "Productpagina's",
+      best: "Vergelijkingen en beste keuzes",
+      guides: "Koopgidsen",
+      tools: "Tools en planners",
+      categories: "Categorieën",
+    },
+  } as const;
+  return labels[market.key][route];
 }
 
 export function MarketEditionNav({
@@ -61,7 +99,14 @@ export function MarketEditionNav({
 export function MarketHome({ site, market }: { site: SiteConfig; market: MarketProfile }) {
   const copy = marketHomeCopy[market.key][site.key];
   if (!copy) return null;
-  const featured = localizedMarketPagesForSite(site.key, market.key);
+  const pages = localizedMarketPagesForSite(site.key, market.key);
+  const featured = pages.slice(0, 6);
+  const directory = (["reviews", "best", "guides", "tools", "categories"] as const)
+    .map((route) => ({
+      route,
+      pages: pages.filter((item) => item.page.route === route),
+    }))
+    .filter((group) => group.pages.length);
   const url = absoluteUrl(site, marketPath(market));
 
   return (
@@ -76,7 +121,7 @@ export function MarketHome({ site, market }: { site: SiteConfig; market: MarketP
           inLanguage: market.languageTag,
           contentLocation: { "@type": "Country", name: market.countryName },
           isPartOf: { "@type": "WebSite", name: site.name, url: site.domain },
-          hasPart: featured.map(({ page, variant }) => ({
+          hasPart: pages.map(({ page, variant }) => ({
             "@type": "Article",
             name: variant.title,
             url: absoluteUrl(site, localizedMarketPath(market, page)),
@@ -137,6 +182,30 @@ export function MarketHome({ site, market }: { site: SiteConfig; market: MarketP
               {market.labels.oneLink}
             </div>
           </aside>
+        </div>
+        <div className="shell mt-12">
+          <div className="grid gap-6 md:grid-cols-2">
+            {directory.map((group) => (
+              <section className="panel p-6" key={group.route}>
+                <h2 className="text-2xl font-bold">
+                  {marketRouteLabel(market, group.route)}
+                </h2>
+                <ul className="mt-5 space-y-3">
+                  {group.pages.map(({ page, variant }) => (
+                    <li key={`${page.route}:${page.slug}`}>
+                      <Link
+                        className="font-bold leading-6 text-[var(--brand-strong)] hover:underline"
+                        href={localizedMarketPath(market, page)}
+                        hrefLang={market.hrefLang}
+                      >
+                        {variant.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            ))}
+          </div>
         </div>
       </section>
       <section className="section bg-white">
@@ -210,6 +279,11 @@ function marketFactRows(
   ];
 }
 
+function dateModified(value: string) {
+  const parsed = new Date(`${value} 00:00:00 UTC`);
+  return Number.isNaN(parsed.getTime()) ? undefined : parsed.toISOString();
+}
+
 export function LocalizedMarketContent({
   site,
   market,
@@ -221,28 +295,31 @@ export function LocalizedMarketContent({
   page: LocalizedMarketPage;
   variant: LocalizedMarketVariant;
 }) {
-  const product = findProduct(site.key, page.primaryProductSlug);
-  if (!product) return null;
-  const baseGuide = page.route === "guides" ? findGuide(site.key, page.slug) : undefined;
-  const displayName = product.amazonTitle ?? product.name;
-  const displayImage = product.amazonImage ?? product.image;
-  const marketProduct = {
-    ...product,
-    offers: product.offers.map((offer) => ({
-      ...offer,
-      label: market.labels.cta,
-      priceNote: market.labels.oneLink,
-    })),
-  };
+  const product = page.primaryProductSlug
+    ? findProduct(site.key, page.primaryProductSlug)
+    : undefined;
+  const displayName = product?.amazonTitle ?? product?.name ?? page.sourceTitle ?? page.slug;
+  const displayImage =
+    page.image ?? product?.amazonImage ?? product?.image ?? site.heroImage;
+  const marketProduct = product
+    ? {
+        ...product,
+        offers: product.offers.map((offer) => ({
+          ...offer,
+          label: market.labels.cta,
+          priceNote: market.labels.oneLink,
+        })),
+      }
+    : undefined;
   const basePath = basePathForMarketPage(page);
   const localizedPath = localizedMarketPath(market, page);
   const pageUrl = absoluteUrl(site, localizedPath);
-  const sourceLinks = page.route === "guides" ? (baseGuide?.sources ?? product.sources ?? []) : (product.sources ?? []);
+  const sourceLinks = page.sourceLinks ?? product?.sources ?? [];
   const facts = marketFactRows(
     market,
     displayName,
-    product.asin ?? product.specs.ASIN,
-    product.evidenceMode,
+    product?.asin ?? product?.specs.ASIN,
+    product?.evidenceMode,
   );
 
   return (
@@ -257,15 +334,20 @@ export function LocalizedMarketContent({
           mainEntityOfPage: { "@type": "WebPage", "@id": pageUrl },
           inLanguage: market.languageTag,
           contentLocation: { "@type": "Country", name: market.countryName },
-          dateModified: "2026-07-27T00:00:00.000Z",
+          dateModified: dateModified(page.updatedAt),
           image: absoluteUrl(site, displayImage),
-          about: {
-            "@type": "Product",
-            name: displayName,
-            brand: { "@type": "Brand", name: product.brand },
-            sku: product.asin ?? product.slug,
-            ...(product.asin ? { identifier: product.asin } : {}),
-          },
+          about: product
+            ? {
+                "@type": "Product",
+                name: displayName,
+                brand: { "@type": "Brand", name: product.brand },
+                sku: product.asin ?? product.slug,
+                ...(product.asin ? { identifier: product.asin } : {}),
+              }
+            : {
+                "@type": page.route === "tools" ? "SoftwareApplication" : "Thing",
+                name: displayName,
+              },
           citation: sourceLinks.map((source) => source.url),
           author: {
             "@type": "Organization",
@@ -290,12 +372,18 @@ export function LocalizedMarketContent({
             <section className="mt-8 rounded-md border border-[var(--brand)] bg-[var(--brand-soft)] p-6">
               <p className="eyebrow">{market.labels.quickAnswer}</p>
               <p className="mt-3 text-lg font-bold leading-8">{variant.quickAnswer}</p>
-              {marketProduct.offers.length ? (
+              {marketProduct && marketProduct.offers.length ? (
                 <div className="mt-5">
                   <AffiliateButtonGroup site={site.key} product={marketProduct} market={market.key} position={`market-${market.key}-hero`} limit={1} />
                 </div>
               ) : null}
-              <AmazonListingFreshness site={site.key} productSlug={product.slug} market={market.key} />
+              {product ? (
+                <AmazonListingFreshness
+                  site={site.key}
+                  productSlug={product.slug}
+                  market={market.key}
+                />
+              ) : null}
             </section>
             <div className="prose-lite mt-9">
               {variant.sections.map((section) => (
@@ -342,11 +430,23 @@ export function LocalizedMarketContent({
             <section className="panel mt-9 p-6">
               <h2 className="text-2xl font-bold">{market.labels.related}</h2>
               <div className="mt-5 grid gap-3 sm:grid-cols-2">
-                {page.relatedPaths.map((related) => (
-                  <Link className="rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-4 font-bold hover:text-[var(--brand-strong)]" href={related.path} key={related.path}>
-                    {related.label}
-                  </Link>
-                ))}
+                {page.relatedPaths.map((related) => {
+                  const relatedMarketPath = localizedMarketPathForBasePath(
+                    market,
+                    site.key,
+                    related.path,
+                  );
+                  return (
+                    <Link
+                      className="rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-4 font-bold hover:text-[var(--brand-strong)]"
+                      href={relatedMarketPath ?? related.path}
+                      hrefLang={relatedMarketPath ? market.hrefLang : "en-US"}
+                      key={related.path}
+                    >
+                      {related.label}
+                    </Link>
+                  );
+                })}
                 <Link className="rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-4 font-bold hover:text-[var(--brand-strong)]" href={basePath} hrefLang="en-US">
                   {market.labels.originalEdition}
                 </Link>

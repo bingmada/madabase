@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { AffiliateButtonGroup } from "@/components/AffiliateButton";
 import { JsonLd } from "@/components/JsonLd";
 import { Disclosure, MethodologyList, ProductCard } from "@/components/LayoutParts";
+import { BaseMarketEditionLinks } from "@/components/MarketExperience";
 import { SearchOpportunityBacklinks, SearchOpportunityBlock } from "@/components/SearchOpportunityBlock";
 import { StyleCollectionPage } from "@/components/StyleExperience";
 import { findProduct, findRoundup, siteGuides } from "@/lib/content";
@@ -205,6 +206,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
         <StyleCollectionPage roundup={roundup} products={picks} />
         <div className="style-shell pb-12">
           <SearchOpportunityBacklinks site={site.key} kind="roundup" slug={slug} />
+          <BaseMarketEditionLinks site={site} basePath={`/best/${slug}`} />
         </div>
       </>
     );
@@ -263,6 +265,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
           </div>
           {searchOpportunity ? <SearchOpportunityBlock opportunity={searchOpportunity} /> : null}
           <SearchOpportunityBacklinks site={site.key} kind="roundup" slug={slug} />
+          <BaseMarketEditionLinks site={site} basePath={`/best/${slug}`} />
         </div>
         <div className="mt-8 grid min-w-0 gap-5 lg:grid-cols-[minmax(0,1fr)_320px]">
           <div className="min-w-0 space-y-5">

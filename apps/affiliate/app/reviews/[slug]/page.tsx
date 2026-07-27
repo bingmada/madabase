@@ -177,6 +177,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
         <div className="style-shell pb-12">
           {searchOpportunity ? <SearchOpportunityBlock opportunity={searchOpportunity} /> : null}
           <SearchOpportunityBacklinks site={site.key} kind="product" slug={slug} />
+          <BaseMarketEditionLinks site={site} basePath={`/reviews/${slug}`} />
         </div>
       </>
     );

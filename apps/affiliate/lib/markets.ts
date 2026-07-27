@@ -44,7 +44,7 @@ export const markets: Record<MarketKey, MarketProfile> = {
     labels: {
       edition: "United Kingdom edition",
       quickAnswer: "Quick answer for UK buyers",
-      featuredDecision: "Featured UK buying decision",
+      featuredDecision: "Featured UK buying decisions",
       buyerChecks: "Checks before buying in the UK",
       buyerChecksIntro: "Confirm the regional model and the complete UK checkout offer rather than assuming a US listing is identical.",
       evidence: "Product and source evidence",
@@ -73,7 +73,7 @@ export const markets: Record<MarketKey, MarketProfile> = {
     labels: {
       edition: "Canada edition",
       quickAnswer: "Quick answer for Canadian buyers",
-      featuredDecision: "Featured Canadian buying decision",
+      featuredDecision: "Featured Canadian buying decisions",
       buyerChecks: "Checks before buying in Canada",
       buyerChecksIntro: "Confirm the Canadian model and complete landed offer rather than assuming a US listing, warranty or bundle is identical.",
       evidence: "Product and source evidence",
@@ -102,7 +102,7 @@ export const markets: Record<MarketKey, MarketProfile> = {
     labels: {
       edition: "Ausgabe für Deutschland",
       quickAnswer: "Kurzantwort für Käufer in Deutschland",
-      featuredDecision: "Ausgewählte Kaufentscheidung",
+      featuredDecision: "Ausgewählte Kaufhilfen",
       buyerChecks: "Vor dem Kauf in Deutschland prüfen",
       buyerChecksIntro: "Prüfen Sie das regionale Modell und das vollständige deutsche Angebot, statt von einer identischen US-Version auszugehen.",
       evidence: "Produkt- und Quellenbelege",
@@ -131,7 +131,7 @@ export const markets: Record<MarketKey, MarketProfile> = {
     labels: {
       edition: "Editie voor Nederland",
       quickAnswer: "Kort antwoord voor kopers in Nederland",
-      featuredDecision: "Uitgelichte aankoopbeslissing",
+      featuredDecision: "Uitgelichte koophulp",
       buyerChecks: "Controleren vóór aankoop in Nederland",
       buyerChecksIntro: "Controleer het regionale model en het volledige Nederlandse aanbod; ga er niet van uit dat de Amerikaanse uitvoering identiek is.",
       evidence: "Product- en brononderbouwing",
@@ -151,7 +151,7 @@ export const markets: Record<MarketKey, MarketProfile> = {
 
 export const marketKeys = Object.keys(markets) as MarketKey[];
 export const marketRouteSlugs = marketKeys.map((key) => markets[key].routeSlug);
-export const marketSiteKeys: SiteKey[] = ["network", "smarthome", "homeoffice", "baby"];
+export const marketSiteKeys: SiteKey[] = ["network", "smarthome", "homeoffice", "baby", "pet", "style"];
 
 export function getMarketByKey(key: string | undefined | null) {
   return marketKeys.includes(key as MarketKey) ? markets[key as MarketKey] : undefined;
