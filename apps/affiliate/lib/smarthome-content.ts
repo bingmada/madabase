@@ -257,7 +257,7 @@ export const smartHomeProducts: Product[] = [
 
 export const smartHomeRoundups: Roundup[] = [
   {
-    site: "smarthome", slug: "aqara-u400-vs-u100", category: "access",
+    site: "smarthome", slug: "aqara-u400-vs-u100", category: "access", updatedAt,
     title: "Aqara U400 vs U100: Which Smart Lock Fits Your Entry Routine?",
     dek: "Compare UWB and Matter over Thread with fingerprint, Apple Home Key, Zigbee, hub requirements, batteries, and door fit.",
     intent: "choosing between Aqara's premium UWB lock and its lower-cost Home Key model",
@@ -306,7 +306,7 @@ export const smartHomeRoundups: Roundup[] = [
     ],
   },
   {
-    site: "smarthome", slug: "ecobee-premium-vs-nest-learning-thermostat-4th-gen", category: "climate",
+    site: "smarthome", slug: "ecobee-premium-vs-nest-learning-thermostat-4th-gen", category: "climate", updatedAt,
     title: "ecobee Premium vs Nest Learning Thermostat 4th Gen",
     dek: "Compare HVAC compatibility, power, room sensors, learning controls, ecosystems, and the exact bundles linked here.",
     intent: "choosing a premium smart thermostat after confirming HVAC compatibility",

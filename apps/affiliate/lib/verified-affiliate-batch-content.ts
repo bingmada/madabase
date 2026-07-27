@@ -510,6 +510,7 @@ export const verifiedAffiliateBatchRoundups: Roundup[] = [
   {
     site: "pet",
     slug: "petlibro-one-rfid-vs-granary-smart-feeder",
+    updatedAt,
     title: "PETLIBRO One RFID vs Granary: Access Control or Simple Scheduling?",
     dek: "Compare dedicated-tag meal protection with a conventional Wi-Fi feeder by pet conflict, portions, footprint, cleaning, backup power, and cost.",
     category: "feeding",
@@ -573,6 +574,7 @@ export const verifiedAffiliateBatchRoundups: Roundup[] = [
   {
     site: "homeoffice",
     slug: "ergear-48x24-vs-flexispot-e7-mini",
+    updatedAt,
     title: "FlexiSpot E7 Mini vs ErGear 48×24: Which Small Standing Desk Is Better?",
     dek: "Compare FlexiSpot vs ErGear by wheels, low height, monitor support, desktop construction, cable routing, room fit, and price.",
     category: "desks",

@@ -238,6 +238,7 @@ export const styleRoundups: Roundup[] = [
   {
     site: "style",
     slug: "best-statement-accessories-for-one-focal-point",
+    updatedAt: "July 7, 2026",
     title: "Best Statement Accessories for a One-Focal-Point Outfit",
     dek: "Three expressive starting points—a celestial mismatch, a bakery joke, and a character mini backpack—compared by scale, comfort, capacity, and styling range.",
     category: "styling",
@@ -278,6 +279,7 @@ export const styleRoundups: Roundup[] = [
   {
     site: "style",
     slug: "best-betsey-johnson-mismatched-earrings",
+    updatedAt: "July 7, 2026",
     title: "Betsey Johnson Mismatched Earrings: Celestial or Cupcake?",
     dek: "Choose between a larger moon-and-star statement and a smaller cupcake-and-mixer joke by dimensions, closure, material language, and outfit range.",
     category: "jewelry",

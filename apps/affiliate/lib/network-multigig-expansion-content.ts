@@ -33,6 +33,7 @@ export const networkMultigigRoundups: Roundup[] = [
   {
     site: "network",
     slug: "best-mesh-wifi-for-2-5gbps-internet",
+    updatedAt,
     title: "Best Mesh Wi-Fi for 2.5Gbps Internet: 4 Practical Picks",
     dek: "Compare four Wi-Fi 7 mesh systems by 2.5GbE ports, 6GHz, 10GbE paths, wired backhaul, node count, client mix, and real upgrade value.",
     category: "wifi",

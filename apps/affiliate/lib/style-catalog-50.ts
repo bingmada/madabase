@@ -259,6 +259,7 @@ export const styleCatalog50Roundups: Roundup[] = [
   {
     site: "style",
     slug: "best-playful-hair-accessories",
+    updatedAt: "July 7, 2026",
     title: "Best Playful Hair Accessories by Hair Volume",
     dek: "Compare gothic claws, neutral flowers, pearls, butterflies, tassels, novelty pills, and a French clip by size, hold, snag risk, and outfit mood.",
     category: "hair",
@@ -274,6 +275,7 @@ export const styleCatalog50Roundups: Roundup[] = [
   {
     site: "style",
     slug: "best-scarves-for-outfit-color",
+    updatedAt: "July 7, 2026",
     title: "Best Scarves for Adding One Useful Color",
     dek: "Compare silk claims, satin, square and skinny dimensions, tying range, care, and multipack value before choosing the print.",
     category: "scarves",
@@ -289,6 +291,7 @@ export const styleCatalog50Roundups: Roundup[] = [
   {
     site: "style",
     slug: "best-funny-socks-for-colorful-outfits",
+    updatedAt: "July 7, 2026",
     title: "Best Funny Socks That Still Fit the Shoe",
     dek: "Compare colorful crews, food and animal sets, boot socks, cats, and fruit ankles by size, fiber, cuff, pattern stretch, and shoe bulk.",
     category: "socks",

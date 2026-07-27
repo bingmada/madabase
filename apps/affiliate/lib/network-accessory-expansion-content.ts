@@ -355,6 +355,7 @@ export const networkAccessoryExpansionRoundups: Roundup[] = [
   {
     site: "network",
     slug: "best-cable-modems-for-xfinity-spectrum-cox",
+    updatedAt,
     title: "Best Cable Modems for Xfinity, Spectrum and Cox Multi-Gig Plans",
     dek: "Compare ARRIS S33, Motorola MB8611, and Hitron CODA56 by DOCSIS 3.1, 2.5GbE handoff, ISP approval risk, and router pairing.",
     category: "wired",
@@ -381,6 +382,7 @@ export const networkAccessoryExpansionRoundups: Roundup[] = [
   {
     site: "network",
     slug: "arris-s33-vs-motorola-mb8611-vs-hitron-coda56",
+    updatedAt,
     title: "ARRIS S33 vs Motorola MB8611 vs Hitron CODA56",
     dek: "Compare three DOCSIS 3.1 modem-only upgrades by 2.5GbE handoff, ISP approval risk, value, voice limitations, and router pairing.",
     category: "wired",
@@ -403,6 +405,7 @@ export const networkAccessoryExpansionRoundups: Roundup[] = [
   {
     site: "network",
     slug: "best-2-5g-home-network-upgrades",
+    updatedAt,
     title: "Best 2.5G Home Network Upgrades Before Buying a New Router",
     dek: "Compare compact 2.5G switches, USB-C adapters, cable modems, and MoCA before blaming the router for every speed problem.",
     category: "wired",
@@ -429,6 +432,7 @@ export const networkAccessoryExpansionRoundups: Roundup[] = [
   {
     site: "network",
     slug: "tp-link-ue302c-vs-sabrent-nt-25ga",
+    updatedAt,
     title: "TP-Link UE302C vs Sabrent NT-25GA: Which 2.5G USB-C Adapter?",
     dek: "Compare two USB-C 2.5GbE adapters by model clarity, OS support, chipset notes, heat risk, desk workflow, and whether a full dock would be better.",
     category: "wired",

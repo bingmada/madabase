@@ -406,7 +406,7 @@ export const commercialExpansionRoundups: Roundup[] = [
     faqs: [{ question: "Does BE25 have 6GHz?", answer: "No. It is a dual-band Wi-Fi 7 system; BE63 adds a 6GHz band." }, { question: "Can BE25 use Ethernet backhaul?", answer: "Yes. The negotiated speed of the switch, cable, and ports still controls the wired path." }, { question: "Is BE63 always faster?", answer: "No. Placement, clients, WAN speed, interference, firmware, node count, and backhaul still control results." }, { question: "Which is better for a gigabit plan?", answer: "BE25 can be the better value when coverage and Ethernet are already planned. BE63 earns the premium when 6GHz backhaul or its extra 2.5GbE ports solve a specific problem." }],
   },
   {
-    site: "network", slug: "deco-be85-vs-be67", title: "Deco BE85 vs BE67: Is the Flagship Wi-Fi 7 Mesh Worth It?", dek: "Compare BE85 flagship capacity, 10GbE and SFP+ ports, BE67 value, backhaul, and the clients needed to notice the difference.", category: "wifi",
+    site: "network", slug: "deco-be85-vs-be67", title: "Deco BE85 vs BE67: Is the Flagship Wi-Fi 7 Mesh Worth It?", dek: "Compare BE85 flagship capacity, 10GbE and SFP+ ports, BE67 value, backhaul, and the clients needed to notice the difference.", category: "wifi", updatedAt,
     intent: "Decide whether BE85's flagship radio and port layout solve a real 10GbE or wireless-capacity requirement.",
     intro: "BE85 is the technical ceiling; BE67 is the more disciplined premium purchase. The existing network should decide.",
     decisionGuide: [{ label: "10GbE and SFP+", detail: "BE85 has the richer wired layout." }, { label: "Premium without excess", detail: "BE67 retains a 10GbE path at lower cost." }, { label: "Fast NAS", detail: "Map the switch and storage path before choosing." }, { label: "Ordinary clients", detail: "Neither flagship number becomes one-device throughput." }],
@@ -414,7 +414,7 @@ export const commercialExpansionRoundups: Roundup[] = [
     faqs: [{ question: "Who needs BE85?", answer: "Homes with a defined premium backhaul, high-end client, fast NAS, or 10GbE requirement." }, { question: "Does BE67 support 10GbE?", answer: "Yes, but with a less expansive port layout than BE85." }, { question: "Will BE85 improve gigabit internet?", answer: "Not automatically; placement and coverage may matter more." }],
   },
   {
-    site: "network", slug: "asus-zenwifi-bt6-vs-deco-be63", title: "ASUS ZenWiFi BT6 vs Deco BE63: Control or Simpler Multi-Gig Mesh?", dek: "Compare ASUS software control with Deco simplicity, including 6GHz mesh, multi-gig ports, security features, app flow, and wired backhaul.", category: "wifi",
+    site: "network", slug: "asus-zenwifi-bt6-vs-deco-be63", title: "ASUS ZenWiFi BT6 vs Deco BE63: Control or Simpler Multi-Gig Mesh?", dek: "Compare ASUS software control with Deco simplicity, including 6GHz mesh, multi-gig ports, security features, app flow, and wired backhaul.", category: "wifi", updatedAt,
     intent: "Choose between ASUS control depth and Deco's simpler multi-port mesh design.",
     intro: "BT6 and BE63 target similar tri-band Wi-Fi 7 homes but differ sharply in software and port layout.",
     decisionGuide: [{ label: "More controls", detail: "ASUS BT6 is the enthusiast-friendly choice." }, { label: "Four 2.5GbE ports", detail: "Deco BE63 is easier for wired rooms." }, { label: "Simpler app", detail: "Deco keeps setup more guided." }, { label: "Security features", detail: "Compare current firmware and subscription boundaries." }],
@@ -422,7 +422,7 @@ export const commercialExpansionRoundups: Roundup[] = [
     faqs: [{ question: "Do both have 6GHz?", answer: "Yes, both are tri-band Wi-Fi 7 systems." }, { question: "Which is easier?", answer: "Deco is generally more guided; ASUS exposes more controls." }, { question: "Do both support Ethernet backhaul?", answer: "Yes; the full path still controls speed." }],
   },
   {
-    site: "baby", slug: "babybjorn-mini-vs-harmony", title: "BabyBjörn Mini vs. Harmony", dek: "Compare newborn loading, mesh, waist support, listed range, outward carry, back carry, price, and when a second carrier becomes likely.", category: "travel",
+    site: "baby", slug: "babybjorn-mini-vs-harmony", title: "BabyBjörn Mini vs. Harmony", dek: "Compare newborn loading, mesh, waist support, listed range, outward carry, back carry, price, and when a second carrier becomes likely.", category: "travel", updatedAt,
     intent: "Choose a specialized newborn carrier or a longer-range BabyBjörn.",
     intro: "Mini is simpler for the first months; Harmony distributes weight and supports more positions for longer.",
     decisionGuide: [{ label: "Newborn simplicity", detail: "Mini keeps the workflow compact." }, { label: "Longer use", detail: "Harmony adds range and back carry." }, { label: "Heavier baby", detail: "Harmony's waist support matters more over time." }, { label: "Budget", detail: "Price Mini against possibly buying another carrier later." }],
@@ -430,7 +430,7 @@ export const commercialExpansionRoundups: Roundup[] = [
     faqs: [{ question: "Can both carry newborns?", answer: "Yes within their stated minimums and correct inward-facing setup." }, { question: "Does Mini support back carry?", answer: "No; Harmony is the option for later back carry." }, { question: "Which is cooler?", answer: "Both have mesh options, while shared body heat and weather still matter." }],
   },
   {
-    site: "baby", slug: "momcozy-purehug-vs-ergobaby-omni-breeze", title: "Momcozy PureHug vs. Ergobaby Omni Breeze", dek: "Compare price, mesh airflow, carry positions, lumbar support, instructions, caregiver fit, and whether premium features will be used.", category: "travel",
+    site: "baby", slug: "momcozy-purehug-vs-ergobaby-omni-breeze", title: "Momcozy PureHug vs. Ergobaby Omni Breeze", dek: "Compare price, mesh airflow, carry positions, lumbar support, instructions, caregiver fit, and whether premium features will be used.", category: "travel", updatedAt,
     intent: "Decide whether Omni Breeze's premium material and position system justify the cost over PureHug.",
     intro: "PureHug targets value; Omni Breeze targets airflow, four positions, and a mature fit system.",
     decisionGuide: [{ label: "Lower budget", detail: "PureHug offers a broad structured-carrier feature set." }, { label: "Hot weather", detail: "Omni Breeze's open mesh is the clearer candidate." }, { label: "Hip carry", detail: "Choose Omni Breeze." }, { label: "Fit uncertainty", detail: "Use the better return path rather than brand confidence." }],
@@ -477,7 +477,7 @@ export const commercialExpansionRoundups: Roundup[] = [
     ],
   },
   {
-    site: "smarthome", slug: "schlage-encode-plus-vs-yale-assure-lock-2-touch", title: "Schlage Encode Plus vs. Yale Assure Lock 2 Touch", dek: "Compare Home Key, fingerprint, Wi-Fi, physical-key fallback, key-free design, batteries, door fit, codes, and household access.", category: "access",
+    site: "smarthome", slug: "schlage-encode-plus-vs-yale-assure-lock-2-touch", title: "Schlage Encode Plus vs. Yale Assure Lock 2 Touch", dek: "Compare Home Key, fingerprint, Wi-Fi, physical-key fallback, key-free design, batteries, door fit, codes, and household access.", category: "access", updatedAt,
     intent: "Choose between Apple Home Key with a physical key and fingerprint entry with a key-free face.",
     intro: "Schlage leads with Home Key and fallback options; Yale leads with fingerprint and a clean key-free exterior.",
     decisionGuide: [{ label: "Apple Home Key", detail: "Choose Schlage Encode Plus." }, { label: "Fingerprint", detail: "Choose Yale Assure Lock 2 Touch." }, { label: "Physical key", detail: "The linked Schlage keeps one." }, { label: "Minimal exterior", detail: "The linked Yale is key-free." }],
@@ -485,7 +485,7 @@ export const commercialExpansionRoundups: Roundup[] = [
     faqs: [{ question: "Which works without a hub?", answer: "Both linked versions include Wi-Fi paths, but ecosystem features still vary." }, { question: "Which is better for Apple users?", answer: "Schlage is the direct Home Key choice." }, { question: "Which has fingerprint entry?", answer: "The linked Yale YRD450-F-WF1 model." }],
   },
   {
-    site: "smarthome", slug: "eufy-e340-vs-ring-battery-doorbell-plus", title: "eufy E340 vs. Ring Battery Doorbell Plus (2nd Gen)", dek: "Compare dual cameras, package coverage, local storage, subscription value, battery and wiring, Alexa fit, chimes, and app experience.", category: "cameras",
+    site: "smarthome", slug: "eufy-e340-vs-ring-battery-doorbell-plus", title: "eufy E340 vs. Ring Battery Doorbell Plus (2nd Gen)", dek: "Compare dual cameras, package coverage, local storage, subscription value, battery and wiring, Alexa fit, chimes, and app experience.", category: "cameras", updatedAt,
     intent: "Choose local dual-camera recording or Ring's subscription-backed ecosystem.",
     intro: "Eufy focuses on local no-plan value and package view; Ring focuses on app polish, Alexa, and cloud-service features.",
     decisionGuide: [{ label: "No required plan", detail: "Eufy E340 is the stronger candidate." }, { label: "Package camera", detail: "E340 includes a dedicated downward view." }, { label: "Alexa household", detail: "Ring has the more mature path." }, { label: "Cloud history", detail: "Price Ring's current plan separately." }],
@@ -493,7 +493,7 @@ export const commercialExpansionRoundups: Roundup[] = [
     faqs: [{ question: "Does E340 require HomeBase?", answer: "The linked standalone model lists built-in storage; HomeBase bundles are separate." }, { question: "Does Ring require a subscription?", answer: "Live features exist without one, while recording history and advanced features depend on the current plan." }, { question: "Can both use wiring?", answer: "Both have model-specific wiring options; confirm transformer and chime requirements." }],
   },
   {
-    site: "smarthome", slug: "schlage-encode-plus-vs-aqara-u100", title: "Schlage Encode Plus vs. Aqara U100", dek: "Compare Apple Home Key, fingerprints, built-in Wi-Fi, Aqara hub requirements, physical keys, codes, batteries, and door fit.", category: "access",
+    site: "smarthome", slug: "schlage-encode-plus-vs-aqara-u100", title: "Schlage Encode Plus vs. Aqara U100", dek: "Compare Apple Home Key, fingerprints, built-in Wi-Fi, Aqara hub requirements, physical keys, codes, batteries, and door fit.", category: "access", updatedAt,
     intent: "Choose a Home Key lock by deciding whether built-in Wi-Fi or fingerprint entry and Aqara automation matter more.",
     intro: "Schlage offers the simpler standalone Wi-Fi path; Aqara adds fingerprint entry and deeper automation when paired with the right hub.",
     decisionGuide: [{ label: "Built-in Wi-Fi", detail: "Choose Schlage for remote access without adding a hub." }, { label: "Fingerprint entry", detail: "Choose Aqara U100." }, { label: "Aqara automations", detail: "U100 is the natural fit when an Aqara hub is already present." }, { label: "Fallback planning", detail: "Compare key, battery, and emergency-power options before installation." }],
@@ -509,7 +509,7 @@ export const commercialExpansionRoundups: Roundup[] = [
     faqs: [{ question: "Do both work without a monthly plan?", answer: "Both offer local-storage paths, but storage hardware and advanced cloud features differ." }, { question: "Which sees packages better?", answer: "E340 has a dedicated downward-facing camera." }, { question: "Is Tapo D210 hardwired?", answer: "No. The linked D210 is the battery model, not D225." }],
   },
   {
-    site: "homeoffice", slug: "ergotron-hx-vs-huanuo-titanlift", title: "Ergotron HX vs. HUANUO TitanLift", dek: "Compare monitor weight ranges, curved-display fit, pivot requirements, desk clamps, adjustment feel, warranty, and walking-desk stability.", category: "ergonomics",
+    site: "homeoffice", slug: "ergotron-hx-vs-huanuo-titanlift", title: "Ergotron HX vs. HUANUO TitanLift", dek: "Compare monitor weight ranges, curved-display fit, pivot requirements, desk clamps, adjustment feel, warranty, and walking-desk stability.", category: "ergonomics", updatedAt,
     intent: "Choose a heavy-duty monitor arm without overbuying capacity or missing a curved-display pivot requirement.",
     intro: "Ergotron HX is the premium reference point; TitanLift targets heavy-monitor support at a lower price. Exact monitor and desk measurements decide the winner.",
     decisionGuide: [{ label: "Premium adjustment", detail: "Ergotron HX is the established premium choice." }, { label: "Lower budget", detail: "TitanLift may cover the needed weight range for less." }, { label: "Ultrawide curve", detail: "Check the exact pivot requirement rather than arm capacity alone." }, { label: "Walking desk", detail: "Shorter extension and a rigid clamp point matter more than maximum reach." }],
@@ -517,7 +517,7 @@ export const commercialExpansionRoundups: Roundup[] = [
     faqs: [{ question: "Is a higher weight rating always better?", answer: "No. The monitor should sit comfortably inside the supported range and still adjust smoothly." }, { question: "Do curved monitors need a special pivot?", answer: "Some large curved displays create extra leverage and need a model-specific pivot solution." }, { question: "Which is better for a walking desk?", answer: "The arm that fits the monitor and can remain compact on the more rigid clamp location." }],
   },
   {
-    site: "baby", slug: "babybjorn-mini-vs-ergobaby-omni-breeze", title: "BabyBjörn Mini vs. Ergobaby Omni Breeze", dek: "Compare newborn simplicity, structured waist support, airflow, carry positions, listed size ranges, caregiver fit, and long-term value.", category: "travel",
+    site: "baby", slug: "babybjorn-mini-vs-ergobaby-omni-breeze", title: "BabyBjörn Mini vs. Ergobaby Omni Breeze", dek: "Compare newborn simplicity, structured waist support, airflow, carry positions, listed size ranges, caregiver fit, and long-term value.", category: "travel", updatedAt,
     intent: "Choose a newborn-focused carrier or a structured all-stage carrier intended for more positions and longer use.",
     intro: "Carrier Mini favors quick newborn routines; Omni Breeze adds a supportive waistband and more positions as the baby grows.",
     decisionGuide: [{ label: "Early-month simplicity", detail: "BabyBjörn Mini is intentionally focused." }, { label: "Longer carries", detail: "Omni Breeze adds structured waist and lumbar support." }, { label: "Hip or back carry", detail: "Choose Omni Breeze after meeting the stated milestones." }, { label: "Two-caregiver fit", detail: "Test strap access and adjustment range on both adults." }],
@@ -525,7 +525,7 @@ export const commercialExpansionRoundups: Roundup[] = [
     faqs: [{ question: "Can both be used for newborns?", answer: "Only after the baby meets the exact stated minimums and the carrier is adjusted correctly." }, { question: "Which supports back carry?", answer: "Omni Breeze supports a later back-carry position; Mini does not." }, { question: "Which is better in hot weather?", answer: "Both have mesh-focused versions, while shared body heat, clothing, shade, and trip length still matter." }],
   },
   {
-    site: "pet", slug: "coway-mighty2-vs-shark-neverchange-max", title: "Coway Mighty2 vs. Shark NeverChange MAX", dek: "Compare room-size evidence, particle filtration, pet-hair screens, carbon odor media, filter claims, noise, footprint, and ownership cost.", category: "home-care",
+    site: "pet", slug: "coway-mighty2-vs-shark-neverchange-max", title: "Coway Mighty2 vs. Shark NeverChange MAX", dek: "Compare room-size evidence, particle filtration, pet-hair screens, carbon odor media, filter claims, noise, footprint, and ownership cost.", category: "home-care", updatedAt,
     intent: "Choose between a straightforward purifier and a larger pet-focused design with long-life filter claims.",
     intro: "Coway prioritizes compact automatic filtration; Shark adds a larger debris-defense design and longer claimed filter interval. Neither replaces source cleaning.",
     decisionGuide: [{ label: "Compact room", detail: "Coway is the more straightforward candidate." }, { label: "Visible pet debris", detail: "Shark's screen design deserves attention." }, { label: "Odor priority", detail: "Compare actual carbon media and replacement cost." }, { label: "Long ownership", detail: "Price genuine filters rather than relying on a headline interval." }],
@@ -533,7 +533,7 @@ export const commercialExpansionRoundups: Roundup[] = [
     faqs: [{ question: "Will either remove all pet odor?", answer: "No. Litter, bedding, fabrics, and cleaning remain the primary source-control steps." }, { question: "Does NeverChange mean no maintenance?", answer: "No. Screens, sensors, placement, and eventual filter replacement still require attention." }, { question: "Which is better for a bedroom?", answer: "Compare room size, tolerated noise, light controls, and placement clearance rather than brand alone." }],
   },
   {
-    site: "network", slug: "netgear-gs308e-vs-tp-link-tl-sg108", title: "NETGEAR GS308E vs TP-Link TL-SG108: Managed or Unmanaged 8-Port Switch?", dek: "Compare easy-smart management with plug-and-play simplicity, including VLANs, QoS, port monitoring, fanless operation, gigabit limits, and model-number traps.", category: "wired",
+    site: "network", slug: "netgear-gs308e-vs-tp-link-tl-sg108", title: "NETGEAR GS308E vs TP-Link TL-SG108: Managed or Unmanaged 8-Port Switch?", dek: "Compare easy-smart management with plug-and-play simplicity, including VLANs, QoS, port monitoring, fanless operation, gigabit limits, and model-number traps.", category: "wired", updatedAt,
     intent: "Choose an 8-port gigabit switch by deciding whether basic management features solve a real network need.",
     intro: "GS308E adds a small management layer; TL-SG108 keeps the network simpler. Both remain fanless eight-port gigabit switches.",
     decisionGuide: [{ label: "Plug and play", detail: "Choose TL-SG108 when the job is simply adding ports." }, { label: "VLAN or port monitoring", detail: "Choose GS308E after confirming the exact hardware version and supported features." }, { label: "NAS above gigabit", detail: "Skip both and compare 2.5GbE or faster switches." }, { label: "Desk or TV stand", detail: "Both use quiet fanless designs suited to shared rooms." }],

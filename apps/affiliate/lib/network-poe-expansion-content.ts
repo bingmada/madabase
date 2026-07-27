@@ -212,6 +212,7 @@ export const networkPoeExpansionRoundups: Roundup[] = [
   {
     site: "network",
     slug: "best-poe-switches-for-home-cameras-and-access-points",
+    updatedAt,
     title: "Best PoE Switches for Home Cameras and Access Points",
     dek: "Compare TP-Link, NETGEAR, and Reolink PoE switches by powered-port count, total wattage, management, uplink speed, and camera/AP fit.",
     category: "wired",
@@ -239,6 +240,7 @@ export const networkPoeExpansionRoundups: Roundup[] = [
   {
     site: "network",
     slug: "tp-link-tl-sg1005p-vs-tl-sg108pe-vs-netgear-gs308epp",
+    updatedAt,
     title: "TP-Link TL-SG1005P vs TL-SG108PE vs NETGEAR GS308EPP",
     dek: "Compare three PoE switch paths: cheap unmanaged four-port PoE, Easy Smart four-port PoE, and all-port PoE+ with a larger power budget.",
     category: "wired",

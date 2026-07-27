@@ -87,7 +87,7 @@ function entryKind(props) {
   return undefined;
 }
 
-function addEntry(sourceFile, node, kind) {
+function addEntry(sourceFile, node, kind, factoryName) {
   const props = properties(node);
   const site = stringValue(props.get("site"));
   const slug = stringValue(props.get("slug"));
@@ -101,6 +101,7 @@ function addEntry(sourceFile, node, kind) {
     kind,
     title: stringValue(props.get("seoTitle")) ?? stringValue(props.get("title")) ?? stringValue(props.get("name")),
     status: stringValue(props.get("publicationStatus")) ?? "published",
+    hasUpdateDate: props.has("updatedAt") || Boolean(factoryName),
     image: stringValue(props.get("image")),
     productSlugs: stringArray(props.get("productSlugs")),
     relatedProducts: stringArray(props.get("relatedProducts")),
@@ -122,7 +123,7 @@ function visit(sourceFile, node) {
     productFactoryNames.has(node.expression.text) &&
     ts.isObjectLiteralExpression(node.arguments[0])
   ) {
-    addEntry(sourceFile, node.arguments[0], "product");
+    addEntry(sourceFile, node.arguments[0], "product", node.expression.text);
   }
 
   if (ts.isObjectLiteralExpression(node)) {
@@ -247,6 +248,7 @@ opportunitySource.statements.forEach((statement) => {
         slug: stringValue(props.get("slug")),
         query: stringValue(props.get("query")),
         answer: stringValue(props.get("answer")),
+        hasUpdateDate: props.has("updatedAt"),
         preferredPaths: stringArray(props.get("preferredPaths")),
       });
     });
@@ -257,6 +259,7 @@ if (searchOpportunities.length !== 44) {
   errors.push(`Page-two opportunity registry must contain exactly 44 entries; found ${searchOpportunities.length}`);
 }
 const opportunityKeys = new Set();
+const opportunityDateKeys = new Set();
 const publishedRoutePaths = new Set(
   entries
     .filter((entry) => entry.status === "published")
@@ -266,6 +269,8 @@ for (const opportunity of searchOpportunities) {
   const key = `${opportunity.site}:${opportunity.kind}:${opportunity.slug}`;
   if (opportunityKeys.has(key)) errors.push(`Duplicate search opportunity ${key}`);
   opportunityKeys.add(key);
+  if (opportunity.hasUpdateDate) opportunityDateKeys.add(key);
+  else errors.push(`Search opportunity ${key} is missing updatedAt`);
   if (!routeKeys.has(key)) errors.push(`Search opportunity points to missing route ${key}`);
   if (!opportunity.query || opportunity.query.length < 24) errors.push(`Search opportunity ${key} needs a specific query`);
   if (!opportunity.answer || opportunity.answer.length < 100) errors.push(`Search opportunity ${key} needs a substantive direct answer`);
@@ -276,6 +281,12 @@ for (const opportunity of searchOpportunities) {
   });
   const relatedCandidateCount = entries.filter((entry) => entry.site === opportunity.site && entry.status === "published" && `${entry.kind}:${entry.slug}` !== `${opportunity.kind}:${opportunity.slug}`).length;
   if (relatedCandidateCount < 5) errors.push(`Search opportunity ${key} cannot produce five verified contextual links`);
+}
+for (const entry of entries.filter((item) => item.status === "published")) {
+  const key = `${entry.site}:${entry.kind}:${entry.slug}`;
+  if (!entry.hasUpdateDate && !opportunityDateKeys.has(key)) {
+    errors.push(`Published route ${key} is missing updatedAt`);
+  }
 }
 for (const [kind, route] of [["product", "reviews"], ["guide", "guides"], ["roundup", "best"]]) {
   const routeSource = fs.readFileSync(path.join(workspaceDir, "app", route, "[slug]", "page.tsx"), "utf8");

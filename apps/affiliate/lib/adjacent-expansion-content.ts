@@ -622,6 +622,7 @@ export const adjacentExpansionRoundups: Roundup[] = [
   {
     site: "baby",
     slug: "babybjorn-harmony-vs-ergobaby-omni-breeze",
+    updatedAt,
     title: "BabyBjörn Harmony vs. Ergobaby Omni Breeze",
     dek: "Compare fit workflow, mesh, carry positions, listed weight range, lumbar support, and which differences matter before trying either carrier.",
     category: "travel",

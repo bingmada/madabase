@@ -294,6 +294,7 @@ export const products: Product[] = [
   {
     site: "pet",
     slug: "wyze-cam-pan-v3-pet-camera",
+    updatedAt: "June 22, 2026",
     asin: "B0DTNKLF1K",
     name: "Wyze Cam Pan v3",
     brand: "Wyze",
@@ -1366,6 +1367,7 @@ export const roundups: Roundup[] = [
   {
     site: "pet",
     slug: "best-automatic-cat-feeders",
+    updatedAt: "June 21, 2026",
     title: "Best Automatic Cat Feeders for Consistent Meals",
     dek: "Scheduled feeders should solve meal timing without creating cleaning problems, food jams, or a new routine your pet can defeat.",
     category: "feeding",
@@ -1388,6 +1390,7 @@ export const roundups: Roundup[] = [
   {
     site: "pet",
     slug: "best-pet-cameras-for-apartments",
+    updatedAt: "June 21, 2026",
     title: "Best Pet Cameras for Apartments",
     dek: "Apartment-friendly pet cameras should balance room coverage, privacy comfort, alerts, and whether interactive features are actually useful.",
     category: "home-care",
@@ -1410,6 +1413,7 @@ export const roundups: Roundup[] = [
   {
     site: "pet",
     slug: "best-pet-odor-and-litter-upgrades",
+    updatedAt: "June 22, 2026",
     title: "Best Pet Odor and Litter Upgrades for Apartments",
     dek: "Odor control works best when scooping, disposal, airflow, and cleaning routines support each other.",
     category: "home-care",
@@ -1432,6 +1436,7 @@ export const roundups: Roundup[] = [
   {
     site: "pet",
     slug: "best-dog-beds-and-comfort-upgrades",
+    updatedAt: "June 22, 2026",
     title: "Best Dog Beds and Comfort Upgrades for Everyday Rest",
     dek: "A good comfort upgrade should match your pet's sleep position, cleaning needs, floor space, and chewing behavior.",
     category: "comfort",
@@ -1558,6 +1563,7 @@ export const roundups: Roundup[] = [
   {
     site: "homeoffice",
     slug: "best-monitor-arms-for-home-office",
+    updatedAt: "June 21, 2026",
     title: "Best Monitor Arms for Home Office and Walking Desks",
     dek: "Compare monitor arms for ordinary and walking desks by weight range, VESA fit, clamp stability, screen movement, cable slack, and usable desk depth.",
     category: "ergonomics",
@@ -1588,6 +1594,7 @@ export const roundups: Roundup[] = [
   {
     site: "homeoffice",
     slug: "best-home-office-cable-management",
+    updatedAt: "June 21, 2026",
     title: "Best Home Office Cable Management Upgrades",
     dek: "Cable management is not just about looks: it affects cleaning, standing-desk movement, laptop docking, and whether a setup stays usable after the first week.",
     category: "desks",
@@ -1610,6 +1617,7 @@ export const roundups: Roundup[] = [
   {
     site: "baby",
     slug: "best-baby-monitors-for-apartments",
+    updatedAt: "June 21, 2026",
     title: "Best Baby Monitors for Apartments",
     dek: "Small spaces still need clear night video, manageable alerts, and a connection style that fits your comfort level.",
     category: "sleep",
@@ -1632,6 +1640,7 @@ export const roundups: Roundup[] = [
   {
     site: "baby",
     slug: "best-travel-strollers",
+    updatedAt: "June 21, 2026",
     title: "Best Travel Strollers for Everyday Errands and Flights",
     dek: "The best travel stroller is easy to fold, light enough to carry, and still comfortable enough for real naps.",
     category: "travel",
@@ -1750,6 +1759,7 @@ export const roundups: Roundup[] = [
   {
     site: "baby",
     slug: "best-baby-carriers-and-sleep-routine-upgrades",
+    updatedAt: "June 22, 2026",
     title: "Best Baby Carrier and Sleep Routine Upgrades",
     dek: "Some baby gear earns its space by making repeated daily moments easier: carrying, soothing, bedtime cues, and short errands.",
     category: "travel",
@@ -1775,6 +1785,7 @@ export const guides: Guide[] = [
   {
     site: "pet",
     slug: "automatic-feeder-buying-guide",
+    updatedAt: "June 21, 2026",
     title: "How to Choose an Automatic Pet Feeder",
     dek: "A practical checklist for portion control, power backup, cleaning, and food compatibility.",
     category: "feeding",
@@ -1788,6 +1799,7 @@ export const guides: Guide[] = [
   {
     site: "pet",
     slug: "pet-camera-without-too-many-subscriptions",
+    updatedAt: "June 23, 2026",
     title: "How to Choose a Pet Camera Without Overpaying for Alerts",
     dek: "A practical guide to live view, treat tossing, subscriptions, storage, and privacy before buying a pet camera.",
     category: "home-care",
@@ -1832,6 +1844,7 @@ export const guides: Guide[] = [
   {
     site: "pet",
     slug: "dog-bed-for-small-apartment-guide",
+    updatedAt: "June 23, 2026",
     title: "How to Pick a Dog Bed for a Small Apartment",
     dek: "Choose a bed by sleep position, washable covers, floor space, support, and how much hair the fabric traps.",
     category: "comfort",
@@ -1846,6 +1859,7 @@ export const guides: Guide[] = [
   {
     site: "pet",
     slug: "automatic-feeder-portion-size-guide",
+    updatedAt: "June 25, 2026",
     title: "Automatic Feeder Portion Size Guide",
     dek: "How to think about kibble shape, portion repeatability, feeding schedules, and backup plans before trusting an automatic feeder.",
     category: "feeding",
@@ -1860,6 +1874,7 @@ export const guides: Guide[] = [
   {
     site: "pet",
     slug: "pet-camera-privacy-and-placement-guide",
+    updatedAt: "June 25, 2026",
     title: "Pet Camera Privacy and Placement Guide",
     dek: "Where to place a pet camera, what privacy settings to check, and how to avoid paying for features you will ignore.",
     category: "home-care",
@@ -1874,6 +1889,7 @@ export const guides: Guide[] = [
   {
     site: "pet",
     slug: "cat-fountain-filter-replacement-guide",
+    updatedAt: "June 25, 2026",
     title: "Cat Fountain Filter Replacement Guide",
     dek: "How to compare fountain filters, pump cleaning, replacement costs, and backup water plans.",
     category: "feeding",
@@ -1888,6 +1904,7 @@ export const guides: Guide[] = [
   {
     site: "homeoffice",
     slug: "small-home-office-setup-guide",
+    updatedAt: "June 21, 2026",
     title: "Small Home Office Setup Guide",
     dek: "How to spend space on the pieces that improve work most: desk depth, chair fit, lighting, monitor placement, and cable paths.",
     category: "desks",
@@ -1902,6 +1919,7 @@ export const guides: Guide[] = [
   {
     site: "homeoffice",
     slug: "monitor-arm-for-small-desk-guide",
+    updatedAt: "June 23, 2026",
     title: "Monitor Arm Buying Guide for Small Desks",
     dek: "How to check monitor weight, VESA support, clamp clearance, depth, and cable path before buying a monitor arm.",
     category: "ergonomics",
@@ -1995,6 +2013,7 @@ export const guides: Guide[] = [
   {
     site: "homeoffice",
     slug: "video-call-setup-guide",
+    updatedAt: "June 21, 2026",
     title: "Video Call Setup Guide for Home Offices",
     dek: "A practical path to better Zoom, Meet, and Teams calls using light placement, camera height, audio basics, and desk layout.",
     category: "meetings",
@@ -2032,6 +2051,7 @@ export const guides: Guide[] = [
   {
     site: "baby",
     slug: "baby-registry-essentials-guide",
+    updatedAt: "June 21, 2026",
     title: "Baby Registry Essentials Without the Clutter",
     dek: "A calmer way to separate daily-use gear from nice-to-have extras.",
     category: "sleep",
@@ -2045,6 +2065,7 @@ export const guides: Guide[] = [
   {
     site: "baby",
     slug: "travel-stroller-for-small-car-guide",
+    updatedAt: "June 23, 2026",
     title: "Travel Stroller Guide for Small Cars and Apartments",
     dek: "How to compare fold size, weight, recline, basket access, and daily comfort before buying a travel stroller.",
     category: "travel",
@@ -2059,6 +2080,7 @@ export const guides: Guide[] = [
   {
     site: "baby",
     slug: "nursery-sound-machine-night-light-guide",
+    updatedAt: "June 23, 2026",
     title: "Nursery Sound Machine and Night Light Guide",
     dek: "How to choose sound, light, app controls, portability, and placement without treating a device as a sleep guarantee.",
     category: "sleep",
@@ -2144,6 +2166,7 @@ export const guides: Guide[] = [
   {
     site: "baby",
     slug: "travel-stroller-folded-size-checklist",
+    updatedAt: "June 25, 2026",
     title: "Travel Stroller Folded Size Checklist",
     dek: "A practical checklist for trunk fit, hallway storage, airline assumptions, recline, and daily errand use.",
     category: "travel",
@@ -2158,6 +2181,7 @@ export const guides: Guide[] = [
   {
     site: "baby",
     slug: "bottle-parts-cleaning-routine-guide",
+    updatedAt: "June 25, 2026",
     title: "Bottle Parts Cleaning Routine Guide",
     dek: "How to plan bottle, nipple, cap, and pump-part cleaning before choosing a sterilizer or dryer.",
     category: "feeding",

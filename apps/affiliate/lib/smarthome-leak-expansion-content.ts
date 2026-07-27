@@ -228,6 +228,7 @@ export const smartHomeLeakExpansionRoundups: Roundup[] = [
   {
     site: "smarthome",
     slug: "best-water-leak-sensors-for-sinks-water-heaters",
+    updatedAt,
     title: "Best Water Leak Sensors for Sinks, Water Heaters and Basements",
     dek: "Compare Aqara, Govee, X-Sense, and YoLink by sensor count, hub requirements, alarm path, wireless range, and the rooms each kit should cover first.",
     category: "automation",
@@ -255,6 +256,7 @@ export const smartHomeLeakExpansionRoundups: Roundup[] = [
   {
     site: "smarthome",
     slug: "aqara-vs-govee-vs-xsense-vs-yolink-leak-sensors",
+    updatedAt,
     title: "Aqara vs Govee vs X-Sense vs YoLink Water Leak Sensors",
     dek: "A decision-first comparison of four leak-sensor paths: Aqara automations, Govee value, X-Sense four-sensor coverage, and YoLink long-range siren bundles.",
     category: "automation",

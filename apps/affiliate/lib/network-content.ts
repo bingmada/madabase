@@ -193,6 +193,7 @@ export const networkProducts: Product[] = [
   {
     site: "network",
     slug: "netgear-orbi-970-wifi-7-mesh",
+    updatedAt: "June 25, 2026",
     name: "NETGEAR Orbi 970 Series Wi-Fi 7 Mesh System",
     brand: "NETGEAR",
     category: "wifi",
@@ -214,6 +215,7 @@ export const networkProducts: Product[] = [
   {
     site: "network",
     slug: "tp-link-be400-wifi-7-router",
+    updatedAt: "June 25, 2026",
     name: "TP-Link BE400 Wi-Fi 7 Router",
     brand: "TP-Link",
     category: "wifi",
@@ -314,6 +316,7 @@ export const networkProducts: Product[] = [
   {
     site: "network",
     slug: "tp-link-tl-sg108-gigabit-switch",
+    updatedAt: "June 25, 2026",
     name: "TP-Link TL-SG108 8-Port Gigabit Switch",
     brand: "TP-Link",
     category: "wired",
@@ -373,6 +376,7 @@ export const networkProducts: Product[] = [
   {
     site: "network",
     slug: "jadaol-cat6-flat-ethernet-cable",
+    updatedAt: "June 25, 2026",
     name: "Jadaol Cat 6 Flat Ethernet Cable",
     brand: "Jadaol",
     category: "wired",
@@ -431,6 +435,7 @@ export const networkProducts: Product[] = [
   {
     site: "network",
     slug: "ugreen-revodok-usb-c-gigabit-ethernet-hub",
+    updatedAt: "June 25, 2026",
     name: "UGREEN Revodok USB-C Gigabit Ethernet Hub",
     brand: "UGREEN",
     category: "wired",
@@ -455,6 +460,7 @@ export const networkRoundups: Roundup[] = [
   {
     site: "network",
     slug: "best-mesh-wifi-for-apartments-and-homes",
+    updatedAt: "June 25, 2026",
     title: "Best Mesh Wi-Fi for Apartments and Multi-Floor Homes",
     dek: "Compare Deco BE25, BE63, BE67, BE85, eero, Orbi, and travel-router edge cases by pack size, wired backhaul, port speed, and layout risk.",
     category: "wifi",
@@ -477,6 +483,7 @@ export const networkRoundups: Roundup[] = [
   {
     site: "network",
     slug: "best-wifi-7-routers-for-home-networks",
+    updatedAt: "June 25, 2026",
     title: "Best Wi-Fi 7 Router for One-Router Homes",
     dek: "Compare practical Wi-Fi 7 routers against mesh when placement, WAN/LAN ports, firmware controls, and client support decide the real upgrade.",
     category: "wifi",
@@ -499,6 +506,7 @@ export const networkRoundups: Roundup[] = [
   {
     site: "network",
     slug: "best-wired-networking-upgrades",
+    updatedAt: "June 25, 2026",
     title: "Best Wired Home Network Upgrades: Switches, Cables & Hubs",
     dek: "Compare home switches, Cat6/Cat6A cables, and USB-C Ethernet adapters before replacing a router that is not the real bottleneck.",
     category: "wired",
@@ -608,6 +616,7 @@ export const networkGuides: Guide[] = [
   {
     site: "network",
     slug: "router-placement-guide",
+    updatedAt: "June 25, 2026",
     title: "Router Placement Guide Before Buying Mesh Wi-Fi",
     dek: "Choose a router location for apartments and small homes before buying another mesh node, extender, or flagship router.",
     category: "wifi",
@@ -622,6 +631,7 @@ export const networkGuides: Guide[] = [
   {
     site: "network",
     slug: "ethernet-cable-category-guide",
+    updatedAt: "June 25, 2026",
     title: "Cat6 vs Cat6A vs Flat Ethernet Cable: What to Buy for Home",
     dek: "Choose Cat6, Cat6A, flat cable, or short patch cables by run length, placement, speed target, and damage risk.",
     category: "wired",
@@ -636,6 +646,7 @@ export const networkGuides: Guide[] = [
   {
     site: "network",
     slug: "home-ethernet-switch-guide",
+    updatedAt: "June 25, 2026",
     title: "Home Ethernet Switch Buying Guide: Gigabit, 2.5G and Smart Features",
     dek: "Pick a home Ethernet switch by port count, speed, fanless operation, VLAN needs, desk placement, and room to grow.",
     category: "wired",
@@ -665,6 +676,7 @@ export const networkGuides: Guide[] = [
   {
     site: "network",
     slug: "travel-router-vpn-guide",
+    updatedAt: "June 25, 2026",
     title: "Best Travel Router Use Cases: Hotels, Rentals, RVs and VPNs",
     dek: "Decide when a portable router is worth buying for hotels, rentals, RVs, cruises, public Wi-Fi, and repeatable VPN setups.",
     category: "wifi",

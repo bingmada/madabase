@@ -272,6 +272,7 @@ export const gscPriorityRoundups: Roundup[] = [
     title: "Best Baby Carriers by Age and Carry Position",
     dek: "Compare newborn inward carry, outward-facing readiness, hip carry, back carry, warm-weather comfort, and when a simpler carrier beats an all-stage model.",
     category: "travel",
+    updatedAt: "July 10, 2026",
     intent: "Choose a carrier by the baby's current milestone instead of buying the most feature-heavy option.",
     intro:
       "Baby carrier shopping gets easier when age is treated as a planning clue, not permission to use every position. Start with the carry position the baby can safely use now, then compare caregiver fit, heat, return policy, and how long the carrier should remain useful.",
@@ -362,6 +363,7 @@ export const gscPriorityRoundups: Roundup[] = [
     title: "Best Monitor Arm for a Walking Desk: 3 Stable Setups",
     dek: "Compare monitor weight range, clamp support, arm extension, screen wobble, cable slack, and desk stiffness before buying for a walking desk.",
     category: "ergonomics",
+    updatedAt: "July 12, 2026",
     intent: "Choose a monitor arm that stays usable while a walking pad adds movement to the desk and screen.",
     intro: "A walking-desk monitor arm is only as stable as the floor, desk frame, desktop, clamp, and screen path below it. Choose the arm after checking monitor-only weight, VESA, clamp clearance, extension, and the pace you can work at comfortably.",
     decisionGuide: [

@@ -310,6 +310,7 @@ export const styleCatalogRoundups: Roundup[] = [
   {
     site: "style",
     slug: "best-weird-earrings-that-are-still-wearable",
+    updatedAt: "July 7, 2026",
     title: "Best Weird Earrings That Are Still Wearable",
     dek: "Compare frogs, abstract faces, lucky charms, geometric crystals, champagne bottles, and martini glasses by scale, closure, review depth, and outfit range.",
     category: "jewelry",
@@ -339,6 +340,7 @@ export const styleCatalogRoundups: Roundup[] = [
   {
     site: "style",
     slug: "best-loungefly-mini-backpacks-by-outfit",
+    updatedAt: "July 7, 2026",
     title: "Best Loungefly Mini Backpacks by Outfit",
     dek: "Compare Minnie bows and dots, classic Mickey, convertible checks, all-over prints, and Princess books by visual intensity, carry mode, review depth, and wardrobe fit.",
     category: "bags",
