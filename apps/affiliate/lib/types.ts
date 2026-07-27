@@ -1,6 +1,7 @@
 export type SiteKey = "pet" | "homeoffice" | "baby" | "network" | "smarthome" | "style" | "costume";
 
 export type MarketKey = "gb" | "ca" | "de" | "nl";
+export type AmazonMarketKey = "us" | MarketKey;
 
 export type PublicationStatus = "published" | "draft";
 

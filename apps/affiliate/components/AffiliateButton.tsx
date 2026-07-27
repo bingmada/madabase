@@ -1,8 +1,9 @@
 "use client";
 
 import { ExternalLink } from "lucide-react";
+import { useAmazonCreatorsListing } from "./AmazonCreatorsListing";
 import { trackClarityAffiliateClick } from "./ClarityAnalytics";
-import type { AffiliateOffer, MarketKey, Product, SiteKey } from "@/lib/types";
+import type { AffiliateOffer, AmazonMarketKey, MarketKey, Product, SiteKey } from "@/lib/types";
 
 export function AffiliateButton({
   site,
@@ -17,6 +18,15 @@ export function AffiliateButton({
   market?: MarketKey;
   position: string;
 }) {
+  const amazonMarket: AmazonMarketKey = market ?? "us";
+  const creatorsListing = useAmazonCreatorsListing(
+    site,
+    product.slug,
+    amazonMarket,
+    Boolean(product.asin ?? product.specs.ASIN) && offer.merchant.toLowerCase().includes("amazon"),
+  );
+  const href = creatorsListing?.detailPageUrl ?? offer.url;
+
   function trackClick() {
     const eventId =
       typeof crypto !== "undefined" && "randomUUID" in crypto
@@ -50,10 +60,11 @@ export function AffiliateButton({
   return (
     <a
       className="button-primary"
-      href={offer.url}
+      href={href}
       target="_blank"
       rel="sponsored nofollow noopener noreferrer"
-      aria-label={`${offer.label} for ${product.amazonTitle ?? product.name}`}
+      aria-label={`${offer.label} for ${creatorsListing?.title ?? product.amazonTitle ?? product.name}`}
+      data-amazon-link-source={creatorsListing ? "creators-api" : "verified-fallback"}
       onClick={trackClick}
     >
       {offer.label}

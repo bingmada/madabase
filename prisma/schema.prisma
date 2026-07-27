@@ -370,3 +370,27 @@ model ProductSyncRun {
   @@index([merchantId, startedAt])
   @@index([status, startedAt])
 }
+
+model AmazonProductSnapshot {
+  id            String    @id @default(cuid())
+  site          String
+  market        String
+  productSlug   String
+  asin          String
+  marketplace   String
+  detailPageUrl String?
+  title         String?
+  imageUrl      String?
+  features      Json?
+  parentAsin    String?
+  fetchedAt     DateTime
+  expiresAt     DateTime
+  lastErrorCode String?
+  lastErrorAt   DateTime?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  @@unique([site, market, productSlug])
+  @@index([marketplace, asin])
+  @@index([expiresAt])
+}

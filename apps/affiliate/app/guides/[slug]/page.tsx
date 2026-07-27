@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AffiliateButtonGroup } from "@/components/AffiliateButton";
+import { AmazonListingFreshness } from "@/components/AmazonCreatorsListing";
 import { JsonLd } from "@/components/JsonLd";
 import { BaseMarketEditionLinks } from "@/components/MarketExperience";
 import { SearchOpportunityBacklinks, SearchOpportunityBlock } from "@/components/SearchOpportunityBlock";
@@ -266,6 +267,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
                 ? `Start with the evidence page for ${topProduct.name}, then compare the alternatives against your layout, budget, and compatibility needs.`
                 : "Use the comparison page to narrow the choices before reading the setup details below."}
             </p>
+            {topProduct ? <AmazonListingFreshness site={site.key} productSlug={topProduct.slug} /> : null}
           </section>
         ) : null}
         {guide.image ? (

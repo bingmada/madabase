@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AffiliateButton } from "@/components/AffiliateButton";
+import { AmazonListingFreshness } from "@/components/AmazonCreatorsListing";
 import { JsonLd } from "@/components/JsonLd";
 import { Disclosure } from "@/components/LayoutParts";
 import { BaseMarketEditionLinks } from "@/components/MarketExperience";
@@ -219,6 +220,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                     <AffiliateButton site={site.key} product={product} offer={primaryOffers[0]} position="review-hero" />
                   ) : null}
                 </div>
+                <AmazonListingFreshness site={site.key} productSlug={product.slug} />
                 {primaryOffers.length ? (
                   <section
                     aria-label="Mobile purchase decision checks"

@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "updatedAt": null,
+  "rule": "Non-US ASINs must be added only after the exact local listing and product identity are verified. Never copy the US ASIN into a market by assumption.",
+  "products": {}
+}

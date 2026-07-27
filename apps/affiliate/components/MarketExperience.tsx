@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, Globe2, MapPin, ShieldCheck } from "lucide-react";
 import { AffiliateButtonGroup } from "./AffiliateButton";
+import { AmazonListingFreshness } from "./AmazonCreatorsListing";
 import { JsonLd } from "./JsonLd";
 import {
   basePathForMarketPage,
@@ -294,6 +295,7 @@ export function LocalizedMarketContent({
                   <AffiliateButtonGroup site={site.key} product={marketProduct} market={market.key} position={`market-${market.key}-hero`} limit={1} />
                 </div>
               ) : null}
+              <AmazonListingFreshness site={site.key} productSlug={product.slug} market={market.key} />
             </section>
             <div className="prose-lite mt-9">
               {variant.sections.map((section) => (

@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import process from "node:process";
+import { fileURLToPath } from "node:url";
 import ts from "typescript";
 
 const root = path.resolve(new URL("../../..", import.meta.url).pathname);
@@ -377,4 +378,8 @@ async function main() {
   if (failed.length) process.exitCode = 1;
 }
 
-await main();
+export { buildInventory, siteTrackingIds };
+
+if (fileURLToPath(import.meta.url) === path.resolve(process.argv[1] ?? "")) {
+  await main();
+}
