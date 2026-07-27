@@ -1,8 +1,12 @@
 import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/JsonLd";
 import { MarketHome } from "@/components/MarketExperience";
-import { marketHomeCopy } from "@/lib/market-content";
-import { getMarketByRouteSlug, marketHomeAlternates, marketPath, marketRouteSlugs, supportsMarketEditions } from "@/lib/markets";
+import {
+  hasIndexableLocalizedMarketPages,
+  localizedMarketHomeAlternates,
+  marketHomeCopy,
+} from "@/lib/market-content";
+import { getMarketByRouteSlug, marketPath, marketRouteSlugs, supportsMarketEditions } from "@/lib/markets";
 import { breadcrumbSchema, pageMetadata } from "@/lib/seo";
 import { findStaticPage, staticPageSlugs } from "@/lib/static-pages";
 import { getCurrentSite } from "@/lib/sites";
@@ -19,11 +23,22 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (market && marketCopy && supportsMarketEditions(site.key)) {
     const path = marketPath(market);
     const metadata = pageMetadata(site, path, marketCopy.title, marketCopy.dek);
+    const indexable = hasIndexableLocalizedMarketPages(site.key);
+    const languages = localizedMarketHomeAlternates(site.domain, site.key);
     return {
       ...metadata,
+      ...(!indexable
+        ? {
+            robots: {
+              index: false,
+              follow: true,
+              googleBot: { index: false, follow: true },
+            },
+          }
+        : {}),
       alternates: {
         canonical: new URL(path, site.domain).toString(),
-        languages: marketHomeAlternates(site.domain),
+        ...(languages ? { languages } : {}),
       },
     };
   }

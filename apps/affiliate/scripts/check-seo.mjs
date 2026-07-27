@@ -360,8 +360,25 @@ if (!seoSource.includes('export function productNotesSchema') || !seoSource.incl
 if (!seoSource.includes('product.evidenceMode === "hands-on"')) {
   errors.push("Review structured data must be limited to explicitly labeled hands-on products");
 }
+if (!seoSource.includes("const richProductEligible = Boolean(editorialReview || offers)")) {
+  errors.push("Product structured data must require a genuine review or verified numeric offer");
+}
 if (!seoSource.includes("export function roundupArticleSchema")) {
   errors.push("Roundup pages must emit Article data alongside ItemList data");
+}
+const roundupListSchemaSource = seoSource.slice(
+  seoSource.indexOf("export function roundupProductListSchema"),
+  seoSource.indexOf("export function faqPageSchema"),
+);
+if (roundupListSchemaSource.includes('"@type": "Product"')) {
+  errors.push("Roundup ItemList data must not emit incomplete Product objects");
+}
+const roundupArticleSchemaSource = seoSource.slice(
+  seoSource.indexOf("export function roundupArticleSchema"),
+  seoSource.indexOf("export function productNotesSchema"),
+);
+if (!roundupArticleSchemaSource.includes('"@type": "Thing"')) {
+  errors.push("Roundup Article subjects must use Thing unless genuine Product rich-result data exists");
 }
 if (!seoSource.includes("export function productPageTitle")) {
   errors.push("Product pages must use the shared query-oriented title fallback");
@@ -375,6 +392,9 @@ if (!robotsSource.includes('userAgent: "OAI-SearchBot"') || !robotsSource.includ
 const llmsSource = fs.readFileSync(path.join(workspaceDir, "app", "llms.txt", "route.ts"), "utf8");
 if (!llmsSource.includes("siteProducts(site.key)") || !llmsSource.includes('"Product evidence pages"')) {
   errors.push("llms.txt must list product evidence pages as well as guides and comparisons");
+}
+if (!llmsSource.includes("indexableLocalizedMarketPagesForSite")) {
+  errors.push("llms.txt must advertise only index-qualified country editions");
 }
 
 const contentSource = fs.readFileSync(path.join(libDir, "content.ts"), "utf8");
@@ -402,6 +422,10 @@ for (const requiredSelector of [
   "siteTools(siteKey)",
   "site.categories.map",
   "marketSiteKeys.flatMap(automaticPagesForSite)",
+  'indexStatus: "compatibility"',
+  "isIndexableLocalizedMarketPage",
+  "hasIndexableLocalizedMarketPages",
+  "indexableLocalizedMarketPagesForSite",
 ]) {
   if (!marketContentSource.includes(requiredSelector)) {
     errors.push(`Automatic country-edition registry must use ${requiredSelector}`);
@@ -430,6 +454,24 @@ const localizedRouteSource = fs.readFileSync(
 if (!localizedRouteSource.includes("findLocalizedMarketPage")) {
   errors.push("Country-edition route must resolve every generated market page");
 }
+if (
+  !localizedRouteSource.includes("isIndexableLocalizedMarketPage")
+  || !localizedRouteSource.includes("index: false")
+  || !localizedRouteSource.includes("follow: true")
+) {
+  errors.push("Compatibility-only country pages must emit noindex,follow");
+}
+
+const marketHomeRouteSource = fs.readFileSync(
+  path.join(workspaceDir, "app", "[slug]", "page.tsx"),
+  "utf8",
+);
+if (
+  !marketHomeRouteSource.includes("hasIndexableLocalizedMarketPages")
+  || !marketHomeRouteSource.includes("index: false")
+) {
+  errors.push("Country hubs without index-qualified pages must emit noindex,follow");
+}
 
 const counts = entries.reduce((result, entry) => {
   const key = `${entry.status} ${entry.kind}s`;
@@ -443,6 +485,13 @@ const automaticEditorialPages = entries.filter(
   (entry) => entry.status === "published" && amazonSiteKeys.includes(entry.site),
 ).length;
 console.log(`- automatic country-edition editorial routes: ${automaticEditorialPages * 4}`);
+const indexQualifiedPages = (marketContentSource.match(/indexStatus:\s*"qualified",/g) ?? []).length;
+const indexQualifiedSites = new Set(
+  [...marketContentSource.matchAll(
+    /site:\s*"([^"]+)"[\s\S]{0,160}?indexStatus:\s*"qualified"/g,
+  )].map((match) => match[1]),
+).size;
+console.log(`- index-qualified country-edition URLs: ${(indexQualifiedPages + indexQualifiedSites) * 4}`);
 if (warnings.length) {
   console.log(`\nWarnings (${warnings.length})`);
   warnings.forEach((warning) => console.log(`- ${warning}`));

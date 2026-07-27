@@ -3,6 +3,7 @@ import { LocalizedMarketContent } from "@/components/MarketExperience";
 import {
   basePathForMarketPage,
   findLocalizedMarketPage,
+  isIndexableLocalizedMarketPage,
   localizedAlternatesForBasePath,
   localizedMarketPath,
 } from "@/lib/market-content";
@@ -38,12 +39,27 @@ export async function generateMetadata({ params }: { params: MarketPageParams })
     variant.dek,
     page.image ?? product?.amazonImage ?? product?.image ?? site.heroImage,
   );
+  const indexable = isIndexableLocalizedMarketPage(page);
+  const languages = localizedAlternatesForBasePath(
+    site.domain,
+    site.key,
+    basePathForMarketPage(page),
+  );
 
   return {
     ...metadata,
+    ...(!indexable
+      ? {
+          robots: {
+            index: false,
+            follow: true,
+            googleBot: { index: false, follow: true },
+          },
+        }
+      : {}),
     alternates: {
       canonical: new URL(path, site.domain).toString(),
-      languages: localizedAlternatesForBasePath(site.domain, site.key, basePathForMarketPage(page)),
+      ...(languages ? { languages } : {}),
     },
   };
 }

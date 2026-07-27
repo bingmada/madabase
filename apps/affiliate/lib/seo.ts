@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
-import { localizedAlternatesForBasePath } from "./market-content";
-import { marketHomeAlternates, supportsMarketEditions } from "./markets";
+import {
+  localizedAlternatesForBasePath,
+  localizedMarketHomeAlternates,
+} from "./market-content";
+import { supportsMarketEditions } from "./markets";
 import type { SiteConfig } from "./sites";
 import type { Guide, Product, Roundup, Tool } from "./types";
 
@@ -107,7 +110,7 @@ export function pageMetadata(site: SiteConfig, path: string, title: string, desc
   const descriptionText = metaDescription(description, path);
   const languages = supportsMarketEditions(site.key)
     ? path === "/"
-      ? marketHomeAlternates(site.domain)
+      ? localizedMarketHomeAlternates(site.domain, site.key)
       : localizedAlternatesForBasePath(site.domain, site.key, path)
     : undefined;
 
@@ -208,7 +211,6 @@ export function roundupProductListSchema(site: SiteConfig, name: string, product
     name,
     itemListElement: products.map((product, index) => {
       const displayName = product.amazonTitle ?? product.name;
-      const displayImage = product.amazonImage ?? product.image;
       const url = absoluteUrl(site, `/reviews/${product.slug}`);
 
       return {
@@ -216,31 +218,6 @@ export function roundupProductListSchema(site: SiteConfig, name: string, product
         position: index + 1,
         name: displayName,
         url,
-        item: {
-          "@type": "Product",
-          "@id": `${url}#product`,
-          name: displayName,
-          alternateName: product.name !== displayName ? product.name : undefined,
-          description: product.summary,
-          image: absoluteUrl(site, displayImage),
-          url,
-          category: product.category,
-          brand: {
-            "@type": "Brand",
-            name: product.brand,
-          },
-          sku: product.asin ?? product.slug,
-          ...(product.asin ? { identifier: product.asin } : {}),
-          offers: productOffersSchema(product),
-          additionalProperty: Object.entries(product.specs)
-            .filter(([, value]) => Boolean(value))
-            .slice(0, 8)
-            .map(([propertyName, value]) => ({
-              "@type": "PropertyValue",
-              name: propertyName,
-              value,
-            })),
-        },
       };
     }),
   };
@@ -282,7 +259,7 @@ export function roundupArticleSchema(site: SiteConfig, roundup: Roundup, product
     ...(updated ? { dateModified: updated.isoDateTime } : {}),
     ...(citations.length ? { citation: citations } : {}),
     about: products.map((product) => ({
-      "@type": "Product",
+      "@type": "Thing",
       name: product.amazonTitle ?? product.name,
       url: absoluteUrl(site, `/reviews/${product.slug}`),
     })),
@@ -320,49 +297,51 @@ export function productNotesSchema(site: SiteConfig, product: Product) {
     name: site.name,
     url: site.domain,
   };
-  const editorialReview = product.evidenceMode === "hands-on"
+  const positiveNotes = noteList(product.pros);
+  const negativeNotes = noteList(product.cons);
+  const editorialReview = product.evidenceMode === "hands-on" && (positiveNotes || negativeNotes)
     ? {
         "@type": "Review",
         "@id": `${url}#editorial-review`,
         name: headline,
         headline,
         reviewBody: product.verdict ?? product.summary,
-        itemReviewed: {
-          "@id": productId,
-        },
-        positiveNotes: noteList(product.pros),
-        negativeNotes: noteList(product.cons),
+        positiveNotes,
+        negativeNotes,
         ...(updated ? { dateModified: updated.isoDateTime } : {}),
         author,
         publisher,
       }
     : undefined;
-
-  return {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Article",
-        "@id": `${url}#article`,
-        name: headline,
-        headline,
-        url,
-        mainEntityOfPage: {
-          "@type": "WebPage",
-          "@id": url,
+  const offers = productOffersSchema(product);
+  const richProductEligible = Boolean(editorialReview || offers);
+  const article = {
+    "@type": "Article",
+    "@id": `${url}#article`,
+    name: headline,
+    headline,
+    url,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": url,
+    },
+    description: product.summary,
+    image: absoluteUrl(site, displayImage),
+    articleSection: product.category,
+    ...(updated ? { dateModified: updated.isoDateTime } : {}),
+    about: richProductEligible
+      ? { "@id": productId }
+      : {
+          "@type": "Thing",
+          name: displayName,
+          url,
         },
-        description: product.summary,
-        image: absoluteUrl(site, displayImage),
-        articleSection: product.category,
-        ...(updated ? { dateModified: updated.isoDateTime } : {}),
-        about: {
-          "@id": productId,
-        },
-        ...(citations.length ? { citation: citations } : {}),
-        author,
-        publisher,
-      },
-      {
+    ...(citations.length ? { citation: citations } : {}),
+    author,
+    publisher,
+  };
+  const richProduct = richProductEligible
+    ? {
         "@type": "Product",
         "@id": productId,
         name: displayName,
@@ -377,7 +356,7 @@ export function productNotesSchema(site: SiteConfig, product: Product) {
         },
         sku: product.asin ?? product.slug,
         ...(product.asin ? { identifier: product.asin } : {}),
-        offers: productOffersSchema(product),
+        ...(offers ? { offers } : {}),
         additionalProperty: Object.entries(product.specs)
           .filter(([, value]) => Boolean(value))
           .slice(0, 12)
@@ -387,8 +366,12 @@ export function productNotesSchema(site: SiteConfig, product: Product) {
             value,
           })),
         ...(editorialReview ? { review: editorialReview } : {}),
-      },
-    ],
+      }
+    : undefined;
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": richProduct ? [article, richProduct] : [article],
   };
 }
 

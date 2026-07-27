@@ -6,6 +6,7 @@ import { AmazonListingFreshness } from "./AmazonCreatorsListing";
 import { JsonLd } from "./JsonLd";
 import {
   basePathForMarketPage,
+  indexableLocalizedMarketPagesForSite,
   localizedMarketPages,
   localizedMarketPagesForSite,
   localizedMarketPath,
@@ -100,7 +101,16 @@ export function MarketHome({ site, market }: { site: SiteConfig; market: MarketP
   const copy = marketHomeCopy[market.key][site.key];
   if (!copy) return null;
   const pages = localizedMarketPagesForSite(site.key, market.key);
-  const featured = pages.slice(0, 6);
+  const indexablePages = indexableLocalizedMarketPagesForSite(site.key, market.key);
+  const indexablePageKeys = new Set(
+    indexablePages.map(({ page }) => `${page.route}:${page.slug}`),
+  );
+  const featured = [
+    ...indexablePages,
+    ...pages.filter(
+      ({ page }) => !indexablePageKeys.has(`${page.route}:${page.slug}`),
+    ),
+  ].slice(0, 6);
   const directory = (["reviews", "best", "guides", "tools", "categories"] as const)
     .map((route) => ({
       route,
@@ -121,7 +131,7 @@ export function MarketHome({ site, market }: { site: SiteConfig; market: MarketP
           inLanguage: market.languageTag,
           contentLocation: { "@type": "Country", name: market.countryName },
           isPartOf: { "@type": "WebSite", name: site.name, url: site.domain },
-          hasPart: pages.map(({ page, variant }) => ({
+          hasPart: indexablePages.map(({ page, variant }) => ({
             "@type": "Article",
             name: variant.title,
             url: absoluteUrl(site, localizedMarketPath(market, page)),

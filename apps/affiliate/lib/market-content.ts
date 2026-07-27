@@ -39,6 +39,7 @@ export type LocalizedMarketPage = {
   site: SiteKey;
   route: MarketContentRoute;
   slug: string;
+  indexStatus: "qualified" | "compatibility";
   primaryProductSlug?: string;
   sourceTitle?: string;
   sourceDek?: string;
@@ -223,6 +224,7 @@ const curatedLocalizedMarketPages: LocalizedMarketPage[] = [
     site: "network",
     route: "reviews",
     slug: "tp-link-deco-be67-wifi-7-mesh",
+    indexStatus: "qualified",
     primaryProductSlug: "tp-link-deco-be67-wifi-7-mesh",
     updatedAt: "July 27, 2026",
     relatedPaths: [
@@ -281,6 +283,7 @@ const curatedLocalizedMarketPages: LocalizedMarketPage[] = [
     site: "smarthome",
     route: "guides",
     slug: "matter-controller-vs-thread-border-router",
+    indexStatus: "qualified",
     primaryProductSlug: "aqara-hub-m3",
     updatedAt: "July 27, 2026",
     relatedPaths: [
@@ -339,6 +342,7 @@ const curatedLocalizedMarketPages: LocalizedMarketPage[] = [
     site: "homeoffice",
     route: "reviews",
     slug: "urevo-smart-walking-pad",
+    indexStatus: "qualified",
     primaryProductSlug: "urevo-smart-walking-pad",
     updatedAt: "July 27, 2026",
     relatedPaths: [
@@ -397,6 +401,7 @@ const curatedLocalizedMarketPages: LocalizedMarketPage[] = [
     site: "baby",
     route: "guides",
     slug: "ergobaby-omni-breeze-positions-by-age",
+    indexStatus: "qualified",
     primaryProductSlug: "ergobaby-omni-breeze-carrier",
     updatedAt: "July 27, 2026",
     relatedPaths: [
@@ -453,7 +458,7 @@ const curatedLocalizedMarketPages: LocalizedMarketPage[] = [
   },
 ];
 
-type MarketPageDescriptor = Omit<LocalizedMarketPage, "variants">;
+type MarketPageDescriptor = Omit<LocalizedMarketPage, "indexStatus" | "variants">;
 
 function uniqueRelatedPaths(
   paths: Array<{ label: string; path: string } | undefined>,
@@ -726,7 +731,11 @@ function automaticPagesForSite(siteKey: SiteKey): LocalizedMarketPage[] {
     }),
   ];
 
-  return descriptors.map((page) => ({ ...page, variants: variantsFor(page) }));
+  return descriptors.map((page) => ({
+    ...page,
+    indexStatus: "compatibility" as const,
+    variants: variantsFor(page),
+  }));
 }
 
 const automaticLocalizedMarketPages = marketSiteKeys.flatMap(automaticPagesForSite);
@@ -750,6 +759,21 @@ export function localizedMarketPagesForSite(site: SiteKey, market: MarketKey) {
     .map((page) => ({ page, variant: page.variants[market] }));
 }
 
+export function isIndexableLocalizedMarketPage(page: Pick<LocalizedMarketPage, "indexStatus">) {
+  return page.indexStatus === "qualified";
+}
+
+export function indexableLocalizedMarketPagesForSite(site: SiteKey, market: MarketKey) {
+  return localizedMarketPagesForSite(site, market)
+    .filter(({ page }) => isIndexableLocalizedMarketPage(page));
+}
+
+export function hasIndexableLocalizedMarketPages(site: SiteKey) {
+  return localizedMarketPages.some(
+    (page) => page.site === site && isIndexableLocalizedMarketPage(page),
+  );
+}
+
 export function basePathForMarketPage(page: Pick<LocalizedMarketPage, "route" | "slug">) {
   return `/${page.route}/${page.slug}`;
 }
@@ -771,7 +795,7 @@ export function localizedMarketPathForBasePath(
 
 export function localizedAlternatesForBasePath(domain: string, site: SiteKey, path: string) {
   const page = localizedMarketPages.find((item) => item.site === site && basePathForMarketPage(item) === path);
-  if (!page) return undefined;
+  if (!page || !isIndexableLocalizedMarketPage(page)) return undefined;
 
   return {
     "en-US": new URL(path, domain).toString(),
@@ -785,12 +809,29 @@ export function localizedAlternatesForBasePath(domain: string, site: SiteKey, pa
   };
 }
 
+export function localizedMarketHomeAlternates(domain: string, site: SiteKey) {
+  if (!hasIndexableLocalizedMarketPages(site)) return undefined;
+
+  return {
+    "en-US": new URL("/", domain).toString(),
+    ...Object.fromEntries(
+      marketKeys.map((key) => {
+        const market = markets[key];
+        return [market.hrefLang, new URL(marketPath(market), domain).toString()];
+      }),
+    ),
+    "x-default": new URL("/", domain).toString(),
+  };
+}
+
 export function marketSitemapEntries(site: SiteKey) {
-  if (!marketHomeCopy.gb[site]) return [];
+  if (!marketHomeCopy.gb[site] || !hasIndexableLocalizedMarketPages(site)) return [];
 
   return marketKeys.flatMap((key) => {
     const market = markets[key];
-    const pages = localizedMarketPages.filter((page) => page.site === site);
+    const pages = localizedMarketPages.filter(
+      (page) => page.site === site && isIndexableLocalizedMarketPage(page),
+    );
     const homeUpdatedAt = latestUpdate(pages.map((page) => page.updatedAt));
     return [
       {
