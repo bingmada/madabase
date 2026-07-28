@@ -9,7 +9,10 @@ export const verifiedAffiliateBatchProducts: Product[] = [
     asin: "B0FJMFYPNH",
     seoTitle:
       "PETLIBRO One RFID Feeder Review: Collar Tag, Portions & Multi-Cat Fit",
-    updatedAt,
+    updatedAt: "July 28, 2026",
+    evidenceMode: "official-spec",
+    researchNote:
+      "We have not tested this feeder ourselves. This guide uses PETLIBRO's current PLAF301 product page, support material, cleaning instructions, portion guidance, and manual; the exact Amazon color, pack quantity, included tag and reader mat, and seller still require a checkout check.",
     name: "PETLIBRO One RFID Smart Feeder",
     brand: "PETLIBRO",
     category: "feeding",
@@ -47,8 +50,17 @@ export const verifiedAffiliateBatchProducts: Product[] = [
         "Dedicated PETLIBRO RFID collar tag; not an implanted microchip",
       Meals: "Up to 10 scheduled meals or snacks per day",
       Kibble: "Dry food, 2–15mm",
+      Portions:
+        "Approximately 20mL per portion by volume; no fixed gram value",
       Network: "2.4GHz and 5GHz Wi-Fi",
       Power: "Corded; 3 alkaline D batteries for emergency backup",
+      Dimensions: "442 x 196 x 320mm",
+      "Collar tag":
+        "23 x 23 x 14.18mm; 4.2g; splashproof, not submersible",
+      "Identifier limit":
+        "One feeder binds to one dedicated PETLIBRO collar tag; implanted microchips and third-party tags are unsupported",
+      "Reader requirement":
+        "The PETLIBRO RFID reader mat is required for recognition",
     },
     evidence: [
       "Confirm ASIN B0FJMFYPNH, color, pack quantity, seller, and included collar tag",
@@ -87,9 +99,24 @@ export const verifiedAffiliateBatchProducts: Product[] = [
         note: "Official model, tag, schedule, capacity, kibble, power, network, placement, and box-content information.",
       },
       {
-        name: "PETLIBRO One RFID support",
-        url: "https://petlibro.com/pages/faq-product/one-rfid-smart-feeder",
-        note: "Official setup, cleaning, collar, lid, dispensing, and troubleshooting resources.",
+        name: "PETLIBRO One RFID PLAF301 support",
+        url: "https://petlibro.com/pages/how-the-one-rfid-pet-feeder-works-plaf301",
+        note: "Exact tag, reader, placement, food, power, network, and battery-mode limitations.",
+      },
+      {
+        name: "PETLIBRO One RFID PLAF301 cleaning",
+        url: "https://petlibro.com/pages/how-do-i-disassemble-and-clean-the-one-rfid-pet-feeder-af301-plaf301",
+        note: "Exact powered-base, collar-tag, RFID-reader, drying, and reassembly restrictions.",
+      },
+      {
+        name: "PETLIBRO One RFID PLAF301 user manual",
+        url: "https://cdn.shopify.com/s/files/1/0252/5197/1119/files/Petlibro-AF301-3L-_US_DE_IT_FR_ES.pdf?v=1774007057",
+        note: "Current official multilingual PLAF301 operating manual.",
+      },
+      {
+        name: "PETLIBRO portion-size guidance",
+        url: "https://petlibro.com/pages/how-much-is-in-one-feeding-portion-plaf001-002-101-102-plaf003-004-plaf005-006-103-203-plaf008-plaf107-plaf108-plaf301",
+        note: "Official explanation that PLAF301 portions are approximately 20mL by volume and do not have a fixed gram weight.",
       },
     ],
     offers: [
@@ -98,7 +125,7 @@ export const verifiedAffiliateBatchProducts: Product[] = [
         url: "https://amzn.to/4aywtHU",
         label: "Check PETLIBRO One RFID price on Amazon",
         priceNote:
-          "Confirm ASIN B0FJMFYPNH, pack quantity, color, seller, and included dedicated collar tag.",
+          "Confirm ASIN B0FJMFYPNH, PLAF301, pack quantity, color, seller, and inclusion of the dedicated collar tag and RFID reader mat.",
       },
     ],
   },
@@ -510,7 +537,7 @@ export const verifiedAffiliateBatchRoundups: Roundup[] = [
   {
     site: "pet",
     slug: "petlibro-one-rfid-vs-granary-smart-feeder",
-    updatedAt,
+    updatedAt: "July 28, 2026",
     title: "PETLIBRO One RFID vs Granary: Access Control or Simple Scheduling?",
     dek: "Compare dedicated-tag meal protection with a conventional Wi-Fi feeder by pet conflict, portions, footprint, cleaning, backup power, and cost.",
     category: "feeding",

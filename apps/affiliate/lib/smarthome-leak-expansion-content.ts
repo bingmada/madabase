@@ -120,7 +120,7 @@ export const smartHomeLeakExpansionProducts: Product[] = [
     asin: "B0DFCMJH5L",
     amazonTitle: "X-Sense Wi-Fi Water Leak Detector Kit, 4 Water Sensors and 1 Base Station, Model SWS0A41",
     seoTitle: "X-Sense SWS0A41 Water Leak Detector Kit Review Guide",
-    updatedAt,
+    updatedAt: "July 28, 2026",
     name: "X-Sense SWS0A41 Wi-Fi Water Leak Detector Kit",
     brand: "X-Sense",
     category: "automation",
@@ -158,7 +158,10 @@ export const smartHomeLeakExpansionProducts: Product[] = [
     ],
     alternatives: ["Choose Govee for a lower-cost three-sensor Wi-Fi gateway kit.", "Choose YoLink when long range and device-to-device alarm pairing matter.", "Choose Aqara for Aqara ecosystem automations."],
     compareSlugs: ["govee-wifi-water-leak-detector-3-pack", "yolink-lora-water-alarm-bundle", "aqara-water-leak-sensor-3-pack-hub-kit"],
-    sources: [amazonSource("B0DFCMJH5L", "Exact linked listing; confirm SWS0A41 model, four-sensor quantity, base station, seller, and app requirements.")],
+    sources: [
+      { name: "X-Sense SWS0A41 product page", url: "https://www.x-sense.com/products/x-sense-sws0a41-wireless-wifi-water-leak-detector-kit", note: "Exact official model, four-sensor and SBS50 base-station kit identity, detection layout, alarm, app, and installation information." },
+      amazonSource("B0DFCMJH5L", "Exact linked listing; confirm SWS0A41 model, four-sensor quantity, base station, seller, and app requirements."),
+    ],
     offers: [
       {
         merchant: "Amazon US",

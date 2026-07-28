@@ -164,6 +164,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
   if (!guide) notFound();
   const searchOpportunity = findSearchOpportunity(site.key, "guide", slug);
   const effectiveUpdatedAt = searchOpportunity?.updatedAt ?? guide.updatedAt;
+  const effectiveGuide = effectiveUpdatedAt === guide.updatedAt ? guide : { ...guide, updatedAt: effectiveUpdatedAt };
   const advice = guideAdvice(site.key, guide.category);
   const category = site.categories.find((item) => item.slug === guide.category);
   const relatedProducts = (guide.relatedProducts ?? [])
@@ -197,7 +198,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             { name: guide.title, path: `/guides/${slug}` },
           ])}
         />
-        <JsonLd data={guideSchema(site, guide)} />
+        <JsonLd data={guideSchema(site, effectiveGuide)} />
         <StyleGuidePage
           guide={guide}
           relatedProducts={relatedProducts}
@@ -222,7 +223,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
           { name: guide.title, path: `/guides/${slug}` },
         ])}
       />
-      <JsonLd data={guideSchema(site, guide)} />
+      <JsonLd data={guideSchema(site, effectiveGuide)} />
       <div className="shell max-w-4xl">
         {category ? (
           <Link className="eyebrow hover:underline" href={`/categories/${category.slug}`}>

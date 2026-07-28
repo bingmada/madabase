@@ -178,6 +178,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
   if (!roundup) notFound();
   const searchOpportunity = findSearchOpportunity(site.key, "roundup", slug);
   const effectiveUpdatedAt = searchOpportunity?.updatedAt ?? roundup.updatedAt;
+  const effectiveRoundup = effectiveUpdatedAt === roundup.updatedAt ? roundup : { ...roundup, updatedAt: effectiveUpdatedAt };
   const picks = roundup.productSlugs
     .map((productSlug) => findProduct(site.key, productSlug))
     .filter((product): product is NonNullable<ReturnType<typeof findProduct>> => Boolean(product));
@@ -201,7 +202,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
           ])}
         />
         <JsonLd data={roundupProductListSchema(site, roundup.title, picks)} />
-        <JsonLd data={roundupArticleSchema(site, roundup, picks)} />
+        <JsonLd data={roundupArticleSchema(site, effectiveRoundup, picks)} />
         <JsonLd data={faqPageSchema(roundup.faqs)} />
         <StyleCollectionPage roundup={roundup} products={picks} />
         <div className="style-shell pb-12">
@@ -222,7 +223,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
         ])}
       />
       <JsonLd data={roundupProductListSchema(site, roundup.title, picks)} />
-      <JsonLd data={roundupArticleSchema(site, roundup, picks)} />
+      <JsonLd data={roundupArticleSchema(site, effectiveRoundup, picks)} />
       <JsonLd data={faqPageSchema(roundup.faqs)} />
       <div className="shell">
         <div className="max-w-3xl">

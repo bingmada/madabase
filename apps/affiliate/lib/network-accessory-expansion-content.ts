@@ -569,9 +569,16 @@ export const networkAccessoryExpansionGuides: Guide[] = [
     title: "Xfinity Gateway Bridge Mode vs Buying Your Own Router",
     dek: "Bridge mode can keep the ISP gateway while letting a better router or mesh system handle Wi-Fi, but support and feature tradeoffs matter.",
     category: "wired",
-    updatedAt,
+    updatedAt: "July 28, 2026",
     relatedProducts: ["arris-surfboard-s33-cable-modem", "motorola-mb8611-cable-modem", "hitron-coda56-cable-modem", "tp-link-deco-be63-wifi-7-mesh"],
     relatedRoundups: ["best-cable-modems-for-xfinity-spectrum-cox", "best-mesh-wifi-for-apartments-and-homes"],
+    sources: [
+      {
+        name: "Xfinity: Use Bridge Mode on your wireless gateway",
+        url: "https://www.xfinity.com/support/articles/wireless-gateway-enable-disable-bridge-mode",
+        note: "Exact official bridge-mode behavior, setup, one-connected-device limit, private-Wi-Fi, Advanced Security, extender, and hotspot implications.",
+      },
+    ],
     sections: [
       { heading: "Bridge mode is for double-router problems", body: "When an ISP gateway and a separate router both route the network, double NAT, port-forwarding confusion, and unstable gaming or VPN behavior can appear." },
       { heading: "A standalone modem removes the gateway layer", body: "Buying an approved modem-only device can be cleaner than bridging a rented gateway, but only when the provider, speed tier, voice service, and support expectations allow it." },

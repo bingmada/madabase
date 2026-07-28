@@ -97,6 +97,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
   if (!product) notFound();
   const searchOpportunity = findSearchOpportunity(site.key, "product", slug);
   const effectiveUpdatedAt = searchOpportunity?.updatedAt ?? product.updatedAt;
+  const effectiveProduct = effectiveUpdatedAt === product.updatedAt ? product : { ...product, updatedAt: effectiveUpdatedAt };
   const displayName = product.amazonTitle ?? product.name;
   const pageTitle = productPageTitle(product);
   const displayImage = product.amazonImage ?? product.image;
@@ -126,7 +127,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
   const externalTests = product.externalTests ?? [];
   const evidencePresentation = productEvidencePresentation(product);
   const listingRows = listingVerificationRows(product, displayName, primaryOffers);
-  const updateRows = updateRecord(product, sourceCount, primaryOffers);
+  const updateRows = updateRecord(effectiveProduct, sourceCount, primaryOffers);
   const officialSpecRows = Object.entries(product.specs)
     .filter(([key, value]) => key !== "Link status" && Boolean(value))
     .slice(0, 8);
@@ -138,7 +139,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
     ["Verify first", product.evidence[0] ?? "Confirm model, seller, bundle, and return path before checkout."],
   ];
   const evidenceSnapshot = [
-    ["Updated", product.updatedAt ?? "Review schedule pending"],
+    ["Updated", effectiveUpdatedAt ?? "Review schedule pending"],
     [
       "Source basis",
       externalTests.length
@@ -166,7 +167,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
             { name: product.name, path: `/reviews/${slug}` },
           ])}
         />
-        <JsonLd data={productNotesSchema(site, product)} />
+        <JsonLd data={productNotesSchema(site, effectiveProduct)} />
         <StyleProductPage
           site={site}
           product={product}
@@ -192,7 +193,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
           { name: product.name, path: `/reviews/${slug}` },
         ])}
       />
-      <JsonLd data={productNotesSchema(site, product)} />
+      <JsonLd data={productNotesSchema(site, effectiveProduct)} />
       <div className="shell">
         <div className="grid min-w-0 gap-8 lg:grid-cols-[minmax(0,1fr)_380px]">
           <article className="min-w-0">

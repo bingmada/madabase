@@ -498,7 +498,7 @@ export const adjacentExpansionProducts: Product[] = [
     slug: "levoit-vital-200s-p-air-purifier",
     asin: "B0BGPF71Q6",
     seoTitle: "Levoit Vital 200S-P Review: CADR, Noise & Filter Cost",
-    updatedAt: "July 18, 2026",
+    updatedAt: "July 28, 2026",
     evidenceMode: "research-synthesis",
     researchNote: "We have not tested the Vital 200S-P ourselves. This guide keeps Levoit's current specifications separate from attributed RTINGS and HouseFresh tests of the Vital 200S family. Their results use different particle sensors, room assumptions, fan settings, and noise methods, so the numbers are not averaged or treated as interchangeable.",
     externalTests: [
@@ -542,19 +542,19 @@ export const adjacentExpansionProducts: Product[] = [
       ASIN: "B0BGPF71Q6",
       Model: "Vital 200S-P",
       "Linked color": "White",
-      "Official smoke CADR": "250 CFM",
-      "Listed maximum coverage": "Up to 1,875 sq. ft. at one air change per hour; do not treat this as a fast-cleaning room target",
+      "Official CADR": "250 CFM",
+      "Official room ratings": "1,862 sq. ft. at 1 ACH; 388 sq. ft. at 4.8 ACH",
       "Pre-filter": "Washable",
       Controls: "VeSync app, auto mode, schedules, and air-quality display",
       "Official dimensions": "15.6 x 8.5 x 19.8 in",
-      "Official rated power": "51W",
-      "Official noise range": "27-56dB",
+      "Official rated power": "50W",
+      "Official noise range": "23-54dB",
       Filter: "Vital 200S-P three-stage replacement filter; official interval is 6-12 months",
-      "Filter price check": "$49.99 on Levoit's US replacement page on July 18, 2026; price and stock can change",
+      "Filter purchase check": "Verify the selected Vital 200S-P series filter, live price, and stock before checkout",
     },
     evidence: [
       "Size the purifier by room volume and desired air changes, not maximum coverage alone",
-      "Vacuum or wash the pre-filter on the manufacturer schedule and allow it to dry fully",
+      "Clean the washable pre-filter according to the current manual and allow it to dry fully before reinstalling",
       "Check replacement-filter price and availability before comparing the machine price",
     ],
     editorialSections: [
@@ -564,11 +564,11 @@ export const adjacentExpansionProducts: Product[] = [
       },
       {
         heading: "Coverage needs an air-change context",
-        body: "Levoit's maximum 1,875-square-foot figure represents one air change per hour. RTINGS associated its maximum-speed result with 337 square feet, while HouseFresh used 373 square feet at five air changes per hour. Ceiling height, doors, leakage, pollutant load, and tolerated fan noise still change the right target.",
+        body: "Levoit's current 1,862-square-foot figure represents one air change per hour, while its faster official target is 388 square feet at 4.8 air changes per hour. RTINGS associated its maximum-speed result with 337 square feet, while HouseFresh used 373 square feet at five air changes per hour. Ceiling height, doors, leakage, pollutant load, and tolerated fan noise still change the right target.",
       },
       {
         heading: "The filter is the price and version risk",
-        body: "The washable part is the pre-filter; the main particle-and-carbon filter remains a consumable. Levoit's replacement page listed a 6-12 month interval and a $49.99 price during this update. HouseFresh measured 44.55W at full speed and built its annual-cost estimate from continuous top-speed use plus one filter, but a real household can land above or below that assumption.",
+        body: "The washable part is the pre-filter; the main particle-and-carbon filter remains a consumable. Levoit's replacement page lists a 6-12 month interval, but filter price, selected variant, and stock need a live check. HouseFresh measured 44.55W at full speed and built its annual-cost estimate from continuous top-speed use plus one filter, but a real household can land above or below that assumption.",
       },
       {
         heading: "Do not buy it as a complete odor solution",
@@ -581,9 +581,19 @@ export const adjacentExpansionProducts: Product[] = [
     ],
     sources: [
       {
-        name: "Levoit Vital 200S-P product page",
-        url: "https://levoit.com/products/vital-200s-p-smart-air-purifier",
-        note: "Official room, filtration, app, pre-filter, and operating information.",
+        name: "Levoit Vital 200S-P product page — White/Grey",
+        url: "https://levoit.com/collections/air-purifiers/products/levoit-vital-200s-p-smart-air-purifier-white-grey",
+        note: "Official page for the linked color variant and current product-family identity.",
+      },
+      {
+        name: "Levoit Vital 200S-P product page — Black",
+        url: "https://levoit.com/products/levoit-vital-200s-p-smart-air-purifier-black",
+        note: "Official current CADR, ACH-based room ratings, filtration, controls, dimensions, power, and noise specifications; the linked Amazon offer remains the White variant.",
+      },
+      {
+        name: "Levoit Vital 200S-P user manual",
+        url: "https://levoit.com/cdn/shop/files/HEAPAPLVSUS0166Y_0124A_LAP-V201S-WUS_LAP-V201S-KUS_Vital_200S-P_Smart_Air_Purifier_manual_US_A0-240924.pdf?v=13235666559482571905",
+        note: "Official LAP-V201S-WUS and LAP-V201S-KUS operating modes, particle-sensor limits, care, and filter-life guidance.",
       },
       {
         name: "AHAM Verifide directory",

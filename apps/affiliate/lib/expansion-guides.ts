@@ -188,13 +188,23 @@ export const expansionGuides: Guide[] = [
     title: "Automatic Pet Feeder Cleaning Checklist",
     dek: "A repeatable cleaning routine for bowls, chutes, hoppers, seals, and food-contact tools.",
     category: "feeding",
-    updatedAt: "June 27, 2026",
+    updatedAt: "July 28, 2026",
     relatedRoundups: ["best-automatic-cat-feeders"],
     sources: [
       {
         name: "FDA: Proper Storage of Pet Food and Treats",
         url: "https://www.fda.gov/animal-veterinary/animal-health-literacy/proper-storage-pet-food-treats",
         note: "Primary food-handling guidance for washing bowls and utensils and keeping dry pet food cool, dry, and secure.",
+      },
+      {
+        name: "PETLIBRO Granary PLAF103 cleaning",
+        url: "https://petlibro.com/pages/how-do-i-disassemble-and-clean-the-granary-smart-feeder-af103-plaf103",
+        note: "Exact washable-part, powered-base, drying, and reassembly restrictions for Granary PLAF103.",
+      },
+      {
+        name: "PETLIBRO One RFID PLAF301 cleaning",
+        url: "https://petlibro.com/pages/how-do-i-disassemble-and-clean-the-one-rfid-pet-feeder-af301-plaf301",
+        note: "Exact base, collar-tag, RFID-reader, drying, and reassembly restrictions for One RFID PLAF301.",
       },
     ],
     sections: [
