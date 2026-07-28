@@ -8,7 +8,7 @@ import { BaseMarketEditionLinks } from "@/components/MarketExperience";
 import { SearchOpportunityBacklinks, SearchOpportunityBlock } from "@/components/SearchOpportunityBlock";
 import { StyleGuidePage } from "@/components/StyleExperience";
 import { findGuide, findProduct, findRoundup, siteGuides } from "@/lib/content";
-import { findSearchOpportunity } from "@/lib/search-opportunities";
+import { effectiveContentUpdatedAt, findSearchOpportunity } from "@/lib/search-opportunities";
 import { breadcrumbSchema, guideSchema, pageMetadata } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 import type { SiteKey } from "@/lib/types";
@@ -163,7 +163,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
   const guide = findGuide(site.key, slug);
   if (!guide) notFound();
   const searchOpportunity = findSearchOpportunity(site.key, "guide", slug);
-  const effectiveUpdatedAt = searchOpportunity?.updatedAt ?? guide.updatedAt;
+  const effectiveUpdatedAt = effectiveContentUpdatedAt(guide.updatedAt, searchOpportunity?.updatedAt);
   const effectiveGuide = effectiveUpdatedAt === guide.updatedAt ? guide : { ...guide, updatedAt: effectiveUpdatedAt };
   const advice = guideAdvice(site.key, guide.category);
   const category = site.categories.find((item) => item.slug === guide.category);
@@ -200,7 +200,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         />
         <JsonLd data={guideSchema(site, effectiveGuide)} />
         <StyleGuidePage
-          guide={guide}
+          guide={effectiveGuide}
           relatedProducts={relatedProducts}
           relatedGuides={relatedGuides}
           relatedRoundups={relatedRoundups}

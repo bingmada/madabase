@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { siteGuides, siteProducts, siteRoundups, siteTools } from "@/lib/content";
 import { contentDate } from "@/lib/seo";
 import { marketSitemapEntries } from "@/lib/market-content";
-import { searchOpportunityUpdatedAt } from "@/lib/search-opportunities";
+import { effectiveContentUpdatedAt, searchOpportunityUpdatedAt } from "@/lib/search-opportunities";
 import { staticPageSlugs } from "@/lib/static-pages";
 import { getCurrentSite } from "@/lib/sites";
 import { listIndexableCostumeProducts } from "@/lib/costume-catalog";
@@ -31,7 +31,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...staticPageSlugs.map((slug) => ({ path: `/${slug}`, changeFrequency: "monthly" as const, priority: 0.45 })),
     ...site.categories.map((category) => ({ path: `/categories/${category.slug}`, changeFrequency: "weekly" as const, priority: 0.75 })),
     ...roundups.map((item) => {
-      const updated = contentDate(searchOpportunityUpdatedAt(site.key, "roundup", item.slug) ?? item.updatedAt);
+      const updated = contentDate(effectiveContentUpdatedAt(item.updatedAt, searchOpportunityUpdatedAt(site.key, "roundup", item.slug)));
 
       return {
         path: `/best/${item.slug}`,
@@ -41,7 +41,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       };
     }),
     ...products.map((item) => {
-      const updated = contentDate(searchOpportunityUpdatedAt(site.key, "product", item.slug) ?? item.updatedAt);
+      const updated = contentDate(effectiveContentUpdatedAt(item.updatedAt, searchOpportunityUpdatedAt(site.key, "product", item.slug)));
 
       return {
         path: `/reviews/${item.slug}`,
@@ -57,7 +57,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: item.lastSeenAt,
     })),
     ...guides.map((item) => {
-      const updated = contentDate(searchOpportunityUpdatedAt(site.key, "guide", item.slug) ?? item.updatedAt);
+      const updated = contentDate(effectiveContentUpdatedAt(item.updatedAt, searchOpportunityUpdatedAt(site.key, "guide", item.slug)));
 
       return {
         path: `/guides/${item.slug}`,

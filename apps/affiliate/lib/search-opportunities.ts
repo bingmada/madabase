@@ -741,6 +741,19 @@ export function searchOpportunityUpdatedAt(site: SiteKey, kind: SearchOpportunit
   return findSearchOpportunity(site, kind, slug)?.updatedAt;
 }
 
+export function effectiveContentUpdatedAt(contentUpdatedAt?: string, opportunityUpdatedAt?: string) {
+  const timestamp = (value?: string) => {
+    if (!value) return undefined;
+    const parsed = new Date(`${value} 00:00:00 UTC`).getTime();
+    return Number.isNaN(parsed) ? undefined : parsed;
+  };
+  const contentTimestamp = timestamp(contentUpdatedAt);
+  const opportunityTimestamp = timestamp(opportunityUpdatedAt);
+  if (contentTimestamp === undefined) return opportunityTimestamp === undefined ? undefined : opportunityUpdatedAt;
+  if (opportunityTimestamp === undefined) return contentUpdatedAt;
+  return opportunityTimestamp > contentTimestamp ? opportunityUpdatedAt : contentUpdatedAt;
+}
+
 export function searchOpportunityLinks(opportunity: SearchOpportunity): SearchOpportunityLink[] {
   const products = siteProducts(opportunity.site).map((item) => ({
     path: `/reviews/${item.slug}`,

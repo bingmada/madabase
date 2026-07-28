@@ -7,7 +7,7 @@ import { BaseMarketEditionLinks } from "@/components/MarketExperience";
 import { SearchOpportunityBacklinks, SearchOpportunityBlock } from "@/components/SearchOpportunityBlock";
 import { StyleCollectionPage } from "@/components/StyleExperience";
 import { findProduct, findRoundup, siteGuides } from "@/lib/content";
-import { findSearchOpportunity } from "@/lib/search-opportunities";
+import { effectiveContentUpdatedAt, findSearchOpportunity } from "@/lib/search-opportunities";
 import { breadcrumbSchema, faqPageSchema, pageMetadata, roundupArticleSchema, roundupProductListSchema } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 import type { Product, SiteKey } from "@/lib/types";
@@ -177,7 +177,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
   const roundup = findRoundup(site.key, slug);
   if (!roundup) notFound();
   const searchOpportunity = findSearchOpportunity(site.key, "roundup", slug);
-  const effectiveUpdatedAt = searchOpportunity?.updatedAt ?? roundup.updatedAt;
+  const effectiveUpdatedAt = effectiveContentUpdatedAt(roundup.updatedAt, searchOpportunity?.updatedAt);
   const effectiveRoundup = effectiveUpdatedAt === roundup.updatedAt ? roundup : { ...roundup, updatedAt: effectiveUpdatedAt };
   const picks = roundup.productSlugs
     .map((productSlug) => findProduct(site.key, productSlug))
@@ -204,7 +204,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
         <JsonLd data={roundupProductListSchema(site, roundup.title, picks)} />
         <JsonLd data={roundupArticleSchema(site, effectiveRoundup, picks)} />
         <JsonLd data={faqPageSchema(roundup.faqs)} />
-        <StyleCollectionPage roundup={roundup} products={picks} />
+        <StyleCollectionPage roundup={effectiveRoundup} products={picks} />
         <div className="style-shell pb-12">
           <SearchOpportunityBacklinks site={site.key} kind="roundup" slug={slug} />
           <BaseMarketEditionLinks site={site} basePath={`/best/${slug}`} />

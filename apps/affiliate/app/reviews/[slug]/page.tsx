@@ -10,7 +10,7 @@ import { SearchOpportunityBacklinks, SearchOpportunityBlock } from "@/components
 import { StyleProductPage } from "@/components/StyleExperience";
 import { findProduct, siteGuides, siteProducts, siteRoundups } from "@/lib/content";
 import { productEvidencePresentation } from "@/lib/evidence";
-import { findSearchOpportunity } from "@/lib/search-opportunities";
+import { effectiveContentUpdatedAt, findSearchOpportunity } from "@/lib/search-opportunities";
 import { breadcrumbSchema, pageMetadata, productNotesSchema, productPageTitle } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 import type { AffiliateOffer, Product } from "@/lib/types";
@@ -96,7 +96,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
   const product = findProduct(site.key, slug);
   if (!product) notFound();
   const searchOpportunity = findSearchOpportunity(site.key, "product", slug);
-  const effectiveUpdatedAt = searchOpportunity?.updatedAt ?? product.updatedAt;
+  const effectiveUpdatedAt = effectiveContentUpdatedAt(product.updatedAt, searchOpportunity?.updatedAt);
   const effectiveProduct = effectiveUpdatedAt === product.updatedAt ? product : { ...product, updatedAt: effectiveUpdatedAt };
   const displayName = product.amazonTitle ?? product.name;
   const pageTitle = productPageTitle(product);
@@ -170,7 +170,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
         <JsonLd data={productNotesSchema(site, effectiveProduct)} />
         <StyleProductPage
           site={site}
-          product={product}
+          product={effectiveProduct}
           related={related}
           relatedRoundups={relatedRoundups}
           relatedGuides={relatedGuides}
