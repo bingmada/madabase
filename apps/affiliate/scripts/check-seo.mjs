@@ -255,8 +255,8 @@ opportunitySource.statements.forEach((statement) => {
   });
 });
 
-if (searchOpportunities.length !== 44) {
-  errors.push(`Page-two opportunity registry must contain exactly 44 entries; found ${searchOpportunities.length}`);
+if (searchOpportunities.length !== 52) {
+  errors.push(`Search opportunity registry must contain exactly 52 entries; found ${searchOpportunities.length}`);
 }
 const opportunityKeys = new Set();
 const opportunityDateKeys = new Set();
@@ -471,6 +471,17 @@ if (
   || !marketHomeRouteSource.includes("index: false")
 ) {
   errors.push("Country hubs without index-qualified pages must emit noindex,follow");
+}
+
+const marketExperienceSource = fs.readFileSync(
+  path.join(workspaceDir, "components", "MarketExperience.tsx"),
+  "utf8",
+);
+if (marketExperienceSource.includes('"@type": "Product"')) {
+  errors.push("Country-edition Article subjects must not emit incomplete Product structured data");
+}
+if (!marketExperienceSource.includes('url: absoluteUrl(site, `/reviews/${product.slug}`)')) {
+  errors.push("Country-edition Article subjects must link their Thing entity to the canonical evidence page");
 }
 
 const counts = entries.reduce((result, entry) => {

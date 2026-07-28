@@ -348,11 +348,9 @@ export function LocalizedMarketContent({
           image: absoluteUrl(site, displayImage),
           about: product
             ? {
-                "@type": "Product",
+                "@type": "Thing",
                 name: displayName,
-                brand: { "@type": "Brand", name: product.brand },
-                sku: product.asin ?? product.slug,
-                ...(product.asin ? { identifier: product.asin } : {}),
+                url: absoluteUrl(site, `/reviews/${product.slug}`),
               }
             : {
                 "@type": page.route === "tools" ? "SoftwareApplication" : "Thing",

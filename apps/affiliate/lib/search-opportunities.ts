@@ -20,6 +20,7 @@ export type SearchOpportunityLink = {
 };
 
 const updatedAt = "July 23, 2026";
+const decoClusterUpdatedAt = "July 28, 2026";
 
 export const searchOpportunities: SearchOpportunity[] = [
   {
@@ -30,6 +31,78 @@ export const searchOpportunities: SearchOpportunity[] = [
     answer: "Choose BE67 when a 10GbE WAN/LAN path and faster wired backhaul will be used now. BE63 is usually the better value for a 2.5GbE home, while BE85 makes sense only when its extra radio and port capacity solve a measured bottleneck.",
     updatedAt,
     preferredPaths: ["/guides/deco-be63-vs-be67-vs-be85-buying-guide", "/best/deco-be25-vs-be67"],
+  },
+  {
+    site: "network",
+    kind: "product",
+    slug: "tp-link-deco-be25-wifi-7-mesh",
+    query: "Is Deco BE25 enough, or should you buy Deco BE63?",
+    answer: "Choose BE25 when two 2.5GbE ports per node, dual-band coverage, and Ethernet backhaul fit the plan. Move to BE63 when its 6GHz radio, stronger wireless-backhaul options, or four 2.5GbE ports per node solve a specific constraint; the Wi-Fi 7 label alone does not justify the upgrade.",
+    updatedAt: decoClusterUpdatedAt,
+    preferredPaths: ["/best/deco-be25-vs-be63", "/guides/deco-be63-ethernet-backhaul-setup", "/reviews/tp-link-deco-be63-wifi-7-mesh"],
+  },
+  {
+    site: "network",
+    kind: "product",
+    slug: "tp-link-deco-be63-wifi-7-mesh",
+    query: "Does Deco BE63 have a more useful port layout than BE67?",
+    answer: "BE63 provides four equal 2.5GbE ports per node, while BE67 provides one 10GbE, one 2.5GbE, and one 1GbE port. BE63 is often easier for several multi-gig wired devices; BE67 is the better fit only when its single 10GbE path or higher wireless capacity has a defined job.",
+    updatedAt: decoClusterUpdatedAt,
+    preferredPaths: ["/best/tp-link-deco-be67-vs-be63", "/guides/deco-be63-multigig-ports-guide", "/reviews/tp-link-deco-be67-wifi-7-mesh"],
+  },
+  {
+    site: "network",
+    kind: "roundup",
+    slug: "tp-link-deco-be67-vs-be63",
+    query: "Deco BE63 or BE67: which Ethernet ports are more useful?",
+    answer: "Choose BE63 for several 2.5GbE devices because every node has four 2.5GbE ports. Choose BE67 when one 10GbE connection per node serves a real WAN, NAS, workstation, switch, or backhaul path; its other ports are one 2.5GbE and one 1GbE, so it is not a universal port-count upgrade.",
+    updatedAt: decoClusterUpdatedAt,
+    preferredPaths: ["/reviews/tp-link-deco-be63-wifi-7-mesh", "/reviews/tp-link-deco-be67-wifi-7-mesh", "/guides/deco-be67-10gbe-network-checklist"],
+  },
+  {
+    site: "network",
+    kind: "roundup",
+    slug: "deco-be25-vs-be63",
+    query: "Does Deco BE63's 6GHz band justify upgrading from BE25?",
+    answer: "Pay for BE63 when 6GHz improves a viable wireless-backhaul path, current 6GHz clients need that band, or four 2.5GbE ports avoid another switch. BE25 remains the value choice when Ethernet carries backhaul, two ports per node are enough, and the home is mostly using 5GHz clients.",
+    updatedAt: decoClusterUpdatedAt,
+    preferredPaths: ["/reviews/tp-link-deco-be25-wifi-7-mesh", "/reviews/tp-link-deco-be63-wifi-7-mesh", "/guides/deco-be63-ethernet-backhaul-setup"],
+  },
+  {
+    site: "network",
+    kind: "guide",
+    slug: "deco-be63-ethernet-backhaul-setup",
+    query: "Will Deco BE63 Ethernet backhaul stay at 2.5Gbps through a switch?",
+    answer: "Only when every negotiated hop supports 2.5Gbps: both Deco ports, the switch ports, wall terminations, cables, and any adapters. A gigabit switch or bad two-pair link caps that branch, and the switch must remain on the correct LAN-side topology to avoid loops in router mode.",
+    updatedAt: decoClusterUpdatedAt,
+    preferredPaths: ["/guides/deco-be63-multigig-ports-guide", "/reviews/tp-link-deco-be63-wifi-7-mesh", "/best/tp-link-deco-be67-vs-be63"],
+  },
+  {
+    site: "network",
+    kind: "guide",
+    slug: "deco-be63-be67-two-pack-vs-three-pack",
+    query: "Should you start with two or three Deco BE63 or BE67 nodes?",
+    answer: "Start with two nodes when the main unit and one well-connected satellite cover the measured zones. Add a third only for a separate floor or wing with a strong upstream link or Ethernet; an extra node placed inside a dead zone can add roaming and airtime complexity without improving performance.",
+    updatedAt: decoClusterUpdatedAt,
+    preferredPaths: ["/guides/deco-be63-ethernet-backhaul-setup", "/best/tp-link-deco-be67-vs-be63", "/guides/is-deco-be67-worth-it-for-gigabit-internet"],
+  },
+  {
+    site: "network",
+    kind: "guide",
+    slug: "is-deco-be67-worth-it-for-gigabit-internet",
+    query: "Is Deco BE67 worth buying for a 1Gbps internet plan?",
+    answer: "Usually not for internet speed alone. It can still make sense for demanding wireless backhaul, dense compatible clients, or a dated 5Gbps, 10Gbps, NAS, or switch upgrade, but BE63 normally offers enough headroom and more flexible 2.5GbE connectivity for a gigabit home.",
+    updatedAt: decoClusterUpdatedAt,
+    preferredPaths: ["/best/tp-link-deco-be67-vs-be63", "/reviews/tp-link-deco-be67-wifi-7-mesh", "/reviews/tp-link-deco-be63-wifi-7-mesh"],
+  },
+  {
+    site: "network",
+    kind: "guide",
+    slug: "deco-be67-10gbe-network-checklist",
+    query: "Can one Deco BE67 node dedicate 10GbE to both WAN and LAN?",
+    answer: "No. Each BE67 node has one 10GbE port, so the primary node cannot use that same port as both a 10GbE WAN connection and a separate 10GbE LAN connection. Draw the modem, switch, backhaul, NAS, and client path first, then account for the remaining 2.5GbE and 1GbE ports.",
+    updatedAt: decoClusterUpdatedAt,
+    preferredPaths: ["/best/tp-link-deco-be67-vs-be63", "/reviews/tp-link-deco-be67-wifi-7-mesh", "/guides/deco-be63-multigig-ports-guide"],
   },
   {
     site: "baby",
