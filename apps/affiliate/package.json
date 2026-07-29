@@ -45,6 +45,7 @@
     "sync:amazon": "node scripts/sync-amazon-creators.mjs",
     "sync:amazon:legacy-paapi": "node scripts/sync-amazon-paapi.mjs",
     "download:cj:products": "node scripts/download-cj-product-export.mjs",
+    "report:cj:halloween": "node scripts/report-cj-halloween-opportunities.mjs",
     "sync:cj:products": "node scripts/sync-cj-product-export.mjs",
     "sync:cj:products:dry-run": "node scripts/sync-cj-product-export.mjs --dry-run",
     "sync:cj:commissions": "node scripts/reconcile-cj-commissions.mjs",
