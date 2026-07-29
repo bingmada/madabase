@@ -12,6 +12,7 @@ import { effectiveContentUpdatedAt, findSearchOpportunity } from "@/lib/search-o
 import { breadcrumbSchema, guideSchema, pageMetadata } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 import type { SiteKey } from "@/lib/types";
+import { costumeHalloweenIdeas } from "@/lib/costume-halloween-ideas";
 
 type AdviceBlock = {
   checklist: string[];
@@ -408,6 +409,20 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             ) : null;
           })}
         </div>
+        {site.key === "costume" ? (
+          <section className="mt-10 rounded-md border border-[#d7b58a] bg-[#fff8ee] p-6">
+            <p className="eyebrow">Put the guide into a complete Halloween story</p>
+            <h2 className="mt-3 text-2xl font-bold">Costume and scene recipes</h2>
+            <div className="mt-5 grid gap-4 sm:grid-cols-3">
+              {costumeHalloweenIdeas.map((idea) => (
+                <Link className="rounded-md border border-[#e8d2b8] bg-white p-4" href={`/halloween-ideas/${idea.slug}`} key={idea.slug}>
+                  <h3 className="font-bold">{idea.title}</h3>
+                  <p className="mt-2 text-sm leading-6 text-[var(--muted)]">{idea.dek}</p>
+                </Link>
+              ))}
+            </div>
+          </section>
+        ) : null}
       </div>
     </main>
   );

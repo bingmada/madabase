@@ -196,15 +196,87 @@ export const costumeGuides: Guide[] = [
   {
     site: "costume",
     slug: "wig-facial-hair-and-makeup-planning-guide",
-    title: "Wig, Facial Hair, and Costume Makeup Planning Guide",
-    dek: "Coordinate color, cap fit, adhesives, heat limits, wear time, touch-ups, removal, and storage as one system.",
+    title: "Halloween Costume Wig, Facial Hair, and Makeup Guide",
+    dek: "Choose a costume wig by silhouette, cap construction, fiber and heat limits, then coordinate facial hair, adhesives, makeup, wear time, removal, cleaning, and storage.",
     category: "wigs-makeup",
-    updatedAt: "July 22, 2026",
+    updatedAt: "July 29, 2026",
     relatedRoundups: [],
+    relatedGuides: [
+      "mask-and-prosthetic-fit-materials-guide",
+      "costume-sizing-measurements-and-returns",
+      "costume-prop-care-and-storage-guide",
+    ],
+    comparisonTable: {
+      title: "Costume wig construction and styling checks",
+      columns: ["What it changes", "Confirm before buying", "Common mistake"],
+      rows: [
+        {
+          label: "Silhouette",
+          values: [
+            "The character's outline in photos and at a distance",
+            "Length, volume, part, fringe, hairline, and room under hats or masks",
+            "Choosing an exact shade while ignoring the wrong shape",
+          ],
+        },
+        {
+          label: "Cap and hairline",
+          values: [
+            "Fit, comfort, ventilation, and how natural the front appears",
+            "Head-size guidance, adjusters, cap type, lace dimensions, and application instructions",
+            "Assuming every adult wig cap or lace front fits and applies the same way",
+          ],
+        },
+        {
+          label: "Fiber and heat",
+          values: [
+            "Texture, shine, tangling, styling methods, and care",
+            "Exact fiber description, stated heat tolerance, and compatible tools or products",
+            "Using a hot tool because another synthetic wig tolerated it",
+          ],
+        },
+        {
+          label: "Facial hair or adhesive",
+          values: [
+            "Skin contact, edge security, removal time, and cleanup",
+            "Materials, supplied adhesive, compatible remover, patch-test directions, and wear limits",
+            "Using an unidentified glue or pulling a piece off without the correct remover",
+          ],
+        },
+      ],
+    },
     sections: [
-      { heading: "Choose the silhouette before the shade", body: "Length, volume, hairline, part, facial-hair shape, and head fit determine the look before small color differences do." },
-      { heading: "Check heat and product compatibility", body: "Synthetic fibers, lace, adhesives, paint, powder, and styling tools can have strict limits. Use only methods supported by the exact product instructions." },
-      { heading: "Plan touch-ups and removal", body: "Carry only compatible touch-up products, protect clothing, allow removal time, and store wigs and reusable pieces in a way that preserves shape and hygiene." },
+      {
+        heading: "Choose the character silhouette before the color",
+        body: "Start with the shape visible from across a room: overall length, crown height, side volume, fringe, part, hairline, and facial-hair outline. A gray swept-back wig can support a mad scientist, vampire elder, or haunted ringmaster depending on its silhouette and the clothing around it. Compare the listing dimensions and product photographs with the hat, mask, collar, or prosthetic you plan to wear; a close color match cannot rescue a wig that collapses the character's outline.",
+      },
+      {
+        heading: "Measure the head and identify the cap construction",
+        body: "Follow the exact product's head-measurement guidance rather than assuming one adult size is universal. Look for stated circumference, adjustment tabs, cap construction, ventilation, ear-tab position, lace dimensions, and whether a wig cap is included. Long events, warm indoor rooms, glasses, hearing devices, masks, and hats all change comfort. Put the complete combination on during a test run and make sure it can be removed quickly without catching another piece.",
+      },
+      {
+        heading: "Read fiber and heat claims literally",
+        body: "Synthetic, heat-friendly synthetic, human hair, and blended fibers require different styling and care. Use heat only when the exact product instructions provide a supported temperature or method; do not copy a temperature from another wig. Test any compatible detangler, spray, powder, or paint on a hidden area first when the instructions allow it. Avoid cutting until cap fit, part placement, and the return terms are settled.",
+      },
+      {
+        heading: "Decide whether the hairline needs to look natural",
+        body: "A hat, crown, hood, heavy fringe, or theatrical lighting can hide a simple costume-wig front. A visible forehead, close photography, or repeat performance may justify a more involved lace or styled hairline, but that can add trimming, adhesive, remover, application practice, and skin cleanup. Choose the simplest construction that produces the required view at the real event distance.",
+      },
+      {
+        heading: "Coordinate masks, facial hair, and makeup before event day",
+        body: "Map every overlap: wig edge, eyebrows, beard or moustache backing, prosthetic edge, mask strap, hat band, and costume collar. Confirm the identity and instructions for every skin-contact material, adhesive, paint, and remover. Follow manufacturer patch-test and use directions, keep products away from eyes and airways, and do not improvise with household glue. When several edges compete for the same skin area, simplify the look.",
+      },
+      {
+        heading: "Run a full wear test, not a mirror test",
+        body: "Wear the wig with the costume, footwear, mask or makeup, and expected base layers. Walk, sit, turn the head, use stairs, look down, take photos with and without flash, and spend enough time in the expected temperature to find pressure or heat problems. Check peripheral view and hearing after adding volume around the ears. If the wig shifts during normal movement, use only the securing method supported by its instructions.",
+      },
+      {
+        heading: "Pack a small compatible touch-up kit",
+        body: "Bring only the comb, pins, cap, adhesive, remover, powder, or other products confirmed for the exact wig and skin pieces. Keep a clean bag for removed items and protect the costume from makeup transfer. Schedule a mid-event comfort check and agree on a quick removal plan; staying in character is never more important than vision, breathing, skin comfort, or safe movement.",
+      },
+      {
+        heading: "Remove, clean, dry, and store by material",
+        body: "Remove adhesive pieces with the specified remover and method rather than pulling. Follow the exact wig's washing, drying, brushing, and storage instructions; methods vary by fiber and construction. Let reusable pieces dry completely, support the intended shape, protect them from heat and crushing, label the container, and record missing supplies before the next event. Confirm seasonal or intimate-item return restrictions before opening, trimming, styling, or wearing the product.",
+      },
     ],
   },
   {

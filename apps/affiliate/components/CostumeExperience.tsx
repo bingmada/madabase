@@ -65,7 +65,8 @@ export async function CostumeHome({ site }: { site: SiteConfig }) {
               Start with a wearable look, creature transformation, haunted-scene prop, or party atmosphere. Then narrow by price, audience, size, venue, power, professional use, or repeat-use value.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <Link className="button-primary" href="/halloween">Plan Halloween 2026 <ArrowRight aria-hidden="true" size={16} /></Link>
+              <Link className="button-primary" href="/halloween-ideas">Build a costume and scene <ArrowRight aria-hidden="true" size={16} /></Link>
+              <Link className="button-secondary" href="/halloween">Plan Halloween 2026</Link>
               <Link className="button-secondary" href="/catalog?occasion=halloween">Browse Halloween products</Link>
             </div>
           </div>
@@ -84,6 +85,19 @@ export async function CostumeHome({ site }: { site: SiteConfig }) {
               <p className="mt-3 leading-7 text-white/75">Start with construction, fit, repeat use, transport, care, and total ownership—not price alone.</p>
               <span className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-white">Explore the high-consideration edit <ArrowRight aria-hidden="true" size={16} /></span>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="section bg-[#170f20] text-white">
+        <div className="shell">
+          <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
+            <div className="max-w-3xl">
+              <p className="text-xs font-black uppercase tracking-[0.14em] text-[#ffc56d]">New Halloween editorial kits</p>
+              <h2 className="mt-3 text-3xl font-black text-white sm:text-4xl">Turn a costume into a haunted carnival, zombie graveyard, or witch apothecary.</h2>
+              <p className="mt-4 leading-8 text-white/75">Each recipe combines an original character story, exact products, inexpensive additions from home, three build levels, setup order, and event-night checks.</p>
+            </div>
+            <Link className="button-primary shrink-0 !bg-[#df7627] !text-white" href="/halloween-ideas">Open ideas & kits <ArrowRight aria-hidden="true" size={16} /></Link>
           </div>
         </div>
       </section>

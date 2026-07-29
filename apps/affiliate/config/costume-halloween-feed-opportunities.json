@@ -1,0 +1,71 @@
+{
+  "sourceReviewedAt": "2026-07-29T11:07:46+08:00",
+  "sourceRows": 31019,
+  "eligibleThemeRows": 5387,
+  "status": "human-reviewed-candidates-not-yet-imported-or-indexed",
+  "policy": "Use these only to close a documented editorial-kit gap. Before publication, upsert the exact variant, authorize only its Feed image, activate a dedicated PID 101838067/AID 17278691 link, add original buyer guidance, and pass the normal indexing gate.",
+  "selected": [
+    {
+      "externalId": "14020233101364",
+      "variantId": "14020233101364",
+      "title": "Crazy Jack Clown Mask",
+      "theme": "haunted-carnival",
+      "proposedJob": "Premium mask alternative for a haunted-carnival host",
+      "reason": "In stock, exact mask identity, clear character role, and materially different from the current full bloody-clown costume"
+    },
+    {
+      "externalId": "14022175293492",
+      "variantId": "14022175293492",
+      "title": "Captain Lester Undead Army Man Mask",
+      "theme": "zombie-graveyard",
+      "proposedJob": "Distinct military-undead role for a coordinated zombie group",
+      "reason": "In stock, exact mask identity, and a distinct silhouette rather than another generic zombie listing"
+    },
+    {
+      "externalId": "14103387996212",
+      "variantId": "14103387996212",
+      "title": "Warlock Staff",
+      "theme": "witch-apothecary",
+      "proposedJob": "Handheld silhouette layer for a witch, warlock, or apothecary keeper",
+      "reason": "In stock, exact accessory identity, and usable across costume, theater, and year-round fantasy intent"
+    },
+    {
+      "externalId": "14022922240052",
+      "variantId": "14022922240052",
+      "title": "White Moon Werewolf Mask w/ Long Flowing Fur",
+      "theme": "werewolf-transformation",
+      "proposedJob": "Premium creature-transformation focal mask",
+      "reason": "In stock, strong visual distinction, and supports a future mask-versus-full-costume decision page"
+    },
+    {
+      "externalId": "26118383878",
+      "variantId": "26118383878",
+      "title": "LED Blacklight Spotlight",
+      "theme": "fog-uv-lighting",
+      "proposedJob": "UV lighting layer for the current reactive ghost and graveyard scene",
+      "reason": "In stock and closes a real setup gap for an already selected UV-reactive product"
+    },
+    {
+      "externalId": "13274784137268",
+      "variantId": "13274784137268",
+      "title": "Woochie FX Dark Lord Foam Latex Prosthetic",
+      "theme": "horror-makeup-prosthetic",
+      "proposedJob": "Advanced prosthetic path in a mask-versus-prosthetic guide",
+      "reason": "In stock, exact foam-latex identity, and supports a different preparation and removal job from masks"
+    }
+  ],
+  "rejectedExamples": [
+    {
+      "externalId": "32034343846028",
+      "title": "Fear Freshener- The Texas Chainsaw Massacre Pretty Woman",
+      "matchedTheme": "chainsaw-prop",
+      "reason": "Licensed air freshener, not a costume or scare prop; rejected as a search-intent false positive"
+    },
+    {
+      "externalId": "14301488087092",
+      "title": "Classic Disney Aladdin Jasmine Adult Wig",
+      "matchedTheme": "costume-wig",
+      "reason": "Valid product but too character-specific for the first Halloween wig decision-guide recommendation"
+    }
+  ]
+}

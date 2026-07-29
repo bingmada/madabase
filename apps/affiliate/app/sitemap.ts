@@ -6,6 +6,7 @@ import { effectiveContentUpdatedAt, searchOpportunityUpdatedAt } from "@/lib/sea
 import { staticPageSlugs } from "@/lib/static-pages";
 import { getCurrentSite } from "@/lib/sites";
 import { listIndexableCostumeProducts } from "@/lib/costume-catalog";
+import { costumeHalloweenIdeaSlugs } from "@/lib/costume-halloween-ideas";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const site = await getCurrentSite();
@@ -25,6 +26,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...(site.key === "costume"
       ? [
           { path: "/halloween", changeFrequency: "weekly" as const, priority: 0.95, lastModified: new Date("2026-07-26T00:00:00Z") },
+          { path: "/halloween-ideas", changeFrequency: "weekly" as const, priority: 0.93, lastModified: new Date("2026-07-29T00:00:00Z") },
+          ...costumeHalloweenIdeaSlugs.map((slug) => ({
+            path: `/halloween-ideas/${slug}`,
+            changeFrequency: "monthly" as const,
+            priority: 0.9,
+            lastModified: new Date("2026-07-29T00:00:00Z"),
+          })),
           { path: "/premium", changeFrequency: "weekly" as const, priority: 0.82 },
         ]
       : []),

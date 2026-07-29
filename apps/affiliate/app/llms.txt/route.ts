@@ -7,6 +7,7 @@ import {
 import { marketKeys, marketPath, markets, supportsMarketEditions } from "@/lib/markets";
 import { getCurrentSite } from "@/lib/sites";
 import { listIndexableCostumeProducts } from "@/lib/costume-catalog";
+import { costumeHalloweenIdeas } from "@/lib/costume-halloween-ideas";
 
 type LlmIndexItem = { slug: string } & ({ title: string } | { name: string });
 
@@ -56,6 +57,8 @@ export async function GET() {
       ? [
           "Seasonal planning:",
           "- Halloween 2026 costumes, masks, animatronics, and decorations: /halloween",
+          "- Halloween costume ideas and editorial kits: /halloween-ideas",
+          ...costumeHalloweenIdeas.map((idea) => `- ${idea.title}: /halloween-ideas/${idea.slug}`),
           "",
         ]
       : []),

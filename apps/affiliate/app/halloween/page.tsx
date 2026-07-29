@@ -7,6 +7,7 @@ import { CostumeCatalogCard } from "@/components/CostumeCatalog";
 import { Disclosure } from "@/components/LayoutParts";
 import { listCuratedCostumeProducts } from "@/lib/costume-catalog";
 import { costumeHalloweenPicks, costumeHalloweenSlugs } from "@/lib/costume-halloween";
+import { costumeHalloweenIdeas } from "@/lib/costume-halloween-ideas";
 import { breadcrumbSchema, itemListSchema, pageMetadata } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 
@@ -120,6 +121,31 @@ export default async function HalloweenPage() {
                 <h3 className="mt-4 text-xl font-bold">{check.title}</h3>
                 <p className="mt-3 leading-7 text-[var(--muted)]">{check.body}</p>
               </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section bg-[#170f20] text-white">
+        <div className="shell">
+          <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
+            <div className="max-w-3xl">
+              <p className="text-xs font-black uppercase tracking-[0.14em] text-[#ffc56d]">Original costume-to-scene recipes</p>
+              <h2 className="mt-3 text-3xl font-black text-white sm:text-4xl">Choose a story before you choose more products.</h2>
+              <p className="mt-4 leading-8 text-white/75">
+                These editorial kits connect separately sold costumes, masks, props, and lights to a character, setting, build order, and safety checklist.
+              </p>
+            </div>
+            <Link className="button-primary shrink-0 !bg-[#df7627] !text-white" href="/halloween-ideas">See all ideas & kits <ArrowRight aria-hidden="true" size={16} /></Link>
+          </div>
+          <div className="mt-8 grid gap-5 lg:grid-cols-3">
+            {costumeHalloweenIdeas.map((idea) => (
+              <Link className="rounded-md border border-white/15 bg-white/5 p-5 transition hover:bg-white/10" href={`/halloween-ideas/${idea.slug}`} key={idea.slug}>
+                <p className="text-xs font-black uppercase tracking-[0.12em] text-[#ffc56d]">{idea.eyebrow}</p>
+                <h3 className="mt-3 text-xl font-bold text-white">{idea.title}</h3>
+                <p className="mt-3 leading-7 text-white/70">{idea.dek}</p>
+                <span className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-white">Open recipe <ArrowRight aria-hidden="true" size={16} /></span>
+              </Link>
             ))}
           </div>
         </div>

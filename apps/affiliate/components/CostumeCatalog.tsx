@@ -26,7 +26,7 @@ function audienceLabel(audience: string[]) {
   return audience.length ? audience.join(" · ") : "Audience not specified";
 }
 
-export function CostumeCatalogCard({ product }: { product: CostumeCatalogProduct }) {
+export function CostumeCatalogCard({ product, retailerCta = false }: { product: CostumeCatalogProduct; retailerCta?: boolean }) {
   return (
     <article className="panel flex h-full flex-col overflow-hidden">
       <div className="costume-card-art relative grid min-h-48 content-between overflow-hidden p-5">
@@ -62,10 +62,18 @@ export function CostumeCatalogCard({ product }: { product: CostumeCatalogProduct
         <h2 className="mt-2 text-xl font-bold leading-7">{product.title}</h2>
         <p className="mt-3 text-sm font-semibold text-[var(--brand-strong)]">{formatCostumePrice(product)} · {product.availability}</p>
         <p className="mt-2 flex-1 text-sm leading-6 text-[var(--muted)]">{audienceLabel(product.audience)}</p>
-        <Link className="button-secondary mt-5 self-start" href={`/products/${product.slug}`}>
-          View product details
-          <ArrowRight aria-hidden="true" size={16} />
-        </Link>
+        <div className="mt-5 flex flex-wrap gap-2">
+          <Link className="button-secondary self-start" href={`/products/${product.slug}`}>
+            View product details
+            <ArrowRight aria-hidden="true" size={16} />
+          </Link>
+          {retailerCta && product.activeLink && product.authorizedImage && product.availability !== "out of stock" ? (
+            <Link className="button-primary self-start" href={`/go/cj/${product.activeLink.clickToken}`} rel="nofollow sponsored">
+              Check at Abracadabra
+              <ArrowRight aria-hidden="true" size={16} />
+            </Link>
+          ) : null}
+        </div>
       </div>
     </article>
   );

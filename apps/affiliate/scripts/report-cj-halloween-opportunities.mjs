@@ -239,7 +239,8 @@ console.log(JSON.stringify({
     [...buckets].map(([theme, items]) => [
       theme,
       items.map(({ score, candidate }) => {
-        const { primaryText: _primaryText, ...publicCandidate } = candidate;
+        const { primaryText, ...publicCandidate } = candidate;
+        void primaryText;
         return { score, ...publicCandidate };
       }),
     ]),

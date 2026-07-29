@@ -32,6 +32,7 @@ export function SiteChrome({ site, children }: { site: SiteConfig; children: Rea
               Home
             </Link>
             {site.key === "costume" ? <Link className="font-black text-[#a14f1c] hover:text-[var(--brand-strong)]" href="/halloween">Halloween</Link> : null}
+            {site.key === "costume" ? <Link className="hover:text-[var(--brand-strong)]" href="/halloween-ideas">Ideas & kits</Link> : null}
             {site.key === "costume" ? <Link className="hover:text-[var(--brand-strong)]" href="/catalog">Catalog</Link> : null}
             {site.categories.map((category) => (
               <Link className={site.key === "costume" ? "hidden" : "hover:text-[var(--brand-strong)]"} href={`/categories/${category.slug}`} key={category.slug}>
@@ -59,6 +60,7 @@ export function SiteChrome({ site, children }: { site: SiteConfig; children: Rea
               <nav className="grid gap-1 text-sm font-semibold" aria-label="Mobile navigation">
                 <Link className="rounded-md px-3 py-2 hover:bg-[var(--surface-muted)]" href="/">Home</Link>
                 {site.key === "costume" ? <Link className="rounded-md px-3 py-2 font-black text-[#a14f1c] hover:bg-[var(--surface-muted)]" href="/halloween">Halloween 2026</Link> : null}
+                {site.key === "costume" ? <Link className="rounded-md px-3 py-2 hover:bg-[var(--surface-muted)]" href="/halloween-ideas">Ideas & editorial kits</Link> : null}
                 {site.key === "costume" ? <Link className="rounded-md px-3 py-2 hover:bg-[var(--surface-muted)]" href="/catalog">Catalog</Link> : null}
                 {site.categories.map((category) => (
                   <Link className="rounded-md px-3 py-2 hover:bg-[var(--surface-muted)]" href={`/categories/${category.slug}`} key={category.slug}>
