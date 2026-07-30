@@ -9,6 +9,7 @@ import { BaseMarketEditionLinks } from "@/components/MarketExperience";
 import { SearchOpportunityBacklinks, SearchOpportunityBlock } from "@/components/SearchOpportunityBlock";
 import { StyleProductPage } from "@/components/StyleExperience";
 import { findProduct, siteGuides, siteProducts, siteRoundups } from "@/lib/content";
+import { findAmazonOfferBlock } from "@/lib/amazon-offer-blocks";
 import { productEvidencePresentation } from "@/lib/evidence";
 import { effectiveContentUpdatedAt, findSearchOpportunity } from "@/lib/search-opportunities";
 import { breadcrumbSchema, pageMetadata, productNotesSchema, productPageTitle } from "@/lib/seo";
@@ -95,6 +96,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
   const { slug } = await params;
   const product = findProduct(site.key, slug);
   if (!product) notFound();
+  const offerBlock = findAmazonOfferBlock(product);
   const searchOpportunity = findSearchOpportunity(site.key, "product", slug);
   const effectiveUpdatedAt = effectiveContentUpdatedAt(product.updatedAt, searchOpportunity?.updatedAt);
   const effectiveProduct = effectiveUpdatedAt === product.updatedAt ? product : { ...product, updatedAt: effectiveUpdatedAt };
@@ -223,6 +225,15 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                   ) : null}
                 </div>
                 <AmazonListingFreshness site={site.key} productSlug={product.slug} />
+                {offerBlock ? (
+                  <div className="mt-5 rounded-md border border-amber-300 bg-amber-50 p-4 text-sm leading-6 text-amber-950">
+                    <p className="font-bold">Amazon purchase link paused after a listing check</p>
+                    <p className="mt-1">
+                      {offerBlock.reason} Observed on {offerBlock.checkedAt}: {offerBlock.observedListing}. We will restore a
+                      purchase button only after the exact product and attribution path are verified again.
+                    </p>
+                  </div>
+                ) : null}
                 {primaryOffers.length ? (
                   <section
                     aria-label="Mobile purchase decision checks"
@@ -602,7 +613,13 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
             <div className="panel p-5" id="buying-options">
               <h2 className="text-xl font-bold">Buying options</h2>
               <div className="mt-4 space-y-3">
-                {product.offers.length === 0 ? <p className="text-sm leading-6 text-[var(--muted)]">Buying links are being updated.</p> : null}
+                {product.offers.length === 0 ? (
+                  <p className="text-sm leading-6 text-[var(--muted)]">
+                    {offerBlock
+                      ? "No purchase button is shown while the exact Amazon product identity or availability is unresolved."
+                      : "Buying links are being updated."}
+                  </p>
+                ) : null}
                 {product.offers.map((offer) => (
                   <div className="rounded-md border border-[var(--border)] p-3" key={offer.merchant}>
                     <p className="font-bold">{offer.merchant}</p>

@@ -6,6 +6,10 @@ import ts from "typescript";
 
 const root = path.resolve(new URL("../../..", import.meta.url).pathname);
 const contentDirectory = path.join(root, "apps/affiliate/lib");
+const offerBlockPath = path.join(
+  root,
+  "apps/affiliate/config/amazon-offer-blocks.json",
+);
 const partnerTag = process.env.AMAZON_AFFILIATE_TAG ?? "bingmada-20";
 const siteTrackingIds = {
   network: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_NETWORK ?? "madanetwork-20",
@@ -26,6 +30,35 @@ const jsonArgument = process.argv.find((argument) =>
 const jsonOutput = jsonArgument
   ? path.resolve(process.cwd(), jsonArgument.slice("--json=".length))
   : null;
+
+function readOfferBlocks() {
+  const parsed = JSON.parse(fs.readFileSync(offerBlockPath, "utf8"));
+  if (
+    !parsed ||
+    !Array.isArray(parsed.blocks) ||
+    parsed.blocks.some(
+      (block) =>
+        typeof block.site !== "string" ||
+        typeof block.slug !== "string" ||
+        !/^[A-Z0-9]{10}$/.test(block.asin ?? "") ||
+        !["identity-drift", "unavailable"].includes(block.status),
+    )
+  ) {
+    throw new Error("amazon-offer-blocks.json contains an invalid block");
+  }
+  return parsed.blocks;
+}
+
+const offerBlocks = readOfferBlocks();
+
+function offerBlockFor(record) {
+  return offerBlocks.find(
+    (block) =>
+      block.site === record.site &&
+      block.slug === record.slug &&
+      block.asin === record.expectedAsin,
+  );
+}
 
 function propertyValue(node, name) {
   const property = node.properties.find(
@@ -161,7 +194,9 @@ function buildInventory() {
     visit(sourceFile);
   }
 
-  return [...records.values()].sort((a, b) => a.url.localeCompare(b.url));
+  return [...records.values()]
+    .filter((record) => !offerBlockFor(record))
+    .sort((a, b) => a.url.localeCompare(b.url));
 }
 
 function asinFromUrl(value) {
@@ -327,6 +362,13 @@ async function check(record) {
 async function main() {
   const inventory = buildInventory().filter(
     (item) => !siteFilter || item.site === siteFilter,
+  );
+  const configuredBlocks = offerBlocks.filter(
+    (block) => !siteFilter || block.site === siteFilter,
+  );
+
+  console.log(
+    `Suppressed ${configuredBlocks.length} known drifted or unavailable Amazon offers.`,
   );
 
   if (inventoryOnly) {

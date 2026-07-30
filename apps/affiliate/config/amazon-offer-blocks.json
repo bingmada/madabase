@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "updatedAt": "2026-07-30T14:30:00+08:00",
+  "pageUpdatedAt": "July 30, 2026",
+  "blocks": [
+    {
+      "site": "homeoffice",
+      "slug": "flexispot-e7-mini-standing-desk",
+      "asin": "B0F9X3FDYY",
+      "status": "identity-drift",
+      "checkedAt": "2026-07-29",
+      "observedListing": "HUANUO 32-inch compact standing desk",
+      "reason": "The ASIN no longer identifies the recorded FlexiSpot E7 Mini."
+    },
+    {
+      "site": "pet",
+      "slug": "petfusion-ultimate-dog-bed",
+      "asin": "B089RGDQBB",
+      "status": "identity-drift",
+      "checkedAt": "2026-07-29",
+      "observedListing": "Bedsure dog bed",
+      "reason": "The ASIN no longer identifies the recorded PetFusion Ultimate dog bed."
+    },
+    {
+      "site": "pet",
+      "slug": "litter-genie-plus-pail",
+      "asin": "B09V399NTV",
+      "status": "identity-drift",
+      "checkedAt": "2026-07-29",
+      "observedListing": "Litter Genie Easy Roll",
+      "reason": "The ASIN no longer identifies the recorded Litter Genie Plus Pail."
+    },
+    {
+      "site": "pet",
+      "slug": "wyze-cam-pan-v3-pet-camera",
+      "asin": "B0DTNKLF1K",
+      "status": "identity-drift",
+      "checkedAt": "2026-07-29",
+      "observedListing": "Fixed Wyze Cam v3",
+      "reason": "The ASIN no longer identifies the recorded Wyze Cam Pan v3."
+    },
+    {
+      "site": "baby",
+      "slug": "ergobaby-omni-breeze-carrier",
+      "asin": "B0CCNT3HLW",
+      "status": "identity-drift",
+      "checkedAt": "2026-07-29",
+      "observedListing": "Two-carrier Ergobaby bundle",
+      "reason": "The ASIN no longer identifies the recorded single Omni Breeze carrier."
+    },
+    {
+      "site": "homeoffice",
+      "slug": "ergear-48x24-electric-standing-desk",
+      "asin": "B0B6JJKSNM",
+      "status": "unavailable",
+      "checkedAt": "2026-07-29",
+      "observedListing": "Currently unavailable for New York 10001",
+      "reason": "The exact recorded desk did not have a current US offer."
+    },
+    {
+      "site": "pet",
+      "slug": "petlibro-one-rfid-smart-feeder",
+      "asin": "B0FJMFYPNH",
+      "status": "unavailable",
+      "checkedAt": "2026-07-30",
+      "observedListing": "Currently unavailable in the Amazon Creator picker",
+      "reason": "The exact recorded feeder did not have a current US offer."
+    },
+    {
+      "site": "baby",
+      "slug": "chicco-advanced-sterilizer-dryer",
+      "asin": "B0BG67HG7S",
+      "status": "unavailable",
+      "checkedAt": "2026-07-30",
+      "observedListing": "Currently unavailable in the Amazon Creator picker",
+      "reason": "The exact recorded sterilizer-dryer did not have a current US offer."
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 import type { AffiliateOffer, Product, SiteKey } from "./types";
+import { findAmazonOfferBlock } from "./amazon-offer-blocks";
 
 export const amazonTrackingIds: Partial<Record<SiteKey, string>> = {
   network: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_NETWORK ?? "madanetwork-20",
@@ -53,6 +54,15 @@ function trackedAmazonUrl(site: SiteKey, product: Product, offer: AffiliateOffer
 export function applySiteAffiliateTracking(product: Product): Product {
   if (product.site === "costume") {
     return { ...product, offers: [] };
+  }
+
+  const offerBlock = findAmazonOfferBlock(product);
+  if (offerBlock) {
+    return {
+      ...product,
+      updatedAt: offerBlock.pageUpdatedAt,
+      offers: [],
+    };
   }
 
   return {
