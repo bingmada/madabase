@@ -26,6 +26,10 @@ function isAmazonOffer(offer: AffiliateOffer) {
   }
 }
 
+function referencesBlockedAsin(url: string | undefined, asin: string) {
+  return Boolean(url?.toUpperCase().includes(asin));
+}
+
 function trackedAmazonUrl(site: SiteKey, product: Product, offer: AffiliateOffer) {
   const trackingId = amazonTrackingIds[site];
   if (!trackingId) return offer.url;
@@ -61,6 +65,12 @@ export function applySiteAffiliateTracking(product: Product): Product {
     return {
       ...product,
       updatedAt: offerBlock.pageUpdatedAt,
+      amazonDetailUrl: referencesBlockedAsin(product.amazonDetailUrl, offerBlock.asin)
+        ? undefined
+        : product.amazonDetailUrl,
+      sources: product.sources?.filter(
+        (source) => !referencesBlockedAsin(source.url, offerBlock.asin),
+      ),
       offers: [],
     };
   }
