@@ -127,21 +127,35 @@ const pool = new Pool({ connectionString: databaseUrl, max: 3 });
 const client = await pool.connect();
 let matchedClicks = 0;
 let matchedProducts = 0;
+const merchantIds = new Map();
 
 try {
   await client.query("BEGIN");
-  const merchantResult = await client.query(
-    `SELECT "id" FROM "Merchant" WHERE "network" = 'cj' AND "advertiserCid" = '7889430' LIMIT 1`,
-  );
-  const merchantId = merchantResult.rows[0]?.id ?? null;
 
   for (const record of records) {
-    if (record.advertiserCid && record.advertiserCid !== "7889430") continue;
     const clickResult = record.sid
-      ? await client.query(`SELECT "id", "merchantProductId" FROM "AffiliateClick" WHERE "sid" = $1 LIMIT 1`, [record.sid])
+      ? await client.query(
+          `SELECT click."id", click."merchantProductId", product."merchantId"
+             FROM "AffiliateClick" AS click
+             LEFT JOIN "MerchantProduct" AS product ON product."id" = click."merchantProductId"
+            WHERE click."sid" = $1 LIMIT 1`,
+          [record.sid],
+        )
       : { rows: [] };
     const click = clickResult.rows[0];
     if (click) matchedClicks += 1;
+
+    let merchantId = click?.merchantId ?? null;
+    if (record.advertiserCid) {
+      if (!merchantIds.has(record.advertiserCid)) {
+        const merchantResult = await client.query(
+          `SELECT "id" FROM "Merchant" WHERE "network" = 'cj' AND "advertiserCid" = $1 LIMIT 1`,
+          [record.advertiserCid],
+        );
+        merchantIds.set(record.advertiserCid, merchantResult.rows[0]?.id ?? null);
+      }
+      merchantId = merchantIds.get(record.advertiserCid) ?? null;
+    }
 
     let merchantProductId = click?.merchantProductId ?? null;
     if (!merchantProductId && merchantId && record.productExternalId) {

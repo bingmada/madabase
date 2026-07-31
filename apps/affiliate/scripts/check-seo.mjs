@@ -15,6 +15,15 @@ const allowedOfferHosts = new Set([
   "www.amazon.com",
   "amazon.com",
 ]);
+const authorizedNonAmazonOffers = new Map([
+  [
+    "baby:product:bc-babycare-hexa-effortless-carrier",
+    {
+      merchant: "Bc Babycare via CJ",
+      path: "/go/cj/bc-babycare-hexa-effortless",
+    },
+  ],
+]);
 
 function propertyName(node) {
   if (ts.isIdentifier(node) || ts.isStringLiteral(node)) return node.text;
@@ -175,18 +184,23 @@ for (const entry of entries) {
   for (const url of entry.offerUrls) {
     let parsed;
     try {
-      parsed = new URL(url);
+      parsed = new URL(url, "https://affiliate-route.invalid");
     } catch {
       errors.push(`Invalid affiliate URL "${url}" for ${routeKey}`);
       continue;
     }
-    if (!allowedOfferHosts.has(parsed.hostname)) {
+    const authorizedOffer = authorizedNonAmazonOffers.get(routeKey);
+    const isAuthorizedLocalRoute =
+      parsed.hostname === "affiliate-route.invalid" &&
+      authorizedOffer?.path === parsed.pathname;
+    if (!isAuthorizedLocalRoute && !allowedOfferHosts.has(parsed.hostname)) {
       errors.push(`Unexpected affiliate host ${parsed.hostname} for ${routeKey}`);
     }
   }
 
   for (const merchant of entry.offerMerchants) {
-    if (!merchant.toLowerCase().includes("amazon")) {
+    const authorizedOffer = authorizedNonAmazonOffers.get(routeKey);
+    if (!merchant.toLowerCase().includes("amazon") && authorizedOffer?.merchant !== merchant) {
       errors.push(`Unauthorized non-Amazon merchant ${merchant} for ${routeKey}`);
     }
   }

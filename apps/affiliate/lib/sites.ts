@@ -73,7 +73,7 @@ export const sites: Record<SiteKey, SiteConfig> = {
     description: "Baby gear buying notes, safety-minded guides, and planning tools for monitors, strollers, carriers, bottles, sleep, and diapers.",
     domain: process.env.NEXT_PUBLIC_BABY_SITE_URL ?? "https://baby.madabase.com",
     hostHints: ["baby", "nest"],
-    disclosure: "As an Amazon Associate I earn from qualifying purchases. Amazon is currently the site's only commissioned retailer. We keep safety notes, limitations, and fit guidance visible on buying pages.",
+    disclosure: "As an Amazon Associate I earn from qualifying purchases. NestCheck Picks may also earn commissions from eligible Bc Babycare purchases through CJ. The retailer and commission rate do not change the price a reader pays, and we keep safety notes, limitations, fit guidance, and skip-it cases visible.",
     heroImage: "/images/affiliate/hero-baby-realistic.webp",
     theme: {
       brand: "#846036",

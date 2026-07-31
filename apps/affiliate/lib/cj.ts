@@ -24,16 +24,16 @@ export function parseCjTrackingUrl(value: string) {
     return null;
   }
 
-  const match = url.pathname.match(/\/click-(\d+)-(\d+)(?:\/|$)/);
+  const match = url.pathname.match(/\/click-(\d+)-(\d+)(?:-\d+)?(?:\/|$)/);
   if (!match) return null;
 
   return { url, pid: match[1], aid: match[2] };
 }
 
-export function isAbracadabraDestination(value: string) {
+export function isAllowedCjDestination(value: string, allowedHosts: readonly string[]) {
   try {
     const url = new URL(value);
-    return url.protocol === "https:" && (url.hostname === "abracadabranyc.com" || url.hostname === "www.abracadabranyc.com");
+    return url.protocol === "https:" && allowedHosts.includes(url.hostname.toLowerCase());
   } catch {
     return false;
   }
@@ -45,14 +45,25 @@ export function verifiedCjRedirectUrl(input: {
   pid: string;
   aid: string;
   sid: string;
+  allowedDestinationHosts: readonly string[];
 }) {
   const parsed = parseCjTrackingUrl(input.trackingUrl);
-  if (!parsed || parsed.pid !== input.pid || parsed.aid !== input.aid || !isAbracadabraDestination(input.destinationUrl)) {
+  if (
+    !parsed ||
+    parsed.pid !== input.pid ||
+    parsed.aid !== input.aid ||
+    !isAllowedCjDestination(input.destinationUrl, input.allowedDestinationHosts)
+  ) {
     return null;
   }
 
   const embeddedDestination = parsed.url.searchParams.get("url");
-  if (embeddedDestination && !isAbracadabraDestination(embeddedDestination)) return null;
+  if (
+    embeddedDestination &&
+    !isAllowedCjDestination(embeddedDestination, input.allowedDestinationHosts)
+  ) {
+    return null;
+  }
 
   parsed.url.searchParams.set("sid", input.sid);
   return parsed.url;

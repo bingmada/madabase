@@ -19,11 +19,12 @@ export function AffiliateButton({
   position: string;
 }) {
   const amazonMarket: AmazonMarketKey = market ?? "us";
+  const isAmazon = offer.merchant.toLowerCase().includes("amazon");
   const creatorsListing = useAmazonCreatorsListing(
     site,
     product.slug,
     amazonMarket,
-    Boolean(product.asin ?? product.specs.ASIN) && offer.merchant.toLowerCase().includes("amazon"),
+    Boolean(product.asin ?? product.specs.ASIN) && isAmazon,
   );
   const href = creatorsListing?.detailPageUrl ?? offer.url;
 
@@ -64,7 +65,9 @@ export function AffiliateButton({
       target="_blank"
       rel="sponsored nofollow noopener noreferrer"
       aria-label={`${offer.label} for ${creatorsListing?.title ?? product.amazonTitle ?? product.name}`}
-      data-amazon-link-source={creatorsListing ? "creators-api" : "verified-fallback"}
+      data-affiliate-link-source={
+        creatorsListing ? "amazon-creators-api" : isAmazon ? "verified-amazon-fallback" : "authorized-offer"
+      }
       onClick={trackClick}
     >
       {offer.label}

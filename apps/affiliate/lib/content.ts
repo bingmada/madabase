@@ -17,6 +17,7 @@ import {
 } from "./commercial-expansion-content";
 import { expansionGuides } from "./expansion-guides";
 import { costumeGuides } from "./costume-content";
+import { cjBabyProducts } from "./cj-baby-content";
 import { gscPriorityGuides, gscPriorityProducts, gscPriorityRoundups } from "./gsc-priority-expansion-content";
 import {
   networkAccessoryExpansionGuides,
@@ -2331,6 +2332,7 @@ guides.push(...verifiedAffiliateBatchGuides);
 products.push(...nextReleaseProducts);
 roundups.push(...nextReleaseRoundups);
 guides.push(...nextReleaseGuides);
+products.push(...cjBabyProducts);
 products.push(...gscPriorityProducts);
 roundups.push(...gscPriorityRoundups);
 guides.push(...gscPriorityGuides);

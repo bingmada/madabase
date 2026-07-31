@@ -63,22 +63,29 @@ function beforeYouBuyChecks(siteKey: string) {
 function listingVerificationRows(product: Product, displayName: string, offers: AffiliateOffer[]) {
   const asin = product.asin ?? product.specs.ASIN;
   const amazonOffer = offers.find((offer) => offer.merchant.toLowerCase().includes("amazon"));
+  const primaryOffer = amazonOffer ?? offers[0];
   const modelOrPack = product.specs.Model ?? product.specs.Pack ?? product.specs["Product type"] ?? displayName;
+  const listingAnchor = asin
+    ? `Amazon ASIN ${asin}`
+    : product.specs["Retailer listing anchor"] ??
+      product.specs["CJ link identity"] ??
+      `Confirm the exact listing on ${primaryOffer?.merchant ?? "the retailer"}`;
 
   return [
-    ["Amazon listing anchor", asin ? `ASIN ${asin}` : "Confirm ASIN on the live Amazon listing before purchase"],
+    ["Retail listing anchor", listingAnchor],
     ["Listing title to match", displayName],
     ["Model or bundle", modelOrPack],
     ["Version risk", product.evidence[0] ?? "Confirm exact model, region, hardware revision, and included accessories"],
-    ["Price handling", amazonOffer?.priceNote ?? offers[0]?.priceNote ?? "No exact Amazon price is copied; verify live price, coupon, seller, and return window"],
+    ["Price handling", primaryOffer?.priceNote ?? "No exact price is copied; verify live price, coupon, stock, shipping, and return window"],
   ];
 }
 
 function updateRecord(product: Product, sourceCount: number, offers: AffiliateOffer[]) {
+  const asin = product.asin ?? product.specs.ASIN;
   return [
     ["Content updated", product.updatedAt ?? "Update date pending"],
     ["Official source links", sourceCount ? `${sourceCount} linked source${sourceCount === 1 ? "" : "s"}` : "No official source link stored yet"],
-    ["Retail listing check", product.asin ?? product.specs.ASIN ? `Amazon ASIN ${product.asin ?? product.specs.ASIN}` : "ASIN still needs live listing confirmation"],
+    ["Retail listing check", asin ? `Amazon ASIN ${asin}` : offers[0] ? `Authorized ${offers[0].merchant} listing` : "Retail listing confirmation pending"],
     ["Price policy", offers.length ? "Exact prices are not copied; merchant page controls final price and availability" : "Buying links are being refreshed"],
   ];
 }
@@ -103,12 +110,13 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
   const displayName = product.amazonTitle ?? product.name;
   const pageTitle = productPageTitle(product);
   const displayImage = product.amazonImage ?? product.image;
+  const asin = product.asin ?? product.specs.ASIN;
   const productFacts = [
     ["Exact product", displayName],
     ["Brand", product.brand],
     ["Best use case", product.bestFor],
     ["Category", product.category],
-    ["ASIN", product.asin ?? product.specs.ASIN ?? "Confirm on the current Amazon listing"],
+    [asin ? "ASIN" : "Retailer anchor", asin ?? product.specs["Retailer listing anchor"] ?? "Confirm on the exact retailer listing"],
     ["Price band", product.priceBand],
   ];
   const compatibilityChecks = product.evidence.slice(0, 5);
@@ -224,7 +232,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                     <AffiliateButton site={site.key} product={product} offer={primaryOffers[0]} position="review-hero" />
                   ) : null}
                 </div>
-                <AmazonListingFreshness site={site.key} productSlug={product.slug} />
+                {asin ? <AmazonListingFreshness site={site.key} productSlug={product.slug} /> : null}
                 {offerBlock ? (
                   <div className="mt-5 rounded-md border border-amber-300 bg-amber-50 p-4 text-sm leading-6 text-amber-950">
                     <p className="font-bold">Amazon purchase link paused after a listing check</p>
@@ -255,7 +263,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
               </div>
               <div>
                 <div className="relative aspect-[4/3] w-full overflow-hidden rounded-md bg-[var(--surface-muted)]">
-                  <Image className="object-cover" src={displayImage} alt={displayName} fill priority sizes="(min-width: 768px) 300px, 100vw" />
+                  <Image className="object-cover" src={displayImage} alt={product.imageAlt ?? displayName} fill priority sizes="(min-width: 768px) 300px, 100vw" />
                 </div>
                 {displayImage.includes("-realistic.webp") ? (
                   <p className="mt-2 text-xs leading-5 text-[var(--muted)]">
@@ -357,7 +365,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
               ) : null}
               <div className="not-prose mt-5 grid min-w-0 gap-5 lg:grid-cols-2">
                 <section className="min-w-0 rounded-md border border-[var(--border)] bg-white p-5">
-                  <h2 className="text-xl font-bold">Amazon listing verification</h2>
+                  <h2 className="text-xl font-bold">Retail listing verification</h2>
                   <dl className="mt-4 divide-y divide-[var(--border)]">
                     {listingRows.map(([label, value]) => (
                       <div className="grid gap-2 py-3 text-sm sm:grid-cols-[140px_1fr]" key={label}>
@@ -533,7 +541,9 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                             <td className="px-4 py-4 text-[var(--muted)]">{item.bestFor}</td>
                             <td className="px-4 py-4 text-[var(--muted)]">{item.cons[0]}</td>
                             <td className="px-4 py-4 font-bold">{item.priceBand}</td>
-                            <td className="px-4 py-4 text-[var(--muted)]">{item.asin ? `ASIN ${item.asin}` : item.category}</td>
+                            <td className="px-4 py-4 text-[var(--muted)]">
+                              {item.asin ? `ASIN ${item.asin}` : item.specs["Retailer listing anchor"] ?? item.category}
+                            </td>
                           </tr>
                         ))}
                       </tbody>
@@ -591,7 +601,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                   <li key={item}>{item}</li>
                 ))}
                 <li>Use recent owner feedback to look for recurring quality-control issues after confirming the exact model.</li>
-                <li>Our Amazon links may earn commission from qualifying purchases, at no extra cost to you.</li>
+                <li>Our retailer links may earn commission from qualifying purchases, at no extra cost to you.</li>
               </ul>
               {product.sources?.length ? (
                 <>

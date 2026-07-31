@@ -46,6 +46,7 @@ export type Product = Publishable & {
   brand: string;
   category: string;
   image: string;
+  imageAlt?: string;
   summary: string;
   verdict?: string;
   whyItMatters?: string;

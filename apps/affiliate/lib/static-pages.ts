@@ -13,7 +13,9 @@ function focusLine(site: SiteConfig) {
 }
 
 function checkoutSource(site: SiteConfig) {
-  return site.key === "costume" ? "the exact Abracadabra listing reached through the verified CJ tracking path" : "the exact Amazon listing";
+  if (site.key === "costume") return "the exact Abracadabra listing reached through the verified CJ tracking path";
+  if (site.key === "baby") return "the exact Amazon or Bc Babycare listing reached through its authorized affiliate path";
+  return "the exact Amazon listing";
 }
 
 export function getStaticPages(site: SiteConfig): StaticPage[] {
@@ -96,6 +98,8 @@ export function getStaticPages(site: SiteConfig): StaticPage[] {
           heading: "How links are handled",
           body: site.key === "costume"
             ? "Eligible purchase buttons first create a local click record, then use the dedicated Costume promotional-property PID and the matching Abracadabra CJ product link. A button is shown only after the product, destination, image source, and attribution path are checked. Prices, coupons, shipping, stock, product variants, and return windows can change, so the final Abracadabra listing remains the checkout source."
+            : site.key === "baby"
+              ? "Commissioned purchase buttons may send readers to Amazon or, for an explicitly authorized and verified product, through the dedicated Baby promotional-property PID to Bc Babycare via CJ. CJ buttons first create an opaque local attribution record and are limited to an exact merchant, product, PID, AID, and destination allowlist. Prices, coupons, shipping, stock, seller details, variants, and return windows can change, so the final retailer listing remains the checkout source."
             : "Commissioned purchase buttons currently send readers only to Amazon. Prices, coupons, shipping, stock, seller details, and return windows can change after publication, so the Amazon listing is the final source before ordering.",
         },
         {
@@ -115,7 +119,7 @@ export function getStaticPages(site: SiteConfig): StaticPage[] {
         },
         {
           heading: "Site usage and cookies",
-          body: `The site may process basic technical and usage information needed for security, reliability, measurement, and performance. Microsoft Clarity may record interaction signals such as page visits, scrolling, clicks, device details, and session replays so we can identify usability problems. ${site.key === "costume" ? "CJ and Abracadabra may use cookies or similar technologies for affiliate attribution after tracked links are enabled." : "Amazon may also use cookies or similar technologies for affiliate attribution."} Third-party services apply their own privacy policies and cookie controls.`,
+          body: `The site may process basic technical and usage information needed for security, reliability, measurement, and performance. Microsoft Clarity may record interaction signals such as page visits, scrolling, clicks, device details, and session replays so we can identify usability problems. ${site.key === "costume" ? "CJ and Abracadabra may use cookies or similar technologies for affiliate attribution after tracked links are enabled." : site.key === "baby" ? "Amazon, CJ, and Bc Babycare may use cookies or similar technologies for affiliate attribution when their respective links are followed." : "Amazon may also use cookies or similar technologies for affiliate attribution."} Third-party services apply their own privacy policies and cookie controls.`,
         },
         {
           heading: "Affiliate and external links",
@@ -140,6 +144,8 @@ export function getStaticPages(site: SiteConfig): StaticPage[] {
           heading: "Affiliate and product inquiries",
           body: site.key === "costume"
             ? "We may review products that fit the site's categories, but coverage is not guaranteed. Useful pitches include the exact Abracadabra product or CJ feed identity, current URL, variant, measurements, materials, included pieces, availability, care details, and who the product is best for. Product samples are not requested because the editorial owner is based in China."
+            : site.key === "baby"
+              ? "We may review products that fit the site's categories, but coverage is not guaranteed. Useful pitches include the exact model, Amazon ASIN or authorized CJ link identity, retailer URL, age and weight guidance, key specs, care details, replacement-part information, and who the product is best for."
             : "We may review products that fit the site's categories, but coverage is not guaranteed. Useful pitches include the exact model, Amazon ASIN or retailer URL, key specs, replacement-part information, and who the product is best for.",
         },
         {

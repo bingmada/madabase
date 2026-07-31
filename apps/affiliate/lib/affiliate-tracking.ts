@@ -1,5 +1,6 @@
 import type { AffiliateOffer, Product, SiteKey } from "./types";
 import { findAmazonOfferBlock } from "./amazon-offer-blocks";
+import { findAuthorizedCjProductOffer } from "./cj-offers";
 
 export const amazonTrackingIds: Partial<Record<SiteKey, string>> = {
   network: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_NETWORK ?? "madanetwork-20",
@@ -24,6 +25,10 @@ function isAmazonOffer(offer: AffiliateOffer) {
   } catch {
     return false;
   }
+}
+
+function isAuthorizedOffer(product: Product, offer: AffiliateOffer) {
+  return isAmazonOffer(offer) || Boolean(findAuthorizedCjProductOffer(product.site, product.slug, offer.url));
 }
 
 function referencesBlockedAsin(url: string | undefined, asin: string) {
@@ -78,7 +83,11 @@ export function applySiteAffiliateTracking(product: Product): Product {
   return {
     ...product,
     offers: product.offers
-      .filter(isAmazonOffer)
-      .map((offer) => ({ ...offer, url: trackedAmazonUrl(product.site, product, offer) })),
+      .filter((offer) => isAuthorizedOffer(product, offer))
+      .map((offer) =>
+        isAmazonOffer(offer)
+          ? { ...offer, url: trackedAmazonUrl(product.site, product, offer) }
+          : offer,
+      ),
   };
 }

@@ -290,6 +290,7 @@ export const gscPriorityRoundups: Roundup[] = [
     productSlugs: [
       "ergobaby-omni-breeze-carrier",
       "babybjorn-carrier-harmony",
+      "bc-babycare-hexa-effortless-carrier",
       "babybjorn-carrier-mini-3d-mesh",
       "momcozy-purehug-baby-carrier",
       "baby-tula-lite-carrier",
