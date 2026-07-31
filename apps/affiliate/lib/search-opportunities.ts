@@ -571,9 +571,9 @@ export const searchOpportunities: SearchOpportunity[] = [
     site: "baby",
     kind: "product",
     slug: "momcozy-purehug-baby-carrier",
-    query: "Who should buy Momcozy PureHug, and what must be checked before newborn use?",
-    answer: "PureHug is a reasonable candidate when its structured inward-carry setup, cross-back straps, waistband range, and budget fit both the baby and caregiver. It is not a universal newborn approval: confirm the exact current manual, listed size limits, airway and head-support setup, caregiver adjustment, seller, and usable return path before relying on it.",
-    updatedAt: portfolioBatchUpdatedAt,
+    query: "Is Momcozy PureHug suitable from birth, and which carry positions are documented?",
+    answer: "The exact PureHug Black page recommends 3–24 months and 7–45lb, so reaching 7lb does not make it suitable from birth. It documents front carry facing inward; require both the age and weight gates, check panel and airway fit, and do not infer back, hip, or outward-facing support from generic marketplace images. Confirm ASIN B0CDQ2KVJD and the standard-versus-Air-Mesh variation before ordering.",
+    updatedAt: "July 31, 2026",
     preferredPaths: ["/best/momcozy-purehug-vs-ergobaby-omni-breeze", "/reviews/ergobaby-omni-breeze-carrier", "/guides/baby-carrier-hot-weather-and-caregiver-fit-guide"],
   },
   {
