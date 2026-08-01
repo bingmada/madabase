@@ -7,6 +7,7 @@ import { StyleCategoryPage } from "@/components/StyleExperience";
 import { CostumeCategoryPage } from "@/components/CostumeExperience";
 import { siteGuides, siteProducts, siteRoundups, siteTools } from "@/lib/content";
 import { breadcrumbSchema, itemListSchema, pageMetadata } from "@/lib/seo";
+import { prioritizeBySearchDemand } from "@/lib/search-demand-priorities";
 import { getCurrentSite } from "@/lib/sites";
 import type { SiteKey } from "@/lib/types";
 import { parseCostumeCatalogFilters, type CostumeCatalogCategory } from "@/lib/costume-catalog";
@@ -167,11 +168,23 @@ export default async function CategoryPage({
     const filters = parseCostumeCatalogFilters(await searchParams, { category: categorySlug });
     return <CostumeCategoryPage filters={filters} site={site} slug={categorySlug} />;
   }
-  const products = siteProducts(site.key)
-    .filter((item) => item.category === slug && (site.key === "style" || item.offers.length > 0))
-    .reverse();
-  const roundups = siteRoundups(site.key).filter((item) => item.category === slug);
-  const guides = siteGuides(site.key).filter((item) => item.category === slug);
+  const products = prioritizeBySearchDemand(
+    site.key,
+    siteProducts(site.key)
+      .filter((item) => item.category === slug && (site.key === "style" || item.offers.length > 0))
+      .reverse(),
+    (item) => `/reviews/${item.slug}`,
+  );
+  const roundups = prioritizeBySearchDemand(
+    site.key,
+    siteRoundups(site.key).filter((item) => item.category === slug),
+    (item) => `/best/${item.slug}`,
+  );
+  const guides = prioritizeBySearchDemand(
+    site.key,
+    siteGuides(site.key).filter((item) => item.category === slug),
+    (item) => `/guides/${item.slug}`,
+  );
   const tools = siteTools(site.key).filter((item) => item.category === slug);
   const categoryItems = [
     ...products.map((product) => ({ name: product.amazonTitle ?? product.name, path: `/reviews/${product.slug}` })),

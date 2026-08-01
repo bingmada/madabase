@@ -5,6 +5,7 @@ import { StyleHome } from "@/components/StyleExperience";
 import { CostumeHome } from "@/components/CostumeExperience";
 import { siteGuides, siteProducts, siteRoundups, siteTools } from "@/lib/content";
 import { itemListSchema, organizationSchema, pageMetadata, websiteSchema } from "@/lib/seo";
+import { siteSearchDemandPriorities } from "@/lib/search-demand-priorities";
 import { getCurrentSite } from "@/lib/sites";
 import type { SiteKey } from "@/lib/types";
 
@@ -51,6 +52,20 @@ function newestAndFoundational<T extends { slug: string }>(items: T[], newestCou
   return candidates.filter((item, index) => candidates.findIndex((candidate) => candidate.slug === item.slug) === index);
 }
 
+function demandLedSelection<T>(
+  items: T[],
+  priorityPaths: string[],
+  pathFor: (item: T) => string,
+  fallback: T[],
+  limit: number,
+) {
+  const byPath = new Map(items.map((item) => [pathFor(item), item]));
+  const candidates = [...priorityPaths.map((path) => byPath.get(path)), ...fallback].filter((item): item is T => Boolean(item));
+  return candidates
+    .filter((item, index) => candidates.findIndex((candidate) => pathFor(candidate) === pathFor(item)) === index)
+    .slice(0, limit);
+}
+
 export async function generateMetadata() {
   const site = await getCurrentSite();
   return pageMetadata(site, "/", site.name, site.description);
@@ -63,9 +78,29 @@ export default async function HomePage() {
   const linkedProducts = products.filter((product) => product.offers.length > 0);
   const guides = siteGuides(site.key);
   const tools = siteTools(site.key);
-  const featuredRoundups = newestAndFoundational(roundups, 5, 4);
-  const featuredProducts = newestAndFoundational(linkedProducts, 6, 3);
-  const featuredGuides = newestAndFoundational(guides, 6, 6);
+  const demandPriorities = siteSearchDemandPriorities(site.key);
+  const priorityPaths = demandPriorities.map((item) => item.path);
+  const featuredRoundups = demandLedSelection(
+    roundups,
+    priorityPaths,
+    (roundup) => `/best/${roundup.slug}`,
+    newestAndFoundational(roundups, 5, 4),
+    9,
+  );
+  const featuredProducts = demandLedSelection(
+    linkedProducts,
+    priorityPaths,
+    (product) => `/reviews/${product.slug}`,
+    newestAndFoundational(linkedProducts, 6, 3),
+    9,
+  );
+  const featuredGuides = demandLedSelection(
+    guides,
+    priorityPaths,
+    (guide) => `/guides/${guide.slug}`,
+    newestAndFoundational(guides, 6, 6),
+    12,
+  );
   const copy = homeCopy[site.key];
   if (site.key === "costume") {
     return <CostumeHome site={site} />;
@@ -87,6 +122,29 @@ export default async function HomePage() {
       <JsonLd data={itemListSchema(site, `${site.name} buying guides and tools`, discoveryItems)} />
       <Hero site={site} />
       <TrustBar />
+      {demandPriorities.length ? (
+        <section className="section bg-[var(--surface-muted)]" aria-labelledby="buyer-questions-heading">
+          <div className="shell">
+            <div className="max-w-3xl">
+              <p className="eyebrow">Start with the decision</p>
+              <h2 className="mt-3 text-3xl font-black" id="buyer-questions-heading">Questions that change what you should buy</h2>
+              <p className="mt-4 leading-8 text-[var(--muted)]">
+                These focused paths connect the product comparison to the setup, fit, compatibility, or recurring-cost question behind it.
+              </p>
+            </div>
+            <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              {demandPriorities.map((priority) => (
+                <Link className="panel p-5 transition hover:-translate-y-0.5 hover:border-[var(--brand)]" href={priority.path} key={priority.path}>
+                  <p className="eyebrow">Buyer question</p>
+                  <h3 className="mt-3 text-xl font-bold">{priority.queryFamily}</h3>
+                  <p className="mt-3 leading-7 text-[var(--muted)]">{priority.decision}</p>
+                  <span className="mt-5 inline-flex font-bold text-[var(--brand-strong)]">Open decision guide →</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : null}
       <section className="section bg-white" id="reviews">
         <div className="shell">
           <div className="max-w-2xl">
