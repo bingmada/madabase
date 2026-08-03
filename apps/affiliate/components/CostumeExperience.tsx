@@ -53,7 +53,10 @@ export async function CostumeHome({ site }: { site: SiteConfig }) {
             <p className="text-xs font-black uppercase tracking-[0.14em] text-[#ffc56d]">Halloween 2026 starts here</p>
             <h2 className="mt-2 text-2xl font-black text-white">Start with sizing, masks, haunted props, lighting, and delivery risk—not a wall of seasonal products.</h2>
           </div>
-          <Link className="button-primary shrink-0 !bg-[#df7627] !text-white" href="/halloween">Open the Halloween guide <ArrowRight aria-hidden="true" size={16} /></Link>
+          <div className="flex flex-wrap gap-3">
+            <Link className="button-primary shrink-0 !bg-[#df7627] !text-white" href="/halloween">Open the Halloween guide <ArrowRight aria-hidden="true" size={16} /></Link>
+            <Link className="button-secondary shrink-0 bg-white/95" href="/best/halloween-animatronics-small-yards-and-porches">Compare animatronics</Link>
+          </div>
         </div>
       </section>
       <section className="section bg-white" id="reviews">
@@ -184,6 +187,16 @@ export function CostumeCategoryPage({
           <p className="eyebrow">Browse by product type</p>
           <h1 className="mt-3 text-4xl font-black">{category.name}</h1>
           <p className="mt-4 max-w-3xl text-lg leading-8 text-[var(--muted)]">{category.description}</p>
+          {slug === "props-animatronics" ? (
+            <aside className="mt-6 flex flex-col gap-4 rounded-md border border-[#d99162] bg-[#fff8f2] p-5 sm:flex-row sm:items-center sm:justify-between">
+              <div className="max-w-2xl">
+                <p className="eyebrow">Halloween buyer guide</p>
+                <h2 className="mt-2 text-2xl font-black">Choosing for a small yard or porch?</h2>
+                <p className="mt-2 leading-7 text-[var(--muted)]">Compare ground-level, hanging, and vertical animatronic formats by placement, power, weather protection, guest clearance, and storage.</p>
+              </div>
+              <Link className="button-primary shrink-0" href="/best/halloween-animatronics-small-yards-and-porches">Compare three formats <ArrowRight aria-hidden="true" size={16} /></Link>
+            </aside>
+          ) : null}
           <div className="mt-8">
             <CostumeCatalogExplorer basePath={`/categories/${slug}`} filters={filters} lockedCategory={slug} site={site} />
           </div>

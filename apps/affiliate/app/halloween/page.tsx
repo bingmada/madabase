@@ -104,6 +104,7 @@ export default async function HalloweenPage() {
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
               <Link className="button-primary !bg-[#df7627] !text-white" href="#halloween-picks">See the Halloween edit <ArrowRight aria-hidden="true" size={16} /></Link>
+              <Link className="button-secondary bg-white/95" href="/best/halloween-animatronics-small-yards-and-porches">Compare small-yard animatronics</Link>
               <Link className="button-secondary bg-white/95" href="/guides/when-to-order-a-halloween-costume">Open the ordering timeline</Link>
             </div>
           </div>
@@ -123,6 +124,17 @@ export default async function HalloweenPage() {
               </article>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="border-y border-[#4a2b56] bg-[#170f20] text-white">
+        <div className="shell flex flex-col gap-5 py-8 sm:flex-row sm:items-center sm:justify-between">
+          <div className="max-w-3xl">
+            <p className="text-xs font-black uppercase tracking-[0.14em] text-[#ffc56d]">Small yard or porch?</p>
+            <h2 className="mt-2 text-2xl font-black text-white">Compare a low path scare, hanging UV effect, and vertical centerpiece before ordering.</h2>
+            <p className="mt-3 leading-7 text-white/70">Use placement, power, weather protection, guest clearance, and storage to eliminate the wrong format.</p>
+          </div>
+          <Link className="button-primary shrink-0 !bg-[#df7627] !text-white" href="/best/halloween-animatronics-small-yards-and-porches">Open the animatronics guide <ArrowRight aria-hidden="true" size={16} /></Link>
         </div>
       </section>
 

@@ -92,6 +92,19 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="section seasonal-section">
+        <div className="shell seasonal-callout">
+          <div>
+            <p className="eyebrow on-dark">Seasonal decision desk · Halloween 2026</p>
+            <h2>Plan the costume, scare, and setup while there is still time to test it.</h2>
+            <p>Use the Madabase Halloween &amp; Costume Guide for sizing, masks, haunted props, animatronics, lighting, delivery timing, and simpler backups before October 31.</p>
+          </div>
+          <TrackedLink className="button button-light" href="https://costumes.madabase.com/halloween" position="home-seasonal-halloween" publication="Madabase Halloween & Costume Guide">
+            Open Halloween planning <ArrowRight size={17} aria-hidden="true" />
+          </TrackedLink>
+        </div>
+      </section>
+
       <section className="section research-section">
         <div className="shell">
           <div className="section-heading split-heading">

@@ -57,6 +57,7 @@ export async function GET() {
       ? [
           "Seasonal planning:",
           "- Halloween 2026 costumes, masks, animatronics, and decorations: /halloween",
+          "- Halloween animatronics for small yards and porches: /best/halloween-animatronics-small-yards-and-porches",
           "- Halloween costume ideas and editorial kits: /halloween-ideas",
           ...costumeHalloweenIdeas.map((idea) => `- ${idea.title}: /halloween-ideas/${idea.slug}`),
           "",
