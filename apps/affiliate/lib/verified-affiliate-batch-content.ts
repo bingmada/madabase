@@ -602,8 +602,8 @@ export const verifiedAffiliateBatchRoundups: Roundup[] = [
     site: "homeoffice",
     slug: "ergear-48x24-vs-flexispot-e7-mini",
     updatedAt,
-    title: "FlexiSpot E7 Mini vs ErGear 48×24: Which Small Standing Desk Is Better?",
-    dek: "Compare FlexiSpot vs ErGear by wheels, low height, monitor support, desktop construction, cable routing, room fit, and price.",
+    title: "ErGear 48×24 vs FlexiSpot E7 Mini: Full Desk or Compact Fit?",
+    dek: "Compare ErGear vs FlexiSpot by 48×24 work area, compact-top fit, wheels, low height, monitor support, cable routing, room clearance, and exact bundle.",
     category: "desks",
     intent: "choosing a compact standing desk for a bedroom or shared room",
     intro:

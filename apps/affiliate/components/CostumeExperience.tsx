@@ -4,6 +4,7 @@ import type { SiteConfig } from "@/lib/sites";
 import { costumeGuides } from "@/lib/costume-content";
 import { getCostumeCatalogStats, listCuratedCostumeProducts, listIndexableCostumeProducts, type CostumeCatalogCategory, type CostumeCatalogFilters } from "@/lib/costume-catalog";
 import { costumeHalloweenSlugs } from "@/lib/costume-halloween";
+import { costumeHalloweenIdeas } from "@/lib/costume-halloween-ideas";
 import { CostumeCatalogCard, CostumeCatalogExplorer } from "./CostumeCatalog";
 import { Hero, TrustBar } from "./LayoutParts";
 
@@ -101,6 +102,16 @@ export async function CostumeHome({ site }: { site: SiteConfig }) {
               <p className="mt-4 leading-8 text-white/75">Each recipe combines an original character story, exact products, inexpensive additions from home, three build levels, setup order, and event-night checks.</p>
             </div>
             <Link className="button-primary shrink-0 !bg-[#df7627] !text-white" href="/halloween-ideas">Open ideas & kits <ArrowRight aria-hidden="true" size={16} /></Link>
+          </div>
+          <div className="mt-8 grid gap-4 md:grid-cols-3">
+            {costumeHalloweenIdeas.map((idea) => (
+              <Link className="rounded-md border border-white/15 bg-white/5 p-5 transition hover:bg-white/10" href={`/halloween-ideas/${idea.slug}`} key={idea.slug}>
+                <p className="text-xs font-black uppercase tracking-[0.12em] text-[#ffc56d]">{idea.eyebrow}</p>
+                <h3 className="mt-3 text-xl font-black text-white">{idea.title}</h3>
+                <p className="mt-3 text-sm leading-6 text-white/70">{idea.dek}</p>
+                <span className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-white">Open this recipe <ArrowRight aria-hidden="true" size={15} /></span>
+              </Link>
+            ))}
           </div>
         </div>
       </section>

@@ -269,8 +269,8 @@ opportunitySource.statements.forEach((statement) => {
   });
 });
 
-if (searchOpportunities.length !== 79) {
-  errors.push(`Search opportunity registry must contain exactly 79 entries; found ${searchOpportunities.length}`);
+if (searchOpportunities.length !== 98) {
+  errors.push(`Search opportunity registry must contain exactly 98 entries; found ${searchOpportunities.length}`);
 }
 const opportunityKeys = new Set();
 const opportunityDateKeys = new Set();

@@ -6,6 +6,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { Disclosure } from "@/components/LayoutParts";
 import { listCuratedCostumeProducts } from "@/lib/costume-catalog";
 import {
+  costumeHalloweenIdeas,
   costumeHalloweenIdeaSlugs,
   findCostumeHalloweenIdea,
   type HalloweenIdea,
@@ -251,6 +252,18 @@ export default async function HalloweenIdeaPage({ params }: { params: Promise<{ 
                 <span className="mt-4 inline-flex items-center gap-2 text-sm font-bold text-[var(--brand-strong)]">Open guide <ArrowRight aria-hidden="true" size={16} /></span>
               </Link>
             ))}
+          </div>
+          <div className="mt-8 grid gap-4 md:grid-cols-2">
+            {costumeHalloweenIdeas
+              .filter((otherIdea) => otherIdea.slug !== idea.slug)
+              .map((otherIdea) => (
+                <Link className="rounded-md border border-[var(--border)] bg-white p-5" href={`/halloween-ideas/${otherIdea.slug}`} key={otherIdea.slug}>
+                  <p className="eyebrow">Another distinct Halloween recipe</p>
+                  <h2 className="mt-3 text-lg font-bold">{otherIdea.title}</h2>
+                  <p className="mt-2 text-sm leading-6 text-[var(--muted)]">{otherIdea.dek}</p>
+                  <span className="mt-4 inline-flex items-center gap-2 text-sm font-bold text-[var(--brand-strong)]">Compare the scene plan <ArrowRight aria-hidden="true" size={16} /></span>
+                </Link>
+              ))}
           </div>
           <div className="mt-8 grid gap-6 lg:grid-cols-[1fr_.72fr]">
             <div className="panel p-6">

@@ -27,12 +27,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       ? [
           { path: "/halloween", changeFrequency: "weekly" as const, priority: 0.95, lastModified: new Date("2026-08-03T00:00:00Z") },
           { path: "/best/halloween-animatronics-small-yards-and-porches", changeFrequency: "weekly" as const, priority: 0.92, lastModified: new Date("2026-08-03T00:00:00Z") },
-          { path: "/halloween-ideas", changeFrequency: "weekly" as const, priority: 0.93, lastModified: new Date("2026-07-29T00:00:00Z") },
+          { path: "/halloween-ideas", changeFrequency: "weekly" as const, priority: 0.93, lastModified: new Date("2026-08-06T00:00:00Z") },
           ...costumeHalloweenIdeaSlugs.map((slug) => ({
             path: `/halloween-ideas/${slug}`,
             changeFrequency: "monthly" as const,
             priority: 0.9,
-            lastModified: new Date("2026-07-29T00:00:00Z"),
+            lastModified: new Date("2026-08-06T00:00:00Z"),
           })),
           { path: "/premium", changeFrequency: "weekly" as const, priority: 0.82 },
         ]

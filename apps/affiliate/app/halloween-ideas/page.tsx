@@ -39,10 +39,11 @@ export default async function HalloweenIdeasPage() {
       <section className="section bg-[#170f20] text-white">
         <div className="shell">
           <p className="text-xs font-black uppercase tracking-[0.16em] text-[#ffc56d]">Stories, looks, and scene recipes</p>
-          <h1 className="mt-4 max-w-4xl text-4xl font-black leading-tight text-white sm:text-6xl">Do not shop a wall of Halloween products. Build one readable story.</h1>
+          <h1 className="mt-4 max-w-4xl text-4xl font-black leading-tight text-white sm:text-6xl">Halloween costume ideas that build one readable story</h1>
           <p className="mt-5 max-w-3xl text-lg leading-8 text-white/80">
             Each editorial kit starts with a character and a setting, then assigns every costume, mask, light, or moving prop a specific job. Products are sold separately; the story and setup plan are the bundle.
           </p>
+          <p className="mt-5 text-sm font-semibold text-white/60">Editorial recipes reviewed August 6, 2026</p>
         </div>
       </section>
 
