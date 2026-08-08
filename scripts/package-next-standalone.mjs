@@ -51,6 +51,9 @@ cpSync(standaloneRoot, runtimeRoot, { recursive: true });
 
 const targetNativeDependencies = [];
 const sharpTarget = process.env.NEXT_STANDALONE_SHARP_TARGET;
+const sharpSourceRoot = process.env.NEXT_STANDALONE_SHARP_SOURCE
+  ? resolve(process.env.NEXT_STANDALONE_SHARP_SOURCE)
+  : undefined;
 if (sharpTarget) {
   if (!/^(linux|linuxmusl)-(x64|arm64)$/.test(sharpTarget)) {
     throw new Error(`Unsupported NEXT_STANDALONE_SHARP_TARGET: ${sharpTarget}`);
@@ -76,6 +79,24 @@ if (sharpTarget) {
         throw new Error(`${nativePackageName} is not declared by sharp ${sharpPackage.version}.`);
       }
 
+      const destination = join(runtimeRoot, "node_modules", ...nativePackageName.split("/"));
+      const localSource = sharpSourceRoot
+        ? join(sharpSourceRoot, "node_modules", ...nativePackageName.split("/"))
+        : undefined;
+      const localPackagePath = localSource ? join(localSource, "package.json") : undefined;
+      if (localSource && localPackagePath && existsSync(localPackagePath)) {
+        const localPackage = JSON.parse(readFileSync(localPackagePath, "utf8"));
+        if (localPackage.version !== nativeVersion) {
+          throw new Error(
+            `${nativePackageName} source version ${localPackage.version} does not match required ${nativeVersion}.`,
+          );
+        }
+        mkdirSync(destination, { recursive: true });
+        cpSync(localSource, destination, { recursive: true });
+        targetNativeDependencies.push(`${nativePackageName}@${nativeVersion}`);
+        continue;
+      }
+
       const packed = spawnSync(
         "npm",
         ["pack", `${nativePackageName}@${nativeVersion}`, "--json"],
@@ -96,7 +117,6 @@ if (sharpTarget) {
         throw new Error(`npm pack did not report a filename for ${nativePackageName}.`);
       }
 
-      const destination = join(runtimeRoot, "node_modules", ...nativePackageName.split("/"));
       mkdirSync(destination, { recursive: true });
       const extracted = spawnSync(
         "tar",

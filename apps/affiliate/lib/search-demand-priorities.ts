@@ -72,9 +72,9 @@ const priorities: Record<SiteKey, SearchDemandPriority[]> = {
   ],
   homeoffice: [
     {
-      path: "/reviews/urevo-smart-walking-pad",
-      queryFamily: "UREVO walking pad review",
-      decision: "Measure belt, step-up height, desk clearance, capacity, and return risk.",
+      path: "/best/logitech-litra-glow-vs-elgato-key-light-neo",
+      queryFamily: "Litra Glow vs Key Light Neo",
+      decision: "Compare mounting, controls, glare, desk footprint, and video-call use.",
     },
     {
       path: "/reviews/huanuo-titanlift-heavy-duty-monitor-arm",
@@ -87,14 +87,14 @@ const priorities: Record<SiteKey, SearchDemandPriority[]> = {
       decision: "Check desktop material, thickness, edge shape, and pressure distribution.",
     },
     {
+      path: "/reviews/urevo-smart-walking-pad",
+      queryFamily: "UREVO walking pad review",
+      decision: "Measure belt, step-up height, desk clearance, capacity, and return risk.",
+    },
+    {
       path: "/best/ergotron-hx-vs-huanuo-titanlift",
       queryFamily: "Ergotron HX vs TitanLift",
       decision: "Compare heavy-display fit, pivot needs, clamp geometry, and value.",
-    },
-    {
-      path: "/best/logitech-litra-glow-vs-elgato-key-light-neo",
-      queryFamily: "Litra Glow vs Key Light Neo",
-      decision: "Compare mounting, controls, glare, desk footprint, and video-call use.",
     },
   ],
   baby: [

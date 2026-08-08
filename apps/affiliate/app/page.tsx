@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
-import { Hero, ProductCard, RoundupCard, TrustBar } from "@/components/LayoutParts";
+import { DecisionModules, Hero, ProductCard, RoundupCard, TrustBar } from "@/components/LayoutParts";
 import { StyleHome } from "@/components/StyleExperience";
 import { CostumeHome } from "@/components/CostumeExperience";
 import { siteGuides, siteProducts, siteRoundups, siteTools } from "@/lib/content";
 import { itemListSchema, organizationSchema, pageMetadata, websiteSchema } from "@/lib/seo";
+import { siteDecisionModules } from "@/lib/site-decision-modules";
 import { siteSearchDemandPriorities } from "@/lib/search-demand-priorities";
 import { getCurrentSite } from "@/lib/sites";
 import type { SiteKey } from "@/lib/types";
@@ -79,6 +80,7 @@ export default async function HomePage() {
   const guides = siteGuides(site.key);
   const tools = siteTools(site.key);
   const demandPriorities = siteSearchDemandPriorities(site.key);
+  const decisionModules = siteDecisionModules(site.key);
   const priorityPaths = demandPriorities.map((item) => item.path);
   const featuredRoundups = demandLedSelection(
     roundups,
@@ -145,6 +147,7 @@ export default async function HomePage() {
           </div>
         </section>
       ) : null}
+      <DecisionModules modules={decisionModules} />
       <section className="section bg-white" id="reviews">
         <div className="shell">
           <div className="max-w-2xl">

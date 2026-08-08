@@ -1,6 +1,7 @@
 import { ArrowRight, CheckCircle2, Menu, Scale, Search, ShieldCheck } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import type { SiteDecisionModule } from "@/lib/site-decision-modules";
 import type { SiteConfig } from "@/lib/sites";
 import type { Product, Roundup } from "@/lib/types";
 
@@ -150,8 +151,8 @@ export function Hero({ site }: { site: SiteConfig }) {
 
 export function TrustBar() {
   const items = [
-    { icon: Search, label: "Built around real buying situations" },
-    { icon: Scale, label: "Trade-offs before checkout" },
+    { icon: Search, label: "Independent, research-backed buying guidance" },
+    { icon: Scale, label: "Exact model, compatibility, and retailer checks" },
     { icon: ShieldCheck, label: "Affiliate links clearly disclosed" },
   ];
 
@@ -166,6 +167,48 @@ export function TrustBar() {
         ))}
       </div>
     </div>
+  );
+}
+
+export function DecisionModules({ modules }: { modules: SiteDecisionModule[] }) {
+  if (!modules.length) return null;
+
+  return (
+    <section className="section bg-white" aria-labelledby="decision-modules-heading">
+      <div className="shell">
+        <div className="max-w-3xl">
+          <p className="eyebrow">Explore a complete setup</p>
+          <h2 className="mt-3 text-3xl font-black sm:text-4xl" id="decision-modules-heading">Build the whole decision, not just a product list.</h2>
+          <p className="mt-4 leading-8 text-[var(--muted)]">
+            Each module connects products, comparisons, and practical checks around one real job so you can rule out the wrong fit earlier.
+          </p>
+        </div>
+        <div className="mt-8 grid gap-5 lg:grid-cols-2">
+          {modules.map((module) => (
+            <article className="panel p-6" key={module.slug}>
+              <p className="eyebrow">{module.eyebrow}</p>
+              <h3 className="mt-3 text-2xl font-black">{module.title}</h3>
+              <p className="mt-3 leading-7 text-[var(--muted)]">{module.description}</p>
+              <nav className="mt-6" aria-label={`${module.title} buying paths`}>
+                <ul className="grid gap-3">
+                  {module.links.map((link) => (
+                    <li key={link.href}>
+                      <Link className="block rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-4 transition hover:border-[var(--brand)] hover:bg-white" href={link.href}>
+                        <span className="flex items-start justify-between gap-3 font-bold text-[var(--brand-strong)]">
+                          <span>{link.label}</span>
+                          <span aria-hidden="true">→</span>
+                        </span>
+                        <span className="mt-1 block text-sm leading-6 text-[var(--muted)]">{link.note}</span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }
 

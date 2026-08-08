@@ -5,8 +5,9 @@ import { costumeGuides } from "@/lib/costume-content";
 import { getCostumeCatalogStats, listCuratedCostumeProducts, listIndexableCostumeProducts, type CostumeCatalogCategory, type CostumeCatalogFilters } from "@/lib/costume-catalog";
 import { costumeHalloweenSlugs } from "@/lib/costume-halloween";
 import { costumeHalloweenIdeas } from "@/lib/costume-halloween-ideas";
+import { siteDecisionModules } from "@/lib/site-decision-modules";
 import { CostumeCatalogCard, CostumeCatalogExplorer } from "./CostumeCatalog";
-import { Hero, TrustBar } from "./LayoutParts";
+import { DecisionModules, Hero, TrustBar } from "./LayoutParts";
 
 async function CostumeCatalogSnapshot() {
   const stats = await getCostumeCatalogStats();
@@ -47,6 +48,7 @@ export async function CostumeHome({ site }: { site: SiteConfig }) {
     <main>
       <Hero site={site} />
       <TrustBar />
+      <DecisionModules modules={siteDecisionModules("costume")} />
       <CostumeCatalogSnapshot />
       <section className="border-b border-[#4a2b56] bg-[#1a1023] text-white">
         <div className="shell flex flex-col gap-5 py-7 sm:flex-row sm:items-center sm:justify-between">

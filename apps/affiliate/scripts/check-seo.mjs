@@ -279,6 +279,77 @@ const publishedRoutePaths = new Set(
     .filter((entry) => entry.status === "published")
     .map((entry) => `${entry.site}:${({ product: "/reviews", guide: "/guides", roundup: "/best", tool: "/tools" })[entry.kind]}/${entry.slug}`),
 );
+const moduleFile = path.join(libDir, "site-decision-modules.ts");
+const moduleSource = ts.createSourceFile(
+  moduleFile,
+  fs.readFileSync(moduleFile, "utf8"),
+  ts.ScriptTarget.Latest,
+  true,
+  ts.ScriptKind.TS,
+);
+const decisionModules = [];
+moduleSource.statements.forEach((statement) => {
+  if (!ts.isVariableStatement(statement)) return;
+  statement.declarationList.declarations.forEach((declaration) => {
+    if (
+      !ts.isIdentifier(declaration.name)
+      || declaration.name.text !== "decisionModules"
+      || !declaration.initializer
+      || !ts.isArrayLiteralExpression(declaration.initializer)
+    ) return;
+    declaration.initializer.elements.forEach((element) => {
+      if (!ts.isObjectLiteralExpression(element)) return;
+      const props = properties(element);
+      decisionModules.push({
+        site: stringValue(props.get("site")),
+        slug: stringValue(props.get("slug")),
+        eyebrow: stringValue(props.get("eyebrow")),
+        title: stringValue(props.get("title")),
+        description: stringValue(props.get("description")),
+        links: objectArrayProperties(props.get("links")).map((link) => ({
+          href: stringValue(link.get("href")),
+          label: stringValue(link.get("label")),
+          note: stringValue(link.get("note")),
+        })),
+      });
+    });
+  });
+});
+if (decisionModules.length !== 12) {
+  errors.push(`Site decision-module registry must contain exactly 12 modules; found ${decisionModules.length}`);
+}
+const moduleKeys = new Set();
+const moduleCounts = new Map();
+for (const decisionModule of decisionModules) {
+  const key = `${decisionModule.site}:${decisionModule.slug}`;
+  if (moduleKeys.has(key)) errors.push(`Duplicate site decision module ${key}`);
+  moduleKeys.add(key);
+  moduleCounts.set(decisionModule.site, (moduleCounts.get(decisionModule.site) ?? 0) + 1);
+  if (!decisionModule.eyebrow || !decisionModule.title || !decisionModule.description) {
+    errors.push(`Site decision module ${key} is missing display copy`);
+  }
+  if (decisionModule.links.length !== 3) {
+    errors.push(`Site decision module ${key} must contain exactly 3 verified paths`);
+  }
+  const hrefs = new Set();
+  for (const link of decisionModule.links) {
+    if (!link.href || !link.label || !link.note) {
+      errors.push(`Site decision module ${key} contains an incomplete path`);
+      continue;
+    }
+    if (hrefs.has(link.href)) errors.push(`Site decision module ${key} repeats ${link.href}`);
+    hrefs.add(link.href);
+    if (!publishedRoutePaths.has(`${decisionModule.site}:${link.href}`)) {
+      errors.push(`Site decision module ${key} references missing published path ${link.href}`);
+    }
+  }
+}
+for (const site of ["network", "smarthome", "homeoffice", "baby", "pet", "costume"]) {
+  if (moduleCounts.get(site) !== 2) errors.push(`${site} must expose exactly 2 site decision modules`);
+}
+for (const site of ["style"]) {
+  if (moduleCounts.has(site)) errors.push(`${site} must remain outside the current decision-module expansion`);
+}
 for (const opportunity of searchOpportunities) {
   const key = `${opportunity.site}:${opportunity.kind}:${opportunity.slug}`;
   if (opportunityKeys.has(key)) errors.push(`Duplicate search opportunity ${key}`);
