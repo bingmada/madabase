@@ -9,7 +9,8 @@ const publicDir = path.join(workspaceDir, "public");
 const errors = [];
 const warnings = [];
 const entries = [];
-const productFactoryNames = new Set(["catalogProduct", "expandedProduct"]);
+const productFactoryNames = new Set(["catalogProduct", "expandedProduct", "exactProduct"]);
+const guideFactoryNames = new Set(["guide"]);
 const allowedOfferHosts = new Set([
   "amzn.to",
   "www.amazon.com",
@@ -133,6 +134,15 @@ function visit(sourceFile, node) {
     ts.isObjectLiteralExpression(node.arguments[0])
   ) {
     addEntry(sourceFile, node.arguments[0], "product", node.expression.text);
+  }
+
+  if (
+    ts.isCallExpression(node) &&
+    ts.isIdentifier(node.expression) &&
+    guideFactoryNames.has(node.expression.text) &&
+    ts.isObjectLiteralExpression(node.arguments[0])
+  ) {
+    addEntry(sourceFile, node.arguments[0], "guide", node.expression.text);
   }
 
   if (ts.isObjectLiteralExpression(node)) {

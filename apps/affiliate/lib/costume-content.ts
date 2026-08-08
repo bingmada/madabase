@@ -173,6 +173,7 @@ export const costumeGuides: Guide[] = [
     category: "props-animatronics",
     updatedAt: "July 22, 2026",
     relatedRoundups: [],
+    relatedGuides: ["halloween-fog-machine-lighting-power-guide", "costume-prop-care-and-storage-guide"],
     sections: [
       { heading: "Measure every part of the route", body: "Box dimensions, doors, lifts, stairs, turns, ceilings, and final footprint can all block an otherwise suitable prop. Record the narrowest point before ordering." },
       { heading: "Separate power from placement", body: "Confirm voltage, adapter, cord length, extension-cord limits, battery needs, and whether the effect needs continuous power. Keep cables away from guest paths." },
@@ -187,6 +188,7 @@ export const costumeGuides: Guide[] = [
     category: "masks-prosthetics",
     updatedAt: "July 22, 2026",
     relatedRoundups: [],
+    relatedGuides: ["special-effects-makeup-skin-contact-removal-guide", "wig-facial-hair-and-makeup-planning-guide"],
     sections: [
       { heading: "Visibility and breathing are fit features", body: "Check eye opening, peripheral view, ventilation, hearing, glasses compatibility, head measurement, and how quickly the piece can be removed." },
       { heading: "Identify every material that touches skin", body: "Latex, silicone, foam, adhesives, paints, removers, and cleaning products have different requirements. Follow manufacturer instructions and do not use a material when its identity is unclear." },
@@ -203,6 +205,7 @@ export const costumeGuides: Guide[] = [
     relatedRoundups: [],
     relatedGuides: [
       "mask-and-prosthetic-fit-materials-guide",
+      "special-effects-makeup-skin-contact-removal-guide",
       "costume-sizing-measurements-and-returns",
       "costume-prop-care-and-storage-guide",
     ],

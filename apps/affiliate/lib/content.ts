@@ -71,6 +71,10 @@ import {
   august2026ExpansionProducts,
   august2026ExpansionRoundups,
 } from "./august-2026-product-expansion-content";
+import {
+  secondRoundAugust2026Guides,
+  secondRoundAugust2026Products,
+} from "./second-round-august-2026-content";
 
 export const products: Product[] = [
   {
@@ -2342,6 +2346,8 @@ roundups.push(...gscPriorityRoundups);
 guides.push(...gscPriorityGuides);
 products.push(...august2026ExpansionProducts);
 roundups.push(...august2026ExpansionRoundups);
+products.push(...secondRoundAugust2026Products);
+guides.push(...secondRoundAugust2026Guides);
 roundups.push(...aggressivePortfolioRoundups);
 guides.push(...aggressivePortfolioGuides);
 guides.push(...costumeGuides);

@@ -155,6 +155,20 @@ function buildInventory() {
     }
 
     function visit(node) {
+      if (
+        ts.isCallExpression(node) &&
+        ts.isIdentifier(node.expression) &&
+        node.expression.text === "exactProduct" &&
+        ts.isObjectLiteralExpression(node.arguments[0])
+      ) {
+        const input = node.arguments[0];
+        const slug = literalText(propertyValue(input, "slug"));
+        const site = literalText(propertyValue(input, "site"));
+        const expectedAsin = literalText(propertyValue(input, "asin"));
+        const url = fallbackAmazonUrl(expectedAsin);
+        if (url && slug) add(url, { slug, site, expectedAsin });
+      }
+
       if (ts.isObjectLiteralExpression(node)) {
         const slug = literalText(propertyValue(node, "slug"));
         const site = literalText(propertyValue(node, "site"));

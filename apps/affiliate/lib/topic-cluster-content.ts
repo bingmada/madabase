@@ -67,10 +67,10 @@ export const topicClusterGuides: Guide[] = [
   {
     site: "network",
     slug: "deco-be63-be67-two-pack-vs-three-pack",
-    title: "Deco BE63 2-Pack vs 3-Pack: How Many Mesh Nodes Do You Need?",
-    dek: "Choose a Deco BE63 two-pack or three-pack from floors, walls, Ethernet paths, and measured weak zones; compare BE67 only after the node count is clear.",
+    title: "Deco BE63 2-Pack vs 3-Pack: Which Pack Do You Need?",
+    dek: "Start with two Deco nodes when one satellite covers the measured weak zone; buy three only for a separate floor or wing with a strong wireless or Ethernet path.",
     category: "wifi",
-    updatedAt: "July 18, 2026",
+    updatedAt: "August 8, 2026",
     image: "/images/affiliate/network-tp-link-deco-be63-wifi-7-mesh-realistic.webp",
     imageAlt: "Three Wi-Fi 7 mesh nodes placed on a home floor plan for a two-pack versus three-pack decision",
     relatedProducts: ["tp-link-deco-be63-wifi-7-mesh", "tp-link-deco-be67-wifi-7-mesh"],

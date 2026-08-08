@@ -341,10 +341,10 @@ export const expansionGuides: Guide[] = [
   {
     site: "network",
     slug: "deco-be63-ethernet-backhaul-setup",
-    title: "Deco BE63 Ethernet Backhaul Setup: Ports, Switches & Loop Checks",
-    dek: "Connect Deco BE63 nodes in the correct order, choose router or access-point mode, check switch paths, and avoid Ethernet loops before blaming Wi-Fi 7.",
+    title: "Deco BE63 Ethernet Backhaul: 2.5Gbps Switch Setup",
+    dek: "Keep Deco BE63 backhaul at 2.5Gbps by checking every port, switch, wall jack, cable, topology, and loop before blaming Wi-Fi 7.",
     category: "wifi",
-    updatedAt: "July 13, 2026",
+    updatedAt: "August 8, 2026",
     relatedProducts: ["tp-link-deco-be63-wifi-7-mesh"],
     relatedRoundups: ["best-mesh-wifi-for-apartments-and-homes", "best-wired-networking-upgrades"],
     sources: [
