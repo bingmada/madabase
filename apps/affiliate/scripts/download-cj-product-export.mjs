@@ -20,7 +20,6 @@ const missing = [
   ["CJ_SFTP_USERNAME", username],
   ["CJ_SFTP_PASSWORD", password],
   ["CJ_PRODUCT_EXPORT_SUBSCRIPTION_ID", subscriptionId],
-  ["CJ_PRODUCT_EXPORT_FILENAME", filename],
   ["CJ_PRODUCT_EXPORT_PATH", localPath],
   ["CJ_SFTP_HOST_KEY_SHA256", configuredFingerprint],
 ].filter(([, value]) => !value);
@@ -31,7 +30,9 @@ if (missing.length) {
 }
 if (!Number.isInteger(port) || port < 1 || port > 65535) throw new Error("CJ_SFTP_PORT must be a valid TCP port");
 if (!/^[0-9]+$/.test(subscriptionId)) throw new Error("CJ_PRODUCT_EXPORT_SUBSCRIPTION_ID must be numeric");
-if (!filename || path.posix.basename(filename) !== filename) throw new Error("CJ_PRODUCT_EXPORT_FILENAME must be a filename, not a path");
+if (filename && filename !== "auto" && path.posix.basename(filename) !== filename) {
+  throw new Error("CJ_PRODUCT_EXPORT_FILENAME must be a filename, 'auto', or omitted");
+}
 
 function fingerprintHex(value) {
   const clean = value.trim();
@@ -44,7 +45,6 @@ function fingerprintHex(value) {
 }
 
 const expectedFingerprint = Buffer.from(fingerprintHex(configuredFingerprint), "hex");
-const remotePath = `/outgoing/productcatalog/${subscriptionId}/${filename}`;
 const partialPath = `${localPath}.part`;
 const connection = new Client();
 let downloadCompleted = false;
@@ -91,13 +91,38 @@ function openSftp() {
   });
 }
 
-function remoteStat(sftp) {
+function remoteDirectory(sftp) {
+  const directory = `/outgoing/productcatalog/${subscriptionId}`;
+  return new Promise((resolve, reject) => {
+    sftp.readdir(directory, (error, entries) => {
+      if (error) reject(error);
+      else resolve({ directory, entries });
+    });
+  });
+}
+
+async function resolveRemotePath(sftp) {
+  if (filename && filename !== "auto") {
+    return { filename, remotePath: `/outgoing/productcatalog/${subscriptionId}/${filename}` };
+  }
+
+  const { directory, entries } = await remoteDirectory(sftp);
+  const candidates = entries
+    .filter((entry) => entry?.filename && !entry.filename.startsWith(".") && entry.attrs?.isFile?.())
+    .sort((left, right) => (right.attrs?.mtime ?? 0) - (left.attrs?.mtime ?? 0)
+      || right.filename.localeCompare(left.filename));
+  if (candidates.length === 0) throw new Error(`No CJ product export found in ${directory}`);
+  const selected = candidates[0].filename;
+  return { filename: selected, remotePath: `${directory}/${selected}` };
+}
+
+function remoteStat(sftp, remotePath) {
   return new Promise((resolve, reject) => {
     sftp.stat(remotePath, (error, stats) => error ? reject(error) : resolve(stats));
   });
 }
 
-function fastGet(sftp) {
+function fastGet(sftp, remotePath) {
   return new Promise((resolve, reject) => {
     sftp.fastGet(remotePath, partialPath, { concurrency: 16, chunkSize: 64 * 1024 }, (error) => error ? reject(error) : resolve());
   });
@@ -108,9 +133,10 @@ try {
   fs.rmSync(partialPath, { force: true });
   await connect();
   const sftp = await openSftp();
-  const stats = await remoteStat(sftp);
-  if (!stats.isFile()) throw new Error(`CJ export is not a regular file: ${remotePath}`);
-  await fastGet(sftp);
+  const selected = await resolveRemotePath(sftp);
+  const stats = await remoteStat(sftp, selected.remotePath);
+  if (!stats.isFile()) throw new Error(`CJ export is not a regular file: ${selected.remotePath}`);
+  await fastGet(sftp, selected.remotePath);
   const localStats = fs.statSync(partialPath);
   if (localStats.size !== stats.size) {
     throw new Error(`CJ export size mismatch: expected ${stats.size}, received ${localStats.size}`);
@@ -118,7 +144,7 @@ try {
   fs.chmodSync(partialPath, 0o600);
   fs.renameSync(partialPath, localPath);
   downloadCompleted = true;
-  console.log(JSON.stringify({ ok: true, subscriptionId, bytes: localStats.size, filename }));
+  console.log(JSON.stringify({ ok: true, subscriptionId, bytes: localStats.size, filename: selected.filename }));
 } catch (error) {
   fs.rmSync(partialPath, { force: true });
   console.error(error instanceof Error ? error.message : error);
