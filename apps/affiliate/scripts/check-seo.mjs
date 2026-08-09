@@ -212,6 +212,11 @@ if (amazonFamilyProducts.length !== expectedAmazonFamilyTotal) {
 }
 const amazonFamilyKeys = new Set();
 const amazonFamilyAsins = new Set();
+const existingEditorialAsins = new Set(
+  fs.readdirSync(libDir)
+    .filter((name) => name.endsWith(".ts") && name !== "amazon-family-products.ts")
+    .flatMap((name) => [...fs.readFileSync(path.join(libDir, name), "utf8").matchAll(/\b(B[A-Z0-9]{9})\b/g)].map((match) => match[1])),
+);
 for (const site of amazonExpansionSites) {
   const expectedFamilies = quadrupleExpansionModule.quadrupleExpansionFamilies.filter((family) => family.site === site);
   const siteProducts = amazonFamilyProducts.filter((product) => product.site === site);
@@ -234,6 +239,7 @@ for (const product of amazonFamilyProducts) {
   if (amazonFamilyKeys.has(familyKey)) errors.push(`Duplicate Amazon family listing ${familyKey}`);
   if (!/^[A-Z0-9]{10}$/.test(product.asin ?? "")) errors.push(`Invalid ASIN for Amazon family listing ${familyKey}`);
   if (amazonFamilyAsins.has(product.asin)) errors.push(`Amazon family ASIN ${product.asin} is reused`);
+  if (existingEditorialAsins.has(product.asin)) errors.push(`Amazon family ASIN ${product.asin} duplicates an existing editorial product`);
   if (product.detailUrl !== `https://www.amazon.com/dp/${product.asin}`) errors.push(`Unexpected Amazon detail URL for ${familyKey}`);
   if (!product.title?.trim() || !product.brand?.trim() || Number(product.relevanceScore) < 5) errors.push(`Incomplete Amazon family listing ${familyKey}`);
   if (Number.isNaN(Date.parse(product.verifiedAt))) errors.push(`Invalid Amazon verification date for ${familyKey}`);

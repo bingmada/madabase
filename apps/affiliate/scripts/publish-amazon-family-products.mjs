@@ -5,6 +5,7 @@ const root = path.resolve(new URL("../../..", import.meta.url).pathname);
 const defaultInputPath = path.join(root, "docs/affiliate-amazon-family-products-2026-08-09.json");
 const defaultOutputPath = path.join(root, "apps/affiliate/config/amazon-family-products.json");
 const expectedCounts = { network: 27, smarthome: 30, homeoffice: 33, baby: 24, pet: 30 };
+const contentDirectory = path.join(root, "apps/affiliate/lib");
 
 function valueFor(name) {
   const index = process.argv.indexOf(name);
@@ -19,6 +20,11 @@ if (report.failures?.length) throw new Error(`Discovery report still contains ${
 
 const seenFamilies = new Set();
 const seenAsins = new Set();
+const existingAsins = new Set(
+  fs.readdirSync(contentDirectory)
+    .filter((name) => name.endsWith(".ts") && name !== "amazon-family-products.ts")
+    .flatMap((name) => [...fs.readFileSync(path.join(contentDirectory, name), "utf8").matchAll(/\b(B[A-Z0-9]{9})\b/g)].map((match) => match[1])),
+);
 const products = report.products.map((product) => {
   const expectedCount = expectedCounts[product.site];
   if (!expectedCount) throw new Error(`Unsupported product site: ${product.site}`);
@@ -26,6 +32,7 @@ const products = report.products.map((product) => {
   if (seenFamilies.has(familyKey)) throw new Error(`Duplicate product family: ${familyKey}`);
   if (!/^[A-Z0-9]{10}$/.test(product.asin ?? "")) throw new Error(`Invalid ASIN for ${familyKey}`);
   if (seenAsins.has(product.asin)) throw new Error(`ASIN ${product.asin} is reused by multiple expansion families`);
+  if (existingAsins.has(product.asin)) throw new Error(`ASIN ${product.asin} already belongs to an existing editorial product`);
   if (product.detailUrl !== `https://www.amazon.com/dp/${product.asin}`) throw new Error(`Unexpected detail URL for ${familyKey}`);
   if (!product.title?.trim() || !product.brand?.trim()) throw new Error(`Missing listing identity for ${familyKey}`);
   if (Number.isNaN(Date.parse(product.verifiedAt))) throw new Error(`Invalid verification date for ${familyKey}`);
