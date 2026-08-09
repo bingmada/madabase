@@ -161,6 +161,68 @@ for (const filename of fs.readdirSync(libDir).filter((name) => name.endsWith(".t
   visit(sourceFile, sourceFile);
 }
 
+const quadrupleExpansionFile = path.join(libDir, "quadruple-expansion-content.ts");
+const quadrupleExpansionSource = fs.readFileSync(quadrupleExpansionFile, "utf8");
+const quadrupleExpansionJavascript = ts.transpileModule(quadrupleExpansionSource, {
+  compilerOptions: {
+    module: ts.ModuleKind.ESNext,
+    target: ts.ScriptTarget.ES2022,
+  },
+  fileName: quadrupleExpansionFile,
+}).outputText;
+const quadrupleExpansionModule = await import(
+  `data:text/javascript;base64,${Buffer.from(quadrupleExpansionJavascript).toString("base64")}`
+);
+const expectedExpansionFamilies = {
+  network: 27,
+  smarthome: 30,
+  homeoffice: 33,
+  baby: 24,
+  pet: 30,
+  costume: 10,
+};
+const expectedExpansionGuides = {
+  network: 108,
+  smarthome: 150,
+  homeoffice: 165,
+  baby: 144,
+  pet: 150,
+  costume: 40,
+};
+for (const [site, expected] of Object.entries(expectedExpansionFamilies)) {
+  const actual = quadrupleExpansionModule.quadrupleExpansionFamilies.filter((family) => family.site === site).length;
+  if (actual !== expected) errors.push(`Quadruple expansion must contain ${expected} ${site} families; found ${actual}`);
+}
+for (const [site, expected] of Object.entries(expectedExpansionGuides)) {
+  const siteGuides = quadrupleExpansionModule.quadrupleExpansionGuides.filter((guide) => guide.site === site);
+  if (siteGuides.length !== expected) errors.push(`Quadruple expansion must generate ${expected} ${site} guides; found ${siteGuides.length}`);
+  const familyHubCount = siteGuides.filter((guide) => guide.familyRole === "buying").length;
+  if (familyHubCount !== expectedExpansionFamilies[site]) {
+    errors.push(`Quadruple expansion must generate one ${site} family hub per family; found ${familyHubCount}`);
+  }
+}
+for (const guide of quadrupleExpansionModule.quadrupleExpansionGuides) {
+  entries.push({
+    site: guide.site,
+    slug: guide.slug,
+    kind: "guide",
+    title: guide.title,
+    status: guide.publicationStatus ?? "published",
+    hasUpdateDate: Boolean(guide.updatedAt),
+    image: guide.image,
+    productSlugs: [],
+    relatedProducts: guide.relatedProducts ?? [],
+    relatedRoundups: guide.relatedRoundups ?? [],
+    relatedGuides: guide.relatedGuides ?? [],
+    offerUrls: [],
+    offerMerchants: [],
+    evidenceMode: undefined,
+    researchNote: undefined,
+    externalTests: [],
+    location: "quadruple-expansion-content.ts:generated",
+  });
+}
+
 const routeKeys = new Map();
 const titleKeys = new Map();
 for (const entry of entries) {

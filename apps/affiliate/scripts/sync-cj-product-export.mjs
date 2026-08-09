@@ -13,6 +13,7 @@ const imagePermissionRef = (process.env.CJ_PRODUCT_IMAGE_PERMISSION_REF
   ?? "https://developers.cj.com/docs/data-imports/product-feeds (accessed 2026-07-22; CJ Product Feed image-link and additional-image-link publisher-use guidance)").trim();
 const dryRun = process.argv.includes("--dry-run") || process.env.CJ_SYNC_DRY_RUN === "1";
 const selectionLimit = Number(process.env.CJ_SYNC_LIMIT || 1000);
+const maxCatalogIncrement = 1000;
 
 const missing = [
   ["CJ_PRODUCT_EXPORT_PATH", exportPath],
@@ -412,6 +413,23 @@ const client = await pool.connect();
 const runId = crypto.randomUUID();
 
 try {
+  const currentCatalogResult = await client.query(
+    `SELECT COUNT(*)::integer AS count
+     FROM "MerchantProduct" product
+     JOIN "Merchant" merchant ON merchant."id" = product."merchantId"
+     WHERE merchant."slug" = 'abracadabra-nyc' AND merchant."advertiserCid" = $1
+       AND product."softRetiredAt" IS NULL`,
+    [merchantCid],
+  );
+  const currentCatalogSize = currentCatalogResult.rows[0]?.count ?? 0;
+  const largestAllowedCatalog = currentCatalogSize === 0
+    ? maxCatalogIncrement
+    : currentCatalogSize + maxCatalogIncrement;
+  if (selectionLimit > largestAllowedCatalog) {
+    throw new Error(
+      `CJ_SYNC_LIMIT ${selectionLimit} would grow the active catalog from ${currentCatalogSize} by more than ${maxCatalogIncrement}; run one bounded 1,000-product step at a time`,
+    );
+  }
   await client.query("BEGIN");
   const merchantResult = await client.query(
     `INSERT INTO "Merchant" ("id", "slug", "name", "network", "advertiserCid", "createdAt", "updatedAt")
@@ -521,7 +539,16 @@ try {
     [runId, insertedOrUpdated, retiredResult.rowCount ?? 0],
   );
   await client.query("COMMIT");
-  console.log(JSON.stringify({ ok: true, runId, seen: normalized.length, rejected, retired: retiredResult.rowCount ?? 0 }));
+  console.log(JSON.stringify({
+    ok: true,
+    runId,
+    previousCatalogSize: currentCatalogSize,
+    targetCatalogSize: selectionLimit,
+    catalogIncrement: Math.max(0, selectionLimit - currentCatalogSize),
+    seen: normalized.length,
+    rejected,
+    retired: retiredResult.rowCount ?? 0,
+  }));
 } catch (error) {
   await client.query("ROLLBACK");
   console.error(error instanceof Error ? error.message : error);

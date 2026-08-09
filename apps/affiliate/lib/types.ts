@@ -111,6 +111,8 @@ export type Guide = Publishable & {
   relatedRoundups: string[];
   relatedProducts?: string[];
   relatedGuides?: string[];
+  familySlug?: string;
+  familyRole?: "buying" | "comparison" | "fit" | "ownership" | "workflow" | "safety";
 };
 
 export type Tool = Publishable & {

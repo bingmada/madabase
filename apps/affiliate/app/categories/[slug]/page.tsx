@@ -182,7 +182,7 @@ export default async function CategoryPage({
   );
   const guides = prioritizeBySearchDemand(
     site.key,
-    siteGuides(site.key).filter((item) => item.category === slug),
+    siteGuides(site.key).filter((item) => item.category === slug && (!item.familySlug || item.familyRole === "buying")),
     (item) => `/guides/${item.slug}`,
   );
   const tools = siteTools(site.key).filter((item) => item.category === slug);

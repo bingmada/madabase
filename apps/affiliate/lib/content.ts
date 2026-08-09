@@ -1,4 +1,5 @@
 import type { Guide, Product, Roundup, SiteKey, Tool } from "./types";
+import { quadrupleExpansionGuides } from "./quadruple-expansion-content";
 import { applySiteAffiliateTracking } from "./affiliate-tracking";
 import {
   adjacentExpansionGuides,
@@ -2351,6 +2352,7 @@ guides.push(...secondRoundAugust2026Guides);
 roundups.push(...aggressivePortfolioRoundups);
 guides.push(...aggressivePortfolioGuides);
 guides.push(...costumeGuides);
+guides.push(...quadrupleExpansionGuides);
 
 const includeDrafts = process.env.AFFILIATE_INCLUDE_DRAFTS === "1";
 
