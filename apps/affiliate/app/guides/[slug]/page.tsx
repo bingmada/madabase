@@ -538,7 +538,15 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
                   <Link className="overflow-hidden rounded-md border border-[#e8d2b8] bg-white" href={`/products/${product.slug}`} key={product.slug}>
                     {product.authorizedImage ? (
                       <div className="relative aspect-square bg-[#f4ede3]">
-                        <Image alt={product.authorizedImage.altText ?? product.title} className="object-cover" fill sizes="(min-width: 1024px) 280px, 50vw" src={product.authorizedImage.url} />
+                        {/* This URL is rights-gated in PostgreSQL and may use an authorized merchant CDN outside Next's optimizer allowlist. */}
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          alt={product.authorizedImage.altText ?? product.title}
+                          className="absolute inset-0 h-full w-full bg-white object-contain"
+                          loading="lazy"
+                          referrerPolicy="no-referrer"
+                          src={product.authorizedImage.url}
+                        />
                       </div>
                     ) : null}
                     <div className="p-4">
