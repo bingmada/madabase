@@ -15,6 +15,13 @@ import type { SiteKey } from "@/lib/types";
 import { costumeHalloweenIdeas } from "@/lib/costume-halloween-ideas";
 import { findAmazonFamilyProduct } from "@/lib/amazon-family-products";
 import { amazonAsinAffiliateUrl } from "@/lib/affiliate-tracking";
+import {
+  isCostumeProductIndexable,
+  listCostumeCatalogProducts,
+  parseCostumeCatalogFilters,
+  type CostumeCatalogCategory,
+  type CostumeCatalogFeature,
+} from "@/lib/costume-catalog";
 
 type AdviceBlock = {
   checklist: string[];
@@ -152,6 +159,30 @@ function guideAdvice(siteKey: SiteKey, category: string) {
   };
 }
 
+function costumeFamilyCatalogSelection(familySlug: string, category: string) {
+  const selections: Record<string, { q?: string; audience?: "adult" | "kids"; feature?: CostumeCatalogFeature }> = {
+    "high-end-costumes": { feature: "premium-professional" },
+    "mascot-costumes": { q: "mascot" },
+    "historical-theatrical-costumes": { q: "theatrical", feature: "professional" },
+    "adult-costumes": { audience: "adult" },
+    "child-costumes": { audience: "kids" },
+    "costume-wigs": { q: "wig" },
+    "masks-and-masquerade": { q: "mask" },
+    "prosthetics-special-effects": { q: "prosthetic" },
+    "theatrical-face-body-makeup": { q: "makeup" },
+    "props-and-animatronics": { feature: "premium-professional" },
+  };
+  const selected = selections[familySlug] ?? {};
+  return parseCostumeCatalogFilters({}, {
+    q: selected.q ?? "",
+    category: category as CostumeCatalogCategory,
+    audience: selected.audience,
+    feature: selected.feature,
+    sort: "featured",
+    page: 1,
+  });
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const site = await getCurrentSite();
   const { slug } = await params;
@@ -183,13 +214,13 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
     ...siteGuides(site.key).filter((item) => item.slug !== guide.slug),
   ]
     .filter((item, index, items) => items.findIndex((candidate) => candidate.slug === item.slug) === index)
-    .slice(0, 4);
+    .slice(0, guide.familySlug ? 8 : 4);
   const topProduct = relatedProducts[0];
   const relatedRoundups = guide.relatedRoundups
     .map((roundupSlug) => findRoundup(site.key, roundupSlug))
     .filter((roundup): roundup is NonNullable<ReturnType<typeof findRoundup>> => Boolean(roundup));
   const topRoundup = relatedRoundups[0];
-  const directAnswer = guide.sections[0]?.body ?? advice.decision;
+  const directAnswer = guide.quickAnswer ?? guide.sections[0]?.body ?? advice.decision;
   const amazonFamilyProduct = guide.familySlug ? findAmazonFamilyProduct(site.key, guide.familySlug) : undefined;
   const amazonFamilyIdentity = amazonFamilyProduct ? {
     slug: `family-${amazonFamilyProduct.familySlug}-${amazonFamilyProduct.asin.toLowerCase()}`,
@@ -204,6 +235,11 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
     label: "Check this exact ASIN on Amazon",
     priceNote: `Confirm ASIN ${amazonFamilyProduct.asin}, exact model or variant, seller, availability, shipping, and returns before checkout.`,
   } : undefined;
+  const costumeCatalogProducts = site.key === "costume" && guide.familySlug
+    ? (await listCostumeCatalogProducts(costumeFamilyCatalogSelection(guide.familySlug, guide.category))).items
+      .filter(isCostumeProductIndexable)
+      .slice(0, 6)
+    : [];
 
   if (site.key === "style") {
     return (
@@ -260,6 +296,13 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
           <h2 className="mt-2 text-xl font-bold" id="guide-quick-answer">The practical answer</h2>
           <p className="mt-3 leading-7 text-[var(--text)]">{directAnswer}</p>
         </section>
+        {guide.searchQuestion ? (
+          <section className="mt-8 rounded-md border border-[var(--brand)] bg-[var(--brand-soft)] p-5" aria-labelledby="guide-search-question">
+            <p className="eyebrow">Independent search question</p>
+            <h2 className="mt-2 text-2xl font-bold" id="guide-search-question">{guide.searchQuestion}</h2>
+            {guide.governance ? <p className="mt-3 leading-7 text-[var(--muted)]">{guide.governance.distinctFrom}</p> : null}
+          </section>
+        ) : null}
         {searchOpportunity ? <SearchOpportunityBlock opportunity={searchOpportunity} /> : null}
         <SearchOpportunityBacklinks site={site.key} kind="guide" slug={slug} />
         <BaseMarketEditionLinks site={site} basePath={`/guides/${slug}`} />
@@ -301,7 +344,11 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
                 src={guide.image}
               />
             </div>
-            {guide.image.includes("-realistic.webp") ? (
+            {guide.familySlug ? (
+              <figcaption className="mt-2 text-xs leading-5 text-[var(--muted)]">
+                Original editorial image for category, fit, and use context. It is not a retailer image, a hands-on test photo, or a promise that the linked product has the same appearance or configuration.
+              </figcaption>
+            ) : guide.image.includes("-realistic.webp") ? (
               <figcaption className="mt-2 text-xs leading-5 text-[var(--muted)]">
                 Editorial image for visual context; device appearance and configuration can vary by model and region.
               </figcaption>
@@ -389,7 +436,36 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             </ul>
           </section>
         ) : null}
-        <section className="mt-10">
+        {guide.communityEvidence?.length ? (
+          <section className="mt-10 rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-5" aria-labelledby="community-evidence">
+            <p className="eyebrow">Public owner context</p>
+            <h2 className="mt-3 text-2xl font-bold" id="community-evidence">What owners are asking</h2>
+            <p className="mt-3 max-w-3xl leading-7 text-[var(--muted)]">
+              Community discussions help surface installation, fit, maintenance, and failure questions. They are anecdotal context, not product specifications or a substitute for current instructions.
+            </p>
+            <ul className="mt-5 space-y-4">
+              {guide.communityEvidence.map((item) => (
+                <li className="rounded-md border border-[var(--border)] bg-white p-4" key={item.url}>
+                  <p className="text-xs font-bold uppercase tracking-[0.14em] text-[var(--muted)]">{item.sourceName}</p>
+                  <a className="mt-2 block font-bold text-[var(--brand-strong)] underline-offset-4 hover:underline" href={item.url} rel="noopener noreferrer" target="_blank">
+                    {item.title}
+                  </a>
+                  <p className="mt-2 text-sm leading-6 text-[var(--muted)]">{item.note}</p>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
+        {guide.editorialMethod?.length ? (
+          <section className="mt-10 rounded-md border border-[var(--border)] bg-white p-5" aria-labelledby="editorial-method">
+            <p className="eyebrow">How this page was governed</p>
+            <h2 className="mt-3 text-2xl font-bold" id="editorial-method">Page-specific editorial method</h2>
+            <ol className="mt-4 space-y-3 text-sm leading-6 text-[var(--muted)]">
+              {guide.editorialMethod.map((item, index) => <li key={item}><span className="mr-2 font-bold text-[var(--text)]">{index + 1}.</span>{item}</li>)}
+            </ol>
+          </section>
+        ) : null}
+        {!guide.familySlug ? <section className="mt-10">
           <p className="eyebrow">Buying framework</p>
           <h2 className="mt-3 text-2xl font-bold">What to check before you choose</h2>
           <div className="mt-5 grid gap-6 md:grid-cols-3">
@@ -422,7 +498,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             <h3 className="font-bold">Decision rule</h3>
             <p className="mt-2 leading-7 text-[var(--muted)]">{advice.decision}</p>
           </div>
-        </section>
+        </section> : null}
         <div className="mt-10 grid gap-4 sm:grid-cols-2">
           {relatedGuides.map((item) => (
             <Link className="panel p-5" href={`/guides/${item.slug}`} key={item.slug}>
@@ -452,6 +528,31 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             ) : null;
           })}
         </div>
+        {site.key === "costume" ? (
+          <section className="mt-10 rounded-md border border-[#d7b58a] bg-[#fff8ee] p-6" aria-labelledby="costume-family-products">
+            <p className="eyebrow">Live Costume catalog</p>
+            <h2 className="mt-3 text-2xl font-bold" id="costume-family-products">Verified products for this buying question</h2>
+            {costumeCatalogProducts.length ? (
+              <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {costumeCatalogProducts.map((product) => (
+                  <Link className="overflow-hidden rounded-md border border-[#e8d2b8] bg-white" href={`/products/${product.slug}`} key={product.slug}>
+                    {product.authorizedImage ? (
+                      <div className="relative aspect-square bg-[#f4ede3]">
+                        <Image alt={product.authorizedImage.altText ?? product.title} className="object-cover" fill sizes="(min-width: 1024px) 280px, 50vw" src={product.authorizedImage.url} />
+                      </div>
+                    ) : null}
+                    <div className="p-4">
+                      <h3 className="font-bold leading-6">{product.title}</h3>
+                      <p className="mt-2 text-sm leading-6 text-[var(--muted)]">Active CJ catalog identity, authorized image, verified link, and published editorial record.</p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            ) : (
+              <p className="mt-4 leading-7 text-[var(--muted)]">No product is shown when the live database cannot confirm an active link, authorized image, availability, and published editorial record for this exact family.</p>
+            )}
+          </section>
+        ) : null}
         {site.key === "costume" ? (
           <section className="mt-10 rounded-md border border-[#d7b58a] bg-[#fff8ee] p-6">
             <p className="eyebrow">Put the guide into a complete Halloween story</p>

@@ -163,14 +163,27 @@ for (const filename of fs.readdirSync(libDir).filter((name) => name.endsWith(".t
 }
 
 const quadrupleExpansionFile = path.join(libDir, "quadruple-expansion-content.ts");
+const quadrupleEditorialBriefFile = path.join(libDir, "quadruple-family-editorial.ts");
+const quadrupleCommunityEvidenceFile = path.join(workspaceDir, "config", "quadruple-community-evidence.json");
 const quadrupleExpansionSource = fs.readFileSync(quadrupleExpansionFile, "utf8");
-const quadrupleExpansionJavascript = ts.transpileModule(quadrupleExpansionSource, {
+const quadrupleEditorialBriefJavascript = ts.transpileModule(fs.readFileSync(quadrupleEditorialBriefFile, "utf8"), {
+  compilerOptions: {
+    module: ts.ModuleKind.ESNext,
+    target: ts.ScriptTarget.ES2022,
+  },
+  fileName: quadrupleEditorialBriefFile,
+}).outputText;
+const quadrupleCommunityEvidenceData = JSON.parse(fs.readFileSync(quadrupleCommunityEvidenceFile, "utf8"));
+const quadrupleExpansionContentJavascript = ts.transpileModule(quadrupleExpansionSource, {
   compilerOptions: {
     module: ts.ModuleKind.ESNext,
     target: ts.ScriptTarget.ES2022,
   },
   fileName: quadrupleExpansionFile,
-}).outputText;
+}).outputText
+  .replace(/^import communityEvidenceData[^;]+;\n/m, "")
+  .replace(/^import \{ findFamilyEditorialBrief \}[^;]+;\n/m, "");
+const quadrupleExpansionJavascript = `${quadrupleEditorialBriefJavascript}\nconst communityEvidenceData = ${JSON.stringify(quadrupleCommunityEvidenceData)};\n${quadrupleExpansionContentJavascript}`;
 const quadrupleExpansionModule = await import(
   `data:text/javascript;base64,${Buffer.from(quadrupleExpansionJavascript).toString("base64")}`
 );
@@ -201,6 +214,27 @@ for (const [site, expected] of Object.entries(expectedExpansionGuides)) {
   if (familyHubCount !== expectedExpansionFamilies[site]) {
     errors.push(`Quadruple expansion must generate one ${site} family hub per family; found ${familyHubCount}`);
   }
+}
+if (quadrupleExpansionModule.quadrupleExpansionGuides.length !== 757) {
+  errors.push(`Quadruple expansion must generate 757 URL-level guides; found ${quadrupleExpansionModule.quadrupleExpansionGuides.length}`);
+}
+if (Object.keys(quadrupleExpansionModule.familyEditorialBriefs ?? {}).length !== 154) {
+  errors.push(`Quadruple expansion must contain 154 family-specific editorial briefs; found ${Object.keys(quadrupleExpansionModule.familyEditorialBriefs ?? {}).length}`);
+}
+if (quadrupleCommunityEvidenceData.discussions.length !== 113) {
+  errors.push(`Quadruple expansion community-evidence review must retain 113 relevant discussions; found ${quadrupleCommunityEvidenceData.discussions.length}`);
+}
+for (const guide of quadrupleExpansionModule.quadrupleExpansionGuides) {
+  const coreText = [guide.dek, guide.quickAnswer, ...guide.sections.map((section) => `${section.heading} ${section.body}`)].filter(Boolean).join(" ");
+  const coreWords = coreText.trim().split(/\s+/).filter(Boolean).length;
+  if (!guide.searchQuestion || !guide.quickAnswer) errors.push(`Missing independent question or direct answer for ${guide.site}:${guide.slug}`);
+  if (guide.governance?.decision !== "rewrite" || !guide.governance.independentDemand || !guide.governance.distinctFrom) {
+    errors.push(`Missing URL-level governance result for ${guide.site}:${guide.slug}`);
+  }
+  const minimumCoreWords = guide.familyRole === "comparison" ? 390 : 320;
+  if (guide.sections.length < 5 || coreWords < minimumCoreWords) errors.push(`Thin governed guide ${guide.site}:${guide.slug}: ${guide.sections.length} sections, ${coreWords} core words (minimum ${minimumCoreWords})`);
+  if (!guide.comparisonTable || guide.comparisonTable.rows.length < 6) errors.push(`Missing decision table for ${guide.site}:${guide.slug}`);
+  if (!guide.editorialMethod || guide.editorialMethod.length < 5) errors.push(`Missing editorial method for ${guide.site}:${guide.slug}`);
 }
 
 const amazonFamilyProductPath = path.join(workspaceDir, "config", "amazon-family-products.json");

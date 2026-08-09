@@ -101,6 +101,21 @@ export type Guide = Publishable & {
   updatedAt?: string;
   image?: string;
   imageAlt?: string;
+  searchQuestion?: string;
+  quickAnswer?: string;
+  editorialMethod?: string[];
+  communityEvidence?: Array<{
+    sourceName: string;
+    title: string;
+    url: string;
+    note: string;
+  }>;
+  governance?: {
+    decision: "keep" | "rewrite" | "merge" | "retire";
+    independentDemand: string;
+    distinctFrom: string;
+    benchmark: string;
+  };
   comparisonTable?: {
     title: string;
     columns: string[];

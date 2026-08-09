@@ -1,4 +1,6 @@
 import type { Guide, SiteKey } from "./types";
+import communityEvidenceData from "../config/quadruple-community-evidence.json";
+import { findFamilyEditorialBrief } from "./quadruple-family-editorial";
 
 type ExpansionSite = Exclude<SiteKey, "style">;
 
@@ -19,6 +21,13 @@ type SiteProfile = {
   risk: string;
   sourceName: string;
   sourceUrl: string;
+  purchaseNoise: string;
+  planningContext: string;
+  dependencies: string;
+  realContext: string;
+  operatingCosts: string;
+  failureModes: string;
+  identityRecord: string;
 };
 
 const updatedAt = "August 9, 2026";
@@ -33,6 +42,13 @@ const siteProfiles: Record<ExpansionSite, SiteProfile> = {
     risk: "Skip a purchase when the advertised speed depends on ports, cabling, clients, radio bands, or service tiers the installation does not have.",
     sourceName: "Wi-Fi Alliance",
     sourceUrl: "https://www.wi-fi.org/discover-wi-fi",
+    purchaseNoise: "a newer radio label, a laboratory throughput number, or unused management features",
+    planningContext: "record the rooms, endpoints, cable paths, port speeds, power sources, internet tier, and the failure that interrupts the household",
+    dependencies: "specific cabling, transceivers, power budgets, adapters, controller software, service tiers, or client capabilities",
+    realContext: "topology, client mix, cable path, traffic load, and recovery window",
+    operatingCosts: "cables, modules, power supplies, licenses, backup configuration, electricity, and replacement hardware",
+    failureModes: "loss of power, uplink, name resolution, controller access, configuration, or a replaceable cable or module",
+    identityRecord: "manufacturer, complete model, hardware revision, region, port layout, firmware branch, and included power hardware",
   },
   smarthome: {
     image: "/images/affiliate/hero-smarthome-realistic.webp",
@@ -43,6 +59,13 @@ const siteProfiles: Record<ExpansionSite, SiteProfile> = {
     risk: "Skip a product when safety, access, privacy, or essential operation depends on an unverified cloud feature or an unsupported controller combination.",
     sourceName: "Connectivity Standards Alliance — Matter",
     sourceUrl: "https://csa-iot.org/all-solutions/matter/",
+    purchaseNoise: "a polished app screen, a protocol badge, or an automation demo that hides its dependencies",
+    planningContext: "record the fixture, circuit or mounting point, controller, radio coverage, owner account, household access, manual fallback, and the failure that matters",
+    dependencies: "a neutral wire, hub, bridge, account, subscription, compatible controller, professional installation, or reliable cloud service",
+    realContext: "fixture, circuit, controller ecosystem, radio path, owner account, and manual fallback",
+    operatingCosts: "hubs, batteries, subscriptions, sensors, professional work, account recovery, and replacement effort",
+    failureModes: "loss of mains power, radio coverage, internet, controller, account access, automation state, or a replaceable battery",
+    identityRecord: "manufacturer, complete model, hardware revision, electrical rating, protocol, controller support, included parts, and region",
   },
   homeoffice: {
     image: "/images/affiliate/hero-homeoffice-realistic.webp",
@@ -53,6 +76,13 @@ const siteProfiles: Record<ExpansionSite, SiteProfile> = {
     risk: "Skip the product when it solves a specification problem but creates a new fit, driver, noise, glare, cable, or daily-switching problem.",
     sourceName: "OSHA Computer Workstations eTool",
     sourceUrl: "https://www.osha.gov/etools/computer-workstations",
+    purchaseNoise: "a larger specification number, a dramatic desk photo, or a feature that adds switching friction",
+    planningContext: "record the worker, posture, desk dimensions, computer and operating system, ports, power, cable reach, storage, meeting routine, and the task that is currently slow or uncomfortable",
+    dependencies: "a driver, dock, cable, adapter, mount, power supply, operating-system feature, desk clearance, or assembly service",
+    realContext: "desk, body position, computer, operating system, cable reach, workday, and shared-device routine",
+    operatingCosts: "cables, adapters, software, replacement parts, consumables, warranty handling, power, and the cost of returning a poor fit",
+    failureModes: "loss of power, video, USB, network, driver support, saved settings, a consumable, or an adjustable part",
+    identityRecord: "manufacturer, complete model, hardware revision, operating-system support, port layout, dimensions, power supply, and included cables",
   },
   baby: {
     image: "/images/affiliate/hero-baby-realistic.webp",
@@ -63,6 +93,13 @@ const siteProfiles: Record<ExpansionSite, SiteProfile> = {
     risk: "Skip or stop using the product when the exact model instructions, recall status, age or weight limits, safe-use environment, or fit cannot be confirmed.",
     sourceName: "U.S. Consumer Product Safety Commission — Baby Safety",
     sourceUrl: "https://www.cpsc.gov/Safety-Education/Safety-Guides/Kids-and-Babies",
+    purchaseNoise: "a lifestyle photo, extra padding, an app feature, or a convenience claim that does not change the instructions",
+    planningContext: "record the child's current age, weight and development, each caregiver, room or vehicle measurements, transfer and cleaning routine, current instructions, and the safety problem being solved",
+    dependencies: "an approved base, vehicle position, attachment point, replacement part, consumable, compatible accessory, caregiver technique, or professional fitting help",
+    realContext: "child stage, caregiver, room or vehicle, transfer, cleaning routine, supervision, and emergency fallback",
+    operatingCosts: "approved replacement parts, cleaning supplies, consumables, storage, travel handling, registration, and the cost of outgrowing the product",
+    failureModes: "a loose attachment, missing part, spill, loss of power or monitoring, changed child fit, changed vehicle or room, or an urgent transfer",
+    identityRecord: "manufacturer, complete model, manufacture date or lot when present, region, child limits, included parts, recall status, and registration path",
   },
   pet: {
     image: "/images/affiliate/hero-pet-realistic.webp",
@@ -73,6 +110,13 @@ const siteProfiles: Record<ExpansionSite, SiteProfile> = {
     risk: "Skip a product when it creates stress, blocks normal eating or drinking, restricts movement, hides a health problem, or substitutes for necessary human or veterinary care.",
     sourceName: "American Veterinary Medical Association — Pet Care",
     sourceUrl: "https://www.avma.org/resources-tools/pet-owners/petcare",
+    purchaseNoise: "an app dashboard, an automatic cycle, a novelty shape, or a capacity headline detached from the animal's routine",
+    planningContext: "record the individual animal's size, mobility, coat, eating or elimination pattern, sound sensitivity, behavior, home layout, cleaning routine, and the care problem being solved",
+    dependencies: "a filter, liner, bag, collar tag, battery, subscription, app account, compatible food or litter, training period, or veterinary input",
+    realContext: "individual animal, home layout, feeding or elimination routine, sound tolerance, cleaning schedule, and manual backup",
+    operatingCosts: "filters, liners, bags, batteries, subscriptions, cleaning supplies, replacement parts, training time, and a simple manual backup",
+    failureModes: "loss of power, network, water flow, food delivery, waste removal, a consumable, normal access, or an animal refusing the device",
+    identityRecord: "manufacturer, complete model, animal-size limits, capacity, compatible consumables, power method, app or subscription needs, and included parts",
   },
   costume: {
     image: "/images/affiliate/hero-halloween-costume-studio-v1.webp",
@@ -83,6 +127,81 @@ const siteProfiles: Record<ExpansionSite, SiteProfile> = {
     risk: "Skip a product when its materials, visibility, breathing, moving parts, power, weather exposure, skin contact, delivery timing, or storage requirements cannot be verified for the actual event.",
     sourceName: "U.S. FDA — Halloween Safety",
     sourceUrl: "https://www.fda.gov/consumers/consumer-updates/halloween-safety-tips-costumes-candy-and-colored-contact-lenses",
+    purchaseNoise: "a premium label, a dramatic product photo, a character promise, or a bundle count that hides missing pieces",
+    planningContext: "record the wearer or display measurements, event and venue, movement and visibility needs, materials and skin contact, weather, power, arrival deadline, included pieces, return terms, cleanup, and storage",
+    dependencies: "alterations, underlayers, adhesive, remover, makeup, batteries, fog fluid, rigging, transport cases, venue approval, or professional application",
+    realContext: "wearer or display, venue, lighting, movement, visibility, weather, setup time, cleanup, and storage",
+    operatingCosts: "alterations, missing accessories, makeup or adhesive, batteries and fluid, cleaning, repairs, transport, insured shipping, and storage",
+    failureModes: "restricted vision or movement, skin irritation, a failed closure or attachment, loss of power, weather exposure, a moving mechanism, delayed delivery, or damaged storage",
+    identityRecord: "seller, complete product or set name, materials, measurements, included pieces, power requirements, delivery promise, return terms, and care instructions",
+  },
+};
+
+const categoryImages: Record<ExpansionSite, Record<string, { image: string; imageAlt: string }>> = {
+  network: {
+    wifi: { image: "/images/affiliate/category-network-wifi-editorial-v2.webp", imageAlt: "Original editorial scene with unbranded home Wi-Fi equipment and a measured coverage plan" },
+    wired: { image: "/images/affiliate/category-network-wired-editorial-v2.webp", imageAlt: "Original editorial scene with unbranded Ethernet switching, cabling, storage, and test equipment" },
+  },
+  smarthome: {
+    automation: { image: "/images/affiliate/category-smarthome-automation-editorial-v2.webp", imageAlt: "Original editorial scene with unbranded smart-home automation controls and sensors" },
+    climate: { image: "/images/affiliate/category-smarthome-climate-editorial-v2.webp", imageAlt: "Original editorial scene with unbranded climate, energy, and charging controls" },
+    access: { image: "/images/affiliate/category-smarthome-access-editorial-v2.webp", imageAlt: "Original editorial scene with unbranded smart access, alarm, and shutoff hardware" },
+    cameras: { image: "/images/affiliate/category-smarthome-cameras-editorial-v2.webp", imageAlt: "Original editorial scene with unbranded indoor and outdoor camera equipment and mounts" },
+  },
+  homeoffice: {
+    meetings: { image: "/images/affiliate/category-homeoffice-meetings-editorial-v2.webp", imageAlt: "Original editorial scene with unbranded meeting, display, audio, scanning, and printing equipment" },
+    ergonomics: { image: "/images/affiliate/category-homeoffice-ergonomics-editorial-v2.webp", imageAlt: "Original editorial scene with unbranded ergonomic keyboard, pointing, stand, and foot-support equipment" },
+    desks: { image: "/images/affiliate/category-homeoffice-desks-editorial-v2.webp", imageAlt: "Original editorial scene with an unbranded standing desk, power, mat, and cable-management equipment" },
+  },
+  baby: {
+    travel: { image: "/images/affiliate/category-baby-travel-editorial-v2.webp", imageAlt: "Original editorial scene with unbranded baby travel equipment shown without a child" },
+    sleep: { image: "/images/affiliate/category-baby-sleep-editorial-v2.webp", imageAlt: "Original editorial nursery scene with empty firm flat sleep surfaces and no loose bedding" },
+    feeding: { image: "/images/affiliate/category-baby-feeding-editorial-v2.webp", imageAlt: "Original editorial scene with unbranded baby feeding, cleaning, changing, and bathing equipment shown empty" },
+  },
+  pet: {
+    feeding: { image: "/images/affiliate/category-pet-feeding-editorial-v2.webp", imageAlt: "Original editorial scene with unbranded pet feeders, fountain, and enrichment equipment" },
+    comfort: { image: "/images/affiliate/category-pet-comfort-editorial-v2.webp", imageAlt: "Original editorial scene with unbranded pet bedding, carrier, ramp, tracker, and door equipment" },
+    "home-care": { image: "/images/affiliate/category-pet-home-care-editorial-v2.webp", imageAlt: "Original editorial scene with unbranded pet cleaning, litter, grooming, and camera equipment" },
+  },
+  costume: {
+    costumes: { image: "/images/affiliate/category-costume-costumes-editorial-v2.webp", imageAlt: "Original unlicensed costume designs on dress forms in a professional fitting studio" },
+    "wigs-makeup": { image: "/images/affiliate/category-costume-wigs-editorial-v2.webp", imageAlt: "Original costume wigs and generic theatrical makeup tools in a hygienic studio" },
+    "masks-prosthetics": { image: "/images/affiliate/category-costume-masks-editorial-v2.webp", imageAlt: "Original unlicensed masks and neutral prosthetic materials arranged for safe application planning" },
+    "props-animatronics": { image: "/images/affiliate/category-costume-props-editorial-v2.webp", imageAlt: "Original unlicensed theatrical props and animatronic mechanisms arranged for setup and storage planning" },
+  },
+};
+
+const categorySources: Record<ExpansionSite, Record<string, Array<{ name: string; url: string; note: string }>>> = {
+  network: {
+    wifi: [{ name: "Wi-Fi Alliance — Discover Wi-Fi", url: "https://www.wi-fi.org/discover-wi-fi", note: "Official Wi-Fi technology and certification baseline." }],
+    wired: [{ name: "IEEE 802.3 Ethernet Working Group", url: "https://www.ieee802.org/3/", note: "Official Ethernet standards working-group reference." }],
+  },
+  smarthome: {
+    automation: [{ name: "Connectivity Standards Alliance — Matter", url: "https://csa-iot.org/all-solutions/matter/", note: "Official Matter roles, certification, and ecosystem baseline." }],
+    climate: [{ name: "U.S. EPA — Indoor Air Quality", url: "https://www.epa.gov/indoor-air-quality-iaq", note: "Authoritative indoor-air and source-control baseline; consumer sensors are not regulatory instruments." }],
+    access: [{ name: "CISA — Secure Our World", url: "https://www.cisa.gov/secure-our-world", note: "Authoritative account, update, password, and connected-device security baseline." }],
+    cameras: [{ name: "FTC — How to Secure Your Home Security Cameras", url: "https://consumer.ftc.gov/consumer-alerts/2020/01/how-secure-your-home-security-camera", note: "Authoritative account, network, update, and privacy checks for connected cameras." }],
+  },
+  homeoffice: {
+    meetings: [{ name: "OSHA Computer Workstations eTool", url: "https://www.osha.gov/etools/computer-workstations", note: "Authoritative workstation layout and equipment-fit baseline." }],
+    ergonomics: [{ name: "OSHA Computer Workstations eTool", url: "https://www.osha.gov/etools/computer-workstations", note: "Authoritative neutral-posture and workstation adjustment baseline." }],
+    desks: [{ name: "OSHA Computer Workstations eTool", url: "https://www.osha.gov/etools/computer-workstations", note: "Authoritative desk, input-device, and workstation adjustment baseline." }],
+  },
+  baby: {
+    travel: [{ name: "NHTSA — Car Seats and Booster Seats", url: "https://www.nhtsa.gov/vehicle-safety/car-seats-and-booster-seats", note: "Authoritative car-seat selection, installation, and child-fit baseline; other travel products still require their exact instructions." }],
+    sleep: [{ name: "U.S. CPSC — Safe Sleep", url: "https://www.cpsc.gov/SafeSleep", note: "Authoritative firm, flat, bare sleep-surface and product-safety baseline." }],
+    feeding: [{ name: "CDC — Infant and Toddler Nutrition", url: "https://www.cdc.gov/infant-toddler-nutrition/", note: "Authoritative feeding and food-safety baseline; exact product cleaning instructions still control." }],
+  },
+  pet: {
+    feeding: [{ name: "AVMA — Pet Care", url: "https://www.avma.org/resources-tools/pet-owners/petcare", note: "Veterinary-owner baseline for feeding, hydration, behavior, and when equipment cannot replace care." }],
+    comfort: [{ name: "AVMA — Pet Care", url: "https://www.avma.org/resources-tools/pet-owners/petcare", note: "Veterinary-owner baseline for fit, behavior, transport, mobility, and health escalation." }],
+    "home-care": [{ name: "AVMA — Pet Care", url: "https://www.avma.org/resources-tools/pet-owners/petcare", note: "Veterinary-owner baseline for grooming, hygiene, monitoring, and care limits." }],
+  },
+  costume: {
+    costumes: [{ name: "U.S. CPSC — Halloween Safety", url: "https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Halloween", note: "Authoritative visibility, flammability, movement, and supervision baseline." }],
+    "wigs-makeup": [{ name: "U.S. FDA — Halloween Safety", url: "https://www.fda.gov/consumers/consumer-updates/halloween-safety-tips-costumes-candy-and-colored-contact-lenses", note: "Authoritative cosmetic, eye-area, skin-contact, and costume safety baseline." }],
+    "masks-prosthetics": [{ name: "U.S. FDA — Halloween Safety", url: "https://www.fda.gov/consumers/consumer-updates/halloween-safety-tips-costumes-candy-and-colored-contact-lenses", note: "Authoritative face, eye, skin-contact, and visibility baseline." }],
+    "props-animatronics": [{ name: "U.S. CPSC — Halloween Safety", url: "https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Halloween", note: "Authoritative seasonal fire, movement, visibility, and supervision baseline." }],
   },
 };
 
@@ -285,63 +404,170 @@ function titleFor(family: ProductFamily, role: (typeof rolesBySite)[ExpansionSit
   return `${name}: Safety Limits and When to Skip`;
 }
 
+const discussionByFamily = new Map(
+  communityEvidenceData.discussions.map((item) => [`${item.site}:${item.familySlug}`, item]),
+);
+
+function searchQuestionFor(family: ProductFamily, role: (typeof rolesBySite)[ExpansionSite][number]) {
+  const brief = findFamilyEditorialBrief(family.site, family.slug);
+  if (!brief) throw new Error(`Missing editorial brief for ${family.site}:${family.slug}`);
+  if (role === "buying") return `Which ${family.name.toLowerCase()} are worth buying when the real job is to ${brief.job}?`;
+  if (role === "comparison") return `Should you choose ${family.name.toLowerCase()} or ${family.alternative.toLowerCase()} for this job?`;
+  if (role === "fit") return `Will ${family.name.toLowerCase()} fit the exact user, space, equipment, and installation path?`;
+  if (role === "ownership") return `What will ${family.name.toLowerCase()} cost and require after checkout?`;
+  if (role === "workflow") return `How should ${family.name.toLowerCase()} be set up and used without adding a new daily chore?`;
+  return `When should a caregiver skip or stop using ${family.name.toLowerCase()}?`;
+}
+
+function quickAnswerFor(family: ProductFamily, role: (typeof rolesBySite)[ExpansionSite][number]) {
+  const brief = findFamilyEditorialBrief(family.site, family.slug);
+  if (!brief) throw new Error(`Missing editorial brief for ${family.site}:${family.slug}`);
+  const [first, second] = brief.dimensions;
+  if (role === "buying") return `Start with ${first} and ${second}, not the longest feature list. Buy only when the product can ${brief.job}, the setup is realistic, and the household accepts ${brief.ownership}. Skip it when ${brief.skip}.`;
+  if (role === "comparison") return `${family.name} are the stronger choice when their specialized path can ${brief.job}. Choose ${family.alternative.toLowerCase()} when it reaches the same outcome with fewer fit, setup, or maintenance dependencies—especially when ${brief.skip}.`;
+  if (role === "fit") return `Compatibility passes only when all four checks are confirmed: ${brief.dimensions.join("; ")}. Verify the exact model and variant, then test the limiting condition before the return window closes.`;
+  if (role === "ownership") return `Budget beyond checkout for ${brief.ownership}. The disciplined choice is the one that remains serviceable and recoverable after normal wear, cleaning, updates, consumables, or a failed part.`;
+  if (role === "workflow") return `Use this order: ${brief.setup}. Keep the previous routine available until normal operation and a safe recovery test both work.`;
+  return `Use only the exact current instructions and stop when ${brief.skip}. Community anecdotes and added accessories never expand the manufacturer's age, weight, fit, installation, supervision, or environmental limits.`;
+}
+
+function comparisonTableFor(family: ProductFamily, role: (typeof rolesBySite)[ExpansionSite][number]): NonNullable<Guide["comparisonTable"]> {
+  const brief = findFamilyEditorialBrief(family.site, family.slug);
+  if (!brief) throw new Error(`Missing editorial brief for ${family.site}:${family.slug}`);
+  if (role === "comparison") {
+    return {
+      title: `${family.name} and ${family.alternative}: the decision dimensions`,
+      columns: [family.name, family.alternative],
+      rows: [
+        { label: "Primary job", values: [`Best when the product can ${brief.job}.`, `Best when the same outcome needs fewer specialized dependencies.`] },
+        ...brief.dimensions.map((dimension, index) => ({
+          label: `Check ${index + 1}`,
+          values: [`Verify ${dimension}.`, `Confirm the alternative removes or simplifies ${dimension}.`],
+        })),
+        { label: "Skip signal", values: [`Skip when ${brief.skip}.`, "Prefer the alternative only after confirming it solves the same repeated problem." ] },
+      ],
+    };
+  }
+
+  const roleLabel = role === "fit" ? "Compatibility" : role === "ownership" ? "Ownership" : role === "workflow" ? "Workflow" : role === "safety" ? "Safety" : "Buying";
+  return {
+    title: `${roleLabel} checks that change the ${family.name.toLowerCase()} decision`,
+    columns: ["What to verify", "Decision effect"],
+    rows: [
+      ...brief.dimensions.map((dimension, index) => ({
+        label: `Decision ${index + 1}`,
+        values: [dimension, `Treat any unanswered question about ${dimension} as a reason to pause rather than assume fit.`],
+      })),
+      { label: "Setup proof", values: [brief.setup, "Complete this path before retiring the previous routine or equipment." ] },
+      { label: "Exit condition", values: [brief.skip, `Use ${family.alternative.toLowerCase()} or keep the current setup when this condition applies.`] },
+    ],
+  };
+}
+
 function sectionsFor(family: ProductFamily, role: (typeof rolesBySite)[ExpansionSite][number]) {
+  const brief = findFamilyEditorialBrief(family.site, family.slug);
+  if (!brief) throw new Error(`Missing editorial brief for ${family.site}:${family.slug}`);
   const profile = siteProfiles[family.site];
+  const [first, second, third, fourth] = brief.dimensions;
+
   if (role === "buying") return [
-    { heading: "Define the buying job", body: `Start with the exact problem ${family.name.toLowerCase()} must solve. Write down the room, user, equipment, routine, constraints, and failure that prompted the purchase before comparing features.` },
-    { heading: "Measure the real environment", body: profile.fit },
-    { heading: "Compare a complete system", body: `Compare ${family.name.toLowerCase()} with every required accessory and service, not as an isolated box. A lower headline price can become the more expensive choice after adapters, installation, consumables, or replacement parts are added.` },
-    { heading: "Keep a skip decision", body: profile.risk },
+    { heading: `Start with the job: ${brief.job}`, body: `${family.name} should earn their cost and ongoing effort by solving that repeated job, not by winning on ${profile.purchaseNoise}. Before comparing listings, ${profile.planningContext}. Then compare the product with ${family.alternative.toLowerCase()} under the same real conditions and for the same period.` },
+    { heading: `The first two buying checks are ${first} and ${second}`, body: `For ${family.name.toLowerCase()}, ${first} and ${second} usually eliminate more poor choices than a long feature comparison. Confirm both from the exact current product details or instructions. If either depends on ${profile.dependencies}, include that dependency in the purchase and setup plan rather than treating it as a later detail.` },
+    { heading: `Do not ignore ${third} or ${fourth}`, body: `For this ${family.name.toLowerCase()} decision, ${third} and ${fourth} determine whether a product that looks correct online will still work in the real use case. Measure or test the limiting condition across the actual ${profile.realContext}; preserve packaging and use the return period to reproduce the most demanding normal task rather than an ideal demonstration.` },
+    { heading: "Price the complete first year", body: `The family-specific ownership plan includes ${brief.ownership}. Also price ${profile.operatingCosts}. A lower checkout price is not better when it creates repeated work or leaves the household unable to recover from a common failure.` },
+    { heading: "Keep a written skip decision", body: `Do not buy when ${brief.skip}. That is not a missing premium feature; it is evidence that the product does not fit the current job. Keep the simpler ${family.alternative.toLowerCase()} route available until the new option passes fit, normal use, maintenance, and recovery checks.` },
   ];
+
   if (role === "comparison") return [
-    { heading: "The decision fork", body: `${family.name} make sense when their specialized function solves the repeated problem. ${family.alternative} are the stronger alternative when they meet the same need with fewer dependencies or less maintenance.` },
-    { heading: "Compare like with like", body: `Normalize the comparison for capacity, fit, included parts, required accessories, ongoing service, and the same expected use period. Do not compare a complete ${family.name.toLowerCase()} package with an incomplete alternative.` },
-    { heading: "Prefer the simpler failure mode", body: `Ask what happens when power, connectivity, consumables, software, or a moving part fails. The better option is often the one the household can understand, recover, and temporarily replace.` },
-    { heading: "Make the choice reversible", body: `Verify the return window, preserve packaging until fit is proven, and test the most important workflow before retiring the existing ${family.alternative.toLowerCase()} setup.` },
+    { heading: `The real fork is specialized function versus ${family.alternative.toLowerCase()}`, body: `${family.name} win when they can ${brief.job} and that function removes a known recurring problem. ${family.alternative} win when they reach the same outcome with fewer dependencies, less maintenance, a more understandable failure mode, or a cleaner return path.` },
+    { heading: `Normalize ${first} and ${second}`, body: `Compare both paths across the same ${profile.realContext}, with every required dependency included. A complete ${family.name.toLowerCase()} package should not be compared with an incomplete alternative, and a retailer headline should not replace product-level compatibility evidence.` },
+    { heading: `Use ${third} and ${fourth} as tie-breakers`, body: `In a ${family.name.toLowerCase()} comparison, ${third} and ${fourth} reveal the friction that appears after an attractive demo. Choose the path that can be installed, used, cleaned, updated, and recovered by the people who will actually own it. Prefer the simpler failure mode when performance is otherwise close.` },
+    { heading: "Compare ownership, not only purchase price", body: `${family.name} bring an ownership path of ${brief.ownership}. Price that against the maintenance and replacement work of ${family.alternative.toLowerCase()} over one normal year. Include the value of time and the cost of losing the service while a proprietary part, account, or repair is unavailable.` },
+    { heading: "Make the choice reversible", body: `Use this test path before the return window closes: ${brief.setup}. Preserve the old setup and packaging until the product survives normal use. Choose the alternative immediately when ${brief.skip}.` },
   ];
+
   if (role === "fit") return [
-    { heading: "Record exact compatibility", body: profile.fit },
-    { heading: "Check the complete model identity", body: `Confirm the manufacturer, complete model or variant, region, included parts, current instructions, and the exact retailer listing. Similar names do not prove that two ${family.name.toLowerCase()} share the same limits.` },
-    { heading: "Test the limiting condition", body: `Identify the smallest clearance, weakest connection, least compatible user or device, and most demanding normal task. A product that passes only an ideal demonstration may still fail the real installation.` },
-    { heading: "Plan the fallback", body: `Keep a safe manual or previous-system fallback until compatibility, reliability, cleaning, and recovery have been proven in the actual environment.` },
+    { heading: `Compatibility check 1: ${first}`, body: `For ${family.name.toLowerCase()}, record the exact value, standard, measurement, or supported condition behind ${first} before checkout. A broad category label does not prove that the selected variant fits. Confirm the ${profile.identityRecord} rather than assuming similarly named products share limits.` },
+    { heading: `Compatibility check 2: ${second}`, body: `Test ${second} across the actual ${profile.realContext}—not a product-photo setup. If this ${family.name.toLowerCase()} fit depends on ${profile.dependencies}, confirm the exact part, service, or behavior as part of compatibility.` },
+    { heading: `Compatibility checks 3 and 4: ${third}; ${fourth}`, body: `For ${family.name.toLowerCase()}, ${third} and ${fourth} are the limiting conditions most likely to surface only after installation. Measure the smallest clearance, weakest connection, least compatible user or device, and the most demanding normal task. Passing an ideal bench test is not enough.` },
+    { heading: "Prove fit in a reversible order", body: `Use this sequence: ${brief.setup}. Keep labels, packaging, manuals, and the previous system until the product works through normal use and a recovery test. Photograph wiring, measurements, or assembly states that would be difficult to reconstruct.` },
+    { heading: "A failed fit check is a stop signal", body: `Stop when ${brief.skip}. Do not repair a fundamental mismatch with unapproved accessories, copied settings, or community anecdotes. Use ${family.alternative.toLowerCase()} when it meets the job with a clearer compatibility path.` },
   ];
+
   if (role === "ownership") return [
-    { heading: "Calculate total ownership", body: profile.ownership },
-    { heading: "Price the normal year", body: `Estimate purchase, setup, electricity or batteries, consumables, cleaning, replacement parts, and service over one realistic year. Use current checkout information rather than a remembered launch price.` },
-    { heading: "Check maintenance access", body: `Confirm that the parts requiring cleaning, inspection, replacement, charging, or updates remain reachable after installation. Maintenance that is awkward is maintenance that gets skipped.` },
-    { heading: "Protect the exit path", body: `Record the warranty, return process, data export or account-removal steps when applicable, and the cost of returning to ${family.alternative.toLowerCase()} if the product does not fit.` },
+    { heading: "Build the cost beyond checkout", body: `Normal ownership includes ${brief.ownership}. Put those items beside the purchase price before comparing products, then add ${profile.operatingCosts} and the cost of downtime.` },
+    { heading: `Maintenance starts with ${first} and ${second}`, body: `For ${family.name.toLowerCase()}, ${first} and ${second} are not only buying checks; they determine what must be inspected, cleaned, updated, calibrated, charged, or replaced. Confirm that service points remain reachable after installation and that parts are sold for the exact model rather than only for a similar family name.` },
+    { heading: `Watch ${third} and ${fourth} over the first year`, body: `Record the ${family.name.toLowerCase()} baseline for ${third} and ${fourth} after setup and check it after ordinary use. Ownership problems are easier to catch when settings, measurements, supply part numbers, and photos are documented before wear, firmware changes, seasonal conditions, or a different user changes the result.` },
+    { heading: "Price failure and recovery", body: `For ${family.name.toLowerCase()}, ask what happens after ${profile.failureModes}. Keep the instructions, warranty, exact product identity, data-removal steps where applicable, and a practical fallback. The previous ${family.alternative.toLowerCase()} routine should remain available until recovery is proven.` },
+    { heading: "Know the economic stop point", body: `Exit when ${brief.skip}. Also stop spending when recurring parts, service, cleaning, or recovery work exceeds the value of the repeated job. A familiar alternative is often cheaper than extending ownership of a mismatched specialized product.` },
   ];
+
   if (role === "workflow") return [
-    { heading: "Stage the first setup", body: profile.workflow },
-    { heading: "Define the normal routine", body: `Write the few actions that should happen every day or week with ${family.name.toLowerCase()}. If the routine requires repeated app repair, special handling, or difficult cleaning, the automation has not removed the original friction.` },
-    { heading: "Test recovery", body: `Deliberately test a safe loss of power, network, consumable, or normal access where appropriate. Confirm alerts, local controls, saved settings, and the steps needed to resume service.` },
-    { heading: "Review after a real week", body: `After ordinary use, compare time saved, new chores, reliability, user or animal response, and maintenance with the previous ${family.alternative.toLowerCase()} routine.` },
+    { heading: "Stage setup before changing the routine", body: `Use this order: ${brief.setup}. Complete the first setup while there is time to read, observe, and reverse decisions. Add one device, user, animal, automation, accessory, or workflow step at a time so the cause of a failure remains visible.` },
+    { heading: `Put ${first} and ${second} into the setup checklist`, body: `Verify ${first} and ${second} for the selected ${family.name.toLowerCase()} in the real environment and record the result. The routine should not depend on remembering a hidden app state, unsupported adapter, special handling step, or unlabelled configuration that another household member cannot recover.` },
+    { heading: `Design daily use around ${third} and ${fourth}`, body: `For ${family.name.toLowerCase()}, write the few actions that should occur every day or week around ${third} and ${fourth}. Include cleaning, charging, refilling, data review, physical inspection, or supervision where relevant. If those actions are harder than the previous ${family.alternative.toLowerCase()} routine, the new product has not removed the original friction.` },
+    { heading: "Test recovery deliberately", body: `For ${family.name.toLowerCase()}, safely simulate the most plausible ordinary failure created by the ownership path: ${profile.failureModes}. Confirm the relevant alerts, manual controls, saved settings, physical checks, and exact steps needed to resume the routine without creating a second problem.` },
+    { heading: "Review after a normal week", body: `Compare time saved, new chores, reliability, user or animal response, and maintenance. Revert when ${brief.skip}. Keep the workflow only if it solves the original job and remains understandable to the people who must use and recover it.` },
   ];
+
   return [
-    { heading: "Use current instructions first", body: profile.fit },
-    { heading: "Check recalls and registration", body: `Verify the exact model against current recall information, register eligible durable products, retain the model and date code, and follow the manufacturer instructions rather than a generic product-category shortcut.` },
-    { heading: "Do not extend stated limits", body: `Age, weight, developmental, installation, sleep, restraint, supervision, and environmental limits are boundaries. Added accessories or online anecdotes do not expand them.` },
-    { heading: "Know when to stop", body: profile.risk },
+    { heading: "Use the exact current instructions", body: `Begin with ${first} and ${second}. Confirm the complete model, date or lot information when present, approved configuration, child limits, recall status, and registration path. Category advice and community discussion cannot replace the instructions for the selected product.` },
+    { heading: `Treat ${third} as a boundary`, body: `For ${family.name.toLowerCase()}, ${third} is a boundary rather than a target to stretch. Age, weight, developmental, installation, sleep, restraint, supervision, and environmental limits remain controlling; added padding, straps, adapters, accessories, online tips, or a different model's manual do not expand them.` },
+    { heading: `Recheck ${fourth} during normal use`, body: `A ${family.name.toLowerCase()} product can pass initial assembly and become unsafe after movement, growth, cleaning, a loose part, a changed vehicle or room, or a different caregiver routine. Recheck ${fourth}, fit, and physical condition before relying on convenience features.` },
+    { heading: "Practice the safe-use workflow", body: `Follow this sequence: ${brief.setup}. Practice when rested and able to observe each step. Keep a safe manual fallback and ensure every caregiver understands stop-use conditions, emergency removal, and the location of current instructions.` },
+    { heading: "Know when to stop", body: `Stop when ${brief.skip}. Also stop after damage, a recall, missing required parts, unknown history, or any inability to follow the exact instructions. Contact the manufacturer or an appropriate qualified professional rather than improvising around a safety boundary.` },
   ];
 }
 
 function guideFor(family: ProductFamily, role: (typeof rolesBySite)[ExpansionSite][number]): Guide {
   const profile = siteProfiles[family.site];
+  const categoryImage = categoryImages[family.site][family.category];
+  const sources = categorySources[family.site][family.category] ?? [{ name: profile.sourceName, url: profile.sourceUrl, note: "Authoritative category-level baseline." }];
+  const brief = findFamilyEditorialBrief(family.site, family.slug);
+  if (!brief) throw new Error(`Missing editorial brief for ${family.site}:${family.slug}`);
+  const discussion = discussionByFamily.get(`${family.site}:${family.slug}`);
   const siblingSlugs = rolesBySite[family.site].map((item) => roleSlug(family, item)).filter((slug) => slug !== roleSlug(family, role));
   const title = titleFor(family, role);
+  const searchQuestion = searchQuestionFor(family, role);
   return {
     site: family.site,
     slug: roleSlug(family, role),
     title,
     dek: role === "comparison"
-      ? `Choose between ${family.name.toLowerCase()} and ${family.alternative.toLowerCase()} using fit, dependencies, ownership cost, failure recovery, and the repeated job that needs solving.`
-      : `Evaluate ${family.name.toLowerCase()} by measurable fit, setup, ongoing work, failure recovery, and the checks that prevent an expensive mismatch.`,
+      ? `Choose between ${family.name.toLowerCase()} and ${family.alternative.toLowerCase()} for one concrete job: ${brief.job}. Compare four product-level checks, ownership cost, and the failure mode you can actually recover.`
+      : `${searchQuestion} This guide turns that question into model-level checks, a reversible setup, a first-year ownership plan, and a clear skip decision.`,
     category: family.category,
     updatedAt,
-    image: profile.image,
-    imageAlt: profile.imageAlt,
-    sources: [{ name: profile.sourceName, url: profile.sourceUrl, note: "Authoritative category-level baseline; verify the exact product instructions and current listing separately." }],
+    image: categoryImage?.image ?? profile.image,
+    imageAlt: categoryImage?.imageAlt ?? profile.imageAlt,
+    searchQuestion,
+    quickAnswer: quickAnswerFor(family, role),
+    editorialMethod: [
+      "Define one independent purchase or use question for this URL.",
+      `Verify the four family-specific dimensions: ${brief.dimensions.join("; ")}.`,
+      family.site === "costume" ? "Resolve shoppable products only from the active Costume PostgreSQL/CJ catalog." : "Use an exact Amazon ASIN only as a current retailer identity and checkout anchor, not as hands-on evidence.",
+      discussion ? "Separate public community discussion from official specifications and editorial judgment." : "Do not add a community claim when no sufficiently relevant public discussion was found.",
+      "Keep a written stop condition and a reversible test path.",
+    ],
+    communityEvidence: discussion ? [{
+      sourceName: discussion.sourceName,
+      title: discussion.discussionTitle,
+      url: discussion.url,
+      note: "A public owner discussion used to identify questions and failure modes. Comments are anecdotal; no username, vote count, rating, or verbatim review is reproduced, and product facts must be verified independently.",
+    }] : [],
+    governance: {
+      decision: "rewrite",
+      independentDemand: searchQuestion,
+      distinctFrom: role === "comparison"
+        ? `The buying page asks whether to enter the category; this page decides between ${family.name.toLowerCase()} and ${family.alternative.toLowerCase()}.`
+        : `This URL answers the ${role} decision and does not substitute for the sibling ${rolesBySite[family.site].filter((item) => item !== role).join(", ")} decisions.`,
+      benchmark: role === "buying" || role === "comparison"
+        ? "Deco BE63 vs BE67 vs BE85 guide: direct answer, exact decision dimensions, model anchor, sources, and dense internal links."
+        : "Ergobaby positions guide and Deco BE63 research page: one exact question, model-level limits, evidence separation, original editorial image, and explicit skip conditions.",
+    },
+    sources: sources.map((source) => ({ ...source, note: `${source.note} Verify the exact product instructions and current listing separately.` })),
     sections: sectionsFor(family, role),
+    comparisonTable: comparisonTableFor(family, role),
     relatedRoundups: [],
     relatedProducts: [],
     relatedGuides: siblingSlugs,

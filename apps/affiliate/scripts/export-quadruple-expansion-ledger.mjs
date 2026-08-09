@@ -6,12 +6,23 @@ import ts from "typescript";
 const workspaceDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const repositoryDir = path.resolve(workspaceDir, "../..");
 const sourcePath = path.join(workspaceDir, "lib/quadruple-expansion-content.ts");
+const briefPath = path.join(workspaceDir, "lib/quadruple-family-editorial.ts");
+const communityEvidencePath = path.join(workspaceDir, "config/quadruple-community-evidence.json");
 const amazonProductPath = path.join(workspaceDir, "config/amazon-family-products.json");
 const source = fs.readFileSync(sourcePath, "utf8");
-const javascript = ts.transpileModule(source, {
+const briefSource = fs.readFileSync(briefPath, "utf8");
+const communityEvidence = JSON.parse(fs.readFileSync(communityEvidencePath, "utf8"));
+const briefJavascript = ts.transpileModule(briefSource, {
+  compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 },
+  fileName: briefPath,
+}).outputText;
+const contentJavascript = ts.transpileModule(source, {
   compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 },
   fileName: sourcePath,
-}).outputText;
+}).outputText
+  .replace(/^import communityEvidenceData[^;]+;\n/m, "")
+  .replace(/^import \{ findFamilyEditorialBrief \}[^;]+;\n/m, "");
+const javascript = `${briefJavascript}\nconst communityEvidenceData = ${JSON.stringify(communityEvidence)};\n${contentJavascript}`;
 const expansion = await import(`data:text/javascript;base64,${Buffer.from(javascript).toString("base64")}`);
 const amazonProducts = JSON.parse(fs.readFileSync(amazonProductPath, "utf8")).products ?? [];
 
@@ -27,6 +38,19 @@ const domains = {
 function csv(value) {
   const text = String(value ?? "");
   return /[",\n]/.test(text) ? `"${text.replaceAll('"', '""')}"` : text;
+}
+
+function wordCount(guide) {
+  const text = [
+    guide.title,
+    guide.dek,
+    guide.searchQuestion,
+    guide.quickAnswer,
+    ...guide.sections.flatMap((section) => [section.heading, section.body]),
+    guide.comparisonTable?.title,
+    ...(guide.comparisonTable?.rows.flatMap((row) => [row.label, ...row.values]) ?? []),
+  ].filter(Boolean).join(" ");
+  return text.trim().split(/\s+/).filter(Boolean).length;
 }
 
 const familyBySlug = new Map(expansion.quadrupleExpansionFamilies.map((family) => [`${family.site}:${family.slug}`, family]));
@@ -45,6 +69,15 @@ const rows = expansion.quadrupleExpansionGuides.map((guide) => {
     title: guide.title,
     url: `${domains[guide.site]}/guides/${guide.slug}`,
     indexable: "yes",
+    governanceDecision: guide.governance?.decision ?? "unreviewed",
+    independentDemand: guide.governance?.independentDemand ?? "",
+    distinctFromSiblingPages: guide.governance?.distinctFrom ?? "",
+    qualityBenchmark: guide.governance?.benchmark ?? "",
+    editorialSectionCount: guide.sections.length,
+    decisionTableRows: guide.comparisonTable?.rows.length ?? 0,
+    coreWordCount: wordCount(guide),
+    originalEditorialImage: guide.image ?? "",
+    communityEvidence: guide.communityEvidence?.[0]?.url ?? "not used: no sufficiently relevant public discussion retained",
     merchantSource: guide.site === "costume" ? "Costume PostgreSQL/CJ catalog" : "Amazon US",
     merchantStatus: guide.site === "costume" ? "CTA requires active verified database offer" : "exact listing verified",
     asin: amazonProduct?.asin ?? "",
@@ -63,7 +96,7 @@ const markdown = [
   "",
   "Generated: 2026-08-09",
   "",
-  "This ledger is the exact editorial cohort for the owner-approved product-family expansion. Network, Smart Home, Home Office, Baby, and Pet use one independently verified Amazon US listing anchor per new family. Costume resolves active CJ products from PostgreSQL and does not use the Amazon registry.",
+  "This ledger records the URL-by-URL governance result for the owner-approved product-family expansion. Every row carries its own independent demand question, distinction from sibling pages, quality benchmark, content depth, evidence path, merchant source, and exact URL. No role-wide redirect or blanket family mapping is used.",
   "",
   "| Site | New product families | New guide URLs |",
   "| --- | ---: | ---: |",
@@ -71,6 +104,7 @@ const markdown = [
   `| Total | ${Object.values(familyCounts).reduce((sum, value) => sum + value, 0)} | ${rows.length} |`,
   "",
   `Verified Amazon family anchors: ${amazonProducts.length}.`,
+  `Public community discussions retained after relevance review: ${communityEvidence.discussions.length}.`,
   "",
   "The exact URL-level ledger is stored in `docs/affiliate-quadruple-expansion-ledger-2026-08-09.csv`.",
   "",
