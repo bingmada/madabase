@@ -309,9 +309,31 @@ function normalizeProduct(row) {
   } };
 }
 
+const pinnedEditorialKeys = new Set();
+if (databaseUrl) {
+  const pinPool = new Pool({ connectionString: databaseUrl, max: 1 });
+  try {
+    const pinResult = await pinPool.query(
+      `SELECT DISTINCT product."externalId", product."variantId"
+       FROM "EditorialProduct" editorial
+       JOIN "MerchantProduct" product ON product."id" = editorial."merchantProductId"
+       JOIN "Merchant" merchant ON merchant."id" = product."merchantId"
+       WHERE editorial."status" = 'published' AND editorial."indexable" = true
+         AND merchant."slug" = 'abracadabra-nyc' AND merchant."advertiserCid" = $1`,
+      [merchantCid],
+    );
+    for (const row of pinResult.rows) {
+      pinnedEditorialKeys.add(`${row.externalId}\u0000${row.variantId ?? ""}`);
+    }
+  } finally {
+    await pinPool.end();
+  }
+}
+
 const quotas = categoryQuotas(selectionLimit);
 const categoryBuckets = new Map(categoryShares.map(([category]) => [category, []]));
 const globalCandidates = [];
+const pinnedCandidates = new Map();
 const eligibleCategories = Object.fromEntries(categoryShares.map(([category]) => [category, 0]));
 const { stream: exportStream, completion: exportCompletion } = openExport(exportPath);
 let headers = null;
@@ -342,6 +364,7 @@ for await (const values of parseDelimited(exportStream)) {
     score: selectionScore(product),
     key: `${product.externalId}\u0000${product.variantId}`,
   };
+  if (pinnedEditorialKeys.has(candidate.key)) pinnedCandidates.set(candidate.key, candidate);
   addBoundedCandidate(categoryBuckets.get(product.categorySlug), candidate, quotas.get(product.categorySlug));
   addBoundedCandidate(globalCandidates, candidate, selectionLimit);
 }
@@ -362,6 +385,40 @@ for (const candidate of finalizeCandidates(globalCandidates, selectionLimit)) {
   selectedCandidates.push(candidate);
   selectedKeys.add(candidate.key);
 }
+const missingPinnedKeys = [...pinnedEditorialKeys].filter((key) => !pinnedCandidates.has(key));
+if (missingPinnedKeys.length > 0) {
+  throw new Error(`${missingPinnedKeys.length} published editorial products are absent from the current CJ Feed; refusing to retire them implicitly`);
+}
+let forcedPinnedProducts = 0;
+for (const [key, pinned] of pinnedCandidates) {
+  if (selectedKeys.has(key)) continue;
+  let replacementIndex = -1;
+  let replacementScore = Number.POSITIVE_INFINITY;
+  for (let index = 0; index < selectedCandidates.length; index += 1) {
+    const candidate = selectedCandidates[index];
+    if (pinnedEditorialKeys.has(candidate.key)) continue;
+    if (candidate.product.categorySlug !== pinned.product.categorySlug) continue;
+    if (candidate.score < replacementScore) {
+      replacementIndex = index;
+      replacementScore = candidate.score;
+    }
+  }
+  if (replacementIndex === -1) {
+    for (let index = 0; index < selectedCandidates.length; index += 1) {
+      const candidate = selectedCandidates[index];
+      if (pinnedEditorialKeys.has(candidate.key)) continue;
+      if (candidate.score < replacementScore) {
+        replacementIndex = index;
+        replacementScore = candidate.score;
+      }
+    }
+  }
+  if (replacementIndex === -1) throw new Error(`Unable to reserve catalog capacity for published editorial product ${key}`);
+  selectedKeys.delete(selectedCandidates[replacementIndex].key);
+  selectedCandidates[replacementIndex] = pinned;
+  selectedKeys.add(key);
+  forcedPinnedProducts += 1;
+}
 selectedCandidates.sort(compareCandidate);
 const normalized = selectedCandidates.map(({ product }) => product);
 const now = new Date();
@@ -373,6 +430,9 @@ const audit = {
   eligible,
   selectionLimit,
   selectionMode: "balanced-relevance",
+  pinnedEditorialProducts: pinnedEditorialKeys.size,
+  forcedPinnedProducts,
+  missingPinnedProducts: missingPinnedKeys.length,
   accepted: normalized.length,
   rejected,
   rejectionReasons,
