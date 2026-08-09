@@ -236,16 +236,16 @@ const productFamilies: ProductFamily[] = [
   { site: "pet", slug: "automatic-aquarium-feeders", name: "Automatic aquarium feeders", category: "feeding", alternative: "manual measured feeding" },
   { site: "pet", slug: "aquarium-water-monitors", name: "Aquarium water monitors", category: "home-care", alternative: "manual liquid test kits" },
 
-  { site: "costume", slug: "inflatable-halloween-costumes", name: "Inflatable Halloween costumes", category: "costumes", alternative: "standard fabric costumes" },
+  { site: "costume", slug: "high-end-costumes", name: "High-end costumes", category: "costumes", alternative: "standard party costumes or rentals" },
   { site: "costume", slug: "mascot-costumes", name: "Mascot costumes", category: "costumes", alternative: "character masks with separate garments" },
   { site: "costume", slug: "historical-theatrical-costumes", name: "Historical and theatrical costumes", category: "costumes", alternative: "standard party costumes" },
-  { site: "costume", slug: "plus-size-halloween-costumes", name: "Plus-size Halloween costumes", category: "costumes", alternative: "custom or separately assembled looks" },
-  { site: "costume", slug: "couples-group-costumes", name: "Couples and group costumes", category: "costumes", alternative: "independent coordinated outfits" },
-  { site: "costume", slug: "silicone-creature-masks", name: "Silicone creature masks", category: "masks-prosthetics", alternative: "latex masks or foam prosthetics" },
-  { site: "costume", slug: "foam-latex-prosthetics", name: "Foam-latex prosthetics", category: "masks-prosthetics", alternative: "full-face masks" },
-  { site: "costume", slug: "costume-adhesives-removers", name: "Costume adhesives and removers", category: "wigs-makeup", alternative: "self-adhesive effects or masks" },
-  { site: "costume", slug: "uv-blacklights-halloween-projectors", name: "UV blacklights and Halloween projectors", category: "accessories-party-effects", alternative: "conventional scene lighting" },
-  { site: "costume", slug: "outdoor-inflatables-graveyard-props", name: "Outdoor inflatables and graveyard props", category: "props-animatronics", alternative: "compact porch decorations" },
+  { site: "costume", slug: "adult-costumes", name: "Adult costumes", category: "costumes", alternative: "separately assembled character looks" },
+  { site: "costume", slug: "child-costumes", name: "Child costumes", category: "costumes", alternative: "simple clothing-based dress-up" },
+  { site: "costume", slug: "costume-wigs", name: "Costume wigs", category: "wigs-makeup", alternative: "temporary hair color or headpieces" },
+  { site: "costume", slug: "masks-and-masquerade", name: "Masks and masquerade masks", category: "masks-prosthetics", alternative: "prosthetics or makeup-only transformations" },
+  { site: "costume", slug: "prosthetics-special-effects", name: "Prosthetics and special effects", category: "masks-prosthetics", alternative: "full-face masks" },
+  { site: "costume", slug: "theatrical-face-body-makeup", name: "Theatrical face and body makeup", category: "wigs-makeup", alternative: "masks or ready-made character kits" },
+  { site: "costume", slug: "props-and-animatronics", name: "Props and animatronics", category: "props-animatronics", alternative: "compact static decorations" },
 ];
 
 const rolesBySite: Record<ExpansionSite, Array<"buying" | "comparison" | "fit" | "ownership" | "workflow" | "safety">> = {
