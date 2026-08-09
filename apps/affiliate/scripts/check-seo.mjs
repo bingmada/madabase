@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import ts from "typescript";
+import { amazonFamilyTitleMeetsPolicy } from "./amazon-family-semantic-policy.mjs";
 
 const workspaceDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const libDir = path.join(workspaceDir, "lib");
@@ -242,6 +243,7 @@ for (const product of amazonFamilyProducts) {
   if (existingEditorialAsins.has(product.asin)) errors.push(`Amazon family ASIN ${product.asin} duplicates an existing editorial product`);
   if (product.detailUrl !== `https://www.amazon.com/dp/${product.asin}`) errors.push(`Unexpected Amazon detail URL for ${familyKey}`);
   if (!product.title?.trim() || !product.brand?.trim() || Number(product.relevanceScore) < 5) errors.push(`Incomplete Amazon family listing ${familyKey}`);
+  if (!amazonFamilyTitleMeetsPolicy(product.familySlug, product.title)) errors.push(`Amazon listing title fails semantic policy for ${familyKey}`);
   if (Number.isNaN(Date.parse(product.verifiedAt))) errors.push(`Invalid Amazon verification date for ${familyKey}`);
   amazonFamilyKeys.add(familyKey);
   amazonFamilyAsins.add(product.asin);

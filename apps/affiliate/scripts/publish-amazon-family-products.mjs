@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { amazonFamilyTitleMeetsPolicy } from "./amazon-family-semantic-policy.mjs";
 
 const root = path.resolve(new URL("../../..", import.meta.url).pathname);
 const defaultInputPath = path.join(root, "docs/affiliate-amazon-family-products-2026-08-09.json");
@@ -35,6 +36,7 @@ const products = report.products.map((product) => {
   if (existingAsins.has(product.asin)) throw new Error(`ASIN ${product.asin} already belongs to an existing editorial product`);
   if (product.detailUrl !== `https://www.amazon.com/dp/${product.asin}`) throw new Error(`Unexpected detail URL for ${familyKey}`);
   if (!product.title?.trim() || !product.brand?.trim()) throw new Error(`Missing listing identity for ${familyKey}`);
+  if (!amazonFamilyTitleMeetsPolicy(product.familySlug, product.title)) throw new Error(`Listing title fails semantic policy for ${familyKey}`);
   if (Number.isNaN(Date.parse(product.verifiedAt))) throw new Error(`Invalid verification date for ${familyKey}`);
   if (!Number.isFinite(product.relevanceScore) || product.relevanceScore < 5) throw new Error(`Low relevance score for ${familyKey}`);
   if (product.validation?.directStatus !== 200 || product.validation?.asinMatched !== true || product.validation?.unavailable !== false) {

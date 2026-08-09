@@ -1,5 +1,10 @@
 import fs from "node:fs";
 import path from "node:path";
+import {
+  amazonFamilyRelevanceOverrides,
+  amazonFamilySearchOverrides,
+  amazonFamilyTitleMeetsPolicy,
+} from "./amazon-family-semantic-policy.mjs";
 
 const root = path.resolve(new URL("../../..", import.meta.url).pathname);
 const familySourcePath = path.join(root, "apps/affiliate/lib/quadruple-expansion-content.ts");
@@ -11,18 +16,6 @@ const stopWords = new Set([
   "for", "home", "indoor", "large", "motorized", "network", "office", "outdoor", "pet", "plus", "smart", "the",
   "with", "wireless",
 ]);
-const searchOverrides = {
-  "network-attached-storage": "NAS storage enclosure",
-  "matter-hubs-bridges": "Matter smart home hub",
-  "smart-home-sirens": "Zigbee WiFi smart alarm siren",
-  "smart-displays": "Amazon Echo Show smart display",
-};
-const relevanceOverrides = {
-  "network-attached-storage": "NAS storage",
-  "matter-hubs-bridges": "Matter hub",
-  "smart-home-sirens": "smart alarm siren",
-  "smart-displays": "Echo Show display",
-};
 
 function valueFor(name) {
   const index = process.argv.indexOf(name);
@@ -136,7 +129,7 @@ function looksBlocked(html) {
   return /enter the characters you see below|sorry, we just need to make sure|automated access|captcha/i.test(html);
 }
 
-async function fetchHtml(url, retries = 3) {
+async function fetchHtml(url, retries = 5) {
   let lastError;
   for (let attempt = 1; attempt <= retries; attempt += 1) {
     try {
@@ -154,7 +147,10 @@ async function fetchHtml(url, retries = 3) {
     } catch (error) {
       lastError = error;
     }
-    if (attempt < retries) await sleep(attempt * 4000);
+    if (attempt < retries) {
+      const blockedBackoff = /HTTP (?:429|503)|blocked/i.test(lastError?.message ?? "") ? attempt * 15000 : attempt * 4000;
+      await sleep(blockedBackoff);
+    }
   }
   throw lastError;
 }
@@ -202,10 +198,11 @@ async function verifyCandidate(family, candidate, delayMs) {
   const directTitle = extractDetailTitle(detail.html) || candidate.title;
   const asinMatched = detail.html.toUpperCase().includes(candidate.asin);
   const unavailable = /currently unavailable|we don['’]t know when or if this item will be back in stock|temporarily out of stock/i.test(plainText(detail.html));
+  const semanticMatch = amazonFamilyTitleMeetsPolicy(family.familySlug, directTitle);
   const directRelevance = relevanceScore(family.familyName, directTitle, candidate.rank - 1);
   const threshold = minimumRelevance(family.familyName);
-  if (!asinMatched || unavailable || directRelevance < threshold) {
-    return { ok: false, reason: !asinMatched ? "asin_not_confirmed" : unavailable ? "currently_unavailable" : "low_detail_relevance", directTitle, directRelevance };
+  if (!asinMatched || unavailable || !semanticMatch || directRelevance < threshold) {
+    return { ok: false, reason: !asinMatched ? "asin_not_confirmed" : unavailable ? "currently_unavailable" : !semanticMatch ? "semantic_policy_rejected" : "low_detail_relevance", directTitle, directRelevance };
   }
   return {
     ok: true,
@@ -247,11 +244,12 @@ async function main() {
   for (const [index, family] of families.entries()) {
     try {
       await sleep(index === 0 ? 0 : delayMs);
-      const searchName = searchOverrides[family.familySlug] ?? family.familyName;
-      const relevanceName = relevanceOverrides[family.familySlug] ?? family.familyName;
+      const searchName = amazonFamilySearchOverrides[family.familySlug] ?? family.familyName;
+      const relevanceName = amazonFamilyRelevanceOverrides[family.familySlug] ?? family.familyName;
       const searchUrl = `https://www.amazon.com/s?k=${encodeURIComponent(searchName)}`;
       const search = await fetchHtml(searchUrl);
       const candidates = parseSearchResults(search.html, relevanceName)
+        .filter((candidate) => amazonFamilyTitleMeetsPolicy(family.familySlug, candidate.title))
         .filter((candidate) => !usedAsins.has(candidate.asin) && candidate.relevanceScore >= minimumRelevance(relevanceName))
         .slice(0, 5);
       if (!candidates.length) throw new Error("no_relevant_unique_search_result");
@@ -275,6 +273,10 @@ async function main() {
       const failure = { ...family, error: error instanceof Error ? error.message : String(error) };
       failures.push(failure);
       console.error(JSON.stringify({ site: family.site, family: family.familySlug, error: failure.error }));
+      if (/HTTP (?:429|503)|blocked/i.test(failure.error)) {
+        writeOutput(outputPath, products, failures, { requestedFamilies: allFamilies.length, selected: products.length, failed: failures.length, remaining: Math.max(0, allFamilies.length - products.length - failures.length) });
+        throw error;
+      }
     }
     writeOutput(outputPath, products, failures, { requestedFamilies: allFamilies.length, selected: products.length, failed: failures.length, remaining: Math.max(0, allFamilies.length - products.length - failures.length) });
   }
