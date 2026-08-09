@@ -139,6 +139,7 @@ try {
        WHERE link."merchantProductId" = product."id" AND link."site" = 'costume' AND link."network" = 'cj'
      ) link ON true
      WHERE merchant."slug" = 'abracadabra-nyc' AND merchant."advertiserCid" = '7889430'
+       AND product."softRetiredAt" IS NULL
      ORDER BY product."slug" ASC`,
   );
 
