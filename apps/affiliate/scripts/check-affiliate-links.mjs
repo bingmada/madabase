@@ -10,6 +10,10 @@ const offerBlockPath = path.join(
   root,
   "apps/affiliate/config/amazon-offer-blocks.json",
 );
+const familyProductPath = path.join(
+  root,
+  "apps/affiliate/config/amazon-family-products.json",
+);
 const partnerTag = process.env.AMAZON_AFFILIATE_TAG ?? "bingmada-20";
 const siteTrackingIds = {
   network: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_NETWORK ?? "madanetwork-20",
@@ -206,6 +210,20 @@ function buildInventory() {
     }
 
     visit(sourceFile);
+  }
+
+  const familyProductData = JSON.parse(fs.readFileSync(familyProductPath, "utf8"));
+  if (!Array.isArray(familyProductData.products)) throw new Error("amazon-family-products.json contains an invalid products array");
+  for (const product of familyProductData.products) {
+    const url = fallbackAmazonUrl(product.asin);
+    if (!url) continue;
+    records.set(url, {
+      url,
+      file: path.relative(root, familyProductPath),
+      slug: `family-${product.familySlug}`,
+      site: product.site,
+      expectedAsin: product.asin,
+    });
   }
 
   return [...records.values()]

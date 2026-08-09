@@ -201,6 +201,45 @@ for (const [site, expected] of Object.entries(expectedExpansionGuides)) {
     errors.push(`Quadruple expansion must generate one ${site} family hub per family; found ${familyHubCount}`);
   }
 }
+
+const amazonFamilyProductPath = path.join(workspaceDir, "config", "amazon-family-products.json");
+const amazonFamilyProductData = JSON.parse(fs.readFileSync(amazonFamilyProductPath, "utf8"));
+const amazonFamilyProducts = amazonFamilyProductData.products ?? [];
+const amazonExpansionSites = ["network", "smarthome", "homeoffice", "baby", "pet"];
+const expectedAmazonFamilyTotal = amazonExpansionSites.reduce((total, site) => total + expectedExpansionFamilies[site], 0);
+if (amazonFamilyProducts.length !== expectedAmazonFamilyTotal) {
+  errors.push(`Amazon family-product registry must contain ${expectedAmazonFamilyTotal} verified listings; found ${amazonFamilyProducts.length}`);
+}
+const amazonFamilyKeys = new Set();
+const amazonFamilyAsins = new Set();
+for (const site of amazonExpansionSites) {
+  const expectedFamilies = quadrupleExpansionModule.quadrupleExpansionFamilies.filter((family) => family.site === site);
+  const siteProducts = amazonFamilyProducts.filter((product) => product.site === site);
+  if (siteProducts.length !== expectedFamilies.length) {
+    errors.push(`Amazon family-product registry must contain ${expectedFamilies.length} ${site} listings; found ${siteProducts.length}`);
+  }
+  for (const family of expectedFamilies) {
+    const product = siteProducts.find((item) => item.familySlug === family.slug);
+    if (!product) {
+      errors.push(`Missing Amazon listing for ${site}:${family.slug}`);
+      continue;
+    }
+    if (product.familyName !== family.name || product.category !== family.category) {
+      errors.push(`Amazon listing family identity drift for ${site}:${family.slug}`);
+    }
+  }
+}
+for (const product of amazonFamilyProducts) {
+  const familyKey = `${product.site}:${product.familySlug}`;
+  if (amazonFamilyKeys.has(familyKey)) errors.push(`Duplicate Amazon family listing ${familyKey}`);
+  if (!/^[A-Z0-9]{10}$/.test(product.asin ?? "")) errors.push(`Invalid ASIN for Amazon family listing ${familyKey}`);
+  if (amazonFamilyAsins.has(product.asin)) errors.push(`Amazon family ASIN ${product.asin} is reused`);
+  if (product.detailUrl !== `https://www.amazon.com/dp/${product.asin}`) errors.push(`Unexpected Amazon detail URL for ${familyKey}`);
+  if (!product.title?.trim() || !product.brand?.trim() || Number(product.relevanceScore) < 5) errors.push(`Incomplete Amazon family listing ${familyKey}`);
+  if (Number.isNaN(Date.parse(product.verifiedAt))) errors.push(`Invalid Amazon verification date for ${familyKey}`);
+  amazonFamilyKeys.add(familyKey);
+  amazonFamilyAsins.add(product.asin);
+}
 for (const guide of quadrupleExpansionModule.quadrupleExpansionGuides) {
   entries.push({
     site: guide.site,
@@ -660,6 +699,7 @@ const indexQualifiedSites = new Set(
   )].map((match) => match[1]),
 ).size;
 console.log(`- index-qualified country-edition URLs: ${(indexQualifiedPages + indexQualifiedSites) * 4}`);
+console.log(`- verified Amazon family listings: ${amazonFamilyProducts.length}`);
 if (warnings.length) {
   console.log(`\nWarnings (${warnings.length})`);
   warnings.forEach((warning) => console.log(`- ${warning}`));

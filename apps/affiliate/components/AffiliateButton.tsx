@@ -5,18 +5,22 @@ import { useAmazonCreatorsListing } from "./AmazonCreatorsListing";
 import { trackClarityAffiliateClick } from "./ClarityAnalytics";
 import type { AffiliateOffer, AmazonMarketKey, MarketKey, Product, SiteKey } from "@/lib/types";
 
+type AffiliateProductIdentity = Pick<Product, "slug" | "name" | "amazonTitle" | "asin" | "specs">;
+
 export function AffiliateButton({
   site,
   product,
   offer,
   market,
   position,
+  resolveCreatorsListing = true,
 }: {
   site: SiteKey;
-  product: Product;
+  product: AffiliateProductIdentity;
   offer: AffiliateOffer;
   market?: MarketKey;
   position: string;
+  resolveCreatorsListing?: boolean;
 }) {
   const amazonMarket: AmazonMarketKey = market ?? "us";
   const isAmazon = offer.merchant.toLowerCase().includes("amazon");
@@ -24,7 +28,7 @@ export function AffiliateButton({
     site,
     product.slug,
     amazonMarket,
-    Boolean(product.asin ?? product.specs.ASIN) && isAmazon,
+    resolveCreatorsListing && Boolean(product.asin ?? product.specs.ASIN) && isAmazon,
   );
   const href = creatorsListing?.detailPageUrl ?? offer.url;
 

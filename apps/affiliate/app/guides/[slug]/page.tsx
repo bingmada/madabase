@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { AffiliateButtonGroup } from "@/components/AffiliateButton";
+import { AffiliateButton, AffiliateButtonGroup } from "@/components/AffiliateButton";
 import { AmazonListingFreshness } from "@/components/AmazonCreatorsListing";
 import { JsonLd } from "@/components/JsonLd";
 import { BaseMarketEditionLinks } from "@/components/MarketExperience";
@@ -13,6 +13,8 @@ import { breadcrumbSchema, guideSchema, pageMetadata } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 import type { SiteKey } from "@/lib/types";
 import { costumeHalloweenIdeas } from "@/lib/costume-halloween-ideas";
+import { findAmazonFamilyProduct } from "@/lib/amazon-family-products";
+import { amazonAsinAffiliateUrl } from "@/lib/affiliate-tracking";
 
 type AdviceBlock = {
   checklist: string[];
@@ -188,6 +190,20 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
     .filter((roundup): roundup is NonNullable<ReturnType<typeof findRoundup>> => Boolean(roundup));
   const topRoundup = relatedRoundups[0];
   const directAnswer = guide.sections[0]?.body ?? advice.decision;
+  const amazonFamilyProduct = guide.familySlug ? findAmazonFamilyProduct(site.key, guide.familySlug) : undefined;
+  const amazonFamilyIdentity = amazonFamilyProduct ? {
+    slug: `family-${amazonFamilyProduct.familySlug}-${amazonFamilyProduct.asin.toLowerCase()}`,
+    name: amazonFamilyProduct.title,
+    amazonTitle: amazonFamilyProduct.title,
+    asin: amazonFamilyProduct.asin,
+    specs: { ASIN: amazonFamilyProduct.asin },
+  } : undefined;
+  const amazonFamilyOffer = amazonFamilyProduct ? {
+    merchant: "Amazon US",
+    url: amazonAsinAffiliateUrl(site.key, amazonFamilyProduct.asin),
+    label: "Check this exact ASIN on Amazon",
+    priceNote: `Confirm ASIN ${amazonFamilyProduct.asin}, exact model or variant, seller, availability, shipping, and returns before checkout.`,
+  } : undefined;
 
   if (site.key === "style") {
     return (
@@ -300,6 +316,33 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             </section>
           ))}
         </article>
+        {amazonFamilyProduct && amazonFamilyIdentity && amazonFamilyOffer ? (
+          <section className="mt-10 rounded-md border border-[var(--border)] bg-white p-5" aria-labelledby="amazon-family-listing">
+            <p className="eyebrow">Verified Amazon listing anchor</p>
+            <h2 className="mt-3 text-2xl font-bold" id="amazon-family-listing">One exact product in this family</h2>
+            <p className="mt-4 text-lg font-bold leading-7">{amazonFamilyProduct.title}</p>
+            <dl className="mt-4 grid gap-3 text-sm sm:grid-cols-3">
+              <div>
+                <dt className="font-bold">ASIN</dt>
+                <dd className="mt-1 text-[var(--muted)]">{amazonFamilyProduct.asin}</dd>
+              </div>
+              <div>
+                <dt className="font-bold">Brand anchor</dt>
+                <dd className="mt-1 text-[var(--muted)]">{amazonFamilyProduct.brand}</dd>
+              </div>
+              <div>
+                <dt className="font-bold">Listing checked</dt>
+                <dd className="mt-1 text-[var(--muted)]">{new Date(amazonFamilyProduct.verifiedAt).toLocaleDateString("en-US", { timeZone: "UTC" })}</dd>
+              </div>
+            </dl>
+            <p className="mt-4 max-w-3xl text-sm leading-6 text-[var(--muted)]">
+              This is an exact Amazon US listing anchor for the product family, not a hands-on test or an automatic top-pick endorsement. We do not copy Amazon price, star rating, review count, or hosted product imagery here. Reconfirm the title, ASIN, variant, seller, stock, shipping, and return path on Amazon.
+            </p>
+            <div className="mt-5">
+              <AffiliateButton site={site.key} product={amazonFamilyIdentity} offer={amazonFamilyOffer} position="family-guide-amazon-anchor" resolveCreatorsListing={false} />
+            </div>
+          </section>
+        ) : null}
         {guide.comparisonTable ? (
           <section className="mt-10">
             <p className="eyebrow">Decision evidence</p>

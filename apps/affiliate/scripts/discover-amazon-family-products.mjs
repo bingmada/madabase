@@ -11,6 +11,18 @@ const stopWords = new Set([
   "for", "home", "indoor", "large", "motorized", "network", "office", "outdoor", "pet", "plus", "smart", "the",
   "with", "wireless",
 ]);
+const searchOverrides = {
+  "network-attached-storage": "NAS storage enclosure",
+  "matter-hubs-bridges": "Matter smart home hub",
+  "smart-home-sirens": "Zigbee WiFi smart alarm siren",
+  "smart-displays": "Amazon Echo Show smart display",
+};
+const relevanceOverrides = {
+  "network-attached-storage": "NAS storage",
+  "matter-hubs-bridges": "Matter hub",
+  "smart-home-sirens": "smart alarm siren",
+  "smart-displays": "Echo Show display",
+};
 
 function valueFor(name) {
   const index = process.argv.indexOf(name);
@@ -62,7 +74,8 @@ function normalizedTokens(value) {
     .replace(/[^a-z0-9.]+/g, " ")
     .trim()
     .split(/\s+/)
-    .filter((token) => token.length > 1 && !stopWords.has(token));
+    .filter((token) => token.length > 1 && !stopWords.has(token))
+    .map((token) => token.length > 4 && token.endsWith("ies") ? `${token.slice(0, -3)}y` : token.length > 4 && token.endsWith("s") && !token.endsWith("ss") ? token.slice(0, -1) : token);
 }
 
 function relevanceScore(familyName, title, rank) {
@@ -157,7 +170,7 @@ function parseFamilies() {
 function existingAsins() {
   const contentDirectory = path.join(root, "apps/affiliate/lib");
   const files = fs.readdirSync(contentDirectory).filter((name) => name.endsWith(".ts"));
-  return new Set(files.flatMap((name) => [...fs.readFileSync(path.join(contentDirectory, name), "utf8").matchAll(/\b(?:asin:\s*|ASIN:\s*)"([A-Z0-9]{10})"/g)].map((match) => match[1])));
+  return new Set(files.flatMap((name) => [...fs.readFileSync(path.join(contentDirectory, name), "utf8").matchAll(/\b(B[A-Z0-9]{9})\b/g)].map((match) => match[1])));
 }
 
 function readResume(pathname) {
@@ -234,17 +247,19 @@ async function main() {
   for (const [index, family] of families.entries()) {
     try {
       await sleep(index === 0 ? 0 : delayMs);
-      const searchUrl = `https://www.amazon.com/s?k=${encodeURIComponent(family.familyName)}`;
+      const searchName = searchOverrides[family.familySlug] ?? family.familyName;
+      const relevanceName = relevanceOverrides[family.familySlug] ?? family.familyName;
+      const searchUrl = `https://www.amazon.com/s?k=${encodeURIComponent(searchName)}`;
       const search = await fetchHtml(searchUrl);
-      const candidates = parseSearchResults(search.html, family.familyName)
-        .filter((candidate) => !usedAsins.has(candidate.asin) && candidate.relevanceScore >= minimumRelevance(family.familyName))
+      const candidates = parseSearchResults(search.html, relevanceName)
+        .filter((candidate) => !usedAsins.has(candidate.asin) && candidate.relevanceScore >= minimumRelevance(relevanceName))
         .slice(0, 5);
       if (!candidates.length) throw new Error("no_relevant_unique_search_result");
 
       let selected;
       const rejected = [];
       for (const candidate of candidates) {
-        const verified = await verifyCandidate(family, candidate, delayMs);
+        const verified = await verifyCandidate({ ...family, familyName: relevanceName }, candidate, delayMs);
         if (verified.ok) {
           selected = verified.product;
           break;
@@ -253,7 +268,7 @@ async function main() {
       }
       if (!selected) throw new Error(`no_verified_candidate:${JSON.stringify(rejected)}`);
 
-      products.push(selected);
+      products.push({ ...selected, familyName: family.familyName });
       usedAsins.add(selected.asin);
       console.log(JSON.stringify({ progress: `${completedKeys.size + products.length - priorProducts.length}/${allFamilies.length}`, site: family.site, family: family.familySlug, asin: selected.asin, title: selected.title, score: selected.relevanceScore }));
     } catch (error) {

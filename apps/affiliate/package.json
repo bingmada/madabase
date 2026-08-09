@@ -38,6 +38,7 @@
     "report:search-portfolio": "node scripts/report-search-portfolio.mjs",
     "report:quadruple-expansion": "node scripts/export-quadruple-expansion-ledger.mjs",
     "discover:amazon-families": "node scripts/discover-amazon-family-products.mjs",
+    "publish:amazon-families": "node scripts/publish-amazon-family-products.mjs",
     "report:affiliate-clicks": "node scripts/report-affiliate-clicks.mjs",
     "indexnow:preview": "node scripts/submit-indexnow.mjs",
     "indexnow:submit": "node scripts/submit-indexnow.mjs --submit",

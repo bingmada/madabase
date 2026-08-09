@@ -11,6 +11,18 @@ export const amazonTrackingIds: Partial<Record<SiteKey, string>> = {
   style: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_STYLE ?? "madastyle-20",
 };
 
+export function amazonAsinAffiliateUrl(site: SiteKey, asin: string) {
+  const normalizedAsin = asin.trim().toUpperCase();
+  if (!/^[A-Z0-9]{10}$/.test(normalizedAsin)) throw new Error(`Invalid Amazon ASIN: ${asin}`);
+  const direct = new URL(`/dp/${normalizedAsin}`, "https://www.amazon.com");
+  const trackingId = amazonTrackingIds[site];
+  if (trackingId) direct.searchParams.set("tag", trackingId);
+  direct.searchParams.set("linkCode", "ll2");
+  direct.searchParams.set("language", "en_US");
+  direct.searchParams.set("ref_", "as_li_ss_tl");
+  return direct.toString();
+}
+
 function amazonAsin(product: Product) {
   const asin = (product.asin ?? product.specs.ASIN)?.trim().toUpperCase();
   return /^[A-Z0-9]{10}$/.test(asin ?? "") ? asin : undefined;
@@ -51,13 +63,7 @@ function trackedAmazonUrl(site: SiteKey, product: Product, offer: AffiliateOffer
 
   const asin = amazonAsin(product);
   if (!asin) return offer.url;
-
-  const direct = new URL(`/dp/${asin}`, "https://www.amazon.com");
-  direct.searchParams.set("tag", trackingId);
-  direct.searchParams.set("linkCode", "ll2");
-  direct.searchParams.set("language", "en_US");
-  direct.searchParams.set("ref_", "as_li_ss_tl");
-  return direct.toString();
+  return amazonAsinAffiliateUrl(site, asin);
 }
 
 export function applySiteAffiliateTracking(product: Product): Product {
