@@ -1,4 +1,7 @@
 import familyProductData from "../config/amazon-family-products.json";
+import broadProductPilotData from "../config/broad-product-pilot-amazon-products.json";
+import broadProductPilot2Data from "../config/broad-product-pilot-2-amazon-products.json";
+import broadProductPilot3Data from "../config/broad-product-pilot-3-amazon-products.json";
 import type { SiteKey } from "./types";
 
 export type AmazonFamilyProduct = {
@@ -12,9 +15,24 @@ export type AmazonFamilyProduct = {
   detailUrl: string;
   verifiedAt: string;
   relevanceScore: number;
+  publicationStatus?: "published" | "draft";
 };
 
-const amazonFamilyProducts = familyProductData.products as AmazonFamilyProduct[];
+const amazonFamilyProducts: AmazonFamilyProduct[] = [
+  ...(familyProductData.products as AmazonFamilyProduct[]),
+  ...(broadProductPilotData.products as AmazonFamilyProduct[]).map((product) => ({
+    ...product,
+    publicationStatus: broadProductPilotData.publicationStatus as "published" | "draft",
+  })),
+  ...(broadProductPilot2Data.products as AmazonFamilyProduct[]).map((product) => ({
+    ...product,
+    publicationStatus: broadProductPilot2Data.publicationStatus as "published" | "draft",
+  })),
+  ...(broadProductPilot3Data.products as AmazonFamilyProduct[]).map((product) => ({
+    ...product,
+    publicationStatus: broadProductPilot3Data.publicationStatus as "published" | "draft",
+  })),
+];
 const supportedSites = new Set<SiteKey>(["network", "smarthome", "homeoffice", "baby", "pet"]);
 const seenFamilies = new Set<string>();
 const seenAsins = new Set<string>();
@@ -33,9 +51,15 @@ for (const product of amazonFamilyProducts) {
 }
 
 export function findAmazonFamilyProduct(site: SiteKey, familySlug: string) {
-  return amazonFamilyProducts.find((product) => product.site === site && product.familySlug === familySlug);
+  return amazonFamilyProducts.find((product) =>
+    product.site === site
+    && product.familySlug === familySlug
+    && (process.env.AFFILIATE_INCLUDE_DRAFTS === "1" || product.publicationStatus !== "draft"),
+  );
 }
 
 export function amazonFamilyProductInventory() {
-  return [...amazonFamilyProducts];
+  return amazonFamilyProducts.filter((product) =>
+    process.env.AFFILIATE_INCLUDE_DRAFTS === "1" || product.publicationStatus !== "draft",
+  );
 }

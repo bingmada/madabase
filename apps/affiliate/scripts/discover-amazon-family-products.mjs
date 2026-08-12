@@ -7,7 +7,7 @@ import {
 } from "./amazon-family-semantic-policy.mjs";
 
 const root = path.resolve(new URL("../../..", import.meta.url).pathname);
-const familySourcePath = path.join(root, "apps/affiliate/lib/quadruple-expansion-content.ts");
+const defaultFamilySourcePath = path.join(root, "apps/affiliate/lib/quadruple-expansion-content.ts");
 const defaultOutputPath = path.join(root, "docs/affiliate-amazon-family-products-2026-08-09.json");
 const userAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124 Safari/537.36";
 const supportedSites = new Set(["network", "smarthome", "homeoffice", "baby", "pet"]);
@@ -125,6 +125,12 @@ function extractBrand(html) {
   return byline || "Brand shown on the Amazon listing";
 }
 
+function primaryAvailabilityText(html) {
+  const buyBox = html.match(/id="availabilityInsideBuyBox_feature_div"[\s\S]*?(?=<div[^>]+id="(?:quantityLimit|alternativeProduct|globalStore|quantityRelocate))/i)?.[0];
+  const availability = html.match(/<div id="availability"[\s\S]*?<\/div>/i)?.[0];
+  return plainText(buyBox ?? availability ?? "");
+}
+
 function looksBlocked(html) {
   return /enter the characters you see below|sorry, we just need to make sure|automated access|captcha/i.test(html);
 }
@@ -156,7 +162,13 @@ async function fetchHtml(url, retries = 5) {
 }
 
 function parseFamilies() {
+  const familySourcePath = path.resolve(root, valueFor("--family-source") ?? defaultFamilySourcePath);
   const source = fs.readFileSync(familySourcePath, "utf8");
+  if (familySourcePath.endsWith(".json")) {
+    const parsed = JSON.parse(source);
+    if (!Array.isArray(parsed.families)) throw new Error(`Family source ${familySourcePath} does not contain a families array`);
+    return parsed.families.filter((family) => supportedSites.has(family.site));
+  }
   const pattern = /\{ site: "(network|smarthome|homeoffice|baby|pet|costume)", slug: "([^"]+)", name: "([^"]+)", category: "([^"]+)", alternative: "([^"]+)" \}/g;
   return [...source.matchAll(pattern)]
     .map((match) => ({ site: match[1], familySlug: match[2], familyName: match[3], category: match[4], alternative: match[5] }))
@@ -197,7 +209,10 @@ async function verifyCandidate(family, candidate, delayMs) {
   const detail = await fetchHtml(detailUrl);
   const directTitle = extractDetailTitle(detail.html) || candidate.title;
   const asinMatched = detail.html.toUpperCase().includes(candidate.asin);
-  const unavailable = /currently unavailable|we don['’]t know when or if this item will be back in stock|temporarily out of stock/i.test(plainText(detail.html));
+  // Amazon detail pages can mention an unavailable recommendation or variation
+  // far below the active offer. Availability must be read from the primary
+  // buy box, otherwise an in-stock ASIN can be rejected as a false positive.
+  const unavailable = /currently unavailable|we don['’]t know when or if this item will be back in stock|temporarily out of stock/i.test(primaryAvailabilityText(detail.html));
   const semanticMatch = amazonFamilyTitleMeetsPolicy(family.familySlug, directTitle);
   const directRelevance = relevanceScore(family.familyName, directTitle, candidate.rank - 1);
   const threshold = minimumRelevance(family.familyName);

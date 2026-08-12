@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-08-11T04:00:00.000Z",
+  "publicationStatus": "published",
+  "cohort": "broad-product-pilot-3",
+  "releaseCandidate": "breadth-64-2026-08-16",
+  "policy": "Thirty additional independent product-family buying pages. The owner authorized an early joint release with the first two breadth cohorts after the complete August 12 day-3 review found no broad technical, canonical, duplication, merchant, or safety regression.",
+  "families": [
+    { "site": "network", "familySlug": "ethernet-surge-protectors", "familyName": "Ethernet surge protectors", "category": "wired", "alternative": "fiber isolation or protected indoor-only cabling" },
+    { "site": "network", "familySlug": "rj45-modular-plugs", "familyName": "RJ45 modular plugs", "category": "wired", "alternative": "factory-terminated patch cables or keystone jacks" },
+    { "site": "network", "familySlug": "network-punch-down-tools", "familyName": "Network punch-down tools", "category": "wired", "alternative": "tool-free jacks or contractor termination" },
+    { "site": "network", "familySlug": "rack-cable-management-panels", "familyName": "Rack cable management panels", "category": "wired", "alternative": "short patch cords and vertical rack managers" },
+    { "site": "network", "familySlug": "usb-print-servers", "familyName": "USB print servers", "category": "wired", "alternative": "a current network printer or host-computer sharing" },
+    { "site": "network", "familySlug": "poe-network-video-recorders", "familyName": "PoE network video recorders", "category": "wired", "alternative": "a separate PoE switch with software or cloud recording" },
+
+    { "site": "smarthome", "familySlug": "smart-electric-kettles", "familyName": "Smart electric kettles", "category": "automation", "alternative": "temperature-control kettles without app connectivity" },
+    { "site": "smarthome", "familySlug": "smart-air-purifiers", "familyName": "Smart air purifiers", "category": "climate", "alternative": "non-connected purifiers with independent air-quality monitoring" },
+    { "site": "smarthome", "familySlug": "smart-humidifiers", "familyName": "Smart humidifiers", "category": "climate", "alternative": "manual humidifiers with a separate hygrometer" },
+    { "site": "smarthome", "familySlug": "smart-tower-fans", "familyName": "Smart tower fans", "category": "climate", "alternative": "manual tower fans or ceiling fans with wall controls" },
+    { "site": "smarthome", "familySlug": "robot-lawn-mowers", "familyName": "Robot lawn mowers", "category": "automation", "alternative": "battery push mowers or scheduled lawn service" },
+    { "site": "smarthome", "familySlug": "smart-ceiling-lights", "familyName": "Smart ceiling lights", "category": "automation", "alternative": "standard fixtures controlled by compatible smart switches" },
+
+    { "site": "homeoffice", "familySlug": "office-chair-mats", "familyName": "Office chair mats", "category": "ergonomics", "alternative": "floor-safe chair casters or a replaceable area rug" },
+    { "site": "homeoffice", "familySlug": "under-desk-cpu-holders", "familyName": "Under-desk CPU holders", "category": "desks", "alternative": "a ventilated tower stand beside the desk" },
+    { "site": "homeoffice", "familySlug": "monitor-riser-stands", "familyName": "Monitor riser stands", "category": "ergonomics", "alternative": "a height-adjustable monitor arm" },
+    { "site": "homeoffice", "familySlug": "standing-desk-balance-boards", "familyName": "Standing-desk balance boards", "category": "ergonomics", "alternative": "anti-fatigue mats and scheduled movement breaks" },
+    { "site": "homeoffice", "familySlug": "wireless-presentation-clickers", "familyName": "Wireless presentation clickers", "category": "meetings", "alternative": "keyboard shortcuts or phone-based slide control" },
+    { "site": "homeoffice", "familySlug": "under-desk-drawers", "familyName": "Under-desk drawers", "category": "desks", "alternative": "mobile pedestals or desktop organizers" },
+
+    { "site": "baby", "familySlug": "stroller-organizers", "familyName": "Stroller organizers", "category": "travel", "alternative": "the stroller basket or a safely carried diaper bag" },
+    { "site": "baby", "familySlug": "diaper-caddies", "familyName": "Diaper caddies", "category": "feeding", "alternative": "fixed changing-station drawers or closed bins" },
+    { "site": "baby", "familySlug": "baby-wipe-warmers", "familyName": "Baby wipe warmers", "category": "feeding", "alternative": "room-temperature wipes warmed briefly by hand" },
+    { "site": "baby", "familySlug": "baby-bottle-drying-racks", "familyName": "Baby bottle drying racks", "category": "feeding", "alternative": "a clean air-drying surface with protected storage" },
+    { "site": "baby", "familySlug": "baby-bath-kneelers", "familyName": "Baby bath kneelers", "category": "gear", "alternative": "a dry folded towel outside the splash zone" },
+    { "site": "baby", "familySlug": "stroller-fans", "familyName": "Stroller fans", "category": "travel", "alternative": "shade, cooler scheduling, ventilation, and indoor cooling" },
+
+    { "site": "pet", "familySlug": "dog-car-seat-covers", "familyName": "Dog car seat covers", "category": "comfort", "alternative": "a secured travel crate with a washable cargo liner" },
+    { "site": "pet", "familySlug": "pressure-mounted-pet-gates", "familyName": "Pressure-mounted pet gates", "category": "comfort", "alternative": "hardware-mounted gates or a closed pet-safe room" },
+    { "site": "pet", "familySlug": "slow-feeder-dog-bowls", "familyName": "Slow feeder dog bowls", "category": "feeding", "alternative": "portion puzzles or supervised smaller meals" },
+    { "site": "pet", "familySlug": "cat-scratching-posts", "familyName": "Cat scratching posts", "category": "comfort", "alternative": "horizontal scratchers and wall-mounted scratching panels" },
+    { "site": "pet", "familySlug": "pet-carrier-backpacks", "familyName": "Pet carrier backpacks", "category": "comfort", "alternative": "structured hand carriers or pet strollers" },
+    { "site": "pet", "familySlug": "dog-cooling-vests", "familyName": "Dog cooling vests", "category": "comfort", "alternative": "cooler scheduling, shade, water, and indoor rest" }
+  ]
+}

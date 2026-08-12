@@ -11,7 +11,7 @@ const errors = [];
 const warnings = [];
 const entries = [];
 const productFactoryNames = new Set(["catalogProduct", "expandedProduct", "exactProduct"]);
-const guideFactoryNames = new Set(["guide"]);
+const guideFactoryNames = new Set(["guide", "pilotGuide", "pilot3Guide"]);
 const allowedOfferHosts = new Set([
   "amzn.to",
   "www.amazon.com",
@@ -23,6 +23,27 @@ const authorizedNonAmazonOffers = new Map([
     {
       merchant: "Bc Babycare via CJ",
       path: "/go/cj/bc-babycare-hexa-effortless",
+    },
+  ],
+  [
+    "baby:product:bc-babycare-clarvion-bottle-washer",
+    {
+      merchant: "Bc Babycare via CJ",
+      path: "/go/cj/bc-babycare-clarvion-bundle",
+    },
+  ],
+  [
+    "baby:product:bc-babycare-baby-food-maker",
+    {
+      merchant: "Bc Babycare via CJ",
+      path: "/go/cj/bc-babycare-baby-food-maker-blue-extra",
+    },
+  ],
+  [
+    "baby:product:bc-babycare-3-in-1-potty-chair",
+    {
+      merchant: "Bc Babycare via CJ",
+      path: "/go/cj/bc-babycare-potty-chair-green",
     },
   ],
 ]);
@@ -146,7 +167,14 @@ function visit(sourceFile, node) {
     addEntry(sourceFile, node.arguments[0], "guide", node.expression.text);
   }
 
-  if (ts.isObjectLiteralExpression(node)) {
+  if (
+    ts.isObjectLiteralExpression(node)
+    && !(
+      ts.isCallExpression(node.parent)
+      && ts.isIdentifier(node.parent.expression)
+      && (guideFactoryNames.has(node.parent.expression.text) || productFactoryNames.has(node.parent.expression.text))
+    )
+  ) {
     const props = properties(node);
     const kind = entryKind(props);
 

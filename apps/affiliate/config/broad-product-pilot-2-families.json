@@ -1,0 +1,23 @@
+{
+  "generatedAt": "2026-08-10T08:00:00.000Z",
+  "publicationStatus": "published",
+  "cohort": "broad-product-pilot-2",
+  "releaseCandidate": "breadth-64-2026-08-16",
+  "families": [
+    { "site": "network", "familySlug": "ethernet-keystone-jacks", "familyName": "Ethernet keystone jacks", "category": "wired", "alternative": "pre-terminated wall couplers or direct patch cables" },
+    { "site": "network", "familySlug": "structured-media-enclosures", "familyName": "Structured media enclosures", "category": "wired", "alternative": "open wall racks or surface-mounted backboards" },
+    { "site": "network", "familySlug": "pass-through-ethernet-crimping-tools", "familyName": "Pass-through Ethernet crimping tools", "category": "wired", "alternative": "standard modular crimpers or field-termination plugs" },
+    { "site": "smarthome", "familySlug": "smart-smoke-co-alarms", "familyName": "Smart smoke and carbon monoxide alarms", "category": "automation", "alternative": "listed interconnected alarms with a separate listener" },
+    { "site": "smarthome", "familySlug": "smart-hose-faucet-timers", "familyName": "Smart hose faucet timers", "category": "outdoor", "alternative": "manual hose timers or multi-zone irrigation controllers" },
+    { "site": "smarthome", "familySlug": "smart-dehumidifiers", "familyName": "Smart dehumidifiers", "category": "climate", "alternative": "non-connected dehumidifiers with continuous drain" },
+    { "site": "homeoffice", "familySlug": "desktop-teleprompters", "familyName": "Desktop teleprompters", "category": "meetings", "alternative": "tablet prompters or on-screen speaker notes" },
+    { "site": "homeoffice", "familySlug": "vertical-laptop-stands", "familyName": "Vertical laptop stands", "category": "ergonomics", "alternative": "open laptop risers or flat desk storage" },
+    { "site": "homeoffice", "familySlug": "fido-hardware-security-keys", "familyName": "FIDO hardware security keys", "category": "meetings", "alternative": "platform passkeys or authenticator apps" },
+    { "site": "baby", "familySlug": "roll-up-feeding-bibs", "familyName": "Roll-up feeding bibs", "category": "feeding", "alternative": "full-silicone bibs or washable smocks" },
+    { "site": "baby", "familySlug": "toddler-learning-towers", "familyName": "Toddler learning towers", "category": "gear", "alternative": "age-appropriate step stools used with direct supervision" },
+    { "site": "baby", "familySlug": "childproof-cabinet-locks", "familyName": "Childproof cabinet locks", "category": "gear", "alternative": "locked high storage outside a child's reach" },
+    { "site": "pet", "familySlug": "dog-exercise-pens", "familyName": "Dog exercise pens", "category": "comfort", "alternative": "properly sized crates or pet-safe gated rooms" },
+    { "site": "pet", "familySlug": "dog-life-jackets", "familyName": "Dog life jackets", "category": "travel", "alternative": "shore-only activity with direct restraint and supervision" },
+    { "site": "pet", "familySlug": "pet-grooming-tables", "familyName": "Pet grooming tables", "category": "grooming", "alternative": "floor-level grooming or professional grooming services" }
+  ]
+}

@@ -19,6 +19,7 @@ import {
 import { expansionGuides } from "./expansion-guides";
 import { costumeGuides } from "./costume-content";
 import { cjBabyProducts } from "./cj-baby-content";
+import { cjBabyExpansionProducts } from "./cj-baby-expansion-content";
 import { gscPriorityGuides, gscPriorityProducts, gscPriorityRoundups } from "./gsc-priority-expansion-content";
 import {
   networkAccessoryExpansionGuides,
@@ -76,6 +77,9 @@ import {
   secondRoundAugust2026Guides,
   secondRoundAugust2026Products,
 } from "./second-round-august-2026-content";
+import { broadProductPilotGuides } from "./broad-product-pilot-content";
+import { broadProductPilot2Guides } from "./broad-product-pilot-2-content";
+import { broadProductPilot3Guides } from "./broad-product-pilot-3-content";
 
 export const products: Product[] = [
   {
@@ -1816,6 +1820,8 @@ export const guides: Guide[] = [
     title: "How to Choose an Automatic Pet Feeder",
     dek: "A practical checklist for portion control, power backup, cleaning, and food compatibility.",
     category: "feeding",
+    image: "/images/affiliate/pet-smart-feeder-realistic.webp",
+    imageAlt: "Automatic pet feeder set up for portion, power-backup, food-fit, and cleaning checks",
     relatedRoundups: ["best-automatic-cat-feeders"],
     sections: [
       { heading: "Start with food type", body: "Dry kibble feeders are the most reliable. If you feed wet food, choose a model with cooling support and shorter schedules." },
@@ -1890,6 +1896,8 @@ export const guides: Guide[] = [
     title: "Automatic Feeder Portion Size Guide",
     dek: "How to think about kibble shape, portion repeatability, feeding schedules, and backup plans before trusting an automatic feeder.",
     category: "feeding",
+    image: "/images/affiliate/pet-smart-feeder-realistic.webp",
+    imageAlt: "Automatic pet feeder and bowl prepared for weighing and calibrating meal portions",
     relatedRoundups: ["best-automatic-cat-feeders"],
     sources: [
       {
@@ -2342,6 +2350,7 @@ products.push(...nextReleaseProducts);
 roundups.push(...nextReleaseRoundups);
 guides.push(...nextReleaseGuides);
 products.push(...cjBabyProducts);
+products.push(...cjBabyExpansionProducts);
 products.push(...gscPriorityProducts);
 roundups.push(...gscPriorityRoundups);
 guides.push(...gscPriorityGuides);
@@ -2353,6 +2362,9 @@ roundups.push(...aggressivePortfolioRoundups);
 guides.push(...aggressivePortfolioGuides);
 guides.push(...costumeGuides);
 guides.push(...quadrupleExpansionGuides);
+guides.push(...broadProductPilotGuides);
+guides.push(...broadProductPilot2Guides);
+guides.push(...broadProductPilot3Guides);
 
 const includeDrafts = process.env.AFFILIATE_INCLUDE_DRAFTS === "1";
 

@@ -30,6 +30,8 @@ export const topicClusterGuides: Guide[] = [
     dek: "Check minimum size, inward-facing setup, leg position, head support, airway visibility, and caregiver adjustment.",
     category: "travel",
     updatedAt,
+    image: "/images/affiliate/baby-carrier-realistic.webp",
+    imageAlt: "Structured mesh baby carrier positioned for a newborn airway and fit checklist",
     relatedProducts: ["babybjorn-carrier-harmony"],
     relatedRoundups: ["babybjorn-harmony-vs-ergobaby-omni-breeze", "best-baby-carriers-and-sleep-routine-upgrades"],
     sources: [
@@ -416,6 +418,8 @@ export const topicClusterGuides: Guide[] = [
     dek: "Decide whether a reinforcement plate can spread load safely, when a grommet mount is better, and when the desktop is unsuitable for an arm.",
     category: "ergonomics",
     updatedAt,
+    image: "/images/affiliate/homeoffice-monitor-arm-realistic.webp",
+    imageAlt: "Monitor arm clamp and desktop edge inspected before adding a reinforcement plate",
     relatedProducts: ["huanuo-titanlift-heavy-duty-monitor-arm", "amazon-basics-monitor-arm"],
     relatedRoundups: ["best-monitor-arms-for-home-office"],
     sources: [

@@ -656,9 +656,9 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                 {Object.entries(product.specs)
                   .filter(([key]) => key !== "Link status")
                   .map(([key, value]) => (
-                  <div className="flex justify-between gap-4 py-3 text-sm" key={key}>
+                  <div className="grid min-w-0 gap-2 py-3 text-sm sm:grid-cols-[minmax(0,1fr)_minmax(0,1.5fr)] sm:gap-4" key={key}>
                     <dt className="font-semibold text-[var(--muted)]">{key}</dt>
-                    <dd className="text-right font-bold">{value}</dd>
+                    <dd className="min-w-0 break-words font-bold sm:text-right">{value}</dd>
                   </div>
                   ))}
               </dl>

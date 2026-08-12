@@ -86,6 +86,11 @@ export const sites: Record<SiteKey, SiteConfig> = {
       { slug: "sleep", name: "Sleep", description: "Monitors, sound machines, nursery setup, and routine basics." },
       { slug: "travel", name: "Travel", description: "Strollers, carriers, travel bags, and lightweight gear." },
       { slug: "feeding", name: "Feeding", description: "Bottles, sterilizers, pumps, and clean-up routines." },
+      {
+        slug: "gear",
+        name: "Daily Gear",
+        description: "Potty training, childproofing, bath, play, and everyday care gear.",
+      },
     ],
   },
   network: {

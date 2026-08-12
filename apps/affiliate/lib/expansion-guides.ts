@@ -137,6 +137,8 @@ export const expansionGuides: Guide[] = [
     dek: "Compare usable depth, monitor layout, room clearance, and moving space before choosing desk width.",
     category: "desks",
     updatedAt: "June 27, 2026",
+    image: "/images/affiliate/category-homeoffice-desks-editorial-v2.webp",
+    imageAlt: "Measured home-office desktop layout used to compare 48-inch and 55-inch desks",
     relatedRoundups: ["best-standing-desks-for-small-spaces"],
     sources: [
       {
@@ -189,6 +191,8 @@ export const expansionGuides: Guide[] = [
     dek: "A repeatable cleaning routine for bowls, chutes, hoppers, seals, and food-contact tools.",
     category: "feeding",
     updatedAt: "July 28, 2026",
+    image: "/images/affiliate/pet-smart-feeder-realistic.webp",
+    imageAlt: "Automatic pet feeder with removable bowl and hopper ready for a cleaning checklist",
     relatedRoundups: ["best-automatic-cat-feeders"],
     sources: [
       {

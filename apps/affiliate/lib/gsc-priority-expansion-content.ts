@@ -416,6 +416,8 @@ export const gscPriorityGuides: Guide[] = [
     dek: "Compare newborn setup, outward carry, back carry, mesh comfort, waistband support, and caregiver fit across the first year.",
     category: "travel",
     updatedAt,
+    image: "/images/affiliate/baby-carrier-realistic.webp",
+    imageAlt: "Structured mesh baby carrier prepared for an age-by-age fit and carry-position comparison",
     relatedProducts: ["ergobaby-omni-breeze-carrier", "babybjorn-carrier-harmony"],
     relatedRoundups: ["babybjorn-harmony-vs-ergobaby-omni-breeze", "best-baby-carriers-by-age-and-position"],
     sources: [

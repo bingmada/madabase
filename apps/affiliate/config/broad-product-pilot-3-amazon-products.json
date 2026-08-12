@@ -1,0 +1,618 @@
+{
+  "generatedAt": "2026-08-11T06:39:00.000Z",
+  "publicationStatus": "published",
+  "cohort": "broad-product-pilot-3",
+  "releaseCandidate": "breadth-64-2026-08-16",
+  "releaseVerifiedAt": "2026-08-12T06:50:58.632Z",
+  "source": "Amazon US public listing pages; no price, star rating, review count, or Amazon-hosted image is stored",
+  "verificationPolicy": "Each selected ASIN appeared in an Amazon search result for the family and its direct /dp/ page returned the same ASIN with an in-stock primary buy-box signal. Availability text outside the active buy box is ignored because Amazon can embed unavailable recommendations and variations on the same page.",
+  "totals": {
+    "requestedFamilies": 30,
+    "selected": 30,
+    "failed": 0,
+    "remaining": 0
+  },
+  "products": [
+    {
+      "site": "baby",
+      "familySlug": "baby-bath-kneelers",
+      "familyName": "Baby bath kneelers",
+      "category": "gear",
+      "alternative": "a dry folded towel outside the splash zone",
+      "asin": "B08CNM6DZT",
+      "title": "Benicci Bath Kneeler and Elbow Rest Pad Set, Kneeling Mat for Baby Bathing | Comfortable Foam with Toy Organizer Pockets, Quick Drying, Foldable, Non-Slip, Painless Knee Cushion for Parents",
+      "brand": "Benicci",
+      "detailUrl": "https://www.amazon.com/dp/B08CNM6DZT",
+      "verifiedAt": "2026-08-11T06:19:13.903Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 14,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "baby",
+      "familySlug": "baby-bottle-drying-racks",
+      "familyName": "Baby bottle drying racks",
+      "category": "feeding",
+      "alternative": "a clean air-drying surface with protected storage",
+      "asin": "B0FB39V35S",
+      "title": "Lifewit 15-Hooks Baby Bottle Drying Rack with Drain Mat for Countertop | Vertical Bottle Storage Organizer, Stand-Up Dryer Holder for Pacifiers, Pump Parts, Baby Stuff, Newborn Essentials Must Haves",
+      "brand": "Lifewit",
+      "detailUrl": "https://www.amazon.com/dp/B0FB39V35S",
+      "verifiedAt": "2026-08-11T06:19:02.477Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.5,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "baby",
+      "familySlug": "baby-wipe-warmers",
+      "familyName": "Baby wipe warmers",
+      "category": "feeding",
+      "alternative": "room-temperature wipes warmed briefly by hand",
+      "asin": "B0CNP84VXZ",
+      "title": "Momcozy Baby Wipe Warmer, Innovative Spring Design,Large Capacity Dispenser | Wipe Warmer with Night Light, Fast and Even Heating, 4 Adjustable Temperature Modes, Baby Shower & Registry Must-haves, Green",
+      "brand": "Momcozy",
+      "detailUrl": "https://www.amazon.com/dp/B0CNP84VXZ",
+      "verifiedAt": "2026-08-11T06:18:52.061Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 14,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "baby",
+      "familySlug": "diaper-caddies",
+      "familyName": "Diaper caddies",
+      "category": "feeding",
+      "alternative": "fixed changing-station drawers or closed bins",
+      "asin": "B0CLYXFLQQ",
+      "title": "Diaper Caddy Organizer for Changing Table, Storage Basket for Wipes, Gift for Baby Shower, Car Organizer, Nursery Organizer, Portable Storage",
+      "brand": "PeraBella",
+      "detailUrl": "https://www.amazon.com/dp/B0CLYXFLQQ",
+      "verifiedAt": "2026-08-11T06:18:42.848Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 14,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "baby",
+      "familySlug": "stroller-organizers",
+      "familyName": "Stroller organizers",
+      "category": "travel",
+      "alternative": "the stroller basket or a safely carried diaper bag",
+      "asin": "B07JMZYJVW",
+      "title": "Momcozy Universal Stroller Organizer with Insulated Cup Holder | Detachable Phone Bag and Shoulder Strap, Fits for Uppababy, Baby Jogger, Britax, BOB, Umbrella, and Pet Strollers",
+      "brand": "Momcozy",
+      "detailUrl": "https://www.amazon.com/dp/B07JMZYJVW",
+      "verifiedAt": "2026-08-11T06:18:33.970Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 14,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "baby",
+      "familySlug": "stroller-fans",
+      "familyName": "Stroller fans",
+      "category": "travel",
+      "alternative": "shade, cooler scheduling, ventilation, and indoor cooling",
+      "asin": "B0CQ2RMMFN",
+      "title": "Momcozy 8000mAh Portable Stroller Fan | 27H Ultra-long Battery Life | Detachable 4 Speed 360°Rotate | 2 Modes LED Night Light, USB Rechargeable Handheld Cooling Fan for Travel, Car Seat, Bedroom",
+      "brand": "Momcozy",
+      "detailUrl": "https://www.amazon.com/dp/B0CQ2RMMFN",
+      "verifiedAt": "2026-08-11T06:39:00.000Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 14,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "monitor-riser-stands",
+      "familyName": "Monitor riser stands",
+      "category": "ergonomics",
+      "alternative": "a height-adjustable monitor arm",
+      "asin": "B0G2RTY746",
+      "title": "WALI Computer Monitor Stand for Desk, Adjustable Laptop Riser, up to 44 lbs | Monitor Riser Under-Desk Storage, Fits Monitors, Laptops, Printers, for Home, Office, School Supplies (PTT001), 1 Pack, Black",
+      "brand": "WALI",
+      "detailUrl": "https://www.amazon.com/dp/B0G2RTY746",
+      "verifiedAt": "2026-08-11T06:17:43.117Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.5,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "office-chair-mats",
+      "familyName": "Office chair mats",
+      "category": "ergonomics",
+      "alternative": "floor-safe chair casters or a replaceable area rug",
+      "asin": "B0893BD69B",
+      "title": "Kuyal Clear Chair mat for Hardwood Floor, 36 x 48 inches | Transparent Floor Mats Wood/Tile Protection Mat for Office & Home (36\" X 48\" Rectangle)",
+      "brand": "Kuyal",
+      "detailUrl": "https://www.amazon.com/dp/B0893BD69B",
+      "verifiedAt": "2026-08-11T06:17:19.938Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 14,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "standing-desk-balance-boards",
+      "familyName": "Standing-desk balance boards",
+      "category": "ergonomics",
+      "alternative": "anti-fatigue mats and scheduled movement breaks",
+      "asin": "B06VSTLM7Z",
+      "title": "Adult Balance Board for Standing Desk - Anti Fatigue USA Made 360 Degree Rocker Wobble Board as Exercise Equipment to Increase Focus & Movement - Sustainable Anti-Slip Plane Standing Board",
+      "brand": "FluidStance",
+      "detailUrl": "https://www.amazon.com/dp/B06VSTLM7Z",
+      "verifiedAt": "2026-08-11T06:17:57.101Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 17,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "under-desk-cpu-holders",
+      "familyName": "Under-desk CPU holders",
+      "category": "desks",
+      "alternative": "a ventilated tower stand beside the desk",
+      "asin": "B01MEDE9WO",
+      "title": "VIVO Black Under Desk and Wall Office PC Mount, MOUNT-PC01 | 3.5 to 7.8 inch Wide Adjustable Computer Mount, CPU Case Machine Holder Stand, Swivel and Secure Locking, Holds 22 lbs",
+      "brand": "Brand shown on the Amazon listing",
+      "detailUrl": "https://www.amazon.com/dp/B01MEDE9WO",
+      "verifiedAt": "2026-08-11T06:17:30.678Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 17,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "under-desk-drawers",
+      "familyName": "Under-desk drawers",
+      "category": "desks",
+      "alternative": "mobile pedestals or desktop organizers",
+      "asin": "B0CX9GS4BC",
+      "title": "SVNNELP Under Desk Table Drawer Storage Organizer,3 Pack Large & Medium & Small Slide Out Desk Drawers - Hidden Desktop Organizer,Attachable Pencil Storage Tray Under Table(SML)",
+      "brand": "SVNNELP",
+      "detailUrl": "https://www.amazon.com/dp/B0CX9GS4BC",
+      "verifiedAt": "2026-08-11T06:18:22.274Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.5,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "wireless-presentation-clickers",
+      "familyName": "Wireless presentation clickers",
+      "category": "meetings",
+      "alternative": "keyboard shortcuts or phone-based slide control",
+      "asin": "B09DQ7872W",
+      "title": "QUI Presentation Clicker with Volume Control, Wireless Presenter Remote | Plug & Play 2.4GHz USB Slide Advancer Compatible with Mac/Windows, Works with PowerPoint, Keynote, and Google Slides",
+      "brand": "QUI",
+      "detailUrl": "https://www.amazon.com/dp/B09DQ7872W",
+      "verifiedAt": "2026-08-11T06:18:07.208Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 14,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "network",
+      "familySlug": "ethernet-surge-protectors",
+      "familyName": "Ethernet surge protectors",
+      "category": "wired",
+      "alternative": "fiber isolation or protected indoor-only cabling",
+      "asin": "B07GBLFFNK",
+      "title": "Ethernet Surge Protector - Gigabit and PoE++ Compatible (2 Pack) | High PoE++ capacity and Class 8 (154W/3.2A) power, protects all 4 pairs w/ Gas Discharge Tube (GDT) - Tupavco TP302x2",
+      "brand": "Tupavco",
+      "detailUrl": "https://www.amazon.com/dp/B07GBLFFNK",
+      "verifiedAt": "2026-08-11T06:14:43.378Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.5,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "network",
+      "familySlug": "network-punch-down-tools",
+      "familyName": "Network punch-down tools",
+      "category": "wired",
+      "alternative": "tool-free jacks or contractor termination",
+      "asin": "B08XK752YK",
+      "title": "VCELINK Punch Down Impact Tool with 110 and 66 Blades, Network Wire Punch | 110 Blade, 66 Blade, Punch Down Tool Kit, Keystone Impact Terminal Insertion Tools, Cat6A/Cat6/Cat5/Cat3 Stripper",
+      "brand": "VCELINK",
+      "detailUrl": "https://www.amazon.com/dp/B08XK752YK",
+      "verifiedAt": "2026-08-11T06:15:05.873Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.5,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "network",
+      "familySlug": "poe-network-video-recorders",
+      "familyName": "PoE network video recorders",
+      "category": "wired",
+      "alternative": "a separate PoE switch with software or cloud recording",
+      "asin": "B0GSVRTZVG",
+      "title": "REOLINK RLN8-410 8CH Network Video Recorder for Home Security Camera System | 24/7 Recording (HDD Not Included), Only Work with REOLINK 16MP/12MP/4K/8MP/5MP/4MP PoE IP Camera",
+      "brand": "Brand shown on the Amazon listing",
+      "detailUrl": "https://www.amazon.com/dp/B0GSVRTZVG",
+      "verifiedAt": "2026-08-11T06:15:46.536Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.5,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "network",
+      "familySlug": "rack-cable-management-panels",
+      "familyName": "Rack cable management panels",
+      "category": "wired",
+      "alternative": "short patch cords and vertical rack managers",
+      "asin": "B00066HS4O",
+      "title": "StarTech 1U 19in Rack Cable Management Panel, D-Ring, Metal (CABLMANAGER2) | Horizontal or vertical wire manager, 3in ABS plastic hooks spaced 4in, Fits 2 or 4-post racks",
+      "brand": "StarTech.com",
+      "detailUrl": "https://www.amazon.com/dp/B00066HS4O",
+      "verifiedAt": "2026-08-11T06:23:00.435Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.5,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "network",
+      "familySlug": "rj45-modular-plugs",
+      "familyName": "RJ45 modular plugs",
+      "category": "wired",
+      "alternative": "factory-terminated patch cables or keystone jacks",
+      "asin": "B0CLV7VJ5Y",
+      "title": "100-Pack RJ45 Cat6 Pass Through Connector RJ45 Modular Plugs for Solid or Stranded UTP Cable | for Solid or Stranded UTP Cable",
+      "brand": "ZOERAX",
+      "detailUrl": "https://www.amazon.com/dp/B0CLV7VJ5Y",
+      "verifiedAt": "2026-08-11T06:14:55.545Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 17.5,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "network",
+      "familySlug": "usb-print-servers",
+      "familyName": "USB print servers",
+      "category": "wired",
+      "alternative": "a current network printer or host-computer sharing",
+      "asin": "B016A4MSA4",
+      "title": "StarTech 1-Port USB 2.0 Network Print Server, 10/100Mbps, TAA (PM1115U2) | Network Print Server, Wired Ethernet LAN USB 2.0 Adapter, 10/100Mbps",
+      "brand": "StarTech.com",
+      "detailUrl": "https://www.amazon.com/dp/B016A4MSA4",
+      "verifiedAt": "2026-08-11T06:23:10.450Z",
+      "searchRank": 2,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.46,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "pet",
+      "familySlug": "cat-scratching-posts",
+      "familyName": "Cat scratching posts",
+      "category": "comfort",
+      "alternative": "horizontal scratchers and wall-mounted scratching panels",
+      "asin": "B0BML72176",
+      "title": "ANWA 32\" Tall Sisal Cat Scratching Posts Tree for Indoor Cats Adults, Beige | Sisal Cat Scratcher, Small Space, Cat Post with Dangling Plush Toys for Indoor Cats, 15.7\" Stable Base, Cat Furniture",
+      "brand": "ANWA",
+      "detailUrl": "https://www.amazon.com/dp/B0BML72176",
+      "verifiedAt": "2026-08-11T06:20:16.520Z",
+      "searchRank": 3,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 17.42,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "pet",
+      "familySlug": "dog-car-seat-covers",
+      "familyName": "Dog car seat covers",
+      "category": "comfort",
+      "alternative": "a secured travel crate with a washable cargo liner",
+      "asin": "B08398BV5S",
+      "title": "Honest Dog Car Seat Covers, Dog seat Cover with Side Flap for Cars, Trucks, and Suv's - Waterproof & Nonslip Pet Seat Cover for Backseat",
+      "brand": "HONEST OUTFITTERS",
+      "detailUrl": "https://www.amazon.com/dp/B08398BV5S",
+      "verifiedAt": "2026-08-11T06:19:40.019Z",
+      "searchRank": 8,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 18.72,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "pet",
+      "familySlug": "dog-cooling-vests",
+      "familyName": "Dog cooling vests",
+      "category": "comfort",
+      "alternative": "cooler scheduling, shade, water, and indoor rest",
+      "asin": "B0GWQRG7L6",
+      "title": "Dog Cooling Vests for Dogs with Breathable Mesh & Adjustable Fit Blue, M | Evaporative technology provides relief without ice packs. Lightweight blue-gray fabric dries fast for all-day wear",
+      "brand": "Zermatigo",
+      "detailUrl": "https://www.amazon.com/dp/B0GWQRG7L6",
+      "verifiedAt": "2026-08-11T06:21:02.000Z",
+      "searchRank": 33,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 16.5,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "pet",
+      "familySlug": "pet-carrier-backpacks",
+      "familyName": "Pet carrier backpacks",
+      "category": "comfort",
+      "alternative": "structured hand carriers or pet strollers",
+      "asin": "B07KHPLFMS",
+      "title": "Texsens Innovative Traveler Bubble Backpack Pet Carriers for Cats and Dogs (Black)",
+      "brand": "Texsens",
+      "detailUrl": "https://www.amazon.com/dp/B07KHPLFMS",
+      "verifiedAt": "2026-08-11T06:20:39.921Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 14,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "pet",
+      "familySlug": "pressure-mounted-pet-gates",
+      "familyName": "Pressure-mounted pet gates",
+      "category": "comfort",
+      "alternative": "hardware-mounted gates or a closed pet-safe room",
+      "asin": "B01DAGKAIM",
+      "title": "Carlson Extra Tall Walk Through Pet Gate with Small Pet Door, Includes 4-Inch Extension Kit, 4 Pack Pressure Mount Kit and 4 Pack Wall Mount Kit, Platinum, Gray",
+      "brand": "Carlson Pet Products",
+      "detailUrl": "https://www.amazon.com/dp/B01DAGKAIM",
+      "verifiedAt": "2026-08-11T06:25:06.269Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 14.5,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "pet",
+      "familySlug": "slow-feeder-dog-bowls",
+      "familyName": "Slow feeder dog bowls",
+      "category": "feeding",
+      "alternative": "portion puzzles or supervised smaller meals",
+      "asin": "B0C5HSCS8J",
+      "title": "MateeyLife 2-Pack Slow Feeder Dog Bowls, 2 Cups, Dog Puzzle Feeder Bowl | Food-contact safe, dishwasher safe, non-slip base, maze design, for fast eaters, for dogs and cats, daily mealtimes",
+      "brand": "MateeyLife",
+      "detailUrl": "https://www.amazon.com/dp/B0C5HSCS8J",
+      "verifiedAt": "2026-08-11T06:20:03.377Z",
+      "searchRank": 4,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 18.88,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "robot-lawn-mowers",
+      "familyName": "Robot lawn mowers",
+      "category": "automation",
+      "alternative": "battery push mowers or scheduled lawn service",
+      "asin": "B0G3CBW2H8",
+      "title": "MOVA LiDAX Ultra 2000 Robot Lawn Mower with 4G for 0.5 Acre, No Wire No RTK+360° 3D LiDAR+AI Vision Auto Mapping, Zero-Edge Cutting, Cut Height 1.2\"-3.9\", 45% Slope, 150 Mowing Zones, Anti-Theft",
+      "brand": "MOVA",
+      "detailUrl": "https://www.amazon.com/dp/B0G3CBW2H8",
+      "verifiedAt": "2026-08-11T06:16:51.910Z",
+      "searchRank": 2,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.46,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-air-purifiers",
+      "familyName": "Smart air purifiers",
+      "category": "climate",
+      "alternative": "non-connected purifiers with independent air-quality monitoring",
+      "asin": "B08R794ZMX",
+      "title": "LEVOIT Smart Air Purifiers for Home Large Room Up to 1733 Ft² Core 400S-P | HEPA Sleep Mode, AHAM VERIFIDE, Auto Mode, Air Quality Monitor, 3-in-1 Filter For Pet Allergy, Smoke, Dust, ChildLock, White",
+      "brand": "Brand shown on the Amazon listing",
+      "detailUrl": "https://www.amazon.com/dp/B08R794ZMX",
+      "verifiedAt": "2026-08-11T06:16:03.368Z",
+      "searchRank": 5,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.84,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-ceiling-lights",
+      "familyName": "Smart ceiling lights",
+      "category": "automation",
+      "alternative": "standard fixtures controlled by compatible smart switches",
+      "asin": "B0F1N5HPVH",
+      "title": "Govee Smart Ceiling Light 4300LM 15 Inch, RGBIC 2700K-6500K 1 Pack | LED Ceiling Light Fixture Works with Matter Alexa, Flush Mount Light Fixture, DIY Colors, for Bedroom, Living Room",
+      "brand": "Brand shown on the Amazon listing",
+      "detailUrl": "https://www.amazon.com/dp/B0F1N5HPVH",
+      "verifiedAt": "2026-08-11T06:17:06.716Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 14,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-humidifiers",
+      "familyName": "Smart humidifiers",
+      "category": "climate",
+      "alternative": "manual humidifiers with a separate hygrometer",
+      "asin": "B0CCVX6FSD",
+      "title": "DREO Smart Humidifiers for Bedroom, 4L Cool Mist Humidifier | Top Fill, Quiet Sleep 28 dB, 36H Runtime for large room, Touch/APP/Voice Control, Nightlight, ideal for Baby, Plants, Nursery",
+      "brand": "Brand shown on the Amazon listing",
+      "detailUrl": "https://www.amazon.com/dp/B0CCVX6FSD",
+      "verifiedAt": "2026-08-11T06:16:19.101Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 14.5,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-electric-kettles",
+      "familyName": "Smart electric kettles",
+      "category": "automation",
+      "alternative": "temperature-control kettles without app connectivity",
+      "asin": "B09TSKDKCL",
+      "title": "Govee Smart Electric Kettle, WiFi Variable Temperature Gooseneck Tea Kettle | Pour Over Kettle and Electric Tea Kettle, Alexa Control, 1200W Quick Heating, All Stainless Steel, 0.8L Matte Black",
+      "brand": "Govee",
+      "detailUrl": "https://www.amazon.com/dp/B09TSKDKCL",
+      "verifiedAt": "2026-08-11T06:39:00.000Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 14,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-tower-fans",
+      "familyName": "Smart tower fans",
+      "category": "climate",
+      "alternative": "manual tower fans or ceiling fans with wall controls",
+      "asin": "B0BTY58CS4",
+      "title": "DREO Smart Tower Fan for Bedroom, 28ft/s Velocity, 8 Speeds Ultra Quiet Fan | 2026 Upgraded DC Motor, 90° Oscillating Floor Fan, WiFi Voice Control, 4 Modes 8H Timer, Bladeless Standing Fans with Remote",
+      "brand": "DREO",
+      "detailUrl": "https://www.amazon.com/dp/B0BTY58CS4",
+      "verifiedAt": "2026-08-11T06:39:00.000Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 14,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    }
+  ],
+  "failures": []
+}

@@ -54,6 +54,10 @@ const categoryFrameworks: Record<SiteKey, Record<string, { focus: string; checks
       focus: "Feeding gear should match the actual bottle, pump-part, cleaning, and drying routine rather than just adding another countertop device.",
       checks: ["Bottle and part count", "Drying bottleneck", "Counter footprint", "Manual and safety guidance"],
     },
+    gear: {
+      focus: "Daily baby gear should solve one current care-stage problem while keeping developmental readiness, fit, supervision, cleaning, and storage visible.",
+      checks: ["Developmental readiness and age limits", "Child and room fit", "Cleaning and consumables", "Supervision and safe-use instructions"],
+    },
   },
   network: {
     wifi: {

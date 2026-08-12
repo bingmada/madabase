@@ -570,6 +570,8 @@ export const networkAccessoryExpansionGuides: Guide[] = [
     dek: "Bridge mode can keep the ISP gateway while letting a better router or mesh system handle Wi-Fi, but support and feature tradeoffs matter.",
     category: "wired",
     updatedAt: "July 28, 2026",
+    image: "/images/affiliate/network-mesh-router-generic-realistic.webp",
+    imageAlt: "Home router and mesh equipment arranged for an ISP gateway bridge-mode versus own-router decision",
     relatedProducts: ["arris-surfboard-s33-cable-modem", "motorola-mb8611-cable-modem", "hitron-coda56-cable-modem", "tp-link-deco-be63-wifi-7-mesh"],
     relatedRoundups: ["best-cable-modems-for-xfinity-spectrum-cox", "best-mesh-wifi-for-apartments-and-homes"],
     sources: [

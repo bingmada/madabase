@@ -15,6 +15,7 @@ import type { SiteKey } from "@/lib/types";
 import { costumeHalloweenIdeas } from "@/lib/costume-halloween-ideas";
 import { findAmazonFamilyProduct } from "@/lib/amazon-family-products";
 import { amazonAsinAffiliateUrl } from "@/lib/affiliate-tracking";
+import { findAuthorizedCjFamilyOffer } from "@/lib/cj-offers";
 import {
   isCostumeProductIndexable,
   listCostumeCatalogProducts,
@@ -208,8 +209,11 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
     .filter((guideSlug) => guideSlug !== guide.slug)
     .map((guideSlug) => findGuide(site.key, guideSlug))
     .filter((item): item is NonNullable<ReturnType<typeof findGuide>> => Boolean(item));
+  const reciprocalRelatedGuides = siteGuides(site.key)
+    .filter((item) => item.slug !== guide.slug && item.relatedGuides?.includes(guide.slug));
   const relatedGuides = [
     ...explicitRelatedGuides,
+    ...reciprocalRelatedGuides,
     ...siteGuides(site.key).filter((item) => item.slug !== guide.slug && item.category === guide.category),
     ...siteGuides(site.key).filter((item) => item.slug !== guide.slug),
   ]
@@ -234,6 +238,22 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
     url: amazonAsinAffiliateUrl(site.key, amazonFamilyProduct.asin),
     label: "Check this exact ASIN on Amazon",
     priceNote: `Confirm ASIN ${amazonFamilyProduct.asin}, exact model or variant, seller, availability, shipping, and returns before checkout.`,
+  } : undefined;
+  const cjFamilyOffer = guide.familySlug ? findAuthorizedCjFamilyOffer(site.key, guide.familySlug) : undefined;
+  const cjFamilyProduct = cjFamilyOffer ? findProduct(site.key, cjFamilyOffer.productSlug) : undefined;
+  const cjFamilyIdentity = cjFamilyOffer ? {
+    slug: cjFamilyOffer.productSlug,
+    name: cjFamilyOffer.productName ?? cjFamilyOffer.productSlug,
+    specs: {
+      Variant: cjFamilyOffer.variantLabel ?? "Confirm the exact variant before checkout",
+      "CJ catalog SKU": cjFamilyOffer.catalogSku ?? "Confirm on the merchant page",
+    },
+  } : undefined;
+  const cjFamilyAffiliateOffer = cjFamilyOffer ? {
+    merchant: `${cjFamilyOffer.merchantName} via CJ`,
+    url: `/go/cj/${cjFamilyOffer.token}`,
+    label: `Check the exact variant at ${cjFamilyOffer.merchantName}`,
+    priceNote: `Confirm ${cjFamilyOffer.variantLabel ?? "the exact variant"}, included pieces, live price, stock, shipping destination, and the direct-brand return terms before checkout.`,
   } : undefined;
   const costumeCatalogProducts = site.key === "costume" && guide.familySlug
     ? (await listCostumeCatalogProducts(costumeFamilyCatalogSelection(guide.familySlug, guide.category))).items
@@ -387,6 +407,34 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             </p>
             <div className="mt-5">
               <AffiliateButton site={site.key} product={amazonFamilyIdentity} offer={amazonFamilyOffer} position="family-guide-amazon-anchor" resolveCreatorsListing={false} />
+            </div>
+          </section>
+        ) : null}
+        {cjFamilyOffer && cjFamilyIdentity && cjFamilyAffiliateOffer ? (
+          <section className="mt-10 rounded-md border border-[var(--accent)] bg-[var(--accent-soft)] p-5" aria-labelledby="cj-family-listing">
+            <p className="eyebrow">Authorized direct-brand alternative</p>
+            <h2 className="mt-3 text-2xl font-bold" id="cj-family-listing">Compare one exact Bc Babycare variant</h2>
+            <p className="mt-4 text-lg font-bold leading-7">{cjFamilyIdentity.name}</p>
+            <dl className="mt-4 grid gap-3 text-sm sm:grid-cols-3">
+              <div>
+                <dt className="font-bold">Exact variant</dt>
+                <dd className="mt-1 text-[var(--muted)]">{cjFamilyOffer.variantLabel}</dd>
+              </div>
+              <div>
+                <dt className="font-bold">CJ catalog SKU</dt>
+                <dd className="mt-1 break-all text-[var(--muted)]">{cjFamilyOffer.catalogSku}</dd>
+              </div>
+              <div>
+                <dt className="font-bold">Catalog checked</dt>
+                <dd className="mt-1 text-[var(--muted)]">{new Date(cjFamilyOffer.verifiedAt).toLocaleDateString("en-US", { timeZone: "UTC" })}</dd>
+              </div>
+            </dl>
+            <p className="mt-4 max-w-3xl text-sm leading-6 text-[var(--muted)]">
+              This is an exact direct-brand option, not an automatic top pick or hands-on endorsement. Compare its bundle, shipping threshold, return eligibility, and support path with the Amazon listing above. We may earn a CJ commission from an eligible Bc Babycare purchase; the reader pays no added fee.
+            </p>
+            <div className="mt-5 flex flex-wrap gap-3">
+              {cjFamilyProduct ? <Link className="button-secondary" href={`/reviews/${cjFamilyProduct.slug}`}>Read the full evidence guide</Link> : null}
+              <AffiliateButton site={site.key} product={cjFamilyIdentity} offer={cjFamilyAffiliateOffer} position="family-guide-cj-alternative" resolveCreatorsListing={false} />
             </div>
           </section>
         ) : null}

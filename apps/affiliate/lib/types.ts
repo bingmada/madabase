@@ -7,6 +7,7 @@ export type PublicationStatus = "published" | "draft";
 
 type Publishable = {
   publicationStatus?: PublicationStatus;
+  releaseCandidate?: string;
 };
 
 export type Score = {

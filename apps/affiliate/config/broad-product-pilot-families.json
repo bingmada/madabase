@@ -1,0 +1,114 @@
+{
+  "batch": "broad-product-pilot-2026-08-10",
+  "publicationStatus": "published",
+  "cohort": "broad-product-pilot",
+  "releaseCandidate": "breadth-64-2026-08-16",
+  "policy": "One distinct buying-decision page per new family. The owner authorized an early joint release after the full August 12 day-3 cohort, technical, merchant, safety, and rendered-page gates passed.",
+  "families": [
+    {
+      "site": "network",
+      "familySlug": "multigig-poe-switches",
+      "familyName": "Multi-gig PoE switches",
+      "category": "wired",
+      "alternative": "separate multi-gig switches and PoE injectors"
+    },
+    {
+      "site": "network",
+      "familySlug": "rackmount-power-distribution-units",
+      "familyName": "Rackmount power distribution units",
+      "category": "wired",
+      "alternative": "UPS outlet groups or ordinary surge protectors"
+    },
+    {
+      "site": "network",
+      "familySlug": "network-cable-toner-probes",
+      "familyName": "Network cable toner and probe kits",
+      "category": "wired",
+      "alternative": "wiremap testers and manual cable tracing"
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "in-wall-smart-relays",
+      "familyName": "In-wall smart relays",
+      "category": "automation",
+      "alternative": "complete smart wall switches"
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-ceiling-fan-controllers",
+      "familyName": "Smart ceiling-fan controllers",
+      "category": "climate",
+      "alternative": "factory-connected ceiling fans"
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-window-air-conditioners",
+      "familyName": "Smart window air conditioners",
+      "category": "climate",
+      "alternative": "non-connected inverter window units"
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "standing-desk-converters",
+      "familyName": "Standing desk converters",
+      "category": "desks",
+      "alternative": "full height-adjustable desks"
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "usb-document-cameras",
+      "familyName": "USB document cameras",
+      "category": "meetings",
+      "alternative": "webcams on overhead mounts"
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "ergonomic-kneeling-chairs",
+      "familyName": "Ergonomic kneeling chairs",
+      "category": "ergonomics",
+      "alternative": "adjustable task chairs and sit-stand movement"
+    },
+    {
+      "site": "baby",
+      "familySlug": "baby-food-storage-containers",
+      "familyName": "Baby food storage containers",
+      "category": "feeding",
+      "alternative": "ordinary food containers or covered ice-cube trays"
+    },
+    {
+      "site": "baby",
+      "familySlug": "baby-bouncers",
+      "familyName": "Baby bouncers",
+      "category": "sleep",
+      "alternative": "floor play mats and caregiver-held soothing"
+    },
+    {
+      "site": "baby",
+      "familySlug": "baby-play-gyms",
+      "familyName": "Baby play gyms",
+      "category": "sleep",
+      "alternative": "washable floor mats with separate toys"
+    },
+    {
+      "site": "pet",
+      "familySlug": "collapsible-wire-dog-crates",
+      "familyName": "Collapsible wire dog crates",
+      "category": "comfort",
+      "alternative": "plastic kennels or soft-sided crates"
+    },
+    {
+      "site": "pet",
+      "familySlug": "cat-trees-and-towers",
+      "familyName": "Cat trees and towers",
+      "category": "comfort",
+      "alternative": "wall-mounted shelves and separate scratching posts"
+    },
+    {
+      "site": "pet",
+      "familySlug": "pet-strollers",
+      "familyName": "Pet strollers",
+      "category": "comfort",
+      "alternative": "pet carriers or mobility-support harnesses"
+    }
+  ]
+}
