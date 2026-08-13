@@ -2,6 +2,11 @@ import familyProductData from "../config/amazon-family-products.json";
 import broadProductPilotData from "../config/broad-product-pilot-amazon-products.json";
 import broadProductPilot2Data from "../config/broad-product-pilot-2-amazon-products.json";
 import broadProductPilot3Data from "../config/broad-product-pilot-3-amazon-products.json";
+import breadthDraftBabyData from "../config/breadth-draft-baby-product-research.json";
+import breadthDraftHomeofficeData from "../config/breadth-draft-homeoffice-product-research.json";
+import breadthDraftNetworkData from "../config/breadth-draft-network-product-research.json";
+import breadthDraftPetData from "../config/breadth-draft-pet-product-research.json";
+import breadthDraftSmarthomeData from "../config/breadth-draft-smarthome-product-research.json";
 import type { SiteKey } from "./types";
 
 export type AmazonFamilyProduct = {
@@ -32,6 +37,13 @@ const amazonFamilyProducts: AmazonFamilyProduct[] = [
     ...product,
     publicationStatus: broadProductPilot3Data.publicationStatus as "published" | "draft",
   })),
+  ...([
+    ...breadthDraftNetworkData.products,
+    ...breadthDraftSmarthomeData.products,
+    ...breadthDraftHomeofficeData.products,
+    ...breadthDraftBabyData.products,
+    ...breadthDraftPetData.products,
+  ] as AmazonFamilyProduct[]).map((product) => ({ ...product, publicationStatus: "published" as const })),
 ];
 const supportedSites = new Set<SiteKey>(["network", "smarthome", "homeoffice", "baby", "pet"]);
 const seenFamilies = new Set<string>();

@@ -239,8 +239,8 @@ export const aggressivePortfolioGuides: Guide[] = [
   {
     site: "smarthome",
     slug: "tapo-p110m-home-assistant-energy-monitoring",
-    title: "Tapo P110M with Home Assistant: Energy Monitoring Paths",
-    dek: "Choose between the TP-Link integration and Matter path, then verify power entities, history, firmware, local control, and what remains visible in the Tapo app.",
+    title: "Tapo P110M Home Assistant Setup: Energy Monitoring",
+    dek: "Add Tapo P110M to Home Assistant through the TP-Link integration or Matter, then verify power entities, energy history, firmware, local control, and what remains visible in the Tapo app.",
     category: "automation",
     updatedAt,
     image: "/images/affiliate/smarthome-smart-plug-realistic.webp",

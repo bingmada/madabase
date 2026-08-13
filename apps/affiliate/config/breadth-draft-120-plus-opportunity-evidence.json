@@ -1,0 +1,1650 @@
+{
+  "publicationStatus": "research",
+  "cohort": "breadth-draft-120-plus",
+  "updatedAt": "2026-08-12T13:24:00.000Z",
+  "scoringPolicy": {
+    "threshold": 70,
+    "dimensions": {
+      "productDemand": 30,
+      "serpOpening": 25,
+      "commercialIntent": 20,
+      "clusterFit": 15,
+      "commission": 10
+    },
+    "volumeCaveat": "No Keyword Planner export is available in this workspace. These are bounded-pilot opportunity scores based on current live result composition, recent editorial coverage, current community questions, product depth, and site-cluster fit; they are not claimed monthly-search-volume estimates.",
+    "commissionCaveat": "Amazon category commission is not inferred. Five neutral points are used until the exact category and current program terms are verified."
+  },
+  "records": [
+    {
+      "site": "homeoffice",
+      "familySlug": "portable-document-scanners",
+      "scores": { "productDemand": 24, "serpOpening": 14, "commercialIntent": 18, "clusterFit": 14, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://download.epson.com.sg/brochure/Scanners/Epson%20Scanner%20Range%20Brochure.pdf",
+        "https://www.digitalcameraworld.com/tech/scanners/ricoh-snapscan-ix2500-review"
+      ],
+      "note": "Current results distinguish portable sheet-fed scanners from desktop ADF and flatbed scanners by power, paper path, duplex handling, receipts, software, and travel footprint."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "overhead-book-scanners",
+      "scores": { "productDemand": 22, "serpOpening": 18, "commercialIntent": 18, "clusterFit": 13, "commission": 5, "total": 76 },
+      "evidence": [
+        "https://shop.czur.com/blogs/blog/a-beginners-guide-to-overhead-book-scanners-do-you-need-one",
+        "https://www.reddit.com/r/DataHoarder/comments/1tlb8gu/scanner_for_hard_cover_illustrated_books/"
+      ],
+      "note": "Independent intent is bound-book handling, page curvature, glare, capture area, OCR, privacy, and archive workflow rather than ordinary document scanning."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "receipt-scanners",
+      "scores": { "productDemand": 25, "serpOpening": 12, "commercialIntent": 19, "clusterFit": 14, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://quickbooks.intuit.com/r/expenses/best-receipt-scanner/",
+        "https://www.techrepublic.com/article/best-receipt-scanning-apps/"
+      ],
+      "note": "The purchase hinges on narrow media handling, OCR/export fields, bookkeeping workflow, subscription boundaries, and whether phone capture is sufficient."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "thermal-shipping-label-printers",
+      "scores": { "productDemand": 27, "serpOpening": 13, "commercialIntent": 20, "clusterFit": 14, "commission": 5, "total": 79 },
+      "evidence": [
+        "https://www.shopify.com/ca/blog/best-thermal-label-printers",
+        "https://www.reddit.com/r/ecommerce/comments/1v70dog/whats_the_best_thermal_label_printer_for/"
+      ],
+      "note": "Live demand separates 4x6 carrier labels, platform and driver compatibility, direct thermal versus transfer, media cost, volume, and automation."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "ink-tank-printers",
+      "scores": { "productDemand": 29, "serpOpening": 10, "commercialIntent": 19, "clusterFit": 14, "commission": 5, "total": 77 },
+      "evidence": [
+        "https://www.epson.co.uk/en_GB/ink-tank-printer-buying-guide",
+        "https://www.techradar.com/news/best-home-printer",
+        "https://www.reddit.com/r/printers/comments/1vks6d3/firsttime_printer_buyer_which_inktank_printer/"
+      ],
+      "note": "Demand is strong but competitive. The page must win on monthly volume, idle periods, duplex/ADF needs, ink maintenance, footprint, and cost modeling rather than generic rankings."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "compact-color-inkjet-printers",
+      "scores": { "productDemand": 25, "serpOpening": 12, "commercialIntent": 18, "clusterFit": 14, "commission": 5, "total": 74 },
+      "evidence": [
+        "https://www.canon.com.au/printers/pixma-home-office-tr4660",
+        "https://epson.com/For-Home/Printers/Inkjet/Epson-Expression-Home-XP-446-Small-in-One-Printer/p/C11CF27202"
+      ],
+      "note": "Independent small-desk purchase covering closed footprint, rear-paper clearance, scan/copy need, cartridge cost, idle maintenance, duplex behavior and whether a portable or ink-tank printer is the better class."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "portable-photo-printers",
+      "scores": { "productDemand": 27, "serpOpening": 10, "commercialIntent": 18, "clusterFit": 13, "commission": 5, "total": 73 },
+      "evidence": [
+        "https://www.techadvisor.com/article/723535/best-portable-printers.html",
+        "https://www.rtings.com/printer/reviews/best/portable"
+      ],
+      "note": "Strong current intent, but established publishers compete heavily. A qualified page needs print technology, exact media cost, image permanence limits, app dependency, size, and portability."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "office-printer-stands",
+      "scores": { "productDemand": 20, "serpOpening": 18, "commercialIntent": 17, "clusterFit": 15, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://www.deskfinds.com/guide/best-printer-stands-with-storage",
+        "https://www.homedepot.com/p/319027132"
+      ],
+      "note": "Lower demand than printers but a clearer SERP opening around measured printer footprint, load, paper path, cable reach, ventilation, shelves, casters, and filing overlap."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "rolling-file-cabinets",
+      "scores": { "productDemand": 22, "serpOpening": 17, "commercialIntent": 17, "clusterFit": 14, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://www.costway.com/3-drawer-filing-cabinet-locking-pedestal-desk.html?category_id=1142&entrypoint=category_list",
+        "https://www.gsaadvantage.gov/ref_text/47QSEA20D001S/10Y2R0.3WOFLO_47QSEA20D001S_LCITANDC.PDF"
+      ],
+      "note": "Distinct fit decision around letter/legal/A4 orientation, under-desk height, drawer extension, anti-tip behavior, lock scope, caster layout, floor type and whether records should be digitized instead."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "desktop-file-organizers",
+      "scores": { "productDemand": 19, "serpOpening": 20, "commercialIntent": 15, "clusterFit": 14, "commission": 5, "total": 73 },
+      "evidence": [
+        "https://www.irisusainc.com/products/desktop-organizer-5-piece",
+        "https://www.staples.com/jam-paper-stackable-paper-trays-white-desktop-document-letter-file-organizer-tray-sold-individually-344wh/product_24364938"
+      ],
+      "note": "Niche but separable by letter versus folder dimensions, vertical slots versus in/out trays, active-paper volume, label visibility, expansion, tipping and the footprint consumed on a small desk."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "monitor-light-bars",
+      "scores": { "productDemand": 27, "serpOpening": 9, "commercialIntent": 19, "clusterFit": 14, "commission": 5, "total": 74 },
+      "evidence": [
+        "https://standdesklab.com/accessories/best-monitor-light-bar/",
+        "https://www.reddit.com/r/desksetup/comments/1rv2pja/before_you_buy_a_monitor_light_bar_read_this/"
+      ],
+      "note": "Demand is current and competitive. The independent purchase is clamp/curvature/camera fit, forward glare, user glare, desk-only illumination, power, controls, and color-work boundaries."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "webcam-key-lights",
+      "scores": { "productDemand": 22, "serpOpening": 17, "commercialIntent": 17, "clusterFit": 14, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://www.wfhlounge.com/blog/best-wfh-video-call-setup",
+        "https://futureisnow.logitech.com/content/dam/logitech/vc/en/pdf/helpful-guidelines-for-setting-up-a-video-meeting-space.pdf"
+      ],
+      "note": "The page must stay distinct from monitor light bars by solving face exposure, window backlight, placement near camera, diffusion, controls, mounts, and two-light expansion."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "desktop-ring-lights",
+      "scores": { "productDemand": 27, "serpOpening": 8, "commercialIntent": 18, "clusterFit": 13, "commission": 5, "total": 71 },
+      "evidence": [
+        "https://www.digitalcameraworld.com/buying-guides/best-ring-light",
+        "https://www.wfhlounge.com/blog/best-ring-lights-home-office"
+      ],
+      "note": "Qualified but lower priority because competition is strong. Preserve the distinct ring-light question: opening size, camera/phone placement, working distance, catchlight, desk stability, and reflections."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "four-k-webcams",
+      "scores": { "productDemand": 29, "serpOpening": 7, "commercialIntent": 19, "clusterFit": 14, "commission": 5, "total": 74 },
+      "evidence": [
+        "https://www.pcworld.com/article/393756/1080p-4k-webcam-buying-guide.html",
+        "https://www.digitalcameraworld.com/buying-guides/best-4k-webcam"
+      ],
+      "note": "Very competitive. The page must answer when 4K changes crops, digital zoom, framing, bandwidth, USB mode, lighting, privacy, software and meeting-app output instead of equating resolution with quality."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "ptz-conference-cameras",
+      "scores": { "productDemand": 25, "serpOpening": 12, "commercialIntent": 19, "clusterFit": 12, "commission": 5, "total": 73 },
+      "evidence": [
+        "https://striveav.com/faq/meeting-room-cameras/",
+        "https://www.digitalcameraworld.com/buying-guides/best-ptz-camera"
+      ],
+      "note": "Independent room-scale decision covering optical versus digital zoom, back-of-room distance, presets, tracking, UVC/HDMI/IP outputs, mounting, microphones and whether a video bar is simpler."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "conference-speakerphones",
+      "scores": { "productDemand": 25, "serpOpening": 13, "commercialIntent": 18, "clusterFit": 15, "commission": 5, "total": 76 },
+      "evidence": [
+        "https://www.layer3labs.io/gear/best-conference-speakerphones",
+        "https://fuhrmannmanagement.com/best-usb-conference-speakerphones-for-remote-work/"
+      ],
+      "note": "Distinct dimensions include participant count, pickup radius, full duplex, wired versus Bluetooth, platform variants, privacy, room echo, battery, and daisy chaining."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "desktop-computer-speakers",
+      "scores": { "productDemand": 29, "serpOpening": 6, "commercialIntent": 18, "clusterFit": 13, "commission": 5, "total": 71 },
+      "evidence": [
+        "https://www.wired.com/gallery/best-computer-speakers/",
+        "https://www.tomshardware.com/best-picks/best-pc-speakers"
+      ],
+      "note": "Qualified but highly competitive. The site needs a narrow home-office angle: near-field distance, footprint, input switching, USB/analog/Bluetooth paths, standby noise, call behavior, and shared work/play use."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "acoustic-desk-dividers",
+      "scores": { "productDemand": 20, "serpOpening": 20, "commercialIntent": 17, "clusterFit": 14, "commission": 5, "total": 76 },
+      "evidence": [
+        "https://gibbsonninteriors.com/2026/acoustic-office-partitions/",
+        "https://arxiv.org/abs/2501.15744"
+      ],
+      "note": "Clear opening if claims are disciplined: a small felt divider can block sight lines and absorb some nearby reflections but cannot promise speech privacy or soundproofing."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "desktop-shelf-systems",
+      "scores": { "productDemand": 24, "serpOpening": 13, "commercialIntent": 18, "clusterFit": 15, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://grovemade.com/desk-shelf-sizing-guide/",
+        "https://grovemade.com/maple-desk-shelf-system-specs/"
+      ],
+      "note": "Qualified around desk width and depth, monitor stand or arm geometry, keyboard clearance, shelf load, speaker placement, cable exits and whether a simple riser or wall shelf solves the same job."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "desk-pegboard-organizers",
+      "scores": { "productDemand": 20, "serpOpening": 19, "commercialIntent": 16, "clusterFit": 15, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://www.ikea.com/us/en/files/pdf/c2/82/c2822620/skadis_jan_2024.pdf",
+        "https://www.ikea.com/sg/en/p/skadis-connector-white-10320794/"
+      ],
+      "note": "Independent vertical-storage decision: wall, clamp or freestanding mount; desk thickness; board dimensions; accessory ecosystem; load distribution; wobble; reach; and clearance behind a sit-stand desk."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "keyboard-wrist-rests",
+      "scores": { "productDemand": 24, "serpOpening": 14, "commercialIntent": 17, "clusterFit": 15, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://www.osha.gov/etools/computer-workstations/components/wrist-palm-support",
+        "https://www.osha.gov/etools/computer-workstations/components/keyboards"
+      ],
+      "note": "Keep the purchase question evidence-led: match height, slope, depth and width to the keyboard; support the palm during pauses rather than pinning wrists while typing; fix desk and keyboard position first."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "mouse-wrist-rests",
+      "scores": { "productDemand": 24, "serpOpening": 14, "commercialIntent": 17, "clusterFit": 15, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://www.osha.gov/etools/computer-workstations/components/wrist-palm-support",
+        "https://www.ccohs.ca/oshanswers/ergonomics/office/mouse/mouse_selection.html"
+      ],
+      "note": "Independent from keyboard rests because mouse travel, palm glide versus stationary pads, input-device size, reach and side pressure determine fit. Avoid treatment claims."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "office-seat-cushions",
+      "scores": { "productDemand": 25, "serpOpening": 12, "commercialIntent": 18, "clusterFit": 14, "commission": 5, "total": 74 },
+      "evidence": [
+        "https://www.osha.gov/etools/computer-workstations/components/chairs",
+        "https://www.woodenstreet.com/blog/office-chair-cushion-complete-guide"
+      ],
+      "note": "The page must account for effective seat height, seat depth, edge pressure, backrest alignment, foam compression and whether replacing the chair is the cleaner solution. No pain-relief promise."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "office-lumbar-cushions",
+      "scores": { "productDemand": 26, "serpOpening": 11, "commercialIntent": 18, "clusterFit": 15, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://www.osha.gov/etools/computer-workstations/components/chairs",
+        "https://www.tomsguide.com/home/home-office/lumbar-support-explained-why-you-need-it-and-how-to-get-it-on-your-next-office-chair"
+      ],
+      "note": "Qualified as a fit and support purchase, not medical treatment. Height, thickness, straps, chair curvature, recline, seat-depth loss and towel trial create an independent decision."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "under-desk-foot-hammocks",
+      "scores": { "productDemand": 18, "serpOpening": 20, "commercialIntent": 15, "clusterFit": 14, "commission": 5, "total": 72 },
+      "evidence": [
+        "https://www.content.upliftdesk.com/content/pdfs/accessories/acc042-under-desk-hammock-instructions.pdf",
+        "https://www.reddit.com/r/OfficeChairs/comments/1tokqgm/any_underdesk_footrest_actually_worth_getting/"
+      ],
+      "note": "Niche but open. It must compare stable foot support against a swinging hammock and verify desk width, attachment path, knee clearance, frame interference and standing-desk motion."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "active-sitting-stools",
+      "scores": { "productDemand": 23, "serpOpening": 15, "commercialIntent": 18, "clusterFit": 15, "commission": 5, "total": 76 },
+      "evidence": [
+        "https://standdesklab.com/chairs/best-standing-desk-chair/",
+        "https://www.osha.gov/etools/computer-workstations/components/chairs"
+      ],
+      "note": "Independent perch/wobble decision: height range, base behavior, seat edge, foot support, task duration and posture changes matter more than an unsupported active-sitting health claim."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "office-saddle-stools",
+      "scores": { "productDemand": 21, "serpOpening": 18, "commercialIntent": 17, "clusterFit": 14, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://www.physiomed.co.uk/uploads/guide/file/15/Physiomed_Sitting_Guide_-_Buying_a_Chair_Digital.pdf",
+        "https://stb.is/Attachment/GenericFile?attachmentId=1662"
+      ],
+      "note": "Keep separate from active stools through split/solid saddle shape, hip angle, minimum height, cylinder, foot ring, casters, pressure tolerance and clinic-versus-desk workflow."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "under-desk-pedal-exercisers",
+      "scores": { "productDemand": 26, "serpOpening": 12, "commercialIntent": 18, "clusterFit": 14, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://www.amonax.com/blogs/product-insights-reviews/choosing-the-right-under-desk-pedal-exerciser-for-your-home",
+        "https://misec.net/best-desk-exercise-bikes/"
+      ],
+      "note": "Qualify by knee clearance, pedal circle, chair movement, resistance, noise, motorized versus manual behavior, control reach and work-task compatibility; avoid rehabilitation claims."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "laptop-cooling-pads",
+      "scores": { "productDemand": 28, "serpOpening": 9, "commercialIntent": 18, "clusterFit": 13, "commission": 5, "total": 73 },
+      "evidence": [
+        "https://www.wired.com/story/best-laptop-cooling-pad/",
+        "https://www.techradar.com/computing/peripherals-accessories/i-nearly-melted-my-laptop-so-you-dont-have-to-after-testing-cooling-pads-for-chilling-your-laptop-during-a-heatwave-ive-got-serious-data-to-drop-on-the-coolest-and-quietest-products-you-can-buy"
+      ],
+      "note": "Competitive but distinct. The draft must separate simple elevation from forced airflow, map intake vents and seal geometry, and avoid inventing temperature gains without testing."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "laptop-privacy-screens",
+      "scores": { "productDemand": 25, "serpOpening": 13, "commercialIntent": 18, "clusterFit": 15, "commission": 5, "total": 76 },
+      "evidence": [
+        "https://www.nbcnews.com/select/shopping/what-is-a-privacy-screen-rcna342390",
+        "https://www.sightpro.com/products/sightpro-15-6-inch-16-9-privacy-screen-filter-for-laptops"
+      ],
+      "note": "The automatically selected 28-inch monitor filter is rejected. Qualification depends on a true laptop-sized anchor plus diagonal, aspect ratio, active area, bezel, camera, magnetic/adhesive attachment, brightness and touch compatibility."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "monitor-privacy-screens",
+      "scores": { "productDemand": 24, "serpOpening": 14, "commercialIntent": 18, "clusterFit": 14, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://www.nbcnews.com/select/shopping/what-is-a-privacy-screen-rcna342390",
+        "https://www.windowscentral.com/hardware/surface/surface-privacy-screen-hp-lenovo-dell-history"
+      ],
+      "note": "Separate desktop intent because dimension tolerances, multi-monitor angles, tabs versus adhesive, brightness loss, portrait rotation and webcam placement differ from a travel laptop filter."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "desk-cable-sleeves",
+      "scores": { "productDemand": 21, "serpOpening": 18, "commercialIntent": 16, "clusterFit": 15, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://www.kleintools.com/catalog/cable-management/cable-and-wire-management-sleeves-175-inch-diameter-3-foot-long",
+        "https://www.wentronic.com/en/wire-sleeve-black-51919"
+      ],
+      "note": "A true sleeve page is distinct from a mixed clip-and-tie kit. It must choose wrap, split-loom, zipper or braided construction by bundle diameter, breakouts, movement, cut finishing, heat and access rather than repeat unsupported pet-proof or fire-safety claims."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "floor-cable-covers",
+      "scores": { "productDemand": 22, "serpOpening": 18, "commercialIntent": 17, "clusterFit": 15, "commission": 5, "total": 77 },
+      "evidence": [
+        "https://gtse.co.uk/cable-management/cable-management-buyers-guides/floor-cable-covers-how-to-eliminate-trip-hazards",
+        "https://www.osha.gov/sites/default/files/publications/osha_2201.pdf"
+      ],
+      "note": "Clear independent purchase around cable count and diameter, walking versus rolling loads, edge profile, floor grip, temporary versus permanent attachment, cleaning and flexible-cord protection."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "desk-cable-grommets",
+      "scores": { "productDemand": 20, "serpOpening": 20, "commercialIntent": 16, "clusterFit": 15, "commission": 5, "total": 76 },
+      "evidence": [
+        "https://www.cableorganizer.com/blogs/articles/what-is-a-desk-grommet-how-do-i-choose-one",
+        "https://www.reddit.com/r/DeskCableManagement/comments/1umlr52/i_understand_now/"
+      ],
+      "note": "A permanent-hole decision distinct from cable trays: bundle width, plug passage, barrel/cutout diameter, surface material, drill clearance, abrasion, cap or brush style and downstream tray location."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "laptop-monitor-arms",
+      "scores": { "productDemand": 22, "serpOpening": 17, "commercialIntent": 18, "clusterFit": 15, "commission": 5, "total": 77 },
+      "evidence": [
+        "https://thundertechpros.com/en/news/monitor-arm-with-laptop-tray-setup/",
+        "https://media.startech.com/cms/pdfs/a2-laptop-desk-mount_coo.pdf"
+      ],
+      "note": "Independent combined-load and geometry problem: laptop tray retention and ventilation, monitor VESA/weight, arm collision, clamp leverage, typing plan, cables and standing range."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "vesa-monitor-adapters",
+      "scores": { "productDemand": 20, "serpOpening": 20, "commercialIntent": 17, "clusterFit": 15, "commission": 5, "total": 77 },
+      "evidence": [
+        "https://www.oneforall.com/monitor-arms/monitor-arms-extras/dm-0005-universal-monitor-vesa-adaptor-kit",
+        "https://www.vari.com/on/demandware.static/-/Library-Sites-VariGlobalContentLibrary/default/dw10c27b83/pdf/vari-VESA-monitor-compatibility.pdf"
+      ],
+      "note": "Qualified only as a non-VESA adaptation decision. The page must record display weight and thickness, bezel shape, control and port clearance, adapter grip points, added arm load and the option of a model-specific bracket; it cannot promise universal fit from screen diagonal alone."
+    },
+    {
+      "site": "network",
+      "familySlug": "cloud-managed-access-points",
+      "scores": { "productDemand": 23, "serpOpening": 15, "commercialIntent": 19, "clusterFit": 14, "commission": 5, "total": 76 },
+      "evidence": [
+        "https://www-cloud.cisco.com/site/ca/en/products/networking/wireless/access-points/index.html",
+        "https://documentation.meraki.com/Wireless/Product_Information/Overviews_and_Datasheets/MR_Access_Point_FAQ"
+      ],
+      "note": "Independent from ordinary access-point selection because license term, retained features after expiry, remote logs, controller choice, tenant transfer and Internet-outage behavior can determine ownership cost."
+    },
+    {
+      "site": "network",
+      "familySlug": "wall-plate-access-points",
+      "scores": { "productDemand": 20, "serpOpening": 18, "commercialIntent": 18, "clusterFit": 14, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://www.zyxel.com/global/en/products/wireless/ax3000-dual-radio-wall-plate-unified-access-point-wax300h",
+        "https://www.cisco.com/c/en/us/td/docs/wireless/controller/technotes/8-3/b_AIR_AP_1810_Wall_Plate_Deployment_Guides.html"
+      ],
+      "note": "Room-by-room intent hinges on wall-box and uplink fit, PoE input, wired downlinks, radio orientation, controller ecosystem and whether a ceiling AP can cover the same rooms more efficiently."
+    },
+    {
+      "site": "network",
+      "familySlug": "managed-2-5gbe-switches",
+      "scores": { "productDemand": 25, "serpOpening": 13, "commercialIntent": 19, "clusterFit": 15, "commission": 5, "total": 77 },
+      "evidence": [
+        "https://www.tp-link.com/us/business-networking/omada-switch-l3-l2-managed/sg3210x-m2/v1/?app=web",
+        "https://static.tp-link.com/upload/smb/2025/202505/20250502/2025%20Omada%20Product%20Guide%20Catalog-20250320-Code%208392501250-Online.pdf"
+      ],
+      "note": "Kept separate from the existing unmanaged roundup through VLANs, port mirroring, LACP, loop controls, management mode, 10GbE uplinks and the operational burden of configuration."
+    },
+    {
+      "site": "network",
+      "familySlug": "sfp28-network-switches",
+      "scores": { "productDemand": 14, "serpOpening": 20, "commercialIntent": 18, "clusterFit": 13, "commission": 5, "total": 70 },
+      "evidence": [
+        "https://mikrotik.com/product/crs518_16xs_2xq",
+        "https://www.ieee802.org/3/25GSG/public/Sept14/dambrosia_25GE_01_0914.pdf"
+      ],
+      "note": "Niche threshold pass for buyers with a real 25GbE server or storage path. Port count, 10/25G fallback, QSFP28 uplinks, switching versus routed performance, fan noise and optics budget define the decision."
+    },
+    {
+      "site": "network",
+      "familySlug": "sfp28-transceivers",
+      "scores": { "productDemand": 18, "serpOpening": 17, "commercialIntent": 19, "clusterFit": 13, "commission": 5, "total": 72 },
+      "evidence": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736950.html",
+        "https://arubanetworking.hpe.com/techdocs/Switches/xcvrs/xcvr_guide/Content/Chp_sfp28/sfp-opt-mod-spe-com8.htm"
+      ],
+      "note": "Exact compatibility purchase covering SR/LR/BiDi, wavelength, fiber type, connector, reach, FEC, host coding, temperature and whether a qualified DAC is simpler for the link."
+    },
+    {
+      "site": "network",
+      "familySlug": "industrial-ethernet-switches",
+      "scores": { "productDemand": 18, "serpOpening": 18, "commercialIntent": 18, "clusterFit": 13, "commission": 5, "total": 72 },
+      "evidence": [
+        "https://www.wago.com/global/products/automation-technology/industrial-ethernet-switches",
+        "https://www.cisco.com/c/en/us/td/docs/solutions/Verticals/Industrial_Automation/IA_Horizontal/DG/Industrial-AutomationDG/Industrial-AutomationDG.html"
+      ],
+      "note": "The independent question is environmental and installation fit: DIN rail, DC range, redundant inputs, alarm relay, temperature, vibration, ingress protection, PoE and protocol management."
+    },
+    {
+      "site": "network",
+      "familySlug": "rackmount-network-ups",
+      "scores": { "productDemand": 24, "serpOpening": 13, "commercialIntent": 19, "clusterFit": 15, "commission": 5, "total": 76 },
+      "evidence": [
+        "https://www.eaton.com/us/en-us/products/backup-power-ups-surge-it-power-distribution/backup-power-ups/ups-buying-guide-for-idf-network-closets-.html",
+        "https://www.apc.com/us/en/support/product-support/ups-buying-guide-for-selecting-a-battery-backup-system.jsp"
+      ],
+      "note": "Distinct from the existing desktop UPS guide through rack depth, 1U/2U rails, weight placement, outlet and plug type, topology, network card, replaceable batteries and runtime at measured rack load."
+    },
+    {
+      "site": "network",
+      "familySlug": "mini-ups-for-routers",
+      "scores": { "productDemand": 23, "serpOpening": 15, "commercialIntent": 18, "clusterFit": 15, "commission": 5, "total": 76 },
+      "evidence": [
+        "https://miniups.dlink.co.in/product/d-link-mini-ups/",
+        "https://myliontech.com/en/12v-dc-backup-power-broadband-routers-mini-ups-guide/"
+      ],
+      "note": "Qualified as a DC compatibility purchase: exact voltage, connector diameter, polarity, current headroom, pass-through behavior, watt-hours, protected device count and battery replacement matter more than advertised mAh."
+    },
+    {
+      "site": "network",
+      "familySlug": "network-rack-shelves",
+      "scores": { "productDemand": 21, "serpOpening": 17, "commercialIntent": 17, "clusterFit": 15, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://icc.com/product/single-sided-rack-shelf-2-rms/",
+        "https://www.startech.com/en-de/server-management/cabshelf"
+      ],
+      "note": "Independent physical-fit question covering two-post versus four-post support, usable depth, equipment feet, load and leverage, ventilation, rack units, rear cables and slide-out versus fixed construction."
+    },
+    {
+      "site": "network",
+      "familySlug": "network-rack-cooling-fans",
+      "scores": { "productDemand": 20, "serpOpening": 18, "commercialIntent": 17, "clusterFit": 14, "commission": 5, "total": 74 },
+      "evidence": [
+        "https://tripplite.eaton.com/support/rack-cabinet-basics-selection-installation-cooling",
+        "https://rackfans.com/"
+      ],
+      "note": "The page must begin with measured ambient and component temperatures, then decide intake/exhaust path, cabinet openings, CFM, static pressure, thermostat placement, noise and whether removing trapped heat from the room is the real fix."
+    },
+    {
+      "site": "network",
+      "familySlug": "rack-blanking-panels",
+      "scores": { "productDemand": 14, "serpOpening": 22, "commercialIntent": 16, "clusterFit": 14, "commission": 5, "total": 71 },
+      "evidence": [
+        "https://www.energystar.gov/products/data_center_equipment/16-more-ways-cut-energy-waste-data-center/manage-airflow-cooling-efficiency",
+        "https://www.se.com/us/en/product-range/61815-apc-netshelter-airflow-management/"
+      ],
+      "note": "Narrow but legitimate fit query. It must explain when blanking helps front-to-rear airflow, when an open home rack gains little, and how 1U size, square-hole mounting, tool-less retention and cable paths affect selection."
+    },
+    {
+      "site": "network",
+      "familySlug": "ethernet-inline-couplers",
+      "scores": { "productDemand": 24, "serpOpening": 12, "commercialIntent": 17, "clusterFit": 15, "commission": 5, "total": 73 },
+      "evidence": [
+        "https://downloads.trendnet.com/TC-KC06C6A/datasheets/EN_intl_datasheet_TC-KC06C6A_%28v1.0R%29.pdf",
+        "https://www.flukenetworks.com/knowledge-base/copper-testing"
+      ],
+      "note": "A serviceable extension purchase governed by cable category, shield path, PoE current, link speed, jack retention and whole-channel length; one uninterrupted correctly sized cable remains the benchmark."
+    },
+    {
+      "site": "network",
+      "familySlug": "waterproof-rj45-couplers",
+      "scores": { "productDemand": 20, "serpOpening": 18, "commercialIntent": 17, "clusterFit": 14, "commission": 5, "total": 74 },
+      "evidence": [
+        "https://mail.platinumtools.net/products/structured-wiring/accessories/waterproof-rj45-splice-coupler-740c/?style=print",
+        "https://www.weipuconnector.com/products/rj45/"
+      ],
+      "note": "Separate outdoor intent through IP rating only when fully mated, cable-diameter seals, cap, shield and category support, strain relief, service access and the limits of an exposed inline joint."
+    },
+    {
+      "site": "network",
+      "familySlug": "outdoor-ethernet-junction-boxes",
+      "scores": { "productDemand": 21, "serpOpening": 16, "commercialIntent": 17, "clusterFit": 14, "commission": 5, "total": 73 },
+      "evidence": [
+        "https://support.ajax.systems/en/manuals/junctionbox/",
+        "https://www.psolera.com/en/news/caja-estanca-exterior-que-es-para-que-sirve-y-como-elegirla"
+      ],
+      "note": "Qualified by enclosure volume, IP and UV exposure, compatible glands, entry direction, drip loop, condensation, bend radius, mounting and the safer alternative of avoiding an outdoor splice."
+    },
+    {
+      "site": "network",
+      "familySlug": "bulk-ethernet-cable-reels",
+      "scores": { "productDemand": 27, "serpOpening": 10, "commercialIntent": 19, "clusterFit": 15, "commission": 5, "total": 76 },
+      "evidence": [
+        "https://www.flukenetworks.com/knowledge-base/copper-testing",
+        "https://www.reddit.com/r/HomeNetworking/comments/1mvuwmc/what_bulk_cable_are_you_guys_using/"
+      ],
+      "note": "Strong purchase demand around solid bare copper versus CCA, conductor gauge, Cat6/Cat6A, CMR/CMP/outdoor jacket, PoE heat, distance marks, pull packaging and certification after termination."
+    },
+    {
+      "site": "network",
+      "familySlug": "fiber-optic-patch-cables",
+      "scores": { "productDemand": 27, "serpOpening": 10, "commercialIntent": 19, "clusterFit": 15, "commission": 5, "total": 76 },
+      "evidence": [
+        "https://www.foa.org/tech/ref/termination/patchcords.html",
+        "https://resource.fs.com/mall/resource/fiber-patch-cables-datasheets.pdf"
+      ],
+      "note": "Exact link matching requires OS2/OM3/OM4, connector at each end, UPC versus APC, simplex/duplex, polarity, transceiver wavelength, reach, jacket and bend protection; color alone is insufficient."
+    },
+    {
+      "site": "network",
+      "familySlug": "preterminated-fiber-runs",
+      "scores": { "productDemand": 21, "serpOpening": 17, "commercialIntent": 18, "clusterFit": 14, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://leviton.com/products/network-solutions/fiber-systems/fiber-cable-assemblies",
+        "https://www.corning.com/optical-communications/emea/en/home/the-signal-network-blog/debunked-five-common-myths-about-pre-terminated-fiber-solutions.html"
+      ],
+      "note": "Independent install purchase covering exact route length plus slack, indoor/outdoor rating, fiber count, connectors and polarity, conduit fill, pulling eye, maximum pull and bend limits, and testing before and after pulling."
+    },
+    {
+      "site": "network",
+      "familySlug": "fiber-visual-fault-locators",
+      "scores": { "productDemand": 23, "serpOpening": 15, "commercialIntent": 18, "clusterFit": 14, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://regression.flukenetworks.com/datacom-cabling/fiber-testing/VisiFault-Visual-Fault-Locator",
+        "https://kingfisherfiber.com/application-notes/vfl-distance-and-eye-safety/"
+      ],
+      "note": "The draft must choose by laser class and power, connector/ferrule adapter, realistic range, pulse mode and job type, with explicit eye-safety rules and no claim that a VFL replaces loss testing or OTDR analysis."
+    },
+    {
+      "site": "network",
+      "familySlug": "fiber-cleaning-kits",
+      "scores": { "productDemand": 20, "serpOpening": 17, "commercialIntent": 17, "clusterFit": 14, "commission": 5, "total": 73 },
+      "evidence": [
+        "https://webstore.iec.ch/en/publication/72878",
+        "https://frpublish.leviton.com/content/dam/leviton/network-solutions/product_documents/instruction_sheet/Leviton_IST_Fiber_Optic_Cleaning_Inspection_Products.pdf"
+      ],
+      "note": "Qualified around connector and receptacle type, one-click reach, swab size, lint-free wipes, approved solvent, inspection workflow and avoiding cross-contamination; it cannot be a generic bag-of-tools page."
+    },
+    {
+      "site": "network",
+      "familySlug": "fiber-optic-power-meters",
+      "scores": { "productDemand": 22, "serpOpening": 16, "commercialIntent": 18, "clusterFit": 13, "commission": 5, "total": 74 },
+      "evidence": [
+        "https://www.foa.org/tech/ref/quickstart/power.html",
+        "https://www.keysight.com/zz/en/products/photonic-and-optical-test/photonic-test-parts/optical-power-meters.html"
+      ],
+      "note": "Independent measurement purchase by wavelength calibration, power range, detector, connector adapter, reference procedure, paired light source, storage and calibration; optical power alone does not locate a fault."
+    },
+    {
+      "site": "network",
+      "familySlug": "optical-time-domain-reflectometers",
+      "scores": { "productDemand": 20, "serpOpening": 16, "commercialIntent": 19, "clusterFit": 13, "commission": 5, "total": 73 },
+      "evidence": [
+        "https://regression.flukenetworks.com/datacom-cabling/fiber-testing/optifiber-pro-otdr?ls=webinar&lsd=webinar%3AOTDRBasics",
+        "https://www.flukenetworks.com/knowledge-base/optifiber-pro/testing-long-otdr-links"
+      ],
+      "note": "Qualified for technicians who can define single/multimode wavelengths, link length, dynamic range, event and attenuation dead zones, launch/receive fibers, connector type, reporting and OLTS boundaries."
+    },
+    {
+      "site": "network",
+      "familySlug": "serial-device-servers",
+      "scores": { "productDemand": 19, "serpOpening": 17, "commercialIntent": 18, "clusterFit": 13, "commission": 5, "total": 72 },
+      "evidence": [
+        "https://www.moxa.com/Moxa/media/Resources/DownloadFile/NPort_Selection-Guide_20260126-public.pdf",
+        "https://www.digi.com/products/networking/infrastructure-management/serial-connectivity/device-servers/portserverts"
+      ],
+      "note": "Exact interface decision covering RS-232/422/485, port count and connector, isolation, baud and framing, virtual COM versus raw TCP, security, power, DIN mounting and legacy software support."
+    },
+    {
+      "site": "network",
+      "familySlug": "console-server-appliances",
+      "scores": { "productDemand": 17, "serpOpening": 18, "commercialIntent": 19, "clusterFit": 12, "commission": 5, "total": 71 },
+      "evidence": [
+        "https://www.cisco.com/c/en/us/solutions/collateral/service-provider/out-of-band-best-practices-wp.html",
+        "https://arubanetworking.hpe.com/techdocs/AOS-S/16.11/MCG/WC/content/wc/oob-con.htm"
+      ],
+      "note": "Niche threshold pass for genuine out-of-band designs. Port count and pinout, separate management path, authentication, logging, cellular failover, dual power and access recovery must be specified before a product."
+    },
+    {
+      "site": "network",
+      "familySlug": "kvm-over-ip-extenders",
+      "scores": { "productDemand": 26, "serpOpening": 11, "commercialIntent": 19, "clusterFit": 14, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://www.reddit.com/r/homelab/comments/1qc0ir3/state_of_ip_kvm_solutions_2026/",
+        "https://www.reddit.com/r/Ubiquiti/comments/1ksb3co/i_want_to_use_a_kvmoverip_or_hdmioverip_extender/"
+      ],
+      "note": "Current demand is strong but fragmented. The page must distinguish remote BIOS console from low-latency desk extension and verify video input, resolution/frame rate, keyboard/mouse emulation, USB media, security, updates and network latency."
+    },
+    {
+      "site": "network",
+      "familySlug": "usb-over-ip-extenders",
+      "scores": { "productDemand": 18, "serpOpening": 18, "commercialIntent": 18, "clusterFit": 13, "commission": 5, "total": 72 },
+      "evidence": [
+        "https://knowledge.ni.com/KnowledgeArticleDetails?id=kA0VU0000006exF0AQ&l=en-US",
+        "https://learn.microsoft.com/en-us/windows-hardware/drivers/usbcon/usb-bandwidth-allocation"
+      ],
+      "note": "Independent compatibility problem by USB generation and transfer type, device driver, isochronous audio/video support, simultaneous users, network segment, latency, power and whether a point-to-point active extender is safer."
+    },
+    {
+      "site": "network",
+      "familySlug": "ethernet-network-taps",
+      "scores": { "productDemand": 16, "serpOpening": 18, "commercialIntent": 19, "clusterFit": 12, "commission": 5, "total": 70 },
+      "evidence": [
+        "https://www.niagaranetworks.com/products/network-tap-how-to-guide",
+        "https://www.keysight.com/us/en/assets/7120-1230/catalogs/Network-Visibility-Products-Catalog.pdf"
+      ],
+      "note": "Niche pass where lossless visibility is a real requirement. Copper/fiber, link speed, passive/active behavior, fail-open path, breakout versus aggregation, monitor capacity and SPAN alternative decide suitability."
+    },
+    {
+      "site": "network",
+      "familySlug": "coax-compression-tools",
+      "scores": { "productDemand": 21, "serpOpening": 17, "commercialIntent": 17, "clusterFit": 14, "commission": 5, "total": 74 },
+      "evidence": [
+        "https://www.kleintools.com/catalog/cable-tools/extended-reach-multi-connector-compression-crimper",
+        "https://pctinternational.com/instruction-guide/"
+      ],
+      "note": "Clear tool-system purchase: match RG59/RG6/RG6Q/RG11, F/BNC/RCA connector series, compression stroke and plunger, prep dimensions, confined access and a post-termination signal test."
+    },
+    {
+      "site": "network",
+      "familySlug": "coax-cable-testers",
+      "scores": { "productDemand": 20, "serpOpening": 18, "commercialIntent": 17, "clusterFit": 14, "commission": 5, "total": 74 },
+      "evidence": [
+        "https://www.flukenetworks.com/edocs/cable-iq-qualification-tester-inside-wiringcoax-qualification-tester",
+        "https://www.flukenetworks.com/knowledge-base/microscanner2/testing-coaxial-cabling-microscanner2"
+      ],
+      "note": "Independent from Ethernet wiremap tools through F-connector fit, continuity and remote IDs, length and distance-to-fault, live CATV detection, topology mapping and the limits of a basic continuity result."
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-radiator-valves",
+      "scores": { "productDemand": 24, "serpOpening": 14, "commercialIntent": 19, "clusterFit": 14, "commission": 5, "total": 76 },
+      "evidence": [
+        "https://support.tado.com/en/articles/3482335-which-radiator-valves-are-the-smart-radiator-thermostats-compatible-with-do-i-need-an-adapter-to-mount-the-device",
+        "https://help.tado.com/en/articles/3405446-what-is-the-difference-between-thermostatic-and-manual-radiator-valves-which-valve-types-are-compatible-with-tado"
+      ],
+      "note": "A separate buying decision from central thermostats: valve-body thread and adapter, two-pipe versus monotube system, boiler heat-call coordination, room sensor placement, bridge generation and per-radiator cost determine whether the product can work at all."
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-floor-vents",
+      "scores": { "productDemand": 21, "serpOpening": 18, "commercialIntent": 18, "clusterFit": 13, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://flair.co/pages/central-systems-smart-vents",
+        "https://flair.co/pages/faq"
+      ],
+      "note": "Independent airflow-balancing purchase with exact duct-opening sizes, supply-versus-return identification, bridge and room-sensor requirements, battery or 24-V power, and back-pressure protection. The page must not present vent closure as a substitute for HVAC diagnosis or balancing."
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-space-heaters",
+      "scores": { "productDemand": 25, "serpOpening": 13, "commercialIntent": 19, "clusterFit": 13, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://www.cpsc.gov/s3fs-public/CPSC-Staff-Assessment-on-Portable-Electric-Heaters-February-2023-SH.pdf",
+        "https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Fire-Safety-Information-Center"
+      ],
+      "note": "Demand is strong but safety-sensitive. The independent decision is listed heater type, wattage and circuit fit, tip-over and overheat protection, thermostat behavior, child lock, app dependence and whether remote controls can be disabled; no unattended-use promise is allowed."
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-portable-air-conditioners",
+      "scores": { "productDemand": 25, "serpOpening": 14, "commercialIntent": 19, "clusterFit": 13, "commission": 5, "total": 76 },
+      "evidence": [
+        "https://www.midea.com/content/dam/midea-aem/us/air-conditioners/portable-air-conditioners/mpt1412hvru/MPT1412HVRU-Manual.pdf",
+        "https://www.midea.com/content/dam/midea-aem/ca/air-conditioners/portable-air-conditioners/14000-btu-12000-btu-sacc-duo-smart-inverter-3-in-1-portable-air-conditioner-mp12svwba3rcm/User-Manual-MP12SVWBA3RCM.pdf"
+      ],
+      "note": "Kept apart from the existing window-AC family through DOE/SACC capacity, single- versus dual-hose design, window-kit fit, condensate handling, floor footprint, 2.4-GHz/Matter setup and the real efficiency tradeoff versus a window unit."
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-bathroom-exhaust-fans",
+      "scores": { "productDemand": 22, "serpOpening": 17, "commercialIntent": 18, "clusterFit": 13, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://broan-nutone.com/en-us/home/learn/overture-indoor-air-quality",
+        "https://broan-nutone.com/getmedia/920a5bf4-01b1-43b4-972a-62e5b8ed86a7/Brochure-AER110RGBLC.pdf?ext=.pdf"
+      ],
+      "note": "A distinct installed-fixture decision involving room CFM and duct size, sones, humidity sensing, local wall control, app or Bluetooth range, lighting/speaker features and retrofit dimensions. Smart control cannot compensate for undersized or poorly ducted ventilation."
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-heat-pump-controllers",
+      "scores": { "productDemand": 23, "serpOpening": 16, "commercialIntent": 18, "clusterFit": 14, "commission": 5, "total": 76 },
+      "evidence": [
+        "https://support.cielowigle.com/hc/en-us/articles/360022882874-How-can-I-check-my-air-conditioner-s-compatibility-with-Cielo-Breez-Plus",
+        "https://support.cielowigle.com/hc/en-us/articles/37988177555095-What-is-the-difference-between-Breez-Edge-Breez-Max"
+      ],
+      "note": "This is the IR-remote mini-split/window/portable controller decision, not another central thermostat page. Remote model support, line of sight, state synchronization, on-device fallback, multi-zone count and accessory power create independent purchase intent."
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-propane-tank-monitors",
+      "scores": { "productDemand": 21, "serpOpening": 18, "commercialIntent": 18, "clusterFit": 13, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://mopeka.com/product/mopeka-pro-check-sensor/",
+        "https://mopeka.com/consumer-solutions/"
+      ],
+      "note": "Independent telemetry purchase based on steel versus aluminum or fiberglass tank, cylinder orientation and diameter, bottom clearance, Bluetooth versus Wi-Fi bridge, region-specific model and alert range. It measures level and must never be described as a propane leak detector."
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-sump-pump-monitors",
+      "scores": { "productDemand": 23, "serpOpening": 16, "commercialIntent": 19, "clusterFit": 13, "commission": 5, "total": 76 },
+      "evidence": [
+        "https://support.pumpspy.com/faqs/pumpspy-smart-outlet-faqs/",
+        "https://shop.pumpspy.com/product/smart-outlet-2-0-_draft/"
+      ],
+      "note": "Distinct from a generic high-water alarm through current draw, cycle duration, stuck-impeller diagnostics, 120-V pump compatibility, high-water float and connectivity-loss behavior. Monitoring is not backup power, and a power-failure alert may fail when the router is down."
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-pool-controllers",
+      "scores": { "productDemand": 22, "serpOpening": 17, "commercialIntent": 19, "clusterFit": 12, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://www.pentair.com/products/residential/pool-spa-equipment/pool-automation/intellicenter-control-system.html",
+        "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/automation/intellicenter/faq-documents/FAQ-IntelliCenter%20Pool%20Control%20System.pdf"
+      ],
+      "note": "A high-consideration system choice driven by existing panel generation, relay and valve count, pump/heater/sanitizer compatibility, expansion path, app migration and service access. High-voltage pool equipment installation and chemical control remain professional work."
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-pool-thermometers",
+      "scores": { "productDemand": 21, "serpOpening": 18, "commercialIntent": 17, "clusterFit": 13, "commission": 5, "total": 74 },
+      "evidence": [
+        "https://www.inkbird.com/collections/all/products/wireless-pool-thermometer-set-ibs-p01r",
+        "https://www.lacrossetechnology.com/products/ltv-poolv2"
+      ],
+      "note": "Separate from pool automation through floating-probe waterproof rating, salt/chemical-pool limits, direct display, receiver range, gateway requirement, alert thresholds, battery design and whether the sensor is replaceable."
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-pathway-lights",
+      "scores": { "productDemand": 23, "serpOpening": 15, "commercialIntent": 18, "clusterFit": 14, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://www.philips-hue.com/en-us/products/front-and-backyard-lighting",
+        "https://www.philips-hue.com/en-us/products/smart-spotlights/how-to-install-outdoor-spotlights"
+      ],
+      "note": "Independent bollard/path-light purchase through low-voltage versus line-voltage design, base kit versus extension, transformer wattage, connector spacing, wet-location rating, bridge requirement, glare control and motion coverage."
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-landscape-spotlights",
+      "scores": { "productDemand": 22, "serpOpening": 17, "commercialIntent": 18, "clusterFit": 13, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://www.philips-hue.com/en-us/products/smart-spotlights?page=1",
+        "https://www.philips-hue.com/en-gb/p/hue-white-and-colour-ambiance-lily-outdoor-spot-light/1741830P7"
+      ],
+      "note": "Different from pathway guidance because buyers choose beam aim, lumen output, mounting, fixture count per transformer, extension versus base-kit contents, bridge ecosystem and wet-weather exposure for trees and facade accents."
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-recessed-lights",
+      "scores": { "productDemand": 25, "serpOpening": 13, "commercialIntent": 19, "clusterFit": 13, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://www.philips-hue.com/en-us/p/hue-white-and-color-ambiance-downlight-5-or-6-inch/046677578459",
+        "https://www.gelighting.com/sites/default/files/products/a45c3648-390d-4678-a0fa-9da443e0ca21.pdf"
+      ],
+      "note": "Kept distinct from surface ceiling lights through retrofit-can versus canless-wafer construction, aperture size, E26 adapter or junction box, ceiling depth, damp rating, smart-dimmer conflicts and permanent-light-switch behavior."
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-under-cabinet-lights",
+      "scores": { "productDemand": 24, "serpOpening": 15, "commercialIntent": 18, "clusterFit": 13, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://www.gelighting.com/smart-home/fixtures/undercabinet",
+        "https://cyncsupport.gelighting.com/s/article/Installing-Undercabinet-Fixtures"
+      ],
+      "note": "Fixture bars and pucks only, not another strip-light page. The decision covers edge/back lighting, bar length, glare, plug-in versus direct-wire junction box, jump-cable routing, linked-fixture limits, Matter/app setup and physical control."
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-table-lamps",
+      "scores": { "productDemand": 24, "serpOpening": 14, "commercialIntent": 18, "clusterFit": 14, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://us.govee.com/products/black-cordless-led-table-lamp",
+        "https://us.govee.com/collections/table-lamp"
+      ],
+      "note": "Integrated-lamp intent is separate from smart bulbs through usable white-light lumens, touch fallback, cordless runtime, battery-mode connectivity limits, Matter/voice support, portability and whether the light is functional or ambient."
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-floor-lamps",
+      "scores": { "productDemand": 24, "serpOpening": 14, "commercialIntent": 18, "clusterFit": 14, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://us.govee.com/products/govee-floor-lamp-3",
+        "https://eu.govee.com/collections/floor-lamps"
+      ],
+      "note": "Integrated floor-lamp selection hinges on uplight/task/ambient beam pattern, output and color-temperature range, base stability, footprint, segmented effects, physical controls and ecosystem support rather than bulb socket compatibility."
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-lever-locks",
+      "scores": { "productDemand": 24, "serpOpening": 15, "commercialIntent": 19, "clusterFit": 14, "commission": 5, "total": 77 },
+      "evidence": [
+        "https://www.schlage.com/en/home/smart-locks/encode-lever.html",
+        "https://www.schlage.com/en/home/support/faqs/schlage-encode-lever.html"
+      ],
+      "note": "Independent from deadbolts because it replaces a knob or lever on single-bore interior, garage or side doors. Door handing and prep, exterior rating, latch/backset, mechanical key, battery fallback, code capacity and lock-grade claims drive the purchase."
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-vibration-sensors",
+      "scores": { "productDemand": 21, "serpOpening": 18, "commercialIntent": 17, "clusterFit": 14, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://www.aqara.com/us/product/vibration-sensor/",
+        "https://www.aqara.com/en/product/smoke-detector/faq/"
+      ],
+      "note": "A distinct event-sensing choice from contact or motion sensors: vibration, tilt and drop modes, sensitivity, mounting surface, hub dependency, automation latency and false-trigger testing determine fit. It must not be sold as a certified intrusion or life-safety device."
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-glass-break-sensors",
+      "scores": { "productDemand": 21, "serpOpening": 18, "commercialIntent": 18, "clusterFit": 13, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://ring.com/support/products/alarm/glass-break-sensor?page=1",
+        "https://ring.com/support/products/alarm/glass-break-sensor-3rd-gen?page=1"
+      ],
+      "note": "Separate acoustic-detection intent based on room coverage, supported glass events, placement, alarm-base or subscription dependency, operating mode, false alarms and battery. It is an additional layer and cannot guarantee burglary detection."
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-peephole-cameras",
+      "scores": { "productDemand": 22, "serpOpening": 17, "commercialIntent": 18, "clusterFit": 13, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://www.ezviz.com/eu/product/CP4/69593",
+        "https://www.ezviz.com/fr/product/CP4/57507"
+      ],
+      "note": "Kept apart from video doorbells because buyers must match existing peephole diameter, door thickness, indoor-screen design, exterior profile, rental/HOA rules, local versus cloud storage, field of view and rechargeable-battery access."
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-ir-rf-remotes",
+      "scores": { "productDemand": 23, "serpOpening": 17, "commercialIntent": 18, "clusterFit": 14, "commission": 5, "total": 77 },
+      "evidence": [
+        "https://www.ibroadlink.com/productinfo/762672.html?templateId=1133605",
+        "https://www.home-assistant.io/integrations/broadlink/"
+      ],
+      "note": "Independent from device-native control through IR line of sight, 38-kHz code database, fixed-code 315/433-MHz regional support, unsupported rolling codes, learning workflow, 2.4-GHz Wi-Fi and state-sync limitations."
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-wall-control-panels",
+      "scores": { "productDemand": 22, "serpOpening": 17, "commercialIntent": 19, "clusterFit": 14, "commission": 5, "total": 77 },
+      "evidence": [
+        "https://www.brilliant.tech/pages/smart-home-control",
+        "https://www.brilliant.tech/pages/comparehomecontrols"
+      ],
+      "note": "Distinct from scene buttons and loose tablets through gang-box replacement, line/load/neutral/ground requirements, supported dimming load, device integrations, local behavior without Internet, privacy shutter, display size and plug-in versus wired panels."
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-indoor-gardens",
+      "scores": { "productDemand": 23, "serpOpening": 16, "commercialIntent": 19, "clusterFit": 12, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://risegardens.com/products/personal-indoor-garden",
+        "https://risegardens.com/products/the-rise-garden"
+      ],
+      "note": "Independent product system defined by plant/pod capacity, countertop versus modular footprint, light power and height, reservoir, manual nutrient dosing, seed flexibility, recurring consumables, app reminders and cleaning workload."
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-coffee-makers",
+      "scores": { "productDemand": 25, "serpOpening": 13, "commercialIntent": 19, "clusterFit": 13, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://www.keurig.com/content/k-supreme-plus-smart-coffee-maker",
+        "https://dam.keurig.com/content/dam/public-assets/support/kcom/pdf/K_Supreme_Smart_Use_and_Care_Guide_Released.pdf"
+      ],
+      "note": "A real connected-appliance choice through brew format, cup and temperature controls, reservoir readiness, pod recognition, 2.4-GHz setup, scheduled-brew prerequisites, local fallback, cleaning reminders and app lifespan. Remote start must never imply a safe unattended setup."
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-sous-vide-cookers",
+      "scores": { "productDemand": 24, "serpOpening": 14, "commercialIntent": 19, "clusterFit": 13, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://anovaculinary.com/products/anova-precision-cooker-3/",
+        "https://anovaculinary.com/en-au/pages/apps"
+      ],
+      "note": "Independent immersion-circulator purchase based on heater wattage, water-level range and cutoff, bath capacity and flow, clamp fit, temperature accuracy, IP rating, dual-band Wi-Fi, manual controls and subscription boundaries. Food-time/temperature safety remains authoritative-source material."
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-slow-cookers",
+      "scores": { "productDemand": 20, "serpOpening": 20, "commercialIntent": 17, "clusterFit": 13, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://www.crock-pot.com/support/faqs",
+        "https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Fire-Safety-Information-Center"
+      ],
+      "note": "Narrow but independent from multicookers through dedicated crock capacity and shape, High/Low/Warm controls, time and keep-warm limits, Alexa/app dependency, Wi-Fi-loss behavior and local control. Final inclusion is contingent on a current exact product being available."
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-multicookers",
+      "scores": { "productDemand": 25, "serpOpening": 13, "commercialIntent": 19, "clusterFit": 13, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://instantpot.com/collections/instant-favorites/products/instant-pot-pro-plus-6qt-smart-multi-cooker",
+        "https://instantpot.com/pages/multi-cooker-product-manuals"
+      ],
+      "note": "Kept distinct through pressure-cooking and multi-mode capability, usable capacity, guided recipes, local fallback, steam-release design, app permissions and remote-control limits. Pressure and steam instructions must follow the exact manual, not generic automation advice."
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-countertop-composters",
+      "scores": { "productDemand": 23, "serpOpening": 16, "commercialIntent": 19, "clusterFit": 12, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://lomi.com/products/lomi-3-food-recycler",
+        "https://lomi.com/pages/app"
+      ],
+      "note": "The page will use the accurate term food recycler and distinguish pre-compost/output handling from finished compost. Capacity, accepted scraps, cycle time and kWh, filters, noise, bucket cleaning, Wi-Fi/app features and recurring costs create the purchase decision."
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-aroma-diffusers",
+      "scores": { "productDemand": 22, "serpOpening": 17, "commercialIntent": 18, "clusterFit": 13, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://pura.com/pages/tech-specs",
+        "https://www.aspca.org/news/essentials-essential-oils-around-pets"
+      ],
+      "note": "Connected fragrance scheduling is a genuine purchase intent through cartridge/oil format, room coverage, intensity, refill lock-in and cost, geofencing, app/cloud dependency and child/pet placement. No therapeutic claims; bird and respiratory-pet cautions are explicit."
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-air-fryers",
+      "scores": { "productDemand": 26, "serpOpening": 12, "commercialIntent": 19, "clusterFit": 13, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://cosori.com/products/iconic-air-fryer",
+        "https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Fire-Safety-Information-Center"
+      ],
+      "note": "Independent connected-appliance intent spans basket capacity and food-contact material, temperature and fan range, monitoring versus actual remote start, physical fallback, cleaning, current model/recall verification and app recipes. The page will explicitly reject unattended cooking."
+    },
+    {
+      "site": "baby",
+      "familySlug": "powder-formula-dispensers",
+      "scores": { "productDemand": 20, "serpOpening": 18, "commercialIntent": 17, "clusterFit": 13, "commission": 5, "total": 73 },
+      "evidence": [
+        "https://ca.munchkin.com/baby-formula-dispenser",
+        "https://www.cdc.gov/infant-toddler-nutrition/formula-feeding/preparation-and-storage.html"
+      ],
+      "note": "This is a travel portioning decision, not a formula-preparation shortcut: compartment seal, number and size of premeasured feeds, pour control, cleaning and diaper-bag leakage are the buying dimensions. The page must say to measure water separately, add the exact labeled powder amount and follow CDC time limits because powdered formula is not sterile."
+    },
+    {
+      "site": "baby",
+      "familySlug": "formula-mixing-pitchers",
+      "scores": { "productDemand": 22, "serpOpening": 17, "commercialIntent": 18, "clusterFit": 13, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://drbrownsbaby.com/products/formula-mixing-pitcher-gray",
+        "https://www.cdc.gov/infant-toddler-nutrition/formula-feeding/preparation-and-storage.html"
+      ],
+      "note": "Batch preparation creates a separate choice around true usable volume, blade and stopper design, clump and foam control, measurement visibility, lid and spout leakage, refrigerator footprint and cleaning. It will not alter formula ratios: water first, exact label directions, refrigerate promptly and discard within official limits."
+    },
+    {
+      "site": "baby",
+      "familySlug": "breast-milk-storage-bags",
+      "scores": { "productDemand": 24, "serpOpening": 15, "commercialIntent": 18, "clusterFit": 14, "commission": 5, "total": 76 },
+      "evidence": [
+        "https://www.medela.com/en-us/breastfeeding-pumping/products/bottles-bags/easy-pour-breast-milk-storage-bags?productId=1036",
+        "https://www.medela.com/en/breastfeeding-pumping/products/bottles-bags/reusable-breast-milk-storage-bags?productId=41941"
+      ],
+      "note": "Independent intent covers disposable versus reusable systems, verified capacity, freeze-flat shape, double-seal leakage, labeling, pour geometry, pump adapters, cleaning burden and total cost. Storage and thawing instructions will be sourced separately from health guidance, not inferred from a bag maker's marketing."
+    },
+    {
+      "site": "baby",
+      "familySlug": "nursing-pillows",
+      "scores": { "productDemand": 25, "serpOpening": 14, "commercialIntent": 19, "clusterFit": 14, "commission": 5, "total": 77 },
+      "evidence": [
+        "https://www.cpsc.gov/FAQ/Nursing-Pillows",
+        "https://www.cpsc.gov/Newsroom/News-Releases/2021/CPSC-Warns-Parents-Not-to-Use-Nursing-Pillows-for-Sleep-Agency-Is-Investigating-Infant-Deaths-that-May-Be-Associated-with-Pillow-Like-Products?language=en"
+      ],
+      "note": "Fit around the caregiver, height and firmness during active feeding, cover washability, closure and travel bulk create a high-intent comparison. The page will treat these as awake, attended feeding aids only and explicitly reject sleep, lounging, propping and leaving an infant unattended."
+    },
+    {
+      "site": "baby",
+      "familySlug": "nursing-covers",
+      "scores": { "productDemand": 19, "serpOpening": 18, "commercialIntent": 17, "clusterFit": 13, "commission": 5, "total": 72 },
+      "evidence": [
+        "https://weareamma.com/pages/ccoon_bf_v1a_nat",
+        "https://weareamma.com/products/desert-rose-cocoon"
+      ],
+      "note": "The buying question is coverage format rather than generic maternity clothing: apron visibility versus poncho coverage, airflow and heat, neckline access, fabric opacity, wash care and whether it doubles as a stroller or car-seat cover. Content will warn against restricting an infant's airflow or allowing overheating."
+    },
+    {
+      "site": "baby",
+      "familySlug": "toddler-sippy-cups",
+      "scores": { "productDemand": 23, "serpOpening": 16, "commercialIntent": 18, "clusterFit": 13, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://www.healthychildren.org/English/ages-stages/baby/feeding-nutrition/Pages/Discontinuing-the-Bottle.aspx",
+        "https://www.munchkin.com/product-instruction-manuals"
+      ],
+      "note": "Kept distinct from straw cups by focusing on spout and 360-degree training formats, valve resistance, flow, handles, leak control, dental transition, cup-part count and cleaning. The page will frame sippy cups as one transitional option, not a required developmental milestone."
+    },
+    {
+      "site": "baby",
+      "familySlug": "toddler-straw-cups",
+      "scores": { "productDemand": 24, "serpOpening": 16, "commercialIntent": 18, "clusterFit": 13, "commission": 5, "total": 76 },
+      "evidence": [
+        "https://www.munchkin.com/any-angle-click-lock-weighted-straw-cup-10oz",
+        "https://www.healthychildren.org/English/ages-stages/baby/feeding-nutrition/Pages/Discontinuing-the-Bottle.aspx"
+      ],
+      "note": "The purchase decision is straw-specific: weighted versus fixed straw, bite valve resistance, replacement availability, hidden cleaning paths, cup orientation, flow rate and leak behavior. Exact age guidance and cleaning access will be verified for each shortlisted model."
+    },
+    {
+      "site": "baby",
+      "familySlug": "toddler-snack-containers",
+      "scores": { "productDemand": 21, "serpOpening": 17, "commercialIntent": 17, "clusterFit": 12, "commission": 5, "total": 72 },
+      "evidence": [
+        "https://www.oxo.com/shop/baby-toddler/tot-snack-cup-with-lid-2-pack-1.html",
+        "https://www.healthychildren.org/English/health-issues/injuries-emergencies/Pages/Choking-Prevention.aspx"
+      ],
+      "note": "This covers spill-resistant dry-snack cups and divided travel containers, judged by hand opening, petal stiffness, secure travel lid, cup-holder fit, disassembly and cleaning. It will not imply that a snack cup makes a choking-prone food safe; seated, supervised eating and age-appropriate food preparation remain central."
+    },
+    {
+      "site": "baby",
+      "familySlug": "silicone-feeding-placemats",
+      "scores": { "productDemand": 20, "serpOpening": 17, "commercialIntent": 17, "clusterFit": 12, "commission": 5, "total": 71 },
+      "evidence": [
+        "https://ezpzfun.com/pages/faqs/1000",
+        "https://ezpzfun.com/blogs/feeding-tips/do-ezpz-mats-fit-on-highchair-trays"
+      ],
+      "note": "The independent problem is table and tray fit: mat dimensions, whether the silicone seals on a textured surface, lip and spill coverage, divided versus open layout, dishwasher fit, drying and odor retention. Exact tray measurements matter more than broad 'suction' marketing."
+    },
+    {
+      "site": "baby",
+      "familySlug": "suction-toddler-bowls",
+      "scores": { "productDemand": 22, "serpOpening": 16, "commercialIntent": 18, "clusterFit": 12, "commission": 5, "total": 73 },
+      "evidence": [
+        "https://ezpzfun.com/pages/faqs/1000",
+        "https://www.oxo.com/stackable-bowl-set-3pk.html"
+      ],
+      "note": "Bowl depth and scoop wall, suction or nonslip base, tray footprint, release tab exposure, lid, portion size, microwave/dishwasher instructions and surface compatibility drive this purchase. The page will distinguish genuine suction from a merely nonslip foot and measure common high-chair trays."
+    },
+    {
+      "site": "baby",
+      "familySlug": "toddler-training-utensils",
+      "scores": { "productDemand": 22, "serpOpening": 17, "commercialIntent": 17, "clusterFit": 13, "commission": 5, "total": 74 },
+      "evidence": [
+        "https://www.healthychildren.org/English/ages-stages/toddler/nutrition/Pages/Self-Feeding.aspx",
+        "https://www.oxo.com/tot-cut-prep-set-3-piece.html"
+      ],
+      "note": "Independent intent covers pre-spoon versus toddler fork-and-spoon sets, handle geometry, utensil head size and depth, metal versus silicone, gag-guard claims, handedness and dishwasher cleanup. Recommendations will align with developmental readiness and supervised self-feeding rather than promise faster skill acquisition."
+    },
+    {
+      "site": "baby",
+      "familySlug": "reusable-baby-food-pouches",
+      "scores": { "productDemand": 21, "serpOpening": 17, "commercialIntent": 18, "clusterFit": 12, "commission": 5, "total": 73 },
+      "evidence": [
+        "https://haakaausa.com/products/haakaa-silicone-yummy-pouch-4-5-oz-1-pk",
+        "https://www.healthychildren.org/English/health-issues/injuries-emergencies/Pages/Choking-Prevention.aspx"
+      ],
+      "note": "The decision is fill opening, cap security, flow, cleaning visibility, freezer and dishwasher instructions, labeling and replacement parts across silicone and zip-bottom formats. The page will address cap and part hazards, supervised seated use, food texture and realistic hygiene rather than treating the pouch as a complete feeding solution."
+    },
+    {
+      "site": "baby",
+      "familySlug": "portable-changing-mats",
+      "scores": { "productDemand": 22, "serpOpening": 17, "commercialIntent": 18, "clusterFit": 12, "commission": 5, "total": 74 },
+      "evidence": [
+        "https://development.skiphop.com/skiphop-diaper-bag-essentials",
+        "https://www.cpsc.gov/FAQ/Baby-Changing-Products"
+      ],
+      "note": "Kept separate from full-size changing pads by folded size, wipe-clean area, padding, clutch closure, integrated wipes and diaper storage, laundry care and one-hand setup on the floor. A flat travel mat does not make an elevated surface safe; content will recommend a clean floor whenever practical and constant hands-on attention."
+    },
+    {
+      "site": "baby",
+      "familySlug": "baby-wipe-dispensers",
+      "scores": { "productDemand": 21, "serpOpening": 16, "commercialIntent": 17, "clusterFit": 12, "commission": 5, "total": 71 },
+      "evidence": [
+        "https://www.oxo.com/perfectpull-wipes-dispenser.html?color=Pink",
+        "https://www.oxo.com/shop/baby-toddler/cleaning.html"
+      ],
+      "note": "This is a one-handed dispensing and storage problem: weighted plate, one-wipe separation, gasket, refill pack compatibility, capacity, footprint, portability and cleanability. It will not make unsupported claims about preventing contamination or preserving wipes indefinitely."
+    },
+    {
+      "site": "baby",
+      "familySlug": "crib-mobiles",
+      "scores": { "productDemand": 20, "serpOpening": 17, "commercialIntent": 17, "clusterFit": 13, "commission": 5, "total": 72 },
+      "evidence": [
+        "https://www.healthychildren.org/English/safety-prevention/at-home/Pages/how-to-buy-safe-toys.aspx",
+        "https://www.cpsc.gov/recall-products/crib-mobiles-and-gyms"
+      ],
+      "note": "Mount compatibility, reach, mechanical versus electronic motion, sound and light controls, timer, battery-door security and current recalls create the buying decision. The page will require secure out-of-reach mounting and removal at five months or when the baby first pushes up on hands and knees, whichever occurs first."
+    },
+    {
+      "site": "baby",
+      "familySlug": "nursery-blackout-curtains",
+      "scores": { "productDemand": 23, "serpOpening": 17, "commercialIntent": 18, "clusterFit": 12, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://www.cpsc.gov/gocordless",
+        "https://www.healthychildren.org/English/safety-prevention/at-home/Pages/Make-Babys-Room-Safe.aspx"
+      ],
+      "note": "Real intent spans measured width and fullness, true room darkening versus light filtering, thermal backing, grommet or rod pocket, wash care and light leakage at edges. Cordless treatment and keeping cribs and furniture away from window-covering cords are non-negotiable; darkness will not be presented as a sleep-treatment claim."
+    },
+    {
+      "site": "baby",
+      "familySlug": "stroller-rain-covers",
+      "scores": { "productDemand": 21, "serpOpening": 16, "commercialIntent": 17, "clusterFit": 12, "commission": 5, "total": 71 },
+      "evidence": [
+        "https://uppababy.com/wp-content/uploads/2024/10/240531_StrollerComparison2024_USCA_Digital.pdf",
+        "https://support.uppababy.com/hc/en-us/articles/115009547287-Are-there-other-accessories-available-for-the-G-Link"
+      ],
+      "note": "Model-specific versus universal fit, ventilation openings, access zipper, attachment in wind, visibility, storage size and whether it works with a reclined seat are the decision points. The page will reject sealed DIY covers and emphasize airflow, temperature checks and stroller-manufacturer compatibility."
+    },
+    {
+      "site": "baby",
+      "familySlug": "stroller-footmuffs",
+      "scores": { "productDemand": 22, "serpOpening": 16, "commercialIntent": 18, "clusterFit": 12, "commission": 5, "total": 73 },
+      "evidence": [
+        "https://uppababy.com/accessories/all-weather/cozyganoosh-2025/",
+        "https://www.healthychildren.org/English/ages-stages/baby/bathing-skin-care/Pages/Heat-Rash.aspx"
+      ],
+      "note": "Harness-slot fit, stroller and seat compatibility, temperature range, insulation, water resistance, hood and foot opening, washability and storage distinguish footmuffs from blankets. Exact harness routing must stay unobstructed, and caregivers must check for overheating instead of relying on a temperature rating alone."
+    },
+    {
+      "site": "baby",
+      "familySlug": "stroller-cup-holders",
+      "scores": { "productDemand": 20, "serpOpening": 16, "commercialIntent": 17, "clusterFit": 12, "commission": 5, "total": 70 },
+      "evidence": [
+        "https://uppababy.com/wp-content/uploads/2024/10/240531_StrollerComparison2024_USCA_Digital.pdf",
+        "https://uppababy.com/accessories/car-seats-accessories/"
+      ],
+      "note": "A narrow but independent accessory query exists around exact frame compatibility, clamp security, drink diameter, rotation, folding interference, weight limit and whether it is intended for caregiver or child use. Recommendations will avoid hot open drinks and any mounting that changes safe folding or braking access."
+    },
+    {
+      "site": "baby",
+      "familySlug": "high-chair-floor-mats",
+      "scores": { "productDemand": 20, "serpOpening": 16, "commercialIntent": 17, "clusterFit": 12, "commission": 5, "total": 70 },
+      "evidence": [
+        "https://www.healthychildren.org/English/ages-stages/toddler/nutrition/Pages/Self-Feeding.aspx",
+        "https://ezpzfun.com/pages/faqs/1000"
+      ],
+      "note": "The purchase problem is floor protection under a high chair: true coverage from chair legs to drop zone, edge curl and slip, waterproof backing, wipe versus machine wash, foldability and compatibility with hard floors or carpet. It will be positioned as cleanup equipment, not a substitute for supervised seated feeding."
+    },
+    {
+      "site": "baby",
+      "familySlug": "bathtub-spout-covers",
+      "scores": { "productDemand": 20, "serpOpening": 16, "commercialIntent": 17, "clusterFit": 12, "commission": 5, "total": 70 },
+      "evidence": [
+        "https://www.cpsc.gov/Newsroom/News-Releases/2018/New-Federal-Safety-Standard-for-Infant-Bath-Tubs-Takes-Effect",
+        "https://www.healthychildren.org/English/safety-prevention/at-play/Pages/Infant-Water-Safety.aspx"
+      ],
+      "note": "Spout shape and diverter fit, softness, secure attachment, drain and shower access, drying and mildew-prone cavities make this a distinct bath accessory decision. It only cushions contact; it does not prevent drowning, scalds or faucet operation, so arm's-reach supervision and water-temperature controls remain primary."
+    },
+    {
+      "site": "baby",
+      "familySlug": "bath-toy-organizers",
+      "scores": { "productDemand": 21, "serpOpening": 16, "commercialIntent": 17, "clusterFit": 12, "commission": 5, "total": 71 },
+      "evidence": [
+        "https://www.cpsc.gov/Newsroom/News-Releases/2018/New-Federal-Safety-Standard-for-Infant-Bath-Tubs-Takes-Effect",
+        "https://www.healthychildren.org/English/safety-prevention/at-home/pages/Bathroom-Safety.aspx"
+      ],
+      "note": "Attachment on tile or tub, actual drainage and airflow, mesh versus rigid bin, toy capacity, removable cleaning and whether a child can pull it down define the purchase. The page will not imply that storage eliminates mold; toys and organizer still need draining, cleaning and periodic inspection."
+    },
+    {
+      "site": "baby",
+      "familySlug": "baby-bath-thermometers",
+      "scores": { "productDemand": 22, "serpOpening": 17, "commercialIntent": 17, "clusterFit": 12, "commission": 5, "total": 73 },
+      "evidence": [
+        "https://www.healthychildren.org/English/safety-prevention/at-play/Pages/Infant-Water-Safety.aspx",
+        "https://www.cpsc.gov/Recalls/2026/Napei-Infant-Bath-Tubs-Recalled-Due-to-Risk-of-Serious-Injury-or-Death-from-Ingestion-Hazard-Violates-Mandatory-Standard-for-Consumer-Products-with-Button-Cell-Batteries-Sold-on-Amazon-by-Sefon-Store"
+      ],
+      "note": "Accuracy range, response time, continuous display, hot/cold alert, waterproof rating, cleaning and a tool-secured battery compartment create a meaningful comparison. A thermometer is a secondary check: caregivers must mix water, test it directly, limit water-heater temperature and stay within arm's reach."
+    },
+    {
+      "site": "baby",
+      "familySlug": "potty-training-seats",
+      "scores": { "productDemand": 22, "serpOpening": 17, "commercialIntent": 18, "clusterFit": 12, "commission": 5, "total": 74 },
+      "evidence": [
+        "https://www.healthychildren.org/English/ages-stages/toddler/toilet-training/Pages/the-right-age-to-toilet-train.aspx",
+        "https://www.oxo.com/shop/baby-toddler/cleaning.html"
+      ],
+      "note": "This is a category decision between floor potties, toilet reducers and travel/folding seats, with stability, opening size, splash guard, handles, foot support, cleaning and storage as the dimensions. It stays separate from the existing exact Bc Babycare review and will emphasize readiness rather than an arbitrary training age."
+    },
+    {
+      "site": "baby",
+      "familySlug": "toddler-step-stools",
+      "scores": { "productDemand": 22, "serpOpening": 16, "commercialIntent": 18, "clusterFit": 12, "commission": 5, "total": 73 },
+      "evidence": [
+        "https://www.healthychildren.org/English/ages-stages/toddler/toilet-training/Pages/the-right-age-to-toilet-train.aspx",
+        "https://www.oxo.com/shop/baby-toddler/cleaning.html"
+      ],
+      "note": "Kept distinct from learning towers by low bathroom and sink access: platform dimensions, one- versus two-step height, nonslip top and feet, base width, edge geometry, child carry weight and cleaning. No stool is fall-proof; level dry flooring and adult supervision are required."
+    },
+    {
+      "site": "baby",
+      "familySlug": "childproof-outlet-covers",
+      "scores": { "productDemand": 24, "serpOpening": 16, "commercialIntent": 18, "clusterFit": 13, "commission": 5, "total": 76 },
+      "evidence": [
+        "https://www.cpsc.gov/safety-education/safety-guides/kids-and-babies/Childproofing-Your-Home",
+        "https://www.cpsc.gov/s3fs-public/252ChildproofingYourHome32123.pdf"
+      ],
+      "note": "Plug-in caps, sliding plates and box covers solve different receptacle and in-use-cord problems. Adult removal, fit, small-part risk, device interference and tamper-resistant receptacles are core; the page will avoid absolute 'childproof' language and require replacement of loose or damaged pieces."
+    },
+    {
+      "site": "baby",
+      "familySlug": "furniture-anchor-kits",
+      "scores": { "productDemand": 25, "serpOpening": 16, "commercialIntent": 18, "clusterFit": 13, "commission": 5, "total": 77 },
+      "evidence": [
+        "https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/AnchorItgov",
+        "https://www.cpsc.gov/safety-education/safety-guides/kids-and-babies/Childproofing-Your-Home"
+      ],
+      "note": "Furniture and wall material, bracket versus strap, rated load and slack, stud or masonry fasteners, included hardware, movement for cleaning and reinspection drive this high-value safety purchase. Content will require following both furniture and anchor instructions and will never recommend drywall-only fastening unless explicitly approved by the manufacturer."
+    },
+    {
+      "site": "baby",
+      "familySlug": "childproof-corner-guards",
+      "scores": { "productDemand": 21, "serpOpening": 17, "commercialIntent": 17, "clusterFit": 12, "commission": 5, "total": 72 },
+      "evidence": [
+        "https://www.cpsc.gov/safety-education/safety-guides/kids-and-babies/Childproofing-Your-Home",
+        "https://www.cpsc.gov/s3fs-public/252ChildproofingYourHome32123.pdf"
+      ],
+      "note": "Corner shape and radius, low-profile versus full edge coverage, adhesive bond on the exact finish, removal damage, chew resistance and detached-piece size are the comparison dimensions. Guards only reduce impact severity and must be removed immediately if loose; they do not make unstable furniture safe."
+    },
+    {
+      "site": "baby",
+      "familySlug": "childproof-door-knob-covers",
+      "scores": { "productDemand": 22, "serpOpening": 16, "commercialIntent": 18, "clusterFit": 12, "commission": 5, "total": 73 },
+      "evidence": [
+        "https://www.cpsc.gov/safety-education/safety-guides/kids-and-babies/Childproofing-Your-Home",
+        "https://www.cpsc.gov/s3fs-public/252ChildproofingYourHome32123.pdf"
+      ],
+      "note": "Round knob diameter, grip action, adult dexterity, split-shell security, emergency egress and compatibility with privacy locks create the buying choice. The page will not recommend any cover that slows adult exit or defeats fire-safety access, and it will separate lever-lock alternatives."
+    },
+    {
+      "site": "baby",
+      "familySlug": "childproof-stove-knob-covers",
+      "scores": { "productDemand": 22, "serpOpening": 17, "commercialIntent": 18, "clusterFit": 12, "commission": 5, "total": 74 },
+      "evidence": [
+        "https://www.healthychildren.org/English/safety-prevention/at-home/Pages/Kitchen-Safety.aspx",
+        "https://www.cpsc.gov/s3fs-public/3001_Stove_SafetyAlert_v10_0.pdf"
+      ],
+      "note": "Knob diameter and spacing, control-panel shape, heat clearance, hinged access, visual position check and adult opening effort drive this gas/electric range accessory. It is a backup layer only: keep children out of the cooking zone, turn handles inward and use rear burners where practical."
+    },
+    {
+      "site": "baby",
+      "familySlug": "childproof-refrigerator-locks",
+      "scores": { "productDemand": 20, "serpOpening": 16, "commercialIntent": 17, "clusterFit": 12, "commission": 5, "total": 70 },
+      "evidence": [
+        "https://www.cpsc.gov/safety-education/safety-guides/kids-and-babies/Childproofing-Your-Home",
+        "https://www.healthychildren.org/English/safety-prevention/at-home/Pages/Kitchen-Safety.aspx"
+      ],
+      "note": "French-door, side-by-side and single-door appliances need different adhesive strap or latch geometry; opening effort, one-hand adult use, finish compatibility, door seal clearance and failure visibility matter. It will be framed as access management, not food-safety protection or a substitute for locking hazardous medicines and chemicals separately."
+    },
+    {
+      "site": "baby",
+      "familySlug": "childproof-toilet-locks",
+      "scores": { "productDemand": 22, "serpOpening": 17, "commercialIntent": 18, "clusterFit": 12, "commission": 5, "total": 74 },
+      "evidence": [
+        "https://www.healthychildren.org/English/safety-prevention/at-home/pages/Bathroom-Safety.aspx",
+        "https://www.healthychildren.org/English/news/Pages/Updated-Recommendations-to-Prevent-Drowning-in-Children.aspx"
+      ],
+      "note": "Bowl and lid profile, hinge clearance, adhesive or clamp attachment, automatic relocking, adult release, cleaning and guest usability create a distinct safety purchase. A toilet lock is secondary protection only; bathroom doors, constant supervision near water and emptying other water containers remain necessary."
+    },
+    {
+      "site": "pet",
+      "familySlug": "pet-stairs",
+      "scores": { "productDemand": 23, "serpOpening": 16, "commercialIntent": 18, "clusterFit": 13, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://shop.akc.org/collections/dog-stairs",
+        "https://www.petstep.com/the-original-petstep-folding-dog-ramp/"
+      ],
+      "note": "Kept distinct from the existing dog-ramp page by a stairs-versus-ramp decision for beds and sofas: total rise, individual tread rise and depth, width, nonslip base, side support, weight rating, washable cover and whether the animal will actually use steps. Mobility pain or a sudden reluctance to climb requires veterinary assessment rather than a product promise."
+    },
+    {
+      "site": "pet",
+      "familySlug": "dog-bike-trailers",
+      "scores": { "productDemand": 24, "serpOpening": 17, "commercialIntent": 19, "clusterFit": 12, "commission": 5, "total": 77 },
+      "evidence": [
+        "https://burley.com/collections/pet-bike-trailers/products/tail-wagon",
+        "https://www.akc.org/expert-advice/home-living/biking-with-dogs/"
+      ],
+      "note": "Interior standing and turning room, pet and cargo weight limits, hitch compatibility, floor support, ventilation, entry height, restraint points, rollover structure, wheel and brake behavior and folded size create a strong buying decision. The page will require acclimation, harness restraint, short test rides, cooler routes and manufacturer-specific hitch installation."
+    },
+    {
+      "site": "pet",
+      "familySlug": "dog-bicycle-baskets",
+      "scores": { "productDemand": 20, "serpOpening": 17, "commercialIntent": 18, "clusterFit": 11, "commission": 5, "total": 71 },
+      "evidence": [
+        "https://shop.akc.org/products/buddy-bike-basket",
+        "https://www.akc.org/expert-advice/home-living/biking-with-dogs/"
+      ],
+      "note": "This is a small-dog carrier question distinct from trailers: front versus rear mounting, exact rack or handlebar compatibility, pet weight, base support, steering effect, ventilation, harness-only tether geometry and weather cover. Collar tethering, improvised baskets and exceeding bike or basket limits are excluded."
+    },
+    {
+      "site": "pet",
+      "familySlug": "hands-free-dog-leashes",
+      "scores": { "productDemand": 24, "serpOpening": 15, "commercialIntent": 18, "clusterFit": 13, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://ruffwear.com/products/ridgeline-leash",
+        "https://ruffwear.com/products/flagline-leash"
+      ],
+      "note": "Waist versus cross-body wear, working length, stretch, traffic handle, buckle redundancy, swivel, reflective trim, dog size and whether the handler can release or regain hand control drive this query. It will separate casual walking from canicross and will not recommend hands-free use for an untrained strong puller or unsafe terrain."
+    },
+    {
+      "site": "pet",
+      "familySlug": "no-pull-dog-harnesses",
+      "scores": { "productDemand": 25, "serpOpening": 14, "commercialIntent": 19, "clusterFit": 13, "commission": 5, "total": 76 },
+      "evidence": [
+        "https://2houndsdesign.com/products/black-freedom-no-pull-dog-harness",
+        "https://ruffwear.com/products/hi-and-light-dog-harness"
+      ],
+      "note": "Front-clip, dual-clip and tightening-loop designs have different fit and control tradeoffs; chest measurement, strap path behind the elbow, adjustment range, leash geometry, chafe points and escape resistance are the comparison. No harness stops pulling by itself, so content will pair equipment with reward-based training and fit checks."
+    },
+    {
+      "site": "pet",
+      "familySlug": "reflective-dog-harnesses",
+      "scores": { "productDemand": 22, "serpOpening": 16, "commercialIntent": 18, "clusterFit": 13, "commission": 5, "total": 74 },
+      "evidence": [
+        "https://ruffwear.com/products/ridgeline-harness",
+        "https://ruffwear.com/products/lumenglow-jacket"
+      ],
+      "note": "Kept separate from no-pull through 360-degree low-light visibility: reflective webbing area and viewing angles, daytime color contrast, fit, attachment points, handle, light loop and whether a separate high-visibility vest is better. Reflective material only works when illuminated and does not replace a light, leash or traffic avoidance."
+    },
+    {
+      "site": "pet",
+      "familySlug": "dog-backpacks",
+      "scores": { "productDemand": 21, "serpOpening": 17, "commercialIntent": 18, "clusterFit": 12, "commission": 5, "total": 73 },
+      "evidence": [
+        "https://ruffwear.com/products/hiking-dog-pack-approach",
+        "https://ruffwear.com/collections/approach-pack-collection"
+      ],
+      "note": "This is gear carried by the dog, not a dog carrier: girth fit, saddlebag volume, empty pack weight, balanced loading, bounce control, elbow clearance, handle, hydration access and wash care define the purchase. The page will start with empty and light loads and recommend veterinary guidance before loading young, senior or mobility-limited dogs."
+    },
+    {
+      "site": "pet",
+      "familySlug": "dog-cooling-bandanas",
+      "scores": { "productDemand": 21, "serpOpening": 17, "commercialIntent": 18, "clusterFit": 12, "commission": 5, "total": 73 },
+      "evidence": [
+        "https://ruffwear.com/products/swamp-cooler-neck-gaiter",
+        "https://www.akc.org/expert-advice/health/cooling-mats-for-dogs/"
+      ],
+      "note": "Evaporative fabric versus frozen insert, climate and humidity suitability, neck fit, wet duration, re-wetting, weight, chew risk and washing create a real accessory comparison distinct from cooling vests. It is only a comfort aid; shade, fresh water, rest, cooler schedules and recognizing heat illness take priority."
+    },
+    {
+      "site": "pet",
+      "familySlug": "dog-raincoats",
+      "scores": { "productDemand": 20, "serpOpening": 17, "commercialIntent": 17, "clusterFit": 12, "commission": 5, "total": 71 },
+      "evidence": [
+        "https://ruffwear.com/products/sun-shower-dog-raincoat",
+        "https://ruffwear.com/collections/the-sun-shower-series"
+      ],
+      "note": "Back length and chest girth, vest versus coverall coverage, waterproof construction, breathability, storm collar, leg loops, leash portal, visibility and wash care drive the decision. A raincoat should not restrict gait, toileting or panting, and wet skin and harness areas still need inspection and drying."
+    },
+    {
+      "site": "pet",
+      "familySlug": "dog-boots",
+      "scores": { "productDemand": 24, "serpOpening": 14, "commercialIntent": 19, "clusterFit": 13, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://ruffwear.com/products/grip-trex-boots",
+        "https://www.akc.org/expert-advice/travel/tips-for-taking-dog-to-beach/"
+      ],
+      "note": "Front and rear paw measurements, hot pavement versus ice or trail use, sole flex and traction, upper breathability, closure position, dewclaw clearance, pair count and break-in are the buying dimensions. Boots are not permission to extend unsafe heat exposure; fit and paw checks are required shortly after starting and throughout use."
+    },
+    {
+      "site": "pet",
+      "familySlug": "dog-paw-washers",
+      "scores": { "productDemand": 21, "serpOpening": 17, "commercialIntent": 17, "clusterFit": 12, "commission": 5, "total": 72 },
+      "evidence": [
+        "https://dexas.com/pet",
+        "https://ruffwear.com/blogs/explored/dog-paw-anatomy"
+      ],
+      "note": "Cup opening and depth, paw diameter, silicone-finger stiffness, disassembly, water volume, portability and drying define this mud-removal tool. The page will recommend lukewarm water, gentle insertion, separate toe and pad inspection and thorough drying; wounds, burns, swelling or persistent licking are not a cleaning problem."
+    },
+    {
+      "site": "pet",
+      "familySlug": "portable-dog-water-bottles",
+      "scores": { "productDemand": 22, "serpOpening": 17, "commercialIntent": 18, "clusterFit": 12, "commission": 5, "total": 74 },
+      "evidence": [
+        "https://shop.akc.org/products/springer-travel-dog-bottle",
+        "https://www.akc.org/expert-advice/travel/tips-for-taking-your-dog-out-on-the-water/"
+      ],
+      "note": "Integrated trough versus cap bowl, capacity, one-hand flow, return-water contamination, leak lock, cup-holder fit, insulation, cleaning access and carrying loop create an independent travel query. The page will recommend fresh water and frequent offers, not supplements or a fixed universal intake claim."
+    },
+    {
+      "site": "pet",
+      "familySlug": "collapsible-travel-pet-bowls",
+      "scores": { "productDemand": 22, "serpOpening": 16, "commercialIntent": 18, "clusterFit": 12, "commission": 5, "total": 73 },
+      "evidence": [
+        "https://ruffwear.com/products/anniversary-quencher",
+        "https://dexas.com/pet"
+      ],
+      "note": "Silicone pop-open, folding fabric and roll-up formats differ in true capacity, base stability, lip height, packed size, clip, drying time, odor retention and dishwasher or machine-wash instructions. Food and water bowls must be cleaned and fully dried; a compact bowl is not automatically suitable for an unattended crate."
+    },
+    {
+      "site": "pet",
+      "familySlug": "elevated-dog-bowls",
+      "scores": { "productDemand": 23, "serpOpening": 15, "commercialIntent": 18, "clusterFit": 12, "commission": 5, "total": 73 },
+      "evidence": [
+        "https://www.zeedog.com/products/zee-bowl-black",
+        "https://www.akc.org/expert-advice/health/bloat-in-dogs/"
+      ],
+      "note": "Stand height range, bowl volume and material, base stability, spill containment, adjustability, cleaning and access while wearing an e-collar create a legitimate equipment choice. The page will reject digestion and bloat-prevention claims: evidence on elevation and GDV is conflicting, and height should follow the individual dog's needs and veterinary advice."
+    },
+    {
+      "site": "pet",
+      "familySlug": "stainless-steel-pet-fountains",
+      "scores": { "productDemand": 24, "serpOpening": 16, "commercialIntent": 19, "clusterFit": 13, "commission": 5, "total": 77 },
+      "evidence": [
+        "https://www.petsafe.com/shop/fountains-and-feeders/fountains",
+        "https://petlibro.com/products/dockstream-rfid-smart-fountain"
+      ],
+      "note": "This will be a material-constrained shortlist, not a duplicate of the existing general cat-fountain guide: grade and amount of exposed stainless steel, removable basin, seams, capacity, pump architecture, filter lock-in, cable or battery design, noise and dishwasher access are central. Backup bowls and daily hygiene remain required."
+    },
+    {
+      "site": "pet",
+      "familySlug": "ceramic-pet-fountains",
+      "scores": { "productDemand": 21, "serpOpening": 17, "commercialIntent": 18, "clusterFit": 12, "commission": 5, "total": 73 },
+      "evidence": [
+        "https://www.petsafe.com/shop/fountains-and-feeders/fountains",
+        "https://pioneerpet.com/wp-content/uploads/2024/01/PP_2024-Catalog_011624_single_OL_web.pdf"
+      ],
+      "note": "Also material-constrained: glaze condition, chip and crack inspection, unit weight, two drinking levels, actual capacity, pump removal, corner access, filter availability and dishwasher-safe components distinguish ceramic from stainless and plastic. Heavy does not mean tip-proof, and damaged ceramic must be retired."
+    },
+    {
+      "site": "pet",
+      "familySlug": "gravity-pet-waterers",
+      "scores": { "productDemand": 22, "serpOpening": 16, "commercialIntent": 18, "clusterFit": 12, "commission": 5, "total": 73 },
+      "evidence": [
+        "https://www.petsafe.com/p/healthy-pet-water-station/PFD17-11855/",
+        "https://www.akc.org/expert-advice/lifestyle/dog-water-fountain/"
+      ],
+      "note": "Reservoir size versus lifting weight, bowl material, flow valve, air-lock behavior, fill opening, base stability, disassembly and cleaning frequency form a distinct no-power purchase. A large reservoir does not keep water sanitary for weeks; the bowl and reservoir still require frequent refresh and cleaning, with another water source available."
+    },
+    {
+      "site": "pet",
+      "familySlug": "covered-self-cleaning-litter-boxes",
+      "scores": { "productDemand": 26, "serpOpening": 14, "commercialIntent": 20, "clusterFit": 14, "commission": 5, "total": 79 },
+      "evidence": [
+        "https://www.litter-robot.com/litter-robot.html",
+        "https://www.aafponline.org/files/resources/guidelines/feline_behavior_guidelines.pdf"
+      ],
+      "note": "Kept distinct from the existing open-top automatic-box page through entrance and internal globe size, cat detection, minimum weight and age, cycle delay, escape path, litter compatibility, waste drawer, deep cleaning, app and subscription. Cat acceptance comes before automation; a large manual open box remains the fallback and elimination changes require veterinary attention."
+    },
+    {
+      "site": "pet",
+      "familySlug": "cat-litter-disposal-systems",
+      "scores": { "productDemand": 22, "serpOpening": 17, "commercialIntent": 18, "clusterFit": 12, "commission": 5, "total": 74 },
+      "evidence": [
+        "https://www.littergenie.com/en-uk/products/litterlocker-by-litter-genie-bin",
+        "https://www.aafponline.org/files/resources/guidelines/feline_behavior_guidelines.pdf"
+      ],
+      "note": "Bin opening, seal mechanism, refill format and lock-in, real waste capacity, bag cutting and tying, child and pet access, footprint and cleaning determine ownership cost. It is a waste-transfer tool, not permission to scoop less often; boxes still need at least daily attention and the disposal bin needs scheduled emptying and cleaning."
+    },
+    {
+      "site": "pet",
+      "familySlug": "cat-litter-enclosures",
+      "scores": { "productDemand": 21, "serpOpening": 17, "commercialIntent": 18, "clusterFit": 12, "commission": 5, "total": 73 },
+      "evidence": [
+        "https://www.unipawspro.com/products/designer-cat-litter-box-enclosure",
+        "https://catfriendly.com/wp-content/uploads/2022/05/AAFPHouseSoilingBrochure.pdf"
+      ],
+      "note": "Internal dimensions after hinges and dividers, entrance count and size, ventilation, box removal path, waterproof surfaces, structural stability and whether a cat can be trapped by another pet define the choice. The cabinet must fit a box about 1.5 times the cat's length and preserve easy access; appearance and odor hiding do not outrank feline acceptance."
+    },
+    {
+      "site": "pet",
+      "familySlug": "cat-window-perches",
+      "scores": { "productDemand": 23, "serpOpening": 16, "commercialIntent": 18, "clusterFit": 13, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://khpet.com/products/k-h-ez-mount-cat-window-perch-kitty-sill-window-bed",
+        "https://catfriendly.com/cat-friendly-homes/what-your-cat-needs-to-feel-secure/"
+      ],
+      "note": "Suction-cup, sill-braced and screw-mounted perches require different window geometry; usable platform, stated load, multi-cat margin, blind clearance, cover washing, landing route and maintenance create the purchase. The page will require exact surface measurement, periodic mount inspection and a safe path up and down."
+    },
+    {
+      "site": "pet",
+      "familySlug": "cat-wall-shelves",
+      "scores": { "productDemand": 22, "serpOpening": 17, "commercialIntent": 18, "clusterFit": 13, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://www.catastrophicreations.com/products/wall-mounted-cat-shelf",
+        "https://catfriendly.com/cat-friendly-homes/what-your-cat-needs-to-feel-secure/"
+      ],
+      "note": "Wall construction and stud spacing, fasteners, shelf depth and traction, rated load, jump gap, upward and downward route, escape choices and older-cat accessibility form a layout decision rather than a decorative list. Every installation will follow the exact substrate instructions and avoid creating a dead-end where cats can block one another."
+    },
+    {
+      "site": "pet",
+      "familySlug": "cat-exercise-wheels",
+      "scores": { "productDemand": 21, "serpOpening": 18, "commercialIntent": 18, "clusterFit": 12, "commission": 5, "total": 74 },
+      "evidence": [
+        "https://onefastcat.com/",
+        "https://catfriendly.com/wp-content/uploads/2026/02/FelineVMA-Environmental-Needs-2026-Web.pdf"
+      ],
+      "note": "Running diameter, track width and surface, base footprint, wheel stability, noise, cleanability, replacement track and gradual reward-based introduction create a distinct high-cost query. A wheel is optional enrichment, never a forced exercise device or replacement for interactive play, climbing, hiding and veterinary weight management."
+    },
+    {
+      "site": "pet",
+      "familySlug": "cat-play-tunnels",
+      "scores": { "productDemand": 22, "serpOpening": 16, "commercialIntent": 17, "clusterFit": 13, "commission": 5, "total": 73 },
+      "evidence": [
+        "https://www.kongcompany.com/play-spaces-burrow/",
+        "https://catfriendly.com/be-a-cat-friendly-caregiver/playing-with-your-cat/"
+      ],
+      "note": "Diameter and length, multiple exits, rigid versus collapsible frame, crinkle or electronic elements, dangling-part security, skid, washability and folded storage create the decision. Multi-cat tunnels need escape choices, and play should be supervised until loose wires, exposed frame ends and detachable pieces are ruled out."
+    },
+    {
+      "site": "pet",
+      "familySlug": "pet-monitoring-cameras",
+      "scores": { "productDemand": 25, "serpOpening": 13, "commercialIntent": 20, "clusterFit": 14, "commission": 5, "total": 77 },
+      "evidence": [
+        "https://furbo.com/us/pages/comparison",
+        "https://furbo.com/us/dog"
+      ],
+      "note": "Pet detection versus generic motion, fixed or rotating view, night image, two-way audio, treat size and jam access, power-loss behavior, cloud recording, alert and playback paywalls, account security and camera placement drive the purchase. Monitoring is not emergency response, and content will not claim a camera diagnoses behavior or separation distress."
+    },
+    {
+      "site": "pet",
+      "familySlug": "wireless-dog-doorbells",
+      "scores": { "productDemand": 20, "serpOpening": 18, "commercialIntent": 17, "clusterFit": 12, "commission": 5, "total": 72 },
+      "evidence": [
+        "https://mightypaw.com/products/mighty-paw-smart-bell-2-0",
+        "https://www.akc.org/expert-advice/training/how-to-potty-train-a-puppy/"
+      ],
+      "note": "Touch pressure, nose versus paw target, transmitter power and weather rating, receiver range, volume, tones, multiple-door expansion, mounting and outage behavior create a real training-device query. It will be presented as a conditioned communication cue within a consistent housetraining routine, not proof that every ring means toileting or a substitute for scheduled trips."
+    },
+    {
+      "site": "pet",
+      "familySlug": "pet-food-storage-containers",
+      "scores": { "productDemand": 24, "serpOpening": 15, "commercialIntent": 19, "clusterFit": 13, "commission": 5, "total": 76 },
+      "evidence": [
+        "https://www.fda.gov/animal-veterinary/animal-health-literacy/proper-storage-pet-food-treats",
+        "https://www.fda.gov/animal-veterinary/animal-health-literacy/save-your-pet-food-lot-number"
+      ],
+      "note": "Bag-in-bin dimensions, realistic capacity by bag shape, gasket and latch, pet and pest resistance, wheels, scoop storage, wash and full-dry access and pantry temperature drive the purchase. The page will preserve the original bag and lot code inside a clean dry bin instead of recommending repeated direct kibble dumping."
+    },
+    {
+      "site": "pet",
+      "familySlug": "hard-sided-pet-carriers",
+      "scores": { "productDemand": 24, "serpOpening": 15, "commercialIntent": 19, "clusterFit": 13, "commission": 5, "total": 76 },
+      "evidence": [
+        "https://www.akc.org/expert-advice/lifestyle/how-to-choose-the-best-dog-carrier/",
+        "https://www.aphis.usda.gov/pet-travel/pets-on-planes/preparing-pets-air-travel"
+      ],
+      "note": "Everyday hard carriers for veterinary and ground trips are separated from airline cargo crates through interior dimensions, carrier weight, top versus front loading, fasteners, door latch, ventilation, handholds, leak-resistant base and car placement. No generic 'airline approved' claim will be used; trip rules and restraint arrangements must be checked separately."
+    },
+    {
+      "site": "pet",
+      "familySlug": "airline-dog-crates",
+      "scores": { "productDemand": 26, "serpOpening": 14, "commercialIntent": 20, "clusterFit": 14, "commission": 5, "total": 79 },
+      "evidence": [
+        "https://www.iata.org/en/programs/cargo/live-animals/pets/",
+        "https://www.aphis.usda.gov/pet-travel/pets-on-planes/preparing-pets-air-travel"
+      ],
+      "note": "This high-stakes intent is about current route, airline and animal-specific acceptance: IATA 2026 internal sizing, rigid construction, ventilation, metal fasteners and door, external handles, absorbent bedding, attached food and water bowls, labels and acclimation. No crate is universally approved; the airline and destination rules must be confirmed before purchase."
+    },
+    {
+      "site": "pet",
+      "familySlug": "dog-bath-sprayers",
+      "scores": { "productDemand": 20, "serpOpening": 18, "commercialIntent": 17, "clusterFit": 12, "commission": 5, "total": 72 },
+      "evidence": [
+        "https://showers.waterpik.com/product-support/manuals/waterpik-dual-power-pulse-ZZR-769ME-instruction-manual/",
+        "https://showers.waterpik.com/pdfs/20032028-F.pdf"
+      ],
+      "note": "Shower-arm, faucet and garden-hose compatibility, diverter, hose reach, usable pressure patterns, one-hand pause, grip, thick-coat penetration and mineral cleaning define the purchase. The page will use lukewarm water, avoid eyes and ears, keep pressure gentle and make secure footing and calm acclimation more important than spray force."
+    },
+    {
+      "site": "pet",
+      "familySlug": "cat-grooming-gloves",
+      "scores": { "productDemand": 20, "serpOpening": 17, "commercialIntent": 17, "clusterFit": 12, "commission": 5, "total": 71 },
+      "evidence": [
+        "https://handsongloves.com/collections/cats",
+        "https://catfriendly.com/wp-content/uploads/2026/02/FelineVMA-Environmental-Needs-2026-Web.pdf"
+      ],
+      "note": "Hand sizing, bristle length and firmness, five-finger versus mitt control, wrist closure, hair release, wet use and cleaning create a narrow but distinct low-friction grooming query. Gloves are for gentle loose-hair removal and positive handling; mats, painful skin, sudden overgrooming or intolerance need a different tool or veterinary guidance."
+    },
+    {
+      "site": "pet",
+      "familySlug": "quick-dry-dog-towels",
+      "scores": { "productDemand": 21, "serpOpening": 17, "commercialIntent": 17, "clusterFit": 12, "commission": 5, "total": 72 },
+      "evidence": [
+        "https://ruffwear.com/products/dirtbag-dog-towel",
+        "https://ruffwear.com/pages/partners-in-grime"
+      ],
+      "note": "Flat microfiber towels, mitts and wearable drying coats differ in absorbent area, fabric weight, fit, belly and leg reach, wringing, wash cycle, hang-dry time and packed size. 'Quick dry' will refer to the towel's documented care or measured behavior, not a promise that a thick-coated dog is dry underneath."
+    },
+    {
+      "site": "pet",
+      "familySlug": "aquarium-canister-filters",
+      "scores": { "productDemand": 25, "serpOpening": 15, "commercialIntent": 19, "clusterFit": 13, "commission": 5, "total": 77 },
+      "evidence": [
+        "https://fluvalaquatics.com/us/shop/filtration-media/filtration/external-filtration",
+        "https://fluvalaquatics.com/uk/shop/product/07-series"
+      ],
+      "note": "Actual tank volume and bioload, manufacturer flow versus loaded flow, media baskets, hose diameter and reach, valve block, priming, head height, seal and impeller service, leak containment, noise and power use create a technical buying decision. Product flow ratings will not replace stocking- and species-specific aquarium design."
+    },
+    {
+      "site": "pet",
+      "familySlug": "aquarium-air-pumps",
+      "scores": { "productDemand": 23, "serpOpening": 16, "commercialIntent": 18, "clusterFit": 13, "commission": 5, "total": 75 },
+      "evidence": [
+        "https://www.tetra-fish.com/products/aeration/whisper-aquarium-air-pump",
+        "https://www.tetra-fish.com/ask-tetra/aquarium.aspx"
+      ],
+      "note": "Rated airflow, tank depth and back pressure, number of outlets, gang-valve use, check valve and above-water placement, diaphragm parts, vibration isolation, noise and outage backup define the purchase. Bubbles are not automatically sufficient oxygenation or filtration; the whole system and livestock needs determine whether an air pump is needed."
+    },
+    {
+      "site": "pet",
+      "familySlug": "aquarium-led-lights",
+      "scores": { "productDemand": 25, "serpOpening": 15, "commercialIntent": 19, "clusterFit": 13, "commission": 5, "total": 77 },
+      "evidence": [
+        "https://fluvalaquatics.com/us/shop/product/plant-3-0",
+        "https://fluvalaquatics.com/manuals/FluvalSmart_App_Manual_EN_Jul2_19_SP.pdf"
+      ],
+      "note": "Tank length and mounting, freshwater fish-only versus planted or reef use, intensity and spread at depth, spectrum control, timer and ramping, local fallback, water protection, heat and app dependency create separate sub-intents. Lighting will be matched to livestock and plant needs and algae management, not selected by maximum wattage or decorative color alone."
+    },
+    {
+      "site": "pet",
+      "familySlug": "aquarium-heaters",
+      "scores": { "productDemand": 26, "serpOpening": 14, "commercialIntent": 19, "clusterFit": 14, "commission": 5, "total": 78 },
+      "evidence": [
+        "https://eheim.com/en_GB/aquatics/technology/aquarium-heaters/thermocontrol/thermocontrol-200",
+        "https://eheim.com/media/53/58/61/1706018431/3631_3640_thermocontrol_e.pdf"
+      ],
+      "note": "Species temperature, true water volume, room delta, wattage, adjustable versus fixed setpoint, guard, mounting orientation, dry-run protection, indicator, calibration and independent thermometer create a high-intent safety decision. The page will follow the exact immersion and unplug/cooling instructions and will not rely on the heater dial as the only temperature check."
+    },
+    {
+      "site": "pet",
+      "familySlug": "reptile-thermostat-controllers",
+      "scores": { "productDemand": 26, "serpOpening": 15, "commercialIntent": 20, "clusterFit": 14, "commission": 5, "total": 80 },
+      "evidence": [
+        "https://zoomed.com/environmental-control-center/",
+        "https://www.rspca.org.uk/adviceandwelfare/pets/other/leopardgecko"
+      ],
+      "note": "On/off, pulse and dimming output must match the heat source; channel count, maximum load, probe type and secure placement, day/night schedule, high/low alarms, fail-safe behavior and independent thermometer checks define this critical controller. Species-specific gradients and guarded heat sources remain mandatory, and automation never replaces daily verification."
+    }
+  ]
+}

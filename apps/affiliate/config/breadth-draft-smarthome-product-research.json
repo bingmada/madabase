@@ -1,0 +1,557 @@
+{
+  "publicationStatus": "research",
+  "cohort": "breadth-draft-120-plus",
+  "recordedAt": "2026-08-12T11:59:54.775Z",
+  "source": "Amazon US public listing pages; no price, star rating, review count, or Amazon-hosted image is stored",
+  "verificationPolicy": "Each selected ASIN appeared in an Amazon search result for the family and its direct /dp/ page returned the same ASIN without a currently-unavailable signal.",
+  "note": "Research evidence only. A selected search anchor is not a qualified page until intent, title semantics, official sources, safety, availability, and duplicate checks all pass.",
+  "totals": {
+    "requestedFamilies": 30,
+    "selected": 25,
+    "failed": 5
+  },
+  "products": [
+    {
+      "site": "smarthome",
+      "familySlug": "smart-aroma-diffusers",
+      "familyName": "Smart aroma diffusers",
+      "category": "automation",
+      "alternative": "manual diffusers or fragrance-free rooms",
+      "asin": "B0GSFHFQBF",
+      "title": "Waterless Essential Oil Diffuser, Smart App Controlled Scent Diffuser for Large Room, Covers Up to 4000 Sq Ft, Quiet Aroma Diffuser for Home Hotel Office,360° Ambient Light (Silver, Desktop)",
+      "brand": "LuxHydvat",
+      "detailUrl": "https://www.amazon.com/dp/B0GSFHFQBF",
+      "verifiedAt": "2026-08-12T11:46:26.196Z",
+      "searchRank": 15,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 13.44,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-bathroom-exhaust-fans",
+      "familyName": "Smart bathroom exhaust fans",
+      "category": "climate",
+      "alternative": "humidity-sensing wall controls with a standard fan",
+      "asin": "B0FR4J5QQ3",
+      "title": "Smart Bathroom Exhaust Fan with Light & Bluetooth Speaker, Humidity & Odor Sensor, 3 RGB Dynamic Mode, Adjustable Lighting (0-2600lm,3CCT), 1 Sone Quiet, Easy Install (Grey)",
+      "brand": "ROJOSAN",
+      "detailUrl": "https://www.amazon.com/dp/B0FR4J5QQ3",
+      "verifiedAt": "2026-08-12T11:36:25.168Z",
+      "searchRank": 18,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 9.987,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-countertop-composters",
+      "familyName": "Smart countertop composters",
+      "category": "automation",
+      "alternative": "municipal organics collection or passive composting",
+      "asin": "B0F2697XCD",
+      "title": "4L Electric Composter for Kitchen, Smart Countertop Compost Bin | Odorless, Low Noise, Auto-Cleaning, Turn Food Waste into Fertilizer, Indoor Food Waste Compost Machine, Black",
+      "brand": "Ouaken",
+      "detailUrl": "https://www.amazon.com/dp/B0F2697XCD",
+      "verifiedAt": "2026-08-12T11:45:55.229Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 14,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-floor-lamps",
+      "familyName": "Smart floor lamps",
+      "category": "automation",
+      "alternative": "standard floor lamps with smart bulbs",
+      "asin": "B0GK5R7BC5",
+      "title": "Smart Floor Lamps for Living Room, RGB+WW Ripple Projector Lamp | App & Button Control, RGB+IC Ambient Side Light & Warm White Reading Light, 66.8 Inch LED Standing Floor Light for Bedroom",
+      "brand": "Arsoma",
+      "detailUrl": "https://www.amazon.com/dp/B0GK5R7BC5",
+      "verifiedAt": "2026-08-12T11:40:27.399Z",
+      "searchRank": 45,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-floor-vents",
+      "familyName": "Smart floor vents",
+      "category": "climate",
+      "alternative": "manual registers and proper HVAC balancing",
+      "asin": "B07TJCMZ4T",
+      "title": "Flair Smart Vent 6x10 (White), AC Vent Cover for Floors, Walls and Ceilings.",
+      "brand": "Flair",
+      "detailUrl": "https://www.amazon.com/dp/B07TJCMZ4T",
+      "verifiedAt": "2026-08-12T11:35:24.906Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 14,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-indoor-gardens",
+      "familyName": "Smart indoor gardens",
+      "category": "automation",
+      "alternative": "passive planters with a timer-controlled grow light",
+      "asin": "B0DBHGMPXC",
+      "title": "Hydroponic Growing System Kit 16 Pods, Smart Herb Garden with Sprout Mode Can Seedling in Advance & 24W Full Spectrum LED Grow Light, Indoor Garden Planter for Home/Office/School (White)",
+      "brand": "DRYADES",
+      "detailUrl": "https://www.amazon.com/dp/B0DBHGMPXC",
+      "verifiedAt": "2026-08-12T11:44:27.059Z",
+      "searchRank": 15,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 11.94,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-ir-rf-remotes",
+      "familyName": "Smart IR and RF remote hubs",
+      "category": "automation",
+      "alternative": "original remotes or device-native integrations",
+      "asin": "B0DFBWZ1DZ",
+      "title": "RM4 Pro IR/RF Universal Remote Control BroadLink, All-in-One Hub, Code Learning Function, TV, STB, Air Conditioning, Curtain Motor(Support Only RF Fixed Code) Compatible with Alexa.(2.4GHz Wi-Fi Only)",
+      "brand": "B BestCon",
+      "detailUrl": "https://www.amazon.com/dp/B0DFBWZ1DZ",
+      "verifiedAt": "2026-08-12T11:43:03.483Z",
+      "searchRank": 10,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 12.64,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-landscape-spotlights",
+      "familyName": "Smart landscape spotlights",
+      "category": "automation",
+      "alternative": "standard outdoor fixtures on a listed smart control",
+      "asin": "B0FN46GW8Z",
+      "title": "Smart Landscape Spotlights,Solar Low Voltage IP67 Waterproof Outdoor Spot Lights Compatible with APP/Remote Control Color Changing Lights for Yard Garden Pathway Lawn Tree Festival 2pack",
+      "brand": "AurNyvaMay",
+      "detailUrl": "https://www.amazon.com/dp/B0FN46GW8Z",
+      "verifiedAt": "2026-08-12T11:38:47.295Z",
+      "searchRank": 25,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.04,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-lever-locks",
+      "familyName": "Smart lever locks",
+      "category": "access",
+      "alternative": "mechanical or keypad levers",
+      "asin": "B0CLG8TCTJ",
+      "title": "Keypad Smart Door Lock with Handle: Kucacci Keyless Entry Door Lock - Smart Lock for Front Door - Electronic Door Lock with Keypad for Exterior Door - Deadbolt Lever Alternative - Easy Installation",
+      "brand": "KUCACCI",
+      "detailUrl": "https://www.amazon.com/dp/B0CLG8TCTJ",
+      "verifiedAt": "2026-08-12T11:40:59.119Z",
+      "searchRank": 27,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 13,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-pathway-lights",
+      "familyName": "Smart pathway lights",
+      "category": "automation",
+      "alternative": "low-voltage lighting with a central smart transformer",
+      "asin": "B0FQ3KX7FL",
+      "title": "Pathway Lights,RGBCW Walkway Lights with APP Control,4 Pack | IP65 Waterproof,Low Voltage Landscape Lighting 800LM,Color Changing,for Garden, Yard, Patio,Compatible with Alexa",
+      "brand": "APPECK",
+      "detailUrl": "https://www.amazon.com/dp/B0FQ3KX7FL",
+      "verifiedAt": "2026-08-12T11:38:24.644Z",
+      "searchRank": 12,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 13.56,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-peephole-cameras",
+      "familyName": "Smart peephole cameras",
+      "category": "cameras",
+      "alternative": "a doorbell camera where installation rules permit it",
+      "asin": "B0D31TJHRK",
+      "title": "Peephole Camera for Apartment Front Door Doorbell with Monitor | 1080P HD Video Calling, PIR Motion Detection, 120° Night Vision, Cloud/TF Storage, UBOX App",
+      "brand": "Cawhum",
+      "detailUrl": "https://www.amazon.com/dp/B0D31TJHRK",
+      "verifiedAt": "2026-08-12T11:42:14.034Z",
+      "searchRank": 4,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 13.88,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-pool-thermometers",
+      "familyName": "Smart pool thermometers",
+      "category": "climate",
+      "alternative": "a manual floating thermometer",
+      "asin": "B0H5BQZY9M",
+      "title": "Solar Pool Thermometer, Smart Wireless Digital Pool Thermometer Easy Read, IPX8 Waterproof Water Temperature Monitor for Hot Tub, Bath, Swimming, Pond",
+      "brand": "Inkbird",
+      "detailUrl": "https://www.amazon.com/dp/B0H5BQZY9M",
+      "verifiedAt": "2026-08-12T11:38:02.969Z",
+      "searchRank": 2,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 13.96,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-radiator-valves",
+      "familyName": "Smart thermostatic radiator valves",
+      "category": "climate",
+      "alternative": "manual TRVs or a zoned central heating controller",
+      "asin": "B0D14FJSTJ",
+      "title": "Smart Thermostat Radiator Valve: Programmable Thermostatic Valve, Zigbee Thermostat for Temperature Adjustment, App Control, Tuya Zigbee Hub Required, Compatible with Alexa, Google Home (Black)",
+      "brand": "SENCKIT",
+      "detailUrl": "https://www.amazon.com/dp/B0D14FJSTJ",
+      "verifiedAt": "2026-08-12T11:34:55.427Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.5,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-recessed-lights",
+      "familyName": "Smart recessed lights",
+      "category": "automation",
+      "alternative": "standard recessed LEDs controlled by a compatible dimmer",
+      "asin": "B0F2Y8J62K",
+      "title": "24Pack Smart Recessed Lighting 4 Inch RGBCW Color Changing 12W LED Downlight with Junction Box,1080 Lumen Recessed Ceiling Light Compatible with Alexa,Dimmable by Bluetooth Control",
+      "brand": "SikSog",
+      "detailUrl": "https://www.amazon.com/dp/B0F2Y8J62K",
+      "verifiedAt": "2026-08-12T11:39:09.099Z",
+      "searchRank": 37,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 13,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-sous-vide-cookers",
+      "familyName": "Smart sous vide cookers",
+      "category": "automation",
+      "alternative": "local-control immersion circulators",
+      "asin": "B0H4KFQ83Y",
+      "title": "Wifi Sous Vide Cooker, Ultra Quiet Immersion Circulator with Water Level Alarm, App Control with 14 Preset Recipes, Calibration & Timer Function,Fast/Stable Heating with Shared Control,1000W",
+      "brand": "CharMeter",
+      "detailUrl": "https://www.amazon.com/dp/B0H4KFQ83Y",
+      "verifiedAt": "2026-08-12T11:45:03.919Z",
+      "searchRank": 2,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.46,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-space-heaters",
+      "familyName": "Smart space heaters",
+      "category": "climate",
+      "alternative": "manual listed heaters with conservative placement and timers",
+      "asin": "B0DPX33FCD",
+      "title": "1500W Smart Electric Space Heater for Indoor Spaces - WiFi/App Control, Remote Included, 24H Timer, 5 Modes for Home, Office, Bedroom, Bathroom Use",
+      "brand": "DAYETTE",
+      "detailUrl": "https://www.amazon.com/dp/B0DPX33FCD",
+      "verifiedAt": "2026-08-12T11:35:49.046Z",
+      "searchRank": 16,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 13.4,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-sump-pump-monitors",
+      "familyName": "Smart sump pump monitors",
+      "category": "climate",
+      "alternative": "high-water alarms and scheduled pump inspection",
+      "asin": "B09YK8KY9N",
+      "title": "WiFi Sump Pump Monitor & Protector - No Sensors, Real-Time Alerts to Your Mobile Device: Prevent Pump Burnout, Over-Cycling & Flooding from Power Outage, Remote Control & Overload Protection",
+      "brand": "PumpFuse",
+      "detailUrl": "https://www.amazon.com/dp/B09YK8KY9N",
+      "verifiedAt": "2026-08-12T11:37:22.498Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.5,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-table-lamps",
+      "familyName": "Smart table lamps",
+      "category": "automation",
+      "alternative": "a conventional lamp with a smart bulb or smart plug",
+      "asin": "B099MV5XMX",
+      "title": "Smart Table Lamp, Dimmable Desk Lamp with App/Voice Control, LED RGB Color Changing Touch Lamp, Night Lamp for Bedroom Compatible with Alexa",
+      "brand": "Hifree",
+      "detailUrl": "https://www.amazon.com/dp/B099MV5XMX",
+      "verifiedAt": "2026-08-12T11:39:57.040Z",
+      "searchRank": 3,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 13.92,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-under-cabinet-lights",
+      "familyName": "Smart under-cabinet lights",
+      "category": "automation",
+      "alternative": "hardwired task lighting with a local control",
+      "asin": "B08CCDH8P9",
+      "title": "Smart Under Cabinet Lighting Strip Lights White & Color Changing Dimmable Work with Alexa Google Smart Thing Phone App, RGB Multi Colored Lamp for Kitchen Counter Light Fixture (6 Lights Bar Kit)",
+      "brand": "LAMPAOUS",
+      "detailUrl": "https://www.amazon.com/dp/B08CCDH8P9",
+      "verifiedAt": "2026-08-12T11:39:35.128Z",
+      "searchRank": 16,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 14.9,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-wall-control-panels",
+      "familyName": "Smart-home wall control panels",
+      "category": "automation",
+      "alternative": "scene buttons or a securely mounted tablet",
+      "asin": "B07C6LX1NF",
+      "title": "Brilliant Smart Home Control (2-Switch Panel) — Alexa Built-In & Compatible with Ring, Sonos, Hue, Google Nest, Wemo, SmartThings, Apple HomeKit — In-Wall Touchscreen Control for Lights, Music, & More",
+      "brand": "Brilliant",
+      "detailUrl": "https://www.amazon.com/dp/B07C6LX1NF",
+      "verifiedAt": "2026-08-12T11:43:43.384Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.5,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-coffee-makers",
+      "familyName": "Smart coffee makers",
+      "category": "automation",
+      "alternative": "programmable coffee makers without remote start",
+      "asin": "B0B5W2RM9D",
+      "title": "Keurig K-Supreme SMART Single Serve Coffee Maker With WiFi Compatibility, 4 Brew Sizes, And 66oz Removable Reservoir, Compatible with Alexa, White",
+      "brand": "Keurig",
+      "detailUrl": "https://www.amazon.com/dp/B0B5W2RM9D",
+      "verifiedAt": "2026-08-12T11:50:41.822Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 14,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-glass-break-sensors",
+      "familyName": "Smart glass-break sensors",
+      "category": "access",
+      "alternative": "door and window contacts plus professional alarm design",
+      "asin": "B08TG6NCTS",
+      "title": "Ring Alarm Glass Break Sensor – 1-pack",
+      "brand": "Ring",
+      "detailUrl": "https://www.amazon.com/dp/B08TG6NCTS",
+      "verifiedAt": "2026-08-12T11:49:52.402Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.5,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-propane-tank-monitors",
+      "familyName": "Smart propane tank monitors",
+      "category": "climate",
+      "alternative": "manual gauge checks and supplier telemetry",
+      "asin": "B09J6MXJKT",
+      "title": "Mopeka Pro Check Bluetooth Propane Tank Sensor, Magnetic, 250 Gallon Max | Bottom-Mount Unit Fits Steel LPG Cylinders, Includes Spacers for 20, 30 and 40 lb Sizes and Uses a Replaceable CR2032 Cell",
+      "brand": "Mopeka",
+      "detailUrl": "https://www.amazon.com/dp/B09J6MXJKT",
+      "verifiedAt": "2026-08-12T11:49:30.889Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 10.667,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-slow-cookers",
+      "familyName": "Smart slow cookers",
+      "category": "automation",
+      "alternative": "manual or programmable slow cookers",
+      "asin": "B07V7GQBB5",
+      "title": "Crock-Pot 6 Quart Programmable Slow Cooker and Food Warmer Works with Alexa, Stainless Steel (2139005)",
+      "brand": "Brand shown on the Amazon listing",
+      "detailUrl": "https://www.amazon.com/dp/B07V7GQBB5",
+      "verifiedAt": "2026-08-12T11:55:57.834Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 14,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-vibration-sensors",
+      "familyName": "Smart vibration sensors",
+      "category": "access",
+      "alternative": "contact, tilt, or motion sensors chosen for the event",
+      "asin": "B07PJT939B",
+      "title": "Aqara Zigbee Vibration Sensor, Wireless Mini Glass Break Detector | For Alarm System, Home Automation, Requires Aqara Hub (not 3rd-Party), Compatible with HomeKit, Alexa, IFTTT, Home Assistant",
+      "brand": "Aqara",
+      "detailUrl": "https://www.amazon.com/dp/B07PJT939B",
+      "verifiedAt": "2026-08-12T11:55:43.827Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 14,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    }
+  ],
+  "failures": [
+    {
+      "site": "smarthome",
+      "familySlug": "smart-air-fryers",
+      "familyName": "Smart air fryers",
+      "category": "automation",
+      "alternative": "local-control air fryers with physical presets",
+      "error": "HTTP 404 blocked"
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-multicookers",
+      "familyName": "Smart multicookers",
+      "category": "automation",
+      "alternative": "local-control pressure cookers and multicookers",
+      "error": "HTTP 404 blocked"
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-portable-air-conditioners",
+      "familyName": "Smart portable air conditioners",
+      "category": "climate",
+      "alternative": "window units or fixed mini-split cooling",
+      "error": "no_relevant_unique_search_result"
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-heat-pump-controllers",
+      "familyName": "Smart heat pump controllers",
+      "category": "climate",
+      "alternative": "manufacturer controls or a compatible wired thermostat",
+      "error": "no_relevant_unique_search_result"
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-pool-controllers",
+      "familyName": "Smart pool controllers",
+      "category": "automation",
+      "alternative": "manufacturer timers and manual equipment controls",
+      "error": "no_relevant_unique_search_result"
+    }
+  ]
+}

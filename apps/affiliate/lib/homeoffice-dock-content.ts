@@ -226,7 +226,7 @@ export const homeofficeDockProducts: Product[] = [
     slug: "caldigit-ts4-thunderbolt-dock",
     asin: "B09GK8LBWS",
     amazonTitle: "CalDigit TS4 Thunderbolt 4 Dock",
-    seoTitle: "CalDigit TS4 Review Guide: Mac Dual Displays, 2.5GbE and 98W",
+    seoTitle: "CalDigit TS4 Review: Mac Dual-Monitor Compatibility & 98W",
     updatedAt,
     evidenceMode: "official-spec",
     researchNote:

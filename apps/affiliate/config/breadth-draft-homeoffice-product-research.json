@@ -1,0 +1,677 @@
+{
+  "publicationStatus": "research",
+  "cohort": "breadth-draft-120-plus",
+  "recordedAt": "2026-08-12T11:16:10.669Z",
+  "source": "Amazon US public listing pages and direct product-page verification; no price, rating, review count, or Amazon-hosted image is stored",
+  "verificationPolicy": "The cable sleeve appeared in Amazon search and its direct page passed the automated title, ASIN, and availability checks. The laptop filter's direct Amazon page returned the exact ASIN and current product title; its size and aspect ratio remain release-day checks.",
+  "note": "Research evidence only. A selected search anchor is not a qualified page until intent, title semantics, official sources, safety, availability, and duplicate checks all pass.",
+  "totals": {
+    "requestedFamilies": 33,
+    "selected": 33,
+    "failed": 0
+  },
+  "products": [
+    {
+      "site": "homeoffice",
+      "familySlug": "acoustic-desk-dividers",
+      "familyName": "Acoustic desk dividers",
+      "category": "meetings",
+      "alternative": "room treatment and microphone positioning",
+      "asin": "B0DRHQCNVR",
+      "title": "4 Pack Acoustic Desk Dividers Desk Partition (Dark Gray) | 24\" x 20\" Freestanding Privacy Panels Set, Noise-Reducing Design Cubicle Sound Proof, Ideal for Office, Classroom, and Home",
+      "brand": "AMUSIGHT",
+      "detailUrl": "https://www.amazon.com/dp/B0DRHQCNVR",
+      "verifiedAt": "2026-08-12T08:56:03.591Z",
+      "searchRank": 11,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 17.1,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "active-sitting-stools",
+      "familyName": "Active sitting stools",
+      "category": "ergonomics",
+      "alternative": "a conventional task chair plus movement breaks",
+      "asin": "B0GY5QT89Z",
+      "title": "Tervo Model W - Wobble Stool - Ergonomic Standing Desk Chair - Sit Active | Height adjustable sit to stand balance chair for adults. Ergonomic tilting standing desk stool for office active sitting",
+      "brand": "Tervo",
+      "detailUrl": "https://www.amazon.com/dp/B0GY5QT89Z",
+      "verifiedAt": "2026-08-12T08:58:27.938Z",
+      "searchRank": 4,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.38,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "compact-color-inkjet-printers",
+      "familyName": "Compact color inkjet printers",
+      "category": "meetings",
+      "alternative": "a print service or larger ink-tank printer",
+      "asin": "B0FMBTJLX6",
+      "title": "Canon PIXMA TS6520 Wireless Color Inkjet Printer Duplex Printing, White – Home Printer with Copier/Scanner, 1.42” OLED Display, Intuitive Control Panel, Compact Design | Copier/Scanner, 1.42' OLED Display, Intuitive Control Panel, Compact Design, Duplex Printing",
+      "brand": "Brand shown on the Amazon listing",
+      "detailUrl": "https://www.amazon.com/dp/B0FMBTJLX6",
+      "verifiedAt": "2026-08-12T08:48:29.282Z",
+      "searchRank": 2,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 16.96,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "conference-speakerphones",
+      "familyName": "Conference speakerphones",
+      "category": "meetings",
+      "alternative": "headsets or separate microphones and speakers",
+      "asin": "B0BVZLS5GZ",
+      "title": "EMEET M0 Plus Conference Speaker and Microphone, 4 Mics 360° Voice Pickup | Noise Reduction, USB C&C-to-A Adapter, Bluetooth Speakerphone for 8 People w/Daisy Chain for 16, Works with Leading Software",
+      "brand": "EMEET",
+      "detailUrl": "https://www.amazon.com/dp/B0BVZLS5GZ",
+      "verifiedAt": "2026-08-12T08:55:25.077Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 14,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "desk-cable-grommets",
+      "familyName": "Desk cable grommets",
+      "category": "desks",
+      "alternative": "surface cable clips or a rear-edge route",
+      "asin": "B0CWY7X6ZJ",
+      "title": "Desk Grommet 2 Inch (50 mm) 8 Pieces, Desk Hole Cover for Cables Black, ABS Plastic Grommet Hole Cover with Hole Saw for Wires Cables Through the Countertop by XIOGZAXI",
+      "brand": "XIOGZAXI",
+      "detailUrl": "https://www.amazon.com/dp/B0CWY7X6ZJ",
+      "verifiedAt": "2026-08-12T09:01:05.002Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.5,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "desk-cable-sleeves",
+      "familyName": "Desk cable sleeves",
+      "category": "organization",
+      "alternative": "individual reusable cable ties",
+      "asin": "B09DMDN294",
+      "title": "Zipper Cable Sleeve by Wrap-It Storage - 24\" x 4\" (4-Pack) Black | Cord Organizer and Cable Protector for Desk, Computer, TV Cord Management to Hide and Cover Wire and Extension Cables",
+      "brand": "Wrap-It Storage",
+      "detailUrl": "https://www.amazon.com/dp/B09DMDN294",
+      "verifiedAt": "2026-08-12T11:13:55.394Z",
+      "searchRank": 7,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.26,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "desk-pegboard-organizers",
+      "familyName": "Desk pegboard organizers",
+      "category": "desks",
+      "alternative": "drawer organizers and cable trays",
+      "asin": "B0BJ16TCMS",
+      "title": "VIVO Black Clamp-on 20 x 24 inch Desk Pegboard, PP-DK24B | Steel Privacy Panel, Magnetic Peg Board, Office Accessory Organizer, Above or Under Desk Placement",
+      "brand": "Brand shown on the Amazon listing",
+      "detailUrl": "https://www.amazon.com/dp/B0BJ16TCMS",
+      "verifiedAt": "2026-08-12T08:56:53.183Z",
+      "searchRank": 3,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.42,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "desktop-computer-speakers",
+      "familyName": "Desktop computer speakers",
+      "category": "meetings",
+      "alternative": "headphones or monitor-integrated speakers",
+      "asin": "B0H7H94XGS",
+      "title": "Tylubio Computer Speakers for Desktop, HiFi Stereo PC Soundbar with Dynamic RGB Lighting, USB & Type-C Plug&Play, Volume Control Knob, Wired Speakers for Gaming, Laptop, Monitor, Office Black",
+      "brand": "Tylubio",
+      "detailUrl": "https://www.amazon.com/dp/B0H7H94XGS",
+      "verifiedAt": "2026-08-12T08:55:40.511Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 14,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "desktop-file-organizers",
+      "familyName": "Desktop file organizers",
+      "category": "desks",
+      "alternative": "drawer filing or a paperless workflow",
+      "asin": "B0CNRH8NNS",
+      "title": "MINDEPOT 4-Tier Paper Organizer + 3-Pocket File Holder + Drawer + Pen Holders, Desktop File Organizers Paper Tray for Office Accessories School Classroom Organization (Black)",
+      "brand": "MINDEPOT",
+      "detailUrl": "https://www.amazon.com/dp/B0CNRH8NNS",
+      "verifiedAt": "2026-08-12T08:51:19.476Z",
+      "searchRank": 11,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.6,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "desktop-ring-lights",
+      "familyName": "Desktop ring lights",
+      "category": "meetings",
+      "alternative": "two diffused side lights for more directional control",
+      "asin": "B0F4WK69GV",
+      "title": "NEEWER Basics 2 Pack 7\" Desktop Ring Lights for Video Recording, 10W Dimmable Full Screen Key Lighting with Desk Stands & Phone Holders for iPhone Computer Laptop Vlog Streaming Video Conference, R06",
+      "brand": "NEEWER",
+      "detailUrl": "https://www.amazon.com/dp/B0F4WK69GV",
+      "verifiedAt": "2026-08-12T08:54:19.142Z",
+      "searchRank": 7,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.76,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "desktop-shelf-systems",
+      "familyName": "Desktop shelf systems",
+      "category": "desks",
+      "alternative": "wall shelving or drawer storage",
+      "asin": "B0F4CGXCNQ",
+      "title": "Clamp on Desk Shelf, 44\" Desktop Shelving System, Black | with Pegboard and Accessories, Desktop Organizer with 2-Tier Shelf, Desk Pegboard for Office Home Gaming",
+      "brand": "PEGZONE",
+      "detailUrl": "https://www.amazon.com/dp/B0F4CGXCNQ",
+      "verifiedAt": "2026-08-12T08:56:36.157Z",
+      "searchRank": 2,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 13.96,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "floor-cable-covers",
+      "familyName": "Floor cable covers",
+      "category": "desks",
+      "alternative": "rerouting power and data away from walking paths",
+      "asin": "B082FPMR14",
+      "title": "D-Line 6ft Floor Cord Cover, Cable Protector, Hide Extension Cords, Protect Cords, Prevent Cable Trips, Heavy Duty Cord Hider - Cable Cavity = 0.63\" (W) x 0.31\" (H) - Beige",
+      "brand": "D-Line",
+      "detailUrl": "https://www.amazon.com/dp/B082FPMR14",
+      "verifiedAt": "2026-08-12T09:00:53.250Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.5,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "four-k-webcams",
+      "familyName": "4K webcams",
+      "category": "meetings",
+      "alternative": "a good 1080p webcam with better lighting",
+      "asin": "B0DYMDGHKB",
+      "title": "EasyCam 4K Webcam for PC - Ultra 4K HD, PDAF Autofocus, Dual Mics | Auto Light Correction, 79°FOV, Plug & Play, Privacy Cover, Computer Camera for High-End Business Meetings & Live Streaming",
+      "brand": "NEWORK",
+      "detailUrl": "https://www.amazon.com/dp/B0DYMDGHKB",
+      "verifiedAt": "2026-08-12T08:54:37.786Z",
+      "searchRank": 2,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 13.96,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "ink-tank-printers",
+      "familyName": "Ink tank printers",
+      "category": "meetings",
+      "alternative": "laser printers or cartridge inkjets for low volume",
+      "asin": "B0BL466Y41",
+      "title": "HP Smart Tank 5101 Wireless All-in-One Refillable Printer, Scanner, Copier with 2 Years of Ink Included, Wireless (2.4ghz only) Printer-for-Home use (1F3Y0A)",
+      "brand": "Brand shown on the Amazon listing",
+      "detailUrl": "https://www.amazon.com/dp/B0BL466Y41",
+      "verifiedAt": "2026-08-12T08:47:46.771Z",
+      "searchRank": 2,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.46,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "keyboard-wrist-rests",
+      "familyName": "Keyboard wrist rests",
+      "category": "ergonomics",
+      "alternative": "desk-height and keyboard-angle adjustment",
+      "asin": "B08C56DKS5",
+      "title": "Vaydeer Wrist Rest for Keyboard and Mouse, Computer Ergonomic Wrist Support Pad, Soft Memory Foam Arm Cushion for Desk, Palm Hand Office Laptop Typing",
+      "brand": "Vaydeer",
+      "detailUrl": "https://www.amazon.com/dp/B08C56DKS5",
+      "verifiedAt": "2026-08-12T08:57:09.454Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.5,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "laptop-cooling-pads",
+      "familyName": "Laptop cooling pads",
+      "category": "ergonomics",
+      "alternative": "raising the laptop and cleaning its cooling path",
+      "asin": "B00NNMB3KS",
+      "title": "havit HV-F2056 15.6\"-17\" Laptop Cooler Cooling Pad - Slim Portable USB Powered (3 Fans), Black/Blue | Three quiet USB-powered fans circulate air below the laptop, two height settings improve viewing and typing comfort",
+      "brand": "havit",
+      "detailUrl": "https://www.amazon.com/dp/B00NNMB3KS",
+      "verifiedAt": "2026-08-12T08:59:45.470Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 10.667,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "laptop-privacy-screens",
+      "familyName": "Laptop privacy screens",
+      "category": "meetings",
+      "alternative": "physical seating and display-position changes",
+      "asin": "B09TD2HVVQ",
+      "title": "SightPro Magnetic Privacy Screen for MacBook Pro 14 Inch (2021-2026, M1-M5, Pro, Max) Patented Removable Laptop Privacy Filter Shield and Protector",
+      "brand": "SightPro",
+      "detailUrl": "https://www.amazon.com/dp/B09TD2HVVQ",
+      "verifiedAt": "2026-08-12T11:18:00.000Z",
+      "searchRank": null,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 14.5,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false,
+        "manualDirectTitleCheck": true
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "monitor-light-bars",
+      "familyName": "Monitor light bars",
+      "category": "ergonomics",
+      "alternative": "an adjustable desk lamp positioned away from the screen",
+      "asin": "B08DKQ3JG1",
+      "title": "Quntis Computer Monitor Lamp, Screen Monitor Light Bar for Eye Caring, USB Reading LED Task Lamp with Auto-Dimming, Dimmable Light Bar, Touch Control, No Glare Space Saving Home Office Desk Lamps",
+      "brand": "Quntis",
+      "detailUrl": "https://www.amazon.com/dp/B08DKQ3JG1",
+      "verifiedAt": "2026-08-12T08:53:29.071Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 10.667,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "monitor-privacy-screens",
+      "familyName": "Monitor privacy screens",
+      "category": "meetings",
+      "alternative": "desk orientation and controlled access",
+      "asin": "B0CJBHHGPG",
+      "title": "Magicmoon 2-Pack 24 Inch Computer Privacy Screen Filter for 16:9 Monitor | Anti-Spy/Glare Protector Film Widescreen 16:9 Aspect Ratio Filter Size: width: 20 15/16\", Height: 11 13/16\" (531mm x 298mm)",
+      "brand": "Magicmoon",
+      "detailUrl": "https://www.amazon.com/dp/B0CJBHHGPG",
+      "verifiedAt": "2026-08-12T09:00:23.080Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.5,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "mouse-wrist-rests",
+      "familyName": "Mouse wrist rests",
+      "category": "ergonomics",
+      "alternative": "pointer placement and forearm support changes",
+      "asin": "B098P87YJX",
+      "title": "DELTAHUB Carpio 2.0 - Right-Handed Truly Ergonomic Wrist Rest for Mouse, Carpal Tunnel Support, Pain Relief, Anti-Fatigue, Easy Glide, Sleek, Office Computer, Laptop, Gaming - Large, White",
+      "brand": "DELTAHUB",
+      "detailUrl": "https://www.amazon.com/dp/B098P87YJX",
+      "verifiedAt": "2026-08-12T08:57:30.260Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.5,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "office-lumbar-cushions",
+      "familyName": "Office lumbar support cushions",
+      "category": "ergonomics",
+      "alternative": "built-in adjustable lumbar support",
+      "asin": "B074C9F45S",
+      "title": "Lumbar Support Pillow for Office Chair,Mothers Day Gifts for Mom, Back Support Pillow for Car, Office Supplies, Chair Cushions, Back Pain Relief Improve Posture, Mesh Cover Double Adjustable Straps",
+      "brand": "QUTOOL",
+      "detailUrl": "https://www.amazon.com/dp/B074C9F45S",
+      "verifiedAt": "2026-08-12T08:58:04.364Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.5,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "office-printer-stands",
+      "familyName": "Office printer stands",
+      "category": "desks",
+      "alternative": "a reinforced desk surface or fixed cabinet",
+      "asin": "B0DBZ98D94",
+      "title": "GYIIYUO 2 Drawer File Cabinet 24''W, Mobile Filing Cabinet, Printer Stand | 24'' Extended Desktop, Rolling, Side Bag, Fits A4/Letter Size, Home Office, Fabric Drawer",
+      "brand": "GYIIYUO",
+      "detailUrl": "https://www.amazon.com/dp/B0DBZ98D94",
+      "verifiedAt": "2026-08-12T08:50:07.686Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 14,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "office-saddle-stools",
+      "familyName": "Office saddle stools",
+      "category": "ergonomics",
+      "alternative": "adjustable drafting or task chairs",
+      "asin": "B0CP2H7KBP",
+      "title": "FIRAVOE Saddle Stool, Swivel Saddle Stool with Wheels, Adjustable Rolling Stool 18\"-26\", Faux Leather Rolling Stool for Salon, Massage, Clinic, Lab, Office (Light Grey, 1PCS (18\"-26\"))",
+      "brand": "FIRAVOE",
+      "detailUrl": "https://www.amazon.com/dp/B0CP2H7KBP",
+      "verifiedAt": "2026-08-12T08:58:40.835Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 14,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "office-seat-cushions",
+      "familyName": "Office seat cushions",
+      "category": "ergonomics",
+      "alternative": "a properly fitted chair and scheduled movement",
+      "asin": "B01EBDV9BU",
+      "title": "Everlasting Comfort Doctor Recommended Memory Foam Seat Cushion for Office Chairs & Car - Ergonomic Office Desk Accessories - Cushions for Tailbone Pain Relief, Sciatica (Black, Large)",
+      "brand": "Everlasting Comfort",
+      "detailUrl": "https://www.amazon.com/dp/B01EBDV9BU",
+      "verifiedAt": "2026-08-12T08:57:48.196Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 14,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "overhead-book-scanners",
+      "familyName": "Overhead book scanners",
+      "category": "meetings",
+      "alternative": "flatbed scanning or a copy stand with a camera",
+      "asin": "B0GXZJ5FC6",
+      "title": "VIISAN S48 Duo Overhead Book Scanner - A2/A3 Large Format, Dual 48MP, 600 DPI with OCR & Text-to-Speech for Archiving and Distance Education",
+      "brand": "VIISAN",
+      "detailUrl": "https://www.amazon.com/dp/B0GXZJ5FC6",
+      "verifiedAt": "2026-08-12T08:45:49.310Z",
+      "searchRank": 2,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.46,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "portable-photo-printers",
+      "familyName": "Portable photo printers",
+      "category": "meetings",
+      "alternative": "retail photo printing or a desktop inkjet",
+      "asin": "B0F9L9RYFY",
+      "title": "Nelko PP01 Photo Printer, 2x3 Portable Photo Printer, Mini Printer, White | Instant Color Inkjet Printer for Smartphone, Sticky-Back Photos, Bluetooth Compatible with iOS & Android, AI App Editing",
+      "brand": "Nelko",
+      "detailUrl": "https://www.amazon.com/dp/B0F9L9RYFY",
+      "verifiedAt": "2026-08-12T08:49:13.250Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.5,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "ptz-conference-cameras",
+      "familyName": "PTZ conference cameras",
+      "category": "meetings",
+      "alternative": "fixed webcams or all-in-one video bars",
+      "asin": "B0C2Q2HV8Q",
+      "title": "TONGVEO Conference Room PTZ Camera System with 20X Optical Zoom, AI Auto Tracking 1080P 60fps HDMI USB Webcam for Church Streaming Online Video Conference,Compatible with Zoom, OBS Easy Setup",
+      "brand": "TONGVEO",
+      "detailUrl": "https://www.amazon.com/dp/B0C2Q2HV8Q",
+      "verifiedAt": "2026-08-12T08:55:01.386Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.5,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "receipt-scanners",
+      "familyName": "Receipt scanners",
+      "category": "meetings",
+      "alternative": "phone capture plus accounting software",
+      "asin": "B08P3YM18F",
+      "title": "Epson RapidReceipt RR-60 Compact Mobile Document Scanner Receipt | Mobile Receipt Scanner for Small Business USB-Powered 10 Pages per Minute PC and Mac Compatible",
+      "brand": "Brand shown on the Amazon listing",
+      "detailUrl": "https://www.amazon.com/dp/B08P3YM18F",
+      "verifiedAt": "2026-08-12T08:46:28.617Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 14,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "rolling-file-cabinets",
+      "familyName": "Rolling file cabinets",
+      "category": "desks",
+      "alternative": "fixed drawers or digitized document storage",
+      "asin": "B0DZGLD3J1",
+      "title": "Sbanmao Rolling File Cart, Mobile File Cabinet with Wheels Hanging Files, Metal Hanging File Folder Cart File Organizer Fit Letter Size for Home Office, Black (Patent Pending)",
+      "brand": "Sbanmao",
+      "detailUrl": "https://www.amazon.com/dp/B0DZGLD3J1",
+      "verifiedAt": "2026-08-12T08:50:44.330Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.5,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "under-desk-foot-hammocks",
+      "familyName": "Under-desk foot hammocks",
+      "category": "ergonomics",
+      "alternative": "an adjustable office footrest",
+      "asin": "B07C3M678F",
+      "title": "iMissiu Foot Hammock Under Desk Footrest, Adjustable Office Foot Rest Under Desk Hammock, Portable Desk Feet Hammock with Headphones Holder (Black)",
+      "brand": "iMissiu",
+      "detailUrl": "https://www.amazon.com/dp/B07C3M678F",
+      "verifiedAt": "2026-08-12T08:58:17.338Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 17,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "under-desk-pedal-exercisers",
+      "familyName": "Under-desk pedal exercisers",
+      "category": "ergonomics",
+      "alternative": "scheduled walking and standing breaks",
+      "asin": "B0DF2WS15J",
+      "title": "Under Desk Elliptical Machine, Electric Leg Exerciser for Seniors | 100% No Assembly, Portable Quiet Elliptical Exercise Machine, Seated Pedal Exerciser with Remote Control & 12 Speeds",
+      "brand": "Putnen",
+      "detailUrl": "https://www.amazon.com/dp/B0DF2WS15J",
+      "verifiedAt": "2026-08-12T08:58:53.950Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 17,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "vesa-monitor-adapters",
+      "familyName": "VESA monitor adapters",
+      "category": "ergonomics",
+      "alternative": "a monitor with native VESA mounting points",
+      "asin": "B09STXZRMS",
+      "title": "suptek Universal VESA Mount Bracket Adapter Monitor Arm Mounting Kit for Screen 17 to 27 inch",
+      "brand": "suptek",
+      "detailUrl": "https://www.amazon.com/dp/B09STXZRMS",
+      "verifiedAt": "2026-08-12T09:02:16.197Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.5,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "webcam-key-lights",
+      "familyName": "Webcam key lights",
+      "category": "meetings",
+      "alternative": "window light or a conventional diffused lamp",
+      "asin": "B0CJM9HRL8",
+      "title": "2 Pack Streaming Key Light with Desk Stand C-Clamp Stand Dimmable Video Panel Light for Video Recording Conference Webcam Laptop Zoom",
+      "brand": "SWDPORT",
+      "detailUrl": "https://www.amazon.com/dp/B0CJM9HRL8",
+      "verifiedAt": "2026-08-12T08:53:56.501Z",
+      "searchRank": 8,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.22,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    }
+  ],
+  "failures": []
+}

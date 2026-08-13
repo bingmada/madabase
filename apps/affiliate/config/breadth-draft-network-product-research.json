@@ -1,0 +1,541 @@
+{
+  "publicationStatus": "research",
+  "cohort": "breadth-draft-120-plus",
+  "recordedAt": "2026-08-12T11:33:05.402Z",
+  "source": "Amazon US public listing pages; no price, star rating, review count, or Amazon-hosted image is stored",
+  "verificationPolicy": "Each selected ASIN appeared in an Amazon search result for the family and its direct /dp/ page returned the same ASIN without a currently-unavailable signal.",
+  "note": "Research evidence only. A selected search anchor is not a qualified page until intent, title semantics, official sources, safety, availability, and duplicate checks all pass.",
+  "totals": {
+    "requestedFamilies": 28,
+    "selected": 25,
+    "failed": 3
+  },
+  "products": [
+    {
+      "site": "network",
+      "familySlug": "bulk-ethernet-cable-reels",
+      "familyName": "Bulk Ethernet cable reels",
+      "category": "wired",
+      "alternative": "factory-terminated patch cables or contractor-installed cabling",
+      "asin": "B07C848GTK",
+      "title": "trueCABLE Cat6 Riser (CMR), 1000ft, Black, 23AWG 4 Pair Solid Bare Copper, 550MHz, PoE++ (4PPoE), ETL Listed, Unshielded Twisted Pair (UTP), Bulk Ethernet Cable",
+      "brand": "TRUE CABLE",
+      "detailUrl": "https://www.amazon.com/dp/B07C848GTK",
+      "verifiedAt": "2026-08-12T11:25:00.921Z",
+      "searchRank": 2,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 12.96,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "network",
+      "familySlug": "cloud-managed-access-points",
+      "familyName": "Cloud-managed Wi-Fi access points",
+      "category": "wifi",
+      "alternative": "locally managed access points or a consumer mesh",
+      "asin": "B0CTL1Y9YR",
+      "title": "Omada EAP773, WiFi 7 BE11000 Tri-Band Wireless Access Point | 10G Port, Business Standard, Seamless Roaming, Easy Setup, 5-Year Warranty, Omada Remote Managed",
+      "brand": "TP-Link",
+      "detailUrl": "https://www.amazon.com/dp/B0CTL1Y9YR",
+      "verifiedAt": "2026-08-12T11:20:55.698Z",
+      "searchRank": 3,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 14.92,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "network",
+      "familySlug": "coax-cable-testers",
+      "familyName": "Coax cable testers",
+      "category": "wired",
+      "alternative": "a multimeter plus professional signal-level testing",
+      "asin": "B0D3HNXX38",
+      "title": "Coax Cable Tester,Coaxial Cable Tester,Tracer,Coax Repair Kit,Signal,Continuity,Coaxial with Voltage Toner (Sound),Coax Cable Toner,RG6, RG59, CATV Wire Tracer(AAA Battery Included)",
+      "brand": "DUTEGAO",
+      "detailUrl": "https://www.amazon.com/dp/B0D3HNXX38",
+      "verifiedAt": "2026-08-12T11:28:24.558Z",
+      "searchRank": 4,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.38,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "network",
+      "familySlug": "coax-compression-tools",
+      "familyName": "Coax compression tools",
+      "category": "wired",
+      "alternative": "factory-terminated coax leads or installer termination",
+      "asin": "B07JFJ9DJD",
+      "title": "RG6 Compression Tool Coax Cable Crimper Kit RG6 RG11 RG59 F81 with 20PCS F Compression Connectors - BlueYellow",
+      "brand": "HIIJA",
+      "detailUrl": "https://www.amazon.com/dp/B07JFJ9DJD",
+      "verifiedAt": "2026-08-12T11:28:03.534Z",
+      "searchRank": 7,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.26,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "network",
+      "familySlug": "ethernet-inline-couplers",
+      "familyName": "Ethernet inline couplers",
+      "category": "wired",
+      "alternative": "one correctly sized uninterrupted cable run",
+      "asin": "B01AZA4WGW",
+      "title": "Jadaol [UL Listed] Shielded 10Gbps Inline RJ45 Coupler 3-Pack, Black | Gold-Plated Contacts Aluminum Alloy Ethernet Extender, PoE Supported Female to Female Adapter for Cat8 Cat7 Cat6a Cat6 Cables",
+      "brand": "Jadaol",
+      "detailUrl": "https://www.amazon.com/dp/B01AZA4WGW",
+      "verifiedAt": "2026-08-12T11:24:00.884Z",
+      "searchRank": 4,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.38,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "network",
+      "familySlug": "ethernet-network-taps",
+      "familyName": "Ethernet network taps",
+      "category": "wired",
+      "alternative": "managed-switch port mirroring",
+      "asin": "B004EWVFAY",
+      "title": "Dualcomm10/100/1000Base-T Gigabit Ethernet Network TAP [ETAP-2003]",
+      "brand": "Dualcomm",
+      "detailUrl": "https://www.amazon.com/dp/B004EWVFAY",
+      "verifiedAt": "2026-08-12T11:27:43.894Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 7.5,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "network",
+      "familySlug": "fiber-cleaning-kits",
+      "familyName": "Fiber optic cleaning kits",
+      "category": "wired",
+      "alternative": "pre-inspected capped leads handled in a clean workflow",
+      "asin": "B0BLRWC713",
+      "title": "Optic Fiber Cleaning Inspection Kits Including 400 Times Fiber Connector Microscope for 1.25/2.5mm FC/SC/ST/LC Connector & 1.25mm/2.5mm Cleaner Pens & Cleaning Cassette (MR-200)",
+      "brand": "YICIZOL",
+      "detailUrl": "https://www.amazon.com/dp/B0BLRWC713",
+      "verifiedAt": "2026-08-12T11:26:04.495Z",
+      "searchRank": 12,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 16.56,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "network",
+      "familySlug": "fiber-optic-patch-cables",
+      "familyName": "Fiber optic patch cables",
+      "category": "wired",
+      "alternative": "direct-attach copper for short compatible links",
+      "asin": "B0CKS9ZK3H",
+      "title": "Yonwide Single Mode Fiber Lc to Lc 2m (6.56 ft) 5 Pack, OS2 Single Mode Fiber Patch Cable Duplex, Singlemode Fiber Optic Cable Lc to Lc, LSZH SM Jumper Cord, Yellow SMF 2 Meter",
+      "brand": "Yonwide",
+      "detailUrl": "https://www.amazon.com/dp/B0CKS9ZK3H",
+      "verifiedAt": "2026-08-12T11:25:14.012Z",
+      "searchRank": 7,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 16.76,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "network",
+      "familySlug": "fiber-optic-power-meters",
+      "familyName": "Fiber optic power meters",
+      "category": "wired",
+      "alternative": "a complete source-and-meter test kit or certification service",
+      "asin": "B09MLP5GYH",
+      "title": "Mini 4 in 1 Portable Optical Power Meter with Visual Fault Locator 2MV with Network Cable Test Optical Fiber Tester Fiber Optic Power Meter",
+      "brand": "OFCN",
+      "detailUrl": "https://www.amazon.com/dp/B09MLP5GYH",
+      "verifiedAt": "2026-08-12T11:26:21.861Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 17,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "network",
+      "familySlug": "fiber-visual-fault-locators",
+      "familyName": "Fiber visual fault locators",
+      "category": "wired",
+      "alternative": "an optical loss test set or professional certification",
+      "asin": "B0G58HNK8W",
+      "title": "VFL Fiber Optic 50km, Visual Fault Locator Red Light Tester CATV | FC to LC adapter, SM 9/125μm & multimode, CW/pulse modes, for telecom & FTTH, laser pen, (M-50km, Red)",
+      "brand": "Trileria",
+      "detailUrl": "https://www.amazon.com/dp/B0G58HNK8W",
+      "verifiedAt": "2026-08-12T11:25:46.213Z",
+      "searchRank": 4,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 16.88,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "network",
+      "familySlug": "industrial-ethernet-switches",
+      "familyName": "Industrial Ethernet switches",
+      "category": "wired",
+      "alternative": "indoor commercial switches inside a controlled enclosure",
+      "asin": "B08TBXGN7J",
+      "title": "STEAMEMO 5-Port Industrial Ethernet Switch | DIN-Rail Mount | 100Mbps Ports + 1Gbps Switching | -40°C to 70°C Operation | Rugged Metal Housing | Lifetime Protection",
+      "brand": "STEAMEMO",
+      "detailUrl": "https://www.amazon.com/dp/B08TBXGN7J",
+      "verifiedAt": "2026-08-12T11:22:12.400Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 10.667,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "network",
+      "familySlug": "kvm-over-ip-extenders",
+      "familyName": "KVM over IP extenders",
+      "category": "wired",
+      "alternative": "remote desktop software or direct local KVM cabling",
+      "asin": "B07N2M5YYR",
+      "title": "AV Access 4K HDMI USB KVM Extender TCP/IP Over Single Cat5e/6/6a/7 to 390ft | 1080P@120Hz, Plug & Play, Keyboard & Mouse Over Network, Zero Latency, 3 Ports USB Hub, DIP up to 16 Sets",
+      "brand": "v AV Access",
+      "detailUrl": "https://www.amazon.com/dp/B07N2M5YYR",
+      "verifiedAt": "2026-08-12T11:27:13.191Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 17,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "network",
+      "familySlug": "managed-2-5gbe-switches",
+      "familyName": "Managed 2.5GbE switches",
+      "category": "wired",
+      "alternative": "unmanaged multi-gig switches or 10GbE aggregation",
+      "asin": "B0D6TXDMB9",
+      "title": "MokerLink 4 Port 2.5G POE Managed Switch with 2 Port 10G SFP+ Slot, IEEE8023af/at PoE 78W, Mini Size Metal Fanless, Easy Web Managed Network Switch",
+      "brand": "MokerLink",
+      "detailUrl": "https://www.amazon.com/dp/B0D6TXDMB9",
+      "verifiedAt": "2026-08-12T11:21:29.824Z",
+      "searchRank": 3,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 10.587,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "network",
+      "familySlug": "mini-ups-for-routers",
+      "familyName": "Mini UPS units for routers",
+      "category": "backup",
+      "alternative": "a conventional AC UPS or modem battery option",
+      "asin": "B0FHH5LTQK",
+      "title": "Sorandy Mini UPS Battery Backup Power Supply, Gigabit POE Uninterruptible UPS Power with Router, Modem, Security Camera, Input AC Output USB 5V DC 9V/12V DC 24V/48V POE (1000Mbps) (A)",
+      "brand": "Sorandy",
+      "detailUrl": "https://www.amazon.com/dp/B0FHH5LTQK",
+      "verifiedAt": "2026-08-12T11:22:45.294Z",
+      "searchRank": 2,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 12.96,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "network",
+      "familySlug": "network-rack-cooling-fans",
+      "familyName": "Network rack cooling fans",
+      "category": "wired",
+      "alternative": "passive ventilation and reduced equipment density",
+      "asin": "B07NW127BN",
+      "title": "Rack Mount Fan - 4 Fans 1U 19\" w/Adjustable Temperature & Digital Display | 4 fan cooling setup for standard rackmount, high performance for server rack cooling - Tupavco TP1701",
+      "brand": "Tupavco",
+      "detailUrl": "https://www.amazon.com/dp/B07NW127BN",
+      "verifiedAt": "2026-08-12T11:23:26.067Z",
+      "searchRank": 15,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 14.94,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "network",
+      "familySlug": "network-rack-shelves",
+      "familyName": "Network rack shelves",
+      "category": "wired",
+      "alternative": "device-specific rack ears or a separate equipment cabinet",
+      "asin": "B071KW94ZC",
+      "title": "Vented 1U Rack Shelf - 10in Deep - 1U Rack Mount Shelf | Universal 19in fit, Network rack and cabinet, SPCC cold-rolled steel, Perforated airflow, Front-mounted tray",
+      "brand": "StarTech.com",
+      "detailUrl": "https://www.amazon.com/dp/B071KW94ZC",
+      "verifiedAt": "2026-08-12T11:23:04.600Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 7.5,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "network",
+      "familySlug": "preterminated-fiber-runs",
+      "familyName": "Preterminated fiber cable runs",
+      "category": "wired",
+      "alternative": "field termination by a qualified fiber installer",
+      "asin": "B0CYG3K7D6",
+      "title": "FLYPROFiber- Outdoor Single Mode LC to LC Fiber Patch Cable 50M/164ft | Armored, OD-5mm, OS2 9/125μm SMF, Duplex, for 10G/40G/100G, Industrial TPU Uniboot with Pulling Eye, Direct Burial",
+      "brand": "FLYPROFiber",
+      "detailUrl": "https://www.amazon.com/dp/B0CYG3K7D6",
+      "verifiedAt": "2026-08-12T11:25:28.874Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 9,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "network",
+      "familySlug": "rack-blanking-panels",
+      "familyName": "Rack blanking panels",
+      "category": "wired",
+      "alternative": "open rack spaces when airflow containment is unnecessary",
+      "asin": "B0B6Q7ZQD9",
+      "title": "1U Blank Panel Rack Mount Spacer Filler Panel 19\" Black Rack Blanking Blind Panel for Server Network Rack Enclosure Or Cabinet-5pcs (1U-5PCs)",
+      "brand": "Suprwin",
+      "detailUrl": "https://www.amazon.com/dp/B0B6Q7ZQD9",
+      "verifiedAt": "2026-08-12T11:23:42.801Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.5,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "network",
+      "familySlug": "rackmount-network-ups",
+      "familyName": "Rackmount UPS units for network gear",
+      "category": "backup",
+      "alternative": "tower UPS units or DC backup sized to the actual load",
+      "asin": "B0FWLTQ23S",
+      "title": "Eaton Tripp Lite BC500RT1ULNC 500VA 1U Rackmount Lithium Cloud UPS 400W LCD | Battery Backup, 6 Outlets, 10.5\" Depth, Uninterruptible Power Supply, 5-Year Manufacturer's Warranty & $250,000 Insurance",
+      "brand": "TRIPP LITE",
+      "detailUrl": "https://www.amazon.com/dp/B0FWLTQ23S",
+      "verifiedAt": "2026-08-12T11:22:29.107Z",
+      "searchRank": 15,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 8.44,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "network",
+      "familySlug": "serial-device-servers",
+      "familyName": "Serial device servers",
+      "category": "wired",
+      "alternative": "a local USB serial adapter or controller replacement",
+      "asin": "B0798DT6SQ",
+      "title": "MOXA NPort 5110-1 Port Serial Device Server, 10/100 Ethernet, RS232, DB9 Male",
+      "brand": "Moxa",
+      "detailUrl": "https://www.amazon.com/dp/B0798DT6SQ",
+      "verifiedAt": "2026-08-12T11:26:46.592Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 14,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "network",
+      "familySlug": "sfp28-network-switches",
+      "familyName": "SFP28 network switches",
+      "category": "wired",
+      "alternative": "10GbE SFP+ switching or direct-attach point links",
+      "asin": "B0FSTKNF74",
+      "title": "MikroTik CRS812-8DS-2DQ-2DDQ-RM – 100G Cloud Router Switch with 8X 25G SFP28, 2X 40G QSFP+, 2X 100G QSFP28, Layer 3 Hardware Offloading, Rackmount",
+      "brand": "MikroTik",
+      "detailUrl": "https://www.amazon.com/dp/B0FSTKNF74",
+      "verifiedAt": "2026-08-12T11:21:42.255Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 7.5,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "network",
+      "familySlug": "sfp28-transceivers",
+      "familyName": "SFP28 transceivers",
+      "category": "wired",
+      "alternative": "vendor-qualified direct-attach cables",
+      "asin": "B0DWSJTBGT",
+      "title": "Elfcam - 2 Pack 25G SFP28 SR 850nm Transceiver Module, Compatible with Cisco 25GBASE-SR, 850nm, 100m DOM LC/UPC Duplex Multimode MMF, Pack of 2",
+      "brand": "Elfcam",
+      "detailUrl": "https://www.amazon.com/dp/B0DWSJTBGT",
+      "verifiedAt": "2026-08-12T11:21:55.337Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 14,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "network",
+      "familySlug": "wall-plate-access-points",
+      "familyName": "Wall-plate Wi-Fi access points",
+      "category": "wifi",
+      "alternative": "ceiling access points with separate wall Ethernet ports",
+      "asin": "B08HSNYH57",
+      "title": "Omada EAP235-Wall, AC1200 in-Wall Wireless Gigabit Access Point | MU-MIMO & Beamforming, PoE Powered, Quick Installation, SDN Integrated, Cloud Access & Omada app, White",
+      "brand": "TP-Link",
+      "detailUrl": "https://www.amazon.com/dp/B08HSNYH57",
+      "verifiedAt": "2026-08-12T11:21:13.902Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 11.5,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "network",
+      "familySlug": "waterproof-rj45-couplers",
+      "familyName": "Waterproof RJ45 couplers",
+      "category": "wired",
+      "alternative": "a sealed junction box with a serviceable termination",
+      "asin": "B0CN8Z4NX3",
+      "title": "IP68 Waterproof RJ45 Coupler Cat6(3.48in), 1Gbps/250MHz, 5 Pack | Supports POE, Gold-Plated and Shielded Outdoor Ethernet Coupler for CAT6/CAT5E/CAT5 Network Cables",
+      "brand": "LEENUE",
+      "detailUrl": "https://www.amazon.com/dp/B0CN8Z4NX3",
+      "verifiedAt": "2026-08-12T11:24:14.164Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.5,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "network",
+      "familySlug": "optical-time-domain-reflectometers",
+      "familyName": "Optical time-domain reflectometers",
+      "category": "wired",
+      "alternative": "a simpler loss test set or professional trace",
+      "asin": "B0CW3B9ZM8",
+      "title": "OTDR Fiber Tester, WANLUTECH 1310/1550nm 26/24dB 5.55 inches Touchscreen OTDR Tester Built-in VFL OPM LS(Light Source) Event Map OLT (Optical Loss Test) Functions RJ45 Cable Tester Network Tools",
+      "brand": "WANLUTECH",
+      "detailUrl": "https://www.amazon.com/dp/B0CW3B9ZM8",
+      "verifiedAt": "2026-08-12T11:29:34.822Z",
+      "searchRank": 2,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 17.46,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    }
+  ],
+  "failures": [
+    {
+      "site": "network",
+      "familySlug": "console-server-appliances",
+      "familyName": "Console server appliances",
+      "category": "wired",
+      "alternative": "direct local console access or an existing management network",
+      "error": "no_relevant_unique_search_result"
+    },
+    {
+      "site": "network",
+      "familySlug": "outdoor-ethernet-junction-boxes",
+      "familyName": "Outdoor Ethernet junction boxes",
+      "category": "wired",
+      "alternative": "a continuous outdoor-rated cable with no exposed splice",
+      "error": "no_relevant_unique_search_result"
+    },
+    {
+      "site": "network",
+      "familySlug": "usb-over-ip-extenders",
+      "familyName": "USB over IP extenders",
+      "category": "wired",
+      "alternative": "active USB extension or a network-native peripheral",
+      "error": "no_relevant_unique_search_result"
+    }
+  ]
+}

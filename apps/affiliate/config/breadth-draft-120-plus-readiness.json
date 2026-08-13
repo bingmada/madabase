@@ -1,0 +1,51 @@
+{
+  "updatedAt": "2026-08-13T08:03:27.378Z",
+  "releaseCandidate": "breadth-2026-08-next",
+  "publicationStatus": "published_soft_launch",
+  "readiness": "soft_launch_valid_pending_push_and_deployment",
+  "selectedPages": 151,
+  "distribution": {
+    "network": 25,
+    "smarthome": 25,
+    "homeoffice": 33,
+    "baby": 31,
+    "pet": 37
+  },
+  "qualifiedAssets": {
+    "uniqueFamilies": 151,
+    "uniqueAsins": 151,
+    "dedicatedWebpImages": 151,
+    "imageDimensions": "1200x800",
+    "imageBytes": 8705034
+  },
+  "candidateAccounting": {
+    "researchedFamilies": 194,
+    "excludedForOverlapSafetyOrUnstableClass": 34,
+    "selectedWithExactProduct": 151,
+    "pendingExactProductVerification": 0,
+    "failedExactProductChecks": 9
+  },
+  "completedGates": [
+    "Every selected family has an independently written buying-problem evidence note and an opportunity score of at least 70.",
+    "Every selected family has two or more decision sources and one exact currently verified Amazon US ASIN.",
+    "All selected family keys and ASINs are unique and do not reuse an existing stored ASIN.",
+    "Twenty-nine lexical similarity warnings have a written distinct-intent boundary; three true collisions were removed after the second audit.",
+    "Every selected family has a dedicated 1200x800 WebP decision image with a unique file hash, family title, alternative, and exact ASIN.",
+    "Every selected family has one different named direct community discussion with a written relevance boundary; community anecdotes are used only to discover buying problems and never as product-performance proof.",
+    "The host-aware production build completed under Node 20 and the Linux x64 standalone release archive was generated.",
+    "All 151 rendered public URLs returned 200 with one H1, canonical, indexability, JSON-LD, dedicated image, exact ASIN, tracked Amazon link, buyer-facing checkout language, and no internal release wording.",
+    "All 151 soft-launch URLs are excluded from sitemap.xml; existing counts remain Network 232, Smarthome 249, Homeoffice 254, Baby 233, and Pets 221.",
+    "All 118 existing-page ranking refresh URLs passed their individually authored question, direct answer, answer-led metadata, canonical, internal-link module, and August 13 sitemap lastmod runtime checks.",
+    "Affiliate SEO, the 300-link merchant audit, ESLint under Node 20, and the ranking-refresh quality gate passed."
+  ],
+  "releaseBlockers": [],
+  "publicationActionsTaken": [
+    "Switched all 151 guides and their exact Amazon anchors from draft to published without enabling the draft environment flag.",
+    "Marked all 151 guides sitemapExcluded for an indexable internal-link soft launch.",
+    "Replaced internal draft and release-day wording with buyer-facing verification and checkout language.",
+    "Kept sitemap submission, IndexNow and external distribution disabled for this cohort."
+  ],
+  "sitemapSubmitted": false,
+  "indexNowSubmitted": false,
+  "pushed": false
+}

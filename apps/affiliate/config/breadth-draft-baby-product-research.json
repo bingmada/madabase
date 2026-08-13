@@ -1,0 +1,645 @@
+{
+  "publicationStatus": "research",
+  "cohort": "breadth-draft-120-plus",
+  "recordedAt": "2026-08-12T12:23:26.345Z",
+  "source": "Amazon US public listing pages; no price, star rating, review count, or Amazon-hosted image is stored",
+  "verificationPolicy": "Each selected ASIN appeared in an Amazon search result for the family and its direct /dp/ page returned the same ASIN without a currently-unavailable signal.",
+  "note": "Research evidence only. A selected search anchor is not a qualified page until intent, title semantics, official sources, safety, availability, and duplicate checks all pass.",
+  "totals": {
+    "requestedFamilies": 32,
+    "selected": 31,
+    "failed": 1
+  },
+  "products": [
+    {
+      "site": "baby",
+      "familySlug": "baby-bath-thermometers",
+      "familyName": "Baby bath thermometers",
+      "category": "gear",
+      "alternative": "running and mixing water carefully with adult hand checks",
+      "asin": "B0D4YFB6TC",
+      "title": "Baby Bath Thermometer for Infants Otter Baby Water Thermometer for Bathtub | Newborn Bathtime essentials, Odorless, Tub Temperature, Room Temp, Accurately, Hot Cold Color Alert, Safety Floating Toy",
+      "brand": "DoliWish",
+      "detailUrl": "https://www.amazon.com/dp/B0D4YFB6TC",
+      "verifiedAt": "2026-08-12T12:11:42.210Z",
+      "searchRank": 5,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 13.84,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "baby",
+      "familySlug": "baby-wipe-dispensers",
+      "familyName": "Baby wipe dispensers",
+      "category": "gear",
+      "alternative": "the original resealable wipe package",
+      "asin": "B0BJ5YJ26S",
+      "title": "Baby Wipes Dispenser, Wipe Holder for Baby & Adult,Keeps Wet Tissue Fresh, Non-Slip Wipes Case, Flushable Wipe Container with Sealing Design Lid",
+      "brand": "wenvastree",
+      "detailUrl": "https://www.amazon.com/dp/B0BJ5YJ26S",
+      "verifiedAt": "2026-08-12T12:08:05.400Z",
+      "searchRank": 21,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 13.2,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "baby",
+      "familySlug": "bath-toy-organizers",
+      "familyName": "Bath toy organizers",
+      "category": "gear",
+      "alternative": "draining toys outside the tub after every bath",
+      "asin": "B0D3XCK7JG",
+      "title": "Saddle shape 2 Compartments Bath Toy Organizer, Easy Access for Children, Wide Opening Bath Toy Holder for Drying Toys and Storage, Mesh Shower Toy Holder and Bath Tub Toy Storage Organizer for Tub.",
+      "brand": "Austion",
+      "detailUrl": "https://www.amazon.com/dp/B0D3XCK7JG",
+      "verifiedAt": "2026-08-12T12:11:19.437Z",
+      "searchRank": 6,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.3,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "baby",
+      "familySlug": "bathtub-spout-covers",
+      "familyName": "Bathtub spout covers",
+      "category": "gear",
+      "alternative": "adult positioning and an uncluttered bath zone",
+      "asin": "B0CW2ZY3RN",
+      "title": "Baby Bathtub Faucet Cover, Baby Safety Protection Silicone Toys, Bath Spout Cover Baby Bathtub, Faucet Cover Baby Bathtub Silicone Whale for Kids, Toddler, Infant, Gifts for Children",
+      "brand": "UMUACCAN",
+      "detailUrl": "https://www.amazon.com/dp/B0CW2ZY3RN",
+      "verifiedAt": "2026-08-12T12:10:56.611Z",
+      "searchRank": 3,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.42,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "baby",
+      "familySlug": "breast-milk-storage-bags",
+      "familyName": "Breast milk storage bags",
+      "category": "feeding",
+      "alternative": "reusable milk storage containers approved for freezing",
+      "asin": "B00P84V1VK",
+      "title": "Dr. Brown’s Breast Milk Storage Bags, Disposable and Durable Bags for Freezing & Heating Breast Milk, (50ct) 6 oz Bags, BPA free",
+      "brand": "Brand shown on the Amazon listing",
+      "detailUrl": "https://www.amazon.com/dp/B00P84V1VK",
+      "verifiedAt": "2026-08-12T12:03:05.241Z",
+      "searchRank": 37,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 18,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "baby",
+      "familySlug": "childproof-corner-guards",
+      "familyName": "Childproof corner guards",
+      "category": "gear",
+      "alternative": "removing or relocating sharp-edged furniture",
+      "asin": "B0F6ML8RFW",
+      "title": "Baby Safety Table Corner Protectors 12 Pack Clear PVC Edge Guards | Upgraded Spherical T-Shaped Childproof Furniture Corner Covers to Prevent Toddler Bumps for Coffee Table, Crib & Cabinets",
+      "brand": "PlusOxsteel",
+      "detailUrl": "https://www.amazon.com/dp/B0F6ML8RFW",
+      "verifiedAt": "2026-08-12T12:13:37.678Z",
+      "searchRank": 45,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 14.5,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "baby",
+      "familySlug": "childproof-door-knob-covers",
+      "familyName": "Childproof door knob covers",
+      "category": "gear",
+      "alternative": "door-top latches or supervised room access",
+      "asin": "B0DK1KZ9RQ",
+      "title": "1 Pack Childproof Door Knob Covers Babyproof Child Door Locks Door Handle Baby Proofing Door Safety for Kids",
+      "brand": "AILUOQI",
+      "detailUrl": "https://www.amazon.com/dp/B0DK1KZ9RQ",
+      "verifiedAt": "2026-08-12T12:13:58.990Z",
+      "searchRank": 25,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 18.04,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "baby",
+      "familySlug": "childproof-outlet-covers",
+      "familyName": "Childproof outlet covers",
+      "category": "gear",
+      "alternative": "tamper-resistant receptacles and inaccessible furniture layout",
+      "asin": "B01N7H7J47",
+      "title": "Outlet Covers Baby Proofing (50 Pack) Safe & Secure Electric Plug Protectors | Sturdy Childproof Socket Covers for Home & Office | Easy Installation | Protect Toddlers & Babies | White",
+      "brand": "Wappa Baby",
+      "detailUrl": "https://www.amazon.com/dp/B01N7H7J47",
+      "verifiedAt": "2026-08-12T12:12:46.244Z",
+      "searchRank": 18,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 14.82,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "baby",
+      "familySlug": "childproof-refrigerator-locks",
+      "familyName": "Childproof refrigerator locks",
+      "category": "gear",
+      "alternative": "appliance placement and kitchen access control",
+      "asin": "B0B5VPJ4MD",
+      "title": "5 Pack Child Proof Refrigerator Lock, QYESWHSR Fridge Locks for Kids with Sticky Adhesive Pads, Child Safety Locks for Doors, RV Refrigerator, Oven Lock Child Safety Baby Cabinet Locks - Grey Updated",
+      "brand": "QYESWHSR",
+      "detailUrl": "https://www.amazon.com/dp/B0B5VPJ4MD",
+      "verifiedAt": "2026-08-12T12:14:59.503Z",
+      "searchRank": 9,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 10.347,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "baby",
+      "familySlug": "childproof-stove-knob-covers",
+      "familyName": "Childproof stove knob covers",
+      "category": "gear",
+      "alternative": "removable knobs and active kitchen exclusion",
+      "asin": "B0GTT22D4M",
+      "title": "Childproof Stove Knob Covers, Oven Knob Covers for Child Safety 5 Pack, Clear Stove Knob Safety Covers & Gas Stove Locks, Heat-Resistant Adhesive,Double-Key Baby Proof Covers for Gas/Electric Burners",
+      "brand": "Huggful",
+      "detailUrl": "https://www.amazon.com/dp/B0GTT22D4M",
+      "verifiedAt": "2026-08-12T12:14:25.343Z",
+      "searchRank": 36,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 18,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "baby",
+      "familySlug": "childproof-toilet-locks",
+      "familyName": "Childproof toilet locks",
+      "category": "gear",
+      "alternative": "a closed bathroom door with a high latch",
+      "asin": "B0DK87X7ZD",
+      "title": "Toilet Locks Baby Proof, Toilet Flush Locks Baby Proof Child Toddlers, Round Cover Childproof Lock for Bathroom Restroom Washroom Lavatory, Easy Installation Baby Safety Lock with Adhesive(1Pack)",
+      "brand": "LuxeVib",
+      "detailUrl": "https://www.amazon.com/dp/B0DK87X7ZD",
+      "verifiedAt": "2026-08-12T12:15:25.102Z",
+      "searchRank": 17,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 14.86,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "baby",
+      "familySlug": "crib-mobiles",
+      "familyName": "Crib mobiles",
+      "category": "sleep",
+      "alternative": "visual play outside the crib during awake time",
+      "asin": "B0GTTJX9Z9",
+      "title": "Crib Mobiles Bassinet Stroller Toy for Baby, Car Seat Toys Hanging for Babies, Baby Arch Arm Bar for Infants 0-6 6-12 Months, Nursery Portable Mobile Hanger Pack and Play Boys Girls Clip On",
+      "brand": "ZFSZSY",
+      "detailUrl": "https://www.amazon.com/dp/B0GTTJX9Z9",
+      "verifiedAt": "2026-08-12T12:08:31.509Z",
+      "searchRank": 40,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "baby",
+      "familySlug": "formula-mixing-pitchers",
+      "familyName": "Formula mixing pitchers",
+      "category": "feeding",
+      "alternative": "individual bottles prepared according to formula instructions",
+      "asin": "B0B2KTYW3F",
+      "title": "Dr. Brown's Baby Formula Mixing Pitcher with Adjustable Stopper, Locking Lid & No Drip Spout, Black, BPA Free, 36oz, 1 Pack",
+      "brand": "Brand shown on the Amazon listing",
+      "detailUrl": "https://www.amazon.com/dp/B0B2KTYW3F",
+      "verifiedAt": "2026-08-12T12:19:47.048Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.5,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "baby",
+      "familySlug": "furniture-anchor-kits",
+      "familyName": "Furniture anchor kits",
+      "category": "gear",
+      "alternative": "manufacturer-supplied anti-tip hardware installed to the correct wall",
+      "asin": "B08C7T7L95",
+      "title": "Furniture Anchors 10 Pack, Anti-Tip Earthquake Straps for Baby Proofing | Detachable Furniture Wall Anchor for Quick Release, Metal Furniture Straps Secure Dresser, Cabinet, Drawer Up to 400 Lbs",
+      "brand": "Booda Brand",
+      "detailUrl": "https://www.amazon.com/dp/B08C7T7L95",
+      "verifiedAt": "2026-08-12T12:13:10.760Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 10.667,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "baby",
+      "familySlug": "high-chair-floor-mats",
+      "familyName": "High-chair floor mats",
+      "category": "feeding",
+      "alternative": "a washable hard floor or small machine-washable mat",
+      "asin": "B0DHSYPX6T",
+      "title": "30 Pack Disposable Splat Mats by Eli with Love - Extra Large 49\"x49\" 100% Waterproof Baby Splat Mat for Under High Chair - Plastic Mat Liner for Floor - Protect from Spills (Moon & Stars, 30 Pack)",
+      "brand": "Eli with Love",
+      "detailUrl": "https://www.amazon.com/dp/B0DHSYPX6T",
+      "verifiedAt": "2026-08-12T12:10:31.724Z",
+      "searchRank": 10,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 16.64,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "baby",
+      "familySlug": "nursery-blackout-curtains",
+      "familyName": "Nursery blackout curtains",
+      "category": "sleep",
+      "alternative": "room-darkening shades with secured cords",
+      "asin": "B0GDZLZGBK",
+      "title": "Nursery Blackout Curtains for Kids Bedroom, Curtains 63 Inch Length 2 Panels Set, Thermal Insulated Room Darkening Drapes with Grommet Top, Cartoon Construction Truck Pattern, 42W x 63L",
+      "brand": "GICDSU",
+      "detailUrl": "https://www.amazon.com/dp/B0GDZLZGBK",
+      "verifiedAt": "2026-08-12T12:08:51.754Z",
+      "searchRank": 8,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 17.22,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "baby",
+      "familySlug": "nursing-covers",
+      "familyName": "Nursing covers",
+      "category": "feeding",
+      "alternative": "layered clothing or an unrestrictive muslin cloth",
+      "asin": "B0CB15QFNL",
+      "title": "Breathable Car Seat Cover for Babies – Multi-Purpose Soft Rayon Nursing Cover for Breastfeeding, High Stretchy Infant Carseat Canopy, Stroller Cover (Smooth Rayon, Blush)",
+      "brand": "Meetjoy",
+      "detailUrl": "https://www.amazon.com/dp/B0CB15QFNL",
+      "verifiedAt": "2026-08-12T12:04:02.423Z",
+      "searchRank": 19,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 13.28,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "baby",
+      "familySlug": "nursing-pillows",
+      "familyName": "Nursing pillows",
+      "category": "feeding",
+      "alternative": "ordinary firm pillows used only during awake supervised feeding",
+      "asin": "B08J54C2Y8",
+      "title": "My Brest Friend Nursing Pillow - Deluxe - Enhanced Comfort w/ Slipcover - Ergonomic Breastfeeding Pillow For Ultimate Support For Mom & Baby - Adjustable Pillow W/ Handy Side Pocket, Soft Rose",
+      "brand": "My Brest Friend",
+      "detailUrl": "https://www.amazon.com/dp/B08J54C2Y8",
+      "verifiedAt": "2026-08-12T12:20:23.294Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 14,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "baby",
+      "familySlug": "portable-changing-mats",
+      "familyName": "Portable changing mats",
+      "category": "gear",
+      "alternative": "disposable liners on a safe changing surface",
+      "asin": "B0CM9ZDFT7",
+      "title": "Portable Changing Pad for Baby – Soft, Comfortable Portable Diaper Changing Pad with Wipes Pockets, Waterproof and Easy to Clean – Baby Registry Search, new born baby essentials must haves, baby stuff",
+      "brand": "PILLANI",
+      "detailUrl": "https://www.amazon.com/dp/B0CM9ZDFT7",
+      "verifiedAt": "2026-08-12T12:07:34.687Z",
+      "searchRank": 20,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 9.907,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "baby",
+      "familySlug": "potty-training-seats",
+      "familyName": "Potty training seats",
+      "category": "gear",
+      "alternative": "a standalone potty chair or integrated child seat",
+      "asin": "B0CQZS53HL",
+      "title": "Potty Training Toilet for Toddlers, 2-in-1 Potty Training seat, Anti-Slip | SKYROKU, Fits Round & Elongated Toilets, 6 Heights, Splash Guard, Foldable, Holds 200+ lbs, Step Stool, Dishwasher Cushion",
+      "brand": "SKYROKU",
+      "detailUrl": "https://www.amazon.com/dp/B0CQZS53HL",
+      "verifiedAt": "2026-08-12T12:12:06.319Z",
+      "searchRank": 18,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 14.82,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "baby",
+      "familySlug": "powder-formula-dispensers",
+      "familyName": "Powder formula dispensers",
+      "category": "feeding",
+      "alternative": "premeasured dry containers and separate safe water preparation",
+      "asin": "B0BC1Z8ZH8",
+      "title": "Baby Formula Dispenser, Portable Milk Powder Dispenser Container, Baby Feeding Travel Storage Container, Non-Spill Stackable Baby Snack Storage Container, BPA Free, 4 Compartments, 2 Packs",
+      "brand": "LADISO",
+      "detailUrl": "https://www.amazon.com/dp/B0BC1Z8ZH8",
+      "verifiedAt": "2026-08-12T12:02:00.131Z",
+      "searchRank": 12,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.06,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "baby",
+      "familySlug": "reusable-baby-food-pouches",
+      "familyName": "Reusable baby food pouches",
+      "category": "feeding",
+      "alternative": "spoon feeding from an open container",
+      "asin": "B095L8KDT7",
+      "title": "Hippypotamus Reusable Baby Food Pouches for Toddlers - BPA Free Food Grade - Dishwasher & Freezer Safe - Baby Food Containers - Refillable Squeeze Pouch For Applesauce & Yogurt - 12 Pack (Rainbows)",
+      "brand": "Hippypotamus",
+      "detailUrl": "https://www.amazon.com/dp/B095L8KDT7",
+      "verifiedAt": "2026-08-12T12:06:58.649Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 17.5,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "baby",
+      "familySlug": "silicone-feeding-placemats",
+      "familyName": "Silicone feeding placemats",
+      "category": "feeding",
+      "alternative": "a clean tray or washable table surface",
+      "asin": "B0GT4Y3RVV",
+      "title": "Silicone Toddler Placemat with Teething Table Edge Bumper - 2-in-1 Feeding & Teething Mat, BPA-Free Food-Grade Silicone, Non-Slip Waterproof Baby Feeding Mat, Easy Clean Dishwasher Safe (Sage Green)",
+      "brand": "BIGSPINACH",
+      "detailUrl": "https://www.amazon.com/dp/B0GT4Y3RVV",
+      "verifiedAt": "2026-08-12T12:05:41.430Z",
+      "searchRank": 37,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 14.5,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "baby",
+      "familySlug": "stroller-cup-holders",
+      "familyName": "Stroller cup holders",
+      "category": "travel",
+      "alternative": "a secured bottle in the lower basket",
+      "asin": "B07D6834FL",
+      "title": "Pack of 2 Stroller Cup Holders, Universal Drinks Holder for Bikes, Trolleys or Walkers",
+      "brand": "BUNDLEPRO",
+      "detailUrl": "https://www.amazon.com/dp/B07D6834FL",
+      "verifiedAt": "2026-08-12T12:10:03.985Z",
+      "searchRank": 4,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 17.38,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "baby",
+      "familySlug": "stroller-footmuffs",
+      "familyName": "Stroller footmuffs",
+      "category": "travel",
+      "alternative": "weather-appropriate clothing and manufacturer-approved accessories",
+      "asin": "B0BCC1ZLS3",
+      "title": "7AM Enfant Universal Stroller Footmuff - Water Repellent Winter Bunting Bag for Strollers & Car Seats, Soft Micro-Fleece & Plush Lined Stroller Footmuff for Baby Boy & Girl | BebePOD",
+      "brand": "7 A.M.",
+      "detailUrl": "https://www.amazon.com/dp/B0BCC1ZLS3",
+      "verifiedAt": "2026-08-12T12:09:40.391Z",
+      "searchRank": 1,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 14,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "baby",
+      "familySlug": "stroller-rain-covers",
+      "familyName": "Stroller rain covers",
+      "category": "travel",
+      "alternative": "a stroller canopy plus shelter and weather planning",
+      "asin": "B08K75WMWR",
+      "title": "Clear Stroller Rain Cover, Universal Travel Weather Shield Breathable Baby Stroller Rain Cover for Windproof, Waterproof, Protect from Sun Dust Snow",
+      "brand": "Hrzeem",
+      "detailUrl": "https://www.amazon.com/dp/B08K75WMWR",
+      "verifiedAt": "2026-08-12T12:09:16.924Z",
+      "searchRank": 4,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 17.38,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "baby",
+      "familySlug": "suction-toddler-bowls",
+      "familyName": "Suction toddler bowls",
+      "category": "feeding",
+      "alternative": "stable shallow bowls on a non-slip mat",
+      "asin": "B0FRZN3DTR",
+      "title": "Silicone Baby Feeding Set | 9 PCS Baby Led Weaning Supplies Feeding Utensils | Divided Suction Plate Bowl Bib Cup Baby Spoons Forks | Toddler Eating Essentials-6+ Months (Beige)",
+      "brand": "Happy Munchkins",
+      "detailUrl": "https://www.amazon.com/dp/B0FRZN3DTR",
+      "verifiedAt": "2026-08-12T12:06:07.127Z",
+      "searchRank": 36,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 14.5,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "baby",
+      "familySlug": "toddler-snack-containers",
+      "familyName": "Toddler snack containers",
+      "category": "feeding",
+      "alternative": "small lidded food containers used while seated",
+      "asin": "B0B3M1Q183",
+      "title": "Silicone Snack Cups for Toddlers, Toddler Snack Containers, Baby Treat Catcher with DustProof Lid 2 Pack Dishwasher Safe and BPA Free 9 Oz | Silicone Baby Snack Cups, Baby Food Catcher Spill Proof, Kid Snacks Holder with DustProof Lid, Dishwasher Safe",
+      "brand": "Dilovely",
+      "detailUrl": "https://www.amazon.com/dp/B0B3M1Q183",
+      "verifiedAt": "2026-08-12T12:05:14.120Z",
+      "searchRank": 29,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 16.5,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "baby",
+      "familySlug": "toddler-step-stools",
+      "familyName": "Toddler step stools",
+      "category": "gear",
+      "alternative": "adult lifting or a fixed low setup",
+      "asin": "B0C614CYDN",
+      "title": "2 Step Stools for Kids,Toddler Step Stool for Bathroom Sink,No-Slip Double up Stepping for Toddlers, Multifunctional Toilet Potty Stool for Kids,Toilet Potty Training(2 Packs)",
+      "brand": "COOSEYA",
+      "detailUrl": "https://www.amazon.com/dp/B0C614CYDN",
+      "verifiedAt": "2026-08-12T12:12:22.205Z",
+      "searchRank": 16,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 14.9,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "baby",
+      "familySlug": "toddler-straw-cups",
+      "familyName": "Toddler straw cups",
+      "category": "feeding",
+      "alternative": "small open cups with direct supervision",
+      "asin": "B0GWM9TP74",
+      "title": "100% Silicone Toddler Tumbler Baby Sippy Cup See-through 12OZ Large Capacity Straw Drinking Cups for Kids (Beige)",
+      "brand": "XPECIAL",
+      "detailUrl": "https://www.amazon.com/dp/B0GWM9TP74",
+      "verifiedAt": "2026-08-12T12:04:37.081Z",
+      "searchRank": 12,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 15.06,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    },
+    {
+      "site": "baby",
+      "familySlug": "toddler-training-utensils",
+      "familyName": "Toddler training utensils",
+      "category": "feeding",
+      "alternative": "small household utensils with safe edges",
+      "asin": "B08GJ19G62",
+      "title": "Baby Fork and Spoon Set with Carry Case Baby Training Utensils Self Feeding Toddler Silverware Silicone and Stainless Steel Kids and Toddler Utensil Set-Dinosaur",
+      "brand": "YIVEKO",
+      "detailUrl": "https://www.amazon.com/dp/B08GJ19G62",
+      "verifiedAt": "2026-08-12T12:06:35.702Z",
+      "searchRank": 22,
+      "sponsoredSearchResult": false,
+      "relevanceScore": 14.66,
+      "validation": {
+        "directStatus": 200,
+        "asinMatched": true,
+        "unavailable": false
+      }
+    }
+  ],
+  "failures": [
+    {
+      "site": "baby",
+      "familySlug": "toddler-sippy-cups",
+      "familyName": "Toddler sippy cups",
+      "category": "feeding",
+      "alternative": "open cups or straw cups matched to readiness",
+      "error": "HTTP 500 blocked"
+    }
+  ]
+}

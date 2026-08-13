@@ -11,10 +11,10 @@ import { costumeHalloweenIdeaSlugs } from "@/lib/costume-halloween-ideas";
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const site = await getCurrentSite();
   if (site.previewNoIndex) return [];
-  const products = siteProducts(site.key);
-  const roundups = siteRoundups(site.key);
-  const guides = siteGuides(site.key);
-  const tools = siteTools(site.key);
+  const products = siteProducts(site.key).filter((item) => !item.sitemapExcluded);
+  const roundups = siteRoundups(site.key).filter((item) => !item.sitemapExcluded);
+  const guides = siteGuides(site.key).filter((item) => !item.sitemapExcluded);
+  const tools = siteTools(site.key).filter((item) => !item.sitemapExcluded);
   const costumeProducts = site.key === "costume" ? await listIndexableCostumeProducts(100) : [];
   const urls: Array<{
     path: string;

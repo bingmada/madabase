@@ -80,6 +80,7 @@ import {
 import { broadProductPilotGuides } from "./broad-product-pilot-content";
 import { broadProductPilot2Guides } from "./broad-product-pilot-2-content";
 import { broadProductPilot3Guides } from "./broad-product-pilot-3-content";
+import { breadthDraft120PlusGuides } from "./breadth-draft-120-plus-content";
 
 export const products: Product[] = [
   {
@@ -223,8 +224,8 @@ export const products: Product[] = [
     site: "pet",
     slug: "furbo-360-dog-camera",
     asin: "B0BWN22T25",
-    seoTitle: "Furbo 360 Review: Is Furbo Nanny Required? Free Features & Cost",
-    updatedAt: "July 21, 2026",
+    seoTitle: "Furbo 360 Review: Is It Free Without Furbo Nanny?",
+    updatedAt: "August 13, 2026",
     name: "Furbo 360 Dog Camera",
     brand: "Furbo",
     category: "home-care",
@@ -2365,6 +2366,7 @@ guides.push(...quadrupleExpansionGuides);
 guides.push(...broadProductPilotGuides);
 guides.push(...broadProductPilot2Guides);
 guides.push(...broadProductPilot3Guides);
+guides.push(...breadthDraft120PlusGuides);
 
 const includeDrafts = process.env.AFFILIATE_INCLUDE_DRAFTS === "1";
 

@@ -11,7 +11,7 @@ import { StyleProductPage } from "@/components/StyleExperience";
 import { findProduct, siteGuides, siteProducts, siteRoundups } from "@/lib/content";
 import { findAmazonOfferBlock } from "@/lib/amazon-offer-blocks";
 import { productEvidencePresentation } from "@/lib/evidence";
-import { effectiveContentUpdatedAt, findSearchOpportunity } from "@/lib/search-opportunities";
+import { effectiveContentUpdatedAt, findSearchOpportunity, searchOpportunityMetaDescription } from "@/lib/search-opportunities";
 import { breadcrumbSchema, pageMetadata, productNotesSchema, productPageTitle } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 import type { AffiliateOffer, Product } from "@/lib/types";
@@ -95,7 +95,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const product = findProduct(site.key, slug);
   if (!product) return {};
-  return pageMetadata(site, `/reviews/${slug}`, productPageTitle(product), product.summary, product.amazonImage ?? product.image);
+  const searchOpportunity = findSearchOpportunity(site.key, "product", slug);
+  return pageMetadata(site, `/reviews/${slug}`, productPageTitle(product), searchOpportunityMetaDescription(searchOpportunity, product.summary), product.amazonImage ?? product.image);
 }
 
 export default async function ReviewPage({ params }: { params: Promise<{ slug: string }> }) {

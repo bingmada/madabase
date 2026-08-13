@@ -8,7 +8,7 @@ import { BaseMarketEditionLinks } from "@/components/MarketExperience";
 import { SearchOpportunityBacklinks, SearchOpportunityBlock } from "@/components/SearchOpportunityBlock";
 import { StyleGuidePage } from "@/components/StyleExperience";
 import { findGuide, findProduct, findRoundup, siteGuides } from "@/lib/content";
-import { effectiveContentUpdatedAt, findSearchOpportunity } from "@/lib/search-opportunities";
+import { effectiveContentUpdatedAt, findSearchOpportunity, searchOpportunityMetaDescription } from "@/lib/search-opportunities";
 import { breadcrumbSchema, guideSchema, pageMetadata } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 import type { SiteKey } from "@/lib/types";
@@ -189,7 +189,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const guide = findGuide(site.key, slug);
   if (!guide) return {};
-  return pageMetadata(site, `/guides/${slug}`, guide.title, guide.dek, guide.image);
+  const searchOpportunity = findSearchOpportunity(site.key, "guide", slug);
+  return pageMetadata(site, `/guides/${slug}`, guide.title, searchOpportunityMetaDescription(searchOpportunity, guide.dek), guide.image);
 }
 
 export default async function GuidePage({ params }: { params: Promise<{ slug: string }> }) {

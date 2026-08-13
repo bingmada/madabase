@@ -8,6 +8,7 @@ export type PublicationStatus = "published" | "draft";
 type Publishable = {
   publicationStatus?: PublicationStatus;
   releaseCandidate?: string;
+  sitemapExcluded?: boolean;
 };
 
 export type Score = {

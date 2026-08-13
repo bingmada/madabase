@@ -1,0 +1,177 @@
+{
+  "updatedAt": "2026-08-12T08:55:00.000Z",
+  "cohort": "breadth-draft-120-plus",
+  "policy": "Research exclusions are not page deletions. They prevent the new draft cohort from duplicating an existing buying question, using an inaccurate product-family label, or entering an evidence category that this cohort cannot support safely.",
+  "exclusions": [
+    {
+      "site": "network",
+      "familySlug": "docsis-cable-modems",
+      "reason": "Existing cable-modem roundup, exact modem reviews, and 2.5GbE cable-modem guide already answer this purchase."
+    },
+    {
+      "site": "network",
+      "familySlug": "cable-modem-router-combos",
+      "reason": "The existing modem-router-combo-versus-separate guide already answers the same support, bridge-mode, voice-service, placement, and upgrade-path decision."
+    },
+    {
+      "site": "network",
+      "familySlug": "wifi-7-standalone-routers",
+      "reason": "Existing Wi-Fi 7 router roundup and exact router reviews already cover the standalone-router decision."
+    },
+    {
+      "site": "network",
+      "familySlug": "wifi-7-mesh-systems",
+      "reason": "Existing mesh roundup plus current Wi-Fi 7 Deco reviews and comparisons leave insufficiently independent intent for another generic family page."
+    },
+    {
+      "site": "network",
+      "familySlug": "travel-wifi-routers",
+      "reason": "Existing GL.iNet travel-router review and travel-router use-case guide already answer the same purchase."
+    },
+    {
+      "site": "network",
+      "familySlug": "unmanaged-gigabit-switches",
+      "reason": "Existing home Ethernet switch guide and TL-SG108 review already cover unmanaged gigabit selection."
+    },
+    {
+      "site": "network",
+      "familySlug": "managed-gigabit-switches",
+      "reason": "Existing home Ethernet switch guide, GS308E review, and switch comparison already cover managed-versus-unmanaged gigabit selection."
+    },
+    {
+      "site": "network",
+      "familySlug": "unmanaged-2-5gbe-switches",
+      "reason": "The existing fanless 2.5GbE roundup, exact switch reviews, five-versus-eight-port comparison, and topology checklist already cover this family in depth."
+    },
+    {
+      "site": "network",
+      "familySlug": "network-aggregation-switches",
+      "reason": "The label does not identify one stable consumer product class; live discovery returned an ordinary unmanaged multi-gig switch, while existing switch guides already cover uplink and topology planning."
+    },
+    {
+      "site": "network",
+      "familySlug": "dc-ups-battery-backups",
+      "reason": "Live product results and buying dimensions duplicate the mini-router-UPS intent: DC voltage, plug size, polarity, load, runtime, charging behavior, and battery safety."
+    },
+    {
+      "site": "network",
+      "familySlug": "network-rack-grounding-kits",
+      "reason": "A small affiliate product page cannot safely turn a listed bonding component into a grounding design; the required building, electrode, conductor, and code context exceeds this cohort's evidence boundary."
+    },
+    {
+      "site": "network",
+      "familySlug": "moca-coax-splitters",
+      "reason": "The existing MoCA splitter and filter checklist already answers frequency range, topology, amplifier, point-of-entry filter, and provider-equipment compatibility."
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-water-leak-sensors",
+      "reason": "A complete leak-sensor cluster already contains a roundup, product pages, protocol comparison, and placement guide."
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-water-quality-monitors",
+      "reason": "Consumer readings could be mistaken for drinking-water safety evidence; this cohort does not have the laboratory and regulatory evidence needed for that claim boundary."
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-deadbolts",
+      "reason": "Existing smart-lock compatibility, protocol, Home Key, product, and comparison pages already answer the generic deadbolt purchase."
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-video-doorbells",
+      "reason": "Existing video-doorbell guide, exact products, and comparison already cover power, storage, subscriptions, and entry fit."
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-mailbox-sensors",
+      "reason": "The available products are ordinary contact or vibration sensors applied to a mailbox; existing contact-sensor content already covers hub, range, placement, notifications, batteries, and automation."
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-garage-cameras",
+      "reason": "This is a garage placement use case for the existing indoor/outdoor security-camera families, not a stable product class with a distinct purchasing specification."
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-security-keypads",
+      "reason": "Consumer alarm keypads are ecosystem-bound accessories to the existing DIY smart-alarm-kit family; they cannot be selected independently of the base station and subscription path."
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-dehumidifier-pumps",
+      "reason": "The candidate label implies a connected product class, but the available category is primarily ordinary condensate pumps; renaming it would change the approved search intent."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "usb-c-laptop-docking-stations",
+      "reason": "Existing dock roundup, port guide, host-chip compatibility guide, product pages, and DisplayLink-versus-Thunderbolt comparison already cover this purchase."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "thunderbolt-docking-stations",
+      "reason": "Existing native-Thunderbolt dock products and compatibility comparisons already cover the decision with greater model specificity."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "usb-c-multiport-hubs",
+      "reason": "Existing USB-C adapter-versus-dock and dock-port guides overlap the same port, charging, display, and host-compatibility question."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "desk-privacy-panels",
+      "reason": "Live product verification returned the same felt divider construction as the acoustic-desk-divider candidate; one page can address both visual separation and the limits of sound absorption without splitting near-identical intent."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "home-office-walking-pads",
+      "reason": "Existing walking-pad review, setup roundup, ergonomics material, and international variants already cover the home-office purchase."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "under-desk-treadmills",
+      "reason": "This is the same commercial intent as the existing walking-pad cluster under a near-synonymous label."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "dual-monitor-arms",
+      "reason": "Existing monitor-arm roundup and single-versus-dual guide already answer the purchase."
+    },
+    {
+      "site": "baby",
+      "familySlug": "baby-bottle-sterilizers",
+      "reason": "Existing sterilizer roundup, multiple exact reviews, capacity guide, and descaling guide already cover the family."
+    },
+    {
+      "site": "baby",
+      "familySlug": "baby-bottle-warmers",
+      "reason": "Existing exact warmer reviews, head-to-head comparison, and travel warming guide already cover the family."
+    },
+    {
+      "site": "baby",
+      "familySlug": "nursery-diaper-pails",
+      "reason": "Existing exact diaper-pail review and annual bag-cost guide already answer the main purchase and ownership questions."
+    },
+    {
+      "site": "baby",
+      "familySlug": "nursery-night-lights",
+      "reason": "Existing nursery sound-machine and night-light guide overlaps the same sleep-environment purchase."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "portable-document-scanners",
+      "reason": "The exact selected product is itself a portable sheet-fed scanner, so its paper-path, duplex, software, receipt, and workflow intent is already covered by the existing sheet-fed scanner page."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "thermal-shipping-label-printers",
+      "reason": "The existing desktop label-printer family already uses a 4x6 thermal shipping-label printer and covers the same media, driver, platform, print-volume, and ownership decision."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "laptop-monitor-arms",
+      "reason": "The existing monitor-arm roundup, compatibility checklist, small-desk guide, and single-versus-dual material already cover clamp load, VESA fit, arm movement, cable slack, and laptop-tray geometry."
+    }
+  ]
+}

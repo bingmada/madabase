@@ -1,0 +1,1366 @@
+{
+  "generatedAt": "2026-08-13T03:00:38.650Z",
+  "publicationStatus": "draft",
+  "count": 151,
+  "images": [
+    {
+      "site": "network",
+      "familySlug": "bulk-ethernet-cable-reels",
+      "familyName": "Bulk Ethernet cable reels",
+      "asin": "B07C848GTK",
+      "file": "/images/affiliate/breadth-network-bulk-ethernet-cable-reels.webp",
+      "bytes": 74472,
+      "sha256": "5eede04cc6fb90b6accbda25421e432474b882330fa090ac30554013a604282c"
+    },
+    {
+      "site": "network",
+      "familySlug": "cloud-managed-access-points",
+      "familyName": "Cloud-managed Wi-Fi access points",
+      "asin": "B0CTL1Y9YR",
+      "file": "/images/affiliate/breadth-network-cloud-managed-access-points.webp",
+      "bytes": 74790,
+      "sha256": "9e01b7b1df4436cad79d50ea61b2f1fbaf0de37c86125aca706f70e88a5e56d4"
+    },
+    {
+      "site": "network",
+      "familySlug": "coax-cable-testers",
+      "familyName": "Coax cable testers",
+      "asin": "B0D3HNXX38",
+      "file": "/images/affiliate/breadth-network-coax-cable-testers.webp",
+      "bytes": 72432,
+      "sha256": "bfb01c93766aa7b297d90c55428cf2530d49483628ba76c354dc26b7177e0e42"
+    },
+    {
+      "site": "network",
+      "familySlug": "coax-compression-tools",
+      "familyName": "Coax compression tools",
+      "asin": "B07JFJ9DJD",
+      "file": "/images/affiliate/breadth-network-coax-compression-tools.webp",
+      "bytes": 73142,
+      "sha256": "630f7507d83238fe1a58a3d846a9462d8454a9b261f5c7175b6dd5a3e862267a"
+    },
+    {
+      "site": "network",
+      "familySlug": "ethernet-inline-couplers",
+      "familyName": "Ethernet inline couplers",
+      "asin": "B01AZA4WGW",
+      "file": "/images/affiliate/breadth-network-ethernet-inline-couplers.webp",
+      "bytes": 71644,
+      "sha256": "450fef9559eac246ea8ae77b6761da6a0488f73014fde9b61cdc88dd6fba1bab"
+    },
+    {
+      "site": "network",
+      "familySlug": "ethernet-network-taps",
+      "familyName": "Ethernet network taps",
+      "asin": "B004EWVFAY",
+      "file": "/images/affiliate/breadth-network-ethernet-network-taps.webp",
+      "bytes": 70994,
+      "sha256": "6ebb3b93e1fa61c7822db91dbe0efef94b921ee6587b6f49eca48e4a927a0246"
+    },
+    {
+      "site": "network",
+      "familySlug": "fiber-cleaning-kits",
+      "familyName": "Fiber optic cleaning kits",
+      "asin": "B0BLRWC713",
+      "file": "/images/affiliate/breadth-network-fiber-cleaning-kits.webp",
+      "bytes": 73190,
+      "sha256": "7a6819e268b0dae3dc87f22a914062cb2759ae49176ac780956605a897a1a81a"
+    },
+    {
+      "site": "network",
+      "familySlug": "fiber-optic-patch-cables",
+      "familyName": "Fiber optic patch cables",
+      "asin": "B0CKS9ZK3H",
+      "file": "/images/affiliate/breadth-network-fiber-optic-patch-cables.webp",
+      "bytes": 72656,
+      "sha256": "afdf48d52940951f4fa96da9d0234969933f72503cc1f063aa516c912bc67933"
+    },
+    {
+      "site": "network",
+      "familySlug": "fiber-optic-power-meters",
+      "familyName": "Fiber optic power meters",
+      "asin": "B09MLP5GYH",
+      "file": "/images/affiliate/breadth-network-fiber-optic-power-meters.webp",
+      "bytes": 73748,
+      "sha256": "fdf938f0198fd70e4b36eff2c510eefb4fd9442c7f84819cc71ff573f36f1643"
+    },
+    {
+      "site": "network",
+      "familySlug": "fiber-visual-fault-locators",
+      "familyName": "Fiber visual fault locators",
+      "asin": "B0G58HNK8W",
+      "file": "/images/affiliate/breadth-network-fiber-visual-fault-locators.webp",
+      "bytes": 72932,
+      "sha256": "f3e60f60e07df700d6bb9b89590b0dd371199db3cf15026eeb6f01b63e1c8714"
+    },
+    {
+      "site": "network",
+      "familySlug": "industrial-ethernet-switches",
+      "familyName": "Industrial Ethernet switches",
+      "asin": "B08TBXGN7J",
+      "file": "/images/affiliate/breadth-network-industrial-ethernet-switches.webp",
+      "bytes": 73986,
+      "sha256": "b21673bef48c1e6ee7a4a07622c71839be964039679dc6708772120e230788b0"
+    },
+    {
+      "site": "network",
+      "familySlug": "kvm-over-ip-extenders",
+      "familyName": "KVM over IP extenders",
+      "asin": "B07N2M5YYR",
+      "file": "/images/affiliate/breadth-network-kvm-over-ip-extenders.webp",
+      "bytes": 72796,
+      "sha256": "ad561095febcbb28988377338d2d7a5abe0f904b3105d355649b9c86bc8eff6a"
+    },
+    {
+      "site": "network",
+      "familySlug": "managed-2-5gbe-switches",
+      "familyName": "Managed 2.5GbE switches",
+      "asin": "B0D6TXDMB9",
+      "file": "/images/affiliate/breadth-network-managed-2-5gbe-switches.webp",
+      "bytes": 74686,
+      "sha256": "7add285b0f719aea1476f30bf26fa0949ed85b3c861b983f418102ce5f57ef61"
+    },
+    {
+      "site": "network",
+      "familySlug": "mini-ups-for-routers",
+      "familyName": "Mini UPS units for routers",
+      "asin": "B0FHH5LTQK",
+      "file": "/images/affiliate/breadth-network-mini-ups-for-routers.webp",
+      "bytes": 72484,
+      "sha256": "e0cb4fc11d9abd3d51a8db5638627b520a892391aba9bff25377cf079ee22d16"
+    },
+    {
+      "site": "network",
+      "familySlug": "network-rack-cooling-fans",
+      "familyName": "Network rack cooling fans",
+      "asin": "B07NW127BN",
+      "file": "/images/affiliate/breadth-network-network-rack-cooling-fans.webp",
+      "bytes": 73112,
+      "sha256": "f96d8ef0bb21a698ce7f576c68a2885f07a88cf33418c1c2864fce91052acf9f"
+    },
+    {
+      "site": "network",
+      "familySlug": "network-rack-shelves",
+      "familyName": "Network rack shelves",
+      "asin": "B071KW94ZC",
+      "file": "/images/affiliate/breadth-network-network-rack-shelves.webp",
+      "bytes": 73308,
+      "sha256": "054c520eb8729fcf94930cae8a469c61c11ff329fb0838e026ec75be96c82a8b"
+    },
+    {
+      "site": "network",
+      "familySlug": "preterminated-fiber-runs",
+      "familyName": "Preterminated fiber cable runs",
+      "asin": "B0CYG3K7D6",
+      "file": "/images/affiliate/breadth-network-preterminated-fiber-runs.webp",
+      "bytes": 73612,
+      "sha256": "2a28960605405409358e18646e08fc9b238f236314e430e3447a35a6246e757b"
+    },
+    {
+      "site": "network",
+      "familySlug": "rack-blanking-panels",
+      "familyName": "Rack blanking panels",
+      "asin": "B0B6Q7ZQD9",
+      "file": "/images/affiliate/breadth-network-rack-blanking-panels.webp",
+      "bytes": 73120,
+      "sha256": "2d8d8ceedfae30a14edda7843d525ed1013ec19c37131d15d80bfef6e42441c7"
+    },
+    {
+      "site": "network",
+      "familySlug": "rackmount-network-ups",
+      "familyName": "Rackmount UPS units for network gear",
+      "asin": "B0FWLTQ23S",
+      "file": "/images/affiliate/breadth-network-rackmount-network-ups.webp",
+      "bytes": 76188,
+      "sha256": "2f60361cd6f6b251f11d44f17af512299680e55ec85260fe77c45b538eb779f9"
+    },
+    {
+      "site": "network",
+      "familySlug": "serial-device-servers",
+      "familyName": "Serial device servers",
+      "asin": "B0798DT6SQ",
+      "file": "/images/affiliate/breadth-network-serial-device-servers.webp",
+      "bytes": 72494,
+      "sha256": "eca2b58a3f57a3fa47fa6d051301a08f2ec397c8f3efed42aae69096b863bb98"
+    },
+    {
+      "site": "network",
+      "familySlug": "sfp28-network-switches",
+      "familyName": "SFP28 network switches",
+      "asin": "B0FSTKNF74",
+      "file": "/images/affiliate/breadth-network-sfp28-network-switches.webp",
+      "bytes": 73094,
+      "sha256": "2515bc585960a7fcac31595024a407112f96d26bc51624ba6de26dff8d466651"
+    },
+    {
+      "site": "network",
+      "familySlug": "sfp28-transceivers",
+      "familyName": "SFP28 transceivers",
+      "asin": "B0DWSJTBGT",
+      "file": "/images/affiliate/breadth-network-sfp28-transceivers.webp",
+      "bytes": 71282,
+      "sha256": "fd732e42ba8977affd417c326cbd9c7a9951bfe51b32375c5b8a304950c23231"
+    },
+    {
+      "site": "network",
+      "familySlug": "wall-plate-access-points",
+      "familyName": "Wall-plate Wi-Fi access points",
+      "asin": "B08HSNYH57",
+      "file": "/images/affiliate/breadth-network-wall-plate-access-points.webp",
+      "bytes": 74580,
+      "sha256": "2e7bca408adad20aff4604bf8222d7631af76ef0fd75de3b1c812291ccaa4d43"
+    },
+    {
+      "site": "network",
+      "familySlug": "waterproof-rj45-couplers",
+      "familyName": "Waterproof RJ45 couplers",
+      "asin": "B0CN8Z4NX3",
+      "file": "/images/affiliate/breadth-network-waterproof-rj45-couplers.webp",
+      "bytes": 73692,
+      "sha256": "4950aaeb58746fa032459e13bae34c4e3243514f2f69cc35a5a1ded1748d1253"
+    },
+    {
+      "site": "network",
+      "familySlug": "optical-time-domain-reflectometers",
+      "familyName": "Optical time-domain reflectometers",
+      "asin": "B0CW3B9ZM8",
+      "file": "/images/affiliate/breadth-network-optical-time-domain-reflectometers.webp",
+      "bytes": 75410,
+      "sha256": "c9045ca71bc226acced7931bd86a3dc1c42f0021e286ff1134317a7cdae92c1b"
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-aroma-diffusers",
+      "familyName": "Smart aroma diffusers",
+      "asin": "B0GSFHFQBF",
+      "file": "/images/affiliate/breadth-smarthome-smart-aroma-diffusers.webp",
+      "bytes": 41820,
+      "sha256": "eb1ca38cc467139d4e5d3bf342ea0a627abc3fe988ff6a21611f6d239df63578"
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-bathroom-exhaust-fans",
+      "familyName": "Smart bathroom exhaust fans",
+      "asin": "B0FR4J5QQ3",
+      "file": "/images/affiliate/breadth-smarthome-smart-bathroom-exhaust-fans.webp",
+      "bytes": 43566,
+      "sha256": "a81aa93f3658c94a6c531d6005ae638bb5c77d9d3f5cf836c2a2cd61943cd56f"
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-countertop-composters",
+      "familyName": "Smart countertop composters",
+      "asin": "B0F2697XCD",
+      "file": "/images/affiliate/breadth-smarthome-smart-countertop-composters.webp",
+      "bytes": 44136,
+      "sha256": "98de981ad12064979a661baedc5e76b7a3b260f90a4af88e1ff2d5aa645a75f7"
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-floor-lamps",
+      "familyName": "Smart floor lamps",
+      "asin": "B0GK5R7BC5",
+      "file": "/images/affiliate/breadth-smarthome-smart-floor-lamps.webp",
+      "bytes": 40694,
+      "sha256": "79d9ceeeb35f57872add7303d48ecab8426997fd76ba928f93c03c2c7917a712"
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-floor-vents",
+      "familyName": "Smart floor vents",
+      "asin": "B07TJCMZ4T",
+      "file": "/images/affiliate/breadth-smarthome-smart-floor-vents.webp",
+      "bytes": 40502,
+      "sha256": "14dea70bfa43ac72f1481e657a31169a9b142a3e4517ab411a69710ccfc108ee"
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-indoor-gardens",
+      "familyName": "Smart indoor gardens",
+      "asin": "B0DBHGMPXC",
+      "file": "/images/affiliate/breadth-smarthome-smart-indoor-gardens.webp",
+      "bytes": 43488,
+      "sha256": "43de42e0e2df90e4b38c86bf8a10b617e926a9fffebe48d85d1ca4e7b2d1a137"
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-ir-rf-remotes",
+      "familyName": "Smart IR and RF remote hubs",
+      "asin": "B0DFBWZ1DZ",
+      "file": "/images/affiliate/breadth-smarthome-smart-ir-rf-remotes.webp",
+      "bytes": 42848,
+      "sha256": "4922aa701bdf9cc32330385dcf0aa3317f216bbe5a3529f1034a9d5f39fe5f46"
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-landscape-spotlights",
+      "familyName": "Smart landscape spotlights",
+      "asin": "B0FN46GW8Z",
+      "file": "/images/affiliate/breadth-smarthome-smart-landscape-spotlights.webp",
+      "bytes": 43916,
+      "sha256": "ca334f2eea16178bea9b2df0ed72e89992db623633a62c6a1c2e41e14813b26b"
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-lever-locks",
+      "familyName": "Smart lever locks",
+      "asin": "B0CLG8TCTJ",
+      "file": "/images/affiliate/breadth-smarthome-smart-lever-locks.webp",
+      "bytes": 39758,
+      "sha256": "3d1d65b1ff11a091d341cdea1de7aaa4063fab3754f00bdaa96de8e0028a455e"
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-pathway-lights",
+      "familyName": "Smart pathway lights",
+      "asin": "B0FQ3KX7FL",
+      "file": "/images/affiliate/breadth-smarthome-smart-pathway-lights.webp",
+      "bytes": 43380,
+      "sha256": "9c903179502d9f02795576e45a255762081d4cbc4627ea537955a72dd2c21946"
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-peephole-cameras",
+      "familyName": "Smart peephole cameras",
+      "asin": "B0D31TJHRK",
+      "file": "/images/affiliate/breadth-smarthome-smart-peephole-cameras.webp",
+      "bytes": 42858,
+      "sha256": "bade90b7b2d4a7730af60add182a24b0185dd5845242167b21d3406313dab591"
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-pool-thermometers",
+      "familyName": "Smart pool thermometers",
+      "asin": "B0H5BQZY9M",
+      "file": "/images/affiliate/breadth-smarthome-smart-pool-thermometers.webp",
+      "bytes": 41162,
+      "sha256": "e303a1e0ada3c3a309881a7150ff5fd2238e5bfd69945a517a0f4fb67342b0bf"
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-radiator-valves",
+      "familyName": "Smart thermostatic radiator valves",
+      "asin": "B0D14FJSTJ",
+      "file": "/images/affiliate/breadth-smarthome-smart-radiator-valves.webp",
+      "bytes": 44786,
+      "sha256": "37a364ffb38be15b38e6f87fbf2daf6f018a6dfb413bc7d6e003fa756aa8eecb"
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-recessed-lights",
+      "familyName": "Smart recessed lights",
+      "asin": "B0F2Y8J62K",
+      "file": "/images/affiliate/breadth-smarthome-smart-recessed-lights.webp",
+      "bytes": 43598,
+      "sha256": "dd32ec4bcc7e085cffe3d72876467c43d003e9c7588daa78cfe857482f7b01c2"
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-sous-vide-cookers",
+      "familyName": "Smart sous vide cookers",
+      "asin": "B0H4KFQ83Y",
+      "file": "/images/affiliate/breadth-smarthome-smart-sous-vide-cookers.webp",
+      "bytes": 41912,
+      "sha256": "b1eb721d0de32e85ce40e99a45f7eef9af2948edd54ebb718b229b1a6743922a"
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-space-heaters",
+      "familyName": "Smart space heaters",
+      "asin": "B0DPX33FCD",
+      "file": "/images/affiliate/breadth-smarthome-smart-space-heaters.webp",
+      "bytes": 43164,
+      "sha256": "986aaedbd26796701b391994a0c1da7c8889d88011b2ba28d52954d8f339ef81"
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-sump-pump-monitors",
+      "familyName": "Smart sump pump monitors",
+      "asin": "B09YK8KY9N",
+      "file": "/images/affiliate/breadth-smarthome-smart-sump-pump-monitors.webp",
+      "bytes": 43426,
+      "sha256": "7ec5fad5f8792de0b85088578160c3ebc8c9e794f41e3d60f97b37499dc27277"
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-table-lamps",
+      "familyName": "Smart table lamps",
+      "asin": "B099MV5XMX",
+      "file": "/images/affiliate/breadth-smarthome-smart-table-lamps.webp",
+      "bytes": 41604,
+      "sha256": "9fef00f7084939cbafe54b9b74217cf8e54bd407b530651c77ee8a2a9583f16c"
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-under-cabinet-lights",
+      "familyName": "Smart under-cabinet lights",
+      "asin": "B08CCDH8P9",
+      "file": "/images/affiliate/breadth-smarthome-smart-under-cabinet-lights.webp",
+      "bytes": 43378,
+      "sha256": "492eeea6bcfb6b30c2120c2a2b3a36de62f09d69f0d0176b3fb07f16df6c50a1"
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-wall-control-panels",
+      "familyName": "Smart-home wall control panels",
+      "asin": "B07C6LX1NF",
+      "file": "/images/affiliate/breadth-smarthome-smart-wall-control-panels.webp",
+      "bytes": 43240,
+      "sha256": "99cff94690c819613c06e325857b2500b1b5728fb9288fc61aba7267d5f41ff8"
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-coffee-makers",
+      "familyName": "Smart coffee makers",
+      "asin": "B0B5W2RM9D",
+      "file": "/images/affiliate/breadth-smarthome-smart-coffee-makers.webp",
+      "bytes": 42302,
+      "sha256": "07c26c84072e429dd9b1bac0e1a3e9affbc07c7ef6be6ae3a4ed05cbfdcbbbf5"
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-glass-break-sensors",
+      "familyName": "Smart glass-break sensors",
+      "asin": "B08TG6NCTS",
+      "file": "/images/affiliate/breadth-smarthome-smart-glass-break-sensors.webp",
+      "bytes": 43822,
+      "sha256": "e625d4fef8819f62e3d8ce44908d132876e6216e9b9984ea82ade3f2efa66088"
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-propane-tank-monitors",
+      "familyName": "Smart propane tank monitors",
+      "asin": "B09J6MXJKT",
+      "file": "/images/affiliate/breadth-smarthome-smart-propane-tank-monitors.webp",
+      "bytes": 42656,
+      "sha256": "3342a09d8d66f9cd264bbd13e8e3fb4fd818ad597db46b6229c8345064e4f369"
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-slow-cookers",
+      "familyName": "Smart slow cookers",
+      "asin": "B07V7GQBB5",
+      "file": "/images/affiliate/breadth-smarthome-smart-slow-cookers.webp",
+      "bytes": 41862,
+      "sha256": "84d42599cb60f5cb6aa07750d76aa9ebbced3fb403bc63150771cfbef74368c1"
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-vibration-sensors",
+      "familyName": "Smart vibration sensors",
+      "asin": "B07PJT939B",
+      "file": "/images/affiliate/breadth-smarthome-smart-vibration-sensors.webp",
+      "bytes": 42294,
+      "sha256": "09bf2aef7b87658ac445538e8d8f127061bbb3c11cfbd7f31ee30d016c290315"
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "acoustic-desk-dividers",
+      "familyName": "Acoustic desk dividers",
+      "asin": "B0DRHQCNVR",
+      "file": "/images/affiliate/breadth-homeoffice-acoustic-desk-dividers.webp",
+      "bytes": 52376,
+      "sha256": "5e3d77ac98285af528f46c71203f475508bc242f79fd7999d29da3f3816188be"
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "active-sitting-stools",
+      "familyName": "Active sitting stools",
+      "asin": "B0GY5QT89Z",
+      "file": "/images/affiliate/breadth-homeoffice-active-sitting-stools.webp",
+      "bytes": 52112,
+      "sha256": "3b34329a384745689a39bd494dd81967f444b604cc21385bfe8e62cfd974e458"
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "compact-color-inkjet-printers",
+      "familyName": "Compact color inkjet printers",
+      "asin": "B0FMBTJLX6",
+      "file": "/images/affiliate/breadth-homeoffice-compact-color-inkjet-printers.webp",
+      "bytes": 53972,
+      "sha256": "de19a8f295e9d3928621745439c98eb3710c7acccb15161244b0efa0167c82b3"
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "conference-speakerphones",
+      "familyName": "Conference speakerphones",
+      "asin": "B0BVZLS5GZ",
+      "file": "/images/affiliate/breadth-homeoffice-conference-speakerphones.webp",
+      "bytes": 54090,
+      "sha256": "b895bcc8dd9a5b5f6ddc73544710b6af9bea3b06727e4baf249807fa4a063e1b"
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "desk-cable-grommets",
+      "familyName": "Desk cable grommets",
+      "asin": "B0CWY7X6ZJ",
+      "file": "/images/affiliate/breadth-homeoffice-desk-cable-grommets.webp",
+      "bytes": 51834,
+      "sha256": "06f0abd9cbba5bfdfbda411c12401e53e7bd93ef8014cbb4341ac886b72e976f"
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "desk-cable-sleeves",
+      "familyName": "Desk cable sleeves",
+      "asin": "B09DMDN294",
+      "file": "/images/affiliate/breadth-homeoffice-desk-cable-sleeves.webp",
+      "bytes": 52292,
+      "sha256": "e56ee30f4afdba3865c09100674cb630c292096e7850d12e538f20daea241e92"
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "desk-pegboard-organizers",
+      "familyName": "Desk pegboard organizers",
+      "asin": "B0BJ16TCMS",
+      "file": "/images/affiliate/breadth-homeoffice-desk-pegboard-organizers.webp",
+      "bytes": 52934,
+      "sha256": "f0fffc8b82a6e9ff948c0661e33c2d6e05db9ea579063cee9509fb2587d2ae33"
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "desktop-computer-speakers",
+      "familyName": "Desktop computer speakers",
+      "asin": "B0H7H94XGS",
+      "file": "/images/affiliate/breadth-homeoffice-desktop-computer-speakers.webp",
+      "bytes": 54058,
+      "sha256": "a31c74bb4d84cf246082ff1b703e483552365697db26c034883390a74f8baa2e"
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "desktop-file-organizers",
+      "familyName": "Desktop file organizers",
+      "asin": "B0CNRH8NNS",
+      "file": "/images/affiliate/breadth-homeoffice-desktop-file-organizers.webp",
+      "bytes": 51910,
+      "sha256": "51eb2820b9a4e97f68499f9579520c59fefd6dd71c3548f542d08d7e60775ee5"
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "desktop-ring-lights",
+      "familyName": "Desktop ring lights",
+      "asin": "B0F4WK69GV",
+      "file": "/images/affiliate/breadth-homeoffice-desktop-ring-lights.webp",
+      "bytes": 52614,
+      "sha256": "3a348bbf6e7c5a28dc7a453c11977a0a038622a3ad1fcaecd5ac278935f835cd"
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "desktop-shelf-systems",
+      "familyName": "Desktop shelf systems",
+      "asin": "B0F4CGXCNQ",
+      "file": "/images/affiliate/breadth-homeoffice-desktop-shelf-systems.webp",
+      "bytes": 51774,
+      "sha256": "f92a617e3db298fab009949e7061213f7d7534a567d2c7884264e281cdb2a949"
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "floor-cable-covers",
+      "familyName": "Floor cable covers",
+      "asin": "B082FPMR14",
+      "file": "/images/affiliate/breadth-homeoffice-floor-cable-covers.webp",
+      "bytes": 51578,
+      "sha256": "3bfa6a97aa00f838dd0acf5aedcf1e48595249d83548efee5e42c2751abae507"
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "four-k-webcams",
+      "familyName": "4K webcams",
+      "asin": "B0DYMDGHKB",
+      "file": "/images/affiliate/breadth-homeoffice-four-k-webcams.webp",
+      "bytes": 50280,
+      "sha256": "f94e006b7c6acb8a4341305a4dba3f6f02e0e9a7a1f1a58bcb38477e32048581"
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "ink-tank-printers",
+      "familyName": "Ink tank printers",
+      "asin": "B0BL466Y41",
+      "file": "/images/affiliate/breadth-homeoffice-ink-tank-printers.webp",
+      "bytes": 51858,
+      "sha256": "67aff2cf573476323ae8c5d4fb4a1213a0af7e2e16686e4c85d28b86b68da027"
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "keyboard-wrist-rests",
+      "familyName": "Keyboard wrist rests",
+      "asin": "B08C56DKS5",
+      "file": "/images/affiliate/breadth-homeoffice-keyboard-wrist-rests.webp",
+      "bytes": 52856,
+      "sha256": "85104afa6079d4dd20c91dc0f882dc825d03b8927b3208567ac4131d3085f813"
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "laptop-cooling-pads",
+      "familyName": "Laptop cooling pads",
+      "asin": "B00NNMB3KS",
+      "file": "/images/affiliate/breadth-homeoffice-laptop-cooling-pads.webp",
+      "bytes": 52292,
+      "sha256": "aacff5098de44b6ec6866430b0c4afe0aff8a9052ec8d60638b98067c8ce1bec"
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "laptop-privacy-screens",
+      "familyName": "Laptop privacy screens",
+      "asin": "B09TD2HVVQ",
+      "file": "/images/affiliate/breadth-homeoffice-laptop-privacy-screens.webp",
+      "bytes": 53052,
+      "sha256": "2c2dbd902f453d4377dbaf3aa2daa73872d42c7ec6c9a44d451ce0715c86256f"
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "monitor-light-bars",
+      "familyName": "Monitor light bars",
+      "asin": "B08DKQ3JG1",
+      "file": "/images/affiliate/breadth-homeoffice-monitor-light-bars.webp",
+      "bytes": 52314,
+      "sha256": "e868e0ca1fb26bfa5da04d5cea5c9cdb4c31421df258ca7ac7a68e67fd39ab63"
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "monitor-privacy-screens",
+      "familyName": "Monitor privacy screens",
+      "asin": "B0CJBHHGPG",
+      "file": "/images/affiliate/breadth-homeoffice-monitor-privacy-screens.webp",
+      "bytes": 52028,
+      "sha256": "750cd1680eb9cf99308466c3028f755a881d8a979ef08a3f60f13e5efc5ece2b"
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "mouse-wrist-rests",
+      "familyName": "Mouse wrist rests",
+      "asin": "B098P87YJX",
+      "file": "/images/affiliate/breadth-homeoffice-mouse-wrist-rests.webp",
+      "bytes": 52870,
+      "sha256": "211ab5470a7d437d7e968017f5474ff46c7ada5644c16139796f3155390652de"
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "office-lumbar-cushions",
+      "familyName": "Office lumbar support cushions",
+      "asin": "B074C9F45S",
+      "file": "/images/affiliate/breadth-homeoffice-office-lumbar-cushions.webp",
+      "bytes": 53354,
+      "sha256": "324ebd7c8b21af899351e6cd437c9e419e2fc8a2532ebf36f3eebefa1f574d7a"
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "office-printer-stands",
+      "familyName": "Office printer stands",
+      "asin": "B0DBZ98D94",
+      "file": "/images/affiliate/breadth-homeoffice-office-printer-stands.webp",
+      "bytes": 51678,
+      "sha256": "2a61ad2ccc3dba9562057d6643db0ac0f5d7dc080a1464442c48de51d36d7a46"
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "office-saddle-stools",
+      "familyName": "Office saddle stools",
+      "asin": "B0CP2H7KBP",
+      "file": "/images/affiliate/breadth-homeoffice-office-saddle-stools.webp",
+      "bytes": 51662,
+      "sha256": "4e123f22fa31695ecce0d966d0815be9ff60f43f20f039851082814d780179b8"
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "office-seat-cushions",
+      "familyName": "Office seat cushions",
+      "asin": "B01EBDV9BU",
+      "file": "/images/affiliate/breadth-homeoffice-office-seat-cushions.webp",
+      "bytes": 52774,
+      "sha256": "c3e1be253a50ed555590c64b64043410fef238c7daf688f4954a3f0c16e93112"
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "overhead-book-scanners",
+      "familyName": "Overhead book scanners",
+      "asin": "B0GXZJ5FC6",
+      "file": "/images/affiliate/breadth-homeoffice-overhead-book-scanners.webp",
+      "bytes": 53008,
+      "sha256": "eec8056b2c9c33e8a448ace99f287feb337da289efc80b974ec5bbe1be47aea6"
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "portable-photo-printers",
+      "familyName": "Portable photo printers",
+      "asin": "B0F9L9RYFY",
+      "file": "/images/affiliate/breadth-homeoffice-portable-photo-printers.webp",
+      "bytes": 51662,
+      "sha256": "eafdde3deab7404d4652c0a3cb0a11df9a490f809632d34c8fbe177b4b2ed628"
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "ptz-conference-cameras",
+      "familyName": "PTZ conference cameras",
+      "asin": "B0C2Q2HV8Q",
+      "file": "/images/affiliate/breadth-homeoffice-ptz-conference-cameras.webp",
+      "bytes": 52280,
+      "sha256": "239ab0d3a1bbf344475b70d6e29f370eef4eeefa46aad1f1a9cacb294a258940"
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "receipt-scanners",
+      "familyName": "Receipt scanners",
+      "asin": "B08P3YM18F",
+      "file": "/images/affiliate/breadth-homeoffice-receipt-scanners.webp",
+      "bytes": 51732,
+      "sha256": "a0399f71eb0b819a000498c1d44bb57e50c5d95f77141b35acfaa19f18815533"
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "rolling-file-cabinets",
+      "familyName": "Rolling file cabinets",
+      "asin": "B0DZGLD3J1",
+      "file": "/images/affiliate/breadth-homeoffice-rolling-file-cabinets.webp",
+      "bytes": 51444,
+      "sha256": "df18f26328c2970b9cc5ca672aae25f3ea703d3482910d8dc08dde884aba7a48"
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "under-desk-foot-hammocks",
+      "familyName": "Under-desk foot hammocks",
+      "asin": "B07C3M678F",
+      "file": "/images/affiliate/breadth-homeoffice-under-desk-foot-hammocks.webp",
+      "bytes": 52072,
+      "sha256": "edd7ada2a2bff9a4b1ee7fe896b4ea06dcc0894583f8bc730fcf0ba31bdd7d57"
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "under-desk-pedal-exercisers",
+      "familyName": "Under-desk pedal exercisers",
+      "asin": "B0DF2WS15J",
+      "file": "/images/affiliate/breadth-homeoffice-under-desk-pedal-exercisers.webp",
+      "bytes": 53906,
+      "sha256": "495d9705393830176850f65791ee77107073d83f21266dfad35b1100d8657f98"
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "vesa-monitor-adapters",
+      "familyName": "VESA monitor adapters",
+      "asin": "B09STXZRMS",
+      "file": "/images/affiliate/breadth-homeoffice-vesa-monitor-adapters.webp",
+      "bytes": 52296,
+      "sha256": "e5bc00d74f74db0841595c216ad615d6327a013f9a1ae2a0027d36e43852bed1"
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "webcam-key-lights",
+      "familyName": "Webcam key lights",
+      "asin": "B0CJM9HRL8",
+      "file": "/images/affiliate/breadth-homeoffice-webcam-key-lights.webp",
+      "bytes": 51952,
+      "sha256": "c447791bdf922ca87f602d3e76fbdbfad9ce8af7f4e68718b3e2fcab4e1a06ee"
+    },
+    {
+      "site": "baby",
+      "familySlug": "baby-bath-thermometers",
+      "familyName": "Baby bath thermometers",
+      "asin": "B0D4YFB6TC",
+      "file": "/images/affiliate/breadth-baby-baby-bath-thermometers.webp",
+      "bytes": 45082,
+      "sha256": "81403d82a424c2b1d9705520e757e8af4a761f24721a14bdfddae361ed6b6b14"
+    },
+    {
+      "site": "baby",
+      "familySlug": "baby-wipe-dispensers",
+      "familyName": "Baby wipe dispensers",
+      "asin": "B0BJ5YJ26S",
+      "file": "/images/affiliate/breadth-baby-baby-wipe-dispensers.webp",
+      "bytes": 43606,
+      "sha256": "f8488c03fb3d8a93de24b371dddb882f819e9a6e90b487ca2c05686f235ab79b"
+    },
+    {
+      "site": "baby",
+      "familySlug": "bath-toy-organizers",
+      "familyName": "Bath toy organizers",
+      "asin": "B0D3XCK7JG",
+      "file": "/images/affiliate/breadth-baby-bath-toy-organizers.webp",
+      "bytes": 43382,
+      "sha256": "b9d1fc71403d01b36c073f64e08e683876a45cbbc6114a47b46dcff3a83e8d6d"
+    },
+    {
+      "site": "baby",
+      "familySlug": "bathtub-spout-covers",
+      "familyName": "Bathtub spout covers",
+      "asin": "B0CW2ZY3RN",
+      "file": "/images/affiliate/breadth-baby-bathtub-spout-covers.webp",
+      "bytes": 44080,
+      "sha256": "2a97f9c62d924e6c04c0a645bad4fd1327367b42f5db7a5b85660ebcf6bad3f3"
+    },
+    {
+      "site": "baby",
+      "familySlug": "breast-milk-storage-bags",
+      "familyName": "Breast milk storage bags",
+      "asin": "B00P84V1VK",
+      "file": "/images/affiliate/breadth-baby-breast-milk-storage-bags.webp",
+      "bytes": 46120,
+      "sha256": "f8ceb9b90fe1972892cec95b3c04698e6b9cab4082011d1c8dd65f8f6bdecd8f"
+    },
+    {
+      "site": "baby",
+      "familySlug": "childproof-corner-guards",
+      "familyName": "Childproof corner guards",
+      "asin": "B0F6ML8RFW",
+      "file": "/images/affiliate/breadth-baby-childproof-corner-guards.webp",
+      "bytes": 44546,
+      "sha256": "67a9c05a9b5b9a645b660b6f18374ef279b0a3d322148f2cfafee55c5e6f15fe"
+    },
+    {
+      "site": "baby",
+      "familySlug": "childproof-door-knob-covers",
+      "familyName": "Childproof door knob covers",
+      "asin": "B0DK1KZ9RQ",
+      "file": "/images/affiliate/breadth-baby-childproof-door-knob-covers.webp",
+      "bytes": 45114,
+      "sha256": "e77b71197bdfaa0b6756ff869f27833cb25d6d2cf0079ce6fecbe270c29d5f7e"
+    },
+    {
+      "site": "baby",
+      "familySlug": "childproof-outlet-covers",
+      "familyName": "Childproof outlet covers",
+      "asin": "B01N7H7J47",
+      "file": "/images/affiliate/breadth-baby-childproof-outlet-covers.webp",
+      "bytes": 45920,
+      "sha256": "3284e80d6cf5d9634456a0ef1969cb9ef64757b26eb26262c5395ae2025930f1"
+    },
+    {
+      "site": "baby",
+      "familySlug": "childproof-refrigerator-locks",
+      "familyName": "Childproof refrigerator locks",
+      "asin": "B0B5VPJ4MD",
+      "file": "/images/affiliate/breadth-baby-childproof-refrigerator-locks.webp",
+      "bytes": 45604,
+      "sha256": "8f2d7e91912bdee502e8084e7ec0ddb2e2f8bacb2a37e51973d2b342aed8f63b"
+    },
+    {
+      "site": "baby",
+      "familySlug": "childproof-stove-knob-covers",
+      "familyName": "Childproof stove knob covers",
+      "asin": "B0GTT22D4M",
+      "file": "/images/affiliate/breadth-baby-childproof-stove-knob-covers.webp",
+      "bytes": 45370,
+      "sha256": "54c96ad0fcbf6a0b1a7c415ef617dcefd889648380682d3670a782acc6fb3f0c"
+    },
+    {
+      "site": "baby",
+      "familySlug": "childproof-toilet-locks",
+      "familyName": "Childproof toilet locks",
+      "asin": "B0DK87X7ZD",
+      "file": "/images/affiliate/breadth-baby-childproof-toilet-locks.webp",
+      "bytes": 43652,
+      "sha256": "9e1ebff99ffde0cae13f13697b050e5e267447d8d0c163e98306cad401180780"
+    },
+    {
+      "site": "baby",
+      "familySlug": "crib-mobiles",
+      "familyName": "Crib mobiles",
+      "asin": "B0GTTJX9Z9",
+      "file": "/images/affiliate/breadth-baby-crib-mobiles.webp",
+      "bytes": 42188,
+      "sha256": "da777e062ace78ce661ef64cbeaa9ee81e8dc1e2997951eb5bff6c4109c617b5"
+    },
+    {
+      "site": "baby",
+      "familySlug": "formula-mixing-pitchers",
+      "familyName": "Formula mixing pitchers",
+      "asin": "B0B2KTYW3F",
+      "file": "/images/affiliate/breadth-baby-formula-mixing-pitchers.webp",
+      "bytes": 46760,
+      "sha256": "6cb75ab7a7e0a053bf6cb79133b2ebfcaf2043c1739da2c6632821bfb0098896"
+    },
+    {
+      "site": "baby",
+      "familySlug": "furniture-anchor-kits",
+      "familyName": "Furniture anchor kits",
+      "asin": "B08C7T7L95",
+      "file": "/images/affiliate/breadth-baby-furniture-anchor-kits.webp",
+      "bytes": 44626,
+      "sha256": "34d1a3c994ddd20241276d6072b6b2eaf3526c76ea62b25db32bbea572f5b730"
+    },
+    {
+      "site": "baby",
+      "familySlug": "high-chair-floor-mats",
+      "familyName": "High-chair floor mats",
+      "asin": "B0DHSYPX6T",
+      "file": "/images/affiliate/breadth-baby-high-chair-floor-mats.webp",
+      "bytes": 44116,
+      "sha256": "542793ef9bf818d75e0bbb4352f38dd91ed07f62bf47a3ee956b58f2f33ea213"
+    },
+    {
+      "site": "baby",
+      "familySlug": "nursery-blackout-curtains",
+      "familyName": "Nursery blackout curtains",
+      "asin": "B0GDZLZGBK",
+      "file": "/images/affiliate/breadth-baby-nursery-blackout-curtains.webp",
+      "bytes": 44300,
+      "sha256": "97758753b3212b3b050ee21fe17c655bae52aa148a150cf73d981502a98f2984"
+    },
+    {
+      "site": "baby",
+      "familySlug": "nursing-covers",
+      "familyName": "Nursing covers",
+      "asin": "B0CB15QFNL",
+      "file": "/images/affiliate/breadth-baby-nursing-covers.webp",
+      "bytes": 42956,
+      "sha256": "845ada10262408ff1c62857bdb2c3da48e0f83d91a82e35786d8c9557d1a0f43"
+    },
+    {
+      "site": "baby",
+      "familySlug": "nursing-pillows",
+      "familyName": "Nursing pillows",
+      "asin": "B08J54C2Y8",
+      "file": "/images/affiliate/breadth-baby-nursing-pillows.webp",
+      "bytes": 44274,
+      "sha256": "d9bcd48bbddec0af340a67c4fc76ea3e9aabce5404499c78faa7aec3e52709cf"
+    },
+    {
+      "site": "baby",
+      "familySlug": "portable-changing-mats",
+      "familyName": "Portable changing mats",
+      "asin": "B0CM9ZDFT7",
+      "file": "/images/affiliate/breadth-baby-portable-changing-mats.webp",
+      "bytes": 43968,
+      "sha256": "5cfff1a54a3bb2439ea31806e9330b431f860f767c673edc10a8ff9f6094fe6a"
+    },
+    {
+      "site": "baby",
+      "familySlug": "potty-training-seats",
+      "familyName": "Potty training seats",
+      "asin": "B0CQZS53HL",
+      "file": "/images/affiliate/breadth-baby-potty-training-seats.webp",
+      "bytes": 43924,
+      "sha256": "4e0abe337a8c74eddcb61ed48fcfe2b84b78c4c622011b3e896c552599bb5f5d"
+    },
+    {
+      "site": "baby",
+      "familySlug": "powder-formula-dispensers",
+      "familyName": "Powder formula dispensers",
+      "asin": "B0BC1Z8ZH8",
+      "file": "/images/affiliate/breadth-baby-powder-formula-dispensers.webp",
+      "bytes": 46294,
+      "sha256": "fce8f6bac65e517767b42a795d7405ab25500bf7e7da83f96cdb9c8586e5c3f3"
+    },
+    {
+      "site": "baby",
+      "familySlug": "reusable-baby-food-pouches",
+      "familyName": "Reusable baby food pouches",
+      "asin": "B095L8KDT7",
+      "file": "/images/affiliate/breadth-baby-reusable-baby-food-pouches.webp",
+      "bytes": 45038,
+      "sha256": "5673e3d223c6e8424d4865431ee175aae523f63872f68b0991a271019b17a294"
+    },
+    {
+      "site": "baby",
+      "familySlug": "silicone-feeding-placemats",
+      "familyName": "Silicone feeding placemats",
+      "asin": "B0GT4Y3RVV",
+      "file": "/images/affiliate/breadth-baby-silicone-feeding-placemats.webp",
+      "bytes": 44672,
+      "sha256": "60515c7dd9cad08f65c3085fd3a87c2bbb13e7e584d9a9c11cef2e2a77bfdf8f"
+    },
+    {
+      "site": "baby",
+      "familySlug": "stroller-cup-holders",
+      "familyName": "Stroller cup holders",
+      "asin": "B07D6834FL",
+      "file": "/images/affiliate/breadth-baby-stroller-cup-holders.webp",
+      "bytes": 42738,
+      "sha256": "920077ea2c150e89cfbc14ff7770ceff459b1df5d5202c617250e04c5646dbd3"
+    },
+    {
+      "site": "baby",
+      "familySlug": "stroller-footmuffs",
+      "familyName": "Stroller footmuffs",
+      "asin": "B0BCC1ZLS3",
+      "file": "/images/affiliate/breadth-baby-stroller-footmuffs.webp",
+      "bytes": 44952,
+      "sha256": "e8dd0eacc64dd4701ac90971912398565712d4dd679ea548eb4f04e147b2373a"
+    },
+    {
+      "site": "baby",
+      "familySlug": "stroller-rain-covers",
+      "familyName": "Stroller rain covers",
+      "asin": "B08K75WMWR",
+      "file": "/images/affiliate/breadth-baby-stroller-rain-covers.webp",
+      "bytes": 44050,
+      "sha256": "2170c91e8d9a1bbe176c76e7b5afbe1bbeff28064ef2f23c77648caaf6d1ff30"
+    },
+    {
+      "site": "baby",
+      "familySlug": "suction-toddler-bowls",
+      "familyName": "Suction toddler bowls",
+      "asin": "B0FRZN3DTR",
+      "file": "/images/affiliate/breadth-baby-suction-toddler-bowls.webp",
+      "bytes": 43642,
+      "sha256": "0d7e2710c1e6b6aac2818e58c52376982298ff797d7fcf858657b2f8dcd5b6b1"
+    },
+    {
+      "site": "baby",
+      "familySlug": "toddler-snack-containers",
+      "familyName": "Toddler snack containers",
+      "asin": "B0B3M1Q183",
+      "file": "/images/affiliate/breadth-baby-toddler-snack-containers.webp",
+      "bytes": 45338,
+      "sha256": "cf948c2be610f4ff44ef87d5d65fd3e106cf43a74c5b3a2f4ee2991e8c6bd206"
+    },
+    {
+      "site": "baby",
+      "familySlug": "toddler-step-stools",
+      "familyName": "Toddler step stools",
+      "asin": "B0C614CYDN",
+      "file": "/images/affiliate/breadth-baby-toddler-step-stools.webp",
+      "bytes": 42388,
+      "sha256": "23f040a80b2e1d5368ee581070923e718da13b339052a7bd1b36e87339d18473"
+    },
+    {
+      "site": "baby",
+      "familySlug": "toddler-straw-cups",
+      "familyName": "Toddler straw cups",
+      "asin": "B0GWM9TP74",
+      "file": "/images/affiliate/breadth-baby-toddler-straw-cups.webp",
+      "bytes": 43444,
+      "sha256": "539ef09f06ad6345c10e02142917a2f4107bb97a5e0516b8cb6c30b11d07650e"
+    },
+    {
+      "site": "baby",
+      "familySlug": "toddler-training-utensils",
+      "familyName": "Toddler training utensils",
+      "asin": "B08GJ19G62",
+      "file": "/images/affiliate/breadth-baby-toddler-training-utensils.webp",
+      "bytes": 44382,
+      "sha256": "c65ea471fdcbaa6b920cb5882372c89b2a975ca17a05e0e8d88a474a2c02c924"
+    },
+    {
+      "site": "pet",
+      "familySlug": "dog-backpacks",
+      "familyName": "Dog backpacks",
+      "asin": "B0DKJN4XL6",
+      "file": "/images/affiliate/breadth-pet-dog-backpacks.webp",
+      "bytes": 73398,
+      "sha256": "3443d26073b93db8459a082e361ab620685bd5a18517843c35b0ae310a35b2f5"
+    },
+    {
+      "site": "pet",
+      "familySlug": "dog-bicycle-baskets",
+      "familyName": "Dog bicycle baskets",
+      "asin": "B089HT2RDW",
+      "file": "/images/affiliate/breadth-pet-dog-bicycle-baskets.webp",
+      "bytes": 72100,
+      "sha256": "719e1ab4e70203b94a75af58a4fb9c7f85aa6a6d690873a94fdc85d9ba59d150"
+    },
+    {
+      "site": "pet",
+      "familySlug": "dog-bike-trailers",
+      "familyName": "Dog bike trailers",
+      "asin": "B0BW2FKJF1",
+      "file": "/images/affiliate/breadth-pet-dog-bike-trailers.webp",
+      "bytes": 71068,
+      "sha256": "96cc02919f4ff5d23b4a380520527d77c6a31acd5cba6c9578e1356d708873bb"
+    },
+    {
+      "site": "pet",
+      "familySlug": "hands-free-dog-leashes",
+      "familyName": "Hands-free dog leashes",
+      "asin": "B0F6WBB2WR",
+      "file": "/images/affiliate/breadth-pet-hands-free-dog-leashes.webp",
+      "bytes": 72496,
+      "sha256": "44b5cc0fb1f5617737d0e02b8ce88909c9b53414ea3a595ba57d44a7d82de85b"
+    },
+    {
+      "site": "pet",
+      "familySlug": "pet-stairs",
+      "familyName": "Pet stairs",
+      "asin": "B0H1YG58ZP",
+      "file": "/images/affiliate/breadth-pet-pet-stairs.webp",
+      "bytes": 70658,
+      "sha256": "6717ae10d8d51d74a806aa28d3133627cc1d8d4a7d6cc9c52660019232b55020"
+    },
+    {
+      "site": "pet",
+      "familySlug": "reflective-dog-harnesses",
+      "familyName": "Reflective dog harnesses",
+      "asin": "B0DXRTZ3X4",
+      "file": "/images/affiliate/breadth-pet-reflective-dog-harnesses.webp",
+      "bytes": 74034,
+      "sha256": "44531689decc1efc1ffa7e3315b266ad24b2dc9ba15278de22ed0c629dcc7b4d"
+    },
+    {
+      "site": "pet",
+      "familySlug": "cat-litter-disposal-systems",
+      "familyName": "Cat litter disposal systems",
+      "asin": "B0C7LRR4W4",
+      "file": "/images/affiliate/breadth-pet-cat-litter-disposal-systems.webp",
+      "bytes": 73446,
+      "sha256": "e6bf8421610cdf4eb49a6537f35946143756bd42c7303a298cea95a4ea18c87c"
+    },
+    {
+      "site": "pet",
+      "familySlug": "ceramic-pet-fountains",
+      "familyName": "Ceramic pet fountains",
+      "asin": "B0GVYM8MHM",
+      "file": "/images/affiliate/breadth-pet-ceramic-pet-fountains.webp",
+      "bytes": 72494,
+      "sha256": "272628168fddc68668eea9340d26341c53c045257b609ef6d9711351d1c3e000"
+    },
+    {
+      "site": "pet",
+      "familySlug": "collapsible-travel-pet-bowls",
+      "familyName": "Collapsible travel pet bowls",
+      "asin": "B07VT1468W",
+      "file": "/images/affiliate/breadth-pet-collapsible-travel-pet-bowls.webp",
+      "bytes": 72514,
+      "sha256": "9f3b565691f7bd0d331bde8dd2da6d1a4e2643032e6c58475c08cd5e2e74c0c0"
+    },
+    {
+      "site": "pet",
+      "familySlug": "covered-self-cleaning-litter-boxes",
+      "familyName": "Covered self-cleaning litter boxes",
+      "asin": "B0H3PQ8Q27",
+      "file": "/images/affiliate/breadth-pet-covered-self-cleaning-litter-boxes.webp",
+      "bytes": 75298,
+      "sha256": "538fcc5e27422f21bb206fa19d51c1bc194ba01936368b858983a7b6c8aa7a99"
+    },
+    {
+      "site": "pet",
+      "familySlug": "dog-boots",
+      "familyName": "Dog boots",
+      "asin": "B0GG9ZZCBC",
+      "file": "/images/affiliate/breadth-pet-dog-boots.webp",
+      "bytes": 72664,
+      "sha256": "659303e02d82e0c9a54aa691eb73124d61ede6c1f646209b1688b97f0ed975e9"
+    },
+    {
+      "site": "pet",
+      "familySlug": "dog-cooling-bandanas",
+      "familyName": "Dog cooling bandanas",
+      "asin": "B0C2HN8D3G",
+      "file": "/images/affiliate/breadth-pet-dog-cooling-bandanas.webp",
+      "bytes": 73556,
+      "sha256": "deba4ed1b23178ea32c66c50cfd76e31a2e93c28f4c7a8710a994145e391c196"
+    },
+    {
+      "site": "pet",
+      "familySlug": "dog-paw-washers",
+      "familyName": "Dog paw washers",
+      "asin": "B0GDV9K26M",
+      "file": "/images/affiliate/breadth-pet-dog-paw-washers.webp",
+      "bytes": 71622,
+      "sha256": "82e48628c3f42dbd9c8fba5e6c046c685d5b861450d4549708bd13dd24fd1e2a"
+    },
+    {
+      "site": "pet",
+      "familySlug": "dog-raincoats",
+      "familyName": "Dog raincoats",
+      "asin": "B0CPYNF77V",
+      "file": "/images/affiliate/breadth-pet-dog-raincoats.webp",
+      "bytes": 70722,
+      "sha256": "c8e38b170fedc5118f4eb1853ed6ee4bfbc501184ff10409e5cd9a90df619038"
+    },
+    {
+      "site": "pet",
+      "familySlug": "elevated-dog-bowls",
+      "familyName": "Elevated dog bowls",
+      "asin": "B0799Z9NH3",
+      "file": "/images/affiliate/breadth-pet-elevated-dog-bowls.webp",
+      "bytes": 74886,
+      "sha256": "3fc5bc5533b6b637910a8ecfb22deb1301869533cd09e5e766dfc4c88e56d901"
+    },
+    {
+      "site": "pet",
+      "familySlug": "gravity-pet-waterers",
+      "familyName": "Gravity pet waterers",
+      "asin": "B0GRJQMN32",
+      "file": "/images/affiliate/breadth-pet-gravity-pet-waterers.webp",
+      "bytes": 73118,
+      "sha256": "cdbec227aeb9ef239c8815382a96bcdfcf0a9898adbbdff648926a5fde2ad92d"
+    },
+    {
+      "site": "pet",
+      "familySlug": "no-pull-dog-harnesses",
+      "familyName": "No-pull dog harnesses",
+      "asin": "B07BGHY8Z6",
+      "file": "/images/affiliate/breadth-pet-no-pull-dog-harnesses.webp",
+      "bytes": 72874,
+      "sha256": "1a8e4f5dd23de5319bb744aed01c733ecab11374dab41cdf0b20bdc17fa393e1"
+    },
+    {
+      "site": "pet",
+      "familySlug": "stainless-steel-pet-fountains",
+      "familyName": "Stainless steel pet fountains",
+      "asin": "B0C8MHHVPC",
+      "file": "/images/affiliate/breadth-pet-stainless-steel-pet-fountains.webp",
+      "bytes": 74116,
+      "sha256": "1d438c49386cd0c38aa05247fa64801ab07caab0c8325c5caf06db9a5480127c"
+    },
+    {
+      "site": "pet",
+      "familySlug": "cat-litter-enclosures",
+      "familyName": "Cat litter box enclosures",
+      "asin": "B0D62ML81W",
+      "file": "/images/affiliate/breadth-pet-cat-litter-enclosures.webp",
+      "bytes": 73126,
+      "sha256": "e9596c4e666b7c28a8475855f1b641adced4d0e3fe5a57b48cf77c4d92c81716"
+    },
+    {
+      "site": "pet",
+      "familySlug": "cat-window-perches",
+      "familyName": "Cat window perches",
+      "asin": "B09ZCM83Q8",
+      "file": "/images/affiliate/breadth-pet-cat-window-perches.webp",
+      "bytes": 73192,
+      "sha256": "f76d696962b3042ebe68776692eff3f735f4a546108d9267a976c44448a6b369"
+    },
+    {
+      "site": "pet",
+      "familySlug": "cat-wall-shelves",
+      "familyName": "Cat wall shelves",
+      "asin": "B07KNJXWD3",
+      "file": "/images/affiliate/breadth-pet-cat-wall-shelves.webp",
+      "bytes": 70496,
+      "sha256": "b20ede234c8d2ae6728262157354e2ad36ea849b9ff35b8ce4a91987d9a7da0e"
+    },
+    {
+      "site": "pet",
+      "familySlug": "cat-exercise-wheels",
+      "familyName": "Cat exercise wheels",
+      "asin": "B0BL3L38CX",
+      "file": "/images/affiliate/breadth-pet-cat-exercise-wheels.webp",
+      "bytes": 72568,
+      "sha256": "74818063d16dba59f2611a486a1a1cc6a56e8d716167b99f272cf2bc8d37024e"
+    },
+    {
+      "site": "pet",
+      "familySlug": "cat-play-tunnels",
+      "familyName": "Cat play tunnels",
+      "asin": "B0DNJKFFX5",
+      "file": "/images/affiliate/breadth-pet-cat-play-tunnels.webp",
+      "bytes": 71440,
+      "sha256": "49d860c08730a83d1f5baa8a5c2a6089f8938f39d7288e2ee6ad4849c7397f62"
+    },
+    {
+      "site": "pet",
+      "familySlug": "pet-monitoring-cameras",
+      "familyName": "Pet monitoring cameras",
+      "asin": "B0F1TMFNLZ",
+      "file": "/images/affiliate/breadth-pet-pet-monitoring-cameras.webp",
+      "bytes": 74000,
+      "sha256": "028ecffaac714cda8515b90d9d0febf8f25a60975411cbe396bb5de2af619ab8"
+    },
+    {
+      "site": "pet",
+      "familySlug": "wireless-dog-doorbells",
+      "familyName": "Wireless dog doorbells",
+      "asin": "B073XD4XSD",
+      "file": "/images/affiliate/breadth-pet-wireless-dog-doorbells.webp",
+      "bytes": 73594,
+      "sha256": "5e566c2b570d6a245aa7b8b6e05a695a732d61f23374ac597fc81bc743d5accb"
+    },
+    {
+      "site": "pet",
+      "familySlug": "pet-food-storage-containers",
+      "familyName": "Pet food storage containers",
+      "asin": "B0002DJON4",
+      "file": "/images/affiliate/breadth-pet-pet-food-storage-containers.webp",
+      "bytes": 73934,
+      "sha256": "9309083d467cbe22f3ec3a7dc50c4894a24016e20dcba7a495cf2605c638e74c"
+    },
+    {
+      "site": "pet",
+      "familySlug": "hard-sided-pet-carriers",
+      "familyName": "Hard-sided pet carriers",
+      "asin": "B00OP6SVJW",
+      "file": "/images/affiliate/breadth-pet-hard-sided-pet-carriers.webp",
+      "bytes": 73894,
+      "sha256": "904cf612cc92507c0e7052bb75eeed4d121cb90866ee30f3b319f06393deb957"
+    },
+    {
+      "site": "pet",
+      "familySlug": "quick-dry-dog-towels",
+      "familyName": "Quick-dry dog towels",
+      "asin": "B0144B7LQQ",
+      "file": "/images/affiliate/breadth-pet-quick-dry-dog-towels.webp",
+      "bytes": 73984,
+      "sha256": "c5d450a63fa50d34ebf6fc794f4664075f083664c483f5e08a73e40f7c859d50"
+    },
+    {
+      "site": "pet",
+      "familySlug": "aquarium-canister-filters",
+      "familyName": "Aquarium canister filters",
+      "asin": "B07JH4JHTC",
+      "file": "/images/affiliate/breadth-pet-aquarium-canister-filters.webp",
+      "bytes": 73304,
+      "sha256": "3d2c9b9be3c0c575c03869f7f9336bafe9559c8c28fb583abda9262fba3a7ae8"
+    },
+    {
+      "site": "pet",
+      "familySlug": "aquarium-air-pumps",
+      "familyName": "Aquarium air pumps",
+      "asin": "B0009YJ4NG",
+      "file": "/images/affiliate/breadth-pet-aquarium-air-pumps.webp",
+      "bytes": 71426,
+      "sha256": "844fbb510767f7cfef72d5c28e430b7308d2b031c0544c1a3aa5eae5eaaac49d"
+    },
+    {
+      "site": "pet",
+      "familySlug": "aquarium-heaters",
+      "familyName": "Aquarium heaters",
+      "asin": "B003M7P9YU",
+      "file": "/images/affiliate/breadth-pet-aquarium-heaters.webp",
+      "bytes": 72660,
+      "sha256": "329c14e3df523fbbcbf48cac2e0d40db12d39166af829ea9eac9272a3dbae6e4"
+    },
+    {
+      "site": "pet",
+      "familySlug": "reptile-thermostat-controllers",
+      "familyName": "Reptile thermostat controllers",
+      "asin": "B08R29S2WB",
+      "file": "/images/affiliate/breadth-pet-reptile-thermostat-controllers.webp",
+      "bytes": 77472,
+      "sha256": "b2ec169ccd06ca93729ed62cb23f6b37cc9d11db55fb1c75e46771bcdd4741d1"
+    },
+    {
+      "site": "pet",
+      "familySlug": "airline-dog-crates",
+      "familyName": "Airline dog crates",
+      "asin": "B07HFK7K8T",
+      "file": "/images/affiliate/breadth-pet-airline-dog-crates.webp",
+      "bytes": 72716,
+      "sha256": "30271a5009ce7c01bf310da99bebc588133c0381e5b3d7a6e40a1ac1de151170"
+    },
+    {
+      "site": "pet",
+      "familySlug": "cat-grooming-gloves",
+      "familyName": "Cat grooming gloves",
+      "asin": "B09437VRHX",
+      "file": "/images/affiliate/breadth-pet-cat-grooming-gloves.webp",
+      "bytes": 72786,
+      "sha256": "da0f29126cad73372cf5b561ae25d24ae52831cd997f5dc25f4388f601ba8939"
+    },
+    {
+      "site": "pet",
+      "familySlug": "aquarium-led-lights",
+      "familyName": "Aquarium LED lights",
+      "asin": "B073TDV9CN",
+      "file": "/images/affiliate/breadth-pet-aquarium-led-lights.webp",
+      "bytes": 72724,
+      "sha256": "f8fe8867a9014b1c7eed22b24c501fbf78618d225bedf6cfb477307e2c61327e"
+    },
+    {
+      "site": "pet",
+      "familySlug": "portable-dog-water-bottles",
+      "familyName": "Portable dog water bottles",
+      "asin": "B07C79C5BT",
+      "file": "/images/affiliate/breadth-pet-portable-dog-water-bottles.webp",
+      "bytes": 73362,
+      "sha256": "8d913670826fcd0634a03878cafcb51c7561c18a971ea9fdba959ca81e77d00b"
+    },
+    {
+      "site": "pet",
+      "familySlug": "dog-bath-sprayers",
+      "familyName": "Dog bath sprayers",
+      "asin": "B0D9BJXSSF",
+      "file": "/images/affiliate/breadth-pet-dog-bath-sprayers.webp",
+      "bytes": 71836,
+      "sha256": "30ded727ad0c4945d5b067f3ed96be4707525d22a13961e5d98edb91aa2dd454"
+    }
+  ]
+}

@@ -7,7 +7,7 @@ import { BaseMarketEditionLinks } from "@/components/MarketExperience";
 import { SearchOpportunityBacklinks, SearchOpportunityBlock } from "@/components/SearchOpportunityBlock";
 import { StyleCollectionPage } from "@/components/StyleExperience";
 import { findProduct, findRoundup, siteGuides } from "@/lib/content";
-import { effectiveContentUpdatedAt, findSearchOpportunity } from "@/lib/search-opportunities";
+import { effectiveContentUpdatedAt, findSearchOpportunity, searchOpportunityMetaDescription } from "@/lib/search-opportunities";
 import { breadcrumbSchema, faqPageSchema, pageMetadata, roundupArticleSchema, roundupProductListSchema } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 import type { Product, SiteKey } from "@/lib/types";
@@ -168,7 +168,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const roundup = findRoundup(site.key, slug);
   if (!roundup) return {};
-  return pageMetadata(site, `/best/${slug}`, roundup.seoTitle ?? roundup.title, roundup.dek);
+  const searchOpportunity = findSearchOpportunity(site.key, "roundup", slug);
+  return pageMetadata(site, `/best/${slug}`, roundup.seoTitle ?? roundup.title, searchOpportunityMetaDescription(searchOpportunity, roundup.dek));
 }
 
 export default async function RoundupPage({ params }: { params: Promise<{ slug: string }> }) {

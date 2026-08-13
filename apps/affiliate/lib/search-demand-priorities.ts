@@ -1,3 +1,4 @@
+import { searchOpportunities, searchOpportunityPath } from "./search-opportunities";
 import type { SiteKey } from "./types";
 
 export type SearchDemandPriority = {
@@ -161,11 +162,22 @@ const priorities: Record<SiteKey, SearchDemandPriority[]> = {
 };
 
 export function siteSearchDemandPriorities(site: SiteKey) {
-  return priorities[site];
+  const expanded = [
+    ...priorities[site],
+    ...searchOpportunities
+      .filter((item) => item.site === site)
+      .map((item) => ({
+        path: searchOpportunityPath(item),
+        queryFamily: item.query,
+        decision: item.answer,
+      })),
+  ];
+
+  return expanded.filter((item, index) => expanded.findIndex((candidate) => candidate.path === item.path) === index);
 }
 
 export function prioritizeBySearchDemand<T>(site: SiteKey, items: T[], pathFor: (item: T) => string) {
-  const rank = new Map(priorities[site].map((item, index) => [item.path, index]));
+  const rank = new Map(siteSearchDemandPriorities(site).map((item, index) => [item.path, index]));
   return items
     .map((item, index) => ({ item, index, rank: rank.get(pathFor(item)) ?? Number.POSITIVE_INFINITY }))
     .sort((left, right) => left.rank - right.rank || left.index - right.index)

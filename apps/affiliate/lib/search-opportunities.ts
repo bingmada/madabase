@@ -1,4 +1,5 @@
 import { siteGuides, siteProducts, siteRoundups } from "./content";
+import { portfolioRankingOpportunities, portfolioRankingRefreshAt } from "./portfolio-ranking-opportunities";
 import type { SiteKey } from "./types";
 
 export type SearchOpportunityKind = "product" | "guide" | "roundup";
@@ -23,6 +24,7 @@ const updatedAt = "July 23, 2026";
 const decoClusterUpdatedAt = "July 28, 2026";
 const portfolioBatchUpdatedAt = "July 28, 2026";
 const cohortReviewUpdatedAt = "August 6, 2026";
+const rankingReviewUpdatedAt = "August 13, 2026";
 
 export const searchOpportunities: SearchOpportunity[] = [
   {
@@ -131,6 +133,7 @@ export const searchOpportunities: SearchOpportunity[] = [
     query: "Why is an Ethernet link stuck at 100 Mbps?",
     answer: "A 100 Mbps negotiation usually points to a damaged or two-pair cable, a 100 Mbps port, a bad wall termination, or adapter settings. Replace the shortest patch cable first, confirm both port specifications, then test the negotiated local link before blaming the internet plan.",
     updatedAt,
+    preferredPaths: ["/guides/home-ethernet-switch-guide", "/reviews/tp-link-tl-sg105-m2-2-5g-switch", "/guides/usb-c-ethernet-adapter-guide"],
   },
   {
     site: "baby",
@@ -148,6 +151,7 @@ export const searchOpportunities: SearchOpportunity[] = [
     query: "Is the Branch Ergonomic Chair a good fit, and what does its warranty cover?",
     answer: "The Branch chair is most convincing when its seat depth, arm range, and lumbar shape fit the actual user. Measure first and read the current residential warranty exclusions; a long warranty is useful only when the seller, usage type, and covered component match the claim.",
     updatedAt,
+    preferredPaths: ["/best/best-ergonomic-chairs-under-500", "/reviews/hon-ignition-2-0-chair", "/guides/ergonomic-kneeling-chairs-buying-guide"],
   },
   {
     site: "network",
@@ -165,6 +169,7 @@ export const searchOpportunities: SearchOpportunity[] = [
     query: "Which air purifier is the best fit for a pet home?",
     answer: "Choose by room size at a realistic fan speed, replacement-filter cost, washable prefilter access, and odor expectations. Levoit favors app control and a pet-oriented intake, Coway favors a simple proven layout, and Winix adds its own control and filtration trade-offs.",
     updatedAt,
+    preferredPaths: ["/reviews/levoit-vital-200s-p-air-purifier", "/best/levoit-vital-200s-p-vs-shark-neverchange-max", "/guides/air-purifier-placement-near-litter-box"],
   },
   {
     site: "smarthome",
@@ -182,6 +187,7 @@ export const searchOpportunities: SearchOpportunity[] = [
     query: "Does ASUS ZenWiFi BT6 provide 2.5GbE for both WAN and Ethernet backhaul?",
     answer: "ASUS's US specifications list one 2.5GbE WAN port and three 1GbE LAN ports on each BT6 unit. Choose BT6 for ASUS controls and tri-band Wi-Fi 7, but draw the WAN and Ethernet-backhaul path first; do not assume that a second multi-gig Ethernet port remains available.",
     updatedAt: portfolioBatchUpdatedAt,
+    preferredPaths: ["/best/best-mesh-wifi-for-apartments-and-homes", "/guides/mesh-wifi-node-placement-guide", "/guides/wifi-7-vs-wifi-6-guide"],
   },
   {
     site: "smarthome",
@@ -199,6 +205,7 @@ export const searchOpportunities: SearchOpportunity[] = [
     query: "Which PETLIBRO Granary size and portion setting should you choose?",
     answer: "Confirm whether the listing is the 3L or 5L model and weigh several real dispenses of the pet's kibble. PETLIBRO portions are volumetric, so capacity and portion count should be set from the food, feeding schedule, and backup-power needs rather than the family name.",
     updatedAt,
+    preferredPaths: ["/guides/automatic-feeder-portion-size-guide", "/guides/automatic-feeder-cleaning-checklist", "/reviews/petlibro-one-rfid-smart-feeder"],
   },
   {
     site: "smarthome",
@@ -207,6 +214,7 @@ export const searchOpportunities: SearchOpportunity[] = [
     query: "Can eufy E340 work without a subscription?",
     answer: "E340 can use local storage without a required monthly plan when paired with the supported storage path. Confirm what storage hardware is included, which AI or history features remain local, and whether the dual-camera view solves the actual package-area blind spot.",
     updatedAt,
+    preferredPaths: ["/guides/eufy-e340-local-storage-and-homebase-guide", "/best/eufy-e340-vs-tapo-d210", "/guides/video-doorbell-battery-storage-subscription-guide"],
   },
   {
     site: "smarthome",
@@ -251,6 +259,7 @@ export const searchOpportunities: SearchOpportunity[] = [
     query: "Is a 48×24 ErGear standing desk large enough for a small office?",
     answer: "A 48×24 top can work for one monitor or a compact dual-screen layout when the keyboard, arm clamp, wall clearance, and walking path are measured together. Skip it when large speakers, deep monitor stands, or paper-heavy work need more depth.",
     updatedAt,
+    preferredPaths: ["/best/ergear-48x24-vs-flexispot-e7-mini", "/best/best-standing-desks-for-small-spaces", "/guides/48-vs-55-inch-desk-guide"],
   },
   {
     site: "pet",
@@ -259,6 +268,7 @@ export const searchOpportunities: SearchOpportunity[] = [
     query: "Levoit Vital 200S-P or Shark NeverChange MAX for pets?",
     answer: "Levoit is easier to justify when a washable prefilter, app controls, and conventional replacement filters fit the routine. Shark's long-life-filter proposition is attractive only after checking the exact model, room size, odor expectations, and what its filter-life claim excludes.",
     updatedAt,
+    preferredPaths: ["/reviews/levoit-vital-200s-p-air-purifier", "/best/coway-mighty2-vs-winix-5510-vs-levoit-vital-200s", "/guides/levoit-vital-200s-p-filter-cost-and-maintenance"],
   },
   {
     site: "pet",
@@ -267,7 +277,7 @@ export const searchOpportunities: SearchOpportunity[] = [
     query: "Is PETLIBRO One RFID suitable for a multi-cat home?",
     answer: "It helps when one tagged pet needs controlled access to dry food, but each pet's behavior, collar-tag tolerance, bowl guarding, and portion plan still need testing. Compare it with an implanted-microchip feeder when relying on a removable collar tag is the main concern.",
     updatedAt,
-    preferredPaths: ["/guides/rfid-feeder-vs-microchip-feeder-guide"],
+    preferredPaths: ["/guides/rfid-feeder-vs-microchip-feeder-guide", "/guides/automatic-feeder-portion-size-guide", "/reviews/petlibro-granary-automatic-cat-feeder"],
   },
   {
     site: "network",
@@ -276,6 +286,7 @@ export const searchOpportunities: SearchOpportunity[] = [
     query: "How do you troubleshoot repeated Deco mesh connection drops?",
     answer: "First identify whether the client, satellite, local LAN, DNS, modem, or internet path is dropping. Then update firmware, test a wired client, move the satellite closer, remove suspect loops, and change only one variable before measuring again.",
     updatedAt,
+    preferredPaths: ["/guides/mesh-wifi-node-placement-guide", "/guides/deco-be63-ethernet-backhaul-setup", "/reviews/tp-link-deco-be63-wifi-7-mesh"],
   },
   {
     site: "pet",
@@ -284,6 +295,7 @@ export const searchOpportunities: SearchOpportunity[] = [
     query: "Where should an air purifier be placed near a litter box?",
     answer: "Place it close enough to capture airborne dust and odor without aiming strong airflow directly across the litter. Leave the manufacturer's intake and outlet clear, avoid a damp or dirty corner, and keep the unit accessible for prefilter cleaning.",
     updatedAt,
+    preferredPaths: ["/reviews/levoit-vital-200s-p-air-purifier", "/best/coway-mighty2-vs-winix-5510-vs-levoit-vital-200s", "/guides/levoit-vital-200s-p-filter-cost-and-maintenance"],
   },
   {
     site: "homeoffice",
@@ -292,14 +304,16 @@ export const searchOpportunities: SearchOpportunity[] = [
     query: "Is Ergotron HX the right monitor arm for a walking desk?",
     answer: "HX is appropriate for a heavy display that falls inside the exact weight, VESA, and size limits, provided the desk edge can support the clamp. A lighter screen may be harder to balance, and walking vibration still depends on the desk frame and mounting point.",
     updatedAt,
+    preferredPaths: ["/best/best-walking-pad-and-monitor-arm-setup", "/guides/single-vs-dual-monitor-arm-walking-desk", "/guides/walking-pad-speed-monitor-stability-guide"],
   },
   {
     site: "smarthome",
     kind: "roundup",
     slug: "ultraloq-bolt-se-vs-aqara-u400",
-    query: "ULTRALOQ Bolt SE or Aqara U400?",
+    query: "ULTRALOQ Bolt SE or Aqara U400: which smart lock fits the door and ecosystem?",
     answer: "Choose Bolt SE when straightforward fingerprint access and its ecosystem fit matter most. Choose U400 when its newer entry methods and Aqara/Matter direction solve a real need, after verifying door fit, hub requirements, fallback entry, and region-specific feature support.",
     updatedAt,
+    preferredPaths: ["/reviews/ultraloq-bolt-se-smart-lock", "/reviews/aqara-smart-lock-u400", "/guides/smart-lock-door-fit-hub-compatibility"],
   },
   {
     site: "baby",
@@ -317,6 +331,7 @@ export const searchOpportunities: SearchOpportunity[] = [
     query: "eufy E340 or Tapo D210 for local video storage?",
     answer: "E340 is strongest when dual-camera package coverage and the chosen eufy storage path matter. D210 is the better fit when Tapo integration, its power arrangement, and a simpler purchase price solve the job; verify included chime, storage, and subscription boundaries.",
     updatedAt,
+    preferredPaths: ["/reviews/eufy-video-doorbell-e340", "/reviews/tapo-d210-video-doorbell", "/guides/video-doorbell-battery-storage-subscription-guide"],
   },
   {
     site: "baby",
@@ -325,6 +340,7 @@ export const searchOpportunities: SearchOpportunity[] = [
     query: "How much fits in Dr. Brown's sterilizer dryer, and does it dry fully?",
     answer: "Capacity depends on bottle shape, pump parts, and how airflow can move between items—not just the bottle count. Load the family's largest normal cycle on paper, confirm the drying program, and expect tightly nested parts to need repositioning or extra drying time.",
     updatedAt,
+    preferredPaths: ["/best/best-bottle-sterilizers-and-dryers", "/guides/bottle-washer-vs-sterilizer-vs-dryer-guide", "/guides/bottle-sterilizer-dryer-for-twins-capacity-guide"],
   },
   {
     site: "homeoffice",
@@ -333,6 +349,7 @@ export const searchOpportunities: SearchOpportunity[] = [
     query: "What monitor-arm setup stays stable with a walking pad?",
     answer: "Stability comes from a rigid desk frame, a clamp placed near strong structure, a correctly tensioned arm, and a walking speed that does not transmit excessive vibration. Choose the arm only after measuring monitor weight, VESA pattern, desktop thickness, and cable travel.",
     updatedAt,
+    preferredPaths: ["/reviews/ergotron-hx-monitor-arm", "/guides/single-vs-dual-monitor-arm-walking-desk", "/guides/walking-pad-speed-monitor-stability-guide"],
   },
   {
     site: "smarthome",
@@ -341,6 +358,7 @@ export const searchOpportunities: SearchOpportunity[] = [
     query: "Tapo P110M or P125M: which one has energy monitoring and Matter?",
     answer: "Model and region determine the answer, so match the full suffix on the live listing. Buy for the required plug shape, load limit, energy data, and Matter support rather than assuming every P110M or P125M listing exposes the same combination.",
     updatedAt,
+    preferredPaths: ["/reviews/tapo-p125m-matter-smart-plug", "/reviews/tapo-p110m-energy-monitoring-smart-plug", "/guides/tapo-p110m-home-assistant-energy-monitoring"],
   },
   {
     site: "pet",
@@ -349,6 +367,7 @@ export const searchOpportunities: SearchOpportunity[] = [
     query: "What does a Levoit Vital 200S-P cost to maintain?",
     answer: "Budget official compatible replacement filters at the household's actual dust, hair, and odor load, and clean the washable prefilter regularly. Do not treat the indicator as a laboratory measurement; inspect airflow, odor, dust buildup, and filter condition.",
     updatedAt,
+    preferredPaths: ["/reviews/levoit-vital-200s-p-air-purifier", "/best/coway-mighty2-vs-winix-5510-vs-levoit-vital-200s", "/guides/air-purifier-placement-near-litter-box"],
   },
   {
     site: "pet",
@@ -357,7 +376,7 @@ export const searchOpportunities: SearchOpportunity[] = [
     query: "RFID collar feeder or implanted-microchip feeder?",
     answer: "A collar-tag feeder is easier when the pet reliably wears the supplied tag. An implanted-microchip feeder avoids a removable tag but must support the pet's chip and access behavior; compare bowl access, training, power, cleaning, and failure fallback.",
     updatedAt,
-    preferredPaths: ["/reviews/petlibro-one-rfid-smart-feeder"],
+    preferredPaths: ["/reviews/petlibro-one-rfid-smart-feeder", "/reviews/petlibro-granary-automatic-cat-feeder", "/guides/automatic-feeder-cleaning-checklist"],
   },
   {
     site: "homeoffice",
@@ -366,6 +385,7 @@ export const searchOpportunities: SearchOpportunity[] = [
     query: "Will the Amazon Basics gas-spring arm fit a 27-inch monitor?",
     answer: "Screen size alone is not enough. Confirm the exact arm's weight range, VESA pattern, clamp or grommet range, desk edge, and monitor center of gravity; a 27-inch display outside the weight range will not balance safely.",
     updatedAt,
+    preferredPaths: ["/guides/single-vs-dual-monitor-arm-walking-desk", "/best/best-walking-pad-and-monitor-arm-setup", "/guides/walking-pad-desk-measurement-checklist"],
   },
   {
     site: "network",
@@ -374,6 +394,7 @@ export const searchOpportunities: SearchOpportunity[] = [
     query: "How should Deco BE63 multi-gig ports be assigned?",
     answer: "Assign the fastest required path first—WAN, wired backhaul, switch uplink, NAS, or workstation—then map every remaining hop. A fast Deco port cannot create multi-gig performance when the modem, switch, cable, or client negotiates more slowly.",
     updatedAt,
+    preferredPaths: ["/reviews/tp-link-deco-be63-wifi-7-mesh", "/guides/deco-be63-ethernet-backhaul-setup", "/best/tp-link-deco-be67-vs-be63"],
   },
   {
     site: "network",
@@ -382,6 +403,7 @@ export const searchOpportunities: SearchOpportunity[] = [
     query: "Should you buy a USB-C Ethernet adapter or a full dock?",
     answer: "Buy the adapter when reliable Ethernet is the only missing port. Buy a dock when displays, charging, storage, and peripherals must share one connection, after verifying host USB-C capabilities, power delivery, display limits, and Ethernet speed.",
     updatedAt,
+    preferredPaths: ["/reviews/tp-link-ue302c-2-5g-usb-c-ethernet-adapter", "/best/tp-link-ue302c-vs-sabrent-nt-25ga", "/guides/ethernet-stuck-at-100-mbps-guide"],
   },
   {
     site: "homeoffice",
@@ -390,6 +412,7 @@ export const searchOpportunities: SearchOpportunity[] = [
     query: "Single or dual monitor arms for a walking desk?",
     answer: "Separate single arms usually allow more independent placement and can spread clamp load; a dual arm is tidier but concentrates weight and movement. Measure both monitors, desk structure, clamp spacing, and cable travel before choosing.",
     updatedAt,
+    preferredPaths: ["/best/best-walking-pad-and-monitor-arm-setup", "/reviews/amazon-basics-monitor-arm", "/guides/walking-pad-desk-measurement-checklist"],
   },
   {
     site: "homeoffice",
@@ -398,6 +421,7 @@ export const searchOpportunities: SearchOpportunity[] = [
     query: "What should you measure before adding a walking pad under a desk?",
     answer: "Measure desk height range, pad width and length, belt area, rear clearance, step-on space, chair storage, cable paths, and monitor movement. The setup must still reach a neutral typing height when standing on the pad.",
     updatedAt,
+    preferredPaths: ["/best/best-walking-pad-and-monitor-arm-setup", "/guides/walking-pad-speed-monitor-stability-guide", "/guides/single-vs-dual-monitor-arm-walking-desk"],
   },
   {
     site: "homeoffice",
@@ -406,6 +430,7 @@ export const searchOpportunities: SearchOpportunity[] = [
     query: "How fast can you walk without making the monitor shake?",
     answer: "There is no universal speed: desk rigidity, floor, stride, monitor mass, and arm tension all matter. Start slowly, type a real task, watch the display edge, then change one variable at a time before increasing speed.",
     updatedAt,
+    preferredPaths: ["/best/best-walking-pad-and-monitor-arm-setup", "/guides/walking-pad-desk-measurement-checklist", "/reviews/ergotron-hx-monitor-arm"],
   },
   {
     site: "network",
@@ -414,6 +439,7 @@ export const searchOpportunities: SearchOpportunity[] = [
     query: "When does a cable modem need a 2.5GbE port?",
     answer: "A 2.5GbE modem port matters when the provisioned plan can exceed gigabit or when the ISP overprovisions above a 1GbE link. The router WAN port, cable, and service tier must all support the same path.",
     updatedAt,
+    preferredPaths: ["/reviews/arris-surfboard-s33-cable-modem", "/best/best-cable-modems-for-xfinity-spectrum-cox", "/guides/modem-router-combo-vs-separate-modem-router-guide"],
   },
   {
     site: "pet",
@@ -491,9 +517,9 @@ export const searchOpportunities: SearchOpportunity[] = [
     site: "smarthome",
     kind: "guide",
     slug: "tapo-p110m-home-assistant-energy-monitoring",
-    query: "Why are Tapo P110M power or energy entities missing in Home Assistant?",
-    answer: "Check which integration path added the plug, its firmware, and the entities exposed by the current Home Assistant release. The TP-Link integration may expose vendor-specific power and energy data, while a Matter connection can present a different entity set. Verify the real entities before creating dashboards or automations instead of assuming both paths are identical.",
-    updatedAt: portfolioBatchUpdatedAt,
+    query: "How do you add Tapo P110M to Home Assistant and keep energy monitoring?",
+    answer: "Add the exact P110M through one primary path first: the Home Assistant TP-Link integration or Matter. Then check current power, accumulated energy, units, update interval and history before building an automation. P110, P110M and P115 are region- and model-specific names, so confirm the exact plug and current integration support instead of assuming their entity sets are identical.",
+    updatedAt: rankingReviewUpdatedAt,
     preferredPaths: ["/reviews/tapo-p110m-energy-monitoring-smart-plug", "/guides/tapo-p110m-matter-vs-tapo-integration", "/guides/tapo-p125m-vs-p110m", "/best/best-tapo-matter-smart-plug-for-energy-or-compact-control", "/guides/tapo-p110m-aqara-hub-m3-pairing"],
   },
   {
@@ -674,6 +700,7 @@ export const searchOpportunities: SearchOpportunity[] = [
     query: "What fits in a Loungefly Mickey Mouse mini backpack?",
     answer: "Use the listed exterior dimensions only as a starting point: the zipper opening, lining, front pocket, and structured shape reduce usable volume. Compare the actual daily carry list and strap range before buying it as more than an occasional statement bag.",
     updatedAt,
+    preferredPaths: ["/guides/loungefly-mini-backpack-vs-full-size-for-park-day", "/guides/loungefly-faux-leather-rain-and-care-guide", "/reviews/loungefly-minnie-mouse-bow-mini-backpack"],
   },
   {
     site: "baby",
@@ -682,6 +709,7 @@ export const searchOpportunities: SearchOpportunity[] = [
     query: "What sterilizer-dryer capacity is practical for twins?",
     answer: "Count the family's largest real cycle—bottles, collars, nipples, pump parts, and pacifiers—and leave airflow around each item. For twins, cycle time and drying reliability usually matter more than a headline bottle count.",
     updatedAt,
+    preferredPaths: ["/reviews/dr-browns-all-in-one-sterilizer-dryer", "/best/best-bottle-sterilizers-and-dryers", "/guides/bottle-washer-vs-sterilizer-vs-dryer-guide"],
   },
   {
     site: "network",
@@ -699,6 +727,7 @@ export const searchOpportunities: SearchOpportunity[] = [
     query: "How do you choose a cat water fountain?",
     answer: "Choose from reservoir size, material, pump access, filter availability, noise, cleaning time, and the cat's drinking behavior. Keep a separate fresh-water bowl during the transition and confirm that replacement parts remain available.",
     updatedAt,
+    preferredPaths: ["/reviews/catit-flower-cat-water-fountain", "/guides/cat-fountain-filter-replacement-guide", "/guides/automatic-feeder-cleaning-checklist"],
   },
   {
     site: "style",
@@ -707,6 +736,7 @@ export const searchOpportunities: SearchOpportunity[] = [
     query: "Are Betsey Johnson cupcake mismatch earrings comfortable for repeat wear?",
     answer: "Comfort depends on the listed length, weight, closure, and the wearer's sensitivity more than the motif. Compare the dimensions with an owned pair, inspect the finish and seller during the return window, and let the earrings remain the outfit's focal point.",
     updatedAt,
+    preferredPaths: ["/best/best-betsey-johnson-mismatched-earrings", "/guides/statement-earring-size-weight-closure-guide", "/reviews/betsey-johnson-moon-star-drop-earrings"],
   },
   {
     site: "network",
@@ -793,9 +823,9 @@ export const searchOpportunities: SearchOpportunity[] = [
     site: "homeoffice",
     kind: "product",
     slug: "caldigit-ts4-thunderbolt-dock",
-    query: "Is CalDigit TS4 worth it for two monitors and a desk full of peripherals?",
-    answer: "TS4 is easiest to justify when its broad port mix, charging, Ethernet, card readers, audio, and single-cable desk role replace several adapters. It cannot override the host computer's native display limits. Map the exact computer, two displays, resolution and refresh targets, charging requirement, and every peripheral before paying for ports that may remain unused.",
-    updatedAt: cohortReviewUpdatedAt,
+    query: "Can CalDigit TS4 run two monitors on a Mac?",
+    answer: "Only when the exact Mac model and chip support the required native external displays. TS4 provides DisplayPort plus downstream Thunderbolt or USB-C video paths, but it does not use DisplayLink to override a base Mac's native display limit. Check CalDigit's current compatibility table, then map both monitor inputs, resolution, refresh rate, cable or adapter path, and DSC support before buying.",
+    updatedAt: rankingReviewUpdatedAt,
     preferredPaths: ["/guides/macbook-dual-monitor-dock-chip-compatibility-guide", "/best/best-dual-monitor-docks-mac-windows", "/reviews/plugable-tbt4-ud5-thunderbolt-dock", "/reviews/anker-675-usb-c-docking-station", "/guides/usb-c-dock-ports-explained-guide"],
   },
   {
@@ -879,6 +909,7 @@ export const searchOpportunities: SearchOpportunity[] = [
     updatedAt: cohortReviewUpdatedAt,
     preferredPaths: ["/guides/leak-sensor-to-water-shutoff-automation-guide", "/guides/water-leak-sensor-placement-guide", "/best/best-water-leak-sensors-for-sinks-water-heaters", "/reviews/aqara-valve-controller-t1", "/reviews/yolink-x3-bulldog-valve-controller"],
   },
+  ...portfolioRankingOpportunities,
 ];
 
 const stopWords = new Set([
@@ -910,7 +941,14 @@ export function findSearchOpportunity(site: SiteKey, kind: SearchOpportunityKind
 }
 
 export function searchOpportunityUpdatedAt(site: SiteKey, kind: SearchOpportunityKind, slug: string) {
-  return findSearchOpportunity(site, kind, slug)?.updatedAt;
+  return findSearchOpportunity(site, kind, slug) ? portfolioRankingRefreshAt : undefined;
+}
+
+export function searchOpportunityMetaDescription(opportunity?: SearchOpportunity, fallback?: string) {
+  const value = (opportunity?.answer ?? fallback ?? "").replace(/\s+/g, " ").trim();
+  if (value.length <= 158) return value;
+  const shortened = value.slice(0, 155).replace(/\s+\S*$/, "").trim();
+  return `${shortened}…`;
 }
 
 export function effectiveContentUpdatedAt(contentUpdatedAt?: string, opportunityUpdatedAt?: string) {

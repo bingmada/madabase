@@ -1,0 +1,259 @@
+{
+  "reviewedAt": "2026-08-12T15:10:00.000Z",
+  "cohort": "breadth-draft-120-plus",
+  "policy": "Every selected family that crosses the automated lexical-similarity threshold needs a written intent-boundary decision. A distinct decision is not permission to reuse the neighboring page: the new page must preserve the recorded different object, constraint, and comparison dimensions. True overlap is excluded even when an exact merchant product was already verified.",
+  "decisions": [
+    {
+      "key": "network:cloud-managed-access-points",
+      "decision": "distinct",
+      "possibleCollision": "Indoor Wi-Fi access points",
+      "boundary": "The existing family chooses and places an indoor radio. This page is limited to controller tenancy, Internet dependency, licensing, multi-site administration, configuration export, ownership transfer, and the locally managed alternative; it must not become another generic access-point roundup."
+    },
+    {
+      "key": "network:wall-plate-access-points",
+      "decision": "distinct",
+      "possibleCollision": "Indoor Wi-Fi access points",
+      "boundary": "Wall-plate units create a room-by-room retrofit decision involving electrical-box depth, uplink PoE, downstream ports, mounting height, furniture blockage, roaming density, and lost wall-jack capacity, unlike the existing general indoor ceiling/desktop AP decision."
+    },
+    {
+      "key": "network:managed-2-5gbe-switches",
+      "decision": "distinct",
+      "possibleCollision": "Deco BE63 2.5GbE Ports Explained: WAN, LAN, Switches and Backhaul",
+      "boundary": "The existing guide explains how ports on one mesh product are assigned. This page chooses a separate managed switch by VLAN, LACP, PoE, fan/noise, uplinks, management recovery, and port count; Deco-specific WAN/backhaul selection is out of scope."
+    },
+    {
+      "key": "network:sfp28-network-switches",
+      "decision": "distinct",
+      "possibleCollision": "SFP+ network switches",
+      "boundary": "SFP28 adds a 25GbE lane, host-NIC and transceiver qualification, breakout and backward-compatibility decision that the 10GbE SFP+ family does not answer. The page must compare an actual 25GbE path against retaining 10GbE, not restate generic fiber switching."
+    },
+    {
+      "key": "network:industrial-ethernet-switches",
+      "decision": "distinct",
+      "possibleCollision": "SFP+ network switches",
+      "boundary": "The overlap is only the word switch. This decision starts with DIN-rail power, redundant DC input, grounding, enclosure, temperature, vibration, surge, certification, and unmanaged-versus-managed field recovery rather than SFP+ bandwidth in a controlled indoor rack."
+    },
+    {
+      "key": "network:rackmount-network-ups",
+      "decision": "distinct",
+      "possibleCollision": "What rackmount PDU should I use for a home network rack, and does it replace a UPS or surge protector?",
+      "boundary": "The existing PDU page distributes outlets and explicitly does not provide battery runtime. This page sizes rack depth, load, battery-backed outlets, topology, runtime, replaceable batteries and rail support for a UPS; it keeps a PDU as a downstream comparison, not a substitute claim."
+    },
+    {
+      "key": "network:network-rack-shelves",
+      "decision": "distinct",
+      "possibleCollision": "Should I buy a D-ring, finger-duct, brush, or lacing-bar cable manager for a 19-inch home network rack?",
+      "boundary": "A rack shelf supports non-rack equipment by usable depth, static load, vent area, lip direction, rack-post geometry and center of gravity. The existing page routes patch cords with D-rings and ducts, so its object and acceptance test are different."
+    },
+    {
+      "key": "network:network-rack-cooling-fans",
+      "decision": "distinct",
+      "possibleCollision": "Should I buy a D-ring, finger-duct, brush, or lacing-bar cable manager for a 19-inch home network rack?",
+      "boundary": "This is an airflow and heat-removal decision based on measured inlet temperature, rack pressure path, CFM, fan direction, noise, controls and failure mode. Cable-manager format shares rack vocabulary but not the purchase problem."
+    },
+    {
+      "key": "network:rack-blanking-panels",
+      "decision": "distinct",
+      "possibleCollision": "Rack cable management panels",
+      "boundary": "Blanking panels close unused rack units for appearance, access control or front-to-back airflow. Cable-management panels guide conductors and bend radius. The page must evaluate whether an open home rack benefits at all and cannot present a blank panel as a cable manager."
+    },
+    {
+      "key": "network:bulk-ethernet-cable-reels",
+      "decision": "distinct",
+      "possibleCollision": "Ethernet cable testers",
+      "boundary": "The similarity is generic Ethernet wording. This purchase is cable construction, conductor material and gauge, fire rating, shielding/grounding, run length, pull tension, termination skill and code boundary; a tester only verifies an installed link."
+    },
+    {
+      "key": "network:preterminated-fiber-runs",
+      "decision": "distinct",
+      "possibleCollision": "Which cable toner and probe kit should I buy to identify unknown Ethernet runs without damaging connected equipment?",
+      "boundary": "This page chooses a factory-terminated fiber assembly by fiber type, connector/polish, strand count, pulling eye, conduit fill, bend radius, protection and loss budget. An Ethernet toner identifies copper runs and does not answer any of those constraints."
+    },
+    {
+      "key": "network:coax-cable-testers",
+      "decision": "distinct",
+      "possibleCollision": "Ethernet cable testers",
+      "boundary": "Coax testing depends on connector continuity, shorts, remote identifiers and—when required—signal level and frequency behavior on a shared topology. The existing twisted-pair tester decision covers pin maps and network cabling, not coax plant diagnosis."
+    },
+    {
+      "key": "smarthome:smart-wall-control-panels",
+      "decision": "distinct",
+      "possibleCollision": "In-Wall Smart Relay Buying Guide: Wiring, Load, Protocol, and Local Control",
+      "boundary": "A wall control panel is a household user interface selected by mounting, power, ecosystem reach, dashboards, account exposure, wake behavior and physical fallback. An in-wall relay switches an electrical load and is chosen primarily by wiring and load compatibility."
+    },
+    {
+      "key": "homeoffice:compact-color-inkjet-printers",
+      "decision": "distinct",
+      "possibleCollision": "color-laser-multifunction-printers",
+      "boundary": "The inkjet page is limited to small-space footprint, paper path, photo/color use, duplex/scanner needs, cartridge drying and low-volume ownership. The existing laser MFP decision centers toner, duty cycle and office document throughput; the comparison is intentional, not duplicate."
+    },
+    {
+      "key": "homeoffice:monitor-light-bars",
+      "decision": "distinct",
+      "possibleCollision": "monitor-mounted-key-light-vs-desk-light",
+      "boundary": "A monitor light bar illuminates documents and keyboard while controlling screen glare, bezel fit and reflected light. The existing key-light comparison illuminates a person's face for video. Neither page may substitute the other's lighting task."
+    },
+    {
+      "key": "homeoffice:under-desk-foot-hammocks",
+      "decision": "distinct",
+      "possibleCollision": "Under-desk drawers",
+      "boundary": "The shared words only describe location. A foot hammock is a body-support fit decision involving desk width, attachment, leg clearance, posture variability and cleanability; a drawer stores objects and has a different load and access path."
+    },
+    {
+      "key": "homeoffice:under-desk-pedal-exercisers",
+      "decision": "distinct",
+      "possibleCollision": "Under-desk drawers",
+      "boundary": "The shared words only describe location. The exerciser requires knee clearance, chair stability, pedal radius, resistance, noise and task compatibility, whereas the existing under-desk drawer page concerns storage dimensions and mounting."
+    },
+    {
+      "key": "homeoffice:laptop-cooling-pads",
+      "decision": "distinct",
+      "possibleCollision": "Vertical Laptop Stand Buying Guide: Slot Fit, Stability, and Closed-Lid Cooling",
+      "boundary": "The vertical-stand page stores a closed laptop and preserves passive vent clearance. This page addresses an open laptop under sustained load, fan alignment, intake geometry, USB power, noise, dust and whether cleaning or raising the chassis solves the issue without a pad."
+    },
+    {
+      "key": "homeoffice:monitor-privacy-screens",
+      "decision": "distinct",
+      "possibleCollision": "baby-monitor-subscription-and-privacy-checklist",
+      "boundary": "This is a lexical false positive: a physical display filter is selected by panel size, aspect ratio, attachment, viewing angle, brightness and image-work trade-offs. The baby-monitor guide concerns cameras, accounts, cloud storage and subscription privacy."
+    },
+    {
+      "key": "homeoffice:desk-cable-sleeves",
+      "decision": "distinct",
+      "possibleCollision": "Under-desk cable trays",
+      "boundary": "A sleeve encloses and flexes with a cable bundle, so diameter, split/zip access, abrasion, bend, heat and sit-stand movement control the choice. A tray supports power bricks and slack under a fixed surface; the new page cannot repeat tray mounting advice."
+    },
+    {
+      "key": "homeoffice:desk-cable-grommets",
+      "decision": "distinct",
+      "possibleCollision": "Under-desk cable trays",
+      "boundary": "A grommet is a permanent cutout and edge-protection decision based on plug passage, barrel diameter, surface material, drill clearance and abrasion. A tray attaches below the top and stores equipment; it neither creates nor finishes the cable passage."
+    },
+    {
+      "key": "baby:reusable-baby-food-pouches",
+      "decision": "distinct",
+      "possibleCollision": "Baby food makers",
+      "boundary": "The pouch is a serving and storage container chosen by opening size, closure inspection, portion visibility, cleaning, drying, wear and supervised feeding. A baby-food maker processes ingredients as an appliance; preparation performance is outside this page."
+    },
+    {
+      "key": "baby:baby-wipe-dispensers",
+      "decision": "distinct",
+      "possibleCollision": "Baby wipe warmers",
+      "boundary": "The dispenser page explicitly excludes heating and instead tests one-hand feed, seal moisture retention, wipe-pack fit, weighted base and cleaning. The warmer page adds temperature, power and heat-maintenance risks and answers a different upgrade decision."
+    },
+    {
+      "key": "baby:high-chair-floor-mats",
+      "decision": "distinct",
+      "possibleCollision": "office-chair-mats-buying-guide",
+      "boundary": "This is a lexical false positive. A feeding mat is chosen for splatter footprint, waterproof seams, edge trip risk, chair stability, food-contact cleanup and floor compatibility; an office chair mat is designed around caster rolling and concentrated desk loads."
+    },
+    {
+      "key": "baby:baby-bath-thermometers",
+      "decision": "distinct",
+      "possibleCollision": "Baby bath kneelers",
+      "boundary": "A bath thermometer checks water temperature response, readable range, water resistance, batteries and adult hand verification. A kneeler supports the caregiver outside the tub; shared bath context does not create shared product specifications."
+    },
+    {
+      "key": "baby:childproof-door-knob-covers",
+      "decision": "distinct",
+      "possibleCollision": "Childproof Cabinet Lock Buying Guide: Hazard Storage, Door Fit, and Daily Re-Locking",
+      "boundary": "Door-knob covers interact with passage doors, emergency egress, adult grip, knob shape and household escape planning. Cabinet locks secure stored hazards at drawers or doors. The page must not recommend blocking an egress route as generic childproofing."
+    },
+    {
+      "key": "baby:childproof-refrigerator-locks",
+      "decision": "distinct",
+      "possibleCollision": "Childproof cabinet locks",
+      "boundary": "Refrigerator locks have appliance-specific door seams, gasket/finish adhesion, frequent adult access, food-safety cleanup and landlord/warranty constraints. The existing cabinet page covers drawer and cupboard hardware and hazardous-storage routines."
+    },
+    {
+      "key": "baby:childproof-toilet-locks",
+      "decision": "distinct",
+      "possibleCollision": "Childproof cabinet locks",
+      "boundary": "Toilet locks are selected by lid/tank geometry, bathroom moisture, sanitation, adult emergency access and repeated re-locking. Cabinet locks address stored hazards behind doors or drawers and cannot supply the toilet-specific fit and hygiene acceptance test."
+    },
+    {
+      "key": "pet:pet-stairs",
+      "decision": "distinct",
+      "possibleCollision": "Can I use a pressure-mounted pet gate at the top of stairs, and what height and bar spacing will contain my dog safely?",
+      "boundary": "This is an opposite-intent lexical collision. Pet stairs help a measured animal reach furniture or a vehicle using rise, tread, stability, traction and supervised mobility; the existing gate page prevents access to a household staircase and evaluates containment."
+    },
+    {
+      "key": "pet:dog-cooling-bandanas",
+      "decision": "distinct",
+      "possibleCollision": "Dog cooling vests",
+      "boundary": "A cooling bandana is a neck-only evaporative accessory chosen by neck fit, wet weight, re-wetting interval, chafe risk and the small area it can cool. A vest covers the torso and creates different fit, mobility and heat-retention trade-offs; neither page may imply that wearable cooling replaces shade, water or stopping exercise."
+    },
+    {
+      "key": "pet:portable-dog-water-bottles",
+      "decision": "distinct",
+      "possibleCollision": "large-dog-water-fountains",
+      "boundary": "The portable bottle is an outing tool selected by carried volume, one-hand dispensing, leak resistance, return-water hygiene and pack fit. The existing fountain is a stationary powered home hydration system governed by capacity, pump, filtration and cleaning."
+    },
+    {
+      "key": "pet:elevated-dog-bowls",
+      "decision": "distinct",
+      "possibleCollision": "Slow feeder dog bowls",
+      "boundary": "An elevated feeder changes bowl height and stand stability and must be sized to the dog with veterinary context where relevant. A slow feeder changes eating speed through internal obstacles; height and pacing are separate purchase questions and the page must not make medical prevention claims."
+    },
+    {
+      "key": "pet:stainless-steel-pet-fountains",
+      "decision": "distinct",
+      "possibleCollision": "wireless-pump-pet-fountains",
+      "boundary": "This page starts with basin material, seam finish, corrosion, dishwasher access and complete disassembly. The existing wireless-pump page starts with an electrically isolated pump architecture and cable-free basin cleaning; stainless construction alone does not answer pump design."
+    },
+    {
+      "key": "pet:ceramic-pet-fountains",
+      "decision": "distinct",
+      "possibleCollision": "Wireless-pump pet fountains",
+      "boundary": "A ceramic fountain is chosen for glaze condition, chip inspection, weight, basin geometry and cleanability. A wireless-pump fountain is defined by pump-power coupling and removable-basin workflow; either design may use a different basin material."
+    },
+    {
+      "key": "pet:covered-self-cleaning-litter-boxes",
+      "decision": "distinct",
+      "possibleCollision": "Open-top self-cleaning litter boxes",
+      "boundary": "The covered design adds entrance size, internal turning room, enclosure acceptance, odor concentration and escape access to the automation decision. The existing open-top family prioritizes unobstructed entry and visual oversight, so the two form factors solve a materially different cat-fit question."
+    },
+    {
+      "key": "pet:cat-litter-disposal-systems",
+      "decision": "distinct",
+      "possibleCollision": "Cat litter mats",
+      "boundary": "A disposal pail contains already scooped waste using a seal, bag cartridge, opening and emptying workflow. A litter mat captures tracked granules outside the box; it neither stores waste nor controls the pail's refill and odor pathway."
+    },
+    {
+      "key": "pet:cat-litter-enclosures",
+      "decision": "distinct",
+      "possibleCollision": "Cat litter mats",
+      "boundary": "An enclosure is furniture that must fit the full box, cat entry, ventilation, door access and cleaning path without trapping the animal. A litter mat is a removable floor surface for tracking control and has no interior-volume or ventilation decision."
+    },
+    {
+      "key": "pet:pet-monitoring-cameras",
+      "decision": "distinct",
+      "possibleCollision": "Treat-dispensing pet cameras",
+      "boundary": "This page evaluates viewing coverage, movement tracking, two-way audio, privacy, local versus cloud recording and account controls without requiring a food mechanism. Treat cameras add food size, jam, portion and pet-diet constraints that belong to the existing family."
+    },
+    {
+      "key": "pet:pet-food-storage-containers",
+      "decision": "distinct",
+      "possibleCollision": "baby-food-storage-containers-buying-guide",
+      "boundary": "This is a cross-site lexical false positive. Bulk dry pet-food storage is selected by bag capacity, gasket seal, pest resistance, scoop access and fat-residue cleaning; the baby page concerns small portions and infant feeding workflows."
+    },
+    {
+      "key": "pet:hard-sided-pet-carriers",
+      "decision": "distinct",
+      "possibleCollision": "Soft-sided pet carriers",
+      "boundary": "A hard carrier is selected by rigid shell integrity, door latches, ventilation, top-load access, empty weight and vehicle restraint. The existing soft carrier trades rigidity for compressibility and under-seat fit, so it uses different acceptance tests."
+    },
+    {
+      "key": "pet:airline-dog-crates",
+      "decision": "distinct",
+      "possibleCollision": "Collapsible wire dog crates",
+      "boundary": "The airline crate decision begins with the specific carrier's current rules, rigid shell, fasteners, ventilation, live-animal labels and measured standing/turning room. A collapsible wire home crate is designed for indoor containment and is not an airline substitute."
+    },
+    {
+      "key": "pet:cat-grooming-gloves",
+      "decision": "distinct",
+      "possibleCollision": "Which pet grooming table should I buy for a dog or cat at home, and what size and restraint setup are safe?",
+      "boundary": "A grooming glove is a hand-worn coat-contact tool selected by hand fit, nub softness, hair release, washability and the cat's tolerance. A grooming table is a work surface and restraint setup; the glove page must not repeat table sizing or restraint advice."
+    }
+  ]
+}
