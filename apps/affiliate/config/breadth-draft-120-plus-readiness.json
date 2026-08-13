@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-08-13T08:03:27.378Z",
+  "updatedAt": "2026-08-13T17:08:18+08:00",
   "releaseCandidate": "breadth-2026-08-next",
   "publicationStatus": "published_soft_launch",
-  "readiness": "soft_launch_valid_pending_push_and_deployment",
+  "readiness": "production_verified_soft_launch_sitemap_excluded",
   "selectedPages": 151,
   "distribution": {
     "network": 25,
@@ -47,5 +47,26 @@
   ],
   "sitemapSubmitted": false,
   "indexNowSubmitted": false,
-  "pushed": false
+  "pushed": true,
+  "productionRelease": "b6daae2",
+  "sourceCommit": "b6daae2305c31957e465b92e13c8d2441423a9a3",
+  "rollbackRelease": "369b97d",
+  "deployed": true,
+  "productionVerified": true,
+  "cloudflare": {
+    "rule": "Cache public affiliate HTML",
+    "status": "active_and_verified",
+    "customPurgedUrls": 124,
+    "purgeScope": "118 refreshed existing pages plus six affected sitemaps",
+    "purgeEverythingUsed": false,
+    "html": "browser-shaped requests MISS then HIT with current release content",
+    "apiAndRsc": "DYNAMIC",
+    "staticAssets": "HIT"
+  },
+  "measurementGates": {
+    "day3": "2026-08-16",
+    "day7": "2026-08-20",
+    "day14": "2026-08-27",
+    "day28": "2026-09-10"
+  }
 }

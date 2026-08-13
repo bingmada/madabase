@@ -1,0 +1,98 @@
+{
+  "updatedAt": "2026-08-13T17:08:18+08:00",
+  "purpose": "Tracked cross-conversation snapshot. Read docs/affiliate-growth-state.json for the complete mutable source of truth and docs/affiliate-growth-runbook.md for operating rules.",
+  "release": {
+    "active": "b6daae2",
+    "commit": "b6daae2305c31957e465b92e13c8d2441423a9a3",
+    "branch": "lyd-0609",
+    "pushed": true,
+    "productionPath": "/srv/madabase-affiliate/releases/b6daae2/apps/affiliate",
+    "rollback": "369b97d",
+    "sevenHostsHttp200": true,
+    "pm2Saved": true,
+    "candidateRemoved": true
+  },
+  "serverStability": {
+    "serverMemoryApprox": "1.6GB",
+    "pm2MaxMemoryRestart": "350M",
+    "releaseRestartCountObserved": 1,
+    "unstableRestarts": 0,
+    "errorLog": "empty after the restart",
+    "settledMemoryApprox": "221MB",
+    "cause": "intentionally concurrent full 118-page production runtime audit",
+    "rule": "Run full high-concurrency audits on a candidate or local immutable runtime; use bounded sampling on production."
+  },
+  "cohorts": {
+    "newSoftLaunch": {
+      "pages": 151,
+      "distribution": { "network": 25, "smarthome": 25, "homeoffice": 33, "baby": 31, "pet": 37 },
+      "state": "public_indexable_internally_linked_sitemap_excluded",
+      "runtimePassed": 151,
+      "sitemapIncluded": 0,
+      "sitemapSubmitted": false,
+      "indexNowSubmitted": false,
+      "externalDistribution": false
+    },
+    "existingRankingRefresh": {
+      "pages": 118,
+      "distribution": { "network": 33, "smarthome": 27, "homeoffice": 24, "baby": 15, "pet": 17, "style": 2 },
+      "runtimePassed": 118,
+      "titleChanges": 3,
+      "protectedWinners": 37,
+      "heldForEvidence": 21
+    }
+  },
+  "sitemaps": { "network": 232, "smarthome": 249, "homeoffice": 254, "baby": 233, "pet": 221 },
+  "cloudflare": {
+    "rule": "Cache public affiliate HTML",
+    "ruleCorrect": true,
+    "browserHtml": "MISS_then_HIT_current_content",
+    "apiAndRsc": "DYNAMIC",
+    "staticAssets": "HIT",
+    "customPurgedUrls": 124,
+    "purgeEverythingUsed": false,
+    "testingRule": "Send an Accept header containing text/html; default curl Accept */* does not match the HTML rule."
+  },
+  "searchBaseline": {
+    "latest24Hours": { "clicks": 5, "impressions": 680, "ctr": "0.7%", "averagePosition": 28.7, "use": "directional_only" },
+    "latestComplete7DaysAug4To10": { "clicks": 18, "impressions": 3277, "ctr": "0.5%", "averagePosition": 23.8 },
+    "previousComplete7DaysJul28ToAug3": { "clicks": 18, "impressions": 2581, "ctr": "0.7%", "averagePosition": 28.9 },
+    "complete28DaysJul14ToAug10": { "clicks": 66, "impressions": 10835, "ctr": "0.6%", "averagePosition": 27.0 },
+    "interpretation": "Complete-week impressions rose about 27% and average position improved 5.1 while clicks stayed flat; CTR and page-two movement are the nearer bottlenecks."
+  },
+  "merchantAndSiteBoundaries": {
+    "amazonFirstSites": ["network", "smarthome", "homeoffice", "baby", "pet", "style"],
+    "babyCj": "Only the separately recorded bounded Bc Babycare pilot is authorized.",
+    "costume": "Unchanged in this release; products remain database-backed and use the separate Abracadabra/CJ model.",
+    "petMedicationMerchant": "CanadaPetCare remains blocked from public CTAs.",
+    "style": "maintenance_only"
+  },
+  "validation": {
+    "seoAudit": { "publishedGuides": 964, "products": 170, "roundups": 77, "tools": 7 },
+    "affiliateLinks": "300_of_300_passed",
+    "newPagesRuntime": "151_of_151_passed",
+    "existingRefreshRuntime": "118_of_118_passed",
+    "distributionImages": "18_across_6_sites_passed",
+    "publicHosts": "7_of_7_http_200",
+    "currentAndRetainedAssets": "http_200"
+  },
+  "measurementGates": {
+    "day3": "2026-08-16",
+    "day7": "2026-08-20",
+    "day14": "2026-08-27",
+    "day28": "2026-09-10"
+  },
+  "doNotDo": [
+    "Do not add the 151 soft-launch pages to sitemap, IndexNow or external distribution before their gate.",
+    "Do not treat sitemap exclusion as noindex.",
+    "Do not broadly rewrite the 37 protected winners or 21 held pages without page-filtered evidence.",
+    "Do not run high-concurrency full production audits on the approximately 1.6GB server.",
+    "Do not use Cloudflare Purge Everything for ordinary content releases."
+  ],
+  "details": {
+    "rankingReview": "docs/affiliate-search-ranking-review-2026-08-13.md",
+    "mutableState": "docs/affiliate-growth-state.json",
+    "runbook": "docs/affiliate-growth-runbook.md",
+    "breadthReadiness": "apps/affiliate/config/breadth-draft-120-plus-readiness.json"
+  }
+}
