@@ -218,15 +218,19 @@ export function StyleHome({
 }
 
 export function StyleCategoryPage({
+  site,
   title,
   description,
   products,
+  commerceProduct,
   roundups,
   guides,
 }: {
+  site: SiteConfig;
   title: string;
   description: string;
   products: Product[];
+  commerceProduct?: Product;
   roundups: Roundup[];
   guides: Guide[];
 }) {
@@ -238,6 +242,15 @@ export function StyleCategoryPage({
           <h1 className="mt-4 max-w-3xl break-words font-serif text-5xl leading-none sm:text-6xl">{title}</h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-[#6b5e58]">{description}</p>
           <p className="mt-5 text-sm font-bold text-[#713248]">{products.length} buying note{products.length === 1 ? "" : "s"} in this edit</p>
+          {commerceProduct ? (
+            <div className="mt-6 flex max-w-3xl flex-col gap-4 border-y border-[#cdbeb6] py-5 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#713248]">Verified retailer starting point</p>
+                <p className="mt-2 font-serif text-2xl">{commerceProduct.amazonTitle ?? commerceProduct.name}</p>
+              </div>
+              <AffiliateButtonGroup site={site.key} product={commerceProduct} position="style-category-hero" limit={1} />
+            </div>
+          ) : null}
           <div className="mt-8 flex flex-wrap gap-2 text-xs font-bold uppercase tracking-[0.11em]">
             <span className="style-pill">One focal point</span>
             <span className="style-pill">Scale checked</span>
@@ -286,20 +299,25 @@ export function StyleCategoryPage({
 }
 
 export function StyleGuidePage({
+  site,
   guide,
   relatedProducts,
+  commerceProduct,
   relatedGuides,
   relatedRoundups,
   advice,
 }: {
+  site: SiteConfig;
   guide: Guide;
   relatedProducts: Product[];
+  commerceProduct?: Product;
   relatedGuides: Guide[];
   relatedRoundups: Roundup[];
   advice: { checklist: string[]; mistakes: string[]; categoryChecks: string[]; decision: string };
 }) {
   const startingProduct = relatedProducts[0];
   const startingRoundup = relatedRoundups[0];
+  const commerceIsAlternative = Boolean(startingProduct && commerceProduct && startingProduct.slug !== commerceProduct.slug);
   return (
     <main>
       <section className="bg-[#211d1b] text-[#fff9f5]">
@@ -308,15 +326,24 @@ export function StyleGuidePage({
           <h1 className="mt-5 max-w-4xl break-words font-serif text-5xl leading-[0.98] sm:text-6xl">{guide.title}</h1>
           <p className="mt-7 max-w-2xl text-lg leading-8 text-[#d6cbc5]">{guide.dek}</p>
           <p className="mt-5 inline-flex items-center gap-2 text-xs font-semibold text-[#cdbeb7]"><CalendarDays size={14} /> Updated {guide.updatedAt ?? "on the current review cycle"}</p>
-          {startingProduct || startingRoundup ? (
+          {startingProduct || startingRoundup || commerceProduct ? (
             <div className="mt-8 max-w-3xl border-y border-[#5d514d] py-5">
               <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#d5a6b5]">Best starting point</p>
               <div className="mt-3 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
                 <div>
-                  <p className="font-serif text-2xl">{startingProduct ? startingProduct.amazonTitle ?? startingProduct.name : startingRoundup?.title}</p>
-                  <p className="mt-2 text-sm leading-6 text-[#d6cbc5]">Start with the fit, scale, material, and return checks before comparing decorative details.</p>
+                  <p className="font-serif text-2xl">{startingProduct ? startingProduct.amazonTitle ?? startingProduct.name : commerceProduct?.amazonTitle ?? commerceProduct?.name ?? startingRoundup?.title}</p>
+                  <p className="mt-2 text-sm leading-6 text-[#d6cbc5]">
+                    {commerceIsAlternative
+                      ? `The exact retailer path is paused; the purchase button is for the verified alternative ${commerceProduct?.name}, not the original item.`
+                      : "Start with the fit, scale, material, and return checks before comparing decorative details."}
+                  </p>
                 </div>
-                <Link className="style-cta style-cta-light shrink-0" href={startingProduct ? `/reviews/${startingProduct.slug}` : `/best/${startingRoundup?.slug}`}>Open the decision page <ArrowRight size={16} /></Link>
+                <div className="flex shrink-0 flex-wrap gap-2 sm:justify-end">
+                  {commerceProduct ? <AffiliateButtonGroup site={site.key} product={commerceProduct} position={commerceIsAlternative ? "style-guide-verified-alternative" : "style-guide-hero"} limit={1} /> : null}
+                  {startingProduct || startingRoundup ? (
+                    <Link className="style-cta style-cta-light" href={startingProduct ? `/reviews/${startingProduct.slug}` : `/best/${startingRoundup?.slug}`}>Open the decision page <ArrowRight size={16} /></Link>
+                  ) : null}
+                </div>
               </div>
             </div>
           ) : null}
@@ -442,19 +469,23 @@ export function StyleGuidePage({
 export function StyleProductPage({
   site,
   product,
+  commerceProduct,
   related,
   relatedRoundups,
   relatedGuides,
 }: {
   site: SiteConfig;
   product: Product;
+  commerceProduct?: Product;
   related: Product[];
   relatedRoundups: Roundup[];
   relatedGuides: Guide[];
 }) {
   const name = product.amazonTitle ?? product.name;
   const image = product.amazonImage ?? product.image;
-  const hasOffer = product.offers.length > 0;
+  const purchaseProduct = commerceProduct ?? product;
+  const hasOffer = purchaseProduct.offers.length > 0;
+  const commerceIsAlternative = purchaseProduct.slug !== product.slug;
   const evidencePresentation = productEvidencePresentation(product);
   const badge =
     {
@@ -504,14 +535,16 @@ export function StyleProductPage({
               ))}
             </div>
             <div className="mt-7 flex flex-wrap gap-3">
-              <AffiliateButtonGroup site={site.key} product={product} position="style-product-hero" />
+              <AffiliateButtonGroup site={site.key} product={purchaseProduct} position={commerceIsAlternative ? "style-product-verified-alternative" : "style-product-hero"} />
               <Link className="style-cta-secondary" href={`/best/${relatedRoundups[0]?.slug ?? roundupSlug}`}>
                 Compare similar picks
               </Link>
             </div>
             <p className="mt-4 text-xs leading-5 text-[#897b75]">
               {hasOffer
-                ? "Affiliate links. Check the selected variation, seller, materials, dimensions, and return terms at the retailer."
+                ? commerceIsAlternative
+                  ? `The purchase button is for the verified alternative ${purchaseProduct.name}, not the reviewed item. Confirm the selected variation, seller, materials, dimensions, and return terms.`
+                  : "Affiliate links. Check the selected variation, seller, materials, dimensions, and return terms at the retailer."
                 : "The retailer link is still being verified. Product notes stay visible, but no unverified purchase link is shown."}
             </p>
             <div className="mt-7 border-l-2 border-[#a24d67] bg-[#fffaf6] px-5 py-4">
@@ -662,8 +695,10 @@ export function StyleProductPage({
   );
 }
 
-export function StyleCollectionPage({ roundup, products }: { roundup: Roundup; products: Product[] }) {
+export function StyleCollectionPage({ site, roundup, products }: { site: SiteConfig; roundup: Roundup; products: Product[] }) {
   const topPick = products[0];
+  const commerceProduct = products.find((product) => product.offers.length > 0);
+  const commerceIsAlternative = Boolean(topPick && commerceProduct && topPick.slug !== commerceProduct.slug);
   return (
     <main>
       <section className="bg-[#211d1b] text-[#fff9f5]">
@@ -672,15 +707,24 @@ export function StyleCollectionPage({ roundup, products }: { roundup: Roundup; p
           <h1 className="mt-5 max-w-4xl break-words font-serif text-5xl leading-[0.98] sm:text-6xl">{roundup.title}</h1>
           <p className="mt-7 max-w-2xl text-lg leading-8 text-[#d6cbc5]">{roundup.intro ?? roundup.dek}</p>
           <p className="mt-5 inline-flex items-center gap-2 text-xs font-semibold text-[#cdbeb7]"><CalendarDays size={14} /> Updated {roundup.updatedAt ?? "on the current review cycle"}</p>
-          {topPick ? (
+          {topPick || commerceProduct ? (
             <div className="mt-8 max-w-3xl border-y border-[#5d514d] py-5">
               <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#d5a6b5]">Best starting point</p>
               <div className="mt-3 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
                 <div>
-                  <p className="font-serif text-2xl">{topPick.amazonTitle ?? topPick.name}</p>
-                  <p className="mt-2 text-sm leading-6 text-[#d6cbc5]">Best for {topPick.bestFor.toLowerCase()}; skip it if {topPick.cons[0]?.toLowerCase()}.</p>
+                  <p className="font-serif text-2xl">{topPick?.amazonTitle ?? topPick?.name ?? commerceProduct?.amazonTitle ?? commerceProduct?.name}</p>
+                  <p className="mt-2 text-sm leading-6 text-[#d6cbc5]">
+                    {commerceIsAlternative
+                      ? `The first pick has no verified retailer path right now; the purchase button is for ${commerceProduct?.name}.`
+                      : topPick
+                        ? `Best for ${topPick.bestFor.toLowerCase()}; skip it if ${topPick.cons[0]?.toLowerCase()}.`
+                        : "Confirm the exact listing, variation, seller, and return path before buying."}
+                  </p>
                 </div>
-                <Link className="style-cta style-cta-light shrink-0" href={`/reviews/${topPick.slug}`}>Check the evidence <ArrowRight size={16} /></Link>
+                <div className="flex shrink-0 flex-wrap gap-2 sm:justify-end">
+                  {commerceProduct ? <AffiliateButtonGroup site={site.key} product={commerceProduct} position={commerceIsAlternative ? "style-roundup-verified-alternative" : "style-roundup-hero"} limit={1} /> : null}
+                  {topPick ? <Link className="style-cta style-cta-light" href={`/reviews/${topPick.slug}`}>Check the evidence <ArrowRight size={16} /></Link> : null}
+                </div>
               </div>
             </div>
           ) : null}

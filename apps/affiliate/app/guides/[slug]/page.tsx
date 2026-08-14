@@ -16,6 +16,7 @@ import { costumeHalloweenIdeas } from "@/lib/costume-halloween-ideas";
 import { findAmazonFamilyProduct } from "@/lib/amazon-family-products";
 import { amazonAsinAffiliateUrl } from "@/lib/affiliate-tracking";
 import { findAuthorizedCjFamilyOffer } from "@/lib/cj-offers";
+import { guideCommerceProduct, isCommerceAlternative } from "@/lib/commerce-paths";
 import {
   isCostumeProductIndexable,
   listCostumeCatalogProducts,
@@ -225,6 +226,8 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
     .map((roundupSlug) => findRoundup(site.key, roundupSlug))
     .filter((roundup): roundup is NonNullable<ReturnType<typeof findRoundup>> => Boolean(roundup));
   const topRoundup = relatedRoundups[0];
+  const commerceProduct = guideCommerceProduct(site.key, guide);
+  const commerceIsAlternative = isCommerceAlternative(topProduct, commerceProduct);
   const directAnswer = guide.quickAnswer ?? guide.sections[0]?.body ?? advice.decision;
   const amazonFamilyProduct = guide.familySlug ? findAmazonFamilyProduct(site.key, guide.familySlug) : undefined;
   const amazonFamilyIdentity = amazonFamilyProduct ? {
@@ -256,11 +259,14 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
     label: `Check the exact variant at ${cjFamilyOffer.merchantName}`,
     priceNote: `Confirm ${cjFamilyOffer.variantLabel ?? "the exact variant"}, included pieces, live price, stock, shipping destination, and the direct-brand return terms before checkout.`,
   } : undefined;
-  const costumeCatalogProducts = site.key === "costume" && guide.familySlug
-    ? (await listCostumeCatalogProducts(costumeFamilyCatalogSelection(guide.familySlug, guide.category))).items
+  const costumeCatalogProducts = site.key === "costume"
+    ? (await listCostumeCatalogProducts(costumeFamilyCatalogSelection(guide.familySlug ?? "", guide.category))).items
       .filter(isCostumeProductIndexable)
       .slice(0, 6)
     : [];
+  const costumeCommerceProduct = costumeCatalogProducts.find((product) =>
+    product.activeLink && product.authorizedImage && product.availability !== "out of stock",
+  );
 
   if (site.key === "style") {
     return (
@@ -274,8 +280,10 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         />
         <JsonLd data={guideSchema(site, effectiveGuide)} />
         <StyleGuidePage
+          site={site}
           guide={effectiveGuide}
           relatedProducts={relatedProducts}
+          commerceProduct={commerceProduct}
           relatedGuides={relatedGuides}
           relatedRoundups={relatedRoundups}
           advice={advice}
@@ -327,30 +335,49 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         {searchOpportunity ? <SearchOpportunityBlock opportunity={searchOpportunity} /> : null}
         <SearchOpportunityBacklinks site={site.key} kind="guide" slug={slug} />
         <BaseMarketEditionLinks site={site} basePath={`/guides/${slug}`} />
-        {topProduct || topRoundup ? (
+        {topProduct || topRoundup || commerceProduct || amazonFamilyOffer || cjFamilyAffiliateOffer || costumeCommerceProduct ? (
           <section className="mt-8 rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-5">
             <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
               <div>
-                <p className="eyebrow">Best starting point</p>
-                <h2 className="mt-2 text-2xl font-bold">{topProduct ? topProduct.name : "Compare the short list"}</h2>
+                <p className="eyebrow">Purchase path</p>
+                <h2 className="mt-2 text-2xl font-bold">
+                  {topProduct?.name ?? amazonFamilyProduct?.title ?? commerceProduct?.name ?? costumeCommerceProduct?.title ?? "Compare the short list"}
+                </h2>
                 {topProduct ? <p className="mt-2 text-sm font-semibold text-[var(--brand-strong)]">Price band: {topProduct.priceBand}</p> : null}
+                {commerceIsAlternative && commerceProduct && !amazonFamilyOffer && !cjFamilyAffiliateOffer ? (
+                  <p className="mt-3 max-w-xl text-sm leading-6 text-[var(--muted)]">
+                    The exact {topProduct?.name} retailer link is paused. The button below is for the clearly labeled, verified alternative {commerceProduct.name}—not the original model.
+                  </p>
+                ) : null}
               </div>
               <div className="flex shrink-0 flex-wrap gap-2 sm:justify-end">
                 {topProduct ? (
-                  <>
-                    <Link className="button-secondary" href={`/reviews/${topProduct.slug}`}>Read evidence</Link>
-                    <AffiliateButtonGroup site={site.key} product={topProduct} position="guide-hero-primary" limit={1} />
-                  </>
+                  <Link className="button-secondary" href={`/reviews/${topProduct.slug}`}>Read evidence</Link>
+                ) : null}
+                {amazonFamilyProduct && amazonFamilyIdentity && amazonFamilyOffer ? (
+                  <AffiliateButton site={site.key} product={amazonFamilyIdentity} offer={amazonFamilyOffer} position="guide-hero-family-amazon" resolveCreatorsListing={false} />
+                ) : cjFamilyOffer && cjFamilyIdentity && cjFamilyAffiliateOffer ? (
+                  <AffiliateButton site={site.key} product={cjFamilyIdentity} offer={cjFamilyAffiliateOffer} position="guide-hero-family-cj" resolveCreatorsListing={false} />
+                ) : costumeCommerceProduct?.activeLink ? (
+                  <Link className="button-primary" href={`/go/cj/${costumeCommerceProduct.activeLink.clickToken}`} rel="nofollow sponsored">
+                    Check at Abracadabra NYC
+                  </Link>
+                ) : commerceProduct ? (
+                  <AffiliateButtonGroup site={site.key} product={commerceProduct} position={commerceIsAlternative ? "guide-hero-verified-alternative" : "guide-hero-primary"} limit={1} />
                 ) : null}
                 {topRoundup ? <Link className="button-secondary" href={`/best/${topRoundup.slug}`}>Compare picks</Link> : null}
               </div>
             </div>
             <p className="mt-4 max-w-2xl leading-7 text-[var(--muted)]">
-              {topProduct
-                ? `Start with the evidence page for ${topProduct.name}, then compare the alternatives against your layout, budget, and compatibility needs.`
-                : "Use the comparison page to narrow the choices before reading the setup details below."}
+              {costumeCommerceProduct
+                ? `This CJ button opens the exact ${costumeCommerceProduct.title} retailer path; confirm the variant, included pieces, delivery timing, and return terms.`
+                : amazonFamilyProduct
+                ? "This exact family listing is a retailer anchor, not an automatic endorsement; reconfirm the ASIN, variant, seller, and return path."
+                : commerceProduct
+                  ? `Use the verified retailer option for ${commerceProduct.name} only after confirming the exact model, seller, bundle, fit, and return path.`
+                  : "Use the comparison page to narrow the choices before reading the setup details below."}
             </p>
-            {topProduct ? <AmazonListingFreshness site={site.key} productSlug={topProduct.slug} /> : null}
+            {commerceProduct ? <AmazonListingFreshness site={site.key} productSlug={commerceProduct.slug} /> : null}
           </section>
         ) : null}
         {guide.image ? (

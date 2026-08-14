@@ -1,0 +1,280 @@
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const affiliateDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const localOrigin = process.env.AFFILIATE_LOCAL_AUDIT_ORIGIN ?? "http://127.0.0.1:3020";
+const publicAudit = process.env.AFFILIATE_PUBLIC_AUDIT === "1";
+const outputArgument = process.argv.find((argument) => argument.startsWith("--json="));
+const outputPath = outputArgument
+  ? path.resolve(process.cwd(), outputArgument.slice("--json=".length))
+  : null;
+const concurrencyArgument = process.argv.find((argument) => argument.startsWith("--concurrency="));
+const concurrency = Math.max(1, Math.min(24, Number(concurrencyArgument?.slice("--concurrency=".length) ?? 12)));
+const includeMarkets = !process.argv.includes("--base-only");
+const siteArgument = process.argv.find((argument) => argument.startsWith("--site="));
+
+const siteHosts = {
+  network: "network.madabase.com",
+  smarthome: "smarthome.madabase.com",
+  homeoffice: "homeoffice.madabase.com",
+  baby: "baby.madabase.com",
+  pet: "pets.madabase.com",
+  style: "style.madabase.com",
+  costume: "costumes.madabase.com",
+};
+const siteTrackingIds = {
+  network: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_NETWORK ?? "madanetwork-20",
+  smarthome: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_SMARTHOME ?? "madasmart-20",
+  homeoffice: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_HOMEOFFICE ?? "madaoffice-20",
+  baby: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_BABY ?? "madababy-20",
+  pet: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_PET ?? "madapets-20",
+  style: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_STYLE ?? "madastyle-20",
+};
+const requestedSites = siteArgument
+  ? siteArgument.slice("--site=".length).split(",").flatMap((site) => site === "amazon" ? Object.keys(siteHosts).filter((key) => key !== "costume") : site)
+  : Object.keys(siteHosts);
+const selectedSiteHosts = Object.fromEntries(
+  Object.entries(siteHosts).filter(([site]) => requestedSites.includes(site)),
+);
+if (!Object.keys(selectedSiteHosts).length || requestedSites.some((site) => !(site in siteHosts))) {
+  throw new Error(`Invalid --site selection: ${requestedSites.join(", ")}`);
+}
+const marketPrefixes = ["en-gb", "en-ca", "de-de", "nl-nl"];
+const contentPathPattern = /^\/(reviews|guides|best|tools|categories|products)\/[^/]+\/?$/;
+const marketContentPathPattern = /^\/(en-gb|en-ca|de-de|nl-nl)\/(reviews|guides|best|tools|categories)\/[^/]+\/?$/;
+
+function decodeEntities(value) {
+  return value
+    .replaceAll("&amp;", "&")
+    .replaceAll("&quot;", '"')
+    .replaceAll("&#39;", "'")
+    .replaceAll("&lt;", "<")
+    .replaceAll("&gt;", ">");
+}
+
+function extractAttribute(tag, attribute) {
+  return tag.match(new RegExp(`${attribute}=["']([^"']+)["']`, "i"))?.[1] ?? null;
+}
+
+function normalizeUrl(value) {
+  const url = new URL(value);
+  url.hash = "";
+  return url.toString().replace(/\/$/, "");
+}
+
+async function fetchPublicUrl(publicUrl) {
+  if (publicAudit) {
+    return fetch(publicUrl, {
+      headers: {
+        accept: "text/html,application/xhtml+xml",
+        "user-agent": "Madabase conversion-path auditor/1.0",
+      },
+      redirect: "follow",
+      signal: AbortSignal.timeout(30_000),
+    });
+  }
+
+  const url = new URL(publicUrl);
+  return fetch(`${localOrigin}${url.pathname}${url.search}`, {
+    headers: {
+      accept: "text/html,application/xhtml+xml",
+      host: url.host,
+      "x-forwarded-host": url.host,
+      "x-forwarded-proto": "https",
+      "user-agent": "Madabase conversion-path auditor/1.0",
+    },
+    redirect: "follow",
+    signal: AbortSignal.timeout(30_000),
+  });
+}
+
+function softLaunchUrls() {
+  const configNames = [
+    "breadth-draft-network-product-research.json",
+    "breadth-draft-smarthome-product-research.json",
+    "breadth-draft-homeoffice-product-research.json",
+    "breadth-draft-baby-product-research.json",
+    "breadth-draft-pet-product-research.json",
+  ];
+
+  return configNames.flatMap((name) => {
+    const data = JSON.parse(fs.readFileSync(path.join(affiliateDir, "config", name), "utf8"));
+    return (data.products ?? []).filter((product) => product.site in selectedSiteHosts).map((product) =>
+      `https://${siteHosts[product.site]}/guides/${product.familySlug}-buying-guide`,
+    );
+  });
+}
+
+async function sitemapContentUrls() {
+  const urls = [];
+  for (const host of Object.values(selectedSiteHosts)) {
+    const sitemapUrl = `https://${host}/sitemap.xml`;
+    const response = await fetchPublicUrl(sitemapUrl);
+    const text = await response.text();
+    if (!response.ok) throw new Error(`${sitemapUrl} returned ${response.status}`);
+    for (const match of text.matchAll(/<loc>([^<]+)<\/loc>/g)) {
+      const url = new URL(decodeEntities(match[1]));
+      if (contentPathPattern.test(url.pathname) || marketContentPathPattern.test(url.pathname)) {
+        urls.push(normalizeUrl(url.toString()));
+      }
+    }
+  }
+  return urls;
+}
+
+function expandMarketRoutes(urls) {
+  if (!includeMarkets) return urls;
+  const expanded = [...urls];
+  for (const value of urls) {
+    const url = new URL(value);
+    if (!contentPathPattern.test(url.pathname)) continue;
+    for (const market of marketPrefixes) {
+      expanded.push(normalizeUrl(new URL(`/${market}${url.pathname}`, url.origin).toString()));
+    }
+  }
+  return expanded;
+}
+
+function siteForHost(host) {
+  return Object.entries(siteHosts).find(([, value]) => value === host)?.[0];
+}
+
+function pageKind(pathname) {
+  const parts = pathname.split("/").filter(Boolean);
+  const route = marketPrefixes.includes(parts[0]) ? parts[1] : parts[0];
+  return { reviews: "review", guides: "guide", best: "roundup", tools: "tool", categories: "category", products: "catalog-product" }[route] ?? "unknown";
+}
+
+function marketForPath(pathname) {
+  return marketPrefixes.find((prefix) => pathname.startsWith(`/${prefix}/`)) ?? "us";
+}
+
+async function inspectPage(publicUrl) {
+  const url = new URL(publicUrl);
+  const site = siteForHost(url.host);
+  const errors = [];
+  try {
+    const response = await fetchPublicUrl(publicUrl);
+    const html = await response.text();
+    const anchorTags = [...html.matchAll(/<a\b[^>]*href=["'][^"']+["'][^>]*>/gi)].map((match) => match[0]);
+    const affiliateAnchors = anchorTags
+      .map((tag) => ({
+        tag,
+        href: decodeEntities(extractAttribute(tag, "href") ?? ""),
+        rel: (extractAttribute(tag, "rel") ?? "").toLowerCase(),
+        source: extractAttribute(tag, "data-affiliate-link-source"),
+      }))
+      // Amazon detail URLs also appear in editorial source citations. Only
+      // instrumented commerce anchors (or sponsored CJ redirects) are CTAs.
+      .filter((anchor) =>
+        Boolean(anchor.source)
+        || (/\/go\/cj\//i.test(anchor.href) && anchor.rel.includes("sponsored")),
+      );
+    const amazonAnchors = affiliateAnchors.filter((anchor) => /amazon\.com\/dp\//i.test(anchor.href));
+    const cjAnchors = affiliateAnchors.filter((anchor) => /\/go\/cj\//i.test(anchor.href));
+    const expectedTag = siteTrackingIds[site];
+    const firstAffiliateIndex = html.indexOf("data-affiliate-link-source=");
+    const firstSponsoredCjIndex = html.search(/<a\b[^>]*href=["'][^"']*\/go\/cj\/[^"']+["'][^>]*rel=["'][^"']*sponsored/i);
+    const firstCommerceIndex = [firstAffiliateIndex, firstSponsoredCjIndex]
+      .filter((index) => index >= 0)
+      .sort((a, b) => a - b)[0] ?? -1;
+    const firstImageIndex = html.search(/<img\b/i);
+    const beforeFirstImage = firstCommerceIndex >= 0 && (firstImageIndex < 0 || firstCommerceIndex < firstImageIndex);
+    const requirePreImageCta = !(site === "style" && pageKind(url.pathname) === "review")
+      && pageKind(url.pathname) !== "catalog-product";
+
+    if (response.status !== 200) errors.push(`HTTP ${response.status}`);
+    if (!affiliateAnchors.length) errors.push("missing sponsored Amazon/CJ CTA");
+    else if (requirePreImageCta && !beforeFirstImage) errors.push("first affiliate CTA appears after the first page image");
+    for (const anchor of affiliateAnchors) {
+      if (!anchor.rel.includes("sponsored") || !anchor.rel.includes("nofollow")) {
+        errors.push(`CTA missing sponsored/nofollow: ${anchor.href}`);
+      }
+    }
+    for (const anchor of amazonAnchors) {
+      const tag = new URL(anchor.href).searchParams.get("tag");
+      if (tag !== expectedTag) errors.push(`wrong Amazon tracking ID ${tag ?? "missing"}; expected ${expectedTag}`);
+    }
+
+    return {
+      url: publicUrl,
+      site,
+      kind: pageKind(url.pathname),
+      market: marketForPath(url.pathname),
+      status: response.status,
+      amazonCtas: amazonAnchors.length,
+      cjCtas: cjAnchors.length,
+      ctaBeforeFirstImage: beforeFirstImage,
+      errors: [...new Set(errors)],
+    };
+  } catch (error) {
+    return {
+      url: publicUrl,
+      site,
+      kind: pageKind(url.pathname),
+      market: marketForPath(url.pathname),
+      errors: [error instanceof Error ? error.message : String(error)],
+    };
+  }
+}
+
+const baseUrls = [...new Set([...(await sitemapContentUrls()), ...softLaunchUrls()])];
+const exactUrls = [...new Set(expandMarketRoutes(baseUrls))].sort();
+const results = [];
+let nextIndex = 0;
+
+async function worker() {
+  while (nextIndex < exactUrls.length) {
+    const url = exactUrls[nextIndex++];
+    results.push(await inspectPage(url));
+  }
+}
+
+await Promise.all(Array.from({ length: Math.min(concurrency, exactUrls.length) }, () => worker()));
+results.sort((a, b) => a.url.localeCompare(b.url));
+const failures = results.filter((result) => result.errors.length);
+const report = {
+  checkedAt: new Date().toISOString(),
+  mode: publicAudit ? "public" : "local",
+  includeMarkets,
+  baseUrls: baseUrls.length,
+  exactUrls: exactUrls.length,
+  passed: results.length - failures.length,
+  failed: failures.length,
+  noCta: failures.filter((result) => result.errors.includes("missing sponsored Amazon/CJ CTA")).length,
+  bySite: Object.fromEntries(Object.keys(selectedSiteHosts).map((site) => [site, {
+    checked: results.filter((result) => result.site === site).length,
+    failed: failures.filter((result) => result.site === site).length,
+    noCta: failures.filter((result) => result.site === site && result.errors.includes("missing sponsored Amazon/CJ CTA")).length,
+  }])),
+  byKind: Object.fromEntries(["review", "guide", "roundup", "tool", "category", "catalog-product"].map((kind) => [kind, {
+    checked: results.filter((result) => result.kind === kind).length,
+    failed: failures.filter((result) => result.kind === kind).length,
+    noCta: failures.filter((result) => result.kind === kind && result.errors.includes("missing sponsored Amazon/CJ CTA")).length,
+  }])),
+  failureDetails: failures,
+};
+
+if (outputPath) fs.writeFileSync(outputPath, `${JSON.stringify(report, null, 2)}\n`);
+console.log("Affiliate conversion-path audit");
+console.log(JSON.stringify({
+  checkedAt: report.checkedAt,
+  mode: report.mode,
+  includeMarkets: report.includeMarkets,
+  baseUrls: report.baseUrls,
+  exactUrls: report.exactUrls,
+  passed: report.passed,
+  failed: report.failed,
+  noCta: report.noCta,
+  bySite: report.bySite,
+  byKind: report.byKind,
+  report: outputPath,
+}, null, 2));
+
+if (failures.length) {
+  console.error(`\n${failures.length} conversion-path failures; first 50:`);
+  console.error(JSON.stringify(failures.slice(0, 50), null, 2));
+  process.exit(1);
+}
+console.log("\nAffiliate conversion-path audit passed.");

@@ -7,6 +7,7 @@ import { BaseMarketEditionLinks } from "@/components/MarketExperience";
 import { SearchOpportunityBacklinks, SearchOpportunityBlock } from "@/components/SearchOpportunityBlock";
 import { StyleCollectionPage } from "@/components/StyleExperience";
 import { findProduct, findRoundup, siteGuides } from "@/lib/content";
+import { roundupCommerceProduct } from "@/lib/commerce-paths";
 import { effectiveContentUpdatedAt, findSearchOpportunity, searchOpportunityMetaDescription } from "@/lib/search-opportunities";
 import { breadcrumbSchema, faqPageSchema, pageMetadata, roundupArticleSchema, roundupProductListSchema } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
@@ -184,6 +185,8 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
     .map((productSlug) => findProduct(site.key, productSlug))
     .filter((product): product is NonNullable<ReturnType<typeof findProduct>> => Boolean(product));
   const topPick = picks[0];
+  const commerceProduct = roundupCommerceProduct(site.key, roundup);
+  const commerceIsAlternative = Boolean(topPick && commerceProduct && topPick.slug !== commerceProduct.slug);
   const topPickTradeOff = topPick?.cons[0] ?? "Confirm exact model, seller, and current configuration before checkout.";
   const category = site.categories.find((item) => item.slug === roundup.category);
   const relatedGuides = siteGuides(site.key)
@@ -205,7 +208,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
         <JsonLd data={roundupProductListSchema(site, roundup.title, picks)} />
         <JsonLd data={roundupArticleSchema(site, effectiveRoundup, picks)} />
         <JsonLd data={faqPageSchema(roundup.faqs)} />
-        <StyleCollectionPage roundup={effectiveRoundup} products={picks} />
+        <StyleCollectionPage site={site} roundup={effectiveRoundup} products={picks} />
         <div className="style-shell pb-12">
           <SearchOpportunityBacklinks site={site.key} kind="roundup" slug={slug} />
           <BaseMarketEditionLinks site={site} basePath={`/best/${slug}`} />
@@ -243,20 +246,25 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
               <span>Updated {effectiveUpdatedAt}</span>
             </div>
           ) : null}
-          {topPick ? (
+          {topPick || commerceProduct ? (
             <div className="mt-4 grid gap-3 rounded-md border border-[var(--border)] bg-white p-4 sm:mt-5 sm:gap-4 sm:p-5 sm:grid-cols-[1fr_auto]">
               <div>
-                <p className="text-xs font-bold uppercase text-[var(--muted)]">Best starting pick</p>
-                <h2 className="mt-2 text-lg font-bold sm:text-xl">{topPick.amazonTitle ?? topPick.name}</h2>
-                <p className="mt-2 text-sm leading-5 text-[var(--muted)] sm:leading-6">Best for: {topPick.bestFor}</p>
-                <p className="mt-1 text-sm leading-5 text-[var(--muted)] sm:leading-6">Skip if: {topPickTradeOff}</p>
-                <p className="mt-1 text-sm font-semibold leading-5 text-[var(--brand-strong)] sm:leading-6">Price band: {topPick.priceBand}</p>
+                <p className="text-xs font-bold uppercase text-[var(--muted)]">Purchase path</p>
+                <h2 className="mt-2 text-lg font-bold sm:text-xl">{topPick?.amazonTitle ?? topPick?.name ?? commerceProduct?.amazonTitle ?? commerceProduct?.name}</h2>
+                {topPick ? <p className="mt-2 text-sm leading-5 text-[var(--muted)] sm:leading-6">Best for: {topPick.bestFor}</p> : null}
+                {topPick ? <p className="mt-1 text-sm leading-5 text-[var(--muted)] sm:leading-6">Skip if: {topPickTradeOff}</p> : null}
+                {topPick ? <p className="mt-1 text-sm font-semibold leading-5 text-[var(--brand-strong)] sm:leading-6">Price band: {topPick.priceBand}</p> : null}
+                {commerceIsAlternative ? (
+                  <p className="mt-2 text-sm leading-6 text-[var(--muted)]">The first pick has no verified retailer path right now. The purchase button is for the clearly labeled alternative {commerceProduct?.name}.</p>
+                ) : null}
               </div>
               <div className="flex flex-wrap items-start gap-2 sm:justify-end">
-                <Link className="button-secondary" href={`/reviews/${topPick.slug}`}>
-                  Evidence notes
-                </Link>
-                <AffiliateButtonGroup site={site.key} product={topPick} position="roundup-hero-primary" limit={1} />
+                {topPick ? (
+                  <Link className="button-secondary" href={`/reviews/${topPick.slug}`}>
+                    Evidence notes
+                  </Link>
+                ) : null}
+                {commerceProduct ? <AffiliateButtonGroup site={site.key} product={commerceProduct} position={commerceIsAlternative ? "roundup-hero-verified-alternative" : "roundup-hero-primary"} limit={1} /> : null}
               </div>
             </div>
           ) : null}

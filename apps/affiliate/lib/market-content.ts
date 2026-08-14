@@ -14,7 +14,15 @@ import {
   siteRoundups,
   siteTools,
 } from "./content";
+import {
+  categoryCommerceProduct,
+  guideCommerceProduct,
+  reviewCommerceProduct,
+  roundupCommerceProduct,
+  toolCommerceProduct,
+} from "./commerce-paths";
 import { sites } from "./sites";
+import { findAmazonFamilyProduct } from "./amazon-family-products";
 import type { MarketKey, SiteKey } from "./types";
 
 export type MarketContentRoute = "reviews" | "guides" | "best" | "tools" | "categories";
@@ -41,6 +49,9 @@ export type LocalizedMarketPage = {
   slug: string;
   indexStatus: "qualified" | "compatibility";
   primaryProductSlug?: string;
+  commerceProductSlug?: string;
+  commerceFamilyAsin?: string;
+  commerceFamilyTitle?: string;
   sourceTitle?: string;
   sourceDek?: string;
   sourceDecision?: string;
@@ -592,6 +603,7 @@ function automaticPagesForSite(siteKey: SiteKey): LocalizedMarketPage[] {
         route: "reviews" as const,
         slug: product.slug,
         primaryProductSlug: product.slug,
+        commerceProductSlug: reviewCommerceProduct(siteKey, product)?.slug,
         sourceTitle: product.amazonTitle ?? product.name,
         sourceDek: product.summary,
         sourceDecision: product.verdict ?? product.summary,
@@ -628,6 +640,7 @@ function automaticPagesForSite(siteKey: SiteKey): LocalizedMarketPage[] {
         route: "best" as const,
         slug: roundup.slug,
         primaryProductSlug: topPick?.slug,
+        commerceProductSlug: roundupCommerceProduct(siteKey, roundup)?.slug,
         sourceTitle: roundup.title,
         sourceDek: roundup.dek,
         sourceDecision: topPick
@@ -651,11 +664,17 @@ function automaticPagesForSite(siteKey: SiteKey): LocalizedMarketPage[] {
       const primaryProduct = guide.relatedProducts
         ?.map((slug) => findProduct(siteKey, slug))
         .find(Boolean);
+      const familyProduct = guide.familySlug
+        ? findAmazonFamilyProduct(siteKey, guide.familySlug)
+        : undefined;
       return {
         site: siteKey,
         route: "guides" as const,
         slug: guide.slug,
         primaryProductSlug: primaryProduct?.slug,
+        commerceProductSlug: familyProduct ? undefined : guideCommerceProduct(siteKey, guide)?.slug,
+        commerceFamilyAsin: familyProduct?.asin,
+        commerceFamilyTitle: familyProduct?.title,
         sourceTitle: guide.title,
         sourceDek: guide.dek,
         sourceDecision: guide.sections[0]?.body,
@@ -686,6 +705,7 @@ function automaticPagesForSite(siteKey: SiteKey): LocalizedMarketPage[] {
         site: siteKey,
         route: "tools" as const,
         slug: tool.slug,
+        commerceProductSlug: toolCommerceProduct(siteKey, tool)?.slug,
         sourceTitle: tool.title,
         sourceDek: tool.dek,
         sourceDecision: tool.sections?.[0]?.body ?? tool.dek,
@@ -710,6 +730,7 @@ function automaticPagesForSite(siteKey: SiteKey): LocalizedMarketPage[] {
         site: siteKey,
         route: "categories" as const,
         slug: category.slug,
+        commerceProductSlug: categoryCommerceProduct(siteKey, category.slug)?.slug,
         sourceTitle: category.name,
         sourceDek: category.description,
         sourceDecision: `Use this category to compare ${category.name.toLowerCase()} by exact need, compatibility and ownership trade-offs.`,

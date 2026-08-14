@@ -9,6 +9,7 @@ import { BaseMarketEditionLinks } from "@/components/MarketExperience";
 import { SearchOpportunityBacklinks, SearchOpportunityBlock } from "@/components/SearchOpportunityBlock";
 import { StyleProductPage } from "@/components/StyleExperience";
 import { findProduct, siteGuides, siteProducts, siteRoundups } from "@/lib/content";
+import { reviewCommerceProduct } from "@/lib/commerce-paths";
 import { findAmazonOfferBlock } from "@/lib/amazon-offer-blocks";
 import { productEvidencePresentation } from "@/lib/evidence";
 import { effectiveContentUpdatedAt, findSearchOpportunity, searchOpportunityMetaDescription } from "@/lib/search-opportunities";
@@ -134,6 +135,9 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
 
   const context = siteContext(site.key);
   const primaryOffers = product.offers.slice(0, 2);
+  const commerceProduct = reviewCommerceProduct(site.key, product);
+  const commerceOffer = commerceProduct?.offers[0];
+  const commerceIsAlternative = Boolean(commerceProduct && commerceProduct.slug !== product.slug);
   const sourceCount = product.sources?.length ?? 0;
   const externalTests = product.externalTests ?? [];
   const evidencePresentation = productEvidencePresentation(product);
@@ -182,6 +186,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
         <StyleProductPage
           site={site}
           product={effectiveProduct}
+          commerceProduct={commerceProduct}
           related={related}
           relatedRoundups={relatedRoundups}
           relatedGuides={relatedGuides}
@@ -229,10 +234,17 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                 <div className="mt-6 flex flex-wrap items-center gap-3">
                   <span className="rounded-md bg-[var(--brand-soft)] px-3 py-2 font-semibold text-[var(--brand-strong)]">{product.bestFor}</span>
                   <span className="rounded-md border border-[var(--border)] bg-white px-3 py-2 text-sm font-semibold text-[var(--muted)]">Price band: {product.priceBand}</span>
-                  {primaryOffers[0] ? (
-                    <AffiliateButton site={site.key} product={product} offer={primaryOffers[0]} position="review-hero" />
-                  ) : null}
                 </div>
+                {commerceProduct && commerceOffer ? (
+                  <div className="mt-4 rounded-md border border-[var(--border)] bg-white p-4">
+                    <p className="text-xs font-bold uppercase text-[var(--muted)]">{commerceIsAlternative ? "Verified retailer alternative" : "Verified retailer option"}</p>
+                    <p className="mt-2 font-bold">{commerceProduct.amazonTitle ?? commerceProduct.name}</p>
+                    {commerceIsAlternative ? <p className="mt-1 text-sm leading-6 text-[var(--muted)]">This is a different product, shown because the exact reviewed listing is paused or unavailable.</p> : null}
+                    <div className="mt-3">
+                      <AffiliateButton site={site.key} product={commerceProduct} offer={commerceOffer} position={commerceIsAlternative ? "review-hero-verified-alternative" : "review-hero"} />
+                    </div>
+                  </div>
+                ) : null}
                 {asin ? <AmazonListingFreshness site={site.key} productSlug={product.slug} /> : null}
                 {offerBlock ? (
                   <div className="mt-5 rounded-md border border-amber-300 bg-amber-50 p-4 text-sm leading-6 text-amber-950">
@@ -243,7 +255,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                     </p>
                   </div>
                 ) : null}
-                {primaryOffers.length ? (
+                {commerceOffer ? (
                   <section
                     aria-label="Mobile purchase decision checks"
                     className="mt-5 rounded-md border border-[var(--border)] bg-white p-4 md:hidden"
@@ -255,8 +267,8 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                         <dd className="text-[var(--muted)]">{product.cons[0] ?? "The main trade-off conflicts with your most important use case."}</dd>
                       </div>
                       <div className="grid gap-1 py-2">
-                        <dt className="font-bold text-[var(--text)]">Verify on {primaryOffers[0].merchant}</dt>
-                        <dd className="text-[var(--muted)]">{primaryOffers[0].priceNote}</dd>
+                        <dt className="font-bold text-[var(--text)]">Verify on {commerceOffer.merchant}</dt>
+                        <dd className="text-[var(--muted)]">{commerceOffer.priceNote}</dd>
                       </div>
                     </dl>
                   </section>
@@ -624,7 +636,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
             <div className="panel p-5" id="buying-options">
               <h2 className="text-xl font-bold">Buying options</h2>
               <div className="mt-4 space-y-3">
-                {product.offers.length === 0 ? (
+                {product.offers.length === 0 && !commerceOffer ? (
                   <p className="text-sm leading-6 text-[var(--muted)]">
                     {offerBlock
                       ? "No purchase button is shown while the exact Amazon product identity or availability is unresolved."
@@ -640,6 +652,16 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                     </div>
                   </div>
                 ))}
+                {product.offers.length === 0 && commerceProduct && commerceOffer ? (
+                  <div className="rounded-md border border-[var(--border)] p-3">
+                    <p className="text-xs font-bold uppercase text-[var(--muted)]">Verified alternative—not the reviewed model</p>
+                    <p className="mt-1 font-bold">{commerceProduct.amazonTitle ?? commerceProduct.name}</p>
+                    <p className="mt-1 text-sm text-[var(--muted)]">{commerceOffer.priceNote}</p>
+                    <div className="mt-3">
+                      <AffiliateButton site={site.key} product={commerceProduct} offer={commerceOffer} position="review-sidebar-verified-alternative" />
+                    </div>
+                  </div>
+                ) : null}
               </div>
             </div>
             <div className="panel p-5">

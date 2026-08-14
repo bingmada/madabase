@@ -112,6 +112,9 @@ export default async function SmallSpaceHalloweenAnimatronicsPage() {
     const product = productsBySlug.get(slug);
     return product ? [product] : [];
   });
+  const heroProduct = orderedProducts.find((product) =>
+    product.activeLink && product.authorizedImage && product.availability !== "out of stock",
+  );
   const editorialPicks = costumeHalloweenPicks.filter((pick) => animatronicSlugs.includes(pick.slug));
   const articleSchema = {
     "@context": "https://schema.org",
@@ -163,6 +166,11 @@ export default async function SmallSpaceHalloweenAnimatronicsPage() {
             </p>
           </div>
           <div className="mt-7 flex flex-wrap gap-3">
+            {heroProduct?.activeLink ? (
+              <Link className="button-primary !bg-[#df7627] !text-white" href={`/go/cj/${heroProduct.activeLink.clickToken}`} rel="nofollow sponsored">
+                Check {heroProduct.title} at Abracadabra <ArrowRight aria-hidden="true" size={16} />
+              </Link>
+            ) : null}
             <Link className="button-primary !bg-[#df7627] !text-white" href="#animatronic-picks">Compare the three picks <ArrowRight aria-hidden="true" size={16} /></Link>
             <Link className="button-secondary bg-white/95" href="/guides/large-prop-animatronic-space-and-power-checklist">Open the setup checklist</Link>
           </div>

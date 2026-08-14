@@ -1,9 +1,11 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CalculatorTool } from "@/components/Calculator";
+import { AffiliateButtonGroup } from "@/components/AffiliateButton";
 import { JsonLd } from "@/components/JsonLd";
 import { BaseMarketEditionLinks } from "@/components/MarketExperience";
 import { findRoundup, findTool } from "@/lib/content";
+import { toolCommerceProduct } from "@/lib/commerce-paths";
 import { breadcrumbSchema, faqPageSchema, pageMetadata, toolSchema } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 
@@ -21,6 +23,7 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
   const tool = findTool(site.key, slug);
   if (!tool) notFound();
   const category = site.categories.find((item) => item.slug === tool.category);
+  const commerceProduct = toolCommerceProduct(site.key, tool);
 
   return (
     <main className="section">
@@ -45,6 +48,20 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
         <h1 className="mt-3 text-4xl font-black leading-tight">{tool.title}</h1>
         <p className="mt-5 text-lg leading-8 text-[var(--muted)]">{tool.dek}</p>
         {tool.updatedAt ? <p className="mt-3 text-sm font-semibold text-[var(--muted)]">Updated {tool.updatedAt} · Planning estimate, not a product guarantee</p> : null}
+        {commerceProduct ? (
+          <section className="mt-6 rounded-md border border-[var(--border)] bg-white p-5" aria-label="Related verified retailer option">
+            <p className="eyebrow">Related verified retailer option</p>
+            <div className="mt-3 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <h2 className="text-xl font-bold">{commerceProduct.amazonTitle ?? commerceProduct.name}</h2>
+                <p className="mt-2 max-w-xl text-sm leading-6 text-[var(--muted)]">Use the calculator result to decide whether this related product fits; then confirm the exact model, seller, bundle, and return path before checkout.</p>
+              </div>
+              <div className="shrink-0">
+                <AffiliateButtonGroup site={site.key} product={commerceProduct} position="tool-hero-related-option" limit={1} />
+              </div>
+            </div>
+          </section>
+        ) : null}
         <BaseMarketEditionLinks site={site} basePath={`/tools/${slug}`} />
         <div className="mt-8">
           <CalculatorTool tool={tool} />

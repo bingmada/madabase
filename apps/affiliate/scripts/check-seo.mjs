@@ -570,11 +570,14 @@ if (
   !reviewFirstScreenSource.includes('aria-label="Mobile purchase decision checks"') ||
   !reviewFirstScreenSource.includes("md:hidden") ||
   !reviewFirstScreenSource.includes("product.cons[0]") ||
-  !reviewFirstScreenSource.includes("primaryOffers[0].priceNote")
+  !reviewFirstScreenSource.includes("commerceOffer.priceNote")
 ) {
   errors.push("Product template must show mobile skip and merchant-listing verification checks before the product image");
 }
-if (!reviewFirstScreenSource.includes('position="review-hero"')) {
+if (
+  !reviewFirstScreenSource.includes("<AffiliateButton")
+  || !reviewFirstScreenSource.includes('"review-hero"')
+) {
   errors.push("Product template must show the primary sponsored CTA before the product image");
 }
 

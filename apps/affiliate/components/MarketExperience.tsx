@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, Globe2, MapPin, ShieldCheck } from "lucide-react";
-import { AffiliateButtonGroup } from "./AffiliateButton";
+import { AffiliateButton, AffiliateButtonGroup } from "./AffiliateButton";
 import { AmazonListingFreshness } from "./AmazonCreatorsListing";
 import { JsonLd } from "./JsonLd";
 import {
@@ -19,6 +19,7 @@ import { marketKeys, marketPath, markets, type MarketProfile } from "@/lib/marke
 import { absoluteUrl } from "@/lib/seo";
 import type { SiteConfig } from "@/lib/sites";
 import { findProduct } from "@/lib/content";
+import { amazonAsinAffiliateUrl } from "@/lib/affiliate-tracking";
 
 function marketEditionLinks(currentMarket: MarketProfile, basePath = "/") {
   return marketKeys.map((key) => {
@@ -308,17 +309,38 @@ export function LocalizedMarketContent({
   const product = page.primaryProductSlug
     ? findProduct(site.key, page.primaryProductSlug)
     : undefined;
+  const commerceProduct = page.commerceProductSlug
+    ? findProduct(site.key, page.commerceProductSlug)
+    : product;
+  const commerceIsAlternative = Boolean(product && commerceProduct && product.slug !== commerceProduct.slug);
   const displayName = product?.amazonTitle ?? product?.name ?? page.sourceTitle ?? page.slug;
   const displayImage =
     page.image ?? product?.amazonImage ?? product?.image ?? site.heroImage;
-  const marketProduct = product
+  const marketProduct = commerceProduct
     ? {
-        ...product,
-        offers: product.offers.map((offer) => ({
+        ...commerceProduct,
+        offers: commerceProduct.offers.map((offer) => ({
           ...offer,
           label: market.labels.cta,
           priceNote: market.labels.oneLink,
         })),
+      }
+    : undefined;
+  const commerceFamilyIdentity = page.commerceFamilyAsin && page.commerceFamilyTitle
+    ? {
+        slug: `family-${page.slug}-${page.commerceFamilyAsin.toLowerCase()}`,
+        name: page.commerceFamilyTitle,
+        amazonTitle: page.commerceFamilyTitle,
+        asin: page.commerceFamilyAsin,
+        specs: { ASIN: page.commerceFamilyAsin },
+      }
+    : undefined;
+  const commerceFamilyOffer = page.commerceFamilyAsin
+    ? {
+        merchant: "Amazon US",
+        url: amazonAsinAffiliateUrl(site.key, page.commerceFamilyAsin),
+        label: market.labels.cta,
+        priceNote: market.labels.oneLink,
       }
     : undefined;
   const basePath = basePathForMarketPage(page);
@@ -380,15 +402,22 @@ export function LocalizedMarketContent({
             <section className="mt-8 rounded-md border border-[var(--brand)] bg-[var(--brand-soft)] p-6">
               <p className="eyebrow">{market.labels.quickAnswer}</p>
               <p className="mt-3 text-lg font-bold leading-8">{variant.quickAnswer}</p>
-              {marketProduct && marketProduct.offers.length ? (
+              {(marketProduct && marketProduct.offers.length) || (commerceFamilyIdentity && commerceFamilyOffer) ? (
                 <div className="mt-5">
-                  <AffiliateButtonGroup site={site.key} product={marketProduct} market={market.key} position={`market-${market.key}-hero`} limit={1} />
+                  <p className="mb-3 text-sm font-semibold leading-6 text-[var(--muted)]">
+                    {commerceFamilyIdentity?.amazonTitle ?? (commerceIsAlternative ? `Verified alternative—not the original item: ${commerceProduct?.amazonTitle ?? commerceProduct?.name}` : commerceProduct?.amazonTitle ?? commerceProduct?.name)}
+                  </p>
+                  {commerceFamilyIdentity && commerceFamilyOffer ? (
+                    <AffiliateButton site={site.key} product={commerceFamilyIdentity} offer={commerceFamilyOffer} market={market.key} position={`market-${market.key}-family-hero`} resolveCreatorsListing={false} />
+                  ) : marketProduct ? (
+                    <AffiliateButtonGroup site={site.key} product={marketProduct} market={market.key} position={`market-${market.key}-hero`} limit={1} />
+                  ) : null}
                 </div>
               ) : null}
-              {product ? (
+              {commerceProduct ? (
                 <AmazonListingFreshness
                   site={site.key}
-                  productSlug={product.slug}
+                  productSlug={commerceProduct.slug}
                   market={market.key}
                 />
               ) : null}

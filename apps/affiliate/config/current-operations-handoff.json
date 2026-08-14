@@ -1,5 +1,28 @@
 {
-  "updatedAt": "2026-08-13T17:08:18+08:00",
+  "updatedAt": "2026-08-14T11:03:14+08:00",
+  "conversionIntegrityP0": {
+    "status": "local_release_validated_pending_production_deploy",
+    "trigger": "https://baby.madabase.com/guides/ergobaby-omni-breeze-positions-by-age had traffic but no monetization CTA.",
+    "rootCause": "The guide points to ergobaby-omni-breeze-carrier, whose former ASIN B0CCNT3HLW is correctly suppressed because the Amazon listing drifted to a different two-carrier bundle. Guide and review templates had no verified-commerce fallback after that suppression, and the old audits checked configured offers rather than rendered money-page CTA coverage.",
+    "remediation": "Added a shared exact-first commerce-path resolver and pre-image, mobile-visible tracked CTAs across Amazon guides, reviews, roundups, tools and categories, including localized market routes. Added equivalent CJ hero paths to Costume guides, categories and the curated animatronic roundup using only eligible database-backed products. A blocked exact product may use a clearly labeled verified alternative, never the original product name or an unverified ASIN.",
+    "targetPage": "The Omni Breeze positions-by-age guide now explicitly says the exact Omni Breeze listing is paused and offers the verified BabyBjorn Harmony alternative, ASIN B0947B35TG, with the Baby site tag madababy-20. Do not restore the exact Omni Breeze purchase claim until a current exact listing is independently verified.",
+    "baseline": {
+      "amazonSites": "1,335 pages checked; 70 had no CTA and 1,043 had conversion-path issues, largely because the first CTA appeared after the first image.",
+      "costume": "132 production pages checked; 50 guides and 5 categories had no CJ CTA, while one animatronic roundup placed its first CTA after the first image. The 76 catalog product pages passed."
+    },
+    "localValidation": {
+      "allAmazonMarketPages": "6,710_of_6,710_passed",
+      "amazonBreakdown": { "network": 1210, "smarthome": 1295, "homeoffice": 1360, "baby": 1245, "pet": 1255, "style": 345 },
+      "contentKinds": { "reviews": 850, "guides": 5325, "roundups": 385, "tools": 35, "categories": 115 },
+      "affiliateLinks": "300_of_300_passed; 8 known drifted or unavailable offers remained suppressed",
+      "seo": "passed",
+      "softLaunch": "151_of_151_passed_and_sitemap_excluded",
+      "distributionImages": "18_across_6_sites_passed",
+      "releaseBuild": "Next.js production build, lint/type checks, static generation and Linux standalone packaging passed"
+    },
+    "productionGate": "After deploy, use bounded samples only: verify all seven hosts, both target Baby pages, localized exact-family routing, Costume guide/category/roundup CJ paths against the production database, affiliate attribution, PM2 stability and current assets. Do not run a high-concurrency full-site audit on the 1.6GB production server.",
+    "discovery": "This is a template conversion release with no new URLs. Do not submit the 151 soft-launch cohort to sitemaps, IndexNow or external distribution."
+  },
   "purpose": "Tracked cross-conversation snapshot. Read docs/affiliate-growth-state.json for the complete mutable source of truth and docs/affiliate-growth-runbook.md for operating rules.",
   "release": {
     "active": "b6daae2",
@@ -81,6 +104,25 @@
     "day7": "2026-08-20",
     "day14": "2026-08-27",
     "day28": "2026-09-10"
+  },
+  "latestExternalDistribution": {
+    "date": "2026-08-13",
+    "log": "docs/affiliate-growth-distribution-2026-08-13.md",
+    "newSoftLaunchPagesUsed": false,
+    "published": {
+      "reddit": "https://www.reddit.com/r/TpLink/comments/1vmy12i/comment/p3fidhd/",
+      "pinterest": "https://www.pinterest.com/pin/1105915252277571662/"
+    },
+    "redditLinkPath": "Three useful no-link contributions now follow the removed 2026-07-29 disclosed-link test. Require two more useful no-link contributions on separate future sessions before one disclosed exact-match Madabase editorial-link test; never use a direct affiliate link or edit an earlier answer to add a URL.",
+    "otherChannels": {
+      "quora": "Existing disclosed Matter answer reverified at 3 views and position 1 of 2; no qualified new question was available.",
+      "snbforums": "Account bingmada is banned for Spam; do not bypass or appeal without owner direction.",
+      "homeAssistant": "Logged out; old candidate reached 81 views and is stale.",
+      "tiktok": "Prior post is unavailable; public profile shows 0 followers, 0 likes, and no content.",
+      "instagramAndX": "Signed out.",
+      "youtube": "Signed in, but no channel exists.",
+      "facebook": "No established public Page."
+    }
   },
   "doNotDo": [
     "Do not add the 151 soft-launch pages to sitemap, IndexNow or external distribution before their gate.",

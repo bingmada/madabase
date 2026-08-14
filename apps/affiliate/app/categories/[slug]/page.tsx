@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/JsonLd";
+import { AffiliateButtonGroup } from "@/components/AffiliateButton";
 import { BaseMarketEditionLinks } from "@/components/MarketExperience";
 import { ProductCard, RoundupCard } from "@/components/LayoutParts";
 import { StyleCategoryPage } from "@/components/StyleExperience";
 import { CostumeCategoryPage } from "@/components/CostumeExperience";
 import { siteGuides, siteProducts, siteRoundups, siteTools } from "@/lib/content";
+import { categoryCommerceProduct } from "@/lib/commerce-paths";
 import { breadcrumbSchema, itemListSchema, pageMetadata } from "@/lib/seo";
 import { prioritizeBySearchDemand } from "@/lib/search-demand-priorities";
 import { getCurrentSite } from "@/lib/sites";
@@ -190,6 +192,7 @@ export default async function CategoryPage({
     (item) => `/guides/${item.slug}`,
   );
   const tools = siteTools(site.key).filter((item) => item.category === slug);
+  const commerceProduct = categoryCommerceProduct(site.key, slug);
   const categoryItems = [
     ...products.map((product) => ({ name: product.amazonTitle ?? product.name, path: `/reviews/${product.slug}` })),
     ...roundups.map((roundup) => ({ name: roundup.title, path: `/best/${roundup.slug}` })),
@@ -203,9 +206,11 @@ export default async function CategoryPage({
         <JsonLd data={breadcrumbSchema(site, [{ name: "Home", path: "/" }, { name: category.name, path: `/categories/${slug}` }])} />
         <JsonLd data={itemListSchema(site, `${category.name} buying guides`, categoryItems)} />
         <StyleCategoryPage
+          site={site}
           title={category.name}
           description={category.description}
           products={products}
+          commerceProduct={commerceProduct}
           roundups={roundups}
           guides={guides}
         />
@@ -224,6 +229,18 @@ export default async function CategoryPage({
         <p className="eyebrow">Category</p>
         <h1 className="mt-3 text-4xl font-black">{category.name}</h1>
         <p className="mt-4 max-w-2xl text-lg leading-8 text-[var(--muted)]">{category.description}</p>
+        {commerceProduct ? (
+          <section className="mt-6 flex flex-col gap-4 rounded-md border border-[var(--border)] bg-white p-5 sm:flex-row sm:items-center sm:justify-between" aria-label="Category retailer starting point">
+            <div>
+              <p className="eyebrow">Verified retailer starting point</p>
+              <h2 className="mt-2 text-xl font-bold">{commerceProduct.amazonTitle ?? commerceProduct.name}</h2>
+              <p className="mt-2 max-w-xl text-sm leading-6 text-[var(--muted)]">A currently verified option in this category; confirm the exact model, seller, configuration, and return path before buying.</p>
+            </div>
+            <div className="shrink-0">
+              <AffiliateButtonGroup site={site.key} product={commerceProduct} position="category-hero-starting-option" limit={1} />
+            </div>
+          </section>
+        ) : null}
         <BaseMarketEditionLinks site={site} basePath={`/categories/${slug}`} />
         <section className="mt-8 rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-5">
           <h2 className="text-xl font-bold">How to think about {category.name.toLowerCase()}</h2>
