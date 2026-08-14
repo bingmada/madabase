@@ -20,6 +20,7 @@ import { guideCommerceProduct, isCommerceAlternative } from "@/lib/commerce-path
 import {
   isCostumeProductIndexable,
   listCostumeCatalogProducts,
+  listIndexableCostumeProducts,
   parseCostumeCatalogFilters,
   type CostumeCatalogCategory,
   type CostumeCatalogFeature,
@@ -266,7 +267,14 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
     : [];
   const costumeCommerceProduct = costumeCatalogProducts.find((product) =>
     product.activeLink && product.authorizedImage && product.availability !== "out of stock",
-  );
+  ) ?? (site.key === "costume"
+    ? (await listIndexableCostumeProducts(100)).find((product) =>
+        product.categorySlug === guide.category
+        && product.activeLink
+        && product.authorizedImage
+        && product.availability !== "out of stock",
+      )
+    : undefined);
 
   if (site.key === "style") {
     return (

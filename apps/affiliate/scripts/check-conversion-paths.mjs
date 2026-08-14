@@ -178,12 +178,12 @@ async function inspectPage(publicUrl) {
     const expectedTag = siteTrackingIds[site];
     const firstAffiliateIndex = html.indexOf("data-affiliate-link-source=");
     const firstSponsoredCjIndex = html.search(/<a\b[^>]*href=["'][^"']*\/go\/cj\/[^"']+["'][^>]*rel=["'][^"']*sponsored/i);
-    const firstCommerceIndex = [firstAffiliateIndex, firstSponsoredCjIndex]
+    const firstViewportAnchorIndex = html.indexOf("data-first-viewport-affiliate=");
+    const firstCommerceIndex = [firstAffiliateIndex, firstSponsoredCjIndex, firstViewportAnchorIndex]
       .filter((index) => index >= 0)
       .sort((a, b) => a - b)[0] ?? -1;
     const firstViewportContainerIndex = html.indexOf("data-first-viewport-commerce=");
     const firstH1CloseIndex = html.indexOf("</h1>");
-    const firstViewportAnchorIndex = html.indexOf("data-first-viewport-affiliate=");
     const firstViewportContainerFollowsH1 = firstH1CloseIndex >= 0
       && firstViewportContainerIndex > firstH1CloseIndex
       && firstViewportContainerIndex - firstH1CloseIndex <= 1_000;
