@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-08-14T11:03:14+08:00",
+  "updatedAt": "2026-08-14T11:26:16+08:00",
   "conversionIntegrityP0": {
-    "status": "local_release_validated_pending_production_deploy",
+    "status": "production_deployed_and_verified",
     "trigger": "https://baby.madabase.com/guides/ergobaby-omni-breeze-positions-by-age had traffic but no monetization CTA.",
     "rootCause": "The guide points to ergobaby-omni-breeze-carrier, whose former ASIN B0CCNT3HLW is correctly suppressed because the Amazon listing drifted to a different two-carrier bundle. Guide and review templates had no verified-commerce fallback after that suppression, and the old audits checked configured offers rather than rendered money-page CTA coverage.",
     "remediation": "Added a shared exact-first commerce-path resolver and pre-image, mobile-visible tracked CTAs across Amazon guides, reviews, roundups, tools and categories, including localized market routes. Added equivalent CJ hero paths to Costume guides, categories and the curated animatronic roundup using only eligible database-backed products. A blocked exact product may use a clearly labeled verified alternative, never the original product name or an unverified ASIN.",
@@ -20,17 +20,17 @@
       "distributionImages": "18_across_6_sites_passed",
       "releaseBuild": "Next.js production build, lint/type checks, static generation and Linux standalone packaging passed"
     },
-    "productionGate": "After deploy, use bounded samples only: verify all seven hosts, both target Baby pages, localized exact-family routing, Costume guide/category/roundup CJ paths against the production database, affiliate attribution, PM2 stability and current assets. Do not run a high-concurrency full-site audit on the 1.6GB production server.",
+    "productionGate": "Passed in immutable release 4b1035a. Candidate and production returned HTTP 200 on all seven hosts; the target Baby guide, blocked-product review, en-gb guide, exact localized Pet family, Costume guide, category and roundup, CJ 302 route, current and retained assets, PM2 path and public cache-bypassed plus normal target URL passed. Continue to avoid high-concurrency full-site audits on the 1.6GB production server.",
     "discovery": "This is a template conversion release with no new URLs. Do not submit the 151 soft-launch cohort to sitemaps, IndexNow or external distribution."
   },
   "purpose": "Tracked cross-conversation snapshot. Read docs/affiliate-growth-state.json for the complete mutable source of truth and docs/affiliate-growth-runbook.md for operating rules.",
   "release": {
-    "active": "b6daae2",
-    "commit": "b6daae2305c31957e465b92e13c8d2441423a9a3",
+    "active": "4b1035a",
+    "commit": "4b1035a406d6ba7ab29355216efc042f620d7843",
     "branch": "lyd-0609",
     "pushed": true,
-    "productionPath": "/srv/madabase-affiliate/releases/b6daae2/apps/affiliate",
-    "rollback": "369b97d",
+    "productionPath": "/srv/madabase-affiliate/releases/4b1035a/apps/affiliate",
+    "rollback": "b6daae2",
     "sevenHostsHttp200": true,
     "pm2Saved": true,
     "candidateRemoved": true
@@ -38,11 +38,11 @@
   "serverStability": {
     "serverMemoryApprox": "1.6GB",
     "pm2MaxMemoryRestart": "350M",
-    "releaseRestartCountObserved": 1,
+    "releaseRestartCountObserved": 0,
     "unstableRestarts": 0,
-    "errorLog": "empty after the restart",
-    "settledMemoryApprox": "221MB",
-    "cause": "intentionally concurrent full 118-page production runtime audit",
+    "errorLog": "empty during bounded candidate and production verification",
+    "settledMemoryApprox": "234MB after roughly four minutes",
+    "cause": "Release 4b1035a used bounded candidate and production sampling. Superseded release b6daae2 had accumulated 14 max-memory restarts over roughly 90 minutes before cutover, so production concurrency remains restricted.",
     "rule": "Run full high-concurrency audits on a candidate or local immutable runtime; use bounded sampling on production."
   },
   "cohorts": {
@@ -86,7 +86,7 @@
   "merchantAndSiteBoundaries": {
     "amazonFirstSites": ["network", "smarthome", "homeoffice", "baby", "pet", "style"],
     "babyCj": "Only the separately recorded bounded Bc Babycare pilot is authorized.",
-    "costume": "Unchanged in this release; products remain database-backed and use the separate Abracadabra/CJ model.",
+    "costume": "Database-backed eligible Abracadabra/CJ products now supply pre-image guide and category paths plus the curated roundup path. Production exact guide/category/roundup samples and a CJ 302 redirect passed.",
     "petMedicationMerchant": "CanadaPetCare remains blocked from public CTAs.",
     "style": "maintenance_only"
   },
@@ -97,7 +97,8 @@
     "existingRefreshRuntime": "118_of_118_passed",
     "distributionImages": "18_across_6_sites_passed",
     "publicHosts": "7_of_7_http_200",
-    "currentAndRetainedAssets": "http_200"
+    "currentAndRetainedAssets": "http_200",
+    "conversionPaths": "local_all_market_amazon_6710_of_6710; production_bounded_amazon_and_costume_samples_passed"
   },
   "measurementGates": {
     "day3": "2026-08-16",
