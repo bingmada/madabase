@@ -14,6 +14,7 @@ export function AffiliateButton({
   market,
   position,
   resolveCreatorsListing = true,
+  firstViewport = false,
 }: {
   site: SiteKey;
   product: AffiliateProductIdentity;
@@ -21,6 +22,7 @@ export function AffiliateButton({
   market?: MarketKey;
   position: string;
   resolveCreatorsListing?: boolean;
+  firstViewport?: boolean;
 }) {
   const amazonMarket: AmazonMarketKey = market ?? "us";
   const isAmazon = offer.merchant.toLowerCase().includes("amazon");
@@ -72,6 +74,7 @@ export function AffiliateButton({
       data-affiliate-link-source={
         creatorsListing ? "amazon-creators-api" : isAmazon ? "verified-amazon-fallback" : "authorized-offer"
       }
+      data-first-viewport-affiliate={firstViewport ? "true" : undefined}
       onClick={trackClick}
     >
       {offer.label}
@@ -86,12 +89,14 @@ export function AffiliateButtonGroup({
   market,
   position,
   limit = 2,
+  firstViewport = false,
 }: {
   site: SiteKey;
   product: Product;
   market?: MarketKey;
   position: string;
   limit?: number;
+  firstViewport?: boolean;
 }) {
   const offers = product.offers.slice(0, limit);
   if (offers.length === 0) return null;
@@ -99,7 +104,7 @@ export function AffiliateButtonGroup({
   return (
     <>
       {offers.map((offer) => (
-        <AffiliateButton key={offer.merchant} site={site} product={product} offer={offer} market={market} position={position} />
+        <AffiliateButton key={offer.merchant} site={site} product={product} offer={offer} market={market} position={position} firstViewport={firstViewport} />
       ))}
     </>
   );

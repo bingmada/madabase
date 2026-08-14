@@ -156,6 +156,13 @@ export default async function SmallSpaceHalloweenAnimatronicsPage() {
             Halloween props and animatronics
           </Link>
           <h1 className="mt-4 max-w-4xl text-4xl font-black leading-tight text-white sm:text-6xl">Best Halloween animatronics for small yards and porches</h1>
+          {heroProduct?.activeLink ? (
+            <div className="mt-5 flex flex-wrap gap-3" aria-label="First-screen CJ retailer option" data-first-viewport-commerce="true">
+              <Link className="button-primary !bg-[#df7627] !text-white" href={`/go/cj/${heroProduct.activeLink.clickToken}`} rel="nofollow sponsored" data-first-viewport-affiliate="true">
+                Check {heroProduct.title} at Abracadabra <ArrowRight aria-hidden="true" size={16} />
+              </Link>
+            </div>
+          ) : null}
           <p className="mt-5 max-w-3xl text-lg leading-8 text-white/80">
             The right format is the one your real route can support. Compare one low path scare, one hanging UV effect, and one vertical centerpiece before committing space, power, mounting, or storage.
           </p>
@@ -166,11 +173,6 @@ export default async function SmallSpaceHalloweenAnimatronicsPage() {
             </p>
           </div>
           <div className="mt-7 flex flex-wrap gap-3">
-            {heroProduct?.activeLink ? (
-              <Link className="button-primary !bg-[#df7627] !text-white" href={`/go/cj/${heroProduct.activeLink.clickToken}`} rel="nofollow sponsored">
-                Check {heroProduct.title} at Abracadabra <ArrowRight aria-hidden="true" size={16} />
-              </Link>
-            ) : null}
             <Link className="button-primary !bg-[#df7627] !text-white" href="#animatronic-picks">Compare the three picks <ArrowRight aria-hidden="true" size={16} /></Link>
             <Link className="button-secondary bg-white/95" href="/guides/large-prop-animatronic-space-and-power-checklist">Open the setup checklist</Link>
           </div>

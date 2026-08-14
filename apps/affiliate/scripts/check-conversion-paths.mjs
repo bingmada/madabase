@@ -164,6 +164,7 @@ async function inspectPage(publicUrl) {
         href: decodeEntities(extractAttribute(tag, "href") ?? ""),
         rel: (extractAttribute(tag, "rel") ?? "").toLowerCase(),
         source: extractAttribute(tag, "data-affiliate-link-source"),
+        firstViewport: extractAttribute(tag, "data-first-viewport-affiliate") === "true",
       }))
       // Amazon detail URLs also appear in editorial source citations. Only
       // instrumented commerce anchors (or sponsored CJ redirects) are CTAs.
@@ -173,12 +174,21 @@ async function inspectPage(publicUrl) {
       );
     const amazonAnchors = affiliateAnchors.filter((anchor) => /amazon\.com\/dp\//i.test(anchor.href));
     const cjAnchors = affiliateAnchors.filter((anchor) => /\/go\/cj\//i.test(anchor.href));
+    const firstViewportAnchors = affiliateAnchors.filter((anchor) => anchor.firstViewport);
     const expectedTag = siteTrackingIds[site];
     const firstAffiliateIndex = html.indexOf("data-affiliate-link-source=");
     const firstSponsoredCjIndex = html.search(/<a\b[^>]*href=["'][^"']*\/go\/cj\/[^"']+["'][^>]*rel=["'][^"']*sponsored/i);
     const firstCommerceIndex = [firstAffiliateIndex, firstSponsoredCjIndex]
       .filter((index) => index >= 0)
       .sort((a, b) => a - b)[0] ?? -1;
+    const firstViewportContainerIndex = html.indexOf("data-first-viewport-commerce=");
+    const firstH1CloseIndex = html.indexOf("</h1>");
+    const firstViewportAnchorIndex = html.indexOf("data-first-viewport-affiliate=");
+    const firstViewportContainerFollowsH1 = firstH1CloseIndex >= 0
+      && firstViewportContainerIndex > firstH1CloseIndex
+      && firstViewportContainerIndex - firstH1CloseIndex <= 1_000;
+    const firstViewportAnchorInsideCompactContainer = firstViewportAnchorIndex > firstViewportContainerIndex
+      && firstViewportAnchorIndex - firstViewportContainerIndex <= 6_000;
     const firstImageIndex = html.search(/<img\b/i);
     const beforeFirstImage = firstCommerceIndex >= 0 && (firstImageIndex < 0 || firstCommerceIndex < firstImageIndex);
     const requirePreImageCta = !(site === "style" && pageKind(url.pathname) === "review")
@@ -186,7 +196,12 @@ async function inspectPage(publicUrl) {
 
     if (response.status !== 200) errors.push(`HTTP ${response.status}`);
     if (!affiliateAnchors.length) errors.push("missing sponsored Amazon/CJ CTA");
-    else if (requirePreImageCta && !beforeFirstImage) errors.push("first affiliate CTA appears after the first page image");
+    else {
+      if (!firstViewportAnchors.length) errors.push("missing designated first-viewport affiliate CTA");
+      if (!firstViewportContainerFollowsH1) errors.push("first-viewport commerce container is not directly after the H1");
+      if (!firstViewportAnchorInsideCompactContainer) errors.push("designated first-viewport CTA is not inside the compact H1 commerce container");
+      if (requirePreImageCta && !beforeFirstImage) errors.push("first affiliate CTA appears after the first page image");
+    }
     for (const anchor of affiliateAnchors) {
       if (!anchor.rel.includes("sponsored") || !anchor.rel.includes("nofollow")) {
         errors.push(`CTA missing sponsored/nofollow: ${anchor.href}`);
@@ -205,6 +220,7 @@ async function inspectPage(publicUrl) {
       status: response.status,
       amazonCtas: amazonAnchors.length,
       cjCtas: cjAnchors.length,
+      firstViewportCtas: firstViewportAnchors.length,
       ctaBeforeFirstImage: beforeFirstImage,
       errors: [...new Set(errors)],
     };

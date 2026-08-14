@@ -576,9 +576,11 @@ if (
 }
 if (
   !reviewFirstScreenSource.includes("<AffiliateButton")
-  || !reviewFirstScreenSource.includes('"review-hero"')
+  || !reviewFirstScreenSource.includes('data-first-viewport-commerce="true"')
+  || !reviewFirstScreenSource.includes('position={commerceIsAlternative ? "review-first-viewport-verified-alternative" : "review-first-viewport"}')
+  || !reviewFirstScreenSource.includes("firstViewport")
 ) {
-  errors.push("Product template must show the primary sponsored CTA before the product image");
+  errors.push("Product template must show the designated sponsored CTA in a first-viewport container before the product image");
 }
 
 const sitesSource = fs.readFileSync(path.join(libDir, "sites.ts"), "utf8");

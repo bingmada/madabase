@@ -239,33 +239,28 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
             <p className="eyebrow">{roundup.category}</p>
           )}
           <h1 className="mt-3 text-3xl font-black leading-tight sm:text-4xl">{roundup.title}</h1>
+          {topPick || commerceProduct ? (
+            <div className="mt-4 grid gap-3 rounded-md border border-[var(--border)] bg-white p-4 sm:mt-5 sm:grid-cols-[1fr_auto] sm:items-center sm:p-5" aria-label="First-screen purchase path" data-first-viewport-commerce="true">
+              <div>
+                <p className="text-xs font-bold uppercase text-[var(--muted)]">Purchase path</p>
+                <h2 className="mt-2 text-lg font-bold sm:text-xl">{topPick?.amazonTitle ?? topPick?.name ?? commerceProduct?.amazonTitle ?? commerceProduct?.name}</h2>
+                {commerceIsAlternative ? (
+                  <p className="mt-2 text-sm leading-5 text-[var(--muted)]">Different product: the first pick has no verified retailer path; this button is for {commerceProduct?.name}.</p>
+                ) : topPick ? (
+                  <p className="mt-2 text-sm leading-5 text-[var(--muted)]">Best for {topPick.bestFor.toLowerCase()}; skip if {topPickTradeOff.toLowerCase()}.</p>
+                ) : null}
+              </div>
+              <div className="flex flex-wrap items-start gap-2 sm:justify-end">
+                {commerceProduct ? <AffiliateButtonGroup site={site.key} product={commerceProduct} position={commerceIsAlternative ? "roundup-first-viewport-verified-alternative" : "roundup-first-viewport-primary"} limit={1} firstViewport /> : null}
+                {topPick ? <Link className="button-secondary" href={`/reviews/${topPick.slug}`}>Evidence notes</Link> : null}
+              </div>
+            </div>
+          ) : null}
           <p className="mt-4 text-base leading-7 text-[var(--muted)] sm:mt-5 sm:text-lg sm:leading-8">{roundup.dek}</p>
           {effectiveUpdatedAt ? (
             <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-xs font-semibold text-[var(--muted)] sm:mt-4 sm:gap-y-2 sm:text-sm">
               <span className="hidden sm:inline">Prepared by the {site.name} editorial desk</span>
               <span>Updated {effectiveUpdatedAt}</span>
-            </div>
-          ) : null}
-          {topPick || commerceProduct ? (
-            <div className="mt-4 grid gap-3 rounded-md border border-[var(--border)] bg-white p-4 sm:mt-5 sm:gap-4 sm:p-5 sm:grid-cols-[1fr_auto]">
-              <div>
-                <p className="text-xs font-bold uppercase text-[var(--muted)]">Purchase path</p>
-                <h2 className="mt-2 text-lg font-bold sm:text-xl">{topPick?.amazonTitle ?? topPick?.name ?? commerceProduct?.amazonTitle ?? commerceProduct?.name}</h2>
-                {topPick ? <p className="mt-2 text-sm leading-5 text-[var(--muted)] sm:leading-6">Best for: {topPick.bestFor}</p> : null}
-                {topPick ? <p className="mt-1 text-sm leading-5 text-[var(--muted)] sm:leading-6">Skip if: {topPickTradeOff}</p> : null}
-                {topPick ? <p className="mt-1 text-sm font-semibold leading-5 text-[var(--brand-strong)] sm:leading-6">Price band: {topPick.priceBand}</p> : null}
-                {commerceIsAlternative ? (
-                  <p className="mt-2 text-sm leading-6 text-[var(--muted)]">The first pick has no verified retailer path right now. The purchase button is for the clearly labeled alternative {commerceProduct?.name}.</p>
-                ) : null}
-              </div>
-              <div className="flex flex-wrap items-start gap-2 sm:justify-end">
-                {topPick ? (
-                  <Link className="button-secondary" href={`/reviews/${topPick.slug}`}>
-                    Evidence notes
-                  </Link>
-                ) : null}
-                {commerceProduct ? <AffiliateButtonGroup site={site.key} product={commerceProduct} position={commerceIsAlternative ? "roundup-hero-verified-alternative" : "roundup-hero-primary"} limit={1} /> : null}
-              </div>
             </div>
           ) : null}
           {roundup.intro ? <p className="mt-5 max-w-3xl leading-8 text-[var(--muted)]">{roundup.intro}</p> : null}

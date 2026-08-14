@@ -397,23 +397,26 @@ export function LocalizedMarketContent({
           <article className="min-w-0">
             <p className="eyebrow">{market.labels.edition} · {site.name}</p>
             <h1 className="mt-3 text-4xl font-black leading-tight">{variant.title}</h1>
+            {(marketProduct && marketProduct.offers.length) || (commerceFamilyIdentity && commerceFamilyOffer) ? (
+              <section className="mt-4 rounded-md border border-[var(--border)] bg-white p-4 sm:mt-5" aria-label="First-screen retailer option" data-first-viewport-commerce="true">
+                <p className="eyebrow">{commerceIsAlternative ? "Different product · verified alternative" : market.labels.quickAnswer}</p>
+                <p className="mt-2 text-sm font-semibold leading-5 text-[var(--muted)]">
+                  {commerceFamilyIdentity?.amazonTitle ?? (commerceIsAlternative ? `This button is for ${commerceProduct?.amazonTitle ?? commerceProduct?.name}, not the original item.` : commerceProduct?.amazonTitle ?? commerceProduct?.name)}
+                </p>
+                <div className="mt-3">
+                  {commerceFamilyIdentity && commerceFamilyOffer ? (
+                    <AffiliateButton site={site.key} product={commerceFamilyIdentity} offer={commerceFamilyOffer} market={market.key} position={`market-${market.key}-first-viewport-family`} resolveCreatorsListing={false} firstViewport />
+                  ) : marketProduct ? (
+                    <AffiliateButtonGroup site={site.key} product={marketProduct} market={market.key} position={`market-${market.key}-first-viewport`} limit={1} firstViewport />
+                  ) : null}
+                </div>
+              </section>
+            ) : null}
             <p className="mt-5 text-lg leading-8 text-[var(--muted)]">{variant.dek}</p>
             <p className="mt-4 text-sm font-semibold text-[var(--muted)]">{market.labels.updated} {page.updatedAt}</p>
             <section className="mt-8 rounded-md border border-[var(--brand)] bg-[var(--brand-soft)] p-6">
               <p className="eyebrow">{market.labels.quickAnswer}</p>
               <p className="mt-3 text-lg font-bold leading-8">{variant.quickAnswer}</p>
-              {(marketProduct && marketProduct.offers.length) || (commerceFamilyIdentity && commerceFamilyOffer) ? (
-                <div className="mt-5">
-                  <p className="mb-3 text-sm font-semibold leading-6 text-[var(--muted)]">
-                    {commerceFamilyIdentity?.amazonTitle ?? (commerceIsAlternative ? `Verified alternative—not the original item: ${commerceProduct?.amazonTitle ?? commerceProduct?.name}` : commerceProduct?.amazonTitle ?? commerceProduct?.name)}
-                  </p>
-                  {commerceFamilyIdentity && commerceFamilyOffer ? (
-                    <AffiliateButton site={site.key} product={commerceFamilyIdentity} offer={commerceFamilyOffer} market={market.key} position={`market-${market.key}-family-hero`} resolveCreatorsListing={false} />
-                  ) : marketProduct ? (
-                    <AffiliateButtonGroup site={site.key} product={marketProduct} market={market.key} position={`market-${market.key}-hero`} limit={1} />
-                  ) : null}
-                </div>
-              ) : null}
               {commerceProduct ? (
                 <AmazonListingFreshness
                   site={site.key}

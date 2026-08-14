@@ -240,17 +240,17 @@ export function StyleCategoryPage({
         <div className="style-shell py-14 sm:py-20">
           <p className="style-kicker">Browse by feeling</p>
           <h1 className="mt-4 max-w-3xl break-words font-serif text-5xl leading-none sm:text-6xl">{title}</h1>
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-[#6b5e58]">{description}</p>
-          <p className="mt-5 text-sm font-bold text-[#713248]">{products.length} buying note{products.length === 1 ? "" : "s"} in this edit</p>
           {commerceProduct ? (
-            <div className="mt-6 flex max-w-3xl flex-col gap-4 border-y border-[#cdbeb6] py-5 sm:flex-row sm:items-center sm:justify-between">
+            <div className="mt-4 flex max-w-3xl flex-col gap-3 border-y border-[#cdbeb6] py-4 sm:mt-5 sm:flex-row sm:items-center sm:justify-between sm:py-5" aria-label="First-screen retailer starting point" data-first-viewport-commerce="true">
               <div>
                 <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#713248]">Verified retailer starting point</p>
                 <p className="mt-2 font-serif text-2xl">{commerceProduct.amazonTitle ?? commerceProduct.name}</p>
               </div>
-              <AffiliateButtonGroup site={site.key} product={commerceProduct} position="style-category-hero" limit={1} />
+              <AffiliateButtonGroup site={site.key} product={commerceProduct} position="style-category-first-viewport" limit={1} firstViewport />
             </div>
           ) : null}
+          <p className="mt-6 max-w-2xl text-lg leading-8 text-[#6b5e58]">{description}</p>
+          <p className="mt-5 text-sm font-bold text-[#713248]">{products.length} buying note{products.length === 1 ? "" : "s"} in this edit</p>
           <div className="mt-8 flex flex-wrap gap-2 text-xs font-bold uppercase tracking-[0.11em]">
             <span className="style-pill">One focal point</span>
             <span className="style-pill">Scale checked</span>
@@ -324,10 +324,8 @@ export function StyleGuidePage({
         <div className="style-shell py-14 sm:py-20">
           <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#d5a6b5]">Closet note · {guide.category}</p>
           <h1 className="mt-5 max-w-4xl break-words font-serif text-5xl leading-[0.98] sm:text-6xl">{guide.title}</h1>
-          <p className="mt-7 max-w-2xl text-lg leading-8 text-[#d6cbc5]">{guide.dek}</p>
-          <p className="mt-5 inline-flex items-center gap-2 text-xs font-semibold text-[#cdbeb7]"><CalendarDays size={14} /> Updated {guide.updatedAt ?? "on the current review cycle"}</p>
           {startingProduct || startingRoundup || commerceProduct ? (
-            <div className="mt-8 max-w-3xl border-y border-[#5d514d] py-5">
+            <div className="mt-5 max-w-3xl border-y border-[#5d514d] py-4 sm:py-5" aria-label="First-screen purchase path" data-first-viewport-commerce="true">
               <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#d5a6b5]">Best starting point</p>
               <div className="mt-3 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
                 <div>
@@ -339,7 +337,7 @@ export function StyleGuidePage({
                   </p>
                 </div>
                 <div className="flex shrink-0 flex-wrap gap-2 sm:justify-end">
-                  {commerceProduct ? <AffiliateButtonGroup site={site.key} product={commerceProduct} position={commerceIsAlternative ? "style-guide-verified-alternative" : "style-guide-hero"} limit={1} /> : null}
+                  {commerceProduct ? <AffiliateButtonGroup site={site.key} product={commerceProduct} position={commerceIsAlternative ? "style-guide-first-viewport-verified-alternative" : "style-guide-first-viewport"} limit={1} firstViewport /> : null}
                   {startingProduct || startingRoundup ? (
                     <Link className="style-cta style-cta-light" href={startingProduct ? `/reviews/${startingProduct.slug}` : `/best/${startingRoundup?.slug}`}>Open the decision page <ArrowRight size={16} /></Link>
                   ) : null}
@@ -347,6 +345,8 @@ export function StyleGuidePage({
               </div>
             </div>
           ) : null}
+          <p className="mt-7 max-w-2xl text-lg leading-8 text-[#d6cbc5]">{guide.dek}</p>
+          <p className="mt-5 inline-flex items-center gap-2 text-xs font-semibold text-[#cdbeb7]"><CalendarDays size={14} /> Updated {guide.updatedAt ?? "on the current review cycle"}</p>
         </div>
       </section>
 
@@ -524,6 +524,15 @@ export function StyleProductPage({
           <div className="order-1 flex flex-col justify-center lg:order-2 lg:py-8">
             <Link className="style-kicker" href={`/categories/${product.category}`}>{product.brand}</Link>
             <h1 className="mt-4 break-words font-serif text-4xl leading-[1.05] sm:text-5xl">{name}</h1>
+            {hasOffer ? (
+              <div className="mt-4 border-y border-[#d9ccc4] py-4" aria-label="First-screen retailer option" data-first-viewport-commerce="true">
+                <p className="text-xs font-bold uppercase tracking-[0.12em] text-[#986174]">{commerceIsAlternative ? "Different product · verified alternative" : "Verified retailer option"}</p>
+                {commerceIsAlternative ? <p className="mt-2 text-sm leading-5 text-[#6b5f59]">This button is for {purchaseProduct.amazonTitle ?? purchaseProduct.name}, not the reviewed item.</p> : null}
+                <div className="mt-3 flex flex-wrap gap-3">
+                  <AffiliateButtonGroup site={site.key} product={purchaseProduct} position={commerceIsAlternative ? "style-product-first-viewport-verified-alternative" : "style-product-first-viewport"} limit={1} firstViewport />
+                </div>
+              </div>
+            ) : null}
             <p className="mt-4 inline-flex items-center gap-2 text-xs font-semibold text-[#7b6d67]"><CalendarDays size={14} /> Updated {product.updatedAt ?? "on the current review cycle"}</p>
             <p className="mt-6 text-lg leading-8 text-[#6b5f59]">{product.summary}</p>
             <div className="mt-7 divide-y divide-[#d9ccc4] border-y border-[#d9ccc4]">
@@ -535,7 +544,6 @@ export function StyleProductPage({
               ))}
             </div>
             <div className="mt-7 flex flex-wrap gap-3">
-              <AffiliateButtonGroup site={site.key} product={purchaseProduct} position={commerceIsAlternative ? "style-product-verified-alternative" : "style-product-hero"} />
               <Link className="style-cta-secondary" href={`/best/${relatedRoundups[0]?.slug ?? roundupSlug}`}>
                 Compare similar picks
               </Link>
@@ -705,10 +713,8 @@ export function StyleCollectionPage({ site, roundup, products }: { site: SiteCon
         <div className="style-shell py-16 sm:py-24">
           <p className="text-xs font-bold uppercase tracking-[0.17em] text-[#d5a6b5]">The Sideglance edit</p>
           <h1 className="mt-5 max-w-4xl break-words font-serif text-5xl leading-[0.98] sm:text-6xl">{roundup.title}</h1>
-          <p className="mt-7 max-w-2xl text-lg leading-8 text-[#d6cbc5]">{roundup.intro ?? roundup.dek}</p>
-          <p className="mt-5 inline-flex items-center gap-2 text-xs font-semibold text-[#cdbeb7]"><CalendarDays size={14} /> Updated {roundup.updatedAt ?? "on the current review cycle"}</p>
           {topPick || commerceProduct ? (
-            <div className="mt-8 max-w-3xl border-y border-[#5d514d] py-5">
+            <div className="mt-5 max-w-3xl border-y border-[#5d514d] py-4 sm:py-5" aria-label="First-screen purchase path" data-first-viewport-commerce="true">
               <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#d5a6b5]">Best starting point</p>
               <div className="mt-3 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
                 <div>
@@ -722,12 +728,14 @@ export function StyleCollectionPage({ site, roundup, products }: { site: SiteCon
                   </p>
                 </div>
                 <div className="flex shrink-0 flex-wrap gap-2 sm:justify-end">
-                  {commerceProduct ? <AffiliateButtonGroup site={site.key} product={commerceProduct} position={commerceIsAlternative ? "style-roundup-verified-alternative" : "style-roundup-hero"} limit={1} /> : null}
+                  {commerceProduct ? <AffiliateButtonGroup site={site.key} product={commerceProduct} position={commerceIsAlternative ? "style-roundup-first-viewport-verified-alternative" : "style-roundup-first-viewport"} limit={1} firstViewport /> : null}
                   {topPick ? <Link className="style-cta style-cta-light" href={`/reviews/${topPick.slug}`}>Check the evidence <ArrowRight size={16} /></Link> : null}
                 </div>
               </div>
             </div>
           ) : null}
+          <p className="mt-7 max-w-2xl text-lg leading-8 text-[#d6cbc5]">{roundup.intro ?? roundup.dek}</p>
+          <p className="mt-5 inline-flex items-center gap-2 text-xs font-semibold text-[#cdbeb7]"><CalendarDays size={14} /> Updated {roundup.updatedAt ?? "on the current review cycle"}</p>
         </div>
       </section>
       {products.length ? (

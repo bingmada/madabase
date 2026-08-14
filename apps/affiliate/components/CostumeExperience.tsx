@@ -205,17 +205,17 @@ export async function CostumeCategoryPage({
         <div className="shell">
           <p className="eyebrow">Browse by product type</p>
           <h1 className="mt-3 text-4xl font-black">{category.name}</h1>
-          <p className="mt-4 max-w-3xl text-lg leading-8 text-[var(--muted)]">{category.description}</p>
           {commerceProduct?.activeLink ? (
-            <aside className="mt-6 flex flex-col gap-4 rounded-md border border-[var(--border)] bg-white p-5 sm:flex-row sm:items-center sm:justify-between">
+            <aside className="mt-4 flex flex-col gap-3 rounded-md border border-[var(--border)] bg-white p-4 sm:mt-5 sm:flex-row sm:items-center sm:justify-between sm:p-5" aria-label="First-screen CJ retailer option" data-first-viewport-commerce="true">
               <div>
                 <p className="eyebrow">Verified CJ retailer option</p>
                 <h2 className="mt-2 text-xl font-bold">{commerceProduct.title}</h2>
                 <p className="mt-2 max-w-xl text-sm leading-6 text-[var(--muted)]">Confirm the exact variant, included pieces, availability, delivery timing, and return terms at Abracadabra NYC.</p>
               </div>
-              <Link className="button-primary shrink-0" href={`/go/cj/${commerceProduct.activeLink.clickToken}`} rel="nofollow sponsored">Check at Abracadabra NYC <ArrowRight aria-hidden="true" size={16} /></Link>
+              <Link className="button-primary shrink-0" href={`/go/cj/${commerceProduct.activeLink.clickToken}`} rel="nofollow sponsored" data-first-viewport-affiliate="true">Check at Abracadabra NYC <ArrowRight aria-hidden="true" size={16} /></Link>
             </aside>
           ) : null}
+          <p className="mt-4 max-w-3xl text-lg leading-8 text-[var(--muted)]">{category.description}</p>
           {slug === "props-animatronics" ? (
             <aside className="mt-6 flex flex-col gap-4 rounded-md border border-[#d99162] bg-[#fff8f2] p-5 sm:flex-row sm:items-center sm:justify-between">
               <div className="max-w-2xl">

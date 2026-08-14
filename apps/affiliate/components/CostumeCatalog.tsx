@@ -231,7 +231,7 @@ export async function CostumeCatalogExplorer({
   );
 }
 
-export function CostumePurchaseState({ product }: { product: CostumeCatalogProduct }) {
+export function CostumePurchaseState({ product, firstViewport = false }: { product: CostumeCatalogProduct; firstViewport?: boolean }) {
   const ready = Boolean(product.activeLink && product.authorizedImage && product.availability !== "out of stock");
 
   if (ready && product.activeLink) {
@@ -240,7 +240,7 @@ export function CostumePurchaseState({ product }: { product: CostumeCatalogProdu
         <ShieldCheck aria-hidden="true" className="text-[var(--brand)]" size={22} />
         <h2 className="mt-4 text-xl font-bold">Available at Abracadabra NYC</h2>
         <p className="mt-3 text-sm leading-6 text-[var(--muted)]">Check the exact variant, current availability, shipping, and return terms on the retailer page.</p>
-        <Link className="button-primary mt-5" href={`/go/cj/${product.activeLink.clickToken}`} rel="nofollow sponsored">Check at Abracadabra NYC <ArrowRight aria-hidden="true" size={16} /></Link>
+        <Link className="button-primary mt-5" href={`/go/cj/${product.activeLink.clickToken}`} rel="nofollow sponsored" data-first-viewport-affiliate={firstViewport ? "true" : undefined}>Check at Abracadabra NYC <ArrowRight aria-hidden="true" size={16} /></Link>
       </div>
     );
   }

@@ -137,6 +137,9 @@ export default async function CostumeProductPage({ params }: { params: Promise<{
               </div>
               <p className="eyebrow mt-5">{catalogProduct.brand || catalogProduct.productType || "Abracadabra NYC"}</p>
               <h1 className="mt-3 text-4xl font-black leading-tight">{catalogProduct.title}</h1>
+              <div className="mt-4 lg:hidden" aria-label="First-screen mobile purchase path" data-first-viewport-commerce="true">
+                <CostumePurchaseState product={catalogProduct} firstViewport />
+              </div>
               <p className="mt-5 text-xl font-black text-[var(--brand-strong)]">{formatCostumePrice(catalogProduct)}</p>
               {catalogProduct.authorizedImage ? (
                 <figure className="mt-8 overflow-hidden rounded-md border border-[var(--border)] bg-white p-4">
@@ -205,7 +208,9 @@ export default async function CostumeProductPage({ params }: { params: Promise<{
             </article>
 
             <aside className="space-y-5 lg:sticky lg:top-24 lg:self-start">
-              <CostumePurchaseState product={catalogProduct} />
+              <div className="hidden lg:block" aria-label="First-screen desktop purchase path" data-first-viewport-commerce="true">
+                <CostumePurchaseState product={catalogProduct} firstViewport />
+              </div>
               <div className="panel p-5">
                 <PackageCheck aria-hidden="true" className="text-[var(--brand)]" size={22} />
                 <h2 className="mt-4 text-xl font-bold">Before you order</h2>

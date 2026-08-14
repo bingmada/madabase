@@ -315,6 +315,47 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
           <p className="eyebrow">{guide.category}</p>
         )}
         <h1 className="mt-3 text-3xl font-black leading-tight sm:text-4xl">{guide.title}</h1>
+        {topProduct || topRoundup || commerceProduct || amazonFamilyOffer || cjFamilyAffiliateOffer || costumeCommerceProduct ? (
+          <section className="mt-4 rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-4 sm:mt-5 sm:p-5" aria-label="First-screen purchase path" data-first-viewport-commerce="true">
+            <p className="eyebrow">Purchase path</p>
+            <div className="mt-2 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <h2 className="text-lg font-bold sm:text-xl">
+                  {topProduct?.name ?? amazonFamilyProduct?.title ?? commerceProduct?.name ?? costumeCommerceProduct?.title ?? "Compare the short list"}
+                </h2>
+                {commerceIsAlternative && commerceProduct && !amazonFamilyOffer && !cjFamilyAffiliateOffer ? (
+                  <p className="mt-2 max-w-xl text-sm leading-5 text-[var(--muted)]">
+                    Different product: the exact {topProduct?.name} link is paused. This button is for the verified alternative {commerceProduct.name}.
+                  </p>
+                ) : null}
+              </div>
+              <div className="flex shrink-0 flex-wrap gap-2 sm:justify-end">
+                {amazonFamilyProduct && amazonFamilyIdentity && amazonFamilyOffer ? (
+                  <AffiliateButton site={site.key} product={amazonFamilyIdentity} offer={amazonFamilyOffer} position="guide-first-viewport-family-amazon" resolveCreatorsListing={false} firstViewport />
+                ) : cjFamilyOffer && cjFamilyIdentity && cjFamilyAffiliateOffer ? (
+                  <AffiliateButton site={site.key} product={cjFamilyIdentity} offer={cjFamilyAffiliateOffer} position="guide-first-viewport-family-cj" resolveCreatorsListing={false} firstViewport />
+                ) : costumeCommerceProduct?.activeLink ? (
+                  <Link className="button-primary" href={`/go/cj/${costumeCommerceProduct.activeLink.clickToken}`} rel="nofollow sponsored" data-first-viewport-affiliate="true">
+                    Check at Abracadabra NYC
+                  </Link>
+                ) : commerceProduct ? (
+                  <AffiliateButtonGroup site={site.key} product={commerceProduct} position={commerceIsAlternative ? "guide-first-viewport-verified-alternative" : "guide-first-viewport-primary"} limit={1} firstViewport />
+                ) : null}
+                {topProduct ? <Link className="button-secondary" href={`/reviews/${topProduct.slug}`}>Read evidence</Link> : null}
+                {topRoundup ? <Link className="button-secondary" href={`/best/${topRoundup.slug}`}>Compare picks</Link> : null}
+              </div>
+            </div>
+            <p className="mt-3 text-xs leading-5 text-[var(--muted)]">
+              {costumeCommerceProduct
+                ? `Exact CJ retailer path for ${costumeCommerceProduct.title}; confirm variant, delivery, and returns.`
+                : amazonFamilyProduct
+                  ? "Exact family listing anchor; reconfirm ASIN, variant, seller, and returns."
+                  : commerceProduct
+                    ? `Confirm the exact model, seller, bundle, fit, and return path for ${commerceProduct.name}.`
+                    : "Use the comparison page to narrow the choices before buying."}
+            </p>
+          </section>
+        ) : null}
         <p className="mt-5 text-lg leading-8 text-[var(--muted)]">{guide.dek}</p>
         <div className="mt-5 flex flex-wrap gap-x-4 gap-y-2 text-sm font-semibold text-[var(--muted)]">
           <span>Prepared by the {site.name} editorial desk</span>
@@ -335,51 +376,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         {searchOpportunity ? <SearchOpportunityBlock opportunity={searchOpportunity} /> : null}
         <SearchOpportunityBacklinks site={site.key} kind="guide" slug={slug} />
         <BaseMarketEditionLinks site={site} basePath={`/guides/${slug}`} />
-        {topProduct || topRoundup || commerceProduct || amazonFamilyOffer || cjFamilyAffiliateOffer || costumeCommerceProduct ? (
-          <section className="mt-8 rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-5">
-            <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
-              <div>
-                <p className="eyebrow">Purchase path</p>
-                <h2 className="mt-2 text-2xl font-bold">
-                  {topProduct?.name ?? amazonFamilyProduct?.title ?? commerceProduct?.name ?? costumeCommerceProduct?.title ?? "Compare the short list"}
-                </h2>
-                {topProduct ? <p className="mt-2 text-sm font-semibold text-[var(--brand-strong)]">Price band: {topProduct.priceBand}</p> : null}
-                {commerceIsAlternative && commerceProduct && !amazonFamilyOffer && !cjFamilyAffiliateOffer ? (
-                  <p className="mt-3 max-w-xl text-sm leading-6 text-[var(--muted)]">
-                    The exact {topProduct?.name} retailer link is paused. The button below is for the clearly labeled, verified alternative {commerceProduct.name}—not the original model.
-                  </p>
-                ) : null}
-              </div>
-              <div className="flex shrink-0 flex-wrap gap-2 sm:justify-end">
-                {topProduct ? (
-                  <Link className="button-secondary" href={`/reviews/${topProduct.slug}`}>Read evidence</Link>
-                ) : null}
-                {amazonFamilyProduct && amazonFamilyIdentity && amazonFamilyOffer ? (
-                  <AffiliateButton site={site.key} product={amazonFamilyIdentity} offer={amazonFamilyOffer} position="guide-hero-family-amazon" resolveCreatorsListing={false} />
-                ) : cjFamilyOffer && cjFamilyIdentity && cjFamilyAffiliateOffer ? (
-                  <AffiliateButton site={site.key} product={cjFamilyIdentity} offer={cjFamilyAffiliateOffer} position="guide-hero-family-cj" resolveCreatorsListing={false} />
-                ) : costumeCommerceProduct?.activeLink ? (
-                  <Link className="button-primary" href={`/go/cj/${costumeCommerceProduct.activeLink.clickToken}`} rel="nofollow sponsored">
-                    Check at Abracadabra NYC
-                  </Link>
-                ) : commerceProduct ? (
-                  <AffiliateButtonGroup site={site.key} product={commerceProduct} position={commerceIsAlternative ? "guide-hero-verified-alternative" : "guide-hero-primary"} limit={1} />
-                ) : null}
-                {topRoundup ? <Link className="button-secondary" href={`/best/${topRoundup.slug}`}>Compare picks</Link> : null}
-              </div>
-            </div>
-            <p className="mt-4 max-w-2xl leading-7 text-[var(--muted)]">
-              {costumeCommerceProduct
-                ? `This CJ button opens the exact ${costumeCommerceProduct.title} retailer path; confirm the variant, included pieces, delivery timing, and return terms.`
-                : amazonFamilyProduct
-                ? "This exact family listing is a retailer anchor, not an automatic endorsement; reconfirm the ASIN, variant, seller, and return path."
-                : commerceProduct
-                  ? `Use the verified retailer option for ${commerceProduct.name} only after confirming the exact model, seller, bundle, fit, and return path.`
-                  : "Use the comparison page to narrow the choices before reading the setup details below."}
-            </p>
-            {commerceProduct ? <AmazonListingFreshness site={site.key} productSlug={commerceProduct.slug} /> : null}
-          </section>
-        ) : null}
+        {commerceProduct ? <AmazonListingFreshness site={site.key} productSlug={commerceProduct.slug} /> : null}
         {guide.image ? (
           <figure className="mt-8">
             <div className="relative aspect-[16/9] w-full overflow-hidden rounded-md bg-[var(--surface-muted)]">

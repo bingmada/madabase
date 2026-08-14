@@ -228,19 +228,19 @@ export default async function CategoryPage({
       <div className="shell">
         <p className="eyebrow">Category</p>
         <h1 className="mt-3 text-4xl font-black">{category.name}</h1>
-        <p className="mt-4 max-w-2xl text-lg leading-8 text-[var(--muted)]">{category.description}</p>
         {commerceProduct ? (
-          <section className="mt-6 flex flex-col gap-4 rounded-md border border-[var(--border)] bg-white p-5 sm:flex-row sm:items-center sm:justify-between" aria-label="Category retailer starting point">
+          <section className="mt-4 flex flex-col gap-3 rounded-md border border-[var(--border)] bg-white p-4 sm:mt-5 sm:flex-row sm:items-center sm:justify-between sm:p-5" aria-label="First-screen category retailer starting point" data-first-viewport-commerce="true">
             <div>
               <p className="eyebrow">Verified retailer starting point</p>
               <h2 className="mt-2 text-xl font-bold">{commerceProduct.amazonTitle ?? commerceProduct.name}</h2>
               <p className="mt-2 max-w-xl text-sm leading-6 text-[var(--muted)]">A currently verified option in this category; confirm the exact model, seller, configuration, and return path before buying.</p>
             </div>
             <div className="shrink-0">
-              <AffiliateButtonGroup site={site.key} product={commerceProduct} position="category-hero-starting-option" limit={1} />
+              <AffiliateButtonGroup site={site.key} product={commerceProduct} position="category-first-viewport-starting-option" limit={1} firstViewport />
             </div>
           </section>
         ) : null}
+        <p className="mt-4 max-w-2xl text-lg leading-8 text-[var(--muted)]">{category.description}</p>
         <BaseMarketEditionLinks site={site} basePath={`/categories/${slug}`} />
         <section className="mt-8 rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-5">
           <h2 className="text-xl font-bold">How to think about {category.name.toLowerCase()}</h2>

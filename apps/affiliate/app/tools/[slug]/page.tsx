@@ -46,10 +46,8 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
           ) : null}
         </div>
         <h1 className="mt-3 text-4xl font-black leading-tight">{tool.title}</h1>
-        <p className="mt-5 text-lg leading-8 text-[var(--muted)]">{tool.dek}</p>
-        {tool.updatedAt ? <p className="mt-3 text-sm font-semibold text-[var(--muted)]">Updated {tool.updatedAt} · Planning estimate, not a product guarantee</p> : null}
         {commerceProduct ? (
-          <section className="mt-6 rounded-md border border-[var(--border)] bg-white p-5" aria-label="Related verified retailer option">
+          <section className="mt-4 rounded-md border border-[var(--border)] bg-white p-4 sm:mt-5 sm:p-5" aria-label="First-screen related retailer option" data-first-viewport-commerce="true">
             <p className="eyebrow">Related verified retailer option</p>
             <div className="mt-3 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <div>
@@ -57,11 +55,13 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
                 <p className="mt-2 max-w-xl text-sm leading-6 text-[var(--muted)]">Use the calculator result to decide whether this related product fits; then confirm the exact model, seller, bundle, and return path before checkout.</p>
               </div>
               <div className="shrink-0">
-                <AffiliateButtonGroup site={site.key} product={commerceProduct} position="tool-hero-related-option" limit={1} />
+                <AffiliateButtonGroup site={site.key} product={commerceProduct} position="tool-first-viewport-related-option" limit={1} firstViewport />
               </div>
             </div>
           </section>
         ) : null}
+        <p className="mt-5 text-lg leading-8 text-[var(--muted)]">{tool.dek}</p>
+        {tool.updatedAt ? <p className="mt-3 text-sm font-semibold text-[var(--muted)]">Updated {tool.updatedAt} · Planning estimate, not a product guarantee</p> : null}
         <BaseMarketEditionLinks site={site} basePath={`/tools/${slug}`} />
         <div className="mt-8">
           <CalculatorTool tool={tool} />

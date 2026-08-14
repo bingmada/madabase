@@ -224,6 +224,16 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                   ) : null}
                 </div>
                 <h1 className="mt-3 text-4xl font-black leading-tight">{pageTitle}</h1>
+                {commerceProduct && commerceOffer ? (
+                  <div className="mt-4 rounded-md border border-[var(--border)] bg-white p-4" aria-label="First-screen retailer option" data-first-viewport-commerce="true">
+                    <p className="text-xs font-bold uppercase text-[var(--muted)]">{commerceIsAlternative ? "Different product · verified alternative" : "Verified retailer option"}</p>
+                    <p className="mt-2 font-bold">{commerceProduct.amazonTitle ?? commerceProduct.name}</p>
+                    {commerceIsAlternative ? <p className="mt-1 text-sm leading-5 text-[var(--muted)]">The exact reviewed listing is paused; this button is for the named alternative above.</p> : null}
+                    <div className="mt-3">
+                      <AffiliateButton site={site.key} product={commerceProduct} offer={commerceOffer} position={commerceIsAlternative ? "review-first-viewport-verified-alternative" : "review-first-viewport"} firstViewport />
+                    </div>
+                  </div>
+                ) : null}
                 <p className="mt-5 text-lg leading-8 text-[var(--muted)]">{product.summary}</p>
                 {effectiveUpdatedAt ? (
                   <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm font-semibold text-[var(--muted)]">
@@ -235,16 +245,6 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                   <span className="rounded-md bg-[var(--brand-soft)] px-3 py-2 font-semibold text-[var(--brand-strong)]">{product.bestFor}</span>
                   <span className="rounded-md border border-[var(--border)] bg-white px-3 py-2 text-sm font-semibold text-[var(--muted)]">Price band: {product.priceBand}</span>
                 </div>
-                {commerceProduct && commerceOffer ? (
-                  <div className="mt-4 rounded-md border border-[var(--border)] bg-white p-4">
-                    <p className="text-xs font-bold uppercase text-[var(--muted)]">{commerceIsAlternative ? "Verified retailer alternative" : "Verified retailer option"}</p>
-                    <p className="mt-2 font-bold">{commerceProduct.amazonTitle ?? commerceProduct.name}</p>
-                    {commerceIsAlternative ? <p className="mt-1 text-sm leading-6 text-[var(--muted)]">This is a different product, shown because the exact reviewed listing is paused or unavailable.</p> : null}
-                    <div className="mt-3">
-                      <AffiliateButton site={site.key} product={commerceProduct} offer={commerceOffer} position={commerceIsAlternative ? "review-hero-verified-alternative" : "review-hero"} />
-                    </div>
-                  </div>
-                ) : null}
                 {asin ? <AmazonListingFreshness site={site.key} productSlug={product.slug} /> : null}
                 {offerBlock ? (
                   <div className="mt-5 rounded-md border border-amber-300 bg-amber-50 p-4 text-sm leading-6 text-amber-950">
