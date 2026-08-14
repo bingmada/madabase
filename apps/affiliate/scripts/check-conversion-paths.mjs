@@ -189,7 +189,12 @@ async function inspectPage(publicUrl) {
       && firstViewportContainerIndex - firstH1CloseIndex <= 1_000;
     const firstViewportAnchorInsideCompactContainer = firstViewportAnchorIndex > firstViewportContainerIndex
       && firstViewportAnchorIndex - firstViewportContainerIndex <= 6_000;
-    const firstImageIndex = html.search(/<img\b/i);
+    const firstContentImageOffset = firstH1CloseIndex >= 0
+      ? html.slice(firstH1CloseIndex).search(/<img\b/i)
+      : -1;
+    const firstImageIndex = firstContentImageOffset >= 0
+      ? firstH1CloseIndex + firstContentImageOffset
+      : -1;
     const beforeFirstImage = firstCommerceIndex >= 0 && (firstImageIndex < 0 || firstCommerceIndex < firstImageIndex);
     const requirePreImageCta = !(site === "style" && pageKind(url.pathname) === "review")
       && pageKind(url.pathname) !== "catalog-product";
