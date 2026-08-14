@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-08-14T11:26:16+08:00",
+  "updatedAt": "2026-08-14T15:00:37+08:00",
   "conversionIntegrityP0": {
     "status": "production_deployed_and_verified",
     "trigger": "https://baby.madabase.com/guides/ergobaby-omni-breeze-positions-by-age had traffic but no monetization CTA.",
-    "rootCause": "The guide points to ergobaby-omni-breeze-carrier, whose former ASIN B0CCNT3HLW is correctly suppressed because the Amazon listing drifted to a different two-carrier bundle. Guide and review templates had no verified-commerce fallback after that suppression, and the old audits checked configured offers rather than rendered money-page CTA coverage.",
-    "remediation": "Added a shared exact-first commerce-path resolver and pre-image, mobile-visible tracked CTAs across Amazon guides, reviews, roundups, tools and categories, including localized market routes. Added equivalent CJ hero paths to Costume guides, categories and the curated animatronic roundup using only eligible database-backed products. A blocked exact product may use a clearly labeled verified alternative, never the original product name or an unverified ASIN.",
+    "rootCause": "The guide points to ergobaby-omni-breeze-carrier, whose former ASIN B0CCNT3HLW is correctly suppressed because the Amazon listing drifted to a different two-carrier bundle. Guide and review templates had no verified-commerce fallback after that suppression. The first repair then accepted before-first-image rather than the actual first viewport, leaving the target CTA 3.8 mobile screens down.",
+    "remediation": "Placed a compact purchase path immediately after H1 and explicitly marked it as first-viewport commerce across Amazon guides, reviews, roundups, tools and categories, localized markets, all Style money templates, and Costume guides, categories, products and roundups. Structural audits now require the marked CTA inside the post-H1 compact container and before the first content image. Costume guides without an exact active family offer use an eligible same-category database-backed CJ fallback. A blocked exact product may use a clearly labeled verified alternative, never the original product name or an unverified ASIN.",
     "targetPage": "The Omni Breeze positions-by-age guide now explicitly says the exact Omni Breeze listing is paused and offers the verified BabyBjorn Harmony alternative, ASIN B0947B35TG, with the Baby site tag madababy-20. Do not restore the exact Omni Breeze purchase claim until a current exact listing is independently verified.",
     "baseline": {
-      "amazonSites": "1,335 pages checked; 70 had no CTA and 1,043 had conversion-path issues, largely because the first CTA appeared after the first image.",
+      "amazonSites": "The prior public target placed its CTA at y=3252-3312 in a 390x844 viewport. The earlier 1,335-page audit found 70 without CTA and 1,043 conversion-path issues.",
       "costume": "132 production pages checked; 50 guides and 5 categories had no CJ CTA, while one animatronic roundup placed its first CTA after the first image. The 76 catalog product pages passed."
     },
     "localValidation": {
@@ -20,17 +20,19 @@
       "distributionImages": "18_across_6_sites_passed",
       "releaseBuild": "Next.js production build, lint/type checks, static generation and Linux standalone packaging passed"
     },
-    "productionGate": "Passed in immutable release 4b1035a. Candidate and production returned HTTP 200 on all seven hosts; the target Baby guide, blocked-product review, en-gb guide, exact localized Pet family, Costume guide, category and roundup, CJ 302 route, current and retained assets, PM2 path and public cache-bypassed plus normal target URL passed. Continue to avoid high-concurrency full-site audits on the 1.6GB production server.",
+    "productionGate": "Passed in immutable release 0aed739. Candidate and production returned HTTP 200 on all seven hosts; the production-database Costume audit passed 132 of 132 pages with zero failures and zero missing CTAs; the normal public Baby target placed the CTA at y=476-536 in a 390x844 viewport with exact B0947B35TG and madababy-20, while blocked B0CCNT3HLW was absent. Continue to avoid high-concurrency full Amazon audits on the 1.6GB production server.",
     "discovery": "This is a template conversion release with no new URLs. Do not submit the 151 soft-launch cohort to sitemaps, IndexNow or external distribution."
   },
   "purpose": "Tracked cross-conversation snapshot. Read docs/affiliate-growth-state.json for the complete mutable source of truth and docs/affiliate-growth-runbook.md for operating rules.",
   "release": {
-    "active": "4b1035a",
-    "commit": "4b1035a406d6ba7ab29355216efc042f620d7843",
+    "active": "0aed739",
+    "commit": "0aed739f6b1a0efc3a7f1a3af35c6642c6b92242",
     "branch": "lyd-0609",
     "pushed": true,
-    "productionPath": "/srv/madabase-affiliate/releases/4b1035a/apps/affiliate",
-    "rollback": "b6daae2",
+    "artifactBytes": 57911862,
+    "artifactSha256": "8478b6f8aad78c7a67823abd73b79a7ce428a0316aff2166bd681a261cc82962",
+    "productionPath": "/srv/madabase-affiliate/releases/0aed739/apps/affiliate",
+    "rollback": "4b1035a",
     "sevenHostsHttp200": true,
     "pm2Saved": true,
     "candidateRemoved": true
@@ -41,8 +43,8 @@
     "releaseRestartCountObserved": 0,
     "unstableRestarts": 0,
     "errorLog": "empty during bounded candidate and production verification",
-    "settledMemoryApprox": "234MB after roughly four minutes",
-    "cause": "Release 4b1035a used bounded candidate and production sampling. Superseded release b6daae2 had accumulated 14 max-memory restarts over roughly 90 minutes before cutover, so production concurrency remains restricted.",
+    "settledMemoryApprox": "238MB after roughly six minutes",
+    "cause": "Release 0aed739 passed full local Amazon coverage and a bounded 132-page production Costume audit. The first PM2 cutover attempt restarted the existing app without changing its script path; the guarded check rolled back, then an exact delete-and-recreate of only home switched script and cwd to 0aed739. Other PM2 services were untouched.",
     "rule": "Run full high-concurrency audits on a candidate or local immutable runtime; use bounded sampling on production."
   },
   "cohorts": {
@@ -86,7 +88,7 @@
   "merchantAndSiteBoundaries": {
     "amazonFirstSites": ["network", "smarthome", "homeoffice", "baby", "pet", "style"],
     "babyCj": "Only the separately recorded bounded Bc Babycare pilot is authorized.",
-    "costume": "Database-backed eligible Abracadabra/CJ products now supply pre-image guide and category paths plus the curated roundup path. Production exact guide/category/roundup samples and a CJ 302 redirect passed.",
+    "costume": "Database-backed eligible Abracadabra/CJ products now supply first-viewport guide, category, product and curated-roundup paths, including same-category fallback for guides without an exact active family offer. The full 132-page production audit passed.",
     "petMedicationMerchant": "CanadaPetCare remains blocked from public CTAs.",
     "style": "maintenance_only"
   },
@@ -98,7 +100,7 @@
     "distributionImages": "18_across_6_sites_passed",
     "publicHosts": "7_of_7_http_200",
     "currentAndRetainedAssets": "http_200",
-    "conversionPaths": "local_all_market_amazon_6710_of_6710; production_bounded_amazon_and_costume_samples_passed"
+    "conversionPaths": "local_all_market_amazon_6710_of_6710; production_costume_132_of_132; public_mobile_target_first_viewport_y476_to_536_of_844"
   },
   "measurementGates": {
     "day3": "2026-08-16",
