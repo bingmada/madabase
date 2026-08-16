@@ -26,12 +26,17 @@ export function AffiliateButton({
 }) {
   const amazonMarket: AmazonMarketKey = market ?? "us";
   const isAmazon = offer.merchant.toLowerCase().includes("amazon");
-  const creatorsListing = useAmazonCreatorsListing(
+  const creatorsListingCandidate = useAmazonCreatorsListing(
     site,
     product.slug,
     amazonMarket,
     resolveCreatorsListing && Boolean(product.asin ?? product.specs.ASIN) && isAmazon,
   );
+  const expectedAsin = (product.asin ?? product.specs.ASIN)?.trim().toUpperCase();
+  const creatorsListing = creatorsListingCandidate
+    && (amazonMarket !== "us" || creatorsListingCandidate.asin.trim().toUpperCase() === expectedAsin)
+    ? creatorsListingCandidate
+    : null;
   const href = creatorsListing?.detailPageUrl ?? offer.url;
 
   function trackClick() {

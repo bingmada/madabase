@@ -583,6 +583,22 @@ if (
   errors.push("Product template must show the designated sponsored CTA in a first-viewport container before the product image");
 }
 
+const claritySource = fs.readFileSync(path.join(workspaceDir, "components", "ClarityAnalytics.tsx"), "utf8");
+const clarityQaGuardIndex = claritySource.indexOf('q.has("viewport-baseline")||q.has("madabase-qa")');
+const clarityBootstrapIndex = claritySource.indexOf("c[a]=c[a]||function()");
+if (clarityQaGuardIndex === -1 || clarityBootstrapIndex === -1 || clarityQaGuardIndex > clarityBootstrapIndex) {
+  errors.push("Clarity must suppress explicit viewport-baseline and madabase-qa sessions before analytics bootstrap");
+}
+
+const affiliateButtonSource = fs.readFileSync(path.join(workspaceDir, "components", "AffiliateButton.tsx"), "utf8");
+const amazonListingRouteSource = fs.readFileSync(path.join(workspaceDir, "app", "api", "amazon-listing", "[site]", "[slug]", "route.ts"), "utf8");
+if (!affiliateButtonSource.includes('amazonMarket !== "us" || creatorsListingCandidate.asin.trim().toUpperCase() === expectedAsin')) {
+  errors.push("Amazon CTA hydration must reject a stale US Creators listing when its ASIN differs from the current product");
+}
+if (!amazonListingRouteSource.includes('market !== "us" || listingCandidate.asin.trim().toUpperCase() === expectedAsin')) {
+  errors.push("Amazon listing API must reject a stale US snapshot when its ASIN differs from the current product");
+}
+
 const sitesSource = fs.readFileSync(path.join(libDir, "sites.ts"), "utf8");
 for (const match of sitesSource.matchAll(/heroImage:\s*"([^"]+\.svg)"/g)) {
   errors.push(`Site hero ${match[1]} must use a photographic bitmap instead of a placeholder SVG`);

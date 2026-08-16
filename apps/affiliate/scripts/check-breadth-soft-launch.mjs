@@ -15,11 +15,32 @@ const domains = {
 const expectedSitemapCounts = { network: 232, smarthome: 249, homeoffice: 254, baby: 233, pet: 221 };
 const productFiles = Object.keys(domains).map((site) => `breadth-draft-${site}-product-research.json`);
 const products = productFiles.flatMap((name) => JSON.parse(fs.readFileSync(path.join(affiliateDir, "config", name), "utf8")).products);
+const requestedConcurrency = Number(process.env.BREADTH_AUDIT_CONCURRENCY ?? (publicAudit ? 2 : 8));
+const concurrency = Math.max(1, Math.min(12, Number.isFinite(requestedConcurrency) ? requestedConcurrency : 2));
 
 if (products.length !== 151) throw new Error(`Expected 151 soft-launch products; found ${products.length}`);
 
+async function publicFetchWithRetry(publicUrl, options) {
+  let response;
+  for (let attempt = 1; attempt <= 3; attempt += 1) {
+    response = await fetch(publicUrl, {
+      ...options,
+      headers: {
+        accept: "text/html,application/xhtml+xml",
+        "user-agent": "Madabase breadth auditor/1.0",
+        ...(options.headers ?? {}),
+      },
+      signal: AbortSignal.timeout(30_000),
+    });
+    if (![502, 503, 504].includes(response.status) || attempt === 3) return response;
+    await response.body?.cancel();
+    await new Promise((resolve) => setTimeout(resolve, attempt * 750));
+  }
+  return response;
+}
+
 async function localFetch(publicUrl, options = {}) {
-  if (publicAudit) return fetch(publicUrl, options);
+  if (publicAudit) return publicFetchWithRetry(publicUrl, options);
   const url = new URL(publicUrl);
   return fetch(`${localOrigin}${url.pathname}${url.search}`, {
     ...options,
@@ -77,10 +98,11 @@ async function worker() {
   }
 }
 
-await Promise.all(Array.from({ length: 8 }, () => worker()));
+await Promise.all(Array.from({ length: concurrency }, () => worker()));
 const report = {
   checkedAt: new Date().toISOString(),
   mode: publicAudit ? "public" : "local",
+  concurrency,
   pages: products.length,
   passed: products.length - failures.length,
   failed: failures.length,

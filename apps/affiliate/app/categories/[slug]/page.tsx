@@ -9,7 +9,7 @@ import { CostumeCategoryPage } from "@/components/CostumeExperience";
 import { siteGuides, siteProducts, siteRoundups, siteTools } from "@/lib/content";
 import { categoryCommerceProduct } from "@/lib/commerce-paths";
 import { breadcrumbSchema, itemListSchema, pageMetadata } from "@/lib/seo";
-import { prioritizeBySearchDemand } from "@/lib/search-demand-priorities";
+import { prioritizeBySearchDemand, siteSearchDemandPriorities } from "@/lib/search-demand-priorities";
 import { getCurrentSite } from "@/lib/sites";
 import type { SiteKey } from "@/lib/types";
 import { parseCostumeCatalogFilters, type CostumeCatalogCategory } from "@/lib/costume-catalog";
@@ -186,9 +186,13 @@ export default async function CategoryPage({
     siteRoundups(site.key).filter((item) => item.category === slug),
     (item) => `/best/${item.slug}`,
   );
+  const priorityGuidePaths = new Set(siteSearchDemandPriorities(site.key).map((item) => item.path));
   const guides = prioritizeBySearchDemand(
     site.key,
-    siteGuides(site.key).filter((item) => item.category === slug && (!item.familySlug || item.familyRole === "buying")),
+    siteGuides(site.key).filter((item) =>
+      item.category === slug
+      && (!item.familySlug || item.familyRole === "buying" || priorityGuidePaths.has(`/guides/${item.slug}`)),
+    ),
     (item) => `/guides/${item.slug}`,
   );
   const tools = siteTools(site.key).filter((item) => item.category === slug);

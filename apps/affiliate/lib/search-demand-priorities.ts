@@ -14,6 +14,11 @@ export type SearchDemandPriority = {
 const priorities: Record<SiteKey, SearchDemandPriority[]> = {
   network: [
     {
+      path: "/guides/sfp-plus-network-switches-ownership-cost-and-maintenance",
+      queryFamily: "SFP+ network switch ownership cost",
+      decision: "Plan optics or DAC costs, thermals, noise, firmware, and replacement paths after checkout.",
+    },
+    {
       path: "/best/tp-link-deco-be67-vs-be63",
       queryFamily: "Deco BE63 vs BE67",
       decision: "Compare 2.5GbE, 10GbE, 6GHz, pack size, and wired-backhaul value.",
@@ -72,6 +77,21 @@ const priorities: Record<SiteKey, SearchDemandPriority[]> = {
     },
   ],
   homeoffice: [
+    {
+      path: "/guides/ultrawide-office-monitors-ownership-cost-and-maintenance",
+      queryFamily: "Ultrawide monitor ownership cost",
+      decision: "Compare warranty, panel risk, mounting, power, and the long-term replacement path.",
+    },
+    {
+      path: "/guides/ultrawide-office-monitors-compatibility-and-fit-guide",
+      queryFamily: "Ultrawide monitor desk and computer fit",
+      decision: "Confirm GPU, ports, scaling, desk depth, mount capacity, and viewing distance before buying.",
+    },
+    {
+      path: "/guides/ultrawide-office-monitors-setup-and-daily-workflow",
+      queryFamily: "Ultrawide monitor setup workflow",
+      decision: "Plan window layout, input switching, camera placement, and a reversible first setup.",
+    },
     {
       path: "/best/logitech-litra-glow-vs-elgato-key-light-neo",
       queryFamily: "Litra Glow vs Key Light Neo",

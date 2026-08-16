@@ -1280,10 +1280,10 @@ export const products: Product[] = [
   {
     site: "baby",
     slug: "ergobaby-omni-breeze-carrier",
-    asin: "B0CCNT3HLW",
-    amazonTitle: "Ergobaby Omni Breeze Baby Carrier",
+    asin: "B0931ZY7DK",
+    amazonTitle: "Ergobaby Omni Breeze Baby Carrier All Carry Positions, Onyx Black",
     seoTitle: "Ergobaby Omni Breeze Review: Newborn Fit, Weight Limit & Positions",
-    updatedAt: "July 9, 2026",
+    updatedAt: "August 16, 2026",
     name: "Ergobaby Omni Breeze Baby Carrier",
     brand: "Ergobaby",
     category: "travel",
@@ -1302,8 +1302,9 @@ export const products: Product[] = [
     pros: ["Four positions: front inward, front outward, hip, and back", "SoftFlex mesh is designed to increase airflow", "Adjustable seat, padded straps, and lumbar-support waistbelt"],
     cons: ["Requires position-specific setup and a learning period", "A structured carrier can feel bulky compared with a soft wrap", "Mesh improves airflow but does not eliminate heat for baby or caregiver"],
     specs: {
-      ASIN: "B0CCNT3HLW",
+      ASIN: "B0931ZY7DK",
       "Product type": "Structured baby carrier",
+      "Linked variant": "Omni Breeze, Onyx Black",
       "Listed overall range": "7–45lb / 3.2–20.4kg; minimum height 20in / 50.8cm",
       "Front inward": "From the listed newborn minimum",
       "Front outward": "Strong head/neck control; over 25in; about 5–6 months",
@@ -1311,7 +1312,7 @@ export const products: Product[] = [
       Material: "SoftFlex mesh",
       "Infant insert": "Not required within the listed newborn limits",
       "Common searches answered": "Ergobaby Omni Breeze review, newborn fit, weight limit, and carry positions",
-      "Link status": "Amazon affiliate link verified July 16, 2026",
+      "Link status": "Exact Amazon US listing verified for New York 10001 on August 16, 2026",
     },
     evidence: ["Confirm the baby meets both the weight, height, and developmental requirements for the intended position", "Adjust the seat width to the baby's height using the waistbelt markings", "Make sure the face remains visible and follow the manual's head-and-neck-support instructions", "Fit each caregiver separately instead of assuming one strap setting works for everyone"],
     editorialSections: [
@@ -1357,9 +1358,14 @@ export const products: Product[] = [
         url: "https://ergobaby.com/instructions-omni-breeze/",
         note: "Official manuals and position-specific setup videos.",
       },
+      {
+        name: "Amazon listing: Ergobaby Omni Breeze Onyx Black",
+        url: "https://www.amazon.com/dp/B0931ZY7DK",
+        note: "Exact Omni Breeze identity, Onyx Black variant, Amazon.com seller and shipper, stock, and free-return path verified for New York 10001 on August 16, 2026. Reconfirm all checkout details before ordering.",
+      },
     ],
     offers: [
-      { merchant: "Amazon US", url: "https://www.amazon.com/dp/B0CCNT3HLW?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check price on Amazon", priceNote: "Confirm ASIN B0CCNT3HLW, color, seller, live price, and availability." },
+      { merchant: "Amazon US", url: "https://www.amazon.com/dp/B0931ZY7DK?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check Omni Breeze on Amazon", priceNote: "Confirm ASIN B0931ZY7DK, Omni Breeze, Onyx Black, Amazon.com seller and shipper, live price, stock, and free-return eligibility." },
     ],
   },
   {

@@ -58,10 +58,19 @@ function normalizeUrl(value) {
 }
 
 async function fetchText(url) {
-  const response = await fetch(url, {
-    headers: { "user-agent": "Madabase release auditor/1.0" },
-    redirect: "follow",
-  });
+  let response;
+  for (let attempt = 1; attempt <= 3; attempt += 1) {
+    response = await fetch(url, {
+      headers: { "user-agent": "Madabase release auditor/1.0" },
+      redirect: "follow",
+      signal: AbortSignal.timeout(30_000),
+    });
+    if (![502, 503, 504].includes(response.status) || attempt === 3) {
+      return { response, text: await response.text() };
+    }
+    await response.body?.cancel();
+    await new Promise((resolve) => setTimeout(resolve, attempt * 750));
+  }
   return { response, text: await response.text() };
 }
 
@@ -84,7 +93,8 @@ for (const host of [...new Set(exactUrls.map((url) => new URL(url).host))]) {
 
 const results = [];
 let nextIndex = 0;
-const concurrency = Math.min(18, exactUrls.length);
+const requestedConcurrency = Number(process.env.COMBINED_COHORT_AUDIT_CONCURRENCY ?? 2);
+const concurrency = Math.min(Math.max(1, Number.isFinite(requestedConcurrency) ? requestedConcurrency : 2), exactUrls.length);
 
 async function worker() {
   while (nextIndex < exactUrls.length) {
@@ -159,6 +169,7 @@ const report = {
   oldThirtyUrls: oldThirty.length,
   overlap: overlap.length,
   exactUniqueUrls: exactUrls.length,
+  concurrency,
   passed: results.length - failures.length,
   failed: failures.length,
   sitemapCounts: Object.fromEntries([...sitemapByHost].map(([host, urls]) => [host, urls.size])),

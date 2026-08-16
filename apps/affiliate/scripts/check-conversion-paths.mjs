@@ -10,7 +10,7 @@ const outputPath = outputArgument
   ? path.resolve(process.cwd(), outputArgument.slice("--json=".length))
   : null;
 const concurrencyArgument = process.argv.find((argument) => argument.startsWith("--concurrency="));
-const concurrency = Math.max(1, Math.min(24, Number(concurrencyArgument?.slice("--concurrency=".length) ?? 12)));
+const concurrency = Math.max(1, Math.min(24, Number(concurrencyArgument?.slice("--concurrency=".length) ?? (publicAudit ? 2 : 12))));
 const includeMarkets = !process.argv.includes("--base-only");
 const siteArgument = process.argv.find((argument) => argument.startsWith("--site="));
 
@@ -31,6 +31,9 @@ const siteTrackingIds = {
   pet: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_PET ?? "madapets-20",
   style: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_STYLE ?? "madastyle-20",
 };
+const criticalFirstViewportAsins = new Map([
+  ["https://baby.madabase.com/guides/ergobaby-omni-breeze-positions-by-age", "B0931ZY7DK"],
+]);
 const requestedSites = siteArgument
   ? siteArgument.slice("--site=".length).split(",").flatMap((site) => site === "amazon" ? Object.keys(siteHosts).filter((key) => key !== "costume") : site)
   : Object.keys(siteHosts);
@@ -65,14 +68,21 @@ function normalizeUrl(value) {
 
 async function fetchPublicUrl(publicUrl) {
   if (publicAudit) {
-    return fetch(publicUrl, {
-      headers: {
-        accept: "text/html,application/xhtml+xml",
-        "user-agent": "Madabase conversion-path auditor/1.0",
-      },
-      redirect: "follow",
-      signal: AbortSignal.timeout(30_000),
-    });
+    let response;
+    for (let attempt = 1; attempt <= 3; attempt += 1) {
+      response = await fetch(publicUrl, {
+        headers: {
+          accept: "text/html,application/xhtml+xml",
+          "user-agent": "Madabase conversion-path auditor/1.0",
+        },
+        redirect: "follow",
+        signal: AbortSignal.timeout(30_000),
+      });
+      if (![502, 503, 504].includes(response.status) || attempt === 3) return response;
+      await response.body?.cancel();
+      await new Promise((resolve) => setTimeout(resolve, attempt * 750));
+    }
+    return response;
   }
 
   const url = new URL(publicUrl);
@@ -175,6 +185,7 @@ async function inspectPage(publicUrl) {
     const amazonAnchors = affiliateAnchors.filter((anchor) => /amazon\.com\/dp\//i.test(anchor.href));
     const cjAnchors = affiliateAnchors.filter((anchor) => /\/go\/cj\//i.test(anchor.href));
     const firstViewportAnchors = affiliateAnchors.filter((anchor) => anchor.firstViewport);
+    const expectedFirstViewportAsin = criticalFirstViewportAsins.get(normalizeUrl(publicUrl));
     const expectedTag = siteTrackingIds[site];
     const firstAffiliateIndex = html.indexOf("data-affiliate-link-source=");
     const firstSponsoredCjIndex = html.search(/<a\b[^>]*href=["'][^"']*\/go\/cj\/[^"']+["'][^>]*rel=["'][^"']*sponsored/i);
@@ -206,6 +217,9 @@ async function inspectPage(publicUrl) {
       if (!firstViewportContainerFollowsH1) errors.push("first-viewport commerce container is not directly after the H1");
       if (!firstViewportAnchorInsideCompactContainer) errors.push("designated first-viewport CTA is not inside the compact H1 commerce container");
       if (requirePreImageCta && !beforeFirstImage) errors.push("first affiliate CTA appears after the first page image");
+      if (expectedFirstViewportAsin && !firstViewportAnchors.some((anchor) => anchor.href.toUpperCase().includes(`/DP/${expectedFirstViewportAsin}`))) {
+        errors.push(`first-viewport CTA does not target required ASIN ${expectedFirstViewportAsin}`);
+      }
     }
     for (const anchor of affiliateAnchors) {
       if (!anchor.rel.includes("sponsored") || !anchor.rel.includes("nofollow")) {
@@ -259,6 +273,7 @@ const report = {
   checkedAt: new Date().toISOString(),
   mode: publicAudit ? "public" : "local",
   includeMarkets,
+  concurrency,
   baseUrls: baseUrls.length,
   exactUrls: exactUrls.length,
   passed: results.length - failures.length,
@@ -283,6 +298,7 @@ console.log(JSON.stringify({
   checkedAt: report.checkedAt,
   mode: report.mode,
   includeMarkets: report.includeMarkets,
+  concurrency: report.concurrency,
   baseUrls: report.baseUrls,
   exactUrls: report.exactUrls,
   passed: report.passed,

@@ -23,10 +23,15 @@ export async function GET(
   const site = siteValue as SiteKey;
   const market = marketValue as AmazonMarketKey;
   const product = findProduct(site, slug);
-  if (!product || !(product.asin ?? product.specs.ASIN)) {
+  const expectedAsin = (product?.asin ?? product?.specs.ASIN)?.trim().toUpperCase();
+  if (!product || !expectedAsin) {
     return NextResponse.json({ listing: null }, { status: 404, headers: responseHeaders });
   }
 
-  const listing = await getFreshAmazonCreatorsListing(site, slug, market);
+  const listingCandidate = await getFreshAmazonCreatorsListing(site, slug, market);
+  const listing = listingCandidate
+    && (market !== "us" || listingCandidate.asin.trim().toUpperCase() === expectedAsin)
+    ? listingCandidate
+    : null;
   return NextResponse.json({ listing }, { headers: responseHeaders });
 }
