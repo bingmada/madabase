@@ -1,51 +1,124 @@
 {
-  "updatedAt": "2026-08-14T15:00:37+08:00",
+  "updatedAt": "2026-08-16T11:25:00+08:00",
+  "purpose": "Tracked cross-conversation snapshot. Read this before every affiliate operation, then read docs/affiliate-growth-state.json and docs/affiliate-growth-runbook.md for the mutable history and operating rules.",
+  "mandatoryDailyScope": {
+    "rule": "Every operating run must review conversion integrity, exact zero-exposure cohorts, the latest 24 hours versus the previous 24 hours, the latest complete 7-day window, active SEO experiments, merchant-link health, crawl discovery, production health and due measurement gates. Do not wait for the owner to ask about each item separately.",
+    "conversionFirst": "Amazon or authorized CJ earnings are the objective. Every commercial page must retain a truthful, exact or clearly labeled fallback purchase path in the first viewport and pass the structural conversion audit.",
+    "seoEvidenceRule": "Judge tracked URL cohorts exactly. Do not replace an exact 24-hour, 48-hour or cohort analysis with a site-wide headline metric, and do not rewrite protected winners or active title experiments before their gate."
+  },
   "conversionIntegrityP0": {
     "status": "production_deployed_and_verified",
-    "trigger": "https://baby.madabase.com/guides/ergobaby-omni-breeze-positions-by-age had traffic but no monetization CTA.",
-    "rootCause": "The guide points to ergobaby-omni-breeze-carrier, whose former ASIN B0CCNT3HLW is correctly suppressed because the Amazon listing drifted to a different two-carrier bundle. Guide and review templates had no verified-commerce fallback after that suppression. The first repair then accepted before-first-image rather than the actual first viewport, leaving the target CTA 3.8 mobile screens down.",
-    "remediation": "Placed a compact purchase path immediately after H1 and explicitly marked it as first-viewport commerce across Amazon guides, reviews, roundups, tools and categories, localized markets, all Style money templates, and Costume guides, categories, products and roundups. Structural audits now require the marked CTA inside the post-H1 compact container and before the first content image. Costume guides without an exact active family offer use an eligible same-category database-backed CJ fallback. A blocked exact product may use a clearly labeled verified alternative, never the original product name or an unverified ASIN.",
-    "targetPage": "The Omni Breeze positions-by-age guide now explicitly says the exact Omni Breeze listing is paused and offers the verified BabyBjorn Harmony alternative, ASIN B0947B35TG, with the Baby site tag madababy-20. Do not restore the exact Omni Breeze purchase claim until a current exact listing is independently verified.",
-    "baseline": {
-      "amazonSites": "The prior public target placed its CTA at y=3252-3312 in a 390x844 viewport. The earlier 1,335-page audit found 70 without CTA and 1,043 conversion-path issues.",
-      "costume": "132 production pages checked; 50 guides and 5 categories had no CJ CTA, while one animatronic roundup placed its first CTA after the first image. The 76 catalog product pages passed."
-    },
+    "trigger": "https://baby.madabase.com/guides/ergobaby-omni-breeze-positions-by-age received traffic while its purchase path was missing or too far below the first viewport.",
+    "rootCause": "A drifted Amazon listing caused the old Omni Breeze ASIN to be suppressed; the first repair supplied a fallback but did not preserve the exact product after a new exact listing became available. A stale Amazon Creators API snapshot could also overwrite exact catalog data.",
+    "remediation": "Restored the exact Ergobaby Omni Breeze listing, ASIN B0931ZY7DK, Onyx Black, with Baby tag madababy-20. The stale Creators API snapshot can no longer override an exact catalog ASIN. The compact purchase path remains explicitly marked as first-viewport commerce across governed templates, and QA traffic is suppressed from Clarity.",
+    "targetPage": "The positions-by-age guide now exposes exact Omni Breeze commerce in the first viewport and links to ASIN B0931ZY7DK with tag madababy-20. The exact product review uses the same verified offer.",
     "localValidation": {
-      "allAmazonMarketPages": "6,710_of_6,710_passed",
-      "amazonBreakdown": { "network": 1210, "smarthome": 1295, "homeoffice": 1360, "baby": 1245, "pet": 1255, "style": 345 },
-      "contentKinds": { "reviews": 850, "guides": 5325, "roundups": 385, "tools": 35, "categories": 115 },
-      "affiliateLinks": "300_of_300_passed; 8 known drifted or unavailable offers remained suppressed",
-      "seo": "passed",
+      "babyConversionPages": "253_of_253_passed",
+      "affiliateLinks": "301_of_301_passed; 8 known drifted or unavailable offers remained suppressed",
+      "seo": "passed: 964 published guides, 170 products, 77 roundups, 7 tools, 4,672 generated market routes and 32 index-qualified market routes",
+      "governedExpansion": "757_of_757_passed across 154 families; 3,785 unique section bodies; 144 exact Amazon anchors; 532 minimum, 630 average and 814 maximum words",
       "softLaunch": "151_of_151_passed_and_sitemap_excluded",
+      "existingRefresh": "118_of_118_passed",
       "distributionImages": "18_across_6_sites_passed",
-      "releaseBuild": "Next.js production build, lint/type checks, static generation and Linux standalone packaging passed"
+      "releaseBuild": "TypeScript, full ESLint, Next.js production build, static generation and Linux standalone packaging passed"
     },
-    "productionGate": "Passed in immutable release 0aed739. Candidate and production returned HTTP 200 on all seven hosts; the production-database Costume audit passed 132 of 132 pages with zero failures and zero missing CTAs; the normal public Baby target placed the CTA at y=476-536 in a 390x844 viewport with exact B0947B35TG and madababy-20, while blocked B0CCNT3HLW was absent. Continue to avoid high-concurrency full Amazon audits on the 1.6GB production server.",
-    "discovery": "This is a template conversion release with no new URLs. Do not submit the 151 soft-launch cohort to sitemaps, IndexNow or external distribution."
+    "productionGate": "Immutable release 96eb08c is active. The seven public affiliate hosts return HTTP 200. The public target contains exact B0931ZY7DK, madababy-20, its canonical and data-first-viewport-commerce=true. All 19 governed category pages expose all 757 direct guide links with zero discovery failures.",
+    "discovery": "Twenty-nine materially changed URLs were accepted by IndexNow with HTTP 200. The 151 soft-launch cohort remains excluded from sitemap, IndexNow and external distribution."
   },
-  "purpose": "Tracked cross-conversation snapshot. Read docs/affiliate-growth-state.json for the complete mutable source of truth and docs/affiliate-growth-runbook.md for operating rules.",
   "release": {
-    "active": "0aed739",
-    "commit": "0aed739f6b1a0efc3a7f1a3af35c6642c6b92242",
+    "active": "96eb08c",
+    "commit": "96eb08ce13ef8840e70546a8e675d48f481ec236",
     "branch": "lyd-0609",
     "pushed": true,
-    "artifactBytes": 57911862,
-    "artifactSha256": "8478b6f8aad78c7a67823abd73b79a7ce428a0316aff2166bd681a261cc82962",
-    "productionPath": "/srv/madabase-affiliate/releases/0aed739/apps/affiliate",
-    "rollback": "4b1035a",
-    "sevenHostsHttp200": true,
+    "artifactBytes": 57911840,
+    "artifactSha256": "b02335c6b638f07456c84e02ee05d3849f2a22691e4fbefea03c23c0a515be07",
+    "artifactLocalPath": "apps/affiliate/.release/affiliate-runtime.tgz",
+    "productionPath": "/srv/madabase-affiliate/releases/96eb08c/apps/affiliate",
+    "rollback": "0aed739",
+    "sevenPublicAffiliateHostsHttp200": true,
     "pm2Saved": true,
-    "candidateRemoved": true
+    "candidateRemoved": true,
+    "indexNowAcceptedUrls": 29
   },
   "serverStability": {
     "serverMemoryApprox": "1.6GB",
     "pm2MaxMemoryRestart": "350M",
     "releaseRestartCountObserved": 0,
     "unstableRestarts": 0,
-    "errorLog": "empty during bounded candidate and production verification",
-    "settledMemoryApprox": "238MB after roughly six minutes",
-    "cause": "Release 0aed739 passed full local Amazon coverage and a bounded 132-page production Costume audit. The first PM2 cutover attempt restarted the existing app without changing its script path; the guarded check rolled back, then an exact delete-and-recreate of only home switched script and cwd to 0aed739. Other PM2 services were untouched.",
+    "errorLog": "No current-release error was added. The visible sharp lines are historical; home-error.log mtime is 2026-07-23 10:08:27 +08:00.",
+    "observedMemoryApprox": "254MB after bounded production verification",
+    "cause": "The release was verified first as candidate-home on port 3111, then only PM2 home was deleted and recreated with the exact 96eb08c script path and cloned production environment. Candidate-home was removed after cutover and port 3111 was released. Other PM2 services were untouched.",
     "rule": "Run full high-concurrency audits on a candidate or local immutable runtime; use bounded sampling on production."
+  },
+  "searchBaseline": {
+    "latest24Hours": {
+      "clicks": 7,
+      "impressions": 538,
+      "ctr": "1.3%",
+      "averagePosition": 32.1,
+      "comparison": "Previous 24 hours: 2 clicks, 867 impressions, 0.2% CTR and position 34.5.",
+      "use": "directional_only"
+    },
+    "latestComplete7DaysAug7To13": {
+      "clicks": 23,
+      "impressions": 4583,
+      "ctr": "0.5%",
+      "averagePosition": 28.0
+    },
+    "note": "Search Console page-dimension sums can exceed the dashboard aggregate because more than one Madabase URL can appear in one result set."
+  },
+  "searchExposureGates": {
+    "expansion757": {
+      "complete7Days": { "exposedUrls": 314, "zeroImpressionUrls": 443, "clicks": 0, "impressions": 826, "weightedPosition": 36.805 },
+      "latest24Hours": { "exposedUrls": 72, "impressions": 101, "weightedPosition": 44.39 },
+      "previous24Hours": { "exposedUrls": 119, "impressions": 193, "weightedPosition": 46.73 },
+      "zeroBySite": { "baby": 82, "costume": 38, "homeoffice": 81, "network": 56, "pet": 116, "smarthome": 70 },
+      "roleEvidence": {
+        "buying": { "exposed": 33, "zero": 121, "impressions": 95, "position": 49.33 },
+        "comparison": { "exposed": 74, "zero": 80, "impressions": 184, "position": 38.86 },
+        "fit": { "exposed": 60, "zero": 94, "impressions": 185, "position": 38.99 },
+        "ownership": { "exposed": 63, "zero": 91, "impressions": 130, "position": 17.74 },
+        "safety": { "exposed": 14, "zero": 10, "impressions": 39, "position": 41.64 },
+        "workflow": { "exposed": 70, "zero": 47, "impressions": 193, "position": 38.44 }
+      },
+      "action": "All 757 URLs now have crawlable direct links from their 19 category pages, grouped by search intent. Ownership, the strongest observed role, is ordered early. Category ItemList JSON-LD and sitemap lastmod 2026-08-16 were added or refreshed.",
+      "nextGate": "Re-measure exact impressions after crawling; do not rewrite hundreds of URLs before the discovery change has had time to propagate."
+    },
+    "zeroExposureInspection": {
+      "uniqueUrlsDue": 459,
+      "composition": "443 expansion URLs plus 16 existing-ranking-refresh URLs",
+      "onGoogle": 98,
+      "notOnGoogle": 0,
+      "fullExpandedDetailCaptured": 53,
+      "indexSummaryCaptured": 45,
+      "blockedByDailyInspectionQuota": 361,
+      "interpretation": "All 98 inspected URLs are indexed. For the inspected sample, zero impressions are a discovery/demand/ranking problem rather than an indexing failure.",
+      "externalBlocker": "Google Search Console reported that the property's daily URL Inspection quota was exceeded.",
+      "nextAction": "Resume the exact remaining ledger on 2026-08-17 after the daily quota renews; never report the 459-URL inspection as complete before the 361 blocked rows are resolved."
+    },
+    "existingRankingRefresh118": {
+      "complete7Days": { "exposedUrls": 102, "zeroImpressionUrls": 16, "clicks": 19, "impressions": 2630, "ctr": "0.722%", "weightedPosition": 19.378 },
+      "latest24Hours": { "clicks": 5, "impressions": 236, "exposedUrls": 64, "ctr": "2.12%", "weightedPosition": 18.15 },
+      "previous24Hours": { "clicks": 2, "impressions": 377, "exposedUrls": 73, "ctr": "0.53%", "weightedPosition": 18.99 },
+      "action": "Keep evidence-positive changes. Inspect the 16 zero URLs through the same exact ledger; do not broadly rewrite the 37 protected winners or 21 held pages."
+    },
+    "titleExperiment3": {
+      "complete7Days": { "clicks": 0, "impressions": 207, "weightedPosition": 14.32 },
+      "urls": {
+        "furbo": { "impressions": 66, "position": 18.8 },
+        "tapoP110MHomeAssistant": { "impressions": 67, "position": 13.8 },
+        "caldigit": { "impressions": 74, "position": 10.8 }
+      },
+      "latest24Hours": { "clicks": 0, "impressions": 19, "position": 15.79 },
+      "previous24Hours": { "clicks": 0, "impressions": 16, "position": 15.28 },
+      "gate": "Do not change these titles before Day 7 on 2026-08-20."
+    },
+    "softLaunch151": {
+      "state": "public_indexable_internally_linked_sitemap_excluded",
+      "complete7Days": { "exposedUrls": 0, "note": "Released on the evening of 2026-08-13, so the complete window mostly predates launch." },
+      "latest24Hours": { "exposedUrls": 1, "impressions": 2, "position": 6.0, "urlNote": "Baby childproof stove knob covers" },
+      "gate": "Remain sitemap- and IndexNow-excluded. Run the exact Day-7 zero-URL inspection on 2026-08-20."
+    }
   },
   "cohorts": {
     "newSoftLaunch": {
@@ -67,43 +140,53 @@
       "heldForEvidence": 21
     }
   },
-  "sitemaps": { "network": 232, "smarthome": 249, "homeoffice": 254, "baby": 233, "pet": 221 },
+  "sitemaps": {
+    "network": 232,
+    "smarthome": 249,
+    "homeoffice": 254,
+    "baby": 233,
+    "pet": 221,
+    "governedCategoryLastmod": "2026-08-16",
+    "softLaunch151Included": 0
+  },
   "cloudflare": {
     "rule": "Cache public affiliate HTML",
     "ruleCorrect": true,
-    "browserHtml": "MISS_then_HIT_current_content",
-    "apiAndRsc": "DYNAMIC",
-    "staticAssets": "HIT",
-    "customPurgedUrls": 124,
+    "currentReleasePublicHtml": "The target response was HTTP 200 with cf-cache-status DYNAMIC and current conversion fingerprints. The public 19-category audit returned current content for all categories, so no purge was required.",
     "purgeEverythingUsed": false,
     "testingRule": "Send an Accept header containing text/html; default curl Accept */* does not match the HTML rule."
-  },
-  "searchBaseline": {
-    "latest24Hours": { "clicks": 5, "impressions": 680, "ctr": "0.7%", "averagePosition": 28.7, "use": "directional_only" },
-    "latestComplete7DaysAug4To10": { "clicks": 18, "impressions": 3277, "ctr": "0.5%", "averagePosition": 23.8 },
-    "previousComplete7DaysJul28ToAug3": { "clicks": 18, "impressions": 2581, "ctr": "0.7%", "averagePosition": 28.9 },
-    "complete28DaysJul14ToAug10": { "clicks": 66, "impressions": 10835, "ctr": "0.6%", "averagePosition": 27.0 },
-    "interpretation": "Complete-week impressions rose about 27% and average position improved 5.1 while clicks stayed flat; CTR and page-two movement are the nearer bottlenecks."
   },
   "merchantAndSiteBoundaries": {
     "amazonFirstSites": ["network", "smarthome", "homeoffice", "baby", "pet", "style"],
     "babyCj": "Only the separately recorded bounded Bc Babycare pilot is authorized.",
-    "costume": "Database-backed eligible Abracadabra/CJ products now supply first-viewport guide, category, product and curated-roundup paths, including same-category fallback for guides without an exact active family offer. The full 132-page production audit passed.",
+    "costume": "Database-backed eligible Abracadabra/CJ products supply first-viewport guide, category, product and curated-roundup paths, including same-category fallback for guides without an exact active family offer.",
     "petMedicationMerchant": "CanadaPetCare remains blocked from public CTAs.",
     "style": "maintenance_only"
   },
   "validation": {
-    "seoAudit": { "publishedGuides": 964, "products": 170, "roundups": 77, "tools": 7 },
-    "affiliateLinks": "300_of_300_passed",
-    "newPagesRuntime": "151_of_151_passed",
+    "seoAudit": { "publishedGuides": 964, "products": 170, "roundups": 77, "tools": 7, "generatedMarketRoutes": 4672, "indexQualifiedMarketRoutes": 32 },
+    "affiliateLinks": "301_of_301_passed",
+    "governedExpansionQuality": "757_of_757_passed",
+    "categoryDiscoveryLocal": "757_of_757_direct_links_across_19_categories",
+    "categoryDiscoveryPublic": "757_of_757_direct_links_across_19_categories",
+    "babyConversionRuntime": "253_of_253_passed",
+    "newPagesRuntime": "151_of_151_passed_and_0_in_sitemaps",
     "existingRefreshRuntime": "118_of_118_passed",
     "distributionImages": "18_across_6_sites_passed",
-    "publicHosts": "7_of_7_http_200",
-    "currentAndRetainedAssets": "http_200",
-    "conversionPaths": "local_all_market_amazon_6710_of_6710; production_costume_132_of_132; public_mobile_target_first_viewport_y476_to_536_of_844"
+    "publicHosts": "7_of_7_affiliate_hosts_http_200",
+    "productionTarget": "exact_B0931ZY7DK_madababy-20_first_viewport_and_self_canonical",
+    "productionProcess": "home_online_release_96eb08c_restart_0_unstable_0_pm2_saved"
+  },
+  "indexNow": {
+    "date": "2026-08-16",
+    "submitted": 29,
+    "accepted": 29,
+    "httpStatus": 200,
+    "bySite": { "network": 3, "smarthome": 4, "homeoffice": 4, "baby": 11, "pet": 3, "costume": 4 },
+    "scope": "Only materially changed home, category and Omni Breeze monetization pages. The 151 soft-launch cohort was excluded."
   },
   "measurementGates": {
-    "day3": "2026-08-16",
+    "zeroInspectionResume": "2026-08-17",
     "day7": "2026-08-20",
     "day14": "2026-08-27",
     "day28": "2026-09-10"
@@ -128,14 +211,22 @@
     }
   },
   "doNotDo": [
-    "Do not add the 151 soft-launch pages to sitemap, IndexNow or external distribution before their gate.",
+    "Do not add the 151 soft-launch pages to sitemap, IndexNow or external distribution before their Day-7 gate on 2026-08-20.",
     "Do not treat sitemap exclusion as noindex.",
+    "Do not report the 459-URL zero-exposure inspection as complete while 361 rows remain blocked by the daily Search Console quota.",
+    "Do not change the three active title experiments before 2026-08-20.",
     "Do not broadly rewrite the 37 protected winners or 21 held pages without page-filtered evidence.",
     "Do not run high-concurrency full production audits on the approximately 1.6GB server.",
     "Do not use Cloudflare Purge Everything for ordinary content releases."
   ],
   "details": {
     "rankingReview": "docs/affiliate-search-ranking-review-2026-08-13.md",
+    "currentSearchGateReports": [
+      "docs/affiliate-expansion757-search-gate-2026-08-16.csv",
+      "docs/affiliate-ranking118-search-gate-2026-08-16.csv",
+      "docs/affiliate-soft151-search-gate-2026-08-16.csv"
+    ],
+    "zeroInspectionLedger": "docs/affiliate-zero-impression-inspections-2026-08-16.csv",
     "mutableState": "docs/affiliate-growth-state.json",
     "runbook": "docs/affiliate-growth-runbook.md",
     "breadthReadiness": "apps/affiliate/config/breadth-draft-120-plus-readiness.json"
