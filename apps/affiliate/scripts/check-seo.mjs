@@ -215,6 +215,20 @@ const quadrupleExpansionJavascript = `${quadrupleEditorialBriefJavascript}\ncons
 const quadrupleExpansionModule = await import(
   `data:text/javascript;base64,${Buffer.from(quadrupleExpansionJavascript).toString("base64")}`
 );
+const categoryPageSource = fs.readFileSync(path.join(workspaceDir, "app", "categories", "[slug]", "page.tsx"), "utf8");
+const governedSitemapSource = fs.readFileSync(path.join(workspaceDir, "app", "sitemap.ts"), "utf8");
+if (!categoryPageSource.includes('data-governed-discovery-links="true"')) {
+  errors.push("Category pages must expose a crawlable governed-guide discovery section");
+}
+if (!categoryPageSource.includes("...allCategoryGuides.map((guide)")) {
+  errors.push("Category ItemList schema must include every governed guide in the category");
+}
+if (!categoryPageSource.includes("<GovernedDecisionGuideLinks guides={allCategoryGuides} includeBuying />")) {
+  errors.push("Costume category pages must directly expose every governed buying and decision guide");
+}
+if (!governedSitemapSource.includes('new Date("2026-08-16T00:00:00Z")')) {
+  errors.push("Materially changed governed category pages must publish the August 16 discovery lastmod");
+}
 const expectedExpansionFamilies = {
   network: 27,
   smarthome: 30,

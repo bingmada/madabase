@@ -38,7 +38,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         ]
       : []),
     ...staticPageSlugs.map((slug) => ({ path: `/${slug}`, changeFrequency: "monthly" as const, priority: 0.45 })),
-    ...site.categories.map((category) => ({ path: `/categories/${category.slug}`, changeFrequency: "weekly" as const, priority: 0.75 })),
+    ...site.categories.map((category) => ({
+      path: `/categories/${category.slug}`,
+      changeFrequency: "weekly" as const,
+      priority: 0.75,
+      ...(guides.some((guide) => guide.category === category.slug && guide.familySlug)
+        ? { lastModified: new Date("2026-08-16T00:00:00Z") }
+        : {}),
+    })),
     ...roundups.map((item) => {
       const updated = contentDate(effectiveContentUpdatedAt(item.updatedAt, searchOpportunityUpdatedAt(site.key, "roundup", item.slug)));
 

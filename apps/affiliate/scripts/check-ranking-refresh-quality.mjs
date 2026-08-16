@@ -228,7 +228,10 @@ if (runtimeOrigin) {
       if (!text.includes("Continue this decision")) pageErrors.push("intentional link module missing");
       if (!text.includes("Page structure updated August 13, 2026")) pageErrors.push("ranking refresh date missing");
       if (/<meta\b[^>]*name=["']robots["'][^>]*content=["'][^"']*noindex/i.test(html)) pageErrors.push("noindex present");
-      if (!sitemapUrls.get(host)?.get(publicUrl)?.startsWith("2026-08-13")) pageErrors.push("sitemap lastmod is not 2026-08-13");
+      const sitemapLastmod = sitemapUrls.get(host)?.get(publicUrl);
+      if (!sitemapLastmod || Date.parse(sitemapLastmod) < Date.parse("2026-08-13T00:00:00Z")) {
+        pageErrors.push(`sitemap lastmod predates the August 13 refresh (${sitemapLastmod ?? "missing"})`);
+      }
       if (pageErrors.length) runtimeFailures.push(`${publicUrl}: ${pageErrors.join(", ")}`);
     }
   }
