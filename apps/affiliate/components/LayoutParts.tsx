@@ -1,6 +1,7 @@
 import { ArrowRight, CheckCircle2, Menu, Scale, Search, ShieldCheck } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { buyerFacingSummary } from "@/lib/conversion-copy";
 import type { SiteDecisionModule } from "@/lib/site-decision-modules";
 import type { SiteConfig } from "@/lib/sites";
 import type { Product, Roundup } from "@/lib/types";
@@ -226,7 +227,7 @@ export function ProductCard({ product }: { product: Product }) {
           <p className="text-xs font-bold uppercase text-[var(--muted)]">{product.brand}</p>
           <h3 className="mt-1 text-xl font-bold">{displayName}</h3>
         </div>
-        <p className="mt-3 leading-7 text-[var(--muted)]">{product.summary}</p>
+        <p className="mt-3 leading-7 text-[var(--muted)]">{buyerFacingSummary(product.summary)}</p>
         <p className="mt-3 text-sm font-semibold text-[var(--brand-strong)]">Best for: {product.bestFor}</p>
         <p className="mt-2 text-sm leading-6 text-[var(--muted)]">Main caution: {product.cons[0]}</p>
         <div className="mt-5 flex flex-wrap gap-2">

@@ -1,6 +1,7 @@
 import { ArrowLeft, ArrowRight, ImageOff, Link2Off, Search, ShieldCheck } from "lucide-react";
 import Link from "next/link";
 import type { SiteConfig } from "@/lib/sites";
+import { TrackedCommerceLink } from "./TrackedCommerceLink";
 import {
   formatCostumePrice,
   listCostumeCatalogProducts,
@@ -240,7 +241,22 @@ export function CostumePurchaseState({ product, firstViewport = false }: { produ
         <ShieldCheck aria-hidden="true" className="text-[var(--brand)]" size={22} />
         <h2 className="mt-4 text-xl font-bold">Available at Abracadabra NYC</h2>
         <p className="mt-3 text-sm leading-6 text-[var(--muted)]">Check the exact variant, current availability, shipping, and return terms on the retailer page.</p>
-        <Link className="button-primary mt-5" href={`/go/cj/${product.activeLink.clickToken}`} rel="nofollow sponsored" data-first-viewport-affiliate={firstViewport ? "true" : undefined} data-cta-intent={firstViewport ? "price-availability" : undefined}>Check current price &amp; availability at Abracadabra NYC <ArrowRight aria-hidden="true" size={16} /></Link>
+        {firstViewport ? (
+          <div className="mt-5">
+            <TrackedCommerceLink
+              firstViewport
+              href={`/go/cj/${product.activeLink.clickToken}`}
+              label="Check current price & availability at Abracadabra NYC"
+              merchant="Abracadabra NYC"
+              position="costume-product-first-viewport"
+              productName={product.title}
+              productSlug={product.slug}
+              site="costume"
+            />
+          </div>
+        ) : (
+          <Link className="button-primary mt-5" href={`/go/cj/${product.activeLink.clickToken}`} rel="nofollow sponsored">Check current price &amp; availability at Abracadabra NYC <ArrowRight aria-hidden="true" size={16} /></Link>
+        )}
       </div>
     );
   }

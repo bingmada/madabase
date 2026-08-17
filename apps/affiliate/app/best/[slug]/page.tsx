@@ -2,12 +2,13 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AffiliateButtonGroup } from "@/components/AffiliateButton";
 import { JsonLd } from "@/components/JsonLd";
-import { Disclosure, MethodologyList, ProductCard } from "@/components/LayoutParts";
+import { Disclosure, ProductCard } from "@/components/LayoutParts";
 import { BaseMarketEditionLinks } from "@/components/MarketExperience";
 import { SearchOpportunityBacklinks, SearchOpportunityBlock } from "@/components/SearchOpportunityBlock";
 import { StyleCollectionPage } from "@/components/StyleExperience";
 import { findProduct, findRoundup, siteGuides } from "@/lib/content";
 import { roundupCommerceProduct } from "@/lib/commerce-paths";
+import { buyerFacingBody, buyerFacingHeading, buyerFacingSummary } from "@/lib/conversion-copy";
 import { effectiveContentUpdatedAt, findSearchOpportunity, searchOpportunityMetaDescription } from "@/lib/search-opportunities";
 import { breadcrumbSchema, faqPageSchema, pageMetadata, roundupArticleSchema, roundupProductListSchema } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
@@ -251,11 +252,11 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
               </div>
               <div className="flex flex-wrap items-start gap-2 sm:justify-end">
                 {commerceProduct ? <AffiliateButtonGroup site={site.key} product={commerceProduct} position={commerceIsAlternative ? "roundup-first-viewport-verified-alternative" : "roundup-first-viewport-primary"} limit={1} firstViewport /> : null}
-                {topPick ? <Link className="button-secondary" href={`/reviews/${topPick.slug}`}>Evidence notes</Link> : null}
+                {topPick ? <Link className="button-secondary" href={`/reviews/${topPick.slug}`}>Review details</Link> : null}
               </div>
             </div>
           ) : null}
-          <p className="mt-4 text-base leading-7 text-[var(--muted)] sm:mt-5 sm:text-lg sm:leading-8">{roundup.dek}</p>
+          <p className="mt-4 text-base leading-7 text-[var(--muted)] sm:mt-5 sm:text-lg sm:leading-8">{buyerFacingSummary(roundup.dek)}</p>
           {effectiveUpdatedAt ? (
             <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-xs font-semibold text-[var(--muted)] sm:mt-4 sm:gap-y-2 sm:text-sm">
               <span className="hidden sm:inline">Prepared by the {site.name} editorial desk</span>
@@ -319,18 +320,18 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
             ) : null}
             {picks.length ? (
               <section className="panel p-5">
-                <h2 className="text-xl font-bold">Evidence basis and listing risk</h2>
+                <h2 className="text-xl font-bold">Compare the current options</h2>
                 <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
-                  We use manufacturer specs where available, then treat Amazon as a listing-verification step for ASIN, bundle, seller, coupon, and return-window risk.
+                  Match the exact model, bundle, seller, coupon, and return window before choosing between the picks.
                 </p>
                 <div className="mt-4 overflow-x-auto rounded-md border border-[var(--border)]">
                   <table className="w-full min-w-[820px] text-left text-sm">
                     <thead className="bg-[var(--surface-muted)] text-xs uppercase text-[var(--muted)]">
                       <tr>
                         <th className="px-4 py-3">Pick</th>
-                        <th className="px-4 py-3">Official specs</th>
-                        <th className="px-4 py-3">Amazon/listing anchor</th>
-                        <th className="px-4 py-3">Version or price risk</th>
+                        <th className="px-4 py-3">Key fit details</th>
+                        <th className="px-4 py-3">Exact listing</th>
+                        <th className="px-4 py-3">What can change</th>
                         <th className="px-4 py-3">Updated</th>
                       </tr>
                     </thead>
@@ -343,7 +344,11 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
                             </Link>
                           </th>
                           <td className="px-4 py-4 text-[var(--muted)]">
-                            {product.sources?.length ? `${product.sources.length} source${product.sources.length === 1 ? "" : "s"}` : "Source link pending"}
+                            {Object.entries(product.specs)
+                              .filter(([key]) => key !== "Link status" && key !== "ASIN")
+                              .slice(0, 2)
+                              .map(([key, value]) => `${key}: ${value}`)
+                              .join(" · ") || product.bestFor}
                           </td>
                           <td className="px-4 py-4 text-[var(--muted)]">{product.asin ? `ASIN ${product.asin}` : product.specs.ASIN ?? "Confirm live listing"}</td>
                           <td className="px-4 py-4 text-[var(--muted)]">{product.offers[0]?.priceNote ?? product.evidence[0] ?? "Confirm seller, bundle, and return path"}</td>
@@ -353,15 +358,6 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
                     </tbody>
                   </table>
                 </div>
-                {sources.length ? (
-                  <div className="mt-4 grid gap-3 sm:grid-cols-2">
-                    {sources.map((source) => (
-                      <a className="rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-4 text-sm font-semibold text-[var(--brand-strong)] hover:underline" href={source.url} key={source.url} rel="noopener noreferrer" target="_blank">
-                        {source.name}
-                      </a>
-                    ))}
-                  </div>
-                ) : null}
               </section>
             ) : null}
             {roundup.decisionGuide?.length ? (
@@ -379,7 +375,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
             ) : null}
             {roundup.comparisonTable ? (
               <section className="panel p-5">
-                <p className="eyebrow">Decision evidence</p>
+                <p className="eyebrow">Side-by-side checks</p>
                 <h2 className="mt-3 text-xl font-bold">{roundup.comparisonTable.title}</h2>
                 <div className="mt-5 overflow-x-auto rounded-md border border-[var(--border)] bg-white">
                   <table className="w-full min-w-[920px] text-left text-sm">
@@ -409,8 +405,8 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
             ) : null}
             {roundup.sections?.map((section) => (
               <section className="panel p-5" key={section.heading}>
-                <h2 className="text-xl font-bold">{section.heading}</h2>
-                <p className="mt-3 leading-7 text-[var(--muted)]">{section.body}</p>
+                <h2 className="text-xl font-bold">{buyerFacingHeading(section.heading)}</h2>
+                <p className="mt-3 leading-7 text-[var(--muted)]">{buyerFacingBody(section.body)}</p>
               </section>
             ))}
             <section className="panel p-5">
@@ -464,9 +460,23 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
                 ))}
               </div>
             </section>
+            <section className="panel p-5">
+              <h2 className="text-xl font-bold">Sources and methodology</h2>
+              <ul className="mt-4 space-y-2 text-sm leading-6 text-[var(--muted)]">
+                {roundup.methodology.map((item) => <li key={item}>{item}</li>)}
+              </ul>
+              {sources.length ? (
+                <div className="mt-5 grid gap-3 sm:grid-cols-2">
+                  {sources.map((source) => (
+                    <a className="rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-3 text-sm font-semibold text-[var(--brand-strong)] hover:underline" href={source.url} key={source.url} rel="noopener noreferrer" target="_blank">
+                      {source.name}
+                    </a>
+                  ))}
+                </div>
+              ) : null}
+            </section>
           </div>
           <aside className="space-y-5 lg:sticky lg:top-24 lg:self-start">
-            <MethodologyList items={roundup.methodology} />
             <div className="panel p-5">
               <h2 className="text-xl font-bold">Who this helps</h2>
               <p className="mt-3 leading-7 text-[var(--muted)]">{roundup.intent}</p>

@@ -8,6 +8,7 @@ import { findRoundup, findTool } from "@/lib/content";
 import { toolCommerceProduct } from "@/lib/commerce-paths";
 import { breadcrumbSchema, faqPageSchema, pageMetadata, toolSchema } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
+import { buyerFacingBody } from "@/lib/conversion-copy";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const site = await getCurrentSite();
@@ -71,7 +72,7 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
             {tool.sections.map((section) => (
               <article className="panel p-6" key={section.heading}>
                 <h2 className="text-2xl font-black">{section.heading}</h2>
-                <p className="mt-3 leading-8 text-[var(--muted)]">{section.body}</p>
+                <p className="mt-3 leading-8 text-[var(--muted)]">{buyerFacingBody(section.body)}</p>
               </article>
             ))}
           </section>

@@ -4,9 +4,7 @@ export function productEvidencePresentation(product: Product) {
   const mode = product.evidenceMode ?? "official-spec";
   const label = mode === "hands-on"
     ? "Hands-on review"
-    : mode === "research-synthesis"
-      ? "Independent evidence synthesis"
-      : "Official-spec research guide";
+    : "Buying assessment";
   const note = product.researchNote ?? (
     mode === "hands-on"
       ? "This page includes first-hand use. Test conditions and measurements are stated beside the relevant findings."
@@ -17,9 +15,7 @@ export function productEvidencePresentation(product: Product) {
 
   const summary = mode === "hands-on"
     ? "The decision below is based on direct use, with the setup and measurement limits stated beside each finding."
-    : mode === "research-synthesis"
-      ? "The decision below combines current manufacturer documentation with attributed independent tests while keeping every result in its original setup."
-      : "The decision below uses current manufacturer documentation, official support material, and exact retailer-listing checks.";
+    : "Use the decision points below to compare fit, compatibility, ownership trade-offs, and the exact current listing.";
 
   return { label, mode, note, summary };
 }

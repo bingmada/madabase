@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { CostumeCatalogCard } from "@/components/CostumeCatalog";
 import { JsonLd } from "@/components/JsonLd";
 import { Disclosure } from "@/components/LayoutParts";
+import { TrackedCommerceLink } from "@/components/TrackedCommerceLink";
 import { listCuratedCostumeProducts } from "@/lib/costume-catalog";
 import { costumeHalloweenPicks } from "@/lib/costume-halloween";
 import { breadcrumbSchema, faqPageSchema, itemListSchema, pageMetadata } from "@/lib/seo";
@@ -158,9 +159,17 @@ export default async function SmallSpaceHalloweenAnimatronicsPage() {
           <h1 className="mt-4 max-w-4xl text-4xl font-black leading-tight text-white sm:text-6xl">Best Halloween animatronics for small yards and porches</h1>
           {heroProduct?.activeLink ? (
             <div className="mt-5 flex flex-wrap gap-3" aria-label="First-screen CJ retailer option" data-first-viewport-commerce="true">
-              <Link className="button-primary !bg-[#df7627] !text-white" href={`/go/cj/${heroProduct.activeLink.clickToken}`} rel="nofollow sponsored" data-first-viewport-affiliate="true" data-cta-intent="price-availability">
-                Check current price &amp; availability at Abracadabra NYC <ArrowRight aria-hidden="true" size={16} />
-              </Link>
+              <TrackedCommerceLink
+                className="button-primary !bg-[#df7627] !text-white"
+                firstViewport
+                href={`/go/cj/${heroProduct.activeLink.clickToken}`}
+                label="Check current price & availability at Abracadabra NYC"
+                merchant="Abracadabra NYC"
+                position="costume-roundup-first-viewport"
+                productName={heroProduct.title}
+                productSlug={heroProduct.slug}
+                site="costume"
+              />
             </div>
           ) : null}
           <p className="mt-5 max-w-3xl text-lg leading-8 text-white/80">

@@ -8,6 +8,7 @@ import { costumeHalloweenIdeas } from "@/lib/costume-halloween-ideas";
 import { siteDecisionModules } from "@/lib/site-decision-modules";
 import { CostumeCatalogCard, CostumeCatalogExplorer } from "./CostumeCatalog";
 import { DecisionModules, Hero, TrustBar } from "./LayoutParts";
+import { TrackedCommerceLink } from "./TrackedCommerceLink";
 
 async function CostumeCatalogSnapshot() {
   const stats = await getCostumeCatalogStats();
@@ -212,7 +213,17 @@ export async function CostumeCategoryPage({
                 <h2 className="mt-2 text-xl font-bold">{commerceProduct.title}</h2>
                 <p className="mt-2 max-w-xl text-sm leading-6 text-[var(--muted)]">Confirm the exact variant, included pieces, availability, delivery timing, and return terms at Abracadabra NYC.</p>
               </div>
-              <Link className="button-primary shrink-0" href={`/go/cj/${commerceProduct.activeLink.clickToken}`} rel="nofollow sponsored" data-first-viewport-affiliate="true" data-cta-intent="price-availability">Check current price &amp; availability at Abracadabra NYC <ArrowRight aria-hidden="true" size={16} /></Link>
+              <TrackedCommerceLink
+                className="button-primary shrink-0"
+                firstViewport
+                href={`/go/cj/${commerceProduct.activeLink.clickToken}`}
+                label="Check current price & availability at Abracadabra NYC"
+                merchant="Abracadabra NYC"
+                position="costume-category-first-viewport"
+                productName={commerceProduct.title}
+                productSlug={commerceProduct.slug}
+                site="costume"
+              />
             </aside>
           ) : null}
           <p className="mt-4 max-w-3xl text-lg leading-8 text-[var(--muted)]">{category.description}</p>

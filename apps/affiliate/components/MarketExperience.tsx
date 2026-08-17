@@ -20,6 +20,7 @@ import { absoluteUrl } from "@/lib/seo";
 import type { SiteConfig } from "@/lib/sites";
 import { findProduct } from "@/lib/content";
 import { amazonAsinAffiliateUrl } from "@/lib/affiliate-tracking";
+import { buyerFacingBody, buyerFacingHeading } from "@/lib/conversion-copy";
 
 function marketEditionLinks(currentMarket: MarketProfile, basePath = "/") {
   return marketKeys.map((key) => {
@@ -428,8 +429,8 @@ export function LocalizedMarketContent({
             <div className="prose-lite mt-9">
               {variant.sections.map((section) => (
                 <section key={section.heading}>
-                  <h2>{section.heading}</h2>
-                  <p>{section.body}</p>
+                  <h2>{buyerFacingHeading(section.heading)}</h2>
+                  <p>{buyerFacingBody(section.body)}</p>
                 </section>
               ))}
             </div>

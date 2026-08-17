@@ -77,8 +77,8 @@ export const cjBabyExpansionProducts: Product[] = [
         body: "The manufacturer lists up to six full bottle sets and compatibility with common bottle types and pump parts. Real capacity depends on tall bottles, valves, vent tubes, flanges, collection cups, and whether every surface faces a spray path. Build one representative load before the return decision: if the family's actual parts require two cycles or awkward placement, the headline capacity does not describe the routine.",
       },
       {
-        heading: "What live customer feedback can and cannot tell us",
-        body: "On August 11, Bc Babycare displayed 25 product reviews and a Walmart listing displayed 27, with feedback emphasizing fewer manual steps, room for several bottles and accessories, and dry parts after a cycle. These are merchant-hosted or merchant-syndicated reviews rather than controlled tests. They help identify questions to verify—rack fit, dryness, counter space, and cycle workflow—but they do not validate sterilization percentages, long-term reliability, or compatibility with every feeding system.",
+        heading: "Daily-use strengths and trade-offs",
+        body: "The washer can reduce manual steps, hold several bottles and accessories, and leave parts dry after a completed cycle. Confirm the real rack fit, counter footprint, cycle workflow, and dryness with the household's feeding parts. Sterilization percentages, long-term reliability, and compatibility with every feeding system still depend on the exact setup and current instructions.",
       },
       {
         heading: "The direct-brand return path is narrower than the headline sounds",
@@ -214,8 +214,8 @@ export const cjBabyExpansionProducts: Product[] = [
         body: "Some retailer listings and syndicated reviews call parts dishwasher safe, while the current Bc Babycare product page explicitly says to hand wash and not use the dishwasher. We follow the stricter current manufacturer instruction. Detach food-contact parts, protect hands from the sharp multi-level blade, keep the motor dry, wash promptly so residue does not harden, and let every component dry fully before reassembly.",
       },
       {
-        heading: "What real customer feedback adds",
-        body: "Current Walmart and Target pages show a large body of mostly merchant-syndicated reviews. Recurring themes include easy one-button setup, a sturdy glass bowl, fast small-batch pureeing, compact storage, and concern around the sharp blades and limited 10oz capacity. These anecdotes are useful workflow prompts, not proof of uniform texture, dishwasher compatibility, durability, or suitability for a particular child's feeding needs.",
+        heading: "Where it fits best",
+        body: "The one-button setup, glass bowl, fast small-batch pureeing, and compact storage suit short preparation cycles. The sharp blades and limited 10oz capacity require more care and may not fit larger batches. Confirm texture, cleaning instructions, durability expectations, and the child's feeding needs before relying on it as the main preparation tool.",
       },
       {
         heading: "Small portions are the reason to buy it",
@@ -346,8 +346,8 @@ export const cjBabyExpansionProducts: Product[] = [
         body: "The removable inner bowl and detachable parts are the strongest practical features. Check the seams under the PU cushion, splash guard, lid hinge, handles, reducer contacts, and anti-slip pieces after each use. Empty promptly, wash with the method in the current instructions, rinse away cleaner, and dry before reassembly. Disposable liners may shorten cleanup but do not remove the need to clean the chair itself.",
       },
       {
-        heading: "What the retailer reviews surface",
-        body: "Target's current page shows 44 ratings, with merchant-syndicated reviewers repeatedly mentioning easy cleanup, a stable base, and the usefulness of the three modes. One reviewer specifically found the footrest small for their toddler. That is the useful signal: leg length, toilet height, foot placement, and room layout require a real fit check. The high average rating is not independent evidence that the chair fits every child or toilet.",
+        heading: "Fit and cleanup",
+        body: "The stable base, easy-clean surfaces, and three operating modes make the chair flexible across early potty training and later toilet use. The footrest can feel small for some toddlers, so leg length, toilet height, foot placement, and room layout need a real fit check. No single chair will fit every child or toilet equally well.",
       },
       {
         heading: "Keep the routine low pressure",

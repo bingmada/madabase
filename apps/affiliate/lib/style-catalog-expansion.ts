@@ -255,7 +255,7 @@ export const styleCatalogProducts: Product[] = [
     image: "/images/affiliate/style-mickey-classic-backpack-realistic.webp",
     summary: "A classic Mickey mini backpack with substantially more review history than many newer seasonal designs.",
     verdict: "The safer character-first comparison when review depth matters more than owning the newest print.",
-    bestFor: "Classic Mickey fans who value established customer feedback",
+    bestFor: "Classic Mickey fans who want a familiar, easy-to-style mini backpack",
     priceBand: "$$",
     rating: 4.6,
     pros: ["400+ ratings when checked", "Classic Mickey theme", "Familiar mini-backpack format"],

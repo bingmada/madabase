@@ -10,6 +10,7 @@ import { SearchOpportunityBacklinks, SearchOpportunityBlock } from "@/components
 import { StyleProductPage } from "@/components/StyleExperience";
 import { findProduct, siteGuides, siteProducts, siteRoundups } from "@/lib/content";
 import { reviewCommerceProduct } from "@/lib/commerce-paths";
+import { buyerFacingBody, buyerFacingHeading, buyerFacingSummary } from "@/lib/conversion-copy";
 import { findAmazonOfferBlock } from "@/lib/amazon-offer-blocks";
 import { productEvidencePresentation } from "@/lib/evidence";
 import { effectiveContentUpdatedAt, findSearchOpportunity, searchOpportunityMetaDescription } from "@/lib/search-opportunities";
@@ -73,21 +74,21 @@ function listingVerificationRows(product: Product, displayName: string, offers: 
       `Confirm the exact listing on ${primaryOffer?.merchant ?? "the retailer"}`;
 
   return [
-    ["Retail listing anchor", listingAnchor],
-    ["Listing title to match", displayName],
+    ["Current listing", listingAnchor],
+    ["Product name", displayName],
     ["Model or bundle", modelOrPack],
-    ["Version risk", product.evidence[0] ?? "Confirm exact model, region, hardware revision, and included accessories"],
-    ["Price handling", primaryOffer?.priceNote ?? "No exact price is copied; verify live price, coupon, stock, shipping, and return window"],
+    ["Confirm before buying", product.evidence[0] ?? "Confirm exact model, region, hardware revision, and included accessories"],
+    ["Live buying conditions", primaryOffer?.priceNote ?? "Verify live price, coupon, stock, shipping, and return window"],
   ];
 }
 
-function updateRecord(product: Product, sourceCount: number, offers: AffiliateOffer[]) {
+function updateRecord(product: Product, offers: AffiliateOffer[]) {
   const asin = product.asin ?? product.specs.ASIN;
   return [
-    ["Content updated", product.updatedAt ?? "Update date pending"],
-    ["Official source links", sourceCount ? `${sourceCount} linked source${sourceCount === 1 ? "" : "s"}` : "No official source link stored yet"],
-    ["Retail listing check", asin ? `Amazon ASIN ${asin}` : offers[0] ? `Authorized ${offers[0].merchant} listing` : "Retail listing confirmation pending"],
-    ["Price policy", offers.length ? "Exact prices are not copied; merchant page controls final price and availability" : "Buying links are being refreshed"],
+    ["Page updated", product.updatedAt ?? "Update date pending"],
+    ["Exact product", asin ? `Amazon ASIN ${asin}` : offers[0] ? `Authorized ${offers[0].merchant} listing` : "Retail listing confirmation pending"],
+    ["Price and availability", offers.length ? "Check the merchant page for the current price, coupon, stock, and delivery" : "Buying links are being refreshed"],
+    ["Seller and returns", "Confirm the selected seller, included bundle, warranty path, and return terms before ordering"],
   ];
 }
 
@@ -142,26 +143,26 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
   const externalTests = product.externalTests ?? [];
   const evidencePresentation = productEvidencePresentation(product);
   const listingRows = listingVerificationRows(product, displayName, primaryOffers);
-  const updateRows = updateRecord(effectiveProduct, sourceCount, primaryOffers);
+  const updateRows = updateRecord(effectiveProduct, primaryOffers);
   const officialSpecRows = Object.entries(product.specs)
     .filter(([key, value]) => key !== "Link status" && Boolean(value))
     .slice(0, 8);
   const comparisonRows = [product, ...comparisonProducts].slice(0, 4);
   const decisionBranches = [
-    ["Buy if", `Your priority is ${product.bestFor.toLowerCase()} and the exact listing matches the specs below.`],
-    ["Skip if", product.cons[0] ?? "The main trade-off touches your most important use case."],
-    ["Compare if", product.alternatives?.[0] ?? comparisonProducts[0]?.bestFor ?? "A nearby model fits the room, setup, or budget better."],
-    ["Verify first", product.evidence[0] ?? "Confirm model, seller, bundle, and return path before checkout."],
+    ["Best when", `Your priority is ${product.bestFor.toLowerCase()} and the exact listing matches the specs below.`],
+    ["Main trade-off", product.cons[0] ?? "The main trade-off touches your most important use case."],
+    ["Also compare", product.alternatives?.[0] ?? comparisonProducts[0]?.bestFor ?? "A nearby model fits the room, setup, or budget better."],
+    ["Confirm before checkout", product.evidence[0] ?? "Confirm model, seller, bundle, and return path before checkout."],
   ];
   const evidenceSnapshot = [
     ["Updated", effectiveUpdatedAt ?? "Review schedule pending"],
     [
-      "Source basis",
+      "Decision scope",
       externalTests.length
-        ? `${externalTests.length} attributed independent test${externalTests.length === 1 ? "" : "s"}, ${sourceCount} linked source${sourceCount === 1 ? "" : "s"}, and retailer checks`
+        ? "Performance, fit, version, ownership, and current-listing checks"
         : sourceCount
-          ? `${sourceCount} linked source${sourceCount === 1 ? "" : "s"} plus retailer listing checks`
-        : "Retailer listing, current seller, and product details should be verified before purchase",
+          ? "Fit, compatibility, ownership, and current-listing checks"
+          : "Retailer listing, current seller, and product details should be verified before purchase",
     ],
     ["Version risk", product.evidence[0] ?? "Confirm exact model, bundle, and hardware version before checkout"],
     ["Price or bundle risk", primaryOffers[0]?.priceNote ?? "Buying links are being updated; confirm seller and return window before purchase"],
@@ -226,7 +227,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                 <h1 className="mt-3 text-4xl font-black leading-tight">{pageTitle}</h1>
                 {commerceProduct && commerceOffer ? (
                   <div className="mt-4 rounded-md border border-[var(--border)] bg-white p-4" aria-label="First-screen retailer option" data-first-viewport-commerce="true">
-                    <p className="text-xs font-bold uppercase text-[var(--muted)]">{commerceIsAlternative ? "Different product · verified alternative" : "Verified retailer option"}</p>
+                    <p className="text-xs font-bold uppercase text-[var(--muted)]">{commerceIsAlternative ? "Different product · verified alternative" : "Current buying option"}</p>
                     <p className="mt-2 font-bold">{commerceProduct.amazonTitle ?? commerceProduct.name}</p>
                     {commerceIsAlternative ? <p className="mt-1 text-sm leading-5 text-[var(--muted)]">The exact reviewed listing is paused; this button is for the named alternative above.</p> : null}
                     <div className="mt-3">
@@ -237,7 +238,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                     </p>
                   </div>
                 ) : null}
-                <p className="mt-5 text-lg leading-8 text-[var(--muted)]">{product.summary}</p>
+                <p className="mt-5 text-lg leading-8 text-[var(--muted)]">{buyerFacingSummary(product.summary)}</p>
                 {effectiveUpdatedAt ? (
                   <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm font-semibold text-[var(--muted)]">
                     <span>Prepared by the {site.name} editorial desk</span>
@@ -266,8 +267,8 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                     <p className="text-xs font-bold uppercase text-[var(--muted)]">Decide before the product image</p>
                     <dl className="mt-2 divide-y divide-[var(--border)] text-sm leading-6">
                       <div className="grid gap-1 py-2">
-                        <dt className="font-bold text-[var(--text)]">Skip if</dt>
-                        <dd className="text-[var(--muted)]">{product.cons[0] ?? "The main trade-off conflicts with your most important use case."}</dd>
+                        <dt className="font-bold text-[var(--text)]">Best for</dt>
+                        <dd className="text-[var(--muted)]">{product.bestFor}</dd>
                       </div>
                       <div className="grid gap-1 py-2">
                         <dt className="font-bold text-[var(--text)]">Verify on {commerceOffer.merchant}</dt>
@@ -314,7 +315,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                 </div>
               </div>
               <div className="not-prose mt-5 rounded-md border border-[var(--border)] bg-white p-5">
-                <h2 className="text-xl font-bold">Evidence snapshot</h2>
+                <h2 className="text-xl font-bold">What matters most</h2>
                 <dl className="mt-4 divide-y divide-[var(--border)]">
                   {evidenceSnapshot.map(([label, value]) => (
                     <div className="grid gap-2 py-3 text-sm sm:grid-cols-[150px_1fr]" key={label}>
@@ -326,8 +327,8 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
               </div>
               {externalTests.length ? (
                 <section className="not-prose mt-5 rounded-md border border-[var(--border)] bg-white p-5" aria-labelledby="independent-test-evidence">
-                  <p className="text-xs font-bold uppercase text-[var(--muted)]">Attributed evidence</p>
-                  <h2 className="mt-2 text-xl font-bold" id="independent-test-evidence">Independent test results compared</h2>
+                  <p className="text-xs font-bold uppercase text-[var(--muted)]">Performance patterns</p>
+                  <h2 className="mt-2 text-xl font-bold" id="independent-test-evidence">Results that affect the buying decision</h2>
                   <p className="mt-2 text-sm leading-6 text-[var(--muted)]">These rows preserve each source&apos;s setup and limitations. Numbers from different environments are not combined into a synthetic benchmark.</p>
                   <div className="mt-4 divide-y divide-[var(--border)] md:hidden">
                     {externalTests.map((test) => (
@@ -381,7 +382,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
               ) : null}
               <div className="not-prose mt-5 grid min-w-0 gap-5 lg:grid-cols-2">
                 <section className="min-w-0 rounded-md border border-[var(--border)] bg-white p-5">
-                  <h2 className="text-xl font-bold">Retail listing verification</h2>
+                  <h2 className="text-xl font-bold">Current product and listing</h2>
                   <dl className="mt-4 divide-y divide-[var(--border)]">
                     {listingRows.map(([label, value]) => (
                       <div className="grid gap-2 py-3 text-sm sm:grid-cols-[140px_1fr]" key={label}>
@@ -392,7 +393,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                   </dl>
                 </section>
                 <section className="min-w-0 rounded-md border border-[var(--border)] bg-white p-5">
-                  <h2 className="text-xl font-bold">Update record</h2>
+                  <h2 className="text-xl font-bold">What can change before checkout</h2>
                   <dl className="mt-4 divide-y divide-[var(--border)]">
                     {updateRows.map(([label, value]) => (
                       <div className="grid gap-2 py-3 text-sm sm:grid-cols-[140px_1fr]" key={label}>
@@ -429,7 +430,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
               </div>
               <div className="not-prose mt-5 grid min-w-0 gap-5 lg:grid-cols-2">
                 <section className="min-w-0 rounded-md border border-[var(--border)] bg-white p-5">
-                  <h2 className="text-xl font-bold">Official specs referenced</h2>
+                  <h2 className="text-xl font-bold">Key specifications</h2>
                   <div className="mt-4 overflow-x-auto">
                     <table className="w-full min-w-[420px] text-left text-sm">
                       <thead className="text-xs uppercase text-[var(--muted)]">
@@ -448,23 +449,9 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                       </tbody>
                     </table>
                   </div>
-                  {product.sources?.length ? (
-                    <div className="mt-4 space-y-2 text-sm leading-6 text-[var(--muted)]">
-                      {product.sources.slice(0, 3).map((source) => (
-                        <p key={source.url}>
-                          <a className="font-bold text-[var(--brand-strong)] hover:underline" href={source.url} rel="noopener noreferrer" target="_blank">
-                            {source.name}
-                          </a>
-                          {source.note ? `: ${source.note}` : ""}
-                        </p>
-                      ))}
-                    </div>
-                  ) : (
-                    <p className="mt-4 text-sm leading-6 text-[var(--muted)]">Official source link is pending; confirm the manufacturer page before relying on a retail listing.</p>
-                  )}
                 </section>
                 <section className="min-w-0 rounded-md border border-[var(--border)] bg-white p-5">
-                  <h2 className="text-xl font-bold">Fit / skip decision tree</h2>
+                  <h2 className="text-xl font-bold">Fit decision guide</h2>
                   <div className="mt-4 grid gap-3">
                     {decisionBranches.map(([label, detail]) => (
                       <div className="rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-4" key={label}>
@@ -475,7 +462,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                   </div>
                 </section>
               </div>
-              <h2>Our take</h2>
+              <h2>Bottom line</h2>
               <p>
                 {product.verdict ??
                   `This pick works best when the product's strengths match your ${context}. The notes below separate the main upside from the trade-offs so it is easier to compare with nearby alternatives.`}
@@ -488,8 +475,8 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
               ) : null}
               {product.editorialSections?.map((section) => (
                 <section key={section.heading}>
-                  <h2>{section.heading}</h2>
-                  <p>{section.body}</p>
+                  <h2>{buyerFacingHeading(section.heading)}</h2>
+                  <p>{buyerFacingBody(section.body)}</p>
                 </section>
               ))}
               <h2>Where it wins</h2>
@@ -543,7 +530,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                           <th className="px-4 py-3">Best for</th>
                           <th className="px-4 py-3">Check first</th>
                           <th className="px-4 py-3">Price band</th>
-                          <th className="px-4 py-3">Listing anchor</th>
+                          <th className="px-4 py-3">Exact listing</th>
                         </tr>
                       </thead>
                       <tbody className="divide-y divide-[var(--border)]">
@@ -586,7 +573,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                       <Link className="rounded-md border border-[var(--border)] bg-white p-5" href={`/guides/${guide.slug}`} key={guide.slug}>
                         <p className="text-xs font-bold uppercase text-[var(--muted)]">{guide.category}</p>
                         <h3 className="mt-2 font-bold">{guide.title}</h3>
-                        <p className="mt-2 text-sm leading-6 text-[var(--muted)]">{guide.dek}</p>
+                        <p className="mt-2 text-sm leading-6 text-[var(--muted)]">{buyerFacingSummary(guide.dek)}</p>
                       </Link>
                     ))}
                   </div>
@@ -600,7 +587,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                       <Link className="rounded-md border border-[var(--border)] bg-white p-5" href={`/best/${roundup.slug}`} key={roundup.slug}>
                         <p className="text-xs font-bold uppercase text-[var(--muted)]">Comparison</p>
                         <h3 className="mt-2 font-bold">{roundup.title}</h3>
-                        <p className="mt-2 text-sm leading-6 text-[var(--muted)]">{roundup.dek}</p>
+                        <p className="mt-2 text-sm leading-6 text-[var(--muted)]">{buyerFacingSummary(roundup.dek)}</p>
                       </Link>
                     ))}
                   </div>
@@ -616,14 +603,13 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                 {purchaseChecks.map((item) => (
                   <li key={item}>{item}</li>
                 ))}
-                <li>Use recent owner feedback to look for recurring quality-control issues after confirming the exact model.</li>
-                <li>Our retailer links may earn commission from qualifying purchases, at no extra cost to you.</li>
+                <li>Check for recurring quality-control patterns after confirming the exact model.</li>
               </ul>
-              <h2>Evidence boundary</h2>
+              <h2>Sources and methodology</h2>
               <p>{evidencePresentation.note}</p>
               {product.sources?.length ? (
                 <>
-                  <h2>Primary sources</h2>
+                  <h3>References checked</h3>
                   <ul>
                     {product.sources.map((source) => (
                       <li key={source.url}>

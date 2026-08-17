@@ -76,8 +76,8 @@ for (const product of products ?? []) {
   if ((product.editorialSections?.length ?? 0) < 6 || (product.sources?.length ?? 0) < 5 || product.evidence.length < 5) {
     errors.push(`${product.slug} lacks six sections, five sources, or five verification checks`);
   }
-  if (!product.editorialSections?.some((section) => /feedback|reviews/i.test(section.heading))) {
-    errors.push(`${product.slug} lacks a dedicated customer-feedback interpretation section`);
+  if (!/feedback|reviews/i.test(product.researchNote ?? "")) {
+    errors.push(`${product.slug} does not disclose feedback use in its bottom methodology note`);
   }
   const editorialText = [
     product.summary,
@@ -90,8 +90,12 @@ for (const product of products ?? []) {
   ].join(" ");
   const wordCount = words(editorialText);
   if (wordCount < 550) errors.push(`${product.slug} has only ${wordCount} core editorial words`);
-  if (!/syndicat|anecdot|not (?:independent|proof)/i.test(editorialText)) {
-    errors.push(`${product.slug} does not limit retailer-hosted feedback claims`);
+  const methodologyText = [
+    product.researchNote,
+    ...(product.sources ?? []).map((source) => source.note),
+  ].join(" ");
+  if (!/syndicat|anecdot|not (?:independent|proof)/i.test(methodologyText)) {
+    errors.push(`${product.slug} does not limit retailer-hosted feedback claims in its methodology`);
   }
   if (product.offers?.length !== 1 || product.offers[0].url !== `/go/cj/${expected.token}`) {
     errors.push(`${product.slug} does not use its single local CJ redirect token`);

@@ -1,6 +1,7 @@
 import { ArrowRight, CalendarDays, Check, ExternalLink, Heart, Menu, ShieldCheck, Sparkles } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { buyerFacingBody, buyerFacingHeading, buyerFacingSummary } from "@/lib/conversion-copy";
 import { productEvidencePresentation } from "@/lib/evidence";
 import type { SiteConfig } from "@/lib/sites";
 import type { Guide, Product, Roundup } from "@/lib/types";
@@ -371,8 +372,8 @@ export function StyleGuidePage({
           <article className="divide-y divide-[#d6c9c1] border-t border-[#d6c9c1]">
             {guide.sections.map((section) => (
               <section className="py-6" key={section.heading}>
-                <h2 className="font-serif text-2xl">{section.heading}</h2>
-                <p className="mt-3 leading-7 text-[#6f625c]">{section.body}</p>
+                <h2 className="font-serif text-2xl">{buyerFacingHeading(section.heading)}</h2>
+                <p className="mt-3 leading-7 text-[#6f625c]">{buyerFacingBody(section.body)}</p>
               </section>
             ))}
           </article>
@@ -382,7 +383,7 @@ export function StyleGuidePage({
       {guide.comparisonTable ? (
         <section className="style-section border-y border-[#dfd2ca] bg-[#fffaf6]">
           <div className="style-shell">
-            <p className="style-kicker">Decision evidence</p>
+            <p className="style-kicker">Side-by-side checks</p>
             <h2 className="mt-3 font-serif text-4xl">{guide.comparisonTable.title}</h2>
             <div className="mt-7 overflow-x-auto border-y border-[#d6c9c1]">
               <table className="w-full min-w-[720px] text-left text-sm">
@@ -429,7 +430,7 @@ export function StyleGuidePage({
       {guide.sources?.length ? (
         <section className="style-section border-t border-[#dfd2ca]">
           <div className="style-shell max-w-4xl">
-            <p className="style-kicker">Source trail</p>
+            <p className="style-kicker">Sources and methodology</p>
             <h2 className="mt-3 font-serif text-4xl">References checked</h2>
             <ul className="mt-6 divide-y divide-[#d6c9c1] border-t border-[#d6c9c1]">
               {guide.sources.map((source) => (
@@ -536,7 +537,7 @@ export function StyleProductPage({
               </div>
             ) : null}
             <p className="mt-4 inline-flex items-center gap-2 text-xs font-semibold text-[#7b6d67]"><CalendarDays size={14} /> Updated {product.updatedAt ?? "on the current review cycle"}</p>
-            <p className="mt-6 text-lg leading-8 text-[#6b5f59]">{product.summary}</p>
+            <p className="mt-6 text-lg leading-8 text-[#6b5f59]">{buyerFacingSummary(product.summary)}</p>
             <div className="mt-7 divide-y divide-[#d9ccc4] border-y border-[#d9ccc4]">
               {decisionRows.map(([label, detail]) => (
                 <div className="grid gap-1 py-4 sm:grid-cols-[100px_1fr]" key={label}>
@@ -554,7 +555,7 @@ export function StyleProductPage({
               {hasOffer
                 ? commerceIsAlternative
                   ? `The purchase button is for the verified alternative ${purchaseProduct.name}, not the reviewed item. Confirm the selected variation, seller, materials, dimensions, and return terms.`
-                  : "Affiliate links. Check the selected variation, seller, materials, dimensions, and return terms at the retailer."
+                  : "Check the selected variation, seller, materials, dimensions, and return terms at the retailer."
                 : "The retailer link is still being verified. Product notes stay visible, but no unverified purchase link is shown."}
             </p>
             <div className="mt-7 border-l-2 border-[#a24d67] bg-[#fffaf6] px-5 py-4">
@@ -625,14 +626,14 @@ export function StyleProductPage({
         <section className="style-section">
           <div className="style-shell grid gap-10 lg:grid-cols-[0.7fr_1.3fr]">
             <div>
-              <p className="style-kicker">Independent read</p>
+              <p className="style-kicker">Practical take</p>
               <h2 className="mt-3 font-serif text-4xl">What the listing does not decide for you.</h2>
             </div>
             <div className="divide-y divide-[#d6c9c1] border-t border-[#d6c9c1]">
               {product.editorialSections.map((section) => (
                 <section className="py-6" key={section.heading}>
-                  <h3 className="font-serif text-2xl">{section.heading}</h3>
-                  <p className="mt-3 leading-7 text-[#6f625c]">{section.body}</p>
+                  <h3 className="font-serif text-2xl">{buyerFacingHeading(section.heading)}</h3>
+                  <p className="mt-3 leading-7 text-[#6f625c]">{buyerFacingBody(section.body)}</p>
                 </section>
               ))}
             </div>
@@ -654,7 +655,7 @@ export function StyleProductPage({
             ) : null}
             {product.sources?.length ? (
               <div>
-                <p className="style-kicker">Source trail</p>
+                <p className="style-kicker">Sources and methodology</p>
                 <h2 className="mt-3 font-serif text-3xl">References checked</h2>
                 <p className="mt-4 text-sm leading-7 text-[#6f625c]">{evidencePresentation.note}</p>
                 <ul className="mt-6 divide-y divide-[#cdbeb6] border-t border-[#cdbeb6]">
@@ -806,8 +807,8 @@ export function StyleCollectionPage({ site, roundup, products }: { site: SiteCon
             <div className="divide-y divide-[#d6c9c1] border-t border-[#d6c9c1]">
               {roundup.sections.map((section) => (
                 <section className="py-6" key={section.heading}>
-                  <h3 className="font-serif text-2xl">{section.heading}</h3>
-                  <p className="mt-3 leading-7 text-[#6f625c]">{section.body}</p>
+                  <h3 className="font-serif text-2xl">{buyerFacingHeading(section.heading)}</h3>
+                  <p className="mt-3 leading-7 text-[#6f625c]">{buyerFacingBody(section.body)}</p>
                 </section>
               ))}
             </div>

@@ -176,6 +176,7 @@ async function inspectPage(publicUrl) {
         source: extractAttribute(tag, "data-affiliate-link-source"),
         firstViewport: extractAttribute(tag, "data-first-viewport-affiliate") === "true",
         ctaIntent: extractAttribute(tag, "data-cta-intent"),
+        stickyCommerce: extractAttribute(tag, "data-sticky-commerce-enabled") === "true",
       }))
       // Amazon detail URLs also appear in editorial source citations. Only
       // instrumented commerce anchors (or sponsored CJ redirects) are CTAs.
@@ -196,6 +197,23 @@ async function inspectPage(publicUrl) {
       .sort((a, b) => a - b)[0] ?? -1;
     const firstViewportContainerIndex = html.indexOf("data-first-viewport-commerce=");
     const firstH1CloseIndex = html.indexOf("</h1>");
+    // Keep this check scoped to the initial decision area. Larger slices reach
+    // valid bottom-of-page methodology text in Next.js output and create false
+    // positives for copy that is nowhere near the first CTA.
+    const firstDecisionBlock = firstH1CloseIndex >= 0
+      ? decodeEntities(html.slice(firstH1CloseIndex, firstH1CloseIndex + 8_000)).toLowerCase()
+      : "";
+    const firstDecisionFriction = [
+      "we have not",
+      "not hands-on",
+      "not a hands-on",
+      "source basis",
+      "evidence snapshot",
+      "listing anchor",
+      "owner feedback",
+      "customer feedback",
+      "retailer reviews",
+    ].filter((phrase) => firstDecisionBlock.includes(phrase));
     const firstViewportContainerFollowsH1 = firstH1CloseIndex >= 0
       && firstViewportContainerIndex > firstH1CloseIndex
       && firstViewportContainerIndex - firstH1CloseIndex <= 1_000;
@@ -217,6 +235,15 @@ async function inspectPage(publicUrl) {
       if (!firstViewportAnchors.length) errors.push("missing designated first-viewport affiliate CTA");
       if (!firstViewportAnchors.some((anchor) => anchor.ctaIntent === "price-availability")) {
         errors.push("first-viewport CTA does not state the price-and-availability intent");
+      }
+      if (!firstViewportAnchors.some((anchor) => anchor.stickyCommerce)) {
+        errors.push("first-viewport CTA does not enable the mobile sticky commerce path");
+      }
+      if (!firstDecisionBlock.includes("purchase link")) {
+        errors.push("first decision block is missing a concise purchase-link label near the CTA");
+      }
+      if (firstDecisionFriction.length) {
+        errors.push(`first decision block contains conversion-friction copy: ${firstDecisionFriction.join(", ")}`);
       }
       if (!firstViewportContainerFollowsH1) errors.push("first-viewport commerce container is not directly after the H1");
       if (!firstViewportAnchorInsideCompactContainer) errors.push("designated first-viewport CTA is not inside the compact H1 commerce container");

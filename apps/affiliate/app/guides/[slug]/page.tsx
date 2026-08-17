@@ -7,6 +7,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { BaseMarketEditionLinks } from "@/components/MarketExperience";
 import { SearchOpportunityBacklinks, SearchOpportunityBlock } from "@/components/SearchOpportunityBlock";
 import { StyleGuidePage } from "@/components/StyleExperience";
+import { TrackedCommerceLink } from "@/components/TrackedCommerceLink";
 import { findGuide, findProduct, findRoundup, siteGuides } from "@/lib/content";
 import { effectiveContentUpdatedAt, findSearchOpportunity, searchOpportunityMetaDescription } from "@/lib/search-opportunities";
 import { breadcrumbSchema, guideSchema, pageMetadata } from "@/lib/seo";
@@ -17,6 +18,7 @@ import { findAmazonFamilyProduct } from "@/lib/amazon-family-products";
 import { amazonAsinAffiliateUrl } from "@/lib/affiliate-tracking";
 import { findAuthorizedCjFamilyOffer } from "@/lib/cj-offers";
 import { guideCommerceProduct, isCommerceAlternative } from "@/lib/commerce-paths";
+import { buyerFacingBody, buyerFacingHeading, buyerFacingSummary } from "@/lib/conversion-copy";
 import {
   isCostumeProductIndexable,
   listCostumeCatalogProducts,
@@ -37,7 +39,7 @@ const siteAdvice: Record<SiteKey, AdviceBlock> = {
     checklist: [
       "Confirm the product fits the pet's size, food type, room layout, and cleaning routine.",
       "Check replacement parts, filters, bags, refills, or app features before comparing price.",
-      "Read recent owner feedback for noise, durability, chewing risk, and setup friction.",
+      "Check recurring noise, durability, chewing-risk, and setup-friction patterns.",
     ],
     mistakes: [
       "Buying the largest or smartest option before checking daily cleaning effort.",
@@ -343,13 +345,20 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
                 ) : cjFamilyOffer && cjFamilyIdentity && cjFamilyAffiliateOffer ? (
                   <AffiliateButton site={site.key} product={cjFamilyIdentity} offer={cjFamilyAffiliateOffer} position="guide-first-viewport-family-cj" resolveCreatorsListing={false} firstViewport />
                 ) : costumeCommerceProduct?.activeLink ? (
-                  <Link className="button-primary" href={`/go/cj/${costumeCommerceProduct.activeLink.clickToken}`} rel="nofollow sponsored" data-first-viewport-affiliate="true" data-cta-intent="price-availability">
-                    Check current price &amp; availability at Abracadabra NYC
-                  </Link>
+                  <TrackedCommerceLink
+                    firstViewport
+                    href={`/go/cj/${costumeCommerceProduct.activeLink.clickToken}`}
+                    label="Check current price & availability at Abracadabra NYC"
+                    merchant="Abracadabra NYC"
+                    position="costume-guide-first-viewport"
+                    productName={costumeCommerceProduct.title}
+                    productSlug={costumeCommerceProduct.slug}
+                    site="costume"
+                  />
                 ) : commerceProduct ? (
                   <AffiliateButtonGroup site={site.key} product={commerceProduct} position={commerceIsAlternative ? "guide-first-viewport-verified-alternative" : "guide-first-viewport-primary"} limit={1} firstViewport />
                 ) : null}
-                {topProduct ? <Link className="button-secondary" href={`/reviews/${topProduct.slug}`}>Read evidence</Link> : null}
+                {topProduct ? <Link className="button-secondary" href={`/reviews/${topProduct.slug}`}>Review the product</Link> : null}
                 {topRoundup ? <Link className="button-secondary" href={`/best/${topRoundup.slug}`}>Compare picks</Link> : null}
               </div>
             </div>
@@ -376,7 +385,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         </section>
         {guide.searchQuestion ? (
           <section className="mt-8 rounded-md border border-[var(--brand)] bg-[var(--brand-soft)] p-5" aria-labelledby="guide-search-question">
-            <p className="eyebrow">Independent search question</p>
+            <p className="eyebrow">Common buying question</p>
             <h2 className="mt-2 text-2xl font-bold" id="guide-search-question">{guide.searchQuestion}</h2>
             {guide.governance ? <p className="mt-3 leading-7 text-[var(--muted)]">{guide.governance.distinctFrom}</p> : null}
           </section>
@@ -411,15 +420,15 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         <article className="prose-lite mt-8">
           {guide.sections.map((section) => (
             <section key={section.heading}>
-              <h2>{section.heading}</h2>
-              <p>{section.body}</p>
+              <h2>{buyerFacingHeading(section.heading)}</h2>
+              <p>{buyerFacingBody(section.body)}</p>
             </section>
           ))}
         </article>
         {amazonFamilyProduct && amazonFamilyIdentity && amazonFamilyOffer ? (
           <section className="mt-10 rounded-md border border-[var(--border)] bg-white p-5" aria-labelledby="amazon-family-listing">
-            <p className="eyebrow">Verified Amazon listing anchor</p>
-            <h2 className="mt-3 text-2xl font-bold" id="amazon-family-listing">One exact product in this family</h2>
+            <p className="eyebrow">Current Amazon option</p>
+            <h2 className="mt-3 text-2xl font-bold" id="amazon-family-listing">Check this exact product</h2>
             <p className="mt-4 text-lg font-bold leading-7">{amazonFamilyProduct.title}</p>
             <dl className="mt-4 grid gap-3 text-sm sm:grid-cols-3">
               <div>
@@ -427,7 +436,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
                 <dd className="mt-1 text-[var(--muted)]">{amazonFamilyProduct.asin}</dd>
               </div>
               <div>
-                <dt className="font-bold">Brand anchor</dt>
+                <dt className="font-bold">Brand</dt>
                 <dd className="mt-1 text-[var(--muted)]">{amazonFamilyProduct.brand}</dd>
               </div>
               <div>
@@ -436,7 +445,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
               </div>
             </dl>
             <p className="mt-4 max-w-3xl text-sm leading-6 text-[var(--muted)]">
-              This exact Amazon US listing gives the product family a concrete checkout reference. Open it to compare the current title, ASIN, variant, seller, stock, shipping, price, and return path before ordering.
+              Compare the current title, ASIN, variant, seller, stock, shipping, price, and return path before ordering.
             </p>
             <div className="mt-5">
               <AffiliateButton site={site.key} product={amazonFamilyIdentity} offer={amazonFamilyOffer} position="family-guide-amazon-anchor" resolveCreatorsListing={false} />
@@ -466,14 +475,14 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
               This exact direct-brand option lets you compare the current bundle, price, stock, shipping threshold, return eligibility, and support path with the Amazon listing above. We may earn a CJ commission from an eligible Bc Babycare purchase; the reader pays no added fee.
             </p>
             <div className="mt-5 flex flex-wrap gap-3">
-              {cjFamilyProduct ? <Link className="button-secondary" href={`/reviews/${cjFamilyProduct.slug}`}>Read the full evidence guide</Link> : null}
+              {cjFamilyProduct ? <Link className="button-secondary" href={`/reviews/${cjFamilyProduct.slug}`}>Review the exact product</Link> : null}
               <AffiliateButton site={site.key} product={cjFamilyIdentity} offer={cjFamilyAffiliateOffer} position="family-guide-cj-alternative" resolveCreatorsListing={false} />
             </div>
           </section>
         ) : null}
         {guide.comparisonTable ? (
           <section className="mt-10">
-            <p className="eyebrow">Decision evidence</p>
+            <p className="eyebrow">Side-by-side checks</p>
             <h2 className="mt-3 text-2xl font-bold">{guide.comparisonTable.title}</h2>
             <div className="mt-5 overflow-x-auto rounded-md border border-[var(--border)] bg-white">
               <table className="w-full min-w-[680px] text-left text-sm">
@@ -520,7 +529,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         {guide.communityEvidence?.length ? (
           <section className="mt-10 rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-5" aria-labelledby="community-evidence">
             <p className="eyebrow">Public owner context</p>
-            <h2 className="mt-3 text-2xl font-bold" id="community-evidence">What owners are asking</h2>
+            <h2 className="mt-3 text-2xl font-bold" id="community-evidence">Questions to answer before buying</h2>
             <p className="mt-3 max-w-3xl leading-7 text-[var(--muted)]">
               Community discussions help surface installation, fit, maintenance, and failure questions. They are anecdotal context, not product specifications or a substitute for current instructions.
             </p>
@@ -594,7 +603,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
               <Link className="panel p-5" href={`/reviews/${product.slug}`} key={product.slug}>
                 <p className="eyebrow">Related product guide</p>
                 <h2 className="mt-3 text-xl font-bold">{product.name}</h2>
-                <p className="mt-3 leading-7 text-[var(--muted)]">{product.summary}</p>
+                <p className="mt-3 leading-7 text-[var(--muted)]">{buyerFacingSummary(product.summary)}</p>
               </Link>
             ) : null;
           })}
@@ -604,7 +613,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
               <Link className="panel p-5" href={`/best/${roundup.slug}`} key={roundup.slug}>
                 <p className="eyebrow">Related comparison</p>
                 <h2 className="mt-3 text-xl font-bold">{roundup.title}</h2>
-                <p className="mt-3 leading-7 text-[var(--muted)]">{roundup.dek}</p>
+                <p className="mt-3 leading-7 text-[var(--muted)]">{buyerFacingSummary(roundup.dek)}</p>
               </Link>
             ) : null;
           })}
