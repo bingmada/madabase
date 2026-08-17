@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-17T10:40:00+08:00",
+  "updatedAt": "2026-08-17T13:40:00+08:00",
   "purpose": "Tracked cross-conversation snapshot. Read this before every affiliate operation, then read docs/affiliate-growth-state.json and docs/affiliate-growth-runbook.md for the mutable history and operating rules.",
   "mandatoryDailyScope": {
     "rule": "Every operating run must review conversion integrity, exact zero-exposure cohorts, the latest 24 hours versus the previous 24 hours, the latest complete 7-day window, active SEO experiments, merchant-link health, crawl discovery, production health and due measurement gates. Do not wait for the owner to ask about each item separately.",
@@ -10,7 +10,7 @@
     "status": "production_deployed_and_verified",
     "trigger": "https://baby.madabase.com/guides/ergobaby-omni-breeze-positions-by-age received traffic while its purchase path was missing or too far below the first viewport.",
     "rootCause": "A drifted Amazon listing caused the old Omni Breeze ASIN to be suppressed; the first repair supplied a fallback but did not preserve the exact product after a new exact listing became available. A stale Amazon Creators API snapshot could also overwrite exact catalog data.",
-    "remediation": "Restored the exact Ergobaby Omni Breeze listing, ASIN B0931ZY7DK, Onyx Black, with Baby tag madababy-20. The stale Creators API snapshot can no longer override an exact catalog ASIN. The compact purchase path remains explicitly marked as first-viewport commerce across governed templates, and QA traffic is suppressed from Clarity.",
+    "remediation": "Restored the exact Ergobaby Omni Breeze listing, ASIN B0931ZY7DK, Onyx Black, with Baby tag madababy-20. The stale Creators API snapshot can no longer override an exact catalog ASIN. Release 4beee66 now labels every rendered Amazon or authorized CJ button as a live price-and-availability action, moves non-hands-on evidence limits out of the first decision block, shortens the first-screen disclosure, and audits the CTA intent marker across governed templates.",
     "targetPage": "The positions-by-age guide now exposes exact Omni Breeze commerce in the first viewport and links to ASIN B0931ZY7DK with tag madababy-20. The exact product review uses the same verified offer.",
     "localValidation": {
       "babyConversionPages": "253_of_253_passed",
@@ -22,42 +22,47 @@
       "distributionImages": "18_across_6_sites_passed",
       "releaseBuild": "TypeScript, full ESLint, Next.js production build, static generation and Linux standalone packaging passed"
     },
-    "productionGate": "Immutable release 96eb08c is active. The seven public affiliate hosts return HTTP 200. The public target contains exact B0931ZY7DK, madababy-20, its canonical and data-first-viewport-commerce=true. All 19 governed category pages expose all 757 direct guide links with zero discovery failures.",
+    "productionGate": "Immutable release 4beee66 is active on port 3011. Candidate validation passed 385 of 385 Baby and production-database Costume commercial pages. Normal public Ergobaby guide and review URLs contain the new price-and-availability copy, CTA intent marker, first-viewport marker, exact B0931ZY7DK and madababy-20; the public Costume pilot contains the new copy, intent marker and CJ path. All seven host-aware origin homepages return HTTP 200.",
     "discovery": "Twenty-nine materially changed URLs were accepted by IndexNow with HTTP 200. The 151 soft-launch cohort remains excluded from sitemap, IndexNow and external distribution."
   },
   "release": {
-    "active": "96eb08c",
-    "commit": "96eb08ce13ef8840e70546a8e675d48f481ec236",
+    "active": "4beee66",
+    "commit": "4beee665be38716cf35235c91c53e024a2fb241d",
+    "packageCommit": "e50e9f27ec11023309164665cac781e8c0a27ca9",
     "branch": "lyd-0609",
     "pushed": true,
-    "artifactBytes": 57911840,
-    "artifactSha256": "b02335c6b638f07456c84e02ee05d3849f2a22691e4fbefea03c23c0a515be07",
+    "artifactBytes": 57913245,
+    "artifactSha256": "a901611caf93d481da1ad96eef8a6cc3c5b0a508aa75ffc1c4899b314a8cc19e",
     "artifactLocalPath": "apps/affiliate/.release/affiliate-runtime.tgz",
-    "productionPath": "/srv/madabase-affiliate/releases/96eb08c/apps/affiliate",
-    "rollback": "0aed739",
+    "productionPath": "/srv/madabase-affiliate/releases/4beee66/apps/affiliate",
+    "rollback": "96eb08c",
     "sevenPublicAffiliateHostsHttp200": true,
     "pm2Saved": true,
     "candidateRemoved": true,
-    "indexNowAcceptedUrls": 29
+    "ctaReleaseIndexNowAcceptedUrls": 0,
+    "priorDiscoveryRepairIndexNowAcceptedUrls": 29,
+    "releaseNote": "No URL, title, canonical, sitemap inventory or primary search intent changed in the CTA copy release, so no new IndexNow submission was made. Cloudflare Purge Everything was not used. The normal public money URLs now serve the refreshed HTML while other cached pages update under the existing rule."
   },
   "pendingMainRelease": {
-    "status": "source_committed_candidate_validated_git_push_and_production_pending_explicit_authorization_and_fresh_workbench",
-    "commit": "c1ebfcb",
+    "status": "production_deployed_and_verified",
+    "commit": "c1ebfcbfaea493103d3a71233a1524e8443a2e4e",
     "purpose": "The Costume small-space animatronics Day-14 gate found zero Search Console impressions since launch. Main now exposes a direct, tracked seasonal link to the exact commercial pilot while retaining the broader Halloween hub link.",
     "artifactLocalPath": "apps/main/.release/main-runtime.tgz",
     "artifactBytes": 14851137,
     "artifactSha256": "aa97745eca93c303d959c13385257b1ed3cf740d1f497229960971ea7e0396d7",
-    "validation": "Main ESLint, optimized production build, Linux standalone packaging, 13-canonical site verification, robots, sitemap, locale isolation, IndexNow key and real local rendering passed.",
-    "blocker": "The repository host rejected the push because this turn did not contain explicit authorization to transmit the updated internal operating record. The previously supplied Alibaba Cloud disposable Workbench URL is also no longer usable and returns ERR_BLOCKED_BY_CLIENT in both available browser surfaces. Production remains unchanged until the owner explicitly authorizes the push and supplies a fresh authenticated Workbench URL."
+    "validation": "Main ESLint, optimized production build, Linux standalone packaging, 13-canonical site verification, robots, sitemap, locale isolation, IndexNow key and real local rendering passed. Candidate port 3108 and production port 3008 returned HTTP 200; the exact Costume pilot link, tracked position, original Halloween hub and self-canonical were present.",
+    "productionPath": "/srv/madabase-main/releases/c1ebfcb/apps/main",
+    "rollback": "5a1b36f",
+    "pm2": "madabase runs c1ebfcb on port 3008 with zero restarts; candidate-main was removed and pm2 save completed."
   },
   "serverStability": {
     "serverMemoryApprox": "1.6GB",
     "pm2MaxMemoryRestart": "350M",
-    "releaseRestartCountObserved": 0,
+    "releaseRestartCountObserved": 2,
     "unstableRestarts": 0,
     "errorLog": "No current-release error was added. The visible sharp lines are historical; home-error.log mtime is 2026-07-23 10:08:27 +08:00.",
-    "observedMemoryApprox": "254MB after bounded production verification",
-    "cause": "The release was verified first as candidate-home on port 3111, then only PM2 home was deleted and recreated with the exact 96eb08c script path and cloned production environment. Candidate-home was removed after cutover and port 3111 was released. Other PM2 services were untouched.",
+    "observedMemoryApprox": "Affiliate RSS was about 340MB before the second max-memory recycle and about 315-340MB afterward; Main was about 95MB; final available server memory was about 466MB.",
+    "cause": "Release 4beee66 was verified first as candidate-home on port 3111, then only PM2 home was deleted and recreated with the exact immutable script path and cloned production environment. PM2 performed two stable max-memory restarts during the following two-hour observation window. unstable_restarts remained zero, the active error log did not change, and public money pages stayed HTTP 200. Do not infer an application crash, but treat the recurring 350MB recycle as an operating risk.",
     "rule": "Run full high-concurrency audits on a candidate or local immutable runtime; use bounded sampling on production."
   },
   "searchBaseline": {
@@ -204,7 +209,7 @@
   "cloudflare": {
     "rule": "Cache public affiliate HTML",
     "ruleCorrect": true,
-    "currentReleasePublicHtml": "A browser-shaped Baby target request transitioned EXPIRED to HIT; the Costume pilot returned HIT with Age 336. API and RSC remained DYNAMIC. No purge was required.",
+    "currentReleasePublicHtml": "Normal public Ergobaby guide, Ergobaby review and Costume pilot requests returned HTTP 200 with current release fingerprints. Cloudflare reported UPDATING while serving the new HTML after bounded key-page refreshes. Main remained DYNAMIC. No purge credential was present and Purge Everything was not used.",
     "purgeEverythingUsed": false,
     "testingRule": "Send an Accept header containing text/html; default curl Accept */* does not match the HTML rule."
   },
@@ -230,8 +235,8 @@
     "firstExpansionClickPage": "exact_B0H5X15MHS_madapets-20_first_viewport_and_self_canonical",
     "costumePilot": "first_viewport_CJ_self_canonical_structured_data_and_sitemap_passed",
     "productionCache": "baby_HTML_HIT_costume_HTML_HIT_API_DYNAMIC_RSC_DYNAMIC",
-    "productionProcess": "last_verified_active_affiliate_release_96eb08c; no fresh PM2 inspection because the supplied disposable Workbench URL expired",
-    "mainCandidate": "commit_c1ebfcb_main_lint_build_release_package_13_canonical_site_check_and_rendering_passed"
+    "productionProcess": "affiliate_release_4beee66_port_3011_online_unstable_restarts_0_two_max_memory_recycles_observed; main_release_c1ebfcb_port_3008_online_zero_restarts; candidates_removed_and_pm2_saved",
+    "mainCandidate": "commit_c1ebfcb_deployed_and_public_fingerprint_verified"
   },
   "indexNow": {
     "date": "2026-08-16",
