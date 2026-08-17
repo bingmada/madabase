@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-17T17:14:00+08:00",
+  "updatedAt": "2026-08-17T19:14:28+08:00",
   "purpose": "Tracked cross-conversation snapshot. Read this before every affiliate operation, then read docs/affiliate-growth-state.json and docs/affiliate-growth-runbook.md for the mutable history and operating rules.",
   "mandatoryDailyScope": {
     "rule": "Every operating run must review conversion integrity, exact zero-exposure cohorts, the latest 24 hours versus the previous 24 hours, the latest complete 7-day window, active SEO experiments, merchant-link health, crawl discovery, production health and due measurement gates. Do not wait for the owner to ask about each item separately.",
@@ -10,8 +10,8 @@
   "conversionIntegrityP0": {
     "status": "production_deployed_and_verified",
     "trigger": "https://baby.madabase.com/guides/ergobaby-omni-breeze-positions-by-age received traffic while its purchase path was missing or too far below the first viewport.",
-    "rootCause": "A drifted Amazon listing caused the old Omni Breeze ASIN to be suppressed; the first repair supplied a fallback but did not preserve the exact product after a new exact listing became available. A stale Amazon Creators API snapshot could also overwrite exact catalog data.",
-    "remediation": "Restored the exact Ergobaby Omni Breeze listing, ASIN B0931ZY7DK, Onyx Black, with Baby tag madababy-20. The stale Creators API snapshot can no longer override an exact catalog ASIN. Release f44ca34 now keeps direct buying language in the decision path, moves detailed source and non-hands-on methodology to the bottom, labels first-screen and sticky CTAs with a compact purchase-link line, and makes the entire mobile sticky bar clickable after the first CTA leaves view. The dock hides at the footer and records sticky-bottom clicks separately.",
+    "rootCause": "A drifted Amazon listing caused the old Omni Breeze ASIN to be suppressed; the first repair supplied a fallback but did not preserve the exact product after a new exact listing became available. A stale Amazon Creators API snapshot could also overwrite exact catalog data. The first sticky-commerce implementation additionally carried lg:hidden, so desktop visitors never received the persistent purchase path after scrolling.",
+    "remediation": "Restored the exact Ergobaby Omni Breeze listing, ASIN B0931ZY7DK, Onyx Black, with Baby tag madababy-20. The stale Creators API snapshot can no longer override an exact catalog ASIN. Release 309afe0 keeps direct buying language in the decision path, moves detailed source and non-hands-on methodology to the bottom, labels first-screen and sticky CTAs with a compact purchase-link line, and makes the entire responsive sticky bar clickable after the first CTA leaves view. The dock now works on desktop and mobile, hides at the footer and records sticky-bottom clicks separately.",
     "targetPage": "The positions-by-age guide now exposes exact Omni Breeze commerce in the first viewport and links to ASIN B0931ZY7DK with tag madababy-20. The exact product review uses the same verified offer.",
     "localValidation": {
       "babyConversionPages": "253_of_253_passed",
@@ -24,29 +24,31 @@
       "existingRefresh": "118_of_118_passed",
       "distributionImages": "18_across_6_sites_passed",
       "releaseBuild": "TypeScript, full ESLint, Next.js production build, static generation and Linux standalone packaging passed",
-      "mobileQa": "390x844 Momcozy, Ergobaby and CJ paths passed. The 366x72 dock is one complete anchor, uses the exact merchant destination, remains compact above the safe area and disappears when the footer enters view."
+      "responsiveQa": "Momcozy passed at desktop 1440x900 with a fixed 352x72 bottom-right anchor and at mobile 390x844 with a fixed full-width 366x72 anchor. Both use the exact B0DKHCWJ5G Amazon destination with tag madababy-20; the dock disappears when the footer enters view.",
+      "fullLocalCommercialAudit": "6710_of_6710_routes_passed across six Amazon sites; failed 0 and noCta 0",
+      "productionCandidateAudit": "385_of_385_Baby_and_Costume_routes_passed against the production database; failed 0 and noCta 0"
     },
-    "productionGate": "Immutable release f44ca34 is active on port 3011 with a 512MB Affiliate-only PM2 limit. Candidate validation passed 385 of 385 Baby and production-database Costume commercial pages. Origin Momcozy, Ergobaby, Bc Babycare and Costume pages expose purchase-link copy and the sticky-commerce marker with exact merchant identities; all seven host-aware origin homepages return HTTP 200.",
+    "productionGate": "Immutable release 309afe0 is active on port 3011 with a 512MB Affiliate-only PM2 limit. Candidate validation passed 385 of 385 Baby and production-database Costume commercial pages. The Momcozy production origin/current-runtime validation exposes a desktop-and-mobile sticky-commerce anchor with the exact B0DKHCWJ5G merchant destination and madababy-20 tag; all seven host-aware origin homepages return HTTP 200.",
     "discovery": "Twenty-nine materially changed URLs were accepted by IndexNow with HTTP 200. The 151 soft-launch cohort remains excluded from sitemap, IndexNow and external distribution."
   },
   "release": {
-    "active": "f44ca34",
-    "commit": "f44ca344c78ecc55843c7e06799100ef5eb42b4b",
-    "packageCommit": "f2f3f80dc0608cc13862254b1759aedc40976843",
+    "active": "309afe0",
+    "commit": "309afe0537bdadcfade20eae7aa26cac6b463348",
+    "packageCommit": "bfdf52c57a90a1b822c203c6d55e95def108de05",
     "branch": "lyd-0609",
     "pushed": true,
-    "artifactBytes": 57925254,
-    "artifactSha256": "3feeef6010bc0ec1837cdc7bbd46734053fdd52e80fd5b08a5949e2c58b348c6",
+    "artifactBytes": 57925805,
+    "artifactSha256": "4bb7a4e690d9984eda7750c66fbf725f36a802cf95573f750bc4ed6601cfa784",
     "artifactLocalPath": "apps/affiliate/.release/affiliate-runtime.tgz",
-    "productionPath": "/srv/madabase-affiliate/releases/f44ca34/apps/affiliate",
-    "rollback": "4beee66",
+    "productionPath": "/srv/madabase-affiliate/releases/309afe0/apps/affiliate",
+    "rollback": "f44ca34",
     "sevenPublicAffiliateHostsHttp200": true,
     "pm2Saved": true,
     "candidateRemoved": true,
     "ctaReleaseIndexNowAcceptedUrls": 0,
     "priorDiscoveryRepairIndexNowAcceptedUrls": 29,
     "affiliatePm2MemoryLimit": "512M",
-    "releaseNote": "No URL, title, canonical, sitemap inventory or primary search intent changed, so no new IndexNow submission was made. Cloudflare Purge Everything was not used. The new origin is active; cached HTML updates under the existing one-hour edge rule where no URL-mode purge credential is available."
+    "releaseNote": "No URL, title, canonical, sitemap inventory or primary search intent changed, so no new IndexNow submission was made. Cloudflare Purge Everything was not used. The 309afe0 origin is active and the normal public Momcozy URL now returns a Cloudflare HIT on the current page-e416528e947025ac.js review chunk. That public chunk contains sticky-commerce-dock, lg:right-6 and lg:w-[22rem], and contains no lg:hidden. A browser that cached pre-release HTML can still require a hard refresh under the four-hour browser max-age."
   },
   "pendingMainRelease": {
     "status": "production_deployed_and_verified",
@@ -66,8 +68,8 @@
     "releaseRestartCountObserved": 0,
     "unstableRestarts": 0,
     "errorLog": "No current-release error was added. The visible sharp lines are historical; home-error.log mtime is 2026-07-23 10:08:27 +08:00.",
-    "observedMemoryApprox": "After candidate removal, Affiliate was about 256MB, Main about 83MB and server available memory about 498MB. Candidate completed the 385-page Baby and Costume audit at about 211MB with zero restarts.",
-    "cause": "The previous 350MB Affiliate cap caused two stable max-memory recycles even though public pages stayed healthy. Owner direction makes Affiliate the primary server workload; release f44ca34 therefore raises only Affiliate to 512MB while Main and other services retain their existing limits.",
+    "observedMemoryApprox": "After candidate removal, Affiliate was about 255MB, Main about 78MB and server available memory about 502MB. Candidate completed the 385-page Baby and Costume audit with zero restarts.",
+    "cause": "The previous 350MB Affiliate cap caused two stable max-memory recycles even though public pages stayed healthy. Owner direction makes Affiliate the primary server workload; releases f44ca34 and 309afe0 therefore retain the Affiliate-only 512MB limit while Main and other services keep their existing limits.",
     "rule": "Affiliate has first claim on server capacity. Run full high-concurrency audits on a candidate or local immutable runtime; use bounded sampling on production, and reduce or defer non-revenue services before lowering the Affiliate limit."
   },
   "searchBaseline": {
@@ -214,7 +216,7 @@
   "cloudflare": {
     "rule": "Cache public affiliate HTML",
     "ruleCorrect": true,
-    "currentReleasePublicHtml": "Normal public Ergobaby guide, Ergobaby review and Costume pilot requests returned HTTP 200 with current release fingerprints. Cloudflare reported UPDATING while serving the new HTML after bounded key-page refreshes. Main remained DYNAMIC. No purge credential was present and Purge Everything was not used.",
+    "currentReleasePublicHtml": "The 309afe0 production origin and cache-busted current-runtime Momcozy page returned HTTP 200 and passed responsive sticky CTA checks. The normal canonical Momcozy URL subsequently returned a Cloudflare HIT on page-e416528e947025ac.js, the current responsive review chunk; it contains sticky-commerce-dock, lg:right-6 and lg:w-[22rem], and no lg:hidden. No targeted URL purge credential was present and Purge Everything was not used. A browser that cached older HTML can still require a hard refresh under max-age=14400.",
     "purgeEverythingUsed": false,
     "testingRule": "Send an Accept header containing text/html; default curl Accept */* does not match the HTML rule."
   },
@@ -240,7 +242,9 @@
     "firstExpansionClickPage": "exact_B0H5X15MHS_madapets-20_first_viewport_and_self_canonical",
     "costumePilot": "first_viewport_CJ_self_canonical_structured_data_and_sitemap_passed",
     "productionCache": "baby_HTML_HIT_costume_HTML_HIT_API_DYNAMIC_RSC_DYNAMIC",
-    "productionProcess": "affiliate_release_f44ca34_port_3011_512M_online_restart_0_unstable_restart_0; main_release_c1ebfcb_port_3008_350M_online; candidates_removed_and_pm2_saved",
+    "productionProcess": "affiliate_release_309afe0_port_3011_512M_online_restart_0_unstable_restart_0; main_release_c1ebfcb_port_3008_350M_online_restart_0; candidates_removed_and_pm2_saved",
+    "responsiveStickyCommerce": "desktop_1440x900_and_mobile_390x844_exact_Momcozy_B0DKHCWJ5G_madababy-20_anchor_passed_on_current_production_runtime",
+    "fullCommercialRouteAudit": "6710_of_6710_local_routes_passed; candidate_385_of_385_production_database_routes_passed; failed_0_noCta_0",
     "mainCandidate": "commit_c1ebfcb_deployed_and_public_fingerprint_verified"
   },
   "indexNow": {
@@ -257,7 +261,7 @@
     "day14": "2026-08-27",
     "day28": "2026-09-10",
     "costumePilotNextGate": "2026-09-02",
-    "stickyConversionReview": "Review after 14 days and at least 100 eligible mobile post-CTA scroll sessions; compare first-viewport versus sticky-bottom affiliate clicks, merchant clicks, ordered items and earnings."
+    "stickyConversionReview": "Review after 14 days and at least 100 eligible post-CTA scroll sessions; split desktop and mobile, then compare first-viewport versus sticky-bottom affiliate clicks, merchant clicks, ordered items and earnings."
   },
   "latestExternalDistribution": {
     "date": "2026-08-13",
@@ -286,7 +290,9 @@
     "Do not broadly rewrite the 37 protected winners or 21 held pages without page-filtered evidence.",
     "Do not run high-concurrency full production audits on the approximately 1.6GB server.",
     "Do not reduce the Affiliate 512MB limit or increase non-revenue process limits without a measured capacity review; Affiliate is the primary revenue service.",
-    "Do not use Cloudflare Purge Everything for ordinary content releases."
+    "Do not use Cloudflare Purge Everything for ordinary content releases.",
+    "Do not treat an origin or query-busted runtime check as proof that the canonical Cloudflare cache is current; verify the exact public URL and account for browser-cached HTML that can outlive a deployment.",
+    "Do not remove prior Next.js static chunks until every still-cacheable HTML generation has aged beyond the browser and edge stale windows; retaining only one previous generation can strand users on a cached chunk reference."
   ],
   "details": {
     "rankingReview": "docs/affiliate-search-ranking-review-2026-08-13.md",
