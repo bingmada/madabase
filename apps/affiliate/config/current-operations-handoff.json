@@ -41,14 +41,14 @@
     "indexNowAcceptedUrls": 29
   },
   "pendingMainRelease": {
-    "status": "source_committed_and_pushed_candidate_validated_production_pending_fresh_workbench",
+    "status": "source_committed_candidate_validated_git_push_and_production_pending_explicit_authorization_and_fresh_workbench",
     "commit": "c1ebfcb",
     "purpose": "The Costume small-space animatronics Day-14 gate found zero Search Console impressions since launch. Main now exposes a direct, tracked seasonal link to the exact commercial pilot while retaining the broader Halloween hub link.",
     "artifactLocalPath": "apps/main/.release/main-runtime.tgz",
     "artifactBytes": 14851137,
     "artifactSha256": "aa97745eca93c303d959c13385257b1ed3cf740d1f497229960971ea7e0396d7",
     "validation": "Main ESLint, optimized production build, Linux standalone packaging, 13-canonical site verification, robots, sitemap, locale isolation, IndexNow key and real local rendering passed.",
-    "blocker": "The previously supplied Alibaba Cloud disposable Workbench URL is no longer usable and returns ERR_BLOCKED_BY_CLIENT in both available browser surfaces. Production remains unchanged until the owner supplies a fresh authenticated Workbench URL."
+    "blocker": "The repository host rejected the push because this turn did not contain explicit authorization to transmit the updated internal operating record. The previously supplied Alibaba Cloud disposable Workbench URL is also no longer usable and returns ERR_BLOCKED_BY_CLIENT in both available browser surfaces. Production remains unchanged until the owner explicitly authorizes the push and supplies a fresh authenticated Workbench URL."
   },
   "serverStability": {
     "serverMemoryApprox": "1.6GB",
