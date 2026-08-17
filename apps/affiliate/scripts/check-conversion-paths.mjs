@@ -237,7 +237,7 @@ async function inspectPage(publicUrl) {
         errors.push("first-viewport CTA does not state the price-and-availability intent");
       }
       if (!firstViewportAnchors.some((anchor) => anchor.stickyCommerce)) {
-        errors.push("first-viewport CTA does not enable the mobile sticky commerce path");
+        errors.push("first-viewport CTA does not enable the responsive sticky commerce path");
       }
       if (!firstDecisionBlock.includes("purchase link")) {
         errors.push("first decision block is missing a concise purchase-link label near the CTA");

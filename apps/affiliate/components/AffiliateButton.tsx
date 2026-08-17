@@ -43,7 +43,7 @@ export function AffiliateButton({
   const visibleLabel = isAmazon
     ? "Check current price & availability on Amazon"
     : `Check current price & availability at ${merchantName}`;
-  const [showMobileDock, setShowMobileDock] = useState(false);
+  const [showStickyDock, setShowStickyDock] = useState(false);
   const firstViewportLink = useRef<HTMLAnchorElement>(null);
 
   useEffect(() => {
@@ -51,7 +51,7 @@ export function AffiliateButton({
 
     let firstLinkPassed = false;
     let footerVisible = false;
-    const updateDock = () => setShowMobileDock(firstLinkPassed && !footerVisible);
+    const updateDock = () => setShowStickyDock(firstLinkPassed && !footerVisible);
     const firstLinkObserver = new IntersectionObserver(([entry]) => {
       firstLinkPassed = !entry.isIntersecting && entry.boundingClientRect.bottom < 0;
       updateDock();
@@ -134,15 +134,15 @@ export function AffiliateButton({
           Current price &amp; availability · purchase link
         </p>
       </div>
-      {showMobileDock ? (
+      {showStickyDock ? (
         <a
           aria-label={`Purchase option for ${creatorsListing?.title ?? product.amazonTitle ?? product.name}`}
-          className="fixed inset-x-3 z-40 rounded-lg border border-[var(--border)] bg-white/95 p-2.5 shadow-[0_10px_35px_rgba(15,23,42,0.24)] backdrop-blur transition hover:border-[var(--brand)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand)] lg:hidden"
+          className="fixed inset-x-3 z-40 rounded-lg border border-[var(--border)] bg-white/95 p-2.5 shadow-[0_10px_35px_rgba(15,23,42,0.24)] backdrop-blur transition hover:border-[var(--brand)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand)] lg:inset-x-auto lg:right-6 lg:w-[22rem] lg:max-w-[calc(100vw-3rem)]"
           data-affiliate-link-source={
             creatorsListing ? "amazon-creators-api" : isAmazon ? "verified-amazon-fallback" : "authorized-offer"
           }
           data-cta-intent="price-availability"
-          data-mobile-commerce-dock="true"
+          data-sticky-commerce-dock="responsive"
           href={href}
           onClick={() => trackClick(`${position}-sticky-bottom`)}
           rel="sponsored nofollow noopener noreferrer"
