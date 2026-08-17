@@ -527,6 +527,14 @@ img {
   line-height: 1.7;
 }
 
+.seasonal-actions {
+  display: flex;
+  max-width: 310px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
 .path-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1263,6 +1271,11 @@ img {
   .seasonal-callout {
     grid-template-columns: 1fr;
     padding: 30px 24px;
+  }
+
+  .seasonal-actions {
+    max-width: none;
+    justify-content: flex-start;
   }
 
   .split-heading .text-link {

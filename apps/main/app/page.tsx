@@ -99,9 +99,19 @@ export default function HomePage() {
             <h2>Plan the costume, scare, and setup while there is still time to test it.</h2>
             <p>Use the Madabase Halloween &amp; Costume Guide for sizing, masks, haunted props, animatronics, lighting, delivery timing, and simpler backups before October 31.</p>
           </div>
-          <TrackedLink className="button button-light" href="https://costumes.madabase.com/halloween" position="home-seasonal-halloween" publication="Madabase Halloween & Costume Guide">
-            Open Halloween planning <ArrowRight size={17} aria-hidden="true" />
-          </TrackedLink>
+          <div className="seasonal-actions">
+            <TrackedLink
+              className="button button-light"
+              href="https://costumes.madabase.com/best/halloween-animatronics-small-yards-and-porches"
+              position="home-seasonal-small-space-animatronics"
+              publication="Madabase Halloween & Costume Guide"
+            >
+              Compare small-space animatronics <ArrowRight size={17} aria-hidden="true" />
+            </TrackedLink>
+            <TrackedLink className="button button-ghost" href="https://costumes.madabase.com/halloween" position="home-seasonal-halloween" publication="Madabase Halloween & Costume Guide">
+              Open Halloween planning
+            </TrackedLink>
+          </div>
         </div>
       </section>
 
