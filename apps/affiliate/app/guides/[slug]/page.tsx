@@ -325,7 +325,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         <h1 className="mt-3 text-3xl font-black leading-tight sm:text-4xl">{guide.title}</h1>
         {topProduct || topRoundup || commerceProduct || amazonFamilyOffer || cjFamilyAffiliateOffer || costumeCommerceProduct ? (
           <section className="mt-4 rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-4 sm:mt-5 sm:p-5" aria-label="First-screen purchase path" data-first-viewport-commerce="true">
-            <p className="eyebrow">Purchase path</p>
+            <p className="eyebrow">Current retailer option</p>
             <div className="mt-2 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
               <div>
                 <h2 className="text-lg font-bold sm:text-xl">
@@ -343,8 +343,8 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
                 ) : cjFamilyOffer && cjFamilyIdentity && cjFamilyAffiliateOffer ? (
                   <AffiliateButton site={site.key} product={cjFamilyIdentity} offer={cjFamilyAffiliateOffer} position="guide-first-viewport-family-cj" resolveCreatorsListing={false} firstViewport />
                 ) : costumeCommerceProduct?.activeLink ? (
-                  <Link className="button-primary" href={`/go/cj/${costumeCommerceProduct.activeLink.clickToken}`} rel="nofollow sponsored" data-first-viewport-affiliate="true">
-                    Check at Abracadabra NYC
+                  <Link className="button-primary" href={`/go/cj/${costumeCommerceProduct.activeLink.clickToken}`} rel="nofollow sponsored" data-first-viewport-affiliate="true" data-cta-intent="price-availability">
+                    Check current price &amp; availability at Abracadabra NYC
                   </Link>
                 ) : commerceProduct ? (
                   <AffiliateButtonGroup site={site.key} product={commerceProduct} position={commerceIsAlternative ? "guide-first-viewport-verified-alternative" : "guide-first-viewport-primary"} limit={1} firstViewport />
@@ -355,11 +355,11 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             </div>
             <p className="mt-3 text-xs leading-5 text-[var(--muted)]">
               {costumeCommerceProduct
-                ? `Exact CJ retailer path for ${costumeCommerceProduct.title}; confirm variant, delivery, and returns.`
+                ? `Open the exact ${costumeCommerceProduct.title} listing to compare the live price, availability, delivery, and returns.`
                 : amazonFamilyProduct
-                  ? "Exact family listing anchor; reconfirm ASIN, variant, seller, and returns."
+                  ? "Open the exact family listing to compare the live price, availability, delivery, seller, and returns."
                   : commerceProduct
-                    ? `Confirm the exact model, seller, bundle, fit, and return path for ${commerceProduct.name}.`
+                    ? `Open the named ${commerceProduct.name} listing to compare the live price, availability, delivery, seller, and returns.`
                     : "Use the comparison page to narrow the choices before buying."}
             </p>
           </section>
@@ -399,7 +399,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             </div>
             {guide.familySlug ? (
               <figcaption className="mt-2 text-xs leading-5 text-[var(--muted)]">
-                Original editorial image for category, fit, and use context. It is not a retailer image, a hands-on test photo, or a promise that the linked product has the same appearance or configuration.
+                Original editorial image for category, fit, and use context; verify the exact linked product appearance and configuration on the retailer page.
               </figcaption>
             ) : guide.image.includes("-realistic.webp") ? (
               <figcaption className="mt-2 text-xs leading-5 text-[var(--muted)]">
@@ -436,7 +436,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
               </div>
             </dl>
             <p className="mt-4 max-w-3xl text-sm leading-6 text-[var(--muted)]">
-              This is an exact Amazon US listing anchor for the product family, not a hands-on test or an automatic top-pick endorsement. We do not copy Amazon price, star rating, review count, or hosted product imagery here. Reconfirm the title, ASIN, variant, seller, stock, shipping, and return path on Amazon.
+              This exact Amazon US listing gives the product family a concrete checkout reference. Open it to compare the current title, ASIN, variant, seller, stock, shipping, price, and return path before ordering.
             </p>
             <div className="mt-5">
               <AffiliateButton site={site.key} product={amazonFamilyIdentity} offer={amazonFamilyOffer} position="family-guide-amazon-anchor" resolveCreatorsListing={false} />
@@ -463,7 +463,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
               </div>
             </dl>
             <p className="mt-4 max-w-3xl text-sm leading-6 text-[var(--muted)]">
-              This is an exact direct-brand option, not an automatic top pick or hands-on endorsement. Compare its bundle, shipping threshold, return eligibility, and support path with the Amazon listing above. We may earn a CJ commission from an eligible Bc Babycare purchase; the reader pays no added fee.
+              This exact direct-brand option lets you compare the current bundle, price, stock, shipping threshold, return eligibility, and support path with the Amazon listing above. We may earn a CJ commission from an eligible Bc Babycare purchase; the reader pays no added fee.
             </p>
             <div className="mt-5 flex flex-wrap gap-3">
               {cjFamilyProduct ? <Link className="button-secondary" href={`/reviews/${cjFamilyProduct.slug}`}>Read the full evidence guide</Link> : null}

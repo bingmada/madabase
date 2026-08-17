@@ -310,9 +310,9 @@ export default async function CategoryPage({
         {commerceProduct ? (
           <section className="mt-4 flex flex-col gap-3 rounded-md border border-[var(--border)] bg-white p-4 sm:mt-5 sm:flex-row sm:items-center sm:justify-between sm:p-5" aria-label="First-screen category retailer starting point" data-first-viewport-commerce="true">
             <div>
-              <p className="eyebrow">Verified retailer starting point</p>
+              <p className="eyebrow">Current retailer option</p>
               <h2 className="mt-2 text-xl font-bold">{commerceProduct.amazonTitle ?? commerceProduct.name}</h2>
-              <p className="mt-2 max-w-xl text-sm leading-6 text-[var(--muted)]">A currently verified option in this category; confirm the exact model, seller, configuration, and return path before buying.</p>
+              <p className="mt-2 max-w-xl text-sm leading-6 text-[var(--muted)]">Open the named listing to compare the live price, availability, delivery, seller, configuration, and returns.</p>
             </div>
             <div className="shrink-0">
               <AffiliateButtonGroup site={site.key} product={commerceProduct} position="category-first-viewport-starting-option" limit={1} firstViewport />

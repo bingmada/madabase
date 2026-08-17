@@ -48,11 +48,11 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
         <h1 className="mt-3 text-4xl font-black leading-tight">{tool.title}</h1>
         {commerceProduct ? (
           <section className="mt-4 rounded-md border border-[var(--border)] bg-white p-4 sm:mt-5 sm:p-5" aria-label="First-screen related retailer option" data-first-viewport-commerce="true">
-            <p className="eyebrow">Related verified retailer option</p>
+            <p className="eyebrow">Related retailer option</p>
             <div className="mt-3 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <div>
                 <h2 className="text-xl font-bold">{commerceProduct.amazonTitle ?? commerceProduct.name}</h2>
-                <p className="mt-2 max-w-xl text-sm leading-6 text-[var(--muted)]">Use the calculator result to decide whether this related product fits; then confirm the exact model, seller, bundle, and return path before checkout.</p>
+                <p className="mt-2 max-w-xl text-sm leading-6 text-[var(--muted)]">Use the calculator result to decide whether this product fits, then open the named listing to compare its live price, availability, delivery, seller, bundle, and returns.</p>
               </div>
               <div className="shrink-0">
                 <AffiliateButtonGroup site={site.key} product={commerceProduct} position="tool-first-viewport-related-option" limit={1} firstViewport />

@@ -243,8 +243,9 @@ export function StyleCategoryPage({
           {commerceProduct ? (
             <div className="mt-4 flex max-w-3xl flex-col gap-3 border-y border-[#cdbeb6] py-4 sm:mt-5 sm:flex-row sm:items-center sm:justify-between sm:py-5" aria-label="First-screen retailer starting point" data-first-viewport-commerce="true">
               <div>
-                <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#713248]">Verified retailer starting point</p>
+                <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#713248]">Current retailer option</p>
                 <p className="mt-2 font-serif text-2xl">{commerceProduct.amazonTitle ?? commerceProduct.name}</p>
+                <p className="mt-2 text-sm leading-6 text-[#6b5e58]">Compare the live price, availability, delivery, seller, and returns on the named listing.</p>
               </div>
               <AffiliateButtonGroup site={site.key} product={commerceProduct} position="style-category-first-viewport" limit={1} firstViewport />
             </div>
@@ -333,7 +334,7 @@ export function StyleGuidePage({
                   <p className="mt-2 text-sm leading-6 text-[#d6cbc5]">
                     {commerceIsAlternative
                       ? `The exact retailer path is paused; the purchase button is for the verified alternative ${commerceProduct?.name}, not the original item.`
-                      : "Start with the fit, scale, material, and return checks before comparing decorative details."}
+                      : "Open the named listing to compare the live price, availability, delivery, seller, variation, and returns."}
                   </p>
                 </div>
                 <div className="flex shrink-0 flex-wrap gap-2 sm:justify-end">
@@ -531,6 +532,7 @@ export function StyleProductPage({
                 <div className="mt-3 flex flex-wrap gap-3">
                   <AffiliateButtonGroup site={site.key} product={purchaseProduct} position={commerceIsAlternative ? "style-product-first-viewport-verified-alternative" : "style-product-first-viewport"} limit={1} firstViewport />
                 </div>
+                <p className="mt-2 text-xs leading-5 text-[#7b6d67]">Open the named listing to compare the live price, availability, delivery, seller, and return terms.</p>
               </div>
             ) : null}
             <p className="mt-4 inline-flex items-center gap-2 text-xs font-semibold text-[#7b6d67]"><CalendarDays size={14} /> Updated {product.updatedAt ?? "on the current review cycle"}</p>
@@ -557,7 +559,7 @@ export function StyleProductPage({
             </p>
             <div className="mt-7 border-l-2 border-[#a24d67] bg-[#fffaf6] px-5 py-4">
               <p className="text-xs font-bold uppercase tracking-[0.12em] text-[#986174]">{evidencePresentation.label}</p>
-              <p className="mt-2 text-sm font-semibold leading-6 text-[#4f4540]">{evidencePresentation.note}</p>
+              <p className="mt-2 text-sm font-semibold leading-6 text-[#4f4540]">{evidencePresentation.summary}</p>
             </div>
           </div>
         </div>
@@ -654,6 +656,7 @@ export function StyleProductPage({
               <div>
                 <p className="style-kicker">Source trail</p>
                 <h2 className="mt-3 font-serif text-3xl">References checked</h2>
+                <p className="mt-4 text-sm leading-7 text-[#6f625c]">{evidencePresentation.note}</p>
                 <ul className="mt-6 divide-y divide-[#cdbeb6] border-t border-[#cdbeb6]">
                   {product.sources.map((source) => (
                     <li className="py-4" key={source.url}>
@@ -723,8 +726,8 @@ export function StyleCollectionPage({ site, roundup, products }: { site: SiteCon
                     {commerceIsAlternative
                       ? `The first pick has no verified retailer path right now; the purchase button is for ${commerceProduct?.name}.`
                       : topPick
-                        ? `Best for ${topPick.bestFor.toLowerCase()}; skip it if ${topPick.cons[0]?.toLowerCase()}.`
-                        : "Confirm the exact listing, variation, seller, and return path before buying."}
+                        ? `Best for ${topPick.bestFor.toLowerCase()}. Open the named listing to compare the live price, availability, delivery, seller, variation, and returns.`
+                        : "Open the named listing to compare the live price, availability, delivery, seller, variation, and returns."}
                   </p>
                 </div>
                 <div className="flex shrink-0 flex-wrap gap-2 sm:justify-end">

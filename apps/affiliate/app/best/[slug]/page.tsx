@@ -187,7 +187,6 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
   const topPick = picks[0];
   const commerceProduct = roundupCommerceProduct(site.key, roundup);
   const commerceIsAlternative = Boolean(topPick && commerceProduct && topPick.slug !== commerceProduct.slug);
-  const topPickTradeOff = topPick?.cons[0] ?? "Confirm exact model, seller, and current configuration before checkout.";
   const category = site.categories.find((item) => item.slug === roundup.category);
   const relatedGuides = siteGuides(site.key)
     .filter((guide) => guide.relatedRoundups.includes(roundup.slug))
@@ -242,12 +241,12 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
           {topPick || commerceProduct ? (
             <div className="mt-4 grid gap-3 rounded-md border border-[var(--border)] bg-white p-4 sm:mt-5 sm:grid-cols-[1fr_auto] sm:items-center sm:p-5" aria-label="First-screen purchase path" data-first-viewport-commerce="true">
               <div>
-                <p className="text-xs font-bold uppercase text-[var(--muted)]">Purchase path</p>
+                <p className="text-xs font-bold uppercase text-[var(--muted)]">Current retailer option</p>
                 <h2 className="mt-2 text-lg font-bold sm:text-xl">{topPick?.amazonTitle ?? topPick?.name ?? commerceProduct?.amazonTitle ?? commerceProduct?.name}</h2>
                 {commerceIsAlternative ? (
                   <p className="mt-2 text-sm leading-5 text-[var(--muted)]">Different product: the first pick has no verified retailer path; this button is for {commerceProduct?.name}.</p>
                 ) : topPick ? (
-                  <p className="mt-2 text-sm leading-5 text-[var(--muted)]">Best for {topPick.bestFor.toLowerCase()}; skip if {topPickTradeOff.toLowerCase()}.</p>
+                  <p className="mt-2 text-sm leading-5 text-[var(--muted)]">Best for {topPick.bestFor.toLowerCase()}. Open the listing to compare the live price, availability, delivery, seller, and returns.</p>
                 ) : null}
               </div>
               <div className="flex flex-wrap items-start gap-2 sm:justify-end">

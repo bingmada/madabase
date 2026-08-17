@@ -145,7 +145,7 @@ const contentIndexSource = fs.readFileSync(contentIndexPath, "utf8");
 const sitesSource = fs.readFileSync(sitesPath, "utf8");
 const categoryPageSource = fs.readFileSync(categoryPagePath, "utf8");
 if (!guidePageSource.includes("findAuthorizedCjFamilyOffer") || !guidePageSource.includes("family-guide-cj-alternative")) errors.push("Family guides do not render the authorized CJ alternative module");
-if (!guidePageSource.includes("We may earn a CJ commission") || !guidePageSource.includes("not an automatic top pick")) errors.push("Family-guide CJ disclosure or recommendation limit is missing");
+if (!guidePageSource.includes("We may earn a CJ commission") || !guidePageSource.includes("This exact direct-brand option lets you compare")) errors.push("Family-guide CJ disclosure or live retailer comparison copy is missing");
 if (!contentIndexSource.includes("products.push(...cjBabyExpansionProducts)")) errors.push("CJ product pages are not registered in the content index");
 if (!sitesSource.includes('slug: "gear"') || !sitesSource.includes('name: "Daily Gear"')) errors.push("Baby Daily Gear category is missing");
 if (sitesSource.includes('...(process.env.AFFILIATE_INCLUDE_DRAFTS === "1" ? [{')) errors.push("Baby Daily Gear category is still draft-isolated");

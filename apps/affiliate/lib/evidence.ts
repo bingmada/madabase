@@ -15,5 +15,11 @@ export function productEvidencePresentation(product: Product) {
         : "We have not tested this product ourselves. This guide uses current manufacturer documentation and listing checks to identify fit, compatibility, version, and purchase risks."
   );
 
-  return { label, mode, note };
+  const summary = mode === "hands-on"
+    ? "The decision below is based on direct use, with the setup and measurement limits stated beside each finding."
+    : mode === "research-synthesis"
+      ? "The decision below combines current manufacturer documentation with attributed independent tests while keeping every result in its original setup."
+      : "The decision below uses current manufacturer documentation, official support material, and exact retailer-listing checks.";
+
+  return { label, mode, note, summary };
 }

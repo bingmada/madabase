@@ -158,8 +158,8 @@ export default async function SmallSpaceHalloweenAnimatronicsPage() {
           <h1 className="mt-4 max-w-4xl text-4xl font-black leading-tight text-white sm:text-6xl">Best Halloween animatronics for small yards and porches</h1>
           {heroProduct?.activeLink ? (
             <div className="mt-5 flex flex-wrap gap-3" aria-label="First-screen CJ retailer option" data-first-viewport-commerce="true">
-              <Link className="button-primary !bg-[#df7627] !text-white" href={`/go/cj/${heroProduct.activeLink.clickToken}`} rel="nofollow sponsored" data-first-viewport-affiliate="true">
-                Check {heroProduct.title} at Abracadabra <ArrowRight aria-hidden="true" size={16} />
+              <Link className="button-primary !bg-[#df7627] !text-white" href={`/go/cj/${heroProduct.activeLink.clickToken}`} rel="nofollow sponsored" data-first-viewport-affiliate="true" data-cta-intent="price-availability">
+                Check current price &amp; availability at Abracadabra NYC <ArrowRight aria-hidden="true" size={16} />
               </Link>
             </div>
           ) : null}
@@ -176,7 +176,7 @@ export default async function SmallSpaceHalloweenAnimatronicsPage() {
             <Link className="button-primary !bg-[#df7627] !text-white" href="#animatronic-picks">Compare the three picks <ArrowRight aria-hidden="true" size={16} /></Link>
             <Link className="button-secondary bg-white/95" href="/guides/large-prop-animatronic-space-and-power-checklist">Open the setup checklist</Link>
           </div>
-          <p className="mt-5 text-sm leading-6 text-white/55">Updated August 3, 2026 · Research synthesis from the authorized CJ catalog and exact retailer listing identity; not a hands-on test.</p>
+          <p className="mt-5 text-sm leading-6 text-white/55">Updated August 3, 2026 · Evidence: authorized CJ catalog data plus exact retailer-listing identity checks.</p>
         </div>
       </section>
 

@@ -232,6 +232,9 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                     <div className="mt-3">
                       <AffiliateButton site={site.key} product={commerceProduct} offer={commerceOffer} position={commerceIsAlternative ? "review-first-viewport-verified-alternative" : "review-first-viewport"} firstViewport />
                     </div>
+                    <p className="mt-2 text-xs leading-5 text-[var(--muted)]">
+                      Open the named listing to compare the live price, availability, delivery, seller, and return terms.
+                    </p>
                   </div>
                 ) : null}
                 <p className="mt-5 text-lg leading-8 text-[var(--muted)]">{product.summary}</p>
@@ -291,7 +294,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
               <BaseMarketEditionLinks site={site} basePath={`/reviews/${slug}`} />
               <div className="not-prose rounded-md border border-[var(--brand)] bg-[var(--brand-soft)] p-5">
                 <p className="text-xs font-bold uppercase text-[var(--brand-strong)]">{evidencePresentation.label}</p>
-                <p className="mt-2 text-sm font-semibold leading-6 text-[var(--text)]">{evidencePresentation.note}</p>
+                <p className="mt-2 text-sm font-semibold leading-6 text-[var(--text)]">{evidencePresentation.summary}</p>
               </div>
               <div className="not-prose mt-5 rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-5">
                 <h2 className="text-xl font-bold">Quick verdict</h2>
@@ -616,6 +619,8 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                 <li>Use recent owner feedback to look for recurring quality-control issues after confirming the exact model.</li>
                 <li>Our retailer links may earn commission from qualifying purchases, at no extra cost to you.</li>
               </ul>
+              <h2>Evidence boundary</h2>
+              <p>{evidencePresentation.note}</p>
               {product.sources?.length ? (
                 <>
                   <h2>Primary sources</h2>

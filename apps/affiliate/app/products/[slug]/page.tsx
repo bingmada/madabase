@@ -190,7 +190,7 @@ export default async function CostumeProductPage({ params }: { params: Promise<{
                   <p className="eyebrow">Product information</p>
                   <h2 className="mt-3 text-2xl font-bold">Details supplied by Abracadabra NYC</h2>
                   <p className="mt-4 leading-8 text-[var(--muted)]">{feedDescription}</p>
-                  <p className="mt-3 text-sm leading-6 text-[var(--muted)]">Merchant-supplied information can change and is not presented as hands-on testing. Confirm important details on the retailer page before ordering.</p>
+                  <p className="mt-3 text-sm leading-6 text-[var(--muted)]">Merchant-supplied details can change. Open the exact retailer page to compare the live price, availability, delivery, variant, and return terms.</p>
                 </section>
               ) : null}
               <section className="mt-9 rounded-md border border-[var(--border)] bg-white p-5">
@@ -202,7 +202,7 @@ export default async function CostumeProductPage({ params }: { params: Promise<{
                   <div className="grid gap-2 py-3 sm:grid-cols-[180px_1fr]"><dt className="font-semibold text-[var(--muted)]">Availability</dt><dd className="font-bold capitalize">{catalogProduct.availability}</dd></div>
                   <div className="grid gap-2 py-3 sm:grid-cols-[180px_1fr]"><dt className="font-semibold text-[var(--muted)]">Audience</dt><dd className="font-bold">{catalogProduct.audience.length ? catalogProduct.audience.join(" · ") : "Not specified by the retailer"}</dd></div>
                   <div className="grid gap-2 py-3 sm:grid-cols-[180px_1fr]"><dt className="font-semibold text-[var(--muted)]">Information checked</dt><dd className="font-bold">{catalogProduct.lastSeenAt.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</dd></div>
-                  <div className="grid gap-2 py-3 sm:grid-cols-[180px_1fr]"><dt className="font-semibold text-[var(--muted)]">Research basis</dt><dd className="font-bold">Merchant information with editorial buying checks; not hands-on tested</dd></div>
+                  <div className="grid gap-2 py-3 sm:grid-cols-[180px_1fr]"><dt className="font-semibold text-[var(--muted)]">Research basis</dt><dd className="font-bold">Authorized merchant-feed specifications with editorial buying checks</dd></div>
                 </dl>
               </section>
             </article>

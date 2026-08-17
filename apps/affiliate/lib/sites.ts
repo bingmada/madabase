@@ -29,7 +29,7 @@ export const sites: Record<SiteKey, SiteConfig> = {
     description: "Pet buying notes, comparison guides, and practical calculators for feeders, cameras, litter, beds, pet hair, and air quality.",
     domain: process.env.NEXT_PUBLIC_PET_SITE_URL ?? "https://pets.madabase.com",
     hostHints: ["pet", "paw"],
-    disclosure: "As an Amazon Associate I earn from qualifying purchases. Amazon is currently the site's only commissioned retailer. Recommendations are based on routine fit, specifications, cleaning effort, and trade-offs.",
+    disclosure: "As an Amazon Associate I earn from qualifying purchases, at no extra cost to you.",
     heroImage: "/images/affiliate/hero-pet-realistic.webp",
     theme: {
       brand: "#126a5f",
@@ -51,7 +51,7 @@ export const sites: Record<SiteKey, SiteConfig> = {
     description: "Home office buying notes, ergonomic comparisons, and setup calculators for desks, chairs, lights, monitor arms, and audio.",
     domain: process.env.NEXT_PUBLIC_HOMEOFFICE_SITE_URL ?? "https://homeoffice.madabase.com",
     hostHints: ["homeoffice", "desk", "office"],
-    disclosure: "As an Amazon Associate I earn from qualifying purchases. Amazon is currently the site's only commissioned retailer. Recommendations are based on use-case fit, specifications, ergonomics, and long-term value.",
+    disclosure: "As an Amazon Associate I earn from qualifying purchases, at no extra cost to you.",
     heroImage: "/images/affiliate/hero-homeoffice-realistic.webp",
     theme: {
       brand: "#245b75",
@@ -73,7 +73,7 @@ export const sites: Record<SiteKey, SiteConfig> = {
     description: "Baby gear buying notes, safety-minded guides, and planning tools for monitors, strollers, carriers, bottles, sleep, and diapers.",
     domain: process.env.NEXT_PUBLIC_BABY_SITE_URL ?? "https://baby.madabase.com",
     hostHints: ["baby", "nest"],
-    disclosure: "As an Amazon Associate I earn from qualifying purchases. NestCheck Picks may also earn commissions from eligible Bc Babycare purchases through CJ. The retailer and commission rate do not change the price a reader pays, and we keep safety notes, limitations, fit guidance, and skip-it cases visible.",
+    disclosure: "As an Amazon Associate I earn from qualifying purchases. NestCheck Picks may also earn from eligible Bc Babycare purchases through CJ, at no extra cost to you.",
     heroImage: "/images/affiliate/hero-baby-realistic.webp",
     theme: {
       brand: "#846036",
@@ -100,7 +100,7 @@ export const sites: Record<SiteKey, SiteConfig> = {
     description: "Home network buying notes, router comparisons, mesh Wi-Fi guides, Ethernet planning tools, and practical setup checklists.",
     domain: process.env.NEXT_PUBLIC_NETWORK_SITE_URL ?? "https://network.madabase.com",
     hostHints: ["network", "wifi", "router", "signal"],
-    disclosure: "As an Amazon Associate I earn from qualifying purchases. Amazon is currently the site's only commissioned retailer. Recommendations are based on home layout, wired backhaul options, speed needs, device count, and setup trade-offs.",
+    disclosure: "As an Amazon Associate I earn from qualifying purchases, at no extra cost to you.",
     heroImage: "/images/affiliate/hero-network-realistic.webp",
     theme: {
       brand: "#255f8f",
@@ -122,7 +122,7 @@ export const sites: Record<SiteKey, SiteConfig> = {
     description: "Research-based smart lock, doorbell, thermostat, and home-automation comparisons with compatibility, subscription, wiring, and ecosystem checks kept visible.",
     domain: process.env.NEXT_PUBLIC_SMARTHOME_SITE_URL ?? "https://smarthome.madabase.com",
     hostHints: ["smarthome", "smart-home", "dwell"],
-    disclosure: "As an Amazon Associate I earn from qualifying purchases. Amazon is currently the site's only commissioned retailer. Recommendations are based on compatibility, installation requirements, privacy choices, subscriptions, and everyday control paths.",
+    disclosure: "As an Amazon Associate I earn from qualifying purchases, at no extra cost to you.",
     heroImage: "/images/affiliate/hero-smarthome-realistic.webp",
     theme: {
       brand: "#176b6b",
@@ -145,7 +145,7 @@ export const sites: Record<SiteKey, SiteConfig> = {
     description: "Practical styling notes for statement jewelry, character bags, hair accessories, scarves, socks, and expressive extras—judged by scale, comfort, materials, outfit fit, and return risk.",
     domain: process.env.NEXT_PUBLIC_STYLE_SITE_URL ?? "https://style.madabase.com",
     hostHints: ["style", "wear", "accessory"],
-    disclosure: "As an Amazon Associate I earn from qualifying purchases. Amazon is currently the site's only commissioned retailer. Recommendations are based on stated materials, measurements, closure, carrying comfort, outfit versatility, and return risk.",
+    disclosure: "As an Amazon Associate I earn from qualifying purchases, at no extra cost to you.",
     heroImage: "/images/affiliate/hero-style-realistic.webp",
     theme: {
       brand: "#9a3655",
@@ -170,7 +170,7 @@ export const sites: Record<SiteKey, SiteConfig> = {
     description: "Halloween-first costume, mask, haunted-prop, animatronic, makeup, lighting, and decoration guides, with year-round paths for cosplay, theater, parties, and professional use.",
     domain: process.env.NEXT_PUBLIC_COSTUME_SITE_URL ?? "https://costumes.madabase.com",
     hostHints: ["costume", "halloween"],
-    disclosure: "Madabase Halloween & Costume Guide may earn commissions from qualifying Abracadabra NYC purchases through CJ. Eligible buttons use the dedicated Costume promotional-property PID and are enabled only for the exact product after its destination and attribution path are checked. Commissions do not change the price a reader pays.",
+    disclosure: "Madabase Halloween & Costume Guide may earn from qualifying Abracadabra NYC purchases through CJ, at no extra cost to you.",
     heroImage: "/images/affiliate/hero-halloween-costume-studio-v1.webp",
     theme: {
       brand: "#a14f1c",

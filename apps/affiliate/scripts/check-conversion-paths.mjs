@@ -175,6 +175,7 @@ async function inspectPage(publicUrl) {
         rel: (extractAttribute(tag, "rel") ?? "").toLowerCase(),
         source: extractAttribute(tag, "data-affiliate-link-source"),
         firstViewport: extractAttribute(tag, "data-first-viewport-affiliate") === "true",
+        ctaIntent: extractAttribute(tag, "data-cta-intent"),
       }))
       // Amazon detail URLs also appear in editorial source citations. Only
       // instrumented commerce anchors (or sponsored CJ redirects) are CTAs.
@@ -214,6 +215,9 @@ async function inspectPage(publicUrl) {
     if (!affiliateAnchors.length) errors.push("missing sponsored Amazon/CJ CTA");
     else {
       if (!firstViewportAnchors.length) errors.push("missing designated first-viewport affiliate CTA");
+      if (!firstViewportAnchors.some((anchor) => anchor.ctaIntent === "price-availability")) {
+        errors.push("first-viewport CTA does not state the price-and-availability intent");
+      }
       if (!firstViewportContainerFollowsH1) errors.push("first-viewport commerce container is not directly after the H1");
       if (!firstViewportAnchorInsideCompactContainer) errors.push("designated first-viewport CTA is not inside the compact H1 commerce container");
       if (requirePreImageCta && !beforeFirstImage) errors.push("first affiliate CTA appears after the first page image");

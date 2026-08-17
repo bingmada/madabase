@@ -69,7 +69,7 @@ export function CostumeCatalogCard({ product, retailerCta = false }: { product: 
           </Link>
           {retailerCta && product.activeLink && product.authorizedImage && product.availability !== "out of stock" ? (
             <Link className="button-primary self-start" href={`/go/cj/${product.activeLink.clickToken}`} rel="nofollow sponsored">
-              Check at Abracadabra
+              Check current price &amp; availability
               <ArrowRight aria-hidden="true" size={16} />
             </Link>
           ) : null}
@@ -240,7 +240,7 @@ export function CostumePurchaseState({ product, firstViewport = false }: { produ
         <ShieldCheck aria-hidden="true" className="text-[var(--brand)]" size={22} />
         <h2 className="mt-4 text-xl font-bold">Available at Abracadabra NYC</h2>
         <p className="mt-3 text-sm leading-6 text-[var(--muted)]">Check the exact variant, current availability, shipping, and return terms on the retailer page.</p>
-        <Link className="button-primary mt-5" href={`/go/cj/${product.activeLink.clickToken}`} rel="nofollow sponsored" data-first-viewport-affiliate={firstViewport ? "true" : undefined}>Check at Abracadabra NYC <ArrowRight aria-hidden="true" size={16} /></Link>
+        <Link className="button-primary mt-5" href={`/go/cj/${product.activeLink.clickToken}`} rel="nofollow sponsored" data-first-viewport-affiliate={firstViewport ? "true" : undefined} data-cta-intent={firstViewport ? "price-availability" : undefined}>Check current price &amp; availability at Abracadabra NYC <ArrowRight aria-hidden="true" size={16} /></Link>
       </div>
     );
   }

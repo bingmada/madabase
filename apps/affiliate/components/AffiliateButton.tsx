@@ -38,6 +38,10 @@ export function AffiliateButton({
     ? creatorsListingCandidate
     : null;
   const href = creatorsListing?.detailPageUrl ?? offer.url;
+  const merchantName = offer.merchant.replace(/\s+via\s+CJ$/i, "");
+  const visibleLabel = isAmazon
+    ? "Check current price & availability on Amazon"
+    : `Check current price & availability at ${merchantName}`;
 
   function trackClick() {
     const eventId =
@@ -75,14 +79,15 @@ export function AffiliateButton({
       href={href}
       target="_blank"
       rel="sponsored nofollow noopener noreferrer"
-      aria-label={`${offer.label} for ${creatorsListing?.title ?? product.amazonTitle ?? product.name}`}
+      aria-label={`${visibleLabel} for ${creatorsListing?.title ?? product.amazonTitle ?? product.name}`}
       data-affiliate-link-source={
         creatorsListing ? "amazon-creators-api" : isAmazon ? "verified-amazon-fallback" : "authorized-offer"
       }
       data-first-viewport-affiliate={firstViewport ? "true" : undefined}
+      data-cta-intent={firstViewport ? "price-availability" : undefined}
       onClick={trackClick}
     >
-      {offer.label}
+      {visibleLabel}
       <ExternalLink aria-hidden="true" size={16} />
     </a>
   );
