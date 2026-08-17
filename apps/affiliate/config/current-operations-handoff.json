@@ -1,47 +1,52 @@
 {
-  "updatedAt": "2026-08-17T13:40:00+08:00",
+  "updatedAt": "2026-08-17T17:14:00+08:00",
   "purpose": "Tracked cross-conversation snapshot. Read this before every affiliate operation, then read docs/affiliate-growth-state.json and docs/affiliate-growth-runbook.md for the mutable history and operating rules.",
   "mandatoryDailyScope": {
     "rule": "Every operating run must review conversion integrity, exact zero-exposure cohorts, the latest 24 hours versus the previous 24 hours, the latest complete 7-day window, active SEO experiments, merchant-link health, crawl discovery, production health and due measurement gates. Do not wait for the owner to ask about each item separately.",
     "conversionFirst": "Amazon or authorized CJ earnings are the objective. Every commercial page must retain a truthful, exact or clearly labeled fallback purchase path in the first viewport and pass the structural conversion audit.",
-    "seoEvidenceRule": "Judge tracked URL cohorts exactly. Do not replace an exact 24-hour, 48-hour or cohort analysis with a site-wide headline metric, and do not rewrite protected winners or active title experiments before their gate."
+    "seoEvidenceRule": "Judge tracked URL cohorts exactly. Do not replace an exact 24-hour, 48-hour or cohort analysis with a site-wide headline metric, and do not rewrite protected winners or active title experiments before their gate.",
+    "serverResourcePriority": "Affiliate is the primary revenue service and has first claim on server capacity. Preserve its 512MB PM2 limit before increasing Main, Tools, Test or Wellness; reduce or defer non-revenue workloads first when measured memory pressure appears."
   },
   "conversionIntegrityP0": {
     "status": "production_deployed_and_verified",
     "trigger": "https://baby.madabase.com/guides/ergobaby-omni-breeze-positions-by-age received traffic while its purchase path was missing or too far below the first viewport.",
     "rootCause": "A drifted Amazon listing caused the old Omni Breeze ASIN to be suppressed; the first repair supplied a fallback but did not preserve the exact product after a new exact listing became available. A stale Amazon Creators API snapshot could also overwrite exact catalog data.",
-    "remediation": "Restored the exact Ergobaby Omni Breeze listing, ASIN B0931ZY7DK, Onyx Black, with Baby tag madababy-20. The stale Creators API snapshot can no longer override an exact catalog ASIN. Release 4beee66 now labels every rendered Amazon or authorized CJ button as a live price-and-availability action, moves non-hands-on evidence limits out of the first decision block, shortens the first-screen disclosure, and audits the CTA intent marker across governed templates.",
+    "remediation": "Restored the exact Ergobaby Omni Breeze listing, ASIN B0931ZY7DK, Onyx Black, with Baby tag madababy-20. The stale Creators API snapshot can no longer override an exact catalog ASIN. Release f44ca34 now keeps direct buying language in the decision path, moves detailed source and non-hands-on methodology to the bottom, labels first-screen and sticky CTAs with a compact purchase-link line, and makes the entire mobile sticky bar clickable after the first CTA leaves view. The dock hides at the footer and records sticky-bottom clicks separately.",
     "targetPage": "The positions-by-age guide now exposes exact Omni Breeze commerce in the first viewport and links to ASIN B0931ZY7DK with tag madababy-20. The exact product review uses the same verified offer.",
     "localValidation": {
       "babyConversionPages": "253_of_253_passed",
+      "sixAmazonSiteConversionPages": "1358_of_1358_passed",
+      "candidateBabyAndCostumePages": "385_of_385_passed_against_production_database",
       "affiliateLinks": "301_of_301_passed; 8 known drifted or unavailable offers remained suppressed",
       "seo": "passed: 964 published guides, 170 products, 77 roundups, 7 tools, 4,672 generated market routes and 32 index-qualified market routes",
       "governedExpansion": "757_of_757_passed across 154 families; 3,785 unique section bodies; 144 exact Amazon anchors; 532 minimum, 630 average and 814 maximum words",
       "softLaunch": "151_of_151_passed_and_sitemap_excluded",
       "existingRefresh": "118_of_118_passed",
       "distributionImages": "18_across_6_sites_passed",
-      "releaseBuild": "TypeScript, full ESLint, Next.js production build, static generation and Linux standalone packaging passed"
+      "releaseBuild": "TypeScript, full ESLint, Next.js production build, static generation and Linux standalone packaging passed",
+      "mobileQa": "390x844 Momcozy, Ergobaby and CJ paths passed. The 366x72 dock is one complete anchor, uses the exact merchant destination, remains compact above the safe area and disappears when the footer enters view."
     },
-    "productionGate": "Immutable release 4beee66 is active on port 3011. Candidate validation passed 385 of 385 Baby and production-database Costume commercial pages. Normal public Ergobaby guide and review URLs contain the new price-and-availability copy, CTA intent marker, first-viewport marker, exact B0931ZY7DK and madababy-20; the public Costume pilot contains the new copy, intent marker and CJ path. All seven host-aware origin homepages return HTTP 200.",
+    "productionGate": "Immutable release f44ca34 is active on port 3011 with a 512MB Affiliate-only PM2 limit. Candidate validation passed 385 of 385 Baby and production-database Costume commercial pages. Origin Momcozy, Ergobaby, Bc Babycare and Costume pages expose purchase-link copy and the sticky-commerce marker with exact merchant identities; all seven host-aware origin homepages return HTTP 200.",
     "discovery": "Twenty-nine materially changed URLs were accepted by IndexNow with HTTP 200. The 151 soft-launch cohort remains excluded from sitemap, IndexNow and external distribution."
   },
   "release": {
-    "active": "4beee66",
-    "commit": "4beee665be38716cf35235c91c53e024a2fb241d",
-    "packageCommit": "e50e9f27ec11023309164665cac781e8c0a27ca9",
+    "active": "f44ca34",
+    "commit": "f44ca344c78ecc55843c7e06799100ef5eb42b4b",
+    "packageCommit": "f2f3f80dc0608cc13862254b1759aedc40976843",
     "branch": "lyd-0609",
     "pushed": true,
-    "artifactBytes": 57913245,
-    "artifactSha256": "a901611caf93d481da1ad96eef8a6cc3c5b0a508aa75ffc1c4899b314a8cc19e",
+    "artifactBytes": 57925254,
+    "artifactSha256": "3feeef6010bc0ec1837cdc7bbd46734053fdd52e80fd5b08a5949e2c58b348c6",
     "artifactLocalPath": "apps/affiliate/.release/affiliate-runtime.tgz",
-    "productionPath": "/srv/madabase-affiliate/releases/4beee66/apps/affiliate",
-    "rollback": "96eb08c",
+    "productionPath": "/srv/madabase-affiliate/releases/f44ca34/apps/affiliate",
+    "rollback": "4beee66",
     "sevenPublicAffiliateHostsHttp200": true,
     "pm2Saved": true,
     "candidateRemoved": true,
     "ctaReleaseIndexNowAcceptedUrls": 0,
     "priorDiscoveryRepairIndexNowAcceptedUrls": 29,
-    "releaseNote": "No URL, title, canonical, sitemap inventory or primary search intent changed in the CTA copy release, so no new IndexNow submission was made. Cloudflare Purge Everything was not used. The normal public money URLs now serve the refreshed HTML while other cached pages update under the existing rule."
+    "affiliatePm2MemoryLimit": "512M",
+    "releaseNote": "No URL, title, canonical, sitemap inventory or primary search intent changed, so no new IndexNow submission was made. Cloudflare Purge Everything was not used. The new origin is active; cached HTML updates under the existing one-hour edge rule where no URL-mode purge credential is available."
   },
   "pendingMainRelease": {
     "status": "production_deployed_and_verified",
@@ -57,13 +62,13 @@
   },
   "serverStability": {
     "serverMemoryApprox": "1.6GB",
-    "pm2MaxMemoryRestart": "350M",
-    "releaseRestartCountObserved": 2,
+    "pm2MaxMemoryRestart": "Affiliate 512M; Main 350M",
+    "releaseRestartCountObserved": 0,
     "unstableRestarts": 0,
     "errorLog": "No current-release error was added. The visible sharp lines are historical; home-error.log mtime is 2026-07-23 10:08:27 +08:00.",
-    "observedMemoryApprox": "Affiliate RSS was about 340MB before the second max-memory recycle and about 315-340MB afterward; Main was about 95MB; final available server memory was about 466MB.",
-    "cause": "Release 4beee66 was verified first as candidate-home on port 3111, then only PM2 home was deleted and recreated with the exact immutable script path and cloned production environment. PM2 performed two stable max-memory restarts during the following two-hour observation window. unstable_restarts remained zero, the active error log did not change, and public money pages stayed HTTP 200. Do not infer an application crash, but treat the recurring 350MB recycle as an operating risk.",
-    "rule": "Run full high-concurrency audits on a candidate or local immutable runtime; use bounded sampling on production."
+    "observedMemoryApprox": "After candidate removal, Affiliate was about 256MB, Main about 83MB and server available memory about 498MB. Candidate completed the 385-page Baby and Costume audit at about 211MB with zero restarts.",
+    "cause": "The previous 350MB Affiliate cap caused two stable max-memory recycles even though public pages stayed healthy. Owner direction makes Affiliate the primary server workload; release f44ca34 therefore raises only Affiliate to 512MB while Main and other services retain their existing limits.",
+    "rule": "Affiliate has first claim on server capacity. Run full high-concurrency audits on a candidate or local immutable runtime; use bounded sampling on production, and reduce or defer non-revenue services before lowering the Affiliate limit."
   },
   "searchBaseline": {
     "latest24Hours": {
@@ -235,7 +240,7 @@
     "firstExpansionClickPage": "exact_B0H5X15MHS_madapets-20_first_viewport_and_self_canonical",
     "costumePilot": "first_viewport_CJ_self_canonical_structured_data_and_sitemap_passed",
     "productionCache": "baby_HTML_HIT_costume_HTML_HIT_API_DYNAMIC_RSC_DYNAMIC",
-    "productionProcess": "affiliate_release_4beee66_port_3011_online_unstable_restarts_0_two_max_memory_recycles_observed; main_release_c1ebfcb_port_3008_online_zero_restarts; candidates_removed_and_pm2_saved",
+    "productionProcess": "affiliate_release_f44ca34_port_3011_512M_online_restart_0_unstable_restart_0; main_release_c1ebfcb_port_3008_350M_online; candidates_removed_and_pm2_saved",
     "mainCandidate": "commit_c1ebfcb_deployed_and_public_fingerprint_verified"
   },
   "indexNow": {
@@ -251,7 +256,8 @@
     "day7": "2026-08-20",
     "day14": "2026-08-27",
     "day28": "2026-09-10",
-    "costumePilotNextGate": "2026-09-02"
+    "costumePilotNextGate": "2026-09-02",
+    "stickyConversionReview": "Review after 14 days and at least 100 eligible mobile post-CTA scroll sessions; compare first-viewport versus sticky-bottom affiliate clicks, merchant clicks, ordered items and earnings."
   },
   "latestExternalDistribution": {
     "date": "2026-08-13",
@@ -279,6 +285,7 @@
     "Do not change the three active title experiments before 2026-08-20.",
     "Do not broadly rewrite the 37 protected winners or 21 held pages without page-filtered evidence.",
     "Do not run high-concurrency full production audits on the approximately 1.6GB server.",
+    "Do not reduce the Affiliate 512MB limit or increase non-revenue process limits without a measured capacity review; Affiliate is the primary revenue service.",
     "Do not use Cloudflare Purge Everything for ordinary content releases."
   ],
   "details": {
