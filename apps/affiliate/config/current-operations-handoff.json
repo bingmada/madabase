@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-16T11:25:00+08:00",
+  "updatedAt": "2026-08-17T10:40:00+08:00",
   "purpose": "Tracked cross-conversation snapshot. Read this before every affiliate operation, then read docs/affiliate-growth-state.json and docs/affiliate-growth-runbook.md for the mutable history and operating rules.",
   "mandatoryDailyScope": {
     "rule": "Every operating run must review conversion integrity, exact zero-exposure cohorts, the latest 24 hours versus the previous 24 hours, the latest complete 7-day window, active SEO experiments, merchant-link health, crawl discovery, production health and due measurement gates. Do not wait for the owner to ask about each item separately.",
@@ -40,6 +40,16 @@
     "candidateRemoved": true,
     "indexNowAcceptedUrls": 29
   },
+  "pendingMainRelease": {
+    "status": "source_committed_and_pushed_candidate_validated_production_pending_fresh_workbench",
+    "commit": "c1ebfcb",
+    "purpose": "The Costume small-space animatronics Day-14 gate found zero Search Console impressions since launch. Main now exposes a direct, tracked seasonal link to the exact commercial pilot while retaining the broader Halloween hub link.",
+    "artifactLocalPath": "apps/main/.release/main-runtime.tgz",
+    "artifactBytes": 14851137,
+    "artifactSha256": "aa97745eca93c303d959c13385257b1ed3cf740d1f497229960971ea7e0396d7",
+    "validation": "Main ESLint, optimized production build, Linux standalone packaging, 13-canonical site verification, robots, sitemap, locale isolation, IndexNow key and real local rendering passed.",
+    "blocker": "The previously supplied Alibaba Cloud disposable Workbench URL is no longer usable and returns ERR_BLOCKED_BY_CLIENT in both available browser surfaces. Production remains unchanged until the owner supplies a fresh authenticated Workbench URL."
+  },
   "serverStability": {
     "serverMemoryApprox": "1.6GB",
     "pm2MaxMemoryRestart": "350M",
@@ -52,72 +62,110 @@
   },
   "searchBaseline": {
     "latest24Hours": {
-      "clicks": 7,
-      "impressions": 538,
-      "ctr": "1.3%",
-      "averagePosition": 32.1,
-      "comparison": "Previous 24 hours: 2 clicks, 867 impressions, 0.2% CTR and position 34.5.",
+      "clicks": 4,
+      "impressions": 685,
+      "ctr": "0.6%",
+      "averagePosition": 33.7,
+      "comparison": "Previous 24 hours: 8 clicks, 599 impressions, 1.3% CTR and position 31.4.",
       "use": "directional_only"
     },
-    "latestComplete7DaysAug7To13": {
-      "clicks": 23,
-      "impressions": 4583,
+    "latestComplete7DaysAug8To14": {
+      "clicks": 26,
+      "impressions": 4905,
       "ctr": "0.5%",
-      "averagePosition": 28.0
+      "averagePosition": 29.0,
+      "comparison": "Previous complete 7 days: 19 clicks, 2,704 impressions, 0.7% CTR and position 25.2. Impressions increased 81.4% and clicks increased 36.8%; lower aggregate CTR and position reflect broader new low-ranking exposure."
     },
     "note": "Search Console page-dimension sums can exceed the dashboard aggregate because more than one Madabase URL can appear in one result set."
   },
   "searchExposureGates": {
     "expansion757": {
-      "complete7Days": { "exposedUrls": 314, "zeroImpressionUrls": 443, "clicks": 0, "impressions": 826, "weightedPosition": 36.805 },
-      "latest24Hours": { "exposedUrls": 72, "impressions": 101, "weightedPosition": 44.39 },
-      "previous24Hours": { "exposedUrls": 119, "impressions": 193, "weightedPosition": 46.73 },
-      "zeroBySite": { "baby": 82, "costume": 38, "homeoffice": 81, "network": 56, "pet": 116, "smarthome": 70 },
+      "complete7Days": { "exposedUrls": 343, "zeroImpressionUrls": 414, "clicks": 0, "impressions": 971, "weightedPosition": 37.015 },
+      "latest24Hours": { "exposedUrls": 95, "clicks": 0, "impressions": 165, "weightedPosition": 46.33 },
+      "previous24Hours": { "exposedUrls": 78, "clicks": 1, "impressions": 111, "weightedPosition": 43.55 },
+      "zeroBySite": { "baby": 76, "costume": 38, "homeoffice": 77, "network": 54, "pet": 104, "smarthome": 65 },
       "roleEvidence": {
-        "buying": { "exposed": 33, "zero": 121, "impressions": 95, "position": 49.33 },
-        "comparison": { "exposed": 74, "zero": 80, "impressions": 184, "position": 38.86 },
-        "fit": { "exposed": 60, "zero": 94, "impressions": 185, "position": 38.99 },
-        "ownership": { "exposed": 63, "zero": 91, "impressions": 130, "position": 17.74 },
-        "safety": { "exposed": 14, "zero": 10, "impressions": 39, "position": 41.64 },
-        "workflow": { "exposed": 70, "zero": 47, "impressions": 193, "position": 38.44 }
+        "buying": { "exposed": 38, "zero": 116, "impressions": 113, "position": 51.12 },
+        "comparison": { "exposed": 79, "zero": 75, "impressions": 212, "position": 38.64 },
+        "fit": { "exposed": 67, "zero": 87, "impressions": 208, "position": 38.45 },
+        "ownership": { "exposed": 70, "zero": 84, "impressions": 149, "position": 17.81 },
+        "safety": { "exposed": 15, "zero": 9, "impressions": 45, "position": 41.39 },
+        "workflow": { "exposed": 74, "zero": 43, "impressions": 244, "position": 38.77 }
       },
       "action": "All 757 URLs now have crawlable direct links from their 19 category pages, grouped by search intent. Ownership, the strongest observed role, is ordered early. Category ItemList JSON-LD and sitemap lastmod 2026-08-16 were added or refreshed.",
-      "nextGate": "Re-measure exact impressions after crawling; do not rewrite hundreds of URLs before the discovery change has had time to propagate."
+      "firstClick": "The first observed click for this expansion landed on https://pets.madabase.com/guides/open-top-self-cleaning-litter-boxes-setup-and-daily-workflow at position 4 in the previous rolling 24-hour window. Query text was anonymized by Search Console. Its exact B0H5X15MHS, madapets-20 and first-viewport commerce path are healthy; protect this intent.",
+      "nextGate": "Exposure increased from 314 to 343 and impressions from 826 to 971 in the one-day-shifted complete window. Hold broad rewrites during the release observation window and re-measure exact cohorts."
     },
     "zeroExposureInspection": {
-      "uniqueUrlsDue": 459,
-      "composition": "443 expansion URLs plus 16 existing-ranking-refresh URLs",
-      "onGoogle": 98,
+      "uniqueUrlsDue": 431,
+      "composition": "414 expansion URLs plus 17 existing-ranking-refresh URLs",
+      "onGoogle": 93,
       "notOnGoogle": 0,
-      "fullExpandedDetailCaptured": 53,
-      "indexSummaryCaptured": 45,
-      "blockedByDailyInspectionQuota": 361,
-      "interpretation": "All 98 inspected URLs are indexed. For the inspected sample, zero impressions are a discovery/demand/ranking problem rather than an indexing failure.",
-      "externalBlocker": "Google Search Console reported that the property's daily URL Inspection quota was exceeded.",
-      "nextAction": "Resume the exact remaining ledger on 2026-08-17 after the daily quota renews; never report the 459-URL inspection as complete before the 361 blocked rows are resolved."
+      "fullExpandedDetailCaptured": 52,
+      "indexSummaryCaptured": 41,
+      "blockedByDailyInspectionQuota": 338,
+      "interpretation": "All 93 previously inspected URLs that remain in today's zero-exposure cohort are indexed. The current inspected sample still points to discovery/demand/ranking rather than a proven indexing failure.",
+      "externalBlocker": "A fresh 2026-08-17 URL Inspection request still returned the Google property daily-quota alert.",
+      "nextAction": "Resume the exact remaining ledger on 2026-08-18 after the quota renews; never report the 431-URL inspection as complete before the 338 blocked rows are resolved."
     },
     "existingRankingRefresh118": {
-      "complete7Days": { "exposedUrls": 102, "zeroImpressionUrls": 16, "clicks": 19, "impressions": 2630, "ctr": "0.722%", "weightedPosition": 19.378 },
-      "latest24Hours": { "clicks": 5, "impressions": 236, "exposedUrls": 64, "ctr": "2.12%", "weightedPosition": 18.15 },
-      "previous24Hours": { "clicks": 2, "impressions": 377, "exposedUrls": 73, "ctr": "0.53%", "weightedPosition": 18.99 },
-      "action": "Keep evidence-positive changes. Inspect the 16 zero URLs through the same exact ledger; do not broadly rewrite the 37 protected winners or 21 held pages."
+      "complete7Days": { "exposedUrls": 101, "zeroImpressionUrls": 17, "clicks": 21, "impressions": 2648, "ctr": "0.793%", "weightedPosition": 19.509 },
+      "previousComplete7Days": { "exposedUrls": 93, "clicks": 13, "impressions": 1921, "ctr": "0.677%", "weightedPosition": 21.203 },
+      "latest24Hours": { "clicks": 4, "impressions": 318, "exposedUrls": 70, "ctr": "1.258%", "weightedPosition": 18.53 },
+      "previous24Hours": { "clicks": 5, "impressions": 280, "exposedUrls": 68, "ctr": "1.786%", "weightedPosition": 17.38 },
+      "action": "Keep evidence-positive changes. Inspect the 17 zero URLs through the same exact ledger; do not broadly rewrite the 37 protected winners or 21 held pages."
     },
     "titleExperiment3": {
-      "complete7Days": { "clicks": 0, "impressions": 207, "weightedPosition": 14.32 },
+      "complete7Days": { "clicks": 0, "impressions": 200, "weightedPosition": 14.452 },
       "urls": {
-        "furbo": { "impressions": 66, "position": 18.8 },
-        "tapoP110MHomeAssistant": { "impressions": 67, "position": 13.8 },
-        "caldigit": { "impressions": 74, "position": 10.8 }
+        "furbo": { "impressions": 64, "position": 19.0 },
+        "tapoP110MHomeAssistant": { "impressions": 60, "position": 14.1 },
+        "caldigit": { "impressions": 76, "position": 10.9 }
       },
-      "latest24Hours": { "clicks": 0, "impressions": 19, "position": 15.79 },
-      "previous24Hours": { "clicks": 0, "impressions": 16, "position": 15.28 },
+      "latest24Hours": { "clicks": 0, "impressions": 18, "position": 18.96 },
+      "previous24Hours": { "clicks": 0, "impressions": 21, "position": 17.77 },
       "gate": "Do not change these titles before Day 7 on 2026-08-20."
     },
     "softLaunch151": {
       "state": "public_indexable_internally_linked_sitemap_excluded",
-      "complete7Days": { "exposedUrls": 0, "note": "Released on the evening of 2026-08-13, so the complete window mostly predates launch." },
-      "latest24Hours": { "exposedUrls": 1, "impressions": 2, "position": 6.0, "urlNote": "Baby childproof stove knob covers" },
+      "complete7Days": { "exposedUrls": 0, "note": "Released on the evening of 2026-08-13, so the complete window still mostly predates launch." },
+      "latest24Hours": { "exposedUrls": 3, "impressions": 4, "position": 14.5, "urls": ["Baby furniture anchor kits", "Baby potty training seats", "Baby toddler straw cups"] },
+      "previous24Hours": { "exposedUrls": 1, "impressions": 2, "position": 6.0, "urlNote": "Baby childproof stove knob covers" },
       "gate": "Remain sitemap- and IndexNow-excluded. Run the exact Day-7 zero-URL inspection on 2026-08-20."
+    }
+  },
+  "commerceMeasurement": {
+    "amazonAssociates": {
+      "reportUpdatedThrough": "2026-08-15",
+      "latestCompleteDayAug15": { "clicks": 1, "orderedItems": 0, "conversion": "0%", "earningsUsd": 0 },
+      "latestComplete7DaysAug9To15": { "clicks": 1, "orderedItems": 0, "conversion": "0%", "earningsUsd": 0 },
+      "rolling30DaysJul17ToAug15": { "clicks": 31, "orderedItems": 24, "conversion": "77.42%", "orderedRevenueUsd": 760.04, "shippedItems": 24, "returnedItems": 0, "earningsUsd": 22.96 },
+      "interpretation": "Historical conversion is proven, but the current seven-day bottleneck is insufficient qualified Amazon clicks rather than a newly observed checkout failure."
+    },
+    "cj": {
+      "latestDashboardWindow": "Yesterday, 2026-08-16",
+      "clicks": 19,
+      "sales": 0,
+      "leads": 0,
+      "commissionUsd": 0,
+      "balanceUsd": 0,
+      "scopeWarning": "CJ dashboard totals are not page-qualified; do not attribute the 19 clicks to the Costume pilot."
+    },
+    "clarity": {
+      "status": "blocked_blank_project_dashboard",
+      "interpretation": "The authenticated project URL loaded no trustworthy dashboard or Smart Event data. This is no-data, not zero sessions or zero affiliate_click events."
+    },
+    "creatorsApi": {
+      "inventory": "290 exact US ASIN-backed products; six US site Partner Tag configurations",
+      "nonUs": "GB, CA, DE and NL remain 0 explicit ASIN mappings and 0 local Partner Tag configurations",
+      "productionEndpoint": "HTTP 200, private no-store, noindex, Cloudflare DYNAMIC and listing=null; verified static Amazon CTAs remain the fallback"
+    },
+    "costumeSmallSpacePilot": {
+      "day14Gate": "2026-08-17",
+      "searchConsoleSinceLaunch": { "clicks": 0, "impressions": 0, "queries": "no-data" },
+      "urlInspection": "Blocked by the property daily quota, so indexing status is unproven rather than assumed not indexed.",
+      "technical": "HTTP 200, self-canonical, Article/FAQ/ItemList structured data, sitemap membership, three live Costume internal entrances and first-viewport sponsored CJ commerce are healthy.",
+      "action": "Commit c1ebfcb adds a direct tracked Main seasonal link to this exact buyer page while retaining the broad Halloween hub. Do not open another animatronics URL or rewrite the pilot without query evidence."
     }
   },
   "cohorts": {
@@ -146,13 +194,17 @@
     "homeoffice": 254,
     "baby": 233,
     "pet": 221,
+    "style": 76,
+    "costume": 145,
     "governedCategoryLastmod": "2026-08-16",
-    "softLaunch151Included": 0
+    "softLaunch151Included": 0,
+    "costumePilotIncluded": true,
+    "firstExpansionClickPageIncluded": true
   },
   "cloudflare": {
     "rule": "Cache public affiliate HTML",
     "ruleCorrect": true,
-    "currentReleasePublicHtml": "The target response was HTTP 200 with cf-cache-status DYNAMIC and current conversion fingerprints. The public 19-category audit returned current content for all categories, so no purge was required.",
+    "currentReleasePublicHtml": "A browser-shaped Baby target request transitioned EXPIRED to HIT; the Costume pilot returned HIT with Age 336. API and RSC remained DYNAMIC. No purge was required.",
     "purgeEverythingUsed": false,
     "testingRule": "Send an Accept header containing text/html; default curl Accept */* does not match the HTML rule."
   },
@@ -175,7 +227,11 @@
     "distributionImages": "18_across_6_sites_passed",
     "publicHosts": "7_of_7_affiliate_hosts_http_200",
     "productionTarget": "exact_B0931ZY7DK_madababy-20_first_viewport_and_self_canonical",
-    "productionProcess": "home_online_release_96eb08c_restart_0_unstable_0_pm2_saved"
+    "firstExpansionClickPage": "exact_B0H5X15MHS_madapets-20_first_viewport_and_self_canonical",
+    "costumePilot": "first_viewport_CJ_self_canonical_structured_data_and_sitemap_passed",
+    "productionCache": "baby_HTML_HIT_costume_HTML_HIT_API_DYNAMIC_RSC_DYNAMIC",
+    "productionProcess": "last_verified_active_affiliate_release_96eb08c; no fresh PM2 inspection because the supplied disposable Workbench URL expired",
+    "mainCandidate": "commit_c1ebfcb_main_lint_build_release_package_13_canonical_site_check_and_rendering_passed"
   },
   "indexNow": {
     "date": "2026-08-16",
@@ -186,10 +242,11 @@
     "scope": "Only materially changed home, category and Omni Breeze monetization pages. The 151 soft-launch cohort was excluded."
   },
   "measurementGates": {
-    "zeroInspectionResume": "2026-08-17",
+    "zeroInspectionResume": "2026-08-18 after property quota renewal",
     "day7": "2026-08-20",
     "day14": "2026-08-27",
-    "day28": "2026-09-10"
+    "day28": "2026-09-10",
+    "costumePilotNextGate": "2026-09-02"
   },
   "latestExternalDistribution": {
     "date": "2026-08-13",
@@ -213,7 +270,7 @@
   "doNotDo": [
     "Do not add the 151 soft-launch pages to sitemap, IndexNow or external distribution before their Day-7 gate on 2026-08-20.",
     "Do not treat sitemap exclusion as noindex.",
-    "Do not report the 459-URL zero-exposure inspection as complete while 361 rows remain blocked by the daily Search Console quota.",
+    "Do not report the 431-URL zero-exposure inspection as complete while 338 rows remain blocked by the daily Search Console quota.",
     "Do not change the three active title experiments before 2026-08-20.",
     "Do not broadly rewrite the 37 protected winners or 21 held pages without page-filtered evidence.",
     "Do not run high-concurrency full production audits on the approximately 1.6GB server.",
@@ -222,11 +279,12 @@
   "details": {
     "rankingReview": "docs/affiliate-search-ranking-review-2026-08-13.md",
     "currentSearchGateReports": [
-      "docs/affiliate-expansion757-search-gate-2026-08-16.csv",
-      "docs/affiliate-ranking118-search-gate-2026-08-16.csv",
-      "docs/affiliate-soft151-search-gate-2026-08-16.csv"
+      "docs/affiliate-expansion757-search-gate-2026-08-17.csv",
+      "docs/affiliate-ranking118-search-gate-2026-08-17.csv",
+      "docs/affiliate-soft151-search-gate-2026-08-17.csv"
     ],
-    "zeroInspectionLedger": "docs/affiliate-zero-impression-inspections-2026-08-16.csv",
+    "zeroInspectionLedger": "docs/affiliate-zero-impression-inspections-2026-08-17.csv",
+    "dailyLog": "docs/affiliate-growth-daily-2026-08-17.md",
     "mutableState": "docs/affiliate-growth-state.json",
     "runbook": "docs/affiliate-growth-runbook.md",
     "breadthReadiness": "apps/affiliate/config/breadth-draft-120-plus-readiness.json"
