@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-08-18T15:10:00+08:00",
+  "updatedAt": "2026-08-20T18:33:00+08:00",
   "purpose": "Tracked cross-conversation snapshot. Read this before every affiliate operation, then read docs/affiliate-growth-state.json and docs/affiliate-growth-runbook.md for the mutable history and operating rules.",
   "mandatoryDailyScope": {
     "rule": "Every operating run must review conversion integrity, exact zero-exposure cohorts, the latest 24 hours versus the previous 24 hours, the latest complete 7-day window, active SEO experiments, merchant-link health, crawl discovery, production health and due measurement gates. Do not wait for the owner to ask about each item separately.",
     "conversionFirst": "Amazon or authorized CJ earnings are the objective. Every commercial page must retain a truthful, exact or clearly labeled fallback purchase path in the first viewport and pass the structural conversion audit.",
     "seoEvidenceRule": "Judge tracked URL cohorts exactly. Do not replace an exact 24-hour, 48-hour or cohort analysis with a site-wide headline metric, and do not rewrite protected winners or active title experiments before their gate.",
-    "serverResourcePriority": "Affiliate is the primary revenue service and has first claim on server capacity. Preserve its 512MB PM2 limit before increasing Main, Tools, Test or Wellness; reduce or defer non-revenue workloads first when measured memory pressure appears."
+    "serverResourcePriority": "Affiliate is the primary revenue service and has first claim on server capacity. Keep its non-root systemd service stable on loopback port 3011; reduce or defer non-revenue workloads first when measured memory pressure appears."
   },
   "conversionIntegrityP0": {
     "status": "production_deployed_and_verified",
@@ -20,7 +20,7 @@
       "affiliateLinks": "301_of_301_passed; 8 known drifted or unavailable offers remained suppressed",
       "seo": "passed: 964 published guides, 170 products, 77 roundups, 7 tools, 4,672 generated market routes and 32 index-qualified market routes",
       "governedExpansion": "757_of_757_passed across 154 families; 3,785 unique section bodies; 144 exact Amazon anchors; 532 minimum, 630 average and 814 maximum words",
-      "softLaunch": "151_of_151_passed_and_sitemap_excluded",
+      "softLaunch": "151_of_151_passed_public_and_sitemap_included",
       "existingRefresh": "118_of_118_passed",
       "distributionImages": "18_across_6_sites_passed",
       "releaseBuild": "TypeScript, full ESLint, Next.js production build, static generation and Linux standalone packaging passed",
@@ -29,26 +29,26 @@
       "productionCandidateAudit": "385_of_385_Baby_and_Costume_routes_passed against the production database; failed 0 and noCta 0"
     },
     "productionGate": "Immutable release 309afe0 is active on port 3011 with a 512MB Affiliate-only PM2 limit. Candidate validation passed 385 of 385 Baby and production-database Costume commercial pages. The Momcozy production origin/current-runtime validation exposes a desktop-and-mobile sticky-commerce anchor with the exact B0DKHCWJ5G merchant destination and madababy-20 tag; all seven host-aware origin homepages return HTTP 200.",
-    "discovery": "Twenty-nine materially changed URLs were accepted by IndexNow with HTTP 200. The 151 soft-launch cohort remains excluded from sitemap, IndexNow and external distribution."
+    "discovery": "Release 6eec199 added all 151 qualified breadth pages to five sitemaps. Search Console accepted and immediately read all five as Success with the exact new counts. IndexNow accepted 153 exact URLs: 151 breadth pages plus the two Deco intent-repair pages."
   },
   "release": {
-    "active": "309afe0",
-    "commit": "309afe0537bdadcfade20eae7aa26cac6b463348",
-    "packageCommit": "bfdf52c57a90a1b822c203c6d55e95def108de05",
+    "active": "6eec199",
+    "commit": "6eec1993dd937f433c220b56ba853d41cd222f92",
+    "packageCommit": "6eec1993dd937f433c220b56ba853d41cd222f92",
     "branch": "lyd-0609",
-    "pushed": true,
-    "artifactBytes": 57925805,
-    "artifactSha256": "4bb7a4e690d9984eda7750c66fbf725f36a802cf95573f750bc4ed6601cfa784",
+    "pushed": false,
+    "artifactBytes": 60212969,
+    "artifactSha256": "c61d7dda3ef3ba39dc6bff1dbdd6239cabda57338629f88f7e56545bfc3e5eb3",
     "artifactLocalPath": "apps/affiliate/.release/affiliate-runtime.tgz",
-    "productionPath": "/srv/madabase-affiliate/releases/309afe0/apps/affiliate",
-    "rollback": "f44ca34",
+    "productionPath": "/srv/madabase-affiliate/releases/6eec199",
+    "rollback": "sec-20260820-next15523",
     "sevenPublicAffiliateHostsHttp200": true,
-    "pm2Saved": true,
-    "candidateRemoved": true,
-    "ctaReleaseIndexNowAcceptedUrls": 0,
-    "priorDiscoveryRepairIndexNowAcceptedUrls": 29,
-    "affiliatePm2MemoryLimit": "512M",
-    "releaseNote": "No URL, title, canonical, sitemap inventory or primary search intent changed, so no new IndexNow submission was made. Cloudflare Purge Everything was not used. The 309afe0 origin is active and the normal public Momcozy URL now returns a Cloudflare HIT on the current page-e416528e947025ac.js review chunk. That public chunk contains sticky-commerce-dock, lg:right-6 and lg:w-[22rem], and contains no lg:hidden. A browser that cached pre-release HTML can still require a hard refresh under the four-hour browser max-age."
+    "serviceManager": "systemd",
+    "service": "madabase-affiliate.service",
+    "loopbackPort": 3011,
+    "indexNowAcceptedUrls": 153,
+    "googleSitemapsSubmitted": 5,
+    "releaseNote": "The server did not build this release. The locally built Linux x64 archive was hash-matched, extracted into an immutable release, and activated under the non-root madabase user. The one-time SSH key was removed after deployment. Public validation passed all 151 breadth pages, exact sitemap counts, both repaired Deco pages and all seven host-aware homepages."
   },
   "pendingMainRelease": {
     "status": "production_deployed_and_verified",
@@ -64,13 +64,12 @@
   },
   "serverStability": {
     "serverMemoryApprox": "1.6GB",
-    "pm2MaxMemoryRestart": "Affiliate 512M; Main 350M",
-    "releaseRestartCountObserved": 0,
+    "serviceModel": "All five site applications run as non-root systemd services bound to loopback; PM2 is disabled.",
+    "affiliateObservedMemory": "263.6MiB after the full public audit and search-engine submissions; server available memory was 617MiB and swap remained unused",
     "unstableRestarts": 0,
-    "errorLog": "No current-release error was added. The visible sharp lines are historical; home-error.log mtime is 2026-07-23 10:08:27 +08:00.",
-    "observedMemoryApprox": "After candidate removal, Affiliate was about 255MB, Main about 78MB and server available memory about 502MB. Candidate completed the 385-page Baby and Costume audit with zero restarts.",
-    "cause": "The previous 350MB Affiliate cap caused two stable max-memory recycles even though public pages stayed healthy. Owner direction makes Affiliate the primary server workload; releases f44ca34 and 309afe0 therefore retain the Affiliate-only 512MB limit while Main and other services keep their existing limits.",
-    "rule": "Affiliate has first claim on server capacity. Run full high-concurrency audits on a candidate or local immutable runtime; use bounded sampling on production, and reduce or defer non-revenue services before lowering the Affiliate limit."
+    "availableMemoryBeforeRelease": "approximately 440MB with 2GB swap unused",
+    "releaseHealth": "madabase-affiliate.service is active, listens only on 127.0.0.1:3011 and returned HTTP 200 for all seven affiliate hosts. The first immediate curl occurred before the listener was ready; the service was healthy 19 seconds later and remained stable.",
+    "rule": "Affiliate has first claim on server capacity. Build and run full audits locally, use bounded low-concurrency production checks, and reduce or defer non-revenue services before constraining Affiliate."
   },
   "searchBaseline": {
     "latest24Hours": {
@@ -139,11 +138,11 @@
       "gate": "Do not change these titles before Day 7 on 2026-08-20."
     },
     "softLaunch151": {
-      "state": "public_indexable_internally_linked_sitemap_excluded",
+      "state": "public_indexable_sitemap_included_google_and_indexnow_submitted",
       "complete7Days": { "exposedUrls": 2, "zeroImpressionUrls": 149, "impressions": 4, "position": 8.5 },
       "latest24Hours": { "exposedUrls": 4, "impressions": 5, "position": 45.4 },
       "previous24Hours": { "exposedUrls": 4, "impressions": 5, "position": 15.2 },
-      "gate": "Remain sitemap- and IndexNow-excluded. Run the exact Day-7 zero-URL inspection on 2026-08-20."
+      "gate": "Full index release completed on 2026-08-20 after owner authorization and the technical gate. Recheck the exact 151-page cohort on 2026-08-27; do not resubmit or rewrite during the first seven days without a technical or merchant defect."
     }
   },
   "commerceMeasurement": {
@@ -194,11 +193,11 @@
     "newSoftLaunch": {
       "pages": 151,
       "distribution": { "network": 25, "smarthome": 25, "homeoffice": 33, "baby": 31, "pet": 37 },
-      "state": "public_indexable_internally_linked_sitemap_excluded",
+      "state": "public_indexable_sitemap_included_google_and_indexnow_submitted",
       "runtimePassed": 151,
-      "sitemapIncluded": 0,
-      "sitemapSubmitted": false,
-      "indexNowSubmitted": false,
+      "sitemapIncluded": 151,
+      "sitemapSubmitted": true,
+      "indexNowSubmitted": true,
       "externalDistribution": false
     },
     "existingRankingRefresh": {
@@ -211,15 +210,15 @@
     }
   },
   "sitemaps": {
-    "network": 232,
-    "smarthome": 249,
-    "homeoffice": 254,
-    "baby": 233,
-    "pet": 221,
+    "network": 257,
+    "smarthome": 274,
+    "homeoffice": 287,
+    "baby": 264,
+    "pet": 258,
     "style": 76,
     "costume": 145,
     "governedCategoryLastmod": "2026-08-16",
-    "softLaunch151Included": 0,
+    "softLaunch151Included": 151,
     "costumePilotIncluded": true,
     "firstExpansionClickPageIncluded": true
   },
@@ -295,8 +294,8 @@
     }
   },
   "doNotDo": [
-    "Do not add the 151 soft-launch pages to sitemap, IndexNow or external distribution before their Day-7 gate on 2026-08-20.",
-    "Do not treat sitemap exclusion as noindex.",
+    "Do not resubmit or rewrite the 151-page sitemap release before its 2026-08-27 gate unless a technical, merchant or indexability defect appears.",
+    "Do not describe the 151-page cohort as sitemap-excluded after release 6eec199; all 151 are now included and submitted.",
     "Do not report the 410-URL zero-exposure inspection as complete while 294 rows remain uninspected.",
     "Do not change the three active title experiments before 2026-08-20.",
     "Do not broadly rewrite the 37 protected winners or 21 held pages without page-filtered evidence.",
