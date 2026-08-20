@@ -149,7 +149,7 @@ function buildGuide(product: ProductRecord): Guide {
     category: family.category,
     publicationStatus: "published",
     releaseCandidate,
-    sitemapExcluded: true,
+    sitemapExcluded: false,
     updatedAt,
     image: `/images/affiliate/breadth-${family.site}-${family.familySlug}.webp`,
     imageAlt: `Editorial buying worksheet for ${family.familyName.toLowerCase()} showing fit, compatibility, ownership checks, and the simpler alternative`,

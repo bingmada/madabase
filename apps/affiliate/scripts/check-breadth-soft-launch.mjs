@@ -12,7 +12,7 @@ const domains = {
   baby: "baby.madabase.com",
   pet: "pets.madabase.com",
 };
-const expectedSitemapCounts = { network: 232, smarthome: 249, homeoffice: 254, baby: 233, pet: 221 };
+const expectedSitemapCounts = { network: 257, smarthome: 274, homeoffice: 287, baby: 264, pet: 258 };
 const productFiles = Object.keys(domains).map((site) => `breadth-draft-${site}-product-research.json`);
 const products = productFiles.flatMap((name) => JSON.parse(fs.readFileSync(path.join(affiliateDir, "config", name), "utf8")).products);
 const requestedConcurrency = Number(process.env.BREADTH_AUDIT_CONCURRENCY ?? (publicAudit ? 2 : 8));
@@ -87,7 +87,7 @@ async function worker() {
     if ((html.match(/<h1\b/gi) ?? []).length !== 1) errors.push("not exactly one H1");
     if (canonicalFrom(html) !== publicUrl) errors.push(`canonical ${canonicalFrom(html) ?? "missing"}`);
     if (/<meta\b[^>]*name=["']robots["'][^>]*content=["'][^"']*noindex/i.test(html)) errors.push("noindex present");
-    if (sitemap?.has(publicUrl)) errors.push("soft-launch URL is present in sitemap");
+    if (!sitemap?.has(publicUrl)) errors.push("released URL is missing from sitemap");
     if (!(html.match(/type=["']application\/ld\+json["']/gi) ?? []).length) errors.push("missing JSON-LD");
     if (!new RegExp(`<img\\b[^>]*(?:src|alt)=["'][^"']*breadth-${product.site}-${product.familySlug}`, "i").test(html)) errors.push("dedicated image missing");
     if (!normalizedHtml.includes(product.asin)) errors.push(`ASIN ${product.asin} missing`);
@@ -108,11 +108,11 @@ const report = {
   failed: failures.length,
   bySite: Object.fromEntries(Object.keys(domains).map((site) => [site, products.filter((item) => item.site === site).length])),
   sitemapCounts: Object.fromEntries([...sitemapByHost].map(([host, urls]) => [host, urls.size])),
-  sitemapIncludedSoftLaunchUrls: products.filter((product) => sitemapByHost.get(domains[product.site])?.has(`https://${domains[product.site]}/guides/${product.familySlug}-buying-guide`)).length,
+  sitemapIncludedReleasedUrls: products.filter((product) => sitemapByHost.get(domains[product.site])?.has(`https://${domains[product.site]}/guides/${product.familySlug}-buying-guide`)).length,
   failures,
 };
 
-console.log(`${publicAudit ? "Public" : "Local"} breadth soft-launch audit`);
+console.log(`${publicAudit ? "Public" : "Local"} breadth index-release audit`);
 console.log(JSON.stringify(report, null, 2));
 if (failures.length) process.exit(1);
-console.log(`\n${publicAudit ? "Public" : "Local"} breadth soft-launch audit passed.`);
+console.log(`\n${publicAudit ? "Public" : "Local"} breadth index-release audit passed.`);

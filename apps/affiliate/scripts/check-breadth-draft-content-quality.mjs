@@ -103,11 +103,11 @@ const contentSource = await readFile(join(affiliateRoot, "lib/breadth-draft-120-
 const inventorySource = await readFile(join(affiliateRoot, "lib/amazon-family-products.ts"), "utf8");
 const sitemapSource = await readFile(join(affiliateRoot, "app/sitemap.ts"), "utf8");
 if (!contentSource.includes('publicationStatus: "published"')) problems.push("guide module does not explicitly publish the cohort");
-if (!contentSource.includes("sitemapExcluded: true")) problems.push("guide module does not explicitly exclude the soft-launch cohort from sitemap");
+if (!contentSource.includes("sitemapExcluded: false")) problems.push("guide module does not explicitly include the released cohort in sitemap");
 if (!contentSource.includes("releaseCandidate")) problems.push("guide module does not record a release candidate");
 if (!contentSource.includes("relatedDraftGuides") || !contentSource.includes("communityEvidence") || !contentSource.includes("comparisonTable")) problems.push("guide module is missing required editorial structures");
 if (!inventorySource.includes('publicationStatus: "published" as const')) problems.push("Amazon inventory does not publish cohort product anchors");
-if (!sitemapSource.includes("siteGuides(site.key).filter((item) => !item.sitemapExcluded)")) problems.push("sitemap does not explicitly exclude soft-launch guides");
+if (!sitemapSource.includes("siteGuides(site.key).filter((item) => !item.sitemapExcluded)")) problems.push("sitemap does not honor per-page sitemap eligibility");
 
 const missingCommunityKeys = keys.filter((key) => !communityByKey.has(key));
 if (missingCommunityKeys.length > 0) warnings.push(`${missingCommunityKeys.length} pages still require a named, reviewed community thread before publication`);
@@ -116,7 +116,7 @@ if (pendingProductCount > 0) warnings.push(`${pendingProductCount} eligible rese
 
 const bySite = Object.fromEntries(["network", "smarthome", "homeoffice", "baby", "pet"].map((site) => [site, products.filter((item) => item.site === site).length]));
 const result = {
-  status: problems.length === 0 ? "soft_launch_valid" : "invalid",
+  status: problems.length === 0 ? "index_release_valid" : "invalid",
   selected: products.length,
   bySite,
   uniqueFamilies: new Set(keys).size,

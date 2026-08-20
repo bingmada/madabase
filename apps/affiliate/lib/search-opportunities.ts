@@ -25,6 +25,7 @@ const decoClusterUpdatedAt = "July 28, 2026";
 const portfolioBatchUpdatedAt = "July 28, 2026";
 const cohortReviewUpdatedAt = "August 6, 2026";
 const rankingReviewUpdatedAt = "August 13, 2026";
+const decoBe25IntentRepairUpdatedAt = "August 20, 2026";
 
 export const searchOpportunities: SearchOpportunity[] = [
   {
@@ -40,9 +41,9 @@ export const searchOpportunities: SearchOpportunity[] = [
     site: "network",
     kind: "product",
     slug: "tp-link-deco-be25-wifi-7-mesh",
-    query: "Is Deco BE25 enough, or should you buy Deco BE63?",
-    answer: "Choose BE25 when two 2.5GbE ports per node, dual-band coverage, and Ethernet backhaul fit the plan. Move to BE63 when its 6GHz radio, stronger wireless-backhaul options, or four 2.5GbE ports per node solve a specific constraint; the Wi-Fi 7 label alone does not justify the upgrade.",
-    updatedAt: decoClusterUpdatedAt,
+    query: "Is Deco BE25 a good fit for a wired-backhaul Wi-Fi 7 home?",
+    answer: "Deco BE25 is a strong value fit when two 2.5GbE ports per node are enough and Ethernet can carry backhaul. Check the planned node count, cable path, client mix, room placement, and exact pack before buying; use the dedicated BE25-versus-BE63 comparison only when 6GHz or four ports per node is the actual decision.",
+    updatedAt: decoBe25IntentRepairUpdatedAt,
     preferredPaths: ["/best/deco-be25-vs-be63", "/guides/deco-be63-ethernet-backhaul-setup", "/reviews/tp-link-deco-be63-wifi-7-mesh"],
   },
   {
@@ -67,9 +68,9 @@ export const searchOpportunities: SearchOpportunity[] = [
     site: "network",
     kind: "roundup",
     slug: "deco-be25-vs-be63",
-    query: "Does Deco BE63's 6GHz band justify upgrading from BE25?",
-    answer: "Pay for BE63 when 6GHz improves a viable wireless-backhaul path, current 6GHz clients need that band, or four 2.5GbE ports avoid another switch. BE25 remains the value choice when Ethernet carries backhaul, two ports per node are enough, and the home is mostly using 5GHz clients.",
-    updatedAt: decoClusterUpdatedAt,
+    query: "Deco BE25 vs BE63: is 6GHz or four 2.5GbE ports worth the upgrade?",
+    answer: "Choose BE63 when 6GHz improves a viable wireless-backhaul path, current 6GHz clients need that band, or four 2.5GbE ports per node avoid another switch. Choose BE25 when Ethernet carries backhaul, two ports per node are enough, and lower cost matters more than a third wireless band.",
+    updatedAt: decoBe25IntentRepairUpdatedAt,
     preferredPaths: ["/reviews/tp-link-deco-be25-wifi-7-mesh", "/reviews/tp-link-deco-be63-wifi-7-mesh", "/guides/deco-be63-ethernet-backhaul-setup"],
   },
   {

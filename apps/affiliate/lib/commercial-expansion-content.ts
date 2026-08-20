@@ -7,8 +7,8 @@ export const commercialExpansionProducts: Product[] = [
     site: "network",
     slug: "tp-link-deco-be25-wifi-7-mesh",
     asin: "B0DKVDMPT9",
-    seoTitle: "TP-Link Deco BE25 Review: 2.5GbE Ports, Backhaul & BE63 Alternative",
-    updatedAt: "July 21, 2026",
+    seoTitle: "TP-Link Deco BE25 Review: Dual-Band Wi-Fi 7 & 2.5GbE",
+    updatedAt: "August 20, 2026",
     name: "TP-Link Deco BE25 Wi-Fi 7 Mesh (2-Pack)",
     brand: "TP-Link",
     category: "wifi",
@@ -473,7 +473,7 @@ export const commercialExpansionProducts: Product[] = [
 
 export const commercialExpansionRoundups: Roundup[] = [
   {
-    site: "network", slug: "deco-be25-vs-be63", seoTitle: "Deco BE25 vs BE63: Which Wi-Fi 7 Mesh Should You Buy?", updatedAt: "July 18, 2026", title: "Deco BE25 vs BE63: 6GHz, Ports and Which Wi-Fi 7 Mesh to Buy", dek: "Compare Deco BE25 vs BE63 by 6GHz, 2.5GbE ports, wired or wireless backhaul, equal pack pricing, and the upgrade a real home will notice.", category: "wifi",
+    site: "network", slug: "deco-be25-vs-be63", seoTitle: "Deco BE25 vs BE63: 6GHz, Ports & Best Value", updatedAt: "August 20, 2026", title: "Deco BE25 vs BE63: 6GHz, Ports and Best Value", dek: "Compare Deco BE25 vs BE63 by 6GHz, 2.5GbE ports, wired or wireless backhaul, equal pack pricing, and the upgrade a real home will notice.", category: "wifi",
     intent: "Choose the least expensive Deco that still fits the home's backhaul and wired-device plan.",
     intro: "BE25 is the lower-cost dual-band choice, while BE63 adds a 6GHz radio and four 2.5GbE ports per node. The useful question is not which number is larger; it is whether the home relies on wireless backhaul, needs more wired ports, or would gain more from spending the difference on Ethernet and placement.",
     decisionGuide: [{ label: "Lowest sensible price", detail: "Choose BE25 when dual-band mesh, two 2.5GbE ports, and the planned node count are enough." }, { label: "Wireless backhaul", detail: "Choose BE63 when 6GHz gives the node layout a cleaner high-capacity path." }, { label: "More wired devices", detail: "BE63's four 2.5GbE ports per node reduce the immediate need for a switch." }, { label: "Existing Ethernet", detail: "BE25 becomes more compelling when wired backhaul removes the need for a dedicated 6GHz relay path." }, { label: "Mostly Wi-Fi 6 clients", detail: "Buy for coverage and port layout; neither Wi-Fi 7 label upgrades an older client radio." }],
