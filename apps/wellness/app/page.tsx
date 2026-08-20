@@ -2,8 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, ExternalLink } from "lucide-react";
 import {
-  guides,
-  pendingPartners,
+  approvedPartners,
   principles,
   productPicks,
   wellnessCategories,
@@ -15,7 +14,7 @@ export default function Home() {
       <section className="hero">
         <Image
           src="/images/wellness/hero.png"
-          alt="Premium unbranded adult wellness products arranged in a discreet editorial still life"
+          alt="Unbranded lingerie and sleepwear arranged in a calm editorial still life"
           fill
           priority
           sizes="100vw"
@@ -23,19 +22,19 @@ export default function Home() {
         />
         <div className="hero-scrim" />
         <div className="hero-content">
-          <p className="kicker">Adult wellness guides for readers 18+</p>
-          <h1>Madabase Wellness</h1>
+          <p className="kicker">Lingerie and sleepwear buying guides</p>
+          <h1>Madabase Intimates</h1>
           <p>
-            Calm, evidence-led buying guidance for intimacy products, with
-            attention to materials, hygiene, shipping privacy, and beginner fit.
+            Calm, practical guidance for choosing lingerie and sleepwear, with
+            attention to fit, fabric, care, and the occasion you are shopping for.
           </p>
           <div className="hero-actions">
-            <Link className="button button-primary" href="/guides/body-safe-materials">
-              Start With Materials
+            <Link className="button button-primary" href="/categories">
+              Browse Collections
               <ArrowRight size={18} aria-hidden="true" />
             </Link>
-            <Link className="button button-secondary" href="/categories">
-              Browse Categories
+            <Link className="button button-secondary" href="/methodology">
+              Our Method
             </Link>
           </div>
         </div>
@@ -44,23 +43,22 @@ export default function Home() {
       <section className="band intro-grid">
         <div>
           <p className="section-label">Positioning</p>
-          <h2>Built as a health and care resource, not an adult-content site.</h2>
+          <h2>Built as a practical fashion and comfort resource.</h2>
         </div>
         <p>
-          The editorial boundary is simple: no explicit media, no arousal
-          claims, no under-18 audience, and no medical promises. Product coverage
-          is limited to practical purchase criteria that a careful adult buyer
-          can verify before checkout.
+          The editorial boundary is simple: no explicit media, no suggestive
+          claims, and no invented product testing. Coverage stays with practical
+          purchase criteria a careful shopper can verify before checkout.
         </p>
       </section>
 
       <section className="section">
         <div className="section-heading">
           <p className="section-label">Catalog</p>
-          <h2>A Full Category Map Before Links Go Live</h2>
+          <h2>Start With The Right Collection</h2>
           <p>
-            The site now mirrors a real retailer-style taxonomy while keeping
-            decisions editorial: format first, fit second, merchant link last.
+            Choose by silhouette, routine, and layering needs first. Brand links
+            come only after the recommendation context is clear.
           </p>
         </div>
         <div className="category-grid home-category-grid">
@@ -81,30 +79,6 @@ export default function Home() {
         </Link>
       </section>
 
-      <section className="section">
-        <div className="section-heading">
-          <p className="section-label">Guides</p>
-          <h2>Ready For The First Publish</h2>
-        </div>
-        <div className="guide-grid">
-          {guides.map((guide) => {
-            const Icon = guide.icon;
-            return (
-              <Link className="guide-card" href={guide.slug} key={guide.slug}>
-                <span className="icon-chip">
-                  <Icon size={20} aria-hidden="true" />
-                </span>
-                <span className="guide-meta">
-                  {guide.eyebrow} · {guide.minutes}
-                </span>
-                <h3>{guide.title}</h3>
-                <p>{guide.description}</p>
-              </Link>
-            );
-          })}
-        </div>
-      </section>
-
       <section className="band principles">
         {principles.map((principle) => {
           const Icon = principle.icon;
@@ -120,12 +94,12 @@ export default function Home() {
 
       <section className="section">
         <div className="section-heading">
-          <p className="section-label">Merchant Roadmap</p>
-          <h2>Product Picks Ready For Multi-Partner Link-In</h2>
+          <p className="section-label">Approved Partner</p>
+          <h2>Avidlove Collection Coverage Is Ready</h2>
           <p>
-            LELO is the first mapped merchant, but the structure is ready for
-            Lovehoney, We-Vibe, Bellesa, and other direct programs. Local
-            unbranded art and disabled CTAs stay in place until approval.
+            Avidlove has approved the site through CJ. Collection links point to
+            the retailer&apos;s main storefront while individual product details are
+            still verified before they are added.
           </p>
         </div>
         <div className="product-grid">
@@ -139,12 +113,24 @@ export default function Home() {
               </p>
               <h3>{product.name}</h3>
               <p>{product.bestFor}</p>
-              <div className="disabled-cta">{product.status}</div>
+              {product.affiliateUrl ? (
+                <a
+                  className="button button-primary"
+                  href={product.affiliateUrl}
+                  rel="sponsored nofollow"
+                  target="_blank"
+                >
+                  View At {product.merchant}
+                  <ExternalLink size={16} aria-hidden="true" />
+                </a>
+              ) : (
+                <div className="disabled-cta">{product.status}</div>
+              )}
             </article>
           ))}
         </div>
-        <Link className="text-link" href="/best/premium-wellness-catalog">
-          View the full premium wellness catalog
+        <Link className="text-link" href="/categories">
+          Explore all collections
           <ArrowRight size={16} aria-hidden="true" />
         </Link>
       </section>
@@ -152,18 +138,18 @@ export default function Home() {
       <section className="section partner-section">
         <div className="section-heading">
           <p className="section-label">Partners</p>
-          <h2>Merchant Links Are Intentionally Disabled</h2>
+          <h2>Partner Links Are Verified Before Activation</h2>
           <p>
-            These slots are ready for approved direct partner programs. No
-            Amazon links or Amazon tracking IDs are used in this project.
+            Only approved direct partner programs are used here. No Amazon links
+            or Amazon tracking IDs are used in this project.
           </p>
         </div>
         <div className="partner-list">
-          {pendingPartners.map((partner) => (
+          {approvedPartners.map((partner) => (
             <div className="partner-row" key={partner}>
               <span>{partner}</span>
               <span className="pending">
-                Application pending
+                CJ approved - collection link active
                 <ExternalLink size={14} aria-hidden="true" />
               </span>
             </div>
@@ -173,16 +159,16 @@ export default function Home() {
 
       <section className="band checklist-band">
         <div>
-          <p className="section-label">Launch Gate</p>
-          <h2>Minimum Pages Before Applying</h2>
+          <p className="section-label">Publishing Standard</p>
+          <h2>What Must Be Verified Before A Link Goes Live</h2>
         </div>
         <ul className="check-list">
           {[
-            "Homepage and guide pages published",
+            "Collection page and retailer destination match",
             "Affiliate disclosure visible",
             "Editorial policy and methodology live",
             "Privacy and contact pages live",
-            "No external merchant links until approval",
+            "Current tracking link verified in CJ",
           ].map((item) => (
             <li key={item}>
               <CheckCircle2 size={18} aria-hidden="true" />

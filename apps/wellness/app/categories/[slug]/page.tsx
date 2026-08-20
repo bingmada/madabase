@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, CheckCircle2 } from "lucide-react";
+import { ArrowLeft, CheckCircle2, ExternalLink } from "lucide-react";
 import { productPicks, site, wellnessCategories } from "@/app/site-data";
 
 type PageProps = {
@@ -85,7 +85,19 @@ export default async function Page({ params }: PageProps) {
                   <p>{product.skipIf}</p>
                 </div>
               </div>
-              <div className="disabled-cta">Affiliate link pending</div>
+              {product.affiliateUrl ? (
+                <a
+                  className="button button-primary"
+                  href={product.affiliateUrl}
+                  rel="sponsored nofollow"
+                  target="_blank"
+                >
+                  View At {product.merchant}
+                  <ExternalLink size={16} aria-hidden="true" />
+                </a>
+              ) : (
+                <div className="disabled-cta">{product.status}</div>
+              )}
             </div>
           </article>
         ))}

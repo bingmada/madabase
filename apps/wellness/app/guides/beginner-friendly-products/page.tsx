@@ -14,6 +14,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/guides/beginner-friendly-products",
   },
+  robots: { index: false, follow: false },
 };
 
 export default function Page() {
