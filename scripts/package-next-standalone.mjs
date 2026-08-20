@@ -49,6 +49,21 @@ rmSync(releaseRoot, { recursive: true, force: true });
 mkdirSync(runtimeRoot, { recursive: true });
 cpSync(standaloneRoot, runtimeRoot, { recursive: true });
 
+function removeTracedEnvironmentFiles(root) {
+  for (const entry of readdirSync(root, { withFileTypes: true })) {
+    const path = join(root, entry.name);
+    if (entry.isDirectory()) {
+      removeTracedEnvironmentFiles(path);
+      continue;
+    }
+    if (entry.name === ".env" || entry.name.startsWith(".env.")) {
+      rmSync(path, { force: true });
+    }
+  }
+}
+
+removeTracedEnvironmentFiles(runtimeRoot);
+
 const targetNativeDependencies = [];
 const sharpTarget = process.env.NEXT_STANDALONE_SHARP_TARGET;
 const sharpSourceRoot = process.env.NEXT_STANDALONE_SHARP_SOURCE
@@ -228,6 +243,7 @@ const manifest = {
     "Build this archive off-server and upload only its contents.",
     "Use Node 20.x on both the build machine and production server.",
     "When a native runtime target is configured, keep the recorded target packages in the archive.",
+    "Runtime secrets must be injected by the service manager; environment files are excluded.",
     "Do not upload build caches, source files, or development dependencies.",
   ],
 };
