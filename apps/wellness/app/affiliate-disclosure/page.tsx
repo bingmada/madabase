@@ -15,7 +15,7 @@ export default function Page() {
         <p className="section-label">Disclosure</p>
         <h1>Affiliate Disclosure</h1>
         <p>
-          Some future pages may include paid links to approved adult-wellness
+          Some pages may include paid links to approved lingerie and sleepwear
           retailers.
         </p>
       </header>
@@ -27,8 +27,8 @@ export default function Page() {
         </p>
         <p>
           This project does not use Amazon Associates links or Amazon tracking
-          IDs. Merchant links are disabled until direct partner programs are
-          approved.
+          IDs. Avidlove is approved through CJ; links remain disabled until each
+          retailer destination and tracking URL is verified.
         </p>
       </section>
     </main>

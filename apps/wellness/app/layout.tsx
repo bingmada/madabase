@@ -37,9 +37,7 @@ export default function RootLayout({
           </Link>
           <nav className="nav" aria-label="Primary">
             <Link href="/categories">Categories</Link>
-            <Link href="/guides/body-safe-materials">Materials</Link>
-            <Link href="/guides/cleaning-and-storage">Care</Link>
-            <Link href="/best/premium-wellness-catalog">Catalog</Link>
+            <Link href="/categories">Collections</Link>
             <Link href="/methodology">Method</Link>
             <Link href="/affiliate-disclosure">Disclosure</Link>
           </nav>
@@ -48,7 +46,7 @@ export default function RootLayout({
         <footer className="site-footer">
           <div>
             <strong>{site.name}</strong>
-            <p>Adult wellness buying guidance for readers 18+.</p>
+            <p>Practical lingerie and sleepwear buying guidance.</p>
           </div>
           <nav aria-label="Footer">
             <Link href="/about">About</Link>

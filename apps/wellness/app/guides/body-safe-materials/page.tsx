@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/guides/body-safe-materials",
   },
+  robots: { index: false, follow: false },
 };
 
 export default function Page() {

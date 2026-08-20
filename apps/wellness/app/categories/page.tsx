@@ -6,7 +6,7 @@ import { productPicks, wellnessCategories } from "@/app/site-data";
 export const metadata: Metadata = {
   title: "Categories",
   description:
-    "Browse adult wellness categories by product format, care routine, partner use, and buyer fit.",
+    "Browse lingerie and sleepwear collections by silhouette, routine, layering, and buyer fit.",
   alternates: {
     canonical: "/categories",
   },
@@ -17,11 +17,11 @@ export default function Page() {
     <main className="guide-page wide-page">
       <header className="page-hero">
         <p className="section-label">Categories</p>
-        <h1>Shop The Decision Path First</h1>
+        <h1>Shop The Collection That Fits Your Routine</h1>
         <p>
-          A complete adult-wellness catalog should help readers choose the right
-          product type before sending them to a retailer. These categories keep
-          the site broad while staying practical and non-explicit.
+          Start with the silhouette and occasion that make sense for you. These
+          collections keep the decision practical before sending you to an
+          approved retailer.
         </p>
       </header>
       <section className="category-grid">

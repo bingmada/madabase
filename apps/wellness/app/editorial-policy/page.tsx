@@ -15,15 +15,15 @@ export default function Page() {
         <p className="section-label">Policy</p>
         <h1>Editorial Policy</h1>
         <p>
-          The site is written for adult readers who want careful, non-explicit
-          purchase guidance.
+          The site is written for readers who want careful, non-explicit
+          lingerie and sleepwear purchase guidance.
         </p>
       </header>
       <section className="legal-panel">
         <p>
-          We avoid explicit imagery, sensational language, arousal claims, and
-          medical promises. We do not target or collect knowingly from readers
-          under 18.
+          We avoid explicit imagery, sensational language, sexualized claims,
+          and medical promises. We do not target or collect knowingly from
+          readers under 18.
         </p>
         <p>
           Affiliate relationships do not control editorial conclusions. A

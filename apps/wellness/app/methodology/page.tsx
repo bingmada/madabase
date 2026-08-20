@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Methodology",
-  description: "How Madabase Wellness evaluates adult wellness products and retailers.",
+  description: "How Madabase Intimates evaluates lingerie and sleepwear retailers.",
   alternates: {
     canonical: "/methodology",
   },
@@ -29,16 +29,15 @@ export default function Page() {
         </p>
         <h2>Evaluation Criteria</h2>
         <p>
-          We prioritize surface material, waterproof rating, charging design,
-          cleaning burden, storage, warranty, discreet shipping, billing
-          descriptor, return policy, and whether the product has a clear fit and
-          clear skip reason.
+          We prioritize fabric composition, sizing transparency, coverage,
+          adjustability, care instructions, return policy, shipping clarity, and
+          whether the product has a clear fit and clear skip reason.
         </p>
         <h2>Retailer Criteria</h2>
         <p>
-          Retailer coverage favors programs with explicit adult-wellness
-          compliance, plain packaging language, visible support policies, and
-          stable affiliate tracking outside Amazon Associates.
+          Retailer coverage favors programs with clear sizing and support
+          policies, buyer-friendly return terms, and stable affiliate tracking
+          outside Amazon Associates.
         </p>
       </section>
     </main>
