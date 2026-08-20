@@ -227,7 +227,7 @@ export default async function CategoryPage({
   if (!category) notFound();
   const allCategoryGuides = prioritizeBySearchDemand(
     site.key,
-    siteGuides(site.key).filter((item) => item.category === slug),
+    siteGuides(site.key).filter((item) => item.category === slug && !item.discoveryExcluded),
     (item) => `/guides/${item.slug}`,
   );
   if (site.key === "costume") {
@@ -253,13 +253,13 @@ export default async function CategoryPage({
   const products = prioritizeBySearchDemand(
     site.key,
     siteProducts(site.key)
-      .filter((item) => item.category === slug && (site.key === "style" || item.offers.length > 0))
+      .filter((item) => item.category === slug && !item.discoveryExcluded && (site.key === "style" || item.offers.length > 0))
       .reverse(),
     (item) => `/reviews/${item.slug}`,
   );
   const roundups = prioritizeBySearchDemand(
     site.key,
-    siteRoundups(site.key).filter((item) => item.category === slug),
+    siteRoundups(site.key).filter((item) => item.category === slug && !item.discoveryExcluded),
     (item) => `/best/${item.slug}`,
   );
   const priorityGuidePaths = new Set(siteSearchDemandPriorities(site.key).map((item) => item.path));
@@ -270,7 +270,7 @@ export default async function CategoryPage({
     ),
     (item) => `/guides/${item.slug}`,
   );
-  const tools = siteTools(site.key).filter((item) => item.category === slug);
+  const tools = siteTools(site.key).filter((item) => item.category === slug && !item.discoveryExcluded);
   const commerceProduct = categoryCommerceProduct(site.key, slug);
   const categoryItems = [
     ...products.map((product) => ({ name: product.amazonTitle ?? product.name, path: `/reviews/${product.slug}` })),

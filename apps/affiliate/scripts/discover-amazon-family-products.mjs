@@ -203,8 +203,21 @@ function parseFamilies() {
   const source = fs.readFileSync(familySourcePath, "utf8");
   if (familySourcePath.endsWith(".json")) {
     const parsed = JSON.parse(source);
-    if (!Array.isArray(parsed.families)) throw new Error(`Family source ${familySourcePath} does not contain a families array`);
-    return parsed.families.filter((family) => supportedSites.has(family.site));
+    if (Array.isArray(parsed.families)) return parsed.families.filter((family) => supportedSites.has(family.site));
+    if (parsed.sites && typeof parsed.sites === "object") {
+      return Object.entries(parsed.sites).flatMap(([site, rows]) =>
+        supportedSites.has(site) && Array.isArray(rows)
+          ? rows.map(([familySlug, familyName]) => ({
+              site,
+              familySlug,
+              familyName,
+              category: "research-pending",
+              alternative: "the simpler existing setup",
+            }))
+          : [],
+      );
+    }
+    throw new Error(`Family source ${familySourcePath} does not contain a families array or site seed map`);
   }
   const pattern = /\{ site: "(network|smarthome|homeoffice|baby|pet|costume)", slug: "([^"]+)", name: "([^"]+)", category: "([^"]+)", alternative: "([^"]+)" \}/g;
   return [...source.matchAll(pattern)]

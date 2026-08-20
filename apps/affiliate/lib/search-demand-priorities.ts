@@ -181,8 +181,88 @@ const priorities: Record<SiteKey, SearchDemandPriority[]> = {
   costume: [],
 };
 
+// Search Console recovery queue reviewed on August 20, 2026. These are
+// existing URLs only. The order favors page-two opportunities, then
+// mid-pack/deep pages with qualified impressions, then zero-impression pages
+// that need a stronger crawl path. Click-bearing and top-ten pages are not
+// promoted merely to churn their titles.
+const homepageRecoveryPaths: Record<SiteKey, string[]> = {
+  network: [
+    "/guides/deco-be63-ethernet-backhaul-setup",
+    "/reviews/asus-zenwifi-bt6-wifi-7-mesh",
+    "/best/tl-sg105-m2-vs-ms305-vs-teg-s350",
+    "/best/netgear-gs308e-vs-tp-link-tl-sg108",
+    "/guides/deco-mesh-connection-drops-troubleshooting",
+    "/reviews/tp-link-deco-be67-wifi-7-mesh",
+    "/reviews/amazon-eero-6-mesh-wifi-system",
+    "/guides/wifi-7-vs-wifi-6-guide",
+    "/guides/is-deco-be67-worth-it-for-gigabit-internet",
+    "/guides/deco-be67-10gbe-network-checklist",
+    "/reviews/tp-link-ue302c-2-5g-usb-c-ethernet-adapter",
+    "/reviews/apc-be600m1-router-ups",
+  ],
+  smarthome: [
+    "/guides/tapo-p110m-home-assistant-energy-monitoring",
+    "/reviews/aqara-presence-sensor-fp2",
+    "/reviews/meross-msg100-homekit-garage-door-opener",
+    "/reviews/google-nest-learning-thermostat-4th-gen",
+    "/reviews/aqara-hub-m3",
+    "/reviews/schlage-encode-plus-smart-lock",
+    "/guides/matter-controller-vs-thread-border-router",
+    "/reviews/eufy-video-doorbell-e340",
+    "/reviews/tapo-p110m-energy-monitoring-smart-plug",
+    "/guides/tapo-p125m-vs-p110m",
+    "/reviews/ultraloq-bolt-se-smart-lock",
+    "/best/ring-battery-doorbell-plus-2nd-gen-vs-tapo-d210",
+  ],
+  homeoffice: [
+    "/reviews/caldigit-ts4-thunderbolt-dock",
+    "/reviews/flexispot-e7-mini-standing-desk",
+    "/reviews/anker-675-usb-c-docking-station",
+    "/best/best-standing-desks-for-small-spaces",
+    "/guides/portable-monitor-usb-c-dp-alt-mode-displaylink-guide",
+    "/reviews/branch-ergonomic-chair",
+    "/reviews/ergotron-hx-monitor-arm",
+    "/reviews/amazon-basics-monitor-arm",
+    "/guides/usb-c-dock-ports-explained-guide",
+    "/guides/usb-c-dock-vs-monitor-hub-guide",
+    "/guides/single-vs-dual-monitor-arm-walking-desk",
+    "/best/ergear-48x24-vs-flexispot-e7-mini",
+  ],
+  baby: [
+    "/reviews/ergobaby-omni-breeze-carrier",
+    "/guides/ergobaby-omni-breeze-forward-facing-age-guide",
+    "/best/best-bottle-sterilizers-and-dryers",
+    "/reviews/dr-browns-all-in-one-sterilizer-dryer",
+    "/guides/bottle-sterilizer-dryer-for-twins-capacity-guide",
+    "/guides/ergobaby-omni-breeze-vs-babybjorn-harmony-by-age",
+    "/reviews/momcozy-mw05-portable-milk-warmer",
+    "/reviews/momcozy-purehug-baby-carrier",
+    "/guides/ergobaby-omni-breeze-positions-by-age",
+    "/guides/ergobaby-omni-breeze-newborn-fit-checklist",
+    "/best/momcozy-purehug-vs-ergobaby-omni-breeze",
+    "/reviews/babybjorn-carrier-harmony",
+  ],
+  pet: [
+    "/reviews/furbo-360-dog-camera",
+    "/reviews/petlibro-granary-automatic-cat-feeder",
+    "/reviews/levoit-vital-200s-p-air-purifier",
+    "/guides/air-purifier-placement-near-litter-box",
+    "/reviews/coway-airmega-mighty2-air-purifier",
+    "/guides/automatic-feeder-buying-guide",
+    "/guides/cat-water-fountain-buying-guide",
+    "/guides/automatic-feeder-portion-size-guide",
+    "/guides/automatic-feeder-cleaning-checklist",
+    "/best/best-pet-cameras-for-apartments",
+    "/guides/furbo-360-placement-height-and-wifi-guide",
+    "/best/furbo-360-vs-wyze-cam-pan-v3-for-pets",
+  ],
+  style: [],
+  costume: [],
+};
+
 export function siteSearchDemandPriorities(site: SiteKey) {
-  const expanded = [
+  const baseline = [
     ...priorities[site],
     ...searchOpportunities
       .filter((item) => item.site === site)
@@ -192,8 +272,26 @@ export function siteSearchDemandPriorities(site: SiteKey) {
         decision: item.answer,
       })),
   ];
+  const byPath = new Map(baseline.map((item) => [item.path, item]));
+  const expanded = [
+    ...homepageRecoveryPaths[site].map((path) => byPath.get(path)),
+    ...baseline,
+  ].filter((item): item is SearchDemandPriority => Boolean(item));
 
   return expanded.filter((item, index) => expanded.findIndex((candidate) => candidate.path === item.path) === index);
+}
+
+export function siteSearchDemandHomepagePriorities(site: SiteKey, limit = 12) {
+  const all = siteSearchDemandPriorities(site);
+  const byPath = new Map(all.map((item) => [item.path, item]));
+  const ordered = [
+    ...homepageRecoveryPaths[site].map((path) => byPath.get(path)),
+    ...all,
+  ].filter((item): item is SearchDemandPriority => Boolean(item));
+
+  return ordered
+    .filter((item, index) => ordered.findIndex((candidate) => candidate.path === item.path) === index)
+    .slice(0, limit);
 }
 
 export function prioritizeBySearchDemand<T>(site: SiteKey, items: T[], pathFor: (item: T) => string) {

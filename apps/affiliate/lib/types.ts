@@ -9,6 +9,11 @@ type Publishable = {
   publicationStatus?: PublicationStatus;
   releaseCandidate?: string;
   sitemapExcluded?: boolean;
+  /**
+   * Keeps a public soft-launch URL out of home/category discovery modules.
+   * Use together with sitemapExcluded until the page passes the release gate.
+   */
+  discoveryExcluded?: boolean;
 };
 
 export type Score = {

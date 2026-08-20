@@ -1,11 +1,23 @@
 {
-  "updatedAt": "2026-08-20T18:33:00+08:00",
+  "updatedAt": "2026-08-20T18:57:45+08:00",
   "purpose": "Tracked cross-conversation snapshot. Read this before every affiliate operation, then read docs/affiliate-growth-state.json and docs/affiliate-growth-runbook.md for the mutable history and operating rules.",
   "mandatoryDailyScope": {
     "rule": "Every operating run must review conversion integrity, exact zero-exposure cohorts, the latest 24 hours versus the previous 24 hours, the latest complete 7-day window, active SEO experiments, merchant-link health, crawl discovery, production health and due measurement gates. Do not wait for the owner to ask about each item separately.",
     "conversionFirst": "Amazon or authorized CJ earnings are the objective. Every commercial page must retain a truthful, exact or clearly labeled fallback purchase path in the first viewport and pass the structural conversion audit.",
     "seoEvidenceRule": "Judge tracked URL cohorts exactly. Do not replace an exact 24-hour, 48-hour or cohort analysis with a site-wide headline metric, and do not rewrite protected winners or active title experiments before their gate.",
     "serverResourcePriority": "Affiliate is the primary revenue service and has first claim on server capacity. Keep its non-root systemd service stable on loopback port 3011; reduce or defer non-revenue workloads first when measured memory pressure appears."
+  },
+  "nextProductExpansionAndRankingRecovery20260820": {
+    "status": "locally_implemented_validated_not_deployed",
+    "ownerDirection": "Prepare about 100 additional product pages, initially outside sitemap, and comprehensively improve current low-ranking pages without disturbing recent releases or proven winners.",
+    "feasibility": "The previous 194-candidate breadth pool produced 151 qualified pages, a 77.84% yield. A fresh 130-seed pool now exists with 26 candidates each for Network, Smarthome, Homeoffice, Baby and Pet; it has no exact key collision with the prior pool or exact slug collision with current content. The target remains 20 selected pages per site after live qualification.",
+    "softLaunchPolicy": "New product pages remain outside sitemap, home/category discovery, Search Console submission and IndexNow until exact product, merchant, official evidence, original image, collision and reciprocal-link gates pass. The content model now has a separate discoveryExcluded flag so public QA URLs do not leak into strong discovery modules.",
+    "ranking118": "Latest complete window: 100 of 118 exposed, 18 zero-impression, 24 clicks, 2,705 impressions, 0.887% CTR and weighted position 19.79. Bands: 18 click-bearing pages, 25 zero-click top-ten pages, 31 zero-click page-two pages, 17 zero-click positions 20-40, 9 deeper than 40 and 18 zero-impression pages.",
+    "queryEvidence": "Search Console 28-day page filters showed small standing desks 286 impressions/position 60.3, bottle sterilizers 236/46.4, Wi-Fi 7 vs Wi-Fi 6 199/69.4, eero 6 167/46.3, portable-monitor DP Alt Mode 56/44.7, CalDigit TS4 134/12.7, Tapo P110M Home Assistant 207/17.1 with one click, and Furbo 360 215/19.1. Titles for click-bearing Tapo and the active Furbo/CalDigit experiment were protected.",
+    "localChanges": "Homepage buyer-question discovery is capped at 12 evidence-ranked recovery paths per site instead of exposing the full opportunity registry. Five query-supported pages received narrower answers, summaries or content sections: eero 6 identity, Wi-Fi 7 vs Wi-Fi 6, DP Alt Mode driver vs DisplayLink, compact/narrow standing desks and bottle sterilizer-dryers. The next-product checker now validates all 130 research-only seeds, site balance, prior-pool collisions, current-content collisions and disabled search-engine submission state.",
+    "productDiscoveryConstraint": "A bounded Amazon US public-search test for the first three Network seeds returned zero parseable product results. No ASIN was inferred or saved. The 130 seeds remain non-publishable until a usable merchant discovery path or individual exact-product verification is available.",
+    "validation": "Next-product cohort plan passed 12 release gates; 118-page ranking audit, full SEO audit, ESLint and optimized production build passed. Local runtime verified 757 of 757 governed category direct links and 1,289 of 1,289 five-site base commercial pages with zero CTA failures.",
+    "releaseBoundary": "No production deployment, sitemap mutation, IndexNow submission, Search Console submission or external distribution has been performed for these local changes."
   },
   "conversionIntegrityP0": {
     "status": "production_deployed_and_verified",

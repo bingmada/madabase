@@ -6,7 +6,7 @@ import { CostumeHome } from "@/components/CostumeExperience";
 import { siteGuides, siteProducts, siteRoundups, siteTools } from "@/lib/content";
 import { itemListSchema, organizationSchema, pageMetadata, websiteSchema } from "@/lib/seo";
 import { siteDecisionModules } from "@/lib/site-decision-modules";
-import { siteSearchDemandPriorities } from "@/lib/search-demand-priorities";
+import { siteSearchDemandHomepagePriorities } from "@/lib/search-demand-priorities";
 import { getCurrentSite } from "@/lib/sites";
 import type { SiteKey } from "@/lib/types";
 
@@ -74,12 +74,12 @@ export async function generateMetadata() {
 
 export default async function HomePage() {
   const site = await getCurrentSite();
-  const roundups = siteRoundups(site.key);
-  const products = siteProducts(site.key);
+  const roundups = siteRoundups(site.key).filter((item) => !item.discoveryExcluded);
+  const products = siteProducts(site.key).filter((item) => !item.discoveryExcluded);
   const linkedProducts = products.filter((product) => product.offers.length > 0);
-  const guides = siteGuides(site.key);
-  const tools = siteTools(site.key);
-  const demandPriorities = siteSearchDemandPriorities(site.key);
+  const guides = siteGuides(site.key).filter((item) => !item.discoveryExcluded);
+  const tools = siteTools(site.key).filter((item) => !item.discoveryExcluded);
+  const demandPriorities = siteSearchDemandHomepagePriorities(site.key);
   const decisionModules = siteDecisionModules(site.key);
   const priorityPaths = demandPriorities.map((item) => item.path);
   const featuredRoundups = demandLedSelection(

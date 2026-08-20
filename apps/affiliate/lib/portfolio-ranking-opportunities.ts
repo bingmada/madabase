@@ -29,10 +29,10 @@ export const portfolioRankingOpportunities: PortfolioRankingOpportunity[] = [
   },
   {
     site: "network", kind: "product", slug: "amazon-eero-6-mesh-wifi-system",
-    query: "Is Amazon eero 6 still a sensible mesh system for a normal home?",
-    answer: "Eero 6 is a simplicity-first dual-band mesh option, not a current high-end multi-gig or Wi-Fi 7 purchase. It can fit a modest connection and low-maintenance app workflow, but buyers who need wired backhaul ports at every node, advanced local controls, 6GHz, or multi-gig networking should compare a newer system before ordering.",
-    updatedAt: portfolioRankingRefreshAt,
-    preferredPaths: ["/best/best-mesh-wifi-for-apartments-and-homes", "/guides/mesh-wifi-node-placement-guide", "/guides/wifi-7-vs-wifi-6-guide"],
+    query: "What is eero 6, and is it a router, extender, or modem?",
+    answer: "An eero 6 router creates the home network and has two auto-sensing Gigabit Ethernet ports; an eero 6 extender expands that mesh and has no Ethernet ports. Neither one is a cable or fiber modem, so the internet provider's modem or ONT normally remains in the path. Check the exact pack composition before assuming every node can use Ethernet backhaul.",
+    updatedAt: "August 20, 2026",
+    preferredPaths: ["/best/best-mesh-wifi-for-apartments-and-homes", "/guides/mesh-wifi-node-placement-guide", "/guides/modem-router-combo-vs-separate-modem-router-guide", "/guides/wifi-7-vs-wifi-6-guide"],
   },
   {
     site: "network", kind: "roundup", slug: "netgear-gs308e-vs-tp-link-tl-sg108",
@@ -50,9 +50,9 @@ export const portfolioRankingOpportunities: PortfolioRankingOpportunity[] = [
   },
   {
     site: "network", kind: "guide", slug: "wifi-7-vs-wifi-6-guide",
-    query: "Is Wi-Fi 7 worth replacing a working Wi-Fi 6 network?",
+    query: "Wi-Fi 7 vs Wi-Fi 6: is the upgrade worth it?",
     answer: "Upgrade only when compatible clients, multi-gig wired ports, 6GHz conditions, congestion, latency, or mesh backhaul solve a measured limit. A Wi-Fi 7 label cannot improve an older client radio, a one-gigabit Ethernet path, poor node placement, weak ISP service, or a home that already has reliable Wi-Fi 6 coverage.",
-    updatedAt: portfolioRankingRefreshAt,
+    updatedAt: "August 20, 2026",
     preferredPaths: ["/guides/is-wifi-7-worth-it-for-1gbps-internet", "/best/best-wifi-7-routers-for-home-networks", "/guides/wifi-7-device-compatibility-checklist", "/guides/wifi-7-mesh-budget-midrange-premium-guide"],
   },
   {
@@ -106,9 +106,9 @@ export const portfolioRankingOpportunities: PortfolioRankingOpportunity[] = [
   },
   {
     site: "homeoffice", kind: "guide", slug: "portable-monitor-usb-c-dp-alt-mode-displaylink-guide",
-    query: "Will a USB-C laptop run a portable monitor through DP Alt Mode or DisplayLink?",
-    answer: "The USB-C connector shape proves neither video output nor sufficient power. Native DP Alt Mode requires a video-capable host port and suitable cable; DisplayLink sends compressed display data through USB and requires software. Confirm the exact laptop port, operating-system and admin restrictions, monitor input, power budget, cable, resolution and refresh target.",
-    updatedAt: portfolioRankingRefreshAt,
+    query: "Does DP Alt Mode need a driver, and when should a portable monitor use DisplayLink?",
+    answer: "DP Alt Mode normally uses the laptop GPU and existing graphics or USB-C controller support rather than a separate 'DP Alt Mode driver' download. DisplayLink is different: it sends software-driven graphics through USB and requires its own driver. Confirm that the exact USB-C port supports video before buying a one-cable portable monitor; use DisplayLink only when its driver and workflow limits are acceptable.",
+    updatedAt: "August 20, 2026",
     preferredPaths: ["/reviews/asus-zenscreen-mb16acv-portable-monitor", "/guides/macbook-dual-monitor-dock-chip-compatibility-guide", "/guides/usb-c-dock-ports-explained-guide"],
   },
   {
@@ -120,9 +120,9 @@ export const portfolioRankingOpportunities: PortfolioRankingOpportunity[] = [
   },
   {
     site: "homeoffice", kind: "roundup", slug: "best-standing-desks-for-small-spaces",
-    query: "Which standing desk actually fits a small room?",
+    query: "Which compact or narrow standing desk fits a small space?",
     answer: "Choose from the usable footprint, minimum seated height, desktop depth, monitor-arm clamp area, chair pullout, cable travel and door path—not width alone. A compact desk is a poor fit if the frame stays too high, the top is too shallow, or accessories consume the clearance that made it attractive.",
-    updatedAt: portfolioRankingRefreshAt,
+    updatedAt: "August 20, 2026",
     preferredPaths: ["/best/ergear-48x24-vs-flexispot-e7-mini", "/reviews/flexispot-e7-mini-standing-desk", "/reviews/ergear-48x24-electric-standing-desk", "/guides/48-vs-55-inch-desk-guide"],
   },
   {
@@ -141,9 +141,9 @@ export const portfolioRankingOpportunities: PortfolioRankingOpportunity[] = [
   },
   {
     site: "baby", kind: "roundup", slug: "best-bottle-sterilizers-and-dryers",
-    query: "Which bottle sterilizer and dryer fits the real daily bottle and pump-part load?",
+    query: "What is the best bottle sterilizer and dryer for bottles and pump parts?",
     answer: "Count the exact bottles, nipples, valves and compatible pump parts needed between cycles, then compare chamber fit, drying completeness, cycle time, counter clearance, descaling and storage. Cleaning, sanitizing and drying are separate jobs; choose the appliance that removes the repeated bottleneck under current public-health and manufacturer guidance.",
-    updatedAt: portfolioRankingRefreshAt,
+    updatedAt: "August 20, 2026",
     preferredPaths: ["/reviews/dr-browns-all-in-one-sterilizer-dryer", "/reviews/grownsy-bottle-sterilizer-dryer", "/reviews/chicco-advanced-sterilizer-dryer", "/guides/bottle-washer-vs-sterilizer-vs-dryer-guide"],
   },
   {

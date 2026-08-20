@@ -1497,13 +1497,18 @@ export const roundups: Roundup[] = [
   {
     site: "homeoffice",
     slug: "best-standing-desks-for-small-spaces",
+    seoTitle: "Best Small Standing Desks: 3 Compact and Narrow Picks",
     title: "Best Standing Desk for Small Spaces: 3 Compact Picks",
-    updatedAt: "July 26, 2026",
+    updatedAt: "August 20, 2026",
     dek: "Compare three compact standing desks for bedrooms and apartments by footprint, depth, wheels, monitor placement, cable travel, and stability.",
     category: "desks",
     intent: "Find a standing desk that fits a bedroom, rental, or apartment corner without feeling like a temporary folding table.",
     intro: "Small-space standing desks are easy to overbuy. A desk can have a great motor and still be wrong if the top is too shallow, the cable path snags when it rises, or the room no longer works as a bedroom after work. Start with the footprint, then check whether the desk can support your monitor, keyboard, and laptop routine without turning every accessory into a separate project.",
     sections: [
+      {
+        heading: "Smallest, compact, and narrow do not mean the same thing",
+        body: "A smallest-width desk may still have deep feet, a compact frame may accept several desktop sizes, and a narrow top can remain too tall at its minimum setting. Compare the complete working footprint, minimum height, usable depth, base shape, monitor-arm clearance, and chair path before treating any one dimension as the answer.",
+      },
       {
         heading: "Measure a narrow standing desk in four directions",
         body: "Check desktop width, usable depth, chair pullout, and vertical cable travel. Then add door swing, closet access, baseboards, and the monitor arm behind the desk. Taping the complete footprint in the room is more reliable than comparing a single advertised width.",
@@ -1701,8 +1706,8 @@ export const roundups: Roundup[] = [
   {
     site: "baby",
     slug: "best-bottle-sterilizers-and-dryers",
-    seoTitle: "Best Bottle Sterilizer and Dryer: 5 Picks Compared",
-    updatedAt: "July 26, 2026",
+    seoTitle: "Best Bottle Sterilizer and Dryer: 5 Picks for Pump Parts",
+    updatedAt: "August 20, 2026",
     title: "Best Bottle Sterilizer and Dryer: 5 Picks Compared",
     dek: "Compare five bottle sterilizer and dryer picks for bottles and pump parts by capacity, drying, counter space, cycle time, cleanup, and total cost.",
     category: "feeding",

@@ -161,8 +161,8 @@ export const networkProducts: Product[] = [
   {
     site: "network",
     slug: "amazon-eero-6-mesh-wifi-system",
-    seoTitle: "eero 6 Mesh Guide: Router vs Extender, Ports & Coverage",
-    updatedAt: "June 30, 2026",
+    seoTitle: "What Is eero 6? Router vs Extender, Ports & Coverage",
+    updatedAt: "August 20, 2026",
     sources: [
       { name: "eero 6 product page", url: "https://eero.com/shop/eero-6", note: "Wi-Fi generation, listed coverage, package options, and device positioning." },
       { name: "eero product comparison", url: "https://support.eero.com/hc/en-us/articles/115002718486-eero-Mesh-WiFi-Product-Comparison", note: "Router, extender, port, speed, and generation differences." },
@@ -176,7 +176,7 @@ export const networkProducts: Product[] = [
     brand: "Amazon eero",
     category: "wifi",
     image: "/images/affiliate/network-amazon-eero-6-mesh-wifi-system.webp",
-    summary: "A simple 3-pack mesh Wi-Fi system for households that value easy setup and broad coverage over advanced network tuning.",
+    summary: "A plain-English eero 6 guide explaining the router-versus-extender pack, why neither unit is a modem, Ethernet-port limits, listed coverage, and who still benefits from this older dual-band mesh system.",
     verdict: "Amazon eero 6 is the simplicity pick: it makes the most sense when setup ease, app guidance, and enough coverage matter more than multi-gig ports or Wi-Fi 7 features.",
     whyItMatters: "Many homes need calmer coverage, not the fastest possible router. A simpler mesh kit can be the right buy if the bottleneck is dead zones and setup friction.",
     bestFor: "Simple mesh coverage for everyday homes",
@@ -575,9 +575,9 @@ export const networkGuides: Guide[] = [
     site: "network",
     slug: "wifi-7-vs-wifi-6-guide",
     title: "Wi-Fi 7 vs Wi-Fi 6: Is the Upgrade Worth It for Home Internet?",
-    dek: "Decide whether Wi-Fi 7 is worth paying for by checking client support, multi-gig ports, coverage, and the next real bottleneck.",
+    dek: "Compare Wi-Fi 7 vs Wi-Fi 6 by client support, 6GHz behavior, multi-gig ports, mesh backhaul, coverage, and the bottleneck that would actually change after an upgrade.",
     category: "wifi",
-    updatedAt: "July 26, 2026",
+    updatedAt: "August 20, 2026",
     relatedProducts: ["tp-link-deco-be63-wifi-7-mesh"],
     relatedRoundups: ["best-mesh-wifi-for-apartments-and-homes", "best-wifi-7-routers-for-home-networks"],
     comparisonTable: {
@@ -591,6 +591,7 @@ export const networkGuides: Guide[] = [
       ],
     },
     sections: [
+      { heading: "The short Wi-Fi 7 vs Wi-Fi 6 answer", body: "Keep a reliable Wi-Fi 6 network when priority devices are still Wi-Fi 6 or older, the wired path is Gigabit, and placement already solves coverage. Consider Wi-Fi 7 when several important clients can use it and 6GHz capacity, multi-link operation, multi-gig Ethernet, or a stronger mesh backhaul addresses a measured limit." },
       { heading: "Start with client support", body: "Wi-Fi 7 benefits are strongest when laptops, phones, or adapters can actually use the newer standard. Older devices can connect, but they do not magically become Wi-Fi 7 clients." },
       { heading: "Check wired ports", body: "A Wi-Fi 7 router with gigabit-only paths may still bottleneck a multi-gig internet plan. Look at WAN, LAN, switches, and backhaul together." },
       { heading: "Coverage still beats speed class", body: "A poorly placed Wi-Fi 7 router can perform worse than a well-placed Wi-Fi 6 mesh system. Layout comes first." },

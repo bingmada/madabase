@@ -1,0 +1,67 @@
+{
+  "updatedAt": "2026-08-20",
+  "cohort": "product-expansion-100-next",
+  "status": "research-planning",
+  "objective": "Select about 100 distinct, commerce-capable product pages from a larger evidence-qualified research pool without repeating existing search intent.",
+  "targetSelectedPages": 100,
+  "researchPoolTarget": 130,
+  "planningBasis": {
+    "previousPool": 194,
+    "previousSelected": 151,
+    "previousYield": 0.7784,
+    "expectedSelectedAtSameYield": 101
+  },
+  "targetDistribution": {
+    "network": 20,
+    "smarthome": 20,
+    "homeoffice": 20,
+    "baby": 20,
+    "pet": 20
+  },
+  "researchPoolDistribution": {
+    "network": 26,
+    "smarthome": 26,
+    "homeoffice": 26,
+    "baby": 26,
+    "pet": 26
+  },
+  "publicationPolicy": {
+    "initialMode": "public-soft-launch",
+    "sitemapExcluded": true,
+    "discoveryExcluded": true,
+    "indexNowSubmitted": false,
+    "searchConsoleSubmitted": false,
+    "indexableByDirectUrl": true,
+    "releaseRule": "Do not add a page to sitemap, home, category discovery, or IndexNow until its exact-product, evidence, image, merchant, collision, and reciprocal-link gates pass."
+  },
+  "requiredGates": [
+    "Distinct query and purchase decision with no stronger existing canonical page",
+    "Current product demand and a live SERP opening",
+    "Opportunity score of at least 70 out of 100",
+    "Exact current model, ASIN or authorized CJ item and variant",
+    "Current merchant link, availability signal, seller or direct-brand path, and return terms",
+    "Official manufacturer or authoritative primary source plus a second decision source",
+    "Original realistic local bitmap image and accurate alt text",
+    "Official-spec or research-synthesis evidence mode with no invented hands-on claims",
+    "First-viewport commerce path and full-width sticky commerce target where eligible",
+    "At least four contextual internal links with reciprocal discovery after release",
+    "No title, URL, family, or decision-intent collision with the existing portfolio",
+    "Local SEO, affiliate-link, conversion-path, and production-render checks"
+  ],
+  "currentCounts": {
+    "candidateSeeds": 130,
+    "researchedCandidates": 0,
+    "collisionChecked": 0,
+    "exactProductsVerified": 0,
+    "merchantLinksVerified": 0,
+    "evidenceComplete": 0,
+    "imagesComplete": 0,
+    "pagesReadyForSoftLaunch": 0,
+    "pagesReadyForSitemap": 0
+  },
+  "releaseBlockers": [
+    "The prior 194-family research pool is exhausted: 151 released, 34 excluded, and 9 failed exact-product checks.",
+    "A fresh 130-candidate pool must be researched before about 100 pages can be selected honestly.",
+    "No unverified ASIN, merchant link, generated claim, or duplicate intent may be converted into a public page to fill the target count."
+  ]
+}
