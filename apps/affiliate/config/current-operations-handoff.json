@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T18:57:45+08:00",
+  "updatedAt": "2026-08-21T10:27:00+08:00",
   "purpose": "Tracked cross-conversation snapshot. Read this before every affiliate operation, then read docs/affiliate-growth-state.json and docs/affiliate-growth-runbook.md for the mutable history and operating rules.",
   "mandatoryDailyScope": {
     "rule": "Every operating run must review conversion integrity, exact zero-exposure cohorts, the latest 24 hours versus the previous 24 hours, the latest complete 7-day window, active SEO experiments, merchant-link health, crawl discovery, production health and due measurement gates. Do not wait for the owner to ask about each item separately.",
@@ -7,17 +7,26 @@
     "seoEvidenceRule": "Judge tracked URL cohorts exactly. Do not replace an exact 24-hour, 48-hour or cohort analysis with a site-wide headline metric, and do not rewrite protected winners or active title experiments before their gate.",
     "serverResourcePriority": "Affiliate is the primary revenue service and has first claim on server capacity. Keep its non-root systemd service stable on loopback port 3011; reduce or defer non-revenue workloads first when measured memory pressure appears."
   },
+  "seoRecoveryAndProductPilot20260821": {
+    "status": "production_verified_soft_launch_5_gsc_actions_complete",
+    "trafficDiagnosis": "The latest rolling 24 hours fell to 257 impressions from 303, down 15.2%, with 0 clicks versus 1 and average position 41.4 versus 34.6. This is directional short-window volatility, not evidence of a site-wide collapse: the latest complete seven days grew to 4,998 impressions and 30 clicks from 3,691 impressions and 23 clicks, gains of 35.4% and 30.4%, with CTR flat at 0.6%. Aggregate position widened from 24.3 to 33.7 as many new, deeper URLs entered reporting.",
+    "indexingDiagnosis": "Search Console last updated Page indexing on August 17: 1,543 indexed and 4,155 not indexed. Of the not-indexed total, 3,459 are intentional noindex market or draft routes. All submitted pages show 1,360 indexed and 117 not indexed: 68 discovered, 14 crawled, 23 duplicate without a selected canonical, 10 Google-selected different canonical and 2 noindex. The two reported server-5xx URLs belong to tools.madabase.com, not the five primary affiliate sites. All five affiliate sitemaps were Success and last read August 20.",
+    "gscActions": "The five materially improved pages were already indexed and each received one Request indexing action: eero 6, Wi-Fi 7 vs Wi-Fi 6, DP Alt Mode vs DisplayLink, compact standing desks and bottle sterilizer-dryers. Successful sitemaps were not resubmitted, and the 151-page cohort was not replayed during its first seven-day observation window.",
+    "indexNow": "IndexNow accepted exactly 27 changed URLs with HTTP 200: five homepages, 17 affected category pages and five improved content pages. The five new product-pilot pages were deliberately excluded.",
+    "productPilot": "Five exact, differentiated product reviews are public by direct URL, one each for Network, Smarthome, Homeoffice, Baby and Pets: TRENDnet TEG-S750 V2, Tapo S505D, Satechi ST-ADVSM, Medela Harmony and SureFeed Microchip Feeder. All five remain discoveryExcluded and sitemapExcluded, were not sent to IndexNow or Search Console, and use original local WebP images plus exact site-specific Amazon tracking IDs.",
+    "validation": "SEO passed with 964 guides, 175 products, 77 roundups and 7 tools; affiliate links passed 306 of 306. The five primary sites passed 1,294 of 1,294 local base conversion routes with zero failures and zero missing CTAs. Public verification passed HTTP 200, self-canonical, exact ASIN, correct site tag, first-viewport CTA, responsive sticky commerce and image delivery for all five pilot pages. Production sitemaps contain zero pilot URLs."
+  },
   "nextProductExpansionAndRankingRecovery20260820": {
-    "status": "locally_implemented_validated_not_deployed",
+    "status": "ranking_recovery_deployed_product_pilot_5_live_sitemap_excluded",
     "ownerDirection": "Prepare about 100 additional product pages, initially outside sitemap, and comprehensively improve current low-ranking pages without disturbing recent releases or proven winners.",
     "feasibility": "The previous 194-candidate breadth pool produced 151 qualified pages, a 77.84% yield. A fresh 130-seed pool now exists with 26 candidates each for Network, Smarthome, Homeoffice, Baby and Pet; it has no exact key collision with the prior pool or exact slug collision with current content. The target remains 20 selected pages per site after live qualification.",
     "softLaunchPolicy": "New product pages remain outside sitemap, home/category discovery, Search Console submission and IndexNow until exact product, merchant, official evidence, original image, collision and reciprocal-link gates pass. The content model now has a separate discoveryExcluded flag so public QA URLs do not leak into strong discovery modules.",
     "ranking118": "Latest complete window: 100 of 118 exposed, 18 zero-impression, 24 clicks, 2,705 impressions, 0.887% CTR and weighted position 19.79. Bands: 18 click-bearing pages, 25 zero-click top-ten pages, 31 zero-click page-two pages, 17 zero-click positions 20-40, 9 deeper than 40 and 18 zero-impression pages.",
     "queryEvidence": "Search Console 28-day page filters showed small standing desks 286 impressions/position 60.3, bottle sterilizers 236/46.4, Wi-Fi 7 vs Wi-Fi 6 199/69.4, eero 6 167/46.3, portable-monitor DP Alt Mode 56/44.7, CalDigit TS4 134/12.7, Tapo P110M Home Assistant 207/17.1 with one click, and Furbo 360 215/19.1. Titles for click-bearing Tapo and the active Furbo/CalDigit experiment were protected.",
     "localChanges": "Homepage buyer-question discovery is capped at 12 evidence-ranked recovery paths per site instead of exposing the full opportunity registry. Five query-supported pages received narrower answers, summaries or content sections: eero 6 identity, Wi-Fi 7 vs Wi-Fi 6, DP Alt Mode driver vs DisplayLink, compact/narrow standing desks and bottle sterilizer-dryers. The next-product checker now validates all 130 research-only seeds, site balance, prior-pool collisions, current-content collisions and disabled search-engine submission state.",
-    "productDiscoveryConstraint": "A bounded Amazon US public-search test for the first three Network seeds returned zero parseable product results. No ASIN was inferred or saved. The 130 seeds remain non-publishable until a usable merchant discovery path or individual exact-product verification is available.",
-    "validation": "Next-product cohort plan passed 12 release gates; 118-page ranking audit, full SEO audit, ESLint and optimized production build passed. Local runtime verified 757 of 757 governed category direct links and 1,289 of 1,289 five-site base commercial pages with zero CTA failures.",
-    "releaseBoundary": "No production deployment, sitemap mutation, IndexNow submission, Search Console submission or external distribution has been performed for these local changes."
+    "productDiscoveryConstraint": "Five individually researched products have now passed exact ASIN, official-source, merchant, collision, image and differentiated-content gates. The remaining 125 candidates are still non-publishable until the same individual verification is complete; the target count must never be filled with inferred ASINs or duplicate intent.",
+    "validation": "Next-product cohort plan passed 12 release gates; 118-page ranking audit, full SEO audit, ESLint and optimized production build passed. The final five-site runtime verified 1,294 of 1,294 base commercial pages with zero CTA failures; affiliate-link validation passed 306 of 306, including the five new exact ASINs.",
+    "releaseBoundary": "Ranking recovery is live. The first five product pages are live only as direct-URL soft launch and remain absent from sitemap, home/category discovery, IndexNow, Search Console submission and external distribution."
   },
   "conversionIntegrityP0": {
     "status": "production_deployed_and_verified",
@@ -44,23 +53,23 @@
     "discovery": "Release 6eec199 added all 151 qualified breadth pages to five sitemaps. Search Console accepted and immediately read all five as Success with the exact new counts. IndexNow accepted 153 exact URLs: 151 breadth pages plus the two Deco intent-repair pages."
   },
   "release": {
-    "active": "6eec199",
-    "commit": "6eec1993dd937f433c220b56ba853d41cd222f92",
-    "packageCommit": "6eec1993dd937f433c220b56ba853d41cd222f92",
+    "active": "eba7ed0",
+    "commit": "eba7ed09848748b7a1c00a900b9aa6c6dc251006",
+    "packageCommit": "eba7ed09848748b7a1c00a900b9aa6c6dc251006",
     "branch": "lyd-0609",
     "pushed": false,
-    "artifactBytes": 60212969,
-    "artifactSha256": "c61d7dda3ef3ba39dc6bff1dbdd6239cabda57338629f88f7e56545bfc3e5eb3",
+    "artifactBytes": 60728358,
+    "artifactSha256": "9244864ef6c26fa0418d18ca51950823ef67f14224bac89e0c20f822ddc9741d",
     "artifactLocalPath": "apps/affiliate/.release/affiliate-runtime.tgz",
-    "productionPath": "/srv/madabase-affiliate/releases/6eec199",
-    "rollback": "sec-20260820-next15523",
+    "productionPath": "/srv/madabase-affiliate/releases/eba7ed0",
+    "rollback": "db8ac5e",
     "sevenPublicAffiliateHostsHttp200": true,
     "serviceManager": "systemd",
     "service": "madabase-affiliate.service",
     "loopbackPort": 3011,
-    "indexNowAcceptedUrls": 153,
-    "googleSitemapsSubmitted": 5,
-    "releaseNote": "The server did not build this release. The locally built Linux x64 archive was hash-matched, extracted into an immutable release, and activated under the non-root madabase user. The one-time SSH key was removed after deployment. Public validation passed all 151 breadth pages, exact sitemap counts, both repaired Deco pages and all seven host-aware homepages."
+    "indexNowAcceptedUrls": 27,
+    "googleSitemapsSubmitted": 0,
+    "releaseNote": "The server did not build this release. The locally built Linux x64 archive was hash-matched, extracted into immutable release eba7ed0 and activated under the non-root madabase user. The service is active on loopback port 3011 with zero restarts. Public validation passed the five direct-URL pilot pages and images; the one-time SSH key and remote transfer artifact were removed."
   },
   "pendingMainRelease": {
     "status": "production_deployed_and_verified",
@@ -77,27 +86,27 @@
   "serverStability": {
     "serverMemoryApprox": "1.6GB",
     "serviceModel": "All five site applications run as non-root systemd services bound to loopback; PM2 is disabled.",
-    "affiliateObservedMemory": "263.6MiB after the full public audit and search-engine submissions; server available memory was 617MiB and swap remained unused",
+    "affiliateObservedMemory": "About 229MiB after release eba7ed0 public verification; the service reported zero restarts.",
     "unstableRestarts": 0,
     "availableMemoryBeforeRelease": "approximately 440MB with 2GB swap unused",
-    "releaseHealth": "madabase-affiliate.service is active, listens only on 127.0.0.1:3011 and returned HTTP 200 for all seven affiliate hosts. The first immediate curl occurred before the listener was ready; the service was healthy 19 seconds later and remained stable.",
+    "releaseHealth": "madabase-affiliate.service is active from /srv/madabase-affiliate/releases/eba7ed0, listens only on 127.0.0.1:3011, reported zero restarts and returned current HTTP 200 content for the five new pilot pages.",
     "rule": "Affiliate has first claim on server capacity. Build and run full audits locally, use bounded low-concurrency production checks, and reduce or defer non-revenue services before constraining Affiliate."
   },
   "searchBaseline": {
     "latest24Hours": {
-      "clicks": 5,
-      "impressions": 769,
-      "ctr": "0.7%",
-      "averagePosition": 33.8,
-      "comparison": "Previous 24 hours: 4 clicks, 741 impressions, 0.5% CTR and position 33.2.",
+      "clicks": 0,
+      "impressions": 257,
+      "ctr": "0%",
+      "averagePosition": 41.4,
+      "comparison": "Previous 24 hours: 1 click, 303 impressions, 0.3% CTR and position 34.6.",
       "use": "directional_only"
     },
-    "latestComplete7DaysAug11To17": {
-      "clicks": 31,
-      "impressions": 5241,
+    "latestComplete7DaysAug12To18": {
+      "clicks": 30,
+      "impressions": 4998,
       "ctr": "0.6%",
-      "averagePosition": 30.5,
-      "comparison": "Previous complete 7 days: 20 clicks, 2,665 impressions, 0.8% CTR and position 24.0. Impressions increased 96.7% and clicks increased 55%; lower aggregate CTR and position reflect the continuing expansion of lower-ranking discovery."
+      "averagePosition": 33.7,
+      "comparison": "Previous complete seven days, August 5-11: 23 clicks, 3,691 impressions, 0.6% CTR and position 24.3. Impressions increased 35.4% and clicks increased 30.4%; the lower aggregate position reflects newer, deeper discovery rather than a site-wide disappearance."
     },
     "note": "Search Console page-dimension sums can exceed the dashboard aggregate because more than one Madabase URL can appear in one result set."
   },
@@ -237,7 +246,7 @@
   "cloudflare": {
     "rule": "Cache public affiliate HTML",
     "ruleCorrect": true,
-    "currentReleasePublicHtml": "The 309afe0 production origin and cache-busted current-runtime Momcozy page returned HTTP 200 and passed responsive sticky CTA checks. The normal canonical Momcozy URL subsequently returned a Cloudflare HIT on page-e416528e947025ac.js, the current responsive review chunk; it contains sticky-commerce-dock, lg:right-6 and lg:w-[22rem], and no lg:hidden. No targeted URL purge credential was present and Purge Everything was not used. A browser that cached older HTML can still require a hard refresh under max-age=14400.",
+    "currentReleasePublicHtml": "The preceding db8ac5e SEO recovery received an exact 30-URL purge: five homepages, 17 categories, five changed content pages and three affected sitemap URLs. Release eba7ed0 adds only never-discovered direct URLs, which returned current content on first public request; no second purge was needed. New immutable WebP assets changed from Cloudflare MISS to HIT on repeat. HTML remains DYNAMIC for default curl requests under the existing Accept-header cache rule.",
     "purgeEverythingUsed": false,
     "testingRule": "Send an Accept header containing text/html; default curl Accept */* does not match the HTML rule."
   },
@@ -249,8 +258,8 @@
     "style": "maintenance_only"
   },
   "validation": {
-    "seoAudit": { "publishedGuides": 964, "products": 170, "roundups": 77, "tools": 7, "generatedMarketRoutes": 4672, "indexQualifiedMarketRoutes": 32 },
-    "affiliateLinks": "301_of_301_passed",
+    "seoAudit": { "publishedGuides": 964, "products": 175, "roundups": 77, "tools": 7, "generatedMarketRoutes": 4692, "indexQualifiedMarketRoutes": 32 },
+    "affiliateLinks": "306_of_306_passed",
     "governedExpansionQuality": "757_of_757_passed",
     "categoryDiscoveryLocal": "757_of_757_direct_links_across_19_categories",
     "categoryDiscoveryPublic": "757_of_757_direct_links_across_19_categories",
@@ -259,23 +268,25 @@
     "newPagesRuntime": "151_of_151_passed_and_0_in_sitemaps",
     "existingRefreshRuntime": "118_of_118_passed",
     "distributionImages": "18_across_6_sites_passed",
-    "publicHosts": "7_of_7_affiliate_hosts_http_200",
+    "publicHosts": "release_eba7ed0_five_primary_pilot_hosts_and_assets_http_200",
     "productionTarget": "exact_B0931ZY7DK_madababy-20_first_viewport_and_self_canonical",
     "firstExpansionClickPage": "exact_B0H5X15MHS_madapets-20_first_viewport_and_self_canonical",
     "costumePilot": "first_viewport_CJ_self_canonical_structured_data_and_sitemap_passed",
     "productionCache": "exact Momcozy, Ergobaby review and Costume guide HTML returned HTTP_200 and Cloudflare_HIT with current conversion markers on 2026-08-18",
-    "productionProcess": "affiliate_release_309afe0_port_3011_512M_online_restart_0_unstable_restart_0; main_release_c1ebfcb_port_3008_350M_online_restart_0; candidates_removed_and_pm2_saved",
+    "productionProcess": "affiliate_release_eba7ed0_systemd_port_3011_active_restart_0; immutable_rollback_db8ac5e_retained",
     "responsiveStickyCommerce": "desktop_1440x900_and_mobile_390x844_exact_Momcozy_B0DKHCWJ5G_madababy-20_anchor_passed_on_current_production_runtime",
     "fullCommercialRouteAudit": "6710_of_6710_local_routes_passed; candidate_385_of_385_production_database_routes_passed; failed_0_noCta_0",
-    "mainCandidate": "commit_c1ebfcb_deployed_and_public_fingerprint_verified"
+    "mainCandidate": "commit_c1ebfcb_deployed_and_public_fingerprint_verified",
+    "productPilot5": "five_of_five_public_direct_urls_passed_self_canonical_exact_ASIN_site_tag_first_viewport_sticky_CTA_and_image; zero_of_five_in_sitemaps",
+    "fiveSiteBaseConversionAudit20260821": "1294_of_1294_passed; failed_0_noCta_0"
   },
   "indexNow": {
-    "date": "2026-08-16",
-    "submitted": 29,
-    "accepted": 29,
+    "date": "2026-08-21",
+    "submitted": 27,
+    "accepted": 27,
     "httpStatus": 200,
-    "bySite": { "network": 3, "smarthome": 4, "homeoffice": 4, "baby": 11, "pet": 3, "costume": 4 },
-    "scope": "Only materially changed home, category and Omni Breeze monetization pages. The 151 soft-launch cohort was excluded."
+    "bySite": { "network": 6, "smarthome": 5, "homeoffice": 6, "baby": 6, "pet": 4 },
+    "scope": "Only the five homepages, 17 affected categories and five materially improved ranking-recovery pages. Sitemaps, unchanged pages, the 151-page observation cohort and the five new product-pilot pages were excluded."
   },
   "measurementGates": {
     "zeroInspectionResume": "2026-08-19; 294 exact due rows remain uninspected after the browser batch reset",
@@ -283,6 +294,8 @@
     "day14": "2026-08-27",
     "day28": "2026-09-10",
     "costumePilotNextGate": "2026-09-02",
+    "productPilot5TechnicalRecheck": "2026-08-24; verify exact merchant identity, direct-URL conversion, canonical and discovery isolation before adding reciprocal discovery links.",
+    "productPilot5SearchPromotionGate": "No fixed promotion date. Add to sitemap, IndexNow and Search Console only after reciprocal-link and production gates pass; do not mass-promote the remaining 125 candidates.",
     "stickyConversionReview": "Review after 14 days and at least 100 eligible post-CTA scroll sessions; split desktop and mobile, then compare first-viewport versus sticky-bottom affiliate clicks, merchant clicks, ordered items and earnings."
   },
   "latestExternalDistribution": {
@@ -309,7 +322,7 @@
     "Do not resubmit or rewrite the 151-page sitemap release before its 2026-08-27 gate unless a technical, merchant or indexability defect appears.",
     "Do not describe the 151-page cohort as sitemap-excluded after release 6eec199; all 151 are now included and submitted.",
     "Do not report the 410-URL zero-exposure inspection as complete while 294 rows remain uninspected.",
-    "Do not change the three active title experiments before 2026-08-20.",
+    "Do not make another broad title rewrite from the 24-hour decline; use exact page-filtered query evidence and the next complete-window gate.",
     "Do not broadly rewrite the 37 protected winners or 21 held pages without page-filtered evidence.",
     "Do not run high-concurrency full production audits on the approximately 1.6GB server.",
     "Do not reduce the Affiliate 512MB limit or increase non-revenue process limits without a measured capacity review; Affiliate is the primary revenue service.",
