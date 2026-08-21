@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20",
+  "updatedAt": "2026-08-21",
   "cohort": "product-expansion-100-next",
   "status": "research-planning",
   "objective": "Select about 100 distinct, commerce-capable product pages from a larger evidence-qualified research pool without repeating existing search intent.",
@@ -50,18 +50,30 @@
   ],
   "currentCounts": {
     "candidateSeeds": 130,
-    "researchedCandidates": 0,
-    "collisionChecked": 0,
-    "exactProductsVerified": 0,
-    "merchantLinksVerified": 0,
-    "evidenceComplete": 0,
-    "imagesComplete": 0,
-    "pagesReadyForSoftLaunch": 0,
+    "researchedCandidates": 5,
+    "collisionChecked": 5,
+    "exactProductsVerified": 5,
+    "merchantLinksVerified": 5,
+    "evidenceComplete": 5,
+    "imagesComplete": 5,
+    "pagesReadyForSoftLaunch": 5,
     "pagesReadyForSitemap": 0
+  },
+  "selectedPilot": {
+    "cohort": "product-expansion-100-pilot-01",
+    "count": 5,
+    "distribution": {
+      "network": 1,
+      "smarthome": 1,
+      "homeoffice": 1,
+      "baby": 1,
+      "pet": 1
+    },
+    "ledger": "config/next-product-expansion-100-pilot-01.json"
   },
   "releaseBlockers": [
     "The prior 194-family research pool is exhausted: 151 released, 34 excluded, and 9 failed exact-product checks.",
-    "A fresh 130-candidate pool must be researched before about 100 pages can be selected honestly.",
+    "The remaining 125 candidates must still be researched before about 100 pages can be selected honestly; five products have passed the first soft-launch gate.",
     "No unverified ASIN, merchant link, generated claim, or duplicate intent may be converted into a public page to fill the target count."
   ]
 }

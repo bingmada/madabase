@@ -1,0 +1,106 @@
+{
+  "updatedAt": "2026-08-21",
+  "cohort": "product-expansion-100-pilot-01",
+  "parentCohort": "product-expansion-100-next",
+  "status": "ready-for-public-soft-launch",
+  "publicationPolicy": {
+    "sitemapExcluded": true,
+    "discoveryExcluded": true,
+    "indexNowSubmitted": false,
+    "searchConsoleSubmitted": false,
+    "promoteAfterReciprocalLinksAndProductionChecks": true
+  },
+  "products": [
+    {
+      "site": "network",
+      "familySlug": "ten-gigabit-unmanaged-switches",
+      "pageSlug": "trendnet-teg-s750-10gbe-switch",
+      "product": "TRENDnet TEG-S750 Version V2",
+      "asin": "B09M7KSZB2",
+      "opportunityScore": 84,
+      "distinctDecision": "Whether five fanless all-RJ45 10GbE ports are worth the cost versus 2.5GbE or SFP+ for a small NAS and workstation island.",
+      "internalLinkPlan": [
+        "/guides/2-5g-vs-10g-switch-for-home-nas-guide",
+        "/guides/ten-gigabit-ethernet-switches-buying-guide",
+        "/reviews/tp-link-tl-sg105-m2-2-5g-switch",
+        "/reviews/trendnet-teg-s380-2-5g-switch"
+      ]
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "matter-smart-dimmer-switches",
+      "pageSlug": "tapo-s505d-matter-smart-dimmer",
+      "product": "Tapo S505D",
+      "asin": "B0C2B8SP3W",
+      "opportunityScore": 83,
+      "distinctDecision": "Whether a neutral-equipped single-pole TRIAC circuit should use a Matter-over-Wi-Fi dimmer, with explicit three-way and bulb-fit exclusions.",
+      "internalLinkPlan": [
+        "/guides/smart-dimmer-switches-buying-guide",
+        "/guides/matter-smart-bulbs-buying-guide",
+        "/guides/smart-wall-switches-buying-guide",
+        "/guides/matter-thread-wifi-zigbee-device-checklist"
+      ]
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "dual-laptop-vertical-stands",
+      "pageSlug": "satechi-dual-vertical-laptop-stand",
+      "product": "Satechi Dual Vertical Laptop Stand ST-ADVSM",
+      "asin": "B09WY2RLQG",
+      "opportunityScore": 76,
+      "distinctDecision": "Whether two measured closed devices fit the stand's unequal 12mm and 20mm fixed slots without case pressure or cable strain.",
+      "internalLinkPlan": [
+        "/guides/vertical-laptop-stands-buying-guide",
+        "/guides/usb-switch-vs-kvm-vs-dock-guide",
+        "/guides/portable-monitor-usb-c-dp-alt-mode-displaylink-guide",
+        "/categories/ergonomics"
+      ]
+    },
+    {
+      "site": "baby",
+      "familySlug": "manual-breast-pumps",
+      "pageSlug": "medela-harmony-manual-breast-pump",
+      "product": "Medela Harmony Manual Breast Pump",
+      "asin": "B0C2YYKKZF",
+      "opportunityScore": 78,
+      "distinctDecision": "Whether a battery-free manual pump fits occasional, travel, or backup use after shield fit, small-part suction, cleaning, and hand-effort checks.",
+      "internalLinkPlan": [
+        "/guides/manual-breast-pumps-buying-guide",
+        "/guides/wearable-breast-pumps-buying-guide",
+        "/guides/electric-breast-pumps-buying-guide",
+        "/categories/feeding"
+      ]
+    },
+    {
+      "site": "pet",
+      "familySlug": "selective-access-microchip-feeders",
+      "pageSlug": "surefeed-microchip-pet-feeder",
+      "product": "SureFeed Microchip Pet Feeder",
+      "asin": "B00O0UIPTY",
+      "opportunityScore": 86,
+      "distinctDecision": "Whether implanted-microchip bowl access without dispensing or app features is the right answer for food stealing or separate diets in a multi-pet home.",
+      "internalLinkPlan": [
+        "/guides/rfid-feeder-vs-microchip-feeder-guide",
+        "/reviews/petlibro-one-rfid-smart-feeder",
+        "/reviews/petlibro-granary-automatic-cat-feeder",
+        "/guides/automatic-feeder-cleaning-checklist"
+      ]
+    }
+  ],
+  "completedGates": {
+    "liveDemandAndSerp": 5,
+    "semanticCollision": 5,
+    "exactProductAndAsin": 5,
+    "merchantAnchor": 5,
+    "primaryEvidence": 5,
+    "originalLocalImage": 5,
+    "distinctEditorial": 5,
+    "softLaunchExclusions": 5
+  },
+  "deferredGates": {
+    "reciprocalDiscoveryLinks": 5,
+    "sitemapPromotion": 5,
+    "indexNowSubmission": 5,
+    "searchConsoleSubmission": 5
+  }
+}

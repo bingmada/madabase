@@ -106,13 +106,17 @@ function softLaunchUrls() {
     "breadth-draft-homeoffice-product-research.json",
     "breadth-draft-baby-product-research.json",
     "breadth-draft-pet-product-research.json",
+    "next-product-expansion-100-pilot-01.json",
   ];
 
   return configNames.flatMap((name) => {
     const data = JSON.parse(fs.readFileSync(path.join(affiliateDir, "config", name), "utf8"));
-    return (data.products ?? []).filter((product) => product.site in selectedSiteHosts).map((product) =>
-      `https://${siteHosts[product.site]}/guides/${product.familySlug}-buying-guide`,
-    );
+    return (data.products ?? [])
+      .filter((product) => product.site in selectedSiteHosts)
+      .map((product) => product.pageSlug
+        ? `https://${siteHosts[product.site]}/reviews/${product.pageSlug}`
+        : `https://${siteHosts[product.site]}/guides/${product.familySlug}-buying-guide`,
+      );
   });
 }
 

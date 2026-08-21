@@ -81,6 +81,7 @@ import { broadProductPilotGuides } from "./broad-product-pilot-content";
 import { broadProductPilot2Guides } from "./broad-product-pilot-2-content";
 import { broadProductPilot3Guides } from "./broad-product-pilot-3-content";
 import { breadthDraft120PlusGuides } from "./breadth-draft-120-plus-content";
+import { productExpansionPilot20260821Products } from "./product-expansion-pilot-20260821-content";
 
 export const products: Product[] = [
   {
@@ -2370,6 +2371,7 @@ products.push(...august2026ExpansionProducts);
 roundups.push(...august2026ExpansionRoundups);
 products.push(...secondRoundAugust2026Products);
 guides.push(...secondRoundAugust2026Guides);
+products.push(...productExpansionPilot20260821Products);
 roundups.push(...aggressivePortfolioRoundups);
 guides.push(...aggressivePortfolioGuides);
 guides.push(...costumeGuides);
