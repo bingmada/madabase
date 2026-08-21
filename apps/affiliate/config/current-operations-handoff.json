@@ -1,6 +1,67 @@
 {
-  "updatedAt": "2026-08-21T10:27:00+08:00",
+  "updatedAt": "2026-08-21T10:36:23+08:00",
   "purpose": "Tracked cross-conversation snapshot. Read this before every affiliate operation, then read docs/affiliate-growth-state.json and docs/affiliate-growth-runbook.md for the mutable history and operating rules.",
+  "crossConversationResume": {
+    "asOf": "2026-08-21T10:36:23+08:00",
+    "status": "seo_recovery_live_product_pilot_5_verified_waiting_for_measurement_gates",
+    "readOrder": [
+      "apps/affiliate/config/current-operations-handoff.json",
+      "docs/affiliate-growth-state.json",
+      "docs/affiliate-growth-runbook.md",
+      "apps/affiliate/config/next-product-expansion-100-pilot-01.json",
+      "apps/affiliate/config/next-product-expansion-100-readiness.json"
+    ],
+    "oneSentenceState": "Affiliate production is healthy on immutable release eba7ed0; the 24-hour impression dip is not a confirmed site-wide loss because the complete seven-day window is still up, the five ranking-recovery URLs have been re-requested in Google, and the first five differentiated product pages are live only by direct URL outside sitemap and discovery.",
+    "production": {
+      "activeRelease": "eba7ed0",
+      "sourceCommit": "eba7ed09848748b7a1c00a900b9aa6c6dc251006",
+      "path": "/srv/madabase-affiliate/releases/eba7ed0",
+      "rollback": "db8ac5e",
+      "service": "madabase-affiliate.service",
+      "port": 3011,
+      "status": "active_zero_restarts_public_verified",
+      "securityCleanup": "The one-time SSH public key, local private-key directory and remote transfer archive were removed."
+    },
+    "searchAndIndexing": {
+      "latest24Hours": "0 clicks, 257 impressions, 0% CTR and position 41.4 versus 1 click, 303 impressions, 0.3% CTR and position 34.6; directional only.",
+      "latestComplete7Days": "August 12-18: 30 clicks and 4,998 impressions versus 23 clicks and 3,691 impressions in August 5-11; clicks +30.4%, impressions +35.4%, CTR flat at 0.6%.",
+      "interpretation": "Do not make another broad SEO rewrite from the one-day dip. New and deeper discovery widened aggregate average position; production, canonicals, sitemaps and changed-page indexability are healthy.",
+      "gscPageIndexing": "Report last updated August 17: 1,543 indexed and 4,155 not indexed, of which 3,459 are intentional noindex market or draft routes. All submitted pages: 1,360 indexed and 117 not indexed.",
+      "gscActions": "All five primary sitemaps were Success and were not redundantly resubmitted. One Request indexing action was accepted for each of the five materially improved pages: eero 6, Wi-Fi 7 vs Wi-Fi 6, DP Alt Mode vs DisplayLink, compact standing desks and bottle sterilizer-dryers.",
+      "indexNow": "Exactly 27 changed discovery URLs were accepted with HTTP 200: five homepages, 17 categories and five ranking-recovery pages. The five product-pilot URLs were excluded."
+    },
+    "productExpansion": {
+      "target": "About 100 qualified differentiated product pages, not 100 pages by quota.",
+      "researchPool": 130,
+      "liveDirectUrlPilot": 5,
+      "remainingUnverifiedCandidates": 125,
+      "estimatedAdditionalQualifiedNeeded": 95,
+      "pilotProducts": [
+        "Network: TRENDnet TEG-S750 Version V2, ASIN B09M7KSZB2",
+        "Smarthome: Tapo S505D, ASIN B0C2B8SP3W",
+        "Homeoffice: Satechi ST-ADVSM, ASIN B09WY2RLQG",
+        "Baby: Medela Harmony, ASIN B0C2YYKKZF",
+        "Pet: SureFeed Microchip Pet Feeder, ASIN B00O0UIPTY"
+      ],
+      "currentPublicationMode": "All five are public and indexable by direct URL but discoveryExcluded and sitemapExcluded. They were not submitted to IndexNow or Search Console and are not exposed from home or category discovery.",
+      "validation": "Five of five passed public HTTP 200, self-canonical, exact ASIN, correct site tracking ID, first-viewport CTA, responsive sticky commerce, original WebP image and sitemap-isolation checks. Affiliate links passed 306 of 306; five-site base conversion paths passed 1,294 of 1,294.",
+      "ledger": "apps/affiliate/config/next-product-expansion-100-pilot-01.json"
+    },
+    "nextOrderedActions": [
+      "On 2026-08-24, recheck all five product-pilot URLs for exact merchant identity, public rendering, conversion markers, canonical, image and continued sitemap/discovery isolation. Only then decide reciprocal discovery and search promotion.",
+      "On 2026-08-27, execute the complete 151-page and ranking-recovery cohort gate using exact URLs and current Search Console evidence; do not sample only winners.",
+      "Resume the unfinished exact zero-exposure inspection ledger; 294 historical rows remain operationally uninspected and must not be reported as completed.",
+      "Continue product research one candidate at a time through demand, SERP, collision, exact product/ASIN, merchant, official evidence, image, differentiated intent and conversion gates. Do not infer ASINs or mass-template the remaining pool.",
+      "Keep external distribution not-due unless the owner explicitly asks for 外部分发 or a recorded distribution measurement gate is due."
+    ],
+    "hardBoundaries": [
+      "Affiliate revenue is the server priority; build and run broad audits locally and use bounded production checks.",
+      "Do not resubmit or broadly rewrite the 151-page sitemap cohort before the August 27 gate without a confirmed technical, merchant or indexability defect.",
+      "Do not add the five product-pilot URLs to sitemap, home/category discovery, IndexNow or Search Console before the recorded gate passes.",
+      "Every commercial page must retain a truthful exact purchase path in the first viewport plus the responsive sticky purchase path.",
+      "Preserve unrelated .DS_Store files, artifacts, packages and prisma paths. The modified apps/affiliate/.release/affiliate-runtime.tgz is the locally built deployed artifact, not an unrelated source edit."
+    ]
+  },
   "mandatoryDailyScope": {
     "rule": "Every operating run must review conversion integrity, exact zero-exposure cohorts, the latest 24 hours versus the previous 24 hours, the latest complete 7-day window, active SEO experiments, merchant-link health, crawl discovery, production health and due measurement gates. Do not wait for the owner to ask about each item separately.",
     "conversionFirst": "Amazon or authorized CJ earnings are the objective. Every commercial page must retain a truthful, exact or clearly labeled fallback purchase path in the first viewport and pass the structural conversion audit.",
