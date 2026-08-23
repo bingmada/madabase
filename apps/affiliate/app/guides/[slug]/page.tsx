@@ -10,9 +10,9 @@ import { StyleGuidePage } from "@/components/StyleExperience";
 import { TrackedCommerceLink } from "@/components/TrackedCommerceLink";
 import { findGuide, findProduct, findRoundup, siteGuides } from "@/lib/content";
 import { effectiveContentUpdatedAt, findSearchOpportunity, searchOpportunityMetaDescription } from "@/lib/search-opportunities";
-import { breadcrumbSchema, guideSchema, pageMetadata } from "@/lib/seo";
+import { breadcrumbSchema, guideSchema, itemListSchema, pageMetadata } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
-import type { SiteKey } from "@/lib/types";
+import type { Guide, SiteKey } from "@/lib/types";
 import { costumeHalloweenIdeas } from "@/lib/costume-halloween-ideas";
 import { findAmazonFamilyProduct } from "@/lib/amazon-family-products";
 import { amazonAsinAffiliateUrl } from "@/lib/affiliate-tracking";
@@ -32,6 +32,24 @@ type AdviceBlock = {
   checklist: string[];
   mistakes: string[];
   decision: string;
+};
+
+const familyRoleOrder: Array<NonNullable<Guide["familyRole"]>> = [
+  "buying",
+  "comparison",
+  "fit",
+  "ownership",
+  "workflow",
+  "safety",
+];
+
+const familyRoleLabels: Record<NonNullable<Guide["familyRole"]>, string> = {
+  buying: "Primary buying guide",
+  comparison: "Compare alternatives",
+  fit: "Compatibility and fit",
+  ownership: "Ownership and maintenance",
+  workflow: "Setup and daily workflow",
+  safety: "Safety and reasons to skip",
 };
 
 const siteAdvice: Record<SiteKey, AdviceBlock> = {
@@ -210,6 +228,12 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
   const relatedProducts = (guide.relatedProducts ?? [])
     .map((productSlug) => findProduct(site.key, productSlug))
     .filter((product): product is NonNullable<ReturnType<typeof findProduct>> => Boolean(product));
+  const familyGuides = guide.familySlug
+    ? siteGuides(site.key)
+      .filter((item) => item.familySlug === guide.familySlug && item.familyRole)
+      .sort((left, right) => familyRoleOrder.indexOf(left.familyRole!) - familyRoleOrder.indexOf(right.familyRole!))
+    : [];
+  const primaryFamilyGuide = familyGuides.find((item) => item.familyRole === "buying");
   const explicitRelatedGuides = (guide.relatedGuides ?? [])
     .filter((guideSlug) => guideSlug !== guide.slug)
     .map((guideSlug) => findGuide(site.key, guideSlug))
@@ -217,6 +241,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
   const reciprocalRelatedGuides = siteGuides(site.key)
     .filter((item) => item.slug !== guide.slug && item.relatedGuides?.includes(guide.slug));
   const relatedGuides = [
+    ...familyGuides.filter((item) => item.slug !== guide.slug),
     ...explicitRelatedGuides,
     ...reciprocalRelatedGuides,
     ...siteGuides(site.key).filter((item) => item.slug !== guide.slug && item.category === guide.category),
@@ -316,6 +341,15 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         ])}
       />
       <JsonLd data={guideSchema(site, effectiveGuide)} />
+      {familyGuides.length ? (
+        <JsonLd
+          data={itemListSchema(
+            site,
+            `${primaryFamilyGuide?.title ?? guide.title} decision guide series`,
+            familyGuides.map((item) => ({ name: item.title, path: `/guides/${item.slug}` })),
+          )}
+        />
+      ) : null}
       <div className="shell max-w-4xl">
         {category ? (
           <Link className="eyebrow hover:underline" href={`/categories/${category.slug}`}>
@@ -383,6 +417,43 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
           <h2 className="mt-2 text-xl font-bold" id="guide-quick-answer">The practical answer</h2>
           <p className="mt-3 leading-7 text-[var(--text)]">{directAnswer}</p>
         </section>
+        {familyGuides.length ? (
+          <nav className="mt-8 rounded-md border border-[var(--border)] bg-white p-5" data-family-topic-cluster="true" aria-labelledby="family-topic-cluster-heading">
+            <p className="eyebrow">Decision guide series</p>
+            <h2 className="mt-3 text-2xl font-bold" id="family-topic-cluster-heading">
+              {guide.familyRole === "buying" ? "Use the complete topic path" : "Start from the primary buying guide"}
+            </h2>
+            {primaryFamilyGuide && primaryFamilyGuide.slug !== guide.slug ? (
+              <p className="mt-3 leading-7 text-[var(--muted)]">
+                This is a focused supporting page. Begin with{" "}
+                <Link className="font-bold text-[var(--accent)] underline-offset-4 hover:underline" href={`/guides/${primaryFamilyGuide.slug}`}>
+                  {primaryFamilyGuide.title}
+                </Link>{" "}
+                for the complete decision, then return here for this specific check.
+              </p>
+            ) : (
+              <p className="mt-3 leading-7 text-[var(--muted)]">
+                Use the supporting pages only for the part of the decision you still need to verify. The primary guide remains the hub for the overall choice.
+              </p>
+            )}
+            <ul className="mt-5 grid gap-3 sm:grid-cols-2">
+              {familyGuides.map((item) => (
+                <li className={item.slug === guide.slug ? "rounded-md bg-[var(--surface-muted)] p-3" : "rounded-md border border-[var(--border)] p-3"} key={item.slug}>
+                  <p className="text-xs font-bold uppercase tracking-[0.12em] text-[var(--muted)]">
+                    {familyRoleLabels[item.familyRole!]}
+                  </p>
+                  {item.slug === guide.slug ? (
+                    <p className="mt-2 text-sm font-bold leading-6" aria-current="page">{item.title}</p>
+                  ) : (
+                    <Link className="mt-2 block text-sm font-bold leading-6 text-[var(--accent)] underline-offset-4 hover:underline" href={`/guides/${item.slug}`}>
+                      {item.title}
+                    </Link>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </nav>
+        ) : null}
         {guide.searchQuestion ? (
           <section className="mt-8 rounded-md border border-[var(--brand)] bg-[var(--brand-soft)] p-5" aria-labelledby="guide-search-question">
             <p className="eyebrow">Common buying question</p>

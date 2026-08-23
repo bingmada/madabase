@@ -11,8 +11,8 @@ export const august2026ExpansionProducts: Product[] = [
     asin: "B0FG2MD3YP",
     amazonTitle: "Aqara Presence Sensor FP300 Wireless 5-in-1 Motion Sensor",
     amazonDetailUrl: "https://www.amazon.com/dp/B0FG2MD3YP",
-    seoTitle: "Aqara FP300 Review: Battery, Thread vs Zigbee & FP2",
-    updatedAt,
+    seoTitle: "Aqara FP300 Review: Price, Battery, Thread & FP2",
+    updatedAt: "August 23, 2026",
     evidenceMode: "official-spec",
     researchNote:
       "We have not tested the FP300 ourselves. This guide uses Aqara's current US specifications, official setup material, and the exact Amazon listing; room geometry, hub firmware, false triggers, battery life, seller, and bundle still need to be checked in the buyer's home.",
@@ -54,6 +54,7 @@ export const august2026ExpansionProducts: Product[] = [
       Power: "2× replaceable CR2450 batteries",
       "Published battery estimate": "Up to 3 years in Zigbee or 2 years in Thread",
       Coverage: "120° field of view; up to 6m listed range",
+      "Price check": "Compare the live official and exact-ASIN price; include any required Aqara hub or Matter controller and Thread border router",
     },
     evidence: [
       "Confirm ASIN B0FG2MD3YP, PS-S04E, seller, region, and included mount before checkout",
@@ -65,6 +66,10 @@ export const august2026ExpansionProducts: Product[] = [
       {
         heading: "Thread and Zigbee are different setup paths",
         body: "Matter over Thread requires both a compatible Matter controller and Thread border router. Aqara Zigbee requires a supported Aqara hub and can expose additional Aqara-specific controls. Pick the path around the infrastructure already in the home rather than treating both labels as simultaneous connections.",
+      },
+      {
+        heading: "How much does Aqara FP300 cost?",
+        body: "FP300 pricing can change with seller, promotion, region, and multipack bundle, so this page does not freeze a launch price into the recommendation. Compare the current official US listing and exact Amazon ASIN B0FG2MD3YP, then include the cost of an Aqara hub for Zigbee or a compatible Matter controller plus Thread border router for Thread if the home does not already have them.",
       },
       {
         heading: "Battery power changes the placement trade-off",

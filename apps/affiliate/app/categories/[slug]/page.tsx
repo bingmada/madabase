@@ -150,58 +150,30 @@ function getCategoryFramework(siteKey: SiteKey, category: string) {
   };
 }
 
-const governedRoleLabels: Record<NonNullable<Guide["familyRole"]>, string> = {
-  buying: "Buying decisions",
-  comparison: "Compare alternatives",
-  fit: "Compatibility and fit",
-  ownership: "Ownership and maintenance",
-  workflow: "Setup and workflow",
-  safety: "Safety and skip checks",
-};
-const governedRoleOrder: Array<NonNullable<Guide["familyRole"]>> = [
-  "buying",
-  "ownership",
-  "comparison",
-  "fit",
-  "workflow",
-  "safety",
-];
-
-function GovernedDecisionGuideLinks({ guides, includeBuying = false }: { guides: Guide[]; includeBuying?: boolean }) {
-  const governedGuides = guides.filter(
-    (guide) => guide.familySlug && guide.familyRole && (includeBuying || guide.familyRole !== "buying"),
+function GovernedDecisionGuideLinks({ guides }: { guides: Guide[] }) {
+  const familyHubs = guides.filter(
+    (guide) => guide.familySlug && guide.familyRole === "buying",
   );
-  if (!governedGuides.length) return null;
-
-  const groups = governedRoleOrder
-    .map((role) => ({ role, guides: governedGuides.filter((guide) => guide.familyRole === role) }))
-    .filter((group) => group.guides.length);
+  if (!familyHubs.length) return null;
 
   return (
-    <section className="mt-10 rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-5 sm:p-6" data-governed-discovery-links="true" aria-labelledby="specialized-decision-guides-heading">
+    <section className="mt-10 rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-5 sm:p-6" data-governed-discovery-links="family-hubs" aria-labelledby="specialized-decision-guides-heading">
       <div className="max-w-3xl">
-        <p className="eyebrow">Specialized decision guides</p>
-        <h2 className="mt-3 text-2xl font-black" id="specialized-decision-guides-heading">Go beyond the first buying decision</h2>
+        <p className="eyebrow">Topic hubs</p>
+        <h2 className="mt-3 text-2xl font-black" id="specialized-decision-guides-heading">Start with one complete buying decision</h2>
         <p className="mt-3 leading-7 text-[var(--muted)]">
-          Use these focused guides to compare alternatives, verify fit, estimate ownership work, plan setup, and identify reasons to skip a product before checkout.
+          Each primary guide links to its focused comparison, compatibility, ownership, setup, and safety checks. This keeps one clear topic hierarchy instead of flattening every supporting page into the category index.
         </p>
       </div>
-      <div className="mt-7 grid gap-7 lg:grid-cols-2">
-        {groups.map((group) => (
-          <section key={group.role} aria-labelledby={`governed-role-${group.role}`}>
-            <h3 className="text-lg font-bold" id={`governed-role-${group.role}`}>{governedRoleLabels[group.role]}</h3>
-            <ul className="mt-3 space-y-2">
-              {group.guides.map((guide) => (
-                <li key={guide.slug}>
-                  <Link className="text-sm font-semibold leading-6 text-[var(--accent)] underline-offset-4 hover:underline" href={`/guides/${guide.slug}`}>
-                    {guide.title}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </section>
+      <ul className="mt-7 grid gap-x-7 gap-y-3 lg:grid-cols-2">
+        {familyHubs.map((guide) => (
+          <li key={guide.slug}>
+            <Link className="text-sm font-semibold leading-6 text-[var(--accent)] underline-offset-4 hover:underline" href={`/guides/${guide.slug}`}>
+              {guide.title}
+            </Link>
+          </li>
         ))}
-      </div>
+      </ul>
     </section>
   );
 }
@@ -234,7 +206,7 @@ export default async function CategoryPage({
     const categorySlug = slug as CostumeCatalogCategory;
     const filters = parseCostumeCatalogFilters(await searchParams, { category: categorySlug });
     const governedGuideItems = allCategoryGuides
-      .filter((guide) => guide.familySlug && guide.familyRole)
+      .filter((guide) => guide.familySlug && guide.familyRole === "buying")
       .map((guide) => ({ name: guide.title, path: `/guides/${guide.slug}` }));
     return (
       <>
@@ -243,7 +215,7 @@ export default async function CategoryPage({
         {governedGuideItems.length ? (
           <div className="section pt-0">
             <div className="shell">
-              <GovernedDecisionGuideLinks guides={allCategoryGuides} includeBuying />
+              <GovernedDecisionGuideLinks guides={allCategoryGuides} />
             </div>
           </div>
         ) : null}
@@ -275,7 +247,7 @@ export default async function CategoryPage({
   const categoryItems = [
     ...products.map((product) => ({ name: product.amazonTitle ?? product.name, path: `/reviews/${product.slug}` })),
     ...roundups.map((roundup) => ({ name: roundup.title, path: `/best/${roundup.slug}` })),
-    ...allCategoryGuides.map((guide) => ({ name: guide.title, path: `/guides/${guide.slug}` })),
+    ...guides.map((guide) => ({ name: guide.title, path: `/guides/${guide.slug}` })),
     ...tools.map((tool) => ({ name: tool.title, path: `/tools/${tool.slug}` })),
   ];
   const framework = getCategoryFramework(site.key, slug);

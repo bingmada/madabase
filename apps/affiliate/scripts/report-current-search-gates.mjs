@@ -20,7 +20,7 @@ const summaryOnly = argumentsByName.get("summary-only") === "1";
 const compareInputPath = argumentsByName.get("compare-input");
 
 if (!inputPath) {
-  throw new Error("Pass --input=/absolute/path/to/gsc-pages.json");
+  throw new Error("Pass --input=/absolute/path/to/gsc-pages.json-or-Pages.csv");
 }
 
 const siteHosts = {
@@ -37,6 +37,62 @@ const pathPrefixes = { product: "reviews", guide: "guides", roundup: "best" };
 function csv(value) {
   const text = String(value ?? "");
   return /[",\n]/.test(text) ? `"${text.replaceAll('"', '""')}"` : text;
+}
+
+function parseCsv(text) {
+  const rows = [];
+  let row = [];
+  let field = "";
+  let quoted = false;
+
+  for (let index = 0; index < text.length; index += 1) {
+    const character = text[index];
+    if (character === '"') {
+      if (quoted && text[index + 1] === '"') {
+        field += '"';
+        index += 1;
+      } else {
+        quoted = !quoted;
+      }
+    } else if (character === "," && !quoted) {
+      row.push(field);
+      field = "";
+    } else if ((character === "\n" || character === "\r") && !quoted) {
+      if (character === "\r" && text[index + 1] === "\n") index += 1;
+      row.push(field);
+      if (row.some(Boolean)) rows.push(row);
+      row = [];
+      field = "";
+    } else {
+      field += character;
+    }
+  }
+
+  if (field || row.length) {
+    row.push(field);
+    rows.push(row);
+  }
+  return rows;
+}
+
+function readGscRows(filename) {
+  if (path.extname(filename).toLowerCase() !== ".csv") {
+    return JSON.parse(fs.readFileSync(filename, "utf8"));
+  }
+
+  const [headers, ...rows] = parseCsv(fs.readFileSync(filename, "utf8").replace(/^\uFEFF/, ""));
+  const records = rows.map((row) => Object.fromEntries(headers.map((header, index) => [header.trim(), (row[index] ?? "").trim()])));
+  return records.map((record) => {
+    const url = record["Top pages"] ?? record.Page ?? record.URL;
+    if (!url) throw new Error("GSC Pages CSV must contain a Top pages, Page, or URL column");
+    return {
+      url,
+      clicks: Number((record.Clicks ?? "0").replaceAll(",", "")),
+      impressions: Number((record.Impressions ?? "0").replaceAll(",", "")),
+      ctr: record.CTR ?? "0%",
+      position: Number((record.Position ?? "0").replaceAll(",", "")),
+    };
+  });
 }
 
 async function governedExpansionUrls() {
@@ -217,7 +273,7 @@ function comparisonSummary(items, comparisonByUrl) {
   return { current24h: summarize("current"), previous24h: summarize("previous") };
 }
 
-const gscRows = JSON.parse(fs.readFileSync(inputPath, "utf8"));
+const gscRows = readGscRows(inputPath);
 const metrics = new Map(gscRows.map((row) => [row.url.replace(/\/$/, ""), row]));
 const expansionRows = await governedExpansionUrls();
 const rankingRows = rankingRefreshUrls();

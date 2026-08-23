@@ -217,17 +217,21 @@ const quadrupleExpansionModule = await import(
 );
 const categoryPageSource = fs.readFileSync(path.join(workspaceDir, "app", "categories", "[slug]", "page.tsx"), "utf8");
 const governedSitemapSource = fs.readFileSync(path.join(workspaceDir, "app", "sitemap.ts"), "utf8");
-if (!categoryPageSource.includes('data-governed-discovery-links="true"')) {
-  errors.push("Category pages must expose a crawlable governed-guide discovery section");
+if (!categoryPageSource.includes('data-governed-discovery-links="family-hubs"')) {
+  errors.push("Category pages must expose crawlable primary family hubs");
 }
-if (!categoryPageSource.includes("...allCategoryGuides.map((guide)")) {
-  errors.push("Category ItemList schema must include every governed guide in the category");
+if (!categoryPageSource.includes("...guides.map((guide)")) {
+  errors.push("Category ItemList schema must mirror the curated visible guide set");
 }
-if (!categoryPageSource.includes("<GovernedDecisionGuideLinks guides={allCategoryGuides} includeBuying />")) {
-  errors.push("Costume category pages must directly expose every governed buying and decision guide");
+if (!categoryPageSource.includes("<GovernedDecisionGuideLinks guides={allCategoryGuides} />")) {
+  errors.push("Costume category pages must expose every primary governed buying hub");
 }
-if (!governedSitemapSource.includes('new Date("2026-08-16T00:00:00Z")')) {
-  errors.push("Materially changed governed category pages must publish the August 16 discovery lastmod");
+if (!governedSitemapSource.includes('new Date("2026-08-23T00:00:00Z")')) {
+  errors.push("Materially changed governed category pages must publish the August 23 topic-hierarchy lastmod");
+}
+const guidePageSource = fs.readFileSync(path.join(workspaceDir, "app", "guides", "[slug]", "page.tsx"), "utf8");
+if (!guidePageSource.includes('data-family-topic-cluster="true"')) {
+  errors.push("Governed supporting guides must expose their primary family hub and sibling decision path");
 }
 const expectedExpansionFamilies = {
   network: 27,

@@ -1,0 +1,78 @@
+{
+  "checkedAt": "2026-08-23T10:59:23+08:00",
+  "status": "local_release_validated",
+  "authority": "Owner authorized comprehensive SEO recovery for existing pages on August 23; new indexable expansion remains frozen.",
+  "latest24Hours": {
+    "root": { "clicks": 0, "impressions": 202, "ctr": "0%", "averagePosition": 34.5 },
+    "network": { "clicks": 0, "impressions": 8, "averagePosition": 44.3 },
+    "smarthome": { "clicks": 0, "impressions": 6, "averagePosition": 32.7 },
+    "homeoffice": { "clicks": 0, "impressions": 118, "averagePosition": 42.3 },
+    "baby": { "clicks": 0, "impressions": 70, "averagePosition": 17.0 },
+    "pet": { "clicks": 0, "impressions": 0 },
+    "style": { "clicks": 0, "impressions": 0 },
+    "costume": { "clicks": 0, "impressions": 0 }
+  },
+  "sharedGuideTemplate": {
+    "affectedUrls": 757,
+    "exactUrlLedger": "docs/affiliate-expansion757-search-gate-2026-08-23.csv",
+    "change": "Add a primary family hub, labeled sibling decision paths and family ItemList schema to every governed guide.",
+    "crawlPathValidation": { "primaryFamilyHubs": 154, "supportPages": 603, "passed": 757, "failed": 0 }
+  },
+  "categoryPages": {
+    "affectedUrls": 19,
+    "change": "Replace the flat all-support-page block with primary family hubs and make category ItemList schema mirror the curated visible set.",
+    "urls": [
+      "https://baby.madabase.com/categories/feeding",
+      "https://baby.madabase.com/categories/sleep",
+      "https://baby.madabase.com/categories/travel",
+      "https://costumes.madabase.com/categories/costumes",
+      "https://costumes.madabase.com/categories/masks-prosthetics",
+      "https://costumes.madabase.com/categories/props-animatronics",
+      "https://costumes.madabase.com/categories/wigs-makeup",
+      "https://homeoffice.madabase.com/categories/desks",
+      "https://homeoffice.madabase.com/categories/ergonomics",
+      "https://homeoffice.madabase.com/categories/meetings",
+      "https://network.madabase.com/categories/wifi",
+      "https://network.madabase.com/categories/wired",
+      "https://pets.madabase.com/categories/comfort",
+      "https://pets.madabase.com/categories/feeding",
+      "https://pets.madabase.com/categories/home-care",
+      "https://smarthome.madabase.com/categories/access",
+      "https://smarthome.madabase.com/categories/automation",
+      "https://smarthome.madabase.com/categories/cameras",
+      "https://smarthome.madabase.com/categories/climate"
+    ]
+  },
+  "queryBackedPageRefreshes": [
+    {
+      "url": "https://baby.madabase.com/reviews/baby-brezza-sterilizer-dryer-advanced",
+      "query": "baby brezza size of bottles sterilizer and dryer",
+      "change": "Bottle-size and material compatibility, realistic load capacity, title and evidence-backed workflow."
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/standing-desk-height-chart-guide",
+      "query": "correct standing desk height",
+      "change": "Exact-intent title and direct elbow-height answer with shoes, mat, keyboard and monitor checks."
+    },
+    {
+      "url": "https://network.madabase.com/guides/deco-be63-vs-be67-vs-be85-buying-guide",
+      "query": "deco be63 vs be67",
+      "change": "Exact comparison title and direct BE63/BE67/BE85 selection rule."
+    },
+    {
+      "url": "https://smarthome.madabase.com/reviews/aqara-presence-multi-sensor-fp300",
+      "query": "aqara fp300 price",
+      "change": "Price-intent title, live-price caveat and total controller-cost check."
+    }
+  ],
+  "releaseArtifact": {
+    "path": "apps/affiliate/.release/affiliate-runtime.tgz",
+    "bytes": 60730343,
+    "sha256": "c6bc42f547b3a755772433103b0523653f82e8dd45aafd8d46fd783f53c2bac4"
+  },
+  "searchEngineSubmission": {
+    "indexNow": "pending-production-release",
+    "googleSitemaps": "do-not-resubmit-successful-sitemaps",
+    "googleRequestIndexing": "do-not-bulk-request"
+  }
+}

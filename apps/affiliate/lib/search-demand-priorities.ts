@@ -78,6 +78,11 @@ const priorities: Record<SiteKey, SearchDemandPriority[]> = {
   ],
   homeoffice: [
     {
+      path: "/guides/standing-desk-height-chart-guide",
+      queryFamily: "Correct standing desk height",
+      decision: "Set keyboard height from relaxed elbows, then tune monitor height, shoes, mat, and desk range separately.",
+    },
+    {
       path: "/guides/ultrawide-office-monitors-ownership-cost-and-maintenance",
       queryFamily: "Ultrawide monitor ownership cost",
       decision: "Compare warranty, panel risk, mounting, power, and the long-term replacement path.",
@@ -119,6 +124,11 @@ const priorities: Record<SiteKey, SearchDemandPriority[]> = {
     },
   ],
   baby: [
+    {
+      path: "/reviews/baby-brezza-sterilizer-dryer-advanced",
+      queryFamily: "Baby Brezza bottle size and capacity",
+      decision: "Confirm bottle material and brand compatibility, then load-test wide bottles, pump parts, and the modular bins.",
+    },
     {
       path: "/reviews/momcozy-purehug-baby-carrier",
       queryFamily: "Momcozy PureHug review",
@@ -181,13 +191,14 @@ const priorities: Record<SiteKey, SearchDemandPriority[]> = {
   costume: [],
 };
 
-// Search Console recovery queue reviewed on August 20, 2026. These are
+// Search Console recovery queue reviewed on August 23, 2026. These are
 // existing URLs only. The order favors page-two opportunities, then
 // mid-pack/deep pages with qualified impressions, then zero-impression pages
 // that need a stronger crawl path. Click-bearing and top-ten pages are not
 // promoted merely to churn their titles.
 const homepageRecoveryPaths: Record<SiteKey, string[]> = {
   network: [
+    "/guides/deco-be63-vs-be67-vs-be85-buying-guide",
     "/guides/deco-be63-ethernet-backhaul-setup",
     "/reviews/asus-zenwifi-bt6-wifi-7-mesh",
     "/best/tl-sg105-m2-vs-ms305-vs-teg-s350",
@@ -202,6 +213,7 @@ const homepageRecoveryPaths: Record<SiteKey, string[]> = {
     "/reviews/apc-be600m1-router-ups",
   ],
   smarthome: [
+    "/reviews/aqara-presence-multi-sensor-fp300",
     "/guides/tapo-p110m-home-assistant-energy-monitoring",
     "/reviews/aqara-presence-sensor-fp2",
     "/reviews/meross-msg100-homekit-garage-door-opener",
@@ -216,6 +228,7 @@ const homepageRecoveryPaths: Record<SiteKey, string[]> = {
     "/best/ring-battery-doorbell-plus-2nd-gen-vs-tapo-d210",
   ],
   homeoffice: [
+    "/guides/standing-desk-height-chart-guide",
     "/reviews/caldigit-ts4-thunderbolt-dock",
     "/reviews/flexispot-e7-mini-standing-desk",
     "/reviews/anker-675-usb-c-docking-station",
@@ -230,6 +243,7 @@ const homepageRecoveryPaths: Record<SiteKey, string[]> = {
     "/best/ergear-48x24-vs-flexispot-e7-mini",
   ],
   baby: [
+    "/reviews/baby-brezza-sterilizer-dryer-advanced",
     "/reviews/ergobaby-omni-breeze-carrier",
     "/guides/ergobaby-omni-breeze-forward-facing-age-guide",
     "/best/best-bottle-sterilizers-and-dryers",

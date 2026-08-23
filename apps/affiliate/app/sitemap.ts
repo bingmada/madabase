@@ -43,7 +43,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "weekly" as const,
       priority: 0.75,
       ...(guides.some((guide) => guide.category === category.slug && guide.familySlug)
-        ? { lastModified: new Date("2026-08-16T00:00:00Z") }
+        ? { lastModified: new Date("2026-08-23T00:00:00Z") }
         : {}),
     })),
     ...roundups.map((item) => {

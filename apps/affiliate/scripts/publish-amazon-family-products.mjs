@@ -1,12 +1,18 @@
 import fs from "node:fs";
 import path from "node:path";
 import { amazonFamilyTitleMeetsPolicy } from "./amazon-family-semantic-policy.mjs";
+import { assertSearchRecoveryPublishingAllowed } from "./search-recovery-freeze.mjs";
 
 const root = path.resolve(new URL("../../..", import.meta.url).pathname);
 const defaultInputPath = path.join(root, "docs/affiliate-amazon-family-products-2026-08-09.json");
 const defaultOutputPath = path.join(root, "apps/affiliate/config/amazon-family-products.json");
 const expectedCounts = { network: 27, smarthome: 30, homeoffice: 33, baby: 24, pet: 30 };
 const contentDirectory = path.join(root, "apps/affiliate/lib");
+
+assertSearchRecoveryPublishingAllowed({
+  sites: Object.keys(expectedCounts),
+  action: "new-product-publication",
+});
 
 function valueFor(name) {
   const index = process.argv.indexOf(name);

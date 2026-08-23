@@ -532,10 +532,11 @@ export const networkGuides: Guide[] = [
   {
     site: "network",
     slug: "deco-be63-vs-be67-vs-be85-buying-guide",
-    title: "Deco BE63 vs BE67 vs BE85: Ports, Speed and Best Value",
+    title: "Deco BE63 vs BE67 vs BE85: Which Should You Buy?",
     dek: "Compare Deco BE63, BE67, and BE85 by 2.5GbE and 10GbE ports, Wi-Fi class, pack size, wired backhaul, hardware version, and the network you actually have.",
     category: "wifi",
-    updatedAt: "July 15, 2026",
+    updatedAt: "August 23, 2026",
+    quickAnswer: "Choose Deco BE63 for the best-value 2.5GbE mesh in most homes. Step up to BE67 only when a defined 10GbE WAN, LAN, NAS, or wired-backhaul path will be used; choose BE85 when its additional radio and premium 10GbE or SFP+ capacity solve a measured large-home or local-network bottleneck. Match equal pack sizes and hardware versions before comparing price.",
     relatedProducts: ["tp-link-deco-be63-wifi-7-mesh", "tp-link-deco-be67-wifi-7-mesh", "tp-link-deco-be85-wifi-7-mesh"],
     relatedRoundups: ["best-mesh-wifi-for-apartments-and-homes", "tp-link-deco-be67-vs-be63", "deco-be85-vs-be67"],
     sources: [

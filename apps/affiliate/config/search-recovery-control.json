@@ -1,0 +1,100 @@
+{
+  "version": 3,
+  "updatedAt": "2026-08-23T10:54:38+08:00",
+  "status": "august_2026_spam_update_active_existing_page_recovery",
+  "trigger": {
+    "name": "August 2026 spam update",
+    "startedAt": "2026-08-18T09:27:00-07:00",
+    "officialClosedAt": "2026-08-21T01:50:00-07:00",
+    "duration": "2 days 16 hours",
+    "evidence": "Google's Search Status Dashboard marks the August 2026 spam update Closed. Network and Smarthome remain materially below their preceding seven-day impression baselines; production, sitemap and current canonical checks are healthy, so the freeze remains an observation control rather than an outage response."
+  },
+  "freeze": {
+    "active": true,
+    "sites": [
+      "network",
+      "smarthome",
+      "homeoffice",
+      "baby",
+      "pet",
+      "style",
+      "costume"
+    ],
+    "blockedActions": [
+      "new-product-publication",
+      "new-indexable-cohort",
+      "automatic-sitemap-expansion",
+      "unchanged-indexnow-replay",
+      "mass-title-rewrite-without-query-evidence"
+    ],
+    "allowedActions": [
+      "production-outage-repair",
+      "technical-indexing-repair",
+      "merchant-safety-fix",
+      "measurement-fix",
+      "evidence-only-reporting",
+      "existing-page-topic-hierarchy-repair",
+      "query-backed-existing-page-refresh"
+    ],
+    "releaseRule": "Keep new indexable expansion frozen until three complete post-close Search Console days are available and the exact cohort gate supports it. Owner-authorized, query-backed repairs to existing pages and shared topic hierarchy may proceed with a changed-URL ledger and full validation."
+  },
+  "siteStates": {
+    "network": "recovery",
+    "smarthome": "recovery",
+    "homeoffice": "protect",
+    "baby": "protect",
+    "pet": "recovery",
+    "style": "maintenance",
+    "costume": "observe"
+  },
+  "reviewGates": {
+    "spamUpdate": "closed; wait until GSC contains three complete post-close days (August 22-24) before reassessment",
+    "expansion757Day14": "2026-08-23 metrics complete; live zero-impression inspection partial due daily quota; resume 2026-08-24",
+    "soft151PostSitemapDay7": "2026-08-27",
+    "expansion757Day30": "2026-09-08"
+  },
+  "recoveryLedger": {
+    "csv": "apps/affiliate/reports/affiliate-spam-update-recovery-2026-08-21.csv",
+    "report": "apps/affiliate/reports/affiliate-spam-update-recovery-2026-08-21.md",
+    "expectedRows": 1026
+  },
+  "postRolloutObservation": {
+    "checkedAt": "2026-08-23T10:54:38+08:00",
+    "latestCompleteGscDate": "2026-08-20",
+    "completePostCloseGscDaysAvailable": 0,
+    "requiredCompletePostCloseDates": [
+      "2026-08-22",
+      "2026-08-23",
+      "2026-08-24"
+    ],
+    "expansion757Day14": {
+      "window": "2026-08-14 through 2026-08-20",
+      "urls": 757,
+      "exposed": 292,
+      "zeroImpression": 465,
+      "clicks": 2,
+      "impressions": 797,
+      "weightedPosition": 45.979,
+      "decision": "hold-no-expansion"
+    },
+    "zeroImpressionInspection": {
+      "exactDue": 486,
+      "liveInspected": 260,
+      "indexed": 252,
+      "notOnGoogle": 8,
+      "blockedByDailyQuota": 226,
+      "nextInspectionGate": "2026-08-24 after property quota renewal"
+    },
+    "ownerAuthorizedRecovery": {
+      "authorizedAt": "2026-08-23T10:54:38+08:00",
+      "scope": "Existing pages across all seven sites; no new indexable expansion",
+      "latest24Hours": "Root 0 clicks, 202 impressions, 0% CTR, position 34.5; Network 8 impressions, Smarthome 6, Homeoffice 118, Baby 70, Pets 0, Style 0, Costume 0",
+      "actions": [
+        "Replace flat category-to-all-support-page discovery with category-to-primary-family-hub hierarchy",
+        "Add explicit primary-hub and sibling-role navigation plus ItemList schema to all governed family guides",
+        "Refresh Baby Brezza capacity, standing-desk height, Deco BE63/BE67/BE85 and Aqara FP300 pages from current 24-hour query evidence"
+      ],
+      "rollbackSignal": "Revert the shared hierarchy if crawlability validation fails or indexed family support pages lose their only crawlable primary-hub path"
+    }
+  }
+}

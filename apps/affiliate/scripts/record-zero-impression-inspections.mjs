@@ -109,7 +109,13 @@ const notOnGoogle = rows.filter((row) => row.onGoogle === "no").length;
 const blocked = rows.filter((row) => row.inspectionStatus === "blocked-daily-quota").length;
 const detailed = rows.filter((row) => row.inspectionStatus === "live-inspected-detail").length;
 const indexSummaryOnly = rows.filter((row) => row.inspectionStatus === "live-inspected-index-summary").length;
-const nextInspectionDate = new Date(`${reportDate}T00:00:00.000Z`);
+const quotaCheckDate = new Date(quotaCheckedAt);
+if (Number.isNaN(quotaCheckDate.getTime())) throw new Error(`Invalid --quota-checked-at value: ${quotaCheckedAt}`);
+const nextInspectionDate = new Date(Date.UTC(
+  quotaCheckDate.getUTCFullYear(),
+  quotaCheckDate.getUTCMonth(),
+  quotaCheckDate.getUTCDate(),
+));
 nextInspectionDate.setUTCDate(nextInspectionDate.getUTCDate() + 1);
 const summary = {
   reportDate,

@@ -1,7 +1,9 @@
 import crypto from "node:crypto";
 import { Pool } from "pg";
+import { assertSearchRecoveryPublishingAllowed } from "./search-recovery-freeze.mjs";
 
 const apply = process.argv.includes("--apply");
+if (apply) assertSearchRecoveryPublishingAllowed({ sites: "costume", action: "new-indexable-cohort" });
 const databaseUrl = process.env.DATABASE_URL;
 const expectedPid = process.env.CJ_COSTUME_PID;
 const categoryTargets = {

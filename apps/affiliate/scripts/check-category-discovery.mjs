@@ -39,6 +39,7 @@ async function governedGuideRows() {
   return expansion.quadrupleExpansionGuides.map((guide) => ({
     site: guide.site,
     category: guide.category,
+    family: guide.familySlug,
     role: guide.familyRole,
     url: `https://${siteHosts[guide.site]}/guides/${guide.slug}`,
   }));
@@ -73,7 +74,7 @@ for (const row of rows) {
   const guideUrl = new URL(row.url);
   const categoryUrl = `https://${guideUrl.host}/categories/${row.category}`;
   const entry = categories.get(categoryUrl) ?? [];
-  entry.push({ url: row.url, path: guideUrl.pathname, role: row.role });
+  entry.push({ url: row.url, path: guideUrl.pathname, family: row.family, role: row.role });
   categories.set(categoryUrl, entry);
 }
 
@@ -100,16 +101,39 @@ async function worker() {
     try {
       const { response, html } = await fetchCategory(categoryUrl);
       const hrefs = new Set([...html.matchAll(/href=["']([^"']+)["']/gi)].map((match) => match[1].replaceAll("&amp;", "&")));
-      const missing = guides.filter((guide) => !hrefs.has(guide.path));
+      const hubs = guides.filter((guide) => guide.role === "buying");
+      const supportingGuides = guides.filter((guide) => guide.role !== "buying");
+      const missingHubs = hubs.filter((guide) => !hrefs.has(guide.path));
+      let missingSupportLinks = 0;
       if (response.status !== 200) errors.push(`HTTP ${response.status}`);
-      if (!html.includes('data-governed-discovery-links="true"')) errors.push("governed discovery section missing");
-      if (missing.length) errors.push(`${missing.length} direct guide link(s) missing: ${missing.slice(0, 5).map((guide) => guide.path).join(", ")}`);
-      if (!sitemapLastmodByCategory.get(categoryUrl)?.startsWith("2026-08-16")) {
-        errors.push(`sitemap lastmod is not 2026-08-16 (${sitemapLastmodByCategory.get(categoryUrl) ?? "missing"})`);
+      if (!html.includes('data-governed-discovery-links="family-hubs"')) errors.push("family-hub discovery section missing");
+      if (missingHubs.length) errors.push(`${missingHubs.length} primary family hub link(s) missing: ${missingHubs.slice(0, 5).map((guide) => guide.path).join(", ")}`);
+      if (!sitemapLastmodByCategory.get(categoryUrl)?.startsWith("2026-08-23")) {
+        errors.push(`sitemap lastmod is not 2026-08-23 (${sitemapLastmodByCategory.get(categoryUrl) ?? "missing"})`);
       }
-      results.push({ categoryUrl, expectedGuides: guides.length, directGuides: guides.length - missing.length, errors });
+
+      for (const hub of hubs) {
+        const familySupport = supportingGuides.filter((guide) => guide.family === hub.family);
+        const { response: hubResponse, html: hubHtml } = await fetchCategory(hub.url);
+        const hubHrefs = new Set([...hubHtml.matchAll(/href=["']([^"']+)["']/gi)].map((match) => match[1].replaceAll("&amp;", "&")));
+        const missing = familySupport.filter((guide) => !hubHrefs.has(guide.path));
+        missingSupportLinks += missing.length;
+        if (hubResponse.status !== 200) errors.push(`${hub.path} returned HTTP ${hubResponse.status}`);
+        if (!hubHtml.includes('data-family-topic-cluster="true"')) errors.push(`${hub.path} family topic cluster missing`);
+        if (missing.length) errors.push(`${hub.path} is missing ${missing.length} supporting link(s): ${missing.slice(0, 3).map((guide) => guide.path).join(", ")}`);
+      }
+
+      results.push({
+        categoryUrl,
+        expectedGuides: guides.length,
+        directFamilyHubs: hubs.length - missingHubs.length,
+        expectedFamilyHubs: hubs.length,
+        supportLinksVerified: supportingGuides.length - missingSupportLinks,
+        expectedSupportLinks: supportingGuides.length,
+        errors,
+      });
     } catch (error) {
-      results.push({ categoryUrl, expectedGuides: guides.length, directGuides: 0, errors: [error instanceof Error ? error.message : String(error)] });
+      results.push({ categoryUrl, expectedGuides: guides.length, directFamilyHubs: 0, supportLinksVerified: 0, errors: [error instanceof Error ? error.message : String(error)] });
     }
   }
 }
@@ -120,7 +144,8 @@ const report = {
   mode: publicAudit ? "public" : "local",
   categories: results.length,
   governedGuideUrls: rows.length,
-  directLinksVerified: results.reduce((sum, result) => sum + result.directGuides, 0),
+  directFamilyHubsVerified: results.reduce((sum, result) => sum + result.directFamilyHubs, 0),
+  supportLinksVerified: results.reduce((sum, result) => sum + result.supportLinksVerified, 0),
   passedCategories: results.length - failures.length,
   failedCategories: failures.length,
   failures,
