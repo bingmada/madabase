@@ -143,3 +143,38 @@ GSC 显示的是 8 月 10/16 日旧抓取时的 canonical 异常；今天生产 
 - 新增页面：`not-allowed`；完整更新后 GSC 数据尚未出现。现有页面 query-backed 修复已由所有者明确授权并单独记账。
 
 明日第一步：配额刷新后先继续剩余 226 个精确 URL Inspection；随后完成五个 direct-URL 产品 pilot 的 HTTP、canonical、exact ASIN、tracking ID、首屏/粘性 CTA、图片、商家身份、sitemap/discovery 隔离复核。新页面继续隔离；今天修复的既有页面在生产发布后用最新 24 小时与完整 7 天分别监控，不用当天滚动数据宣称恢复。
+
+## 当日下午授权追加执行
+
+所有者随后明确授权继续扩大既有页面 SEO 修复、把本地 `lyd-0609`（含私有源码与约 58MB 发布归档）推送到当前 GitHub `origin`，并从该远端发布。因此，上文“不开合并”“推送被阻断”和“生产仍为 `eba7ed0`”只描述授权前状态，由本节最终状态取代；新 indexable 增长冻结没有被解除。
+
+### 零展现内容族合并
+
+- 以完整的 2026-08-14 至 08-20 GSC 账本为边界，只处理所有角色均为 0 clicks / 0 impressions 的 25 个 family，共 113 个已测 URL。
+- 每组保留一个 buying-guide 主枢纽，把 88 个支持页的有用短答案、章节、比较表、来源、社区证据、编辑方法和相关路径合并进主枢纽。
+- 88 个基础支持路径及对应 88 个 `/en-gb` 路径返回 HTTP 308；旧路径退出分类、首页、sitemap、llms、市场库存、相关页和分发发现面。
+- 25 个目标页继续自指 canonical 并留在 sitemap；完整账本为 `apps/affiliate/reports/seo-consolidation-ledger-2026-08-23.json`。
+- 分类发现复核更新为 154/154 主枢纽及 515/515 剩余支持链接通过。
+
+### 发布结果
+
+- 源码与归档已推送：`origin/lyd-0609` 到 commit `22f2985c5d2e0da697faf6bde14f1e1bec66e12f`。
+- 发布归档：60,732,557 bytes；SHA-256 `abf54c72f10cdf78501703621cdcbb7a7456d6d2e42873546360c347a6d69ab2`。
+- 生产路径：`/srv/madabase-affiliate/releases/22f2985`；`madabase-affiliate.service` 运行于 `127.0.0.1:3011`，切换后 0 次重启。
+- 回滚版本：`/srv/madabase-affiliate/releases/eba7ed0`；切换前 systemd unit 备份保留为 `madabase-affiliate.service.before-22f2985`。
+- 七个 host-aware origin 首页全部 HTTP 200；生产 sitemap 精确数量为 Network 245、Smarthome 258、Homeoffice 275、Baby 264、Pets 234、Style 76、Costumes 121。
+- 公网完整合并审计通过：25/25 family、113/113 已测 URL、88/88 基础永久跳转与 88/88 英区永久跳转，errors 0。
+- Costume 生产数据库转化链路通过 132/132：50 guides、1 roundup、5 categories、76 catalog products；failed 0、no CTA 0。
+- 真实 Network 合并源在 Cloudflare 返回 308，目标页返回 200，均为 `DYNAMIC`；无需 purge。
+
+### 搜索通知
+
+- IndexNow 精确接受 48 个发生实质变化的 canonical，所有站点 HTTP 200：Network 7、Smarthome 9、Homeoffice 7、Baby 4、Pets 9、Costumes 12。
+- 48 个 URL 仅含 25 个保留主枢纽、19 个分类页和 4 个查询证据页；未提交 88 个跳转源、未变页面、Soft151 观察 cohort 或五个 direct-URL 产品 pilot。
+- Network、Smarthome、Homeoffice、Pets、Costumes 五个 sitemap 成员发生变化且公网验证通过；Chrome 当前 Search Console 会话未登录/未验证，重提记录为 `blocked-auth`。Baby 与 Style 没有成员变化，不重提；没有批量 Request indexing。
+
+### 明日继续
+
+- 8 月 24 日配额刷新后继续剩余 226 个精确 URL Inspection。
+- 完成五个 direct-URL 产品 pilot 的商家身份、HTTP、canonical、CTA、图片及 sitemap/discovery 隔离复核。
+- 等 GSC 真正提供 8 月 22、23、24 三个完整更新后数据日再评估是否解除冻结；今天的部署成功不等于排名已经恢复。

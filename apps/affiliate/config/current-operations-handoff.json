@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-08-23T11:06:39+08:00",
+  "updatedAt": "2026-08-23T13:21:19+08:00",
   "purpose": "Tracked cross-conversation snapshot. Read this before every affiliate operation, then read docs/affiliate-growth-state.json and docs/affiliate-growth-runbook.md for the mutable history and operating rules.",
   "crossConversationResume": {
-    "asOf": "2026-08-23T11:06:39+08:00",
-    "status": "existing_page_seo_recovery_release_ready_new_growth_frozen",
+    "asOf": "2026-08-23T13:21:19+08:00",
+    "status": "existing_page_seo_recovery_deployed_publicly_validated_new_growth_frozen",
     "readOrder": [
       "apps/affiliate/config/current-operations-handoff.json",
       "docs/affiliate-growth-state.json",
@@ -17,24 +17,24 @@
       "apps/affiliate/config/next-product-expansion-100-pilot-01.json",
       "apps/affiliate/config/next-product-expansion-100-readiness.json"
     ],
-    "oneSentenceState": "The rolling 24-hour GSC window fell to 0 clicks and 202 impressions on August 23; owner-authorized existing-page SEO recovery is locally validated and packaged, while new indexable expansion stays frozen until August 22-24 are complete in GSC and exact cohort gates are reviewed.",
+    "oneSentenceState": "Release 22f2985 is live and publicly validated with 25 retained consolidation hubs, 88 permanent source redirects and 48 exact IndexNow notifications; new indexable expansion stays frozen until August 22-24 are complete in GSC and exact cohort gates are reviewed.",
     "production": {
-      "activeRelease": "eba7ed0",
-      "sourceCommit": "eba7ed09848748b7a1c00a900b9aa6c6dc251006",
-      "path": "/srv/madabase-affiliate/releases/eba7ed0",
-      "rollback": "db8ac5e",
+      "activeRelease": "22f2985",
+      "sourceCommit": "22f2985c5d2e0da697faf6bde14f1e1bec66e12f",
+      "path": "/srv/madabase-affiliate/releases/22f2985",
+      "rollback": "eba7ed0",
       "service": "madabase-affiliate.service",
       "port": 3011,
       "status": "active_zero_restarts_public_verified",
-      "securityCleanup": "The one-time SSH public key, local private-key directory and remote transfer archive were removed."
+      "securityCleanup": "Deployment used the already-authorized Aliyun Workbench session and the pushed Git object. The temporary server archive remains in /tmp for bounded follow-up; no unrelated dirty server work was modified."
     },
     "searchAndIndexing": {
       "latest24Hours": "Rolling window re-read on August 23: root 0 clicks, 202 impressions, 0% CTR and position 34.5. Hosts: Network 8 impressions/position 44.3, Smarthome 6/32.7, Homeoffice 118/42.3, Baby 70/17.0, and zero impressions for Pets, Style and Costume. This is directional and continued shrinking from 219 impressions earlier the same morning.",
       "latestComplete7Days": "August 14-20: 24 clicks, 3,814 impressions, 0.6% CTR and position 34.3 versus 23 clicks, 4,584 impressions, 0.5% CTR and position 28.0 in August 7-13.",
       "interpretation": "Network fell to 799 impressions from 1,421 and Smarthome to 693 from 1,120. Homeoffice rose to 1,180 from 1,040, Baby to 770 from 683, and Pets produced four clicks on 291 impressions versus zero clicks on 340. Style and Costume remain too small for a recovery conclusion. The latest complete GSC date is still August 20, before Google's official close, so there are zero complete post-close data days and no unfreeze basis.",
       "gscPageIndexing": "Report last updated August 17: 1,543 indexed and 4,155 not indexed, of which 3,459 are intentional noindex market or draft routes. All submitted pages: 1,360 indexed and 117 not indexed.",
-      "gscActions": "All five primary sitemaps were Success and were not redundantly resubmitted. One Request indexing action was accepted for each of the five materially improved pages: eero 6, Wi-Fi 7 vs Wi-Fi 6, DP Alt Mode vs DisplayLink, compact standing desks and bottle sterilizer-dryers.",
-      "indexNow": "Exactly 27 changed discovery URLs were accepted with HTTP 200: five homepages, 17 categories and five ranking-recovery pages. The five product-pilot URLs were excluded."
+      "gscActions": "Five sitemap memberships materially changed after 88 consolidation sources were removed. Public sitemap validation passed, but the current Chrome session is unauthenticated for Search Console, so resubmission is recorded blocked-auth. No bulk Request indexing was attempted; Baby and Style were not due.",
+      "indexNow": "Exactly 48 changed canonicals were accepted with HTTP 200: 25 retained consolidation hubs, 19 categories and four query-backed refreshes. Redirect sources and the five product-pilot URLs were excluded."
     },
     "productExpansion": {
       "target": "About 100 qualified differentiated product pages, not 100 pages by quota.",
@@ -55,7 +55,7 @@
     },
     "nextOrderedActions": [
       "Keep new indexable publication frozen during post-rollout observation. Existing-page topic hierarchy and query-backed recovery are owner-authorized under search-recovery-control version 3; do not convert that authorization into new products, new cohorts or evidence-free mass title churn.",
-      "Release and verify the August 23 existing-page SEO recovery artifact, then submit only materially changed existing URLs to IndexNow and purge only their exact cached HTML after public validation. Do not resubmit successful Google sitemaps or bulk Request indexing.",
+      "Treat release 22f2985 as the active existing-page recovery baseline. Do not repeat IndexNow for its 48 accepted canonicals or purge Cloudflare without a stale-response defect; submit the five changed sitemap memberships in Search Console only after an authenticated session is available.",
       "On 2026-08-24 after the GSC property quota renews, resume the exact 226 uninspected zero-impression URLs. Do not report them as not indexed and do not bulk-request indexing.",
       "On 2026-08-24, also recheck all five product-pilot URLs for exact merchant identity, public rendering, conversion markers, canonical, image and continued sitemap/discovery isolation. Keep them isolated while the recovery freeze remains active even if the technical gate passes.",
       "On 2026-08-27, execute the complete 151-page and ranking-recovery cohort gate using exact URLs and current Search Console evidence; do not sample only winners.",
@@ -89,16 +89,16 @@
     "zeroInspection": "The exact Expansion757 plus Ranking118 zero-impression union is 486 URLs. Cumulative live evidence covers 260: 252 indexed and 8 not on Google; 226 remain after the daily quota alert. Today's fresh batch successfully checked 99 URLs: 96 indexed and 3 not on Google; the 100th request hit quota.",
     "canonicalFollowup": "The three fresh not-on-Google URLs showed older crawl-time canonical anomalies in GSC, but current production HTML returns HTTP 200 and a self-canonical for each. Preserve and recheck after recrawl instead of bulk editing or requesting indexing.",
     "commerce": "Clarity Yesterday: 41 sessions, 68 bot sessions excluded, 1 page/session, 11.46% average scroll, 2 seconds active time, 2 affiliate_click sessions and zero JavaScript errors. Amazon: last updated August 21; month-to-date 21 clicks, 21 ordered items, 21 shipped items, 100% conversion and $6.68 earnings; rolling 30-day commissions $11.58. CJ authentication expired, so current CJ values are unavailable rather than zero.",
-    "production": "All seven homepages and all seven sitemap.xml endpoints returned HTTP 200. No deploy, purge, sitemap submission, IndexNow replay or external distribution was performed.",
+    "production": "Release 22f2985 is active under systemd with zero restarts. All seven host-aware origin homepages returned HTTP 200; public consolidation validation passed 25 hubs and 88 base plus 88 en-gb permanent redirects; live Costume conversion paths passed 132 of 132.",
     "primaryAction": "Completed the exact August 23 cohort ledgers, then applied the owner's existing-page recovery authorization: repaired the governed family hierarchy across 757 pages and refreshed four pages from current 24-hour query evidence. New indexable expansion remains frozen.",
-    "next": "Safely release and publicly verify the packaged existing-page recovery. On August 24, resume the remaining 226 URL inspections after quota renewal and run the five direct-URL product pilot technical/merchant/isolation gate; keep the pilots outside sitemap and discovery.",
+    "next": "On August 24, resume the remaining 226 URL inspections after quota renewal and run the five direct-URL product pilot technical/merchant/isolation gate; keep the pilots outside sitemap and discovery. Reassess the freeze only after complete August 22-24 GSC data exists.",
     "log": "apps/affiliate/reports/daily-operations-2026-08-23.md"
   },
   "existingPageSeoRecovery20260823": {
-    "status": "local_release_validated_committed_push_blocked_explicit_export_approval",
+    "status": "production_released_publicly_validated_indexnow_exact_48",
     "ownerDirection": "Use the latest 24-hour GSC data, finish the August 23 work and comprehensively improve existing pages across the portfolio.",
     "diagnosis": "The current incident is not explained by broad deindexing: 252 of 260 inspected zero-impression URLs remain indexed. Expansion757 nevertheless fell to 292 exposed URLs, 465 zero-impression URLs, 2 clicks and 797 impressions in the complete August 14-20 window. The flat category-to-all-support-page structure diluted primary topic hierarchy across 757 programmatic guides.",
-    "architectureRepair": "Nineteen category pages now expose 154 primary buying-guide hubs instead of flattening all 757 pages. Each hub and supporting page exposes the full labeled family decision path and family ItemList schema. Local rendered audit passed 154 of 154 category-to-hub links and 603 of 603 hub-to-support links.",
+    "architectureRepair": "Nineteen category pages expose 154 primary buying-guide hubs instead of flattening all 757 measured guides. After the authorized consolidation, 515 support pages remain live and reachable from their hubs; the 88 merged support sources are excluded from discovery and permanently redirect to 25 retained hubs. Local discovery audit passed 154 of 154 hubs and 515 of 515 remaining support links.",
     "queryBackedRefreshes": [
       "Baby Brezza Sterilizer Dryer Advanced: bottle-size and material compatibility plus realistic eight-bottle load limits",
       "Correct standing desk height: exact-intent title and direct elbow-height answer",
@@ -106,9 +106,11 @@
       "Aqara FP300: price intent and total controller-cost check"
     ],
     "scopeLedger": "apps/affiliate/reports/seo-recovery-affected-urls-2026-08-23.json",
-    "validation": "Search-recovery control, SEO, 306 affiliate links, next-product freeze, ESLint, optimized production build and Linux x64 release build passed. Category hierarchy passed 757 of 757. Non-Costume local base conversion passed 1,363 of 1,363; live Costume passed 132 of 132.",
-    "artifact": "Commit 6fa3935; apps/affiliate/.release/affiliate-runtime.tgz; 60,730,343 bytes; SHA-256 c6bc42f547b3a755772433103b0523653f82e8dd45aafd8d46fd783f53c2bac4",
-    "production": "Current public release remains eba7ed0. Push to origin/lyd-0609 was blocked because the unpushed linear history contains operational reports and a 57.9MB release artifact and the owner has not explicitly authorized exporting them to that remote. No production cutover, Google sitemap resubmission, bulk Request indexing or external distribution occurred.",
+    "validation": "Search-recovery control, SEO, 306 affiliate links, next-product freeze, ESLint, optimized production build and Linux x64 release build passed. Category hierarchy passed 154 of 154 retained hubs and 515 remaining support links. Public consolidation passed 25 families, 113 measured URLs and 88 base plus 88 en-gb redirects with zero errors; live Costume conversion paths passed 132 of 132.",
+    "artifact": "Commit 22f2985; apps/affiliate/.release/affiliate-runtime.tgz; 60,732,557 bytes; SHA-256 abf54c72f10cdf78501703621cdcbb7a7456d6d2e42873546360c347a6d69ab2",
+    "production": "Release 22f2985 is active at /srv/madabase-affiliate/releases/22f2985 under madabase-affiliate.service on 127.0.0.1:3011 with zero restarts. The current symlink points to 22f2985 and rollback eba7ed0 is retained. Cloudflare returned DYNAMIC for the real consolidation source and hub, so no purge was required.",
+    "consolidation": "Twenty-five all-zero family clusters in the complete August 14-20 window retained one buying-guide hub each. Useful support sections were merged into the hubs; 88 support URLs now return permanent 308 redirects and are excluded from sitemap and discovery surfaces.",
+    "searchNotification": "IndexNow accepted exactly 48 changed canonicals with HTTP 200: 25 retained hubs, 19 category pages and four query-backed refreshes. Redirect sources and unchanged pages were excluded. Five changed sitemap memberships passed publicly, but GSC resubmission is blocked by an unauthenticated Chrome session; no bulk Request indexing was attempted.",
     "measurementGate": "Monitor rolling 24 hours for anomaly direction and the next complete seven-day window for tactical decisions. Do not claim recovery from partial same-day movement."
   },
   "crossSiteSpamUpdateRecovery20260821": {
@@ -195,23 +197,23 @@
     "discovery": "Release 6eec199 added all 151 qualified breadth pages to five sitemaps. Search Console accepted and immediately read all five as Success with the exact new counts. IndexNow accepted 153 exact URLs: 151 breadth pages plus the two Deco intent-repair pages."
   },
   "release": {
-    "active": "eba7ed0",
-    "commit": "eba7ed09848748b7a1c00a900b9aa6c6dc251006",
-    "packageCommit": "eba7ed09848748b7a1c00a900b9aa6c6dc251006",
+    "active": "22f2985",
+    "commit": "22f2985c5d2e0da697faf6bde14f1e1bec66e12f",
+    "packageCommit": "22f2985c5d2e0da697faf6bde14f1e1bec66e12f",
     "branch": "lyd-0609",
-    "pushed": false,
-    "artifactBytes": 60728358,
-    "artifactSha256": "9244864ef6c26fa0418d18ca51950823ef67f14224bac89e0c20f822ddc9741d",
+    "pushed": true,
+    "artifactBytes": 60732557,
+    "artifactSha256": "abf54c72f10cdf78501703621cdcbb7a7456d6d2e42873546360c347a6d69ab2",
     "artifactLocalPath": "apps/affiliate/.release/affiliate-runtime.tgz",
-    "productionPath": "/srv/madabase-affiliate/releases/eba7ed0",
-    "rollback": "db8ac5e",
+    "productionPath": "/srv/madabase-affiliate/releases/22f2985",
+    "rollback": "eba7ed0",
     "sevenPublicAffiliateHostsHttp200": true,
     "serviceManager": "systemd",
     "service": "madabase-affiliate.service",
     "loopbackPort": 3011,
-    "indexNowAcceptedUrls": 27,
+    "indexNowAcceptedUrls": 48,
     "googleSitemapsSubmitted": 0,
-    "releaseNote": "The server did not build this release. The locally built Linux x64 archive was hash-matched, extracted into immutable release eba7ed0 and activated under the non-root madabase user. The service is active on loopback port 3011 with zero restarts. Public validation passed the five direct-URL pilot pages and images; the one-time SSH key and remote transfer artifact were removed."
+    "releaseNote": "The exact 60,732,557-byte Linux x64 archive was pushed to origin/lyd-0609, extracted from FETCH_HEAD into immutable release 22f2985 and activated under the non-root madabase user. The service is active on loopback port 3011 with zero restarts; all seven host-aware origin homepages returned HTTP 200. Release eba7ed0 and the pre-cutover unit backup remain available for rollback."
   },
   "pendingMainRelease": {
     "status": "production_deployed_and_verified",
@@ -376,13 +378,13 @@
     }
   },
   "sitemaps": {
-    "network": 257,
-    "smarthome": 274,
-    "homeoffice": 287,
+    "network": 245,
+    "smarthome": 258,
+    "homeoffice": 275,
     "baby": 264,
-    "pet": 258,
+    "pet": 234,
     "style": 76,
-    "costume": 145,
+    "costume": 121,
     "governedCategoryLastmod": "2026-08-16",
     "softLaunch151Included": 151,
     "costumePilotIncluded": true,
@@ -391,7 +393,7 @@
   "cloudflare": {
     "rule": "Cache public affiliate HTML",
     "ruleCorrect": true,
-    "currentReleasePublicHtml": "The preceding db8ac5e SEO recovery received an exact 30-URL purge: five homepages, 17 categories, five changed content pages and three affected sitemap URLs. Release eba7ed0 adds only never-discovered direct URLs, which returned current content on first public request; no second purge was needed. New immutable WebP assets changed from Cloudflare MISS to HIT on repeat. HTML remains DYNAMIC for default curl requests under the existing Accept-header cache rule.",
+    "currentReleasePublicHtml": "Release 22f2985 returned the real Network consolidation source as HTTP 308 and its target hub as HTTP 200 with Cloudflare DYNAMIC. The complete public consolidation audit passed, so no exact purge or purge-everything action was required.",
     "purgeEverythingUsed": false,
     "testingRule": "Send an Accept header containing text/html; default curl Accept */* does not match the HTML rule."
   },
@@ -406,19 +408,21 @@
     "seoAudit": { "publishedGuides": 964, "products": 175, "roundups": 77, "tools": 7, "generatedMarketRoutes": 4692, "indexQualifiedMarketRoutes": 32 },
     "affiliateLinks": "306_of_306_passed",
     "governedExpansionQuality": "757_of_757_passed",
-    "categoryDiscoveryLocal": "757_of_757_direct_links_across_19_categories",
-    "categoryDiscoveryPublic": "757_of_757_direct_links_across_19_categories",
+    "categoryDiscoveryLocal": "154_of_154_retained_hubs_and_515_of_515_remaining_support_links_across_19_categories",
+    "categoryDiscoveryPublic": "25_of_25_consolidation_hubs_present_and_88_of_88_sources_excluded_from_sitemaps",
     "publicBaseConversionAudit20260818": "1490_routes_checked; noCta_0; 1175 passed in bulk. The bulk run was network-inconclusive for 315 routes because of fetch and body timeouts. Every explicitly reported stale-structure page was re-fetched individually and exposed first-viewport CTA, responsive sticky enablement and concise purchase-link copy.",
     "babyConversionRuntime": "253_of_253_passed",
     "newPagesRuntime": "151_of_151_passed_and_in_sitemaps_after_2026_08_20_release",
     "existingRefreshRuntime": "118_of_118_passed",
     "distributionImages": "18_across_6_sites_passed",
-    "publicHosts": "release_eba7ed0_five_primary_pilot_hosts_and_assets_http_200",
+    "publicHosts": "release_22f2985_all_seven_host-aware_origin_homepages_http_200",
     "productionTarget": "exact_B0931ZY7DK_madababy-20_first_viewport_and_self_canonical",
     "firstExpansionClickPage": "exact_B0H5X15MHS_madapets-20_first_viewport_and_self_canonical",
     "costumePilot": "first_viewport_CJ_self_canonical_structured_data_and_sitemap_passed",
     "productionCache": "exact Momcozy, Ergobaby review and Costume guide HTML returned HTTP_200 and Cloudflare_HIT with current conversion markers on 2026-08-18",
-    "productionProcess": "affiliate_release_eba7ed0_systemd_port_3011_active_restart_0; immutable_rollback_db8ac5e_retained",
+    "productionProcess": "affiliate_release_22f2985_systemd_port_3011_active_restart_0; immutable_rollback_eba7ed0_retained",
+    "searchConsolidation20260823": "25_of_25_family_hubs; 113_of_113_measured_urls; 88_base_plus_88_en-gb_permanent_redirects; public_errors_0",
+    "costumeConversionPublic20260823": "132_of_132_passed; failed_0_noCta_0",
     "responsiveStickyCommerce": "desktop_1440x900_and_mobile_390x844_exact_Momcozy_B0DKHCWJ5G_madababy-20_anchor_passed_on_current_production_runtime",
     "fullCommercialRouteAudit": "6710_of_6710_local_routes_passed; candidate_385_of_385_production_database_routes_passed; failed_0_noCta_0",
     "mainCandidate": "commit_c1ebfcb_deployed_and_public_fingerprint_verified",
@@ -427,15 +431,15 @@
     "dailyOperations20260821": "seven_homepages_and_seven_sitemaps_http_200; seo_affiliate_links_search_recovery_next_product_and_lint_passed; no_deploy_or_submission"
   },
   "indexNow": {
-    "date": "2026-08-21",
-    "submitted": 27,
-    "accepted": 27,
+    "date": "2026-08-23",
+    "submitted": 48,
+    "accepted": 48,
     "httpStatus": 200,
-    "bySite": { "network": 6, "smarthome": 5, "homeoffice": 6, "baby": 6, "pet": 4 },
-    "scope": "Only the five homepages, 17 affected categories and five materially improved ranking-recovery pages. Sitemaps, unchanged pages, the 151-page observation cohort and the five new product-pilot pages were excluded."
+    "bySite": { "network": 7, "smarthome": 9, "homeoffice": 7, "baby": 4, "pet": 9, "costume": 12 },
+    "scope": "Only 25 retained consolidation hubs, 19 changed categories and four query-backed refreshes. The 88 redirect sources, unchanged pages, the 151-page observation cohort and the five new product-pilot pages were excluded."
   },
   "measurementGates": {
-    "zeroInspectionResume": "2026-08-22 after property quota renewal; exact queue 410, cumulative inspected 203, indexed 198, not-on-Google 5, remaining 207",
+    "zeroInspectionResume": "2026-08-24 after property quota renewal; exact queue 486, cumulative inspected 260, indexed 252, not-on-Google 8, remaining 226",
     "expansion757Day14": "2026-08-23",
     "productPilot5TechnicalRecheck": "2026-08-24; verify exact merchant identity, direct-URL conversion, canonical and discovery isolation before adding reciprocal discovery links.",
     "soft151OriginalDay14AndPostSitemapDay7": "2026-08-27",

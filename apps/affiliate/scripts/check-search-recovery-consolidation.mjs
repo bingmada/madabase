@@ -56,16 +56,26 @@ function normalizeUrl(value) {
 async function fetchRoute(publicUrl, redirect = "follow") {
   const url = new URL(publicUrl);
   const target = publicAudit ? publicUrl : `${localOrigin}${url.pathname}`;
-  return fetch(target, {
-    headers: publicAudit ? { "user-agent": "Madabase consolidation auditor/1.0" } : {
-      host: url.host,
-      "x-forwarded-host": url.host,
-      "x-forwarded-proto": "https",
-      "user-agent": "Madabase consolidation auditor/1.0",
-    },
-    redirect,
-    signal: AbortSignal.timeout(30_000),
-  });
+  const attempts = publicAudit ? 4 : 1;
+  let lastError;
+  for (let attempt = 1; attempt <= attempts; attempt += 1) {
+    try {
+      return await fetch(target, {
+        headers: publicAudit ? { "user-agent": "Madabase consolidation auditor/1.0" } : {
+          host: url.host,
+          "x-forwarded-host": url.host,
+          "x-forwarded-proto": "https",
+          "user-agent": "Madabase consolidation auditor/1.0",
+        },
+        redirect,
+        signal: AbortSignal.timeout(30_000),
+      });
+    } catch (error) {
+      lastError = error;
+      if (attempt < attempts) await new Promise((resolve) => setTimeout(resolve, attempt * 750));
+    }
+  }
+  throw lastError;
 }
 
 const config = JSON.parse(fs.readFileSync(configPath, "utf8"));

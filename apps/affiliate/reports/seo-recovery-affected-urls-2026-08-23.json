@@ -1,6 +1,6 @@
 {
   "checkedAt": "2026-08-23T10:59:23+08:00",
-  "status": "local_release_validated",
+  "status": "production_release_22f2985_validated",
   "authority": "Owner authorized comprehensive SEO recovery for existing pages on August 23; new indexable expansion remains frozen.",
   "latest24Hours": {
     "root": { "clicks": 0, "impressions": 202, "ctr": "0%", "averagePosition": 34.5 },
@@ -67,12 +67,12 @@
   ],
   "releaseArtifact": {
     "path": "apps/affiliate/.release/affiliate-runtime.tgz",
-    "bytes": 60730343,
-    "sha256": "c6bc42f547b3a755772433103b0523653f82e8dd45aafd8d46fd783f53c2bac4"
+    "bytes": 60732557,
+    "sha256": "abf54c72f10cdf78501703621cdcbb7a7456d6d2e42873546360c347a6d69ab2"
   },
   "searchEngineSubmission": {
-    "indexNow": "pending-production-release",
-    "googleSitemaps": "do-not-resubmit-successful-sitemaps",
+    "indexNow": "accepted-http-200-exact-48-including-25-consolidation-hubs-19-categories-and-4-query-backed-pages",
+    "googleSitemaps": "five-memberships-changed-public-validated-resubmission-blocked-auth; baby-and-style-not-due",
     "googleRequestIndexing": "do-not-bulk-request"
   }
 }

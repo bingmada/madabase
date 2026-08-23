@@ -1,7 +1,7 @@
 {
   "version": 3,
-  "updatedAt": "2026-08-23T10:54:38+08:00",
-  "status": "august_2026_spam_update_active_existing_page_recovery",
+  "updatedAt": "2026-08-23T13:21:19+08:00",
+  "status": "august_2026_spam_update_closed_existing_page_recovery_deployed_new_growth_frozen",
   "trigger": {
     "name": "August 2026 spam update",
     "startedAt": "2026-08-18T09:27:00-07:00",
@@ -92,9 +92,15 @@
       "actions": [
         "Replace flat category-to-all-support-page discovery with category-to-primary-family-hub hierarchy",
         "Add explicit primary-hub and sibling-role navigation plus ItemList schema to all governed family guides",
-        "Refresh Baby Brezza capacity, standing-desk height, Deco BE63/BE67/BE85 and Aqara FP300 pages from current 24-hour query evidence"
+        "Refresh Baby Brezza capacity, standing-desk height, Deco BE63/BE67/BE85 and Aqara FP300 pages from current 24-hour query evidence",
+        "Merge the useful sections of 88 zero-impression support URLs into 25 family buying-guide hubs and permanently redirect the support URLs",
+        "Remove the 88 consolidation sources from categories, home, sitemap, llms, market inventory, related-page discovery and distribution surfaces"
       ],
-      "rollbackSignal": "Revert the shared hierarchy if crawlability validation fails or indexed family support pages lose their only crawlable primary-hub path"
+      "rollbackSignal": "Revert the shared hierarchy if crawlability validation fails or indexed family support pages lose their only crawlable primary-hub path",
+      "consolidationLedger": "apps/affiliate/reports/seo-consolidation-ledger-2026-08-23.json",
+      "deployment": "Release 22f2985 is active at /srv/madabase-affiliate/releases/22f2985; rollback eba7ed0 is retained; all 25 hubs and 88 base plus 88 en-gb redirects passed public validation.",
+      "indexNow": "Exactly 48 changed canonicals were accepted with HTTP 200: 25 retained hubs, 19 changed category pages and four query-backed refreshes. Redirect sources and unchanged URLs were excluded.",
+      "googleSitemaps": "Five sitemap memberships changed because consolidation sources were removed. Public sitemaps passed, but Search Console resubmission is blocked by the current unauthenticated Chrome session; Baby and Style were not due."
     }
   }
 }
