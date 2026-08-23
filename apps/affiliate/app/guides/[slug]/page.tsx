@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { AffiliateButton, AffiliateButtonGroup } from "@/components/AffiliateButton";
 import { AmazonListingFreshness } from "@/components/AmazonCreatorsListing";
 import { JsonLd } from "@/components/JsonLd";
@@ -8,7 +8,7 @@ import { BaseMarketEditionLinks } from "@/components/MarketExperience";
 import { SearchOpportunityBacklinks, SearchOpportunityBlock } from "@/components/SearchOpportunityBlock";
 import { StyleGuidePage } from "@/components/StyleExperience";
 import { TrackedCommerceLink } from "@/components/TrackedCommerceLink";
-import { findGuide, findProduct, findRoundup, siteGuides } from "@/lib/content";
+import { findGuide, findProduct, findRoundup, siteGuideFamily, siteGuides } from "@/lib/content";
 import { effectiveContentUpdatedAt, findSearchOpportunity, searchOpportunityMetaDescription } from "@/lib/search-opportunities";
 import { breadcrumbSchema, guideSchema, itemListSchema, pageMetadata } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
@@ -19,6 +19,12 @@ import { amazonAsinAffiliateUrl } from "@/lib/affiliate-tracking";
 import { findAuthorizedCjFamilyOffer } from "@/lib/cj-offers";
 import { guideCommerceProduct, isCommerceAlternative } from "@/lib/commerce-paths";
 import { buyerFacingBody, buyerFacingHeading, buyerFacingSummary } from "@/lib/conversion-copy";
+import {
+  consolidationTargetSlug,
+  isConsolidatedFamilyHub,
+  isConsolidatedSupportGuide,
+  mergeConsolidatedFamilyGuide,
+} from "@/lib/search-recovery-consolidation";
 import {
   isCostumeProductIndexable,
   listCostumeCatalogProducts,
@@ -209,17 +215,32 @@ function costumeFamilyCatalogSelection(familySlug: string, category: string) {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const site = await getCurrentSite();
   const { slug } = await params;
-  const guide = findGuide(site.key, slug);
-  if (!guide) return {};
-  const searchOpportunity = findSearchOpportunity(site.key, "guide", slug);
-  return pageMetadata(site, `/guides/${slug}`, guide.title, searchOpportunityMetaDescription(searchOpportunity, guide.dek), guide.image);
+  const rawGuide = findGuide(site.key, slug);
+  if (!rawGuide) return {};
+  const redirectTarget = consolidationTargetSlug(rawGuide);
+  const metadataSlug = redirectTarget ?? slug;
+  const metadataGuide = redirectTarget
+    ? findGuide(site.key, redirectTarget) ?? rawGuide
+    : mergeConsolidatedFamilyGuide(
+        rawGuide,
+        rawGuide.familySlug ? siteGuideFamily(site.key, rawGuide.familySlug) : [rawGuide],
+      );
+  const searchOpportunity = findSearchOpportunity(site.key, "guide", metadataSlug);
+  return pageMetadata(site, `/guides/${metadataSlug}`, metadataGuide.title, searchOpportunityMetaDescription(searchOpportunity, metadataGuide.dek), metadataGuide.image);
 }
 
 export default async function GuidePage({ params }: { params: Promise<{ slug: string }> }) {
   const site = await getCurrentSite();
   const { slug } = await params;
-  const guide = findGuide(site.key, slug);
-  if (!guide) notFound();
+  const rawGuide = findGuide(site.key, slug);
+  if (!rawGuide) notFound();
+  const redirectTarget = consolidationTargetSlug(rawGuide);
+  if (redirectTarget) permanentRedirect(`/guides/${redirectTarget}`);
+  const guide = mergeConsolidatedFamilyGuide(
+    rawGuide,
+    rawGuide.familySlug ? siteGuideFamily(site.key, rawGuide.familySlug) : [rawGuide],
+  );
+  const consolidatedFamilyHub = isConsolidatedFamilyHub(guide);
   const searchOpportunity = findSearchOpportunity(site.key, "guide", slug);
   const effectiveUpdatedAt = effectiveContentUpdatedAt(guide.updatedAt, searchOpportunity?.updatedAt);
   const effectiveGuide = effectiveUpdatedAt === guide.updatedAt ? guide : { ...guide, updatedAt: effectiveUpdatedAt };
@@ -237,7 +258,8 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
   const explicitRelatedGuides = (guide.relatedGuides ?? [])
     .filter((guideSlug) => guideSlug !== guide.slug)
     .map((guideSlug) => findGuide(site.key, guideSlug))
-    .filter((item): item is NonNullable<ReturnType<typeof findGuide>> => Boolean(item));
+    .filter((item): item is NonNullable<ReturnType<typeof findGuide>> => Boolean(item))
+    .filter((item) => !isConsolidatedSupportGuide(item));
   const reciprocalRelatedGuides = siteGuides(site.key)
     .filter((item) => item.slug !== guide.slug && item.relatedGuides?.includes(guide.slug));
   const relatedGuides = [
@@ -341,7 +363,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         ])}
       />
       <JsonLd data={guideSchema(site, effectiveGuide)} />
-      {familyGuides.length ? (
+      {familyGuides.length > 1 ? (
         <JsonLd
           data={itemListSchema(
             site,
@@ -417,7 +439,15 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
           <h2 className="mt-2 text-xl font-bold" id="guide-quick-answer">The practical answer</h2>
           <p className="mt-3 leading-7 text-[var(--text)]">{directAnswer}</p>
         </section>
-        {familyGuides.length ? (
+        {consolidatedFamilyHub ? (
+          <section className="mt-8 rounded-md border border-[var(--brand)] bg-[var(--brand-soft)] p-5" data-consolidated-family-hub="true" aria-labelledby="consolidated-family-hub-heading">
+            <p className="eyebrow">Complete topic guide</p>
+            <h2 className="mt-3 text-2xl font-bold" id="consolidated-family-hub-heading">One page for the complete decision</h2>
+            <p className="mt-3 leading-7 text-[var(--muted)]">
+              Comparison, compatibility, ownership, maintenance, and setup guidance are now consolidated below. This keeps every useful check while removing separate pages that competed for the same family-level decision.
+            </p>
+          </section>
+        ) : familyGuides.length ? (
           <nav className="mt-8 rounded-md border border-[var(--border)] bg-white p-5" data-family-topic-cluster="true" aria-labelledby="family-topic-cluster-heading">
             <p className="eyebrow">Decision guide series</p>
             <h2 className="mt-3 text-2xl font-bold" id="family-topic-cluster-heading">

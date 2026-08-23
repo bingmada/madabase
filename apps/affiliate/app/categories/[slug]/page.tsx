@@ -162,7 +162,7 @@ function GovernedDecisionGuideLinks({ guides }: { guides: Guide[] }) {
         <p className="eyebrow">Topic hubs</p>
         <h2 className="mt-3 text-2xl font-black" id="specialized-decision-guides-heading">Start with one complete buying decision</h2>
         <p className="mt-3 leading-7 text-[var(--muted)]">
-          Each primary guide links to its focused comparison, compatibility, ownership, setup, and safety checks. This keeps one clear topic hierarchy instead of flattening every supporting page into the category index.
+          Each primary guide either contains or links to its focused comparison, compatibility, ownership, setup, and safety checks. This keeps one clear topic hierarchy instead of flattening every supporting page into the category index.
         </p>
       </div>
       <ul className="mt-7 grid gap-x-7 gap-y-3 lg:grid-cols-2">

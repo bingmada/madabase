@@ -1,4 +1,5 @@
 import type { Guide, Product, Roundup, SiteKey, Tool } from "./types";
+import { isConsolidatedSupportGuide } from "./search-recovery-consolidation";
 import { quadrupleExpansionGuides } from "./quadruple-expansion-content";
 import { applySiteAffiliateTracking } from "./affiliate-tracking";
 import {
@@ -2403,7 +2404,15 @@ export function siteRoundups(site: SiteKey) {
 }
 
 export function siteGuides(site: SiteKey) {
-  return guides.filter((guide) => guide.site === site && isContentVisible(guide));
+  return guides.filter(
+    (guide) => guide.site === site && isContentVisible(guide) && !isConsolidatedSupportGuide(guide),
+  );
+}
+
+export function siteGuideFamily(site: SiteKey, familySlug: string) {
+  return guides.filter(
+    (guide) => guide.site === site && guide.familySlug === familySlug && isContentVisible(guide),
+  );
 }
 
 export function siteTools(site: SiteKey) {

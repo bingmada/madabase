@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { LocalizedMarketContent } from "@/components/MarketExperience";
 import {
   basePathForMarketPage,
@@ -10,7 +10,8 @@ import {
 import { getMarketByRouteSlug, supportsMarketEditions } from "@/lib/markets";
 import { pageMetadata } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
-import { findProduct } from "@/lib/content";
+import { findGuide, findProduct } from "@/lib/content";
+import { consolidationTargetSlug } from "@/lib/search-recovery-consolidation";
 
 type MarketPageParams = Promise<{ slug: string; kind: string; contentSlug: string }>;
 
@@ -65,6 +66,13 @@ export async function generateMetadata({ params }: { params: MarketPageParams })
 }
 
 export default async function MarketContentPage({ params }: { params: MarketPageParams }) {
+  const routeParams = await params;
+  if (routeParams.kind === "guides") {
+    const site = await getCurrentSite();
+    const guide = findGuide(site.key, routeParams.contentSlug);
+    const target = guide ? consolidationTargetSlug(guide) : undefined;
+    if (target) permanentRedirect(`/${routeParams.slug}/guides/${target}`);
+  }
   const resolved = await resolveMarketPage(params);
   if (!resolved) notFound();
   return <LocalizedMarketContent {...resolved} />;

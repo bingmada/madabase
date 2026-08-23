@@ -50,6 +50,7 @@
     "check:ranking-refresh": "node scripts/check-ranking-refresh-quality.mjs",
     "check:next-product-expansion": "node scripts/check-next-product-expansion-plan.mjs",
     "check:search-recovery": "node scripts/check-search-recovery.mjs",
+    "check:search-consolidation": "node scripts/check-search-recovery-consolidation.mjs",
     "check:cj-baby-expansion": "node scripts/check-cj-baby-expansion-quality.mjs",
     "report:search-portfolio": "node scripts/report-search-portfolio.mjs",
     "report:current-search-gates": "node scripts/report-current-search-gates.mjs",

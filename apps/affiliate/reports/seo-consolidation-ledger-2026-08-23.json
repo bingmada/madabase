@@ -1,0 +1,516 @@
+{
+  "version": 1,
+  "authorizedAt": "2026-08-23T11:42:00+08:00",
+  "measurementWindow": "2026-08-14 through 2026-08-20",
+  "sourceLedger": "docs/affiliate-expansion757-search-gate-2026-08-23.csv",
+  "decision": "Merge every useful supporting section into the family buying guide and permanently redirect only the support URLs in families where every role recorded zero clicks and zero impressions.",
+  "families": 25,
+  "measuredUrls": 113,
+  "retainedCanonicalHubs": 25,
+  "permanentRedirects": 88,
+  "clicks": 0,
+  "impressions": 0,
+  "ledger": [
+    {
+      "site": "network",
+      "familySlug": "ethernet-patch-panels",
+      "measurementWindow": "2026-08-14 through 2026-08-20",
+      "clicks": 0,
+      "impressions": 0,
+      "targetUrl": "https://network.madabase.com/guides/ethernet-patch-panels-buying-guide",
+      "sourceUrls": [
+        "https://network.madabase.com/guides/ethernet-patch-panels-vs-alternatives",
+        "https://network.madabase.com/guides/ethernet-patch-panels-compatibility-and-fit-guide",
+        "https://network.madabase.com/guides/ethernet-patch-panels-ownership-cost-and-maintenance"
+      ],
+      "preservedUrls": [
+        "https://network.madabase.com/guides/ethernet-patch-panels-buying-guide",
+        "https://network.madabase.com/guides/ethernet-patch-panels-vs-alternatives",
+        "https://network.madabase.com/guides/ethernet-patch-panels-compatibility-and-fit-guide",
+        "https://network.madabase.com/guides/ethernet-patch-panels-ownership-cost-and-maintenance"
+      ]
+    },
+    {
+      "site": "network",
+      "familySlug": "mobile-hotspots",
+      "measurementWindow": "2026-08-14 through 2026-08-20",
+      "clicks": 0,
+      "impressions": 0,
+      "targetUrl": "https://network.madabase.com/guides/mobile-hotspots-buying-guide",
+      "sourceUrls": [
+        "https://network.madabase.com/guides/mobile-hotspots-vs-alternatives",
+        "https://network.madabase.com/guides/mobile-hotspots-compatibility-and-fit-guide",
+        "https://network.madabase.com/guides/mobile-hotspots-ownership-cost-and-maintenance"
+      ],
+      "preservedUrls": [
+        "https://network.madabase.com/guides/mobile-hotspots-buying-guide",
+        "https://network.madabase.com/guides/mobile-hotspots-vs-alternatives",
+        "https://network.madabase.com/guides/mobile-hotspots-compatibility-and-fit-guide",
+        "https://network.madabase.com/guides/mobile-hotspots-ownership-cost-and-maintenance"
+      ]
+    },
+    {
+      "site": "network",
+      "familySlug": "usb-wifi-adapters",
+      "measurementWindow": "2026-08-14 through 2026-08-20",
+      "clicks": 0,
+      "impressions": 0,
+      "targetUrl": "https://network.madabase.com/guides/usb-wifi-adapters-buying-guide",
+      "sourceUrls": [
+        "https://network.madabase.com/guides/usb-wifi-adapters-vs-alternatives",
+        "https://network.madabase.com/guides/usb-wifi-adapters-compatibility-and-fit-guide",
+        "https://network.madabase.com/guides/usb-wifi-adapters-ownership-cost-and-maintenance"
+      ],
+      "preservedUrls": [
+        "https://network.madabase.com/guides/usb-wifi-adapters-buying-guide",
+        "https://network.madabase.com/guides/usb-wifi-adapters-vs-alternatives",
+        "https://network.madabase.com/guides/usb-wifi-adapters-compatibility-and-fit-guide",
+        "https://network.madabase.com/guides/usb-wifi-adapters-ownership-cost-and-maintenance"
+      ]
+    },
+    {
+      "site": "network",
+      "familySlug": "vpn-gateways",
+      "measurementWindow": "2026-08-14 through 2026-08-20",
+      "clicks": 0,
+      "impressions": 0,
+      "targetUrl": "https://network.madabase.com/guides/vpn-gateways-buying-guide",
+      "sourceUrls": [
+        "https://network.madabase.com/guides/vpn-gateways-vs-alternatives",
+        "https://network.madabase.com/guides/vpn-gateways-compatibility-and-fit-guide",
+        "https://network.madabase.com/guides/vpn-gateways-ownership-cost-and-maintenance"
+      ],
+      "preservedUrls": [
+        "https://network.madabase.com/guides/vpn-gateways-buying-guide",
+        "https://network.madabase.com/guides/vpn-gateways-vs-alternatives",
+        "https://network.madabase.com/guides/vpn-gateways-compatibility-and-fit-guide",
+        "https://network.madabase.com/guides/vpn-gateways-ownership-cost-and-maintenance"
+      ]
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "diy-smart-alarm-kits",
+      "measurementWindow": "2026-08-14 through 2026-08-20",
+      "clicks": 0,
+      "impressions": 0,
+      "targetUrl": "https://smarthome.madabase.com/guides/diy-smart-alarm-kits-buying-guide",
+      "sourceUrls": [
+        "https://smarthome.madabase.com/guides/diy-smart-alarm-kits-vs-alternatives",
+        "https://smarthome.madabase.com/guides/diy-smart-alarm-kits-compatibility-and-fit-guide",
+        "https://smarthome.madabase.com/guides/diy-smart-alarm-kits-ownership-cost-and-maintenance",
+        "https://smarthome.madabase.com/guides/diy-smart-alarm-kits-setup-and-daily-workflow"
+      ],
+      "preservedUrls": [
+        "https://smarthome.madabase.com/guides/diy-smart-alarm-kits-buying-guide",
+        "https://smarthome.madabase.com/guides/diy-smart-alarm-kits-vs-alternatives",
+        "https://smarthome.madabase.com/guides/diy-smart-alarm-kits-compatibility-and-fit-guide",
+        "https://smarthome.madabase.com/guides/diy-smart-alarm-kits-ownership-cost-and-maintenance",
+        "https://smarthome.madabase.com/guides/diy-smart-alarm-kits-setup-and-daily-workflow"
+      ]
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-displays",
+      "measurementWindow": "2026-08-14 through 2026-08-20",
+      "clicks": 0,
+      "impressions": 0,
+      "targetUrl": "https://smarthome.madabase.com/guides/smart-displays-buying-guide",
+      "sourceUrls": [
+        "https://smarthome.madabase.com/guides/smart-displays-vs-alternatives",
+        "https://smarthome.madabase.com/guides/smart-displays-compatibility-and-fit-guide",
+        "https://smarthome.madabase.com/guides/smart-displays-ownership-cost-and-maintenance",
+        "https://smarthome.madabase.com/guides/smart-displays-setup-and-daily-workflow"
+      ],
+      "preservedUrls": [
+        "https://smarthome.madabase.com/guides/smart-displays-buying-guide",
+        "https://smarthome.madabase.com/guides/smart-displays-vs-alternatives",
+        "https://smarthome.madabase.com/guides/smart-displays-compatibility-and-fit-guide",
+        "https://smarthome.madabase.com/guides/smart-displays-ownership-cost-and-maintenance",
+        "https://smarthome.madabase.com/guides/smart-displays-setup-and-daily-workflow"
+      ]
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-garage-door-controllers",
+      "measurementWindow": "2026-08-14 through 2026-08-20",
+      "clicks": 0,
+      "impressions": 0,
+      "targetUrl": "https://smarthome.madabase.com/guides/smart-garage-door-controllers-buying-guide",
+      "sourceUrls": [
+        "https://smarthome.madabase.com/guides/smart-garage-door-controllers-vs-alternatives",
+        "https://smarthome.madabase.com/guides/smart-garage-door-controllers-compatibility-and-fit-guide",
+        "https://smarthome.madabase.com/guides/smart-garage-door-controllers-ownership-cost-and-maintenance",
+        "https://smarthome.madabase.com/guides/smart-garage-door-controllers-setup-and-daily-workflow"
+      ],
+      "preservedUrls": [
+        "https://smarthome.madabase.com/guides/smart-garage-door-controllers-buying-guide",
+        "https://smarthome.madabase.com/guides/smart-garage-door-controllers-vs-alternatives",
+        "https://smarthome.madabase.com/guides/smart-garage-door-controllers-compatibility-and-fit-guide",
+        "https://smarthome.madabase.com/guides/smart-garage-door-controllers-ownership-cost-and-maintenance",
+        "https://smarthome.madabase.com/guides/smart-garage-door-controllers-setup-and-daily-workflow"
+      ]
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-smoke-co-listeners",
+      "measurementWindow": "2026-08-14 through 2026-08-20",
+      "clicks": 0,
+      "impressions": 0,
+      "targetUrl": "https://smarthome.madabase.com/guides/smart-smoke-co-listeners-buying-guide",
+      "sourceUrls": [
+        "https://smarthome.madabase.com/guides/smart-smoke-co-listeners-vs-alternatives",
+        "https://smarthome.madabase.com/guides/smart-smoke-co-listeners-compatibility-and-fit-guide",
+        "https://smarthome.madabase.com/guides/smart-smoke-co-listeners-ownership-cost-and-maintenance",
+        "https://smarthome.madabase.com/guides/smart-smoke-co-listeners-setup-and-daily-workflow"
+      ],
+      "preservedUrls": [
+        "https://smarthome.madabase.com/guides/smart-smoke-co-listeners-buying-guide",
+        "https://smarthome.madabase.com/guides/smart-smoke-co-listeners-vs-alternatives",
+        "https://smarthome.madabase.com/guides/smart-smoke-co-listeners-compatibility-and-fit-guide",
+        "https://smarthome.madabase.com/guides/smart-smoke-co-listeners-ownership-cost-and-maintenance",
+        "https://smarthome.madabase.com/guides/smart-smoke-co-listeners-setup-and-daily-workflow"
+      ]
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "mechanical-office-keyboards",
+      "measurementWindow": "2026-08-14 through 2026-08-20",
+      "clicks": 0,
+      "impressions": 0,
+      "targetUrl": "https://homeoffice.madabase.com/guides/mechanical-office-keyboards-buying-guide",
+      "sourceUrls": [
+        "https://homeoffice.madabase.com/guides/mechanical-office-keyboards-vs-alternatives",
+        "https://homeoffice.madabase.com/guides/mechanical-office-keyboards-compatibility-and-fit-guide",
+        "https://homeoffice.madabase.com/guides/mechanical-office-keyboards-ownership-cost-and-maintenance",
+        "https://homeoffice.madabase.com/guides/mechanical-office-keyboards-setup-and-daily-workflow"
+      ],
+      "preservedUrls": [
+        "https://homeoffice.madabase.com/guides/mechanical-office-keyboards-buying-guide",
+        "https://homeoffice.madabase.com/guides/mechanical-office-keyboards-vs-alternatives",
+        "https://homeoffice.madabase.com/guides/mechanical-office-keyboards-compatibility-and-fit-guide",
+        "https://homeoffice.madabase.com/guides/mechanical-office-keyboards-ownership-cost-and-maintenance",
+        "https://homeoffice.madabase.com/guides/mechanical-office-keyboards-setup-and-daily-workflow"
+      ]
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "office-trackballs",
+      "measurementWindow": "2026-08-14 through 2026-08-20",
+      "clicks": 0,
+      "impressions": 0,
+      "targetUrl": "https://homeoffice.madabase.com/guides/office-trackballs-buying-guide",
+      "sourceUrls": [
+        "https://homeoffice.madabase.com/guides/office-trackballs-vs-alternatives",
+        "https://homeoffice.madabase.com/guides/office-trackballs-compatibility-and-fit-guide",
+        "https://homeoffice.madabase.com/guides/office-trackballs-ownership-cost-and-maintenance",
+        "https://homeoffice.madabase.com/guides/office-trackballs-setup-and-daily-workflow"
+      ],
+      "preservedUrls": [
+        "https://homeoffice.madabase.com/guides/office-trackballs-buying-guide",
+        "https://homeoffice.madabase.com/guides/office-trackballs-vs-alternatives",
+        "https://homeoffice.madabase.com/guides/office-trackballs-compatibility-and-fit-guide",
+        "https://homeoffice.madabase.com/guides/office-trackballs-ownership-cost-and-maintenance",
+        "https://homeoffice.madabase.com/guides/office-trackballs-setup-and-daily-workflow"
+      ]
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "wireless-conference-headsets",
+      "measurementWindow": "2026-08-14 through 2026-08-20",
+      "clicks": 0,
+      "impressions": 0,
+      "targetUrl": "https://homeoffice.madabase.com/guides/wireless-conference-headsets-buying-guide",
+      "sourceUrls": [
+        "https://homeoffice.madabase.com/guides/wireless-conference-headsets-vs-alternatives",
+        "https://homeoffice.madabase.com/guides/wireless-conference-headsets-compatibility-and-fit-guide",
+        "https://homeoffice.madabase.com/guides/wireless-conference-headsets-ownership-cost-and-maintenance",
+        "https://homeoffice.madabase.com/guides/wireless-conference-headsets-setup-and-daily-workflow"
+      ],
+      "preservedUrls": [
+        "https://homeoffice.madabase.com/guides/wireless-conference-headsets-buying-guide",
+        "https://homeoffice.madabase.com/guides/wireless-conference-headsets-vs-alternatives",
+        "https://homeoffice.madabase.com/guides/wireless-conference-headsets-compatibility-and-fit-guide",
+        "https://homeoffice.madabase.com/guides/wireless-conference-headsets-ownership-cost-and-maintenance",
+        "https://homeoffice.madabase.com/guides/wireless-conference-headsets-setup-and-daily-workflow"
+      ]
+    },
+    {
+      "site": "pet",
+      "familySlug": "automatic-ball-launchers",
+      "measurementWindow": "2026-08-14 through 2026-08-20",
+      "clicks": 0,
+      "impressions": 0,
+      "targetUrl": "https://pets.madabase.com/guides/automatic-ball-launchers-buying-guide",
+      "sourceUrls": [
+        "https://pets.madabase.com/guides/automatic-ball-launchers-vs-alternatives",
+        "https://pets.madabase.com/guides/automatic-ball-launchers-compatibility-and-fit-guide",
+        "https://pets.madabase.com/guides/automatic-ball-launchers-ownership-cost-and-maintenance",
+        "https://pets.madabase.com/guides/automatic-ball-launchers-setup-and-daily-workflow"
+      ],
+      "preservedUrls": [
+        "https://pets.madabase.com/guides/automatic-ball-launchers-buying-guide",
+        "https://pets.madabase.com/guides/automatic-ball-launchers-vs-alternatives",
+        "https://pets.madabase.com/guides/automatic-ball-launchers-compatibility-and-fit-guide",
+        "https://pets.madabase.com/guides/automatic-ball-launchers-ownership-cost-and-maintenance",
+        "https://pets.madabase.com/guides/automatic-ball-launchers-setup-and-daily-workflow"
+      ]
+    },
+    {
+      "site": "pet",
+      "familySlug": "dog-activity-collars",
+      "measurementWindow": "2026-08-14 through 2026-08-20",
+      "clicks": 0,
+      "impressions": 0,
+      "targetUrl": "https://pets.madabase.com/guides/dog-activity-collars-buying-guide",
+      "sourceUrls": [
+        "https://pets.madabase.com/guides/dog-activity-collars-vs-alternatives",
+        "https://pets.madabase.com/guides/dog-activity-collars-compatibility-and-fit-guide",
+        "https://pets.madabase.com/guides/dog-activity-collars-ownership-cost-and-maintenance",
+        "https://pets.madabase.com/guides/dog-activity-collars-setup-and-daily-workflow"
+      ],
+      "preservedUrls": [
+        "https://pets.madabase.com/guides/dog-activity-collars-buying-guide",
+        "https://pets.madabase.com/guides/dog-activity-collars-vs-alternatives",
+        "https://pets.madabase.com/guides/dog-activity-collars-compatibility-and-fit-guide",
+        "https://pets.madabase.com/guides/dog-activity-collars-ownership-cost-and-maintenance",
+        "https://pets.madabase.com/guides/dog-activity-collars-setup-and-daily-workflow"
+      ]
+    },
+    {
+      "site": "pet",
+      "familySlug": "interactive-puzzle-feeders",
+      "measurementWindow": "2026-08-14 through 2026-08-20",
+      "clicks": 0,
+      "impressions": 0,
+      "targetUrl": "https://pets.madabase.com/guides/interactive-puzzle-feeders-buying-guide",
+      "sourceUrls": [
+        "https://pets.madabase.com/guides/interactive-puzzle-feeders-vs-alternatives",
+        "https://pets.madabase.com/guides/interactive-puzzle-feeders-compatibility-and-fit-guide",
+        "https://pets.madabase.com/guides/interactive-puzzle-feeders-ownership-cost-and-maintenance",
+        "https://pets.madabase.com/guides/interactive-puzzle-feeders-setup-and-daily-workflow"
+      ],
+      "preservedUrls": [
+        "https://pets.madabase.com/guides/interactive-puzzle-feeders-buying-guide",
+        "https://pets.madabase.com/guides/interactive-puzzle-feeders-vs-alternatives",
+        "https://pets.madabase.com/guides/interactive-puzzle-feeders-compatibility-and-fit-guide",
+        "https://pets.madabase.com/guides/interactive-puzzle-feeders-ownership-cost-and-maintenance",
+        "https://pets.madabase.com/guides/interactive-puzzle-feeders-setup-and-daily-workflow"
+      ]
+    },
+    {
+      "site": "pet",
+      "familySlug": "pet-stain-carpet-cleaners",
+      "measurementWindow": "2026-08-14 through 2026-08-20",
+      "clicks": 0,
+      "impressions": 0,
+      "targetUrl": "https://pets.madabase.com/guides/pet-stain-carpet-cleaners-buying-guide",
+      "sourceUrls": [
+        "https://pets.madabase.com/guides/pet-stain-carpet-cleaners-vs-alternatives",
+        "https://pets.madabase.com/guides/pet-stain-carpet-cleaners-compatibility-and-fit-guide",
+        "https://pets.madabase.com/guides/pet-stain-carpet-cleaners-ownership-cost-and-maintenance",
+        "https://pets.madabase.com/guides/pet-stain-carpet-cleaners-setup-and-daily-workflow"
+      ],
+      "preservedUrls": [
+        "https://pets.madabase.com/guides/pet-stain-carpet-cleaners-buying-guide",
+        "https://pets.madabase.com/guides/pet-stain-carpet-cleaners-vs-alternatives",
+        "https://pets.madabase.com/guides/pet-stain-carpet-cleaners-compatibility-and-fit-guide",
+        "https://pets.madabase.com/guides/pet-stain-carpet-cleaners-ownership-cost-and-maintenance",
+        "https://pets.madabase.com/guides/pet-stain-carpet-cleaners-setup-and-daily-workflow"
+      ]
+    },
+    {
+      "site": "pet",
+      "familySlug": "robot-vacuums-for-pet-hair",
+      "measurementWindow": "2026-08-14 through 2026-08-20",
+      "clicks": 0,
+      "impressions": 0,
+      "targetUrl": "https://pets.madabase.com/guides/robot-vacuums-for-pet-hair-buying-guide",
+      "sourceUrls": [
+        "https://pets.madabase.com/guides/robot-vacuums-for-pet-hair-vs-alternatives",
+        "https://pets.madabase.com/guides/robot-vacuums-for-pet-hair-compatibility-and-fit-guide",
+        "https://pets.madabase.com/guides/robot-vacuums-for-pet-hair-ownership-cost-and-maintenance",
+        "https://pets.madabase.com/guides/robot-vacuums-for-pet-hair-setup-and-daily-workflow"
+      ],
+      "preservedUrls": [
+        "https://pets.madabase.com/guides/robot-vacuums-for-pet-hair-buying-guide",
+        "https://pets.madabase.com/guides/robot-vacuums-for-pet-hair-vs-alternatives",
+        "https://pets.madabase.com/guides/robot-vacuums-for-pet-hair-compatibility-and-fit-guide",
+        "https://pets.madabase.com/guides/robot-vacuums-for-pet-hair-ownership-cost-and-maintenance",
+        "https://pets.madabase.com/guides/robot-vacuums-for-pet-hair-setup-and-daily-workflow"
+      ]
+    },
+    {
+      "site": "pet",
+      "familySlug": "washable-orthopedic-pet-beds",
+      "measurementWindow": "2026-08-14 through 2026-08-20",
+      "clicks": 0,
+      "impressions": 0,
+      "targetUrl": "https://pets.madabase.com/guides/washable-orthopedic-pet-beds-buying-guide",
+      "sourceUrls": [
+        "https://pets.madabase.com/guides/washable-orthopedic-pet-beds-vs-alternatives",
+        "https://pets.madabase.com/guides/washable-orthopedic-pet-beds-compatibility-and-fit-guide",
+        "https://pets.madabase.com/guides/washable-orthopedic-pet-beds-ownership-cost-and-maintenance",
+        "https://pets.madabase.com/guides/washable-orthopedic-pet-beds-setup-and-daily-workflow"
+      ],
+      "preservedUrls": [
+        "https://pets.madabase.com/guides/washable-orthopedic-pet-beds-buying-guide",
+        "https://pets.madabase.com/guides/washable-orthopedic-pet-beds-vs-alternatives",
+        "https://pets.madabase.com/guides/washable-orthopedic-pet-beds-compatibility-and-fit-guide",
+        "https://pets.madabase.com/guides/washable-orthopedic-pet-beds-ownership-cost-and-maintenance",
+        "https://pets.madabase.com/guides/washable-orthopedic-pet-beds-setup-and-daily-workflow"
+      ]
+    },
+    {
+      "site": "costume",
+      "familySlug": "adult-costumes",
+      "measurementWindow": "2026-08-14 through 2026-08-20",
+      "clicks": 0,
+      "impressions": 0,
+      "targetUrl": "https://costumes.madabase.com/guides/adult-costumes-buying-guide",
+      "sourceUrls": [
+        "https://costumes.madabase.com/guides/adult-costumes-vs-alternatives",
+        "https://costumes.madabase.com/guides/adult-costumes-compatibility-and-fit-guide",
+        "https://costumes.madabase.com/guides/adult-costumes-ownership-cost-and-maintenance"
+      ],
+      "preservedUrls": [
+        "https://costumes.madabase.com/guides/adult-costumes-buying-guide",
+        "https://costumes.madabase.com/guides/adult-costumes-vs-alternatives",
+        "https://costumes.madabase.com/guides/adult-costumes-compatibility-and-fit-guide",
+        "https://costumes.madabase.com/guides/adult-costumes-ownership-cost-and-maintenance"
+      ]
+    },
+    {
+      "site": "costume",
+      "familySlug": "child-costumes",
+      "measurementWindow": "2026-08-14 through 2026-08-20",
+      "clicks": 0,
+      "impressions": 0,
+      "targetUrl": "https://costumes.madabase.com/guides/child-costumes-buying-guide",
+      "sourceUrls": [
+        "https://costumes.madabase.com/guides/child-costumes-vs-alternatives",
+        "https://costumes.madabase.com/guides/child-costumes-compatibility-and-fit-guide",
+        "https://costumes.madabase.com/guides/child-costumes-ownership-cost-and-maintenance"
+      ],
+      "preservedUrls": [
+        "https://costumes.madabase.com/guides/child-costumes-buying-guide",
+        "https://costumes.madabase.com/guides/child-costumes-vs-alternatives",
+        "https://costumes.madabase.com/guides/child-costumes-compatibility-and-fit-guide",
+        "https://costumes.madabase.com/guides/child-costumes-ownership-cost-and-maintenance"
+      ]
+    },
+    {
+      "site": "costume",
+      "familySlug": "high-end-costumes",
+      "measurementWindow": "2026-08-14 through 2026-08-20",
+      "clicks": 0,
+      "impressions": 0,
+      "targetUrl": "https://costumes.madabase.com/guides/high-end-costumes-buying-guide",
+      "sourceUrls": [
+        "https://costumes.madabase.com/guides/high-end-costumes-vs-alternatives",
+        "https://costumes.madabase.com/guides/high-end-costumes-compatibility-and-fit-guide",
+        "https://costumes.madabase.com/guides/high-end-costumes-ownership-cost-and-maintenance"
+      ],
+      "preservedUrls": [
+        "https://costumes.madabase.com/guides/high-end-costumes-buying-guide",
+        "https://costumes.madabase.com/guides/high-end-costumes-vs-alternatives",
+        "https://costumes.madabase.com/guides/high-end-costumes-compatibility-and-fit-guide",
+        "https://costumes.madabase.com/guides/high-end-costumes-ownership-cost-and-maintenance"
+      ]
+    },
+    {
+      "site": "costume",
+      "familySlug": "historical-theatrical-costumes",
+      "measurementWindow": "2026-08-14 through 2026-08-20",
+      "clicks": 0,
+      "impressions": 0,
+      "targetUrl": "https://costumes.madabase.com/guides/historical-theatrical-costumes-buying-guide",
+      "sourceUrls": [
+        "https://costumes.madabase.com/guides/historical-theatrical-costumes-vs-alternatives",
+        "https://costumes.madabase.com/guides/historical-theatrical-costumes-compatibility-and-fit-guide",
+        "https://costumes.madabase.com/guides/historical-theatrical-costumes-ownership-cost-and-maintenance"
+      ],
+      "preservedUrls": [
+        "https://costumes.madabase.com/guides/historical-theatrical-costumes-buying-guide",
+        "https://costumes.madabase.com/guides/historical-theatrical-costumes-vs-alternatives",
+        "https://costumes.madabase.com/guides/historical-theatrical-costumes-compatibility-and-fit-guide",
+        "https://costumes.madabase.com/guides/historical-theatrical-costumes-ownership-cost-and-maintenance"
+      ]
+    },
+    {
+      "site": "costume",
+      "familySlug": "mascot-costumes",
+      "measurementWindow": "2026-08-14 through 2026-08-20",
+      "clicks": 0,
+      "impressions": 0,
+      "targetUrl": "https://costumes.madabase.com/guides/mascot-costumes-buying-guide",
+      "sourceUrls": [
+        "https://costumes.madabase.com/guides/mascot-costumes-vs-alternatives",
+        "https://costumes.madabase.com/guides/mascot-costumes-compatibility-and-fit-guide",
+        "https://costumes.madabase.com/guides/mascot-costumes-ownership-cost-and-maintenance"
+      ],
+      "preservedUrls": [
+        "https://costumes.madabase.com/guides/mascot-costumes-buying-guide",
+        "https://costumes.madabase.com/guides/mascot-costumes-vs-alternatives",
+        "https://costumes.madabase.com/guides/mascot-costumes-compatibility-and-fit-guide",
+        "https://costumes.madabase.com/guides/mascot-costumes-ownership-cost-and-maintenance"
+      ]
+    },
+    {
+      "site": "costume",
+      "familySlug": "masks-and-masquerade",
+      "measurementWindow": "2026-08-14 through 2026-08-20",
+      "clicks": 0,
+      "impressions": 0,
+      "targetUrl": "https://costumes.madabase.com/guides/masks-and-masquerade-buying-guide",
+      "sourceUrls": [
+        "https://costumes.madabase.com/guides/masks-and-masquerade-vs-alternatives",
+        "https://costumes.madabase.com/guides/masks-and-masquerade-compatibility-and-fit-guide",
+        "https://costumes.madabase.com/guides/masks-and-masquerade-ownership-cost-and-maintenance"
+      ],
+      "preservedUrls": [
+        "https://costumes.madabase.com/guides/masks-and-masquerade-buying-guide",
+        "https://costumes.madabase.com/guides/masks-and-masquerade-vs-alternatives",
+        "https://costumes.madabase.com/guides/masks-and-masquerade-compatibility-and-fit-guide",
+        "https://costumes.madabase.com/guides/masks-and-masquerade-ownership-cost-and-maintenance"
+      ]
+    },
+    {
+      "site": "costume",
+      "familySlug": "prosthetics-special-effects",
+      "measurementWindow": "2026-08-14 through 2026-08-20",
+      "clicks": 0,
+      "impressions": 0,
+      "targetUrl": "https://costumes.madabase.com/guides/prosthetics-special-effects-buying-guide",
+      "sourceUrls": [
+        "https://costumes.madabase.com/guides/prosthetics-special-effects-vs-alternatives",
+        "https://costumes.madabase.com/guides/prosthetics-special-effects-compatibility-and-fit-guide",
+        "https://costumes.madabase.com/guides/prosthetics-special-effects-ownership-cost-and-maintenance"
+      ],
+      "preservedUrls": [
+        "https://costumes.madabase.com/guides/prosthetics-special-effects-buying-guide",
+        "https://costumes.madabase.com/guides/prosthetics-special-effects-vs-alternatives",
+        "https://costumes.madabase.com/guides/prosthetics-special-effects-compatibility-and-fit-guide",
+        "https://costumes.madabase.com/guides/prosthetics-special-effects-ownership-cost-and-maintenance"
+      ]
+    },
+    {
+      "site": "costume",
+      "familySlug": "theatrical-face-body-makeup",
+      "measurementWindow": "2026-08-14 through 2026-08-20",
+      "clicks": 0,
+      "impressions": 0,
+      "targetUrl": "https://costumes.madabase.com/guides/theatrical-face-body-makeup-buying-guide",
+      "sourceUrls": [
+        "https://costumes.madabase.com/guides/theatrical-face-body-makeup-vs-alternatives",
+        "https://costumes.madabase.com/guides/theatrical-face-body-makeup-compatibility-and-fit-guide",
+        "https://costumes.madabase.com/guides/theatrical-face-body-makeup-ownership-cost-and-maintenance"
+      ],
+      "preservedUrls": [
+        "https://costumes.madabase.com/guides/theatrical-face-body-makeup-buying-guide",
+        "https://costumes.madabase.com/guides/theatrical-face-body-makeup-vs-alternatives",
+        "https://costumes.madabase.com/guides/theatrical-face-body-makeup-compatibility-and-fit-guide",
+        "https://costumes.madabase.com/guides/theatrical-face-body-makeup-ownership-cost-and-maintenance"
+      ]
+    }
+  ]
+}
