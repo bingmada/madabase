@@ -95,7 +95,7 @@
     "log": "apps/affiliate/reports/daily-operations-2026-08-23.md"
   },
   "existingPageSeoRecovery20260823": {
-    "status": "local_release_validated_and_packaged",
+    "status": "local_release_validated_committed_push_blocked_explicit_export_approval",
     "ownerDirection": "Use the latest 24-hour GSC data, finish the August 23 work and comprehensively improve existing pages across the portfolio.",
     "diagnosis": "The current incident is not explained by broad deindexing: 252 of 260 inspected zero-impression URLs remain indexed. Expansion757 nevertheless fell to 292 exposed URLs, 465 zero-impression URLs, 2 clicks and 797 impressions in the complete August 14-20 window. The flat category-to-all-support-page structure diluted primary topic hierarchy across 757 programmatic guides.",
     "architectureRepair": "Nineteen category pages now expose 154 primary buying-guide hubs instead of flattening all 757 pages. Each hub and supporting page exposes the full labeled family decision path and family ItemList schema. Local rendered audit passed 154 of 154 category-to-hub links and 603 of 603 hub-to-support links.",
@@ -107,8 +107,8 @@
     ],
     "scopeLedger": "apps/affiliate/reports/seo-recovery-affected-urls-2026-08-23.json",
     "validation": "Search-recovery control, SEO, 306 affiliate links, next-product freeze, ESLint, optimized production build and Linux x64 release build passed. Category hierarchy passed 757 of 757. Non-Costume local base conversion passed 1,363 of 1,363; live Costume passed 132 of 132.",
-    "artifact": "apps/affiliate/.release/affiliate-runtime.tgz; 60,730,343 bytes; SHA-256 c6bc42f547b3a755772433103b0523653f82e8dd45aafd8d46fd783f53c2bac4",
-    "production": "Current public release remains eba7ed0 until a safe immutable cutover; no Google sitemap resubmission, bulk Request indexing or external distribution is authorized.",
+    "artifact": "Commit 6fa3935; apps/affiliate/.release/affiliate-runtime.tgz; 60,730,343 bytes; SHA-256 c6bc42f547b3a755772433103b0523653f82e8dd45aafd8d46fd783f53c2bac4",
+    "production": "Current public release remains eba7ed0. Push to origin/lyd-0609 was blocked because the unpushed linear history contains operational reports and a 57.9MB release artifact and the owner has not explicitly authorized exporting them to that remote. No production cutover, Google sitemap resubmission, bulk Request indexing or external distribution occurred.",
     "measurementGate": "Monitor rolling 24 hours for anomaly direction and the next complete seven-day window for tactical decisions. Do not claim recovery from partial same-day movement."
   },
   "crossSiteSpamUpdateRecovery20260821": {

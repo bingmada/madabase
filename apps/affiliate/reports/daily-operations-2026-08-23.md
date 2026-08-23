@@ -119,7 +119,7 @@ GSC 显示的是 8 月 10/16 日旧抓取时的 canonical 异常；今天生产 
 - 七个首页和七个 `sitemap.xml`：14/14 HTTP 200；响应约 2.19-3.59 秒。
 - 浏览器形态 HTML：Network、Smarthome、Pets、Style 为 `UPDATING`，Baby 为 `HIT`；Homeoffice 和 Costume 首次为 MISS/EXPIRED，复查均回填为 `HIT`。没有 5xx 或缓存故障信号。
 - `check:affiliate-links`：306/306 passed，8 个已知漂移或不可用 Amazon offer 继续被抑制。
-- 本地 release archive 已生成；本记录更新时尚未切换生产 release，因此没有 Cloudflare purge、sitemap 重提、IndexNow 提交或外部分发。
+- 本地 release archive 已生成并提交为 `6fa3935`；向 `origin/lyd-0609` 推送时被安全审批拦截，因为线性历史还包含此前未推送的运营报告和 57.9MB 发布归档，而所有者尚未明确授权把这些内容发送到该 GitHub remote。生产仍安全保持 `eba7ed0`，没有半切换、Cloudflare purge、sitemap 重提、IndexNow 提交或外部分发。
 
 ## 本地验证
 
