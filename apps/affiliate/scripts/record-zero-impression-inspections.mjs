@@ -14,6 +14,7 @@ const argumentsByName = new Map(
 const inputPath = argumentsByName.get("input");
 const previousLedgerPath = argumentsByName.get("previous-ledger");
 const reportDate = argumentsByName.get("report-date") ?? "2026-08-16";
+const sourceReportDate = argumentsByName.get("source-report-date") ?? reportDate;
 const quotaCheckedAt = argumentsByName.get("quota-checked-at") ?? new Date().toISOString();
 if (!inputPath) throw new Error("Pass --input=/absolute/path/to/url-inspection-results.json");
 
@@ -63,8 +64,8 @@ function zeroUrls(filename) {
     .filter(Boolean);
 }
 
-const expansion = new Set(zeroUrls(`affiliate-expansion757-search-gate-${reportDate}.csv`));
-const ranking = new Set(zeroUrls(`affiliate-ranking118-search-gate-${reportDate}.csv`));
+const expansion = new Set(zeroUrls(`affiliate-expansion757-search-gate-${sourceReportDate}.csv`));
+const ranking = new Set(zeroUrls(`affiliate-ranking118-search-gate-${sourceReportDate}.csv`));
 const urls = [...new Set([...expansion, ...ranking])].sort();
 const attempts = JSON.parse(fs.readFileSync(inputPath, "utf8"));
 const successful = new Map(
@@ -119,6 +120,7 @@ const nextInspectionDate = new Date(Date.UTC(
 nextInspectionDate.setUTCDate(nextInspectionDate.getUTCDate() + 1);
 const summary = {
   reportDate,
+  sourceReportDate,
   exactDueZeroImpressionUrls: rows.length,
   expansionZeroImpressionUrls: expansion.size,
   rankingRefreshZeroImpressionUrls: ranking.size,

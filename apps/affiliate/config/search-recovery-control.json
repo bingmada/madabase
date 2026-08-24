@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updatedAt": "2026-08-23T13:21:19+08:00",
+  "updatedAt": "2026-08-24T10:14:03+08:00",
   "status": "august_2026_spam_update_closed_existing_page_recovery_deployed_new_growth_frozen",
   "trigger": {
     "name": "August 2026 spam update",
@@ -49,7 +49,7 @@
   },
   "reviewGates": {
     "spamUpdate": "closed; wait until GSC contains three complete post-close days (August 22-24) before reassessment",
-    "expansion757Day14": "2026-08-23 metrics complete; live zero-impression inspection partial due daily quota; resume 2026-08-24",
+    "expansion757Day14": "2026-08-23 metrics complete; live zero-impression inspection now 361 of 486 after the 2026-08-24 continuation; resume the remaining 125 on 2026-08-25",
     "soft151PostSitemapDay7": "2026-08-27",
     "expansion757Day30": "2026-09-08"
   },
@@ -59,8 +59,8 @@
     "expectedRows": 1026
   },
   "postRolloutObservation": {
-    "checkedAt": "2026-08-23T10:54:38+08:00",
-    "latestCompleteGscDate": "2026-08-20",
+    "checkedAt": "2026-08-24T10:14:03+08:00",
+    "latestCompleteGscDate": "2026-08-21",
     "completePostCloseGscDaysAvailable": 0,
     "requiredCompletePostCloseDates": [
       "2026-08-22",
@@ -79,16 +79,16 @@
     },
     "zeroImpressionInspection": {
       "exactDue": 486,
-      "liveInspected": 260,
-      "indexed": 252,
-      "notOnGoogle": 8,
-      "blockedByDailyQuota": 226,
-      "nextInspectionGate": "2026-08-24 after property quota renewal"
+      "liveInspected": 361,
+      "indexed": 348,
+      "notOnGoogle": 13,
+      "blockedByDailyQuota": 125,
+      "nextInspectionGate": "2026-08-25 after property quota renewal"
     },
     "ownerAuthorizedRecovery": {
       "authorizedAt": "2026-08-23T10:54:38+08:00",
       "scope": "Existing pages across all seven sites; no new indexable expansion",
-      "latest24Hours": "Root 0 clicks, 202 impressions, 0% CTR, position 34.5; Network 8 impressions, Smarthome 6, Homeoffice 118, Baby 70, Pets 0, Style 0, Costume 0",
+      "latest24Hours": "Root 0 clicks, 228 impressions, 0% CTR, position 34.4; Network 8 impressions, Smarthome 1, Homeoffice 145, Baby 71, Pets 0, Style 0, Costume 0 and main madabase.com 3",
       "actions": [
         "Replace flat category-to-all-support-page discovery with category-to-primary-family-hub hierarchy",
         "Add explicit primary-hub and sibling-role navigation plus ItemList schema to all governed family guides",
@@ -100,7 +100,7 @@
       "consolidationLedger": "apps/affiliate/reports/seo-consolidation-ledger-2026-08-23.json",
       "deployment": "Release 22f2985 is active at /srv/madabase-affiliate/releases/22f2985; rollback eba7ed0 is retained; all 25 hubs and 88 base plus 88 en-gb redirects passed public validation.",
       "indexNow": "Exactly 48 changed canonicals were accepted with HTTP 200: 25 retained hubs, 19 changed category pages and four query-backed refreshes. Redirect sources and unchanged URLs were excluded.",
-      "googleSitemaps": "Five sitemap memberships changed because consolidation sources were removed. Public sitemaps passed, but Search Console resubmission is blocked by the current unauthenticated Chrome session; Baby and Style were not due."
+      "googleSitemaps": "Network, Smarthome, Homeoffice and Pets were resubmitted successfully in authenticated Search Console on 2026-08-24. Costumes had already been automatically reread on 2026-08-24 with the correct 121 discovered pages, so it was not duplicated. Baby and Style were unchanged and not due."
     }
   }
 }
