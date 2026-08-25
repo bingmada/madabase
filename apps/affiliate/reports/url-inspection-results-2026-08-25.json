@@ -1,0 +1,640 @@
+[
+  {
+    "url": "https://network.madabase.com/guides/usb-wifi-adapters-buying-guide",
+    "onGoogle": false,
+    "checkedAt": "2026-08-25T11:52:01.058Z",
+    "indexStatus": "Page is not indexed: Crawled - currently not indexed",
+    "sitemap": "Temporary processing error",
+    "referringPage": "https://network.madabase.com/sitemap.xml",
+    "lastCrawl": "Aug 9, 2026, 11:12:11 PM",
+    "crawlAllowed": "Yes",
+    "pageFetch": "Successful",
+    "indexingAllowed": "Yes",
+    "userDeclaredCanonical": "https://network.madabase.com/guides/usb-wifi-adapters-buying-guide",
+    "googleSelectedCanonical": "Inspected URL"
+  },
+  {
+    "url": "https://network.madabase.com/reviews/trendnet-teg-s350-2-5g-switch",
+    "onGoogle": false,
+    "checkedAt": "2026-08-25T11:52:01.058Z",
+    "indexStatus": "Page is not indexed: Discovered - currently not indexed",
+    "sitemap": "https://network.madabase.com/sitemap.xml",
+    "referringPage": "https://network.madabase.com/sitemap.xml",
+    "lastCrawl": "N/A",
+    "crawlAllowed": "N/A",
+    "pageFetch": "N/A",
+    "indexingAllowed": "N/A",
+    "userDeclaredCanonical": "N/A",
+    "googleSelectedCanonical": "N/A"
+  },
+  {
+    "url": "https://network.madabase.com/reviews/trendnet-teg-s380-2-5g-switch",
+    "onGoogle": false,
+    "checkedAt": "2026-08-25T11:52:01.058Z",
+    "indexStatus": "Page is not indexed: URL is unknown to Google",
+    "sitemap": "No referring sitemaps detected",
+    "referringPage": "None detected",
+    "lastCrawl": "N/A",
+    "crawlAllowed": "N/A",
+    "pageFetch": "N/A",
+    "indexingAllowed": "N/A",
+    "userDeclaredCanonical": "N/A",
+    "googleSelectedCanonical": "N/A"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/automatic-aquarium-feeders-vs-alternatives",
+    "onGoogle": false,
+    "checkedAt": "2026-08-25T11:52:01.058Z",
+    "indexStatus": "Page is not indexed: Crawled - currently not indexed",
+    "sitemap": "https://pets.madabase.com/sitemap.xml",
+    "referringPage": "https://pets.madabase.com/de-de/guides/automatic-aquarium-feeders-vs-alternatives; https://pets.madabase.com/sitemap.xml",
+    "lastCrawl": "Aug 10, 2026, 1:55:44 AM",
+    "crawlAllowed": "Yes",
+    "pageFetch": "Successful",
+    "indexingAllowed": "Yes",
+    "userDeclaredCanonical": "https://pets.madabase.com/guides/automatic-aquarium-feeders-vs-alternatives",
+    "googleSelectedCanonical": "Inspected URL"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/soft-sided-pet-carriers-buying-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:52:04.805Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/soft-sided-pet-carriers-compatibility-and-fit-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:52:08.222Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/soft-sided-pet-carriers-ownership-cost-and-maintenance",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:52:12.187Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/soft-sided-pet-carriers-setup-and-daily-workflow",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:52:15.633Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/top-entry-litter-boxes-buying-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:52:19.178Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/top-entry-litter-boxes-ownership-cost-and-maintenance",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:52:22.775Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/top-entry-litter-boxes-setup-and-daily-workflow",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:52:26.333Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/treat-dispensing-pet-cameras-ownership-cost-and-maintenance",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:52:31.611Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/treat-dispensing-pet-cameras-vs-alternatives",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:52:35.226Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/vehicle-pet-restraints-buying-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:52:38.758Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/vehicle-pet-restraints-ownership-cost-and-maintenance",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:52:42.280Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/vehicle-pet-restraints-setup-and-daily-workflow",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:52:45.832Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/vehicle-pet-restraints-vs-alternatives",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:52:49.411Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/washable-orthopedic-pet-beds-buying-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:52:52.971Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/washable-orthopedic-pet-beds-compatibility-and-fit-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:52:56.587Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/washable-orthopedic-pet-beds-ownership-cost-and-maintenance",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:53:00.165Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/washable-orthopedic-pet-beds-setup-and-daily-workflow",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:53:03.718Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/washable-orthopedic-pet-beds-vs-alternatives",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:53:09.068Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/wet-food-automatic-feeders-buying-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:53:12.659Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/wet-food-automatic-feeders-compatibility-and-fit-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:53:16.242Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/wireless-pump-pet-fountains-buying-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:53:19.828Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/wireless-pump-pet-fountains-compatibility-and-fit-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:53:23.438Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/wireless-pump-pet-fountains-ownership-cost-and-maintenance",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:53:27.024Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/wireless-pump-pet-fountains-setup-and-daily-workflow",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:53:30.634Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/best/aqara-t1-vs-yolink-bulldog-vs-moen-flo",
+    "onGoogle": false,
+    "checkedAt": "2026-08-25T11:53:34.187Z",
+    "indexStatus": "Page is not indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/best/best-smart-water-shutoff-valves-retrofit-inline",
+    "onGoogle": false,
+    "checkedAt": "2026-08-25T11:53:37.741Z",
+    "indexStatus": "Page is not indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/diy-smart-alarm-kits-buying-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:53:41.228Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/diy-smart-alarm-kits-compatibility-and-fit-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:53:44.696Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/diy-smart-alarm-kits-ownership-cost-and-maintenance",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:53:48.736Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/diy-smart-alarm-kits-setup-and-daily-workflow",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:53:52.285Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/diy-smart-alarm-kits-vs-alternatives",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:54:09.406Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/floodlight-security-cameras-buying-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:54:13.063Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/floodlight-security-cameras-compatibility-and-fit-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:54:16.708Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/floodlight-security-cameras-ownership-cost-and-maintenance",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:54:20.313Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/floodlight-security-cameras-setup-and-daily-workflow",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:54:23.913Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/indoor-air-quality-monitors-buying-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:54:27.478Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/indoor-air-quality-monitors-compatibility-and-fit-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:54:31.072Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/indoor-air-quality-monitors-setup-and-daily-workflow",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:54:34.608Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/indoor-security-cameras-buying-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:54:38.157Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/indoor-security-cameras-ownership-cost-and-maintenance",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:54:41.762Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/indoor-security-cameras-setup-and-daily-workflow",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:54:45.319Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/matter-hubs-bridges-buying-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:54:48.916Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/matter-hubs-bridges-ownership-cost-and-maintenance",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:54:52.475Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/matter-smart-bulbs-ownership-cost-and-maintenance",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:54:56.094Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/mmwave-presence-sensors-buying-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:54:59.722Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/mmwave-presence-sensors-compatibility-and-fit-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:55:03.301Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/mmwave-presence-sensors-ownership-cost-and-maintenance",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:55:06.882Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/outdoor-security-cameras-buying-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:55:10.476Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/outdoor-security-cameras-compatibility-and-fit-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:55:14.080Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/outdoor-security-cameras-ownership-cost-and-maintenance",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:55:17.715Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/outdoor-security-cameras-vs-alternatives",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:55:21.292Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/outdoor-smart-plugs-buying-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:55:24.890Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/outdoor-smart-plugs-ownership-cost-and-maintenance",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:55:28.459Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/outdoor-smart-plugs-setup-and-daily-workflow",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:55:32.030Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/outdoor-smart-plugs-vs-alternatives",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:55:35.651Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/robot-mops-compatibility-and-fit-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:55:39.282Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/robot-mops-vs-alternatives",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:55:42.305Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-blind-motors-buying-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:55:45.938Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-blind-motors-compatibility-and-fit-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:55:49.080Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-blind-motors-ownership-cost-and-maintenance",
+    "onGoogle": false,
+    "checkedAt": "2026-08-25T11:55:52.651Z",
+    "indexStatus": "Page is not indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-contact-sensors-ownership-cost-and-maintenance",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:56:13.296Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-contact-sensors-setup-and-daily-workflow",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:56:16.768Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-curtain-motors-compatibility-and-fit-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:56:20.329Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-dimmer-switches-buying-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:56:23.838Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-dimmer-switches-ownership-cost-and-maintenance",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:56:27.354Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-dimmer-switches-setup-and-daily-workflow",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:56:30.874Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-dimmer-switches-vs-alternatives",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:56:34.434Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-displays-buying-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:56:37.971Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-displays-compatibility-and-fit-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:56:41.530Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-displays-ownership-cost-and-maintenance",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:56:45.122Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-displays-setup-and-daily-workflow",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:56:48.690Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-displays-vs-alternatives",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:56:52.269Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-ev-chargers-buying-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:56:55.858Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-ev-chargers-compatibility-and-fit-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:56:59.377Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-ev-chargers-ownership-cost-and-maintenance",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:57:02.965Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-ev-chargers-vs-alternatives",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:57:06.557Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-garage-door-controllers-buying-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:57:10.106Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-garage-door-controllers-compatibility-and-fit-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:57:13.730Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-garage-door-controllers-ownership-cost-and-maintenance",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:57:17.275Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-garage-door-controllers-setup-and-daily-workflow",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:57:20.856Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-garage-door-controllers-vs-alternatives",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:57:24.429Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-home-sirens-buying-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:57:27.995Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-home-sirens-compatibility-and-fit-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:57:31.566Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-home-sirens-setup-and-daily-workflow",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:57:35.176Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-home-sirens-vs-alternatives",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:57:38.768Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-irrigation-controllers-compatibility-and-fit-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:57:42.363Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-light-strips-buying-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:57:45.915Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-light-strips-ownership-cost-and-maintenance",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:57:49.467Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-light-strips-setup-and-daily-workflow",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:57:53.156Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-light-strips-vs-alternatives",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:57:56.738Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-motion-sensors-buying-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:58:17.419Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-motion-sensors-compatibility-and-fit-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:58:20.979Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-power-strips-compatibility-and-fit-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:58:24.534Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-power-strips-vs-alternatives",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:58:28.101Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-scene-buttons-buying-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:58:31.678Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-scene-buttons-compatibility-and-fit-guide",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:58:35.245Z",
+    "indexStatus": "Page is indexed"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-scene-buttons-setup-and-daily-workflow",
+    "onGoogle": true,
+    "checkedAt": "2026-08-25T11:58:38.827Z",
+    "indexStatus": "Page is indexed"
+  }
+]

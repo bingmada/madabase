@@ -1,23 +1,23 @@
 {
-  "updatedAt": "2026-08-24T10:14:03+08:00",
+  "updatedAt": "2026-08-25T20:18:14+08:00",
   "purpose": "Tracked cross-conversation snapshot. Read this before every affiliate operation, then read docs/affiliate-growth-state.json and docs/affiliate-growth-runbook.md for the mutable history and operating rules.",
   "crossConversationResume": {
-    "asOf": "2026-08-24T10:14:03+08:00",
-    "status": "august_24_daily_gate_complete_url_inspection_partial_quota_new_growth_frozen",
+    "asOf": "2026-08-25T20:18:14+08:00",
+    "status": "august_25_daily_complete_url_inspection_458_of_486_observation_2_of_3_new_growth_frozen",
     "readOrder": [
       "apps/affiliate/config/current-operations-handoff.json",
       "docs/affiliate-growth-state.json",
       "docs/affiliate-growth-runbook.md",
       "apps/affiliate/config/search-recovery-control.json",
       "apps/affiliate/DAILY_OPERATIONS.md",
-      "apps/affiliate/reports/daily-operations-2026-08-24.md",
+      "apps/affiliate/reports/daily-operations-2026-08-25.md",
       "docs/affiliate-current-search-gates-2026-08-23.json",
-      "docs/affiliate-zero-impression-inspections-2026-08-24.json",
+      "docs/affiliate-zero-impression-inspections-2026-08-25.json",
       "apps/affiliate/reports/affiliate-spam-update-recovery-2026-08-21.md",
       "apps/affiliate/config/next-product-expansion-100-pilot-01.json",
       "apps/affiliate/config/next-product-expansion-100-readiness.json"
     ],
-    "oneSentenceState": "Release 22f2985 remains healthy; the August 24 product-pilot gate passed, four changed sitemaps were submitted, and the exact zero-impression inspection is now 361 of 486 with 125 quota-blocked; new indexable expansion stays frozen until complete August 22-24 GSC data exists.",
+    "oneSentenceState": "Release 22f2985 and all seven production hosts remain healthy; the exact zero-impression inspection is now 458 of 486 with 442 indexed, 16 not on Google and 28 quota-blocked, while complete August 22-23 data satisfies only 2 of 3 post-update observation days, so new indexable expansion stays frozen.",
     "production": {
       "activeRelease": "22f2985",
       "sourceCommit": "22f2985c5d2e0da697faf6bde14f1e1bec66e12f",
@@ -29,13 +29,13 @@
       "securityCleanup": "Deployment used the already-authorized Aliyun Workbench session and the pushed Git object. The temporary server archive remains in /tmp for bounded follow-up; no unrelated dirty server work was modified."
     },
     "searchAndIndexing": {
-      "latest24Hours": "Rolling August 24 read: 0 clicks, 228 impressions, 0% CTR and position 34.4. Hosts: Network 8 impressions/46.8, Smarthome 1/68.0, Homeoffice 145/40.0, Baby 71/19.8, Pets 0, Style 0, Costume 0 and main madabase.com 3/66.7. Directional only; the August 23 operating read was 202 impressions.",
-      "latestComplete7Days": "August 15-21: 19 clicks, 3,390 impressions, 0.6% CTR and position 35.2 versus 27 clicks, 4,908 impressions, 0.6% CTR and position 28.9 in August 8-14.",
-      "interpretation": "Network fell to 642 impressions from 1,453 and Smarthome to 547 from 1,197 with zero current clicks. Homeoffice held at 1,175 versus 1,132; Baby held impressions while clicks improved to five from three; Pets lost impressions but improved to three clicks from one. Style and Costume remain too small for a recovery conclusion. The latest complete GSC date is August 21, so none of the required complete August 22-24 dates is available and there is no unfreeze basis.",
+      "latest24Hours": "Rolling August 25 read: 1 click, 174 impressions, 0.6% CTR and position 32.5. The only click belonged to the Homeoffice Logitech Litra Glow versus Elgato Key Light Neo page. Directional only; do not compare rolling boundaries as a complete release window.",
+      "latestComplete7Days": "August 17-23: 8 clicks, 2,395 impressions, 0.3% CTR and position 35.8 versus 34 clicks, 5,486 impressions, 0.6% CTR and position 31.5 in August 10-16. The latest 28 days remain higher than the preceding 28 days at 78 vs 33 clicks and 13.3K vs 6.68K impressions.",
+      "interpretation": "Network fell to 274 impressions from 1,540, Smarthome to 210 from 1,341 and Pets to 82 from 460. Homeoffice held most exposure at 1,152 versus 1,251 but lost click efficiency; Baby fell to 655 from 820 while average position improved. Style and Costume remain too small for a recovery conclusion. GSC is complete through August 23, so two of the required August 22-24 dates are available; August 24 is still required before formal freeze reassessment.",
       "gscPageIndexing": "Report last updated August 21: 1,586 indexed and 4,267 not indexed, including 3,514 intentional noindex routes, 364 404s, 103 redirects, 40 crawled-currently-not-indexed, 136 discovered-currently-not-indexed, 33 duplicate-without-user-canonical and two historical 5xx examples.",
-      "gscActions": "Authenticated Search Console accepted the changed Network, Smarthome, Homeoffice and Pets sitemaps. Costumes had already been automatically reread on August 24 with the correct 121 discovered pages; Baby and Style were unchanged. The two historical 5xx examples now return intentional 410 and normal 308 responses, and GSC validation started August 24. Manual actions and security issues report no issues; removals has no requests in six months. No bulk Request indexing was attempted.",
+      "gscActions": "All submitted affiliate sitemaps remain Success with exact discovered-page counts: Network 245, Smarthome 258, Homeoffice 275, Baby 264, Pets 234, Style 76 and Costumes 121. No sitemap or IndexNow replay was made. The two historical 5xx examples remain in Started validation. Manual actions and security issues report no issues; removals has no requests in six months. No bulk Request indexing was attempted.",
       "indexNow": "Exactly 48 changed canonicals were accepted with HTTP 200 on August 23: 25 retained consolidation hubs, 19 categories and four query-backed refreshes. Redirect sources and the five product-pilot URLs were excluded; no replay was due August 24.",
-      "zeroInspection": "Exact queue 486; cumulative inspected 361, indexed 348, not-on-Google 13 and remaining 125 after the August 24 quota. The five new not-on-Google summaries include one expected consolidation redirect and four current HTTP 200 self-canonical URLs whose detailed reasons are due first on August 25."
+      "zeroInspection": "Exact queue 486; cumulative inspected 458, indexed 442, not-on-Google 16 and remaining 28 after the August 25 quota. The four prior HTTP 200 exceptions were diagnosed as two crawled-currently-not-indexed, one discovered-currently-not-indexed and one old unknown-URL record, with no current robots, fetch or canonical defect. Three new Smarthome not-on-Google summaries are current HTTP 200, self-canonical, indexable and in sitemap; inspect their detailed reasons first on August 26."
     },
     "productExpansion": {
       "target": "About 100 qualified differentiated product pages, not 100 pages by quota.",
@@ -57,7 +57,7 @@
     "nextOrderedActions": [
       "Keep new indexable publication frozen during post-rollout observation. Existing-page topic hierarchy and query-backed recovery are owner-authorized under search-recovery-control version 3; do not convert that authorization into new products, new cohorts or evidence-free mass title churn.",
       "Treat release 22f2985 as the active existing-page recovery baseline. Do not repeat IndexNow for its 48 accepted canonicals, resubmit the four accepted changed sitemaps, or purge Cloudflare without a stale-response defect.",
-      "On 2026-08-25 after the GSC property quota renews, inspect detailed reasons for the four newly not-on-Google URLs that still return HTTP 200 and self-canonical, then resume the exact remaining 125 zero-impression URLs. Do not bulk-request indexing.",
+      "On 2026-08-26 after the GSC property quota renews, inspect detailed reasons for the three new Smarthome not-on-Google URLs, then resume the exact remaining 28 zero-impression URLs. Do not bulk-request indexing.",
       "Keep all five product-pilot URLs isolated while the recovery freeze remains active even though their August 24 technical and merchant gate passed.",
       "On 2026-08-27, execute the complete 151-page and ranking-recovery cohort gate using exact URLs and current Search Console evidence; do not sample only winners.",
       "When GSC contains complete data for August 22, 23 and 24, reassess the seven-site freeze from exact host and cohort evidence; calendar time alone does not satisfy this gate.",
@@ -150,7 +150,7 @@
     "seoEvidenceRule": "Judge tracked URL cohorts exactly. Do not replace an exact 24-hour, 48-hour or cohort analysis with a site-wide headline metric, and do not rewrite protected winners or active title experiments before their gate.",
     "serverResourcePriority": "Affiliate is the primary revenue service and has first claim on server capacity. Keep its non-root systemd service stable on loopback port 3011; reduce or defer non-revenue workloads first when measured memory pressure appears.",
     "executableChecklist": "apps/affiliate/DAILY_OPERATIONS.md",
-    "latestDailyLog": "apps/affiliate/reports/daily-operations-2026-08-23.md"
+    "latestDailyLog": "apps/affiliate/reports/daily-operations-2026-08-25.md"
   },
   "seoRecoveryAndProductPilot20260821": {
     "status": "production_verified_soft_launch_5_gsc_actions_complete",
@@ -313,16 +313,16 @@
   },
   "commerceMeasurement": {
     "amazonAssociates": {
-      "reportUpdatedThrough": "2026-08-22",
-      "monthToDateAsOfReport": { "clicks": 19, "orderedItems": 19, "shippedItems": 18, "conversion": "100%", "earningsUsd": 5.84 },
-      "rolling30DayCommissionsUsd": 11.08,
+      "reportUpdatedThrough": "2026-08-24",
+      "rolling30DayCommissionsUsd": 6.51,
       "latestComplete7DaysAug10To16": { "clicks": 7, "orderedItems": 0, "conversion": "0%", "earningsUsd": 0 },
-      "rolling30DaysJul24ToAug22": { "clicks": 35, "orderedItems": 21, "conversion": "60.00%", "orderedRevenueUsd": 264.42, "shippedItems": 23, "returnedItems": 0, "shippedRevenueUsd": 374.40, "earningsUsd": 11.08 },
-      "reportingDelay": "The dashboard was last updated through August 22, two days behind the August 24 operating review. Do not interpret missing August 23-24 activity as zero.",
-      "interpretation": "The rolling window still proves orders and earnings, but search traffic and Clarity traffic are thin. Preserve exact merchant identity and the current first-viewport plus sticky paths while recovery data matures."
+      "rolling30DaysJul26ToAug24": { "clicks": 36, "orderedItems": 21, "conversion": "58.33%", "orderedRevenueUsd": 264.42, "shippedItems": 21, "returnedItems": 1, "totalRevenueUsd": 257.43, "earningsUsd": 6.51 },
+      "reportingDelay": "The dashboard was last updated through August 24 at the August 25 operating review.",
+      "interpretation": "Clicks increased by one from the prior read, while the rolling boundary removed older shipped revenue and one return appeared. The lower revenue and earnings are not evidence that the August 23 SEO release caused a conversion failure."
     },
     "cj": {
-      "currentStatus": "blocked-auth on 2026-08-24; login page shown, so no current clicks, sales, leads or commission figures were inferred",
+      "currentStatus": "authenticated dashboard readable on 2026-08-25",
+      "yesterday20260824": { "clicks": 129, "sales": 0, "leads": 0, "commissionUsd": 0, "epcUsd": 0, "conversion": "0%" },
       "yesterday20260820": { "clicks": 20, "sales": 0, "leads": 0, "commissionUsd": 0 },
       "latestDashboardWindow": "Rolling 30 days through 2026-08-17",
       "clicks": 53,
@@ -331,20 +331,21 @@
       "leads": 0,
       "commissionUsd": 0,
       "balanceUsd": 0,
-      "scopeWarning": "The 53 rolling-window clicks are split between Best Costumes and NestCheck Picks. Yesterday now shows 20 clicks and zero sale, while Clarity shows one affiliate_click session; treat this as a scope/source discrepancy and do not optimize from the dashboard total alone."
+      "scopeWarning": "Yesterday shows 129 clicks and zero sale while Clarity shows only 19 human sessions. Treat this as a source, bot, prefetch or reporting-scope discrepancy; if it persists on August 26, split PID/SID and server redirect logs before changing any CTA."
     },
     "clarity": {
       "status": "authenticated_dashboard_readable",
       "window": "Yesterday",
-      "sessions": 4,
-      "excludedBotSessions": 38,
-      "averagePagesPerSession": 1.25,
-      "averageScrollDepth": "17%",
-      "averageActiveTime": "6 seconds",
+      "sessions": 19,
+      "excludedBotSessions": 9,
+      "averagePagesPerSession": 1.68,
+      "averageScrollDepth": "38.22%",
+      "averageActiveTime": "18 seconds",
+      "averageTotalTime": "22 seconds",
       "javascriptErrors": 0,
       "affiliateClickSessions": null,
-      "topPageNote": "Smarthome Eufy E340 vs Ring received three sessions; a Homeoffice sheetfed-scanner fit guide and the Eufy E340 review each appeared with one session. Clarity showed one quick-back session, zero rage/dead/excessive-scroll sessions and no readable affiliate_click or outbound-click counter.",
-      "interpretation": "Only four human sessions were visible, too little for another CTA or layout change. Preserve the current first-viewport plus responsive sticky commerce structure and do not convert missing event-card data into a proven zero."
+      "topPageNote": "Baby home received seven sessions and the Network Deco BE63/BE67/BE85 guide received two. Clarity showed one quick-back session (5.26%), zero rage/dead/excessive-scroll sessions, zero JavaScript errors and no smart-event data.",
+      "interpretation": "Human traffic remains thin but behavior quality improved from the prior read. Preserve the current first-viewport plus responsive sticky commerce structure; do not convert missing smart-event data into a proven zero."
     },
     "creatorsApi": {
       "inventory": "290 exact US ASIN-backed products; six US site Partner Tag configurations",
@@ -431,7 +432,8 @@
     "productPilot5": "five_of_five_public_direct_urls_passed_self_canonical_exact_ASIN_site_tag_first_viewport_sticky_CTA_and_image; zero_of_five_in_sitemaps",
     "fiveSiteBaseConversionAudit20260821": "1294_of_1294_passed; failed_0_noCta_0",
     "dailyOperations20260821": "seven_homepages_and_seven_sitemaps_http_200; seo_affiliate_links_search_recovery_next_product_and_lint_passed; no_deploy_or_submission",
-    "dailyOperations20260824": "seven_homepages_sitemaps_and_robots_http_200; product_pilot_5_of_5_passed_and_isolated; url_inspection_361_of_486_cumulative; four_changed_sitemaps_submitted; historical_5xx_validation_started; seo_affiliate_links_search_recovery_next_product_and_lint_passed"
+    "dailyOperations20260824": "seven_homepages_sitemaps_and_robots_http_200; product_pilot_5_of_5_passed_and_isolated; url_inspection_361_of_486_cumulative; four_changed_sitemaps_submitted; historical_5xx_validation_started; seo_affiliate_links_search_recovery_next_product_and_lint_passed",
+    "dailyOperations20260825": "seven_homepages_sitemaps_and_robots_http_200; seven_index_exceptions_http_200_self_canonical_indexable_and_in_sitemap; url_inspection_458_of_486_cumulative_442_indexed_16_not_google_28_quota_blocked; observation_days_2_of_3; seo_affiliate_links_search_recovery_next_product_and_lint_passed; no_runtime_change_or_deploy"
   },
   "indexNow": {
     "date": "2026-08-23",
@@ -442,7 +444,7 @@
     "scope": "Only 25 retained consolidation hubs, 19 changed categories and four query-backed refreshes. The 88 redirect sources, unchanged pages, the 151-page observation cohort and the five new product-pilot pages were excluded."
   },
   "measurementGates": {
-    "zeroInspectionResume": "2026-08-25 after property quota renewal; exact queue 486, cumulative inspected 361, indexed 348, not-on-Google 13, remaining 125",
+    "zeroInspectionResume": "2026-08-26 after property quota renewal; first inspect three new Smarthome exceptions in detail, then resume the exact queue: 486 total, 458 inspected, 442 indexed, 16 not-on-Google, 28 remaining",
     "expansion757Day14": "2026-08-23",
     "productPilot5TechnicalRecheck": "Completed 2026-08-24: five of five passed exact merchant identity, direct-URL conversion, canonical, image and discovery isolation. Search promotion remains frozen.",
     "soft151OriginalDay14AndPostSitemapDay7": "2026-08-27",
@@ -476,7 +478,7 @@
   "doNotDo": [
     "Do not resubmit or rewrite the 151-page sitemap release before its 2026-08-27 gate unless a technical, merchant or indexability defect appears.",
     "Do not describe the 151-page cohort as sitemap-excluded after release 6eec199; all 151 are now included and submitted.",
-    "Do not report the 486-URL zero-impression inspection as complete while 125 rows remain uninspected after the 2026-08-24 property quota limit.",
+    "Do not report the 486-URL zero-impression inspection as complete while 28 rows remain uninspected after the 2026-08-25 property quota limit.",
     "Do not make another broad title rewrite from the 24-hour decline; use exact page-filtered query evidence and the next complete-window gate.",
     "Do not broadly rewrite the 37 protected winners or 21 held pages without page-filtered evidence.",
     "Do not run high-concurrency full production audits on the approximately 1.6GB server.",
@@ -493,8 +495,8 @@
       "docs/affiliate-soft151-search-gate-2026-08-20.csv",
       "apps/affiliate/reports/affiliate-spam-update-recovery-2026-08-21.csv"
     ],
-    "zeroInspectionLedger": "docs/affiliate-zero-impression-inspections-2026-08-24.csv",
-    "dailyLog": "apps/affiliate/reports/daily-operations-2026-08-24.md",
+    "zeroInspectionLedger": "docs/affiliate-zero-impression-inspections-2026-08-25.csv",
+    "dailyLog": "apps/affiliate/reports/daily-operations-2026-08-25.md",
     "dailyChecklist": "apps/affiliate/DAILY_OPERATIONS.md",
     "mutableState": "docs/affiliate-growth-state.json",
     "runbook": "docs/affiliate-growth-runbook.md",

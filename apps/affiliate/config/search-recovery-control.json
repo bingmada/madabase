@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updatedAt": "2026-08-24T10:14:03+08:00",
+  "updatedAt": "2026-08-25T20:18:14+08:00",
   "status": "august_2026_spam_update_closed_existing_page_recovery_deployed_new_growth_frozen",
   "trigger": {
     "name": "August 2026 spam update",
@@ -49,7 +49,7 @@
   },
   "reviewGates": {
     "spamUpdate": "closed; wait until GSC contains three complete post-close days (August 22-24) before reassessment",
-    "expansion757Day14": "2026-08-23 metrics complete; live zero-impression inspection now 361 of 486 after the 2026-08-24 continuation; resume the remaining 125 on 2026-08-25",
+    "expansion757Day14": "2026-08-23 metrics complete; live zero-impression inspection now 458 of 486 after the 2026-08-25 continuation; inspect three new Smarthome exceptions in detail and resume the remaining 28 on 2026-08-26",
     "soft151PostSitemapDay7": "2026-08-27",
     "expansion757Day30": "2026-09-08"
   },
@@ -59,14 +59,16 @@
     "expectedRows": 1026
   },
   "postRolloutObservation": {
-    "checkedAt": "2026-08-24T10:14:03+08:00",
-    "latestCompleteGscDate": "2026-08-21",
-    "completePostCloseGscDaysAvailable": 0,
+    "checkedAt": "2026-08-25T20:18:14+08:00",
+    "latestCompleteGscDate": "2026-08-23",
+    "completePostCloseGscDaysAvailable": 2,
     "requiredCompletePostCloseDates": [
       "2026-08-22",
       "2026-08-23",
       "2026-08-24"
     ],
+    "latest24Hours": "Rolling August 25 read: 1 click, 174 impressions, 0.6% CTR and position 32.5. The click belonged to the Homeoffice Logitech Litra Glow versus Elgato Key Light Neo page. Directional only.",
+    "latestComplete7Days": "August 17-23: 8 clicks, 2,395 impressions, 0.3% CTR and position 35.8 versus 34 clicks, 5,486 impressions, 0.6% CTR and position 31.5 in August 10-16. Network, Smarthome and Pets carry the largest exposure loss; 28-day totals remain above the preceding 28 days.",
     "expansion757Day14": {
       "window": "2026-08-14 through 2026-08-20",
       "urls": 757,
@@ -79,11 +81,11 @@
     },
     "zeroImpressionInspection": {
       "exactDue": 486,
-      "liveInspected": 361,
-      "indexed": 348,
-      "notOnGoogle": 13,
-      "blockedByDailyQuota": 125,
-      "nextInspectionGate": "2026-08-25 after property quota renewal"
+      "liveInspected": 458,
+      "indexed": 442,
+      "notOnGoogle": 16,
+      "blockedByDailyQuota": 28,
+      "nextInspectionGate": "2026-08-26 after property quota renewal"
     },
     "ownerAuthorizedRecovery": {
       "authorizedAt": "2026-08-23T10:54:38+08:00",

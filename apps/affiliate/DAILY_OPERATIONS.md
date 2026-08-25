@@ -1,6 +1,6 @@
 # Madabase 联盟站每日运营清单
 
-最后更新：2026-08-24
+最后更新：2026-08-25
 
 这份清单是 `日常开发` 的执行入口。每次运行先读取当前运营快照和恢复控制，再按下面顺序完成检查、选择一个主动作、验证并写入当天记录。七个站点必须同时覆盖：Network、Smarthome、Homeoffice、Baby、Pets、Style、Costume。
 
@@ -85,13 +85,14 @@ npm run lint --workspace apps/affiliate
 | 2026-08-22 | 未执行；已并入 8 月 23 日队列。GSC 每日 URL Inspection 配额不会补发 | 把漏做一天解释为数据丢失或强行追加请求 |
 | 2026-08-23 | Expansion757 Day 14 指标已覆盖全部 757 URL；零展现精确队列 486 个，累计检查 260 个，252 indexed、8 not-on-Google，剩余 226 个因当日配额暂停 | 解冻扩张；把 226 个剩余 URL 记为未收录；批量请求索引 |
 | 2026-08-24 | 已续查 101 个 URL；累计 361/486，348 indexed、13 not-on-Google，剩余 125 个因当日额度暂停。五个 direct-URL 产品 pilot 的技术、商家和隔离状态全部通过，继续隔离 | 把剩余 125 个记成未收录；提前加入 sitemap、首页/分类发现、IndexNow 或 GSC |
-| 2026-08-25 | 配额刷新后先读取四个当前 HTTP 200、自 canonical 的新 not-on-Google URL 详细原因，再继续剩余 125 个精确 URL Inspection | 批量请求索引；仅凭 summary 推断未收录原因 |
+| 2026-08-25 | 已完成四个 HTTP 200、自 canonical 例外的详细原因，并续查 97 个精确 URL；累计 458/486，442 indexed、16 not-on-Google，剩余 28 个因当日额度暂停。最新完整 GSC 日到 8 月 23 日，更新后观察满足 2/3 | 把三个新 summary 当成技术故障；批量请求索引；在 8 月 24 日完整数据出现前解冻 |
+| 2026-08-26 | 配额刷新后先检查三个新 Smarthome not-on-Google URL 的详细原因，再续查剩余 28 个；读取 8 月 24 日完整数据并执行七站冻结正式复评 | 自动解冻；重复提交已成功读取的 sitemap/IndexNow；无证据继续大改页面 |
 | 2026-08-27 | Soft151 sitemap 后 Day 7；同时完成既定 cohort gate | 先于首个完整七日窗口重写或重提 |
 | 2026-09-02 | Costume small-space pilot 下一闸门 | 无查询证据就扩充同类 URL |
 | 2026-09-03 | Soft151 sitemap 后 Day 14 | 以单日数据定性 |
 | 2026-09-08 | Expansion757 Day 30 | 未完成整批 ledger 就开新扩张 |
 | 2026-09-10 | Soft151 原始 Day 28 | 删除、合并或重定向前跳过 live inspection |
-| GSC 完整包含 2026-08-22 至 2026-08-24 | 重新评估七站冻结；当前最新完整日仅到 8 月 21 日，要求的三天仍为 0/3 | 把自然日流逝当成 GSC 数据已完整；做大范围 SEO 手术 |
+| GSC 完整包含 2026-08-22 至 2026-08-24 | 重新评估七站冻结；当前最新完整日到 8 月 23 日，要求的三天为 2/3 | 把自然日流逝当成 GSC 数据已完整；做大范围 SEO 手术 |
 
 日期闸门以 `current-operations-handoff.json` 为准；如果本表与快照冲突，先更新本表和当天日志，再行动。
 
