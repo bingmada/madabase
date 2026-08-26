@@ -1,6 +1,6 @@
 # Madabase 联盟站每日运营清单
 
-最后更新：2026-08-25
+最后更新：2026-08-26
 
 这份清单是 `日常开发` 的执行入口。每次运行先读取当前运营快照和恢复控制，再按下面顺序完成检查、选择一个主动作、验证并写入当天记录。七个站点必须同时覆盖：Network、Smarthome、Homeoffice、Baby、Pets、Style、Costume。
 
@@ -76,7 +76,7 @@ npm run lint --workspace apps/affiliate
 5. 严格通过所有门槛的新页面或新分发。
 6. 没有安全动作时，主动作可以是“保持不变并保护基线”。
 
-当前 Google spam update 已于 2026-08-21 官方结束，但恢复冻结继续生效，直到 GSC 能提供 8 月 22、23、24 三个完整的更新后数据日并完成复核。期间只允许技术、索引、商家安全、测量和报告修复。禁止新增 Amazon family 页面、扩大 Costume 可索引 cohort、批量改标题/正文、批量 canonical/重定向、批量重提 sitemap 或 IndexNow。
+Google spam update 已于 2026-08-21 官方结束，GSC 也已在 2026-08-26 提供 8 月 22、23、24 三个完整数据日。正式复评结果为 hold-no-expansion：最近完整七日点击 5 vs 36、展现 1,858 vs 5,457，Network、Smarthome、Pets 的展现仍断崖下跌，技术与索引入口健康，因此冻结继续生效。三日完整只是允许复评的必要条件，不是自动解冻条件。禁止新增 Amazon family 页面、扩大 Costume 可索引 cohort、批量改标题/正文、批量 canonical/重定向、批量重提 sitemap 或 IndexNow；精确查询支持的既有页修复仍可按控制文件执行。
 
 ## 3. 当前日期闸门
 
@@ -86,13 +86,13 @@ npm run lint --workspace apps/affiliate
 | 2026-08-23 | Expansion757 Day 14 指标已覆盖全部 757 URL；零展现精确队列 486 个，累计检查 260 个，252 indexed、8 not-on-Google，剩余 226 个因当日配额暂停 | 解冻扩张；把 226 个剩余 URL 记为未收录；批量请求索引 |
 | 2026-08-24 | 已续查 101 个 URL；累计 361/486，348 indexed、13 not-on-Google，剩余 125 个因当日额度暂停。五个 direct-URL 产品 pilot 的技术、商家和隔离状态全部通过，继续隔离 | 把剩余 125 个记成未收录；提前加入 sitemap、首页/分类发现、IndexNow 或 GSC |
 | 2026-08-25 | 已完成四个 HTTP 200、自 canonical 例外的详细原因，并续查 97 个精确 URL；累计 458/486，442 indexed、16 not-on-Google，剩余 28 个因当日额度暂停。最新完整 GSC 日到 8 月 23 日，更新后观察满足 2/3 | 把三个新 summary 当成技术故障；批量请求索引；在 8 月 24 日完整数据出现前解冻 |
-| 2026-08-26 | 配额刷新后先检查三个新 Smarthome not-on-Google URL 的详细原因，再续查剩余 28 个；读取 8 月 24 日完整数据并执行七站冻结正式复评 | 自动解冻；重复提交已成功读取的 sitemap/IndexNow；无证据继续大改页面 |
-| 2026-08-27 | Soft151 sitemap 后 Day 7；同时完成既定 cohort gate | 先于首个完整七日窗口重写或重提 |
+| 2026-08-26 | 已读取 8 月 24 日完整数据并完成七站冻结正式复评：最近七日 5/1,858 vs 36/5,457，决定继续冻结。URL Inspection 第一条 detail 请求即命中 property quota，累计仍为 458/486、442 indexed、16 not-on-Google、28 未检查；CJ 异常已拆到 Abracadabra AID 17278691 的单一 feed link | 自动解冻；把额度失败写成新检查；依据 CJ 机器人/预取总点击改 CTA；重复 sitemap/IndexNow；无证据大改页面 |
+| 2026-08-27 | 完整执行 Soft151 原始 Day 14 / sitemap 后 Day 7 的 151-URL 闸门与 Ranking118 复核；额度恢复后先做三个 Smarthome detail recheck，再查剩余 28 个 | 只抽样赢家；提前重写或重提；把继续额度阻塞写成未收录 |
 | 2026-09-02 | Costume small-space pilot 下一闸门 | 无查询证据就扩充同类 URL |
 | 2026-09-03 | Soft151 sitemap 后 Day 14 | 以单日数据定性 |
 | 2026-09-08 | Expansion757 Day 30 | 未完成整批 ledger 就开新扩张 |
 | 2026-09-10 | Soft151 原始 Day 28 | 删除、合并或重定向前跳过 live inspection |
-| GSC 完整包含 2026-08-22 至 2026-08-24 | 重新评估七站冻结；当前最新完整日到 8 月 23 日，要求的三天为 2/3 | 把自然日流逝当成 GSC 数据已完整；做大范围 SEO 手术 |
+| GSC 完整包含 2026-08-22 至 2026-08-24 | 已在 2026-08-26 完成复评；数据不支持解冻，继续 hold-no-expansion，等待后续精确 cohort 恢复证据 | 把三日门槛满足误读为自动恢复；做大范围 SEO 手术 |
 
 日期闸门以 `current-operations-handoff.json` 为准；如果本表与快照冲突，先更新本表和当天日志，再行动。
 

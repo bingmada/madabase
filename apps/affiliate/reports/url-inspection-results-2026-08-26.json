@@ -1,0 +1,9 @@
+[
+  {
+    "url": "https://smarthome.madabase.com/best/aqara-t1-vs-yolink-bulldog-vs-moen-flo",
+    "checkedAt": "2026-08-26T11:45:08Z",
+    "error": "quota-exceeded",
+    "alert": "Google Search Console alert: Quota exceeded — You have exceeded your property's URL inspection quota. Quota is renewed daily.",
+    "scope": "The first of three scheduled Smarthome detail rechecks was attempted before the remaining 28 exact zero-impression URLs. No URL returned a fresh inspection result, so prior evidence remains authoritative."
+  }
+]

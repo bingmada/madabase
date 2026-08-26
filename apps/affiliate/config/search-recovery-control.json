@@ -1,13 +1,13 @@
 {
   "version": 3,
-  "updatedAt": "2026-08-25T20:18:14+08:00",
+  "updatedAt": "2026-08-26T19:45:08+08:00",
   "status": "august_2026_spam_update_closed_existing_page_recovery_deployed_new_growth_frozen",
   "trigger": {
     "name": "August 2026 spam update",
     "startedAt": "2026-08-18T09:27:00-07:00",
     "officialClosedAt": "2026-08-21T01:50:00-07:00",
     "duration": "2 days 16 hours",
-    "evidence": "Google's Search Status Dashboard marks the August 2026 spam update Closed. Network and Smarthome remain materially below their preceding seven-day impression baselines; production, sitemap and current canonical checks are healthy, so the freeze remains an observation control rather than an outage response."
+    "evidence": "Google's Search Status Dashboard marks the August 2026 spam update Closed. Complete August 22-24 evidence now satisfies the three-day review prerequisite but fails the release test: Network, Smarthome and Pets are down 95.3%, 96.6% and 98.6% in seven-day impressions while production, sitemap, current canonical, manual-action and security checks remain healthy. The freeze therefore remains an evidence-backed search-exposure control rather than an outage response."
   },
   "freeze": {
     "active": true,
@@ -36,7 +36,7 @@
       "existing-page-topic-hierarchy-repair",
       "query-backed-existing-page-refresh"
     ],
-    "releaseRule": "Keep new indexable expansion frozen until three complete post-close Search Console days are available and the exact cohort gate supports it. Owner-authorized, query-backed repairs to existing pages and shared topic hierarchy may proceed with a changed-URL ledger and full validation."
+    "releaseRule": "Three complete post-close Search Console days are now available, but their exact host evidence does not support release. Keep new indexable expansion frozen until a later exact cohort gate shows recovery; calendar time alone never unfreezes the portfolio. Owner-authorized, query-backed repairs to existing pages may proceed with a changed-URL ledger and full validation."
   },
   "siteStates": {
     "network": "recovery",
@@ -48,8 +48,8 @@
     "costume": "observe"
   },
   "reviewGates": {
-    "spamUpdate": "closed; wait until GSC contains three complete post-close days (August 22-24) before reassessment",
-    "expansion757Day14": "2026-08-23 metrics complete; live zero-impression inspection now 458 of 486 after the 2026-08-25 continuation; inspect three new Smarthome exceptions in detail and resume the remaining 28 on 2026-08-26",
+    "spamUpdate": "closed; August 22-24 complete and formally reassessed on 2026-08-26; exact evidence failed the unfreeze test, so hold-no-expansion remains active",
+    "expansion757Day14": "2026-08-23 metrics complete; live zero-impression inspection remains 458 of 486 because the 2026-08-26 first detail request immediately hit the property quota; retry three Smarthome details and the remaining 28 after renewal on 2026-08-27",
     "soft151PostSitemapDay7": "2026-08-27",
     "expansion757Day30": "2026-09-08"
   },
@@ -59,16 +59,17 @@
     "expectedRows": 1026
   },
   "postRolloutObservation": {
-    "checkedAt": "2026-08-25T20:18:14+08:00",
-    "latestCompleteGscDate": "2026-08-23",
-    "completePostCloseGscDaysAvailable": 2,
+    "checkedAt": "2026-08-26T19:45:08+08:00",
+    "latestCompleteGscDate": "2026-08-24",
+    "completePostCloseGscDaysAvailable": 3,
     "requiredCompletePostCloseDates": [
       "2026-08-22",
       "2026-08-23",
       "2026-08-24"
     ],
-    "latest24Hours": "Rolling August 25 read: 1 click, 174 impressions, 0.6% CTR and position 32.5. The click belonged to the Homeoffice Logitech Litra Glow versus Elgato Key Light Neo page. Directional only.",
-    "latestComplete7Days": "August 17-23: 8 clicks, 2,395 impressions, 0.3% CTR and position 35.8 versus 34 clicks, 5,486 impressions, 0.6% CTR and position 31.5 in August 10-16. Network, Smarthome and Pets carry the largest exposure loss; 28-day totals remain above the preceding 28 days.",
+    "latest24Hours": "Rolling August 26 versus the preceding 24 hours: 2 versus 2 clicks, 189 versus 248 impressions, 1.1% versus 0.8% CTR and position 39.9 versus 33.0. Current clicks belong to the Network Deco BE63/BE67/BE85 guide and Baby BabyBjorn Harmony newborn-fit checklist. Directional only.",
+    "latestComplete7Days": "August 18-24: 5 clicks, 1,858 impressions, 0.3% CTR and position 36.5 versus 36 clicks, 5,457 impressions, 0.7% CTR and position 32.6 in August 11-17. Network fell to 71 from 1,520 impressions, Smarthome to 44 from 1,280 and Pets to 7 from 490; Homeoffice held 1,150 versus 1,220 and Baby's average position improved. Latest 28 days remain above the preceding 28 days at 77 versus 36 clicks and 13,173 versus 6,998 impressions.",
+    "formalFreezeDecision": "hold-no-expansion: the three-day prerequisite is complete, but severe exact host losses and only three days since release 22f2985 do not support unfreezing or another broad rewrite. Protect Homeoffice and Baby; keep Network, Smarthome and Pets in recovery.",
     "expansion757Day14": {
       "window": "2026-08-14 through 2026-08-20",
       "urls": 757,
@@ -85,7 +86,8 @@
       "indexed": 442,
       "notOnGoogle": 16,
       "blockedByDailyQuota": 28,
-      "nextInspectionGate": "2026-08-26 after property quota renewal"
+      "nextInspectionGate": "2026-08-27 after property quota renewal",
+      "august26Attempt": "The first scheduled Smarthome detail recheck immediately returned the property quota alert. No fresh inspection result was recorded; the remaining 28 exact URLs and three detail rechecks carry forward."
     },
     "ownerAuthorizedRecovery": {
       "authorizedAt": "2026-08-23T10:54:38+08:00",
