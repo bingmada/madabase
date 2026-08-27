@@ -1,6 +1,6 @@
 # Affiliate deep-rank recovery — August 27, 2026
 
-Status: locally validated, production release pending
+Status: production deployed, publicly validated, and exact IndexNow notification complete
 
 ## Why this batch exists
 
@@ -57,7 +57,9 @@ Titles, H1s, slugs, canonicals, search questions, product identities, commerce C
 - candidate sitemap: 43 of 43 exact entries carried August 27 lastmod;
 - category discovery: 154 of 154 family hubs and 515 of 515 remaining support links passed.
 
-Release archive: `apps/affiliate/.release/affiliate-runtime.tgz`, 57.9 MB. Final commit, SHA-256, production path, and search-notification result are recorded after deployment.
+Release commit `a4e8e63` is pushed to `origin/lyd-0609`. The 60,737,284-byte archive has SHA-256 `eb88921834501e2428432f3bf460ef7741f599753bbe02bb4f7ac00f2e3a2d37`; the server extracted the hash-matched Git object into `/srv/madabase-affiliate/releases/a4e8e63` without changing the dirty fixed checkout. The systemd service and `current` symlink point to that immutable release on loopback port 3011 with zero restarts. Release `22f2985` is retained as immediate rollback.
+
+All seven origin homepages returned HTTP 200. The exact public audit then passed 43 of 43 pages and 43 of 43 sitemap entries. IndexNow accepted exactly 43 changed canonicals with HTTP 200: Network 3, Smarthome 2, Homeoffice 21, and Baby 17. No previous release URL, redirect source, zero-impression page, unchanged sitemap, or product pilot was submitted.
 
 ## Measurement and rollback
 

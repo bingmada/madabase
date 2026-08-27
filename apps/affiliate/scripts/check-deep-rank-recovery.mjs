@@ -19,6 +19,7 @@ const community = JSON.parse(fs.readFileSync(communityPath, "utf8"));
 const consolidations = JSON.parse(fs.readFileSync(consolidationPath, "utf8"));
 const errors = [];
 const runtimeOrigin = process.env.DEEP_RANK_RECOVERY_ORIGIN;
+const publicAudit = process.env.DEEP_RANK_RECOVERY_PUBLIC_AUDIT === "1";
 
 function transpile(filePath) {
   return ts.transpileModule(fs.readFileSync(filePath, "utf8"), {
@@ -115,7 +116,25 @@ const recoverySections = refreshedGuides.map((guide) => guide.sections[0]?.body)
 if (new Set(quickAnswers).size !== 43) errors.push("Refreshed quick answers are not unique");
 if (new Set(recoverySections).size !== 43) errors.push("Added decision sections are not unique");
 
-function fetchRuntime(pathname, host) {
+async function fetchRuntime(pathname, host) {
+  if (publicAudit) {
+    let lastError;
+    for (let attempt = 1; attempt <= 3; attempt += 1) {
+      try {
+        const response = await fetch(`https://${host}${pathname}`, {
+          headers: { "user-agent": "Madabase deep-rank recovery auditor/1.0" },
+          redirect: "follow",
+          signal: AbortSignal.timeout(30_000),
+        });
+        return { status: response.status, body: await response.text() };
+      } catch (error) {
+        lastError = error;
+        if (attempt < 3) await new Promise((resolve) => setTimeout(resolve, attempt * 500));
+      }
+    }
+    throw lastError;
+  }
+
   const origin = new URL(runtimeOrigin);
   return new Promise((resolve, reject) => {
     const request = http.request({
@@ -137,7 +156,7 @@ function fetchRuntime(pathname, host) {
 
 let runtimeChecked = 0;
 let sitemapChecked = 0;
-if (runtimeOrigin) {
+if (runtimeOrigin || publicAudit) {
   for (const target of targets) {
     const key = `${target.site}:${target.slug}`;
     const guide = guidesByKey.get(key);
@@ -177,6 +196,7 @@ const report = {
   consolidationOverlap: errors.filter((error) => error.includes("consolidated family")).length,
   uniqueQuickAnswers: new Set(quickAnswers).size,
   uniqueDecisionSections: new Set(recoverySections).size,
+  mode: publicAudit ? "public" : runtimeOrigin ? "local-runtime" : "source-only",
   runtimeChecked,
   sitemapChecked,
 };
