@@ -1,5 +1,6 @@
 import type { Guide, SiteKey } from "./types";
 import communityEvidenceData from "../config/quadruple-community-evidence.json";
+import deepRankRecoveryData from "../config/deep-rank-recovery-2026-08-27.json";
 import { findFamilyEditorialBrief } from "./quadruple-family-editorial";
 
 type ExpansionSite = Exclude<SiteKey, "style">;
@@ -31,6 +32,10 @@ type SiteProfile = {
 };
 
 const updatedAt = "August 9, 2026";
+const deepRankRecoveryUpdatedAt = "August 27, 2026";
+const deepRankRecoveryTargets = new Map(
+  deepRankRecoveryData.targets.map((target) => [`${target.site}:${target.slug}`, target]),
+);
 
 const siteProfiles: Record<ExpansionSite, SiteProfile> = {
   network: {
@@ -431,6 +436,50 @@ function quickAnswerFor(family: ProductFamily, role: (typeof rolesBySite)[Expans
   return `Use only the exact current instructions and stop when ${brief.skip}. Community anecdotes and added accessories never expand the manufacturer's age, weight, fit, installation, supervision, or environmental limits.`;
 }
 
+function deepRankRecoveryAnswerFor(family: ProductFamily, role: (typeof rolesBySite)[ExpansionSite][number]) {
+  const brief = findFamilyEditorialBrief(family.site, family.slug);
+  if (!brief) throw new Error(`Missing editorial brief for ${family.site}:${family.slug}`);
+  const [first, second, third, fourth] = brief.dimensions;
+
+  if (role === "buying") return `For ${family.name.toLowerCase()}, the purchase threshold is proof that the selected model can ${brief.job}. Verify ${first} and ${second} before checkout; use ${third} and ${fourth} as return-window tests. Do not buy when ${brief.skip}.`;
+  if (role === "comparison") return `Choose ${family.name.toLowerCase()} over ${family.alternative.toLowerCase()} only when the specialized path can ${brief.job}. Compare both options under the same ${first}, ${second}, ${third}, and ${fourth} conditions, including every required dependency and one year of ownership. Prefer the alternative when ${brief.skip}.`;
+  if (role === "fit") return `${family.name} fit only after four separate checks pass: ${first}; ${second}; ${third}; and ${fourth}. Record the exact model, measurement, standard, or supported condition for each one and treat ${brief.skip} as a failed fit—not as an accessory problem to work around.`;
+  if (role === "ownership") return `The real ownership budget for ${family.name.toLowerCase()} includes ${brief.ownership}. Record a baseline for ${first} and ${second}, monitor ${third} and ${fourth}, and keep the previous routine available until an ordinary failure can be recovered without guesswork.`;
+  if (role === "workflow") return `Set up ${family.name.toLowerCase()} in this order: ${brief.setup}. Put ${first} and ${second} on the installation checklist, then build the repeatable routine around ${third} and ${fourth}. Revert if ${brief.skip}.`;
+  return `For ${family.name.toLowerCase()}, safety begins with the exact current instructions and four verified boundaries: ${first}; ${second}; ${third}; and ${fourth}. Stop use when ${brief.skip}; an accessory, forum tip, or different model's instructions cannot expand that limit.`;
+}
+
+function deepRankRecoverySectionFor(family: ProductFamily, role: (typeof rolesBySite)[ExpansionSite][number]): Guide["sections"][number] {
+  const brief = findFamilyEditorialBrief(family.site, family.slug);
+  if (!brief) throw new Error(`Missing editorial brief for ${family.site}:${family.slug}`);
+  const [first, second, third, fourth] = brief.dimensions;
+
+  if (role === "buying") return {
+    heading: `${family.name}: a three-gate buying decision`,
+    body: `Gate one is job proof: the exact model must ${brief.job}. Gate two is fit proof: confirm ${first} and ${second} from current product-level evidence. Gate three is ownership proof: test ${third} and ${fourth} during normal use while the decision is still reversible. A failure at any gate is a reason to keep ${family.alternative.toLowerCase()}, especially when ${brief.skip}.`,
+  };
+  if (role === "comparison") return {
+    heading: `${family.name} or ${family.alternative}: normalize the comparison`,
+    body: `Compare complete, workable paths—not a fully equipped ${family.name.toLowerCase()} setup against an incomplete alternative. Price and verify ${first}, ${second}, ${third}, and ${fourth} for both sides. Choose the specialized path only if its ability to ${brief.job} remains valuable after setup, maintenance, and a plausible failure; otherwise ${family.alternative.toLowerCase()} is the cleaner decision.`,
+  };
+  if (role === "fit") return {
+    heading: `${family.name}: write a pass or fail for every fit check`,
+    body: `Record one evidence-backed result beside each condition: ${first}; ${second}; ${third}; and ${fourth}. “Probably compatible” is not a pass. Use the exact model or variant, measure the limiting real-world condition, and follow this reversible sequence: ${brief.setup}. Stop the fit assessment when ${brief.skip}.`,
+  };
+  if (role === "ownership") return {
+    heading: `${family.name}: the first-year ownership record`,
+    body: `At setup, record the exact product identity and a baseline for ${first}, ${second}, ${third}, and ${fourth}. Add the expected work and cost of ${brief.ownership}. Recheck the record after ordinary wear or a change in the environment, and define the point at which repair, replacement, or a return to ${family.alternative.toLowerCase()} is more rational than another workaround.`,
+  };
+  if (role === "workflow") return {
+    heading: `${family.name}: day one, normal week, and recovery test`,
+    body: `Day one follows this sequence: ${brief.setup}. During a normal week, record whether ${first}, ${second}, ${third}, and ${fourth} remain understandable and repeatable for the actual user. Before retiring the old routine, test a safe recovery from one plausible failure. The workflow fails when ${brief.skip}.`,
+  };
+  return {
+    heading: `${family.name}: a safety boundary is a stop, not a target`,
+    body: `Confirm the current instructions, model identity, recall status, approved configuration, and the four controlling conditions: ${first}; ${second}; ${third}; and ${fourth}. Recheck them after movement, cleaning, growth, wear, or a caregiver change. Stop immediately when ${brief.skip}; do not use padding, adapters, copied settings, or anecdotes to extend the boundary.`,
+  };
+}
+
 function comparisonTableFor(family: ProductFamily, role: (typeof rolesBySite)[ExpansionSite][number]): NonNullable<Guide["comparisonTable"]> {
   const brief = findFamilyEditorialBrief(family.site, family.slug);
   if (!brief) throw new Error(`Missing editorial brief for ${family.site}:${family.slug}`);
@@ -529,19 +578,24 @@ function guideFor(family: ProductFamily, role: (typeof rolesBySite)[ExpansionSit
   const siblingSlugs = rolesBySite[family.site].map((item) => roleSlug(family, item)).filter((slug) => slug !== roleSlug(family, role));
   const title = titleFor(family, role);
   const searchQuestion = searchQuestionFor(family, role);
+  const slug = roleSlug(family, role);
+  const recoveryTarget = deepRankRecoveryTargets.get(`${family.site}:${slug}`);
+  const roleLabel = role === "buying" ? "buying" : role === "comparison" ? "comparison" : role === "fit" ? "compatibility" : role === "ownership" ? "ownership" : role === "workflow" ? "workflow" : "safety";
   return {
     site: family.site,
-    slug: roleSlug(family, role),
+    slug,
     title,
-    dek: role === "comparison"
-      ? `Choose between ${family.name.toLowerCase()} and ${family.alternative.toLowerCase()} for one concrete job: ${brief.job}. Compare four product-level checks, ownership cost, and the failure mode you can actually recover.`
-      : `${searchQuestion} This guide turns that question into model-level checks, a reversible setup, a first-year ownership plan, and a clear skip decision.`,
+    dek: recoveryTarget
+      ? `A direct ${roleLabel} answer for ${family.name.toLowerCase()}: decide whether the product can ${brief.job}, verify all four model-level conditions, and keep the choice reversible when ${brief.skip}.`
+      : role === "comparison"
+        ? `Choose between ${family.name.toLowerCase()} and ${family.alternative.toLowerCase()} for one concrete job: ${brief.job}. Compare four product-level checks, ownership cost, and the failure mode you can actually recover.`
+        : `${searchQuestion} This guide turns that question into model-level checks, a reversible setup, a first-year ownership plan, and a clear skip decision.`,
     category: family.category,
-    updatedAt,
+    updatedAt: recoveryTarget ? deepRankRecoveryUpdatedAt : updatedAt,
     image: categoryImage?.image ?? profile.image,
     imageAlt: categoryImage?.imageAlt ?? profile.imageAlt,
     searchQuestion,
-    quickAnswer: quickAnswerFor(family, role),
+    quickAnswer: recoveryTarget ? deepRankRecoveryAnswerFor(family, role) : quickAnswerFor(family, role),
     editorialMethod: [
       "Define one independent purchase or use question for this URL.",
       `Verify the four family-specific dimensions: ${brief.dimensions.join("; ")}.`,
@@ -566,7 +620,7 @@ function guideFor(family: ProductFamily, role: (typeof rolesBySite)[ExpansionSit
         : "Ergobaby positions guide and Deco BE63 research page: one exact question, model-level limits, evidence separation, original editorial image, and explicit skip conditions.",
     },
     sources: sources.map((source) => ({ ...source, note: `${source.note} Verify the exact product instructions and current listing separately.` })),
-    sections: sectionsFor(family, role),
+    sections: recoveryTarget ? [deepRankRecoverySectionFor(family, role), ...sectionsFor(family, role)] : sectionsFor(family, role),
     comparisonTable: comparisonTableFor(family, role),
     relatedRoundups: [],
     relatedProducts: [],

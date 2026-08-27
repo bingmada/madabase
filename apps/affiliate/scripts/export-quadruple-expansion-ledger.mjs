@@ -8,10 +8,12 @@ const repositoryDir = path.resolve(workspaceDir, "../..");
 const sourcePath = path.join(workspaceDir, "lib/quadruple-expansion-content.ts");
 const briefPath = path.join(workspaceDir, "lib/quadruple-family-editorial.ts");
 const communityEvidencePath = path.join(workspaceDir, "config/quadruple-community-evidence.json");
+const deepRankRecoveryPath = path.join(workspaceDir, "config/deep-rank-recovery-2026-08-27.json");
 const amazonProductPath = path.join(workspaceDir, "config/amazon-family-products.json");
 const source = fs.readFileSync(sourcePath, "utf8");
 const briefSource = fs.readFileSync(briefPath, "utf8");
 const communityEvidence = JSON.parse(fs.readFileSync(communityEvidencePath, "utf8"));
+const deepRankRecovery = JSON.parse(fs.readFileSync(deepRankRecoveryPath, "utf8"));
 const briefJavascript = ts.transpileModule(briefSource, {
   compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 },
   fileName: briefPath,
@@ -21,8 +23,9 @@ const contentJavascript = ts.transpileModule(source, {
   fileName: sourcePath,
 }).outputText
   .replace(/^import communityEvidenceData[^;]+;\n/m, "")
+  .replace(/^import deepRankRecoveryData[^;]+;\n/m, "")
   .replace(/^import \{ findFamilyEditorialBrief \}[^;]+;\n/m, "");
-const javascript = `${briefJavascript}\nconst communityEvidenceData = ${JSON.stringify(communityEvidence)};\n${contentJavascript}`;
+const javascript = `${briefJavascript}\nconst communityEvidenceData = ${JSON.stringify(communityEvidence)};\nconst deepRankRecoveryData = ${JSON.stringify(deepRankRecovery)};\n${contentJavascript}`;
 const expansion = await import(`data:text/javascript;base64,${Buffer.from(javascript).toString("base64")}`);
 const amazonProducts = JSON.parse(fs.readFileSync(amazonProductPath, "utf8")).products ?? [];
 

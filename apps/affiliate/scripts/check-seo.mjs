@@ -193,6 +193,7 @@ for (const filename of fs.readdirSync(libDir).filter((name) => name.endsWith(".t
 const quadrupleExpansionFile = path.join(libDir, "quadruple-expansion-content.ts");
 const quadrupleEditorialBriefFile = path.join(libDir, "quadruple-family-editorial.ts");
 const quadrupleCommunityEvidenceFile = path.join(workspaceDir, "config", "quadruple-community-evidence.json");
+const quadrupleDeepRankRecoveryFile = path.join(workspaceDir, "config", "deep-rank-recovery-2026-08-27.json");
 const quadrupleExpansionSource = fs.readFileSync(quadrupleExpansionFile, "utf8");
 const quadrupleEditorialBriefJavascript = ts.transpileModule(fs.readFileSync(quadrupleEditorialBriefFile, "utf8"), {
   compilerOptions: {
@@ -202,6 +203,7 @@ const quadrupleEditorialBriefJavascript = ts.transpileModule(fs.readFileSync(qua
   fileName: quadrupleEditorialBriefFile,
 }).outputText;
 const quadrupleCommunityEvidenceData = JSON.parse(fs.readFileSync(quadrupleCommunityEvidenceFile, "utf8"));
+const quadrupleDeepRankRecoveryData = JSON.parse(fs.readFileSync(quadrupleDeepRankRecoveryFile, "utf8"));
 const quadrupleExpansionContentJavascript = ts.transpileModule(quadrupleExpansionSource, {
   compilerOptions: {
     module: ts.ModuleKind.ESNext,
@@ -210,8 +212,9 @@ const quadrupleExpansionContentJavascript = ts.transpileModule(quadrupleExpansio
   fileName: quadrupleExpansionFile,
 }).outputText
   .replace(/^import communityEvidenceData[^;]+;\n/m, "")
+  .replace(/^import deepRankRecoveryData[^;]+;\n/m, "")
   .replace(/^import \{ findFamilyEditorialBrief \}[^;]+;\n/m, "");
-const quadrupleExpansionJavascript = `${quadrupleEditorialBriefJavascript}\nconst communityEvidenceData = ${JSON.stringify(quadrupleCommunityEvidenceData)};\n${quadrupleExpansionContentJavascript}`;
+const quadrupleExpansionJavascript = `${quadrupleEditorialBriefJavascript}\nconst communityEvidenceData = ${JSON.stringify(quadrupleCommunityEvidenceData)};\nconst deepRankRecoveryData = ${JSON.stringify(quadrupleDeepRankRecoveryData)};\n${quadrupleExpansionContentJavascript}`;
 const quadrupleExpansionModule = await import(
   `data:text/javascript;base64,${Buffer.from(quadrupleExpansionJavascript).toString("base64")}`
 );

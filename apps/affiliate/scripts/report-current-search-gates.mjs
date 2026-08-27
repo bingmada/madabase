@@ -99,18 +99,21 @@ async function governedExpansionUrls() {
   const sourcePath = path.join(affiliateDir, "lib", "quadruple-expansion-content.ts");
   const briefPath = path.join(affiliateDir, "lib", "quadruple-family-editorial.ts");
   const communityPath = path.join(affiliateDir, "config", "quadruple-community-evidence.json");
+  const deepRankRecoveryPath = path.join(affiliateDir, "config", "deep-rank-recovery-2026-08-27.json");
   const source = ts.transpileModule(fs.readFileSync(sourcePath, "utf8"), {
     compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 },
     fileName: sourcePath,
   }).outputText
     .replace(/^import communityEvidenceData[^;]+;\n/m, "")
+    .replace(/^import deepRankRecoveryData[^;]+;\n/m, "")
     .replace(/^import \{ findFamilyEditorialBrief \}[^;]+;\n/m, "");
   const brief = ts.transpileModule(fs.readFileSync(briefPath, "utf8"), {
     compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 },
     fileName: briefPath,
   }).outputText;
   const community = JSON.parse(fs.readFileSync(communityPath, "utf8"));
-  const moduleSource = `${brief}\nconst communityEvidenceData = ${JSON.stringify(community)};\n${source}`;
+  const deepRankRecovery = JSON.parse(fs.readFileSync(deepRankRecoveryPath, "utf8"));
+  const moduleSource = `${brief}\nconst communityEvidenceData = ${JSON.stringify(community)};\nconst deepRankRecoveryData = ${JSON.stringify(deepRankRecovery)};\n${source}`;
   const expansion = await import(`data:text/javascript;base64,${Buffer.from(moduleSource).toString("base64")}`);
   return expansion.quadrupleExpansionGuides.map((guide) => ({
     site: guide.site,
