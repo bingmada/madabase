@@ -1,6 +1,6 @@
 # Madabase 联盟站每日运营清单
 
-最后更新：2026-08-26
+最后更新：2026-08-28
 
 这份清单是 `日常开发` 的执行入口。每次运行先读取当前运营快照和恢复控制，再按下面顺序完成检查、选择一个主动作、验证并写入当天记录。七个站点必须同时覆盖：Network、Smarthome、Homeoffice、Baby、Pets、Style、Costume。
 
@@ -87,7 +87,8 @@ Google spam update 已于 2026-08-21 官方结束，GSC 也已在 2026-08-26 提
 | 2026-08-24 | 已续查 101 个 URL；累计 361/486，348 indexed、13 not-on-Google，剩余 125 个因当日额度暂停。五个 direct-URL 产品 pilot 的技术、商家和隔离状态全部通过，继续隔离 | 把剩余 125 个记成未收录；提前加入 sitemap、首页/分类发现、IndexNow 或 GSC |
 | 2026-08-25 | 已完成四个 HTTP 200、自 canonical 例外的详细原因，并续查 97 个精确 URL；累计 458/486，442 indexed、16 not-on-Google，剩余 28 个因当日额度暂停。最新完整 GSC 日到 8 月 23 日，更新后观察满足 2/3 | 把三个新 summary 当成技术故障；批量请求索引；在 8 月 24 日完整数据出现前解冻 |
 | 2026-08-26 | 已读取 8 月 24 日完整数据并完成七站冻结正式复评：最近七日 5/1,858 vs 36/5,457，决定继续冻结。URL Inspection 第一条 detail 请求即命中 property quota，累计仍为 458/486、442 indexed、16 not-on-Google、28 未检查；CJ 异常已拆到 Abracadabra AID 17278691 的单一 feed link | 自动解冻；把额度失败写成新检查；依据 CJ 机器人/预取总点击改 CTA；重复 sitemap/IndexNow；无证据大改页面 |
-| 2026-08-27 | 完整执行 Soft151 原始 Day 14 / sitemap 后 Day 7 的 151-URL 闸门与 Ranking118 复核；额度恢复后先做三个 Smarthome detail recheck，再查剩余 28 个 | 只抽样赢家；提前重写或重提；把继续额度阻塞写成未收录 |
+| 2026-08-27 | 已在 8 月 28 日用完整到 8 月 26 日的数据补齐：Soft151 151/151 与 Ranking118 118/118 已完整复核；三个 Smarthome detail 已复查，剩余 28 URL 全部 indexed | 只抽样赢家；提前重写或重提；把额度阻塞写成未收录 |
+| 2026-08-28 | 最近完整七日 6/1,794 vs 26/4,442，冻结继续。Soft151 为 26 exposed / 74 impressions / 0 clicks，Ranking118 为 47 / 696 / 4；精确 486 URL Inspection 队列完成为 471 indexed、15 not-on-Google、0 remaining。昨天 43 页发布尚无完整发布后日，今日主动作是保护测量基线 | 依据 8 月 26 日完整数据评价 8 月 27 日发布效果；再次批量重写；重放 43 URL IndexNow；把两个 discovered-currently-not-indexed 页面当技术故障 |
 | 2026-09-02 | Costume small-space pilot 下一闸门 | 无查询证据就扩充同类 URL |
 | 2026-09-03 | Soft151 sitemap 后 Day 14 | 以单日数据定性 |
 | 2026-09-08 | Expansion757 Day 30 | 未完成整批 ledger 就开新扩张 |

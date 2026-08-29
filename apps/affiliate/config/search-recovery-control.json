@@ -1,13 +1,13 @@
 {
   "version": 3,
-  "updatedAt": "2026-08-26T19:45:08+08:00",
+  "updatedAt": "2026-08-28T17:25:49+08:00",
   "status": "august_2026_spam_update_closed_existing_page_recovery_deployed_new_growth_frozen",
   "trigger": {
     "name": "August 2026 spam update",
     "startedAt": "2026-08-18T09:27:00-07:00",
     "officialClosedAt": "2026-08-21T01:50:00-07:00",
     "duration": "2 days 16 hours",
-    "evidence": "Google's Search Status Dashboard marks the August 2026 spam update Closed. Complete August 22-24 evidence now satisfies the three-day review prerequisite but fails the release test: Network, Smarthome and Pets are down 95.3%, 96.6% and 98.6% in seven-day impressions while production, sitemap, current canonical, manual-action and security checks remain healthy. The freeze therefore remains an evidence-backed search-exposure control rather than an outage response."
+    "evidence": "Google's Search Status Dashboard marks the August 2026 spam update Closed. Complete data through August 26 still fails the release test: the property is at 6 clicks and 1,794 impressions versus 26 and 4,442, while Network, Smarthome and Pets page-detail impressions remain down about 92.7%, 97.1% and 98.9%. Production, sitemap, current canonical, manual-action and security checks remain healthy, and the exact 486-URL inspection queue is complete at 471 indexed and 15 not on Google. The freeze therefore remains an evidence-backed search-exposure control rather than an outage response."
   },
   "freeze": {
     "active": true,
@@ -49,8 +49,10 @@
   },
   "reviewGates": {
     "spamUpdate": "closed; August 22-24 complete and formally reassessed on 2026-08-26; exact evidence failed the unfreeze test, so hold-no-expansion remains active",
-    "expansion757Day14": "2026-08-23 metrics complete; live zero-impression inspection remains 458 of 486 because the 2026-08-26 first detail request immediately hit the property quota; retry three Smarthome details and the remaining 28 after renewal on 2026-08-27",
-    "soft151PostSitemapDay7": "2026-08-27",
+    "expansion757Day14": "Metrics and the exact 486-URL zero-impression inspection are complete: 471 indexed, 15 not on Google and zero remaining as of 2026-08-28",
+    "ranking118Review": "Completed on 2026-08-28 with complete August 20-26 data: 47 exposed, 71 zero-impression, 4 clicks, 696 impressions and weighted position 22.45 versus 99 exposed, 18 clicks, 2,029 impressions and position 19.52; protect Baby and Homeoffice signals while Network, Smarthome and Pets remain in recovery",
+    "soft151PostSitemapDay7": "Completed on 2026-08-28 with complete August 20-26 data: 26 exposed, 125 zero-impression, 0 clicks, 74 impressions and weighted position 51.63; hold stable for the 2026-09-03 Day-14 gate",
+    "deepRankRecovery43": "Release a4e8e63 was deployed on 2026-08-27. Complete August 20-26 data is pre-release baseline only; review the exact 43 URLs directionally on 2026-09-03 and tactically on 2026-09-10 without a second broad rewrite beforehand",
     "expansion757Day30": "2026-09-08"
   },
   "recoveryLedger": {
@@ -59,17 +61,17 @@
     "expectedRows": 1026
   },
   "postRolloutObservation": {
-    "checkedAt": "2026-08-26T19:45:08+08:00",
-    "latestCompleteGscDate": "2026-08-24",
-    "completePostCloseGscDaysAvailable": 3,
+    "checkedAt": "2026-08-28T17:25:49+08:00",
+    "latestCompleteGscDate": "2026-08-26",
+    "completePostCloseGscDaysAvailable": 5,
     "requiredCompletePostCloseDates": [
       "2026-08-22",
       "2026-08-23",
       "2026-08-24"
     ],
-    "latest24Hours": "Rolling August 26 versus the preceding 24 hours: 2 versus 2 clicks, 189 versus 248 impressions, 1.1% versus 0.8% CTR and position 39.9 versus 33.0. Current clicks belong to the Network Deco BE63/BE67/BE85 guide and Baby BabyBjorn Harmony newborn-fit checklist. Directional only.",
-    "latestComplete7Days": "August 18-24: 5 clicks, 1,858 impressions, 0.3% CTR and position 36.5 versus 36 clicks, 5,457 impressions, 0.7% CTR and position 32.6 in August 11-17. Network fell to 71 from 1,520 impressions, Smarthome to 44 from 1,280 and Pets to 7 from 490; Homeoffice held 1,150 versus 1,220 and Baby's average position improved. Latest 28 days remain above the preceding 28 days at 77 versus 36 clicks and 13,173 versus 6,998 impressions.",
-    "formalFreezeDecision": "hold-no-expansion: the three-day prerequisite is complete, but severe exact host losses and only three days since release 22f2985 do not support unfreezing or another broad rewrite. Protect Homeoffice and Baby; keep Network, Smarthome and Pets in recovery.",
+    "latest24Hours": "Rolling August 28 versus the preceding 24 hours: 2 versus 1 clicks, 226 versus 254 impressions, 0.9% versus 0.4% CTR and position 38.3 versus 34.4. Homeoffice contributes 151 page-detail impressions and one click, Baby 67 and one click; Network is 7, Smarthome 0 and Pets, Style and Costumes 0. Directional only.",
+    "latestComplete7Days": "August 20-26: 6 clicks, 1,794 impressions, 0.3% CTR and position 37.5 versus 26 clicks, 4,442 impressions, 0.6% CTR and position 33.9 in August 13-19. Network, Smarthome and Pets page-detail impressions remain down about 92.7%, 97.1% and 98.9%; Homeoffice is down about 8.9%, while Baby's page-detail average position improves to 20.3 from 26.8. Latest 28 days remain above the preceding 28 days at 74 versus 41 clicks and 12,956 versus 7,508 impressions.",
+    "formalFreezeDecision": "hold-no-expansion: complete data through August 26 still shows severe exact host losses. Protect Homeoffice and Baby; keep Network, Smarthome and Pets in recovery. Release a4e8e63 happened on August 27, so no complete post-release day exists and no second broad rewrite is allowed before its recorded gates.",
     "expansion757Day14": {
       "window": "2026-08-14 through 2026-08-20",
       "urls": 757,
@@ -82,12 +84,12 @@
     },
     "zeroImpressionInspection": {
       "exactDue": 486,
-      "liveInspected": 458,
-      "indexed": 442,
-      "notOnGoogle": 16,
-      "blockedByDailyQuota": 28,
-      "nextInspectionGate": "2026-08-27 after property quota renewal",
-      "august26Attempt": "The first scheduled Smarthome detail recheck immediately returned the property quota alert. No fresh inspection result was recorded; the remaining 28 exact URLs and three detail rechecks carry forward."
+      "liveInspected": 486,
+      "indexed": 471,
+      "notOnGoogle": 15,
+      "blockedByDailyQuota": 0,
+      "nextInspectionGate": "2026-09-03 for the two discovered-currently-not-indexed Smarthome URLs; no backlog remains",
+      "august28Completion": "All 28 previously blocked URLs returned URL is on Google. Of the three Smarthome detail rechecks, smart blind motors ownership is now indexed while the Aqara/Yolink/Moen Flo comparison and best smart water shutoff valves remain discovered-currently-not-indexed with healthy production and sitemap evidence."
     },
     "ownerAuthorizedRecovery": {
       "authorizedAt": "2026-08-23T10:54:38+08:00",

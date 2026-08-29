@@ -18,6 +18,7 @@ const windowEnd = argumentsByName.get("window-end") ?? "2026-08-13";
 const reportDate = argumentsByName.get("report-date") ?? "2026-08-16";
 const summaryOnly = argumentsByName.get("summary-only") === "1";
 const compareInputPath = argumentsByName.get("compare-input");
+const comparisonKey = argumentsByName.get("comparison-key") ?? "previous24hComparison";
 
 if (!inputPath) {
   throw new Error("Pass --input=/absolute/path/to/gsc-pages.json-or-Pages.csv");
@@ -85,12 +86,40 @@ function readGscRows(filename) {
   return records.map((record) => {
     const url = record["Top pages"] ?? record.Page ?? record.URL;
     if (!url) throw new Error("GSC Pages CSV must contain a Top pages, Page, or URL column");
+    const clicksKey = Object.keys(record).find((key) => /^Last .+ Clicks$/.test(key));
+    const impressionsKey = Object.keys(record).find((key) => /^Last .+ Impressions$/.test(key));
+    const ctrKey = Object.keys(record).find((key) => /^Last .+ CTR$/.test(key));
+    const positionKey = Object.keys(record).find((key) => /^Last .+ Position$/.test(key));
     return {
       url,
-      clicks: Number((record.Clicks ?? "0").replaceAll(",", "")),
-      impressions: Number((record.Impressions ?? "0").replaceAll(",", "")),
-      ctr: record.CTR ?? "0%",
-      position: Number((record.Position ?? "0").replaceAll(",", "")),
+      clicks: Number((record.Clicks ?? record[clicksKey] ?? "0").replaceAll(",", "")),
+      impressions: Number((record.Impressions ?? record[impressionsKey] ?? "0").replaceAll(",", "")),
+      ctr: record.CTR ?? record[ctrKey] ?? "0%",
+      position: Number((record.Position ?? record[positionKey] ?? "0").replaceAll(",", "")),
+    };
+  });
+}
+
+function readComparisonRows(filename) {
+  if (path.extname(filename).toLowerCase() !== ".csv") {
+    return JSON.parse(fs.readFileSync(filename, "utf8"));
+  }
+
+  const [headers, ...rows] = parseCsv(fs.readFileSync(filename, "utf8").replace(/^\uFEFF/, ""));
+  const records = rows.map((row) => Object.fromEntries(headers.map((header, index) => [header.trim(), (row[index] ?? "").trim()])));
+  const keyFor = (record, period, metric) => Object.keys(record).find((key) => key.startsWith(`${period} `) && key.endsWith(` ${metric}`));
+  const number = (value) => Number(String(value ?? "0").replaceAll(",", ""));
+  return records.map((record) => {
+    const url = record["Top pages"] ?? record.Page ?? record.URL;
+    if (!url) throw new Error("GSC comparison CSV must contain a Top pages, Page, or URL column");
+    return {
+      url,
+      currentClicks: number(record[keyFor(record, "Last", "Clicks")]),
+      previousClicks: number(record[keyFor(record, "Previous", "Clicks")]),
+      currentImpressions: number(record[keyFor(record, "Last", "Impressions")]),
+      previousImpressions: number(record[keyFor(record, "Previous", "Impressions")]),
+      currentPosition: number(record[keyFor(record, "Last", "Position")]),
+      previousPosition: number(record[keyFor(record, "Previous", "Position")]),
     };
   });
 }
@@ -273,10 +302,14 @@ function comparisonSummary(items, comparisonByUrl) {
         : null,
     };
   };
-  return { current24h: summarize("current"), previous24h: summarize("previous") };
+  const current = summarize("current");
+  const previous = summarize("previous");
+  return comparisonKey === "previous24hComparison"
+    ? { current24h: current, previous24h: previous }
+    : { currentPeriod: current, previousPeriod: previous };
 }
 
-const gscRows = readGscRows(inputPath);
+const gscRows = readGscRows(inputPath).filter((row) => row.clicks > 0 || row.impressions > 0);
 const metrics = new Map(gscRows.map((row) => [row.url.replace(/\/$/, ""), row]));
 const expansionRows = await governedExpansionUrls();
 const rankingRows = rankingRefreshUrls();
@@ -323,9 +356,9 @@ const report = {
 };
 
 if (compareInputPath) {
-  const comparisonRows = JSON.parse(fs.readFileSync(compareInputPath, "utf8"));
+  const comparisonRows = readComparisonRows(compareInputPath);
   const comparisonByUrl = new Map(comparisonRows.map((row) => [row.url.replace(/\/$/, ""), row]));
-  report.previous24hComparison = {
+  report[comparisonKey] = {
     allPropertyPages: comparisonSummary(comparisonRows, comparisonByUrl),
     expansion757: comparisonSummary(expansion, comparisonByUrl),
     ranking118: comparisonSummary(ranking, comparisonByUrl),
