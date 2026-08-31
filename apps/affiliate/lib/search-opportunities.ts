@@ -555,8 +555,8 @@ export const searchOpportunities: SearchOpportunity[] = [
     kind: "roundup",
     slug: "ergear-48x24-vs-flexispot-e7-mini",
     query: "ErGear 48×24 or FlexiSpot E7 Mini: which fits a small room better?",
-    answer: "Choose the E7 Mini when a 31.5–40-inch top and a permanent narrow workstation solve the room constraint. Choose ErGear only when a full 48×24-inch surface fits and its wheels have a real job. Before either purchase, compare final seated height including the top or casters, monitor-arm clamp clearance, chair pullout, door paths, cable travel, and the exact frame-plus-desktop bundle.",
-    updatedAt: cohortReviewUpdatedAt,
+    answer: "Choose ErGear 48×24 for a larger rolling work surface, or FlexiSpot E7 Mini for a compact fixed setup. Compare height, monitor-arm fit, and room clearance.",
+    updatedAt: "August 31, 2026",
     preferredPaths: ["/reviews/flexispot-e7-mini-standing-desk", "/reviews/ergear-48x24-electric-standing-desk", "/guides/48-vs-55-inch-desk-guide"],
   },
   {

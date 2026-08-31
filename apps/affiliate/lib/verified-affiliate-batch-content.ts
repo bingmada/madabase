@@ -601,13 +601,13 @@ export const verifiedAffiliateBatchRoundups: Roundup[] = [
   {
     site: "homeoffice",
     slug: "ergear-48x24-vs-flexispot-e7-mini",
-    updatedAt,
-    title: "ErGear 48×24 vs FlexiSpot E7 Mini: Full Desk or Compact Fit?",
-    dek: "Compare ErGear vs FlexiSpot by 48×24 work area, compact-top fit, wheels, low height, monitor support, cable routing, room clearance, and exact bundle.",
+    updatedAt: "August 31, 2026",
+    title: "ErGear 48×24 vs FlexiSpot E7 Mini: Which Is Better?",
+    dek: "Choose ErGear for mobility and casters, or FlexiSpot E7 Mini for a fixed, heavier monitor setup. Compare 48×24 space, stability, height, clamp fit, and room clearance.",
     category: "desks",
     intent: "choosing a compact standing desk for a bedroom or shared room",
     intro:
-      "ErGear's wheels favor a room that changes jobs during the day. FlexiSpot E7 Mini is the more permanent workstation choice. Measure the complete setup before deciding that mobility or frame strength is automatically more useful.",
+      "Choose ErGear when mobility and casters matter; choose FlexiSpot E7 Mini for a fixed workstation with a heavier monitor setup. Measure the complete setup before deciding that mobility or frame strength is automatically more useful.",
     sections: [
       {
         heading: "ErGear is the mobility option",

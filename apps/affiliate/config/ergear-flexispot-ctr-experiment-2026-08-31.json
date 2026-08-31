@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "createdAt": "2026-08-31T10:26:44+08:00",
+  "status": "local_change_pending_release",
+  "type": "single_existing_page_snippet_experiment",
+  "site": "homeoffice",
+  "url": "https://homeoffice.madabase.com/best/ergear-48x24-vs-flexispot-e7-mini",
+  "reason": "The page has sustained page-one visibility but no clicks, while the exact comparison queries remain well aligned with the existing URL and body intent.",
+  "baseline": {
+    "latestSevenDayComparisonReadOn": "2026-08-31",
+    "current": {
+      "clicks": 0,
+      "impressions": 38,
+      "averagePosition": 8.2
+    },
+    "previous": {
+      "clicks": 0,
+      "impressions": 58,
+      "averagePosition": 8.8
+    },
+    "combinedImpressions": 96,
+    "pageFilteredQueries": [
+      {
+        "query": "flexispot e7 mini",
+        "currentImpressions": 13,
+        "previousImpressions": 25,
+        "currentAveragePosition": 9.5,
+        "previousAveragePosition": 9.6
+      },
+      {
+        "query": "ergear vs flexispot",
+        "currentImpressions": 6,
+        "previousImpressions": 7,
+        "currentAveragePosition": 6.5,
+        "previousAveragePosition": 8.6
+      },
+      {
+        "query": "flexispot vs ergear",
+        "currentImpressions": 1,
+        "previousImpressions": 2,
+        "currentAveragePosition": 2.0,
+        "previousAveragePosition": 6.5
+      }
+    ]
+  },
+  "changes": {
+    "oldTitle": "ErGear 48×24 vs FlexiSpot E7 Mini: Full Desk or Compact Fit?",
+    "newTitle": "ErGear 48×24 vs FlexiSpot E7 Mini: Which Is Better?",
+    "newMetaDescription": "Choose ErGear 48×24 for a larger rolling work surface, or FlexiSpot E7 Mini for a compact fixed setup. Compare height, monitor-arm fit, and room clearance.",
+    "contentDate": "August 31, 2026",
+    "preserved": [
+      "canonical URL",
+      "comparison intent",
+      "exact model names",
+      "product identities and merchant links",
+      "body sections and internal-link structure"
+    ]
+  },
+  "measurement": {
+    "mutationHoldUntil": "2026-09-07",
+    "day7": "Review direction no earlier than September 7 using only a Search Console window that materially contains post-release data. Do not declare failure from reporting lag or fewer than 50 post-release page impressions.",
+    "day14": "At or after September 14, keep the change if it earns a click, raises CTR to at least 1%, or preserves top-10 position while impressions expand. With at least 100 post-release impressions, zero clicks and a still-top-12 position permit one new snippet test; otherwise keep observing.",
+    "day30": "At or after September 30, compare the exact page and query cohort. Do not merge, redirect or retire the page solely for zero clicks; use a second snippet test only if at least 200 post-release impressions remain clickless and the intent is still exact.",
+    "protectRule": "Stop rewriting immediately if the page gains clicks. Preserve the title and intent if any exact query moves materially upward; fix only confirmed technical, indexing, merchant, tracking or rendering defects during the hold."
+  },
+  "scopeBoundary": "This exception covers one existing page only. It does not authorize changes to CalDigit TS4, GROWNSY, the August 27 deep-rank cohort, any protected click-bearing page, or a new indexable URL."
+}

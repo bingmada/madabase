@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updatedAt": "2026-08-28T17:25:49+08:00",
+  "updatedAt": "2026-08-31T10:26:44+08:00",
   "status": "august_2026_spam_update_closed_existing_page_recovery_deployed_new_growth_frozen",
   "trigger": {
     "name": "August 2026 spam update",
@@ -53,6 +53,7 @@
     "ranking118Review": "Completed on 2026-08-28 with complete August 20-26 data: 47 exposed, 71 zero-impression, 4 clicks, 696 impressions and weighted position 22.45 versus 99 exposed, 18 clicks, 2,029 impressions and position 19.52; protect Baby and Homeoffice signals while Network, Smarthome and Pets remain in recovery",
     "soft151PostSitemapDay7": "Completed on 2026-08-28 with complete August 20-26 data: 26 exposed, 125 zero-impression, 0 clicks, 74 impressions and weighted position 51.63; hold stable for the 2026-09-03 Day-14 gate",
     "deepRankRecovery43": "Release a4e8e63 was deployed on 2026-08-27. Complete August 20-26 data is pre-release baseline only; review the exact 43 URLs directionally on 2026-09-03 and tactically on 2026-09-10 without a second broad rewrite beforehand",
+    "ergearFlexispotCtr": "One query-backed existing-page exception is approved for release on 2026-08-31: 96 impressions across two seven-day windows, zero clicks and average positions 8.2/8.8. Hold the exact URL unchanged through 2026-09-07 and use the recorded 2026-09-07, 2026-09-14 and 2026-09-30 page/query gates.",
     "expansion757Day30": "2026-09-08"
   },
   "recoveryLedger": {

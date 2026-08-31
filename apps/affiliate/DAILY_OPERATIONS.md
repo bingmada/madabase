@@ -89,6 +89,7 @@ Google spam update 已于 2026-08-21 官方结束，GSC 也已在 2026-08-26 提
 | 2026-08-26 | 已读取 8 月 24 日完整数据并完成七站冻结正式复评：最近七日 5/1,858 vs 36/5,457，决定继续冻结。URL Inspection 第一条 detail 请求即命中 property quota，累计仍为 458/486、442 indexed、16 not-on-Google、28 未检查；CJ 异常已拆到 Abracadabra AID 17278691 的单一 feed link | 自动解冻；把额度失败写成新检查；依据 CJ 机器人/预取总点击改 CTA；重复 sitemap/IndexNow；无证据大改页面 |
 | 2026-08-27 | 已在 8 月 28 日用完整到 8 月 26 日的数据补齐：Soft151 151/151 与 Ranking118 118/118 已完整复核；三个 Smarthome detail 已复查，剩余 28 URL 全部 indexed | 只抽样赢家；提前重写或重提；把额度阻塞写成未收录 |
 | 2026-08-28 | 最近完整七日 6/1,794 vs 26/4,442，冻结继续。Soft151 为 26 exposed / 74 impressions / 0 clicks，Ranking118 为 47 / 696 / 4；精确 486 URL Inspection 队列完成为 471 indexed、15 not-on-Google、0 remaining。昨天 43 页发布尚无完整发布后日，今日主动作是保护测量基线 | 依据 8 月 26 日完整数据评价 8 月 27 日发布效果；再次批量重写；重放 43 URL IndexNow；把两个 discovered-currently-not-indexed 页面当技术故障 |
+| 2026-08-31 | 最近 24 小时 0/246 vs 0/216，最近七日 8/1,689 vs 19/3,390；没有新的单日断崖，但点击仍弱。只对累计 96 展现、排名 8.2/8.8、0 点击的 ErGear 48×24 vs FlexiSpot E7 Mini 页面执行一个标题与摘要 CTR 实验 | 改动八个当前点击页；改 CalDigit TS4 或 GROWNSY 正向页；把单页实验扩成批量重写；9 月 7 日前再次改该页 |
 | 2026-09-02 | Costume small-space pilot 下一闸门 | 无查询证据就扩充同类 URL |
 | 2026-09-03 | Soft151 sitemap 后 Day 14 | 以单日数据定性 |
 | 2026-09-08 | Expansion757 Day 30 | 未完成整批 ledger 就开新扩张 |
