@@ -1,6 +1,6 @@
 # Affiliate daily operations — 2026-08-31
 
-状态：`single-page-ctr-change-pending-release`
+状态：`complete-production-verified-indexnow-accepted`
 
 ## 今日判断
 
@@ -31,4 +31,8 @@ CalDigit TS4 和 GROWNSY 的曝光、排名方向为正，继续保护。8 月 2
 
 本地阶段已通过：`check:search-recovery`、`check:seo`、306/306 联盟链接、ESLint 和完整 Linux x64 release build。生成归档为 `apps/affiliate/.release/affiliate-runtime.tgz`，60,738,082 字节，SHA-256 `e2c50270adfae5840ce34ea36e79e7346ce77ce3ec8ceb79fda8c45fe3234fc8`。
 
-从该同一归档启动的不可变本地运行时返回 HTTP 200；标题与 H1 均为新标题，元描述为 155 字符的选择答案，canonical 自指，Article `dateModified` 与 sitemap `lastmod` 均为 2026-08-31，首屏商业路径标记仍存在。生产候选、公开页面、缓存与精确 IndexNow 状态在部署后回填。
+从该同一归档启动的不可变本地运行时返回 HTTP 200；标题与 H1 均为新标题，元描述为 155 字符的选择答案，canonical 自指，Article `dateModified` 与 sitemap `lastmod` 均为 2026-08-31，首屏商业路径标记仍存在。
+
+提交 `7a30568` 已推送至 `origin/lyd-0609`。服务器未 fast-forward、checkout 或清理既有脏检出区，而是从该 Git 对象导出归档；服务器端字节数和 SHA-256 与本地完全一致。候选端口 3111 通过目标页、sitemap 和七站 Host 验证后，systemd 切换到 `/srv/madabase-affiliate/releases/7a30568`。生产当前 0 次重启、无 error 日志；候选已停止，3111 已关闭，旧 release `a4e8e63` 与切换前 unit 备份均保留。
+
+七个公开站点首页全部 HTTP 200；目标公开页的标题、元描述、canonical、首屏商业路径和 sitemap lastmod 正确。浏览器形态 HTML 首次为 Cloudflare MISS、第二次为 HIT，未执行 Purge Everything。IndexNow 预览和提交都只包含这一个 Homeoffice canonical，返回 HTTP 200；旧 43/48 URL 批次、其他页面和 sitemap 均未重放。

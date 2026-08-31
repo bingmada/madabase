@@ -1,7 +1,7 @@
 {
   "version": 1,
   "createdAt": "2026-08-31T10:26:44+08:00",
-  "status": "local_change_pending_release",
+  "status": "production_deployed_publicly_validated_indexnow_accepted",
   "type": "single_existing_page_snippet_experiment",
   "site": "homeoffice",
   "url": "https://homeoffice.madabase.com/best/ergear-48x24-vs-flexispot-e7-mini",
@@ -62,6 +62,17 @@
     "day14": "At or after September 14, keep the change if it earns a click, raises CTR to at least 1%, or preserves top-10 position while impressions expand. With at least 100 post-release impressions, zero clicks and a still-top-12 position permit one new snippet test; otherwise keep observing.",
     "day30": "At or after September 30, compare the exact page and query cohort. Do not merge, redirect or retire the page solely for zero clicks; use a second snippet test only if at least 200 post-release impressions remain clickless and the intent is still exact.",
     "protectRule": "Stop rewriting immediately if the page gains clicks. Preserve the title and intent if any exact query moves materially upward; fix only confirmed technical, indexing, merchant, tracking or rendering defects during the hold."
+  },
+  "release": {
+    "commit": "7a30568",
+    "path": "/srv/madabase-affiliate/releases/7a30568",
+    "rollback": "a4e8e63",
+    "service": "madabase-affiliate.service",
+    "artifactBytes": 60738082,
+    "artifactSha256": "e2c50270adfae5840ce34ea36e79e7346ce77ce3ec8ceb79fda8c45fe3234fc8",
+    "productionVerifiedAt": "2026-08-31T10:49:51+08:00",
+    "validation": "Candidate and production returned the exact title, H1, meta description, canonical, Article dateModified and sitemap lastmod. All seven public affiliate hosts returned HTTP 200, HTML reached Cloudflare HIT on the second browser-shaped request, the systemd process has zero restarts and no error entries, and candidate port 3111 is closed.",
+    "indexNow": "Exactly this one canonical was accepted with HTTP 200."
   },
   "scopeBoundary": "This exception covers one existing page only. It does not authorize changes to CalDigit TS4, GROWNSY, the August 27 deep-rank cohort, any protected click-bearing page, or a new indexable URL."
 }
