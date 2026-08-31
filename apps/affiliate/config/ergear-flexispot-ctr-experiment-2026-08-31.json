@@ -71,7 +71,7 @@
     "artifactBytes": 60738082,
     "artifactSha256": "e2c50270adfae5840ce34ea36e79e7346ce77ce3ec8ceb79fda8c45fe3234fc8",
     "productionVerifiedAt": "2026-08-31T10:49:51+08:00",
-    "validation": "Candidate and production returned the exact title, H1, meta description, canonical, Article dateModified and sitemap lastmod. All seven public affiliate hosts returned HTTP 200, HTML reached Cloudflare HIT on the second browser-shaped request, the systemd process has zero restarts and no error entries, and candidate port 3111 is closed.",
+    "validation": "Candidate and production returned the exact title, H1, meta description, canonical, Article dateModified and sitemap lastmod. All seven public affiliate hosts returned HTTP 200. One independent POP initially served the prior HIT, then an exact no-cache revalidation returned the new page and subsequent normal requests returned the new Cloudflare HIT; no cache deletion or Purge Everything was used. The systemd process has zero restarts and no error entries, and candidate port 3111 is closed.",
     "indexNow": "Exactly this one canonical was accepted with HTTP 200."
   },
   "scopeBoundary": "This exception covers one existing page only. It does not authorize changes to CalDigit TS4, GROWNSY, the August 27 deep-rank cohort, any protected click-bearing page, or a new indexable URL."

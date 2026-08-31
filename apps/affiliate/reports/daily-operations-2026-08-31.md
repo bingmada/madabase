@@ -35,4 +35,4 @@ CalDigit TS4 和 GROWNSY 的曝光、排名方向为正，继续保护。8 月 2
 
 提交 `7a30568` 已推送至 `origin/lyd-0609`。服务器未 fast-forward、checkout 或清理既有脏检出区，而是从该 Git 对象导出归档；服务器端字节数和 SHA-256 与本地完全一致。候选端口 3111 通过目标页、sitemap 和七站 Host 验证后，systemd 切换到 `/srv/madabase-affiliate/releases/7a30568`。生产当前 0 次重启、无 error 日志；候选已停止，3111 已关闭，旧 release `a4e8e63` 与切换前 unit 备份均保留。
 
-七个公开站点首页全部 HTTP 200；目标公开页的标题、元描述、canonical、首屏商业路径和 sitemap lastmod 正确。浏览器形态 HTML 首次为 Cloudflare MISS、第二次为 HIT，未执行 Purge Everything。IndexNow 预览和提交都只包含这一个 Homeoffice canonical，返回 HTTP 200；旧 43/48 URL 批次、其他页面和 sitemap 均未重放。
+七个公开站点首页全部 HTTP 200；目标公开页的标题、元描述、canonical、首屏商业路径和 sitemap lastmod 正确。服务器所在 POP 的浏览器形态 HTML 首次为 Cloudflare MISS、第二次为 HIT。本机独立 POP 随后曾短暂返回旧 HIT；对同一 URL 做一次 `no-cache` 重新验证后返回新标题，接下来的普通请求也稳定命中新版本 HIT。没有执行缓存删除或 Purge Everything。IndexNow 预览和提交都只包含这一个 Homeoffice canonical，返回 HTTP 200；旧 43/48 URL 批次、其他页面和 sitemap 均未重放。
