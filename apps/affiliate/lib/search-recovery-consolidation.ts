@@ -35,6 +35,11 @@ function uniqueBy<T>(items: T[], keyFor: (item: T) => string) {
   );
 }
 
+function latestConsolidatedUpdate(guides: Guide[]) {
+  return ["August 23, 2026", ...guides.map((item) => item.updatedAt).filter((value): value is string => Boolean(value))]
+    .reduce((latest, candidate) => Date.parse(candidate) > Date.parse(latest) ? candidate : latest);
+}
+
 export function isConsolidatedFamily(site: SiteKey, familySlug?: string) {
   return Boolean(familySlug && consolidatedFamilyKeys.has(`${site}:${familySlug}`));
 }
@@ -93,7 +98,7 @@ export function mergeConsolidatedFamilyGuide(guide: Guide, familyGuides: Guide[]
     ...guide,
     dek: `${guide.dek} This consolidated guide also covers alternatives, compatibility and fit, ownership cost, maintenance, and setup workflow in one decision path.`,
     quickAnswer: `${guide.quickAnswer ?? guide.sections[0]?.body ?? guide.dek} Continue through the checks below before choosing: the former comparison, fit, ownership, and workflow material is now preserved on this page.`,
-    updatedAt: "August 23, 2026",
+    updatedAt: latestConsolidatedUpdate(orderedFamilyGuides),
     editorialMethod: uniqueBy(
       orderedFamilyGuides.flatMap((item) => item.editorialMethod ?? []),
       (item) => item,

@@ -23,6 +23,7 @@ async function governedGuideRows() {
   const sourcePath = path.join(affiliateDir, "lib", "quadruple-expansion-content.ts");
   const briefPath = path.join(affiliateDir, "lib", "quadruple-family-editorial.ts");
   const communityPath = path.join(affiliateDir, "config", "quadruple-community-evidence.json");
+  const comparisonFirstPath = path.join(affiliateDir, "config", "comparison-first-cohort-2026-09-04.json");
   const deepRankRecoveryPath = path.join(affiliateDir, "config", "deep-rank-recovery-2026-08-27.json");
   const consolidationPath = path.join(affiliateDir, "config", "search-recovery-consolidations-2026-08-23.json");
   const source = ts.transpileModule(fs.readFileSync(sourcePath, "utf8"), {
@@ -30,6 +31,7 @@ async function governedGuideRows() {
     fileName: sourcePath,
   }).outputText
     .replace(/^import communityEvidenceData[^;]+;\n/m, "")
+    .replace(/^import comparisonFirstData[^;]+;\n/m, "")
     .replace(/^import deepRankRecoveryData[^;]+;\n/m, "")
     .replace(/^import \{ findFamilyEditorialBrief \}[^;]+;\n/m, "");
   const brief = ts.transpileModule(fs.readFileSync(briefPath, "utf8"), {
@@ -37,10 +39,11 @@ async function governedGuideRows() {
     fileName: briefPath,
   }).outputText;
   const community = JSON.parse(fs.readFileSync(communityPath, "utf8"));
+  const comparisonFirst = JSON.parse(fs.readFileSync(comparisonFirstPath, "utf8"));
   const deepRankRecovery = JSON.parse(fs.readFileSync(deepRankRecoveryPath, "utf8"));
   const consolidation = JSON.parse(fs.readFileSync(consolidationPath, "utf8"));
   const consolidatedFamilies = new Set(consolidation.families.map((item) => `${item.site}:${item.familySlug}`));
-  const moduleSource = `${brief}\nconst communityEvidenceData = ${JSON.stringify(community)};\nconst deepRankRecoveryData = ${JSON.stringify(deepRankRecovery)};\n${source}`;
+  const moduleSource = `${brief}\nconst communityEvidenceData = ${JSON.stringify(community)};\nconst comparisonFirstData = ${JSON.stringify(comparisonFirst)};\nconst deepRankRecoveryData = ${JSON.stringify(deepRankRecovery)};\n${source}`;
   const expansion = await import(`data:text/javascript;base64,${Buffer.from(moduleSource).toString("base64")}`);
   return expansion.quadrupleExpansionGuides.map((guide) => ({
     site: guide.site,

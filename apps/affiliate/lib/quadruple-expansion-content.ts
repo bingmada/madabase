@@ -1,5 +1,6 @@
 import type { Guide, SiteKey } from "./types";
 import communityEvidenceData from "../config/quadruple-community-evidence.json";
+import comparisonFirstData from "../config/comparison-first-cohort-2026-09-04.json";
 import deepRankRecoveryData from "../config/deep-rank-recovery-2026-08-27.json";
 import { findFamilyEditorialBrief } from "./quadruple-family-editorial";
 
@@ -31,10 +32,30 @@ type SiteProfile = {
   identityRecord: string;
 };
 
+type ComparisonFirstTarget = {
+  site: ExpansionSite;
+  familySlug: string;
+  slug: string;
+  url: string;
+  title: string;
+  primaryOption: string;
+  alternativeOption: string;
+  searchQuestion: string;
+  dek: string;
+  quickAnswer: string;
+  decisionSection: { heading: string; body: string };
+  comparisonRows: Array<{ label: string; primary: string; alternative: string }>;
+  relatedGuideSlugs: string[];
+};
+
 const updatedAt = "August 9, 2026";
 const deepRankRecoveryUpdatedAt = "August 27, 2026";
+const comparisonFirstUpdatedAt = "September 4, 2026";
 const deepRankRecoveryTargets = new Map(
   deepRankRecoveryData.targets.map((target) => [`${target.site}:${target.slug}`, target]),
+);
+const comparisonFirstTargets = new Map<string, ComparisonFirstTarget>(
+  comparisonFirstData.targets.map((target) => [`${target.site}:${target.slug}`, target as ComparisonFirstTarget]),
 );
 
 const siteProfiles: Record<ExpansionSite, SiteProfile> = {
@@ -513,6 +534,32 @@ function comparisonTableFor(family: ProductFamily, role: (typeof rolesBySite)[Ex
   };
 }
 
+function comparisonFirstTableFor(target: ComparisonFirstTarget): NonNullable<Guide["comparisonTable"]> {
+  return {
+    title: `${target.primaryOption} vs. ${target.alternativeOption}: the decision table`,
+    columns: [target.primaryOption, target.alternativeOption],
+    rows: target.comparisonRows.map((row) => ({
+      label: row.label,
+      values: [row.primary, row.alternative],
+    })).concat([
+      {
+        label: "Decision proof",
+        values: [
+          `Record why ${target.primaryOption.toLowerCase()} solves the repeated job under real conditions.`,
+          `Record why ${target.alternativeOption.toLowerCase()} solves the same job with a clearer fit or ownership path.`,
+        ],
+      },
+      {
+        label: "Recheck point",
+        values: [
+          `Recheck the choice after normal use, maintenance, and one recoverable failure of ${target.primaryOption.toLowerCase()}.`,
+          `Keep ${target.alternativeOption.toLowerCase()} available until the new path passes that test.`,
+        ],
+      },
+    ]),
+  };
+}
+
 function sectionsFor(family: ProductFamily, role: (typeof rolesBySite)[ExpansionSite][number]) {
   const brief = findFamilyEditorialBrief(family.site, family.slug);
   if (!brief) throw new Error(`Missing editorial brief for ${family.site}:${family.slug}`);
@@ -569,37 +616,43 @@ function sectionsFor(family: ProductFamily, role: (typeof rolesBySite)[Expansion
 }
 
 function guideFor(family: ProductFamily, role: (typeof rolesBySite)[ExpansionSite][number]): Guide {
-  const profile = siteProfiles[family.site];
-  const categoryImage = categoryImages[family.site][family.category];
-  const sources = categorySources[family.site][family.category] ?? [{ name: profile.sourceName, url: profile.sourceUrl, note: "Authoritative category-level baseline." }];
-  const brief = findFamilyEditorialBrief(family.site, family.slug);
-  if (!brief) throw new Error(`Missing editorial brief for ${family.site}:${family.slug}`);
-  const discussion = discussionByFamily.get(`${family.site}:${family.slug}`);
-  const siblingSlugs = rolesBySite[family.site].map((item) => roleSlug(family, item)).filter((slug) => slug !== roleSlug(family, role));
-  const title = titleFor(family, role);
-  const searchQuestion = searchQuestionFor(family, role);
   const slug = roleSlug(family, role);
+  const comparisonFirstTarget = comparisonFirstTargets.get(`${family.site}:${slug}`);
+  const effectiveFamily = comparisonFirstTarget
+    ? { ...family, name: comparisonFirstTarget.primaryOption, alternative: comparisonFirstTarget.alternativeOption }
+    : family;
+  const profile = siteProfiles[effectiveFamily.site];
+  const categoryImage = categoryImages[effectiveFamily.site][effectiveFamily.category];
+  const sources = categorySources[effectiveFamily.site][effectiveFamily.category] ?? [{ name: profile.sourceName, url: profile.sourceUrl, note: "Authoritative category-level baseline." }];
+  const brief = findFamilyEditorialBrief(effectiveFamily.site, effectiveFamily.slug);
+  if (!brief) throw new Error(`Missing editorial brief for ${effectiveFamily.site}:${effectiveFamily.slug}`);
+  const discussion = discussionByFamily.get(`${effectiveFamily.site}:${effectiveFamily.slug}`);
+  const siblingSlugs = rolesBySite[effectiveFamily.site].map((item) => roleSlug(effectiveFamily, item)).filter((item) => item !== slug);
+  const relatedGuideSlugs = [...new Set([...siblingSlugs, ...(comparisonFirstTarget?.relatedGuideSlugs ?? [])])];
+  const title = comparisonFirstTarget?.title ?? titleFor(effectiveFamily, role);
+  const searchQuestion = comparisonFirstTarget?.searchQuestion ?? searchQuestionFor(effectiveFamily, role);
   const recoveryTarget = deepRankRecoveryTargets.get(`${family.site}:${slug}`);
   const roleLabel = role === "buying" ? "buying" : role === "comparison" ? "comparison" : role === "fit" ? "compatibility" : role === "ownership" ? "ownership" : role === "workflow" ? "workflow" : "safety";
   return {
-    site: family.site,
+    site: effectiveFamily.site,
     slug,
     title,
-    dek: recoveryTarget
-      ? `A direct ${roleLabel} answer for ${family.name.toLowerCase()}: decide whether the product can ${brief.job}, verify all four model-level conditions, and keep the choice reversible when ${brief.skip}.`
+    dek: comparisonFirstTarget?.dek ?? (recoveryTarget
+      ? `A direct ${roleLabel} answer for ${effectiveFamily.name.toLowerCase()}: decide whether the product can ${brief.job}, verify all four model-level conditions, and keep the choice reversible when ${brief.skip}.`
       : role === "comparison"
-        ? `Choose between ${family.name.toLowerCase()} and ${family.alternative.toLowerCase()} for one concrete job: ${brief.job}. Compare four product-level checks, ownership cost, and the failure mode you can actually recover.`
-        : `${searchQuestion} This guide turns that question into model-level checks, a reversible setup, a first-year ownership plan, and a clear skip decision.`,
-    category: family.category,
-    updatedAt: recoveryTarget ? deepRankRecoveryUpdatedAt : updatedAt,
+        ? `Choose between ${effectiveFamily.name.toLowerCase()} and ${effectiveFamily.alternative.toLowerCase()} for one concrete job: ${brief.job}. Compare four product-level checks, ownership cost, and the failure mode you can actually recover.`
+        : `${searchQuestion} This guide turns that question into model-level checks, a reversible setup, a first-year ownership plan, and a clear skip decision.`),
+    category: effectiveFamily.category,
+    updatedAt: comparisonFirstTarget ? comparisonFirstUpdatedAt : recoveryTarget ? deepRankRecoveryUpdatedAt : updatedAt,
     image: categoryImage?.image ?? profile.image,
     imageAlt: categoryImage?.imageAlt ?? profile.imageAlt,
     searchQuestion,
-    quickAnswer: recoveryTarget ? deepRankRecoveryAnswerFor(family, role) : quickAnswerFor(family, role),
+    quickAnswer: comparisonFirstTarget?.quickAnswer ?? (recoveryTarget ? deepRankRecoveryAnswerFor(effectiveFamily, role) : quickAnswerFor(effectiveFamily, role)),
     editorialMethod: [
+      ...(comparisonFirstTarget ? ["Answer the exact A-versus-B decision before broader fit, ownership, and workflow guidance."] : []),
       "Define one independent purchase or use question for this URL.",
       `Verify the four family-specific dimensions: ${brief.dimensions.join("; ")}.`,
-      family.site === "costume" ? "Resolve shoppable products only from the active Costume PostgreSQL/CJ catalog." : "Use an exact Amazon ASIN only as a current retailer identity and checkout anchor, not as hands-on evidence.",
+      effectiveFamily.site === "costume" ? "Resolve shoppable products only from the active Costume PostgreSQL/CJ catalog." : "Use an exact Amazon ASIN only as a current retailer identity and checkout anchor, not as hands-on evidence.",
       discussion ? "Separate public community discussion from official specifications and editorial judgment." : "Do not add a community claim when no sufficiently relevant public discussion was found.",
       "Keep a written stop condition and a reversible test path.",
     ],
@@ -612,20 +665,26 @@ function guideFor(family: ProductFamily, role: (typeof rolesBySite)[ExpansionSit
     governance: {
       decision: "rewrite",
       independentDemand: searchQuestion,
-      distinctFrom: role === "comparison"
-        ? `The buying page asks whether to enter the category; this page decides between ${family.name.toLowerCase()} and ${family.alternative.toLowerCase()}.`
-        : `This URL answers the ${role} decision and does not substitute for the sibling ${rolesBySite[family.site].filter((item) => item !== role).join(", ")} decisions.`,
+      distinctFrom: comparisonFirstTarget
+        ? `This existing canonical URL owns the decision between ${comparisonFirstTarget.primaryOption.toLowerCase()} and ${comparisonFirstTarget.alternativeOption.toLowerCase()}; related pages support rather than duplicate that fork.`
+        : role === "comparison"
+          ? `The buying page asks whether to enter the category; this page decides between ${effectiveFamily.name.toLowerCase()} and ${effectiveFamily.alternative.toLowerCase()}.`
+          : `This URL answers the ${role} decision and does not substitute for the sibling ${rolesBySite[effectiveFamily.site].filter((item) => item !== role).join(", ")} decisions.`,
       benchmark: role === "buying" || role === "comparison"
         ? "Deco BE63 vs BE67 vs BE85 guide: direct answer, exact decision dimensions, model anchor, sources, and dense internal links."
         : "Ergobaby positions guide and Deco BE63 research page: one exact question, model-level limits, evidence separation, original editorial image, and explicit skip conditions.",
     },
     sources: sources.map((source) => ({ ...source, note: `${source.note} Verify the exact product instructions and current listing separately.` })),
-    sections: recoveryTarget ? [deepRankRecoverySectionFor(family, role), ...sectionsFor(family, role)] : sectionsFor(family, role),
-    comparisonTable: comparisonTableFor(family, role),
+    sections: comparisonFirstTarget
+      ? [comparisonFirstTarget.decisionSection, ...sectionsFor(effectiveFamily, role)]
+      : recoveryTarget
+        ? [deepRankRecoverySectionFor(effectiveFamily, role), ...sectionsFor(effectiveFamily, role)]
+        : sectionsFor(effectiveFamily, role),
+    comparisonTable: comparisonFirstTarget ? comparisonFirstTableFor(comparisonFirstTarget) : comparisonTableFor(effectiveFamily, role),
     relatedRoundups: [],
     relatedProducts: [],
-    relatedGuides: siblingSlugs,
-    familySlug: family.slug,
+    relatedGuides: relatedGuideSlugs,
+    familySlug: effectiveFamily.slug,
     familyRole: role,
   };
 }

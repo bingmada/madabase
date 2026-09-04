@@ -8,6 +8,7 @@ const libDir = path.join(workspaceDir, "lib");
 const sourcePath = path.join(libDir, "quadruple-expansion-content.ts");
 const briefPath = path.join(libDir, "quadruple-family-editorial.ts");
 const communityPath = path.join(workspaceDir, "config", "quadruple-community-evidence.json");
+const comparisonFirstPath = path.join(workspaceDir, "config", "comparison-first-cohort-2026-09-04.json");
 const deepRankRecoveryPath = path.join(workspaceDir, "config", "deep-rank-recovery-2026-08-27.json");
 const amazonPath = path.join(workspaceDir, "config", "amazon-family-products.json");
 
@@ -19,13 +20,15 @@ function transpile(filePath) {
 }
 
 const community = JSON.parse(fs.readFileSync(communityPath, "utf8"));
+const comparisonFirst = JSON.parse(fs.readFileSync(comparisonFirstPath, "utf8"));
 const deepRankRecovery = JSON.parse(fs.readFileSync(deepRankRecoveryPath, "utf8"));
 const amazon = JSON.parse(fs.readFileSync(amazonPath, "utf8"));
 const contentJavascript = transpile(sourcePath)
   .replace(/^import communityEvidenceData[^;]+;\n/m, "")
+  .replace(/^import comparisonFirstData[^;]+;\n/m, "")
   .replace(/^import deepRankRecoveryData[^;]+;\n/m, "")
   .replace(/^import \{ findFamilyEditorialBrief \}[^;]+;\n/m, "");
-const javascript = `${transpile(briefPath)}\nconst communityEvidenceData = ${JSON.stringify(community)};\nconst deepRankRecoveryData = ${JSON.stringify(deepRankRecovery)};\n${contentJavascript}`;
+const javascript = `${transpile(briefPath)}\nconst communityEvidenceData = ${JSON.stringify(community)};\nconst comparisonFirstData = ${JSON.stringify(comparisonFirst)};\nconst deepRankRecoveryData = ${JSON.stringify(deepRankRecovery)};\n${contentJavascript}`;
 const expansion = await import(`data:text/javascript;base64,${Buffer.from(javascript).toString("base64")}`);
 const guides = expansion.quadrupleExpansionGuides;
 const errors = [];

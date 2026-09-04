@@ -10,12 +10,14 @@ const configPath = path.join(workspaceDir, "config", "deep-rank-recovery-2026-08
 const sourcePath = path.join(workspaceDir, "lib", "quadruple-expansion-content.ts");
 const briefPath = path.join(workspaceDir, "lib", "quadruple-family-editorial.ts");
 const communityPath = path.join(workspaceDir, "config", "quadruple-community-evidence.json");
+const comparisonFirstPath = path.join(workspaceDir, "config", "comparison-first-cohort-2026-09-04.json");
 const rankingPath = path.join(repositoryDir, "docs", "affiliate-ranking118-search-gate-2026-08-20.csv");
 const softPath = path.join(repositoryDir, "docs", "affiliate-soft151-search-gate-2026-08-20.csv");
 const consolidationPath = path.join(workspaceDir, "config", "search-recovery-consolidations-2026-08-23.json");
 
 const recovery = JSON.parse(fs.readFileSync(configPath, "utf8"));
 const community = JSON.parse(fs.readFileSync(communityPath, "utf8"));
+const comparisonFirst = JSON.parse(fs.readFileSync(comparisonFirstPath, "utf8"));
 const consolidations = JSON.parse(fs.readFileSync(consolidationPath, "utf8"));
 const errors = [];
 const runtimeOrigin = process.env.DEEP_RANK_RECOVERY_ORIGIN;
@@ -30,9 +32,10 @@ function transpile(filePath) {
 
 const contentJavascript = transpile(sourcePath)
   .replace(/^import communityEvidenceData[^;]+;\n/m, "")
+  .replace(/^import comparisonFirstData[^;]+;\n/m, "")
   .replace(/^import deepRankRecoveryData[^;]+;\n/m, "")
   .replace(/^import \{ findFamilyEditorialBrief \}[^;]+;\n/m, "");
-const javascript = `${transpile(briefPath)}\nconst communityEvidenceData = ${JSON.stringify(community)};\nconst deepRankRecoveryData = ${JSON.stringify(recovery)};\n${contentJavascript}`;
+const javascript = `${transpile(briefPath)}\nconst communityEvidenceData = ${JSON.stringify(community)};\nconst comparisonFirstData = ${JSON.stringify(comparisonFirst)};\nconst deepRankRecoveryData = ${JSON.stringify(recovery)};\n${contentJavascript}`;
 const expansion = await import(`data:text/javascript;base64,${Buffer.from(javascript).toString("base64")}`);
 
 const hosts = {

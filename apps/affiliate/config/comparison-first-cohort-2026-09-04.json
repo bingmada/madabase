@@ -1,0 +1,1014 @@
+{
+  "version": 1,
+  "releaseDate": "2026-09-04",
+  "cohort": "comparison-first-36",
+  "action": "query-backed-existing-page-refresh",
+  "scope": {
+    "targetCount": 36,
+    "newRoutes": 0,
+    "sites": {
+      "network": 8,
+      "smarthome": 8,
+      "homeoffice": 8,
+      "baby": 5,
+      "pet": 7
+    }
+  },
+  "selection": {
+    "source": "Search Console 28-day query evidence plus live SERP validation on 2026-09-04",
+    "rule": "Refresh only an existing canonical page when a concrete A-versus-B decision is visible in search demand and the page is not part of a protected or still-maturing cohort.",
+    "preserve": "Click-bearing comparison winners, Deep43 exact URLs, the ErGear/FlexiSpot test URL, and non-target generated pages remain unchanged."
+  },
+  "reviewGates": {
+    "day7": "2026-09-11",
+    "day14": "2026-09-18",
+    "day30": "2026-10-04",
+    "primaryMetrics": [
+      "exact URL impressions",
+      "exact URL clicks",
+      "comparison-query impressions",
+      "comparison-query average position",
+      "new query variants"
+    ],
+    "decisionRule": "Do not rewrite this cohort again before Day 7. At Day 14, preserve pages gaining impressions or query breadth; inspect only pages with zero exposure or a clear intent mismatch."
+  },
+  "exclusions": [
+    "apps/affiliate/config/deep-rank-recovery-2026-08-27.json exact targets through 2026-09-10",
+    "https://homeoffice.madabase.com/guides/ergear-vs-flexispot-standing-desk-comparison through 2026-09-07",
+    "existing click-bearing comparison winners including Deco BE63 vs BE67, Tapo P110M vs P125M, Elgato vs Litra, Aqara FP2 vs FP300 and Nanit Essentials vs Pro"
+  ],
+  "targets": [
+    {
+      "site": "network",
+      "familySlug": "point-to-point-wireless-bridges",
+      "slug": "point-to-point-wireless-bridges-vs-alternatives",
+      "url": "https://network.madabase.com/guides/point-to-point-wireless-bridges-vs-alternatives",
+      "title": "Wireless Bridge vs Ethernet: Which Link Should You Build?",
+      "primaryOption": "Point-to-point wireless bridge",
+      "alternativeOption": "buried Ethernet or fiber",
+      "searchQuestion": "Should you use a point-to-point wireless bridge or run Ethernet or fiber between two buildings?",
+      "dek": "Compare a wireless bridge with buried Ethernet or fiber by line of sight, trenching cost, real throughput, weather exposure, maintenance and outage recovery.",
+      "quickAnswer": "Choose a point-to-point wireless bridge when the two endpoints have a clean Fresnel zone, trenching is impractical and you can maintain outdoor radios. Choose buried Ethernet or fiber when the route is feasible and predictable latency, capacity and weather-independent operation matter more than installation speed; use fiber rather than copper where electrical isolation or distance is a concern.",
+      "decisionSection": {
+        "heading": "The decision starts with the physical path, not the advertised radio speed",
+        "body": "Survey both endpoints at their final mounting heights. A bridge is viable only when buildings, trees and seasonal foliage leave the required line of sight and Fresnel clearance, with safe power, grounding and service access at both ends. Price the complete wired path—including trenching, conduit, surge protection and termination—against the complete wireless path. If either radio cannot be reached safely after a storm or the path will grow into foliage, the lower-maintenance wired route is the better long-term link."
+      },
+      "comparisonRows": [
+        { "label": "Installation", "primary": "Fast when both mounting points have power and clear sight; no trench is required.", "alternative": "Requires a usable route, conduit or trenching, termination and protection." },
+        { "label": "Performance", "primary": "Varies with alignment, channel conditions, weather and radio capacity.", "alternative": "More predictable latency and throughput; fiber also supports long distance and electrical isolation." },
+        { "label": "Maintenance", "primary": "Radios, mounts, seals, firmware and alignment remain service items.", "alternative": "Buried plant is harder to install but normally needs less routine attention." },
+        { "label": "Best fit", "primary": "Detached buildings where trenching is costly and the path is clean.", "alternative": "Permanent links where a cable route is possible and uptime matters most." }
+      ],
+      "relatedGuideSlugs": ["moca-network-adapters-vs-alternatives", "ten-gigabit-ethernet-switches-vs-alternatives", "ethernet-network-interface-cards-buying-guide"],
+      "evidence": {
+        "gsc28d": "The exact query 'point to point wireless vs wired backbone' recorded 11 impressions at average position 35.8 in the visible 28-day query table.",
+        "liveSerp": "Validated current result coverage for point-to-point wireless bridge versus Ethernet on 2026-09-04."
+      }
+    },
+    {
+      "site": "network",
+      "familySlug": "moca-network-adapters",
+      "slug": "moca-network-adapters-vs-alternatives",
+      "url": "https://network.madabase.com/guides/moca-network-adapters-vs-alternatives",
+      "title": "MoCA vs Powerline: Which Home Network Link Is Better?",
+      "primaryOption": "MoCA adapters",
+      "alternativeOption": "powerline adapters",
+      "searchQuestion": "Should you use MoCA or powerline adapters for a wired home network link?",
+      "dek": "Choose between MoCA and powerline by the wiring already in the home, adapter placement, expected latency, isolation requirements and fallback plan.",
+      "quickAnswer": "Prefer MoCA when usable coax reaches both rooms and the coax topology, splitters and point of entry can be verified. Prefer powerline only when coax is unavailable and the required outlets share a favorable electrical path; performance can change across circuits, panels and noisy appliances. If new Ethernet is practical, price it as the stable reference before buying either adapter system.",
+      "decisionSection": {
+        "heading": "Inventory the coax and electrical paths before comparing speed labels",
+        "body": "Mark every coax outlet, splitter and entry point, then verify which runs are connected and whether filters or incompatible components must change. For powerline, test the exact outlets—without surge strips—and repeat the test while large appliances operate. Compare the worst normal result, not a bench test beside the router. Keep a return path because both technologies depend on hidden wiring conditions that a product page cannot prove."
+      },
+      "comparisonRows": [
+        { "label": "Required wiring", "primary": "Connected in-home coax at both endpoints.", "alternative": "Compatible electrical outlets and a favorable path through the panel." },
+        { "label": "Consistency", "primary": "Usually the more predictable adapter path after coax topology is corrected.", "alternative": "More sensitive to circuits, electrical noise, outlet choice and large loads." },
+        { "label": "Setup checks", "primary": "Splitters, frequency support, point-of-entry filter and unused coax branches.", "alternative": "Direct wall outlets, circuit path, interference and sleep/power-saving behavior." },
+        { "label": "Best fit", "primary": "Homes with existing coax but no practical Ethernet route.", "alternative": "A reversible fallback where no coax route exists and measured outlets perform acceptably." }
+      ],
+      "relatedGuideSlugs": ["powerline-network-adapters-buying-guide", "point-to-point-wireless-bridges-vs-alternatives", "ethernet-cable-testers-buying-guide"],
+      "evidence": {
+        "gsc28d": "The exact query 'moca vs powerline' recorded 2 impressions at average position 48 in the visible 28-day query table.",
+        "liveSerp": "Validated active MoCA-versus-powerline result coverage on 2026-09-04."
+      }
+    },
+    {
+      "site": "network",
+      "familySlug": "ten-gigabit-ethernet-switches",
+      "slug": "ten-gigabit-ethernet-switches-vs-alternatives",
+      "url": "https://network.madabase.com/guides/ten-gigabit-ethernet-switches-vs-alternatives",
+      "title": "2.5GbE vs 10GbE Switch: Which Upgrade Makes Sense?",
+      "primaryOption": "10GbE switch",
+      "alternativeOption": "2.5GbE switch",
+      "searchQuestion": "Should a home or small office buy a 2.5GbE or 10GbE switch?",
+      "dek": "Compare 2.5GbE and 10GbE around actual file transfers, NAS links, client ports, cabling, heat, noise and the total upgrade path.",
+      "quickAnswer": "Choose 2.5GbE when internet access and ordinary client traffic are the main bottlenecks and existing Cat5e runs must stay. Choose 10GbE when repeated local transfers, editing or backups can sustain more than 2.5Gbps end to end and the NAS, clients, cabling and cooling are ready. A single 10GbE uplink with 2.5GbE access ports is often the lower-cost middle path.",
+      "decisionSection": {
+        "heading": "Prove an end-to-end workload before paying for every 10GbE port",
+        "body": "Measure one repeated transfer between the actual storage and client, then list the slowest interface, disk or cable on that path. A 10GbE switch cannot overcome a 1GbE client, slow storage or an internet-only workload. Price network cards, transceivers, cables, power and acoustic placement with the switch. If only the NAS uplink is constrained, a mixed-speed switch can solve the bottleneck without converting every endpoint."
+      },
+      "comparisonRows": [
+        { "label": "Useful workload", "primary": "Large local transfers, multi-user NAS traffic, editing and fast backups.", "alternative": "Internet access, Wi-Fi uplinks and general client traffic." },
+        { "label": "Infrastructure", "primary": "Needs compatible NICs, storage, cabling or optics and more thermal planning.", "alternative": "Often reuses Cat5e and lower-power client hardware." },
+        { "label": "Ownership", "primary": "Higher port, adapter, power, heat and sometimes noise cost.", "alternative": "Lower-cost, cooler and easier to deploy broadly." },
+        { "label": "Middle path", "primary": "Use 10GbE only for servers or uplinks where measured traffic justifies it.", "alternative": "Use 2.5GbE at access ports until more endpoints exceed it." }
+      ],
+      "relatedGuideSlugs": ["sfp-plus-network-switches-buying-guide", "ethernet-network-interface-cards-buying-guide", "network-attached-storage-buying-guide"],
+      "evidence": {
+        "gsc28d": "Selected from the weak existing-page pool; no protected click-bearing query was displaced.",
+        "liveSerp": "Validated current 2.5GbE-versus-10GbE search demand and result coverage on 2026-09-04."
+      }
+    },
+    {
+      "site": "network",
+      "familySlug": "usb-wifi-adapters",
+      "slug": "usb-wifi-adapters-buying-guide",
+      "url": "https://network.madabase.com/guides/usb-wifi-adapters-buying-guide",
+      "title": "USB Wi-Fi Adapter vs PCIe Card: Which Is Better?",
+      "primaryOption": "USB Wi-Fi adapter",
+      "alternativeOption": "PCIe Wi-Fi card",
+      "searchQuestion": "Should you buy a USB Wi-Fi adapter or install a PCIe Wi-Fi card?",
+      "dek": "Compare USB and PCIe Wi-Fi by antenna placement, desktop access, drivers, sustained load, Bluetooth needs and whether the upgrade must move between computers.",
+      "quickAnswer": "Choose a USB Wi-Fi adapter for a quick, portable upgrade when you can place the adapter or its antenna base in a clear position. Choose a PCIe Wi-Fi card for a permanent desktop installation when a free slot, internal USB header for Bluetooth and accessible external antennas are available. Signal placement and driver support usually matter more than the Wi-Fi generation printed on the box.",
+      "decisionSection": {
+        "heading": "Antenna position is often the real USB-versus-PCIe decision",
+        "body": "Check where each option places its antennas after the computer is in its normal position. A tiny USB adapter behind a metal case may perform worse than a well-positioned older radio, while a PCIe card with a cabled antenna base can escape that shadow. Verify operating-system drivers, free slot and internal header requirements, then run a sustained transfer and sleep/wake test before retiring the current connection."
+      },
+      "comparisonRows": [
+        { "label": "Installation", "primary": "External and easy to move; may occupy a fast USB port.", "alternative": "Requires opening the desktop, a free slot and sometimes an internal USB header." },
+        { "label": "Antenna placement", "primary": "Good with an extension or desktop base; poor if hidden behind the case.", "alternative": "Often supports larger external antennas or a magnetic base." },
+        { "label": "Sustained use", "primary": "Compact models can be limited by heat, placement and USB power behavior.", "alternative": "Better suited to a fixed desktop and sustained high-load connection." },
+        { "label": "Best fit", "primary": "Laptops, temporary upgrades and users who cannot open the computer.", "alternative": "Permanent desktop upgrades with accessible internals and driver support." }
+      ],
+      "relatedGuideSlugs": ["pcie-wifi-adapters-buying-guide", "indoor-wifi-access-points-buying-guide", "wifi-range-extenders-buying-guide"],
+      "evidence": {
+        "gsc28d": "This existing canonical hub was previously consolidated; the refresh does not restore redirected support URLs.",
+        "liveSerp": "Validated current USB-Wi-Fi-adapter-versus-PCIe-card search demand on 2026-09-04."
+      }
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "matter-smart-bulbs",
+      "slug": "matter-smart-bulbs-vs-alternatives",
+      "url": "https://smarthome.madabase.com/guides/matter-smart-bulbs-vs-alternatives",
+      "title": "Smart Bulb vs Smart Switch: Which Lighting Setup Wins?",
+      "primaryOption": "smart bulb",
+      "alternativeOption": "smart switch",
+      "searchQuestion": "Should you automate a light with smart bulbs or a smart wall switch?",
+      "dek": "Choose smart bulbs or a smart switch by fixture count, color needs, neutral-wire access, guest behavior, local control and what should happen when the network fails.",
+      "quickAnswer": "Choose smart bulbs when color or tunable white matters, the fixture has few bulbs and wall power can stay on. Choose a smart switch when one control should operate ordinary bulbs and guests must use the wall normally. Check neutral-wire, load and bulb compatibility before choosing a switch; keep a dependable physical control path either way.",
+      "decisionSection": {
+        "heading": "Decide what the wall control should do when automation is unavailable",
+        "body": "Count the bulbs on the circuit and observe how household members use the wall switch. Smart bulbs lose remote control when someone cuts their power, while a smart switch normally preserves the familiar wall action but may require neutral wiring and compatible loads. If color is essential, consider a controller designed to keep smart bulbs powered instead of mixing an ordinary smart dimmer with incompatible bulbs."
+      },
+      "comparisonRows": [
+        { "label": "Best capability", "primary": "Per-bulb color, tunable white and independent zones.", "alternative": "Familiar whole-circuit wall control with ordinary compatible bulbs." },
+        { "label": "Installation", "primary": "Simple lamp installation but every bulb must remain powered.", "alternative": "May require neutral wire, load checks and electrical work." },
+        { "label": "Household use", "primary": "Wall switches can accidentally make bulbs unreachable.", "alternative": "Guests can use the wall control normally." },
+        { "label": "Failure fallback", "primary": "Needs a clear physical on/off path that does not strand the radio.", "alternative": "Should still switch the load locally when the controller or internet is unavailable." }
+      ],
+      "relatedGuideSlugs": ["smart-wall-switches-buying-guide", "smart-dimmer-switches-buying-guide", "smart-scene-buttons-buying-guide"],
+      "evidence": {
+        "gsc28d": "Selected from the weak existing-page pool; no protected smart-lighting winner was changed.",
+        "liveSerp": "Validated current smart-bulb-versus-smart-switch result coverage on 2026-09-04."
+      }
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-displays",
+      "slug": "smart-displays-buying-guide",
+      "url": "https://smarthome.madabase.com/guides/smart-displays-buying-guide",
+      "title": "Smart Display vs Smart Speaker: Which Should You Buy?",
+      "primaryOption": "smart display",
+      "alternativeOption": "smart speaker",
+      "searchQuestion": "Should you buy a smart display or a smart speaker for the room?",
+      "dek": "Compare a smart display and smart speaker by glanceable tasks, camera and privacy needs, placement, sound, household access and the screen's real daily value.",
+      "quickAnswer": "Choose a smart display when visual timers, recipes, calendars, doorbell views or video calls are repeated room-specific tasks. Choose a smart speaker when voice control, music and compact placement cover the job without adding a camera or attention-grabbing screen. If you cannot name a visual task used every week, the speaker is usually the simpler choice.",
+      "decisionSection": {
+        "heading": "Name the visual job before paying for the screen",
+        "body": "List the tasks that require looking rather than listening, who needs them and where the device can sit without exposing private information. Test whether the screen remains visible during the actual task and whether every household member can dismiss or mute it. Treat the camera shutter, microphone mute, account permissions and personal-result settings as setup requirements, not optional cleanup."
+      },
+      "comparisonRows": [
+        { "label": "Core advantage", "primary": "Visual timers, recipes, calendars, cameras and video calls.", "alternative": "Voice control and audio in a smaller, simpler device." },
+        { "label": "Placement", "primary": "Needs a visible surface, suitable angle and more privacy planning.", "alternative": "Fits more locations and does not invite screen interaction." },
+        { "label": "Privacy surface", "primary": "May add camera, visual personal data and screen-based recommendations.", "alternative": "Still has microphones and accounts but no visual or camera layer on many models." },
+        { "label": "Skip signal", "primary": "Skip when the screen has no repeated visual task.", "alternative": "Choose when audio and voice cover the actual routine." }
+      ],
+      "relatedGuideSlugs": ["smart-speakers-buying-guide", "indoor-security-cameras-buying-guide", "smart-scene-buttons-buying-guide"],
+      "evidence": {
+        "gsc28d": "This existing canonical hub was previously consolidated; redirected support URLs remain retired.",
+        "liveSerp": "Validated current smart-display-versus-smart-speaker search demand on 2026-09-04."
+      }
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "indoor-air-quality-monitors",
+      "slug": "indoor-air-quality-monitors-vs-alternatives",
+      "url": "https://smarthome.madabase.com/guides/indoor-air-quality-monitors-vs-alternatives",
+      "title": "Air Quality Monitor vs CO2 Monitor: Which Do You Need?",
+      "primaryOption": "multi-sensor air-quality monitor",
+      "alternativeOption": "dedicated CO2 monitor",
+      "searchQuestion": "Do you need a multi-sensor indoor air-quality monitor or a dedicated CO2 monitor?",
+      "dek": "Choose by the pollutant or ventilation question you can act on, then compare sensor coverage, placement, trend access, calibration limits and replacement cost.",
+      "quickAnswer": "Choose a dedicated CO2 monitor when the main question is whether occupied rooms need more ventilation. Choose a multi-sensor monitor when you also have a repeatable plan for particulate matter, humidity or volatile-compound trends. Consumer monitors are decision aids rather than regulatory instruments, so buy only sensors tied to actions you can take.",
+      "decisionSection": {
+        "heading": "One sensor with an action beats six readings without a plan",
+        "body": "Write the room, suspected problem and action threshold before choosing hardware. CO2 can help compare ventilation patterns in occupied spaces; it does not measure every pollutant. A multi-sensor device adds value only when its particulate, humidity or other trends change filtration, source control or ventilation decisions. Confirm what each displayed value actually measures, where the unit must sit and whether history can be exported or reviewed without a subscription."
+      },
+      "comparisonRows": [
+        { "label": "Primary question", "primary": "Several indoor trends such as particles, humidity, CO2 or broad VOC response.", "alternative": "Occupied-room ventilation patterns through CO2." },
+        { "label": "Interpretation", "primary": "More readings require more care about sensor limits and cross-sensitivity.", "alternative": "Narrower question is easier to connect to ventilation actions." },
+        { "label": "Placement", "primary": "May require compromises because different sensors prefer different conditions.", "alternative": "Can be placed specifically for the occupied-room CO2 question." },
+        { "label": "Best fit", "primary": "Households with multiple defined air-quality actions.", "alternative": "Classrooms, bedrooms or offices focused mainly on ventilation trends." }
+      ],
+      "relatedGuideSlugs": ["temperature-humidity-sensors-buying-guide", "whole-home-energy-monitors-vs-alternatives", "smart-smoke-co-listeners-buying-guide"],
+      "evidence": {
+        "gsc28d": "Selected from the weak existing-page pool without changing a click-bearing air-quality page.",
+        "liveSerp": "Validated current indoor-air-quality-monitor and CO2-monitor comparison coverage on 2026-09-04."
+      }
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "whole-home-energy-monitors",
+      "slug": "whole-home-energy-monitors-vs-alternatives",
+      "url": "https://smarthome.madabase.com/guides/whole-home-energy-monitors-vs-alternatives",
+      "title": "Whole-Home Energy Monitor vs Smart Plug: Which Is Better?",
+      "primaryOption": "whole-home energy monitor",
+      "alternativeOption": "energy-monitoring smart plug",
+      "searchQuestion": "Should you use a whole-home energy monitor or energy-monitoring smart plugs?",
+      "dek": "Compare panel-level and plug-level monitoring by the loads you need to identify, installation risk, measurement granularity, app dependence and the actions that can repay the setup.",
+      "quickAnswer": "Choose energy-monitoring smart plugs for a few plug-in appliances when device-level readings and easy relocation matter. Choose a whole-home monitor when panel access is safe, large or hardwired loads matter and household-wide trends can drive specific actions. Neither option saves energy by itself; the useful choice is the one that produces measurements you will act on.",
+      "decisionSection": {
+        "heading": "Start with the load you need to measure and the action that follows",
+        "body": "List the appliances or circuits behind the cost question. A smart plug cannot measure hardwired HVAC, water heating or an entire panel, while a whole-home system may infer rather than directly isolate individual loads. Confirm electrical-panel compatibility and professional-installation requirements before considering a panel device. For a small number of plug-in loads, run a smart-plug test first and record whether the result changes scheduling, replacement or usage."
+      },
+      "comparisonRows": [
+        { "label": "Coverage", "primary": "Panel-wide consumption and potentially large or hardwired loads.", "alternative": "One compatible plug-in appliance per monitored outlet." },
+        { "label": "Granularity", "primary": "Broad trends; device identification may depend on inference or extra sensors.", "alternative": "Direct device-level measurement for the connected load." },
+        { "label": "Installation", "primary": "Panel compatibility and qualified electrical work may be required.", "alternative": "Usually reversible, but load rating and outlet fit must be checked." },
+        { "label": "Best fit", "primary": "Households investigating total demand or large hardwired loads.", "alternative": "Targeted tests on a few plug-in devices." }
+      ],
+      "relatedGuideSlugs": ["smart-power-strips-buying-guide", "outdoor-smart-plugs-buying-guide", "indoor-air-quality-monitors-vs-alternatives"],
+      "evidence": {
+        "gsc28d": "Selected from the weak existing-page pool; the refresh remains within the existing URL.",
+        "liveSerp": "Validated current whole-home-versus-plug-level energy-monitoring demand on 2026-09-04."
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "ultrawide-office-monitors",
+      "slug": "ultrawide-office-monitors-vs-alternatives",
+      "url": "https://homeoffice.madabase.com/guides/ultrawide-office-monitors-vs-alternatives",
+      "title": "Ultrawide vs Dual Monitors: Which Office Setup Is Better?",
+      "primaryOption": "ultrawide monitor",
+      "alternativeOption": "dual monitors",
+      "searchQuestion": "Should you use one ultrawide monitor or two monitors for office work?",
+      "dek": "Compare an ultrawide with dual monitors by usable workspace, window layout, screen sharing, ports, desk depth, ergonomics and the computer's display support.",
+      "quickAnswer": "Choose an ultrawide when you want one continuous workspace, one stand and no center bezel, and your apps divide well across a wide canvas. Choose dual monitors when you need a dedicated secondary screen, easier full-screen sharing or independent orientation and replacement. Measure desk depth and verify the computer can drive the intended resolution and refresh rate before either purchase.",
+      "decisionSection": {
+        "heading": "Map three real work layouts before comparing diagonal inches",
+        "body": "Recreate the windows used for focused work, meetings and reference tasks. An ultrawide favors flexible side-by-side windows but can complicate sharing one full screen; dual monitors create a natural primary/secondary boundary but add a bezel, stand and cable path. Compare usable pixel dimensions, not only physical size, and check whether the camera, speakers and main application can remain centered without repeated neck rotation."
+      },
+      "comparisonRows": [
+        { "label": "Workspace", "primary": "Continuous canvas with flexible window widths and no center bezel.", "alternative": "Two distinct full-screen zones with an obvious primary and secondary display." },
+        { "label": "Meetings", "primary": "May require sharing an application window or virtual region.", "alternative": "One display can be shared while notes remain on the other." },
+        { "label": "Desk setup", "primary": "One stand and cable set, but width and curvature require enough depth.", "alternative": "More stands, cables and alignment, with independent placement." },
+        { "label": "Resilience", "primary": "One display failure removes the whole workspace.", "alternative": "One screen can remain usable and either display can be replaced separately." }
+      ],
+      "relatedGuideSlugs": ["vertical-office-monitors-buying-guide", "dual-screen-portable-monitors-buying-guide", "business-usb-c-monitors-buying-guide"],
+      "evidence": {
+        "gsc28d": "Selected from the weak existing-page pool while preserving Homeoffice's stronger click-bearing URLs.",
+        "liveSerp": "Validated current ultrawide-versus-dual-monitor search demand on 2026-09-04."
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "mechanical-office-keyboards",
+      "slug": "mechanical-office-keyboards-buying-guide",
+      "url": "https://homeoffice.madabase.com/guides/mechanical-office-keyboards-buying-guide",
+      "title": "Mechanical vs Low-Profile Keyboard for Office Work",
+      "primaryOption": "mechanical keyboard",
+      "alternativeOption": "low-profile keyboard",
+      "searchQuestion": "Is a mechanical or low-profile keyboard better for an office workday?",
+      "dek": "Compare mechanical and low-profile keyboards by typing feel, front height, sound, layout, device switching, repairability and what remains comfortable after a full workday.",
+      "quickAnswer": "Choose a mechanical keyboard when switch feel, layout choice and replaceable parts justify the extra height and sound. Choose a low-profile keyboard when a lower front edge, familiar laptop-like travel and a quieter shared-space setup matter more. Comfort is individual: test the actual height and force through a normal workday instead of treating either design as automatically ergonomic.",
+      "decisionSection": {
+        "heading": "Front height, force and sound matter more than the keyboard label",
+        "body": "Measure the keyboard's front edge in the real desk position and note whether the wrists stay neutral without continuous pressure on a rest. Compare key force, travel and sound during both focused typing and calls. A mechanical board can be quiet and a low-profile board can still be stiff, so judge the exact switches and construction. Verify the layout and device-switching workflow before paying for customization that does not improve the workday."
+      },
+      "comparisonRows": [
+        { "label": "Typing feel", "primary": "Broad switch choice, travel and feedback; highly model-dependent.", "alternative": "Shorter travel and a more laptop-like transition on many models." },
+        { "label": "Desk fit", "primary": "Often taller and may change wrist or forearm position.", "alternative": "Usually lower at the front edge and easier to fit in shallow setups." },
+        { "label": "Sound", "primary": "Can range from quiet to disruptive depending on switch, plate and case.", "alternative": "Often quieter, but the exact mechanism still controls noise." },
+        { "label": "Ownership", "primary": "More options for switch, keycap and repair changes on serviceable models.", "alternative": "Simpler profile but often fewer interchangeable parts." }
+      ],
+      "relatedGuideSlugs": ["low-profile-keyboards-buying-guide", "ergonomic-split-keyboards-buying-guide", "wireless-number-pads-buying-guide"],
+      "evidence": {
+        "gsc28d": "This existing canonical hub was previously consolidated; its retired support URLs remain redirects.",
+        "liveSerp": "Validated current mechanical-versus-low-profile keyboard demand on 2026-09-04."
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "vertical-mice",
+      "slug": "vertical-mice-vs-alternatives",
+      "url": "https://homeoffice.madabase.com/guides/vertical-mice-vs-alternatives",
+      "title": "Vertical Mouse vs Trackball: Which Is Better for Work?",
+      "primaryOption": "vertical mouse",
+      "alternativeOption": "trackball",
+      "searchQuestion": "Should you use a vertical mouse or a trackball for office work?",
+      "dek": "Compare vertical mice and trackballs by grip, reach, pointer control, desk movement, dominant-hand load, learning time and full-day comfort.",
+      "quickAnswer": "Choose a vertical mouse when you want a more rotated hand position but still prefer moving a mouse across the desk. Choose a trackball when desk space or shoulder movement is the bigger constraint and you can tolerate a different pointer-control technique. Neither device treats pain; test fit and workload gradually and seek qualified medical guidance for persistent symptoms.",
+      "decisionSection": {
+        "heading": "Identify whether grip position or arm movement is the actual problem",
+        "body": "Observe a normal hour of pointing work. A vertical mouse changes forearm and hand orientation but still travels across the desk; a trackball stays fixed but shifts fine control to the thumb or fingers. Check reach, button force and pointer accuracy at the user's normal sensitivity. Introduce either device in short sessions and keep the old input device available while muscles and technique adapt."
+      },
+      "comparisonRows": [
+        { "label": "Main change", "primary": "Rotates the grip while preserving familiar mouse movement.", "alternative": "Keeps the device stationary and moves the pointer with a ball." },
+        { "label": "Desk space", "primary": "Still needs a usable movement surface.", "alternative": "Works in a small fixed footprint." },
+        { "label": "Learning curve", "primary": "Usually closer to a conventional mouse.", "alternative": "Requires new thumb or finger control and sensitivity tuning." },
+        { "label": "Fit risk", "primary": "Width, angle and button reach vary substantially by hand.", "alternative": "Ball size, control finger and button layout determine fit." }
+      ],
+      "relatedGuideSlugs": ["office-trackballs-buying-guide", "productivity-mice-buying-guide", "ergonomic-split-keyboards-buying-guide"],
+      "evidence": {
+        "gsc28d": "Selected from the weak existing-page pool; no stronger Homeoffice comparison page was changed.",
+        "liveSerp": "Validated current vertical-mouse-versus-trackball search demand on 2026-09-04."
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "usb-condenser-microphones",
+      "slug": "usb-condenser-microphones-vs-alternatives",
+      "url": "https://homeoffice.madabase.com/guides/usb-condenser-microphones-vs-alternatives",
+      "title": "USB Microphone vs Headset Mic for Work Calls",
+      "primaryOption": "USB microphone",
+      "alternativeOption": "headset microphone",
+      "searchQuestion": "Is a USB microphone or headset microphone better for work calls?",
+      "dek": "Compare a desk USB microphone and headset mic by room noise, mouth distance, typing pickup, speaker bleed, camera framing and daily switching friction.",
+      "quickAnswer": "Choose a headset mic when the room is noisy, distance from the mouth must stay consistent or speakers would feed back into an open microphone. Choose a USB microphone when the room is controlled, you dislike wearing a headset and the mic can stay close without blocking the screen or camera. Placement and room sound usually affect call clarity more than the microphone's headline resolution.",
+      "decisionSection": {
+        "heading": "Test the noisiest real call, not a silent-room voice sample",
+        "body": "Record a short meeting sample while typing, using the normal speakers or HVAC and sitting at the usual distance. A desk microphone loses much of its advantage when it sits beyond arm's reach or must use high gain; a headset keeps mouth distance stable but adds wearing comfort and charging or cable concerns. Confirm mute behavior and operating-system device switching before making either option the daily default."
+      },
+      "comparisonRows": [
+        { "label": "Mouth distance", "primary": "Must be positioned close enough on a stand or arm.", "alternative": "Remains consistently close as the user moves." },
+        { "label": "Room noise", "primary": "More sensitive to placement, reflections, typing and speaker bleed.", "alternative": "Usually isolates the voice better in uncontrolled rooms." },
+        { "label": "Comfort", "primary": "Nothing to wear, but occupies desk and camera space.", "alternative": "Compact workflow, but head and ear comfort matter over long calls." },
+        { "label": "Best fit", "primary": "Controlled room, frequent recording and a stable close placement.", "alternative": "Shared or noisy room, calls with movement and simple repeatability." }
+      ],
+      "relatedGuideSlugs": ["office-call-headsets-buying-guide", "wireless-conference-headsets-buying-guide", "home-office-acoustic-panels-buying-guide"],
+      "evidence": {
+        "gsc28d": "Selected outside the Deep43 XLR and audio-interface targets; protected exact URLs remain untouched.",
+        "liveSerp": "Validated current USB-microphone-versus-headset demand on 2026-09-04."
+      }
+    },
+    {
+      "site": "baby",
+      "familySlug": "automatic-bottle-washers",
+      "slug": "automatic-bottle-washers-vs-alternatives",
+      "url": "https://baby.madabase.com/guides/automatic-bottle-washers-vs-alternatives",
+      "title": "Bottle Washer vs Sterilizer-Dryer: Which Do You Need?",
+      "primaryOption": "automatic bottle washer",
+      "alternativeOption": "sterilizer-dryer",
+      "searchQuestion": "Do you need an automatic bottle washer or only a sterilizer-dryer?",
+      "dek": "Compare bottle washers and sterilizer-dryers by which cleaning steps they perform, bottle and pump-part fit, cycle capacity, water path, drying and daily manual work.",
+      "quickAnswer": "Choose an automatic bottle washer when removing milk residue is the repeated bottleneck and the exact bottles and pump parts fit its racks and cleaning cycle. Choose a sterilizer-dryer when items are already thoroughly washed and the remaining job is an approved sanitizing or drying step. Neither machine replaces the product manufacturer's cleaning instructions or safe hand hygiene.",
+      "decisionSection": {
+        "heading": "Separate washing, sanitizing and drying before comparing machines",
+        "body": "Write every step in the current bottle and pump-part routine. Confirm whether a candidate machine actually washes residue away or begins after manual washing, and check every small component against its current instructions and the rack layout. Measure counter, water and drain needs, then time loading, cycle completion and unloading. A machine that leaves hidden parts for a second manual process may not remove the bottleneck."
+      },
+      "comparisonRows": [
+        { "label": "Primary job", "primary": "Washes compatible feeding parts and may also sanitize and dry.", "alternative": "Sanitizes or dries items that have already been washed as instructed." },
+        { "label": "Compatibility", "primary": "Rack jets, small-part retention and residue removal must suit exact items.", "alternative": "Heat or other cycle limits and item arrangement must suit exact items." },
+        { "label": "Infrastructure", "primary": "May require reservoirs, drain handling, detergent and more cleaning of the machine.", "alternative": "Usually simpler but does not remove the washing step." },
+        { "label": "Best fit", "primary": "High daily volume where washing is the measured bottleneck.", "alternative": "Already-effective washing routine that mainly needs drying or an advised sanitizing step." }
+      ],
+      "relatedGuideSlugs": ["baby-food-makers-buying-guide", "infant-bath-tubs-buying-guide", "changing-pads-buying-guide"],
+      "evidence": {
+        "gsc28d": "Selected outside the protected Baby Deep43 URL set and without changing stronger Baby pages.",
+        "liveSerp": "Validated current bottle-washer and sterilizer-dryer comparison coverage on 2026-09-04."
+      }
+    },
+    {
+      "site": "baby",
+      "familySlug": "baby-wraps-slings",
+      "slug": "baby-wraps-slings-vs-alternatives",
+      "url": "https://baby.madabase.com/guides/baby-wraps-slings-vs-alternatives",
+      "title": "Baby Wrap vs Structured Carrier: Which Fits Your Routine?",
+      "primaryOption": "baby wrap",
+      "alternativeOption": "structured baby carrier",
+      "searchQuestion": "Should you use a baby wrap or a structured baby carrier?",
+      "dek": "Compare wraps and structured carriers by the child's current limits, caregiver fit, learning curve, adjustment speed, climate, cleaning and the exact carry positions allowed.",
+      "quickAnswer": "Choose a wrap when its exact instructions cover the child's current stage, the caregiver can reproduce a secure fit and soft packability matters. Choose a structured carrier when faster repeatable adjustment, multiple caregivers or a defined support system matters more. For either option, the exact current instructions, airway visibility and child-position limits control every carry.",
+      "decisionSection": {
+        "heading": "The best carrier is the one every caregiver can fit correctly every time",
+        "body": "Check the exact child weight and developmental requirements, then practice the approved position with each caregiver while rested. A wrap offers flexible fabric but depends more on tying and tension; a structured carrier offers buckles and adjustment points that still must match both child and adult. Stop if the child's face or airway cannot remain visible and unobstructed, or if any approved fit condition cannot be maintained."
+      },
+      "comparisonRows": [
+        { "label": "Adjustment", "primary": "Fabric tension and tying technique create the fit.", "alternative": "Buckles, straps and panels create a more predefined structure." },
+        { "label": "Learning", "primary": "Requires repeatable tying and positioning for each carry.", "alternative": "Often faster after initial fitting, but settings still vary by caregiver and child." },
+        { "label": "Portability", "primary": "Usually compact and easy to pack.", "alternative": "Bulkier but may offer more structured support and storage." },
+        { "label": "Safety control", "primary": "Exact wrap instructions, tension, airway and approved position.", "alternative": "Exact carrier instructions, panel and buckle setup, airway and approved position." }
+      ],
+      "relatedGuideSlugs": ["hip-seat-carriers-buying-guide", "structured-diaper-bags-buying-guide", "jogging-strollers-buying-guide"],
+      "evidence": {
+        "gsc28d": "Selected outside the protected Baby Deep43 URL set.",
+        "liveSerp": "Validated current baby-wrap-versus-structured-carrier search demand on 2026-09-04."
+      }
+    },
+    {
+      "site": "pet",
+      "familySlug": "large-dog-water-fountains",
+      "slug": "large-dog-water-fountains-vs-alternatives",
+      "url": "https://pets.madabase.com/guides/large-dog-water-fountains-vs-alternatives",
+      "title": "Pet Water Fountain vs Water Bowl: Which Is Better?",
+      "primaryOption": "pet water fountain",
+      "alternativeOption": "large water bowl",
+      "searchQuestion": "Should your dog use a pet water fountain or a large water bowl?",
+      "dek": "Compare fountains and bowls by the individual dog's drinking behavior, capacity, noise tolerance, cleaning access, filter cost, power failures and manual backup.",
+      "quickAnswer": "Choose a fountain only when the dog willingly uses it and the household can clean the pump, reservoir and drinking surfaces on schedule. Choose a large bowl when simple visual inspection, fast washing and power-independent access matter more than circulation. Keep a clean bowl available until fountain use and failure recovery are proven.",
+      "decisionSection": {
+        "heading": "The dog's actual drinking and the cleaning routine decide this comparison",
+        "body": "Introduce the fountain beside the familiar bowl and observe normal drinking rather than assuming moving water is preferred. Disassemble the exact pump and reservoir before purchase if possible, then price filters and the time needed to reach every wet surface. Test what happens after a power loss, low-water condition or clogged pump. A fountain that hides contamination or discourages drinking is a failed fit regardless of capacity."
+      },
+      "comparisonRows": [
+        { "label": "Water access", "primary": "Circulates water while powered and correctly filled.", "alternative": "Immediate, visible access without power or a pump." },
+        { "label": "Cleaning", "primary": "Pump, channels, reservoir, filter and drinking surface all require access.", "alternative": "Usually faster to inspect and wash completely." },
+        { "label": "Ownership", "primary": "Adds filters, pump wear, electricity, noise and failure checks.", "alternative": "Low parts cost but needs regular refill and washing." },
+        { "label": "Best fit", "primary": "A dog that accepts moving water and a household that follows the full cleaning routine.", "alternative": "Simple dependable hydration with easy inspection and a manual routine." }
+      ],
+      "relatedGuideSlugs": ["wireless-pump-pet-fountains-buying-guide", "wet-food-automatic-feeders-buying-guide", "microchip-pet-feeders-buying-guide"],
+      "evidence": {
+        "gsc28d": "Selected from the weak Pets existing-page pool; no click-bearing winner was changed.",
+        "liveSerp": "Validated current pet-fountain-versus-water-bowl search demand on 2026-09-04."
+      }
+    },
+    {
+      "site": "pet",
+      "familySlug": "dog-ramps",
+      "slug": "dog-ramps-vs-alternatives",
+      "url": "https://pets.madabase.com/guides/dog-ramps-vs-alternatives",
+      "title": "Dog Ramp vs Pet Stairs: Which Is Safer for Your Dog?",
+      "primaryOption": "dog ramp",
+      "alternativeOption": "pet stairs",
+      "searchQuestion": "Should your dog use a ramp or pet stairs for the bed, sofa or vehicle?",
+      "dek": "Compare ramps and pet stairs by the individual dog's mobility, target height, slope, tread, landing space, stability, storage and willingness to use the aid.",
+      "quickAnswer": "Choose a ramp when the dog needs a gradual path and the room or vehicle has enough run for a safe slope. Choose pet stairs when the dog already climbs steps comfortably and the available footprint is short. Measure the target height and floor space first, train gradually and ask a veterinarian about mobility changes or pain.",
+      "decisionSection": {
+        "heading": "Target height and available run determine whether a ramp can be gradual enough",
+        "body": "Measure the vertical rise and the maximum horizontal space at the exact bed, sofa or vehicle. A short ramp to a high surface may be too steep even if its weight rating is sufficient; stairs use less floor space but demand repeated joint flexion and confident step use. Check width, edge protection, tread grip and movement on the real floor, then introduce the aid with supervision instead of forcing the dog onto it."
+      },
+      "comparisonRows": [
+        { "label": "Movement pattern", "primary": "Continuous incline with no individual step transitions.", "alternative": "Repeated stepping up or down across shorter treads." },
+        { "label": "Space", "primary": "Needs enough horizontal run to keep the slope practical.", "alternative": "Usually uses less floor length for the same height." },
+        { "label": "Fit checks", "primary": "Slope, width, tread grip, stability and landing alignment.", "alternative": "Step rise, tread depth, stability and the dog's existing stair ability." },
+        { "label": "Best fit", "primary": "Dog accepts an incline and there is room for a gradual, stable path.", "alternative": "Dog climbs steps confidently and the space cannot hold a suitable ramp." }
+      ],
+      "relatedGuideSlugs": ["washable-orthopedic-pet-beds-buying-guide", "vehicle-pet-restraints-buying-guide", "soft-sided-pet-carriers-buying-guide"],
+      "evidence": {
+        "gsc28d": "Selected from the weak Pets existing-page pool.",
+        "liveSerp": "Validated current dog-ramp-versus-pet-stairs demand through current veterinary and pet-care result coverage on 2026-09-04."
+      }
+    },
+    {
+      "site": "pet",
+      "familySlug": "deshedding-brushes",
+      "slug": "deshedding-brushes-vs-alternatives",
+      "url": "https://pets.madabase.com/guides/deshedding-brushes-vs-alternatives",
+      "title": "Deshedding Brush vs Undercoat Rake: Which Tool Fits?",
+      "primaryOption": "deshedding brush",
+      "alternativeOption": "undercoat rake",
+      "searchQuestion": "Should you use a deshedding brush or an undercoat rake for your pet's coat?",
+      "dek": "Choose between deshedding tools and undercoat rakes by coat type, tooth length, pressure, tangles, grooming frequency, skin response and the amount of loose undercoat.",
+      "quickAnswer": "Choose an undercoat rake when its tooth length and spacing match a dense undercoat that can be lifted without scraping skin. Choose a deshedding tool for controlled removal of loose coat only when the exact edge and technique suit the animal. Neither should cut through mats or be used repeatedly on irritated skin; stop when the pet shows pain, redness or coat damage.",
+      "decisionSection": {
+        "heading": "Match tooth depth to the coat before comparing how much hair comes out",
+        "body": "Part the coat and identify whether the tool must reach loose undercoat, smooth a shorter coat or address a tangle that needs a different method. Teeth or edges that are too long can contact skin; tools that are too shallow may pull topcoat without reaching the target. Use light pressure on a small area, inspect skin and coat after several passes and stop well before repeated strokes create irritation."
+      },
+      "comparisonRows": [
+        { "label": "Typical job", "primary": "Controlled removal of loose shedding coat with a model-specific edge or tooth system.", "alternative": "Lifts loose undercoat with spaced teeth matched to coat depth." },
+        { "label": "Fit variable", "primary": "Edge design, coat length, pressure and pass count.", "alternative": "Tooth length, spacing, coat density and contact with skin." },
+        { "label": "Not for", "primary": "Mats, irritated skin or repeated scraping of one area.", "alternative": "Mats, very short coats or teeth that reach and scratch skin." },
+        { "label": "Stop signal", "primary": "Redness, broken coat, pain or increasing resistance.", "alternative": "Snagging, skin contact, pain or coat damage." }
+      ],
+      "relatedGuideSlugs": ["pet-hair-clippers-buying-guide", "pet-hair-vacuum-tools-buying-guide", "pet-dryers-buying-guide"],
+      "evidence": {
+        "gsc28d": "The exact query 'deshedding brush vs undercoat rake' recorded 2 impressions at average position 69 in the visible 28-day query table.",
+        "liveSerp": "Validated current deshedding-brush-versus-undercoat-rake result coverage on 2026-09-04."
+      }
+    },
+    {
+      "site": "pet",
+      "familySlug": "pet-nail-grinders",
+      "slug": "pet-nail-grinders-vs-alternatives",
+      "url": "https://pets.madabase.com/guides/pet-nail-grinders-vs-alternatives",
+      "title": "Dog Nail Grinder vs Clippers: Which Is Better?",
+      "primaryOption": "pet nail grinder",
+      "alternativeOption": "pet nail clippers",
+      "searchQuestion": "Should you use a nail grinder or clippers for your dog's nails?",
+      "dek": "Compare grinders and clippers by nail size and visibility, sound tolerance, heat, handling time, control, maintenance and the caregiver's ability to stop safely.",
+      "quickAnswer": "Choose a grinder when gradual removal and edge smoothing help and the dog can be conditioned to its sound and vibration. Choose clippers when the caregiver can identify a safe cut point and the dog tolerates a quick, controlled clip better than a longer session. Use the exact tool instructions and seek a veterinarian or qualified groomer when nail anatomy, pain or safe restraint is uncertain.",
+      "decisionSection": {
+        "heading": "The safer tool is the one the dog and caregiver can stop calmly",
+        "body": "Handle one paw and present the inactive tool before attempting nail removal. A grinder removes material gradually but can create heat and requires longer exposure to sound and vibration; clippers act quickly but demand confident placement and an appropriate sharp tool. Work in small increments, keep visibility and control, and stop if the dog struggles, the nail becomes hot or the safe boundary cannot be identified."
+      },
+      "comparisonRows": [
+        { "label": "Removal style", "primary": "Gradual abrasion with repeated short contact.", "alternative": "One controlled cut with the correct size and sharpness." },
+        { "label": "Animal tolerance", "primary": "Sound, vibration, session length and paw handling matter.", "alternative": "Pressure, tool placement, the clipping sound and restraint matter." },
+        { "label": "Main risk", "primary": "Heat, prolonged stress or loss of control near hair and paw.", "alternative": "Cutting beyond the safe boundary or crushing with a poor tool." },
+        { "label": "Best fit", "primary": "Dog accepts conditioning and caregiver wants gradual shaping.", "alternative": "Dog tolerates a brief clip and caregiver can identify and control the cut." }
+      ],
+      "relatedGuideSlugs": ["pet-hair-clippers-buying-guide", "deshedding-brushes-vs-alternatives", "pet-dryers-buying-guide"],
+      "evidence": {
+        "gsc28d": "Selected from the weak Pets existing-page pool without changing a protected winner.",
+        "liveSerp": "Validated current pet-nail-grinder-versus-clippers demand on 2026-09-04."
+      }
+    },
+    {
+      "site": "network",
+      "familySlug": "indoor-wifi-access-points",
+      "slug": "indoor-wifi-access-points-vs-alternatives",
+      "url": "https://network.madabase.com/guides/indoor-wifi-access-points-vs-alternatives",
+      "title": "Wired Access Point vs Mesh Wi-Fi: Which Is Better?",
+      "primaryOption": "wired Wi-Fi access point",
+      "alternativeOption": "wireless mesh system",
+      "searchQuestion": "Should you install wired access points or use a wireless mesh Wi-Fi system?",
+      "dek": "Compare wired access points and wireless mesh by available Ethernet, backhaul capacity, placement, roaming, management, power and the effort required to service every node.",
+      "quickAnswer": "Choose wired access points when Ethernet reaches useful ceiling or wall locations and predictable backhaul capacity matters. Choose wireless mesh when running cable is impractical and careful node placement can preserve a strong backhaul path. A mesh kit with wired backhaul narrows the difference, so compare the actual cabling and management model rather than the word mesh alone.",
+      "decisionSection": {
+        "heading": "Backhaul and placement decide more than the label on the radio",
+        "body": "Draw the route from each proposed radio to the router. A wired access point reserves Ethernet for backhaul but needs cable and often PoE; a wireless mesh node must hear both clients and another node well enough to relay traffic. Test the weakest room and the busiest normal hour. If a mesh node must sit where backhaul is poor just to reach clients, cable or relocate the radio before buying a faster Wi-Fi generation."
+      },
+      "comparisonRows": [
+        { "label": "Backhaul", "primary": "Dedicated Ethernet link when cabling and switch capacity are correct.", "alternative": "Usually shares wireless spectrum unless Ethernet backhaul is available." },
+        { "label": "Installation", "primary": "Needs cable, PoE or local power and deliberate mounting.", "alternative": "Faster to place but every hop still needs a strong upstream signal." },
+        { "label": "Management", "primary": "Can offer deeper network control but may require a controller.", "alternative": "Usually simpler household setup inside one vendor ecosystem." },
+        { "label": "Best fit", "primary": "Homes or offices with usable Ethernet and stable radio locations.", "alternative": "Homes where cable is impractical and moderate wireless backhaul is acceptable." }
+      ],
+      "relatedGuideSlugs": ["wifi-range-extenders-buying-guide", "ethernet-patch-panels-buying-guide", "poe-injectors-vs-alternatives"],
+      "evidence": {
+        "gsc28d": "Selected from the weak Network existing-page pool without changing a protected mesh winner.",
+        "liveSerp": "Validated current wired-access-point-versus-mesh result coverage on 2026-09-04."
+      }
+    },
+    {
+      "site": "network",
+      "familySlug": "ethernet-network-interface-cards",
+      "slug": "ethernet-network-interface-cards-vs-alternatives",
+      "url": "https://network.madabase.com/guides/ethernet-network-interface-cards-vs-alternatives",
+      "title": "PCIe Ethernet Card vs USB Adapter: Which Is Better?",
+      "primaryOption": "PCIe Ethernet card",
+      "alternativeOption": "USB Ethernet adapter",
+      "searchQuestion": "Should you install a PCIe Ethernet card or use a USB Ethernet adapter?",
+      "dek": "Compare PCIe and USB Ethernet by computer access, bus bandwidth, port speed, driver support, heat, sleep behavior, portability and whether the connection must run continuously.",
+      "quickAnswer": "Choose a PCIe Ethernet card for a permanent desktop connection when a compatible slot and driver are available and sustained multi-gigabit operation matters. Choose a USB adapter for laptops, temporary fixes or computers that cannot accept an internal card. Verify the host port and operating-system driver because an adapter cannot exceed the slowest USB link, cable or network port.",
+      "decisionSection": {
+        "heading": "The host interface and sustained workload decide the adapter type",
+        "body": "Record the required Ethernet speed, the computer's free PCIe slots or USB ports and the longest sustained transfer. A USB adapter is convenient but can share bandwidth, run hot or behave differently after sleep; a PCIe card is fixed inside the desktop and may consume a slot needed elsewhere. Test link negotiation, a long transfer, sleep and wake, and driver recovery before trusting either path for backups or remote work."
+      },
+      "comparisonRows": [
+        { "label": "Computer fit", "primary": "Desktop with a compatible free slot and accessible bracket.", "alternative": "Computer with a suitable USB port and supported controller." },
+        { "label": "Portability", "primary": "Permanent internal installation.", "alternative": "Moves between systems and installs without opening the case." },
+        { "label": "Sustained use", "primary": "Usually the cleaner permanent path for continuous multi-gigabit traffic.", "alternative": "Depends more on USB bandwidth, heat, power and sleep behavior." },
+        { "label": "Failure check", "primary": "Driver, slot sharing, bracket and thermal conditions.", "alternative": "Cable, hub avoidance, USB power, driver and connector stability." }
+      ],
+      "relatedGuideSlugs": ["usb-c-ethernet-adapters-buying-guide", "ten-gigabit-ethernet-switches-vs-alternatives", "ethernet-cable-testers-buying-guide"],
+      "evidence": {
+        "gsc28d": "Selected from the weak Network existing-page pool.",
+        "liveSerp": "Validated current PCIe-network-card-versus-USB-Ethernet question coverage on 2026-09-04."
+      }
+    },
+    {
+      "site": "network",
+      "familySlug": "poe-injectors",
+      "slug": "poe-injectors-vs-alternatives",
+      "url": "https://network.madabase.com/guides/poe-injectors-vs-alternatives",
+      "title": "PoE Injector vs PoE Switch: Which Should You Use?",
+      "primaryOption": "PoE injector",
+      "alternativeOption": "PoE switch",
+      "searchQuestion": "Should you power network devices with PoE injectors or a PoE switch?",
+      "dek": "Compare injectors and PoE switches by powered-device count, negotiated standard, total power budget, outlet use, remote restart, cable layout, management and future expansion.",
+      "quickAnswer": "Choose a PoE injector for one or two fixed devices when the existing switch is otherwise suitable and the exact PoE standard and power are verified. Choose a PoE switch when several devices need centralized power, monitoring or remote port control. Count the total power budget and per-port requirements; the number of PoE-labeled ports does not guarantee every device can run at full load together.",
+      "decisionSection": {
+        "heading": "Count complete powered paths and their worst-case budget",
+        "body": "List every powered device, its required PoE standard and maximum input, then map the data port, power outlet and cable run. Multiple injectors can be rational for isolated devices but add bricks, outlets and manual recovery points. A switch centralizes the path but must provide both sufficient total budget and the correct per-port class. Test startup after a full power loss because simultaneous device boot can expose a marginal budget."
+      },
+      "comparisonRows": [
+        { "label": "Scale", "primary": "Simple for one or a few known endpoints.", "alternative": "Cleaner for several endpoints and future additions." },
+        { "label": "Power planning", "primary": "Each injector must match its single device and cable path.", "alternative": "Per-port class and shared total budget must both pass." },
+        { "label": "Management", "primary": "Usually local and unmanaged; restart may require physical access.", "alternative": "Managed models may monitor or cycle individual ports." },
+        { "label": "Ownership", "primary": "More separate power bricks, outlets and labels as count grows.", "alternative": "One central failure point with higher upfront cost and thermal load." }
+      ],
+      "relatedGuideSlugs": ["poe-extenders-buying-guide", "indoor-wifi-access-points-vs-alternatives", "ethernet-patch-panels-buying-guide"],
+      "evidence": {
+        "gsc28d": "Selected from the weak Network existing-page pool.",
+        "liveSerp": "Validated active PoE-injector-versus-PoE-switch result coverage, including current vendor guidance, on 2026-09-04."
+      }
+    },
+    {
+      "site": "network",
+      "familySlug": "direct-attach-copper-cables",
+      "slug": "direct-attach-copper-cables-vs-alternatives",
+      "url": "https://network.madabase.com/guides/direct-attach-copper-cables-vs-alternatives",
+      "title": "SFP+ DAC vs Fiber Transceivers: Which Link Is Better?",
+      "primaryOption": "SFP+ direct-attach copper cable",
+      "alternativeOption": "optical transceivers and fiber",
+      "searchQuestion": "Should an SFP+ link use a DAC cable or optical transceivers with fiber?",
+      "dek": "Compare DAC and optical SFP+ links by supported reach, port compatibility, cable routing, power, bend limits, replaceable parts, electrical isolation and total link cost.",
+      "quickAnswer": "Choose a supported DAC for short in-rack or adjacent-rack links where its fixed cable length and thicker bend path fit. Choose optical transceivers and fiber for longer runs, electrical isolation or routes that need lighter cable and patching flexibility. Verify both endpoints' compatibility lists and the complete link type before ordering; an SFP+ shape alone does not prove support.",
+      "decisionSection": {
+        "heading": "Distance, routing and endpoint support define the complete link",
+        "body": "Measure the installed cable path rather than straight-line distance, including service loops and bend clearance at both ports. A DAC integrates cable and ends into one supported assembly; an optical path adds two modules plus the correct fiber and connectors, which increases parts but allows individual replacement. Confirm data rate, coding, module policy, temperature and diagnostics at both endpoints before comparing price."
+      },
+      "comparisonRows": [
+        { "label": "Reach", "primary": "Best for short links within or between nearby racks.", "alternative": "Supports longer building or room-scale runs with the correct optics and fiber." },
+        { "label": "Parts", "primary": "One fixed assembly with attached ends.", "alternative": "Two transceivers plus a separate fiber patch or installed link." },
+        { "label": "Routing", "primary": "Thicker and length-specific, with tighter practical routing constraints.", "alternative": "Lighter cable and more flexible patch lengths, with connector-care requirements." },
+        { "label": "Isolation", "primary": "Copper path does not provide optical electrical isolation.", "alternative": "Optical medium separates the electrical systems at each endpoint." }
+      ],
+      "relatedGuideSlugs": ["sfp-plus-transceivers-buying-guide", "fiber-media-converters-buying-guide", "ten-gigabit-ethernet-switches-vs-alternatives"],
+      "evidence": {
+        "gsc28d": "Selected outside the protected SFP+ switch Deep43 URL.",
+        "liveSerp": "Validated current DAC-versus-optical-transceiver comparison coverage and an Intel link-technology reference on 2026-09-04."
+      }
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-power-strips",
+      "slug": "smart-power-strips-vs-alternatives",
+      "url": "https://smarthome.madabase.com/guides/smart-power-strips-vs-alternatives",
+      "title": "Smart Power Strip vs Smart Plug: Which Is Better?",
+      "primaryOption": "smart power strip",
+      "alternativeOption": "individual smart plug",
+      "searchQuestion": "Should you use a smart power strip or separate smart plugs?",
+      "dek": "Compare smart strips and plugs by outlet count, individual control, total and per-outlet load, spacing, surge claims, energy data, physical access and failure behavior.",
+      "quickAnswer": "Choose a smart power strip when several nearby compatible devices need one organized power and automation point. Choose individual smart plugs when loads are spread across rooms, only one or two devices need control or each device needs independent replacement. Verify total and per-outlet ratings and never assume a smart product changes the safe load or extension rules of the connected equipment.",
+      "decisionSection": {
+        "heading": "Map every load and outlet before consolidating control",
+        "body": "Record each device's normal and startup load, which outlets must remain always on and whether bulky plugs block neighbors. A strip reduces app and cable clutter at one location but creates a shared failure point; separate plugs distribute failures and placement but can crowd receptacles. Confirm what happens locally after internet, controller and power loss, and label any outlet that must not be switched off."
+      },
+      "comparisonRows": [
+        { "label": "Placement", "primary": "Several devices clustered at one desk or media area.", "alternative": "One or two loads or devices spread across rooms." },
+        { "label": "Load planning", "primary": "Both total strip rating and individual outlet limits matter.", "alternative": "Each plug rating and wall-outlet fit must pass separately." },
+        { "label": "Failure scope", "primary": "One strip or account issue can affect several devices.", "alternative": "A failed plug usually affects one load but adds more separate devices." },
+        { "label": "Organization", "primary": "Centralized cord, app and automation path.", "alternative": "More flexible placement and replacement." }
+      ],
+      "relatedGuideSlugs": ["outdoor-smart-plugs-buying-guide", "whole-home-energy-monitors-vs-alternatives", "smart-scene-buttons-buying-guide"],
+      "evidence": {
+        "gsc28d": "Selected from the weak Smarthome existing-page pool.",
+        "liveSerp": "Validated current smart-power-strip-versus-smart-plug result coverage on 2026-09-04."
+      }
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "outdoor-security-cameras",
+      "slug": "outdoor-security-cameras-vs-alternatives",
+      "url": "https://smarthome.madabase.com/guides/outdoor-security-cameras-vs-alternatives",
+      "title": "Outdoor Security Camera vs Video Doorbell: Which First?",
+      "primaryOption": "outdoor security camera",
+      "alternativeOption": "video doorbell",
+      "searchQuestion": "Should you install an outdoor security camera or a video doorbell first?",
+      "dek": "Compare an outdoor camera and video doorbell by the event to capture, field of view, mounting height, power, visitor interaction, package view, recording plan and privacy boundary.",
+      "quickAnswer": "Choose a video doorbell when the front-door visitor interaction and doorstep packages are the primary job. Choose an outdoor camera when the important approach, driveway, yard or side entry needs a different height or wider placement. Map the exact event path before buying; neither device covers areas outside its real field of view, and useful recording may depend on storage or a subscription.",
+      "decisionSection": {
+        "heading": "Place the camera around the event, not the nearest power source",
+        "body": "Walk the actual visitor, delivery and vehicle paths and mark where faces, packages or motion should enter the frame. A doorbell is constrained to door height and visitor interaction; an outdoor camera can move to a better overview but may miss close package detail or two-way door behavior. Verify night lighting, weather exposure, legal privacy boundaries, network coverage and the recording mode before drilling or wiring."
+      },
+      "comparisonRows": [
+        { "label": "Primary job", "primary": "Observe a chosen exterior area or approach.", "alternative": "See and speak with people at the door and monitor deliveries." },
+        { "label": "Placement", "primary": "Flexible height and angle if power and network reach.", "alternative": "Constrained by the doorway, wiring and usable visitor height." },
+        { "label": "Coverage", "primary": "Can cover driveways, yards or side approaches.", "alternative": "Optimized for the doorstep but may not see wider property paths." },
+        { "label": "Ownership", "primary": "Weather mount, power, storage, alerts and lens cleaning.", "alternative": "Door wiring or charging, chime fit, storage, alerts and package view." }
+      ],
+      "relatedGuideSlugs": ["floodlight-security-cameras-buying-guide", "indoor-security-cameras-buying-guide", "smart-garage-door-controllers-buying-guide"],
+      "evidence": {
+        "gsc28d": "The current Madabase URL was visible in live results but lacked a precise two-option title.",
+        "liveSerp": "Validated multiple current video-doorbell-versus-outdoor-camera results on 2026-09-04."
+      }
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "robot-vacuums",
+      "slug": "robot-vacuums-vs-alternatives",
+      "url": "https://smarthome.madabase.com/guides/robot-vacuums-vs-alternatives",
+      "title": "Robot Vacuum vs Cordless Vacuum: Which Is Better?",
+      "primaryOption": "robot vacuum",
+      "alternativeOption": "cordless vacuum",
+      "searchQuestion": "Should you buy a robot vacuum or a cordless vacuum for the home?",
+      "dek": "Compare robot and cordless vacuums by floor plan, pickup job, stairs and edges, supervision, dock space, consumables, maintenance time and the cleaning gaps left behind.",
+      "quickAnswer": "Choose a robot vacuum for frequent maintenance cleaning on a navigable single floor when you will clear hazards and service the bin, brush and dock. Choose a cordless vacuum for stairs, furniture, edges, spot messes and direct control. A robot reduces repeated floor passes but rarely replaces every manual cleaning task, so compare the combined routine rather than suction claims alone.",
+      "decisionSection": {
+        "heading": "Inventory the surfaces and obstacles the robot cannot clean",
+        "body": "Map thresholds, cords, rugs, stairs, tight furniture and the location of a practical dock. Time one normal cordless cleanup and separate routine floor coverage from spot messes, upholstery and stairs. A robot earns its place only when the floor can stay navigable and maintenance takes less effort than the passes it replaces. Keep a manual tool for inaccessible areas and test recovery after a jam or mapping error."
+      },
+      "comparisonRows": [
+        { "label": "Cleaning mode", "primary": "Scheduled, repeated maintenance across reachable floor area.", "alternative": "Directed cleaning wherever the user carries and aims the tool." },
+        { "label": "Coverage gaps", "primary": "Stairs, some edges, obstacles, furniture and spot messes remain.", "alternative": "Depends on user time but reaches stairs, upholstery and targeted debris." },
+        { "label": "Maintenance", "primary": "Brushes, sensors, bin, filter, dock and map all need attention.", "alternative": "Bin, filter, brush and battery remain the main service items." },
+        { "label": "Best fit", "primary": "Navigable floors needing frequent routine passes.", "alternative": "Mixed surfaces and targeted cleaning where direct control matters." }
+      ],
+      "relatedGuideSlugs": ["robot-mops-buying-guide", "smart-power-strips-vs-alternatives", "indoor-security-cameras-buying-guide"],
+      "evidence": {
+        "gsc28d": "Selected from the weak Smarthome existing-page pool.",
+        "liveSerp": "Validated multiple current robot-vacuum-versus-cordless-vacuum results on 2026-09-04."
+      }
+    },
+    {
+      "site": "smarthome",
+      "familySlug": "smart-water-shutoff-valves",
+      "slug": "smart-water-shutoff-valves-vs-alternatives",
+      "url": "https://smarthome.madabase.com/guides/smart-water-shutoff-valves-vs-alternatives",
+      "title": "Water Shutoff Valve vs Leak Sensor: Which Protects More?",
+      "primaryOption": "automatic water shutoff valve",
+      "alternativeOption": "leak sensor",
+      "searchQuestion": "Do you need an automatic water shutoff valve or are leak sensors enough?",
+      "dek": "Compare shutoff systems and alert-only sensors by leak locations, valve and pipe fit, installation, false alarms, remote response, power, maintenance and manual override.",
+      "quickAnswer": "Choose leak sensors when early alerts at known risk points and a reliable human response are sufficient. Choose an automatic shutoff system when the main water line can be fitted safely and unattended leaks require a response even when nobody is home. Most systems still depend on correctly placed sensors or detection logic, so coverage and manual override matter as much as the valve.",
+      "decisionSection": {
+        "heading": "Detection and response are separate layers of the same plan",
+        "body": "List likely leak sources, where water would first collect and how long a person would take to respond. Sensors are easy to distribute but only alert; a valve can stop the incoming supply but may not remove water already stored in an appliance or tank. Verify pipe and valve compatibility, professional-installation needs, power and internet behavior, then practice local manual shutoff and a safe detection test."
+      },
+      "comparisonRows": [
+        { "label": "Response", "primary": "Can close the supply after compatible detection or system logic.", "alternative": "Sends an alert and depends on a person or another system to act." },
+        { "label": "Installation", "primary": "Must fit the main valve or pipe and may require a plumber and power.", "alternative": "Reversible placement at multiple leak-prone locations." },
+        { "label": "Coverage", "primary": "Protects only what closing that supply can stop.", "alternative": "Detects only where sensors are correctly placed and maintained." },
+        { "label": "Fallback", "primary": "Needs a clear manual override and periodic exercise or test.", "alternative": "Needs audible or remote alerts plus a reachable manual shutoff plan." }
+      ],
+      "relatedGuideSlugs": ["smart-contact-sensors-buying-guide", "smart-irrigation-controllers-buying-guide", "temperature-humidity-sensors-buying-guide"],
+      "evidence": {
+        "gsc28d": "Selected from the weak Smarthome existing-page pool.",
+        "liveSerp": "Validated current leak-sensor-versus-automatic-shutoff result coverage on 2026-09-04."
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "office-call-headsets",
+      "slug": "office-call-headsets-vs-alternatives",
+      "url": "https://homeoffice.madabase.com/guides/office-call-headsets-vs-alternatives",
+      "title": "Office Headset vs Speakerphone: Which Is Better?",
+      "primaryOption": "office call headset",
+      "alternativeOption": "USB speakerphone",
+      "searchQuestion": "Should you use an office headset or a USB speakerphone for calls?",
+      "dek": "Compare headsets and speakerphones by room privacy, background noise, participant count, microphone distance, wearing comfort, echo control, movement and daily device switching.",
+      "quickAnswer": "Choose a headset for private one-person calls, noisy or shared rooms and a microphone that stays close while you move. Choose a speakerphone for a quiet private room or small group when nobody wants to wear a device. Test both sides of a real call because room reflections, speaker bleed and microphone distance can matter more than premium audio labels.",
+      "decisionSection": {
+        "heading": "The room and number of voices choose the call device",
+        "body": "Record the loudest normal background sound, whether other people can hear confidential audio and how many participants sit in the room. A headset isolates one user and holds mic distance steady; a speakerphone shares sound naturally but exposes the call to the room and must control echo across changing distances. Run a meeting while typing and moving, then verify mute, reconnect and operating-system switching behavior."
+      },
+      "comparisonRows": [
+        { "label": "Primary user", "primary": "One person with consistent private input and output.", "alternative": "One person in a private room or a small group around the device." },
+        { "label": "Room noise", "primary": "Closer microphone and ear output usually control noise better.", "alternative": "Performance depends heavily on room reflections, distance and competing sound." },
+        { "label": "Comfort", "primary": "Fit, clamp, heat and battery or cable matter across long calls.", "alternative": "Nothing to wear, but speaking distance and room volume require discipline." },
+        { "label": "Privacy", "primary": "Call audio stays at the ears, though the spoken voice remains audible.", "alternative": "All call audio is audible in the room." }
+      ],
+      "relatedGuideSlugs": ["wireless-conference-headsets-buying-guide", "usb-condenser-microphones-vs-alternatives", "home-office-acoustic-panels-buying-guide"],
+      "evidence": {
+        "gsc28d": "Selected outside protected Homeoffice click-bearing and Deep43 URLs.",
+        "liveSerp": "Validated current headset-versus-speakerphone decision coverage, including vendor workplace guidance, on 2026-09-04."
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "thunderbolt-kvm-docks",
+      "slug": "thunderbolt-kvm-docks-vs-alternatives",
+      "url": "https://homeoffice.madabase.com/guides/thunderbolt-kvm-docks-vs-alternatives",
+      "title": "Thunderbolt Dock vs KVM Switch: Which Do You Need?",
+      "primaryOption": "Thunderbolt dock",
+      "alternativeOption": "KVM switch",
+      "searchQuestion": "Do you need a Thunderbolt dock, a KVM switch or both for two computers?",
+      "dek": "Compare docks and KVM switches by whether the job is expanding one computer or switching two, then verify display paths, USB devices, charging, refresh rates and reconnect behavior.",
+      "quickAnswer": "Choose a Thunderbolt dock to give one compatible computer power, displays, network and peripherals through one cable. Choose a KVM switch to move a keyboard, display and other supported devices between two computers. If one computer needs docking and both need switching, the correct system may require both devices with a fully mapped video and USB path.",
+      "decisionSection": {
+        "heading": "Expansion and switching are different jobs",
+        "body": "Draw each computer, display and USB peripheral as separate endpoints. A dock expands one host connection and may not accept a second computer; a KVM selects between hosts but may not charge a laptop or create video outputs the host does not provide. Verify display count, resolution, refresh, HDCP, USB class and charging on every path, then test boot, sleep, wake and switching in the exact connection order."
+      },
+      "comparisonRows": [
+        { "label": "Primary job", "primary": "Expand one compatible host through a consolidated cable.", "alternative": "Switch supported displays and peripherals between two or more hosts." },
+        { "label": "Laptop power", "primary": "May charge the laptop within negotiated power limits.", "alternative": "Usually does not replace the laptop's dock or charger." },
+        { "label": "Video path", "primary": "Limited by host Thunderbolt or USB-C display support and dock chipset.", "alternative": "Limited by every host input, output, cable and switching specification." },
+        { "label": "Combined setup", "primary": "May feed a KVM when one host needs port expansion first.", "alternative": "Must be tested for wake, EDID, USB reconnect and device compatibility." }
+      ],
+      "relatedGuideSlugs": ["dual-monitor-kvm-switches-buying-guide", "business-usb-c-monitors-buying-guide", "desktop-audio-interfaces-buying-guide"],
+      "evidence": {
+        "gsc28d": "Selected outside the protected dual-monitor KVM Deep43 exact URL.",
+        "liveSerp": "Validated current Thunderbolt-dock-versus-KVM result coverage on 2026-09-04."
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "adjustable-laptop-stands",
+      "slug": "adjustable-laptop-stands-vs-alternatives",
+      "url": "https://homeoffice.madabase.com/guides/adjustable-laptop-stands-vs-alternatives",
+      "title": "Laptop Stand vs Monitor Arm: Which Fits Your Desk?",
+      "primaryOption": "adjustable laptop stand",
+      "alternativeOption": "monitor arm with laptop tray",
+      "searchQuestion": "Should you use a laptop stand or a monitor arm with a laptop tray?",
+      "dek": "Compare stands and monitor arms by viewing height, external keyboard use, desk depth, clamp fit, device weight, portability, typing stability and how often the setup must move.",
+      "quickAnswer": "Choose a laptop stand for a portable, low-cost lift when desk surface is available and the computer can sit without wobble. Choose a monitor arm with a compatible tray when reclaiming desk space and wider height or depth adjustment justify the clamp and weight checks. Either raised setup normally needs an external keyboard and pointing device for sustained work.",
+      "decisionSection": {
+        "heading": "Choose the support path after setting screen and input positions",
+        "body": "Place the top of the working screen and the external keyboard where neutral posture and comfortable viewing require them. A stand uses desk depth and is easy to move; an arm clears the surface but transfers load into a clamp, grommet and moving joints. Confirm desk material and edge clearance, total device and tray weight, ventilation and cable reach before assuming an arm can hold the desired position."
+      },
+      "comparisonRows": [
+        { "label": "Desk use", "primary": "Occupies surface area beneath and behind the laptop.", "alternative": "Can free surface area but needs a safe clamp or grommet location." },
+        { "label": "Adjustment", "primary": "Usually changes height and angle within a smaller range.", "alternative": "Offers broader height, depth and lateral movement when load is supported." },
+        { "label": "Portability", "primary": "Folds or moves more easily between work locations.", "alternative": "A fixed installation with more hardware and cable management." },
+        { "label": "Fit risk", "primary": "Base stability, device lip, ventilation and typing wobble.", "alternative": "Desk strength, clamp clearance, tray size, weight and joint drift." }
+      ],
+      "relatedGuideSlugs": ["vertical-office-monitors-buying-guide", "office-footrests-buying-guide", "under-desk-keyboard-trays-buying-guide"],
+      "evidence": {
+        "gsc28d": "Selected outside protected Homeoffice click-bearing URLs.",
+        "liveSerp": "Validated multiple current laptop-stand-versus-monitor-arm results on 2026-09-04."
+      }
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "desktop-power-centers",
+      "slug": "desktop-power-centers-vs-alternatives",
+      "url": "https://homeoffice.madabase.com/guides/desktop-power-centers-vs-alternatives",
+      "title": "Desktop Power Center vs Under-Desk Surge Protector",
+      "primaryOption": "desktop power center",
+      "alternativeOption": "under-desk surge protector",
+      "searchQuestion": "Should desk power sit on the desktop or mount underneath it?",
+      "dek": "Compare desktop power centers and under-desk surge protectors by outlet access, cord routing, USB-C allocation, liquid exposure, mounting, total load, surge status and replacement access.",
+      "quickAnswer": "Choose a desktop power center when frequently changed chargers and temporary devices need reachable outlets away from cable strain. Choose an under-desk surge protector when permanent equipment can stay connected and keeping mains wiring off the work surface matters more. Verify grounding, surge status, total load, mounting and liquid clearance for either location.",
+      "decisionSection": {
+        "heading": "Separate permanent equipment from connections you touch every day",
+        "body": "List monitors, docks and computers that remain connected, then list chargers and test devices that change during the week. Permanent loads usually suit a securely mounted under-desk strip; frequently handled low-voltage charging may justify a reachable desktop center. Route the single mains cord without pinch or trip points, keep all outlets away from liquids and ensure the protection indicator and replacement path stay visible."
+      },
+      "comparisonRows": [
+        { "label": "Access", "primary": "Easy to plug and unplug changing devices.", "alternative": "Better for equipment that remains connected." },
+        { "label": "Cable layout", "primary": "Short charger cables stay reachable but clutter can remain visible.", "alternative": "Moves bricks and mains cables below the surface with a secure mount." },
+        { "label": "Exposure", "primary": "Needs deliberate clearance from drinks and moving work.", "alternative": "Needs protection from knees, chair movement and loose mounting." },
+        { "label": "USB power", "primary": "May provide reachable USB-C, but shared allocation must be verified.", "alternative": "Often focuses on AC distribution; separate chargers can be replaced independently." }
+      ],
+      "relatedGuideSlugs": ["under-desk-cable-trays-buying-guide", "thunderbolt-kvm-docks-vs-alternatives", "standing-desk-anti-fatigue-mats-buying-guide"],
+      "evidence": {
+        "gsc28d": "Selected from the weak Homeoffice existing-page pool.",
+        "liveSerp": "Validated current mounted desktop and under-desk power comparison coverage on 2026-09-04."
+      }
+    },
+    {
+      "site": "baby",
+      "familySlug": "structured-diaper-bags",
+      "slug": "structured-diaper-bags-vs-alternatives",
+      "url": "https://baby.madabase.com/guides/structured-diaper-bags-vs-alternatives",
+      "title": "Diaper Bag vs Regular Backpack: Which Is Better?",
+      "primaryOption": "structured diaper bag",
+      "alternativeOption": "regular backpack with organizers",
+      "searchQuestion": "Do caregivers need a diaper bag or will a regular backpack work?",
+      "dek": "Compare diaper bags and ordinary backpacks by the real packing list, caregiver fit, one-handed access, cleaning, bottle and wet-item storage, stroller use and life after diapers.",
+      "quickAnswer": "Choose a diaper bag when built-in organization, wipeable compartments and repeated one-handed access reduce a real caregiving problem. Choose a regular backpack when removable pouches can organize the same load, multiple adults need a familiar fit and long-term reuse matters. Pack the actual outing kit before buying because empty-bag features do not prove comfort or access.",
+      "decisionSection": {
+        "heading": "Run one real outing from the packed bag",
+        "body": "Load diapers, changing supplies, spare clothing, feeding items, caregiver essentials and any medication in the quantities actually carried. Check whether every caregiver can find urgent items without placing the bag or child unsafely, and whether wet or soiled items stay separated. A purpose-built bag earns its extra structure only if access and cleanup improve after the full load is packed."
+      },
+      "comparisonRows": [
+        { "label": "Organization", "primary": "Fixed pockets and compartments designed around common baby items.", "alternative": "Removable pouches can adapt the layout and move between bags." },
+        { "label": "Cleaning", "primary": "May add wipeable linings or separated wet-item areas.", "alternative": "Depends on fabric and organizer choice; individual pouches may wash separately." },
+        { "label": "Fit", "primary": "Straps and shape may be optimized for access but still need caregiver testing.", "alternative": "More sizes and familiar backpack fits across different adults." },
+        { "label": "Long-term use", "primary": "Specialized layout can become less useful after the baby stage.", "alternative": "General layout is easier to reuse for work, travel or later family needs." }
+      ],
+      "relatedGuideSlugs": ["changing-pads-buying-guide", "baby-wraps-slings-vs-alternatives", "baby-food-makers-buying-guide"],
+      "evidence": {
+        "gsc28d": "Selected outside the protected Baby Deep43 URL set.",
+        "liveSerp": "Validated the current diaper-bag-versus-regular-backpack decision family on 2026-09-04."
+      }
+    },
+    {
+      "site": "baby",
+      "familySlug": "hip-seat-carriers",
+      "slug": "hip-seat-carriers-vs-alternatives",
+      "url": "https://baby.madabase.com/guides/hip-seat-carriers-vs-alternatives",
+      "title": "Hip Seat Carrier vs Structured Carrier: Which Fits?",
+      "primaryOption": "hip seat carrier",
+      "alternativeOption": "soft structured carrier",
+      "searchQuestion": "Should you use a hip seat carrier or a soft structured baby carrier?",
+      "dek": "Compare hip seats and structured carriers by the child's approved stage, hands-free support, quick up-and-down use, caregiver fit, load distribution and exact carry positions.",
+      "quickAnswer": "Choose a hip seat for frequent short pickups only when the exact product supports the child's current stage and the caregiver can maintain the required hold or panel setup. Choose a soft structured carrier when hands-free support and longer continuous carries are the main job. Product designs vary, so the current instructions decide whether a model is a carry assist, a full carrier or both.",
+      "decisionSection": {
+        "heading": "First determine whether the product is hands-free or a carry assist",
+        "body": "Read the exact instructions before comparing comfort because some hip-seat products are a waistband and perch that still require an arm, while others add an approved support panel. Verify the child's age, weight and developmental conditions, then fit each caregiver and practice the permitted position. Stop if airway visibility, approved posture, buckle security or continuous support cannot be maintained."
+      },
+      "comparisonRows": [
+        { "label": "Primary job", "primary": "Quick repeated up-and-down carrying with a supported perch.", "alternative": "Longer hands-free carrying with shoulder and waist support." },
+        { "label": "Support", "primary": "May still require a caregiver arm unless an approved panel is attached.", "alternative": "Structured panel and straps support the approved carry position." },
+        { "label": "Fit", "primary": "Waist position, seat angle, child stage and one-sided load matter.", "alternative": "Panel width, strap path, buckle fit and caregiver torso matter." },
+        { "label": "Best fit", "primary": "Short transitions with a child who meets every stated limit.", "alternative": "Continuous hands-free routines within the carrier's exact limits." }
+      ],
+      "relatedGuideSlugs": ["baby-wraps-slings-vs-alternatives", "structured-diaper-bags-vs-alternatives", "jogging-strollers-buying-guide"],
+      "evidence": {
+        "gsc28d": "Selected outside the protected Baby Deep43 URL set.",
+        "liveSerp": "Validated multiple current hip-seat-versus-structured-carrier results on 2026-09-04."
+      }
+    },
+    {
+      "site": "baby",
+      "familySlug": "hardware-mounted-baby-gates",
+      "slug": "hardware-mounted-baby-gates-vs-alternatives",
+      "url": "https://baby.madabase.com/guides/hardware-mounted-baby-gates-vs-alternatives",
+      "title": "Hardware vs Pressure-Mounted Baby Gate: Which One?",
+      "primaryOption": "hardware-mounted baby gate",
+      "alternativeOption": "pressure-mounted baby gate",
+      "searchQuestion": "Should you install a hardware-mounted or pressure-mounted baby gate?",
+      "dek": "Compare hardware and pressure-mounted gates by location, wall structure, opening width, trip bar, installation, latch use, climbing risk and the exact manufacturer limits.",
+      "quickAnswer": "Use a gate explicitly approved for the location and follow its exact instructions. Hardware-mounted gates are generally the appropriate path where a fall hazard makes secure attachment critical, while pressure-mounted gates suit only locations and configurations their manufacturer permits. Measure the opening and wall structure, and never improvise with unapproved spacers or mounting points.",
+      "decisionSection": {
+        "heading": "The location's fall hazard controls the mounting decision",
+        "body": "Record whether the gate protects stairs or only separates rooms, then inspect both mounting surfaces and the full opening width. Hardware mounting transfers load through approved fasteners and structure; pressure mounting depends on compression and may introduce a bottom rail. Verify the gate's exact location approval, extension limits, latch direction and wall-cup requirements, then recheck tension or fasteners as instructed."
+      },
+      "comparisonRows": [
+        { "label": "Attachment", "primary": "Fastens into approved structural mounting points.", "alternative": "Uses pressure between suitable surfaces, sometimes with required wall cups." },
+        { "label": "Location", "primary": "Use where the exact gate instructions approve secure hardware installation.", "alternative": "Use only in approved lower-risk openings and configurations." },
+        { "label": "Floor path", "primary": "Swing gates may avoid a pressure-frame bottom rail.", "alternative": "Many designs leave a bottom rail that can become a trip point." },
+        { "label": "Ownership", "primary": "Fasteners, alignment and wall condition require inspection.", "alternative": "Pressure, cups, alignment and movement require repeated checks." }
+      ],
+      "relatedGuideSlugs": ["convertible-baby-cribs-buying-guide", "travel-cribs-playards-buying-guide", "infant-bath-tubs-buying-guide"],
+      "evidence": {
+        "gsc28d": "Selected outside the protected Baby Deep43 exact URLs.",
+        "liveSerp": "Validated current hardware-versus-pressure-mounted gate coverage, including federal rulemaking material, on 2026-09-04."
+      }
+    },
+    {
+      "site": "pet",
+      "familySlug": "wireless-pump-pet-fountains",
+      "slug": "wireless-pump-pet-fountains-vs-alternatives",
+      "url": "https://pets.madabase.com/guides/wireless-pump-pet-fountains-vs-alternatives",
+      "title": "Cordless vs Corded Pet Fountain: Which Is Better?",
+      "primaryOption": "cordless pet fountain",
+      "alternativeOption": "corded pet fountain",
+      "searchQuestion": "Should you choose a cordless or corded pet water fountain?",
+      "dek": "Compare cordless and corded fountains by outlet location, run pattern, battery charging, continuous circulation, pump cleaning, failure alerts and the animal's access to backup water.",
+      "quickAnswer": "Choose a cordless fountain when cable safety or outlet placement is the real constraint and its battery and dispensing pattern suit the animal's drinking routine. Choose a corded fountain when continuous powered circulation and fewer charging chores matter more. Both require complete pump and reservoir cleaning, and a clean bowl should remain available until the new routine is proven.",
+      "decisionSection": {
+        "heading": "Compare the actual water-delivery pattern after power or battery changes",
+        "body": "Observe when and how the animal drinks, then check whether the cordless model runs continuously, on a timer or only after motion. Battery life claims do not show what happens after missed charging, a sleeping sensor or low water. For a corded unit, route the cable without creating chewing, trip or splash hazards. Disassemble both candidates and compare access to the pump, wet channels and battery-safe components."
+      },
+      "comparisonRows": [
+        { "label": "Placement", "primary": "Works away from an outlet when battery operation is available.", "alternative": "Needs safe cable routing to a suitable outlet." },
+        { "label": "Water pattern", "primary": "May use interval or motion-based dispensing to conserve power.", "alternative": "Can provide continuous circulation while power and water remain." },
+        { "label": "Ownership", "primary": "Adds charging, battery aging and electronic sealing checks.", "alternative": "Adds cable inspection and continuous power use without charging." },
+        { "label": "Failure fallback", "primary": "Must reveal low battery and missed activation before access is affected.", "alternative": "Must be checked after outages, pump stalls and cable damage." }
+      ],
+      "relatedGuideSlugs": ["large-dog-water-fountains-vs-alternatives", "wet-food-automatic-feeders-buying-guide", "microchip-pet-feeders-buying-guide"],
+      "evidence": {
+        "gsc28d": "Selected from the weak Pets existing-page pool.",
+        "liveSerp": "Validated current owner demand around cordless-versus-corded fountain placement on 2026-09-04."
+      }
+    },
+    {
+      "site": "pet",
+      "familySlug": "robot-vacuums-for-pet-hair",
+      "slug": "robot-vacuums-for-pet-hair-buying-guide",
+      "url": "https://pets.madabase.com/guides/robot-vacuums-for-pet-hair-buying-guide",
+      "title": "Robot Vacuum vs Cordless Vacuum for Pet Hair",
+      "primaryOption": "robot vacuum for pet hair",
+      "alternativeOption": "cordless pet-hair vacuum",
+      "searchQuestion": "Is a robot or cordless vacuum better for pet hair in your home?",
+      "dek": "Compare robot and cordless pet-hair vacuums by coat and shedding, floor and furniture coverage, brush tangles, bin service, pet tolerance, obstacles and manual follow-up.",
+      "quickAnswer": "Choose a robot vacuum to reduce recurring loose fur on navigable floors when the pet tolerates it and the household will clear obstacles and service hair from brushes and bins. Choose a cordless vacuum for stairs, upholstery, corners and concentrated shedding that needs direct control. Most pet homes still need a manual tool, so measure how much follow-up the robot actually removes.",
+      "decisionSection": {
+        "heading": "Map where fur collects before choosing automation",
+        "body": "Inspect floors, stairs, upholstery, baseboards and the pet's resting areas after a normal shedding interval. A robot can repeat broad floor passes but may leave edges, furniture and hair-packed zones; a cordless tool reaches those places but requires scheduled human effort. Test brush tangling, bin capacity, noise response and obstacle pickup with the actual coat and layout, then compare the remaining weekly minutes."
+      },
+      "comparisonRows": [
+        { "label": "Coverage", "primary": "Repeated passes over reachable floors.", "alternative": "Directed floors, stairs, furniture, edges and spot cleanup." },
+        { "label": "Pet fit", "primary": "Navigation noise, movement and unattended operation must be tolerated.", "alternative": "Shorter supervised sessions but motor noise is closer to the animal." },
+        { "label": "Hair service", "primary": "Rollers, side brushes, wheels, bin, filter and dock collect hair.", "alternative": "Cleaner head, roller, bin and filter need direct service." },
+        { "label": "Best fit", "primary": "Frequent loose floor fur in a robot-friendly layout.", "alternative": "Mixed surfaces and concentrated hair needing precise manual passes." }
+      ],
+      "relatedGuideSlugs": ["pet-hair-vacuum-tools-buying-guide", "washable-orthopedic-pet-beds-buying-guide", "deshedding-brushes-vs-alternatives"],
+      "evidence": {
+        "gsc28d": "This existing canonical hub was previously consolidated; redirected support URLs remain retired.",
+        "liveSerp": "Validated current robot and cordless vacuum pet-hair coverage on 2026-09-04."
+      }
+    },
+    {
+      "site": "pet",
+      "familySlug": "soft-sided-pet-carriers",
+      "slug": "soft-sided-pet-carriers-vs-alternatives",
+      "url": "https://pets.madabase.com/guides/soft-sided-pet-carriers-vs-alternatives",
+      "title": "Soft vs Hard Pet Carrier: Which Is Better for Travel?",
+      "primaryOption": "soft-sided pet carrier",
+      "alternativeOption": "hard-sided pet carrier",
+      "searchQuestion": "Should your pet travel in a soft-sided or hard-sided carrier?",
+      "dek": "Compare soft and hard carriers by the individual animal's measured fit and behavior, transport rules, structural protection, ventilation, escape resistance, cleaning and storage.",
+      "quickAnswer": "Choose a soft carrier when the pet is a calm traveler, flexible under-seat fit and light carrying matter, and every seam, zipper and ventilation panel is secure. Choose a hard carrier when structural protection, easy disinfection or stronger containment matters more than storage size. Measure the pet and verify the exact airline, vehicle or destination rules before buying either style.",
+      "decisionSection": {
+        "heading": "The animal, transport mode and exact rule set decide the shell",
+        "body": "Measure the animal in the positions required by the carrier instructions and observe scratching, chewing or pushing behavior. A soft carrier can flex into limited spaces but gives less rigid protection; a hard shell resists impact and cleans easily but may not fit the same cabin or storage limits. Verify closures, ventilation, base stability and restraint points, then condition the pet gradually with the carrier open and stationary."
+      },
+      "comparisonRows": [
+        { "label": "Structure", "primary": "Flexible shell with lighter weight and some dimensional give.", "alternative": "Rigid shell with stronger impact and crush resistance." },
+        { "label": "Containment", "primary": "Seams, mesh and zippers must resist the individual pet's behavior.", "alternative": "Door latch, shell joints and hardware must remain secure." },
+        { "label": "Cleaning", "primary": "Fabric and padding may absorb soil and require drying.", "alternative": "Hard surfaces are usually easier to wipe and disinfect." },
+        { "label": "Transport fit", "primary": "Often favored where flexible under-seat dimensions are permitted.", "alternative": "Often favored for vehicle or cargo-style protection when exact rules allow." }
+      ],
+      "relatedGuideSlugs": ["vehicle-pet-restraints-buying-guide", "dog-ramps-vs-alternatives", "cat-gps-trackers-buying-guide"],
+      "evidence": {
+        "gsc28d": "Selected from the weak Pets existing-page pool.",
+        "liveSerp": "Validated current soft-sided-versus-hard-sided carrier coverage, including PetMD guidance, on 2026-09-04."
+      }
+    }
+  ]
+}
