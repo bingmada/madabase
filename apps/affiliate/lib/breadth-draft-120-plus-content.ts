@@ -1,4 +1,5 @@
 import familyPoolData from "../config/breadth-draft-120-150-research-pool.json";
+import indexedZeroRecoveryData from "../config/indexed-zero-recovery-cohort-2026-09-07.json";
 import opportunityData from "../config/breadth-draft-120-plus-opportunity-evidence.json";
 import babyProductData from "../config/breadth-draft-baby-product-research.json";
 import communityEvidenceData from "../config/breadth-draft-120-plus-community-evidence.json";
@@ -52,7 +53,25 @@ type CommunityDiscussion = FamilyRecord & {
   usePolicy: string;
 };
 
+type IndexedZeroRecoveryTarget = {
+  site: Extract<BreadthSite, "smarthome" | "homeoffice" | "baby">;
+  familySlug: string;
+  slug: string;
+  url: string;
+  title: string;
+  primaryOption: string;
+  alternativeOption: string;
+  searchQuestion: string;
+  choosePrimary: string;
+  chooseAlternative: string;
+  decisionFocus: string;
+  comparisonRows: Array<{ label: string; primary: string; alternative: string }>;
+  relatedGuideSlugs: string[];
+  liveSerp: string;
+};
+
 const updatedAt = "August 13, 2026";
+const indexedZeroRecoveryUpdatedAt = "September 7, 2026";
 const releaseCandidate = "breadth-2026-08-next";
 const families = familyPoolData.families as FamilyRecord[];
 const opportunities = opportunityData.records as OpportunityRecord[];
@@ -68,6 +87,12 @@ const familyByKey = new Map(families.map((item) => [`${item.site}:${item.familyS
 const opportunityByKey = new Map(opportunities.map((item) => [`${item.site}:${item.familySlug}`, item]));
 const communityByKey = new Map(
   (communityEvidenceData.discussions as CommunityDiscussion[]).map((item) => [`${item.site}:${item.familySlug}`, item]),
+);
+const indexedZeroRecoveryByKey = new Map<string, IndexedZeroRecoveryTarget>(
+  indexedZeroRecoveryData.targets.map((item) => [
+    `${item.site}:${item.familySlug}`,
+    item as IndexedZeroRecoveryTarget,
+  ]),
 );
 const titleSuffixBySite: Record<BreadthSite, string> = {
   network: "Compatibility, Installation, and Testing",
@@ -133,35 +158,61 @@ function buildGuide(product: ProductRecord): Guide {
   const family = familyByKey.get(key);
   const opportunity = opportunityByKey.get(key);
   const communityDiscussion = communityByKey.get(key);
+  const indexedZeroRecovery = indexedZeroRecoveryByKey.get(key);
   if (!family || !opportunity) throw new Error(`Missing breadth editorial evidence for ${key}`);
 
   const alternative = family.alternative.replace(/^a\s+/i, "");
   const exactBrand = product.brand === "Brand shown on the Amazon listing" ? "the listed brand" : product.brand;
   const relatedGuides = relatedDraftGuides(family);
+  const effectiveRelatedGuides = [
+    ...new Set([...(indexedZeroRecovery?.relatedGuideSlugs ?? []), ...relatedGuides]),
+  ];
+  const recoveryDek = indexedZeroRecovery
+    ? `Compare ${indexedZeroRecovery.primaryOption} with ${indexedZeroRecovery.alternativeOption} by ${indexedZeroRecovery.comparisonRows
+        .map((row) => row.label.toLowerCase())
+        .join(", ")}.`
+    : undefined;
+  const recoveryDecisionSection = indexedZeroRecovery
+    ? {
+        heading: `Make the ${indexedZeroRecovery.primaryOption} versus ${indexedZeroRecovery.alternativeOption} decision first`,
+        body: indexedZeroRecovery.decisionFocus,
+      }
+    : undefined;
 
   return {
     site: family.site,
     slug: `${family.familySlug}-buying-guide`,
     familySlug: family.familySlug,
     familyRole: "buying",
-    title: guideTitle(family),
-    dek: `A decision-first guide to ${family.familyName.toLowerCase()}, using an exact current Amazon item as the checkout anchor while comparing it with ${family.alternative}.`,
+    title: indexedZeroRecovery?.title ?? guideTitle(family),
+    dek: recoveryDek ?? `A decision-first guide to ${family.familyName.toLowerCase()}, using an exact current Amazon item as the checkout anchor while comparing it with ${family.alternative}.`,
     category: family.category,
     publicationStatus: "published",
     releaseCandidate,
     sitemapExcluded: false,
-    updatedAt,
+    updatedAt: indexedZeroRecovery ? indexedZeroRecoveryUpdatedAt : updatedAt,
     image: `/images/affiliate/breadth-${family.site}-${family.familySlug}.webp`,
     imageAlt: `Editorial buying worksheet for ${family.familyName.toLowerCase()} showing fit, compatibility, ownership checks, and the simpler alternative`,
-    searchQuestion: `How do I choose ${family.familyName.toLowerCase()}, and when is ${family.alternative} the better solution?`,
-    quickAnswer: `Start with the constraint, not the product label. ${opportunity.note} Use ASIN ${product.asin} only as a current checkout anchor, and recheck the exact variation, seller, included parts, and return path before ordering.`,
+    searchQuestion: indexedZeroRecovery?.searchQuestion ?? `How do I choose ${family.familyName.toLowerCase()}, and when is ${family.alternative} the better solution?`,
+    quickAnswer: indexedZeroRecovery
+      ? `${indexedZeroRecovery.choosePrimary} ${indexedZeroRecovery.chooseAlternative}`
+      : `Start with the constraint, not the product label. ${opportunity.note} Use ASIN ${product.asin} only as a current checkout anchor, and recheck the exact variation, seller, included parts, and return path before ordering.`,
     governance: {
       decision: "rewrite",
-      independentDemand: opportunity.note,
-      distinctFrom: `This page answers the ${family.familyName.toLowerCase()} decision specifically and keeps ${family.alternative} as the control option. It does not reuse a neighboring product family's buying question or treat the selected ASIN as a universal recommendation.`,
+      independentDemand: indexedZeroRecovery?.searchQuestion ?? opportunity.note,
+      distinctFrom: indexedZeroRecovery
+        ? `This existing canonical owns the decision between ${indexedZeroRecovery.primaryOption.toLowerCase()} and ${indexedZeroRecovery.alternativeOption.toLowerCase()}; adjacent pages support rather than duplicate that fork.`
+        : `This page answers the ${family.familyName.toLowerCase()} decision specifically and keeps ${family.alternative} as the control option. It does not reuse a neighboring product family's buying question or treat the selected ASIN as a universal recommendation.`,
       benchmark: `Release only after the exact ASIN, title, availability, included parts, compatibility claims, two independent evidence links, dedicated image, four internal links and site-specific safety boundary pass the cohort checker. Opportunity score: ${opportunity.scores.total}/100.`,
     },
-    comparisonTable: {
+    comparisonTable: indexedZeroRecovery ? {
+      title: `${indexedZeroRecovery.primaryOption} vs. ${indexedZeroRecovery.alternativeOption}: decision table`,
+      columns: [indexedZeroRecovery.primaryOption, indexedZeroRecovery.alternativeOption],
+      rows: indexedZeroRecovery.comparisonRows.map((row) => ({
+        label: row.label,
+        values: [row.primary, row.alternative],
+      })),
+    } : {
       title: `${family.familyName} pre-purchase record`,
       columns: ["Record before ordering", "Why it changes this decision"],
       rows: [
@@ -184,6 +235,7 @@ function buildGuide(product: ProductRecord): Guide {
       note: `${communityDiscussion.relevanceNote} ${communityDiscussion.usePolicy}`,
     }] : [],
     sections: [
+      ...(recoveryDecisionSection ? [recoveryDecisionSection] : []),
       {
         heading: "Define the independent buying problem",
         body: opportunity.note,
@@ -221,7 +273,7 @@ function buildGuide(product: ProductRecord): Guide {
         note: "Exact US checkout identity used for this guide. Recheck variation, seller, included parts, live availability, return terms and any recall notice before ordering.",
       },
     ],
-    relatedGuides,
+    relatedGuides: effectiveRelatedGuides,
     relatedRoundups: [],
   };
 }

@@ -1,0 +1,750 @@
+{
+  "version": 1,
+  "releaseDate": "2026-09-07",
+  "action": "existing-page-topic-hierarchy-repair",
+  "ownerDirection": "Publish a second comparison-led batch now instead of waiting, while leaving the September 4 cohort and every page with recent impressions unchanged.",
+  "selection": {
+    "source": "Soft151 exact URL ledger for the two adjacent seven-day windows ending 2026-09-07, authenticated URL Inspection, and live result-page validation on 2026-09-07",
+    "rule": "Refresh only an existing canonical guide that is indexed and recorded zero impressions in both seven-day windows. Exclude every page with an impression in either window and every non-indexed, unknown, duplicate-canonical, or quota-blocked URL.",
+    "ledger": "apps/affiliate/reports/soft151-search-gate-2026-09-07.csv"
+  },
+  "scope": {
+    "targetCount": 40,
+    "newRoutes": 0,
+    "sites": { "smarthome": 21, "homeoffice": 6, "baby": 13 }
+  },
+  "reviewGates": {
+    "day7": "2026-09-14",
+    "day14": "2026-09-21",
+    "day30": "2026-10-07",
+    "decisionRule": "Keep any page that gains impressions, clicks, query breadth, or a top-20 position. Revisit only exact URLs that remain unexposed or show a clear intent mismatch."
+  },
+  "protected": [
+    "all 36 targets in apps/affiliate/config/comparison-first-cohort-2026-09-04.json",
+    "all 18 indexed Soft151 pages with at least one impression in the preceding seven-day window",
+    "all Soft151 pages not confirmed indexed by the 2026-09-07 inspection ledger",
+    "the ErGear versus FlexiSpot experiment and all click-bearing or protected ranking pages"
+  ],
+  "targets": [
+    {
+      "site": "smarthome", "familySlug": "smart-radiator-valves", "slug": "smart-radiator-valves-buying-guide",
+      "url": "https://smarthome.madabase.com/guides/smart-radiator-valves-buying-guide",
+      "title": "Smart Radiator Valve vs Smart Thermostat: Which Comes First?",
+      "primaryOption": "smart radiator valves", "alternativeOption": "a smart thermostat or manual TRVs",
+      "searchQuestion": "Should you buy smart radiator valves or start with a smart thermostat?",
+      "choosePrimary": "Choose smart radiator valves when compatible hot-water radiators need room-by-room control and the heating controller can coordinate the demand for heat.",
+      "chooseAlternative": "Start with a compatible central thermostat, system balancing, or manual TRVs when the boiler control and basic room temperatures are not yet working correctly.",
+      "decisionFocus": "A valve can restrict or open one radiator, but it does not automatically solve the central call-for-heat problem. Map the boiler controller, valve body, adapters, room sensor position, hub, fallback control, and every radiator that must remain available before buying a set.",
+      "comparisonRows": [
+        { "label": "Control scope", "primary": "Room-by-room radiator flow and schedules.", "alternative": "Whole-system heat demand or simple local valve control." },
+        { "label": "Compatibility", "primary": "Needs compatible valve bodies, adapters, hub and controller behavior.", "alternative": "Needs heating-system and wiring compatibility; manual TRVs avoid accounts." },
+        { "label": "Best first step", "primary": "A basically sound system with a clear zoning problem.", "alternative": "An unstable, unbalanced, or centrally uncontrolled system." },
+        { "label": "Failure plan", "primary": "Keep local adjustment and battery replacement documented.", "alternative": "Keep a manual heating path and qualified service access." }
+      ],
+      "relatedGuideSlugs": ["temperature-humidity-sensors-buying-guide", "smart-floor-vents-buying-guide", "whole-home-energy-monitors-buying-guide"],
+      "liveSerp": "Validated active smart-radiator-valve versus thermostat result coverage on 2026-09-07."
+    },
+    {
+      "site": "smarthome", "familySlug": "smart-floor-vents", "slug": "smart-floor-vents-buying-guide",
+      "url": "https://smarthome.madabase.com/guides/smart-floor-vents-buying-guide",
+      "title": "Smart Vents vs HVAC Balancing: Which Fixes Uneven Rooms?",
+      "primaryOption": "smart floor vents", "alternativeOption": "manual registers and HVAC balancing",
+      "searchQuestion": "Should you use smart vents or fix the HVAC balance first?",
+      "choosePrimary": "Consider smart vents only after a qualified system check shows that limited room-level airflow control is compatible with the equipment and will not create unsafe static pressure.",
+      "chooseAlternative": "Choose balancing, duct repair, filter and return-air checks first when the cause of an uneven room is still unknown.",
+      "decisionFocus": "Do not use a motorized register as a diagnosis. Record supply and return paths, equipment type, minimum open-area requirement, thermostat location, room load, control behavior, and the manual position after power or network loss.",
+      "comparisonRows": [
+        { "label": "Problem solved", "primary": "Adjusts selected register airflow after system fit is proven.", "alternative": "Finds duct, return, filter, load, or equipment causes." },
+        { "label": "System risk", "primary": "Closing too many vents can change pressure and equipment behavior.", "alternative": "Professional balancing works within measured system limits." },
+        { "label": "Dependencies", "primary": "Motors, batteries or power, sensors, hub and automation.", "alternative": "Manual dampers, measurements, repairs and periodic service." },
+        { "label": "Best sequence", "primary": "A reversible final layer for a verified compatible system.", "alternative": "The first action when room imbalance has not been diagnosed." }
+      ],
+      "relatedGuideSlugs": ["smart-radiator-valves-buying-guide", "temperature-humidity-sensors-buying-guide", "whole-home-energy-monitors-buying-guide"],
+      "liveSerp": "Validated smart-vent versus thermostat and balancing decision coverage on 2026-09-07."
+    },
+    {
+      "site": "smarthome", "familySlug": "smart-space-heaters", "slug": "smart-space-heaters-buying-guide",
+      "url": "https://smarthome.madabase.com/guides/smart-space-heaters-buying-guide",
+      "title": "Smart vs Standard Space Heater: Is Wi-Fi Worth It?",
+      "primaryOption": "a listed smart space heater", "alternativeOption": "a listed standard heater with local controls",
+      "searchQuestion": "Should you buy a smart space heater or a standard heater with a timer and thermostat?",
+      "choosePrimary": "Choose a smart heater only when the exact model's own instructions support the intended controls and every placement, clearance, outlet, tip-over, overheat, supervision, and shutoff requirement can still be followed.",
+      "chooseAlternative": "Choose a standard locally controlled heater when remote start adds little value or could encourage unattended use; never create remote control by adding an unapproved smart plug.",
+      "decisionFocus": "Connectivity does not relax heater safety. Verify the complete model, listing, direct wall-outlet requirement, circuit load, clearance, cord condition, local controls, default state after power loss, and who can see the room before any remote feature is enabled.",
+      "comparisonRows": [
+        { "label": "Control", "primary": "Model-approved app features plus accessible local controls.", "alternative": "Local thermostat, timer and physical shutoff." },
+        { "label": "Safety boundary", "primary": "All manufacturer placement and supervision rules still control.", "alternative": "The same rules apply without an account or network." },
+        { "label": "Failure mode", "primary": "Account, network, firmware and automation join the thermal risks.", "alternative": "Fewer software dependencies and a simpler recovery path." },
+        { "label": "Skip signal", "primary": "Skip if remote control promotes unattended operation or needs an unapproved plug.", "alternative": "Skip any model whose listed use, outlet, cord, or clearance cannot be met." }
+      ],
+      "relatedGuideSlugs": ["temperature-humidity-sensors-buying-guide", "whole-home-energy-monitors-buying-guide", "smart-floor-vents-buying-guide"],
+      "liveSerp": "Validated current smart-heater comparison coverage and the high-wattage smart-plug safety boundary on 2026-09-07."
+    },
+    {
+      "site": "smarthome", "familySlug": "smart-propane-tank-monitors", "slug": "smart-propane-tank-monitors-buying-guide",
+      "url": "https://smarthome.madabase.com/guides/smart-propane-tank-monitors-buying-guide",
+      "title": "Smart Propane Monitor vs Manual Gauge: Which Should You Use?",
+      "primaryOption": "a smart propane tank monitor", "alternativeOption": "manual gauge checks or supplier telemetry",
+      "searchQuestion": "Is a smart propane tank monitor better than checking the tank gauge manually?",
+      "choosePrimary": "Choose a smart monitor when the exact tank already has a compatible remote-ready gauge, remote readings change refill planning, and someone will still perform physical leak, corrosion, regulator, and delivery checks.",
+      "chooseAlternative": "Use the manual gauge or supplier telemetry when compatibility is uncertain, the tank is easy to inspect, or alerts would not change the refill routine.",
+      "decisionFocus": "The sensor usually reads an existing gauge rather than measuring fuel directly. Confirm tank ownership, gauge face and remote-ready port, mounting geometry, radio path, battery access, app ownership, calibration behavior, supplier rules, and a manual reading before relying on notifications.",
+      "comparisonRows": [
+        { "label": "Reading path", "primary": "Remote sensor reports a compatible gauge through an app or hub.", "alternative": "A person reads the gauge or the supplier provides telemetry." },
+        { "label": "Best fit", "primary": "Hard-to-check tanks where earlier refill notice changes action.", "alternative": "Accessible tanks with a dependable inspection schedule." },
+        { "label": "Dependencies", "primary": "Gauge compatibility, battery, radio, account and alert delivery.", "alternative": "Safe physical access, supplier process and written intervals." },
+        { "label": "What it cannot replace", "primary": "Leak, regulator, corrosion, odor and professional service checks.", "alternative": "Those same safety checks remain mandatory." }
+      ],
+      "relatedGuideSlugs": ["smart-sump-pump-monitors-buying-guide", "whole-home-energy-monitors-buying-guide", "temperature-humidity-sensors-buying-guide"],
+      "liveSerp": "Validated current remote propane-gauge and manual-monitoring result coverage on 2026-09-07."
+    },
+    {
+      "site": "smarthome", "familySlug": "smart-sump-pump-monitors", "slug": "smart-sump-pump-monitors-buying-guide",
+      "url": "https://smarthome.madabase.com/guides/smart-sump-pump-monitors-buying-guide",
+      "title": "Sump Pump Monitor vs High-Water Alarm: Which Do You Need?",
+      "primaryOption": "a smart sump pump monitor", "alternativeOption": "a standalone high-water alarm and scheduled inspection",
+      "searchQuestion": "Do you need a smart sump pump monitor or a simple high-water alarm?",
+      "choosePrimary": "Choose a smart monitor when pump-cycle, power, water-level, and remote-alert data create a specific maintenance or response action and the exact pump and outlet are compatible.",
+      "chooseAlternative": "Choose a high-water alarm plus scheduled testing when the main job is a local overflow warning; neither option replaces a functioning backup pump or response plan.",
+      "decisionFocus": "Separate prediction, high-water detection, leak detection, power-loss warning, and backup pumping because one device may cover only part of the chain. Verify the pump rating, sensor position, normal water cycle, backup battery, Internet-loss behavior, alert recipients, and a safe test routine.",
+      "comparisonRows": [
+        { "label": "Primary signal", "primary": "May track cycles, current, level, power or several signals.", "alternative": "Triggers when water reaches a set point." },
+        { "label": "Installation", "primary": "Requires exact pump, outlet, sensor and network compatibility.", "alternative": "Needs reliable sensor placement, local sound and battery checks." },
+        { "label": "Remote response", "primary": "Can notify named responders when connectivity works.", "alternative": "Usually depends on someone hearing the alarm unless separately connected." },
+        { "label": "What still matters", "primary": "Pump inspection, discharge path, backup power and recovery plan.", "alternative": "The same pump and backup checks remain essential." }
+      ],
+      "relatedGuideSlugs": ["smart-water-shutoff-valves-buying-guide", "smart-contact-sensors-buying-guide", "whole-home-energy-monitors-buying-guide"],
+      "liveSerp": "Validated active sump-monitor versus leak/high-water alarm result coverage on 2026-09-07."
+    },
+    {
+      "site": "smarthome", "familySlug": "smart-pool-thermometers", "slug": "smart-pool-thermometers-buying-guide",
+      "url": "https://smarthome.madabase.com/guides/smart-pool-thermometers-buying-guide",
+      "title": "Smart vs Floating Pool Thermometer: Is Remote Data Worth It?",
+      "primaryOption": "a smart pool thermometer", "alternativeOption": "a manual floating thermometer",
+      "searchQuestion": "Is a smart pool thermometer worth buying instead of a manual floating thermometer?",
+      "choosePrimary": "Choose a smart thermometer when remote trends change heating, cover, or swim-preparation decisions and the sensor, gateway range, water exposure, calibration check, and winter storage are manageable.",
+      "chooseAlternative": "Choose a manual floating thermometer when you only need a reading at the pool and can verify it directly before use.",
+      "decisionFocus": "Remote access is convenience, not proof of better accuracy. Compare both readings at the same depth and time, define the action each alert should trigger, and check range through walls, battery access, sealing, tethering, chemical exposure, app history, and off-season storage.",
+      "comparisonRows": [
+        { "label": "Main benefit", "primary": "Remote readings, alerts and trends when the gateway remains connected.", "alternative": "Immediate local reading with no account or radio." },
+        { "label": "Accuracy proof", "primary": "Still needs comparison against a trusted reference.", "alternative": "Also needs placement and occasional reference checks." },
+        { "label": "Ownership", "primary": "Battery, seals, radio range, app support and winter storage.", "alternative": "Cleaning, tethering, legibility and replacement after damage." },
+        { "label": "Best fit", "primary": "Remote planning tied to heating or cover decisions.", "alternative": "Occasional on-site checks before swimming." }
+      ],
+      "relatedGuideSlugs": ["temperature-humidity-sensors-buying-guide", "smart-irrigation-controllers-buying-guide", "outdoor-smart-plugs-buying-guide"],
+      "liveSerp": "Validated smart-pool-thermometer and floating-thermometer comparison coverage on 2026-09-07."
+    },
+    {
+      "site": "smarthome", "familySlug": "smart-pathway-lights", "slug": "smart-pathway-lights-buying-guide",
+      "url": "https://smarthome.madabase.com/guides/smart-pathway-lights-buying-guide",
+      "title": "Solar vs Low-Voltage Path Lights: Which Setup Is Better?",
+      "primaryOption": "solar smart pathway lights", "alternativeOption": "wired low-voltage path lights",
+      "searchQuestion": "Should you use solar smart path lights or wired low-voltage pathway lighting?",
+      "choosePrimary": "Choose solar smart path lights for reversible accent lighting where each panel receives dependable sun and dimmer or shorter late-night output is acceptable.",
+      "chooseAlternative": "Choose wired low-voltage lights where steps, edges, entrances, or the full-night plan need predictable illumination and a maintainable cable-and-transformer path exists.",
+      "decisionFocus": "Map the job after dark, then audit sun or cable access rather than choosing by daytime appearance. Record beam placement, expected late-night output, shade by season, transformer capacity, wet-location ratings, control method, battery or fixture replacement, and how a failed light is noticed.",
+      "comparisonRows": [
+        { "label": "Installation", "primary": "No shared cable; every fixture needs usable sun and stable ground.", "alternative": "Requires transformer, cable route, connections and load planning." },
+        { "label": "Night output", "primary": "Depends on charge, shade, battery condition and runtime setting.", "alternative": "More predictable while the circuit and transformer are healthy." },
+        { "label": "Control", "primary": "Per-fixture app or sensor behavior may vary by model.", "alternative": "Central schedules and smart-transformer control can govern the run." },
+        { "label": "Best fit", "primary": "Decorative, movable lights in sunny positions.", "alternative": "Consistent route, edge, step, and entrance lighting." }
+      ],
+      "relatedGuideSlugs": ["smart-landscape-spotlights-buying-guide", "outdoor-smart-plugs-buying-guide", "smart-light-strips-buying-guide"],
+      "liveSerp": "Validated active solar-versus-low-voltage pathway-light result coverage on 2026-09-07."
+    },
+    {
+      "site": "smarthome", "familySlug": "smart-landscape-spotlights", "slug": "smart-landscape-spotlights-buying-guide",
+      "url": "https://smarthome.madabase.com/guides/smart-landscape-spotlights-buying-guide",
+      "title": "Landscape Spotlight vs Floodlight: Which Beam Fits?",
+      "primaryOption": "smart landscape spotlights", "alternativeOption": "outdoor floodlights",
+      "searchQuestion": "Should you use landscape spotlights or floodlights outdoors?",
+      "choosePrimary": "Choose spotlights to reveal a specific tree, wall texture, sign, or narrow architectural feature when glare can be aimed away from windows and neighbors.",
+      "chooseAlternative": "Choose floodlights when a broader work, entry, or security area needs even coverage; a smart control cannot correct the wrong beam shape.",
+      "decisionFocus": "Mark the exact surface and viewing positions at night. Compare beam angle, mounting distance, aiming range, glare, spill, brightness, color, weather exposure, cable or solar path, controller dependence, and the ability to service the fixture without damaging the landscape.",
+      "comparisonRows": [
+        { "label": "Beam", "primary": "Narrow, aimed light for one focal object or vertical surface.", "alternative": "Wide coverage for a larger ground or wall area." },
+        { "label": "Glare risk", "primary": "Can create a bright hotspot if aimed badly.", "alternative": "Can spill into windows or neighboring property if oversized." },
+        { "label": "Planning", "primary": "Needs precise target, distance, angle and concealment.", "alternative": "Needs boundary, uniformity and mounting-height checks." },
+        { "label": "Smart layer", "primary": "Useful for scenes only after beam placement works.", "alternative": "Useful for schedules or sensors only after coverage works." }
+      ],
+      "relatedGuideSlugs": ["smart-pathway-lights-buying-guide", "outdoor-smart-plugs-buying-guide", "floodlight-security-cameras-buying-guide"],
+      "liveSerp": "Validated current outdoor spotlight-versus-floodlight result coverage on 2026-09-07."
+    },
+    {
+      "site": "smarthome", "familySlug": "smart-table-lamps", "slug": "smart-table-lamps-buying-guide",
+      "url": "https://smarthome.madabase.com/guides/smart-table-lamps-buying-guide",
+      "title": "Smart Lamp vs Smart Bulb: Which Is the Better Upgrade?",
+      "primaryOption": "an integrated smart table lamp", "alternativeOption": "a conventional lamp with a smart bulb",
+      "searchQuestion": "Should you buy a smart table lamp or add a smart bulb to a regular lamp?",
+      "choosePrimary": "Choose an integrated smart lamp when its shape, controls, light direction, color zones, and physical fallback solve a specific bedside or desk task that a replaceable bulb cannot.",
+      "chooseAlternative": "Choose a conventional lamp plus a compatible smart bulb when you want replaceable lighting, a wider choice of shades and fixtures, and a simpler exit from one vendor's hardware.",
+      "decisionFocus": "Compare the complete object, not just app features. Check shade and bulb clearance, task-light position, physical buttons, power-loss behavior, color and dimming needs, account or hub requirements, bulb replaceability, expected service life, and what remains usable if the app disappears.",
+      "comparisonRows": [
+        { "label": "Design", "primary": "Light source, optics and controls are one integrated product.", "alternative": "Fixture and replaceable bulb can be chosen separately." },
+        { "label": "Special effects", "primary": "May offer zones or forms a single bulb cannot reproduce.", "alternative": "Covers ordinary dimming, color, and tunable-white needs." },
+        { "label": "Repair path", "primary": "A failed integrated light or control may retire the whole lamp.", "alternative": "Replace the bulb while keeping the fixture." },
+        { "label": "Best fit", "primary": "A repeated task needs the exact integrated form.", "alternative": "Flexibility and replaceability matter more than novelty." }
+      ],
+      "relatedGuideSlugs": ["matter-smart-bulbs-buying-guide", "smart-wall-switches-buying-guide", "smart-scene-buttons-buying-guide"],
+      "liveSerp": "Validated active smart-lamp and smart-bulb comparison coverage on 2026-09-07."
+    },
+    {
+      "site": "smarthome", "familySlug": "smart-lever-locks", "slug": "smart-lever-locks-buying-guide",
+      "url": "https://smarthome.madabase.com/guides/smart-lever-locks-buying-guide",
+      "title": "Smart Lever Lock vs Smart Deadbolt: Which Fits Your Door?",
+      "primaryOption": "a smart lever lock", "alternativeOption": "a smart deadbolt or mechanical lever",
+      "searchQuestion": "Should you install a smart lever lock or a smart deadbolt?",
+      "choosePrimary": "Choose a smart lever when the lever latch is the actual locking point, the door preparation matches, and accessibility, egress, key override, handing, weather exposure, and battery access all pass.",
+      "chooseAlternative": "Choose a deadbolt for an exterior door whose security depends on a separate bolt, or keep a mechanical lever when electronic access would add more failure paths than value.",
+      "decisionFocus": "Identify what currently secures the door before comparing credentials. Measure backset, bore holes, door thickness, handing, latch and strike alignment, frame condition, exterior rating, fire or building rules, guest recovery, battery warning, local code entry, and mechanical override.",
+      "comparisonRows": [
+        { "label": "Locking point", "primary": "Controls the latch through the lever assembly.", "alternative": "A deadbolt secures a separate bolt; a mechanical lever stays simple." },
+        { "label": "Door fit", "primary": "Needs exact lever prep, handing, clearance and latch alignment.", "alternative": "Needs compatible deadbolt prep or no electronic retrofit." },
+        { "label": "Access workflow", "primary": "Codes, app or credentials can suit frequent internal access.", "alternative": "Deadbolt credentials suit exterior entry; keys remain the simplest fallback." },
+        { "label": "Failure recovery", "primary": "Document low-battery, offline, override, and emergency egress behavior.", "alternative": "Verify the same egress path and keep a usable physical key where applicable." }
+      ],
+      "relatedGuideSlugs": ["smart-garage-door-controllers-buying-guide", "smart-contact-sensors-buying-guide", "diy-smart-alarm-kits-buying-guide"],
+      "liveSerp": "Validated active smart-lever and smart-deadbolt decision coverage on 2026-09-07."
+    },
+    {
+      "site": "smarthome", "familySlug": "smart-vibration-sensors", "slug": "smart-vibration-sensors-buying-guide",
+      "url": "https://smarthome.madabase.com/guides/smart-vibration-sensors-buying-guide",
+      "title": "Vibration Sensor vs Contact Sensor: Which Detects the Right Event?",
+      "primaryOption": "a smart vibration sensor", "alternativeOption": "a contact, tilt, or motion sensor",
+      "searchQuestion": "Should you use a vibration sensor or a contact sensor for the object you want to monitor?",
+      "choosePrimary": "Choose vibration sensing when movement, impact, drilling, appliance cycles, or surface disturbance is the exact event and the mounting point can distinguish it from normal household vibration.",
+      "chooseAlternative": "Choose a contact, tilt, or motion sensor when open, closed, angle, or presence is the event you actually need; direct state usually creates fewer false interpretations.",
+      "decisionFocus": "Write the event, non-event, response time, and acceptable false-alert rate before choosing hardware. Test the final mounting surface, sensitivity, radio path, battery, alert delay, repeated events, pets, traffic, appliances, and what the system records when connectivity is lost.",
+      "comparisonRows": [
+        { "label": "Event", "primary": "Detects vibration, impact, movement patterns, or surface disturbance.", "alternative": "Detects a direct state such as open, closed, tilted, or occupied." },
+        { "label": "False alerts", "primary": "Sensitive to nearby doors, traffic, machines, wind, or loose mounting.", "alternative": "Usually clearer when the monitored state matches the sensor type." },
+        { "label": "Placement", "primary": "Must couple reliably to the surface and target event.", "alternative": "Needs aligned magnets, angle, or a clean detection field." },
+        { "label": "Best fit", "primary": "The disturbance itself is meaningful.", "alternative": "A directly measurable state is the real question." }
+      ],
+      "relatedGuideSlugs": ["smart-contact-sensors-buying-guide", "smart-motion-sensors-buying-guide", "smart-glass-break-sensors-buying-guide"],
+      "liveSerp": "Validated current vibration, contact, and motion sensor comparison coverage on 2026-09-07."
+    },
+    {
+      "site": "smarthome", "familySlug": "smart-glass-break-sensors", "slug": "smart-glass-break-sensors-buying-guide",
+      "url": "https://smarthome.madabase.com/guides/smart-glass-break-sensors-buying-guide",
+      "title": "Glass-Break Sensor vs Window Contact: Which Should You Install?",
+      "primaryOption": "a smart glass-break sensor", "alternativeOption": "door and window contact sensors",
+      "searchQuestion": "Do you need a glass-break sensor, window contacts, or both?",
+      "choosePrimary": "Use a compatible glass-break sensor when the plan must detect an acoustic or impact event across verified glass types and room coverage, and the alarm panel provides a documented test method.",
+      "chooseAlternative": "Use contacts when opening is the event that matters; layered perimeter and motion detection may be more dependable than expecting one sensor to cover every entry path.",
+      "decisionFocus": "A glass-break sensor and a contact answer different questions. Inventory every opening, glass type, room surface, distance, curtain, noise source, pets, panel compatibility, supervision or monitoring path, test tool, battery, and response plan before deciding whether the sensor adds useful coverage.",
+      "comparisonRows": [
+        { "label": "Detected event", "primary": "Acoustic or shock pattern associated with breaking glass.", "alternative": "The door or window changes from closed to open." },
+        { "label": "Coverage", "primary": "May cover several panes only within documented room and glass limits.", "alternative": "One contact generally reports one opening." },
+        { "label": "Testing", "primary": "Needs panel-compatible placement and manufacturer-approved testing.", "alternative": "Needs alignment, tamper checks, and open/close verification." },
+        { "label": "Security role", "primary": "A supplemental layer, not a complete alarm design.", "alternative": "Direct perimeter state, still supplemented by other layers." }
+      ],
+      "relatedGuideSlugs": ["smart-contact-sensors-buying-guide", "smart-vibration-sensors-buying-guide", "diy-smart-alarm-kits-buying-guide"],
+      "liveSerp": "Validated active glass-break versus window-contact result coverage on 2026-09-07."
+    },
+    {
+      "site": "smarthome", "familySlug": "smart-peephole-cameras", "slug": "smart-peephole-cameras-buying-guide",
+      "url": "https://smarthome.madabase.com/guides/smart-peephole-cameras-buying-guide",
+      "title": "Peephole Camera vs Video Doorbell: Which Fits an Apartment?",
+      "primaryOption": "a smart peephole camera", "alternativeOption": "a video doorbell",
+      "searchQuestion": "Is a peephole camera or a video doorbell better for an apartment door?",
+      "choosePrimary": "Choose a peephole camera when the door has a compatible viewer, the installation is reversible and permitted, and inside battery access plus the camera angle cover the actual corridor approach.",
+      "chooseAlternative": "Choose a video doorbell when exterior mounting, wiring or charging, visitor button use, field of view, and building rules are a better fit.",
+      "decisionFocus": "Permission and door geometry come before video resolution. Measure door thickness, peephole diameter, interior clearance, hallway approach, viewing height, exterior protrusion, wireless signal, charging access, account ownership, subscription retention, privacy rules, and a non-cloud way to answer the door.",
+      "comparisonRows": [
+        { "label": "Mounting", "primary": "Replaces a compatible door viewer with hardware on both sides.", "alternative": "Mounts on the exterior frame or door and may use wiring or a battery." },
+        { "label": "Renter fit", "primary": "Often more reversible, but still needs owner or building permission.", "alternative": "May be more visible and face stricter exterior-install rules." },
+        { "label": "Visitor behavior", "primary": "May detect knocks or motion without an obvious button.", "alternative": "Provides a familiar doorbell button and chime workflow." },
+        { "label": "Privacy", "primary": "Hallway recording, retention, shared access and alerts need review.", "alternative": "The same privacy questions apply, often with a wider external view." }
+      ],
+      "relatedGuideSlugs": ["outdoor-security-cameras-buying-guide", "smart-contact-sensors-buying-guide", "smart-garage-door-controllers-buying-guide"],
+      "liveSerp": "Validated current apartment peephole-camera versus video-doorbell result coverage on 2026-09-07."
+    },
+    {
+      "site": "smarthome", "familySlug": "smart-ir-rf-remotes", "slug": "smart-ir-rf-remotes-buying-guide",
+      "url": "https://smarthome.madabase.com/guides/smart-ir-rf-remotes-buying-guide",
+      "title": "IR/RF Hub vs Universal Remote: Which Controls Old Devices?",
+      "primaryOption": "a smart IR/RF hub", "alternativeOption": "an original or universal handheld remote",
+      "searchQuestion": "Should you use a smart IR/RF hub or a universal remote for older devices?",
+      "choosePrimary": "Choose a smart hub when the exact infrared or supported radio commands can be learned, line of sight or radio range is proven, and automation does not depend on reading a device state the hub cannot actually see.",
+      "chooseAlternative": "Keep the original or a universal handheld remote when tactile control, state feedback, unusual commands, Bluetooth, or unsupported rolling-code radio matters.",
+      "decisionFocus": "Inventory every target device and command. Separate IR, fixed-code RF, Bluetooth, Wi-Fi, and proprietary control; test discrete power and input commands, emitter placement, learned-code backup, room coverage, cloud loss, household access, and recovery before replacing any working remote.",
+      "comparisonRows": [
+        { "label": "Protocols", "primary": "Handles documented IR and only the specific RF bands and code types supported.", "alternative": "Original remote matches the device; universal models vary by database and learning." },
+        { "label": "State awareness", "primary": "Often sends commands without knowing the device's true state.", "alternative": "The user sees the device while pressing the command." },
+        { "label": "Automation", "primary": "Can join scenes after every command path is proven.", "alternative": "Manual control is immediate and independent of accounts." },
+        { "label": "Best fit", "primary": "Repeated multi-device routines with stable commands.", "alternative": "Irregular control, unsupported protocols, or simple tactile access." }
+      ],
+      "relatedGuideSlugs": ["smart-wall-control-panels-buying-guide", "smart-scene-buttons-buying-guide", "matter-hubs-bridges-buying-guide"],
+      "liveSerp": "Validated active IR/RF hub, universal remote, and smart-home integration result coverage on 2026-09-07."
+    },
+    {
+      "site": "smarthome", "familySlug": "smart-wall-control-panels", "slug": "smart-wall-control-panels-buying-guide",
+      "url": "https://smarthome.madabase.com/guides/smart-wall-control-panels-buying-guide",
+      "title": "Wall Control Panel vs Mounted Tablet: Which Is Better?",
+      "primaryOption": "a dedicated smart-home wall panel", "alternativeOption": "a mounted tablet or scene buttons",
+      "searchQuestion": "Should you install a dedicated wall control panel or mount a tablet?",
+      "choosePrimary": "Choose a dedicated panel when permanent power, supported controllers, local controls, household profiles, intercom or security roles, and a documented replacement path justify fixed hardware.",
+      "chooseAlternative": "Choose a mounted tablet for a flexible dashboard, or scene buttons for repeated actions that do not need a screen.",
+      "decisionFocus": "Start with the three tasks used every day, not the size of the screen. Verify mounting and power, heat, sleep and wake behavior, kiosk mode, local operation, controller and camera access, account permissions, update policy, microphone and privacy controls, guest use, and removal after support ends.",
+      "comparisonRows": [
+        { "label": "Primary role", "primary": "Permanent household control surface with integrated device roles.", "alternative": "Flexible dashboard or tactile shortcuts for a smaller task set." },
+        { "label": "Power and mount", "primary": "Usually needs a planned in-wall or fixed power path.", "alternative": "Tablet charging and battery care, or battery-powered buttons." },
+        { "label": "Lifecycle", "primary": "Vendor support and wall-opening dimensions constrain replacement.", "alternative": "Tablet is easier to swap; buttons have narrower dependencies." },
+        { "label": "Skip signal", "primary": "Skip when the screen has no repeated household job.", "alternative": "Use buttons when glanceable information adds no value." }
+      ],
+      "relatedGuideSlugs": ["smart-displays-buying-guide", "smart-scene-buttons-buying-guide", "matter-hubs-bridges-buying-guide"],
+      "liveSerp": "Validated current dedicated-panel versus wall-mounted-tablet result coverage on 2026-09-07."
+    },
+    {
+      "site": "smarthome", "familySlug": "smart-indoor-gardens", "slug": "smart-indoor-gardens-buying-guide",
+      "url": "https://smarthome.madabase.com/guides/smart-indoor-gardens-buying-guide",
+      "title": "Smart Indoor Garden vs Grow Light: Which Should You Buy?",
+      "primaryOption": "an integrated smart indoor garden", "alternativeOption": "planters with a timer-controlled grow light",
+      "searchQuestion": "Should you buy a smart indoor garden or build a simple grow-light setup?",
+      "choosePrimary": "Choose an integrated garden when its pod spacing, crop height, light, reservoir, pump, nutrients, reminders, and cleaning routine fit a small repeatable herb or greens plan.",
+      "chooseAlternative": "Choose separate planters and a timer-controlled grow light when plant choice, container size, repairability, and ordinary supplies matter more than guided automation.",
+      "decisionFocus": "Write the crops, harvest goal, available height, counter depth, water access, spill tolerance, light spill, cleaning interval, nutrient source, consumable dependence, pump noise, travel plan, and what happens when a proprietary part or pod is unavailable.",
+      "comparisonRows": [
+        { "label": "System", "primary": "Light, reservoir, pump and holders are designed as one unit.", "alternative": "Containers, medium, light and timer can be selected separately." },
+        { "label": "Plant freedom", "primary": "Limited by deck spacing, lamp height and supported media.", "alternative": "More flexible for pot size, species and replacement components." },
+        { "label": "Routine", "primary": "Guided reminders still require refilling, pruning and cleaning.", "alternative": "Manual checks are simpler but need a written watering and light routine." },
+        { "label": "Ownership", "primary": "Price pods, nutrients, pump, deck parts and app support.", "alternative": "Price light, timer, trays, medium, and ordinary replacements." }
+      ],
+      "relatedGuideSlugs": ["smart-table-lamps-buying-guide", "smart-irrigation-controllers-buying-guide", "temperature-humidity-sensors-buying-guide"],
+      "liveSerp": "Validated current indoor-garden and separate grow-light result coverage on 2026-09-07."
+    },
+    {
+      "site": "smarthome", "familySlug": "smart-coffee-makers", "slug": "smart-coffee-makers-buying-guide",
+      "url": "https://smarthome.madabase.com/guides/smart-coffee-makers-buying-guide",
+      "title": "Smart vs Programmable Coffee Maker: Is App Control Useful?",
+      "primaryOption": "a smart coffee maker", "alternativeOption": "a programmable coffee maker",
+      "searchQuestion": "Is a smart coffee maker better than a programmable coffee maker?",
+      "choosePrimary": "Choose a smart coffee maker only when remote scheduling or changing a prepared brew from another room is a repeated task and the exact model's water, grounds, carafe, warming, and remote-start instructions make that routine safe and useful.",
+      "chooseAlternative": "Choose a programmable machine when the schedule is predictable; it can solve wake-up brewing without another account, app, or firmware dependency.",
+      "decisionFocus": "App control cannot load water or coffee, place the carafe, or clean the machine. Compare brew hardware first, then verify what remote start actually permits, how long prepared water and grounds will sit, default state after outages, local buttons, auto-off, cleaning and descaling, replacement carafe, and support after the app ends.",
+      "comparisonRows": [
+        { "label": "Scheduling", "primary": "May change or trigger a prepared cycle remotely.", "alternative": "Runs a fixed local schedule set on the machine." },
+        { "label": "Preparation", "primary": "Still requires water, grounds, filter and carafe prepared correctly.", "alternative": "Requires the same physical preparation." },
+        { "label": "Dependencies", "primary": "Adds account, app, Wi-Fi, updates and privacy settings.", "alternative": "Keeps controls and timer local." },
+        { "label": "Best fit", "primary": "An irregular schedule where remote change has real value.", "alternative": "A stable morning routine or preference for simple controls." }
+      ],
+      "relatedGuideSlugs": ["smart-slow-cookers-buying-guide", "smart-sous-vide-cookers-buying-guide", "smart-power-strips-buying-guide"],
+      "liveSerp": "Validated current smart-versus-programmable coffee-maker result coverage on 2026-09-07."
+    },
+    {
+      "site": "smarthome", "familySlug": "smart-sous-vide-cookers", "slug": "smart-sous-vide-cookers-buying-guide",
+      "url": "https://smarthome.madabase.com/guides/smart-sous-vide-cookers-buying-guide",
+      "title": "Smart vs Local-Control Sous Vide: Do You Need the App?",
+      "primaryOption": "an app-connected sous vide circulator", "alternativeOption": "a local-control immersion circulator",
+      "searchQuestion": "Should you buy an app-connected or local-control sous vide circulator?",
+      "choosePrimary": "Choose the connected model when remote status and guided programs support an already safe time-and-temperature workflow and the circulator remains fully controllable at the appliance.",
+      "chooseAlternative": "Choose local controls when temperature stability, vessel fit, water capacity, noise, cleanability, and reliable buttons solve the job without an account.",
+      "decisionFocus": "Connectivity is secondary to controlled heating and food handling. Verify vessel attachment, minimum and maximum water level, covered-bath evaporation, circulation space, temperature check, bag integrity, preheating, food-safety timing, alarms, power-loss state, local control, cleaning, and cooling or finishing steps.",
+      "comparisonRows": [
+        { "label": "Core function", "primary": "Circulates and heats water with optional remote status or programs.", "alternative": "Provides the same heating job through local controls." },
+        { "label": "Failure path", "primary": "App or network loss must not block safe local operation.", "alternative": "Fewer software dependencies but still needs alarms and observation." },
+        { "label": "Decision priority", "primary": "Buy for vessel fit, stability, controls and cleanability first.", "alternative": "Evaluate the same hardware criteria without paying for connectivity." },
+        { "label": "Best fit", "primary": "Remote visibility changes a practiced workflow.", "alternative": "The cook remains near enough to use dependable local controls." }
+      ],
+      "relatedGuideSlugs": ["smart-slow-cookers-buying-guide", "smart-coffee-makers-buying-guide", "smart-power-strips-buying-guide"],
+      "liveSerp": "Validated current sous-vide-versus-slow-cooker demand and connected-versus-local control coverage on 2026-09-07."
+    },
+    {
+      "site": "smarthome", "familySlug": "smart-slow-cookers", "slug": "smart-slow-cookers-buying-guide",
+      "url": "https://smarthome.madabase.com/guides/smart-slow-cookers-buying-guide",
+      "title": "Smart vs Programmable Slow Cooker: Is Wi-Fi Worth It?",
+      "primaryOption": "a smart slow cooker", "alternativeOption": "a programmable slow cooker",
+      "searchQuestion": "Should you buy a smart slow cooker or a programmable slow cooker?",
+      "choosePrimary": "Choose a smart slow cooker when remote status or permitted setting changes solve a real schedule problem and the food, fill level, cooking plan, placement, and model instructions already support the unattended interval.",
+      "chooseAlternative": "Choose a programmable model when delayed handoff to warm and local timers cover the routine with fewer network and account dependencies.",
+      "decisionFocus": "Do not let remote access justify an unsafe recipe or an unplanned delay. Verify capacity, minimum and maximum fill, heat settings, lid and insert condition, counter clearance, cord, time-and-temperature recipe, power-loss behavior, exact remote functions, auto-warm policy, cleaning, and a discard rule after interruption.",
+      "comparisonRows": [
+        { "label": "Remote role", "primary": "May expose status or model-permitted setting changes through an app.", "alternative": "Uses local timer, heat selection, and automatic warm." },
+        { "label": "Food plan", "primary": "Still requires a safe recipe, fill level, preparation and interruption plan.", "alternative": "The same food-safety plan controls the cook." },
+        { "label": "Dependencies", "primary": "Adds account, Wi-Fi, notification and firmware behavior.", "alternative": "Keeps operation at the appliance." },
+        { "label": "Best fit", "primary": "Variable schedules where remote information changes action.", "alternative": "Predictable routines where local programming is enough." }
+      ],
+      "relatedGuideSlugs": ["smart-sous-vide-cookers-buying-guide", "smart-coffee-makers-buying-guide", "smart-power-strips-buying-guide"],
+      "liveSerp": "Validated slow-cooker-versus-pressure-cooker demand and smart-versus-programmable control coverage on 2026-09-07."
+    },
+    {
+      "site": "smarthome", "familySlug": "smart-countertop-composters", "slug": "smart-countertop-composters-buying-guide",
+      "url": "https://smarthome.madabase.com/guides/smart-countertop-composters-buying-guide",
+      "title": "Electric Countertop Composter vs Compost Bin: Which Fits?",
+      "primaryOption": "an electric countertop food-waste processor", "alternativeOption": "a passive compost bin or organics collection",
+      "searchQuestion": "Should you buy an electric countertop composter or use a compost bin or collection service?",
+      "choosePrimary": "Choose an electric processor when reducing the volume and odor of a specific accepted food-waste stream solves a storage problem and you have a valid destination for the dried or processed output.",
+      "chooseAlternative": "Choose passive composting or municipal collection when the real goal is finished compost or diversion without another appliance, filter, cycle, and electricity load.",
+      "decisionFocus": "First define the output: many countertop machines dehydrate and grind rather than create finished compost. Record accepted and excluded scraps, batch size, cycle time, sound, heat, ventilation, filter replacement, cleaning, electricity, storage, contamination control, and exactly where every batch goes afterward.",
+      "comparisonRows": [
+        { "label": "Output", "primary": "Often produces reduced, dried, or partly processed material.", "alternative": "A managed compost process can produce finished compost; collection diverts waste." },
+        { "label": "Space and odor", "primary": "Keeps processing indoors but needs counter space and maintenance.", "alternative": "Needs a bin, freezer, outdoor area, or pickup routine." },
+        { "label": "Ownership", "primary": "Electricity, filters, cleaning, noise, heat and eventual appliance repair.", "alternative": "Turning, storage, transport, pests, or collection rules." },
+        { "label": "Skip signal", "primary": "Skip when the output has no accepted destination.", "alternative": "Skip a passive path the household cannot manage consistently." }
+      ],
+      "relatedGuideSlugs": ["smart-indoor-gardens-buying-guide", "whole-home-energy-monitors-buying-guide", "smart-aroma-diffusers-buying-guide"],
+      "liveSerp": "Validated active countertop-processor versus passive-composting result coverage and output distinctions on 2026-09-07."
+    },
+    {
+      "site": "smarthome", "familySlug": "smart-aroma-diffusers", "slug": "smart-aroma-diffusers-buying-guide",
+      "url": "https://smarthome.madabase.com/guides/smart-aroma-diffusers-buying-guide",
+      "title": "Aroma Diffuser vs Humidifier: Which Job Do You Need?",
+      "primaryOption": "a smart aroma diffuser", "alternativeOption": "a humidifier or fragrance-free room",
+      "searchQuestion": "Do you need an aroma diffuser or a humidifier?",
+      "choosePrimary": "Choose an aroma diffuser only for optional scent when every occupant and pet tolerates the specific product, the exact oil and dose are permitted, and cleaning plus spill placement are manageable.",
+      "chooseAlternative": "Choose a humidifier for a measured humidity problem using its own instructions, or keep the room fragrance-free when scent sensitivity, pets, children, respiratory concerns, or uncertain oil safety make diffusion a poor fit.",
+      "decisionFocus": "A diffuser is not a substitute for meaningful humidification or medical care. Confirm the intended job, room occupants, pets, water and oil compatibility, tank size, mist placement, cleaning interval, residue, automatic shutoff, local controls, app permissions, and a stop-use response to irritation or spills.",
+      "comparisonRows": [
+        { "label": "Job", "primary": "Disperses a small amount of optional fragrance.", "alternative": "A humidifier adds moisture; fragrance-free operation adds neither." },
+        { "label": "Inputs", "primary": "Only manufacturer-permitted water and scent materials at the stated dose.", "alternative": "Use only the humidifier's approved water and additives; many prohibit oils in the tank." },
+        { "label": "Exposure", "primary": "Review every person, child, pet, surface and ventilation condition.", "alternative": "Humidity also needs measurement, cleaning and placement control." },
+        { "label": "Skip signal", "primary": "Skip after irritation, unknown oil safety, residue, leaks, or poor cleaning access.", "alternative": "Choose no device when neither scent nor added humidity has a defined job." }
+      ],
+      "relatedGuideSlugs": ["indoor-air-quality-monitors-buying-guide", "temperature-humidity-sensors-buying-guide", "smart-indoor-gardens-buying-guide"],
+      "liveSerp": "Validated active diffuser-versus-humidifier result coverage on 2026-09-07."
+    },
+    {
+      "site": "homeoffice", "familySlug": "compact-color-inkjet-printers", "slug": "compact-color-inkjet-printers-buying-guide",
+      "url": "https://homeoffice.madabase.com/guides/compact-color-inkjet-printers-buying-guide",
+      "title": "Color Inkjet vs Color Laser: Which Home-Office Printer?",
+      "primaryOption": "a compact color inkjet printer", "alternativeOption": "a color laser printer or print service",
+      "searchQuestion": "Should a home office buy a compact color inkjet or a color laser printer?",
+      "choosePrimary": "Choose a compact inkjet when color images, mixed media, occasional photos, and a small footprint matter and the printer will be used often enough to manage ink and cleaning cycles.",
+      "chooseAlternative": "Choose a color laser for regular document output and longer idle periods, or a print service when volume is too low to justify maintaining any printer.",
+      "decisionFocus": "Use the actual monthly job mix rather than a one-time purchase price. Record color and monochrome pages, photo or plain-paper quality needs, maximum paper size, duplex and scan workflow, tray clearance, network support, idle periods, ink or toner yield evidence, maintenance parts, energy, noise, and the cost of a failed deadline.",
+      "comparisonRows": [
+        { "label": "Best output", "primary": "Mixed color documents, images, and media flexibility in a small body.", "alternative": "Frequent office documents, sharper text, and better tolerance of idle periods." },
+        { "label": "Ownership", "primary": "Ink, cleaning cycles, printhead care, and drying or clogging risk.", "alternative": "Toner, drums or other maintenance items, more space, weight, and heat." },
+        { "label": "Volume fit", "primary": "Regular low-to-moderate mixed printing that keeps the system exercised.", "alternative": "Steadier document volume; outsource truly rare jobs." },
+        { "label": "Space proof", "primary": "Measure trays, rear feed, scanner lid, cable and service access.", "alternative": "Measure a usually larger body, ventilation, paper path and supply storage." }
+      ],
+      "relatedGuideSlugs": ["monochrome-laser-printers-buying-guide", "color-laser-multifunction-printers-buying-guide", "sheetfed-document-scanners-buying-guide"],
+      "liveSerp": "Validated active inkjet-versus-laser home-office result coverage on 2026-09-07."
+    },
+    {
+      "site": "homeoffice", "familySlug": "conference-speakerphones", "slug": "conference-speakerphones-buying-guide",
+      "url": "https://homeoffice.madabase.com/guides/conference-speakerphones-buying-guide",
+      "title": "Speakerphone vs Headset: Which Is Better for Calls?",
+      "primaryOption": "a conference speakerphone", "alternativeOption": "a headset",
+      "searchQuestion": "Should you use a conference speakerphone or a headset for work calls?",
+      "choosePrimary": "Choose a speakerphone when two or more people in the same quiet room need shared microphone and speaker coverage and the room, table, platform, and echo behavior can be tested.",
+      "chooseAlternative": "Choose a headset for one person, shared or noisy spaces, confidential calls, and consistent microphone distance.",
+      "decisionFocus": "Count the people and map the room before comparing audio labels. Test microphone pickup from every seat, far-end intelligibility, loudspeaker feedback, reverberation, keyboard and HVAC noise, USB or Bluetooth switching, mute visibility, meeting-platform controls, privacy, power, cable reach, and the fallback when pairing fails.",
+      "comparisonRows": [
+        { "label": "Participants", "primary": "Shared table audio for several people in one room.", "alternative": "One user with a stable mouth-to-microphone distance." },
+        { "label": "Room dependence", "primary": "Performance changes with distance, reflections and background noise.", "alternative": "More isolated from room acoustics and less likely to disturb others." },
+        { "label": "Privacy", "primary": "Everyone nearby can hear the far end and may be captured.", "alternative": "Far-end audio is private, though the user's speech remains audible." },
+        { "label": "Best fit", "primary": "Small-group calls after an end-to-end room test.", "alternative": "Solo calls, noisy rooms, confidential work and frequent switching." }
+      ],
+      "relatedGuideSlugs": ["office-call-headsets-buying-guide", "wireless-conference-headsets-buying-guide", "usb-condenser-microphones-buying-guide"],
+      "liveSerp": "Validated active conference-speakerphone versus headset result coverage on 2026-09-07."
+    },
+    {
+      "site": "homeoffice", "familySlug": "office-seat-cushions", "slug": "office-seat-cushions-buying-guide",
+      "url": "https://homeoffice.madabase.com/guides/office-seat-cushions-buying-guide",
+      "title": "Seat Cushion vs New Office Chair: What Should You Fix First?",
+      "primaryOption": "an office seat cushion", "alternativeOption": "a properly fitted adjustable chair",
+      "searchQuestion": "Should you add a seat cushion or replace the office chair?",
+      "choosePrimary": "Try a cushion when the chair is otherwise stable and adjustable, the seat only needs a small reversible height or pressure-distribution change, and the cushion does not defeat lumbar support, seat depth, arm position, or foot contact.",
+      "chooseAlternative": "Replace or refit the chair when dimensions, damaged foam, controls, back support, stability, or desk relationship are fundamentally wrong; a cushion cannot repair the chair mechanism.",
+      "decisionFocus": "Measure the workstation before adding thickness. Record seated height, popliteal clearance, usable seat depth and width, back contact, armrest and keyboard height, feet and footrest position, cushion compression, edge pressure, sliding, heat, cover cleaning, transfer stability, and a timed comparison with normal movement breaks.",
+      "comparisonRows": [
+        { "label": "Problem size", "primary": "A small reversible surface or height adjustment.", "alternative": "A fundamental seat, back, control, stability, or dimension mismatch." },
+        { "label": "Geometry", "primary": "Raises the body and reduces usable seat depth after compression.", "alternative": "Provides purpose-built adjustment when the range fits the user and desk." },
+        { "label": "Trial", "primary": "Easy to test and remove while recording posture and task effects.", "alternative": "Needs a full-workday trial across every adjustment and task." },
+        { "label": "Skip signal", "primary": "Skip if it slides, bottoms out, blocks back support, or worsens reach.", "alternative": "Skip any chair that cannot fit the measured workstation and user." }
+      ],
+      "relatedGuideSlugs": ["office-saddle-stools-buying-guide", "office-footrests-buying-guide", "under-desk-keyboard-trays-buying-guide"],
+      "liveSerp": "Validated current seat-cushion versus chair-replacement result coverage on 2026-09-07."
+    },
+    {
+      "site": "homeoffice", "familySlug": "office-saddle-stools", "slug": "office-saddle-stools-buying-guide",
+      "url": "https://homeoffice.madabase.com/guides/office-saddle-stools-buying-guide",
+      "title": "Saddle Stool vs Office Chair: Which Fits Your Workday?",
+      "primaryOption": "an office saddle stool", "alternativeOption": "an adjustable task or drafting chair",
+      "searchQuestion": "Is a saddle stool or an office chair better for your desk work?",
+      "choosePrimary": "Choose a saddle stool for short, mobile, close-to-work tasks when the desk can match its higher sitting position and the user can alternate postures without relying on a backrest.",
+      "chooseAlternative": "Choose an adjustable task or drafting chair for long focused sessions, back and arm support, recline, and a broader range of users.",
+      "decisionFocus": "Treat alternate seating as a task tool, not a health cure. Measure desk and seat height together, hip and knee clearance, foot support, caster and floor behavior, saddle width and tilt, mounting and dismounting, reach, back and arm support needs, session length, clothing, and a rotation plan with standing and movement.",
+      "comparisonRows": [
+        { "label": "Posture", "primary": "Higher open-hip position with little or no back support.", "alternative": "Supported sitting with adjustable back, arms, depth and recline." },
+        { "label": "Desk fit", "primary": "Often needs a higher desk and dependable foot placement.", "alternative": "Task and drafting ranges cover more workstation heights." },
+        { "label": "Task fit", "primary": "Short, active tasks with frequent movement around the work surface.", "alternative": "Longer focused work and users who need stable support." },
+        { "label": "Acceptance test", "primary": "Trial briefly, rotate postures and stop after discomfort or instability.", "alternative": "Tune all adjustments and test across a full normal workday." }
+      ],
+      "relatedGuideSlugs": ["office-seat-cushions-buying-guide", "office-footrests-buying-guide", "standing-desk-anti-fatigue-mats-buying-guide"],
+      "liveSerp": "Validated active saddle-stool versus office-chair result coverage and occupational seating guidance on 2026-09-07."
+    },
+    {
+      "site": "homeoffice", "familySlug": "laptop-privacy-screens", "slug": "laptop-privacy-screens-buying-guide",
+      "url": "https://homeoffice.madabase.com/guides/laptop-privacy-screens-buying-guide",
+      "title": "Magnetic vs Adhesive Laptop Privacy Screen: Which Fits?",
+      "primaryOption": "a magnetic or removable laptop privacy screen", "alternativeOption": "an adhesive privacy filter",
+      "searchQuestion": "Should you choose a magnetic or adhesive laptop privacy screen?",
+      "choosePrimary": "Choose a magnetic or tab-mounted removable filter when the exact screen and bezel support it and you switch often between private solo work and color-accurate or shared viewing.",
+      "chooseAlternative": "Choose an adhesive filter when a precise, low-movement installation matters more than frequent removal and the laptop maker permits the added layer and closing clearance.",
+      "decisionFocus": "Model-specific fit matters more than the diagonal size alone. Verify active image dimensions, aspect ratio, webcam and sensor cutouts, bezel, rounded corners, hinge and lid-closing clearance, touch or pen behavior, attachment residue, screen brightness, color shift, viewing angle, carrying sleeve, and whether desk positioning already solves the exposure.",
+      "comparisonRows": [
+        { "label": "Removal", "primary": "Designed for quick privacy-to-sharing changes when the mount fits.", "alternative": "Stays aligned for a more permanent privacy workflow." },
+        { "label": "Laptop fit", "primary": "Needs compatible bezel, magnets or tabs and safe lid clearance.", "alternative": "Needs exact image-area alignment and approved surface attachment." },
+        { "label": "Display trade-off", "primary": "Can be removed for brightness, color or wide-angle collaboration.", "alternative": "The privacy and display trade-off is present continuously." },
+        { "label": "Skip signal", "primary": "Skip if it lifts, scratches, blocks sensors or prevents safe closing.", "alternative": "Skip if adhesive, residue, bubbles or permanent dimming is unacceptable." }
+      ],
+      "relatedGuideSlugs": ["monitor-privacy-screens-buying-guide", "adjustable-laptop-stands-buying-guide", "business-usb-c-monitors-buying-guide"],
+      "liveSerp": "Validated active magnetic-versus-adhesive laptop privacy-screen result coverage on 2026-09-07."
+    },
+    {
+      "site": "homeoffice", "familySlug": "monitor-privacy-screens", "slug": "monitor-privacy-screens-buying-guide",
+      "url": "https://homeoffice.madabase.com/guides/monitor-privacy-screens-buying-guide",
+      "title": "Removable vs Adhesive Monitor Privacy Screen: Which Fits?",
+      "primaryOption": "a removable monitor privacy screen", "alternativeOption": "an adhesive privacy filter or desk reorientation",
+      "searchQuestion": "Should you use a removable or adhesive privacy filter on a desktop monitor?",
+      "choosePrimary": "Choose a removable filter when the exact visible panel and bezel can hold it securely and the monitor alternates between confidential work and shared or color-sensitive viewing.",
+      "chooseAlternative": "Choose a fixed adhesive filter for a stable single-user privacy requirement, or reposition the desk and control room access when physical layout solves shoulder-surfing without reducing the display.",
+      "decisionFocus": "Measure visible width and height, not only the advertised diagonal. Check bezel and frameless edges, attachment points, webcam or sensor location, multi-monitor angles, portrait rotation, side sightlines, standing viewers, brightness, color, glare, cleanability, removal storage, and the information-security policy the filter is meant to support.",
+      "comparisonRows": [
+        { "label": "Workflow", "primary": "Moves between private and collaborative viewing.", "alternative": "Fixed filter suits an always-private station; layout may solve the risk entirely." },
+        { "label": "Mount", "primary": "Tabs, frame or magnets must fit the monitor without obscuring pixels.", "alternative": "Adhesive needs exact alignment and an acceptable residue path." },
+        { "label": "Viewing proof", "primary": "Test seated, standing, side, portrait and multi-monitor positions.", "alternative": "Run the same test because attachment does not determine privacy angle." },
+        { "label": "Security role", "primary": "Reduces casual side viewing but does not replace access and screen-lock controls.", "alternative": "Neither a fixed filter nor desk layout replaces information-security policy." }
+      ],
+      "relatedGuideSlugs": ["laptop-privacy-screens-buying-guide", "business-usb-c-monitors-buying-guide", "vertical-office-monitors-buying-guide"],
+      "liveSerp": "Validated current removable, magnetic, and adhesive monitor privacy-filter coverage on 2026-09-07."
+    },
+    {
+      "site": "baby", "familySlug": "breast-milk-storage-bags", "slug": "breast-milk-storage-bags-buying-guide",
+      "url": "https://baby.madabase.com/guides/breast-milk-storage-bags-buying-guide",
+      "title": "Milk Storage Bags vs Bottles: Which Freezer System Works?",
+      "primaryOption": "purpose-made breast milk storage bags", "alternativeOption": "approved rigid milk storage containers",
+      "searchQuestion": "Should you freeze breast milk in storage bags or rigid bottles and containers?",
+      "choosePrimary": "Choose purpose-made milk storage bags when flat, dated portions save meaningful freezer space and the seals, support bin, handling, thawing, and transfer routine can limit leaks and waste.",
+      "chooseAlternative": "Choose clean approved rigid containers when reusability, easier filling, protection from puncture, and direct pump-to-store or store-to-feed compatibility matter more than compact stacking.",
+      "decisionFocus": "Follow current authoritative storage guidance and the exact container instructions. Compare food-contact approval, intended freezing use, portion plan, expansion space, seal and cap, labeling, upright support, freeze position, first-in-first-out organization, cleaning, thawing and warming method, transfer steps, leftover handling, and a discard rule after damage or uncertain temperature history.",
+      "comparisonRows": [
+        { "label": "Freezer space", "primary": "Can freeze flat and file compact portions after the seal is proven.", "alternative": "Uses more volume but protects contents with rigid walls." },
+        { "label": "Leak and damage", "primary": "Needs careful sealing, support and protection from puncture.", "alternative": "Needs a sound cap and enough expansion space." },
+        { "label": "Reuse", "primary": "Follow the exact product's single-use or reuse instructions.", "alternative": "Approved reusable containers require complete cleaning and inspection." },
+        { "label": "Workflow", "primary": "May add bag filling, labeling, supporting and transfer steps.", "alternative": "May reduce transfers when compatible with pumping or feeding." }
+      ],
+      "relatedGuideSlugs": ["reusable-baby-food-pouches-buying-guide", "automatic-bottle-washers-buying-guide", "baby-food-makers-buying-guide"],
+      "liveSerp": "Validated active breast-milk storage bag versus bottle/container result coverage and authoritative storage guidance on 2026-09-07."
+    },
+    {
+      "site": "baby", "familySlug": "toddler-straw-cups", "slug": "toddler-straw-cups-buying-guide",
+      "url": "https://baby.madabase.com/guides/toddler-straw-cups-buying-guide",
+      "title": "Straw Cup vs Sippy Cup: Which Transition Cup?",
+      "primaryOption": "a toddler straw cup", "alternativeOption": "a spouted sippy or small open cup",
+      "searchQuestion": "Should a toddler use a straw cup, sippy cup, or open cup?",
+      "choosePrimary": "Choose a straw cup when the child is developmentally ready, can manage the flow under direct supervision, and every valve, straw, seal, and narrow passage can be disassembled, cleaned, dried, and inspected.",
+      "chooseAlternative": "Use a small open cup for direct skill practice, or a spouted training cup temporarily when the caregiver and clinician-guided feeding plan calls for it.",
+      "decisionFocus": "Cup choice is a transition workflow, not a permanent verdict. Follow current feeding guidance and individual clinical advice where relevant; check age and developmental readiness, flow resistance, spill control, drinking position, portion, material condition, small parts, valve removal, brush access, drying, travel hygiene, and when the cup should be retired.",
+      "comparisonRows": [
+        { "label": "Skill", "primary": "Practices drinking through a straw with model-specific flow resistance.", "alternative": "Open cups practice direct sipping; spouted cups trade skill transfer for spill control." },
+        { "label": "Cleaning", "primary": "Valves and straws may hide residue and need complete disassembly.", "alternative": "Open cups are simplest; spouts and valves may also trap residue." },
+        { "label": "Use setting", "primary": "Useful for supervised meals and portable hydration after fit is proven.", "alternative": "Open cup suits seated practice; a training cup may suit a temporary mess constraint." },
+        { "label": "Stop signal", "primary": "Stop after cracks, chewed parts, mold, leaks, poor flow or swallowing concern.", "alternative": "Reassess any cup that disrupts safe, comfortable drinking or development." }
+      ],
+      "relatedGuideSlugs": ["toddler-training-utensils-buying-guide", "suction-toddler-bowls-buying-guide", "silicone-feeding-placemats-buying-guide"],
+      "liveSerp": "Validated active straw-cup versus sippy/open-cup result coverage and current CDC transition guidance on 2026-09-07."
+    },
+    {
+      "site": "baby", "familySlug": "silicone-feeding-placemats", "slug": "silicone-feeding-placemats-buying-guide",
+      "url": "https://baby.madabase.com/guides/silicone-feeding-placemats-buying-guide",
+      "title": "Silicone Placemat vs Clean High-Chair Tray: Which Is Easier?",
+      "primaryOption": "a silicone feeding placemat", "alternativeOption": "the cleaned tray or table surface",
+      "searchQuestion": "Is a silicone feeding placemat better than using the high-chair tray or table directly?",
+      "choosePrimary": "Choose a silicone mat when it fits completely on the flat eating surface, stays away from the edge, contains a repeatable mess, and can be washed, rinsed, dried, and inspected more easily than the surface alone.",
+      "chooseAlternative": "Use the cleaned tray or table directly when the mat lifts, slides, traps moisture, conflicts with suction dishes, creates an edge to pull, or adds more cleaning than it removes.",
+      "decisionFocus": "Test the real surface before buying multiples. Measure usable tray or table area, lip and edge clearance, material condition, grip on that finish, compatibility with bowls and plates, rolled or folded storage, dishwasher and hand-cleaning access, drying, stain and odor retention, transport, and whether the child can move the entire mat.",
+      "comparisonRows": [
+        { "label": "Surface fit", "primary": "Needs a flat area with no overhang, folds, or blocked tray features.", "alternative": "Uses the existing washable eating surface without an added edge." },
+        { "label": "Mess workflow", "primary": "Can lift contained debris if the caregiver can carry it without spilling.", "alternative": "Wipe or remove the tray directly." },
+        { "label": "Dish compatibility", "primary": "Some suction dishes may not adhere well to the mat.", "alternative": "Smooth trays or tables may provide a better suction surface." },
+        { "label": "Skip signal", "primary": "Skip after sliding, tearing, retained odor, hidden residue or child removal.", "alternative": "Use the bare surface when it is faster to clean and inspect." }
+      ],
+      "relatedGuideSlugs": ["suction-toddler-bowls-buying-guide", "toddler-training-utensils-buying-guide", "adjustable-high-chairs-buying-guide"],
+      "liveSerp": "Validated current feeding-mat, suction-dish, and clean-tray decision coverage on 2026-09-07."
+    },
+    {
+      "site": "baby", "familySlug": "suction-toddler-bowls", "slug": "suction-toddler-bowls-buying-guide",
+      "url": "https://baby.madabase.com/guides/suction-toddler-bowls-buying-guide",
+      "title": "Suction Bowl vs Non-Slip Bowl: Which Helps Self-Feeding?",
+      "primaryOption": "a suction toddler bowl", "alternativeOption": "a stable shallow bowl on a non-slip surface",
+      "searchQuestion": "Should you use a suction bowl or a regular non-slip bowl for toddler self-feeding?",
+      "choosePrimary": "Choose a suction bowl when its base seals reliably to the exact clean, flat tray, the bowl shape supports the current food and utensil skill, and the pull tab remains controllable by the caregiver.",
+      "chooseAlternative": "Choose a stable shallow bowl on a non-slip surface when the tray texture defeats suction, the child repeatedly releases the base, or ordinary tableware better supports the next skill stage.",
+      "decisionFocus": "Test the bowl on the real tray because suction claims do not transfer across textures and finishes. Check bowl depth and lip, portion and temperature, stable placement, base diameter, release tab orientation, utensil contact, material wear, dishwasher and crease access, drying, odor, caregiver removal, and the child's current grasp and throwing behavior.",
+      "comparisonRows": [
+        { "label": "Stability", "primary": "Depends on a clean compatible surface and an intact suction base.", "alternative": "Uses weight, geometry or a non-slip layer rather than a sealed base." },
+        { "label": "Skill fit", "primary": "Can reduce bowl movement during early scooping practice.", "alternative": "May better prepare an older toddler for ordinary tableware." },
+        { "label": "Cleaning", "primary": "Inspect the base, rim, tab, creases and retained moisture.", "alternative": "Simpler shapes can be easier to wash and dry fully." },
+        { "label": "Skip signal", "primary": "Skip when suction fails, the child can lift it, or the base is damaged.", "alternative": "Skip any unstable, cracked, chipped, or poorly sized bowl." }
+      ],
+      "relatedGuideSlugs": ["silicone-feeding-placemats-buying-guide", "toddler-training-utensils-buying-guide", "adjustable-high-chairs-buying-guide"],
+      "liveSerp": "Validated current suction-bowl and non-slip feeding-surface decision coverage on 2026-09-07."
+    },
+    {
+      "site": "baby", "familySlug": "toddler-training-utensils", "slug": "toddler-training-utensils-buying-guide",
+      "url": "https://baby.madabase.com/guides/toddler-training-utensils-buying-guide",
+      "title": "Toddler Utensils vs Small Regular Cutlery: Which to Start?",
+      "primaryOption": "toddler training utensils", "alternativeOption": "small household utensils with safe edges",
+      "searchQuestion": "Should a toddler start with training utensils or small regular cutlery?",
+      "choosePrimary": "Choose training utensils when a short thick handle, shallow spoon, guarded fork, or angled shape gives the child a measurable grasp or scooping advantage for the current stage.",
+      "chooseAlternative": "Choose small household utensils when they fit the child's hand and mouth, have safe edges and strong construction, and the specialized shape no longer improves independent eating.",
+      "decisionFocus": "Observe one meal before shopping. Record hand preference, grip, reach, bowl stability, food texture, spoon depth, fork effectiveness, mouth size, edge and tine shape, handle separation, material wear, dishwasher access, caregiver loading, frustration, throwing, and the supervision needed for every utensil.",
+      "comparisonRows": [
+        { "label": "Grip", "primary": "Short or thick handles can support an early whole-hand grasp.", "alternative": "Slimmer familiar handles may suit a later, more precise grasp." },
+        { "label": "Food control", "primary": "Shallow bowls and guarded shapes may reduce spill distance.", "alternative": "Ordinary small utensils provide a direct path to family tableware." },
+        { "label": "Durability", "primary": "Inspect seams, coatings, detachable parts, bite damage and heat limits.", "alternative": "Choose a sound one-piece utensil with safe scale and edges." },
+        { "label": "Transition", "primary": "Use only while the geometry provides a clear learning benefit.", "alternative": "Move on when regular small utensils work as well under supervision." }
+      ],
+      "relatedGuideSlugs": ["suction-toddler-bowls-buying-guide", "silicone-feeding-placemats-buying-guide", "toddler-straw-cups-buying-guide"],
+      "liveSerp": "Validated current toddler-training and small-utensil guidance and search coverage on 2026-09-07."
+    },
+    {
+      "site": "baby", "familySlug": "reusable-baby-food-pouches", "slug": "reusable-baby-food-pouches-buying-guide",
+      "url": "https://baby.madabase.com/guides/reusable-baby-food-pouches-buying-guide",
+      "title": "Reusable Food Pouch vs Open Container: Which Fits Feeding?",
+      "primaryOption": "a reusable baby food pouch", "alternativeOption": "spoon feeding from an open container",
+      "searchQuestion": "Should you use reusable food pouches or serve baby food from an open container?",
+      "choosePrimary": "Choose a reusable pouch for an age-appropriate portable food only when filling, sealing, temperature control, upright supervised serving, complete disassembly, narrow-channel cleaning, drying, and damage inspection are all realistic.",
+      "chooseAlternative": "Choose an open container and spoon for easier texture visibility, caregiver pacing, utensil practice, and a simpler wash-and-dry path.",
+      "decisionFocus": "The package should not hide food condition or replace varied supervised feeding. Follow current feeding guidance; check developmental readiness, recipe texture, fill line, cap and small parts, seal, squeeze flow, serving position, refrigeration and transport time, leftover policy, brush access, dishwasher limits, drying, staining, odor, and retirement after damage.",
+      "comparisonRows": [
+        { "label": "Visibility", "primary": "The pouch can obscure texture, separation, and residue during use.", "alternative": "An open container exposes food condition and portion directly." },
+        { "label": "Portability", "primary": "Compact when sealed and kept within safe temperature control.", "alternative": "Needs a lidded container plus spoon for travel." },
+        { "label": "Skill path", "primary": "Convenience should not replace varied textures and supervised utensil practice.", "alternative": "Supports spoon pacing and direct observation of each bite." },
+        { "label": "Cleaning", "primary": "Corners, zipper, spout and cap must be fully opened, scrubbed and dried.", "alternative": "A wide container and spoon are easier to inspect." }
+      ],
+      "relatedGuideSlugs": ["baby-food-makers-buying-guide", "suction-toddler-bowls-buying-guide", "toddler-training-utensils-buying-guide"],
+      "liveSerp": "Validated reusable-pouch versus open-container feeding and cleaning result coverage on 2026-09-07."
+    },
+    {
+      "site": "baby", "familySlug": "stroller-footmuffs", "slug": "stroller-footmuffs-buying-guide",
+      "url": "https://baby.madabase.com/guides/stroller-footmuffs-buying-guide",
+      "title": "Stroller Footmuff vs Blanket: Which Cold-Weather Setup?",
+      "primaryOption": "a stroller footmuff", "alternativeOption": "weather-appropriate clothing and a secured blanket",
+      "searchQuestion": "Should you use a stroller footmuff or a blanket in cold weather?",
+      "choosePrimary": "Choose a footmuff only when the stroller manufacturer permits the accessory, harness slots and buckle remain correctly routed and visible, the child fits within limits, and layers can be adjusted to prevent overheating.",
+      "chooseAlternative": "Use weather-appropriate clothing and a safely managed blanket when compatibility is uncertain, temperatures change quickly, or the stroller's restraint geometry should remain unobstructed.",
+      "decisionFocus": "Confirm the stroller and footmuff manuals together. Check exact model fit, harness slot position, buckle access, anti-slip attachments, seat recline and fold, wheel and brake clearance, child's current size and mobility, face and airway clearance, temperature and wind, wet layers, indoor transitions, supervision, washing, drying, and removal before any vehicle restraint use unless explicitly approved.",
+      "comparisonRows": [
+        { "label": "Attachment", "primary": "Needs approved stroller fit without rerouting or hiding the harness.", "alternative": "Clothing is independent; any blanket must stay clear of face, wheels and ground." },
+        { "label": "Weather control", "primary": "Provides wind-resistant coverage but can be slower to adjust indoors.", "alternative": "Separate layers are easier to add or remove as conditions change." },
+        { "label": "Mobility", "primary": "Must fit the child's size and movement without bunching.", "alternative": "Clothing preserves movement; blankets can shift or be kicked away." },
+        { "label": "Skip signal", "primary": "Skip after harness interference, poor fit, overheating, damage or model prohibition.", "alternative": "Skip loose coverage that reaches the face, wheels, ground or restraint." }
+      ],
+      "relatedGuideSlugs": ["stroller-cup-holders-buying-guide", "full-size-strollers-buying-guide", "baby-travel-systems-buying-guide"],
+      "liveSerp": "Validated active stroller-footmuff versus blanket result coverage on 2026-09-07."
+    },
+    {
+      "site": "baby", "familySlug": "stroller-cup-holders", "slug": "stroller-cup-holders-buying-guide",
+      "url": "https://baby.madabase.com/guides/stroller-cup-holders-buying-guide",
+      "title": "Stroller Cup Holder vs Organizer: Which Attachment?",
+      "primaryOption": "a stroller cup holder", "alternativeOption": "a stroller organizer or secured lower basket",
+      "searchQuestion": "Should you add a cup holder or a stroller organizer?",
+      "choosePrimary": "Choose a dedicated holder when the stroller manufacturer permits it, the clamp fits the exact tube without damage, one closed container remains stable through turns and curbs, and weight does not affect steering or tipping.",
+      "chooseAlternative": "Choose an organizer for several light essentials, or the lower basket for heavier or hot drinks when handlebar load, spill, release, or tip risk is unclear.",
+      "decisionFocus": "Use the stroller manual and test without a child first. Verify approved attachment zones, tube shape and diameter, clamp and tool security, fold and brake clearance, container base and top diameter, retention, rotation, spill direction, drink temperature, handlebar load, steering, tip stability, curb vibration, caregiver reach, and removal before transport.",
+      "comparisonRows": [
+        { "label": "Load", "primary": "Carries one compatible closed container at a defined point.", "alternative": "Organizer carries several light items; lower basket keeps weight low." },
+        { "label": "Stability", "primary": "Clamp, rotation and container retention must pass movement tests.", "alternative": "Organizer attachment and weight distribution still need testing." },
+        { "label": "Spill path", "primary": "Keep hot or open drinks away from the child and stroller fabrics.", "alternative": "Use the basket when spill or dropped-object exposure is lower there." },
+        { "label": "Skip signal", "primary": "Skip after steering change, clamp movement, fold conflict or model prohibition.", "alternative": "Skip any overloaded organizer or inaccessible basket workflow." }
+      ],
+      "relatedGuideSlugs": ["stroller-footmuffs-buying-guide", "full-size-strollers-buying-guide", "structured-diaper-bags-buying-guide"],
+      "liveSerp": "Validated current stroller-cup-holder versus organizer result coverage on 2026-09-07."
+    },
+    {
+      "site": "baby", "familySlug": "bathtub-spout-covers", "slug": "bathtub-spout-covers-buying-guide",
+      "url": "https://baby.madabase.com/guides/bathtub-spout-covers-buying-guide",
+      "title": "Bath Spout Cover vs Clear Bath Zone: Do You Need One?",
+      "primaryOption": "a soft bathtub spout cover", "alternativeOption": "caregiver positioning and a clear bath zone",
+      "searchQuestion": "Do you need a bathtub spout cover, and when is adult positioning the better control?",
+      "choosePrimary": "Choose a soft cover only when it fits the exact spout and diverter securely, cannot expose small or loose parts, drains and dries fully, and does not block temperature or water controls.",
+      "chooseAlternative": "Rely first on direct supervision, prepared supplies, safe water temperature, non-slip footing, and positioning that keeps the child away from the hard fixture; a cover addresses only one impact surface.",
+      "decisionFocus": "A spout cover does not prevent drowning, scalding, slipping, climbing, or control tampering. Measure spout shape, length and diverter movement; test retention, cushioning, drainage, trapped water, cleaning, drying, material wear, child removal, access to controls, fill-before-entry workflow, caregiver reach, and immediate removal after damage or mold.",
+      "comparisonRows": [
+        { "label": "Hazard covered", "primary": "Adds cushioning around one compatible hard spout.", "alternative": "Positioning and supervision address the child's whole bath zone." },
+        { "label": "Fit", "primary": "Must stay secure without blocking flow, diverter, drain or controls.", "alternative": "Requires a repeatable caregiver position and supplies within reach." },
+        { "label": "Hygiene", "primary": "Needs complete draining, cleaning, drying and inspection after use.", "alternative": "Keeps the fixture visible for direct cleaning and inspection." },
+        { "label": "Safety limit", "primary": "Never a substitute for touch supervision or temperature control.", "alternative": "The non-product bath plan remains the primary control." }
+      ],
+      "relatedGuideSlugs": ["bath-toy-organizers-buying-guide", "infant-bath-tubs-buying-guide", "childproof-corner-guards-buying-guide"],
+      "liveSerp": "Validated current soft bath-spout-cover fit and material coverage on 2026-09-07; no unsupported equivalence with broader bath safety is claimed."
+    },
+    {
+      "site": "baby", "familySlug": "bath-toy-organizers", "slug": "bath-toy-organizers-buying-guide",
+      "url": "https://baby.madabase.com/guides/bath-toy-organizers-buying-guide",
+      "title": "Mesh vs Plastic Bath Toy Organizer: Which Dries Better?",
+      "primaryOption": "a mesh bath toy organizer", "alternativeOption": "a draining rigid bin outside the wet zone",
+      "searchQuestion": "Is a mesh bag or a rigid draining bin better for bath toy storage?",
+      "choosePrimary": "Choose mesh when small toys need visible, fast-draining storage and the mount holds on the exact wall without entering the child's bath space or becoming a pull, loop, or entanglement hazard.",
+      "chooseAlternative": "Choose a rigid draining bin when larger toys, one-handed scooping, removable washing, stable off-tub storage, and easier inspection matter more than compact hanging storage.",
+      "decisionFocus": "The organizer does not make closed bath toys hygienic. Inventory toy size and openings, discard items that trap water or cannot be cleaned, then test drainage, air circulation, wall texture, mount strength, load, child reach, loops and cords, sharp or broken parts, cleaning access, drying between baths, and where wet drips will go.",
+      "comparisonRows": [
+        { "label": "Drainage", "primary": "Open mesh drains quickly when toys are not packed tightly.", "alternative": "Rigid bin needs ample holes, airflow and a place for runoff." },
+        { "label": "Mount", "primary": "Hooks or suction mounts must hold the wet load on the real surface.", "alternative": "Freestanding or wall-mounted bins need stable placement outside the bath zone." },
+        { "label": "Cleaning", "primary": "Wash the bag, seams, hooks and wall contact area.", "alternative": "Rigid surfaces are easy to scrub but corners can retain residue." },
+        { "label": "Best fit", "primary": "Small lightweight toys and reliable hanging support.", "alternative": "Larger collections, removable cleaning and off-tub drying." }
+      ],
+      "relatedGuideSlugs": ["bathtub-spout-covers-buying-guide", "infant-bath-tubs-buying-guide", "silicone-feeding-placemats-buying-guide"],
+      "liveSerp": "Validated active mesh-versus-rigid bath-toy storage result coverage on 2026-09-07."
+    },
+    {
+      "site": "baby", "familySlug": "childproof-outlet-covers", "slug": "childproof-outlet-covers-buying-guide",
+      "url": "https://baby.madabase.com/guides/childproof-outlet-covers-buying-guide",
+      "title": "Outlet Caps vs Sliding Covers: Which Safety Layer Fits?",
+      "primaryOption": "removable outlet caps", "alternativeOption": "sliding covers or tamper-resistant receptacles",
+      "searchQuestion": "Should you use outlet caps, sliding cover plates, or tamper-resistant receptacles?",
+      "choosePrimary": "Use removable caps only when they fit tightly, remain intact, are reinstalled every time, and removed pieces are immediately controlled so they cannot become accessible small parts.",
+      "chooseAlternative": "Use self-closing sliding covers for frequently used compatible outlets, and ask a qualified electrician about tamper-resistant receptacles when the permanent electrical installation should provide the primary shutter layer.",
+      "decisionFocus": "No add-on makes an outlet harmless or replaces supervision and cord management. Inventory outlet and faceplate type, grounding and tamper-resistant status, daily plug frequency, cover fit, removal force, automatic return, furniture access, powered-cord exposure, heat or damage, small parts, local electrical requirements, and who restores protection after use.",
+      "comparisonRows": [
+        { "label": "After use", "primary": "An adult must reinstall and secure the cap every time.", "alternative": "Sliding plates close automatically; receptacle shutters are built in." },
+        { "label": "Small parts", "primary": "A removed or damaged cap must never remain within reach.", "alternative": "Fixed covers avoid loose caps but still need inspection." },
+        { "label": "Installation", "primary": "Fits only compatible unused receptacles and must grip securely.", "alternative": "Cover plates or receptacles require exact fit and may need qualified installation." },
+        { "label": "Primary plan", "primary": "A supplementary barrier for selected unused outlets.", "alternative": "Permanent protection plus inaccessible cords and active supervision." }
+      ],
+      "relatedGuideSlugs": ["childproof-corner-guards-buying-guide", "childproof-stove-knob-covers-buying-guide", "hardware-mounted-baby-gates-buying-guide"],
+      "liveSerp": "Validated outlet-cap, sliding-cover, and tamper-resistant receptacle comparison coverage on 2026-09-07."
+    },
+    {
+      "site": "baby", "familySlug": "childproof-corner-guards", "slug": "childproof-corner-guards-buying-guide",
+      "url": "https://baby.madabase.com/guides/childproof-corner-guards-buying-guide",
+      "title": "Corner Guards vs Edge Bumpers: Which Furniture Risk?",
+      "primaryOption": "individual corner guards", "alternativeOption": "continuous edge bumpers or furniture relocation",
+      "searchQuestion": "Should you use corner guards, edge bumpers, or remove the furniture from the play area?",
+      "choosePrimary": "Choose individual corner guards when only a few hard protruding corners remain in an otherwise stable supervised area and each guard can adhere securely without becoming a detachable small part.",
+      "chooseAlternative": "Choose continuous edge protection when a long exposed edge is the measured impact path, or relocate the furniture when instability, climbability, glass, sharp hardware, failed adhesion, or repeated child removal creates a broader hazard.",
+      "decisionFocus": "Start by changing the room, anchoring required furniture, and removing avoidable hazards. Then map actual head and body paths, corner and edge profile, surface finish, adhesive compatibility, cure time, impact coverage, chewing, pulling, material damage, residue, cleaning, temperature, daily inspection, and immediate retirement after loosening or tearing.",
+      "comparisonRows": [
+        { "label": "Coverage", "primary": "Protects one protruding point with minimal added material.", "alternative": "Covers a longer edge; relocation removes the contact surface entirely." },
+        { "label": "Attachment", "primary": "A small guard concentrates all retention on a short adhesive area.", "alternative": "Long strips need uniform adhesion and can expose a longer loose piece." },
+        { "label": "Room risk", "primary": "Fits a stable item with a small isolated corner hazard.", "alternative": "Use relocation for unstable, glass, climbable, or repeatedly accessed furniture." },
+        { "label": "Inspection", "primary": "Check every edge and corner for lift, tears, bite damage and residue.", "alternative": "Apply the same inspection and remove any loose component immediately." }
+      ],
+      "relatedGuideSlugs": ["childproof-outlet-covers-buying-guide", "childproof-stove-knob-covers-buying-guide", "hardware-mounted-baby-gates-buying-guide"],
+      "liveSerp": "Validated current corner-guard and edge-protector result coverage and testing distinctions on 2026-09-07."
+    },
+    {
+      "site": "baby", "familySlug": "childproof-stove-knob-covers", "slug": "childproof-stove-knob-covers-buying-guide",
+      "url": "https://baby.madabase.com/guides/childproof-stove-knob-covers-buying-guide",
+      "title": "Stove Knob Covers vs Kitchen Exclusion: Which Comes First?",
+      "primaryOption": "stove knob covers", "alternativeOption": "removable knobs and active kitchen exclusion",
+      "searchQuestion": "Should you install stove knob covers or keep a child out of the cooking zone?",
+      "choosePrimary": "Use knob covers only as a supplementary layer when they fit the exact controls, withstand the appliance environment, let an adult shut off a burner immediately, and remain latched and intact under daily inspection.",
+      "chooseAlternative": "Use active kitchen exclusion, rear burners, turned-in handles, control locks where provided, or removable knobs when compatible because a knob cover does not block hot surfaces, cookware, climbing, gas leaks, or oven access.",
+      "decisionFocus": "Build the cooking-zone plan before selecting a cover. Verify appliance instructions, knob size and spacing, control markings, push-to-turn action, material heat limits, ventilation, adult emergency access, child reach and pulling, latch wear, cleaning, removed-part storage, gate and traffic path, supervision handoff, and what happens if a control is already on.",
+      "comparisonRows": [
+        { "label": "Hazard covered", "primary": "May deter access to compatible knobs only.", "alternative": "Exclusion separates the child from controls, hot surfaces and cookware." },
+        { "label": "Emergency use", "primary": "Adults must see and turn every control off without delay.", "alternative": "The cooking adult keeps direct access while controlling the child's zone." },
+        { "label": "Compatibility", "primary": "Needs exact size, spacing, action, temperature and appliance fit.", "alternative": "Removable knobs and locks must be permitted; gates need a safe traffic plan." },
+        { "label": "Primary plan", "primary": "A secondary barrier inspected before every cooking session.", "alternative": "Active supervision and exclusion remain the main control." }
+      ],
+      "relatedGuideSlugs": ["childproof-outlet-covers-buying-guide", "childproof-corner-guards-buying-guide", "hardware-mounted-baby-gates-buying-guide"],
+      "liveSerp": "Validated current knob-cover, stove-guard, and kitchen-exclusion result coverage on 2026-09-07."
+    }
+  ]
+}
