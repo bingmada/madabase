@@ -1,0 +1,24 @@
+{
+  "reportDate": "2026-09-07",
+  "searchWindow": "2026-09-01 through 2026-09-07 compared with 2026-08-25 through 2026-08-31",
+  "cohortUrls": 151,
+  "current": {
+    "exposed": 21,
+    "zeroImpression": 130,
+    "clicks": 0,
+    "impressions": 43
+  },
+  "previous": {
+    "exposed": 24,
+    "zeroImpression": 127,
+    "clicks": 0,
+    "impressions": 65
+  },
+  "validLiveInspections": 99,
+  "indexed": 58,
+  "discoveredCurrentlyNotIndexed": 34,
+  "unknownToGoogle": 2,
+  "duplicateWithoutUserCanonical": 5,
+  "blockedByDailyQuota": 31,
+  "nextInspectionGate": "2026-09-08 after Search Console property quota renews"
+}

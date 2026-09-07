@@ -1,0 +1,152 @@
+site,url,currentClicks,previousClicks,currentImpressions,previousImpressions,inspectionStatus,action
+network,https://network.madabase.com/guides/bulk-ethernet-cable-reels-buying-guide,0,0,0,0,Discovered - currently not indexed,Not indexed: preserve content and verify discovery/crawl at the next gate; do not rewrite for CTR.
+network,https://network.madabase.com/guides/cloud-managed-access-points-buying-guide,0,0,0,0,Discovered - currently not indexed,Not indexed: preserve content and verify discovery/crawl at the next gate; do not rewrite for CTR.
+network,https://network.madabase.com/guides/coax-cable-testers-buying-guide,0,0,0,0,Discovered - currently not indexed,Not indexed: preserve content and verify discovery/crawl at the next gate; do not rewrite for CTR.
+network,https://network.madabase.com/guides/coax-compression-tools-buying-guide,0,0,0,0,Discovered - currently not indexed,Not indexed: preserve content and verify discovery/crawl at the next gate; do not rewrite for CTR.
+network,https://network.madabase.com/guides/ethernet-inline-couplers-buying-guide,0,0,0,0,URL is unknown to Google,Not indexed: preserve content and verify discovery/crawl at the next gate; do not rewrite for CTR.
+network,https://network.madabase.com/guides/ethernet-network-taps-buying-guide,0,0,0,0,Discovered - currently not indexed,Not indexed: preserve content and verify discovery/crawl at the next gate; do not rewrite for CTR.
+network,https://network.madabase.com/guides/fiber-cleaning-kits-buying-guide,0,0,0,0,Discovered - currently not indexed,Not indexed: preserve content and verify discovery/crawl at the next gate; do not rewrite for CTR.
+network,https://network.madabase.com/guides/fiber-optic-patch-cables-buying-guide,0,0,0,0,Discovered - currently not indexed,Not indexed: preserve content and verify discovery/crawl at the next gate; do not rewrite for CTR.
+network,https://network.madabase.com/guides/fiber-optic-power-meters-buying-guide,0,0,0,0,Discovered - currently not indexed,Not indexed: preserve content and verify discovery/crawl at the next gate; do not rewrite for CTR.
+network,https://network.madabase.com/guides/fiber-visual-fault-locators-buying-guide,0,0,0,0,URL is unknown to Google,Not indexed: preserve content and verify discovery/crawl at the next gate; do not rewrite for CTR.
+network,https://network.madabase.com/guides/industrial-ethernet-switches-buying-guide,0,0,0,0,Discovered - currently not indexed,Not indexed: preserve content and verify discovery/crawl at the next gate; do not rewrite for CTR.
+network,https://network.madabase.com/guides/kvm-over-ip-extenders-buying-guide,0,0,0,0,Discovered - currently not indexed,Not indexed: preserve content and verify discovery/crawl at the next gate; do not rewrite for CTR.
+network,https://network.madabase.com/guides/managed-2-5gbe-switches-buying-guide,0,0,0,0,Discovered - currently not indexed,Not indexed: preserve content and verify discovery/crawl at the next gate; do not rewrite for CTR.
+network,https://network.madabase.com/guides/mini-ups-for-routers-buying-guide,0,0,0,0,Discovered - currently not indexed,Not indexed: preserve content and verify discovery/crawl at the next gate; do not rewrite for CTR.
+network,https://network.madabase.com/guides/network-rack-cooling-fans-buying-guide,0,0,0,0,Discovered - currently not indexed,Not indexed: preserve content and verify discovery/crawl at the next gate; do not rewrite for CTR.
+network,https://network.madabase.com/guides/network-rack-shelves-buying-guide,0,0,0,0,Discovered - currently not indexed,Not indexed: preserve content and verify discovery/crawl at the next gate; do not rewrite for CTR.
+network,https://network.madabase.com/guides/preterminated-fiber-runs-buying-guide,0,0,0,0,Discovered - currently not indexed,Not indexed: preserve content and verify discovery/crawl at the next gate; do not rewrite for CTR.
+network,https://network.madabase.com/guides/rack-blanking-panels-buying-guide,0,0,0,0,Discovered - currently not indexed,Not indexed: preserve content and verify discovery/crawl at the next gate; do not rewrite for CTR.
+network,https://network.madabase.com/guides/rackmount-network-ups-buying-guide,0,0,0,0,Discovered - currently not indexed,Not indexed: preserve content and verify discovery/crawl at the next gate; do not rewrite for CTR.
+network,https://network.madabase.com/guides/serial-device-servers-buying-guide,0,0,0,0,Discovered - currently not indexed,Not indexed: preserve content and verify discovery/crawl at the next gate; do not rewrite for CTR.
+network,https://network.madabase.com/guides/sfp28-network-switches-buying-guide,0,0,0,0,Discovered - currently not indexed,Not indexed: preserve content and verify discovery/crawl at the next gate; do not rewrite for CTR.
+network,https://network.madabase.com/guides/sfp28-transceivers-buying-guide,0,0,0,0,Discovered - currently not indexed,Not indexed: preserve content and verify discovery/crawl at the next gate; do not rewrite for CTR.
+network,https://network.madabase.com/guides/wall-plate-access-points-buying-guide,0,0,0,0,Discovered - currently not indexed,Not indexed: preserve content and verify discovery/crawl at the next gate; do not rewrite for CTR.
+network,https://network.madabase.com/guides/waterproof-rj45-couplers-buying-guide,0,0,0,0,Discovered - currently not indexed,Not indexed: preserve content and verify discovery/crawl at the next gate; do not rewrite for CTR.
+network,https://network.madabase.com/guides/optical-time-domain-reflectometers-buying-guide,0,0,0,0,Discovered - currently not indexed,Not indexed: preserve content and verify discovery/crawl at the next gate; do not rewrite for CTR.
+smarthome,https://smarthome.madabase.com/guides/smart-aroma-diffusers-buying-guide,0,0,0,0,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+smarthome,https://smarthome.madabase.com/guides/smart-bathroom-exhaust-fans-buying-guide,0,0,0,0,Duplicate without user-selected canonical,Self-canonical is present in live HTML; recheck Google-selected canonical after quota renewal before any code change.
+smarthome,https://smarthome.madabase.com/guides/smart-countertop-composters-buying-guide,0,0,0,0,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+smarthome,https://smarthome.madabase.com/guides/smart-floor-lamps-buying-guide,0,0,1,0,not-required-has-impressions,Protect observed query signal; do not rewrite before a query-level gate.
+smarthome,https://smarthome.madabase.com/guides/smart-floor-vents-buying-guide,0,0,0,0,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+smarthome,https://smarthome.madabase.com/guides/smart-indoor-gardens-buying-guide,0,0,0,0,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+smarthome,https://smarthome.madabase.com/guides/smart-ir-rf-remotes-buying-guide,0,0,0,0,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+smarthome,https://smarthome.madabase.com/guides/smart-landscape-spotlights-buying-guide,0,0,0,0,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+smarthome,https://smarthome.madabase.com/guides/smart-lever-locks-buying-guide,0,0,0,0,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+smarthome,https://smarthome.madabase.com/guides/smart-pathway-lights-buying-guide,0,0,0,0,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+smarthome,https://smarthome.madabase.com/guides/smart-peephole-cameras-buying-guide,0,0,0,0,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+smarthome,https://smarthome.madabase.com/guides/smart-pool-thermometers-buying-guide,0,0,0,0,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+smarthome,https://smarthome.madabase.com/guides/smart-radiator-valves-buying-guide,0,0,0,0,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+smarthome,https://smarthome.madabase.com/guides/smart-recessed-lights-buying-guide,0,0,0,0,Discovered - currently not indexed,Not indexed: preserve content and verify discovery/crawl at the next gate; do not rewrite for CTR.
+smarthome,https://smarthome.madabase.com/guides/smart-sous-vide-cookers-buying-guide,0,0,0,0,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+smarthome,https://smarthome.madabase.com/guides/smart-space-heaters-buying-guide,0,0,0,0,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+smarthome,https://smarthome.madabase.com/guides/smart-sump-pump-monitors-buying-guide,0,0,0,0,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+smarthome,https://smarthome.madabase.com/guides/smart-table-lamps-buying-guide,0,0,0,0,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+smarthome,https://smarthome.madabase.com/guides/smart-under-cabinet-lights-buying-guide,0,0,0,0,Discovered - currently not indexed,Not indexed: preserve content and verify discovery/crawl at the next gate; do not rewrite for CTR.
+smarthome,https://smarthome.madabase.com/guides/smart-wall-control-panels-buying-guide,0,0,0,0,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+smarthome,https://smarthome.madabase.com/guides/smart-coffee-makers-buying-guide,0,0,0,0,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+smarthome,https://smarthome.madabase.com/guides/smart-glass-break-sensors-buying-guide,0,0,0,0,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+smarthome,https://smarthome.madabase.com/guides/smart-propane-tank-monitors-buying-guide,0,0,0,0,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+smarthome,https://smarthome.madabase.com/guides/smart-slow-cookers-buying-guide,0,0,0,0,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+smarthome,https://smarthome.madabase.com/guides/smart-vibration-sensors-buying-guide,0,0,0,0,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+homeoffice,https://homeoffice.madabase.com/guides/acoustic-desk-dividers-buying-guide,0,0,2,0,not-required-has-impressions,Protect observed query signal; do not rewrite before a query-level gate.
+homeoffice,https://homeoffice.madabase.com/guides/active-sitting-stools-buying-guide,0,0,0,1,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+homeoffice,https://homeoffice.madabase.com/guides/compact-color-inkjet-printers-buying-guide,0,0,0,0,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+homeoffice,https://homeoffice.madabase.com/guides/conference-speakerphones-buying-guide,0,0,0,0,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+homeoffice,https://homeoffice.madabase.com/guides/desk-cable-grommets-buying-guide,0,0,0,10,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+homeoffice,https://homeoffice.madabase.com/guides/desk-cable-sleeves-buying-guide,0,0,1,0,not-required-has-impressions,Protect observed query signal; do not rewrite before a query-level gate.
+homeoffice,https://homeoffice.madabase.com/guides/desk-pegboard-organizers-buying-guide,0,0,2,0,not-required-has-impressions,Protect observed query signal; do not rewrite before a query-level gate.
+homeoffice,https://homeoffice.madabase.com/guides/desktop-computer-speakers-buying-guide,0,0,0,1,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+homeoffice,https://homeoffice.madabase.com/guides/desktop-file-organizers-buying-guide,0,0,1,5,not-required-has-impressions,Protect observed query signal; do not rewrite before a query-level gate.
+homeoffice,https://homeoffice.madabase.com/guides/desktop-ring-lights-buying-guide,0,0,0,1,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+homeoffice,https://homeoffice.madabase.com/guides/desktop-shelf-systems-buying-guide,0,0,0,1,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+homeoffice,https://homeoffice.madabase.com/guides/floor-cable-covers-buying-guide,0,0,1,0,not-required-has-impressions,Protect observed query signal; do not rewrite before a query-level gate.
+homeoffice,https://homeoffice.madabase.com/guides/four-k-webcams-buying-guide,0,0,1,0,not-required-has-impressions,Protect observed query signal; do not rewrite before a query-level gate.
+homeoffice,https://homeoffice.madabase.com/guides/ink-tank-printers-buying-guide,0,0,10,5,not-required-has-impressions,Protect observed query signal; do not rewrite before a query-level gate.
+homeoffice,https://homeoffice.madabase.com/guides/keyboard-wrist-rests-buying-guide,0,0,0,2,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+homeoffice,https://homeoffice.madabase.com/guides/laptop-cooling-pads-buying-guide,0,0,1,0,not-required-has-impressions,Protect observed query signal; do not rewrite before a query-level gate.
+homeoffice,https://homeoffice.madabase.com/guides/laptop-privacy-screens-buying-guide,0,0,0,0,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+homeoffice,https://homeoffice.madabase.com/guides/monitor-light-bars-buying-guide,0,0,0,3,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+homeoffice,https://homeoffice.madabase.com/guides/monitor-privacy-screens-buying-guide,0,0,0,0,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+homeoffice,https://homeoffice.madabase.com/guides/mouse-wrist-rests-buying-guide,0,0,0,1,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+homeoffice,https://homeoffice.madabase.com/guides/office-lumbar-cushions-buying-guide,0,0,0,0,Duplicate without user-selected canonical,Self-canonical is present in live HTML; recheck Google-selected canonical after quota renewal before any code change.
+homeoffice,https://homeoffice.madabase.com/guides/office-printer-stands-buying-guide,0,0,0,0,Duplicate without user-selected canonical,Self-canonical is present in live HTML; recheck Google-selected canonical after quota renewal before any code change.
+homeoffice,https://homeoffice.madabase.com/guides/office-saddle-stools-buying-guide,0,0,0,0,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+homeoffice,https://homeoffice.madabase.com/guides/office-seat-cushions-buying-guide,0,0,0,0,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+homeoffice,https://homeoffice.madabase.com/guides/overhead-book-scanners-buying-guide,0,0,1,0,not-required-has-impressions,Protect observed query signal; do not rewrite before a query-level gate.
+homeoffice,https://homeoffice.madabase.com/guides/portable-photo-printers-buying-guide,0,0,1,0,not-required-has-impressions,Protect observed query signal; do not rewrite before a query-level gate.
+homeoffice,https://homeoffice.madabase.com/guides/ptz-conference-cameras-buying-guide,0,0,0,1,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+homeoffice,https://homeoffice.madabase.com/guides/receipt-scanners-buying-guide,0,0,0,3,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+homeoffice,https://homeoffice.madabase.com/guides/rolling-file-cabinets-buying-guide,0,0,1,3,not-required-has-impressions,Protect observed query signal; do not rewrite before a query-level gate.
+homeoffice,https://homeoffice.madabase.com/guides/under-desk-foot-hammocks-buying-guide,0,0,2,1,not-required-has-impressions,Protect observed query signal; do not rewrite before a query-level gate.
+homeoffice,https://homeoffice.madabase.com/guides/under-desk-pedal-exercisers-buying-guide,0,0,0,1,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+homeoffice,https://homeoffice.madabase.com/guides/vesa-monitor-adapters-buying-guide,0,0,0,6,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+homeoffice,https://homeoffice.madabase.com/guides/webcam-key-lights-buying-guide,0,0,0,1,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+baby,https://baby.madabase.com/guides/baby-bath-thermometers-buying-guide,0,0,0,2,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+baby,https://baby.madabase.com/guides/baby-wipe-dispensers-buying-guide,0,0,3,0,not-required-has-impressions,Protect observed query signal; do not rewrite before a query-level gate.
+baby,https://baby.madabase.com/guides/bath-toy-organizers-buying-guide,0,0,0,0,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+baby,https://baby.madabase.com/guides/bathtub-spout-covers-buying-guide,0,0,0,0,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+baby,https://baby.madabase.com/guides/breast-milk-storage-bags-buying-guide,0,0,0,0,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+baby,https://baby.madabase.com/guides/childproof-corner-guards-buying-guide,0,0,0,0,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+baby,https://baby.madabase.com/guides/childproof-door-knob-covers-buying-guide,0,0,0,0,Duplicate without user-selected canonical,Self-canonical is present in live HTML; recheck Google-selected canonical after quota renewal before any code change.
+baby,https://baby.madabase.com/guides/childproof-outlet-covers-buying-guide,0,0,0,0,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+baby,https://baby.madabase.com/guides/childproof-refrigerator-locks-buying-guide,0,0,3,3,not-required-has-impressions,Protect observed query signal; do not rewrite before a query-level gate.
+baby,https://baby.madabase.com/guides/childproof-stove-knob-covers-buying-guide,0,0,0,0,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+baby,https://baby.madabase.com/guides/childproof-toilet-locks-buying-guide,0,0,3,2,not-required-has-impressions,Protect observed query signal; do not rewrite before a query-level gate.
+baby,https://baby.madabase.com/guides/crib-mobiles-buying-guide,0,0,0,8,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+baby,https://baby.madabase.com/guides/formula-mixing-pitchers-buying-guide,0,0,2,0,not-required-has-impressions,Protect observed query signal; do not rewrite before a query-level gate.
+baby,https://baby.madabase.com/guides/furniture-anchor-kits-buying-guide,0,0,2,0,not-required-has-impressions,Protect observed query signal; do not rewrite before a query-level gate.
+baby,https://baby.madabase.com/guides/high-chair-floor-mats-buying-guide,0,0,0,0,Discovered - currently not indexed,Not indexed: preserve content and verify discovery/crawl at the next gate; do not rewrite for CTR.
+baby,https://baby.madabase.com/guides/nursery-blackout-curtains-buying-guide,0,0,0,1,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+baby,https://baby.madabase.com/guides/nursing-covers-buying-guide,0,0,0,0,Discovered - currently not indexed,Not indexed: preserve content and verify discovery/crawl at the next gate; do not rewrite for CTR.
+baby,https://baby.madabase.com/guides/nursing-pillows-buying-guide,0,0,0,0,Discovered - currently not indexed,Not indexed: preserve content and verify discovery/crawl at the next gate; do not rewrite for CTR.
+baby,https://baby.madabase.com/guides/portable-changing-mats-buying-guide,0,0,0,1,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+baby,https://baby.madabase.com/guides/potty-training-seats-buying-guide,0,0,1,0,not-required-has-impressions,Protect observed query signal; do not rewrite before a query-level gate.
+baby,https://baby.madabase.com/guides/powder-formula-dispensers-buying-guide,0,0,1,0,not-required-has-impressions,Protect observed query signal; do not rewrite before a query-level gate.
+baby,https://baby.madabase.com/guides/reusable-baby-food-pouches-buying-guide,0,0,0,0,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+baby,https://baby.madabase.com/guides/silicone-feeding-placemats-buying-guide,0,0,0,0,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+baby,https://baby.madabase.com/guides/stroller-cup-holders-buying-guide,0,0,0,0,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+baby,https://baby.madabase.com/guides/stroller-footmuffs-buying-guide,0,0,0,0,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+baby,https://baby.madabase.com/guides/stroller-rain-covers-buying-guide,0,0,0,2,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+baby,https://baby.madabase.com/guides/suction-toddler-bowls-buying-guide,0,0,0,0,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+baby,https://baby.madabase.com/guides/toddler-snack-containers-buying-guide,0,0,0,0,Duplicate without user-selected canonical,Self-canonical is present in live HTML; recheck Google-selected canonical after quota renewal before any code change.
+baby,https://baby.madabase.com/guides/toddler-step-stools-buying-guide,0,0,3,0,not-required-has-impressions,Protect observed query signal; do not rewrite before a query-level gate.
+baby,https://baby.madabase.com/guides/toddler-straw-cups-buying-guide,0,0,0,0,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+baby,https://baby.madabase.com/guides/toddler-training-utensils-buying-guide,0,0,0,0,indexed,Indexed but no impressions: hold title; review demand and query overlap at the next gate.
+pet,https://pets.madabase.com/guides/dog-backpacks-buying-guide,0,0,0,0,Discovered - currently not indexed,Not indexed: preserve content and verify discovery/crawl at the next gate; do not rewrite for CTR.
+pet,https://pets.madabase.com/guides/dog-bicycle-baskets-buying-guide,0,0,0,0,Discovered - currently not indexed,Not indexed: preserve content and verify discovery/crawl at the next gate; do not rewrite for CTR.
+pet,https://pets.madabase.com/guides/dog-bike-trailers-buying-guide,0,0,0,0,Discovered - currently not indexed,Not indexed: preserve content and verify discovery/crawl at the next gate; do not rewrite for CTR.
+pet,https://pets.madabase.com/guides/hands-free-dog-leashes-buying-guide,0,0,0,0,Discovered - currently not indexed,Not indexed: preserve content and verify discovery/crawl at the next gate; do not rewrite for CTR.
+pet,https://pets.madabase.com/guides/pet-stairs-buying-guide,0,0,0,0,Discovered - currently not indexed,Not indexed: preserve content and verify discovery/crawl at the next gate; do not rewrite for CTR.
+pet,https://pets.madabase.com/guides/reflective-dog-harnesses-buying-guide,0,0,0,0,Discovered - currently not indexed,Not indexed: preserve content and verify discovery/crawl at the next gate; do not rewrite for CTR.
+pet,https://pets.madabase.com/guides/cat-litter-disposal-systems-buying-guide,0,0,0,0,blocked-daily-quota,Retry live URL Inspection after the property quota renews; do not rewrite without index evidence.
+pet,https://pets.madabase.com/guides/ceramic-pet-fountains-buying-guide,0,0,0,0,blocked-daily-quota,Retry live URL Inspection after the property quota renews; do not rewrite without index evidence.
+pet,https://pets.madabase.com/guides/collapsible-travel-pet-bowls-buying-guide,0,0,0,0,blocked-daily-quota,Retry live URL Inspection after the property quota renews; do not rewrite without index evidence.
+pet,https://pets.madabase.com/guides/covered-self-cleaning-litter-boxes-buying-guide,0,0,0,0,blocked-daily-quota,Retry live URL Inspection after the property quota renews; do not rewrite without index evidence.
+pet,https://pets.madabase.com/guides/dog-boots-buying-guide,0,0,0,0,blocked-daily-quota,Retry live URL Inspection after the property quota renews; do not rewrite without index evidence.
+pet,https://pets.madabase.com/guides/dog-cooling-bandanas-buying-guide,0,0,0,0,blocked-daily-quota,Retry live URL Inspection after the property quota renews; do not rewrite without index evidence.
+pet,https://pets.madabase.com/guides/dog-paw-washers-buying-guide,0,0,0,0,blocked-daily-quota,Retry live URL Inspection after the property quota renews; do not rewrite without index evidence.
+pet,https://pets.madabase.com/guides/dog-raincoats-buying-guide,0,0,0,0,blocked-daily-quota,Retry live URL Inspection after the property quota renews; do not rewrite without index evidence.
+pet,https://pets.madabase.com/guides/elevated-dog-bowls-buying-guide,0,0,0,0,blocked-daily-quota,Retry live URL Inspection after the property quota renews; do not rewrite without index evidence.
+pet,https://pets.madabase.com/guides/gravity-pet-waterers-buying-guide,0,0,0,0,blocked-daily-quota,Retry live URL Inspection after the property quota renews; do not rewrite without index evidence.
+pet,https://pets.madabase.com/guides/no-pull-dog-harnesses-buying-guide,0,0,0,0,blocked-daily-quota,Retry live URL Inspection after the property quota renews; do not rewrite without index evidence.
+pet,https://pets.madabase.com/guides/stainless-steel-pet-fountains-buying-guide,0,0,0,0,blocked-daily-quota,Retry live URL Inspection after the property quota renews; do not rewrite without index evidence.
+pet,https://pets.madabase.com/guides/cat-litter-enclosures-buying-guide,0,0,0,0,blocked-daily-quota,Retry live URL Inspection after the property quota renews; do not rewrite without index evidence.
+pet,https://pets.madabase.com/guides/cat-window-perches-buying-guide,0,0,0,0,blocked-daily-quota,Retry live URL Inspection after the property quota renews; do not rewrite without index evidence.
+pet,https://pets.madabase.com/guides/cat-wall-shelves-buying-guide,0,0,0,0,blocked-daily-quota,Retry live URL Inspection after the property quota renews; do not rewrite without index evidence.
+pet,https://pets.madabase.com/guides/cat-exercise-wheels-buying-guide,0,0,0,0,blocked-daily-quota,Retry live URL Inspection after the property quota renews; do not rewrite without index evidence.
+pet,https://pets.madabase.com/guides/cat-play-tunnels-buying-guide,0,0,0,0,blocked-daily-quota,Retry live URL Inspection after the property quota renews; do not rewrite without index evidence.
+pet,https://pets.madabase.com/guides/pet-monitoring-cameras-buying-guide,0,0,0,0,blocked-daily-quota,Retry live URL Inspection after the property quota renews; do not rewrite without index evidence.
+pet,https://pets.madabase.com/guides/wireless-dog-doorbells-buying-guide,0,0,0,0,blocked-daily-quota,Retry live URL Inspection after the property quota renews; do not rewrite without index evidence.
+pet,https://pets.madabase.com/guides/pet-food-storage-containers-buying-guide,0,0,0,0,blocked-daily-quota,Retry live URL Inspection after the property quota renews; do not rewrite without index evidence.
+pet,https://pets.madabase.com/guides/hard-sided-pet-carriers-buying-guide,0,0,0,0,blocked-daily-quota,Retry live URL Inspection after the property quota renews; do not rewrite without index evidence.
+pet,https://pets.madabase.com/guides/quick-dry-dog-towels-buying-guide,0,0,0,0,blocked-daily-quota,Retry live URL Inspection after the property quota renews; do not rewrite without index evidence.
+pet,https://pets.madabase.com/guides/aquarium-canister-filters-buying-guide,0,0,0,0,blocked-daily-quota,Retry live URL Inspection after the property quota renews; do not rewrite without index evidence.
+pet,https://pets.madabase.com/guides/aquarium-air-pumps-buying-guide,0,0,0,0,blocked-daily-quota,Retry live URL Inspection after the property quota renews; do not rewrite without index evidence.
+pet,https://pets.madabase.com/guides/aquarium-heaters-buying-guide,0,0,0,0,blocked-daily-quota,Retry live URL Inspection after the property quota renews; do not rewrite without index evidence.
+pet,https://pets.madabase.com/guides/reptile-thermostat-controllers-buying-guide,0,0,0,0,blocked-daily-quota,Retry live URL Inspection after the property quota renews; do not rewrite without index evidence.
+pet,https://pets.madabase.com/guides/airline-dog-crates-buying-guide,0,0,0,0,blocked-daily-quota,Retry live URL Inspection after the property quota renews; do not rewrite without index evidence.
+pet,https://pets.madabase.com/guides/cat-grooming-gloves-buying-guide,0,0,0,0,blocked-daily-quota,Retry live URL Inspection after the property quota renews; do not rewrite without index evidence.
+pet,https://pets.madabase.com/guides/aquarium-led-lights-buying-guide,0,0,0,0,blocked-daily-quota,Retry live URL Inspection after the property quota renews; do not rewrite without index evidence.
+pet,https://pets.madabase.com/guides/portable-dog-water-bottles-buying-guide,0,0,0,0,blocked-daily-quota,Retry live URL Inspection after the property quota renews; do not rewrite without index evidence.
+pet,https://pets.madabase.com/guides/dog-bath-sprayers-buying-guide,0,0,0,0,blocked-daily-quota,Retry live URL Inspection after the property quota renews; do not rewrite without index evidence.

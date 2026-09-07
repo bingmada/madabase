@@ -1,7 +1,7 @@
 {
   "version": 1,
   "createdAt": "2026-08-31T10:26:44+08:00",
-  "status": "production_deployed_publicly_validated_indexnow_accepted",
+  "status": "day7_positive_exposure_zero_clicks_hold_through_day14",
   "type": "single_existing_page_snippet_experiment",
   "site": "homeoffice",
   "url": "https://homeoffice.madabase.com/best/ergear-48x24-vs-flexispot-e7-mini",
@@ -57,11 +57,30 @@
     ]
   },
   "measurement": {
-    "mutationHoldUntil": "2026-09-07",
+    "mutationHoldUntil": "2026-09-14",
     "day7": "Review direction no earlier than September 7 using only a Search Console window that materially contains post-release data. Do not declare failure from reporting lag or fewer than 50 post-release page impressions.",
     "day14": "At or after September 14, keep the change if it earns a click, raises CTR to at least 1%, or preserves top-10 position while impressions expand. With at least 100 post-release impressions, zero clicks and a still-top-12 position permit one new snippet test; otherwise keep observing.",
     "day30": "At or after September 30, compare the exact page and query cohort. Do not merge, redirect or retire the page solely for zero clicks; use a second snippet test only if at least 200 post-release impressions remain clickless and the intent is still exact.",
     "protectRule": "Stop rewriting immediately if the page gains clicks. Preserve the title and intent if any exact query moves materially upward; fix only confirmed technical, indexing, merchant, tracking or rendering defects during the hold."
+  },
+  "day7Result": {
+    "checkedAt": "2026-09-07T10:30:00+08:00",
+    "current": {
+      "clicks": 0,
+      "impressions": 77,
+      "averagePosition": 8.5
+    },
+    "previous": {
+      "clicks": 0,
+      "impressions": 38,
+      "averagePosition": 8.2
+    },
+    "queries": [
+      { "query": "flexispot e7 mini", "currentImpressions": 35, "previousImpressions": 13 },
+      { "query": "ergear vs flexispot", "currentImpressions": 5, "previousImpressions": 6 },
+      { "query": "flexispot vs ergear", "currentImpressions": 4, "previousImpressions": 1 }
+    ],
+    "decision": "Protect unchanged through September 14. Exposure more than doubled while page-one position held; the mixed pre/post window and zero clicks do not yet justify resetting the snippet."
   },
   "release": {
     "commit": "7a30568",
