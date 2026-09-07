@@ -181,12 +181,20 @@ for (const [label, values] of [
 
 async function fetchRuntime(pathname, host) {
   if (publicAudit) {
-    const response = await fetch(`https://${host}${pathname}`, {
-      headers: { "user-agent": "Madabase indexed-zero recovery auditor/1.0" },
-      redirect: "follow",
-      signal: AbortSignal.timeout(30_000),
-    });
-    return { status: response.status, body: await response.text() };
+    let lastError;
+    for (let attempt = 1; attempt <= 2; attempt += 1) {
+      try {
+        const response = await fetch(`https://${host}${pathname}`, {
+          headers: { "user-agent": "Madabase indexed-zero recovery auditor/1.0" },
+          redirect: "follow",
+          signal: AbortSignal.timeout(60_000),
+        });
+        return { status: response.status, body: await response.text() };
+      } catch (error) {
+        lastError = error;
+      }
+    }
+    throw new Error(`${host}${pathname} failed twice: ${lastError?.message ?? "unknown error"}`);
   }
   const origin = new URL(runtimeOrigin);
   return new Promise((resolve, reject) => {
@@ -210,7 +218,7 @@ async function fetchRuntime(pathname, host) {
 let runtimeChecked = 0;
 let sitemapChecked = 0;
 if (runtimeOrigin || publicAudit) {
-  for (const target of targets) {
+  async function auditTarget(target) {
     const response = await fetchRuntime(`/guides/${target.slug}`, hosts[target.site]);
     if (response.status !== 200) errors.push(`${target.site}:${target.slug} runtime returned ${response.status}`);
     if (!response.body.includes(`<link rel="canonical" href="${target.url}"`)) errors.push(`${target.site}:${target.slug} canonical changed`);
@@ -218,6 +226,20 @@ if (runtimeOrigin || publicAudit) {
     if (!response.body.includes("September 7, 2026")) errors.push(`${target.site}:${target.slug} refresh date is missing`);
     if (/name="robots" content="[^"]*noindex/i.test(response.body)) errors.push(`${target.site}:${target.slug} unexpectedly renders noindex`);
     runtimeChecked += 1;
+  }
+
+  if (publicAudit) {
+    let nextTarget = 0;
+    async function worker() {
+      while (nextTarget < targets.length) {
+        const target = targets[nextTarget];
+        nextTarget += 1;
+        await auditTarget(target);
+      }
+    }
+    await Promise.all(Array.from({ length: 3 }, () => worker()));
+  } else {
+    for (const target of targets) await auditTarget(target);
   }
 
   for (const site of Object.keys(expectedSiteCounts)) {

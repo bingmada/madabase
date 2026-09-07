@@ -1,14 +1,15 @@
 {
-  "updatedAt": "2026-09-07T11:04:00+08:00",
+  "updatedAt": "2026-09-07T15:42:00+08:00",
   "purpose": "Tracked cross-conversation snapshot. Read this before every affiliate operation, then read docs/affiliate-growth-state.json and docs/affiliate-growth-runbook.md for the mutable history and operating rules.",
   "crossConversationResume": {
-    "asOf": "2026-09-07T11:04:00+08:00",
-    "status": "september_07_daily_review_complete_soft151_partial_quota_ergear_day7_hold",
+    "asOf": "2026-09-07T15:42:00+08:00",
+    "status": "september_07_indexed_zero_40_deployed_public_verified_indexnow_accepted",
     "readOrder": [
       "apps/affiliate/config/current-operations-handoff.json",
       "docs/affiliate-growth-state.json",
       "docs/affiliate-growth-runbook.md",
       "apps/affiliate/reports/daily-operations-2026-09-07.md",
+      "apps/affiliate/config/indexed-zero-recovery-cohort-2026-09-07.json",
       "apps/affiliate/reports/soft151-search-gate-2026-09-07.json",
       "apps/affiliate/config/comparison-first-cohort-2026-09-04.json",
       "apps/affiliate/reports/daily-operations-2026-09-04.md",
@@ -25,27 +26,28 @@
       "apps/affiliate/config/next-product-expansion-100-pilot-01.json",
       "apps/affiliate/config/next-product-expansion-100-readiness.json"
     ],
-    "oneSentenceState": "Release 86e08e6 remains live and healthy; the latest 24 hours improved to 2 clicks and 225 impressions, ErGear/FlexiSpot more than doubled seven-day exposure at a stable page-one position, Soft151 fell to 43 impressions and exposed a Network/Pets indexing bottleneck, and the exact 36-page September 4 cohort remains protected through September 11.",
+    "oneSentenceState": "Release 9f61bb2 is live and healthy with exactly 40 indexed, double-zero-impression existing guides upgraded and accepted by IndexNow; the September 4 cohort, ErGear/FlexiSpot winner and every previously exposed or unindexed Soft151 page remain protected.",
     "production": {
-      "activeRelease": "86e08e6",
-      "sourceCommit": "86e08e6",
-      "path": "/srv/madabase-affiliate/releases/86e08e6",
-      "rollback": "7a30568",
+      "activeRelease": "9f61bb2",
+      "sourceCommit": "9f61bb2917fa4722bdb6aed943550a0a41b0c92e",
+      "path": "/srv/madabase-affiliate/releases/9f61bb2",
+      "rollback": "86e08e6",
       "service": "madabase-affiliate.service",
       "port": 3011,
       "status": "active_zero_restarts_public_verified",
-      "securityCleanup": "Deployment used the owner-authorized September 4 Aliyun Workbench session and extracted the pushed 86e08e6 Git object without fast-forwarding or cleaning the dirty fixed checkout. The prior systemd unit is backed up as madabase-affiliate.service.before-86e08e6, release 7a30568 remains intact for immediate rollback, candidate port 3111 is closed, production has zero restarts and no error-log entries, and no unrelated server work was modified."
+      "securityCleanup": "Deployment used the owner-authorized Aliyun Workbench session and extracted the exact pushed 9f61bb2 Git artifact without fast-forwarding or cleaning the dirty fixed checkout. The archive SHA-256 matched 4ff347efd255477319a6f32d933e87b01b137df47cf2873a9f7068d35d0a87dd, the prior unit is backed up as madabase-affiliate.service.before-9f61bb2, release 86e08e6 remains intact for immediate rollback, candidate port 3111 is closed, production has zero restarts and no error-log entries, and no unrelated server work was modified."
     },
     "searchAndIndexing": {
       "latest24Hours": "Rolling September 6-7 versus the preceding 24 hours: 2 versus 0 clicks, 225 versus 182 impressions, 0.9% versus 0% CTR and position 14.3 versus 17.1. Page detail is Network 7 versus 7, Smarthome 3 versus 4, Homeoffice 135 versus 97, Baby 84 versus 75 and Pets 5 versus 4; Style and Costumes have no current impressions. This is a 23.6% exposure increase, not a same-day cliff. Directional only.",
       "latestComplete7Days": "The latest seven-day comparison read September 7 is 4 versus 8 clicks, 1,539 versus 1,689 impressions, 0.3% versus 0.5% CTR and position 28.3 versus 35.7. Network is 49 versus 68 impressions, Smarthome 26 versus 16, Homeoffice 963 versus 1,070, Baby 535 versus 557, Pets 16 versus 3, Style 1 versus 0 and Costumes 3 versus 2.",
-      "interpretation": "The portfolio is not in a fresh broad collapse: seven-day impressions are down 8.9% while average position improves 7.4 positions, and the latest 24 hours improves on all four headline metrics. Homeoffice still carries most demand and CTR is the nearest bottleneck. Soft151 proves a split diagnosis: Network and checked Pets zero-impression pages are mostly not indexed, while most zero-impression Smarthome, Homeoffice and Baby pages are indexed. Do not apply one mass title rewrite to both states.",
+      "interpretation": "The portfolio is not in a fresh broad collapse: seven-day impressions are down 8.9% while average position improves 7.4 positions, and the latest 24 hours improves on all four headline metrics. Homeoffice still carries most demand and CTR is the nearest bottleneck. Soft151 proves a split diagnosis: Network and checked Pets zero-impression pages are mostly not indexed, while many zero-impression Smarthome, Homeoffice and Baby pages are indexed. The exact indexed double-zero group has now received a bounded decision-led rewrite; do not extend that treatment to unindexed, previously exposed, duplicate-status, quota-blocked or protected pages.",
       "gscPageIndexing": "Report last updated August 21: 1,586 indexed and 4,267 not indexed, including 3,514 intentional noindex routes, 364 404s, 103 redirects, 40 crawled-currently-not-indexed, 136 discovered-currently-not-indexed, 33 duplicate-without-user-canonical and two historical 5xx examples.",
-      "gscActions": "All submitted affiliate sitemaps remain Success with exact discovered-page counts: Network 245, Smarthome 258, Homeoffice 275, Baby 264, Pets 234, Style 76 and Costumes 121. No sitemap or IndexNow replay was made. The two historical 5xx examples remain in Started validation. Manual actions and security issues report no issues; removals has no requests submitted in six months. No bulk Request indexing was attempted.",
-      "indexNow": "The August 23 48-URL, August 27 43-URL and August 31 one-URL releases remain historical and were not replayed. On September 4, IndexNow accepted exactly 36 changed existing canonicals with HTTP 200: Network 8, Smarthome 8, Homeoffice 8, Baby 5 and Pets 7. Unchanged pages, redirects, sitemaps and product pilots were excluded.",
+      "gscActions": "All submitted affiliate sitemaps remain Success with exact discovered-page counts: Network 245, Smarthome 258, Homeoffice 275, Baby 264, Pets 234, Style 76 and Costumes 121. No sitemap resubmission or bulk Search Console Request indexing was made. The two historical 5xx examples remain in Started validation; manual actions and security issues report no issues; removals has no requests submitted in six months.",
+      "indexNow": "The August 23 48-URL, August 27 43-URL, August 31 one-URL and September 4 36-URL releases remain historical and were not replayed. On September 7, IndexNow accepted exactly 40 changed existing canonicals with HTTP 200: Smarthome 21, Homeoffice 6 and Baby 13. Unchanged pages, redirects, homepages, categories, sitemaps, prior cohorts and product pilots were excluded.",
       "deepRankRecovery": "The exact complete-data gate selected 43 previously untouched guides with zero clicks, at least two impressions and average position greater than 40 after excluding controlled or protected pages. Titles, H1s, URLs, canonicals and search questions are unchanged; each target now has a unique stronger direct answer, one unique role-specific decision section and August 27 lastmod. Public runtime and sitemap validation passed 43 of 43.",
       "ergearCtrExperiment": "The September 7 Day-7 gate is positive on exposure but not yet conclusive on CTR: 77 versus 38 impressions, zero clicks in both periods, and position 8.5 versus 8.2. The leading query flexispot e7 mini rose to 35 from 13 impressions; ergear vs flexispot is 5 versus 6 and flexispot vs ergear is 4 versus 1. Public HTTP, self-canonical and 2026-08-31 dateModified remain correct. Protect unchanged through the meaningful September 14 Day-14 gate.",
       "comparisonFirstCohort": "Exactly 36 existing canonical guides were refreshed on September 4 around concrete A-versus-B decisions: Network 8, Smarthome 8, Homeoffice 8, Baby 5 and Pets 7. There are zero new routes and zero overlap with Deep43, Ranking118, Soft151, the ErGear/FlexiSpot hold URL or protected click-bearing winners. Each target has a unique title, direct answer, decision section, explicit comparison table and related internal links. Public validation passed 36 of 36 pages and 36 of 36 sitemap entries; hold unchanged through the September 11 Day-7 gate.",
+      "indexedZeroRecovery": "Exactly 40 existing Soft151 canonical guides were upgraded on September 7 after live inspection proved they were indexed and GSC proved zero impressions in both compared seven-day windows: Smarthome 21, Homeoffice 6 and Baby 13. Each keeps its route, site, product data, merchant path and full content while receiving a unique decision-led title/H1, direct primary-versus-alternative answer, four-row comparison table, first decision section and related links. There are zero new routes and zero overlap with comparison-first 36 or Deep43. Public validation passed 40 of 40 pages and 40 of 40 sitemap entries; hold through September 14, September 21 and October 7 gates.",
       "zeroInspection": "Soft151 Day-14 accounts for all 151 URLs: 21 exposed, 130 zero-impression, zero clicks and 43 impressions versus 24 exposed and 65 impressions previously. Live inspection produced 99 valid results before the daily property quota: 58 indexed, 34 discovered-currently-not-indexed, two unknown to Google and five duplicate-without-user-selected-canonical; 31 Pets URLs remain quota-blocked until September 8. All five duplicate-status pages currently emit correct self-canonicals. The two water-shutoff Smarthome rechecks remain discovered-currently-not-indexed despite current sitemap and crawlable-link evidence. No Request indexing was attempted."
     },
     "productExpansion": {
@@ -66,12 +68,13 @@
       "ledger": "apps/affiliate/config/next-product-expansion-100-pilot-01.json"
     },
     "nextOrderedActions": [
+      "Hold the exact September 7 indexed-zero 40 cohort unchanged through the September 14 Day-7 gate. Review exact-URL impressions, clicks, query breadth and position on September 14, September 21 and October 7; preserve any page gaining impressions, clicks, query breadth or a top-20 position and revisit only exact pages still unexposed or clearly mismatched.",
       "Hold the exact September 4 comparison-first 36 cohort unchanged through the September 11 Day-7 gate unless a confirmed technical, indexability, merchant, tracking or rendering defect appears. Review exact URL and comparison-query impressions, clicks, average position and query breadth on September 11, September 18 and October 4; at Day 14 preserve any page gaining exposure and inspect only zero-exposure or clear intent-mismatch pages.",
       "Hold the August 31 ErGear-versus-FlexiSpot single-page CTR experiment unchanged through the September 14 Day-14 gate. Its September 7 gate more than doubled exposure at a stable page-one position but still has zero clicks; do not reset the title from this mixed pre/post window or replay its accepted IndexNow canonical.",
       "On September 8 after the Search Console property quota renews, complete the exact 31 remaining Soft151 Pets inspections first and retrieve Google-selected canonical detail for the five duplicate-status pages. Preserve the five pages meanwhile because current public HTML already emits correct self-canonicals.",
       "Run the exact Expansion757 Day-30 gate on September 8. Use the result to decide whether the unindexed Network and Pets segments need consolidation, discovery prioritization or retirement; do not use a blind CTR/title rewrite to solve an indexing state.",
       "Keep new indexable publication frozen during post-rollout observation. Existing-page topic hierarchy and query-backed recovery are owner-authorized under search-recovery-control version 3; do not convert that authorization into new products, new cohorts or evidence-free mass title churn.",
-      "Treat release 86e08e6 as active production with 7a30568 retained for immediate rollback. Do not repeat IndexNow for the 36 accepted September 4 canonicals, the 43 accepted August 27 canonicals, the August 31 single URL or the prior 48-URL batch, and do not purge Cloudflare without a confirmed stale-response defect.",
+      "Treat release 9f61bb2 as active production with 86e08e6 retained for immediate rollback. Do not repeat IndexNow for the 40 accepted September 7 canonicals, the 36 accepted September 4 canonicals, the 43 accepted August 27 canonicals, the August 31 single URL or the prior 48-URL batch, and do not purge Cloudflare without a confirmed stale-response defect.",
       "Run the exact 43-URL deep-rank tactical gate on September 10 and the portfolio gate on September 24. Protect any page that gains clicks or reaches the top 20; revise only still-exposed deep pages rather than resetting the cohort.",
       "The overdue Soft151 Day-14 performance gate and both Smarthome detail rechecks are recorded. The exact zero-impression inspection sub-gate is 99 of 130 complete and quota-blocked for the remaining 31 Pets URLs until September 8; do not resubmit unchanged URLs merely because the scheduled date passed.",
       "The exact 486-URL inspection backlog is closed at 471 indexed and 15 not on Google. Do not restart broad inspection or bulk-request indexing; only execute explicitly due rechecks or investigate a new technical signal.",
@@ -82,11 +85,12 @@
     ],
     "hardBoundaries": [
       "The active recovery control in apps/affiliate/config/search-recovery-control.json is the publication authority. Version 3 allows recorded existing-page recovery but keeps every new indexable cohort frozen.",
+      "The September 7 indexed-zero exception is exactly the 40 existing URLs in apps/affiliate/config/indexed-zero-recovery-cohort-2026-09-07.json. It adds zero routes, excludes all previously exposed and non-indexed states, and must not be broadened, replayed through IndexNow or rewritten before September 14 without a confirmed defect.",
       "The September 4 comparison-first exception is exactly the 36 existing URLs in apps/affiliate/config/comparison-first-cohort-2026-09-04.json. It adds zero routes and must not be broadened, replayed through IndexNow or rewritten before September 11 without a confirmed defect.",
       "The August 31 CTR exception is exactly https://homeoffice.madabase.com/best/ergear-48x24-vs-flexispot-e7-mini. Its Day-7 exposure direction is positive; hold it unchanged through September 14 unless a confirmed technical, indexing, merchant, tracking or rendering defect appears, and do not batch nearby page-one pages into the release.",
       "The August 27 deep-rank exception is exactly the 43 URLs in apps/affiliate/config/deep-rank-recovery-2026-08-27.json. Do not add zero-impression, position-40-or-better, click-bearing, Ranking118, Soft151, August 23 individually refreshed or consolidation-family pages after release.",
       "Affiliate revenue is the server priority; build and run broad audits locally and use bounded production checks.",
-      "Soft151 Day-14 is now recorded from authenticated Search Console evidence. Do not broadly rewrite the cohort: complete its 31 quota-blocked Pets inspections, separate indexed-zero-demand pages from not-indexed pages, and act only on a confirmed technical, overlap or quality defect.",
+      "Soft151 Day-14 is recorded from authenticated Search Console evidence. The exact indexed double-zero 40 have received the bounded September 7 recovery; do not rewrite the remaining Soft151 pages as one group. Complete the 31 quota-blocked Pets inspections, preserve previously exposed and duplicate-status pages, and treat not-indexed pages as an indexing/consolidation question rather than a CTR rewrite.",
       "Do not add the five product-pilot URLs to sitemap, home/category discovery, IndexNow or Search Console before the recorded gate passes.",
       "Every commercial page must retain a truthful exact purchase path in the first viewport plus the responsive sticky purchase path.",
       "Preserve unrelated .DS_Store files, artifacts, packages and prisma paths. The modified apps/affiliate/.release/affiliate-runtime.tgz is the locally built deployed artifact, not an unrelated source edit."
@@ -217,23 +221,23 @@
     "discovery": "Release 6eec199 added all 151 qualified breadth pages to five sitemaps. Search Console accepted and immediately read all five as Success with the exact new counts. IndexNow accepted 153 exact URLs: 151 breadth pages plus the two Deco intent-repair pages."
   },
   "release": {
-    "active": "86e08e6",
-    "commit": "86e08e6",
-    "packageCommit": "86e08e6",
+    "active": "9f61bb2",
+    "commit": "9f61bb2917fa4722bdb6aed943550a0a41b0c92e",
+    "packageCommit": "9f61bb2917fa4722bdb6aed943550a0a41b0c92e",
     "branch": "lyd-0609",
     "pushed": true,
-    "artifactBytes": 60794437,
-    "artifactSha256": "72a4b7c8dde2ab289030ee2fb660b670a5c79865829f6efadf505e9ca2894a48",
+    "artifactBytes": 60839849,
+    "artifactSha256": "4ff347efd255477319a6f32d933e87b01b137df47cf2873a9f7068d35d0a87dd",
     "artifactLocalPath": "apps/affiliate/.release/affiliate-runtime.tgz",
-    "productionPath": "/srv/madabase-affiliate/releases/86e08e6",
-    "rollback": "7a30568",
+    "productionPath": "/srv/madabase-affiliate/releases/9f61bb2",
+    "rollback": "86e08e6",
     "sevenPublicAffiliateHostsHttp200": true,
     "serviceManager": "systemd",
     "service": "madabase-affiliate.service",
     "loopbackPort": 3011,
-    "indexNowAcceptedUrls": 36,
+    "indexNowAcceptedUrls": 40,
     "googleSitemapsSubmitted": 0,
-    "releaseNote": "The exact 60,794,437-byte Linux x64 archive was pushed to origin/lyd-0609 and activated as immutable release 86e08e6 under the non-root madabase user. The systemd service is active on loopback port 3011 with zero restarts; all seven public homepages, sitemaps and robots files returned HTTP 200 on September 7. Release 7a30568 remains available for immediate rollback."
+    "releaseNote": "The exact 60,839,849-byte Linux x64 archive was pushed to origin/lyd-0609 and activated as immutable release 9f61bb2 under the non-root madabase user. The systemd service is active on loopback port 3011 with zero restarts and no error-log entries; all seven origin hosts and the exact 40-page public cohort plus 40 sitemap entries passed. Candidate port 3111 is closed and release 86e08e6 remains available for immediate rollback."
   },
   "pendingMainRelease": {
     "status": "production_deployed_and_verified",
@@ -417,7 +421,7 @@
   "cloudflare": {
     "rule": "Cache public affiliate HTML",
     "ruleCorrect": true,
-    "currentReleasePublicHtml": "Release 86e08e6 remained publicly healthy on September 7: all seven affiliate homepages, sitemaps and robots files returned HTTP 200, and the ErGear experiment page returned its current title, self-canonical and 2026-08-31 dateModified. No stale-response defect was observed, so no purge was required.",
+    "currentReleasePublicHtml": "Release 9f61bb2 passed the exact 40-page public cohort audit on September 7 with intended titles/H1s, self-canonicals, indexable state and 2026-09-07 modification dates; all 40 sitemap entries also matched. No stale-response defect was observed, so no purge was required.",
     "purgeEverythingUsed": false,
     "testingRule": "Send an Accept header containing text/html; default curl Accept */* does not match the HTML rule."
   },
@@ -439,12 +443,12 @@
     "newPagesRuntime": "151_of_151_passed_and_in_sitemaps_after_2026_08_20_release",
     "existingRefreshRuntime": "118_of_118_passed",
     "distributionImages": "18_across_6_sites_passed",
-    "publicHosts": "release_86e08e6_all_seven_public_homepages_sitemaps_and_robots_http_200_on_2026_09_07",
+    "publicHosts": "release_9f61bb2_all_seven_origin_homepages_http_200_and_exact_indexed_zero_40_public_pages_plus_40_sitemap_entries_passed_on_2026_09_07",
     "productionTarget": "exact_B0931ZY7DK_madababy-20_first_viewport_and_self_canonical",
     "firstExpansionClickPage": "exact_B0H5X15MHS_madapets-20_first_viewport_and_self_canonical",
     "costumePilot": "first_viewport_CJ_self_canonical_structured_data_and_sitemap_passed",
     "productionCache": "exact Momcozy, Ergobaby review and Costume guide HTML returned HTTP_200 and Cloudflare_HIT with current conversion markers on 2026-08-18",
-    "productionProcess": "affiliate_release_86e08e6_systemd_port_3011_active_restart_0; immutable_rollback_7a30568_retained",
+    "productionProcess": "affiliate_release_9f61bb2_systemd_port_3011_active_restart_0_no_error_entries; candidate_3111_closed; immutable_rollback_86e08e6_retained",
     "searchConsolidation20260823": "25_of_25_family_hubs; 113_of_113_measured_urls; 88_base_plus_88_en-gb_permanent_redirects; public_errors_0",
     "costumeConversionPublic20260823": "132_of_132_passed; failed_0_noCta_0",
     "responsiveStickyCommerce": "desktop_1440x900_and_mobile_390x844_exact_Momcozy_B0DKHCWJ5G_madababy-20_anchor_passed_on_current_production_runtime",
@@ -457,15 +461,15 @@
     "dailyOperations20260825": "seven_homepages_sitemaps_and_robots_http_200; seven_index_exceptions_http_200_self_canonical_indexable_and_in_sitemap; url_inspection_458_of_486_cumulative_442_indexed_16_not_google_28_quota_blocked; observation_days_2_of_3; seo_affiliate_links_search_recovery_next_product_and_lint_passed; no_runtime_change_or_deploy",
     "dailyOperations20260826": "complete_august_22_24_observation_3_of_3_formal_freeze_hold; latest24_2_clicks_189_impressions_vs_2_248; complete7d_5_clicks_1858_impressions_vs_36_5457; seven_homepages_sitemaps_and_robots_http_200; 16_not_google_production_routes_14_live_self_canonical_plus_2_governed_redirect_sources; url_inspection_first_detail_attempt_quota_blocked_cumulative_458_of_486_442_indexed_16_not_google_28_uninspected; clarity_11_human_47_bots_1_affiliate_click_0_js_errors; amazon_37_clicks_21_orders_6_51_usd; cj_123_clicks_zero_sales_84_concentrated_on_abracadabra_aid_17278691; seo_affiliate_links_search_recovery_next_product_and_node20_lint_passed; no_runtime_change_or_deploy",
     "dailyOperations20260828": "complete26_review_hold_baseline; latest24_2_clicks_226_impressions_vs_1_254; complete7d_6_clicks_1794_impressions_vs_26_4442; ranking118_47_exposed_696_impressions_4_clicks; soft151_26_exposed_74_impressions_0_clicks; url_inspection_486_of_486_complete_471_indexed_15_not_google_0_remaining; clarity_46_human_125_bots_2_affiliate_click_0_js_errors; amazon_38_clicks_21_orders_6_51_product_commission_plus_3_bounty; seven_homepages_sitemaps_and_robots_http_200; search_recovery_seo_306_affiliate_links_next_product_and_node20_lint_passed; no_runtime_change_or_deploy",
-    "dailyOperations20260907": "latest24_2_clicks_225_impressions_vs_0_182_position_14_3_vs_17_1; latest7d_4_clicks_1539_impressions_vs_8_1689_position_28_3_vs_35_7; ergear_day7_77_vs_38_impressions_position_8_5_vs_8_2_hold_to_day14; soft151_21_exposed_130_zero_0_clicks_43_impressions; soft151_live_inspection_99_valid_58_indexed_34_discovered_2_unknown_5_duplicate_31_quota_blocked; amazon_31_clicks_25_ordered_24_shipped_1_return_10_02_commission_plus_3_bounty; clarity_13_human_23_bots_1_affiliate_click_0_js_errors; seven_homepages_sitemaps_robots_http_200; search_recovery_seo_306_affiliate_links_comparison_deep_next_product_and_node20_lint_passed; no_runtime_change_deploy_submission_or_purge"
+    "dailyOperations20260907": "latest24_2_clicks_225_impressions_vs_0_182_position_14_3_vs_17_1; latest7d_4_clicks_1539_impressions_vs_8_1689_position_28_3_vs_35_7; ergear_day7_77_vs_38_impressions_position_8_5_vs_8_2_hold_to_day14; soft151_21_exposed_130_zero_0_clicks_43_impressions; soft151_live_inspection_99_valid_58_indexed_34_discovered_2_unknown_5_duplicate_31_quota_blocked; indexed_double_zero_40_upgraded_21_smarthome_6_homeoffice_13_baby_zero_new_routes_zero_overlap_comparison36_deep43; release_9f61bb2_public_40_pages_and_40_sitemap_entries_passed; indexnow_exact_40_http_200; amazon_31_clicks_25_ordered_24_shipped_1_return_10_02_commission_plus_3_bounty; clarity_13_human_23_bots_1_affiliate_click_0_js_errors; search_recovery_seo_306_affiliate_links_comparison_deep_next_product_and_node20_lint_passed"
   },
   "indexNow": {
-    "date": "2026-09-04",
-    "submitted": 36,
-    "accepted": 36,
+    "date": "2026-09-07",
+    "submitted": 40,
+    "accepted": 40,
     "httpStatus": 200,
-    "bySite": { "network": 8, "smarthome": 8, "homeoffice": 8, "baby": 5, "pet": 7 },
-    "scope": "Only the 36 existing canonical guides changed by the September 4 comparison-first refresh. Unchanged pages, redirect sources, sitemaps, older cohorts and product pilots were excluded; nothing was replayed on September 7."
+    "bySite": { "smarthome": 21, "homeoffice": 6, "baby": 13 },
+    "scope": "Only the exact 40 existing canonical guides changed by the September 7 indexed double-zero recovery. Unchanged pages, redirect sources, homepages, categories, sitemaps, older cohorts and product pilots were excluded."
   },
   "measurementGates": {
     "zeroInspectionResume": "Soft151 Day-14 generated 130 exact zero-impression URLs. On 2026-09-07, 99 valid live inspections completed before the property quota: 58 indexed, 34 discovered-currently-not-indexed, two unknown to Google and five duplicate-without-user-selected-canonical. Resume the 31 blocked Pets URLs on 2026-09-08.",

@@ -2,9 +2,9 @@
 
 ## Outcome
 
-Completed the overdue Soft151 Day-14 search gate, the ErGear/FlexiSpot Day-7 experiment gate, the latest rolling 24-hour and seven-day portfolio review, conversion checks, merchant-link checks, and production health checks. No runtime SEO change, deployment, sitemap resubmission, IndexNow replay, or bulk Request indexing was justified today.
+Completed the overdue Soft151 Day-14 search gate, the ErGear/FlexiSpot Day-7 experiment gate, the latest rolling 24-hour and seven-day portfolio review, conversion checks, merchant-link checks, and production health checks. The initial review did not justify one undifferentiated rewrite of indexed and unindexed pages. After the owner directed immediate existing-page action, the exact 40 pages that were indexed and had zero impressions in both compared seven-day windows were upgraded, deployed and submitted to IndexNow. No new route, sitemap resubmission or bulk Search Console Request indexing was used.
 
-The important result is not a new site-wide collapse. The latest 24 hours improved in impressions, clicks, CTR, and average position, while the seven-day view remained weak in clicks and CTR but improved materially in average position. The Soft151 failure is mixed: Network and the checked part of Pets are largely not indexed, while most zero-impression Smarthome, Homeoffice, and Baby pages are already indexed. These groups must not be handled with one mass title rewrite.
+The important result is not a new site-wide collapse. The latest 24 hours improved in impressions, clicks, CTR, and average position, while the seven-day view remained weak in clicks and CTR but improved materially in average position. The Soft151 failure is mixed: Network and the checked part of Pets are largely not indexed, while many zero-impression Smarthome, Homeoffice, and Baby pages are already indexed. The indexed double-zero group received a bounded comparison-led rewrite; unindexed, previously exposed, duplicate-status, quota-blocked and already protected pages stayed unchanged.
 
 ## Search Console
 
@@ -101,17 +101,43 @@ Clarity, latest three days:
 
 Production and local validation:
 
-- All seven public homepages, sitemaps, and robots files returned HTTP 200.
+- Release `9f61bb2` is active at `/srv/madabase-affiliate/releases/9f61bb2` under `madabase-affiliate.service` on loopback port 3011. All seven origin homepages returned HTTP 200, the process reported zero restarts and no error-log entries, and candidate port 3111 was closed after validation.
+- Public validation passed all 40 upgraded pages and all 40 matching sitemap entries. Every page returned HTTP 200 with the intended title/H1, self-canonical, indexable state and September 7 modification date.
 - SEO audit passed: 964 published guides, 175 products, 77 roundups, seven tools, 4,692 country routes, and 32 index-qualified country URLs.
 - Affiliate-link audit passed 306 of 306 with eight known drifted or unavailable offers still suppressed.
 - Search-recovery, comparison-first 36, Deep43, and next-product freeze checks passed.
 - Node 20 ESLint passed. The first lint attempt used the shell's older Node runtime and failed because `structuredClone` was unavailable; rerunning under the required Node 20 environment passed without a source change.
 
+## Owner-authorized indexed-zero recovery release
+
+The initial hold recommendation was superseded after the owner explicitly directed immediate action and the inspection ledger supplied a safe, exact selection rule. The release includes exactly 40 existing canonical guides that met all three conditions: indexed in live URL Inspection, zero impressions in the current seven-day window, and zero impressions in the preceding seven-day window.
+
+| Site | Existing pages upgraded |
+| --- | ---: |
+| Smarthome | 21 |
+| Homeoffice | 6 |
+| Baby | 13 |
+| **Total** | **40** |
+
+Each page keeps its route, site, product data, merchant path and full supporting content, but now has a unique decision-led title/H1, explicit primary-versus-alternative answer, four-row comparison table, first decision section and contextual related-guide links. Live SERP intent was reviewed per topic before inclusion. The release adds zero routes and has zero overlap with the September 4 comparison-first 36 or Deep43.
+
+Source and deployment:
+
+- Cohort ledger: `apps/affiliate/config/indexed-zero-recovery-cohort-2026-09-07.json`.
+- Source/artifact commit: `9f61bb2917fa4722bdb6aed943550a0a41b0c92e` on `origin/lyd-0609`.
+- Runtime archive: 60,839,849 bytes; SHA-256 `4ff347efd255477319a6f32d933e87b01b137df47cf2873a9f7068d35d0a87dd`.
+- Active immutable release: `/srv/madabase-affiliate/releases/9f61bb2`; immediate rollback: `/srv/madabase-affiliate/releases/86e08e6`; unit backup: `madabase-affiliate.service.before-9f61bb2`.
+- Candidate and origin checks passed all seven site hosts plus representative Smarthome, Homeoffice and Baby targets. Full public audit passed 40 of 40 pages and 40 of 40 sitemap entries.
+- IndexNow accepted exactly 40 canonicals with HTTP 200: Smarthome 21, Homeoffice 6 and Baby 13. No unchanged URL, homepage, category, sitemap or prior cohort was included.
+
+Review this cohort on September 14, September 21 and October 7. Preserve any page that gains impressions, clicks, query breadth or a top-20 position. Revisit only exact pages that remain unexposed or show a clear intent mismatch; do not reset the whole batch from a rolling 24-hour fluctuation.
+
 ## Decision and next actions
 
-1. Do not rewrite the September 4 comparison-first 36 before its September 11 Day-7 gate.
-2. Do not rewrite ErGear/FlexiSpot before the September 14 Day-14 gate; its exposure direction is positive.
-3. On September 8, first complete the 31 quota-blocked Pets URL inspections and recheck Google-selected canonical detail for the five duplicate-status URLs.
-4. Run the Expansion757 Day-30 gate on September 8. Use that evidence to decide whether the unindexed Network/Pets segment should be consolidated, strengthened, or removed from active discovery; do not solve an indexing problem with a blind CTR rewrite.
-5. Run Deep43 tactical review on September 10 and comparison-first Day 7 on September 11.
-6. Keep new indexable publication and the five product pilots frozen. Do not replay sitemaps or IndexNow for unchanged URLs.
+1. Hold the exact September 7 indexed-zero 40 unchanged through its September 14 Day-7 gate. Track exact-URL impressions, clicks, query breadth and position; preserve any positive signal.
+2. Do not rewrite the September 4 comparison-first 36 before its September 11 Day-7 gate.
+3. Do not rewrite ErGear/FlexiSpot before the September 14 Day-14 gate; its exposure direction is positive.
+4. On September 8, first complete the 31 quota-blocked Pets URL inspections and recheck Google-selected canonical detail for the five duplicate-status URLs.
+5. Run the Expansion757 Day-30 gate on September 8. Use that evidence to decide whether the unindexed Network/Pets segment should be consolidated, strengthened, or removed from active discovery; do not solve an indexing problem with a blind CTR rewrite.
+6. Run Deep43 tactical review on September 10 and comparison-first Day 7 on September 11.
+7. Keep new indexable publication and the five product pilots frozen. Do not replay sitemaps or IndexNow for unchanged URLs or for the accepted September 7 cohort.
