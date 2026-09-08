@@ -106,7 +106,13 @@ export default function Home() {
           {featuredProducts.map((product, index) => product && (
             <article className={`featured-product featured-product-${index + 1}`} key={product.name}>
               <div className="product-image-frame">
-                <Image src={product.imageUrl} alt={product.name} fill sizes="(max-width: 900px) 100vw, 33vw" />
+                <Image
+                  src={product.imageUrl}
+                  alt={product.name}
+                  fill
+                  sizes="(max-width: 900px) 100vw, 33vw"
+                  unoptimized
+                />
               </div>
               <div className="featured-product-copy"><p className="guide-meta">{product.category} <span>{product.price}</span></p><h3>{product.name}</h3><p>{product.bestFor}</p><a className="text-link product-link" href={product.affiliateUrl} rel="sponsored nofollow" target="_blank">View at Avidlove<ExternalLink size={16} aria-hidden="true" /></a></div>
             </article>

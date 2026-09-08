@@ -71,7 +71,13 @@ export default async function Page({ params }: PageProps) {
           {products.map((product) => (
           <article className="product-detail" key={product.name}>
             <div className="product-image-frame product-image-frame-large">
-              <Image src={product.imageUrl} alt={product.name} fill sizes="(max-width: 900px) 100vw, 40vw" />
+              <Image
+                src={product.imageUrl}
+                alt={product.name}
+                fill
+                sizes="(max-width: 900px) 100vw, 40vw"
+                unoptimized
+              />
             </div>
             <div className="product-copy">
               <p className="guide-meta">{product.category} <span className="catalog-price">Catalog reference {product.price}</span></p>
