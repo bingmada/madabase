@@ -12,6 +12,7 @@ const briefPath = path.join(workspaceDir, "lib", "quadruple-family-editorial.ts"
 const communityPath = path.join(workspaceDir, "config", "quadruple-community-evidence.json");
 const deepPath = path.join(workspaceDir, "config", "deep-rank-recovery-2026-08-27.json");
 const consolidationPath = path.join(workspaceDir, "config", "search-recovery-consolidations-2026-08-23.json");
+const day30ConsolidationPath = path.join(workspaceDir, "config", "search-recovery-consolidations-2026-09-08.json");
 const controlPath = path.join(workspaceDir, "config", "search-recovery-control.json");
 const protectedLedgerPaths = [
   path.join(repositoryDir, "docs", "affiliate-ranking118-search-gate-2026-08-20.csv"),
@@ -22,6 +23,7 @@ const cohort = JSON.parse(fs.readFileSync(configPath, "utf8"));
 const community = JSON.parse(fs.readFileSync(communityPath, "utf8"));
 const deep = JSON.parse(fs.readFileSync(deepPath, "utf8"));
 const consolidations = JSON.parse(fs.readFileSync(consolidationPath, "utf8"));
+const day30Consolidations = JSON.parse(fs.readFileSync(day30ConsolidationPath, "utf8"));
 const control = JSON.parse(fs.readFileSync(controlPath, "utf8"));
 const errors = [];
 const runtimeOrigin = process.env.COMPARISON_FIRST_ORIGIN;
@@ -60,7 +62,10 @@ const protectedUrls = new Set(
   protectedLedgerPaths.flatMap((filePath) => fs.readFileSync(filePath, "utf8").match(/https:\/\/[^,\r\n]+/g) ?? []),
 );
 protectedUrls.add("https://homeoffice.madabase.com/guides/ergear-vs-flexispot-standing-desk-comparison");
-const consolidatedFamilies = new Set(consolidations.families.map((item) => `${item.site}:${item.familySlug}`));
+const consolidationTargetByFamily = new Map([
+  ...consolidations.families.map((item) => [`${item.site}:${item.familySlug}`, `${item.familySlug}-buying-guide`]),
+  ...day30Consolidations.families.map((item) => [`${item.site}:${item.familySlug}`, item.targetSlug]),
+]);
 
 if (cohort.releaseDate !== "2026-09-04") errors.push(`Unexpected release date ${cohort.releaseDate}`);
 if (cohort.action !== "query-backed-existing-page-refresh") errors.push(`Unexpected action ${cohort.action}`);
@@ -104,11 +109,11 @@ for (const target of targets) {
     if (!guidesByKey.has(`${target.site}:${relatedSlug}`)) errors.push(`${key} links to missing guide ${relatedSlug}`);
   }
 
-  const consolidated = consolidatedFamilies.has(familyKey);
-  if (consolidated && target.slug !== `${target.familySlug}-buying-guide`) {
-    errors.push(`${key} must refresh the consolidated buying hub, not a redirected support URL`);
+  const consolidatedTarget = consolidationTargetByFamily.get(familyKey);
+  if (consolidatedTarget && target.slug !== consolidatedTarget) {
+    errors.push(`${key} must remain the retained consolidation target ${consolidatedTarget}`);
   }
-  if (!consolidated && target.slug !== `${target.familySlug}-vs-alternatives`) {
+  if (!consolidatedTarget && target.slug !== `${target.familySlug}-vs-alternatives`) {
     errors.push(`${key} must use the existing comparison URL`);
   }
 
@@ -182,7 +187,9 @@ if (runtimeOrigin || publicAudit) {
     if (!response.body.includes(`<link rel="canonical" href="${target.url}"`)) errors.push(`${key} runtime canonical changed`);
     if (!response.body.includes(target.title)) errors.push(`${key} runtime title or H1 is missing`);
     if (!response.body.includes(target.decisionSection.heading)) errors.push(`${key} runtime decision section is missing`);
-    if (!response.body.includes("September 4, 2026")) errors.push(`${key} runtime refresh date is missing`);
+    const day30Target = day30Consolidations.families.some((family) => family.site === target.site && family.targetSlug === target.slug);
+    const expectedDisplayDate = day30Target ? "September 8, 2026" : "September 4, 2026";
+    if (!response.body.includes(expectedDisplayDate)) errors.push(`${key} runtime refresh date is missing`);
     if (/name="robots" content="[^"]*noindex/i.test(response.body)) errors.push(`${key} unexpectedly renders noindex`);
     runtimeChecked += 1;
   }
@@ -192,8 +199,10 @@ if (runtimeOrigin || publicAudit) {
     if (sitemap.status !== 200) errors.push(`${site} sitemap returned ${sitemap.status}`);
     for (const target of targets.filter((item) => item.site === site)) {
       const escapedUrl = target.url.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-      const entry = new RegExp(`<loc>${escapedUrl}</loc>\\s*<lastmod>2026-09-04(?:T00:00:00\\.000Z)?</lastmod>`);
-      if (!entry.test(sitemap.body)) errors.push(`${target.site}:${target.slug} sitemap lastmod is not 2026-09-04`);
+      const day30Target = day30Consolidations.families.some((family) => family.site === target.site && family.targetSlug === target.slug);
+      const expectedSitemapDate = day30Target ? "2026-09-08" : "2026-09-04";
+      const entry = new RegExp(`<loc>${escapedUrl}</loc>\\s*<lastmod>${expectedSitemapDate}(?:T00:00:00\\.000Z)?</lastmod>`);
+      if (!entry.test(sitemap.body)) errors.push(`${target.site}:${target.slug} sitemap lastmod is not ${expectedSitemapDate}`);
       sitemapChecked += 1;
     }
   }
@@ -205,7 +214,7 @@ const report = {
   newRoutes: cohort.scope?.newRoutes,
   sites: Object.fromEntries(Object.keys(expectedSiteCounts).map((site) => [site, targets.filter((target) => target.site === site).length])),
   refreshedGeneratedGuides: refreshedGuides.length,
-  consolidatedCanonicalHubs: targets.filter((target) => consolidatedFamilies.has(`${target.site}:${target.familySlug}`)).length,
+  consolidatedCanonicalHubs: targets.filter((target) => consolidationTargetByFamily.has(`${target.site}:${target.familySlug}`)).length,
   deep43Overlap: targets.filter((target) => deepUrls.has(target.url)).length,
   protectedLedgerOverlap: targets.filter((target) => protectedUrls.has(target.url)).length,
   uniqueTitles: uniqueTitles.size,

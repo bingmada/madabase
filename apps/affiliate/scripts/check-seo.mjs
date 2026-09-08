@@ -232,8 +232,11 @@ if (!categoryPageSource.includes("...guides.map((guide)")) {
 if (!categoryPageSource.includes("<GovernedDecisionGuideLinks guides={allCategoryGuides} />")) {
   errors.push("Costume category pages must expose every primary governed buying hub");
 }
-if (!governedSitemapSource.includes('new Date("2026-08-23T00:00:00Z")')) {
-  errors.push("Materially changed governed category pages must publish the August 23 topic-hierarchy lastmod");
+if (
+  !governedSitemapSource.includes('"2026-08-23T00:00:00Z"')
+  || !governedSitemapSource.includes('"2026-09-08T00:00:00Z"')
+) {
+  errors.push("Governed category pages must preserve the August 23 baseline and publish the September 8 Day-30 consolidation lastmod");
 }
 const guidePageSource = fs.readFileSync(path.join(workspaceDir, "app", "guides", "[slug]", "page.tsx"), "utf8");
 if (!guidePageSource.includes('data-family-topic-cluster="true"')) {

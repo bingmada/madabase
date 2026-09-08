@@ -14,11 +14,13 @@ const comparisonFirstPath = path.join(workspaceDir, "config", "comparison-first-
 const rankingPath = path.join(repositoryDir, "docs", "affiliate-ranking118-search-gate-2026-08-20.csv");
 const softPath = path.join(repositoryDir, "docs", "affiliate-soft151-search-gate-2026-08-20.csv");
 const consolidationPath = path.join(workspaceDir, "config", "search-recovery-consolidations-2026-08-23.json");
+const day30ConsolidationPath = path.join(workspaceDir, "config", "search-recovery-consolidations-2026-09-08.json");
 
 const recovery = JSON.parse(fs.readFileSync(configPath, "utf8"));
 const community = JSON.parse(fs.readFileSync(communityPath, "utf8"));
 const comparisonFirst = JSON.parse(fs.readFileSync(comparisonFirstPath, "utf8"));
 const consolidations = JSON.parse(fs.readFileSync(consolidationPath, "utf8"));
+const day30Consolidations = JSON.parse(fs.readFileSync(day30ConsolidationPath, "utf8"));
 const errors = [];
 const runtimeOrigin = process.env.DEEP_RANK_RECOVERY_ORIGIN;
 const publicAudit = process.env.DEEP_RANK_RECOVERY_PUBLIC_AUDIT === "1";
@@ -78,7 +80,10 @@ for (const target of targets) {
   if (protectedUrls.has(target.url)) errors.push(`${target.url} overlaps Ranking118 or Soft151`);
 }
 
-const consolidatedFamilies = new Set(consolidations.families.map((item) => `${item.site}:${item.familySlug}`));
+const consolidatedFamilies = new Set([
+  ...consolidations.families.map((item) => `${item.site}:${item.familySlug}`),
+  ...day30Consolidations.families.map((item) => `${item.site}:${item.familySlug}`),
+]);
 for (const target of targets) {
   for (const familyKey of consolidatedFamilies) {
     const [site, familySlug] = familyKey.split(":");

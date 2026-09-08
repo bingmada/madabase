@@ -21,6 +21,7 @@ import { guideCommerceProduct, isCommerceAlternative } from "@/lib/commerce-path
 import { buyerFacingBody, buyerFacingHeading, buyerFacingSummary } from "@/lib/conversion-copy";
 import {
   consolidationTargetSlug,
+  isFamilyDiscoveryHub,
   isConsolidatedFamilyHub,
   isConsolidatedSupportGuide,
   mergeConsolidatedFamilyGuide,
@@ -254,7 +255,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
       .filter((item) => item.familySlug === guide.familySlug && item.familyRole)
       .sort((left, right) => familyRoleOrder.indexOf(left.familyRole!) - familyRoleOrder.indexOf(right.familyRole!))
     : [];
-  const primaryFamilyGuide = familyGuides.find((item) => item.familyRole === "buying");
+  const primaryFamilyGuide = familyGuides.find(isFamilyDiscoveryHub);
   const explicitRelatedGuides = (guide.relatedGuides ?? [])
     .filter((guideSlug) => guideSlug !== guide.slug)
     .map((guideSlug) => findGuide(site.key, guideSlug))

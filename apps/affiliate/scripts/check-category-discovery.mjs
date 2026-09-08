@@ -26,6 +26,7 @@ async function governedGuideRows() {
   const comparisonFirstPath = path.join(affiliateDir, "config", "comparison-first-cohort-2026-09-04.json");
   const deepRankRecoveryPath = path.join(affiliateDir, "config", "deep-rank-recovery-2026-08-27.json");
   const consolidationPath = path.join(affiliateDir, "config", "search-recovery-consolidations-2026-08-23.json");
+  const day30ConsolidationPath = path.join(affiliateDir, "config", "search-recovery-consolidations-2026-09-08.json");
   const source = ts.transpileModule(fs.readFileSync(sourcePath, "utf8"), {
     compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 },
     fileName: sourcePath,
@@ -42,17 +43,27 @@ async function governedGuideRows() {
   const comparisonFirst = JSON.parse(fs.readFileSync(comparisonFirstPath, "utf8"));
   const deepRankRecovery = JSON.parse(fs.readFileSync(deepRankRecoveryPath, "utf8"));
   const consolidation = JSON.parse(fs.readFileSync(consolidationPath, "utf8"));
-  const consolidatedFamilies = new Set(consolidation.families.map((item) => `${item.site}:${item.familySlug}`));
+  const day30Consolidation = JSON.parse(fs.readFileSync(day30ConsolidationPath, "utf8"));
+  const consolidatedFamilyTargets = new Map([
+    ...consolidation.families.map((item) => [`${item.site}:${item.familySlug}`, "buying"]),
+    ...day30Consolidation.families.map((item) => [`${item.site}:${item.familySlug}`, item.targetRole]),
+  ]);
   const moduleSource = `${brief}\nconst communityEvidenceData = ${JSON.stringify(community)};\nconst comparisonFirstData = ${JSON.stringify(comparisonFirst)};\nconst deepRankRecoveryData = ${JSON.stringify(deepRankRecovery)};\n${source}`;
   const expansion = await import(`data:text/javascript;base64,${Buffer.from(moduleSource).toString("base64")}`);
-  return expansion.quadrupleExpansionGuides.map((guide) => ({
-    site: guide.site,
-    category: guide.category,
-    family: guide.familySlug,
-    role: guide.familyRole,
-    consolidated: consolidatedFamilies.has(`${guide.site}:${guide.familySlug}`),
-    url: `https://${siteHosts[guide.site]}/guides/${guide.slug}`,
-  }));
+  return expansion.quadrupleExpansionGuides.map((guide) => {
+    const familyKey = `${guide.site}:${guide.familySlug}`;
+    const targetRole = consolidatedFamilyTargets.get(familyKey);
+    return {
+      site: guide.site,
+      category: guide.category,
+      family: guide.familySlug,
+      role: guide.familyRole,
+      hub: targetRole ? guide.familyRole === targetRole : guide.familyRole === "buying",
+      consolidated: Boolean(targetRole),
+      day30Consolidated: day30Consolidation.families.some((item) => `${item.site}:${item.familySlug}` === familyKey),
+      url: `https://${siteHosts[guide.site]}/guides/${guide.slug}`,
+    };
+  });
 }
 
 async function fetchCategory(publicUrl) {
@@ -84,7 +95,7 @@ for (const row of rows) {
   const guideUrl = new URL(row.url);
   const categoryUrl = `https://${guideUrl.host}/categories/${row.category}`;
   const entry = categories.get(categoryUrl) ?? [];
-  entry.push({ url: row.url, path: guideUrl.pathname, family: row.family, role: row.role, consolidated: row.consolidated });
+  entry.push({ url: row.url, path: guideUrl.pathname, family: row.family, role: row.role, hub: row.hub, consolidated: row.consolidated, day30Consolidated: row.day30Consolidated });
   categories.set(categoryUrl, entry);
 }
 
@@ -111,15 +122,16 @@ async function worker() {
     try {
       const { response, html } = await fetchCategory(categoryUrl);
       const hrefs = new Set([...html.matchAll(/href=["']([^"']+)["']/gi)].map((match) => match[1].replaceAll("&amp;", "&")));
-      const hubs = guides.filter((guide) => guide.role === "buying");
-      const supportingGuides = guides.filter((guide) => guide.role !== "buying" && !guide.consolidated);
+      const hubs = guides.filter((guide) => guide.hub);
+      const supportingGuides = guides.filter((guide) => !guide.hub && !guide.consolidated);
       const missingHubs = hubs.filter((guide) => !hrefs.has(guide.path));
       let missingSupportLinks = 0;
       if (response.status !== 200) errors.push(`HTTP ${response.status}`);
       if (!html.includes('data-governed-discovery-links="family-hubs"')) errors.push("family-hub discovery section missing");
       if (missingHubs.length) errors.push(`${missingHubs.length} primary family hub link(s) missing: ${missingHubs.slice(0, 5).map((guide) => guide.path).join(", ")}`);
-      if (!sitemapLastmodByCategory.get(categoryUrl)?.startsWith("2026-08-23")) {
-        errors.push(`sitemap lastmod is not 2026-08-23 (${sitemapLastmodByCategory.get(categoryUrl) ?? "missing"})`);
+      const expectedCategoryLastmod = guides.some((guide) => guide.day30Consolidated) ? "2026-09-08" : "2026-08-23";
+      if (!sitemapLastmodByCategory.get(categoryUrl)?.startsWith(expectedCategoryLastmod)) {
+        errors.push(`sitemap lastmod is not ${expectedCategoryLastmod} (${sitemapLastmodByCategory.get(categoryUrl) ?? "missing"})`);
       }
 
       for (const hub of hubs) {

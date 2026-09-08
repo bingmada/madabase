@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "authorizedAt": "2026-09-08T15:35:00+08:00",
+  "action": "existing-page-topic-hierarchy-repair",
+  "measurementWindow": "2026-08-30 through 2026-09-05 versus 2026-08-23 through 2026-08-29",
+  "sourceGate": "apps/affiliate/reports/expansion757-day30-gate-2026-09-08.json",
+  "decision": "Consolidate 27 of the 29 fully indexed, fully zero-impression multi-route families now. Defer the two Network families that contain active Deep43 experiment URLs until their September 10 tactical gate. Retain the role with the strongest historical and live-SERP intent evidence, preserve its title, H1, first-screen answer and commerce path, merge useful sibling material below it, permanently redirect every retired sibling, and remove retired URLs from discovery and sitemaps.",
+  "scope": {
+    "families": 27,
+    "networkFamilies": 17,
+    "petFamilies": 10,
+    "measuredUrls": 118,
+    "retainedCanonicals": 27,
+    "permanentRedirects": 91,
+    "newRoutes": 0
+  },
+  "deferredFamilies": [
+    {
+      "site": "network",
+      "familySlug": "sfp-plus-network-switches",
+      "reason": "Contains two active Deep43 targets with historical impressions; preserve them through the September 10 tactical gate.",
+      "nextGate": "2026-09-10"
+    },
+    {
+      "site": "network",
+      "familySlug": "poe-splitters",
+      "reason": "Contains one active Deep43 target with historical impressions; preserve it through the September 10 tactical gate.",
+      "nextGate": "2026-09-10"
+    }
+  ],
+  "reviewGates": {
+    "day7": "2026-09-15",
+    "day14": "2026-09-22",
+    "day30": "2026-10-08"
+  },
+  "families": [
+    { "site": "network", "familySlug": "indoor-wifi-access-points", "targetRole": "comparison", "targetSlug": "indoor-wifi-access-points-vs-alternatives", "historicalLeader": "ownership=8; comparison=1", "selectionEvidence": "The comparison URL is a protected September 4 target, and the current SERP is organized around wired access points versus mesh." },
+    { "site": "network", "familySlug": "outdoor-wifi-access-points", "targetRole": "comparison", "targetSlug": "outdoor-wifi-access-points-vs-alternatives", "historicalLeader": "ownership=9; comparison=8", "selectionEvidence": "Near-tied historical exposure plus current outdoor AP versus outdoor mesh/indoor AP result coverage favors the broader comparison decision." },
+    { "site": "network", "familySlug": "point-to-point-wireless-bridges", "targetRole": "comparison", "targetSlug": "point-to-point-wireless-bridges-vs-alternatives", "historicalLeader": "comparison=37", "selectionEvidence": "Clear historical leader, protected September 4 target and current wireless-bridge versus Ethernet/fiber SERP intent." },
+    { "site": "network", "familySlug": "wifi-range-extenders", "targetRole": "comparison", "targetSlug": "wifi-range-extenders-vs-alternatives", "historicalLeader": "comparison=13", "selectionEvidence": "Clear historical leader and current extender versus mesh/access-point SERP intent." },
+    { "site": "network", "familySlug": "moca-network-adapters", "targetRole": "comparison", "targetSlug": "moca-network-adapters-vs-alternatives", "historicalLeader": "comparison=12; ownership=12", "selectionEvidence": "Historical tie, protected September 4 target and current MoCA versus Ethernet/powerline SERP intent." },
+    { "site": "network", "familySlug": "powerline-network-adapters", "targetRole": "comparison", "targetSlug": "powerline-network-adapters-vs-alternatives", "historicalLeader": "comparison=23", "selectionEvidence": "Clear historical leader and current powerline versus mesh/extender/MoCA SERP intent." },
+    { "site": "network", "familySlug": "ethernet-network-interface-cards", "targetRole": "comparison", "targetSlug": "ethernet-network-interface-cards-vs-alternatives", "historicalLeader": "buying=67; comparison=46", "selectionEvidence": "The comparison URL is a protected September 4 target and current intent contrasts internal NICs with USB Ethernet adapters." },
+    { "site": "network", "familySlug": "usb-c-ethernet-adapters", "targetRole": "comparison", "targetSlug": "usb-c-ethernet-adapters-vs-alternatives", "historicalLeader": "comparison=10", "selectionEvidence": "Clear historical leader; current results distinguish a simple USB-C adapter from an internal NIC or fuller dock." },
+    { "site": "network", "familySlug": "poe-injectors", "targetRole": "comparison", "targetSlug": "poe-injectors-vs-alternatives", "historicalLeader": "comparison=21", "selectionEvidence": "Clear historical leader, protected September 4 target and current PoE injector versus PoE switch SERP intent." },
+    { "site": "network", "familySlug": "poe-extenders", "targetRole": "comparison", "targetSlug": "poe-extenders-vs-alternatives", "historicalLeader": "comparison=6", "selectionEvidence": "Clear historical leader and current extender versus fiber or closer powered-switch decision intent." },
+    { "site": "network", "familySlug": "sfp-plus-transceivers", "targetRole": "fit", "targetSlug": "sfp-plus-transceivers-compatibility-and-fit-guide", "historicalLeader": "fit=57", "selectionEvidence": "Strong historical leader and current compatibility-led intent around switch coding, speed, reach, fiber and DAC selection." },
+    { "site": "network", "familySlug": "fiber-media-converters", "targetRole": "comparison", "targetSlug": "fiber-media-converters-vs-alternatives", "historicalLeader": "comparison=5", "selectionEvidence": "Historical leader and current media-converter versus native-SFP switch intent." },
+    { "site": "network", "familySlug": "network-attached-storage", "targetRole": "comparison", "targetSlug": "network-attached-storage-vs-alternatives", "historicalLeader": "comparison=9; ownership=8", "selectionEvidence": "Historical leader and current NAS versus DAS/cloud/home-server SERP intent." },
+    { "site": "network", "familySlug": "dual-wan-routers", "targetRole": "fit", "targetSlug": "dual-wan-routers-compatibility-and-fit-guide", "historicalLeader": "fit=71", "selectionEvidence": "Dominant historical role; current failover/load-balancing results make service, modem and policy fit the controlling decision." },
+    { "site": "network", "familySlug": "five-g-home-internet-gateways", "targetRole": "fit", "targetSlug": "five-g-home-internet-gateways-compatibility-and-fit-guide", "historicalLeader": "fit=21", "selectionEvidence": "Clear historical leader and current carrier, placement, signal and antenna compatibility intent." },
+    { "site": "network", "familySlug": "home-network-racks", "targetRole": "comparison", "targetSlug": "home-network-racks-vs-alternatives", "historicalLeader": "comparison=13", "selectionEvidence": "Clear historical leader and current wall-rack versus cabinet/shelf/floor-rack SERP intent." },
+    { "site": "network", "familySlug": "ethernet-cable-testers", "targetRole": "fit", "targetSlug": "ethernet-cable-testers-compatibility-and-fit-guide", "historicalLeader": "fit=36", "selectionEvidence": "Dominant historical role; current SERP separates continuity, verification, qualification and certification by the job the tester must fit." },
+    { "site": "pet", "familySlug": "large-dog-water-fountains", "targetRole": "comparison", "targetSlug": "large-dog-water-fountains-vs-alternatives", "historicalLeader": "ownership=5; comparison=4", "selectionEvidence": "The comparison URL is a protected September 4 target, with current fountain-versus-large-bowl decision coverage." },
+    { "site": "pet", "familySlug": "cat-gps-trackers", "targetRole": "workflow", "targetSlug": "cat-gps-trackers-setup-and-daily-workflow", "historicalLeader": "workflow=21", "selectionEvidence": "Dominant historical role; charging, collar checks, app state and recovery practice define the usable daily decision." },
+    { "site": "pet", "familySlug": "airtag-pet-collar-holders", "targetRole": "workflow", "targetSlug": "airtag-pet-collar-holders-setup-and-daily-workflow", "historicalLeader": "workflow=10", "selectionEvidence": "Dominant historical role and current attachment, collar-fit, breakaway and routine inspection intent." },
+    { "site": "pet", "familySlug": "microchip-pet-doors", "targetRole": "comparison", "targetSlug": "microchip-pet-doors-vs-alternatives", "historicalLeader": "comparison=9", "selectionEvidence": "Clear historical leader and current microchip-versus-collar-key door SERP intent." },
+    { "site": "pet", "familySlug": "cat-litter-mats", "targetRole": "fit", "targetSlug": "cat-litter-mats-compatibility-and-fit-guide", "historicalLeader": "fit=1", "selectionEvidence": "Only historical exposure belongs to fit; current intent centers on exit path, mat dimensions, texture, floor and cleaning compatibility." },
+    { "site": "pet", "familySlug": "deshedding-brushes", "targetRole": "comparison", "targetSlug": "deshedding-brushes-vs-alternatives", "historicalLeader": "workflow=22; comparison=12", "selectionEvidence": "The comparison URL is a protected September 4 target; preserve its brush-versus-vacuum decision and merge the stronger workflow evidence below it." },
+    { "site": "pet", "familySlug": "cooling-pet-beds", "targetRole": "workflow", "targetSlug": "cooling-pet-beds-setup-and-daily-workflow", "historicalLeader": "workflow=6", "selectionEvidence": "Clear historical leader and current placement, pet acceptance, cleaning, supervision and free-movement intent." },
+    { "site": "pet", "familySlug": "dog-ramps", "targetRole": "comparison", "targetSlug": "dog-ramps-vs-alternatives", "historicalLeader": "fit=20; comparison=0", "selectionEvidence": "The comparison URL is a protected September 4 target; preserve its ramp-versus-stairs decision and merge the strong length, rise and angle fit material below it." },
+    { "site": "pet", "familySlug": "automatic-aquarium-feeders", "targetRole": "workflow", "targetSlug": "automatic-aquarium-feeders-setup-and-daily-workflow", "historicalLeader": "workflow=4; ownership=4", "selectionEvidence": "Historical tie resolved by current setup, portion-test, humidity, battery and manual-backup workflow intent." },
+    { "site": "pet", "familySlug": "aquarium-water-monitors", "targetRole": "workflow", "targetSlug": "aquarium-water-monitors-setup-and-daily-workflow", "historicalLeader": "workflow=13; comparison=12", "selectionEvidence": "Historical leader and current calibration, probe care, manual cross-check and alert-response workflow intent." }
+  ],
+  "protectedCoreFields": [
+    "title",
+    "H1",
+    "searchQuestion",
+    "dek",
+    "quickAnswer",
+    "commercePath"
+  ],
+  "liveSerpValidatedAt": "2026-09-08",
+  "requestIndexing": false
+}

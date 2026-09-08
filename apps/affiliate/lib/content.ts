@@ -1,5 +1,9 @@
 import type { Guide, Product, Roundup, SiteKey, Tool } from "./types";
-import { isConsolidatedSupportGuide } from "./search-recovery-consolidation";
+import {
+  isConsolidatedFamilyHub,
+  isConsolidatedSupportGuide,
+  mergeConsolidatedFamilyGuide,
+} from "./search-recovery-consolidation";
 import { quadrupleExpansionGuides } from "./quadruple-expansion-content";
 import { applySiteAffiliateTracking } from "./affiliate-tracking";
 import {
@@ -2406,7 +2410,16 @@ export function siteRoundups(site: SiteKey) {
 export function siteGuides(site: SiteKey) {
   return guides.filter(
     (guide) => guide.site === site && isContentVisible(guide) && !isConsolidatedSupportGuide(guide),
-  );
+  ).map((guide) => isConsolidatedFamilyHub(guide)
+    ? mergeConsolidatedFamilyGuide(
+        guide,
+        guides.filter(
+          (item) => item.site === guide.site
+            && item.familySlug === guide.familySlug
+            && isContentVisible(item),
+        ),
+      )
+    : guide);
 }
 
 export function siteGuideFamily(site: SiteKey, familySlug: string) {

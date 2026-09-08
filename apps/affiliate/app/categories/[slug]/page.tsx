@@ -13,6 +13,7 @@ import { prioritizeBySearchDemand, siteSearchDemandPriorities } from "@/lib/sear
 import { getCurrentSite } from "@/lib/sites";
 import type { Guide, SiteKey } from "@/lib/types";
 import { parseCostumeCatalogFilters, type CostumeCatalogCategory } from "@/lib/costume-catalog";
+import { isFamilyDiscoveryHub } from "@/lib/search-recovery-consolidation";
 
 const categoryFrameworks: Record<SiteKey, Record<string, { focus: string; checks: string[] }>> = {
   pet: {
@@ -152,7 +153,7 @@ function getCategoryFramework(siteKey: SiteKey, category: string) {
 
 function GovernedDecisionGuideLinks({ guides }: { guides: Guide[] }) {
   const familyHubs = guides.filter(
-    (guide) => guide.familySlug && guide.familyRole === "buying",
+    (guide) => guide.familySlug && isFamilyDiscoveryHub(guide),
   );
   if (!familyHubs.length) return null;
 
@@ -206,7 +207,7 @@ export default async function CategoryPage({
     const categorySlug = slug as CostumeCatalogCategory;
     const filters = parseCostumeCatalogFilters(await searchParams, { category: categorySlug });
     const governedGuideItems = allCategoryGuides
-      .filter((guide) => guide.familySlug && guide.familyRole === "buying")
+      .filter((guide) => guide.familySlug && isFamilyDiscoveryHub(guide))
       .map((guide) => ({ name: guide.title, path: `/guides/${guide.slug}` }));
     return (
       <>
@@ -238,7 +239,7 @@ export default async function CategoryPage({
   const guides = prioritizeBySearchDemand(
     site.key,
     allCategoryGuides.filter((item) =>
-      !item.familySlug || item.familyRole === "buying" || priorityGuidePaths.has(`/guides/${item.slug}`),
+      !item.familySlug || isFamilyDiscoveryHub(item) || priorityGuidePaths.has(`/guides/${item.slug}`),
     ),
     (item) => `/guides/${item.slug}`,
   );

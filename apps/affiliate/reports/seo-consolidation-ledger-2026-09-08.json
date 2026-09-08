@@ -1,0 +1,520 @@
+{
+  "version": 1,
+  "authorizedAt": "2026-09-08T15:35:00+08:00",
+  "measurementWindow": "2026-08-30 through 2026-09-05 versus 2026-08-23 through 2026-08-29",
+  "sourceGate": "apps/affiliate/reports/expansion757-day30-gate-2026-09-08.json",
+  "decision": "Consolidate 27 of the 29 fully indexed, fully zero-impression multi-route families now. Defer the two Network families that contain active Deep43 experiment URLs until their September 10 tactical gate. Retain the role with the strongest historical and live-SERP intent evidence, preserve its title, H1, first-screen answer and commerce path, merge useful sibling material below it, permanently redirect every retired sibling, and remove retired URLs from discovery and sitemaps.",
+  "families": 27,
+  "measuredUrls": 118,
+  "retainedCanonicalHubs": 27,
+  "permanentRedirects": 91,
+  "targetRoleCounts": {
+    "comparison": 17,
+    "fit": 5,
+    "workflow": 5
+  },
+  "protectedComparisonTargets": 8,
+  "deferredDeep43Families": [
+    "network:sfp-plus-network-switches",
+    "network:poe-splitters"
+  ],
+  "newRoutes": 0,
+  "ledger": [
+    {
+      "site": "network",
+      "familySlug": "indoor-wifi-access-points",
+      "targetRole": "comparison",
+      "measurementWindow": "2026-08-30 through 2026-09-05 versus 2026-08-23 through 2026-08-29",
+      "currentClicks": 0,
+      "currentImpressions": 0,
+      "previousClicks": 0,
+      "previousImpressions": 0,
+      "targetUrl": "https://network.madabase.com/guides/indoor-wifi-access-points-vs-alternatives",
+      "sourceUrls": [
+        "https://network.madabase.com/guides/indoor-wifi-access-points-buying-guide",
+        "https://network.madabase.com/guides/indoor-wifi-access-points-compatibility-and-fit-guide",
+        "https://network.madabase.com/guides/indoor-wifi-access-points-ownership-cost-and-maintenance"
+      ],
+      "protectedComparisonTarget": true,
+      "selectionEvidence": "The comparison URL is a protected September 4 target, and the current SERP is organized around wired access points versus mesh."
+    },
+    {
+      "site": "network",
+      "familySlug": "outdoor-wifi-access-points",
+      "targetRole": "comparison",
+      "measurementWindow": "2026-08-30 through 2026-09-05 versus 2026-08-23 through 2026-08-29",
+      "currentClicks": 0,
+      "currentImpressions": 0,
+      "previousClicks": 0,
+      "previousImpressions": 0,
+      "targetUrl": "https://network.madabase.com/guides/outdoor-wifi-access-points-vs-alternatives",
+      "sourceUrls": [
+        "https://network.madabase.com/guides/outdoor-wifi-access-points-buying-guide",
+        "https://network.madabase.com/guides/outdoor-wifi-access-points-compatibility-and-fit-guide",
+        "https://network.madabase.com/guides/outdoor-wifi-access-points-ownership-cost-and-maintenance"
+      ],
+      "protectedComparisonTarget": false,
+      "selectionEvidence": "Near-tied historical exposure plus current outdoor AP versus outdoor mesh/indoor AP result coverage favors the broader comparison decision."
+    },
+    {
+      "site": "network",
+      "familySlug": "point-to-point-wireless-bridges",
+      "targetRole": "comparison",
+      "measurementWindow": "2026-08-30 through 2026-09-05 versus 2026-08-23 through 2026-08-29",
+      "currentClicks": 0,
+      "currentImpressions": 0,
+      "previousClicks": 0,
+      "previousImpressions": 0,
+      "targetUrl": "https://network.madabase.com/guides/point-to-point-wireless-bridges-vs-alternatives",
+      "sourceUrls": [
+        "https://network.madabase.com/guides/point-to-point-wireless-bridges-buying-guide",
+        "https://network.madabase.com/guides/point-to-point-wireless-bridges-compatibility-and-fit-guide",
+        "https://network.madabase.com/guides/point-to-point-wireless-bridges-ownership-cost-and-maintenance"
+      ],
+      "protectedComparisonTarget": true,
+      "selectionEvidence": "Clear historical leader, protected September 4 target and current wireless-bridge versus Ethernet/fiber SERP intent."
+    },
+    {
+      "site": "network",
+      "familySlug": "wifi-range-extenders",
+      "targetRole": "comparison",
+      "measurementWindow": "2026-08-30 through 2026-09-05 versus 2026-08-23 through 2026-08-29",
+      "currentClicks": 0,
+      "currentImpressions": 0,
+      "previousClicks": 0,
+      "previousImpressions": 0,
+      "targetUrl": "https://network.madabase.com/guides/wifi-range-extenders-vs-alternatives",
+      "sourceUrls": [
+        "https://network.madabase.com/guides/wifi-range-extenders-buying-guide",
+        "https://network.madabase.com/guides/wifi-range-extenders-compatibility-and-fit-guide",
+        "https://network.madabase.com/guides/wifi-range-extenders-ownership-cost-and-maintenance"
+      ],
+      "protectedComparisonTarget": false,
+      "selectionEvidence": "Clear historical leader and current extender versus mesh/access-point SERP intent."
+    },
+    {
+      "site": "network",
+      "familySlug": "moca-network-adapters",
+      "targetRole": "comparison",
+      "measurementWindow": "2026-08-30 through 2026-09-05 versus 2026-08-23 through 2026-08-29",
+      "currentClicks": 0,
+      "currentImpressions": 0,
+      "previousClicks": 0,
+      "previousImpressions": 0,
+      "targetUrl": "https://network.madabase.com/guides/moca-network-adapters-vs-alternatives",
+      "sourceUrls": [
+        "https://network.madabase.com/guides/moca-network-adapters-buying-guide",
+        "https://network.madabase.com/guides/moca-network-adapters-compatibility-and-fit-guide",
+        "https://network.madabase.com/guides/moca-network-adapters-ownership-cost-and-maintenance"
+      ],
+      "protectedComparisonTarget": true,
+      "selectionEvidence": "Historical tie, protected September 4 target and current MoCA versus Ethernet/powerline SERP intent."
+    },
+    {
+      "site": "network",
+      "familySlug": "powerline-network-adapters",
+      "targetRole": "comparison",
+      "measurementWindow": "2026-08-30 through 2026-09-05 versus 2026-08-23 through 2026-08-29",
+      "currentClicks": 0,
+      "currentImpressions": 0,
+      "previousClicks": 0,
+      "previousImpressions": 0,
+      "targetUrl": "https://network.madabase.com/guides/powerline-network-adapters-vs-alternatives",
+      "sourceUrls": [
+        "https://network.madabase.com/guides/powerline-network-adapters-buying-guide",
+        "https://network.madabase.com/guides/powerline-network-adapters-compatibility-and-fit-guide",
+        "https://network.madabase.com/guides/powerline-network-adapters-ownership-cost-and-maintenance"
+      ],
+      "protectedComparisonTarget": false,
+      "selectionEvidence": "Clear historical leader and current powerline versus mesh/extender/MoCA SERP intent."
+    },
+    {
+      "site": "network",
+      "familySlug": "ethernet-network-interface-cards",
+      "targetRole": "comparison",
+      "measurementWindow": "2026-08-30 through 2026-09-05 versus 2026-08-23 through 2026-08-29",
+      "currentClicks": 0,
+      "currentImpressions": 0,
+      "previousClicks": 0,
+      "previousImpressions": 0,
+      "targetUrl": "https://network.madabase.com/guides/ethernet-network-interface-cards-vs-alternatives",
+      "sourceUrls": [
+        "https://network.madabase.com/guides/ethernet-network-interface-cards-buying-guide",
+        "https://network.madabase.com/guides/ethernet-network-interface-cards-compatibility-and-fit-guide",
+        "https://network.madabase.com/guides/ethernet-network-interface-cards-ownership-cost-and-maintenance"
+      ],
+      "protectedComparisonTarget": true,
+      "selectionEvidence": "The comparison URL is a protected September 4 target and current intent contrasts internal NICs with USB Ethernet adapters."
+    },
+    {
+      "site": "network",
+      "familySlug": "usb-c-ethernet-adapters",
+      "targetRole": "comparison",
+      "measurementWindow": "2026-08-30 through 2026-09-05 versus 2026-08-23 through 2026-08-29",
+      "currentClicks": 0,
+      "currentImpressions": 0,
+      "previousClicks": 0,
+      "previousImpressions": 0,
+      "targetUrl": "https://network.madabase.com/guides/usb-c-ethernet-adapters-vs-alternatives",
+      "sourceUrls": [
+        "https://network.madabase.com/guides/usb-c-ethernet-adapters-buying-guide",
+        "https://network.madabase.com/guides/usb-c-ethernet-adapters-compatibility-and-fit-guide",
+        "https://network.madabase.com/guides/usb-c-ethernet-adapters-ownership-cost-and-maintenance"
+      ],
+      "protectedComparisonTarget": false,
+      "selectionEvidence": "Clear historical leader; current results distinguish a simple USB-C adapter from an internal NIC or fuller dock."
+    },
+    {
+      "site": "network",
+      "familySlug": "poe-injectors",
+      "targetRole": "comparison",
+      "measurementWindow": "2026-08-30 through 2026-09-05 versus 2026-08-23 through 2026-08-29",
+      "currentClicks": 0,
+      "currentImpressions": 0,
+      "previousClicks": 0,
+      "previousImpressions": 0,
+      "targetUrl": "https://network.madabase.com/guides/poe-injectors-vs-alternatives",
+      "sourceUrls": [
+        "https://network.madabase.com/guides/poe-injectors-buying-guide",
+        "https://network.madabase.com/guides/poe-injectors-compatibility-and-fit-guide",
+        "https://network.madabase.com/guides/poe-injectors-ownership-cost-and-maintenance"
+      ],
+      "protectedComparisonTarget": true,
+      "selectionEvidence": "Clear historical leader, protected September 4 target and current PoE injector versus PoE switch SERP intent."
+    },
+    {
+      "site": "network",
+      "familySlug": "poe-extenders",
+      "targetRole": "comparison",
+      "measurementWindow": "2026-08-30 through 2026-09-05 versus 2026-08-23 through 2026-08-29",
+      "currentClicks": 0,
+      "currentImpressions": 0,
+      "previousClicks": 0,
+      "previousImpressions": 0,
+      "targetUrl": "https://network.madabase.com/guides/poe-extenders-vs-alternatives",
+      "sourceUrls": [
+        "https://network.madabase.com/guides/poe-extenders-buying-guide",
+        "https://network.madabase.com/guides/poe-extenders-compatibility-and-fit-guide",
+        "https://network.madabase.com/guides/poe-extenders-ownership-cost-and-maintenance"
+      ],
+      "protectedComparisonTarget": false,
+      "selectionEvidence": "Clear historical leader and current extender versus fiber or closer powered-switch decision intent."
+    },
+    {
+      "site": "network",
+      "familySlug": "sfp-plus-transceivers",
+      "targetRole": "fit",
+      "measurementWindow": "2026-08-30 through 2026-09-05 versus 2026-08-23 through 2026-08-29",
+      "currentClicks": 0,
+      "currentImpressions": 0,
+      "previousClicks": 0,
+      "previousImpressions": 0,
+      "targetUrl": "https://network.madabase.com/guides/sfp-plus-transceivers-compatibility-and-fit-guide",
+      "sourceUrls": [
+        "https://network.madabase.com/guides/sfp-plus-transceivers-buying-guide",
+        "https://network.madabase.com/guides/sfp-plus-transceivers-vs-alternatives",
+        "https://network.madabase.com/guides/sfp-plus-transceivers-ownership-cost-and-maintenance"
+      ],
+      "protectedComparisonTarget": false,
+      "selectionEvidence": "Strong historical leader and current compatibility-led intent around switch coding, speed, reach, fiber and DAC selection."
+    },
+    {
+      "site": "network",
+      "familySlug": "fiber-media-converters",
+      "targetRole": "comparison",
+      "measurementWindow": "2026-08-30 through 2026-09-05 versus 2026-08-23 through 2026-08-29",
+      "currentClicks": 0,
+      "currentImpressions": 0,
+      "previousClicks": 0,
+      "previousImpressions": 0,
+      "targetUrl": "https://network.madabase.com/guides/fiber-media-converters-vs-alternatives",
+      "sourceUrls": [
+        "https://network.madabase.com/guides/fiber-media-converters-buying-guide",
+        "https://network.madabase.com/guides/fiber-media-converters-compatibility-and-fit-guide",
+        "https://network.madabase.com/guides/fiber-media-converters-ownership-cost-and-maintenance"
+      ],
+      "protectedComparisonTarget": false,
+      "selectionEvidence": "Historical leader and current media-converter versus native-SFP switch intent."
+    },
+    {
+      "site": "network",
+      "familySlug": "network-attached-storage",
+      "targetRole": "comparison",
+      "measurementWindow": "2026-08-30 through 2026-09-05 versus 2026-08-23 through 2026-08-29",
+      "currentClicks": 0,
+      "currentImpressions": 0,
+      "previousClicks": 0,
+      "previousImpressions": 0,
+      "targetUrl": "https://network.madabase.com/guides/network-attached-storage-vs-alternatives",
+      "sourceUrls": [
+        "https://network.madabase.com/guides/network-attached-storage-buying-guide",
+        "https://network.madabase.com/guides/network-attached-storage-compatibility-and-fit-guide",
+        "https://network.madabase.com/guides/network-attached-storage-ownership-cost-and-maintenance"
+      ],
+      "protectedComparisonTarget": false,
+      "selectionEvidence": "Historical leader and current NAS versus DAS/cloud/home-server SERP intent."
+    },
+    {
+      "site": "network",
+      "familySlug": "dual-wan-routers",
+      "targetRole": "fit",
+      "measurementWindow": "2026-08-30 through 2026-09-05 versus 2026-08-23 through 2026-08-29",
+      "currentClicks": 0,
+      "currentImpressions": 0,
+      "previousClicks": 0,
+      "previousImpressions": 0,
+      "targetUrl": "https://network.madabase.com/guides/dual-wan-routers-compatibility-and-fit-guide",
+      "sourceUrls": [
+        "https://network.madabase.com/guides/dual-wan-routers-buying-guide",
+        "https://network.madabase.com/guides/dual-wan-routers-vs-alternatives",
+        "https://network.madabase.com/guides/dual-wan-routers-ownership-cost-and-maintenance"
+      ],
+      "protectedComparisonTarget": false,
+      "selectionEvidence": "Dominant historical role; current failover/load-balancing results make service, modem and policy fit the controlling decision."
+    },
+    {
+      "site": "network",
+      "familySlug": "five-g-home-internet-gateways",
+      "targetRole": "fit",
+      "measurementWindow": "2026-08-30 through 2026-09-05 versus 2026-08-23 through 2026-08-29",
+      "currentClicks": 0,
+      "currentImpressions": 0,
+      "previousClicks": 0,
+      "previousImpressions": 0,
+      "targetUrl": "https://network.madabase.com/guides/five-g-home-internet-gateways-compatibility-and-fit-guide",
+      "sourceUrls": [
+        "https://network.madabase.com/guides/five-g-home-internet-gateways-buying-guide",
+        "https://network.madabase.com/guides/five-g-home-internet-gateways-vs-alternatives",
+        "https://network.madabase.com/guides/five-g-home-internet-gateways-ownership-cost-and-maintenance"
+      ],
+      "protectedComparisonTarget": false,
+      "selectionEvidence": "Clear historical leader and current carrier, placement, signal and antenna compatibility intent."
+    },
+    {
+      "site": "network",
+      "familySlug": "home-network-racks",
+      "targetRole": "comparison",
+      "measurementWindow": "2026-08-30 through 2026-09-05 versus 2026-08-23 through 2026-08-29",
+      "currentClicks": 0,
+      "currentImpressions": 0,
+      "previousClicks": 0,
+      "previousImpressions": 0,
+      "targetUrl": "https://network.madabase.com/guides/home-network-racks-vs-alternatives",
+      "sourceUrls": [
+        "https://network.madabase.com/guides/home-network-racks-buying-guide",
+        "https://network.madabase.com/guides/home-network-racks-compatibility-and-fit-guide",
+        "https://network.madabase.com/guides/home-network-racks-ownership-cost-and-maintenance"
+      ],
+      "protectedComparisonTarget": false,
+      "selectionEvidence": "Clear historical leader and current wall-rack versus cabinet/shelf/floor-rack SERP intent."
+    },
+    {
+      "site": "network",
+      "familySlug": "ethernet-cable-testers",
+      "targetRole": "fit",
+      "measurementWindow": "2026-08-30 through 2026-09-05 versus 2026-08-23 through 2026-08-29",
+      "currentClicks": 0,
+      "currentImpressions": 0,
+      "previousClicks": 0,
+      "previousImpressions": 0,
+      "targetUrl": "https://network.madabase.com/guides/ethernet-cable-testers-compatibility-and-fit-guide",
+      "sourceUrls": [
+        "https://network.madabase.com/guides/ethernet-cable-testers-buying-guide",
+        "https://network.madabase.com/guides/ethernet-cable-testers-vs-alternatives",
+        "https://network.madabase.com/guides/ethernet-cable-testers-ownership-cost-and-maintenance"
+      ],
+      "protectedComparisonTarget": false,
+      "selectionEvidence": "Dominant historical role; current SERP separates continuity, verification, qualification and certification by the job the tester must fit."
+    },
+    {
+      "site": "pet",
+      "familySlug": "large-dog-water-fountains",
+      "targetRole": "comparison",
+      "measurementWindow": "2026-08-30 through 2026-09-05 versus 2026-08-23 through 2026-08-29",
+      "currentClicks": 0,
+      "currentImpressions": 0,
+      "previousClicks": 0,
+      "previousImpressions": 0,
+      "targetUrl": "https://pets.madabase.com/guides/large-dog-water-fountains-vs-alternatives",
+      "sourceUrls": [
+        "https://pets.madabase.com/guides/large-dog-water-fountains-buying-guide",
+        "https://pets.madabase.com/guides/large-dog-water-fountains-compatibility-and-fit-guide",
+        "https://pets.madabase.com/guides/large-dog-water-fountains-ownership-cost-and-maintenance",
+        "https://pets.madabase.com/guides/large-dog-water-fountains-setup-and-daily-workflow"
+      ],
+      "protectedComparisonTarget": true,
+      "selectionEvidence": "The comparison URL is a protected September 4 target, with current fountain-versus-large-bowl decision coverage."
+    },
+    {
+      "site": "pet",
+      "familySlug": "cat-gps-trackers",
+      "targetRole": "workflow",
+      "measurementWindow": "2026-08-30 through 2026-09-05 versus 2026-08-23 through 2026-08-29",
+      "currentClicks": 0,
+      "currentImpressions": 0,
+      "previousClicks": 0,
+      "previousImpressions": 0,
+      "targetUrl": "https://pets.madabase.com/guides/cat-gps-trackers-setup-and-daily-workflow",
+      "sourceUrls": [
+        "https://pets.madabase.com/guides/cat-gps-trackers-buying-guide",
+        "https://pets.madabase.com/guides/cat-gps-trackers-vs-alternatives",
+        "https://pets.madabase.com/guides/cat-gps-trackers-compatibility-and-fit-guide",
+        "https://pets.madabase.com/guides/cat-gps-trackers-ownership-cost-and-maintenance"
+      ],
+      "protectedComparisonTarget": false,
+      "selectionEvidence": "Dominant historical role; charging, collar checks, app state and recovery practice define the usable daily decision."
+    },
+    {
+      "site": "pet",
+      "familySlug": "airtag-pet-collar-holders",
+      "targetRole": "workflow",
+      "measurementWindow": "2026-08-30 through 2026-09-05 versus 2026-08-23 through 2026-08-29",
+      "currentClicks": 0,
+      "currentImpressions": 0,
+      "previousClicks": 0,
+      "previousImpressions": 0,
+      "targetUrl": "https://pets.madabase.com/guides/airtag-pet-collar-holders-setup-and-daily-workflow",
+      "sourceUrls": [
+        "https://pets.madabase.com/guides/airtag-pet-collar-holders-buying-guide",
+        "https://pets.madabase.com/guides/airtag-pet-collar-holders-vs-alternatives",
+        "https://pets.madabase.com/guides/airtag-pet-collar-holders-compatibility-and-fit-guide",
+        "https://pets.madabase.com/guides/airtag-pet-collar-holders-ownership-cost-and-maintenance"
+      ],
+      "protectedComparisonTarget": false,
+      "selectionEvidence": "Dominant historical role and current attachment, collar-fit, breakaway and routine inspection intent."
+    },
+    {
+      "site": "pet",
+      "familySlug": "microchip-pet-doors",
+      "targetRole": "comparison",
+      "measurementWindow": "2026-08-30 through 2026-09-05 versus 2026-08-23 through 2026-08-29",
+      "currentClicks": 0,
+      "currentImpressions": 0,
+      "previousClicks": 0,
+      "previousImpressions": 0,
+      "targetUrl": "https://pets.madabase.com/guides/microchip-pet-doors-vs-alternatives",
+      "sourceUrls": [
+        "https://pets.madabase.com/guides/microchip-pet-doors-buying-guide",
+        "https://pets.madabase.com/guides/microchip-pet-doors-compatibility-and-fit-guide",
+        "https://pets.madabase.com/guides/microchip-pet-doors-ownership-cost-and-maintenance",
+        "https://pets.madabase.com/guides/microchip-pet-doors-setup-and-daily-workflow"
+      ],
+      "protectedComparisonTarget": false,
+      "selectionEvidence": "Clear historical leader and current microchip-versus-collar-key door SERP intent."
+    },
+    {
+      "site": "pet",
+      "familySlug": "cat-litter-mats",
+      "targetRole": "fit",
+      "measurementWindow": "2026-08-30 through 2026-09-05 versus 2026-08-23 through 2026-08-29",
+      "currentClicks": 0,
+      "currentImpressions": 0,
+      "previousClicks": 0,
+      "previousImpressions": 0,
+      "targetUrl": "https://pets.madabase.com/guides/cat-litter-mats-compatibility-and-fit-guide",
+      "sourceUrls": [
+        "https://pets.madabase.com/guides/cat-litter-mats-buying-guide",
+        "https://pets.madabase.com/guides/cat-litter-mats-vs-alternatives",
+        "https://pets.madabase.com/guides/cat-litter-mats-ownership-cost-and-maintenance",
+        "https://pets.madabase.com/guides/cat-litter-mats-setup-and-daily-workflow"
+      ],
+      "protectedComparisonTarget": false,
+      "selectionEvidence": "Only historical exposure belongs to fit; current intent centers on exit path, mat dimensions, texture, floor and cleaning compatibility."
+    },
+    {
+      "site": "pet",
+      "familySlug": "deshedding-brushes",
+      "targetRole": "comparison",
+      "measurementWindow": "2026-08-30 through 2026-09-05 versus 2026-08-23 through 2026-08-29",
+      "currentClicks": 0,
+      "currentImpressions": 0,
+      "previousClicks": 0,
+      "previousImpressions": 0,
+      "targetUrl": "https://pets.madabase.com/guides/deshedding-brushes-vs-alternatives",
+      "sourceUrls": [
+        "https://pets.madabase.com/guides/deshedding-brushes-buying-guide",
+        "https://pets.madabase.com/guides/deshedding-brushes-compatibility-and-fit-guide",
+        "https://pets.madabase.com/guides/deshedding-brushes-ownership-cost-and-maintenance",
+        "https://pets.madabase.com/guides/deshedding-brushes-setup-and-daily-workflow"
+      ],
+      "protectedComparisonTarget": true,
+      "selectionEvidence": "The comparison URL is a protected September 4 target; preserve its brush-versus-vacuum decision and merge the stronger workflow evidence below it."
+    },
+    {
+      "site": "pet",
+      "familySlug": "cooling-pet-beds",
+      "targetRole": "workflow",
+      "measurementWindow": "2026-08-30 through 2026-09-05 versus 2026-08-23 through 2026-08-29",
+      "currentClicks": 0,
+      "currentImpressions": 0,
+      "previousClicks": 0,
+      "previousImpressions": 0,
+      "targetUrl": "https://pets.madabase.com/guides/cooling-pet-beds-setup-and-daily-workflow",
+      "sourceUrls": [
+        "https://pets.madabase.com/guides/cooling-pet-beds-buying-guide",
+        "https://pets.madabase.com/guides/cooling-pet-beds-vs-alternatives",
+        "https://pets.madabase.com/guides/cooling-pet-beds-compatibility-and-fit-guide",
+        "https://pets.madabase.com/guides/cooling-pet-beds-ownership-cost-and-maintenance"
+      ],
+      "protectedComparisonTarget": false,
+      "selectionEvidence": "Clear historical leader and current placement, pet acceptance, cleaning, supervision and free-movement intent."
+    },
+    {
+      "site": "pet",
+      "familySlug": "dog-ramps",
+      "targetRole": "comparison",
+      "measurementWindow": "2026-08-30 through 2026-09-05 versus 2026-08-23 through 2026-08-29",
+      "currentClicks": 0,
+      "currentImpressions": 0,
+      "previousClicks": 0,
+      "previousImpressions": 0,
+      "targetUrl": "https://pets.madabase.com/guides/dog-ramps-vs-alternatives",
+      "sourceUrls": [
+        "https://pets.madabase.com/guides/dog-ramps-buying-guide",
+        "https://pets.madabase.com/guides/dog-ramps-compatibility-and-fit-guide",
+        "https://pets.madabase.com/guides/dog-ramps-ownership-cost-and-maintenance",
+        "https://pets.madabase.com/guides/dog-ramps-setup-and-daily-workflow"
+      ],
+      "protectedComparisonTarget": true,
+      "selectionEvidence": "The comparison URL is a protected September 4 target; preserve its ramp-versus-stairs decision and merge the strong length, rise and angle fit material below it."
+    },
+    {
+      "site": "pet",
+      "familySlug": "automatic-aquarium-feeders",
+      "targetRole": "workflow",
+      "measurementWindow": "2026-08-30 through 2026-09-05 versus 2026-08-23 through 2026-08-29",
+      "currentClicks": 0,
+      "currentImpressions": 0,
+      "previousClicks": 0,
+      "previousImpressions": 0,
+      "targetUrl": "https://pets.madabase.com/guides/automatic-aquarium-feeders-setup-and-daily-workflow",
+      "sourceUrls": [
+        "https://pets.madabase.com/guides/automatic-aquarium-feeders-buying-guide",
+        "https://pets.madabase.com/guides/automatic-aquarium-feeders-vs-alternatives",
+        "https://pets.madabase.com/guides/automatic-aquarium-feeders-compatibility-and-fit-guide",
+        "https://pets.madabase.com/guides/automatic-aquarium-feeders-ownership-cost-and-maintenance"
+      ],
+      "protectedComparisonTarget": false,
+      "selectionEvidence": "Historical tie resolved by current setup, portion-test, humidity, battery and manual-backup workflow intent."
+    },
+    {
+      "site": "pet",
+      "familySlug": "aquarium-water-monitors",
+      "targetRole": "workflow",
+      "measurementWindow": "2026-08-30 through 2026-09-05 versus 2026-08-23 through 2026-08-29",
+      "currentClicks": 0,
+      "currentImpressions": 0,
+      "previousClicks": 0,
+      "previousImpressions": 0,
+      "targetUrl": "https://pets.madabase.com/guides/aquarium-water-monitors-setup-and-daily-workflow",
+      "sourceUrls": [
+        "https://pets.madabase.com/guides/aquarium-water-monitors-buying-guide",
+        "https://pets.madabase.com/guides/aquarium-water-monitors-vs-alternatives",
+        "https://pets.madabase.com/guides/aquarium-water-monitors-compatibility-and-fit-guide",
+        "https://pets.madabase.com/guides/aquarium-water-monitors-ownership-cost-and-maintenance"
+      ],
+      "protectedComparisonTarget": false,
+      "selectionEvidence": "Historical leader and current calibration, probe care, manual cross-check and alert-response workflow intent."
+    }
+  ]
+}
