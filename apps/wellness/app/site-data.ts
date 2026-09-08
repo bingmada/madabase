@@ -42,6 +42,7 @@ export const principles = [
 ];
 
 export type ProductPick = {
+  slug: string;
   name: string;
   merchant: string;
   category: string;
@@ -53,7 +54,8 @@ export type ProductPick = {
   specs: Array<{ label: string; value: string }>;
   imageUrl: string;
   price: string;
-  affiliateUrl?: string;
+  destinationUrl: string;
+  affiliateUrl: string;
 };
 
 export type WellnessCategory = {
@@ -63,15 +65,25 @@ export type WellnessCategory = {
   description: string;
   decision: string;
   productNames: string[];
-  availability: "active" | "expanding";
+  availability: "active" | "hidden";
   shoppingFocus: string;
 };
 
-const avidloveProductLink = (destination: string) =>
+export const avidloveCj = {
+  advertiserCid: "6917385",
+  pid: "101832972",
+  aid: "15722800",
+  allowedDestinationHosts: ["avidlove.com", "www.avidlove.com"],
+} as const;
+
+export const avidloveProductLink = (destination: string) =>
   `https://www.jdoqocy.com/click-101832972-15722800?url=${encodeURIComponent(destination)}`;
+
+const affiliatePath = (slug: string) => `/go/cj/${slug}`;
 
 export const productPicks: ProductPick[] = [
   {
+    slug: "floral-embroidery-underwire-set",
     name: "Floral Embroidery Underwire Lingerie Set",
     merchant: "Avidlove",
     category: "Lingerie",
@@ -87,9 +99,11 @@ export const productPicks: ProductPick[] = [
     ],
     imageUrl: "https://avidlove.com/cdn/shop/files/AML010033_PAT2-2.jpg?v=1743596749&width=1200",
     price: "$26.99",
-    affiliateUrl: avidloveProductLink("https://avidlove.com/products/avidlove-womens-floral-embroidery-underwire-lingerie-set"),
+    destinationUrl: "https://avidlove.com/products/avidlove-womens-floral-embroidery-underwire-lingerie-set",
+    affiliateUrl: affiliatePath("floral-embroidery-underwire-set"),
   },
   {
+    slug: "lace-v-neck-bra-panty-set",
     name: "Lace V-Neck Bra And Panty Set",
     merchant: "Avidlove",
     category: "Lingerie",
@@ -105,9 +119,11 @@ export const productPicks: ProductPick[] = [
     ],
     imageUrl: "https://avidlove.com/cdn/shop/files/AML008522_B-1.jpg?v=1750395405&width=1200",
     price: "$26.99",
-    affiliateUrl: avidloveProductLink("https://avidlove.com/products/avidlove-lingerie-set-for-women-2-piece-lace-babydoll-sexy-v-neck-bra-and-panty-sets"),
+    destinationUrl: "https://avidlove.com/products/avidlove-lingerie-set-for-women-2-piece-lace-babydoll-sexy-v-neck-bra-and-panty-sets",
+    affiliateUrl: affiliatePath("lace-v-neck-bra-panty-set"),
   },
   {
+    slug: "satin-pajamas-cami-shorts",
     name: "Satin Pajamas Cami Shorts Set",
     merchant: "Avidlove",
     category: "Nightwear",
@@ -123,9 +139,11 @@ export const productPicks: ProductPick[] = [
     ],
     imageUrl: "https://avidlove.com/cdn/shop/files/AML009495_SD141-1.jpg?v=1761291726&width=1200",
     price: "$32.99",
-    affiliateUrl: avidloveProductLink("https://avidlove.com/products/avidlove-satin-pajamas-set-sleepwear-womens-sexy-lingerie-cami-shorts-set-nightwear-s-xxl"),
+    destinationUrl: "https://avidlove.com/products/avidlove-satin-pajamas-set-sleepwear-womens-sexy-lingerie-cami-shorts-set-nightwear-s-xxl",
+    affiliateUrl: affiliatePath("satin-pajamas-cami-shorts"),
   },
   {
+    slug: "short-sleeve-pajama-set",
     name: "Short Sleeve Pajama Set",
     merchant: "Avidlove",
     category: "Nightwear",
@@ -141,9 +159,11 @@ export const productPicks: ProductPick[] = [
     ],
     imageUrl: "https://avidlove.com/cdn/shop/files/AMK006067_DR-4.jpg?v=1750315734&width=1200",
     price: "$32.99",
-    affiliateUrl: avidloveProductLink("https://avidlove.com/products/avidlove-womens-shorts-pajama-set-short-sleeve-sleepwear-nightwear-pjs-s-xxl"),
+    destinationUrl: "https://avidlove.com/products/avidlove-womens-shorts-pajama-set-short-sleeve-sleepwear-nightwear-pjs-s-xxl",
+    affiliateUrl: affiliatePath("short-sleeve-pajama-set"),
   },
   {
+    slug: "modal-cami-pajama-set",
     name: "Modal Cami Pajama Set",
     merchant: "Avidlove",
     category: "Nightwear",
@@ -155,9 +175,11 @@ export const productPicks: ProductPick[] = [
     specs: [{ label: "Retailer", value: "Avidlove via CJ" }, { label: "Format", value: "Modal cami and shorts" }, { label: "Catalog price", value: "$27.99" }],
     imageUrl: "https://avidlove.com/cdn/shop/files/AML008629_PAT17-2.jpg?v=1750315671&width=1200",
     price: "$27.99",
-    affiliateUrl: avidloveProductLink("https://avidlove.com/products/avidlove-women-cami-pajama-set-modal-sleepwear-lace-trim-short-pj-set-with-shorts"),
+    destinationUrl: "https://avidlove.com/products/avidlove-women-cami-pajama-set-modal-sleepwear-lace-trim-short-pj-set-with-shorts",
+    affiliateUrl: affiliatePath("modal-cami-pajama-set"),
   },
   {
+    slug: "lace-pajamas-cami-set",
     name: "Lace Pajamas Cami Set",
     merchant: "Avidlove",
     category: "Nightwear",
@@ -169,9 +191,11 @@ export const productPicks: ProductPick[] = [
     specs: [{ label: "Retailer", value: "Avidlove via CJ" }, { label: "Format", value: "Cami PJ set" }, { label: "Catalog price", value: "$32.99" }],
     imageUrl: "https://avidlove.com/cdn/shop/files/AML007942_SD141-7.jpg?v=1750393841&width=1200",
     price: "$32.99",
-    affiliateUrl: avidloveProductLink("https://avidlove.com/products/avidlove-sleepwear-lace-pajamas-cami-pjs-set-pajama-set-for-women"),
+    destinationUrl: "https://avidlove.com/products/avidlove-sleepwear-lace-pajamas-cami-pjs-set-pajama-set-for-women",
+    affiliateUrl: affiliatePath("lace-pajamas-cami-set"),
   },
   {
+    slug: "satin-nightgown-mini-slip",
     name: "Satin Nightgown Mini Slip",
     merchant: "Avidlove",
     category: "Babydolls and chemises",
@@ -183,9 +207,11 @@ export const productPicks: ProductPick[] = [
     specs: [{ label: "Retailer", value: "Avidlove via CJ" }, { label: "Format", value: "One-piece slip" }, { label: "Catalog price", value: "$24.99" }],
     imageUrl: "https://avidlove.com/cdn/shop/files/AML009073_R-3_e06c64f8-e05b-4c3a-86c6-eed224f3db6a.jpg?v=1750391090&width=1200",
     price: "$24.99",
-    affiliateUrl: avidloveProductLink("https://avidlove.com/products/avidlove-women-sleepwear-satin-nightgown-mini-slip-chemise-short-nightwear"),
+    destinationUrl: "https://avidlove.com/products/avidlove-women-sleepwear-satin-nightgown-mini-slip-chemise-short-nightwear",
+    affiliateUrl: affiliatePath("satin-nightgown-mini-slip"),
   },
   {
+    slug: "lace-v-neck-full-slip",
     name: "Lace V-Neck Full Slip Sleep Dress",
     merchant: "Avidlove",
     category: "Babydolls and chemises",
@@ -197,9 +223,11 @@ export const productPicks: ProductPick[] = [
     specs: [{ label: "Retailer", value: "Avidlove via CJ" }, { label: "Format", value: "Full-slip sleep dress" }, { label: "Catalog price", value: "$34.99" }],
     imageUrl: "https://avidlove.com/cdn/shop/files/AML008606_AX31-1.jpg?v=1750397228&width=1200",
     price: "$34.99",
-    affiliateUrl: avidloveProductLink("https://avidlove.com/products/avidlove-babydoll-nightgown-chemises-lace-modal-sleepwear-v-neck-full-slip-sleep-dress"),
+    destinationUrl: "https://avidlove.com/products/avidlove-babydoll-nightgown-chemises-lace-modal-sleepwear-v-neck-full-slip-sleep-dress",
+    affiliateUrl: affiliatePath("lace-v-neck-full-slip"),
   },
   {
+    slug: "satin-lace-chemise-mini-slip",
     name: "Satin Lace Chemise Mini Full Slip",
     merchant: "Avidlove",
     category: "Babydolls and chemises",
@@ -211,9 +239,11 @@ export const productPicks: ProductPick[] = [
     specs: [{ label: "Retailer", value: "Avidlove via CJ" }, { label: "Format", value: "Satin mini chemise" }, { label: "Catalog price", value: "$28.99" }],
     imageUrl: "https://avidlove.com/cdn/shop/files/AML006253_DH331-1_925e2bfb-bac6-4eb6-956d-13578ba0fa5b.jpg?v=1750389009&width=1200",
     price: "$28.99",
-    affiliateUrl: avidloveProductLink("https://avidlove.com/products/avidlove-womens-nightwear-sexy-satin-sleepwear-lace-chemises-mini-full-slip"),
+    destinationUrl: "https://avidlove.com/products/avidlove-womens-nightwear-sexy-satin-sleepwear-lace-chemises-mini-full-slip",
+    affiliateUrl: affiliatePath("satin-lace-chemise-mini-slip"),
   },
   {
+    slug: "satin-kimono-wedding-robe",
     name: "Satin Kimono Wedding Party Robe",
     merchant: "Avidlove",
     category: "Robes and cover-ups",
@@ -225,9 +255,11 @@ export const productPicks: ProductPick[] = [
     specs: [{ label: "Retailer", value: "Avidlove via CJ" }, { label: "Layer", value: "Short satin robe" }, { label: "Catalog price", value: "$26.49" }],
     imageUrl: "https://avidlove.com/cdn/shop/files/AMY005937_B-1.jpg?v=1750316218&width=1200",
     price: "$26.49",
-    affiliateUrl: avidloveProductLink("https://avidlove.com/products/avidlove-womens-satin-kimono-robe-for-bridesmaid-and-bride-wedding-party-getting-ready-short-robe"),
+    destinationUrl: "https://avidlove.com/products/avidlove-womens-satin-kimono-robe-for-bridesmaid-and-bride-wedding-party-getting-ready-short-robe",
+    affiliateUrl: affiliatePath("satin-kimono-wedding-robe"),
   },
   {
+    slug: "floral-sheer-lace-kimono",
     name: "Floral Sheer Lace Kimono Robe",
     merchant: "Avidlove",
     category: "Robes and cover-ups",
@@ -239,9 +271,11 @@ export const productPicks: ProductPick[] = [
     specs: [{ label: "Retailer", value: "Avidlove via CJ" }, { label: "Layer", value: "Sheer kimono robe" }, { label: "Catalog price", value: "$27.98" }],
     imageUrl: "https://avidlove.com/cdn/shop/files/AML006126_B-4.jpg?v=1744871838&width=1200",
     price: "$27.98",
-    affiliateUrl: avidloveProductLink("https://avidlove.com/products/avidlove-women-kimono-robe-floral-lace-babydoll-lingerie-sheer-mesh-nightgown"),
+    destinationUrl: "https://avidlove.com/products/avidlove-women-kimono-robe-floral-lace-babydoll-lingerie-sheer-mesh-nightgown",
+    affiliateUrl: affiliatePath("floral-sheer-lace-kimono"),
   },
   {
+    slug: "lace-kimono-mesh-nightgown",
     name: "Lace Kimono Robe Mesh Nightgown",
     merchant: "Avidlove",
     category: "Robes and cover-ups",
@@ -253,9 +287,11 @@ export const productPicks: ProductPick[] = [
     specs: [{ label: "Retailer", value: "Avidlove via CJ" }, { label: "Layer", value: "Lace kimono robe" }, { label: "Catalog price", value: "$34.99" }],
     imageUrl: "https://avidlove.com/cdn/shop/files/AML006103_B-1.jpg?v=1750390669&width=1200",
     price: "$34.99",
-    affiliateUrl: avidloveProductLink("https://avidlove.com/products/avidlove-womens-lace-kimono-robe-babydoll-lingerie-mesh-nightgown-s-5xl"),
+    destinationUrl: "https://avidlove.com/products/avidlove-womens-lace-kimono-robe-babydoll-lingerie-mesh-nightgown-s-5xl",
+    affiliateUrl: affiliatePath("lace-kimono-mesh-nightgown"),
   },
   {
+    slug: "high-neck-lace-bralette",
     name: "High-Neck Lace Bralette",
     merchant: "Avidlove",
     category: "Bralettes and basics",
@@ -267,7 +303,8 @@ export const productPicks: ProductPick[] = [
     specs: [{ label: "Retailer", value: "Avidlove via CJ" }, { label: "Shape", value: "High neck, racerback" }, { label: "Catalog price", value: "$26.99" }],
     imageUrl: "https://avidlove.com/cdn/shop/files/AML009144_B-_3.jpg?v=1750316330&width=1200",
     price: "$26.99",
-    affiliateUrl: avidloveProductLink("https://avidlove.com/products/avidlove-lace-bralette-for-women-high-neck-camisoles-racerback-double-layered-crop-top"),
+    destinationUrl: "https://avidlove.com/products/avidlove-lace-bralette-for-women-high-neck-camisoles-racerback-double-layered-crop-top",
+    affiliateUrl: affiliatePath("high-neck-lace-bralette"),
   },
 ];
 
@@ -319,7 +356,7 @@ export const wellnessCategories: WellnessCategory[] = [
     description: "A fit-led starting point for lighter-support bralettes and foundational layers.",
     decision: "Use this section when straps, coverage, neckline, and the level of daily support are the main decisions.",
     productNames: ["High-Neck Lace Bralette"],
-    availability: "active",
+    availability: "hidden",
     shoppingFocus: "Band, straps, daily support",
   },
   {
@@ -329,7 +366,7 @@ export const wellnessCategories: WellnessCategory[] = [
     description: "Relaxed pieces for home routines, travel days, and layering between sleep and daytime.",
     decision: "Start here when ease of movement, fabric weight, and repeat wear matter more than sleep-specific design.",
     productNames: [],
-    availability: "expanding",
+    availability: "hidden",
     shoppingFocus: "Movement, weight, repeat wear",
   },
   {
@@ -339,7 +376,7 @@ export const wellnessCategories: WellnessCategory[] = [
     description: "A future practical guide to smoothing, layering, and comfort under occasion outfits.",
     decision: "Use this section when your key decision is level of compression, garment length, and outfit compatibility.",
     productNames: [],
-    availability: "expanding",
+    availability: "hidden",
     shoppingFocus: "Compression, length, occasion",
   },
   {
@@ -349,7 +386,7 @@ export const wellnessCategories: WellnessCategory[] = [
     description: "A future directory for tights, socks, and hosiery chosen by opacity, warmth, and durability.",
     decision: "Start here when denier, rise, warmth, and wear life are the decisions that matter.",
     productNames: [],
-    availability: "expanding",
+    availability: "hidden",
     shoppingFocus: "Opacity, warmth, durability",
   },
 ];

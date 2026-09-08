@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, CheckCircle2, ExternalLink } from "lucide-react";
+import { AffiliateLink } from "@/components/AffiliateLink";
 import { productPicks, site, wellnessCategories } from "@/app/site-data";
 
 type PageProps = {
@@ -12,9 +13,11 @@ type PageProps = {
 };
 
 export function generateStaticParams() {
-  return wellnessCategories.map((category) => ({
-    slug: category.slug,
-  }));
+  return wellnessCategories
+    .filter((category) => category.availability === "active")
+    .map((category) => ({
+      slug: category.slug,
+    }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -33,6 +36,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     alternates: {
       canonical: `${site.domain}/categories/${category.slug}`,
     },
+    ...(category.availability === "hidden"
+      ? {
+          robots: {
+            index: false,
+            follow: true,
+            nocache: true,
+          },
+        }
+      : {}),
   };
 }
 
@@ -40,7 +52,7 @@ export default async function Page({ params }: PageProps) {
   const { slug } = await params;
   const category = wellnessCategories.find((item) => item.slug === slug);
 
-  if (!category) notFound();
+  if (!category || category.availability === "hidden") notFound();
 
   const products = productPicks.filter((product) =>
     category.productNames.includes(product.name),
@@ -61,7 +73,7 @@ export default async function Page({ params }: PageProps) {
       <section className="link-disabled-banner">
         <CheckCircle2 size={20} aria-hidden="true" />
         <div>
-          <h2>{category.availability === "active" ? "Decision Rule" : "Coverage In Progress"}</h2>
+          <h2>Decision Rule</h2>
           <p>{category.decision}</p>
         </div>
       </section>
@@ -83,6 +95,7 @@ export default async function Page({ params }: PageProps) {
               <p className="guide-meta">{product.category} <span className="catalog-price">Catalog reference {product.price}</span></p>
               <h2>{product.name}</h2>
               <p>{product.editorialNote}</p>
+              <p className="evidence-note"><strong>Evidence:</strong> official retailer listing and CJ catalog; not a hands-on test.</p>
               <dl className="spec-list">
                 {product.specs.map((spec) => (
                   <div key={spec.label}>
@@ -101,37 +114,21 @@ export default async function Page({ params }: PageProps) {
                   <p>{product.skipIf}</p>
                 </div>
               </div>
-              {product.affiliateUrl ? (
-                <a
-                  className="button button-primary"
-                  href={product.affiliateUrl}
-                  rel="sponsored nofollow"
-                  target="_blank"
-                >
-                  View At {product.merchant}
-                  <ExternalLink size={16} aria-hidden="true" />
-                </a>
-              ) : (
-                <div className="disabled-cta">{product.status}</div>
-              )}
+              <AffiliateLink
+                className="button button-primary"
+                href={product.affiliateUrl}
+                merchant={product.merchant}
+                position={`category-${category.slug}`}
+                productSlug={product.slug}
+              >
+                View At {product.merchant}
+                <ExternalLink size={16} aria-hidden="true" />
+              </AffiliateLink>
             </div>
           </article>
           ))}
         </section>
-      ) : (
-        <section className="coverage-pending">
-          <p className="section-label">Partner coverage</p>
-          <h2>This category is ready for research, not retailer links yet.</h2>
-          <p>
-            We will add products only after an appropriate partner program is
-            approved and its current catalog details are checked.
-          </p>
-          <Link className="text-link compact-link" href="/categories">
-            Browse active collections
-            <ArrowLeft size={16} aria-hidden="true" />
-          </Link>
-        </section>
-      )}
+      ) : null}
     </main>
   );
 }

@@ -1,19 +1,23 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, ExternalLink } from "lucide-react";
+import { AffiliateLink } from "@/components/AffiliateLink";
 import { principles, productPicks, wellnessCategories } from "./site-data";
 
 export default function Home() {
   const activeCategories = wellnessCategories.filter(
     (category) => category.availability === "active",
   );
-  const expandingCategories = wellnessCategories.filter(
-    (category) => category.availability === "expanding",
+  const activeCategorySlugs = new Set(
+    activeCategories.map((category) => category.slug),
+  );
+  const activeProducts = productPicks.filter((product) =>
+    activeCategorySlugs.has(product.categorySlug),
   );
   const featuredProducts = [
     productPicks.find((product) => product.name === "Modal Cami Pajama Set"),
     productPicks.find((product) => product.name === "Satin Kimono Wedding Party Robe"),
-    productPicks.find((product) => product.name === "High-Neck Lace Bralette"),
+    productPicks.find((product) => product.name === "Floral Embroidery Underwire Lingerie Set"),
   ].filter(Boolean);
 
   return (
@@ -74,20 +78,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section expansion-section">
-        <div className="section-heading section-heading-row">
-          <div><p className="section-label">Directory expansion</p><h2>More everyday categories are being built.</h2></div>
-          <p>The taxonomy is ready, while retailer coverage is added only after a program is approved and its destination is checked.</p>
-        </div>
-        <div className="expansion-list">
-          {expandingCategories.map((category) => (
-            <Link href={`/categories/${category.slug}`} key={category.slug}>
-              <span className="expansion-name">{category.title}</span><span>{category.shoppingFocus}</span><span className="expansion-status">In progress</span><ArrowRight size={17} aria-hidden="true" />
-            </Link>
-          ))}
-        </div>
-      </section>
-
       <section className="partner-focus" id="active-collections">
         <div className="partner-focus-copy">
           <p className="section-label">Active retailer coverage</p><h2>One approved partner, clearly labeled.</h2>
@@ -96,7 +86,7 @@ export default function Home() {
         </div>
         <div className="active-partner-panel">
           <div className="active-partner-heading"><span className="partner-monogram">A</span><div><strong>Avidlove via CJ</strong><span>Approved product links</span></div><CheckCircle2 size={20} aria-hidden="true" /></div>
-          <div className="active-partner-metrics"><div><strong>{productPicks.length}</strong><span>Live picks</span></div><div><strong>US</strong><span>Current market</span></div><div><strong>1</strong><span>Verified partner</span></div></div>
+          <div className="active-partner-metrics"><div><strong>{activeProducts.length}</strong><span>Live picks</span></div><div><strong>US</strong><span>Current market</span></div><div><strong>1</strong><span>Verified partner</span></div></div>
         </div>
       </section>
 
@@ -114,7 +104,7 @@ export default function Home() {
                   unoptimized
                 />
               </div>
-              <div className="featured-product-copy"><p className="guide-meta">{product.category} <span>{product.price}</span></p><h3>{product.name}</h3><p>{product.bestFor}</p><a className="text-link product-link" href={product.affiliateUrl} rel="sponsored nofollow" target="_blank">View at Avidlove<ExternalLink size={16} aria-hidden="true" /></a></div>
+              <div className="featured-product-copy"><p className="guide-meta">{product.category} <span>{product.price}</span></p><h3>{product.name}</h3><p>{product.bestFor}</p><AffiliateLink className="text-link product-link" href={product.affiliateUrl} merchant={product.merchant} position={`homepage-featured-${index + 1}`} productSlug={product.slug}>View at Avidlove<ExternalLink size={16} aria-hidden="true" /></AffiliateLink></div>
             </article>
           ))}
         </div>

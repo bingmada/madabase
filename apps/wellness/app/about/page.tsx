@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "About Madabase Intimates and its lingerie editorial scope.",
+  description: "About Madabase Women's Edit and its lingerie editorial scope.",
   alternates: {
     canonical: "/about",
   },
@@ -13,9 +13,9 @@ export default function Page() {
     <main className="legal-page">
       <header className="page-hero">
         <p className="section-label">About</p>
-        <h1>Intimates, Kept Practical</h1>
+        <h1>Women&apos;s Intimates, Kept Practical</h1>
         <p>
-          Madabase Intimates is an editorial project focused on practical
+          Madabase Women&apos;s Edit is an editorial project focused on practical
           lingerie and sleepwear buying guidance.
         </p>
       </header>

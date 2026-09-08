@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Affiliate Disclosure",
-  description: "Affiliate disclosure for Madabase Wellness.",
+  description: "Affiliate disclosure for Madabase Women's Edit.",
   alternates: {
     canonical: "/affiliate-disclosure",
   },
@@ -15,7 +15,7 @@ export default function Page() {
         <p className="section-label">Disclosure</p>
         <h1>Affiliate Disclosure</h1>
         <p>
-          Some pages may include paid links to approved lingerie and sleepwear
+          Some pages include paid links to approved lingerie and sleepwear
           retailers.
         </p>
       </header>
@@ -23,12 +23,12 @@ export default function Page() {
         <p>
           If you buy through a paid link, we may earn a commission at no extra
           cost to you. Any paid relationship will be disclosed near relevant
-          links and on affected pages.
+          links and on the affected pages.
         </p>
         <p>
           This project does not use Amazon Associates links or Amazon tracking
-          IDs. Avidlove is approved through CJ; links remain disabled until each
-          retailer destination and tracking URL is verified.
+          IDs. Avidlove is approved through CJ. Active links are labeled as
+          sponsored and are enabled only for verified Avidlove destinations.
         </p>
       </section>
     </main>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Sparkles } from "lucide-react";
+import { ClarityAnalytics } from "@/components/ClarityAnalytics";
 import "./globals.css";
 import { site } from "./site-data";
 
@@ -28,6 +29,7 @@ export default function RootLayout({
         <meta name="impact-site-verification" value="ba96bb1e-788f-4f05-80ec-38b7ceb8d31a" />
       </head>
       <body>
+        <ClarityAnalytics projectId={process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID ?? "xlte5zsd33"} />
         <header className="site-header">
           <Link className="brand" href="/">
             <span className="brand-mark">

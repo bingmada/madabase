@@ -13,13 +13,15 @@ const staticPaths = [
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
+  const contentLastModified = new Date("2026-09-08T00:00:00.000Z");
   return [
     ...staticPaths,
-    ...wellnessCategories.map((category) => `/categories/${category.slug}`),
+    ...wellnessCategories
+      .filter((category) => category.availability === "active")
+      .map((category) => `/categories/${category.slug}`),
   ].map((path) => ({
     url: `${site.domain}${path}`,
-    lastModified: now,
+    lastModified: contentLastModified,
     changeFrequency: "weekly",
     priority: path === "" ? 1 : 0.7,
   }));

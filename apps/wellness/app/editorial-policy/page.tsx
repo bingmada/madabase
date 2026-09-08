@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Editorial Policy",
-  description: "Editorial standards for Madabase Wellness.",
+  description: "Editorial standards for Madabase Women's Edit.",
   alternates: {
     canonical: "/editorial-policy",
   },

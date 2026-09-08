@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Methodology",
-  description: "How Madabase Intimates evaluates lingerie and sleepwear retailers.",
+  description: "How Madabase Women's Edit evaluates lingerie and sleepwear retailers.",
   alternates: {
     canonical: "/methodology",
   },
@@ -37,7 +37,9 @@ export default function Page() {
         <p>
           Retailer coverage favors programs with clear sizing and support
           policies, buyer-friendly return terms, and stable affiliate tracking
-          outside Amazon Associates.
+          outside Amazon Associates. Current Avidlove selections use its official
+          retailer listings and CJ catalog entries; they are not presented as
+          hands-on tests.
         </p>
       </section>
     </main>

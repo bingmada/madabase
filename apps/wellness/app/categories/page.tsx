@@ -25,7 +25,7 @@ export default function Page() {
         </p>
       </header>
       <section className="category-grid">
-        {wellnessCategories.map((category) => {
+        {wellnessCategories.filter((category) => category.availability === "active").map((category) => {
           const products = productPicks.filter((product) =>
             category.productNames.includes(product.name),
           );
@@ -35,7 +35,7 @@ export default function Page() {
               <h2>{category.title}</h2>
               <p>{category.description}</p>
               <span className="category-count">
-                {category.availability === "active" ? `${products.length} active routes` : "Coverage in progress"}
+                {products.length} active picks
               </span>
               <span className="text-link compact-link">
                 View category

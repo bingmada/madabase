@@ -36,6 +36,15 @@ const nextConfig: NextConfig = {
           },
         ],
       },
+      {
+        source: "/go/cj/:path*",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "private, no-store, max-age=0",
+          },
+        ],
+      },
     ];
   },
 };

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy",
-  description: "Privacy overview for Madabase Wellness.",
+  description: "Privacy overview for Madabase Women's Edit.",
   alternates: {
     canonical: "/privacy",
   },
@@ -23,13 +23,16 @@ export default function Page() {
         <p>
           We do not ask visitors to create accounts, submit sensitive health
           information, or provide payment details. Hosting and analytics
-          providers may process standard technical data such as IP address,
-          device, browser, referring page, and page views.
+          providers, including Microsoft Clarity, may process standard technical
+          data such as IP address, device, browser, referring page, and page
+          views.
         </p>
         <p>
-          When affiliate links are added later, the destination retailer and
-          affiliate network may use tracking technologies to attribute purchases.
-          Relevant disclosures will be shown near those links.
+          When visitors follow affiliate links, the destination retailer and CJ
+          may use tracking technologies to attribute purchases. Our redirect
+          records the product, merchant, page path, and a non-personal click ID
+          so link operation can be checked. Relevant disclosures appear near
+          those links.
         </p>
       </section>
     </main>
