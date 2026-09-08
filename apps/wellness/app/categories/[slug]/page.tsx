@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, CheckCircle2, ExternalLink } from "lucide-react";
@@ -69,8 +70,8 @@ export default async function Page({ params }: PageProps) {
         <section className="product-list">
           {products.map((product) => (
           <article className="product-detail" key={product.name}>
-            <div className={`product-art large ${product.art}`} aria-hidden="true">
-              <span />
+            <div className="product-image-frame product-image-frame-large">
+              <Image src={product.imageUrl} alt={product.name} fill sizes="(max-width: 900px) 100vw, 40vw" />
             </div>
             <div className="product-copy">
               <p className="guide-meta">{product.category} <span className="catalog-price">Catalog reference {product.price}</span></p>
