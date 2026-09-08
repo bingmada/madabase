@@ -237,7 +237,17 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                       Open the named listing to compare the live price, availability, delivery, seller, and return terms.
                     </p>
                   </div>
-                ) : null}
+                ) : (
+                  <div
+                    className="mt-4 rounded-md border border-amber-300 bg-amber-50 p-4 text-sm leading-6 text-amber-950"
+                    aria-label="First-screen retailer status"
+                    data-commerce-paused="true"
+                    data-first-viewport-commerce="true"
+                  >
+                    <p className="text-xs font-bold uppercase">Exact retailer link paused</p>
+                    <p className="mt-2 font-semibold">The exact product listing is being rechecked. No unrelated product is substituted.</p>
+                  </div>
+                )}
                 <p className="mt-5 text-lg leading-8 text-[var(--muted)]">{buyerFacingSummary(product.summary)}</p>
                 {effectiveUpdatedAt ? (
                   <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm font-semibold text-[var(--muted)]">
@@ -251,7 +261,10 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                 </div>
                 {asin ? <AmazonListingFreshness site={site.key} productSlug={product.slug} /> : null}
                 {offerBlock ? (
-                  <div className="mt-5 rounded-md border border-amber-300 bg-amber-50 p-4 text-sm leading-6 text-amber-950">
+                  <div
+                    className="mt-5 rounded-md border border-amber-300 bg-amber-50 p-4 text-sm leading-6 text-amber-950"
+                    data-commerce-paused={!commerceOffer ? "true" : undefined}
+                  >
                     <p className="font-bold">Amazon purchase link paused after a listing check</p>
                     <p className="mt-1">
                       {offerBlock.reason} Observed on {offerBlock.checkedAt}: {offerBlock.observedListing}. We will restore a

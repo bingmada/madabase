@@ -200,6 +200,7 @@ async function inspectPage(publicUrl) {
       .filter((index) => index >= 0)
       .sort((a, b) => a - b)[0] ?? -1;
     const firstViewportContainerIndex = html.indexOf("data-first-viewport-commerce=");
+    const commercePaused = html.includes('data-commerce-paused="true"');
     const firstH1CloseIndex = html.indexOf("</h1>");
     // Keep this check scoped to the initial decision area. Larger slices reach
     // valid bottom-of-page methodology text in Next.js output and create false
@@ -234,8 +235,12 @@ async function inspectPage(publicUrl) {
       && pageKind(url.pathname) !== "catalog-product";
 
     if (response.status !== 200) errors.push(`HTTP ${response.status}`);
-    if (!affiliateAnchors.length) errors.push("missing sponsored Amazon/CJ CTA");
-    else {
+    if (!affiliateAnchors.length) {
+      // A merchant-integrity pause is an explicit safe state, not a missing
+      // conversion path. The page must label it instead of substituting an
+      // unrelated product merely to satisfy the CTA audit.
+      if (!commercePaused) errors.push("missing sponsored Amazon/CJ CTA");
+    } else {
       if (!firstViewportAnchors.length) errors.push("missing designated first-viewport affiliate CTA");
       if (!firstViewportAnchors.some((anchor) => anchor.ctaIntent === "price-availability")) {
         errors.push("first-viewport CTA does not state the price-and-availability intent");
@@ -276,6 +281,7 @@ async function inspectPage(publicUrl) {
       cjCtas: cjAnchors.length,
       firstViewportCtas: firstViewportAnchors.length,
       ctaBeforeFirstImage: beforeFirstImage,
+      commercePaused,
       errors: [...new Set(errors)],
     };
   } catch (error) {
@@ -314,15 +320,18 @@ const report = {
   passed: results.length - failures.length,
   failed: failures.length,
   noCta: failures.filter((result) => result.errors.includes("missing sponsored Amazon/CJ CTA")).length,
+  commercePaused: results.filter((result) => result.commercePaused).length,
   bySite: Object.fromEntries(Object.keys(selectedSiteHosts).map((site) => [site, {
     checked: results.filter((result) => result.site === site).length,
     failed: failures.filter((result) => result.site === site).length,
     noCta: failures.filter((result) => result.site === site && result.errors.includes("missing sponsored Amazon/CJ CTA")).length,
+    commercePaused: results.filter((result) => result.site === site && result.commercePaused).length,
   }])),
   byKind: Object.fromEntries(["review", "guide", "roundup", "tool", "category", "catalog-product"].map((kind) => [kind, {
     checked: results.filter((result) => result.kind === kind).length,
     failed: failures.filter((result) => result.kind === kind).length,
     noCta: failures.filter((result) => result.kind === kind && result.errors.includes("missing sponsored Amazon/CJ CTA")).length,
+    commercePaused: results.filter((result) => result.kind === kind && result.commercePaused).length,
   }])),
   failureDetails: failures,
 };

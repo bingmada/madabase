@@ -188,6 +188,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
   const topPick = picks[0];
   const commerceProduct = roundupCommerceProduct(site.key, roundup);
   const commerceIsAlternative = Boolean(topPick && commerceProduct && topPick.slug !== commerceProduct.slug);
+  const commercePathPaused = Boolean(topPick && !commerceProduct);
   const category = site.categories.find((item) => item.slug === roundup.category);
   const relatedGuides = siteGuides(site.key)
     .filter((guide) => guide.relatedRoundups.includes(roundup.slug))
@@ -240,12 +241,19 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
           )}
           <h1 className="mt-3 text-3xl font-black leading-tight sm:text-4xl">{roundup.title}</h1>
           {topPick || commerceProduct ? (
-            <div className="mt-4 grid gap-3 rounded-md border border-[var(--border)] bg-white p-4 sm:mt-5 sm:grid-cols-[1fr_auto] sm:items-center sm:p-5" aria-label="First-screen purchase path" data-first-viewport-commerce="true">
+            <div
+              className="mt-4 grid gap-3 rounded-md border border-[var(--border)] bg-white p-4 sm:mt-5 sm:grid-cols-[1fr_auto] sm:items-center sm:p-5"
+              aria-label="First-screen purchase path"
+              data-commerce-paused={commercePathPaused ? "true" : undefined}
+              data-first-viewport-commerce="true"
+            >
               <div>
-                <p className="text-xs font-bold uppercase text-[var(--muted)]">Current retailer option</p>
+                <p className="text-xs font-bold uppercase text-[var(--muted)]">{commercePathPaused ? "Exact retailer links paused" : "Current retailer option"}</p>
                 <h2 className="mt-2 text-lg font-bold sm:text-xl">{topPick?.amazonTitle ?? topPick?.name ?? commerceProduct?.amazonTitle ?? commerceProduct?.name}</h2>
                 {commerceIsAlternative ? (
                   <p className="mt-2 text-sm leading-5 text-[var(--muted)]">Different product: the first pick has no verified retailer path; this button is for {commerceProduct?.name}.</p>
+                ) : commercePathPaused ? (
+                  <p className="mt-2 text-sm leading-5 text-[var(--muted)]">The named product links are paused while their exact listings are rechecked. No unrelated product is substituted.</p>
                 ) : topPick ? (
                   <p className="mt-2 text-sm leading-5 text-[var(--muted)]">Best for {topPick.bestFor.toLowerCase()}. Open the listing to compare the live price, availability, delivery, seller, and returns.</p>
                 ) : null}

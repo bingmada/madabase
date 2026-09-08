@@ -324,6 +324,13 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         && product.availability !== "out of stock",
       )
     : undefined);
+  const commercePathPaused = Boolean(
+    (topProduct || topRoundup)
+    && !commerceProduct
+    && !amazonFamilyOffer
+    && !cjFamilyAffiliateOffer
+    && !costumeCommerceProduct,
+  );
 
   if (site.key === "style") {
     return (
@@ -382,8 +389,13 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         )}
         <h1 className="mt-3 text-3xl font-black leading-tight sm:text-4xl">{guide.title}</h1>
         {topProduct || topRoundup || commerceProduct || amazonFamilyOffer || cjFamilyAffiliateOffer || costumeCommerceProduct ? (
-          <section className="mt-4 rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-4 sm:mt-5 sm:p-5" aria-label="First-screen purchase path" data-first-viewport-commerce="true">
-            <p className="eyebrow">Current retailer option</p>
+          <section
+            className="mt-4 rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-4 sm:mt-5 sm:p-5"
+            aria-label="First-screen purchase path"
+            data-commerce-paused={commercePathPaused ? "true" : undefined}
+            data-first-viewport-commerce="true"
+          >
+            <p className="eyebrow">{commercePathPaused ? "Exact retailer link paused" : "Current retailer option"}</p>
             <div className="mt-2 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
               <div>
                 <h2 className="text-lg font-bold sm:text-xl">
@@ -392,6 +404,10 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
                 {commerceIsAlternative && commerceProduct && !amazonFamilyOffer && !cjFamilyAffiliateOffer ? (
                   <p className="mt-2 max-w-xl text-sm leading-5 text-[var(--muted)]">
                     Different product: the exact {topProduct?.name} link is paused. This button is for the verified alternative {commerceProduct.name}.
+                  </p>
+                ) : commercePathPaused ? (
+                  <p className="mt-2 max-w-xl text-sm leading-5 text-[var(--muted)]">
+                    The named product links are paused while their exact listings are rechecked. No unrelated product is substituted.
                   </p>
                 ) : null}
               </div>
@@ -425,7 +441,9 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
                   ? "Open the exact family listing to compare the live price, availability, delivery, seller, and returns."
                   : commerceProduct
                     ? `Open the named ${commerceProduct.name} listing to compare the live price, availability, delivery, seller, and returns.`
-                    : "Use the comparison page to narrow the choices before buying."}
+                    : commercePathPaused
+                      ? "Use the product review and comparison while the exact retailer paths are being verified."
+                      : "Use the comparison page to narrow the choices before buying."}
             </p>
           </section>
         ) : null}
