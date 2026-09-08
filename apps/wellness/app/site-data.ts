@@ -2,10 +2,10 @@ import { BadgeCheck, HeartHandshake, ShieldCheck } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 export const site = {
-  name: "Madabase Intimates",
+  name: "Madabase Women's Edit",
   domain: "https://wellness.madabase.com",
   description:
-    "Practical lingerie and sleepwear buying guides focused on fit, fabric, care, and occasion.",
+    "A practical directory for women's lingerie, sleepwear, loungewear, and fit-led shopping decisions.",
 };
 
 export type Guide = {
@@ -43,7 +43,7 @@ export const principles = [
 
 export type ProductPick = {
   name: string;
-  merchant: "Avidlove";
+  merchant: string;
   category: string;
   categorySlug: string;
   status: string;
@@ -62,6 +62,8 @@ export type WellnessCategory = {
   description: string;
   decision: string;
   productNames: string[];
+  availability: "active" | "expanding";
+  shoppingFocus: string;
 };
 
 export const productPicks: ProductPick[] = [
@@ -139,10 +141,12 @@ export const wellnessCategories: WellnessCategory[] = [
   {
     slug: "lingerie",
     title: "Lingerie",
-    eyebrow: "Shop by style",
-    description: "Start with silhouette, coverage, fabric, and the level of structure you want from a piece.",
+    eyebrow: "Shop by silhouette",
+    description: "Compare shape, coverage, fabric, and the level of structure you want from a piece.",
     decision: "Choose this path when the main decision is between different lingerie silhouettes and fit expectations.",
     productNames: ["Avidlove Lingerie Collection"],
+    availability: "active",
+    shoppingFocus: "Silhouette, coverage, support",
   },
   {
     slug: "nightwear",
@@ -151,6 +155,8 @@ export const wellnessCategories: WellnessCategory[] = [
     description: "Sleep layers compared by temperature, fabric feel, coverage, and care requirements.",
     decision: "Start here for comfort-first nightwear and lighter sleep layers.",
     productNames: ["Avidlove Nightwear Collection"],
+    availability: "active",
+    shoppingFocus: "Temperature, fabric, care",
   },
   {
     slug: "babydolls-chemises",
@@ -159,6 +165,8 @@ export const wellnessCategories: WellnessCategory[] = [
     description: "Draped, lightweight styles where length, adjustability, fabric, and coverage lead the decision.",
     decision: "Use this path when you want a one-piece, lighter silhouette and need expectations set around fit.",
     productNames: ["Avidlove Babydoll And Chemise Collection"],
+    availability: "active",
+    shoppingFocus: "Length, adjustability, fit",
   },
   {
     slug: "robes-cover-ups",
@@ -167,6 +175,48 @@ export const wellnessCategories: WellnessCategory[] = [
     description: "Companion layers compared by length, sleeves, fabric weight, and how they work with sleepwear.",
     decision: "Start here when a layer, coverage, and fabric weight matter more than a single-piece sleep style.",
     productNames: ["Avidlove Robes And Cover-Ups Collection"],
+    availability: "active",
+    shoppingFocus: "Layers, weight, wash care",
+  },
+  {
+    slug: "bralettes-basics",
+    title: "Bralettes And Basics",
+    eyebrow: "Coverage expanding",
+    description: "An upcoming fit-led path for everyday bras, bralettes, and foundational pieces.",
+    decision: "Use this section to compare support needs, straps, bands, and preferred coverage once partner coverage is active.",
+    productNames: [],
+    availability: "expanding",
+    shoppingFocus: "Band, straps, daily support",
+  },
+  {
+    slug: "loungewear",
+    title: "Loungewear",
+    eyebrow: "Coverage expanding",
+    description: "Relaxed pieces for home routines, travel days, and layering between sleep and daytime.",
+    decision: "Start here when ease of movement, fabric weight, and repeat wear matter more than sleep-specific design.",
+    productNames: [],
+    availability: "expanding",
+    shoppingFocus: "Movement, weight, repeat wear",
+  },
+  {
+    slug: "shapewear-base-layers",
+    title: "Shapewear And Base Layers",
+    eyebrow: "Coverage expanding",
+    description: "A future practical guide to smoothing, layering, and comfort under occasion outfits.",
+    decision: "Use this section when your key decision is level of compression, garment length, and outfit compatibility.",
+    productNames: [],
+    availability: "expanding",
+    shoppingFocus: "Compression, length, occasion",
+  },
+  {
+    slug: "hosiery",
+    title: "Hosiery",
+    eyebrow: "Coverage expanding",
+    description: "A future directory for tights, socks, and hosiery chosen by opacity, warmth, and durability.",
+    decision: "Start here when denier, rise, warmth, and wear life are the decisions that matter.",
+    productNames: [],
+    availability: "expanding",
+    shoppingFocus: "Opacity, warmth, durability",
   },
 ];
 

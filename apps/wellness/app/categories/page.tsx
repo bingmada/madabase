@@ -17,7 +17,7 @@ export default function Page() {
     <main className="guide-page wide-page">
       <header className="page-hero">
         <p className="section-label">Categories</p>
-        <h1>Shop The Collection That Fits Your Routine</h1>
+          <h1>Find the collection that fits your routine.</h1>
         <p>
           Start with the silhouette and occasion that make sense for you. These
           collections keep the decision practical before sending you to an
@@ -34,7 +34,9 @@ export default function Page() {
               <p className="section-label">{category.eyebrow}</p>
               <h2>{category.title}</h2>
               <p>{category.description}</p>
-              <span className="category-count">{products.length} products mapped</span>
+              <span className="category-count">
+                {category.availability === "active" ? `${products.length} active routes` : "Coverage in progress"}
+              </span>
               <span className="text-link compact-link">
                 View category
                 <ArrowRight size={16} aria-hidden="true" />

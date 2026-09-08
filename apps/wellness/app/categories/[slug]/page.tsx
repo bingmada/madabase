@@ -60,13 +60,14 @@ export default async function Page({ params }: PageProps) {
       <section className="link-disabled-banner">
         <CheckCircle2 size={20} aria-hidden="true" />
         <div>
-          <h2>Decision Rule</h2>
+          <h2>{category.availability === "active" ? "Decision Rule" : "Coverage In Progress"}</h2>
           <p>{category.decision}</p>
         </div>
       </section>
 
-      <section className="product-list">
-        {products.map((product) => (
+      {products.length > 0 ? (
+        <section className="product-list">
+          {products.map((product) => (
           <article className="product-detail" key={product.name}>
             <div className={`product-art large ${product.art}`} aria-hidden="true">
               <span />
@@ -100,8 +101,22 @@ export default async function Page({ params }: PageProps) {
               )}
             </div>
           </article>
-        ))}
-      </section>
+          ))}
+        </section>
+      ) : (
+        <section className="coverage-pending">
+          <p className="section-label">Partner coverage</p>
+          <h2>This category is ready for research, not retailer links yet.</h2>
+          <p>
+            We will add products only after an appropriate partner program is
+            approved and its current catalog details are checked.
+          </p>
+          <Link className="text-link compact-link" href="/categories">
+            Browse active collections
+            <ArrowLeft size={16} aria-hidden="true" />
+          </Link>
+        </section>
+      )}
     </main>
   );
 }
