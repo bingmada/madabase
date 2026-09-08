@@ -10,6 +10,11 @@ export default function Home() {
   const expandingCategories = wellnessCategories.filter(
     (category) => category.availability === "expanding",
   );
+  const featuredProducts = [
+    productPicks.find((product) => product.name === "Modal Cami Pajama Set"),
+    productPicks.find((product) => product.name === "Satin Kimono Wedding Party Robe"),
+    productPicks.find((product) => product.name === "High-Neck Lace Bralette"),
+  ].filter(Boolean);
 
   return (
     <main>
@@ -86,24 +91,30 @@ export default function Home() {
       <section className="partner-focus" id="active-collections">
         <div className="partner-focus-copy">
           <p className="section-label">Active retailer coverage</p><h2>One approved partner, clearly labeled.</h2>
-          <p>Avidlove is the only retailer with an active link today. Each route below leads to the matching collection, not an invented product review.</p>
+          <p>Avidlove is the only retailer with active product links today. We use the current CJ catalog price as a reference and send shoppers to the retailer for live sizing, color, and stock.</p>
           <Link className="text-link" href="/affiliate-disclosure">How affiliate links work<ArrowRight size={16} aria-hidden="true" /></Link>
         </div>
         <div className="active-partner-panel">
-          <div className="active-partner-heading"><span className="partner-monogram">A</span><div><strong>Avidlove via CJ</strong><span>Approved collection links</span></div><CheckCircle2 size={20} aria-hidden="true" /></div>
-          <div className="active-partner-metrics"><div><strong>4</strong><span>Active routes</span></div><div><strong>US</strong><span>Current market</span></div><div><strong>1</strong><span>Verified partner</span></div></div>
+          <div className="active-partner-heading"><span className="partner-monogram">A</span><div><strong>Avidlove via CJ</strong><span>Approved product links</span></div><CheckCircle2 size={20} aria-hidden="true" /></div>
+          <div className="active-partner-metrics"><div><strong>{productPicks.length}</strong><span>Live picks</span></div><div><strong>US</strong><span>Current market</span></div><div><strong>1</strong><span>Verified partner</span></div></div>
         </div>
       </section>
 
       <section className="section product-section">
-        <div className="section-heading"><p className="section-label">Available collections</p><h2>Browse by the decision in front of you.</h2></div>
-        <div className="product-grid product-grid-editorial">
-          {productPicks.map((product) => (
-            <article className="product-card" key={product.name}>
+        <div className="section-heading section-heading-row"><div><p className="section-label">The first product edit</p><h2>Start with a routine, then choose a piece.</h2></div><p>These are individual CJ catalog entries, arranged around a decision rather than a long, unfiltered retailer feed.</p></div>
+        <div className="featured-edit">
+          {featuredProducts.map((product, index) => product && (
+            <article className={`featured-product featured-product-${index + 1}`} key={product.name}>
               <div className={`product-art ${product.art}`} aria-hidden="true"><span /></div>
-              <p className="guide-meta">{product.category}</p><h3>{product.name.replace("Avidlove ", "")}</h3><p>{product.bestFor}</p>
-              <a className="text-link product-link" href={product.affiliateUrl} rel="sponsored nofollow" target="_blank">View collection<ExternalLink size={16} aria-hidden="true" /></a>
+              <div className="featured-product-copy"><p className="guide-meta">{product.category} <span>{product.price}</span></p><h3>{product.name}</h3><p>{product.bestFor}</p><a className="text-link product-link" href={product.affiliateUrl} rel="sponsored nofollow" target="_blank">View at Avidlove<ExternalLink size={16} aria-hidden="true" /></a></div>
             </article>
+          ))}
+        </div>
+        <div className="inventory-routes">
+          {activeCategories.map((category) => (
+            <Link href={`/categories/${category.slug}`} key={category.slug}>
+              <span>{category.title}</span><strong>{category.productNames.length} picks</strong><span>{category.shoppingFocus}</span><ArrowRight size={17} aria-hidden="true" />
+            </Link>
           ))}
         </div>
       </section>

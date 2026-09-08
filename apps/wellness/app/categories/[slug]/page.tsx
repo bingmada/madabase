@@ -73,9 +73,17 @@ export default async function Page({ params }: PageProps) {
               <span />
             </div>
             <div className="product-copy">
-              <p className="guide-meta">{product.category}</p>
+              <p className="guide-meta">{product.category} <span className="catalog-price">Catalog reference {product.price}</span></p>
               <h2>{product.name}</h2>
               <p>{product.editorialNote}</p>
+              <dl className="spec-list">
+                {product.specs.map((spec) => (
+                  <div key={spec.label}>
+                    <dt>{spec.label}</dt>
+                    <dd>{spec.value}</dd>
+                  </div>
+                ))}
+              </dl>
               <div className="fit-grid">
                 <div>
                   <h3>Best For</h3>
