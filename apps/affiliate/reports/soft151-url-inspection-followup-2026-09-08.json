@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "reportDate": "2026-09-08",
+  "sourceLedger": "apps/affiliate/reports/soft151-search-gate-2026-09-07.csv",
+  "selection": "The 31 rows previously recorded as blocked-daily-quota, all on pets.madabase.com.",
+  "attempted": 31,
+  "validResults": 31,
+  "requestIndexingSubmitted": false,
+  "statusCounts": {
+    "discoveredCurrentlyNotIndexed": 25,
+    "unknownToGoogle": 6,
+    "indexed": 0
+  },
+  "defaultStatusRule": "Every selected row is Discovered - currently not indexed except the six exact Unknown to Google exceptions below.",
+  "unknownToGoogle": [
+    "https://pets.madabase.com/guides/no-pull-dog-harnesses-buying-guide",
+    "https://pets.madabase.com/guides/cat-exercise-wheels-buying-guide",
+    "https://pets.madabase.com/guides/wireless-dog-doorbells-buying-guide",
+    "https://pets.madabase.com/guides/quick-dry-dog-towels-buying-guide",
+    "https://pets.madabase.com/guides/airline-dog-crates-buying-guide",
+    "https://pets.madabase.com/guides/portable-dog-water-bottles-buying-guide"
+  ],
+  "duplicateCanonicalFollowup": [
+    {
+      "url": "https://smarthome.madabase.com/guides/smart-bathroom-exhaust-fans-buying-guide",
+      "googleSelectedCanonical": "https://smarthome.madabase.com/categories/automation"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/office-lumbar-cushions-buying-guide",
+      "googleSelectedCanonical": "https://homeoffice.madabase.com/guides/four-k-webcams-buying-guide"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/office-printer-stands-buying-guide",
+      "googleSelectedCanonical": "https://homeoffice.madabase.com/guides/four-k-webcams-buying-guide"
+    },
+    {
+      "url": "https://baby.madabase.com/guides/childproof-door-knob-covers-buying-guide",
+      "googleSelectedCanonical": "https://baby.madabase.com/reviews/babybjorn-carrier-mini-3d-mesh"
+    },
+    {
+      "url": "https://baby.madabase.com/guides/toddler-snack-containers-buying-guide",
+      "googleSelectedCanonical": "https://baby.madabase.com/reviews/babybjorn-carrier-mini-3d-mesh"
+    }
+  ],
+  "interpretation": "Current public HTML emits correct self-canonicals, while the inspected Google-selected canonicals are stale and semantically unrelated. Preserve the URLs and treat them as exact semantic-differentiation and recrawl candidates; do not generalize this result into a sitewide canonical rewrite."
+}

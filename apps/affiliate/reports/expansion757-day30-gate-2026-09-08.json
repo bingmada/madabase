@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "reportDate": "2026-09-08",
+  "sourceLedger": "docs/affiliate-expansion757-search-gate-2026-08-28.csv",
+  "consolidationLedger": "apps/affiliate/reports/seo-consolidation-ledger-2026-08-23.json",
+  "comparisonWindow": "2026-08-30 through 2026-09-05 versus 2026-08-23 through 2026-08-29",
+  "originalScope": {
+    "urls": 757,
+    "redirectSources": 88,
+    "clicks": { "current": 0, "previous": 1 },
+    "impressions": { "current": 150, "previous": 218, "changePercent": -31.2 },
+    "exposedUrls": 93,
+    "zeroImpressionUrls": 664,
+    "weightedPosition": { "current": 27.0, "previous": 47.1 },
+    "positionBands": { "zero": 664, "top10": 51, "position11To20": 10, "position21To40": 8, "positionOver40": 24 }
+  },
+  "activeCanonicalScope": {
+    "urls": 669,
+    "clicks": { "current": 0, "previous": 1 },
+    "impressions": { "current": 146, "previous": 211, "changePercent": -30.8 },
+    "exposedUrls": 89,
+    "zeroImpressionUrls": 580,
+    "weightedPosition": { "current": 27.3, "previous": 46.6 },
+    "bySite": {
+      "network": { "urls": 96, "clicksCurrent": 0, "clicksPrevious": 0, "impressionsCurrent": 1, "impressionsPrevious": 8, "exposed": 1, "zero": 95, "positionCurrent": 62.0, "positionPrevious": 69.6 },
+      "smarthome": { "urls": 134, "clicksCurrent": 0, "clicksPrevious": 0, "impressionsCurrent": 2, "impressionsPrevious": 3, "exposed": 2, "zero": 132, "positionCurrent": 6.5, "positionPrevious": 77.3 },
+      "homeoffice": { "urls": 153, "clicksCurrent": 0, "clicksPrevious": 1, "impressionsCurrent": 54, "impressionsPrevious": 126, "exposed": 33, "zero": 120, "positionCurrent": 25.8, "positionPrevious": 50.1 },
+      "baby": { "urls": 144, "clicksCurrent": 0, "clicksPrevious": 0, "impressionsCurrent": 85, "impressionsPrevious": 74, "exposed": 49, "zero": 95, "positionCurrent": 27.9, "positionPrevious": 36.9 },
+      "pet": { "urls": 126, "clicksCurrent": 0, "clicksPrevious": 0, "impressionsCurrent": 3, "impressionsPrevious": 0, "exposed": 3, "zero": 123, "positionCurrent": 20.7, "positionPrevious": null },
+      "costume": { "urls": 16, "clicksCurrent": 0, "clicksPrevious": 0, "impressionsCurrent": 1, "impressionsPrevious": 0, "exposed": 1, "zero": 15, "positionCurrent": 83.0, "positionPrevious": null }
+    }
+  },
+  "familyLevel": {
+    "families": 154,
+    "exposedFamilies": 46,
+    "fullyZeroFamilies": 108,
+    "fullyInspectedZeroFamilies": 39,
+    "allIndexedZeroFamilies": 36,
+    "multiRouteConsolidationReviewCandidates": [
+      "network:indoor-wifi-access-points",
+      "network:outdoor-wifi-access-points",
+      "network:point-to-point-wireless-bridges",
+      "network:wifi-range-extenders",
+      "network:moca-network-adapters",
+      "network:powerline-network-adapters",
+      "network:sfp-plus-network-switches",
+      "network:ethernet-network-interface-cards",
+      "network:usb-c-ethernet-adapters",
+      "network:poe-injectors",
+      "network:poe-splitters",
+      "network:poe-extenders",
+      "network:sfp-plus-transceivers",
+      "network:fiber-media-converters",
+      "network:network-attached-storage",
+      "network:dual-wan-routers",
+      "network:five-g-home-internet-gateways",
+      "network:home-network-racks",
+      "network:ethernet-cable-testers",
+      "pet:large-dog-water-fountains",
+      "pet:cat-gps-trackers",
+      "pet:airtag-pet-collar-holders",
+      "pet:microchip-pet-doors",
+      "pet:cat-litter-mats",
+      "pet:deshedding-brushes",
+      "pet:cooling-pet-beds",
+      "pet:dog-ramps",
+      "pet:automatic-aquarium-feeders",
+      "pet:aquarium-water-monitors"
+    ],
+    "singleHubDemandOrRetirementReview": [
+      "network:usb-wifi-adapters",
+      "network:vpn-gateways",
+      "network:mobile-hotspots",
+      "network:ethernet-patch-panels",
+      "pet:dog-activity-collars",
+      "pet:interactive-puzzle-feeders",
+      "pet:automatic-ball-launchers"
+    ]
+  },
+  "urlInspection20260908": {
+    "validOriginalRows": 175,
+    "knownRedirectSources": 24,
+    "activeCanonicals": 151,
+    "activeStatusCounts": { "indexed": 147, "crawledCurrentlyNotIndexed": 2, "discoveredCurrentlyNotIndexed": 1, "duplicate": 1 },
+    "remainingOriginalZeroRows": 489,
+    "remainingKnownRedirectSources": 60,
+    "remainingActiveCanonicals": 429,
+    "propertyQuotaExceededAfterTotalValidInspectionsToday": 211,
+    "requestIndexingSubmitted": false
+  },
+  "decision": {
+    "protect": "All 46 exposed families and all 89 exposed active URLs; preserve the comparison-first 36, indexed-zero 40, Deep43 and ErGear controlled cohorts through their gates.",
+    "nextReview": "Continue the remaining 429 active exact inspections after quota renewal, then design the 29 all-indexed/all-zero multi-route families one family at a time. Select the evidence-leading canonical intent using role and query evidence; comparison pages currently carry the strongest exposure signal.",
+    "blocked": "No blind title rewrite, new route, unchanged IndexNow replay, bulk Request Indexing, or automatic merge of every all-zero family is authorized by this gate."
+  }
+}
