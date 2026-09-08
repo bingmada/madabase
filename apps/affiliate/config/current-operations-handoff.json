@@ -1,15 +1,17 @@
 {
-  "updatedAt": "2026-09-08T14:51:59+08:00",
+  "updatedAt": "2026-09-08T16:34:51+08:00",
   "purpose": "Tracked cross-conversation snapshot. Read this before every affiliate operation, then read docs/affiliate-growth-state.json and docs/affiliate-growth-runbook.md for the mutable history and operating rules.",
   "crossConversationResume": {
-    "asOf": "2026-09-08T14:51:59+08:00",
-    "status": "september_08_full_daily_review_complete_expansion_day30_quota_partial_hold",
+    "asOf": "2026-09-08T16:34:51+08:00",
+    "status": "september_08_day30_exact_27_family_consolidation_released_public_verified",
     "readOrder": [
       "apps/affiliate/config/current-operations-handoff.json",
       "docs/affiliate-growth-state.json",
       "docs/affiliate-growth-runbook.md",
       "apps/affiliate/reports/daily-operations-2026-09-08.md",
       "apps/affiliate/reports/expansion757-day30-gate-2026-09-08.json",
+      "apps/affiliate/config/search-recovery-consolidations-2026-09-08.json",
+      "apps/affiliate/reports/seo-consolidation-ledger-2026-09-08.json",
       "apps/affiliate/reports/soft151-url-inspection-followup-2026-09-08.json",
       "apps/affiliate/reports/daily-operations-2026-09-07.md",
       "apps/affiliate/reports/external-distribution-2026-09-08.md",
@@ -30,16 +32,16 @@
       "apps/affiliate/config/next-product-expansion-100-pilot-01.json",
       "apps/affiliate/config/next-product-expansion-100-readiness.json"
     ],
-    "oneSentenceState": "Release 9b924b7 remains live and healthy with 9f61bb2 retained for rollback; September 8 shows no same-day cliff at 245 versus 245 rolling impressions, while the complete seven-day window is down 13.1% with materially better average position, and the next controlled work is the remaining 429 active Expansion757 inspections plus exact family-level review rather than another broad rewrite.",
+    "oneSentenceState": "Release 4d78d2e is live and healthy with 9b924b7 retained for rollback; the September 8 Day-30 gate consolidated 27 exact all-indexed/all-zero Network/Pets families from 118 active URLs to 27 retained hubs plus 91 permanent redirects, while two Deep43-overlap families remain protected until their September 10 gate and 429 active Expansion757 inspections remain for September 9.",
     "production": {
-      "activeRelease": "9b924b7",
-      "sourceCommit": "9b924b76d1e54657d0b0424c2fe6cbed3b182efc",
-      "path": "/srv/madabase-affiliate/releases/9b924b7",
-      "rollback": "9f61bb2",
+      "activeRelease": "4d78d2e",
+      "sourceCommit": "4d78d2e329cee6db14b48f7c084e412bbcefb8d5",
+      "path": "/srv/madabase-affiliate/releases/4d78d2e",
+      "rollback": "9b924b7",
       "service": "madabase-affiliate.service",
       "port": 3011,
       "status": "active_zero_restarts_public_verified",
-      "securityCleanup": "Deployment used the owner-authorized Aliyun Workbench session and the owner-confirmed GitHub repository. Commit 9b924b76d1e54657d0b0424c2fe6cbed3b182efc was shallow-cloned from origin/lyd-0609; the 60,841,221-byte archive SHA-256 matched a56b94488a9794aa4b632e9d05ff864894685297adbed77dacbd1218e97e065a locally and on the server. The prior unit is backed up as madabase-affiliate.service.before-9b924b7, release 9f61bb2 remains intact for immediate rollback, candidate port 3111 is closed, production has zero restarts and no error-level log entries after cutover, and no unrelated server work was modified."
+      "securityCleanup": "Deployment used the owner-authorized Aliyun Workbench session and the existing server source repository at /srv/madabase-affiliate/sources/9b924b7. It fetched origin/lyd-0609 directly, added an exact 4d78d2e worktree, and activated the 60,848,546-byte immutable archive after the server SHA-256 matched d73f01c797af624774f0d18d98c86a89c88928450d9f5d4b3cf01762a129c0a6. The prior unit is backed up as madabase-affiliate.service.before-4d78d2e, release 9b924b7 remains intact for immediate rollback, candidate port 3111 is closed, production has zero restarts, and no unrelated server work was modified."
     },
     "searchAndIndexing": {
       "latest24Hours": "Final rolling September 7-8 versus the preceding 24 hours: 1 versus 0 clicks, 245 versus 245 impressions, 0.4% versus 0% CTR and position 17.4 versus 17.1. Page detail is Homeoffice 129 versus 131, Baby 107 versus 104, Pets 10 versus 5, Network 7 versus 7 and Smarthome 8 versus 2 impressions. The value rose from 239 to 245 during review, confirming this is a directional rolling window and not a same-day cliff.",
@@ -48,13 +50,13 @@
       "interpretation": "The portfolio is not in a fresh technical collapse. Seven-day impressions are down 13.1%, but average position improves by 12.4 positions; Google is showing fewer portfolio results while the surviving results rank better. Homeoffice contributes most of the volume decline, Baby is stable, and Network needs indexing, demand and family-overlap treatment. Preserve recent positive or protected cohorts and do not respond with a broad title rewrite.",
       "gscPageIndexing": "Report last updated August 21: 1,586 indexed and 4,267 not indexed, including 3,514 intentional noindex routes, 364 404s, 103 redirects, 40 crawled-currently-not-indexed, 136 discovered-currently-not-indexed, 33 duplicate-without-user-canonical and two historical 5xx examples.",
       "gscActions": "All submitted affiliate sitemaps remain Success with exact discovered-page counts: Network 245, Smarthome 258, Homeoffice 275, Baby 264, Pets 234, Style 76 and Costumes 121. No sitemap resubmission or bulk Search Console Request indexing was made. The two historical 5xx examples remain in Started validation; manual actions and security issues report no issues; removals has no requests submitted in six months.",
-      "indexNow": "The August 23 48-URL, August 27 43-URL, August 31 one-URL and September 4 36-URL releases remain historical and were not replayed. On September 7, IndexNow accepted exactly 40 changed existing canonicals with HTTP 200: Smarthome 21, Homeoffice 6 and Baby 13. Unchanged pages, redirects, homepages, categories, sitemaps, prior cohorts and product pilots were excluded.",
+      "indexNow": "Historical cohorts were not replayed. On September 8, IndexNow accepted exactly 32 changed canonical or discovery URLs with HTTP 200: 19 Network and 13 Pets. The set contains the 27 retained hubs plus five affected category pages; redirect sources, the two deferred Deep43 families, unchanged pages, prior cohorts, homepages, sitemaps and product pilots were excluded.",
       "deepRankRecovery": "The exact complete-data gate selected 43 previously untouched guides with zero clicks, at least two impressions and average position greater than 40 after excluding controlled or protected pages. Titles, H1s, URLs, canonicals and search questions are unchanged; each target now has a unique stronger direct answer, one unique role-specific decision section and August 27 lastmod. Public runtime and sitemap validation passed 43 of 43.",
       "ergearCtrExperiment": "The September 7 Day-7 gate is positive on exposure but not yet conclusive on CTR: 77 versus 38 impressions, zero clicks in both periods, and position 8.5 versus 8.2. The leading query flexispot e7 mini rose to 35 from 13 impressions; ergear vs flexispot is 5 versus 6 and flexispot vs ergear is 4 versus 1. Public HTTP, self-canonical and 2026-08-31 dateModified remain correct. Protect unchanged through the meaningful September 14 Day-14 gate.",
       "comparisonFirstCohort": "Exactly 36 existing canonical guides were refreshed on September 4 around concrete A-versus-B decisions: Network 8, Smarthome 8, Homeoffice 8, Baby 5 and Pets 7. There are zero new routes and zero overlap with Deep43, Ranking118, Soft151, the ErGear/FlexiSpot hold URL or protected click-bearing winners. Each target has a unique title, direct answer, decision section, explicit comparison table and related internal links. Public validation passed 36 of 36 pages and 36 of 36 sitemap entries; hold unchanged through the September 11 Day-7 gate.",
       "indexedZeroRecovery": "Exactly 40 existing Soft151 canonical guides were upgraded on September 7 after live inspection proved they were indexed and GSC proved zero impressions in both compared seven-day windows: Smarthome 21, Homeoffice 6 and Baby 13. Each keeps its route, site, product data, merchant path and full content while receiving a unique decision-led title/H1, direct primary-versus-alternative answer, four-row comparison table, first decision section and related links. There are zero new routes and zero overlap with comparison-first 36 or Deep43. Public validation passed 40 of 40 pages and 40 of 40 sitemap entries; hold through September 14, September 21 and October 7 gates.",
       "zeroInspection": "The 31 remaining Soft151 Pets URLs are complete: 25 discovered-currently-not-indexed and six unknown to Google. The five duplicate-status pages still show unrelated Google-selected canonicals although current public HTML emits correct self-canonicals. Expansion757 added 175 valid historical zero-impression inspections: 24 were governed redirect sources; the 151 active canonicals were 147 indexed, two crawled-currently-not-indexed, one discovered-currently-not-indexed and one duplicate. Search Console exhausted the daily property quota after 211 total valid checks; 429 active canonicals remain plus 60 redirect sources to skip. No Request indexing was attempted.",
-      "expansion757Day30": "Exclude 88 governed redirect sources from the historical 757-row ledger. The 669 active canonicals produced zero versus one click, 146 versus 211 impressions, 89 exposed URLs and 580 zero-impression URLs, with weighted position improving from 46.6 to 27.3. Forty-six of 154 families were exposed. Thirty-six fully-inspected, fully-zero families were all indexed; 29 multi-route Network/Pets families now enter exact family-level consolidation design and seven existing single hubs enter demand/differentiation or retirement review. Protect exposed families and use role/query evidence to select any retained canonical."
+      "expansion757Day30": "Exclude 88 governed redirect sources from the historical 757-row ledger. The evidence gate identified 29 fully-inspected, fully-indexed, fully-zero multi-route Network/Pets families. Cross-cohort validation found two Network families with three protected Deep43 pages and deferred them to September 10. The remaining exact 27 families (17 Network, 10 Pets) were released: 118 active measured URLs now resolve to 27 retained canonical hubs and 91 permanent redirects, with role counts 17 comparison, five fit and five workflow. Eight comparison-first hubs retained their protected title/H1/direct-answer fields. Hold the 27 through September 15/22 and October 8; protect all exposed families and both deferred families."
     },
     "productExpansion": {
       "target": "About 100 qualified differentiated product pages, not 100 pages by quota.",
@@ -78,10 +80,10 @@
       "Hold the exact September 4 comparison-first 36 cohort unchanged through the September 11 Day-7 gate unless a confirmed technical, indexability, merchant, tracking or rendering defect appears. Review exact URL and comparison-query impressions, clicks, average position and query breadth on September 11, September 18 and October 4; at Day 14 preserve any page gaining exposure and inspect only zero-exposure or clear intent-mismatch pages.",
       "Hold the August 31 ErGear-versus-FlexiSpot single-page CTR experiment unchanged through the September 14 Day-14 gate. Its September 7 gate more than doubled exposure at a stable page-one position but still has zero clicks; do not reset the title from this mixed pre/post window or replay its accepted IndexNow canonical.",
       "On September 9 after the Search Console property quota renews, continue only the 429 remaining active Expansion757 zero-impression canonical inspections. Skip 60 known redirect sources, submit no Request indexing, and update exact active status before any family mutation.",
-      "Use apps/affiliate/reports/expansion757-day30-gate-2026-09-08.json for the exact 29 all-indexed/all-zero multi-route family design queue. Review one family at a time, protect all 46 exposed families, and retain the evidence-leading query role rather than automatically choosing the buying route. The seven existing single hubs require demand/differentiation or retirement review rather than consolidation.",
+      "Hold the exact 27-family September 8 consolidation unchanged through its September 15 Day-7, September 22 Day-14 and October 8 Day-30 gates. Protect retained hubs that gain clicks, impressions, query breadth or top-20 rankings; do not reverse redirects from rolling-hour noise. The seven existing single hubs require demand differentiation or retirement review rather than another merge.",
       "Keep new indexable publication frozen during post-rollout observation. Existing-page topic hierarchy and query-backed recovery are owner-authorized under search-recovery-control version 3; do not convert that authorization into new products, new cohorts or evidence-free mass title churn.",
-      "Treat release 9b924b7 as active production with 9f61bb2 retained for immediate rollback. The release is a merchant-integrity correction and published no new route; do not repeat IndexNow for it or for the 40 accepted September 7 canonicals, the 36 accepted September 4 canonicals, the 43 accepted August 27 canonicals, the August 31 single URL or the prior 48-URL batch, and do not purge Cloudflare without a confirmed stale-response defect.",
-      "Run the exact 43-URL deep-rank tactical gate on September 10 and the portfolio gate on September 24. Protect any page that gains clicks or reaches the top 20; revise only still-exposed deep pages rather than resetting the cohort.",
+      "Treat release 4d78d2e as active production with 9b924b7 retained for immediate rollback. Do not repeat IndexNow for the exact 32 accepted September 8 URLs or any prior cohort, and do not purge Cloudflare without a confirmed stale-response defect.",
+      "Run the exact 43-URL deep-rank tactical gate on September 10 and the portfolio gate on September 24. At the September 10 gate, automatically decide the deferred sfp-plus-network-switches and poe-splitters families: consolidate only if the protected pages fail the gate and the families remain all-zero; otherwise keep the evidence-leading route. Protect any page that gains clicks or reaches the top 20.",
       "Soft151 Day-14 and all 130 zero-impression URL inspections are complete. The final 31 Pets URLs were 25 discovered-currently-not-indexed and six unknown to Google; the five duplicate-status pages have unrelated stale Google-selected canonicals while current HTML self-canonicalizes. Preserve them for precise semantic repair and recrawl review; do not resubmit unchanged URLs merely because the scheduled date passed.",
       "The exact 486-URL inspection backlog is closed at 471 indexed and 15 not on Google. Do not restart broad inspection or bulk-request indexing; only execute explicitly due rechecks or investigate a new technical signal.",
       "Keep all five product-pilot URLs isolated while the recovery freeze remains active even though their August 24 technical and merchant gate passed.",
@@ -91,7 +93,9 @@
       "The separate external-distribution workflow published one qualified Pinterest experiment and, on September 8, one disclosed Quora answer at https://www.quora.com/Is-a-standing-desk-on-wheels-useful-for-a-flexible-workspace/answer/Yingda-Li-7. Do not duplicate them in daily operations; review the Quora unique-UTM sessions and downstream affiliate_click after 24-48 hours, and follow the Pinterest 30-day success and pause gates from the separate workflow record."
     ],
     "hardBoundaries": [
+      "Owner standing direction from September 8: when complete evidence crosses a documented threshold and the action is bounded, reversible and limited to existing pages, execute diagnosis, implementation, validation, push, release, public verification, exact submission and record update in one run without waiting for another reminder. Pause only for new authority, irreversible deletion, billing or credentials, or incomplete/contradictory evidence.",
       "The active recovery control in apps/affiliate/config/search-recovery-control.json is the publication authority. Version 3 allows recorded existing-page recovery but keeps every new indexable cohort frozen.",
+      "The September 8 consolidation exception is exactly the 27 families and 91 redirect sources in apps/affiliate/config/search-recovery-consolidations-2026-09-08.json. It adds zero routes. Hold it through September 15/22 and October 8. The two deferred Deep43-overlap families must remain unchanged until their September 10 gate.",
       "The September 7 indexed-zero exception is exactly the 40 existing URLs in apps/affiliate/config/indexed-zero-recovery-cohort-2026-09-07.json. It adds zero routes, excludes all previously exposed and non-indexed states, and must not be broadened, replayed through IndexNow or rewritten before September 14 without a confirmed defect.",
       "The September 4 comparison-first exception is exactly the 36 existing URLs in apps/affiliate/config/comparison-first-cohort-2026-09-04.json. It adds zero routes and must not be broadened, replayed through IndexNow or rewritten before September 11 without a confirmed defect.",
       "The August 31 CTR exception is exactly https://homeoffice.madabase.com/best/ergear-48x24-vs-flexispot-e7-mini. Its Day-7 exposure direction is positive. Release 9b924b7 repaired only the confirmed merchant defect by replacing the unrelated Anker fallback with an explicitly labeled wheeled-desk alternative; title, H1, intent and editorial comparison remain unchanged. Hold those elements through September 14 and do not batch nearby page-one pages into the release.",
@@ -124,6 +128,17 @@
     "primaryAction": "Completed the exact August 23 cohort ledgers, then applied the owner's existing-page recovery authorization: repaired the governed family hierarchy across 757 pages and refreshed four pages from current 24-hour query evidence. New indexable expansion remains frozen.",
     "next": "On August 24, resume the remaining 226 URL inspections after quota renewal and run the five direct-URL product pilot technical/merchant/isolation gate; keep the pilots outside sitemap and discovery. Reassess the freeze only after complete August 22-24 GSC data exists.",
     "log": "apps/affiliate/reports/daily-operations-2026-08-23.md"
+  },
+  "existingPageSeoRecovery20260908": {
+    "status": "production_released_publicly_validated_indexnow_exact_32",
+    "ownerDirection": "When a clearly evidenced existing-page problem crosses its documented threshold, execute the bounded fix and release without waiting for another reminder.",
+    "diagnosis": "Expansion757 Day 30 found 29 multi-route Network/Pets families whose active pages were all inspected, indexed and zero-impression in both complete comparison windows. Cross-cohort validation found two families containing three protected Deep43 pages, so those two remain unchanged through September 10.",
+    "scope": "Exactly 27 families from apps/affiliate/config/search-recovery-consolidations-2026-09-08.json: 17 Network and 10 Pets; 118 active measured URLs consolidated into 27 retained canonical hubs plus 91 permanent redirects; zero new routes; retained roles are 17 comparison, five fit and five workflow.",
+    "protected": "All exposed families remain excluded. Eight retained September 4 comparison-first hubs preserve their title, H1, search question, direct answer and decision framing. The deferred sfp-plus-network-switches and poe-splitters families remain live and unchanged until the September 10 Deep43 gate.",
+    "validation": "Static control, SEO, comparison-first 36, indexed-zero 40, Deep43, legacy August 23 consolidation, affiliate-link, Creators inventory, lint, Node 20 optimized build, immutable-runtime, internal full-ledger, public Network/Pets base-route and representative redirect checks passed. The release archive is 60,848,546 bytes with SHA-256 d73f01c797af624774f0d18d98c86a89c88928450d9f5d4b3cf01762a129c0a6.",
+    "production": "Source commit 4d78d2e329cee6db14b48f7c084e412bbcefb8d5 is active at /srv/madabase-affiliate/releases/4d78d2e under madabase-affiliate.service on port 3011 with zero restarts. Candidate port 3111 is closed and 9b924b7 is the immediate rollback.",
+    "discovery": "IndexNow accepted exactly 32 affected URLs with HTTP 200: 19 Network and 13 Pets. Redirect sources, unchanged pages, prior cohorts and deferred families were excluded.",
+    "gates": "Hold the released 27 families through September 15, September 22 and October 8. Run Deep43 on September 10 and automatically decide the two deferred families from exact evidence."
   },
   "existingPageSeoRecovery20260823": {
     "status": "production_released_publicly_validated_indexnow_exact_48",
@@ -228,23 +243,23 @@
     "discovery": "Release 6eec199 added all 151 qualified breadth pages to five sitemaps. Search Console accepted and immediately read all five as Success with the exact new counts. IndexNow accepted 153 exact URLs: 151 breadth pages plus the two Deco intent-repair pages."
   },
   "release": {
-    "active": "9f61bb2",
-    "commit": "9f61bb2917fa4722bdb6aed943550a0a41b0c92e",
-    "packageCommit": "9f61bb2917fa4722bdb6aed943550a0a41b0c92e",
+    "active": "4d78d2e",
+    "commit": "4d78d2e329cee6db14b48f7c084e412bbcefb8d5",
+    "packageCommit": "4d78d2e329cee6db14b48f7c084e412bbcefb8d5",
     "branch": "lyd-0609",
     "pushed": true,
-    "artifactBytes": 60839849,
-    "artifactSha256": "4ff347efd255477319a6f32d933e87b01b137df47cf2873a9f7068d35d0a87dd",
+    "artifactBytes": 60848546,
+    "artifactSha256": "d73f01c797af624774f0d18d98c86a89c88928450d9f5d4b3cf01762a129c0a6",
     "artifactLocalPath": "apps/affiliate/.release/affiliate-runtime.tgz",
-    "productionPath": "/srv/madabase-affiliate/releases/9f61bb2",
-    "rollback": "86e08e6",
+    "productionPath": "/srv/madabase-affiliate/releases/4d78d2e",
+    "rollback": "9b924b7",
     "sevenPublicAffiliateHostsHttp200": true,
     "serviceManager": "systemd",
     "service": "madabase-affiliate.service",
     "loopbackPort": 3011,
-    "indexNowAcceptedUrls": 40,
+    "indexNowAcceptedUrls": 32,
     "googleSitemapsSubmitted": 0,
-    "releaseNote": "The exact 60,839,849-byte Linux x64 archive was pushed to origin/lyd-0609 and activated as immutable release 9f61bb2 under the non-root madabase user. The systemd service is active on loopback port 3011 with zero restarts and no error-log entries; all seven origin hosts and the exact 40-page public cohort plus 40 sitemap entries passed. Candidate port 3111 is closed and release 86e08e6 remains available for immediate rollback."
+    "releaseNote": "The exact 60,848,546-byte Linux x64 archive for source commit 4d78d2e was pulled through the existing server source repository and activated as immutable release 4d78d2e. The systemd service is active on loopback port 3011 with zero restarts; the internal 27-family/91-redirect ledger, all seven affiliate origins, both public site base audits, representative redirects and both sitemaps passed. Candidate port 3111 is closed and release 9b924b7 remains available for immediate rollback."
   },
   "pendingMainRelease": {
     "status": "production_deployed_and_verified",
@@ -468,15 +483,16 @@
     "dailyOperations20260825": "seven_homepages_sitemaps_and_robots_http_200; seven_index_exceptions_http_200_self_canonical_indexable_and_in_sitemap; url_inspection_458_of_486_cumulative_442_indexed_16_not_google_28_quota_blocked; observation_days_2_of_3; seo_affiliate_links_search_recovery_next_product_and_lint_passed; no_runtime_change_or_deploy",
     "dailyOperations20260826": "complete_august_22_24_observation_3_of_3_formal_freeze_hold; latest24_2_clicks_189_impressions_vs_2_248; complete7d_5_clicks_1858_impressions_vs_36_5457; seven_homepages_sitemaps_and_robots_http_200; 16_not_google_production_routes_14_live_self_canonical_plus_2_governed_redirect_sources; url_inspection_first_detail_attempt_quota_blocked_cumulative_458_of_486_442_indexed_16_not_google_28_uninspected; clarity_11_human_47_bots_1_affiliate_click_0_js_errors; amazon_37_clicks_21_orders_6_51_usd; cj_123_clicks_zero_sales_84_concentrated_on_abracadabra_aid_17278691; seo_affiliate_links_search_recovery_next_product_and_node20_lint_passed; no_runtime_change_or_deploy",
     "dailyOperations20260828": "complete26_review_hold_baseline; latest24_2_clicks_226_impressions_vs_1_254; complete7d_6_clicks_1794_impressions_vs_26_4442; ranking118_47_exposed_696_impressions_4_clicks; soft151_26_exposed_74_impressions_0_clicks; url_inspection_486_of_486_complete_471_indexed_15_not_google_0_remaining; clarity_46_human_125_bots_2_affiliate_click_0_js_errors; amazon_38_clicks_21_orders_6_51_product_commission_plus_3_bounty; seven_homepages_sitemaps_and_robots_http_200; search_recovery_seo_306_affiliate_links_next_product_and_node20_lint_passed; no_runtime_change_or_deploy",
-    "dailyOperations20260907": "latest24_2_clicks_225_impressions_vs_0_182_position_14_3_vs_17_1; latest7d_4_clicks_1539_impressions_vs_8_1689_position_28_3_vs_35_7; ergear_day7_77_vs_38_impressions_position_8_5_vs_8_2_hold_to_day14; soft151_21_exposed_130_zero_0_clicks_43_impressions; soft151_live_inspection_99_valid_58_indexed_34_discovered_2_unknown_5_duplicate_31_quota_blocked; indexed_double_zero_40_upgraded_21_smarthome_6_homeoffice_13_baby_zero_new_routes_zero_overlap_comparison36_deep43; release_9f61bb2_public_40_pages_and_40_sitemap_entries_passed; indexnow_exact_40_http_200; amazon_31_clicks_25_ordered_24_shipped_1_return_10_02_commission_plus_3_bounty; clarity_13_human_23_bots_1_affiliate_click_0_js_errors; search_recovery_seo_306_affiliate_links_comparison_deep_next_product_and_node20_lint_passed"
+    "dailyOperations20260907": "latest24_2_clicks_225_impressions_vs_0_182_position_14_3_vs_17_1; latest7d_4_clicks_1539_impressions_vs_8_1689_position_28_3_vs_35_7; ergear_day7_77_vs_38_impressions_position_8_5_vs_8_2_hold_to_day14; soft151_21_exposed_130_zero_0_clicks_43_impressions; soft151_live_inspection_99_valid_58_indexed_34_discovered_2_unknown_5_duplicate_31_quota_blocked; indexed_double_zero_40_upgraded_21_smarthome_6_homeoffice_13_baby_zero_new_routes_zero_overlap_comparison36_deep43; release_9f61bb2_public_40_pages_and_40_sitemap_entries_passed; indexnow_exact_40_http_200; amazon_31_clicks_25_ordered_24_shipped_1_return_10_02_commission_plus_3_bounty; clarity_13_human_23_bots_1_affiliate_click_0_js_errors; search_recovery_seo_306_affiliate_links_comparison_deep_next_product_and_node20_lint_passed",
+    "dailyOperations20260908": "latest24_1_click_245_impressions_vs_0_245_position_17_4_vs_17_1; complete7d_6_clicks_1481_impressions_vs_8_1704_position_24_0_vs_36_4; expansion757_day30_29_eligible_families_2_deferred_deep43_overlap_27_released_118_active_urls_27_retained_91_redirects_zero_new_routes; release_4d78d2e_active_zero_restarts_public_network_and_pet_base_audits_passed; indexnow_exact_32_http_200_19_network_13_pet; remaining_active_expansion757_inspections_429; standing_threshold_execution_rule_recorded"
   },
   "indexNow": {
-    "date": "2026-09-07",
-    "submitted": 40,
-    "accepted": 40,
+    "date": "2026-09-08",
+    "submitted": 32,
+    "accepted": 32,
     "httpStatus": 200,
-    "bySite": { "smarthome": 21, "homeoffice": 6, "baby": 13 },
-    "scope": "Only the exact 40 existing canonical guides changed by the September 7 indexed double-zero recovery. Unchanged pages, redirect sources, homepages, categories, sitemaps, older cohorts and product pilots were excluded."
+    "bySite": { "network": 19, "pet": 13 },
+    "scope": "The exact 27 retained canonical hubs and five affected category pages from the September 8 consolidation. Redirect sources, two deferred Deep43 families, unchanged pages, prior cohorts, homepages, sitemaps and product pilots were excluded."
   },
   "measurementGates": {
     "zeroInspectionResume": "Soft151 Day-14 generated 130 exact zero-impression URLs. On 2026-09-07, 99 valid live inspections completed before the property quota: 58 indexed, 34 discovered-currently-not-indexed, two unknown to Google and five duplicate-without-user-selected-canonical. Resume the 31 blocked Pets URLs on 2026-09-08.",
@@ -520,7 +536,7 @@
       "apps/affiliate/reports/affiliate-spam-update-recovery-2026-08-21.csv"
     ],
     "zeroInspectionLedger": "docs/affiliate-zero-impression-inspections-2026-08-28.csv",
-    "dailyLog": "apps/affiliate/reports/daily-operations-2026-08-28.md",
+    "dailyLog": "apps/affiliate/reports/daily-operations-2026-09-08.md",
     "dailyChecklist": "apps/affiliate/DAILY_OPERATIONS.md",
     "mutableState": "docs/affiliate-growth-state.json",
     "runbook": "docs/affiliate-growth-runbook.md",

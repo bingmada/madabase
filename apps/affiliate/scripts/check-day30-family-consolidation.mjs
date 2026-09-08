@@ -7,7 +7,8 @@ const repositoryDir = path.resolve(affiliateDir, "../..");
 const configPath = path.join(affiliateDir, "config", "search-recovery-consolidations-2026-09-08.json");
 const initialConfigPath = path.join(affiliateDir, "config", "search-recovery-consolidations-2026-08-23.json");
 const gatePath = path.join(affiliateDir, "reports", "expansion757-day30-gate-2026-09-08.json");
-const sourceRowsPath = path.join(repositoryDir, "docs", "affiliate-expansion757-search-gate-2026-08-28.csv");
+const sourceRowsPath = process.env.DAY30_CONSOLIDATION_SOURCE_ROWS_PATH
+  ?? path.join(repositoryDir, "docs", "affiliate-expansion757-search-gate-2026-08-28.csv");
 const comparisonFirstPath = path.join(affiliateDir, "config", "comparison-first-cohort-2026-09-04.json");
 const deepRankRecoveryPath = path.join(affiliateDir, "config", "deep-rank-recovery-2026-08-27.json");
 const controlPath = path.join(affiliateDir, "config", "search-recovery-control.json");
@@ -15,6 +16,13 @@ const reportPath = path.join(affiliateDir, "reports", "seo-consolidation-ledger-
 const localOrigin = process.env.DAY30_CONSOLIDATION_ORIGIN;
 const publicAudit = process.env.DAY30_CONSOLIDATION_PUBLIC_AUDIT === "1";
 const writeReport = process.argv.includes("--write-report");
+const baseOnly = process.argv.includes("--base-only");
+const siteArgument = process.argv.find((argument) => argument.startsWith("--site="));
+const runtimeSite = siteArgument?.slice("--site=".length);
+const siteHosts = {
+  network: "network.madabase.com",
+  pet: "pets.madabase.com",
+};
 
 function parseCsv(value) {
   const rows = [];
@@ -61,7 +69,7 @@ function normalizeUrl(value) {
 async function fetchRoute(publicUrl, redirect = "follow") {
   const url = new URL(publicUrl);
   const target = publicAudit ? publicUrl : `${localOrigin}${url.pathname}`;
-  const attempts = publicAudit ? 4 : 1;
+  const attempts = publicAudit ? 5 : 1;
   let lastError;
   for (let attempt = 1; attempt <= attempts; attempt += 1) {
     try {
@@ -73,7 +81,7 @@ async function fetchRoute(publicUrl, redirect = "follow") {
           "user-agent": "Madabase day-30 consolidation auditor/1.0",
         },
         redirect,
-        signal: AbortSignal.timeout(30_000),
+        signal: AbortSignal.timeout(publicAudit ? 20_000 : 30_000),
       });
     } catch (error) {
       lastError = error;
@@ -89,7 +97,10 @@ const gate = JSON.parse(fs.readFileSync(gatePath, "utf8"));
 const comparisonFirst = JSON.parse(fs.readFileSync(comparisonFirstPath, "utf8"));
 const deepRankRecovery = JSON.parse(fs.readFileSync(deepRankRecoveryPath, "utf8"));
 const control = JSON.parse(fs.readFileSync(controlPath, "utf8"));
-const rows = parseCsv(fs.readFileSync(sourceRowsPath, "utf8"));
+const rows = fs.existsSync(sourceRowsPath) ? parseCsv(fs.readFileSync(sourceRowsPath, "utf8")) : [];
+const recordedLedger = fs.existsSync(reportPath)
+  ? JSON.parse(fs.readFileSync(reportPath, "utf8")).ledger ?? []
+  : [];
 const errors = [];
 const ledger = [];
 const configuredKeys = new Set();
@@ -102,6 +113,9 @@ const deepTargetUrls = new Set((deepRankRecovery.targets ?? []).map((item) => it
 const comparisonTargetsByFamily = new Map(
   comparisonFirst.targets.map((item) => [`${item.site}:${item.familySlug}`, item]),
 );
+
+if (runtimeSite && !(runtimeSite in siteHosts)) errors.push(`Unsupported runtime site ${runtimeSite}`);
+if (!rows.length && !localOrigin && !publicAudit) errors.push(`Missing source evidence ${sourceRowsPath}`);
 
 if (config.action !== "existing-page-topic-hierarchy-repair") errors.push(`Unexpected action ${config.action}`);
 if (!control.freeze?.allowedActions?.includes(config.action)) errors.push("Action is not permitted by the active recovery control");
@@ -118,7 +132,10 @@ for (const deferred of config.deferredFamilies ?? []) {
   if (!gate.familyLevel.multiRouteConsolidationReviewCandidates.includes(key)) errors.push(`${key} is not in the Day-30 candidate set`);
   if (deferred.nextGate !== "2026-09-10") errors.push(`${key} must remain deferred to the September 10 Deep43 gate`);
   const familyRows = rows.filter((row) => row.site === deferred.site && row.family === deferred.familySlug);
-  if (!familyRows.some((row) => deepTargetUrls.has(row.url))) errors.push(`${key} has no active Deep43 target and must not be deferred`);
+  const hasDeepTarget = familyRows.length
+    ? familyRows.some((row) => deepTargetUrls.has(row.url))
+    : deepRankRecovery.targets.some((target) => target.site === deferred.site && target.slug.startsWith(`${deferred.familySlug}-`));
+  if (!hasDeepTarget) errors.push(`${key} has no active Deep43 target and must not be deferred`);
 }
 
 for (const family of config.families) {
@@ -129,8 +146,32 @@ for (const family of config.families) {
   if (initialKeys.has(key)) errors.push(`${key} overlaps the August 23 consolidation`);
   if (!family.historicalLeader || !family.selectionEvidence) errors.push(`${key} lacks selection evidence`);
 
-  const familyRows = rows.filter((row) => row.site === family.site && row.family === family.familySlug);
   const expectedRoles = family.site === "network" ? 4 : 5;
+  const protectedTarget = comparisonTargetsByFamily.get(key);
+  if (protectedTarget && protectedTarget.slug !== family.targetSlug) {
+    errors.push(`${key} would redirect the protected comparison target ${protectedTarget.slug}`);
+  }
+
+  if (!rows.length) {
+    const recorded = recordedLedger.find((item) => item.site === family.site && item.familySlug === family.familySlug);
+    const expectedTargetUrl = `https://${siteHosts[family.site]}/guides/${family.targetSlug}`;
+    if (!recorded) {
+      errors.push(`${key} is missing from the tracked consolidation ledger`);
+      continue;
+    }
+    if (recorded.targetUrl !== expectedTargetUrl) errors.push(`${key} tracked target changed from ${expectedTargetUrl}`);
+    if (recorded.sourceUrls.length !== expectedRoles - 1) errors.push(`${key} tracked source count is not ${expectedRoles - 1}`);
+    if (configuredTargetUrls.has(recorded.targetUrl)) errors.push(`Duplicate target URL ${recorded.targetUrl}`);
+    configuredTargetUrls.add(recorded.targetUrl);
+    for (const sourceUrl of recorded.sourceUrls) {
+      if (configuredSourceUrls.has(sourceUrl)) errors.push(`Duplicate source URL ${sourceUrl}`);
+      configuredSourceUrls.add(sourceUrl);
+    }
+    ledger.push(recorded);
+    continue;
+  }
+
+  const familyRows = rows.filter((row) => row.site === family.site && row.family === family.familySlug);
   if (familyRows.length !== expectedRoles) {
     errors.push(`${key} has ${familyRows.length} source rows; expected ${expectedRoles}`);
     continue;
@@ -143,11 +184,6 @@ for (const family of config.families) {
   if (new URL(target.url).pathname !== `/guides/${family.targetSlug}`) {
     errors.push(`${key} target slug ${family.targetSlug} does not match ${target.url}`);
   }
-  const protectedTarget = comparisonTargetsByFamily.get(key);
-  if (protectedTarget && protectedTarget.slug !== family.targetSlug) {
-    errors.push(`${key} would redirect the protected comparison target ${protectedTarget.slug}`);
-  }
-
   const sourceUrls = familyRows.filter((row) => row.role !== family.targetRole).map((row) => row.url);
   if (configuredTargetUrls.has(target.url)) errors.push(`Duplicate target URL ${target.url}`);
   configuredTargetUrls.add(target.url);
@@ -210,8 +246,9 @@ if (writeReport && !errors.length) {
 }
 
 if ((localOrigin || publicAudit) && !errors.length) {
+  const runtimeLedger = runtimeSite ? ledger.filter((item) => item.site === runtimeSite) : ledger;
   const sitemapByHost = new Map();
-  for (const host of new Set(ledger.map((item) => new URL(item.targetUrl).host))) {
+  for (const host of new Set(runtimeLedger.map((item) => new URL(item.targetUrl).host))) {
     const response = await fetchRoute(`https://${host}/sitemap.xml`);
     const text = await response.text();
     if (response.status !== 200) errors.push(`https://${host}/sitemap.xml returned HTTP ${response.status}`);
@@ -221,7 +258,7 @@ if ((localOrigin || publicAudit) && !errors.length) {
     });
   }
 
-  for (const family of ledger) {
+  for (const family of runtimeLedger) {
     const targetResponse = await fetchRoute(family.targetUrl);
     const html = await targetResponse.text();
     const canonical = html.match(/<link[^>]+rel=["']canonical["'][^>]+href=["']([^"']+)/i)?.[1]
@@ -250,18 +287,27 @@ if ((localOrigin || publicAudit) && !errors.length) {
         if (sitemap?.urls.has(normalizeUrl(localizedSource))) errors.push(`${localizedSource} remains in sitemap`);
       }
 
-      const marketUrl = new URL(`/en-gb${new URL(sourceUrl).pathname}`, sourceUrl).toString();
-      const marketResponse = await fetchRoute(marketUrl, "manual");
-      const marketLocation = marketResponse.headers.get("location");
-      if (marketResponse.status !== 308) errors.push(`${marketUrl} returned HTTP ${marketResponse.status}; expected 308`);
-      if (!marketLocation || new URL(marketLocation, marketUrl).pathname !== `/en-gb${expectedPath}`) {
-        errors.push(`${marketUrl} redirects to ${marketLocation ?? "missing"}; expected /en-gb${expectedPath}`);
+      if (!baseOnly) {
+        const marketUrl = new URL(`/en-gb${new URL(sourceUrl).pathname}`, sourceUrl).toString();
+        const marketResponse = await fetchRoute(marketUrl, "manual");
+        const marketLocation = marketResponse.headers.get("location");
+        if (marketResponse.status !== 308) errors.push(`${marketUrl} returned HTTP ${marketResponse.status}; expected 308`);
+        if (!marketLocation || new URL(marketLocation, marketUrl).pathname !== `/en-gb${expectedPath}`) {
+          errors.push(`${marketUrl} redirects to ${marketLocation ?? "missing"}; expected /en-gb${expectedPath}`);
+        }
       }
     }
   }
 }
 
 console.log("Day-30 family consolidation audit");
-console.log(JSON.stringify({ ...report, ledger: undefined, runtime: Boolean(localOrigin || publicAudit), errors }, null, 2));
+console.log(JSON.stringify({
+  ...report,
+  ledger: undefined,
+  runtime: Boolean(localOrigin || publicAudit),
+  runtimeSite: runtimeSite ?? "all",
+  baseOnly,
+  errors,
+}, null, 2));
 if (errors.length) process.exit(1);
 console.log(`\nPassed: ${ledger.length} families, ${measuredUrls} measured URLs, ${permanentRedirects} permanent redirects.`);
