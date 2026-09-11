@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "action": "query-backed-existing-page-refresh",
+  "releaseDate": "2026-09-11",
+  "measurementWindow": {
+    "current": "2026-09-02 through 2026-09-08",
+    "source": "Google Search Console exact-page seven-day filters",
+    "note": "Query rows are privacy-thresholded and therefore do not sum to page impressions."
+  },
+  "scope": {
+    "targetCount": 4,
+    "newRoutes": 0,
+    "homeoffice": 2,
+    "baby": 2
+  },
+  "reviewGates": {
+    "day7": "2026-09-18",
+    "day14": "2026-09-25",
+    "day30": "2026-10-11"
+  },
+  "protectedExclusions": [
+    {
+      "url": "https://homeoffice.madabase.com/best/ergear-48x24-vs-flexispot-e7-mini",
+      "reason": "The August 31 single-page title experiment remains protected through its September 14 Day-14 gate."
+    }
+  ],
+  "targets": [
+    {
+      "site": "homeoffice",
+      "category": "ergonomics",
+      "kind": "product",
+      "slug": "branch-ergonomic-chair",
+      "url": "https://homeoffice.madabase.com/reviews/branch-ergonomic-chair",
+      "clicks": 0,
+      "impressions": 94,
+      "position": 7.47,
+      "visibleQueries": ["branch warranty", "branch ergonomic chair official warranty return policy"],
+      "title": "Branch Ergonomic Chair Review: Warranty, Fit & Returns",
+      "intent": "Research-led review centered on warranty, return cost, seller channel, and physical fit; no hands-on claim."
+    },
+    {
+      "site": "homeoffice",
+      "category": "ergonomics",
+      "kind": "product",
+      "slug": "hon-ignition-2-0-chair",
+      "url": "https://homeoffice.madabase.com/reviews/hon-ignition-2-0-chair",
+      "clicks": 0,
+      "impressions": 63,
+      "position": 8.86,
+      "visibleQueries": ["hon ignition 2.0 warranty return policy long term review", "hon ignition 2.0 warranty length"],
+      "title": "HON Ignition 2.0 Review: Warranty, Fit & Controls",
+      "intent": "Research-led configuration review that answers warranty and return-path intent without implying long-term hands-on use."
+    },
+    {
+      "site": "baby",
+      "category": "travel",
+      "kind": "guide",
+      "slug": "ergobaby-omni-breeze-forward-facing-age-guide",
+      "url": "https://baby.madabase.com/guides/ergobaby-omni-breeze-forward-facing-age-guide",
+      "clicks": 0,
+      "impressions": 54,
+      "position": 8.61,
+      "visibleQueries": ["ergobaby omni breeze age", "ergobaby omni breeze front facing"],
+      "title": "Ergobaby Omni Breeze Forward Facing: Age & Fit Checks",
+      "intent": "Direct official-guidance answer to the age query, with head/neck control, size limits, chin clearance, and overstimulation boundaries."
+    },
+    {
+      "site": "baby",
+      "category": "feeding",
+      "kind": "product",
+      "slug": "grownsy-bottle-sterilizer-dryer",
+      "url": "https://baby.madabase.com/reviews/grownsy-bottle-sterilizer-dryer",
+      "clicks": 0,
+      "impressions": 53,
+      "position": 9.75,
+      "visibleQueries": ["grownsy bottle sterilizer and dryer", "grownsy bottle sterilizer and dryer review", "mid range sterilizer"],
+      "title": "GROWNSY Bottle Sterilizer Dryer Review: Worth It for Small Kitchens?",
+      "intent": "Research-led exact-product review focused on compact-counter fit and the sterilizer-versus-washer boundary."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "authorizedAt": "2026-09-11T15:30:00+08:00",
+  "action": "existing-page-topic-hierarchy-repair",
+  "sourceGate": "September 10 Deep43 tactical gate plus September 11 rolling seven-day Search Console review",
+  "decision": "Consolidate the two Network families deferred on September 8 after every active route remained indexed and the complete family set produced zero current-period impressions. Retain the comparison route as the single search-intent hub, preserve its primary fields, merge useful buying, compatibility, ownership, and workflow material below it, permanently redirect the three retired sibling routes, and remove those sources from discovery and sitemaps.",
+  "scope": {
+    "families": 2,
+    "networkFamilies": 2,
+    "measuredUrls": 8,
+    "retainedCanonicals": 2,
+    "permanentRedirects": 6,
+    "newRoutes": 0
+  },
+  "measurement": {
+    "currentWindow": "2026-09-02 through 2026-09-08",
+    "previousWindow": "2026-08-26 through 2026-09-01",
+    "currentClicks": 0,
+    "previousClicks": 0,
+    "currentImpressions": 0,
+    "previousImpressions": 1,
+    "currentExposedUrls": 0,
+    "previousExposedUrls": 1,
+    "indexStatus": "All eight active routes were previously live-inspected as indexed; no crawl, canonical, sitemap, manual-action, security, or rendering defect is present.",
+    "onlyPreviousExposure": "poe-splitters-compatibility-and-fit-guide: one impression at average position 54"
+  },
+  "reviewGates": {
+    "day7": "2026-09-18",
+    "day14": "2026-09-25",
+    "day30": "2026-10-11"
+  },
+  "families": [
+    {
+      "site": "network",
+      "familySlug": "sfp-plus-network-switches",
+      "targetRole": "comparison",
+      "targetSlug": "sfp-plus-network-switches-vs-alternatives",
+      "sourceSlugs": [
+        "sfp-plus-network-switches-buying-guide",
+        "sfp-plus-network-switches-compatibility-and-fit-guide",
+        "sfp-plus-network-switches-ownership-cost-and-maintenance"
+      ],
+      "selectionEvidence": "All four routes are indexed and have zero impressions in both compared windows. The comparison route preserves the clearest SFP+ switch versus RJ45 10GbE decision and was the historical Deep43 target, while the three narrower routes no longer justify separate canonicals."
+    },
+    {
+      "site": "network",
+      "familySlug": "poe-splitters",
+      "targetRole": "comparison",
+      "targetSlug": "poe-splitters-vs-alternatives",
+      "sourceSlugs": [
+        "poe-splitters-buying-guide",
+        "poe-splitters-compatibility-and-fit-guide",
+        "poe-splitters-ownership-cost-and-maintenance"
+      ],
+      "selectionEvidence": "All four routes are indexed and have zero current-window impressions; the only previous-window signal was one fit-page impression at position 54. The comparison route retains the broader PoE splitter versus local-power decision and absorbs compatibility and ownership checks without opening a new URL."
+    }
+  ],
+  "protectedCoreFields": [
+    "title",
+    "H1",
+    "searchQuestion",
+    "dek",
+    "quickAnswer",
+    "commercePath"
+  ],
+  "requestIndexing": false
+}

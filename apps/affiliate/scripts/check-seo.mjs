@@ -235,8 +235,9 @@ if (!categoryPageSource.includes("<GovernedDecisionGuideLinks guides={allCategor
 if (
   !governedSitemapSource.includes('"2026-08-23T00:00:00Z"')
   || !governedSitemapSource.includes('"2026-09-08T00:00:00Z"')
+  || !governedSitemapSource.includes('"2026-09-11T00:00:00Z"')
 ) {
-  errors.push("Governed category pages must preserve the August 23 baseline and publish the September 8 Day-30 consolidation lastmod");
+  errors.push("Governed category pages must preserve the August 23 baseline and publish the September 8 and September 11 consolidation lastmods");
 }
 const guidePageSource = fs.readFileSync(path.join(workspaceDir, "app", "guides", "[slug]", "page.tsx"), "utf8");
 if (!guidePageSource.includes('data-family-topic-cluster="true"')) {
@@ -477,8 +478,8 @@ opportunitySource.statements.forEach((statement) => {
   });
 });
 
-if (searchOpportunities.length !== 98) {
-  errors.push(`Search opportunity registry must contain exactly 98 entries; found ${searchOpportunities.length}`);
+if (searchOpportunities.length !== 100) {
+  errors.push(`Search opportunity registry must contain exactly 100 entries; found ${searchOpportunities.length}`);
 }
 const opportunityKeys = new Set();
 const opportunityDateKeys = new Set();

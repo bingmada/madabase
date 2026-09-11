@@ -15,12 +15,14 @@ const rankingPath = path.join(repositoryDir, "docs", "affiliate-ranking118-searc
 const softPath = path.join(repositoryDir, "docs", "affiliate-soft151-search-gate-2026-08-20.csv");
 const consolidationPath = path.join(workspaceDir, "config", "search-recovery-consolidations-2026-08-23.json");
 const day30ConsolidationPath = path.join(workspaceDir, "config", "search-recovery-consolidations-2026-09-08.json");
+const deferredConsolidationPath = path.join(workspaceDir, "config", "deferred-family-consolidations-2026-09-11.json");
 
 const recovery = JSON.parse(fs.readFileSync(configPath, "utf8"));
 const community = JSON.parse(fs.readFileSync(communityPath, "utf8"));
 const comparisonFirst = JSON.parse(fs.readFileSync(comparisonFirstPath, "utf8"));
 const consolidations = JSON.parse(fs.readFileSync(consolidationPath, "utf8"));
 const day30Consolidations = JSON.parse(fs.readFileSync(day30ConsolidationPath, "utf8"));
+const deferredConsolidations = JSON.parse(fs.readFileSync(deferredConsolidationPath, "utf8"));
 const errors = [];
 const runtimeOrigin = process.env.DEEP_RANK_RECOVERY_ORIGIN;
 const publicAudit = process.env.DEEP_RANK_RECOVERY_PUBLIC_AUDIT === "1";
@@ -93,6 +95,17 @@ for (const target of targets) {
   }
 }
 
+const deferredTargetByFamily = new Map(
+  deferredConsolidations.families.map((item) => [`${item.site}:${item.familySlug}`, item.targetSlug]),
+);
+function deferredFamilyForTarget(target) {
+  for (const [familyKey, targetSlug] of deferredTargetByFamily) {
+    const [site, familySlug] = familyKey.split(":");
+    if (target.site === site && target.slug.startsWith(`${familySlug}-`)) return { familyKey, targetSlug };
+  }
+  return undefined;
+}
+
 const guidesByKey = new Map(expansion.quadrupleExpansionGuides.map((guide) => [`${guide.site}:${guide.slug}`, guide]));
 const refreshedGuides = expansion.quadrupleExpansionGuides.filter((guide) => guide.updatedAt === "August 27, 2026");
 if (refreshedGuides.length !== 43) errors.push(`Expected exactly 43 refreshed generated guides; found ${refreshedGuides.length}`);
@@ -124,17 +137,17 @@ const recoverySections = refreshedGuides.map((guide) => guide.sections[0]?.body)
 if (new Set(quickAnswers).size !== 43) errors.push("Refreshed quick answers are not unique");
 if (new Set(recoverySections).size !== 43) errors.push("Added decision sections are not unique");
 
-async function fetchRuntime(pathname, host) {
+async function fetchRuntime(pathname, host, redirect = "follow") {
   if (publicAudit) {
     let lastError;
     for (let attempt = 1; attempt <= 3; attempt += 1) {
       try {
         const response = await fetch(`https://${host}${pathname}`, {
           headers: { "user-agent": "Madabase deep-rank recovery auditor/1.0" },
-          redirect: "follow",
+          redirect,
           signal: AbortSignal.timeout(30_000),
         });
-        return { status: response.status, body: await response.text() };
+        return { status: response.status, body: await response.text(), location: response.headers.get("location") };
       } catch (error) {
         lastError = error;
         if (attempt < 3) await new Promise((resolve) => setTimeout(resolve, attempt * 500));
@@ -155,7 +168,7 @@ async function fetchRuntime(pathname, host) {
       let body = "";
       response.setEncoding("utf8");
       response.on("data", (chunk) => { body += chunk; });
-      response.on("end", () => resolve({ status: response.statusCode, body }));
+      response.on("end", () => resolve({ status: response.statusCode, body, location: response.headers.location }));
     });
     request.on("error", reject);
     request.end();
@@ -168,12 +181,21 @@ if (runtimeOrigin || publicAudit) {
   for (const target of targets) {
     const key = `${target.site}:${target.slug}`;
     const guide = guidesByKey.get(key);
+    const deferredFamily = deferredFamilyForTarget(target);
+    if (deferredFamily && target.slug !== deferredFamily.targetSlug) {
+      const response = await fetchRuntime(`/guides/${target.slug}`, hosts[target.site], "manual");
+      if (![307, 308].includes(response.status)) errors.push(`${key} runtime returned ${response.status} instead of a permanent redirect`);
+      if (!(response.location ?? "").endsWith(`/guides/${deferredFamily.targetSlug}`)) errors.push(`${key} redirect target changed`);
+      runtimeChecked += 1;
+      continue;
+    }
     const response = await fetchRuntime(`/guides/${target.slug}`, hosts[target.site]);
     if (response.status !== 200) errors.push(`${key} runtime returned ${response.status}`);
     if (!response.body.includes(`<link rel="canonical" href="${target.url}"`)) errors.push(`${key} runtime canonical changed`);
     if (!response.body.includes(guide.title)) errors.push(`${key} runtime title or H1 is missing`);
     if (!response.body.includes(guide.sections[0].heading)) errors.push(`${key} runtime decision section is missing`);
-    if (!response.body.includes("August 27, 2026")) errors.push(`${key} runtime refresh date is missing`);
+    const expectedDisplayDate = deferredFamily ? "September 11, 2026" : "August 27, 2026";
+    if (!response.body.includes(expectedDisplayDate)) errors.push(`${key} runtime refresh date is missing`);
     if (/name="robots" content="[^"]*noindex/i.test(response.body)) errors.push(`${key} unexpectedly renders noindex`);
     runtimeChecked += 1;
   }
@@ -182,9 +204,16 @@ if (runtimeOrigin || publicAudit) {
     const sitemap = await fetchRuntime("/sitemap.xml", hosts[site]);
     if (sitemap.status !== 200) errors.push(`${site} sitemap returned ${sitemap.status}`);
     for (const target of targets.filter((item) => item.site === site)) {
+      const deferredFamily = deferredFamilyForTarget(target);
+      if (deferredFamily && target.slug !== deferredFamily.targetSlug) {
+        if (sitemap.body.includes(`<loc>${target.url}</loc>`)) errors.push(`${target.site}:${target.slug} retired route remains in the sitemap`);
+        sitemapChecked += 1;
+        continue;
+      }
       const escapedUrl = target.url.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-      const entry = new RegExp(`<loc>${escapedUrl}</loc>\\s*<lastmod>2026-08-27(?:T00:00:00\\.000Z)?</lastmod>`);
-      if (!entry.test(sitemap.body)) errors.push(`${target.site}:${target.slug} sitemap lastmod is not 2026-08-27`);
+      const expectedSitemapDate = deferredFamily ? "2026-09-11" : "2026-08-27";
+      const entry = new RegExp(`<loc>${escapedUrl}</loc>\\s*<lastmod>${expectedSitemapDate}(?:T00:00:00\\.000Z)?</lastmod>`);
+      if (!entry.test(sitemap.body)) errors.push(`${target.site}:${target.slug} sitemap lastmod is not ${expectedSitemapDate}`);
       sitemapChecked += 1;
     }
   }
@@ -202,6 +231,10 @@ const report = {
   refreshedGeneratedGuides: refreshedGuides.length,
   protectedCohortOverlap: targets.filter((target) => protectedUrls.has(target.url)).length,
   consolidationOverlap: errors.filter((error) => error.includes("consolidated family")).length,
+  postGateRetiredTargets: targets.filter((target) => {
+    const family = deferredFamilyForTarget(target);
+    return family && target.slug !== family.targetSlug;
+  }).length,
   uniqueQuickAnswers: new Set(quickAnswers).size,
   uniqueDecisionSections: new Set(recoverySections).size,
   mode: publicAudit ? "public" : runtimeOrigin ? "local-runtime" : "source-only",

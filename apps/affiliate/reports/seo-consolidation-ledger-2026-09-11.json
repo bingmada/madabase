@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "releaseDate": "2026-09-11",
+  "source": "apps/affiliate/config/deferred-family-consolidations-2026-09-11.json",
+  "ledger": [
+    {
+      "site": "network",
+      "familySlug": "sfp-plus-network-switches",
+      "targetUrl": "https://network.madabase.com/guides/sfp-plus-network-switches-vs-alternatives",
+      "sourceUrls": [
+        "https://network.madabase.com/guides/sfp-plus-network-switches-buying-guide",
+        "https://network.madabase.com/guides/sfp-plus-network-switches-compatibility-and-fit-guide",
+        "https://network.madabase.com/guides/sfp-plus-network-switches-ownership-cost-and-maintenance"
+      ]
+    },
+    {
+      "site": "network",
+      "familySlug": "poe-splitters",
+      "targetUrl": "https://network.madabase.com/guides/poe-splitters-vs-alternatives",
+      "sourceUrls": [
+        "https://network.madabase.com/guides/poe-splitters-buying-guide",
+        "https://network.madabase.com/guides/poe-splitters-compatibility-and-fit-guide",
+        "https://network.madabase.com/guides/poe-splitters-ownership-cost-and-maintenance"
+      ]
+    }
+  ]
+}

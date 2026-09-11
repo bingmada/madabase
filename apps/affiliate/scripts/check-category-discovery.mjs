@@ -27,6 +27,8 @@ async function governedGuideRows() {
   const deepRankRecoveryPath = path.join(affiliateDir, "config", "deep-rank-recovery-2026-08-27.json");
   const consolidationPath = path.join(affiliateDir, "config", "search-recovery-consolidations-2026-08-23.json");
   const day30ConsolidationPath = path.join(affiliateDir, "config", "search-recovery-consolidations-2026-09-08.json");
+  const deferredConsolidationPath = path.join(affiliateDir, "config", "deferred-family-consolidations-2026-09-11.json");
+  const pageOneCtrPath = path.join(affiliateDir, "config", "page-one-ctr-cohort-2026-09-11.json");
   const source = ts.transpileModule(fs.readFileSync(sourcePath, "utf8"), {
     compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 },
     fileName: sourcePath,
@@ -44,9 +46,13 @@ async function governedGuideRows() {
   const deepRankRecovery = JSON.parse(fs.readFileSync(deepRankRecoveryPath, "utf8"));
   const consolidation = JSON.parse(fs.readFileSync(consolidationPath, "utf8"));
   const day30Consolidation = JSON.parse(fs.readFileSync(day30ConsolidationPath, "utf8"));
+  const deferredConsolidation = JSON.parse(fs.readFileSync(deferredConsolidationPath, "utf8"));
+  const pageOneCtr = JSON.parse(fs.readFileSync(pageOneCtrPath, "utf8"));
+  const pageOneCtrCategories = new Set(pageOneCtr.targets.map((item) => `${item.site}:${item.category}`));
   const consolidatedFamilyTargets = new Map([
     ...consolidation.families.map((item) => [`${item.site}:${item.familySlug}`, "buying"]),
     ...day30Consolidation.families.map((item) => [`${item.site}:${item.familySlug}`, item.targetRole]),
+    ...deferredConsolidation.families.map((item) => [`${item.site}:${item.familySlug}`, item.targetRole]),
   ]);
   const moduleSource = `${brief}\nconst communityEvidenceData = ${JSON.stringify(community)};\nconst comparisonFirstData = ${JSON.stringify(comparisonFirst)};\nconst deepRankRecoveryData = ${JSON.stringify(deepRankRecovery)};\n${source}`;
   const expansion = await import(`data:text/javascript;base64,${Buffer.from(moduleSource).toString("base64")}`);
@@ -61,6 +67,8 @@ async function governedGuideRows() {
       hub: targetRole ? guide.familyRole === targetRole : guide.familyRole === "buying",
       consolidated: Boolean(targetRole),
       day30Consolidated: day30Consolidation.families.some((item) => `${item.site}:${item.familySlug}` === familyKey),
+      deferredConsolidated: deferredConsolidation.families.some((item) => `${item.site}:${item.familySlug}` === familyKey),
+      pageOneCtrCategory: pageOneCtrCategories.has(`${guide.site}:${guide.category}`),
       url: `https://${siteHosts[guide.site]}/guides/${guide.slug}`,
     };
   });
@@ -95,7 +103,7 @@ for (const row of rows) {
   const guideUrl = new URL(row.url);
   const categoryUrl = `https://${guideUrl.host}/categories/${row.category}`;
   const entry = categories.get(categoryUrl) ?? [];
-  entry.push({ url: row.url, path: guideUrl.pathname, family: row.family, role: row.role, hub: row.hub, consolidated: row.consolidated, day30Consolidated: row.day30Consolidated });
+    entry.push({ url: row.url, path: guideUrl.pathname, family: row.family, role: row.role, hub: row.hub, consolidated: row.consolidated, day30Consolidated: row.day30Consolidated, deferredConsolidated: row.deferredConsolidated, pageOneCtrCategory: row.pageOneCtrCategory });
   categories.set(categoryUrl, entry);
 }
 
@@ -129,7 +137,11 @@ async function worker() {
       if (response.status !== 200) errors.push(`HTTP ${response.status}`);
       if (!html.includes('data-governed-discovery-links="family-hubs"')) errors.push("family-hub discovery section missing");
       if (missingHubs.length) errors.push(`${missingHubs.length} primary family hub link(s) missing: ${missingHubs.slice(0, 5).map((guide) => guide.path).join(", ")}`);
-      const expectedCategoryLastmod = guides.some((guide) => guide.day30Consolidated) ? "2026-09-08" : "2026-08-23";
+      const expectedCategoryLastmod = guides.some((guide) => guide.deferredConsolidated || guide.pageOneCtrCategory)
+        ? "2026-09-11"
+        : guides.some((guide) => guide.day30Consolidated)
+          ? "2026-09-08"
+          : "2026-08-23";
       if (!sitemapLastmodByCategory.get(categoryUrl)?.startsWith(expectedCategoryLastmod)) {
         errors.push(`sitemap lastmod is not ${expectedCategoryLastmod} (${sitemapLastmodByCategory.get(categoryUrl) ?? "missing"})`);
       }

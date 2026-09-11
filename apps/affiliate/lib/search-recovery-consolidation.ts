@@ -1,5 +1,6 @@
 import initialConsolidationData from "../config/search-recovery-consolidations-2026-08-23.json";
 import day30ConsolidationData from "../config/search-recovery-consolidations-2026-09-08.json";
+import deferredConsolidationData from "../config/deferred-family-consolidations-2026-09-11.json";
 import type { Guide, SiteKey } from "./types";
 
 type ConsolidatedFamily = {
@@ -47,9 +48,19 @@ const day30ConsolidatedFamilies: ConsolidatedFamily[] = day30ConsolidationData.f
   preservePrimaryFields: true,
 }));
 
+const deferredConsolidatedFamilies: ConsolidatedFamily[] = deferredConsolidationData.families.map((family) => ({
+  site: family.site as SiteKey,
+  familySlug: family.familySlug,
+  targetRole: family.targetRole as NonNullable<Guide["familyRole"]>,
+  targetSlug: family.targetSlug,
+  consolidatedAt: "September 11, 2026",
+  preservePrimaryFields: true,
+}));
+
 export const consolidatedFamilies = [
   ...initialConsolidatedFamilies,
   ...day30ConsolidatedFamilies,
+  ...deferredConsolidatedFamilies,
 ];
 const consolidatedFamilyByKey = new Map(
   consolidatedFamilies.map((family) => [`${family.site}:${family.familySlug}`, family]),

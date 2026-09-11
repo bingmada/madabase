@@ -61,8 +61,8 @@ export const gscPriorityProducts: Product[] = [
     asin: "B09HH7HSGV",
     amazonTitle: "GROWNSY Bottle Sterilizer and Dryer, Compact Electric Steam Baby Bottle Sterilizer",
     amazonDetailUrl: "https://www.amazon.com/dp/B09HH7HSGV",
-    seoTitle: "GROWNSY Bottle Sterilizer and Dryer Review: Compact Counter Fit",
-    updatedAt,
+    seoTitle: "GROWNSY Bottle Sterilizer Dryer Review: Worth It for Small Kitchens?",
+    updatedAt: "September 11, 2026",
     sources: [
       { name: "GROWNSY product manuals", url: "https://grownsy.com/pages/product-user-manual", note: "Official model 916 sterilizer-dryer manual index." },
       { name: "Amazon listing: GROWNSY Bottle Sterilizer and Dryer", url: "https://www.amazon.com/dp/B09HH7HSGV", note: "ASIN, compact model title, item model LS-BE916, dimensions, and listing bullets." },
@@ -392,10 +392,10 @@ export const gscPriorityGuides: Guide[] = [
   {
     site: "baby",
     slug: "ergobaby-omni-breeze-forward-facing-age-guide",
-    title: "Ergobaby Omni Breeze Forward-Facing Age and Fit Guide",
+    title: "Ergobaby Omni Breeze Forward Facing: Age & Fit Checks",
     dek: "Check head and neck control, height, weight, chin clearance, overstimulation, and when to turn back inward.",
     category: "travel",
-    updatedAt,
+    updatedAt: "September 11, 2026",
     relatedProducts: ["ergobaby-omni-breeze-carrier"],
     relatedRoundups: ["best-baby-carriers-by-age-and-position", "best-baby-carriers-and-sleep-routine-upgrades"],
     sources: [

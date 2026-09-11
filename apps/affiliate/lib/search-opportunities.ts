@@ -26,6 +26,7 @@ const portfolioBatchUpdatedAt = "July 28, 2026";
 const cohortReviewUpdatedAt = "August 6, 2026";
 const rankingReviewUpdatedAt = "August 13, 2026";
 const decoBe25IntentRepairUpdatedAt = "August 20, 2026";
+const pageOneCtrUpdatedAt = "September 11, 2026";
 
 export const searchOpportunities: SearchOpportunity[] = [
   {
@@ -150,9 +151,18 @@ export const searchOpportunities: SearchOpportunity[] = [
     kind: "product",
     slug: "branch-ergonomic-chair",
     query: "Is the Branch Ergonomic Chair a good fit, and what does its warranty cover?",
-    answer: "The Branch chair is most convincing when its seat depth, arm range, and lumbar shape fit the actual user. Measure first and read the current residential warranty exclusions; a long warranty is useful only when the seller, usage type, and covered component match the claim.",
-    updatedAt,
+    answer: "Branch lists a seven-year parts-and-components warranty and 30-day direct return window, but seller authorization, proof, original packaging, and return fees matter.",
+    updatedAt: pageOneCtrUpdatedAt,
     preferredPaths: ["/best/best-ergonomic-chairs-under-500", "/reviews/hon-ignition-2-0-chair", "/guides/ergonomic-kneeling-chairs-buying-guide"],
+  },
+  {
+    site: "homeoffice",
+    kind: "product",
+    slug: "hon-ignition-2-0-chair",
+    query: "What warranty and controls come with the HON Ignition 2.0 configuration?",
+    answer: "Treat Ignition 2.0 as a configurable chair family: verify the exact arms, lumbar, seat depth, tilt, seller, warranty eligibility, and return path before buying.",
+    updatedAt: pageOneCtrUpdatedAt,
+    preferredPaths: ["/best/best-ergonomic-chairs-under-500", "/reviews/branch-ergonomic-chair", "/guides/ergonomic-kneeling-chairs-buying-guide"],
   },
   {
     site: "network",
@@ -322,8 +332,17 @@ export const searchOpportunities: SearchOpportunity[] = [
     slug: "ergobaby-omni-breeze-forward-facing-age-guide",
     query: "When can a baby face outward in Ergobaby Omni Breeze?",
     answer: "Outward-facing carry begins only after strong head and neck control and the current height and weight requirements are met, commonly around five to six months. Keep sessions short, watch the baby's cues, and return to inward carry when overstimulated or tired.",
-    updatedAt,
+    updatedAt: pageOneCtrUpdatedAt,
     preferredPaths: ["/reviews/ergobaby-omni-breeze-carrier", "/guides/ergobaby-omni-breeze-positions-by-age"],
+  },
+  {
+    site: "baby",
+    kind: "product",
+    slug: "grownsy-bottle-sterilizer-dryer",
+    query: "Is the GROWNSY Bottle Sterilizer and Dryer worth it for a small kitchen?",
+    answer: "GROWNSY is worth considering when counter space matters and bottles are already washed. It sterilizes and dries; confirm tray fit, seller, and exact model before buying.",
+    updatedAt: pageOneCtrUpdatedAt,
+    preferredPaths: ["/best/best-bottle-sterilizers-and-dryers", "/guides/bottle-washer-vs-sterilizer-vs-dryer-guide", "/reviews/dr-browns-all-in-one-sterilizer-dryer"],
   },
   {
     site: "smarthome",

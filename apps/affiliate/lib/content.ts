@@ -719,8 +719,8 @@ export const products: Product[] = [
   {
     site: "homeoffice",
     slug: "branch-ergonomic-chair",
-    seoTitle: "Branch Ergonomic Chair Guide: Fit, Adjustments & Warranty",
-    updatedAt: "July 17, 2026",
+    seoTitle: "Branch Ergonomic Chair Review: Warranty, Fit & Returns",
+    updatedAt: "September 11, 2026",
     sources: [
       { name: "Branch Ergonomic Chair", url: "https://www.branchfurniture.com/products/ergonomic-chair", note: "Official adjustment points, user range, certification, capacity, and current product warranty." },
       { name: "Branch warranty policy", url: "https://www.branchfurniture.com/pages/warranty", note: "Official coverage window, purchase-channel, proof-of-purchase, registration, geography, transfer, and exclusion terms." },
@@ -759,8 +759,8 @@ export const products: Product[] = [
     site: "homeoffice",
     slug: "hon-ignition-2-0-chair",
     asin: "B07GNDDNMW",
-    seoTitle: "HON Ignition 2.0 Chair Guide: Fit, Controls & Configuration",
-    updatedAt: "July 26, 2026",
+    seoTitle: "HON Ignition 2.0 Review: Warranty, Fit & Controls",
+    updatedAt: "September 11, 2026",
     evidenceMode: "official-spec",
     researchNote: "Research-based configuration and fit guide using HON documentation and the exact Amazon ASIN; this is not a hands-on comfort or durability test.",
     sources: [
