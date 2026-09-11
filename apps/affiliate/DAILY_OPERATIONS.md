@@ -1,6 +1,6 @@
 # Madabase 联盟站每日运营清单
 
-最后更新：2026-09-08
+最后更新：2026-09-11
 
 这份清单是 `日常开发` 的执行入口。每次运行先读取当前运营快照和恢复控制，再按下面顺序完成检查、选择一个主动作、验证并写入当天记录。七个站点必须同时覆盖：Network、Smarthome、Homeoffice、Baby、Pets、Style、Costume。
 
@@ -95,10 +95,11 @@ Google spam update 已于 2026-08-21 官方结束，GSC 也已在 2026-08-26 提
 | 2026-09-02 | Costume small-space pilot 下一闸门 | 无查询证据就扩充同类 URL |
 | 2026-09-03 | Soft151 sitemap 后 Day 14 | 以单日数据定性 |
 | 2026-09-08 | Expansion757 Day 30 已完成。29 个全检查/全收录/全零展现多路由主题中，27 个已从 118 个活跃 URL 合并为 27 个保留 hub + 91 个永久重定向；2 个与 Deep43 重叠的 Network 主题延后。生产 release `4d78d2e` 与精确 32 URL IndexNow 已验证 | 9 月 15 日前因滚动小时噪声反转这 27 个合并；改动 2 个 Deep43 重叠主题；新增可索引路由 |
-| 2026-09-10 | Deep43 战术闸门、Soft151 原始 Day 28；同日自动判定 `sfp-plus-network-switches` 与 `poe-splitters` 两个延后主题 | 闸门前改动两个延后主题；删除、合并或重定向前跳过精确 cohort 和 live inspection 证据 |
-| 2026-09-11 | Comparison-first 36 Day 7 | 闸门前改其标题、H1、直接答案或主意图，除非出现确认的技术/商家故障 |
+| 2026-09-10 | Deep43 战术闸门已于 9 月 11 日补齐：34 vs 48 展现、14 vs 16 暴露 URL、加权排名 29.4 vs 56.2；不批量重写。两个延后 Network 主题仍全收录且当前零暴露，已按门槛执行 8→2 + 6 个永久重定向 | 重写仍在获得展现或进入前 20 的 Deep43 页面；重新打开 6 个重定向源；新增可索引路由 |
+| 2026-09-11 | Comparison-first 36 Day 7 已完成：10 vs 17 展现、6 vs 8 暴露 URL，当前暴露页加权排名 6.4；30 个当前零展现页均已收录，整组保护至 9 月 18 日。另发布 2 个 Network 主题合并和 4 个未保护前十零点击页修复，生产 release `3d04dcd` 与精确 10 URL IndexNow 已验证 | 9 月 18 日前重置 Comparison-first 主字段或本日新 cohort；改 ErGear；重放本日 IndexNow；扩大为新页面发布 |
 | 2026-09-14 | Indexed-zero 40 Day 7 与 ErGear Day 14 | 用不完整日或滚动小时值提前重置实验 |
 | 2026-09-15 / 09-22 / 10-08 | 9 月 8 日 27-family 合并的 Day 7 / Day 14 / Day 30 | 重写已获得展现、点击、查询扩展或前 20 排名的保留 hub |
+| 2026-09-18 / 09-25 / 10-11 | 9 月 11 日两组变更的 Day 7 / Day 14 / Day 30；同日 9 月 18 日还需执行 Comparison-first 36 Day 14 | 提前改动 2 个保留 Network hub 或 4 个 CTR 页；依据站点总量而非精确 URL/查询证据反转动作 |
 | GSC 完整包含 2026-08-22 至 2026-08-24 | 已在 2026-08-26 完成复评；数据不支持解冻，继续 hold-no-expansion，等待后续精确 cohort 恢复证据 | 把三日门槛满足误读为自动恢复；做大范围 SEO 手术 |
 
 日期闸门以 `current-operations-handoff.json` 为准；如果本表与快照冲突，先更新本表和当天日志，再行动。
