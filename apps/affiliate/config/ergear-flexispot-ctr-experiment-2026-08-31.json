@@ -107,7 +107,18 @@
       "newMetaDescription": "Choose FlexiSpot E7 Mini for a compact fixed workstation, or ErGear 48×24 for a larger rolling surface. Compare height, clamp fit, and room clearance.",
       "contentDate": "September 13, 2026"
     },
-    "nextGate": "Protect unchanged through September 20 Day 7 and September 27 Day 14. Stop testing immediately if the page earns a click."
+    "nextGate": "Protect unchanged through September 20 Day 7 and September 27 Day 14. Stop testing immediately if the page earns a click.",
+    "release": {
+      "commit": "ab2cf6dcbfdcc3aacfa01536a2ed34992fe0e093",
+      "path": "/srv/madabase-affiliate/releases/ab2cf6d",
+      "rollback": "3d04dcd",
+      "service": "madabase-affiliate.service",
+      "artifactBytes": 60852496,
+      "artifactSha256": "0adc1f5842652b82b825f0777b553e2b36f0b516cee9c85979a186347563fb57",
+      "productionVerifiedAt": "2026-09-13T17:30:00+08:00",
+      "validation": "Candidate and production returned the exact new title, meta description, canonical, September 13 date and Sitemap lastmod. All seven Affiliate homepages returned HTTP 200 on candidate, origin and public checks. Production has zero restarts and no error-level log entries; candidate is stopped and Cloudflare returned current HTML without a purge.",
+      "indexNow": "Exactly this one changed canonical was accepted with HTTP 200; no Sitemap or historical URL was replayed."
+    }
   },
   "release": {
     "commit": "7a30568",

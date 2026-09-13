@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13T17:15:00+08:00",
+  "updatedAt": "2026-09-13T17:30:00+08:00",
   "purpose": "Tracked cross-conversation snapshot. Read this before every affiliate operation, then read docs/affiliate-growth-state.json and docs/affiliate-growth-runbook.md for the mutable history and operating rules.",
   "siteScopeDecision20260913": {
     "tools": "retired_owner_decision",
@@ -20,8 +20,8 @@
     "control": "Run npm run check:page-coverage --workspace apps/affiliate for ledger integrity; add LIVE_PAGE_COVERAGE_PUBLIC_AUDIT=1 to compare all classified URLs and exact Sitemap counts against production."
   },
   "crossConversationResume": {
-    "asOf": "2026-09-13T17:15:00+08:00",
-    "status": "september_13_full_live_page_coverage_closed_ergear_second_snippet_test_pending_release",
+    "asOf": "2026-09-13T17:30:00+08:00",
+    "status": "september_13_full_live_page_coverage_closed_ergear_second_snippet_test_released",
     "readOrder": [
       "apps/affiliate/config/current-operations-handoff.json",
       "docs/affiliate-growth-state.json",
@@ -57,16 +57,16 @@
       "apps/affiliate/config/next-product-expansion-100-pilot-01.json",
       "apps/affiliate/config/next-product-expansion-100-readiness.json"
     ],
-    "oneSentenceState": "All 1,264 live content URLs across the nine active non-Tools hosts are now assigned to exact controls; the September 7 cohort already produced four new top-10 pages in only four complete post-release days, while the ErGear page crossed 103 zero-click impressions at position 8.1 and received one owner-accelerated, query-backed second snippet test pending release.",
+    "oneSentenceState": "Release ab2cf6d is live and healthy with 3d04dcd retained for rollback; all 1,264 live content URLs across the nine active non-Tools hosts are assigned to exact controls, four early indexed-zero pages are protected, and the ErGear page's owner-accelerated second snippet test is public with exactly one accepted IndexNow canonical.",
     "production": {
-      "activeRelease": "3d04dcd",
-      "sourceCommit": "3d04dcd5e5d88c8f2e4250beb8aeb73b19bdabd2",
-      "path": "/srv/madabase-affiliate/releases/3d04dcd",
-      "rollback": "4d78d2e",
+      "activeRelease": "ab2cf6d",
+      "sourceCommit": "ab2cf6dcbfdcc3aacfa01536a2ed34992fe0e093",
+      "path": "/srv/madabase-affiliate/releases/ab2cf6d",
+      "rollback": "3d04dcd",
       "service": "madabase-affiliate.service",
       "port": 3011,
       "status": "active_zero_restarts_public_verified",
-      "securityCleanup": "Deployment used the owner-authorized Aliyun Workbench connection and existing server source repository at /srv/madabase-affiliate/sources/9b924b7. It fast-forwarded origin/lyd-0609 to exact commit 3d04dcd5e5d88c8f2e4250beb8aeb73b19bdabd2, activated the 60,850,739-byte immutable archive after the server SHA-256 matched 8a288c332682a57c7bf5e8162a613e0cc9deaadbc7e2c9284ebbbe4cd3795f72, and backed up the prior unit as madabase-affiliate.service.before-3d04dcd. Release 4d78d2e remains intact for immediate rollback, candidate port 3111 is closed, production has zero restarts, and no unrelated server work was modified."
+      "securityCleanup": "Deployment used the owner-authorized Aliyun Workbench connection and existing server source repository at /srv/madabase-affiliate/sources/9b924b7. It fast-forwarded origin/lyd-0609 to exact commit ab2cf6dcbfdcc3aacfa01536a2ed34992fe0e093, activated the 60,852,496-byte immutable archive after the server SHA-256 matched 0adc1f5842652b82b825f0777b553e2b36f0b516cee9c85979a186347563fb57, and backed up the prior unit as madabase-affiliate.service.before-ab2cf6d. Release 3d04dcd remains intact for immediate rollback, candidate port 3111 is closed, production has zero restarts and no error-level log entries, and no unrelated server work was modified."
     },
     "searchAndIndexing": {
       "latest24Hours": "Rolling September 10-11 versus the preceding 24 hours: 0 versus 1 clicks, 167 versus 165 impressions, 0% versus 0.6% CTR and position 23.3 versus 19.5. The two-impression difference is not a new same-day cliff; the window is directional and the immediate constraint remains CTR plus uneven page coverage.",
@@ -75,7 +75,7 @@
       "interpretation": "The portfolio is not in a fresh technical collapse. Seven-day impressions are down 9.0%, but average position improves by 18.1 positions; Google is showing fewer portfolio results while the surviving results rank much better. Preserve exposed and protected winners, and use exact family or query evidence rather than a broad rewrite.",
       "gscPageIndexing": "Report last updated August 21: 1,586 indexed and 4,267 not indexed, including 3,514 intentional noindex routes, 364 404s, 103 redirects, 40 crawled-currently-not-indexed, 136 discovered-currently-not-indexed, 33 duplicate-without-user-canonical and two historical 5xx examples.",
       "gscActions": "All submitted affiliate sitemaps remain Success with exact discovered-page counts: Network 245, Smarthome 258, Homeoffice 275, Baby 264, Pets 234, Style 76 and Costumes 121. No sitemap resubmission or bulk Search Console Request indexing was made. The two historical 5xx examples remain in Started validation; manual actions and security issues report no issues; removals has no requests submitted in six months.",
-      "indexNow": "Historical cohorts were not replayed. On September 11, IndexNow accepted exactly 10 changed canonicals with HTTP 200: three Network, three Homeoffice and four Baby. The set contains two retained Network hubs, four CTR targets and four affected category pages; six redirect sources, unchanged pages, prior cohorts, homepages, sitemaps and product pilots were excluded.",
+      "indexNow": "Historical cohorts were not replayed. On September 13, IndexNow accepted exactly one changed canonical with HTTP 200: https://homeoffice.madabase.com/best/ergear-48x24-vs-flexispot-e7-mini. Unchanged pages, historical cohorts, homepages and sitemaps were excluded. The previous September 11 exact 10-URL submission remains complete and was not replayed.",
       "deepRankRecovery": "The September 11 tactical gate produced 34 versus 48 impressions across 14 versus 16 exposed URLs and improved weighted position to 29.4 from 56.2. Do not rewrite the cohort. Two protected overlap families remained all-indexed and current-zero, so the expired September 10 overlap hold was resolved through the exact two-family consolidation ledger. Run the remaining portfolio gate September 24.",
       "ergearCtrExperiment": "The owner accelerated the calendar gate on September 13 after the quantitative gate was already met. Exact page-filtered complete data from August 31 through September 10 records 103 impressions, zero clicks and average position 8.1; 45 impressions come from flexispot e7 mini and five each from the two exact comparison directions. Run exactly one second snippet test that leads with FlexiSpot E7 Mini and names the fixed-versus-rolling decision; preserve the route, body, products, merchant links and internal links, then protect through September 20/27.",
       "comparisonFirstCohort": "September 11 Day 7 produced 10 versus 17 impressions across six versus eight exposed URLs; 30 current-zero pages remain indexed and the current exposed weighted position is 6.4. The direction is useful but the sample is thin. Preserve all 36 primary fields through September 18 Day 14, then inspect only exact zero-exposure or clearly mismatched pages.",
@@ -109,7 +109,7 @@
       "Treat the historical 429 active Expansion757 inspection count as an overdue measurement backlog, not permission for mass mutation. Continue only exact active canonicals when Search Console quota and a due decision require it; skip all governed redirect sources and submit no bulk Request indexing.",
       "Hold the exact 27-family September 8 consolidation unchanged through its September 15 Day-7, September 22 Day-14 and October 8 Day-30 gates. Protect retained hubs that gain clicks, impressions, query breadth or top-20 rankings; do not reverse redirects from rolling-hour noise. The seven existing single hubs require demand differentiation or retirement review rather than another merge.",
       "Keep new indexable publication frozen during post-rollout observation. Existing-page topic hierarchy and query-backed recovery are owner-authorized under search-recovery-control version 3; do not convert that authorization into new products, new cohorts or evidence-free mass title churn.",
-      "Treat release 3d04dcd as active production with 4d78d2e retained for immediate rollback. Do not repeat IndexNow for the exact 10 accepted September 11 URLs, the exact 32 accepted September 8 URLs, or any prior cohort; do not purge Cloudflare without a confirmed stale-response defect.",
+      "Treat release ab2cf6d as active production with 3d04dcd retained for immediate rollback. Do not repeat IndexNow for the exact one accepted September 13 URL, the exact 10 accepted September 11 URLs, the exact 32 accepted September 8 URLs, or any prior cohort; do not purge Cloudflare without a confirmed stale-response defect.",
       "Hold the exact September 11 two-family Network consolidation and four-page CTR cohort unchanged through September 18 Day 7, September 25 Day 14 and October 11 Day 30. Protect any route that gains clicks, impressions, query breadth or a top-20 position. The six redirect sources remain retired.",
       "The Deep43 tactical gate is complete: 34 versus 48 impressions, 14 versus 16 exposed URLs and weighted position 29.4 versus 56.2. Do not rewrite the cohort; run the remaining portfolio gate September 24.",
       "Soft151 Day-14 and all 130 zero-impression URL inspections are complete. The final 31 Pets URLs were 25 discovered-currently-not-indexed and six unknown to Google; the five duplicate-status pages have unrelated stale Google-selected canonicals while current HTML self-canonicalizes. Preserve them for precise semantic repair and recrawl review; do not resubmit unchanged URLs merely because the scheduled date passed.",

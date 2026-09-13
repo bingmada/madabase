@@ -57,7 +57,10 @@ Tools（`tools.madabase.com`）已按 Owner 决定永久退出运营、监控、
 - `check:indexed-zero-recovery`、`check:page-one-ctr`、306/306 联盟链接与 ESLint 通过。
 - Node 20 优化构建、类型检查、静态生成和 Linux x64 打包通过。发布归档为 **60,852,496 bytes**，SHA-256 `0adc1f5842652b82b825f0777b553e2b36f0b516cee9c85979a186347563fb57`。
 - 本地不可变候选运行时已验证目标页 HTTP 200、新标题、自 canonical、2026-09-13 更新时间及首屏商业路径。
-- Sitemap 成员关系没有变化，因此不重提 Sitemap；发布后只向 IndexNow 提交目标页一个 changed canonical，不重放历史 URL。
+- 提交 `ab2cf6dcbfdcc3aacfa01536a2ed34992fe0e093` 已推送到 `origin/lyd-0609`。服务器现有仓库 fast-forward 后的 60,852,496-byte 归档与本地 SHA-256 `0adc1f5842652b82b825f0777b553e2b36f0b516cee9c85979a186347563fb57` 完全一致。
+- 候选 3111 通过目标页、Homeoffice Sitemap 和七个 Affiliate 首页检查后，生产已切换到 `/srv/madabase-affiliate/releases/ab2cf6d`。`madabase-affiliate.service` 在 3011 active/running、零重启且无 error 日志；`current` 指针一致，候选已停止，旧 `3d04dcd` release 与 `madabase-affiliate.service.before-ab2cf6d` 均保留用于回滚。
+- 公网目标页及七站首页全部 HTTP 200；公网 HTML 已返回新标题、新元描述、自 canonical 和 2026-09-13 更新时间，Cloudflare 状态为 `DYNAMIC`，无需清缓存。
+- Sitemap 成员关系没有变化，因此未重提 Sitemap。IndexNow 仅提交目标页一个 changed canonical，返回 HTTP 200；历史 URL 未重放。
 
 ## 后续闸门
 
@@ -69,9 +72,9 @@ Tools（`tools.madabase.com`）已按 Owner 决定永久退出运营、监控、
 
 ## 今日关闭状态
 
-- 状态：`implementation_validated_release_pending`
+- 状态：`complete_released_public_verified_indexnow_exact_1`
 - 主要 SEO 动作：ErGear/FlexiSpot 单页第二次摘要实验
 - 页面覆盖：1,264/1,264 活跃非 Tools 内容 URL 已分配到控制账本
 - Bing 保护：未修改已知 Bing 点击或 AI 来源页面
-- 发现动作：待生产发布后精确提交 1 个 IndexNow canonical
+- 发现动作：精确 1 个 changed canonical 已获 IndexNow HTTP 200；未重提 Sitemap
 - 下一正式判断：GSC 完整覆盖 2026-09-07 至 2026-09-13 后的 indexed-zero 40 Day 7
