@@ -1,7 +1,7 @@
 {
-  "version": 1,
+  "version": 2,
   "createdAt": "2026-08-31T10:26:44+08:00",
-  "status": "day7_positive_exposure_zero_clicks_hold_through_day14",
+  "status": "day11_sample_threshold_met_second_snippet_test_released_owner_accelerated",
   "type": "single_existing_page_snippet_experiment",
   "site": "homeoffice",
   "url": "https://homeoffice.madabase.com/best/ergear-48x24-vs-flexispot-e7-mini",
@@ -81,6 +81,33 @@
       { "query": "flexispot vs ergear", "currentImpressions": 4, "previousImpressions": 1 }
     ],
     "decision": "Protect unchanged through September 14. Exposure more than doubled while page-one position held; the mixed pre/post window and zero clicks do not yet justify resetting the snippet."
+  },
+  "day11AcceleratedDecision": {
+    "checkedAt": "2026-09-13T16:45:00+08:00",
+    "latestCompleteGscDate": "2026-09-10",
+    "window": "2026-08-31 through 2026-09-10",
+    "completePostReleaseDays": 11,
+    "current": {
+      "clicks": 0,
+      "impressions": 103,
+      "averagePosition": 8.1
+    },
+    "pageFilteredQueries": [
+      { "query": "flexispot e7 mini", "clicks": 0, "impressions": 45 },
+      { "query": "ergear vs flexispot", "clicks": 0, "impressions": 5 },
+      { "query": "flexispot vs ergear", "clicks": 0, "impressions": 5 },
+      { "query": "head to checkout", "clicks": 0, "impressions": 1 }
+    ],
+    "threshold": "The recorded second-test threshold was reached early: at least 100 post-release impressions, zero clicks and a still-top-12 average position.",
+    "ownerOverride": "On September 13 the owner explicitly directed execution without waiting for the September 14 calendar gate. The latest complete data ends September 10, but the cumulative page-filtered sample already crosses the quantitative gate.",
+    "decision": "Run exactly one second snippet test. Lead with the dominant FlexiSpot E7 Mini query and replace the generic Which Is Better wording with the page's specific fixed-versus-rolling decision. Preserve the route, comparison intent, body, products, merchant links and internal-link structure.",
+    "secondSnippetTest": {
+      "oldTitle": "ErGear 48×24 vs FlexiSpot E7 Mini: Which Is Better?",
+      "newTitle": "FlexiSpot E7 Mini vs ErGear 48×24: Fixed or Rolling Desk?",
+      "newMetaDescription": "Choose FlexiSpot E7 Mini for a compact fixed workstation, or ErGear 48×24 for a larger rolling surface. Compare height, clamp fit, and room clearance.",
+      "contentDate": "September 13, 2026"
+    },
+    "nextGate": "Protect unchanged through September 20 Day 7 and September 27 Day 14. Stop testing immediately if the page earns a click."
   },
   "release": {
     "commit": "7a30568",

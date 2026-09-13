@@ -746,5 +746,31 @@
       "relatedGuideSlugs": ["childproof-outlet-covers-buying-guide", "childproof-corner-guards-buying-guide", "hardware-mounted-baby-gates-buying-guide"],
       "liveSerp": "Validated current knob-cover, stove-guard, and kitchen-exclusion result coverage on 2026-09-07."
     }
-  ]
+  ],
+  "earlyReview20260913": {
+    "latestCompleteGscDate": "2026-09-10",
+    "window": "2026-09-04 through 2026-09-10 versus the preceding seven days",
+    "completePostReleaseDays": 4,
+    "current": {
+      "exposedUrls": 4,
+      "zeroImpressionUrls": 36,
+      "clicks": 0,
+      "impressions": 6,
+      "weightedPosition": 5.667
+    },
+    "previous": {
+      "exposedUrls": 0,
+      "zeroImpressionUrls": 40,
+      "clicks": 0,
+      "impressions": 0,
+      "weightedPosition": null
+    },
+    "newSignalsToProtect": [
+      { "url": "https://homeoffice.madabase.com/guides/conference-speakerphones-buying-guide", "impressions": 2, "position": 2 },
+      { "url": "https://baby.madabase.com/guides/reusable-baby-food-pouches-buying-guide", "impressions": 2, "position": 9.5 },
+      { "url": "https://baby.madabase.com/guides/bathtub-spout-covers-buying-guide", "impressions": 1, "position": 9 },
+      { "url": "https://baby.madabase.com/guides/childproof-outlet-covers-buying-guide", "impressions": 1, "position": 2 }
+    ],
+    "decision": "Protect the four newly exposed top-10 pages immediately. The other 36 URLs have only four complete post-release data days, so zero exposure is not a failed Day-7 result and does not authorize a reset. Run the formal exact Day-7 gate when GSC contains the complete September 7-13 window."
+  }
 }

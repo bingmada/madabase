@@ -1,0 +1,984 @@
+{
+  "version": 1,
+  "createdAt": "2026-09-13T17:00:00+08:00",
+  "purpose": "Exact control for live Sitemap content URLs that were outside the prior primary protection and pending-review ledgers. This closes the September 13 coverage gap without creating routes or rewriting protected pages.",
+  "scope": {
+    "includedHosts": [
+      "madabase.com",
+      "network.madabase.com",
+      "smarthome.madabase.com",
+      "homeoffice.madabase.com",
+      "baby.madabase.com",
+      "pets.madabase.com",
+      "style.madabase.com",
+      "costumes.madabase.com",
+      "wellness.madabase.com"
+    ],
+    "excludedHosts": [
+      "tools.madabase.com"
+    ],
+    "source": "Public Sitemap snapshots fetched 2026-09-13 plus the GSC September 4-10 complete-window comparison exported/read on 2026-09-13.",
+    "liveSitemapUrls": 1401,
+    "liveContentUrls": 1264,
+    "structuralPolicyAndMarketUrls": 137,
+    "contentAlreadyCoveredByPriorLedgers": 1126,
+    "contentNewlyClassifiedHere": 138
+  },
+  "sitemapCounts": {
+    "madabase.com": 13,
+    "network.madabase.com": 188,
+    "smarthome.madabase.com": 258,
+    "homeoffice.madabase.com": 275,
+    "baby.madabase.com": 264,
+    "pets.madabase.com": 194,
+    "style.madabase.com": 76,
+    "costumes.madabase.com": 121,
+    "wellness.madabase.com": 12
+  },
+  "controls": {
+    "noNewRoutes": true,
+    "toolsRetiredAndExcluded": true,
+    "protectedPagesMustNotReceiveBulkTitleBodyCanonicalOrRedirectChanges": true,
+    "recoveryWatchPagesRequireExactPageAndQueryEvidenceBeforeMutation": true,
+    "doubleZeroPagesRequireLiveIndexInspectionBeforeRetargetMergeOrRetirement": true,
+    "costumeProductsRemainSeparateFromStaticAffiliateCohorts": true
+  },
+  "newlyClassified": {
+    "protected": {
+      "count": 18,
+      "reason": "Current top-20 visibility in the GSC comparison window; preserve existing intent and include Bing-positive pages such as stroller fans.",
+      "urls": [
+        {
+          "url": "https://baby.madabase.com/guides/baby-bath-kneelers-buying-guide",
+          "sources": [
+            "broad-product-pilot-3-content.ts"
+          ],
+          "metrics": {
+            "currentClicks": 0,
+            "previousClicks": 0,
+            "currentImpressions": 6,
+            "previousImpressions": 7,
+            "currentPosition": 12,
+            "previousPosition": 11.57
+          }
+        },
+        {
+          "url": "https://baby.madabase.com/guides/baby-bottle-drying-rack-storage-workflow-guide",
+          "sources": [
+            "second-round-august-2026-content.ts"
+          ],
+          "metrics": {
+            "currentClicks": 0,
+            "previousClicks": 0,
+            "currentImpressions": 1,
+            "previousImpressions": 1,
+            "currentPosition": 10,
+            "previousPosition": 8
+          }
+        },
+        {
+          "url": "https://baby.madabase.com/guides/baby-wipe-warmers-buying-guide",
+          "sources": [
+            "broad-product-pilot-3-content.ts"
+          ],
+          "metrics": {
+            "currentClicks": 0,
+            "previousClicks": 0,
+            "currentImpressions": 7,
+            "previousImpressions": 9,
+            "currentPosition": 9.14,
+            "previousPosition": 19
+          }
+        },
+        {
+          "url": "https://baby.madabase.com/guides/stroller-fans-buying-guide",
+          "sources": [
+            "broad-product-pilot-3-content.ts"
+          ],
+          "metrics": {
+            "currentClicks": 0,
+            "previousClicks": 0,
+            "currentImpressions": 3,
+            "previousImpressions": 3,
+            "currentPosition": 7,
+            "previousPosition": 8.33
+          }
+        },
+        {
+          "url": "https://baby.madabase.com/guides/stroller-organizers-buying-guide",
+          "sources": [
+            "broad-product-pilot-3-content.ts"
+          ],
+          "metrics": {
+            "currentClicks": 0,
+            "previousClicks": 0,
+            "currentImpressions": 1,
+            "previousImpressions": 1,
+            "currentPosition": 2,
+            "previousPosition": 5
+          }
+        },
+        {
+          "url": "https://baby.madabase.com/reviews/boon-lawn-bottle-drying-rack",
+          "sources": [
+            "second-round-august-2026-content.ts"
+          ],
+          "metrics": {
+            "currentClicks": 0,
+            "previousClicks": 0,
+            "currentImpressions": 1,
+            "previousImpressions": 1,
+            "currentPosition": 10,
+            "previousPosition": 7
+          }
+        },
+        {
+          "url": "https://baby.madabase.com/reviews/ubbi-steel-diaper-pail",
+          "sources": [
+            "second-round-august-2026-content.ts"
+          ],
+          "metrics": {
+            "currentClicks": 0,
+            "previousClicks": 0,
+            "currentImpressions": 2,
+            "previousImpressions": 0,
+            "currentPosition": 7,
+            "previousPosition": 0
+          }
+        },
+        {
+          "url": "https://homeoffice.madabase.com/guides/monitor-riser-stands-buying-guide",
+          "sources": [
+            "broad-product-pilot-3-content.ts"
+          ],
+          "metrics": {
+            "currentClicks": 0,
+            "previousClicks": 0,
+            "currentImpressions": 6,
+            "previousImpressions": 3,
+            "currentPosition": 8,
+            "previousPosition": 40
+          }
+        },
+        {
+          "url": "https://homeoffice.madabase.com/guides/office-chair-mats-buying-guide",
+          "sources": [
+            "broad-product-pilot-3-content.ts"
+          ],
+          "metrics": {
+            "currentClicks": 0,
+            "previousClicks": 0,
+            "currentImpressions": 2,
+            "previousImpressions": 9,
+            "currentPosition": 9.5,
+            "previousPosition": 60
+          }
+        },
+        {
+          "url": "https://homeoffice.madabase.com/guides/under-desk-cpu-holders-buying-guide",
+          "sources": [
+            "broad-product-pilot-3-content.ts"
+          ],
+          "metrics": {
+            "currentClicks": 0,
+            "previousClicks": 0,
+            "currentImpressions": 7,
+            "previousImpressions": 5,
+            "currentPosition": 10.29,
+            "previousPosition": 8.6
+          }
+        },
+        {
+          "url": "https://homeoffice.madabase.com/guides/usb-document-cameras-buying-guide",
+          "sources": [
+            "broad-product-pilot-content.ts"
+          ],
+          "metrics": {
+            "currentClicks": 0,
+            "previousClicks": 0,
+            "currentImpressions": 2,
+            "previousImpressions": 0,
+            "currentPosition": 5,
+            "previousPosition": 0
+          }
+        },
+        {
+          "url": "https://homeoffice.madabase.com/guides/usb-speakerphone-vs-headset-video-meetings",
+          "sources": [
+            "second-round-august-2026-content.ts"
+          ],
+          "metrics": {
+            "currentClicks": 0,
+            "previousClicks": 0,
+            "currentImpressions": 3,
+            "previousImpressions": 0,
+            "currentPosition": 3,
+            "previousPosition": 0
+          }
+        },
+        {
+          "url": "https://homeoffice.madabase.com/guides/usb-switch-vs-kvm-vs-dock-guide",
+          "sources": [
+            "second-round-august-2026-content.ts"
+          ],
+          "metrics": {
+            "currentClicks": 0,
+            "previousClicks": 0,
+            "currentImpressions": 1,
+            "previousImpressions": 5,
+            "currentPosition": 10,
+            "previousPosition": 40.4
+          }
+        },
+        {
+          "url": "https://homeoffice.madabase.com/reviews/asus-zenscreen-mb16acv-portable-monitor",
+          "sources": [
+            "second-round-august-2026-content.ts"
+          ],
+          "metrics": {
+            "currentClicks": 0,
+            "previousClicks": 0,
+            "currentImpressions": 10,
+            "previousImpressions": 2,
+            "currentPosition": 6.8,
+            "previousPosition": 5.5
+          }
+        },
+        {
+          "url": "https://homeoffice.madabase.com/reviews/jabra-speak2-40-usb-speakerphone",
+          "sources": [
+            "second-round-august-2026-content.ts"
+          ],
+          "metrics": {
+            "currentClicks": 0,
+            "previousClicks": 0,
+            "currentImpressions": 4,
+            "previousImpressions": 8,
+            "currentPosition": 7.5,
+            "previousPosition": 9.38
+          }
+        },
+        {
+          "url": "https://homeoffice.madabase.com/reviews/ugreen-30768-usb-3-switch",
+          "sources": [
+            "second-round-august-2026-content.ts"
+          ],
+          "metrics": {
+            "currentClicks": 0,
+            "previousClicks": 0,
+            "currentImpressions": 8,
+            "previousImpressions": 5,
+            "currentPosition": 7.5,
+            "previousPosition": 6
+          }
+        },
+        {
+          "url": "https://pets.madabase.com/guides/pet-gps-tracker-subscription-cost-coverage-guide",
+          "sources": [
+            "second-round-august-2026-content.ts"
+          ],
+          "metrics": {
+            "currentClicks": 0,
+            "previousClicks": 0,
+            "currentImpressions": 1,
+            "previousImpressions": 0,
+            "currentPosition": 2,
+            "previousPosition": 0
+          }
+        },
+        {
+          "url": "https://madabase.com/guides/connected-home-buying-order",
+          "sources": [],
+          "metrics": {
+            "currentClicks": 0,
+            "previousClicks": 0,
+            "currentImpressions": 2,
+            "previousImpressions": 1,
+            "currentPosition": 18.5,
+            "previousPosition": 39
+          }
+        }
+      ]
+    },
+    "recoveryWatch": {
+      "count": 9,
+      "reason": "Has current or previous exposure but is outside the protected top-20 band. Do not treat as a zero-demand bulk rewrite target.",
+      "urls": [
+        {
+          "url": "https://homeoffice.madabase.com/guides/wireless-presentation-clickers-buying-guide",
+          "sources": [
+            "broad-product-pilot-3-content.ts"
+          ],
+          "metrics": {
+            "currentClicks": 0,
+            "previousClicks": 0,
+            "currentImpressions": 29,
+            "previousImpressions": 17,
+            "currentPosition": 26,
+            "previousPosition": 8.53
+          }
+        },
+        {
+          "url": "https://smarthome.madabase.com/guides/whole-home-energy-monitor-cloud-local-installation-guide",
+          "sources": [
+            "second-round-august-2026-content.ts"
+          ],
+          "metrics": {
+            "currentClicks": 0,
+            "previousClicks": 0,
+            "currentImpressions": 1,
+            "previousImpressions": 1,
+            "currentPosition": 64,
+            "previousPosition": 8
+          }
+        },
+        {
+          "url": "https://baby.madabase.com/guides/baby-bottle-drying-racks-buying-guide",
+          "sources": [
+            "broad-product-pilot-3-content.ts"
+          ],
+          "metrics": {
+            "currentClicks": 0,
+            "previousClicks": 0,
+            "currentImpressions": 0,
+            "previousImpressions": 3,
+            "currentPosition": 0,
+            "previousPosition": 8.33
+          }
+        },
+        {
+          "url": "https://baby.madabase.com/guides/baby-play-gyms-buying-guide",
+          "sources": [
+            "broad-product-pilot-content.ts"
+          ],
+          "metrics": {
+            "currentClicks": 0,
+            "previousClicks": 0,
+            "currentImpressions": 0,
+            "previousImpressions": 3,
+            "currentPosition": 0,
+            "previousPosition": 84
+          }
+        },
+        {
+          "url": "https://baby.madabase.com/guides/travel-bottle-warmer-heating-cleaning-battery-guide",
+          "sources": [
+            "second-round-august-2026-content.ts"
+          ],
+          "metrics": {
+            "currentClicks": 0,
+            "previousClicks": 0,
+            "currentImpressions": 0,
+            "previousImpressions": 1,
+            "currentPosition": 0,
+            "previousPosition": 16
+          }
+        },
+        {
+          "url": "https://homeoffice.madabase.com/guides/standing-desk-balance-boards-buying-guide",
+          "sources": [
+            "broad-product-pilot-3-content.ts"
+          ],
+          "metrics": {
+            "currentClicks": 0,
+            "previousClicks": 0,
+            "currentImpressions": 0,
+            "previousImpressions": 3,
+            "currentPosition": 0,
+            "previousPosition": 74
+          }
+        },
+        {
+          "url": "https://homeoffice.madabase.com/guides/under-desk-drawers-buying-guide",
+          "sources": [
+            "broad-product-pilot-3-content.ts"
+          ],
+          "metrics": {
+            "currentClicks": 0,
+            "previousClicks": 0,
+            "currentImpressions": 0,
+            "previousImpressions": 1,
+            "currentPosition": 0,
+            "previousPosition": 2
+          }
+        },
+        {
+          "url": "https://madabase.com/guides/home-office-network-and-ergonomics",
+          "sources": [],
+          "metrics": {
+            "currentClicks": 0,
+            "previousClicks": 0,
+            "currentImpressions": 0,
+            "previousImpressions": 1,
+            "currentPosition": 0,
+            "previousPosition": 5
+          }
+        },
+        {
+          "url": "https://madabase.com/guides/household-tech-subscription-checklist",
+          "sources": [],
+          "metrics": {
+            "currentClicks": 0,
+            "previousClicks": 0,
+            "currentImpressions": 0,
+            "previousImpressions": 4,
+            "currentPosition": 0,
+            "previousPosition": 19.25
+          }
+        }
+      ]
+    },
+    "doubleZeroInspectionAndIntentReview": {
+      "count": 32,
+      "reason": "Zero impressions in both compared complete seven-day windows. These existing routes enter exact URL Inspection and intent review; no mass mutation is authorized from zero impressions alone.",
+      "inspectionsCompleted20260913": [
+        {
+          "url": "https://baby.madabase.com/guides/baby-bouncers-buying-guide",
+          "result": "URL is on Google",
+          "pageIndexing": "Page is indexed"
+        },
+        {
+          "url": "https://pets.madabase.com/guides/cat-trees-and-towers-buying-guide",
+          "result": "URL is on Google",
+          "pageIndexing": "Page is indexed"
+        }
+      ],
+      "urls": [
+        {
+          "url": "https://baby.madabase.com/guides/baby-bouncers-buying-guide",
+          "sources": [
+            "broad-product-pilot-content.ts"
+          ]
+        },
+        {
+          "url": "https://baby.madabase.com/guides/baby-food-storage-containers-buying-guide",
+          "sources": [
+            "broad-product-pilot-content.ts"
+          ]
+        },
+        {
+          "url": "https://baby.madabase.com/guides/diaper-caddies-buying-guide",
+          "sources": [
+            "broad-product-pilot-3-content.ts"
+          ]
+        },
+        {
+          "url": "https://baby.madabase.com/guides/diaper-pail-replacement-bag-annual-cost-guide",
+          "sources": [
+            "second-round-august-2026-content.ts"
+          ]
+        },
+        {
+          "url": "https://homeoffice.madabase.com/guides/ergonomic-kneeling-chairs-buying-guide",
+          "sources": [
+            "broad-product-pilot-content.ts"
+          ]
+        },
+        {
+          "url": "https://homeoffice.madabase.com/guides/standing-desk-converters-buying-guide",
+          "sources": [
+            "broad-product-pilot-content.ts"
+          ]
+        },
+        {
+          "url": "https://pets.madabase.com/guides/automatic-litter-box-accessories-cost-guide",
+          "sources": [
+            "second-round-august-2026-content.ts"
+          ]
+        },
+        {
+          "url": "https://pets.madabase.com/guides/cat-scratching-posts-buying-guide",
+          "sources": [
+            "broad-product-pilot-3-content.ts"
+          ]
+        },
+        {
+          "url": "https://pets.madabase.com/guides/cat-trees-and-towers-buying-guide",
+          "sources": [
+            "broad-product-pilot-content.ts"
+          ]
+        },
+        {
+          "url": "https://pets.madabase.com/guides/collapsible-wire-dog-crates-buying-guide",
+          "sources": [
+            "broad-product-pilot-content.ts"
+          ]
+        },
+        {
+          "url": "https://pets.madabase.com/guides/dog-car-seat-covers-buying-guide",
+          "sources": [
+            "broad-product-pilot-3-content.ts"
+          ]
+        },
+        {
+          "url": "https://pets.madabase.com/guides/dog-cooling-vests-buying-guide",
+          "sources": [
+            "broad-product-pilot-3-content.ts"
+          ]
+        },
+        {
+          "url": "https://pets.madabase.com/guides/pet-carrier-backpacks-buying-guide",
+          "sources": [
+            "broad-product-pilot-3-content.ts"
+          ]
+        },
+        {
+          "url": "https://pets.madabase.com/guides/pet-grooming-vacuum-noise-coat-cleaning-guide",
+          "sources": [
+            "second-round-august-2026-content.ts"
+          ]
+        },
+        {
+          "url": "https://pets.madabase.com/guides/pet-strollers-buying-guide",
+          "sources": [
+            "broad-product-pilot-content.ts"
+          ]
+        },
+        {
+          "url": "https://pets.madabase.com/guides/pressure-mounted-pet-gates-buying-guide",
+          "sources": [
+            "broad-product-pilot-3-content.ts"
+          ]
+        },
+        {
+          "url": "https://pets.madabase.com/guides/slow-feeder-dog-bowls-buying-guide",
+          "sources": [
+            "broad-product-pilot-3-content.ts"
+          ]
+        },
+        {
+          "url": "https://pets.madabase.com/reviews/neakasa-p1-pro-pet-grooming-vacuum",
+          "sources": [
+            "second-round-august-2026-content.ts"
+          ]
+        },
+        {
+          "url": "https://pets.madabase.com/reviews/tractive-dog-6-gps-tracker",
+          "sources": [
+            "second-round-august-2026-content.ts"
+          ]
+        },
+        {
+          "url": "https://smarthome.madabase.com/guides/in-wall-smart-relays-buying-guide",
+          "sources": [
+            "broad-product-pilot-content.ts"
+          ]
+        },
+        {
+          "url": "https://smarthome.madabase.com/guides/robot-lawn-mowers-buying-guide",
+          "sources": [
+            "broad-product-pilot-3-content.ts"
+          ]
+        },
+        {
+          "url": "https://smarthome.madabase.com/guides/smart-air-purifiers-buying-guide",
+          "sources": [
+            "broad-product-pilot-3-content.ts"
+          ]
+        },
+        {
+          "url": "https://smarthome.madabase.com/guides/smart-blind-motor-hub-local-control-guide",
+          "sources": [
+            "second-round-august-2026-content.ts"
+          ]
+        },
+        {
+          "url": "https://smarthome.madabase.com/guides/smart-ceiling-fan-controllers-buying-guide",
+          "sources": [
+            "broad-product-pilot-content.ts"
+          ]
+        },
+        {
+          "url": "https://smarthome.madabase.com/guides/smart-ceiling-lights-buying-guide",
+          "sources": [
+            "broad-product-pilot-3-content.ts"
+          ]
+        },
+        {
+          "url": "https://smarthome.madabase.com/guides/smart-electric-kettles-buying-guide",
+          "sources": [
+            "broad-product-pilot-3-content.ts"
+          ]
+        },
+        {
+          "url": "https://smarthome.madabase.com/guides/smart-garage-door-controller-compatibility-hub-offline-guide",
+          "sources": [
+            "second-round-august-2026-content.ts"
+          ]
+        },
+        {
+          "url": "https://smarthome.madabase.com/guides/smart-humidifiers-buying-guide",
+          "sources": [
+            "broad-product-pilot-3-content.ts"
+          ]
+        },
+        {
+          "url": "https://smarthome.madabase.com/guides/smart-tower-fans-buying-guide",
+          "sources": [
+            "broad-product-pilot-3-content.ts"
+          ]
+        },
+        {
+          "url": "https://smarthome.madabase.com/guides/smart-window-air-conditioners-buying-guide",
+          "sources": [
+            "broad-product-pilot-content.ts"
+          ]
+        },
+        {
+          "url": "https://smarthome.madabase.com/reviews/emporia-vue-3-home-energy-monitor",
+          "sources": [
+            "second-round-august-2026-content.ts"
+          ]
+        },
+        {
+          "url": "https://smarthome.madabase.com/reviews/switchbot-blind-tilt",
+          "sources": [
+            "second-round-august-2026-content.ts"
+          ]
+        }
+      ]
+    },
+    "costumeSeasonalCatalog": {
+      "count": 79,
+      "productPages": 76,
+      "editorialPages": 3,
+      "reason": "Costume is a database-backed seasonal catalog and must not be mixed into the static Affiliate rewrite pool. Current complete-window exposure is zero, so the entire group is now explicitly governed instead of omitted.",
+      "publicTechnicalAudit20260913": {
+        "productPagesChecked": 76,
+        "http200": 76,
+        "indexFollow": 76,
+        "exactSelfCanonical": 76,
+        "productSchema": 76,
+        "inStockSchema": 76,
+        "duplicateVisibleTitles": 1,
+        "duplicateVisibleTitleNote": "Two Santa rental records share a title but have different prices and click tokens. Preserve both until product/variant identity can be compared from the production database; do not invent a canonical.",
+        "decision": "No broad noindex, canonical, redirect or body rewrite. Keep the 79 URLs in a seasonal exact-page review and act only on a confirmed duplicate identity, indexing defect or query-backed demand signal."
+      },
+      "urls": [
+        {
+          "url": "https://costumes.madabase.com/best/halloween-animatronics-small-yards-and-porches",
+          "kind": "roundup"
+        },
+        {
+          "url": "https://costumes.madabase.com/guides/halloween-fog-machine-lighting-power-guide",
+          "kind": "guide"
+        },
+        {
+          "url": "https://costumes.madabase.com/guides/special-effects-makeup-skin-contact-removal-guide",
+          "kind": "guide"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/1920s-black-silver-sequin-flapper-dress-women-s-costume-fe30pzp",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/2-octopus-posable-tentacle-blacklight-prop-c2kwigo",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/24-fleur-de-lis-silver-king-crown-lzigvdr",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/3-piece-hanging-halloween-ghost-w-witch-hat-decoration-qehek2n",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/4-bloodnight-wings-for-devils-demons-gargoyles-2e8fjra",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/5-kraken-posable-tentacle-blacklight-prop-z_vmtvb",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/7-piece-professional-red-plush-santa-suit-adult-costume-di5qoyc",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/7-piece-professional-red-plush-santa-suit-adult-costume-nljenk3",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/7-rotten-harvester-skeleton-scarecrow-animated-prop-decoration-ubtr30k",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/7-whimsical-witch-animated-prop-decoration-gd8qxgu",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/adult-cotton-engineer-hat-bxcvoso",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/albert-einstein-physicist-classic-kids-costume-hhe7fb3",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/angry-villain-violently-shaking-animated-prop-jhez1p5",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/authentic-vintage-1960s-blue-sailor-pinup-dress-women-s-costume-snyc3vr",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/bat-foam-latex-prosthetic-nysajb-",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/ben-nye-burns-blisters-wheel-fx-creme-makeup-1xw6mmw",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/ben-nye-fake-aged-dark-blood-upuntqa",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/ben-nye-liquid-latex-almqlbe",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/ben-nye-stage-blood-dbds8bj",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/black-deluxe-padre-hat-varvyos",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/black-grey-terrier-mascot-adult-costume-vcxsoxd",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/black-spot-dog-high-end-mascot-adult-costume-g0ysvuw",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/black-two-horned-half-mask-gvjatlr",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/blissful-black-cat-mascot-adult-costume-gozmxlx",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/blue-police-ceremony-uniform-adult-costume-1ekzdvb",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/bright-sunshine-gold-sequin-tailcoat-men-s-costume-rxxeivg",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/brown-bunny-mascot-adult-costume-0q-blim",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/brown-leather-plague-doctor-goggle-mask-4ewd08a",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/cali-blonde-marilyn-starlet-wig-lvklnhr",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/christmas-santa-wig-beard-set-gdf3cco",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/classic-1920s-scalloped-sequin-flapper-dress-women-s-adult-costume-dabhg_c",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/classic-harley-quinn-adult-costume-igt9bmj",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/classic-pope-adult-costume-j-v8fbb",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/clean-old-joel-arm-dark-zisgsfe",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/cotton-candy-theatrical-contact-lenses-fpyb29g",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/creature-bloody-multi-layered-fx-fangs-pb85kep",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/creeping-dead-mask-w-bone-suit-adult-costume-b7b3xh8",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/creepy-vintage-bloody-clown-adult-costume-re9xptj",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/day-of-the-dead-hair-clip-2_6uepg",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/dc-universe-catwoman-adult-costume-ikdxwcg",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/delicious-goat-head-mask-w-working-jaw-0cksm82",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/deluxe-grey-military-hat-zax4i1e",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/deluxe-vintage-creeper-clown-women-s-costume-ncrshdh",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/demonia-bolt-450-combat-boots-pqkpzii",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/diablo-matte-black-masquerade-mask-kbqldec",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/embalming-fluid-bottle-prop-44rnj33",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/exclusive-1920s-brown-striped-double-breasted-suit-men-s-costume-xsnsmmo",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/extra-toasty-freddy-inspired-deluxe-silicone-mask-9f_nsln",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/fantasy-dark-gothic-wicked-witch-adult-costume-uik2kxx",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/floating-ghost-revenant-uv-reactive-animatronic-tocj9ij",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/fox-ears-and-tail-set-k8t3evd",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/gargoyle-flexi-ears-f9eu7jd",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/ground-breaker-zombie-left-arm-grabber-animatronic-prop-5mn6-ix",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/ground-breaker-zombie-left-arm-grabber-animatronic-prop-ghfielf",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/gus-deluxe-old-man-mask-p-bqxfw",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/harley-inspired-curled-pink-and-blue-pigtail-wig-3hiyszo",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/harry-potter-hufflepuff-child-robe-zlyr8ok",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/haunted-tree-led-light-up-animatronic-9oq3s6r",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/judge-unisex-wig--wjwnun",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/led-light-up-jack-o-lantern-w-sound-t96hg8z",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/lil-lion-cub-onesie-baby-costume-5wexwct",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/manic-panic-trash-goddess-wig-lecanry",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/misting-pumpkin-halloween-decoration-p7ew4c5",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/morgan-face-specimen-jar-prop-wpfpfyg",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/polar-bear-mascot-i-a__ns",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/premium-wolf-man-professional-cosplay-adult-costume-hpp9toe",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/professional-1920s-grey-plaid-suit-adult-costume-vsfiea9",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/pumpkin-bat-ghost-string-lights-slbqrxp",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/regal-true-red-professional-santa-suit-adult-costume-aer4zwj",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/rochelle-feathered-venetian-lace-mask-scopfsh",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/rotten-gums-zombie-mask-memz_4t",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/scarlet-red-long-feather-carnival-headpiece-9plcxyd",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/skin-illustrator-alchemy-alcohol-activated-makeup-fx-palette-ivi4ryz",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/the-deluxe-joker-purple-green-child-costume-w-mask-vmgnrkq",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/the-hobbit-gandalf-adult-costume-6sfdetw",
+          "kind": "product"
+        },
+        {
+          "url": "https://costumes.madabase.com/products/woochie-fx-dark-lord-foam-latex-prosthetic--qtrtcu",
+          "kind": "product"
+        }
+      ]
+    }
+  },
+  "accounting": {
+    "newlyClassifiedTotal": 138,
+    "formula": "18 protected + 9 recovery-watch + 32 double-zero review + 79 Costume = 138",
+    "contentCoverageAfterThisLedger": 1264,
+    "formulaAllContent": "1126 prior-ledger live content URLs + 138 newly classified = 1264 live content URLs",
+    "structuralRule": "The remaining 137 Sitemap URLs are home, category, localized-market, policy or other structural routes and are governed at template level rather than content-page cohort level."
+  }
+}

@@ -48,6 +48,7 @@
 ### D. 发现、分发与外部渠道
 
 - Bing Webmaster 只在明确到期、异常或专门的 Bing 检查日运行；否则记 `not-due`。
+- Tools（`tools.madabase.com`）已由 owner 于 2026-09-13 放弃，永久退出日常范围：不维护、不监控、不打开其 GSC/Bing/Clarity、不查 sitemap/IndexNow/抓取/排名/可用性，也不生成修复或优化待办。聚合数据中只做排除，不汇报 Tools 本身；不得据此擅自关站、删除或改路由。
 - Pinterest、Reddit、Quora 和论坛在普通日常运营中统一记 `not-due`。只有明确的 `外部分发` 请求或计划任务才能发布。
 - Sitemap、IndexNow 和 Search Console 只提交真实改变且符合发现门槛的 canonical URL；不要重复提交未变 URL。
 
@@ -97,7 +98,8 @@ Google spam update 已于 2026-08-21 官方结束，GSC 也已在 2026-08-26 提
 | 2026-09-08 | Expansion757 Day 30 已完成。29 个全检查/全收录/全零展现多路由主题中，27 个已从 118 个活跃 URL 合并为 27 个保留 hub + 91 个永久重定向；2 个与 Deep43 重叠的 Network 主题延后。生产 release `4d78d2e` 与精确 32 URL IndexNow 已验证 | 9 月 15 日前因滚动小时噪声反转这 27 个合并；改动 2 个 Deep43 重叠主题；新增可索引路由 |
 | 2026-09-10 | Deep43 战术闸门已于 9 月 11 日补齐：34 vs 48 展现、14 vs 16 暴露 URL、加权排名 29.4 vs 56.2；不批量重写。两个延后 Network 主题仍全收录且当前零暴露，已按门槛执行 8→2 + 6 个永久重定向 | 重写仍在获得展现或进入前 20 的 Deep43 页面；重新打开 6 个重定向源；新增可索引路由 |
 | 2026-09-11 | Comparison-first 36 Day 7 已完成：10 vs 17 展现、6 vs 8 暴露 URL，当前暴露页加权排名 6.4；30 个当前零展现页均已收录，整组保护至 9 月 18 日。另发布 2 个 Network 主题合并和 4 个未保护前十零点击页修复，生产 release `3d04dcd` 与精确 10 URL IndexNow 已验证 | 9 月 18 日前重置 Comparison-first 主字段或本日新 cohort；改 ErGear；重放本日 IndexNow；扩大为新页面发布 |
-| 2026-09-14 | Indexed-zero 40 Day 7 与 ErGear Day 14 | 用不完整日或滚动小时值提前重置实验 |
+| 2026-09-13 | 全量在线页面覆盖审计已把 1,264 个非 Tools 内容 URL 全部分配：既有账本 1,126，新增精确分类 138（18 保护、9 recovery-watch、32 双窗口零展现待精确检查、79 Costume 季节/数据库页）。Indexed-zero 40 提前读到 4 个新前十信号，立即保护；ErGear 在 103 展现、0 点击、排名 8.1 后按 owner 指令提前执行一次 FlexiSpot-first snippet 测试 | 把 36 个仅有 4 个完整发布后日的 Indexed-zero 页判失败；批量重写 32 个未检查页或 79 个 Costume 页；触碰 Tools；扩大为新路由 |
+| 2026-09-14 或 GSC 完整包含 09-07 至 09-13 时 | 完成 Indexed-zero 40 正式 Day 7；ErGear 第二次 snippet 测试已于 9 月 13 日启动，不重复改动或重提 | 用不完整日重置 Indexed-zero 36 个零展现页；9 月 20 日前再次改 ErGear |
 | 2026-09-15 / 09-22 / 10-08 | 9 月 8 日 27-family 合并的 Day 7 / Day 14 / Day 30 | 重写已获得展现、点击、查询扩展或前 20 排名的保留 hub |
 | 2026-09-18 / 09-25 / 10-11 | 9 月 11 日两组变更的 Day 7 / Day 14 / Day 30；同日 9 月 18 日还需执行 Comparison-first 36 Day 14 | 提前改动 2 个保留 Network hub 或 4 个 CTR 页；依据站点总量而非精确 URL/查询证据反转动作 |
 | GSC 完整包含 2026-08-22 至 2026-08-24 | 已在 2026-08-26 完成复评；数据不支持解冻，继续 hold-no-expansion，等待后续精确 cohort 恢复证据 | 把三日门槛满足误读为自动恢复；做大范围 SEO 手术 |

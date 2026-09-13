@@ -57,6 +57,7 @@
     "check:page-one-ctr": "node scripts/check-page-one-ctr-cohort.mjs",
     "check:comparison-first": "node scripts/check-comparison-first-cohort.mjs",
     "check:indexed-zero-recovery": "node scripts/check-indexed-zero-recovery-cohort.mjs",
+    "check:page-coverage": "node scripts/check-live-page-coverage.mjs",
     "check:cj-baby-expansion": "node scripts/check-cj-baby-expansion-quality.mjs",
     "report:search-portfolio": "node scripts/report-search-portfolio.mjs",
     "report:current-search-gates": "node scripts/report-current-search-gates.mjs",

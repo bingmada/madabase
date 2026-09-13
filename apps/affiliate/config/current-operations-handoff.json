@@ -1,14 +1,35 @@
 {
-  "updatedAt": "2026-09-11T16:30:00+08:00",
+  "updatedAt": "2026-09-13T17:15:00+08:00",
   "purpose": "Tracked cross-conversation snapshot. Read this before every affiliate operation, then read docs/affiliate-growth-state.json and docs/affiliate-growth-runbook.md for the mutable history and operating rules.",
+  "siteScopeDecision20260913": {
+    "tools": "retired_owner_decision",
+    "host": "tools.madabase.com",
+    "effectiveDate": "2026-09-13",
+    "operatingRule": "Tools is outside all future operating scope. Do not monitor availability, Search Console, Bing, Clarity, indexing, sitemap, IndexNow, links, content, metadata, rankings, crawl findings or alerts; do not maintain, optimize, distribute or recommend follow-up work for it.",
+    "measurementRule": "Filter Tools and legacy Tools paths out of every aggregate used for Main or affiliate decisions. Historical records may be read only to identify and exclude that contamination; do not report Tools performance as a current task.",
+    "productionBoundary": "Leave the existing service and redirects untouched. Retirement does not authorize shutdown, deletion, redirect changes or resource removal; any such action requires a new explicit owner instruction."
+  },
+  "livePageCoverage20260913": {
+    "status": "all_live_sitemap_content_urls_classified_no_tools",
+    "ledger": "apps/affiliate/config/live-page-coverage-2026-09-13.json",
+    "audit": "apps/affiliate/scripts/check-live-page-coverage.mjs",
+    "scope": "Nine active hosts excluding retired tools.madabase.com contain 1,401 Sitemap URLs: 1,264 content URLs plus 137 structural, policy, category, home and localized routes. Prior exact ledgers cover 1,126 live content URLs; this ledger classifies the remaining 138, leaving zero unassigned live content URLs as of the audit snapshot.",
+    "classification": "18 current top-20 pages are protected; nine pages with current or previous exposure are recovery-watch; 32 ordinary Affiliate pages are zero in both compared complete seven-day windows and require exact live index plus intent review before mutation; 79 Costume URLs are governed as a separate seasonal/database cohort.",
+    "costumeAudit": "All 76 live Costume product pages returned HTTP 200, index/follow, exact self-canonical, Product schema and InStock schema. One duplicated visible Santa title belongs to two different-price/different-click-token rental records; preserve both until production product/variant identity is confirmed instead of inventing a canonical.",
+    "inspectionSample": "Live Search Console inspection on September 13 confirmed Baby baby-bouncers-buying-guide and Pets cat-trees-and-towers-buying-guide are on Google and indexed. No bulk Request indexing was used.",
+    "control": "Run npm run check:page-coverage --workspace apps/affiliate for ledger integrity; add LIVE_PAGE_COVERAGE_PUBLIC_AUDIT=1 to compare all classified URLs and exact Sitemap counts against production."
+  },
   "crossConversationResume": {
-    "asOf": "2026-09-11T16:30:00+08:00",
-    "status": "september_11_deferred_network_consolidation_and_page_one_ctr_release_public_verified",
+    "asOf": "2026-09-13T17:15:00+08:00",
+    "status": "september_13_full_live_page_coverage_closed_ergear_second_snippet_test_pending_release",
     "readOrder": [
       "apps/affiliate/config/current-operations-handoff.json",
       "docs/affiliate-growth-state.json",
       "docs/affiliate-growth-runbook.md",
+      "apps/affiliate/reports/daily-operations-2026-09-13.md",
+      "apps/affiliate/config/live-page-coverage-2026-09-13.json",
       "apps/affiliate/reports/daily-operations-2026-09-11.md",
+      "apps/affiliate/reports/external-distribution-2026-09-12.md",
       "apps/affiliate/config/deferred-family-consolidations-2026-09-11.json",
       "apps/affiliate/config/page-one-ctr-cohort-2026-09-11.json",
       "apps/affiliate/reports/seo-consolidation-ledger-2026-09-11.json",
@@ -36,7 +57,7 @@
       "apps/affiliate/config/next-product-expansion-100-pilot-01.json",
       "apps/affiliate/config/next-product-expansion-100-readiness.json"
     ],
-    "oneSentenceState": "Release 3d04dcd is live and healthy with 4d78d2e retained for rollback; the two deferred indexed/all-zero Network families are now consolidated from eight routes to two retained comparison hubs plus six permanent redirects, four unprotected page-one zero-click pages received query-backed CTR repairs, and both new cohorts are protected through their September 18 Day-7 gate.",
+    "oneSentenceState": "All 1,264 live content URLs across the nine active non-Tools hosts are now assigned to exact controls; the September 7 cohort already produced four new top-10 pages in only four complete post-release days, while the ErGear page crossed 103 zero-click impressions at position 8.1 and received one owner-accelerated, query-backed second snippet test pending release.",
     "production": {
       "activeRelease": "3d04dcd",
       "sourceCommit": "3d04dcd5e5d88c8f2e4250beb8aeb73b19bdabd2",
@@ -56,9 +77,9 @@
       "gscActions": "All submitted affiliate sitemaps remain Success with exact discovered-page counts: Network 245, Smarthome 258, Homeoffice 275, Baby 264, Pets 234, Style 76 and Costumes 121. No sitemap resubmission or bulk Search Console Request indexing was made. The two historical 5xx examples remain in Started validation; manual actions and security issues report no issues; removals has no requests submitted in six months.",
       "indexNow": "Historical cohorts were not replayed. On September 11, IndexNow accepted exactly 10 changed canonicals with HTTP 200: three Network, three Homeoffice and four Baby. The set contains two retained Network hubs, four CTR targets and four affected category pages; six redirect sources, unchanged pages, prior cohorts, homepages, sitemaps and product pilots were excluded.",
       "deepRankRecovery": "The September 11 tactical gate produced 34 versus 48 impressions across 14 versus 16 exposed URLs and improved weighted position to 29.4 from 56.2. Do not rewrite the cohort. Two protected overlap families remained all-indexed and current-zero, so the expired September 10 overlap hold was resolved through the exact two-family consolidation ledger. Run the remaining portfolio gate September 24.",
-      "ergearCtrExperiment": "The September 7 Day-7 gate is positive on exposure but not yet conclusive on CTR: 77 versus 38 impressions, zero clicks in both periods, and position 8.5 versus 8.2. The leading query flexispot e7 mini rose to 35 from 13 impressions; ergear vs flexispot is 5 versus 6 and flexispot vs ergear is 4 versus 1. Public HTTP, self-canonical and 2026-08-31 dateModified remain correct. Protect unchanged through the meaningful September 14 Day-14 gate.",
+      "ergearCtrExperiment": "The owner accelerated the calendar gate on September 13 after the quantitative gate was already met. Exact page-filtered complete data from August 31 through September 10 records 103 impressions, zero clicks and average position 8.1; 45 impressions come from flexispot e7 mini and five each from the two exact comparison directions. Run exactly one second snippet test that leads with FlexiSpot E7 Mini and names the fixed-versus-rolling decision; preserve the route, body, products, merchant links and internal links, then protect through September 20/27.",
       "comparisonFirstCohort": "September 11 Day 7 produced 10 versus 17 impressions across six versus eight exposed URLs; 30 current-zero pages remain indexed and the current exposed weighted position is 6.4. The direction is useful but the sample is thin. Preserve all 36 primary fields through September 18 Day 14, then inspect only exact zero-exposure or clearly mismatched pages.",
-      "indexedZeroRecovery": "Exactly 40 existing Soft151 canonical guides were upgraded on September 7 after live inspection proved they were indexed and GSC proved zero impressions in both compared seven-day windows: Smarthome 21, Homeoffice 6 and Baby 13. Each keeps its route, site, product data, merchant path and full content while receiving a unique decision-led title/H1, direct primary-versus-alternative answer, four-row comparison table, first decision section and related links. There are zero new routes and zero overlap with comparison-first 36 or Deep43. Public validation passed 40 of 40 pages and 40 of 40 sitemap entries; hold through September 14, September 21 and October 7 gates.",
+      "indexedZeroRecovery": "Exactly 40 existing Soft151 canonical guides were upgraded on September 7. The owner-requested early September 13 read uses the latest complete GSC window ending September 10, so only four complete post-release days exist: four pages gained six impressions and all four rank in the top 10, while none had prior-window exposure. Protect conference speakerphones, reusable baby food pouches, bathtub spout covers and childproof outlet covers immediately. The remaining 36 are not failed from four days; run the formal exact Day-7 gate only when GSC contains September 7-13.",
       "zeroInspection": "The 31 remaining Soft151 Pets URLs are complete: 25 discovered-currently-not-indexed and six unknown to Google. The five duplicate-status pages still show unrelated Google-selected canonicals although current public HTML emits correct self-canonicals. Expansion757 added 175 valid historical zero-impression inspections: 24 were governed redirect sources; the 151 active canonicals were 147 indexed, two crawled-currently-not-indexed, one discovered-currently-not-indexed and one duplicate. Search Console exhausted the daily property quota after 211 total valid checks; 429 active canonicals remain plus 60 redirect sources to skip. No Request indexing was attempted.",
       "expansion757Day30": "Exclude governed redirect sources from the historical 757-row ledger. The September 8 release remains exactly 27 families, 118 active measured URLs, 27 retained hubs and 91 permanent redirects; hold it through September 15/22 and October 8. On September 11, the two separately deferred Network families crossed their own gate and were released under a separate ledger as eight measured URLs, two retained comparison hubs and six permanent redirects.",
       "deferredFamilyConsolidation20260911": "Exactly sfp-plus-network-switches and poe-splitters were consolidated after every measured route remained indexed and current-zero. Retain the two comparison routes, permanently redirect six buying/fit/workflow siblings, add zero routes, and hold through September 18/25 and October 11.",
@@ -82,9 +103,9 @@
       "ledger": "apps/affiliate/config/next-product-expansion-100-pilot-01.json"
     },
     "nextOrderedActions": [
-      "Hold the exact September 7 indexed-zero 40 cohort unchanged through the September 14 Day-7 gate. Review exact-URL impressions, clicks, query breadth and position on September 14, September 21 and October 7; preserve any page gaining impressions, clicks, query breadth or a top-20 position and revisit only exact pages still unexposed or clearly mismatched.",
+      "Protect the four September 7 indexed-zero pages already gaining top-10 exposure in the early September 13 read. Do not reset the other 36 from only four complete post-release days; run the formal exact Day-7 gate when GSC includes September 7-13, then preserve any page gaining impressions, clicks, query breadth or a top-20 position.",
       "Hold the exact September 4 comparison-first 36 cohort unchanged through the September 18 Day-14 gate unless a confirmed technical, indexability, merchant, tracking or rendering defect appears. Day 7 produced 10 versus 17 impressions, six versus eight exposed URLs and a current exposed weighted position of 6.4; preserve any page gaining exposure and inspect only exact zero-exposure or clear intent-mismatch pages at Day 14.",
-      "Hold the August 31 ErGear-versus-FlexiSpot single-page CTR experiment unchanged through the September 14 Day-14 gate. Its September 7 gate more than doubled exposure at a stable page-one position but still has zero clicks; do not reset the title from this mixed pre/post window or replay its accepted IndexNow canonical.",
+      "The ErGear-versus-FlexiSpot page crossed the recorded second-test threshold before the calendar gate: 103 complete-window post-release impressions, zero clicks and average position 8.1. Release exactly the September 13 FlexiSpot-first fixed-versus-rolling snippet test, submit only that changed canonical, and protect it through September 20/27; stop testing immediately after a click.",
       "Treat the historical 429 active Expansion757 inspection count as an overdue measurement backlog, not permission for mass mutation. Continue only exact active canonicals when Search Console quota and a due decision require it; skip all governed redirect sources and submit no bulk Request indexing.",
       "Hold the exact 27-family September 8 consolidation unchanged through its September 15 Day-7, September 22 Day-14 and October 8 Day-30 gates. Protect retained hubs that gain clicks, impressions, query breadth or top-20 rankings; do not reverse redirects from rolling-hour noise. The seven existing single hubs require demand differentiation or retirement review rather than another merge.",
       "Keep new indexable publication frozen during post-rollout observation. Existing-page topic hierarchy and query-backed recovery are owner-authorized under search-recovery-control version 3; do not convert that authorization into new products, new cohorts or evidence-free mass title churn.",
@@ -105,9 +126,9 @@
       "The September 11 consolidation exception is exactly the two Network families, two retained hubs and six redirect sources in apps/affiliate/config/deferred-family-consolidations-2026-09-11.json. It adds zero routes and must not be broadened or reversed before September 18 without a confirmed defect.",
       "The September 11 CTR exception is exactly the four existing URLs in apps/affiliate/config/page-one-ctr-cohort-2026-09-11.json. ErGear is excluded; do not broaden, replay or rewrite the cohort before September 18 without a confirmed defect.",
       "The September 8 consolidation exception is exactly the 27 families and 91 redirect sources in apps/affiliate/config/search-recovery-consolidations-2026-09-08.json. It adds zero routes. Hold it through September 15/22 and October 8.",
-      "The September 7 indexed-zero exception is exactly the 40 existing URLs in apps/affiliate/config/indexed-zero-recovery-cohort-2026-09-07.json. It adds zero routes, excludes all previously exposed and non-indexed states, and must not be broadened, replayed through IndexNow or rewritten before September 14 without a confirmed defect.",
+      "The September 7 indexed-zero exception remains exactly the 40 existing URLs in apps/affiliate/config/indexed-zero-recovery-cohort-2026-09-07.json. The September 13 early read adds four newly exposed top-10 URLs to protection but does not authorize rewriting the other 36 from only four complete post-release days.",
       "The September 4 comparison-first exception is exactly the 36 existing URLs in apps/affiliate/config/comparison-first-cohort-2026-09-04.json. Day 7 is complete and does not justify a reset; do not broaden, replay or rewrite before September 18 Day 14 without a confirmed defect.",
-      "The August 31 CTR exception is exactly https://homeoffice.madabase.com/best/ergear-48x24-vs-flexispot-e7-mini. Its Day-7 exposure direction is positive. Release 9b924b7 repaired only the confirmed merchant defect by replacing the unrelated Anker fallback with an explicitly labeled wheeled-desk alternative; title, H1, intent and editorial comparison remain unchanged. Hold those elements through September 14 and do not batch nearby page-one pages into the release.",
+      "The August 31 CTR exception remains exactly https://homeoffice.madabase.com/best/ergear-48x24-vs-flexispot-e7-mini. The owner accelerated its second test on September 13 only after exact page-filtered data reached 103 impressions, zero clicks and position 8.1. Do not add nearby pages, change the route/body/products/merchant links, or run another snippet test before September 20.",
       "The August 27 deep-rank exception is exactly the 43 URLs in apps/affiliate/config/deep-rank-recovery-2026-08-27.json. Do not add zero-impression, position-40-or-better, click-bearing, Ranking118, Soft151, August 23 individually refreshed or consolidation-family pages after release.",
       "Affiliate revenue is the server priority; build and run broad audits locally and use bounded production checks.",
       "Soft151 Day-14 and all 130 zero-impression inspections are complete. The exact indexed double-zero 40 have received the bounded September 7 recovery; do not rewrite the remaining Soft151 pages as one group. Preserve previously exposed and duplicate-status pages, and treat discovered/unknown pages as an indexing, discovery or consolidation question rather than a CTR rewrite.",
@@ -528,6 +549,7 @@
     "dailyAction": "no additional publication in daily operations; follow the separate experiment gates and attribution rules"
   },
   "doNotDo": [
+    "Do not maintain or monitor tools.madabase.com. Exclude it and legacy Tools paths from GSC, Bing, Clarity, sitemap, IndexNow, SEO, crawl, uptime and recommendation work; historical data is usable only to remove it from active-growth aggregates.",
     "Do not resubmit or rewrite the 151-page sitemap release before its 2026-09-03 Day-14 gate unless a technical, merchant or indexability defect appears.",
     "Do not describe the 151-page cohort as sitemap-excluded after release 6eec199; all 151 are now included and submitted.",
     "Do not reopen or bulk-request indexing for the completed 486-URL zero-impression queue; only the two discovered-currently-not-indexed Smarthome URLs have a scheduled 2026-09-03 recheck.",
