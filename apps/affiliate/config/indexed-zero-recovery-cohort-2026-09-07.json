@@ -772,5 +772,83 @@
       { "url": "https://baby.madabase.com/guides/childproof-outlet-covers-buying-guide", "impressions": 1, "position": 2 }
     ],
     "decision": "Protect the four newly exposed top-10 pages immediately. The other 36 URLs have only four complete post-release data days, so zero exposure is not a failed Day-7 result and does not authorize a reset. Run the formal exact Day-7 gate when GSC contains the complete September 7-13 window."
+  },
+  "day7Review20260914": {
+    "latestCompleteGscDate": "2026-09-13",
+    "window": "2026-09-07 through 2026-09-13 versus 2026-08-31 through 2026-09-06",
+    "current": {
+      "exposedUrls": 6,
+      "zeroImpressionUrls": 34,
+      "clicks": 0,
+      "impressions": 12,
+      "weightedPosition": 5.917
+    },
+    "previous": {
+      "exposedUrls": 0,
+      "zeroImpressionUrls": 40,
+      "clicks": 0,
+      "impressions": 0,
+      "weightedPosition": null
+    },
+    "signalsToProtect": [
+      { "url": "https://smarthome.madabase.com/guides/smart-peephole-cameras-buying-guide", "impressions": 1, "position": 8, "signal": "new_day7_exposure" },
+      { "url": "https://homeoffice.madabase.com/guides/conference-speakerphones-buying-guide", "impressions": 3, "position": 3, "signal": "early_signal_strengthened" },
+      { "url": "https://baby.madabase.com/guides/reusable-baby-food-pouches-buying-guide", "impressions": 2, "position": 9.5, "signal": "early_signal_held" },
+      { "url": "https://baby.madabase.com/guides/bathtub-spout-covers-buying-guide", "impressions": 2, "position": 9, "signal": "early_signal_strengthened" },
+      { "url": "https://baby.madabase.com/guides/childproof-outlet-covers-buying-guide", "impressions": 2, "position": 2.5, "signal": "early_signal_strengthened" },
+      { "url": "https://baby.madabase.com/guides/childproof-stove-knob-covers-buying-guide", "impressions": 2, "position": 6, "signal": "new_day7_exposure" }
+    ],
+    "zeroImpressionLiveInspections": {
+      "checked": 34,
+      "indexed": 34,
+      "notOnGoogle": 0,
+      "unknown": 0,
+      "remaining": 0,
+      "requestIndexingSubmitted": 0,
+      "urls": [
+        "https://smarthome.madabase.com/guides/smart-radiator-valves-buying-guide",
+        "https://smarthome.madabase.com/guides/smart-floor-vents-buying-guide",
+        "https://smarthome.madabase.com/guides/smart-space-heaters-buying-guide",
+        "https://smarthome.madabase.com/guides/smart-propane-tank-monitors-buying-guide",
+        "https://smarthome.madabase.com/guides/smart-sump-pump-monitors-buying-guide",
+        "https://smarthome.madabase.com/guides/smart-pool-thermometers-buying-guide",
+        "https://smarthome.madabase.com/guides/smart-pathway-lights-buying-guide",
+        "https://smarthome.madabase.com/guides/smart-landscape-spotlights-buying-guide",
+        "https://smarthome.madabase.com/guides/smart-table-lamps-buying-guide",
+        "https://smarthome.madabase.com/guides/smart-lever-locks-buying-guide",
+        "https://smarthome.madabase.com/guides/smart-vibration-sensors-buying-guide",
+        "https://smarthome.madabase.com/guides/smart-glass-break-sensors-buying-guide",
+        "https://smarthome.madabase.com/guides/smart-ir-rf-remotes-buying-guide",
+        "https://smarthome.madabase.com/guides/smart-wall-control-panels-buying-guide",
+        "https://smarthome.madabase.com/guides/smart-indoor-gardens-buying-guide",
+        "https://smarthome.madabase.com/guides/smart-coffee-makers-buying-guide",
+        "https://smarthome.madabase.com/guides/smart-sous-vide-cookers-buying-guide",
+        "https://smarthome.madabase.com/guides/smart-slow-cookers-buying-guide",
+        "https://smarthome.madabase.com/guides/smart-countertop-composters-buying-guide",
+        "https://smarthome.madabase.com/guides/smart-aroma-diffusers-buying-guide",
+        "https://homeoffice.madabase.com/guides/compact-color-inkjet-printers-buying-guide",
+        "https://homeoffice.madabase.com/guides/office-seat-cushions-buying-guide",
+        "https://homeoffice.madabase.com/guides/office-saddle-stools-buying-guide",
+        "https://homeoffice.madabase.com/guides/laptop-privacy-screens-buying-guide",
+        "https://homeoffice.madabase.com/guides/monitor-privacy-screens-buying-guide",
+        "https://baby.madabase.com/guides/breast-milk-storage-bags-buying-guide",
+        "https://baby.madabase.com/guides/toddler-straw-cups-buying-guide",
+        "https://baby.madabase.com/guides/silicone-feeding-placemats-buying-guide",
+        "https://baby.madabase.com/guides/suction-toddler-bowls-buying-guide",
+        "https://baby.madabase.com/guides/toddler-training-utensils-buying-guide",
+        "https://baby.madabase.com/guides/stroller-footmuffs-buying-guide",
+        "https://baby.madabase.com/guides/stroller-cup-holders-buying-guide",
+        "https://baby.madabase.com/guides/bath-toy-organizers-buying-guide",
+        "https://baby.madabase.com/guides/childproof-corner-guards-buying-guide"
+      ]
+    },
+    "publicAudit": {
+      "runtimeChecked": 40,
+      "runtimePassed": 40,
+      "sitemapChecked": 40,
+      "sitemapPassed": 40,
+      "canonicalAndIndexabilityDefects": 0
+    },
+    "decision": "Protect all six exposed top-10 URLs through the September 21 Day-14 and October 7 Day-30 gates. The remaining 34 URLs are individually confirmed indexed and all 40 public pages pass runtime, canonical, indexability and sitemap checks, so Day 7 does not justify another bulk rewrite, resubmission or deployment. At Day 14, review only the exact 34 still-unexposed URLs for real query demand, intent mismatch or consolidation into an existing stronger route; add no route and preserve every page that gains exposure before that gate."
   }
 }
