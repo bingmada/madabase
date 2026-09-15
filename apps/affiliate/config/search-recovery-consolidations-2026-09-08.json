@@ -33,6 +33,15 @@
     "day14": "2026-09-22",
     "day30": "2026-10-08"
   },
+  "day7Result": {
+    "checkedAt": "2026-09-15T11:30:00+08:00",
+    "report": "apps/affiliate/reports/search-recovery-consolidation-day7-gate-2026-09-15.json",
+    "window": "2026-09-08 through 2026-09-14 versus 2026-09-01 through 2026-09-07",
+    "retainedHubPerformance": "0 of 27 exposed in both Google windows and 0 of 27 exposed in the current Bing seven-day window",
+    "liveInspection": "27 of 27 retained hubs are on Google and indexed; zero not-on-Google and zero unknown",
+    "publicValidation": "27 retained hubs, 91 base redirects, 91 en-gb redirects, Network/Pets Sitemaps and all 19 governed category discovery paths passed",
+    "decision": "Hold all 27 retained hubs and all 91 permanent redirects unchanged through the September 22 Day-14 demand, intent-differentiation and retirement gate. Do not reopen retired sources or reset the hubs from zero small-sample evidence."
+  },
   "families": [
     { "site": "network", "familySlug": "indoor-wifi-access-points", "targetRole": "comparison", "targetSlug": "indoor-wifi-access-points-vs-alternatives", "historicalLeader": "ownership=8; comparison=1", "selectionEvidence": "The comparison URL is a protected September 4 target, and the current SERP is organized around wired access points versus mesh." },
     { "site": "network", "familySlug": "outdoor-wifi-access-points", "targetRole": "comparison", "targetSlug": "outdoor-wifi-access-points-vs-alternatives", "historicalLeader": "ownership=9; comparison=8", "selectionEvidence": "Near-tied historical exposure plus current outdoor AP versus outdoor mesh/indoor AP result coverage favors the broader comparison decision." },

@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "checkedAt": "2026-09-15T11:30:00+08:00",
+  "sourceConfig": "apps/affiliate/config/search-recovery-consolidations-2026-09-08.json",
+  "sourceLedger": "apps/affiliate/reports/seo-consolidation-ledger-2026-09-08.json",
+  "measurementWindow": {
+    "current": "2026-09-08 through 2026-09-14",
+    "previous": "2026-09-01 through 2026-09-07",
+    "gscLastUpdate": "approximately nine hours before review"
+  },
+  "scope": {
+    "families": 27,
+    "networkFamilies": 17,
+    "petFamilies": 10,
+    "measuredUrls": 118,
+    "retainedCanonicalHubs": 27,
+    "permanentRedirectSources": 91,
+    "newRoutes": 0
+  },
+  "searchConsole": {
+    "propertyHeadline": {
+      "currentClicks": 4,
+      "previousClicks": 6,
+      "currentImpressions": 1517,
+      "previousImpressions": 1481,
+      "currentCtr": 0.003,
+      "previousCtr": 0.004,
+      "currentAveragePosition": 17.5,
+      "previousAveragePosition": 24.0
+    },
+    "retainedHubRows": {
+      "currentExposed": 0,
+      "previousExposed": 0,
+      "currentClicks": 0,
+      "previousClicks": 0,
+      "currentImpressions": 0,
+      "previousImpressions": 0
+    },
+    "liveUrlInspection": {
+      "attempted": 27,
+      "indexed": 27,
+      "notOnGoogle": 0,
+      "unknown": 0,
+      "requestIndexingUsed": false
+    }
+  },
+  "bing": {
+    "window": "2026-09-08 through 2026-09-14",
+    "propertyClicks": 7,
+    "propertyImpressions": 425,
+    "propertyCtr": 0.0165,
+    "retainedHubExposed": 0,
+    "retainedHubClicks": 0,
+    "retainedHubImpressions": 0,
+    "activeAffiliateRowsExcludingTools": {
+      "network": { "clicks": 4, "impressions": 97, "averagePosition": 4.53 },
+      "smarthome": { "clicks": 1, "impressions": 25, "averagePosition": 4.6 },
+      "homeoffice": { "clicks": 0, "impressions": 22, "averagePosition": 3.91 },
+      "baby": { "clicks": 2, "impressions": 2, "averagePosition": 6.0 },
+      "pet": { "clicks": 0, "impressions": 3, "averagePosition": 4.0 }
+    }
+  },
+  "technicalValidation": {
+    "retainedHubsPublic": "27 of 27 HTTP 200, self-canonical, consolidated-family marker present and included in the correct Sitemap",
+    "redirectSourcesPublic": "91 of 91 base routes and 91 of 91 en-gb routes return the governed permanent redirect and remain outside Sitemap discovery",
+    "categoryDiscovery": "19 of 19 categories passed; 154 of 154 primary family hubs and 418 of 418 remaining support links verified",
+    "activeHomesAndSitemaps": "Network, Smarthome, Homeoffice, Baby, Pets, Style and Costumes returned HTTP 200; Tools was intentionally excluded",
+    "merchantLinks": "306 of 306 affiliate destinations passed; eight known drifted or unavailable offers remain suppressed"
+  },
+  "urlOutcomeRules": [
+    {
+      "set": "Every targetUrl in sourceLedger.ledger",
+      "count": 27,
+      "result": "zero impressions in both compared complete seven-day windows; live URL Inspection says URL is on Google and Page is indexed",
+      "action": "hold the current retained hub unchanged through the 2026-09-22 Day-14 demand and intent gate"
+    },
+    {
+      "set": "Every sourceUrl in sourceLedger.ledger[].sourceUrls",
+      "count": 91,
+      "result": "public base and en-gb permanent redirects pass and the retired URLs remain excluded from Sitemaps",
+      "action": "keep the permanent redirects; do not reopen, rewrite, inspect as canonical targets or reverse from rolling-window noise"
+    }
+  ],
+  "decision": {
+    "status": "day7_complete_all_retained_hubs_indexed_zero_exposure_hold_to_day14",
+    "reason": "The consolidation is technically intact and has not lost indexing, while neither Google nor Bing has produced a retained-hub exposure signal. Day 7 is too early to reverse 91 redirects or reset all 27 hubs without query evidence. The full zero-exposure set advances intact to the predeclared Day-14 demand, intent-differentiation and retirement gate.",
+    "protectedRetainedHubs": 0,
+    "heldRetainedHubs": 27,
+    "redirectsReversed": 0,
+    "pageChanges": 0,
+    "indexSubmissions": 0,
+    "nextGate": "2026-09-22"
+  }
+}
