@@ -1,0 +1,29 @@
+{
+  "checkedAt": "2026-09-24",
+  "window": "2026-08-25 to 2026-09-21",
+  "method": "Existing authenticated Google Search Console browser, exact-page filter, Queries tab, all visible rows including GROWNSY page 2",
+  "limitations": "Every row below has zero clicks. Query rows are privacy-filtered and do not sum to page totals. Empty queries means no disclosed rows, not no search demand. UI average positions are rounded; use page-ledger.json for full precision. Query inspection alone is not full content/SERP review.",
+  "results": [
+    {"url":"https://baby.madabase.com/reviews/philips-avent-premium-fast-bottle-warmer-scf358","impressions":81,"position":9.3,"queries":[["avent scf358",2],["philips avent scf358 () reviews",1],["philips avent scf358/00 () reviews",1],["philips avent bottle warmer scf358",1],["philips avent premium scf358/00 () reviews",1],["philips avent scf358",1]]},
+    {"url":"https://baby.madabase.com/reviews/momcozy-purehug-baby-carrier","impressions":78,"position":9.7,"queries":[["momcozy purehug baby carrier () reviews",2],["momcozy purehug air mesh () reviews",1],["momcozy purehug () reviews",1],["momcozy purehug baby carrier review",1],["purhug",1]]},
+    {"url":"https://baby.madabase.com/reviews/momcozy-mw05-portable-milk-warmer","impressions":72,"position":8.5,"queries":[["momcozy mw05",8],["mw05 momcozy",3],["momcozy mw05 () reviews",2]]},
+    {"url":"https://homeoffice.madabase.com/guides/key-light-for-glasses-glare-placement","impressions":60,"position":7.3,"queries":[]},
+    {"url":"https://baby.madabase.com/best/babybjorn-harmony-vs-ergobaby-omni-breeze","impressions":55,"position":9.1,"queries":[["babybjorn harmony vs ergobaby omni breeze",7],["baby bjorn harmony vs ergobaby omni breeze",2],["baby bjorn harmony vs ergobaby",2]]},
+    {"url":"https://baby.madabase.com/best/dr-browns-vs-baby-brezza-sterilizer-dryer","impressions":45,"position":10,"queries":[["baby brezza vs dr brown sterilizer",1]]},
+    {"url":"https://baby.madabase.com/guides/ergobaby-omni-breeze-cleaning-guide","impressions":39,"position":8,"queries":[]},
+    {"url":"https://baby.madabase.com/guides/ergobaby-omni-breeze-newborn-fit-checklist","impressions":34,"position":8.4,"queries":[]},
+    {"url":"https://homeoffice.madabase.com/guides/monitor-arm-clamp-reinforcement-guide","impressions":33,"position":8,"queries":[]},
+    {"url":"https://baby.madabase.com/reviews/chicco-advanced-sterilizer-dryer","impressions":32,"position":8.8,"queries":[["chicco sterilizer with drying () reviews",1]]},
+    {"url":"https://homeoffice.madabase.com/reviews/jabra-speak2-40-usb-speakerphone","impressions":32,"position":9.5,"queries":[["jabra speak2 40 review",1]]},
+    {"url":"https://baby.madabase.com/best/momcozy-purehug-vs-ergobaby-omni-breeze","impressions":28,"position":7.6,"queries":[]},
+    {"url":"https://homeoffice.madabase.com/reviews/logitech-litra-glow","impressions":27,"position":7.6,"queries":[]},
+    {"url":"https://homeoffice.madabase.com/reviews/ugreen-30768-usb-3-switch","impressions":26,"position":6.5,"queries":[]},
+    {"url":"https://homeoffice.madabase.com/reviews/uplift-v3-standing-desk","impressions":26,"position":9.4,"queries":[]},
+    {"url":"https://baby.madabase.com/guides/automatic-bottle-washers-vs-alternatives","impressions":24,"position":3.8,"queries":[["compare the pros and cons of manual and automatic baby bottle sanitizing",7]]},
+    {"url":"https://homeoffice.madabase.com/guides/under-desk-cpu-holders-buying-guide","impressions":24,"position":9,"queries":[]},
+    {"url":"https://baby.madabase.com/en-gb/guides/ergobaby-omni-breeze-positions-by-age","impressions":23,"position":8,"queries":[]},
+    {"url":"https://homeoffice.madabase.com/reviews/asus-zenscreen-mb16acv-portable-monitor","impressions":23,"position":6.8,"queries":[]},
+    {"url":"https://baby.madabase.com/reviews/grownsy-bottle-sterilizer-dryer","impressions":154,"position":11.6,"queries":[["growns bottle sterilizer and dryer",6],["grownsy bottle sterilizer and dryer",4],["grownsy bottle sterilizer and dryer reviews",3],["grownsy compact baby bottle sterilizer and dryer with fast sanitization",2],["grownsy sterilizer and dryer",2],["growns bottle sterilizer",2],["grownsy sterilizer",2],["grownsy bottle sterilizer and dryer review",1],["grownsy compact bottle sterilizer and dryer",1],["grownsy bottle sterilizer review",1],["bottle sterilizer grownsy",1],["mid range sterilizer",1]]},
+    {"url":"https://homeoffice.madabase.com/reviews/anker-675-usb-c-docking-station","impressions":135,"position":18,"queries":[["anker standing desk review",29],["anker 675 review",20],["anker 675 usb-c docking station",15],["anker 675",9],["anker 675 usb c docking station",6],["anker 675 usb-c docking station review",2],["anker docking station monitor stand",2],["anker 675 docking station",2],["anker 675 hub",1]]}
+  ]
+}

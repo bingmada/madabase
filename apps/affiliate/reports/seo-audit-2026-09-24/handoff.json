@@ -71,12 +71,12 @@
     "2026-10-11"
   ],
   "gateCompletion": "Incomplete GSC gates remain open; source repairs are not proof of Google recovery.",
-  "pageEdits": 0,
+  "pageEdits": 64,
   "deployments": 0,
   "requestIndexingSubmissions": 0,
   "existingStateFilesModified": true,
   "repair": {
-    "updatedAt": "2026-09-24T19:55:59+08:00",
+    "updatedAt": "2026-09-24T21:13:27+08:00",
     "status": "local-repairs-validated-production-not-switched-server-recovery-awaiting-owner",
     "scope": [
       "main",
@@ -114,15 +114,43 @@
       "rollbackRecord": "/var/tmp/madabase-seo-20260924-rollback.json"
     },
     "nextActions": [
-      "Obtain owner recovery reboot approval or authenticated rescue-console session; restore existing services and stop candidate before new release work",
-      "Inspect memory/OOM logs; do not run another unconstrained parallel candidate",
-      "Deploy the final merchant-corrected Affiliate archive and 4883d9c Main/Wellness archives only after health validation",
-      "Verify all scoped hosts, repaired canonicals, old/new assets, 76 Costume product discovery, and QA exclusion in production",
-      "Submit only exact changed canonicals after public verification",
-      "Resume the exact 109 GSC inspection queue when external service permits; leave cohort gates open"
+      "Restore old production and stop candidate after the pending owner recovery approval or authenticated rescue login",
+      "Inspect OOM/reclaim/service logs and verify scoped host health before publishing",
+      "Complete live merchant checks for changed pages, particularly 50 Style products; maintain full remaining-ASIN queue",
+      "Deploy the exact latest Affiliate archive only after recovery and capacity review; Main/Wellness remain from 4883d9c",
+      "Verify production pages, assets, all 76 Costume products discovery and QA exclusion; then submit precise changed canonicals",
+      "Resume 109 blocked GSC URL inspections; full cohort gates remain open",
+      "Complete priority-decisions.json query/body/SERP decisions and measure after actual deployment"
     ],
-    "finalAffiliateSourceCommit": "5fe0cdf",
     "recoveryHandoff": "apps/affiliate/reports/seo-audit-2026-09-24/server-recovery-handoff.md",
-    "caldigitQueryReview": "Completed: visible intent matches existing title, only 3/201 impressions have query disclosure; retain current page"
-  }
+    "caldigitQueryReview": "Completed: visible intent matches existing title, only 3/201 impressions have query disclosure; retain current page",
+    "followupReport": "apps/affiliate/reports/seo-audit-2026-09-24/comprehensive-followup.md",
+    "followupStatus": "local-followup-validated-production-not-switched",
+    "priorityPages": 53,
+    "exactQueryReviews": 24,
+    "styleEvidenceCleanupCanonicals": 53,
+    "additionalDirectContentEdits": 56,
+    "finalAffiliateArchive": {
+      "bytes": 60866053,
+      "sha256": "8f0ac11a80e59765018d720f5a762601b09b4c92f0db5511c4e60b1cadf80e94",
+      "path": "apps/affiliate/.release/affiliate-runtime.tgz",
+      "sourceCommit": "Resolve commit that last updated this archive; prior 5fe0cdf is superseded"
+    },
+    "indexNowSubmitted": false,
+    "currentAsins": 293,
+    "currentAsinsIdentityVerified": 10,
+    "remainingCurrentAsinChecks": 283,
+    "validationFollowup": {
+      "seo": "pass",
+      "lint": "pass",
+      "build": "pass",
+      "ctrCohortProtection": "pass",
+      "targetRuntime": "12/12",
+      "styleRuntime": "76/76",
+      "styleImages": "21/21",
+      "mobileWidth": 390,
+      "capacityPreflightScenarios": "9/9; not executed on production"
+    }
+  },
+  "pageEditsDefinition": "Direct editorial canonicals: 6 index-repair guides, 2 policy reviews, 2 followup reviews, Chicco and 53 Style pages. Shared technical changes and category discovery affect additional routes."
 }

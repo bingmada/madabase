@@ -1,0 +1,838 @@
+{
+  "environment": "local immutable release, not production",
+  "pages": [
+    {
+      "url": "https://style.madabase.com/",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/about",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/affiliate-disclosure",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/best/best-betsey-johnson-mismatched-earrings",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/best/best-funny-socks-for-colorful-outfits",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/best/best-loungefly-mini-backpacks-by-outfit",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/best/best-playful-hair-accessories",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/best/best-scarves-for-outfit-color",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/best/best-statement-accessories-for-one-focal-point",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/best/best-weird-earrings-that-are-still-wearable",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/best/loungefly-minnie-bow-vs-rock-the-dots-backpack",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/categories/bags",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/categories/hair",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/categories/jewelry",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/categories/scarves",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/categories/socks",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/categories/styling",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/contact",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/editorial-policy",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/guides/how-to-style-novelty-accessories-without-looking-costumey",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/guides/loungefly-faux-leather-rain-and-care-guide",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/guides/loungefly-mini-backpack-vs-full-size-for-park-day",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/guides/mini-backpack-capacity-measurement-guide",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/guides/statement-earring-size-weight-closure-guide",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/methodology",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/privacy",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/artistic-face-drop-earrings",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/aufeel-small-mulberry-silk-scarf",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/betsey-johnson-backyard-frog-earrings",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/betsey-johnson-bee-stud-earrings",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/betsey-johnson-boho-butterfly-earrings",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/betsey-johnson-chocolate-strawberry-earrings",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/betsey-johnson-cup-dangle-earrings",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/betsey-johnson-cupcake-mismatch-earrings",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/betsey-johnson-football-mismatch-earrings",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/betsey-johnson-lucky-charm-earrings",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/betsey-johnson-moon-star-drop-earrings",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/betsey-johnson-pencil-mismatch-earrings",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/betsey-johnson-pink-sugar-skull-earrings",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/betsey-johnson-pumpkin-spice-earrings",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/betsey-johnson-starfish-earrings",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/betsey-johnson-straight-as-charm-earrings",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/camila-paris-green-french-hair-clip",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/chill-pill-hair-claw-clip",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/glcmxmart-food-animal-fun-socks",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/jasmine-rhinestone-tassel-hair-claw",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/jeasona-cute-cat-socks",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/jspupifip-fruit-ankle-socks",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/large-mulberry-silk-long-scarf",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/long-skinny-multipurpose-scarf",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/loungefly-disney-dogs-mini-backpack",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/loungefly-eeyore-mini-backpack",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/loungefly-mickey-checkered-convertible-bag",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/loungefly-mickey-friends-canvas-backpack",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/loungefly-mickey-minnie-aop-backpack",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/loungefly-mickey-minnie-donald-daisy-backpack",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/loungefly-mickey-mouse-mini-backpack",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/loungefly-minnie-floral-rock-the-dots-backpack",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/loungefly-minnie-mouse-bow-mini-backpack",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/loungefly-minnie-mouse-dress-mini-backpack",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/loungefly-minnie-rock-the-dots-backpack",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/loungefly-princess-books-mini-backpack",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/loungefly-princess-ice-cream-backpack",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/loungefly-princess-stained-glass-backpack",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/loungefly-tigger-mini-backpack",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/mehayi-large-pearl-hair-clips",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/metal-butterfly-flower-hair-clips",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/moggei-printed-cotton-boot-socks",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/nattasoul-champagne-martini-earring-set",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/neutral-flower-claw-clip-set",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/relang-printed-satin-hair-scarf",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/sparkly-square-leverback-earrings",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/spiderweb-skeleton-hand-hair-clips",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/twenty-four-fashion-scarf-set",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/wecibor-colorful-novelty-crew-socks",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    },
+    {
+      "url": "https://style.madabase.com/reviews/xocartige-champagne-bottle-earrings",
+      "status": 200,
+      "canonical": true,
+      "oneH1": true,
+      "unsupportedClaims": false,
+      "images": true,
+      "pass": true
+    }
+  ],
+  "images": [
+    [
+      "/_next/image?url=%2Fimages%2Faffiliate%2Fhero-style-realistic.webp&w=3840&q=75",
+      {
+        "status": 200,
+        "type": "image/jpeg"
+      }
+    ],
+    [
+      "/_next/image?url=%2Fimages%2Faffiliate%2Fstyle-edit-socks-realistic.webp&w=3840&q=75",
+      {
+        "status": 200,
+        "type": "image/jpeg"
+      }
+    ],
+    [
+      "/_next/image?url=%2Fimages%2Faffiliate%2Fstyle-edit-scarf-realistic.webp&w=3840&q=75",
+      {
+        "status": 200,
+        "type": "image/jpeg"
+      }
+    ],
+    [
+      "/_next/image?url=%2Fimages%2Faffiliate%2Fstyle-edit-hair-realistic.webp&w=3840&q=75",
+      {
+        "status": 200,
+        "type": "image/jpeg"
+      }
+    ],
+    [
+      "/_next/image?url=%2Fimages%2Faffiliate%2Fstyle-betsey-moon-star-earrings-realistic.webp&w=3840&q=75",
+      {
+        "status": 200,
+        "type": "image/jpeg"
+      }
+    ],
+    [
+      "/_next/image?url=%2Fimages%2Faffiliate%2Fstyle-betsey-cupcake-earrings-realistic.webp&w=3840&q=75",
+      {
+        "status": 200,
+        "type": "image/jpeg"
+      }
+    ],
+    [
+      "/_next/image?url=%2Fimages%2Faffiliate%2Fstyle-loungefly-minnie-backpack-realistic.webp&w=3840&q=75",
+      {
+        "status": 200,
+        "type": "image/jpeg"
+      }
+    ],
+    [
+      "/_next/image?url=%2Fimages%2Faffiliate%2Fstyle-minnie-dress-backpack-realistic.webp&w=3840&q=75",
+      {
+        "status": 200,
+        "type": "image/jpeg"
+      }
+    ],
+    [
+      "/_next/image?url=%2Fimages%2Faffiliate%2Fstyle-minnie-dots-backpack-realistic.webp&w=3840&q=75",
+      {
+        "status": 200,
+        "type": "image/jpeg"
+      }
+    ],
+    [
+      "/_next/image?url=%2Fimages%2Faffiliate%2Fstyle-mickey-convertible-bag-realistic.webp&w=3840&q=75",
+      {
+        "status": 200,
+        "type": "image/jpeg"
+      }
+    ],
+    [
+      "/_next/image?url=%2Fimages%2Faffiliate%2Fstyle-mickey-classic-backpack-realistic.webp&w=3840&q=75",
+      {
+        "status": 200,
+        "type": "image/jpeg"
+      }
+    ],
+    [
+      "/_next/image?url=%2Fimages%2Faffiliate%2Fstyle-mickey-minnie-aop-backpack-realistic.webp&w=3840&q=75",
+      {
+        "status": 200,
+        "type": "image/jpeg"
+      }
+    ],
+    [
+      "/_next/image?url=%2Fimages%2Faffiliate%2Fstyle-princess-books-backpack-realistic.webp&w=3840&q=75",
+      {
+        "status": 200,
+        "type": "image/jpeg"
+      }
+    ],
+    [
+      "/_next/image?url=%2Fimages%2Faffiliate%2Fstyle-art-face-earrings-realistic.webp&w=3840&q=75",
+      {
+        "status": 200,
+        "type": "image/jpeg"
+      }
+    ],
+    [
+      "/_next/image?url=%2Fimages%2Faffiliate%2Fstyle-frog-earrings-realistic.webp&w=3840&q=75",
+      {
+        "status": 200,
+        "type": "image/jpeg"
+      }
+    ],
+    [
+      "/_next/image?url=%2Fimages%2Faffiliate%2Fstyle-lucky-charm-earrings-realistic.webp&w=3840&q=75",
+      {
+        "status": 200,
+        "type": "image/jpeg"
+      }
+    ],
+    [
+      "/_next/image?url=%2Fimages%2Faffiliate%2Fstyle-square-earrings-realistic.webp&w=3840&q=75",
+      {
+        "status": 200,
+        "type": "image/jpeg"
+      }
+    ],
+    [
+      "/_next/image?url=%2Fimages%2Faffiliate%2Fstyle-champagne-earrings-realistic.webp&w=3840&q=75",
+      {
+        "status": 200,
+        "type": "image/jpeg"
+      }
+    ],
+    [
+      "/_next/image?url=%2Fimages%2Faffiliate%2Fstyle-martini-earrings-realistic.webp&w=3840&q=75",
+      {
+        "status": 200,
+        "type": "image/jpeg"
+      }
+    ],
+    [
+      "/_next/image?url=%2Fimages%2Faffiliate%2Fstyle-edit-bag-realistic.webp&w=3840&q=75",
+      {
+        "status": 200,
+        "type": "image/jpeg"
+      }
+    ],
+    [
+      "/_next/image?url=%2Fimages%2Faffiliate%2Fstyle-edit-jewelry-realistic.webp&w=3840&q=75",
+      {
+        "status": 200,
+        "type": "image/jpeg"
+      }
+    ]
+  ]
+}

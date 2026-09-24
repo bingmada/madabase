@@ -12,8 +12,10 @@ After approved recovery or an authenticated rescue session:
 2. Check the existing Affiliate/Main/Wellness systemd service health and their origin HTTP responses. Restore the existing release first if needed; do not change Test/Tools configuration.
 3. Inspect the journal for OOM/reclaim events around 19:30–20:00, memory, swap and process RSS before any additional candidate. Do not repeat simultaneous candidate startup without a measured memory budget and automatic timeout/cleanup.
 4. Retain previous hashed assets and all rollback releases. Do not reset the dirty repository checkout.
-5. The final Affiliate archive is in commit `5fe0cdf`, SHA256 `aa29c20f43dcfb26ecd19ccc085ff9823f4e06725881798dee8f17c1f723887d` (60865949 bytes). Main/Wellness archives are from `4883d9c`. The already-extracted Affiliate `4883d9c` directory lacks the later HON/Branch merchant correction and must not be the final release.
+5. The latest Affiliate archive is in the commit containing `comprehensive-followup.md`, SHA256 `8f0ac11a80e59765018d720f5a762601b09b4c92f0db5511c4e60b1cadf80e94` (60866053 bytes). It includes the later Anker/GROWNSY and Style evidence repairs; `5fe0cdf` is superseded. Main/Wellness archives are from `4883d9c`. The already-extracted Affiliate `4883d9c` directory lacks the HON/Branch merchant correction and must not be the final release.
 6. Deployment, production validation, discovery checks, precise IndexNow submission and Google recrawl remain outstanding.
+
+Before any parallel candidate startup, run `node scripts/check-release-capacity.mjs --candidate-mib=512` on the Linux host. Failure or missing metrics blocks startup; swap is not free capacity. Require explicit `MemoryMax`, `MemorySwapMax=0`, `RuntimeMaxSec=120`, `TimeoutStopSec=10`, `Restart=no`, loopback binding and a cleanup path that verifies the unit and port stopped. If the host cannot accommodate a second process, finish off-server checks and prepare a controlled single-process cutover with rollback and downtime approval where required. Do not adjust excluded services to create capacity.
 
 Existing production working directories observed before candidate start:
 

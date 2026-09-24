@@ -31,3 +31,7 @@
 运行包包含回滚所需的独立构建；服务器现有工作区有改动，部署从指定 Git 对象提取归档，不 reset 或覆盖工作区。不得把待发布修复记为线上生效。
 
 官方依据直接保存在修复页 sources 中，包括 [Branch warranty](https://www.branchfurniture.com/pages/warranty)、[Branch returns](https://www.branchfurniture.com/pages/returns)、[HON warranty](https://www.hon.com/warranty)、[OSHA chairs](https://www.osha.gov/etools/computer-workstations/components/chairs)、[AAP choking prevention](https://www.healthychildren.org/English/health-issues/injuries-emergencies/Pages/Choking-Prevention.aspx) 与对应厂家说明。
+
+## 全面整改补查追加
+
+Anker/GROWNSY 搜索意图和决策说明、Style 53 页证据清理、Chicco 描述清理、发布容量保护已完成本地验证。最新包和仍未通过的验收项以 [comprehensive-followup.md](comprehensive-followup.md) 为准；上文 5fe0cdf 的 Affiliate 包已被替代，生产仍未切换。

@@ -999,7 +999,7 @@ export const products: Product[] = [
     asin: "B0BNZ4D72B",
     amazonTitle: "Anker 675 USB-C Docking Station (12-in-1, Monitor Stand, Wireless)",
     seoTitle: "Anker 675 Review: One-Monitor Dock and Stand, Not Dual Display",
-    updatedAt: "July 22, 2026",
+    updatedAt: "September 24, 2026",
     evidenceMode: "official-spec",
     researchNote:
       "We have not used this stand. The page uses Anker's current official FAQ and the exact Amazon identity. It supports one external HDMI monitor, not two, and USB-C ports do not output video.",
@@ -1010,9 +1010,9 @@ export const products: Product[] = [
     summary:
       "A 12-in-1 powered monitor stand and one-monitor USB-C dock with wireless charging, up to 100W laptop charging, a 180W adapter, and a strict single-HDMI display limit.",
     verdict:
-      "Anker 675 is a cable-management and monitor-stand purchase for one external 4K60 screen. It is not a dual-monitor dock, and buyers who need two external displays should move to the DisplayLink or native Thunderbolt decision path before comparing ports.",
+      "Anker 675 is a fixed-height monitor riser and USB-C dock for one external 4K60 screen. It raises the display while the keyboard stays on the desk; it cannot turn a seated desk into a standing workstation. Choose it for cable management, charging, and monitor placement after checking the height and footprint.",
     whyItMatters:
-      "The earlier page treated display support as a generic compatibility check. Anker's official FAQ is explicit: one HDMI monitor only, with no display output from the USB-C ports.",
+      "A monitor riser changes screen height, while a sit-stand desk changes the height of the entire working surface. Decide which adjustment you need before paying for an integrated dock; Anker's display support is limited to one HDMI monitor.",
     bestFor: "One-monitor desks that need a powered stand and cable cleanup",
     priceBand: "$$$",
     rating: 4.3,
@@ -1039,6 +1039,7 @@ export const products: Product[] = [
       Charging: "Up to 100W laptop charging; 45W shared USB-C accessory charging listed",
       Power: "180W AC adapter included",
       "Stand load": "One monitor or all-in-one up to 22 lb recommended",
+      "Stand dimensions": "21.26 x 8.66 x 3.54 inches, fixed height",
     },
     evidence: [
       "Confirm ASIN B0BNZ4D72B and Anker 675 rather than a compact Anker dock",
@@ -1048,6 +1049,10 @@ export const products: Product[] = [
       "Verify seller, 180W adapter inclusion, regional plug, delivery, and return terms",
     ],
     editorialSections: [
+      {
+        heading: "Monitor height and standing height are different jobs",
+        body: "Anker lists a 21.26 x 8.66 x 3.54-inch stand. Measure the screen's existing base and your seated sightline before adding that fixed lift; it can put an already-high screen too high. The keyboard and mouse remain on the desk. If the goal is to alternate between sitting and standing, choose an adjustable work surface first and evaluate a dock separately.",
+      },
       {
         heading: "This is not a dual-monitor dock",
         body: "Anker's official FAQ says the 675 supports one external monitor through HDMI at up to 4K60. Its USB-C ports do not carry display output. Two physical USB-C sockets should not be mistaken for two video paths.",
@@ -1076,6 +1081,11 @@ export const products: Product[] = [
         name: "Anker 675 official FAQ",
         url: "https://service.anker.com/article-description/Anker-675-USB-C-Docking-Station-12-in-1-Monitor-Stand-Wireless-FAQ",
         note: "Official single-monitor limit, HDMI resolution, USB-C video exclusion, charging, cable, adapter, OS, and stand-load guidance.",
+      },
+      {
+        name: "Anker 675 dimensions and specifications",
+        url: "https://service.anker.com/article-description/Introduction-to-Anker-675-USB-C-Docking-Station-12-in-1-Monitor-Stand-Wireless",
+        note: "Official 21.26 x 8.66 x 3.54-inch dimensions and listed stand load, checked September 24, 2026.",
       },
       {
         name: "Amazon listing for ASIN B0BNZ4D72B",

@@ -11,6 +11,9 @@ const cases = [
   ["baby", "/guides/toddler-snack-containers-buying-guide", "Match the opening to the food and the hand"],
   ["homeoffice", "/reviews/branch-ergonomic-chair", "Seven years for chair components, three for fabric"],
   ["homeoffice", "/reviews/hon-ignition-2-0-chair", "Lifetime coverage has shorter component terms"],
+  ["homeoffice", "/reviews/anker-675-usb-c-docking-station", "Monitor height and standing height are different jobs"],
+  ["baby", "/reviews/grownsy-bottle-sterilizer-dryer", "Five bottles in the listing, six in the illustration"],
+  ["baby", "/reviews/chicco-advanced-sterilizer-dryer", "Does not wash bottles"],
   ["style", "/categories/styling", "Styling guides"],
 ];
 const results = [];
@@ -26,6 +29,12 @@ for (const [site, path, text] of cases) {
     merchantRepair = hrefs.some(href => href.includes("/dp/B06Y3PGPR2") && href.includes("tag=madaoffice-20"))
       && hrefs.every(href => !href.includes("B07GNDDNMW") && !href.includes("B0GWGK4JFK") && !href.includes("amzn.to/4eWkGpe"));
     if (path === "/reviews/branch-ergonomic-chair") merchantRepair &&= html.includes("Different product") && html.includes("verified alternative");
+  }
+  if (path === "/reviews/anker-675-usb-c-docking-station") {
+    merchantRepair = hrefs.some(href => href.includes("/dp/B0BNZ4D72B") && href.includes("tag=madaoffice-20"));
+  }
+  if (path === "/reviews/grownsy-bottle-sterilizer-dryer") {
+    merchantRepair = hrefs.some(href => href.includes("/dp/B09HH7HSGV") && href.includes("tag=madababy-20"));
   }
   let qaGuardDelivered = false;
   for (const match of html.matchAll(/<script[^>]+src="([^\"]+)"/g)) {

@@ -1,0 +1,1339 @@
+{
+  "checkedAt": "2026-09-24",
+  "window": "2026-08-25 to 2026-09-21",
+  "selection": "All sitemap URLs with >=20 impressions and zero clicks in current 28d export. This prioritized set is not the whole 1401-page inventory.",
+  "counts": {
+    "page-one-zero-click": 22,
+    "deep-rank-zero-click": 13,
+    "page-two-zero-click": 18
+  },
+  "query_reads": 24,
+  "full_gate_complete": false,
+  "results": [
+    {
+      "url": "https://homeoffice.madabase.com/reviews/branch-ergonomic-chair",
+      "cohort": "page-one-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 491.0,
+        "current_position": 8.26,
+        "previous_clicks": 0.0,
+        "previous_impressions": 96.0,
+        "previous_position": 26.96
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 117.0,
+        "current_position": 8.07,
+        "previous_clicks": 0.0,
+        "previous_impressions": 254.0,
+        "previous_position": 7.11
+      },
+      "queries_status": "live-exact-page-read",
+      "decision_status": "source-repaired-production-pending",
+      "next_action": "Policy answer and merchant correction completed in earlier commits. Verify final production and all CTAs after server recovery."
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/standing-desk-height-chart-guide",
+      "cohort": "deep-rank-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 349.0,
+        "current_position": 79.82,
+        "previous_clicks": 0.0,
+        "previous_impressions": 337.0,
+        "previous_position": 78.8
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 21.0,
+        "current_position": 74.38,
+        "previous_clicks": 0.0,
+        "previous_impressions": 74.0,
+        "previous_position": 78.66
+      },
+      "queries_status": "pending",
+      "decision_status": "pending-content-and-SERP-review",
+      "next_action": "Inspect exact disclosed queries and live SERP, then compare body, query overlap, and internal discovery before retarget/merge. Do not rewrite based only on this aggregate."
+    },
+    {
+      "url": "https://homeoffice.madabase.com/best/best-standing-desks-for-small-spaces",
+      "cohort": "deep-rank-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 244.0,
+        "current_position": 49.91,
+        "previous_clicks": 0.0,
+        "previous_impressions": 345.0,
+        "previous_position": 58.89
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 36.0,
+        "current_position": 48.03,
+        "previous_clicks": 0.0,
+        "previous_impressions": 64.0,
+        "previous_position": 47.83
+      },
+      "queries_status": "pending",
+      "decision_status": "pending-content-and-SERP-review",
+      "next_action": "Inspect exact disclosed queries and live SERP, then compare body, query overlap, and internal discovery before retarget/merge. Do not rewrite based only on this aggregate."
+    },
+    {
+      "url": "https://homeoffice.madabase.com/reviews/caldigit-ts4-thunderbolt-dock",
+      "cohort": "page-one-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 201.0,
+        "current_position": 9.97,
+        "previous_clicks": 0.0,
+        "previous_impressions": 196.0,
+        "previous_position": 11.4
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 36.0,
+        "current_position": 9.81,
+        "previous_clicks": 0.0,
+        "previous_impressions": 61.0,
+        "previous_position": 10.66
+      },
+      "queries_status": "live-exact-page-read",
+      "decision_status": "observe",
+      "next_action": "Visible compatibility queries match existing title/body. Only 3 of 201 impressions have disclosed query rows; retain intent. See caldigit-query-review.json."
+    },
+    {
+      "url": "https://homeoffice.madabase.com/reviews/hon-ignition-2-0-chair",
+      "cohort": "page-one-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 180.0,
+        "current_position": 9.63,
+        "previous_clicks": 0.0,
+        "previous_impressions": 60.0,
+        "previous_position": 13.4
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 44.0,
+        "current_position": 8.11,
+        "previous_clicks": 0.0,
+        "previous_impressions": 51.0,
+        "previous_position": 10.0
+      },
+      "queries_status": "live-exact-page-read",
+      "decision_status": "source-repaired-production-pending",
+      "next_action": "Policy answer and merchant correction completed in earlier commits. Verify final production and all CTAs after server recovery."
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/grownsy-bottle-sterilizer-dryer",
+      "cohort": "page-two-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 154.0,
+        "current_position": 11.61,
+        "previous_clicks": 0.0,
+        "previous_impressions": 87.0,
+        "previous_position": 15.24
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 27.0,
+        "current_position": 10.52,
+        "previous_clicks": 0.0,
+        "previous_impressions": 24.0,
+        "previous_position": 13.58
+      },
+      "queries_status": "live-exact-page-read",
+      "decision_status": "source-optimized-production-pending",
+      "next_action": "Clarify Amazon five-bottle title versus official six-bottle illustration, LS-BE916 identity, counter/loading clearance, washing work and separate newer listing. Preserve title and B09HH7HSGV/madababy-20 CTA."
+    },
+    {
+      "url": "https://homeoffice.madabase.com/reviews/anker-675-usb-c-docking-station",
+      "cohort": "page-two-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 135.0,
+        "current_position": 18.04,
+        "previous_clicks": 0.0,
+        "previous_impressions": 105.0,
+        "previous_position": 22.76
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 50.0,
+        "current_position": 10.58,
+        "previous_clicks": 0.0,
+        "previous_impressions": 13.0,
+        "previous_position": 32.46
+      },
+      "queries_status": "live-exact-page-read",
+      "decision_status": "source-optimized-production-pending",
+      "next_action": "29 standing-desk-query impressions out of 84 disclosed: clarify fixed monitor riser versus adjustable work surface. Preserve rising 7-day exposure and existing title. Check exact B0BNZ4D72B/madaoffice-20 CTA."
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/ergobaby-omni-breeze-carrier",
+      "cohort": "page-two-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 121.0,
+        "current_position": 15.09,
+        "previous_clicks": 0.0,
+        "previous_impressions": 180.0,
+        "previous_position": 11.74
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 22.0,
+        "current_position": 14.45,
+        "previous_clicks": 0.0,
+        "previous_impressions": 19.0,
+        "previous_position": 16.89
+      },
+      "queries_status": "pending",
+      "decision_status": "pending-content-and-SERP-review",
+      "next_action": "Inspect exact disclosed queries and live SERP, then compare body, query overlap, and internal discovery before retarget/merge. Do not rewrite based only on this aggregate."
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/baby-brezza-sterilizer-dryer-advanced",
+      "cohort": "page-two-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 115.0,
+        "current_position": 15.16,
+        "previous_clicks": 0.0,
+        "previous_impressions": 91.0,
+        "previous_position": 12.43
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 31.0,
+        "current_position": 13.61,
+        "previous_clicks": 0.0,
+        "previous_impressions": 33.0,
+        "previous_position": 11.39
+      },
+      "queries_status": "pending",
+      "decision_status": "pending-content-and-SERP-review",
+      "next_action": "Inspect exact disclosed queries and live SERP, then compare body, query overlap, and internal discovery before retarget/merge. Do not rewrite based only on this aggregate."
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/portable-monitor-usb-c-dp-alt-mode-displaylink-guide",
+      "cohort": "deep-rank-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 103.0,
+        "current_position": 24.65,
+        "previous_clicks": 0.0,
+        "previous_impressions": 84.0,
+        "previous_position": 41.25
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 17.0,
+        "current_position": 10.47,
+        "previous_clicks": 0.0,
+        "previous_impressions": 5.0,
+        "previous_position": 8.0
+      },
+      "queries_status": "pending",
+      "decision_status": "pending-content-and-SERP-review",
+      "next_action": "Inspect exact disclosed queries and live SERP, then compare body, query overlap, and internal discovery before retarget/merge. Do not rewrite based only on this aggregate."
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/wireless-presentation-clickers-buying-guide",
+      "cohort": "page-two-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 88.0,
+        "current_position": 14.0,
+        "previous_clicks": 0.0,
+        "previous_impressions": 8.0,
+        "previous_position": 20.88
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 21.0,
+        "current_position": 8.52,
+        "previous_clicks": 0.0,
+        "previous_impressions": 21.0,
+        "previous_position": 7.14
+      },
+      "queries_status": "pending",
+      "decision_status": "pending-content-and-SERP-review",
+      "next_action": "Inspect exact disclosed queries and live SERP, then compare body, query overlap, and internal discovery before retarget/merge. Do not rewrite based only on this aggregate."
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/philips-avent-premium-fast-bottle-warmer-scf358",
+      "cohort": "page-one-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 81.0,
+        "current_position": 9.35,
+        "previous_clicks": 0.0,
+        "previous_impressions": 16.0,
+        "previous_position": 8.31
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 26.0,
+        "current_position": 9.19,
+        "previous_clicks": 0.0,
+        "previous_impressions": 15.0,
+        "previous_position": 9.07
+      },
+      "queries_status": "live-exact-page-read",
+      "decision_status": "observe",
+      "next_action": "Visible model/variant queries match existing sourced body. Preserve title and product identity; no demonstrated decision gap in this read."
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/momcozy-purehug-baby-carrier",
+      "cohort": "page-one-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 78.0,
+        "current_position": 9.65,
+        "previous_clicks": 1.0,
+        "previous_impressions": 117.0,
+        "previous_position": 9.71
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 18.0,
+        "current_position": 8.89,
+        "previous_clicks": 0.0,
+        "previous_impressions": 23.0,
+        "previous_position": 11.17
+      },
+      "queries_status": "live-exact-page-read",
+      "decision_status": "observe",
+      "next_action": "Visible model/variant queries match existing sourced body. Preserve title and product identity; no demonstrated decision gap in this read."
+    },
+    {
+      "url": "https://baby.madabase.com/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
+      "cohort": "page-two-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 75.0,
+        "current_position": 15.75,
+        "previous_clicks": 0.0,
+        "previous_impressions": 37.0,
+        "previous_position": 20.0
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 21.0,
+        "current_position": 10.86,
+        "previous_clicks": 0.0,
+        "previous_impressions": 22.0,
+        "previous_position": 15.5
+      },
+      "queries_status": "pending",
+      "decision_status": "pending-content-and-SERP-review",
+      "next_action": "Inspect exact disclosed queries and live SERP, then compare body, query overlap, and internal discovery before retarget/merge. Do not rewrite based only on this aggregate."
+    },
+    {
+      "url": "https://homeoffice.madabase.com/reviews/plugable-tbt4-ud5-thunderbolt-dock",
+      "cohort": "page-two-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 74.0,
+        "current_position": 11.84,
+        "previous_clicks": 0.0,
+        "previous_impressions": 75.0,
+        "previous_position": 10.07
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 11.0,
+        "current_position": 8.36,
+        "previous_clicks": 0.0,
+        "previous_impressions": 10.0,
+        "previous_position": 16.7
+      },
+      "queries_status": "pending",
+      "decision_status": "pending-content-and-SERP-review",
+      "next_action": "Inspect exact disclosed queries and live SERP, then compare body, query overlap, and internal discovery before retarget/merge. Do not rewrite based only on this aggregate."
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/momcozy-mw05-portable-milk-warmer",
+      "cohort": "page-one-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 72.0,
+        "current_position": 8.53,
+        "previous_clicks": 2.0,
+        "previous_impressions": 86.0,
+        "previous_position": 8.77
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 17.0,
+        "current_position": 7.29,
+        "previous_clicks": 0.0,
+        "previous_impressions": 12.0,
+        "previous_position": 8.25
+      },
+      "queries_status": "live-exact-page-read",
+      "decision_status": "observe",
+      "next_action": "Visible model/variant queries match existing sourced body. Preserve title and product identity; no demonstrated decision gap in this read."
+    },
+    {
+      "url": "https://homeoffice.madabase.com/reviews/flexispot-e7-mini-standing-desk",
+      "cohort": "page-two-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 62.0,
+        "current_position": 10.76,
+        "previous_clicks": 0.0,
+        "previous_impressions": 122.0,
+        "previous_position": 10.89
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 7.0,
+        "current_position": 11.86,
+        "previous_clicks": 0.0,
+        "previous_impressions": 12.0,
+        "previous_position": 7.33
+      },
+      "queries_status": "pending",
+      "decision_status": "pending-content-and-SERP-review",
+      "next_action": "Inspect exact disclosed queries and live SERP, then compare body, query overlap, and internal discovery before retarget/merge. Do not rewrite based only on this aggregate."
+    },
+    {
+      "url": "https://homeoffice.madabase.com/reviews/urevo-smart-walking-pad",
+      "cohort": "deep-rank-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 62.0,
+        "current_position": 21.74,
+        "previous_clicks": 0.0,
+        "previous_impressions": 74.0,
+        "previous_position": 32.43
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 22.0,
+        "current_position": 30.32,
+        "previous_clicks": 0.0,
+        "previous_impressions": 15.0,
+        "previous_position": 19.07
+      },
+      "queries_status": "pending",
+      "decision_status": "pending-content-and-SERP-review",
+      "next_action": "Inspect exact disclosed queries and live SERP, then compare body, query overlap, and internal discovery before retarget/merge. Do not rewrite based only on this aggregate."
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/key-light-for-glasses-glare-placement",
+      "cohort": "page-one-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 60.0,
+        "current_position": 7.27,
+        "previous_clicks": 0.0,
+        "previous_impressions": 11.0,
+        "previous_position": 27.91
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 12.0,
+        "current_position": 7.5,
+        "previous_clicks": 0.0,
+        "previous_impressions": 33.0,
+        "previous_position": 7.48
+      },
+      "queries_status": "live-exact-page-read",
+      "decision_status": "query-reviewed-content-decision-pending",
+      "next_action": "No disclosed query rows; preserve intent. Check the next complete window and page-level data before changing title."
+    },
+    {
+      "url": "https://homeoffice.madabase.com/best/displaylink-vs-thunderbolt-dock-dual-monitors",
+      "cohort": "deep-rank-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 59.0,
+        "current_position": 30.27,
+        "previous_clicks": 0.0,
+        "previous_impressions": 17.0,
+        "previous_position": 26.53
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 9.0,
+        "current_position": 15.44,
+        "previous_clicks": 0.0,
+        "previous_impressions": 16.0,
+        "previous_position": 28.25
+      },
+      "queries_status": "pending",
+      "decision_status": "pending-content-and-SERP-review",
+      "next_action": "Inspect exact disclosed queries and live SERP, then compare body, query overlap, and internal discovery before retarget/merge. Do not rewrite based only on this aggregate."
+    },
+    {
+      "url": "https://baby.madabase.com/best/babybjorn-harmony-vs-ergobaby-omni-breeze",
+      "cohort": "page-one-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 55.0,
+        "current_position": 9.07,
+        "previous_clicks": 2.0,
+        "previous_impressions": 55.0,
+        "previous_position": 12.64
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 22.0,
+        "current_position": 8.86,
+        "previous_clicks": 0.0,
+        "previous_impressions": 10.0,
+        "previous_position": 7.5
+      },
+      "queries_status": "live-exact-page-read",
+      "decision_status": "query-reviewed-content-decision-pending",
+      "next_action": "Visible query rows recorded; preserve current intent pending proportional content/SERP review."
+    },
+    {
+      "url": "https://homeoffice.madabase.com/tools/desk-height-calculator",
+      "cohort": "deep-rank-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 49.0,
+        "current_position": 66.86,
+        "previous_clicks": 0.0,
+        "previous_impressions": 51.0,
+        "previous_position": 61.1
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 2.0,
+        "current_position": 46.0,
+        "previous_clicks": 0.0,
+        "previous_impressions": 10.0,
+        "previous_position": 81.4
+      },
+      "queries_status": "pending",
+      "decision_status": "pending-content-and-SERP-review",
+      "next_action": "Inspect exact disclosed queries and live SERP, then compare body, query overlap, and internal discovery before retarget/merge. Do not rewrite based only on this aggregate."
+    },
+    {
+      "url": "https://homeoffice.madabase.com/reviews/elgato-key-light-neo",
+      "cohort": "page-two-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 46.0,
+        "current_position": 10.09,
+        "previous_clicks": 0.0,
+        "previous_impressions": 6.0,
+        "previous_position": 5.83
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 8.0,
+        "current_position": 8.62,
+        "previous_clicks": 0.0,
+        "previous_impressions": 11.0,
+        "previous_position": 8.73
+      },
+      "queries_status": "pending",
+      "decision_status": "pending-content-and-SERP-review",
+      "next_action": "Inspect exact disclosed queries and live SERP, then compare body, query overlap, and internal discovery before retarget/merge. Do not rewrite based only on this aggregate."
+    },
+    {
+      "url": "https://baby.madabase.com/best/dr-browns-vs-baby-brezza-sterilizer-dryer",
+      "cohort": "page-one-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 45.0,
+        "current_position": 9.98,
+        "previous_clicks": 0.0,
+        "previous_impressions": 26.0,
+        "previous_position": 10.12
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 9.0,
+        "current_position": 8.44,
+        "previous_clicks": 0.0,
+        "previous_impressions": 15.0,
+        "previous_position": 8.0
+      },
+      "queries_status": "live-exact-page-read",
+      "decision_status": "query-reviewed-content-decision-pending",
+      "next_action": "Visible query rows recorded; preserve current intent pending proportional content/SERP review."
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/babybjorn-carrier-mini-3d-mesh",
+      "cohort": "page-two-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 44.0,
+        "current_position": 15.32,
+        "previous_clicks": 0.0,
+        "previous_impressions": 56.0,
+        "previous_position": 20.02
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 10.0,
+        "current_position": 13.0,
+        "previous_clicks": 0.0,
+        "previous_impressions": 19.0,
+        "previous_position": 13.32
+      },
+      "queries_status": "pending",
+      "decision_status": "pending-content-and-SERP-review",
+      "next_action": "Inspect exact disclosed queries and live SERP, then compare body, query overlap, and internal discovery before retarget/merge. Do not rewrite based only on this aggregate."
+    },
+    {
+      "url": "https://baby.madabase.com/guides/ergobaby-omni-breeze-cleaning-guide",
+      "cohort": "page-one-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 39.0,
+        "current_position": 8.03,
+        "previous_clicks": 0.0,
+        "previous_impressions": 24.0,
+        "previous_position": 10.83
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 13.0,
+        "current_position": 7.23,
+        "previous_clicks": 0.0,
+        "previous_impressions": 8.0,
+        "previous_position": 8.25
+      },
+      "queries_status": "live-exact-page-read",
+      "decision_status": "query-reviewed-content-decision-pending",
+      "next_action": "No disclosed query rows; preserve intent. Check the next complete window and page-level data before changing title."
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/nanit-pro-smart-baby-monitor",
+      "cohort": "page-two-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 38.0,
+        "current_position": 10.45,
+        "previous_clicks": 1.0,
+        "previous_impressions": 18.0,
+        "previous_position": 9.56
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 0.0,
+        "current_position": 0.0,
+        "previous_clicks": 0.0,
+        "previous_impressions": 13.0,
+        "previous_position": 12.54
+      },
+      "queries_status": "pending",
+      "decision_status": "pending-content-and-SERP-review",
+      "next_action": "Inspect exact disclosed queries and live SERP, then compare body, query overlap, and internal discovery before retarget/merge. Do not rewrite based only on this aggregate."
+    },
+    {
+      "url": "https://homeoffice.madabase.com/best/best-home-office-lighting-for-video-calls-in-small-rooms",
+      "cohort": "deep-rank-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 38.0,
+        "current_position": 29.76,
+        "previous_clicks": 0.0,
+        "previous_impressions": 77.0,
+        "previous_position": 50.06
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 8.0,
+        "current_position": 34.62,
+        "previous_clicks": 0.0,
+        "previous_impressions": 14.0,
+        "previous_position": 32.07
+      },
+      "queries_status": "pending",
+      "decision_status": "pending-content-and-SERP-review",
+      "next_action": "Inspect exact disclosed queries and live SERP, then compare body, query overlap, and internal discovery before retarget/merge. Do not rewrite based only on this aggregate."
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/fido-hardware-security-keys-buying-guide",
+      "cohort": "deep-rank-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 36.0,
+        "current_position": 49.72,
+        "previous_clicks": 0.0,
+        "previous_impressions": 17.0,
+        "previous_position": 59.06
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 3.0,
+        "current_position": 30.0,
+        "previous_clicks": 0.0,
+        "previous_impressions": 9.0,
+        "previous_position": 66.11
+      },
+      "queries_status": "pending",
+      "decision_status": "pending-content-and-SERP-review",
+      "next_action": "Inspect exact disclosed queries and live SERP, then compare body, query overlap, and internal discovery before retarget/merge. Do not rewrite based only on this aggregate."
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/video-call-setup-guide",
+      "cohort": "deep-rank-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 35.0,
+        "current_position": 65.14,
+        "previous_clicks": 0.0,
+        "previous_impressions": 54.0,
+        "previous_position": 65.78
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 1.0,
+        "current_position": 50.0,
+        "previous_clicks": 0.0,
+        "previous_impressions": 3.0,
+        "previous_position": 74.67
+      },
+      "queries_status": "pending",
+      "decision_status": "pending-content-and-SERP-review",
+      "next_action": "Inspect exact disclosed queries and live SERP, then compare body, query overlap, and internal discovery before retarget/merge. Do not rewrite based only on this aggregate."
+    },
+    {
+      "url": "https://baby.madabase.com/guides/ergobaby-omni-breeze-newborn-fit-checklist",
+      "cohort": "page-one-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 34.0,
+        "current_position": 8.44,
+        "previous_clicks": 0.0,
+        "previous_impressions": 32.0,
+        "previous_position": 9.19
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 6.0,
+        "current_position": 8.83,
+        "previous_clicks": 0.0,
+        "previous_impressions": 8.0,
+        "previous_position": 6.62
+      },
+      "queries_status": "live-exact-page-read",
+      "decision_status": "query-reviewed-content-decision-pending",
+      "next_action": "No disclosed query rows; preserve intent. Check the next complete window and page-level data before changing title."
+    },
+    {
+      "url": "https://baby.madabase.com/tools/diaper-usage-calculator",
+      "cohort": "deep-rank-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 34.0,
+        "current_position": 59.12,
+        "previous_clicks": 0.0,
+        "previous_impressions": 41.0,
+        "previous_position": 60.34
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 3.0,
+        "current_position": 57.67,
+        "previous_clicks": 0.0,
+        "previous_impressions": 10.0,
+        "previous_position": 63.4
+      },
+      "queries_status": "pending",
+      "decision_status": "pending-content-and-SERP-review",
+      "next_action": "Inspect exact disclosed queries and live SERP, then compare body, query overlap, and internal discovery before retarget/merge. Do not rewrite based only on this aggregate."
+    },
+    {
+      "url": "https://homeoffice.madabase.com/best/best-dual-monitor-docks-mac-windows",
+      "cohort": "deep-rank-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 34.0,
+        "current_position": 21.62,
+        "previous_clicks": 1.0,
+        "previous_impressions": 32.0,
+        "previous_position": 37.03
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 5.0,
+        "current_position": 11.0,
+        "previous_clicks": 0.0,
+        "previous_impressions": 9.0,
+        "previous_position": 13.44
+      },
+      "queries_status": "pending",
+      "decision_status": "pending-content-and-SERP-review",
+      "next_action": "Inspect exact disclosed queries and live SERP, then compare body, query overlap, and internal discovery before retarget/merge. Do not rewrite based only on this aggregate."
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/monitor-arm-clamp-reinforcement-guide",
+      "cohort": "page-one-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 33.0,
+        "current_position": 8.03,
+        "previous_clicks": 0.0,
+        "previous_impressions": 26.0,
+        "previous_position": 9.77
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 19.0,
+        "current_position": 7.05,
+        "previous_clicks": 0.0,
+        "previous_impressions": 5.0,
+        "previous_position": 9.6
+      },
+      "queries_status": "live-exact-page-read",
+      "decision_status": "query-reviewed-content-decision-pending",
+      "next_action": "No disclosed query rows; preserve intent. Check the next complete window and page-level data before changing title."
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/chicco-advanced-sterilizer-dryer",
+      "cohort": "page-one-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 32.0,
+        "current_position": 8.81,
+        "previous_clicks": 0.0,
+        "previous_impressions": 45.0,
+        "previous_position": 10.22
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 2.0,
+        "current_position": 9.5,
+        "previous_clicks": 0.0,
+        "previous_impressions": 6.0,
+        "previous_position": 6.5
+      },
+      "queries_status": "live-exact-page-read",
+      "decision_status": "source-evidence-cleaned-production-pending",
+      "next_action": "Remove unsupported relative review-count claim; retain capacity title and product intent. One disclosed query impression is insufficient to retarget."
+    },
+    {
+      "url": "https://homeoffice.madabase.com/",
+      "cohort": "deep-rank-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 32.0,
+        "current_position": 51.69,
+        "previous_clicks": 0.0,
+        "previous_impressions": 44.0,
+        "previous_position": 41.41
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 1.0,
+        "current_position": 9.0,
+        "previous_clicks": 0.0,
+        "previous_impressions": 2.0,
+        "previous_position": 32.0
+      },
+      "queries_status": "pending",
+      "decision_status": "pending-content-and-SERP-review",
+      "next_action": "Inspect exact disclosed queries and live SERP, then compare body, query overlap, and internal discovery before retarget/merge. Do not rewrite based only on this aggregate."
+    },
+    {
+      "url": "https://homeoffice.madabase.com/reviews/jabra-speak2-40-usb-speakerphone",
+      "cohort": "page-one-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 32.0,
+        "current_position": 9.53,
+        "previous_clicks": 0.0,
+        "previous_impressions": 17.0,
+        "previous_position": 8.94
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 13.0,
+        "current_position": 9.92,
+        "previous_clicks": 0.0,
+        "previous_impressions": 8.0,
+        "previous_position": 10.12
+      },
+      "queries_status": "live-exact-page-read",
+      "decision_status": "query-reviewed-content-decision-pending",
+      "next_action": "Visible query rows recorded; preserve current intent pending proportional content/SERP review."
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/dr-browns-all-in-one-sterilizer-dryer",
+      "cohort": "deep-rank-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 30.0,
+        "current_position": 25.57,
+        "previous_clicks": 0.0,
+        "previous_impressions": 73.0,
+        "previous_position": 24.3
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 6.0,
+        "current_position": 8.0,
+        "previous_clicks": 0.0,
+        "previous_impressions": 8.0,
+        "previous_position": 24.25
+      },
+      "queries_status": "pending",
+      "decision_status": "pending-content-and-SERP-review",
+      "next_action": "Inspect exact disclosed queries and live SERP, then compare body, query overlap, and internal discovery before retarget/merge. Do not rewrite based only on this aggregate."
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/momcozy-kleanpal-pro-baby-bottle-washer",
+      "cohort": "page-two-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 29.0,
+        "current_position": 10.48,
+        "previous_clicks": 0.0,
+        "previous_impressions": 39.0,
+        "previous_position": 10.49
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 12.0,
+        "current_position": 9.33,
+        "previous_clicks": 0.0,
+        "previous_impressions": 2.0,
+        "previous_position": 10.0
+      },
+      "queries_status": "pending",
+      "decision_status": "pending-content-and-SERP-review",
+      "next_action": "Inspect exact disclosed queries and live SERP, then compare body, query overlap, and internal discovery before retarget/merge. Do not rewrite based only on this aggregate."
+    },
+    {
+      "url": "https://baby.madabase.com/best/momcozy-purehug-vs-ergobaby-omni-breeze",
+      "cohort": "page-one-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 28.0,
+        "current_position": 7.57,
+        "previous_clicks": 1.0,
+        "previous_impressions": 35.0,
+        "previous_position": 9.09
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 8.0,
+        "current_position": 5.12,
+        "previous_clicks": 0.0,
+        "previous_impressions": 5.0,
+        "previous_position": 7.0
+      },
+      "queries_status": "live-exact-page-read",
+      "decision_status": "query-reviewed-content-decision-pending",
+      "next_action": "No disclosed query rows; preserve intent. Check the next complete window and page-level data before changing title."
+    },
+    {
+      "url": "https://homeoffice.madabase.com/reviews/logitech-litra-glow",
+      "cohort": "page-one-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 27.0,
+        "current_position": 7.59,
+        "previous_clicks": 0.0,
+        "previous_impressions": 22.0,
+        "previous_position": 23.05
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 8.0,
+        "current_position": 7.38,
+        "previous_clicks": 0.0,
+        "previous_impressions": 8.0,
+        "previous_position": 6.38
+      },
+      "queries_status": "live-exact-page-read",
+      "decision_status": "query-reviewed-content-decision-pending",
+      "next_action": "No disclosed query rows; preserve intent. Check the next complete window and page-level data before changing title."
+    },
+    {
+      "url": "https://baby.madabase.com/guides/baby-wipe-warmers-buying-guide",
+      "cohort": "page-two-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 26.0,
+        "current_position": 12.46,
+        "previous_clicks": 0.0,
+        "previous_impressions": 3.0,
+        "previous_position": 10.33
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 7.0,
+        "current_position": 9.43,
+        "previous_clicks": 0.0,
+        "previous_impressions": 4.0,
+        "previous_position": 7.75
+      },
+      "queries_status": "pending",
+      "decision_status": "pending-content-and-SERP-review",
+      "next_action": "Inspect exact disclosed queries and live SERP, then compare body, query overlap, and internal discovery before retarget/merge. Do not rewrite based only on this aggregate."
+    },
+    {
+      "url": "https://homeoffice.madabase.com/reviews/ergotron-hx-monitor-arm",
+      "cohort": "page-two-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 26.0,
+        "current_position": 13.27,
+        "previous_clicks": 0.0,
+        "previous_impressions": 56.0,
+        "previous_position": 20.59
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 1.0,
+        "current_position": 5.0,
+        "previous_clicks": 0.0,
+        "previous_impressions": 11.0,
+        "previous_position": 8.73
+      },
+      "queries_status": "pending",
+      "decision_status": "pending-content-and-SERP-review",
+      "next_action": "Inspect exact disclosed queries and live SERP, then compare body, query overlap, and internal discovery before retarget/merge. Do not rewrite based only on this aggregate."
+    },
+    {
+      "url": "https://homeoffice.madabase.com/reviews/ugreen-30768-usb-3-switch",
+      "cohort": "page-one-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 26.0,
+        "current_position": 6.54,
+        "previous_clicks": 0.0,
+        "previous_impressions": 36.0,
+        "previous_position": 7.64
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 3.0,
+        "current_position": 6.67,
+        "previous_clicks": 0.0,
+        "previous_impressions": 12.0,
+        "previous_position": 6.17
+      },
+      "queries_status": "live-exact-page-read",
+      "decision_status": "query-reviewed-content-decision-pending",
+      "next_action": "No disclosed query rows; preserve intent. Check the next complete window and page-level data before changing title."
+    },
+    {
+      "url": "https://homeoffice.madabase.com/reviews/uplift-v3-standing-desk",
+      "cohort": "page-one-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 26.0,
+        "current_position": 9.42,
+        "previous_clicks": 0.0,
+        "previous_impressions": 3.0,
+        "previous_position": 26.0
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 10.0,
+        "current_position": 10.1,
+        "previous_clicks": 0.0,
+        "previous_impressions": 11.0,
+        "previous_position": 8.36
+      },
+      "queries_status": "live-exact-page-read",
+      "decision_status": "query-reviewed-content-decision-pending",
+      "next_action": "No disclosed query rows; preserve intent. Check the next complete window and page-level data before changing title."
+    },
+    {
+      "url": "https://baby.madabase.com/guides/automatic-bottle-washers-vs-alternatives",
+      "cohort": "page-one-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 24.0,
+        "current_position": 3.83,
+        "previous_clicks": 0.0,
+        "previous_impressions": 0.0,
+        "previous_position": 0.0
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 21.0,
+        "current_position": 3.33,
+        "previous_clicks": 0.0,
+        "previous_impressions": 2.0,
+        "previous_position": 8.0
+      },
+      "queries_status": "live-exact-page-read",
+      "decision_status": "observe",
+      "next_action": "Seven disclosed impressions for manual-versus-automatic sanitizing comparison fit the existing comparison job. Preserve early cohort signal through its observation gate."
+    },
+    {
+      "url": "https://baby.madabase.com/guides/baby-bath-kneelers-buying-guide",
+      "cohort": "page-two-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 24.0,
+        "current_position": 12.12,
+        "previous_clicks": 0.0,
+        "previous_impressions": 8.0,
+        "previous_position": 11.25
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 3.0,
+        "current_position": 16.33,
+        "previous_clicks": 0.0,
+        "previous_impressions": 8.0,
+        "previous_position": 13.38
+      },
+      "queries_status": "pending",
+      "decision_status": "pending-content-and-SERP-review",
+      "next_action": "Inspect exact disclosed queries and live SERP, then compare body, query overlap, and internal discovery before retarget/merge. Do not rewrite based only on this aggregate."
+    },
+    {
+      "url": "https://baby.madabase.com/guides/nursery-glider-chairs-safety-and-skip-guide",
+      "cohort": "page-two-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 24.0,
+        "current_position": 11.92,
+        "previous_clicks": 0.0,
+        "previous_impressions": 7.0,
+        "previous_position": 6.57
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 12.0,
+        "current_position": 9.25,
+        "previous_clicks": 0.0,
+        "previous_impressions": 5.0,
+        "previous_position": 8.4
+      },
+      "queries_status": "pending",
+      "decision_status": "pending-content-and-SERP-review",
+      "next_action": "Inspect exact disclosed queries and live SERP, then compare body, query overlap, and internal discovery before retarget/merge. Do not rewrite based only on this aggregate."
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/under-desk-cpu-holders-buying-guide",
+      "cohort": "page-one-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 24.0,
+        "current_position": 8.96,
+        "previous_clicks": 0.0,
+        "previous_impressions": 1.0,
+        "previous_position": 27.0
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 5.0,
+        "current_position": 7.4,
+        "previous_clicks": 0.0,
+        "previous_impressions": 8.0,
+        "previous_position": 9.25
+      },
+      "queries_status": "live-exact-page-read",
+      "decision_status": "query-reviewed-content-decision-pending",
+      "next_action": "No disclosed query rows; preserve intent. Check the next complete window and page-level data before changing title."
+    },
+    {
+      "url": "https://baby.madabase.com/en-gb/guides/ergobaby-omni-breeze-positions-by-age",
+      "cohort": "page-one-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 23.0,
+        "current_position": 8.04,
+        "previous_clicks": 1.0,
+        "previous_impressions": 21.0,
+        "previous_position": 7.57
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 6.0,
+        "current_position": 8.0,
+        "previous_clicks": 0.0,
+        "previous_impressions": 4.0,
+        "previous_position": 8.0
+      },
+      "queries_status": "live-exact-page-read",
+      "decision_status": "query-reviewed-content-decision-pending",
+      "next_action": "No disclosed query rows; preserve intent. Check the next complete window and page-level data before changing title."
+    },
+    {
+      "url": "https://homeoffice.madabase.com/reviews/asus-zenscreen-mb16acv-portable-monitor",
+      "cohort": "page-one-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 23.0,
+        "current_position": 6.78,
+        "previous_clicks": 0.0,
+        "previous_impressions": 58.0,
+        "previous_position": 9.31
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 8.0,
+        "current_position": 6.75,
+        "previous_clicks": 0.0,
+        "previous_impressions": 9.0,
+        "previous_position": 5.67
+      },
+      "queries_status": "live-exact-page-read",
+      "decision_status": "query-reviewed-content-decision-pending",
+      "next_action": "No disclosed query rows; preserve intent. Check the next complete window and page-level data before changing title."
+    },
+    {
+      "url": "https://baby.madabase.com/guides/infant-bath-tubs-safety-and-skip-guide",
+      "cohort": "page-two-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 21.0,
+        "current_position": 14.81,
+        "previous_clicks": 0.0,
+        "previous_impressions": 4.0,
+        "previous_position": 32.0
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 11.0,
+        "current_position": 8.36,
+        "previous_clicks": 0.0,
+        "previous_impressions": 6.0,
+        "previous_position": 7.33
+      },
+      "queries_status": "pending",
+      "decision_status": "pending-content-and-SERP-review",
+      "next_action": "Inspect exact disclosed queries and live SERP, then compare body, query overlap, and internal discovery before retarget/merge. Do not rewrite based only on this aggregate."
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/baby-tula-lite-carrier",
+      "cohort": "page-two-zero-click",
+      "baseline_28d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 21.0,
+        "current_position": 17.33,
+        "previous_clicks": 0.0,
+        "previous_impressions": 29.0,
+        "previous_position": 24.31
+      },
+      "baseline_7d": {
+        "export_row_present": true,
+        "current_clicks": 0.0,
+        "current_impressions": 6.0,
+        "current_position": 17.0,
+        "previous_clicks": 0.0,
+        "previous_impressions": 9.0,
+        "previous_position": 9.89
+      },
+      "queries_status": "pending",
+      "decision_status": "pending-content-and-SERP-review",
+      "next_action": "Inspect exact disclosed queries and live SERP, then compare body, query overlap, and internal discovery before retarget/merge. Do not rewrite based only on this aggregate."
+    }
+  ]
+}

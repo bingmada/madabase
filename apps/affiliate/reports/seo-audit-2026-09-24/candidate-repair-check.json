@@ -88,6 +88,39 @@
     "pass": true
   },
   {
+    "url": "https://homeoffice.madabase.com/reviews/anker-675-usb-c-docking-station",
+    "status": 200,
+    "canonical": true,
+    "oneH1": true,
+    "indexable": true,
+    "repairPresent": true,
+    "qaGuardPresent": true,
+    "merchantRepair": true,
+    "pass": true
+  },
+  {
+    "url": "https://baby.madabase.com/reviews/grownsy-bottle-sterilizer-dryer",
+    "status": 200,
+    "canonical": true,
+    "oneH1": true,
+    "indexable": true,
+    "repairPresent": true,
+    "qaGuardPresent": true,
+    "merchantRepair": true,
+    "pass": true
+  },
+  {
+    "url": "https://baby.madabase.com/reviews/chicco-advanced-sterilizer-dryer",
+    "status": 200,
+    "canonical": true,
+    "oneH1": true,
+    "indexable": true,
+    "repairPresent": true,
+    "qaGuardPresent": true,
+    "merchantRepair": true,
+    "pass": true
+  },
+  {
     "url": "https://style.madabase.com/categories/styling",
     "status": 200,
     "canonical": true,

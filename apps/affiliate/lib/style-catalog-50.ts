@@ -61,7 +61,7 @@ function expandedProduct(input: ExpandedInput): Product {
     : `https://www.amazon.com/dp/${input.asin}?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl`;
 
   return {
-    updatedAt,
+    updatedAt: "September 24, 2026",
     ...product,
     image: notes.image,
     verdict: `${input.name} is worth considering when ${input.bestFor.toLowerCase()} is the real use case. Confirm the selected variation and practical fit before treating the motif as the deciding factor.`,
@@ -77,7 +77,6 @@ function expandedProduct(input: ExpandedInput): Product {
     specs: {
       ASIN: input.asin,
       Category: input.category,
-      "Rating context": `${input.rating} stars when checked`,
       "Selection note": "Confirm current color, size, seller, and included quantity on Amazon",
     },
     evidence: [...notes.checks],
@@ -89,7 +88,7 @@ function expandedProduct(input: ExpandedInput): Product {
       {
         name: "Amazon US product listing",
         url: `https://www.amazon.com/dp/${input.asin}`,
-        note: `Title, selected listing, availability, and rating context checked ${updatedAt}.`,
+        note: `Title, selected listing, and availability checked ${updatedAt}.`,
       },
     ],
     offers: [
@@ -197,7 +196,7 @@ export const styleCatalog50Products: Product[] = [
     brand: "Betsey Johnson",
     category: "jewelry",
     rating: 5,
-    summary: "Colorful cup-shaped drops with a recognizable food-and-drink motif and a small but useful review base.",
+    summary: "Colorful cup-shaped drops with a recognizable food-and-drink motif.",
     bestFor: "coffee runs, brunch, and playful everyday gifting",
   }),
   expandedProduct({
@@ -221,17 +220,17 @@ export const styleCatalog50Products: Product[] = [
     brand: "Betsey Johnson",
     category: "jewelry",
     rating: 4.7,
-    summary: "Small bee studs with far more review history than most of the newer novelty drops in this edit.",
+    summary: "Small bee studs for a compact animal motif without the movement of a long drop.",
     bestFor: "garden motifs with less movement and visual weight",
   }),
 
   expandedProduct({ site: "style", slug: "loungefly-princess-stained-glass-backpack", asin: "B0F3LHRYFZ", affiliateUrl: "https://www.amazon.com/dp/B0F3LHRYFZ?&linkCode=ll2&tag=bingmada-20&linkId=9782bc46801c4ff4e41cd72203975432&language=en_US&ref_=as_li_ss_tl", name: "Loungefly Disney Princess Stained Glass Mini Backpack", brand: "Loungefly", category: "bags", rating: 5, summary: "A pale pink Princess mini backpack built around a stained-glass storybook effect.", bestFor: "soft-color Disney outfits and Princess collectors" }),
-  expandedProduct({ site: "style", slug: "loungefly-princess-ice-cream-backpack", asin: "B0892PWWHH", affiliateUrl: "https://www.amazon.com/dp/B0892PWWHH?&linkCode=ll2&tag=bingmada-20&linkId=df19af177e07ec0fa25534f0d0bff34f&language=en_US&ref_=as_li_ss_tl", name: "Loungefly Disney Princess Ice Cream Mini Backpack", brand: "Loungefly", category: "bags", rating: 4.8, summary: "A dessert-colored Princess backpack with established review history and a deliberately sweet palette.", bestFor: "pastel outfits and playful park-day carry" }),
+  expandedProduct({ site: "style", slug: "loungefly-princess-ice-cream-backpack", asin: "B0892PWWHH", affiliateUrl: "https://www.amazon.com/dp/B0892PWWHH?&linkCode=ll2&tag=bingmada-20&linkId=df19af177e07ec0fa25534f0d0bff34f&language=en_US&ref_=as_li_ss_tl", name: "Loungefly Disney Princess Ice Cream Mini Backpack", brand: "Loungefly", category: "bags", rating: 4.8, summary: "A dessert-colored Princess backpack with a deliberately sweet palette.", bestFor: "pastel outfits and playful park-day carry" }),
   expandedProduct({ site: "style", slug: "loungefly-minnie-floral-rock-the-dots-backpack", asin: "B0D71N7PWN", affiliateUrl: "https://www.amazon.com/dp/B0D71N7PWN?&linkCode=ll2&tag=bingmada-20&linkId=5608607dbfbceb4e6195438991aab22e&language=en_US&ref_=as_li_ss_tl", name: "Loungefly Minnie Floral Rock The Dots Mini Backpack", brand: "Loungefly", category: "bags", rating: 4.8, summary: "A Minnie dots-and-floral design that softens the classic red-black palette.", bestFor: "floral Disney outfits with a familiar character cue" }),
   expandedProduct({ site: "style", slug: "loungefly-mickey-friends-canvas-backpack", asin: "B0D9L29KLC", affiliateUrl: "https://www.amazon.com/dp/B0D9L29KLC?&linkCode=ll2&tag=bingmada-20&linkId=573a8d2eba40e780d993a2626b5aff11&language=en_US&ref_=as_li_ss_tl", name: "Loungefly Mickey and Friends Canvas Mini Backpack", brand: "Loungefly", category: "bags", rating: 4.8, summary: "A canvas character bag for buyers who prefer a flatter, less glossy finish.", bestFor: "casual denim, sneakers, and mixed-character fans" }),
   expandedProduct({ site: "style", slug: "loungefly-tigger-mini-backpack", asin: "B0G4SK2QNH", affiliateUrl: "https://www.amazon.com/dp/B0G4SK2QNH?th=1&linkCode=ll2&tag=bingmada-20&linkId=87ec83b5e3f565593a496bf48e17e8fe&language=en_US&ref_=as_li_ss_tl", name: "Loungefly Disney Tigger Mini Backpack", brand: "Loungefly", category: "bags", rating: 4.8, summary: "A bright Tigger bag that supplies the orange statement color all by itself.", bestFor: "Winnie-the-Pooh fans and orange-accent outfits" }),
   expandedProduct({ site: "style", slug: "loungefly-eeyore-mini-backpack", asin: "B0BTN4587G", affiliateUrl: "https://www.amazon.com/dp/B0BTN4587G?th=1&linkCode=ll2&tag=bingmada-20&linkId=025dfae8d5047bd9292a421abb76e3da&language=en_US&ref_=as_li_ss_tl", name: "Loungefly Disney Eeyore Mini Backpack", brand: "Loungefly", category: "bags", rating: 4.8, summary: "A soft blue-gray Eeyore bag with a quieter palette than many character backpacks.", bestFor: "muted character outfits and Eeyore collectors" }),
-  expandedProduct({ site: "style", slug: "loungefly-disney-dogs-mini-backpack", asin: "B093QTGNPS", affiliateUrl: "https://www.amazon.com/dp/B093QTGNPS?&linkCode=ll2&tag=bingmada-20&linkId=43115d19292ceea567d9507c6c3aca4f&language=en_US&ref_=as_li_ss_tl", name: "Loungefly Disney Dogs Mini Backpack", brand: "Loungefly", category: "bags", rating: 4.9, summary: "A multi-character dog design with strong customer-rating context and built-in gift appeal.", bestFor: "Disney dog fans who cannot pick one character" }),
+  expandedProduct({ site: "style", slug: "loungefly-disney-dogs-mini-backpack", asin: "B093QTGNPS", affiliateUrl: "https://www.amazon.com/dp/B093QTGNPS?&linkCode=ll2&tag=bingmada-20&linkId=43115d19292ceea567d9507c6c3aca4f&language=en_US&ref_=as_li_ss_tl", name: "Loungefly Disney Dogs Mini Backpack", brand: "Loungefly", category: "bags", rating: 4.9, summary: "A multi-character dog design for Disney fans who want several favorite dogs on one bag.", bestFor: "Disney dog fans who cannot pick one character" }),
   expandedProduct({ site: "style", slug: "loungefly-mickey-minnie-donald-daisy-backpack", asin: "B0996W4NV4", affiliateUrl: "https://www.amazon.com/dp/B0996W4NV4?&linkCode=ll2&tag=bingmada-20&linkId=4252e09f87bc212245eea59c238b4871&language=en_US&ref_=as_li_ss_tl", name: "Loungefly Mickey Minnie Donald Daisy Mini Backpack", brand: "Loungefly", category: "bags", rating: 4.8, summary: "A four-character mini backpack for someone who wants the whole classic group rather than one face.", bestFor: "classic Disney ensembles and colorful casual outfits" }),
 
   expandedProduct({ site: "style", slug: "spiderweb-skeleton-hand-hair-clips", asin: "B0D5TSZMQ8", affiliateUrl: "https://www.amazon.com/dp/B0D5TSZMQ8?&linkCode=ll2&tag=bingmada-20&linkId=fe21b0b4f9fb8d39503065cfe55299df&language=en_US&ref_=as_li_ss_tl", name: "Spider Web Skeleton Hand Hair Claw Clip Set", brand: "Marketplace find", category: "hair", rating: 4.7, summary: "A three-piece black gothic set using spiderweb, skeleton-hand, and skull details.", bestFor: "Halloween, goth basics, and dark monochrome outfits" }),
@@ -248,10 +247,10 @@ export const styleCatalog50Products: Product[] = [
   expandedProduct({ site: "style", slug: "long-skinny-multipurpose-scarf", asin: "B0FY3KY2NY", affiliateUrl: "PENDING-B0FY3KY2NY", name: "Long Skinny Multipurpose Scarf", brand: "Marketplace find", category: "scarves", rating: 4.7, summary: "A 58-inch skinny scarf intended for neck, hair, purse, or belt styling.", bestFor: "one scarf used across several outfit zones" }),
   expandedProduct({ site: "style", slug: "twenty-four-fashion-scarf-set", asin: "B0GX67VZQ1", affiliateUrl: "PENDING-B0GX67VZQ1", name: "Twenty-Four Piece Fashion Scarf Set", brand: "Marketplace find", category: "scarves", rating: 4.5, summary: "A large multipack of small fashion scarves for bag handles, ponytails, and group gifting.", bestFor: "color variety, party favors, and low-stakes styling tests" }),
 
-  expandedProduct({ site: "style", slug: "wecibor-colorful-novelty-crew-socks", asin: "B0BQBS7V6M", affiliateUrl: "https://www.amazon.com/dp/B0BQBS7V6M?th=1&psc=1&linkCode=ll2&tag=bingmada-20&linkId=f9d8e759a39288c73c10f0a19e8065af&language=en_US&ref_=as_li_ss_tl", name: "WeciBor Colorful Novelty Crew Socks", brand: "WeciBor", category: "socks", rating: 4.7, summary: "A colorful cotton crew-sock assortment with thousands of ratings and broad gift appeal.", bestFor: "colorful everyday rotation and easy gifting" }),
+  expandedProduct({ site: "style", slug: "wecibor-colorful-novelty-crew-socks", asin: "B0BQBS7V6M", affiliateUrl: "https://www.amazon.com/dp/B0BQBS7V6M?th=1&psc=1&linkCode=ll2&tag=bingmada-20&linkId=f9d8e759a39288c73c10f0a19e8065af&language=en_US&ref_=as_li_ss_tl", name: "WeciBor Colorful Novelty Crew Socks", brand: "WeciBor", category: "socks", rating: 4.7, summary: "A colorful cotton crew-sock assortment for mixing patterns across everyday outfits.", bestFor: "colorful everyday rotation and easy gifting" }),
   expandedProduct({ site: "style", slug: "glcmxmart-food-animal-fun-socks", asin: "B0CGMCXNWM", affiliateUrl: "https://www.amazon.com/dp/B0CGMCXNWM?th=1&psc=1&linkCode=ll2&tag=bingmada-20&linkId=dc330791c16706d2e776e3f0405951b3&language=en_US&ref_=as_li_ss_tl", name: "GLCMXMART Food and Animal Fun Socks", brand: "GLCMXMART", category: "socks", rating: 4.7, summary: "Food-and-animal graphics in a multipack for someone who wants several jokes rather than one hero pair.", bestFor: "casual sneakers, gifts, and mixed novelty motifs" }),
   expandedProduct({ site: "style", slug: "moggei-printed-cotton-boot-socks", asin: "B0BK426C58", affiliateUrl: "PENDING-B0BK426C58", name: "MOGGEI Novelty Printed Cotton Boot Socks", brand: "MOGGEI", category: "socks", rating: 4.8, summary: "Printed cotton-blend boot socks with strong rating context and more leg coverage than ankle sets.", bestFor: "boots, cropped trousers, and cool-weather color" }),
-  expandedProduct({ site: "style", slug: "jeasona-cute-cat-socks", asin: "B075P7R3VN", affiliateUrl: "PENDING-B075P7R3VN", name: "Jeasona Cute Cat Socks", brand: "Jeasona", category: "socks", rating: 4.7, summary: "A long-running cat-sock set with tens of thousands of ratings and unmistakable gift positioning.", bestFor: "cat lovers and reliable low-cost gift ideas" }),
+  expandedProduct({ site: "style", slug: "jeasona-cute-cat-socks", asin: "B075P7R3VN", affiliateUrl: "PENDING-B075P7R3VN", name: "Jeasona Cute Cat Socks", brand: "Jeasona", category: "socks", rating: 4.7, summary: "A cat-sock set for buyers who want an animal motif in an everyday accessory.", bestFor: "cat lovers and reliable low-cost gift ideas" }),
   expandedProduct({ site: "style", slug: "jspupifip-fruit-ankle-socks", asin: "B0F436ZK17", affiliateUrl: "PENDING-B0F436ZK17", name: "Jspupifip Fruit Ankle Socks", brand: "Jspupifip", category: "socks", rating: 4.7, summary: "Nine pairs of fruit-themed ankle socks for warm-weather shoes and a smaller visible graphic.", bestFor: "summer sneakers and colorful multipack value" }),
 ];
 

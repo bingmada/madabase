@@ -1,7 +1,7 @@
 {
   "checkedAt": "2026-09-24",
   "method": "Amazon.com live product pages in the existing browser session; no affiliate clicks simulated",
-  "coverage": "Nine priority products plus the corrected HON destination, not all 306 catalog links",
+  "coverage": "Twelve live destination checks (including one wrong and one removed historical destination); not all 293 currently unique catalog ASINs.",
   "availabilityLimit": "The account delivery region was China. A cannot-ship notice on HON and CalDigit does not establish US unavailability; no delivery setting was changed.",
   "results": [
     {
@@ -81,6 +81,25 @@
       "identity": "verified",
       "observed": "2 pack, 9 oz",
       "availability": "In Stock"
+    },
+    {
+      "product": "Anker 675 USB-C Docking Station",
+      "asin": "B0BNZ4D72B",
+      "url": "https://www.amazon.com/dp/B0BNZ4D72B",
+      "identity": "verified",
+      "observed": "Anker 675 12-in-1 monitor stand/dock, model A8377",
+      "availability": "US stock not established; account delivery restriction for China",
+      "trackingId": "madaoffice-20"
+    },
+    {
+      "product": "GROWNSY Bottle Sterilizer and Dryer",
+      "asin": "B09HH7HSGV",
+      "url": "https://www.amazon.com/dp/B09HH7HSGV",
+      "identity": "verified",
+      "observed": "Grey selected, LS-BE916; current title holds five bottles, dimensions 8.1 x 7.5 x 14.94 inches",
+      "availability": "In Stock",
+      "trackingId": "madababy-20",
+      "versionNote": "Newer-version link is a different ASIN; not substituted."
     }
   ]
 }

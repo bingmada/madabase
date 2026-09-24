@@ -8,7 +8,7 @@ export const styleProducts: Product[] = [
     slug: "betsey-johnson-moon-star-drop-earrings",
     asin: "B072BN4Y67",
     seoTitle: "Betsey Johnson Moon & Star Earrings: Size, Materials & Styling",
-    updatedAt,
+    updatedAt: "September 24, 2026",
     name: "Betsey Johnson Moon and Star Drop Earrings",
     brand: "Betsey Johnson",
     category: "jewelry",
@@ -68,7 +68,7 @@ export const styleProducts: Product[] = [
       {
         name: "Amazon US product listing",
         url: "https://www.amazon.com/dp/B072BN4Y67",
-        note: "Current title, selected variation, measurements, materials, closure, availability, and customer-rating context checked July 5, 2026.",
+        note: "Current title, selected variation, measurements, materials, closure, availability checked July 5, 2026.",
       },
     ],
     offers: [
@@ -85,7 +85,7 @@ export const styleProducts: Product[] = [
     slug: "betsey-johnson-cupcake-mismatch-earrings",
     asin: "B0DFJS2G8Q",
     seoTitle: "Betsey Johnson Cupcake Mismatch Earrings: Fit & Styling Notes",
-    updatedAt,
+    updatedAt: "September 24, 2026",
     name: "Betsey Johnson Cupcake Mismatch Drop Earrings",
     brand: "Betsey Johnson",
     category: "jewelry",
@@ -102,7 +102,7 @@ export const styleProducts: Product[] = [
       { label: "Outfit versatility", value: 6 },
     ],
     pros: ["Clear cupcake-and-mixer mismatch", "Listed as 1.25–1.4 inches long", "Lever-back closure and nickel- and lead-free claim are stated on the listing"],
-    cons: ["Small review base compared with older Betsey Johnson designs", "Food motif is less versatile than floral or celestial jewelry", "Nickel- and lead-free does not guarantee compatibility with every sensitive ear"],
+    cons: ["Food motif is less versatile than floral or celestial jewelry", "Nickel- and lead-free does not guarantee compatibility with every sensitive ear"],
     specs: {
       ASIN: "B0DFJS2G8Q",
       Design: "Mismatched cupcake and stand mixer",
@@ -113,7 +113,7 @@ export const styleProducts: Product[] = [
     },
     evidence: [
       "Use the listed length rather than judging scale from the close-up product image",
-      "Check the current seller and return terms because this is a newer listing with fewer reviews",
+      "Check the current seller and return terms for the selected design",
       "Pair with a solid top, denim, apron-inspired detail, or one repeated accent color",
       "Stop wearing fashion jewelry if irritation appears even when a listing uses hypoallergenic language",
     ],
@@ -144,7 +144,7 @@ export const styleProducts: Product[] = [
       {
         name: "Amazon US product listing",
         url: "https://www.amazon.com/dp/B0DFJS2G8Q",
-        note: "Current title, measurements, materials, closure, availability, seller, and customer-rating context checked July 5, 2026.",
+        note: "Current title, measurements, materials, closure, availability, seller checked July 5, 2026.",
       },
     ],
     offers: [
@@ -161,7 +161,7 @@ export const styleProducts: Product[] = [
     slug: "loungefly-minnie-mouse-bow-mini-backpack",
     asin: "B06XH489LG",
     seoTitle: "Loungefly Minnie Mouse Bow Mini Backpack: Size & Fit Guide",
-    updatedAt,
+    updatedAt: "September 24, 2026",
     name: "Loungefly Disney Minnie Mouse Bow Mini Backpack",
     brand: "Loungefly",
     category: "bags",
@@ -220,7 +220,7 @@ export const styleProducts: Product[] = [
       {
         name: "Amazon US product listing",
         url: "https://www.amazon.com/dp/B06XH489LG",
-        note: "Current licensing claim, dimensions, materials, closure, pockets, care, seller, availability, and customer-rating context checked July 5, 2026.",
+        note: "Current licensing claim, dimensions, materials, closure, pockets, care, seller, availability checked July 5, 2026.",
       },
     ],
     offers: [
