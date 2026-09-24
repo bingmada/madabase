@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-09-24",
+  "source": "Google Search Console, exact URL page filter, Web, 28 days",
+  "page": "https://homeoffice.madabase.com/reviews/caldigit-ts4-thunderbolt-dock",
+  "period": {"start":"2026-08-25","end":"2026-09-21"},
+  "pageTotals": {"clicks":0,"impressions":201,"ctr":0,"displayedAveragePosition":10},
+  "visibleQueries": [
+    {"query":"caldigit ts4 official dual monitor macbook pro","clicks":0,"impressions":2},
+    {"query":"caldigit ts4 review","clicks":0,"impressions":1}
+  ],
+  "queryCoverageLimit": "GSC exposed only 2 query rows and 3 of the 201 page impressions. Do not infer the intent of the other 198 impressions.",
+  "existingTitle": "CalDigit TS4 Review: Mac Dual-Monitor Compatibility & 98W",
+  "decision": "Retain title and body. The observable queries match the current review and dual-monitor compatibility intent; the small visible-query sample does not justify a further title experiment. Exact Amazon identity was verified separately. Re-evaluate after production stability and a clean measurement window."
+}

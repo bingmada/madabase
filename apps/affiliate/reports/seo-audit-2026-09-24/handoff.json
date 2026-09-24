@@ -120,6 +120,9 @@
       "Verify all scoped hosts, repaired canonicals, old/new assets, 76 Costume product discovery, and QA exclusion in production",
       "Submit only exact changed canonicals after public verification",
       "Resume the exact 109 GSC inspection queue when external service permits; leave cohort gates open"
-    ]
+    ],
+    "finalAffiliateSourceCommit": "5fe0cdf",
+    "recoveryHandoff": "apps/affiliate/reports/seo-audit-2026-09-24/server-recovery-handoff.md",
+    "caldigitQueryReview": "Completed: visible intent matches existing title, only 3/201 impressions have query disclosure; retain current page"
   }
 }
