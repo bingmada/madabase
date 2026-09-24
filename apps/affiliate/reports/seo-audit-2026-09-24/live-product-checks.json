@@ -1,0 +1,86 @@
+{
+  "checkedAt": "2026-09-24",
+  "method": "Amazon.com live product pages in the existing browser session; no affiliate clicks simulated",
+  "coverage": "Nine priority products plus the corrected HON destination, not all 306 catalog links",
+  "availabilityLimit": "The account delivery region was China. A cannot-ship notice on HON and CalDigit does not establish US unavailability; no delivery setting was changed.",
+  "results": [
+    {
+      "product": "Branch Ergonomic Chair",
+      "asin": "B0GWGK4JFK",
+      "url": "https://www.amazon.com/dp/B0GWGK4JFK",
+      "identity": "page-not-found",
+      "action": "Block exact offer; explicitly label HON as a different alternative. Branch Pro search results were not substituted for the original chair."
+    },
+    {
+      "product": "HON Ignition 2.0, former link",
+      "asin": "B07GNDDNMW",
+      "url": "https://www.amazon.com/dp/B07GNDDNMW",
+      "identity": "wrong-product",
+      "observed": "SIHOO M18",
+      "action": "Replace incorrect mapping and short link."
+    },
+    {
+      "product": "HON Ignition 2.0, corrected link",
+      "asin": "B06Y3PGPR2",
+      "url": "https://www.amazon.com/dp/B06Y3PGPR2",
+      "identity": "verified",
+      "observed": "HON Ignition 2.0 Ergonomic Office Chair; black frame, Advanced Tilt, black",
+      "availability": "US stock not established; destination restriction shown for China",
+      "trackingId": "madaoffice-20"
+    },
+    {
+      "product": "CalDigit TS4",
+      "asin": "B09GK8LBWS",
+      "url": "https://www.amazon.com/dp/B09GK8LBWS",
+      "identity": "verified",
+      "availability": "US stock not established; destination restriction shown for China"
+    },
+    {
+      "product": "TP-Link AC600 USB Wi-Fi adapter",
+      "asin": "B07P5PRK7J",
+      "url": "https://www.amazon.com/dp/B07P5PRK7J",
+      "identity": "verified",
+      "observed": "TP-Link AC600, Wi-Fi 5 selected",
+      "availability": "In Stock"
+    },
+    {
+      "product": "ROJOSAN bathroom exhaust fan",
+      "asin": "B0FR4J5QQ3",
+      "url": "https://www.amazon.com/dp/B0FR4J5QQ3",
+      "identity": "verified",
+      "observed": "Bluetooth speaker, 230 CFM, 1 Sone, light; grey selected",
+      "availability": "Only 20 left in stock"
+    },
+    {
+      "product": "QUTOOL lumbar support pillow",
+      "asin": "B074C9F45S",
+      "url": "https://www.amazon.com/dp/B074C9F45S",
+      "identity": "verified",
+      "availability": "In Stock"
+    },
+    {
+      "product": "GYIIYUO printer stand",
+      "asin": "B0DBZ98D94",
+      "url": "https://www.amazon.com/dp/B0DBZ98D94",
+      "identity": "verified",
+      "observed": "2 Drawer File Cabinet 24 inch; light brown selected",
+      "availability": "In Stock"
+    },
+    {
+      "product": "AILUOQI childproof door knob covers",
+      "asin": "B0DK1KZ9RQ",
+      "url": "https://www.amazon.com/dp/B0DK1KZ9RQ",
+      "identity": "verified",
+      "observed": "1 pack selected",
+      "availability": "In Stock"
+    },
+    {
+      "product": "Dilovely silicone snack cups",
+      "asin": "B0B3M1Q183",
+      "url": "https://www.amazon.com/dp/B0B3M1Q183",
+      "identity": "verified",
+      "observed": "2 pack, 9 oz",
+      "availability": "In Stock"
+    }
+  ]
+}

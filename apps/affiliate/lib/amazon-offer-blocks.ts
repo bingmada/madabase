@@ -14,7 +14,7 @@ export type AmazonOfferBlock = {
 
 const amazonOfferBlocks = offerBlockConfig.blocks.map((block) => ({
   ...block,
-  pageUpdatedAt: offerBlockConfig.pageUpdatedAt,
+  pageUpdatedAt: block.pageUpdatedAt ?? offerBlockConfig.pageUpdatedAt,
 })) as AmazonOfferBlock[];
 
 function productAsin(product: Product) {

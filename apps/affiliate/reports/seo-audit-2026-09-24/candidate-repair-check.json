@@ -7,6 +7,7 @@
     "indexable": true,
     "repairPresent": true,
     "qaGuardPresent": true,
+    "merchantRepair": true,
     "pass": true
   },
   {
@@ -17,6 +18,7 @@
     "indexable": true,
     "repairPresent": true,
     "qaGuardPresent": true,
+    "merchantRepair": true,
     "pass": true
   },
   {
@@ -27,6 +29,7 @@
     "indexable": true,
     "repairPresent": true,
     "qaGuardPresent": true,
+    "merchantRepair": true,
     "pass": true
   },
   {
@@ -37,6 +40,7 @@
     "indexable": true,
     "repairPresent": true,
     "qaGuardPresent": true,
+    "merchantRepair": true,
     "pass": true
   },
   {
@@ -47,6 +51,7 @@
     "indexable": true,
     "repairPresent": true,
     "qaGuardPresent": true,
+    "merchantRepair": true,
     "pass": true
   },
   {
@@ -57,6 +62,7 @@
     "indexable": true,
     "repairPresent": true,
     "qaGuardPresent": true,
+    "merchantRepair": true,
     "pass": true
   },
   {
@@ -67,6 +73,7 @@
     "indexable": true,
     "repairPresent": true,
     "qaGuardPresent": true,
+    "merchantRepair": true,
     "pass": true
   },
   {
@@ -77,6 +84,7 @@
     "indexable": true,
     "repairPresent": true,
     "qaGuardPresent": true,
+    "merchantRepair": true,
     "pass": true
   },
   {
@@ -87,6 +95,7 @@
     "indexable": true,
     "repairPresent": true,
     "qaGuardPresent": true,
+    "merchantRepair": true,
     "pass": true
   }
 ]

@@ -20,6 +20,13 @@ for (const [site, path, text] of cases) {
   const canonical = `https://${host}${path}`;
   const response = await fetch(origin === "public" ? canonical : origin + path, { headers: { Host: host, "x-forwarded-host": host, "x-forwarded-proto": "https" }, signal: AbortSignal.timeout(35000) });
   const html = await response.text();
+  const hrefs = [...html.matchAll(/<a\b[^>]*href="([^"]+)"/g)].map(match => match[1].replaceAll("&amp;", "&"));
+  let merchantRepair = true;
+  if (path === "/reviews/branch-ergonomic-chair" || path === "/reviews/hon-ignition-2-0-chair") {
+    merchantRepair = hrefs.some(href => href.includes("/dp/B06Y3PGPR2") && href.includes("tag=madaoffice-20"))
+      && hrefs.every(href => !href.includes("B07GNDDNMW") && !href.includes("B0GWGK4JFK") && !href.includes("amzn.to/4eWkGpe"));
+    if (path === "/reviews/branch-ergonomic-chair") merchantRepair &&= html.includes("Different product") && html.includes("verified alternative");
+  }
   let qaGuardDelivered = false;
   for (const match of html.matchAll(/<script[^>]+src="([^\"]+)"/g)) {
     if (!match[1].includes("/app/layout-")) continue;
@@ -37,8 +44,9 @@ for (const [site, path, text] of cases) {
     indexable: !/<meta name="robots" content="[^"]*noindex/.test(html),
     repairPresent: html.includes(text),
     qaGuardPresent: qaGuardDelivered,
+    merchantRepair,
   };
-  row.pass = row.status === 200 && row.canonical && row.oneH1 && row.indexable && row.repairPresent && row.qaGuardPresent;
+  row.pass = row.status === 200 && row.canonical && row.oneH1 && row.indexable && row.repairPresent && row.qaGuardPresent && row.merchantRepair;
   results.push(row);
 }
 if (origin !== "public") {

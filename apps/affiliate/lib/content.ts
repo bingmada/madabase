@@ -720,6 +720,7 @@ export const products: Product[] = [
   {
     site: "homeoffice",
     slug: "branch-ergonomic-chair",
+    compareSlugs: ["hon-ignition-2-0-chair"],
     seoTitle: "Branch Ergonomic Chair Review: Warranty, Fit & Returns",
     updatedAt: "September 24, 2026",
     sources: [
@@ -753,15 +754,15 @@ export const products: Product[] = [
     ],
     pros: ["Useful adjustment set for a broad range of users", "Cleaner design than many budget task chairs", "Strong fit for under-$500 chair shoppers"],
     cons: ["Not as deeply adjustable as premium Steelcase or Herman Miller models", "Fit still depends heavily on user height and seat preference"],
-    specs: { ASIN: "B0GWGK4JFK", "Chair type": "Ergonomic task chair", "Use case": "All-day home office", Warranty: "Components: 7 years; fabric: 3 years; eligibility and exclusions apply", "Direct return": "Like-new in original packaging within 30 days of delivery; $40 per chair return shipping", "Link status": "Amazon affiliate link added" },
-    evidence: ["Confirm ASIN B0GWGK4JFK, the Branch color, arm style, seller authorization, and Amazon return policy", "Keep proof of purchase and register an authorized third-party purchase when Branch requires it", "Compare seat depth, lumbar adjustment, user height range, return shipping, and warranty exclusions", "Treat chair fit as personal even when the feature set looks right"],
+    specs: { ASIN: "B0GWGK4JFK", "Chair type": "Ergonomic task chair", "Use case": "All-day home office", Warranty: "Components: 7 years; fabric: 3 years; eligibility and exclusions apply", "Direct return": "Like-new in original packaging within 30 days of delivery; $40 per chair return shipping", "Link status": "Exact Amazon listing paused after September 24 page-not-found verification" },
+    evidence: ["The former ASIN B0GWGK4JFK returned Page Not Found on September 24; use the clearly named HON alternative or Branch official product source", "Keep proof of purchase and register an authorized third-party purchase when Branch requires it", "Compare seat depth, lumbar adjustment, user height range, return shipping, and warranty exclusions", "Treat chair fit as personal even when the feature set looks right"],
     alternatives: ["Compare HON Ignition 2.0 if you prefer a more traditional office-chair feel.", "Look at used Steelcase or Herman Miller options if return policy and local condition are easy to verify."],
     offers: [{ merchant: "Amazon US", url: "https://amzn.to/4eWkGpe", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." }],
   },
   {
     site: "homeoffice",
     slug: "hon-ignition-2-0-chair",
-    asin: "B07GNDDNMW",
+    asin: "B06Y3PGPR2",
     seoTitle: "HON Ignition 2.0 Review: Warranty, Fit & Controls",
     updatedAt: "September 24, 2026",
     evidenceMode: "official-spec",
@@ -769,7 +770,7 @@ export const products: Product[] = [
     sources: [
       { name: "HON Ignition 2.0 functionality guide", url: "https://www.hon.com/sites/hon.com/files/ignition-2-task-seating-functionality-guide.pdf", note: "Official control, adjustment, lumbar, and fit-function reference for the Ignition 2.0 family." },
       { name: "HON warranty", url: "https://www.hon.com/warranty", note: "Official warranty scope, component terms, exclusions, geography, and dealer-service path." },
-      { name: "Amazon listing B07GNDDNMW", url: "https://www.amazon.com/dp/B07GNDDNMW", note: "Exact linked marketplace configuration, seller, and current return terms." },
+      { name: "Amazon listing B06Y3PGPR2", url: "https://www.amazon.com/dp/B06Y3PGPR2", note: "Live identity verified September 24, 2026: HON Ignition 2.0, black frame, Advanced Tilt, black. The selected non-US delivery address prevents a US stock conclusion; check the actual delivery region and seller." },
     ],
     editorialSections: [
       { heading: "Lifetime coverage has shorter component terms", body: "HON lists lifetime coverage for eligible defects, with specific limits: seating controls, pneumatic cylinders and 4-Way Stretch Mesh are covered for 12 years, and seating textiles for five. Ordinary wear is excluded. Identify the exact material and component before assuming a lifetime term applies to it." },
@@ -794,10 +795,10 @@ export const products: Product[] = [
     ],
     pros: ["Official family documentation makes the adjustment roles clear", "Traditional task-chair design is easier to compare by fit than decorative features", "Useful value alternative to Branch when the exact controls are present"],
     cons: ["Ignition 2.0 configurations can differ by arms, lumbar, seat depth, and control", "Comfort remains personal and is not established by the family feature list", "Warranty support and returns depend on the purchase channel and seller"],
-    specs: { ASIN: "B07GNDDNMW", "Chair type": "Configurable ergonomic task chair", "Configuration rule": "Verify arms, lumbar, seat depth, and tilt on the exact listing", "Warranty path": "Confirm seller eligibility, proof, geography, component terms, and dealer service", "Evidence basis": "HON functionality guide, warranty policy, and exact Amazon listing" },
-    evidence: ["Confirm ASIN B07GNDDNMW and record every listed control before ordering", "Compare seat height, seat depth, lumbar position, arm range, tilt, and desk clearance", "Confirm the Amazon seller, return path, warranty eligibility, and packaging requirements", "Keep proof of purchase and the underside serial label for support"],
+    specs: { ASIN: "B06Y3PGPR2", "Chair type": "Configurable ergonomic task chair", "Configuration rule": "Verify arms, lumbar, seat depth, and tilt on the exact listing", "Warranty path": "Confirm seller eligibility, proof, geography, component terms, and dealer service", "Evidence basis": "HON functionality guide, warranty policy, and exact Amazon listing" },
+    evidence: ["Confirm ASIN B06Y3PGPR2 and record every listed control before ordering", "Compare seat height, seat depth, lumbar position, arm range, tilt, and desk clearance", "Confirm the Amazon seller, return path, warranty eligibility, and packaging requirements", "Keep proof of purchase and the underside serial label for support"],
     alternatives: ["Choose Branch if you want a cleaner home-office look.", "Skip both and shop premium used chairs if you need deeper back customization."],
-    offers: [{ merchant: "Amazon US", url: "https://amzn.to/4w3ELzP", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." }],
+    offers: [{ merchant: "Amazon US", url: "https://www.amazon.com/dp/B06Y3PGPR2?tag=madaoffice-20", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." }],
   },
   {
     site: "homeoffice",

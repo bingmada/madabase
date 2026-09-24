@@ -1,0 +1,125 @@
+{
+  "date": "2026-09-24",
+  "mode": "repair-in-progress",
+  "report": "audit.md",
+  "pageLedger": "page-ledger.json",
+  "previousTaskTitle": "诊断network网站GSC展现下跌",
+  "previousTaskId": "01a0221d-379d-7712-88e2-48f599821bb3",
+  "excluded": [
+    "test site",
+    "tools site",
+    "legacy tools/tests paths on root domain"
+  ],
+  "completed": {
+    "sitemapPagesChecked": 1401,
+    "publicHttp200": 1401,
+    "pageMetricsJoined": 1401,
+    "cohortActiveUniqueUrlsMeasured": 141,
+    "historicalCanonicalAnomaliesRechecked": 5,
+    "dueZeroUrlsLiveInspected": 6,
+    "oldRedirectsVerified": 97,
+    "manualActions": "No issues detected",
+    "securityIssues": "No issues detected"
+  },
+  "openWork": [
+    {
+      "type": "indexing-repair-review",
+      "count": 6,
+      "source": "live-dashboard-evidence.json",
+      "priority": 0,
+      "status": "Implemented and locally validated; production not switched"
+    },
+    {
+      "type": "due-live-inspection",
+      "count": 109,
+      "source": "remaining-live-inspections.json",
+      "blocker": "GSC Something went wrong; try again in a few hours",
+      "priority": 0
+    },
+    {
+      "type": "internal-discovery-review",
+      "count": 37,
+      "source": "internal-discovery-review.json",
+      "priority": 1,
+      "status": "Implemented and locally validated; production not switched"
+    },
+    {
+      "type": "query-and-intent-review",
+      "pages": [
+        "Branch Ergonomic Chair",
+        "HON Ignition 2.0",
+        "CalDigit TS4"
+      ],
+      "priority": 1
+    },
+    {
+      "type": "merchant-identity-and-availability",
+      "status": "306 link-format checks do not verify live stock or identity",
+      "priority": 1
+    },
+    {
+      "type": "attribution",
+      "status": "Implemented and locally validated; production not switched",
+      "priority": 1
+    }
+  ],
+  "scheduledGatesToRespect": [
+    "2026-09-25",
+    "2026-10-04",
+    "2026-10-07",
+    "2026-10-08",
+    "2026-10-11"
+  ],
+  "gateCompletion": "Incomplete GSC gates remain open; source repairs are not proof of Google recovery.",
+  "pageEdits": 0,
+  "deployments": 0,
+  "requestIndexingSubmissions": 0,
+  "existingStateFilesModified": true,
+  "repair": {
+    "updatedAt": "2026-09-24T19:55:59+08:00",
+    "status": "local-repairs-validated-production-not-switched-server-recovery-awaiting-owner",
+    "scope": [
+      "main",
+      "network",
+      "smarthome",
+      "homeoffice",
+      "baby",
+      "pet",
+      "style",
+      "costume",
+      "wellness"
+    ],
+    "excluded": [
+      "test",
+      "tools"
+    ],
+    "report": "apps/affiliate/reports/seo-audit-2026-09-24/fixes.md",
+    "pageLedger": "apps/affiliate/reports/seo-audit-2026-09-24/page-ledger.json",
+    "auditPages": 1401,
+    "redirectsVerified": 97,
+    "dueZeroInspected": 6,
+    "dueZeroRemaining": 109,
+    "inspectionBlocker": "GSC try again in a few hours; do not equate unavailable inspection with not indexed",
+    "sourceCommit": "4883d9cbcf623589b330c3bc18676458f09aee25",
+    "additionalMerchantRepair": "HON corrected to B06Y3PGPR2; Branch B0GWGK4JFK blocked after Page Not Found",
+    "productionSwitched": false,
+    "serverIncident": {
+      "temporaryUnit": "madabase-seo-candidate.service",
+      "temporaryPort": 3111,
+      "memoryLimitBytes": 367001600,
+      "observed": "Memory chart rose to about 1.5GB after candidate startup; terminal stopped responding; command assistant client unavailable; new SSH login timed out; public and origin HTTP timed out",
+      "cause": "Unconfirmed until journal inspected; candidate memory pressure suspected",
+      "stopConfirmed": false,
+      "rebootApproval": "Requested because same host also runs excluded test/tools",
+      "rollbackRecord": "/var/tmp/madabase-seo-20260924-rollback.json"
+    },
+    "nextActions": [
+      "Obtain owner recovery reboot approval or authenticated rescue-console session; restore existing services and stop candidate before new release work",
+      "Inspect memory/OOM logs; do not run another unconstrained parallel candidate",
+      "Deploy the final merchant-corrected Affiliate archive and 4883d9c Main/Wellness archives only after health validation",
+      "Verify all scoped hosts, repaired canonicals, old/new assets, 76 Costume product discovery, and QA exclusion in production",
+      "Submit only exact changed canonicals after public verification",
+      "Resume the exact 109 GSC inspection queue when external service permits; leave cohort gates open"
+    ]
+  }
+}

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-30T14:30:00+08:00",
+  "updatedAt": "2026-09-24T19:50:00+08:00",
   "pageUpdatedAt": "July 30, 2026",
   "blocks": [
     {
@@ -74,6 +74,16 @@
       "checkedAt": "2026-07-30",
       "observedListing": "Currently unavailable in the Amazon Creator picker",
       "reason": "The exact recorded sterilizer-dryer did not have a current US offer."
+    },
+    {
+      "site": "homeoffice",
+      "slug": "branch-ergonomic-chair",
+      "asin": "B0GWGK4JFK",
+      "status": "unavailable",
+      "checkedAt": "2026-09-24",
+      "pageUpdatedAt": "September 24, 2026",
+      "observedListing": "Amazon Page Not Found",
+      "reason": "The former exact Amazon product page could not be found. The Amazon purchase link is paused; any named alternative is a different chair, not the Branch Ergonomic Chair."
     }
   ]
 }
