@@ -295,7 +295,7 @@ export function isCostumeProductIndexable(product: CostumeCatalogProduct) {
   );
 }
 
-export async function listIndexableCostumeProducts(take = 30) {
+export async function listIndexableCostumeProducts(take = 30, category?: CostumeCatalogCategory) {
   if (!hasDatabaseUrl()) return [];
   try {
     const prisma = getAffiliatePrisma();
@@ -303,6 +303,7 @@ export async function listIndexableCostumeProducts(take = 30) {
       where: {
         merchant: { slug: "abracadabra-nyc", advertiserCid: "7889430" },
         softRetiredAt: null,
+        ...(category ? { categorySlug: category } : {}),
         availability: { not: "out of stock" },
         images: { some: { usageStatus: "authorized", permissionRef: { not: null } } },
         affiliateLinks: { some: { site: "costume", active: true, verifiedAt: { not: null } } },

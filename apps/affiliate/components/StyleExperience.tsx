@@ -22,6 +22,7 @@ export function StyleChrome({ site, children }: { site: SiteConfig; children: Re
             <Link href="/categories/hair">Hair</Link>
             <Link href="/categories/scarves">Scarves</Link>
             <Link href="/categories/socks">Socks</Link>
+            <Link href="/categories/styling">Styling guides</Link>
             <Link href="/#collections">The edit</Link>
           </nav>
           <details className="style-mobile-nav">
@@ -32,6 +33,7 @@ export function StyleChrome({ site, children }: { site: SiteConfig; children: Re
               <Link href="/categories/hair">Hair</Link>
               <Link href="/categories/scarves">Scarves</Link>
               <Link href="/categories/socks">Socks</Link>
+              <Link href="/categories/styling">Styling guides</Link>
               <Link href="/#collections">The edit</Link>
             </nav>
           </details>
@@ -265,6 +267,7 @@ export function StyleCategoryPage({
             <Link className="style-link" href="/categories/hair">Hair</Link>
             <Link className="style-link" href="/categories/scarves">Scarves</Link>
             <Link className="style-link" href="/categories/socks">Socks</Link>
+            <Link className="style-link" href="/categories/styling">Styling guides</Link>
           </nav>
         </div>
       </section>

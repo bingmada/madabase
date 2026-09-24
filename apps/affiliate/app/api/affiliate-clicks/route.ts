@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { hasQaParameters } from "../../../../../shared/analytics-traffic";
 import { findProduct } from "@/lib/content";
 import { getAffiliatePrisma, hasDatabaseUrl } from "@/lib/db";
 import type { MarketKey, SiteKey } from "@/lib/types";
@@ -28,6 +29,16 @@ function cleanText(value: string | undefined, maxLength: number) {
 }
 
 export async function POST(request: Request) {
+  const referrer = request.headers.get("referer");
+  if (referrer) {
+    try {
+      if (hasQaParameters(new URL(referrer).search)) {
+        return NextResponse.json({ ok: true, persisted: false, reason: "qa_visit" });
+      }
+    } catch {
+      // A missing or malformed referrer must not discard a real click.
+    }
+  }
   const payload = (await request.json().catch(() => ({}))) as ClickPayload;
   const site = cleanText(payload.site, 40) as SiteKey;
   const marketValue = cleanText(payload.market, 8);

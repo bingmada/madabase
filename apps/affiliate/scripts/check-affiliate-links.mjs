@@ -373,6 +373,9 @@ async function check(record) {
       ...record,
       runtimeUrl,
       expectedTag: requiredTag,
+      validationScope: "url-structure-and-attribution",
+      liveProductIdentity: "not_checked",
+      liveAvailability: "not_checked",
       ok: problems.length === 0,
       status: response.status,
       finalUrl: response.finalUrl,
@@ -429,18 +432,20 @@ async function main() {
     total: results.length,
     passed: results.length - failed.length,
     failed: failed.length,
+    validationScope: "url-structure-and-attribution",
+    liveProductChecks: { verified: 0, notChecked: results.length },
     note: "This automated check simulates runtime site-tag rewriting, validates short-link resolution, Amazon destination, the expected site tracking ID, and known ASINs. Live product availability and Associates exclusion status still require a signed-in Amazon/SiteStripe check.",
     results,
   };
 
   for (const result of results) {
-    const marker = result.ok ? "PASS" : "FAIL";
+    const marker = result.ok ? "FORMAT_PASS" : "FORMAT_FAIL";
     console.log(
       `${marker}\t${result.site ?? "unscoped"}\t${result.slug ?? "unscoped"}\t${result.actualAsin ?? "-"}\t${result.problems.join(",") || result.status}`,
     );
   }
   console.log(
-    `Checked ${report.total}: ${report.passed} passed, ${report.failed} failed.`,
+    `URL structure/tag checks: ${report.passed}/${report.total} passed, ${report.failed} failed. Live product identity and availability: 0 verified, ${report.total} not checked.`,
   );
 
   if (jsonOutput) {

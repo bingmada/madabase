@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://network.madabase.com/guides/usb-wifi-adapters-buying-guide",
+    "status": 200,
+    "canonical": true,
+    "oneH1": true,
+    "indexable": true,
+    "repairPresent": true,
+    "qaGuardPresent": true,
+    "pass": true
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-bathroom-exhaust-fans-buying-guide",
+    "status": 200,
+    "canonical": true,
+    "oneH1": true,
+    "indexable": true,
+    "repairPresent": true,
+    "qaGuardPresent": true,
+    "pass": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/office-lumbar-cushions-buying-guide",
+    "status": 200,
+    "canonical": true,
+    "oneH1": true,
+    "indexable": true,
+    "repairPresent": true,
+    "qaGuardPresent": true,
+    "pass": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/office-printer-stands-buying-guide",
+    "status": 200,
+    "canonical": true,
+    "oneH1": true,
+    "indexable": true,
+    "repairPresent": true,
+    "qaGuardPresent": true,
+    "pass": true
+  },
+  {
+    "url": "https://baby.madabase.com/guides/childproof-door-knob-covers-buying-guide",
+    "status": 200,
+    "canonical": true,
+    "oneH1": true,
+    "indexable": true,
+    "repairPresent": true,
+    "qaGuardPresent": true,
+    "pass": true
+  },
+  {
+    "url": "https://baby.madabase.com/guides/toddler-snack-containers-buying-guide",
+    "status": 200,
+    "canonical": true,
+    "oneH1": true,
+    "indexable": true,
+    "repairPresent": true,
+    "qaGuardPresent": true,
+    "pass": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/reviews/branch-ergonomic-chair",
+    "status": 200,
+    "canonical": true,
+    "oneH1": true,
+    "indexable": true,
+    "repairPresent": true,
+    "qaGuardPresent": true,
+    "pass": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/reviews/hon-ignition-2-0-chair",
+    "status": 200,
+    "canonical": true,
+    "oneH1": true,
+    "indexable": true,
+    "repairPresent": true,
+    "qaGuardPresent": true,
+    "pass": true
+  },
+  {
+    "url": "https://style.madabase.com/categories/styling",
+    "status": 200,
+    "canonical": true,
+    "oneH1": true,
+    "indexable": true,
+    "repairPresent": true,
+    "qaGuardPresent": true,
+    "pass": true
+  }
+]

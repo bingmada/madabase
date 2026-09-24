@@ -612,7 +612,7 @@ if (
 }
 
 const claritySource = fs.readFileSync(path.join(workspaceDir, "components", "ClarityAnalytics.tsx"), "utf8");
-const clarityQaGuardIndex = claritySource.indexOf('q.has("viewport-baseline")||q.has("madabase-qa")');
+const clarityQaGuardIndex = claritySource.indexOf('${qaAnalyticsGuard}');
 const clarityBootstrapIndex = claritySource.indexOf("c[a]=c[a]||function()");
 if (clarityQaGuardIndex === -1 || clarityBootstrapIndex === -1 || clarityQaGuardIndex > clarityBootstrapIndex) {
   errors.push("Clarity must suppress explicit viewport-baseline and madabase-qa sessions before analytics bootstrap");

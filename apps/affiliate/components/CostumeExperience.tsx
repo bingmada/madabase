@@ -191,7 +191,8 @@ export async function CostumeCategoryPage({
 }) {
   const category = site.categories.find((item) => item.slug === slug);
   const guides = costumeGuides.filter((guide) => guide.category === slug);
-  const commerceProduct = (await listIndexableCostumeProducts(100)).find((product) =>
+  const reviewedProducts = await listIndexableCostumeProducts(100, slug);
+  const commerceProduct = reviewedProducts.find((product) =>
     product.categorySlug === slug
     && product.activeLink
     && product.authorizedImage
@@ -227,6 +228,21 @@ export async function CostumeCategoryPage({
             </aside>
           ) : null}
           <p className="mt-4 max-w-3xl text-lg leading-8 text-[var(--muted)]">{category.description}</p>
+          {reviewedProducts.length ? (
+            <section className="mt-8" aria-label="Reviewed products in this category" data-reviewed-product-discovery="true">
+              <h2 className="text-2xl font-bold">Buying notes for {category.name.toLowerCase()}</h2>
+              <p className="mt-3 max-w-3xl leading-7 text-[var(--muted)]">Read the fit, included-piece, setup, and return checks for these products before browsing the wider catalog.</p>
+              <ul className="mt-5 grid gap-3 sm:grid-cols-2">
+                {reviewedProducts.map((product) => (
+                  <li key={product.slug}>
+                    <Link className="block rounded-md border border-[var(--border)] p-4 font-semibold hover:underline" href={`/products/${product.slug}`}>
+                      {product.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : null}
           {slug === "props-animatronics" ? (
             <aside className="mt-6 flex flex-col gap-4 rounded-md border border-[#d99162] bg-[#fff8f2] p-5 sm:flex-row sm:items-center sm:justify-between">
               <div className="max-w-2xl">

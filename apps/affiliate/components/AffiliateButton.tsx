@@ -4,6 +4,7 @@ import { ExternalLink } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { useAmazonCreatorsListing } from "./AmazonCreatorsListing";
 import { trackClarityAffiliateClick } from "./ClarityAnalytics";
+import { isQaVisit } from "../../../shared/analytics-traffic";
 import type { AffiliateOffer, AmazonMarketKey, MarketKey, Product, SiteKey } from "@/lib/types";
 
 type AffiliateProductIdentity = Pick<Product, "slug" | "name" | "amazonTitle" | "asin" | "specs">;
@@ -74,6 +75,7 @@ export function AffiliateButton({
   }, [firstViewport]);
 
   function trackClick(clickPosition = position) {
+    if (isQaVisit()) return;
     const eventId =
       typeof crypto !== "undefined" && "randomUUID" in crypto
         ? crypto.randomUUID()

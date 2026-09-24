@@ -1,4 +1,5 @@
 import type { Guide, Product, Roundup, SiteKey, Tool } from "./types";
+import { applyIndexingRepair } from "./indexing-repair-content";
 import {
   isConsolidatedFamilyHub,
   isConsolidatedSupportGuide,
@@ -720,7 +721,7 @@ export const products: Product[] = [
     site: "homeoffice",
     slug: "branch-ergonomic-chair",
     seoTitle: "Branch Ergonomic Chair Review: Warranty, Fit & Returns",
-    updatedAt: "September 11, 2026",
+    updatedAt: "September 24, 2026",
     sources: [
       { name: "Branch Ergonomic Chair", url: "https://www.branchfurniture.com/products/ergonomic-chair", note: "Official adjustment points, user range, certification, capacity, and current product warranty." },
       { name: "Branch warranty policy", url: "https://www.branchfurniture.com/pages/warranty", note: "Official coverage window, purchase-channel, proof-of-purchase, registration, geography, transfer, and exclusion terms." },
@@ -729,15 +730,17 @@ export const products: Product[] = [
     editorialSections: [
       { heading: "Fit before features", body: "Branch lists eight adjustment points and a suggested 5'2\"–6'2\" user range, but body proportions vary. Set seat depth so the front edge does not press behind the knees and keep shoulders relaxed at the armrests." },
       { heading: "What the mid-range price buys", body: "The chair adds adjustable seat depth, lumbar support, tilt, height, tension, and removable 3D arms without entering premium contract-chair pricing. That is meaningful only if those ranges fit the user." },
-      { heading: "The seven-year warranty still has purchase-channel rules", body: "The Ergonomic Chair product page lists a seven-year warranty. Branch's policy says direct purchases do not need activation, while purchases from an authorized third party such as Amazon need registration or proof of purchase. Coverage is for the original customer, is not transferable, and is limited geographically, so keep the order record and confirm the seller is authorized." },
-      { heading: "A 30-day return is not a free chair trial", body: "Branch's direct-purchase policy requires a like-new product in its original packaging within 30 days and currently deducts a flat chair return-shipping fee. An Amazon purchase follows the live listing's seller and return terms instead. Check the applicable path before assembly and keep every insert until fit is proven." },
+      { heading: "Seven years for chair components, three for fabric", body: "Branch's current policy lists seven years for Ergonomic Chair parts and components and three years for fabric. Normal wear is excluded. Branch's policy says direct purchases do not need activation, while purchases from an authorized third party such as Amazon need registration or proof of purchase. Coverage is for the original customer in the continental United States or Canada and is not transferable, so keep the order record and confirm the seller is authorized." },
+      { heading: "A 30-day return is not a free chair trial", body: "Branch's direct-purchase policy requires a like-new product in its original packaging within 30 days and currently deducts $40 per chair for return shipping. An Amazon purchase follows the live listing's seller and return terms instead. Check the applicable path before assembly and keep every insert until fit is proven." },
     ],
+    evidenceMode: "official-spec",
+    researchNote: "Research-based fit and purchase-policy guide using Branch documentation; no hands-on comfort or durability testing is claimed.",
     asin: "B0GWGK4JFK",
     name: "Branch Ergonomic Chair",
     brand: "Branch",
     category: "ergonomics",
     image: "/images/affiliate/homeoffice-branch-ergonomic-chair.webp",
-    summary: "A mid-range ergonomic chair with eight adjustment points and a listed seven-year warranty, best evaluated with its fit range, purchase channel, proof requirements, and return cost visible before checkout.",
+    summary: "Branch lists seven years for Ergonomic Chair components and three for fabric. Compare fit, authorized-seller proof and the $40 direct-purchase chair return fee before ordering.",
     verdict: "The Branch Ergonomic Chair is a balanced middle option for people leaving a dining chair behind. It has enough adjustment to address common home-office setup frustrations without jumping into premium-chair pricing.",
     whyItMatters: "Chair fit is personal, but most home workers need the same basics first: seat height that lets feet rest flat, arms that do not force shoulders upward, and back support that stays useful after lunch.",
     bestFor: "Remote workers upgrading from a dining chair",
@@ -750,7 +753,7 @@ export const products: Product[] = [
     ],
     pros: ["Useful adjustment set for a broad range of users", "Cleaner design than many budget task chairs", "Strong fit for under-$500 chair shoppers"],
     cons: ["Not as deeply adjustable as premium Steelcase or Herman Miller models", "Fit still depends heavily on user height and seat preference"],
-    specs: { ASIN: "B0GWGK4JFK", "Chair type": "Ergonomic task chair", "Use case": "All-day home office", Warranty: "Seven years on the current product page; seller, proof, geography, and exclusions apply", "Direct return": "Like-new in original packaging within 30 days; verify current chair return fee", "Link status": "Amazon affiliate link added" },
+    specs: { ASIN: "B0GWGK4JFK", "Chair type": "Ergonomic task chair", "Use case": "All-day home office", Warranty: "Components: 7 years; fabric: 3 years; eligibility and exclusions apply", "Direct return": "Like-new in original packaging within 30 days of delivery; $40 per chair return shipping", "Link status": "Amazon affiliate link added" },
     evidence: ["Confirm ASIN B0GWGK4JFK, the Branch color, arm style, seller authorization, and Amazon return policy", "Keep proof of purchase and register an authorized third-party purchase when Branch requires it", "Compare seat depth, lumbar adjustment, user height range, return shipping, and warranty exclusions", "Treat chair fit as personal even when the feature set looks right"],
     alternatives: ["Compare HON Ignition 2.0 if you prefer a more traditional office-chair feel.", "Look at used Steelcase or Herman Miller options if return policy and local condition are easy to verify."],
     offers: [{ merchant: "Amazon US", url: "https://amzn.to/4eWkGpe", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." }],
@@ -760,7 +763,7 @@ export const products: Product[] = [
     slug: "hon-ignition-2-0-chair",
     asin: "B07GNDDNMW",
     seoTitle: "HON Ignition 2.0 Review: Warranty, Fit & Controls",
-    updatedAt: "September 11, 2026",
+    updatedAt: "September 24, 2026",
     evidenceMode: "official-spec",
     researchNote: "Research-based configuration and fit guide using HON documentation and the exact Amazon ASIN; this is not a hands-on comfort or durability test.",
     sources: [
@@ -769,6 +772,7 @@ export const products: Product[] = [
       { name: "Amazon listing B07GNDDNMW", url: "https://www.amazon.com/dp/B07GNDDNMW", note: "Exact linked marketplace configuration, seller, and current return terms." },
     ],
     editorialSections: [
+      { heading: "Lifetime coverage has shorter component terms", body: "HON lists lifetime coverage for eligible defects, with specific limits: seating controls, pneumatic cylinders and 4-Way Stretch Mesh are covered for 12 years, and seating textiles for five. Ordinary wear is excluded. Identify the exact material and component before assuming a lifetime term applies to it." },
       { heading: "This is a configuration guide, not a comfort test", body: "HON's Ignition 2.0 family includes multiple control and option combinations. The official functionality guide explains possible adjustments, while the linked Amazon ASIN identifies the version being sold. Confirm that the selected listing includes the seat-depth, arm, lumbar, and tilt controls required before comparing price." },
       { heading: "Fit the seat before judging the back", body: "Set height so the feet are supported, then adjust seat depth so the front edge does not press behind the knees. Tune lumbar and arms only after the seat is stable; otherwise extra controls can mask a poor base fit." },
       { heading: "Keep the seller and serial label visible", body: "HON routes warranty service through its dealer path and uses the product label to identify model and production details. Confirm the Amazon seller's warranty path, keep proof of purchase, and do not remove the underside serial label." },
@@ -777,7 +781,7 @@ export const products: Product[] = [
     brand: "HON",
     category: "ergonomics",
     image: "/images/affiliate/homeoffice-hon-ignition-2-0-chair.webp",
-    summary: "A research-based HON Ignition 2.0 configuration guide covering seat, arm, lumbar, tilt, seller, return, and warranty checks before buying ASIN B07GNDDNMW.",
+    summary: "HON Ignition 2.0 warranty and fit guide: eligible lifetime coverage, 12-year controls and cylinders, five-year seating textiles, plus exact seller and configuration checks.",
     verdict: "HON Ignition 2.0 is a practical candidate when adjustment matters more than decorative styling, but the family name alone is not enough. Choose it only after the exact listing proves it includes the controls your body and desk require.",
     whyItMatters: "A chair can look ergonomic and still miss the basics. The buying question is whether the exact configuration gives you the arm, lumbar, and seat controls your body actually needs.",
     bestFor: "Value-focused buyers who still want adjustable arms and lumbar support",
@@ -2392,6 +2396,10 @@ guides.push(...broadProductPilotGuides);
 guides.push(...broadProductPilot2Guides);
 guides.push(...broadProductPilot3Guides);
 guides.push(...breadthDraft120PlusGuides);
+
+for (let index = 0; index < guides.length; index += 1) {
+  guides[index] = applyIndexingRepair(guides[index]);
+}
 
 const includeDrafts = process.env.AFFILIATE_INCLUDE_DRAFTS === "1";
 
