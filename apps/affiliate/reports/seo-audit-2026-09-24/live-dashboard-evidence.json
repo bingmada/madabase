@@ -1,0 +1,124 @@
+{
+  "checkedAt": "2026-09-24",
+  "scope": "read-only SEO diagnosis; exclude test/tools and legacy root paths",
+  "manualActions": "No issues detected",
+  "securityIssues": "No issues detected",
+  "gscInspectionBlocker": {
+    "url": "https://smarthome.madabase.com/guides/matter-smart-bulbs-vs-alternatives",
+    "message": "Something went wrong. If the issue persists, try again in a few hours",
+    "dueZeroUrls": 115,
+    "completed": 4,
+    "remaining": 111
+  },
+  "inspections": [
+    {
+      "url": "https://network.madabase.com/guides/point-to-point-wireless-bridges-vs-alternatives",
+      "status": "indexed"
+    },
+    {
+      "url": "https://network.madabase.com/guides/moca-network-adapters-vs-alternatives",
+      "status": "indexed"
+    },
+    {
+      "url": "https://network.madabase.com/guides/ten-gigabit-ethernet-switches-vs-alternatives",
+      "status": "indexed"
+    },
+    {
+      "url": "https://network.madabase.com/guides/usb-wifi-adapters-buying-guide",
+      "status": "crawled-not-indexed",
+      "lastCrawl": "2026-08-09",
+      "userCanonical": "self",
+      "googleCanonical": "Inspected URL",
+      "sitemap": "Temporary processing error"
+    },
+    {
+      "url": "https://smarthome.madabase.com/guides/smart-bathroom-exhaust-fans-buying-guide",
+      "status": "duplicate-without-user-selected-canonical",
+      "lastCrawl": "2026-08-17",
+      "googleCanonical": "https://smarthome.madabase.com/categories/automation",
+      "userCanonical": "None in Google stored crawl"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/office-lumbar-cushions-buying-guide",
+      "status": "duplicate-without-user-selected-canonical",
+      "lastCrawl": "2026-08-19",
+      "googleCanonical": "https://homeoffice.madabase.com/guides/four-k-webcams-buying-guide",
+      "userCanonical": "None in Google stored crawl"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/office-printer-stands-buying-guide",
+      "status": "duplicate-without-user-selected-canonical",
+      "lastCrawl": "2026-08-19",
+      "googleCanonical": "https://homeoffice.madabase.com/guides/four-k-webcams-buying-guide",
+      "userCanonical": "None in Google stored crawl",
+      "sitemap": "Temporary processing error"
+    },
+    {
+      "url": "https://baby.madabase.com/guides/childproof-door-knob-covers-buying-guide",
+      "status": "duplicate-without-user-selected-canonical",
+      "lastCrawl": "2026-08-16",
+      "googleCanonical": "https://baby.madabase.com/reviews/babybjorn-carrier-mini-3d-mesh",
+      "userCanonical": "None in Google stored crawl"
+    },
+    {
+      "url": "https://baby.madabase.com/guides/toddler-snack-containers-buying-guide",
+      "status": "duplicate-without-user-selected-canonical",
+      "lastCrawl": "2026-08-15",
+      "googleCanonical": "https://baby.madabase.com/reviews/babybjorn-carrier-mini-3d-mesh",
+      "userCanonical": "None in Google stored crawl"
+    }
+  ],
+  "amazon": {
+    "window": "2026-08-25 to 2026-09-23",
+    "clicks": 39,
+    "orderedItems": 6,
+    "conversion": "15.38%",
+    "orderedRevenueUSD": 309.93,
+    "commissionsUSD": 12.04,
+    "bountiesUSD": 3,
+    "summaryUSD": 15.04,
+    "trackingIdReport": "All metrics grouped in Other; site-level attribution unavailable",
+    "status": "refreshed after session timeout"
+  },
+  "bing": {
+    "window": "2026-09-17 to 2026-09-23",
+    "domainClicks": 3,
+    "domainImpressions": 356,
+    "scopeCaveat": "domain impressions include excluded legacy URLs; do not treat as active-site total",
+    "activeClicks": [
+      {
+        "url": "https://network.madabase.com/reviews/monoprice-slimrun-cat6a-ethernet-patch-cable",
+        "clicks": 2,
+        "impressions": 5
+      },
+      {
+        "url": "https://smarthome.madabase.com/best/aqara-u400-vs-u100",
+        "clicks": 1,
+        "impressions": 2
+      }
+    ]
+  },
+  "clarity": {
+    "window": "Last 3 days at read time",
+    "sessions": 12,
+    "excludedBotSessions": 104,
+    "affiliateClickSessions": 1,
+    "activeTimeSeconds": 42,
+    "scopeCaveat": "unfiltered aggregate includes at least two utm_source=qa verification page URLs; cannot interpret as genuine organic conversion rate",
+    "performance": "no data",
+    "jsErrors": 0
+  },
+  "cj": {
+    "status": "not-refreshed; existing sign-in page",
+    "revenue": null
+  },
+  "gscDomainIndexing": {
+    "dataDate": "2026-09-21",
+    "indexedApprox": 1520,
+    "crawledNotIndexed": 72,
+    "discoveredNotIndexed": 133,
+    "serverErrorExamples": 3,
+    "serverErrorExamplesAllExcluded": true,
+    "caveat": "domain aggregation includes test/tools/legacy; not active-only"
+  }
+}

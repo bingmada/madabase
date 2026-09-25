@@ -32,3 +32,19 @@ export function findAmazonOfferBlock(product: Product) {
       block.asin === asin,
   );
 }
+
+export function findAmazonFamilyOfferBlock(site: SiteKey, familySlug: string, asin: string) {
+  return amazonOfferBlocks.find((block) =>
+    block.site === site && block.slug === `family-${familySlug}` && block.asin === asin,
+  );
+}
+
+export function isBlockedAmazonSource(site: SiteKey, url: string) {
+  try {
+    const parsed = new URL(url);
+    if (!/(^|\.)amazon\.[a-z.]+$/.test(parsed.hostname)) return false;
+    return amazonOfferBlocks.some((block) => block.site === site && parsed.pathname.toUpperCase().includes(block.asin));
+  } catch {
+    return false;
+  }
+}

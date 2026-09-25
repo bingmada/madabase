@@ -1,0 +1,778 @@
+[
+  {
+    "url": "https://network.madabase.com/guides/indoor-wifi-access-points-buying-guide",
+    "expected": "https://network.madabase.com/guides/indoor-wifi-access-points-vs-alternatives",
+    "status": 308,
+    "location": "https://network.madabase.com/guides/indoor-wifi-access-points-vs-alternatives",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://network.madabase.com/guides/indoor-wifi-access-points-compatibility-and-fit-guide",
+    "expected": "https://network.madabase.com/guides/indoor-wifi-access-points-vs-alternatives",
+    "status": 308,
+    "location": "https://network.madabase.com/guides/indoor-wifi-access-points-vs-alternatives",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://network.madabase.com/guides/indoor-wifi-access-points-ownership-cost-and-maintenance",
+    "expected": "https://network.madabase.com/guides/indoor-wifi-access-points-vs-alternatives",
+    "status": 308,
+    "location": "https://network.madabase.com/guides/indoor-wifi-access-points-vs-alternatives",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://network.madabase.com/guides/outdoor-wifi-access-points-buying-guide",
+    "expected": "https://network.madabase.com/guides/outdoor-wifi-access-points-vs-alternatives",
+    "status": 308,
+    "location": "https://network.madabase.com/guides/outdoor-wifi-access-points-vs-alternatives",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://network.madabase.com/guides/outdoor-wifi-access-points-compatibility-and-fit-guide",
+    "expected": "https://network.madabase.com/guides/outdoor-wifi-access-points-vs-alternatives",
+    "status": 308,
+    "location": "https://network.madabase.com/guides/outdoor-wifi-access-points-vs-alternatives",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://network.madabase.com/guides/outdoor-wifi-access-points-ownership-cost-and-maintenance",
+    "expected": "https://network.madabase.com/guides/outdoor-wifi-access-points-vs-alternatives",
+    "status": 308,
+    "location": "https://network.madabase.com/guides/outdoor-wifi-access-points-vs-alternatives",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://network.madabase.com/guides/point-to-point-wireless-bridges-buying-guide",
+    "expected": "https://network.madabase.com/guides/point-to-point-wireless-bridges-vs-alternatives",
+    "status": 308,
+    "pass": true,
+    "verification_status": "verified",
+    "location": "https://network.madabase.com/guides/point-to-point-wireless-bridges-vs-alternatives"
+  },
+  {
+    "url": "https://network.madabase.com/guides/point-to-point-wireless-bridges-compatibility-and-fit-guide",
+    "expected": "https://network.madabase.com/guides/point-to-point-wireless-bridges-vs-alternatives",
+    "status": 308,
+    "location": "https://network.madabase.com/guides/point-to-point-wireless-bridges-vs-alternatives",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://network.madabase.com/guides/point-to-point-wireless-bridges-ownership-cost-and-maintenance",
+    "expected": "https://network.madabase.com/guides/point-to-point-wireless-bridges-vs-alternatives",
+    "status": 308,
+    "location": "https://network.madabase.com/guides/point-to-point-wireless-bridges-vs-alternatives",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://network.madabase.com/guides/wifi-range-extenders-buying-guide",
+    "expected": "https://network.madabase.com/guides/wifi-range-extenders-vs-alternatives",
+    "status": 308,
+    "location": "https://network.madabase.com/guides/wifi-range-extenders-vs-alternatives",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://network.madabase.com/guides/wifi-range-extenders-compatibility-and-fit-guide",
+    "expected": "https://network.madabase.com/guides/wifi-range-extenders-vs-alternatives",
+    "status": 308,
+    "pass": true,
+    "verification_status": "verified",
+    "location": "https://network.madabase.com/guides/wifi-range-extenders-vs-alternatives"
+  },
+  {
+    "url": "https://network.madabase.com/guides/wifi-range-extenders-ownership-cost-and-maintenance",
+    "expected": "https://network.madabase.com/guides/wifi-range-extenders-vs-alternatives",
+    "status": 308,
+    "pass": true,
+    "verification_status": "verified",
+    "location": "https://network.madabase.com/guides/wifi-range-extenders-vs-alternatives"
+  },
+  {
+    "url": "https://network.madabase.com/guides/moca-network-adapters-buying-guide",
+    "expected": "https://network.madabase.com/guides/moca-network-adapters-vs-alternatives",
+    "status": 308,
+    "pass": true,
+    "verification_status": "verified",
+    "location": "https://network.madabase.com/guides/moca-network-adapters-vs-alternatives"
+  },
+  {
+    "url": "https://network.madabase.com/guides/moca-network-adapters-compatibility-and-fit-guide",
+    "expected": "https://network.madabase.com/guides/moca-network-adapters-vs-alternatives",
+    "status": 308,
+    "location": "https://network.madabase.com/guides/moca-network-adapters-vs-alternatives",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://network.madabase.com/guides/moca-network-adapters-ownership-cost-and-maintenance",
+    "expected": "https://network.madabase.com/guides/moca-network-adapters-vs-alternatives",
+    "status": 308,
+    "pass": true,
+    "verification_status": "verified",
+    "location": "https://network.madabase.com/guides/moca-network-adapters-vs-alternatives"
+  },
+  {
+    "url": "https://network.madabase.com/guides/powerline-network-adapters-buying-guide",
+    "expected": "https://network.madabase.com/guides/powerline-network-adapters-vs-alternatives",
+    "status": 308,
+    "pass": true,
+    "verification_status": "verified",
+    "location": "https://network.madabase.com/guides/powerline-network-adapters-vs-alternatives"
+  },
+  {
+    "url": "https://network.madabase.com/guides/powerline-network-adapters-compatibility-and-fit-guide",
+    "expected": "https://network.madabase.com/guides/powerline-network-adapters-vs-alternatives",
+    "status": 308,
+    "pass": true,
+    "verification_status": "verified",
+    "location": "https://network.madabase.com/guides/powerline-network-adapters-vs-alternatives"
+  },
+  {
+    "url": "https://network.madabase.com/guides/powerline-network-adapters-ownership-cost-and-maintenance",
+    "expected": "https://network.madabase.com/guides/powerline-network-adapters-vs-alternatives",
+    "status": 308,
+    "location": "https://network.madabase.com/guides/powerline-network-adapters-vs-alternatives",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://network.madabase.com/guides/ethernet-network-interface-cards-buying-guide",
+    "expected": "https://network.madabase.com/guides/ethernet-network-interface-cards-vs-alternatives",
+    "status": 308,
+    "pass": true,
+    "verification_status": "verified",
+    "location": "https://network.madabase.com/guides/ethernet-network-interface-cards-vs-alternatives"
+  },
+  {
+    "url": "https://network.madabase.com/guides/ethernet-network-interface-cards-compatibility-and-fit-guide",
+    "expected": "https://network.madabase.com/guides/ethernet-network-interface-cards-vs-alternatives",
+    "status": 308,
+    "location": "https://network.madabase.com/guides/ethernet-network-interface-cards-vs-alternatives",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://network.madabase.com/guides/ethernet-network-interface-cards-ownership-cost-and-maintenance",
+    "expected": "https://network.madabase.com/guides/ethernet-network-interface-cards-vs-alternatives",
+    "status": 308,
+    "location": "https://network.madabase.com/guides/ethernet-network-interface-cards-vs-alternatives",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://network.madabase.com/guides/usb-c-ethernet-adapters-buying-guide",
+    "expected": "https://network.madabase.com/guides/usb-c-ethernet-adapters-vs-alternatives",
+    "status": 308,
+    "location": "https://network.madabase.com/guides/usb-c-ethernet-adapters-vs-alternatives",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://network.madabase.com/guides/usb-c-ethernet-adapters-compatibility-and-fit-guide",
+    "expected": "https://network.madabase.com/guides/usb-c-ethernet-adapters-vs-alternatives",
+    "status": 308,
+    "location": "https://network.madabase.com/guides/usb-c-ethernet-adapters-vs-alternatives",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://network.madabase.com/guides/usb-c-ethernet-adapters-ownership-cost-and-maintenance",
+    "expected": "https://network.madabase.com/guides/usb-c-ethernet-adapters-vs-alternatives",
+    "status": 308,
+    "pass": true,
+    "verification_status": "verified",
+    "location": "https://network.madabase.com/guides/usb-c-ethernet-adapters-vs-alternatives"
+  },
+  {
+    "url": "https://network.madabase.com/guides/poe-injectors-buying-guide",
+    "expected": "https://network.madabase.com/guides/poe-injectors-vs-alternatives",
+    "status": 308,
+    "location": "https://network.madabase.com/guides/poe-injectors-vs-alternatives",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://network.madabase.com/guides/poe-injectors-compatibility-and-fit-guide",
+    "expected": "https://network.madabase.com/guides/poe-injectors-vs-alternatives",
+    "status": 308,
+    "pass": true,
+    "verification_status": "verified",
+    "location": "https://network.madabase.com/guides/poe-injectors-vs-alternatives"
+  },
+  {
+    "url": "https://network.madabase.com/guides/poe-injectors-ownership-cost-and-maintenance",
+    "expected": "https://network.madabase.com/guides/poe-injectors-vs-alternatives",
+    "status": 308,
+    "pass": true,
+    "verification_status": "verified",
+    "location": "https://network.madabase.com/guides/poe-injectors-vs-alternatives"
+  },
+  {
+    "url": "https://network.madabase.com/guides/poe-extenders-buying-guide",
+    "expected": "https://network.madabase.com/guides/poe-extenders-vs-alternatives",
+    "status": 308,
+    "location": "https://network.madabase.com/guides/poe-extenders-vs-alternatives",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://network.madabase.com/guides/poe-extenders-compatibility-and-fit-guide",
+    "expected": "https://network.madabase.com/guides/poe-extenders-vs-alternatives",
+    "status": 308,
+    "location": "https://network.madabase.com/guides/poe-extenders-vs-alternatives",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://network.madabase.com/guides/poe-extenders-ownership-cost-and-maintenance",
+    "expected": "https://network.madabase.com/guides/poe-extenders-vs-alternatives",
+    "status": 308,
+    "location": "https://network.madabase.com/guides/poe-extenders-vs-alternatives",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://network.madabase.com/guides/sfp-plus-transceivers-buying-guide",
+    "expected": "https://network.madabase.com/guides/sfp-plus-transceivers-compatibility-and-fit-guide",
+    "status": 308,
+    "location": "https://network.madabase.com/guides/sfp-plus-transceivers-compatibility-and-fit-guide",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://network.madabase.com/guides/sfp-plus-transceivers-vs-alternatives",
+    "expected": "https://network.madabase.com/guides/sfp-plus-transceivers-compatibility-and-fit-guide",
+    "status": 308,
+    "location": "https://network.madabase.com/guides/sfp-plus-transceivers-compatibility-and-fit-guide",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://network.madabase.com/guides/sfp-plus-transceivers-ownership-cost-and-maintenance",
+    "expected": "https://network.madabase.com/guides/sfp-plus-transceivers-compatibility-and-fit-guide",
+    "status": 308,
+    "location": "https://network.madabase.com/guides/sfp-plus-transceivers-compatibility-and-fit-guide",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://network.madabase.com/guides/fiber-media-converters-buying-guide",
+    "expected": "https://network.madabase.com/guides/fiber-media-converters-vs-alternatives",
+    "status": 308,
+    "location": "https://network.madabase.com/guides/fiber-media-converters-vs-alternatives",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://network.madabase.com/guides/fiber-media-converters-compatibility-and-fit-guide",
+    "expected": "https://network.madabase.com/guides/fiber-media-converters-vs-alternatives",
+    "status": 308,
+    "location": "https://network.madabase.com/guides/fiber-media-converters-vs-alternatives",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://network.madabase.com/guides/fiber-media-converters-ownership-cost-and-maintenance",
+    "expected": "https://network.madabase.com/guides/fiber-media-converters-vs-alternatives",
+    "status": 308,
+    "pass": true,
+    "verification_status": "verified",
+    "location": "https://network.madabase.com/guides/fiber-media-converters-vs-alternatives"
+  },
+  {
+    "url": "https://network.madabase.com/guides/network-attached-storage-buying-guide",
+    "expected": "https://network.madabase.com/guides/network-attached-storage-vs-alternatives",
+    "status": 308,
+    "location": "https://network.madabase.com/guides/network-attached-storage-vs-alternatives",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://network.madabase.com/guides/network-attached-storage-compatibility-and-fit-guide",
+    "expected": "https://network.madabase.com/guides/network-attached-storage-vs-alternatives",
+    "status": 308,
+    "pass": true,
+    "verification_status": "verified",
+    "location": "https://network.madabase.com/guides/network-attached-storage-vs-alternatives"
+  },
+  {
+    "url": "https://network.madabase.com/guides/network-attached-storage-ownership-cost-and-maintenance",
+    "expected": "https://network.madabase.com/guides/network-attached-storage-vs-alternatives",
+    "status": 308,
+    "location": "https://network.madabase.com/guides/network-attached-storage-vs-alternatives",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://network.madabase.com/guides/dual-wan-routers-buying-guide",
+    "expected": "https://network.madabase.com/guides/dual-wan-routers-compatibility-and-fit-guide",
+    "status": 308,
+    "pass": true,
+    "verification_status": "verified",
+    "location": "https://network.madabase.com/guides/dual-wan-routers-compatibility-and-fit-guide"
+  },
+  {
+    "url": "https://network.madabase.com/guides/dual-wan-routers-vs-alternatives",
+    "expected": "https://network.madabase.com/guides/dual-wan-routers-compatibility-and-fit-guide",
+    "status": 308,
+    "location": "https://network.madabase.com/guides/dual-wan-routers-compatibility-and-fit-guide",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://network.madabase.com/guides/dual-wan-routers-ownership-cost-and-maintenance",
+    "expected": "https://network.madabase.com/guides/dual-wan-routers-compatibility-and-fit-guide",
+    "status": 308,
+    "pass": true,
+    "verification_status": "verified",
+    "location": "https://network.madabase.com/guides/dual-wan-routers-compatibility-and-fit-guide"
+  },
+  {
+    "url": "https://network.madabase.com/guides/five-g-home-internet-gateways-buying-guide",
+    "expected": "https://network.madabase.com/guides/five-g-home-internet-gateways-compatibility-and-fit-guide",
+    "status": 308,
+    "location": "https://network.madabase.com/guides/five-g-home-internet-gateways-compatibility-and-fit-guide",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://network.madabase.com/guides/five-g-home-internet-gateways-vs-alternatives",
+    "expected": "https://network.madabase.com/guides/five-g-home-internet-gateways-compatibility-and-fit-guide",
+    "status": 308,
+    "location": "https://network.madabase.com/guides/five-g-home-internet-gateways-compatibility-and-fit-guide",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://network.madabase.com/guides/five-g-home-internet-gateways-ownership-cost-and-maintenance",
+    "expected": "https://network.madabase.com/guides/five-g-home-internet-gateways-compatibility-and-fit-guide",
+    "status": 308,
+    "pass": true,
+    "verification_status": "verified",
+    "location": "https://network.madabase.com/guides/five-g-home-internet-gateways-compatibility-and-fit-guide"
+  },
+  {
+    "url": "https://network.madabase.com/guides/home-network-racks-buying-guide",
+    "expected": "https://network.madabase.com/guides/home-network-racks-vs-alternatives",
+    "status": 308,
+    "pass": true,
+    "verification_status": "verified",
+    "location": "https://network.madabase.com/guides/home-network-racks-vs-alternatives"
+  },
+  {
+    "url": "https://network.madabase.com/guides/home-network-racks-compatibility-and-fit-guide",
+    "expected": "https://network.madabase.com/guides/home-network-racks-vs-alternatives",
+    "status": 308,
+    "pass": true,
+    "verification_status": "verified",
+    "location": "https://network.madabase.com/guides/home-network-racks-vs-alternatives"
+  },
+  {
+    "url": "https://network.madabase.com/guides/home-network-racks-ownership-cost-and-maintenance",
+    "expected": "https://network.madabase.com/guides/home-network-racks-vs-alternatives",
+    "status": 308,
+    "pass": true,
+    "verification_status": "verified",
+    "location": "https://network.madabase.com/guides/home-network-racks-vs-alternatives"
+  },
+  {
+    "url": "https://network.madabase.com/guides/ethernet-cable-testers-buying-guide",
+    "expected": "https://network.madabase.com/guides/ethernet-cable-testers-compatibility-and-fit-guide",
+    "status": 308,
+    "pass": true,
+    "verification_status": "verified",
+    "location": "https://network.madabase.com/guides/ethernet-cable-testers-compatibility-and-fit-guide"
+  },
+  {
+    "url": "https://network.madabase.com/guides/ethernet-cable-testers-vs-alternatives",
+    "expected": "https://network.madabase.com/guides/ethernet-cable-testers-compatibility-and-fit-guide",
+    "status": 308,
+    "location": "https://network.madabase.com/guides/ethernet-cable-testers-compatibility-and-fit-guide",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://network.madabase.com/guides/ethernet-cable-testers-ownership-cost-and-maintenance",
+    "expected": "https://network.madabase.com/guides/ethernet-cable-testers-compatibility-and-fit-guide",
+    "status": 308,
+    "pass": true,
+    "verification_status": "verified",
+    "location": "https://network.madabase.com/guides/ethernet-cable-testers-compatibility-and-fit-guide"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/large-dog-water-fountains-buying-guide",
+    "expected": "https://pets.madabase.com/guides/large-dog-water-fountains-vs-alternatives",
+    "status": 308,
+    "pass": true,
+    "verification_status": "verified",
+    "location": "https://pets.madabase.com/guides/large-dog-water-fountains-vs-alternatives"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/large-dog-water-fountains-compatibility-and-fit-guide",
+    "expected": "https://pets.madabase.com/guides/large-dog-water-fountains-vs-alternatives",
+    "status": 308,
+    "pass": true,
+    "verification_status": "verified",
+    "location": "https://pets.madabase.com/guides/large-dog-water-fountains-vs-alternatives"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/large-dog-water-fountains-ownership-cost-and-maintenance",
+    "expected": "https://pets.madabase.com/guides/large-dog-water-fountains-vs-alternatives",
+    "status": 308,
+    "pass": true,
+    "verification_status": "verified",
+    "location": "https://pets.madabase.com/guides/large-dog-water-fountains-vs-alternatives"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/large-dog-water-fountains-setup-and-daily-workflow",
+    "expected": "https://pets.madabase.com/guides/large-dog-water-fountains-vs-alternatives",
+    "status": 308,
+    "pass": true,
+    "verification_status": "verified",
+    "location": "https://pets.madabase.com/guides/large-dog-water-fountains-vs-alternatives"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/cat-gps-trackers-buying-guide",
+    "expected": "https://pets.madabase.com/guides/cat-gps-trackers-setup-and-daily-workflow",
+    "status": 308,
+    "pass": true,
+    "verification_status": "verified",
+    "location": "https://pets.madabase.com/guides/cat-gps-trackers-setup-and-daily-workflow"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/cat-gps-trackers-vs-alternatives",
+    "expected": "https://pets.madabase.com/guides/cat-gps-trackers-setup-and-daily-workflow",
+    "status": 308,
+    "location": "https://pets.madabase.com/guides/cat-gps-trackers-setup-and-daily-workflow",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/cat-gps-trackers-compatibility-and-fit-guide",
+    "expected": "https://pets.madabase.com/guides/cat-gps-trackers-setup-and-daily-workflow",
+    "status": 308,
+    "location": "https://pets.madabase.com/guides/cat-gps-trackers-setup-and-daily-workflow",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/cat-gps-trackers-ownership-cost-and-maintenance",
+    "expected": "https://pets.madabase.com/guides/cat-gps-trackers-setup-and-daily-workflow",
+    "status": 308,
+    "pass": true,
+    "verification_status": "verified",
+    "location": "https://pets.madabase.com/guides/cat-gps-trackers-setup-and-daily-workflow"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/airtag-pet-collar-holders-buying-guide",
+    "expected": "https://pets.madabase.com/guides/airtag-pet-collar-holders-setup-and-daily-workflow",
+    "status": 308,
+    "pass": true,
+    "verification_status": "verified",
+    "location": "https://pets.madabase.com/guides/airtag-pet-collar-holders-setup-and-daily-workflow"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/airtag-pet-collar-holders-vs-alternatives",
+    "expected": "https://pets.madabase.com/guides/airtag-pet-collar-holders-setup-and-daily-workflow",
+    "status": 308,
+    "location": "https://pets.madabase.com/guides/airtag-pet-collar-holders-setup-and-daily-workflow",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/airtag-pet-collar-holders-compatibility-and-fit-guide",
+    "expected": "https://pets.madabase.com/guides/airtag-pet-collar-holders-setup-and-daily-workflow",
+    "status": 308,
+    "location": "https://pets.madabase.com/guides/airtag-pet-collar-holders-setup-and-daily-workflow",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/airtag-pet-collar-holders-ownership-cost-and-maintenance",
+    "expected": "https://pets.madabase.com/guides/airtag-pet-collar-holders-setup-and-daily-workflow",
+    "status": 308,
+    "pass": true,
+    "verification_status": "verified",
+    "location": "https://pets.madabase.com/guides/airtag-pet-collar-holders-setup-and-daily-workflow"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/microchip-pet-doors-buying-guide",
+    "expected": "https://pets.madabase.com/guides/microchip-pet-doors-vs-alternatives",
+    "status": 308,
+    "location": "https://pets.madabase.com/guides/microchip-pet-doors-vs-alternatives",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/microchip-pet-doors-compatibility-and-fit-guide",
+    "expected": "https://pets.madabase.com/guides/microchip-pet-doors-vs-alternatives",
+    "status": 308,
+    "location": "https://pets.madabase.com/guides/microchip-pet-doors-vs-alternatives",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/microchip-pet-doors-ownership-cost-and-maintenance",
+    "expected": "https://pets.madabase.com/guides/microchip-pet-doors-vs-alternatives",
+    "status": 308,
+    "location": "https://pets.madabase.com/guides/microchip-pet-doors-vs-alternatives",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/microchip-pet-doors-setup-and-daily-workflow",
+    "expected": "https://pets.madabase.com/guides/microchip-pet-doors-vs-alternatives",
+    "status": 308,
+    "pass": true,
+    "verification_status": "verified",
+    "location": "https://pets.madabase.com/guides/microchip-pet-doors-vs-alternatives"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/cat-litter-mats-buying-guide",
+    "expected": "https://pets.madabase.com/guides/cat-litter-mats-compatibility-and-fit-guide",
+    "status": 308,
+    "pass": true,
+    "verification_status": "verified",
+    "location": "https://pets.madabase.com/guides/cat-litter-mats-compatibility-and-fit-guide"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/cat-litter-mats-vs-alternatives",
+    "expected": "https://pets.madabase.com/guides/cat-litter-mats-compatibility-and-fit-guide",
+    "status": 308,
+    "location": "https://pets.madabase.com/guides/cat-litter-mats-compatibility-and-fit-guide",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/cat-litter-mats-ownership-cost-and-maintenance",
+    "expected": "https://pets.madabase.com/guides/cat-litter-mats-compatibility-and-fit-guide",
+    "status": 308,
+    "location": "https://pets.madabase.com/guides/cat-litter-mats-compatibility-and-fit-guide",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/cat-litter-mats-setup-and-daily-workflow",
+    "expected": "https://pets.madabase.com/guides/cat-litter-mats-compatibility-and-fit-guide",
+    "status": 308,
+    "location": "https://pets.madabase.com/guides/cat-litter-mats-compatibility-and-fit-guide",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/deshedding-brushes-buying-guide",
+    "expected": "https://pets.madabase.com/guides/deshedding-brushes-vs-alternatives",
+    "status": 308,
+    "pass": true,
+    "verification_status": "verified",
+    "location": "https://pets.madabase.com/guides/deshedding-brushes-vs-alternatives"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/deshedding-brushes-compatibility-and-fit-guide",
+    "expected": "https://pets.madabase.com/guides/deshedding-brushes-vs-alternatives",
+    "status": 308,
+    "location": "https://pets.madabase.com/guides/deshedding-brushes-vs-alternatives",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/deshedding-brushes-ownership-cost-and-maintenance",
+    "expected": "https://pets.madabase.com/guides/deshedding-brushes-vs-alternatives",
+    "status": 308,
+    "location": "https://pets.madabase.com/guides/deshedding-brushes-vs-alternatives",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/deshedding-brushes-setup-and-daily-workflow",
+    "expected": "https://pets.madabase.com/guides/deshedding-brushes-vs-alternatives",
+    "status": 308,
+    "location": "https://pets.madabase.com/guides/deshedding-brushes-vs-alternatives",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/cooling-pet-beds-buying-guide",
+    "expected": "https://pets.madabase.com/guides/cooling-pet-beds-setup-and-daily-workflow",
+    "status": 308,
+    "pass": true,
+    "verification_status": "verified",
+    "location": "https://pets.madabase.com/guides/cooling-pet-beds-setup-and-daily-workflow"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/cooling-pet-beds-vs-alternatives",
+    "expected": "https://pets.madabase.com/guides/cooling-pet-beds-setup-and-daily-workflow",
+    "status": 308,
+    "location": "https://pets.madabase.com/guides/cooling-pet-beds-setup-and-daily-workflow",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/cooling-pet-beds-compatibility-and-fit-guide",
+    "expected": "https://pets.madabase.com/guides/cooling-pet-beds-setup-and-daily-workflow",
+    "status": 308,
+    "location": "https://pets.madabase.com/guides/cooling-pet-beds-setup-and-daily-workflow",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/cooling-pet-beds-ownership-cost-and-maintenance",
+    "expected": "https://pets.madabase.com/guides/cooling-pet-beds-setup-and-daily-workflow",
+    "status": 308,
+    "location": "https://pets.madabase.com/guides/cooling-pet-beds-setup-and-daily-workflow",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/dog-ramps-buying-guide",
+    "expected": "https://pets.madabase.com/guides/dog-ramps-vs-alternatives",
+    "status": 308,
+    "location": "https://pets.madabase.com/guides/dog-ramps-vs-alternatives",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/dog-ramps-compatibility-and-fit-guide",
+    "expected": "https://pets.madabase.com/guides/dog-ramps-vs-alternatives",
+    "status": 308,
+    "location": "https://pets.madabase.com/guides/dog-ramps-vs-alternatives",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/dog-ramps-ownership-cost-and-maintenance",
+    "expected": "https://pets.madabase.com/guides/dog-ramps-vs-alternatives",
+    "status": 308,
+    "location": "https://pets.madabase.com/guides/dog-ramps-vs-alternatives",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/dog-ramps-setup-and-daily-workflow",
+    "expected": "https://pets.madabase.com/guides/dog-ramps-vs-alternatives",
+    "status": 308,
+    "location": "https://pets.madabase.com/guides/dog-ramps-vs-alternatives",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/automatic-aquarium-feeders-buying-guide",
+    "expected": "https://pets.madabase.com/guides/automatic-aquarium-feeders-setup-and-daily-workflow",
+    "status": 308,
+    "pass": true,
+    "verification_status": "verified",
+    "location": "https://pets.madabase.com/guides/automatic-aquarium-feeders-setup-and-daily-workflow"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/automatic-aquarium-feeders-vs-alternatives",
+    "expected": "https://pets.madabase.com/guides/automatic-aquarium-feeders-setup-and-daily-workflow",
+    "status": 308,
+    "location": "https://pets.madabase.com/guides/automatic-aquarium-feeders-setup-and-daily-workflow",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/automatic-aquarium-feeders-compatibility-and-fit-guide",
+    "expected": "https://pets.madabase.com/guides/automatic-aquarium-feeders-setup-and-daily-workflow",
+    "status": 308,
+    "pass": true,
+    "verification_status": "verified",
+    "location": "https://pets.madabase.com/guides/automatic-aquarium-feeders-setup-and-daily-workflow"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/automatic-aquarium-feeders-ownership-cost-and-maintenance",
+    "expected": "https://pets.madabase.com/guides/automatic-aquarium-feeders-setup-and-daily-workflow",
+    "status": 308,
+    "pass": true,
+    "verification_status": "verified",
+    "location": "https://pets.madabase.com/guides/automatic-aquarium-feeders-setup-and-daily-workflow"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/aquarium-water-monitors-buying-guide",
+    "expected": "https://pets.madabase.com/guides/aquarium-water-monitors-setup-and-daily-workflow",
+    "status": 308,
+    "location": "https://pets.madabase.com/guides/aquarium-water-monitors-setup-and-daily-workflow",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/aquarium-water-monitors-vs-alternatives",
+    "expected": "https://pets.madabase.com/guides/aquarium-water-monitors-setup-and-daily-workflow",
+    "status": 308,
+    "location": "https://pets.madabase.com/guides/aquarium-water-monitors-setup-and-daily-workflow",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/aquarium-water-monitors-compatibility-and-fit-guide",
+    "expected": "https://pets.madabase.com/guides/aquarium-water-monitors-setup-and-daily-workflow",
+    "status": 308,
+    "location": "https://pets.madabase.com/guides/aquarium-water-monitors-setup-and-daily-workflow",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://pets.madabase.com/guides/aquarium-water-monitors-ownership-cost-and-maintenance",
+    "expected": "https://pets.madabase.com/guides/aquarium-water-monitors-setup-and-daily-workflow",
+    "status": 308,
+    "pass": true,
+    "verification_status": "verified",
+    "location": "https://pets.madabase.com/guides/aquarium-water-monitors-setup-and-daily-workflow"
+  },
+  {
+    "url": "https://network.madabase.com/guides/sfp-plus-network-switches-buying-guide",
+    "expected": "https://network.madabase.com/guides/sfp-plus-network-switches-vs-alternatives",
+    "status": 308,
+    "location": "https://network.madabase.com/guides/sfp-plus-network-switches-vs-alternatives",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://network.madabase.com/guides/sfp-plus-network-switches-compatibility-and-fit-guide",
+    "expected": "https://network.madabase.com/guides/sfp-plus-network-switches-vs-alternatives",
+    "status": 308,
+    "pass": true,
+    "verification_status": "verified",
+    "location": "https://network.madabase.com/guides/sfp-plus-network-switches-vs-alternatives"
+  },
+  {
+    "url": "https://network.madabase.com/guides/sfp-plus-network-switches-ownership-cost-and-maintenance",
+    "expected": "https://network.madabase.com/guides/sfp-plus-network-switches-vs-alternatives",
+    "status": 308,
+    "location": "https://network.madabase.com/guides/sfp-plus-network-switches-vs-alternatives",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://network.madabase.com/guides/poe-splitters-buying-guide",
+    "expected": "https://network.madabase.com/guides/poe-splitters-vs-alternatives",
+    "status": 308,
+    "location": "https://network.madabase.com/guides/poe-splitters-vs-alternatives",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://network.madabase.com/guides/poe-splitters-compatibility-and-fit-guide",
+    "expected": "https://network.madabase.com/guides/poe-splitters-vs-alternatives",
+    "status": 308,
+    "location": "https://network.madabase.com/guides/poe-splitters-vs-alternatives",
+    "pass": true,
+    "verification_status": "verified"
+  },
+  {
+    "url": "https://network.madabase.com/guides/poe-splitters-ownership-cost-and-maintenance",
+    "expected": "https://network.madabase.com/guides/poe-splitters-vs-alternatives",
+    "status": 308,
+    "pass": true,
+    "verification_status": "verified",
+    "location": "https://network.madabase.com/guides/poe-splitters-vs-alternatives"
+  }
+]

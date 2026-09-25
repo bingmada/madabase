@@ -8,6 +8,7 @@ import breadthDraftNetworkData from "../config/breadth-draft-network-product-res
 import breadthDraftPetData from "../config/breadth-draft-pet-product-research.json";
 import breadthDraftSmarthomeData from "../config/breadth-draft-smarthome-product-research.json";
 import type { SiteKey } from "./types";
+import { findAmazonFamilyOfferBlock } from "./amazon-offer-blocks";
 
 export type AmazonFamilyProduct = {
   site: Extract<SiteKey, "network" | "smarthome" | "homeoffice" | "baby" | "pet">;
@@ -63,11 +64,12 @@ for (const product of amazonFamilyProducts) {
 }
 
 export function findAmazonFamilyProduct(site: SiteKey, familySlug: string) {
-  return amazonFamilyProducts.find((product) =>
+  const product = amazonFamilyProducts.find((product) =>
     product.site === site
     && product.familySlug === familySlug
     && (process.env.AFFILIATE_INCLUDE_DRAFTS === "1" || product.publicationStatus !== "draft"),
   );
+  return product ? { ...product, offerBlock: findAmazonFamilyOfferBlock(site, familySlug, product.asin) } : undefined;
 }
 
 export function amazonFamilyProductInventory() {

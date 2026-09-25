@@ -1,3 +1,5 @@
+> 更新至 2026-09-25：本文保留前批历史记录；最新验收、数量和阻塞项以 [completion-2026-09-25.md](completion-2026-09-25.md) 为准。原 6/109 索引检查、24 个查询、293 个 ASIN 等数量已被后续补查替代。服务器发布仍明确排除。
+
 # 全面整改补查与验收缺口（2026-09-24）
 
 范围仍为 Main、Network、Smarthome、Homeoffice、Baby、Pets、Style、Costume、Wellness；排除独立 Test/Tools 站与主域遗留工具路径。不是所有低点击页都应重写，也不能将本地代码通过等同于线上整改完成。

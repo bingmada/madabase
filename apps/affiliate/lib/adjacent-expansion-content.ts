@@ -632,12 +632,23 @@ export const adjacentExpansionRoundups: Roundup[] = [
   {
     site: "baby",
     slug: "babybjorn-harmony-vs-ergobaby-omni-breeze",
-    updatedAt,
+    updatedAt: "September 24, 2026",
     title: "BabyBjörn Harmony vs. Ergobaby Omni Breeze",
     dek: "Compare fit workflow, mesh, carry positions, listed weight range, lumbar support, and which differences matter before trying either carrier.",
     category: "travel",
     intent: "Choose between two premium breathable structured baby carriers without pretending specifications can replace a fit test.",
     intro: "Harmony and Omni Breeze both target parents who want a breathable all-stage structured carrier. Harmony emphasizes soft material and front-access buckles; Omni Breeze adds hip carry and a higher listed maximum. The return window remains part of the buying decision.",
+    comparisonTable: {
+      title: "Differences that change the carry routine",
+      columns: ["BabyBjörn Harmony", "Ergobaby Omni Breeze"],
+      rows: [
+        { label: "Overall listed range", values: ["7–40 lb; follow minimum size and fit rules", "7–45 lb and at least 20 in; position-specific limits apply"] },
+        { label: "Carry choices", values: ["Front inward, eligible outward, and back", "Front inward, eligible outward, hip, and back"] },
+        { label: "Fastening", values: ["Front-access buckles; test head-support adjustment", "Waistband and shoulder-strap setup; practice the sequence"] },
+        { label: "Choose for", values: ["A preferred front-buckle workflow", "A needed hip-carry option or higher overall limit"] },
+        { label: "Do not infer", values: ["Mesh guarantees cooler use or a personal fit", "The 45 lb overall limit applies to outward carry"] },
+      ],
+    },
     decisionGuide: [
       { label: "Front buckles", detail: "Harmony is easier to shortlist when front-access fastening is the preferred workflow." },
       { label: "Hip carry", detail: "Omni Breeze is the candidate because Harmony does not list a hip-carry position." },

@@ -1,0 +1,171 @@
+{
+  "checkedAt": "2026-09-25",
+  "environment": "local unpublished release",
+  "pages": [
+    {
+      "url": "https://wellness.madabase.com",
+      "status": 200,
+      "location": null,
+      "errors": []
+    },
+    {
+      "url": "https://wellness.madabase.com/about",
+      "status": 200,
+      "location": null,
+      "errors": []
+    },
+    {
+      "url": "https://wellness.madabase.com/methodology",
+      "status": 200,
+      "location": null,
+      "errors": []
+    },
+    {
+      "url": "https://wellness.madabase.com/editorial-policy",
+      "status": 200,
+      "location": null,
+      "errors": []
+    },
+    {
+      "url": "https://wellness.madabase.com/affiliate-disclosure",
+      "status": 200,
+      "location": null,
+      "errors": []
+    },
+    {
+      "url": "https://wellness.madabase.com/privacy",
+      "status": 200,
+      "location": null,
+      "errors": []
+    },
+    {
+      "url": "https://wellness.madabase.com/contact",
+      "status": 200,
+      "location": null,
+      "errors": []
+    },
+    {
+      "url": "https://wellness.madabase.com/categories",
+      "status": 200,
+      "location": null,
+      "errors": []
+    },
+    {
+      "url": "https://wellness.madabase.com/categories/lingerie",
+      "status": 200,
+      "location": null,
+      "errors": []
+    },
+    {
+      "url": "https://wellness.madabase.com/categories/nightwear",
+      "status": 200,
+      "location": null,
+      "errors": []
+    },
+    {
+      "url": "https://wellness.madabase.com/categories/babydolls-chemises",
+      "status": 200,
+      "location": null,
+      "errors": []
+    },
+    {
+      "url": "https://wellness.madabase.com/categories/robes-cover-ups",
+      "status": 200,
+      "location": null,
+      "errors": []
+    }
+  ],
+  "redirects": [
+    {
+      "slug": "floral-embroidery-underwire-set",
+      "status": 503,
+      "paused": true,
+      "errors": [],
+      "followedMerchantRedirect": false
+    },
+    {
+      "slug": "lace-v-neck-bra-panty-set",
+      "status": 302,
+      "paused": false,
+      "errors": [],
+      "followedMerchantRedirect": false
+    },
+    {
+      "slug": "satin-pajamas-cami-shorts",
+      "status": 302,
+      "paused": false,
+      "errors": [],
+      "followedMerchantRedirect": false
+    },
+    {
+      "slug": "short-sleeve-pajama-set",
+      "status": 302,
+      "paused": false,
+      "errors": [],
+      "followedMerchantRedirect": false
+    },
+    {
+      "slug": "modal-cami-pajama-set",
+      "status": 302,
+      "paused": false,
+      "errors": [],
+      "followedMerchantRedirect": false
+    },
+    {
+      "slug": "lace-pajamas-cami-set",
+      "status": 302,
+      "paused": false,
+      "errors": [],
+      "followedMerchantRedirect": false
+    },
+    {
+      "slug": "satin-nightgown-mini-slip",
+      "status": 302,
+      "paused": false,
+      "errors": [],
+      "followedMerchantRedirect": false
+    },
+    {
+      "slug": "lace-v-neck-full-slip",
+      "status": 302,
+      "paused": false,
+      "errors": [],
+      "followedMerchantRedirect": false
+    },
+    {
+      "slug": "satin-lace-chemise-mini-slip",
+      "status": 302,
+      "paused": false,
+      "errors": [],
+      "followedMerchantRedirect": false
+    },
+    {
+      "slug": "satin-kimono-wedding-robe",
+      "status": 302,
+      "paused": false,
+      "errors": [],
+      "followedMerchantRedirect": false
+    },
+    {
+      "slug": "floral-sheer-lace-kimono",
+      "status": 503,
+      "paused": true,
+      "errors": [],
+      "followedMerchantRedirect": false
+    },
+    {
+      "slug": "lace-kimono-mesh-nightgown",
+      "status": 302,
+      "paused": false,
+      "errors": [],
+      "followedMerchantRedirect": false
+    },
+    {
+      "slug": "high-neck-lace-bralette",
+      "status": 302,
+      "paused": false,
+      "errors": [],
+      "followedMerchantRedirect": false
+    }
+  ]
+}

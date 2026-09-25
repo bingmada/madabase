@@ -81,7 +81,7 @@ export default function Home() {
       <section className="partner-focus" id="active-collections">
         <div className="partner-focus-copy">
           <p className="section-label">Active retailer coverage</p><h2>One approved partner, clearly labeled.</h2>
-          <p>Avidlove is the only retailer with active product links today. We use the current CJ catalog price as a reference and send shoppers to the retailer for live sizing, color, and stock.</p>
+          <p>Avidlove is the only retailer with active product links today. Prices and availability vary by size and color; confirm your selection at the retailer before ordering.</p>
           <Link className="text-link" href="/affiliate-disclosure">How affiliate links work<ArrowRight size={16} aria-hidden="true" /></Link>
         </div>
         <div className="active-partner-panel">

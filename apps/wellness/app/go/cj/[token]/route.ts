@@ -5,6 +5,7 @@ import {
   productPicks,
 } from "@/app/site-data";
 import { newCjSid, verifiedCjRedirectUrl } from "@/lib/cj";
+import { pausedOffer } from "@/lib/offer-status";
 
 export const dynamic = "force-dynamic";
 
@@ -28,6 +29,8 @@ export async function GET(
   if (!product || product.merchant !== "Avidlove") {
     return new NextResponse(null, { status: 404 });
   }
+
+  if (pausedOffer(product.slug)) return unavailable("exact_product_unavailable");
 
   const sid = newCjSid();
   const redirectUrl = verifiedCjRedirectUrl({

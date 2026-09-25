@@ -1,7 +1,7 @@
 {
-  "date": "2026-09-24",
-  "mode": "repair-in-progress",
-  "report": "audit.md",
+  "date": "2026-09-25",
+  "mode": "available-local-work-completed-external-verification-blocked-unpublished",
+  "report": "completion-2026-09-25.md",
   "pageLedger": "page-ledger.json",
   "previousTaskTitle": "诊断network网站GSC展现下跌",
   "previousTaskId": "01a0221d-379d-7712-88e2-48f599821bb3",
@@ -16,51 +16,42 @@
     "pageMetricsJoined": 1401,
     "cohortActiveUniqueUrlsMeasured": 141,
     "historicalCanonicalAnomaliesRechecked": 5,
-    "dueZeroUrlsLiveInspected": 6,
+    "dueZeroUrlsLiveInspected": 92,
     "oldRedirectsVerified": 97,
     "manualActions": "No issues detected",
-    "securityIssues": "No issues detected"
+    "securityIssues": "No issues detected",
+    "priorityExactQueryReviews": 53,
+    "amazonConversionRoutes": 5930,
+    "wellnessPages": 12
   },
   "openWork": [
     {
-      "type": "indexing-repair-review",
-      "count": 6,
-      "source": "live-dashboard-evidence.json",
-      "priority": 0,
-      "status": "Implemented and locally validated; production not switched"
+      "type": "gsc-index-inspection",
+      "count": 23,
+      "evidence": "remaining-live-inspections.json",
+      "reason": "Google property daily URL inspection quota exceeded; 92/115 examined, including 86 newly recorded indexed URLs.",
+      "next": "Resume these exact 23 URLs after the property quota renews; do not resubmit all inspected URLs."
     },
     {
-      "type": "due-live-inspection",
-      "count": 109,
-      "source": "remaining-live-inspections.json",
-      "blocker": "GSC Something went wrong; try again in a few hours",
-      "priority": 0
+      "type": "costume-data-and-merchant-validation",
+      "count": 32,
+      "evidence": "conversion-paths-costume-final.json",
+      "reason": "The existing local DATABASE_URL points to localhost:5432; application catalog queries fail. Public Santa detail returned HTTP 403 on Sep 25 and authorized CJ SFTP read timed out during handshake.",
+      "next": "With working existing catalog access, recheck 32 editorial/category purchase paths, the 76 product discovery paths, and two same-name Santa candidates. Do not merge candidates without exact merchant identity."
     },
     {
-      "type": "internal-discovery-review",
-      "count": 37,
-      "source": "internal-discovery-review.json",
-      "priority": 1,
-      "status": "Implemented and locally validated; production not switched"
+      "type": "production-validation",
+      "reason": "Server publication explicitly excluded. Source repairs, 6 indexing repairs, 37 discovery fixes and QA exclusion have not been verified on a switched production release.",
+      "next": "Owner-controlled release and public verification remain separate; no recovery or SEO lift claimed."
     },
     {
-      "type": "query-and-intent-review",
-      "pages": [
-        "Branch Ergonomic Chair",
-        "HON Ignition 2.0",
-        "CalDigit TS4"
-      ],
-      "priority": 1
+      "type": "merchant-region-stock",
+      "reason": "Regional restrictions and unspecified stock were retained as limits; 305 reviewed identities do not imply all US variants are in stock.",
+      "evidence": "merchant-decisions-final.json"
     },
     {
-      "type": "merchant-identity-and-availability",
-      "status": "306 link-format checks do not verify live stock or identity",
-      "priority": 1
-    },
-    {
-      "type": "attribution",
-      "status": "Implemented and locally validated; production not switched",
-      "priority": 1
+      "type": "attribution-observation",
+      "reason": "CJ earnings remain unavailable, Amazon Other attribution unresolved, and historical Clarity QA contamination cannot be removed retroactively; no invented earnings or retagging."
     }
   ],
   "scheduledGatesToRespect": [
@@ -70,14 +61,14 @@
     "2026-10-08",
     "2026-10-11"
   ],
-  "gateCompletion": "Incomplete GSC gates remain open; source repairs are not proof of Google recovery.",
-  "pageEdits": 64,
+  "gateCompletion": "Not complete: 23 GSC inspections, Costume data checks, and owner-controlled release/public verification remain open.",
+  "pageEdits": "See 53 priority decisions: 6 repair, 16 optimize, 31 retain; do not count shared rendering changes as 53 rewrites.",
   "deployments": 0,
   "requestIndexingSubmissions": 0,
   "existingStateFilesModified": true,
   "repair": {
-    "updatedAt": "2026-09-24T21:13:27+08:00",
-    "status": "local-repairs-validated-production-not-switched-server-recovery-awaiting-owner",
+    "updatedAt": "2026-09-25T09:29:44+08:00",
+    "status": "available-local-work-completed-external-verification-blocked-unpublished",
     "scope": [
       "main",
       "network",
@@ -93,14 +84,14 @@
       "test",
       "tools"
     ],
-    "report": "apps/affiliate/reports/seo-audit-2026-09-24/fixes.md",
+    "report": "apps/affiliate/reports/seo-audit-2026-09-24/completion-2026-09-25.md",
     "pageLedger": "apps/affiliate/reports/seo-audit-2026-09-24/page-ledger.json",
     "auditPages": 1401,
     "redirectsVerified": 97,
-    "dueZeroInspected": 6,
-    "dueZeroRemaining": 109,
-    "inspectionBlocker": "GSC try again in a few hours; do not equate unavailable inspection with not indexed",
-    "sourceCommit": "4883d9cbcf623589b330c3bc18676458f09aee25",
+    "dueZeroInspected": 92,
+    "dueZeroRemaining": 23,
+    "inspectionBlocker": "Google property daily URL inspection quota exceeded",
+    "sourceCommit": "see Git commit containing completion-2026-09-25.md",
     "additionalMerchantRepair": "HON corrected to B06Y3PGPR2; Branch B0GWGK4JFK blocked after Page Not Found",
     "productionSwitched": false,
     "serverIncident": {
@@ -114,43 +105,87 @@
       "rollbackRecord": "/var/tmp/madabase-seo-20260924-rollback.json"
     },
     "nextActions": [
-      "Restore old production and stop candidate after the pending owner recovery approval or authenticated rescue login",
-      "Inspect OOM/reclaim/service logs and verify scoped host health before publishing",
-      "Complete live merchant checks for changed pages, particularly 50 Style products; maintain full remaining-ASIN queue",
-      "Deploy the exact latest Affiliate archive only after recovery and capacity review; Main/Wellness remain from 4883d9c",
-      "Verify production pages, assets, all 76 Costume products discovery and QA exclusion; then submit precise changed canonicals",
-      "Resume 109 blocked GSC URL inspections; full cohort gates remain open",
-      "Complete priority-decisions.json query/body/SERP decisions and measure after actual deployment"
+      "Resume these exact 23 URLs after the property quota renews; do not resubmit all inspected URLs.",
+      "With working existing catalog access, recheck 32 editorial/category purchase paths, the 76 product discovery paths, and two same-name Santa candidates. Do not merge candidates without exact merchant identity.",
+      "Owner-controlled release and public verification remain separate; no recovery or SEO lift claimed."
     ],
     "recoveryHandoff": "apps/affiliate/reports/seo-audit-2026-09-24/server-recovery-handoff.md",
     "caldigitQueryReview": "Completed: visible intent matches existing title, only 3/201 impressions have query disclosure; retain current page",
-    "followupReport": "apps/affiliate/reports/seo-audit-2026-09-24/comprehensive-followup.md",
-    "followupStatus": "local-followup-validated-production-not-switched",
+    "followupReport": "apps/affiliate/reports/seo-audit-2026-09-24/completion-2026-09-25.md",
+    "followupStatus": "available-local-work-completed-external-verification-blocked-unpublished",
     "priorityPages": 53,
-    "exactQueryReviews": 24,
+    "exactQueryReviews": 53,
     "styleEvidenceCleanupCanonicals": 53,
     "additionalDirectContentEdits": 56,
     "finalAffiliateArchive": {
-      "bytes": 60866053,
-      "sha256": "8f0ac11a80e59765018d720f5a762601b09b4c92f0db5511c4e60b1cadf80e94",
+      "app": "affiliate",
       "path": "apps/affiliate/.release/affiliate-runtime.tgz",
-      "sourceCommit": "Resolve commit that last updated this archive; prior 5fe0cdf is superseded"
+      "bytes": 60873911,
+      "sha256": "5452695a40221ac3fb770e49e48103ddb4f0df52b892f77e00755955adc1e0d0",
+      "builtAndPackaged": true,
+      "published": false
     },
-    "indexNowSubmitted": false,
-    "currentAsins": 293,
-    "currentAsinsIdentityVerified": 10,
-    "remainingCurrentAsinChecks": 283,
+    "indexNowSubmitted": 0,
+    "currentAsins": 294,
+    "currentAsinsIdentityVerified": "294 active titles/models reviewed; stock and selected-region limits are separate in merchant-decisions-final.json",
+    "remainingCurrentAsinChecks": "Do not claim blanket US stock: see per-ASIN availability status. No unread baseline merchant-title record remains.",
     "validationFollowup": {
-      "seo": "pass",
-      "lint": "pass",
-      "build": "pass",
-      "ctrCohortProtection": "pass",
-      "targetRuntime": "12/12",
-      "styleRuntime": "76/76",
-      "styleImages": "21/21",
-      "mobileWidth": 390,
-      "capacityPreflightScenarios": "9/9; not executed on production"
-    }
+      "priorityAndMerchantPages": "82/82",
+      "amazonConversionRoutes": "5930/5930, including 153 explicit commerce-paused routes",
+      "wellnessPages": "12/12",
+      "wellnessRedirects": "13/13; 11 active, 2 blocked; no external tracking clicks",
+      "interactive": "interactive-runtime-final.json",
+      "eslint": "Affiliate and Wellness passed",
+      "seo": "passed",
+      "pageOneCTR": "passed",
+      "build": "Affiliate and Wellness production builds, types and packages passed",
+      "costume": "32 local data-dependent routes remain unverified, not passed"
+    },
+    "finalAffiliateSourceCommit": "see Git commit containing completion-2026-09-25.md",
+    "localValidationProcessesStopped": true,
+    "priorityActions": {
+      "repair": 6,
+      "optimize": 16,
+      "retain": 31
+    },
+    "finalWellnessArchive": {
+      "app": "wellness",
+      "path": "apps/wellness/.release/wellness-runtime.tgz",
+      "bytes": 20632786,
+      "sha256": "d48213b0a00c65f4dec34e1b01ac4b555541928cd802508b44d6f42eeaa9c349",
+      "builtAndPackaged": true,
+      "published": false
+    },
+    "blockedVerification": [
+      {
+        "type": "gsc-index-inspection",
+        "count": 23,
+        "evidence": "remaining-live-inspections.json",
+        "reason": "Google property daily URL inspection quota exceeded; 92/115 examined, including 86 newly recorded indexed URLs.",
+        "next": "Resume these exact 23 URLs after the property quota renews; do not resubmit all inspected URLs."
+      },
+      {
+        "type": "costume-data-and-merchant-validation",
+        "count": 32,
+        "evidence": "conversion-paths-costume-final.json",
+        "reason": "The existing local DATABASE_URL points to localhost:5432; application catalog queries fail. Public Santa detail returned HTTP 403 on Sep 25 and authorized CJ SFTP read timed out during handshake.",
+        "next": "With working existing catalog access, recheck 32 editorial/category purchase paths, the 76 product discovery paths, and two same-name Santa candidates. Do not merge candidates without exact merchant identity."
+      },
+      {
+        "type": "production-validation",
+        "reason": "Server publication explicitly excluded. Source repairs, 6 indexing repairs, 37 discovery fixes and QA exclusion have not been verified on a switched production release.",
+        "next": "Owner-controlled release and public verification remain separate; no recovery or SEO lift claimed."
+      },
+      {
+        "type": "merchant-region-stock",
+        "reason": "Regional restrictions and unspecified stock were retained as limits; 305 reviewed identities do not imply all US variants are in stock.",
+        "evidence": "merchant-decisions-final.json"
+      },
+      {
+        "type": "attribution-observation",
+        "reason": "CJ earnings remain unavailable, Amazon Other attribution unresolved, and historical Clarity QA contamination cannot be removed retroactively; no invented earnings or retagging."
+      }
+    ]
   },
   "pageEditsDefinition": "Direct editorial canonicals: 6 index-repair guides, 2 policy reviews, 2 followup reviews, Chicco and 53 Style pages. Shared technical changes and category discovery affect additional routes."
 }

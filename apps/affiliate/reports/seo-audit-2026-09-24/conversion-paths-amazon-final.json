@@ -1,0 +1,89 @@
+{
+  "checkedAt": "2026-09-25T01:28:39.541Z",
+  "mode": "local",
+  "includeMarkets": true,
+  "concurrency": 12,
+  "baseUrls": 1202,
+  "exactUrls": 5930,
+  "passed": 5930,
+  "failed": 0,
+  "noCta": 0,
+  "commercePaused": 153,
+  "bySite": {
+    "network": {
+      "checked": 870,
+      "failed": 0,
+      "noCta": 0,
+      "commercePaused": 5
+    },
+    "smarthome": {
+      "checked": 1220,
+      "failed": 0,
+      "noCta": 0,
+      "commercePaused": 30
+    },
+    "homeoffice": {
+      "checked": 1305,
+      "failed": 0,
+      "noCta": 0,
+      "commercePaused": 24
+    },
+    "baby": {
+      "checked": 1250,
+      "failed": 0,
+      "noCta": 0,
+      "commercePaused": 65
+    },
+    "pet": {
+      "checked": 940,
+      "failed": 0,
+      "noCta": 0,
+      "commercePaused": 29
+    },
+    "style": {
+      "checked": 345,
+      "failed": 0,
+      "noCta": 0,
+      "commercePaused": 0
+    }
+  },
+  "byKind": {
+    "review": {
+      "checked": 875,
+      "failed": 0,
+      "noCta": 0,
+      "commercePaused": 10
+    },
+    "guide": {
+      "checked": 4520,
+      "failed": 0,
+      "noCta": 0,
+      "commercePaused": 143
+    },
+    "roundup": {
+      "checked": 385,
+      "failed": 0,
+      "noCta": 0,
+      "commercePaused": 0
+    },
+    "tool": {
+      "checked": 35,
+      "failed": 0,
+      "noCta": 0,
+      "commercePaused": 0
+    },
+    "category": {
+      "checked": 115,
+      "failed": 0,
+      "noCta": 0,
+      "commercePaused": 0
+    },
+    "catalog-product": {
+      "checked": 0,
+      "failed": 0,
+      "noCta": 0,
+      "commercePaused": 0
+    }
+  },
+  "failureDetails": []
+}

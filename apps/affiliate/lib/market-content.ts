@@ -52,6 +52,7 @@ export type LocalizedMarketPage = {
   commerceProductSlug?: string;
   commerceFamilyAsin?: string;
   commerceFamilyTitle?: string;
+  commercePausedReason?: string;
   sourceTitle?: string;
   sourceDek?: string;
   sourceDecision?: string;
@@ -673,8 +674,14 @@ function automaticPagesForSite(siteKey: SiteKey): LocalizedMarketPage[] {
         slug: guide.slug,
         primaryProductSlug: primaryProduct?.slug,
         commerceProductSlug: familyProduct ? undefined : guideCommerceProduct(siteKey, guide)?.slug,
-        commerceFamilyAsin: familyProduct?.asin,
+        commerceFamilyAsin: familyProduct?.offerBlock ? undefined : familyProduct?.asin,
         commerceFamilyTitle: familyProduct?.title,
+        commercePausedReason: familyProduct?.offerBlock
+          ? `Listing checked ${familyProduct.offerBlock.checkedAt}: ${familyProduct.offerBlock.reason}`
+          : !familyProduct && !guideCommerceProduct(siteKey, guide)
+            && ((guide.relatedProducts?.length ?? 0) > 0 || guide.relatedRoundups.length > 0)
+            ? "Purchase links for the products discussed here are paused until a matching offer can be verified. Use the specifications and fit checks below when comparing current retailer listings."
+            : undefined,
         sourceTitle: guide.title,
         sourceDek: guide.dek,
         sourceDecision: guide.sections[0]?.body,

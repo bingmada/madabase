@@ -1,0 +1,73 @@
+{
+  "homeoffice.madabase.com": {
+    "c": 7,
+    "pc": 1,
+    "i": 698,
+    "pi": 971,
+    "exposed": 99,
+    "pexposed": 92,
+    "p": 14.64,
+    "pp": 19.69
+  },
+  "baby.madabase.com": {
+    "c": 4,
+    "pc": 1,
+    "i": 543,
+    "pi": 467,
+    "exposed": 84,
+    "pexposed": 91,
+    "p": 9.57,
+    "pp": 13.96
+  },
+  "network.madabase.com": {
+    "c": 1,
+    "pc": 2,
+    "i": 27,
+    "pi": 37,
+    "exposed": 12,
+    "pexposed": 14,
+    "p": 15.56,
+    "pp": 25.43
+  },
+  "madabase.com": {
+    "c": 0,
+    "pc": 0,
+    "i": 11,
+    "pi": 2,
+    "exposed": 6,
+    "pexposed": 2,
+    "p": 6.27,
+    "pp": 14.5
+  },
+  "pets.madabase.com": {
+    "c": 0,
+    "pc": 0,
+    "i": 4,
+    "pi": 11,
+    "exposed": 3,
+    "pexposed": 5,
+    "p": 7.0,
+    "pp": 5.73
+  },
+  "wellness.madabase.com": {
+    "c": 0,
+    "pc": 0,
+    "i": 1,
+    "pi": 0,
+    "pw": 0.0,
+    "exposed": 1,
+    "pexposed": 0,
+    "p": 1.0,
+    "pp": null
+  },
+  "smarthome.madabase.com": {
+    "c": 0,
+    "pc": 0,
+    "i": 4,
+    "pi": 10,
+    "exposed": 4,
+    "pexposed": 9,
+    "p": 14.0,
+    "pp": 27.4
+  }
+}

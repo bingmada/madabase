@@ -162,13 +162,13 @@ export const networkProducts: Product[] = [
     site: "network",
     slug: "amazon-eero-6-mesh-wifi-system",
     seoTitle: "What Is eero 6? Router vs Extender, Ports & Coverage",
-    updatedAt: "August 20, 2026",
+    updatedAt: "September 25, 2026",
     sources: [
       { name: "eero 6 product page", url: "https://eero.com/shop/eero-6", note: "Wi-Fi generation, listed coverage, package options, and device positioning." },
       { name: "eero product comparison", url: "https://support.eero.com/hc/en-us/articles/115002718486-eero-Mesh-WiFi-Product-Comparison", note: "Router, extender, port, speed, and generation differences." },
     ],
     editorialSections: [
-      { heading: "Count routers and extenders separately", body: "An eero 6 router has two auto-sensing gigabit ports; an eero 6 extender has none. Check the exact 3-pack composition before assuming every node can use Ethernet backhaul or connect a wired device." },
+      { heading: "Count routers and extenders separately", body: "The linked ASIN B0FZCJ85L3 was checked as a three-router pack, not a router-plus-extender bundle. An eero 6 router has two auto-sensing gigabit ports; an eero 6 extender has none. Check the exact 3-pack composition before assuming every node can use Ethernet backhaul or connect a wired device." },
       { heading: "Coverage is a planning estimate", body: "eero lists up to 1,500 square feet per eero 6 unit under ideal conditions. Floors, masonry, utilities, placement, and neighboring networks can reduce useful coverage." },
       { heading: "Simplicity has boundaries", body: "The app-led setup is the attraction, but an eero account is part of the experience and some optional features are subscription-based. Advanced network tinkerers may prefer more exposed controls." },
     ],
@@ -185,7 +185,7 @@ export const networkProducts: Product[] = [
     scores: [{ label: "Setup ease", value: 9 }, { label: "Everyday coverage", value: 8 }, { label: "Advanced controls", value: 5 }],
     pros: ["Easy app-led setup", "Good fit for non-technical households", "3-pack format suits common multi-room layouts"],
     cons: ["Not the choice for multi-gig wired networking", "Some advanced features may depend on ecosystem or subscription decisions"],
-    specs: { "Product type": "Mesh Wi-Fi system", "Listed coverage": "Up to 4,500 sq. ft.", "Listed devices": "75+ devices", "Use case": "Simple whole-home Wi-Fi" },
+    specs: { "Linked pack": "3 eero 6 routers; confirm the selection before checkout", "Product type": "Mesh Wi-Fi system", "Listed coverage": "Up to 4,500 sq. ft.", "Listed devices": "75+ devices", "Use case": "Simple whole-home Wi-Fi" },
     evidence: ["Confirm whether the listing is eero 6 or another eero generation", "Check whether your internet speed needs exceed the listed capability", "Review app, account, and optional subscription features before buying"],
     alternatives: ["Choose Deco BE63 for Wi-Fi 7 and multi-gig ports.", "Choose a single router if one good placement covers the home."],
     offers: offer(links.eero),
@@ -193,6 +193,7 @@ export const networkProducts: Product[] = [
   {
     site: "network",
     slug: "netgear-orbi-970-wifi-7-mesh",
+    asin: "B0CGJGXFCS",
     updatedAt: "June 25, 2026",
     name: "NETGEAR Orbi 970 Series Wi-Fi 7 Mesh System",
     brand: "NETGEAR",

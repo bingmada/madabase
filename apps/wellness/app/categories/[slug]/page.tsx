@@ -92,7 +92,7 @@ export default async function Page({ params }: PageProps) {
               />
             </div>
             <div className="product-copy">
-              <p className="guide-meta">{product.category} <span className="catalog-price">Catalog reference {product.price}</span></p>
+              <p className="guide-meta">{product.category} <span className="catalog-price">{product.price}</span></p>
               <h2>{product.name}</h2>
               <p>{product.editorialNote}</p>
               <p className="evidence-note"><strong>Evidence:</strong> official retailer listing and CJ catalog; not a hands-on test.</p>

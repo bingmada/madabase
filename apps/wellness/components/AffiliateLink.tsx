@@ -2,6 +2,7 @@
 
 import type { ReactNode } from "react";
 import { trackAffiliateClick } from "./ClarityAnalytics";
+import { pausedOffer } from "@/lib/offer-status";
 
 export function AffiliateLink({
   href,
@@ -18,6 +19,10 @@ export function AffiliateLink({
   className: string;
   children: ReactNode;
 }) {
+  const paused = pausedOffer(productSlug);
+  if (paused) {
+    return <p className="evidence-note" data-commerce-paused="true">{paused.reason}</p>;
+  }
   return (
     <a
       className={className}

@@ -124,8 +124,8 @@ export const searchOpportunities: SearchOpportunity[] = [
     kind: "product",
     slug: "furbo-360-dog-camera",
     query: "Does Furbo 360 work without a Furbo Nanny subscription?",
-    answer: "The standalone Furbo 360 keeps live view, two-way audio, treat tossing, bark alerts, and live-view tracking without Nanny. Pay for Nanny only when automatic cloud clips and advanced alerts justify the recurring cost, and verify that the selected listing is not a subscription-required bundle.",
-    updatedAt,
+    answer: "A standalone Furbo 360 retains basic free features, but the linked Amazon ASIN B0BWN22T25 is the paid-plan-required version: activation needs a subscription and the current listing states a three-month minimum. Do not treat this offer as the standalone camera. Compare the full committed cost and renewal terms.",
+    updatedAt: "September 25, 2026",
     preferredPaths: ["/guides/furbo-360-placement-height-and-wifi-guide", "/best/furbo-360-vs-wyze-cam-pan-v3-for-pets"],
   },
   {
@@ -565,8 +565,8 @@ export const searchOpportunities: SearchOpportunity[] = [
     kind: "product",
     slug: "flexispot-e7-mini-standing-desk",
     query: "What is the FlexiSpot E7 Mini, and is it big enough for one or two monitors?",
-    answer: "FlexiSpot E7 Mini is the compact E7 frame intended for 31.5–40-inch desktops, not a generic name for every small FlexiSpot desk. It is a strong fit for a laptop and one monitor. A compact dual-screen layout can work with compatible arms, but two large displays, speakers, paper, or a printer usually justify a 48-inch-or-larger desk. Add desktop thickness to the listed frame height and verify that the selected offer includes the intended E7 Mini frame and top.",
-    updatedAt: cohortReviewUpdatedAt,
+    answer: "FlexiSpot E7 Mini is a compact E7 frame, with 32×24 and 42×24-inch top options on the current official page. Its width tables conflict, so confirm the selected configuration. It is a strong fit for a laptop and one monitor. A compact dual-screen layout can work with compatible arms, but two large displays, speakers, paper, or a printer usually justify a 48-inch-or-larger desk. Add desktop thickness to the listed frame height and verify that the selected offer includes the intended E7 Mini frame and top.",
+    updatedAt: "September 25, 2026",
     preferredPaths: ["/best/ergear-48x24-vs-flexispot-e7-mini", "/reviews/ergear-48x24-electric-standing-desk", "/guides/48-vs-55-inch-desk-guide"],
   },
   {

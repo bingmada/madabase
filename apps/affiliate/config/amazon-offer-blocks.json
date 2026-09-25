@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-24T19:50:00+08:00",
+  "updatedAt": "2026-09-25",
   "pageUpdatedAt": "July 30, 2026",
   "blocks": [
     {
@@ -84,6 +84,116 @@
       "pageUpdatedAt": "September 24, 2026",
       "observedListing": "Amazon Page Not Found",
       "reason": "The former exact Amazon product page could not be found. The Amazon purchase link is paused; any named alternative is a different chair, not the Branch Ergonomic Chair."
+    },
+    {
+      "site": "baby",
+      "slug": "nanit-pro-smart-baby-monitor",
+      "asin": "B0FMZ3H8SB",
+      "status": "unavailable",
+      "checkedAt": "2026-09-25",
+      "pageUpdatedAt": "September 25, 2026",
+      "observedListing": "Amazon Page Not Found",
+      "reason": "The exact Amazon page could not be found. This purchase link is paused pending a verified replacement listing."
+    },
+    {
+      "site": "smarthome",
+      "slug": "govee-wifi-water-leak-detector-3-pack",
+      "asin": "B07J9HZ5VN",
+      "status": "unavailable",
+      "checkedAt": "2026-09-25",
+      "pageUpdatedAt": "September 25, 2026",
+      "observedListing": "Currently unavailable in the checked Amazon buy box",
+      "reason": "The exact three-pack listing showed no available offer in the checked storefront. The purchase link is paused until availability is reverified."
+    },
+    {
+      "site": "baby",
+      "slug": "family-table-booster-seats",
+      "asin": "B01M8QX6OE",
+      "status": "identity-drift",
+      "checkedAt": "2026-09-25",
+      "pageUpdatedAt": "September 25, 2026",
+      "observedListing": "Teal title, Aqua/Grey selected color, and a different selected ASIN",
+      "reason": "The requested Teal booster listing did not consistently identify the recorded variant. The purchase link is paused while the exact model and color are verified."
+    },
+    {
+      "site": "baby",
+      "slug": "family-hip-seat-carriers",
+      "asin": "B0DPHQHWF7",
+      "status": "unavailable",
+      "checkedAt": "2026-09-25",
+      "pageUpdatedAt": "September 25, 2026",
+      "observedListing": "Currently unavailable in the checked Amazon buy box",
+      "reason": "The exact carrier showed no available offer in the checked storefront. The purchase link is paused until availability is reverified."
+    },
+    {
+      "site": "smarthome",
+      "slug": "family-diy-smart-alarm-kits",
+      "asin": "B0DXKDM9TX",
+      "status": "unavailable",
+      "checkedAt": "2026-09-25",
+      "pageUpdatedAt": "September 25, 2026",
+      "observedListing": "Currently unavailable in the checked Amazon buy box",
+      "reason": "The exact 24-piece alarm kit showed no available offer in the checked storefront. The purchase link is paused until availability is reverified."
+    },
+    {
+      "site": "pet",
+      "slug": "family-open-top-self-cleaning-litter-boxes",
+      "asin": "B0H5X15MHS",
+      "status": "unavailable",
+      "checkedAt": "2026-09-25",
+      "pageUpdatedAt": "September 25, 2026",
+      "observedListing": "Currently unavailable in the checked Amazon buy box",
+      "reason": "The exact Gray litter box showed no available offer in the checked storefront. The purchase link is paused until availability is reverified."
+    },
+    {
+      "site": "baby",
+      "slug": "medela-harmony-manual-breast-pump",
+      "asin": "B0C2YYKKZF",
+      "status": "unavailable",
+      "checkedAt": "2026-09-25",
+      "pageUpdatedAt": "September 25, 2026",
+      "observedListing": "Currently unavailable in the checked Amazon buy box",
+      "reason": "The exact Harmony bundle showed no available offer in the checked storefront. The purchase link is paused until availability is reverified."
+    },
+    {
+      "site": "network",
+      "slug": "family-network-attached-storage",
+      "asin": "B0H6PB35VV",
+      "status": "unavailable",
+      "checkedAt": "2026-09-25",
+      "pageUpdatedAt": "September 25, 2026",
+      "observedListing": "Amazon Page Not Found",
+      "reason": "The exact NAS product page could not be found. The purchase link is paused pending a verified exact listing."
+    },
+    {
+      "site": "network",
+      "slug": "netgear-orbi-970-wifi-7-mesh",
+      "asin": "B0CGJGXFCS",
+      "status": "unavailable",
+      "checkedAt": "2026-09-25",
+      "pageUpdatedAt": "September 25, 2026",
+      "observedListing": "Selected RBE973S three-pack shows a Used: Very Good offer from Atomic Cellular",
+      "reason": "The checked purchase box offered a used three-pack, while this review does not evaluate used-unit condition or that seller. The purchase link is paused until a matching new-unit offer is verified."
+    },
+    {
+      "site": "smarthome",
+      "slug": "family-smart-wall-switches",
+      "asin": "B0FXY66W99",
+      "status": "identity-drift",
+      "checkedAt": "2026-09-25",
+      "pageUpdatedAt": "September 25, 2026",
+      "observedListing": "2-gang wall switch lists a 10-kiloamp current rating and 100-volt operating voltage",
+      "reason": "The exact listing gives inconsistent electrical ratings. The purchase link is paused until model-specific ratings and installation instructions can be verified."
+    },
+    {
+      "site": "homeoffice",
+      "slug": "elgato-key-light-neo",
+      "asin": "B0FDBL5MVM",
+      "status": "unavailable",
+      "checkedAt": "2026-09-25",
+      "pageUpdatedAt": "September 25, 2026",
+      "observedListing": "No featured offer; Sellers on Amazon drawer shows only Used - Like New from Gear(4)Less",
+      "reason": "The checked seller list offered a used unit, while this review does not evaluate its condition or that seller. The purchase link is paused until a matching new-unit offer is verified."
     }
   ]
 }

@@ -133,6 +133,7 @@ export type Guide = Publishable & {
   relatedRoundups: string[];
   relatedProducts?: string[];
   relatedGuides?: string[];
+  relatedTools?: string[];
   familySlug?: string;
   familyRole?: "buying" | "comparison" | "fit" | "ownership" | "workflow" | "safety";
 };

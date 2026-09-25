@@ -63,7 +63,7 @@ function pilot3Guide(spec: Pilot3Spec): Guide {
     sections: spec.sections.map(([heading, body]) => ({ heading, body })),
     sources: [
       ...spec.sources,
-      { name: `Amazon ASIN ${spec.asin}`, url: `https://www.amazon.com/dp/${spec.asin}`, note: "Exact US checkout identity for this draft. Recheck the selected variation, seller, included parts, live availability, and any recall notice on release day." },
+      { name: `Amazon ASIN ${spec.asin}`, url: `https://www.amazon.com/dp/${spec.asin}`, note: "Exact US listing reference. Confirm the selected variation, seller, included parts, live availability, and any applicable recall notice before buying." },
     ],
     relatedGuides: spec.relatedGuides,
     relatedRoundups: spec.relatedRoundups ?? [],

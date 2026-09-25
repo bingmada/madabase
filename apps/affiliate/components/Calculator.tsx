@@ -5,7 +5,7 @@ import { useMemo, useState } from "react";
 import type { Tool } from "@/lib/types";
 
 function getDefaultPrimary(kind: Tool["kind"]) {
-  if (kind === "desk") return 68;
+  if (kind === "desk") return 28;
   if (kind === "diapers") return 2;
   if (kind === "wifi") return 1800;
   if (kind === "air") return 240;
@@ -15,6 +15,8 @@ function getDefaultPrimary(kind: Tool["kind"]) {
 }
 
 function getDefaultSecondary(kind: Tool["kind"]) {
+  if (kind === "desk") return 42;
+  if (kind === "diapers") return 7;
   if (kind === "feeding") return 220;
   if (kind === "wifi") return 35;
   if (kind === "air") return 8;
@@ -24,7 +26,7 @@ function getDefaultSecondary(kind: Tool["kind"]) {
 }
 
 function primaryLabel(kind: Tool["kind"]) {
-  if (kind === "desk") return "Your height in inches";
+  if (kind === "desk") return "Seated elbow height from floor (inches)";
   if (kind === "diapers") return "Baby age in months";
   if (kind === "wifi" || kind === "mesh") return "Home size in square feet";
   if (kind === "air") return "Room area in square feet";
@@ -33,6 +35,8 @@ function primaryLabel(kind: Tool["kind"]) {
 }
 
 function secondaryLabel(kind: Tool["kind"]) {
+  if (kind === "desk") return "Standing elbow height from floor (inches)";
+  if (kind === "diapers") return "Days to plan for";
   if (kind === "wifi") return "Connected devices";
   if (kind === "air") return "Ceiling height in feet";
   if (kind === "mesh") return "Number of floors";
@@ -41,29 +45,39 @@ function secondaryLabel(kind: Tool["kind"]) {
 }
 
 function hasSecondaryInput(kind: Tool["kind"]) {
-  return ["feeding", "wifi", "air", "mesh", "matter"].includes(kind);
+  return ["desk", "diapers", "feeding", "wifi", "air", "mesh", "matter"].includes(kind);
 }
 
 export function CalculatorTool({ tool }: { tool: Tool }) {
   const [primary, setPrimary] = useState(getDefaultPrimary(tool.kind));
   const [secondary, setSecondary] = useState(getDefaultSecondary(tool.kind));
+  const [keyboardThickness, setKeyboardThickness] = useState(1);
   const [copied, setCopied] = useState(false);
 
   const result = useMemo(() => {
     if (tool.kind === "desk") {
-      const sitting = Math.round(primary * 0.25 * 10) / 10;
-      const standing = Math.round(primary * 0.59 * 10) / 10;
+      if (![primary, secondary, keyboardThickness].every(Number.isFinite)
+        || primary <= 0 || secondary <= 0 || keyboardThickness < 0
+        || keyboardThickness >= Math.min(primary, secondary)) {
+        return { title: "Check your measurements", lines: ["Enter positive elbow heights and a keyboard thickness smaller than both heights."] };
+      }
+      const sitting = Math.round((primary - keyboardThickness) * 10) / 10;
+      const standing = Math.round((secondary - keyboardThickness) * 10) / 10;
       return {
-        title: "Estimated ergonomic range",
-        lines: [`Sitting desk height: about ${sitting} in`, `Standing desk height: about ${standing} in`, "Fine-tune by elbow angle and shoe height."],
+        title: "Starting surface heights from your measurements",
+        lines: [`Sitting desk surface: about ${sitting} in`, `Standing desk surface: about ${standing} in`, "Surface height = measured elbow height minus keyboard thickness.", "If using a keyboard tray, these are tray heights. Tune with relaxed shoulders and straight wrists; set the monitor separately."],
       };
     }
 
     if (tool.kind === "diapers") {
+      if (!Number.isFinite(primary) || primary < 0 || !Number.isFinite(secondary) || secondary < 1) {
+        return { title: "Check your planning inputs", lines: ["Enter an age of zero months or more and at least one day."] };
+      }
       const daily = primary <= 1 ? 10 : primary <= 3 ? 8 : primary <= 8 ? 7 : 5;
+      const days = Math.ceil(secondary);
       return {
         title: "Estimated diaper planning number",
-        lines: [`About ${daily} diapers per day`, `About ${daily * 7} diapers per week`, "Keep one backup pack before changing sizes."],
+        lines: [`About ${daily} diapers per day`, `About ${daily * days} diapers for ${days} day${days === 1 ? "" : "s"}`, "This age-based planning default is not a changing schedule. Use your observed daily use when it differs, and allow a small reserve without overbuying one size."],
       };
     }
 
@@ -128,7 +142,7 @@ export function CalculatorTool({ tool }: { tool: Tool }) {
       title: "Estimated meal split",
       lines: [`${meals} meals per day`, `About ${Math.round(calories / meals)} kcal per meal`, "Use your vet's calorie target for medical diets."],
     };
-  }, [primary, secondary, tool.kind]);
+  }, [primary, secondary, keyboardThickness, tool.kind]);
 
   async function copyPlan() {
     try {
@@ -146,23 +160,28 @@ export function CalculatorTool({ tool }: { tool: Tool }) {
         <Calculator aria-hidden="true" size={20} />
         <h2 className="text-xl font-bold">{tool.title}</h2>
       </div>
+      {tool.kind === "desk" ? <p className="mt-4 text-sm leading-6 text-[var(--muted)]">Replace the example measurements with your own. With shoulders relaxed and forearms roughly level, measure floor to elbow while seated with feet supported, then while standing in your usual shoes and on your usual mat. Measure keyboard thickness from its support surface to the typing keys.</p> : null}
       <div className="mt-5 grid gap-4 sm:grid-cols-2">
         <label className="block">
           <span className="text-sm font-semibold text-[var(--muted)]">
             {primaryLabel(tool.kind)}
           </span>
-          <input className="mt-2 w-full rounded-md border border-[var(--border)] px-3 py-2" type="number" value={primary} min={tool.kind === "matter" ? 0 : 1} onChange={(event) => setPrimary(Number(event.target.value))} />
+          <input className="mt-2 w-full rounded-md border border-[var(--border)] px-3 py-2" type="number" step={tool.kind === "desk" ? "0.1" : "1"} value={primary} min={tool.kind === "matter" || tool.kind === "diapers" ? 0 : 1} onChange={(event) => setPrimary(Number(event.target.value))} />
         </label>
         {hasSecondaryInput(tool.kind) ? (
           <label className="block">
             <span className="text-sm font-semibold text-[var(--muted)]">{secondaryLabel(tool.kind)}</span>
-            <input className="mt-2 w-full rounded-md border border-[var(--border)] px-3 py-2" type="number" value={secondary} min={tool.kind === "matter" ? 0 : 1} onChange={(event) => setSecondary(Number(event.target.value))} />
+            <input className="mt-2 w-full rounded-md border border-[var(--border)] px-3 py-2" type="number" step={tool.kind === "desk" ? "0.1" : "1"} value={secondary} min={tool.kind === "matter" ? 0 : 1} onChange={(event) => setSecondary(Number(event.target.value))} />
           </label>
         ) : (
           <div className="rounded-md bg-[var(--surface-muted)] p-4 text-sm leading-6 text-[var(--muted)]">
             This estimate is a planning aid. Product fit still depends on your room, routine, and product limits.
           </div>
         )}
+        {tool.kind === "desk" ? <label className="block">
+          <span className="text-sm font-semibold text-[var(--muted)]">Keyboard thickness (inches)</span>
+          <input className="mt-2 w-full rounded-md border border-[var(--border)] px-3 py-2" type="number" step="0.1" min="0" value={keyboardThickness} onChange={(event) => setKeyboardThickness(Number(event.target.value))} />
+        </label> : null}
       </div>
       <div className="mt-5 rounded-md bg-[var(--brand-soft)] p-4">
         <p className="font-bold text-[var(--brand-strong)]">{result.title}</p>
@@ -183,6 +202,7 @@ export function CalculatorTool({ tool }: { tool: Tool }) {
           onClick={() => {
             setPrimary(getDefaultPrimary(tool.kind));
             setSecondary(getDefaultSecondary(tool.kind));
+            setKeyboardThickness(1);
           }}
         >
           <RotateCcw aria-hidden="true" size={16} />

@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-09-25T09:29:44+08:00",
+  "environment": "local release in Chrome, 390×844 mobile override, override reset afterwards",
+  "checks": [
+    {
+      "page": "homeoffice/tools/desk-height-calculator",
+      "passed": [
+        "28/42/1 gives 27/41 inches",
+        "28.5/43.2/0.7 gives 27.8/42.5 inches",
+        "thickness 50 rejects calculation",
+        "negative elbow height rejects calculation",
+        "reset restores defaults",
+        "final page names the Okin desk rather than an unrelated chair",
+        "390 px viewport has 390 px document width"
+      ]
+    },
+    {
+      "page": "baby/tools/diaper-usage-calculator",
+      "passed": [
+        "default age 2 / 7 days gives 56",
+        "age 0 gives 70 for 7 days",
+        "age 3 / 3.5 days rounds up to 32 for 4 days",
+        "zero days rejects calculation",
+        "reset restores age 2 / 7 days",
+        "no affiliate purchase anchor",
+        "390 px viewport has 390 px document width"
+      ]
+    },
+    {
+      "page": "baby/guides/infant-bath-tubs-safety-and-skip-guide",
+      "passed": [
+        "readable mobile layout",
+        "no horizontal overflow",
+        "no completed broken images"
+      ]
+    },
+    {
+      "page": "wellness/categories/lingerie",
+      "passed": [
+        "paused exact underwire offer has visible sold-out reason and no purchase anchor",
+        "other named product retains its own link",
+        "no horizontal overflow",
+        "no completed broken images"
+      ]
+    }
+  ],
+  "failed": 0
+}

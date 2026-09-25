@@ -1,0 +1,540 @@
+{
+  "checkedAt": "2026-09-25T01:06:26.503Z",
+  "mode": "local",
+  "includeMarkets": true,
+  "concurrency": 12,
+  "baseUrls": 32,
+  "exactUrls": 32,
+  "passed": 0,
+  "failed": 32,
+  "noCta": 32,
+  "commercePaused": 0,
+  "bySite": {
+    "costume": {
+      "checked": 32,
+      "failed": 32,
+      "noCta": 32,
+      "commercePaused": 0
+    }
+  },
+  "byKind": {
+    "review": {
+      "checked": 0,
+      "failed": 0,
+      "noCta": 0,
+      "commercePaused": 0
+    },
+    "guide": {
+      "checked": 26,
+      "failed": 26,
+      "noCta": 26,
+      "commercePaused": 0
+    },
+    "roundup": {
+      "checked": 1,
+      "failed": 1,
+      "noCta": 1,
+      "commercePaused": 0
+    },
+    "tool": {
+      "checked": 0,
+      "failed": 0,
+      "noCta": 0,
+      "commercePaused": 0
+    },
+    "category": {
+      "checked": 5,
+      "failed": 5,
+      "noCta": 5,
+      "commercePaused": 0
+    },
+    "catalog-product": {
+      "checked": 0,
+      "failed": 0,
+      "noCta": 0,
+      "commercePaused": 0
+    }
+  },
+  "failureDetails": [
+    {
+      "url": "https://costumes.madabase.com/best/halloween-animatronics-small-yards-and-porches",
+      "site": "costume",
+      "kind": "roundup",
+      "market": "us",
+      "status": 200,
+      "amazonCtas": 0,
+      "cjCtas": 0,
+      "firstViewportCtas": 0,
+      "ctaBeforeFirstImage": false,
+      "commercePaused": false,
+      "errors": [
+        "missing sponsored Amazon/CJ CTA"
+      ]
+    },
+    {
+      "url": "https://costumes.madabase.com/categories/accessories-party-effects",
+      "site": "costume",
+      "kind": "category",
+      "market": "us",
+      "status": 200,
+      "amazonCtas": 0,
+      "cjCtas": 0,
+      "firstViewportCtas": 0,
+      "ctaBeforeFirstImage": false,
+      "commercePaused": false,
+      "errors": [
+        "missing sponsored Amazon/CJ CTA"
+      ]
+    },
+    {
+      "url": "https://costumes.madabase.com/categories/costumes",
+      "site": "costume",
+      "kind": "category",
+      "market": "us",
+      "status": 200,
+      "amazonCtas": 0,
+      "cjCtas": 0,
+      "firstViewportCtas": 0,
+      "ctaBeforeFirstImage": false,
+      "commercePaused": false,
+      "errors": [
+        "missing sponsored Amazon/CJ CTA"
+      ]
+    },
+    {
+      "url": "https://costumes.madabase.com/categories/masks-prosthetics",
+      "site": "costume",
+      "kind": "category",
+      "market": "us",
+      "status": 200,
+      "amazonCtas": 0,
+      "cjCtas": 0,
+      "firstViewportCtas": 0,
+      "ctaBeforeFirstImage": false,
+      "commercePaused": false,
+      "errors": [
+        "missing sponsored Amazon/CJ CTA"
+      ]
+    },
+    {
+      "url": "https://costumes.madabase.com/categories/props-animatronics",
+      "site": "costume",
+      "kind": "category",
+      "market": "us",
+      "status": 200,
+      "amazonCtas": 0,
+      "cjCtas": 0,
+      "firstViewportCtas": 0,
+      "ctaBeforeFirstImage": false,
+      "commercePaused": false,
+      "errors": [
+        "missing sponsored Amazon/CJ CTA"
+      ]
+    },
+    {
+      "url": "https://costumes.madabase.com/categories/wigs-makeup",
+      "site": "costume",
+      "kind": "category",
+      "market": "us",
+      "status": 200,
+      "amazonCtas": 0,
+      "cjCtas": 0,
+      "firstViewportCtas": 0,
+      "ctaBeforeFirstImage": false,
+      "commercePaused": false,
+      "errors": [
+        "missing sponsored Amazon/CJ CTA"
+      ]
+    },
+    {
+      "url": "https://costumes.madabase.com/guides/adult-costumes-buying-guide",
+      "site": "costume",
+      "kind": "guide",
+      "market": "us",
+      "status": 200,
+      "amazonCtas": 0,
+      "cjCtas": 0,
+      "firstViewportCtas": 0,
+      "ctaBeforeFirstImage": false,
+      "commercePaused": false,
+      "errors": [
+        "missing sponsored Amazon/CJ CTA"
+      ]
+    },
+    {
+      "url": "https://costumes.madabase.com/guides/child-costumes-buying-guide",
+      "site": "costume",
+      "kind": "guide",
+      "market": "us",
+      "status": 200,
+      "amazonCtas": 0,
+      "cjCtas": 0,
+      "firstViewportCtas": 0,
+      "ctaBeforeFirstImage": false,
+      "commercePaused": false,
+      "errors": [
+        "missing sponsored Amazon/CJ CTA"
+      ]
+    },
+    {
+      "url": "https://costumes.madabase.com/guides/costume-prop-care-and-storage-guide",
+      "site": "costume",
+      "kind": "guide",
+      "market": "us",
+      "status": 200,
+      "amazonCtas": 0,
+      "cjCtas": 0,
+      "firstViewportCtas": 0,
+      "ctaBeforeFirstImage": false,
+      "commercePaused": false,
+      "errors": [
+        "missing sponsored Amazon/CJ CTA"
+      ]
+    },
+    {
+      "url": "https://costumes.madabase.com/guides/costume-rental-vs-buying-guide",
+      "site": "costume",
+      "kind": "guide",
+      "market": "us",
+      "status": 200,
+      "amazonCtas": 0,
+      "cjCtas": 0,
+      "firstViewportCtas": 0,
+      "ctaBeforeFirstImage": false,
+      "commercePaused": false,
+      "errors": [
+        "missing sponsored Amazon/CJ CTA"
+      ]
+    },
+    {
+      "url": "https://costumes.madabase.com/guides/costume-sizing-measurements-and-returns",
+      "site": "costume",
+      "kind": "guide",
+      "market": "us",
+      "status": 200,
+      "amazonCtas": 0,
+      "cjCtas": 0,
+      "firstViewportCtas": 0,
+      "ctaBeforeFirstImage": false,
+      "commercePaused": false,
+      "errors": [
+        "missing sponsored Amazon/CJ CTA"
+      ]
+    },
+    {
+      "url": "https://costumes.madabase.com/guides/costume-wigs-buying-guide",
+      "site": "costume",
+      "kind": "guide",
+      "market": "us",
+      "status": 200,
+      "amazonCtas": 0,
+      "cjCtas": 0,
+      "firstViewportCtas": 0,
+      "ctaBeforeFirstImage": false,
+      "commercePaused": false,
+      "errors": [
+        "missing sponsored Amazon/CJ CTA"
+      ]
+    },
+    {
+      "url": "https://costumes.madabase.com/guides/costume-wigs-compatibility-and-fit-guide",
+      "site": "costume",
+      "kind": "guide",
+      "market": "us",
+      "status": 200,
+      "amazonCtas": 0,
+      "cjCtas": 0,
+      "firstViewportCtas": 0,
+      "ctaBeforeFirstImage": false,
+      "commercePaused": false,
+      "errors": [
+        "missing sponsored Amazon/CJ CTA"
+      ]
+    },
+    {
+      "url": "https://costumes.madabase.com/guides/costume-wigs-ownership-cost-and-maintenance",
+      "site": "costume",
+      "kind": "guide",
+      "market": "us",
+      "status": 200,
+      "amazonCtas": 0,
+      "cjCtas": 0,
+      "firstViewportCtas": 0,
+      "ctaBeforeFirstImage": false,
+      "commercePaused": false,
+      "errors": [
+        "missing sponsored Amazon/CJ CTA"
+      ]
+    },
+    {
+      "url": "https://costumes.madabase.com/guides/costume-wigs-vs-alternatives",
+      "site": "costume",
+      "kind": "guide",
+      "market": "us",
+      "status": 200,
+      "amazonCtas": 0,
+      "cjCtas": 0,
+      "firstViewportCtas": 0,
+      "ctaBeforeFirstImage": false,
+      "commercePaused": false,
+      "errors": [
+        "missing sponsored Amazon/CJ CTA"
+      ]
+    },
+    {
+      "url": "https://costumes.madabase.com/guides/halloween-fog-machine-lighting-power-guide",
+      "site": "costume",
+      "kind": "guide",
+      "market": "us",
+      "status": 200,
+      "amazonCtas": 0,
+      "cjCtas": 0,
+      "firstViewportCtas": 0,
+      "ctaBeforeFirstImage": false,
+      "commercePaused": false,
+      "errors": [
+        "missing sponsored Amazon/CJ CTA"
+      ]
+    },
+    {
+      "url": "https://costumes.madabase.com/guides/high-end-costumes-buying-guide",
+      "site": "costume",
+      "kind": "guide",
+      "market": "us",
+      "status": 200,
+      "amazonCtas": 0,
+      "cjCtas": 0,
+      "firstViewportCtas": 0,
+      "ctaBeforeFirstImage": false,
+      "commercePaused": false,
+      "errors": [
+        "missing sponsored Amazon/CJ CTA"
+      ]
+    },
+    {
+      "url": "https://costumes.madabase.com/guides/historical-theatrical-costumes-buying-guide",
+      "site": "costume",
+      "kind": "guide",
+      "market": "us",
+      "status": 200,
+      "amazonCtas": 0,
+      "cjCtas": 0,
+      "firstViewportCtas": 0,
+      "ctaBeforeFirstImage": false,
+      "commercePaused": false,
+      "errors": [
+        "missing sponsored Amazon/CJ CTA"
+      ]
+    },
+    {
+      "url": "https://costumes.madabase.com/guides/large-prop-animatronic-space-and-power-checklist",
+      "site": "costume",
+      "kind": "guide",
+      "market": "us",
+      "status": 200,
+      "amazonCtas": 0,
+      "cjCtas": 0,
+      "firstViewportCtas": 0,
+      "ctaBeforeFirstImage": false,
+      "commercePaused": false,
+      "errors": [
+        "missing sponsored Amazon/CJ CTA"
+      ]
+    },
+    {
+      "url": "https://costumes.madabase.com/guides/mascot-costumes-buying-guide",
+      "site": "costume",
+      "kind": "guide",
+      "market": "us",
+      "status": 200,
+      "amazonCtas": 0,
+      "cjCtas": 0,
+      "firstViewportCtas": 0,
+      "ctaBeforeFirstImage": false,
+      "commercePaused": false,
+      "errors": [
+        "missing sponsored Amazon/CJ CTA"
+      ]
+    },
+    {
+      "url": "https://costumes.madabase.com/guides/mask-and-prosthetic-fit-materials-guide",
+      "site": "costume",
+      "kind": "guide",
+      "market": "us",
+      "status": 200,
+      "amazonCtas": 0,
+      "cjCtas": 0,
+      "firstViewportCtas": 0,
+      "ctaBeforeFirstImage": false,
+      "commercePaused": false,
+      "errors": [
+        "missing sponsored Amazon/CJ CTA"
+      ]
+    },
+    {
+      "url": "https://costumes.madabase.com/guides/masks-and-masquerade-buying-guide",
+      "site": "costume",
+      "kind": "guide",
+      "market": "us",
+      "status": 200,
+      "amazonCtas": 0,
+      "cjCtas": 0,
+      "firstViewportCtas": 0,
+      "ctaBeforeFirstImage": false,
+      "commercePaused": false,
+      "errors": [
+        "missing sponsored Amazon/CJ CTA"
+      ]
+    },
+    {
+      "url": "https://costumes.madabase.com/guides/professional-costume-vs-standard-costume",
+      "site": "costume",
+      "kind": "guide",
+      "market": "us",
+      "status": 200,
+      "amazonCtas": 0,
+      "cjCtas": 0,
+      "firstViewportCtas": 0,
+      "ctaBeforeFirstImage": false,
+      "commercePaused": false,
+      "errors": [
+        "missing sponsored Amazon/CJ CTA"
+      ]
+    },
+    {
+      "url": "https://costumes.madabase.com/guides/props-and-animatronics-buying-guide",
+      "site": "costume",
+      "kind": "guide",
+      "market": "us",
+      "status": 200,
+      "amazonCtas": 0,
+      "cjCtas": 0,
+      "firstViewportCtas": 0,
+      "ctaBeforeFirstImage": false,
+      "commercePaused": false,
+      "errors": [
+        "missing sponsored Amazon/CJ CTA"
+      ]
+    },
+    {
+      "url": "https://costumes.madabase.com/guides/props-and-animatronics-compatibility-and-fit-guide",
+      "site": "costume",
+      "kind": "guide",
+      "market": "us",
+      "status": 200,
+      "amazonCtas": 0,
+      "cjCtas": 0,
+      "firstViewportCtas": 0,
+      "ctaBeforeFirstImage": false,
+      "commercePaused": false,
+      "errors": [
+        "missing sponsored Amazon/CJ CTA"
+      ]
+    },
+    {
+      "url": "https://costumes.madabase.com/guides/props-and-animatronics-ownership-cost-and-maintenance",
+      "site": "costume",
+      "kind": "guide",
+      "market": "us",
+      "status": 200,
+      "amazonCtas": 0,
+      "cjCtas": 0,
+      "firstViewportCtas": 0,
+      "ctaBeforeFirstImage": false,
+      "commercePaused": false,
+      "errors": [
+        "missing sponsored Amazon/CJ CTA"
+      ]
+    },
+    {
+      "url": "https://costumes.madabase.com/guides/props-and-animatronics-vs-alternatives",
+      "site": "costume",
+      "kind": "guide",
+      "market": "us",
+      "status": 200,
+      "amazonCtas": 0,
+      "cjCtas": 0,
+      "firstViewportCtas": 0,
+      "ctaBeforeFirstImage": false,
+      "commercePaused": false,
+      "errors": [
+        "missing sponsored Amazon/CJ CTA"
+      ]
+    },
+    {
+      "url": "https://costumes.madabase.com/guides/prosthetics-special-effects-buying-guide",
+      "site": "costume",
+      "kind": "guide",
+      "market": "us",
+      "status": 200,
+      "amazonCtas": 0,
+      "cjCtas": 0,
+      "firstViewportCtas": 0,
+      "ctaBeforeFirstImage": false,
+      "commercePaused": false,
+      "errors": [
+        "missing sponsored Amazon/CJ CTA"
+      ]
+    },
+    {
+      "url": "https://costumes.madabase.com/guides/special-effects-makeup-skin-contact-removal-guide",
+      "site": "costume",
+      "kind": "guide",
+      "market": "us",
+      "status": 200,
+      "amazonCtas": 0,
+      "cjCtas": 0,
+      "firstViewportCtas": 0,
+      "ctaBeforeFirstImage": false,
+      "commercePaused": false,
+      "errors": [
+        "missing sponsored Amazon/CJ CTA"
+      ]
+    },
+    {
+      "url": "https://costumes.madabase.com/guides/theatrical-face-body-makeup-buying-guide",
+      "site": "costume",
+      "kind": "guide",
+      "market": "us",
+      "status": 200,
+      "amazonCtas": 0,
+      "cjCtas": 0,
+      "firstViewportCtas": 0,
+      "ctaBeforeFirstImage": false,
+      "commercePaused": false,
+      "errors": [
+        "missing sponsored Amazon/CJ CTA"
+      ]
+    },
+    {
+      "url": "https://costumes.madabase.com/guides/when-to-order-a-halloween-costume",
+      "site": "costume",
+      "kind": "guide",
+      "market": "us",
+      "status": 200,
+      "amazonCtas": 0,
+      "cjCtas": 0,
+      "firstViewportCtas": 0,
+      "ctaBeforeFirstImage": false,
+      "commercePaused": false,
+      "errors": [
+        "missing sponsored Amazon/CJ CTA"
+      ]
+    },
+    {
+      "url": "https://costumes.madabase.com/guides/wig-facial-hair-and-makeup-planning-guide",
+      "site": "costume",
+      "kind": "guide",
+      "market": "us",
+      "status": 200,
+      "amazonCtas": 0,
+      "cjCtas": 0,
+      "firstViewportCtas": 0,
+      "ctaBeforeFirstImage": false,
+      "commercePaused": false,
+      "errors": [
+        "missing sponsored Amazon/CJ CTA"
+      ]
+    }
+  ]
+}

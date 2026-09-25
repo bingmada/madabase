@@ -8,7 +8,7 @@ import { BaseMarketEditionLinks } from "@/components/MarketExperience";
 import { SearchOpportunityBacklinks, SearchOpportunityBlock } from "@/components/SearchOpportunityBlock";
 import { StyleGuidePage } from "@/components/StyleExperience";
 import { TrackedCommerceLink } from "@/components/TrackedCommerceLink";
-import { findGuide, findProduct, findRoundup, siteGuideFamily, siteGuides } from "@/lib/content";
+import { findGuide, findProduct, findRoundup, findTool, siteGuideFamily, siteGuides } from "@/lib/content";
 import { effectiveContentUpdatedAt, findSearchOpportunity, searchOpportunityMetaDescription } from "@/lib/search-opportunities";
 import { breadcrumbSchema, guideSchema, itemListSchema, pageMetadata } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
@@ -288,7 +288,8 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
     asin: amazonFamilyProduct.asin,
     specs: { ASIN: amazonFamilyProduct.asin },
   } : undefined;
-  const amazonFamilyOffer = amazonFamilyProduct ? {
+  const amazonFamilyBlock = amazonFamilyProduct?.offerBlock;
+  const amazonFamilyOffer = amazonFamilyProduct && !amazonFamilyBlock ? {
     merchant: "Amazon US",
     url: amazonAsinAffiliateUrl(site.key, amazonFamilyProduct.asin),
     label: "Check this exact ASIN on Amazon",
@@ -326,7 +327,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
       )
     : undefined);
   const commercePathPaused = Boolean(
-    (topProduct || topRoundup)
+    amazonFamilyBlock || (topProduct || topRoundup)
     && !commerceProduct
     && !amazonFamilyOffer
     && !cjFamilyAffiliateOffer
@@ -389,7 +390,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
           <p className="eyebrow">{guide.category}</p>
         )}
         <h1 className="mt-3 text-3xl font-black leading-tight sm:text-4xl">{guide.title}</h1>
-        {topProduct || topRoundup || commerceProduct || amazonFamilyOffer || cjFamilyAffiliateOffer || costumeCommerceProduct ? (
+        {topProduct || topRoundup || commerceProduct || amazonFamilyProduct || cjFamilyAffiliateOffer || costumeCommerceProduct ? (
           <section
             className="mt-4 rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-4 sm:mt-5 sm:p-5"
             aria-label="First-screen purchase path"
@@ -402,7 +403,11 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
                 <h2 className="text-lg font-bold sm:text-xl">
                   {topProduct?.name ?? amazonFamilyProduct?.title ?? commerceProduct?.name ?? costumeCommerceProduct?.title ?? "Compare the short list"}
                 </h2>
-                {commerceIsAlternative && commerceProduct && !amazonFamilyOffer && !cjFamilyAffiliateOffer ? (
+                {amazonFamilyBlock ? (
+                  <p className="mt-2 max-w-xl text-sm leading-5 text-[var(--muted)]">
+                    Listing checked {amazonFamilyBlock.checkedAt}: {amazonFamilyBlock.reason}
+                  </p>
+                ) : commerceIsAlternative && commerceProduct && !amazonFamilyOffer && !cjFamilyAffiliateOffer ? (
                   <p className="mt-2 max-w-xl text-sm leading-5 text-[var(--muted)]">
                     Different product: the exact {topProduct?.name} link is paused. This button is for the verified alternative {commerceProduct.name}.
                   </p>
@@ -413,7 +418,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
                 ) : null}
               </div>
               <div className="flex shrink-0 flex-wrap gap-2 sm:justify-end">
-                {amazonFamilyProduct && amazonFamilyIdentity && amazonFamilyOffer ? (
+                {amazonFamilyBlock ? null : amazonFamilyProduct && amazonFamilyIdentity && amazonFamilyOffer ? (
                   <AffiliateButton site={site.key} product={amazonFamilyIdentity} offer={amazonFamilyOffer} position="guide-first-viewport-family-amazon" resolveCreatorsListing={false} firstViewport />
                 ) : cjFamilyOffer && cjFamilyIdentity && cjFamilyAffiliateOffer ? (
                   <AffiliateButton site={site.key} product={cjFamilyIdentity} offer={cjFamilyAffiliateOffer} position="guide-first-viewport-family-cj" resolveCreatorsListing={false} firstViewport />
@@ -436,7 +441,9 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
               </div>
             </div>
             <p className="mt-3 text-xs leading-5 text-[var(--muted)]">
-              {costumeCommerceProduct
+              {amazonFamilyBlock
+                ? "The exact purchase link is paused. Use the guidance below to assess fit and alternatives."
+                : costumeCommerceProduct
                 ? `Open the exact ${costumeCommerceProduct.title} listing to compare the live price, availability, delivery, and returns.`
                 : amazonFamilyProduct
                   ? "Open the exact family listing to compare the live price, availability, delivery, seller, and returns."
@@ -507,7 +514,6 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
           <section className="mt-8 rounded-md border border-[var(--brand)] bg-[var(--brand-soft)] p-5" aria-labelledby="guide-search-question">
             <p className="eyebrow">Common buying question</p>
             <h2 className="mt-2 text-2xl font-bold" id="guide-search-question">{guide.searchQuestion}</h2>
-            {guide.governance ? <p className="mt-3 leading-7 text-[var(--muted)]">{guide.governance.distinctFrom}</p> : null}
           </section>
         ) : null}
         {searchOpportunity ? <SearchOpportunityBlock opportunity={searchOpportunity} /> : null}
@@ -668,8 +674,8 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         ) : null}
         {guide.editorialMethod?.length ? (
           <section className="mt-10 rounded-md border border-[var(--border)] bg-white p-5" aria-labelledby="editorial-method">
-            <p className="eyebrow">How this page was governed</p>
-            <h2 className="mt-3 text-2xl font-bold" id="editorial-method">Page-specific editorial method</h2>
+            <p className="eyebrow">Research notes</p>
+            <h2 className="mt-3 text-2xl font-bold" id="editorial-method">How we evaluated these choices</h2>
             <ol className="mt-4 space-y-3 text-sm leading-6 text-[var(--muted)]">
               {guide.editorialMethod.map((item, index) => <li key={item}><span className="mr-2 font-bold text-[var(--text)]">{index + 1}.</span>{item}</li>)}
             </ol>
@@ -710,6 +716,14 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
           </div>
         </section> : null}
         <div className="mt-10 grid gap-4 sm:grid-cols-2">
+          {(guide.relatedTools ?? []).map((toolSlug) => {
+            const tool = findTool(site.key, toolSlug);
+            return tool ? <Link className="panel p-5" href={`/tools/${tool.slug}`} key={tool.slug}>
+              <p className="eyebrow">Calculate your setup</p>
+              <h2 className="mt-3 text-xl font-bold">{tool.title}</h2>
+              <p className="mt-3 leading-7 text-[var(--muted)]">{tool.dek}</p>
+            </Link> : null;
+          })}
           {relatedGuides.map((item) => (
             <Link className="panel p-5" href={`/guides/${item.slug}`} key={item.slug}>
               <p className="eyebrow">Related guide</p>

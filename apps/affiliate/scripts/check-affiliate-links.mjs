@@ -99,12 +99,37 @@ function isAffiliateUrl(value) {
   }
 }
 
-function affiliateUrlsBelow(node) {
-  const urls = [];
+// An offer can omit its tag in source because rendering adds the site's tag.
+// Only apply this broader match inside explicit offer fields, not references.
+function isAmazonOfferUrl(value) {
+  if (isAffiliateUrl(value)) return true;
+  try {
+    return isAmazonHost(new URL(value).hostname);
+  } catch {
+    return false;
+  }
+}
+
+function affiliateUrlsBelow(node, bindings) {
+  const urls = new Set();
+
+  function resolve(value, seen = new Set()) {
+    if (!value || seen.has(value)) return undefined;
+    seen.add(value);
+    if (ts.isIdentifier(value)) return resolve(bindings.get(value.text), seen);
+    if (ts.isPropertyAccessExpression(value)) {
+      const object = resolve(value.expression, seen);
+      return object && ts.isObjectLiteralExpression(object)
+        ? resolve(propertyValue(object, value.name.text), seen)
+        : undefined;
+    }
+    return value;
+  }
 
   function visit(child) {
-    if (ts.isStringLiteral(child) && isAffiliateUrl(child.text)) {
-      urls.push(child.text);
+    const value = literalText(resolve(child));
+    if (value && isAmazonOfferUrl(value)) {
+      urls.add(value);
     }
 
     if (
@@ -114,14 +139,14 @@ function affiliateUrlsBelow(node) {
     ) {
       const asin = literalText(child.arguments[0]);
       const url = fallbackAmazonUrl(asin);
-      if (url) urls.push(url);
+      if (url) urls.add(url);
     }
 
     ts.forEachChild(child, visit);
   }
 
   visit(node);
-  return urls;
+  return [...urls];
 }
 
 function fallbackAmazonUrl(asin) {
@@ -149,6 +174,15 @@ function buildInventory() {
       true,
       ts.ScriptKind.TS,
     );
+    const bindings = new Map();
+    for (const statement of sourceFile.statements) {
+      if (!ts.isVariableStatement(statement)) continue;
+      for (const declaration of statement.declarationList.declarations) {
+        if (ts.isIdentifier(declaration.name) && declaration.initializer) {
+          bindings.set(declaration.name.text, declaration.initializer);
+        }
+      }
+    }
 
     function add(url, details = {}) {
       const current = records.get(url) ?? {
@@ -186,12 +220,12 @@ function buildInventory() {
         const affiliateUrl = literalText(propertyValue(node, "affiliateUrl"));
 
         if (slug && offers) {
-          for (const url of affiliateUrlsBelow(offers)) {
-            add(url, { slug, site, expectedAsin });
+          for (const url of affiliateUrlsBelow(offers, bindings)) {
+            add(url, { slug, site, expectedAsin: expectedAsin ?? asinFromUrl(url) });
           }
         }
 
-        if (slug && affiliateUrl && isAffiliateUrl(affiliateUrl)) {
+        if (slug && affiliateUrl && isAmazonOfferUrl(affiliateUrl)) {
           add(affiliateUrl, { slug, site, expectedAsin });
         } else if (slug && affiliateUrl?.startsWith("PENDING-")) {
           const url = fallbackAmazonUrl(expectedAsin);

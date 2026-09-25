@@ -56,6 +56,13 @@ const okinRollingDeskAlternative: Product = {
   ],
 };
 
+export function findCommerceProduct(site: SiteKey, slug: string) {
+  return findProduct(site, slug)
+    ?? (site === okinRollingDeskAlternative.site && slug === okinRollingDeskAlternative.slug
+      ? okinRollingDeskAlternative
+      : undefined);
+}
+
 function explicitGuideAlternative(site: SiteKey, guide: Guide) {
   if (site === "homeoffice" && guide.slug === "standing-desk-casters-stability-guide") {
     return okinRollingDeskAlternative;
@@ -148,6 +155,12 @@ export function roundupCommerceProduct(site: SiteKey, roundup: Roundup) {
 }
 
 export function toolCommerceProduct(site: SiteKey, tool: Tool) {
+  // Diaper quantities cannot establish fit for a sterilizer or other feeding appliance.
+  if (tool.kind === "diapers") return undefined;
+  if (site === "homeoffice" && tool.kind === "desk") {
+    return firstPurchasable(productsFromRoundups(site, tool.relatedRoundups))
+      ?? okinRollingDeskAlternative;
+  }
   return firstPurchasable([
     ...productsFromRoundups(site, tool.relatedRoundups),
     ...categoryProducts(site, tool.category),

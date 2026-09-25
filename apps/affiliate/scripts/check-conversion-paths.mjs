@@ -143,6 +143,8 @@ function expandMarketRoutes(urls) {
   for (const value of urls) {
     const url = new URL(value);
     if (!contentPathPattern.test(url.pathname)) continue;
+    // Costume has no country editions. Do not invent 404 routes for this audit.
+    if (url.hostname === siteHosts.costume) continue;
     for (const market of marketPrefixes) {
       expanded.push(normalizeUrl(new URL(`/${market}${url.pathname}`, url.origin).toString()));
     }
@@ -201,6 +203,8 @@ async function inspectPage(publicUrl) {
       .sort((a, b) => a - b)[0] ?? -1;
     const firstViewportContainerIndex = html.indexOf("data-first-viewport-commerce=");
     const commercePaused = html.includes('data-commerce-paused="true"');
+    const informationalCalculator = site === "baby"
+      && /^\/(?:en-gb\/|en-ca\/|de-de\/|nl-nl\/)?tools\/diaper-usage-calculator\/?$/.test(url.pathname);
     const firstH1CloseIndex = html.indexOf("</h1>");
     // Keep this check scoped to the initial decision area. Larger slices reach
     // valid bottom-of-page methodology text in Next.js output and create false
@@ -239,8 +243,9 @@ async function inspectPage(publicUrl) {
       // A merchant-integrity pause is an explicit safe state, not a missing
       // conversion path. The page must label it instead of substituting an
       // unrelated product merely to satisfy the CTA audit.
-      if (!commercePaused) errors.push("missing sponsored Amazon/CJ CTA");
+      if (!commercePaused && !informationalCalculator) errors.push("missing sponsored Amazon/CJ CTA");
     } else {
+      if (informationalCalculator) errors.push("unrelated commerce CTA on diaper quantity calculator");
       if (!firstViewportAnchors.length) errors.push("missing designated first-viewport affiliate CTA");
       if (!firstViewportAnchors.some((anchor) => anchor.ctaIntent === "price-availability")) {
         errors.push("first-viewport CTA does not state the price-and-availability intent");

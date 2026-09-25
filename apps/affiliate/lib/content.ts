@@ -1,5 +1,7 @@
 import type { Guide, Product, Roundup, SiteKey, Tool } from "./types";
 import { applyIndexingRepair } from "./indexing-repair-content";
+import { applyLowClickRepair } from "./low-click-repairs";
+import { isBlockedAmazonSource } from "./amazon-offer-blocks";
 import {
   isConsolidatedFamilyHub,
   isConsolidatedSupportGuide,
@@ -232,15 +234,16 @@ export const products: Product[] = [
     slug: "furbo-360-dog-camera",
     asin: "B0BWN22T25",
     seoTitle: "Furbo 360 Review: Is It Free Without Furbo Nanny?",
-    updatedAt: "August 13, 2026",
+    updatedAt: "September 24, 2026",
     name: "Furbo 360 Dog Camera",
+    amazonTitle: "Furbo 360 Dog Camera — Paid Plan Required to Activate",
     brand: "Furbo",
     category: "home-care",
     image: "/images/affiliate/pet-furbo-360-dog-camera-editorial-realistic.webp",
     summary: "A research-based Furbo 360 review answering whether Furbo Nanny is required, which standalone features stay free, what the current US plans cost, and how to avoid buying a subscription-linked camera by mistake.",
-    verdict: "Furbo 360 is a good fit when live check-ins, two-way audio, bark alerts, tracking, and treat tossing will become part of a calm routine. Furbo Nanny is not required for a standalone camera: skip the paid plan if live view and manual check-ins are enough; otherwise budget from the current $9.99-per-month Standard list price and verify whether the selected offer carries a minimum subscription commitment.",
+    verdict: "The linked Amazon ASIN B0BWN22T25 requires a paid plan to activate and currently states a three-month minimum. Choose it only if the subscription and treat-tossing routine are useful. A separately sold standalone Furbo can retain basic free features, but that does not describe this linked offer.",
     whyItMatters: "The camera price is only half of this decision. Owners need to separate the useful free controls from paid detection and cloud history, compare the current plan's billed total and renewal terms, and make sure the dog reacts calmly to the motor, voice, and treat launcher.",
-    bestFor: "Dog owners who want rotating live view, two-way audio, and treat tossing",
+    bestFor: "Dog owners who accept a paid activation plan for rotating view and treat tossing",
     priceBand: "$$",
     rating: 4.5,
     scores: [
@@ -248,8 +251,8 @@ export const products: Product[] = [
       { label: "Alerts", value: 8 },
       { label: "Interaction", value: 9 },
     ],
-    pros: ["Standalone models retain live view, two-way audio, treat tossing, and bark alerts without Furbo Nanny", "1080p camera, night vision, and rotating view cover more of an open room", "Live-view Auto Dog Tracking can follow movement without a Nanny subscription"],
-    cons: ["Furbo Nanny Standard currently lists from $9.99 per month in the US", "Subscription Required listings can impose a minimum paid-plan commitment", "Treat size, stable placement, 2.4GHz Wi-Fi, and the dog's reaction all need checking"],
+    pros: ["Live view, two-way audio, treat tossing, and bark alerts in an activated camera", "1080p camera, night vision, and rotating view cover more of an open room", "Live-view Auto Dog Tracking can follow movement without a Nanny subscription"],
+    cons: ["Linked ASIN requires a paid plan to activate; three-month minimum shown", "Subscription Required listings can impose a minimum paid-plan commitment", "Treat size, stable placement, 2.4GHz Wi-Fi, and the dog's reaction all need checking"],
     specs: {
       ASIN: "B0BWN22T25",
       Camera: "1080p FHD; 132° lens; 4x digital zoom; automatic night vision",
@@ -260,15 +263,16 @@ export const products: Product[] = [
       "App requirements": "iOS 14+ or Android 10+ listed",
       "Nanny list pricing": "US Standard $9.99 monthly; Premium $12.49 monthly; longer terms reduce the monthly equivalent",
       "Extra cameras": "$2 per month for each additional camera on Standard and Premium",
-      "Purchase plan": "Confirm standalone or Subscription Required before checkout",
+      "Purchase plan": "Paid plan required to activate; three-month minimum shown on linked ASIN",
     },
     evidence: [
-      "Confirm whether the selected Amazon offer is the standalone camera or a Subscription Required model and read the minimum term",
+      "ASIN B0BWN22T25 was verified as Paid Plan Required to Activate on September 24, 2026; read its three-month minimum, renewal, and cancellation terms",
       "Map free live-view, audio, treat, bark-alert, and live-tracking features separately from paid cloud and AI features",
       "Place the camera on a stable surface within the official height and router-distance guidance without obstructing rotation",
       "Introduce the sound, movement, voice, and treat launcher while someone is home before using them remotely",
     ],
     editorialSections: [
+      { heading: "The linked camera requires a paid activation plan", body: "Amazon currently identifies ASIN B0BWN22T25 as the paid-plan-required model, with a three-month subscription minimum. Do not buy this offer expecting free standalone activation. Compare the camera charge plus the committed service term, renewal price, and cancellation conditions before checkout." },
       {
         heading: "A note about this guide",
         body: "This is a research-based buying guide built from Furbo's product and support pages; it is not a hands-on camera or behavior test. Furbo sells similar hardware through standalone and subscription-linked offers, so current checkout terms take priority over older reviews or screenshots.",
@@ -327,7 +331,7 @@ export const products: Product[] = [
       },
     ],
     offers: [
-      { merchant: "Amazon US", url: "https://amzn.to/43SYVR1", label: "Check standalone camera price on Amazon", priceNote: "Check the live price, selected model, and whether checkout says standalone or Subscription Required." },
+      { merchant: "Amazon US", url: "https://www.amazon.com/dp/B0BWN22T25", label: "Check Furbo paid-plan camera on Amazon", priceNote: "ASIN B0BWN22T25 requires a paid plan to activate; three-month minimum shown. Confirm total cost, renewal, and cancellation terms." },
     ],
   },
   {
@@ -560,7 +564,7 @@ export const products: Product[] = [
     site: "homeoffice",
     slug: "flexispot-e7-mini-standing-desk",
     seoTitle: "FlexiSpot E7 Mini Review: Dimensions, Height & Small-Desk Fit",
-    updatedAt: "July 13, 2026",
+    updatedAt: "September 24, 2026",
     asin: "B0F9X3FDYY",
     name: "FlexiSpot E7 Mini Standing Desk",
     brand: "FlexiSpot",
@@ -578,17 +582,17 @@ export const products: Product[] = [
       { label: "Accessory needs", value: 7 },
     ],
     pros: ["Official listed desktop range is designed around compact tops", "22.8–48.4-inch frame range covers a broad set of seated and standing positions", "Listed 352-pound capacity and memory presets are unusual strengths for a compact frame"],
-    cons: ["A 31.5–40-inch top leaves limited room for two monitors, a printer, or large speakers", "Final working height depends on the desktop thickness, not only the frame specification", "Monitor-arm clamps, the frame, and cable management can compete for the same small underside area"],
+    cons: ["A compact top leaves limited room for two monitors, a printer, or large speakers", "Final working height depends on the desktop thickness, not only the frame specification", "Monitor-arm clamps, the frame, and cable management can compete for the same small underside area"],
     specs: {
       ASIN: "B0F9X3FDYY",
       "Product type": "Electric compact standing desk",
-      "Applicable desktop": "31.5–40 in × 23.6–31.5 in (official listed range)",
+      "Applicable desktop": "Official page conflicts: 31.5–40 vs 31.5–45 in wide; 23.6–31.5 in deep; verify chosen top",
       "Frame height": "22.8–48.4 in without desktop",
       "Listed load capacity": "352 lb",
       Frame: "T-shaped, high-strength steel",
       Controller: "Programmable memory presets",
       "Cable management": "Cable tray listed",
-      Warranty: "15 years listed by FlexiSpot; confirm retailer and regional terms",
+      Warranty: "15 years listed for frame/mechanisms/electronics; desktop coverage varies by material",
     },
     evidence: [
       "Confirm that the Amazon configuration is the E7 Mini and check whether the selected option includes both the frame and desktop.",
@@ -604,7 +608,7 @@ export const products: Product[] = [
       },
       {
         heading: "The Mini is a different footprint, not just a shorter E7",
-        body: "FlexiSpot lists the E7 Mini for desktops from 31.5 to 40 inches in one direction and 23.6 to 31.5 inches in the other. That compact range is the point of the model: it is intended for bedrooms, closet offices, and narrow work corners. Do not assume a listing for the standard E7 has the same frame, desktop range, or included parts.",
+        body: "FlexiSpot's current page disagrees with itself: its comparison shows 31.5–40-inch desktop widths, its specification table shows 31.5–45 inches, and its selector includes 32×24 and 42×24-inch tops. Check the chosen top and frame together; do not treat 40 inches as a verified maximum or transfer standard E7 specifications to the Mini.",
       },
       {
         heading: "Measure the complete room, not only the desktop",
@@ -646,7 +650,7 @@ export const products: Product[] = [
     site: "homeoffice",
     slug: "uplift-v3-standing-desk",
     seoTitle: "UPLIFT V3 Standing Desk: Size, Height & Fit Guide",
-    updatedAt: "July 2, 2026",
+    updatedAt: "September 24, 2026",
     name: "UPLIFT V3 Standing Desk",
     brand: "UPLIFT Desk",
     category: "desks",
@@ -695,7 +699,7 @@ export const products: Product[] = [
       },
       {
         heading: "UPLIFT V3 versus FlexiSpot E7 Mini",
-        body: "Choose the E7 Mini when the room demands a 31.5–40-inch top and a simple laptop-plus-monitor layout. Choose the V3 when a 42-inch-or-larger surface, broader desktop selection, and room for a heavier multi-monitor setup justify the added cost and footprint.",
+        body: "Compare the exact E7 Mini top with the exact V3 configuration. FlexiSpot currently offers compact 32×24 and 42×24-inch options, so 42 inches alone does not distinguish the models. Choose by usable depth, minimum surface height, frame clearance, and the equipment that must fit.",
       },
       {
         heading: "Who should skip it",
@@ -1526,7 +1530,7 @@ export const roundups: Roundup[] = [
     slug: "best-standing-desks-for-small-spaces",
     seoTitle: "Best Small Standing Desks: 3 Compact and Narrow Picks",
     title: "Best Standing Desk for Small Spaces: 3 Compact Picks",
-    updatedAt: "August 20, 2026",
+    updatedAt: "September 24, 2026",
     dek: "Compare three compact standing desks for bedrooms and apartments by footprint, depth, wheels, monitor placement, cable travel, and stability.",
     category: "desks",
     intent: "Find a standing desk that fits a bedroom, rental, or apartment corner without feeling like a temporary folding table.",
@@ -1568,7 +1572,7 @@ export const roundups: Roundup[] = [
       title: "Compact standing desk fit comparison",
       columns: ["ErGear 48×24", "FlexiSpot E7 Mini", "UPLIFT V3"],
       rows: [
-        { label: "Space profile", values: ["Fixed 48×24-in top", "31.5–40-in official desktop range", "42–80-in supported desktop range"] },
+        { label: "Space profile", values: ["Fixed 48×24-in top", "32×24 and 42×24-in options; official width tables conflict", "42–80-in supported desktop range"] },
         { label: "Best reason to choose", values: ["Occasional room-to-room movement", "Purpose-built narrow frame", "More surface and configuration choice"] },
         { label: "Main fit check", values: ["Caster height and locked stability", "Top depth and clamp clearance", "Permanent floor space and assembly"] },
         { label: "Skip when", values: ["Heavy arm or immovable feel is essential", "Two large monitors need broad surface area", "The room cannot support a 42-in-or-wider top"] },
@@ -2018,26 +2022,32 @@ export const guides: Guide[] = [
     title: "Correct Standing Desk Height: Elbow Check and Setup Guide",
     dek: "Find the correct standing desk height from your relaxed elbow position, then account for shoes, floor mats, keyboard thickness, monitor height, and the desk's real adjustment range.",
     category: "desks",
-    updatedAt: "August 23, 2026",
+    updatedAt: "September 24, 2026",
     quickAnswer: "The correct standing desk height puts the keyboard near relaxed elbow height with shoulders down and wrists close to neutral. A generic height chart is only a starting estimate: stand in the shoes or mat you use, bend the elbows about 90 degrees, set the keyboard surface just below them, then adjust the monitor separately so you do not raise the desk to fix screen height.",
     relatedRoundups: ["best-standing-desks-for-small-spaces"],
     relatedProducts: ["flexispot-e7-mini-standing-desk"],
+    relatedTools: ["desk-height-calculator"],
+    relatedGuides: ["48-vs-55-inch-desk-guide", "small-home-office-setup-guide"],
     comparisonTable: {
-      title: "Tune each part of a sit-stand workstation separately",
-      columns: ["Sitting check", "Standing check", "Adjustment method"],
+      title: "Build a desk-height chart from your own measurements",
+      columns: ["Measure", "How to use it", "Example only"],
       rows: [
-        { label: "Keyboard", values: ["Relaxed elbows and shoulders", "Relaxed elbows with shoes or mat included", "Desk height or keyboard tray"] },
-        { label: "Monitor", values: ["Comfortable distance without leaning", "Readable without lifting the chin", "Monitor stand or compatible arm"] },
-        { label: "Lower body", values: ["Feet supported and chair correctly set", "Balanced stance with room to move", "Chair, footrest, mat, and position changes"] },
-        { label: "Desk range", values: ["Reaches the tuned seated surface", "Reaches the tuned standing surface", "Confirm final top thickness and accessories"] },
+        { label: "Seated elbow", values: ["Floor to relaxed elbow with feet supported", "Starting seated key height", "28 in / 71.1 cm"] },
+        { label: "Standing elbow", values: ["Floor to relaxed elbow with usual shoes and mat", "Starting standing key height", "42 in / 106.7 cm"] },
+        { label: "Keyboard thickness", values: ["Support surface to the typing keys", "Subtract from each elbow measurement", "1 in / 2.5 cm"] },
+        { label: "Desk or tray surface", values: ["Elbow height minus keyboard thickness", "Tune while typing; check the desk can reach both", "27 in seated; 41 in standing"] },
       ],
     },
     sources: [
       { name: "OSHA computer workstation positions", url: "https://www.osha.gov/etools/computer-workstations/positions", note: "Primary neutral-position and posture-change guidance." },
       { name: "OSHA monitor guidance", url: "https://www.osha.gov/etools/computer-workstations/components/monitors", note: "Primary monitor distance and position guidance." },
+      { name: "OSHA workstation purchasing checklist", url: "https://www.osha.gov/etools/computer-workstations/checklists/purchasing-guide", note: "Keyboard near elbow height, adjustable work surfaces, and space for the monitor and input devices." },
     ],
     sections: [
       { heading: "Use elbow height as the starting point", body: "The keyboard should sit near relaxed elbow height while shoulders stay down. A desk that cannot reach both sitting and standing elbow height will force posture compromises." },
+      { heading: "Measure first, then subtract keyboard thickness", body: "Sit with feet supported and shoulders relaxed, hold the forearms roughly level, and measure from the floor to the elbow. Repeat while standing in your normal setup. Subtract the distance from the keyboard's supporting surface to its typing keys to get starting desk or tray heights. The table uses example measurements, not a prescription for a particular body height. Use the linked desk-height calculator for your own numbers." },
+      { heading: "What about a standing desk height for 5 ft 4, 5 ft 7, or 6 ft?", body: "Two people of the same height can have different arm and torso proportions. A body-height chart cannot account for chair adjustment or keyboard thickness. Use it only to shortlist a desk's range; keep your measured seated and standing surface heights as the actual purchase checks." },
+      { heading: "Desk height, width, and depth solve different problems", body: "Height sets the typing position. Width must fit the equipment side by side; depth must leave room for the keyboard and a comfortable screen distance. Tape the chosen footprint in the room, include the monitor stand or arm and chair path, then check those dimensions separately from the lift range." },
       { heading: "Account for shoes and floor mats", body: "Standing height changes with shoes, anti-fatigue mats, and keyboard trays. Measure the real setup rather than relying only on a generic height chart." },
       { heading: "Monitor height is separate", body: "Desk height sets keyboard and mouse position. Monitor height often needs a stand or arm so the screen can meet eye level without raising the keyboard too high." },
       { heading: "Presets help only after tuning", body: "Memory buttons are useful once the heights are correct. Spend time dialing in the numbers before treating presets as solved ergonomics." },
@@ -2301,17 +2311,17 @@ export const tools: Tool[] = [
     site: "homeoffice",
     slug: "desk-height-calculator",
     title: "Desk Height Calculator for Sitting and Standing",
-    dek: "Estimate starting sitting and standing keyboard-height targets from your height, then tune them to relaxed elbow position.",
+    dek: "Calculate sitting and standing desk surface heights from measured elbow heights and keyboard thickness, then fine-tune the real workstation.",
     category: "ergonomics",
-    updatedAt: "July 26, 2026",
+    updatedAt: "September 24, 2026",
     kind: "desk",
     sections: [
-      { heading: "Treat the result as a starting keyboard height", body: "The estimate scales from total height, but arm, torso, leg, shoe, and chair proportions differ. Set the keyboard near relaxed elbow height, keep shoulders down and wrists neutral, then adjust the desk rather than forcing the body to match the number." },
+      { heading: "Use measured elbow height, not a body-height multiplier", body: "Replace the example inputs with floor-to-elbow measurements in both positions. The calculator subtracts keyboard thickness from each measurement to estimate the surface supporting the keyboard. For a keyboard tray, the result describes the tray, not the desktop. Start there, type briefly, and fine-tune while keeping shoulders relaxed and wrists straight." },
       { heading: "Measure the complete sitting and standing setup", body: "For sitting, include chair height and whether the feet rest flat or on a footrest. For standing, include shoes, an anti-fatigue mat, desktop thickness, and any keyboard tray. Confirm that the desk reaches both positions without operating at an uncomfortable limit." },
       { heading: "Set the monitor separately", body: "Keyboard height controls the hands and shoulders; monitor position controls viewing distance and neck posture. Use the display stand or a compatible monitor arm to tune the screen without raising the keyboard surface too high." },
     ],
     faqs: [
-      { question: "Is the calculated desk height exact?", answer: "No. It is a screening estimate. Fine-tune it around relaxed elbow position, neutral wrists, comfortable shoulders, chair fit, shoes, and the actual keyboard thickness." },
+      { question: "Is the calculated desk height exact?", answer: "No. It is a starting surface height based on your measurements. The default values are examples. Fine-tune with your actual chair, shoes, mat, keyboard, relaxed shoulders, and straight wrists." },
       { question: "Why is my current desk different from the estimate?", answer: "Chair height, arm proportions, desktop thickness, keyboard trays, shoes, and floor mats all change the real working surface. Comfort and neutral posture matter more than matching a generic number." },
     ],
     relatedRoundups: ["best-standing-desks-for-small-spaces"],
@@ -2322,7 +2332,7 @@ export const tools: Tool[] = [
     title: "Diaper Usage Calculator by Age and Days",
     dek: "Estimate daily and weekly diaper usage by age range before planning subscriptions, registry quantities, or a short-term supply.",
     category: "feeding",
-    updatedAt: "July 26, 2026",
+    updatedAt: "September 24, 2026",
     kind: "diapers",
     sections: [
       { heading: "Use the estimate for supply planning, not a changing rule", body: "The calculator applies a broad age-based planning range. Feeding patterns, sleep, illness, childcare routines, diaper type, and the individual baby can move actual usage up or down. Change a diaper when needed and follow pediatric guidance rather than delaying a change to match a budget estimate." },
@@ -2333,7 +2343,7 @@ export const tools: Tool[] = [
       { question: "How many extra diapers should I keep?", answer: "Keep enough for an ordinary delivery delay or a short unexpected change in routine, but avoid stockpiling so many that the baby outgrows the size before the packs are opened." },
       { question: "Does diaper use always fall with age?", answer: "The broad planning average often falls, but individual routines vary. Track the baby's actual use and follow healthcare guidance when output or health is a concern." },
     ],
-    relatedRoundups: ["best-bottle-sterilizers-and-dryers"],
+    relatedRoundups: [],
   },
 ];
 
@@ -2409,7 +2419,8 @@ guides.push(...broadProductPilot3Guides);
 guides.push(...breadthDraft120PlusGuides);
 
 for (let index = 0; index < guides.length; index += 1) {
-  guides[index] = applyIndexingRepair(guides[index]);
+  const repaired = applyLowClickRepair(applyIndexingRepair(guides[index]));
+  guides[index] = { ...repaired, sources: repaired.sources?.filter((source) => !isBlockedAmazonSource(repaired.site, source.url)) };
 }
 
 const includeDrafts = process.env.AFFILIATE_INCLUDE_DRAFTS === "1";

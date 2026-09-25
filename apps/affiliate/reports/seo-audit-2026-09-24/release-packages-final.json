@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-09-25T09:29:44+08:00",
+  "packages": [
+    {
+      "app": "affiliate",
+      "path": "apps/affiliate/.release/affiliate-runtime.tgz",
+      "bytes": 60873911,
+      "sha256": "5452695a40221ac3fb770e49e48103ddb4f0df52b892f77e00755955adc1e0d0",
+      "builtAndPackaged": true,
+      "published": false
+    },
+    {
+      "app": "wellness",
+      "path": "apps/wellness/.release/wellness-runtime.tgz",
+      "bytes": 20632786,
+      "sha256": "d48213b0a00c65f4dec34e1b01ac4b555541928cd802508b44d6f42eeaa9c349",
+      "builtAndPackaged": true,
+      "published": false
+    }
+  ],
+  "main": "Previous 4883d9c Main package retained; no Main code changed in this continuation.",
+  "publication": "Excluded by owner instruction; no server start/restart/release or indexing submission."
+}

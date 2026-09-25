@@ -1,0 +1,35 @@
+{
+  "status": "Blocked by Google property URL inspection daily quota; do not claim these URLs inspected.",
+  "remaining": 23,
+  "urls": [
+    "https://baby.madabase.com/guides/travel-cribs-playards-vs-alternatives",
+    "https://baby.madabase.com/guides/nursery-glider-chairs-setup-and-daily-workflow",
+    "https://baby.madabase.com/guides/nursery-humidifiers-vs-alternatives",
+    "https://baby.madabase.com/guides/nursery-humidifiers-safety-and-skip-guide",
+    "https://network.madabase.com/guides/poe-splitters-vs-alternatives",
+    "https://network.madabase.com/guides/outdoor-wifi-access-points-vs-alternatives",
+    "https://network.madabase.com/guides/wifi-range-extenders-vs-alternatives",
+    "https://network.madabase.com/guides/powerline-network-adapters-vs-alternatives",
+    "https://network.madabase.com/guides/usb-c-ethernet-adapters-vs-alternatives",
+    "https://network.madabase.com/guides/poe-extenders-vs-alternatives",
+    "https://network.madabase.com/guides/sfp-plus-transceivers-compatibility-and-fit-guide",
+    "https://network.madabase.com/guides/fiber-media-converters-vs-alternatives",
+    "https://network.madabase.com/guides/network-attached-storage-vs-alternatives",
+    "https://network.madabase.com/guides/dual-wan-routers-compatibility-and-fit-guide",
+    "https://network.madabase.com/guides/five-g-home-internet-gateways-compatibility-and-fit-guide",
+    "https://network.madabase.com/guides/ethernet-cable-testers-compatibility-and-fit-guide",
+    "https://pets.madabase.com/guides/cat-gps-trackers-setup-and-daily-workflow",
+    "https://pets.madabase.com/guides/airtag-pet-collar-holders-setup-and-daily-workflow",
+    "https://pets.madabase.com/guides/microchip-pet-doors-vs-alternatives",
+    "https://pets.madabase.com/guides/cat-litter-mats-compatibility-and-fit-guide",
+    "https://pets.madabase.com/guides/cooling-pet-beds-setup-and-daily-workflow",
+    "https://pets.madabase.com/guides/automatic-aquarium-feeders-setup-and-daily-workflow",
+    "https://pets.madabase.com/guides/aquarium-water-monitors-setup-and-daily-workflow"
+  ],
+  "repairRunChecked": [
+    "https://smarthome.madabase.com/guides/matter-smart-bulbs-vs-alternatives",
+    "https://baby.madabase.com/guides/baby-wraps-slings-vs-alternatives"
+  ],
+  "checkedAt": "2026-09-25",
+  "quotaEvidence": "You have exceeded your property's URL inspection quota. Quota is renewed daily."
+}

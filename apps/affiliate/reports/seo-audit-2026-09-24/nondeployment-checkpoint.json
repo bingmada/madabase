@@ -1,0 +1,80 @@
+{
+  "updatedAt": "2026-09-25T09:29:44+08:00",
+  "status": "available-local-work-completed-external-verification-blocked-unpublished",
+  "scope": [
+    "main",
+    "network",
+    "smarthome",
+    "homeoffice",
+    "baby",
+    "pet",
+    "style",
+    "costume",
+    "wellness"
+  ],
+  "excluded": [
+    "standalone test",
+    "standalone tools",
+    "server publication"
+  ],
+  "baselineSitemapPages": 1401,
+  "priorityPagesReviewed": 53,
+  "priorityActions": {
+    "repair": 6,
+    "optimize": 16,
+    "retain": 31
+  },
+  "exactQueryReviews": 53,
+  "merchantUniqueReviewed": 305,
+  "activeAmazonLinkFormatChecks": 294,
+  "newAmazonOffersPaused": 11,
+  "newWellnessOffersPaused": 2,
+  "gscInspected": 92,
+  "gscRemaining": 23,
+  "validation": {
+    "priorityAndMerchantPages": "82/82",
+    "amazonConversionRoutes": "5930/5930, including 153 explicit commerce-paused routes",
+    "wellnessPages": "12/12",
+    "wellnessRedirects": "13/13; 11 active, 2 blocked; no external tracking clicks",
+    "interactive": "interactive-runtime-final.json",
+    "eslint": "Affiliate and Wellness passed",
+    "seo": "passed",
+    "pageOneCTR": "passed",
+    "build": "Affiliate and Wellness production builds, types and packages passed",
+    "costume": "32 local data-dependent routes remain unverified, not passed"
+  },
+  "blocked": [
+    {
+      "type": "gsc-index-inspection",
+      "count": 23,
+      "evidence": "remaining-live-inspections.json",
+      "reason": "Google property daily URL inspection quota exceeded; 92/115 examined, including 86 newly recorded indexed URLs.",
+      "next": "Resume these exact 23 URLs after the property quota renews; do not resubmit all inspected URLs."
+    },
+    {
+      "type": "costume-data-and-merchant-validation",
+      "count": 32,
+      "evidence": "conversion-paths-costume-final.json",
+      "reason": "The existing local DATABASE_URL points to localhost:5432; application catalog queries fail. Public Santa detail returned HTTP 403 on Sep 25 and authorized CJ SFTP read timed out during handshake.",
+      "next": "With working existing catalog access, recheck 32 editorial/category purchase paths, the 76 product discovery paths, and two same-name Santa candidates. Do not merge candidates without exact merchant identity."
+    },
+    {
+      "type": "production-validation",
+      "reason": "Server publication explicitly excluded. Source repairs, 6 indexing repairs, 37 discovery fixes and QA exclusion have not been verified on a switched production release.",
+      "next": "Owner-controlled release and public verification remain separate; no recovery or SEO lift claimed."
+    },
+    {
+      "type": "merchant-region-stock",
+      "reason": "Regional restrictions and unspecified stock were retained as limits; 305 reviewed identities do not imply all US variants are in stock.",
+      "evidence": "merchant-decisions-final.json"
+    },
+    {
+      "type": "attribution-observation",
+      "reason": "CJ earnings remain unavailable, Amazon Other attribution unresolved, and historical Clarity QA contamination cannot be removed retroactively; no invented earnings or retagging."
+    }
+  ],
+  "publications": 0,
+  "indexingSubmissions": 0,
+  "report": "completion-2026-09-25.md",
+  "localValidationProcessesStopped": true
+}

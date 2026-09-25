@@ -20,6 +20,8 @@ import { absoluteUrl } from "@/lib/seo";
 import type { SiteConfig } from "@/lib/sites";
 import { findProduct } from "@/lib/content";
 import { amazonAsinAffiliateUrl } from "@/lib/affiliate-tracking";
+import { findCommerceProduct } from "@/lib/commerce-paths";
+import { findAmazonOfferBlock } from "@/lib/amazon-offer-blocks";
 import { buyerFacingBody, buyerFacingHeading } from "@/lib/conversion-copy";
 
 function marketEditionLinks(currentMarket: MarketProfile, basePath = "/") {
@@ -310,9 +312,15 @@ export function LocalizedMarketContent({
   const product = page.primaryProductSlug
     ? findProduct(site.key, page.primaryProductSlug)
     : undefined;
-  const commerceProduct = page.commerceProductSlug
-    ? findProduct(site.key, page.commerceProductSlug)
+  const commerceProduct = page.commercePausedReason ? undefined : page.commerceProductSlug
+    ? findCommerceProduct(site.key, page.commerceProductSlug)
     : product;
+  const productOfferBlock = !commerceProduct?.offers.length && product ? findAmazonOfferBlock(product) : undefined;
+  const commercePausedReason = page.commercePausedReason ?? (productOfferBlock
+    ? `Listing checked ${productOfferBlock.checkedAt}: ${productOfferBlock.reason}`
+    : product && !commerceProduct?.offers.length && !page.commerceFamilyAsin
+      ? "No verified purchase offer is available for this product. Check the named manufacturer's current configuration and buying terms before ordering."
+      : undefined);
   const commerceIsAlternative = Boolean(product && commerceProduct && product.slug !== commerceProduct.slug);
   const displayName = product?.amazonTitle ?? product?.name ?? page.sourceTitle ?? page.slug;
   const displayImage =
@@ -398,7 +406,13 @@ export function LocalizedMarketContent({
           <article className="min-w-0">
             <p className="eyebrow">{market.labels.edition} · {site.name}</p>
             <h1 className="mt-3 text-4xl font-black leading-tight">{variant.title}</h1>
-            {(marketProduct && marketProduct.offers.length) || (commerceFamilyIdentity && commerceFamilyOffer) ? (
+            {commercePausedReason ? (
+              <section className="mt-4 rounded-md border border-[var(--border)] bg-white p-4" aria-label="Exact retailer link paused" data-first-viewport-commerce="true" data-commerce-paused="true">
+                <p className="eyebrow">Exact retailer link paused</p>
+                <p className="mt-2 text-sm leading-5">{page.commerceFamilyTitle}</p>
+                <p className="mt-2 text-sm leading-5 text-[var(--muted)]">{commercePausedReason}</p>
+              </section>
+            ) : (marketProduct && marketProduct.offers.length) || (commerceFamilyIdentity && commerceFamilyOffer) ? (
               <section className="mt-4 rounded-md border border-[var(--border)] bg-white p-4 sm:mt-5" aria-label="First-screen retailer option" data-first-viewport-commerce="true">
                 <p className="eyebrow">{commerceIsAlternative ? "Different product · verified alternative" : market.labels.quickAnswer}</p>
                 <p className="mt-2 text-sm font-semibold leading-5 text-[var(--muted)]">
