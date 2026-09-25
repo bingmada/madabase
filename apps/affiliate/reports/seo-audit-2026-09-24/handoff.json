@@ -91,7 +91,7 @@
     "dueZeroInspected": 92,
     "dueZeroRemaining": 23,
     "inspectionBlocker": "Google property daily URL inspection quota exceeded",
-    "sourceCommit": "see Git commit containing completion-2026-09-25.md",
+    "sourceCommit": "8055b15",
     "additionalMerchantRepair": "HON corrected to B06Y3PGPR2; Branch B0GWGK4JFK blocked after Page Not Found",
     "productionSwitched": false,
     "serverIncident": {
@@ -141,7 +141,7 @@
       "build": "Affiliate and Wellness production builds, types and packages passed",
       "costume": "32 local data-dependent routes remain unverified, not passed"
     },
-    "finalAffiliateSourceCommit": "see Git commit containing completion-2026-09-25.md",
+    "finalAffiliateSourceCommit": "8055b15",
     "localValidationProcessesStopped": true,
     "priorityActions": {
       "repair": 6,

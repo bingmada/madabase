@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-15T11:30:00+08:00",
+  "updatedAt": "2026-09-25T09:29:44+08:00",
   "purpose": "Tracked cross-conversation snapshot. Read this before every affiliate operation, then read docs/affiliate-growth-state.json and docs/affiliate-growth-runbook.md for the mutable history and operating rules.",
   "siteScopeDecision20260913": {
     "tools": "retired_owner_decision",
@@ -335,17 +335,70 @@
   },
   "searchExposureGates": {
     "expansion757": {
-      "complete7Days": { "exposedUrls": 360, "zeroImpressionUrls": 397, "clicks": 1, "impressions": 1119, "weightedPosition": 38.527 },
-      "latest24Hours": { "exposedUrls": 111, "clicks": 0, "impressions": 172, "weightedPosition": 42.698 },
-      "previous24Hours": { "exposedUrls": 108, "clicks": 0, "impressions": 176, "weightedPosition": 46.137 },
-      "zeroBySite": { "baby": 71, "costume": 38, "homeoffice": 71, "network": 52, "pet": 103, "smarthome": 62 },
+      "complete7Days": {
+        "exposedUrls": 360,
+        "zeroImpressionUrls": 397,
+        "clicks": 1,
+        "impressions": 1119,
+        "weightedPosition": 38.527
+      },
+      "latest24Hours": {
+        "exposedUrls": 111,
+        "clicks": 0,
+        "impressions": 172,
+        "weightedPosition": 42.698
+      },
+      "previous24Hours": {
+        "exposedUrls": 108,
+        "clicks": 0,
+        "impressions": 176,
+        "weightedPosition": 46.137
+      },
+      "zeroBySite": {
+        "baby": 71,
+        "costume": 38,
+        "homeoffice": 71,
+        "network": 52,
+        "pet": 103,
+        "smarthome": 62
+      },
       "roleEvidence": {
-        "buying": { "exposed": 42, "zero": 112, "impressions": 129, "position": 51.442 },
-        "comparison": { "exposed": 84, "zero": 70, "impressions": 256, "position": 40.601 },
-        "fit": { "exposed": 69, "zero": 85, "impressions": 238, "position": 39.992 },
-        "ownership": { "exposed": 72, "zero": 82, "impressions": 156, "position": 17.700 },
-        "safety": { "exposed": 18, "zero": 6, "impressions": 53, "position": 43.811 },
-        "workflow": { "exposed": 75, "zero": 42, "impressions": 287, "position": 40.003 }
+        "buying": {
+          "exposed": 42,
+          "zero": 112,
+          "impressions": 129,
+          "position": 51.442
+        },
+        "comparison": {
+          "exposed": 84,
+          "zero": 70,
+          "impressions": 256,
+          "position": 40.601
+        },
+        "fit": {
+          "exposed": 69,
+          "zero": 85,
+          "impressions": 238,
+          "position": 39.992
+        },
+        "ownership": {
+          "exposed": 72,
+          "zero": 82,
+          "impressions": 156,
+          "position": 17.7
+        },
+        "safety": {
+          "exposed": 18,
+          "zero": 6,
+          "impressions": 53,
+          "position": 43.811
+        },
+        "workflow": {
+          "exposed": 75,
+          "zero": 42,
+          "impressions": 287,
+          "position": 40.003
+        }
       },
       "action": "All 757 URLs now have crawlable direct links from their 19 category pages, grouped by search intent. Ownership, the strongest observed role, is ordered early. Category ItemList JSON-LD and sitemap lastmod 2026-08-16 were added or refreshed.",
       "firstClick": "The first observed click for this expansion landed on https://pets.madabase.com/guides/open-top-self-cleaning-litter-boxes-setup-and-daily-workflow at position 4 in the previous rolling 24-hour window. Query text was anonymized by Search Console. Its exact B0H5X15MHS, madapets-20 and first-viewport commerce path are healthy; protect this intent.",
@@ -364,28 +417,88 @@
       "nextAction": "Resume the exact remaining 207 rows on 2026-08-22 after quota renewal; never report the 410-URL inspection as complete before they are resolved."
     },
     "existingRankingRefresh118": {
-      "complete7Days": { "exposedUrls": 100, "zeroImpressionUrls": 18, "clicks": 24, "impressions": 2705, "ctr": "0.887%", "weightedPosition": 19.790 },
-      "previousComplete7Days": { "exposedUrls": 92, "zeroImpressionUrls": 26, "clicks": 14, "impressions": 1946, "ctr": "0.719%", "weightedPosition": 20.189 },
-      "latest24Hours": { "clicks": 2, "impressions": 319, "exposedUrls": 73, "ctr": "0.627%", "weightedPosition": 22.141 },
-      "previous24Hours": { "clicks": 5, "impressions": 349, "exposedUrls": 71, "ctr": "1.433%", "weightedPosition": 18.352 },
+      "complete7Days": {
+        "exposedUrls": 100,
+        "zeroImpressionUrls": 18,
+        "clicks": 24,
+        "impressions": 2705,
+        "ctr": "0.887%",
+        "weightedPosition": 19.79
+      },
+      "previousComplete7Days": {
+        "exposedUrls": 92,
+        "zeroImpressionUrls": 26,
+        "clicks": 14,
+        "impressions": 1946,
+        "ctr": "0.719%",
+        "weightedPosition": 20.189
+      },
+      "latest24Hours": {
+        "clicks": 2,
+        "impressions": 319,
+        "exposedUrls": 73,
+        "ctr": "0.627%",
+        "weightedPosition": 22.141
+      },
+      "previous24Hours": {
+        "clicks": 5,
+        "impressions": 349,
+        "exposedUrls": 71,
+        "ctr": "1.433%",
+        "weightedPosition": 18.352
+      },
       "action": "Keep the evidence-positive refresh: complete-window clicks increased from 14 to 24 and zero-exposure URLs fell from 26 to 18. Inspect the remaining exact zero rows; do not broadly rewrite protected winners or held pages."
     },
     "titleExperiment3": {
-      "complete7Days": { "clicks": 0, "impressions": 187, "weightedPosition": 15.474 },
-      "urls": {
-        "furbo": { "impressions": 61, "position": 20.74 },
-        "tapoP110MHomeAssistant": { "impressions": 60, "position": 14.37 },
-        "caldigit": { "impressions": 66, "position": 11.61 }
+      "complete7Days": {
+        "clicks": 0,
+        "impressions": 187,
+        "weightedPosition": 15.474
       },
-      "latest24Hours": { "clicks": 0, "impressions": 16, "position": 25.06 },
-      "previous24Hours": { "clicks": 0, "impressions": 26, "position": 18.27 },
+      "urls": {
+        "furbo": {
+          "impressions": 61,
+          "position": 20.74
+        },
+        "tapoP110MHomeAssistant": {
+          "impressions": 60,
+          "position": 14.37
+        },
+        "caldigit": {
+          "impressions": 66,
+          "position": 11.61
+        }
+      },
+      "latest24Hours": {
+        "clicks": 0,
+        "impressions": 16,
+        "position": 25.06
+      },
+      "previous24Hours": {
+        "clicks": 0,
+        "impressions": 26,
+        "position": 18.27
+      },
       "gate": "Do not change these titles before Day 7 on 2026-08-20."
     },
     "softLaunch151": {
       "state": "public_indexable_sitemap_included_google_and_indexnow_submitted",
-      "complete7Days": { "exposedUrls": 2, "zeroImpressionUrls": 149, "impressions": 4, "position": 8.5 },
-      "latest24Hours": { "exposedUrls": 4, "impressions": 5, "position": 45.4 },
-      "previous24Hours": { "exposedUrls": 4, "impressions": 5, "position": 15.2 },
+      "complete7Days": {
+        "exposedUrls": 2,
+        "zeroImpressionUrls": 149,
+        "impressions": 4,
+        "position": 8.5
+      },
+      "latest24Hours": {
+        "exposedUrls": 4,
+        "impressions": 5,
+        "position": 45.4
+      },
+      "previous24Hours": {
+        "exposedUrls": 4,
+        "impressions": 5,
+        "position": 15.2
+      },
       "gate": "Full index release completed on 2026-08-20 after owner authorization and the technical gate. Recheck the exact 151-page cohort on 2026-08-27; do not resubmit or rewrite during the first seven days without a technical or merchant defect."
     }
   },
@@ -393,16 +506,49 @@
     "amazonAssociates": {
       "reportUpdatedThrough": "2026-08-25",
       "rolling30DayCommissionsUsd": 6.51,
-      "latestComplete7DaysAug10To16": { "clicks": 7, "orderedItems": 0, "conversion": "0%", "earningsUsd": 0 },
-      "rolling30DaysJul27ToAug25": { "clicks": 37, "orderedItems": 21, "conversion": "56.76%", "orderedRevenueUsd": 264.42, "shippedItems": 21, "returnedItems": 1, "totalRevenueUsd": 257.43, "earningsUsd": 6.51 },
+      "latestComplete7DaysAug10To16": {
+        "clicks": 7,
+        "orderedItems": 0,
+        "conversion": "0%",
+        "earningsUsd": 0
+      },
+      "rolling30DaysJul27ToAug25": {
+        "clicks": 37,
+        "orderedItems": 21,
+        "conversion": "56.76%",
+        "orderedRevenueUsd": 264.42,
+        "shippedItems": 21,
+        "returnedItems": 1,
+        "totalRevenueUsd": 257.43,
+        "earningsUsd": 6.51
+      },
       "reportingDelay": "The dashboard was last updated through August 25 at the August 26 operating review.",
       "interpretation": "Clicks increased by one while ordered items, shipped items, revenue and earnings were unchanged. There is no Amazon evidence that the August 23 SEO release caused a conversion-path failure."
     },
     "cj": {
       "currentStatus": "authenticated dashboard and Insights link report readable on 2026-08-26",
-      "yesterday20260825": { "clicks": 123, "sales": 0, "leads": 0, "commissionUsd": 0, "epcUsd": 0, "conversion": "0%" },
-      "yesterday20260824": { "clicks": 129, "sales": 0, "leads": 0, "commissionUsd": 0, "epcUsd": 0, "conversion": "0%" },
-      "yesterday20260820": { "clicks": 20, "sales": 0, "leads": 0, "commissionUsd": 0 },
+      "yesterday20260825": {
+        "clicks": 123,
+        "sales": 0,
+        "leads": 0,
+        "commissionUsd": 0,
+        "epcUsd": 0,
+        "conversion": "0%"
+      },
+      "yesterday20260824": {
+        "clicks": 129,
+        "sales": 0,
+        "leads": 0,
+        "commissionUsd": 0,
+        "epcUsd": 0,
+        "conversion": "0%"
+      },
+      "yesterday20260820": {
+        "clicks": 20,
+        "sales": 0,
+        "leads": 0,
+        "commissionUsd": 0
+      },
       "latestDashboardWindow": "Rolling 30 days through 2026-08-17",
       "clicks": 53,
       "latest7DayClicks": 38,
@@ -434,7 +580,11 @@
     },
     "costumeSmallSpacePilot": {
       "day14Gate": "2026-08-17",
-      "searchConsoleSinceLaunch": { "clicks": 0, "impressions": 0, "queries": "no-data" },
+      "searchConsoleSinceLaunch": {
+        "clicks": 0,
+        "impressions": 0,
+        "queries": "no-data"
+      },
       "urlInspection": "Blocked by the property daily quota, so indexing status is unproven rather than assumed not indexed.",
       "technical": "HTTP 200, self-canonical, Article/FAQ/ItemList structured data, sitemap membership, three live Costume internal entrances and first-viewport sponsored CJ commerce are healthy.",
       "action": "Commit c1ebfcb adds a direct tracked Main seasonal link to this exact buyer page while retaining the broad Halloween hub. Do not open another animatronics URL or rewrite the pilot without query evidence."
@@ -443,7 +593,13 @@
   "cohorts": {
     "newSoftLaunch": {
       "pages": 151,
-      "distribution": { "network": 25, "smarthome": 25, "homeoffice": 33, "baby": 31, "pet": 37 },
+      "distribution": {
+        "network": 25,
+        "smarthome": 25,
+        "homeoffice": 33,
+        "baby": 31,
+        "pet": 37
+      },
       "state": "public_indexable_sitemap_included_google_and_indexnow_submitted",
       "runtimePassed": 151,
       "sitemapIncluded": 151,
@@ -453,7 +609,14 @@
     },
     "existingRankingRefresh": {
       "pages": 118,
-      "distribution": { "network": 33, "smarthome": 27, "homeoffice": 24, "baby": 15, "pet": 17, "style": 2 },
+      "distribution": {
+        "network": 33,
+        "smarthome": 27,
+        "homeoffice": 24,
+        "baby": 15,
+        "pet": 17,
+        "style": 2
+      },
       "runtimePassed": 118,
       "titleChanges": 3,
       "protectedWinners": 37,
@@ -481,14 +644,28 @@
     "testingRule": "Send an Accept header containing text/html; default curl Accept */* does not match the HTML rule."
   },
   "merchantAndSiteBoundaries": {
-    "amazonFirstSites": ["network", "smarthome", "homeoffice", "baby", "pet", "style"],
+    "amazonFirstSites": [
+      "network",
+      "smarthome",
+      "homeoffice",
+      "baby",
+      "pet",
+      "style"
+    ],
     "babyCj": "Only the separately recorded bounded Bc Babycare pilot is authorized.",
     "costume": "Database-backed eligible Abracadabra/CJ products supply first-viewport guide, category, product and curated-roundup paths, including same-category fallback for guides without an exact active family offer.",
     "petMedicationMerchant": "CanadaPetCare remains blocked from public CTAs.",
     "style": "maintenance_only"
   },
   "validation": {
-    "seoAudit": { "publishedGuides": 964, "products": 175, "roundups": 77, "tools": 7, "generatedMarketRoutes": 4692, "indexQualifiedMarketRoutes": 32 },
+    "seoAudit": {
+      "publishedGuides": 964,
+      "products": 175,
+      "roundups": 77,
+      "tools": 7,
+      "generatedMarketRoutes": 4692,
+      "indexQualifiedMarketRoutes": 32
+    },
     "affiliateLinks": "306_of_306_passed",
     "governedExpansionQuality": "757_of_757_passed",
     "categoryDiscoveryLocal": "154_of_154_direct_family_hubs_and_418_of_418_surviving_support_links_across_19_categories",
@@ -528,7 +705,9 @@
     "submitted": 1,
     "accepted": 1,
     "httpStatus": 200,
-    "bySite": { "homeoffice": 1 },
+    "bySite": {
+      "homeoffice": 1
+    },
     "scope": "The exact September 13 ErGear/FlexiSpot changed canonical only. The September 11 exact 10-URL submission remains complete and was not replayed; unchanged pages, redirects, protected cohorts, prior releases, homepages, sitemaps and product pilots were excluded."
   },
   "measurementGates": {
@@ -589,5 +768,126 @@
     "mutableState": "docs/affiliate-growth-state.json",
     "runbook": "docs/affiliate-growth-runbook.md",
     "breadthReadiness": "apps/affiliate/config/breadth-draft-120-plus-readiness.json"
+  },
+  "seoRepair20260924": {
+    "updatedAt": "2026-09-25T09:29:44+08:00",
+    "status": "available-local-work-completed-external-verification-blocked-unpublished",
+    "scope": [
+      "main",
+      "network",
+      "smarthome",
+      "homeoffice",
+      "baby",
+      "pet",
+      "style",
+      "costume",
+      "wellness"
+    ],
+    "excluded": [
+      "test",
+      "tools"
+    ],
+    "report": "apps/affiliate/reports/seo-audit-2026-09-24/completion-2026-09-25.md",
+    "pageLedger": "apps/affiliate/reports/seo-audit-2026-09-24/page-ledger.json",
+    "auditPages": 1401,
+    "redirectsVerified": 97,
+    "dueZeroInspected": 92,
+    "dueZeroRemaining": 23,
+    "inspectionBlocker": "Google property daily URL inspection quota exceeded",
+    "sourceCommit": "8055b15",
+    "additionalMerchantRepair": "HON corrected to B06Y3PGPR2; Branch B0GWGK4JFK blocked after Page Not Found",
+    "productionSwitched": false,
+    "serverIncident": {
+      "temporaryUnit": "madabase-seo-candidate.service",
+      "temporaryPort": 3111,
+      "memoryLimitBytes": 367001600,
+      "observed": "Memory chart rose to about 1.5GB after candidate startup; terminal stopped responding; command assistant client unavailable; new SSH login timed out; public and origin HTTP timed out",
+      "cause": "Unconfirmed until journal inspected; candidate memory pressure suspected",
+      "stopConfirmed": false,
+      "rebootApproval": "Requested because same host also runs excluded test/tools",
+      "rollbackRecord": "/var/tmp/madabase-seo-20260924-rollback.json"
+    },
+    "nextActions": [
+      "Resume these exact 23 URLs after the property quota renews; do not resubmit all inspected URLs.",
+      "With working existing catalog access, recheck 32 editorial/category purchase paths, the 76 product discovery paths, and two same-name Santa candidates. Do not merge candidates without exact merchant identity.",
+      "Owner-controlled release and public verification remain separate; no recovery or SEO lift claimed."
+    ],
+    "recoveryHandoff": "apps/affiliate/reports/seo-audit-2026-09-24/server-recovery-handoff.md",
+    "caldigitQueryReview": "Completed: visible intent matches existing title, only 3/201 impressions have query disclosure; retain current page",
+    "followupReport": "apps/affiliate/reports/seo-audit-2026-09-24/completion-2026-09-25.md",
+    "followupStatus": "available-local-work-completed-external-verification-blocked-unpublished",
+    "priorityPages": 53,
+    "exactQueryReviews": 53,
+    "styleEvidenceCleanupCanonicals": 53,
+    "additionalDirectContentEdits": 56,
+    "finalAffiliateArchive": {
+      "app": "affiliate",
+      "path": "apps/affiliate/.release/affiliate-runtime.tgz",
+      "bytes": 60873911,
+      "sha256": "5452695a40221ac3fb770e49e48103ddb4f0df52b892f77e00755955adc1e0d0",
+      "builtAndPackaged": true,
+      "published": false
+    },
+    "indexNowSubmitted": 0,
+    "currentAsins": 294,
+    "currentAsinsIdentityVerified": "294 active titles/models reviewed; stock and selected-region limits are separate in merchant-decisions-final.json",
+    "remainingCurrentAsinChecks": "Do not claim blanket US stock: see per-ASIN availability status. No unread baseline merchant-title record remains.",
+    "validationFollowup": {
+      "priorityAndMerchantPages": "82/82",
+      "amazonConversionRoutes": "5930/5930, including 153 explicit commerce-paused routes",
+      "wellnessPages": "12/12",
+      "wellnessRedirects": "13/13; 11 active, 2 blocked; no external tracking clicks",
+      "interactive": "interactive-runtime-final.json",
+      "eslint": "Affiliate and Wellness passed",
+      "seo": "passed",
+      "pageOneCTR": "passed",
+      "build": "Affiliate and Wellness production builds, types and packages passed",
+      "costume": "32 local data-dependent routes remain unverified, not passed"
+    },
+    "finalAffiliateSourceCommit": "8055b15",
+    "localValidationProcessesStopped": true,
+    "priorityActions": {
+      "repair": 6,
+      "optimize": 16,
+      "retain": 31
+    },
+    "finalWellnessArchive": {
+      "app": "wellness",
+      "path": "apps/wellness/.release/wellness-runtime.tgz",
+      "bytes": 20632786,
+      "sha256": "d48213b0a00c65f4dec34e1b01ac4b555541928cd802508b44d6f42eeaa9c349",
+      "builtAndPackaged": true,
+      "published": false
+    },
+    "blockedVerification": [
+      {
+        "type": "gsc-index-inspection",
+        "count": 23,
+        "evidence": "remaining-live-inspections.json",
+        "reason": "Google property daily URL inspection quota exceeded; 92/115 examined, including 86 newly recorded indexed URLs.",
+        "next": "Resume these exact 23 URLs after the property quota renews; do not resubmit all inspected URLs."
+      },
+      {
+        "type": "costume-data-and-merchant-validation",
+        "count": 32,
+        "evidence": "conversion-paths-costume-final.json",
+        "reason": "The existing local DATABASE_URL points to localhost:5432; application catalog queries fail. Public Santa detail returned HTTP 403 on Sep 25 and authorized CJ SFTP read timed out during handshake.",
+        "next": "With working existing catalog access, recheck 32 editorial/category purchase paths, the 76 product discovery paths, and two same-name Santa candidates. Do not merge candidates without exact merchant identity."
+      },
+      {
+        "type": "production-validation",
+        "reason": "Server publication explicitly excluded. Source repairs, 6 indexing repairs, 37 discovery fixes and QA exclusion have not been verified on a switched production release.",
+        "next": "Owner-controlled release and public verification remain separate; no recovery or SEO lift claimed."
+      },
+      {
+        "type": "merchant-region-stock",
+        "reason": "Regional restrictions and unspecified stock were retained as limits; 305 reviewed identities do not imply all US variants are in stock.",
+        "evidence": "merchant-decisions-final.json"
+      },
+      {
+        "type": "attribution-observation",
+        "reason": "CJ earnings remain unavailable, Amazon Other attribution unresolved, and historical Clarity QA contamination cannot be removed retroactively; no invented earnings or retagging."
+      }
+    ]
   }
 }
