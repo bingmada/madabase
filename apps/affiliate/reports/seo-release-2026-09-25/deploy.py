@@ -219,16 +219,68 @@ def activate(app):
         if metadata(app)['status'] in ['origin-verified', 'rolled-back']:
             subprocess.run(['systemctl', 'stop', watchdog + '.timer'], capture_output=True, timeout=10)
 
+def resume_affiliate():
+    record = metadata('affiliate')
+    if record['status'] != 'origin-verified':
+        raise RuntimeError('Affiliate release must already be verified')
+    actual = run(['systemctl', 'show', unit('affiliate'), '--property=WorkingDirectory', '--value'])
+    if actual != record['new']:
+        raise RuntimeError('Affiliate configuration changed')
+    run(['systemctl', 'start', unit('affiliate')], timeout=25)
+    await_ready('affiliate')
+
+def finish_remaining():
+    # One bounded maintenance window for the three explicitly authorized apps.
+    # The already-verified affiliate config is never changed in this operation.
+    if metadata('affiliate')['status'] != 'origin-verified':
+        raise RuntimeError('Verified affiliate release required')
+    for app in ['main', 'wellness']:
+        if metadata(app)['status'] != 'prepared':
+            raise RuntimeError('Prepared remaining release required: ' + app)
+    forecast = cutover_forecast('affiliate')
+    watchdog = 'madabase-seo-resume-affiliate'
+    run(['systemd-run', '--unit=' + watchdog, '--on-active=150s', '--timer-property=AccuracySec=1s', '--property=RuntimeMaxSec=60', '--property=MemoryMax=128M', '--property=MemorySwapMax=0', '--property=Restart=no', '/usr/bin/python3', str(Path(__file__).resolve()), 'resume-affiliate'])
+    def interrupted(signum, frame):
+        raise RuntimeError('Maintenance interrupted')
+    signal.signal(signal.SIGTERM, interrupted)
+    signal.signal(signal.SIGINT, interrupted)
+    record = {'status': 'switching', 'startedAt': time.strftime('%Y-%m-%dT%H:%M:%S%z'), 'forecast': forecast}
+    save(STATE / 'remaining.json', record)
+    try:
+        record['postAffiliateStopCapacity'] = stop_and_check_capacity('affiliate')
+        save(STATE / 'remaining.json', record)
+        activate('main')
+        activate('wellness')
+        if not capacity_probe()['passed']:
+            raise RuntimeError('Insufficient capacity before restoring affiliate; rollback remaining releases')
+        record['status'] = 'origin-verified'
+    except BaseException:
+        for app in ['wellness', 'main']:
+            if metadata(app)['status'] == 'origin-verified':
+                rollback(app)
+        record['status'] = 'rolled-back'
+        raise
+    finally:
+        resume_affiliate()
+        record['completedAt'] = time.strftime('%Y-%m-%dT%H:%M:%S%z')
+        save(STATE / 'remaining.json', record)
+        subprocess.run(['systemctl', 'stop', watchdog + '.timer'], capture_output=True, timeout=10)
+        print(json.dumps(record), flush=True)
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('action', choices=['prepare', 'activate', 'rollback', 'watchdog'])
+    parser.add_argument('action', choices=['prepare', 'activate', 'rollback', 'watchdog', 'finish-remaining', 'resume-affiliate'])
     parser.add_argument('app', choices=PLAN, nargs='?')
     args = parser.parse_args()
-    if args.action != 'prepare' and not args.app:
+    if args.action not in ['prepare', 'finish-remaining', 'resume-affiliate'] and not args.app:
         parser.error('app required')
     if args.action == 'prepare':
         prepare()
     elif args.action == 'activate':
         activate(args.app)
+    elif args.action == 'finish-remaining':
+        finish_remaining()
+    elif args.action == 'resume-affiliate':
+        resume_affiliate()
     else:
         rollback(args.app, automatic=args.action == 'watchdog')
