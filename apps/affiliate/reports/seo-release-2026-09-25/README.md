@@ -37,6 +37,8 @@ Affiliate 首次尝试因校验误选 AppleDouble `._` 元数据而自动回滚�
 
 ## 证据与回滚
 
+发布验收证据已保存为本地提交 `cbd46c3`。该证据提交的远程推送被自动审批拒绝：记录包含服务器目录及运维状态，尚未获得将这些具体内容发送至 `bingmada/madabase` 的明确授权。目前保留本地记录并等待授权；生产内容包与发布脚本此前已推送并上线，此归档阻塞不影响已完成的服务器发布。
+
 - [服务、包哈希与回滚路径](release-record.json)
 - [296 页公网验收](public-verification.json)及[六个索引修复页](index-repair-public.json)
 - [浏览器 QA、计算器与禁用链接检查](supplemental-checks.json)
