@@ -1,0 +1,37 @@
+[
+  {
+    "url": "https://wellness.madabase.com/",
+    "checkedAt": "2026-09-25T08:59:49.769838+00:00",
+    "status": 200,
+    "headers": {
+      "Date": "Fri, 25 Sep 2026 08:59:52 GMT",
+      "Server": "cloudflare",
+      "cf-cache-status": "DYNAMIC",
+      "CF-RAY": "a408d5cb6e855c21-SJC"
+    }
+  },
+  {
+    "url": "https://wellness.madabase.com/go/cj/floral-sheer-lace-kimono",
+    "checkedAt": "2026-09-25T08:59:49.770248+00:00",
+    "status": 503,
+    "headers": {
+      "Date": "Fri, 25 Sep 2026 08:59:52 GMT",
+      "Server": "cloudflare",
+      "cf-cache-status": "DYNAMIC",
+      "CF-RAY": "a408d5cb38899cd0-SJC"
+    },
+    "body": "{\"ok\":false,\"error\":\"affiliate_link_unavailable\",\"reason\":\"exact_product_unavailable\"}"
+  },
+  {
+    "url": "https://wellness.madabase.com/go/cj/floral-embroidery-underwire-set",
+    "checkedAt": "2026-09-25T08:59:52.544527+00:00",
+    "status": 503,
+    "headers": {
+      "Date": "Fri, 25 Sep 2026 08:59:54 GMT",
+      "Server": "cloudflare",
+      "cf-cache-status": "DYNAMIC",
+      "CF-RAY": "a408d5dd19b49e59-SJC"
+    },
+    "body": "{\"ok\":false,\"error\":\"affiliate_link_unavailable\",\"reason\":\"exact_product_unavailable\"}"
+  }
+]

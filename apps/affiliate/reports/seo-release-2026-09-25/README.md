@@ -28,7 +28,7 @@ Affiliate 首次尝试因校验误选 AppleDouble `._` 元数据而自动回滚�
 
 ## 仍未关闭的事项
 
-**追加 P1：Wellness 部分节点 525。** 302 页通过之后，14:44 的浏览器请求在 Cloudflare San Jose 节点出现回源 TLS 握手失败；同一路径的源站及服务器侧公网请求仍是预期 503。Origin CA 证书有效至 2041 年，Nginx 健康；一条更早的 bad key share 日志不能证明此次根因。详见 [边缘访问异常证据](wellness-edge-525.json)及 [Cloudflare 525 说明](https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-5xx-errors/error-525/)。自动审批拒绝已有账号登录，正等待用户授权只读检查域名 DNS／SSL／回源分析；未降低 TLS 校验、未修改 Cloudflare 设置。发布已完成，但不能声称所有地区访问问题已关闭。
+**Wellness 525 已复测恢复，根因仍未确认。** 14:44 的浏览器请求曾在 San Jose 节点失败；用户随后登录 Cloudflare 并明确授权操作。核验 DNS 指向、Full (strict)、有效源站证书及规则后，未发现可确认的配置错误。16:59–17:03 的 San Jose、新加坡和应用源站请求均返回预期响应，浏览器首页正常。停用商品路由的预期 503 表示精确商品不可购买；它不同于 TLS 525。当天五条 bad key share 日志均不属于 Cloudflare IPv4 来源，不能作为本次原因。没有修改 TLS／DNS、重启服务或创建监控任务；当前按恢复后观察处理，不宣称永久修复。详见 [授权后的完整复核](wellness-tls-followup.json)、[公网响应](wellness-tls-followup-public.json)和[原始异常证据](wellness-edge-525.json)。
 
 1. **23 个 GSC URL Inspection** 仍受此前 Google property 日配额限制。未因 IndexNow 接收或上线就改记为已完成；六个原索引异常页仍需后续 Google 检查。
 2. **两个同名 Santa 页面** 已能读取，分别显示 $150 与 $450。商家[官方产品页](https://abracadabranyc.com/products/professional-santa-suit)具有 Rent／Buy 选项，但仅凭价格和标题不能证明两条既有追踪记录对应的精确变体。保留两页，不合并或删除；后续须读取现有授权目录记录中的具体 destination variant。

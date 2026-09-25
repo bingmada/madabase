@@ -30,10 +30,14 @@
   "openWork": [
     {
       "type": "wellness-cloudflare-edge-525",
-      "priority": "P1",
-      "reason": "One browser request through San Jose received Cloudflare 525; origin and server-side public request returned expected paused-offer 503. Root cause unconfirmed; origin certificate is within validity.",
-      "next": "Await explicit authorization for saved Cloudflare account login, then inspect only madabase.com DNS/SSL/origin analytics. Do not weaken TLS or bypass the approval rejection.",
-      "evidence": "apps/affiliate/reports/seo-release-2026-09-25/wellness-edge-525.json"
+      "priority": "P2",
+      "reason": "After explicit Cloudflare authorization, DNS/SSL/rules checks found no confirmed misconfiguration. At 16:59–17:03 CST SJC and SIN public requests plus the application origin returned expected responses. Five logged bad-key-share events were from non-Cloudflare IPv4 addresses. Historical 525 root cause remains unconfirmed.",
+      "next": "At the next requested operations review, recheck Wellness origin failures and ordinary public pages. If 525 recurs, capture the exact UTC time, Ray ID and colo, then correlate with origin logs. Current SJC/SIN requests recovered; no scheduled monitoring or speculative TLS change was created.",
+      "evidence": "apps/affiliate/reports/seo-release-2026-09-25/wellness-edge-525.json",
+      "status": "recovered-on-recheck-root-cause-unconfirmed",
+      "initialPriority": "P1",
+      "authorizationResolved": true,
+      "followupEvidence": "apps/affiliate/reports/seo-release-2026-09-25/wellness-tls-followup.json"
     },
     {
       "type": "gsc-index-inspection",
@@ -118,7 +122,7 @@
       "stopEvidence": "Read-only service inventory on 2026-09-25: candidate unit not found/inactive; no reboot performed in this publication."
     },
     "nextActions": [
-      "Await explicit authorization for saved Cloudflare account login, then inspect only madabase.com DNS/SSL/origin analytics. Do not weaken TLS or bypass the approval rejection.",
+      "At the next requested operations review, recheck Wellness origin failures and ordinary public pages. If 525 recurs, capture the exact UTC time, Ray ID and colo, then correlate with origin logs. Current SJC/SIN requests recovered; no scheduled monitoring or speculative TLS change was created.",
       "Resume these exact 23 URLs after the property quota renews; do not resubmit all inspected URLs.",
       "Read the two existing authorized catalog destination records before renaming or merging. No merge, deletion or tracking click performed.",
       "Regional restrictions and unspecified stock were retained as limits; 305 reviewed identities do not imply all US variants are in stock.",
@@ -195,10 +199,14 @@
     "blockedVerification": [
       {
         "type": "wellness-cloudflare-edge-525",
-        "priority": "P1",
-        "reason": "One browser request through San Jose received Cloudflare 525; origin and server-side public request returned expected paused-offer 503. Root cause unconfirmed; origin certificate is within validity.",
-        "next": "Await explicit authorization for saved Cloudflare account login, then inspect only madabase.com DNS/SSL/origin analytics. Do not weaken TLS or bypass the approval rejection.",
-        "evidence": "apps/affiliate/reports/seo-release-2026-09-25/wellness-edge-525.json"
+        "priority": "P2",
+        "reason": "After explicit Cloudflare authorization, DNS/SSL/rules checks found no confirmed misconfiguration. At 16:59–17:03 CST SJC and SIN public requests plus the application origin returned expected responses. Five logged bad-key-share events were from non-Cloudflare IPv4 addresses. Historical 525 root cause remains unconfirmed.",
+        "next": "At the next requested operations review, recheck Wellness origin failures and ordinary public pages. If 525 recurs, capture the exact UTC time, Ray ID and colo, then correlate with origin logs. Current SJC/SIN requests recovered; no scheduled monitoring or speculative TLS change was created.",
+        "evidence": "apps/affiliate/reports/seo-release-2026-09-25/wellness-edge-525.json",
+        "status": "recovered-on-recheck-root-cause-unconfirmed",
+        "initialPriority": "P1",
+        "authorizationResolved": true,
+        "followupEvidence": "apps/affiliate/reports/seo-release-2026-09-25/wellness-tls-followup.json"
       },
       {
         "type": "gsc-index-inspection",
@@ -306,10 +314,14 @@
     },
     "lateEdgeTlsIncident": {
       "type": "wellness-cloudflare-edge-525",
-      "priority": "P1",
-      "reason": "One browser request through San Jose received Cloudflare 525; origin and server-side public request returned expected paused-offer 503. Root cause unconfirmed; origin certificate is within validity.",
-      "next": "Await explicit authorization for saved Cloudflare account login, then inspect only madabase.com DNS/SSL/origin analytics. Do not weaken TLS or bypass the approval rejection.",
-      "evidence": "apps/affiliate/reports/seo-release-2026-09-25/wellness-edge-525.json"
+      "priority": "P2",
+      "reason": "After explicit Cloudflare authorization, DNS/SSL/rules checks found no confirmed misconfiguration. At 16:59–17:03 CST SJC and SIN public requests plus the application origin returned expected responses. Five logged bad-key-share events were from non-Cloudflare IPv4 addresses. Historical 525 root cause remains unconfirmed.",
+      "next": "At the next requested operations review, recheck Wellness origin failures and ordinary public pages. If 525 recurs, capture the exact UTC time, Ray ID and colo, then correlate with origin logs. Current SJC/SIN requests recovered; no scheduled monitoring or speculative TLS change was created.",
+      "evidence": "apps/affiliate/reports/seo-release-2026-09-25/wellness-edge-525.json",
+      "status": "recovered-on-recheck-root-cause-unconfirmed",
+      "initialPriority": "P1",
+      "authorizationResolved": true,
+      "followupEvidence": "apps/affiliate/reports/seo-release-2026-09-25/wellness-tls-followup.json"
     }
   },
   "pageEditsDefinition": "Direct editorial canonicals: 6 index-repair guides, 2 policy reviews, 2 followup reviews, Chicco and 53 Style pages. Shared technical changes and category discovery affect additional routes.",

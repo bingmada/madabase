@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-25T14:42:46+08:00",
+  "updatedAt": "2026-09-25T17:05:40+08:00",
   "purpose": "Tracked cross-conversation snapshot. Read this before every affiliate operation, then read docs/affiliate-growth-state.json and docs/affiliate-growth-runbook.md for the mutable history and operating rules.",
   "siteScopeDecision20260913": {
     "tools": "retired_owner_decision",
@@ -292,7 +292,7 @@
     "loopbackPort": 3011,
     "indexNowAcceptedUrls": 90,
     "googleSitemapsSubmitted": 0,
-    "releaseNote": "September 24–25 SEO repairs published. All three services active and initial public checks passed; a later Wellness Cloudflare edge 525 remains under investigation. See apps/affiliate/reports/seo-release-2026-09-25/README.md.",
+    "releaseNote": "September 24–25 SEO repairs published. All three services active; public checks passed. Later Wellness 525 recovered on SJC/SIN rechecks without configuration changes; root cause unconfirmed. See apps/affiliate/reports/seo-release-2026-09-25/README.md.",
     "previousProduction": {
       "active": "ab2cf6d",
       "commit": "ab2cf6dcbfdcc3aacfa01536a2ed34992fe0e093",
@@ -791,7 +791,7 @@
     "breadthReadiness": "apps/affiliate/config/breadth-draft-120-plus-readiness.json"
   },
   "seoRepair20260924": {
-    "updatedAt": "2026-09-25T14:42:46+08:00",
+    "updatedAt": "2026-09-25T17:05:40+08:00",
     "status": "published-and-publicly-verified-external-observation-open",
     "scope": [
       "main",
@@ -831,7 +831,7 @@
       "stopEvidence": "Read-only service inventory on 2026-09-25: candidate unit not found/inactive; no reboot performed in this publication."
     },
     "nextActions": [
-      "Await explicit authorization for saved Cloudflare account login, then inspect only madabase.com DNS/SSL/origin analytics. Do not weaken TLS or bypass the approval rejection.",
+      "At the next requested operations review, recheck Wellness origin failures and ordinary public pages. If 525 recurs, capture the exact UTC time, Ray ID and colo, then correlate with origin logs. Current SJC/SIN requests recovered; no scheduled monitoring or speculative TLS change was created.",
       "Resume these exact 23 URLs after the property quota renews; do not resubmit all inspected URLs.",
       "Read the two existing authorized catalog destination records before renaming or merging. No merge, deletion or tracking click performed.",
       "Regional restrictions and unspecified stock were retained as limits; 305 reviewed identities do not imply all US variants are in stock.",
@@ -908,10 +908,14 @@
     "blockedVerification": [
       {
         "type": "wellness-cloudflare-edge-525",
-        "priority": "P1",
-        "reason": "One browser request through San Jose received Cloudflare 525; origin and server-side public request returned expected paused-offer 503. Root cause unconfirmed; origin certificate is within validity.",
-        "next": "Await explicit authorization for saved Cloudflare account login, then inspect only madabase.com DNS/SSL/origin analytics. Do not weaken TLS or bypass the approval rejection.",
-        "evidence": "apps/affiliate/reports/seo-release-2026-09-25/wellness-edge-525.json"
+        "priority": "P2",
+        "reason": "After explicit Cloudflare authorization, DNS/SSL/rules checks found no confirmed misconfiguration. At 16:59–17:03 CST SJC and SIN public requests plus the application origin returned expected responses. Five logged bad-key-share events were from non-Cloudflare IPv4 addresses. Historical 525 root cause remains unconfirmed.",
+        "next": "At the next requested operations review, recheck Wellness origin failures and ordinary public pages. If 525 recurs, capture the exact UTC time, Ray ID and colo, then correlate with origin logs. Current SJC/SIN requests recovered; no scheduled monitoring or speculative TLS change was created.",
+        "evidence": "apps/affiliate/reports/seo-release-2026-09-25/wellness-edge-525.json",
+        "status": "recovered-on-recheck-root-cause-unconfirmed",
+        "initialPriority": "P1",
+        "authorizationResolved": true,
+        "followupEvidence": "apps/affiliate/reports/seo-release-2026-09-25/wellness-tls-followup.json"
       },
       {
         "type": "gsc-index-inspection",
@@ -1019,10 +1023,15 @@
     },
     "lateEdgeTlsIncident": {
       "type": "wellness-cloudflare-edge-525",
-      "priority": "P1",
-      "reason": "One browser request through San Jose received Cloudflare 525; origin and server-side public request returned expected paused-offer 503. Root cause unconfirmed; origin certificate is within validity.",
-      "next": "Await explicit authorization for saved Cloudflare account login, then inspect only madabase.com DNS/SSL/origin analytics. Do not weaken TLS or bypass the approval rejection.",
-      "evidence": "apps/affiliate/reports/seo-release-2026-09-25/wellness-edge-525.json"
-    }
+      "priority": "P2",
+      "reason": "After explicit Cloudflare authorization, DNS/SSL/rules checks found no confirmed misconfiguration. At 16:59–17:03 CST SJC and SIN public requests plus the application origin returned expected responses. Five logged bad-key-share events were from non-Cloudflare IPv4 addresses. Historical 525 root cause remains unconfirmed.",
+      "next": "At the next requested operations review, recheck Wellness origin failures and ordinary public pages. If 525 recurs, capture the exact UTC time, Ray ID and colo, then correlate with origin logs. Current SJC/SIN requests recovered; no scheduled monitoring or speculative TLS change was created.",
+      "evidence": "apps/affiliate/reports/seo-release-2026-09-25/wellness-edge-525.json",
+      "status": "recovered-on-recheck-root-cause-unconfirmed",
+      "initialPriority": "P1",
+      "authorizationResolved": true,
+      "followupEvidence": "apps/affiliate/reports/seo-release-2026-09-25/wellness-tls-followup.json"
+    },
+    "cloudflareFollowup": "apps/affiliate/reports/seo-release-2026-09-25/wellness-tls-followup.json"
   }
 }

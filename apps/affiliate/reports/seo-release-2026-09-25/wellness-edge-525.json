@@ -31,6 +31,10 @@
     "matchingTlsErrorInRecentLog": "2026-09-25 14:16:47 SSL_do_handshake bad key share; not proven related to the later San Jose request."
   },
   "rootCause": "unconfirmed",
-  "cloudflareLogin": "Automatic approval review rejected signing in with saved account because explicit account-login authorization was missing. User asked for permission to inspect madabase.com DNS, SSL and origin analytics read-only. No login, settings changes or TLS downgrade performed.",
-  "documentation": "https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-5xx-errors/error-525/"
+  "cloudflareLogin": "Resolved: user logged in and explicitly authorized Cloudflare operations; existing authenticated session used for diagnosis.",
+  "documentation": "https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-5xx-errors/error-525/",
+  "previousCloudflareLoginBlock": "Automatic approval review rejected signing in with saved account because explicit account-login authorization was missing. User asked for permission to inspect madabase.com DNS, SSL and origin analytics read-only. No login, settings changes or TLS downgrade performed.",
+  "followupAt": "2026-09-25T17:05:40+08:00",
+  "currentStatus": "recovered-on-recheck-root-cause-unconfirmed",
+  "followupEvidence": "wellness-tls-followup.json"
 }

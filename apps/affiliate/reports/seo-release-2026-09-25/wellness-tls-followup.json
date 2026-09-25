@@ -1,0 +1,130 @@
+{
+  "checkedAt": "2026-09-25T17:05:40+08:00",
+  "authorization": "我已登录cloudflare，授权你操作",
+  "scope": [
+    "wellness.madabase.com",
+    "shared settings read only to diagnose Wellness"
+  ],
+  "status": "recovered-on-recheck-root-cause-unconfirmed",
+  "configurationChanged": false,
+  "serviceRestarted": false,
+  "cloudflare": {
+    "session": "Existing user-authenticated session used; no credential access required.",
+    "dns": {
+      "wellnessRecords": 1,
+      "type": "A",
+      "matchesCurrentProductionOrigin": true,
+      "proxied": true,
+      "ttl": "Auto",
+      "additionalWellnessAaaaObserved": false
+    },
+    "encryptionMode": "Full (strict)",
+    "automaticMode": false,
+    "modeLastChangedDaysAgoAsDisplayed": 120,
+    "originCertificate": {
+      "hosts": [
+        "*.madabase.com",
+        "madabase.com"
+      ],
+      "expires": "2041-05-24"
+    },
+    "rules": {
+      "urlRewrite": 0,
+      "redirect": 0,
+      "configuration": 0,
+      "origin": 0,
+      "requestHeaderTransform": 0,
+      "pageRules": 0,
+      "cache": 1,
+      "cacheRuleIncludesWellness": false
+    },
+    "originAnalytics": {
+      "window": "Last 24 hours GMT+8",
+      "hostnameFilter": "wellness.madabase.com",
+      "displayedConnectionSuccessRate": "91%",
+      "displayedErrorRate": "4%",
+      "originStatusCounts": {
+        "none": 28,
+        "2xx": 48,
+        "4xx": 2,
+        "5xx": 2
+      },
+      "origin5xxBreakdown": {
+        "503": 2
+      },
+      "affectedRow": {
+        "path": "/go/cj/floral-sheer-lace-kimono",
+        "colo": "SJC",
+        "requests": 4,
+        "displayedTcpFailureRate": "100%"
+      },
+      "limitation": "Dashboard aggregates are not a complete per-request edge-525 log. None is not proof of TLS failure, and these counts are not verified affected-user counts."
+    }
+  },
+  "origin": {
+    "nginxConfigCheck": "passed",
+    "protocols": [
+      "TLSv1.2",
+      "TLSv1.3"
+    ],
+    "ciphers": "HIGH:!aNULL:!MD5",
+    "upstreamPort": 3099,
+    "services": {
+      "nginx": {
+        "active": true,
+        "nRestarts": 0
+      },
+      "madabase-wellness": {
+        "active": true,
+        "nRestarts": 0
+      }
+    },
+    "tlsLogReview": {
+      "date": "2026-09-25",
+      "events": 5,
+      "badKeyShare": 5,
+      "eventsFromPublishedCloudflareIpv4Ranges": 0,
+      "latestEventLocal": "2026-09-25T14:16:47+08:00",
+      "matchingLogFor144442Event": false,
+      "rawClientIpsStored": false,
+      "ipSource": "https://www.cloudflare.com/ips/"
+    }
+  },
+  "publicChecks": {
+    "localClientEvidence": "wellness-tls-followup-public.json",
+    "localClientColo": "SJC",
+    "localClientAtUtc": "2026-09-25T08:59:49Z",
+    "serverClientAt": "2026-09-25T17:03:00+08:00",
+    "serverClientResults": [
+      {
+        "path": "/",
+        "status": 200,
+        "ray": "a408da67dc4ed25b-SIN"
+      },
+      {
+        "path": "/go/cj/floral-sheer-lace-kimono",
+        "status": 503,
+        "reason": "exact_product_unavailable",
+        "ray": "a408da691a47880d-SIN"
+      },
+      {
+        "source": "loopback:3099",
+        "path": "/go/cj/floral-sheer-lace-kimono",
+        "status": 503,
+        "reason": "exact_product_unavailable"
+      }
+    ],
+    "browser": {
+      "homepageWithQaFlag": "Rendered expected H1: Find the pieces that fit your everyday.",
+      "pausedRoute": "Chrome ERR_BLOCKED_BY_CLIENT; browser did not display a Cloudflare 525 response. No browser protection was changed or bypassed."
+    },
+    "noTrackingRedirectFollowed": true
+  },
+  "conclusion": "Access recovered without a Cloudflare or server configuration change. No confirmed DNS, certificate, TLS-mode or rule error justified a repair. Root cause and permanent non-recurrence are not proven.",
+  "next": "At the next requested operations review, recheck Wellness origin failures and ordinary public pages. If 525 recurs, capture the exact UTC time, Ray ID and colo, then correlate with origin logs. Current SJC/SIN requests recovered; no scheduled monitoring or speculative TLS change was created.",
+  "documentation": [
+    "https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-5xx-errors/error-525/",
+    "https://www.cloudflare.com/ips/"
+  ],
+  "archive": "Local evidence only. The prior GitHub evidence-push approval remains outstanding; Cloudflare authorization does not authorize that separate data transmission."
+}
