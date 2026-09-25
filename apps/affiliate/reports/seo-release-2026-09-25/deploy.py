@@ -14,6 +14,7 @@ import urllib.request
 REPO = Path('/snap/newmadabse/madabase')
 STATE = Path('/var/tmp/madabase-seo-release-20260925')
 REVISION = '8055b15'
+CAPACITY = Path('/var/tmp/madabase-seo-capacity-20260925.mjs')
 PLAN = {
     'affiliate': {'port': 3011, 'sha256': '5452695a40221ac3fb770e49e48103ddb4f0df52b892f77e00755955adc1e0d0', 'hosts': ['network.madabase.com', 'smarthome.madabase.com', 'homeoffice.madabase.com', 'baby.madabase.com', 'pets.madabase.com', 'style.madabase.com', 'costumes.madabase.com']},
     'main': {'port': 3008, 'sha256': '704e254c86bb6f4f00855c88ccbf2d00dc1ef3a2617b375942b4d5769b49c5f6', 'hosts': ['madabase.com']},
@@ -116,6 +117,42 @@ def await_ready(app):
             time.sleep(1)
     raise RuntimeError('Service did not become ready: ' + str(error))
 
+def capacity_probe():
+    result = subprocess.run(['node', str(CAPACITY), '--candidate-mib=512'], capture_output=True, text=True, timeout=10)
+    capacity = json.loads(result.stdout)
+    if result.returncode not in [0, 1] or not isinstance(capacity.get('availableMiB'), (int, float)):
+        raise RuntimeError('Capacity measurement unavailable')
+    return capacity
+
+def cutover_forecast(app):
+    capacity = capacity_probe()
+    pid = run(['systemctl', 'show', unit(app), '--property=MainPID', '--value'])
+    if not pid.isdigit() or int(pid) <= 0:
+        raise RuntimeError('Old service has no running process')
+    memory = Path('/proc/' + pid + '/smaps_rollup').read_text()
+    match = re.search(r'^Pss_Anon:\s+(\d+) kB$', memory, re.M)
+    if not match:
+        raise RuntimeError('Reclaimable anonymous memory unavailable')
+    reclaimable = int(match[1]) / 1024
+    projected = capacity['availableMiB'] + reclaimable
+    headroom = capacity.get('sliceHeadroomMiB')
+    pressure = capacity.get('pressureAvg10')
+    # Forecast adds a 64 MiB uncertainty margin; the actual post-stop gate is unchanged.
+    if projected < 768 or not isinstance(pressure, (int, float)) or pressure >= 1:
+        raise RuntimeError('Insufficient forecast capacity for guarded single-process cutover')
+    if headroom != 'unlimited' and (not isinstance(headroom, (int, float)) or headroom + reclaimable < 768):
+        raise RuntimeError('Insufficient forecast system.slice headroom')
+    return {'before': capacity, 'oldPssAnonMiB': reclaimable, 'projectedAvailableMiB': projected, 'forecastRequiredMiB': 768}
+
+def stop_and_check_capacity(app):
+    run(['systemctl', 'stop', unit(app)], timeout=20)
+    if run(['systemctl', 'show', unit(app), '--property=MainPID', '--value']) != '0':
+        raise RuntimeError('Old process did not stop')
+    capacity = capacity_probe()
+    if not capacity.get('passed'):
+        raise RuntimeError('Post-stop capacity gate failed; restore old production: ' + json.dumps(capacity))
+    return capacity
+
 def rollback(app, automatic=False):
     record = metadata(app)
     if automatic and record['status'] in ['origin-verified', 'rolled-back']:
@@ -133,14 +170,17 @@ def activate(app):
     actual = run(['systemctl', 'show', unit(app), '--property=WorkingDirectory', '--value'])
     if actual != record['old']:
         raise RuntimeError('Production changed since preparation')
+    forecast = cutover_forecast(app)
     watchdog = 'madabase-seo-watchdog-' + app
-    run(['systemd-run', '--unit=' + watchdog, '--on-active=120s', '--timer-property=AccuracySec=1s', '/usr/bin/python3', str(Path(__file__).resolve()), 'watchdog', app])
+    run(['systemd-run', '--unit=' + watchdog, '--on-active=150s', '--timer-property=AccuracySec=1s', '--property=RuntimeMaxSec=90', '--property=MemoryMax=128M', '--property=MemorySwapMax=0', '--property=Restart=no', '/usr/bin/python3', str(Path(__file__).resolve()), 'watchdog', app])
     def interrupted(signum, frame):
         raise RuntimeError('Release interrupted')
     signal.signal(signal.SIGTERM, interrupted)
     signal.signal(signal.SIGINT, interrupted)
     try:
-        record.update(status='switching', startedAt=time.strftime('%Y-%m-%dT%H:%M:%S%z'))
+        record.update(status='switching', startedAt=time.strftime('%Y-%m-%dT%H:%M:%S%z'), capacityForecast=forecast)
+        save(STATE / (app + '.json'), record)
+        record['postStopCapacity'] = stop_and_check_capacity(app)
         save(STATE / (app + '.json'), record)
         install_config(app, 'after')
         await_ready(app)
@@ -166,7 +206,8 @@ def activate(app):
         rollback(app)
         raise
     finally:
-        subprocess.run(['systemctl', 'stop', watchdog + '.timer'], capture_output=True, timeout=10)
+        if metadata(app)['status'] in ['origin-verified', 'rolled-back']:
+            subprocess.run(['systemctl', 'stop', watchdog + '.timer'], capture_output=True, timeout=10)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
