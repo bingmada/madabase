@@ -35,6 +35,10 @@ def unit(app):
 def metadata(app):
     return json.loads((STATE / (app + '.json')).read_text())
 
+def browser_assets(paths):
+    # AppleDouble sidecars are archive metadata, never requested by HTML.
+    return [path for path in paths if not any(part.startswith('._') for part in Path(path).parts)]
+
 def check(app, path='/', host=None):
     host = host or PLAN[app]['hosts'][0]
     req = urllib.request.Request('http://127.0.0.1:' + str(PLAN[app]['port']) + path, headers={'Host': host, 'X-Forwarded-Host': host, 'User-Agent': 'Madabase release QA/1.0'})
@@ -76,7 +80,7 @@ def prepare():
             raise RuntimeError('Ambiguous static asset directories: ' + app)
         retained = []
         for source in old_static[0].rglob('*'):
-            if not source.is_file():
+            if not source.is_file() or not browser_assets([str(source.relative_to(old_static[0]))]):
                 continue
             destination = new_static[0] / source.relative_to(old_static[0])
             if not destination.exists():
@@ -165,11 +169,17 @@ def rollback(app, automatic=False):
 
 def activate(app):
     record = metadata(app)
-    if record['status'] != 'prepared':
-        raise RuntimeError('Expected prepared state')
+    if record['status'] not in ['prepared', 'rolled-back']:
+        raise RuntimeError('Expected prepared or successfully rolled-back state')
     actual = run(['systemctl', 'show', unit(app), '--property=WorkingDirectory', '--value'])
     if actual != record['old']:
         raise RuntimeError('Production changed since preparation')
+    if record['status'] == 'rolled-back':
+        record.setdefault('previousAttempts', []).append({key: record[key] for key in ['startedAt', 'rolledBackAt', 'capacityForecast', 'postStopCapacity'] if key in record})
+        record.pop('rolledBackAt', None)
+    retained = browser_assets(record['retainedAssets'])
+    if record['retainedAssetCount'] and not retained:
+        raise RuntimeError('No real retained browser assets to verify')
     forecast = cutover_forecast(app)
     watchdog = 'madabase-seo-watchdog-' + app
     run(['systemd-run', '--unit=' + watchdog, '--on-active=150s', '--timer-property=AccuracySec=1s', '--property=RuntimeMaxSec=90', '--property=MemoryMax=128M', '--property=MemorySwapMax=0', '--property=Restart=no', '/usr/bin/python3', str(Path(__file__).resolve()), 'watchdog', app])
@@ -197,7 +207,7 @@ def activate(app):
             body = check(app, '/categories/lingerie')
             if 'data-commerce-paused="true"' not in body or 'Catalog reference $' in body:
                 raise RuntimeError('Wellness release fingerprint missing')
-        for asset in record['retainedAssets'][:2]:
+        for asset in retained[:2]:
             check(app, asset)
         record.update(status='origin-verified', completedAt=time.strftime('%Y-%m-%dT%H:%M:%S%z'), service=run(['systemctl', 'show', unit(app), '--property=ActiveState,SubState,NRestarts,MemoryCurrent,WorkingDirectory']))
         save(STATE / (app + '.json'), record)
