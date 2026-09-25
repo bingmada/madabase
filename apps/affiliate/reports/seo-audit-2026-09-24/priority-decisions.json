@@ -32,8 +32,8 @@
         "previous_position": 7.11
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "source_file": "prior exact-page evidence in this audit (Branch/HON)"
       },
@@ -179,8 +179,8 @@
         "previous_position": 78.66
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://homeoffice.madabase.com/guides/standing-desk-height-chart-guide",
         "totals": {
@@ -617,8 +617,8 @@
         "previous_position": 47.83
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://homeoffice.madabase.com/best/best-standing-desks-for-small-spaces",
         "totals": {
@@ -930,8 +930,8 @@
         "previous_position": 10.66
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "source_file": "caldigit-query-review.json"
       },
@@ -1121,8 +1121,8 @@
         "previous_position": 10.0
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "source_file": "prior exact-page evidence in this audit (Branch/HON)"
       },
@@ -1244,8 +1244,8 @@
         "previous_position": 13.58
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://baby.madabase.com/reviews/grownsy-bottle-sterilizer-dryer",
         "impressions": 154,
@@ -1460,8 +1460,8 @@
         "previous_position": 32.46
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://homeoffice.madabase.com/reviews/anker-675-usb-c-docking-station",
         "impressions": 135,
@@ -1680,8 +1680,8 @@
         "previous_position": 16.89
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://baby.madabase.com/reviews/ergobaby-omni-breeze-carrier",
         "totals": {
@@ -1955,8 +1955,8 @@
         "previous_position": 11.39
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://baby.madabase.com/reviews/baby-brezza-sterilizer-dryer-advanced",
         "totals": {
@@ -2067,8 +2067,8 @@
         "previous_position": 8.0
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://homeoffice.madabase.com/guides/portable-monitor-usb-c-dp-alt-mode-displaylink-guide",
         "totals": {
@@ -2265,8 +2265,8 @@
         "previous_position": 7.14
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://homeoffice.madabase.com/guides/wireless-presentation-clickers-buying-guide",
         "totals": {
@@ -2398,8 +2398,8 @@
         "previous_position": 9.07
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://baby.madabase.com/reviews/philips-avent-premium-fast-bottle-warmer-scf358",
         "impressions": 81,
@@ -2558,8 +2558,8 @@
         "previous_position": 11.17
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://baby.madabase.com/reviews/momcozy-purehug-baby-carrier",
         "impressions": 78,
@@ -2746,8 +2746,8 @@
         "previous_position": 15.5
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://baby.madabase.com/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
         "totals": {
@@ -2906,8 +2906,8 @@
         "previous_position": 16.7
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://homeoffice.madabase.com/reviews/plugable-tbt4-ud5-thunderbolt-dock",
         "totals": {
@@ -3129,8 +3129,8 @@
         "previous_position": 8.25
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://baby.madabase.com/reviews/momcozy-mw05-portable-milk-warmer",
         "impressions": 72,
@@ -3253,8 +3253,8 @@
         "previous_position": 7.33
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://homeoffice.madabase.com/reviews/flexispot-e7-mini-standing-desk",
         "totals": {
@@ -3459,8 +3459,8 @@
         "previous_position": 19.07
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://homeoffice.madabase.com/reviews/urevo-smart-walking-pad",
         "totals": {
@@ -3583,8 +3583,8 @@
         "previous_position": 7.48
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://homeoffice.madabase.com/guides/key-light-for-glasses-glare-placement",
         "impressions": 60,
@@ -3738,8 +3738,8 @@
         "previous_position": 28.25
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://homeoffice.madabase.com/best/displaylink-vs-thunderbolt-dock-dual-monitors",
         "totals": {
@@ -3993,8 +3993,8 @@
         "previous_position": 7.5
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://baby.madabase.com/best/babybjorn-harmony-vs-ergobaby-omni-breeze",
         "impressions": 55,
@@ -4201,8 +4201,8 @@
         "previous_position": 81.4
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://homeoffice.madabase.com/tools/desk-height-calculator",
         "totals": {
@@ -4334,8 +4334,8 @@
         "previous_position": 8.73
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://homeoffice.madabase.com/reviews/elgato-key-light-neo",
         "totals": {
@@ -4525,8 +4525,8 @@
         "previous_position": 8.0
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://baby.madabase.com/best/dr-browns-vs-baby-brezza-sterilizer-dryer",
         "impressions": 45,
@@ -4709,8 +4709,8 @@
         "previous_position": 13.32
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://baby.madabase.com/reviews/babybjorn-carrier-mini-3d-mesh",
         "totals": {
@@ -4912,8 +4912,8 @@
         "previous_position": 8.25
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://baby.madabase.com/guides/ergobaby-omni-breeze-cleaning-guide",
         "impressions": 39,
@@ -5075,8 +5075,8 @@
         "previous_position": 12.54
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://baby.madabase.com/reviews/nanit-pro-smart-baby-monitor",
         "totals": {
@@ -5174,8 +5174,8 @@
         "previous_position": 32.07
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://homeoffice.madabase.com/best/best-home-office-lighting-for-video-calls-in-small-rooms",
         "totals": {
@@ -5397,8 +5397,8 @@
         "previous_position": 66.11
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://homeoffice.madabase.com/guides/fido-hardware-security-keys-buying-guide",
         "totals": {
@@ -5536,8 +5536,8 @@
         "previous_position": 74.67
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://homeoffice.madabase.com/guides/video-call-setup-guide",
         "totals": {
@@ -5690,8 +5690,8 @@
         "previous_position": 6.62
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://baby.madabase.com/guides/ergobaby-omni-breeze-newborn-fit-checklist",
         "impressions": 34,
@@ -5857,8 +5857,8 @@
         "previous_position": 63.4
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://baby.madabase.com/tools/diaper-usage-calculator",
         "totals": {
@@ -5941,8 +5941,8 @@
         "previous_position": 13.44
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://homeoffice.madabase.com/best/best-dual-monitor-docks-mac-windows",
         "totals": {
@@ -6168,8 +6168,8 @@
         "previous_position": 9.6
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://homeoffice.madabase.com/guides/monitor-arm-clamp-reinforcement-guide",
         "impressions": 33,
@@ -6335,8 +6335,8 @@
         "previous_position": 6.5
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://baby.madabase.com/reviews/chicco-advanced-sterilizer-dryer",
         "impressions": 32,
@@ -6475,8 +6475,8 @@
         "previous_position": 32.0
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://homeoffice.madabase.com/",
         "totals": {
@@ -6842,8 +6842,8 @@
         "previous_position": 10.12
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://homeoffice.madabase.com/reviews/jabra-speak2-40-usb-speakerphone",
         "impressions": 32,
@@ -6918,8 +6918,8 @@
         "previous_position": 24.25
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://baby.madabase.com/reviews/dr-browns-all-in-one-sterilizer-dryer",
         "totals": {
@@ -7138,8 +7138,8 @@
         "previous_position": 10.0
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://baby.madabase.com/reviews/momcozy-kleanpal-pro-baby-bottle-washer",
         "totals": {
@@ -7239,8 +7239,8 @@
         "previous_position": 7.0
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://baby.madabase.com/best/momcozy-purehug-vs-ergobaby-omni-breeze",
         "impressions": 28,
@@ -7414,8 +7414,8 @@
         "previous_position": 6.38
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://homeoffice.madabase.com/reviews/logitech-litra-glow",
         "impressions": 27,
@@ -7517,8 +7517,8 @@
         "previous_position": 7.75
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://baby.madabase.com/guides/baby-wipe-warmers-buying-guide",
         "totals": {
@@ -7658,8 +7658,8 @@
         "previous_position": 8.73
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://homeoffice.madabase.com/reviews/ergotron-hx-monitor-arm",
         "totals": {
@@ -7863,8 +7863,8 @@
         "previous_position": 6.17
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://homeoffice.madabase.com/reviews/ugreen-30768-usb-3-switch",
         "impressions": 26,
@@ -7934,8 +7934,8 @@
         "previous_position": 8.36
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://homeoffice.madabase.com/reviews/uplift-v3-standing-desk",
         "impressions": 26,
@@ -8029,8 +8029,8 @@
         "previous_position": 8.0
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://baby.madabase.com/guides/automatic-bottle-washers-vs-alternatives",
         "impressions": 24,
@@ -8209,8 +8209,8 @@
         "previous_position": 13.38
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://baby.madabase.com/guides/baby-bath-kneelers-buying-guide",
         "totals": {
@@ -8348,8 +8348,8 @@
         "previous_position": 8.4
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://baby.madabase.com/guides/nursery-glider-chairs-safety-and-skip-guide",
         "totals": {
@@ -8505,8 +8505,8 @@
         "previous_position": 9.25
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://homeoffice.madabase.com/guides/under-desk-cpu-holders-buying-guide",
         "impressions": 24,
@@ -8632,8 +8632,8 @@
         "previous_position": 8.0
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://baby.madabase.com/en-gb/guides/ergobaby-omni-breeze-positions-by-age",
         "impressions": 23,
@@ -8695,8 +8695,8 @@
         "previous_position": 5.67
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://homeoffice.madabase.com/reviews/asus-zenscreen-mb16acv-portable-monitor",
         "impressions": 23,
@@ -8774,8 +8774,8 @@
         "previous_position": 7.33
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://baby.madabase.com/guides/infant-bath-tubs-safety-and-skip-guide",
         "totals": {
@@ -8931,8 +8931,8 @@
         "previous_position": 9.89
       },
       "queries_status": "live-exact-page-read",
-      "decision_status": "content-and-query-reviewed-local-release-validated",
-      "next_action": "Publish only under owner control; then verify public rendering and measure at the existing cohort gates. Do not claim SEO recovery from local checks.",
+      "decision_status": "content-query-reviewed-and-production-validated",
+      "next_action": "Published 2026-09-25 and passed ordinary public rendering checks. Measure at existing cohort gates; do not infer search recovery from technical publication.",
       "query_evidence": {
         "url": "https://baby.madabase.com/reviews/baby-tula-lite-carrier",
         "totals": {
@@ -9097,5 +9097,6 @@
   "remaining_gate_limits": [
     "23 daily-quota-blocked GSC inspections",
     "Unpublished source repairs cannot establish production or Google recovery"
-  ]
+  ],
+  "productionPublishedAt": "2026-09-25T10:58:16+08:00"
 }

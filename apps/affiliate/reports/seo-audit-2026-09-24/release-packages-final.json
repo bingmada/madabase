@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-25T09:29:44+08:00",
+  "checkedAt": "2026-09-25T14:42:46+08:00",
   "packages": [
     {
       "app": "affiliate",
@@ -7,7 +7,36 @@
       "bytes": 60873911,
       "sha256": "5452695a40221ac3fb770e49e48103ddb4f0df52b892f77e00755955adc1e0d0",
       "builtAndPackaged": true,
-      "published": false
+      "published": true,
+      "sourcePackageCommit": "8055b15",
+      "productionPath": "/srv/madabase-affiliate/releases/seo-20260925-8055b15",
+      "rollbackPath": "/srv/madabase-affiliate/releases/ab2cf6d",
+      "publishedAt": "2026-09-25T10:52:55+08:00",
+      "service": "madabase-affiliate.service",
+      "activeState": "active",
+      "subState": "running",
+      "nRestarts": 0,
+      "finalObservedMemoryBytes": 290050048,
+      "postStopAvailableMiB": 841.3125
+    },
+    {
+      "app": "main",
+      "path": "apps/main/.release/main-runtime.tgz",
+      "bytes": 17116491,
+      "sha256": "704e254c86bb6f4f00855c88ccbf2d00dc1ef3a2617b375942b4d5769b49c5f6",
+      "builtAndPackaged": true,
+      "originalPackageCommit": "4883d9c",
+      "published": true,
+      "sourcePackageCommit": "8055b15",
+      "productionPath": "/srv/madabase-main/releases/seo-20260925-8055b15",
+      "rollbackPath": "/srv/madabase-main/releases/sec-20260820-next15523",
+      "publishedAt": "2026-09-25T10:58:13+08:00",
+      "service": "madabase-main.service",
+      "activeState": "active",
+      "subState": "running",
+      "nRestarts": 0,
+      "finalObservedMemoryBytes": 52289536,
+      "postStopAvailableMiB": 866.6328125
     },
     {
       "app": "wellness",
@@ -15,9 +44,19 @@
       "bytes": 20632786,
       "sha256": "d48213b0a00c65f4dec34e1b01ac4b555541928cd802508b44d6f42eeaa9c349",
       "builtAndPackaged": true,
-      "published": false
+      "published": true,
+      "sourcePackageCommit": "8055b15",
+      "productionPath": "/srv/madabase-wellness/releases/seo-20260925-8055b15",
+      "rollbackPath": "/srv/madabase-wellness/releases/4cccf2794981dfcd80954e92d1428e191e9fa13f",
+      "publishedAt": "2026-09-25T10:58:14+08:00",
+      "service": "madabase-wellness.service",
+      "activeState": "active",
+      "subState": "running",
+      "nRestarts": 0,
+      "finalObservedMemoryBytes": 55799808,
+      "postStopAvailableMiB": 862.41796875
     }
   ],
-  "main": "Previous 4883d9c Main package retained; no Main code changed in this continuation.",
-  "publication": "Excluded by owner instruction; no server start/restart/release or indexing submission."
+  "main": "4883d9c Main artifact published and verified with this release.",
+  "publication": "Owner authorized publication; all three services switched and verified. See ../seo-release-2026-09-25/release-record.json."
 }

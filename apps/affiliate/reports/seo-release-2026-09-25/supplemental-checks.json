@@ -1,0 +1,33 @@
+{
+  "publicPages": 302,
+  "blockedAmazonPurchaseLinks": [],
+  "sixIndexRepairDescriptionsContainUpdatedSource": true,
+  "indexNowEligibleVerifiedCanonicals": 90,
+  "qaBrowser": {
+    "main": {
+      "entry": "/?madabase-qa=1",
+      "internalNavigation": "/methodology",
+      "clarityScriptsBefore": 0,
+      "clarityScriptsAfter": 0
+    },
+    "affiliate": {
+      "entry": "/tools/desk-height-calculator?madabase-qa=1",
+      "internalNavigation": "/about",
+      "clarityScriptsBefore": 0,
+      "clarityScriptsAfter": 0
+    },
+    "wellness": {
+      "entry": "/categories/lingerie?madabase-qa=1",
+      "internalNavigation": "/about",
+      "clarityScriptsBefore": 0,
+      "clarityScriptsAfter": 0
+    }
+  },
+  "deskCalculator": {
+    "seatedElbow": 30,
+    "standingElbow": 45,
+    "keyboardThickness": 2,
+    "sittingResult": 28,
+    "standingResult": 43
+  }
+}

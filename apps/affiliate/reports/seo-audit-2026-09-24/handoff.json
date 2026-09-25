@@ -1,6 +1,6 @@
 {
   "date": "2026-09-25",
-  "mode": "available-local-work-completed-external-verification-blocked-unpublished",
+  "mode": "published-with-external-followups",
   "report": "completion-2026-09-25.md",
   "pageLedger": "page-ledger.json",
   "previousTaskTitle": "诊断network网站GSC展现下跌",
@@ -22,9 +22,19 @@
     "securityIssues": "No issues detected",
     "priorityExactQueryReviews": 53,
     "amazonConversionRoutes": 5930,
-    "wellnessPages": 12
+    "wellnessPages": 12,
+    "publicPagesAfterPublication": 302,
+    "costumePurchasePages": 32,
+    "costumeProductsWithDiscovery": 76
   },
   "openWork": [
+    {
+      "type": "wellness-cloudflare-edge-525",
+      "priority": "P1",
+      "reason": "One browser request through San Jose received Cloudflare 525; origin and server-side public request returned expected paused-offer 503. Root cause unconfirmed; origin certificate is within validity.",
+      "next": "Await explicit authorization for saved Cloudflare account login, then inspect only madabase.com DNS/SSL/origin analytics. Do not weaken TLS or bypass the approval rejection.",
+      "evidence": "apps/affiliate/reports/seo-release-2026-09-25/wellness-edge-525.json"
+    },
     {
       "type": "gsc-index-inspection",
       "count": 23,
@@ -33,16 +43,12 @@
       "next": "Resume these exact 23 URLs after the property quota renews; do not resubmit all inspected URLs."
     },
     {
-      "type": "costume-data-and-merchant-validation",
-      "count": 32,
-      "evidence": "conversion-paths-costume-final.json",
-      "reason": "The existing local DATABASE_URL points to localhost:5432; application catalog queries fail. Public Santa detail returned HTTP 403 on Sep 25 and authorized CJ SFTP read timed out during handshake.",
-      "next": "With working existing catalog access, recheck 32 editorial/category purchase paths, the 76 product discovery paths, and two same-name Santa candidates. Do not merge candidates without exact merchant identity."
-    },
-    {
-      "type": "production-validation",
-      "reason": "Server publication explicitly excluded. Source repairs, 6 indexing repairs, 37 discovery fixes and QA exclusion have not been verified on a switched production release.",
-      "next": "Owner-controlled release and public verification remain separate; no recovery or SEO lift claimed."
+      "type": "costume-santa-exact-variant-mapping",
+      "count": 2,
+      "evidence": "../seo-release-2026-09-25/santa-public-evidence.json",
+      "reason": "Both pages now render. Public prices are $150 and $450; the official merchant offers Rent/Buy choices. Exact saved tracking-destination variant mapping is not established by public page title/price alone.",
+      "next": "Read the two existing authorized catalog destination records before renaming or merging. No merge, deletion or tracking click performed.",
+      "merchantSource": "https://abracadabranyc.com/products/professional-santa-suit"
     },
     {
       "type": "merchant-region-stock",
@@ -52,6 +58,11 @@
     {
       "type": "attribution-observation",
       "reason": "CJ earnings remain unavailable, Amazon Other attribution unresolved, and historical Clarity QA contamination cannot be removed retroactively; no invented earnings or retagging."
+    },
+    {
+      "type": "post-publication-search-observation",
+      "reason": "Technical publication and IndexNow acceptance do not prove restored indexing, CTR, clicks or earnings.",
+      "next": "Keep the existing cohort dates and review only after enough post-publication observations; no new recurring task was created."
     }
   ],
   "scheduledGatesToRespect": [
@@ -61,14 +72,14 @@
     "2026-10-08",
     "2026-10-11"
   ],
-  "gateCompletion": "Not complete: 23 GSC inspections, Costume data checks, and owner-controlled release/public verification remain open.",
+  "gateCompletion": "Publication complete; edge TLS diagnosis, Google quota inspections, Santa mapping and search observations remain open.",
   "pageEdits": "See 53 priority decisions: 6 repair, 16 optimize, 31 retain; do not count shared rendering changes as 53 rewrites.",
-  "deployments": 0,
+  "deployments": 3,
   "requestIndexingSubmissions": 0,
   "existingStateFilesModified": true,
   "repair": {
-    "updatedAt": "2026-09-25T09:29:44+08:00",
-    "status": "available-local-work-completed-external-verification-blocked-unpublished",
+    "updatedAt": "2026-09-25T14:42:46+08:00",
+    "status": "published-and-publicly-verified-external-observation-open",
     "scope": [
       "main",
       "network",
@@ -93,26 +104,31 @@
     "inspectionBlocker": "Google property daily URL inspection quota exceeded",
     "sourceCommit": "8055b15",
     "additionalMerchantRepair": "HON corrected to B06Y3PGPR2; Branch B0GWGK4JFK blocked after Page Not Found",
-    "productionSwitched": false,
+    "productionSwitched": true,
     "serverIncident": {
       "temporaryUnit": "madabase-seo-candidate.service",
       "temporaryPort": 3111,
       "memoryLimitBytes": 367001600,
       "observed": "Memory chart rose to about 1.5GB after candidate startup; terminal stopped responding; command assistant client unavailable; new SSH login timed out; public and origin HTTP timed out",
       "cause": "Unconfirmed until journal inspected; candidate memory pressure suspected",
-      "stopConfirmed": false,
-      "rebootApproval": "Requested because same host also runs excluded test/tools",
-      "rollbackRecord": "/var/tmp/madabase-seo-20260924-rollback.json"
+      "stopConfirmed": true,
+      "rebootApproval": "No host reboot performed; excluded Test/Tools services untouched.",
+      "rollbackRecord": "/var/tmp/madabase-seo-20260924-rollback.json",
+      "currentStatus": "Old candidate absent; all three new production services active with NRestarts=0. Historical incident cause remains unconfirmed.",
+      "stopEvidence": "Read-only service inventory on 2026-09-25: candidate unit not found/inactive; no reboot performed in this publication."
     },
     "nextActions": [
+      "Await explicit authorization for saved Cloudflare account login, then inspect only madabase.com DNS/SSL/origin analytics. Do not weaken TLS or bypass the approval rejection.",
       "Resume these exact 23 URLs after the property quota renews; do not resubmit all inspected URLs.",
-      "With working existing catalog access, recheck 32 editorial/category purchase paths, the 76 product discovery paths, and two same-name Santa candidates. Do not merge candidates without exact merchant identity.",
-      "Owner-controlled release and public verification remain separate; no recovery or SEO lift claimed."
+      "Read the two existing authorized catalog destination records before renaming or merging. No merge, deletion or tracking click performed.",
+      "Regional restrictions and unspecified stock were retained as limits; 305 reviewed identities do not imply all US variants are in stock.",
+      "CJ earnings remain unavailable, Amazon Other attribution unresolved, and historical Clarity QA contamination cannot be removed retroactively; no invented earnings or retagging.",
+      "Keep the existing cohort dates and review only after enough post-publication observations; no new recurring task was created."
     ],
     "recoveryHandoff": "apps/affiliate/reports/seo-audit-2026-09-24/server-recovery-handoff.md",
     "caldigitQueryReview": "Completed: visible intent matches existing title, only 3/201 impressions have query disclosure; retain current page",
     "followupReport": "apps/affiliate/reports/seo-audit-2026-09-24/completion-2026-09-25.md",
-    "followupStatus": "available-local-work-completed-external-verification-blocked-unpublished",
+    "followupStatus": "published-and-publicly-verified-external-observation-open",
     "priorityPages": 53,
     "exactQueryReviews": 53,
     "styleEvidenceCleanupCanonicals": 53,
@@ -123,9 +139,19 @@
       "bytes": 60873911,
       "sha256": "5452695a40221ac3fb770e49e48103ddb4f0df52b892f77e00755955adc1e0d0",
       "builtAndPackaged": true,
-      "published": false
+      "published": true,
+      "sourcePackageCommit": "8055b15",
+      "productionPath": "/srv/madabase-affiliate/releases/seo-20260925-8055b15",
+      "rollbackPath": "/srv/madabase-affiliate/releases/ab2cf6d",
+      "publishedAt": "2026-09-25T10:52:55+08:00",
+      "service": "madabase-affiliate.service",
+      "activeState": "active",
+      "subState": "running",
+      "nRestarts": 0,
+      "finalObservedMemoryBytes": 290050048,
+      "postStopAvailableMiB": 841.3125
     },
-    "indexNowSubmitted": 0,
+    "indexNowSubmitted": 90,
     "currentAsins": 294,
     "currentAsinsIdentityVerified": "294 active titles/models reviewed; stock and selected-region limits are separate in merchant-decisions-final.json",
     "remainingCurrentAsinChecks": "Do not claim blanket US stock: see per-ASIN availability status. No unread baseline merchant-title record remains.",
@@ -154,9 +180,26 @@
       "bytes": 20632786,
       "sha256": "d48213b0a00c65f4dec34e1b01ac4b555541928cd802508b44d6f42eeaa9c349",
       "builtAndPackaged": true,
-      "published": false
+      "published": true,
+      "sourcePackageCommit": "8055b15",
+      "productionPath": "/srv/madabase-wellness/releases/seo-20260925-8055b15",
+      "rollbackPath": "/srv/madabase-wellness/releases/4cccf2794981dfcd80954e92d1428e191e9fa13f",
+      "publishedAt": "2026-09-25T10:58:14+08:00",
+      "service": "madabase-wellness.service",
+      "activeState": "active",
+      "subState": "running",
+      "nRestarts": 0,
+      "finalObservedMemoryBytes": 55799808,
+      "postStopAvailableMiB": 862.41796875
     },
     "blockedVerification": [
+      {
+        "type": "wellness-cloudflare-edge-525",
+        "priority": "P1",
+        "reason": "One browser request through San Jose received Cloudflare 525; origin and server-side public request returned expected paused-offer 503. Root cause unconfirmed; origin certificate is within validity.",
+        "next": "Await explicit authorization for saved Cloudflare account login, then inspect only madabase.com DNS/SSL/origin analytics. Do not weaken TLS or bypass the approval rejection.",
+        "evidence": "apps/affiliate/reports/seo-release-2026-09-25/wellness-edge-525.json"
+      },
       {
         "type": "gsc-index-inspection",
         "count": 23,
@@ -165,16 +208,12 @@
         "next": "Resume these exact 23 URLs after the property quota renews; do not resubmit all inspected URLs."
       },
       {
-        "type": "costume-data-and-merchant-validation",
-        "count": 32,
-        "evidence": "conversion-paths-costume-final.json",
-        "reason": "The existing local DATABASE_URL points to localhost:5432; application catalog queries fail. Public Santa detail returned HTTP 403 on Sep 25 and authorized CJ SFTP read timed out during handshake.",
-        "next": "With working existing catalog access, recheck 32 editorial/category purchase paths, the 76 product discovery paths, and two same-name Santa candidates. Do not merge candidates without exact merchant identity."
-      },
-      {
-        "type": "production-validation",
-        "reason": "Server publication explicitly excluded. Source repairs, 6 indexing repairs, 37 discovery fixes and QA exclusion have not been verified on a switched production release.",
-        "next": "Owner-controlled release and public verification remain separate; no recovery or SEO lift claimed."
+        "type": "costume-santa-exact-variant-mapping",
+        "count": 2,
+        "evidence": "../seo-release-2026-09-25/santa-public-evidence.json",
+        "reason": "Both pages now render. Public prices are $150 and $450; the official merchant offers Rent/Buy choices. Exact saved tracking-destination variant mapping is not established by public page title/price alone.",
+        "next": "Read the two existing authorized catalog destination records before renaming or merging. No merge, deletion or tracking click performed.",
+        "merchantSource": "https://abracadabranyc.com/products/professional-santa-suit"
       },
       {
         "type": "merchant-region-stock",
@@ -184,8 +223,95 @@
       {
         "type": "attribution-observation",
         "reason": "CJ earnings remain unavailable, Amazon Other attribution unresolved, and historical Clarity QA contamination cannot be removed retroactively; no invented earnings or retagging."
+      },
+      {
+        "type": "post-publication-search-observation",
+        "reason": "Technical publication and IndexNow acceptance do not prove restored indexing, CTR, clicks or earnings.",
+        "next": "Keep the existing cohort dates and review only after enough post-publication observations; no new recurring task was created."
       }
-    ]
+    ],
+    "publishedAt": "2026-09-25T10:58:16+08:00",
+    "publicationAuthorization": "发布吧",
+    "publicationReport": "apps/affiliate/reports/seo-release-2026-09-25/README.md",
+    "deploymentScriptCommit": "343b5d5",
+    "productionReleases": {
+      "affiliate": {
+        "app": "affiliate",
+        "path": "apps/affiliate/.release/affiliate-runtime.tgz",
+        "bytes": 60873911,
+        "sha256": "5452695a40221ac3fb770e49e48103ddb4f0df52b892f77e00755955adc1e0d0",
+        "builtAndPackaged": true,
+        "published": true,
+        "sourcePackageCommit": "8055b15",
+        "productionPath": "/srv/madabase-affiliate/releases/seo-20260925-8055b15",
+        "rollbackPath": "/srv/madabase-affiliate/releases/ab2cf6d",
+        "publishedAt": "2026-09-25T10:52:55+08:00",
+        "service": "madabase-affiliate.service",
+        "activeState": "active",
+        "subState": "running",
+        "nRestarts": 0,
+        "finalObservedMemoryBytes": 290050048,
+        "postStopAvailableMiB": 841.3125
+      },
+      "main": {
+        "app": "main",
+        "path": "apps/main/.release/main-runtime.tgz",
+        "bytes": 17116491,
+        "sha256": "704e254c86bb6f4f00855c88ccbf2d00dc1ef3a2617b375942b4d5769b49c5f6",
+        "builtAndPackaged": true,
+        "originalPackageCommit": "4883d9c",
+        "published": true,
+        "sourcePackageCommit": "8055b15",
+        "productionPath": "/srv/madabase-main/releases/seo-20260925-8055b15",
+        "rollbackPath": "/srv/madabase-main/releases/sec-20260820-next15523",
+        "publishedAt": "2026-09-25T10:58:13+08:00",
+        "service": "madabase-main.service",
+        "activeState": "active",
+        "subState": "running",
+        "nRestarts": 0,
+        "finalObservedMemoryBytes": 52289536,
+        "postStopAvailableMiB": 866.6328125
+      },
+      "wellness": {
+        "app": "wellness",
+        "path": "apps/wellness/.release/wellness-runtime.tgz",
+        "bytes": 20632786,
+        "sha256": "d48213b0a00c65f4dec34e1b01ac4b555541928cd802508b44d6f42eeaa9c349",
+        "builtAndPackaged": true,
+        "published": true,
+        "sourcePackageCommit": "8055b15",
+        "productionPath": "/srv/madabase-wellness/releases/seo-20260925-8055b15",
+        "rollbackPath": "/srv/madabase-wellness/releases/4cccf2794981dfcd80954e92d1428e191e9fa13f",
+        "publishedAt": "2026-09-25T10:58:14+08:00",
+        "service": "madabase-wellness.service",
+        "activeState": "active",
+        "subState": "running",
+        "nRestarts": 0,
+        "finalObservedMemoryBytes": 55799808,
+        "postStopAvailableMiB": 862.41796875
+      }
+    },
+    "publicValidation": {
+      "publicPages": 302,
+      "publicPagesPassed": 302,
+      "priorityAndMerchantPages": 82,
+      "costumePurchasePages": 32,
+      "costumeProductDiscovery": 76,
+      "sitemapUrls": 1401,
+      "sitemaps": 9,
+      "robots": 9,
+      "browserQaApps": 3,
+      "blockedAmazonSponsoredLinksFound": 0,
+      "deskCalculatorInteraction": "30/45 inch elbows minus 2 inch keyboard yields 28/43 inches"
+    },
+    "lateEdgeTlsIncident": {
+      "type": "wellness-cloudflare-edge-525",
+      "priority": "P1",
+      "reason": "One browser request through San Jose received Cloudflare 525; origin and server-side public request returned expected paused-offer 503. Root cause unconfirmed; origin certificate is within validity.",
+      "next": "Await explicit authorization for saved Cloudflare account login, then inspect only madabase.com DNS/SSL/origin analytics. Do not weaken TLS or bypass the approval rejection.",
+      "evidence": "apps/affiliate/reports/seo-release-2026-09-25/wellness-edge-525.json"
+    }
   },
-  "pageEditsDefinition": "Direct editorial canonicals: 6 index-repair guides, 2 policy reviews, 2 followup reviews, Chicco and 53 Style pages. Shared technical changes and category discovery affect additional routes."
+  "pageEditsDefinition": "Direct editorial canonicals: 6 index-repair guides, 2 policy reviews, 2 followup reviews, Chicco and 53 Style pages. Shared technical changes and category discovery affect additional routes.",
+  "indexNowSubmissions": 90
 }

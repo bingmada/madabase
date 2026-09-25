@@ -1,0 +1,36 @@
+{
+  "checkedAt": "2026-09-25T14:50:45+08:00",
+  "firstBrowserEvidenceAt": "2026-09-25T06:44:42Z",
+  "site": "wellness.madabase.com",
+  "browserEdge": "San Jose",
+  "status": 525,
+  "rayId": "a4080f71dca2ebf1",
+  "path": "/go/cj/floral-sheer-lace-kimono",
+  "origin": {
+    "status": 503,
+    "reason": "exact_product_unavailable"
+  },
+  "serverPublicRequest": {
+    "status": 503,
+    "reason": "exact_product_unavailable"
+  },
+  "certificate": {
+    "issuer": "CloudFlare Origin SSL Certificate Authority",
+    "notBefore": "2026-05-28T08:48:00Z",
+    "notAfter": "2041-05-24T08:48:00Z",
+    "san": [
+      "*.madabase.com",
+      "madabase.com"
+    ],
+    "systemCaDiagnostic": "Local default trust store does not trust Origin CA; this does not establish certificate expiry or invalidity for Cloudflare."
+  },
+  "nginx": {
+    "activeState": "active",
+    "nRestarts": 0,
+    "memoryBytes": 12615680,
+    "matchingTlsErrorInRecentLog": "2026-09-25 14:16:47 SSL_do_handshake bad key share; not proven related to the later San Jose request."
+  },
+  "rootCause": "unconfirmed",
+  "cloudflareLogin": "Automatic approval review rejected signing in with saved account because explicit account-login authorization was missing. User asked for permission to inspect madabase.com DNS, SSL and origin analytics read-only. No login, settings changes or TLS downgrade performed.",
+  "documentation": "https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-5xx-errors/error-525/"
+}

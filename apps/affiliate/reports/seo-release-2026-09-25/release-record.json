@@ -1,0 +1,188 @@
+{
+  "updatedAt": "2026-09-25T14:42:46+08:00",
+  "status": "published-public-checks-passed-edge-tls-investigation-open",
+  "authorization": "Owner explicitly said 发布吧; supersedes earlier server-publication exclusion.",
+  "sourceCommit": "8055b15",
+  "deploymentScriptCommit": "343b5d5",
+  "branch": "lyd-0609",
+  "packages": [
+    {
+      "app": "affiliate",
+      "path": "apps/affiliate/.release/affiliate-runtime.tgz",
+      "bytes": 60873911,
+      "sha256": "5452695a40221ac3fb770e49e48103ddb4f0df52b892f77e00755955adc1e0d0",
+      "builtAndPackaged": true,
+      "published": true,
+      "sourcePackageCommit": "8055b15",
+      "productionPath": "/srv/madabase-affiliate/releases/seo-20260925-8055b15",
+      "rollbackPath": "/srv/madabase-affiliate/releases/ab2cf6d",
+      "publishedAt": "2026-09-25T10:52:55+08:00",
+      "service": "madabase-affiliate.service",
+      "activeState": "active",
+      "subState": "running",
+      "nRestarts": 0,
+      "finalObservedMemoryBytes": 290050048,
+      "postStopAvailableMiB": 841.3125
+    },
+    {
+      "app": "main",
+      "path": "apps/main/.release/main-runtime.tgz",
+      "bytes": 17116491,
+      "sha256": "704e254c86bb6f4f00855c88ccbf2d00dc1ef3a2617b375942b4d5769b49c5f6",
+      "builtAndPackaged": true,
+      "originalPackageCommit": "4883d9c",
+      "published": true,
+      "sourcePackageCommit": "8055b15",
+      "productionPath": "/srv/madabase-main/releases/seo-20260925-8055b15",
+      "rollbackPath": "/srv/madabase-main/releases/sec-20260820-next15523",
+      "publishedAt": "2026-09-25T10:58:13+08:00",
+      "service": "madabase-main.service",
+      "activeState": "active",
+      "subState": "running",
+      "nRestarts": 0,
+      "finalObservedMemoryBytes": 52289536,
+      "postStopAvailableMiB": 866.6328125
+    },
+    {
+      "app": "wellness",
+      "path": "apps/wellness/.release/wellness-runtime.tgz",
+      "bytes": 20632786,
+      "sha256": "d48213b0a00c65f4dec34e1b01ac4b555541928cd802508b44d6f42eeaa9c349",
+      "builtAndPackaged": true,
+      "published": true,
+      "sourcePackageCommit": "8055b15",
+      "productionPath": "/srv/madabase-wellness/releases/seo-20260925-8055b15",
+      "rollbackPath": "/srv/madabase-wellness/releases/4cccf2794981dfcd80954e92d1428e191e9fa13f",
+      "publishedAt": "2026-09-25T10:58:14+08:00",
+      "service": "madabase-wellness.service",
+      "activeState": "active",
+      "subState": "running",
+      "nRestarts": 0,
+      "finalObservedMemoryBytes": 55799808,
+      "postStopAvailableMiB": 862.41796875
+    }
+  ],
+  "scope": [
+    "main",
+    "network",
+    "smarthome",
+    "homeoffice",
+    "baby",
+    "pet",
+    "style",
+    "costume",
+    "wellness"
+  ],
+  "excluded": [
+    "test",
+    "standalone tools"
+  ],
+  "safety": {
+    "parallelCandidateStarted": false,
+    "postStopMemoryThresholdMiB": 704,
+    "forecastThresholdMiB": 768,
+    "normalCutoverMemoryChecksPassed": true,
+    "independentRollbackTimers": "all four observed inactive after verification",
+    "finalMemAvailableKiB": 587320,
+    "finalMemoryPressureAvg10": 0,
+    "initialAutoReviewRejection": "Original cutover blocked on insufficient parallel capacity; revised operation measured reclaimable anonymous memory and retained the unchanged post-stop 704 MiB gate, then passed approval.",
+    "actualAutomaticRollback": "First Affiliate attempt restored old release after AppleDouble metadata was mistakenly treated as a browser asset; actual old browser assets were 200. Filtering fixed; subsequent cutover passed.",
+    "mainWellnessWindow": {
+      "startedAt": "2026-09-25T10:58:12+08:00",
+      "completedAt": "2026-09-25T10:58:16+08:00",
+      "affiliateRestored": true
+    },
+    "excludedServicesChanged": false,
+    "serverDirtyCheckoutPreserved": true
+  },
+  "validation": {
+    "publicPages": 302,
+    "publicPagesPassed": 302,
+    "priorityAndMerchantPages": 82,
+    "costumePurchasePages": 32,
+    "costumeProductDiscovery": 76,
+    "sitemapUrls": 1401,
+    "sitemaps": 9,
+    "robots": 9,
+    "browserQaApps": 3,
+    "blockedAmazonSponsoredLinksFound": 0,
+    "deskCalculatorInteraction": "30/45 inch elbows minus 2 inch keyboard yields 28/43 inches",
+    "publicAcceptanceAt": "2026-09-25T11:08:00+08:00",
+    "lateEdgeTlsIncident": "wellness-edge-525.json"
+  },
+  "indexNow": {
+    "acceptedUrls": 90,
+    "statusByHost": {
+      "network": {
+        "count": 3,
+        "status": 200
+      },
+      "smarthome": {
+        "count": 2,
+        "status": 200
+      },
+      "homeoffice": {
+        "count": 14,
+        "status": 200
+      },
+      "baby": {
+        "count": 12,
+        "status": 200
+      },
+      "pet": {
+        "count": 1,
+        "status": 200
+      },
+      "style": {
+        "count": 53,
+        "status": 200
+      },
+      "costume": {
+        "count": 5,
+        "status": 200
+      }
+    },
+    "evidence": "indexnow-submission.txt",
+    "acceptanceIsNotIndexingOrRanking": true
+  },
+  "rollbackScript": "/var/tmp/madabase-seo-deploy-20260925.py",
+  "serverStateDirectory": "/var/tmp/madabase-seo-release-20260925",
+  "remaining": [
+    {
+      "type": "wellness-cloudflare-edge-525",
+      "priority": "P1",
+      "reason": "One browser request through San Jose received Cloudflare 525; origin and server-side public request returned expected paused-offer 503. Root cause unconfirmed; origin certificate is within validity.",
+      "next": "Await explicit authorization for saved Cloudflare account login, then inspect only madabase.com DNS/SSL/origin analytics. Do not weaken TLS or bypass the approval rejection.",
+      "evidence": "apps/affiliate/reports/seo-release-2026-09-25/wellness-edge-525.json"
+    },
+    {
+      "type": "gsc-index-inspection",
+      "count": 23,
+      "evidence": "remaining-live-inspections.json",
+      "reason": "Google property daily URL inspection quota exceeded; 92/115 examined, including 86 newly recorded indexed URLs.",
+      "next": "Resume these exact 23 URLs after the property quota renews; do not resubmit all inspected URLs."
+    },
+    {
+      "type": "costume-santa-exact-variant-mapping",
+      "count": 2,
+      "evidence": "../seo-release-2026-09-25/santa-public-evidence.json",
+      "reason": "Both pages now render. Public prices are $150 and $450; the official merchant offers Rent/Buy choices. Exact saved tracking-destination variant mapping is not established by public page title/price alone.",
+      "next": "Read the two existing authorized catalog destination records before renaming or merging. No merge, deletion or tracking click performed.",
+      "merchantSource": "https://abracadabranyc.com/products/professional-santa-suit"
+    },
+    {
+      "type": "merchant-region-stock",
+      "reason": "Regional restrictions and unspecified stock were retained as limits; 305 reviewed identities do not imply all US variants are in stock.",
+      "evidence": "merchant-decisions-final.json"
+    },
+    {
+      "type": "attribution-observation",
+      "reason": "CJ earnings remain unavailable, Amazon Other attribution unresolved, and historical Clarity QA contamination cannot be removed retroactively; no invented earnings or retagging."
+    },
+    {
+      "type": "post-publication-search-observation",
+      "reason": "Technical publication and IndexNow acceptance do not prove restored indexing, CTR, clicks or earnings.",
+      "next": "Keep the existing cohort dates and review only after enough post-publication observations; no new recurring task was created."
+    }
+  ]
+}

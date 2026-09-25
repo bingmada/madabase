@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-25T09:29:44+08:00",
-  "status": "available-local-work-completed-external-verification-blocked-unpublished",
+  "updatedAt": "2026-09-25T14:42:46+08:00",
+  "status": "published-with-external-followups",
   "scope": [
     "main",
     "network",
@@ -14,8 +14,7 @@
   ],
   "excluded": [
     "standalone test",
-    "standalone tools",
-    "server publication"
+    "standalone tools"
   ],
   "baselineSitemapPages": 1401,
   "priorityPagesReviewed": 53,
@@ -45,6 +44,13 @@
   },
   "blocked": [
     {
+      "type": "wellness-cloudflare-edge-525",
+      "priority": "P1",
+      "reason": "One browser request through San Jose received Cloudflare 525; origin and server-side public request returned expected paused-offer 503. Root cause unconfirmed; origin certificate is within validity.",
+      "next": "Await explicit authorization for saved Cloudflare account login, then inspect only madabase.com DNS/SSL/origin analytics. Do not weaken TLS or bypass the approval rejection.",
+      "evidence": "apps/affiliate/reports/seo-release-2026-09-25/wellness-edge-525.json"
+    },
+    {
       "type": "gsc-index-inspection",
       "count": 23,
       "evidence": "remaining-live-inspections.json",
@@ -52,16 +58,12 @@
       "next": "Resume these exact 23 URLs after the property quota renews; do not resubmit all inspected URLs."
     },
     {
-      "type": "costume-data-and-merchant-validation",
-      "count": 32,
-      "evidence": "conversion-paths-costume-final.json",
-      "reason": "The existing local DATABASE_URL points to localhost:5432; application catalog queries fail. Public Santa detail returned HTTP 403 on Sep 25 and authorized CJ SFTP read timed out during handshake.",
-      "next": "With working existing catalog access, recheck 32 editorial/category purchase paths, the 76 product discovery paths, and two same-name Santa candidates. Do not merge candidates without exact merchant identity."
-    },
-    {
-      "type": "production-validation",
-      "reason": "Server publication explicitly excluded. Source repairs, 6 indexing repairs, 37 discovery fixes and QA exclusion have not been verified on a switched production release.",
-      "next": "Owner-controlled release and public verification remain separate; no recovery or SEO lift claimed."
+      "type": "costume-santa-exact-variant-mapping",
+      "count": 2,
+      "evidence": "../seo-release-2026-09-25/santa-public-evidence.json",
+      "reason": "Both pages now render. Public prices are $150 and $450; the official merchant offers Rent/Buy choices. Exact saved tracking-destination variant mapping is not established by public page title/price alone.",
+      "next": "Read the two existing authorized catalog destination records before renaming or merging. No merge, deletion or tracking click performed.",
+      "merchantSource": "https://abracadabranyc.com/products/professional-santa-suit"
     },
     {
       "type": "merchant-region-stock",
@@ -71,10 +73,30 @@
     {
       "type": "attribution-observation",
       "reason": "CJ earnings remain unavailable, Amazon Other attribution unresolved, and historical Clarity QA contamination cannot be removed retroactively; no invented earnings or retagging."
+    },
+    {
+      "type": "post-publication-search-observation",
+      "reason": "Technical publication and IndexNow acceptance do not prove restored indexing, CTR, clicks or earnings.",
+      "next": "Keep the existing cohort dates and review only after enough post-publication observations; no new recurring task was created."
     }
   ],
-  "publications": 0,
-  "indexingSubmissions": 0,
+  "publications": 3,
+  "indexingSubmissions": 90,
   "report": "completion-2026-09-25.md",
-  "localValidationProcessesStopped": true
+  "localValidationProcessesStopped": true,
+  "prePublicationCheckpointAt": "2026-09-25T09:29:44+08:00",
+  "productionValidation": {
+    "publicPages": 302,
+    "publicPagesPassed": 302,
+    "priorityAndMerchantPages": 82,
+    "costumePurchasePages": 32,
+    "costumeProductDiscovery": 76,
+    "sitemapUrls": 1401,
+    "sitemaps": 9,
+    "robots": 9,
+    "browserQaApps": 3,
+    "blockedAmazonSponsoredLinksFound": 0,
+    "deskCalculatorInteraction": "30/45 inch elbows minus 2 inch keyboard yields 28/43 inches"
+  },
+  "publicationReport": "../seo-release-2026-09-25/README.md"
 }

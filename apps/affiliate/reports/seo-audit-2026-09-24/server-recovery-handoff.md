@@ -1,3 +1,5 @@
+> 2026-09-25 发布更新：用户已授权并完成三个服务发布；最新状态见 [正式发布记录](../seo-release-2026-09-25/README.md)。下文是历史过程记录，原“未发布／服务器待恢复”状态已被替代。
+
 # Server recovery — production release not switched
 
 At about 19:34 Asia/Shanghai on September 24, a temporary Affiliate candidate was started on loopback port 3111 with systemd unit `madabase-seo-candidate.service` and MemoryMax 350M. The following validation did not return. The memory chart rose to about 1.5GB and CPU to about 60%; whether memory pressure caused the loss of responsiveness requires journal confirmation.
