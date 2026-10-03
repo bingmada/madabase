@@ -36,6 +36,9 @@ const cacheablePageSources = [
 ];
 
 const nextConfig: NextConfig = {
+  // Keep canonical and other metadata in the initial head for every client.
+  // Public HTML is shared by the CDN, so a bot-only override is insufficient.
+  htmlLimitedBots: /.*/,
   distDir: process.env.NEXT_RELEASE_DIST_DIR ?? ".next",
   // Keep the existing `next build` + `next start` path unchanged. The
   // low-resource release command opts into the traced standalone runtime.

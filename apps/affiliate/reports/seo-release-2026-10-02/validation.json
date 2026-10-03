@@ -1,0 +1,38 @@
+{
+  "releaseId": "seo-20261002",
+  "updatedAt": "2026-10-03T11:10:29.612395+08:00",
+  "status": "validated-awaiting-git-and-production",
+  "scope": [
+    "network",
+    "smarthome",
+    "homeoffice",
+    "baby",
+    "pets",
+    "style",
+    "costumes"
+  ],
+  "applicationChange": "Disable streamed metadata for all UAs so shared-cache HTML has canonical, title and description in its initial head. No title/body targeting changes.",
+  "archive": {
+    "path": "apps/affiliate/.release/affiliate-runtime.tgz",
+    "bytes": 60872322,
+    "sha256": "5e4f9ff8c73d04afce05273c90ab831de5a0d72301efa866631877b82554174b",
+    "environmentFiles": 0,
+    "buildCacheFiles": 0,
+    "nativeTarget": "linux-x64"
+  },
+  "validation": {
+    "seo": "passed",
+    "lint": "passed",
+    "nextBuild": "passed",
+    "node": "v20.20.0",
+    "headParserTests": 6,
+    "capacityTests": 9,
+    "deploymentSimulations": 9,
+    "localSitemapPages": 1255,
+    "localSitemapFailures": 0,
+    "localUaMatrixResponses": 321,
+    "localUaMatrixFailures": 0,
+    "costumeDatabaseRoutes": "Require production validation; local environment lacks production DB"
+  },
+  "next": "Commit/push artifact, immutable extraction, protected single-process cutover if existing capacity gates pass, public CDN and priority checks."
+}
