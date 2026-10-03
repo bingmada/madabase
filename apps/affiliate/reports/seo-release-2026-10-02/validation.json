@@ -1,7 +1,7 @@
 {
   "releaseId": "seo-20261002",
-  "updatedAt": "2026-10-03T11:10:29.612395+08:00",
-  "status": "validated-awaiting-git-and-production",
+  "updatedAt": "2026-10-03T11:22:04.411032+08:00",
+  "status": "git-pushed-server-prepared-awaiting-main-maintenance-approval",
   "scope": [
     "network",
     "smarthome",
@@ -32,7 +32,21 @@
     "localSitemapFailures": 0,
     "localUaMatrixResponses": 321,
     "localUaMatrixFailures": 0,
-    "costumeDatabaseRoutes": "Require production validation; local environment lacks production DB"
+    "costumeDatabaseRoutes": "Require production validation; local environment lacks production DB",
+    "maintenanceSimulations": 11
   },
-  "next": "Commit/push artifact, immutable extraction, protected single-process cutover if existing capacity gates pass, public CDN and priority checks."
+  "next": "Await explicit Main pause approval; if approved execute committed maintenance controller, validate origin and CDN, update records. Until then do not run maintenance.py activate.",
+  "releaseCommit": "6dd60dbeb3f0e6930ab5859339a3856a9b3bddc3",
+  "maintenanceCommit": "5fe476b2d1d658ab0909f255e47f6051a0c22f45",
+  "branch": "lyd-0609",
+  "server": {
+    "prepared": true,
+    "preparedAt": "2026-10-03T11:13:34+08:00",
+    "sha256Verified": true,
+    "retainedOldAssets": 21,
+    "productionRelease": "seo-20260925-8055b15",
+    "newReleaseDirectory": "/srv/madabase-affiliate/releases/seo-20261002-6dd60dbeb3f0e6930ab5859339a3856a9b3bddc3",
+    "activation": "Forecast capacity gate rejected before production stop; state remains prepared",
+    "additionalMaintenance": "Auto approval rejected pausing Main because additional service downtime was not explicitly authorized; user choice pending. No workaround attempted."
+  }
 }
