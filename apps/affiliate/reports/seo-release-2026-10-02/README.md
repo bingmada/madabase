@@ -15,6 +15,8 @@
 
 服务器仓库存在旧改动，禁止用 checkout/pull 覆盖；使用 `git fetch` + `git show <commit>:<file>` 提取已提交包。独立不可变目录、保存原服务配置、保留旧静态文件。使用既定 768 MiB 切换前预测与 704 MiB 停止旧进程后的实际容量门槛，PSI 小于 1%，150 秒独立回滚 watchdog。只切换 Affiliate 服务，不启动第二份应用，不改 Test/Tools。
 
+10 月 3 日单独切换的预测容量未过门槛，控制器在停止生产服务前退出。增加 `maintenance.py`：核验 Main + Affiliate 的合计可回收匿名内存；短暂停 Main 后执行原封不动的 Affiliate 容量门槛与发布流程；finally 恢复 Main 原服务、原版本，并以独立 180 秒恢复计时器应对控制器意外退出。11 个维护恢复/失败/容量场景通过，Main 配置发生外部变化时拒绝覆盖。Wellness、Test、Tools 不参与维护。应用包与 `6dd60db` 完全相同。
+
 ## 历史故障证据
 
 10 月 2 日通过服务器 Workbench 读取日志：Nginx 保留的 9 月 23–24 日记录确认 Affiliate `127.0.0.1:3011` 的七个域名均出现 upstream timed out。9 月 23 日数量 Baby 307、Costume 833、Homeoffice 435、Network 259、Pets 127、Smarthome 114、Style 281；9 月 24 日分别 101、130、132、156、133、151、21。该筛选未发现七站 9 月 25–29 日同类错误。journald 只保留 9 月 27 日起的日志，不能凭此确定更早的进程根因。Nginx 超时证实过去存在源站可用性问题，但不能单独证明 9 月 29 日展现下降由此造成。
