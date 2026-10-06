@@ -1,7 +1,7 @@
 {
   "version": 3,
-  "updatedAt": "2026-10-06T13:30:00+08:00",
-  "status": "september_2026_spam_update_active_existing_page_consolidation_prepared_new_growth_frozen",
+  "updatedAt": "2026-10-06T16:40:00+08:00",
+  "status": "september_2026_spam_update_active_all_site_existing_page_recovery_validated_new_growth_frozen",
   "currentTrigger": {
     "name": "September 2026 spam update",
     "startedAt": "2026-09-24T09:15:00-07:00",
@@ -64,15 +64,30 @@
     "expansion757Day30": "2026-09-08",
     "octoberSearchRecoveryDay7": "2026-10-13",
     "octoberSearchRecoveryDay14": "2026-10-20",
-    "octoberSearchRecoveryDay30": "2026-11-05"
+    "octoberSearchRecoveryDay30": "2026-11-05",
+    "portfolioSearchRecoveryDay7": "2026-10-13",
+    "portfolioSearchRecoveryDay14": "2026-10-20",
+    "portfolioSearchRecoveryDay30": "2026-11-05"
   },
   "octoberSearchRecovery20261006": {
-    "status": "prepared-local-validation-in-progress",
+    "status": "included-in-seven-site-batch-local-validated",
     "scope": "Twelve Homeoffice and Baby families, 64 generated URLs, twelve retained existing canonicals, 53 permanent redirects, twelve evidence-led canonical refreshes, and zero new routes.",
     "selectionRule": "Preserve the role with the strongest measured signal or consolidate an entirely unexposed family to one broad hub. Automatic bottle washers redirect all six generated routes to the stronger existing bottle-washer-versus-sterilizer guide because both sets serve the same intent.",
     "contentRule": "Use primary manufacturer, CDC, CPSC, AAP, Apple, Dell, ATEN, Fellowes, and Thule sources. State research-only limitations and add concrete compatibility, safety, workflow, and skip checks without inventing hands-on use, scores, prices, or availability.",
     "config": "apps/affiliate/config/search-recovery-consolidations-2026-10-06.json",
     "validation": "npm run check:october-search-recovery --workspace apps/affiliate",
+    "requestIndexing": false,
+    "reviewGates": ["2026-10-13", "2026-10-20", "2026-11-05"]
+  },
+  "portfolioSearchRecovery20261006": {
+    "status": "all-seven-sites-local-validated",
+    "sites": ["network", "smarthome", "homeoffice", "baby", "pet", "style", "costume"],
+    "scope": "Seventeen retained existing canonicals, 55 base permanent redirects, 220 localized redirects, 64 localized canonicals, seven sitemaps, and zero new routes. The narrower Homeoffice/Baby work is included rather than deployed independently.",
+    "selectionRule": "Protect current winners and page-one opportunities; merge only measured overlapping intent; refresh weak sites on their best recorded existing query path; preserve all URLs without evidence for consolidation.",
+    "contentRule": "Every changed page has a site-specific decision job and evidence boundary. Primary manufacturer or standards sources lead Network and Smarthome; Pet separates official, instrumented and household observations; Style begins with the exact care label; Costume requires transaction-level term verification.",
+    "config": "apps/affiliate/config/portfolio-search-recovery-2026-10-06.json",
+    "ledger": "apps/affiliate/reports/seo-recovery-2026-10-06/changed-urls.json",
+    "validation": "npm run check:portfolio-search-recovery --workspace apps/affiliate -- --origin=http://127.0.0.1:3020",
     "requestIndexing": false,
     "reviewGates": ["2026-10-13", "2026-10-20", "2026-11-05"]
   },

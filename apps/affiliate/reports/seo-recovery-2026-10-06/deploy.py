@@ -26,7 +26,7 @@ LEDGER = Path(os.environ.get(
 ))
 STATE = Path("/var/tmp/madabase-seo-recovery-20261006")
 CAPACITY = Path("/var/tmp/madabase-seo-capacity-20261006.mjs")
-ARCHIVE_SHA256 = "9579f2fe115deda33a0a9bf68ab6c4c074f865f8b401035323459e1f0164ffd8"
+ARCHIVE_SHA256 = "40dc368375e9f8e055ae4c6330252a7ffbb66eacebcb26ed26c518747fbca7d3"
 
 spec = importlib.util.spec_from_file_location("guarded_release_base", BASE_PATH)
 base = importlib.util.module_from_spec(spec)
@@ -79,7 +79,7 @@ def validate_ledger_file():
     ledger = json.loads(LEDGER.read_text())
     targets = {family["target"] for family in ledger["families"]}
     sources = {source for family in ledger["families"] for source in family["sources"]}
-    if len(ledger["families"]) != 12 or len(targets) != 12 or len(sources) != 53:
+    if len(ledger["families"]) != 17 or len(targets) != 17 or len(sources) != 55:
         raise RuntimeError("Recovery ledger count mismatch")
     if ledger.get("newRoutes") != 0 or ledger.get("requestIndexing") is not False:
         raise RuntimeError("Recovery ledger publication boundary changed")
@@ -126,7 +126,7 @@ def verify_recovery():
         for target_url in targets_by_host[host]:
             if sitemap.count(target_url) != 1:
                 errors.append("sitemap target count failed: " + target_url)
-        for source_url in sources_by_host[host]:
+        for source_url in sources_by_host.get(host, []):
             if source_url in sitemap:
                 errors.append("sitemap contains redirect source: " + source_url)
         sitemap_count += 1

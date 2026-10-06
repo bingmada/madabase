@@ -81,6 +81,14 @@ const consolidatedFamilyByKey = new Map(
   consolidatedFamilies.map((family) => [`${family.site}:${family.familySlug}`, family]),
 );
 
+// These are not generated family-role pages, but current Search Console evidence
+// shows they duplicate the same broad device-selection intent. Keep the live
+// exposure leader and route the weaker historical explainers into it.
+const standaloneGuideRedirects = new Map([
+  ["smarthome:matter-vs-thread-vs-zigbee", "matter-thread-wifi-zigbee-device-checklist"],
+  ["smarthome:matter-over-thread-hub-checklist", "matter-thread-wifi-zigbee-device-checklist"],
+]);
+
 function uniqueBy<T>(items: T[], keyFor: (item: T) => string) {
   return items.filter(
     (item, index) => items.findIndex((candidate) => keyFor(candidate) === keyFor(item)) === index,
@@ -107,6 +115,7 @@ export function isConsolidatedFamilyHub(guide: Guide) {
 }
 
 export function isConsolidatedSupportGuide(guide: Guide) {
+  if (standaloneGuideRedirects.has(`${guide.site}:${guide.slug}`)) return true;
   const family = consolidatedFamilyFor(guide);
   return Boolean(family && guide.familyRole && (family.externalTarget || guide.slug !== family.targetSlug));
 }
@@ -118,6 +127,8 @@ export function isFamilyDiscoveryHub(guide: Guide) {
 }
 
 export function consolidationTargetSlug(guide: Guide) {
+  const standaloneTarget = standaloneGuideRedirects.get(`${guide.site}:${guide.slug}`);
+  if (standaloneTarget) return standaloneTarget;
   const family = consolidatedFamilyFor(guide);
   if (!family || !isConsolidatedSupportGuide(guide)) return undefined;
   return family.targetSlug;

@@ -45,12 +45,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       ...(guides.some((guide) => guide.category === category.slug && guide.familySlug)
         ? {
             lastModified: new Date(
-              guides.some((guide) => guide.category === category.slug && guide.updatedAt === "September 11, 2026")
+              guides.some((guide) => guide.category === category.slug && guide.updatedAt === "October 6, 2026")
+                || products.some((product) => product.category === category.slug && product.updatedAt === "October 6, 2026")
+                ? "2026-10-06T00:00:00Z"
+                : guides.some((guide) => guide.category === category.slug && guide.updatedAt === "September 11, 2026")
                 || products.some((product) => product.category === category.slug && product.updatedAt === "September 11, 2026")
-                ? "2026-09-11T00:00:00Z"
-                : guides.some((guide) => guide.category === category.slug && guide.updatedAt === "September 8, 2026")
-                  ? "2026-09-08T00:00:00Z"
-                : "2026-08-23T00:00:00Z",
+                  ? "2026-09-11T00:00:00Z"
+                  : guides.some((guide) => guide.category === category.slug && guide.updatedAt === "September 8, 2026")
+                    ? "2026-09-08T00:00:00Z"
+                    : "2026-08-23T00:00:00Z",
             ),
           }
         : {}),

@@ -28,7 +28,9 @@ async function governedGuideRows() {
   const consolidationPath = path.join(affiliateDir, "config", "search-recovery-consolidations-2026-08-23.json");
   const day30ConsolidationPath = path.join(affiliateDir, "config", "search-recovery-consolidations-2026-09-08.json");
   const deferredConsolidationPath = path.join(affiliateDir, "config", "deferred-family-consolidations-2026-09-11.json");
+  const octoberConsolidationPath = path.join(affiliateDir, "config", "search-recovery-consolidations-2026-10-06.json");
   const pageOneCtrPath = path.join(affiliateDir, "config", "page-one-ctr-cohort-2026-09-11.json");
+  const portfolioRecoveryPath = path.join(affiliateDir, "config", "portfolio-search-recovery-2026-10-06.json");
   const source = ts.transpileModule(fs.readFileSync(sourcePath, "utf8"), {
     compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 },
     fileName: sourcePath,
@@ -47,12 +49,16 @@ async function governedGuideRows() {
   const consolidation = JSON.parse(fs.readFileSync(consolidationPath, "utf8"));
   const day30Consolidation = JSON.parse(fs.readFileSync(day30ConsolidationPath, "utf8"));
   const deferredConsolidation = JSON.parse(fs.readFileSync(deferredConsolidationPath, "utf8"));
+  const octoberConsolidation = JSON.parse(fs.readFileSync(octoberConsolidationPath, "utf8"));
   const pageOneCtr = JSON.parse(fs.readFileSync(pageOneCtrPath, "utf8"));
+  const portfolioRecovery = JSON.parse(fs.readFileSync(portfolioRecoveryPath, "utf8"));
   const pageOneCtrCategories = new Set(pageOneCtr.targets.map((item) => `${item.site}:${item.category}`));
+  const portfolioRecoveryCategories = new Set(portfolioRecovery.siteActions.flatMap((item) => item.categories.map((category) => `${item.site}:${category}`)));
   const consolidatedFamilyTargets = new Map([
     ...consolidation.families.map((item) => [`${item.site}:${item.familySlug}`, "buying"]),
     ...day30Consolidation.families.map((item) => [`${item.site}:${item.familySlug}`, item.targetRole]),
     ...deferredConsolidation.families.map((item) => [`${item.site}:${item.familySlug}`, item.targetRole]),
+    ...octoberConsolidation.families.map((item) => [`${item.site}:${item.familySlug}`, item.targetRole ?? "external"]),
   ]);
   const moduleSource = `${brief}\nconst communityEvidenceData = ${JSON.stringify(community)};\nconst comparisonFirstData = ${JSON.stringify(comparisonFirst)};\nconst deepRankRecoveryData = ${JSON.stringify(deepRankRecovery)};\n${source}`;
   const expansion = await import(`data:text/javascript;base64,${Buffer.from(moduleSource).toString("base64")}`);
@@ -68,7 +74,9 @@ async function governedGuideRows() {
       consolidated: Boolean(targetRole),
       day30Consolidated: day30Consolidation.families.some((item) => `${item.site}:${item.familySlug}` === familyKey),
       deferredConsolidated: deferredConsolidation.families.some((item) => `${item.site}:${item.familySlug}` === familyKey),
+      octoberConsolidated: octoberConsolidation.families.some((item) => `${item.site}:${item.familySlug}` === familyKey),
       pageOneCtrCategory: pageOneCtrCategories.has(`${guide.site}:${guide.category}`),
+      portfolioRecoveryCategory: portfolioRecoveryCategories.has(`${guide.site}:${guide.category}`),
       url: `https://${siteHosts[guide.site]}/guides/${guide.slug}`,
     };
   });
@@ -103,7 +111,7 @@ for (const row of rows) {
   const guideUrl = new URL(row.url);
   const categoryUrl = `https://${guideUrl.host}/categories/${row.category}`;
   const entry = categories.get(categoryUrl) ?? [];
-    entry.push({ url: row.url, path: guideUrl.pathname, family: row.family, role: row.role, hub: row.hub, consolidated: row.consolidated, day30Consolidated: row.day30Consolidated, deferredConsolidated: row.deferredConsolidated, pageOneCtrCategory: row.pageOneCtrCategory });
+  entry.push({ url: row.url, path: guideUrl.pathname, family: row.family, role: row.role, hub: row.hub, consolidated: row.consolidated, day30Consolidated: row.day30Consolidated, deferredConsolidated: row.deferredConsolidated, octoberConsolidated: row.octoberConsolidated, pageOneCtrCategory: row.pageOneCtrCategory, portfolioRecoveryCategory: row.portfolioRecoveryCategory });
   categories.set(categoryUrl, entry);
 }
 
@@ -137,11 +145,13 @@ async function worker() {
       if (response.status !== 200) errors.push(`HTTP ${response.status}`);
       if (!html.includes('data-governed-discovery-links="family-hubs"')) errors.push("family-hub discovery section missing");
       if (missingHubs.length) errors.push(`${missingHubs.length} primary family hub link(s) missing: ${missingHubs.slice(0, 5).map((guide) => guide.path).join(", ")}`);
-      const expectedCategoryLastmod = guides.some((guide) => guide.deferredConsolidated || guide.pageOneCtrCategory)
-        ? "2026-09-11"
-        : guides.some((guide) => guide.day30Consolidated)
-          ? "2026-09-08"
-          : "2026-08-23";
+      const expectedCategoryLastmod = guides.some((guide) => guide.octoberConsolidated || guide.portfolioRecoveryCategory)
+        ? "2026-10-06"
+        : guides.some((guide) => guide.deferredConsolidated || guide.pageOneCtrCategory)
+          ? "2026-09-11"
+          : guides.some((guide) => guide.day30Consolidated)
+            ? "2026-09-08"
+            : "2026-08-23";
       if (!sitemapLastmodByCategory.get(categoryUrl)?.startsWith(expectedCategoryLastmod)) {
         errors.push(`sitemap lastmod is not ${expectedCategoryLastmod} (${sitemapLastmodByCategory.get(categoryUrl) ?? "missing"})`);
       }

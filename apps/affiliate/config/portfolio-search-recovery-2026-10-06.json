@@ -1,0 +1,118 @@
+{
+  "version": 1,
+  "authorizedAt": "2026-10-06T15:20:00+08:00",
+  "action": "all-affiliate-site-existing-page-search-recovery",
+  "trigger": "The owner clarified that recovery must cover every active affiliate publication, not only Baby and Homeoffice. Production deployment of the narrower prepared batch was stopped before cutover.",
+  "measurementWindows": [
+    "2026-09-01 through 2026-09-28",
+    "2026-09-22 through 2026-09-23",
+    "2026-09-29 through 2026-09-30",
+    "2026-09-27 through 2026-10-03"
+  ],
+  "scope": {
+    "sites": ["network", "smarthome", "homeoffice", "baby", "pet", "style", "costume"],
+    "changedCanonicals": 17,
+    "existingFamilyCanonicals": 12,
+    "additionalSiteCanonicals": 5,
+    "basePermanentRedirects": 55,
+    "existingFamilyRedirects": 53,
+    "additionalSmarthomeRedirects": 2,
+    "newRoutes": 0
+  },
+  "siteActions": [
+    {
+      "site": "network",
+      "categories": ["wifi"],
+      "state": "recovery-protect-winner",
+      "canonicalPath": "/guides/deco-be63-vs-be67-vs-be85-buying-guide",
+      "action": "protect-and-strengthen",
+      "evidence": "The page led Network with 3 clicks, 57 impressions, 5.26% CTR and average position 5.79 in the available 28-day export. Preserve its URL, title and first-screen answer; add the current official per-unit port matrix, explicit intent boundary and related decision paths.",
+      "redirectSources": []
+    },
+    {
+      "site": "smarthome",
+      "categories": ["automation"],
+      "state": "recovery-consolidate-overlap",
+      "canonicalPath": "/guides/matter-thread-wifi-zigbee-device-checklist",
+      "action": "merge-and-rewrite",
+      "evidence": "The checklist produced 18 impressions in September 22-30 and 9 impressions in the current 28-day export, while matter-vs-thread-vs-zigbee produced 1 current impression after 179 in the prior comparison window and matter-over-thread-hub-checklist lost its earlier 8 impressions. Keep the current exposure leader and merge the two overlapping broad explainers.",
+      "redirectSources": [
+        "/guides/matter-vs-thread-vs-zigbee",
+        "/guides/matter-over-thread-hub-checklist"
+      ]
+    },
+    {
+      "site": "homeoffice",
+      "categories": ["meetings", "ergonomics"],
+      "state": "recovery-existing-family-consolidation",
+      "canonicalPaths": [
+        "/guides/dual-screen-portable-monitors-vs-alternatives",
+        "/guides/business-usb-c-monitors-vs-alternatives",
+        "/guides/dual-monitor-kvm-switches-vs-alternatives",
+        "/guides/office-paper-shredders-vs-alternatives",
+        "/guides/low-profile-keyboards-vs-alternatives",
+        "/guides/desktop-label-printers-buying-guide",
+        "/guides/desktop-laminators-buying-guide",
+        "/guides/wireless-number-pads-buying-guide"
+      ],
+      "action": "retain-eight-evidence-selected-family-canonicals",
+      "evidence": "The exact role-level measurements and 36 redirected siblings remain recorded in search-recovery-consolidations-2026-10-06.json. The four exposed comparison leaders are preserved; the four unexposed families are reduced to one useful decision page each.",
+      "redirectSources": "derived from search-recovery-consolidations-2026-10-06.json"
+    },
+    {
+      "site": "baby",
+      "categories": ["feeding", "sleep", "travel"],
+      "state": "recovery-existing-family-consolidation",
+      "canonicalPaths": [
+        "/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
+        "/guides/infant-bath-tubs-safety-and-skip-guide",
+        "/guides/nursery-glider-chairs-safety-and-skip-guide",
+        "/guides/double-strollers-compatibility-and-fit-guide"
+      ],
+      "action": "retain-four-evidence-selected-family-canonicals",
+      "evidence": "The exact role-level measurements and 17 redirected siblings remain recorded in search-recovery-consolidations-2026-10-06.json. Safety or fit leaders are preserved, and all six automatic-washer templates merge into the stronger pre-existing washer-versus-sterilizer decision page.",
+      "redirectSources": "derived from search-recovery-consolidations-2026-10-06.json"
+    },
+    {
+      "site": "pet",
+      "categories": ["home-care"],
+      "state": "recovery-page-one-ctr",
+      "canonicalPath": "/reviews/levoit-vital-200s-p-air-purifier",
+      "action": "query-and-evidence-refresh",
+      "evidence": "The page had 18 impressions, zero clicks and average position 3.94 in the current 28-day export. Align the title with pet-home intent, preserve the research-only boundary, and add a recent attributed two-week pet-home observation without replacing the official and instrumented evidence.",
+      "redirectSources": []
+    },
+    {
+      "site": "style",
+      "categories": ["bags"],
+      "state": "maintenance-concentrate-existing-signal",
+      "canonicalPath": "/guides/loungefly-faux-leather-rain-and-care-guide",
+      "action": "rewrite-existing-guide-no-expansion",
+      "evidence": "Style had only one current 28-day homepage impression. The care guide had 8 impressions in the preceding comparison window, the strongest recorded Style guide signal. Keep the route, separate care from capacity and park-day intent, and replace generic collector advice with an exact-label, material, rain, storage and safety worksheet.",
+      "redirectSources": []
+    },
+    {
+      "site": "costume",
+      "categories": ["costumes"],
+      "state": "seasonal-recovery-existing-intent",
+      "canonicalPath": "/guides/costume-rental-vs-buying-guide",
+      "action": "merchant-term-seasonal-refresh",
+      "evidence": "The page recorded 18 impressions at average position 7.5 in the preceding 28-day comparison window and then lost exposure. October is the active decision window. Preserve the route and rewrite it from Abracadabra NYC's current rental period, deposit, cleaning, cancellation, included-piece and alteration terms.",
+      "redirectSources": []
+    }
+  ],
+  "contentBoundary": "No invented hands-on use, price, stock, score, safety result or durability claim. Network and Smarthome facts use primary manufacturer or standards sources; Pet external tests remain attributed and separated; Style care starts with the exact product label; Costume terms require an exact transaction check.",
+  "protectedFields": [
+    "click-bearing or current exposure-leading URL",
+    "proven first-screen search intent",
+    "merchant and product identity",
+    "existing affiliate attribution",
+    "localized compatibility routes"
+  ],
+  "reviewGates": {
+    "day7": "2026-10-13",
+    "day14": "2026-10-20",
+    "day30": "2026-11-05"
+  },
+  "requestIndexing": false
+}

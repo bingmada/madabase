@@ -42,7 +42,7 @@ def successful_origin(host, path):
 
 
 with patch.object(release, "request_origin", side_effect=successful_origin):
-    assert release.verify_recovery() == {"targets": 12, "redirects": 53, "sitemaps": 2, "errors": 0}
+    assert release.verify_recovery() == {"targets": 17, "redirects": 55, "sitemaps": 7, "errors": 0}
 
 
 def broken_origin(host, path):

@@ -1,9 +1,9 @@
 {
   "release": "october-search-recovery-2026-10-06",
-  "status": "local-validated",
+  "status": "all-site-local-validated",
   "newRoutes": 0,
-  "retainedCanonicals": 12,
-  "permanentRedirects": 53,
+  "retainedCanonicals": 17,
+  "permanentRedirects": 55,
   "families": [
     {
       "site": "homeoffice",
@@ -141,17 +141,66 @@
         "https://baby.madabase.com/guides/double-strollers-setup-and-daily-workflow",
         "https://baby.madabase.com/guides/double-strollers-safety-and-skip-guide"
       ]
+    },
+    {
+      "site": "network",
+      "family": "deco-be63-vs-be67-vs-be85",
+      "target": "https://network.madabase.com/guides/deco-be63-vs-be67-vs-be85-buying-guide",
+      "sources": []
+    },
+    {
+      "site": "smarthome",
+      "family": "matter-thread-wifi-zigbee",
+      "target": "https://smarthome.madabase.com/guides/matter-thread-wifi-zigbee-device-checklist",
+      "sources": [
+        "https://smarthome.madabase.com/guides/matter-vs-thread-vs-zigbee",
+        "https://smarthome.madabase.com/guides/matter-over-thread-hub-checklist"
+      ]
+    },
+    {
+      "site": "pet",
+      "family": "levoit-vital-200s-p",
+      "target": "https://pets.madabase.com/reviews/levoit-vital-200s-p-air-purifier",
+      "sources": []
+    },
+    {
+      "site": "style",
+      "family": "loungefly-care",
+      "target": "https://style.madabase.com/guides/loungefly-faux-leather-rain-and-care-guide",
+      "sources": []
+    },
+    {
+      "site": "costume",
+      "family": "costume-rental-vs-buying",
+      "target": "https://costumes.madabase.com/guides/costume-rental-vs-buying-guide",
+      "sources": []
     }
   ],
   "discoverySurfaces": [
+    "https://network.madabase.com/",
+    "https://network.madabase.com/categories/wifi",
+    "https://network.madabase.com/sitemap.xml",
+    "https://smarthome.madabase.com/",
+    "https://smarthome.madabase.com/categories/automation",
+    "https://smarthome.madabase.com/sitemap.xml",
     "https://homeoffice.madabase.com/",
     "https://homeoffice.madabase.com/categories/meetings",
+    "https://homeoffice.madabase.com/categories/ergonomics",
     "https://homeoffice.madabase.com/sitemap.xml",
     "https://baby.madabase.com/",
     "https://baby.madabase.com/categories/feeding",
     "https://baby.madabase.com/categories/sleep",
     "https://baby.madabase.com/categories/travel",
-    "https://baby.madabase.com/sitemap.xml"
+    "https://baby.madabase.com/sitemap.xml",
+    "https://pets.madabase.com/",
+    "https://pets.madabase.com/categories/home-care",
+    "https://pets.madabase.com/sitemap.xml",
+    "https://style.madabase.com/",
+    "https://style.madabase.com/categories/bags",
+    "https://style.madabase.com/sitemap.xml",
+    "https://costumes.madabase.com/",
+    "https://costumes.madabase.com/categories/costumes",
+    "https://costumes.madabase.com/sitemap.xml"
   ],
   "reviewGates": {
     "day7": "2026-10-13",

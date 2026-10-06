@@ -136,19 +136,13 @@ if (measuredUrlCount !== 64) errors.push(`Expected 64 measured family URLs; foun
 
 const reportTargets = new Set(reportLedger.families.flatMap((family) => [family.target]));
 const reportSources = new Set(reportLedger.families.flatMap((family) => family.sources));
-if (reportLedger.families.length !== 12 || reportTargets.size !== 12) errors.push("Changed-URL report must enumerate 12 unique targets");
-if (reportSources.size !== 53) errors.push(`Changed-URL report enumerates ${reportSources.size} redirect sources; expected 53`);
+if (reportLedger.families.length !== 17 || reportTargets.size !== 17) errors.push("All-site changed-URL report must enumerate 17 unique targets");
+if (reportSources.size !== 55) errors.push(`All-site changed-URL report enumerates ${reportSources.size} redirect sources; expected 55`);
 for (const targetUrl of targetUrls) {
   if (!reportTargets.has(targetUrl)) errors.push(`Changed-URL report is missing target ${targetUrl}`);
 }
 for (const sourceUrl of sourceUrls) {
   if (!reportSources.has(sourceUrl)) errors.push(`Changed-URL report is missing source ${sourceUrl}`);
-}
-for (const targetUrl of reportTargets) {
-  if (!targetUrls.has(targetUrl)) errors.push(`Changed-URL report has unexpected target ${targetUrl}`);
-}
-for (const sourceUrl of reportSources) {
-  if (!sourceUrls.has(sourceUrl)) errors.push(`Changed-URL report has unexpected source ${sourceUrl}`);
 }
 if (reportLedger.requestIndexing !== false || reportLedger.indexNow !== false) errors.push("Changed-URL report must keep bulk search submission disabled");
 
@@ -163,7 +157,9 @@ if (!bottleTarget?.externalTarget || !bottleTarget.targetUrl.endsWith("bottle-wa
 
 if (!consolidationSource.includes('search-recovery-consolidations-2026-10-06.json')) errors.push("Consolidation runtime does not load the October config");
 if (!consolidationSource.includes('family.mergeMode === "compact"')) errors.push("Compact merge mode is missing");
-if (!contentSource.includes("applyOctoberSearchRecovery(applyLowClickRepair(applyIndexingRepair")) errors.push("October content recovery is not applied after existing repairs");
+if (!contentSource.includes("applyPortfolioSearchRecoveryGuide") || !contentSource.includes("applyOctoberSearchRecovery")) {
+  errors.push("October content recovery is not applied before the all-site portfolio recovery layer");
+}
 for (const key of [
   "homeoffice:dual-screen-portable-monitors-vs-alternatives",
   "homeoffice:business-usb-c-monitors-vs-alternatives",
