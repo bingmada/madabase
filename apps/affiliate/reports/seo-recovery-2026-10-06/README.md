@@ -39,3 +39,7 @@ Google 9 月 Spam Update 仍在进行。恢复策略是保护已有搜索信号�
 - Day 30：2026-11-05
 
 按七站、页面和查询词分别观察。已经获得点击、展现扩展或 Top 20 排名的页面不做第二轮大改；Style 维持低频维护，Costume 按季节窗口判断。完整 Search Console 周期是成败依据，单日波动、sitemap 接受或 IndexNow 接受都不作为恢复证明。
+
+## 生产状态
+
+2026-10-06 18:37（Asia/Shanghai），不可变提交 `9e36e9266c580e407538e68e4838cded99f3dcaa` 已上线至七个联盟域名。源站验收通过 17 个目标页、55 个永久跳转和 7 份 sitemap；公网/CDN 再次通过相同的 17/55/7 账本，并确认 Network、Smarthome、Pet、Style、Costume 五个新增站点动作的内容指纹已生效。Main 在 7 秒维护窗口后恢复，Main 与 Affiliate 服务均为 active。旧 Affiliate 版本保留为回滚目标。精确记录见 `deployment.json`。

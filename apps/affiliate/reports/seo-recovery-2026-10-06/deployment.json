@@ -1,0 +1,47 @@
+{
+  "deployedAt": "2026-10-06T18:37:44+08:00",
+  "releaseCommit": "9e36e9266c580e407538e68e4838cded99f3dcaa",
+  "artifact": {
+    "path": "apps/affiliate/.release/affiliate-runtime.tgz",
+    "bytes": 60902631,
+    "sha256": "40dc368375e9f8e055ae4c6330252a7ffbb66eacebcb26ed26c518747fbca7d3"
+  },
+  "production": {
+    "status": "origin-verified",
+    "releaseDirectory": "/srv/madabase-affiliate/releases/seo-20261002-9e36e9266c580e407538e68e4838cded99f3dcaa",
+    "rollbackDirectory": "/srv/madabase-affiliate/releases/seo-20261002-6dd60dbeb3f0e6930ab5859339a3856a9b3bddc3",
+    "affiliateService": "active",
+    "mainService": "active",
+    "mainMaintenanceStartedAt": "2026-10-06T18:37:38+08:00",
+    "mainRestoredAt": "2026-10-06T18:37:45+08:00",
+    "mainRestored": true
+  },
+  "originVerification": {
+    "targets": 17,
+    "redirects": 55,
+    "sitemaps": 7,
+    "errors": 0
+  },
+  "publicVerification": {
+    "targets": 17,
+    "redirects": 55,
+    "sitemaps": 7,
+    "additionalSiteContentFingerprints": 5,
+    "mainHttpStatus": 200,
+    "affiliateCacheStatus": {
+      "DYNAMIC": 17
+    },
+    "errors": 0
+  },
+  "publicationBoundary": {
+    "newRoutes": 0,
+    "requestIndexing": false,
+    "indexNow": false,
+    "newIndexableExpansionFrozen": true
+  },
+  "reviewGates": {
+    "day7": "2026-10-13",
+    "day14": "2026-10-20",
+    "day30": "2026-11-05"
+  }
+}

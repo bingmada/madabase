@@ -1,7 +1,7 @@
 {
   "version": 3,
-  "updatedAt": "2026-10-06T16:40:00+08:00",
-  "status": "september_2026_spam_update_active_all_site_existing_page_recovery_validated_new_growth_frozen",
+  "updatedAt": "2026-10-06T18:40:00+08:00",
+  "status": "september_2026_spam_update_active_all_site_existing_page_recovery_deployed_public_validated_new_growth_frozen",
   "currentTrigger": {
     "name": "September 2026 spam update",
     "startedAt": "2026-09-24T09:15:00-07:00",
@@ -80,7 +80,7 @@
     "reviewGates": ["2026-10-13", "2026-10-20", "2026-11-05"]
   },
   "portfolioSearchRecovery20261006": {
-    "status": "all-seven-sites-local-validated",
+    "status": "deployed-origin-and-public-validated",
     "sites": ["network", "smarthome", "homeoffice", "baby", "pet", "style", "costume"],
     "scope": "Seventeen retained existing canonicals, 55 base permanent redirects, 220 localized redirects, 64 localized canonicals, seven sitemaps, and zero new routes. The narrower Homeoffice/Baby work is included rather than deployed independently.",
     "selectionRule": "Protect current winners and page-one opportunities; merge only measured overlapping intent; refresh weak sites on their best recorded existing query path; preserve all URLs without evidence for consolidation.",
@@ -88,6 +88,8 @@
     "config": "apps/affiliate/config/portfolio-search-recovery-2026-10-06.json",
     "ledger": "apps/affiliate/reports/seo-recovery-2026-10-06/changed-urls.json",
     "validation": "npm run check:portfolio-search-recovery --workspace apps/affiliate -- --origin=http://127.0.0.1:3020",
+    "deployment": "Release 9e36e9266c580e407538e68e4838cded99f3dcaa is active at /srv/madabase-affiliate/releases/seo-20261002-9e36e9266c580e407538e68e4838cded99f3dcaa. Origin and public validation passed 17 targets, 55 redirects and seven sitemaps with zero errors; all five additional-site content fingerprints were visible publicly. Main was restored after a seven-second maintenance interval.",
+    "deploymentRecord": "apps/affiliate/reports/seo-recovery-2026-10-06/deployment.json",
     "requestIndexing": false,
     "reviewGates": ["2026-10-13", "2026-10-20", "2026-11-05"]
   },
