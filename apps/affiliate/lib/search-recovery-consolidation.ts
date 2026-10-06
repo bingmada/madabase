@@ -1,15 +1,18 @@
 import initialConsolidationData from "../config/search-recovery-consolidations-2026-08-23.json";
 import day30ConsolidationData from "../config/search-recovery-consolidations-2026-09-08.json";
 import deferredConsolidationData from "../config/deferred-family-consolidations-2026-09-11.json";
+import octoberConsolidationData from "../config/search-recovery-consolidations-2026-10-06.json";
 import type { Guide, SiteKey } from "./types";
 
 type ConsolidatedFamily = {
   site: SiteKey;
   familySlug: string;
-  targetRole: NonNullable<Guide["familyRole"]>;
+  targetRole?: NonNullable<Guide["familyRole"]>;
   targetSlug: string;
   consolidatedAt: string;
   preservePrimaryFields: boolean;
+  mergeMode?: "full" | "compact";
+  externalTarget?: boolean;
 };
 
 const roleOrder: Array<NonNullable<Guide["familyRole"]>> = [
@@ -57,10 +60,22 @@ const deferredConsolidatedFamilies: ConsolidatedFamily[] = deferredConsolidation
   preservePrimaryFields: true,
 }));
 
+const octoberConsolidatedFamilies: ConsolidatedFamily[] = octoberConsolidationData.families.map((family) => ({
+  site: family.site as SiteKey,
+  familySlug: family.familySlug,
+  targetRole: family.targetRole as NonNullable<Guide["familyRole"]> | undefined,
+  targetSlug: family.targetSlug,
+  consolidatedAt: "October 6, 2026",
+  preservePrimaryFields: true,
+  mergeMode: family.mergeMode as "compact" | undefined,
+  externalTarget: family.targetKind === "existing-guide",
+}));
+
 export const consolidatedFamilies = [
   ...initialConsolidatedFamilies,
   ...day30ConsolidatedFamilies,
   ...deferredConsolidatedFamilies,
+  ...octoberConsolidatedFamilies,
 ];
 const consolidatedFamilyByKey = new Map(
   consolidatedFamilies.map((family) => [`${family.site}:${family.familySlug}`, family]),
@@ -88,18 +103,18 @@ export function isConsolidatedFamily(site: SiteKey, familySlug?: string) {
 
 export function isConsolidatedFamilyHub(guide: Guide) {
   const family = consolidatedFamilyFor(guide);
-  return Boolean(family && guide.slug === family.targetSlug && guide.familyRole === family.targetRole);
+  return Boolean(family && !family.externalTarget && guide.slug === family.targetSlug && guide.familyRole === family.targetRole);
 }
 
 export function isConsolidatedSupportGuide(guide: Guide) {
   const family = consolidatedFamilyFor(guide);
-  return Boolean(family && guide.familyRole && guide.slug !== family.targetSlug);
+  return Boolean(family && guide.familyRole && (family.externalTarget || guide.slug !== family.targetSlug));
 }
 
 export function isFamilyDiscoveryHub(guide: Guide) {
   if (!guide.familySlug || !guide.familyRole) return false;
   const family = consolidatedFamilyFor(guide);
-  return family ? guide.slug === family.targetSlug : guide.familyRole === "buying";
+  return family ? !family.externalTarget && guide.slug === family.targetSlug : guide.familyRole === "buying";
 }
 
 export function consolidationTargetSlug(guide: Guide) {
@@ -116,9 +131,13 @@ export function mergeConsolidatedFamilyGuide(guide: Guide, familyGuides: Guide[]
     .filter((item) => item.site === guide.site && item.familySlug === guide.familySlug && item.familyRole)
     .sort((left, right) => roleOrder.indexOf(left.familyRole!) - roleOrder.indexOf(right.familyRole!));
   const supportGuides = orderedFamilyGuides.filter((item) => item.slug !== family.targetSlug);
-  const mergedSections = [
-    ...guide.sections,
-    ...supportGuides.flatMap((support) => {
+  const compactSupportSections = supportGuides.flatMap((support) => {
+    const roleLabel = roleLabels[support.familyRole!];
+    return support.quickAnswer
+      ? [{ heading: `${roleLabel}: the decision`, body: support.quickAnswer }]
+      : [];
+  });
+  const fullSupportSections = supportGuides.flatMap((support) => {
       const roleLabel = roleLabels[support.familyRole!];
       return [
         ...(support.quickAnswer
@@ -137,7 +156,10 @@ export function mergeConsolidatedFamilyGuide(guide: Guide, familyGuides: Guide[]
           body: section.body,
         })),
       ];
-    }),
+  });
+  const mergedSections = [
+    ...guide.sections,
+    ...(family.mergeMode === "compact" ? compactSupportSections : fullSupportSections),
   ];
   const retainedGuideSlugs = (item: Guide) => (item.relatedGuides ?? [])
     .filter((slug) => !supportGuides.some((support) => support.slug === slug));

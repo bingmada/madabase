@@ -1,0 +1,145 @@
+{
+  "version": 1,
+  "authorizedAt": "2026-10-06T13:30:00+08:00",
+  "action": "existing-page-topic-hierarchy-repair",
+  "trigger": "September 2026 spam-update impression collapse",
+  "measurementWindows": [
+    "2026-08-22 through 2026-08-28",
+    "2026-09-01 through 2026-09-28",
+    "2026-09-22 through 2026-09-23",
+    "2026-09-29 through 2026-09-30"
+  ],
+  "decision": "Consolidate twelve Homeoffice and Baby families only where one role has the clearest historical query signal or every sibling remains unexposed. Preserve the strongest canonical, its title and first-screen intent, merge only concise decision material from siblings, permanently redirect the other routes, and remove redirect sources from discovery and sitemaps. No new route, blanket noindex, or unrelated title change is authorized.",
+  "scope": {
+    "families": 12,
+    "homeofficeFamilies": 8,
+    "babyFamilies": 4,
+    "measuredUrls": 64,
+    "retainedCanonicals": 12,
+    "permanentRedirects": 53,
+    "newRoutes": 0
+  },
+  "reviewGates": {
+    "day7": "2026-10-13",
+    "day14": "2026-10-20",
+    "day30": "2026-11-05"
+  },
+  "families": [
+    {
+      "site": "homeoffice",
+      "familySlug": "dual-screen-portable-monitors",
+      "targetRole": "comparison",
+      "targetSlug": "dual-screen-portable-monitors-vs-alternatives",
+      "mergeMode": "compact",
+      "metrics": { "augustImpressions": 11, "september28Impressions": 30, "september28Clicks": 4, "sep22To23Impressions": 5, "sep29To30Impressions": 0 },
+      "selectionEvidence": "The comparison role produced 23 of the family's 30 September impressions, all four clicks, and all five September 22-23 impressions. Preserve the click-bearing portable-monitor versus laptop-extender decision."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "business-usb-c-monitors",
+      "targetRole": "comparison",
+      "targetSlug": "business-usb-c-monitors-vs-alternatives",
+      "mergeMode": "compact",
+      "metrics": { "augustImpressions": 6, "september28Impressions": 18, "september28Clicks": 0, "sep22To23Impressions": 0, "sep29To30Impressions": 0 },
+      "selectionEvidence": "The comparison role produced 12 of 18 September impressions and answers the current one-cable USB-C monitor versus separate-dock decision."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "dual-monitor-kvm-switches",
+      "targetRole": "comparison",
+      "targetSlug": "dual-monitor-kvm-switches-vs-alternatives",
+      "mergeMode": "compact",
+      "metrics": { "augustImpressions": 13, "september28Impressions": 4, "september28Clicks": 0, "sep22To23Impressions": 0, "sep29To30Impressions": 0 },
+      "selectionEvidence": "The comparison role produced 12 of 13 August impressions and all four September impressions; the actual user job is choosing a KVM, USB switch, monitor-input workflow, or dock."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "office-paper-shredders",
+      "targetRole": "comparison",
+      "targetSlug": "office-paper-shredders-vs-alternatives",
+      "mergeMode": "compact",
+      "metrics": { "augustImpressions": 1, "september28Impressions": 12, "september28Clicks": 0, "sep22To23Impressions": 3, "sep29To30Impressions": 0 },
+      "selectionEvidence": "The comparison role produced 10 of 12 September impressions and carries the useful cross-cut versus micro-cut plus manual-feed versus auto-feed decision."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "low-profile-keyboards",
+      "targetRole": "comparison",
+      "targetSlug": "low-profile-keyboards-vs-alternatives",
+      "mergeMode": "compact",
+      "metrics": { "augustImpressions": 4, "september28Impressions": 3, "september28Clicks": 0, "sep22To23Impressions": 2, "sep29To30Impressions": 0 },
+      "selectionEvidence": "The comparison role produced the family's only late-September impressions and retains the low-profile versus standard-height keyboard decision without maintaining five overlapping pages."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "desktop-label-printers",
+      "targetRole": "buying",
+      "targetSlug": "desktop-label-printers-buying-guide",
+      "mergeMode": "compact",
+      "metrics": { "augustImpressions": 0, "september28Impressions": 0, "september28Clicks": 0, "sep22To23Impressions": 0, "sep29To30Impressions": 0 },
+      "selectionEvidence": "All five routes remained unexposed across every available window. Retain one broad buying hub for the print-width, platform, label-stock, and workflow decision; retire four unsupported sibling intents."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "desktop-laminators",
+      "targetRole": "buying",
+      "targetSlug": "desktop-laminators-buying-guide",
+      "mergeMode": "compact",
+      "metrics": { "augustImpressions": 0, "september28Impressions": 0, "september28Clicks": 0, "sep22To23Impressions": 0, "sep29To30Impressions": 0 },
+      "selectionEvidence": "All five routes remained unexposed. Keep a single buying decision around document width, pouch thickness, warm-up, jam recovery, and expected frequency."
+    },
+    {
+      "site": "homeoffice",
+      "familySlug": "wireless-number-pads",
+      "targetRole": "buying",
+      "targetSlug": "wireless-number-pads-buying-guide",
+      "mergeMode": "compact",
+      "metrics": { "augustImpressions": 0, "september28Impressions": 0, "september28Clicks": 0, "sep22To23Impressions": 0, "sep29To30Impressions": 0 },
+      "selectionEvidence": "All five routes remained unexposed. Keep one buying hub for OS shortcuts, key layout, connection method, wake behavior, and desk placement; retire four near-duplicate roles."
+    },
+    {
+      "site": "baby",
+      "familySlug": "automatic-bottle-washers",
+      "targetRole": null,
+      "targetKind": "existing-guide",
+      "targetSlug": "bottle-washer-vs-sterilizer-vs-dryer-guide",
+      "metrics": { "augustImpressions": 6, "september28Impressions": 70, "september28Clicks": 0, "sep22To23Impressions": 13, "sep29To30Impressions": 0 },
+      "selectionEvidence": "The family comparison role produced 40 of 70 September impressions, but the existing bottle-washer-vs-sterilizer-vs-dryer guide separately produced 77 September impressions for the same decision. Redirect all six generated siblings to that stronger non-template canonical instead of preserving two competing pages."
+    },
+    {
+      "site": "baby",
+      "familySlug": "infant-bath-tubs",
+      "targetRole": "safety",
+      "targetSlug": "infant-bath-tubs-safety-and-skip-guide",
+      "mergeMode": "compact",
+      "metrics": { "augustImpressions": 5, "september28Impressions": 59, "september28Clicks": 0, "sep22To23Impressions": 3, "sep29To30Impressions": 0 },
+      "selectionEvidence": "The safety role produced 33 of 59 September impressions. CPSC guidance makes constant arm's-reach supervision and product-stage fit the controlling decision rather than a generic six-page buying series."
+    },
+    {
+      "site": "baby",
+      "familySlug": "nursery-glider-chairs",
+      "targetRole": "safety",
+      "targetSlug": "nursery-glider-chairs-safety-and-skip-guide",
+      "mergeMode": "compact",
+      "metrics": { "augustImpressions": 4, "september28Impressions": 42, "september28Clicks": 0, "sep22To23Impressions": 5, "sep29To30Impressions": 0 },
+      "selectionEvidence": "The safety role produced 28 of 42 September impressions and four of five September 22-23 impressions. Preserve the tired-feeding, safe-transfer, clearance, and mechanism decision."
+    },
+    {
+      "site": "baby",
+      "familySlug": "double-strollers",
+      "targetRole": "fit",
+      "targetSlug": "double-strollers-compatibility-and-fit-guide",
+      "mergeMode": "compact",
+      "metrics": { "augustImpressions": 3, "september28Impressions": 25, "september28Clicks": 0, "sep22To23Impressions": 1, "sep29To30Impressions": 0 },
+      "selectionEvidence": "The fit role produced the strongest September signal at 11 impressions. Door width, folded size, child limits, car-cargo fit, terrain, and brake workflow are the common decision that can absorb the other roles."
+    }
+  ],
+  "protectedCoreFields": [
+    "target URL",
+    "target search intent",
+    "click-bearing title where applicable",
+    "first-screen answer",
+    "commerce identity"
+  ],
+  "requestIndexing": false
+}

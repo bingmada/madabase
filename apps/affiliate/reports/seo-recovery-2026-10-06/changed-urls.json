@@ -1,0 +1,163 @@
+{
+  "release": "october-search-recovery-2026-10-06",
+  "status": "local-validated",
+  "newRoutes": 0,
+  "retainedCanonicals": 12,
+  "permanentRedirects": 53,
+  "families": [
+    {
+      "site": "homeoffice",
+      "family": "dual-screen-portable-monitors",
+      "target": "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-vs-alternatives",
+      "sources": [
+        "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-buying-guide",
+        "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-compatibility-and-fit-guide",
+        "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-ownership-cost-and-maintenance",
+        "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-setup-and-daily-workflow"
+      ]
+    },
+    {
+      "site": "homeoffice",
+      "family": "business-usb-c-monitors",
+      "target": "https://homeoffice.madabase.com/guides/business-usb-c-monitors-vs-alternatives",
+      "sources": [
+        "https://homeoffice.madabase.com/guides/business-usb-c-monitors-buying-guide",
+        "https://homeoffice.madabase.com/guides/business-usb-c-monitors-compatibility-and-fit-guide",
+        "https://homeoffice.madabase.com/guides/business-usb-c-monitors-ownership-cost-and-maintenance",
+        "https://homeoffice.madabase.com/guides/business-usb-c-monitors-setup-and-daily-workflow"
+      ]
+    },
+    {
+      "site": "homeoffice",
+      "family": "dual-monitor-kvm-switches",
+      "target": "https://homeoffice.madabase.com/guides/dual-monitor-kvm-switches-vs-alternatives",
+      "sources": [
+        "https://homeoffice.madabase.com/guides/dual-monitor-kvm-switches-buying-guide",
+        "https://homeoffice.madabase.com/guides/dual-monitor-kvm-switches-compatibility-and-fit-guide",
+        "https://homeoffice.madabase.com/guides/dual-monitor-kvm-switches-ownership-cost-and-maintenance",
+        "https://homeoffice.madabase.com/guides/dual-monitor-kvm-switches-setup-and-daily-workflow"
+      ]
+    },
+    {
+      "site": "homeoffice",
+      "family": "office-paper-shredders",
+      "target": "https://homeoffice.madabase.com/guides/office-paper-shredders-vs-alternatives",
+      "sources": [
+        "https://homeoffice.madabase.com/guides/office-paper-shredders-buying-guide",
+        "https://homeoffice.madabase.com/guides/office-paper-shredders-compatibility-and-fit-guide",
+        "https://homeoffice.madabase.com/guides/office-paper-shredders-ownership-cost-and-maintenance",
+        "https://homeoffice.madabase.com/guides/office-paper-shredders-setup-and-daily-workflow"
+      ]
+    },
+    {
+      "site": "homeoffice",
+      "family": "low-profile-keyboards",
+      "target": "https://homeoffice.madabase.com/guides/low-profile-keyboards-vs-alternatives",
+      "sources": [
+        "https://homeoffice.madabase.com/guides/low-profile-keyboards-buying-guide",
+        "https://homeoffice.madabase.com/guides/low-profile-keyboards-compatibility-and-fit-guide",
+        "https://homeoffice.madabase.com/guides/low-profile-keyboards-ownership-cost-and-maintenance",
+        "https://homeoffice.madabase.com/guides/low-profile-keyboards-setup-and-daily-workflow"
+      ]
+    },
+    {
+      "site": "homeoffice",
+      "family": "desktop-label-printers",
+      "target": "https://homeoffice.madabase.com/guides/desktop-label-printers-buying-guide",
+      "sources": [
+        "https://homeoffice.madabase.com/guides/desktop-label-printers-vs-alternatives",
+        "https://homeoffice.madabase.com/guides/desktop-label-printers-compatibility-and-fit-guide",
+        "https://homeoffice.madabase.com/guides/desktop-label-printers-ownership-cost-and-maintenance",
+        "https://homeoffice.madabase.com/guides/desktop-label-printers-setup-and-daily-workflow"
+      ]
+    },
+    {
+      "site": "homeoffice",
+      "family": "desktop-laminators",
+      "target": "https://homeoffice.madabase.com/guides/desktop-laminators-buying-guide",
+      "sources": [
+        "https://homeoffice.madabase.com/guides/desktop-laminators-vs-alternatives",
+        "https://homeoffice.madabase.com/guides/desktop-laminators-compatibility-and-fit-guide",
+        "https://homeoffice.madabase.com/guides/desktop-laminators-ownership-cost-and-maintenance",
+        "https://homeoffice.madabase.com/guides/desktop-laminators-setup-and-daily-workflow"
+      ]
+    },
+    {
+      "site": "homeoffice",
+      "family": "wireless-number-pads",
+      "target": "https://homeoffice.madabase.com/guides/wireless-number-pads-buying-guide",
+      "sources": [
+        "https://homeoffice.madabase.com/guides/wireless-number-pads-vs-alternatives",
+        "https://homeoffice.madabase.com/guides/wireless-number-pads-compatibility-and-fit-guide",
+        "https://homeoffice.madabase.com/guides/wireless-number-pads-ownership-cost-and-maintenance",
+        "https://homeoffice.madabase.com/guides/wireless-number-pads-setup-and-daily-workflow"
+      ]
+    },
+    {
+      "site": "baby",
+      "family": "automatic-bottle-washers",
+      "target": "https://baby.madabase.com/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
+      "sources": [
+        "https://baby.madabase.com/guides/automatic-bottle-washers-buying-guide",
+        "https://baby.madabase.com/guides/automatic-bottle-washers-vs-alternatives",
+        "https://baby.madabase.com/guides/automatic-bottle-washers-compatibility-and-fit-guide",
+        "https://baby.madabase.com/guides/automatic-bottle-washers-ownership-cost-and-maintenance",
+        "https://baby.madabase.com/guides/automatic-bottle-washers-setup-and-daily-workflow",
+        "https://baby.madabase.com/guides/automatic-bottle-washers-safety-and-skip-guide"
+      ]
+    },
+    {
+      "site": "baby",
+      "family": "infant-bath-tubs",
+      "target": "https://baby.madabase.com/guides/infant-bath-tubs-safety-and-skip-guide",
+      "sources": [
+        "https://baby.madabase.com/guides/infant-bath-tubs-buying-guide",
+        "https://baby.madabase.com/guides/infant-bath-tubs-vs-alternatives",
+        "https://baby.madabase.com/guides/infant-bath-tubs-compatibility-and-fit-guide",
+        "https://baby.madabase.com/guides/infant-bath-tubs-ownership-cost-and-maintenance",
+        "https://baby.madabase.com/guides/infant-bath-tubs-setup-and-daily-workflow"
+      ]
+    },
+    {
+      "site": "baby",
+      "family": "nursery-glider-chairs",
+      "target": "https://baby.madabase.com/guides/nursery-glider-chairs-safety-and-skip-guide",
+      "sources": [
+        "https://baby.madabase.com/guides/nursery-glider-chairs-buying-guide",
+        "https://baby.madabase.com/guides/nursery-glider-chairs-vs-alternatives",
+        "https://baby.madabase.com/guides/nursery-glider-chairs-compatibility-and-fit-guide",
+        "https://baby.madabase.com/guides/nursery-glider-chairs-ownership-cost-and-maintenance",
+        "https://baby.madabase.com/guides/nursery-glider-chairs-setup-and-daily-workflow"
+      ]
+    },
+    {
+      "site": "baby",
+      "family": "double-strollers",
+      "target": "https://baby.madabase.com/guides/double-strollers-compatibility-and-fit-guide",
+      "sources": [
+        "https://baby.madabase.com/guides/double-strollers-buying-guide",
+        "https://baby.madabase.com/guides/double-strollers-vs-alternatives",
+        "https://baby.madabase.com/guides/double-strollers-ownership-cost-and-maintenance",
+        "https://baby.madabase.com/guides/double-strollers-setup-and-daily-workflow",
+        "https://baby.madabase.com/guides/double-strollers-safety-and-skip-guide"
+      ]
+    }
+  ],
+  "discoverySurfaces": [
+    "https://homeoffice.madabase.com/",
+    "https://homeoffice.madabase.com/categories/meetings",
+    "https://homeoffice.madabase.com/sitemap.xml",
+    "https://baby.madabase.com/",
+    "https://baby.madabase.com/categories/feeding",
+    "https://baby.madabase.com/categories/sleep",
+    "https://baby.madabase.com/categories/travel",
+    "https://baby.madabase.com/sitemap.xml"
+  ],
+  "reviewGates": {
+    "day7": "2026-10-13",
+    "day14": "2026-10-20",
+    "day30": "2026-11-05"
+  },
+  "requestIndexing": false,
+  "indexNow": false
+}

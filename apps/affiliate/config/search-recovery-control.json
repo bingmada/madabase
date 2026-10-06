@@ -1,7 +1,14 @@
 {
   "version": 3,
-  "updatedAt": "2026-08-31T10:26:44+08:00",
-  "status": "august_2026_spam_update_closed_existing_page_recovery_deployed_new_growth_frozen",
+  "updatedAt": "2026-10-06T13:30:00+08:00",
+  "status": "september_2026_spam_update_active_existing_page_consolidation_prepared_new_growth_frozen",
+  "currentTrigger": {
+    "name": "September 2026 spam update",
+    "startedAt": "2026-09-24T09:15:00-07:00",
+    "statusCheckedAt": "2026-10-06T13:30:00+08:00",
+    "officialStatus": "active",
+    "evidence": "Search Console complete September 27-October 3 versus September 20-26 fell from 1,509 to 436 impressions (-71.1%). The cliff began September 29, current raw-head metadata passes 327 of 327 public responses, manual actions and security issues are clear, and Bing retains exposure. Treat the live technical repair as necessary but insufficient; reduce overlapping generated intent while the update remains active."
+  },
   "trigger": {
     "name": "August 2026 spam update",
     "startedAt": "2026-08-18T09:27:00-07:00",
@@ -36,13 +43,13 @@
       "existing-page-topic-hierarchy-repair",
       "query-backed-existing-page-refresh"
     ],
-    "releaseRule": "Three complete post-close Search Console days are now available, but their exact host evidence does not support release. Keep new indexable expansion frozen until a later exact cohort gate shows recovery; calendar time alone never unfreezes the portfolio. Owner-authorized, query-backed repairs to existing pages may proceed with a changed-URL ledger and full validation."
+    "releaseRule": "Keep new indexable expansion frozen throughout the active September 2026 spam update and until a complete post-update seven-day cohort shows qualified recovery. Calendar time, sitemap acceptance, or a successful indexing request never unfreezes the portfolio. Owner-authorized, query-backed repairs and exact intent consolidation on existing pages may proceed with a changed-URL ledger and full validation."
   },
   "siteStates": {
     "network": "recovery",
     "smarthome": "recovery",
-    "homeoffice": "protect",
-    "baby": "protect",
+    "homeoffice": "recovery",
+    "baby": "recovery",
     "pet": "recovery",
     "style": "maintenance",
     "costume": "observe"
@@ -54,7 +61,20 @@
     "soft151PostSitemapDay7": "Completed on 2026-08-28 with complete August 20-26 data: 26 exposed, 125 zero-impression, 0 clicks, 74 impressions and weighted position 51.63; hold stable for the 2026-09-03 Day-14 gate",
     "deepRankRecovery43": "Release a4e8e63 was deployed on 2026-08-27. Complete August 20-26 data is pre-release baseline only; review the exact 43 URLs directionally on 2026-09-03 and tactically on 2026-09-10 without a second broad rewrite beforehand",
     "ergearFlexispotCtr": "One query-backed existing-page exception is approved for release on 2026-08-31: 96 impressions across two seven-day windows, zero clicks and average positions 8.2/8.8. Hold the exact URL unchanged through 2026-09-07 and use the recorded 2026-09-07, 2026-09-14 and 2026-09-30 page/query gates.",
-    "expansion757Day30": "2026-09-08"
+    "expansion757Day30": "2026-09-08",
+    "octoberSearchRecoveryDay7": "2026-10-13",
+    "octoberSearchRecoveryDay14": "2026-10-20",
+    "octoberSearchRecoveryDay30": "2026-11-05"
+  },
+  "octoberSearchRecovery20261006": {
+    "status": "prepared-local-validation-in-progress",
+    "scope": "Twelve Homeoffice and Baby families, 64 generated URLs, twelve retained existing canonicals, 53 permanent redirects, twelve evidence-led canonical refreshes, and zero new routes.",
+    "selectionRule": "Preserve the role with the strongest measured signal or consolidate an entirely unexposed family to one broad hub. Automatic bottle washers redirect all six generated routes to the stronger existing bottle-washer-versus-sterilizer guide because both sets serve the same intent.",
+    "contentRule": "Use primary manufacturer, CDC, CPSC, AAP, Apple, Dell, ATEN, Fellowes, and Thule sources. State research-only limitations and add concrete compatibility, safety, workflow, and skip checks without inventing hands-on use, scores, prices, or availability.",
+    "config": "apps/affiliate/config/search-recovery-consolidations-2026-10-06.json",
+    "validation": "npm run check:october-search-recovery --workspace apps/affiliate",
+    "requestIndexing": false,
+    "reviewGates": ["2026-10-13", "2026-10-20", "2026-11-05"]
   },
   "recoveryLedger": {
     "csv": "apps/affiliate/reports/affiliate-spam-update-recovery-2026-08-21.csv",
