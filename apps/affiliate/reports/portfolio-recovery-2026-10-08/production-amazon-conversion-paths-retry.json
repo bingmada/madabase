@@ -1,0 +1,124 @@
+{
+  "checkedAt": "2026-10-08T06:22:06.596Z",
+  "mode": "public",
+  "includeMarkets": false,
+  "concurrency": 2,
+  "baseUrls": 24,
+  "exactUrls": 24,
+  "passed": 22,
+  "failed": 2,
+  "noCta": 0,
+  "commercePaused": 0,
+  "bySite": {
+    "network": {
+      "checked": 4,
+      "failed": 0,
+      "noCta": 0,
+      "commercePaused": 0
+    },
+    "smarthome": {
+      "checked": 2,
+      "failed": 0,
+      "noCta": 0,
+      "commercePaused": 0
+    },
+    "homeoffice": {
+      "checked": 0,
+      "failed": 0,
+      "noCta": 0,
+      "commercePaused": 0
+    },
+    "baby": {
+      "checked": 5,
+      "failed": 1,
+      "noCta": 0,
+      "commercePaused": 0
+    },
+    "pet": {
+      "checked": 13,
+      "failed": 1,
+      "noCta": 0,
+      "commercePaused": 0
+    },
+    "style": {
+      "checked": 0,
+      "failed": 0,
+      "noCta": 0,
+      "commercePaused": 0
+    }
+  },
+  "byKind": {
+    "review": {
+      "checked": 3,
+      "failed": 0,
+      "noCta": 0,
+      "commercePaused": 0
+    },
+    "guide": {
+      "checked": 2,
+      "failed": 0,
+      "noCta": 0,
+      "commercePaused": 0
+    },
+    "roundup": {
+      "checked": 17,
+      "failed": 2,
+      "noCta": 0,
+      "commercePaused": 0
+    },
+    "tool": {
+      "checked": 0,
+      "failed": 0,
+      "noCta": 0,
+      "commercePaused": 0
+    },
+    "category": {
+      "checked": 2,
+      "failed": 0,
+      "noCta": 0,
+      "commercePaused": 0
+    },
+    "catalog-product": {
+      "checked": 0,
+      "failed": 0,
+      "noCta": 0,
+      "commercePaused": 0
+    }
+  },
+  "failureDetails": [
+    {
+      "url": "https://baby.madabase.com/best/best-bottle-sterilizers-and-dryers",
+      "site": "baby",
+      "kind": "roundup",
+      "market": "us",
+      "status": 200,
+      "cacheStatus": "UPDATING",
+      "cacheAge": "3675",
+      "amazonCtas": 5,
+      "cjCtas": 0,
+      "firstViewportCtas": 1,
+      "ctaBeforeFirstImage": true,
+      "commercePaused": false,
+      "errors": [
+        "product or roundup evidence boundary must appear between the H1 and first commerce path"
+      ]
+    },
+    {
+      "url": "https://pets.madabase.com/best/coway-mighty2-vs-winix-5510-vs-levoit-vital-200s",
+      "site": "pet",
+      "kind": "roundup",
+      "market": "us",
+      "status": 200,
+      "cacheStatus": "UPDATING",
+      "cacheAge": "80985",
+      "amazonCtas": 4,
+      "cjCtas": 0,
+      "firstViewportCtas": 1,
+      "ctaBeforeFirstImage": true,
+      "commercePaused": false,
+      "errors": [
+        "product or roundup evidence boundary must appear between the H1 and first commerce path"
+      ]
+    }
+  ]
+}

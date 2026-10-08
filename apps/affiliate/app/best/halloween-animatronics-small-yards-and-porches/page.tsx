@@ -123,7 +123,7 @@ export default async function SmallSpaceHalloweenAnimatronicsPage() {
     headline: pageTitle,
     description: pageDescription,
     datePublished: "2026-08-03",
-    dateModified: "2026-08-03",
+    dateModified: "2026-10-08",
     mainEntityOfPage: { "@type": "WebPage", "@id": new URL(pagePath, site.domain).toString() },
     author: { "@type": "Organization", name: `${site.name} editorial desk`, url: site.domain },
     publisher: { "@type": "Organization", name: site.name, url: site.domain },
@@ -157,6 +157,12 @@ export default async function SmallSpaceHalloweenAnimatronicsPage() {
             Halloween props and animatronics
           </Link>
           <h1 className="mt-4 max-w-4xl text-4xl font-black leading-tight text-white sm:text-6xl">Halloween animatronics for small yards and porches</h1>
+          <div className="mt-5 max-w-3xl rounded-md border border-[#ffc56d]/35 bg-white/5 px-5 py-4" data-evidence-boundary="true">
+            <p className="text-xs font-black uppercase tracking-[0.12em] text-[#ffc56d]">Research comparison · not hands-on</p>
+            <p className="mt-2 text-sm leading-6 text-white/75">
+              This comparison uses authorized CJ catalog data, exact retailer-listing identity checks, and product-level placement analysis. Confirm current dimensions, movement, power, weather limits, stock, and return terms for the exact item before purchase.
+            </p>
+          </div>
           {heroProduct?.activeLink ? (
             <div className="mt-5 flex flex-wrap gap-3" aria-label="First-screen CJ retailer option" data-first-viewport-commerce="true">
               <TrackedCommerceLink
@@ -185,7 +191,7 @@ export default async function SmallSpaceHalloweenAnimatronicsPage() {
             <Link className="button-primary !bg-[#df7627] !text-white" href="#animatronic-picks">Compare the three picks <ArrowRight aria-hidden="true" size={16} /></Link>
             <Link className="button-secondary bg-white/95" href="/guides/large-prop-animatronic-space-and-power-checklist">Open the setup checklist</Link>
           </div>
-          <p className="mt-5 text-sm leading-6 text-white/55">Updated August 3, 2026 · Evidence: authorized CJ catalog data plus exact retailer-listing identity checks.</p>
+          <p className="mt-5 text-sm leading-6 text-white/55">Updated October 8, 2026 · Evidence: authorized CJ catalog data plus exact retailer-listing identity checks.</p>
         </div>
       </section>
 

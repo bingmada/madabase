@@ -13,6 +13,10 @@ const concurrencyArgument = process.argv.find((argument) => argument.startsWith(
 const concurrency = Math.max(1, Math.min(24, Number(concurrencyArgument?.slice("--concurrency=".length) ?? (publicAudit ? 2 : 12))));
 const includeMarkets = !process.argv.includes("--base-only");
 const siteArgument = process.argv.find((argument) => argument.startsWith("--site="));
+const retryJsonArgument = process.argv.find((argument) => argument.startsWith("--retry-json="));
+const retryJsonPath = retryJsonArgument
+  ? path.resolve(process.cwd(), retryJsonArgument.slice("--retry-json=".length))
+  : null;
 
 const siteHosts = {
   network: "network.madabase.com",
@@ -69,20 +73,27 @@ function normalizeUrl(value) {
 async function fetchPublicUrl(publicUrl) {
   if (publicAudit) {
     let response;
+    let lastError;
     for (let attempt = 1; attempt <= 3; attempt += 1) {
-      response = await fetch(publicUrl, {
-        headers: {
-          accept: "text/html,application/xhtml+xml",
-          "user-agent": "Madabase conversion-path auditor/1.0",
-        },
-        redirect: "follow",
-        signal: AbortSignal.timeout(30_000),
-      });
-      if (![502, 503, 504].includes(response.status) || attempt === 3) return response;
-      await response.body?.cancel();
+      try {
+        response = await fetch(publicUrl, {
+          headers: {
+            accept: "text/html,application/xhtml+xml",
+            "user-agent": "Madabase conversion-path auditor/1.0",
+          },
+          redirect: "follow",
+          signal: AbortSignal.timeout(30_000),
+        });
+        if (![502, 503, 504].includes(response.status) || attempt === 3) return response;
+        await response.body?.cancel();
+      } catch (error) {
+        lastError = error;
+        if (attempt === 3) throw error;
+      }
       await new Promise((resolve) => setTimeout(resolve, attempt * 750));
     }
-    return response;
+    if (response) return response;
+    throw lastError;
   }
 
   const url = new URL(publicUrl);
@@ -287,6 +298,8 @@ async function inspectPage(publicUrl) {
       kind: pageKind(url.pathname),
       market: marketForPath(url.pathname),
       status: response.status,
+      cacheStatus: response.headers.get("cf-cache-status"),
+      cacheAge: response.headers.get("age"),
       amazonCtas: amazonAnchors.length,
       cjCtas: cjAnchors.length,
       firstViewportCtas: firstViewportAnchors.length,
@@ -305,7 +318,10 @@ async function inspectPage(publicUrl) {
   }
 }
 
-const baseUrls = [...new Set([...(await sitemapContentUrls()), ...softLaunchUrls()])];
+const retryUrls = retryJsonPath
+  ? JSON.parse(fs.readFileSync(retryJsonPath, "utf8")).failureDetails.map((result) => result.url)
+  : null;
+const baseUrls = [...new Set(retryUrls ?? [...(await sitemapContentUrls()), ...softLaunchUrls()])];
 const exactUrls = [...new Set(expandMarketRoutes(baseUrls))].sort();
 const results = [];
 let nextIndex = 0;

@@ -1,0 +1,348 @@
+{
+  "checkedAt": "2026-10-08T06:18:14.927Z",
+  "mode": "public",
+  "includeMarkets": false,
+  "concurrency": 4,
+  "baseUrls": 1147,
+  "exactUrls": 1147,
+  "passed": 1123,
+  "failed": 24,
+  "noCta": 0,
+  "commercePaused": 29,
+  "bySite": {
+    "network": {
+      "checked": 178,
+      "failed": 4,
+      "noCta": 0,
+      "commercePaused": 1
+    },
+    "smarthome": {
+      "checked": 246,
+      "failed": 2,
+      "noCta": 0,
+      "commercePaused": 6
+    },
+    "homeoffice": {
+      "checked": 233,
+      "failed": 0,
+      "noCta": 0,
+      "commercePaused": 4
+    },
+    "baby": {
+      "checked": 233,
+      "failed": 5,
+      "noCta": 0,
+      "commercePaused": 13
+    },
+    "pet": {
+      "checked": 188,
+      "failed": 13,
+      "noCta": 0,
+      "commercePaused": 5
+    },
+    "style": {
+      "checked": 69,
+      "failed": 0,
+      "noCta": 0,
+      "commercePaused": 0
+    }
+  },
+  "byKind": {
+    "review": {
+      "checked": 183,
+      "failed": 3,
+      "noCta": 0,
+      "commercePaused": 2
+    },
+    "guide": {
+      "checked": 857,
+      "failed": 2,
+      "noCta": 0,
+      "commercePaused": 27
+    },
+    "roundup": {
+      "checked": 77,
+      "failed": 17,
+      "noCta": 0,
+      "commercePaused": 0
+    },
+    "tool": {
+      "checked": 7,
+      "failed": 0,
+      "noCta": 0,
+      "commercePaused": 0
+    },
+    "category": {
+      "checked": 23,
+      "failed": 2,
+      "noCta": 0,
+      "commercePaused": 0
+    },
+    "catalog-product": {
+      "checked": 0,
+      "failed": 0,
+      "noCta": 0,
+      "commercePaused": 0
+    }
+  },
+  "failureDetails": [
+    {
+      "url": "https://baby.madabase.com/best/babybjorn-harmony-vs-ergobaby-omni-breeze",
+      "site": "baby",
+      "kind": "roundup",
+      "market": "us",
+      "errors": [
+        "fetch failed"
+      ]
+    },
+    {
+      "url": "https://baby.madabase.com/best/babybjorn-mini-vs-ergobaby-omni-breeze",
+      "site": "baby",
+      "kind": "roundup",
+      "market": "us",
+      "errors": [
+        "fetch failed"
+      ]
+    },
+    {
+      "url": "https://baby.madabase.com/best/babybjorn-mini-vs-harmony",
+      "site": "baby",
+      "kind": "roundup",
+      "market": "us",
+      "errors": [
+        "fetch failed"
+      ]
+    },
+    {
+      "url": "https://baby.madabase.com/best/best-bottle-sterilizers-and-dryers",
+      "site": "baby",
+      "kind": "roundup",
+      "market": "us",
+      "status": 200,
+      "amazonCtas": 5,
+      "cjCtas": 0,
+      "firstViewportCtas": 1,
+      "ctaBeforeFirstImage": true,
+      "commercePaused": false,
+      "errors": [
+        "product or roundup evidence boundary must appear between the H1 and first commerce path"
+      ]
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/chicco-advanced-sterilizer-dryer",
+      "site": "baby",
+      "kind": "review",
+      "market": "us",
+      "status": 200,
+      "amazonCtas": 2,
+      "cjCtas": 0,
+      "firstViewportCtas": 1,
+      "ctaBeforeFirstImage": true,
+      "commercePaused": false,
+      "errors": [
+        "product or roundup evidence boundary must appear between the H1 and first commerce path"
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/best/best-deco-wifi-7-mesh-for-wired-backhaul",
+      "site": "network",
+      "kind": "roundup",
+      "market": "us",
+      "status": 200,
+      "amazonCtas": 4,
+      "cjCtas": 0,
+      "firstViewportCtas": 1,
+      "ctaBeforeFirstImage": true,
+      "commercePaused": false,
+      "errors": [
+        "product or roundup evidence boundary must appear between the H1 and first commerce path"
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/best/best-ups-for-router-and-modem",
+      "site": "network",
+      "kind": "roundup",
+      "market": "us",
+      "status": 200,
+      "amazonCtas": 4,
+      "cjCtas": 0,
+      "firstViewportCtas": 1,
+      "ctaBeforeFirstImage": true,
+      "commercePaused": false,
+      "errors": [
+        "product or roundup evidence boundary must appear between the H1 and first commerce path"
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/guides/pcie-wifi-adapters-compatibility-and-fit-guide",
+      "site": "network",
+      "kind": "guide",
+      "market": "us",
+      "errors": [
+        "fetch failed"
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/guides/wifi-7-vs-wifi-6-guide",
+      "site": "network",
+      "kind": "guide",
+      "market": "us",
+      "errors": [
+        "fetch failed"
+      ]
+    },
+    {
+      "url": "https://pets.madabase.com/best/best-automatic-cat-feeders",
+      "site": "pet",
+      "kind": "roundup",
+      "market": "us",
+      "errors": [
+        "fetch failed"
+      ]
+    },
+    {
+      "url": "https://pets.madabase.com/best/best-dog-beds-and-comfort-upgrades",
+      "site": "pet",
+      "kind": "roundup",
+      "market": "us",
+      "errors": [
+        "fetch failed"
+      ]
+    },
+    {
+      "url": "https://pets.madabase.com/best/best-pet-cameras-for-apartments",
+      "site": "pet",
+      "kind": "roundup",
+      "market": "us",
+      "errors": [
+        "fetch failed"
+      ]
+    },
+    {
+      "url": "https://pets.madabase.com/best/best-pet-odor-and-litter-upgrades",
+      "site": "pet",
+      "kind": "roundup",
+      "market": "us",
+      "errors": [
+        "fetch failed"
+      ]
+    },
+    {
+      "url": "https://pets.madabase.com/best/coway-mighty2-vs-shark-neverchange-max",
+      "site": "pet",
+      "kind": "roundup",
+      "market": "us",
+      "errors": [
+        "fetch failed"
+      ]
+    },
+    {
+      "url": "https://pets.madabase.com/best/coway-mighty2-vs-winix-5510-vs-levoit-vital-200s",
+      "site": "pet",
+      "kind": "roundup",
+      "market": "us",
+      "errors": [
+        "fetch failed"
+      ]
+    },
+    {
+      "url": "https://pets.madabase.com/best/furbo-360-vs-wyze-cam-pan-v3-for-pets",
+      "site": "pet",
+      "kind": "roundup",
+      "market": "us",
+      "errors": [
+        "fetch failed"
+      ]
+    },
+    {
+      "url": "https://pets.madabase.com/best/levoit-vital-200s-p-vs-shark-neverchange-max",
+      "site": "pet",
+      "kind": "roundup",
+      "market": "us",
+      "errors": [
+        "fetch failed"
+      ]
+    },
+    {
+      "url": "https://pets.madabase.com/best/neakasa-m1-plus-vs-petkit-puramax-2",
+      "site": "pet",
+      "kind": "roundup",
+      "market": "us",
+      "errors": [
+        "fetch failed"
+      ]
+    },
+    {
+      "url": "https://pets.madabase.com/best/petlibro-one-rfid-vs-granary-smart-feeder",
+      "site": "pet",
+      "kind": "roundup",
+      "market": "us",
+      "errors": [
+        "fetch failed"
+      ]
+    },
+    {
+      "url": "https://pets.madabase.com/categories/comfort",
+      "site": "pet",
+      "kind": "category",
+      "market": "us",
+      "errors": [
+        "fetch failed"
+      ]
+    },
+    {
+      "url": "https://pets.madabase.com/categories/feeding",
+      "site": "pet",
+      "kind": "category",
+      "market": "us",
+      "errors": [
+        "fetch failed"
+      ]
+    },
+    {
+      "url": "https://pets.madabase.com/reviews/tractive-dog-6-gps-tracker",
+      "site": "pet",
+      "kind": "review",
+      "market": "us",
+      "status": 200,
+      "amazonCtas": 2,
+      "cjCtas": 0,
+      "firstViewportCtas": 1,
+      "ctaBeforeFirstImage": true,
+      "commercePaused": false,
+      "errors": [
+        "product or roundup evidence boundary must appear between the H1 and first commerce path"
+      ]
+    },
+    {
+      "url": "https://smarthome.madabase.com/best/aqara-u400-vs-u100",
+      "site": "smarthome",
+      "kind": "roundup",
+      "market": "us",
+      "status": 200,
+      "amazonCtas": 3,
+      "cjCtas": 0,
+      "firstViewportCtas": 1,
+      "ctaBeforeFirstImage": true,
+      "commercePaused": false,
+      "errors": [
+        "product or roundup evidence boundary must appear between the H1 and first commerce path"
+      ]
+    },
+    {
+      "url": "https://smarthome.madabase.com/reviews/aqara-door-and-window-sensor-p2",
+      "site": "smarthome",
+      "kind": "review",
+      "market": "us",
+      "status": 200,
+      "amazonCtas": 2,
+      "cjCtas": 0,
+      "firstViewportCtas": 1,
+      "ctaBeforeFirstImage": true,
+      "commercePaused": false,
+      "errors": [
+        "product or roundup evidence boundary must appear between the H1 and first commerce path"
+      ]
+    }
+  ]
+}
