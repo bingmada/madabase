@@ -123,4 +123,88 @@ for available, pressure, headroom, expected in [
         except RuntimeError:
             assert not expected
 
-print("Recovery origin, canonical, redirect, sitemap, maintenance and rollback simulations passed")
+with tempfile.TemporaryDirectory() as temp:
+    actions = []
+    watchdog_command = []
+
+    def extra_run(args, timeout=30):
+        if args[:2] == ["systemctl", "is-active"]:
+            return "active"
+        if args[0] == "systemd-run":
+            watchdog_command.extend(args)
+            return "scheduled"
+        if args[:2] == ["systemctl", "show"]:
+            return "/unchanged-test" if args[2] == "madabase-test.service" else "/unchanged-main"
+        if args[:2] == ["systemctl", "stop"]:
+            actions.append("stop-" + args[2])
+            return ""
+        return ""
+
+    with ExitStack() as stack:
+        stack.enter_context(patch.dict(os.environ, {
+            "MADABASE_RECOVERY_EXTRA_SERVICE": "madabase-test.service",
+            "MADABASE_RECOVERY_EXTRA_PORT": "3009",
+            "MADABASE_RECOVERY_EXTRA_HOST": "test.madabase.com",
+        }))
+        stack.enter_context(patch.object(maintenance, "EXTRA", "madabase-test.service"))
+        stack.enter_context(patch.object(maintenance, "EXTRA_PORT", 3009))
+        stack.enter_context(patch.object(maintenance, "EXTRA_HOST", "test.madabase.com"))
+        stack.enter_context(patch.object(maintenance, "RECORD", Path(temp) / "state.json"))
+        stack.enter_context(patch.object(maintenance.base, "metadata", return_value={"status": "prepared"}))
+        stack.enter_context(patch.object(maintenance.base, "run", side_effect=extra_run))
+        stack.enter_context(patch.object(maintenance, "main_health"))
+        stack.enter_context(patch.object(maintenance, "extra_health"))
+        stack.enter_context(patch.object(maintenance, "forecast", return_value={"projectedAvailableMiB": 860}))
+        stack.enter_context(patch.object(maintenance.base, "activate", side_effect=lambda app: actions.append("activate-affiliate")))
+        stack.enter_context(patch.object(maintenance, "restore_main", side_effect=lambda: actions.append("restore-services")))
+        maintenance.maintain()
+    assert actions == [
+        "stop-madabase-test.service",
+        "stop-madabase-main.service",
+        "activate-affiliate",
+        "restore-services",
+    ]
+    assert "--setenv=MADABASE_RECOVERY_EXTRA_SERVICE=madabase-test.service" in watchdog_command
+    assert "--setenv=MADABASE_RECOVERY_EXTRA_PORT=3009" in watchdog_command
+
+for changed_service in [None, "madabase-test.service", "madabase-main.service"]:
+    with tempfile.TemporaryDirectory() as temp:
+        record = Path(temp) / "state.json"
+        maintenance.base.save(record, {
+            "mainWorkingDirectory": "/unchanged-main",
+            "extraWorkingDirectory": "/unchanged-test",
+            "mainRestored": False,
+            "extraRestored": False,
+        })
+        starts = []
+
+        def restore_run(args, timeout=30):
+            service = args[2]
+            if args[:2] == ["systemctl", "show"]:
+                if service == changed_service:
+                    return "/externally-changed"
+                return "/unchanged-test" if service == "madabase-test.service" else "/unchanged-main"
+            if args[:2] == ["systemctl", "start"]:
+                starts.append(service)
+                return ""
+            return ""
+
+        with ExitStack() as stack:
+            stack.enter_context(patch.object(maintenance, "EXTRA", "madabase-test.service"))
+            stack.enter_context(patch.object(maintenance, "RECORD", record))
+            stack.enter_context(patch.object(maintenance.base, "run", side_effect=restore_run))
+            stack.enter_context(patch.object(maintenance, "main_health"))
+            stack.enter_context(patch.object(maintenance, "extra_health"))
+            stack.enter_context(patch.object(maintenance.subprocess, "run"))
+            try:
+                maintenance.restore_main()
+                assert changed_service is None
+            except RuntimeError:
+                assert changed_service is not None
+        if changed_service is None:
+            assert starts == ["madabase-test.service", "madabase-main.service"]
+        else:
+            assert changed_service not in starts
+            assert ({"madabase-test.service", "madabase-main.service"} - {changed_service}).issubset(starts)
+
+print("Recovery origin, canonical, redirect, sitemap, maintenance, extra-service recovery and rollback simulations passed")
