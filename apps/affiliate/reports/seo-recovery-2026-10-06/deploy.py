@@ -24,9 +24,18 @@ LEDGER = Path(os.environ.get(
     "MADABASE_RECOVERY_LEDGER",
     "/var/tmp/madabase-seo-recovery-20261006-urls.json",
 ))
-STATE = Path("/var/tmp/madabase-seo-recovery-20261006")
-CAPACITY = Path("/var/tmp/madabase-seo-capacity-20261006.mjs")
-ARCHIVE_SHA256 = "40dc368375e9f8e055ae4c6330252a7ffbb66eacebcb26ed26c518747fbca7d3"
+STATE = Path(os.environ.get(
+    "MADABASE_RECOVERY_STATE",
+    "/var/tmp/madabase-seo-recovery-20261006",
+))
+CAPACITY = Path(os.environ.get(
+    "MADABASE_RECOVERY_CAPACITY",
+    "/var/tmp/madabase-seo-capacity-20261006.mjs",
+))
+ARCHIVE_SHA256 = os.environ.get(
+    "MADABASE_RECOVERY_SHA256",
+    "40dc368375e9f8e055ae4c6330252a7ffbb66eacebcb26ed26c518747fbca7d3",
+)
 
 spec = importlib.util.spec_from_file_location("guarded_release_base", BASE_PATH)
 base = importlib.util.module_from_spec(spec)
