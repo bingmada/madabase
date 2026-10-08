@@ -16,6 +16,7 @@ REPO = Path('/snap/newmadabse/madabase')
 STATE = Path('/var/tmp/madabase-seo-release-20261002')
 REVISION = None
 CAPACITY = Path('/var/tmp/madabase-seo-capacity-20261002.mjs')
+RELEASE_LABEL = os.environ.get('MADABASE_RELEASE_LABEL', 'seo-20261002')
 PLAN = {
     'affiliate': {'port': 3011, 'sha256': '5e4f9ff8c73d04afce05273c90ab831de5a0d72301efa866631877b82554174b', 'hosts': ['network.madabase.com', 'smarthome.madabase.com', 'homeoffice.madabase.com', 'baby.madabase.com', 'pets.madabase.com', 'style.madabase.com', 'costumes.madabase.com']},
 }
@@ -91,7 +92,7 @@ def prepare():
             raise RuntimeError('Old production not healthy: ' + app)
         for host in details['hosts']:
             check(app, host=host)
-        target = Path('/srv/madabase-' + app + '/releases/seo-20261002-' + REVISION)
+        target = Path('/srv/madabase-' + app + '/releases/' + RELEASE_LABEL + '-' + REVISION)
         if target.exists():
             raise RuntimeError('Immutable target already exists: ' + str(target))
         archive = STATE / (app + '.tgz')
