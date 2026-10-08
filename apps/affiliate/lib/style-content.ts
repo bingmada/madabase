@@ -239,7 +239,7 @@ export const styleRoundups: Roundup[] = [
     site: "style",
     slug: "best-statement-accessories-for-one-focal-point",
     updatedAt: "July 7, 2026",
-    title: "Best Statement Accessories for a One-Focal-Point Outfit",
+    title: "Statement Accessories for a One-Focal-Point Outfit",
     dek: "Three expressive starting points—a celestial mismatch, a bakery joke, and a character mini backpack—compared by scale, comfort, capacity, and styling range.",
     category: "styling",
     intent: "Choose one memorable accessory without rebuilding an entire wardrobe around it.",

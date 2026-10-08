@@ -168,7 +168,7 @@ export default async function HomePage() {
         <div className="shell">
           <div className="mb-8 max-w-2xl">
             <p className="eyebrow">Latest product research</p>
-            <h2 className="mt-3 text-3xl font-black">Start with the newest product reviews.</h2>
+            <h2 className="mt-3 text-3xl font-black">Start with the newest product research.</h2>
             <p className="mt-4 leading-8 text-[var(--muted)]">
               New and recently expanded buying notes appear first, with model checks, trade-offs, compatibility details, and direct comparisons.
             </p>

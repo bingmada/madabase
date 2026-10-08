@@ -64,7 +64,7 @@ export async function GET() {
         ]
       : []),
     ...(site.key === "costume"
-      ? linesFor("Reviewed product pages", costumeProducts, "/products")
+      ? linesFor("Product detail pages", costumeProducts, "/products")
       : linesFor("Product evidence pages", products, "/reviews")),
     "",
     ...linesFor("Comparison pages", roundups, "/best"),

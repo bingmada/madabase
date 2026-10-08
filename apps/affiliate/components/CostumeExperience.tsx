@@ -229,7 +229,7 @@ export async function CostumeCategoryPage({
           ) : null}
           <p className="mt-4 max-w-3xl text-lg leading-8 text-[var(--muted)]">{category.description}</p>
           {reviewedProducts.length ? (
-            <section className="mt-8" aria-label="Reviewed products in this category" data-reviewed-product-discovery="true">
+            <section className="mt-8" aria-label="Researched products in this category" data-reviewed-product-discovery="true">
               <h2 className="text-2xl font-bold">Buying notes for {category.name.toLowerCase()}</h2>
               <p className="mt-3 max-w-3xl leading-7 text-[var(--muted)]">Read the fit, included-piece, setup, and return checks for these products before browsing the wider catalog.</p>
               <ul className="mt-5 grid gap-3 sm:grid-cols-2">

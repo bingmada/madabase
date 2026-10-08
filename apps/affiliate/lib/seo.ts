@@ -36,21 +36,25 @@ export function metaDescription(description: string, path = "/") {
 export function productPageTitle(product: Product) {
   if (product.seoTitle) return product.seoTitle;
 
-  const suffix = {
-    pet: "Review: Fit, Cleaning & Buying Guide",
-    homeoffice: "Review: Fit, Specs & Buying Guide",
-    baby: "Review: Age, Fit & Buying Guide",
-    network: "Review: Specs, Setup & Buying Guide",
-    smarthome: "Review: Compatibility & Buying Guide",
-    style: "Review: Size, Materials & Fit",
+  const suffix = product.evidenceMode === "hands-on"
+    ? "Hands-On Review"
+    : ({
+    pet: "Guide: Fit, Care & Ownership Costs",
+    homeoffice: "Guide: Specs, Workspace Fit & Setup",
+    baby: "Guide: Age, Fit & Use Checks",
+    network: "Guide: Specs, Compatibility & Setup",
+    smarthome: "Guide: Compatibility, Wiring & Setup",
+    style: "Guide: Size, Materials & Outfit Fit",
     costume: "Buying Guide: Fit, Use & Trade-offs",
-  }[product.site];
+  }[product.site]);
 
   const detailedTitle = `${product.name} ${suffix}`;
   if (detailedTitle.length <= 72) return detailedTitle;
 
-  const compactTitle = `${product.name} Review & Buying Guide`;
-  return compactTitle.length <= 72 ? compactTitle : `${product.name} Review`;
+  const compactTitle = product.evidenceMode === "hands-on"
+    ? `${product.name} Hands-On Review`
+    : `${product.name} Buying Guide`;
+  return compactTitle.length <= 72 ? compactTitle : `${product.name} Guide`;
 }
 
 function noteList(items: string[] | undefined) {

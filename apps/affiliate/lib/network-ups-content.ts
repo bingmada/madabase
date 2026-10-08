@@ -10,7 +10,7 @@ export const networkUpsProducts: Product[] = [
     slug: "apc-back-ups-router-modem-bundle",
     asin: "B085JJZDFK",
     amazonTitle: "APC Back-UPS 850VA, 450W, BE850G2",
-    seoTitle: "APC BE850G2 Review Guide: Router, ONT and NAS Backup",
+    seoTitle: "APC BE850G2 Guide: Router, ONT and NAS Backup",
     updatedAt,
     evidenceMode: "official-spec",
     researchNote:
@@ -113,7 +113,7 @@ export const networkUpsProducts: Product[] = [
     slug: "apc-be600m1-router-ups",
     asin: "B01FWAZEIU",
     amazonTitle: "APC UPS Battery Backup and Surge Protector, 600VA, BE600M1",
-    seoTitle: "APC BE600M1 Review Guide: Small Router and Modem UPS",
+    seoTitle: "APC BE600M1 Guide: Small Router and Modem UPS",
     updatedAt,
     evidenceMode: "official-spec",
     researchNote:
@@ -216,7 +216,7 @@ export const networkUpsProducts: Product[] = [
     slug: "cyberpower-sl700u-router-ups",
     asin: "B07SKX78PV",
     amazonTitle: "CyberPower SL700U Standby UPS Battery Backup and Surge Protector",
-    seoTitle: "CyberPower SL700U Review Guide: Slim Router UPS Tradeoffs",
+    seoTitle: "CyberPower SL700U Guide: Slim Router UPS Tradeoffs",
     updatedAt,
     evidenceMode: "official-spec",
     researchNote:
@@ -317,9 +317,9 @@ export const networkUpsRoundups: Roundup[] = [
   {
     site: "network",
     slug: "best-ups-for-router-and-modem",
-    seoTitle: "Best UPS for Router, Modem and ONT: APC vs CyberPower",
+    seoTitle: "UPS for Router, Modem and ONT: APC vs CyberPower",
     updatedAt,
-    title: "Best UPS for Router, Modem and ONT Backup Power",
+    title: "UPS for Router, Modem and ONT Backup Power",
     dek: "Compare APC BE600M1, BE850G2, and CyberPower SL700U by measured load, protected outlets, power-brick fit, battery replacement, and installation space.",
     category: "backup",
     intent: "choose an exact UPS for an ONT, modem, router, switch, mesh node, or small NAS without guessing runtime from VA",

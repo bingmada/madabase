@@ -308,7 +308,7 @@ export default async function CategoryPage({
         {products.length ? (
           <section className="mt-10" aria-labelledby="product-reviews-heading">
             <div className="max-w-2xl">
-              <p className="eyebrow">Product reviews</p>
+              <p className="eyebrow">Product research</p>
               <h2 className="mt-3 text-3xl font-black" id="product-reviews-heading">Compare products in this category</h2>
               <p className="mt-4 leading-8 text-[var(--muted)]">
                 Check model-specific strengths, trade-offs, compatibility details, and alternatives before opening the retailer listing.

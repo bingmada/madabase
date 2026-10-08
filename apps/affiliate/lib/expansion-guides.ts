@@ -80,7 +80,7 @@ export const expansionGuides: Guide[] = [
   {
     site: "network",
     slug: "netgear-gs908e-review",
-    title: "NETGEAR GS908E Review: Smart Managed Plus or Old Gigabit Switch?",
+    title: "NETGEAR GS908E Guide: Smart Managed Plus or Old Gigabit Switch?",
     dek: "Check GS908E's eight gigabit ports, smart management, cable routing, hardware region, and whether GS308E or 2.5GbE is the better buy.",
     category: "wired",
     updatedAt: "July 12, 2026",
@@ -433,7 +433,7 @@ export const expansionGuides: Guide[] = [
   {
     site: "homeoffice",
     slug: "monitor-arm-for-walking-desk-guide",
-    title: "Best Monitor Arm Setup for a Walking Desk",
+    title: "Monitor Arm Setup for a Walking Desk",
     dek: "Choose and position a monitor arm for viewing distance, standing height, desktop stiffness, clamp fit, cable slack, and controlled movement.",
     category: "ergonomics",
     updatedAt: "July 1, 2026",

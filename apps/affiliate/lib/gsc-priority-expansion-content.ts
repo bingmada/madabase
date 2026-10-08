@@ -9,7 +9,7 @@ export const gscPriorityProducts: Product[] = [
     asin: "B089QWNQXC",
     amazonTitle: "Dr. Brown's All-in-One Sterilizer and Dryer for Baby Bottles, Parts and Other Newborn Essentials",
     amazonDetailUrl: "https://www.amazon.com/dp/B089QWNQXC",
-    seoTitle: "Dr. Brown's Sterilizer Dryer Review: Capacity & Drying",
+    seoTitle: "Dr. Brown's Sterilizer Dryer Guide: Capacity & Drying",
     updatedAt: "September 24, 2026",
     sources: [
       { name: "Dr. Brown's Bottle Sterilizer and Dryer", url: "https://drbrownsbaby.com/products/dr-browns-bottle-sterilizer-and-dryer", note: "Official capacity, cycle modes, HEPA-filter life, distilled-water, and closed-lid storage guidance." },
@@ -63,7 +63,7 @@ export const gscPriorityProducts: Product[] = [
     asin: "B09HH7HSGV",
     amazonTitle: "GROWNSY Bottle Sterilizer and Dryer, Compact Electric Steam Baby Bottle Sterilizer",
     amazonDetailUrl: "https://www.amazon.com/dp/B09HH7HSGV",
-    seoTitle: "GROWNSY Bottle Sterilizer Dryer Review: Worth It for Small Kitchens?",
+    seoTitle: "GROWNSY Bottle Sterilizer Dryer Guide: Worth It for Small Kitchens?",
     updatedAt: "September 24, 2026",
     evidenceMode: "official-spec",
     researchNote: "We have not measured drying time, temperature, or loaded capacity. This guide compares the LS-BE916 Amazon identity with GROWNSY's model 916 documentation and separates conflicting capacity illustrations from verified model details.",
@@ -120,7 +120,7 @@ export const gscPriorityProducts: Product[] = [
     asin: "B0BG67HG7S",
     amazonTitle: "Chicco Advanced Electric Steam Sterilizer and Dryer for Baby Bottles, Pacifiers & Feeding Accessories",
     amazonDetailUrl: "https://www.amazon.com/dp/B0BG67HG7S",
-    seoTitle: "Chicco Sterilizer Dryer Review: 6-Bottle Capacity",
+    seoTitle: "Chicco Sterilizer Dryer Guide: 6-Bottle Capacity",
     updatedAt: "September 24, 2026",
     sources: [
       { name: "Chicco Advanced Sterilizer and Dryer", url: "https://www.chiccousa.com/shop-our-products/feeding-and-soothing/feeding-accessories/advanced-sterilizer-and-dryer/00007392100070.html", note: "Official six-bottle capacity, four programs, under-40-minute full cycle, dimensions, filter, and descale guidance." },
@@ -174,7 +174,7 @@ export const gscPriorityProducts: Product[] = [
     asin: "B0FDBL5MVM",
     amazonTitle: "Elgato Key Light Neo Black with Monitor Mount",
     amazonDetailUrl: "https://www.amazon.com/dp/B0FDBL5MVM",
-    seoTitle: "Elgato Key Light Neo Review: Monitor-Mounted Video Call Light",
+    seoTitle: "Elgato Key Light Neo Guide: Monitor-Mounted Video Call Light",
     updatedAt: "September 24, 2026",
     sources: [
       { name: "Elgato Key Light Neo Black specifications", url: "https://www.elgato.com/us/en/p/key-light-neo-black", note: "Official brightness by power source, color range, controls, and dimensions." },
@@ -226,7 +226,7 @@ export const gscPriorityProducts: Product[] = [
     asin: "B0CN7BK69P",
     amazonTitle: "LUME CUBE Edge 2.0 LED Desk Lamp with USB Charging Port and Circle Webcam Light",
     amazonDetailUrl: "https://www.amazon.com/dp/B0CN7BK69P",
-    seoTitle: "Lume Cube Edge 2.0 Review: Desk Lamp and Webcam Light for Calls",
+    seoTitle: "Lume Cube Edge 2.0 Guide: Desk Lamp and Webcam Light for Calls",
     updatedAt,
     sources: [
       { name: "Amazon listing: Lume Cube Edge 2.0 LED Desk Lamp", url: "https://www.amazon.com/dp/B0CN7BK69P", note: "ASIN, title, swing arm, USB ports, color temperature, brightness, and clamp details." },
@@ -277,7 +277,7 @@ export const gscPriorityRoundups: Roundup[] = [
   {
     site: "baby",
     slug: "best-baby-carriers-by-age-and-position",
-    title: "Best Baby Carriers by Age and Carry Position",
+    title: "Baby Carriers by Age and Carry Position",
     dek: "Compare newborn inward carry, outward-facing readiness, hip carry, back carry, warm-weather comfort, and when a simpler carrier beats an all-stage model.",
     category: "travel",
     updatedAt: "July 10, 2026",
@@ -312,7 +312,7 @@ export const gscPriorityRoundups: Roundup[] = [
   {
     site: "homeoffice",
     slug: "best-home-office-lighting-for-video-calls-in-small-rooms",
-    title: "Best Home Office Lighting for Video Calls in Small Rooms",
+    title: "Home Office Lighting for Video Calls in Small Rooms",
     updatedAt: "July 26, 2026",
     dek: "Choose compact lighting for Zoom, Meet, and Teams calls by face exposure, glare, monitor space, window position, and desk clutter.",
     category: "meetings",
@@ -369,7 +369,7 @@ export const gscPriorityRoundups: Roundup[] = [
   {
     site: "homeoffice",
     slug: "best-monitor-arms-for-walking-desks",
-    title: "Best Monitor Arm for a Walking Desk: 3 Stable Setups",
+    title: "Monitor Arm for a Walking Desk: 3 Stable Setups",
     dek: "Compare monitor weight range, clamp support, arm extension, screen wobble, cable slack, and desk stiffness before buying for a walking desk.",
     category: "ergonomics",
     updatedAt: "July 12, 2026",

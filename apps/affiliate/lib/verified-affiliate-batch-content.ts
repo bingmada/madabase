@@ -8,7 +8,7 @@ export const verifiedAffiliateBatchProducts: Product[] = [
     slug: "petlibro-one-rfid-smart-feeder",
     asin: "B0FJMFYPNH",
     seoTitle:
-      "PETLIBRO One RFID Feeder Review: Collar Tag, Portions & Multi-Cat Fit",
+      "PETLIBRO One RFID Feeder Guide: Collar Tag, Portions & Multi-Cat Fit",
     updatedAt: "July 28, 2026",
     evidenceMode: "official-spec",
     researchNote:
@@ -134,7 +134,7 @@ export const verifiedAffiliateBatchProducts: Product[] = [
     slug: "ergear-48x24-electric-standing-desk",
     asin: "B0B6JJKSNM",
     seoTitle:
-      "ErGear 48×24 Electric Standing Desk Review: Is It Good for Small Spaces?",
+      "ErGear 48×24 Electric Standing Desk Guide: Is It Good for Small Spaces?",
     updatedAt: "July 11, 2026",
     name: "ErGear 48×24 Electric Standing Desk with Wheels",
     brand: "ErGear",
@@ -233,7 +233,7 @@ export const verifiedAffiliateBatchProducts: Product[] = [
     slug: "baby-tula-lite-carrier",
     asin: "B09X8R4PZH",
     seoTitle:
-      "Tula Lite Carrier Review: 12–30 lb Fit, Travel Pouch & Carry Limits",
+      "Tula Lite Carrier Guide: 12–30 lb Fit, Travel Pouch & Carry Limits",
     updatedAt,
     name: "Baby Tula Lite Carrier",
     brand: "Baby Tula",
@@ -333,7 +333,7 @@ export const verifiedAffiliateBatchProducts: Product[] = [
     slug: "trendnet-teg-s380-2-5g-switch",
     asin: "B08XWKF55C",
     seoTitle:
-      "TRENDnet TEG-S380 Review: 8-Port 2.5G Switch, Versions & Bottlenecks",
+      "TRENDnet TEG-S380 Guide: 8-Port 2.5G Switch, Versions & Bottlenecks",
     updatedAt,
     name: "TRENDnet TEG-S380 8-Port 2.5G Switch",
     brand: "TRENDnet",
@@ -434,7 +434,7 @@ export const verifiedAffiliateBatchProducts: Product[] = [
     slug: "ultraloq-bolt-se-smart-lock",
     asin: "B0FQC6VCDW",
     seoTitle:
-      "ULTRALOQ Bolt SE Review: Matter vs Wi-Fi Variant, Fingerprint & Door Fit",
+      "ULTRALOQ Bolt SE Guide: Matter vs Wi-Fi Variant, Fingerprint & Door Fit",
     updatedAt,
     name: "ULTRALOQ Bolt SE Smart Lock",
     brand: "ULTRALOQ",

@@ -4,7 +4,9 @@ export function productEvidencePresentation(product: Product) {
   const mode = product.evidenceMode ?? "official-spec";
   const label = mode === "hands-on"
     ? "Hands-on review"
-    : "Buying assessment";
+    : mode === "research-synthesis"
+      ? "Research synthesis · not hands-on"
+      : "Official-spec guide · not hands-on";
   const note = product.researchNote ?? (
     mode === "hands-on"
       ? "This page includes first-hand use. Test conditions and measurements are stated beside the relevant findings."
@@ -18,4 +20,17 @@ export function productEvidencePresentation(product: Product) {
     : "Use the decision points below to compare fit, compatibility, ownership trade-offs, and the exact current listing.";
 
   return { label, mode, note, summary };
+}
+
+export function roundupEvidencePresentation(products: Product[]) {
+  const hasIndependentTests = products.some((product) => product.evidenceMode === "research-synthesis" && product.externalTests?.length);
+
+  return {
+    label: hasIndependentTests
+      ? "Research-based comparison · not hands-on"
+      : "Official-spec comparison · not hands-on",
+    summary: hasIndependentTests
+      ? "The shortlist combines current manufacturer documentation, exact-listing checks, and attributed independent tests. Different test setups are not merged into a synthetic score."
+      : "The shortlist compares current manufacturer documentation, exact models, fit, compatibility, ownership costs, and checkout risks. It is not a hands-on ranking.",
+  };
 }

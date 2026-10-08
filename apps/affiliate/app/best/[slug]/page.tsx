@@ -9,6 +9,7 @@ import { StyleCollectionPage } from "@/components/StyleExperience";
 import { findProduct, findRoundup, siteGuides } from "@/lib/content";
 import { roundupCommerceProduct } from "@/lib/commerce-paths";
 import { buyerFacingBody, buyerFacingHeading, buyerFacingSummary } from "@/lib/conversion-copy";
+import { roundupEvidencePresentation } from "@/lib/evidence";
 import { effectiveContentUpdatedAt, findSearchOpportunity, searchOpportunityMetaDescription } from "@/lib/search-opportunities";
 import { breadcrumbSchema, faqPageSchema, pageMetadata, roundupArticleSchema, roundupProductListSchema } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
@@ -196,6 +197,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
   const answer = quickAnswer(roundup.title, roundup.intent, picks);
   const advice = getRoundupAdvice(site.key, roundup.category);
   const sources = officialSourceLinks(picks);
+  const evidencePresentation = roundupEvidencePresentation(picks);
   if (site.key === "style") {
     return (
       <>
@@ -240,6 +242,10 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
             <p className="eyebrow">{roundup.category}</p>
           )}
           <h1 className="mt-3 text-3xl font-black leading-tight sm:text-4xl">{roundup.title}</h1>
+          <div className="mt-4 rounded-md border border-[var(--brand)] bg-[var(--brand-soft)] px-4 py-3" data-evidence-boundary="true">
+            <p className="text-xs font-bold uppercase text-[var(--brand-strong)]">{evidencePresentation.label}</p>
+            <p className="mt-1 text-sm font-semibold leading-6 text-[var(--text)]">{evidencePresentation.summary}</p>
+          </div>
           {topPick || commerceProduct ? (
             <div
               className="mt-4 grid gap-3 rounded-md border border-[var(--border)] bg-white p-4 sm:mt-5 sm:grid-cols-[1fr_auto] sm:items-center sm:p-5"
@@ -260,7 +266,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
               </div>
               <div className="flex flex-wrap items-start gap-2 sm:justify-end">
                 {commerceProduct ? <AffiliateButtonGroup site={site.key} product={commerceProduct} position={commerceIsAlternative ? "roundup-first-viewport-verified-alternative" : "roundup-first-viewport-primary"} limit={1} firstViewport /> : null}
-                {topPick ? <Link className="button-secondary" href={`/reviews/${topPick.slug}`}>Review details</Link> : null}
+                {topPick ? <Link className="button-secondary" href={`/reviews/${topPick.slug}`}>Product guide</Link> : null}
               </div>
             </div>
           ) : null}

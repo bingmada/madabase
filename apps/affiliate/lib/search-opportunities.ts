@@ -189,7 +189,7 @@ export const searchOpportunities: SearchOpportunity[] = [
     query: "Does the Aqara Door and Window Sensor P2 require an Aqara hub?",
     answer: "P2 uses Matter over Thread, so it needs a compatible Matter controller and Thread border router, not necessarily an Aqara hub. An Aqara hub may add vendor-specific functions, but the basic purchase decision starts with the controller and Thread infrastructure already in the home.",
     updatedAt,
-    preferredPaths: ["/guides/matter-controller-vs-thread-border-router", "/guides/matter-vs-thread-vs-zigbee"],
+    preferredPaths: ["/guides/matter-controller-vs-thread-border-router", "/guides/matter-thread-wifi-zigbee-device-checklist"],
   },
   {
     site: "network",

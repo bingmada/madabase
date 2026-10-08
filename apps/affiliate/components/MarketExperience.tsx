@@ -41,35 +41,58 @@ function marketRouteLabel(
 ) {
   const labels = {
     gb: {
-      reviews: "Product reviews",
-      best: "Comparisons and best picks",
+      reviews: "Product research",
+      best: "Comparisons and shortlists",
       guides: "Buying guides",
       tools: "Tools and planners",
       categories: "Categories",
     },
     ca: {
-      reviews: "Product reviews",
-      best: "Comparisons and best picks",
+      reviews: "Product research",
+      best: "Comparisons and shortlists",
       guides: "Buying guides",
       tools: "Tools and planners",
       categories: "Categories",
     },
     de: {
       reviews: "Produktseiten",
-      best: "Vergleiche und Bestenlisten",
+      best: "Vergleiche und Auswahllisten",
       guides: "Kaufratgeber",
       tools: "Tools und Planer",
       categories: "Kategorien",
     },
     nl: {
       reviews: "Productpagina's",
-      best: "Vergelijkingen en beste keuzes",
+      best: "Vergelijkingen en selecties",
       guides: "Koopgidsen",
       tools: "Tools en planners",
       categories: "Categorieën",
     },
   } as const;
   return labels[market.key][route];
+}
+
+function marketEvidenceBoundary(
+  market: MarketProfile,
+  route: LocalizedMarketPage["route"],
+) {
+  if (route !== "reviews" && route !== "best") return undefined;
+  const comparison = route === "best";
+  const copy = {
+    gb: comparison
+      ? { label: "Research-based comparison · not hands-on", summary: "This comparison uses current manufacturer documentation, exact-model checks, and attributed sources; it does not claim first-hand testing." }
+      : { label: "Official-spec product guide · not hands-on", summary: "This guide uses current manufacturer documentation and exact-model checks; it does not claim first-hand testing." },
+    ca: comparison
+      ? { label: "Research-based comparison · not hands-on", summary: "This comparison uses current manufacturer documentation, exact-model checks, and attributed sources; it does not claim first-hand testing." }
+      : { label: "Official-spec product guide · not hands-on", summary: "This guide uses current manufacturer documentation and exact-model checks; it does not claim first-hand testing." },
+    de: comparison
+      ? { label: "Quellenbasierter Vergleich · kein Praxistest", summary: "Der Vergleich nutzt aktuelle Herstellerunterlagen, genaue Modellprüfungen und zugeordnete Quellen; eigene Produkttests werden nicht behauptet." }
+      : { label: "Leitfaden nach Herstellerangaben · kein Praxistest", summary: "Der Leitfaden nutzt aktuelle Herstellerunterlagen und genaue Modellprüfungen; eigene Produkttests werden nicht behauptet." },
+    nl: comparison
+      ? { label: "Vergelijking op basis van bronnen · niet zelf getest", summary: "Deze vergelijking gebruikt actuele fabrikantdocumentatie, controles van het exacte model en herleidbare bronnen; er wordt geen eigen praktijktest geclaimd." }
+      : { label: "Productgids op basis van specificaties · niet zelf getest", summary: "Deze gids gebruikt actuele fabrikantdocumentatie en controles van het exacte model; er wordt geen eigen praktijktest geclaimd." },
+  } as const;
+  return copy[market.key];
 }
 
 export function MarketEditionNav({
@@ -362,6 +385,7 @@ export function LocalizedMarketContent({
     product?.asin ?? product?.specs.ASIN,
     product?.evidenceMode,
   );
+  const evidenceBoundary = marketEvidenceBoundary(market, page.route);
 
   return (
     <main className="section" lang={market.languageTag}>
@@ -406,6 +430,12 @@ export function LocalizedMarketContent({
           <article className="min-w-0">
             <p className="eyebrow">{market.labels.edition} · {site.name}</p>
             <h1 className="mt-3 text-4xl font-black leading-tight">{variant.title}</h1>
+            {evidenceBoundary ? (
+              <section className="mt-4 rounded-md border border-[var(--brand)] bg-[var(--brand-soft)] px-4 py-3" data-evidence-boundary="true">
+                <p className="text-xs font-bold uppercase text-[var(--brand-strong)]">{evidenceBoundary.label}</p>
+                <p className="mt-1 text-sm font-semibold leading-6 text-[var(--text)]">{evidenceBoundary.summary}</p>
+              </section>
+            ) : null}
             {commercePausedReason ? (
               <section className="mt-4 rounded-md border border-[var(--border)] bg-white p-4" aria-label="Exact retailer link paused" data-first-viewport-commerce="true" data-commerce-paused="true">
                 <p className="eyebrow">Exact retailer link paused</p>

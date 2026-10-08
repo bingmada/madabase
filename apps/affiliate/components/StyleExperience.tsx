@@ -2,7 +2,7 @@ import { ArrowRight, CalendarDays, Check, ExternalLink, Heart, Menu, ShieldCheck
 import Image from "next/image";
 import Link from "next/link";
 import { buyerFacingBody, buyerFacingHeading, buyerFacingSummary } from "@/lib/conversion-copy";
-import { productEvidencePresentation } from "@/lib/evidence";
+import { productEvidencePresentation, roundupEvidencePresentation } from "@/lib/evidence";
 import type { SiteConfig } from "@/lib/sites";
 import type { Guide, Product, Roundup } from "@/lib/types";
 import { AffiliateButtonGroup } from "./AffiliateButton";
@@ -331,7 +331,7 @@ export function StyleGuidePage({
           <h1 className="mt-5 max-w-4xl break-words font-serif text-5xl leading-[0.98] sm:text-6xl">{guide.title}</h1>
           {startingProduct || startingRoundup || commerceProduct ? (
             <div className="mt-5 max-w-3xl border-y border-[#5d514d] py-4 sm:py-5" aria-label="First-screen purchase path" data-first-viewport-commerce="true">
-              <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#d5a6b5]">Best starting point</p>
+              <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#d5a6b5]">Starting point</p>
               <div className="mt-3 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
                 <div>
                   <p className="font-serif text-2xl">{startingProduct ? startingProduct.amazonTitle ?? startingProduct.name : commerceProduct?.amazonTitle ?? commerceProduct?.name ?? startingRoundup?.title}</p>
@@ -351,7 +351,7 @@ export function StyleGuidePage({
             </div>
           ) : null}
           <p className="mt-7 max-w-2xl text-lg leading-8 text-[#d6cbc5]">{guide.dek}</p>
-          <p className="mt-5 inline-flex items-center gap-2 text-xs font-semibold text-[#cdbeb7]"><CalendarDays size={14} /> Updated {guide.updatedAt ?? "on the current review cycle"}</p>
+          <p className="mt-5 inline-flex items-center gap-2 text-xs font-semibold text-[#cdbeb7]"><CalendarDays size={14} /> Updated {guide.updatedAt ?? "on the current update cycle"}</p>
         </div>
       </section>
 
@@ -529,17 +529,21 @@ export function StyleProductPage({
           <div className="order-1 flex flex-col justify-center lg:order-2 lg:py-8">
             <Link className="style-kicker" href={`/categories/${product.category}`}>{product.brand}</Link>
             <h1 className="mt-4 break-words font-serif text-4xl leading-[1.05] sm:text-5xl">{name}</h1>
+            <div className="mt-4 border-l-2 border-[#a24d67] bg-[#fffaf6] px-5 py-4" data-evidence-boundary="true">
+              <p className="text-xs font-bold uppercase tracking-[0.12em] text-[#986174]">{evidencePresentation.label}</p>
+              <p className="mt-2 text-sm font-semibold leading-6 text-[#4f4540]">{evidencePresentation.summary}</p>
+            </div>
             {hasOffer ? (
               <div className="mt-4 border-y border-[#d9ccc4] py-4" aria-label="First-screen retailer option" data-first-viewport-commerce="true">
                 <p className="text-xs font-bold uppercase tracking-[0.12em] text-[#986174]">{commerceIsAlternative ? "Different product · verified alternative" : "Verified retailer option"}</p>
-                {commerceIsAlternative ? <p className="mt-2 text-sm leading-5 text-[#6b5f59]">This button is for {purchaseProduct.amazonTitle ?? purchaseProduct.name}, not the reviewed item.</p> : null}
+                {commerceIsAlternative ? <p className="mt-2 text-sm leading-5 text-[#6b5f59]">This button is for {purchaseProduct.amazonTitle ?? purchaseProduct.name}, not the product discussed above.</p> : null}
                 <div className="mt-3 flex flex-wrap gap-3">
                   <AffiliateButtonGroup site={site.key} product={purchaseProduct} position={commerceIsAlternative ? "style-product-first-viewport-verified-alternative" : "style-product-first-viewport"} limit={1} firstViewport />
                 </div>
                 <p className="mt-2 text-xs leading-5 text-[#7b6d67]">Open the named listing to compare the live price, availability, delivery, seller, and return terms.</p>
               </div>
             ) : null}
-            <p className="mt-4 inline-flex items-center gap-2 text-xs font-semibold text-[#7b6d67]"><CalendarDays size={14} /> Updated {product.updatedAt ?? "on the current review cycle"}</p>
+            <p className="mt-4 inline-flex items-center gap-2 text-xs font-semibold text-[#7b6d67]"><CalendarDays size={14} /> Updated {product.updatedAt ?? "on the current update cycle"}</p>
             <p className="mt-6 text-lg leading-8 text-[#6b5f59]">{buyerFacingSummary(product.summary)}</p>
             <div className="mt-7 divide-y divide-[#d9ccc4] border-y border-[#d9ccc4]">
               {decisionRows.map(([label, detail]) => (
@@ -557,14 +561,10 @@ export function StyleProductPage({
             <p className="mt-4 text-xs leading-5 text-[#897b75]">
               {hasOffer
                 ? commerceIsAlternative
-                  ? `The purchase button is for the verified alternative ${purchaseProduct.name}, not the reviewed item. Confirm the selected variation, seller, materials, dimensions, and return terms.`
+                  ? `The purchase button is for the verified alternative ${purchaseProduct.name}, not the product discussed above. Confirm the selected variation, seller, materials, dimensions, and return terms.`
                   : "Check the selected variation, seller, materials, dimensions, and return terms at the retailer."
                 : "The retailer link is still being verified. Product notes stay visible, but no unverified purchase link is shown."}
             </p>
-            <div className="mt-7 border-l-2 border-[#a24d67] bg-[#fffaf6] px-5 py-4">
-              <p className="text-xs font-bold uppercase tracking-[0.12em] text-[#986174]">{evidencePresentation.label}</p>
-              <p className="mt-2 text-sm font-semibold leading-6 text-[#4f4540]">{evidencePresentation.summary}</p>
-            </div>
           </div>
         </div>
       </section>
@@ -714,15 +714,20 @@ export function StyleCollectionPage({ site, roundup, products }: { site: SiteCon
   const topPick = products[0];
   const commerceProduct = products.find((product) => product.offers.length > 0);
   const commerceIsAlternative = Boolean(topPick && commerceProduct && topPick.slug !== commerceProduct.slug);
+  const evidencePresentation = roundupEvidencePresentation(products);
   return (
     <main>
       <section className="bg-[#211d1b] text-[#fff9f5]">
         <div className="style-shell py-16 sm:py-24">
           <p className="text-xs font-bold uppercase tracking-[0.17em] text-[#d5a6b5]">The Sideglance edit</p>
           <h1 className="mt-5 max-w-4xl break-words font-serif text-5xl leading-[0.98] sm:text-6xl">{roundup.title}</h1>
+          <div className="mt-5 max-w-3xl border-l-2 border-[#d5a6b5] bg-white/5 px-5 py-4" data-evidence-boundary="true">
+            <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#d5a6b5]">{evidencePresentation.label}</p>
+            <p className="mt-2 text-sm font-semibold leading-6 text-[#d6cbc5]">{evidencePresentation.summary}</p>
+          </div>
           {topPick || commerceProduct ? (
             <div className="mt-5 max-w-3xl border-y border-[#5d514d] py-4 sm:py-5" aria-label="First-screen purchase path" data-first-viewport-commerce="true">
-              <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#d5a6b5]">Best starting point</p>
+              <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#d5a6b5]">Starting point</p>
               <div className="mt-3 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
                 <div>
                   <p className="font-serif text-2xl">{topPick?.amazonTitle ?? topPick?.name ?? commerceProduct?.amazonTitle ?? commerceProduct?.name}</p>
@@ -742,7 +747,7 @@ export function StyleCollectionPage({ site, roundup, products }: { site: SiteCon
             </div>
           ) : null}
           <p className="mt-7 max-w-2xl text-lg leading-8 text-[#d6cbc5]">{roundup.intro ?? roundup.dek}</p>
-          <p className="mt-5 inline-flex items-center gap-2 text-xs font-semibold text-[#cdbeb7]"><CalendarDays size={14} /> Updated {roundup.updatedAt ?? "on the current review cycle"}</p>
+          <p className="mt-5 inline-flex items-center gap-2 text-xs font-semibold text-[#cdbeb7]"><CalendarDays size={14} /> Updated {roundup.updatedAt ?? "on the current update cycle"}</p>
         </div>
       </section>
       {products.length ? (

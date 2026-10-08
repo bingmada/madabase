@@ -202,6 +202,7 @@ async function inspectPage(publicUrl) {
       .filter((index) => index >= 0)
       .sort((a, b) => a - b)[0] ?? -1;
     const firstViewportContainerIndex = html.indexOf("data-first-viewport-commerce=");
+    const firstEvidenceBoundaryIndex = html.indexOf('data-evidence-boundary="true"');
     const commercePaused = html.includes('data-commerce-paused="true"');
     const informationalCalculator = site === "baby"
       && /^\/(?:en-gb\/|en-ca\/|de-de\/|nl-nl\/)?tools\/diaper-usage-calculator\/?$/.test(url.pathname);
@@ -214,8 +215,6 @@ async function inspectPage(publicUrl) {
       : "";
     const firstDecisionFriction = [
       "we have not",
-      "not hands-on",
-      "not a hands-on",
       "source basis",
       "evidence snapshot",
       "listing anchor",
@@ -255,6 +254,12 @@ async function inspectPage(publicUrl) {
       }
       if (!firstDecisionBlock.includes("purchase link")) {
         errors.push("first decision block is missing a concise purchase-link label near the CTA");
+      }
+      if (["review", "roundup"].includes(pageKind(url.pathname)) && !(
+        firstEvidenceBoundaryIndex > firstH1CloseIndex
+        && firstEvidenceBoundaryIndex < firstCommerceIndex
+      )) {
+        errors.push("product or roundup evidence boundary must appear between the H1 and first commerce path");
       }
       if (firstDecisionFriction.length) {
         errors.push(`first decision block contains conversion-friction copy: ${firstDecisionFriction.join(", ")}`);

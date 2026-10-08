@@ -17,7 +17,12 @@ const queryScope = valueFor("--query-scope") ?? "all-domain";
 const reportPath = path.resolve(workspaceDir, valueFor("--report") ?? "../../docs/affiliate-search-portfolio.md");
 const csvPath = path.resolve(workspaceDir, valueFor("--csv") ?? "../../docs/affiliate-search-portfolio.csv");
 const recoveryCsvPath = path.resolve(workspaceDir, valueFor("--recovery-csv") ?? "../../docs/affiliate-search-recovery.csv");
+const unmatchedCsvPath = path.resolve(
+  workspaceDir,
+  valueFor("--unmatched-csv") ?? path.join(path.dirname(reportPath), "unmatched-gsc-urls.csv"),
+);
 const reportDate = valueFor("--date") ?? new Date().toISOString().slice(0, 10);
+const dataThrough = valueFor("--data-through") ?? "not recorded";
 
 if (!gscPath) {
   console.error("Usage: node scripts/report-search-portfolio.mjs --gsc /path/to/Pages.csv [--queries /path/to/Queries.csv] [--query-scope all-domain|qualified]");
@@ -37,7 +42,8 @@ const siteHosts = {
   style: "style.madabase.com",
   costume: "costumes.madabase.com",
 };
-const productFactoryNames = new Set(["catalogProduct", "expandedProduct"]);
+const productFactoryNames = new Set(["catalogProduct", "expandedProduct", "exactProduct"]);
+const guideFactoryNames = new Set(["guide", "pilotGuide", "pilot3Guide"]);
 const entries = [];
 
 function parseCsv(text) {
@@ -126,6 +132,13 @@ function arrayLength(node) {
   return node && ts.isArrayLiteralExpression(node) ? node.elements.length : 0;
 }
 
+function booleanValue(node) {
+  if (!node) return undefined;
+  if (node.kind === ts.SyntaxKind.TrueKeyword) return true;
+  if (node.kind === ts.SyntaxKind.FalseKeyword) return false;
+  return undefined;
+}
+
 function stringArray(node, constants) {
   if (!node || !ts.isArrayLiteralExpression(node)) return [];
   return node.elements.map((item) => stringValue(item, constants)).filter(Boolean);
@@ -141,18 +154,18 @@ function entryKind(props) {
 
 function defaultProductTitle(site, name) {
   const suffix = {
-    pet: "Review: Fit, Cleaning & Buying Guide",
-    homeoffice: "Review: Fit, Specs & Buying Guide",
-    baby: "Review: Age, Fit & Buying Guide",
-    network: "Review: Specs, Setup & Buying Guide",
-    smarthome: "Review: Compatibility & Buying Guide",
-    style: "Review: Size, Materials & Fit",
+    pet: "Guide: Fit, Care & Ownership Costs",
+    homeoffice: "Guide: Specs, Workspace Fit & Setup",
+    baby: "Guide: Age, Fit & Use Checks",
+    network: "Guide: Specs, Compatibility & Setup",
+    smarthome: "Guide: Compatibility, Wiring & Setup",
+    style: "Guide: Size, Materials & Outfit Fit",
   }[site];
   const detailedTitle = `${name} ${suffix}`;
   if (detailedTitle.length <= 72) return detailedTitle;
 
-  const compactTitle = `${name} Review & Buying Guide`;
-  return compactTitle.length <= 72 ? compactTitle : `${name} Review`;
+  const compactTitle = `${name} Buying Guide`;
+  return compactTitle.length <= 72 ? compactTitle : `${name} Guide`;
 }
 
 function addEntry(sourceFile, constants, node, kind, factoryName) {
@@ -179,7 +192,10 @@ function addEntry(sourceFile, constants, node, kind, factoryName) {
     title: explicitSeoTitle ?? (kind === "product" && baseTitle ? defaultProductTitle(site, baseTitle) : baseTitle),
     description: stringValue(props.get("summary"), constants) ?? stringValue(props.get("dek"), constants),
     category: stringValue(props.get("category"), constants),
+    familySlug: stringValue(props.get("familySlug"), constants),
+    familyRole: stringValue(props.get("familyRole"), constants),
     status: stringValue(props.get("publicationStatus"), constants) ?? "published",
+    sitemapExcluded: booleanValue(props.get("sitemapExcluded")) ?? false,
     updatedAt: stringValue(props.get("updatedAt"), constants) ?? (factoryName ? constants.get("updatedAt") : undefined),
     evidenceMode: stringValue(props.get("evidenceMode"), constants),
     sourceCount: arrayLength(props.get("sources")),
@@ -205,7 +221,23 @@ function visit(sourceFile, constants, node) {
     addEntry(sourceFile, constants, node.arguments[0], "product", node.expression.text);
   }
 
-  if (ts.isObjectLiteralExpression(node)) {
+  if (
+    ts.isCallExpression(node) &&
+    ts.isIdentifier(node.expression) &&
+    guideFactoryNames.has(node.expression.text) &&
+    ts.isObjectLiteralExpression(node.arguments[0])
+  ) {
+    addEntry(sourceFile, constants, node.arguments[0], "guide", node.expression.text);
+  }
+
+  if (
+    ts.isObjectLiteralExpression(node)
+    && !(
+      ts.isCallExpression(node.parent)
+      && ts.isIdentifier(node.parent.expression)
+      && (guideFactoryNames.has(node.parent.expression.text) || productFactoryNames.has(node.parent.expression.text))
+    )
+  ) {
     const kind = entryKind(properties(node));
     if (kind) addEntry(sourceFile, constants, node, kind);
   }
@@ -216,6 +248,173 @@ for (const filename of fs.readdirSync(libDir).filter((name) => name.endsWith(".t
   const filePath = path.join(libDir, filename);
   const sourceFile = ts.createSourceFile(filePath, fs.readFileSync(filePath, "utf8"), ts.ScriptTarget.Latest, true, ts.ScriptKind.TS);
   visit(sourceFile, sourceConstants(sourceFile), sourceFile);
+}
+
+const quadrupleExpansionFile = path.join(libDir, "quadruple-expansion-content.ts");
+const quadrupleEditorialBriefFile = path.join(libDir, "quadruple-family-editorial.ts");
+const quadrupleCommunityEvidenceFile = path.join(workspaceDir, "config", "quadruple-community-evidence.json");
+const quadrupleComparisonFirstFile = path.join(workspaceDir, "config", "comparison-first-cohort-2026-09-04.json");
+const quadrupleDeepRankRecoveryFile = path.join(workspaceDir, "config", "deep-rank-recovery-2026-08-27.json");
+const quadrupleEditorialBriefJavascript = ts.transpileModule(fs.readFileSync(quadrupleEditorialBriefFile, "utf8"), {
+  compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 },
+  fileName: quadrupleEditorialBriefFile,
+}).outputText;
+const quadrupleExpansionContentJavascript = ts.transpileModule(fs.readFileSync(quadrupleExpansionFile, "utf8"), {
+  compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 },
+  fileName: quadrupleExpansionFile,
+}).outputText
+  .replace(/^import communityEvidenceData[^;]+;\n/m, "")
+  .replace(/^import comparisonFirstData[^;]+;\n/m, "")
+  .replace(/^import deepRankRecoveryData[^;]+;\n/m, "")
+  .replace(/^import \{ findFamilyEditorialBrief \}[^;]+;\n/m, "");
+const quadrupleExpansionJavascript = [
+  quadrupleEditorialBriefJavascript,
+  `const communityEvidenceData = ${fs.readFileSync(quadrupleCommunityEvidenceFile, "utf8")};`,
+  `const comparisonFirstData = ${fs.readFileSync(quadrupleComparisonFirstFile, "utf8")};`,
+  `const deepRankRecoveryData = ${fs.readFileSync(quadrupleDeepRankRecoveryFile, "utf8")};`,
+  quadrupleExpansionContentJavascript,
+].join("\n");
+const quadrupleExpansionModule = await import(
+  `data:text/javascript;base64,${Buffer.from(quadrupleExpansionJavascript).toString("base64")}`
+);
+
+for (const guide of quadrupleExpansionModule.quadrupleExpansionGuides) {
+  entries.push({
+    site: guide.site,
+    slug: guide.slug,
+    kind: "guide",
+    path: `/guides/${guide.slug}`,
+    url: `https://${siteHosts[guide.site]}/guides/${guide.slug}`,
+    title: guide.title,
+    description: guide.dek,
+    category: guide.category,
+    familySlug: guide.familySlug,
+    familyRole: guide.familyRole,
+    status: guide.publicationStatus ?? "published",
+    updatedAt: guide.updatedAt,
+    evidenceMode: undefined,
+    sourceCount: guide.sources?.length ?? 0,
+    sectionCount: guide.sections?.length ?? 0,
+    faqCount: guide.faqs?.length ?? 0,
+    internalLinkCount: new Set([
+      ...(guide.relatedProducts ?? []),
+      ...(guide.relatedRoundups ?? []),
+      ...(guide.relatedGuides ?? []),
+    ]).size,
+    relatedProducts: guide.relatedProducts ?? [],
+    productSlugs: [],
+    relatedRoundups: guide.relatedRoundups ?? [],
+    relatedGuides: guide.relatedGuides ?? [],
+    factoryName: "quadrupleExpansionGuides",
+    location: "quadruple-expansion-content.ts:generated",
+  });
+}
+
+const breadthDataFiles = {
+  familyPoolData: "breadth-draft-120-150-research-pool.json",
+  indexedZeroRecoveryData: "indexed-zero-recovery-cohort-2026-09-07.json",
+  opportunityData: "breadth-draft-120-plus-opportunity-evidence.json",
+  babyProductData: "breadth-draft-baby-product-research.json",
+  communityEvidenceData: "breadth-draft-120-plus-community-evidence.json",
+  homeofficeProductData: "breadth-draft-homeoffice-product-research.json",
+  networkProductData: "breadth-draft-network-product-research.json",
+  petProductData: "breadth-draft-pet-product-research.json",
+  smarthomeProductData: "breadth-draft-smarthome-product-research.json",
+};
+const breadthFile = path.join(libDir, "breadth-draft-120-plus-content.ts");
+const breadthContentJavascript = ts.transpileModule(fs.readFileSync(breadthFile, "utf8"), {
+  compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 },
+  fileName: breadthFile,
+}).outputText.replace(/^import [^;]+;\n/gm, "");
+const breadthJavascript = [
+  ...Object.entries(breadthDataFiles).map(([name, filename]) =>
+    `const ${name} = ${fs.readFileSync(path.join(workspaceDir, "config", filename), "utf8")};`),
+  breadthContentJavascript,
+].join("\n");
+const breadthModule = await import(
+  `data:text/javascript;base64,${Buffer.from(breadthJavascript).toString("base64")}`
+);
+for (const guide of breadthModule.breadthDraft120PlusGuides) {
+  entries.push({
+    site: guide.site,
+    slug: guide.slug,
+    kind: "guide",
+    path: `/guides/${guide.slug}`,
+    url: `https://${siteHosts[guide.site]}/guides/${guide.slug}`,
+    title: guide.title,
+    description: guide.dek,
+    category: guide.category,
+    familySlug: guide.familySlug,
+    familyRole: guide.familyRole,
+    status: guide.publicationStatus ?? "published",
+    updatedAt: guide.updatedAt,
+    evidenceMode: undefined,
+    sourceCount: guide.sources?.length ?? 0,
+    sectionCount: guide.sections?.length ?? 0,
+    faqCount: guide.faqs?.length ?? 0,
+    internalLinkCount: new Set([
+      ...(guide.relatedProducts ?? []),
+      ...(guide.relatedRoundups ?? []),
+      ...(guide.relatedGuides ?? []),
+    ]).size,
+    relatedProducts: guide.relatedProducts ?? [],
+    productSlugs: [],
+    relatedRoundups: guide.relatedRoundups ?? [],
+    relatedGuides: guide.relatedGuides ?? [],
+    factoryName: "breadthDraft120PlusGuides",
+    location: "breadth-draft-120-plus-content.ts:generated",
+  });
+}
+
+const routeLocations = new Map();
+for (const entry of entries) {
+  const routeKey = `${entry.site}:${entry.kind}:${entry.slug}`;
+  if (routeLocations.has(routeKey)) {
+    throw new Error(`Duplicate route ${routeKey}: ${routeLocations.get(routeKey)} and ${entry.location}`);
+  }
+  routeLocations.set(routeKey, entry.location);
+}
+
+// This bounded five-product pilot applies its sitemap/discovery hold through a
+// shared spread object, which is not visible as a direct AST property above.
+for (const entry of entries) {
+  if (entry.location.startsWith("product-expansion-pilot-20260821-content.ts:")) {
+    entry.sitemapExcluded = true;
+  }
+}
+
+const consolidationConfigs = [
+  ["search-recovery-consolidations-2026-08-23.json", (family) => `${family.familySlug}-buying-guide`],
+  ["search-recovery-consolidations-2026-09-08.json", (family) => family.targetSlug],
+  ["deferred-family-consolidations-2026-09-11.json", (family) => family.targetSlug],
+  ["search-recovery-consolidations-2026-10-06.json", (family) => family.targetSlug],
+];
+const consolidationTargetByFamily = new Map();
+for (const [filename, targetFor] of consolidationConfigs) {
+  const data = JSON.parse(fs.readFileSync(path.join(workspaceDir, "config", filename), "utf8"));
+  for (const family of data.families) {
+    consolidationTargetByFamily.set(`${family.site}:${family.familySlug}`, {
+      targetSlug: targetFor(family),
+      externalTarget: family.targetKind === "existing-guide",
+    });
+  }
+}
+const standaloneRedirectGuides = new Set([
+  "smarthome:matter-vs-thread-vs-zigbee",
+  "smarthome:matter-over-thread-hub-checklist",
+]);
+for (const entry of entries) {
+  if (entry.kind !== "guide") continue;
+  if (standaloneRedirectGuides.has(`${entry.site}:${entry.slug}`)) {
+    entry.status = "redirect";
+    continue;
+  }
+  const consolidation = entry.familySlug
+    ? consolidationTargetByFamily.get(`${entry.site}:${entry.familySlug}`)
+    : undefined;
+  if (consolidation && (consolidation.externalTarget || entry.slug !== consolidation.targetSlug)) {
+    entry.status = "redirect";
+  }
 }
 
 function searchOpportunityEntries() {
@@ -353,8 +552,9 @@ function daysSince(value) {
 function performanceBand(metrics, age) {
   if (!metrics) return age !== undefined && age <= 7 ? "new-observation" : "zero-impression";
   if (metrics.position <= 10 && metrics.clicks > 0) return "protect-and-convert";
-  if (metrics.position <= 10) return "page-one-zero-click";
-  if (metrics.position <= 20) return "page-two-push";
+  if (metrics.position <= 10 && metrics.impressions >= 20) return "page-one-zero-click";
+  if (metrics.position <= 20 && metrics.impressions >= 10) return "page-two-push";
+  if (metrics.position <= 20) return "low-sample-observe";
   if (metrics.position <= 40) return "mid-pack-rebuild";
   if (metrics.position <= 60) return "low-rank-retarget";
   return "deep-rank-rebuild-or-merge";
@@ -365,6 +565,7 @@ function primaryAction(band) {
     "protect-and-convert": "Preserve the query target; improve the first-screen decision, CTA, and supporting internal links.",
     "page-one-zero-click": "Rewrite title and description around the exact buying objection; keep the body intent stable and test CTR.",
     "page-two-push": "Add the missing query answer, comparison evidence, and 3-5 contextual internal links from stronger pages.",
+    "low-sample-observe": "Preserve the query target until the sample reaches 20-30 impressions; verify indexing, intent, and internal discovery without rewriting the page.",
     "mid-pack-rebuild": "Realign title, H1, intro, and section coverage to one primary query; add one supporting page only if intent is distinct.",
     "low-rank-retarget": "Revalidate the SERP and primary keyword; rewrite the page around the dominant intent or consolidate cannibalizing pages.",
     "deep-rank-rebuild-or-merge": "Treat the current keyword as unproven: rebuild for a narrower intent, merge into a stronger canonical, or retire from the sitemap.",
@@ -423,12 +624,13 @@ const portfolio = entries
     const rank = {
       "page-one-zero-click": 0,
       "page-two-push": 1,
-      "mid-pack-rebuild": 2,
-      "low-rank-retarget": 3,
-      "deep-rank-rebuild-or-merge": 4,
-      "zero-impression": 5,
-      "protect-and-convert": 6,
-      "new-observation": 7,
+      "low-sample-observe": 2,
+      "mid-pack-rebuild": 3,
+      "low-rank-retarget": 4,
+      "deep-rank-rebuild-or-merge": 5,
+      "zero-impression": 6,
+      "protect-and-convert": 7,
+      "new-observation": 8,
     };
     return rank[left.band] - rank[right.band] || (right.metrics?.impressions ?? 0) - (left.metrics?.impressions ?? 0) || left.url.localeCompare(right.url);
   });
@@ -438,12 +640,13 @@ function escapeCsv(value) {
   return /[",\n]/.test(text) ? `"${text.replaceAll('"', '""')}"` : text;
 }
 
-const csvHeaders = ["site", "kind", "url", "title", "updated_at", "age_days", "clicks", "impressions", "ctr_percent", "position", "band", "local_gaps", "search_opportunity", "primary_action", "source_location"];
+const csvHeaders = ["site", "kind", "url", "title", "sitemap_status", "updated_at", "age_days", "clicks", "impressions", "ctr_percent", "position", "band", "local_gaps", "search_opportunity", "primary_action", "source_location"];
 const csvRows = portfolio.map((entry) => [
   entry.site,
   entry.kind,
   entry.url,
   entry.title,
+  entry.sitemapExcluded ? "soft-launch-excluded" : "included",
   entry.updatedAt,
   entry.age,
   entry.metrics?.clicks,
@@ -456,12 +659,14 @@ const csvRows = portfolio.map((entry) => [
   entry.action,
   entry.location,
 ]);
+fs.mkdirSync(path.dirname(csvPath), { recursive: true });
 fs.writeFileSync(csvPath, `${[csvHeaders, ...csvRows].map((row) => row.map(escapeCsv).join(",")).join("\n")}\n`);
 
 const bandOrder = [
   "protect-and-convert",
   "page-one-zero-click",
   "page-two-push",
+  "low-sample-observe",
   "mid-pack-rebuild",
   "low-rank-retarget",
   "deep-rank-rebuild-or-merge",
@@ -469,17 +674,46 @@ const bandOrder = [
   "zero-impression",
 ];
 const countsFor = (items, key) => Object.fromEntries([...new Set(items.map((item) => item[key]))].sort().map((value) => [value, items.filter((item) => item[key] === value).length]));
-const siteCounts = countsFor(portfolio, "site");
 const bandCounts = countsFor(portfolio, "band");
 const affiliateGscRecords = qualifiedGscRecords;
 const unmatchedGsc = affiliateGscRecords.filter((record) => !portfolio.some((entry) => normalizedUrl(entry.url) === record.url));
+const consolidatedRedirectUrls = new Set(
+  entries.filter((entry) => entry.status === "redirect").map((entry) => normalizedUrl(entry.url)),
+);
+function unmatchedScope(value) {
+  const { pathname } = new URL(value);
+  if (consolidatedRedirectUrls.has(normalizedUrl(value))) return "consolidated-redirect-source";
+  if (pathname === "/") return "site-home";
+  const segments = pathname.split("/").filter(Boolean);
+  if (["en-gb", "en-ca", "de-de", "nl-nl"].includes(segments[0])) return "localized-edition";
+  if (segments[0] === "categories") return "category-archive";
+  if (["about", "contact", "editorial-policy", "affiliate-disclosure", "methodology", "privacy", "terms"].includes(segments[0])) return "policy-or-about";
+  if (["halloween", "catalog"].includes(segments[0])) return "costume-structural";
+  return "other-non-ledger-route";
+}
+const unmatchedScopeCounts = unmatchedGsc.reduce((counts, record) => {
+  const scope = unmatchedScope(record.url);
+  counts[scope] = (counts[scope] ?? 0) + 1;
+  return counts;
+}, {});
+const unmatchedHeaders = ["scope", "url", "clicks", "impressions", "ctr_percent", "position"];
+const unmatchedRows = unmatchedGsc
+  .map((record) => [unmatchedScope(record.url), record.url, record.clicks, record.impressions, record.ctr, record.position])
+  .sort((left, right) => Number(right[3]) - Number(left[3]));
+fs.mkdirSync(path.dirname(unmatchedCsvPath), { recursive: true });
+fs.writeFileSync(unmatchedCsvPath, `${[unmatchedHeaders, ...unmatchedRows].map((row) => row.map(escapeCsv).join(",")).join("\n")}\n`);
 const noMetricEntries = portfolio.filter((entry) => !entry.metrics);
 const exposedEntries = portfolio.filter((entry) => entry.metrics);
+const sitemapExcludedEntries = portfolio.filter((entry) => entry.sitemapExcluded);
+const standaloneEditorialRoutes = fs.existsSync(
+  path.join(workspaceDir, "app", "best", "halloween-animatronics-small-yards-and-porches", "page.tsx"),
+) ? 1 : 0;
+const sitemapBaseEditorialPages = portfolio.length - sitemapExcludedEntries.length + standaloneEditorialRoutes;
 const totalAffiliateMetrics = exposedEntries.reduce((result, entry) => ({
   clicks: result.clicks + entry.metrics.clicks,
   impressions: result.impressions + entry.metrics.impressions,
 }), { clicks: 0, impressions: 0 });
-const topQueue = portfolio.filter((entry) => !["protect-and-convert", "new-observation"].includes(entry.band)).slice(0, 40);
+const topQueue = portfolio.filter((entry) => !["protect-and-convert", "low-sample-observe", "new-observation"].includes(entry.band)).slice(0, 40);
 const topQueries = queryRecords.slice(0, 30);
 const queryTotals = queryRecords.reduce((result, record) => ({
   clicks: result.clicks + Number(record.Clicks || 0),
@@ -610,12 +844,15 @@ const recoveryDecisionCounts = recoveryRows.reduce((counts, row) => {
   counts[decision] = (counts[decision] ?? 0) + 1;
   return counts;
 }, {});
+fs.mkdirSync(path.dirname(recoveryCsvPath), { recursive: true });
 fs.writeFileSync(recoveryCsvPath, `${[recoveryHeaders, ...recoveryRows].map((row) => row.map(escapeCsv).join(",")).join("\n")}\n`);
 
 const lines = [
   "# Affiliate Search Portfolio",
   "",
   `Generated: ${reportDate}`,
+  `GSC data through: ${dataThrough}`,
+  `GSC Pages source: ${path.relative(path.dirname(reportPath), path.resolve(gscPath))}`,
   "",
   "This report joins the complete published affiliate content inventory to a Google Search Console Pages export. A missing GSC row means no recorded impression in the export window, not automatic proof of an indexing failure.",
   "",
@@ -657,7 +894,10 @@ const lines = [
   "",
   "## Portfolio baseline",
   "",
-  `- Published content pages: ${portfolio.length}`,
+  `- Published content-registry pages: ${portfolio.length}`,
+  `- Soft-launch registry pages intentionally excluded from sitemap/discovery: ${sitemapExcludedEntries.length}`,
+  `- Standalone editorial routes outside the registry but present in sitemap: ${standaloneEditorialRoutes}`,
+  `- Expected base editorial URLs in the seven sitemaps: ${sitemapBaseEditorialPages}`,
   `- Pages with impressions in the GSC export: ${exposedEntries.length}`,
   `- Pages without an impression row: ${noMetricEntries.length}`,
   `- Affiliate clicks represented: ${totalAffiliateMetrics.clicks}`,
@@ -666,11 +906,23 @@ const lines = [
   `- Page-two search-answer and contextual-link modules implemented: ${portfolio.filter((entry) => entry.hasSearchOpportunity).length}`,
   `- Recovery rows classified for no-impression inventory: ${noMetricEntries.length}`,
   "",
+  "## Non-ledger GSC rows",
+  "",
+  "These rows belong to qualified affiliate hosts but are not base-canonical editorial pages. They remain visible as a separate structural and localized cohort instead of being silently discarded or misclassified as missing content.",
+  "",
+  "| Scope | GSC rows |",
+  "| --- | ---: |",
+  ...Object.entries(unmatchedScopeCounts).sort().map(([scope, count]) => `| ${scope} | ${count} |`),
+  "",
   "## Site inventory",
   "",
-  "| Site | Published pages | With impressions | Without impressions |",
-  "| --- | ---: | ---: | ---: |",
-  ...Object.keys(siteHosts).map((site) => `| ${site} | ${siteCounts[site] ?? 0} | ${portfolio.filter((entry) => entry.site === site && entry.metrics).length} | ${portfolio.filter((entry) => entry.site === site && !entry.metrics).length} |`),
+  "| Site | Registry pages | Sitemap base editorial | With impressions | Without impressions |",
+  "| --- | ---: | ---: | ---: | ---: |",
+  ...Object.keys(siteHosts).map((site) => {
+    const registryPages = portfolio.filter((entry) => entry.site === site);
+    const standalone = site === "costume" ? standaloneEditorialRoutes : 0;
+    return `| ${site} | ${registryPages.length} | ${registryPages.filter((entry) => !entry.sitemapExcluded).length + standalone} | ${registryPages.filter((entry) => entry.metrics).length} | ${registryPages.filter((entry) => !entry.metrics).length} |`;
+  }),
   "",
   "## Performance cohorts",
   "",
@@ -729,9 +981,11 @@ const lines = [
   "",
   `Full queue: ${path.relative(path.dirname(reportPath), csvPath)}`,
   `Recovery queue: ${path.relative(path.dirname(reportPath), recoveryCsvPath)}`,
+  `Non-ledger GSC rows: ${path.relative(path.dirname(reportPath), unmatchedCsvPath)}`,
   "",
 ];
 
+fs.mkdirSync(path.dirname(reportPath), { recursive: true });
 fs.writeFileSync(reportPath, lines.join("\n"));
 console.log(`Search portfolio report written to ${reportPath}`);
 console.log(`Full page queue written to ${csvPath}`);

@@ -6,9 +6,9 @@ export const aggressivePortfolioRoundups: Roundup[] = [
   {
     site: "network",
     slug: "best-deco-wifi-7-mesh-for-wired-backhaul",
-    seoTitle: "Best Deco Wi-Fi 7 Mesh for Wired Backhaul: BE25, BE63 or BE67?",
+    seoTitle: "Deco Wi-Fi 7 Mesh for Wired Backhaul: BE25, BE63 or BE67?",
     updatedAt,
-    title: "Best Deco Wi-Fi 7 Mesh for Wired Backhaul",
+    title: "Deco Wi-Fi 7 Mesh for Wired Backhaul",
     dek: "Choose Deco BE25, BE63, or BE67 by Ethernet port count, 6GHz needs, pack size, switch speed, and the WAN-to-satellite path the home can actually use.",
     category: "wifi",
     intent: "Choose a current Deco Wi-Fi 7 system for Ethernet backhaul without overpaying for radio capacity or ports that the wired network cannot use.",
@@ -34,9 +34,9 @@ export const aggressivePortfolioRoundups: Roundup[] = [
   {
     site: "smarthome",
     slug: "best-tapo-matter-smart-plug-for-energy-or-compact-control",
-    seoTitle: "Best Tapo Matter Smart Plug: P110M Energy vs P125M Size",
+    seoTitle: "Tapo Matter Smart Plug: P110M Energy vs P125M Size",
     updatedAt,
-    title: "Best Tapo Matter Smart Plug: Energy Data or Compact Control?",
+    title: "Tapo Matter Smart Plug: Energy Data or Compact Control?",
     dek: "Choose P110M or P125M by energy monitoring, Matter exposure, pack count, outlet fit, controller path, and the ordinary indoor loads each plug should control.",
     category: "automation",
     intent: "Pick the correct Tapo Matter plug without confusing energy monitoring, ecosystem control, or multi-pack value.",

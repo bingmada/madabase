@@ -19,7 +19,7 @@ export const productExpansionPilot20260821Products: Product[] = [
     site: "network",
     slug: "trendnet-teg-s750-10gbe-switch",
     asin: "B09M7KSZB2",
-    seoTitle: "TRENDnet TEG-S750 Review: 5-Port 10GbE Without a Fan",
+    seoTitle: "TRENDnet TEG-S750 Guide: 5-Port 10GbE Without a Fan",
     evidenceMode: "official-spec",
     researchNote:
       "Specifications and version risks are based on TRENDnet's current Version V2 product, support page, and datasheet. Confirm the Amazon ASIN, hardware version, seller, and return terms before checkout.",
@@ -121,7 +121,7 @@ export const productExpansionPilot20260821Products: Product[] = [
     site: "smarthome",
     slug: "tapo-s505d-matter-smart-dimmer",
     asin: "B0C2B8SP3W",
-    seoTitle: "Tapo S505D Review: Matter Dimmer, Neutral Wire & Bulb Fit",
+    seoTitle: "Tapo S505D Guide: Matter Dimmer, Neutral Wire & Bulb Fit",
     evidenceMode: "official-spec",
     researchNote:
       "This compatibility guide uses Tapo's current US specifications, datasheet, and user guide. The exact pack quantity, wiring, bulb load, and selected seller still need a checkout check.",
@@ -221,7 +221,7 @@ export const productExpansionPilot20260821Products: Product[] = [
     site: "homeoffice",
     slug: "satechi-dual-vertical-laptop-stand",
     asin: "B09WY2RLQG",
-    seoTitle: "Satechi Dual Vertical Laptop Stand Review: Will Both Slots Fit?",
+    seoTitle: "Satechi Dual Vertical Laptop Stand Guide: Will Both Slots Fit?",
     evidenceMode: "official-spec",
     researchNote:
       "This fit guide uses Satechi's current product page and compatibility guidance. Measure both closed devices with their cases because the two slots have different widths.",
@@ -321,7 +321,7 @@ export const productExpansionPilot20260821Products: Product[] = [
     site: "baby",
     slug: "medela-harmony-manual-breast-pump",
     asin: "B0C2YYKKZF",
-    seoTitle: "Medela Harmony Manual Pump Review: Backup, Shield Fit & Cleaning",
+    seoTitle: "Medela Harmony Manual Pump Guide: Backup, Shield Fit & Cleaning",
     evidenceMode: "official-spec",
     researchNote:
       "This use-and-fit guide is based on Medela's current US product page and instructions. Pump comfort, output, and flange fit are individual; follow current healthcare and lactation guidance when needed.",
@@ -421,7 +421,7 @@ export const productExpansionPilot20260821Products: Product[] = [
     site: "pet",
     slug: "surefeed-microchip-pet-feeder",
     asin: "B00O0UIPTY",
-    seoTitle: "SureFeed Microchip Feeder Review: Chip Access, Training & Cleaning",
+    seoTitle: "SureFeed Microchip Feeder Guide: Chip Access, Training & Cleaning",
     evidenceMode: "official-spec",
     researchNote:
       "This guide uses Sure Petcare's current US product, support, and cleaning material. Verify the exact non-Connect feeder, chip compatibility, included bowls, and seller before checkout.",

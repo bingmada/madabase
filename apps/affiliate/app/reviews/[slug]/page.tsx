@@ -155,7 +155,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
     ["Confirm before checkout", product.evidence[0] ?? "Confirm model, seller, bundle, and return path before checkout."],
   ];
   const evidenceSnapshot = [
-    ["Updated", effectiveUpdatedAt ?? "Review schedule pending"],
+    ["Updated", effectiveUpdatedAt ?? "Update schedule pending"],
     [
       "Decision scope",
       externalTests.length
@@ -225,6 +225,10 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                   ) : null}
                 </div>
                 <h1 className="mt-3 text-4xl font-black leading-tight">{pageTitle}</h1>
+                <div className="mt-4 rounded-md border border-[var(--brand)] bg-[var(--brand-soft)] px-4 py-3" data-evidence-boundary="true">
+                  <p className="text-xs font-bold uppercase text-[var(--brand-strong)]">{evidencePresentation.label}</p>
+                  <p className="mt-1 text-sm font-semibold leading-6 text-[var(--text)]">{evidencePresentation.summary}</p>
+                </div>
                 {commerceProduct && commerceOffer ? (
                   <div className="mt-4 rounded-md border border-[var(--border)] bg-white p-4" aria-label="First-screen retailer option" data-first-viewport-commerce="true">
                     <p className="text-xs font-bold uppercase text-[var(--muted)]">{commerceIsAlternative ? "Different product · verified alternative" : "Current buying option"}</p>
@@ -658,7 +662,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                 ))}
                 {product.offers.length === 0 && commerceProduct && commerceOffer ? (
                   <div className="rounded-md border border-[var(--border)] p-3">
-                    <p className="text-xs font-bold uppercase text-[var(--muted)]">Verified alternative—not the reviewed model</p>
+                    <p className="text-xs font-bold uppercase text-[var(--muted)]">Verified alternative—not the product discussed above</p>
                     <p className="mt-1 font-bold">{commerceProduct.amazonTitle ?? commerceProduct.name}</p>
                     <p className="mt-1 text-sm text-[var(--muted)]">{commerceOffer.priceNote}</p>
                     <div className="mt-3">

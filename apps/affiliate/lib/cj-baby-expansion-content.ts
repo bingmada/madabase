@@ -7,7 +7,7 @@ export const cjBabyExpansionProducts: Product[] = [
   {
     site: "baby",
     slug: "bc-babycare-clarvion-bottle-washer",
-    seoTitle: "Bc Babycare Clarvion Bottle Washer Review: Bundle & Cycle Guide",
+    seoTitle: "Bc Babycare Clarvion Bottle Washer: Bundle & Cycle Guide",
     publicationStatus: "published",
     releaseCandidate,
     updatedAt,
@@ -144,7 +144,7 @@ export const cjBabyExpansionProducts: Product[] = [
   {
     site: "baby",
     slug: "bc-babycare-baby-food-maker",
-    seoTitle: "Bc Babycare Baby Food Maker Review: Small Batches & Cleaning",
+    seoTitle: "Bc Babycare Baby Food Maker Guide: Small Batches & Cleaning",
     publicationStatus: "published",
     releaseCandidate,
     updatedAt,
@@ -276,7 +276,7 @@ export const cjBabyExpansionProducts: Product[] = [
   {
     site: "baby",
     slug: "bc-babycare-3-in-1-potty-chair",
-    seoTitle: "Bc Babycare 3-in-1 Potty Chair Review: Fit, Readiness & Cleaning",
+    seoTitle: "Bc Babycare 3-in-1 Potty Chair Guide: Fit, Readiness & Cleaning",
     publicationStatus: "published",
     releaseCandidate,
     updatedAt,

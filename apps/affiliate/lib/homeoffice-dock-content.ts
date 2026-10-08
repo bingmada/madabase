@@ -10,7 +10,7 @@ export const homeofficeDockProducts: Product[] = [
     slug: "plugable-usbc-6950pdz-displaylink-dock",
     asin: "B0BKLT853Z",
     amazonTitle: "Plugable USB-C Dual HDMI Docking Station, USBC-6950PDZ",
-    seoTitle: "Plugable USBC-6950PDZ Review: Dual Monitors on Base M Macs",
+    seoTitle: "Plugable USBC-6950PDZ Guide: Dual Monitors on Base M Macs",
     updatedAt,
     evidenceMode: "official-spec",
     researchNote:
@@ -121,7 +121,7 @@ export const homeofficeDockProducts: Product[] = [
     slug: "plugable-tbt4-ud5-thunderbolt-dock",
     asin: "B0CNTTVVN6",
     amazonTitle: "Plugable Thunderbolt 4 Dock, TBT4-UD5",
-    seoTitle: "Plugable TBT4-UD5 Review: Native Dual 4K Mac Compatibility",
+    seoTitle: "Plugable TBT4-UD5 Guide: Native Dual 4K Mac Compatibility",
     updatedAt,
     evidenceMode: "official-spec",
     researchNote:
@@ -226,7 +226,7 @@ export const homeofficeDockProducts: Product[] = [
     slug: "caldigit-ts4-thunderbolt-dock",
     asin: "B09GK8LBWS",
     amazonTitle: "CalDigit TS4 Thunderbolt 4 Dock",
-    seoTitle: "CalDigit TS4 Review: Mac Dual-Monitor Compatibility & 98W",
+    seoTitle: "CalDigit TS4 Guide: Mac Dual-Monitor Compatibility & 98W",
     updatedAt,
     evidenceMode: "official-spec",
     researchNote:
@@ -332,9 +332,9 @@ export const homeofficeDockRoundups: Roundup[] = [
   {
     site: "homeoffice",
     slug: "best-dual-monitor-docks-mac-windows",
-    seoTitle: "Best Dual-Monitor Docks for Mac and Windows by Chip Type",
+    seoTitle: "Dual-Monitor Docks for Mac and Windows by Chip Type",
     updatedAt,
-    title: "Best Dual-Monitor Docks for Mac and Windows",
+    title: "Dual-Monitor Docks for Mac and Windows",
     dek: "Choose a dual-monitor dock by exact Mac chip, native Thunderbolt display support, DisplayLink permission, protected-video needs, charging, and Ethernet speed.",
     category: "desks",
     intent: "buy the right dual-monitor dock for an exact Mac or Windows laptop without assuming two ports mean two screens",

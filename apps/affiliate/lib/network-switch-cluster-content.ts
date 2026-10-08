@@ -10,7 +10,7 @@ export const networkSwitchClusterProducts: Product[] = [
     slug: "tp-link-tl-sg105-m2-2-5g-switch",
     asin: "B08ZHGT2ZP",
     amazonTitle: "TP-Link TL-SG105-M2 5-Port 2.5G Unmanaged Switch",
-    seoTitle: "TP-Link TL-SG105-M2 Review: 5-Port 2.5G Switch & Version Risks",
+    seoTitle: "TP-Link TL-SG105-M2 Guide: 5-Port 2.5G Switch & Version Risks",
     updatedAt,
     evidenceMode: "official-spec",
     researchNote:
@@ -121,7 +121,7 @@ export const networkSwitchClusterProducts: Product[] = [
     slug: "netgear-ms305-2-5g-switch",
     asin: "B0BGYS7731",
     amazonTitle: "NETGEAR MS305 5-Port 2.5G Unmanaged Switch",
-    seoTitle: "NETGEAR MS305 Review: Compact 5-Port 2.5G Fanless Switch",
+    seoTitle: "NETGEAR MS305 Guide: Compact 5-Port 2.5G Fanless Switch",
     updatedAt,
     evidenceMode: "official-spec",
     researchNote:
@@ -233,9 +233,9 @@ export const networkSwitchClusterRoundups: Roundup[] = [
   {
     site: "network",
     slug: "best-fanless-2-5gbe-switches-home-nas-mesh",
-    seoTitle: "Best Fanless 2.5GbE Switches for Home NAS & Mesh: 4 Picks",
+    seoTitle: "Fanless 2.5GbE Switches for Home NAS & Mesh: 4 Picks",
     updatedAt,
-    title: "Best Fanless 2.5GbE Switches for a Home NAS and Wi-Fi 7 Mesh",
+    title: "Fanless 2.5GbE Switches for a Home NAS and Wi-Fi 7 Mesh",
     dek: "Compare TP-Link, NETGEAR, and TRENDnet 2.5GbE switches by five-versus-eight-port fit, enclosure size, management limits, power, mounting, version risk, and usable network path.",
     category: "wired",
     intent: "Choose a quiet unmanaged 2.5GbE switch for a NAS, desktop, Wi-Fi 7 access point, or wired mesh backhaul without wasting ports or buying the wrong switch class.",

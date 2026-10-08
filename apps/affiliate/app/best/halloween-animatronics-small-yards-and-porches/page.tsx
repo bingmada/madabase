@@ -13,7 +13,7 @@ import { getCurrentSite } from "@/lib/sites";
 export const dynamic = "force-dynamic";
 
 const pagePath = "/best/halloween-animatronics-small-yards-and-porches";
-const pageTitle = "Best Halloween Animatronics for Small Yards and Porches (2026)";
+const pageTitle = "Halloween Animatronics for Small Yards and Porches (2026)";
 const pageDescription = "Compare three Halloween animatronic formats for a small yard or porch by placement, power, weather protection, guest clearance, and storage.";
 
 const animatronicSlugs = [
@@ -156,7 +156,7 @@ export default async function SmallSpaceHalloweenAnimatronicsPage() {
           <Link className="text-xs font-black uppercase tracking-[0.14em] text-[#ffc56d] hover:underline" href="/categories/props-animatronics">
             Halloween props and animatronics
           </Link>
-          <h1 className="mt-4 max-w-4xl text-4xl font-black leading-tight text-white sm:text-6xl">Best Halloween animatronics for small yards and porches</h1>
+          <h1 className="mt-4 max-w-4xl text-4xl font-black leading-tight text-white sm:text-6xl">Halloween animatronics for small yards and porches</h1>
           {heroProduct?.activeLink ? (
             <div className="mt-5 flex flex-wrap gap-3" aria-label="First-screen CJ retailer option" data-first-viewport-commerce="true">
               <TrackedCommerceLink

@@ -10,7 +10,7 @@ export const smartHomeWaterShutoffProducts: Product[] = [
     slug: "aqara-valve-controller-t1",
     asin: "B0DB8KS8Q3",
     amazonTitle: "Aqara Smart Valve Controller T1, Zigbee 3.0, Hub Required",
-    seoTitle: "Aqara Valve Controller T1 Review: Fit, Hub and Leak Automation",
+    seoTitle: "Aqara Valve Controller T1 Guide: Fit, Hub and Leak Automation",
     updatedAt,
     evidenceMode: "official-spec",
     researchNote:
@@ -204,7 +204,7 @@ export const smartHomeWaterShutoffProducts: Product[] = [
     slug: "moen-flo-900-001-smart-water-shutoff",
     asin: "B00C03D01Q",
     amazonTitle: "Moen Flo 3/4-inch Smart Water Shut Off Valve, Model 900-001",
-    seoTitle: "Moen Flo 900-001 Review Guide: 3/4-Inch Fit and Install",
+    seoTitle: "Moen Flo 900-001 Guide: 3/4-Inch Fit and Install",
     updatedAt,
     evidenceMode: "official-spec",
     researchNote:
@@ -319,9 +319,9 @@ export const smartHomeWaterShutoffRoundups: Roundup[] = [
   {
     site: "smarthome",
     slug: "best-smart-water-shutoff-valves-retrofit-inline",
-    seoTitle: "Best Smart Water Shutoff Valves: Retrofit vs Inline Systems",
+    seoTitle: "Smart Water Shutoff Valves: Retrofit vs Inline Systems",
     updatedAt,
-    title: "Best Smart Water Shutoff Valves: Retrofit and Inline Picks",
+    title: "Smart Water Shutoff Valves: Retrofit and Inline Picks",
     dek: "Compare Aqara T1, YoLink X3 Bulldog, and Moen Flo by valve fit, radio path, local automation, pipe work, power, flow monitoring, and manual fallback.",
     category: "automation",
     intent: "choose an automatic water shutoff that fits the existing valve, leak-sensor system, plumbing, power, and response plan",

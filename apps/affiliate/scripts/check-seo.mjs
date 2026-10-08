@@ -10,6 +10,8 @@ const publicDir = path.join(workspaceDir, "public");
 const errors = [];
 const warnings = [];
 const entries = [];
+const portfolioPolicyPath = path.join(workspaceDir, "config", "portfolio-recovery-2026-10-08.json");
+const portfolioPolicy = JSON.parse(fs.readFileSync(portfolioPolicyPath, "utf8"));
 const productFactoryNames = new Set(["catalogProduct", "expandedProduct", "exactProduct"]);
 const guideFactoryNames = new Set(["guide", "pilotGuide", "pilot3Guide"]);
 const allowedOfferHosts = new Set([
@@ -78,6 +80,13 @@ function stringArray(node) {
   return node.elements.map(stringValue).filter(Boolean);
 }
 
+function booleanValue(node) {
+  if (!node) return undefined;
+  if (node.kind === ts.SyntaxKind.TrueKeyword) return true;
+  if (node.kind === ts.SyntaxKind.FalseKeyword) return false;
+  return undefined;
+}
+
 function offerUrls(node) {
   if (!node || !ts.isArrayLiteralExpression(node)) return [];
   return node.elements.flatMap((element) => {
@@ -133,8 +142,11 @@ function addEntry(sourceFile, node, kind, factoryName) {
     kind,
     title: stringValue(props.get("seoTitle")) ?? stringValue(props.get("title")) ?? stringValue(props.get("name")),
     status: stringValue(props.get("publicationStatus")) ?? "published",
+    sitemapExcluded: booleanValue(props.get("sitemapExcluded")) ?? false,
     hasUpdateDate: props.has("updatedAt") || Boolean(factoryName),
     image: stringValue(props.get("image")),
+    familySlug: stringValue(props.get("familySlug")),
+    familyRole: stringValue(props.get("familyRole")),
     productSlugs: stringArray(props.get("productSlugs")),
     relatedProducts: stringArray(props.get("relatedProducts")),
     relatedRoundups: stringArray(props.get("relatedRoundups")),
@@ -347,6 +359,8 @@ for (const guide of quadrupleExpansionModule.quadrupleExpansionGuides) {
     status: guide.publicationStatus ?? "published",
     hasUpdateDate: Boolean(guide.updatedAt),
     image: guide.image,
+    familySlug: guide.familySlug,
+    familyRole: guide.familyRole,
     productSlugs: [],
     relatedProducts: guide.relatedProducts ?? [],
     relatedRoundups: guide.relatedRoundups ?? [],
@@ -358,6 +372,94 @@ for (const guide of quadrupleExpansionModule.quadrupleExpansionGuides) {
     externalTests: [],
     location: "quadruple-expansion-content.ts:generated",
   });
+}
+
+const breadthDataFiles = {
+  familyPoolData: "breadth-draft-120-150-research-pool.json",
+  indexedZeroRecoveryData: "indexed-zero-recovery-cohort-2026-09-07.json",
+  opportunityData: "breadth-draft-120-plus-opportunity-evidence.json",
+  babyProductData: "breadth-draft-baby-product-research.json",
+  communityEvidenceData: "breadth-draft-120-plus-community-evidence.json",
+  homeofficeProductData: "breadth-draft-homeoffice-product-research.json",
+  networkProductData: "breadth-draft-network-product-research.json",
+  petProductData: "breadth-draft-pet-product-research.json",
+  smarthomeProductData: "breadth-draft-smarthome-product-research.json",
+};
+const breadthFile = path.join(libDir, "breadth-draft-120-plus-content.ts");
+const breadthContentJavascript = ts.transpileModule(fs.readFileSync(breadthFile, "utf8"), {
+  compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 },
+  fileName: breadthFile,
+}).outputText.replace(/^import [^;]+;\n/gm, "");
+const breadthJavascript = [
+  ...Object.entries(breadthDataFiles).map(([name, filename]) =>
+    `const ${name} = ${fs.readFileSync(path.join(workspaceDir, "config", filename), "utf8")};`),
+  breadthContentJavascript,
+].join("\n");
+const breadthModule = await import(
+  `data:text/javascript;base64,${Buffer.from(breadthJavascript).toString("base64")}`
+);
+for (const guide of breadthModule.breadthDraft120PlusGuides) {
+  entries.push({
+    site: guide.site,
+    slug: guide.slug,
+    kind: "guide",
+    title: guide.title,
+    status: guide.publicationStatus ?? "published",
+    hasUpdateDate: Boolean(guide.updatedAt),
+    image: guide.image,
+    familySlug: guide.familySlug,
+    familyRole: guide.familyRole,
+    productSlugs: [],
+    relatedProducts: guide.relatedProducts ?? [],
+    relatedRoundups: guide.relatedRoundups ?? [],
+    relatedGuides: guide.relatedGuides ?? [],
+    offerUrls: [],
+    offerMerchants: [],
+    evidenceMode: undefined,
+    researchNote: undefined,
+    externalTests: [],
+    location: "breadth-draft-120-plus-content.ts:generated",
+  });
+}
+
+const consolidationConfigs = [
+  ["search-recovery-consolidations-2026-08-23.json", (family) => `${family.familySlug}-buying-guide`],
+  ["search-recovery-consolidations-2026-09-08.json", (family) => family.targetSlug],
+  ["deferred-family-consolidations-2026-09-11.json", (family) => family.targetSlug],
+  ["search-recovery-consolidations-2026-10-06.json", (family) => family.targetSlug],
+];
+const consolidationTargetByFamily = new Map();
+for (const [filename, targetFor] of consolidationConfigs) {
+  const data = JSON.parse(fs.readFileSync(path.join(workspaceDir, "config", filename), "utf8"));
+  for (const family of data.families) {
+    consolidationTargetByFamily.set(`${family.site}:${family.familySlug}`, {
+      targetSlug: targetFor(family),
+      externalTarget: family.targetKind === "existing-guide",
+    });
+  }
+}
+const standaloneRedirectGuides = new Set([
+  "smarthome:matter-vs-thread-vs-zigbee",
+  "smarthome:matter-over-thread-hub-checklist",
+]);
+for (const entry of entries) {
+  if (entry.kind !== "guide") continue;
+  if (standaloneRedirectGuides.has(`${entry.site}:${entry.slug}`)) {
+    entry.status = "redirect";
+    continue;
+  }
+  const consolidation = entry.familySlug
+    ? consolidationTargetByFamily.get(`${entry.site}:${entry.familySlug}`)
+    : undefined;
+  if (consolidation && (consolidation.externalTarget || entry.slug !== consolidation.targetSlug)) {
+    entry.status = "redirect";
+  }
+}
+
+for (const entry of entries) {
+  if (entry.location.startsWith("product-expansion-pilot-20260821-content.ts:")) {
+    entry.sitemapExcluded = true;
+  }
 }
 
 const routeKeys = new Map();
@@ -416,8 +518,12 @@ for (const entry of entries) {
 
   if (entry.kind === "product") {
     const allowedEvidenceModes = new Set(["hands-on", "research-synthesis", "official-spec"]);
+    const effectiveEvidenceMode = entry.evidenceMode ?? "official-spec";
     if (entry.evidenceMode && !allowedEvidenceModes.has(entry.evidenceMode)) {
       errors.push(`Invalid evidence mode ${entry.evidenceMode} for ${routeKey}`);
+    }
+    if (effectiveEvidenceMode !== "hands-on" && /\breview\b/i.test(entry.title ?? "")) {
+      errors.push(`Non-hands-on product title must use guide or research language instead of Review: ${routeKey}`);
     }
     if (entry.evidenceMode === "research-synthesis" && (!entry.researchNote || !entry.externalTests.length)) {
       errors.push(`Research synthesis ${routeKey} must include a disclosure and attributed external tests`);
@@ -442,6 +548,91 @@ for (const entry of entries) {
       }
     });
   }
+  if (entry.kind === "roundup" && /^best\b/i.test(entry.title ?? "")) {
+    errors.push(`Research-only comparison title must not make an unsupported Best claim: ${routeKey}`);
+  }
+}
+
+const publishedEntries = entries.filter((entry) => entry.status === "published");
+const publishedRouteKeys = new Set(publishedEntries.map((entry) => `${entry.site}:${entry.kind}:${entry.slug}`));
+if (!portfolioPolicy.ownerConstraints?.handsOnTestingAvailable) {
+  for (const entry of publishedEntries.filter((item) => item.kind === "product" && item.evidenceMode === "hands-on")) {
+    errors.push(`Portfolio policy prohibits hands-on claims while owner testing is unavailable: ${entry.site}:${entry.kind}:${entry.slug}`);
+  }
+}
+
+if (portfolioPolicy.publicationFreeze?.status === "active") {
+  const baseline = portfolioPolicy.canonicalInventoryBaseline;
+  if (publishedEntries.length > baseline.publishedBasePages) {
+    errors.push(`Publication freeze permits at most ${baseline.publishedBasePages} base pages; found ${publishedEntries.length}`);
+  }
+  for (const [site, maximum] of Object.entries(baseline.sites ?? {})) {
+    const actual = publishedEntries.filter((entry) => entry.site === site).length;
+    if (actual > maximum) errors.push(`Publication freeze permits at most ${maximum} ${site} base pages; found ${actual}`);
+  }
+  for (const [kindLabel, maximum] of Object.entries(baseline.composition ?? {})) {
+    const kind = kindLabel.replace(/s$/, "");
+    const actual = publishedEntries.filter((entry) => entry.kind === kind).length;
+    if (actual > maximum) errors.push(`Publication freeze permits at most ${maximum} published ${kindLabel}; found ${actual}`);
+  }
+  const sitemapExcludedEntries = publishedEntries.filter((entry) => entry.sitemapExcluded);
+  if (sitemapExcludedEntries.length !== baseline.softLaunchRegistryPagesExcludedFromSitemapAndDiscovery) {
+    errors.push(`Expected ${baseline.softLaunchRegistryPagesExcludedFromSitemapAndDiscovery} soft-launch sitemap exclusions; found ${sitemapExcludedEntries.length}`);
+  }
+  const standaloneEditorialRoute = path.join(
+    workspaceDir,
+    "app",
+    "best",
+    "halloween-animatronics-small-yards-and-porches",
+    "page.tsx",
+  );
+  const standaloneCount = fs.existsSync(standaloneEditorialRoute) ? 1 : 0;
+  if (standaloneCount !== baseline.standaloneEditorialRoutesOutsideRegistry) {
+    errors.push(`Expected ${baseline.standaloneEditorialRoutesOutsideRegistry} standalone editorial route; found ${standaloneCount}`);
+  }
+  const sitemapBaseTotal = publishedEntries.length - sitemapExcludedEntries.length + standaloneCount;
+  if (sitemapBaseTotal !== baseline.sitemapBaseEditorialPages) {
+    errors.push(`Expected ${baseline.sitemapBaseEditorialPages} sitemap base editorial routes; found ${sitemapBaseTotal}`);
+  }
+  for (const [site, expected] of Object.entries(baseline.sitemapBaseEditorialBySite ?? {})) {
+    const actual = publishedEntries.filter((entry) => entry.site === site && !entry.sitemapExcluded).length
+      + (site === "costume" ? standaloneCount : 0);
+    if (actual !== expected) errors.push(`Expected ${expected} sitemap base editorial routes for ${site}; found ${actual}`);
+  }
+}
+
+const siteByHost = new Map([
+  ["pets.madabase.com", "pet"],
+  ["homeoffice.madabase.com", "homeoffice"],
+  ["baby.madabase.com", "baby"],
+  ["network.madabase.com", "network"],
+  ["smarthome.madabase.com", "smarthome"],
+  ["style.madabase.com", "style"],
+  ["costumes.madabase.com", "costume"],
+]);
+const kindByPathPrefix = new Map([
+  ["reviews", "product"],
+  ["guides", "guide"],
+  ["best", "roundup"],
+  ["tools", "tool"],
+]);
+for (const protectedPage of portfolioPolicy.protectedBaseCanonicals ?? []) {
+  let url;
+  try {
+    url = new URL(protectedPage.url);
+  } catch {
+    errors.push(`Invalid protected canonical URL ${protectedPage.url}`);
+    continue;
+  }
+  const [prefix, slug, ...extra] = url.pathname.split("/").filter(Boolean);
+  const site = siteByHost.get(url.hostname);
+  const kind = kindByPathPrefix.get(prefix);
+  if (!site || !kind || !slug || extra.length) {
+    errors.push(`Protected canonical must be a base editorial route: ${protectedPage.url}`);
+    continue;
+  }
+  const routeKey = `${site}:${kind}:${slug}`;
+  if (!publishedRouteKeys.has(routeKey)) errors.push(`Protected canonical is missing or unpublished: ${routeKey}`);
 }
 
 const opportunityFile = path.join(libDir, "search-opportunities.ts");
@@ -604,11 +795,27 @@ if (
 }
 if (
   !reviewFirstScreenSource.includes("<AffiliateButton")
+  || !reviewFirstScreenSource.includes('data-evidence-boundary="true"')
   || !reviewFirstScreenSource.includes('data-first-viewport-commerce="true"')
   || !reviewFirstScreenSource.includes('position={commerceIsAlternative ? "review-first-viewport-verified-alternative" : "review-first-viewport"}')
   || !reviewFirstScreenSource.includes("firstViewport")
 ) {
   errors.push("Product template must show the designated sponsored CTA in a first-viewport container before the product image");
+}
+if (
+  reviewFirstScreenSource.indexOf('data-evidence-boundary="true"')
+  > reviewFirstScreenSource.indexOf('data-first-viewport-commerce="true"')
+) {
+  errors.push("Product evidence boundary must appear before the first sponsored CTA");
+}
+
+const roundupTemplateSource = fs.readFileSync(path.join(workspaceDir, "app", "best", "[slug]", "page.tsx"), "utf8");
+if (
+  !roundupTemplateSource.includes('data-evidence-boundary="true"')
+  || roundupTemplateSource.indexOf('data-evidence-boundary="true"')
+    > roundupTemplateSource.indexOf('data-first-viewport-commerce="true"')
+) {
+  errors.push("Roundup evidence boundary must appear before the first sponsored CTA");
 }
 
 const claritySource = fs.readFileSync(path.join(workspaceDir, "components", "ClarityAnalytics.tsx"), "utf8");
@@ -797,6 +1004,12 @@ if (marketExperienceSource.includes('"@type": "Product"')) {
 }
 if (!marketExperienceSource.includes('url: absoluteUrl(site, `/reviews/${product.slug}`)')) {
   errors.push("Country-edition Article subjects must link their Thing entity to the canonical evidence page");
+}
+if (
+  !marketExperienceSource.includes("marketEvidenceBoundary")
+  || !marketExperienceSource.includes('data-evidence-boundary="true"')
+) {
+  errors.push("Localized product and comparison pages must disclose their evidence boundary before commerce");
 }
 
 const counts = entries.reduce((result, entry) => {

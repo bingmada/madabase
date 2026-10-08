@@ -1,0 +1,197 @@
+{
+  "version": 2,
+  "updatedAt": "2026-10-08T23:30:00+08:00",
+  "ownerConstraints": {
+    "handsOnTestingAvailable": false,
+    "rule": "Do not claim first-hand use, testing, measurements, comfort, durability or performance. Default product evidence to official-spec; use research-synthesis only when every external test preserves its source, setup, result, interpretation and limitation.",
+    "structuredData": "Review structured data remains prohibited unless the owner later supplies genuine first-hand evidence and explicitly changes this constraint."
+  },
+  "publicationFreeze": {
+    "status": "active",
+    "effectiveAt": "2026-10-08",
+    "reviewAt": "2026-11-05",
+    "newIndexableUrls": 0,
+    "allowedWork": [
+      "Protect proven query targets",
+      "Repair evidence, sources, compatibility and exact-product identity on existing pages",
+      "Improve meaningful page-one zero-click and page-two pages",
+      "Merge or retire only after the recorded cohort gate and live index/demand review",
+      "Fix confirmed technical, merchant-link, rendering or attribution failures"
+    ],
+    "blockedWork": [
+      "Cross-site publishing batches",
+      "Near-duplicate support pages",
+      "New Review or Best claims without qualifying evidence",
+      "Changing a protected page from a single 24-hour movement"
+    ]
+  },
+  "canonicalInventoryBaseline": {
+    "measuredAt": "2026-10-08",
+    "publishedBasePages": 1134,
+    "publishedContentRegistryPages": 1134,
+    "accessibleBaseEditorialPagesIncludingStandalone": 1135,
+    "softLaunchRegistryPagesExcludedFromSitemapAndDiscovery": 5,
+    "standaloneEditorialRoutesOutsideRegistry": 1,
+    "sitemapBaseEditorialPages": 1130,
+    "pagesWithImpressionsInRepositoryExport": 374,
+    "pagesWithoutImpressionRowInRepositoryExport": 760,
+    "sites": {
+      "homeoffice": 226,
+      "baby": 225,
+      "network": 171,
+      "smarthome": 238,
+      "pet": 185,
+      "style": 63,
+      "costume": 26
+    },
+    "composition": {
+      "guides": 875,
+      "products": 175,
+      "roundups": 77,
+      "tools": 7
+    },
+    "sitemapBaseEditorialBySite": {
+      "homeoffice": 225,
+      "baby": 224,
+      "network": 170,
+      "smarthome": 237,
+      "pet": 184,
+      "style": 63,
+      "costume": 27
+    },
+    "scope": "All published base-canonical editorial routes after applying current permanent-consolidation rules, including factory-generated products, factory-generated guides, the 151 research-pool guides and the governed family guides that remain canonical. The 240 consolidated guide sources, home pages, category archives and localized compatibility editions are tracked separately and are not counted as editorial base pages.",
+    "localizedEditions": "Locale editions inherit the evidence and lifecycle decision of their base canonical; they are not independent content-production targets."
+  },
+  "measurementBaseline": {
+    "googleSearchConsole": {
+      "latestComplete28DayWindowThrough": "2026-10-04",
+      "clicks": 27,
+      "impressions": 4511,
+      "ctrPercent": 0.6,
+      "averagePosition": 14.0,
+      "pageRows": 432,
+      "note": "The full URL ledger is generated from the most recent repository CSV through 2026-09-30; the newer live headline and leading-page evidence are recorded here and must replace it at the next full export."
+    },
+    "amazonAssociates": {
+      "window": "2026-09-07 through 2026-10-06",
+      "affiliateClicks": 36,
+      "orderedItems": 11,
+      "directItems": 1,
+      "indirectItems": 10,
+      "netEarningsUsd": 1.06,
+      "earningsPerAffiliateClickUsd": 0.0294,
+      "directConversionPercent": 2.78,
+      "interpretation": "Do not treat cookie-assisted order conversion as proof that the recommended products fit the landing-page intent."
+    }
+  },
+  "siteLifecycle": {
+    "homeoffice": {
+      "state": "optimize",
+      "priority": 1,
+      "focus": ["desk dimensions and fit", "monitor and dock compatibility", "video-call lighting", "walking-desk stability"]
+    },
+    "baby": {
+      "state": "optimize",
+      "priority": 2,
+      "focus": ["carrier age and position", "feeding-part capacity and workflow", "exact-model fit and cleaning"],
+      "boundary": "Use manufacturer and pediatric safety boundaries; do not turn product research into medical or universal safety advice."
+    },
+    "network": {
+      "state": "optimize-selective",
+      "priority": 3,
+      "focus": ["model and port comparisons", "wired backhaul topology", "hardware-version and firmware checks"]
+    },
+    "smarthome": {
+      "state": "optimize-selective",
+      "priority": 4,
+      "focus": ["Matter, Thread and Zigbee compatibility", "hub, region, wiring and subscription requirements", "firmware and version differences"]
+    },
+    "pet": {
+      "state": "maintenance",
+      "priority": 5,
+      "focus": ["only repeated page-one or exact-query opportunities", "ownership cost, cleaning and compatibility"],
+      "reviewAt": "2026-11-05"
+    },
+    "style": {
+      "state": "maintenance",
+      "priority": 6,
+      "focus": ["preserve technical health and distinct sizing/material pages only"],
+      "retireReviewAt": "2026-11-05"
+    },
+    "costume": {
+      "state": "seasonal-maintenance",
+      "priority": 7,
+      "focus": ["exact merchant identity", "availability and delivery timing", "measured space, fit and included pieces"],
+      "seasonReviewAt": "2026-11-05"
+    }
+  },
+  "protectedBaseCanonicals": [
+    {
+      "url": "https://homeoffice.madabase.com/best/logitech-litra-glow-vs-elgato-key-light-neo",
+      "reason": "Repeated leading click and exact-comparison signal; preserve query, URL and core comparison."
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-vs-alternatives",
+      "reason": "Repeated clicks with strong CTR; preserve the decision job."
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/48-vs-55-inch-desk-guide",
+      "reason": "Repeated clicks on a measurable sizing decision."
+    },
+    {
+      "url": "https://network.madabase.com/guides/deco-be63-vs-be67-vs-be85-buying-guide",
+      "reason": "Repeated clicks on an exact model and port comparison."
+    },
+    {
+      "url": "https://baby.madabase.com/guides/ergobaby-omni-breeze-positions-by-age",
+      "reason": "Repeated base and locale clicks; preserve age-and-position intent."
+    },
+    {
+      "url": "https://homeoffice.madabase.com/best/ergear-48x24-vs-flexispot-e7-mini",
+      "reason": "Protected click-bearing snippet experiment; no further title test without a new measured gate."
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/monitor-arm-clamp-reinforcement-guide",
+      "reason": "Recent click and strong practical compatibility intent."
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/momcozy-mw05-portable-milk-warmer",
+      "reason": "Repeated recent click and direct product-query signal."
+    },
+    {
+      "url": "https://homeoffice.madabase.com/reviews/jabra-speak2-40-usb-speakerphone",
+      "reason": "Recent product click; retain exact variant and room-fit decision."
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/ubbi-steel-diaper-pail",
+      "reason": "Recent complete-week click; preserve bag-cost and cleaning intent."
+    },
+    {
+      "url": "https://baby.madabase.com/best/momcozy-purehug-vs-ergobaby-omni-breeze",
+      "reason": "Recent exact-comparison click; preserve the two-model job."
+    }
+  ],
+  "reviewGates": [
+    {
+      "date": "2026-10-13",
+      "gate": "October 6 release day 7",
+      "required": "Review every URL in the October 6 cohort and separate indexed-but-unexposed pages from discovery, canonical or demand failures."
+    },
+    {
+      "date": "2026-10-20",
+      "gate": "October 6 release day 14",
+      "required": "Compare CTR, average position, page/query exposure and internal discovery; change only pages with meaningful evidence."
+    },
+    {
+      "date": "2026-11-05",
+      "gate": "October 6 release day 30 and portfolio decision",
+      "required": "Join organic visits, affiliate clicks, direct items and earnings; expand no cluster unless it passes the recorded economics and intent gates."
+    }
+  ],
+  "scaleGates": {
+    "minimumRepeatedClusters": 3,
+    "targetDirectItemShare": "Material improvement from the 1 of 11 baseline; do not use indirect orders alone.",
+    "targetEarningsPerAffiliateClickUsd": 0.1,
+    "rule": "The $0.10 target is an internal operating threshold, not an industry guarantee. If the November 5 evidence does not show repeated query clusters and materially better direct-product economics, keep only proven pages and continue maintenance rather than expanding inventory."
+  }
+}

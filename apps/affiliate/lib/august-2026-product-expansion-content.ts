@@ -11,7 +11,7 @@ export const august2026ExpansionProducts: Product[] = [
     asin: "B0FG2MD3YP",
     amazonTitle: "Aqara Presence Sensor FP300 Wireless 5-in-1 Motion Sensor",
     amazonDetailUrl: "https://www.amazon.com/dp/B0FG2MD3YP",
-    seoTitle: "Aqara FP300 Review: Price, Battery, Thread & FP2",
+    seoTitle: "Aqara FP300 Guide: Price, Battery, Thread & FP2",
     updatedAt: "August 23, 2026",
     evidenceMode: "official-spec",
     researchNote:
@@ -101,7 +101,7 @@ export const august2026ExpansionProducts: Product[] = [
     asin: "B0BXWZMQJ3",
     amazonTitle: "Aqara Presence Sensor FP2 mmWave Radar Wired Smart Motion Sensor",
     amazonDetailUrl: "https://www.amazon.com/dp/B0BXWZMQJ3",
-    seoTitle: "Aqara FP2 Review: Zones, Wi-Fi, Wiring & FP300",
+    seoTitle: "Aqara FP2 Guide: Zones, Wi-Fi, Wiring & FP300",
     updatedAt,
     evidenceMode: "official-spec",
     researchNote:
@@ -186,7 +186,7 @@ export const august2026ExpansionProducts: Product[] = [
     asin: "B0BFJ4CRKD",
     amazonTitle: "Logitech MX Brio Ultra HD 4K Webcam",
     amazonDetailUrl: "https://www.amazon.com/dp/B0BFJ4CRKD",
-    seoTitle: "Logitech MX Brio Review: 4K, 1080p60 & Link 2",
+    seoTitle: "Logitech MX Brio Guide: 4K, 1080p60 & Link 2",
     updatedAt,
     evidenceMode: "official-spec",
     researchNote:
@@ -271,7 +271,7 @@ export const august2026ExpansionProducts: Product[] = [
     asin: "B0DDTH3HX8",
     amazonTitle: "Insta360 Link 2 PTZ 4K Webcam",
     amazonDetailUrl: "https://www.amazon.com/dp/B0DDTH3HX8",
-    seoTitle: "Insta360 Link 2 Review: AI Tracking vs MX Brio",
+    seoTitle: "Insta360 Link 2 Guide: AI Tracking vs MX Brio",
     updatedAt,
     evidenceMode: "official-spec",
     researchNote:
@@ -357,7 +357,7 @@ export const august2026ExpansionProducts: Product[] = [
     asin: "B0876T9DQZ",
     amazonTitle: "Philips Avent Premium Fast Bottle Warmer SCF358",
     amazonDetailUrl: "https://www.amazon.com/dp/B0876T9DQZ",
-    seoTitle: "Philips Avent SCF358 Bottle Warmer Review & Guide",
+    seoTitle: "Philips Avent SCF358 Bottle Warmer Guide",
     updatedAt,
     evidenceMode: "official-spec",
     researchNote:
@@ -442,7 +442,7 @@ export const august2026ExpansionProducts: Product[] = [
     asin: "B09H17F8F3",
     amazonTitle: "Baby Brezza Smart Baby Bottle Warmer with Bluetooth",
     amazonDetailUrl: "https://www.amazon.com/dp/B09H17F8F3",
-    seoTitle: "Baby Brezza Smart Bottle Warmer Review & SCF358 Comparison",
+    seoTitle: "Baby Brezza Smart Bottle Warmer Guide & SCF358 Comparison",
     updatedAt,
     evidenceMode: "official-spec",
     researchNote:
@@ -527,7 +527,7 @@ export const august2026ExpansionProducts: Product[] = [
     asin: "B0CSKBWBF6",
     amazonTitle: "Neakasa M1 Plus Open-Top Self-Cleaning Cat Litter Box",
     amazonDetailUrl: "https://www.amazon.com/dp/B0CSKBWBF6",
-    seoTitle: "Neakasa M1 Plus Review: Open Top, Cat Size & PuraMax 2",
+    seoTitle: "Neakasa M1 Plus Guide: Open Top, Cat Size & PuraMax 2",
     updatedAt,
     evidenceMode: "official-spec",
     researchNote:
@@ -612,7 +612,7 @@ export const august2026ExpansionProducts: Product[] = [
     asin: "B0DFYF2D7D",
     amazonTitle: "PETKIT PuraMax 2 Automatic Self-Cleaning Cat Litter Box",
     amazonDetailUrl: "https://www.amazon.com/dp/B0DFYF2D7D",
-    seoTitle: "PETKIT PuraMax 2 Review: Cat Limits, Litter & Neakasa",
+    seoTitle: "PETKIT PuraMax 2 Guide: Cat Limits, Litter & Neakasa",
     updatedAt,
     evidenceMode: "official-spec",
     researchNote:
