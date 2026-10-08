@@ -1,0 +1,59 @@
+{
+  "checkedAt": "2026-10-08T07:24:47.803Z",
+  "mode": "public",
+  "includeMarkets": false,
+  "concurrency": 1,
+  "baseUrls": 1,
+  "exactUrls": 1,
+  "passed": 1,
+  "failed": 0,
+  "noCta": 0,
+  "commercePaused": 0,
+  "bySite": {
+    "costume": {
+      "checked": 1,
+      "failed": 0,
+      "noCta": 0,
+      "commercePaused": 0
+    }
+  },
+  "byKind": {
+    "review": {
+      "checked": 0,
+      "failed": 0,
+      "noCta": 0,
+      "commercePaused": 0
+    },
+    "guide": {
+      "checked": 0,
+      "failed": 0,
+      "noCta": 0,
+      "commercePaused": 0
+    },
+    "roundup": {
+      "checked": 1,
+      "failed": 0,
+      "noCta": 0,
+      "commercePaused": 0
+    },
+    "tool": {
+      "checked": 0,
+      "failed": 0,
+      "noCta": 0,
+      "commercePaused": 0
+    },
+    "category": {
+      "checked": 0,
+      "failed": 0,
+      "noCta": 0,
+      "commercePaused": 0
+    },
+    "catalog-product": {
+      "checked": 0,
+      "failed": 0,
+      "noCta": 0,
+      "commercePaused": 0
+    }
+  },
+  "failureDetails": []
+}

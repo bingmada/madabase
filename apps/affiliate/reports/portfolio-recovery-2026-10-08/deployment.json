@@ -1,0 +1,99 @@
+{
+  "date": "2026-10-08",
+  "scope": [
+    "network",
+    "smarthome",
+    "homeoffice",
+    "baby",
+    "pet",
+    "style",
+    "costume"
+  ],
+  "status": "deployed_and_publicly_verified",
+  "source": {
+    "workflowCommit": "518dc3b",
+    "firstReleaseCommit": "c11e04100497bc9a41fecc5b7386482e801353aa",
+    "safetyControllerCommit": "53ba632b6fe683c9939f18658a25dde879bfbd03",
+    "finalRuntimeCommit": "bfb8689e4a63d5368036ef6e829fe492b840d919"
+  },
+  "artifact": {
+    "path": "apps/affiliate/.release/affiliate-runtime.tgz",
+    "bytes": 60907839,
+    "sha256": "23ebf88649afa35b17c927e9c45bb55b5caae9223341a5f194990e53cf6379ee"
+  },
+  "production": {
+    "releaseDirectory": "/srv/madabase-affiliate/releases/portfolio-20261008-costume-fix-bfb8689e4a63d5368036ef6e829fe492b840d919",
+    "rollbackDirectory": "/srv/madabase-affiliate/releases/portfolio-20261008-c11e04100497bc9a41fecc5b7386482e801353aa",
+    "affiliate": {
+      "active": true,
+      "restartCount": 0
+    },
+    "main": {
+      "active": true,
+      "restartCount": 0,
+      "restored": true,
+      "workingDirectory": "/srv/madabase-main/releases/seo-20260925-8055b15"
+    },
+    "test": {
+      "active": true,
+      "restartCount": 0,
+      "restored": true,
+      "workingDirectory": "/srv/madabase-test/releases/local-20260820-next15523"
+    },
+    "recoveryTimersRemaining": 0
+  },
+  "originVerification": {
+    "targetCanonicals": 17,
+    "redirects": 55,
+    "sitemaps": 7,
+    "errors": 0
+  },
+  "publicVerification": {
+    "amazon": {
+      "baseUrls": 1147,
+      "firstPass": {
+        "passed": 1123,
+        "failed": 24
+      },
+      "firstRetry": {
+        "passed": 22,
+        "failed": 2
+      },
+      "finalRetry": {
+        "passed": 2,
+        "failed": 0
+      },
+      "effectivePassed": 1147,
+      "effectiveFailed": 0
+    },
+    "costume": {
+      "baseUrls": 108,
+      "firstPass": {
+        "passed": 107,
+        "failed": 1,
+        "catalogProductsPassed": 76
+      },
+      "repair": "Added the missing research-only evidence boundary before the first CJ commerce path on /best/halloween-animatronics-small-yards-and-porches.",
+      "originAndQueryBustedPublic": "passed",
+      "hongKongCanonicalEdge": "passed",
+      "sanJoseCanonicalEdge": "passed after the pre-release HIT reached normal TTL, returned one expected UPDATING response, and completed background revalidation",
+      "finalRetry": {
+        "passed": 1,
+        "failed": 0
+      },
+      "effectivePassed": 108,
+      "effectiveFailed": 0
+    }
+  },
+  "indexing": {
+    "newIndexableUrls": 0,
+    "indexNowSubmitted": false,
+    "requestIndexingSubmitted": false,
+    "sitemapsResubmitted": false
+  },
+  "measurementGates": [
+    "2026-10-13",
+    "2026-10-20",
+    "2026-11-05"
+  ]
+}

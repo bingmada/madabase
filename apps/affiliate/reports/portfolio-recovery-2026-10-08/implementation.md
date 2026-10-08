@@ -34,3 +34,13 @@
 - 分类发现、页面覆盖、757 个治理型扩展页、10 月恢复 cohort、商家链接格式及 18 张分发图片的专项检查全部通过；发布构建和 Linux x64 运行包已成功生成。
 - 代表性页面已逐站渲染核对，其中 Network、Smarthome、Homeoffice、Baby、Pet、Style 的产品或对比页均确认声明位于 CTA 之前；Costume 的静态编辑页和分类入口通过。
 - Costume 的 32 条动态商品路径在本地没有连接生产 PostgreSQL/CJ 商品目录，因此无法出现真实 CTA。这里没有补假商品或假链接；上线时必须用生产数据做单独验收，未通过就回滚而不是带病放行。
+
+## 生产发布与公网验收
+
+- 完整七站工作流先以 `c11e04100497bc9a41fecc5b7386482e801353aa` 发布；低内存保护器在所有者明确授权后只临时停止 Test，Affiliate 通过源站验收后独立恢复 Test 和 Main。保护器本身固定在 `53ba632b6fe683c9939f18658a25dde879bfbd03`。
+- 公网审计检查六个 Amazon 站的 1,147 条基础路径。首轮 1,123 条通过，24 条因网络抖动或旧边缘缓存进入有界重试；随后 22 条通过，最后两条再次重试后通过。因此不是抽样，而是 1,147 条全部取得通过结果。
+- 连接生产 PostgreSQL/CJ 目录后，Costume 108 条路径首轮有 107 条通过，其中 76 条动态商品页全部通过。唯一失败是独立 Halloween animatronics 对比页缺少 CTA 前的显式证据边界；没有把它忽略或用模板掩盖，而是只修复该页、重新构建并发布 `bfb8689e4a63d5368036ef6e829fe492b840d919`。
+- 最终运行包为 60,907,839 字节，SHA-256 为 `23ebf88649afa35b17c927e9c45bb55b5caae9223341a5f194990e53cf6379ee`，运行目录为 `/srv/madabase-affiliate/releases/portfolio-20261008-costume-fix-bfb8689e4a63d5368036ef6e829fe492b840d919`；前一完整版本仍保留为直接回滚目录。
+- 修复版本的源站验收再次通过 17 个目标 canonical、55 个基础永久跳转和 7 份 sitemap，错误数为 0。Affiliate、Main、Test 三项服务均为 active、`NRestarts=0`，维护恢复定时器为 0。
+- 修复页的新证据声明先在源站、带独立缓存键的公网响应和 HKG 边缘无参数 canonical 中确认。SJC 边缘保留发布前旧 HIT 到正常 TTL，到期后的第一次请求按 stale-while-revalidate 返回预期的 `UPDATING`，随后新 `HIT` 和最终无参数审计均通过。因此 Costume 的有效结果为 108/108，未执行全站 Cloudflare purge。
+- 本轮新增 URL、Sitemap 重提、IndexNow 和 Search Console Request Indexing 均为 0。下一次只在 10 月 13 日、10 月 20 日和 11 月 5 日读取固定 cohort 的展现、点击、查询和商家结果，不用当天波动证明 SEO 已恢复。
