@@ -1,16 +1,16 @@
 {
-  "status": "immutable-prepared-awaiting-main-maintenance-approval",
+  "status": "deployed-and-publicly-verified",
   "sourceCommit": "4604bf6",
   "runtimeCommit": "3ddb75d66d84ebf9b89b7eb026dfb1e4d8baaada",
   "oldRelease": "/srv/madabase-affiliate/releases/portfolio-20261008-costume-fix-bfb8689e4a63d5368036ef6e829fe492b840d919",
   "preparedRelease": "/srv/madabase-affiliate/releases/focus-20261013-3ddb75d66d84ebf9b89b7eb026dfb1e4d8baaada",
   "archiveBytes": 60930332,
   "sha256": "c64977b6e847df3b0bf810e643fef68fbc9185211d8630cecf42e4a50403b60e",
-  "preparedAt": "2026-10-13T12:17:18+0000",
+  "preparedAt": "2026-10-13T12:17:18+0800",
   "retainedOldStaticAssets": 31,
-  "productionActivationPerformed": false,
-  "productionServicesStopped": false,
-  "mainMaintenanceApproval": "requested-in-this-chat; no answer yet",
+  "productionActivationPerformed": true,
+  "productionServicePausePerformed": true,
+  "mainMaintenanceApproval": "Owner explicitly replied 允许 in this chat for the brief Main-only maintenance window.",
   "singleProcessForecastMiB": 715.3,
   "maintenanceForecast": {
     "availableMiB": 297.9501953125,
@@ -20,7 +20,85 @@
     "pressureAvg10": 0,
     "sliceHeadroom": "unlimited"
   },
-  "proposedAction": "Pause Main only, run guarded single-process Affiliate cutover with 150s rollback watchdog, verify 14 targets/33 redirects/7 sitemaps, restore Main in finally and with independent 180s recovery timer. Recheck capacity at activation; retain old release for rollback.",
-  "nextCommandAfterExplicitApproval": "python3 /var/tmp/madabase-seo-focus-20261013-maintenance.py activate",
-  "afterActivation": "Verify service WorkingDirectory, Main restoration, origin acceptances, all changed public URLs, redirects and sitemaps. Then update durable records. No indexing submission yet."
+  "activatedAt": "2026-10-13T13:42:38+0800",
+  "activeRelease": "/srv/madabase-affiliate/releases/focus-20261013-3ddb75d66d84ebf9b89b7eb026dfb1e4d8baaada",
+  "rollbackRelease": "/srv/madabase-affiliate/releases/portfolio-20261008-costume-fix-bfb8689e4a63d5368036ef6e829fe492b840d919",
+  "origin": {
+    "targets": 14,
+    "redirects": 33,
+    "sitemaps": 7,
+    "errors": 0
+  },
+  "public": {
+    "checked": 76,
+    "passed": 76,
+    "errors": 0,
+    "byKind": {
+      "canonical": 28,
+      "redirect": 33,
+      "sitemap": 7,
+      "robots": 7,
+      "health": 1
+    },
+    "firstCheckedAt": "2026-10-13T05:45:14.844827+00:00",
+    "lastCheckedAt": "2026-10-13T05:49:45.811586+00:00",
+    "normalUrlsWithoutCacheBusting": true,
+    "cacheRevalidation": "First pass 71/76; five responses from three URLs had previous content and UPDATING cache status. All five passed on a normal-URL retry. No cache purge performed.",
+    "report": "public-probe.json"
+  },
+  "mainMaintenance": {
+    "startedAt": "2026-10-13T13:42:32+0800",
+    "restoredAt": "2026-10-13T13:42:39+0800",
+    "seconds": 7,
+    "mainRestored": true,
+    "extraService": null,
+    "mainWorkingDirectory": "/srv/madabase-main/releases/seo-20260925-8055b15",
+    "recoveryTimerSeconds": 180,
+    "rollbackWatchdogSeconds": 150
+  },
+  "activationCapacity": {
+    "mainPauseForecast": {
+      "availableMiB": 298.98828125,
+      "reclaimableAnonymousMiB": 489.4765625,
+      "projectedAvailableMiB": 788.46484375,
+      "requiredMiB": 768
+    },
+    "affiliateCutoverForecast": {
+      "availableMiB": 351.06640625,
+      "oldPssAnonMiB": 429.3515625,
+      "projectedAvailableMiB": 780.41796875,
+      "forecastRequiredMiB": 768
+    },
+    "afterAffiliateStop": {
+      "passed": true,
+      "availableMiB": 760.53515625,
+      "requiredMiB": 704,
+      "candidateMiB": 512,
+      "reserveMiB": 192,
+      "pressureAvg10": 0,
+      "sliceHeadroomMiB": "unlimited"
+    }
+  },
+  "serviceVerification": {
+    "method": "Rendered Aliyun terminal output from systemctl show after Main restoration and public checks.",
+    "affiliate": {
+      "ActiveState": "active",
+      "SubState": "running",
+      "WorkingDirectory": "/srv/madabase-affiliate/releases/focus-20261013-3ddb75d66d84ebf9b89b7eb026dfb1e4d8baaada",
+      "NRestarts": 0,
+      "MemoryCurrentBytes": 286646272
+    },
+    "main": {
+      "ActiveState": "active",
+      "SubState": "running",
+      "WorkingDirectory": "/srv/madabase-main/releases/seo-20260925-8055b15",
+      "NRestarts": 0,
+      "MemoryCurrentBytes": 49008640
+    }
+  },
+  "indexing": {
+    "indexNowSubmitted": false,
+    "requestIndexingSubmitted": false,
+    "note": "The existing-page repair is deployed; these delivery checks are not evidence of GSC ranking recovery."
+  }
 }

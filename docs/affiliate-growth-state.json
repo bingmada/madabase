@@ -5482,7 +5482,7 @@
     "nextAction": "Finish bounded Google live inspection and cache-isolation checks; commit published acceptance evidence. Search ranking and indexing refresh remain observation items."
   },
   "focusedSeoRecovery20261013": {
-    "status": "immutable-prepared-awaiting-main-maintenance-approval",
+    "status": "deployed-and-publicly-verified",
     "authorization": "Owner asked to perform existing-page optimization, overlap consolidation and substantive decision-content repair; cover other themes and preserve quality.",
     "scope": {
       "sites": 7,
@@ -5491,8 +5491,7 @@
       "familiesConsolidated": 3,
       "baseRedirects": 9,
       "localeRedirects": 24,
-      "expectedBaseInventoryAfterActivation": 1125,
-      "currentProductionBaseInventory": 1134
+      "currentProductionBaseInventory": 1125
     },
     "reports": "apps/affiliate/reports/seo-focus-2026-10-13/README.md",
     "config": "apps/affiliate/config/focused-content-recovery-2026-10-13.json",
@@ -5500,7 +5499,7 @@
     "baseline": "apps/affiliate/reports/seo-review-2026-10-13/diagnosis.json",
     "latest24h": "All-domain 5 vs 7 impressions, 0 clicks, reporting delay about 7-8h; active-affiliate page-row sum 5 vs 6; not evidence of release improvement.",
     "priorCohort": "All 356 base/locale canonical and redirect ledger entries reviewed; 17 base canonicals indexed. Preserve their core fields until existing gates.",
-    "validation": "Lint, Next compilation/types, Linux packaging, tailored content integrity, 390px checks on all14, raw-head/redirect/sitemap acceptance, previous cohort regression and 294 URL/tag checks passed. Live stock was not checked by format checks.",
+    "validation": "Lint, Next compilation/types, Linux packaging, tailored content integrity, 390px checks on all14, raw-head/redirect/sitemap acceptance, previous cohort regression and 294 URL/tag checks passed. Live stock was not checked by format checks. Production origin and all 76 public checks passed. Main restored; both services active with zero restarts.",
     "artifact": {
       "node": "20.20.0",
       "next": "15.5.23",
@@ -5510,19 +5509,34 @@
       "sha256": "c64977b6e847df3b0bf810e643fef68fbc9185211d8630cecf42e4a50403b60e"
     },
     "capacity": {
-      "availableMiB": 297.9501953125,
-      "reclaimableAnonymousMiB": 492.546875,
-      "projectedAvailableMiB": 790.51171875,
-      "requiredForecastMiB": 768,
-      "pressureAvg10": 0,
-      "sliceHeadroom": "unlimited"
+      "mainPauseForecast": {
+        "availableMiB": 298.98828125,
+        "reclaimableAnonymousMiB": 489.4765625,
+        "projectedAvailableMiB": 788.46484375,
+        "requiredMiB": 768
+      },
+      "affiliateCutoverForecast": {
+        "availableMiB": 351.06640625,
+        "oldPssAnonMiB": 429.3515625,
+        "projectedAvailableMiB": 780.41796875,
+        "forecastRequiredMiB": 768
+      },
+      "afterAffiliateStop": {
+        "passed": true,
+        "availableMiB": 760.53515625,
+        "requiredMiB": 704,
+        "candidateMiB": 512,
+        "reserveMiB": 192,
+        "pressureAvg10": 0,
+        "sliceHeadroomMiB": "unlimited"
+      }
     },
     "reviewGates": {
       "day7": "2026-10-20",
       "day14": "2026-10-27",
       "day30": "2026-11-12"
     },
-    "servicesUnchanged": true,
+    "servicesUnchanged": false,
     "indexNow": "not-submitted",
     "requestIndexing": false,
     "conversionPlatforms": "not-due-for-this-search-content-repair; no merchant, attribution, or commission claim changed.",
@@ -5531,6 +5545,27 @@
     "runtimeCommit": "3ddb75d66d84ebf9b89b7eb026dfb1e4d8baaada",
     "preparedRelease": "/srv/madabase-affiliate/releases/focus-20261013-3ddb75d66d84ebf9b89b7eb026dfb1e4d8baaada",
     "rollbackRelease": "/srv/madabase-affiliate/releases/portfolio-20261008-costume-fix-bfb8689e4a63d5368036ef6e829fe492b840d919",
-    "mainMaintenanceApproval": "requested-in-this-chat; no answer yet"
+    "mainMaintenanceApproval": "Owner explicitly replied 允许 in this chat for the brief Main-only maintenance window.",
+    "activatedAt": "2026-10-13T13:42:38+0800",
+    "activeRelease": "/srv/madabase-affiliate/releases/focus-20261013-3ddb75d66d84ebf9b89b7eb026dfb1e4d8baaada",
+    "mainRestored": true,
+    "mainMaintenanceSeconds": 7,
+    "publicValidation": {
+      "checked": 76,
+      "passed": 76,
+      "errors": 0,
+      "byKind": {
+        "canonical": 28,
+        "redirect": 33,
+        "sitemap": 7,
+        "robots": 7,
+        "health": 1
+      },
+      "firstCheckedAt": "2026-10-13T05:45:14.844827+00:00",
+      "lastCheckedAt": "2026-10-13T05:49:45.811586+00:00",
+      "normalUrlsWithoutCacheBusting": true,
+      "cacheRevalidation": "First pass 71/76; five responses from three URLs had previous content and UPDATING cache status. All five passed on a normal-URL retry. No cache purge performed.",
+      "report": "public-probe.json"
+    }
   }
 }

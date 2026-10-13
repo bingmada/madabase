@@ -62,5 +62,22 @@
     "archiveBytes": 60930332,
     "sha256": "c64977b6e847df3b0bf810e643fef68fbc9185211d8630cecf42e4a50403b60e"
   },
-  "production": "Archive SHA-256 matched and immutable release prepared; current production remains unchanged pending new Main-maintenance approval."
+  "production": "Deployed at 2026-10-13T13:42:38+0800. Origin acceptance passed 14 targets, 33 redirects and seven sitemaps. Public acceptance passed all 76 checks after normal-URL cache revalidation. Both services active/running with zero restarts; Main restored after a seven-second window. Rollback retained.",
+  "public": {
+    "checked": 76,
+    "passed": 76,
+    "errors": 0,
+    "byKind": {
+      "canonical": 28,
+      "redirect": 33,
+      "sitemap": 7,
+      "robots": 7,
+      "health": 1
+    },
+    "firstCheckedAt": "2026-10-13T05:45:14.844827+00:00",
+    "lastCheckedAt": "2026-10-13T05:49:45.811586+00:00",
+    "normalUrlsWithoutCacheBusting": true,
+    "cacheRevalidation": "First pass 71/76; five responses from three URLs had previous content and UPDATING cache status. All five passed on a normal-URL retry. No cache purge performed.",
+    "report": "public-probe.json"
+  }
 }

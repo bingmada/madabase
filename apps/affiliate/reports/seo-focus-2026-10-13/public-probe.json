@@ -1,0 +1,1284 @@
+[
+  {
+    "url": "https://homeoffice.madabase.com/guides/48-vs-55-inch-desk-guide",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:45:14.844827+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "HIT",
+    "ray": "a49c09927825de03-SJC",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://homeoffice.madabase.com/guides/48-vs-55-inch-desk-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "authoredContentPresent": true,
+    "unsupportedReviewSchema": false,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/48-vs-55-inch-desk-guide",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:45:14.845820+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "MISS",
+    "ray": "a49c098309a0d8a7-SJC",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://homeoffice.madabase.com/guides/48-vs-55-inch-desk-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "authoredContentPresent": true,
+    "unsupportedReviewSchema": false,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/usb-c-dock-vs-monitor-hub-guide",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:45:17.557470+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "MISS",
+    "ray": "a49c09936e6c7af7-SJC",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://homeoffice.madabase.com/guides/usb-c-dock-vs-monitor-hub-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "authoredContentPresent": true,
+    "unsupportedReviewSchema": false,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/usb-c-dock-vs-monitor-hub-guide",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:45:19.158885+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "HIT",
+    "ray": "a49c09a379d01736-SJC",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://homeoffice.madabase.com/guides/usb-c-dock-vs-monitor-hub-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "authoredContentPresent": true,
+    "unsupportedReviewSchema": false,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/macbook-dual-monitor-dock-chip-compatibility-guide",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:45:20.170838+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "MISS",
+    "ray": "a49c09aa5ba76af7-SJC",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://homeoffice.madabase.com/guides/macbook-dual-monitor-dock-chip-compatibility-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "authoredContentPresent": true,
+    "unsupportedReviewSchema": false,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/macbook-dual-monitor-dock-chip-compatibility-guide",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:45:21.961664+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "HIT",
+    "ray": "a49c09aede0fa709-SJC",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://homeoffice.madabase.com/guides/macbook-dual-monitor-dock-chip-compatibility-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "authoredContentPresent": true,
+    "unsupportedReviewSchema": false,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/monitor-arm-clamp-reinforcement-guide",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:49:36.995363+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "HIT",
+    "ray": "a49c0fec1a959452-SJC",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://homeoffice.madabase.com/guides/monitor-arm-clamp-reinforcement-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "authoredContentPresent": true,
+    "unsupportedReviewSchema": false,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/monitor-arm-clamp-reinforcement-guide",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:49:39.914808+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "HIT",
+    "ray": "a49c0ffcab9dfa49-SJC",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://homeoffice.madabase.com/guides/monitor-arm-clamp-reinforcement-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "authoredContentPresent": true,
+    "unsupportedReviewSchema": false,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/portable-monitor-usb-c-dp-alt-mode-displaylink-guide",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:49:41.859499+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "HIT",
+    "ray": "a49c100aba7e7e2d-SJC",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://homeoffice.madabase.com/guides/portable-monitor-usb-c-dp-alt-mode-displaylink-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "authoredContentPresent": true,
+    "unsupportedReviewSchema": false,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/portable-monitor-usb-c-dp-alt-mode-displaylink-guide",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:49:44.068701+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "HIT",
+    "ray": "a49c1015aba3c132-SJC",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://homeoffice.madabase.com/guides/portable-monitor-usb-c-dp-alt-mode-displaylink-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "authoredContentPresent": true,
+    "unsupportedReviewSchema": false,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/best/logitech-litra-glow-vs-elgato-key-light-neo",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:45:27.451494+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "HIT",
+    "ray": "a49c09da8ced2599-SJC",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://homeoffice.madabase.com/best/logitech-litra-glow-vs-elgato-key-light-neo",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "authoredContentPresent": true,
+    "unsupportedReviewSchema": false,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/best/logitech-litra-glow-vs-elgato-key-light-neo",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:49:45.811586+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "HIT",
+    "ray": "a49c101f28219452-SJC",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://homeoffice.madabase.com/best/logitech-litra-glow-vs-elgato-key-light-neo",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "authoredContentPresent": true,
+    "unsupportedReviewSchema": false,
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/guides/pcie-wifi-adapters-vs-alternatives",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:45:30.194755+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "HIT",
+    "ray": "a49c09e68bab1a0f-SJC",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://network.madabase.com/guides/pcie-wifi-adapters-vs-alternatives",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "authoredContentPresent": true,
+    "unsupportedReviewSchema": false,
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/guides/pcie-wifi-adapters-vs-alternatives",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:45:30.977477+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "MISS",
+    "ray": "a49c09e63eefcfa8-SJC",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://network.madabase.com/guides/pcie-wifi-adapters-vs-alternatives",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "authoredContentPresent": true,
+    "unsupportedReviewSchema": false,
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/guides/pcie-wifi-adapters-buying-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://network.madabase.com/guides/pcie-wifi-adapters-vs-alternatives",
+    "checkedAt": "2026-10-13T05:45:33.289341+00:00",
+    "status": 308,
+    "location": "/guides/pcie-wifi-adapters-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49c09f86824c65e-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/en-gb/guides/pcie-wifi-adapters-buying-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://network.madabase.com/en-gb/guides/pcie-wifi-adapters-vs-alternatives",
+    "checkedAt": "2026-10-13T05:45:33.557946+00:00",
+    "status": 308,
+    "location": "/en-gb/guides/pcie-wifi-adapters-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49c09fbfb2e49d2-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/en-ca/guides/pcie-wifi-adapters-buying-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://network.madabase.com/en-ca/guides/pcie-wifi-adapters-vs-alternatives",
+    "checkedAt": "2026-10-13T05:45:35.786677+00:00",
+    "status": 308,
+    "location": "/en-ca/guides/pcie-wifi-adapters-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49c0a060902b8b6-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/de-de/guides/pcie-wifi-adapters-buying-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://network.madabase.com/de-de/guides/pcie-wifi-adapters-vs-alternatives",
+    "checkedAt": "2026-10-13T05:45:35.967436+00:00",
+    "status": 308,
+    "location": "/de-de/guides/pcie-wifi-adapters-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49c0a0b89dbcf16-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/nl-nl/guides/pcie-wifi-adapters-buying-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://network.madabase.com/nl-nl/guides/pcie-wifi-adapters-vs-alternatives",
+    "checkedAt": "2026-10-13T05:45:38.222388+00:00",
+    "status": 308,
+    "location": "/nl-nl/guides/pcie-wifi-adapters-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49c0a170e41cfdd-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/guides/pcie-wifi-adapters-compatibility-and-fit-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://network.madabase.com/guides/pcie-wifi-adapters-vs-alternatives",
+    "checkedAt": "2026-10-13T05:45:39.047752+00:00",
+    "status": 308,
+    "location": "/guides/pcie-wifi-adapters-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49c0a218e4f8f42-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/en-gb/guides/pcie-wifi-adapters-compatibility-and-fit-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://network.madabase.com/en-gb/guides/pcie-wifi-adapters-vs-alternatives",
+    "checkedAt": "2026-10-13T05:45:40.880661+00:00",
+    "status": 308,
+    "location": "/en-gb/guides/pcie-wifi-adapters-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49c0a28fd077aeb-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/en-ca/guides/pcie-wifi-adapters-compatibility-and-fit-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://network.madabase.com/en-ca/guides/pcie-wifi-adapters-vs-alternatives",
+    "checkedAt": "2026-10-13T05:45:41.973631+00:00",
+    "status": 308,
+    "location": "/en-ca/guides/pcie-wifi-adapters-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49c0a2b28df8486-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/de-de/guides/pcie-wifi-adapters-compatibility-and-fit-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://network.madabase.com/de-de/guides/pcie-wifi-adapters-vs-alternatives",
+    "checkedAt": "2026-10-13T05:45:43.544650+00:00",
+    "status": 308,
+    "location": "/de-de/guides/pcie-wifi-adapters-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49c0a3c1b25ebeb-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/nl-nl/guides/pcie-wifi-adapters-compatibility-and-fit-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://network.madabase.com/nl-nl/guides/pcie-wifi-adapters-vs-alternatives",
+    "checkedAt": "2026-10-13T05:45:43.899813+00:00",
+    "status": 308,
+    "location": "/nl-nl/guides/pcie-wifi-adapters-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49c0a3c3a497afa-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/guides/pcie-wifi-adapters-ownership-cost-and-maintenance",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://network.madabase.com/guides/pcie-wifi-adapters-vs-alternatives",
+    "checkedAt": "2026-10-13T05:45:46.247436+00:00",
+    "status": 308,
+    "location": "/guides/pcie-wifi-adapters-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49c0a523ad7eb21-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/en-gb/guides/pcie-wifi-adapters-ownership-cost-and-maintenance",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://network.madabase.com/en-gb/guides/pcie-wifi-adapters-vs-alternatives",
+    "checkedAt": "2026-10-13T05:45:47.091543+00:00",
+    "status": 308,
+    "location": "/en-gb/guides/pcie-wifi-adapters-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49c0a4b2c81a249-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/en-ca/guides/pcie-wifi-adapters-ownership-cost-and-maintenance",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://network.madabase.com/en-ca/guides/pcie-wifi-adapters-vs-alternatives",
+    "checkedAt": "2026-10-13T05:45:49.439059+00:00",
+    "status": 308,
+    "location": "/en-ca/guides/pcie-wifi-adapters-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49c0a59aea833fc-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/de-de/guides/pcie-wifi-adapters-ownership-cost-and-maintenance",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://network.madabase.com/de-de/guides/pcie-wifi-adapters-vs-alternatives",
+    "checkedAt": "2026-10-13T05:45:49.761108+00:00",
+    "status": 308,
+    "location": "/de-de/guides/pcie-wifi-adapters-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49c0a6479e75d19-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/nl-nl/guides/pcie-wifi-adapters-ownership-cost-and-maintenance",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://network.madabase.com/nl-nl/guides/pcie-wifi-adapters-vs-alternatives",
+    "checkedAt": "2026-10-13T05:45:51.109388+00:00",
+    "status": 308,
+    "location": "/nl-nl/guides/pcie-wifi-adapters-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49c0a682abdcf1b-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/guides/direct-attach-copper-cables-vs-alternatives",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:45:53.259908+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "MISS",
+    "ray": "a49c0a722ed0ed3f-SJC",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://network.madabase.com/guides/direct-attach-copper-cables-vs-alternatives",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "authoredContentPresent": true,
+    "unsupportedReviewSchema": false,
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/guides/direct-attach-copper-cables-vs-alternatives",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:45:53.426833+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "HIT",
+    "ray": "a49c0a7389d588fa-SJC",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://network.madabase.com/guides/direct-attach-copper-cables-vs-alternatives",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "authoredContentPresent": true,
+    "unsupportedReviewSchema": false,
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/guides/direct-attach-copper-cables-buying-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://network.madabase.com/guides/direct-attach-copper-cables-vs-alternatives",
+    "checkedAt": "2026-10-13T05:45:55.631454+00:00",
+    "status": 308,
+    "location": "/guides/direct-attach-copper-cables-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49c0a80e9c2ed39-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/en-gb/guides/direct-attach-copper-cables-buying-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://network.madabase.com/en-gb/guides/direct-attach-copper-cables-vs-alternatives",
+    "checkedAt": "2026-10-13T05:45:55.830947+00:00",
+    "status": 308,
+    "location": "/en-gb/guides/direct-attach-copper-cables-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49c0a829e9112a1-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/en-ca/guides/direct-attach-copper-cables-buying-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://network.madabase.com/en-ca/guides/direct-attach-copper-cables-vs-alternatives",
+    "checkedAt": "2026-10-13T05:45:57.257527+00:00",
+    "status": 308,
+    "location": "/en-ca/guides/direct-attach-copper-cables-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49c0a8bca40c38b-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/de-de/guides/direct-attach-copper-cables-buying-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://network.madabase.com/de-de/guides/direct-attach-copper-cables-vs-alternatives",
+    "checkedAt": "2026-10-13T05:45:58.146632+00:00",
+    "status": 308,
+    "location": "/de-de/guides/direct-attach-copper-cables-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49c0a8feae7ac07-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/nl-nl/guides/direct-attach-copper-cables-buying-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://network.madabase.com/nl-nl/guides/direct-attach-copper-cables-vs-alternatives",
+    "checkedAt": "2026-10-13T05:45:59.361784+00:00",
+    "status": 308,
+    "location": "/nl-nl/guides/direct-attach-copper-cables-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49c0a9e7924cf0a-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/guides/direct-attach-copper-cables-compatibility-and-fit-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://network.madabase.com/guides/direct-attach-copper-cables-vs-alternatives",
+    "checkedAt": "2026-10-13T05:45:59.619684+00:00",
+    "status": 308,
+    "location": "/guides/direct-attach-copper-cables-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49c0aa09e8b7adc-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/en-gb/guides/direct-attach-copper-cables-compatibility-and-fit-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://network.madabase.com/en-gb/guides/direct-attach-copper-cables-vs-alternatives",
+    "checkedAt": "2026-10-13T05:46:02.314115+00:00",
+    "status": 308,
+    "location": "/en-gb/guides/direct-attach-copper-cables-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49c0aaa7ba2e196-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/en-ca/guides/direct-attach-copper-cables-compatibility-and-fit-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://network.madabase.com/en-ca/guides/direct-attach-copper-cables-vs-alternatives",
+    "checkedAt": "2026-10-13T05:46:02.405724+00:00",
+    "status": 308,
+    "location": "/en-ca/guides/direct-attach-copper-cables-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49c0aab1ce0eb25-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/de-de/guides/direct-attach-copper-cables-compatibility-and-fit-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://network.madabase.com/de-de/guides/direct-attach-copper-cables-vs-alternatives",
+    "checkedAt": "2026-10-13T05:46:03.890418+00:00",
+    "status": 308,
+    "location": "/de-de/guides/direct-attach-copper-cables-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49c0ab45e61b231-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/nl-nl/guides/direct-attach-copper-cables-compatibility-and-fit-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://network.madabase.com/nl-nl/guides/direct-attach-copper-cables-vs-alternatives",
+    "checkedAt": "2026-10-13T05:46:04.215503+00:00",
+    "status": 308,
+    "location": "/nl-nl/guides/direct-attach-copper-cables-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49c0abe6a3bcf0e-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/guides/direct-attach-copper-cables-ownership-cost-and-maintenance",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://network.madabase.com/guides/direct-attach-copper-cables-vs-alternatives",
+    "checkedAt": "2026-10-13T05:46:05.443438+00:00",
+    "status": 308,
+    "location": "/guides/direct-attach-copper-cables-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49c0ac1b95bee14-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/en-gb/guides/direct-attach-copper-cables-ownership-cost-and-maintenance",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://network.madabase.com/en-gb/guides/direct-attach-copper-cables-vs-alternatives",
+    "checkedAt": "2026-10-13T05:46:07.405655+00:00",
+    "status": 308,
+    "location": "/en-gb/guides/direct-attach-copper-cables-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49c0ac9ffbb7e25-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/en-ca/guides/direct-attach-copper-cables-ownership-cost-and-maintenance",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://network.madabase.com/en-ca/guides/direct-attach-copper-cables-vs-alternatives",
+    "checkedAt": "2026-10-13T05:46:07.775382+00:00",
+    "status": 308,
+    "location": "/en-ca/guides/direct-attach-copper-cables-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49c0acfd83774f9-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/de-de/guides/direct-attach-copper-cables-ownership-cost-and-maintenance",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://network.madabase.com/de-de/guides/direct-attach-copper-cables-vs-alternatives",
+    "checkedAt": "2026-10-13T05:46:09.121963+00:00",
+    "status": 308,
+    "location": "/de-de/guides/direct-attach-copper-cables-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49c0ad428578ea2-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/nl-nl/guides/direct-attach-copper-cables-ownership-cost-and-maintenance",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://network.madabase.com/nl-nl/guides/direct-attach-copper-cables-vs-alternatives",
+    "checkedAt": "2026-10-13T05:46:09.873469+00:00",
+    "status": 308,
+    "location": "/nl-nl/guides/direct-attach-copper-cables-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49c0ad8f97f2714-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://baby.madabase.com/guides/ergobaby-omni-breeze-positions-by-age",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:46:10.518372+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "MISS",
+    "ray": "a49c0adebb26ed3f-SJC",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://baby.madabase.com/guides/ergobaby-omni-breeze-positions-by-age",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "authoredContentPresent": true,
+    "unsupportedReviewSchema": false,
+    "passed": true
+  },
+  {
+    "url": "https://baby.madabase.com/guides/ergobaby-omni-breeze-positions-by-age",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:46:11.321651+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "HIT",
+    "ray": "a49c0ae25acde9e7-SJC",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://baby.madabase.com/guides/ergobaby-omni-breeze-positions-by-age",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "authoredContentPresent": true,
+    "unsupportedReviewSchema": false,
+    "passed": true
+  },
+  {
+    "url": "https://smarthome.madabase.com/reviews/aqara-presence-multi-sensor-fp300",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:46:13.042446+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "HIT",
+    "ray": "a49c0af1cdbe680c-SJC",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://smarthome.madabase.com/reviews/aqara-presence-multi-sensor-fp300",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "authoredContentPresent": true,
+    "unsupportedReviewSchema": false,
+    "passed": true
+  },
+  {
+    "url": "https://smarthome.madabase.com/reviews/aqara-presence-multi-sensor-fp300",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:46:13.107954+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "MISS",
+    "ray": "a49c0aeded64e196-SJC",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://smarthome.madabase.com/reviews/aqara-presence-multi-sensor-fp300",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "authoredContentPresent": true,
+    "unsupportedReviewSchema": false,
+    "passed": true
+  },
+  {
+    "url": "https://pets.madabase.com/guides/automatic-feeder-cleaning-checklist",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:46:15.843534+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "MISS",
+    "ray": "a49c0b014f192517-SJC",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://pets.madabase.com/guides/automatic-feeder-cleaning-checklist",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "authoredContentPresent": true,
+    "unsupportedReviewSchema": false,
+    "passed": true
+  },
+  {
+    "url": "https://pets.madabase.com/guides/automatic-feeder-cleaning-checklist",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:46:16.534184+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "HIT",
+    "ray": "a49c0b035b4f15f1-SJC",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://pets.madabase.com/guides/automatic-feeder-cleaning-checklist",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "authoredContentPresent": true,
+    "unsupportedReviewSchema": false,
+    "passed": true
+  },
+  {
+    "url": "https://style.madabase.com/guides/mini-backpack-capacity-measurement-guide",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:46:18.560140+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "MISS",
+    "ray": "a49c0b14df9ed005-SJC",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://style.madabase.com/guides/mini-backpack-capacity-measurement-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "authoredContentPresent": true,
+    "unsupportedReviewSchema": false,
+    "passed": true
+  },
+  {
+    "url": "https://style.madabase.com/guides/mini-backpack-capacity-measurement-guide",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:46:18.663688+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "HIT",
+    "ray": "a49c0b191e4d2832-SJC",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://style.madabase.com/guides/mini-backpack-capacity-measurement-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "authoredContentPresent": true,
+    "unsupportedReviewSchema": false,
+    "passed": true
+  },
+  {
+    "url": "https://costumes.madabase.com/guides/when-to-order-a-halloween-costume",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:46:21.793555+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "HIT",
+    "ray": "a49c0b2668a0eb29-SJC",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://costumes.madabase.com/guides/when-to-order-a-halloween-costume",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "authoredContentPresent": true,
+    "unsupportedReviewSchema": false,
+    "passed": true
+  },
+  {
+    "url": "https://costumes.madabase.com/guides/when-to-order-a-halloween-costume",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:46:21.893277+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "MISS",
+    "ray": "a49c0b250db9eb28-SJC",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://costumes.madabase.com/guides/when-to-order-a-halloween-costume",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "authoredContentPresent": true,
+    "unsupportedReviewSchema": false,
+    "passed": true
+  },
+  {
+    "url": "https://costumes.madabase.com/guides/props-and-animatronics-vs-alternatives",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:46:24.329225+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "HIT",
+    "ray": "a49c0b391ffb250d-SJC",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://costumes.madabase.com/guides/props-and-animatronics-vs-alternatives",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "authoredContentPresent": true,
+    "unsupportedReviewSchema": false,
+    "passed": true
+  },
+  {
+    "url": "https://costumes.madabase.com/guides/props-and-animatronics-vs-alternatives",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:46:24.663669+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "MISS",
+    "ray": "a49c0b3758d42a56-SJC",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://costumes.madabase.com/guides/props-and-animatronics-vs-alternatives",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "authoredContentPresent": true,
+    "unsupportedReviewSchema": false,
+    "passed": true
+  },
+  {
+    "url": "https://costumes.madabase.com/guides/props-and-animatronics-buying-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://costumes.madabase.com/guides/props-and-animatronics-vs-alternatives",
+    "checkedAt": "2026-10-13T05:46:27.209998+00:00",
+    "status": 308,
+    "location": "/guides/props-and-animatronics-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49c0b46eb37c236-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://costumes.madabase.com/guides/props-and-animatronics-compatibility-and-fit-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://costumes.madabase.com/guides/props-and-animatronics-vs-alternatives",
+    "checkedAt": "2026-10-13T05:46:28.814684+00:00",
+    "status": 308,
+    "location": "/guides/props-and-animatronics-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49c0b4ffa99dc3c-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://costumes.madabase.com/guides/props-and-animatronics-ownership-cost-and-maintenance",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://costumes.madabase.com/guides/props-and-animatronics-vs-alternatives",
+    "checkedAt": "2026-10-13T05:46:29.313709+00:00",
+    "status": 308,
+    "location": "/guides/props-and-animatronics-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49c0b529a6e8ea2-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://baby.madabase.com/sitemap.xml",
+    "kind": "sitemap",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:46:30.524597+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "DYNAMIC",
+    "ray": "a49c0b5a3fd3df26-SJC",
+    "xRobotsTag": null,
+    "missingOrDuplicateTargets": [],
+    "remainingSources": [],
+    "passed": true
+  },
+  {
+    "url": "https://baby.madabase.com/robots.txt",
+    "kind": "robots",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:46:31.818510+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "MISS",
+    "ray": "a49c0b63db741ff0-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://costumes.madabase.com/sitemap.xml",
+    "kind": "sitemap",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:46:33.061856+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "DYNAMIC",
+    "ray": "a49c0b6b5e6b9cd0-SJC",
+    "xRobotsTag": null,
+    "missingOrDuplicateTargets": [],
+    "remainingSources": [],
+    "passed": true
+  },
+  {
+    "url": "https://costumes.madabase.com/robots.txt",
+    "kind": "robots",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:46:34.163950+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "MISS",
+    "ray": "a49c0b72992fed36-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/sitemap.xml",
+    "kind": "sitemap",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:46:35.513900+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "DYNAMIC",
+    "ray": "a49c0b7b88c0eb29-SJC",
+    "xRobotsTag": null,
+    "missingOrDuplicateTargets": [],
+    "remainingSources": [],
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/robots.txt",
+    "kind": "robots",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:46:36.310093+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "UPDATING",
+    "ray": "a49c0b7e889eeb31-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/sitemap.xml",
+    "kind": "sitemap",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:46:37.858694+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "DYNAMIC",
+    "ray": "a49c0b88be2f4809-SJC",
+    "xRobotsTag": null,
+    "missingOrDuplicateTargets": [],
+    "remainingSources": [],
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/robots.txt",
+    "kind": "robots",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:46:38.153322+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "MISS",
+    "ray": "a49c0b8aab9a17e8-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://pets.madabase.com/sitemap.xml",
+    "kind": "sitemap",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:46:39.843552+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "DYNAMIC",
+    "ray": "a49c0b950af47543-SJC",
+    "xRobotsTag": null,
+    "missingOrDuplicateTargets": [],
+    "remainingSources": [],
+    "passed": true
+  },
+  {
+    "url": "https://pets.madabase.com/robots.txt",
+    "kind": "robots",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:46:40.716318+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "MISS",
+    "ray": "a49c0b9bcee67542-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://smarthome.madabase.com/sitemap.xml",
+    "kind": "sitemap",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:46:42.719004+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "DYNAMIC",
+    "ray": "a49c0bb05cf16e82-SJC",
+    "xRobotsTag": null,
+    "missingOrDuplicateTargets": [],
+    "remainingSources": [],
+    "passed": true
+  },
+  {
+    "url": "https://smarthome.madabase.com/robots.txt",
+    "kind": "robots",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:46:42.888775+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "UPDATING",
+    "ray": "a49c0ba90a668ac8-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://style.madabase.com/sitemap.xml",
+    "kind": "sitemap",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:46:44.353677+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "DYNAMIC",
+    "ray": "a49c0bb0cc3567f6-SJC",
+    "xRobotsTag": null,
+    "missingOrDuplicateTargets": [],
+    "remainingSources": [],
+    "passed": true
+  },
+  {
+    "url": "https://style.madabase.com/robots.txt",
+    "kind": "robots",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:46:46.748199+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "MISS",
+    "ray": "a49c0bc109a7d56a-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://madabase.com/",
+    "kind": "health",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:46:47.113315+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "DYNAMIC",
+    "ray": "a49c0bc9efdf9447-SJC",
+    "xRobotsTag": null,
+    "passed": true
+  }
+]

@@ -1,0 +1,117 @@
+[
+  {
+    "url": "https://homeoffice.madabase.com/guides/monitor-arm-clamp-reinforcement-guide",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:49:36.995363+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "HIT",
+    "ray": "a49c0fec1a959452-SJC",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://homeoffice.madabase.com/guides/monitor-arm-clamp-reinforcement-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "authoredContentPresent": true,
+    "unsupportedReviewSchema": false,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/monitor-arm-clamp-reinforcement-guide",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:49:39.914808+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "HIT",
+    "ray": "a49c0ffcab9dfa49-SJC",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://homeoffice.madabase.com/guides/monitor-arm-clamp-reinforcement-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "authoredContentPresent": true,
+    "unsupportedReviewSchema": false,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/portable-monitor-usb-c-dp-alt-mode-displaylink-guide",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:49:41.859499+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "HIT",
+    "ray": "a49c100aba7e7e2d-SJC",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://homeoffice.madabase.com/guides/portable-monitor-usb-c-dp-alt-mode-displaylink-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "authoredContentPresent": true,
+    "unsupportedReviewSchema": false,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/portable-monitor-usb-c-dp-alt-mode-displaylink-guide",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:49:44.068701+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "HIT",
+    "ray": "a49c1015aba3c132-SJC",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://homeoffice.madabase.com/guides/portable-monitor-usb-c-dp-alt-mode-displaylink-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "authoredContentPresent": true,
+    "unsupportedReviewSchema": false,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/best/logitech-litra-glow-vs-elgato-key-light-neo",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T05:49:45.811586+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "HIT",
+    "ray": "a49c101f28219452-SJC",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://homeoffice.madabase.com/best/logitech-litra-glow-vs-elgato-key-light-neo",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "authoredContentPresent": true,
+    "unsupportedReviewSchema": false,
+    "passed": true
+  }
+]
