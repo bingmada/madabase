@@ -1,0 +1,26 @@
+{
+  "status": "immutable-prepared-awaiting-main-maintenance-approval",
+  "sourceCommit": "4604bf6",
+  "runtimeCommit": "3ddb75d66d84ebf9b89b7eb026dfb1e4d8baaada",
+  "oldRelease": "/srv/madabase-affiliate/releases/portfolio-20261008-costume-fix-bfb8689e4a63d5368036ef6e829fe492b840d919",
+  "preparedRelease": "/srv/madabase-affiliate/releases/focus-20261013-3ddb75d66d84ebf9b89b7eb026dfb1e4d8baaada",
+  "archiveBytes": 60930332,
+  "sha256": "c64977b6e847df3b0bf810e643fef68fbc9185211d8630cecf42e4a50403b60e",
+  "preparedAt": "2026-10-13T12:17:18+0000",
+  "retainedOldStaticAssets": 31,
+  "productionActivationPerformed": false,
+  "productionServicesStopped": false,
+  "mainMaintenanceApproval": "requested-in-this-chat; no answer yet",
+  "singleProcessForecastMiB": 715.3,
+  "maintenanceForecast": {
+    "availableMiB": 297.9501953125,
+    "reclaimableAnonymousMiB": 492.546875,
+    "projectedAvailableMiB": 790.51171875,
+    "requiredForecastMiB": 768,
+    "pressureAvg10": 0,
+    "sliceHeadroom": "unlimited"
+  },
+  "proposedAction": "Pause Main only, run guarded single-process Affiliate cutover with 150s rollback watchdog, verify 14 targets/33 redirects/7 sitemaps, restore Main in finally and with independent 180s recovery timer. Recheck capacity at activation; retain old release for rollback.",
+  "nextCommandAfterExplicitApproval": "python3 /var/tmp/madabase-seo-focus-20261013-maintenance.py activate",
+  "afterActivation": "Verify service WorkingDirectory, Main restoration, origin acceptances, all changed public URLs, redirects and sitemaps. Then update durable records. No indexing submission yet."
+}

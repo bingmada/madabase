@@ -5482,7 +5482,7 @@
     "nextAction": "Finish bounded Google live inspection and cache-isolation checks; commit published acceptance evidence. Search ranking and indexing refresh remain observation items."
   },
   "focusedSeoRecovery20261013": {
-    "status": "locally-validated-ready-for-immutable-prepare",
+    "status": "immutable-prepared-awaiting-main-maintenance-approval",
     "authorization": "Owner asked to perform existing-page optimization, overlap consolidation and substantive decision-content repair; cover other themes and preserve quality.",
     "scope": {
       "sites": 7,
@@ -5510,11 +5510,12 @@
       "sha256": "c64977b6e847df3b0bf810e643fef68fbc9185211d8630cecf42e4a50403b60e"
     },
     "capacity": {
-      "availableMiB": 290.6,
-      "affiliateReclaimableMiB": 424.7,
-      "forecastMiB": 715.3,
+      "availableMiB": 297.9501953125,
+      "reclaimableAnonymousMiB": 492.546875,
+      "projectedAvailableMiB": 790.51171875,
       "requiredForecastMiB": 768,
-      "action": "Immutable prepare is safe; do not activate under insufficient capacity. Complete concrete prepare before asking for any new main-site maintenance window."
+      "pressureAvg10": 0,
+      "sliceHeadroom": "unlimited"
     },
     "reviewGates": {
       "day7": "2026-10-20",
@@ -5524,6 +5525,12 @@
     "servicesUnchanged": true,
     "indexNow": "not-submitted",
     "requestIndexing": false,
-    "conversionPlatforms": "not-due-for-this-search-content-repair; no merchant, attribution, or commission claim changed."
+    "conversionPlatforms": "not-due-for-this-search-content-repair; no merchant, attribution, or commission claim changed.",
+    "deploymentRecord": "apps/affiliate/reports/seo-focus-2026-10-13/deployment.json",
+    "sourceCommit": "4604bf6",
+    "runtimeCommit": "3ddb75d66d84ebf9b89b7eb026dfb1e4d8baaada",
+    "preparedRelease": "/srv/madabase-affiliate/releases/focus-20261013-3ddb75d66d84ebf9b89b7eb026dfb1e4d8baaada",
+    "rollbackRelease": "/srv/madabase-affiliate/releases/portfolio-20261008-costume-fix-bfb8689e4a63d5368036ef6e829fe492b840d919",
+    "mainMaintenanceApproval": "requested-in-this-chat; no answer yet"
   }
 }

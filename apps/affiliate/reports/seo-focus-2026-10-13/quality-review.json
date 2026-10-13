@@ -62,5 +62,5 @@
     "archiveBytes": 60930332,
     "sha256": "c64977b6e847df3b0bf810e643fef68fbc9185211d8630cecf42e4a50403b60e"
   },
-  "production": "Not changed yet. Single-process forecast 715.3 MiB, below unchanged 768 MiB gate. Immutable prepare precedes maintenance approval."
+  "production": "Archive SHA-256 matched and immutable release prepared; current production remains unchanged pending new Main-maintenance approval."
 }
