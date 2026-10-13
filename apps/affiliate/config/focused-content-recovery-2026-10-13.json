@@ -1,0 +1,573 @@
+{
+  "version": 1,
+  "authorizedAt": "2026-10-13",
+  "action": "all-seven-sites-tailored-existing-content-repair",
+  "sourceWindow": "2026-09-13 through 2026-10-10",
+  "aggregationBoundary": "Page-filtered UI headline values differ from page-row exports; missing visible queries can be privacy suppression and is not evidence of no demand. No exact-query position is inferred from page average.",
+  "scope": {
+    "changedCanonicals": 14,
+    "newRoutes": 0,
+    "basePermanentRedirects": 9,
+    "sites": [
+      "homeoffice",
+      "network",
+      "baby",
+      "smarthome",
+      "pet",
+      "style",
+      "costume"
+    ]
+  },
+  "reviewGates": {
+    "day7": "2026-10-20",
+    "day14": "2026-10-27",
+    "day30": "2026-11-12"
+  },
+  "requestIndexing": false,
+  "pages": [
+    {
+      "site": "homeoffice",
+      "kind": "guide",
+      "slug": "48-vs-55-inch-desk-guide",
+      "url": "https://homeoffice.madabase.com/guides/48-vs-55-inch-desk-guide",
+      "titlePreserved": true,
+      "seoTitlePreserved": true,
+      "baselinePageRows": {
+        "clicks": "3",
+        "impressions": "36",
+        "ctr_percent": "8.33",
+        "position": "7.06",
+        "band": "protect-and-convert"
+      },
+      "pageFilteredEvidence": {
+        "visibleQueries": [
+          "is 48 inches enough?"
+        ],
+        "pageClicks": 3,
+        "pageImpressions": 36,
+        "pagePosition": 7.1
+      },
+      "defect": "No worked width calculation or equipment/room worksheet.",
+      "change": "repair-guide",
+      "sources": [
+        {
+          "name": "OSHA: computer monitors",
+          "url": "https://www.osha.gov/etools/computer-workstations/components/monitors",
+          "note": "Viewing-distance and placement guidance; the screen-width examples are our calculations."
+        },
+        {
+          "name": "OSHA: desk and work-surface checks",
+          "url": "https://www.osha.gov/etools/computer-workstations/components/desks",
+          "note": "Work area and clearance guidance, not approval of a particular desk."
+        }
+      ],
+      "sourceCheckedAt": "2026-10-13"
+    },
+    {
+      "site": "homeoffice",
+      "kind": "guide",
+      "slug": "usb-c-dock-vs-monitor-hub-guide",
+      "url": "https://homeoffice.madabase.com/guides/usb-c-dock-vs-monitor-hub-guide",
+      "titlePreserved": true,
+      "seoTitlePreserved": true,
+      "baselinePageRows": {
+        "clicks": "0",
+        "impressions": "8",
+        "ctr_percent": "0",
+        "position": "9.62",
+        "band": "low-sample-observe"
+      },
+      "pageFilteredEvidence": {
+        "visibleQueries": [],
+        "pageClicks": 0,
+        "pageImpressions": 8,
+        "pagePosition": 9.6
+      },
+      "defect": "Column/value mismatch and incomplete charging/replacement decision.",
+      "change": "repair-guide",
+      "sources": [
+        {
+          "name": "VESA: DisplayPort FAQ",
+          "url": "https://www.displayport.org/faq/",
+          "note": "USB-C display capability depends on the host and connection path."
+        },
+        {
+          "name": "Apple: external displays on MacBook Pro",
+          "url": "https://support.apple.com/en-us/101571",
+          "note": "A dock does not remove the host model's native display limits."
+        }
+      ],
+      "sourceCheckedAt": "2026-10-13"
+    },
+    {
+      "site": "homeoffice",
+      "kind": "guide",
+      "slug": "macbook-dual-monitor-dock-chip-compatibility-guide",
+      "url": "https://homeoffice.madabase.com/guides/macbook-dual-monitor-dock-chip-compatibility-guide",
+      "titlePreserved": true,
+      "seoTitlePreserved": true,
+      "baselinePageRows": {
+        "clicks": "",
+        "impressions": "",
+        "ctr_percent": "",
+        "position": "",
+        "band": "zero-impression"
+      },
+      "pageFilteredEvidence": {
+        "visibleQueries": [],
+        "pageClicks": 0,
+        "pageImpressions": 0
+      },
+      "defect": "Chip support vague for M4/M5; Ultra not a MacBook chip.",
+      "change": "repair-guide",
+      "sources": [
+        {
+          "name": "Apple: MacBook Pro external display support",
+          "url": "https://support.apple.com/en-us/101571",
+          "note": "Current chip-specific counts and resolution combinations."
+        },
+        {
+          "name": "Apple: MacBook Air external display support",
+          "url": "https://support.apple.com/en-us/122212",
+          "note": "M4/M5 Air open-lid support and links to older model requirements."
+        },
+        {
+          "name": "Apple: M3 dual-monitor closed-lid setup",
+          "url": "https://support.apple.com/en-us/117373",
+          "note": "Use the supported software and connection procedure for the exact M3 model."
+        },
+        {
+          "name": "Apple: 2021 MacBook Pro technical specifications",
+          "url": "https://support.apple.com/en-us/111902",
+          "note": "M1 Pro and M1 Max display-count limits."
+        },
+        {
+          "name": "Plugable: Apple silicon display support",
+          "url": "https://kb.plugable.com/understanding-external-display-support-on-apple-m1-m2-m3-and-m4-chips",
+          "note": "Dock-vendor explanation of the base M1/M2 limit and USB graphics; use Apple's model specifications for current display combinations."
+        }
+      ],
+      "sourceCheckedAt": "2026-10-13"
+    },
+    {
+      "site": "homeoffice",
+      "kind": "guide",
+      "slug": "monitor-arm-clamp-reinforcement-guide",
+      "url": "https://homeoffice.madabase.com/guides/monitor-arm-clamp-reinforcement-guide",
+      "titlePreserved": true,
+      "seoTitlePreserved": true,
+      "baselinePageRows": {
+        "clicks": "1",
+        "impressions": "51",
+        "ctr_percent": "1.96",
+        "position": "6.92",
+        "band": "protect-and-convert"
+      },
+      "pageFilteredEvidence": {
+        "visibleQueries": [],
+        "pageClicks": 1,
+        "pageImpressions": 51,
+        "pagePosition": 6.9
+      },
+      "defect": "Missing model-specific clamp geometry, combined plate thickness and underside check.",
+      "change": "repair-guide",
+      "sources": [
+        {
+          "name": "Ergotron: HX attachment dimensions",
+          "url": "https://www.ergotron.com/portals/0/literature/guidelines/choose-attachment-hx.pdf",
+          "note": "A model-specific attachment example; use your own arm and desk instructions for approval and limits."
+        }
+      ],
+      "sourceCheckedAt": "2026-10-13"
+    },
+    {
+      "site": "homeoffice",
+      "kind": "guide",
+      "slug": "portable-monitor-usb-c-dp-alt-mode-displaylink-guide",
+      "url": "https://homeoffice.madabase.com/guides/portable-monitor-usb-c-dp-alt-mode-displaylink-guide",
+      "titlePreserved": true,
+      "seoTitlePreserved": true,
+      "baselinePageRows": {
+        "clicks": "0",
+        "impressions": "81",
+        "ctr_percent": "0",
+        "position": "8.33",
+        "band": "page-one-zero-click"
+      },
+      "pageFilteredEvidence": {
+        "visibleQueries": [
+          "dp alt mode driver",
+          "displaylink vs dp alt mode",
+          "dp alt mode drivers",
+          "displaylink vs alt mode",
+          "what is displaylink and when do i need it vs native usb-c dp alt mode",
+          "how to use displaylink"
+        ],
+        "pageClicks": 0,
+        "pageImpressions": 81,
+        "pagePosition": 8.3
+      },
+      "defect": "Missing authoritative driver/path matrix and direction/power diagnostics.",
+      "change": "repair-guide",
+      "sources": [
+        {
+          "name": "VESA: DisplayPort FAQ",
+          "url": "https://www.displayport.org/faq/",
+          "note": "DisplayPort over USB-C and host-port capabilities."
+        },
+        {
+          "name": "ASUS: USB monitor connection and driver paths",
+          "url": "https://www.asus.com/support/faq/1048768/",
+          "note": "Distinguishes DP Alt Mode from USB graphics driver requirements."
+        },
+        {
+          "name": "ASUS: MB16ACV software and driver downloads",
+          "url": "https://www.asus.com/supportonly/mb16acv/helpdesk_download/",
+          "note": "Model-specific hybrid connection example; not a rule for every portable monitor."
+        }
+      ],
+      "sourceCheckedAt": "2026-10-13"
+    },
+    {
+      "site": "homeoffice",
+      "kind": "roundup",
+      "slug": "logitech-litra-glow-vs-elgato-key-light-neo",
+      "url": "https://homeoffice.madabase.com/best/logitech-litra-glow-vs-elgato-key-light-neo",
+      "titlePreserved": true,
+      "seoTitlePreserved": true,
+      "baselinePageRows": {
+        "clicks": "3",
+        "impressions": "77",
+        "ctr_percent": "3.9",
+        "position": "6.51",
+        "band": "protect-and-convert"
+      },
+      "pageFilteredEvidence": {
+        "visibleQueries": [
+          "elgato key light neo vs logitech litra glow",
+          "elgato key light vs logitech litra",
+          "logitech litra glow vs elgato key light neo"
+        ],
+        "pageClicks": 3,
+        "pageImpressions": 77,
+        "pagePosition": 6.5
+      },
+      "defect": "Missing verified power-dependent output table; methodology implied a test.",
+      "change": "repair-roundup",
+      "sources": [
+        {
+          "name": "Logitech: Litra Glow specifications",
+          "url": "https://support.logi.com/hc/en-gb/articles/4418106727447-Specification-Litra-Glow",
+          "note": "Output, colour range, USB requirement, mount and G HUB support."
+        },
+        {
+          "name": "Elgato: Key Light Neo brightness information",
+          "url": "https://help.elgato.com/hc/en-us/articles/25946490270477-Elgato-Key-Light-Neo-Brightness-Information",
+          "note": "400/700/1,000-lumen modes, power requirements and separately supplied accessories."
+        },
+        {
+          "name": "Elgato: Key Light Neo quick-start guide",
+          "url": "https://www.elgato.com/us/en/explorer/products/lighting/elgato-key-light-neo-quick-start-guide/",
+          "note": "Connection and control setup; use the documented power path."
+        }
+      ],
+      "sourceCheckedAt": "2026-10-13"
+    },
+    {
+      "site": "network",
+      "kind": "guide",
+      "slug": "pcie-wifi-adapters-vs-alternatives",
+      "url": "https://network.madabase.com/guides/pcie-wifi-adapters-vs-alternatives",
+      "titlePreserved": true,
+      "seoTitlePreserved": true,
+      "baselinePageRows": {
+        "clicks": "",
+        "impressions": "",
+        "ctr_percent": "",
+        "position": "",
+        "band": "zero-impression"
+      },
+      "pageFilteredEvidence": {
+        "visibleQueries": [],
+        "pageClicks": 0,
+        "pageImpressions": 0
+      },
+      "defect": "Four overlapping templates; missing exact slot/Bluetooth-header/revision checks.",
+      "change": "repair-guide",
+      "sources": [
+        {
+          "name": "TP-Link: Archer TXE75E installation guide",
+          "url": "https://www.tp-link.com/kz/document/27676/",
+          "note": "Exact PCIe-slot, bracket and Bluetooth USB-header example."
+        },
+        {
+          "name": "TP-Link US: Archer TXE75E V1 support",
+          "url": "https://www.tp-link.com/us/support/download/archer-txe75e/v1/",
+          "note": "Match hardware revision, operating system and region before selecting drivers."
+        }
+      ],
+      "sourceCheckedAt": "2026-10-13"
+    },
+    {
+      "site": "network",
+      "kind": "guide",
+      "slug": "direct-attach-copper-cables-vs-alternatives",
+      "url": "https://network.madabase.com/guides/direct-attach-copper-cables-vs-alternatives",
+      "titlePreserved": true,
+      "seoTitlePreserved": true,
+      "baselinePageRows": {
+        "clicks": "",
+        "impressions": "",
+        "ctr_percent": "",
+        "position": "",
+        "band": "zero-impression"
+      },
+      "pageFilteredEvidence": {
+        "visibleQueries": [],
+        "pageClicks": 0,
+        "pageImpressions": 0
+      },
+      "defect": "Unrelated radio/subscription language and incomplete two-endpoint support check.",
+      "change": "repair-guide",
+      "sources": [
+        {
+          "name": "Cisco: 10G SFP+ module and cable data sheet",
+          "url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html",
+          "note": "Specific passive/active cable examples and optical standards; not a universal compatibility promise."
+        },
+        {
+          "name": "Cisco: optics-to-device compatibility matrix",
+          "url": "https://tmgmatrix.cisco.com/?npid=10",
+          "note": "Use a device-specific support record; other vendors require their own lists."
+        }
+      ],
+      "sourceCheckedAt": "2026-10-13"
+    },
+    {
+      "site": "baby",
+      "kind": "guide",
+      "slug": "ergobaby-omni-breeze-positions-by-age",
+      "url": "https://baby.madabase.com/guides/ergobaby-omni-breeze-positions-by-age",
+      "titlePreserved": true,
+      "seoTitlePreserved": true,
+      "baselinePageRows": {
+        "clicks": "2",
+        "impressions": "96",
+        "ctr_percent": "2.08",
+        "position": "7.59",
+        "band": "protect-and-convert"
+      },
+      "pageFilteredEvidence": {
+        "visibleQueries": [
+          "ergobaby omni breeze back carry age",
+          "ergobaby front facing carrier",
+          "ergobaby omni breeze age range",
+          "ergobaby carrier positions by age",
+          "ergobaby omni breeze newborn position",
+          "ergobaby omni breeze positions",
+          "billeder",
+          "ergobaby omni breeze age",
+          "ergobaby omni positions",
+          "pictures pls"
+        ],
+        "pageClicks": 2,
+        "pageImpressions": 96,
+        "pagePosition": 7.6
+      },
+      "defect": "Missing complete mode-specific size/readiness table for observed back-carry query.",
+      "change": "repair-guide",
+      "sources": [
+        {
+          "name": "Ergobaby: Omni Breeze positions and size FAQ",
+          "url": "https://ergobaby.com/omni-breeze-baby-carrier-all",
+          "note": "Mode-specific size and developmental requirements checked October 13, 2026; follow the instructions supplied with the exact carrier."
+        }
+      ],
+      "sourceCheckedAt": "2026-10-13"
+    },
+    {
+      "site": "smarthome",
+      "kind": "product",
+      "slug": "aqara-presence-multi-sensor-fp300",
+      "url": "https://smarthome.madabase.com/reviews/aqara-presence-multi-sensor-fp300",
+      "titlePreserved": true,
+      "seoTitlePreserved": true,
+      "baselinePageRows": {
+        "clicks": "0",
+        "impressions": "17",
+        "ctr_percent": "0",
+        "position": "13.59",
+        "band": "page-two-push"
+      },
+      "pageFilteredEvidence": {
+        "visibleQueries": [
+          "aqara fp300 price"
+        ],
+        "pageClicks": 0,
+        "pageImpressions": 17,
+        "pagePosition": 13.6
+      },
+      "defect": "Missing protocol-switch data-loss caveat, lab conditions and platform/price checklist.",
+      "change": "repair-product",
+      "sources": [
+        {
+          "name": "Aqara US: Presence Multi-Sensor FP300",
+          "url": "https://us.aqara.com/products/presence-multi-sensor-fp300",
+          "note": "US product specifications and mode-dependent battery estimates."
+        },
+        {
+          "name": "Aqara: FP300 help centre and FAQ",
+          "url": "https://store-support.aqara.com/products/multi-presence-sensor-fp300",
+          "note": "Official support, lab assumptions and absence-confirmation caveats."
+        },
+        {
+          "name": "Aqara: FP300 English user manual",
+          "url": "https://cdn.shopify.com/s/files/1/0710/9220/7830/files/Presence_Multi-Sensor_FP300_User_Manual-EN.pdf?v=1762828282",
+          "note": "Controller requirements, protocol-switch data loss and safe setup instructions. Region-specific limits must be checked."
+        },
+        {
+          "name": "Aqara: connecting FP300 to third-party platforms",
+          "url": "https://cdn.shopify.com/s/files/1/0710/9220/7830/files/How_to_Connect_to_Third-Party_Platforms.pdf?v=1780542797",
+          "note": "Platform-specific prerequisites and connection paths."
+        }
+      ],
+      "sourceCheckedAt": "2026-10-13"
+    },
+    {
+      "site": "pet",
+      "kind": "guide",
+      "slug": "automatic-feeder-cleaning-checklist",
+      "url": "https://pets.madabase.com/guides/automatic-feeder-cleaning-checklist",
+      "titlePreserved": true,
+      "seoTitlePreserved": true,
+      "baselinePageRows": {
+        "clicks": "",
+        "impressions": "",
+        "ctr_percent": "",
+        "position": "",
+        "band": "zero-impression"
+      },
+      "pageFilteredEvidence": {
+        "visibleQueries": [],
+        "pageClicks": 0,
+        "pageImpressions": 0
+      },
+      "defect": "Missing exact washable-parts and no-wet-wipe model boundaries.",
+      "change": "repair-guide",
+      "sources": [
+        {
+          "name": "FDA: proper storage of pet food and treats",
+          "url": "https://www.fda.gov/animal-veterinary/animal-health-literacy/proper-storage-pet-food-treats",
+          "note": "Bowl and utensil hygiene; not instructions for washing feeder electronics."
+        },
+        {
+          "name": "PETLIBRO: Granary AF103 / PLAF103 cleaning",
+          "url": "https://petlibro.com/pages/how-do-i-disassemble-and-clean-the-granary-smart-feeder-af103-plaf103",
+          "note": "Removable-parts sequence and powered-base washing restriction."
+        },
+        {
+          "name": "PETLIBRO: One RFID AF301 / PLAF301 cleaning",
+          "url": "https://petlibro.com/pages/how-do-i-disassemble-and-clean-the-one-rfid-pet-feeder-af301-plaf301",
+          "note": "Base, RFID-tag and reader restrictions; complete-drying requirement."
+        }
+      ],
+      "sourceCheckedAt": "2026-10-13"
+    },
+    {
+      "site": "style",
+      "kind": "guide",
+      "slug": "mini-backpack-capacity-measurement-guide",
+      "url": "https://style.madabase.com/guides/mini-backpack-capacity-measurement-guide",
+      "titlePreserved": true,
+      "seoTitlePreserved": true,
+      "baselinePageRows": {
+        "clicks": "",
+        "impressions": "",
+        "ctr_percent": "",
+        "position": "",
+        "band": "zero-impression"
+      },
+      "pageFilteredEvidence": {
+        "visibleQueries": [],
+        "pageClicks": 0,
+        "pageImpressions": 0
+      },
+      "defect": "No sources or worked external-versus-usable calculation.",
+      "change": "repair-guide",
+      "sources": [
+        {
+          "name": "Loungefly: Hello Kitty Gingham Mini Backpack SANBK0463",
+          "url": "https://loungefly.com/hello-kitty-gingham-mini-backpack/SANBK0463.html",
+          "note": "Exact exterior dimensions and bottom-width measurement; the bounding-box calculation is ours, not tested usable capacity."
+        }
+      ],
+      "sourceCheckedAt": "2026-10-13"
+    },
+    {
+      "site": "costume",
+      "kind": "guide",
+      "slug": "when-to-order-a-halloween-costume",
+      "url": "https://costumes.madabase.com/guides/when-to-order-a-halloween-costume",
+      "titlePreserved": true,
+      "seoTitlePreserved": true,
+      "baselinePageRows": {
+        "clicks": "",
+        "impressions": "",
+        "ctr_percent": "",
+        "position": "",
+        "band": "zero-impression"
+      },
+      "pageFilteredEvidence": {
+        "visibleQueries": [],
+        "pageClicks": 0,
+        "pageImpressions": 0
+      },
+      "defect": "No current merchant handling evidence or dated assumption-labelled backward plan.",
+      "change": "repair-guide",
+      "sources": [
+        {
+          "name": "AbracadabraNYC: shipping and local pickup information",
+          "url": "https://abracadabranyc.com/pages/shipping-pick-up-info",
+          "note": "Current processing and carrier caveats checked October 13, 2026. Our dated example uses explicit assumptions and is not a merchant delivery promise."
+        }
+      ],
+      "sourceCheckedAt": "2026-10-13"
+    },
+    {
+      "site": "costume",
+      "kind": "guide",
+      "slug": "props-and-animatronics-vs-alternatives",
+      "url": "https://costumes.madabase.com/guides/props-and-animatronics-vs-alternatives",
+      "titlePreserved": true,
+      "seoTitlePreserved": true,
+      "baselinePageRows": {
+        "clicks": "",
+        "impressions": "",
+        "ctr_percent": "",
+        "position": "",
+        "band": "zero-impression"
+      },
+      "pageFilteredEvidence": {
+        "visibleQueries": [],
+        "pageClicks": 0,
+        "pageImpressions": 0
+      },
+      "defect": "Overlapping four-role templates; no complete movement/power/storage/arrival decision.",
+      "change": "repair-guide",
+      "sources": [
+        {
+          "name": "CPSC: household extension-cord fire prevention",
+          "url": "https://www.cpsc.gov/safety-education/safety-guides/electronics-and-electrical-home-fire/household-extension-cords-can",
+          "note": "General electrical boundary; the exact prop's manual controls installation, movement clearance and environmental approval."
+        },
+        {
+          "name": "AbracadabraNYC: shipping and pickup information",
+          "url": "https://abracadabranyc.com/pages/shipping-pick-up-info",
+          "note": "Handling and delivery constraints; no guarantee of a particular prop's stock or arrival."
+        }
+      ],
+      "sourceCheckedAt": "2026-10-13"
+    }
+  ],
+  "discoveryLinkRepairs": []
+}

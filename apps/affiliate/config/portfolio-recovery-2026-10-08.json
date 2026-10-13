@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-10-08T23:30:00+08:00",
+  "updatedAt": "2026-10-13",
   "ownerConstraints": {
     "handsOnTestingAvailable": false,
     "rule": "Do not claim first-hand use, testing, measurements, comfort, durability or performance. Default product evidence to official-spec; use research-synthesis only when every external test preserves its source, setup, result, interpretation and limitation.",
@@ -88,40 +88,66 @@
     "homeoffice": {
       "state": "optimize",
       "priority": 1,
-      "focus": ["desk dimensions and fit", "monitor and dock compatibility", "video-call lighting", "walking-desk stability"]
+      "focus": [
+        "desk dimensions and fit",
+        "monitor and dock compatibility",
+        "video-call lighting",
+        "walking-desk stability"
+      ]
     },
     "baby": {
       "state": "optimize",
       "priority": 2,
-      "focus": ["carrier age and position", "feeding-part capacity and workflow", "exact-model fit and cleaning"],
+      "focus": [
+        "carrier age and position",
+        "feeding-part capacity and workflow",
+        "exact-model fit and cleaning"
+      ],
       "boundary": "Use manufacturer and pediatric safety boundaries; do not turn product research into medical or universal safety advice."
     },
     "network": {
       "state": "optimize-selective",
       "priority": 3,
-      "focus": ["model and port comparisons", "wired backhaul topology", "hardware-version and firmware checks"]
+      "focus": [
+        "model and port comparisons",
+        "wired backhaul topology",
+        "hardware-version and firmware checks"
+      ]
     },
     "smarthome": {
       "state": "optimize-selective",
       "priority": 4,
-      "focus": ["Matter, Thread and Zigbee compatibility", "hub, region, wiring and subscription requirements", "firmware and version differences"]
+      "focus": [
+        "Matter, Thread and Zigbee compatibility",
+        "hub, region, wiring and subscription requirements",
+        "firmware and version differences"
+      ]
     },
     "pet": {
       "state": "maintenance",
       "priority": 5,
-      "focus": ["only repeated page-one or exact-query opportunities", "ownership cost, cleaning and compatibility"],
+      "focus": [
+        "only repeated page-one or exact-query opportunities",
+        "ownership cost, cleaning and compatibility"
+      ],
       "reviewAt": "2026-11-05"
     },
     "style": {
       "state": "maintenance",
       "priority": 6,
-      "focus": ["preserve technical health and distinct sizing/material pages only"],
+      "focus": [
+        "preserve technical health and distinct sizing/material pages only"
+      ],
       "retireReviewAt": "2026-11-05"
     },
     "costume": {
       "state": "seasonal-maintenance",
       "priority": 7,
-      "focus": ["exact merchant identity", "availability and delivery timing", "measured space, fit and included pieces"],
+      "focus": [
+        "exact merchant identity",
+        "availability and delivery timing",
+        "measured space, fit and included pieces"
+      ],
       "seasonReviewAt": "2026-11-05"
     }
   },
@@ -193,5 +219,40 @@
     "targetDirectItemShare": "Material improvement from the 1 of 11 baseline; do not use indirect orders alone.",
     "targetEarningsPerAffiliateClickUsd": 0.1,
     "rule": "The $0.10 target is an internal operating threshold, not an industry guarantee. If the November 5 evidence does not show repeated query clusters and materially better direct-product economics, keep only proven pages and continue maintenance rather than expanding inventory."
+  },
+  "canonicalInventoryCurrent": {
+    "measuredAt": "2026-10-13",
+    "publishedBasePages": 1125,
+    "publishedContentRegistryPages": 1125,
+    "accessibleBaseEditorialPagesIncludingStandalone": 1126,
+    "softLaunchRegistryPagesExcludedFromSitemapAndDiscovery": 5,
+    "standaloneEditorialRoutesOutsideRegistry": 1,
+    "sitemapBaseEditorialPages": 1121,
+    "sites": {
+      "homeoffice": 226,
+      "baby": 225,
+      "network": 165,
+      "smarthome": 238,
+      "pet": 185,
+      "style": 63,
+      "costume": 23
+    },
+    "composition": {
+      "guides": 866,
+      "products": 175,
+      "roundups": 77,
+      "tools": 7
+    },
+    "sitemapBaseEditorialBySite": {
+      "homeoffice": 225,
+      "baby": 224,
+      "network": 164,
+      "smarthome": 237,
+      "pet": 184,
+      "style": 63,
+      "costume": 24
+    },
+    "scope": "October 8 inventory minus nine newly consolidated base guide routes. The October 8 historical baseline and its exposure counts are preserved separately.",
+    "localizedEditions": "Locale editions inherit the evidence and lifecycle decision of their base canonical; they are not independent content-production targets."
   }
 }

@@ -2,6 +2,7 @@ import initialConsolidationData from "../config/search-recovery-consolidations-2
 import day30ConsolidationData from "../config/search-recovery-consolidations-2026-09-08.json";
 import deferredConsolidationData from "../config/deferred-family-consolidations-2026-09-11.json";
 import octoberConsolidationData from "../config/search-recovery-consolidations-2026-10-06.json";
+import focusedConsolidationData from "../config/search-recovery-consolidations-2026-10-13.json";
 import type { Guide, SiteKey } from "./types";
 
 type ConsolidatedFamily = {
@@ -11,7 +12,7 @@ type ConsolidatedFamily = {
   targetSlug: string;
   consolidatedAt: string;
   preservePrimaryFields: boolean;
-  mergeMode?: "full" | "compact";
+  mergeMode?: "full" | "compact" | "curated";
   externalTarget?: boolean;
 };
 
@@ -76,6 +77,15 @@ export const consolidatedFamilies = [
   ...day30ConsolidatedFamilies,
   ...deferredConsolidatedFamilies,
   ...octoberConsolidatedFamilies,
+  ...focusedConsolidationData.families.map((family): ConsolidatedFamily => ({
+    site: family.site as SiteKey,
+    familySlug: family.familySlug,
+    targetRole: family.targetRole as NonNullable<Guide["familyRole"]>,
+    targetSlug: family.targetSlug,
+    consolidatedAt: "October 13, 2026",
+    preservePrimaryFields: true,
+    mergeMode: "curated",
+  })),
 ];
 const consolidatedFamilyByKey = new Map(
   consolidatedFamilies.map((family) => [`${family.site}:${family.familySlug}`, family]),
@@ -137,6 +147,10 @@ export function consolidationTargetSlug(guide: Guide) {
 export function mergeConsolidatedFamilyGuide(guide: Guide, familyGuides: Guide[]) {
   const family = consolidatedFamilyFor(guide);
   if (!family || !isConsolidatedFamilyHub(guide)) return guide;
+
+  // These hubs already incorporate each useful sibling decision in authored
+  // model-specific sections. Re-appending the old template would undo the repair.
+  if (family.mergeMode === "curated") return guide;
 
   const orderedFamilyGuides = familyGuides
     .filter((item) => item.site === guide.site && item.familySlug === guide.familySlug && item.familyRole)

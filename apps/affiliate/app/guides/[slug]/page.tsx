@@ -10,6 +10,7 @@ import { StyleGuidePage } from "@/components/StyleExperience";
 import { TrackedCommerceLink } from "@/components/TrackedCommerceLink";
 import { findGuide, findProduct, findRoundup, findTool, siteGuideFamily, siteGuides } from "@/lib/content";
 import { effectiveContentUpdatedAt, findSearchOpportunity, searchOpportunityMetaDescription } from "@/lib/search-opportunities";
+import { focusedSearchAnswer } from "@/lib/focused-content-recovery";
 import { breadcrumbSchema, guideSchema, itemListSchema, pageMetadata } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 import type { Guide, SiteKey } from "@/lib/types";
@@ -213,6 +214,40 @@ function costumeFamilyCatalogSelection(familySlug: string, category: string) {
   });
 }
 
+function GuideDecisionTable({ table }: { table: Guide["comparisonTable"] }) {
+  if (!table) return null;
+  return (
+          <section className="mt-10">
+            <p className="eyebrow">Side-by-side checks</p>
+            <h2 className="mt-3 text-2xl font-bold">{table.title}</h2>
+            <div className="mt-5 overflow-x-auto rounded-md border border-[var(--border)] bg-white">
+              <table className="w-full min-w-[680px] text-left text-sm">
+                <thead className="bg-[var(--surface-muted)] text-xs uppercase text-[var(--muted)]">
+                  <tr>
+                    <th className="px-4 py-3">Check</th>
+                    {table.columns.map((column) => (
+                      <th className="px-4 py-3" key={column}>{column}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-[var(--border)]">
+                  {table.rows.map((row) => (
+                    <tr key={row.label}>
+                      <th className="px-4 py-4 font-bold">{row.label}</th>
+                      {table?.columns.map((column, index) => (
+                        <td className="px-4 py-4 leading-6 text-[var(--muted)]" key={`${row.label}-${column}`}>
+                          {row.values[index] ?? "Confirm before purchase"}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
+  );
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const site = await getCurrentSite();
   const { slug } = await params;
@@ -242,6 +277,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
     rawGuide.familySlug ? siteGuideFamily(site.key, rawGuide.familySlug) : [rawGuide],
   );
   const consolidatedFamilyHub = isConsolidatedFamilyHub(guide);
+  const tailoredGuide = Boolean(focusedSearchAnswer(site.key, "guide", slug));
   const searchOpportunity = findSearchOpportunity(site.key, "guide", slug);
   const effectiveUpdatedAt = effectiveContentUpdatedAt(guide.updatedAt, searchOpportunity?.updatedAt);
   const effectiveGuide = effectiveUpdatedAt === guide.updatedAt ? guide : { ...guide, updatedAt: effectiveUpdatedAt };
@@ -250,7 +286,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
   const relatedProducts = (guide.relatedProducts ?? [])
     .map((productSlug) => findProduct(site.key, productSlug))
     .filter((product): product is NonNullable<ReturnType<typeof findProduct>> => Boolean(product));
-  const familyGuides = guide.familySlug
+  const familyGuides = !tailoredGuide && guide.familySlug
     ? siteGuides(site.key)
       .filter((item) => item.familySlug === guide.familySlug && item.familyRole)
       .sort((left, right) => familyRoleOrder.indexOf(left.familyRole!) - familyRoleOrder.indexOf(right.familyRole!))
@@ -462,10 +498,11 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         </div>
         <section className="mt-8 rounded-md border border-[var(--brand)] bg-[var(--brand-soft)] p-5" aria-labelledby="guide-quick-answer">
           <p className="eyebrow">Quick answer</p>
-          <h2 className="mt-2 text-xl font-bold" id="guide-quick-answer">The practical answer</h2>
+          <h2 className="mt-2 text-xl font-bold" id="guide-quick-answer">{tailoredGuide ? guide.searchQuestion : "The practical answer"}</h2>
           <p className="mt-3 leading-7 text-[var(--text)]">{directAnswer}</p>
         </section>
-        {consolidatedFamilyHub ? (
+        {tailoredGuide ? <GuideDecisionTable table={guide.comparisonTable} /> : null}
+        {consolidatedFamilyHub && !tailoredGuide ? (
           <section className="mt-8 rounded-md border border-[var(--brand)] bg-[var(--brand-soft)] p-5" data-consolidated-family-hub="true" aria-labelledby="consolidated-family-hub-heading">
             <p className="eyebrow">Complete topic guide</p>
             <h2 className="mt-3 text-2xl font-bold" id="consolidated-family-hub-heading">One page for the complete decision</h2>
@@ -510,13 +547,13 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             </ul>
           </nav>
         ) : null}
-        {guide.searchQuestion ? (
+        {guide.searchQuestion && !tailoredGuide ? (
           <section className="mt-8 rounded-md border border-[var(--brand)] bg-[var(--brand-soft)] p-5" aria-labelledby="guide-search-question">
             <p className="eyebrow">Common buying question</p>
             <h2 className="mt-2 text-2xl font-bold" id="guide-search-question">{guide.searchQuestion}</h2>
           </section>
         ) : null}
-        {searchOpportunity ? <SearchOpportunityBlock opportunity={searchOpportunity} /> : null}
+        {searchOpportunity && !tailoredGuide ? <SearchOpportunityBlock opportunity={searchOpportunity} /> : null}
         <SearchOpportunityBacklinks site={site.key} kind="guide" slug={slug} />
         <BaseMarketEditionLinks site={site} basePath={`/guides/${slug}`} />
         {commerceProduct ? <AmazonListingFreshness site={site.key} productSlug={commerceProduct.slug} /> : null}
@@ -606,36 +643,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             </div>
           </section>
         ) : null}
-        {guide.comparisonTable ? (
-          <section className="mt-10">
-            <p className="eyebrow">Side-by-side checks</p>
-            <h2 className="mt-3 text-2xl font-bold">{guide.comparisonTable.title}</h2>
-            <div className="mt-5 overflow-x-auto rounded-md border border-[var(--border)] bg-white">
-              <table className="w-full min-w-[680px] text-left text-sm">
-                <thead className="bg-[var(--surface-muted)] text-xs uppercase text-[var(--muted)]">
-                  <tr>
-                    <th className="px-4 py-3">Check</th>
-                    {guide.comparisonTable.columns.map((column) => (
-                      <th className="px-4 py-3" key={column}>{column}</th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-[var(--border)]">
-                  {guide.comparisonTable.rows.map((row) => (
-                    <tr key={row.label}>
-                      <th className="px-4 py-4 font-bold">{row.label}</th>
-                      {guide.comparisonTable?.columns.map((column, index) => (
-                        <td className="px-4 py-4 leading-6 text-[var(--muted)]" key={`${row.label}-${column}`}>
-                          {row.values[index] ?? "Confirm before purchase"}
-                        </td>
-                      ))}
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </section>
-        ) : null}
+        {!tailoredGuide ? <GuideDecisionTable table={guide.comparisonTable} /> : null}
         {guide.sources?.length ? (
           <section className="mt-10 rounded-md border border-[var(--border)] bg-white p-5">
             <p className="eyebrow">Primary sources</p>
@@ -681,7 +689,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             </ol>
           </section>
         ) : null}
-        {!guide.familySlug ? <section className="mt-10">
+        {!guide.familySlug && !tailoredGuide ? <section className="mt-10">
           <p className="eyebrow">Buying framework</p>
           <h2 className="mt-3 text-2xl font-bold">What to check before you choose</h2>
           <div className="mt-5 grid gap-6 md:grid-cols-3">
@@ -715,6 +723,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             <p className="mt-2 leading-7 text-[var(--muted)]">{advice.decision}</p>
           </div>
         </section> : null}
+        {searchOpportunity && tailoredGuide ? <SearchOpportunityBlock opportunity={searchOpportunity} linksOnly /> : null}
         <div className="mt-10 grid gap-4 sm:grid-cols-2">
           {(guide.relatedTools ?? []).map((toolSlug) => {
             const tool = findTool(site.key, toolSlug);

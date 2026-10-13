@@ -1,0 +1,1627 @@
+[
+  {
+    "url": "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-vs-alternatives",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:24:55.867407+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "MISS",
+    "ray": "a49ae4167e3939f5-YYZ",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-vs-alternatives",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-vs-alternatives",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:24:55.868980+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "HIT",
+    "ray": "a49ae41a5ab1592d-YYZ",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-vs-alternatives",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-buying-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-vs-alternatives",
+    "checkedAt": "2026-10-13T02:24:58.921779+00:00",
+    "status": 308,
+    "location": "/guides/dual-screen-portable-monitors-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49ae427af6555b7-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-compatibility-and-fit-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-vs-alternatives",
+    "checkedAt": "2026-10-13T02:24:59.087014+00:00",
+    "status": 308,
+    "location": "/guides/dual-screen-portable-monitors-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49ae429b9b5abbb-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-ownership-cost-and-maintenance",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-vs-alternatives",
+    "checkedAt": "2026-10-13T02:25:01.218679+00:00",
+    "status": 308,
+    "location": "/guides/dual-screen-portable-monitors-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49ae4354d423a0f-ORD",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-setup-and-daily-workflow",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-vs-alternatives",
+    "checkedAt": "2026-10-13T02:25:01.642470+00:00",
+    "status": 308,
+    "location": "/guides/dual-screen-portable-monitors-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49ae43cde035af6-ORD",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/business-usb-c-monitors-vs-alternatives",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:25:03.344297+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "MISS",
+    "ray": "a49ae4436ef0e702-YYZ",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://homeoffice.madabase.com/guides/business-usb-c-monitors-vs-alternatives",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/business-usb-c-monitors-vs-alternatives",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:25:04.064438+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "HIT",
+    "ray": "a49ae4478813dde5-YYZ",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://homeoffice.madabase.com/guides/business-usb-c-monitors-vs-alternatives",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/business-usb-c-monitors-buying-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/business-usb-c-monitors-vs-alternatives",
+    "checkedAt": "2026-10-13T02:25:06.172918+00:00",
+    "status": 308,
+    "location": "/guides/business-usb-c-monitors-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49ae4565f733a03-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/business-usb-c-monitors-compatibility-and-fit-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/business-usb-c-monitors-vs-alternatives",
+    "checkedAt": "2026-10-13T02:25:06.347044+00:00",
+    "status": 308,
+    "location": "/guides/business-usb-c-monitors-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49ae455e9ac0042-ORD",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/business-usb-c-monitors-ownership-cost-and-maintenance",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/business-usb-c-monitors-vs-alternatives",
+    "checkedAt": "2026-10-13T02:25:08.660774+00:00",
+    "status": 308,
+    "location": "/guides/business-usb-c-monitors-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49ae465af09961e-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/business-usb-c-monitors-setup-and-daily-workflow",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/business-usb-c-monitors-vs-alternatives",
+    "checkedAt": "2026-10-13T02:25:08.929735+00:00",
+    "status": 308,
+    "location": "/guides/business-usb-c-monitors-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49ae4691958ebb6-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/dual-monitor-kvm-switches-vs-alternatives",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:25:10.720986+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "MISS",
+    "ray": "a49ae475aeea462e-ORD",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://homeoffice.madabase.com/guides/dual-monitor-kvm-switches-vs-alternatives",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/dual-monitor-kvm-switches-vs-alternatives",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:25:11.583426+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "MISS",
+    "ray": "a49ae4771a2136d1-YYZ",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://homeoffice.madabase.com/guides/dual-monitor-kvm-switches-vs-alternatives",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/dual-monitor-kvm-switches-buying-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/dual-monitor-kvm-switches-vs-alternatives",
+    "checkedAt": "2026-10-13T02:25:14.194534+00:00",
+    "status": 308,
+    "location": "/guides/dual-monitor-kvm-switches-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49ae4870f0d19cf-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/dual-monitor-kvm-switches-compatibility-and-fit-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/dual-monitor-kvm-switches-vs-alternatives",
+    "checkedAt": "2026-10-13T02:25:14.410477+00:00",
+    "status": 308,
+    "location": "/guides/dual-monitor-kvm-switches-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49ae48869fe130e-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/dual-monitor-kvm-switches-ownership-cost-and-maintenance",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/dual-monitor-kvm-switches-vs-alternatives",
+    "checkedAt": "2026-10-13T02:25:15.971583+00:00",
+    "status": 308,
+    "location": "/guides/dual-monitor-kvm-switches-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49ae491d938ac33-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/dual-monitor-kvm-switches-setup-and-daily-workflow",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/dual-monitor-kvm-switches-vs-alternatives",
+    "checkedAt": "2026-10-13T02:25:16.190977+00:00",
+    "status": 308,
+    "location": "/guides/dual-monitor-kvm-switches-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49ae4936d6457af-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/office-paper-shredders-vs-alternatives",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:25:17.917720+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "MISS",
+    "ray": "a49ae49eeb4faae5-YYZ",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://homeoffice.madabase.com/guides/office-paper-shredders-vs-alternatives",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/office-paper-shredders-vs-alternatives",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:25:18.072356+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "MISS",
+    "ray": "a49ae49f4f6d7ce0-ORD",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://homeoffice.madabase.com/guides/office-paper-shredders-vs-alternatives",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/office-paper-shredders-buying-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/office-paper-shredders-vs-alternatives",
+    "checkedAt": "2026-10-13T02:25:20.916808+00:00",
+    "status": 308,
+    "location": "/guides/office-paper-shredders-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49ae4b33a70ac3c-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/office-paper-shredders-compatibility-and-fit-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/office-paper-shredders-vs-alternatives",
+    "checkedAt": "2026-10-13T02:25:21.025046+00:00",
+    "status": 308,
+    "location": "/guides/office-paper-shredders-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49ae4b35f28592d-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/office-paper-shredders-ownership-cost-and-maintenance",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/office-paper-shredders-vs-alternatives",
+    "checkedAt": "2026-10-13T02:25:23.243358+00:00",
+    "status": 308,
+    "location": "/guides/office-paper-shredders-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49ae4cec95939cb-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/office-paper-shredders-setup-and-daily-workflow",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/office-paper-shredders-vs-alternatives",
+    "checkedAt": "2026-10-13T02:25:23.246407+00:00",
+    "status": 308,
+    "location": "/guides/office-paper-shredders-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49ae4cfd954123d-ORD",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/low-profile-keyboards-vs-alternatives",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:25:27.452283+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "MISS",
+    "ray": "a49ae4dc3e0faa55-YYZ",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://homeoffice.madabase.com/guides/low-profile-keyboards-vs-alternatives",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/low-profile-keyboards-vs-alternatives",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:25:28.175360+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "HIT",
+    "ray": "a49ae4e3594192c6-YYZ",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://homeoffice.madabase.com/guides/low-profile-keyboards-vs-alternatives",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/low-profile-keyboards-buying-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/low-profile-keyboards-vs-alternatives",
+    "checkedAt": "2026-10-13T02:25:30.476329+00:00",
+    "status": 308,
+    "location": "/guides/low-profile-keyboards-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49ae4ee6bc6ab96-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/low-profile-keyboards-compatibility-and-fit-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/low-profile-keyboards-vs-alternatives",
+    "checkedAt": "2026-10-13T02:25:30.640608+00:00",
+    "status": 308,
+    "location": "/guides/low-profile-keyboards-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49ae4ef7bb736b5-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/low-profile-keyboards-ownership-cost-and-maintenance",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/low-profile-keyboards-vs-alternatives",
+    "checkedAt": "2026-10-13T02:25:32.919442+00:00",
+    "status": 308,
+    "location": "/guides/low-profile-keyboards-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49ae4fd1b067a5f-ORD",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/low-profile-keyboards-setup-and-daily-workflow",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/low-profile-keyboards-vs-alternatives",
+    "checkedAt": "2026-10-13T02:25:33.130903+00:00",
+    "status": 308,
+    "location": "/guides/low-profile-keyboards-vs-alternatives",
+    "cache": "DYNAMIC",
+    "ray": "a49ae4fde8daabbe-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/desktop-label-printers-buying-guide",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:25:35.013168+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "MISS",
+    "ray": "a49ae50a8fbddde5-YYZ",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://homeoffice.madabase.com/guides/desktop-label-printers-buying-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/desktop-label-printers-buying-guide",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:25:35.056155+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "MISS",
+    "ray": "a49ae50fcf534227-ORD",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://homeoffice.madabase.com/guides/desktop-label-printers-buying-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/desktop-label-printers-vs-alternatives",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/desktop-label-printers-buying-guide",
+    "checkedAt": "2026-10-13T02:25:37.986643+00:00",
+    "status": 308,
+    "location": "/guides/desktop-label-printers-buying-guide",
+    "cache": "DYNAMIC",
+    "ray": "a49ae51c386b36d8-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/desktop-label-printers-compatibility-and-fit-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/desktop-label-printers-buying-guide",
+    "checkedAt": "2026-10-13T02:25:38.925844+00:00",
+    "status": 308,
+    "location": "/guides/desktop-label-printers-buying-guide",
+    "cache": "DYNAMIC",
+    "ray": "a49ae5285f5f7aa8-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/desktop-label-printers-ownership-cost-and-maintenance",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/desktop-label-printers-buying-guide",
+    "checkedAt": "2026-10-13T02:25:40.000664+00:00",
+    "status": 308,
+    "location": "/guides/desktop-label-printers-buying-guide",
+    "cache": "DYNAMIC",
+    "ray": "a49ae52859a8f288-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/desktop-label-printers-setup-and-daily-workflow",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/desktop-label-printers-buying-guide",
+    "checkedAt": "2026-10-13T02:25:41.955818+00:00",
+    "status": 308,
+    "location": "/guides/desktop-label-printers-buying-guide",
+    "cache": "DYNAMIC",
+    "ray": "a49ae538c8baaa9d-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/desktop-laminators-buying-guide",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:25:42.160384+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "MISS",
+    "ray": "a49ae5362920ea84-YYZ",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://homeoffice.madabase.com/guides/desktop-laminators-buying-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/desktop-laminators-buying-guide",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:25:44.603317+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "MISS",
+    "ray": "a49ae544aaf3514c-ORD",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://homeoffice.madabase.com/guides/desktop-laminators-buying-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/desktop-laminators-vs-alternatives",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/desktop-laminators-buying-guide",
+    "checkedAt": "2026-10-13T02:25:45.047395+00:00",
+    "status": 308,
+    "location": "/guides/desktop-laminators-buying-guide",
+    "cache": "DYNAMIC",
+    "ray": "a49ae5471807982f-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/desktop-laminators-compatibility-and-fit-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/desktop-laminators-buying-guide",
+    "checkedAt": "2026-10-13T02:25:46.833310+00:00",
+    "status": 308,
+    "location": "/guides/desktop-laminators-buying-guide",
+    "cache": "DYNAMIC",
+    "ray": "a49ae555df5cabcd-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/desktop-laminators-ownership-cost-and-maintenance",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/desktop-laminators-buying-guide",
+    "checkedAt": "2026-10-13T02:25:47.323422+00:00",
+    "status": 308,
+    "location": "/guides/desktop-laminators-buying-guide",
+    "cache": "DYNAMIC",
+    "ray": "a49ae55a9d97f41f-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/desktop-laminators-setup-and-daily-workflow",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/desktop-laminators-buying-guide",
+    "checkedAt": "2026-10-13T02:25:49.129658+00:00",
+    "status": 308,
+    "location": "/guides/desktop-laminators-buying-guide",
+    "cache": "DYNAMIC",
+    "ray": "a49ae562fc0f6e57-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/wireless-number-pads-buying-guide",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:25:49.842111+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "HIT",
+    "ray": "a49ae56709e1299a-YYZ",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://homeoffice.madabase.com/guides/wireless-number-pads-buying-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/wireless-number-pads-buying-guide",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:25:51.211982+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "HIT",
+    "ray": "a49ae5701f5ba21a-YYZ",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://homeoffice.madabase.com/guides/wireless-number-pads-buying-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/wireless-number-pads-vs-alternatives",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/wireless-number-pads-buying-guide",
+    "checkedAt": "2026-10-13T02:25:51.938331+00:00",
+    "status": 308,
+    "location": "/guides/wireless-number-pads-buying-guide",
+    "cache": "DYNAMIC",
+    "ray": "a49ae57608df3845-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/wireless-number-pads-compatibility-and-fit-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/wireless-number-pads-buying-guide",
+    "checkedAt": "2026-10-13T02:25:53.387095+00:00",
+    "status": 308,
+    "location": "/guides/wireless-number-pads-buying-guide",
+    "cache": "DYNAMIC",
+    "ray": "a49ae57f2928b595-ORD",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/wireless-number-pads-ownership-cost-and-maintenance",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/wireless-number-pads-buying-guide",
+    "checkedAt": "2026-10-13T02:25:54.459309+00:00",
+    "status": 308,
+    "location": "/guides/wireless-number-pads-buying-guide",
+    "cache": "DYNAMIC",
+    "ray": "a49ae585191a36a7-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/wireless-number-pads-setup-and-daily-workflow",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/wireless-number-pads-buying-guide",
+    "checkedAt": "2026-10-13T02:25:56.301619+00:00",
+    "status": 308,
+    "location": "/guides/wireless-number-pads-buying-guide",
+    "cache": "DYNAMIC",
+    "ray": "a49ae590ee1239cf-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://baby.madabase.com/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:25:57.198086+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "EXPIRED",
+    "ray": "a49ae5970c1f615f-ORD",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://baby.madabase.com/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "passed": true
+  },
+  {
+    "url": "https://baby.madabase.com/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:25:58.852452+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "MISS",
+    "ray": "a49ae5a2dcaa2659-YYZ",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://baby.madabase.com/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "passed": true
+  },
+  {
+    "url": "https://baby.madabase.com/guides/automatic-bottle-washers-buying-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
+    "checkedAt": "2026-10-13T02:26:00.641016+00:00",
+    "status": 308,
+    "location": "/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
+    "cache": "DYNAMIC",
+    "ray": "a49ae5a8ad263703-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://baby.madabase.com/guides/automatic-bottle-washers-vs-alternatives",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
+    "checkedAt": "2026-10-13T02:26:02.358625+00:00",
+    "status": 308,
+    "location": "/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
+    "cache": "DYNAMIC",
+    "ray": "a49ae5b50d11aaa7-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://baby.madabase.com/guides/automatic-bottle-washers-compatibility-and-fit-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
+    "checkedAt": "2026-10-13T02:26:02.810882+00:00",
+    "status": 308,
+    "location": "/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
+    "cache": "DYNAMIC",
+    "ray": "a49ae5c11d3a860b-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://baby.madabase.com/guides/automatic-bottle-washers-ownership-cost-and-maintenance",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
+    "checkedAt": "2026-10-13T02:26:04.855691+00:00",
+    "status": 308,
+    "location": "/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
+    "cache": "DYNAMIC",
+    "ray": "a49ae5c58bcde7e3-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://baby.madabase.com/guides/automatic-bottle-washers-setup-and-daily-workflow",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
+    "checkedAt": "2026-10-13T02:26:07.291004+00:00",
+    "status": 308,
+    "location": "/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
+    "cache": "DYNAMIC",
+    "ray": "a49ae5fb5f374fcb-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://baby.madabase.com/guides/automatic-bottle-washers-safety-and-skip-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
+    "checkedAt": "2026-10-13T02:26:07.560593+00:00",
+    "status": 308,
+    "location": "/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
+    "cache": "DYNAMIC",
+    "ray": "a49ae5fa899a52cf-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://baby.madabase.com/guides/infant-bath-tubs-safety-and-skip-guide",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:26:16.887523+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "MISS",
+    "ray": "a49ae6207e9a36b0-YYZ",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://baby.madabase.com/guides/infant-bath-tubs-safety-and-skip-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "passed": true
+  },
+  {
+    "url": "https://baby.madabase.com/guides/infant-bath-tubs-safety-and-skip-guide",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:26:16.907880+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "HIT",
+    "ray": "a49ae6229f42ab8a-YYZ",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://baby.madabase.com/guides/infant-bath-tubs-safety-and-skip-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "passed": true
+  },
+  {
+    "url": "https://baby.madabase.com/guides/infant-bath-tubs-buying-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/infant-bath-tubs-safety-and-skip-guide",
+    "checkedAt": "2026-10-13T02:26:22.617805+00:00",
+    "status": 308,
+    "location": "/guides/infant-bath-tubs-safety-and-skip-guide",
+    "cache": "DYNAMIC",
+    "ray": "a49ae64328259dab-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://baby.madabase.com/guides/infant-bath-tubs-vs-alternatives",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/infant-bath-tubs-safety-and-skip-guide",
+    "checkedAt": "2026-10-13T02:26:22.624937+00:00",
+    "status": 308,
+    "location": "/guides/infant-bath-tubs-safety-and-skip-guide",
+    "cache": "DYNAMIC",
+    "ray": "a49ae64308fbc48a-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://baby.madabase.com/guides/infant-bath-tubs-compatibility-and-fit-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/infant-bath-tubs-safety-and-skip-guide",
+    "checkedAt": "2026-10-13T02:26:27.141396+00:00",
+    "status": 308,
+    "location": "/guides/infant-bath-tubs-safety-and-skip-guide",
+    "cache": "DYNAMIC",
+    "ray": "a49ae6557b583896-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://baby.madabase.com/guides/infant-bath-tubs-ownership-cost-and-maintenance",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/infant-bath-tubs-safety-and-skip-guide",
+    "checkedAt": "2026-10-13T02:26:27.155716+00:00",
+    "status": 308,
+    "location": "/guides/infant-bath-tubs-safety-and-skip-guide",
+    "cache": "DYNAMIC",
+    "ray": "a49ae6558c7a78a5-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://baby.madabase.com/guides/infant-bath-tubs-setup-and-daily-workflow",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/infant-bath-tubs-safety-and-skip-guide",
+    "checkedAt": "2026-10-13T02:26:30.180968+00:00",
+    "status": 308,
+    "location": "/guides/infant-bath-tubs-safety-and-skip-guide",
+    "cache": "DYNAMIC",
+    "ray": "a49ae664782339f5-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://baby.madabase.com/guides/nursery-glider-chairs-safety-and-skip-guide",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:26:30.224487+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "MISS",
+    "ray": "a49ae66339b0a1f0-YYZ",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://baby.madabase.com/guides/nursery-glider-chairs-safety-and-skip-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "passed": true
+  },
+  {
+    "url": "https://baby.madabase.com/guides/nursery-glider-chairs-safety-and-skip-guide",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:26:32.368737+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "HIT",
+    "ray": "a49ae672fe1dabe2-YYZ",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://baby.madabase.com/guides/nursery-glider-chairs-safety-and-skip-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "passed": true
+  },
+  {
+    "url": "https://baby.madabase.com/guides/nursery-glider-chairs-buying-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/nursery-glider-chairs-safety-and-skip-guide",
+    "checkedAt": "2026-10-13T02:26:33.394819+00:00",
+    "status": 308,
+    "location": "/guides/nursery-glider-chairs-safety-and-skip-guide",
+    "cache": "DYNAMIC",
+    "ray": "a49ae676db78ac9a-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://baby.madabase.com/guides/nursery-glider-chairs-vs-alternatives",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/nursery-glider-chairs-safety-and-skip-guide",
+    "checkedAt": "2026-10-13T02:26:34.729430+00:00",
+    "status": 308,
+    "location": "/guides/nursery-glider-chairs-safety-and-skip-guide",
+    "cache": "DYNAMIC",
+    "ray": "a49ae68069ff7117-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://baby.madabase.com/guides/nursery-glider-chairs-compatibility-and-fit-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/nursery-glider-chairs-safety-and-skip-guide",
+    "checkedAt": "2026-10-13T02:26:35.554215+00:00",
+    "status": 308,
+    "location": "/guides/nursery-glider-chairs-safety-and-skip-guide",
+    "cache": "DYNAMIC",
+    "ray": "a49ae684ad19ab81-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://baby.madabase.com/guides/nursery-glider-chairs-ownership-cost-and-maintenance",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/nursery-glider-chairs-safety-and-skip-guide",
+    "checkedAt": "2026-10-13T02:26:36.854031+00:00",
+    "status": 308,
+    "location": "/guides/nursery-glider-chairs-safety-and-skip-guide",
+    "cache": "DYNAMIC",
+    "ray": "a49ae68cba328631-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://baby.madabase.com/guides/nursery-glider-chairs-setup-and-daily-workflow",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/nursery-glider-chairs-safety-and-skip-guide",
+    "checkedAt": "2026-10-13T02:26:37.691338+00:00",
+    "status": 308,
+    "location": "/guides/nursery-glider-chairs-safety-and-skip-guide",
+    "cache": "DYNAMIC",
+    "ray": "a49ae691689bb33f-ORD",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://baby.madabase.com/guides/double-strollers-compatibility-and-fit-guide",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:26:40.052198+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "MISS",
+    "ray": "a49ae6a1fb47df5a-YYZ",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://baby.madabase.com/guides/double-strollers-compatibility-and-fit-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "passed": true
+  },
+  {
+    "url": "https://baby.madabase.com/guides/double-strollers-compatibility-and-fit-guide",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:26:40.660533+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "HIT",
+    "ray": "a49ae6a54ccfab3b-YYZ",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://baby.madabase.com/guides/double-strollers-compatibility-and-fit-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "passed": true
+  },
+  {
+    "url": "https://baby.madabase.com/guides/double-strollers-buying-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/double-strollers-compatibility-and-fit-guide",
+    "checkedAt": "2026-10-13T02:26:43.115589+00:00",
+    "status": 308,
+    "location": "/guides/double-strollers-compatibility-and-fit-guide",
+    "cache": "DYNAMIC",
+    "ray": "a49ae6be6f6dddfa-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://baby.madabase.com/guides/double-strollers-vs-alternatives",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/double-strollers-compatibility-and-fit-guide",
+    "checkedAt": "2026-10-13T02:26:43.250854+00:00",
+    "status": 308,
+    "location": "/guides/double-strollers-compatibility-and-fit-guide",
+    "cache": "DYNAMIC",
+    "ray": "a49ae6b50ad7a1f0-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://baby.madabase.com/guides/double-strollers-ownership-cost-and-maintenance",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/double-strollers-compatibility-and-fit-guide",
+    "checkedAt": "2026-10-13T02:26:45.761309+00:00",
+    "status": 308,
+    "location": "/guides/double-strollers-compatibility-and-fit-guide",
+    "cache": "DYNAMIC",
+    "ray": "a49ae6c69e4236fe-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://baby.madabase.com/guides/double-strollers-setup-and-daily-workflow",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/double-strollers-compatibility-and-fit-guide",
+    "checkedAt": "2026-10-13T02:26:47.024396+00:00",
+    "status": 308,
+    "location": "/guides/double-strollers-compatibility-and-fit-guide",
+    "cache": "DYNAMIC",
+    "ray": "a49ae6cd2ebf36ff-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://baby.madabase.com/guides/double-strollers-safety-and-skip-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/double-strollers-compatibility-and-fit-guide",
+    "checkedAt": "2026-10-13T02:26:48.049200+00:00",
+    "status": 308,
+    "location": "/guides/double-strollers-compatibility-and-fit-guide",
+    "cache": "DYNAMIC",
+    "ray": "a49ae6d41f5336b1-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/guides/deco-be63-vs-be67-vs-be85-buying-guide",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:26:49.109514+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "MISS",
+    "ray": "a49ae6db2f17ebb4-YYZ",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://network.madabase.com/guides/deco-be63-vs-be67-vs-be85-buying-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/guides/deco-be63-vs-be67-vs-be85-buying-guide",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:26:50.403176+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "HIT",
+    "ray": "a49ae6e25cd9713b-YYZ",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://network.madabase.com/guides/deco-be63-vs-be67-vs-be85-buying-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "passed": true
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/matter-thread-wifi-zigbee-device-checklist",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:26:53.242596+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "MISS",
+    "ray": "a49ae6fddb56e5b3-YYZ",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://smarthome.madabase.com/guides/matter-thread-wifi-zigbee-device-checklist",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "passed": true
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/matter-thread-wifi-zigbee-device-checklist",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:26:53.261713+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "HIT",
+    "ray": "a49ae6fe3f92b634-YYZ",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://smarthome.madabase.com/guides/matter-thread-wifi-zigbee-device-checklist",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "passed": true
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/matter-vs-thread-vs-zigbee",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://smarthome.madabase.com/guides/matter-thread-wifi-zigbee-device-checklist",
+    "checkedAt": "2026-10-13T02:26:57.861788+00:00",
+    "status": 308,
+    "location": "/guides/matter-thread-wifi-zigbee-device-checklist",
+    "cache": "DYNAMIC",
+    "ray": "a49ae7100a117119-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/matter-over-thread-hub-checklist",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://smarthome.madabase.com/guides/matter-thread-wifi-zigbee-device-checklist",
+    "checkedAt": "2026-10-13T02:26:58.127461+00:00",
+    "status": 308,
+    "location": "/guides/matter-thread-wifi-zigbee-device-checklist",
+    "cache": "DYNAMIC",
+    "ray": "a49ae713288b61e9-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://pets.madabase.com/reviews/levoit-vital-200s-p-air-purifier",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:27:01.426548+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "MISS",
+    "ray": "a49ae72af9fcac48-YYZ",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://pets.madabase.com/reviews/levoit-vital-200s-p-air-purifier",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "passed": true
+  },
+  {
+    "url": "https://pets.madabase.com/reviews/levoit-vital-200s-p-air-purifier",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:27:01.456785+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "HIT",
+    "ray": "a49ae72bcc961d7b-YYZ",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://pets.madabase.com/reviews/levoit-vital-200s-p-air-purifier",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "passed": true
+  },
+  {
+    "url": "https://style.madabase.com/guides/loungefly-faux-leather-rain-and-care-guide",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:27:06.006726+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "HIT",
+    "ray": "a49ae7478ba7ab08-YYZ",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://style.madabase.com/guides/loungefly-faux-leather-rain-and-care-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "passed": true
+  },
+  {
+    "url": "https://style.madabase.com/guides/loungefly-faux-leather-rain-and-care-guide",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:27:06.026812+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "MISS",
+    "ray": "a49ae74739813705-YYZ",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://style.madabase.com/guides/loungefly-faux-leather-rain-and-care-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "passed": true
+  },
+  {
+    "url": "https://costumes.madabase.com/guides/costume-rental-vs-buying-guide",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:27:10.850828+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "HIT",
+    "ray": "a49ae7681e74ac78-YYZ",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://costumes.madabase.com/guides/costume-rental-vs-buying-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "passed": true
+  },
+  {
+    "url": "https://costumes.madabase.com/guides/costume-rental-vs-buying-guide",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:27:10.894138+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "MISS",
+    "ray": "a49ae7680d800f01-YYZ",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://costumes.madabase.com/guides/costume-rental-vs-buying-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "titleInHead": true,
+    "passed": true
+  },
+  {
+    "url": "https://baby.madabase.com/sitemap.xml",
+    "kind": "sitemap",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:27:15.157274+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "DYNAMIC",
+    "ray": "a49ae77c886cb083-ORD",
+    "xRobotsTag": null,
+    "missingOrDuplicateTargets": [],
+    "remainingSources": [],
+    "passed": true
+  },
+  {
+    "url": "https://baby.madabase.com/robots.txt",
+    "kind": "robots",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:27:15.168016+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "UPDATING",
+    "ray": "a49ae77d0afeb687-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://costumes.madabase.com/sitemap.xml",
+    "kind": "sitemap",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:27:17.007829+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "DYNAMIC",
+    "ray": "a49ae789fa3e36d1-YYZ",
+    "xRobotsTag": null,
+    "missingOrDuplicateTargets": [],
+    "remainingSources": [],
+    "passed": true
+  },
+  {
+    "url": "https://costumes.madabase.com/robots.txt",
+    "kind": "robots",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:27:19.085352+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "MISS",
+    "ray": "a49ae794baec7115-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/sitemap.xml",
+    "kind": "sitemap",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:27:20.130569+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "DYNAMIC",
+    "ray": "a49ae79c5abde25e-ORD",
+    "xRobotsTag": null,
+    "missingOrDuplicateTargets": [],
+    "remainingSources": [],
+    "passed": true
+  },
+  {
+    "url": "https://homeoffice.madabase.com/robots.txt",
+    "kind": "robots",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:27:21.614998+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "MISS",
+    "ray": "a49ae7a49803ab3c-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/sitemap.xml",
+    "kind": "sitemap",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:27:23.481813+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "DYNAMIC",
+    "ray": "a49ae7b22d02eb09-ORD",
+    "xRobotsTag": null,
+    "missingOrDuplicateTargets": [],
+    "remainingSources": [],
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/robots.txt",
+    "kind": "robots",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:27:24.250026+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "EXPIRED",
+    "ray": "a49ae7b44b2e088a-ORD",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://pets.madabase.com/sitemap.xml",
+    "kind": "sitemap",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:27:26.592747+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "DYNAMIC",
+    "ray": "a49ae7c638c7ab8e-YYZ",
+    "xRobotsTag": null,
+    "missingOrDuplicateTargets": [],
+    "remainingSources": [],
+    "passed": true
+  },
+  {
+    "url": "https://pets.madabase.com/robots.txt",
+    "kind": "robots",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:27:26.755135+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "UPDATING",
+    "ray": "a49ae7c65a0c3061-ORD",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://smarthome.madabase.com/sitemap.xml",
+    "kind": "sitemap",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:27:28.670654+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "DYNAMIC",
+    "ray": "a49ae7d52ce6ab10-YYZ",
+    "xRobotsTag": null,
+    "missingOrDuplicateTargets": [],
+    "remainingSources": [],
+    "passed": true
+  },
+  {
+    "url": "https://smarthome.madabase.com/robots.txt",
+    "kind": "robots",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:27:29.748203+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "UPDATING",
+    "ray": "a49ae7d759dfaaaa-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  },
+  {
+    "url": "https://style.madabase.com/sitemap.xml",
+    "kind": "sitemap",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:27:31.397546+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "DYNAMIC",
+    "ray": "a49ae7e50d9cac42-YYZ",
+    "xRobotsTag": null,
+    "missingOrDuplicateTargets": [],
+    "remainingSources": [],
+    "passed": true
+  },
+  {
+    "url": "https://style.madabase.com/robots.txt",
+    "kind": "robots",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:27:34.701382+00:00",
+    "status": 200,
+    "location": null,
+    "cache": "MISS",
+    "ray": "a49ae7f73de378a5-YYZ",
+    "xRobotsTag": null,
+    "passed": true
+  }
+]

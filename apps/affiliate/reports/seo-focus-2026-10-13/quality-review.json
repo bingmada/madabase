@@ -1,0 +1,66 @@
+{
+  "checkedAt": "2026-10-13",
+  "primaryCanonicals": 14,
+  "perSite": {
+    "homeoffice": 6,
+    "network": 2,
+    "baby": 1,
+    "smarthome": 1,
+    "pet": 1,
+    "style": 1,
+    "costume": 2
+  },
+  "newUrls": 0,
+  "consolidatedFamilies": 3,
+  "baseRedirects": 9,
+  "localeRedirects": 24,
+  "sources": "Live primary manufacturer/agency sources; model-specific examples and own calculations labelled. No claimed hands-on product test.",
+  "manualReview": "Each topic has an individual decision model. Scope includes size calculation, mounting geometry, video paths, chip matrix, charging budget, wireless-card installation, endpoint cable compatibility, carrier readiness, sensor setup, feeder parts, bag opening, motion clearance and order-date planning. Duplicate answers and unrelated framework tails removed only on focused guides.",
+  "mobile": {
+    "viewportWidth": 390,
+    "checkedPages": 14,
+    "overflowFailures": 0,
+    "method": "All 14 visible Chrome pages checked via CUA. innerWidth and document scrollWidth both 390."
+  },
+  "runtime": {
+    "passed": true,
+    "primaryCanonicals": 14,
+    "protectedOtherCanonicals": 1104,
+    "canonicalInventoryDelta": -9,
+    "runtime": {
+      "canonicals": 28,
+      "redirects": 33,
+      "sitemaps": 7,
+      "passed": true
+    }
+  },
+  "priorCohort": {
+    "sites": 7,
+    "changedCanonicals": 17,
+    "basePermanentRedirects": 55,
+    "newRoutes": 0,
+    "reviewGates": {
+      "day7": "2026-10-13",
+      "day14": "2026-10-20",
+      "day30": "2026-11-05"
+    },
+    "runtime": {
+      "baseRedirects": 55,
+      "localizedRedirects": 220,
+      "baseCanonicals": 17,
+      "localizedCanonicals": 64,
+      "sitemaps": 7
+    },
+    "errors": []
+  },
+  "links": "294/294 URL/tag checks; offers and ASINs unchanged. Live identity/availability is not verified by this check.",
+  "build": {
+    "node": "20.20.0",
+    "next": "15.5.23",
+    "compileAndTypes": "passed",
+    "linuxPackaging": "passed",
+    "archiveBytes": 60930332,
+    "sha256": "c64977b6e847df3b0bf810e643fef68fbc9185211d8630cecf42e4a50403b60e"
+  },
+  "production": "Not changed yet. Single-process forecast 715.3 MiB, below unchanged 768 MiB gate. Immutable prepare precedes maintenance approval."
+}

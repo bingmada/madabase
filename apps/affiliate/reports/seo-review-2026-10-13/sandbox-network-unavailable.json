@@ -1,0 +1,929 @@
+[
+  {
+    "url": "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-vs-alternatives",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:24.434739+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-vs-alternatives",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:24.435434+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-buying-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-vs-alternatives",
+    "checkedAt": "2026-10-13T02:23:24.822693+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-compatibility-and-fit-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-vs-alternatives",
+    "checkedAt": "2026-10-13T02:23:24.830327+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-ownership-cost-and-maintenance",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-vs-alternatives",
+    "checkedAt": "2026-10-13T02:23:25.188511+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-setup-and-daily-workflow",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-vs-alternatives",
+    "checkedAt": "2026-10-13T02:23:25.222081+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/business-usb-c-monitors-vs-alternatives",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:25.583039+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/business-usb-c-monitors-vs-alternatives",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:25.614542+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/business-usb-c-monitors-buying-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/business-usb-c-monitors-vs-alternatives",
+    "checkedAt": "2026-10-13T02:23:25.973258+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/business-usb-c-monitors-compatibility-and-fit-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/business-usb-c-monitors-vs-alternatives",
+    "checkedAt": "2026-10-13T02:23:26.000015+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/business-usb-c-monitors-ownership-cost-and-maintenance",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/business-usb-c-monitors-vs-alternatives",
+    "checkedAt": "2026-10-13T02:23:26.359435+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/business-usb-c-monitors-setup-and-daily-workflow",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/business-usb-c-monitors-vs-alternatives",
+    "checkedAt": "2026-10-13T02:23:26.389435+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/dual-monitor-kvm-switches-vs-alternatives",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:26.740072+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/dual-monitor-kvm-switches-vs-alternatives",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:26.756141+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/dual-monitor-kvm-switches-buying-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/dual-monitor-kvm-switches-vs-alternatives",
+    "checkedAt": "2026-10-13T02:23:27.110030+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/dual-monitor-kvm-switches-compatibility-and-fit-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/dual-monitor-kvm-switches-vs-alternatives",
+    "checkedAt": "2026-10-13T02:23:27.131577+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/dual-monitor-kvm-switches-ownership-cost-and-maintenance",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/dual-monitor-kvm-switches-vs-alternatives",
+    "checkedAt": "2026-10-13T02:23:27.479029+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/dual-monitor-kvm-switches-setup-and-daily-workflow",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/dual-monitor-kvm-switches-vs-alternatives",
+    "checkedAt": "2026-10-13T02:23:27.498422+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/office-paper-shredders-vs-alternatives",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:27.850715+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/office-paper-shredders-vs-alternatives",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:27.861460+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/office-paper-shredders-buying-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/office-paper-shredders-vs-alternatives",
+    "checkedAt": "2026-10-13T02:23:28.255283+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/office-paper-shredders-compatibility-and-fit-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/office-paper-shredders-vs-alternatives",
+    "checkedAt": "2026-10-13T02:23:28.274220+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/office-paper-shredders-ownership-cost-and-maintenance",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/office-paper-shredders-vs-alternatives",
+    "checkedAt": "2026-10-13T02:23:28.630916+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/office-paper-shredders-setup-and-daily-workflow",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/office-paper-shredders-vs-alternatives",
+    "checkedAt": "2026-10-13T02:23:28.643282+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/low-profile-keyboards-vs-alternatives",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:28.995909+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/low-profile-keyboards-vs-alternatives",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:29.005451+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/low-profile-keyboards-buying-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/low-profile-keyboards-vs-alternatives",
+    "checkedAt": "2026-10-13T02:23:29.361550+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/low-profile-keyboards-compatibility-and-fit-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/low-profile-keyboards-vs-alternatives",
+    "checkedAt": "2026-10-13T02:23:29.368704+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/low-profile-keyboards-ownership-cost-and-maintenance",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/low-profile-keyboards-vs-alternatives",
+    "checkedAt": "2026-10-13T02:23:29.737396+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/low-profile-keyboards-setup-and-daily-workflow",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/low-profile-keyboards-vs-alternatives",
+    "checkedAt": "2026-10-13T02:23:29.744581+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/desktop-label-printers-buying-guide",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:30.141644+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/desktop-label-printers-buying-guide",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:30.149808+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/desktop-label-printers-vs-alternatives",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/desktop-label-printers-buying-guide",
+    "checkedAt": "2026-10-13T02:23:30.505574+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/desktop-label-printers-compatibility-and-fit-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/desktop-label-printers-buying-guide",
+    "checkedAt": "2026-10-13T02:23:30.515178+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/desktop-label-printers-ownership-cost-and-maintenance",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/desktop-label-printers-buying-guide",
+    "checkedAt": "2026-10-13T02:23:30.868206+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/desktop-label-printers-setup-and-daily-workflow",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/desktop-label-printers-buying-guide",
+    "checkedAt": "2026-10-13T02:23:30.879092+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/desktop-laminators-buying-guide",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:31.235347+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/desktop-laminators-buying-guide",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:31.250841+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/desktop-laminators-vs-alternatives",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/desktop-laminators-buying-guide",
+    "checkedAt": "2026-10-13T02:23:31.605722+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/desktop-laminators-compatibility-and-fit-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/desktop-laminators-buying-guide",
+    "checkedAt": "2026-10-13T02:23:31.627142+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/desktop-laminators-ownership-cost-and-maintenance",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/desktop-laminators-buying-guide",
+    "checkedAt": "2026-10-13T02:23:32.070647+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/desktop-laminators-setup-and-daily-workflow",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/desktop-laminators-buying-guide",
+    "checkedAt": "2026-10-13T02:23:32.086040+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/wireless-number-pads-buying-guide",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:32.539838+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/wireless-number-pads-buying-guide",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:32.560931+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/wireless-number-pads-vs-alternatives",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/wireless-number-pads-buying-guide",
+    "checkedAt": "2026-10-13T02:23:32.920090+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/wireless-number-pads-compatibility-and-fit-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/wireless-number-pads-buying-guide",
+    "checkedAt": "2026-10-13T02:23:32.936237+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/wireless-number-pads-ownership-cost-and-maintenance",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/wireless-number-pads-buying-guide",
+    "checkedAt": "2026-10-13T02:23:33.352013+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/wireless-number-pads-setup-and-daily-workflow",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://homeoffice.madabase.com/guides/wireless-number-pads-buying-guide",
+    "checkedAt": "2026-10-13T02:23:33.359071+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://baby.madabase.com/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:33.743142+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://baby.madabase.com/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:33.743893+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://baby.madabase.com/guides/automatic-bottle-washers-buying-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
+    "checkedAt": "2026-10-13T02:23:34.156955+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://baby.madabase.com/guides/automatic-bottle-washers-vs-alternatives",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
+    "checkedAt": "2026-10-13T02:23:34.173749+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://baby.madabase.com/guides/automatic-bottle-washers-compatibility-and-fit-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
+    "checkedAt": "2026-10-13T02:23:34.532357+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://baby.madabase.com/guides/automatic-bottle-washers-ownership-cost-and-maintenance",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
+    "checkedAt": "2026-10-13T02:23:34.552883+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://baby.madabase.com/guides/automatic-bottle-washers-setup-and-daily-workflow",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
+    "checkedAt": "2026-10-13T02:23:34.921456+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://baby.madabase.com/guides/automatic-bottle-washers-safety-and-skip-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
+    "checkedAt": "2026-10-13T02:23:34.936325+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://baby.madabase.com/guides/infant-bath-tubs-safety-and-skip-guide",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:35.298780+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://baby.madabase.com/guides/infant-bath-tubs-safety-and-skip-guide",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:35.311033+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://baby.madabase.com/guides/infant-bath-tubs-buying-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/infant-bath-tubs-safety-and-skip-guide",
+    "checkedAt": "2026-10-13T02:23:35.753385+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://baby.madabase.com/guides/infant-bath-tubs-vs-alternatives",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/infant-bath-tubs-safety-and-skip-guide",
+    "checkedAt": "2026-10-13T02:23:35.836662+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://baby.madabase.com/guides/infant-bath-tubs-compatibility-and-fit-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/infant-bath-tubs-safety-and-skip-guide",
+    "checkedAt": "2026-10-13T02:23:36.257813+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://baby.madabase.com/guides/infant-bath-tubs-ownership-cost-and-maintenance",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/infant-bath-tubs-safety-and-skip-guide",
+    "checkedAt": "2026-10-13T02:23:36.294911+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://baby.madabase.com/guides/infant-bath-tubs-setup-and-daily-workflow",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/infant-bath-tubs-safety-and-skip-guide",
+    "checkedAt": "2026-10-13T02:23:36.661583+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://baby.madabase.com/guides/nursery-glider-chairs-safety-and-skip-guide",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:36.775113+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://baby.madabase.com/guides/nursery-glider-chairs-safety-and-skip-guide",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:37.187820+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://baby.madabase.com/guides/nursery-glider-chairs-buying-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/nursery-glider-chairs-safety-and-skip-guide",
+    "checkedAt": "2026-10-13T02:23:37.192592+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://baby.madabase.com/guides/nursery-glider-chairs-vs-alternatives",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/nursery-glider-chairs-safety-and-skip-guide",
+    "checkedAt": "2026-10-13T02:23:37.586692+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://baby.madabase.com/guides/nursery-glider-chairs-compatibility-and-fit-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/nursery-glider-chairs-safety-and-skip-guide",
+    "checkedAt": "2026-10-13T02:23:37.591378+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://baby.madabase.com/guides/nursery-glider-chairs-ownership-cost-and-maintenance",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/nursery-glider-chairs-safety-and-skip-guide",
+    "checkedAt": "2026-10-13T02:23:38.013233+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://baby.madabase.com/guides/nursery-glider-chairs-setup-and-daily-workflow",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/nursery-glider-chairs-safety-and-skip-guide",
+    "checkedAt": "2026-10-13T02:23:38.027411+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://baby.madabase.com/guides/double-strollers-compatibility-and-fit-guide",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:38.383121+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://baby.madabase.com/guides/double-strollers-compatibility-and-fit-guide",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:38.405738+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://baby.madabase.com/guides/double-strollers-buying-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/double-strollers-compatibility-and-fit-guide",
+    "checkedAt": "2026-10-13T02:23:38.751784+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://baby.madabase.com/guides/double-strollers-vs-alternatives",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/double-strollers-compatibility-and-fit-guide",
+    "checkedAt": "2026-10-13T02:23:38.779658+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://baby.madabase.com/guides/double-strollers-ownership-cost-and-maintenance",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/double-strollers-compatibility-and-fit-guide",
+    "checkedAt": "2026-10-13T02:23:39.126202+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://baby.madabase.com/guides/double-strollers-setup-and-daily-workflow",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/double-strollers-compatibility-and-fit-guide",
+    "checkedAt": "2026-10-13T02:23:39.147688+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://baby.madabase.com/guides/double-strollers-safety-and-skip-guide",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://baby.madabase.com/guides/double-strollers-compatibility-and-fit-guide",
+    "checkedAt": "2026-10-13T02:23:39.492560+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://network.madabase.com/guides/deco-be63-vs-be67-vs-be85-buying-guide",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:39.557760+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://network.madabase.com/guides/deco-be63-vs-be67-vs-be85-buying-guide",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:39.910747+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/matter-thread-wifi-zigbee-device-checklist",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:39.973670+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/matter-thread-wifi-zigbee-device-checklist",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:40.368570+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/matter-vs-thread-vs-zigbee",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://smarthome.madabase.com/guides/matter-thread-wifi-zigbee-device-checklist",
+    "checkedAt": "2026-10-13T02:23:40.378876+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/matter-over-thread-hub-checklist",
+    "kind": "redirect",
+    "ua": "browser",
+    "expectedTarget": "https://smarthome.madabase.com/guides/matter-thread-wifi-zigbee-device-checklist",
+    "checkedAt": "2026-10-13T02:23:40.861616+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://pets.madabase.com/reviews/levoit-vital-200s-p-air-purifier",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:40.882669+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://pets.madabase.com/reviews/levoit-vital-200s-p-air-purifier",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:41.350756+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://style.madabase.com/guides/loungefly-faux-leather-rain-and-care-guide",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:41.361698+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://style.madabase.com/guides/loungefly-faux-leather-rain-and-care-guide",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:41.781704+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://costumes.madabase.com/guides/costume-rental-vs-buying-guide",
+    "kind": "canonical",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:41.783483+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://costumes.madabase.com/guides/costume-rental-vs-buying-guide",
+    "kind": "canonical",
+    "ua": "googlebot",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:42.213845+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://baby.madabase.com/sitemap.xml",
+    "kind": "sitemap",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:42.215144+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://baby.madabase.com/robots.txt",
+    "kind": "robots",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:42.613775+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://costumes.madabase.com/sitemap.xml",
+    "kind": "sitemap",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:42.619240+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://costumes.madabase.com/robots.txt",
+    "kind": "robots",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:43.006595+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/sitemap.xml",
+    "kind": "sitemap",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:43.007140+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://homeoffice.madabase.com/robots.txt",
+    "kind": "robots",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:43.395623+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://network.madabase.com/sitemap.xml",
+    "kind": "sitemap",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:43.398792+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://network.madabase.com/robots.txt",
+    "kind": "robots",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:43.779150+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://pets.madabase.com/sitemap.xml",
+    "kind": "sitemap",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:43.792477+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://pets.madabase.com/robots.txt",
+    "kind": "robots",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:44.163005+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://smarthome.madabase.com/sitemap.xml",
+    "kind": "sitemap",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:44.167567+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://smarthome.madabase.com/robots.txt",
+    "kind": "robots",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:44.543533+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://style.madabase.com/sitemap.xml",
+    "kind": "sitemap",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:44.544117+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  },
+  {
+    "url": "https://style.madabase.com/robots.txt",
+    "kind": "robots",
+    "ua": "browser",
+    "expectedTarget": null,
+    "checkedAt": "2026-10-13T02:23:45.017620+00:00",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "passed": false
+  }
+]

@@ -388,6 +388,7 @@ const consolidationConfigs = [
   ["search-recovery-consolidations-2026-09-08.json", (family) => family.targetSlug],
   ["deferred-family-consolidations-2026-09-11.json", (family) => family.targetSlug],
   ["search-recovery-consolidations-2026-10-06.json", (family) => family.targetSlug],
+  ["search-recovery-consolidations-2026-10-13.json", (family) => family.targetSlug],
 ];
 const consolidationTargetByFamily = new Map();
 for (const [filename, targetFor] of consolidationConfigs) {
@@ -453,6 +454,28 @@ entries.forEach((entry) => {
   entry.internalLinkCount = Math.max(entry.internalLinkCount, 5);
   entry.updatedAt = opportunity.updatedAt ?? entry.updatedAt;
 });
+
+// Apply the same final bounded repair layer used by runtime assembly. Otherwise
+// this AST inventory reports old dates and missing sources for repaired pages.
+const focusedPlan = JSON.parse(fs.readFileSync(path.join(workspaceDir, "config/focused-content-recovery-2026-10-13.json"), "utf8"));
+const focusedKeys = new Set(focusedPlan.pages.map((item) => `${item.site}:${item.kind}:${item.slug}`));
+const focusedJavascript = `const consolidationData = ${fs.readFileSync(path.join(workspaceDir, "config/search-recovery-consolidations-2026-10-13.json"), "utf8")};\n`
+  + ts.transpileModule(fs.readFileSync(path.join(libDir, "focused-content-recovery.ts"), "utf8"), {
+    compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 },
+  }).outputText.replace(/^import [^;]+;\n/gm, "");
+const focusedModule = await import(`data:text/javascript;base64,${Buffer.from(focusedJavascript).toString("base64")}`);
+for (const entry of entries) {
+  if (!focusedKeys.has(`${entry.site}:${entry.kind}:${entry.slug}`)) continue;
+  const repaired = entry.kind === "guide" ? focusedModule.applyFocusedGuideRecovery(entry)
+    : entry.kind === "product" ? focusedModule.applyFocusedProductRecovery(entry)
+      : focusedModule.applyFocusedRoundupRecovery(entry);
+  entry.description = repaired.dek ?? repaired.summary ?? entry.description;
+  entry.updatedAt = repaired.updatedAt;
+  entry.sourceCount = repaired.sources?.length ?? entry.sourceCount;
+  entry.sectionCount = (repaired.sections ?? repaired.editorialSections)?.length ?? entry.sectionCount;
+  entry.evidenceMode = repaired.evidenceMode ?? entry.evidenceMode;
+  entry.location = "focused-content-recovery.ts:authored-repair";
+}
 
 function normalizedUrl(value) {
   try {

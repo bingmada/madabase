@@ -1,0 +1,116 @@
+{
+  "newRoutes": 0,
+  "requestIndexing": false,
+  "families": [
+    {
+      "site": "homeoffice",
+      "target": "https://homeoffice.madabase.com/guides/48-vs-55-inch-desk-guide",
+      "sources": [],
+      "kind": "guide",
+      "expectedHeading": "Measure the equipment, not just screen diagonals"
+    },
+    {
+      "site": "homeoffice",
+      "target": "https://homeoffice.madabase.com/guides/usb-c-dock-vs-monitor-hub-guide",
+      "sources": [],
+      "kind": "guide",
+      "expectedHeading": "Write a port list from the devices you actually use"
+    },
+    {
+      "site": "homeoffice",
+      "target": "https://homeoffice.madabase.com/guides/macbook-dual-monitor-dock-chip-compatibility-guide",
+      "sources": [],
+      "kind": "guide",
+      "expectedHeading": "Identify the chip before reading dock marketing"
+    },
+    {
+      "site": "homeoffice",
+      "target": "https://homeoffice.madabase.com/guides/monitor-arm-clamp-reinforcement-guide",
+      "sources": [],
+      "kind": "guide",
+      "expectedHeading": "Identify the desktop before choosing a plate"
+    },
+    {
+      "site": "homeoffice",
+      "target": "https://homeoffice.madabase.com/guides/portable-monitor-usb-c-dp-alt-mode-displaylink-guide",
+      "sources": [],
+      "kind": "guide",
+      "expectedHeading": "Read the host port's specification first"
+    },
+    {
+      "site": "homeoffice",
+      "target": "https://homeoffice.madabase.com/best/logitech-litra-glow-vs-elgato-key-light-neo",
+      "sources": [],
+      "kind": "roundup",
+      "expectedHeading": "Choose the Neo power path before comparing brightness"
+    },
+    {
+      "site": "network",
+      "target": "https://network.madabase.com/guides/pcie-wifi-adapters-vs-alternatives",
+      "sources": [
+        "https://network.madabase.com/guides/pcie-wifi-adapters-buying-guide",
+        "https://network.madabase.com/guides/pcie-wifi-adapters-compatibility-and-fit-guide",
+        "https://network.madabase.com/guides/pcie-wifi-adapters-ownership-cost-and-maintenance"
+      ],
+      "kind": "guide",
+      "expectedHeading": "Check the slot and case as two separate dimensions"
+    },
+    {
+      "site": "network",
+      "target": "https://network.madabase.com/guides/direct-attach-copper-cables-vs-alternatives",
+      "sources": [
+        "https://network.madabase.com/guides/direct-attach-copper-cables-buying-guide",
+        "https://network.madabase.com/guides/direct-attach-copper-cables-compatibility-and-fit-guide",
+        "https://network.madabase.com/guides/direct-attach-copper-cables-ownership-cost-and-maintenance"
+      ],
+      "kind": "guide",
+      "expectedHeading": "Start with a two-endpoint record"
+    },
+    {
+      "site": "baby",
+      "target": "https://baby.madabase.com/guides/ergobaby-omni-breeze-positions-by-age",
+      "sources": [],
+      "kind": "guide",
+      "expectedHeading": "Why a birthday does not approve a new position"
+    },
+    {
+      "site": "smarthome",
+      "target": "https://smarthome.madabase.com/reviews/aqara-presence-multi-sensor-fp300",
+      "sources": [],
+      "kind": "product",
+      "expectedHeading": "Price: compare the complete setup cost"
+    },
+    {
+      "site": "pet",
+      "target": "https://pets.madabase.com/guides/automatic-feeder-cleaning-checklist",
+      "sources": [],
+      "kind": "guide",
+      "expectedHeading": "Do not replace bowl hygiene with a weekly feeder job"
+    },
+    {
+      "site": "style",
+      "target": "https://style.madabase.com/guides/mini-backpack-capacity-measurement-guide",
+      "sources": [],
+      "kind": "guide",
+      "expectedHeading": "Exterior dimensions are an upper outline, not a promise"
+    },
+    {
+      "site": "costume",
+      "target": "https://costumes.madabase.com/guides/when-to-order-a-halloween-costume",
+      "sources": [],
+      "kind": "guide",
+      "expectedHeading": "Use a fitting date as the arrival target"
+    },
+    {
+      "site": "costume",
+      "target": "https://costumes.madabase.com/guides/props-and-animatronics-vs-alternatives",
+      "sources": [
+        "https://costumes.madabase.com/guides/props-and-animatronics-buying-guide",
+        "https://costumes.madabase.com/guides/props-and-animatronics-compatibility-and-fit-guide",
+        "https://costumes.madabase.com/guides/props-and-animatronics-ownership-cost-and-maintenance"
+      ],
+      "kind": "guide",
+      "expectedHeading": "Measure the movement, not just the advertised height"
+    }
+  ]
+}

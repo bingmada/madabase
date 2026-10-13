@@ -87,6 +87,7 @@ export type Roundup = Publishable & {
   category: string;
   intent: string;
   intro?: string;
+  sources?: Array<{ name: string; url: string; note?: string }>;
   sections?: Array<{ heading: string; body: string }>;
   decisionGuide?: Array<{ label: string; detail: string }>;
   comparisonTable?: {

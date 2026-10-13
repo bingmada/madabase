@@ -13,7 +13,7 @@ import { roundupEvidencePresentation } from "@/lib/evidence";
 import { effectiveContentUpdatedAt, findSearchOpportunity, searchOpportunityMetaDescription } from "@/lib/search-opportunities";
 import { breadcrumbSchema, faqPageSchema, pageMetadata, roundupArticleSchema, roundupProductListSchema } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
-import type { Product, SiteKey } from "@/lib/types";
+import type { Product, Roundup, SiteKey } from "@/lib/types";
 
 function quickAnswer(roundupTitle: string, intent: string, picks: Array<ReturnType<typeof findProduct>>) {
   const firstPick = picks.find(Boolean);
@@ -156,11 +156,10 @@ function getRoundupAdvice(siteKey: SiteKey, category: string) {
   };
 }
 
-function officialSourceLinks(products: Product[]) {
+function officialSourceLinks(products: Product[], roundupSources: Roundup["sources"] = []) {
   return Array.from(
     new Map(
-      products
-        .flatMap((product) => product.sources ?? [])
+      [...roundupSources, ...products.flatMap((product) => product.sources ?? [])]
         .map((source) => [source.url, source]),
     ).values(),
   ).slice(0, 8);
@@ -196,7 +195,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
     .slice(0, 6);
   const answer = quickAnswer(roundup.title, roundup.intent, picks);
   const advice = getRoundupAdvice(site.key, roundup.category);
-  const sources = officialSourceLinks(picks);
+  const sources = officialSourceLinks(picks, roundup.sources);
   const evidencePresentation = roundupEvidencePresentation(picks);
   if (site.key === "style") {
     return (

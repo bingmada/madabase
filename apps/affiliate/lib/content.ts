@@ -2,6 +2,7 @@ import type { Guide, Product, Roundup, SiteKey, Tool } from "./types";
 import { applyIndexingRepair } from "./indexing-repair-content";
 import { applyLowClickRepair } from "./low-click-repairs";
 import { applyOctoberSearchRecovery } from "./october-search-recovery-content";
+import { applyFocusedGuideRecovery, applyFocusedProductRecovery, applyFocusedRoundupRecovery } from "./focused-content-recovery";
 import {
   applyPortfolioSearchRecoveryGuide,
   applyPortfolioSearchRecoveryProduct,
@@ -2457,13 +2458,17 @@ guides.push(...broadProductPilot3Guides);
 guides.push(...breadthDraft120PlusGuides);
 
 for (let index = 0; index < products.length; index += 1) {
-  products[index] = applyPortfolioSearchRecoveryProduct(products[index]);
+  products[index] = applyFocusedProductRecovery(applyPortfolioSearchRecoveryProduct(products[index]));
+}
+
+for (let index = 0; index < roundups.length; index += 1) {
+  roundups[index] = applyFocusedRoundupRecovery(roundups[index]);
 }
 
 for (let index = 0; index < guides.length; index += 1) {
-  const repaired = applyPortfolioSearchRecoveryGuide(
+  const repaired = applyFocusedGuideRecovery(applyPortfolioSearchRecoveryGuide(
     applyOctoberSearchRecovery(applyLowClickRepair(applyIndexingRepair(guides[index]))),
-  );
+  ));
   guides[index] = { ...repaired, sources: repaired.sources?.filter((source) => !isBlockedAmazonSource(repaired.site, source.url)) };
 }
 

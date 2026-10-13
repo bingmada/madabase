@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "primaryCanonicals": 14,
+  "protectedOtherCanonicals": 1104,
+  "canonicalInventoryDelta": -9,
+  "runtime": {
+    "canonicals": 28,
+    "redirects": 33,
+    "sitemaps": 7,
+    "passed": true
+  }
+}

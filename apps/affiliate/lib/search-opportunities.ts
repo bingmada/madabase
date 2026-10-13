@@ -1,4 +1,5 @@
 import { siteGuides, siteProducts, siteRoundups } from "./content";
+import { focusedSearchAnswer } from "./focused-content-recovery";
 import { portfolioRankingOpportunities, portfolioRankingRefreshAt } from "./portfolio-ranking-opportunities";
 import type { SiteKey } from "./types";
 
@@ -957,7 +958,9 @@ function overlap(left: Set<string>, right: Set<string>) {
 }
 
 export function findSearchOpportunity(site: SiteKey, kind: SearchOpportunityKind, slug: string) {
-  return searchOpportunities.find((item) => item.site === site && item.kind === kind && item.slug === slug);
+  const opportunity = searchOpportunities.find((item) => item.site === site && item.kind === kind && item.slug === slug);
+  const answer = focusedSearchAnswer(site, kind, slug);
+  return opportunity && answer ? { ...opportunity, answer, updatedAt: "October 13, 2026" } : opportunity;
 }
 
 export function searchOpportunityUpdatedAt(site: SiteKey, kind: SearchOpportunityKind, slug: string) {

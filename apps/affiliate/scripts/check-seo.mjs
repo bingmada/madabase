@@ -427,6 +427,7 @@ const consolidationConfigs = [
   ["search-recovery-consolidations-2026-09-08.json", (family) => family.targetSlug],
   ["deferred-family-consolidations-2026-09-11.json", (family) => family.targetSlug],
   ["search-recovery-consolidations-2026-10-06.json", (family) => family.targetSlug],
+  ["search-recovery-consolidations-2026-10-13.json", (family) => family.targetSlug],
 ];
 const consolidationTargetByFamily = new Map();
 for (const [filename, targetFor] of consolidationConfigs) {
@@ -562,7 +563,7 @@ if (!portfolioPolicy.ownerConstraints?.handsOnTestingAvailable) {
 }
 
 if (portfolioPolicy.publicationFreeze?.status === "active") {
-  const baseline = portfolioPolicy.canonicalInventoryBaseline;
+  const baseline = portfolioPolicy.canonicalInventoryCurrent ?? portfolioPolicy.canonicalInventoryBaseline;
   if (publishedEntries.length > baseline.publishedBasePages) {
     errors.push(`Publication freeze permits at most ${baseline.publishedBasePages} base pages; found ${publishedEntries.length}`);
   }

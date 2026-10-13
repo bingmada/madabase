@@ -1,0 +1,430 @@
+{
+  "checkedDate": "2026-10-13",
+  "mode": "read-only-diagnosis; local-evidence-files-only",
+  "windows": {
+    "latest24h": "rolling October 12-13; browser local display; preliminary; last update approximately 8 hours ago",
+    "latestComplete7d": "2026-10-04..2026-10-10 vs 2026-09-27..2026-10-03 (GSC Pacific dates)",
+    "rolling28d": "2026-09-13..2026-10-10 vs 2026-08-16..2026-09-12 (GSC Pacific dates)"
+  },
+  "propertyHeadlineCards": {
+    "24h": {
+      "current": {
+        "impressions": 5,
+        "clicks": 0,
+        "position": 9.2
+      },
+      "previous": {
+        "impressions": 7,
+        "clicks": 0,
+        "position": 11.7
+      }
+    },
+    "7d": {
+      "current": {
+        "impressions": 62,
+        "clicks": 0,
+        "position": 16.4
+      },
+      "previous": {
+        "impressions": 436,
+        "clicks": 3,
+        "position": 11.2
+      }
+    },
+    "28d": {
+      "current": {
+        "impressions": 3308,
+        "clicks": 23,
+        "position": 12.7
+      },
+      "previous": {
+        "impressions": 7651,
+        "clicks": 31,
+        "position": 30.0
+      }
+    }
+  },
+  "aggregationBoundary": "Headline cards are all-domain context, not affiliate growth totals. Active affiliate metrics below exclude Tools, Test, Wellness, Main and legacy Main. Page-grouped sums can differ from property cards; do not add or mix them.",
+  "activeAffiliatePageMetrics": {
+    "24h": {
+      "exportRows": 15,
+      "truncatedAt1000": false,
+      "byHost": {
+        "network.madabase.com": {
+          "current": {
+            "clicks": 0,
+            "impressions": 1,
+            "exposedUrls": 1,
+            "weightedPosition": 10.0
+          },
+          "previous": {
+            "clicks": 0,
+            "impressions": 1,
+            "exposedUrls": 1,
+            "weightedPosition": 50.0
+          }
+        },
+        "smarthome.madabase.com": {
+          "current": {
+            "clicks": 0,
+            "impressions": 2,
+            "exposedUrls": 2,
+            "weightedPosition": 9.0
+          },
+          "previous": {
+            "clicks": 0,
+            "impressions": 0,
+            "exposedUrls": 0,
+            "weightedPosition": null
+          }
+        },
+        "homeoffice.madabase.com": {
+          "current": {
+            "clicks": 0,
+            "impressions": 1,
+            "exposedUrls": 1,
+            "weightedPosition": 10.0
+          },
+          "previous": {
+            "clicks": 0,
+            "impressions": 3,
+            "exposedUrls": 3,
+            "weightedPosition": 7.667
+          }
+        },
+        "baby.madabase.com": {
+          "current": {
+            "clicks": 0,
+            "impressions": 0,
+            "exposedUrls": 0,
+            "weightedPosition": null
+          },
+          "previous": {
+            "clicks": 0,
+            "impressions": 1,
+            "exposedUrls": 1,
+            "weightedPosition": 2.0
+          }
+        },
+        "pets.madabase.com": {
+          "current": {
+            "clicks": 0,
+            "impressions": 1,
+            "exposedUrls": 1,
+            "weightedPosition": 8.0
+          },
+          "previous": {
+            "clicks": 0,
+            "impressions": 1,
+            "exposedUrls": 1,
+            "weightedPosition": 6.0
+          }
+        },
+        "style.madabase.com": {
+          "current": {
+            "clicks": 0,
+            "impressions": 0,
+            "exposedUrls": 0,
+            "weightedPosition": null
+          },
+          "previous": {
+            "clicks": 0,
+            "impressions": 0,
+            "exposedUrls": 0,
+            "weightedPosition": null
+          }
+        },
+        "costumes.madabase.com": {
+          "current": {
+            "clicks": 0,
+            "impressions": 0,
+            "exposedUrls": 0,
+            "weightedPosition": null
+          },
+          "previous": {
+            "clicks": 0,
+            "impressions": 0,
+            "exposedUrls": 0,
+            "weightedPosition": null
+          }
+        }
+      }
+    },
+    "7d": {
+      "exportRows": 195,
+      "truncatedAt1000": false,
+      "byHost": {
+        "network.madabase.com": {
+          "current": {
+            "clicks": 0,
+            "impressions": 4,
+            "exposedUrls": 4,
+            "weightedPosition": 23.5
+          },
+          "previous": {
+            "clicks": 0,
+            "impressions": 9,
+            "exposedUrls": 8,
+            "weightedPosition": 13.556
+          }
+        },
+        "smarthome.madabase.com": {
+          "current": {
+            "clicks": 0,
+            "impressions": 24,
+            "exposedUrls": 8,
+            "weightedPosition": 26.625
+          },
+          "previous": {
+            "clicks": 0,
+            "impressions": 41,
+            "exposedUrls": 10,
+            "weightedPosition": 17.635
+          }
+        },
+        "homeoffice.madabase.com": {
+          "current": {
+            "clicks": 0,
+            "impressions": 15,
+            "exposedUrls": 9,
+            "weightedPosition": 7.401
+          },
+          "previous": {
+            "clicks": 0,
+            "impressions": 190,
+            "exposedUrls": 69,
+            "weightedPosition": 10.411
+          }
+        },
+        "baby.madabase.com": {
+          "current": {
+            "clicks": 0,
+            "impressions": 10,
+            "exposedUrls": 6,
+            "weightedPosition": 10.599
+          },
+          "previous": {
+            "clicks": 3,
+            "impressions": 213,
+            "exposedUrls": 77,
+            "weightedPosition": 10.478
+          }
+        },
+        "pets.madabase.com": {
+          "current": {
+            "clicks": 0,
+            "impressions": 6,
+            "exposedUrls": 4,
+            "weightedPosition": 8.168
+          },
+          "previous": {
+            "clicks": 0,
+            "impressions": 26,
+            "exposedUrls": 15,
+            "weightedPosition": 6.384
+          }
+        },
+        "style.madabase.com": {
+          "current": {
+            "clicks": 0,
+            "impressions": 1,
+            "exposedUrls": 1,
+            "weightedPosition": 9.0
+          },
+          "previous": {
+            "clicks": 0,
+            "impressions": 1,
+            "exposedUrls": 1,
+            "weightedPosition": 7.0
+          }
+        },
+        "costumes.madabase.com": {
+          "current": {
+            "clicks": 0,
+            "impressions": 0,
+            "exposedUrls": 0,
+            "weightedPosition": null
+          },
+          "previous": {
+            "clicks": 0,
+            "impressions": 1,
+            "exposedUrls": 1,
+            "weightedPosition": 3.0
+          }
+        }
+      }
+    },
+    "28d": {
+      "exportRows": 830,
+      "truncatedAt1000": false,
+      "byHost": {
+        "network.madabase.com": {
+          "current": {
+            "clicks": 1,
+            "impressions": 76,
+            "exposedUrls": 28,
+            "weightedPosition": 15.091
+          },
+          "previous": {
+            "clicks": 10,
+            "impressions": 632,
+            "exposedUrls": 120,
+            "weightedPosition": 27.508
+          }
+        },
+        "smarthome.madabase.com": {
+          "current": {
+            "clicks": 0,
+            "impressions": 107,
+            "exposedUrls": 25,
+            "weightedPosition": 17.037
+          },
+          "previous": {
+            "clicks": 0,
+            "impressions": 428,
+            "exposedUrls": 115,
+            "weightedPosition": 29.993
+          }
+        },
+        "homeoffice.madabase.com": {
+          "current": {
+            "clicks": 14,
+            "impressions": 1838,
+            "exposedUrls": 158,
+            "weightedPosition": 13.952
+          },
+          "previous": {
+            "clicks": 11,
+            "impressions": 4123,
+            "exposedUrls": 216,
+            "weightedPosition": 34.2
+          }
+        },
+        "baby.madabase.com": {
+          "current": {
+            "clicks": 8,
+            "impressions": 1367,
+            "exposedUrls": 145,
+            "weightedPosition": 10.44
+          },
+          "previous": {
+            "clicks": 9,
+            "impressions": 2372,
+            "exposedUrls": 191,
+            "weightedPosition": 18.789
+          }
+        },
+        "pets.madabase.com": {
+          "current": {
+            "clicks": 0,
+            "impressions": 59,
+            "exposedUrls": 19,
+            "weightedPosition": 6.95
+          },
+          "previous": {
+            "clicks": 1,
+            "impressions": 209,
+            "exposedUrls": 62,
+            "weightedPosition": 22.105
+          }
+        },
+        "style.madabase.com": {
+          "current": {
+            "clicks": 0,
+            "impressions": 2,
+            "exposedUrls": 2,
+            "weightedPosition": 8.0
+          },
+          "previous": {
+            "clicks": 0,
+            "impressions": 6,
+            "exposedUrls": 5,
+            "weightedPosition": 19.167
+          }
+        },
+        "costumes.madabase.com": {
+          "current": {
+            "clicks": 0,
+            "impressions": 1,
+            "exposedUrls": 1,
+            "weightedPosition": 3.0
+          },
+          "previous": {
+            "clicks": 0,
+            "impressions": 18,
+            "exposedUrls": 13,
+            "weightedPosition": 38.556
+          }
+        }
+      }
+    }
+  },
+  "inventory": {
+    "baseRegistryPages": 1134,
+    "with28dImpressions": 312,
+    "without28dImpressions": 822,
+    "zeroImpressionNotProofOfDeindexing": true
+  },
+  "october6Cohort": {
+    "allLedgerUrls": 356,
+    "roles": {
+      "base-canonical": 17,
+      "base-redirect": 55,
+      "localized-canonical": 64,
+      "localized-redirect": 220
+    },
+    "baseCanonicals": 17,
+    "liveIndexInspectedBaseCanonicals": 17,
+    "indexedBaseCanonicals": 17,
+    "current7dExposedBaseCanonicals": 2,
+    "current7dImpressions": 11,
+    "previous7dImpressions": 33,
+    "current24hImpressions": 0,
+    "recrawledOctober6OrLater": 9,
+    "recrawledOctober9OrLater": 7,
+    "lastCrawlBeforeOctober6": 8
+  },
+  "publicVerification": {
+    "requests": 103,
+    "passed": 103,
+    "baseCanonicalResponses": 34,
+    "redirects": 55,
+    "sitemaps": 7,
+    "robots": 7,
+    "evidence": "public-probe.json"
+  },
+  "googleUpdate": {
+    "status": "complete",
+    "officialClosePacific": "2026-10-08 01:00 PDT",
+    "officialCloseShanghai": "2026-10-08 16:00 +08:00",
+    "source": "https://status.search.google.com/incidents/XhUDXP7A67iHCD2kmbVu",
+    "causality": "Timing consistent with algorithmic exposure loss; no proof of a specific spam classifier or cause."
+  },
+  "diagnosis": [
+    "No observable recovery in latest24h or complete7d.",
+    "Technical repairs remain live. All 17 retained base canonicals remain indexed, so wholesale deindexing is not the observed cohort bottleneck.",
+    "Mixed crawl freshness: eight retained pages still have pre-October6 snapshots; nine have October6-or-later crawls. The latest complete performance window ends October10, leaving only October9-10 as full days after the October8 final release.",
+    "The October8 source/disclosure/title repairs correct integrity but have not demonstrated restored search competitiveness.",
+    "The 822 zero-impression base pages require demand, overlap and added-value review; they must not be deleted or noindexed solely because of absent export rows."
+  ],
+  "nextReview": "2026-10-20; compare complete stable cohorts and recheck the eight stale crawl snapshots. This date is a decision checkpoint, not a recovery promise.",
+  "recommendedActions": [
+    "Continue new-URL freeze.",
+    "Prioritize bounded discovery/crawl follow-up for stale canonical snapshots, preserving healthy head metadata and protected winners.",
+    "Keep recently recrawled canonicals stable until the next complete observation window.",
+    "Prioritize demand, intent overlap and original decision value of weak generated guides over another full-site title or canonical rewrite.",
+    "If exposure remains near-zero at the next gate, plan query-family consolidation of confirmed overlap; retain distinct useful pages."
+  ],
+  "limitations": [
+    "No bulk Request Indexing, sitemap resubmission, code edit, deployment or automation in this diagnostic run.",
+    "Current public requests cannot rule out historical origin outages.",
+    "356 cohort URLs have metric ledgers; independent GSC URL Inspection covers the 17 retained base canonicals. Localized variants and redirect sources were not independently inspected.",
+    "The whole 822-page zero-impression index queue has not been re-inspected; no all-portfolio indexing-gate completion is claimed."
+  ],
+  "operationalChecks": {
+    "manualActions": "No issues detected",
+    "securityIssues": "No issues detected",
+    "source": "Authenticated current GSC report pages, 2026-10-13"
+  },
+  "latest24hInterpretation": "All-domain headline impressions 7 to 5, zero clicks in both. Active affiliate page-grouped impressions 6 to 5, excluding Main and Tools. All five current impressions are on five pages outside the October6 17-canonical cohort. The property headline and page-grouped previous sums differ by aggregation; neither is evidence of recovery."
+}

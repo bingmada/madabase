@@ -1,0 +1,145 @@
+{
+  "checkedDate": "2026-10-13",
+  "source": "Authenticated GSC URL Inspection visible page, transcribed results",
+  "scope": "17 base canonicals in the October 6 recovery cohort; additional high-loss pages follow separately",
+  "records": [
+    {
+      "family": "dual-screen-portable-monitors",
+      "indexed": true,
+      "lastCrawlDisplayed": "Oct 10, 2026, 7:23:22 AM",
+      "selfCanonical": true,
+      "url": "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-vs-alternatives"
+    },
+    {
+      "family": "business-usb-c-monitors",
+      "indexed": true,
+      "lastCrawlDisplayed": "Oct 10, 2026, 6:47:38 AM",
+      "selfCanonical": true,
+      "url": "https://homeoffice.madabase.com/guides/business-usb-c-monitors-vs-alternatives"
+    },
+    {
+      "family": "dual-monitor-kvm-switches",
+      "indexed": true,
+      "lastCrawlDisplayed": "Aug 9, 2026, 7:03:22 PM",
+      "selfCanonical": true,
+      "url": "https://homeoffice.madabase.com/guides/dual-monitor-kvm-switches-vs-alternatives"
+    },
+    {
+      "family": "office-paper-shredders",
+      "indexed": true,
+      "lastCrawlDisplayed": "Oct 9, 2026, 3:18:14 AM",
+      "selfCanonical": true,
+      "url": "https://homeoffice.madabase.com/guides/office-paper-shredders-vs-alternatives"
+    },
+    {
+      "family": "low-profile-keyboards",
+      "indexed": true,
+      "lastCrawlDisplayed": "Aug 9, 2026, 7:17:48 PM",
+      "selfCanonical": true,
+      "url": "https://homeoffice.madabase.com/guides/low-profile-keyboards-vs-alternatives"
+    },
+    {
+      "family": "desktop-label-printers",
+      "indexed": true,
+      "lastCrawlDisplayed": "Oct 12, 2026, 5:03:01 PM",
+      "selfCanonical": true,
+      "url": "https://homeoffice.madabase.com/guides/desktop-label-printers-buying-guide"
+    },
+    {
+      "family": "desktop-laminators",
+      "indexed": true,
+      "lastCrawlDisplayed": "Oct 12, 2026, 6:19:19 AM",
+      "selfCanonical": true,
+      "url": "https://homeoffice.madabase.com/guides/desktop-laminators-buying-guide"
+    },
+    {
+      "family": "wireless-number-pads",
+      "indexed": true,
+      "lastCrawlDisplayed": "Oct 12, 2026, 7:55:29 PM",
+      "selfCanonical": true,
+      "url": "https://homeoffice.madabase.com/guides/wireless-number-pads-buying-guide"
+    },
+    {
+      "family": "automatic-bottle-washers",
+      "indexed": true,
+      "lastCrawlDisplayed": "Oct 10, 2026, 8:09:42 AM",
+      "selfCanonical": true,
+      "url": "https://baby.madabase.com/guides/bottle-washer-vs-sterilizer-vs-dryer-guide"
+    },
+    {
+      "family": "infant-bath-tubs",
+      "indexed": true,
+      "lastCrawlDisplayed": "Oct 7, 2026, 8:30:24 PM",
+      "selfCanonical": true,
+      "url": "https://baby.madabase.com/guides/infant-bath-tubs-safety-and-skip-guide"
+    },
+    {
+      "family": "nursery-glider-chairs",
+      "indexed": true,
+      "lastCrawlDisplayed": "Aug 10, 2026, 2:04:58 AM",
+      "selfCanonical": true,
+      "url": "https://baby.madabase.com/guides/nursery-glider-chairs-safety-and-skip-guide"
+    },
+    {
+      "family": "double-strollers",
+      "indexed": true,
+      "lastCrawlDisplayed": "Aug 10, 2026, 2:07:42 AM",
+      "selfCanonical": true,
+      "sitemapReport": "Temporary processing error",
+      "url": "https://baby.madabase.com/guides/double-strollers-compatibility-and-fit-guide"
+    },
+    {
+      "family": "deco-be63-vs-be67-vs-be85",
+      "indexed": true,
+      "lastCrawlDisplayed": "Oct 6, 2026, 10:39:04 PM",
+      "selfCanonical": true,
+      "url": "https://network.madabase.com/guides/deco-be63-vs-be67-vs-be85-buying-guide"
+    },
+    {
+      "family": "matter-thread-wifi-zigbee",
+      "indexed": true,
+      "lastCrawlDisplayed": "Sep 10, 2026, 5:12:42 AM",
+      "googleSelectedSelfCanonical": true,
+      "userDeclaredCanonical": "None",
+      "note": "Old index snapshot precedes October 3 head repair; current raw-head checks pass.",
+      "url": "https://smarthome.madabase.com/guides/matter-thread-wifi-zigbee-device-checklist"
+    },
+    {
+      "family": "levoit-vital-200s-p",
+      "indexed": true,
+      "lastCrawlDisplayed": "Oct 4, 2026, 3:37:45 AM",
+      "selfCanonical": true,
+      "url": "https://pets.madabase.com/reviews/levoit-vital-200s-p-air-purifier"
+    },
+    {
+      "family": "loungefly-care",
+      "indexed": true,
+      "lastCrawlDisplayed": "Aug 6, 2026, 12:18:53 PM",
+      "selfCanonical": true,
+      "sitemapReport": "No referring sitemaps detected",
+      "referringPageIncludesSitemap": true,
+      "url": "https://style.madabase.com/guides/loungefly-faux-leather-rain-and-care-guide"
+    },
+    {
+      "family": "costume-rental-vs-buying",
+      "indexed": true,
+      "lastCrawlDisplayed": "Aug 9, 2026, 9:38:06 PM",
+      "selfCanonical": true,
+      "url": "https://costumes.madabase.com/guides/costume-rental-vs-buying-guide"
+    }
+  ],
+  "additionalHighLossInspections": [
+    {
+      "url": "https://baby.madabase.com/guides/ergobaby-omni-breeze-forward-facing-age-guide",
+      "indexed": true,
+      "selfCanonical": true,
+      "lastCrawlDisplayed": "Aug 4, 2026, 11:34:49 PM"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/reviews/branch-ergonomic-chair",
+      "indexed": true,
+      "selfCanonical": true,
+      "lastCrawlDisplayed": "Oct 3, 2026, 9:49:28 PM"
+    }
+  ]
+}

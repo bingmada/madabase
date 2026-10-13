@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "authorizedAt": "2026-10-13",
+  "action": "existing-page-topic-consolidation",
+  "measurementWindows": [
+    "2026-09-13 through 2026-10-10",
+    "2026-10-04 through 2026-10-10",
+    "2026-10-12 through 2026-10-13 rolling 24h"
+  ],
+  "decision": "Consolidate only three overlapping generated four-page families. Their individual buying, comparison, fit and maintenance answers form one decision. Manually rewrite each retained comparison canonical with relevant checks; do not append the old generic template paragraphs. Zero impressions alone is not the reason for consolidation. Preserve existing routes and merchant identities; create no new URL.",
+  "scope": {
+    "families": 3,
+    "measuredUrls": 12,
+    "retainedCanonicals": 3,
+    "permanentRedirects": 9,
+    "newRoutes": 0
+  },
+  "reviewGates": {
+    "day7": "2026-10-20",
+    "day14": "2026-10-27",
+    "day30": "2026-11-12"
+  },
+  "families": [
+    {
+      "site": "network",
+      "familySlug": "pcie-wifi-adapters",
+      "targetRole": "comparison",
+      "targetSlug": "pcie-wifi-adapters-vs-alternatives",
+      "mergeMode": "curated",
+      "selectionEvidence": "No current page-row demand signal across the four siblings. Buying canonical is crawled-currently-not-indexed; comparison canonical is indexed. Retain the indexed comparison, preserve PCIe versus USB selection, slot/bracket fit, Bluetooth USB-header requirements, driver revision checks and antenna/maintenance checks in one authored guide.",
+      "sourceSlugs": [
+        "pcie-wifi-adapters-buying-guide",
+        "pcie-wifi-adapters-compatibility-and-fit-guide",
+        "pcie-wifi-adapters-ownership-cost-and-maintenance"
+      ]
+    },
+    {
+      "site": "network",
+      "familySlug": "direct-attach-copper-cables",
+      "targetRole": "comparison",
+      "targetSlug": "direct-attach-copper-cables-vs-alternatives",
+      "mergeMode": "curated",
+      "selectionEvidence": "No current page-row demand signal across four siblings. The indexed comparison supplies the clearest DAC-versus-optics decision. Preserve endpoint coding, supported active/passive type, length, full link cost and installation diagnosis; remove unrelated radio and subscription template copy.",
+      "sourceSlugs": [
+        "direct-attach-copper-cables-buying-guide",
+        "direct-attach-copper-cables-compatibility-and-fit-guide",
+        "direct-attach-copper-cables-ownership-cost-and-maintenance"
+      ]
+    },
+    {
+      "site": "costume",
+      "familySlug": "props-and-animatronics",
+      "targetRole": "comparison",
+      "targetSlug": "props-and-animatronics-vs-alternatives",
+      "mergeMode": "curated",
+      "selectionEvidence": "No current page-row demand signal across four siblings. Static-versus-animated display selection is one user job; preserve movement/space, power/environment, activation/audience, storage and arrival checks on the comparison rather than repeating them in buying, fit and ownership templates.",
+      "sourceSlugs": [
+        "props-and-animatronics-buying-guide",
+        "props-and-animatronics-compatibility-and-fit-guide",
+        "props-and-animatronics-ownership-cost-and-maintenance"
+      ]
+    }
+  ],
+  "requestIndexing": false
+}
