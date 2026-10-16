@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "updatedAt": "2026-10-13",
+  "updatedAt": "2026-10-16",
   "status": "all-site-portfolio-recovery-deployed-and-publicly-verified",
   "objective": "Make affiliate traffic, merchant clicks, and commission revenue measurable before scaling content volume.",
   "socialWebsiteLinks20261012": {
@@ -5567,5 +5567,19 @@
       "cacheRevalidation": "First pass 71/76; five responses from three URLs had previous content and UPDATING cache status. All five passed on a normal-URL retry. No cache purge performed.",
       "report": "public-probe.json"
     }
+  },
+  "gsc24hAndMessagesReview20261016": {
+    "checkedDate": "2026-10-16",
+    "mode": "read-only investigation and local evidence records",
+    "report": "apps/affiliate/reports/seo-review-2026-10-16/README.md",
+    "diagnosis": "apps/affiliate/reports/seo-review-2026-10-16/diagnosis.json",
+    "latestSnapshot": "Final visible GSC total and complete page table agree on 2 impressions, 0 clicks, delay 5.5h. Initial export earlier in this run had 3 impressions; do not mix it with final data.",
+    "comparison": "Seven active affiliate page impressions 5 -> 2 (-60%) versus saved October 13 pre-change rolling-24h snapshot; clicks 0 -> 0. Network 1->1, Smarthome 2->0, Homeoffice 1->0, Baby 0->0, Pets 1->1, Style 0->0, Costume 0->0.",
+    "focused14": "All 14 changed canonicals measured: 1 -> 0 impressions, 0 -> 0 clicks. No observable release recovery; tiny delayed samples cannot establish causality.",
+    "messageFindings": "October 15 submitted-redirect notice concerns two intentional October 6 Baby merges, currently correct and absent from current sitemap. October 7 new 5xx and September 24 failed validation belong to historical September fetch failures, not the October 13 release.",
+    "indexRecoveryQueue": "Five retained 200 canonicals: smart-radiator-valves-buying-guide, smart-lever-locks-buying-guide (Smarthome), deco-be63-multigig-ports-guide, deco-be63-be67-two-pack-vs-three-pack, rackmount-power-distribution-units-buying-guide (Network). Stored Google snapshots remain not indexed due to September 23-25 5xx. Prioritize bounded crawl/index recovery. Sixth NAS source is an intended 308; keep it retired.",
+    "validation": "18/18 notification-related current public checks passed; Google live tests on one Smarthome and one Network canonical passed. This proves current availability, not reindexing or historical continuous uptime.",
+    "mutations": "No website edits, deployment, Request Indexing, Validate Fix, sitemap resubmission, external publication or automation.",
+    "nextReview": "2026-10-20: full 14-page October 13 batch plus prior cohort gate; retain October 27/November 12 and prior November 5 checkpoints."
   }
 }

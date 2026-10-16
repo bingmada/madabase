@@ -1,0 +1,41 @@
+{
+  "checkedDate": "2026-10-16",
+  "property": "sc-domain:madabase.com",
+  "inboxAtOpen": { "messages": 38, "unread": 15 },
+  "scope": "All message subjects/dates reviewed. Opened the three most recent indexing notifications and investigated their affected-URL reports. Older messages include validation progress/success, performance summaries and achievements; not all older bodies were opened.",
+  "messages": [
+    {
+      "sentDate": "2026-10-15",
+      "subject": "New reasons prevent pages in a sitemap from being indexed on site madabase.com",
+      "reason": "Page with redirect",
+      "submittedAffectedUrls": 2,
+      "firstDetected": "2026-10-13",
+      "affectedUrls": [
+        { "source": "https://baby.madabase.com/guides/automatic-bottle-washers-setup-and-daily-workflow", "lastCrawled": "2026-10-10", "target": "https://baby.madabase.com/guides/bottle-washer-vs-sterilizer-vs-dryer-guide" },
+        { "source": "https://baby.madabase.com/guides/infant-bath-tubs-ownership-cost-and-maintenance", "lastCrawled": "2026-10-07", "target": "https://baby.madabase.com/guides/infant-bath-tubs-safety-and-skip-guide" }
+      ],
+      "interpretation": "Both sources are intentional October 6 consolidation redirects, not October 13 content regressions. Current 308 destinations and target 200/self-canonicals passed. Both sources are absent from the current Baby sitemap; both targets are present. Do not restore the retired pages merely to clear this informational status.",
+      "config": "apps/affiliate/config/search-recovery-consolidations-2026-10-06.json"
+    },
+    {
+      "sentDate": "2026-10-07",
+      "subject": "New reasons prevent pages in a sitemap from being indexed on site madabase.com",
+      "reason": "Server error (5xx)",
+      "interpretation": "Investigated the current all-known report: eight examples, six active-affiliate URLs and two excluded legacy/Tools URLs. Active examples have September 23-25 crawl dates. Current delivery of all six is healthy: five self-canonical 200 pages and one intended NAS 308. Live Google tests on one Smarthome and one Network page passed. Stored index errors are not yet cleared."
+    },
+    {
+      "sentDate": "2026-09-24",
+      "subject": "Some fixes failed for Page indexing issues on site madabase.com",
+      "reason": "Server error (5xx)",
+      "validationStarted": "2026-08-24",
+      "validationFailed": "2026-09-22",
+      "interpretation": "This is the older failed validation cycle for the same server-error issue, not a failed validation of the October 13 release."
+    }
+  ],
+  "indexReportUpdated": "2026-10-12",
+  "allKnownContext": { "indexed": 1388, "notIndexed": 5163, "serverErrors": 8, "redirects": 180 },
+  "aggregationBoundary": "All-known counts include Main, legacy routes and retired properties. They are not totals for the seven active affiliate sites. Tools and legacy examples were read only to exclude them; no retired-site URL was fetched or inspected.",
+  "actionsPerformed": "Read messages, export reports, inspect stored index records and run two read-only live Google tests. No Request Indexing, Validate Fix, sitemap resubmission, website edit, deployment or automation.",
+  "evidence": ["gsc-server-errors/Table.csv", "gsc-submitted-redirects/Table.csv", "public-notification-checks.json", "index-inspections.json"],
+  "officialReferences": ["https://support.google.com/webmasters/answer/7440203?hl=en", "https://support.google.com/webmasters/answer/9012289?hl=en"]
+}

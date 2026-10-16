@@ -1,0 +1,8 @@
+site,name,host,beforeImpressions,currentImpressions,impressionDelta,beforeClicks,currentClicks,currentExposedUrls
+network,Network,network.madabase.com,1,1,0,0,0,1
+smarthome,Smarthome,smarthome.madabase.com,2,0,-2,0,0,0
+homeoffice,Homeoffice,homeoffice.madabase.com,1,0,-1,0,0,0
+baby,Baby,baby.madabase.com,0,0,0,0,0,0
+pet,Pets,pets.madabase.com,1,1,0,0,0,1
+style,Style,style.madabase.com,0,0,0,0,0,0
+costume,Costume,costumes.madabase.com,0,0,0,0,0,0

@@ -1,0 +1,70 @@
+[
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-radiator-valves-buying-guide",
+    "storedIndexStatus": "not-indexed",
+    "reason": "Server error (5xx)",
+    "lastCrawlDisplayed": "Sep 25, 2026, 11:01:18 PM",
+    "browserTimezone": "Asia/Shanghai",
+    "currentDelivery": 200,
+    "liveGoogleTest": {
+      "testedOnDisplayed": "Oct 16, 2026, 1:55 PM",
+      "availableToGoogle": true,
+      "canBeIndexed": true
+    },
+    "nextAction": "prioritize bounded canonical crawl/index recovery; indexing request not made in this analysis-only run"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-lever-locks-buying-guide",
+    "storedIndexStatus": "not-indexed",
+    "reason": "Server error (5xx)",
+    "lastCrawlDisplayed": "Sep 25, 2026, 9:32:44 PM",
+    "browserTimezone": "Asia/Shanghai",
+    "currentDelivery": 200,
+    "liveGoogleTest": null,
+    "nextAction": "prioritize bounded canonical crawl/index recovery; indexing request not made in this analysis-only run"
+  },
+  {
+    "url": "https://network.madabase.com/guides/deco-be63-multigig-ports-guide",
+    "storedIndexStatus": "not-indexed",
+    "reason": "Server error (5xx)",
+    "lastCrawlDisplayed": "Sep 25, 2026, 2:14:57 PM",
+    "browserTimezone": "Asia/Shanghai",
+    "currentDelivery": 200,
+    "liveGoogleTest": {
+      "testedOnDisplayed": "Oct 16, 2026, 1:56 PM",
+      "availableToGoogle": true,
+      "canBeIndexed": true
+    },
+    "nextAction": "prioritize bounded canonical crawl/index recovery; indexing request not made in this analysis-only run"
+  },
+  {
+    "url": "https://network.madabase.com/guides/deco-be63-be67-two-pack-vs-three-pack",
+    "storedIndexStatus": "not-indexed",
+    "reason": "Server error (5xx)",
+    "lastCrawlDisplayed": "Sep 24, 2026, 9:16:20 PM",
+    "browserTimezone": "Asia/Shanghai",
+    "currentDelivery": 200,
+    "liveGoogleTest": null,
+    "nextAction": "prioritize bounded canonical crawl/index recovery; indexing request not made in this analysis-only run"
+  },
+  {
+    "url": "https://network.madabase.com/guides/network-attached-storage-ownership-cost-and-maintenance",
+    "storedIndexStatus": "not-indexed",
+    "reason": "Server error (5xx)",
+    "lastCrawlDisplayed": "Sep 23, 2026, 7:52:48 PM",
+    "browserTimezone": "Asia/Shanghai",
+    "currentDelivery": 308,
+    "liveGoogleTest": null,
+    "nextAction": "preserve intended NAS redirect; do not request indexing of the retired source"
+  },
+  {
+    "url": "https://network.madabase.com/guides/rackmount-power-distribution-units-buying-guide",
+    "storedIndexStatus": "not-indexed",
+    "reason": "Server error (5xx)",
+    "lastCrawlDisplayed": "Sep 23, 2026, 6:23:07 PM",
+    "browserTimezone": "Asia/Shanghai",
+    "currentDelivery": 200,
+    "liveGoogleTest": null,
+    "nextAction": "prioritize bounded canonical crawl/index recovery; indexing request not made in this analysis-only run"
+  }
+]

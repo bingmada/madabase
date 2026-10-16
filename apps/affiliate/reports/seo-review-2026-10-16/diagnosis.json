@@ -1,0 +1,112 @@
+{
+  "checkedAt": "2026-10-16T14:01:05.364840+08:00",
+  "mode": "read-only GSC review with local evidence records",
+  "before": "October 13 saved pre-change rolling-24h snapshot (October 12-13), approximately 7-8h delayed; not a full calendar-day total.",
+  "current": "Latest rolling 24 hours, October 15-16, 2026 in the browser display. Exact final hourly endpoints not exported.",
+  "currentDelay": "5.5 hours ago",
+  "baselineSource": "apps/affiliate/reports/seo-review-2026-10-13/gsc-24h/Pages.csv",
+  "currentSource": "gsc-24h-final-dom.json",
+  "scope": "Seven active affiliate hosts only. Exclude Main, Tools, Test and Wellness.",
+  "beforeImpressions": 5,
+  "currentImpressions": 2,
+  "impressionChangePercent": -60,
+  "beforeClicks": 0,
+  "currentClicks": 0,
+  "bySite": [
+    {
+      "site": "network",
+      "name": "Network",
+      "host": "network.madabase.com",
+      "beforeImpressions": 1,
+      "currentImpressions": 1,
+      "impressionDelta": 0,
+      "beforeClicks": 0,
+      "currentClicks": 0,
+      "currentExposedUrls": 1
+    },
+    {
+      "site": "smarthome",
+      "name": "Smarthome",
+      "host": "smarthome.madabase.com",
+      "beforeImpressions": 2,
+      "currentImpressions": 0,
+      "impressionDelta": -2,
+      "beforeClicks": 0,
+      "currentClicks": 0,
+      "currentExposedUrls": 0
+    },
+    {
+      "site": "homeoffice",
+      "name": "Homeoffice",
+      "host": "homeoffice.madabase.com",
+      "beforeImpressions": 1,
+      "currentImpressions": 0,
+      "impressionDelta": -1,
+      "beforeClicks": 0,
+      "currentClicks": 0,
+      "currentExposedUrls": 0
+    },
+    {
+      "site": "baby",
+      "name": "Baby",
+      "host": "baby.madabase.com",
+      "beforeImpressions": 0,
+      "currentImpressions": 0,
+      "impressionDelta": 0,
+      "beforeClicks": 0,
+      "currentClicks": 0,
+      "currentExposedUrls": 0
+    },
+    {
+      "site": "pet",
+      "name": "Pets",
+      "host": "pets.madabase.com",
+      "beforeImpressions": 1,
+      "currentImpressions": 1,
+      "impressionDelta": 0,
+      "beforeClicks": 0,
+      "currentClicks": 0,
+      "currentExposedUrls": 1
+    },
+    {
+      "site": "style",
+      "name": "Style",
+      "host": "style.madabase.com",
+      "beforeImpressions": 0,
+      "currentImpressions": 0,
+      "impressionDelta": 0,
+      "beforeClicks": 0,
+      "currentClicks": 0,
+      "currentExposedUrls": 0
+    },
+    {
+      "site": "costume",
+      "name": "Costume",
+      "host": "costumes.madabase.com",
+      "beforeImpressions": 0,
+      "currentImpressions": 0,
+      "impressionDelta": 0,
+      "beforeClicks": 0,
+      "currentClicks": 0,
+      "currentExposedUrls": 0
+    }
+  ],
+  "focused14": {
+    "count": 14,
+    "beforeImpressions": 1,
+    "currentImpressions": 0,
+    "currentClicks": 0,
+    "currentExposedUrls": 0,
+    "allCurrentImpressionsOutsideChangedBatch": true
+  },
+  "conclusion": "No observed recovery against the saved October 13 pre-change snapshot. Tiny preliminary rolling samples cannot establish causality or a stable site strategy. Preserve October 20 full-batch review.",
+  "messages": "messages.json",
+  "priority": "Five retained canonical pages remain not indexed in stored GSC snapshots after September 23-25 5xx fetch failures, while current public delivery is healthy. Smarthome 2, Network 3; pursue bounded crawl/index recovery. Keep NAS and Baby intentional redirects.",
+  "limitations": [
+    "Rolling windows end at different times; the October 13 export has no hourly chart, so no exact matching-hour comparison is claimed.",
+    "Final current 24h numbers are visible-DOM evidence; the initial ZIP has three impressions and belongs to an earlier rolling snapshot.",
+    "No new seven-/28-day portfolio or all-14 URL Inspection gate performed; October 20 remains due.",
+    "Current 200 responses and two successful live Google tests do not rule out intermittent outages or prove reindexing.",
+    "No Request Indexing, Validate Fix, sitemap resubmission, source-content edit, deployment, external publication or automation performed."
+  ]
+}

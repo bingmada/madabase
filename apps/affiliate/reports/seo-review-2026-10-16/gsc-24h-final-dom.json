@@ -1,0 +1,29 @@
+{
+  "checkedAt": "2026-10-16T14:01:05.364840+08:00",
+  "source": "Authenticated GSC visible DOM after final refresh; no Page filter; Web search; Pages tab; all 1-2 of 2 rows read.",
+  "exportStatus": "Initial three-impression ZIP preserved separately. A second CSV export was blocked by Chrome (ERR_BLOCKED_BY_CLIENT); no bypass attempted. Final figures below are transcribed from the current visible DOM.",
+  "timeRange": "Latest rolling 24 hours, October 15-16, 2026 in the browser display. Exact final hourly endpoints not exported.",
+  "lastUpdateDisplayed": "5.5 hours ago",
+  "headline": {
+    "clicks": 0,
+    "impressions": 2,
+    "ctr": 0,
+    "averagePosition": 6.5
+  },
+  "pageRowCount": 2,
+  "pages": [
+    {
+      "url": "https://pets.madabase.com/reviews/coway-airmega-mighty2-air-purifier",
+      "clicks": 0,
+      "impressions": 1,
+      "position": 6
+    },
+    {
+      "url": "https://network.madabase.com/guides/netgear-gs908e-review",
+      "clicks": 0,
+      "impressions": 1,
+      "position": 7
+    }
+  ],
+  "refreshNote": "The first report/export showed three impressions, including a Costume guide at October 15 08:00 (+0800). During this investigation the rolling report refreshed to two impressions and the Costume row disappeared. Final headline and final two-row table agree. Do not mix the initial and final snapshots."
+}
