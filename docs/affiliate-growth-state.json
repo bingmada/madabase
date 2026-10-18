@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "updatedAt": "2026-10-16",
+  "updatedAt": "2026-10-18",
   "status": "all-site-portfolio-recovery-deployed-and-publicly-verified",
   "objective": "Make affiliate traffic, merchant clicks, and commission revenue measurable before scaling content volume.",
   "socialWebsiteLinks20261012": {
@@ -5581,5 +5581,19 @@
     "validation": "18/18 notification-related current public checks passed; Google live tests on one Smarthome and one Network canonical passed. This proves current availability, not reindexing or historical continuous uptime.",
     "mutations": "No website edits, deployment, Request Indexing, Validate Fix, sitemap resubmission, external publication or automation.",
     "nextReview": "2026-10-20: full 14-page October 13 batch plus prior cohort gate; retain October 27/November 12 and prior November 5 checkpoints."
+  },
+  "gsc24hAndMessagesReview20261018": {
+    "checkedAt": "2026-10-18T20:03:08.812861+08:00",
+    "mode": "read-only GSC review with local evidence records",
+    "report": "apps/affiliate/reports/seo-review-2026-10-18/README.md",
+    "diagnosis": "apps/affiliate/reports/seo-review-2026-10-18/diagnosis.json",
+    "activeAffiliatePageImpressions": "October 13 pre-change 5; October 16 final 2; October 18 current 14. Smarthome 12, Baby 1, Pets 1; Network/Homeoffice/Style/Costume 0. Clicks remain zero.",
+    "aggregation": "All-domain property headline 7 differs from page-grouped total 16. Seven-site page sum 14 excludes Main/Tools rows. Never mix these totals.",
+    "contentScope": "Nine current impressions on guides/reviews/comparisons, five on home/category/policy pages. None on the exact 14 pages changed October 13.",
+    "indexRecoveryQueue": "All five retained canonicals still not indexed with September 23-25 stored 5xx crawls; no new crawl timestamps. Current public checks passed 6/6 including Smarthome sitemap after two TLS-EOF retries. No indexing requests made.",
+    "messages": "No new messages since October 16; latest remains October 15 intentional Baby redirect notice.",
+    "decision": "Exposure breadth has rebounded relative to the two saved snapshots, concentrated in Smarthome; no clicks and zero exposure in the exact October 13 changed batch. This is an early exposure signal, not confirmed content-release recovery. Preserve October 20 full-batch review.",
+    "actions": "Read-only UI/export/public probes and evidence records; no site edits, deployment, search-submission or automation.",
+    "nextReview": "2026-10-20 full October 13 changed batch plus prior cohort; keep existing later gates."
   }
 }

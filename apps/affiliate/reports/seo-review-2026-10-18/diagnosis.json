@@ -1,0 +1,152 @@
+{
+  "checkedAt": "2026-10-18T20:03:08.812861+08:00",
+  "mode": "read-only GSC review with local evidence records",
+  "window": {
+    "startHourShanghai": "2026-10-17T16:00:00",
+    "endHourShanghai": "2026-10-18T15:00:00",
+    "hourBins": 24,
+    "label": "latest rolling 24h; preliminary",
+    "displayedReportingDelay": "4 hours ago"
+  },
+  "allDomainHeadline": {
+    "clicks": 0,
+    "impressions": 7,
+    "averagePosition": 40.1,
+    "chartImpressionsSum": 7
+  },
+  "initialObservedComparisonHeadline": {
+    "currentImpressions": 7,
+    "previousImpressions": 17,
+    "currentClicks": 0,
+    "previousClicks": 0,
+    "note": "All-domain context only, observed before refresh; the previous-window page export was not captured. Do not present these as active affiliate totals."
+  },
+  "aggregationBoundary": "Headline/Chart is aggregated by property. Pages.csv is aggregated by page; all 16 rows have one impression each. Exclude one Main and one Tools row to get 14 active-affiliate page impressions. No retired property URL was visited; its row was read for exclusion only. These totals are different metrics, not interchangeable.",
+  "sevenSites": [
+    {
+      "site": "network",
+      "host": "network.madabase.com",
+      "oct13Impressions": 1,
+      "oct16Impressions": 1,
+      "oct18Impressions": 0,
+      "oct18Clicks": 0,
+      "oct18ExposedUrls": 0,
+      "contentPageImpressions": 0
+    },
+    {
+      "site": "smarthome",
+      "host": "smarthome.madabase.com",
+      "oct13Impressions": 2,
+      "oct16Impressions": 0,
+      "oct18Impressions": 12,
+      "oct18Clicks": 0,
+      "oct18ExposedUrls": 12,
+      "contentPageImpressions": 7
+    },
+    {
+      "site": "homeoffice",
+      "host": "homeoffice.madabase.com",
+      "oct13Impressions": 1,
+      "oct16Impressions": 0,
+      "oct18Impressions": 0,
+      "oct18Clicks": 0,
+      "oct18ExposedUrls": 0,
+      "contentPageImpressions": 0
+    },
+    {
+      "site": "baby",
+      "host": "baby.madabase.com",
+      "oct13Impressions": 0,
+      "oct16Impressions": 0,
+      "oct18Impressions": 1,
+      "oct18Clicks": 0,
+      "oct18ExposedUrls": 1,
+      "contentPageImpressions": 1
+    },
+    {
+      "site": "pet",
+      "host": "pets.madabase.com",
+      "oct13Impressions": 1,
+      "oct16Impressions": 1,
+      "oct18Impressions": 1,
+      "oct18Clicks": 0,
+      "oct18ExposedUrls": 1,
+      "contentPageImpressions": 1
+    },
+    {
+      "site": "style",
+      "host": "style.madabase.com",
+      "oct13Impressions": 0,
+      "oct16Impressions": 0,
+      "oct18Impressions": 0,
+      "oct18Clicks": 0,
+      "oct18ExposedUrls": 0,
+      "contentPageImpressions": 0
+    },
+    {
+      "site": "costume",
+      "host": "costumes.madabase.com",
+      "oct13Impressions": 0,
+      "oct16Impressions": 0,
+      "oct18Impressions": 0,
+      "oct18Clicks": 0,
+      "oct18ExposedUrls": 0,
+      "contentPageImpressions": 0
+    }
+  ],
+  "activeAffiliatePageMetrics": {
+    "oct13Impressions": 5,
+    "oct16Impressions": 2,
+    "oct18Impressions": 14,
+    "oct18Clicks": 0,
+    "exposedUrls": 14,
+    "guideReviewComparisonImpressions": 9,
+    "homeCategoryPolicyImpressions": 5
+  },
+  "focused14": {
+    "canonicals": 14,
+    "oct13Impressions": 1,
+    "oct16Impressions": 0,
+    "oct18Impressions": 0,
+    "oct18Clicks": 0,
+    "allCurrentExposedPagesOutsideBatch": true
+  },
+  "queryEvidence": {
+    "availableRows": 1,
+    "query": "philips avent scf358",
+    "impressions": 1,
+    "clicks": 0,
+    "position": 28,
+    "note": "One exact-model query is observable. Missing or privacy-suppressed rows do not establish no other demand. No ranking trend inferred from this single row."
+  },
+  "messages": {
+    "checkedAt": "2026-10-18T20:03:08.812861+08:00",
+    "total": 38,
+    "unread": 14,
+    "latestMessageDate": "2026-10-15",
+    "newMessagesSinceOctober16": false,
+    "latestSubject": "New reasons prevent pages in a sitemap from being indexed on site madabase.com",
+    "priorInvestigatedDetails": "apps/affiliate/reports/seo-review-2026-10-16/messages.json",
+    "scope": "Full subjects/dates list checked for new messages; older message bodies not reopened."
+  },
+  "indexQueue": {
+    "checked": 5,
+    "indexed": 0,
+    "stored5xx": 5,
+    "changedLastCrawl": 0,
+    "publicChecks": {
+      "requests": 6,
+      "passed": 6
+    },
+    "transientDiagnostics": "Two first-pass requests ended with local TLS EOF before an HTTP response. Both passed a focused retry with TLS verification enabled. The final five canonical checks and Smarthome sitemap passed. No current HTTP 5xx was observed.",
+    "sitemapInspectionCaveat": "Two stored-inspection discovery panels showed Temporary processing error. This is distinct from a confirmed current sitemap fetch failure; current Smarthome sitemap returned 200 and contains both relevant retained URLs."
+  },
+  "decision": "Exposure breadth has rebounded relative to the two saved snapshots, concentrated in Smarthome; no clicks and zero exposure in the exact October 13 changed batch. This is an early exposure signal, not confirmed content-release recovery. Preserve October 20 full-batch review.",
+  "limitations": [
+    "Rolling snapshots have different end times; October 13 hourly chart is unavailable. These are not complete calendar-day comparisons.",
+    "No complete 7-/28-day portfolio or full-14 URL Inspection gate performed.",
+    "Current public checks cannot rule out intermittent historical outages. No new Google live test or indexing submission was made.",
+    "No website source changes, deployment, Request Indexing, Validate Fix, sitemap resubmission, distribution or automation."
+  ],
+  "officialAggregationReference": "https://support.google.com/webmasters/answer/7576553?hl=en"
+}

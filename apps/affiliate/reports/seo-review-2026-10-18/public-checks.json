@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-radiator-valves-buying-guide",
+    "checkedAt": "2026-10-18T11:57:13.489603+00:00",
+    "status": 200,
+    "finalUrl": "https://smarthome.madabase.com/guides/smart-radiator-valves-buying-guide",
+    "cache": "DYNAMIC",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://smarthome.madabase.com/guides/smart-radiator-valves-buying-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "passed": true
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-lever-locks-buying-guide",
+    "checkedAt": "2026-10-18T11:58:46.432262+00:00",
+    "status": 200,
+    "finalUrl": "https://smarthome.madabase.com/guides/smart-lever-locks-buying-guide",
+    "cache": "DYNAMIC",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://smarthome.madabase.com/guides/smart-lever-locks-buying-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/guides/deco-be63-multigig-ports-guide",
+    "checkedAt": "2026-10-18T11:57:15.879152+00:00",
+    "status": 200,
+    "finalUrl": "https://network.madabase.com/guides/deco-be63-multigig-ports-guide",
+    "cache": "DYNAMIC",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://network.madabase.com/guides/deco-be63-multigig-ports-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/guides/deco-be63-be67-two-pack-vs-three-pack",
+    "checkedAt": "2026-10-18T11:57:18.306444+00:00",
+    "status": 200,
+    "finalUrl": "https://network.madabase.com/guides/deco-be63-be67-two-pack-vs-three-pack",
+    "cache": "DYNAMIC",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://network.madabase.com/guides/deco-be63-be67-two-pack-vs-three-pack",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "passed": true
+  },
+  {
+    "url": "https://network.madabase.com/guides/rackmount-power-distribution-units-buying-guide",
+    "checkedAt": "2026-10-18T11:57:18.994482+00:00",
+    "status": 200,
+    "finalUrl": "https://network.madabase.com/guides/rackmount-power-distribution-units-buying-guide",
+    "cache": "DYNAMIC",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://network.madabase.com/guides/rackmount-power-distribution-units-buying-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "passed": true
+  },
+  {
+    "url": "https://smarthome.madabase.com/sitemap.xml",
+    "checkedAt": "2026-10-18T11:58:48.779984+00:00",
+    "status": 200,
+    "finalUrl": "https://smarthome.madabase.com/sitemap.xml",
+    "cache": "DYNAMIC",
+    "xRobotsTag": null,
+    "containsRetainedSmarthomeUrls": true,
+    "passed": true
+  }
+]

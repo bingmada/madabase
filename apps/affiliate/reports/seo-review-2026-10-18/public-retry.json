@@ -1,0 +1,28 @@
+[
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-lever-locks-buying-guide",
+    "checkedAt": "2026-10-18T11:58:46.432262+00:00",
+    "status": 200,
+    "finalUrl": "https://smarthome.madabase.com/guides/smart-lever-locks-buying-guide",
+    "cache": "DYNAMIC",
+    "xRobotsTag": null,
+    "canonicals": [
+      {
+        "href": "https://smarthome.madabase.com/guides/smart-lever-locks-buying-guide",
+        "inHead": true
+      }
+    ],
+    "robots": [],
+    "passed": true
+  },
+  {
+    "url": "https://smarthome.madabase.com/sitemap.xml",
+    "checkedAt": "2026-10-18T11:58:48.779984+00:00",
+    "status": 200,
+    "finalUrl": "https://smarthome.madabase.com/sitemap.xml",
+    "cache": "DYNAMIC",
+    "xRobotsTag": null,
+    "containsRetainedSmarthomeUrls": true,
+    "passed": true
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-radiator-valves-buying-guide",
+    "storedIndexStatus": "not-indexed",
+    "reason": "Server error (5xx)",
+    "lastCrawlDisplayed": "Sep 25, 2026, 11:01:18 PM",
+    "lastCrawlChangedSinceOctober16": false,
+    "sitemapTemporaryProcessingError": true,
+    "currentDelivery": 200,
+    "currentPublicCheck": "passed",
+    "nextAction": "bounded canonical recrawl/index recovery; no indexing request in this analysis-only run"
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/smart-lever-locks-buying-guide",
+    "storedIndexStatus": "not-indexed",
+    "reason": "Server error (5xx)",
+    "lastCrawlDisplayed": "Sep 25, 2026, 9:32:44 PM",
+    "lastCrawlChangedSinceOctober16": false,
+    "sitemapTemporaryProcessingError": false,
+    "currentDelivery": 200,
+    "currentPublicCheck": "passed",
+    "nextAction": "bounded canonical recrawl/index recovery; no indexing request in this analysis-only run"
+  },
+  {
+    "url": "https://network.madabase.com/guides/deco-be63-multigig-ports-guide",
+    "storedIndexStatus": "not-indexed",
+    "reason": "Server error (5xx)",
+    "lastCrawlDisplayed": "Sep 25, 2026, 2:14:57 PM",
+    "lastCrawlChangedSinceOctober16": false,
+    "sitemapTemporaryProcessingError": false,
+    "currentDelivery": 200,
+    "currentPublicCheck": "passed",
+    "nextAction": "bounded canonical recrawl/index recovery; no indexing request in this analysis-only run"
+  },
+  {
+    "url": "https://network.madabase.com/guides/deco-be63-be67-two-pack-vs-three-pack",
+    "storedIndexStatus": "not-indexed",
+    "reason": "Server error (5xx)",
+    "lastCrawlDisplayed": "Sep 24, 2026, 9:16:20 PM",
+    "lastCrawlChangedSinceOctober16": false,
+    "sitemapTemporaryProcessingError": false,
+    "currentDelivery": 200,
+    "currentPublicCheck": "passed",
+    "nextAction": "bounded canonical recrawl/index recovery; no indexing request in this analysis-only run"
+  },
+  {
+    "url": "https://network.madabase.com/guides/rackmount-power-distribution-units-buying-guide",
+    "storedIndexStatus": "not-indexed",
+    "reason": "Server error (5xx)",
+    "lastCrawlDisplayed": "Sep 23, 2026, 6:23:07 PM",
+    "lastCrawlChangedSinceOctober16": false,
+    "sitemapTemporaryProcessingError": true,
+    "currentDelivery": 200,
+    "currentPublicCheck": "passed",
+    "nextAction": "bounded canonical recrawl/index recovery; no indexing request in this analysis-only run"
+  }
+]
