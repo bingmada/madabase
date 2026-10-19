@@ -1,0 +1,326 @@
+{
+  "checkedAt": "2026-10-19T11:45:29.492696+00:00",
+  "rows": [
+    {
+      "url": "https://madabase.com/_next/static/chunks/app/page-304f09475330e37c.js",
+      "generation": "retained",
+      "expectedSha256": null,
+      "status": 200,
+      "bytes": 706,
+      "contentType": "application/javascript; charset=UTF-8",
+      "sha256": "6b6e855491c29dcae4786db09ae002ecc5dd33b5c6984b2c289dbb8b0a25da49",
+      "passed": true
+    },
+    {
+      "url": "https://madabase.com/_next/static/css/6245faf13a4f194d.css",
+      "generation": "retained",
+      "expectedSha256": null,
+      "status": 200,
+      "bytes": 20285,
+      "contentType": "text/css; charset=UTF-8",
+      "sha256": "10526a42a27d4147def13dad1bd4c9d964ee24e0fc166b787e5954a54603f62c",
+      "passed": true
+    },
+    {
+      "url": "https://madabase.com/_next/static/chunks/app/page-304f09475330e37c.js",
+      "generation": "current",
+      "expectedSha256": "6b6e855491c29dcae4786db09ae002ecc5dd33b5c6984b2c289dbb8b0a25da49",
+      "status": 200,
+      "bytes": 706,
+      "contentType": "application/javascript; charset=UTF-8",
+      "sha256": "6b6e855491c29dcae4786db09ae002ecc5dd33b5c6984b2c289dbb8b0a25da49",
+      "passed": true
+    },
+    {
+      "url": "https://madabase.com/_next/static/css/8104babcd8f5b51e.css",
+      "generation": "current",
+      "expectedSha256": "a7acef5b56b3f8f696dd207a33d743e76b521aa4b1a2a502f08f46b62375039e",
+      "status": 200,
+      "bytes": 24363,
+      "contentType": "text/css; charset=UTF-8",
+      "sha256": "a7acef5b56b3f8f696dd207a33d743e76b521aa4b1a2a502f08f46b62375039e",
+      "passed": true
+    },
+    {
+      "url": "https://homeoffice.madabase.com/_next/static/chunks/app/page-abd18dbf2a6081bd.js",
+      "generation": "retained",
+      "expectedSha256": null,
+      "status": 200,
+      "bytes": 12112,
+      "contentType": "application/javascript; charset=UTF-8",
+      "sha256": "7905cc08b9e7dea70098b5dd1606b4829fbd7bb686999dbe290fc1b2564b5c89",
+      "passed": true
+    },
+    {
+      "url": "https://homeoffice.madabase.com/_next/static/css/74cf2572cf8da64e.css",
+      "generation": "retained",
+      "expectedSha256": null,
+      "status": 200,
+      "bytes": 36932,
+      "contentType": "text/css; charset=UTF-8",
+      "sha256": "ec4e40dbae2539f73cf67f3c5761f5897e1082a4945e2c80f224a8ce4425bc79",
+      "passed": true
+    },
+    {
+      "url": "https://homeoffice.madabase.com/_next/static/chunks/app/page-9e27dc1c0481df61.js",
+      "generation": "current",
+      "expectedSha256": "09dfc84ffad421f5d6b0cf11e3c750e746f5647bcd85b57ebee800f345a445e2",
+      "status": 200,
+      "bytes": 13264,
+      "contentType": "application/javascript; charset=UTF-8",
+      "sha256": "09dfc84ffad421f5d6b0cf11e3c750e746f5647bcd85b57ebee800f345a445e2",
+      "passed": true
+    },
+    {
+      "url": "https://homeoffice.madabase.com/_next/static/css/be0646b6f9cfee30.css",
+      "generation": "current",
+      "expectedSha256": "7502caad3929b492859b38ed7c844797266bc29cd487cb508543a64d46d0d987",
+      "status": 200,
+      "bytes": 42093,
+      "contentType": "text/css; charset=UTF-8",
+      "sha256": "7502caad3929b492859b38ed7c844797266bc29cd487cb508543a64d46d0d987",
+      "passed": true
+    },
+    {
+      "url": "https://network.madabase.com/_next/static/chunks/app/page-abd18dbf2a6081bd.js",
+      "generation": "retained",
+      "expectedSha256": null,
+      "status": 200,
+      "bytes": 12112,
+      "contentType": "application/javascript; charset=UTF-8",
+      "sha256": "7905cc08b9e7dea70098b5dd1606b4829fbd7bb686999dbe290fc1b2564b5c89",
+      "passed": true
+    },
+    {
+      "url": "https://network.madabase.com/_next/static/css/74cf2572cf8da64e.css",
+      "generation": "retained",
+      "expectedSha256": null,
+      "status": 200,
+      "bytes": 36932,
+      "contentType": "text/css; charset=UTF-8",
+      "sha256": "ec4e40dbae2539f73cf67f3c5761f5897e1082a4945e2c80f224a8ce4425bc79",
+      "passed": true
+    },
+    {
+      "url": "https://network.madabase.com/_next/static/chunks/app/page-9e27dc1c0481df61.js",
+      "generation": "current",
+      "expectedSha256": "09dfc84ffad421f5d6b0cf11e3c750e746f5647bcd85b57ebee800f345a445e2",
+      "status": 200,
+      "bytes": 13264,
+      "contentType": "application/javascript; charset=UTF-8",
+      "sha256": "09dfc84ffad421f5d6b0cf11e3c750e746f5647bcd85b57ebee800f345a445e2",
+      "passed": true
+    },
+    {
+      "url": "https://network.madabase.com/_next/static/css/be0646b6f9cfee30.css",
+      "generation": "current",
+      "expectedSha256": "7502caad3929b492859b38ed7c844797266bc29cd487cb508543a64d46d0d987",
+      "status": 200,
+      "bytes": 42093,
+      "contentType": "text/css; charset=UTF-8",
+      "sha256": "7502caad3929b492859b38ed7c844797266bc29cd487cb508543a64d46d0d987",
+      "passed": true
+    },
+    {
+      "url": "https://smarthome.madabase.com/_next/static/chunks/app/page-abd18dbf2a6081bd.js",
+      "generation": "retained",
+      "expectedSha256": null,
+      "status": 200,
+      "bytes": 12112,
+      "contentType": "application/javascript; charset=UTF-8",
+      "sha256": "7905cc08b9e7dea70098b5dd1606b4829fbd7bb686999dbe290fc1b2564b5c89",
+      "passed": true
+    },
+    {
+      "url": "https://smarthome.madabase.com/_next/static/css/74cf2572cf8da64e.css",
+      "generation": "retained",
+      "expectedSha256": null,
+      "status": 200,
+      "bytes": 36932,
+      "contentType": "text/css; charset=UTF-8",
+      "sha256": "ec4e40dbae2539f73cf67f3c5761f5897e1082a4945e2c80f224a8ce4425bc79",
+      "passed": true
+    },
+    {
+      "url": "https://smarthome.madabase.com/_next/static/chunks/app/page-9e27dc1c0481df61.js",
+      "generation": "current",
+      "expectedSha256": "09dfc84ffad421f5d6b0cf11e3c750e746f5647bcd85b57ebee800f345a445e2",
+      "status": 200,
+      "bytes": 13264,
+      "contentType": "application/javascript; charset=UTF-8",
+      "sha256": "09dfc84ffad421f5d6b0cf11e3c750e746f5647bcd85b57ebee800f345a445e2",
+      "passed": true
+    },
+    {
+      "url": "https://smarthome.madabase.com/_next/static/css/be0646b6f9cfee30.css",
+      "generation": "current",
+      "expectedSha256": "7502caad3929b492859b38ed7c844797266bc29cd487cb508543a64d46d0d987",
+      "status": 200,
+      "bytes": 42093,
+      "contentType": "text/css; charset=UTF-8",
+      "sha256": "7502caad3929b492859b38ed7c844797266bc29cd487cb508543a64d46d0d987",
+      "passed": true
+    },
+    {
+      "url": "https://baby.madabase.com/_next/static/chunks/app/page-abd18dbf2a6081bd.js",
+      "generation": "retained",
+      "expectedSha256": null,
+      "status": 200,
+      "bytes": 12112,
+      "contentType": "application/javascript; charset=UTF-8",
+      "sha256": "7905cc08b9e7dea70098b5dd1606b4829fbd7bb686999dbe290fc1b2564b5c89",
+      "passed": true
+    },
+    {
+      "url": "https://baby.madabase.com/_next/static/css/74cf2572cf8da64e.css",
+      "generation": "retained",
+      "expectedSha256": null,
+      "status": 200,
+      "bytes": 36932,
+      "contentType": "text/css; charset=UTF-8",
+      "sha256": "ec4e40dbae2539f73cf67f3c5761f5897e1082a4945e2c80f224a8ce4425bc79",
+      "passed": true
+    },
+    {
+      "url": "https://baby.madabase.com/_next/static/chunks/app/page-9e27dc1c0481df61.js",
+      "generation": "current",
+      "expectedSha256": "09dfc84ffad421f5d6b0cf11e3c750e746f5647bcd85b57ebee800f345a445e2",
+      "status": 200,
+      "bytes": 13264,
+      "contentType": "application/javascript; charset=UTF-8",
+      "sha256": "09dfc84ffad421f5d6b0cf11e3c750e746f5647bcd85b57ebee800f345a445e2",
+      "passed": true
+    },
+    {
+      "url": "https://baby.madabase.com/_next/static/css/be0646b6f9cfee30.css",
+      "generation": "current",
+      "expectedSha256": "7502caad3929b492859b38ed7c844797266bc29cd487cb508543a64d46d0d987",
+      "status": 200,
+      "bytes": 42093,
+      "contentType": "text/css; charset=UTF-8",
+      "sha256": "7502caad3929b492859b38ed7c844797266bc29cd487cb508543a64d46d0d987",
+      "passed": true
+    },
+    {
+      "url": "https://pets.madabase.com/_next/static/chunks/app/page-abd18dbf2a6081bd.js",
+      "generation": "retained",
+      "expectedSha256": null,
+      "status": 200,
+      "bytes": 12112,
+      "contentType": "application/javascript; charset=UTF-8",
+      "sha256": "7905cc08b9e7dea70098b5dd1606b4829fbd7bb686999dbe290fc1b2564b5c89",
+      "passed": true
+    },
+    {
+      "url": "https://pets.madabase.com/_next/static/css/74cf2572cf8da64e.css",
+      "generation": "retained",
+      "expectedSha256": null,
+      "status": 200,
+      "bytes": 36932,
+      "contentType": "text/css; charset=UTF-8",
+      "sha256": "ec4e40dbae2539f73cf67f3c5761f5897e1082a4945e2c80f224a8ce4425bc79",
+      "passed": true
+    },
+    {
+      "url": "https://pets.madabase.com/_next/static/chunks/app/page-9e27dc1c0481df61.js",
+      "generation": "current",
+      "expectedSha256": "09dfc84ffad421f5d6b0cf11e3c750e746f5647bcd85b57ebee800f345a445e2",
+      "status": 200,
+      "bytes": 13264,
+      "contentType": "application/javascript; charset=UTF-8",
+      "sha256": "09dfc84ffad421f5d6b0cf11e3c750e746f5647bcd85b57ebee800f345a445e2",
+      "passed": true
+    },
+    {
+      "url": "https://pets.madabase.com/_next/static/css/be0646b6f9cfee30.css",
+      "generation": "current",
+      "expectedSha256": "7502caad3929b492859b38ed7c844797266bc29cd487cb508543a64d46d0d987",
+      "status": 200,
+      "bytes": 42093,
+      "contentType": "text/css; charset=UTF-8",
+      "sha256": "7502caad3929b492859b38ed7c844797266bc29cd487cb508543a64d46d0d987",
+      "passed": true
+    },
+    {
+      "url": "https://style.madabase.com/_next/static/chunks/app/page-abd18dbf2a6081bd.js",
+      "generation": "retained",
+      "expectedSha256": null,
+      "status": 200,
+      "bytes": 12112,
+      "contentType": "application/javascript; charset=UTF-8",
+      "sha256": "7905cc08b9e7dea70098b5dd1606b4829fbd7bb686999dbe290fc1b2564b5c89",
+      "passed": true
+    },
+    {
+      "url": "https://style.madabase.com/_next/static/css/74cf2572cf8da64e.css",
+      "generation": "retained",
+      "expectedSha256": null,
+      "status": 200,
+      "bytes": 36932,
+      "contentType": "text/css; charset=UTF-8",
+      "sha256": "ec4e40dbae2539f73cf67f3c5761f5897e1082a4945e2c80f224a8ce4425bc79",
+      "passed": true
+    },
+    {
+      "url": "https://style.madabase.com/_next/static/chunks/app/page-9e27dc1c0481df61.js",
+      "generation": "current",
+      "expectedSha256": "09dfc84ffad421f5d6b0cf11e3c750e746f5647bcd85b57ebee800f345a445e2",
+      "status": 200,
+      "bytes": 13264,
+      "contentType": "application/javascript; charset=UTF-8",
+      "sha256": "09dfc84ffad421f5d6b0cf11e3c750e746f5647bcd85b57ebee800f345a445e2",
+      "passed": true
+    },
+    {
+      "url": "https://style.madabase.com/_next/static/css/be0646b6f9cfee30.css",
+      "generation": "current",
+      "expectedSha256": "7502caad3929b492859b38ed7c844797266bc29cd487cb508543a64d46d0d987",
+      "status": 200,
+      "bytes": 42093,
+      "contentType": "text/css; charset=UTF-8",
+      "sha256": "7502caad3929b492859b38ed7c844797266bc29cd487cb508543a64d46d0d987",
+      "passed": true
+    },
+    {
+      "url": "https://costumes.madabase.com/_next/static/chunks/app/page-abd18dbf2a6081bd.js",
+      "generation": "retained",
+      "expectedSha256": null,
+      "status": 200,
+      "bytes": 12112,
+      "contentType": "application/javascript; charset=UTF-8",
+      "sha256": "7905cc08b9e7dea70098b5dd1606b4829fbd7bb686999dbe290fc1b2564b5c89",
+      "passed": true
+    },
+    {
+      "url": "https://costumes.madabase.com/_next/static/css/74cf2572cf8da64e.css",
+      "generation": "retained",
+      "expectedSha256": null,
+      "status": 200,
+      "bytes": 36932,
+      "contentType": "text/css; charset=UTF-8",
+      "sha256": "ec4e40dbae2539f73cf67f3c5761f5897e1082a4945e2c80f224a8ce4425bc79",
+      "passed": true
+    },
+    {
+      "url": "https://costumes.madabase.com/_next/static/chunks/app/page-9e27dc1c0481df61.js",
+      "generation": "current",
+      "expectedSha256": "09dfc84ffad421f5d6b0cf11e3c750e746f5647bcd85b57ebee800f345a445e2",
+      "status": 200,
+      "bytes": 13264,
+      "contentType": "application/javascript; charset=UTF-8",
+      "sha256": "09dfc84ffad421f5d6b0cf11e3c750e746f5647bcd85b57ebee800f345a445e2",
+      "passed": true
+    },
+    {
+      "url": "https://costumes.madabase.com/_next/static/css/be0646b6f9cfee30.css",
+      "generation": "current",
+      "expectedSha256": "7502caad3929b492859b38ed7c844797266bc29cd487cb508543a64d46d0d987",
+      "status": 200,
+      "bytes": 42093,
+      "contentType": "text/css; charset=UTF-8",
+      "sha256": "7502caad3929b492859b38ed7c844797266bc29cd487cb508543a64d46d0d987",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

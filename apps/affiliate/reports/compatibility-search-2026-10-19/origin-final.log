@@ -1,0 +1,6 @@
+FINAL_RELEASE origin-verified True 6.7012107372283936
+FINAL_SERVICE main active running 0 /srv/madabase-main/releases/discovery-20261019-a837332f6b0881c2fc10f4f335715dd6b97954fc True
+FINAL_SERVICE affiliate active running 0 /srv/madabase-affiliate/releases/discovery-20261019-a837332f6b0881c2fc10f4f335715dd6b97954fc True
+FINAL_SERVICE test active running 0 /srv/madabase-test/releases/local-20260820-next15523 True
+FINAL_WATCHDOG inactive
+FINAL_GATES [('main', 812.1484375, True), ('affiliate', 754.2421875, True)]

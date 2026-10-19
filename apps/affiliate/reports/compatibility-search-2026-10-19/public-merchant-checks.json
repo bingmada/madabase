@@ -1,0 +1,29 @@
+{
+  "checkedAt": "2026-10-19T11:48:51.971Z",
+  "method": "Visible signed-in Chrome Amazon product pages without affiliate attribution; temporary US 10001 delivery preview",
+  "deliveryPreviewRestored": "China",
+  "attributedMerchantClicks": 0,
+  "accountOrOrderChanges": 0,
+  "rows": [
+    {
+      "asin": "B0B14FTVTV",
+      "identity": "ThinkCentre M720q, i5-8500T, 16GB, 256GB NVMe, Renewed",
+      "availability": "In Stock in US preview",
+      "passed": true
+    },
+    {
+      "asin": "B07D2DZ42B",
+      "identity": "Kingston KCP426SD8/16, one 16GB DDR4-2666 SO-DIMM",
+      "availability": "Available in US preview",
+      "passed": true
+    },
+    {
+      "asin": "B078211KBB",
+      "identity": "Crucial MX500 CT1000MX500SSD1, one 1TB 2.5-inch SATA SSD",
+      "availability": "Buy New available in US preview",
+      "passed": true
+    }
+  ],
+  "attribution": "Rendered public CTA hrefs use exact ASIN and madaoffice-20; click validator tested separately in nonpersisting QA mode",
+  "limits": "No stock guarantee, automatic product substitution or all-legacy-offer availability claim"
+}

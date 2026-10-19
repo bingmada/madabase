@@ -1,0 +1,115 @@
+{
+  "checkedAt": "2026-10-19T11:46:49.134Z",
+  "production": true,
+  "qaQueriesPreventAnalytics": true,
+  "desktopInteractions": [
+    {
+      "case": "Tiny RAM 16 to 32 GB, one module retained",
+      "expected": "one exact 16GB module CTA",
+      "passed": true
+    },
+    {
+      "case": "Tiny current 16 GB target 16 GB",
+      "expected": "no-buy and zero sponsored component buttons",
+      "passed": true
+    },
+    {
+      "case": "Tiny SATA kit confirmed",
+      "expected": "Crucial CT1000MX500SSD1 exact CTA",
+      "passed": true
+    },
+    {
+      "case": "Tiny SATA kit unknown",
+      "expected": "unknown and no purchase button",
+      "passed": true
+    },
+    {
+      "case": "M720q guide",
+      "expected": "static parts reference and separate B0B14FTVTV whole-unit alternative",
+      "passed": true
+    },
+    {
+      "case": "M4 Air three docks comparison",
+      "expected": "three compared models, directional video cable and keep-current option",
+      "passed": true
+    },
+    {
+      "case": "Arm missing port clearance",
+      "expected": "unknown, then conditional after confirmed clearance",
+      "passed": true
+    },
+    {
+      "case": "Network same switch",
+      "expected": "2.5GbE supported with five used ports",
+      "passed": true
+    },
+    {
+      "case": "Network router transit",
+      "expected": "1GbE router LAN is bottleneck",
+      "passed": true
+    },
+    {
+      "case": "Homeoffice desks category M720q",
+      "expected": "two relevant results",
+      "passed": true
+    },
+    {
+      "case": "Main M720q search",
+      "expected": "two Homeoffice results",
+      "passed": true
+    },
+    {
+      "case": "Main publication filter Network + M720q",
+      "expected": "zero results",
+      "passed": true
+    },
+    {
+      "case": "Network 2.5GbE search",
+      "expected": "35 results",
+      "passed": true
+    },
+    {
+      "case": "Network 2.5GbE compatibility + Ethernet task",
+      "expected": "one NAS and Ethernet planner",
+      "passed": true
+    }
+  ],
+  "mobile": [
+    {
+      "url": "https://homeoffice.madabase.com/compatibility/mini-pcs?madabase-qa=1",
+      "width": 390,
+      "scrollWidth": 375
+    },
+    {
+      "forms": 2,
+      "h1": "MacBook Dock Compatibility: Displays, Cables and Charging",
+      "scrollWidth": 375,
+      "url": "https://homeoffice.madabase.com/compatibility/docks?madabase-qa=1",
+      "width": 390
+    },
+    {
+      "forms": 2,
+      "h1": "Monitor Arm Fit: Weight, VESA, Clamp and Desk Checks",
+      "scrollWidth": 375,
+      "url": "https://homeoffice.madabase.com/compatibility/monitor-arms?madabase-qa=1",
+      "width": 390
+    },
+    {
+      "forms": 2,
+      "h1": "NAS and Ethernet Planner: Bottlenecks and Switch Ports",
+      "scrollWidth": 375,
+      "url": "https://network.madabase.com/compatibility/ethernet?madabase-qa=1",
+      "width": 390
+    },
+    {
+      "forms": 2,
+      "h1": "Find a model, a question, or the next decision.",
+      "scrollWidth": 375,
+      "url": "https://madabase.com/search?q=M720q&madabase-qa=1",
+      "width": 390
+    }
+  ],
+  "viewportReset": true,
+  "screenshot": "public-homeoffice.png",
+  "passed": true
+}

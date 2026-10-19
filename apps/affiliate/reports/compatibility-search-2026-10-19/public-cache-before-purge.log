@@ -1,0 +1,30 @@
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+{
+  "plainCanonicalTargets": 49,
+  "stale": [
+    "https://homeoffice.madabase.com/",
+    "https://network.madabase.com/",
+    "https://smarthome.madabase.com/",
+    "https://baby.madabase.com/",
+    "https://pets.madabase.com/",
+    "https://style.madabase.com/",
+    "https://costumes.madabase.com/",
+    "https://homeoffice.madabase.com/guides/macbook-dual-monitor-dock-chip-compatibility-guide",
+    "https://homeoffice.madabase.com/guides/usb-c-dock-vs-monitor-hub-guide",
+    "https://homeoffice.madabase.com/guides/monitor-arm-clamp-reinforcement-guide"
+  ],
+  "dynamicCached": []
+}

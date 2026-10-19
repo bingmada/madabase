@@ -14,7 +14,9 @@
   "node": "20.20.0",
   "next": "15.5.23",
   "newIndexableCanonicals": 9,
-  "status": "scope-completed-local-runtime-validated-not-deployed",
+  "status": "deployed-publicly-verified",
   "scopeAudit": "scope-audit.md",
-  "newIndexableFromCompletion": 0
+  "newIndexableFromCompletion": 0,
+  "deploymentRecord": "deployment.json",
+  "deployedRevision": "a837332f6b0881c2fc10f4f335715dd6b97954fc"
 }

@@ -1,0 +1,37 @@
+{
+  "targetedRetryOnly": true,
+  "rows": [
+    {
+      "url": "https://baby.madabase.com/guides/ergobaby-omni-breeze-cleaning-guide",
+      "passed": true,
+      "failedChecks": [],
+      "response": {
+        "url": "https://baby.madabase.com/guides/ergobaby-omni-breeze-cleaning-guide",
+        "status": 200,
+        "location": null,
+        "canonical": "https://baby.madabase.com/guides/ergobaby-omni-breeze-cleaning-guide",
+        "title": "How to Clean an Ergobaby Omni Breeze",
+        "h1": "How to Clean an Ergobaby Omni Breeze",
+        "noindex": false,
+        "headers": {
+          "Date": "Mon, 19 Oct 2026 11:34:49 GMT",
+          "Content-Type": "text/html; charset=utf-8",
+          "Transfer-Encoding": "chunked",
+          "Connection": "close",
+          "Server": "cloudflare",
+          "Cache-Control": "public, max-age=0, s-maxage=3600, stale-while-revalidate=86400",
+          "cdn-cache-control": "public, max-age=3600, stale-while-revalidate=86400",
+          "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+          "x-powered-by": "Next.js",
+          "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=W8Aa9Ih9QvhSZ8XOur9x5795%2FyfNrWYKDy0KTWg0tjBkvNUA1MRsJu4RCoZkcpjSjAlQkuadDGOzDMD6sal3a7hzYcVdmyU9jy33oCaQ6CRngMNTHHr%2FeUC%2FSaf1ut%2Fpo7zsDA%3D%3D\"}]}",
+          "cf-cache-status": "DYNAMIC",
+          "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "Server-Timing": "cfCacheStatus;desc=\"DYNAMIC\"",
+          "CF-RAY": "a4cf79ca0e9ecf1f-SJC",
+          "alt-svc": "h3=\":443\"; ma=86400"
+        }
+      }
+    }
+  ],
+  "passed": true
+}

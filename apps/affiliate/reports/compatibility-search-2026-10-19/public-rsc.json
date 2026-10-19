@@ -1,0 +1,246 @@
+{
+  "realisticNextRscHeaders": true,
+  "rows": [
+    {
+      "url": "https://madabase.com/?_rsc=discovery-acceptance",
+      "requestHeaders": {
+        "RSC": "1",
+        "Accept": "*/*"
+      },
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "DYNAMIC",
+          "age": null,
+          "cacheControl": "public, max-age=0, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/x-component",
+          "cfRay": "a4cf7fbe8f5415ed-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "DYNAMIC",
+          "age": null,
+          "cacheControl": "public, max-age=0, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/x-component",
+          "cfRay": "a4cf7fc9fa841975-SJC",
+          "current": true,
+          "missing": []
+        }
+      ],
+      "passed": true
+    },
+    {
+      "url": "https://homeoffice.madabase.com/?_rsc=discovery-acceptance",
+      "requestHeaders": {
+        "RSC": "1",
+        "Accept": "*/*"
+      },
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "DYNAMIC",
+          "age": null,
+          "cacheControl": "public, max-age=0, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/x-component",
+          "cfRay": "a4cf7fd4b9f95e16-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "DYNAMIC",
+          "age": null,
+          "cacheControl": "public, max-age=0, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/x-component",
+          "cfRay": "a4cf7fe189fc5c17-SJC",
+          "current": true,
+          "missing": []
+        }
+      ],
+      "passed": true
+    },
+    {
+      "url": "https://network.madabase.com/?_rsc=discovery-acceptance",
+      "requestHeaders": {
+        "RSC": "1",
+        "Accept": "*/*"
+      },
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "DYNAMIC",
+          "age": null,
+          "cacheControl": "public, max-age=0, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/x-component",
+          "cfRay": "a4cf7fecea49c501-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "DYNAMIC",
+          "age": null,
+          "cacheControl": "public, max-age=0, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/x-component",
+          "cfRay": "a4cf80012f306807-SJC",
+          "current": true,
+          "missing": []
+        }
+      ],
+      "passed": true
+    },
+    {
+      "url": "https://smarthome.madabase.com/?_rsc=discovery-acceptance",
+      "requestHeaders": {
+        "RSC": "1",
+        "Accept": "*/*"
+      },
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "DYNAMIC",
+          "age": null,
+          "cacheControl": "public, max-age=0, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/x-component",
+          "cfRay": "a4cf8014db5deb29-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "DYNAMIC",
+          "age": null,
+          "cacheControl": "public, max-age=0, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/x-component",
+          "cfRay": "a4cf802398b92847-SJC",
+          "current": true,
+          "missing": []
+        }
+      ],
+      "passed": true
+    },
+    {
+      "url": "https://baby.madabase.com/?_rsc=discovery-acceptance",
+      "requestHeaders": {
+        "RSC": "1",
+        "Accept": "*/*"
+      },
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "DYNAMIC",
+          "age": null,
+          "cacheControl": "public, max-age=0, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/x-component",
+          "cfRay": "a4cf8032dfa28ac8-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "DYNAMIC",
+          "age": null,
+          "cacheControl": "public, max-age=0, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/x-component",
+          "cfRay": "a4cf8041288fe0ce-SJC",
+          "current": true,
+          "missing": []
+        }
+      ],
+      "passed": true
+    },
+    {
+      "url": "https://pets.madabase.com/?_rsc=discovery-acceptance",
+      "requestHeaders": {
+        "RSC": "1",
+        "Accept": "*/*"
+      },
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "DYNAMIC",
+          "age": null,
+          "cacheControl": "public, max-age=0, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/x-component",
+          "cfRay": "a4cf80576a536c48-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "DYNAMIC",
+          "age": null,
+          "cacheControl": "public, max-age=0, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/x-component",
+          "cfRay": "a4cf8063aefb1a1f-SJC",
+          "current": true,
+          "missing": []
+        }
+      ],
+      "passed": true
+    },
+    {
+      "url": "https://style.madabase.com/?_rsc=discovery-acceptance",
+      "requestHeaders": {
+        "RSC": "1",
+        "Accept": "*/*"
+      },
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "DYNAMIC",
+          "age": null,
+          "cacheControl": "public, max-age=0, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/x-component",
+          "cfRay": "a4cf80740ac77d12-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "DYNAMIC",
+          "age": null,
+          "cacheControl": "public, max-age=0, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/x-component",
+          "cfRay": "a4cf80844a29ebf3-SJC",
+          "current": true,
+          "missing": []
+        }
+      ],
+      "passed": true
+    },
+    {
+      "url": "https://costumes.madabase.com/?_rsc=discovery-acceptance",
+      "requestHeaders": {
+        "RSC": "1",
+        "Accept": "*/*"
+      },
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "DYNAMIC",
+          "age": null,
+          "cacheControl": "public, max-age=0, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/x-component",
+          "cfRay": "a4cf80927b90f983-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "DYNAMIC",
+          "age": null,
+          "cacheControl": "public, max-age=0, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/x-component",
+          "cfRay": "a4cf80a53e68fca9-SJC",
+          "current": true,
+          "missing": []
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true
+}

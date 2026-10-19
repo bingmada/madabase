@@ -1,0 +1,58 @@
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+{
+  "checkedAt": "2026-10-19T11:33:28.373339+00:00",
+  "mode": "public",
+  "baselineUrls": 296,
+  "protectedBingAiUrls": 181,
+  "historicalCohortTargets": 31,
+  "newCanonicals": 9,
+  "searchChecks": 9,
+  "wrongHostChecks": 3,
+  "total": 317,
+  "failures": [
+    {
+      "url": "https://baby.madabase.com/guides/ergobaby-omni-breeze-cleaning-guide",
+      "check": "status",
+      "expected": 200,
+      "actual": 0
+    },
+    {
+      "url": "https://baby.madabase.com/guides/ergobaby-omni-breeze-cleaning-guide",
+      "check": "canonical",
+      "expected": "https://baby.madabase.com/guides/ergobaby-omni-breeze-cleaning-guide",
+      "actual": null
+    },
+    {
+      "url": "https://baby.madabase.com/guides/ergobaby-omni-breeze-cleaning-guide",
+      "check": "title",
+      "expected": "How to Clean an Ergobaby Omni Breeze",
+      "actual": null
+    },
+    {
+      "url": "https://baby.madabase.com/guides/ergobaby-omni-breeze-cleaning-guide",
+      "check": "h1",
+      "expected": "How to Clean an Ergobaby Omni Breeze",
+      "actual": null
+    },
+    {
+      "url": "https://baby.madabase.com/guides/ergobaby-omni-breeze-cleaning-guide",
+      "check": "noindex",
+      "expected": false,
+      "actual": null
+    }
+  ],
+  "environmentDependent": []
+}

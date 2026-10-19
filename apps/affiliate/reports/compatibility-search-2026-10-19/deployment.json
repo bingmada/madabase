@@ -1,0 +1,147 @@
+{
+  "status": "deployed-publicly-verified",
+  "revision": "a837332f6b0881c2fc10f4f335715dd6b97954fc",
+  "release": "discovery-20261019-a837332f6b0881c2fc10f4f335715dd6b97954fc",
+  "authorizedBy": "Owner explicitly approved completed scope release and this Main/Test maintenance window, with rollback and post-release page/search/link/cache checks.",
+  "startedAt": "2026-10-19T11:29:24.353862+00:00",
+  "activatedAt": "2026-10-19T11:29:31.055072+00:00",
+  "checkedAt": "2026-10-19T11:51:19.906198+00:00",
+  "switchAndOriginVerificationSeconds": 6.7012107372283936,
+  "capacity": {
+    "forecastRequiredMiB": 768,
+    "actualRequiredMiB": 704,
+    "mainAvailableMiB": 812.1484375,
+    "affiliateAvailableMiB": 754.2421875,
+    "bothPassed": true
+  },
+  "recovery": {
+    "independentTimerSeconds": 150,
+    "outerControllerRuntimeMaxSeconds": 135,
+    "outerControllerTimeoutStopSeconds": 10,
+    "timerFinalState": "inactive",
+    "failureInjectionCasesPassed": 8,
+    "statePath": "/var/tmp/madabase-discovery-20261019/transaction.json",
+    "rollbackCommand": "sudo -n python3 /var/tmp/madabase-discovery-inputs-20261019/deploy.py recover",
+    "previousReleasesRetained": {
+      "main": "/srv/madabase-main/releases/seo-20260925-8055b15",
+      "affiliate": "/srv/madabase-affiliate/releases/commerce-20261019-5de949a2646289d696cbf83af465b3ba744d4b65"
+    },
+    "rollbackPerformed": false
+  },
+  "services": {
+    "main": {
+      "port": 3008,
+      "active": true,
+      "restarts": 0
+    },
+    "affiliate": {
+      "port": 3011,
+      "active": true,
+      "restarts": 0
+    },
+    "test": {
+      "port": 3009,
+      "active": true,
+      "restarts": 0,
+      "restored": true,
+      "releaseUnchanged": "local-20260820-next15523"
+    }
+  },
+  "origin": {
+    "contentCanonicalsPassed": 18,
+    "affiliateSitemapsPassed": 7,
+    "mainSearchPassed": true,
+    "costumeDatabaseProductPassed": true
+  },
+  "public": {
+    "httpTargets": 317,
+    "initialPassed": 316,
+    "transientTimeouts": 1,
+    "targetedRetryPassed": 1,
+    "effectivePassed": 317,
+    "databaseDependentPending": 0,
+    "protectedBingAiEntrances": 181,
+    "newCanonicals": 9,
+    "enhancedCanonicals": 9,
+    "assetTargetsPassed": 32,
+    "desktopInteractionCasesPassed": 14,
+    "mobilePagesPassed": 5,
+    "mobileWidth": 390,
+    "mobileOverflow": 0,
+    "merchantProductIdentitiesPassed": 3,
+    "clickQaCasesPassed": 9,
+    "productionDatabaseQaWrites": 0,
+    "legacyLinkFormatPassed": 505,
+    "allLegacyAvailabilityVerified": false
+  },
+  "cache": {
+    "purgeMethod": "Cloudflare Custom Purge URL",
+    "purgedExistingHtml": 40,
+    "purgedSitemaps": 7,
+    "batches": [
+      30,
+      17
+    ],
+    "newUrlsPurged": 0,
+    "globalPurge": false,
+    "cacheRulesChanged": false,
+    "plainCanonicalTargetsPassed": 49,
+    "unresolvedStale": 0,
+    "affiliateRepeatHit": 48,
+    "mainDynamic": 1,
+    "searchPrivateNoStoreHosts": 8,
+    "realisticRscHostsPassed": 8,
+    "apiDynamic": true,
+    "retainedStaticFiles": {
+      "main": 21,
+      "affiliate": 48
+    }
+  },
+  "indexNow": {
+    "exactUrls": 18,
+    "network": {
+      "urls": 5,
+      "http": 200
+    },
+    "homeoffice": {
+      "urls": 13,
+      "http": 200
+    },
+    "preview": "indexnow-preview.log",
+    "submission": "indexnow-submit.log"
+  },
+  "cohortReview": {
+    "day7": "2026-10-26",
+    "day14": "2026-11-02",
+    "day30": "2026-11-18",
+    "scope": "All exact 18 new/enhanced canonicals and their discovery/merchant paths",
+    "preservedPriorGates": [
+      "2026-10-27",
+      "2026-11-05",
+      "2026-11-12"
+    ]
+  },
+  "constraints": {
+    "newDatabaseDependency": false,
+    "databaseMigration": false,
+    "newDomain": false,
+    "newAutomation": false,
+    "externalDistribution": false,
+    "googleBulkRequestIndexing": false,
+    "rankingOrIndexingGuarantee": false
+  },
+  "sitemapRefresh": {
+    "google": {
+      "urls": 2,
+      "result": "Sitemap submitted successfully"
+    },
+    "bing": {
+      "urls": 2,
+      "result": "10/19/2026 Submitted; Processing"
+    },
+    "reports": [
+      "google-sitemaps.json",
+      "bing-sitemaps.json"
+    ]
+  }
+}

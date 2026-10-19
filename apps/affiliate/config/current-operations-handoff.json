@@ -138,7 +138,8 @@
       "Do not add the five product-pilot URLs to sitemap, home/category discovery, IndexNow or Search Console before the recorded gate passes.",
       "Every commercial page must retain a truthful exact purchase path in the first viewport plus the responsive sticky purchase path.",
       "Preserve unrelated .DS_Store files, artifacts, packages and prisma paths. The modified apps/affiliate/.release/affiliate-runtime.tgz is the locally built deployed artifact, not an unrelated source edit."
-    ]
+    ],
+    "compatibilitySearch20261019": "Read compatibilitySearch20261019 and reports/compatibility-search-2026-10-19/deployment.json first. Completed scope a837332 is LIVE since Oct19 19:29:31 China time. Main/Affiliate current discovery-20261019-a837332; Test restored unchanged; previous releases retained. Effective public317/317,49 cache targets current after47 exact URL purges,32 assets,8 RSC hosts,14 browser decisions,5 public mobile and9 nonpersisting click cases passed. Exact18 IndexNow accepted HTTP200. Review all18 on Oct26/Nov2/Nov18; preserve prior cohort gates. Older not-deployed/not-authorized notes are historical."
   },
   "postRolloutReview20260823": {
     "status": "daily_checks_and_existing_page_recovery_complete_url_inspection_partial_quota",
@@ -1033,5 +1034,23 @@
       "followupEvidence": "apps/affiliate/reports/seo-release-2026-09-25/wellness-tls-followup.json"
     },
     "cloudflareFollowup": "apps/affiliate/reports/seo-release-2026-09-25/wellness-tls-followup.json"
+  },
+  "compatibilitySearch20261019": {
+    "status": "deployed-publicly-verified",
+    "report": "apps/affiliate/reports/compatibility-search-2026-10-19/README.md",
+    "deploymentRecord": "apps/affiliate/reports/compatibility-search-2026-10-19/deployment.json",
+    "release": {
+      "release": "discovery-20261019-a837332f6b0881c2fc10f4f335715dd6b97954fc",
+      "revision": "a837332f6b0881c2fc10f4f335715dd6b97954fc",
+      "activatedAt": "2026-10-19T11:29:31.055072+00:00",
+      "record": "apps/affiliate/reports/compatibility-search-2026-10-19/deployment.json",
+      "mainAffiliateAndTestActive": true,
+      "testRestored": true,
+      "switchSeconds": 6.7012107372283936,
+      "rollbackReady": true
+    },
+    "nextAction": "Observe all18 exact new/enhanced canonicals at Oct26/Nov2/Nov18; preserve prior gates. Production, search, links and cache acceptance passed.",
+    "scopeAudit": "apps/affiliate/reports/compatibility-search-2026-10-19/scope-audit.md",
+    "ownerReply": "Explicit approval to publish completed scope with this Main/Test pause and rollback; fulfilled."
   }
 }

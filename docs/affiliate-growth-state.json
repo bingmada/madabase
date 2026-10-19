@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "updatedAt": "2026-10-19",
+  "updatedAt": "2026-10-19T11:51:19.906198+00:00",
   "status": "all-site-portfolio-recovery-deployed-and-publicly-verified",
   "objective": "Make affiliate traffic, merchant clicks, and commission revenue measurable before scaling content volume.",
   "socialWebsiteLinks20261012": {
@@ -50,7 +50,7 @@
     "seoMetadataRelease20261003": "Read this key and apps/affiliate/reports/seo-release-2026-10-02/validation.json first. Affiliate 6dd60db is LIVE since Oct3 11:24; Main restored after approved 9-second maintenance. Older awaiting-owner/unpublished claims are historical. All 109 sampled URLs including all priority53 pass raw head validation under three UAs; Google live reinspection underway; no ranking recovery claimed.",
     "seoSpamRecovery20261006": "Read this key and apps/affiliate/reports/seo-recovery-2026-10-06/README.md first. The final batch covers all seven active affiliate sites: Network, Smarthome, Homeoffice, Baby, Pet, Style and Costume. It retains 17 existing canonicals, permanently redirects 55 overlapping base URLs, adds zero routes and supersedes the earlier two-site-only package. Local production HTTP validation passed 55 base redirects, 220 regional redirects, 17 base canonicals, 64 regional canonicals and seven sitemaps; all 19 governed categories also passed. New publication and bulk Request Indexing remain frozen; use the exact October 13, October 20 and November 5 gates.",
     "portfolioStrategyReset20261008": "Read portfolioStrategyReset20261008, apps/affiliate/config/portfolio-recovery-2026-10-08.json and apps/affiliate/reports/portfolio-recovery-2026-10-08/deployment.json first. The seven-site workflow is deployed and publicly verified at bfb8689e4a63d5368036ef6e829fe492b840d919 after a production-only Costume evidence-boundary repair. Six Amazon sites have 1,147 of 1,147 effective public passes after bounded retry; Costume has 108 of 108 effective public passes after the repaired canonical completed normal SJC edge revalidation. Owner testing remains unavailable, so hands-on claims and Review structured data stay blocked. Keep the zero-new-URL freeze and the October 13, October 20 and November 5 gates.",
-    "compatibilitySearch20261019": "Read compatibilitySearch20261019 and scope-audit.md. Owner found missing scope; first version superseded with task/category/TOC discovery, complete parts/costs, comparison/no-buy, router paths and20 decision cases. Replacement locally validated, NOT DEPLOYED; maintenance authorization not received. No formal service mutation."
+    "compatibilitySearch20261019": "Read compatibilitySearch20261019 and reports/compatibility-search-2026-10-19/deployment.json first. Completed scope a837332 is LIVE since Oct19 19:29:31 China time. Main/Affiliate current discovery-20261019-a837332; Test restored unchanged; previous releases retained. Effective public317/317,49 cache targets current after47 exact URL purges,32 assets,8 RSC hosts,14 browser decisions,5 public mobile and9 nonpersisting click cases passed. Exact18 IndexNow accepted HTTP200. Review all18 on Oct26/Nov2/Nov18; preserve prior cohort gates. Older not-deployed/not-authorized notes are historical."
   },
   "portfolioStrategyReset20261008": {
     "status": "production_deployed_and_publicly_verified",
@@ -5869,7 +5869,7 @@
     ]
   },
   "compatibilitySearch20261019": {
-    "status": "scope-audited-completed-locally-not-deployed",
+    "status": "deployed-publicly-verified",
     "authorization": "Owner requested implementing search, navigation and competitor-benchmark compatibility/upgrades; subsequently authorized signed-in Amazon/EPN checks and clarified Amazon is acceptable without preferring eBay.",
     "report": "apps/affiliate/reports/compatibility-search-2026-10-19/README.md",
     "urlLedger": "apps/affiliate/reports/compatibility-search-2026-10-19/release-urls.json",
@@ -5889,8 +5889,8 @@
       "exactOfferChecks": 7,
       "searchCases": 20,
       "httpTargets": 317,
-      "httpPassed": 316,
-      "databaseDependentPending": 1,
+      "httpPassed": 317,
+      "databaseDependentPending": 0,
       "mobilePagesPassed": 17,
       "linkFormatPassed": 505,
       "deploymentFailureScenariosPassed": 8,
@@ -5898,14 +5898,47 @@
       "componentOffers": 2,
       "clickQaCases": 9,
       "scopeMobilePagesOrResults": 13,
-      "productionDatabaseTestWrites": 0
+      "productionDatabaseTestWrites": 0,
+      "publicAssetTargetsPassed": 32,
+      "publicCacheTargetsPassed": 49,
+      "publicRscHostsPassed": 8,
+      "publicMobilePagesPassed": 5,
+      "publicDesktopInteractionCasesPassed": 14,
+      "publicMerchantIdentitiesPassed": 3,
+      "publicClickQaCasesPassed": 9,
+      "indexNowExactUrlsAccepted": 18
     },
-    "deployment": "Not activated. Keep commerce-20261019-5de949a2646289d696cbf83af465b3ba744d4b65 and Main seo-20260925-8055b15 as actual production until recorded cutover. No server service mutation has been made in this task.",
-    "capacity": "Read-only sample: 371.36 MiB available; Main 40.14 MiB, Affiliate 359.64 MiB, Test 56.09 MiB anonymous; two-site forecast 771.13 MiB, with Test 827.22 MiB. Preserve 768 MiB forecast and 704 MiB actual gates before each candidate start; a failed gate rolls back.",
-    "maintenanceAuthorization": "This release-specific pause of Test is not yet authorized; earlier Main/Test authorization applied to the previous commerce release.",
-    "reviewPolicy": "Start exact 7/14/30-day dates at actual activation; review every new/enhanced canonical. Preserve October 27, November 5 and November 12 gates for previous cohorts. No new automation or external distribution.",
+    "deployment": {
+      "release": "discovery-20261019-a837332f6b0881c2fc10f4f335715dd6b97954fc",
+      "revision": "a837332f6b0881c2fc10f4f335715dd6b97954fc",
+      "activatedAt": "2026-10-19T11:29:31.055072+00:00",
+      "record": "apps/affiliate/reports/compatibility-search-2026-10-19/deployment.json",
+      "mainAffiliateAndTestActive": true,
+      "testRestored": true,
+      "switchSeconds": 6.7012107372283936,
+      "rollbackReady": true
+    },
+    "capacity": {
+      "forecastRequiredMiB": 768,
+      "actualRequiredMiB": 704,
+      "mainAvailableMiB": 812.1484375,
+      "affiliateAvailableMiB": 754.2421875,
+      "bothPassed": true
+    },
+    "maintenanceAuthorization": "Owner explicitly approved completed scope release and this Main/Test maintenance window, with rollback and post-release page/search/link/cache checks.",
+    "reviewPolicy": {
+      "day7": "2026-10-26",
+      "day14": "2026-11-02",
+      "day30": "2026-11-18",
+      "scope": "All exact 18 new/enhanced canonicals and their discovery/merchant paths",
+      "preservedPriorGates": [
+        "2026-10-27",
+        "2026-11-05",
+        "2026-11-12"
+      ]
+    },
     "scopeAudit": "apps/affiliate/reports/compatibility-search-2026-10-19/scope-audit.md",
-    "previousDeliveryCorrection": "7585578 was a working first version, not the full agreed acceptance scope. Owner challenged missing work and did not authorize maintenance or deployment. The replacement completes task/category/TOC discovery, comparison, parts/costs, no-buy outcomes, real router paths and separate 20 user decisions.",
+    "previousDeliveryCorrection": "7585578 was a working first version; owner identified omissions. Scope was completed at a837332, explicitly approved, and deployed with the release-specific Main/Test window on October 19.",
     "scopeCompletion": [
       "Homeoffice six task topics and Network three; category in-page query/type/task filter; generic guide section TOC and relevant next steps",
       "Three dock comparison under identical requirements, correctly directed video cables, charger and existing-route no-buy result",
@@ -5917,9 +5950,46 @@
     ],
     "reviewableLimits": [
       "No physical tests or manufacturer-level compatibility guarantee",
-      "Machine-specific carrier/cable/riser FRUs stay unresolved until exact unit evidence; no universal kit invented",
-      "HP/Dell model expansion was a later conditional phase, not the three-model first scope",
-      "All production checks and performance/7-14-30 observations remain pending deployment"
-    ]
+      "Machine-specific carrier/cable/riser FRUs remain unresolved until exact unit evidence",
+      "HP/Dell expansion remains a later conditional phase",
+      "Search ranking, indexing and revenue outcomes remain for the exact day7/day14/day30 gates"
+    ],
+    "cache": {
+      "purgeMethod": "Cloudflare Custom Purge URL",
+      "purgedExistingHtml": 40,
+      "purgedSitemaps": 7,
+      "batches": [
+        30,
+        17
+      ],
+      "newUrlsPurged": 0,
+      "globalPurge": false,
+      "cacheRulesChanged": false,
+      "plainCanonicalTargetsPassed": 49,
+      "unresolvedStale": 0,
+      "affiliateRepeatHit": 48,
+      "mainDynamic": 1,
+      "searchPrivateNoStoreHosts": 8,
+      "realisticRscHostsPassed": 8,
+      "apiDynamic": true,
+      "retainedStaticFiles": {
+        "main": 21,
+        "affiliate": 48
+      }
+    },
+    "sitemapRefresh": {
+      "google": {
+        "urls": 2,
+        "result": "Sitemap submitted successfully"
+      },
+      "bing": {
+        "urls": 2,
+        "result": "10/19/2026 Submitted; Processing"
+      },
+      "reports": [
+        "google-sitemaps.json",
+        "bing-sitemaps.json"
+      ]
+    }
   }
 }

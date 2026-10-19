@@ -3,6 +3,11 @@
   "bytes": 78256155,
   "sha256": "5b9781e195099c70010e2dde6250eb48c4565fc35a1d34bbf51744fcfaffbfc4",
   "containsPrivateAccountRecords": false,
-  "activated": false,
-  "supersedes": "Previous first-version package; owner identified missing scope, now replaced"
+  "activated": true,
+  "supersedes": "Previous first-version package; owner identified missing scope, now replaced",
+  "status": "deployed-publicly-verified",
+  "deploymentRecord": "deployment.json",
+  "deployedRevision": "a837332f6b0881c2fc10f4f335715dd6b97954fc",
+  "activatedAt": "2026-10-19T11:29:31.055072+00:00",
+  "immutableBundleNote": "Original uploaded bundle retained unchanged; this local manifest now links post-release acceptance."
 }

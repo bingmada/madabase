@@ -1,0 +1,11 @@
+{
+  "checkedAt": "2026-10-19T11:53:36.955Z",
+  "urls": [
+    "https://homeoffice.madabase.com/sitemap.xml",
+    "https://network.madabase.com/sitemap.xml"
+  ],
+  "action": "Re-submit existing sitemap once per selected property",
+  "homeoffice": "10/19/2026 Submitted; Processing",
+  "network": "~\t\t\t\t\t154 row (selectable) ID: row254-0, select item https://network.madabase.com/sitemap.xml Sitemap URL actions 10/19/2026 Submitted 10/16/2026 Processing 182 More\n~\t\t\t\t\t\t\t\t165 text 10/19/2026\n~\t\t\t\t\t\t\t\t170 text Processing",
+  "indexingGuarantee": false
+}

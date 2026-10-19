@@ -1,0 +1,1514 @@
+{
+  "checkedAt": "2026-10-19T11:49:01.242915+00:00",
+  "plainCanonicals": true,
+  "browserShapedAccept": true,
+  "rows": [
+    {
+      "url": "https://madabase.com/",
+      "markers": [
+        "NAS and Ethernet bottlenecks"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "DYNAMIC",
+          "age": null,
+          "cacheControl": "public, max-age=0, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8bcc4d8ff98f-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "DYNAMIC",
+          "age": null,
+          "cacheControl": "public, max-age=0, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8bd8dbb85e55-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://homeoffice.madabase.com/",
+      "markers": [
+        "compact-site-query"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "897",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8bccaf9ceb35-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "899",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8bd80b67d005-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/",
+      "markers": [
+        "compact-site-query"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "895",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8be01df04c71-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "897",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8be88b3a2db6-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://smarthome.madabase.com/",
+      "markers": [
+        "compact-site-query"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "895",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8be8bfc7c6ec-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "897",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8bf16c8f15a2-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://baby.madabase.com/",
+      "markers": [
+        "compact-site-query"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "895",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8bf1ed6f6895-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "898",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8c02c877cf1f-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://pets.madabase.com/",
+      "markers": [
+        "compact-site-query"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "894",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8bfcfcdef555-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "896",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8c0b58381588-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://style.madabase.com/",
+      "markers": [
+        "compact-site-query"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "896",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8c0ebc2efa92-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "899",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8c1ebb70d4f9-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://costumes.madabase.com/",
+      "markers": [
+        "compact-site-query"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "894",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8c19cee2ea80-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "896",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8c26cf37b7dd-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://homeoffice.madabase.com/categories/desks",
+      "markers": [
+        "category-browser-heading"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "897",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8c2b4d2aeb22-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "899",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8c3a7957eb1e-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://homeoffice.madabase.com/categories/ergonomics",
+      "markers": [
+        "category-browser-heading"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "896",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8c36cd23f4c4-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "898",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8c480e046cb7-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://homeoffice.madabase.com/categories/meetings",
+      "markers": [
+        "category-browser-heading"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "897",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8c45db42ed3c-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "902",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8c66ba286af7-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/categories/wifi",
+      "markers": [
+        "category-browser-heading"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "895",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8c51ecfb5024-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "897",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8c5ee8ac4973-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/categories/wired",
+      "markers": [
+        "category-browser-heading"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "897",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8c68386e15ed-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "900",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8c764c1c9e53-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/categories/backup",
+      "markers": [
+        "category-browser-heading"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "895",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8c76293a8e1f-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "896",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8c7e4e2b053a-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://smarthome.madabase.com/categories/access",
+      "markers": [
+        "category-browser-heading"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "896",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8c837997158f-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "898",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8c8f38f2c65e-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://smarthome.madabase.com/categories/cameras",
+      "markers": [
+        "category-browser-heading"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "893",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8c8908ce9913-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "895",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8c947dbcfad2-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://smarthome.madabase.com/categories/climate",
+      "markers": [
+        "category-browser-heading"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "896",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8c9a6c74cfcc-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "897",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8ca34d83c4f3-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://smarthome.madabase.com/categories/automation",
+      "markers": [
+        "category-browser-heading"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "893",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8ca0af5ee34e-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "898",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8cc41b67eb26-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://baby.madabase.com/categories/sleep",
+      "markers": [
+        "category-browser-heading"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "893",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8cacec596803-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "896",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8cbb8ee0ebe2-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://baby.madabase.com/categories/travel",
+      "markers": [
+        "category-browser-heading"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "892",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8cc319e6c79e-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "894",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8ccd4bffca3e-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://baby.madabase.com/categories/feeding",
+      "markers": [
+        "category-browser-heading"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "891",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8cd3cc5514c7-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "894",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8ce68f02faec-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://baby.madabase.com/categories/gear",
+      "markers": [
+        "category-browser-heading"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "891",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8cdd7f4ed81b-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "893",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8ce68888cf29-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://pets.madabase.com/categories/feeding",
+      "markers": [
+        "category-browser-heading"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "891",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8ceece7aad84-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "892",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8cf9fba28462-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://pets.madabase.com/categories/home-care",
+      "markers": [
+        "category-browser-heading"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "890",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8cf0d87aa230-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "892",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8cfd7e289338-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://pets.madabase.com/categories/comfort",
+      "markers": [
+        "category-browser-heading"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "890",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8d038cdeed3f-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "892",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8d0e2c7267be-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://style.madabase.com/categories/jewelry",
+      "markers": [
+        "category-browser-heading"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "886",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8d0899af88fa-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "888",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8d126e51c782-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://style.madabase.com/categories/bags",
+      "markers": [
+        "category-browser-heading"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "889",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8d191fc6cf12-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "891",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8d25feadcf2e-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://style.madabase.com/categories/hair",
+      "markers": [
+        "category-browser-heading"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "886",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8d20cbe1eb32-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "888",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8d2cab24bffc-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://style.madabase.com/categories/scarves",
+      "markers": [
+        "category-browser-heading"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "890",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8d3cad6fcee5-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "891",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8d44de4a49ec-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://style.madabase.com/categories/socks",
+      "markers": [
+        "category-browser-heading"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "885",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8d3a1b292b10-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "887",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8d42fc44dc0d-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://style.madabase.com/categories/styling",
+      "markers": [
+        "category-browser-heading"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "887",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8d4b9a9dd049-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "890",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8d5c3cb3a666-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://homeoffice.madabase.com/compatibility",
+      "markers": [
+        "compact-site-query"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "885",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8d50ecb978ff-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "886",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8d591f374c7c-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://homeoffice.madabase.com/compatibility/docks",
+      "markers": [
+        "compact-site-query",
+        "compatibility-checker"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "887",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8d61ab95c501-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "891",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8d7b8c4de817-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://homeoffice.madabase.com/compatibility/monitor-arms",
+      "markers": [
+        "compact-site-query",
+        "compatibility-checker"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "884",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8d631d32cce5-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "885",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8d6b5c81fa49-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://homeoffice.madabase.com/compatibility/mini-pcs",
+      "markers": [
+        "compact-site-query",
+        "compatibility-checker"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "887",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8d743ab34fd0-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "889",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8d818e5115df-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/thinkcentre-m720q-upgrade-compatibility-guide",
+      "markers": [
+        "compact-site-query",
+        "guide-toc",
+        "compatibility-checker",
+        "parts-reference"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "884",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8d832ceb6c97-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "886",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8d8bbcc0e612-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/thinkcentre-m920q-upgrade-compatibility-guide",
+      "markers": [
+        "compact-site-query",
+        "guide-toc",
+        "compatibility-checker",
+        "parts-reference"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "885",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8d99699d3023-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "887",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8da8da4a1613-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/thinkcentre-m920x-upgrade-compatibility-guide",
+      "markers": [
+        "compact-site-query",
+        "guide-toc",
+        "compatibility-checker",
+        "parts-reference"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "882",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8d936d071748-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "884",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8d9c7ffacff9-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/compatibility",
+      "markers": [
+        "compact-site-query"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "881",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8da5ded2d009-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "882",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8dab9eb9f8f3-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/compatibility/ethernet",
+      "markers": [
+        "compact-site-query",
+        "compatibility-checker"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "884",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8db65da7cf0a-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "886",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8dbf4a038462-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/macbook-dual-monitor-dock-chip-compatibility-guide",
+      "markers": [
+        "compact-site-query",
+        "guide-toc",
+        "compatibility-checker"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "879",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8db4b8ff228b-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "881",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8dc0ace7f3e8-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/usb-c-dock-ports-explained-guide",
+      "markers": [
+        "compact-site-query",
+        "guide-toc",
+        "compatibility-checker"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "883",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8dcc3ca13911-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "885",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8ddc0c43ebf1-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/usb-c-dock-vs-monitor-hub-guide",
+      "markers": [
+        "compact-site-query",
+        "guide-toc",
+        "compatibility-checker"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "882",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8ddaa93cdc9b-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "883",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8de549122ed1-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/monitor-arm-clamp-reinforcement-guide",
+      "markers": [
+        "compact-site-query",
+        "guide-toc",
+        "compatibility-checker"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "882",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8de44ea3fc53-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "886",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8df79e742700-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/single-vs-dual-monitor-arm-walking-desk",
+      "markers": [
+        "compact-site-query",
+        "guide-toc",
+        "compatibility-checker"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "881",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8dedee2eca3e-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "883",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8df70ab3eb2c-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/monitor-arm-for-walking-desk-guide",
+      "markers": [
+        "compact-site-query",
+        "guide-toc",
+        "compatibility-checker"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "883",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8e015917faf8-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "885",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8e0edfaacf0e-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/guides/2-5gbe-switch-port-budget-for-nas-mesh",
+      "markers": [
+        "compact-site-query",
+        "guide-toc",
+        "compatibility-checker"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "879",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8e03ab9d5527-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "881",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8e10daf9ed3f-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/guides/5-port-vs-8-port-2-5gbe-switch",
+      "markers": [
+        "compact-site-query",
+        "guide-toc",
+        "compatibility-checker"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "883",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8e168bb51574-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "884",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8e1f0c81ddff-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/guides/when-to-upgrade-to-2-5gbe-switch",
+      "markers": [
+        "compact-site-query",
+        "guide-toc",
+        "compatibility-checker"
+      ],
+      "passes": [
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "880",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8e193cc95d19-SJC",
+          "current": true,
+          "missing": []
+        },
+        {
+          "status": 200,
+          "cfCache": "HIT",
+          "age": "882",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "type": "text/html; charset=utf-8",
+          "cfRay": "a4cf8e263f9e50a1-SJC",
+          "current": true,
+          "missing": []
+        }
+      ]
+    }
+  ],
+  "stale": [],
+  "dynamic": [
+    {
+      "url": "https://madabase.com/search?q=M720q",
+      "status": 200,
+      "cfCache": "DYNAMIC",
+      "age": null,
+      "cacheControl": "private, no-store, max-age=0",
+      "type": "text/html; charset=utf-8",
+      "cfRay": "a4cf8e2e58e3208c-SJC",
+      "current": true,
+      "missing": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/search?q=M720q",
+      "status": 200,
+      "cfCache": "BYPASS",
+      "age": null,
+      "cacheControl": "private, no-store, max-age=0",
+      "type": "text/html; charset=utf-8",
+      "cfRay": "a4cf8e3ebd5e8775-SJC",
+      "current": true,
+      "missing": []
+    },
+    {
+      "url": "https://network.madabase.com/search?q=M720q",
+      "status": 200,
+      "cfCache": "BYPASS",
+      "age": null,
+      "cacheControl": "private, no-store, max-age=0",
+      "type": "text/html; charset=utf-8",
+      "cfRay": "a4cf8e4d78a4f40f-SJC",
+      "current": true,
+      "missing": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/search?q=M720q",
+      "status": 200,
+      "cfCache": "BYPASS",
+      "age": null,
+      "cacheControl": "private, no-store, max-age=0",
+      "type": "text/html; charset=utf-8",
+      "cfRay": "a4cf8e580eaf7396-SJC",
+      "current": true,
+      "missing": []
+    },
+    {
+      "url": "https://baby.madabase.com/search?q=M720q",
+      "status": 200,
+      "cfCache": "BYPASS",
+      "age": null,
+      "cacheControl": "private, no-store, max-age=0",
+      "type": "text/html; charset=utf-8",
+      "cfRay": "a4cf8e66afaacf0e-SJC",
+      "current": true,
+      "missing": []
+    },
+    {
+      "url": "https://pets.madabase.com/search?q=M720q",
+      "status": 200,
+      "cfCache": "BYPASS",
+      "age": null,
+      "cacheControl": "private, no-store, max-age=0",
+      "type": "text/html; charset=utf-8",
+      "cfRay": "a4cf8e75e8bdad81-SJC",
+      "current": true,
+      "missing": []
+    },
+    {
+      "url": "https://style.madabase.com/search?q=M720q",
+      "status": 200,
+      "cfCache": "BYPASS",
+      "age": null,
+      "cacheControl": "private, no-store, max-age=0",
+      "type": "text/html; charset=utf-8",
+      "cfRay": "a4cf8e81fa529e59-SJC",
+      "current": true,
+      "missing": []
+    },
+    {
+      "url": "https://costumes.madabase.com/search?q=M720q",
+      "status": 200,
+      "cfCache": "BYPASS",
+      "age": null,
+      "cacheControl": "private, no-store, max-age=0",
+      "type": "text/html; charset=utf-8",
+      "cfRay": "a4cf8e8c6feeba62-SJC",
+      "current": true,
+      "missing": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/api/affiliate-clicks",
+      "status": 405,
+      "cfCache": "DYNAMIC",
+      "age": null,
+      "cacheControl": null,
+      "type": null,
+      "cfRay": "a4cf8e988ad95bc0-SJC",
+      "current": true,
+      "missing": []
+    }
+  ],
+  "unresolvedStale": [],
+  "passed": true
+}
