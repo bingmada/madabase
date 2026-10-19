@@ -42,7 +42,7 @@ const guideAdditions: Record<string, { heading: string; body: string }> = {
 
 export function refreshCommerceGuide(guide: Guide): Guide {
   const addition = guideAdditions[`${guide.site}:${guide.slug}`];
-  if (!addition) return guide;
+  if (!addition) return guide.site === "network" && guide.slug === "deco-be63-vs-be67-vs-be85-buying-guide" ? { ...guide, updatedAt: checkedAt } : guide;
   return { ...guide, updatedAt: checkedAt, sections: [addition, ...guide.sections] };
 }
 

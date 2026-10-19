@@ -1,6 +1,6 @@
 {
-  "sha256": "98987b7301dba37a87e7e67ac33e10a4e76b411da447efcfd4a51eb3beb71b84",
-  "bytes": 60940560,
+  "sha256": "b51c1479b9c308dd41edf9c51dfd8c94e1ae90cb358ec439f5f86696aa143fcf",
+  "bytes": 60940575,
   "builtWith": "Node 20.20.0; Next 15.5.23; Linux x64 sharp dependencies from npm official registry",
   "newIndexableUrls": 0
 }

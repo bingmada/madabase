@@ -488,6 +488,16 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             </p>
           </section>
         ) : null}
+        <p className="mt-5 text-lg leading-8 text-[var(--muted)]">{guide.dek}</p>
+        <div className="mt-5 flex flex-wrap gap-x-4 gap-y-2 text-sm font-semibold text-[var(--muted)]">
+          <span>Prepared by the {site.name} editorial desk</span>
+          {effectiveUpdatedAt ? <span>Updated {effectiveUpdatedAt}</span> : null}
+        </div>
+        <section className="mt-8 rounded-md border border-[var(--brand)] bg-[var(--brand-soft)] p-5" aria-labelledby="guide-quick-answer">
+          <p className="eyebrow">Quick answer</p>
+          <h2 className="mt-2 text-xl font-bold" id="guide-quick-answer">{tailoredGuide ? guide.searchQuestion : "The practical answer"}</h2>
+          <p className="mt-3 leading-7 text-[var(--text)]">{directAnswer}</p>
+        </section>
         {buyingChoices.length ? (
           <section className="mt-6 grid gap-3 sm:grid-cols-3" aria-label="Choose the exact Deco model and pack">
             {buyingChoices.map((choice) => (
@@ -500,16 +510,6 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             ))}
           </section>
         ) : null}
-        <p className="mt-5 text-lg leading-8 text-[var(--muted)]">{guide.dek}</p>
-        <div className="mt-5 flex flex-wrap gap-x-4 gap-y-2 text-sm font-semibold text-[var(--muted)]">
-          <span>Prepared by the {site.name} editorial desk</span>
-          {effectiveUpdatedAt ? <span>Updated {effectiveUpdatedAt}</span> : null}
-        </div>
-        <section className="mt-8 rounded-md border border-[var(--brand)] bg-[var(--brand-soft)] p-5" aria-labelledby="guide-quick-answer">
-          <p className="eyebrow">Quick answer</p>
-          <h2 className="mt-2 text-xl font-bold" id="guide-quick-answer">{tailoredGuide ? guide.searchQuestion : "The practical answer"}</h2>
-          <p className="mt-3 leading-7 text-[var(--text)]">{directAnswer}</p>
-        </section>
         {tailoredGuide ? <GuideDecisionTable table={guide.comparisonTable} /> : null}
         {consolidatedFamilyHub && !tailoredGuide ? (
           <section className="mt-8 rounded-md border border-[var(--brand)] bg-[var(--brand-soft)] p-5" data-consolidated-family-hub="true" aria-labelledby="consolidated-family-hub-heading">

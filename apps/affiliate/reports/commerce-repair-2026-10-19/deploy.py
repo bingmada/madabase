@@ -35,7 +35,7 @@ CAPACITY = Path(os.environ.get(
 ))
 ARCHIVE_SHA256 = os.environ.get(
     "MADABASE_RECOVERY_SHA256",
-    "98987b7301dba37a87e7e67ac33e10a4e76b411da447efcfd4a51eb3beb71b84",
+    "b51c1479b9c308dd41edf9c51dfd8c94e1ae90cb358ec439f5f86696aa143fcf",
 )
 
 spec = importlib.util.spec_from_file_location("guarded_release_base", BASE_PATH)
