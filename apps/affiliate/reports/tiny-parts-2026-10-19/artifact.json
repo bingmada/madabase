@@ -5,13 +5,13 @@
   "artifacts": {
     "main": {
       "path": "apps/main/.release/main-runtime.tgz",
-      "bytes": 17306667,
-      "sha256": "3eca3e55f3d7e5332bb3a8afb91dd5c8ddc0cc6294672e46a8ce0e4638cb3c87"
+      "bytes": 17306412,
+      "sha256": "eda5b71f7c92643d8ee6383489e959982f6002cc0e2afe6e29ffd9d1f6a18943"
     },
     "affiliate": {
       "path": "apps/affiliate/.release/affiliate-runtime.tgz",
-      "bytes": 61086595,
-      "sha256": "81329faf863d7a4d1f1c6f9ad771886ac99adfebb899efbf9cd862c0ec1f3ec3"
+      "bytes": 61088173,
+      "sha256": "a48ca9dda6592b5b4c2ab1b3d351dbd352b3b8e2aca6fba9720d07d3114fdc2c"
     }
   },
   "newIndexableCanonicals": 0

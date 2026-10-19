@@ -67,3 +67,4 @@
 .checklist-copy textarea { display: block; width: 100%; padding: .7rem; border: 1px solid #aebfc5; }
 
 .compat-form input[type="checkbox"] { width: 1.1rem; height: 1.1rem; min-height: 0; vertical-align: middle; margin-right: .4rem; }
+.discovery-card a.button-primary, .discovery-page a.button-primary, .compat-result a.button-primary { color: #fff; text-decoration: none; }
