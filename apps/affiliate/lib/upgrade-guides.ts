@@ -1,7 +1,7 @@
 import type { Guide } from "./types";
 import { miniPcProfiles, evidenceSources, evidenceCheckedAt } from "./compatibility-data";
 
-export const upgradeGuides: Guide[] = miniPcProfiles.map((model) => ({
+export const upgradeGuides: Guide[] = miniPcProfiles.filter((model) => model.guide).map((model) => ({
   site: "homeoffice", slug: model.guide,
   title: `${model.name}: RAM, SSD and PCIe Upgrade Checks`,
   dek: `Check ${model.name} storage sockets, factory-validated memory, the SATA/PCIe conflict, power options and missing installation parts before buying an upgrade.`,
@@ -29,5 +29,5 @@ export const upgradeGuides: Guide[] = miniPcProfiles.map((model) => ({
     { heading: "Verify the upgrade after installation", body: "Follow the exact maintenance manual: disconnect power, use its ESD procedure and stop if a connector or mount does not match. Confirm memory capacity and storage detection in firmware before relying on the OS. Restore or migrate data from a backup, then run appropriate memory/storage checks and the workload you bought the machine for. These are suggested owner acceptance checks, not results of testing by Madabase. A stable boot alone does not validate every RAM configuration, sustained temperature or long-term reliability." },
     { heading: "When this machine is the wrong starting point", body: "Skip a purchase when the seller cannot identify the Tiny model, when the planned card and SATA drive need the same space, when an unverified memory capacity is essential, or when the complete missing-parts cost erases the saving. Stop at the evidence boundary when an exact FRU cannot be established. The query shows component options only after the required route checks. It supplies no universal carrier/cable/riser kit: those FRUs must be matched to the actual machine. Compatibility research remains useful even when the right answer is to keep the existing system or buy nothing." },
   ],
-  relatedRoundups: [], relatedProducts: [], relatedGuides: miniPcProfiles.filter((item) => item.id !== model.id).map((item) => item.guide),
+  relatedRoundups: [], relatedProducts: [], relatedGuides: miniPcProfiles.filter((item) => item.guide && item.id !== model.id).map((item) => item.guide),
 }));

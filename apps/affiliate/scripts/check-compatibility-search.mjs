@@ -82,7 +82,11 @@ check("Search excludes retired Tools", all.some((entry) => entry.href.includes("
 check("Search excludes isolated soft launches", all.some((entry) => entry.href.includes("satechi-dual-vertical")), false);
 check("Filters cannot leak other sites", searchContent(all, "", { site: "network" }).every((entry) => entry.site === "network"), true);
 for (const item of [...dockProfiles, ...macProfiles]) for (const id of item.sources) assert.ok(compatibilitySources.some((source) => source.id === id), `Missing evidence ${id}`);
-for (const model of miniPcProfiles) assert.ok(findGuide("homeoffice", model.guide), `Unregistered model ${model.id}`);
+for (const model of miniPcProfiles) {
+  if(model.guide) assert.ok(findGuide("homeoffice",model.guide), `Unregistered guide ${model.id}`);
+  else assert.ok(siteSearchIndex("homeoffice").some((entry)=>entry.href===`/compatibility/mini-pcs#tiny-model-${model.id}`), `Unregistered model anchor ${model.id}`);
+  for(const id of [model.id,`${model.id}-hmm`]) assert.ok(compatibilitySources.some((source)=>source.id===id), `Missing model source ${id}`);
+}
 for (const topic of compatibilityTopics) for (const link of topic.links.filter((item) => item.href.startsWith("/"))) {
   const [,prefix,slug] = link.href.split("/");
   const finder = { guides: findGuide, reviews: findProduct, best: findRoundup, tools: findTool }[prefix];
@@ -107,4 +111,4 @@ if (activeUpgradeOffers().length) {
 const mainIndex = JSON.parse(fs.readFileSync(new URL("../../main/lib/search-index.json",import.meta.url),"utf8"));
 const publicationHosts = {main:"madabase.com",homeoffice:"homeoffice.madabase.com",network:"network.madabase.com",smarthome:"smarthome.madabase.com",baby:"baby.madabase.com",pet:"pets.madabase.com",style:"style.madabase.com",costume:"costumes.madabase.com"};
 check("Cross-site search publication labels match every destination",mainIndex.every((item)=>new URL(item.href).host===publicationHosts[item.site]),true);
-console.log(JSON.stringify({passed:true,engineAndIntegrityChecks:checks,queryCases:queryResults,sourceRecords:compatibilitySources.length,modelGuides:miniPcProfiles.length,exactAmazonOfferChecks:7},null,2));
+console.log(JSON.stringify({passed:true,engineAndIntegrityChecks:checks,queryCases:queryResults,sourceRecords:compatibilitySources.length,modelGuides:miniPcProfiles.filter((model)=>model.guide).length,documentedModelProfiles:miniPcProfiles.length,exactAmazonOfferChecks:7},null,2));

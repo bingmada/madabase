@@ -1,4 +1,5 @@
 "use client";
+import { TinyFruResolver } from "./TinyFruResolver";
 import { compareDocks, dockParts, networkDecision } from "@/lib/setup-decisions";
 import { PartsBudget, type PartsWorksheet } from "./PartsBudget";
 import { useEffect, useState, type FormEvent } from "react";
@@ -48,6 +49,9 @@ export function CompatibilityPlanner({ topic, initialModel = "" }: { topic: Plan
   const [dockRequest,setDockRequest] = useState<DockInput | null>(null);
   const [monitorId, setMonitorId] = useState("custom");
   const [task,setTask] = useState("");
+  const [tinyModel,setTinyModel] = useState(initialModel);
+  const tinyProfile = miniPcProfiles.find((model) => model.id === tinyModel);
+  const tinyMemory: [string,string][] = [["-1","Not inspected"],["0","Empty"],...[4,8,16,32].filter((gb) => gb <= (tinyProfile?.validatedRamGb ?? 32)/2 && !(tinyProfile?.memoryGeneration === "DDR5" && gb < 8)).map((gb):[string,string] => [String(gb),`${gb}GB`])];
   const [selectedMac,setSelectedMac] = useState("");
   const [selectedLid,setSelectedLid] = useState("");
   const [networkPath,setNetworkPath] = useState("same-switch");
@@ -86,7 +90,6 @@ export function CompatibilityPlanner({ topic, initialModel = "" }: { topic: Plan
   }
   const title = { docks: "Check a MacBook and dock", "monitor-arms": "Check the monitor, arm and desk", "mini-pcs": "Build the upgrade checklist", ethernet: "Map your PC-to-NAS path" }[topic];
   const rates = [["0.1", "100Mbps"], ["1", "1Gbps"], ["2.5", "2.5Gbps"], ["5", "5Gbps"], ["10", "10Gbps"]] as const;
-  const memory = [["-1","Not inspected"],["0","Empty"],["4","4GB"],["8","8GB"],["16","16GB"],["32","32GB — separate module evidence needed"]] as const;
   return <section className="compat-panel" id="compatibility-checker" aria-label={title}>
     <p className="eyebrow">Your equipment, your constraints</p><h2>{title}</h2><p>Start with the exact equipment and the job you need. Changing an answer clears the previous result.</p>
     <details className="guide-toc"><summary>Where to find the details before starting</summary>{topic === "mini-pcs" ? <p>Read the Tiny model and machine type from the chassis label. For RAM, inspect both module labels rather than dividing total memory by two; follow the exact maintenance manual with power disconnected. For storage, check free capacity, occupied storage sockets, carrier/cable and retaining clip. Enter a serial only on Lenovo Parts Lookup, never here.</p> : topic === "docks" ? <p>On the Mac, open Apple menu → About This Mac and read the complete chip name, including Pro or Max. Check the monitor’s actual input and requested resolution/refresh rate. Read the host-output wattage separately from charger input power. If company policy controls software, confirm DisplayLink permission before ordering.</p> : topic === "monitor-arms" ? <p>Use the monitor maker’s weight without stand, adding carried accessories. Read VESA spacing and screw requirements from its manual. Measure the actual clamp stack and underside; get the desk maker’s approval for that attachment location. Model presets are references, not a complete-device database.</p> : <p>Choose one physical traffic path. Record negotiated port rates, not just package claims; for a built-in NIC use its rate in both PC and NIC fields. For a USB adapter, include its host-link ceiling. Count only actual wired switch devices and uplinks. WAN and NAS inputs appear only when that path uses them.</p>}</details>
@@ -118,16 +121,17 @@ export function CompatibilityPlanner({ topic, initialModel = "" }: { topic: Plan
         <Choice name="portsClear" label="VESA plate and screws leave monitor ports accessible?" options={yesNo} initial="unknown" />
         <Choice name="travel" label="Wall clearance and cable slack checked at full arm/desk travel?" options={yesNo} initial="unknown" />
       </> : topic === "mini-pcs" ? <>
-        <Choice name="model" label="Exact Tiny model — not SFF or Tower" initial={initialModel} options={miniPcProfiles.map((item) => [item.id, item.name])} />
+        <Choice name="model" label="Exact Tiny model — not SFF or Tower" initial={initialModel} onChange={setTinyModel} options={miniPcProfiles.map((item) => [item.id, item.name])} />
         <Choice name="task" label="Upgrade task" onChange={setTask} options={[["nvme", "Replace the existing NVMe drive"], ["sata", "Add a 2.5-inch SATA drive"], ["second-nvme", "Add a second internal NVMe drive"], ["ram", "Increase memory"]]} />
         {task === "ram" ? <>
-          <Choice name="module1" label="Current memory slot 1 (GB)" options={memory} initial="-1" />
-          <Choice name="module2" label="Current memory slot 2 (GB)" options={memory} initial="-1" />
-          <Choice name="ramGb" label="Target total memory (GB)" options={[["8","8GB"],["16","16GB"],["32","32GB"],["64","64GB — separate evidence required"],["-1","Other — no verified quantity plan"]]} />
+          <Choice key={`slot1-${tinyModel}`} name="module1" label="Current memory slot 1 (GB)" options={tinyMemory} initial="-1" />
+          <Choice key={`slot2-${tinyModel}`} name="module2" label="Current memory slot 2 (GB)" options={tinyMemory} initial="-1" />
+          <p className="compat-wide evidence-note">{tinyProfile?.memory} · {tinyProfile?.validatedRamGb}GB documented. Check the actual module labels; DDR4 and DDR5 are not interchangeable.</p>
+          <Choice key={`target-${tinyModel}`} name="ramGb" label="Target total memory (GB)" options={[["8","8GB"],["16","16GB"],["32","32GB"],["64",tinyProfile?.validatedRamGb === 64 ? "64GB — documented capacity; match exact modules" : "64GB — separate evidence required"],["-1","Other — no verified quantity plan"]]} />
         </> : task ? <>
           <Choice name="storageNeed" label="Need more usable storage or a replacement for a diagnosed drive fault?" options={[["unknown","Not confirmed — check free space and the actual problem"],["yes","Yes — additional capacity or a diagnosed replacement is needed"],["no","No — current storage already meets the job"]]} initial="unknown" />
           {task === "sata" ? <>
-            <Choice name="pcie" label="PCIe expansion card installed or planned?" options={yesNo} initial="unknown" />
+            {tinyProfile?.pciePolicy === "none" ? <><input type="hidden" name="pcie" value="no" /><p className="compat-wide evidence-note">{tinyProfile.note} Inspect the actual bay and connector; this profile does not qualify an internal PCIe-riser build.</p></> : <Choice name="pcie" label="PCIe expansion card installed or planned?" options={yesNo} initial="unknown" />}
             <Choice name="hasKit" label="Free SATA bay, model-matched carrier, cable and hardware confirmed?" options={yesNo} initial="unknown" />
           </> : <Choice name="storageReady" label="Intended storage socket, correct retainer and drive clearance confirmed?" options={yesNo} initial="unknown" />}
         </> : <p className="compat-wide evidence-note">Choose the task to see only its required checks. No storage-kit questions are needed for a RAM plan.</p>}
@@ -147,6 +151,7 @@ export function CompatibilityPlanner({ topic, initialModel = "" }: { topic: Plan
       </fieldset>
     </form>
     {result ? <Result key={JSON.stringify(result)} result={result} /> : null}
+    {topic === "mini-pcs" ? <TinyFruResolver key={tinyModel} modelId={tinyModel} /> : null}
     {comparison ? <section className="mt-6" id="dock-comparison" style={{scrollMarginTop:110}} tabIndex={-1} aria-label="Dock comparison results"><h3 className="text-xl font-bold">Compare all three docks with these same requirements</h3><p>{comparison.guidance}</p><p>Choose a route below to see its exact wiring, missing pieces and cost worksheet. A conflict or unknown result is a reason to hold that purchase.</p><div className="discovery-grid">{comparison.candidates.map(({id,name,result:candidate}) => <article className="discovery-card" key={id}><h3>{name}</h3><p><strong>{statusLabels[candidate.status]}</strong> · {candidate.title}</p><ul>{candidate.reasons.map((reason) => <li key={reason}>{reason}</li>)}</ul><button type="button" className="decision-button" onClick={() => chooseDock(id)}>Show checklist for {name}</button><p><a href={candidate.href}>Read exact model</a></p></article>)}</div></section> : null}
     {!result && !comparison ? <p className="evidence-note mt-4">Choose your equipment and submit to see the result. No model is recommended before these checks.</p> : null}
   </section>;

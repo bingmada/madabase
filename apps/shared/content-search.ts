@@ -15,6 +15,7 @@ export function normalizeSearch(value: string) {
     .replace(/(\d)\s+(gb|tb|mhz|hz|w|mm|kg|gbps|gbe)\b/g, "$1$2")
     .replace(/usb[\s-]*c/g, "usbc").replace(/display[\s-]*link/g, "displaylink")
     .replace(/wi[\s-]*fi/g, "wifi").replace(/(\d)[.,]([\d])/g, "$1p$2")
+    .replace(/\b(?:gen|generation)\s*(\d+)\b/g, "gen$1")
     .replace(/\bmemory\b/g, "ram").replace(/\bmonitors?\b/g, "display").replace(/\bdisplays\b/g, "display")
     .replace(/\b(?:two|dual)\b/g, "2")
     .replace(/[^a-z0-9]+/g, " ").trim();
@@ -46,7 +47,7 @@ export function searchContent(entries: SearchEntry[], query: string, filters: { 
       // Never answer an exact-model request with another model that merely shares a generic word.
       const modelTerms = coreTerms.filter((term) => /[a-z].*\d|\d.*[a-z]/.test(term));
       const corpus = `${title} ${aliases} ${body}`;
-      const ownedModelMismatch = entry.modelIds && modelTerms.some((term) => /^m\d{3}[a-z]$/.test(term) && !entry.modelIds!.includes(term));
+      const ownedModelMismatch = entry.modelIds && modelTerms.some((term) => /^m\d{2,3}[qx]$/.test(term) && !entry.modelIds!.some((id) => normalizeSearch(id).split(" ").includes(term)));
       if (ownedModelMismatch || modelTerms.some((term) => !corpus.includes(term))) score = 0;
       else if (matches < Math.ceil((coreTerms.length || terms.length) * 0.6)) score = 0;
       else if (title.includes(normalized) || aliases.includes(normalized)) score += 60;

@@ -2,6 +2,70 @@
   {
     "site": "homeoffice",
     "kind": "topic",
+    "title": "ThinkCentre M710q Tiny: memory, storage and FRU reference",
+    "summary": "2 DDR4 SO-DIMM slots; DDR4-2400, reduced to the processor's supported rate. 32GB documented; 1 storage M.2 position(s). Machine-type-specific parts evidence; no hands-on build certification.",
+    "href": "https://homeoffice.madabase.com/compatibility/mini-pcs#tiny-model-m710q",
+    "category": "desks",
+    "modelIds": [
+      "m710q"
+    ],
+    "aliases": [
+      "ThinkCentre M710q Tiny",
+      "10MQ 10MR 10MS 10MT 10QR",
+      "RAM SSD NVMe SATA cable carrier FRU parts upgrade"
+    ]
+  },
+  {
+    "site": "homeoffice",
+    "kind": "topic",
+    "title": "ThinkCentre M910q Tiny: memory, storage and FRU reference",
+    "summary": "2 DDR4 SO-DIMM slots; DDR4-2400, subject to CPU downclocking. 32GB documented; 1 storage M.2 position(s). Machine-type-specific parts evidence; no hands-on build certification.",
+    "href": "https://homeoffice.madabase.com/compatibility/mini-pcs#tiny-model-m910q",
+    "category": "desks",
+    "modelIds": [
+      "m910q"
+    ],
+    "aliases": [
+      "ThinkCentre M910q Tiny",
+      "10MU 10MV 10MW 10MX 10QN 10V7 10VF",
+      "RAM SSD NVMe SATA cable carrier FRU parts upgrade"
+    ]
+  },
+  {
+    "site": "homeoffice",
+    "kind": "topic",
+    "title": "ThinkCentre M70q Gen 3 Tiny: memory, storage and FRU reference",
+    "summary": "2 DDR4 SO-DIMM slots; DDR4-3200. 64GB documented; 1 storage M.2 position(s). Machine-type-specific parts evidence; no hands-on build certification.",
+    "href": "https://homeoffice.madabase.com/compatibility/mini-pcs#tiny-model-m70q-gen3",
+    "category": "desks",
+    "modelIds": [
+      "m70q-gen3"
+    ],
+    "aliases": [
+      "ThinkCentre M70q Gen 3 Tiny",
+      "11T3 11T4 11TY 11U0 11UB 11UC 11UD 11UE 11US 11UU 11X2 11X6 11X9 11XB 11Y5 11Y6",
+      "RAM SSD NVMe SATA cable carrier FRU parts upgrade"
+    ]
+  },
+  {
+    "site": "homeoffice",
+    "kind": "topic",
+    "title": "ThinkCentre M90q Gen 3 Tiny: memory, storage and FRU reference",
+    "summary": "2 DDR5 SO-DIMM slots; DDR5-4800. 64GB documented; 2 storage M.2 position(s). Machine-type-specific parts evidence; no hands-on build certification.",
+    "href": "https://homeoffice.madabase.com/compatibility/mini-pcs#tiny-model-m90q-gen3",
+    "category": "desks",
+    "modelIds": [
+      "m90q-gen3"
+    ],
+    "aliases": [
+      "ThinkCentre M90q Gen 3 Tiny",
+      "11U5 11U6 11U7 11U8 11UK 11UL 11UM 11UN 11V1 11V2 11V3 11V4",
+      "RAM SSD NVMe SATA cable carrier FRU parts upgrade"
+    ]
+  },
+  {
+    "site": "homeoffice",
+    "kind": "topic",
     "title": "MacBook and dock compatibility finder",
     "summary": "Chip, lid position, two independent displays, cables, power and DisplayLink permissions.",
     "href": "https://homeoffice.madabase.com/compatibility/docks",
@@ -32,11 +96,18 @@
     "site": "homeoffice",
     "kind": "topic",
     "title": "ThinkCentre Tiny upgrade planner",
-    "summary": "Compare M720q, M920q and M920x memory, SSD slots, PCIe conflicts and missing parts.",
+    "summary": "Seven Tiny profiles: M710q, M910q, M720q, M920q, M920x, M70q Gen 3 and M90q Gen 3; DDR4/DDR5, storage positions and machine-specific FRU checks.",
     "href": "https://homeoffice.madabase.com/compatibility/mini-pcs",
     "category": "desks",
     "aliases": [
-      "M720q M920q M920x RAM SSD PCIe"
+      "RAM SSD NVMe SATA PCIe FRU cable carrier retainer riser",
+      "ThinkCentre M710q Tiny 10MQ 10MR 10MS 10MT 10QR 2 DDR4 SO-DIMM slots; DDR4-2400, reduced to the processor's supported rate",
+      "ThinkCentre M910q Tiny 10MU 10MV 10MW 10MX 10QN 10V7 10VF 2 DDR4 SO-DIMM slots; DDR4-2400, subject to CPU downclocking",
+      "ThinkCentre M720q Tiny 10T7 10T8 10T9 10TA 10TC 10U8 10U9 10UA 2 DDR4 SO-DIMM slots; DDR4-2666 platform specification",
+      "ThinkCentre M920q Tiny 10RR 10RS 10RT 10RU 10SY 10T1 10T2 10UH 10V8 2 DDR4 SO-DIMM slots; DDR4-2666, subject to CPU downclocking",
+      "ThinkCentre M920x Tiny 10S0 10S1 10S2 10S3 10T3 10T5 10T6 10UJ 2 DDR4 SO-DIMM slots; the cited PSREF notes installed 2666 memory running at 2400 for its processor configurations",
+      "ThinkCentre M70q Gen 3 Tiny 11T3 11T4 11TY 11U0 11UB 11UC 11UD 11UE 11US 11UU 11X2 11X6 11X9 11XB 11Y5 11Y6 2 DDR4 SO-DIMM slots; DDR4-3200",
+      "ThinkCentre M90q Gen 3 Tiny 11U5 11U6 11U7 11U8 11UK 11UL 11UM 11UN 11V1 11V2 11V3 11V4 2 DDR5 SO-DIMM slots; DDR5-4800"
     ]
   },
   {

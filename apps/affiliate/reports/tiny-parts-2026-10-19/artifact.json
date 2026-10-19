@@ -1,0 +1,18 @@
+{
+  "status": "validated-final-production-runtime",
+  "node": "20.20.0",
+  "next": "15.5.23",
+  "artifacts": {
+    "main": {
+      "path": "apps/main/.release/main-runtime.tgz",
+      "bytes": 17306667,
+      "sha256": "3eca3e55f3d7e5332bb3a8afb91dd5c8ddc0cc6294672e46a8ce0e4638cb3c87"
+    },
+    "affiliate": {
+      "path": "apps/affiliate/.release/affiliate-runtime.tgz",
+      "bytes": 61086595,
+      "sha256": "81329faf863d7a4d1f1c6f9ad771886ac99adfebb899efbf9cd862c0ec1f3ec3"
+    }
+  },
+  "newIndexableCanonicals": 0
+}

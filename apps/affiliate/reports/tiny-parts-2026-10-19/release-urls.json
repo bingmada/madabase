@@ -1,0 +1,32 @@
+{
+  "newCanonicals": [],
+  "enhancedExistingCanonicals": [
+    "https://homeoffice.madabase.com/compatibility/mini-pcs",
+    "https://homeoffice.madabase.com/guides/thinkcentre-m720q-upgrade-compatibility-guide",
+    "https://homeoffice.madabase.com/guides/thinkcentre-m920q-upgrade-compatibility-guide",
+    "https://homeoffice.madabase.com/guides/thinkcentre-m920x-upgrade-compatibility-guide"
+  ],
+  "indexNowCandidates": [
+    "https://homeoffice.madabase.com/compatibility/mini-pcs",
+    "https://homeoffice.madabase.com/guides/thinkcentre-m720q-upgrade-compatibility-guide",
+    "https://homeoffice.madabase.com/guides/thinkcentre-m920q-upgrade-compatibility-guide",
+    "https://homeoffice.madabase.com/guides/thinkcentre-m920x-upgrade-compatibility-guide"
+  ],
+  "newIndexableFromThisPatch": 0,
+  "searchProfilesAdded": 4,
+  "searchEntries": 1134,
+  "machineTypesChecked": [
+    "10T7",
+    "10RU",
+    "10S0",
+    "10MQ",
+    "10MU",
+    "11T3",
+    "11U5"
+  ],
+  "priorCohortReviewDatesPreserved": [
+    "2026-10-26",
+    "2026-11-02",
+    "2026-11-18"
+  ]
+}

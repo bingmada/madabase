@@ -1,0 +1,37 @@
+{
+  "checkedAt": "2026-10-19T13:34:18.745314+00:00",
+  "destination": "Amazon US 10001 preview completed; China delivery preview restored; no address-book or account-country change",
+  "offer": {
+    "asin": "B0F2DYGPDQ",
+    "url": "https://www.amazon.com/dp/B0F2DYGPDQ",
+    "identity": "Deal4GO replacement SATA cable plus HDD carrier, 00XL211 / 01MN886",
+    "contents": "one cable plus one 2.5-inch cage bracket",
+    "seller": "Deal4Go",
+    "shipsFrom": "Amazon",
+    "availability": "In Stock",
+    "returnsObserved": "30-day refund/replacement; recheck live terms",
+    "manufacturerStatus": "Aftermarket replacement listing; no independently verified Lenovo genuineness",
+    "limits": "Listing excludes Tiny6/7/8. Its mention of 01EF683 is not treated as a Lenovo-approved substitute for 01MN886."
+  },
+  "heldCandidates": [
+    {
+      "asin": "B0DX1K7XXD",
+      "part": "5M11C16880 / 00XL211",
+      "reason": "Correct numbers present but bundle description/identity and authenticity claim need stronger verification; no CTA enabled."
+    },
+    {
+      "query": "KCP426SS8/8",
+      "reason": "Search includes A-Tech replacements, KCP426NS8/8 desktop DIMMs and KCP426SS6/8. No exact matched single-module listing verified yet."
+    },
+    {
+      "asin": "B07MFZY2F2",
+      "part": "MZ-V7S1T0B/AM",
+      "reason": "Exact product but no featured offer verified; reference only, no new commissioned NVMe button."
+    },
+    {
+      "asin": "B0DL5SS16B",
+      "part": "00XL211",
+      "reason": "Detail page labels the desktop connector as a laptop-only item and supplies no detailed connector/assembly specification beyond one image and part-number wording. Accurate replacement identity is insufficiently established; no single-cable CTA enabled."
+    }
+  ]
+}

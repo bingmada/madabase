@@ -28,7 +28,7 @@ export function PartsBudget({ parts, allowComponents = false, onWorksheetChange 
     </table></div>
     <p role="status">{summary.total === null ? `Known subtotal ${currency} ${summary.subtotal.toFixed(2)}; ${summary.missing} line cost(s) still unknown. Complete total unavailable.` : `Entered complete total: ${currency} ${summary.total.toFixed(2)}. Compare with a complete system of the same configuration and condition.`}</p>
     <p className="evidence-note">Inputs stay in this page and clear when you leave. No merchant price feed or compatibility guarantee; an entered zero is your explicit zero-cost assumption.</p>
-    {allowComponents && unmatchedMemory ? <p className="discovery-card"><strong>No verified merchant option for this exact memory plan.</strong> The required quantity is {unmatchedMemory.quantity}. Use that capacity and the manufacturer selector when checking a seller; a 16GB listing must not replace a required {unmatchedMemory.capacityGb}GB module. No different-capacity button is shown.</p> : null}
+    {allowComponents && unmatchedMemory ? <p className="discovery-card"><strong>No verified merchant option for this exact memory plan.</strong> The required quantity is {unmatchedMemory.quantity}. Match that capacity, memory generation and exact model evidence when checking a seller. An offer from another generation or module capacity must not replace this plan.</p> : null}
     {offers.map((offer) => {
       const part = parts.find((item) => item.id === offer.part)!;
       return <article className="discovery-card mt-4" key={offer.asin}>

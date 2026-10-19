@@ -65,3 +65,5 @@
 .compat-result:focus, #dock-comparison:focus { outline: 2px solid #376d83; outline-offset: 4px; }
 .checklist-copy { display: block; margin-top: 1rem; }
 .checklist-copy textarea { display: block; width: 100%; padding: .7rem; border: 1px solid #aebfc5; }
+
+.compat-form input[type="checkbox"] { width: 1.1rem; height: 1.1rem; min-height: 0; vertical-align: middle; margin-right: .4rem; }

@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "task": "Catalog-only record holds kit purchase",
+      "passed": true
+    },
+    {
+      "task": "Recorded exact unit and both FRUs gives one matching kit",
+      "passed": true
+    },
+    {
+      "task": "Only carrier missing does not upsell full kit",
+      "passed": true
+    },
+    {
+      "task": "Both parts already owned: no duplicate kit",
+      "passed": true
+    },
+    {
+      "task": "Switching model clears FRU identity and offer",
+      "passed": true
+    },
+    {
+      "task": "M90q Gen3 DDR5, one32GB with no DDR4 offer",
+      "passed": true
+    },
+    {
+      "task": "Gen3 exact FRUs do not substitute older kit when merchant evidence missing",
+      "passed": true
+    },
+    {
+      "task": "Final production runtime on host-aware local domain shows one gated kit",
+      "passed": true
+    }
+  ]
+}

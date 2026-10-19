@@ -89,7 +89,7 @@
     "publish:costume:cohort": "node scripts/publish-costume-cohort.mjs",
     "publish:costume:halloween": "node scripts/publish-costume-halloween-cohort.mjs",
     "publish:costume:expansion": "node scripts/publish-costume-expansion-cohort.mjs",
-    "check:compatibility": "node scripts/check-compatibility-search.mjs && node scripts/check-setup-decisions.mjs && node scripts/check-user-journeys.mjs && node scripts/export-site-search.mjs --check",
+    "check:compatibility": "node scripts/check-compatibility-search.mjs && node scripts/check-setup-decisions.mjs && node scripts/check-user-journeys.mjs && node scripts/check-tiny-parts.mjs && node scripts/export-site-search.mjs --check",
     "export:search": "node scripts/export-site-search.mjs"
   },
   "dependencies": {

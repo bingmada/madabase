@@ -1,0 +1,160 @@
+{
+  "passed": true,
+  "cases": 36,
+  "rows": [
+    {
+      "task": "Same SATA cable does not make Tiny8 and Tiny5 carriers interchangeable",
+      "passed": true
+    },
+    {
+      "task": "A checked catalog plus reader's exact-unit record can expose only the matched kit",
+      "passed": true
+    },
+    {
+      "task": "Machine-type catalog alone cannot authorize kit shopping",
+      "passed": true
+    },
+    {
+      "task": "An exact-MTM claim needs ten characters",
+      "passed": true
+    },
+    {
+      "task": "Full MTM keeps the verified type but not a fabricated as-built claim",
+      "passed": true
+    },
+    {
+      "task": "Another model's machine type blocks the offer",
+      "passed": true
+    },
+    {
+      "task": "Unlisted type is unresolved, not silently mapped to a similar type",
+      "passed": true
+    },
+    {
+      "task": "Unknown machine-type format cannot get an offer",
+      "passed": true
+    },
+    {
+      "task": "Reversed cable/carrier roles fail even with both known numbers",
+      "passed": true
+    },
+    {
+      "task": "Seller's 01EF683 claim is not a manufacturer substitute for 01MN886",
+      "passed": true
+    },
+    {
+      "task": "Missing photos evidence blocks purchase",
+      "passed": true
+    },
+    {
+      "task": "Missing bay evidence blocks purchase",
+      "passed": true
+    },
+    {
+      "task": "Already owns ownsCable: do not sell a redundant whole kit",
+      "passed": true
+    },
+    {
+      "task": "Already owns ownsCarrier: do not sell a redundant whole kit",
+      "passed": true
+    },
+    {
+      "task": "Both parts present gives a no-duplicate-purchase decision",
+      "passed": true
+    },
+    {
+      "task": "No storage need means no kit even when parts are missing",
+      "passed": true
+    },
+    {
+      "task": "Unestablished need does not become an affiliate recommendation",
+      "passed": true
+    },
+    {
+      "task": "Expired merchant verification closes the accessory offer",
+      "passed": true
+    },
+    {
+      "task": "M90q Gen3 32GB+empty to64GB uses DDR5 and one32GB, never the DDR4 offer",
+      "passed": true
+    },
+    {
+      "task": "M70q Gen3 64GB plan stays DDR4, distinct from M90q Gen3",
+      "passed": true
+    },
+    {
+      "task": "Existing DDR5 64GB meets target: no-buy",
+      "passed": true
+    },
+    {
+      "task": "DDR5 does not invent 4GB modules for an8GB target",
+      "passed": true
+    },
+    {
+      "task": "Empty legacy16GB goal need not require buying two8GB modules",
+      "passed": true
+    },
+    {
+      "task": "An older M710q does not inherit Gen3's64GB evidence",
+      "passed": true
+    },
+    {
+      "task": "M70q Gen3 WLAN position cannot become second NVMe",
+      "passed": true
+    },
+    {
+      "task": "M90q Gen3 second NVMe still needs actual mounting evidence",
+      "passed": true
+    },
+    {
+      "task": "Unverified M90q card/bay combination is not declared a known fit or old-model conflict",
+      "passed": true
+    },
+    {
+      "task": "M710q RAM 32GB: own model anchor ranks first",
+      "passed": true
+    },
+    {
+      "task": "M910q SATA FRU: own model anchor ranks first",
+      "passed": true
+    },
+    {
+      "task": "M70q Gen 3 memory 64GB: own model anchor ranks first",
+      "passed": true
+    },
+    {
+      "task": "M90q generation3 DDR5 64GB: own model anchor ranks first",
+      "passed": true
+    },
+    {
+      "task": "M70q Gen2 search does not substitute Gen3",
+      "passed": true
+    },
+    {
+      "task": "No new article canonical is created by the model expansion",
+      "passed": true
+    },
+    {
+      "task": "All catalog observations belong to the named model/manual and known roles",
+      "passed": true
+    },
+    {
+      "task": "Every documented profile resolves specification and maintenance evidence",
+      "passed": true
+    },
+    {
+      "task": "Exact kit tracking, wrong-site and unapproved-merchant guards",
+      "passed": true
+    }
+  ],
+  "catalogObservations": 18,
+  "machineTypes": [
+    "10T7",
+    "10RU",
+    "10S0",
+    "10MQ",
+    "10MU",
+    "11T3",
+    "11U5"
+  ]
+}

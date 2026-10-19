@@ -1,3 +1,4 @@
+import { miniPcProfiles } from "./tiny-models";
 import { siteGuides, siteProducts, siteRoundups, siteTools } from "./content";
 import type { SiteKey } from "./types";
 import type { SearchEntry } from "../../shared/content-search";
@@ -22,8 +23,9 @@ export function siteSearchIndex(site: SiteKey): SearchEntry[] {
   if (site === "homeoffice") result.unshift(
     { site, kind: "topic", title: "MacBook and dock compatibility finder", summary: "Chip, lid position, two independent displays, cables, power and DisplayLink permissions.", href: "/compatibility/docks", category: "desks", aliases: ["TS4", "TBT4-UD5", "USBC-6950PDZ", "M1 M2 M3 M4 M5", "dual monitors"] },
     { site, kind: "topic", title: "Monitor arm and desk fit checker", summary: "Screen weight without stand, VESA pattern, clamp thickness, curved-screen and desk construction checks.", href: "/compatibility/monitor-arms", category: "ergonomics", aliases: ["Ergotron HX", "Ergotron LX", "VESA", "Dell U2723QE U3223QE U4025QW"] },
-    { site, kind: "topic", title: "ThinkCentre Tiny upgrade planner", summary: "Compare M720q, M920q and M920x memory, SSD slots, PCIe conflicts and missing parts.", href: "/compatibility/mini-pcs", category: "desks", aliases: ["M720q M920q M920x RAM SSD PCIe"] },
+    { site, kind: "topic", title: "ThinkCentre Tiny upgrade planner", summary: "Seven Tiny profiles: M710q, M910q, M720q, M920q, M920x, M70q Gen 3 and M90q Gen 3; DDR4/DDR5, storage positions and machine-specific FRU checks.", href: "/compatibility/mini-pcs", category: "desks", aliases: ["RAM SSD NVMe SATA PCIe FRU cable carrier retainer riser",...miniPcProfiles.map((model) => `${model.name} ${model.machineTypes.join(" ")} ${model.memory}`)] },
   );
+  if (site === "homeoffice") result.unshift(...miniPcProfiles.filter((model) => !model.guide).map((model) => ({site,kind:"topic" as const,title:`${model.name}: memory, storage and FRU reference`,summary:`${model.memory}. ${model.validatedRamGb}GB documented; ${model.nvmeSlots} storage M.2 position(s). Machine-type-specific parts evidence; no hands-on build certification.`,href:`/compatibility/mini-pcs#tiny-model-${model.id}`,category:"desks",modelIds:[model.id],aliases:[model.name,model.machineTypes.join(" "),"RAM SSD NVMe SATA cable carrier FRU parts upgrade"]})));
   if (site === "network") result.unshift({ site, kind: "topic", title: "NAS and Ethernet bottleneck planner", summary: "Check every link from a laptop or Tiny PC to a NAS, count switch ports and distinguish LAN from internet speed.", href: "/compatibility/ethernet", category: "wired", aliases: ["2.5GbE", "10GbE", "NAS", "switch", "Tiny"] });
   return [...new Map(result.map((item) => [item.href, item])).values()];
 }

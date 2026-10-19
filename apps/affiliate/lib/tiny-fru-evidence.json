@@ -1,0 +1,200 @@
+[
+  {
+    "part": "00XL211",
+    "name": "Fru,50mmSATA power+Data FFC Cable",
+    "machineType": "10T7",
+    "model": "m720q",
+    "scope": "Lenovo Machine Type catalog, not serial as-built",
+    "url": "https://pcsupport.lenovo.com/us/en/products/desktops-and-all-in-ones/thinkcentre-m-series-desktops/m720q/10t7/parts/display/compatible",
+    "query": "SATA",
+    "checkedAt": "2026-10-19T13:19:14.443Z",
+    "role": "sata-cable"
+  },
+  {
+    "part": "01MN886",
+    "name": "Ty5 HDD cage kit, AVC",
+    "machineType": "10T7",
+    "model": "m720q",
+    "scope": "Lenovo Machine Type catalog, not serial as-built",
+    "url": "https://pcsupport.lenovo.com/us/en/products/desktops-and-all-in-ones/thinkcentre-m-series-desktops/m720q/10t7/parts/display/compatible",
+    "query": "01MN886",
+    "checkedAt": "2026-10-19T13:19:23.104Z",
+    "role": "carrier"
+  },
+  {
+    "part": "00XL211",
+    "name": "Fru,50mmSATA power+Data FFC Cable",
+    "machineType": "10RU",
+    "model": "m920q",
+    "scope": "Lenovo Machine Type catalog, not serial as-built",
+    "url": "https://pcsupport.lenovo.com/us/en/products/desktops-and-all-in-ones/thinkcentre-m-series-desktops/thinkcentre-m920q/10ru/parts/display/compatible",
+    "query": "SATA",
+    "checkedAt": "2026-10-19T13:21:42.703Z",
+    "role": "sata-cable"
+  },
+  {
+    "part": "01AJ929",
+    "name": "Pcie4 Riser card",
+    "machineType": "10RU",
+    "model": "m920q",
+    "scope": "Lenovo Machine Type catalog; does not validate any add-in NIC/GPU",
+    "url": "https://pcsupport.lenovo.com/us/en/products/desktops-and-all-in-ones/thinkcentre-m-series-desktops/thinkcentre-m920q/10ru/parts/display/compatible",
+    "query": "PCI",
+    "checkedAt": "2026-10-19T13:21:59.473Z",
+    "role": "riser"
+  },
+  {
+    "part": "01MN886",
+    "name": "Ty5 HDD cage kit, AVC",
+    "machineType": "10RU",
+    "model": "m920q",
+    "scope": "Lenovo Machine Type catalog, not serial as-built",
+    "url": "https://pcsupport.lenovo.com/us/en/products/desktops-and-all-in-ones/thinkcentre-m-series-desktops/thinkcentre-m920q/10ru/parts/display/compatible",
+    "query": "cage",
+    "checkedAt": "2026-10-19T13:22:21.976Z",
+    "role": "carrier"
+  },
+  {
+    "part": "01EF751",
+    "name": "KY clip tiny4 M.2 SSD Liteon",
+    "machineType": "10RU",
+    "model": "m920q",
+    "scope": "Lenovo Machine Type catalog, confirm drive/mount and serial substitutes",
+    "url": "https://pcsupport.lenovo.com/us/en/products/desktops-and-all-in-ones/thinkcentre-m-series-desktops/thinkcentre-m920q/10ru/parts/display/compatible",
+    "query": "clip",
+    "checkedAt": "2026-10-19T13:22:42.208Z",
+    "role": "retainer"
+  },
+  {
+    "part": "01MN886",
+    "name": "Ty5 HDD cage kit, AVC",
+    "machineType": "10S0",
+    "model": "m920x",
+    "scope": "Lenovo Machine Type catalog, not serial as-built",
+    "url": "https://pcsupport.lenovo.com/us/en/products/desktops-and-all-in-ones/thinkcentre-m-series-desktops/thinkcentre-m920x/10s0/parts/display/compatible",
+    "query": "cage",
+    "checkedAt": "2026-10-19T13:27:00.859Z",
+    "role": "carrier"
+  },
+  {
+    "part": "00XL211",
+    "name": "Fru,50mmSATA power+Data FFC Cable",
+    "machineType": "10S0",
+    "model": "m920x",
+    "scope": "Lenovo Machine Type catalog, not serial as-built",
+    "url": "https://pcsupport.lenovo.com/us/en/products/desktops-and-all-in-ones/thinkcentre-m-series-desktops/thinkcentre-m920x/10s0/parts/display/compatible",
+    "query": "SATA",
+    "checkedAt": "2026-10-19T13:27:08.673Z",
+    "role": "sata-cable"
+  },
+  {
+    "part": "01AJ929",
+    "name": "Pcie4 Riser card",
+    "machineType": "10S0",
+    "model": "m920x",
+    "scope": "Alternative Lenovo Machine Type catalog entries, not interchangeable or card qualification",
+    "url": "https://pcsupport.lenovo.com/us/en/products/desktops-and-all-in-ones/thinkcentre-m-series-desktops/thinkcentre-m920x/10s0/parts/display/compatible",
+    "query": "riser",
+    "checkedAt": "2026-10-19T13:27:25.765Z",
+    "role": "riser"
+  },
+  {
+    "part": "01AJ940",
+    "name": "BLD Tiny5 PCIE16 Riser card",
+    "machineType": "10S0",
+    "model": "m920x",
+    "scope": "Alternative Lenovo Machine Type catalog entries, not interchangeable or card qualification",
+    "url": "https://pcsupport.lenovo.com/us/en/products/desktops-and-all-in-ones/thinkcentre-m-series-desktops/thinkcentre-m920x/10s0/parts/display/compatible",
+    "query": "riser",
+    "checkedAt": "2026-10-19T13:27:25.770Z",
+    "role": "riser"
+  },
+  {
+    "part": "01EF683",
+    "name": "HDD cage for Tiny4 AVC",
+    "machineType": "10MQ",
+    "model": "m710q",
+    "scope": "Lenovo Machine Type catalog, not serial as-built",
+    "url": "https://pcsupport.lenovo.com/us/en/products/desktops-and-all-in-ones/thinkcentre-m-series-desktops/thinkcentre-m710q/10mq/parts/display/compatible",
+    "query": "cage",
+    "checkedAt": "2026-10-19T13:28:45.379Z",
+    "role": "carrier"
+  },
+  {
+    "part": "00XL211",
+    "name": "Fru,50mmSATA power+Data FFC Cable",
+    "machineType": "10MQ",
+    "model": "m710q",
+    "scope": "Lenovo Machine Type catalog, not serial as-built",
+    "url": "https://pcsupport.lenovo.com/us/en/products/desktops-and-all-in-ones/thinkcentre-m-series-desktops/thinkcentre-m710q/10mq/parts/display/compatible",
+    "query": "SATA",
+    "checkedAt": "2026-10-19T13:28:51.950Z",
+    "role": "sata-cable"
+  },
+  {
+    "part": "01EF683",
+    "name": "HDD cage for Tiny4 AVC",
+    "machineType": "10MU",
+    "model": "m910q",
+    "scope": "Lenovo Machine Type catalog, not serial as-built",
+    "url": "https://pcsupport.lenovo.com/us/en/products/desktops-and-all-in-ones/thinkcentre-m-series-desktops/thinkcentre-m910q/10mu/parts/display/compatible",
+    "query": "cage",
+    "checkedAt": "2026-10-19T13:29:41.129Z",
+    "role": "carrier"
+  },
+  {
+    "part": "00XL211",
+    "name": "Fru,50mmSATA power+Data FFC Cable",
+    "machineType": "10MU",
+    "model": "m910q",
+    "scope": "Lenovo Machine Type catalog, not serial as-built",
+    "url": "https://pcsupport.lenovo.com/us/en/products/desktops-and-all-in-ones/thinkcentre-m-series-desktops/thinkcentre-m910q/10mu/parts/display/compatible",
+    "query": "00XL211",
+    "checkedAt": "2026-10-19T13:29:54.333Z",
+    "role": "sata-cable"
+  },
+  {
+    "part": "5M11C16880",
+    "name": "Tiny8 HDD cage kit, AVC",
+    "machineType": "11T3",
+    "model": "m70q-gen3",
+    "scope": "Lenovo Machine Type catalog, not serial as-built",
+    "url": "https://pcsupport.lenovo.com/us/en/products/desktops-and-all-in-ones/thinkcentre-m-series-desktops/thinkcentre-m70q-gen-3/11t3/parts/display/compatible",
+    "query": "cage",
+    "checkedAt": "2026-10-19T13:30:20.849Z",
+    "role": "carrier"
+  },
+  {
+    "part": "00XL211",
+    "name": "Fru,50mmSATA power+Data FFC Cable",
+    "machineType": "11T3",
+    "model": "m70q-gen3",
+    "scope": "Lenovo Machine Type catalog, not serial as-built",
+    "url": "https://pcsupport.lenovo.com/us/en/products/desktops-and-all-in-ones/thinkcentre-m-series-desktops/thinkcentre-m70q-gen-3/11t3/parts/display/compatible",
+    "query": "SATA",
+    "checkedAt": "2026-10-19T13:30:28.031Z",
+    "role": "sata-cable"
+  },
+  {
+    "part": "5M11C16880",
+    "name": "Tiny8 HDD cage kit, AVC",
+    "machineType": "11U5",
+    "model": "m90q-gen3",
+    "scope": "Lenovo Machine Type catalog, not serial as-built",
+    "url": "https://pcsupport.lenovo.com/us/en/products/desktops-and-all-in-ones/thinkcentre-m-series-desktops/thinkcentre-m90q-gen-3/11u5/parts/display/compatible",
+    "query": "cage",
+    "checkedAt": "2026-10-19T13:31:39.855Z",
+    "role": "carrier"
+  },
+  {
+    "part": "00XL211",
+    "name": "Fru,50mmSATA power+Data FFC Cable",
+    "machineType": "11U5",
+    "model": "m90q-gen3",
+    "scope": "Lenovo Machine Type catalog, not serial as-built",
+    "url": "https://pcsupport.lenovo.com/us/en/products/desktops-and-all-in-ones/thinkcentre-m-series-desktops/thinkcentre-m90q-gen-3/11u5/parts/display/compatible",
+    "query": "SATA",
+    "checkedAt": "2026-10-19T13:31:55.096Z",
+    "role": "sata-cable"
+  }
+]
