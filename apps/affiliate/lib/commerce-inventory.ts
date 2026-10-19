@@ -2,7 +2,7 @@ import { siteProducts } from "./content";
 import { amazonFamilyProductIdentity, amazonFamilyProductInventory, findAmazonFamilyProduct } from "./amazon-family-products";
 import { amazonAsinAffiliateUrl } from "./affiliate-tracking";
 import type { AffiliateOffer, SiteKey } from "./types";
-import { activeUpgradeOffers, upgradeAffiliateOffer } from "./upgrade-offers";
+import { activeComponentOffers, componentAffiliateOffer, activeUpgradeOffers, upgradeAffiliateOffer } from "./upgrade-offers";
 
 const commerceSites: SiteKey[] = ["network", "smarthome", "homeoffice", "baby", "pet", "style"];
 
@@ -10,6 +10,7 @@ const commerceSites: SiteKey[] = ["network", "smarthome", "homeoffice", "baby", 
 // Family slugs must include the exact ASIN; accepting a prefix alone loses identity.
 export function publishedCommerceInventory() {
   return [
+    ...activeComponentOffers().map((item) => ({site:item.site,slug:item.slug,catalogSlug:"compatibility/mini-pcs",asin:item.asin,offers:[componentAffiliateOffer(item)],kind:"guide-offer" as const})),
     ...activeUpgradeOffers().map((item) => ({site:item.site, slug:item.slug, catalogSlug:item.guide, asin:item.asin, offers:[upgradeAffiliateOffer(item)], kind:"guide-offer" as const})),
     ...commerceSites.flatMap((site) => siteProducts(site).filter((product) => product.publicationStatus !== "draft").map((product) => ({
       site, slug: product.slug, catalogSlug: product.slug,

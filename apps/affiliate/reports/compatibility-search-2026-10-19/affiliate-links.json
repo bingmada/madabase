@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-19T08:53:31.384Z",
+  "checkedAt": "2026-10-19T09:36:43.160Z",
   "sourcePartnerTag": "bingmada-20",
   "siteTrackingIds": {
     "network": "madanetwork-20",
@@ -9,13 +9,13 @@
     "pet": "madapets-20",
     "style": "madastyle-20"
   },
-  "total": 503,
-  "passed": 503,
+  "total": 505,
+  "passed": 505,
   "failed": 0,
   "validationScope": "url-structure-and-attribution",
   "liveProductChecks": {
     "verified": 0,
-    "notChecked": 503
+    "notChecked": 505
   },
   "note": "This automated check simulates runtime site-tag rewriting, validates short-link resolution, Amazon destination, the expected site tracking ID, and known ASINs. Live product availability and Associates exclusion status still require a signed-in Amazon/SiteStripe check.",
   "results": [
@@ -2438,6 +2438,32 @@
       "problems": []
     },
     {
+      "url": "https://www.amazon.com/dp/B078211KBB?tag=madaoffice-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+      "file": "runtime:publishedCommerceInventory",
+      "slug": "compatibility/mini-pcs",
+      "site": "homeoffice",
+      "expectedAsin": "B078211KBB",
+      "contexts": [
+        {
+          "slug": "crucial-mx500-1tb-b078211kbb",
+          "kind": "guide-offer"
+        }
+      ],
+      "runtimeUrl": "https://www.amazon.com/dp/B078211KBB?tag=madaoffice-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+      "expectedTag": "madaoffice-20",
+      "validationScope": "url-structure-and-attribution",
+      "liveProductIdentity": "not_checked",
+      "liveAvailability": "not_checked",
+      "ok": true,
+      "status": null,
+      "finalUrl": "https://www.amazon.com/dp/B078211KBB?tag=madaoffice-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+      "actualAsin": "B078211KBB",
+      "actualTag": "madaoffice-20",
+      "redirectCount": 0,
+      "resolution": "direct_amazon_url",
+      "problems": []
+    },
+    {
       "url": "https://www.amazon.com/dp/B0784HWPN6?tag=madaoffice-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
       "file": "runtime:publishedCommerceInventory",
       "slug": "family-standing-desk-converters",
@@ -2536,6 +2562,32 @@
       "status": null,
       "finalUrl": "https://www.amazon.com/dp/B07C3M678F?tag=madaoffice-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
       "actualAsin": "B07C3M678F",
+      "actualTag": "madaoffice-20",
+      "redirectCount": 0,
+      "resolution": "direct_amazon_url",
+      "problems": []
+    },
+    {
+      "url": "https://www.amazon.com/dp/B07D2DZ42B?tag=madaoffice-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+      "file": "runtime:publishedCommerceInventory",
+      "slug": "compatibility/mini-pcs",
+      "site": "homeoffice",
+      "expectedAsin": "B07D2DZ42B",
+      "contexts": [
+        {
+          "slug": "kingston-kcp426sd8-16-b07d2dz42b",
+          "kind": "guide-offer"
+        }
+      ],
+      "runtimeUrl": "https://www.amazon.com/dp/B07D2DZ42B?tag=madaoffice-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+      "expectedTag": "madaoffice-20",
+      "validationScope": "url-structure-and-attribution",
+      "liveProductIdentity": "not_checked",
+      "liveAvailability": "not_checked",
+      "ok": true,
+      "status": null,
+      "finalUrl": "https://www.amazon.com/dp/B07D2DZ42B?tag=madaoffice-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+      "actualAsin": "B07D2DZ42B",
       "actualTag": "madaoffice-20",
       "redirectCount": 0,
       "resolution": "direct_amazon_url",

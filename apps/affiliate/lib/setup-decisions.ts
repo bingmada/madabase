@@ -1,0 +1,45 @@
+import { checkDock, planEthernet, type DockInput, type CompatibilityResult } from "./compatibility-engine";
+import { dockProfiles, macProfiles } from "./compatibility-data";
+export function compareDocks(input: DockInput, existingRoute: string) {
+  const host = macProfiles.find((item) => item.id === input.mac);
+  const limit = host ? (input.lid === "closed" ? host.closed : host.open) : 0;
+  const nativeConditions = !!host && input.screens <= limit && ["4k60","1080p60","1440p60"].includes(input.mode) && (input.mac !== "m3" || input.lid !== "closed" || input.screens < 2 || input.clamshellReady === "yes");
+  const noBuy = existingRoute === "yes" && nativeConditions ? "Keep your current direct connections or dock. You confirmed the present setup already runs the required independent screens at the target mode. A new dock is optional convenience, not required to create this display count." : host && input.screens > limit ? "This host/lid combination cannot provide the requested native screen count. A different native dock or cable will not add a display stream. Reduce the display count, use an eligible M3 closed-lid route, or explicitly assess the software-driven alternative and its workload restrictions." : "First check the Mac's documented direct display connections with suitable existing cables/adapters. Buy a dock only for a missing function or a verified one-cable requirement; a spare connector alone does not establish a working route.";
+  return { noBuy, candidates: dockProfiles.map((dock) => ({name:dock.name, result:checkDock({...input,dock:dock.id})})) };
+}
+export function dockParts(input: DockInput) {
+  const dock = dockProfiles.find((item) => item.id === input.dock);
+  if (!dock) return [];
+  const common = [{ id:"host-cable", name:"Qualified host cable", quantity:"1", check:dock.technology === "native" ? "Included Thunderbolt host cable; an ordinary charge-only USB-C lead cannot substitute." : "USB-C data connection to the host; confirm the supplied lead and OS support.", source:dock.sources[0] }];
+  if (dock.id === "ts4") common.push({id:"screen-one",name:"Screen 1 video cable",quantity:"1",check:input.input === "hdmi" ? "TS4 DisplayPort output → HDMI input requires a correctly directed DisplayPort-to-HDMI adapter/cable rated for your mode. It is not the same as HDMI-to-DisplayPort." : "Use the manual's DisplayPort or downstream Thunderbolt video route; match the actual input and mode.",source:"ts4"},{id:"screen-two",name:"Screen 2 video connection",quantity:input.screens === 2 ? "1" : "0 for one screen",check:"Downstream Thunderbolt → USB-C video display, or qualified USB-C video adapter to the screen input. The TS4 data-only USB-C ports cannot carry this second display.",source:"ts4"});
+  else common.push({id:"hdmi-cables",name:"HDMI cables for displays",quantity:String(input.screens),check:input.input === "hdmi" ? "One cable per independent screen, rated for the requested mode." : "The verified output is HDMI. USB-C-only displays or opposite-direction adapters cannot be silently substituted; resolve the input route first.",source:dock.sources[0]});
+  common.push({id:"power",name:dock.id === "displaylink" ? "USB-C power supply (not included)" : "Dock power supply and mains lead",quantity:"1",check:dock.id === "displaylink" ? "Qualified 45–100W USB-C source; up to 82W host output with adequate source. Include a separate host charger if the resulting host power is insufficient." : `Check included regional mains lead and supply. Up to ${dock.hostWatts}W host output; retain a separate supported charger when the host requires more.`,source:dock.sources[0]});
+  return common;
+}
+export type NetworkPathInput = Parameters<typeof planEthernet>[0] & { path: string; routerLan: number; routerWan: number; internet: number; target: number; cable: string };
+export function networkDecision(input: NetworkPathInput): CompatibilityResult {
+  const plan = planEthernet(input);
+  const unknown = (reason: string): CompatibilityResult => ({status:"unknown",title:"Complete the network map first",reasons:[reason],checklist:[],sources:["netgear-multigig","netgear-ms305"]});
+  if (!plan || !["same-switch","router-transit","direct","internet"].includes(input.path)) return unknown("Select the physical data path, negotiated link rates and whole port counts.");
+  const rates = [{name:"PC / host link",rate:input.pc},{name:"NIC / adapter",rate:input.adapter}];
+  if (input.path !== "direct") rates.push({name:"Switch port",rate:input.switchRate});
+  if (["router-transit","internet"].includes(input.path)) rates.push({name:input.path === "internet" ? "Router LAN port" : "Slowest router LAN port on the path",rate:input.routerLan});
+  if (input.path === "internet") rates.push({name:"Router WAN port",rate:input.routerWan},{name:"Internet plan",rate:input.internet});
+  else rates.push({name:"NAS port",rate:input.nas});
+  if (rates.some((link) => ![0.1,1,2.5,5,10].includes(link.rate)) || ![0.1,1,2.5,5,10].includes(input.target)) return unknown("Confirm the rate of every port that the selected traffic actually crosses, including the slower of two router LAN ports when applicable.");
+  const ceiling = Math.min(...rates.map((link) => link.rate));
+  const short = input.path !== "direct" && plan.sparePorts < 0;
+  const blockers = rates.filter((link) => link.rate < input.target);
+  const enough = !short && !blockers.length && input.cable === "yes";
+  const status = short || blockers.length ? "incompatible" : input.cable !== "yes" ? "unknown" : "supported";
+  return {status,title:`${ceiling}Gbps selected-path ceiling`,reasons:[
+    `Path: ${rates.map((link) => `${link.name} ${link.rate}Gbps`).join(" → ")}.`,
+    input.path === "same-switch" ? "PC and NAS share the same switch and LAN/subnet. Their local traffic does not cross the router's WAN port; its internet speed is not a local-copy ceiling." : input.path === "router-transit" ? "Traffic crosses router LAN ports. Their rates matter; inter-VLAN routing, firewall and router processing can lower throughput further." : input.path === "direct" ? "No switch or router is in this dedicated PC-to-NAS link. Keep an independent internet connection and configure addressing; Wi-Fi or WAN rates do not raise this cable's limit." : "This is the internet path, so WAN and plan rates matter. NAS link speed does not set the download ceiling.",
+    `${ceiling * 1000 / 8}MB/s is line-rate arithmetic before overhead, disks and processing; it is not a benchmark.`,
+    input.path === "direct" ? "No switch ports are consumed by this dedicated cable." : `${plan.portNeed} physical switch ports needed; ${short ? `${-plan.sparePorts} missing` : `${plan.sparePorts} spare`}. Count the router uplink once; count the NAS within device total.`,
+    blockers.length ? `To reach ${input.target}Gbps, every slower link must change: ${blockers.map((link) => link.name).join(", ")}. A switch-only purchase cannot repair an endpoint limit.` : `The entered link rates meet the ${input.target}Gbps line-rate target.`,
+    input.cable === "yes" ? "You confirmed a suitable cable path and negotiated link speed." : "Confirm cabling and negotiated speed before treating the proposed target as supported.",
+  ],noBuy: enough ? "The entered equipment already meets this link-rate and port target. Keep it; investigate disks, protocols, CPU and actual local tests before buying faster network gear." : undefined,
+  checklist:["Map a single flow. This tool does not combine ports, assume link aggregation, certify a cable run or predict routing throughput.","Record exact NIC revision, OS driver, upstream USB bandwidth and power/thermal requirements. Tiny PCIe expansion needs its model-matched riser, bracket and free drive-bay space.","For a router-transit path, use the slower of the two relevant LAN ports. For inter-VLAN traffic, verify routing/firewall throughput separately."],
+  parts:[{id:"endpoints",name:"Endpoint NICs / adapters",quantity:"One at each endpoint if missing",check:blockers.filter((link) => /PC|NIC|NAS/.test(link.name)).map((link) => `${link.name} is below target`).join("; ") || "Keep existing endpoints if their negotiated rates and drivers meet the target.",source:"tplink-ue302c"},{id:"switch",name:"Switch and router ports on the path",quantity:input.path === "direct" ? "0 for this direct link" : `${plan.portNeed} occupied switch ports`,check:input.path === "direct" ? "No switch purchase needed for this flow." : "Use the per-port specification, not aggregate switching capacity. Include a router uplink and spare ports if the household needs them.",source:"netgear-ms305"},{id:"cables",name:"Qualified cable runs",quantity:input.path === "direct" ? "1" : "One per physical link",check:"Reuse runs that meet the rate/distance and negotiate correctly. Include patch leads, wall runs and connectors; do not assume a new switch repairs damaged cabling.",source:"netgear-multigig"}],sources:["netgear-multigig","netgear-ms305","tplink-ue302c"],href:"https://homeoffice.madabase.com/compatibility/mini-pcs"};
+}

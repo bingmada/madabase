@@ -7,12 +7,14 @@
     },
     "affiliate": {
       "path": "apps/affiliate/.release/affiliate-runtime.tgz",
-      "bytes": 61029093,
-      "sha256": "b2d3c0f0397508e20e55eb07ded661d1ab73c0dbc12fb454760dc9fbd5ef8ec4"
+      "bytes": 61056924,
+      "sha256": "e8cd26eef971ad5596a42d4901dfde0c79cac2b996c7a4a3ac1782a1aaf36330"
     }
   },
   "node": "20.20.0",
   "next": "15.5.23",
   "newIndexableCanonicals": 9,
-  "status": "local-runtime-validated-not-deployed"
+  "status": "scope-completed-local-runtime-validated-not-deployed",
+  "scopeAudit": "scope-audit.md",
+  "newIndexableFromCompletion": 0
 }

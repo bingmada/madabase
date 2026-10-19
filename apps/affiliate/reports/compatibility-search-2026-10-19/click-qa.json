@@ -2,6 +2,7 @@
   "passed": true,
   "rows": [
     {
+      "productSlug": "thinkcentre-m720q-tiny-b0b14ftvtv",
       "site": "homeoffice",
       "merchant": "Amazon US",
       "status": 200,
@@ -13,6 +14,7 @@
       }
     },
     {
+      "productSlug": "thinkcentre-m720q-tiny-b0b14ftvtv",
       "site": "network",
       "merchant": "Amazon US",
       "status": 400,
@@ -22,6 +24,71 @@
       }
     },
     {
+      "productSlug": "thinkcentre-m720q-tiny-b0b14ftvtv",
+      "site": "homeoffice",
+      "merchant": "eBay",
+      "status": 400,
+      "body": {
+        "ok": false,
+        "error": "invalid_click_event"
+      }
+    },
+    {
+      "productSlug": "kingston-kcp426sd8-16-b07d2dz42b",
+      "site": "homeoffice",
+      "merchant": "Amazon US",
+      "status": 200,
+      "body": {
+        "ok": true,
+        "persisted": false,
+        "reason": "qa_visit",
+        "validated": true
+      }
+    },
+    {
+      "productSlug": "kingston-kcp426sd8-16-b07d2dz42b",
+      "site": "network",
+      "merchant": "Amazon US",
+      "status": 400,
+      "body": {
+        "ok": false,
+        "error": "invalid_click_event"
+      }
+    },
+    {
+      "productSlug": "kingston-kcp426sd8-16-b07d2dz42b",
+      "site": "homeoffice",
+      "merchant": "eBay",
+      "status": 400,
+      "body": {
+        "ok": false,
+        "error": "invalid_click_event"
+      }
+    },
+    {
+      "productSlug": "crucial-mx500-1tb-b078211kbb",
+      "site": "homeoffice",
+      "merchant": "Amazon US",
+      "status": 200,
+      "body": {
+        "ok": true,
+        "persisted": false,
+        "reason": "qa_visit",
+        "validated": true
+      }
+    },
+    {
+      "productSlug": "crucial-mx500-1tb-b078211kbb",
+      "site": "network",
+      "merchant": "Amazon US",
+      "status": 400,
+      "body": {
+        "ok": false,
+        "error": "invalid_click_event"
+      }
+    },
+    {
+      "productSlug": "crucial-mx500-1tb-b078211kbb",
       "site": "homeoffice",
       "merchant": "eBay",
       "status": 400,

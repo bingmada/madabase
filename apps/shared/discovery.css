@@ -42,3 +42,19 @@
 .discovery-page summary { cursor: pointer; font-weight: 800; }
 .discovery-page :focus-visible, .compat-panel :focus-visible, .discovery-search :focus-visible { outline: 3px solid #b26e13; outline-offset: 3px; }
 @media (max-width: 640px) { .discovery-search-compact { grid-template-columns: 1fr; gap: .4rem; } .discovery-search-compact .discovery-search-label { font-size: .78rem; } .discovery-results, .discovery-grid, .compat-form { grid-template-columns: 1fr; } .compat-panel { padding: 1rem; } .discovery-page { padding-top: 2rem; } .discovery-card { padding: 1rem; } }
+
+.task-navigation { margin-top: .6rem; gap: .4rem; }
+.task-navigation a { padding: .35rem .65rem; font-size: .8rem; }
+.category-browser-results { margin-top: 1rem; line-height: 1.7; }
+.category-browser-results li { margin: .6rem 0; }
+.guide-toc { border: 1px solid #cedce1; padding: 1rem; border-radius: 8px; }
+.guide-toc summary { cursor: pointer; font-weight: 800; }
+.guide-toc ul { list-style: disc; padding: .7rem 1.2rem; }
+.guide-toc li { padding: .25rem 0; }
+.guide-toc a { text-decoration: underline; }
+.prose-lite > section { scroll-margin-top: 100px; }
+
+.parts-budget { margin-top: 1.5rem; }
+.parts-budget td:last-child { min-width: 180px; }
+.parts-budget input[type=number], .parts-budget select { width: 100%; max-width: 200px; border: 1px solid #aebfc5; background: #fff; padding: .5rem; border-radius: 5px; }
+.parts-budget label { display: block; margin: .6rem 0; }

@@ -1,0 +1,52 @@
+import assert from "node:assert/strict";
+import { loadAffiliateTypescript } from "./lib/load-affiliate-typescript.mjs";
+const { compareDocks, dockParts, networkDecision } = loadAffiliateTypescript("../../lib/setup-decisions.ts");
+const { checkDock, checkArm, planMiniPc } = loadAffiliateTypescript("../../lib/compatibility-engine.ts");
+const { miniPcParts, costSummary } = loadAffiliateTypescript("../../lib/upgrade-parts.ts");
+const { activeComponentOffers, upgradeComponentOffers, componentAffiliateOffer } = loadAffiliateTypescript("../../lib/upgrade-offers.ts");
+const { isPublishedCommerceClick } = loadAffiliateTypescript("../../lib/commerce-inventory.ts");
+const { compatibilitySources } = loadAffiliateTypescript("../../lib/compatibility-data.ts");
+const { entryTopic } = loadAffiliateTypescript("../../lib/discovery-topics.ts");
+const d = {mac:"m4-air",dock:"ts4",screens:2,lid:"open",mode:"4k60",input:"hdmi",software:"no",workload:"office",powerWatts:67,clamshellReady:"unknown"};
+const a = {arm:"lx",kg:4.48,mm:25,vesa:"100x100",construction:"approved",curved:"flat",clearance:"yes",ports:"yes",travel:"yes"};
+const p = {model:"m720q",task:"sata",pcie:"no",hasKit:"yes",ramGb:0};
+const n = {pc:2.5,adapter:2.5,switchRate:2.5,nas:2.5,devices:4,ports:5,uplinks:1,path:"same-switch",routerLan:1,routerWan:1,internet:1,target:2.5,cable:"yes"};
+const cases = [];
+function task(question, expected, run) { run(); cases.push({question,expected,passed:true}); }
+task("M1 Air, two native displays, no software: can any listed native dock solve it?","Both native docks reject; software dock also rejects when software is refused",()=>assert.ok(compareDocks({...d,mac:"m1-air"},"no").candidates.every((x)=>x.result.status==="incompatible")));
+task("M1 Air office displays with software permitted: what else must be bought?","Conditional DisplayLink route includes missing charger and two video leads",()=>{assert.equal(checkDock({...d,mac:"m1-air",dock:"displaylink",software:"yes"}).status,"conditional");assert.match(dockParts({...d,dock:"displaylink"}).find(x=>x.id==="power").name,/not included/);});
+task("My M4 setup already runs two screens: do I need another dock?","Keep current working equipment; show all three model verdicts",()=>{const x=compareDocks(d,"yes");assert.match(x.noBuy,/Keep your current/);assert.equal(x.candidates.length,3);assert.match(dockParts(d).find(x=>x.id==="screen-one").check,/DisplayPort-to-HDMI/);});
+task("M3 closed lid, software/peripheral conditions unknown: can I order now?","Unknown until clamshell requirements confirmed",()=>assert.equal(checkDock({...d,mac:"m3",lid:"closed"}).status,"unknown"));
+task("U2723QE-class flat panel on LX with approved desktop: what installation pieces remain?","Conditional physical fit plus attachment, VESA screw and cable-travel list",()=>{const r=checkArm(a);assert.equal(r.status,"conditional");assert.equal(r.parts.length,4);});
+task("Can a 4.48kg panel use the heavier HX?","Reject below minimum spring load",()=>assert.equal(checkArm({...a,arm:"hx"}).status,"incompatible"));
+task("LX desk plus plates total 61mm: do plates make it fit?","Reject thickness; no reinforcement override",()=>assert.equal(checkArm({...a,mm:61}).status,"incompatible"));
+task("Curved monitor or blocked connectors: do good weight numbers suffice?","Unknown; ask for pivot or port clearance",()=>{assert.equal(checkArm({...a,curved:"curved"}).status,"unknown");assert.equal(checkArm({...a,ports:"unknown"}).status,"unknown");});
+task("M720q with PCIe NIC: can I add internal SATA?","Conflict; revise the assembly before buying",()=>assert.equal(planMiniPc({...p,pcie:"yes"}).status,"incompatible"));
+task("M920q SATA upgrade without the carrier/cable: is a bare SSD a complete kit?","Unknown; full list includes bracket, cable, retention and power",()=>{const r=planMiniPc({...p,model:"m920q",hasKit:"unknown"});assert.equal(r.status,"unknown");for(const id of ["carrier","sata-cable","hardware","power"])assert.ok(r.parts.some(x=>x.id===id));});
+task("M720q has one 16GB module, target 32GB: how many modules?","One more 16GB; retain the matching installed module",()=>assert.match(miniPcParts("m720q","ram",32,[16,0])[0].quantity,/1 × 16GB/));
+task("M920q has 2×8GB, target 16GB: should I buy RAM?","No purchase needed",()=>{const r=planMiniPc({...p,model:"m920q",task:"ram",ramGb:16,modules:[8,8]});assert.match(r.noBuy,/meets/);assert.match(r.parts[0].quantity,/^0/);});
+task("Second NVMe in M720q versus M920x: same upgrade?","M720q rejects; M920x includes retaining clip check",()=>{assert.equal(planMiniPc({...p,task:"second-nvme"}).status,"incompatible");const r=planMiniPc({...p,model:"m920x",task:"second-nvme"});assert.equal(r.status,"conditional");assert.match(r.parts.find(x=>x.id==="retainer").check,/locking clip/);});
+task("64GB is required: does the historical 32GB table validate it?","Unknown; ask for exact modules and separate evidence",()=>assert.equal(planMiniPc({...p,task:"ram",ramGb:64,modules:[16,16]}).status,"unknown"));
+task("Same-switch 2.5GbE NAS and PC, 1Gbps WAN: must I replace the router?","2.5Gbps local link target passes; keep equipment",()=>{const r=networkDecision(n);assert.equal(r.status,"supported");assert.match(r.title,/2.5Gbps/);assert.ok(r.noBuy);});
+task("NAS traffic crosses a 1GbE router LAN port: does a 2.5GbE switch fix it?","Conflict; router LAN remains in path",()=>{const r=networkDecision({...n,path:"router-transit"});assert.equal(r.status,"incompatible");assert.match(r.title,/^1Gbps/);});
+task("2.5GbE LAN with 1GbE router WAN: can I get 2.5Gbps internet?","WAN/plan limit; NAS rate is irrelevant to this flow",()=>{const r=networkDecision({...n,path:"internet"});assert.equal(r.status,"incompatible");assert.match(r.reasons.join(" "),/WAN/);});
+task("Five devices plus one uplink on a five-port switch: does it fit?","Reject one missing port",()=>{const r=networkDecision({...n,devices:5});assert.equal(r.status,"incompatible");assert.match(r.reasons.join(" "),/1 missing/);});
+task("Dedicated 2.5GbE PC-NAS cable with an old 1GbE switch elsewhere: buy a switch?","Direct flow passes; no switch needed",()=>{const r=networkDecision({...n,path:"direct",switchRate:1});assert.equal(r.status,"supported");assert.match(r.parts.find(x=>x.id==="switch").quantity,/^0/);});
+task("All proposed devices say 2.5GbE, but cabling has not been inspected: is it supported?","Unknown until actual cable/link check",()=>assert.equal(networkDecision({...n,cable:"unknown"}).status,"unknown"));
+assert.equal(cases.length,20);
+assert.equal(planMiniPc({...p,task:"ram",ramGb:32,modules:[-1,0]}).status,"unknown");
+assert.equal(planMiniPc({...p,task:"ram",ramGb:12,modules:[4,4]}).status,"unknown");
+assert.equal(costSummary([{owned:false,cost:""},{owned:true,cost:"99"}]).total,null);
+assert.equal(costSummary([{owned:false,cost:"12.34"},{owned:true,cost:"99"}]).total,12.34);
+assert.equal(costSummary([{owned:false,cost:"-1"}]).total,null);
+assert.equal(entryTopic({site:"homeoffice",title:"ThinkCentre M720q RAM"}),"tiny");
+assert.equal(entryTopic({site:"homeoffice",title:"TS4 Thunderbolt dock"}),"displays");
+assert.equal(entryTopic({site:"network",title:"NAS Ethernet bottleneck"}),"nas");
+for(const model of ["m720q","m920q","m920x"])for(const task of ["ram","sata","nvme","second-nvme"]) for(const part of miniPcParts(model,task,32,[0,0])) assert.ok(compatibilitySources.some(x=>x.id===part.source),`No evidence for ${model}:${part.id}`);
+for(const offer of upgradeComponentOffers) {
+  assert.equal(activeComponentOffers(Date.parse(offer.expiresAt)).some(x=>x.asin===offer.asin),false);
+  const url = new URL(componentAffiliateOffer(offer).url);
+  assert.equal(url.pathname,`/dp/${offer.asin}`);assert.equal(url.searchParams.get("tag"),"madaoffice-20");
+  if(activeComponentOffers().some(x=>x.asin===offer.asin)){assert.equal(isPublishedCommerceClick("homeoffice",offer.slug,"Amazon US"),true);assert.equal(isPublishedCommerceClick("network",offer.slug,"Amazon US"),false);}
+}
+console.log(JSON.stringify({passed:true,userDecisionCases:cases,partsEvidence:"All required rows resolve to a named source",componentOffers:upgradeComponentOffers.map(x=>({asin:x.asin,exactIdentityAndExpiry:true})),costUnknownsAndTaskClassification:true},null,2));

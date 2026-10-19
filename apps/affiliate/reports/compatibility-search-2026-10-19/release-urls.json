@@ -47,5 +47,14 @@
     "https://network.madabase.com/guides/2-5gbe-switch-port-budget-for-nas-mesh",
     "https://network.madabase.com/guides/5-port-vs-8-port-2-5gbe-switch",
     "https://network.madabase.com/guides/when-to-upgrade-to-2-5gbe-switch"
-  ]
+  ],
+  "sharedDiscoveryChanges": {
+    "taskNavigation": [
+      "homeoffice",
+      "network"
+    ],
+    "categoryInPageFilters": "All non-Costume category templates; Costume retains its specialized catalog",
+    "guideSectionToc": "Generic non-Style guide template; Homeoffice/Network next steps",
+    "newIndexableFromCompletion": 0
+  }
 }

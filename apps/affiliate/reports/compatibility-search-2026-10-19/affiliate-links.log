@@ -92,10 +92,12 @@ FORMAT_PASS	homeoffice	family-standing-desk-balance-boards	B06VSTLM7Z	null
 FORMAT_PASS	homeoffice	hon-ignition-2-0-chair	B06Y3PGPR2	null
 FORMAT_PASS	homeoffice	family-ergonomic-kneeling-chairs	B073ZN7B52	null
 FORMAT_PASS	homeoffice	family-office-lumbar-cushions	B074C9F45S	null
+FORMAT_PASS	homeoffice	compatibility/mini-pcs	B078211KBB	null
 FORMAT_PASS	homeoffice	family-standing-desk-converters	B0784HWPN6	null
 FORMAT_PASS	homeoffice	family-standing-desk-anti-fatigue-mats	B0797Q5HL7	null
 FORMAT_PASS	homeoffice	family-usb-document-cameras	B079DLTG9F	null
 FORMAT_PASS	homeoffice	family-under-desk-foot-hammocks	B07C3M678F	null
+FORMAT_PASS	homeoffice	compatibility/mini-pcs	B07D2DZ42B	null
 FORMAT_PASS	homeoffice	family-wireless-number-pads	B07RZZMV62	null
 FORMAT_PASS	homeoffice	family-floor-cable-covers	B082FPMR14	null
 FORMAT_PASS	homeoffice	family-office-chair-mats	B0893BD69B	null
@@ -502,5 +504,5 @@ FORMAT_PASS	style	betsey-johnson-pink-sugar-skull-earrings	B0FZYCRMDY	null
 FORMAT_PASS	style	loungefly-tigger-mini-backpack	B0G4SK2QNH	null
 FORMAT_PASS	style	loungefly-minnie-rock-the-dots-backpack	B0GGTMMD1W	null
 FORMAT_PASS	style	twenty-four-fashion-scarf-set	B0GX67VZQ1	null
-URL structure/tag checks: 503/503 passed, 0 failed. Live product identity and availability: 0 verified, 503 not checked.
+URL structure/tag checks: 505/505 passed, 0 failed. Live product identity and availability: 0 verified, 505 not checked.
 Wrote /Users/liyingda/Documents/project/self/madabase/apps/affiliate/reports/compatibility-search-2026-10-19/affiliate-links.json

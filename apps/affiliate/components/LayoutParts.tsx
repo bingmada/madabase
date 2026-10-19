@@ -5,6 +5,7 @@ import { buyerFacingSummary } from "@/lib/conversion-copy";
 import type { SiteDecisionModule } from "@/lib/site-decision-modules";
 import type { SiteConfig } from "@/lib/sites";
 import type { Product, Roundup } from "@/lib/types";
+import { TaskNavigation } from "./TaskNavigation";
 import { SearchForm } from "../../shared/SearchControls";
 
 export function SiteChrome({ site, children }: { site: SiteConfig; children: React.ReactNode }) {
@@ -86,7 +87,7 @@ export function SiteChrome({ site, children }: { site: SiteConfig; children: Rea
           </details>
         </div>
       </header>
-      <div className="discovery-strip"><div className="shell"><SearchForm compact /></div></div>
+      <div className="discovery-strip"><div className="shell"><SearchForm compact /><TaskNavigation site={site.key} /></div></div>
       {children}
       <footer className="border-t border-[var(--border)] bg-white">
         <div className="shell py-8 text-sm leading-6 text-[var(--muted)]">

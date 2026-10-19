@@ -1,0 +1,107 @@
+{
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "pages": [
+    {
+      "host": "homeoffice.localhost",
+      "overflow": false,
+      "path": "/",
+      "scrollWidth": 375,
+      "width": 390
+    },
+    {
+      "host": "network.localhost",
+      "overflow": false,
+      "path": "/",
+      "scrollWidth": 375,
+      "width": 390
+    },
+    {
+      "host": "homeoffice.localhost",
+      "overflow": false,
+      "path": "/compatibility/docks",
+      "scrollWidth": 375,
+      "width": 390
+    },
+    {
+      "host": "homeoffice.localhost",
+      "overflow": false,
+      "path": "/compatibility/mini-pcs",
+      "scrollWidth": 375,
+      "width": 390
+    },
+    {
+      "host": "network.localhost",
+      "overflow": false,
+      "path": "/compatibility/ethernet",
+      "scrollWidth": 375,
+      "width": 390
+    },
+    {
+      "host": "homeoffice.localhost",
+      "overflow": false,
+      "path": "/guides/thinkcentre-m720q-upgrade-compatibility-guide",
+      "scrollWidth": 375,
+      "width": 390
+    },
+    {
+      "host": "homeoffice.localhost",
+      "overflow": false,
+      "path": "/guides/thinkcentre-m920q-upgrade-compatibility-guide",
+      "scrollWidth": 375,
+      "width": 390
+    },
+    {
+      "host": "homeoffice.localhost",
+      "overflow": false,
+      "path": "/guides/thinkcentre-m920x-upgrade-compatibility-guide",
+      "scrollWidth": 375,
+      "width": 390
+    },
+    {
+      "host": "homeoffice.localhost",
+      "overflow": false,
+      "path": "/categories/desks",
+      "scrollWidth": 375,
+      "width": 390
+    },
+    {
+      "host": "network.localhost",
+      "overflow": false,
+      "path": "/categories/wired",
+      "scrollWidth": 375,
+      "width": 390
+    },
+    {
+      "host": "style.localhost",
+      "overflow": false,
+      "path": "/categories/socks",
+      "scrollWidth": 375,
+      "width": 390
+    },
+    {
+      "host": "homeoffice.localhost",
+      "overflow": false,
+      "path": "/guides/macbook-dual-monitor-dock-chip-compatibility-guide",
+      "scrollWidth": 375,
+      "width": 390
+    }
+  ],
+  "armWithResult": {
+    "overflow": false,
+    "missingPorts": "unknown",
+    "confirmedPorts": "conditional"
+  },
+  "flows": {
+    "categoryFilter": true,
+    "tinyQuantity": true,
+    "tinyNoBuy": true,
+    "noBuyPurchaseButtons": 0,
+    "costTotal": true,
+    "oldResultCleared": true,
+    "dockComparison": true,
+    "networkPathSeparation": true
+  }
+}

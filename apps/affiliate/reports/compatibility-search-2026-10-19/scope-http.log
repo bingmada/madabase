@@ -1,0 +1,32 @@
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+{
+  "checkedAt": "2026-10-19T09:31:43.228421+00:00",
+  "mode": "local",
+  "baselineUrls": 296,
+  "protectedBingAiUrls": 181,
+  "historicalCohortTargets": 31,
+  "newCanonicals": 9,
+  "searchChecks": 9,
+  "wrongHostChecks": 3,
+  "total": 317,
+  "failures": [],
+  "environmentDependent": [
+    {
+      "url": "https://costumes.madabase.com/products/woochie-fx-dark-lord-foam-latex-prosthetic--qtrtcu",
+      "reason": "Costume database unavailable in isolated local runtime"
+    }
+  ]
+}

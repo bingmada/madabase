@@ -50,7 +50,7 @@
     "seoMetadataRelease20261003": "Read this key and apps/affiliate/reports/seo-release-2026-10-02/validation.json first. Affiliate 6dd60db is LIVE since Oct3 11:24; Main restored after approved 9-second maintenance. Older awaiting-owner/unpublished claims are historical. All 109 sampled URLs including all priority53 pass raw head validation under three UAs; Google live reinspection underway; no ranking recovery claimed.",
     "seoSpamRecovery20261006": "Read this key and apps/affiliate/reports/seo-recovery-2026-10-06/README.md first. The final batch covers all seven active affiliate sites: Network, Smarthome, Homeoffice, Baby, Pet, Style and Costume. It retains 17 existing canonicals, permanently redirects 55 overlapping base URLs, adds zero routes and supersedes the earlier two-site-only package. Local production HTTP validation passed 55 base redirects, 220 regional redirects, 17 base canonicals, 64 regional canonicals and seven sitemaps; all 19 governed categories also passed. New publication and bulk Request Indexing remain frozen; use the exact October 13, October 20 and November 5 gates.",
     "portfolioStrategyReset20261008": "Read portfolioStrategyReset20261008, apps/affiliate/config/portfolio-recovery-2026-10-08.json and apps/affiliate/reports/portfolio-recovery-2026-10-08/deployment.json first. The seven-site workflow is deployed and publicly verified at bfb8689e4a63d5368036ef6e829fe492b840d919 after a production-only Costume evidence-boundary repair. Six Amazon sites have 1,147 of 1,147 effective public passes after bounded retry; Costume has 108 of 108 effective public passes after the repaired canonical completed normal SJC edge revalidation. Owner testing remains unavailable, so hands-on claims and Review structured data stay blocked. Keep the zero-new-URL freeze and the October 13, October 20 and November 5 gates.",
-    "compatibilitySearch20261019": "Read compatibilitySearch20261019 and its README first. Search/compatibility/Tiny/Amazon implementation and local production validation are complete. This batch has NOT deployed; its controlled maintenance authorization is pending. Do not confuse this state with the previous commerce deployment."
+    "compatibilitySearch20261019": "Read compatibilitySearch20261019 and scope-audit.md. Owner found missing scope; first version superseded with task/category/TOC discovery, complete parts/costs, comparison/no-buy, router paths and20 decision cases. Replacement locally validated, NOT DEPLOYED; maintenance authorization not received. No formal service mutation."
   },
   "portfolioStrategyReset20261008": {
     "status": "production_deployed_and_publicly_verified",
@@ -5869,7 +5869,7 @@
     ]
   },
   "compatibilitySearch20261019": {
-    "status": "local-production-packages-validated-awaiting-maintenance-authorization",
+    "status": "scope-audited-completed-locally-not-deployed",
     "authorization": "Owner requested implementing search, navigation and competitor-benchmark compatibility/upgrades; subsequently authorized signed-in Amazon/EPN checks and clarified Amazon is acceptable without preferring eBay.",
     "report": "apps/affiliate/reports/compatibility-search-2026-10-19/README.md",
     "urlLedger": "apps/affiliate/reports/compatibility-search-2026-10-19/release-urls.json",
@@ -5877,8 +5877,8 @@
     "enhancedExistingGuides": 9,
     "searchEntries": 1130,
     "searchNoindex": true,
-    "qualityScope": "Homeoffice dock, monitor-arm and three ThinkCentre Tiny models; Network Ethernet/NAS path. Versioned official-spec data; conditional/conflict/unknown outcomes. No hands-on claims, measured performance, exact unverified FRU or new domain.",
-    "merchantChoice": "Verified exact Amazon complete-system ASIN B0B14FTVTV uses madaoffice-20. EBay optional; no public EBay CTA activated. Private account checks remain in a git-ignored local record.",
+    "qualityScope": "Original nine new canonicals only; zero extra indexable URLs for scope completion. Model- and field-linked original/vendor specs; supported documented checks, conditional, conflict and unknown. No hands-on or ranking guarantee.",
+    "merchantChoice": "Complete M720q B0B14FTVTV plus condition-gated components: Kingston KCP426SD8/16 one16GB B07D2DZ42B and Crucial MX500 CT1000MX500SSD1 1TB SATA B078211KBB. All madaoffice-20 with expiry and same server click validator. No eBay or unverified NVMe commissioned button.",
     "validation": {
       "productionBuilds": [
         "main",
@@ -5892,12 +5892,34 @@
       "httpPassed": 316,
       "databaseDependentPending": 1,
       "mobilePagesPassed": 17,
-      "linkFormatPassed": 503,
-      "deploymentFailureScenariosPassed": 8
+      "linkFormatPassed": 505,
+      "deploymentFailureScenariosPassed": 8,
+      "independentUserDecisionCases": 20,
+      "componentOffers": 2,
+      "clickQaCases": 9,
+      "scopeMobilePagesOrResults": 13,
+      "productionDatabaseTestWrites": 0
     },
     "deployment": "Not activated. Keep commerce-20261019-5de949a2646289d696cbf83af465b3ba744d4b65 and Main seo-20260925-8055b15 as actual production until recorded cutover. No server service mutation has been made in this task.",
     "capacity": "Read-only sample: 371.36 MiB available; Main 40.14 MiB, Affiliate 359.64 MiB, Test 56.09 MiB anonymous; two-site forecast 771.13 MiB, with Test 827.22 MiB. Preserve 768 MiB forecast and 704 MiB actual gates before each candidate start; a failed gate rolls back.",
     "maintenanceAuthorization": "This release-specific pause of Test is not yet authorized; earlier Main/Test authorization applied to the previous commerce release.",
-    "reviewPolicy": "Start exact 7/14/30-day dates at actual activation; review every new/enhanced canonical. Preserve October 27, November 5 and November 12 gates for previous cohorts. No new automation or external distribution."
+    "reviewPolicy": "Start exact 7/14/30-day dates at actual activation; review every new/enhanced canonical. Preserve October 27, November 5 and November 12 gates for previous cohorts. No new automation or external distribution.",
+    "scopeAudit": "apps/affiliate/reports/compatibility-search-2026-10-19/scope-audit.md",
+    "previousDeliveryCorrection": "7585578 was a working first version, not the full agreed acceptance scope. Owner challenged missing work and did not authorize maintenance or deployment. The replacement completes task/category/TOC discovery, comparison, parts/costs, no-buy outcomes, real router paths and separate 20 user decisions.",
+    "scopeCompletion": [
+      "Homeoffice six task topics and Network three; category in-page query/type/task filter; generic guide section TOC and relevant next steps",
+      "Three dock comparison under identical requirements, correctly directed video cables, charger and existing-route no-buy result",
+      "Monitor-port obstruction and full-travel clearance gates plus four installation parts groups",
+      "Three Tiny model comparison and shared complete task parts references, module-count calculation, keep-existing memory conclusion, source-specific manuals and exact FRU lookup steps",
+      "Local user-entered complete cost vs known subtotal; no invented prices",
+      "Network same-switch/router-transit/direct/internet paths, on-path LAN/WAN rates, port budget and full slower-link list",
+      "Exact conditional Amazon RAM and SATA component paths, separated from complete-system alternative"
+    ],
+    "reviewableLimits": [
+      "No physical tests or manufacturer-level compatibility guarantee",
+      "Machine-specific carrier/cable/riser FRUs stay unresolved until exact unit evidence; no universal kit invented",
+      "HP/Dell model expansion was a later conditional phase, not the three-model first scope",
+      "All production checks and performance/7-14-30 observations remain pending deployment"
+    ]
   }
 }

@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { SearchForm } from "../../../../shared/SearchControls";
+import { CategoryBrowser } from "@/components/CategoryBrowser";
+import { siteSearchIndex } from "@/lib/site-search";
 import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/JsonLd";
 import { AffiliateButtonGroup } from "@/components/AffiliateButton";
@@ -268,6 +269,7 @@ export default async function CategoryPage({
           guides={guides}
         />
         <div className="style-shell pb-12">
+          <CategoryBrowser site={site.key} entries={siteSearchIndex(site.key).filter((entry) => entry.category === slug)} />
           <BaseMarketEditionLinks site={site} basePath={`/categories/${slug}`} />
         </div>
       </>
@@ -281,7 +283,7 @@ export default async function CategoryPage({
       <div className="shell">
         <p className="eyebrow">Category</p>
         <h1 className="mt-3 text-4xl font-black">{category.name}</h1>
-        {commerceProduct ? (
+        {commerceProduct && site.key !== "homeoffice" && site.key !== "network" ? (
           <section className="mt-4 flex flex-col gap-3 rounded-md border border-[var(--border)] bg-white p-4 sm:mt-5 sm:flex-row sm:items-center sm:justify-between sm:p-5" aria-label="First-screen category retailer starting point" data-first-viewport-commerce="true">
             <div>
               <p className="eyebrow">Current retailer option</p>
@@ -294,7 +296,7 @@ export default async function CategoryPage({
           </section>
         ) : null}
         <p className="mt-4 max-w-2xl text-lg leading-8 text-[var(--muted)]">{category.description}</p>
-        <SearchForm><input type="hidden" name="category" value={category.slug} /><label>Content type <select name="kind" defaultValue=""><option value="">All content in {category.name}</option><option value="guide">Guides</option><option value="comparison">Comparisons</option><option value="product">Product research</option></select></label></SearchForm>
+        <CategoryBrowser site={site.key} entries={siteSearchIndex(site.key).filter((entry) => entry.category === slug)} />
         <BaseMarketEditionLinks site={site} basePath={`/categories/${slug}`} />
         <section className="mt-8 rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-5">
           <h2 className="text-xl font-bold">How to think about {category.name.toLowerCase()}</h2>

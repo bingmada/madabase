@@ -1,5 +1,6 @@
+import { miniPcParts, type PlanPart } from "./upgrade-parts";
 import { armProfiles, dockProfiles, macProfiles, miniPcProfiles } from "./compatibility-data";
-export type CompatibilityResult = { status: "conditional" | "incompatible" | "unknown"; title: string; reasons: string[]; checklist: string[]; sources: string[]; href?: string };
+export type CompatibilityResult = { status: "supported" | "conditional" | "incompatible" | "unknown"; title: string; reasons: string[]; checklist: string[]; sources: string[]; href?: string; parts?: PlanPart[]; noBuy?: string };
 export type DockInput = { mac: string; dock: string; screens: number; lid: string; mode: string; input: string; software: string; workload: string; powerWatts: number; clamshellReady: string };
 export function checkDock(input: DockInput): CompatibilityResult {
   const mac = macProfiles.find((item) => item.id === input.mac);
@@ -30,7 +31,7 @@ export function checkDock(input: DockInput): CompatibilityResult {
   if (result.status === "unknown") result.title = "More evidence is needed for this combination";
   return result;
 }
-export function checkArm(input: { arm: string; kg: number; mm: number; vesa: string; construction: string; curved: string; clearance: string }): CompatibilityResult {
+export function checkArm(input: { arm: string; kg: number; mm: number; vesa: string; construction: string; curved: string; clearance: string; ports?: string; travel?: string }): CompatibilityResult {
   const arm = armProfiles.find((item) => item.id === input.arm);
   if (!arm || !Number.isFinite(input.kg) || !Number.isFinite(input.mm) || input.kg <= 0 || input.mm <= 0) return { status: "unknown", title: "Measure the screen and desk first", reasons: ["Enter positive weight without stand, including attached accessories, and the combined attachment thickness."], checklist: [], sources: [] };
   const reasons: string[] = []; let status: CompatibilityResult["status"] = "conditional";
@@ -41,10 +42,19 @@ export function checkArm(input: { arm: string; kg: number; mm: number; vesa: str
     if (status !== "incompatible") status = "unknown";
     reasons.push("Numerical fit does not verify desk strength, underside clearance or curved-screen torque. Obtain the desk maker's attachment approval and the correct pivot/accessory confirmation. Glass, hollow tops and deep curves cannot pass from dimensions alone.");
   }
+  if ((input.ports && input.ports !== "yes") || (input.travel && input.travel !== "yes")) {
+    if (status !== "incompatible") status = "unknown";
+    reasons.push("Check whether the VESA plate, screw heads or adapters obstruct the monitor's ports, and confirm cable slack and wall clearance throughout the arm/desk travel before ordering.");
+  }
   if (!reasons.length) reasons.push("Weight, VESA and this clamp's thickness range pass the entered values. Desk-maker approval and measured flat underside clearance were confirmed by you; this is not an installation safety certification.");
-  return { status, title: status === "incompatible" ? "A documented limit fails" : status === "unknown" ? "Physical fit still needs confirmation" : "The entered specification checks pass conditionally", reasons, checklist: ["Include reinforcement plates in combined clamp thickness; plates do not make a hollow or glass desktop approved for clamping.", "Check recessed VESA holes, screw length and cable slack at full travel. Start with the arm retracted before adjusting tension.", "For HX deep-curved screens, confirm the specific tilt pivot with Ergotron. Matching kilograms alone does not establish tilt stability."], sources: [arm.source, `${arm.id}-clamp`], href: arm.href };
+  return { status, title: status === "incompatible" ? "A documented limit fails" : status === "unknown" ? "Physical fit still needs confirmation" : "The entered specification checks pass conditionally", reasons, checklist: ["Include reinforcement plates in combined clamp thickness; plates do not make a hollow or glass desktop approved for clamping.", "Check recessed VESA holes, screw length and cable slack at full travel. Start with the arm retracted before adjusting tension.", "For HX deep-curved screens, confirm the specific tilt pivot with Ergotron. Matching kilograms alone does not establish tilt stability."], parts: [
+    {id:"arm",name:arm.name,quantity:"1; retain an existing matching arm",check:arm.sku + "; confirm the exact arm, pivot and supplied attachment rather than a family name.",source:arm.source},
+    {id:"clamp",name:"Approved attachment / standard clamp",quantity:"1 complete assembly",check:"Match the exact drawing, desk approval and measured thickness; include plate thickness only when required and approved.",source:`${arm.id}-clamp`},
+    {id:"vesa",name:"VESA plate, correct screws and any approved spacers",quantity:"1 set",check:"Use the monitor maker's thread, length and recess specification; account for accessory weight and port obstruction. Never force an unverified screw or adapter.",source:arm.source},
+    {id:"slack",name:"Cable slack and unobstructed travel",quantity:"One route per cable",check:"Reuse cables if they reach through every arm and desk position without tension. A reinforcement plate cannot fix a weak desktop or a blocked monitor connector.",source:`${arm.id}-clamp`},
+  ], sources: [arm.source, `${arm.id}-clamp`], href: arm.href };
 }
-export function planMiniPc(input: { model: string; task: string; pcie: string; hasKit: string; ramGb: number }): CompatibilityResult {
+export function planMiniPc(input: { model: string; task: string; pcie: string; hasKit: string; ramGb: number; modules?: readonly number[] }): CompatibilityResult {
   const model = miniPcProfiles.find((item) => item.id === input.model);
   if (!model) return { status: "unknown", title: "Choose the exact Tiny model", reasons: ["Tiny, SFF and Tower use different boards and memory layouts."], checklist: [], sources: [] };
   let status: CompatibilityResult["status"] = "conditional";
@@ -54,15 +64,17 @@ export function planMiniPc(input: { model: string; task: string; pcie: string; h
     if (input.pcie === "unknown") { status = "unknown"; reasons.push("Inspect the machine for a PCIe card before planning the 2.5-inch bay."); }
     checklist.push("A suitable 2.5-inch SATA drive, the correct model-specific drive carrier, SATA cable, board connector and retaining hardware. Confirm all are in the seller's actual photos.");
     if (input.hasKit !== "yes") { if (status !== "incompatible") status = "unknown"; reasons.push("The carrier/cable kit is not confirmed. A compatible drive alone is not a complete upgrade; exact FRU remains unverified until matched to the machine type."); }
-  } else if (input.task === "second-nvme") {
-    if (model.nvmeSlots < 2) { status = "incompatible"; reasons.push("This profile has one storage M.2 socket. The WLAN socket and an unpopulated footprint do not provide a second supported NVMe position."); }
+  } else if (input.task === "nvme" || input.task === "second-nvme") {
+    if (input.task === "second-nvme" && model.nvmeSlots < 2) { status = "incompatible"; reasons.push("This profile has one storage M.2 socket. The WLAN socket and an unpopulated footprint do not provide a second supported NVMe position."); }
     else checklist.push("Check which storage socket is already occupied, the accepted 2242/2280 length, retaining clip/screw and the actual thermal clearance. A photographed board is required for a used system.");
   } else if (input.task === "ram") {
     checklist.push("Record both installed SO-DIMMs and the required total capacity. Use DDR4 SO-DIMMs, not full-size desktop DIMMs; confirm CPU speed and module compatibility.");
+    if (input.modules && (input.modules.length !== 2 || input.modules.some((n) => ![0,4,8,16].includes(n)))) { status = "unknown"; reasons.push("Inspect and record both current memory slots first. The required module quantity and a mixed-module purchase cannot be resolved from total RAM alone."); }
+    if (![8,16,32].includes(input.ramGb)) { status = "unknown"; reasons.push("The quantity planner covers 8GB, 16GB and 32GB totals. Other targets need a separately verified module layout; no automatic component offer is shown."); }
     if (!Number.isFinite(input.ramGb) || input.ramGb <= 0 || input.ramGb > model.validatedRamGb) { status = "unknown"; reasons.push("The cited factory validation is 32GB, not proof of an absolute hardware ceiling. A larger target needs exact modules, CPU/BIOS and separately attributed evidence; no 64GB guarantee is made here."); }
   } else { status = "unknown"; reasons.push("Choose a supported upgrade task. CPU swaps, unqualified PCIe cards and operating-system support need separate evidence."); }
   checklist.push(`Adapter check: ${model.adapters}. Verify the actual voltage, connector, wattage and configuration; do not choose an adapter only because the plug appears to fit.`, "Back up data, shut down and disconnect power before opening the machine. Follow the exact hardware maintenance manual and ESD procedure.");
-  return { status, title: status === "incompatible" ? "This upgrade route conflicts with the selected configuration" : status === "unknown" ? "Complete the missing checks before ordering" : "A documented upgrade route with parts to verify", reasons, checklist, sources: [model.id], href: `/guides/${model.guide}` };
+  return { status, title: status === "incompatible" ? "This upgrade route conflicts with the selected configuration" : status === "unknown" ? "Complete the missing checks before ordering" : "A documented upgrade route with parts to verify", reasons, checklist, sources: [model.id, `${model.id}-hmm`, `kingston-${model.id}`, "lenovo-parts"], parts: miniPcParts(model.id, input.task, input.ramGb, input.modules), noBuy: input.task === "ram" && input.modules?.length === 2 && input.ramGb > 0 && input.modules.every((n) => [0,4,8,16].includes(n)) && input.modules.reduce((a,b) => a+b,0) >= input.ramGb ? "Your existing memory capacity meets the stated target. Keep it unless you have a separately diagnosed fault; buying more RAM is unnecessary for this capacity target." : undefined, href: `/guides/${model.guide}` };
 }
 export function planEthernet(input: { pc: number; adapter: number; switchRate: number; nas: number; devices: number; ports: number; uplinks: number }) {
   const rates = [input.pc, input.adapter, input.switchRate, input.nas];

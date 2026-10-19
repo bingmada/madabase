@@ -1,7 +1,8 @@
 {
   "path": "packages/compatibility-search-20261019/discovery-inputs.tgz",
-  "bytes": 78226779,
-  "sha256": "378ea40b31003f744a63d5b0af5da7c42b348ab2412f448758f91648ca811eeb",
+  "bytes": 78256155,
+  "sha256": "5b9781e195099c70010e2dde6250eb48c4565fc35a1d34bbf51744fcfaffbfc4",
   "containsPrivateAccountRecords": false,
-  "activated": false
+  "activated": false,
+  "supersedes": "Previous first-version package; owner identified missing scope, now replaced"
 }

@@ -1,4 +1,7 @@
 import Image from "next/image";
+import { UpgradePartsReference } from "@/components/UpgradePartsReference";
+import { miniPcProfiles } from "@/lib/compatibility-data";
+import { entryTopic } from "@/lib/discovery-topics";
 import { UpgradePurchaseOption } from "@/components/UpgradePurchaseOption";
 import { CompatibilityPlanner, type PlannerTopic } from "@/components/CompatibilityPlanner";
 import { compatibilityTopicForGuide } from "@/lib/compatibility-topics";
@@ -502,9 +505,10 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
           <h2 className="mt-2 text-xl font-bold" id="guide-quick-answer">{tailoredGuide ? guide.searchQuestion : "The practical answer"}</h2>
           <p className="mt-3 leading-7 text-[var(--text)]">{directAnswer}</p>
         </section>
+        <details className="guide-toc mt-6"><summary>On this page</summary><nav aria-label="Guide contents"><ul><li><a href="#guide-quick-answer">Quick answer</a></li>{plannerTopic ? <li><a href="#compatibility-checker">Check my setup</a></li> : null}{guide.sections.map((section, index) => <li key={`${index}-${section.heading}`}><a href={`#guide-section-${index + 1}`}>{buyerFacingHeading(section.heading)}</a></li>)}</ul></nav></details>
         {plannerTopic ? <>
-          <nav className="discovery-chips" aria-label="On this page"><a href="#compatibility-checker">Check my setup</a><a href="#guide-reference-content">Read the guidance</a><Link href={`/compatibility/${plannerTopic}`}>Complete reference and sources</Link></nav>
           <CompatibilityPlanner topic={plannerTopic as PlannerTopic} />
+          <UpgradePartsReference modelId={miniPcProfiles.find((model) => model.guide === guide.slug)?.id ?? ""} />
           <UpgradePurchaseOption guide={guide.slug} />
           <div id="guide-reference-content" />
         </> : null}
@@ -600,13 +604,14 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
           </figure>
         ) : null}
         <article className="prose-lite mt-8">
-          {guide.sections.map((section) => (
-            <section key={section.heading}>
+          {guide.sections.map((section, index) => (
+            <section id={`guide-section-${index + 1}`} key={section.heading}>
               <h2>{buyerFacingHeading(section.heading)}</h2>
               <p>{buyerFacingBody(section.body)}</p>
             </section>
           ))}
         </article>
+        {site.key === "homeoffice" || site.key === "network" ? <aside className="discovery-card mt-8"><h2>Continue with your actual setup</h2><p><Link href={`/search?topic=${entryTopic({ site: site.key, title: guide.title })}`}>Browse the model references and comparisons</Link></p><p><Link href={plannerTopic ? `/compatibility/${plannerTopic}` : "/compatibility"}>Check compatibility, missing parts and sources</Link></p></aside> : null}
         {amazonFamilyProduct && amazonFamilyIdentity && amazonFamilyOffer ? (
           <section className="mt-10 rounded-md border border-[var(--border)] bg-white p-5" aria-labelledby="amazon-family-listing">
             <p className="eyebrow">Current Amazon option</p>

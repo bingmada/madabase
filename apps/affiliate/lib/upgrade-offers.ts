@@ -21,3 +21,10 @@ export function activeUpgradeOffers(now = Date.now()) {
 export function upgradeAffiliateOffer(item: typeof upgradeOfferRecords[number]): AffiliateOffer {
   return { merchant: "Amazon US", url: amazonAsinAffiliateUrl(item.site, item.asin), label: "Check this exact refurbished configuration on Amazon", priceNote: "Recheck the configuration, seller, condition, delivery and returns. No live price or stock guarantee." };
 }
+
+export const upgradeComponentOffers = [
+  {site:"homeoffice" as const,part:"memory",slug:"kingston-kcp426sd8-16-b07d2dz42b",asin:"B07D2DZ42B",name:"Kingston KCP426SD8/16 — one 16GB DDR4-2666 SO-DIMM",verifiedAt:"2026-10-19T09:20:00Z",expiresAt:"2026-10-26T09:20:00Z",limits:"One module, not a 32GB kit. The manufacturer lists this discontinued part in its model selector; seller stock is separate from manufacturing status. Confirm both installed modules, quantity, seller and warranty before ordering."},
+  {site:"homeoffice" as const,part:"drive",slug:"crucial-mx500-1tb-b078211kbb",asin:"B078211KBB",name:"Crucial MX500 CT1000MX500SSD1 — 1TB 2.5-inch SATA SSD",verifiedAt:"2026-10-19T09:20:00Z",expiresAt:"2026-10-26T09:20:00Z",limits:"Drive only; this does not include the Lenovo carrier/cable and does not resolve the PCIe space conflict. Retail drive form factor is documented; this is not an exact-drive Lenovo factory qualification."},
+];
+export function activeComponentOffers(now=Date.now()) { return upgradeComponentOffers.filter((item) => now >= Date.parse(item.verifiedAt) && now < Date.parse(item.expiresAt)); }
+export function componentAffiliateOffer(item: typeof upgradeComponentOffers[number]): AffiliateOffer { return {merchant:"Amazon US",url:amazonAsinAffiliateUrl(item.site,item.asin),label:"Check this exact component on Amazon",priceNote:"Recheck exact part number, quantity, seller, delivery and returns."}; }
