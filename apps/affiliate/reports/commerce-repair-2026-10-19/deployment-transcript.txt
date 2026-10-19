@@ -1,0 +1,53 @@
+Shell
+Agent
+⌘
+I
+Workbench CLI
+60 ms
+  "postStopCapacity": {
+    "passed": true,
+    "availableMiB": 830.1875,
+    "sliceHeadroomMiB": "unlimited",
+    "requiredMiB": 704,
+    "candidateMiB": 512,
+    "reserveMiB": 192,
+    "pressureAvg10": 0,
+    "reasons": []
+  },
+  "metadataVerification": {
+    "targets": 42,
+    "redirects": 308,
+    "sitemaps": 7,
+    "errors": 0
+  },
+  "completedAt": "2026-10-19T14:32:16+0800",
+  "service": "NRestarts=0\nMemoryCurrent=310996992\nWorkingDirectory=/srv/madabase-affiliate/releases/commerce-20261019-5de949a2646289d696cbf83af465b3ba744d4b65\nActiveState=active\nSubState=running"
+}
+{
+  "mainWorkingDirectory": "/srv/madabase-main/releases/seo-20260925-8055b15",
+  "forecast": {
+    "capacity": {
+      "passed": false,
+      "availableMiB": 213.53125,
+      "sliceHeadroomMiB": "unlimited",
+      "requiredMiB": 704,
+      "candidateMiB": 512,
+      "reserveMiB": 192,
+      "pressureAvg10": 0,
+      "reasons": [
+        "Insufficient MemAvailable; swap does not count as candidate capacity."
+      ]
+    },
+    "reclaimableAnonymousMiB": 631.43359375,
+    "projectedAvailableMiB": 844.96484375,
+    "requiredMiB": 768
+  },
+  "mainRestored": true,
+  "startedAt": "2026-10-19T14:32:03+0800",
+  "extraService": "madabase-test.service",
+  "extraWorkingDirectory": "/srv/madabase-test/releases/local-20260820-next15523",
+  "extraRestored": true,
+  "restoredAt": "2026-10-19T14:32:18+0800"
+}
+root@iZ0jo9gyarkgcx2c8voe91Z:~#
+⌘I切换AI终端模式，⌘⇧Y唤出命令助手

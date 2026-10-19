@@ -1,0 +1,136 @@
+{
+  "method": "Signed-in Amazon clean ASIN pages, no affiliate tag; US ZIP 10001. No cart or checkout. Default delivery filter restored to China.",
+  "checkedDate": "2026-10-19",
+  "rows": [
+    {
+      "site": "homeoffice",
+      "asin": "B09GK8LBWS",
+      "product": "CalDigit TS4",
+      "availability": "In Stock",
+      "decision": "Keep exact TS4 intent; add TS5/TS5 Plus selection context after exact successor offers are verified",
+      "decisionAfterRepair": "Retain the exact selected variant; refresh only relevant existing buyer paths"
+    },
+    {
+      "site": "homeoffice",
+      "asin": "B0DDTH3HX8",
+      "product": "Insta360 Link 2",
+      "availability": "In Stock",
+      "decision": "Keep budget/gimbal use case; compare current Pro generations using official sources",
+      "decisionAfterRepair": "Retain the exact selected variant; refresh only relevant existing buyer paths"
+    },
+    {
+      "site": "baby",
+      "asin": "B0931ZY7DK",
+      "product": "Ergobaby Omni Breeze, linked black variant",
+      "availability": "Only 1 left in stock",
+      "decision": "Priority availability recheck and Omni Deluxe choice context; no silent variant or model substitution",
+      "decisionAfterRepair": "Retain the exact selected variant; refresh only relevant existing buyer paths"
+    },
+    {
+      "site": "network",
+      "asin": "B0CN8QLS4K",
+      "product": "Deco BE63 3-pack",
+      "availability": "In Stock",
+      "decision": "Retain value choice; support current BE67 choice and equivalent pack sizes on existing comparison page",
+      "decisionAfterRepair": "Retain the exact selected variant; refresh only relevant existing buyer paths"
+    },
+    {
+      "site": "smarthome",
+      "asin": "B0FRS6T6HL",
+      "product": "Aqara U400 Black",
+      "availability": "In Stock",
+      "decision": "Current model already covered; maintain compatibility and exact regional-version evidence",
+      "decisionAfterRepair": "Retain the exact selected variant; refresh only relevant existing buyer paths"
+    },
+    {
+      "site": "smarthome",
+      "asin": "B0FG2MD3YP",
+      "product": "Aqara FP300",
+      "availability": "In Stock",
+      "decision": "Current model already covered; continue exact-page discovery and conversion measurement",
+      "decisionAfterRepair": "Retain the exact selected variant; refresh only relevant existing buyer paths"
+    },
+    {
+      "site": "pet",
+      "asin": "B0GS7FF1D6",
+      "product": "Coway Airmega Mighty2 AP-1512N(W)",
+      "availability": "In Stock",
+      "decision": "Current generation already covered; prioritize room-size, filter-cost and pet-use fit",
+      "decisionAfterRepair": "Retain the exact selected variant; refresh only relevant existing buyer paths"
+    },
+    {
+      "site": "style",
+      "asin": "B06XH489LG",
+      "product": "Loungefly Minnie Mouse Bow bag",
+      "availability": "In Stock",
+      "decision": "Old design remains available; no evidence that chasing every new design will bring qualified demand",
+      "decisionAfterRepair": "Retain the exact selected variant; refresh only relevant existing buyer paths"
+    },
+    {
+      "site": "baby",
+      "asin": "B0876T9DQZ",
+      "product": "Philips Avent Premium Fast Bottle Warmer",
+      "availability": "In Stock",
+      "decision": "Keep model-specific query intent; distinguish US version and alternatives instead of changing merely for age",
+      "decisionAfterRepair": "Retain the exact selected variant; refresh only relevant existing buyer paths"
+    },
+    {
+      "site": "network",
+      "asin": "B076MGPQZQ",
+      "product": "Klein Tools VDV226-110 pass-through crimper",
+      "availability": "In Stock",
+      "decision": "Protect AI-tagged click-bearing guide and restore internal event persistence",
+      "decisionAfterRepair": "Retain the exact selected variant; refresh only relevant existing buyer paths"
+    },
+    {
+      "site": "baby",
+      "asin": "B0DK1KZ9RQ",
+      "product": "1 Pack Childproof Door Knob Cover",
+      "availability": "In Stock",
+      "decision": "Protect click-bearing guide; recheck exact pack, fit and safety evidence",
+      "decisionAfterRepair": "Retain the exact selected variant; refresh only relevant existing buyer paths"
+    },
+    {
+      "site": "baby",
+      "asin": "B001ECHXVC",
+      "product": "Little Partners Original Learning Tower LP01411 Natural",
+      "availability": "Currently unavailable; no known restock date",
+      "decision": "P0: proposed suppression of exact unavailable CTA; verify a same-job replacement before any new purchase destination. Production currently still links this ASIN in two positions",
+      "decisionAfterRepair": "Exact CTA blocked across runtime inventory"
+    },
+    {
+      "site": "homeoffice",
+      "asin": "B0G92CQ7KH",
+      "product": "TONOR 4-pack wood wall panels 47.2 x 23.6 inches",
+      "availability": "In Stock after selecting Regular Price; ordinary Add to cart and Buy Now visible",
+      "decision": "Recheck ordinary-price selected offer, full pack/area cost and acoustic-treatment suitability; default membership-required offer can add friction.",
+      "decisionAfterRepair": "Retain exact ordinary purchase path and disclose membership/absorption evidence limits",
+      "seller": "TonorDirect US",
+      "shipper": "Amazon",
+      "variant": "Walnut; 4 pack; 47.2 x 23.6 in each"
+    },
+    {
+      "site": "network",
+      "asin": "B0FQYQRZQX",
+      "product": "Deco BE67 BE14000 2 Pack",
+      "availability": "In Stock; Buy New; ordinary Add to cart and Buy Now",
+      "seller": "Amazon.com",
+      "shipper": "Amazon.com",
+      "decisionAfterRepair": "Use existing exact two-pack on the comparison path; do not compare its total price directly with BE63 three-pack"
+    },
+    {
+      "site": "network",
+      "asin": "B0C4W1L4B3",
+      "product": "Deco BE85 BE22000 2 Pack",
+      "availability": "Currently unavailable; no restock date",
+      "decisionAfterRepair": "Block exact purchase link; preserve product intent and explanation"
+    },
+    {
+      "site": "network",
+      "asin": "B0FHJKS227",
+      "product": "Deco BE67 BE14000 3 Pack",
+      "availability": "In Stock on the US three-pack selection",
+      "decisionAfterRepair": "Comparison evidence only; not added as a new published offer"
+    }
+  ]
+}

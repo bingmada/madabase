@@ -1,0 +1,20 @@
+systemctl show madabase-affiliate madabase-main madabase-test -p Id -p ActiveState -p SubState -p NRestarts -p WorkingDirectory; journalctl -u madabase-affiliate --since '2026-10-19 14:32:00' -p err --no-pa
+ger -o cat | wc -l
+NRestarts=0
+WorkingDirectory=/srv/madabase-affiliate/releases/commerce-20261019-5de949a2646289d696cbf83af465b3ba744d4b65
+Id=madabase-affiliate.service
+ActiveState=active
+SubState=running
+NRestarts=0
+WorkingDirectory=/srv/madabase-main/releases/seo-20260925-8055b15
+Id=madabase-main.service
+ActiveState=active
+SubState=running
+NRestarts=0
+WorkingDirectory=/srv/madabase-test/releases/local-20260820-next15523
+Id=madabase-test.service
+ActiveState=active
+SubState=running
+0
+root@iZ0jo9gyarkgcx2c8voe91Z:~#
+⌘I切换AI终端模式，⌘⇧Y唤出命令助手

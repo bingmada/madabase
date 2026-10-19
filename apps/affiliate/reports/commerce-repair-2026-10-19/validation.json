@@ -1,5 +1,5 @@
 {
-  "status": "prepared-for-guarded-release",
+  "status": "deployed-and-publicly-verified",
   "primaryChangedCanonicals": 12,
   "publishedCommerceIdentities": 530,
   "runtimeSiteAsinsChecked": 502,
@@ -20,12 +20,68 @@
     "deferredToOrigin": [
       "Costume database product",
       "Costume database sitemap"
-    ]
+    ],
+    "deferredToOriginResolved": true
   },
   "publicBaseline": {
     "passed": 292,
     "bingAiProtected": 181,
     "cohortTargets": 31
   },
-  "maintenanceAuthority": "Owner explicitly approved temporary Main and Test pause for this release on 2026-10-19; restore immediately with independent timers. Tools excluded."
+  "maintenanceAuthority": "Owner explicitly approved temporary Main and Test pause for this release on 2026-10-19; restore immediately with independent timers. Tools excluded.",
+  "completedAt": "2026-10-19T15:03:23.195029+08:00",
+  "dependentChangedCanonicals": 5,
+  "merchantAsinsIndividuallyChecked": 16,
+  "publicFinal": {
+    "checkedAt": "2026-10-19T14:57:28+0800",
+    "urlsPassed": 296,
+    "errors": 0,
+    "protectedBingAiUrls": 181,
+    "cohortTargets": 31,
+    "metadataAndDiscoveryPreserved": true
+  },
+  "mobile": {
+    "width": 390,
+    "height": 844,
+    "pagesPassed": 12,
+    "horizontalOverflow": 0,
+    "blockedSponsoredLinks": 0
+  },
+  "productionClickQa": {
+    "validFamilyIdentitiesAccepted": 3,
+    "blockedIdentitiesRejected": 2,
+    "syntheticProductionWrites": 0
+  },
+  "originAcceptance": {
+    "targets": 42,
+    "existingRedirects": 308,
+    "sitemaps": 7,
+    "errors": 0,
+    "costumeDbProduct": "passed",
+    "costumeDbSitemapProductUrlsPreserved": 76
+  },
+  "indexnow": {
+    "submittedChangedCanonicals": 17,
+    "network": 10,
+    "homeoffice": 4,
+    "baby": 3,
+    "responses": "HTTP 200 for all three hosts"
+  },
+  "cache": {
+    "action": "20 exact full-path prefix purges after single-URL purge left stale HTML variants",
+    "wholeZonePurged": false,
+    "settingsChanged": false,
+    "plainCanonicalBodiesVerified": true
+  },
+  "mainAndTestRestored": true,
+  "changedDocumentDetails": {
+    "pages": 17,
+    "http200": 17,
+    "validJsonLd": 17,
+    "sitemapPresent": 17,
+    "repeatRequestHtmlHit": 17,
+    "imageEndpointsGetPassed": 16,
+    "rscCache": "DYNAMIC",
+    "localQaServerStopped": true
+  }
 }

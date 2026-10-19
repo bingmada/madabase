@@ -1,0 +1,33 @@
+{
+  "method": "Local runtime lookup of the exact synthetic identifier emitted by GuidePage; no production POST and no merchant clicks",
+  "rows": [
+    {
+      "site": "network",
+      "emittedSlug": "family-pass-through-ethernet-crimping-tools-b076mgpqzq",
+      "asin": "B076MGPQZQ",
+      "verifiedAt": "2026-08-10T08:00:00.000Z",
+      "validatorResolves": false
+    },
+    {
+      "site": "baby",
+      "emittedSlug": "family-childproof-door-knob-covers-b0dk1kz9rq",
+      "asin": "B0DK1KZ9RQ",
+      "verifiedAt": "2026-08-12T12:13:58.990Z",
+      "validatorResolves": false
+    },
+    {
+      "site": "baby",
+      "emittedSlug": "family-toddler-learning-towers-b001echxvc",
+      "asin": "B001ECHXVC",
+      "verifiedAt": "2026-08-10T08:00:00.000Z",
+      "validatorResolves": false
+    },
+    {
+      "site": "homeoffice",
+      "emittedSlug": "family-home-office-acoustic-panels-b0g92cq7kh",
+      "asin": "B0G92CQ7KH",
+      "verifiedAt": "2026-08-09T03:41:16.473Z",
+      "validatorResolves": false
+    }
+  ]
+}

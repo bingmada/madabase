@@ -1,0 +1,3 @@
+Created /Users/liyingda/Documents/project/self/madabase/apps/affiliate/.release/affiliate-runtime.tgz
+Archive size: 58.1 MB
+Start after extraction: HOSTNAME=127.0.0.1 PORT=3000 node start.mjs

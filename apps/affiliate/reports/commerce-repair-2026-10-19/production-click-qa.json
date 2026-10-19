@@ -1,0 +1,63 @@
+{
+  "checkedAt": "2026-10-19T06:33:18.145Z",
+  "qaOnly": true,
+  "syntheticClickWrites": 0,
+  "rows": [
+    {
+      "site": "network",
+      "productSlug": "family-pass-through-ethernet-crimping-tools-b076mgpqzq",
+      "status": 200,
+      "body": {
+        "ok": true,
+        "persisted": false,
+        "reason": "qa_visit",
+        "validated": true
+      },
+      "cache": "DYNAMIC"
+    },
+    {
+      "site": "baby",
+      "productSlug": "family-childproof-door-knob-covers-b0dk1kz9rq",
+      "status": 200,
+      "body": {
+        "ok": true,
+        "persisted": false,
+        "reason": "qa_visit",
+        "validated": true
+      },
+      "cache": "DYNAMIC"
+    },
+    {
+      "site": "homeoffice",
+      "productSlug": "family-home-office-acoustic-panels-b0g92cq7kh",
+      "status": 200,
+      "body": {
+        "ok": true,
+        "persisted": false,
+        "reason": "qa_visit",
+        "validated": true
+      },
+      "cache": "DYNAMIC"
+    },
+    {
+      "site": "baby",
+      "productSlug": "family-toddler-learning-towers-b001echxvc",
+      "status": 400,
+      "body": {
+        "ok": false,
+        "error": "invalid_click_event"
+      },
+      "cache": "DYNAMIC"
+    },
+    {
+      "site": "network",
+      "productSlug": "tp-link-deco-be85-wifi-7-mesh",
+      "status": 400,
+      "body": {
+        "ok": false,
+        "error": "invalid_click_event"
+      },
+      "cache": "DYNAMIC"
+    }
+  ]
+}

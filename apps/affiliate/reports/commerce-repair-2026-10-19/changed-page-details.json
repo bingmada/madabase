@@ -1,0 +1,445 @@
+{
+  "checkedAt": "2026-10-19T07:00:54.170Z",
+  "rows": [
+    {
+      "url": "https://baby.madabase.com/guides/toddler-learning-towers-buying-guide",
+      "status": 200,
+      "cache": "HIT",
+      "schemaCount": 2,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "Article"
+      ],
+      "imageSources": [
+        "/_next/image?url=%2Fimages%2Faffiliate%2Fbroad2-baby-toddler-learning-towers.webp&w=3840&q=75"
+      ]
+    },
+    {
+      "url": "https://baby.madabase.com/guides/childproof-door-knob-covers-buying-guide",
+      "status": 200,
+      "cache": "HIT",
+      "schemaCount": 2,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "Article"
+      ],
+      "imageSources": [
+        "/_next/image?url=%2Fimages%2Faffiliate%2Fbreadth-baby-childproof-door-knob-covers.webp&w=3840&q=75"
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/guides/pass-through-ethernet-crimping-tools-buying-guide",
+      "status": 200,
+      "cache": "HIT",
+      "schemaCount": 2,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "Article"
+      ],
+      "imageSources": [
+        "/_next/image?url=%2Fimages%2Faffiliate%2Fbroad2-network-pass-through-crimpers.webp&w=3840&q=75"
+      ]
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/home-office-acoustic-panels-buying-guide",
+      "status": 200,
+      "cache": "HIT",
+      "schemaCount": 3,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "Article",
+        "ItemList"
+      ],
+      "imageSources": [
+        "/_next/image?url=%2Fimages%2Faffiliate%2Fcategory-homeoffice-meetings-editorial-v2.webp&w=3840&q=75"
+      ]
+    },
+    {
+      "url": "https://homeoffice.madabase.com/reviews/caldigit-ts4-thunderbolt-dock",
+      "status": 200,
+      "cache": "HIT",
+      "schemaCount": 2,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "Article"
+      ],
+      "imageSources": [
+        "/_next/image?url=%2Fimages%2Faffiliate%2Fhomeoffice-dual-monitor-dock-editorial-realistic.webp&w=3840&q=75"
+      ]
+    },
+    {
+      "url": "https://homeoffice.madabase.com/reviews/insta360-link-2-webcam",
+      "status": 200,
+      "cache": "HIT",
+      "schemaCount": 2,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "Article"
+      ],
+      "imageSources": [
+        "/_next/image?url=%2Fimages%2Faffiliate%2Fhomeoffice-insta360-link-2-editorial.webp&w=3840&q=75"
+      ]
+    },
+    {
+      "url": "https://homeoffice.madabase.com/best/logitech-mx-brio-vs-insta360-link-2",
+      "status": 200,
+      "cache": "HIT",
+      "schemaCount": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "ItemList",
+        "Article",
+        "FAQPage"
+      ],
+      "imageSources": [
+        "/_next/image?url=%2Fimages%2Faffiliate%2Fhomeoffice-logitech-mx-brio-editorial.webp&w=3840&q=75",
+        "/_next/image?url=%2Fimages%2Faffiliate%2Fhomeoffice-insta360-link-2-editorial.webp&w=3840&q=75"
+      ]
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/ergobaby-omni-breeze-carrier",
+      "status": 200,
+      "cache": "HIT",
+      "schemaCount": 2,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "Article"
+      ],
+      "imageSources": [
+        "/_next/image?url=%2Fimages%2Faffiliate%2Fbaby-ergobaby-omni-breeze-carrier.webp&w=3840&q=75"
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/reviews/tp-link-deco-be63-wifi-7-mesh",
+      "status": 200,
+      "cache": "HIT",
+      "schemaCount": 2,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "Article"
+      ],
+      "imageSources": [
+        "/_next/image?url=%2Fimages%2Faffiliate%2Fnetwork-tp-link-deco-be63-wifi-7-mesh-realistic.webp&w=3840&q=75"
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/reviews/tp-link-deco-be67-wifi-7-mesh",
+      "status": 200,
+      "cache": "HIT",
+      "schemaCount": 2,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "Article"
+      ],
+      "imageSources": [
+        "/_next/image?url=%2Fimages%2Faffiliate%2Fnetwork-tp-link-deco-be67-wifi-7-mesh-realistic.webp&w=3840&q=75"
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/reviews/tp-link-deco-be85-wifi-7-mesh",
+      "status": 200,
+      "cache": "HIT",
+      "schemaCount": 2,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "Article"
+      ],
+      "imageSources": [
+        "/_next/image?url=%2Fimages%2Faffiliate%2Fnetwork-tp-link-deco-be85-wifi-7-mesh-realistic.webp&w=3840&q=75"
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/guides/deco-be63-vs-be67-vs-be85-buying-guide",
+      "status": 200,
+      "cache": "HIT",
+      "schemaCount": 2,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "Article"
+      ],
+      "imageSources": []
+    },
+    {
+      "url": "https://network.madabase.com/best/best-mesh-wifi-for-apartments-and-homes",
+      "status": 200,
+      "cache": "HIT",
+      "schemaCount": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "ItemList",
+        "Article",
+        "FAQPage"
+      ],
+      "imageSources": [
+        "/_next/image?url=%2Fimages%2Faffiliate%2Fnetwork-tp-link-deco-be25-wifi-7-mesh-realistic.webp&w=3840&q=75",
+        "/_next/image?url=%2Fimages%2Faffiliate%2Fnetwork-tp-link-deco-be63-wifi-7-mesh-realistic.webp&w=3840&q=75",
+        "/_next/image?url=%2Fimages%2Faffiliate%2Fnetwork-tp-link-deco-be67-wifi-7-mesh-realistic.webp&w=3840&q=75",
+        "/_next/image?url=%2Fimages%2Faffiliate%2Fnetwork-tp-link-deco-be85-wifi-7-mesh-realistic.webp&w=3840&q=75",
+        "/_next/image?url=%2Fimages%2Faffiliate%2Fnetwork-mesh-router-generic-realistic.webp&w=3840&q=75",
+        "/_next/image?url=%2Fimages%2Faffiliate%2Fnetwork-amazon-eero-6-mesh-wifi-system.webp&w=3840&q=75",
+        "/_next/image?url=%2Fimages%2Faffiliate%2Fnetwork-netgear-orbi-970-wifi-7-mesh.webp&w=3840&q=75",
+        "/_next/image?url=%2Fimages%2Faffiliate%2Fnetwork-glinet-beryl-ax-travel-router.webp&w=3840&q=75"
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/best/best-mesh-wifi-for-2-5gbps-internet",
+      "status": 200,
+      "cache": "HIT",
+      "schemaCount": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "ItemList",
+        "Article",
+        "FAQPage"
+      ],
+      "imageSources": [
+        "/_next/image?url=%2Fimages%2Faffiliate%2Fnetwork-tp-link-deco-be25-wifi-7-mesh-realistic.webp&w=3840&q=75",
+        "/_next/image?url=%2Fimages%2Faffiliate%2Fnetwork-tp-link-deco-be63-wifi-7-mesh-realistic.webp&w=3840&q=75",
+        "/_next/image?url=%2Fimages%2Faffiliate%2Fnetwork-tp-link-deco-be67-wifi-7-mesh-realistic.webp&w=3840&q=75",
+        "/_next/image?url=%2Fimages%2Faffiliate%2Fnetwork-tp-link-deco-be85-wifi-7-mesh-realistic.webp&w=3840&q=75"
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/best/deco-be85-vs-be67",
+      "status": 200,
+      "cache": "HIT",
+      "schemaCount": 4,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "ItemList",
+        "Article",
+        "FAQPage"
+      ],
+      "imageSources": [
+        "/_next/image?url=%2Fimages%2Faffiliate%2Fnetwork-tp-link-deco-be85-wifi-7-mesh-realistic.webp&w=3840&q=75",
+        "/_next/image?url=%2Fimages%2Faffiliate%2Fnetwork-tp-link-deco-be67-wifi-7-mesh-realistic.webp&w=3840&q=75"
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/guides/2-5gbe-vs-10gbe-mesh-backhaul-checklist",
+      "status": 200,
+      "cache": "HIT",
+      "schemaCount": 2,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "Article"
+      ],
+      "imageSources": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/wifi-7-mesh-budget-midrange-premium-guide",
+      "status": 200,
+      "cache": "HIT",
+      "schemaCount": 2,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "Article"
+      ],
+      "imageSources": []
+    }
+  ],
+  "sitemaps": [
+    {
+      "origin": "https://baby.madabase.com",
+      "status": 200,
+      "missing": []
+    },
+    {
+      "origin": "https://network.madabase.com",
+      "status": 200,
+      "missing": []
+    },
+    {
+      "origin": "https://homeoffice.madabase.com",
+      "status": 200,
+      "missing": []
+    }
+  ],
+  "rsc": {
+    "url": "https://network.madabase.com/guides/deco-be63-vs-be67-vs-be85-buying-guide",
+    "status": 200,
+    "cache": "DYNAMIC",
+    "contentType": "text/x-component"
+  },
+  "imageEndpoints": [
+    {
+      "url": "https://baby.madabase.com/_next/image?url=%2Fimages%2Faffiliate%2Fbroad2-baby-toddler-learning-towers.webp&w=3840&q=75",
+      "method": "GET",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "https://baby.madabase.com/_next/image?url=%2Fimages%2Faffiliate%2Fbreadth-baby-childproof-door-knob-covers.webp&w=3840&q=75",
+      "method": "GET",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "https://network.madabase.com/_next/image?url=%2Fimages%2Faffiliate%2Fbroad2-network-pass-through-crimpers.webp&w=3840&q=75",
+      "method": "GET",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/_next/image?url=%2Fimages%2Faffiliate%2Fcategory-homeoffice-meetings-editorial-v2.webp&w=3840&q=75",
+      "method": "GET",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/_next/image?url=%2Fimages%2Faffiliate%2Fhomeoffice-dual-monitor-dock-editorial-realistic.webp&w=3840&q=75",
+      "method": "GET",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/_next/image?url=%2Fimages%2Faffiliate%2Fhomeoffice-insta360-link-2-editorial.webp&w=3840&q=75",
+      "method": "GET",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/_next/image?url=%2Fimages%2Faffiliate%2Fhomeoffice-logitech-mx-brio-editorial.webp&w=3840&q=75",
+      "method": "GET",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "https://baby.madabase.com/_next/image?url=%2Fimages%2Faffiliate%2Fbaby-ergobaby-omni-breeze-carrier.webp&w=3840&q=75",
+      "method": "GET",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "https://network.madabase.com/_next/image?url=%2Fimages%2Faffiliate%2Fnetwork-tp-link-deco-be63-wifi-7-mesh-realistic.webp&w=3840&q=75",
+      "method": "GET",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "https://network.madabase.com/_next/image?url=%2Fimages%2Faffiliate%2Fnetwork-tp-link-deco-be67-wifi-7-mesh-realistic.webp&w=3840&q=75",
+      "method": "GET",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "https://network.madabase.com/_next/image?url=%2Fimages%2Faffiliate%2Fnetwork-tp-link-deco-be85-wifi-7-mesh-realistic.webp&w=3840&q=75",
+      "method": "GET",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "https://network.madabase.com/_next/image?url=%2Fimages%2Faffiliate%2Fnetwork-tp-link-deco-be25-wifi-7-mesh-realistic.webp&w=3840&q=75",
+      "method": "GET",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "https://network.madabase.com/_next/image?url=%2Fimages%2Faffiliate%2Fnetwork-mesh-router-generic-realistic.webp&w=3840&q=75",
+      "method": "GET",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "https://network.madabase.com/_next/image?url=%2Fimages%2Faffiliate%2Fnetwork-amazon-eero-6-mesh-wifi-system.webp&w=3840&q=75",
+      "method": "GET",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "https://network.madabase.com/_next/image?url=%2Fimages%2Faffiliate%2Fnetwork-netgear-orbi-970-wifi-7-mesh.webp&w=3840&q=75",
+      "method": "GET",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "https://network.madabase.com/_next/image?url=%2Fimages%2Faffiliate%2Fnetwork-glinet-beryl-ax-travel-router.webp&w=3840&q=75",
+      "method": "GET",
+      "status": 200,
+      "contentType": "image/jpeg"
+    }
+  ],
+  "imageHeadProbe": [
+    {
+      "url": "https://baby.madabase.com/_next/image?url=%2Fimages%2Faffiliate%2Fbroad2-baby-toddler-learning-towers.webp&w=3840&q=75",
+      "status": 400,
+      "contentType": null
+    },
+    {
+      "url": "https://baby.madabase.com/_next/image?url=%2Fimages%2Faffiliate%2Fbreadth-baby-childproof-door-knob-covers.webp&w=3840&q=75",
+      "status": 400,
+      "contentType": null
+    },
+    {
+      "url": "https://network.madabase.com/_next/image?url=%2Fimages%2Faffiliate%2Fbroad2-network-pass-through-crimpers.webp&w=3840&q=75",
+      "status": 400,
+      "contentType": null
+    },
+    {
+      "url": "https://homeoffice.madabase.com/_next/image?url=%2Fimages%2Faffiliate%2Fcategory-homeoffice-meetings-editorial-v2.webp&w=3840&q=75",
+      "status": 400,
+      "contentType": null
+    },
+    {
+      "url": "https://homeoffice.madabase.com/_next/image?url=%2Fimages%2Faffiliate%2Fhomeoffice-dual-monitor-dock-editorial-realistic.webp&w=3840&q=75",
+      "status": 400,
+      "contentType": null
+    },
+    {
+      "url": "https://homeoffice.madabase.com/_next/image?url=%2Fimages%2Faffiliate%2Fhomeoffice-insta360-link-2-editorial.webp&w=3840&q=75",
+      "status": 400,
+      "contentType": null
+    },
+    {
+      "url": "https://homeoffice.madabase.com/_next/image?url=%2Fimages%2Faffiliate%2Fhomeoffice-logitech-mx-brio-editorial.webp&w=3840&q=75",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "https://baby.madabase.com/_next/image?url=%2Fimages%2Faffiliate%2Fbaby-ergobaby-omni-breeze-carrier.webp&w=3840&q=75",
+      "status": 400,
+      "contentType": null
+    },
+    {
+      "url": "https://network.madabase.com/_next/image?url=%2Fimages%2Faffiliate%2Fnetwork-tp-link-deco-be63-wifi-7-mesh-realistic.webp&w=3840&q=75",
+      "status": 400,
+      "contentType": null
+    },
+    {
+      "url": "https://network.madabase.com/_next/image?url=%2Fimages%2Faffiliate%2Fnetwork-tp-link-deco-be67-wifi-7-mesh-realistic.webp&w=3840&q=75",
+      "status": 400,
+      "contentType": null
+    },
+    {
+      "url": "https://network.madabase.com/_next/image?url=%2Fimages%2Faffiliate%2Fnetwork-tp-link-deco-be85-wifi-7-mesh-realistic.webp&w=3840&q=75",
+      "status": 400,
+      "contentType": null
+    },
+    {
+      "url": "https://network.madabase.com/_next/image?url=%2Fimages%2Faffiliate%2Fnetwork-tp-link-deco-be25-wifi-7-mesh-realistic.webp&w=3840&q=75",
+      "status": 400,
+      "contentType": null
+    },
+    {
+      "url": "https://network.madabase.com/_next/image?url=%2Fimages%2Faffiliate%2Fnetwork-mesh-router-generic-realistic.webp&w=3840&q=75",
+      "status": 400,
+      "contentType": null
+    },
+    {
+      "url": "https://network.madabase.com/_next/image?url=%2Fimages%2Faffiliate%2Fnetwork-amazon-eero-6-mesh-wifi-system.webp&w=3840&q=75",
+      "status": 400,
+      "contentType": null
+    },
+    {
+      "url": "https://network.madabase.com/_next/image?url=%2Fimages%2Faffiliate%2Fnetwork-netgear-orbi-970-wifi-7-mesh.webp&w=3840&q=75",
+      "status": 400,
+      "contentType": null
+    },
+    {
+      "url": "https://network.madabase.com/_next/image?url=%2Fimages%2Faffiliate%2Fnetwork-glinet-beryl-ax-travel-router.webp&w=3840&q=75",
+      "status": 400,
+      "contentType": null
+    }
+  ],
+  "imageHeadProbeInterpretation": "HEAD is not a valid acceptance probe for this image optimizer: 15 returned 400, while ordinary GET requests are the browser-serving path and were separately verified."
+}

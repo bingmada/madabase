@@ -1,0 +1,379 @@
+{
+  "date": "2026-10-19",
+  "mode": "Read-only acquisition, AI visibility, commerce and measurement audit. No production edits, merchant-link changes, deployment, indexing submissions or publication.",
+  "gsc": {
+    "source": "Authenticated Search Console UI. Full page tables: 103 rows for current 7d; 121 for 7d comparison; 389 for current 28d; 603 for 28d comparison. Comparison columns explicitly decoded as current clicks, previous clicks, click difference, current impressions, previous impressions. Main/Tools/Wellness excluded from affiliate aggregates.",
+    "windows": {
+      "current7d": "2026-10-10..2026-10-16",
+      "previous7d": "2026-10-03..2026-10-09",
+      "current28d": "2026-09-19..2026-10-16",
+      "previous28d": "2026-08-22..2026-09-18",
+      "latest24h": "Rolling Oct 18-19; browser +08:00 display; preliminary, approximately 5.5h reporting delay"
+    },
+    "propertyCards": {
+      "latest24h": {
+        "clicks": 0,
+        "impressions": 9
+      },
+      "current7d": {
+        "clicks": 0,
+        "impressions": 58
+      },
+      "previous7d": {
+        "clicks": 0,
+        "impressions": 64
+      },
+      "current28d": {
+        "clicks": 16,
+        "impressions": 2246
+      },
+      "previous28d": {
+        "clicks": 25,
+        "impressions": 6065
+      }
+    },
+    "affiliatePageAggregation": [
+      {
+        "site": "network",
+        "host": "network.madabase.com",
+        "latest24hImpressions": 1,
+        "oct13SnapshotImpressions": 1,
+        "current7dImpressions": 33,
+        "previous7dImpressions": 6,
+        "current28dClicks": 0,
+        "previous28dClicks": 5,
+        "current28dImpressions": 83,
+        "previous28dImpressions": 194
+      },
+      {
+        "site": "smarthome",
+        "host": "smarthome.madabase.com",
+        "latest24hImpressions": 2,
+        "oct13SnapshotImpressions": 2,
+        "current7dImpressions": 20,
+        "previous7dImpressions": 27,
+        "current28dClicks": 0,
+        "previous28dClicks": 0,
+        "current28dImpressions": 123,
+        "previous28dImpressions": 66
+      },
+      {
+        "site": "homeoffice",
+        "host": "homeoffice.madabase.com",
+        "latest24hImpressions": 1,
+        "oct13SnapshotImpressions": 1,
+        "current7dImpressions": 22,
+        "previous7dImpressions": 11,
+        "current28dClicks": 10,
+        "previous28dClicks": 13,
+        "current28dImpressions": 1155,
+        "previous28dImpressions": 3813
+      },
+      {
+        "site": "baby",
+        "host": "baby.madabase.com",
+        "latest24hImpressions": 22,
+        "oct13SnapshotImpressions": 0,
+        "current7dImpressions": 13,
+        "previous7dImpressions": 11,
+        "current28dClicks": 6,
+        "previous28dClicks": 7,
+        "current28dImpressions": 975,
+        "previous28dImpressions": 2128
+      },
+      {
+        "site": "pet",
+        "host": "pets.madabase.com",
+        "latest24hImpressions": 2,
+        "oct13SnapshotImpressions": 1,
+        "current7dImpressions": 17,
+        "previous7dImpressions": 7,
+        "current28dClicks": 0,
+        "previous28dClicks": 0,
+        "current28dImpressions": 73,
+        "previous28dImpressions": 51
+      },
+      {
+        "site": "style",
+        "host": "style.madabase.com",
+        "latest24hImpressions": 0,
+        "oct13SnapshotImpressions": 0,
+        "current7dImpressions": 10,
+        "previous7dImpressions": 1,
+        "current28dClicks": 0,
+        "previous28dClicks": 0,
+        "current28dImpressions": 12,
+        "previous28dImpressions": 1
+      },
+      {
+        "site": "costume",
+        "host": "costumes.madabase.com",
+        "latest24hImpressions": 0,
+        "oct13SnapshotImpressions": 0,
+        "current7dImpressions": 9,
+        "previous7dImpressions": 0,
+        "current28dClicks": 0,
+        "previous28dClicks": 0,
+        "current28dImpressions": 10,
+        "previous28dImpressions": 5
+      }
+    ],
+    "latest24hClicksAllSevenSites": 0,
+    "current7dClicksAllSevenSites": 0,
+    "previous7dClicksAllSevenSites": 0,
+    "ai28d": {
+      "propertyImpressions": 146,
+      "pageTableImpressions": {
+        "homeoffice.madabase.com": 112,
+        "baby.madabase.com": 33,
+        "madabase.com": 2,
+        "tools.madabase.com": 2,
+        "wellness.madabase.com": 1
+      },
+      "rows": 28,
+      "clickMetricExposed": false,
+      "note": "AI report impressions must not be added to ordinary Search report impressions. Page and property aggregation also differ."
+    },
+    "ai7d": {
+      "propertyImpressions": 3,
+      "previousPropertyImpressions": 0,
+      "activeAffiliatePageRows": 0
+    },
+    "messages": {
+      "total": 38,
+      "latest": "2026-10-15",
+      "newSinceOct18": false,
+      "interpretation": "Latest message remains the two intentionally redirected Baby sources, investigated Oct16/18. Other 5xx notices reference older crawls/validation, not evidence of a new Oct13-release outage."
+    }
+  },
+  "bing": {
+    "windows": {
+      "30dUi": "Sep19-Oct18 label, latest daily row Oct17; use raw report window rather than pretending equal dates with GSC",
+      "7dDaily": "2026-10-11..2026-10-17",
+      "previous7dDaily": "2026-10-04..2026-10-10",
+      "7dUiPageExport": "Oct12-Oct18 label; available daily rows Oct12-17 only"
+    },
+    "propertyCards30d": {
+      "clicks": 29,
+      "impressionsRounded": "1.3K",
+      "ctr": "2.17%"
+    },
+    "propertyDaily7d": {
+      "clicks": 5,
+      "impressions": 321,
+      "previousClicks": 7,
+      "previousImpressions": 335,
+      "scope": "All-domain context, including inactive/non-affiliate properties; excluded from seven-site totals"
+    },
+    "ai30d": {
+      "propertyCitations": 939,
+      "averageCitedPagesPerDay": 11,
+      "exportedPageRows": 85,
+      "exportedPageCitations": 758,
+      "activeAffiliateExportedPageCitations": 754,
+      "note": "The page/query data is explicitly sampled. Citations are visibility, not visits, clicks, orders or rankings; do not divide Clarity referrals by these citations to invent CTR."
+    }
+  },
+  "clarity": {
+    "scope": "Shared xlte5zsd33 project, includes Main; humans exclude Clarity-identified bot sessions, but are not a seven-site organic-only denominator. Dynamic dashboard windows may include current day.",
+    "last7d": {
+      "humanSessions": 34,
+      "excludedBotSessions": 352,
+      "uniqueUsers": 32,
+      "pagesPerSession": 1.18,
+      "scrollDepthPercent": 28.72,
+      "activeSeconds": 29,
+      "affiliateClickSessions": 1,
+      "outboundClickSessions": 2,
+      "referrerSessions": {
+        "bing.com": 7,
+        "duckduckgo.com": 5,
+        "ecosia.org": 2,
+        "chatgpt.com": 1
+      }
+    },
+    "last30d": {
+      "humanSessions": 174,
+      "excludedBotSessions": 1521,
+      "uniqueUsers": 154,
+      "pagesPerSession": 1.12,
+      "scrollDepthPercent": 29.48,
+      "activeSeconds": 30,
+      "affiliateClickSessions": 5,
+      "outboundClickSessions": 8,
+      "referrerSessions": {
+        "bing.com": 20,
+        "duckduckgo.com": 19,
+        "google.com": 11,
+        "chatgpt.com": 3,
+        "ecosia.org": 3,
+        "qwant.com": 3
+      }
+    },
+    "affiliateClickSessionLandingPages": [
+      {
+        "site": "baby",
+        "dateShown": "2026-10-19",
+        "url": "https://baby.madabase.com/guides/toddler-learning-towers-buying-guide",
+        "referrer": "duckduckgo.com",
+        "note": "The only affiliate_click session in the current 7d UI window"
+      },
+      {
+        "site": "network",
+        "dateShown": "2026-10-09",
+        "url": "https://network.madabase.com/guides/pass-through-ethernet-crimping-tools-buying-guide?utm_source=chatgpt.com",
+        "referrer": null
+      },
+      {
+        "site": "baby",
+        "dateShown": "2026-10-05",
+        "url": "https://baby.madabase.com/guides/childproof-door-knob-covers-buying-guide?utm_source=chatgpt.com",
+        "referrer": null
+      },
+      {
+        "site": "homeoffice",
+        "dateShown": "2026-09-22",
+        "url": "https://homeoffice.madabase.com/best/logitech-litra-glow-vs-elgato-key-light-neo",
+        "referrer": "google.com"
+      },
+      {
+        "site": "homeoffice",
+        "dateShown": "2026-09-20",
+        "url": "https://homeoffice.madabase.com/guides/home-office-acoustic-panels-buying-guide?utm_source=chatgpt.com",
+        "referrer": null
+      }
+    ],
+    "attributionLimits": "Three of five click sessions carry a ChatGPT UTM; this is useful evidence, not proof of three AI-attributed orders. Session counts are not click-event counts. No personal identifiers retained.",
+    "aiVisibilitySetup": "Not configured. UI requires one permanent domain selection in a multi-domain project; left unchanged during this read-only review. Bing AI and GSC AI reports were available without this setup."
+  },
+  "amazon": {
+    "scope": "US Associates store bingmada-20, All tracking IDs; last updated Oct18 18:43 PDT. Tracking-ID table suppresses low-volume rows into Other, so no reliable seven-site order split.",
+    "last30d": {
+      "start": "2026-09-18",
+      "end": "2026-10-17",
+      "clicks": 14,
+      "orderedItems": 10,
+      "directItemsOrdered": 0,
+      "indirectItemsOrdered": 10,
+      "dashboardConversionPercent": 71.43,
+      "orderedRevenueUSD": 57.45,
+      "shippedItems": 10,
+      "returnedItems": 1,
+      "shippedItemEarningsUSD": 1.06,
+      "returnedItemEarningsUSD": 0.48,
+      "netEarningsUSD": 0.58,
+      "trackingRows": "Other only"
+    },
+    "last7d": {
+      "start": "2026-10-11",
+      "end": "2026-10-17",
+      "clicks": 3,
+      "orderedItems": 0,
+      "netEarningsUSD": 0
+    },
+    "limits": "71.43% is ordered items divided by clicks, not unique-buyer conversion or recommendation-product conversion. Direct ordered items are zero. Tiny sample and hidden tracking-ID detail prevent estimating each site's EPC or blaming old products for all lost search traffic. Costume uses authorized CJ, not Amazon."
+  },
+  "merchantSample": {
+    "method": "Signed-in Amazon clean /dp/ URLs without affiliate tags, US delivery location New York 10001. No cart, checkout, SiteStripe-link creation, affiliate-link clicks or product-record edits. Delivery filter restored to China afterward.",
+    "checkedDate": "2026-10-19",
+    "rows": [
+      {
+        "site": "homeoffice",
+        "asin": "B09GK8LBWS",
+        "product": "CalDigit TS4",
+        "availability": "In Stock",
+        "decision": "Keep exact TS4 intent; add TS5/TS5 Plus selection context after exact successor offers are verified"
+      },
+      {
+        "site": "homeoffice",
+        "asin": "B0DDTH3HX8",
+        "product": "Insta360 Link 2",
+        "availability": "In Stock",
+        "decision": "Keep budget/gimbal use case; compare current Pro generations using official sources"
+      },
+      {
+        "site": "baby",
+        "asin": "B0931ZY7DK",
+        "product": "Ergobaby Omni Breeze, linked black variant",
+        "availability": "Only 1 left in stock",
+        "decision": "Priority availability recheck and Omni Deluxe choice context; no silent variant or model substitution"
+      },
+      {
+        "site": "network",
+        "asin": "B0CN8QLS4K",
+        "product": "Deco BE63 3-pack",
+        "availability": "In Stock",
+        "decision": "Retain value choice; support current BE67 choice and equivalent pack sizes on existing comparison page"
+      },
+      {
+        "site": "smarthome",
+        "asin": "B0FRS6T6HL",
+        "product": "Aqara U400 Black",
+        "availability": "In Stock",
+        "decision": "Current model already covered; maintain compatibility and exact regional-version evidence"
+      },
+      {
+        "site": "smarthome",
+        "asin": "B0FG2MD3YP",
+        "product": "Aqara FP300",
+        "availability": "In Stock",
+        "decision": "Current model already covered; continue exact-page discovery and conversion measurement"
+      },
+      {
+        "site": "pet",
+        "asin": "B0GS7FF1D6",
+        "product": "Coway Airmega Mighty2 AP-1512N(W)",
+        "availability": "In Stock",
+        "decision": "Current generation already covered; prioritize room-size, filter-cost and pet-use fit"
+      },
+      {
+        "site": "style",
+        "asin": "B06XH489LG",
+        "product": "Loungefly Minnie Mouse Bow bag",
+        "availability": "In Stock",
+        "decision": "Old design remains available; no evidence that chasing every new design will bring qualified demand"
+      },
+      {
+        "site": "baby",
+        "asin": "B0876T9DQZ",
+        "product": "Philips Avent Premium Fast Bottle Warmer",
+        "availability": "In Stock",
+        "decision": "Keep model-specific query intent; distinguish US version and alternatives instead of changing merely for age"
+      },
+      {
+        "site": "network",
+        "asin": "B076MGPQZQ",
+        "product": "Klein Tools VDV226-110 pass-through crimper",
+        "availability": "In Stock",
+        "decision": "Protect AI-tagged click-bearing guide and restore internal event persistence"
+      },
+      {
+        "site": "baby",
+        "asin": "B0DK1KZ9RQ",
+        "product": "1 Pack Childproof Door Knob Cover",
+        "availability": "In Stock",
+        "decision": "Protect click-bearing guide; recheck exact pack, fit and safety evidence"
+      },
+      {
+        "site": "baby",
+        "asin": "B001ECHXVC",
+        "product": "Little Partners Original Learning Tower LP01411 Natural",
+        "availability": "Currently unavailable; no known restock date",
+        "decision": "P0: proposed suppression of exact unavailable CTA; verify a same-job replacement before any new purchase destination. Production currently still links this ASIN in two positions"
+      },
+      {
+        "site": "homeoffice",
+        "asin": "B0G92CQ7KH",
+        "product": "TONOR 4-pack wood wall panels 47.2 x 23.6 inches",
+        "availability": "Unconfirmed purchase state: default Prime-exclusive buybox shows Join Prime; ordinary-price and seller/delivery options are visible but were not activated.",
+        "decision": "Recheck ordinary-price selected offer, full pack/area cost and acoustic-treatment suitability; default membership-required offer can add friction."
+      }
+    ]
+  },
+  "boundaries": [
+    "No current crawl-log or Cloudflare firewall export was available; public 200 does not prove all crawler requests pass.",
+    "No production AffiliateClick database query or fake click was sent. Family-validator defect was reproduced through exact local runtime lookups; its production error frequency is not quantified.",
+    "This is not a 504-product live stock certification. Thirteen ASINs were sampled, one was unavailable and one remains unconfirmed.",
+    "GSC release cohorts include pre-release days; no causal release-success claim. Oct20 full-batch gate remains due, followed by Oct27/Nov12 gates."
+  ]
+}

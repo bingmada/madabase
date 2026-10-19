@@ -1,0 +1,29 @@
+{
+  "checkedDate": "2026-10-19",
+  "reviewType": "Early technical/index inspection and latest complete performance evidence; NOT a complete October 20 post-release outcome gate",
+  "gsc7dWindow": "2026-10-10..2026-10-16",
+  "previous7dWindow": "2026-10-03..2026-10-09",
+  "gsc28dWindow": "2026-09-19..2026-10-16",
+  "cohorts": {
+    "2026-10-06": {
+      "urls": 17,
+      "indexed": 17,
+      "gsc7dImpressions": 0,
+      "previous7dImpressions": 11,
+      "gsc7dClicks": 0,
+      "gsc28dClicks": 3,
+      "gsc28dImpressions": 148
+    },
+    "2026-10-13": {
+      "urls": 14,
+      "indexed": 13,
+      "gsc7dImpressions": 12,
+      "previous7dImpressions": 10,
+      "gsc7dClicks": 0,
+      "gsc28dClicks": 6,
+      "gsc28dImpressions": 291
+    }
+  },
+  "liveTest": "USB-C dock versus monitor hub: live fetch successful and indexing allowed on October 19 14:30 UI time; still crawled-currently-not-indexed in Google Index",
+  "nextAction": "Preserve all existing intents and Bing/AI entries; keep formal complete-data checks and existing October27/November5/November12 checkpoints. No Request Indexing, new routes, new subdomains or blanket consolidation."
+}

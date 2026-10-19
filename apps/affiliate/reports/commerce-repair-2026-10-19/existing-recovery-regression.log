@@ -1,0 +1,20 @@
+All-site affiliate search recovery audit
+{
+  "sites": 7,
+  "changedCanonicals": 17,
+  "basePermanentRedirects": 55,
+  "newRoutes": 0,
+  "reviewGates": {
+    "day7": "2026-10-13",
+    "day14": "2026-10-20",
+    "day30": "2026-11-05"
+  },
+  "runtime": {
+    "baseRedirects": 55,
+    "localizedRedirects": 220,
+    "baseCanonicals": 17,
+    "localizedCanonicals": 64,
+    "sitemaps": 7
+  },
+  "errors": []
+}

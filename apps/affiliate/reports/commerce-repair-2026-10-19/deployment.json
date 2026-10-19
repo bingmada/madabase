@@ -1,0 +1,57 @@
+{
+  "completedAt": "2026-10-19T14:32:16+0800",
+  "releaseCommit": "5de949a2646289d696cbf83af465b3ba744d4b65",
+  "artifact": {
+    "sha256": "b51c1479b9c308dd41edf9c51dfd8c94e1ae90cb358ec439f5f86696aa143fcf",
+    "bytes": 60940575,
+    "builtWith": "Node 20.20.0; Next 15.5.23; Linux x64 sharp dependencies from npm official registry",
+    "newIndexableUrls": 0
+  },
+  "actualWorkingDirectory": "/srv/madabase-affiliate/releases/commerce-20261019-5de949a2646289d696cbf83af465b3ba744d4b65",
+  "rollbackWorkingDirectory": "/srv/madabase-affiliate/releases/focus-20261013-3ddb75d66d84ebf9b89b7eb026dfb1e4d8baaada",
+  "authority": "Owner explicitly approved this release and temporary Main plus Test pause",
+  "maintenance": {
+    "startedAt": "2026-10-19T14:32:03+0800",
+    "restoredAt": "2026-10-19T14:32:18+0800",
+    "mainRestored": true,
+    "testRestored": true,
+    "testRuntimePort": 3009,
+    "independentRecoveryTimers": "inactive after confirmed restoration"
+  },
+  "postStopCapacity": {
+    "passed": true,
+    "availableMiB": 830.1875,
+    "requiredMiB": 704,
+    "candidateMiB": 512,
+    "reserveMiB": 192,
+    "pressureAvg10": 0
+  },
+  "preservedOldHashedAssets": 34,
+  "parallelCandidateStarted": false,
+  "finalServices": {
+    "affiliate": {
+      "active": true,
+      "running": true,
+      "restarts": 0
+    },
+    "main": {
+      "active": true,
+      "running": true,
+      "restarts": 0,
+      "workingDirectory": "/srv/madabase-main/releases/seo-20260925-8055b15"
+    },
+    "test": {
+      "active": true,
+      "running": true,
+      "restarts": 0,
+      "workingDirectory": "/srv/madabase-test/releases/local-20260820-next15523"
+    }
+  },
+  "affiliateErrorLevelJournalEntriesSinceCutover": 0,
+  "sourceEvidence": [
+    "deployment-transcript.txt",
+    "server-release.jpg",
+    "server-health.txt"
+  ],
+  "toolsTouched": false
+}

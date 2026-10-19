@@ -1,0 +1,45 @@
+{
+  "checkedAt": "2026-10-19T06:57:02.872Z",
+  "mode": "prefix",
+  "scope": "20 exact full paths: 17 changed documents and 3 sitemaps; all cache variants",
+  "prefixes": [
+    "baby.madabase.com/guides/toddler-learning-towers-buying-guide",
+    "baby.madabase.com/guides/childproof-door-knob-covers-buying-guide",
+    "network.madabase.com/guides/pass-through-ethernet-crimping-tools-buying-guide",
+    "homeoffice.madabase.com/guides/home-office-acoustic-panels-buying-guide",
+    "homeoffice.madabase.com/reviews/caldigit-ts4-thunderbolt-dock",
+    "homeoffice.madabase.com/reviews/insta360-link-2-webcam",
+    "homeoffice.madabase.com/best/logitech-mx-brio-vs-insta360-link-2",
+    "baby.madabase.com/reviews/ergobaby-omni-breeze-carrier",
+    "network.madabase.com/reviews/tp-link-deco-be63-wifi-7-mesh",
+    "network.madabase.com/reviews/tp-link-deco-be67-wifi-7-mesh",
+    "network.madabase.com/reviews/tp-link-deco-be85-wifi-7-mesh",
+    "network.madabase.com/guides/deco-be63-vs-be67-vs-be85-buying-guide",
+    "network.madabase.com/best/best-mesh-wifi-for-apartments-and-homes",
+    "network.madabase.com/best/best-mesh-wifi-for-2-5gbps-internet",
+    "network.madabase.com/best/deco-be85-vs-be67",
+    "network.madabase.com/guides/2-5gbe-vs-10gbe-mesh-backhaul-checklist",
+    "network.madabase.com/guides/wifi-7-mesh-budget-midrange-premium-guide",
+    "network.madabase.com/sitemap.xml",
+    "baby.madabase.com/sitemap.xml",
+    "homeoffice.madabase.com/sitemap.xml"
+  ],
+  "receipt": [
+    "\t\t\t\t\t\t\t221 text Hostname Any assets at URLs with a host that matches one of the provided values will be purged from the cache.",
+    "\t\t\t\t\t\t\t222 radio button (disabled) Value: 0, ID: base-ui-:rno:, Description: Hostname Any assets at URLs with a host that matches one of the provided values will be purged from the cache.",
+    "\t\t\t\t\t\t\t224 text Tag Any assets served with a Cache-tag response header that matches one of the provided values will be purged from the cache.",
+    "\t\t\t\t\t\t\t225 radio button (disabled) Value: 0, ID: base-ui-:rnr:, Description: Tag Any assets served with a Cache-tag response header that matches one of the provided values will be purged from the cache.",
+    "\t\t\t\t\t\t\t227 text Prefix Any assets in the directory will be purged from cache.",
+    "\t\t\t\t\t\t\t228 radio button (disabled) Description: Prefix Any assets in the directory will be purged from cache., Value: 1, ID: base-ui-:rnu:",
+    "\t\t\t\t229 text Recently Purged:"
+  ],
+  "wholeZonePurge": false,
+  "settingsChanged": false,
+  "receiptAfter": [
+    "\t\t\t\t\t\t289 text Note:  Enabling this feature can significantly increase origin server load. Development Mode does not purge the cache so files will need to be purged after development mode expires.",
+    "\t\t\t312 container Purge request successfully received. Changes should take effect in less than 5 seconds.",
+    "\t\t\t\t314 heading Purge request successfully received. Changes should take effect in less than 5 seconds., Value: 2, ID: :ro4:",
+    "\t\t\t\t\t315 text Purge request successfully received. Changes should take effect in less than 5 seconds."
+  ],
+  "dialogClosed": true
+}

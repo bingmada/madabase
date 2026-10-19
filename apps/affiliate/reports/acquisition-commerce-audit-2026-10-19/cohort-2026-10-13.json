@@ -1,0 +1,23 @@
+{
+  "scope": "Exact 14 URLs changed October 13. Read-only early observation, not completion of the October 20 full cohort/index-inspection gate. 7d includes both pre-release and post-release days; 28d is mostly pre-release.",
+  "current7dWindow": "2026-10-10..2026-10-16",
+  "previous7dWindow": "2026-10-03..2026-10-09",
+  "rows": [
+    {"slug":"48-vs-55-inch-desk-guide","gsc7dImpressions":0,"previous7dImpressions":0,"gsc28dClicks":2,"gsc28dImpressions":29},
+    {"slug":"monitor-arm-clamp-reinforcement-guide","gsc7dImpressions":3,"previous7dImpressions":0,"gsc28dClicks":1,"gsc28dImpressions":48},
+    {"slug":"portable-monitor-usb-c-dp-alt-mode-displaylink-guide","gsc7dImpressions":2,"previous7dImpressions":0,"gsc28dClicks":0,"gsc28dImpressions":71},
+    {"slug":"macbook-dual-monitor-dock-chip-compatibility-guide","gsc7dImpressions":0,"previous7dImpressions":0,"gsc28dClicks":0,"gsc28dImpressions":0},
+    {"slug":"usb-c-dock-vs-monitor-hub-guide","gsc7dImpressions":0,"previous7dImpressions":0,"gsc28dClicks":0,"gsc28dImpressions":8},
+    {"slug":"logitech-litra-glow-vs-elgato-key-light-neo","gsc7dImpressions":0,"previous7dImpressions":0,"gsc28dClicks":2,"gsc28dImpressions":54},
+    {"slug":"pcie-wifi-adapters-vs-alternatives","gsc7dImpressions":0,"previous7dImpressions":0,"gsc28dClicks":0,"gsc28dImpressions":0},
+    {"slug":"direct-attach-copper-cables-vs-alternatives","gsc7dImpressions":0,"previous7dImpressions":0,"gsc28dClicks":0,"gsc28dImpressions":0},
+    {"slug":"ergobaby-omni-breeze-positions-by-age","gsc7dImpressions":0,"previous7dImpressions":1,"gsc28dClicks":1,"gsc28dImpressions":58},
+    {"slug":"aqara-presence-multi-sensor-fp300","gsc7dImpressions":6,"previous7dImpressions":9,"gsc28dClicks":0,"gsc28dImpressions":22},
+    {"slug":"automatic-feeder-cleaning-checklist","gsc7dImpressions":1,"previous7dImpressions":0,"gsc28dClicks":0,"gsc28dImpressions":1},
+    {"slug":"mini-backpack-capacity-measurement-guide","gsc7dImpressions":0,"previous7dImpressions":0,"gsc28dClicks":0,"gsc28dImpressions":0},
+    {"slug":"props-and-animatronics-vs-alternatives","gsc7dImpressions":0,"previous7dImpressions":0,"gsc28dClicks":0,"gsc28dImpressions":0},
+    {"slug":"when-to-order-a-halloween-costume","gsc7dImpressions":0,"previous7dImpressions":0,"gsc28dClicks":0,"gsc28dImpressions":0}
+  ],
+  "latest24h": {"clicks":0,"impressions":4,"exposedPages":[{"slug":"ergobaby-omni-breeze-positions-by-age","impressions":2},{"slug":"aqara-presence-multi-sensor-fp300","impressions":1},{"slug":"portable-monitor-usb-c-dp-alt-mode-displaylink-guide","impressions":1}],"other11ChangedPagesImpressions":0},
+  "nextGate": "2026-10-20: review all 14 exact URLs plus prior due cohort, live inspect zero-impression pages, join Bing/AI protection ledger before any merge/retarget. No new URLs while required repairs remain."
+}

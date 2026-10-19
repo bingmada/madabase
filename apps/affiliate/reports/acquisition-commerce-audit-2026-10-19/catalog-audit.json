@@ -1,0 +1,33 @@
+{
+  "scope": "Runtime published core products with Amazon offers plus published family catalog minus exact configured offer blocks; site+ASIN is identity unit. Source-parser checker is a different, incomplete scope.",
+  "publishedContentRecords": 1118,
+  "publishedGuides": 866,
+  "familyGuides": 721,
+  "coreProductEvidencePages": 175,
+  "familyCatalogTotal": 355,
+  "familyCatalogActive": 349,
+  "familyVerificationDateRange": [
+    "2026-08-09",
+    "2026-08-13"
+  ],
+  "verificationAgeDays": [
+    67,
+    71
+  ],
+  "amazonOfferRecords": 505,
+  "uniqueSiteAsins": 504,
+  "oldCheckerRecords": 294,
+  "oldCheckerCoveredRuntimeIdentities": 294,
+  "missingRuntimeIdentities": 210,
+  "checkerEntriesOutsideCurrentRuntimeOffers": 0,
+  "missingBySite": {
+    "network": 37,
+    "smarthome": 37,
+    "baby": 43,
+    "homeoffice": 44,
+    "pet": 49
+  },
+  "formatCheckScope": "294/294 source-parser URL/tag checks passed. This is neither complete runtime-catalog coverage nor stock verification.",
+  "countryMapping": "294 US entries in old Creators inventory; gb/ca/de/nl each zero exact local mappings and partner-tag configurations in that inventory. Current local-country offers must not be claimed verified from this result.",
+  "doNotInfer": "A page update timestamp does not refresh product identity, availability or manufacturer-generation evidence."
+}

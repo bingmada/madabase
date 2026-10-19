@@ -1,0 +1,574 @@
+{
+  "checkedAt": "2026-10-19",
+  "gsc7dWindow": "2026-10-10..2026-10-16",
+  "previous7dWindow": "2026-10-03..2026-10-09",
+  "gsc28dWindow": "2026-09-19..2026-10-16",
+  "method": "Authenticated GSC UI. Entire Pages tables read: 121 comparison rows and 389 current 28d rows. Dates and indexing details are UI values, not inferred recrawls.",
+  "inspectionRows": [
+    {
+      "url": "https://homeoffice.madabase.com/guides/48-vs-55-inch-desk-guide",
+      "indexed": true,
+      "lastCrawl": "Sep 30, 2026, 3:22:31 AM",
+      "canonical": "None"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/macbook-dual-monitor-dock-chip-compatibility-guide",
+      "indexed": true,
+      "lastCrawl": "Jul 23, 2026, 11:24:50 PM",
+      "canonical": "https://homeoffice.madabase.com/guides/macbook-dual-monitor-dock-chip-compatibility-guide"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-vs-alternatives",
+      "indexed": true,
+      "lastCrawl": "Oct 10, 2026, 7:23:22 AM",
+      "canonical": "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-vs-alternatives"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/business-usb-c-monitors-vs-alternatives",
+      "indexed": true,
+      "lastCrawl": "Oct 14, 2026, 6:14:35 AM",
+      "canonical": "https://homeoffice.madabase.com/guides/business-usb-c-monitors-vs-alternatives"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/dual-monitor-kvm-switches-vs-alternatives",
+      "indexed": true,
+      "lastCrawl": "Aug 9, 2026, 7:03:22 PM",
+      "canonical": "https://homeoffice.madabase.com/guides/dual-monitor-kvm-switches-vs-alternatives"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/office-paper-shredders-vs-alternatives",
+      "indexed": true,
+      "lastCrawl": "Oct 9, 2026, 3:18:14 AM",
+      "canonical": "https://homeoffice.madabase.com/guides/office-paper-shredders-vs-alternatives"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/low-profile-keyboards-vs-alternatives",
+      "indexed": true,
+      "lastCrawl": "Oct 14, 2026, 6:16:29 PM",
+      "canonical": "https://homeoffice.madabase.com/guides/low-profile-keyboards-vs-alternatives"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/desktop-label-printers-buying-guide",
+      "indexed": true,
+      "lastCrawl": "Oct 16, 2026, 7:10:33 AM",
+      "canonical": "https://homeoffice.madabase.com/guides/desktop-label-printers-buying-guide"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/desktop-laminators-buying-guide",
+      "indexed": true,
+      "lastCrawl": "Oct 12, 2026, 6:19:19 AM",
+      "canonical": "https://homeoffice.madabase.com/guides/desktop-laminators-buying-guide"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/wireless-number-pads-buying-guide",
+      "indexed": true,
+      "lastCrawl": "Oct 12, 2026, 7:55:29 PM",
+      "canonical": "https://homeoffice.madabase.com/guides/wireless-number-pads-buying-guide"
+    },
+    {
+      "url": "https://baby.madabase.com/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
+      "indexed": true,
+      "lastCrawl": "Oct 10, 2026, 8:09:42 AM",
+      "canonical": "https://baby.madabase.com/guides/bottle-washer-vs-sterilizer-vs-dryer-guide"
+    },
+    {
+      "url": "https://baby.madabase.com/guides/infant-bath-tubs-safety-and-skip-guide",
+      "indexed": true,
+      "lastCrawl": "Oct 7, 2026, 8:30:24 PM",
+      "canonical": "https://baby.madabase.com/guides/infant-bath-tubs-safety-and-skip-guide"
+    },
+    {
+      "url": "https://baby.madabase.com/guides/nursery-glider-chairs-safety-and-skip-guide",
+      "indexed": true,
+      "lastCrawl": "Oct 16, 2026, 6:00:23 AM",
+      "canonical": "https://baby.madabase.com/guides/nursery-glider-chairs-safety-and-skip-guide"
+    },
+    {
+      "url": "https://baby.madabase.com/guides/double-strollers-compatibility-and-fit-guide",
+      "indexed": true,
+      "lastCrawl": "Oct 14, 2026, 6:23:15 AM",
+      "canonical": "https://baby.madabase.com/guides/double-strollers-compatibility-and-fit-guide"
+    },
+    {
+      "url": "https://network.madabase.com/guides/deco-be63-vs-be67-vs-be85-buying-guide",
+      "indexed": true,
+      "lastCrawl": "Oct 6, 2026, 10:39:04 PM",
+      "canonical": "https://network.madabase.com/guides/deco-be63-vs-be67-vs-be85-buying-guide"
+    },
+    {
+      "url": "https://smarthome.madabase.com/guides/matter-thread-wifi-zigbee-device-checklist",
+      "indexed": true,
+      "lastCrawl": "Oct 16, 2026, 2:42:56 PM",
+      "canonical": "https://smarthome.madabase.com/guides/matter-thread-wifi-zigbee-device-checklist"
+    },
+    {
+      "url": "https://pets.madabase.com/reviews/levoit-vital-200s-p-air-purifier",
+      "indexed": true,
+      "lastCrawl": "Oct 4, 2026, 3:37:45 AM",
+      "canonical": "https://pets.madabase.com/reviews/levoit-vital-200s-p-air-purifier"
+    },
+    {
+      "url": "https://style.madabase.com/guides/loungefly-faux-leather-rain-and-care-guide",
+      "indexed": true,
+      "lastCrawl": "Aug 6, 2026, 12:18:53 PM",
+      "canonical": "https://style.madabase.com/guides/loungefly-faux-leather-rain-and-care-guide"
+    },
+    {
+      "url": "https://costumes.madabase.com/guides/costume-rental-vs-buying-guide",
+      "indexed": true,
+      "lastCrawl": "Aug 9, 2026, 9:38:06 PM",
+      "canonical": "https://costumes.madabase.com/guides/costume-rental-vs-buying-guide"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/usb-c-dock-vs-monitor-hub-guide",
+      "indexed": false,
+      "lastCrawl": "Aug 18, 2026, 9:39:20 AM",
+      "canonical": "https://homeoffice.madabase.com/guides/usb-c-dock-vs-monitor-hub-guide"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/monitor-arm-clamp-reinforcement-guide",
+      "indexed": true,
+      "lastCrawl": "Sep 16, 2026, 6:36:57 PM",
+      "canonical": "None"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/portable-monitor-usb-c-dp-alt-mode-displaylink-guide",
+      "indexed": true,
+      "lastCrawl": "Sep 19, 2026, 3:41:01 AM",
+      "canonical": "None"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/best/logitech-litra-glow-vs-elgato-key-light-neo",
+      "indexed": true,
+      "lastCrawl": "Oct 2, 2026, 6:38:34 AM",
+      "canonical": "None"
+    },
+    {
+      "url": "https://network.madabase.com/guides/pcie-wifi-adapters-vs-alternatives",
+      "indexed": true,
+      "lastCrawl": "Oct 14, 2026, 3:19:37 AM",
+      "canonical": "https://network.madabase.com/guides/pcie-wifi-adapters-vs-alternatives"
+    },
+    {
+      "url": "https://network.madabase.com/guides/direct-attach-copper-cables-vs-alternatives",
+      "indexed": true,
+      "lastCrawl": "Oct 14, 2026, 5:12:08 AM",
+      "canonical": "https://network.madabase.com/guides/direct-attach-copper-cables-vs-alternatives"
+    },
+    {
+      "url": "https://baby.madabase.com/guides/ergobaby-omni-breeze-positions-by-age",
+      "indexed": true,
+      "lastCrawl": "Oct 12, 2026, 4:00:18 AM",
+      "canonical": "https://baby.madabase.com/guides/ergobaby-omni-breeze-positions-by-age"
+    },
+    {
+      "url": "https://smarthome.madabase.com/reviews/aqara-presence-multi-sensor-fp300",
+      "indexed": true,
+      "lastCrawl": "Aug 9, 2026, 5:46:15 AM",
+      "canonical": "https://smarthome.madabase.com/reviews/aqara-presence-multi-sensor-fp300"
+    },
+    {
+      "url": "https://pets.madabase.com/guides/automatic-feeder-cleaning-checklist",
+      "indexed": true,
+      "lastCrawl": "Sep 29, 2026, 12:07:48 PM",
+      "canonical": "None"
+    },
+    {
+      "url": "https://style.madabase.com/guides/mini-backpack-capacity-measurement-guide",
+      "indexed": true,
+      "lastCrawl": "Aug 10, 2026, 2:17:35 AM",
+      "canonical": "https://style.madabase.com/guides/mini-backpack-capacity-measurement-guide"
+    },
+    {
+      "url": "https://costumes.madabase.com/guides/when-to-order-a-halloween-costume",
+      "indexed": true,
+      "lastCrawl": "Aug 9, 2026, 9:32:39 PM",
+      "canonical": "https://costumes.madabase.com/guides/when-to-order-a-halloween-costume"
+    },
+    {
+      "url": "https://costumes.madabase.com/guides/props-and-animatronics-vs-alternatives",
+      "indexed": true,
+      "lastCrawl": "Oct 15, 2026, 6:26:37 PM",
+      "canonical": "https://costumes.madabase.com/guides/props-and-animatronics-vs-alternatives"
+    }
+  ],
+  "inspectionRaw": [
+    {
+      "url": "https://homeoffice.madabase.com/guides/48-vs-55-inch-desk-guide",
+      "indexed": true,
+      "lastCrawl": "Sep 30, 2026, 3:22:31 AM",
+      "declaredCanonical": "None",
+      "googleCanonical": "Inspected URL"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/macbook-dual-monitor-dock-chip-compatibility-guide",
+      "text": "check_circle\nURL is on Google\nIt can appear in Google Search results (if not subject to a manual action or removal request) with all relevant enhancements. Learn more\nVIEW CRAWLED PAGE\nPage changed?\nREQUEST INDEXING\ncheck_circle\nPage indexing\nPage is indexed\n\nDiscovery\nSitemaps\nhttps://homeoffice.madabase.com/sitemap.xml\nReferring page\nhttps://homeoffice.madabase.com/guides/usb-c-dock-ports-explained-guide\nhttps://homeoffice.madabase.com/sitemap.xml\nCrawl\nLast crawl\nJul 23, 2026, 11:24:50 PM\nCrawled as\nGooglebot smartphone\nCrawl allowed?\nYes\nPage fetch\nSuccessful\nIndexing allowed?\nYes\nIndexing\nUser-declared canonical\nhttps://homeoffice.madabase.com/guides/macbook-dual-monitor-dock-chip-compatibility-guide\nGoogle-selected canonical\n\nInspected URL\nLEARN MORE\nOPEN REPORT\nEnhancements & Experience\ncheck_circle\nHTTPS\nPage is served over HTTPS\n\ncheck_circle\nBreadcrumbs\n1 valid item detected\n"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-vs-alternatives",
+      "text": "check_circle\nURL is on Google\nIt can appear in Google Search results (if not subject to a manual action or removal request) with all relevant enhancements. Learn more\nVIEW CRAWLED PAGE\nPage changed?\nREQUEST INDEXING\ncheck_circle\nPage indexing\nPage is indexed\n\nDiscovery\nSitemaps\nhttps://homeoffice.madabase.com/sitemap.xml\nReferring page\nhttps://homeoffice.madabase.com/nl-nl/guides/dual-screen-portable-monitors-buying-guide\nhttps://homeoffice.madabase.com/sitemap.xml\nCrawl\nLast crawl\nOct 10, 2026, 7:23:22 AM\nCrawled as\nGooglebot smartphone\nCrawl allowed?\nYes\nPage fetch\nSuccessful\nIndexing allowed?\nYes\nIndexing\nUser-declared canonical\nhttps://homeoffice.madabase.com/guides/dual-screen-portable-monitors-vs-alternatives\nGoogle-selected canonical\n\nInspected URL\nLEARN MORE\nOPEN REPORT\nEnhancements & Experience\ncheck_circle\nHTTPS\nPage is served over HTTPS\n\ncheck_circle\nBreadcrumbs\n1 valid item detected\n"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/business-usb-c-monitors-vs-alternatives",
+      "text": "check_circle\nURL is on Google\nIt can appear in Google Search results (if not subject to a manual action or removal request) with all relevant enhancements. Learn more\nVIEW CRAWLED PAGE\nPage changed?\nREQUEST INDEXING\ncheck_circle\nPage indexing\nPage is indexed\n\nDiscovery\nSitemaps\nhttps://homeoffice.madabase.com/sitemap.xml\nReferring page\nhttps://homeoffice.madabase.com/en-ca/guides/business-usb-c-monitors-buying-guide\nhttps://homeoffice.madabase.com/sitemap.xml\nCrawl\nLast crawl\nOct 14, 2026, 6:14:35 AM\nCrawled as\nGooglebot smartphone\nCrawl allowed?\nYes\nPage fetch\nSuccessful\nIndexing allowed?\nYes\nIndexing\nUser-declared canonical\nhttps://homeoffice.madabase.com/guides/business-usb-c-monitors-vs-alternatives\nGoogle-selected canonical\n\nInspected URL\nLEARN MORE\nOPEN REPORT\nEnhancements & Experience\ncheck_circle\nHTTPS\nPage is served over HTTPS\n\ncheck_circle\nBreadcrumbs\n1 valid item detected\n"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/dual-monitor-kvm-switches-vs-alternatives",
+      "text": "check_circle\nURL is on Google\nIt can appear in Google Search results (if not subject to a manual action or removal request) with all relevant enhancements. Learn more\nVIEW CRAWLED PAGE\nPage changed?\nREQUEST INDEXING\ncheck_circle\nPage indexing\nPage is indexed\n\nDiscovery\nSitemaps\nhttps://homeoffice.madabase.com/sitemap.xml\nReferring page\nhttps://homeoffice.madabase.com/sitemap.xml\nCrawl\nLast crawl\nAug 9, 2026, 7:03:22 PM\nCrawled as\nGooglebot smartphone\nCrawl allowed?\nYes\nPage fetch\nSuccessful\nIndexing allowed?\nYes\nIndexing\nUser-declared canonical\nhttps://homeoffice.madabase.com/guides/dual-monitor-kvm-switches-vs-alternatives\nGoogle-selected canonical\n\nInspected URL\nLEARN MORE\nOPEN REPORT\nEnhancements & Experience\ncheck_circle\nHTTPS\nPage is served over HTTPS\n\ncheck_circle\nBreadcrumbs\n1 valid item detected\n"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/office-paper-shredders-vs-alternatives",
+      "text": "check_circle\nURL is on Google\nIt can appear in Google Search results (if not subject to a manual action or removal request) with all relevant enhancements. Learn more\nVIEW CRAWLED PAGE\nPage changed?\nREQUEST INDEXING\ncheck_circle\nPage indexing\nPage is indexed\n\nDiscovery\nSitemaps\nhttps://homeoffice.madabase.com/sitemap.xml\nReferring page\nhttps://homeoffice.madabase.com/en-gb/guides/office-paper-shredders-vs-alternatives\nhttps://homeoffice.madabase.com/sitemap.xml\nCrawl\nLast crawl\nOct 9, 2026, 3:18:14 AM\nCrawled as\nGooglebot smartphone\nCrawl allowed?\nYes\nPage fetch\nSuccessful\nIndexing allowed?\nYes\nIndexing\nUser-declared canonical\nhttps://homeoffice.madabase.com/guides/office-paper-shredders-vs-alternatives\nGoogle-selected canonical\n\nInspected URL\nLEARN MORE\nOPEN REPORT\nEnhancements & Experience\ncheck_circle\nHTTPS\nPage is served over HTTPS\n\ncheck_circle\nBreadcrumbs\n1 valid item detected\n"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/low-profile-keyboards-vs-alternatives",
+      "text": "check_circle\nURL is on Google\nIt can appear in Google Search results (if not subject to a manual action or removal request) with all relevant enhancements. Learn more\nVIEW CRAWLED PAGE\nPage changed?\nREQUEST INDEXING\ncheck_circle\nPage indexing\nPage is indexed\n\nDiscovery\nSitemaps\nhttps://homeoffice.madabase.com/sitemap.xml\nReferring page\nhttps://homeoffice.madabase.com/sitemap.xml\nCrawl\nLast crawl\nOct 14, 2026, 6:16:29 PM\nCrawled as\nGooglebot smartphone\nCrawl allowed?\nYes\nPage fetch\nSuccessful\nIndexing allowed?\nYes\nIndexing\nUser-declared canonical\nhttps://homeoffice.madabase.com/guides/low-profile-keyboards-vs-alternatives\nGoogle-selected canonical\n\nInspected URL\nLEARN MORE\nOPEN REPORT\nEnhancements & Experience\ncheck_circle\nHTTPS\nPage is served over HTTPS\n\ncheck_circle\nBreadcrumbs\n1 valid item detected\n"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/desktop-label-printers-buying-guide",
+      "text": "check_circle\nURL is on Google\nIt can appear in Google Search results (if not subject to a manual action or removal request) with all relevant enhancements. Learn more\nVIEW CRAWLED PAGE\nPage changed?\nREQUEST INDEXING\ncheck_circle\nPage indexing\nPage is indexed\n\nDiscovery\nSitemaps\nhttps://homeoffice.madabase.com/sitemap.xml\nReferring page\nhttps://homeoffice.madabase.com/sitemap.xml\nCrawl\nLast crawl\nOct 16, 2026, 7:10:33 AM\nCrawled as\nGooglebot smartphone\nCrawl allowed?\nYes\nPage fetch\nSuccessful\nIndexing allowed?\nYes\nIndexing\nUser-declared canonical\nhttps://homeoffice.madabase.com/guides/desktop-label-printers-buying-guide\nGoogle-selected canonical\n\nInspected URL\nLEARN MORE\nOPEN REPORT\nEnhancements & Experience\ncheck_circle\nHTTPS\nPage is served over HTTPS\n\ncheck_circle\nBreadcrumbs\n1 valid item detected\n"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/desktop-laminators-buying-guide",
+      "text": "check_circle\nURL is on Google\nIt can appear in Google Search results (if not subject to a manual action or removal request) with all relevant enhancements. Learn more\nVIEW CRAWLED PAGE\nPage changed?\nREQUEST INDEXING\ncheck_circle\nPage indexing\nPage is indexed\n\nDiscovery\nSitemaps\nTemporary processing error\nReferring page\nhttps://homeoffice.madabase.com/guides/desktop-laminators-compatibility-and-fit-guide\nhttps://homeoffice.madabase.com/sitemap.xml\nCrawl\nLast crawl\nOct 12, 2026, 6:19:19 AM\nCrawled as\nGooglebot smartphone\nCrawl allowed?\nYes\nPage fetch\nSuccessful\nIndexing allowed?\nYes\nIndexing\nUser-declared canonical\nhttps://homeoffice.madabase.com/guides/desktop-laminators-buying-guide\nGoogle-selected canonical\n\nInspected URL\nLEARN MORE\nOPEN REPORT\nEnhancements & Experience\ncheck_circle\nHTTPS\nPage is served over HTTPS\n\ncheck_circle\nBreadcrumbs\n1 valid item detected\n"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/wireless-number-pads-buying-guide",
+      "text": "check_circle\nURL is on Google\nIt can appear in Google Search results (if not subject to a manual action or removal request) with all relevant enhancements. Learn more\nVIEW CRAWLED PAGE\nPage changed?\nREQUEST INDEXING\ncheck_circle\nPage indexing\nPage is indexed\n\nDiscovery\nSitemaps\nhttps://homeoffice.madabase.com/sitemap.xml\nReferring page\nhttps://homeoffice.madabase.com/sitemap.xml\nCrawl\nLast crawl\nOct 12, 2026, 7:55:29 PM\nCrawled as\nGooglebot smartphone\nCrawl allowed?\nYes\nPage fetch\nSuccessful\nIndexing allowed?\nYes\nIndexing\nUser-declared canonical\nhttps://homeoffice.madabase.com/guides/wireless-number-pads-buying-guide\nGoogle-selected canonical\n\nInspected URL\nLEARN MORE\nOPEN REPORT\nEnhancements & Experience\ncheck_circle\nHTTPS\nPage is served over HTTPS\n\ncheck_circle\nBreadcrumbs\n1 valid item detected\n"
+    },
+    {
+      "url": "https://baby.madabase.com/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
+      "text": "check_circle\nURL is on Google\nIt can appear in Google Search results (if not subject to a manual action or removal request) with all relevant enhancements. Learn more\nVIEW CRAWLED PAGE\nPage changed?\nREQUEST INDEXING\ncheck_circle\nPage indexing\nPage is indexed\n\nDiscovery\nSitemaps\nTemporary processing error\nReferring page\nhttps://baby.madabase.com/sitemap.xml\nCrawl\nLast crawl\nOct 10, 2026, 8:09:42 AM\nCrawled as\nGooglebot smartphone\nCrawl allowed?\nYes\nPage fetch\nSuccessful\nIndexing allowed?\nYes\nIndexing\nUser-declared canonical\nhttps://baby.madabase.com/guides/bottle-washer-vs-sterilizer-vs-dryer-guide\nGoogle-selected canonical\n\nInspected URL\nLEARN MORE\nOPEN REPORT\nEnhancements & Experience\ncheck_circle\nHTTPS\nPage is served over HTTPS\n\ncheck_circle\nBreadcrumbs\n1 valid item detected\n"
+    },
+    {
+      "url": "https://baby.madabase.com/guides/infant-bath-tubs-safety-and-skip-guide",
+      "text": "check_circle\nURL is on Google\nIt can appear in Google Search results (if not subject to a manual action or removal request) with all relevant enhancements. Learn more\nVIEW CRAWLED PAGE\nPage changed?\nREQUEST INDEXING\ncheck_circle\nPage indexing\nPage is indexed\n\nDiscovery\nSitemaps\nhttps://baby.madabase.com/sitemap.xml\nReferring page\nhttps://baby.madabase.com/sitemap.xml\nCrawl\nLast crawl\nOct 7, 2026, 8:30:24 PM\nCrawled as\nGooglebot smartphone\nCrawl allowed?\nYes\nPage fetch\nSuccessful\nIndexing allowed?\nYes\nIndexing\nUser-declared canonical\nhttps://baby.madabase.com/guides/infant-bath-tubs-safety-and-skip-guide\nGoogle-selected canonical\n\nInspected URL\nLEARN MORE\nOPEN REPORT\nEnhancements & Experience\ncheck_circle\nHTTPS\nPage is served over HTTPS\n\ncheck_circle\nBreadcrumbs\n1 valid item detected\n"
+    },
+    {
+      "url": "https://baby.madabase.com/guides/nursery-glider-chairs-safety-and-skip-guide",
+      "text": "check_circle\nURL is on Google\nIt can appear in Google Search results (if not subject to a manual action or removal request) with all relevant enhancements. Learn more\nVIEW CRAWLED PAGE\nPage changed?\nREQUEST INDEXING\ncheck_circle\nPage indexing\nPage is indexed\n\nDiscovery\nSitemaps\nhttps://baby.madabase.com/sitemap.xml\nReferring page\nhttps://baby.madabase.com/sitemap.xml\nCrawl\nLast crawl\nOct 16, 2026, 6:00:23 AM\nCrawled as\nGooglebot smartphone\nCrawl allowed?\nYes\nPage fetch\nSuccessful\nIndexing allowed?\nYes\nIndexing\nUser-declared canonical\nhttps://baby.madabase.com/guides/nursery-glider-chairs-safety-and-skip-guide\nGoogle-selected canonical\n\nInspected URL\nLEARN MORE\nOPEN REPORT\nEnhancements & Experience\ncheck_circle\nHTTPS\nPage is served over HTTPS\n\ncheck_circle\nBreadcrumbs\n1 valid item detected\n"
+    },
+    {
+      "url": "https://baby.madabase.com/guides/double-strollers-compatibility-and-fit-guide",
+      "text": "check_circle\nURL is on Google\nIt can appear in Google Search results (if not subject to a manual action or removal request) with all relevant enhancements. Learn more\nVIEW CRAWLED PAGE\nPage changed?\nREQUEST INDEXING\ncheck_circle\nPage indexing\nPage is indexed\n\nDiscovery\nSitemaps\nhttps://baby.madabase.com/sitemap.xml\nReferring page\nhttps://baby.madabase.com/sitemap.xml\nCrawl\nLast crawl\nOct 14, 2026, 6:23:15 AM\nCrawled as\nGooglebot smartphone\nCrawl allowed?\nYes\nPage fetch\nSuccessful\nIndexing allowed?\nYes\nIndexing\nUser-declared canonical\nhttps://baby.madabase.com/guides/double-strollers-compatibility-and-fit-guide\nGoogle-selected canonical\n\nInspected URL\nLEARN MORE\nOPEN REPORT\nEnhancements & Experience\ncheck_circle\nHTTPS\nPage is served over HTTPS\n\ncheck_circle\nBreadcrumbs\n1 valid item detected\n"
+    },
+    {
+      "url": "https://network.madabase.com/guides/deco-be63-vs-be67-vs-be85-buying-guide",
+      "text": "check_circle\nURL is on Google\nIt can appear in Google Search results (if not subject to a manual action or removal request) with all relevant enhancements. Learn more\nVIEW CRAWLED PAGE\nPage changed?\nREQUEST INDEXING\ncheck_circle\nPage indexing\nPage is indexed\n\nDiscovery\nSitemaps\nhttps://network.madabase.com/sitemap.xml\nReferring page\nhttps://network.madabase.com/guides/usb-wifi-adapters-vs-alternatives\nhttps://network.madabase.com/reviews/tp-link-deco-be63-wifi-7-mesh\nCrawl\nLast crawl\nOct 6, 2026, 10:39:04 PM\nCrawled as\nGooglebot smartphone\nCrawl allowed?\nYes\nPage fetch\nSuccessful\nIndexing allowed?\nYes\nIndexing\nUser-declared canonical\nhttps://network.madabase.com/guides/deco-be63-vs-be67-vs-be85-buying-guide\nGoogle-selected canonical\n\nInspected URL\nLEARN MORE\nOPEN REPORT\nEnhancements & Experience\ncheck_circle\nHTTPS\nPage is served over HTTPS\n\ncheck_circle\nBreadcrumbs\n1 valid item detected\n"
+    },
+    {
+      "url": "https://smarthome.madabase.com/guides/matter-thread-wifi-zigbee-device-checklist",
+      "text": "check_circle\nURL is on Google\nIt can appear in Google Search results (if not subject to a manual action or removal request) with all relevant enhancements. Learn more\nVIEW CRAWLED PAGE\nPage changed?\nREQUEST INDEXING\ncheck_circle\nPage indexing\nPage is indexed\n\nDiscovery\nSitemaps\nhttps://smarthome.madabase.com/sitemap.xml\nReferring page\nhttps://smarthome.madabase.com/\nhttps://smarthome.madabase.com/sitemap.xml\nCrawl\nLast crawl\nOct 16, 2026, 2:42:56 PM\nCrawled as\nGooglebot smartphone\nCrawl allowed?\nYes\nPage fetch\nSuccessful\nIndexing allowed?\nYes\nIndexing\nUser-declared canonical\nhttps://smarthome.madabase.com/guides/matter-thread-wifi-zigbee-device-checklist\nGoogle-selected canonical\n\nInspected URL\nLEARN MORE\nOPEN REPORT\nEnhancements & Experience\ncheck_circle\nHTTPS\nPage is served over HTTPS\n\ncheck_circle\nBreadcrumbs\n1 valid item detected\n"
+    },
+    {
+      "url": "https://pets.madabase.com/reviews/levoit-vital-200s-p-air-purifier",
+      "text": "check_circle\nURL is on Google\nIt can appear in Google Search results (if not subject to a manual action or removal request) with all relevant enhancements. Learn more\nVIEW CRAWLED PAGE\nPage changed?\nREQUEST INDEXING\ncheck_circle\nPage indexing\nPage is indexed\n\nDiscovery\nSitemaps\nhttps://pets.madabase.com/sitemap.xml\nReferring page\nhttps://pets.madabase.com/en-gb/reviews/shark-neverchange-max-air-purifier\nhttps://pets.madabase.com/sitemap.xml\nCrawl\nLast crawl\nOct 4, 2026, 3:37:45 AM\nCrawled as\nGooglebot smartphone\nCrawl allowed?\nYes\nPage fetch\nSuccessful\nIndexing allowed?\nYes\nIndexing\nUser-declared canonical\nhttps://pets.madabase.com/reviews/levoit-vital-200s-p-air-purifier\nGoogle-selected canonical\n\nInspected URL\nLEARN MORE\nOPEN REPORT\nEnhancements & Experience\ncheck_circle\nHTTPS\nPage is served over HTTPS\n\ncheck_circle\nBreadcrumbs\n1 valid item detected\n"
+    },
+    {
+      "url": "https://style.madabase.com/guides/loungefly-faux-leather-rain-and-care-guide",
+      "text": "check_circle\nURL is on Google\nIt can appear in Google Search results (if not subject to a manual action or removal request) with all relevant enhancements. Learn more\nVIEW CRAWLED PAGE\nPage changed?\nREQUEST INDEXING\ncheck_circle\nPage indexing\nPage is indexed\n\nDiscovery\nSitemaps\nNo referring sitemaps detected\nReferring page\nhttps://style.madabase.com/de-de/guides/loungefly-faux-leather-rain-and-care-guide\nhttps://style.madabase.com/sitemap.xml\nCrawl\nLast crawl\nAug 6, 2026, 12:18:53 PM\nCrawled as\nGooglebot smartphone\nCrawl allowed?\nYes\nPage fetch\nSuccessful\nIndexing allowed?\nYes\nIndexing\nUser-declared canonical\nhttps://style.madabase.com/guides/loungefly-faux-leather-rain-and-care-guide\nGoogle-selected canonical\n\nInspected URL\nLEARN MORE\nOPEN REPORT\nEnhancements & Experience\ncheck_circle\nHTTPS\nPage is served over HTTPS\n\ncheck_circle\nBreadcrumbs\n1 valid item detected\n"
+    },
+    {
+      "url": "https://costumes.madabase.com/guides/costume-rental-vs-buying-guide",
+      "text": "check_circle\nURL is on Google\nIt can appear in Google Search results (if not subject to a manual action or removal request) with all relevant enhancements. Learn more\nVIEW CRAWLED PAGE\nPage changed?\nREQUEST INDEXING\ncheck_circle\nPage indexing\nPage is indexed\n\nDiscovery\nSitemaps\nhttps://costumes.madabase.com/sitemap.xml\nReferring page\nhttps://costumes.madabase.com/sitemap.xml\nCrawl\nLast crawl\nAug 9, 2026, 9:38:06 PM\nCrawled as\nGooglebot smartphone\nCrawl allowed?\nYes\nPage fetch\nSuccessful\nIndexing allowed?\nYes\nIndexing\nUser-declared canonical\nhttps://costumes.madabase.com/guides/costume-rental-vs-buying-guide\nGoogle-selected canonical\n\nInspected URL\nLEARN MORE\nOPEN REPORT\nEnhancements & Experience\ncheck_circle\nHTTPS\nPage is served over HTTPS\n\ncheck_circle\nBreadcrumbs\n1 valid item detected\n"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/usb-c-dock-vs-monitor-hub-guide",
+      "text": "info\nURL is not on Google\nThis page is not indexed. Pages that aren't indexed can't be served on Google. See the details below to learn why it wasn't indexed. Learn more\nVIEW CRAWLED PAGE\nPage changed?\nREQUEST INDEXING\ninfo\nPage indexing\nPage is not indexed: Crawled - currently not indexed\n\nDiscovery\nSitemaps\nhttps://homeoffice.madabase.com/sitemap.xml\nReferring page\nhttps://homeoffice.madabase.com/guides/usb-c-dock-ports-explained-guide\nhttps://homeoffice.madabase.com/sitemap.xml\nCrawl\nLast crawl\nAug 18, 2026, 9:39:20 AM\nCrawled as\nGooglebot smartphone\nCrawl allowed?\nYes\nPage fetch\nSuccessful\nIndexing allowed?\nYes\nIndexing\nUser-declared canonical\nhttps://homeoffice.madabase.com/guides/usb-c-dock-vs-monitor-hub-guide\nGoogle-selected canonical\n\nInspected URL\nLEARN MORE\nOPEN REPORT\nEnhancements & Experience\nOnly indexed URLs can have enhancements"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/monitor-arm-clamp-reinforcement-guide",
+      "text": "check_circle\nURL is on Google\nIt can appear in Google Search results (if not subject to a manual action or removal request) with all relevant enhancements. Learn more\nVIEW CRAWLED PAGE\nPage changed?\nREQUEST INDEXING\ncheck_circle\nPage indexing\nPage is indexed\n\nDiscovery\nSitemaps\nhttps://homeoffice.madabase.com/sitemap.xml\nReferring page\nhttps://homeoffice.madabase.com/de-de/best/best-monitor-arms-for-home-office\nhttps://homeoffice.madabase.com/sitemap.xml\nCrawl\nLast crawl\nSep 16, 2026, 6:36:57 PM\nCrawled as\nGooglebot smartphone\nCrawl allowed?\nYes\nPage fetch\nSuccessful\nIndexing allowed?\nYes\nIndexing\nUser-declared canonical\nNone\nGoogle-selected canonical\n\nInspected URL\nLEARN MORE\nOPEN REPORT\nEnhancements & Experience\ncheck_circle\nHTTPS\nPage is served over HTTPS\n\ncheck_circle\nBreadcrumbs\n1 valid item detected\n"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/portable-monitor-usb-c-dp-alt-mode-displaylink-guide",
+      "text": "check_circle\nURL is on Google\nIt can appear in Google Search results (if not subject to a manual action or removal request) with all relevant enhancements. Learn more\nVIEW CRAWLED PAGE\nPage changed?\nREQUEST INDEXING\ncheck_circle\nPage indexing\nPage is indexed\n\nDiscovery\nSitemaps\nhttps://homeoffice.madabase.com/sitemap.xml\nReferring page\nhttps://homeoffice.madabase.com/guides/home-office-acoustic-panels-vs-alternatives\nhttps://homeoffice.madabase.com/sitemap.xml\nCrawl\nLast crawl\nSep 19, 2026, 3:41:01 AM\nCrawled as\nGooglebot smartphone\nCrawl allowed?\nYes\nPage fetch\nSuccessful\nIndexing allowed?\nYes\nIndexing\nUser-declared canonical\nNone\nGoogle-selected canonical\n\nInspected URL\nLEARN MORE\nOPEN REPORT\nEnhancements & Experience\ncheck_circle\nHTTPS\nPage is served over HTTPS\n\ncheck_circle\nBreadcrumbs\n1 valid item detected\n"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/best/logitech-litra-glow-vs-elgato-key-light-neo",
+      "text": "check_circle\nURL is on Google\nIt can appear in Google Search results (if not subject to a manual action or removal request) with all relevant enhancements. Learn more\nVIEW CRAWLED PAGE\nPage changed?\nREQUEST INDEXING\ncheck_circle\nPage indexing\nPage is indexed\n\nDiscovery\nSitemaps\nhttps://homeoffice.madabase.com/sitemap.xml\nReferring page\nhttps://homeoffice.madabase.com/en-ca/reviews/lume-cube-edge-2-desk-light\nhttps://homeoffice.madabase.com/guides/key-light-for-glasses-glare-placement\nCrawl\nLast crawl\nOct 2, 2026, 6:38:34 AM\nCrawled as\nGooglebot smartphone\nCrawl allowed?\nYes\nPage fetch\nSuccessful\nIndexing allowed?\nYes\nIndexing\nUser-declared canonical\nNone\nGoogle-selected canonical\n\nInspected URL\nLEARN MORE\nOPEN REPORT\nEnhancements & Experience\ncheck_circle\nHTTPS\nPage is served over HTTPS\n\ncheck_circle\nBreadcrumbs\n1 valid item detected\n"
+    },
+    {
+      "url": "https://network.madabase.com/guides/pcie-wifi-adapters-vs-alternatives",
+      "text": "check_circle\nURL is on Google\nIt can appear in Google Search results (if not subject to a manual action or removal request) with all relevant enhancements. Learn more\nVIEW CRAWLED PAGE\nPage changed?\nREQUEST INDEXING\ncheck_circle\nPage indexing\nPage is indexed\n\nDiscovery\nSitemaps\nhttps://network.madabase.com/sitemap.xml\nReferring page\nhttps://network.madabase.com/guides/pcie-wifi-adapters-compatibility-and-fit-guide\nhttps://network.madabase.com/sitemap.xml\nCrawl\nLast crawl\nOct 14, 2026, 3:19:37 AM\nCrawled as\nGooglebot smartphone\nCrawl allowed?\nYes\nPage fetch\nSuccessful\nIndexing allowed?\nYes\nIndexing\nUser-declared canonical\nhttps://network.madabase.com/guides/pcie-wifi-adapters-vs-alternatives\nGoogle-selected canonical\n\nInspected URL\nLEARN MORE\nOPEN REPORT\nEnhancements & Experience\ncheck_circle\nHTTPS\nPage is served over HTTPS\n\ncheck_circle\nBreadcrumbs\n1 valid item detected\n"
+    },
+    {
+      "url": "https://network.madabase.com/guides/direct-attach-copper-cables-vs-alternatives",
+      "text": "check_circle\nURL is on Google\nIt can appear in Google Search results (if not subject to a manual action or removal request) with all relevant enhancements. Learn more\nVIEW CRAWLED PAGE\nPage changed?\nREQUEST INDEXING\ncheck_circle\nPage indexing\nPage is indexed\n\nDiscovery\nSitemaps\nhttps://network.madabase.com/sitemap.xml\nReferring page\nhttps://network.madabase.com/sitemap.xml\nCrawl\nLast crawl\nOct 14, 2026, 5:12:08 AM\nCrawled as\nGooglebot smartphone\nCrawl allowed?\nYes\nPage fetch\nSuccessful\nIndexing allowed?\nYes\nIndexing\nUser-declared canonical\nhttps://network.madabase.com/guides/direct-attach-copper-cables-vs-alternatives\nGoogle-selected canonical\n\nInspected URL\nLEARN MORE\nOPEN REPORT\nEnhancements & Experience\ncheck_circle\nHTTPS\nPage is served over HTTPS\n\ncheck_circle\nBreadcrumbs\n1 valid item detected\n"
+    },
+    {
+      "url": "https://baby.madabase.com/guides/ergobaby-omni-breeze-positions-by-age",
+      "text": "check_circle\nURL is on Google\nIt can appear in Google Search results (if not subject to a manual action or removal request) with all relevant enhancements. Learn more\nVIEW CRAWLED PAGE\nPage changed?\nREQUEST INDEXING\ncheck_circle\nPage indexing\nPage is indexed\n\nDiscovery\nSitemaps\nhttps://baby.madabase.com/sitemap.xml\nReferring page\nhttps://baby.madabase.com/en-ca/guides/ergobaby-omni-breeze-positions-by-age\nhttps://baby.madabase.com/de-de/reviews/ergobaby-omni-breeze-carrier\nhttps://baby.madabase.com/categories/travel\nCrawl\nLast crawl\nOct 12, 2026, 4:00:18 AM\nCrawled as\nGooglebot smartphone\nCrawl allowed?\nYes\nPage fetch\nSuccessful\nIndexing allowed?\nYes\nIndexing\nUser-declared canonical\nhttps://baby.madabase.com/guides/ergobaby-omni-breeze-positions-by-age\nGoogle-selected canonical\n\nInspected URL\nLEARN MORE\nOPEN REPORT\nEnhancements & Experience\ncheck_circle\nHTTPS\nPage is served over HTTPS\n\ncheck_circle\nBreadcrumbs\n1 valid item detected\n"
+    },
+    {
+      "url": "https://smarthome.madabase.com/reviews/aqara-presence-multi-sensor-fp300",
+      "text": "check_circle\nURL is on Google\nIt can appear in Google Search results (if not subject to a manual action or removal request) with all relevant enhancements. Learn more\nVIEW CRAWLED PAGE\nPage changed?\nREQUEST INDEXING\ncheck_circle\nPage indexing\nPage is indexed\n\nDiscovery\nSitemaps\nTemporary processing error\nReferring page\nhttps://smarthome.madabase.com/en-gb/reviews/aqara-presence-multi-sensor-fp300\nCrawl\nLast crawl\nAug 9, 2026, 5:46:15 AM\nCrawled as\nGooglebot smartphone\nCrawl allowed?\nYes\nPage fetch\nSuccessful\nIndexing allowed?\nYes\nIndexing\nUser-declared canonical\nhttps://smarthome.madabase.com/reviews/aqara-presence-multi-sensor-fp300\nGoogle-selected canonical\n\nInspected URL\nLEARN MORE\nOPEN REPORT\nEnhancements & Experience\ncheck_circle\nHTTPS\nPage is served over HTTPS\n\ncheck_circle\nBreadcrumbs\n1 valid item detected\n"
+    },
+    {
+      "url": "https://pets.madabase.com/guides/automatic-feeder-cleaning-checklist",
+      "text": "check_circle\nURL is on Google\nIt can appear in Google Search results (if not subject to a manual action or removal request) with all relevant enhancements. Learn more\nVIEW CRAWLED PAGE\nPage changed?\nREQUEST INDEXING\ncheck_circle\nPage indexing\nPage is indexed\n\nDiscovery\nSitemaps\nhttps://pets.madabase.com/sitemap.xml\nReferring page\nhttps://pets.madabase.com/sitemap.xml\nCrawl\nLast crawl\nSep 29, 2026, 12:07:48 PM\nCrawled as\nGooglebot smartphone\nCrawl allowed?\nYes\nPage fetch\nSuccessful\nIndexing allowed?\nYes\nIndexing\nUser-declared canonical\nNone\nGoogle-selected canonical\n\nInspected URL\nLEARN MORE\nOPEN REPORT\nEnhancements & Experience\ncheck_circle\nHTTPS\nPage is served over HTTPS\n\ncheck_circle\nBreadcrumbs\n1 valid item detected\n"
+    },
+    {
+      "url": "https://style.madabase.com/guides/mini-backpack-capacity-measurement-guide",
+      "text": "check_circle\nURL is on Google\nIt can appear in Google Search results (if not subject to a manual action or removal request) with all relevant enhancements. Learn more\nVIEW CRAWLED PAGE\nPage changed?\nREQUEST INDEXING\ncheck_circle\nPage indexing\nPage is indexed\n\nDiscovery\nSitemaps\nNo referring sitemaps detected\nReferring page\nhttps://style.madabase.com/guides/how-to-style-novelty-accessories-without-looking-costumey\nhttps://style.madabase.com/\nCrawl\nLast crawl\nAug 10, 2026, 2:17:35 AM\nCrawled as\nGooglebot smartphone\nCrawl allowed?\nYes\nPage fetch\nSuccessful\nIndexing allowed?\nYes\nIndexing\nUser-declared canonical\nhttps://style.madabase.com/guides/mini-backpack-capacity-measurement-guide\nGoogle-selected canonical\n\nInspected URL\nLEARN MORE\nOPEN REPORT\nEnhancements & Experience\ncheck_circle\nHTTPS\nPage is served over HTTPS\n\ncheck_circle\nBreadcrumbs\n1 valid item detected\n"
+    },
+    {
+      "url": "https://costumes.madabase.com/guides/when-to-order-a-halloween-costume",
+      "text": "check_circle\nURL is on Google\nIt can appear in Google Search results (if not subject to a manual action or removal request) with all relevant enhancements. Learn more\nVIEW CRAWLED PAGE\nPage changed?\nREQUEST INDEXING\ncheck_circle\nPage indexing\nPage is indexed\n\nDiscovery\nSitemaps\nhttps://costumes.madabase.com/sitemap.xml\nReferring page\nhttps://costumes.madabase.com/sitemap.xml\nCrawl\nLast crawl\nAug 9, 2026, 9:32:39 PM\nCrawled as\nGooglebot smartphone\nCrawl allowed?\nYes\nPage fetch\nSuccessful\nIndexing allowed?\nYes\nIndexing\nUser-declared canonical\nhttps://costumes.madabase.com/guides/when-to-order-a-halloween-costume\nGoogle-selected canonical\n\nInspected URL\nLEARN MORE\nOPEN REPORT\nEnhancements & Experience\ncheck_circle\nHTTPS\nPage is served over HTTPS\n\ncheck_circle\nBreadcrumbs\n1 valid item detected\n"
+    },
+    {
+      "url": "https://costumes.madabase.com/guides/props-and-animatronics-vs-alternatives",
+      "text": "check_circle\nURL is on Google\nIt can appear in Google Search results (if not subject to a manual action or removal request) with all relevant enhancements. Learn more\nVIEW CRAWLED PAGE\nPage changed?\nREQUEST INDEXING\ncheck_circle\nPage indexing\nPage is indexed\n\nDiscovery\nSitemaps\nhttps://costumes.madabase.com/sitemap.xml\nReferring page\nhttps://costumes.madabase.com/sitemap.xml\nCrawl\nLast crawl\nOct 15, 2026, 6:26:37 PM\nCrawled as\nGooglebot smartphone\nCrawl allowed?\nYes\nPage fetch\nSuccessful\nIndexing allowed?\nYes\nIndexing\nUser-declared canonical\nhttps://costumes.madabase.com/guides/props-and-animatronics-vs-alternatives\nGoogle-selected canonical\n\nInspected URL\nLEARN MORE\nOPEN REPORT\nEnhancements & Experience\ncheck_circle\nHTTPS\nPage is served over HTTPS\n\ncheck_circle\nBreadcrumbs\n1 valid item detected\n"
+    }
+  ],
+  "current28dRows": [
+    [
+      "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-vs-alternatives",
+      "3",
+      "18",
+      "16.7%",
+      "5.9"
+    ],
+    [
+      "https://homeoffice.madabase.com/best/logitech-litra-glow-vs-elgato-key-light-neo",
+      "2",
+      "54",
+      "3.7%",
+      "6.2"
+    ],
+    [
+      "https://homeoffice.madabase.com/guides/48-vs-55-inch-desk-guide",
+      "2",
+      "29",
+      "6.9%",
+      "7.6"
+    ],
+    [
+      "https://baby.madabase.com/guides/ergobaby-omni-breeze-positions-by-age",
+      "1",
+      "58",
+      "1.7%",
+      "7.5"
+    ],
+    [
+      "https://homeoffice.madabase.com/guides/monitor-arm-clamp-reinforcement-guide",
+      "1",
+      "48",
+      "2.1%",
+      "7.9"
+    ],
+    [
+      "https://homeoffice.madabase.com/guides/portable-monitor-usb-c-dp-alt-mode-displaylink-guide",
+      "0",
+      "71",
+      "0%",
+      "8.6"
+    ],
+    [
+      "https://baby.madabase.com/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
+      "0",
+      "34",
+      "0%",
+      "13.4"
+    ],
+    [
+      "https://smarthome.madabase.com/guides/matter-thread-wifi-zigbee-device-checklist",
+      "0",
+      "29",
+      "0%",
+      "27.2"
+    ],
+    [
+      "https://baby.madabase.com/guides/infant-bath-tubs-safety-and-skip-guide",
+      "0",
+      "22",
+      "0%",
+      "8.2"
+    ],
+    [
+      "https://smarthome.madabase.com/reviews/aqara-presence-multi-sensor-fp300",
+      "0",
+      "22",
+      "0%",
+      "14.6"
+    ],
+    [
+      "https://baby.madabase.com/guides/nursery-glider-chairs-safety-and-skip-guide",
+      "0",
+      "15",
+      "0%",
+      "9.3"
+    ],
+    [
+      "https://network.madabase.com/guides/deco-be63-vs-be67-vs-be85-buying-guide",
+      "0",
+      "8",
+      "0%",
+      "4.6"
+    ],
+    [
+      "https://baby.madabase.com/guides/double-strollers-compatibility-and-fit-guide",
+      "0",
+      "8",
+      "0%",
+      "9.6"
+    ],
+    [
+      "https://homeoffice.madabase.com/guides/usb-c-dock-vs-monitor-hub-guide",
+      "0",
+      "8",
+      "0%",
+      "9.6"
+    ],
+    [
+      "https://homeoffice.madabase.com/guides/office-paper-shredders-vs-alternatives",
+      "0",
+      "4",
+      "0%",
+      "31.5"
+    ],
+    [
+      "https://pets.madabase.com/reviews/levoit-vital-200s-p-air-purifier",
+      "0",
+      "3",
+      "0%",
+      "2.0"
+    ],
+    [
+      "https://homeoffice.madabase.com/guides/business-usb-c-monitors-vs-alternatives",
+      "0",
+      "3",
+      "0%",
+      "18.7"
+    ],
+    [
+      "https://homeoffice.madabase.com/guides/low-profile-keyboards-vs-alternatives",
+      "0",
+      "3",
+      "0%",
+      "25.7"
+    ],
+    [
+      "https://pets.madabase.com/guides/automatic-feeder-cleaning-checklist",
+      "0",
+      "1",
+      "0%",
+      "6.0"
+    ],
+    [
+      "https://homeoffice.madabase.com/guides/dual-monitor-kvm-switches-vs-alternatives",
+      "0",
+      "1",
+      "0%",
+      "52.0"
+    ]
+  ],
+  "comparison7dRows": [
+    [
+      "https://smarthome.madabase.com/reviews/aqara-presence-multi-sensor-fp300",
+      "0",
+      "0",
+      "0",
+      "6",
+      "9",
+      "-3",
+      "0%",
+      "0%",
+      "0%",
+      "28.3",
+      "12.3",
+      "16"
+    ],
+    [
+      "https://homeoffice.madabase.com/guides/monitor-arm-clamp-reinforcement-guide",
+      "0",
+      "0",
+      "0",
+      "3",
+      "0",
+      "3",
+      "0%",
+      "0%",
+      "0%",
+      "25.3",
+      "0",
+      "25.3"
+    ],
+    [
+      "https://homeoffice.madabase.com/guides/portable-monitor-usb-c-dp-alt-mode-displaylink-guide",
+      "0",
+      "0",
+      "0",
+      "2",
+      "0",
+      "2",
+      "0%",
+      "0%",
+      "0%",
+      "5.5",
+      "0",
+      "5.5"
+    ],
+    [
+      "https://pets.madabase.com/guides/automatic-feeder-cleaning-checklist",
+      "0",
+      "0",
+      "0",
+      "1",
+      "0",
+      "1",
+      "0%",
+      "0%",
+      "0%",
+      "6",
+      "0",
+      "6"
+    ],
+    [
+      "https://smarthome.madabase.com/guides/matter-thread-wifi-zigbee-device-checklist",
+      "0",
+      "0",
+      "0",
+      "0",
+      "10",
+      "-10",
+      "0%",
+      "0%",
+      "0%",
+      "0",
+      "30.3",
+      "-30.3"
+    ],
+    [
+      "https://network.madabase.com/guides/deco-be63-vs-be67-vs-be85-buying-guide",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1",
+      "-1",
+      "0%",
+      "0%",
+      "0%",
+      "0",
+      "3",
+      "-3"
+    ],
+    [
+      "https://baby.madabase.com/guides/ergobaby-omni-breeze-positions-by-age",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1",
+      "-1",
+      "0%",
+      "0%",
+      "0%",
+      "0",
+      "15",
+      "-15"
+    ]
+  ],
+  "usbDockLiveTest": "Tested on: Oct 19, 2026, 2:30 PM\n\ncheck_circle\nURL is available to Google\nIf it gets indexed and selected as canonical, it could appear in Google Search results with all relevant enhancements. Learn more\nVIEW TESTED PAGE\nPage changed?\nREQUEST INDEXING\ncheck_circle\nPage availability\nPage can be indexed\n\nURL will be indexed only if certain conditions are met\nDiscovery\nNot checked in live tests\nCrawl\nTime\nOct 19, 2026, 2:30:46 PM\nCrawled as\nGoogle Inspection Tool smartphone\nCrawl allowed?\nYes\nPage fetch\nSuccessful\nIndexing allowed?\nYes\nIndexing\nUser-declared canonical\nhttps://homeoffice.madabase.com/guides/usb-c-dock-vs-monitor-hub-guide\nGoogle-selected canonical\n\nOnly determined after indexing\nLEARN MORE\nEnhancements & Experience\ncheck_circle\nBreadcrumbs\n1 valid item detected\n"
+}

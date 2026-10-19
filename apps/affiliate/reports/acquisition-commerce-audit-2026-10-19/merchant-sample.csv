@@ -1,0 +1,14 @@
+site,asin,product,availability,decision
+homeoffice,B09GK8LBWS,CalDigit TS4,In Stock,Keep exact TS4 intent; add TS5/TS5 Plus selection context after exact successor offers are verified
+homeoffice,B0DDTH3HX8,Insta360 Link 2,In Stock,Keep budget/gimbal use case; compare current Pro generations using official sources
+baby,B0931ZY7DK,"Ergobaby Omni Breeze, linked black variant",Only 1 left in stock,Priority availability recheck and Omni Deluxe choice context; no silent variant or model substitution
+network,B0CN8QLS4K,Deco BE63 3-pack,In Stock,Retain value choice; support current BE67 choice and equivalent pack sizes on existing comparison page
+smarthome,B0FRS6T6HL,Aqara U400 Black,In Stock,Current model already covered; maintain compatibility and exact regional-version evidence
+smarthome,B0FG2MD3YP,Aqara FP300,In Stock,Current model already covered; continue exact-page discovery and conversion measurement
+pet,B0GS7FF1D6,Coway Airmega Mighty2 AP-1512N(W),In Stock,"Current generation already covered; prioritize room-size, filter-cost and pet-use fit"
+style,B06XH489LG,Loungefly Minnie Mouse Bow bag,In Stock,Old design remains available; no evidence that chasing every new design will bring qualified demand
+baby,B0876T9DQZ,Philips Avent Premium Fast Bottle Warmer,In Stock,Keep model-specific query intent; distinguish US version and alternatives instead of changing merely for age
+network,B076MGPQZQ,Klein Tools VDV226-110 pass-through crimper,In Stock,Protect AI-tagged click-bearing guide and restore internal event persistence
+baby,B0DK1KZ9RQ,1 Pack Childproof Door Knob Cover,In Stock,"Protect click-bearing guide; recheck exact pack, fit and safety evidence"
+baby,B001ECHXVC,Little Partners Original Learning Tower LP01411 Natural,Currently unavailable; no known restock date,P0: proposed suppression of exact unavailable CTA; verify a same-job replacement before any new purchase destination. Production currently still links this ASIN in two positions
+homeoffice,B0G92CQ7KH,TONOR 4-pack wood wall panels 47.2 x 23.6 inches,Unconfirmed purchase state: default Prime-exclusive buybox shows Join Prime; ordinary-price and seller/delivery options are visible but were not activated.,"Recheck ordinary-price selected offer, full pack/area cost and acoustic-treatment suitability; default membership-required offer can add friction."

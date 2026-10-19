@@ -1,0 +1,8 @@
+site,host,latest24hImpressions,oct13SnapshotImpressions,current7dImpressions,previous7dImpressions,current28dClicks,previous28dClicks,current28dImpressions,previous28dImpressions,bing30dImpressions,bing30dClicks,bingAi30dSampleCitations,clarity30dAffiliateClickSessions
+network,network.madabase.com,1,1,33,6,0,5,83,194,353,14,463,1
+smarthome,smarthome.madabase.com,2,2,20,27,0,0,123,66,231,9,97,0
+homeoffice,homeoffice.madabase.com,1,1,22,11,10,13,1155,3813,57,0,44,2
+baby,baby.madabase.com,22,0,13,11,6,7,975,2128,44,3,131,2
+pet,pets.madabase.com,2,1,17,7,0,0,73,51,11,0,11,0
+style,style.madabase.com,0,0,10,1,0,0,12,1,1,0,0,0
+costume,costumes.madabase.com,0,0,9,0,0,0,10,5,9,1,8,0

@@ -5595,5 +5595,276 @@
     "decision": "Exposure breadth has rebounded relative to the two saved snapshots, concentrated in Smarthome; no clicks and zero exposure in the exact October 13 changed batch. This is an early exposure signal, not confirmed content-release recovery. Preserve October 20 full-batch review.",
     "actions": "Read-only UI/export/public probes and evidence records; no site edits, deployment, search-submission or automation.",
     "nextReview": "2026-10-20 full October 13 changed batch plus prior cohort; keep existing later gates."
+  },
+  "acquisitionCommerceAudit20261019": {
+    "report": "apps/affiliate/reports/acquisition-commerce-audit-2026-10-19/README.md",
+    "mode": "Read-only comprehensive diagnosis; no site, offer, deployment, submission, distribution or automation changes",
+    "gsc": {
+      "latestComplete7d": "Oct10-16 vs Oct3-9",
+      "property7dImpressions": [
+        58,
+        64
+      ],
+      "affiliate7dImpressions": [
+        124,
+        63
+      ],
+      "affiliate7dClicks": [
+        0,
+        0
+      ],
+      "affiliate28dImpressions": [
+        2431,
+        6258
+      ],
+      "affiliate28dClicks": [
+        16,
+        25
+      ],
+      "latest24hAffiliateImpressions": 28,
+      "latest24hAffiliateClicks": 0,
+      "oct13ExactChangedBatch24h": {
+        "pages": 3,
+        "impressions": 4,
+        "clicks": 0
+      }
+    },
+    "bing": {
+      "sevenSite30dPageImpressions": 706,
+      "sevenSite30dPageClicks": 27,
+      "ai30dPropertyCitations": 939,
+      "ai30dAffiliatePageSampleCitations": 754,
+      "protectionLedgerUrls": 181,
+      "preserve": "Existing URL, canonical, intent and permanent-redirect mappings. No Google-only merge/retarget decisions."
+    },
+    "clarity": {
+      "sharedProjectLast30dHumanSessions": 174,
+      "excludedBots": 1521,
+      "affiliateClickSessions": 5,
+      "chatgptUtmClickSessions": 3,
+      "limits": "Shared project includes Main; UTM is not order attribution."
+    },
+    "amazon": {
+      "window": "Sep18-Oct17 US Associates",
+      "clicks": 14,
+      "orderedItems": 10,
+      "directItemsOrdered": 0,
+      "netEarningsUsd": 0.58,
+      "last7dClicks": 3,
+      "last7dOrders": 0,
+      "trackingSplit": "Only suppressed Other row; seven-site order attribution unavailable"
+    },
+    "criticalFindings": [
+      "Baby toddler-learning-towers-buying-guide currently exposes two B001ECHXVC CTAs; exact Little Partners LP01411 Natural is unavailable in US 10001. It is the landing page of the only last-7d Clarity affiliate-click session. Proposed fix only; online offer not modified.",
+      "GuidePage emits family-{familySlug}-{asin} IDs, AffiliateClick API validates only findProduct. Four exact local runtime reproductions fail lookup. Clarity event and direct Amazon tag remain; production failure frequency not measured.",
+      "Runtime available catalog: 505 Amazon offer records, 504 unique site+ASIN identities. Old 294-entry checker covers 294 runtime identities and misses 210; format pass is not full-catalog or availability verification.",
+      "355 published family catalog records retain Aug9-13 verification dates, 67-71 days old; 349 unblocked. 13 ASIN samples: 11 explicitly available/low-stock, 1 unavailable, 1 stock state unconfirmed."
+    ],
+    "productDecision": "Refresh inventory/stock first, then current-generation context for TS4 vs TS5/TS5 Plus, Link 2 vs Pro, Omni Breeze vs Deluxe. U400/FP300/Mighty2 current models already covered. No blanket model replacement/new subdomain/bulk page expansion.",
+    "nextActions": [
+      "P0 suppress unavailable exact tower offer, verify safe exact replacement before enabling CTA",
+      "P0 unify runtime commerce inventory and family-click validation while preserving QA exclusion, idempotency and attribution",
+      "P1 protect/convert existing Bing, Google and AI landing pages; improve exact product and pack choice",
+      "Complete existing Oct20 full cohort/index inspection gate; maintain Oct27/Nov12 gates"
+    ],
+    "scopeLimits": "No production click DB, crawl/firewall logs, new CJ transaction data, full live-stock audit or full URL-index inspection completed in this review."
+  },
+  "commerceRepair20261019": {
+    "status": "deployed-and-publicly-verified",
+    "scope": "Owner-authorized exact offer safety and measurement fixes; bounded refresh of 12 existing canonicals; no new routes or title/intent/canonical changes. Preserve Bing/AI traffic and all existing consolidation mappings.",
+    "offersSuppressed": [
+      "Baby Original Learning Tower LP01411 Natural B001ECHXVC",
+      "Network Deco BE85 2-pack B0C4W1L4B3"
+    ],
+    "measurement": "Guide family identifiers now share the runtime resolver with the click API; QA validates without database or analytics writes, wrong/blocked identities reject and real eventId upserts stay idempotent.",
+    "inventory": "Runtime checker covers all 502 unblocked (site,ASIN) groups after two new blocks: 209 former gaps checked and one former gap deliberately suppressed. Structure and attribution passes do not certify live stock.",
+    "report": "apps/affiliate/reports/commerce-repair-2026-10-19/",
+    "validation": {
+      "status": "deployed-and-publicly-verified",
+      "primaryChangedCanonicals": 12,
+      "publishedCommerceIdentities": 530,
+      "runtimeSiteAsinsChecked": 502,
+      "previousMissedGroups": 210,
+      "previousMissedNowCovered": 209,
+      "previousMissedNowSuppressed": 1,
+      "newlySuppressed": [
+        "baby:B001ECHXVC",
+        "network:B0C4W1L4B3"
+      ],
+      "regressionTests": "passed: published family identities, authorized merchants, blocked offers, input types, QA no-write, event idempotency",
+      "seo": "passed",
+      "lint": "passed",
+      "typescript": "passed",
+      "productionBuild": "passed",
+      "localRouteComparison": {
+        "passed": 290,
+        "deferredToOrigin": [
+          "Costume database product",
+          "Costume database sitemap"
+        ],
+        "deferredToOriginResolved": true
+      },
+      "publicBaseline": {
+        "passed": 292,
+        "bingAiProtected": 181,
+        "cohortTargets": 31
+      },
+      "maintenanceAuthority": "Owner explicitly approved temporary Main and Test pause for this release on 2026-10-19; restore immediately with independent timers. Tools excluded.",
+      "completedAt": "2026-10-19T15:03:23.195029+08:00",
+      "dependentChangedCanonicals": 5,
+      "merchantAsinsIndividuallyChecked": 16,
+      "publicFinal": {
+        "checkedAt": "2026-10-19T14:57:28+0800",
+        "urlsPassed": 296,
+        "errors": 0,
+        "protectedBingAiUrls": 181,
+        "cohortTargets": 31,
+        "metadataAndDiscoveryPreserved": true
+      },
+      "mobile": {
+        "width": 390,
+        "height": 844,
+        "pagesPassed": 12,
+        "horizontalOverflow": 0,
+        "blockedSponsoredLinks": 0
+      },
+      "productionClickQa": {
+        "validFamilyIdentitiesAccepted": 3,
+        "blockedIdentitiesRejected": 2,
+        "syntheticProductionWrites": 0
+      },
+      "originAcceptance": {
+        "targets": 42,
+        "existingRedirects": 308,
+        "sitemaps": 7,
+        "errors": 0,
+        "costumeDbProduct": "passed",
+        "costumeDbSitemapProductUrlsPreserved": 76
+      },
+      "indexnow": {
+        "submittedChangedCanonicals": 17,
+        "network": 10,
+        "homeoffice": 4,
+        "baby": 3,
+        "responses": "HTTP 200 for all three hosts"
+      },
+      "cache": {
+        "action": "20 exact full-path prefix purges after single-URL purge left stale HTML variants",
+        "wholeZonePurged": false,
+        "settingsChanged": false,
+        "plainCanonicalBodiesVerified": true
+      },
+      "mainAndTestRestored": true,
+      "changedDocumentDetails": {
+        "pages": 17,
+        "http200": 17,
+        "validJsonLd": 17,
+        "sitemapPresent": 17,
+        "repeatRequestHtmlHit": 17,
+        "imageEndpointsGetPassed": 16,
+        "rscCache": "DYNAMIC",
+        "localQaServerStopped": true
+      }
+    },
+    "nextGates": [
+      "October19 early inspection completed for all31 URLs; formal post-October13 outcome gate awaits a complete post-release seven-day GSC window",
+      "2026-10-27 conversion and new release check",
+      "2026-11-05 Oct6 day30",
+      "2026-11-12 Oct13 day30"
+    ],
+    "completedAt": "2026-10-19T15:03:23.195029+08:00",
+    "deployedCommit": "5de949a2646289d696cbf83af465b3ba744d4b65",
+    "deployment": {
+      "completedAt": "2026-10-19T14:32:16+0800",
+      "releaseCommit": "5de949a2646289d696cbf83af465b3ba744d4b65",
+      "artifact": {
+        "sha256": "b51c1479b9c308dd41edf9c51dfd8c94e1ae90cb358ec439f5f86696aa143fcf",
+        "bytes": 60940575,
+        "builtWith": "Node 20.20.0; Next 15.5.23; Linux x64 sharp dependencies from npm official registry",
+        "newIndexableUrls": 0
+      },
+      "actualWorkingDirectory": "/srv/madabase-affiliate/releases/commerce-20261019-5de949a2646289d696cbf83af465b3ba744d4b65",
+      "rollbackWorkingDirectory": "/srv/madabase-affiliate/releases/focus-20261013-3ddb75d66d84ebf9b89b7eb026dfb1e4d8baaada",
+      "authority": "Owner explicitly approved this release and temporary Main plus Test pause",
+      "maintenance": {
+        "startedAt": "2026-10-19T14:32:03+0800",
+        "restoredAt": "2026-10-19T14:32:18+0800",
+        "mainRestored": true,
+        "testRestored": true,
+        "testRuntimePort": 3009,
+        "independentRecoveryTimers": "inactive after confirmed restoration"
+      },
+      "postStopCapacity": {
+        "passed": true,
+        "availableMiB": 830.1875,
+        "requiredMiB": 704,
+        "candidateMiB": 512,
+        "reserveMiB": 192,
+        "pressureAvg10": 0
+      },
+      "preservedOldHashedAssets": 34,
+      "parallelCandidateStarted": false,
+      "finalServices": {
+        "affiliate": {
+          "active": true,
+          "running": true,
+          "restarts": 0
+        },
+        "main": {
+          "active": true,
+          "running": true,
+          "restarts": 0,
+          "workingDirectory": "/srv/madabase-main/releases/seo-20260925-8055b15"
+        },
+        "test": {
+          "active": true,
+          "running": true,
+          "restarts": 0,
+          "workingDirectory": "/srv/madabase-test/releases/local-20260820-next15523"
+        }
+      },
+      "affiliateErrorLevelJournalEntriesSinceCutover": 0,
+      "sourceEvidence": [
+        "deployment-transcript.txt",
+        "server-release.jpg",
+        "server-health.txt"
+      ],
+      "toolsTouched": false
+    },
+    "earlyCohortReview": {
+      "checkedDate": "2026-10-19",
+      "reviewType": "Early technical/index inspection and latest complete performance evidence; NOT a complete October 20 post-release outcome gate",
+      "gsc7dWindow": "2026-10-10..2026-10-16",
+      "previous7dWindow": "2026-10-03..2026-10-09",
+      "gsc28dWindow": "2026-09-19..2026-10-16",
+      "cohorts": {
+        "2026-10-06": {
+          "urls": 17,
+          "indexed": 17,
+          "gsc7dImpressions": 0,
+          "previous7dImpressions": 11,
+          "gsc7dClicks": 0,
+          "gsc28dClicks": 3,
+          "gsc28dImpressions": 148
+        },
+        "2026-10-13": {
+          "urls": 14,
+          "indexed": 13,
+          "gsc7dImpressions": 12,
+          "previous7dImpressions": 10,
+          "gsc7dClicks": 0,
+          "gsc28dClicks": 6,
+          "gsc28dImpressions": 291
+        }
+      },
+      "liveTest": "USB-C dock versus monitor hub: live fetch successful and indexing allowed on October 19 14:30 UI time; still crawled-currently-not-indexed in Google Index",
+      "nextAction": "Preserve all existing intents and Bing/AI entries; keep formal complete-data checks and existing October27/November5/November12 checkpoints. No Request Indexing, new routes, new subdomains or blanket consolidation."
+    },
+    "postReleaseDecision": "Measure naturally occurring merchant clicks and orders; preserve existing Bing/AI entrances and intents. No new domains or mass page expansion justified by the current small samples.",
+    "operationalLessons": [
+      "Accepted Cloudflare URL purge can leave stale HTML variants under request-matching cache rules; purge the same exact full paths by prefix and verify plain canonicals before acceptance",
+      "Test currently uses port3009; read the current systemd unit and listener instead of relying on the historical3000 default",
+      "Use ordinary GET to verify the Next image endpoint; HEAD can return400 while browser GET is healthy"
+    ]
   }
 }

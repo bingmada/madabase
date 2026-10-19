@@ -1,0 +1,21 @@
+affiliate_click_persisted {
+  eventId: 'local-test-1',
+  site: 'network',
+  market: 'us',
+  productSlug: 'family-pass-through-ethernet-crimping-tools-b076mgpqzq',
+  merchant: 'Amazon US',
+  position: 'guide-top',
+  path: '/guides/pass-through-ethernet-crimping-tools-buying-guide',
+  at: '2026-10-19T06:17:16.433Z'
+}
+affiliate_click_persisted {
+  eventId: 'local-test-1',
+  site: 'network',
+  market: 'us',
+  productSlug: 'family-pass-through-ethernet-crimping-tools-b076mgpqzq',
+  merchant: 'Amazon US',
+  position: 'guide-top',
+  path: '/guides/pass-through-ethernet-crimping-tools-buying-guide',
+  at: '2026-10-19T06:17:16.439Z'
+}
+{"passed":true,"publishedIdentities":530,"familyIdentities":355,"checkedSiteAsins":502,"oldGapsRecovered":209,"oldGapSuppressed":"baby:B001ECHXVC","qaWrites":0,"idempotentRows":1}
