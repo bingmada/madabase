@@ -1,0 +1,23 @@
+{
+  "probe": {
+    "passed": false,
+    "availableMiB": 449.95703125,
+    "sliceHeadroomMiB": "unlimited",
+    "requiredMiB": 704,
+    "candidateMiB": 512,
+    "reserveMiB": 192,
+    "pressureAvg10": 0,
+    "reasons": [
+      "Insufficient MemAvailable; swap does not count as candidate capacity."
+    ]
+  },
+  "anonymousMiB": {
+    "main": 54.3828125,
+    "affiliate": 260.1171875,
+    "test": 56.90625
+  },
+  "mainAffiliateForecastMiB": 764.45703125,
+  "withTestForecastMiB": 821.36328125,
+  "checkedAt": "2026-10-19T14:12:14.534Z",
+  "activationRejectedBeforeStoppingServices": true
+}

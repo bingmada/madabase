@@ -1,0 +1,39 @@
+{
+  "revision": "220b8038204e847da6609d83a6169c7222517754",
+  "status": "prepared",
+  "testWorkingDirectory": "/srv/madabase-test/releases/local-20260820-next15523",
+  "apps": {
+    "main": {
+      "old": "/srv/madabase-main/releases/journey-20261019-434cf229c9ab044a2db48490aa748dc5a4017434",
+      "new": "/srv/madabase-main/releases/journey-20261019-220b8038204e847da6609d83a6169c7222517754",
+      "sha256": "eda5b71f7c92643d8ee6383489e959982f6002cc0e2afe6e29ffd9d1f6a18943",
+      "retainedAssets": 27
+    },
+    "affiliate": {
+      "old": "/srv/madabase-affiliate/releases/journey-20261019-434cf229c9ab044a2db48490aa748dc5a4017434",
+      "new": "/srv/madabase-affiliate/releases/journey-20261019-220b8038204e847da6609d83a6169c7222517754",
+      "sha256": "a48ca9dda6592b5b4c2ab1b3d351dbd352b3b8e2aca6fba9720d07d3114fdc2c",
+      "retainedAssets": 60
+    }
+  },
+  "services": {
+    "main": {
+      "ActiveState": "active",
+      "WorkingDirectory": "/srv/madabase-main/releases/journey-20261019-434cf229c9ab044a2db48490aa748dc5a4017434",
+      "MainPID": "330424",
+      "NRestarts": "0"
+    },
+    "affiliate": {
+      "ActiveState": "active",
+      "WorkingDirectory": "/srv/madabase-affiliate/releases/journey-20261019-434cf229c9ab044a2db48490aa748dc5a4017434",
+      "MainPID": "330539",
+      "NRestarts": "0"
+    },
+    "test": {
+      "ActiveState": "active",
+      "WorkingDirectory": "/srv/madabase-test/releases/local-20260820-next15523",
+      "MainPID": "327154",
+      "NRestarts": "0"
+    }
+  }
+}

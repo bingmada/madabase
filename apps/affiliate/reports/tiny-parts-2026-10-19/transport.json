@@ -1,0 +1,38 @@
+{
+  "revision": "220b8038204e847da6609d83a6169c7222517754",
+  "method": "HTTPS raw files from pinned public owner repository commit",
+  "files": {
+    "deploy.py": {
+      "path": "apps/affiliate/reports/tiny-parts-2026-10-19/deploy.py",
+      "sha256": "e8cc8dd0a1872807c66752a2d5d737ee4bcf6d68c5a9bc00e242c07341c367fa",
+      "bytes": 12452
+    },
+    "artifact.json": {
+      "path": "apps/affiliate/reports/tiny-parts-2026-10-19/artifact.json",
+      "sha256": "8e6e30fc0be3a2abba288f74c45340791126573586744a25437f387dcaf1e15a",
+      "bytes": 526
+    },
+    "release-urls.json": {
+      "path": "apps/affiliate/reports/tiny-parts-2026-10-19/release-urls.json",
+      "sha256": "35a47bcc5cb67cf452e610c23ac19729d288613c72373a57dc6bffd1aecb2bdc",
+      "bytes": 1069
+    },
+    "check-release-capacity.mjs": {
+      "path": "apps/affiliate/reports/tiny-parts-2026-10-19/check-release-capacity.mjs",
+      "sha256": "dc3f33d8220b3ffbd381b8e271c1a6a818a05043e495df0d3e12917e70ec458e",
+      "bytes": 3765
+    },
+    "main-runtime.tgz": {
+      "path": "apps/main/.release/main-runtime.tgz",
+      "sha256": "eda5b71f7c92643d8ee6383489e959982f6002cc0e2afe6e29ffd9d1f6a18943",
+      "bytes": 17306412
+    },
+    "affiliate-runtime.tgz": {
+      "path": "apps/affiliate/.release/affiliate-runtime.tgz",
+      "sha256": "a48ca9dda6592b5b4c2ab1b3d351dbd352b3b8e2aca6fba9720d07d3114fdc2c",
+      "bytes": 61088173
+    }
+  },
+  "serverInputDirectory": "/var/tmp/madabase-tiny-parts-inputs-20261019",
+  "status": "all-six-downloaded-and-sha256-verified"
+}

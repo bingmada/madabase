@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "updatedAt": "2026-10-19T13:09:13.601861+00:00",
+  "updatedAt": "2026-10-19T14:05:32.250679+00:00",
   "status": "all-site-portfolio-recovery-deployed-and-publicly-verified",
   "objective": "Make affiliate traffic, merchant clicks, and commission revenue measurable before scaling content volume.",
   "socialWebsiteLinks20261012": {
@@ -51,7 +51,8 @@
     "seoSpamRecovery20261006": "Read this key and apps/affiliate/reports/seo-recovery-2026-10-06/README.md first. The final batch covers all seven active affiliate sites: Network, Smarthome, Homeoffice, Baby, Pet, Style and Costume. It retains 17 existing canonicals, permanently redirects 55 overlapping base URLs, adds zero routes and supersedes the earlier two-site-only package. Local production HTTP validation passed 55 base redirects, 220 regional redirects, 17 base canonicals, 64 regional canonicals and seven sitemaps; all 19 governed categories also passed. New publication and bulk Request Indexing remain frozen; use the exact October 13, October 20 and November 5 gates.",
     "portfolioStrategyReset20261008": "Read portfolioStrategyReset20261008, apps/affiliate/config/portfolio-recovery-2026-10-08.json and apps/affiliate/reports/portfolio-recovery-2026-10-08/deployment.json first. The seven-site workflow is deployed and publicly verified at bfb8689e4a63d5368036ef6e829fe492b840d919 after a production-only Costume evidence-boundary repair. Six Amazon sites have 1,147 of 1,147 effective public passes after bounded retry; Costume has 108 of 108 effective public passes after the repaired canonical completed normal SJC edge revalidation. Owner testing remains unavailable, so hands-on claims and Review structured data stay blocked. Keep the zero-new-URL freeze and the October 13, October 20 and November 5 gates.",
     "compatibilitySearch20261019": "User-journey repair 434cf229 is LIVE at 2026-10-19T20:59:56.304493+08:00. Read userJourney20261019 and apps/affiliate/reports/user-journey-2026-10-19/README.md first. Public317/317,10 browser decisions,7 mobile,49 current cache pages,32 assets,8 RSC hosts and9 zero-write click cases pass. Test never paused, all three active/0 restarts; previous a837332 releases retained. Manual rollback uses deploy.py rollback, not watchdog recover. Exact16 material updates accepted IndexNow HTTP200. Preserve Oct26/Nov2/Nov18 cohort dates; no new canonicals.",
-    "userJourney20261019": "User-journey repair 434cf229 is LIVE at 2026-10-19T20:59:56.304493+08:00. Read userJourney20261019 and apps/affiliate/reports/user-journey-2026-10-19/README.md first. Public317/317,10 browser decisions,7 mobile,49 current cache pages,32 assets,8 RSC hosts and9 zero-write click cases pass. Test never paused, all three active/0 restarts; previous a837332 releases retained. Manual rollback uses deploy.py rollback, not watchdog recover. Exact16 material updates accepted IndexNow HTTP200. Preserve Oct26/Nov2/Nov18 cohort dates; no new canonicals."
+    "userJourney20261019": "User-journey repair 434cf229 is LIVE at 2026-10-19T20:59:56.304493+08:00. Read userJourney20261019 and apps/affiliate/reports/user-journey-2026-10-19/README.md first. Public317/317,10 browser decisions,7 mobile,49 current cache pages,32 assets,8 RSC hosts and9 zero-write click cases pass. Test never paused, all three active/0 restarts; previous a837332 releases retained. Manual rollback uses deploy.py rollback, not watchdog recover. Exact16 material updates accepted IndexNow HTTP200. Preserve Oct26/Nov2/Nov18 cohort dates; no new canonicals.",
+    "tinyParts20261019": "Tiny expansion220b8038 is validated/pushed and server PREPARED, not deployed. Chrome recovered. Six files hash-verified; first no-Test activation safely rejected before service stop (forecast764.46MiB vs768MiB; withTest821.36MiB). Current explicit Test maintenance approval requested; do not reuse old authorization or lower gates. Read tinyParts20261019/delivery-status and prepared transaction. After approval bounded135s activate --allow-test-pause/150s recovery, then public4 cache/317 HTTP/merchant acceptance before exact4 IndexNow. Production still434cf229/all services unchanged."
   },
   "portfolioStrategyReset20261008": {
     "status": "production_deployed_and_publicly_verified",
@@ -6059,5 +6060,77 @@
     ],
     "sitemaps": "All seven live sitemaps and Costume database product passed; membership unchanged from same-day published cohort. Prior Google/Bing sitemap refresh retained, no duplicate bulk submission or Request Indexing.",
     "cache": "56 exact URL purges accepted; 18 exact content-file prefixes cleared after plain canonical retained old variant. Final49 current,48 affiliate repeat HIT; API/search/RSC uncached. No root prefix, hostname purge or rule changes."
+  },
+  "tinyParts20261019": {
+    "status": "prepared-awaiting-current-test-maintenance-authorization",
+    "sourceRevision": "220b8038204e847da6609d83a6169c7222517754",
+    "recordedAt": "2026-10-19T14:13:11.877583+00:00",
+    "report": "apps/affiliate/reports/tiny-parts-2026-10-19/README.md",
+    "newIndexableCanonicals": 0,
+    "documentedModels": 7,
+    "checkedMachineTypes": 7,
+    "catalogObservations": 18,
+    "uniqueFrus": 7,
+    "newMerchantIdentities": 1,
+    "validation": {
+      "newDecisionCasesPassed": 36,
+      "productionBuilds": [
+        "main",
+        "affiliate"
+      ],
+      "lint": "both passed",
+      "localHttpTargets": 317,
+      "localHttpRegressions": 0,
+      "localDatabaseDependentPending": 1,
+      "localBrowserCasesPassed": 8,
+      "mobile390x844Overflow": false,
+      "deploymentFailureTestsPassed": 10,
+      "searchEntries": 1134,
+      "ctaContrastRatio": 7.4249059553772465
+    },
+    "runtimeArtifacts": {
+      "main": {
+        "path": "apps/main/.release/main-runtime.tgz",
+        "bytes": 17306412,
+        "sha256": "eda5b71f7c92643d8ee6383489e959982f6002cc0e2afe6e29ffd9d1f6a18943"
+      },
+      "affiliate": {
+        "path": "apps/affiliate/.release/affiliate-runtime.tgz",
+        "bytes": 61088173,
+        "sha256": "a48ca9dda6592b5b4c2ab1b3d351dbd352b3b8e2aca6fba9720d07d3114fdc2c"
+      }
+    },
+    "productionCurrent": {
+      "release": "journey-20261019-434cf229c9ab044a2db48490aa748dc5a4017434",
+      "revision": "434cf229c9ab044a2db48490aa748dc5a4017434",
+      "lastVerifiedMainAffiliateTestActive": true,
+      "newPrepareOrActivateExecuted": true,
+      "testPaused": false,
+      "prepareExecuted": true,
+      "activateAttempted": true,
+      "activationResult": "forecast-rejected-before-service-stop",
+      "allServicesUnchanged": true
+    },
+    "connectionBlocker": null,
+    "transfer": "Six final-revision files fetched over pinned HTTPS and SHA-256/bytes matched; prepare completed. Activation rejected by forecast before stopping any service.",
+    "localPreview": "http://homeoffice.localhost:3023/compatibility/mini-pcs?madabase-qa=1",
+    "capacity": {
+      "forecastRequiredMiB": 768,
+      "actualRequiredMiB": 704,
+      "lastMeasuredProjectedMiB": 764.45703125,
+      "pressureAvg10": 0,
+      "mustRecheckBeforeActivation": true,
+      "withTestProjectedMiB": 821.36328125,
+      "forecastRejectedWithoutStoppingServices": true
+    },
+    "resume": "Inspect prepared transaction and current services. Await owner answer to current Test maintenance question. Only if approved activate with --allow-test-pause and a fresh named bounded135s controller/150s recovery; otherwise keep Test untouched. Preserve768/704MiB. Then complete origin/public/cache/merchant checks before exact4 IndexNow.",
+    "reviewDatesPreserved": [
+      "2026-10-26",
+      "2026-11-02",
+      "2026-11-18"
+    ],
+    "sourceRevisionBeforeContrastFix": "ddda031ea29506c16045c665ec457e6471cbe3dc",
+    "connectionRecovered": true,
+    "maintenanceAuthorization": "Requested for this exact release because Main+Affiliate forecast 764.46MiB fails768MiB; including Test projects821.36MiB. No Test pause without owner response."
   }
 }

@@ -1,0 +1,72 @@
+{
+  "status": "prepared-awaiting-current-test-maintenance-authorization",
+  "sourceRevision": "220b8038204e847da6609d83a6169c7222517754",
+  "recordedAt": "2026-10-19T14:13:11.877583+00:00",
+  "report": "apps/affiliate/reports/tiny-parts-2026-10-19/README.md",
+  "newIndexableCanonicals": 0,
+  "documentedModels": 7,
+  "checkedMachineTypes": 7,
+  "catalogObservations": 18,
+  "uniqueFrus": 7,
+  "newMerchantIdentities": 1,
+  "validation": {
+    "newDecisionCasesPassed": 36,
+    "productionBuilds": [
+      "main",
+      "affiliate"
+    ],
+    "lint": "both passed",
+    "localHttpTargets": 317,
+    "localHttpRegressions": 0,
+    "localDatabaseDependentPending": 1,
+    "localBrowserCasesPassed": 8,
+    "mobile390x844Overflow": false,
+    "deploymentFailureTestsPassed": 10,
+    "searchEntries": 1134,
+    "ctaContrastRatio": 7.4249059553772465
+  },
+  "runtimeArtifacts": {
+    "main": {
+      "path": "apps/main/.release/main-runtime.tgz",
+      "bytes": 17306412,
+      "sha256": "eda5b71f7c92643d8ee6383489e959982f6002cc0e2afe6e29ffd9d1f6a18943"
+    },
+    "affiliate": {
+      "path": "apps/affiliate/.release/affiliate-runtime.tgz",
+      "bytes": 61088173,
+      "sha256": "a48ca9dda6592b5b4c2ab1b3d351dbd352b3b8e2aca6fba9720d07d3114fdc2c"
+    }
+  },
+  "productionCurrent": {
+    "release": "journey-20261019-434cf229c9ab044a2db48490aa748dc5a4017434",
+    "revision": "434cf229c9ab044a2db48490aa748dc5a4017434",
+    "lastVerifiedMainAffiliateTestActive": true,
+    "newPrepareOrActivateExecuted": true,
+    "testPaused": false,
+    "prepareExecuted": true,
+    "activateAttempted": true,
+    "activationResult": "forecast-rejected-before-service-stop",
+    "allServicesUnchanged": true
+  },
+  "connectionBlocker": null,
+  "transfer": "Six final-revision files fetched over pinned HTTPS and SHA-256/bytes matched; prepare completed. Activation rejected by forecast before stopping any service.",
+  "localPreview": "http://homeoffice.localhost:3023/compatibility/mini-pcs?madabase-qa=1",
+  "capacity": {
+    "forecastRequiredMiB": 768,
+    "actualRequiredMiB": 704,
+    "lastMeasuredProjectedMiB": 764.45703125,
+    "pressureAvg10": 0,
+    "mustRecheckBeforeActivation": true,
+    "withTestProjectedMiB": 821.36328125,
+    "forecastRejectedWithoutStoppingServices": true
+  },
+  "resume": "Inspect prepared transaction and current services. Await owner answer to current Test maintenance question. Only if approved activate with --allow-test-pause and a fresh named bounded135s controller/150s recovery; otherwise keep Test untouched. Preserve768/704MiB. Then complete origin/public/cache/merchant checks before exact4 IndexNow.",
+  "reviewDatesPreserved": [
+    "2026-10-26",
+    "2026-11-02",
+    "2026-11-18"
+  ],
+  "sourceRevisionBeforeContrastFix": "ddda031ea29506c16045c665ec457e6471cbe3dc",
+  "connectionRecovered": true,
+  "maintenanceAuthorization": "Requested for this exact release because Main+Affiliate forecast 764.46MiB fails768MiB; including Test projects821.36MiB. No Test pause without owner response."
+}
