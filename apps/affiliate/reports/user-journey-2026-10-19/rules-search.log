@@ -1,0 +1,251 @@
+
+> affiliate@0.1.0 check:compatibility
+> node scripts/check-compatibility-search.mjs && node scripts/check-setup-decisions.mjs && node scripts/export-site-search.mjs --check
+
+{
+  "passed": true,
+  "engineAndIntegrityChecks": 41,
+  "queryCases": [
+    {
+      "site": "homeoffice",
+      "query": "TS4",
+      "expected": "/reviews/caldigit-ts4-thunderbolt-dock",
+      "rank": 1
+    },
+    {
+      "site": "homeoffice",
+      "query": "CalDigit TS4",
+      "expected": "/reviews/caldigit-ts4-thunderbolt-dock",
+      "rank": 1
+    },
+    {
+      "site": "homeoffice",
+      "query": "TBT4-UD5",
+      "expected": "/reviews/plugable-tbt4-ud5-thunderbolt-dock",
+      "rank": 1
+    },
+    {
+      "site": "homeoffice",
+      "query": "USBC-6950PDZ",
+      "expected": "/reviews/plugable-usbc-6950pdz-displaylink-dock",
+      "rank": 1
+    },
+    {
+      "site": "homeoffice",
+      "query": "M720q",
+      "expected": "/guides/thinkcentre-m720q-upgrade-compatibility-guide",
+      "rank": 1
+    },
+    {
+      "site": "homeoffice",
+      "query": "M920q",
+      "expected": "/guides/thinkcentre-m920q-upgrade-compatibility-guide",
+      "rank": 1
+    },
+    {
+      "site": "homeoffice",
+      "query": "M920x",
+      "expected": "/guides/thinkcentre-m920x-upgrade-compatibility-guide",
+      "rank": 1
+    },
+    {
+      "site": "homeoffice",
+      "query": "M720q RAM upgrade",
+      "expected": "/guides/thinkcentre-m720q-upgrade-compatibility-guide",
+      "rank": 1
+    },
+    {
+      "site": "homeoffice",
+      "query": "M920x SSD",
+      "expected": "/guides/thinkcentre-m920x-upgrade-compatibility-guide",
+      "rank": 1
+    },
+    {
+      "site": "homeoffice",
+      "query": "U2723QE",
+      "expected": "/compatibility/monitor-arms",
+      "rank": 1
+    },
+    {
+      "site": "homeoffice",
+      "query": "U3223QE",
+      "expected": "/compatibility/monitor-arms",
+      "rank": 1
+    },
+    {
+      "site": "homeoffice",
+      "query": "U4025QW",
+      "expected": "/compatibility/monitor-arms",
+      "rank": 1
+    },
+    {
+      "site": "homeoffice",
+      "query": "Ergotron HX",
+      "expected": "/reviews/ergotron-hx-monitor-arm",
+      "rank": 2
+    },
+    {
+      "site": "homeoffice",
+      "query": "DisplayLink Thunderbolt",
+      "expected": "/best/displaylink-vs-thunderbolt-dock-dual-monitors",
+      "rank": 2
+    },
+    {
+      "site": "homeoffice",
+      "query": "Anker 675",
+      "expected": "/reviews/anker-675-usb-c-docking-station",
+      "rank": 1
+    },
+    {
+      "site": "network",
+      "query": "Deco BE67 BE63",
+      "expected": "/best/tp-link-deco-be67-vs-be63",
+      "rank": 3
+    },
+    {
+      "site": "network",
+      "query": "NAS Ethernet bottleneck",
+      "expected": "/compatibility/ethernet",
+      "rank": 1
+    },
+    {
+      "site": "network",
+      "query": "2.5GbE",
+      "expected": "/guides/2-5gbe-home-network-upgrade-checklist",
+      "rank": 1
+    },
+    {
+      "site": "homeoffice",
+      "query": "monitor arm desk fit",
+      "expected": "/compatibility/monitor-arms",
+      "rank": 1
+    },
+    {
+      "site": "homeoffice",
+      "query": "MacBook dock compatibility",
+      "expected": "/compatibility/docks",
+      "rank": 1
+    }
+  ],
+  "sourceRecords": 30,
+  "modelGuides": 3,
+  "exactAmazonOfferChecks": 7
+}
+{
+  "passed": true,
+  "userDecisionCases": [
+    {
+      "question": "M1 Air, two native displays, no software: can any listed native dock solve it?",
+      "expected": "Both native docks reject; software dock also rejects when software is refused",
+      "passed": true
+    },
+    {
+      "question": "M1 Air office displays with software permitted: what else must be bought?",
+      "expected": "Conditional DisplayLink route includes missing charger and two video leads",
+      "passed": true
+    },
+    {
+      "question": "My M4 setup already runs two screens: do I need another dock?",
+      "expected": "Keep current working equipment; show all three model verdicts",
+      "passed": true
+    },
+    {
+      "question": "M3 closed lid, software/peripheral conditions unknown: can I order now?",
+      "expected": "Unknown until clamshell requirements confirmed",
+      "passed": true
+    },
+    {
+      "question": "U2723QE-class flat panel on LX with approved desktop: what installation pieces remain?",
+      "expected": "Conditional physical fit plus attachment, VESA screw and cable-travel list",
+      "passed": true
+    },
+    {
+      "question": "Can a 4.48kg panel use the heavier HX?",
+      "expected": "Reject below minimum spring load",
+      "passed": true
+    },
+    {
+      "question": "LX desk plus plates total 61mm: do plates make it fit?",
+      "expected": "Reject thickness; no reinforcement override",
+      "passed": true
+    },
+    {
+      "question": "Curved monitor or blocked connectors: do good weight numbers suffice?",
+      "expected": "Unknown; ask for pivot or port clearance",
+      "passed": true
+    },
+    {
+      "question": "M720q with PCIe NIC: can I add internal SATA?",
+      "expected": "Conflict; revise the assembly before buying",
+      "passed": true
+    },
+    {
+      "question": "M920q SATA upgrade without the carrier/cable: is a bare SSD a complete kit?",
+      "expected": "Unknown; full list includes bracket, cable, retention and power",
+      "passed": true
+    },
+    {
+      "question": "M720q has one 16GB module, target 32GB: how many modules?",
+      "expected": "One more 16GB; retain the matching installed module",
+      "passed": true
+    },
+    {
+      "question": "M920q has 2×8GB, target 16GB: should I buy RAM?",
+      "expected": "No purchase needed",
+      "passed": true
+    },
+    {
+      "question": "Second NVMe in M720q versus M920x: same upgrade?",
+      "expected": "M720q rejects; M920x includes retaining clip check",
+      "passed": true
+    },
+    {
+      "question": "64GB is required: does the historical 32GB table validate it?",
+      "expected": "Unknown; ask for exact modules and separate evidence",
+      "passed": true
+    },
+    {
+      "question": "Same-switch 2.5GbE NAS and PC, 1Gbps WAN: must I replace the router?",
+      "expected": "2.5Gbps local link target passes; keep equipment",
+      "passed": true
+    },
+    {
+      "question": "NAS traffic crosses a 1GbE router LAN port: does a 2.5GbE switch fix it?",
+      "expected": "Conflict; router LAN remains in path",
+      "passed": true
+    },
+    {
+      "question": "2.5GbE LAN with 1GbE router WAN: can I get 2.5Gbps internet?",
+      "expected": "WAN/plan limit; NAS rate is irrelevant to this flow",
+      "passed": true
+    },
+    {
+      "question": "Five devices plus one uplink on a five-port switch: does it fit?",
+      "expected": "Reject one missing port",
+      "passed": true
+    },
+    {
+      "question": "Dedicated 2.5GbE PC-NAS cable with an old 1GbE switch elsewhere: buy a switch?",
+      "expected": "Direct flow passes; no switch needed",
+      "passed": true
+    },
+    {
+      "question": "All proposed devices say 2.5GbE, but cabling has not been inspected: is it supported?",
+      "expected": "Unknown until actual cable/link check",
+      "passed": true
+    }
+  ],
+  "partsEvidence": "All required rows resolve to a named source",
+  "componentOffers": [
+    {
+      "asin": "B07D2DZ42B",
+      "exactIdentityAndExpiry": true
+    },
+    {
+      "asin": "B078211KBB",
+      "exactIdentityAndExpiry": true
+    }
+  ],
+  "costUnknownsAndTaskClassification": true
+}
+{"pages":1130,"mode":"verified","bySite":{"homeoffice":231,"network":165,"smarthome":237,"baby":224,"pet":184,"style":63,"costume":23,"main":3}}

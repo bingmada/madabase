@@ -505,9 +505,9 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
           <h2 className="mt-2 text-xl font-bold" id="guide-quick-answer">{tailoredGuide ? guide.searchQuestion : "The practical answer"}</h2>
           <p className="mt-3 leading-7 text-[var(--text)]">{directAnswer}</p>
         </section>
-        <details className="guide-toc mt-6"><summary>On this page</summary><nav aria-label="Guide contents"><ul><li><a href="#guide-quick-answer">Quick answer</a></li>{plannerTopic ? <li><a href="#compatibility-checker">Check my setup</a></li> : null}{guide.sections.map((section, index) => <li key={`${index}-${section.heading}`}><a href={`#guide-section-${index + 1}`}>{buyerFacingHeading(section.heading)}</a></li>)}</ul></nav></details>
+        <details className="guide-toc mt-6"><summary>On this page</summary><nav aria-label="Guide contents"><ul><li><a href="#guide-quick-answer">Quick answer</a></li>{plannerTopic ? <li><a href="#compatibility-checker">Check my setup</a></li> : null}{plannerTopic === "mini-pcs" ? <li><a href="#parts-reference">Parts, quantities and exact-FRU steps</a></li> : null}{guide.sections.map((section, index) => <li key={`${index}-${section.heading}`}><a href={`#guide-section-${index + 1}`}>{buyerFacingHeading(section.heading)}</a></li>)}</ul></nav></details>
         {plannerTopic ? <>
-          <CompatibilityPlanner topic={plannerTopic as PlannerTopic} />
+          <CompatibilityPlanner topic={plannerTopic as PlannerTopic} initialModel={miniPcProfiles.find((model) => model.guide === guide.slug)?.id} />
           <UpgradePartsReference modelId={miniPcProfiles.find((model) => model.guide === guide.slug)?.id ?? ""} />
           <UpgradePurchaseOption guide={guide.slug} />
           <div id="guide-reference-content" />
@@ -713,7 +713,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             </ol>
           </section>
         ) : null}
-        {!guide.familySlug && !tailoredGuide ? <section className="mt-10">
+        {!guide.familySlug && !tailoredGuide && !plannerTopic ? <section className="mt-10">
           <p className="eyebrow">Buying framework</p>
           <h2 className="mt-3 text-2xl font-bold">What to check before you choose</h2>
           <div className="mt-5 grid gap-6 md:grid-cols-3">
@@ -757,7 +757,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
               <p className="mt-3 leading-7 text-[var(--muted)]">{tool.dek}</p>
             </Link> : null;
           })}
-          {relatedGuides.map((item) => (
+          {relatedGuides.filter((item) => plannerTopic !== "mini-pcs" || miniPcProfiles.some((model) => model.guide === item.slug)).map((item) => (
             <Link className="panel p-5" href={`/guides/${item.slug}`} key={item.slug}>
               <p className="eyebrow">Related guide</p>
               <h2 className="mt-3 text-xl font-bold">{item.title}</h2>

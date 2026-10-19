@@ -20,7 +20,7 @@
 .compat-panel { padding: 1.5rem; margin: 2rem 0; border: 1px solid #aac2cc; border-radius: 12px; background: #f0f6f8; scroll-margin-top: 100px; }
 .compat-panel h2 { font-size: 1.55rem; font-weight: 850; line-height: 1.3; margin: .4rem 0 .8rem; }
 .compat-panel > p { line-height: 1.7; margin-bottom: 1rem; }
-.compat-form { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; }
+.compat-form { min-width: 0; border: 0; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; }
 .compat-form label { font-weight: 700; font-size: .9rem; }
 .compat-form label > span { display: block; margin-bottom: .4rem; }
 .compat-form .compat-wide { grid-column: 1 / -1; }
@@ -55,6 +55,13 @@
 .prose-lite > section { scroll-margin-top: 100px; }
 
 .parts-budget { margin-top: 1.5rem; }
+.parts-budget .compat-table th:first-child { min-width: 160px; }
+.parts-budget .compat-table td:nth-child(2) { min-width: 280px; }
 .parts-budget td:last-child { min-width: 180px; }
 .parts-budget input[type=number], .parts-budget select { width: 100%; max-width: 200px; border: 1px solid #aebfc5; background: #fff; padding: .5rem; border-radius: 5px; }
 .parts-budget label { display: block; margin: .6rem 0; }
+.decision-button { min-height: 44px; border: 1px solid #193e51; border-radius: 6px; padding: .6rem 1rem; background: #193e51; color: #fff; font: inherit; font-weight: 700; cursor: pointer; }
+.compat-result, #dock-comparison { scroll-margin-top: 1.5rem; }
+.compat-result:focus, #dock-comparison:focus { outline: 2px solid #376d83; outline-offset: 4px; }
+.checklist-copy { display: block; margin-top: 1rem; }
+.checklist-copy textarea { display: block; width: 100%; padding: .7rem; border: 1px solid #aebfc5; }

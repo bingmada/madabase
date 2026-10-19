@@ -1,0 +1,71 @@
+
+> affiliate@0.1.0 build:release
+> NEXT_RELEASE_DIST_DIR=.next-release NEXT_STANDALONE_RELEASE=1 next build && NEXT_RELEASE_DIST_DIR=.next-release NEXT_STANDALONE_SHARP_TARGET=linux-x64 node ../../scripts/package-next-standalone.mjs affiliate
+
+   ▲ Next.js 15.5.23
+   - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 2.8s
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/27) ...
+   Generating static pages (6/27) 
+   Generating static pages (13/27) 
+   Generating static pages (20/27) 
+ ✓ Generating static pages (27/27)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                                          Size  First Load JS
+┌ ƒ /                                                             4.43 kB         118 kB
+├ ƒ /_not-found                                                     987 B         104 kB
+├ ● /[slug]                                                       3.79 kB         118 kB
+├   ├ /about
+├   ├ /methodology
+├   ├ /editorial-policy
+├   └ [+7 more paths]
+├ ƒ /[slug]/[kind]/[contentSlug]                                  3.79 kB         118 kB
+├ ƒ /api/affiliate-clicks                                           146 B         103 kB
+├ ƒ /api/amazon-listing/[site]/[slug]                               146 B         103 kB
+├ ƒ /api/distribution-feed                                          146 B         103 kB
+├ ƒ /api/pinterest-image/[kind]/[slug]                              146 B         103 kB
+├ ƒ /best/[slug]                                                  4.18 kB         118 kB
+├ ƒ /best/halloween-animatronics-small-yards-and-porches          2.69 kB         116 kB
+├ ƒ /catalog                                                      2.27 kB         111 kB
+├ ƒ /categories/[slug]                                            6.41 kB         120 kB
+├ ƒ /compatibility                                                  161 B         106 kB
+├ ƒ /compatibility/[topic]                                          176 B         136 kB
+├ ƒ /go/cj/[token]                                                  146 B         103 kB
+├ ƒ /guides/[slug]                                                1.38 kB         143 kB
+├ ƒ /halloween                                                    2.69 kB         116 kB
+├ ƒ /halloween-ideas                                              1.02 kB         112 kB
+├ ● /halloween-ideas/[slug]                                       2.69 kB         116 kB
+├   ├ /halloween-ideas/haunted-carnival-clown-costume-yard-scene
+├   ├ /halloween-ideas/zombie-graveyard-group-costume-yard-scene
+├   └ /halloween-ideas/gothic-witch-apothecary-costume-entryway
+├ ○ /icon.svg                                                         0 B            0 B
+├ ƒ /llms.txt                                                       146 B         103 kB
+├ ƒ /premium                                                      2.27 kB         111 kB
+├ ƒ /products/[slug]                                              2.27 kB         111 kB
+├ ƒ /reviews/[slug]                                               4.18 kB         118 kB
+├ ƒ /robots.txt                                                     146 B         103 kB
+├ ƒ /search                                                       1.02 kB         107 kB
+├ ○ /sitemap-index.xml                                              146 B         103 kB
+├ ƒ /sitemap.xml                                                    146 B         103 kB
+└ ƒ /tools/[slug]                                                 6.49 kB         120 kB
++ First Load JS shared by all                                      103 kB
+  ├ chunks/18-536e344942e9442c.js                                 46.4 kB
+  ├ chunks/87c73c54-24122e7b92478d00.js                           54.2 kB
+  └ other shared chunks (total)                                   1.92 kB
+
+
+ƒ Middleware                                                        36 kB
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+
+Created /Users/liyingda/Documents/project/self/madabase/apps/affiliate/.release/affiliate-runtime.tgz
+Archive size: 58.2 MB
+Start after extraction: HOSTNAME=127.0.0.1 PORT=3000 node start.mjs

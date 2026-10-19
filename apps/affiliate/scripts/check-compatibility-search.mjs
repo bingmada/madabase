@@ -34,14 +34,14 @@ check("Hollow/glass/unapproved cannot pass from numbers", checkArm({ ...arm, con
 check("Curved torque stays unresolved", checkArm({ ...arm, curved: "curved" }).status, "unknown");
 check("VESA adapter is not assumed", checkArm({ ...arm, vesa: "200x200" }).status, "incompatible");
 check("Invalid weight is unknown", checkArm({ ...arm, kg: NaN }).status, "unknown");
-const pc = { model: "m720q", task: "sata", pcie: "no", hasKit: "yes", ramGb: 0 };
+const pc = { model: "m720q", task: "sata", pcie: "no", hasKit: "yes", ramGb: 0, storageNeed:"yes", storageReady:"yes" };
 check("SATA kit and free bay", planMiniPc(pc).status, "conditional");
 check("PCIe plus SATA conflict", planMiniPc({ ...pc, pcie: "yes" }).status, "incompatible");
 check("Missing carrier/cable stays unresolved", planMiniPc({ ...pc, hasKit: "unknown" }).status, "unknown");
 for (const model of ["m720q", "m920q"]) check(`${model} does not have two NVMe sockets`, planMiniPc({ ...pc, model, task: "second-nvme" }).status, "incompatible");
-check("M920x has a documented second NVMe position", planMiniPc({ ...pc, model: "m920x", task: "second-nvme" }).status, "conditional");
+check("M920x confirmed free second NVMe position", planMiniPc({ ...pc, model: "m920x", task: "second-nvme" }).status, "conditional");
 check("64GB is not inferred from later reports", planMiniPc({ ...pc, task: "ram", ramGb: 64 }).status, "unknown");
-check("32GB is the factory evidence boundary", planMiniPc({ ...pc, task: "ram", ramGb: 32 }).status, "conditional");
+check("32GB needs inspected slots for a quantity plan", planMiniPc({ ...pc, task: "ram", ramGb: 32 }).status, "unknown");
 const lan = { pc: 10, adapter: 1, switchRate: 2.5, nas: 2.5, devices: 5, ports: 5, uplinks: 1 };
 check("1GbE adapter limits faster switch/NAS", planEthernet(lan).gbps, 1);
 check("Upstream uses a physical switch port", planEthernet(lan).sparePorts, -1);

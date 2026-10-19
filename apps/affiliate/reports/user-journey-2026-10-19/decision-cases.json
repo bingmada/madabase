@@ -1,0 +1,146 @@
+{
+  "passed": true,
+  "independentJourneyCases": 28,
+  "rows": [
+    {
+      "question": "M720q RAM 32GB",
+      "expected": "Exact matching Tiny guide remains discoverable without claiming that capacity/route passes",
+      "passed": true
+    },
+    {
+      "question": "Can I upgrade my M720q from 8 GB to 32 GB",
+      "expected": "Exact matching Tiny guide remains discoverable without claiming that capacity/route passes",
+      "passed": true
+    },
+    {
+      "question": "M720q 1TB SSD",
+      "expected": "Exact matching Tiny guide remains discoverable without claiming that capacity/route passes",
+      "passed": true
+    },
+    {
+      "question": "M720q 64GB memory",
+      "expected": "Exact matching Tiny guide remains discoverable without claiming that capacity/route passes",
+      "passed": true
+    },
+    {
+      "question": "M720q second NVMe",
+      "expected": "Exact matching Tiny guide remains discoverable without claiming that capacity/route passes",
+      "passed": true
+    },
+    {
+      "question": "M920x second SSD",
+      "expected": "Exact matching Tiny guide remains discoverable without claiming that capacity/route passes",
+      "passed": true
+    },
+    {
+      "question": "B0B14FTVTV",
+      "expected": "Exact matching Tiny guide remains discoverable without claiming that capacity/route passes",
+      "passed": true
+    },
+    {
+      "question": "M720q SATA cable FRU",
+      "expected": "Exact matching Tiny guide remains discoverable without claiming that capacity/route passes",
+      "passed": true
+    },
+    {
+      "question": "MacBook M2 two4K60 monitors",
+      "expected": "Resolution describes the request without becoming a nonexistent device model",
+      "passed": true
+    },
+    {
+      "question": "Unknown exact model with familiar capacity",
+      "expected": "No substitution of an unrelated Tiny model",
+      "passed": true
+    },
+    {
+      "question": "Publication and content filters",
+      "expected": "No other publication leaks into a zero-result exact model request",
+      "passed": true
+    },
+    {
+      "question": "8GB + 4GB to 16GB",
+      "expected": "Buy one8GB; retain slot1, replace slot2; show the8GB reference, never substitute a16GB offer",
+      "passed": true
+    },
+    {
+      "question": "16GB + empty to32GB",
+      "expected": "One single16GB module offer; no full kit or second module implied",
+      "passed": true
+    },
+    {
+      "question": "8GB +8GB to32GB",
+      "expected": "Two single16GB modules; remove both old8GB modules",
+      "passed": true
+    },
+    {
+      "question": "16GB already available",
+      "expected": "No-buy; zero memory cost excluded and no component offer",
+      "passed": true
+    },
+    {
+      "question": "Uninspected memory slots",
+      "expected": "Unknown; no resolved quantity, part number or purchase option",
+      "passed": true
+    },
+    {
+      "question": "Need64GB rather than historical32GB validation",
+      "expected": "Unknown; never turns an existing32GB unit into a false64GB recommendation",
+      "passed": true
+    },
+    {
+      "question": "Working storage already sufficient",
+      "expected": "No new drive, carrier, cable or computer purchase",
+      "passed": true
+    },
+    {
+      "question": "M920x second NVMe without inspected mount",
+      "expected": "Unknown until actual free socket, retainer and clearance verified",
+      "passed": true
+    },
+    {
+      "question": "M720q second NVMe",
+      "expected": "Reject this position; propose replacing existing NVMe or checking SATA separately",
+      "passed": true
+    },
+    {
+      "question": "Missing SATA kit despite a suitable drive listing",
+      "expected": "Hold the purchase; a bare drive is not a completed assembly",
+      "passed": true
+    },
+    {
+      "question": "Copied or reused part already owned / offer expired",
+      "expected": "No unwanted or expired component button",
+      "passed": true
+    },
+    {
+      "question": "Existing arm meets the confirmed fit",
+      "expected": "Keep the matching arm; no replacement needed",
+      "passed": true
+    },
+    {
+      "question": "One switch port short",
+      "expected": "At least6 usable ports; link to switch choices rather than an unrelated Tiny page",
+      "passed": true
+    },
+    {
+      "question": "Dedicated direct NAS flow",
+      "expected": "Irrelevant switch and router inputs do not block or cause a switch purchase",
+      "passed": true
+    },
+    {
+      "question": "Internet flow",
+      "expected": "An unused NAS field does not block the actual WAN/plan diagnosis",
+      "passed": true
+    },
+    {
+      "question": "A500Mbps internet plan",
+      "expected": "Use the actual0.5Gbps plan rather than a fabricated physical-port rate",
+      "passed": true
+    },
+    {
+      "question": "Dock comparison without owning a selected dock",
+      "expected": "All three exact routes have identities; only a confirmed existing route produces a no-buy result",
+      "passed": true
+    }
+  ]
+}

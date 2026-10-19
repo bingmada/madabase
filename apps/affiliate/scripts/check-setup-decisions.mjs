@@ -9,7 +9,7 @@ const { compatibilitySources } = loadAffiliateTypescript("../../lib/compatibilit
 const { entryTopic } = loadAffiliateTypescript("../../lib/discovery-topics.ts");
 const d = {mac:"m4-air",dock:"ts4",screens:2,lid:"open",mode:"4k60",input:"hdmi",software:"no",workload:"office",powerWatts:67,clamshellReady:"unknown"};
 const a = {arm:"lx",kg:4.48,mm:25,vesa:"100x100",construction:"approved",curved:"flat",clearance:"yes",ports:"yes",travel:"yes"};
-const p = {model:"m720q",task:"sata",pcie:"no",hasKit:"yes",ramGb:0};
+const p = {model:"m720q",task:"sata",pcie:"no",hasKit:"yes",ramGb:0,storageNeed:"yes",storageReady:"yes"};
 const n = {pc:2.5,adapter:2.5,switchRate:2.5,nas:2.5,devices:4,ports:5,uplinks:1,path:"same-switch",routerLan:1,routerWan:1,internet:1,target:2.5,cable:"yes"};
 const cases = [];
 function task(question, expected, run) { run(); cases.push({question,expected,passed:true}); }

@@ -1,0 +1,23 @@
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+.{"status": "origin-verified", "testWorkingDirectory": "old-test", "apps": {"main": {"old": "old-main", "new": "new-main"}, "affiliate": {"old": "old-affiliate", "new": "new-affiliate"}}, "startedAt": 1792412798.658423, "forecast": {"projectedMiB": 900}, "testPaused": true, "testRestored": true, "gates": {"main": {"passed": true}, "affiliate": {"passed": true}}, "verification": {"main": {"passed": true}, "affiliate": {"passed": true}}, "completedAt": 1792412798.659651}
+..{"status": "origin-verified", "testWorkingDirectory": "old-test", "apps": {"main": {"old": "old-main", "new": "new-main"}, "affiliate": {"old": "old-affiliate", "new": "new-affiliate"}}, "startedAt": 1792412798.66494, "forecast": {"projectedMiB": 900}, "testPaused": false, "testRestored": true, "gates": {"main": {"passed": true}, "affiliate": {"passed": true}}, "verification": {"main": {"passed": true}, "affiliate": {"passed": true}}, "completedAt": 1792412798.666272}
+..{"status": "origin-verified", "testWorkingDirectory": "old-test", "apps": {"main": {"old": "old-main", "new": "new-main"}, "affiliate": {"old": "old-affiliate", "new": "new-affiliate"}}, "startedAt": 1792412798.670681, "forecast": {"projectedMiB": 900}, "testPaused": false, "testRestored": true, "gates": {"main": {"passed": true}, "affiliate": {"passed": true}}, "verification": {"main": {"passed": true}, "affiliate": {"passed": true}}, "completedAt": 1792412798.671865}
+....{"status": "origin-verified", "testWorkingDirectory": "old-test", "apps": {"main": {"old": "old-main", "new": "new-main"}, "affiliate": {"old": "old-affiliate", "new": "new-affiliate"}}, "startedAt": 1792412798.6801012, "forecast": {"projectedMiB": 900}, "testPaused": false, "testRestored": true, "gates": {"main": {"passed": true}, "affiliate": {"passed": true}}, "verification": {"main": {"passed": true}, "affiliate": {"passed": true}}, "completedAt": 1792412798.681205}
+.
+----------------------------------------------------------------------
+Ran 10 tests in 0.029s
+
+OK

@@ -1,0 +1,60 @@
+{
+  "newCanonicals": [
+    "https://homeoffice.madabase.com/compatibility",
+    "https://homeoffice.madabase.com/compatibility/docks",
+    "https://homeoffice.madabase.com/compatibility/monitor-arms",
+    "https://homeoffice.madabase.com/compatibility/mini-pcs",
+    "https://homeoffice.madabase.com/guides/thinkcentre-m720q-upgrade-compatibility-guide",
+    "https://homeoffice.madabase.com/guides/thinkcentre-m920q-upgrade-compatibility-guide",
+    "https://homeoffice.madabase.com/guides/thinkcentre-m920x-upgrade-compatibility-guide",
+    "https://network.madabase.com/compatibility",
+    "https://network.madabase.com/compatibility/ethernet"
+  ],
+  "enhancedExistingCanonicals": [
+    "https://homeoffice.madabase.com/guides/macbook-dual-monitor-dock-chip-compatibility-guide",
+    "https://homeoffice.madabase.com/guides/usb-c-dock-ports-explained-guide",
+    "https://homeoffice.madabase.com/guides/usb-c-dock-vs-monitor-hub-guide",
+    "https://homeoffice.madabase.com/guides/monitor-arm-clamp-reinforcement-guide",
+    "https://homeoffice.madabase.com/guides/single-vs-dual-monitor-arm-walking-desk",
+    "https://homeoffice.madabase.com/guides/monitor-arm-for-walking-desk-guide",
+    "https://network.madabase.com/guides/2-5gbe-switch-port-budget-for-nas-mesh",
+    "https://network.madabase.com/guides/5-port-vs-8-port-2-5gbe-switch",
+    "https://network.madabase.com/guides/when-to-upgrade-to-2-5gbe-switch"
+  ],
+  "discoveryHomepages": [
+    "https://madabase.com/",
+    "https://homeoffice.madabase.com/",
+    "https://network.madabase.com/"
+  ],
+  "search": "Main + seven active affiliate /search, noindex; not submitted",
+  "reviewDates": "derive from actual activation; preserve previous cohort dates",
+  "indexNowCandidates": [
+    "https://homeoffice.madabase.com/compatibility/docks",
+    "https://homeoffice.madabase.com/compatibility/monitor-arms",
+    "https://homeoffice.madabase.com/compatibility/mini-pcs",
+    "https://homeoffice.madabase.com/guides/thinkcentre-m720q-upgrade-compatibility-guide",
+    "https://homeoffice.madabase.com/guides/thinkcentre-m920q-upgrade-compatibility-guide",
+    "https://homeoffice.madabase.com/guides/thinkcentre-m920x-upgrade-compatibility-guide",
+    "https://network.madabase.com/compatibility/ethernet",
+    "https://homeoffice.madabase.com/guides/macbook-dual-monitor-dock-chip-compatibility-guide",
+    "https://homeoffice.madabase.com/guides/usb-c-dock-ports-explained-guide",
+    "https://homeoffice.madabase.com/guides/usb-c-dock-vs-monitor-hub-guide",
+    "https://homeoffice.madabase.com/guides/monitor-arm-clamp-reinforcement-guide",
+    "https://homeoffice.madabase.com/guides/single-vs-dual-monitor-arm-walking-desk",
+    "https://homeoffice.madabase.com/guides/monitor-arm-for-walking-desk-guide",
+    "https://network.madabase.com/guides/2-5gbe-switch-port-budget-for-nas-mesh",
+    "https://network.madabase.com/guides/5-port-vs-8-port-2-5gbe-switch",
+    "https://network.madabase.com/guides/when-to-upgrade-to-2-5gbe-switch"
+  ],
+  "sharedDiscoveryChanges": {
+    "taskNavigation": [
+      "homeoffice",
+      "network"
+    ],
+    "categoryInPageFilters": "All non-Costume category templates; Costume retains its specialized catalog",
+    "guideSectionToc": "Generic non-Style guide template; Homeoffice/Network next steps",
+    "newIndexableFromCompletion": 0
+  },
+  "newIndexableFromThisPatch": 0,
+  "patchNote": "All URLs already live from the owner-approved pilot. This existing-page repair adds no canonicals. The two unchanged overview hubs stay in verification/review, not repeated IndexNow notifications."
+}

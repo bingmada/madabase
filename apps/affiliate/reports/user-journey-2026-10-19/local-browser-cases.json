@@ -1,0 +1,98 @@
+{
+  "checkedAt": "2026-10-19T12:39:54.059Z",
+  "rows": [
+    {
+      "name": "SATA complete kit",
+      "href": "https://www.amazon.com/dp/B078211KBB?tag=madaoffice-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+      "passed": true
+    },
+    {
+      "name": "SATA and PCIe conflict",
+      "status": "incompatible",
+      "offers": 0,
+      "passed": true
+    },
+    {
+      "name": "Storage already sufficient",
+      "passed": true,
+      "offers": 0
+    },
+    {
+      "name": "M920x second NVMe missing socket and retainer confirmation",
+      "passed": true
+    },
+    {
+      "name": "M920x confirmed second NVMe route",
+      "passed": true
+    },
+    {
+      "name": "M720q unsupported second NVMe position",
+      "passed": true,
+      "nextSteps": true
+    },
+    {
+      "name": "M1 two4K60 office screens from compare to DisplayLink checklist",
+      "passed": true,
+      "noFalseNoBuy": true
+    },
+    {
+      "name": "M4 working two-screen setup",
+      "passed": true
+    },
+    {
+      "name": "Arm unknown port clearance",
+      "passed": true
+    },
+    {
+      "name": "Owned LX arm with confirmed fit",
+      "passed": true
+    },
+    {
+      "name": "Same-switch2.5GbE sufficient",
+      "passed": true
+    },
+    {
+      "name": "Switch one port short",
+      "passed": true,
+      "href": "/best/best-fanless-2-5gbe-switches-home-nas-mesh"
+    },
+    {
+      "name": "Direct NAS flow without switch questions",
+      "passed": true,
+      "unusedSwitchInputs": 0
+    },
+    {
+      "name": "Internet plan500Mbps",
+      "passed": true,
+      "ignoredNasField": 0
+    },
+    {
+      "name": "M920q two8GB modules to32GB",
+      "passed": true,
+      "prefilledModel": "model"
+    },
+    {
+      "name": "Main model and capacity search",
+      "passed": true,
+      "otherTinyGuides": 0
+    },
+    {
+      "name": "Final standalone bundle one16GB purchase",
+      "passed": true
+    },
+    {
+      "name": "Standalone delivered worksheet excludes reused parts",
+      "passed": true
+    },
+    {
+      "name": "Final standalone table readability",
+      "passed": true,
+      "widths": [
+        167,
+        373,
+        195
+      ]
+    }
+  ],
+  "passed": true
+}

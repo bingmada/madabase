@@ -7,7 +7,14 @@ const hosts: Record<SiteKey, string> = { homeoffice: "homeoffice", network: "net
 export function siteSearchIndex(site: SiteKey): SearchEntry[] {
   const visible = (item: { publicationStatus?: string; discoveryExcluded?: boolean; sitemapExcluded?: boolean }) => item.publicationStatus !== "draft" && !item.discoveryExcluded && !item.sitemapExcluded;
   const result: SearchEntry[] = [
-    ...siteGuides(site).filter(visible).map((item) => ({ site, kind: "guide" as const, title: item.title, summary: item.dek, href: `/guides/${item.slug}`, category: item.category })),
+    ...siteGuides(site).filter(visible).map((item) => ({ site, kind: "guide" as const, title: item.title, summary: item.dek, href: `/guides/${item.slug}`, category: item.category,
+      modelIds: item.slug.match(/^thinkcentre-(m(?:720q|920q|920x))-upgrade-compatibility-guide$/)?.slice(1),
+      aliases: /^thinkcentre-m(720q|920q|920x)-upgrade-compatibility-guide$/.test(item.slug) ? [
+        ...item.sections.map((section) => `${section.heading} ${section.body}`),
+        "Kingston KCP426SD8/16 B07D2DZ42B Crucial MX500 CT1000MX500SSD1 B078211KBB",
+        ...(item.slug === "thinkcentre-m720q-upgrade-compatibility-guide" ? ["B0B14FTVTV i5-8500T Renewed 16GB 256GB"] : []),
+      ] : undefined,
+    })),
     ...siteProducts(site).filter(visible).map((item) => ({ site, kind: "product" as const, title: item.name, summary: item.summary, href: `/reviews/${item.slug}`, category: item.category, aliases: [item.brand, item.specs.Model ?? "", item.asin ?? ""] })),
     ...siteRoundups(site).filter(visible).map((item) => ({ site, kind: "comparison" as const, title: item.title, summary: item.dek, href: `/best/${item.slug}`, category: item.category })),
     ...siteTools(site).filter(visible).map((item) => ({ site, kind: "tool" as const, title: item.title, summary: item.dek, href: `/tools/${item.slug}`, category: item.category })),
