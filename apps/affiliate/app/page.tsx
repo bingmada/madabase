@@ -9,6 +9,7 @@ import { siteDecisionModules } from "@/lib/site-decision-modules";
 import { siteSearchDemandHomepagePriorities } from "@/lib/search-demand-priorities";
 import { getCurrentSite } from "@/lib/sites";
 import type { SiteKey } from "@/lib/types";
+import { DiscoveryHome } from "@/components/DiscoveryHome";
 
 const homeCopy: Record<SiteKey, { eyebrow: string; heading: string; body: string }> = {
   pet: {
@@ -124,6 +125,7 @@ export default async function HomePage() {
       <JsonLd data={itemListSchema(site, `${site.name} buying guides and tools`, discoveryItems)} />
       <Hero site={site} />
       <TrustBar />
+      <DiscoveryHome site={site.key} />
       {demandPriorities.length ? (
         <section className="section bg-[var(--surface-muted)]" aria-labelledby="buyer-questions-heading">
           <div className="shell">

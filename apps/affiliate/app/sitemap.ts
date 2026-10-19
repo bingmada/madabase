@@ -7,6 +7,7 @@ import { staticPageSlugs } from "@/lib/static-pages";
 import { getCurrentSite } from "@/lib/sites";
 import { listIndexableCostumeProducts } from "@/lib/costume-catalog";
 import { costumeHalloweenIdeaSlugs } from "@/lib/costume-halloween-ideas";
+import { compatibilityTopics } from "@/lib/compatibility-topics";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const site = await getCurrentSite();
@@ -23,6 +24,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     lastModified?: Date;
   }> = [
     { path: "", changeFrequency: "weekly", priority: 1 },
+    ...(["homeoffice", "network"].includes(site.key) ? [{ path: "/compatibility", changeFrequency: "monthly" as const, priority: 0.8, lastModified: new Date("2026-10-19T00:00:00Z") }] : []),
+    ...compatibilityTopics.filter((item) => item.site === site.key).map((item) => ({ path: `/compatibility/${item.id}`, changeFrequency: "monthly" as const, priority: 0.8, lastModified: new Date("2026-10-19T00:00:00Z") })),
     ...(site.key === "costume"
       ? [
           { path: "/halloween", changeFrequency: "weekly" as const, priority: 0.95, lastModified: new Date("2026-08-03T00:00:00Z") },

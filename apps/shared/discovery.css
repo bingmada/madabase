@@ -1,0 +1,44 @@
+.discovery-search { margin: 1.5rem 0; color: #193e51; }
+.discovery-search-label { display: block; font-size: .88rem; font-weight: 750; margin-bottom: .5rem; }
+.discovery-search-row { display: flex; gap: .5rem; }
+.discovery-search input, .discovery-search select, .compat-form input, .compat-form select { min-width: 0; width: 100%; min-height: 46px; padding: .65rem .8rem; border: 1px solid #aebfc5; border-radius: 7px; background: white; color: #172b36; font: inherit; }
+.discovery-search button, .compat-form button { min-height: 46px; border: 0; border-radius: 7px; padding: .65rem 1.2rem; background: #193e51; color: white; font: inherit; font-weight: 750; cursor: pointer; }
+.discovery-search > label:not(.discovery-search-label) { display: inline-block; margin: .9rem .8rem 0 0; font-size: .9rem; }
+.discovery-search-compact { display: grid; grid-template-columns: minmax(170px, 1fr) minmax(240px, 2fr); align-items: center; gap: 1rem; margin: 0; }
+.discovery-search-compact .discovery-search-label { margin: 0; }
+.discovery-strip { padding: .75rem 0; background: #edf4f6; border-bottom: 1px solid #d6e1e5; }
+.discovery-page { padding-top: 3rem; padding-bottom: 4rem; max-width: 1120px; }
+.discovery-page h1 { max-width: 920px; margin: .8rem 0 1rem; font-size: clamp(2rem, 4vw, 3.4rem); line-height: 1.12; font-weight: 850; letter-spacing: -.035em; }
+.discovery-page > p { max-width: 840px; line-height: 1.8; margin: 1rem 0; }
+.discovery-results, .discovery-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.discovery-card { min-width: 0; border: 1px solid #cedce1; border-radius: 10px; padding: 1.35rem; background: white; color: #19313c; }
+.discovery-card h2, .discovery-card h3 { font-size: 1.25rem; font-weight: 800; line-height: 1.4; margin: .5rem 0; }
+.discovery-card p { line-height: 1.75; margin: .6rem 0; }
+.discovery-card a, .discovery-page a, .compat-result a { text-decoration: underline; text-underline-offset: 3px; color: #175773; }
+.discovery-chips { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1.5rem; }
+.discovery-chips a { border: 1px solid #afc5ce; border-radius: 30px; padding: .5rem .9rem; background: white; font-size: .9rem; font-weight: 700; }
+.compat-panel { padding: 1.5rem; margin: 2rem 0; border: 1px solid #aac2cc; border-radius: 12px; background: #f0f6f8; scroll-margin-top: 100px; }
+.compat-panel h2 { font-size: 1.55rem; font-weight: 850; line-height: 1.3; margin: .4rem 0 .8rem; }
+.compat-panel > p { line-height: 1.7; margin-bottom: 1rem; }
+.compat-form { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; }
+.compat-form label { font-weight: 700; font-size: .9rem; }
+.compat-form label > span { display: block; margin-bottom: .4rem; }
+.compat-form .compat-wide { grid-column: 1 / -1; }
+.compat-form button { justify-self: start; }
+.compat-result { padding: 1.3rem; margin-top: 1.5rem; border-radius: 8px; background: white; border-left: 5px solid #376d83; line-height: 1.8; overflow-wrap: anywhere; }
+.compat-result h3 { font-size: 1.2rem; font-weight: 850; }
+.compat-result ul, .discovery-page ul, .compat-panel ul { padding-left: 1.25rem; list-style: disc; }
+.compat-result ol { padding-left: 1.4rem; list-style: decimal; }
+.compat-result li { margin: .5rem 0; }
+.compat-table-wrap { overflow-x: auto; margin: 1.5rem 0; }
+.compat-table { width: 100%; border-collapse: collapse; text-align: left; font-size: .95rem; }
+.compat-table th, .compat-table td { vertical-align: top; padding: .8rem; border: 1px solid #cedce1; line-height: 1.7; }
+.compat-table th { background: #edf4f6; }
+.evidence-note { color: #465f6a; font-size: .85rem; line-height: 1.7; }
+.discovery-page section { scroll-margin-top: 110px; }
+.discovery-page section > h2 { font-size: 1.7rem; font-weight: 850; margin: 2.5rem 0 1rem; }
+.discovery-page section > p { line-height: 1.9; margin: 1rem 0; }
+.discovery-page details { border-bottom: 1px solid #d2dfe4; padding: 1rem 0; line-height: 1.8; }
+.discovery-page summary { cursor: pointer; font-weight: 800; }
+.discovery-page :focus-visible, .compat-panel :focus-visible, .discovery-search :focus-visible { outline: 3px solid #b26e13; outline-offset: 3px; }
+@media (max-width: 640px) { .discovery-search-compact { grid-template-columns: 1fr; gap: .4rem; } .discovery-search-compact .discovery-search-label { font-size: .78rem; } .discovery-results, .discovery-grid, .compat-form { grid-template-columns: 1fr; } .compat-panel { padding: 1rem; } .discovery-page { padding-top: 2rem; } .discovery-card { padding: 1rem; } }

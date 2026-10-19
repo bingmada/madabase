@@ -202,6 +202,10 @@ for (const filename of fs.readdirSync(libDir).filter((name) => name.endsWith(".t
   const sourceFile = ts.createSourceFile(filePath, sourceText, ts.ScriptTarget.Latest, true, ts.ScriptKind.TS);
   visit(sourceFile, sourceFile);
 }
+// This small evidence-backed cohort is generated from verified model records, not literal guide objects.
+for (const guide of loadAffiliateTypescript("../../lib/upgrade-guides.ts").upgradeGuides) {
+  entries.push({ site: guide.site, slug: guide.slug, kind: "guide", title: guide.title, status: "published", sitemapExcluded: false, hasUpdateDate: true, image: guide.image, relatedProducts: guide.relatedProducts ?? [], relatedRoundups: guide.relatedRoundups, relatedGuides: guide.relatedGuides ?? [], productSlugs: [], offerUrls: [], offerMerchants: [], externalTests: [], location: "upgrade-guides.ts:verified-model-record" });
+}
 
 const quadrupleExpansionFile = path.join(libDir, "quadruple-expansion-content.ts");
 const quadrupleEditorialBriefFile = path.join(libDir, "quadruple-family-editorial.ts");
@@ -556,6 +560,12 @@ for (const entry of entries) {
 }
 
 const publishedEntries = entries.filter((entry) => entry.status === "published");
+const qualityPilot = portfolioPolicy.qualityPilot20261019;
+const approvedPilotGuides = new Set(qualityPilot?.registeredGuides ?? []);
+const governedEntries = publishedEntries.filter((entry) => !approvedPilotGuides.has(`${entry.site}:${entry.kind}:${entry.slug}`));
+for (const key of approvedPilotGuides) {
+  if (!publishedEntries.some((entry) => `${entry.site}:${entry.kind}:${entry.slug}` === key)) errors.push(`Approved quality-pilot guide missing: ${key}`);
+}
 const publishedRouteKeys = new Set(publishedEntries.map((entry) => `${entry.site}:${entry.kind}:${entry.slug}`));
 if (!portfolioPolicy.ownerConstraints?.handsOnTestingAvailable) {
   for (const entry of publishedEntries.filter((item) => item.kind === "product" && item.evidenceMode === "hands-on")) {
@@ -565,19 +575,19 @@ if (!portfolioPolicy.ownerConstraints?.handsOnTestingAvailable) {
 
 if (portfolioPolicy.publicationFreeze?.status === "active") {
   const baseline = portfolioPolicy.canonicalInventoryCurrent ?? portfolioPolicy.canonicalInventoryBaseline;
-  if (publishedEntries.length > baseline.publishedBasePages) {
+  if (governedEntries.length > baseline.publishedBasePages) {
     errors.push(`Publication freeze permits at most ${baseline.publishedBasePages} base pages; found ${publishedEntries.length}`);
   }
   for (const [site, maximum] of Object.entries(baseline.sites ?? {})) {
-    const actual = publishedEntries.filter((entry) => entry.site === site).length;
+    const actual = governedEntries.filter((entry) => entry.site === site).length;
     if (actual > maximum) errors.push(`Publication freeze permits at most ${maximum} ${site} base pages; found ${actual}`);
   }
   for (const [kindLabel, maximum] of Object.entries(baseline.composition ?? {})) {
     const kind = kindLabel.replace(/s$/, "");
-    const actual = publishedEntries.filter((entry) => entry.kind === kind).length;
+    const actual = governedEntries.filter((entry) => entry.kind === kind).length;
     if (actual > maximum) errors.push(`Publication freeze permits at most ${maximum} published ${kindLabel}; found ${actual}`);
   }
-  const sitemapExcludedEntries = publishedEntries.filter((entry) => entry.sitemapExcluded);
+  const sitemapExcludedEntries = governedEntries.filter((entry) => entry.sitemapExcluded);
   if (sitemapExcludedEntries.length !== baseline.softLaunchRegistryPagesExcludedFromSitemapAndDiscovery) {
     errors.push(`Expected ${baseline.softLaunchRegistryPagesExcludedFromSitemapAndDiscovery} soft-launch sitemap exclusions; found ${sitemapExcludedEntries.length}`);
   }
@@ -592,12 +602,12 @@ if (portfolioPolicy.publicationFreeze?.status === "active") {
   if (standaloneCount !== baseline.standaloneEditorialRoutesOutsideRegistry) {
     errors.push(`Expected ${baseline.standaloneEditorialRoutesOutsideRegistry} standalone editorial route; found ${standaloneCount}`);
   }
-  const sitemapBaseTotal = publishedEntries.length - sitemapExcludedEntries.length + standaloneCount;
+  const sitemapBaseTotal = governedEntries.length - sitemapExcludedEntries.length + standaloneCount;
   if (sitemapBaseTotal !== baseline.sitemapBaseEditorialPages) {
     errors.push(`Expected ${baseline.sitemapBaseEditorialPages} sitemap base editorial routes; found ${sitemapBaseTotal}`);
   }
   for (const [site, expected] of Object.entries(baseline.sitemapBaseEditorialBySite ?? {})) {
-    const actual = publishedEntries.filter((entry) => entry.site === site && !entry.sitemapExcluded).length
+    const actual = governedEntries.filter((entry) => entry.site === site && !entry.sitemapExcluded).length
       + (site === "costume" ? standaloneCount : 0);
     if (actual !== expected) errors.push(`Expected ${expected} sitemap base editorial routes for ${site}; found ${actual}`);
   }

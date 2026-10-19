@@ -6,6 +6,7 @@ import { productEvidencePresentation, roundupEvidencePresentation } from "@/lib/
 import type { SiteConfig } from "@/lib/sites";
 import type { Guide, Product, Roundup } from "@/lib/types";
 import { AffiliateButtonGroup } from "./AffiliateButton";
+import { SearchForm } from "../../shared/SearchControls";
 
 export function StyleChrome({ site, children }: { site: SiteConfig; children: React.ReactNode }) {
   return (
@@ -17,6 +18,7 @@ export function StyleChrome({ site, children }: { site: SiteConfig; children: Re
             <span>Style</span>
           </Link>
           <nav className="style-nav style-nav-desktop" aria-label="Primary navigation">
+            <Link href="/search">Search</Link>
             <Link href="/categories/jewelry">Odd jewelry</Link>
             <Link href="/categories/bags">Bags</Link>
             <Link href="/categories/hair">Hair</Link>
@@ -28,6 +30,7 @@ export function StyleChrome({ site, children }: { site: SiteConfig; children: Re
           <details className="style-mobile-nav">
             <summary><Menu aria-hidden="true" size={18} /> Browse</summary>
             <nav aria-label="Mobile navigation">
+              <Link href="/search">Search the library</Link>
               <Link href="/categories/jewelry">Odd jewelry</Link>
               <Link href="/categories/bags">Bags</Link>
               <Link href="/categories/hair">Hair</Link>
@@ -39,6 +42,7 @@ export function StyleChrome({ site, children }: { site: SiteConfig; children: Re
           </details>
         </div>
       </header>
+      <div className="discovery-strip"><div className="style-shell"><SearchForm compact /></div></div>
       {children}
       <footer className="border-t border-[#2e2926] bg-[#211d1b] text-[#f7eee7]">
         <div className="style-shell grid gap-8 py-12 md:grid-cols-[1.2fr_1fr]">

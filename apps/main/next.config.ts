@@ -20,6 +20,7 @@ const nextConfig: NextConfig = {
         ],
       },
       ...["/", "/research", "/guides/:path*", "/methodology", "/about", "/editorial-policy", "/affiliate-disclosure", "/contact", "/privacy", "/terms", "/robots.txt", "/sitemap.xml", "/llms.txt"].map((source) => ({ source, headers: cacheHeaders })),
+      { source: "/search", headers: [{ key: "Cache-Control", value: "private, no-store, max-age=0" }, { key: "X-Robots-Tag", value: "noindex, follow" }] },
       {
         source: "/images/:path*",
         headers: [{ key: "Cache-Control", value: "public, max-age=31536000, immutable" }],

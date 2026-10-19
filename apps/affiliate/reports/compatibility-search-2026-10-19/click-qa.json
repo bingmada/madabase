@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "site": "homeoffice",
+      "merchant": "Amazon US",
+      "status": 200,
+      "body": {
+        "ok": true,
+        "persisted": false,
+        "reason": "qa_visit",
+        "validated": true
+      }
+    },
+    {
+      "site": "network",
+      "merchant": "Amazon US",
+      "status": 400,
+      "body": {
+        "ok": false,
+        "error": "invalid_click_event"
+      }
+    },
+    {
+      "site": "homeoffice",
+      "merchant": "eBay",
+      "status": 400,
+      "body": {
+        "ok": false,
+        "error": "invalid_click_event"
+      }
+    }
+  ],
+  "productionDatabaseWrites": 0
+}

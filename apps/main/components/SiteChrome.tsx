@@ -3,6 +3,7 @@ import { ArrowUpRight, Menu } from "lucide-react";
 import { publications } from "@/lib/content";
 
 const primaryLinks = [
+  { href: "/search", label: "Search" },
   { href: "/research", label: "Latest research" },
   { href: "/guides", label: "Decision guides" },
   { href: "/methodology", label: "Methodology" },

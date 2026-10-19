@@ -5,6 +5,7 @@ import { buyerFacingSummary } from "@/lib/conversion-copy";
 import type { SiteDecisionModule } from "@/lib/site-decision-modules";
 import type { SiteConfig } from "@/lib/sites";
 import type { Product, Roundup } from "@/lib/types";
+import { SearchForm } from "../../shared/SearchControls";
 
 export function SiteChrome({ site, children }: { site: SiteConfig; children: React.ReactNode }) {
   return (
@@ -29,7 +30,9 @@ export function SiteChrome({ site, children }: { site: SiteConfig; children: Rea
               </>
             ) : site.name}
           </Link>
-          <nav className="hidden min-w-0 flex-nowrap items-center justify-end gap-x-3 whitespace-nowrap text-xs font-semibold sm:flex sm:gap-x-4 sm:text-sm" aria-label="Primary navigation">
+          <nav className="hidden min-w-0 flex-nowrap items-center justify-end gap-x-3 whitespace-nowrap text-xs font-semibold lg:flex lg:gap-x-4 lg:text-sm" aria-label="Primary navigation">
+            <Link className="font-black hover:underline" href="/search">Search</Link>
+            {site.key === "homeoffice" || site.key === "network" ? <Link className="hover:underline" href="/compatibility">Compatibility</Link> : null}
             <Link className="hidden hover:text-[var(--brand-strong)] sm:inline" href="/">
               Home
             </Link>
@@ -53,13 +56,15 @@ export function SiteChrome({ site, children }: { site: SiteConfig; children: Rea
               Methodology
             </Link>
           </nav>
-          <details className="relative sm:hidden">
+          <details className="relative lg:hidden">
             <summary className="button-secondary list-none cursor-pointer px-3 py-2" aria-label="Open navigation menu">
               <Menu aria-hidden="true" size={17} />
               <span>Browse</span>
             </summary>
             <div className="panel absolute right-0 top-full z-50 mt-2 w-56 p-2 shadow-[var(--shadow)]">
               <nav className="grid gap-1 text-sm font-semibold" aria-label="Mobile navigation">
+                <Link className="rounded-md px-3 py-2 font-black" href="/search">Search the library</Link>
+                {site.key === "homeoffice" || site.key === "network" ? <Link className="rounded-md px-3 py-2" href="/compatibility">Compatibility & upgrades</Link> : null}
                 <Link className="rounded-md px-3 py-2 hover:bg-[var(--surface-muted)]" href="/">Home</Link>
                 {site.key === "costume" ? <Link className="rounded-md px-3 py-2 font-black text-[#a14f1c] hover:bg-[var(--surface-muted)]" href="/halloween">Halloween 2026</Link> : null}
                 {site.key === "costume" ? <Link className="rounded-md px-3 py-2 hover:bg-[var(--surface-muted)]" href="/halloween-ideas">Ideas & editorial kits</Link> : null}
@@ -81,6 +86,7 @@ export function SiteChrome({ site, children }: { site: SiteConfig; children: Rea
           </details>
         </div>
       </header>
+      <div className="discovery-strip"><div className="shell"><SearchForm compact /></div></div>
       {children}
       <footer className="border-t border-[var(--border)] bg-white">
         <div className="shell py-8 text-sm leading-6 text-[var(--muted)]">

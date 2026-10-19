@@ -1,4 +1,5 @@
 import type { Guide, Product, Roundup, SiteKey, Tool } from "./types";
+import { upgradeGuides } from "./upgrade-guides";
 import { applyIndexingRepair } from "./indexing-repair-content";
 import { applyLowClickRepair } from "./low-click-repairs";
 import { applyOctoberSearchRecovery } from "./october-search-recovery-content";
@@ -2418,6 +2419,7 @@ guides.push(...smartHomeWaterShutoffGuides);
 products.push(...homeofficeDockProducts);
 roundups.push(...homeofficeDockRoundups);
 guides.push(...homeofficeDockGuides);
+guides.push(...upgradeGuides);
 products.push(...styleProducts);
 roundups.push(...styleRoundups);
 guides.push(...styleGuides);

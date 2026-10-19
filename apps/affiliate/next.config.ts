@@ -14,6 +14,8 @@ const pageCacheHeaders = [
 
 const cacheablePageSources = [
   "/",
+  "/compatibility",
+  "/compatibility/:path*",
   "/about",
   "/methodology",
   "/editorial-policy",
@@ -62,6 +64,10 @@ const nextConfig: NextConfig = {
         source,
         headers: pageCacheHeaders,
       })),
+      {
+        source: "/search",
+        headers: [{ key: "Cache-Control", value: "private, no-store, max-age=0" }, { key: "X-Robots-Tag", value: "noindex, follow" }],
+      },
       {
         source: "/images/affiliate/:path*",
         headers: [

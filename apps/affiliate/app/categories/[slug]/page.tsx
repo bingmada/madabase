@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SearchForm } from "../../../../shared/SearchControls";
 import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/JsonLd";
 import { AffiliateButtonGroup } from "@/components/AffiliateButton";
@@ -293,6 +294,7 @@ export default async function CategoryPage({
           </section>
         ) : null}
         <p className="mt-4 max-w-2xl text-lg leading-8 text-[var(--muted)]">{category.description}</p>
+        <SearchForm><input type="hidden" name="category" value={category.slug} /><label>Content type <select name="kind" defaultValue=""><option value="">All content in {category.name}</option><option value="guide">Guides</option><option value="comparison">Comparisons</option><option value="product">Product research</option></select></label></SearchForm>
         <BaseMarketEditionLinks site={site} basePath={`/categories/${slug}`} />
         <section className="mt-8 rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-5">
           <h2 className="text-xl font-bold">How to think about {category.name.toLowerCase()}</h2>

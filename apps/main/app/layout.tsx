@@ -3,6 +3,8 @@ import { Analytics } from "@/components/Analytics";
 import { Footer, Header } from "@/components/SiteChrome";
 import { siteDescription, siteName, siteUrl } from "@/lib/seo";
 import "./globals.css";
+import "../../shared/discovery.css";
+import { SearchForm } from "../../shared/SearchControls";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -24,6 +26,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body>
         <Analytics projectId={process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID ?? "xlte5zsd33"} />
         <Header />
+        <div className="discovery-strip"><div className="shell"><SearchForm compact /></div></div>
         {children}
         <Footer />
       </body>

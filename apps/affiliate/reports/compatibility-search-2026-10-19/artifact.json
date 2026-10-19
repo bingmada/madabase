@@ -1,0 +1,18 @@
+{
+  "artifacts": {
+    "main": {
+      "path": "apps/main/.release/main-runtime.tgz",
+      "bytes": 17295960,
+      "sha256": "95c95bcb5467c519a22a49b98bc7ebb668119304e9449a365bd8b6acd9b5fce6"
+    },
+    "affiliate": {
+      "path": "apps/affiliate/.release/affiliate-runtime.tgz",
+      "bytes": 61029093,
+      "sha256": "b2d3c0f0397508e20e55eb07ded661d1ab73c0dbc12fb454760dc9fbd5ef8ec4"
+    }
+  },
+  "node": "20.20.0",
+  "next": "15.5.23",
+  "newIndexableCanonicals": 9,
+  "status": "local-runtime-validated-not-deployed"
+}

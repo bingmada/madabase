@@ -1,0 +1,144 @@
+{
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "checks": [
+    {
+      "url": "http://homeoffice.localhost:3021/compatibility",
+      "h1": "Build a setup that fits together.",
+      "scrollWidth": 375,
+      "search": true,
+      "width": 375,
+      "hasError": false
+    },
+    {
+      "url": "http://homeoffice.localhost:3021/compatibility/docks",
+      "h1": "MacBook Dock Compatibility: Displays, Cables and Charging",
+      "scrollWidth": 375,
+      "search": true,
+      "width": 375,
+      "hasError": false
+    },
+    {
+      "url": "http://homeoffice.localhost:3021/compatibility/monitor-arms",
+      "h1": "Monitor Arm Fit: Weight, VESA, Clamp and Desk Checks",
+      "scrollWidth": 375,
+      "search": true,
+      "width": 375,
+      "hasError": false
+    },
+    {
+      "url": "http://homeoffice.localhost:3021/compatibility/mini-pcs",
+      "h1": "ThinkCentre Tiny Upgrade Planner: M720q, M920q and M920x",
+      "scrollWidth": 375,
+      "search": true,
+      "width": 375,
+      "hasError": false
+    },
+    {
+      "url": "http://homeoffice.localhost:3021/guides/thinkcentre-m720q-upgrade-compatibility-guide",
+      "h1": "ThinkCentre M720q Tiny: RAM, SSD and PCIe Upgrade Checks",
+      "scrollWidth": 375,
+      "search": true,
+      "width": 375,
+      "hasError": false
+    },
+    {
+      "url": "http://homeoffice.localhost:3021/guides/thinkcentre-m920q-upgrade-compatibility-guide",
+      "h1": "ThinkCentre M920q Tiny: RAM, SSD and PCIe Upgrade Checks",
+      "scrollWidth": 375,
+      "search": true,
+      "width": 375,
+      "hasError": false
+    },
+    {
+      "url": "http://homeoffice.localhost:3021/guides/thinkcentre-m920x-upgrade-compatibility-guide",
+      "h1": "ThinkCentre M920x Tiny: RAM, SSD and PCIe Upgrade Checks",
+      "scrollWidth": 375,
+      "search": true,
+      "width": 375,
+      "hasError": false
+    },
+    {
+      "url": "http://network.localhost:3021/compatibility",
+      "h1": "Build a setup that fits together.",
+      "scrollWidth": 375,
+      "search": true,
+      "width": 375,
+      "hasError": false
+    },
+    {
+      "url": "http://network.localhost:3021/compatibility/ethernet",
+      "h1": "NAS and Ethernet Planner: Bottlenecks and Switch Ports",
+      "scrollWidth": 375,
+      "search": true,
+      "width": 375,
+      "hasError": false
+    },
+    {
+      "url": "http://homeoffice.localhost:3021/",
+      "h1": "Sharper home office decisions, fewer regret buys.",
+      "scrollWidth": 375,
+      "search": true,
+      "width": 375,
+      "hasError": false
+    },
+    {
+      "url": "http://network.localhost:3021/",
+      "h1": "Cleaner home networks without the spec-sheet fog.",
+      "scrollWidth": 375,
+      "search": true,
+      "width": 375,
+      "hasError": false
+    },
+    {
+      "url": "http://smarthome.localhost:3021/",
+      "h1": "Smart-home choices that still work after setup day.",
+      "scrollWidth": 375,
+      "search": true,
+      "width": 375,
+      "hasError": false
+    },
+    {
+      "url": "http://baby.localhost:3021/",
+      "h1": "Clear baby gear choices for tired decision-makers.",
+      "scrollWidth": 375,
+      "search": true,
+      "width": 375,
+      "hasError": false
+    },
+    {
+      "url": "http://pets.localhost:3021/",
+      "h1": "Calmer pet-care choices for busy homes.",
+      "scrollWidth": 375,
+      "search": true,
+      "width": 375,
+      "hasError": false
+    },
+    {
+      "url": "http://style.localhost:3021/",
+      "h1": "Statement accessories for real outfits.",
+      "scrollWidth": 375,
+      "search": true,
+      "width": 375,
+      "hasError": false
+    },
+    {
+      "url": "http://costumes.localhost:3021/",
+      "h1": "Plan the Halloween look, scare, and setup before October 31.",
+      "scrollWidth": 375,
+      "search": true,
+      "width": 375,
+      "hasError": false
+    },
+    {
+      "url": "http://localhost:3031/search?q=M720q",
+      "h1": "Find a model, a question, or the next decision.",
+      "scrollWidth": 375,
+      "search": true,
+      "width": 375,
+      "hasError": false
+    }
+  ]
+}

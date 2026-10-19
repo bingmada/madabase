@@ -1,0 +1,21 @@
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): Bad file descriptor
+.{"status": "origin-verified", "testWorkingDirectory": "old-test", "apps": {"main": {"old": "old-main", "new": "new-main"}, "affiliate": {"old": "old-affiliate", "new": "new-affiliate"}}, "startedAt": 1792399803.66083, "forecast": {"projectedMiB": 900}, "testPaused": true, "testRestored": true, "gates": {"main": {"passed": true}, "affiliate": {"passed": true}}, "verification": {"main": {"passed": true}, "affiliate": {"passed": true}}, "completedAt": 1792399803.662034}
+......{"status": "origin-verified", "testWorkingDirectory": "old-test", "apps": {"main": {"old": "old-main", "new": "new-main"}, "affiliate": {"old": "old-affiliate", "new": "new-affiliate"}}, "startedAt": 1792399803.6740448, "forecast": {"projectedMiB": 900}, "testPaused": false, "testRestored": true, "gates": {"main": {"passed": true}, "affiliate": {"passed": true}}, "verification": {"main": {"passed": true}, "affiliate": {"passed": true}}, "completedAt": 1792399803.675224}
+.
+----------------------------------------------------------------------
+Ran 8 tests in 0.020s
+
+OK

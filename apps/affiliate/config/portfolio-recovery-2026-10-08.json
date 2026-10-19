@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-10-13",
+  "updatedAt": "2026-10-19",
   "ownerConstraints": {
     "handsOnTestingAvailable": false,
     "rule": "Do not claim first-hand use, testing, measurements, comfort, durability or performance. Default product evidence to official-spec; use research-synthesis only when every external test preserves its source, setup, result, interpretation and limitation.",
@@ -23,7 +23,8 @@
       "Near-duplicate support pages",
       "New Review or Best claims without qualifying evidence",
       "Changing a protected page from a single 24-hour movement"
-    ]
+    ],
+    "rule": "Keep the existing portfolio baseline and protections. Owner direction on 2026-10-19 authorizes the exact compatibility/search quality pilot recorded below; it supersedes the former blanket zero-new-URL constraint for this cohort only."
   },
   "canonicalInventoryBaseline": {
     "measuredAt": "2026-10-08",
@@ -254,5 +255,41 @@
     },
     "scope": "October 8 inventory minus nine newly consolidated base guide routes. The October 8 historical baseline and its exposure counts are preserved separately.",
     "localizedEditions": "Locale editions inherit the evidence and lifecycle decision of their base canonical; they are not independent content-production targets."
+  },
+  "qualityPilot20261019": {
+    "status": "local-validated-awaiting-production-cutover",
+    "authorization": "Owner explicitly requested completing search, navigation and competitor-benchmark compatibility content in this conversation on 2026-10-19, with time available for quality.",
+    "registeredGuides": [
+      "homeoffice:guide:thinkcentre-m720q-upgrade-compatibility-guide",
+      "homeoffice:guide:thinkcentre-m920q-upgrade-compatibility-guide",
+      "homeoffice:guide:thinkcentre-m920x-upgrade-compatibility-guide"
+    ],
+    "newIndexablePaths": {
+      "homeoffice": [
+        "/compatibility",
+        "/compatibility/docks",
+        "/compatibility/monitor-arms",
+        "/compatibility/mini-pcs",
+        "/guides/thinkcentre-m720q-upgrade-compatibility-guide",
+        "/guides/thinkcentre-m920q-upgrade-compatibility-guide",
+        "/guides/thinkcentre-m920x-upgrade-compatibility-guide"
+      ],
+      "network": [
+        "/compatibility",
+        "/compatibility/ethernet"
+      ]
+    },
+    "searchResults": "noindex; no filtered/search combinations in sitemap",
+    "demandEvidence": "Existing dock, monitor-arm and wired-network query evidence; exact Tiny keyword volume is unavailable. Owner-authorized three-model pilot, not verified search volume or guaranteed ranking. No further model expansion before cohort review.",
+    "qualityGates": [
+      "Official sources and field/section locators",
+      "Readable server-rendered tables and complete setup decisions",
+      "Explicit conditional/conflict/unknown outcomes",
+      "No fabricated testing, ratings, price, stock or exact unverified FRU",
+      "Meaningful engine/search regressions, mobile and no-JavaScript reference checks",
+      "Existing canonical/redirect/Bing-AI protection"
+    ],
+    "reviewPolicy": "Day 7/14/30 dates begin at actual production activation; previous cohorts retain their gates.",
+    "report": "apps/affiliate/reports/compatibility-search-2026-10-19/README.md"
   }
 }

@@ -8,6 +8,7 @@ import { marketKeys, marketPath, markets, supportsMarketEditions } from "@/lib/m
 import { getCurrentSite } from "@/lib/sites";
 import { listIndexableCostumeProducts } from "@/lib/costume-catalog";
 import { costumeHalloweenIdeas } from "@/lib/costume-halloween-ideas";
+import { compatibilityTopics } from "@/lib/compatibility-topics";
 
 type LlmIndexItem = { slug: string } & ({ title: string } | { name: string });
 
@@ -72,6 +73,8 @@ export async function GET() {
     ...linesFor("Explainer guides", guides, "/guides"),
     "",
     ...linesFor("Tools", tools, "/tools"),
+    "",
+    ...compatibilityTopics.filter((topic) => topic.site === site.key).flatMap((topic) => [`- ${topic.title}: /compatibility/${topic.id}`]),
     "",
     ...countryEditionLines,
     "Important site information:",

@@ -9,3 +9,7 @@ node_modules
 docs
 deploy
 tiktok
+
+# Local account verification; never publish private account status.
+apps/affiliate/reports/compatibility-search-2026-10-19/merchant-verification.json
+apps/affiliate/reports/compatibility-search-2026-10-19/__pycache__/

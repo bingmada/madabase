@@ -77,6 +77,10 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="section"><div className="shell"><p className="eyebrow">Compatibility and upgrades</p><h2>Start with the equipment you already own.</h2><div className="discovery-grid">
+        <article className="discovery-card"><h3><a href="https://homeoffice.madabase.com/compatibility">Displays, docks, monitor arms and Tiny PCs →</a></h3><p>Check the host, installation conditions and missing parts before choosing an upgrade.</p></article>
+        <article className="discovery-card"><h3><a href="https://network.madabase.com/compatibility/ethernet">NAS and Ethernet bottlenecks →</a></h3><p>Map link-rate limits and the switch ports needed by the complete setup.</p></article>
+      </div></div></section>
       <section className="section publications-section" id="publications">
         <div className="shell">
           <div className="section-heading split-heading">

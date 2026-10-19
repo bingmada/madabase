@@ -1,0 +1,129 @@
+{
+  "passed": true,
+  "engineAndIntegrityChecks": 41,
+  "queryCases": [
+    {
+      "site": "homeoffice",
+      "query": "TS4",
+      "expected": "/reviews/caldigit-ts4-thunderbolt-dock",
+      "rank": 1
+    },
+    {
+      "site": "homeoffice",
+      "query": "CalDigit TS4",
+      "expected": "/reviews/caldigit-ts4-thunderbolt-dock",
+      "rank": 1
+    },
+    {
+      "site": "homeoffice",
+      "query": "TBT4-UD5",
+      "expected": "/reviews/plugable-tbt4-ud5-thunderbolt-dock",
+      "rank": 1
+    },
+    {
+      "site": "homeoffice",
+      "query": "USBC-6950PDZ",
+      "expected": "/reviews/plugable-usbc-6950pdz-displaylink-dock",
+      "rank": 1
+    },
+    {
+      "site": "homeoffice",
+      "query": "M720q",
+      "expected": "/guides/thinkcentre-m720q-upgrade-compatibility-guide",
+      "rank": 1
+    },
+    {
+      "site": "homeoffice",
+      "query": "M920q",
+      "expected": "/guides/thinkcentre-m920q-upgrade-compatibility-guide",
+      "rank": 1
+    },
+    {
+      "site": "homeoffice",
+      "query": "M920x",
+      "expected": "/guides/thinkcentre-m920x-upgrade-compatibility-guide",
+      "rank": 1
+    },
+    {
+      "site": "homeoffice",
+      "query": "M720q RAM upgrade",
+      "expected": "/guides/thinkcentre-m720q-upgrade-compatibility-guide",
+      "rank": 1
+    },
+    {
+      "site": "homeoffice",
+      "query": "M920x SSD",
+      "expected": "/guides/thinkcentre-m920x-upgrade-compatibility-guide",
+      "rank": 1
+    },
+    {
+      "site": "homeoffice",
+      "query": "U2723QE",
+      "expected": "/compatibility/monitor-arms",
+      "rank": 1
+    },
+    {
+      "site": "homeoffice",
+      "query": "U3223QE",
+      "expected": "/compatibility/monitor-arms",
+      "rank": 1
+    },
+    {
+      "site": "homeoffice",
+      "query": "U4025QW",
+      "expected": "/compatibility/monitor-arms",
+      "rank": 1
+    },
+    {
+      "site": "homeoffice",
+      "query": "Ergotron HX",
+      "expected": "/reviews/ergotron-hx-monitor-arm",
+      "rank": 2
+    },
+    {
+      "site": "homeoffice",
+      "query": "DisplayLink Thunderbolt",
+      "expected": "/best/displaylink-vs-thunderbolt-dock-dual-monitors",
+      "rank": 2
+    },
+    {
+      "site": "homeoffice",
+      "query": "Anker 675",
+      "expected": "/reviews/anker-675-usb-c-docking-station",
+      "rank": 1
+    },
+    {
+      "site": "network",
+      "query": "Deco BE67 BE63",
+      "expected": "/best/tp-link-deco-be67-vs-be63",
+      "rank": 3
+    },
+    {
+      "site": "network",
+      "query": "NAS Ethernet bottleneck",
+      "expected": "/compatibility/ethernet",
+      "rank": 1
+    },
+    {
+      "site": "network",
+      "query": "2.5GbE",
+      "expected": "/guides/2-5gbe-home-network-upgrade-checklist",
+      "rank": 1
+    },
+    {
+      "site": "homeoffice",
+      "query": "monitor arm desk fit",
+      "expected": "/compatibility/monitor-arms",
+      "rank": 1
+    },
+    {
+      "site": "homeoffice",
+      "query": "MacBook dock compatibility",
+      "expected": "/compatibility/docks",
+      "rank": 1
+    }
+  ],
+  "sourceRecords": 21,
+  "modelGuides": 3,
+  "exactAmazonOfferChecks": 7
+}

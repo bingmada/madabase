@@ -1,4 +1,7 @@
 import Image from "next/image";
+import { UpgradePurchaseOption } from "@/components/UpgradePurchaseOption";
+import { CompatibilityPlanner, type PlannerTopic } from "@/components/CompatibilityPlanner";
+import { compatibilityTopicForGuide } from "@/lib/compatibility-topics";
 import Link from "next/link";
 import { notFound, permanentRedirect } from "next/navigation";
 import { AffiliateButton, AffiliateButtonGroup } from "@/components/AffiliateButton";
@@ -317,6 +320,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
   const commerceProduct = guideCommerceProduct(site.key, guide);
   const commerceIsAlternative = isCommerceAlternative(topProduct, commerceProduct);
   const directAnswer = guide.quickAnswer ?? guide.sections[0]?.body ?? advice.decision;
+  const plannerTopic = compatibilityTopicForGuide(site.key, guide.slug);
   const amazonFamilyProduct = guide.familySlug ? findAmazonFamilyProduct(site.key, guide.familySlug) : undefined;
   const amazonFamilyIdentity = amazonFamilyProduct ? amazonFamilyProductIdentity(amazonFamilyProduct) : undefined;
   const amazonFamilyBlock = amazonFamilyProduct?.offerBlock;
@@ -423,7 +427,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
           <p className="eyebrow">{guide.category}</p>
         )}
         <h1 className="mt-3 text-3xl font-black leading-tight sm:text-4xl">{guide.title}</h1>
-        {topProduct || topRoundup || commerceProduct || amazonFamilyProduct || cjFamilyAffiliateOffer || costumeCommerceProduct ? (
+        {!plannerTopic && (topProduct || topRoundup || commerceProduct || amazonFamilyProduct || cjFamilyAffiliateOffer || costumeCommerceProduct) ? (
           <section
             className="mt-4 rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-4 sm:mt-5 sm:p-5"
             aria-label="First-screen purchase path"
@@ -498,6 +502,12 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
           <h2 className="mt-2 text-xl font-bold" id="guide-quick-answer">{tailoredGuide ? guide.searchQuestion : "The practical answer"}</h2>
           <p className="mt-3 leading-7 text-[var(--text)]">{directAnswer}</p>
         </section>
+        {plannerTopic ? <>
+          <nav className="discovery-chips" aria-label="On this page"><a href="#compatibility-checker">Check my setup</a><a href="#guide-reference-content">Read the guidance</a><Link href={`/compatibility/${plannerTopic}`}>Complete reference and sources</Link></nav>
+          <CompatibilityPlanner topic={plannerTopic as PlannerTopic} />
+          <UpgradePurchaseOption guide={guide.slug} />
+          <div id="guide-reference-content" />
+        </> : null}
         {buyingChoices.length ? (
           <section className="mt-6 grid gap-3 sm:grid-cols-3" aria-label="Choose the exact Deco model and pack">
             {buyingChoices.map((choice) => (

@@ -88,7 +88,9 @@
     "activate:cj:catalog-links": "node scripts/activate-cj-catalog-links.mjs",
     "publish:costume:cohort": "node scripts/publish-costume-cohort.mjs",
     "publish:costume:halloween": "node scripts/publish-costume-halloween-cohort.mjs",
-    "publish:costume:expansion": "node scripts/publish-costume-expansion-cohort.mjs"
+    "publish:costume:expansion": "node scripts/publish-costume-expansion-cohort.mjs",
+    "check:compatibility": "node scripts/check-compatibility-search.mjs && node scripts/export-site-search.mjs --check",
+    "export:search": "node scripts/export-site-search.mjs"
   },
   "dependencies": {
     "@prisma/adapter-pg": "^7.8.0",

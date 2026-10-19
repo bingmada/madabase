@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { headers } from "next/headers";
 import "./globals.css";
+import "../../shared/discovery.css";
 import { SiteChrome } from "@/components/LayoutParts";
 import { StyleChrome } from "@/components/StyleExperience";
 import { ClarityAnalytics } from "@/components/ClarityAnalytics";
