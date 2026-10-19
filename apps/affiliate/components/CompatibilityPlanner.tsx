@@ -26,7 +26,7 @@ function Result({ result }: { result: CompatibilityResult }) {
     try { await navigator.clipboard.writeText(checklist); setCopied(true); }
     catch { setCopyFallback(checklist); }
   }
-  return <section className="compat-result" id="compatibility-result" tabIndex={-1} aria-label="Your setup result" data-compatibility-status={result.status}>
+  return <section className="compat-result" id="compatibility-result" style={{scrollMarginTop:110}} tabIndex={-1} aria-label="Your setup result" data-compatibility-status={result.status}>
     <p className="eyebrow">{statusLabels[result.status]}</p><p className="evidence-note">{result.context}</p><h3>{result.title}</h3>
     <div className="discovery-card mt-4"><h3>{decision}</h3>{result.noBuy ? <p>{result.noBuy}</p> : <p>{result.status === "conditional" || result.status === "supported" ? "This is a planning checklist, subject to the exact component and assembly checks below." : "The parts list is a reference for a revised plan, not approval to buy the unresolved combination."}</p>}</div>
     <ul>{result.reasons.map((reason) => <li key={reason}>{reason}</li>)}</ul>
@@ -147,7 +147,7 @@ export function CompatibilityPlanner({ topic, initialModel = "" }: { topic: Plan
       </fieldset>
     </form>
     {result ? <Result key={JSON.stringify(result)} result={result} /> : null}
-    {comparison ? <section className="mt-6" id="dock-comparison" tabIndex={-1} aria-label="Dock comparison results"><h3 className="text-xl font-bold">Compare all three docks with these same requirements</h3><p>{comparison.guidance}</p><p>Choose a route below to see its exact wiring, missing pieces and cost worksheet. A conflict or unknown result is a reason to hold that purchase.</p><div className="discovery-grid">{comparison.candidates.map(({id,name,result:candidate}) => <article className="discovery-card" key={id}><h3>{name}</h3><p><strong>{statusLabels[candidate.status]}</strong> · {candidate.title}</p><ul>{candidate.reasons.map((reason) => <li key={reason}>{reason}</li>)}</ul><button type="button" className="decision-button" onClick={() => chooseDock(id)}>Show checklist for {name}</button><p><a href={candidate.href}>Read exact model</a></p></article>)}</div></section> : null}
+    {comparison ? <section className="mt-6" id="dock-comparison" style={{scrollMarginTop:110}} tabIndex={-1} aria-label="Dock comparison results"><h3 className="text-xl font-bold">Compare all three docks with these same requirements</h3><p>{comparison.guidance}</p><p>Choose a route below to see its exact wiring, missing pieces and cost worksheet. A conflict or unknown result is a reason to hold that purchase.</p><div className="discovery-grid">{comparison.candidates.map(({id,name,result:candidate}) => <article className="discovery-card" key={id}><h3>{name}</h3><p><strong>{statusLabels[candidate.status]}</strong> · {candidate.title}</p><ul>{candidate.reasons.map((reason) => <li key={reason}>{reason}</li>)}</ul><button type="button" className="decision-button" onClick={() => chooseDock(id)}>Show checklist for {name}</button><p><a href={candidate.href}>Read exact model</a></p></article>)}</div></section> : null}
     {!result && !comparison ? <p className="evidence-note mt-4">Choose your equipment and submit to see the result. No model is recommended before these checks.</p> : null}
   </section>;
 }

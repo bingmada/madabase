@@ -8,8 +8,8 @@
     },
     "affiliate": {
       "path": "apps/affiliate/.release/affiliate-runtime.tgz",
-      "bytes": 61072888,
-      "sha256": "09661b6af48e12ad5039e6baaf091d1148a87f35bc7f2b9d11290d966180800e"
+      "bytes": 61071496,
+      "sha256": "a39bf172f6c55a8651ea60ef7a1d764892b4f6448aa3e6f694c06d9e6b2ba1c7"
     }
   },
   "node": "20.20.0",
