@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "updatedAt": "2026-10-19T11:51:19.906198+00:00",
+  "updatedAt": "2026-10-19T13:09:13.601861+00:00",
   "status": "all-site-portfolio-recovery-deployed-and-publicly-verified",
   "objective": "Make affiliate traffic, merchant clicks, and commission revenue measurable before scaling content volume.",
   "socialWebsiteLinks20261012": {
@@ -50,7 +50,8 @@
     "seoMetadataRelease20261003": "Read this key and apps/affiliate/reports/seo-release-2026-10-02/validation.json first. Affiliate 6dd60db is LIVE since Oct3 11:24; Main restored after approved 9-second maintenance. Older awaiting-owner/unpublished claims are historical. All 109 sampled URLs including all priority53 pass raw head validation under three UAs; Google live reinspection underway; no ranking recovery claimed.",
     "seoSpamRecovery20261006": "Read this key and apps/affiliate/reports/seo-recovery-2026-10-06/README.md first. The final batch covers all seven active affiliate sites: Network, Smarthome, Homeoffice, Baby, Pet, Style and Costume. It retains 17 existing canonicals, permanently redirects 55 overlapping base URLs, adds zero routes and supersedes the earlier two-site-only package. Local production HTTP validation passed 55 base redirects, 220 regional redirects, 17 base canonicals, 64 regional canonicals and seven sitemaps; all 19 governed categories also passed. New publication and bulk Request Indexing remain frozen; use the exact October 13, October 20 and November 5 gates.",
     "portfolioStrategyReset20261008": "Read portfolioStrategyReset20261008, apps/affiliate/config/portfolio-recovery-2026-10-08.json and apps/affiliate/reports/portfolio-recovery-2026-10-08/deployment.json first. The seven-site workflow is deployed and publicly verified at bfb8689e4a63d5368036ef6e829fe492b840d919 after a production-only Costume evidence-boundary repair. Six Amazon sites have 1,147 of 1,147 effective public passes after bounded retry; Costume has 108 of 108 effective public passes after the repaired canonical completed normal SJC edge revalidation. Owner testing remains unavailable, so hands-on claims and Review structured data stay blocked. Keep the zero-new-URL freeze and the October 13, October 20 and November 5 gates.",
-    "compatibilitySearch20261019": "Read compatibilitySearch20261019 and reports/compatibility-search-2026-10-19/deployment.json first. Completed scope a837332 is LIVE since Oct19 19:29:31 China time. Main/Affiliate current discovery-20261019-a837332; Test restored unchanged; previous releases retained. Effective public317/317,49 cache targets current after47 exact URL purges,32 assets,8 RSC hosts,14 browser decisions,5 public mobile and9 nonpersisting click cases passed. Exact18 IndexNow accepted HTTP200. Review all18 on Oct26/Nov2/Nov18; preserve prior cohort gates. Older not-deployed/not-authorized notes are historical."
+    "compatibilitySearch20261019": "User-journey repair 434cf229 is LIVE at 2026-10-19T20:59:56.304493+08:00. Read userJourney20261019 and apps/affiliate/reports/user-journey-2026-10-19/README.md first. Public317/317,10 browser decisions,7 mobile,49 current cache pages,32 assets,8 RSC hosts and9 zero-write click cases pass. Test never paused, all three active/0 restarts; previous a837332 releases retained. Manual rollback uses deploy.py rollback, not watchdog recover. Exact16 material updates accepted IndexNow HTTP200. Preserve Oct26/Nov2/Nov18 cohort dates; no new canonicals.",
+    "userJourney20261019": "User-journey repair 434cf229 is LIVE at 2026-10-19T20:59:56.304493+08:00. Read userJourney20261019 and apps/affiliate/reports/user-journey-2026-10-19/README.md first. Public317/317,10 browser decisions,7 mobile,49 current cache pages,32 assets,8 RSC hosts and9 zero-write click cases pass. Test never paused, all three active/0 restarts; previous a837332 releases retained. Manual rollback uses deploy.py rollback, not watchdog recover. Exact16 material updates accepted IndexNow HTTP200. Preserve Oct26/Nov2/Nov18 cohort dates; no new canonicals."
   },
   "portfolioStrategyReset20261008": {
     "status": "production_deployed_and_publicly_verified",
@@ -5990,6 +5991,73 @@
         "google-sitemaps.json",
         "bing-sitemaps.json"
       ]
-    }
+    },
+    "currentDeployment": {
+      "release": "journey-20261019-434cf229c9ab044a2db48490aa748dc5a4017434",
+      "revision": "434cf229c9ab044a2db48490aa748dc5a4017434",
+      "activatedAt": "2026-10-19T12:59:56.304493+00:00",
+      "record": "apps/affiliate/reports/user-journey-2026-10-19/deployment.json",
+      "switchSeconds": 5.694037199020386,
+      "testPaused": false,
+      "allThreeServicesActive": true,
+      "automaticRestarts": 0,
+      "rollbackReady": true,
+      "manualRollback": "sudo -n python3 /var/tmp/madabase-journey-inputs-20261019/deploy.py rollback"
+    },
+    "currentJourneyRepair": "apps/affiliate/reports/user-journey-2026-10-19/README.md"
+  },
+  "userJourney20261019": {
+    "status": "deployed-publicly-verified",
+    "authorization": "Owner requested complete end-to-end user testing of search, compatibility and Tiny upgrades, competitor gap assessment and direct repairs. Existing bounded-page release authorization applies; Test was not paused.",
+    "report": "apps/affiliate/reports/user-journey-2026-10-19/README.md",
+    "newIndexableCanonicals": 0,
+    "deployment": {
+      "release": "journey-20261019-434cf229c9ab044a2db48490aa748dc5a4017434",
+      "revision": "434cf229c9ab044a2db48490aa748dc5a4017434",
+      "activatedAt": "2026-10-19T12:59:56.304493+00:00",
+      "record": "apps/affiliate/reports/user-journey-2026-10-19/deployment.json",
+      "switchSeconds": 5.694037199020386,
+      "testPaused": false,
+      "allThreeServicesActive": true,
+      "automaticRestarts": 0,
+      "rollbackReady": true,
+      "manualRollback": "sudo -n python3 /var/tmp/madabase-journey-inputs-20261019/deploy.py rollback"
+    },
+    "validation": {
+      "httpTargetsPassed": 317,
+      "browserDecisionCasesPassed": 10,
+      "mobilePagesPassed": 7,
+      "cacheTargetsCurrent": 49,
+      "affiliateRepeatHtmlHits": 48,
+      "retainedAndCurrentAssetsPassed": 32,
+      "rscHostsDynamic": 8,
+      "exactMerchantClickQaCasesPassed": 9,
+      "productionQaDatabaseWrites": 0,
+      "independentJourneyCasesPassed": 28,
+      "deploymentFailureAndRecoveryCasesPassed": 10,
+      "indexNowExactUrlsAccepted": 16
+    },
+    "forecastMiB": 772.00390625,
+    "actualAvailableMiB": {
+      "main": 739.78515625,
+      "affiliate": 705.6484375
+    },
+    "capacityThresholdsUnchanged": {
+      "forecastMiB": 768,
+      "actualMiB": 704
+    },
+    "merchantScope": "Same three verified identities; no new merchant, replacement-capacity link, or attributed test click. Four/eight-GB and unit-specific FRUs remain reference-only until exact listing evidence.",
+    "competitiveLimits": [
+      "Three Tiny models and three monitor presets; evidence coverage smaller than manufacturer finders",
+      "No own teardown photographs, power/noise/thermal/stability testing",
+      "No universal SATA carrier/cable/riser FRU or unverified NVMe offer"
+    ],
+    "reviewDatesPreserved": [
+      "2026-10-26",
+      "2026-11-02",
+      "2026-11-18"
+    ],
+    "sitemaps": "All seven live sitemaps and Costume database product passed; membership unchanged from same-day published cohort. Prior Google/Bing sitemap refresh retained, no duplicate bulk submission or Request Indexing.",
+    "cache": "56 exact URL purges accepted; 18 exact content-file prefixes cleared after plain canonical retained old variant. Final49 current,48 affiliate repeat HIT; API/search/RSC uncached. No root prefix, hostname purge or rule changes."
   }
 }

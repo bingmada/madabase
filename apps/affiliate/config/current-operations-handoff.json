@@ -139,7 +139,8 @@
       "Every commercial page must retain a truthful exact purchase path in the first viewport plus the responsive sticky purchase path.",
       "Preserve unrelated .DS_Store files, artifacts, packages and prisma paths. The modified apps/affiliate/.release/affiliate-runtime.tgz is the locally built deployed artifact, not an unrelated source edit."
     ],
-    "compatibilitySearch20261019": "Read compatibilitySearch20261019 and reports/compatibility-search-2026-10-19/deployment.json first. Completed scope a837332 is LIVE since Oct19 19:29:31 China time. Main/Affiliate current discovery-20261019-a837332; Test restored unchanged; previous releases retained. Effective public317/317,49 cache targets current after47 exact URL purges,32 assets,8 RSC hosts,14 browser decisions,5 public mobile and9 nonpersisting click cases passed. Exact18 IndexNow accepted HTTP200. Review all18 on Oct26/Nov2/Nov18; preserve prior cohort gates. Older not-deployed/not-authorized notes are historical."
+    "compatibilitySearch20261019": "User-journey repair 434cf229 is LIVE at 2026-10-19T20:59:56.304493+08:00. Read userJourney20261019 and apps/affiliate/reports/user-journey-2026-10-19/README.md first. Public317/317,10 browser decisions,7 mobile,49 current cache pages,32 assets,8 RSC hosts and9 zero-write click cases pass. Test never paused, all three active/0 restarts; previous a837332 releases retained. Manual rollback uses deploy.py rollback, not watchdog recover. Exact16 material updates accepted IndexNow HTTP200. Preserve Oct26/Nov2/Nov18 cohort dates; no new canonicals.",
+    "userJourney20261019": "User-journey repair 434cf229 is LIVE at 2026-10-19T20:59:56.304493+08:00. Read userJourney20261019 and apps/affiliate/reports/user-journey-2026-10-19/README.md first. Public317/317,10 browser decisions,7 mobile,49 current cache pages,32 assets,8 RSC hosts and9 zero-write click cases pass. Test never paused, all three active/0 restarts; previous a837332 releases retained. Manual rollback uses deploy.py rollback, not watchdog recover. Exact16 material updates accepted IndexNow HTTP200. Preserve Oct26/Nov2/Nov18 cohort dates; no new canonicals."
   },
   "postRolloutReview20260823": {
     "status": "daily_checks_and_existing_page_recovery_complete_url_inspection_partial_quota",
@@ -1051,6 +1052,73 @@
     },
     "nextAction": "Observe all18 exact new/enhanced canonicals at Oct26/Nov2/Nov18; preserve prior gates. Production, search, links and cache acceptance passed.",
     "scopeAudit": "apps/affiliate/reports/compatibility-search-2026-10-19/scope-audit.md",
-    "ownerReply": "Explicit approval to publish completed scope with this Main/Test pause and rollback; fulfilled."
+    "ownerReply": "Explicit approval to publish completed scope with this Main/Test pause and rollback; fulfilled.",
+    "currentJourneyRepair": "apps/affiliate/reports/user-journey-2026-10-19/README.md",
+    "currentDeployment": {
+      "release": "journey-20261019-434cf229c9ab044a2db48490aa748dc5a4017434",
+      "revision": "434cf229c9ab044a2db48490aa748dc5a4017434",
+      "activatedAt": "2026-10-19T12:59:56.304493+00:00",
+      "record": "apps/affiliate/reports/user-journey-2026-10-19/deployment.json",
+      "switchSeconds": 5.694037199020386,
+      "testPaused": false,
+      "allThreeServicesActive": true,
+      "automaticRestarts": 0,
+      "rollbackReady": true,
+      "manualRollback": "sudo -n python3 /var/tmp/madabase-journey-inputs-20261019/deploy.py rollback"
+    }
+  },
+  "userJourney20261019": {
+    "status": "deployed-publicly-verified",
+    "authorization": "Owner requested complete end-to-end user testing of search, compatibility and Tiny upgrades, competitor gap assessment and direct repairs. Existing bounded-page release authorization applies; Test was not paused.",
+    "report": "apps/affiliate/reports/user-journey-2026-10-19/README.md",
+    "newIndexableCanonicals": 0,
+    "deployment": {
+      "release": "journey-20261019-434cf229c9ab044a2db48490aa748dc5a4017434",
+      "revision": "434cf229c9ab044a2db48490aa748dc5a4017434",
+      "activatedAt": "2026-10-19T12:59:56.304493+00:00",
+      "record": "apps/affiliate/reports/user-journey-2026-10-19/deployment.json",
+      "switchSeconds": 5.694037199020386,
+      "testPaused": false,
+      "allThreeServicesActive": true,
+      "automaticRestarts": 0,
+      "rollbackReady": true,
+      "manualRollback": "sudo -n python3 /var/tmp/madabase-journey-inputs-20261019/deploy.py rollback"
+    },
+    "validation": {
+      "httpTargetsPassed": 317,
+      "browserDecisionCasesPassed": 10,
+      "mobilePagesPassed": 7,
+      "cacheTargetsCurrent": 49,
+      "affiliateRepeatHtmlHits": 48,
+      "retainedAndCurrentAssetsPassed": 32,
+      "rscHostsDynamic": 8,
+      "exactMerchantClickQaCasesPassed": 9,
+      "productionQaDatabaseWrites": 0,
+      "independentJourneyCasesPassed": 28,
+      "deploymentFailureAndRecoveryCasesPassed": 10,
+      "indexNowExactUrlsAccepted": 16
+    },
+    "forecastMiB": 772.00390625,
+    "actualAvailableMiB": {
+      "main": 739.78515625,
+      "affiliate": 705.6484375
+    },
+    "capacityThresholdsUnchanged": {
+      "forecastMiB": 768,
+      "actualMiB": 704
+    },
+    "merchantScope": "Same three verified identities; no new merchant, replacement-capacity link, or attributed test click. Four/eight-GB and unit-specific FRUs remain reference-only until exact listing evidence.",
+    "competitiveLimits": [
+      "Three Tiny models and three monitor presets; evidence coverage smaller than manufacturer finders",
+      "No own teardown photographs, power/noise/thermal/stability testing",
+      "No universal SATA carrier/cable/riser FRU or unverified NVMe offer"
+    ],
+    "reviewDatesPreserved": [
+      "2026-10-26",
+      "2026-11-02",
+      "2026-11-18"
+    ],
+    "sitemaps": "All seven live sitemaps and Costume database product passed; membership unchanged from same-day published cohort. Prior Google/Bing sitemap refresh retained, no duplicate bulk submission or Request Indexing.",
+    "cache": "56 exact URL purges accepted; 18 exact content-file prefixes cleared after plain canonical retained old variant. Final49 current,48 affiliate repeat HIT; API/search/RSC uncached. No root prefix, hostname purge or rule changes."
   }
 }

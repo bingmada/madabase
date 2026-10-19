@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-10-19T13:07:40.927Z",
+  "units": [
+    {
+      "NRestarts": "0",
+      "WorkingDirectory": "/srv/madabase-main/releases/journey-20261019-434cf229c9ab044a2db48490aa748dc5a4017434",
+      "Id": "madabase-main.service",
+      "ActiveState": "active"
+    },
+    {
+      "NRestarts": "0",
+      "WorkingDirectory": "/srv/madabase-affiliate/releases/journey-20261019-434cf229c9ab044a2db48490aa748dc5a4017434",
+      "Id": "madabase-affiliate.service",
+      "ActiveState": "active"
+    },
+    {
+      "NRestarts": "0",
+      "WorkingDirectory": "/srv/madabase-test/releases/local-20260820-next15523",
+      "Id": "madabase-test.service",
+      "ActiveState": "active"
+    }
+  ],
+  "recoveryTimer": "inactive",
+  "passed": true
+}

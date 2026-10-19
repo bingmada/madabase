@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "task": "8+4 to16",
+      "passed": true
+    },
+    {
+      "task": "8+8 target16 no buy",
+      "passed": true
+    },
+    {
+      "task": "16+empty to32, one exact module",
+      "passed": true
+    },
+    {
+      "task": "SATA kit unconfirmed blocks purchase",
+      "passed": true
+    },
+    {
+      "task": "SATA verified fit exact option",
+      "passed": true
+    },
+    {
+      "task": "M920x second NVMe uninspected holds",
+      "passed": true
+    },
+    {
+      "task": "M1 compare three routes",
+      "passed": true
+    },
+    {
+      "task": "DisplayLink exact missing cables and separate charger",
+      "passed": true
+    },
+    {
+      "task": "2.5G adequate five-port network keep",
+      "passed": true
+    },
+    {
+      "task": "Already owned fully checked arm no buy",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "url": "https://homeoffice.madabase.com/compatibility/docks",
+      "h1": "MacBook Dock Compatibility: Displays, Cables and Charging",
+      "pageWidth": 375,
+      "viewport": 390,
+      "passed": true
+    },
+    {
+      "url": "https://homeoffice.madabase.com/compatibility/monitor-arms",
+      "h1": "Monitor Arm Fit: Weight, VESA, Clamp and Desk Checks",
+      "pageWidth": 375,
+      "viewport": 390,
+      "passed": true
+    },
+    {
+      "url": "https://homeoffice.madabase.com/compatibility/mini-pcs",
+      "h1": "ThinkCentre Tiny Upgrade Planner: M720q, M920q and M920x",
+      "pageWidth": 375,
+      "viewport": 390,
+      "passed": true
+    },
+    {
+      "url": "https://network.madabase.com/compatibility/ethernet",
+      "h1": "NAS and Ethernet Planner: Bottlenecks and Switch Ports",
+      "pageWidth": 375,
+      "viewport": 390,
+      "passed": true
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/thinkcentre-m720q-upgrade-compatibility-guide",
+      "h1": "ThinkCentre M720q Tiny: RAM, SSD and PCIe Upgrade Checks",
+      "pageWidth": 375,
+      "viewport": 390,
+      "passed": true
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/thinkcentre-m920q-upgrade-compatibility-guide",
+      "h1": "ThinkCentre M920q Tiny: RAM, SSD and PCIe Upgrade Checks",
+      "pageWidth": 375,
+      "viewport": 390,
+      "passed": true
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/thinkcentre-m920x-upgrade-compatibility-guide",
+      "h1": "ThinkCentre M920x Tiny: RAM, SSD and PCIe Upgrade Checks",
+      "pageWidth": 375,
+      "viewport": 390,
+      "passed": true
+    }
+  ]
+}

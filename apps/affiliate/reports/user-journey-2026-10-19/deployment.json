@@ -1,0 +1,72 @@
+{
+  "revision": "434cf229c9ab044a2db48490aa748dc5a4017434",
+  "status": "origin-verified",
+  "testWorkingDirectory": "/srv/madabase-test/releases/local-20260820-next15523",
+  "apps": {
+    "main": {
+      "old": "/srv/madabase-main/releases/discovery-20261019-a837332f6b0881c2fc10f4f335715dd6b97954fc",
+      "new": "/srv/madabase-main/releases/journey-20261019-434cf229c9ab044a2db48490aa748dc5a4017434",
+      "sha256": "4951c0fc59ca49d23dacc9f84d804d4a007ae67d6bc1e4c5aaa51b37abac61ad",
+      "retainedAssets": 24
+    },
+    "affiliate": {
+      "old": "/srv/madabase-affiliate/releases/discovery-20261019-a837332f6b0881c2fc10f4f335715dd6b97954fc",
+      "new": "/srv/madabase-affiliate/releases/journey-20261019-434cf229c9ab044a2db48490aa748dc5a4017434",
+      "sha256": "a39bf172f6c55a8651ea60ef7a1d764892b4f6448aa3e6f694c06d9e6b2ba1c7",
+      "retainedAssets": 53
+    }
+  },
+  "startedAt": 1792414790.6104562,
+  "forecast": {
+    "capacity": {
+      "passed": false,
+      "availableMiB": 394.51953125,
+      "sliceHeadroomMiB": "unlimited",
+      "requiredMiB": 704,
+      "candidateMiB": 512,
+      "reserveMiB": 192,
+      "pressureAvg10": 0,
+      "reasons": [
+        "Insufficient MemAvailable; swap does not count as candidate capacity."
+      ]
+    },
+    "reclaimedAnonymousMiB": 377.484375,
+    "projectedMiB": 772.00390625,
+    "requiredMiB": 768
+  },
+  "testPaused": false,
+  "testRestored": true,
+  "gates": {
+    "main": {
+      "passed": true,
+      "availableMiB": 739.78515625,
+      "sliceHeadroomMiB": "unlimited",
+      "requiredMiB": 704,
+      "candidateMiB": 512,
+      "reserveMiB": 192,
+      "pressureAvg10": 0,
+      "reasons": []
+    },
+    "affiliate": {
+      "passed": true,
+      "availableMiB": 705.6484375,
+      "sliceHeadroomMiB": "unlimited",
+      "requiredMiB": 704,
+      "candidateMiB": 512,
+      "reserveMiB": 192,
+      "pressureAvg10": 0,
+      "reasons": []
+    }
+  },
+  "verification": {
+    "main": {
+      "search": true
+    },
+    "affiliate": {
+      "contentCanonicals": 18,
+      "sitemaps": 7,
+      "databaseProduct": true
+    }
+  },
+  "completedAt": 1792414796.3044934
+}
