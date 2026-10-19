@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-25",
+  "updatedAt": "2026-10-19",
   "pageUpdatedAt": "July 30, 2026",
   "blocks": [
     {
@@ -194,6 +194,26 @@
       "pageUpdatedAt": "September 25, 2026",
       "observedListing": "No featured offer; Sellers on Amazon drawer shows only Used - Like New from Gear(4)Less",
       "reason": "The checked seller list offered a used unit, while this review does not evaluate its condition or that seller. The purchase link is paused until a matching new-unit offer is verified."
+    },
+    {
+      "site": "baby",
+      "slug": "family-toddler-learning-towers",
+      "asin": "B001ECHXVC",
+      "status": "unavailable",
+      "checkedAt": "2026-10-19",
+      "pageUpdatedAt": "October 19, 2026",
+      "observedListing": "Little Partners Original Learning Tower LP01411 Natural: Currently unavailable for US ZIP 10001; no restock date",
+      "reason": "The exact Original Learning Tower has no current US offer. Purchase links are paused pending exact-model availability verification. This is not the different Grow N Stow LP01711 recall."
+    },
+    {
+      "site": "network",
+      "slug": "tp-link-deco-be85-wifi-7-mesh",
+      "asin": "B0C4W1L4B3",
+      "status": "unavailable",
+      "checkedAt": "2026-10-19",
+      "pageUpdatedAt": "October 19, 2026",
+      "observedListing": "Deco BE85 BE22000 2 Pack: Currently unavailable for US ZIP 10001; no featured offer or restock date",
+      "reason": "The exact two-pack has no current US offer. Purchase links are paused. The three-pack and BE67 are different purchases and are not substituted under this button."
     }
   ]
 }

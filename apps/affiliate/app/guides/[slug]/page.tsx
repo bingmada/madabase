@@ -15,7 +15,8 @@ import { breadcrumbSchema, guideSchema, itemListSchema, pageMetadata } from "@/l
 import { getCurrentSite } from "@/lib/sites";
 import type { Guide, SiteKey } from "@/lib/types";
 import { costumeHalloweenIdeas } from "@/lib/costume-halloween-ideas";
-import { findAmazonFamilyProduct } from "@/lib/amazon-family-products";
+import { amazonFamilyProductIdentity, findAmazonFamilyProduct } from "@/lib/amazon-family-products";
+import { decoBuyingChoices } from "@/lib/commerce-refresh";
 import { amazonAsinAffiliateUrl } from "@/lib/affiliate-tracking";
 import { findAuthorizedCjFamilyOffer } from "@/lib/cj-offers";
 import { guideCommerceProduct, isCommerceAlternative } from "@/lib/commerce-paths";
@@ -317,13 +318,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
   const commerceIsAlternative = isCommerceAlternative(topProduct, commerceProduct);
   const directAnswer = guide.quickAnswer ?? guide.sections[0]?.body ?? advice.decision;
   const amazonFamilyProduct = guide.familySlug ? findAmazonFamilyProduct(site.key, guide.familySlug) : undefined;
-  const amazonFamilyIdentity = amazonFamilyProduct ? {
-    slug: `family-${amazonFamilyProduct.familySlug}-${amazonFamilyProduct.asin.toLowerCase()}`,
-    name: amazonFamilyProduct.title,
-    amazonTitle: amazonFamilyProduct.title,
-    asin: amazonFamilyProduct.asin,
-    specs: { ASIN: amazonFamilyProduct.asin },
-  } : undefined;
+  const amazonFamilyIdentity = amazonFamilyProduct ? amazonFamilyProductIdentity(amazonFamilyProduct) : undefined;
   const amazonFamilyBlock = amazonFamilyProduct?.offerBlock;
   const amazonFamilyOffer = amazonFamilyProduct && !amazonFamilyBlock ? {
     merchant: "Amazon US",
@@ -331,6 +326,8 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
     label: "Check this exact ASIN on Amazon",
     priceNote: `Confirm ASIN ${amazonFamilyProduct.asin}, exact model or variant, seller, availability, shipping, and returns before checkout.`,
   } : undefined;
+  const buyingChoices = site.key === "network" && guide.slug === "deco-be63-vs-be67-vs-be85-buying-guide"
+    ? decoBuyingChoices.map((choice) => ({ ...choice, product: findProduct(site.key, choice.slug) })) : [];
   const cjFamilyOffer = guide.familySlug ? findAuthorizedCjFamilyOffer(site.key, guide.familySlug) : undefined;
   const cjFamilyProduct = cjFamilyOffer ? findProduct(site.key, cjFamilyOffer.productSlug) : undefined;
   const cjFamilyIdentity = cjFamilyOffer ? {
@@ -437,7 +434,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             <div className="mt-2 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
               <div>
                 <h2 className="text-lg font-bold sm:text-xl">
-                  {topProduct?.name ?? amazonFamilyProduct?.title ?? commerceProduct?.name ?? costumeCommerceProduct?.title ?? "Compare the short list"}
+                  {amazonFamilyProduct?.title ?? topProduct?.name ?? commerceProduct?.name ?? costumeCommerceProduct?.title ?? "Compare the short list"}
                 </h2>
                 {amazonFamilyBlock ? (
                   <p className="mt-2 max-w-xl text-sm leading-5 text-[var(--muted)]">
@@ -489,6 +486,18 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
                       ? "Use the product review and comparison while the exact retailer paths are being verified."
                       : "Use the comparison page to narrow the choices before buying."}
             </p>
+          </section>
+        ) : null}
+        {buyingChoices.length ? (
+          <section className="mt-6 grid gap-3 sm:grid-cols-3" aria-label="Choose the exact Deco model and pack">
+            {buyingChoices.map((choice) => (
+              <div className="min-w-0 rounded-md border border-[var(--border)] bg-white p-4" key={choice.slug}>
+                <h2 className="text-lg font-bold">{choice.label}</h2>
+                <p className="my-3 text-sm leading-6 text-[var(--muted)]">{choice.fit}</p>
+                {choice.product?.offers.length ? <AffiliateButtonGroup site={site.key} product={choice.product} position="guide-deco-model-pack-choice" limit={1} /> : <p className="text-sm font-bold">Exact purchase link paused</p>}
+                <Link className="mt-3 block text-sm font-bold underline" href={`/reviews/${choice.slug}`}>Read the model details</Link>
+              </div>
+            ))}
           </section>
         ) : null}
         <p className="mt-5 text-lg leading-8 text-[var(--muted)]">{guide.dek}</p>

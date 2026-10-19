@@ -3,6 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import ts from "typescript";
 import { amazonFamilyTitleMeetsPolicy } from "./amazon-family-semantic-policy.mjs";
+import { loadAffiliateTypescript } from "./lib/load-affiliate-typescript.mjs";
 
 const workspaceDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const libDir = path.join(workspaceDir, "lib");
@@ -316,9 +317,9 @@ if (amazonFamilyProducts.length !== expectedAmazonFamilyTotal) {
 const amazonFamilyKeys = new Set();
 const amazonFamilyAsins = new Set();
 const existingEditorialAsins = new Set(
-  fs.readdirSync(libDir)
-    .filter((name) => name.endsWith(".ts") && name !== "amazon-family-products.ts")
-    .flatMap((name) => [...fs.readFileSync(path.join(libDir, name), "utf8").matchAll(/\b(B[A-Z0-9]{9})\b/g)].map((match) => match[1])),
+  amazonExpansionSites.flatMap((site) => loadAffiliateTypescript("../../lib/content.ts").siteProducts(site))
+    .map((product) => product.asin ?? product.specs.ASIN)
+    .filter(Boolean),
 );
 for (const site of amazonExpansionSites) {
   const expectedFamilies = quadrupleExpansionModule.quadrupleExpansionFamilies.filter((family) => family.site === site);

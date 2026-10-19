@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { hasQaParameters } from "../../../../../shared/analytics-traffic";
-import { findProduct } from "@/lib/content";
+import { isPublishedCommerceClick } from "@/lib/commerce-inventory";
 import { getAffiliatePrisma, hasDatabaseUrl } from "@/lib/db";
 import type { MarketKey, SiteKey } from "@/lib/types";
 
@@ -14,56 +14,51 @@ type ClickPayload = {
   path?: string;
 };
 
-const siteKeys = new Set<SiteKey>([
-  "pet",
-  "homeoffice",
-  "baby",
-  "network",
-  "smarthome",
-  "style",
-]);
 const marketKeys = new Set<MarketKey>(["gb", "ca", "de", "nl"]);
 
-function cleanText(value: string | undefined, maxLength: number) {
-  return value?.trim().slice(0, maxLength) ?? "";
+function cleanText(value: unknown, maxLength: number) {
+  return typeof value === "string" && value.trim().length <= maxLength ? value.trim() : "";
 }
 
 export async function POST(request: Request) {
   const referrer = request.headers.get("referer");
+  let qaVisit = false;
   if (referrer) {
     try {
       if (hasQaParameters(new URL(referrer).search)) {
-        return NextResponse.json({ ok: true, persisted: false, reason: "qa_visit" });
+        qaVisit = true;
       }
     } catch {
       // A missing or malformed referrer must not discard a real click.
     }
   }
-  const payload = (await request.json().catch(() => ({}))) as ClickPayload;
+  const body = await request.json().catch(() => ({}));
+  const payload: ClickPayload = body && typeof body === "object" ? body : {};
   const site = cleanText(payload.site, 40) as SiteKey;
   const marketValue = cleanText(payload.market, 8);
   const market = marketKeys.has(marketValue as MarketKey) ? (marketValue as MarketKey) : "us";
-  const productSlug = cleanText(payload.productSlug, 120);
+  const productSlug = cleanText(payload.productSlug, 180);
   const merchant = cleanText(payload.merchant, 80);
   const position = cleanText(payload.position, 80);
   const path = cleanText(payload.path, 240);
   const eventId = cleanText(payload.eventId, 80);
-  const product = siteKeys.has(site)
-    ? findProduct(site, productSlug)
-    : undefined;
 
   if (
     !eventId ||
-    !product ||
     !merchant ||
     !position ||
     !path.startsWith("/") ||
-    !product.offers.some((offer) => offer.merchant === merchant)
+    !isPublishedCommerceClick(site, productSlug, merchant)
   ) {
     return NextResponse.json(
       { ok: false, error: "invalid_click_event" },
       { status: 400 },
     );
+  }
+
+  // Exercise the real validator during release QA without recording a click.
+  if (qaVisit) {
+    return NextResponse.json({ ok: true, persisted: false, reason: "qa_visit", validated: true });
   }
 
   const cleanPayload = {

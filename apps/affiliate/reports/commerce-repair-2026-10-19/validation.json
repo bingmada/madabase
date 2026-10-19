@@ -1,0 +1,31 @@
+{
+  "status": "prepared-for-guarded-release",
+  "primaryChangedCanonicals": 12,
+  "publishedCommerceIdentities": 530,
+  "runtimeSiteAsinsChecked": 502,
+  "previousMissedGroups": 210,
+  "previousMissedNowCovered": 209,
+  "previousMissedNowSuppressed": 1,
+  "newlySuppressed": [
+    "baby:B001ECHXVC",
+    "network:B0C4W1L4B3"
+  ],
+  "regressionTests": "passed: published family identities, authorized merchants, blocked offers, input types, QA no-write, event idempotency",
+  "seo": "passed",
+  "lint": "passed",
+  "typescript": "passed",
+  "productionBuild": "passed",
+  "localRouteComparison": {
+    "passed": 290,
+    "deferredToOrigin": [
+      "Costume database product",
+      "Costume database sitemap"
+    ]
+  },
+  "publicBaseline": {
+    "passed": 292,
+    "bingAiProtected": 181,
+    "cohortTargets": 31
+  },
+  "maintenanceAuthority": "Owner explicitly approved temporary Main and Test pause for this release on 2026-10-19; restore immediately with independent timers. Tools excluded."
+}

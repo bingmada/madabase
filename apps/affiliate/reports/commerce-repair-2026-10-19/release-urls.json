@@ -1,0 +1,366 @@
+{
+  "newRoutes": 0,
+  "requestIndexing": false,
+  "families": [
+    {
+      "site": "homeoffice",
+      "family": "dual-screen-portable-monitors",
+      "target": "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-vs-alternatives",
+      "sources": [
+        "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-buying-guide",
+        "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-compatibility-and-fit-guide",
+        "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-ownership-cost-and-maintenance",
+        "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-setup-and-daily-workflow"
+      ]
+    },
+    {
+      "site": "homeoffice",
+      "family": "business-usb-c-monitors",
+      "target": "https://homeoffice.madabase.com/guides/business-usb-c-monitors-vs-alternatives",
+      "sources": [
+        "https://homeoffice.madabase.com/guides/business-usb-c-monitors-buying-guide",
+        "https://homeoffice.madabase.com/guides/business-usb-c-monitors-compatibility-and-fit-guide",
+        "https://homeoffice.madabase.com/guides/business-usb-c-monitors-ownership-cost-and-maintenance",
+        "https://homeoffice.madabase.com/guides/business-usb-c-monitors-setup-and-daily-workflow"
+      ]
+    },
+    {
+      "site": "homeoffice",
+      "family": "dual-monitor-kvm-switches",
+      "target": "https://homeoffice.madabase.com/guides/dual-monitor-kvm-switches-vs-alternatives",
+      "sources": [
+        "https://homeoffice.madabase.com/guides/dual-monitor-kvm-switches-buying-guide",
+        "https://homeoffice.madabase.com/guides/dual-monitor-kvm-switches-compatibility-and-fit-guide",
+        "https://homeoffice.madabase.com/guides/dual-monitor-kvm-switches-ownership-cost-and-maintenance",
+        "https://homeoffice.madabase.com/guides/dual-monitor-kvm-switches-setup-and-daily-workflow"
+      ]
+    },
+    {
+      "site": "homeoffice",
+      "family": "office-paper-shredders",
+      "target": "https://homeoffice.madabase.com/guides/office-paper-shredders-vs-alternatives",
+      "sources": [
+        "https://homeoffice.madabase.com/guides/office-paper-shredders-buying-guide",
+        "https://homeoffice.madabase.com/guides/office-paper-shredders-compatibility-and-fit-guide",
+        "https://homeoffice.madabase.com/guides/office-paper-shredders-ownership-cost-and-maintenance",
+        "https://homeoffice.madabase.com/guides/office-paper-shredders-setup-and-daily-workflow"
+      ]
+    },
+    {
+      "site": "homeoffice",
+      "family": "low-profile-keyboards",
+      "target": "https://homeoffice.madabase.com/guides/low-profile-keyboards-vs-alternatives",
+      "sources": [
+        "https://homeoffice.madabase.com/guides/low-profile-keyboards-buying-guide",
+        "https://homeoffice.madabase.com/guides/low-profile-keyboards-compatibility-and-fit-guide",
+        "https://homeoffice.madabase.com/guides/low-profile-keyboards-ownership-cost-and-maintenance",
+        "https://homeoffice.madabase.com/guides/low-profile-keyboards-setup-and-daily-workflow"
+      ]
+    },
+    {
+      "site": "homeoffice",
+      "family": "desktop-label-printers",
+      "target": "https://homeoffice.madabase.com/guides/desktop-label-printers-buying-guide",
+      "sources": [
+        "https://homeoffice.madabase.com/guides/desktop-label-printers-vs-alternatives",
+        "https://homeoffice.madabase.com/guides/desktop-label-printers-compatibility-and-fit-guide",
+        "https://homeoffice.madabase.com/guides/desktop-label-printers-ownership-cost-and-maintenance",
+        "https://homeoffice.madabase.com/guides/desktop-label-printers-setup-and-daily-workflow"
+      ]
+    },
+    {
+      "site": "homeoffice",
+      "family": "desktop-laminators",
+      "target": "https://homeoffice.madabase.com/guides/desktop-laminators-buying-guide",
+      "sources": [
+        "https://homeoffice.madabase.com/guides/desktop-laminators-vs-alternatives",
+        "https://homeoffice.madabase.com/guides/desktop-laminators-compatibility-and-fit-guide",
+        "https://homeoffice.madabase.com/guides/desktop-laminators-ownership-cost-and-maintenance",
+        "https://homeoffice.madabase.com/guides/desktop-laminators-setup-and-daily-workflow"
+      ]
+    },
+    {
+      "site": "homeoffice",
+      "family": "wireless-number-pads",
+      "target": "https://homeoffice.madabase.com/guides/wireless-number-pads-buying-guide",
+      "sources": [
+        "https://homeoffice.madabase.com/guides/wireless-number-pads-vs-alternatives",
+        "https://homeoffice.madabase.com/guides/wireless-number-pads-compatibility-and-fit-guide",
+        "https://homeoffice.madabase.com/guides/wireless-number-pads-ownership-cost-and-maintenance",
+        "https://homeoffice.madabase.com/guides/wireless-number-pads-setup-and-daily-workflow"
+      ]
+    },
+    {
+      "site": "baby",
+      "family": "automatic-bottle-washers",
+      "target": "https://baby.madabase.com/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
+      "sources": [
+        "https://baby.madabase.com/guides/automatic-bottle-washers-buying-guide",
+        "https://baby.madabase.com/guides/automatic-bottle-washers-vs-alternatives",
+        "https://baby.madabase.com/guides/automatic-bottle-washers-compatibility-and-fit-guide",
+        "https://baby.madabase.com/guides/automatic-bottle-washers-ownership-cost-and-maintenance",
+        "https://baby.madabase.com/guides/automatic-bottle-washers-setup-and-daily-workflow",
+        "https://baby.madabase.com/guides/automatic-bottle-washers-safety-and-skip-guide"
+      ]
+    },
+    {
+      "site": "baby",
+      "family": "infant-bath-tubs",
+      "target": "https://baby.madabase.com/guides/infant-bath-tubs-safety-and-skip-guide",
+      "sources": [
+        "https://baby.madabase.com/guides/infant-bath-tubs-buying-guide",
+        "https://baby.madabase.com/guides/infant-bath-tubs-vs-alternatives",
+        "https://baby.madabase.com/guides/infant-bath-tubs-compatibility-and-fit-guide",
+        "https://baby.madabase.com/guides/infant-bath-tubs-ownership-cost-and-maintenance",
+        "https://baby.madabase.com/guides/infant-bath-tubs-setup-and-daily-workflow"
+      ]
+    },
+    {
+      "site": "baby",
+      "family": "nursery-glider-chairs",
+      "target": "https://baby.madabase.com/guides/nursery-glider-chairs-safety-and-skip-guide",
+      "sources": [
+        "https://baby.madabase.com/guides/nursery-glider-chairs-buying-guide",
+        "https://baby.madabase.com/guides/nursery-glider-chairs-vs-alternatives",
+        "https://baby.madabase.com/guides/nursery-glider-chairs-compatibility-and-fit-guide",
+        "https://baby.madabase.com/guides/nursery-glider-chairs-ownership-cost-and-maintenance",
+        "https://baby.madabase.com/guides/nursery-glider-chairs-setup-and-daily-workflow"
+      ]
+    },
+    {
+      "site": "baby",
+      "family": "double-strollers",
+      "target": "https://baby.madabase.com/guides/double-strollers-compatibility-and-fit-guide",
+      "sources": [
+        "https://baby.madabase.com/guides/double-strollers-buying-guide",
+        "https://baby.madabase.com/guides/double-strollers-vs-alternatives",
+        "https://baby.madabase.com/guides/double-strollers-ownership-cost-and-maintenance",
+        "https://baby.madabase.com/guides/double-strollers-setup-and-daily-workflow",
+        "https://baby.madabase.com/guides/double-strollers-safety-and-skip-guide"
+      ]
+    },
+    {
+      "site": "network",
+      "family": "deco-be63-vs-be67-vs-be85",
+      "target": "https://network.madabase.com/guides/deco-be63-vs-be67-vs-be85-buying-guide",
+      "sources": []
+    },
+    {
+      "site": "smarthome",
+      "family": "matter-thread-wifi-zigbee",
+      "target": "https://smarthome.madabase.com/guides/matter-thread-wifi-zigbee-device-checklist",
+      "sources": [
+        "https://smarthome.madabase.com/guides/matter-vs-thread-vs-zigbee",
+        "https://smarthome.madabase.com/guides/matter-over-thread-hub-checklist"
+      ]
+    },
+    {
+      "site": "pet",
+      "family": "levoit-vital-200s-p",
+      "target": "https://pets.madabase.com/reviews/levoit-vital-200s-p-air-purifier",
+      "sources": []
+    },
+    {
+      "site": "style",
+      "family": "loungefly-care",
+      "target": "https://style.madabase.com/guides/loungefly-faux-leather-rain-and-care-guide",
+      "sources": []
+    },
+    {
+      "site": "costume",
+      "family": "costume-rental-vs-buying",
+      "target": "https://costumes.madabase.com/guides/costume-rental-vs-buying-guide",
+      "sources": []
+    },
+    {
+      "site": "homeoffice",
+      "target": "https://homeoffice.madabase.com/guides/48-vs-55-inch-desk-guide",
+      "sources": [],
+      "kind": "guide",
+      "expectedHeading": "Measure the equipment, not just screen diagonals"
+    },
+    {
+      "site": "homeoffice",
+      "target": "https://homeoffice.madabase.com/guides/usb-c-dock-vs-monitor-hub-guide",
+      "sources": [],
+      "kind": "guide",
+      "expectedHeading": "Write a port list from the devices you actually use"
+    },
+    {
+      "site": "homeoffice",
+      "target": "https://homeoffice.madabase.com/guides/macbook-dual-monitor-dock-chip-compatibility-guide",
+      "sources": [],
+      "kind": "guide",
+      "expectedHeading": "Identify the chip before reading dock marketing"
+    },
+    {
+      "site": "homeoffice",
+      "target": "https://homeoffice.madabase.com/guides/monitor-arm-clamp-reinforcement-guide",
+      "sources": [],
+      "kind": "guide",
+      "expectedHeading": "Identify the desktop before choosing a plate"
+    },
+    {
+      "site": "homeoffice",
+      "target": "https://homeoffice.madabase.com/guides/portable-monitor-usb-c-dp-alt-mode-displaylink-guide",
+      "sources": [],
+      "kind": "guide",
+      "expectedHeading": "Read the host port's specification first"
+    },
+    {
+      "site": "homeoffice",
+      "target": "https://homeoffice.madabase.com/best/logitech-litra-glow-vs-elgato-key-light-neo",
+      "sources": [],
+      "kind": "roundup",
+      "expectedHeading": "Choose the Neo power path before comparing brightness"
+    },
+    {
+      "site": "network",
+      "target": "https://network.madabase.com/guides/pcie-wifi-adapters-vs-alternatives",
+      "sources": [
+        "https://network.madabase.com/guides/pcie-wifi-adapters-buying-guide",
+        "https://network.madabase.com/guides/pcie-wifi-adapters-compatibility-and-fit-guide",
+        "https://network.madabase.com/guides/pcie-wifi-adapters-ownership-cost-and-maintenance"
+      ],
+      "kind": "guide",
+      "expectedHeading": "Check the slot and case as two separate dimensions"
+    },
+    {
+      "site": "network",
+      "target": "https://network.madabase.com/guides/direct-attach-copper-cables-vs-alternatives",
+      "sources": [
+        "https://network.madabase.com/guides/direct-attach-copper-cables-buying-guide",
+        "https://network.madabase.com/guides/direct-attach-copper-cables-compatibility-and-fit-guide",
+        "https://network.madabase.com/guides/direct-attach-copper-cables-ownership-cost-and-maintenance"
+      ],
+      "kind": "guide",
+      "expectedHeading": "Start with a two-endpoint record"
+    },
+    {
+      "site": "baby",
+      "target": "https://baby.madabase.com/guides/ergobaby-omni-breeze-positions-by-age",
+      "sources": [],
+      "kind": "guide",
+      "expectedHeading": "Why a birthday does not approve a new position"
+    },
+    {
+      "site": "smarthome",
+      "target": "https://smarthome.madabase.com/reviews/aqara-presence-multi-sensor-fp300",
+      "sources": [],
+      "kind": "product",
+      "expectedHeading": "Price: compare the complete setup cost"
+    },
+    {
+      "site": "pet",
+      "target": "https://pets.madabase.com/guides/automatic-feeder-cleaning-checklist",
+      "sources": [],
+      "kind": "guide",
+      "expectedHeading": "Do not replace bowl hygiene with a weekly feeder job"
+    },
+    {
+      "site": "style",
+      "target": "https://style.madabase.com/guides/mini-backpack-capacity-measurement-guide",
+      "sources": [],
+      "kind": "guide",
+      "expectedHeading": "Exterior dimensions are an upper outline, not a promise"
+    },
+    {
+      "site": "costume",
+      "target": "https://costumes.madabase.com/guides/when-to-order-a-halloween-costume",
+      "sources": [],
+      "kind": "guide",
+      "expectedHeading": "Use a fitting date as the arrival target"
+    },
+    {
+      "site": "costume",
+      "target": "https://costumes.madabase.com/guides/props-and-animatronics-vs-alternatives",
+      "sources": [
+        "https://costumes.madabase.com/guides/props-and-animatronics-buying-guide",
+        "https://costumes.madabase.com/guides/props-and-animatronics-compatibility-and-fit-guide",
+        "https://costumes.madabase.com/guides/props-and-animatronics-ownership-cost-and-maintenance"
+      ],
+      "kind": "guide",
+      "expectedHeading": "Measure the movement, not just the advertised height"
+    },
+    {
+      "site": "baby",
+      "target": "https://baby.madabase.com/guides/toddler-learning-towers-buying-guide",
+      "sources": [],
+      "expectedHeading": "The linked Original Learning Tower is unavailable"
+    },
+    {
+      "site": "baby",
+      "target": "https://baby.madabase.com/guides/childproof-door-knob-covers-buying-guide",
+      "sources": [],
+      "expectedHeading": "Check the selected cover pack"
+    },
+    {
+      "site": "network",
+      "target": "https://network.madabase.com/guides/pass-through-ethernet-crimping-tools-buying-guide",
+      "sources": [],
+      "expectedHeading": "What the linked Klein kit"
+    },
+    {
+      "site": "homeoffice",
+      "target": "https://homeoffice.madabase.com/guides/home-office-acoustic-panels-buying-guide",
+      "sources": [],
+      "expectedHeading": "The selected TONOR set"
+    },
+    {
+      "site": "homeoffice",
+      "target": "https://homeoffice.madabase.com/reviews/caldigit-ts4-thunderbolt-dock",
+      "sources": [],
+      "expectedHeading": "TS4 or a newer Thunderbolt 5 dock?"
+    },
+    {
+      "site": "homeoffice",
+      "target": "https://homeoffice.madabase.com/reviews/insta360-link-2-webcam",
+      "sources": [],
+      "expectedHeading": "Link 2 versus Link 2 Pro"
+    },
+    {
+      "site": "homeoffice",
+      "target": "https://homeoffice.madabase.com/best/logitech-mx-brio-vs-insta360-link-2",
+      "sources": [],
+      "expectedHeading": "Link 2 versus Link 2 Pro"
+    },
+    {
+      "site": "baby",
+      "target": "https://baby.madabase.com/reviews/ergobaby-omni-breeze-carrier",
+      "sources": [],
+      "expectedHeading": "Buying an Omni Breeze now"
+    },
+    {
+      "site": "network",
+      "target": "https://network.madabase.com/reviews/tp-link-deco-be63-wifi-7-mesh",
+      "sources": [],
+      "expectedHeading": ""
+    },
+    {
+      "site": "network",
+      "target": "https://network.madabase.com/reviews/tp-link-deco-be67-wifi-7-mesh",
+      "sources": [],
+      "expectedHeading": ""
+    },
+    {
+      "site": "network",
+      "target": "https://network.madabase.com/reviews/tp-link-deco-be85-wifi-7-mesh",
+      "sources": [],
+      "expectedHeading": ""
+    }
+  ],
+  "primaryChanges": [
+    "https://baby.madabase.com/guides/toddler-learning-towers-buying-guide",
+    "https://baby.madabase.com/guides/childproof-door-knob-covers-buying-guide",
+    "https://network.madabase.com/guides/pass-through-ethernet-crimping-tools-buying-guide",
+    "https://homeoffice.madabase.com/guides/home-office-acoustic-panels-buying-guide",
+    "https://homeoffice.madabase.com/reviews/caldigit-ts4-thunderbolt-dock",
+    "https://homeoffice.madabase.com/reviews/insta360-link-2-webcam",
+    "https://homeoffice.madabase.com/best/logitech-mx-brio-vs-insta360-link-2",
+    "https://baby.madabase.com/reviews/ergobaby-omni-breeze-carrier",
+    "https://network.madabase.com/reviews/tp-link-deco-be63-wifi-7-mesh",
+    "https://network.madabase.com/reviews/tp-link-deco-be67-wifi-7-mesh",
+    "https://network.madabase.com/reviews/tp-link-deco-be85-wifi-7-mesh",
+    "https://network.madabase.com/guides/deco-be63-vs-be67-vs-be85-buying-guide"
+  ]
+}

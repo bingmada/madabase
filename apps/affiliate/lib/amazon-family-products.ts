@@ -77,3 +77,13 @@ export function amazonFamilyProductInventory() {
     process.env.AFFILIATE_INCLUDE_DRAFTS === "1" || product.publicationStatus !== "draft",
   );
 }
+
+export function amazonFamilyProductIdentity(product: AmazonFamilyProduct) {
+  return {
+    slug: `family-${product.familySlug}-${product.asin.toLowerCase()}`,
+    name: product.title,
+    amazonTitle: product.title,
+    asin: product.asin,
+    specs: { ASIN: product.asin },
+  };
+}

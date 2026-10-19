@@ -2,18 +2,12 @@ import fs from "node:fs";
 import path from "node:path";
 import process from "node:process";
 import { fileURLToPath } from "node:url";
-import ts from "typescript";
+import { loadAffiliateTypescript } from "./lib/load-affiliate-typescript.mjs";
+
+const { publishedCommerceInventory } = loadAffiliateTypescript("../../lib/commerce-inventory.ts");
 
 const root = path.resolve(new URL("../../..", import.meta.url).pathname);
-const contentDirectory = path.join(root, "apps/affiliate/lib");
-const offerBlockPath = path.join(
-  root,
-  "apps/affiliate/config/amazon-offer-blocks.json",
-);
-const familyProductPath = path.join(
-  root,
-  "apps/affiliate/config/amazon-family-products.json",
-);
+const offerBlockPath = path.join(root, "apps/affiliate/config/amazon-offer-blocks.json");
 const partnerTag = process.env.AMAZON_AFFILIATE_TAG ?? "bingmada-20";
 const siteTrackingIds = {
   network: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_NETWORK ?? "madanetwork-20",
@@ -55,214 +49,30 @@ function readOfferBlocks() {
 
 const offerBlocks = readOfferBlocks();
 
-function offerBlockFor(record) {
-  return offerBlocks.find(
-    (block) =>
-      block.site === record.site &&
-      block.slug === record.slug &&
-      block.asin === record.expectedAsin,
-  );
-}
-
-function propertyValue(node, name) {
-  const property = node.properties.find(
-    (item) =>
-      ts.isPropertyAssignment(item) &&
-      ((ts.isIdentifier(item.name) && item.name.text === name) ||
-        (ts.isStringLiteral(item.name) && item.name.text === name)),
-  );
-
-  return property && ts.isPropertyAssignment(property)
-    ? property.initializer
-    : undefined;
-}
-
-function literalText(node) {
-  return node &&
-    (ts.isStringLiteral(node) || ts.isNoSubstitutionTemplateLiteral(node))
-    ? node.text
-    : undefined;
-}
-
-function isAffiliateUrl(value) {
-  if (!value.startsWith("http")) return false;
-
-  try {
-    const url = new URL(value);
-    return (
-      url.hostname === "amzn.to" ||
-      url.searchParams.get("tag") === partnerTag ||
-      url.searchParams.get("tag")?.startsWith(`${partnerTag}-`) === true
-    );
-  } catch {
-    return false;
-  }
-}
-
-// An offer can omit its tag in source because rendering adds the site's tag.
-// Only apply this broader match inside explicit offer fields, not references.
-function isAmazonOfferUrl(value) {
-  if (isAffiliateUrl(value)) return true;
-  try {
-    return isAmazonHost(new URL(value).hostname);
-  } catch {
-    return false;
-  }
-}
-
-function affiliateUrlsBelow(node, bindings) {
-  const urls = new Set();
-
-  function resolve(value, seen = new Set()) {
-    if (!value || seen.has(value)) return undefined;
-    seen.add(value);
-    if (ts.isIdentifier(value)) return resolve(bindings.get(value.text), seen);
-    if (ts.isPropertyAccessExpression(value)) {
-      const object = resolve(value.expression, seen);
-      return object && ts.isObjectLiteralExpression(object)
-        ? resolve(propertyValue(object, value.name.text), seen)
-        : undefined;
-    }
-    return value;
-  }
-
-  function visit(child) {
-    const value = literalText(resolve(child));
-    if (value && isAmazonOfferUrl(value)) {
-      urls.add(value);
-    }
-
-    if (
-      ts.isCallExpression(child) &&
-      ts.isIdentifier(child.expression) &&
-      child.expression.text === "amazonUrl"
-    ) {
-      const asin = literalText(child.arguments[0]);
-      const url = fallbackAmazonUrl(asin);
-      if (url) urls.add(url);
-    }
-
-    ts.forEachChild(child, visit);
-  }
-
-  visit(node);
-  return [...urls];
-}
-
-function fallbackAmazonUrl(asin) {
-  return asin
-    ? `https://www.amazon.com/dp/${asin}?tag=${partnerTag}&linkCode=ll2&language=en_US&ref_=as_li_ss_tl`
-    : null;
-}
-
-function contentFiles() {
-  return fs
-    .readdirSync(contentDirectory)
-    .filter((name) => name.endsWith(".ts"))
-    .map((name) => path.join(contentDirectory, name));
-}
-
 function buildInventory() {
   const records = new Map();
-
-  for (const file of contentFiles()) {
-    const source = fs.readFileSync(file, "utf8");
-    const sourceFile = ts.createSourceFile(
-      file,
-      source,
-      ts.ScriptTarget.Latest,
-      true,
-      ts.ScriptKind.TS,
-    );
-    const bindings = new Map();
-    for (const statement of sourceFile.statements) {
-      if (!ts.isVariableStatement(statement)) continue;
-      for (const declaration of statement.declarationList.declarations) {
-        if (ts.isIdentifier(declaration.name) && declaration.initializer) {
-          bindings.set(declaration.name.text, declaration.initializer);
-        }
+  for (const product of publishedCommerceInventory()) {
+    for (const offer of product.offers) {
+      if (!/^https?:\/\//.test(offer.url)) continue;
+      const url = new URL(offer.url);
+      if (!isAmazonHost(url.hostname) && url.hostname !== "amzn.to") continue;
+      const expectedAsin = product.asin ?? asinFromUrl(offer.url);
+      if (!expectedAsin) throw new Error(`Amazon offer lacks an exact ASIN: ${product.site}:${product.slug}`);
+      const key = `${product.site}:${expectedAsin}`;
+      const context = { slug: product.slug, kind: product.kind };
+      const existing = records.get(key);
+      if (existing) {
+        existing.contexts.push(context);
+      } else {
+        records.set(key, {
+          url: offer.url, file: "runtime:publishedCommerceInventory",
+          slug: product.catalogSlug, site: product.site, expectedAsin,
+          contexts: [context],
+        });
       }
     }
-
-    function add(url, details = {}) {
-      const current = records.get(url) ?? {
-        url,
-        file: path.relative(root, file),
-      };
-      records.set(url, { ...current, ...details });
-    }
-
-    function visit(node) {
-      if (
-        ts.isCallExpression(node) &&
-        ts.isIdentifier(node.expression) &&
-        node.expression.text === "exactProduct" &&
-        ts.isObjectLiteralExpression(node.arguments[0])
-      ) {
-        const input = node.arguments[0];
-        const slug = literalText(propertyValue(input, "slug"));
-        const site = literalText(propertyValue(input, "site"));
-        const expectedAsin = literalText(propertyValue(input, "asin"));
-        const url = fallbackAmazonUrl(expectedAsin);
-        if (url && slug) add(url, { slug, site, expectedAsin });
-      }
-
-      if (ts.isObjectLiteralExpression(node)) {
-        const slug = literalText(propertyValue(node, "slug"));
-        const site = literalText(propertyValue(node, "site"));
-        const asin = literalText(propertyValue(node, "asin"));
-        const specs = propertyValue(node, "specs");
-        const specsAsin = specs && ts.isObjectLiteralExpression(specs)
-          ? literalText(propertyValue(specs, "ASIN"))
-          : undefined;
-        const expectedAsin = asin ?? specsAsin;
-        const offers = propertyValue(node, "offers");
-        const affiliateUrl = literalText(propertyValue(node, "affiliateUrl"));
-
-        if (slug && offers) {
-          for (const url of affiliateUrlsBelow(offers, bindings)) {
-            add(url, { slug, site, expectedAsin: expectedAsin ?? asinFromUrl(url) });
-          }
-        }
-
-        if (slug && affiliateUrl && isAmazonOfferUrl(affiliateUrl)) {
-          add(affiliateUrl, { slug, site, expectedAsin });
-        } else if (slug && affiliateUrl?.startsWith("PENDING-")) {
-          const url = fallbackAmazonUrl(expectedAsin);
-          if (url) add(url, { slug, site, expectedAsin });
-        }
-      }
-
-      if (ts.isStringLiteral(node) && isAffiliateUrl(node.text)) {
-        const location = sourceFile.getLineAndCharacterOfPosition(
-          node.getStart(sourceFile),
-        );
-        add(node.text, { line: location.line + 1 });
-      }
-
-      ts.forEachChild(node, visit);
-    }
-
-    visit(sourceFile);
   }
-
-  const familyProductData = JSON.parse(fs.readFileSync(familyProductPath, "utf8"));
-  if (!Array.isArray(familyProductData.products)) throw new Error("amazon-family-products.json contains an invalid products array");
-  for (const product of familyProductData.products) {
-    const url = fallbackAmazonUrl(product.asin);
-    if (!url) continue;
-    records.set(url, {
-      url,
-      file: path.relative(root, familyProductPath),
-      slug: `family-${product.familySlug}`,
-      site: product.site,
-      expectedAsin: product.asin,
-    });
-  }
-
-  return [...records.values()]
-    .filter((record) => !offerBlockFor(record))
-    .sort((a, b) => a.url.localeCompare(b.url));
+  return [...records.values()].sort((a, b) => `${a.site}:${a.expectedAsin}`.localeCompare(`${b.site}:${b.expectedAsin}`));
 }
 
 function asinFromUrl(value) {
