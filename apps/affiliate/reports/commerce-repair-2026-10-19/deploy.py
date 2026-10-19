@@ -150,8 +150,18 @@ def verify_recovery():
         for source_url in sources_by_host.get(host, []):
             if source_url in sitemap:
                 errors.append("sitemap contains redirect source: " + source_url)
+        if host == "costumes.madabase.com":
+            expected_products = set(ledger["costumeDatabaseUrls"])
+            actual_products = set(re.findall(r'https://costumes\.madabase\.com/products/[^<]+', sitemap))
+            if actual_products != expected_products:
+                errors.append("Costume database sitemap changed")
         sitemap_count += 1
 
+    database_url = ledger["costumeDatabaseUrls"][-1]
+    parsed_database = urllib.parse.urlparse(database_url)
+    status, unused_headers, database_body = request_origin(parsed_database.hostname, parsed_database.path)
+    if status != 200 or 'rel="canonical" href="' + database_url + '"' not in database_body:
+        errors.append("Costume database product failed")
     if errors:
         raise RuntimeError("; ".join(errors[:8]))
     return {
