@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "completedAt": "2026-10-20T10:01:00.306730+08:00",
+  "sourceRevision": "220b8038204e847da6609d83a6169c7222517754",
+  "cutoverTransactionSeconds": 5.702,
+  "publicHttp": {
+    "passed": 317,
+    "failed": 0,
+    "databasePending": 0
+  },
+  "publicBrowserCases": 18,
+  "publicAssets": 32,
+  "rscHosts": 8,
+  "exactMerchantIdentities": 4,
+  "zeroWriteClickValidatorCases": 12,
+  "newCanonicalUrls": 0,
+  "materialExistingCanonicals": [
+    "https://homeoffice.madabase.com/compatibility/mini-pcs",
+    "https://homeoffice.madabase.com/guides/thinkcentre-m720q-upgrade-compatibility-guide",
+    "https://homeoffice.madabase.com/guides/thinkcentre-m920q-upgrade-compatibility-guide",
+    "https://homeoffice.madabase.com/guides/thinkcentre-m920x-upgrade-compatibility-guide"
+  ],
+  "cache": "4currentHIT; guidequeryvariants current after exact-file prefix fallback",
+  "indexNow": {
+    "urls": 4,
+    "httpStatus": 200
+  },
+  "testRestoredToSameRelease": true,
+  "rollbackPrevious": "434cf229c9ab044a2db48490aa748dc5a4017434",
+  "oldPilotDatesPreserved": [
+    "2026-10-26",
+    "2026-11-02",
+    "2026-11-18"
+  ],
+  "tinyCohortReviewDates": [
+    "2026-10-27",
+    "2026-11-03",
+    "2026-11-19"
+  ],
+  "merchantRecheckBefore": "2026-10-26",
+  "noHandsOnEvidenceInvented": true
+}

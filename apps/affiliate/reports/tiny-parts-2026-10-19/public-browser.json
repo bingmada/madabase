@@ -1,0 +1,171 @@
+{
+  "checkedAt": "2026-10-20T02:40:16.344Z",
+  "simulatedEvidenceInputs": true,
+  "merchantClicks": 0,
+  "purchases": 0,
+  "rows": [
+    {
+      "task": "machine-type catalog alone blocks purchase",
+      "text": "Resolve this machine’s SATA cable and carrier\n\nUse the chassis label and Lenovo’s exact-configuration parts record. Record the two FRUs separately; a family-level marketplace title is not enough.\n\nOpen Lenovo Parts Lookup · Read the checked machine-type candidates\n\nThinkCentre M720q Tiny · This profile’s documented machine types: 10T7, 10T8, 10T9, 10TA, 10TC, 10U8, 10U9, 10UA.\n\nEnter a serial only on Lenovo’s website. This form asks for the machine type/MTM and part numbers, keeps them in this page, and makes no background lookup or installation certification.\n\nMachine and parts evidence\nFour-character machine type or ten-character MTM\nDoes a storage need or diagnosed fault require this installation?\nNot established\nYes\nNo — existing storage is sufficient\nCandidate numbers for type 10T7\nSATA data/power cable: 00XL211 · Fru,50mmSATA power+Data FFC Cable · Lenovo Machine Type catalog\n2.5-inch drive carrier: 01MN886 · Ty5 HDD cage kit, AVC · Lenovo Machine Type catalog\n\nThese do not establish which part your unit needs. In Lenovo, use As-Built / supported substitutes or the full MTM; confirm the actual fitted hardware.\n\nWhat exact configuration did you check on Lenovo?\nNot checked\nMachine Type catalog only\nFull ten-character MTM and supported parts\nSerial-specific As-Built / supported substitute record\nSATA cable FRU from that record\nDrive carrier FRU from that record\n Already have the required cable\n Already have the required carrier\nActual seller photos match the FRUs, connectors, carrier style and retaining pieces?\nNot confirmed\nYes — checked actual parts and included hardware\nNo / conflicting photos\nDrive bay and cable path clear of conflicting expansion hardware?\nNot inspected\nYes — physically checked\nNo — occupied or conflicting assembly\nCheck missing SATA parts\nHold the parts purchase\n\nMissing: one model-matched SATA cable; one model-matched 2.5-inch carrier.\n\nA machine-type catalog is a candidate list. Record a match from the exact ten-character MTM or your serial-specific Lenovo As-Built / supported-substitute record first.\n\nThis compares your recorded numbers with the checked catalog and listing. Madabase has not accessed your serial record, inspected your unit or tested these parts.\n\nCopy this FRU record",
+      "kitLinks": [],
+      "passed": true
+    },
+    {
+      "task": "simulated exact-unit evidence exposes only matched replacement kit",
+      "text": "Resolve this machine’s SATA cable and carrier\n\nUse the chassis label and Lenovo’s exact-configuration parts record. Record the two FRUs separately; a family-level marketplace title is not enough.\n\nOpen Lenovo Parts Lookup · Read the checked machine-type candidates\n\nThinkCentre M720q Tiny · This profile’s documented machine types: 10T7, 10T8, 10T9, 10TA, 10TC, 10U8, 10U9, 10UA.\n\nEnter a serial only on Lenovo’s website. This form asks for the machine type/MTM and part numbers, keeps them in this page, and makes no background lookup or installation certification.\n\nMachine and parts evidence\nFour-character machine type or ten-character MTM\nDoes a storage need or diagnosed fault require this installation?\nNot established\nYes\nNo — existing storage is sufficient\nCandidate numbers for type 10T7\nSATA data/power cable: 00XL211 · Fru,50mmSATA power+Data FFC Cable · Lenovo Machine Type catalog\n2.5-inch drive carrier: 01MN886 · Ty5 HDD cage kit, AVC · Lenovo Machine Type catalog\n\nThese do not establish which part your unit needs. In Lenovo, use As-Built / supported substitutes or the full MTM; confirm the actual fitted hardware.\n\nWhat exact configuration did you check on Lenovo?\nNot checked\nMachine Type catalog only\nFull ten-character MTM and supported parts\nSerial-specific As-Built / supported substitute record\nSATA cable FRU from that record\nDrive carrier FRU from that record\n Already have the required cable\n Already have the required carrier\nActual seller photos match the FRUs, connectors, carrier style and retaining pieces?\nNot confirmed\nYes — checked actual parts and included hardware\nNo / conflicting photos\nDrive bay and cable path clear of conflicting expansion hardware?\nNot inspected\nYes — physically checked\nNo — occupied or conflicting assembly\nCheck missing SATA parts\nA conditional listing for your recorded pair\n\nMissing: one model-matched SATA cable; one model-matched 2.5-inch carrier.\n\nThis compares your recorded numbers with the checked catalog and listing. Madabase has not accessed your serial record, inspected your unit or tested these parts.\n\nDeal4GO replacement SATA cable + carrier kit — 00XL211 / 01MN886\n\nOne kit contains one cable and one carrier. No SSD is included. Delivered cost and any further mounting pieces remain for your complete bill.\n\nOne replacement cable plus one carrier, not an SSD. This is an aftermarket listing, not independently verified genuine Lenovo stock. The seller excludes Tiny6/7/8. Do not substitute this carrier for 01EF683 or 5M11C16880, or buy a whole kit when only one part is missing. Match the exact unit’s Lenovo-supported FRUs and actual seller photos first.\n\nPaid link: as an Amazon Associate we earn from qualifying purchases. Exact listing checked October 19, 2026; seller, stock, delivery and return terms can change.\n\nCheck current price & availability on Amazon\nCopy this FRU record",
+      "kitLinks": [
+        {
+          "href": "https://www.amazon.com/dp/B0F2DYGPDQ?tag=madaoffice-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+          "rel": "sponsored nofollow noopener noreferrer",
+          "text": "Check current price & availability on Amazon"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "task": "one part already owned: no redundant whole kit",
+      "text": "Resolve this machine’s SATA cable and carrier\n\nUse the chassis label and Lenovo’s exact-configuration parts record. Record the two FRUs separately; a family-level marketplace title is not enough.\n\nOpen Lenovo Parts Lookup · Read the checked machine-type candidates\n\nThinkCentre M720q Tiny · This profile’s documented machine types: 10T7, 10T8, 10T9, 10TA, 10TC, 10U8, 10U9, 10UA.\n\nEnter a serial only on Lenovo’s website. This form asks for the machine type/MTM and part numbers, keeps them in this page, and makes no background lookup or installation certification.\n\nMachine and parts evidence\nFour-character machine type or ten-character MTM\nDoes a storage need or diagnosed fault require this installation?\nNot established\nYes\nNo — existing storage is sufficient\nCandidate numbers for type 10T7\nSATA data/power cable: 00XL211 · Fru,50mmSATA power+Data FFC Cable · Lenovo Machine Type catalog\n2.5-inch drive carrier: 01MN886 · Ty5 HDD cage kit, AVC · Lenovo Machine Type catalog\n\nThese do not establish which part your unit needs. In Lenovo, use As-Built / supported substitutes or the full MTM; confirm the actual fitted hardware.\n\nWhat exact configuration did you check on Lenovo?\nNot checked\nMachine Type catalog only\nFull ten-character MTM and supported parts\nSerial-specific As-Built / supported substitute record\nSATA cable FRU from that record\nDrive carrier FRU from that record\n Already have the required cable\n Already have the required carrier\nActual seller photos match the FRUs, connectors, carrier style and retaining pieces?\nNot confirmed\nYes — checked actual parts and included hardware\nNo / conflicting photos\nDrive bay and cable path clear of conflicting expansion hardware?\nNot inspected\nYes — physically checked\nNo — occupied or conflicting assembly\nCheck missing SATA parts\nHold the parts purchase\n\nMissing: one model-matched 2.5-inch carrier.\n\nOnly one part is missing. No verified single-part offer matches it here; do not buy a redundant two-part kit.\n\nThis compares your recorded numbers with the checked catalog and listing. Madabase has not accessed your serial record, inspected your unit or tested these parts.\n\nCopy this FRU record",
+      "kitLinks": [],
+      "passed": true
+    },
+    {
+      "task": "both parts already owned: no purchase",
+      "text": "Resolve this machine’s SATA cable and carrier\n\nUse the chassis label and Lenovo’s exact-configuration parts record. Record the two FRUs separately; a family-level marketplace title is not enough.\n\nOpen Lenovo Parts Lookup · Read the checked machine-type candidates\n\nThinkCentre M720q Tiny · This profile’s documented machine types: 10T7, 10T8, 10T9, 10TA, 10TC, 10U8, 10U9, 10UA.\n\nEnter a serial only on Lenovo’s website. This form asks for the machine type/MTM and part numbers, keeps them in this page, and makes no background lookup or installation certification.\n\nMachine and parts evidence\nFour-character machine type or ten-character MTM\nDoes a storage need or diagnosed fault require this installation?\nNot established\nYes\nNo — existing storage is sufficient\nCandidate numbers for type 10T7\nSATA data/power cable: 00XL211 · Fru,50mmSATA power+Data FFC Cable · Lenovo Machine Type catalog\n2.5-inch drive carrier: 01MN886 · Ty5 HDD cage kit, AVC · Lenovo Machine Type catalog\n\nThese do not establish which part your unit needs. In Lenovo, use As-Built / supported substitutes or the full MTM; confirm the actual fitted hardware.\n\nWhat exact configuration did you check on Lenovo?\nNot checked\nMachine Type catalog only\nFull ten-character MTM and supported parts\nSerial-specific As-Built / supported substitute record\nSATA cable FRU from that record\nDrive carrier FRU from that record\n Already have the required cable\n Already have the required carrier\nActual seller photos match the FRUs, connectors, carrier style and retaining pieces?\nNot confirmed\nYes — checked actual parts and included hardware\nNo / conflicting photos\nDrive bay and cable path clear of conflicting expansion hardware?\nNot inspected\nYes — physically checked\nNo — occupied or conflicting assembly\nCheck missing SATA parts\nKeep the parts; buy no duplicate kit\n\nNo new cable/carrier kit is needed for this stated goal. Reuse still requires the exact fit checks before installation.\n\nThis compares your recorded numbers with the checked catalog and listing. Madabase has not accessed your serial record, inspected your unit or tested these parts.\n\nCopy this FRU record",
+      "kitLinks": [],
+      "passed": true
+    },
+    {
+      "task": "copy generated FRU record",
+      "passed": true,
+      "text": "ThinkCentre M720q Tiny — SATA parts record\nMachine type: 10T7; evidence entered: serial\nCable FRU: 00XL211; carrier FRU: 01MN886\nAlready owned: cable yes; carrier yes\nMissing: No duplicate kit purchase needed for this goal\nDecision: no-buy; this is the reader's recorded check, not Madabase verification of the unit.\nNew cable/carrier purchase cost: 0. Verify existing parts before reuse.\n00XL211 — https://pcsupport.lenovo.com/us/en/products/desktops-and-all-in-ones/thinkcentre-m-series-desktops/m720q/10t7/parts/display/compatible\n01MN886 — https://pcsupport.lenovo.com/us/en/products/desktops-and-all-in-ones/thinkcentre-m-series-desktops/m720q/10t7/parts/display/compatible"
+    },
+    {
+      "task": "adequate existing storage means no accessory purchase",
+      "text": "Resolve this machine’s SATA cable and carrier\n\nUse the chassis label and Lenovo’s exact-configuration parts record. Record the two FRUs separately; a family-level marketplace title is not enough.\n\nOpen Lenovo Parts Lookup · Read the checked machine-type candidates\n\nThinkCentre M720q Tiny · This profile’s documented machine types: 10T7, 10T8, 10T9, 10TA, 10TC, 10U8, 10U9, 10UA.\n\nEnter a serial only on Lenovo’s website. This form asks for the machine type/MTM and part numbers, keeps them in this page, and makes no background lookup or installation certification.\n\nMachine and parts evidence\nFour-character machine type or ten-character MTM\nDoes a storage need or diagnosed fault require this installation?\nNot established\nYes\nNo — existing storage is sufficient\nCandidate numbers for type 10T7\nSATA data/power cable: 00XL211 · Fru,50mmSATA power+Data FFC Cable · Lenovo Machine Type catalog\n2.5-inch drive carrier: 01MN886 · Ty5 HDD cage kit, AVC · Lenovo Machine Type catalog\n\nThese do not establish which part your unit needs. In Lenovo, use As-Built / supported substitutes or the full MTM; confirm the actual fitted hardware.\n\nWhat exact configuration did you check on Lenovo?\nNot checked\nMachine Type catalog only\nFull ten-character MTM and supported parts\nSerial-specific As-Built / supported substitute record\nSATA cable FRU from that record\nDrive carrier FRU from that record\n Already have the required cable\n Already have the required carrier\nActual seller photos match the FRUs, connectors, carrier style and retaining pieces?\nNot confirmed\nYes — checked actual parts and included hardware\nNo / conflicting photos\nDrive bay and cable path clear of conflicting expansion hardware?\nNot inspected\nYes — physically checked\nNo — occupied or conflicting assembly\nCheck missing SATA parts\nKeep the parts; buy no duplicate kit\n\nNo new cable/carrier kit is needed for this stated goal. Reuse still requires the exact fit checks before installation.\n\nThis compares your recorded numbers with the checked catalog and listing. Madabase has not accessed your serial record, inspected your unit or tested these parts.\n\nCopy this FRU record",
+      "kitLinks": [],
+      "passed": true
+    },
+    {
+      "task": "another generation carrier is not substituted",
+      "text": "Resolve this machine’s SATA cable and carrier\n\nUse the chassis label and Lenovo’s exact-configuration parts record. Record the two FRUs separately; a family-level marketplace title is not enough.\n\nOpen Lenovo Parts Lookup · Read the checked machine-type candidates\n\nThinkCentre M720q Tiny · This profile’s documented machine types: 10T7, 10T8, 10T9, 10TA, 10TC, 10U8, 10U9, 10UA.\n\nEnter a serial only on Lenovo’s website. This form asks for the machine type/MTM and part numbers, keeps them in this page, and makes no background lookup or installation certification.\n\nMachine and parts evidence\nFour-character machine type or ten-character MTM\nDoes a storage need or diagnosed fault require this installation?\nNot established\nYes\nNo — existing storage is sufficient\nCandidate numbers for type 10T7\nSATA data/power cable: 00XL211 · Fru,50mmSATA power+Data FFC Cable · Lenovo Machine Type catalog\n2.5-inch drive carrier: 01MN886 · Ty5 HDD cage kit, AVC · Lenovo Machine Type catalog\n\nThese do not establish which part your unit needs. In Lenovo, use As-Built / supported substitutes or the full MTM; confirm the actual fitted hardware.\n\nWhat exact configuration did you check on Lenovo?\nNot checked\nMachine Type catalog only\nFull ten-character MTM and supported parts\nSerial-specific As-Built / supported substitute record\nSATA cable FRU from that record\nDrive carrier FRU from that record\n Already have the required cable\n Already have the required carrier\nActual seller photos match the FRUs, connectors, carrier style and retaining pieces?\nNot confirmed\nYes — checked actual parts and included hardware\nNo / conflicting photos\nDrive bay and cable path clear of conflicting expansion hardware?\nNot inspected\nYes — physically checked\nNo — occupied or conflicting assembly\nCheck missing SATA parts\nHold the parts purchase\n\nMissing: one model-matched SATA cable; one model-matched 2.5-inch carrier.\n\nThe recorded 2.5-inch drive carrier FRU is not a checked candidate for this exact machine type. Verify the number and any official substitute; no family-name substitution is made here.\n\nThis compares your recorded numbers with the checked catalog and listing. Madabase has not accessed your serial record, inspected your unit or tested these parts.\n\nCopy this FRU record",
+      "kitLinks": [],
+      "passed": true
+    },
+    {
+      "task": "switch to Gen3 clears prior unit evidence and old kit",
+      "text": "Resolve this machine’s SATA cable and carrier\n\nUse the chassis label and Lenovo’s exact-configuration parts record. Record the two FRUs separately; a family-level marketplace title is not enough.\n\nOpen Lenovo Parts Lookup · Read the checked machine-type candidates\n\nThinkCentre M70q Gen 3 Tiny · This profile’s documented machine types: 11T3, 11T4, 11TY, 11U0, 11UB, 11UC, 11UD, 11UE, 11US, 11UU, 11X2, 11X6, 11X9, 11XB, 11Y5, 11Y6.\n\nEnter a serial only on Lenovo’s website. This form asks for the machine type/MTM and part numbers, keeps them in this page, and makes no background lookup or installation certification.\n\nMachine and parts evidence\nFour-character machine type or ten-character MTM\nDoes a storage need or diagnosed fault require this installation?\nNot established\nYes\nNo — existing storage is sufficient\nWhat exact configuration did you check on Lenovo?\nNot checked\nMachine Type catalog only\nFull ten-character MTM and supported parts\nSerial-specific As-Built / supported substitute record\nSATA cable FRU from that record\nDrive carrier FRU from that record\n Already have the required cable\n Already have the required carrier\nActual seller photos match the FRUs, connectors, carrier style and retaining pieces?\nNot confirmed\nYes — checked actual parts and included hardware\nNo / conflicting photos\nDrive bay and cable path clear of conflicting expansion hardware?\nNot inspected\nYes — physically checked\nNo — occupied or conflicting assembly\nCheck missing SATA parts",
+      "kitLinks": [],
+      "passed": true
+    },
+    {
+      "task": "M70q Gen3 shows own carrier and holds unqualified purchase",
+      "text": "Resolve this machine’s SATA cable and carrier\n\nUse the chassis label and Lenovo’s exact-configuration parts record. Record the two FRUs separately; a family-level marketplace title is not enough.\n\nOpen Lenovo Parts Lookup · Read the checked machine-type candidates\n\nThinkCentre M70q Gen 3 Tiny · This profile’s documented machine types: 11T3, 11T4, 11TY, 11U0, 11UB, 11UC, 11UD, 11UE, 11US, 11UU, 11X2, 11X6, 11X9, 11XB, 11Y5, 11Y6.\n\nEnter a serial only on Lenovo’s website. This form asks for the machine type/MTM and part numbers, keeps them in this page, and makes no background lookup or installation certification.\n\nMachine and parts evidence\nFour-character machine type or ten-character MTM\nDoes a storage need or diagnosed fault require this installation?\nNot established\nYes\nNo — existing storage is sufficient\nCandidate numbers for type 11T3\n2.5-inch drive carrier: 5M11C16880 · Tiny8 HDD cage kit, AVC · Lenovo Machine Type catalog\nSATA data/power cable: 00XL211 · Fru,50mmSATA power+Data FFC Cable · Lenovo Machine Type catalog\n\nThese do not establish which part your unit needs. In Lenovo, use As-Built / supported substitutes or the full MTM; confirm the actual fitted hardware.\n\nWhat exact configuration did you check on Lenovo?\nNot checked\nMachine Type catalog only\nFull ten-character MTM and supported parts\nSerial-specific As-Built / supported substitute record\nSATA cable FRU from that record\nDrive carrier FRU from that record\n Already have the required cable\n Already have the required carrier\nActual seller photos match the FRUs, connectors, carrier style and retaining pieces?\nNot confirmed\nYes — checked actual parts and included hardware\nNo / conflicting photos\nDrive bay and cable path clear of conflicting expansion hardware?\nNot inspected\nYes — physically checked\nNo — occupied or conflicting assembly\nCheck missing SATA parts\nHold the parts purchase\n\nMissing: one model-matched SATA cable; one model-matched 2.5-inch carrier.\n\nEstablish a storage need or diagnosed drive fault first. A working, sufficient drive does not need a new installation kit.\nA machine-type catalog is a candidate list. Record a match from the exact ten-character MTM or your serial-specific Lenovo As-Built / supported-substitute record first.\nThe recorded SATA data/power cable FRU is not a checked candidate for this exact machine type. Verify the number and any official substitute; no family-name substitution is made here.\nThe recorded 2.5-inch drive carrier FRU is not a checked candidate for this exact machine type. Verify the number and any official substitute; no family-name substitution is made here.\nMatch actual seller photos, connector orientation, carrier style and all retaining pieces to the unit. A listing title alone does not clear the assembly.\nConfirm the physical drive bay and cable path are free, including any PCIe card, riser or optional assembly. Resolve a space conflict before ordering.\n\nThis compares your recorded numbers with the checked catalog and listing. Madabase has not accessed your serial record, inspected your unit or tested these parts.\n\nCopy this FRU record",
+      "kitLinks": [],
+      "passed": true
+    },
+    {
+      "task": "M90q Gen3 32GB+empty to64GB retains one32GB and requires oneDDR5 module",
+      "passed": true,
+      "text": "CONDITIONAL MATCH\n\nThinkCentre M90q Gen 3 Tiny · ram · target 64GB\n\nA documented upgrade route with parts to verify\nReuse working parts; buy only the missing items below\n\nThis is a planning checklist, subject to the exact component and assembly checks below.\n\nThinkCentre M90q Gen 3 Tiny: 2 DDR5 SO-DIMM slots; DDR5-4800. The cited Lenovo specification documents 64GB; this is not a hands-on test of your modules or a proven absolute hardware ceiling.\nWhat to buy, reuse or verify\nDDR5-4800 non-ECC 262-pin SO-DIMM; DDR4 is physically and electrically different: 1 × 32GB; retain 1 matching module(s)\n\nTarget 64GB. Slot 1: keep the existing 32GB module after matching its label. Slot 2: fit one 32GB SO-DIMM. This layout uses two equal-capacity modules; confirm actual labels and characteristics, not capacity alone. Choose the required 32GB capacity; the verified 16GB listing is not a substitute for this plan. No exact retail module has been qualified in this model profile; do not borrow a different model’s SKU. No XMP assumption.\n\nExisting model-matched power adapter: 1, retain if correct\nVerified backup / migration method: 1 plan\nYour next checks\nSlot 1: keep the existing 32GB module after matching its label.\nSlot 2: fit one 32GB SO-DIMM.\nMatch DDR5-4800 non-ECC 262-pin SO-DIMM; DDR4 is physically and electrically different and the exact CPU/BIOS. Read existing labels; capacity alone does not prove an electrical match. DDR4 and DDR5 are not interchangeable.\nAdapter check: 65W / 90W / 135W / 230W configurations; some listings omit the adapter. Verify voltage, connector, wattage and configuration; retain a correct adapter.\nBack up data, shut down and disconnect power before opening the machine. Follow the exact hardware maintenance manual and ESD procedure.\nCopy this checklist\nComplete parts and cost worksheet\n\nMark reusable items; enter a delivered line cost in one currency, including quantity, shipping and tax. Zero-purchase lines are excluded automatically. Blank costs remain unknown; this worksheet does not approve an unresolved part.\n\nCurrency \nUSD\nGBP\nEUR\nCAD\nAUD\nRequired item\tIdentity / assembly check\tReuse / delivered cost\nDDR5-4800 non-ECC 262-pin SO-DIMM; DDR4 is physically and electrically different\n\n1 × 32GB; retain 1 matching module(s)\n\n\tTarget 64GB. Slot 1: keep the existing 32GB module after matching its label. Slot 2: fit one 32GB SO-DIMM. This layout uses two equal-capacity modules; confirm actual labels and characteristics, not capacity alone. Choose the required 32GB capacity; the verified 16GB listing is not a substitute for this plan. No exact retail module has been qualified in this model profile; do not borrow a different model’s SKU. No XMP assumption.\n\nLenovo PSREF: ThinkCentre M90q Gen 3 — Memory (p.3), Storage/Power (p.4), Expansion (p.5): DDR5, two SSD positions; match fitted options\n\n\t\n Already have / no purchase needed: DDR5-4800 non-ECC 262-pin SO-DIMM; DDR4 is physically and electrically different\nDelivered line cost: DDR5-4800 non-ECC 262-pin SO-DIMM; DDR4 is physically and electrically different\n\nExisting model-matched power adapter\n\n1, retain if correct\n\n\t65W / 90W / 135W / 230W configurations; some listings omit the adapter; match the actual label and configuration. A larger wattage is not a reason to replace a correct adapter.\n\nLenovo PSREF: ThinkCentre M90q Gen 3 — Memory (p.3), Storage/Power (p.4), Expansion (p.5): DDR5, two SSD positions; match fitted options\n\n\t\n Already have / no purchase needed: Existing model-matched power adapter\nDelivered line cost: Existing model-matched power adapter\n\nVerified backup / migration method\n\n1 plan\n\n\tRetain a readable independent backup; an empty enclosure or RAID mirror is not a backup. Include cloning hardware or service only if needed.\n\nLenovo Gen 3 user guide: M90q / M80q / M70q — Printed p.5 DDR5; pp.42–43 HDD bracket; pp.49–50 M.2 and memory; not an arbitrary PCIe-card installation approval\n\n\t\n Already have / no purchase needed: Verified backup / migration method\nDelivered line cost: Verified backup / migration method\n\nKnown subtotal USD 0.00; 3 line cost(s) still unknown. Complete total unavailable.\n\nInputs stay in this page and clear when you leave. No merchant price feed or compatibility guarantee; an entered zero is your explicit zero-cost assumption.\n\nNo verified merchant option for this exact memory plan. The required quantity is 1 × 32GB; retain 1 matching module(s). Match that capacity, memory generation and exact model evidence when checking a seller. An offer from another generation or module capacity must not replace this plan.\n\nRead the exact model and alternatives →\n\nOfficial-spec planning · sources checked October 19, 2026 · no hands-on test or installation certification\n\nLenovo PSREF: ThinkCentre M90q Gen 3 — Memory (p.3), Storage/Power (p.4), Expansion (p.5): DDR5, two SSD positions; match fitted options\nLenovo Gen 3 user guide: M90q / M80q / M70q — Printed p.5 DDR5; pp.42–43 HDD bracket; pp.49–50 M.2 and memory; not an arbitrary PCIe-card installation approval\nLenovo Parts Lookup — Identify by machine type / serial; match FRU and substitute list before ordering; enter serial only on Lenovo, not Madabase",
+      "merchantLinks": []
+    },
+    {
+      "task": "M90q Gen3 existing64GB for64GB goal means no memory purchase",
+      "passed": true,
+      "text": "CONDITIONAL MATCH\n\nThinkCentre M90q Gen 3 Tiny · ram · target 64GB\n\nA documented upgrade route with parts to verify\nBuy nothing for this stated goal\n\nYour existing memory capacity meets the stated target. Keep it unless you have a separately diagnosed fault; buying more RAM is unnecessary for this capacity target.\n\nThinkCentre M90q Gen 3 Tiny: 2 DDR5 SO-DIMM slots; DDR5-4800. The cited Lenovo specification documents 64GB; this is not a hands-on test of your modules or a proven absolute hardware ceiling.\nYour next checks\nSlot 1: keep the existing 32GB module.\nSlot 2: keep the existing 32GB module.\nMatch DDR5-4800 non-ECC 262-pin SO-DIMM; DDR4 is physically and electrically different and the exact CPU/BIOS. Read existing labels; capacity alone does not prove an electrical match. DDR4 and DDR5 are not interchangeable.\nAdapter check: 65W / 90W / 135W / 230W configurations; some listings omit the adapter. Verify voltage, connector, wattage and configuration; retain a correct adapter.\nBack up data, shut down and disconnect power before opening the machine. Follow the exact hardware maintenance manual and ESD procedure.\nCopy this checklist\n\nRead the exact model and alternatives →\n\nOfficial-spec planning · sources checked October 19, 2026 · no hands-on test or installation certification\n\nLenovo PSREF: ThinkCentre M90q Gen 3 — Memory (p.3), Storage/Power (p.4), Expansion (p.5): DDR5, two SSD positions; match fitted options\nLenovo Gen 3 user guide: M90q / M80q / M70q — Printed p.5 DDR5; pp.42–43 HDD bracket; pp.49–50 M.2 and memory; not an arbitrary PCIe-card installation approval\nLenovo Parts Lookup — Identify by machine type / serial; match FRU and substitute list before ordering; enter serial only on Lenovo, not Madabase"
+    },
+    {
+      "task": "390x844 mobile FRU input and conditional purchase layout",
+      "passed": true,
+      "measurements": {
+        "checkboxes": [
+          {
+            "height": 17.59375,
+            "width": 17.59375
+          },
+          {
+            "height": 17.59375,
+            "width": 17.59375
+          }
+        ],
+        "cta": [
+          {
+            "background": "rgb(36, 91, 117)",
+            "color": "rgb(255, 255, 255)",
+            "text": "Check current price & availability on Amazon",
+            "width": 241
+          }
+        ],
+        "documentWidth": 375,
+        "width": 390
+      }
+    },
+    {
+      "task": "m720q upgraded guide after exact-prefix purge",
+      "passed": true,
+      "data": {
+        "css": [
+          "/_next/static/css/f3a51d1209e54b2c.css"
+        ],
+        "fruCheck": true,
+        "fruReference": true,
+        "model": "m720q",
+        "modelOptions": 8
+      },
+      "url": "https://homeoffice.madabase.com/guides/thinkcentre-m720q-upgrade-compatibility-guide?madabase-qa=1"
+    },
+    {
+      "task": "m920q upgraded guide after exact-prefix purge",
+      "passed": true,
+      "data": {
+        "css": [
+          "/_next/static/css/f3a51d1209e54b2c.css"
+        ],
+        "fruCheck": true,
+        "fruReference": true,
+        "model": "m920q",
+        "modelOptions": 8
+      },
+      "url": "https://homeoffice.madabase.com/guides/thinkcentre-m920q-upgrade-compatibility-guide?madabase-qa=1"
+    },
+    {
+      "task": "m920x upgraded guide after exact-prefix purge",
+      "passed": true,
+      "data": {
+        "css": [
+          "/_next/static/css/f3a51d1209e54b2c.css"
+        ],
+        "fruCheck": true,
+        "fruReference": true,
+        "model": "m920x",
+        "modelOptions": 8
+      },
+      "url": "https://homeoffice.madabase.com/guides/thinkcentre-m920x-upgrade-compatibility-guide?madabase-qa=1"
+    },
+    {
+      "task": "main search finds exact M90q Gen3 model anchor with Homeoffice publication",
+      "passed": true,
+      "url": "https://madabase.com/search?q=M90q+Gen+3+DDR5+64GB&site=&kind=",
+      "matches": [
+        {
+          "href": "https://homeoffice.madabase.com/compatibility/mini-pcs#tiny-model-m90q-gen3",
+          "text": "ThinkCentre M90q Gen 3 Tiny: memory, storage and FRU reference"
+        }
+      ]
+    },
+    {
+      "task": "Homeoffice search finds M710q own reference",
+      "passed": true,
+      "url": "https://homeoffice.madabase.com/search?q=M710q+RAM+32GB&kind=&category=&topic="
+    },
+    {
+      "task": "unverified M70q Gen2 search does not substitute Gen3",
+      "passed": true,
+      "url": "https://homeoffice.madabase.com/search?q=M70q+Gen2+RAM&kind=&category=&topic=",
+      "status": [
+        "  - status: 0 results for “M70q Gen2 RAM” · 235 searchable pages"
+      ]
+    }
+  ],
+  "passed": true
+}

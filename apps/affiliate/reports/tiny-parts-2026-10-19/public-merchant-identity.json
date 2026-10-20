@@ -1,0 +1,41 @@
+{
+  "checkedAt": "2026-10-20T02:37:54.036Z",
+  "commissionedTestClicks": 0,
+  "purchases": 0,
+  "deliveryAddressOrAccountMutations": 0,
+  "rows": [
+    {
+      "asin": "B0F2DYGPDQ",
+      "url": "https://www.amazon.com/dp/B0F2DYGPDQ",
+      "checkedAt": "2026-10-20T02:36:00.534Z",
+      "identity": "Deal4GO replacement00XL211 cable plus01MN886 carrier, one each, no SSD",
+      "inStockObserved": true,
+      "shipsFrom": "Amazon",
+      "soldBy": "Deal4Go",
+      "returns": "30-day refund / replacement",
+      "limits": "Aftermarket; seller01EF683 claim is not accepted as an official substitute; Tiny6/7/8 excluded; exact-unit evidence gates remain",
+      "passed": true
+    },
+    {
+      "asin": "B0B14FTVTV",
+      "checkedAt": "2026-10-20T02:37:54.036Z",
+      "identity": "Renewed Lenovo M720q, i5-8500T,16GB DDR4,256GB NVMe; marketplace assembly, not factory FRU evidence",
+      "passed": true
+    },
+    {
+      "asin": "B07D2DZ42B",
+      "checkedAt": "2026-10-20T02:37:54.036Z",
+      "identity": "Kingston KCP426SD8/16,16GB DDR4-2666 SO-DIMM2Rx8,one item/one pack; Item details confirms exact model and ASIN",
+      "passed": true,
+      "noCurrentPriceRecommendation": true
+    },
+    {
+      "asin": "B078211KBB",
+      "checkedAt": "2026-10-20T02:37:54.036Z",
+      "identity": "Crucial MX500 CT1000MX500SSD1,1TB2.5-inch SATA SSD; drive only",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "limits": "Identity observations only. Stock/seller/delivery/terms depend on live merchant context; no copied reviews, account details or marketplace images."
+}

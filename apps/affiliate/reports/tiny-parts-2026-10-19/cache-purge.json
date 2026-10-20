@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-10-20T02:27:42.392Z",
+  "mode": "url",
+  "urls": [
+    "https://homeoffice.madabase.com/compatibility/mini-pcs",
+    "https://homeoffice.madabase.com/guides/thinkcentre-m720q-upgrade-compatibility-guide",
+    "https://homeoffice.madabase.com/guides/thinkcentre-m920q-upgrade-compatibility-guide",
+    "https://homeoffice.madabase.com/guides/thinkcentre-m920x-upgrade-compatibility-guide"
+  ],
+  "acceptedByUi": true,
+  "reason": "M720q plain canonical returned stale UPDATING variant after initial current responses",
+  "scope": "four exact non-root HTML canonicals only",
+  "publicCacheAcceptancePending": false,
+  "prefixFallback": {
+    "checkedAt": "2026-10-20T02:38:34.382Z",
+    "exactFilePrefixes": [
+      "homeoffice.madabase.com/compatibility/mini-pcs",
+      "homeoffice.madabase.com/guides/thinkcentre-m720q-upgrade-compatibility-guide",
+      "homeoffice.madabase.com/guides/thinkcentre-m920q-upgrade-compatibility-guide",
+      "homeoffice.madabase.com/guides/thinkcentre-m920x-upgrade-compatibility-guide"
+    ],
+    "acceptedByUi": true,
+    "reason": "QA query variants remained on old runtime/CSS after URL purge. No root/hostname/global purge."
+  },
+  "allFourPlainCanonicalCurrentHit": true,
+  "threeGuideQueryVariantsCurrent": true,
+  "acceptedAt": "2026-10-20T02:54:41.888925+00:00"
+}

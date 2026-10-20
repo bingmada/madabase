@@ -1,0 +1,208 @@
+{
+  "checkedAt": "2026-10-20T02:29:13.590053+00:00",
+  "phase": "after-url",
+  "changedCanonicals": [
+    {
+      "url": "https://homeoffice.madabase.com/compatibility/mini-pcs",
+      "passes": [
+        {
+          "status": 200,
+          "cache": "UPDATING",
+          "age": "48259",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "current": false,
+          "missing": [
+            "tiny-fru-check",
+            "tiny-fru-reference",
+            "00XL211",
+            "01MN886",
+            "f3a51d1209e54b2c.css",
+            "tiny-model-m710q",
+            "tiny-model-m910q",
+            "tiny-model-m70q-gen3",
+            "tiny-model-m90q-gen3",
+            "5M11C16880"
+          ],
+          "unguardedKitLink": false,
+          "canonical": true
+        },
+        {
+          "status": 200,
+          "cache": "HIT",
+          "age": "1",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "current": true,
+          "missing": [],
+          "unguardedKitLink": false,
+          "canonical": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/thinkcentre-m720q-upgrade-compatibility-guide",
+      "passes": [
+        {
+          "status": 200,
+          "cache": "HIT",
+          "age": "398",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "current": true,
+          "missing": [],
+          "unguardedKitLink": false,
+          "canonical": true
+        },
+        {
+          "status": 200,
+          "cache": "HIT",
+          "age": "400",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "current": true,
+          "missing": [],
+          "unguardedKitLink": false,
+          "canonical": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/thinkcentre-m920q-upgrade-compatibility-guide",
+      "passes": [
+        {
+          "status": 200,
+          "cache": "UPDATING",
+          "age": "48256",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "current": false,
+          "missing": [
+            "tiny-fru-check",
+            "tiny-fru-reference",
+            "00XL211",
+            "01MN886",
+            "f3a51d1209e54b2c.css"
+          ],
+          "unguardedKitLink": false,
+          "canonical": true
+        },
+        {
+          "status": 200,
+          "cache": "HIT",
+          "age": "0",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "current": true,
+          "missing": [],
+          "unguardedKitLink": false,
+          "canonical": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/thinkcentre-m920x-upgrade-compatibility-guide",
+      "passes": [
+        {
+          "status": 200,
+          "cache": "UPDATING",
+          "age": "48257",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "current": false,
+          "missing": [
+            "tiny-fru-check",
+            "tiny-fru-reference",
+            "00XL211",
+            "01MN886",
+            "f3a51d1209e54b2c.css"
+          ],
+          "unguardedKitLink": false,
+          "canonical": true
+        },
+        {
+          "status": 200,
+          "cache": "HIT",
+          "age": "1",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "current": true,
+          "missing": [],
+          "unguardedKitLink": false,
+          "canonical": true
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "search": [
+    {
+      "status": 200,
+      "cache": "DYNAMIC",
+      "age": null,
+      "cacheControl": "private, no-store, max-age=0",
+      "url": "https://madabase.com/search?q=M710q%20RAM%2032GB",
+      "query": "M710q RAM 32GB",
+      "passed": true
+    },
+    {
+      "status": 200,
+      "cache": "DYNAMIC",
+      "age": null,
+      "cacheControl": "private, no-store, max-age=0",
+      "url": "https://madabase.com/search?q=M910q%20SATA%20FRU",
+      "query": "M910q SATA FRU",
+      "passed": true
+    },
+    {
+      "status": 200,
+      "cache": "DYNAMIC",
+      "age": null,
+      "cacheControl": "private, no-store, max-age=0",
+      "url": "https://madabase.com/search?q=M70q%20Gen%203%20RAM%2064GB",
+      "query": "M70q Gen 3 RAM 64GB",
+      "passed": true
+    },
+    {
+      "status": 200,
+      "cache": "DYNAMIC",
+      "age": null,
+      "cacheControl": "private, no-store, max-age=0",
+      "url": "https://madabase.com/search?q=M90q%20Gen%203%20DDR5%2064GB",
+      "query": "M90q Gen 3 DDR5 64GB",
+      "passed": true
+    },
+    {
+      "status": 200,
+      "cache": "BYPASS",
+      "age": null,
+      "cacheControl": "private, no-store, max-age=0",
+      "url": "https://homeoffice.madabase.com/search?q=M710q%20RAM%2032GB",
+      "query": "M710q RAM 32GB",
+      "passed": true
+    },
+    {
+      "status": 200,
+      "cache": "BYPASS",
+      "age": null,
+      "cacheControl": "private, no-store, max-age=0",
+      "url": "https://homeoffice.madabase.com/search?q=M910q%20SATA%20FRU",
+      "query": "M910q SATA FRU",
+      "passed": true
+    },
+    {
+      "status": 200,
+      "cache": "BYPASS",
+      "age": null,
+      "cacheControl": "private, no-store, max-age=0",
+      "url": "https://homeoffice.madabase.com/search?q=M70q%20Gen%203%20RAM%2064GB",
+      "query": "M70q Gen 3 RAM 64GB",
+      "passed": true
+    },
+    {
+      "status": 200,
+      "cache": "BYPASS",
+      "age": null,
+      "cacheControl": "private, no-store, max-age=0",
+      "url": "https://homeoffice.madabase.com/search?q=M90q%20Gen%203%20DDR5%2064GB",
+      "query": "M90q Gen 3 DDR5 64GB",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

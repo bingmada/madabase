@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-10-20T02:32:43.637Z",
+  "rows": [
+    {
+      "task": "m720q upgrade guide embeds its own model and official FRU reference",
+      "passed": false,
+      "defaultModel": "m720q",
+      "url": "https://homeoffice.madabase.com/guides/thinkcentre-m720q-upgrade-compatibility-guide?madabase-qa=1"
+    },
+    {
+      "task": "m920q upgrade guide embeds its own model and official FRU reference",
+      "passed": false,
+      "defaultModel": "m920q",
+      "url": "https://homeoffice.madabase.com/guides/thinkcentre-m920q-upgrade-compatibility-guide?madabase-qa=1"
+    },
+    {
+      "task": "m920x upgrade guide embeds its own model and official FRU reference",
+      "passed": false,
+      "defaultModel": "m920x",
+      "url": "https://homeoffice.madabase.com/guides/thinkcentre-m920x-upgrade-compatibility-guide?madabase-qa=1"
+    }
+  ],
+  "observation": "All three madabase-qa query variants still served the old three-model planner/CSS45e20ab4f0b8e958 after URL-mode purge; plain canonicals passed. Exact-file prefix fallback required."
+}

@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "updatedAt": "2026-10-19T14:05:32.250679+00:00",
+  "updatedAt": "2026-10-20T02:54:41.888925+00:00",
   "status": "all-site-portfolio-recovery-deployed-and-publicly-verified",
   "objective": "Make affiliate traffic, merchant clicks, and commission revenue measurable before scaling content volume.",
   "socialWebsiteLinks20261012": {
@@ -52,7 +52,8 @@
     "portfolioStrategyReset20261008": "Read portfolioStrategyReset20261008, apps/affiliate/config/portfolio-recovery-2026-10-08.json and apps/affiliate/reports/portfolio-recovery-2026-10-08/deployment.json first. The seven-site workflow is deployed and publicly verified at bfb8689e4a63d5368036ef6e829fe492b840d919 after a production-only Costume evidence-boundary repair. Six Amazon sites have 1,147 of 1,147 effective public passes after bounded retry; Costume has 108 of 108 effective public passes after the repaired canonical completed normal SJC edge revalidation. Owner testing remains unavailable, so hands-on claims and Review structured data stay blocked. Keep the zero-new-URL freeze and the October 13, October 20 and November 5 gates.",
     "compatibilitySearch20261019": "User-journey repair 434cf229 is LIVE at 2026-10-19T20:59:56.304493+08:00. Read userJourney20261019 and apps/affiliate/reports/user-journey-2026-10-19/README.md first. Public317/317,10 browser decisions,7 mobile,49 current cache pages,32 assets,8 RSC hosts and9 zero-write click cases pass. Test never paused, all three active/0 restarts; previous a837332 releases retained. Manual rollback uses deploy.py rollback, not watchdog recover. Exact16 material updates accepted IndexNow HTTP200. Preserve Oct26/Nov2/Nov18 cohort dates; no new canonicals.",
     "userJourney20261019": "User-journey repair 434cf229 is LIVE at 2026-10-19T20:59:56.304493+08:00. Read userJourney20261019 and apps/affiliate/reports/user-journey-2026-10-19/README.md first. Public317/317,10 browser decisions,7 mobile,49 current cache pages,32 assets,8 RSC hosts and9 zero-write click cases pass. Test never paused, all three active/0 restarts; previous a837332 releases retained. Manual rollback uses deploy.py rollback, not watchdog recover. Exact16 material updates accepted IndexNow HTTP200. Preserve Oct26/Nov2/Nov18 cohort dates; no new canonicals.",
-    "tinyParts20261019": "Tiny expansion220b8038 is validated/pushed and server PREPARED, not deployed. Chrome recovered. Six files hash-verified; first no-Test activation safely rejected before service stop (forecast764.46MiB vs768MiB; withTest821.36MiB). Current explicit Test maintenance approval requested; do not reuse old authorization or lower gates. Read tinyParts20261019/delivery-status and prepared transaction. After approval bounded135s activate --allow-test-pause/150s recovery, then public4 cache/317 HTTP/merchant acceptance before exact4 IndexNow. Production still434cf229/all services unchanged."
+    "tinyParts20261019": "Tiny/FRU release220b8038 is LIVE since2026-10-20T10:01:00.306730+08:00. Read tinyParts20261019 and apps/affiliate/reports/tiny-parts-2026-10-19/README.md. Public317/317,18 browser cases,32 assets,8RSC hosts,12zero-write click cases and4 merchant identities pass. Four exactHTML pages URL+non-root file-prefix purged; all4currentHIT and3guide QAquery variants current. IndexNow exact4 acceptedHTTP200. Owner authorized this Test pause; all3services active/0restarts, Test same release, no errors. Old434cf229 retained; explicit deploy.py rollback remains available, watchdog inactive. Preserve original Oct26/Nov2/Nov18 gates; own4page gatesOct27/Nov3/Nov19, merchant expiry recheckbeforeOct26. No new canonicals or hands-on claims.",
+    "latestVerifiedReleaseKey": "tinyParts20261019"
   },
   "portfolioStrategyReset20261008": {
     "status": "production_deployed_and_publicly_verified",
@@ -6062,9 +6063,9 @@
     "cache": "56 exact URL purges accepted; 18 exact content-file prefixes cleared after plain canonical retained old variant. Final49 current,48 affiliate repeat HIT; API/search/RSC uncached. No root prefix, hostname purge or rule changes."
   },
   "tinyParts20261019": {
-    "status": "prepared-awaiting-current-test-maintenance-authorization",
+    "status": "deployed-and-publicly-verified",
     "sourceRevision": "220b8038204e847da6609d83a6169c7222517754",
-    "recordedAt": "2026-10-19T14:13:11.877583+00:00",
+    "recordedAt": "2026-10-20T02:54:41.888925+00:00",
     "report": "apps/affiliate/reports/tiny-parts-2026-10-19/README.md",
     "newIndexableCanonicals": 0,
     "documentedModels": 7,
@@ -6086,7 +6087,26 @@
       "mobile390x844Overflow": false,
       "deploymentFailureTestsPassed": 10,
       "searchEntries": 1134,
-      "ctaContrastRatio": 7.4249059553772465
+      "ctaContrastRatio": 7.4249059553772465,
+      "publicHttpPassed": 317,
+      "publicHttpFailures": 0,
+      "productionDatabaseDependentPending": 0,
+      "publicBrowserCasesPassed": 18,
+      "publicStaticAssetsPassed": 32,
+      "publicRscHostsPassed": 8,
+      "publicClickQaCasesPassed": 12,
+      "publicMerchantIdentitiesPassed": 4,
+      "commissionedTestClicks": 0,
+      "purchases": 0,
+      "productionQaDatabaseWrites": 0,
+      "publicUpdatedCanonicalsPassed": 4,
+      "publicSearchCasesPassed": 8,
+      "finalCurrentHtmlCache": "HIT on all4 plain canonicals after exact-file prefix purge",
+      "recentServiceErrors": {
+        "main": "",
+        "affiliate": "",
+        "test": ""
+      }
     },
     "runtimeArtifacts": {
       "main": {
@@ -6101,29 +6121,48 @@
       }
     },
     "productionCurrent": {
-      "release": "journey-20261019-434cf229c9ab044a2db48490aa748dc5a4017434",
-      "revision": "434cf229c9ab044a2db48490aa748dc5a4017434",
+      "release": "journey-20261019-220b8038204e847da6609d83a6169c7222517754",
+      "revision": "220b8038204e847da6609d83a6169c7222517754",
       "lastVerifiedMainAffiliateTestActive": true,
       "newPrepareOrActivateExecuted": true,
-      "testPaused": false,
+      "testPaused": true,
       "prepareExecuted": true,
       "activateAttempted": true,
-      "activationResult": "forecast-rejected-before-service-stop",
-      "allServicesUnchanged": true
+      "activationResult": "origin-verified",
+      "allServicesUnchanged": false,
+      "testRestored": true,
+      "mainAffiliateWorkingDirectories": {
+        "main": "/srv/madabase-main/releases/journey-20261019-220b8038204e847da6609d83a6169c7222517754",
+        "affiliate": "/srv/madabase-affiliate/releases/journey-20261019-220b8038204e847da6609d83a6169c7222517754"
+      },
+      "testWorkingDirectoryUnchanged": true,
+      "controllerInactive": true,
+      "recoveryTimerInactive": true,
+      "serviceRestarts": {
+        "main": "0",
+        "affiliate": "0",
+        "test": "0"
+      },
+      "cutoverTransactionSeconds": 5.702
     },
     "connectionBlocker": null,
-    "transfer": "Six final-revision files fetched over pinned HTTPS and SHA-256/bytes matched; prepare completed. Activation rejected by forecast before stopping any service.",
+    "transfer": "All six pinned220b803 files matched SHA-256 and bytes before activation.",
     "localPreview": "http://homeoffice.localhost:3023/compatibility/mini-pcs?madabase-qa=1",
     "capacity": {
       "forecastRequiredMiB": 768,
       "actualRequiredMiB": 704,
-      "lastMeasuredProjectedMiB": 764.45703125,
+      "lastMeasuredProjectedMiB": 836.2734375,
       "pressureAvg10": 0,
-      "mustRecheckBeforeActivation": true,
-      "withTestProjectedMiB": 821.36328125,
-      "forecastRejectedWithoutStoppingServices": true
+      "mustRecheckBeforeActivation": false,
+      "withTestProjectedMiB": 836.2734375,
+      "actualGatesMiB": {
+        "main": 826.4296875,
+        "affiliate": 776.9609375
+      },
+      "postReleaseAvailableMiB": 511.11328125,
+      "priorNoTestAttemptRejectedWithoutStoppingServices": true
     },
-    "resume": "Inspect prepared transaction and current services. Await owner answer to current Test maintenance question. Only if approved activate with --allow-test-pause and a fresh named bounded135s controller/150s recovery; otherwise keep Test untouched. Preserve768/704MiB. Then complete origin/public/cache/merchant checks before exact4 IndexNow.",
+    "resume": "Release complete. Preserve old434cf229 for manual rollback. Review original pilot onOct26/Nov2/Nov18; recheck merchant verification beforeOct26 expiry. Additional exact4 Tiny cohort gates areOct27/Nov3/Nov19. No further near-duplicate expansion without evidence.",
     "reviewDatesPreserved": [
       "2026-10-26",
       "2026-11-02",
@@ -6131,6 +6170,65 @@
     ],
     "sourceRevisionBeforeContrastFix": "ddda031ea29506c16045c665ec457e6471cbe3dc",
     "connectionRecovered": true,
-    "maintenanceAuthorization": "Requested for this exact release because Main+Affiliate forecast 764.46MiB fails768MiB; including Test projects821.36MiB. No Test pause without owner response."
+    "maintenanceAuthorization": "Owner explicitly approved this exact Main and Test maintenance window on2026-10-20; executed once with original capacity gates and independent recovery.",
+    "completedAt": "2026-10-20T10:01:00.306730+08:00",
+    "remainingBlockers": [],
+    "ownCohortReviewDates": [
+      "2026-10-27",
+      "2026-11-03",
+      "2026-11-19"
+    ],
+    "cache": {
+      "urlModeExactUrls": [
+        "https://homeoffice.madabase.com/compatibility/mini-pcs",
+        "https://homeoffice.madabase.com/guides/thinkcentre-m720q-upgrade-compatibility-guide",
+        "https://homeoffice.madabase.com/guides/thinkcentre-m920q-upgrade-compatibility-guide",
+        "https://homeoffice.madabase.com/guides/thinkcentre-m920x-upgrade-compatibility-guide"
+      ],
+      "prefixFallbackExactPaths": [
+        "homeoffice.madabase.com/compatibility/mini-pcs",
+        "homeoffice.madabase.com/guides/thinkcentre-m720q-upgrade-compatibility-guide",
+        "homeoffice.madabase.com/guides/thinkcentre-m920q-upgrade-compatibility-guide",
+        "homeoffice.madabase.com/guides/thinkcentre-m920x-upgrade-compatibility-guide"
+      ],
+      "reason": "URL purge accepted; existing QA-query variants remained stale, requiring exact-file prefix fallback. All3 guide query variants then showed seven-model runtime and newFRU tables; all4 plain canonicals reached currentHIT.",
+      "apiAndSearch": "private/no-store, DYNAMIC/BYPASS",
+      "rsc": "8hosts DYNAMIC text/x-component",
+      "retainedStaticAssets": "old and current hashes verified32/32",
+      "purgeEverythingUsed": false,
+      "cacheRulesChanged": false
+    },
+    "indexNow": {
+      "status": "accepted",
+      "httpStatus": 200,
+      "exactUrlCount": 4,
+      "urls": [
+        "https://homeoffice.madabase.com/compatibility/mini-pcs",
+        "https://homeoffice.madabase.com/guides/thinkcentre-m720q-upgrade-compatibility-guide",
+        "https://homeoffice.madabase.com/guides/thinkcentre-m920q-upgrade-compatibility-guide",
+        "https://homeoffice.madabase.com/guides/thinkcentre-m920x-upgrade-compatibility-guide"
+      ],
+      "record": "indexnow-submit.txt",
+      "rankingOrIndexingGuarantee": false
+    },
+    "rollback": {
+      "previousRevision": "434cf229c9ab044a2db48490aa748dc5a4017434",
+      "oldReleasesRetained": true,
+      "controllerSeconds": 135,
+      "stopTimeoutSeconds": 10,
+      "independentRecoverySeconds": 150,
+      "manualCommand": "sudo -n python3 /var/tmp/madabase-tiny-parts-inputs-20261019/deploy.py rollback",
+      "watchdogRecoverIsNotManualRollback": true,
+      "mockFailureTestsPassed": 10
+    },
+    "verificationNotes": [
+      "Eight public HTTP requests initially disconnected; only those exact8 were retried, with all317 final results passing.",
+      "QA helper initially generated an over80-character eventId for the long new-kit slug. Compact QA identifiers fixed the harness; all12 real API validator cases pass without persistence. No application change was required.",
+      "The shell default was Node16, which lacks fetch; merchant API QA used the already-verified Node20.20.0.",
+      "Chrome viewport override did not affect this tab; the real390x844 IAB public-page check passed at375px document width.",
+      "Product detail accordions were opened to verify the exactKingston model; only concise identity observations were saved. No copied customer reviews or private account data published."
+    ],
+    "publicPreview": "https://homeoffice.madabase.com/compatibility/mini-pcs",
+    "localPreviewStatus": "historical; local QA servers no longer running"
   }
 }

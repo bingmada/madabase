@@ -1,0 +1,9 @@
+IndexNow preview (no URLs will be submitted)
+
+homeoffice (4)
+  https://homeoffice.madabase.com/compatibility/mini-pcs
+  https://homeoffice.madabase.com/guides/thinkcentre-m720q-upgrade-compatibility-guide
+  https://homeoffice.madabase.com/guides/thinkcentre-m920q-upgrade-compatibility-guide
+  https://homeoffice.madabase.com/guides/thinkcentre-m920x-upgrade-compatibility-guide
+
+Preview complete. Add --submit only after the matching release is live.

@@ -1,0 +1,113 @@
+{
+  "revision": "220b8038204e847da6609d83a6169c7222517754",
+  "status": "origin-verified",
+  "testWorkingDirectory": "/srv/madabase-test/releases/local-20260820-next15523",
+  "apps": {
+    "main": {
+      "old": "/srv/madabase-main/releases/journey-20261019-434cf229c9ab044a2db48490aa748dc5a4017434",
+      "new": "/srv/madabase-main/releases/journey-20261019-220b8038204e847da6609d83a6169c7222517754",
+      "sha256": "eda5b71f7c92643d8ee6383489e959982f6002cc0e2afe6e29ffd9d1f6a18943",
+      "retainedAssets": 27
+    },
+    "affiliate": {
+      "old": "/srv/madabase-affiliate/releases/journey-20261019-434cf229c9ab044a2db48490aa748dc5a4017434",
+      "new": "/srv/madabase-affiliate/releases/journey-20261019-220b8038204e847da6609d83a6169c7222517754",
+      "sha256": "a48ca9dda6592b5b4c2ab1b3d351dbd352b3b8e2aca6fba9720d07d3114fdc2c",
+      "retainedAssets": 60
+    }
+  },
+  "startedAt": 1792461654.6042316,
+  "forecast": {
+    "capacity": {
+      "passed": false,
+      "availableMiB": 297.04296875,
+      "sliceHeadroomMiB": "unlimited",
+      "requiredMiB": 704,
+      "candidateMiB": 512,
+      "reserveMiB": 192,
+      "pressureAvg10": 0.02,
+      "reasons": [
+        "Insufficient MemAvailable; swap does not count as candidate capacity."
+      ]
+    },
+    "reclaimedAnonymousMiB": 539.23046875,
+    "projectedMiB": 836.2734375,
+    "requiredMiB": 768
+  },
+  "testPaused": true,
+  "testRestored": true,
+  "gates": {
+    "main": {
+      "passed": true,
+      "availableMiB": 826.4296875,
+      "sliceHeadroomMiB": "unlimited",
+      "requiredMiB": 704,
+      "candidateMiB": 512,
+      "reserveMiB": 192,
+      "pressureAvg10": 0.02,
+      "reasons": []
+    },
+    "affiliate": {
+      "passed": true,
+      "availableMiB": 776.9609375,
+      "sliceHeadroomMiB": "unlimited",
+      "requiredMiB": 704,
+      "candidateMiB": 512,
+      "reserveMiB": 192,
+      "pressureAvg10": 0.02,
+      "reasons": []
+    }
+  },
+  "verification": {
+    "main": {
+      "search": true
+    },
+    "affiliate": {
+      "contentCanonicals": 4,
+      "sitemaps": 7,
+      "databaseProduct": true
+    }
+  },
+  "completedAt": 1792461660.3067298,
+  "services": {
+    "main": {
+      "ActiveState": "active",
+      "WorkingDirectory": "/srv/madabase-main/releases/journey-20261019-220b8038204e847da6609d83a6169c7222517754",
+      "MainPID": "338693",
+      "NRestarts": "0"
+    },
+    "affiliate": {
+      "ActiveState": "active",
+      "WorkingDirectory": "/srv/madabase-affiliate/releases/journey-20261019-220b8038204e847da6609d83a6169c7222517754",
+      "MainPID": "338812",
+      "NRestarts": "0"
+    },
+    "test": {
+      "ActiveState": "active",
+      "WorkingDirectory": "/srv/madabase-test/releases/local-20260820-next15523",
+      "MainPID": "338979",
+      "NRestarts": "0"
+    }
+  },
+  "controller": {
+    "ActiveState": "inactive",
+    "Result": "success"
+  },
+  "recoveryTimer": "inactive",
+  "postReleaseCapacity": {
+    "availableMiB": 511.11328125,
+    "sliceHeadroomMiB": "unlimited",
+    "pressureAvg10": 0
+  },
+  "postReleaseHealth": {
+    "main": true,
+    "affiliate": true,
+    "test": true
+  },
+  "recentServiceErrors": {
+    "main": "",
+    "affiliate": "",
+    "test": ""
+  },
+  "checkedAt": "2026-10-20T02:42:38.309Z"
+}

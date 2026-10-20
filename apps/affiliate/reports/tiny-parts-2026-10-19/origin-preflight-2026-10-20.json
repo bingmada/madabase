@@ -1,0 +1,56 @@
+{
+  "revision": "220b8038204e847da6609d83a6169c7222517754",
+  "transactionStatus": "prepared",
+  "digests": {
+    "deploy.py": true,
+    "artifact.json": true,
+    "release-urls.json": true,
+    "check-release-capacity.mjs": true,
+    "main-runtime.tgz": true,
+    "affiliate-runtime.tgz": true
+  },
+  "services": {
+    "main": {
+      "ActiveState": "active",
+      "WorkingDirectory": "/srv/madabase-main/releases/journey-20261019-434cf229c9ab044a2db48490aa748dc5a4017434",
+      "MainPID": "330424",
+      "NRestarts": "0"
+    },
+    "affiliate": {
+      "ActiveState": "active",
+      "WorkingDirectory": "/srv/madabase-affiliate/releases/journey-20261019-434cf229c9ab044a2db48490aa748dc5a4017434",
+      "MainPID": "330539",
+      "NRestarts": "0"
+    },
+    "test": {
+      "ActiveState": "active",
+      "WorkingDirectory": "/srv/madabase-test/releases/local-20260820-next15523",
+      "MainPID": "327154",
+      "NRestarts": "0"
+    }
+  },
+  "health": {
+    "main": true,
+    "affiliate": true,
+    "test": true
+  },
+  "forecastWithTest": {
+    "capacity": {
+      "passed": false,
+      "availableMiB": 296.28515625,
+      "sliceHeadroomMiB": "unlimited",
+      "requiredMiB": 704,
+      "candidateMiB": 512,
+      "reserveMiB": 192,
+      "pressureAvg10": 0,
+      "reasons": [
+        "Insufficient MemAvailable; swap does not count as candidate capacity."
+      ]
+    },
+    "reclaimedAnonymousMiB": 539.23046875,
+    "projectedMiB": 835.515625,
+    "requiredMiB": 768
+  },
+  "checkedAt": "2026-10-20T02:00:42.053Z",
+  "currentTestPauseAuthorized": true
+}

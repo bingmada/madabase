@@ -34,5 +34,6 @@
     }
   },
   "serverInputDirectory": "/var/tmp/madabase-tiny-parts-inputs-20261019",
-  "status": "all-six-downloaded-and-sha256-verified"
+  "status": "all-six-verified-and-deployed",
+  "completedAt": "2026-10-20T10:01:00.306730+08:00"
 }

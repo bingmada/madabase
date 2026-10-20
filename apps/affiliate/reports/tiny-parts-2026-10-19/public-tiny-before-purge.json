@@ -1,0 +1,191 @@
+{
+  "checkedAt": "2026-10-20T02:22:44.617849+00:00",
+  "phase": "final",
+  "changedCanonicals": [
+    {
+      "url": "https://homeoffice.madabase.com/compatibility/mini-pcs",
+      "passes": [
+        {
+          "status": 200,
+          "cache": "HIT",
+          "age": "1163",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "current": true,
+          "missing": [],
+          "unguardedKitLink": false,
+          "canonical": true
+        },
+        {
+          "status": 200,
+          "cache": "HIT",
+          "age": "1176",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "current": true,
+          "missing": [],
+          "unguardedKitLink": false,
+          "canonical": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/thinkcentre-m720q-upgrade-compatibility-guide",
+      "passes": [
+        {
+          "status": 200,
+          "cache": "HIT",
+          "age": "1179",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "current": true,
+          "missing": [],
+          "unguardedKitLink": false,
+          "canonical": true
+        },
+        {
+          "status": 200,
+          "cache": "UPDATING",
+          "age": "47925",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "current": false,
+          "missing": [
+            "tiny-fru-check",
+            "tiny-fru-reference",
+            "00XL211",
+            "01MN886",
+            "f3a51d1209e54b2c.css"
+          ],
+          "unguardedKitLink": false,
+          "canonical": true
+        }
+      ],
+      "passed": false
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/thinkcentre-m920q-upgrade-compatibility-guide",
+      "passes": [
+        {
+          "status": 200,
+          "cache": "HIT",
+          "age": "1177",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "current": true,
+          "missing": [],
+          "unguardedKitLink": false,
+          "canonical": true
+        },
+        {
+          "status": 200,
+          "cache": "HIT",
+          "age": "1178",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "current": true,
+          "missing": [],
+          "unguardedKitLink": false,
+          "canonical": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/thinkcentre-m920x-upgrade-compatibility-guide",
+      "passes": [
+        {
+          "status": 200,
+          "cache": "HIT",
+          "age": "1176",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "current": true,
+          "missing": [],
+          "unguardedKitLink": false,
+          "canonical": true
+        },
+        {
+          "status": 200,
+          "cache": "HIT",
+          "age": "1178",
+          "cacheControl": "public, max-age=14400, s-maxage=3600, stale-while-revalidate=86400",
+          "current": true,
+          "missing": [],
+          "unguardedKitLink": false,
+          "canonical": true
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "search": [
+    {
+      "status": 200,
+      "cache": "DYNAMIC",
+      "age": null,
+      "cacheControl": "private, no-store, max-age=0",
+      "url": "https://madabase.com/search?q=M710q%20RAM%2032GB",
+      "query": "M710q RAM 32GB",
+      "passed": true
+    },
+    {
+      "status": 200,
+      "cache": "DYNAMIC",
+      "age": null,
+      "cacheControl": "private, no-store, max-age=0",
+      "url": "https://madabase.com/search?q=M910q%20SATA%20FRU",
+      "query": "M910q SATA FRU",
+      "passed": true
+    },
+    {
+      "status": 200,
+      "cache": "DYNAMIC",
+      "age": null,
+      "cacheControl": "private, no-store, max-age=0",
+      "url": "https://madabase.com/search?q=M70q%20Gen%203%20RAM%2064GB",
+      "query": "M70q Gen 3 RAM 64GB",
+      "passed": true
+    },
+    {
+      "status": 200,
+      "cache": "DYNAMIC",
+      "age": null,
+      "cacheControl": "private, no-store, max-age=0",
+      "url": "https://madabase.com/search?q=M90q%20Gen%203%20DDR5%2064GB",
+      "query": "M90q Gen 3 DDR5 64GB",
+      "passed": true
+    },
+    {
+      "status": 200,
+      "cache": "BYPASS",
+      "age": null,
+      "cacheControl": "private, no-store, max-age=0",
+      "url": "https://homeoffice.madabase.com/search?q=M710q%20RAM%2032GB",
+      "query": "M710q RAM 32GB",
+      "passed": true
+    },
+    {
+      "status": 200,
+      "cache": "BYPASS",
+      "age": null,
+      "cacheControl": "private, no-store, max-age=0",
+      "url": "https://homeoffice.madabase.com/search?q=M910q%20SATA%20FRU",
+      "query": "M910q SATA FRU",
+      "passed": true
+    },
+    {
+      "status": 200,
+      "cache": "BYPASS",
+      "age": null,
+      "cacheControl": "private, no-store, max-age=0",
+      "url": "https://homeoffice.madabase.com/search?q=M70q%20Gen%203%20RAM%2064GB",
+      "query": "M70q Gen 3 RAM 64GB",
+      "passed": true
+    },
+    {
+      "status": 200,
+      "cache": "BYPASS",
+      "age": null,
+      "cacheControl": "private, no-store, max-age=0",
+      "url": "https://homeoffice.madabase.com/search?q=M90q%20Gen%203%20DDR5%2064GB",
+      "query": "M90q Gen 3 DDR5 64GB",
+      "passed": true
+    }
+  ],
+  "passed": false
+}
