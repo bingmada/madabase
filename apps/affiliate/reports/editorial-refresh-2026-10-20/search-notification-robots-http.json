@@ -1,0 +1,95 @@
+{
+  "checkedAt": "2026-10-21T03:27:01.818Z",
+  "scope": "Header simulations only, not verified Google infrastructure",
+  "rows": [
+    {
+      "host": "homeoffice.madabase.com",
+      "agent": "browser",
+      "status": 200,
+      "cache": "MISS",
+      "age": null,
+      "type": "text/plain",
+      "cfRay": "a4dd29c01bea2ab9-LAX",
+      "body": "User-Agent: *\nAllow: /\nDisallow: /api/\n\nUser-Agent: OAI-SearchBot\nAllow: /\nDisallow: /api/\n\nSitemap: https://homeoffice.madabase.com/sitemap.xml\n",
+      "passed": true
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "agent": "inspection-tool-header",
+      "status": 200,
+      "cache": "HIT",
+      "age": "0",
+      "type": "text/plain",
+      "cfRay": "a4dd29c7ca962ab9-LAX",
+      "body": "User-Agent: *\nAllow: /\nDisallow: /api/\n\nUser-Agent: OAI-SearchBot\nAllow: /\nDisallow: /api/\n\nSitemap: https://homeoffice.madabase.com/sitemap.xml\n",
+      "passed": true
+    },
+    {
+      "host": "network.madabase.com",
+      "agent": "browser",
+      "status": 200,
+      "cache": "UPDATING",
+      "age": "24410",
+      "type": "text/plain",
+      "cfRay": "a4dd29d5faa80c45-LAX",
+      "body": "User-Agent: *\nAllow: /\nDisallow: /api/\n\nUser-Agent: OAI-SearchBot\nAllow: /\nDisallow: /api/\n\nSitemap: https://network.madabase.com/sitemap.xml\n",
+      "passed": true
+    },
+    {
+      "host": "network.madabase.com",
+      "agent": "inspection-tool-header",
+      "status": 200,
+      "cache": "UPDATING",
+      "age": "24410",
+      "type": "text/plain",
+      "cfRay": "a4dd29d83acc0c45-LAX",
+      "body": "User-Agent: *\nAllow: /\nDisallow: /api/\n\nUser-Agent: OAI-SearchBot\nAllow: /\nDisallow: /api/\n\nSitemap: https://network.madabase.com/sitemap.xml\n",
+      "passed": true
+    },
+    {
+      "host": "smarthome.madabase.com",
+      "agent": "browser",
+      "status": 200,
+      "cache": "UPDATING",
+      "age": "25578",
+      "type": "text/plain",
+      "cfRay": "a4dd29e59be1cb9a-LAX",
+      "body": "User-Agent: *\nAllow: /\nDisallow: /api/\n\nUser-Agent: OAI-SearchBot\nAllow: /\nDisallow: /api/\n\nSitemap: https://smarthome.madabase.com/sitemap.xml\n",
+      "passed": true
+    },
+    {
+      "host": "smarthome.madabase.com",
+      "agent": "inspection-tool-header",
+      "status": 200,
+      "cache": "UPDATING",
+      "age": "25579",
+      "type": "text/plain",
+      "cfRay": "a4dd29e7c8becb9a-LAX",
+      "body": "User-Agent: *\nAllow: /\nDisallow: /api/\n\nUser-Agent: OAI-SearchBot\nAllow: /\nDisallow: /api/\n\nSitemap: https://smarthome.madabase.com/sitemap.xml\n",
+      "passed": true
+    },
+    {
+      "host": "madabase.com",
+      "agent": "browser",
+      "status": 200,
+      "cache": "MISS",
+      "age": null,
+      "type": "text/plain",
+      "cfRay": "a4dd29fd9a07c695-LAX",
+      "body": "User-Agent: *\nAllow: /\n\nUser-Agent: OAI-SearchBot\nAllow: /\n\nHost: https://madabase.com\nSitemap: https://madabase.com/sitemap.xml\n",
+      "passed": true
+    },
+    {
+      "host": "madabase.com",
+      "agent": "inspection-tool-header",
+      "status": 200,
+      "cache": "HIT",
+      "age": "0",
+      "type": "text/plain",
+      "cfRay": "a4dd2a03be1dc695-LAX",
+      "body": "User-Agent: *\nAllow: /\n\nUser-Agent: OAI-SearchBot\nAllow: /\n\nHost: https://madabase.com\nSitemap: https://madabase.com/sitemap.xml\n",
+      "passed": true
+    }
+  ],
+  "validationNote": "Robots directives are case insensitive; initial probe matched User-agent instead of returned User-Agent. Corrected validation against the recorded unchanged HTTP bodies."
+}

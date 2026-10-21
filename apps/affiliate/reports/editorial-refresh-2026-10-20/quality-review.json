@@ -88,7 +88,14 @@
       "acceptedHosts": 4,
       "response": "HTTP 200 for all four hosts; submission acceptance is not indexing or ranking evidence"
     },
-    "protectedRedirectTargets": 11
+    "protectedRedirectTargets": 11,
+    "searchPlatformFollowup": {
+      "report": "search-notification-final.json",
+      "googleSitemapSuccess": 4,
+      "bingSitemapSuccess": 3,
+      "bingSitemapProcessing": 1,
+      "individualGoogleUrlIndexingAccepted": false
+    }
   },
   "reviewWindows": {
     "day7": "2026-10-28T10:53:49.193289+08:00",

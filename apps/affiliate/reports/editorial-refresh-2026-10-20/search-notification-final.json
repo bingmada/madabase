@@ -1,0 +1,41 @@
+{
+  "completedAt": "2026-10-21T11:41:07.220241+08:00",
+  "releaseRevision": "b627cf911f4542922ed16ffd98f4cb6a00cbd317",
+  "originalReleaseNotification": "IndexNow only; this follow-up completed Google and Bing sitemap notifications.",
+  "google": {
+    "sitemapsSubmitted": 4,
+    "sitemapsReadSuccessfullyOnOctober21": 4,
+    "urls": [
+      "https://homeoffice.madabase.com/sitemap.xml",
+      "https://network.madabase.com/sitemap.xml",
+      "https://smarthome.madabase.com/sitemap.xml",
+      "https://madabase.com/sitemap.xml"
+    ],
+    "source": "google-sitemaps-20261021.json",
+    "temporaryFailure": "Homeoffice first showed a generic sitemap HTTP error; the first individual-URL live test reported Robots.txt unreachable. Robots recrawl was requested; Google subsequently read the sitemap successfully and discovered252URLs.",
+    "individualUrlRequestAccepted": false,
+    "individualUrlRequestLimit": "The subsequent individual URL request failed when the Google reCAPTCHA service could not be reached. No CAPTCHA was solved and no claim of a queued individual indexing request is made."
+  },
+  "bing": {
+    "source": "bing-sitemaps-20261021.json",
+    "successfulCrawlsToday": [
+      "homeoffice.madabase.com",
+      "network.madabase.com",
+      "smarthome.madabase.com"
+    ],
+    "processing": [
+      "madabase.com"
+    ]
+  },
+  "indexNow": {
+    "acceptedUrls": 12,
+    "acceptedHosts": 4,
+    "status": 200,
+    "source": "indexnow-submission.json"
+  },
+  "interpretation": "Submission acceptance and successful sitemap retrieval do not establish page indexing or rankings.",
+  "officialReferences": [
+    "https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl",
+    "https://www.bing.com/webmasters/help/URL-Submission-62f2860b"
+  ]
+}

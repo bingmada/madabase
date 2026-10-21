@@ -1,0 +1,37 @@
+{
+  "checkedAt": "2026-10-21T03:38:51.468Z",
+  "sitemaps": [
+    {
+      "url": "https://homeoffice.madabase.com/sitemap.xml",
+      "accepted": true,
+      "row": "https://homeoffice.madabase.com/sitemap.xml\tSitemap\tOct 21, 2026\tOct 21, 2026\tSuccess\t252\t0\t"
+    },
+    {
+      "url": "https://network.madabase.com/sitemap.xml",
+      "accepted": true,
+      "row": "https://network.madabase.com/sitemap.xml\tSitemap\tOct 21, 2026\tOct 21, 2026\tSuccess\t185\t0\t"
+    },
+    {
+      "url": "https://smarthome.madabase.com/sitemap.xml",
+      "accepted": true,
+      "row": "https://smarthome.madabase.com/sitemap.xml\tSitemap\tOct 21, 2026\tOct 21, 2026\tSuccess\t258\t0\t"
+    },
+    {
+      "url": "https://madabase.com/sitemap.xml",
+      "accepted": true,
+      "row": "https://madabase.com/sitemap.xml\tSitemap\tOct 21, 2026\tOct 21, 2026\tSuccess\t13\t0\t"
+    }
+  ],
+  "robots": {
+    "url": "https://homeoffice.madabase.com/robots.txt",
+    "googleReport": "Fetched on October 21 at 11:23 AM,145bytes,no issues",
+    "recrawlRequest": "Recrawl request sent"
+  },
+  "manualUrlRequest": {
+    "url": "https://homeoffice.madabase.com/guides/caldigit-ts4-vs-ts5-vs-ts5-plus",
+    "accepted": false,
+    "firstAttempt": "Indexing request rejected: Robots.txt unreachable",
+    "secondAttempt": "Google reported a submission error and inability to connect to reCAPTCHA service"
+  },
+  "note": "Sitemap submission, sitemap fetch, URL submission and indexing are separate outcomes."
+}

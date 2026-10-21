@@ -1,0 +1,21 @@
+{
+  "checkedAt": "2026-10-21T03:35:53.141Z",
+  "rows": [
+    {
+      "url": "https://homeoffice.madabase.com/sitemap.xml",
+      "row": "\nhttps://homeoffice.madabase.com/sitemap.xml\nSitemap\n\n\n10/19/2026\nSubmitted\n10/21/2026\nSuccess\n252\n"
+    },
+    {
+      "url": "https://network.madabase.com/sitemap.xml",
+      "row": "\nhttps://network.madabase.com/sitemap.xml\nSitemap\n\n\n10/19/2026\nSubmitted\n10/21/2026\nSuccess\n185\n"
+    },
+    {
+      "url": "https://smarthome.madabase.com/sitemap.xml",
+      "row": "\nhttps://smarthome.madabase.com/sitemap.xml\nSitemap\n\n\n10/21/2026\nSubmitted\n10/21/2026\nSuccess\n258\n"
+    },
+    {
+      "url": "https://madabase.com/sitemap.xml",
+      "row": "\nhttps://madabase.com/sitemap.xml\nSitemap\n\n\n10/21/2026\nSubmitted\n10/18/2026\nProcessing\n13\n"
+    }
+  ]
+}

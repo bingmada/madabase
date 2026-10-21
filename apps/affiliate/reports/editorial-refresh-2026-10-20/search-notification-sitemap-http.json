@@ -1,0 +1,102 @@
+{
+  "checkedAt": "2026-10-21T03:21:38.367Z",
+  "scope": "Public HTTP only; a Googlebot User-Agent is not proof of verified Google infrastructure access",
+  "rows": [
+    {
+      "url": "https://homeoffice.madabase.com/sitemap.xml",
+      "userAgent": "Mozilla/5.0 Chrome/140.0.0.0 Safari/537.36",
+      "status": 200,
+      "type": "application/xml",
+      "cache": "DYNAMIC",
+      "xRobotsTag": null,
+      "bytes": 51149,
+      "urlCount": 252,
+      "containsNewGuides": true,
+      "passed": true
+    },
+    {
+      "url": "https://homeoffice.madabase.com/sitemap.xml",
+      "userAgent": "Googlebot",
+      "status": 200,
+      "type": "application/xml",
+      "cache": "DYNAMIC",
+      "xRobotsTag": null,
+      "bytes": 51149,
+      "urlCount": 252,
+      "containsNewGuides": true,
+      "passed": true
+    },
+    {
+      "url": "https://network.madabase.com/sitemap.xml",
+      "userAgent": "Mozilla/5.0 Chrome/140.0.0.0 Safari/537.36",
+      "status": 200,
+      "type": "application/xml",
+      "cache": "DYNAMIC",
+      "xRobotsTag": null,
+      "bytes": 36032,
+      "urlCount": 185,
+      "containsNewGuides": null,
+      "passed": true
+    },
+    {
+      "url": "https://network.madabase.com/sitemap.xml",
+      "userAgent": "Googlebot",
+      "status": 200,
+      "type": "application/xml",
+      "cache": "DYNAMIC",
+      "xRobotsTag": null,
+      "bytes": 36032,
+      "urlCount": 185,
+      "containsNewGuides": null,
+      "passed": true
+    },
+    {
+      "url": "https://smarthome.madabase.com/sitemap.xml",
+      "userAgent": "Mozilla/5.0 Chrome/140.0.0.0 Safari/537.36",
+      "status": 200,
+      "type": "application/xml",
+      "cache": "DYNAMIC",
+      "xRobotsTag": null,
+      "bytes": 52201,
+      "urlCount": 258,
+      "containsNewGuides": null,
+      "passed": true
+    },
+    {
+      "url": "https://smarthome.madabase.com/sitemap.xml",
+      "userAgent": "Googlebot",
+      "status": 200,
+      "type": "application/xml",
+      "cache": "DYNAMIC",
+      "xRobotsTag": null,
+      "bytes": 52201,
+      "urlCount": 258,
+      "containsNewGuides": null,
+      "passed": true
+    },
+    {
+      "url": "https://madabase.com/sitemap.xml",
+      "userAgent": "Mozilla/5.0 Chrome/140.0.0.0 Safari/537.36",
+      "status": 200,
+      "type": "application/xml",
+      "cache": "DYNAMIC",
+      "xRobotsTag": null,
+      "bytes": 2229,
+      "urlCount": 13,
+      "containsNewGuides": null,
+      "passed": true
+    },
+    {
+      "url": "https://madabase.com/sitemap.xml",
+      "userAgent": "Googlebot",
+      "status": 200,
+      "type": "application/xml",
+      "cache": "DYNAMIC",
+      "xRobotsTag": null,
+      "bytes": 2229,
+      "urlCount": 13,
+      "containsNewGuides": null,
+      "passed": true
+    }
+  ]
+}
