@@ -1,0 +1,44 @@
+[
+  {
+    "url": "https://homeoffice.madabase.com/guides/caldigit-ts4-vs-ts5-vs-ts5-plus",
+    "documentWidth": 375,
+    "gen2": false,
+    "h1": "CalDigit TS4 vs TS5 vs TS5 Plus: Upgrade or Keep Your Dock?",
+    "width": 390
+  },
+  {
+    "url": "https://homeoffice.madabase.com/guides/insta360-link-2-vs-link-2-pro-webcam",
+    "documentWidth": 375,
+    "gen2": false,
+    "h1": "Insta360 Link 2 vs Link 2 Pro: Fixed Desk or Moving Presenter?",
+    "width": 390
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/matter-apple-google-home-assistant-feature-checklist",
+    "documentWidth": 375,
+    "gen2": false,
+    "h1": "Matter in Apple Home, Google Home and Home Assistant: Feature Checks",
+    "width": 390
+  },
+  {
+    "url": "https://network.madabase.com/guides/home-network-smart-home-outage-plan",
+    "documentWidth": 375,
+    "gen2": false,
+    "h1": "Home Network Outage Plan: Power, Local Control and Recovery",
+    "width": 390
+  },
+  {
+    "url": "https://smarthome.madabase.com/guides/renter-no-drill-smart-home-plan",
+    "documentWidth": 375,
+    "gen2": false,
+    "h1": "Renter Smart Home Plan: No-Drill Mounts and Reversible Upgrades",
+    "width": 390
+  },
+  {
+    "url": "https://homeoffice.madabase.com/compatibility/mini-pcs",
+    "documentWidth": 375,
+    "gen2": true,
+    "h1": "ThinkCentre Tiny Upgrade Planner: Models, Memory and Exact FRU Checks",
+    "width": 390
+  }
+]

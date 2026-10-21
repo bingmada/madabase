@@ -294,7 +294,7 @@
   },
   "editorialExpansion20261020": {
     "authorization": "Owner explicitly requested fixing all identified problems and completing all seven proposed directions on 2026-10-20, then directed staged execution with quality taking priority. This supersedes earlier blanket publication restrictions for this exact scope; no new skill scoring or output quota applies.",
-    "status": "implemented-awaiting-local-validation",
+    "status": "deployed-and-publicly-verified",
     "registeredGuides": [
       "homeoffice:guide:caldigit-ts4-vs-ts5-vs-ts5-plus",
       "homeoffice:guide:insta360-link-2-vs-link-2-pro-webcam",
@@ -308,6 +308,13 @@
     ],
     "newMerchants": 0,
     "newPurchaseIdentities": 0,
-    "measurement": "Treat five new guides, the model addition and the calculator as separately reviewable cohorts after actual publication. No monthly search volume, ranking or commercial result has been established."
+    "measurement": "Treat five new guides, the model addition and the calculator as separately reviewable cohorts after actual publication. No monthly search volume, ranking or commercial result has been established.",
+    "deployedRevision": "b627cf911f4542922ed16ffd98f4cb6a00cbd317",
+    "deployedAt": "2026-10-21T10:53:49.193289+08:00",
+    "publicVerification": "reports/editorial-refresh-2026-10-20/public-http.json",
+    "reviewWindows": {
+      "day7": "2026-10-28T10:53:49.193289+08:00",
+      "day28": "2026-11-18T10:53:49.193289+08:00"
+    }
   }
 }

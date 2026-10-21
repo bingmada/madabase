@@ -1,0 +1,84 @@
+{
+  "total": 11,
+  "passed": 11,
+  "scope": "Existing redirects compared with retained consolidation registry",
+  "rows": [
+    {
+      "url": "https://network.madabase.com/guides/poe-splitters-compatibility-and-fit-guide",
+      "status": 308,
+      "location": "https://network.madabase.com/guides/poe-splitters-vs-alternatives",
+      "expected": "https://network.madabase.com/guides/poe-splitters-vs-alternatives",
+      "passed": true
+    },
+    {
+      "url": "https://network.madabase.com/guides/dual-wan-routers-buying-guide",
+      "status": 308,
+      "location": "https://network.madabase.com/guides/dual-wan-routers-compatibility-and-fit-guide",
+      "expected": "https://network.madabase.com/guides/dual-wan-routers-compatibility-and-fit-guide",
+      "passed": true
+    },
+    {
+      "url": "https://network.madabase.com/guides/pcie-wifi-adapters-compatibility-and-fit-guide",
+      "status": 308,
+      "location": "https://network.madabase.com/guides/pcie-wifi-adapters-vs-alternatives",
+      "expected": "https://network.madabase.com/guides/pcie-wifi-adapters-vs-alternatives",
+      "passed": true
+    },
+    {
+      "url": "https://network.madabase.com/guides/poe-injectors-buying-guide",
+      "status": 308,
+      "location": "https://network.madabase.com/guides/poe-injectors-vs-alternatives",
+      "expected": "https://network.madabase.com/guides/poe-injectors-vs-alternatives",
+      "passed": true
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-ownership-cost-and-maintenance",
+      "status": 308,
+      "location": "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-vs-alternatives",
+      "expected": "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-vs-alternatives",
+      "passed": true
+    },
+    {
+      "url": "https://network.madabase.com/guides/direct-attach-copper-cables-compatibility-and-fit-guide",
+      "status": 308,
+      "location": "https://network.madabase.com/guides/direct-attach-copper-cables-vs-alternatives",
+      "expected": "https://network.madabase.com/guides/direct-attach-copper-cables-vs-alternatives",
+      "passed": true
+    },
+    {
+      "url": "https://network.madabase.com/guides/usb-c-ethernet-adapters-compatibility-and-fit-guide",
+      "status": 308,
+      "location": "https://network.madabase.com/guides/usb-c-ethernet-adapters-vs-alternatives",
+      "expected": "https://network.madabase.com/guides/usb-c-ethernet-adapters-vs-alternatives",
+      "passed": true
+    },
+    {
+      "url": "https://network.madabase.com/guides/powerline-network-adapters-compatibility-and-fit-guide",
+      "status": 308,
+      "location": "https://network.madabase.com/guides/powerline-network-adapters-vs-alternatives",
+      "expected": "https://network.madabase.com/guides/powerline-network-adapters-vs-alternatives",
+      "passed": true
+    },
+    {
+      "url": "https://network.madabase.com/guides/poe-injectors-compatibility-and-fit-guide",
+      "status": 308,
+      "location": "https://network.madabase.com/guides/poe-injectors-vs-alternatives",
+      "expected": "https://network.madabase.com/guides/poe-injectors-vs-alternatives",
+      "passed": true
+    },
+    {
+      "url": "https://network.madabase.com/guides/pcie-wifi-adapters-ownership-cost-and-maintenance",
+      "status": 308,
+      "location": "https://network.madabase.com/guides/pcie-wifi-adapters-vs-alternatives",
+      "expected": "https://network.madabase.com/guides/pcie-wifi-adapters-vs-alternatives",
+      "passed": true
+    },
+    {
+      "url": "https://network.madabase.com/guides/sfp-plus-transceivers-ownership-cost-and-maintenance",
+      "status": 308,
+      "location": "https://network.madabase.com/guides/sfp-plus-transceivers-compatibility-and-fit-guide",
+      "expected": "https://network.madabase.com/guides/sfp-plus-transceivers-compatibility-and-fit-guide",
+      "passed": true
+    }
+  ]
+}

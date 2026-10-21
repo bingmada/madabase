@@ -1,0 +1,134 @@
+{
+  "checkedAt": "2026-10-21T02:57:48.396634+00:00",
+  "rows": [
+    {
+      "host": "madabase.com",
+      "passes": [
+        {
+          "status": 200,
+          "cache": "DYNAMIC",
+          "type": "text/x-component"
+        },
+        {
+          "status": 200,
+          "cache": "DYNAMIC",
+          "type": "text/x-component"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "passes": [
+        {
+          "status": 200,
+          "cache": "DYNAMIC",
+          "type": "text/x-component"
+        },
+        {
+          "status": 200,
+          "cache": "DYNAMIC",
+          "type": "text/x-component"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "host": "network.madabase.com",
+      "passes": [
+        {
+          "status": 200,
+          "cache": "DYNAMIC",
+          "type": "text/x-component"
+        },
+        {
+          "status": 200,
+          "cache": "DYNAMIC",
+          "type": "text/x-component"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "host": "smarthome.madabase.com",
+      "passes": [
+        {
+          "status": 200,
+          "cache": "DYNAMIC",
+          "type": "text/x-component"
+        },
+        {
+          "status": 200,
+          "cache": "DYNAMIC",
+          "type": "text/x-component"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "host": "baby.madabase.com",
+      "passes": [
+        {
+          "status": 200,
+          "cache": "DYNAMIC",
+          "type": "text/x-component"
+        },
+        {
+          "status": 200,
+          "cache": "DYNAMIC",
+          "type": "text/x-component"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "host": "pets.madabase.com",
+      "passes": [
+        {
+          "status": 200,
+          "cache": "DYNAMIC",
+          "type": "text/x-component"
+        },
+        {
+          "status": 200,
+          "cache": "DYNAMIC",
+          "type": "text/x-component"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "host": "style.madabase.com",
+      "passes": [
+        {
+          "status": 200,
+          "cache": "DYNAMIC",
+          "type": "text/x-component"
+        },
+        {
+          "status": 200,
+          "cache": "DYNAMIC",
+          "type": "text/x-component"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "host": "costumes.madabase.com",
+      "passes": [
+        {
+          "status": 200,
+          "cache": "DYNAMIC",
+          "type": "text/x-component"
+        },
+        {
+          "status": 200,
+          "cache": "DYNAMIC",
+          "type": "text/x-component"
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true
+}

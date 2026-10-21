@@ -1,0 +1,4103 @@
+{
+  "checkedAt": "2026-10-21T02:59:32.068870+00:00",
+  "mode": "after",
+  "scope": "Plain public canonical GETs, no click writes or merchant requests",
+  "total": 366,
+  "passed": 312,
+  "rows": [
+    {
+      "url": "https://network.madabase.com/guides/xfinity-gateway-bridge-mode-vs-own-router-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/xfinity-gateway-bridge-mode-vs-own-router-guide",
+      "canonical": "https://network.madabase.com/guides/xfinity-gateway-bridge-mode-vs-own-router-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "731",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/best/aqara-u400-vs-u100",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/best/aqara-u400-vs-u100",
+      "canonical": "https://smarthome.madabase.com/best/aqara-u400-vs-u100",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "731",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://baby.madabase.com/guides/table-booster-seats-safety-and-skip-guide",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/guides/table-booster-seats-safety-and-skip-guide",
+      "canonical": "https://baby.madabase.com/guides/table-booster-seats-safety-and-skip-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "727",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/guides/aqara-hub-m3-home-assistant-matter-guide",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/guides/aqara-hub-m3-home-assistant-matter-guide",
+      "canonical": "https://smarthome.madabase.com/guides/aqara-hub-m3-home-assistant-matter-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "729",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/deco-be63-vs-be67-vs-be85-buying-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/deco-be63-vs-be67-vs-be85-buying-guide",
+      "canonical": "https://network.madabase.com/guides/deco-be63-vs-be67-vs-be85-buying-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "726",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/reviews/monoprice-slimrun-cat6a-ethernet-patch-cable",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/reviews/monoprice-slimrun-cat6a-ethernet-patch-cable",
+      "canonical": "https://network.madabase.com/reviews/monoprice-slimrun-cat6a-ethernet-patch-cable",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "726",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://smarthome.madabase.com/best/aqara-vs-govee-vs-xsense-vs-yolink-leak-sensors",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/best/aqara-vs-govee-vs-xsense-vs-yolink-leak-sensors",
+      "canonical": "https://smarthome.madabase.com/best/aqara-vs-govee-vs-xsense-vs-yolink-leak-sensors",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "723",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/guides/tapo-p125m-vs-p110m",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/guides/tapo-p125m-vs-p110m",
+      "canonical": "https://smarthome.madabase.com/guides/tapo-p125m-vs-p110m",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "724",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/reviews/tp-link-tl-sg105-m2-2-5g-switch",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/reviews/tp-link-tl-sg105-m2-2-5g-switch",
+      "canonical": "https://network.madabase.com/reviews/tp-link-tl-sg105-m2-2-5g-switch",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "270",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/guides/deco-be63-be67-two-pack-vs-three-pack",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/deco-be63-be67-two-pack-vs-three-pack",
+      "canonical": "https://network.madabase.com/guides/deco-be63-be67-two-pack-vs-three-pack",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "722",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/best/deco-be85-vs-be67",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/best/deco-be85-vs-be67",
+      "canonical": "https://network.madabase.com/best/deco-be85-vs-be67",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "721",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/guides/eufy-e340-local-storage-and-homebase-guide",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/guides/eufy-e340-local-storage-and-homebase-guide",
+      "canonical": "https://smarthome.madabase.com/guides/eufy-e340-local-storage-and-homebase-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "718",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://baby.madabase.com/guides/ergobaby-omni-breeze-positions-by-age",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/guides/ergobaby-omni-breeze-positions-by-age",
+      "canonical": "https://baby.madabase.com/guides/ergobaby-omni-breeze-positions-by-age",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "715",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/reviews/tp-link-deco-be25-wifi-7-mesh",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/reviews/tp-link-deco-be25-wifi-7-mesh",
+      "canonical": "https://network.madabase.com/reviews/tp-link-deco-be25-wifi-7-mesh",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "712",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/reviews/netgear-gs308e-gigabit-switch",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/reviews/netgear-gs308e-gigabit-switch",
+      "canonical": "https://network.madabase.com/reviews/netgear-gs308e-gigabit-switch",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "711",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/best/arris-s33-vs-motorola-mb8611-vs-hitron-coda56",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/best/arris-s33-vs-motorola-mb8611-vs-hitron-coda56",
+      "canonical": "https://network.madabase.com/best/arris-s33-vs-motorola-mb8611-vs-hitron-coda56",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "707",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/poe-splitters-compatibility-and-fit-guide",
+      "status": 308,
+      "finalUrl": "https://network.madabase.com/guides/poe-splitters-compatibility-and-fit-guide",
+      "canonical": "https://network.madabase.com/guides/poe-splitters-vs-alternatives",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "704",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://costumes.madabase.com/products/woochie-fx-dark-lord-foam-latex-prosthetic--qtrtcu",
+      "status": 200,
+      "finalUrl": "https://costumes.madabase.com/products/woochie-fx-dark-lord-foam-latex-prosthetic--qtrtcu",
+      "canonical": "https://costumes.madabase.com/products/woochie-fx-dark-lord-foam-latex-prosthetic--qtrtcu",
+      "noindex": false,
+      "cache": "BYPASS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/reviews/ultraloq-bolt-se-smart-lock",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/reviews/ultraloq-bolt-se-smart-lock",
+      "canonical": "https://smarthome.madabase.com/reviews/ultraloq-bolt-se-smart-lock",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "704",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/guides/wifi-7-device-compatibility-checklist",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/wifi-7-device-compatibility-checklist",
+      "canonical": "https://network.madabase.com/guides/wifi-7-device-compatibility-checklist",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "701",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/reviews/tp-link-deco-be63-wifi-7-mesh",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/reviews/tp-link-deco-be63-wifi-7-mesh",
+      "canonical": "https://network.madabase.com/reviews/tp-link-deco-be63-wifi-7-mesh",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "701",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://baby.madabase.com/guides/toddler-learning-towers-buying-guide",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/guides/toddler-learning-towers-buying-guide",
+      "canonical": "https://baby.madabase.com/guides/toddler-learning-towers-buying-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "699",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/dual-wan-routers-buying-guide",
+      "status": 308,
+      "finalUrl": "https://network.madabase.com/guides/dual-wan-routers-buying-guide",
+      "canonical": "https://network.madabase.com/guides/dual-wan-routers-compatibility-and-fit-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "700",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://baby.madabase.com/guides/stroller-fans-buying-guide",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/guides/stroller-fans-buying-guide",
+      "canonical": "https://baby.madabase.com/guides/stroller-fans-buying-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "698",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/usb-c-ethernet-adapter-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/usb-c-ethernet-adapter-guide",
+      "canonical": "https://network.madabase.com/guides/usb-c-ethernet-adapter-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "698",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/best/deco-be25-vs-be63",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/best/deco-be25-vs-be63",
+      "canonical": "https://network.madabase.com/best/deco-be25-vs-be63",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "695",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/pcie-wifi-adapters-compatibility-and-fit-guide",
+      "status": 308,
+      "finalUrl": "https://network.madabase.com/guides/pcie-wifi-adapters-compatibility-and-fit-guide",
+      "canonical": "https://network.madabase.com/guides/pcie-wifi-adapters-vs-alternatives",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "695",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/ethernet-stuck-at-100-mbps-guide",
+      "passed": false,
+      "error": "The read operation timed out"
+    },
+    {
+      "url": "https://network.madabase.com/guides/wired-vs-wireless-mesh-backhaul-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/wired-vs-wireless-mesh-backhaul-guide",
+      "canonical": "https://network.madabase.com/guides/wired-vs-wireless-mesh-backhaul-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "695",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/ethernet-network-interface-cards-vs-alternatives",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/ethernet-network-interface-cards-vs-alternatives",
+      "canonical": "https://network.madabase.com/guides/ethernet-network-interface-cards-vs-alternatives",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "692",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/rackmount-power-distribution-units-buying-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/rackmount-power-distribution-units-buying-guide",
+      "canonical": "https://network.madabase.com/guides/rackmount-power-distribution-units-buying-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "690",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/guides/smart-lock-door-fit-hub-compatibility",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/guides/smart-lock-door-fit-hub-compatibility",
+      "canonical": "https://smarthome.madabase.com/guides/smart-lock-door-fit-hub-compatibility",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "690",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/momcozy-purehug-baby-carrier",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/reviews/momcozy-purehug-baby-carrier",
+      "canonical": "https://baby.madabase.com/reviews/momcozy-purehug-baby-carrier",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "689",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://smarthome.madabase.com/guides/smart-ceiling-lights-buying-guide",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/guides/smart-ceiling-lights-buying-guide",
+      "canonical": "https://smarthome.madabase.com/guides/smart-ceiling-lights-buying-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "688",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/reviews/tapo-p125m-matter-smart-plug",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/reviews/tapo-p125m-matter-smart-plug",
+      "canonical": "https://smarthome.madabase.com/reviews/tapo-p125m-matter-smart-plug",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "686",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/guides/deco-be63-ethernet-backhaul-setup",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/deco-be63-ethernet-backhaul-setup",
+      "canonical": "https://network.madabase.com/guides/deco-be63-ethernet-backhaul-setup",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "683",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://costumes.madabase.com/guides/costume-rental-vs-buying-guide",
+      "status": 200,
+      "finalUrl": "https://costumes.madabase.com/guides/costume-rental-vs-buying-guide",
+      "canonical": "https://costumes.madabase.com/guides/costume-rental-vs-buying-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "680",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/structured-media-enclosures-buying-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/structured-media-enclosures-buying-guide",
+      "canonical": "https://network.madabase.com/guides/structured-media-enclosures-buying-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "679",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/guides/smart-irrigation-controllers-compatibility-and-fit-guide",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/guides/smart-irrigation-controllers-compatibility-and-fit-guide",
+      "canonical": "https://smarthome.madabase.com/guides/smart-irrigation-controllers-compatibility-and-fit-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "676",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/reviews/huanuo-titanlift-heavy-duty-monitor-arm",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/reviews/huanuo-titanlift-heavy-duty-monitor-arm",
+      "canonical": "https://homeoffice.madabase.com/reviews/huanuo-titanlift-heavy-duty-monitor-arm",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "672",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://smarthome.madabase.com/guides/aqara-hub-m3-matter-thread-setup",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/guides/aqara-hub-m3-matter-thread-setup",
+      "canonical": "https://smarthome.madabase.com/guides/aqara-hub-m3-matter-thread-setup",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "670",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/pass-through-ethernet-crimping-tools-buying-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/pass-through-ethernet-crimping-tools-buying-guide",
+      "canonical": "https://network.madabase.com/guides/pass-through-ethernet-crimping-tools-buying-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "669",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/reviews/arris-surfboard-s33-cable-modem",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/reviews/arris-surfboard-s33-cable-modem",
+      "canonical": "https://network.madabase.com/reviews/arris-surfboard-s33-cable-modem",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "668",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/guides/poe-injectors-buying-guide",
+      "status": 308,
+      "finalUrl": "https://network.madabase.com/guides/poe-injectors-buying-guide",
+      "canonical": "https://network.madabase.com/guides/poe-injectors-vs-alternatives",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "667",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/usb-c-dock-vs-monitor-hub-guide",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/guides/usb-c-dock-vs-monitor-hub-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/usb-c-dock-vs-monitor-hub-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "667",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/adjustable-laptop-stands-compatibility-and-fit-guide",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/guides/adjustable-laptop-stands-compatibility-and-fit-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/adjustable-laptop-stands-compatibility-and-fit-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "666",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-ownership-cost-and-maintenance",
+      "status": 308,
+      "finalUrl": "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-ownership-cost-and-maintenance",
+      "canonical": "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-vs-alternatives",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "664",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/five-g-home-internet-gateways-compatibility-and-fit-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/five-g-home-internet-gateways-compatibility-and-fit-guide",
+      "canonical": "https://network.madabase.com/guides/five-g-home-internet-gateways-compatibility-and-fit-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "665",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://pets.madabase.com/guides/air-purifier-placement-near-litter-box",
+      "status": 200,
+      "finalUrl": "https://pets.madabase.com/guides/air-purifier-placement-near-litter-box",
+      "canonical": "https://pets.madabase.com/guides/air-purifier-placement-near-litter-box",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "663",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://baby.madabase.com/guides/diaper-caddies-buying-guide",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/guides/diaper-caddies-buying-guide",
+      "canonical": "https://baby.madabase.com/guides/diaper-caddies-buying-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "662",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://baby.madabase.com/guides/ergobaby-omni-breeze-cleaning-guide",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/guides/ergobaby-omni-breeze-cleaning-guide",
+      "canonical": "https://baby.madabase.com/guides/ergobaby-omni-breeze-cleaning-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "662",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/deco-be63-multigig-ports-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/deco-be63-multigig-ports-guide",
+      "canonical": "https://network.madabase.com/guides/deco-be63-multigig-ports-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "661",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/poe-switch-power-budget-calculator-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/poe-switch-power-budget-calculator-guide",
+      "canonical": "https://network.madabase.com/guides/poe-switch-power-budget-calculator-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "660",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/reviews/jadaol-cat6-flat-ethernet-cable",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/reviews/jadaol-cat6-flat-ethernet-cable",
+      "canonical": "https://network.madabase.com/reviews/jadaol-cat6-flat-ethernet-cable",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "660",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/guides/point-to-point-wireless-bridges-vs-alternatives",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/point-to-point-wireless-bridges-vs-alternatives",
+      "canonical": "https://network.madabase.com/guides/point-to-point-wireless-bridges-vs-alternatives",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "659",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://baby.madabase.com/guides/structured-diaper-bags-buying-guide",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/guides/structured-diaper-bags-buying-guide",
+      "canonical": "https://baby.madabase.com/guides/structured-diaper-bags-buying-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "657",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/wireless-presentation-clickers-buying-guide",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/guides/wireless-presentation-clickers-buying-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/wireless-presentation-clickers-buying-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "658",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/48-vs-55-inch-desk-guide",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/guides/48-vs-55-inch-desk-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/48-vs-55-inch-desk-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "656",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/guides/tapo-p110m-home-assistant-energy-monitoring",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/guides/tapo-p110m-home-assistant-energy-monitoring",
+      "canonical": "https://smarthome.madabase.com/guides/tapo-p110m-home-assistant-energy-monitoring",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "656",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/reviews/tapo-d210-video-doorbell",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/reviews/tapo-d210-video-doorbell",
+      "canonical": "https://smarthome.madabase.com/reviews/tapo-d210-video-doorbell",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "655",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/portable-monitor-usb-c-dp-alt-mode-displaylink-guide",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/guides/portable-monitor-usb-c-dp-alt-mode-displaylink-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/portable-monitor-usb-c-dp-alt-mode-displaylink-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "655",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/reviews/eufy-video-doorbell-e340",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/reviews/eufy-video-doorbell-e340",
+      "canonical": "https://smarthome.madabase.com/reviews/eufy-video-doorbell-e340",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "654",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://pets.madabase.com/guides/automatic-feeder-portion-size-guide",
+      "status": 200,
+      "finalUrl": "https://pets.madabase.com/guides/automatic-feeder-portion-size-guide",
+      "canonical": "https://pets.madabase.com/guides/automatic-feeder-portion-size-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "654",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/reviews/hitron-coda56-cable-modem",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/reviews/hitron-coda56-cable-modem",
+      "canonical": "https://network.madabase.com/reviews/hitron-coda56-cable-modem",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "653",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://smarthome.madabase.com/reviews/aqara-hub-m3",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/reviews/aqara-hub-m3",
+      "canonical": "https://smarthome.madabase.com/reviews/aqara-hub-m3",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "653",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/de-de",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/de-de",
+      "canonical": "https://network.madabase.com/de-de",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "652",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/direct-attach-copper-cables-compatibility-and-fit-guide",
+      "status": 308,
+      "finalUrl": "https://network.madabase.com/guides/direct-attach-copper-cables-compatibility-and-fit-guide",
+      "canonical": "https://network.madabase.com/guides/direct-attach-copper-cables-vs-alternatives",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "649",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/rj45-modular-plugs-buying-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/rj45-modular-plugs-buying-guide",
+      "canonical": "https://network.madabase.com/guides/rj45-modular-plugs-buying-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "649",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/thunderbolt-kvm-docks-buying-guide",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/guides/thunderbolt-kvm-docks-buying-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/thunderbolt-kvm-docks-buying-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "649",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/reviews/amazon-eero-6-mesh-wifi-system",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/reviews/amazon-eero-6-mesh-wifi-system",
+      "canonical": "https://network.madabase.com/reviews/amazon-eero-6-mesh-wifi-system",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "648",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/guides/deco-mesh-connection-drops-troubleshooting",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/deco-mesh-connection-drops-troubleshooting",
+      "canonical": "https://network.madabase.com/guides/deco-mesh-connection-drops-troubleshooting",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "644",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://baby.madabase.com/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
+      "canonical": "https://baby.madabase.com/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "645",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/usb-c-ethernet-adapters-compatibility-and-fit-guide",
+      "status": 308,
+      "finalUrl": "https://network.madabase.com/guides/usb-c-ethernet-adapters-compatibility-and-fit-guide",
+      "canonical": "https://network.madabase.com/guides/usb-c-ethernet-adapters-vs-alternatives",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "643",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://pets.madabase.com/reviews/neakasa-m1-plus-self-cleaning-litter-box",
+      "status": 200,
+      "finalUrl": "https://pets.madabase.com/reviews/neakasa-m1-plus-self-cleaning-litter-box",
+      "canonical": "https://pets.madabase.com/reviews/neakasa-m1-plus-self-cleaning-litter-box",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "644",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://baby.madabase.com/best/dr-browns-vs-baby-brezza-sterilizer-dryer",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/best/dr-browns-vs-baby-brezza-sterilizer-dryer",
+      "canonical": "https://baby.madabase.com/best/dr-browns-vs-baby-brezza-sterilizer-dryer",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "643",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/ultrawide-office-monitors-ownership-cost-and-maintenance",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/guides/ultrawide-office-monitors-ownership-cost-and-maintenance",
+      "canonical": "https://homeoffice.madabase.com/guides/ultrawide-office-monitors-ownership-cost-and-maintenance",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "642",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/hardware-firewall-appliances-vs-alternatives",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/hardware-firewall-appliances-vs-alternatives",
+      "canonical": "https://network.madabase.com/guides/hardware-firewall-appliances-vs-alternatives",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "639",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/usb-wifi-adapters-buying-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/usb-wifi-adapters-buying-guide",
+      "canonical": "https://network.madabase.com/guides/usb-wifi-adapters-buying-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "640",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/2-5gbe-home-network-upgrade-checklist",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/2-5gbe-home-network-upgrade-checklist",
+      "canonical": "https://network.madabase.com/guides/2-5gbe-home-network-upgrade-checklist",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "638",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/ergobaby-omni-breeze-carrier",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/reviews/ergobaby-omni-breeze-carrier",
+      "canonical": "https://baby.madabase.com/reviews/ergobaby-omni-breeze-carrier",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "638",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/guides/is-wifi-7-worth-it-for-1gbps-internet",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/is-wifi-7-worth-it-for-1gbps-internet",
+      "canonical": "https://network.madabase.com/guides/is-wifi-7-worth-it-for-1gbps-internet",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "636",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://baby.madabase.com/guides/hardware-mounted-baby-gates-safety-and-skip-guide",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/guides/hardware-mounted-baby-gates-safety-and-skip-guide",
+      "canonical": "https://baby.madabase.com/guides/hardware-mounted-baby-gates-safety-and-skip-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "636",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/best/best-tapo-matter-smart-plug-for-energy-or-compact-control",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/best/best-tapo-matter-smart-plug-for-energy-or-compact-control",
+      "canonical": "https://smarthome.madabase.com/best/best-tapo-matter-smart-plug-for-energy-or-compact-control",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "634",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/powerline-network-adapters-compatibility-and-fit-guide",
+      "status": 308,
+      "finalUrl": "https://network.madabase.com/guides/powerline-network-adapters-compatibility-and-fit-guide",
+      "canonical": "https://network.madabase.com/guides/powerline-network-adapters-vs-alternatives",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "633",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/poe-injectors-compatibility-and-fit-guide",
+      "status": 308,
+      "finalUrl": "https://network.madabase.com/guides/poe-injectors-compatibility-and-fit-guide",
+      "canonical": "https://network.madabase.com/guides/poe-injectors-vs-alternatives",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "632",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/reduce-monitor-wobble-walking-desk",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/guides/reduce-monitor-wobble-walking-desk",
+      "canonical": "https://homeoffice.madabase.com/guides/reduce-monitor-wobble-walking-desk",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "633",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://pets.madabase.com/reviews/catit-flower-cat-water-fountain",
+      "status": 200,
+      "finalUrl": "https://pets.madabase.com/reviews/catit-flower-cat-water-fountain",
+      "canonical": "https://pets.madabase.com/reviews/catit-flower-cat-water-fountain",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "630",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://baby.madabase.com/guides/infant-car-seats-safety-and-skip-guide",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/guides/infant-car-seats-safety-and-skip-guide",
+      "canonical": "https://baby.madabase.com/guides/infant-car-seats-safety-and-skip-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "629",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://baby.madabase.com/guides/adjustable-high-chairs-vs-alternatives",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/guides/adjustable-high-chairs-vs-alternatives",
+      "canonical": "https://baby.madabase.com/guides/adjustable-high-chairs-vs-alternatives",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "628",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/guides/smart-blind-motor-hub-local-control-guide",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/guides/smart-blind-motor-hub-local-control-guide",
+      "canonical": "https://smarthome.madabase.com/guides/smart-blind-motor-hub-local-control-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "629",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/reviews/caldigit-ts4-thunderbolt-dock",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/reviews/caldigit-ts4-thunderbolt-dock",
+      "canonical": "https://homeoffice.madabase.com/reviews/caldigit-ts4-thunderbolt-dock",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "626",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://smarthome.madabase.com/best/aqara-fp300-vs-fp2",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/best/aqara-fp300-vs-fp2",
+      "canonical": "https://smarthome.madabase.com/best/aqara-fp300-vs-fp2",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "625",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/tools/matter-thread-compatibility-checker",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/tools/matter-thread-compatibility-checker",
+      "canonical": "https://smarthome.madabase.com/tools/matter-thread-compatibility-checker",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "623",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/mesh-wifi-node-placement-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/mesh-wifi-node-placement-guide",
+      "canonical": "https://network.madabase.com/guides/mesh-wifi-node-placement-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "624",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/guides/aqara-hub-m3-vs-m2",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/guides/aqara-hub-m3-vs-m2",
+      "canonical": "https://smarthome.madabase.com/guides/aqara-hub-m3-vs-m2",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "623",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/best/netgear-gs308e-vs-tp-link-tl-sg108",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/best/netgear-gs308e-vs-tp-link-tl-sg108",
+      "canonical": "https://network.madabase.com/best/netgear-gs308e-vs-tp-link-tl-sg108",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "621",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/monitor-arm-clamp-reinforcement-guide",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/guides/monitor-arm-clamp-reinforcement-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/monitor-arm-clamp-reinforcement-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "621",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/moca-network-adapters-vs-alternatives",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/moca-network-adapters-vs-alternatives",
+      "canonical": "https://network.madabase.com/guides/moca-network-adapters-vs-alternatives",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "620",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://costumes.madabase.com/guides/when-to-order-a-halloween-costume",
+      "status": 200,
+      "finalUrl": "https://costumes.madabase.com/guides/when-to-order-a-halloween-costume",
+      "canonical": "https://costumes.madabase.com/guides/when-to-order-a-halloween-costume",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "618",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/reviews/tapo-p110m-energy-monitoring-smart-plug",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/reviews/tapo-p110m-energy-monitoring-smart-plug",
+      "canonical": "https://smarthome.madabase.com/reviews/tapo-p110m-energy-monitoring-smart-plug",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "617",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://smarthome.madabase.com/reviews/meross-msg100-homekit-garage-door-opener",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/reviews/meross-msg100-homekit-garage-door-opener",
+      "canonical": "https://smarthome.madabase.com/reviews/meross-msg100-homekit-garage-door-opener",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "617",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/de-de/reviews/tp-link-deco-be67-wifi-7-mesh",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/de-de/reviews/tp-link-deco-be67-wifi-7-mesh",
+      "canonical": "https://network.madabase.com/de-de/reviews/tp-link-deco-be67-wifi-7-mesh",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "615",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/reviews/tp-link-tl-sg108pe-poe-switch",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/reviews/tp-link-tl-sg108pe-poe-switch",
+      "canonical": "https://network.madabase.com/reviews/tp-link-tl-sg108pe-poe-switch",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "614",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/reviews/tp-link-ue302c-2-5g-usb-c-ethernet-adapter",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/reviews/tp-link-ue302c-2-5g-usb-c-ethernet-adapter",
+      "canonical": "https://network.madabase.com/reviews/tp-link-ue302c-2-5g-usb-c-ethernet-adapter",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "613",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://smarthome.madabase.com/guides/mmwave-presence-sensors-vs-alternatives",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/guides/mmwave-presence-sensors-vs-alternatives",
+      "canonical": "https://smarthome.madabase.com/guides/mmwave-presence-sensors-vs-alternatives",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "613",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/reviews/emporia-vue-3-home-energy-monitor",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/reviews/emporia-vue-3-home-energy-monitor",
+      "canonical": "https://smarthome.madabase.com/reviews/emporia-vue-3-home-energy-monitor",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "612",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/guides/deco-wifi-7-model-number-buyer-checklist",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/deco-wifi-7-model-number-buyer-checklist",
+      "canonical": "https://network.madabase.com/guides/deco-wifi-7-model-number-buyer-checklist",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "610",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/guides/smart-irrigation-controllers-buying-guide",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/guides/smart-irrigation-controllers-buying-guide",
+      "canonical": "https://smarthome.madabase.com/guides/smart-irrigation-controllers-buying-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "608",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://pets.madabase.com/guides/rfid-feeder-vs-microchip-feeder-guide",
+      "status": 200,
+      "finalUrl": "https://pets.madabase.com/guides/rfid-feeder-vs-microchip-feeder-guide",
+      "canonical": "https://pets.madabase.com/guides/rfid-feeder-vs-microchip-feeder-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "609",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/laptop-privacy-screens-buying-guide",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/guides/laptop-privacy-screens-buying-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/laptop-privacy-screens-buying-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "607",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/best/logitech-mx-brio-vs-insta360-link-2",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/best/logitech-mx-brio-vs-insta360-link-2",
+      "canonical": "https://homeoffice.madabase.com/best/logitech-mx-brio-vs-insta360-link-2",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "609",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/ethernet-surge-protectors-buying-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/ethernet-surge-protectors-buying-guide",
+      "canonical": "https://network.madabase.com/guides/ethernet-surge-protectors-buying-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "604",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/reviews/asus-rt-be86u-wifi-7-gaming-router",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/reviews/asus-rt-be86u-wifi-7-gaming-router",
+      "canonical": "https://network.madabase.com/reviews/asus-rt-be86u-wifi-7-gaming-router",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "605",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://smarthome.madabase.com/guides/matter-smart-bulbs-compatibility-and-fit-guide",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/guides/matter-smart-bulbs-compatibility-and-fit-guide",
+      "canonical": "https://smarthome.madabase.com/guides/matter-smart-bulbs-compatibility-and-fit-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "603",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/reviews/urevo-smart-walking-pad",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/reviews/urevo-smart-walking-pad",
+      "canonical": "https://homeoffice.madabase.com/reviews/urevo-smart-walking-pad",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "603",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://smarthome.madabase.com/guides/smart-blind-motors-compatibility-and-fit-guide",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/guides/smart-blind-motors-compatibility-and-fit-guide",
+      "canonical": "https://smarthome.madabase.com/guides/smart-blind-motors-compatibility-and-fit-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "602",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/guides/ikea-parasoll-vs-myggbett-zigbee-matter-thread",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/guides/ikea-parasoll-vs-myggbett-zigbee-matter-thread",
+      "canonical": "https://smarthome.madabase.com/guides/ikea-parasoll-vs-myggbett-zigbee-matter-thread",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "600",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://baby.madabase.com/guides/babybjorn-harmony-newborn-fit-checklist",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/guides/babybjorn-harmony-newborn-fit-checklist",
+      "canonical": "https://baby.madabase.com/guides/babybjorn-harmony-newborn-fit-checklist",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "600",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/best/best-walking-pad-and-monitor-arm-setup",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/best/best-walking-pad-and-monitor-arm-setup",
+      "canonical": "https://homeoffice.madabase.com/best/best-walking-pad-and-monitor-arm-setup",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "599",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/reviews/glinet-beryl-ax-travel-router",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/reviews/glinet-beryl-ax-travel-router",
+      "canonical": "https://network.madabase.com/reviews/glinet-beryl-ax-travel-router",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "344",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/best/tp-link-deco-be67-vs-be63",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/best/tp-link-deco-be67-vs-be63",
+      "canonical": "https://network.madabase.com/best/tp-link-deco-be67-vs-be63",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "597",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/reviews/reolink-rla-ps1-poe-switch",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/reviews/reolink-rla-ps1-poe-switch",
+      "canonical": "https://network.madabase.com/reviews/reolink-rla-ps1-poe-switch",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "596",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/guides/rack-cable-management-panels-buying-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/rack-cable-management-panels-buying-guide",
+      "canonical": "https://network.madabase.com/guides/rack-cable-management-panels-buying-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "596",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/guides/matter-controller-vs-thread-border-router",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/guides/matter-controller-vs-thread-border-router",
+      "canonical": "https://smarthome.madabase.com/guides/matter-controller-vs-thread-border-router",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "595",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/chicco-advanced-sterilizer-dryer",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/reviews/chicco-advanced-sterilizer-dryer",
+      "canonical": "https://baby.madabase.com/reviews/chicco-advanced-sterilizer-dryer",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "592",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://baby.madabase.com/guides/hip-seat-carriers-safety-and-skip-guide",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/guides/hip-seat-carriers-safety-and-skip-guide",
+      "canonical": "https://baby.madabase.com/guides/hip-seat-carriers-safety-and-skip-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "592",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/reviews/asus-zenscreen-mb16acv-portable-monitor",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/reviews/asus-zenscreen-mb16acv-portable-monitor",
+      "canonical": "https://homeoffice.madabase.com/reviews/asus-zenscreen-mb16acv-portable-monitor",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "591",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://costumes.madabase.com/halloween-ideas/gothic-witch-apothecary-costume-entryway",
+      "status": 200,
+      "finalUrl": "https://costumes.madabase.com/halloween-ideas/gothic-witch-apothecary-costume-entryway",
+      "canonical": "https://costumes.madabase.com/halloween-ideas/gothic-witch-apothecary-costume-entryway",
+      "noindex": false,
+      "cache": "BYPASS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/best/schlage-encode-plus-vs-aqara-u100",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/best/schlage-encode-plus-vs-aqara-u100",
+      "canonical": "https://smarthome.madabase.com/best/schlage-encode-plus-vs-aqara-u100",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "589",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/de-de/guides/matter-controller-vs-thread-border-router",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/de-de/guides/matter-controller-vs-thread-border-router",
+      "canonical": "https://smarthome.madabase.com/de-de/guides/matter-controller-vs-thread-border-router",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "589",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/tools/wifi-coverage-estimator",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/tools/wifi-coverage-estimator",
+      "canonical": "https://network.madabase.com/tools/wifi-coverage-estimator",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "587",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/reviews/tp-link-be400-wifi-7-router",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/reviews/tp-link-be400-wifi-7-router",
+      "canonical": "https://network.madabase.com/reviews/tp-link-be400-wifi-7-router",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "586",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://smarthome.madabase.com/guides/smart-displays-buying-guide",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/guides/smart-displays-buying-guide",
+      "canonical": "https://smarthome.madabase.com/guides/smart-displays-buying-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "584",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/en-gb/reviews/urevo-smart-walking-pad",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/en-gb/reviews/urevo-smart-walking-pad",
+      "canonical": "https://homeoffice.madabase.com/en-gb/reviews/urevo-smart-walking-pad",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "584",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/pcie-wifi-adapters-ownership-cost-and-maintenance",
+      "status": 308,
+      "finalUrl": "https://network.madabase.com/guides/pcie-wifi-adapters-ownership-cost-and-maintenance",
+      "canonical": "https://network.madabase.com/guides/pcie-wifi-adapters-vs-alternatives",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "582",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/wall-plate-access-points-buying-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/wall-plate-access-points-buying-guide",
+      "canonical": "https://network.madabase.com/guides/wall-plate-access-points-buying-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "582",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://baby.madabase.com/guides/travel-stroller-folded-size-checklist",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/guides/travel-stroller-folded-size-checklist",
+      "canonical": "https://baby.madabase.com/guides/travel-stroller-folded-size-checklist",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "581",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://pets.madabase.com/reviews/levoit-vital-200s-p-air-purifier",
+      "status": 200,
+      "finalUrl": "https://pets.madabase.com/reviews/levoit-vital-200s-p-air-purifier",
+      "canonical": "https://pets.madabase.com/reviews/levoit-vital-200s-p-air-purifier",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "581",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/babybjorn-carrier-harmony",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/reviews/babybjorn-carrier-harmony",
+      "canonical": "https://baby.madabase.com/reviews/babybjorn-carrier-harmony",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "578",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://smarthome.madabase.com/guides/smart-wall-switches-compatibility-and-fit-guide",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/guides/smart-wall-switches-compatibility-and-fit-guide",
+      "canonical": "https://smarthome.madabase.com/guides/smart-wall-switches-compatibility-and-fit-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "578",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/guides/smart-motion-sensors-setup-and-daily-workflow",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/guides/smart-motion-sensors-setup-and-daily-workflow",
+      "canonical": "https://smarthome.madabase.com/guides/smart-motion-sensors-setup-and-daily-workflow",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "576",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/best/tl-sg105-m2-vs-ms305-vs-teg-s350",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/best/tl-sg105-m2-vs-ms305-vs-teg-s350",
+      "canonical": "https://network.madabase.com/best/tl-sg105-m2-vs-ms305-vs-teg-s350",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "577",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://baby.madabase.com/guides/hardware-mounted-baby-gates-vs-alternatives",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/guides/hardware-mounted-baby-gates-vs-alternatives",
+      "canonical": "https://baby.madabase.com/guides/hardware-mounted-baby-gates-vs-alternatives",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "575",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/guides/smart-water-shutoff-valves-vs-alternatives",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/guides/smart-water-shutoff-valves-vs-alternatives",
+      "canonical": "https://smarthome.madabase.com/guides/smart-water-shutoff-valves-vs-alternatives",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "573",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://pets.madabase.com/guides/deshedding-brushes-vs-alternatives",
+      "status": 200,
+      "finalUrl": "https://pets.madabase.com/guides/deshedding-brushes-vs-alternatives",
+      "canonical": "https://pets.madabase.com/guides/deshedding-brushes-vs-alternatives",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "573",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/macbook-dual-monitor-dock-chip-compatibility-guide",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/guides/macbook-dual-monitor-dock-chip-compatibility-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/macbook-dual-monitor-dock-chip-compatibility-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "573",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/reviews/schlage-encode-plus-smart-lock",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/reviews/schlage-encode-plus-smart-lock",
+      "canonical": "https://smarthome.madabase.com/reviews/schlage-encode-plus-smart-lock",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "570",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/baby-tula-lite-carrier",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/reviews/baby-tula-lite-carrier",
+      "canonical": "https://baby.madabase.com/reviews/baby-tula-lite-carrier",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "572",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://baby.madabase.com/guides/stroller-rain-covers-buying-guide",
+      "passed": false,
+      "error": "<urlopen error _ssl.c:1114: The handshake operation timed out>"
+    },
+    {
+      "url": "https://smarthome.madabase.com/nl-nl/guides/matter-controller-vs-thread-border-router",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/nl-nl/guides/matter-controller-vs-thread-border-router",
+      "canonical": "https://smarthome.madabase.com/nl-nl/guides/matter-controller-vs-thread-border-router",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "569",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/reviews/switchbot-blind-tilt",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/reviews/switchbot-blind-tilt",
+      "canonical": "https://smarthome.madabase.com/reviews/switchbot-blind-tilt",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "566",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://homeoffice.madabase.com/reviews/flexispot-e7-mini-standing-desk",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/reviews/flexispot-e7-mini-standing-desk",
+      "canonical": "https://homeoffice.madabase.com/reviews/flexispot-e7-mini-standing-desk",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "567",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/reviews/tp-link-tl-sg108-gigabit-switch",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/reviews/tp-link-tl-sg108-gigabit-switch",
+      "canonical": "https://network.madabase.com/reviews/tp-link-tl-sg108-gigabit-switch",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "565",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://smarthome.madabase.com/reviews/aqara-door-and-window-sensor-p2",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/reviews/aqara-door-and-window-sensor-p2",
+      "canonical": "https://smarthome.madabase.com/reviews/aqara-door-and-window-sensor-p2",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "564",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://baby.madabase.com/guides/baby-monitor-subscription-and-privacy-checklist",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/guides/baby-monitor-subscription-and-privacy-checklist",
+      "canonical": "https://baby.madabase.com/guides/baby-monitor-subscription-and-privacy-checklist",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "564",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/baby-brezza-sterilizer-dryer-advanced",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/reviews/baby-brezza-sterilizer-dryer-advanced",
+      "canonical": "https://baby.madabase.com/reviews/baby-brezza-sterilizer-dryer-advanced",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "564",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://baby.madabase.com/guides/stroller-wagons-safety-and-skip-guide",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/guides/stroller-wagons-safety-and-skip-guide",
+      "canonical": "https://baby.madabase.com/guides/stroller-wagons-safety-and-skip-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "562",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/guides/aqara-p2-vs-p1-door-window-sensor",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/guides/aqara-p2-vs-p1-door-window-sensor",
+      "canonical": "https://smarthome.madabase.com/guides/aqara-p2-vs-p1-door-window-sensor",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "563",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/usb-speakerphone-vs-headset-video-meetings",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/guides/usb-speakerphone-vs-headset-video-meetings",
+      "canonical": "https://homeoffice.madabase.com/guides/usb-speakerphone-vs-headset-video-meetings",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "561",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://pets.madabase.com/guides/furbo-360-treat-size-and-jam-guide",
+      "status": 200,
+      "finalUrl": "https://pets.madabase.com/guides/furbo-360-treat-size-and-jam-guide",
+      "canonical": "https://pets.madabase.com/guides/furbo-360-treat-size-and-jam-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "561",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://pets.madabase.com/best/neakasa-m1-plus-vs-petkit-puramax-2",
+      "status": 200,
+      "finalUrl": "https://pets.madabase.com/best/neakasa-m1-plus-vs-petkit-puramax-2",
+      "canonical": "https://pets.madabase.com/best/neakasa-m1-plus-vs-petkit-puramax-2",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "560",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/dual-wan-routers-compatibility-and-fit-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/dual-wan-routers-compatibility-and-fit-guide",
+      "canonical": "https://network.madabase.com/guides/dual-wan-routers-compatibility-and-fit-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "559",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/best/best-statement-accessories-for-one-focal-point",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/best/best-statement-accessories-for-one-focal-point",
+      "canonical": "https://style.madabase.com/best/best-statement-accessories-for-one-focal-point",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "558",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/modem-router-combo-vs-separate-modem-router-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/modem-router-combo-vs-separate-modem-router-guide",
+      "canonical": "https://network.madabase.com/guides/modem-router-combo-vs-separate-modem-router-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "557",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/best/ecobee-premium-vs-nest-learning-thermostat-4th-gen",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/best/ecobee-premium-vs-nest-learning-thermostat-4th-gen",
+      "canonical": "https://smarthome.madabase.com/best/ecobee-premium-vs-nest-learning-thermostat-4th-gen",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "557",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/tools/mesh-node-and-backhaul-planner",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/tools/mesh-node-and-backhaul-planner",
+      "canonical": "https://network.madabase.com/tools/mesh-node-and-backhaul-planner",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "555",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/reviews/asus-zenwifi-bt6-wifi-7-mesh",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/reviews/asus-zenwifi-bt6-wifi-7-mesh",
+      "canonical": "https://network.madabase.com/reviews/asus-zenwifi-bt6-wifi-7-mesh",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "556",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/mechanical-office-keyboards-buying-guide",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/guides/mechanical-office-keyboards-buying-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/mechanical-office-keyboards-buying-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "554",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/reviews/ugreen-30768-usb-3-switch",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/reviews/ugreen-30768-usb-3-switch",
+      "canonical": "https://homeoffice.madabase.com/reviews/ugreen-30768-usb-3-switch",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "553",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/guides/2-5g-vs-10g-switch-for-home-nas-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/2-5g-vs-10g-switch-for-home-nas-guide",
+      "canonical": "https://network.madabase.com/guides/2-5g-vs-10g-switch-for-home-nas-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "553",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://baby.madabase.com/guides/convertible-car-seats-vs-alternatives",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/guides/convertible-car-seats-vs-alternatives",
+      "canonical": "https://baby.madabase.com/guides/convertible-car-seats-vs-alternatives",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "551",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://baby.madabase.com/en-ca/guides/ergobaby-omni-breeze-positions-by-age",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/en-ca/guides/ergobaby-omni-breeze-positions-by-age",
+      "canonical": "https://baby.madabase.com/en-ca/guides/ergobaby-omni-breeze-positions-by-age",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "548",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/reviews/aqara-presence-sensor-fp2",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/reviews/aqara-presence-sensor-fp2",
+      "canonical": "https://smarthome.madabase.com/reviews/aqara-presence-sensor-fp2",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "546",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/momcozy-mw05-portable-milk-warmer",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/reviews/momcozy-mw05-portable-milk-warmer",
+      "canonical": "https://baby.madabase.com/reviews/momcozy-mw05-portable-milk-warmer",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "545",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/guides/ten-gigabit-ethernet-switches-compatibility-and-fit-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/ten-gigabit-ethernet-switches-compatibility-and-fit-guide",
+      "canonical": "https://network.madabase.com/guides/ten-gigabit-ethernet-switches-compatibility-and-fit-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "542",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/reviews/netgear-ms305-2-5g-switch",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/reviews/netgear-ms305-2-5g-switch",
+      "canonical": "https://network.madabase.com/reviews/netgear-ms305-2-5g-switch",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "540",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/guides/indoor-wifi-access-points-vs-alternatives",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/indoor-wifi-access-points-vs-alternatives",
+      "canonical": "https://network.madabase.com/guides/indoor-wifi-access-points-vs-alternatives",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "538",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/reviews/aqara-presence-multi-sensor-fp300",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/reviews/aqara-presence-multi-sensor-fp300",
+      "canonical": "https://smarthome.madabase.com/reviews/aqara-presence-multi-sensor-fp300",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "535",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://network.madabase.com/guides/sfp-plus-transceivers-ownership-cost-and-maintenance",
+      "status": 308,
+      "finalUrl": "https://network.madabase.com/guides/sfp-plus-transceivers-ownership-cost-and-maintenance",
+      "canonical": "https://network.madabase.com/guides/sfp-plus-transceivers-compatibility-and-fit-guide",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "533",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/guides/tapo-p110m-aqara-hub-m3-pairing",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/guides/tapo-p110m-aqara-hub-m3-pairing",
+      "canonical": "https://smarthome.madabase.com/guides/tapo-p110m-aqara-hub-m3-pairing",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "531",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/best/logitech-litra-glow-vs-elgato-key-light-neo",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/best/logitech-litra-glow-vs-elgato-key-light-neo",
+      "canonical": "https://homeoffice.madabase.com/best/logitech-litra-glow-vs-elgato-key-light-neo",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "532",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/caldigit-ts4-vs-ts5-vs-ts5-plus",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/guides/caldigit-ts4-vs-ts5-vs-ts5-plus",
+      "canonical": "https://homeoffice.madabase.com/guides/caldigit-ts4-vs-ts5-vs-ts5-plus",
+      "noindex": false,
+      "cache": "HIT",
+      "age": "106",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/insta360-link-2-vs-link-2-pro-webcam",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/guides/insta360-link-2-vs-link-2-pro-webcam",
+      "canonical": "https://homeoffice.madabase.com/guides/insta360-link-2-vs-link-2-pro-webcam",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/guides/matter-apple-google-home-assistant-feature-checklist",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/guides/matter-apple-google-home-assistant-feature-checklist",
+      "canonical": "https://smarthome.madabase.com/guides/matter-apple-google-home-assistant-feature-checklist",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/home-network-smart-home-outage-plan",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/home-network-smart-home-outage-plan",
+      "canonical": "https://network.madabase.com/guides/home-network-smart-home-outage-plan",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/guides/renter-no-drill-smart-home-plan",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/guides/renter-no-drill-smart-home-plan",
+      "canonical": "https://smarthome.madabase.com/guides/renter-no-drill-smart-home-plan",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/receipt-scanners-buying-guide",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/guides/receipt-scanners-buying-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/receipt-scanners-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/rolling-file-cabinets-buying-guide",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/guides/rolling-file-cabinets-buying-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/rolling-file-cabinets-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/under-desk-pedal-exercisers-buying-guide",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/guides/under-desk-pedal-exercisers-buying-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/under-desk-pedal-exercisers-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/vesa-monitor-adapters-buying-guide",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/guides/vesa-monitor-adapters-buying-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/vesa-monitor-adapters-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/webcam-key-lights-buying-guide",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/guides/webcam-key-lights-buying-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/webcam-key-lights-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://pets.madabase.com/guides/covered-self-cleaning-litter-boxes-buying-guide",
+      "status": 200,
+      "finalUrl": "https://pets.madabase.com/guides/covered-self-cleaning-litter-boxes-buying-guide",
+      "canonical": "https://pets.madabase.com/guides/covered-self-cleaning-litter-boxes-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/acoustic-desk-dividers-buying-guide",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/guides/acoustic-desk-dividers-buying-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/acoustic-desk-dividers-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/active-sitting-stools-buying-guide",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/guides/active-sitting-stools-buying-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/active-sitting-stools-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/desk-cable-grommets-buying-guide",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/guides/desk-cable-grommets-buying-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/desk-cable-grommets-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/desk-cable-sleeves-buying-guide",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/guides/desk-cable-sleeves-buying-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/desk-cable-sleeves-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/desk-pegboard-organizers-buying-guide",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/guides/desk-pegboard-organizers-buying-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/desk-pegboard-organizers-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/desktop-computer-speakers-buying-guide",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/guides/desktop-computer-speakers-buying-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/desktop-computer-speakers-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/desktop-file-organizers-buying-guide",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/guides/desktop-file-organizers-buying-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/desktop-file-organizers-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/desktop-ring-lights-buying-guide",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/guides/desktop-ring-lights-buying-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/desktop-ring-lights-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/desktop-shelf-systems-buying-guide",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/guides/desktop-shelf-systems-buying-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/desktop-shelf-systems-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/floor-cable-covers-buying-guide",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/guides/floor-cable-covers-buying-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/floor-cable-covers-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/ink-tank-printers-buying-guide",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/guides/ink-tank-printers-buying-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/ink-tank-printers-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/keyboard-wrist-rests-buying-guide",
+      "passed": false,
+      "error": "The read operation timed out"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/laptop-cooling-pads-buying-guide",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/guides/laptop-cooling-pads-buying-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/laptop-cooling-pads-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/monitor-light-bars-buying-guide",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/guides/monitor-light-bars-buying-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/monitor-light-bars-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/mouse-wrist-rests-buying-guide",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/guides/mouse-wrist-rests-buying-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/mouse-wrist-rests-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/office-lumbar-cushions-buying-guide",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/guides/office-lumbar-cushions-buying-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/office-lumbar-cushions-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/office-printer-stands-buying-guide",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/guides/office-printer-stands-buying-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/office-printer-stands-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/overhead-book-scanners-buying-guide",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/guides/overhead-book-scanners-buying-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/overhead-book-scanners-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/portable-photo-printers-buying-guide",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/guides/portable-photo-printers-buying-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/portable-photo-printers-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/ptz-conference-cameras-buying-guide",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/guides/ptz-conference-cameras-buying-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/ptz-conference-cameras-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/under-desk-foot-hammocks-buying-guide",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/guides/under-desk-foot-hammocks-buying-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/under-desk-foot-hammocks-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://baby.madabase.com/guides/childproof-door-knob-covers-buying-guide",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/guides/childproof-door-knob-covers-buying-guide",
+      "canonical": "https://baby.madabase.com/guides/childproof-door-knob-covers-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://baby.madabase.com/guides/childproof-refrigerator-locks-buying-guide",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/guides/childproof-refrigerator-locks-buying-guide",
+      "canonical": "https://baby.madabase.com/guides/childproof-refrigerator-locks-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/bulk-ethernet-cable-reels-buying-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/bulk-ethernet-cable-reels-buying-guide",
+      "canonical": "https://network.madabase.com/guides/bulk-ethernet-cable-reels-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/cloud-managed-access-points-buying-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/cloud-managed-access-points-buying-guide",
+      "canonical": "https://network.madabase.com/guides/cloud-managed-access-points-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/coax-cable-testers-buying-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/coax-cable-testers-buying-guide",
+      "canonical": "https://network.madabase.com/guides/coax-cable-testers-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/coax-compression-tools-buying-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/coax-compression-tools-buying-guide",
+      "canonical": "https://network.madabase.com/guides/coax-compression-tools-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/ethernet-inline-couplers-buying-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/ethernet-inline-couplers-buying-guide",
+      "canonical": "https://network.madabase.com/guides/ethernet-inline-couplers-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/ethernet-network-taps-buying-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/ethernet-network-taps-buying-guide",
+      "canonical": "https://network.madabase.com/guides/ethernet-network-taps-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/fiber-cleaning-kits-buying-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/fiber-cleaning-kits-buying-guide",
+      "canonical": "https://network.madabase.com/guides/fiber-cleaning-kits-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/fiber-optic-patch-cables-buying-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/fiber-optic-patch-cables-buying-guide",
+      "canonical": "https://network.madabase.com/guides/fiber-optic-patch-cables-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/fiber-optic-power-meters-buying-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/fiber-optic-power-meters-buying-guide",
+      "canonical": "https://network.madabase.com/guides/fiber-optic-power-meters-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/fiber-visual-fault-locators-buying-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/fiber-visual-fault-locators-buying-guide",
+      "canonical": "https://network.madabase.com/guides/fiber-visual-fault-locators-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/industrial-ethernet-switches-buying-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/industrial-ethernet-switches-buying-guide",
+      "canonical": "https://network.madabase.com/guides/industrial-ethernet-switches-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/kvm-over-ip-extenders-buying-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/kvm-over-ip-extenders-buying-guide",
+      "canonical": "https://network.madabase.com/guides/kvm-over-ip-extenders-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/managed-2-5gbe-switches-buying-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/managed-2-5gbe-switches-buying-guide",
+      "canonical": "https://network.madabase.com/guides/managed-2-5gbe-switches-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/mini-ups-for-routers-buying-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/mini-ups-for-routers-buying-guide",
+      "canonical": "https://network.madabase.com/guides/mini-ups-for-routers-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/network-rack-cooling-fans-buying-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/network-rack-cooling-fans-buying-guide",
+      "canonical": "https://network.madabase.com/guides/network-rack-cooling-fans-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/network-rack-shelves-buying-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/network-rack-shelves-buying-guide",
+      "canonical": "https://network.madabase.com/guides/network-rack-shelves-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/preterminated-fiber-runs-buying-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/preterminated-fiber-runs-buying-guide",
+      "canonical": "https://network.madabase.com/guides/preterminated-fiber-runs-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/rack-blanking-panels-buying-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/rack-blanking-panels-buying-guide",
+      "canonical": "https://network.madabase.com/guides/rack-blanking-panels-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/rackmount-network-ups-buying-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/rackmount-network-ups-buying-guide",
+      "canonical": "https://network.madabase.com/guides/rackmount-network-ups-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/serial-device-servers-buying-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/serial-device-servers-buying-guide",
+      "canonical": "https://network.madabase.com/guides/serial-device-servers-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/sfp28-network-switches-buying-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/sfp28-network-switches-buying-guide",
+      "canonical": "https://network.madabase.com/guides/sfp28-network-switches-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/sfp28-transceivers-buying-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/sfp28-transceivers-buying-guide",
+      "canonical": "https://network.madabase.com/guides/sfp28-transceivers-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/waterproof-rj45-couplers-buying-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/waterproof-rj45-couplers-buying-guide",
+      "canonical": "https://network.madabase.com/guides/waterproof-rj45-couplers-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/optical-time-domain-reflectometers-buying-guide",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/guides/optical-time-domain-reflectometers-buying-guide",
+      "canonical": "https://network.madabase.com/guides/optical-time-domain-reflectometers-buying-guide",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/compatibility/mini-pcs",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/compatibility/mini-pcs",
+      "canonical": "https://homeoffice.madabase.com/compatibility/mini-pcs",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://pets.madabase.com/reviews/litter-genie-plus-pail",
+      "status": 200,
+      "finalUrl": "https://pets.madabase.com/reviews/litter-genie-plus-pail",
+      "canonical": "https://pets.madabase.com/reviews/litter-genie-plus-pail",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://pets.madabase.com/reviews/wyze-cam-pan-v3-pet-camera",
+      "status": 200,
+      "finalUrl": "https://pets.madabase.com/reviews/wyze-cam-pan-v3-pet-camera",
+      "canonical": "https://pets.madabase.com/reviews/wyze-cam-pan-v3-pet-camera",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://pets.madabase.com/reviews/petlibro-granary-automatic-cat-feeder",
+      "status": 200,
+      "finalUrl": "https://pets.madabase.com/reviews/petlibro-granary-automatic-cat-feeder",
+      "canonical": "https://pets.madabase.com/reviews/petlibro-granary-automatic-cat-feeder",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://pets.madabase.com/reviews/furbo-360-dog-camera",
+      "status": 200,
+      "finalUrl": "https://pets.madabase.com/reviews/furbo-360-dog-camera",
+      "canonical": "https://pets.madabase.com/reviews/furbo-360-dog-camera",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://pets.madabase.com/reviews/petfusion-ultimate-dog-bed",
+      "status": 200,
+      "finalUrl": "https://pets.madabase.com/reviews/petfusion-ultimate-dog-bed",
+      "canonical": "https://pets.madabase.com/reviews/petfusion-ultimate-dog-bed",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://pets.madabase.com/reviews/chomchom-roller-pet-hair-remover",
+      "status": 200,
+      "finalUrl": "https://pets.madabase.com/reviews/chomchom-roller-pet-hair-remover",
+      "canonical": "https://pets.madabase.com/reviews/chomchom-roller-pet-hair-remover",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://pets.madabase.com/reviews/shark-neverchange-max-air-purifier",
+      "status": 200,
+      "finalUrl": "https://pets.madabase.com/reviews/shark-neverchange-max-air-purifier",
+      "canonical": "https://pets.madabase.com/reviews/shark-neverchange-max-air-purifier",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://pets.madabase.com/reviews/coway-airmega-mighty2-air-purifier",
+      "status": 200,
+      "finalUrl": "https://pets.madabase.com/reviews/coway-airmega-mighty2-air-purifier",
+      "canonical": "https://pets.madabase.com/reviews/coway-airmega-mighty2-air-purifier",
+      "noindex": false,
+      "cache": "UPDATING",
+      "age": "11660",
+      "passed": false,
+      "issues": [
+        "repeated panels"
+      ]
+    },
+    {
+      "url": "https://pets.madabase.com/reviews/winix-5510-air-purifier",
+      "status": 200,
+      "finalUrl": "https://pets.madabase.com/reviews/winix-5510-air-purifier",
+      "canonical": "https://pets.madabase.com/reviews/winix-5510-air-purifier",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://pets.madabase.com/reviews/petlibro-one-rfid-smart-feeder",
+      "status": 200,
+      "finalUrl": "https://pets.madabase.com/reviews/petlibro-one-rfid-smart-feeder",
+      "canonical": "https://pets.madabase.com/reviews/petlibro-one-rfid-smart-feeder",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://pets.madabase.com/reviews/petkit-puramax-2-self-cleaning-litter-box",
+      "status": 200,
+      "finalUrl": "https://pets.madabase.com/reviews/petkit-puramax-2-self-cleaning-litter-box",
+      "canonical": "https://pets.madabase.com/reviews/petkit-puramax-2-self-cleaning-litter-box",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://pets.madabase.com/reviews/neakasa-p1-pro-pet-grooming-vacuum",
+      "status": 200,
+      "finalUrl": "https://pets.madabase.com/reviews/neakasa-p1-pro-pet-grooming-vacuum",
+      "canonical": "https://pets.madabase.com/reviews/neakasa-p1-pro-pet-grooming-vacuum",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://pets.madabase.com/reviews/tractive-dog-6-gps-tracker",
+      "status": 200,
+      "finalUrl": "https://pets.madabase.com/reviews/tractive-dog-6-gps-tracker",
+      "canonical": "https://pets.madabase.com/reviews/tractive-dog-6-gps-tracker",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/reviews/uplift-v3-standing-desk",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/reviews/uplift-v3-standing-desk",
+      "canonical": "https://homeoffice.madabase.com/reviews/uplift-v3-standing-desk",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/reviews/branch-ergonomic-chair",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/reviews/branch-ergonomic-chair",
+      "canonical": "https://homeoffice.madabase.com/reviews/branch-ergonomic-chair",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/reviews/hon-ignition-2-0-chair",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/reviews/hon-ignition-2-0-chair",
+      "canonical": "https://homeoffice.madabase.com/reviews/hon-ignition-2-0-chair",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/reviews/amazon-basics-monitor-arm",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/reviews/amazon-basics-monitor-arm",
+      "canonical": "https://homeoffice.madabase.com/reviews/amazon-basics-monitor-arm",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/reviews/logitech-litra-glow",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/reviews/logitech-litra-glow",
+      "canonical": "https://homeoffice.madabase.com/reviews/logitech-litra-glow",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/reviews/benq-screenbar-halo",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/reviews/benq-screenbar-halo",
+      "canonical": "https://homeoffice.madabase.com/reviews/benq-screenbar-halo",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/reviews/anker-675-usb-c-docking-station",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/reviews/anker-675-usb-c-docking-station",
+      "canonical": "https://homeoffice.madabase.com/reviews/anker-675-usb-c-docking-station",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/reviews/plugable-usbc-6950pdz-displaylink-dock",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/reviews/plugable-usbc-6950pdz-displaylink-dock",
+      "canonical": "https://homeoffice.madabase.com/reviews/plugable-usbc-6950pdz-displaylink-dock",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/reviews/plugable-tbt4-ud5-thunderbolt-dock",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/reviews/plugable-tbt4-ud5-thunderbolt-dock",
+      "canonical": "https://homeoffice.madabase.com/reviews/plugable-tbt4-ud5-thunderbolt-dock",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/reviews/ergotron-hx-monitor-arm",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/reviews/ergotron-hx-monitor-arm",
+      "canonical": "https://homeoffice.madabase.com/reviews/ergotron-hx-monitor-arm",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/reviews/elgato-key-light-neo",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/reviews/elgato-key-light-neo",
+      "canonical": "https://homeoffice.madabase.com/reviews/elgato-key-light-neo",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/reviews/lume-cube-edge-2-desk-light",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/reviews/lume-cube-edge-2-desk-light",
+      "canonical": "https://homeoffice.madabase.com/reviews/lume-cube-edge-2-desk-light",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/reviews/ergear-48x24-electric-standing-desk",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/reviews/ergear-48x24-electric-standing-desk",
+      "canonical": "https://homeoffice.madabase.com/reviews/ergear-48x24-electric-standing-desk",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/reviews/logitech-mx-brio-4k-webcam",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/reviews/logitech-mx-brio-4k-webcam",
+      "canonical": "https://homeoffice.madabase.com/reviews/logitech-mx-brio-4k-webcam",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/reviews/jabra-speak2-40-usb-speakerphone",
+      "passed": false,
+      "error": "The read operation timed out"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/reviews/insta360-link-2-webcam",
+      "status": 200,
+      "finalUrl": "https://homeoffice.madabase.com/reviews/insta360-link-2-webcam",
+      "canonical": "https://homeoffice.madabase.com/reviews/insta360-link-2-webcam",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/infant-optics-dxr-8-pro",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/reviews/infant-optics-dxr-8-pro",
+      "canonical": "https://baby.madabase.com/reviews/infant-optics-dxr-8-pro",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/nanit-pro-smart-baby-monitor",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/reviews/nanit-pro-smart-baby-monitor",
+      "canonical": "https://baby.madabase.com/reviews/nanit-pro-smart-baby-monitor",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/baby-jogger-city-tour-2-stroller",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/reviews/baby-jogger-city-tour-2-stroller",
+      "canonical": "https://baby.madabase.com/reviews/baby-jogger-city-tour-2-stroller",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/summer-3dlite-convenience-stroller",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/reviews/summer-3dlite-convenience-stroller",
+      "canonical": "https://baby.madabase.com/reviews/summer-3dlite-convenience-stroller",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/momcozy-kleanpal-pro-baby-bottle-washer",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/reviews/momcozy-kleanpal-pro-baby-bottle-washer",
+      "canonical": "https://baby.madabase.com/reviews/momcozy-kleanpal-pro-baby-bottle-washer",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/hatch-rest-sound-machine",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/reviews/hatch-rest-sound-machine",
+      "canonical": "https://baby.madabase.com/reviews/hatch-rest-sound-machine",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/babybjorn-carrier-mini-3d-mesh",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/reviews/babybjorn-carrier-mini-3d-mesh",
+      "canonical": "https://baby.madabase.com/reviews/babybjorn-carrier-mini-3d-mesh",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/bc-babycare-hexa-effortless-carrier",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/reviews/bc-babycare-hexa-effortless-carrier",
+      "canonical": "https://baby.madabase.com/reviews/bc-babycare-hexa-effortless-carrier",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/bc-babycare-clarvion-bottle-washer",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/reviews/bc-babycare-clarvion-bottle-washer",
+      "canonical": "https://baby.madabase.com/reviews/bc-babycare-clarvion-bottle-washer",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/bc-babycare-baby-food-maker",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/reviews/bc-babycare-baby-food-maker",
+      "canonical": "https://baby.madabase.com/reviews/bc-babycare-baby-food-maker",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/bc-babycare-3-in-1-potty-chair",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/reviews/bc-babycare-3-in-1-potty-chair",
+      "canonical": "https://baby.madabase.com/reviews/bc-babycare-3-in-1-potty-chair",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/dr-browns-all-in-one-sterilizer-dryer",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/reviews/dr-browns-all-in-one-sterilizer-dryer",
+      "canonical": "https://baby.madabase.com/reviews/dr-browns-all-in-one-sterilizer-dryer",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/grownsy-bottle-sterilizer-dryer",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/reviews/grownsy-bottle-sterilizer-dryer",
+      "canonical": "https://baby.madabase.com/reviews/grownsy-bottle-sterilizer-dryer",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/philips-avent-premium-fast-bottle-warmer-scf358",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/reviews/philips-avent-premium-fast-bottle-warmer-scf358",
+      "canonical": "https://baby.madabase.com/reviews/philips-avent-premium-fast-bottle-warmer-scf358",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/baby-brezza-smart-bottle-warmer",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/reviews/baby-brezza-smart-bottle-warmer",
+      "canonical": "https://baby.madabase.com/reviews/baby-brezza-smart-bottle-warmer",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/boon-lawn-bottle-drying-rack",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/reviews/boon-lawn-bottle-drying-rack",
+      "canonical": "https://baby.madabase.com/reviews/boon-lawn-bottle-drying-rack",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/ubbi-steel-diaper-pail",
+      "status": 200,
+      "finalUrl": "https://baby.madabase.com/reviews/ubbi-steel-diaper-pail",
+      "canonical": "https://baby.madabase.com/reviews/ubbi-steel-diaper-pail",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/reviews/netgear-orbi-970-wifi-7-mesh",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/reviews/netgear-orbi-970-wifi-7-mesh",
+      "canonical": "https://network.madabase.com/reviews/netgear-orbi-970-wifi-7-mesh",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/reviews/ugreen-revodok-usb-c-gigabit-ethernet-hub",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/reviews/ugreen-revodok-usb-c-gigabit-ethernet-hub",
+      "canonical": "https://network.madabase.com/reviews/ugreen-revodok-usb-c-gigabit-ethernet-hub",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/reviews/motorola-mb8611-cable-modem",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/reviews/motorola-mb8611-cable-modem",
+      "canonical": "https://network.madabase.com/reviews/motorola-mb8611-cable-modem",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/reviews/trendnet-teg-s350-2-5g-switch",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/reviews/trendnet-teg-s350-2-5g-switch",
+      "canonical": "https://network.madabase.com/reviews/trendnet-teg-s350-2-5g-switch",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/reviews/sabrent-nt-25ga-2-5g-usb-c-ethernet-adapter",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/reviews/sabrent-nt-25ga-2-5g-usb-c-ethernet-adapter",
+      "canonical": "https://network.madabase.com/reviews/sabrent-nt-25ga-2-5g-usb-c-ethernet-adapter",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/reviews/screenbeam-ecb7250k02-moca-2-5-adapter-kit",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/reviews/screenbeam-ecb7250k02-moca-2-5-adapter-kit",
+      "canonical": "https://network.madabase.com/reviews/screenbeam-ecb7250k02-moca-2-5-adapter-kit",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/reviews/apc-back-ups-router-modem-bundle",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/reviews/apc-back-ups-router-modem-bundle",
+      "canonical": "https://network.madabase.com/reviews/apc-back-ups-router-modem-bundle",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/reviews/cyberpower-sl700u-router-ups",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/reviews/cyberpower-sl700u-router-ups",
+      "canonical": "https://network.madabase.com/reviews/cyberpower-sl700u-router-ups",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/reviews/apc-be600m1-router-ups",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/reviews/apc-be600m1-router-ups",
+      "canonical": "https://network.madabase.com/reviews/apc-be600m1-router-ups",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/reviews/tp-link-tl-sg1005p-poe-switch",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/reviews/tp-link-tl-sg1005p-poe-switch",
+      "canonical": "https://network.madabase.com/reviews/tp-link-tl-sg1005p-poe-switch",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/reviews/netgear-gs308epp-poe-switch",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/reviews/netgear-gs308epp-poe-switch",
+      "canonical": "https://network.madabase.com/reviews/netgear-gs308epp-poe-switch",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/reviews/tp-link-deco-be85-wifi-7-mesh",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/reviews/tp-link-deco-be85-wifi-7-mesh",
+      "canonical": "https://network.madabase.com/reviews/tp-link-deco-be85-wifi-7-mesh",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/reviews/tp-link-deco-be67-wifi-7-mesh",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/reviews/tp-link-deco-be67-wifi-7-mesh",
+      "canonical": "https://network.madabase.com/reviews/tp-link-deco-be67-wifi-7-mesh",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/reviews/trendnet-teg-s380-2-5g-switch",
+      "status": 200,
+      "finalUrl": "https://network.madabase.com/reviews/trendnet-teg-s380-2-5g-switch",
+      "canonical": "https://network.madabase.com/reviews/trendnet-teg-s380-2-5g-switch",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/reviews/aqara-smart-lock-u400",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/reviews/aqara-smart-lock-u400",
+      "canonical": "https://smarthome.madabase.com/reviews/aqara-smart-lock-u400",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/reviews/aqara-smart-lock-u100",
+      "passed": false,
+      "error": "<urlopen error _ssl.c:1114: The handshake operation timed out>"
+    },
+    {
+      "url": "https://smarthome.madabase.com/reviews/ring-battery-doorbell-plus-2nd-gen",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/reviews/ring-battery-doorbell-plus-2nd-gen",
+      "canonical": "https://smarthome.madabase.com/reviews/ring-battery-doorbell-plus-2nd-gen",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/reviews/ecobee-smart-thermostat-premium",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/reviews/ecobee-smart-thermostat-premium",
+      "canonical": "https://smarthome.madabase.com/reviews/ecobee-smart-thermostat-premium",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/reviews/aqara-water-leak-sensor-3-pack-hub-kit",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/reviews/aqara-water-leak-sensor-3-pack-hub-kit",
+      "canonical": "https://smarthome.madabase.com/reviews/aqara-water-leak-sensor-3-pack-hub-kit",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/reviews/google-nest-learning-thermostat-4th-gen",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/reviews/google-nest-learning-thermostat-4th-gen",
+      "canonical": "https://smarthome.madabase.com/reviews/google-nest-learning-thermostat-4th-gen",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/reviews/govee-wifi-water-leak-detector-3-pack",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/reviews/govee-wifi-water-leak-detector-3-pack",
+      "canonical": "https://smarthome.madabase.com/reviews/govee-wifi-water-leak-detector-3-pack",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/reviews/x-sense-sws0a41-water-leak-detector-kit",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/reviews/x-sense-sws0a41-water-leak-detector-kit",
+      "canonical": "https://smarthome.madabase.com/reviews/x-sense-sws0a41-water-leak-detector-kit",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/reviews/yolink-lora-water-alarm-bundle",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/reviews/yolink-lora-water-alarm-bundle",
+      "canonical": "https://smarthome.madabase.com/reviews/yolink-lora-water-alarm-bundle",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/reviews/yolink-x3-bulldog-valve-controller",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/reviews/yolink-x3-bulldog-valve-controller",
+      "canonical": "https://smarthome.madabase.com/reviews/yolink-x3-bulldog-valve-controller",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/reviews/moen-flo-900-001-smart-water-shutoff",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/reviews/moen-flo-900-001-smart-water-shutoff",
+      "canonical": "https://smarthome.madabase.com/reviews/moen-flo-900-001-smart-water-shutoff",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/reviews/aqara-valve-controller-t1",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/reviews/aqara-valve-controller-t1",
+      "canonical": "https://smarthome.madabase.com/reviews/aqara-valve-controller-t1",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/reviews/yale-assure-lock-2-touch-fingerprint",
+      "status": 200,
+      "finalUrl": "https://smarthome.madabase.com/reviews/yale-assure-lock-2-touch-fingerprint",
+      "canonical": "https://smarthome.madabase.com/reviews/yale-assure-lock-2-touch-fingerprint",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/betsey-johnson-moon-star-drop-earrings",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/betsey-johnson-moon-star-drop-earrings",
+      "canonical": "https://style.madabase.com/reviews/betsey-johnson-moon-star-drop-earrings",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/betsey-johnson-cupcake-mismatch-earrings",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/betsey-johnson-cupcake-mismatch-earrings",
+      "canonical": "https://style.madabase.com/reviews/betsey-johnson-cupcake-mismatch-earrings",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/loungefly-minnie-mouse-bow-mini-backpack",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/loungefly-minnie-mouse-bow-mini-backpack",
+      "canonical": "https://style.madabase.com/reviews/loungefly-minnie-mouse-bow-mini-backpack",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/betsey-johnson-lucky-charm-earrings",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/betsey-johnson-lucky-charm-earrings",
+      "canonical": "https://style.madabase.com/reviews/betsey-johnson-lucky-charm-earrings",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/betsey-johnson-backyard-frog-earrings",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/betsey-johnson-backyard-frog-earrings",
+      "canonical": "https://style.madabase.com/reviews/betsey-johnson-backyard-frog-earrings",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/artistic-face-drop-earrings",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/artistic-face-drop-earrings",
+      "canonical": "https://style.madabase.com/reviews/artistic-face-drop-earrings",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/sparkly-square-leverback-earrings",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/sparkly-square-leverback-earrings",
+      "canonical": "https://style.madabase.com/reviews/sparkly-square-leverback-earrings",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/nattasoul-champagne-martini-earring-set",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/nattasoul-champagne-martini-earring-set",
+      "canonical": "https://style.madabase.com/reviews/nattasoul-champagne-martini-earring-set",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/xocartige-champagne-bottle-earrings",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/xocartige-champagne-bottle-earrings",
+      "canonical": "https://style.madabase.com/reviews/xocartige-champagne-bottle-earrings",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/loungefly-minnie-rock-the-dots-backpack",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/loungefly-minnie-rock-the-dots-backpack",
+      "canonical": "https://style.madabase.com/reviews/loungefly-minnie-rock-the-dots-backpack",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/loungefly-minnie-mouse-dress-mini-backpack",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/loungefly-minnie-mouse-dress-mini-backpack",
+      "canonical": "https://style.madabase.com/reviews/loungefly-minnie-mouse-dress-mini-backpack",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/loungefly-mickey-checkered-convertible-bag",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/loungefly-mickey-checkered-convertible-bag",
+      "canonical": "https://style.madabase.com/reviews/loungefly-mickey-checkered-convertible-bag",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/loungefly-mickey-minnie-aop-backpack",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/loungefly-mickey-minnie-aop-backpack",
+      "canonical": "https://style.madabase.com/reviews/loungefly-mickey-minnie-aop-backpack",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/betsey-johnson-straight-as-charm-earrings",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/betsey-johnson-straight-as-charm-earrings",
+      "canonical": "https://style.madabase.com/reviews/betsey-johnson-straight-as-charm-earrings",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/loungefly-princess-books-mini-backpack",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/loungefly-princess-books-mini-backpack",
+      "canonical": "https://style.madabase.com/reviews/loungefly-princess-books-mini-backpack",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/loungefly-mickey-mouse-mini-backpack",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/loungefly-mickey-mouse-mini-backpack",
+      "canonical": "https://style.madabase.com/reviews/loungefly-mickey-mouse-mini-backpack",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/betsey-johnson-pink-sugar-skull-earrings",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/betsey-johnson-pink-sugar-skull-earrings",
+      "canonical": "https://style.madabase.com/reviews/betsey-johnson-pink-sugar-skull-earrings",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/betsey-johnson-pumpkin-spice-earrings",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/betsey-johnson-pumpkin-spice-earrings",
+      "canonical": "https://style.madabase.com/reviews/betsey-johnson-pumpkin-spice-earrings",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/betsey-johnson-boho-butterfly-earrings",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/betsey-johnson-boho-butterfly-earrings",
+      "canonical": "https://style.madabase.com/reviews/betsey-johnson-boho-butterfly-earrings",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/betsey-johnson-chocolate-strawberry-earrings",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/betsey-johnson-chocolate-strawberry-earrings",
+      "canonical": "https://style.madabase.com/reviews/betsey-johnson-chocolate-strawberry-earrings",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/betsey-johnson-football-mismatch-earrings",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/betsey-johnson-football-mismatch-earrings",
+      "canonical": "https://style.madabase.com/reviews/betsey-johnson-football-mismatch-earrings",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/betsey-johnson-pencil-mismatch-earrings",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/betsey-johnson-pencil-mismatch-earrings",
+      "canonical": "https://style.madabase.com/reviews/betsey-johnson-pencil-mismatch-earrings",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/loungefly-princess-stained-glass-backpack",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/loungefly-princess-stained-glass-backpack",
+      "canonical": "https://style.madabase.com/reviews/loungefly-princess-stained-glass-backpack",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/betsey-johnson-starfish-earrings",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/betsey-johnson-starfish-earrings",
+      "canonical": "https://style.madabase.com/reviews/betsey-johnson-starfish-earrings",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/betsey-johnson-cup-dangle-earrings",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/betsey-johnson-cup-dangle-earrings",
+      "canonical": "https://style.madabase.com/reviews/betsey-johnson-cup-dangle-earrings",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/betsey-johnson-bee-stud-earrings",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/betsey-johnson-bee-stud-earrings",
+      "canonical": "https://style.madabase.com/reviews/betsey-johnson-bee-stud-earrings",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/loungefly-princess-ice-cream-backpack",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/loungefly-princess-ice-cream-backpack",
+      "canonical": "https://style.madabase.com/reviews/loungefly-princess-ice-cream-backpack",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/loungefly-mickey-friends-canvas-backpack",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/loungefly-mickey-friends-canvas-backpack",
+      "canonical": "https://style.madabase.com/reviews/loungefly-mickey-friends-canvas-backpack",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/loungefly-minnie-floral-rock-the-dots-backpack",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/loungefly-minnie-floral-rock-the-dots-backpack",
+      "canonical": "https://style.madabase.com/reviews/loungefly-minnie-floral-rock-the-dots-backpack",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/loungefly-tigger-mini-backpack",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/loungefly-tigger-mini-backpack",
+      "canonical": "https://style.madabase.com/reviews/loungefly-tigger-mini-backpack",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/loungefly-eeyore-mini-backpack",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/loungefly-eeyore-mini-backpack",
+      "canonical": "https://style.madabase.com/reviews/loungefly-eeyore-mini-backpack",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/loungefly-disney-dogs-mini-backpack",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/loungefly-disney-dogs-mini-backpack",
+      "canonical": "https://style.madabase.com/reviews/loungefly-disney-dogs-mini-backpack",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/loungefly-mickey-minnie-donald-daisy-backpack",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/loungefly-mickey-minnie-donald-daisy-backpack",
+      "canonical": "https://style.madabase.com/reviews/loungefly-mickey-minnie-donald-daisy-backpack",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/neutral-flower-claw-clip-set",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/neutral-flower-claw-clip-set",
+      "canonical": "https://style.madabase.com/reviews/neutral-flower-claw-clip-set",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/spiderweb-skeleton-hand-hair-clips",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/spiderweb-skeleton-hand-hair-clips",
+      "canonical": "https://style.madabase.com/reviews/spiderweb-skeleton-hand-hair-clips",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/mehayi-large-pearl-hair-clips",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/mehayi-large-pearl-hair-clips",
+      "canonical": "https://style.madabase.com/reviews/mehayi-large-pearl-hair-clips",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/metal-butterfly-flower-hair-clips",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/metal-butterfly-flower-hair-clips",
+      "canonical": "https://style.madabase.com/reviews/metal-butterfly-flower-hair-clips",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/jasmine-rhinestone-tassel-hair-claw",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/jasmine-rhinestone-tassel-hair-claw",
+      "canonical": "https://style.madabase.com/reviews/jasmine-rhinestone-tassel-hair-claw",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/large-mulberry-silk-long-scarf",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/large-mulberry-silk-long-scarf",
+      "canonical": "https://style.madabase.com/reviews/large-mulberry-silk-long-scarf",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/chill-pill-hair-claw-clip",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/chill-pill-hair-claw-clip",
+      "canonical": "https://style.madabase.com/reviews/chill-pill-hair-claw-clip",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/camila-paris-green-french-hair-clip",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/camila-paris-green-french-hair-clip",
+      "canonical": "https://style.madabase.com/reviews/camila-paris-green-french-hair-clip",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/relang-printed-satin-hair-scarf",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/relang-printed-satin-hair-scarf",
+      "canonical": "https://style.madabase.com/reviews/relang-printed-satin-hair-scarf",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/long-skinny-multipurpose-scarf",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/long-skinny-multipurpose-scarf",
+      "canonical": "https://style.madabase.com/reviews/long-skinny-multipurpose-scarf",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/twenty-four-fashion-scarf-set",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/twenty-four-fashion-scarf-set",
+      "canonical": "https://style.madabase.com/reviews/twenty-four-fashion-scarf-set",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/aufeel-small-mulberry-silk-scarf",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/aufeel-small-mulberry-silk-scarf",
+      "canonical": "https://style.madabase.com/reviews/aufeel-small-mulberry-silk-scarf",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/wecibor-colorful-novelty-crew-socks",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/wecibor-colorful-novelty-crew-socks",
+      "canonical": "https://style.madabase.com/reviews/wecibor-colorful-novelty-crew-socks",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/glcmxmart-food-animal-fun-socks",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/glcmxmart-food-animal-fun-socks",
+      "canonical": "https://style.madabase.com/reviews/glcmxmart-food-animal-fun-socks",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/jspupifip-fruit-ankle-socks",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/jspupifip-fruit-ankle-socks",
+      "canonical": "https://style.madabase.com/reviews/jspupifip-fruit-ankle-socks",
+      "noindex": false,
+      "cache": "UPDATING",
+      "age": "18539",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/moggei-printed-cotton-boot-socks",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/moggei-printed-cotton-boot-socks",
+      "canonical": "https://style.madabase.com/reviews/moggei-printed-cotton-boot-socks",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://style.madabase.com/reviews/jeasona-cute-cat-socks",
+      "status": 200,
+      "finalUrl": "https://style.madabase.com/reviews/jeasona-cute-cat-socks",
+      "canonical": "https://style.madabase.com/reviews/jeasona-cute-cat-socks",
+      "noindex": false,
+      "cache": "MISS",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://madabase.com/",
+      "status": 200,
+      "finalUrl": "https://madabase.com/",
+      "canonical": "https://madabase.com",
+      "noindex": false,
+      "cache": "DYNAMIC",
+      "age": null,
+      "passed": false,
+      "issues": [
+        "canonical/status/indexing"
+      ]
+    },
+    {
+      "url": "https://madabase.com/research",
+      "status": 200,
+      "finalUrl": "https://madabase.com/research",
+      "canonical": "https://madabase.com/research",
+      "noindex": false,
+      "cache": "DYNAMIC",
+      "age": null,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://madabase.com/guides/household-tech-subscription-checklist",
+      "status": 200,
+      "finalUrl": "https://madabase.com/guides/household-tech-subscription-checklist",
+      "canonical": "https://madabase.com/guides/household-tech-subscription-checklist",
+      "noindex": false,
+      "cache": "DYNAMIC",
+      "age": null,
+      "passed": true,
+      "issues": []
+    }
+  ]
+}

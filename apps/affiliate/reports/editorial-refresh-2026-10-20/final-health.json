@@ -1,0 +1,23 @@
+{
+  "main": {
+    "ActiveState": "active",
+    "SubState": "running",
+    "WorkingDirectory": "/srv/madabase-main/releases/editorial-20261021-b627cf911f4542922ed16ffd98f4cb6a00cbd317",
+    "NRestarts": "0",
+    "MemoryCurrent": "55320576"
+  },
+  "affiliate": {
+    "ActiveState": "active",
+    "SubState": "running",
+    "WorkingDirectory": "/srv/madabase-affiliate/releases/editorial-20261021-b627cf911f4542922ed16ffd98f4cb6a00cbd317",
+    "NRestarts": "0",
+    "MemoryCurrent": "256688128"
+  },
+  "test": {
+    "ActiveState": "active",
+    "SubState": "running",
+    "WorkingDirectory": "/srv/madabase-test/releases/local-20260820-next15523",
+    "NRestarts": "0",
+    "MemoryCurrent": "75120640"
+  }
+}

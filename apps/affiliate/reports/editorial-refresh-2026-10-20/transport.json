@@ -1,0 +1,39 @@
+{
+  "revision": "b627cf911f4542922ed16ffd98f4cb6a00cbd317",
+  "method": "Pinned HTTPS owner repository files; verify every byte length and SHA-256 before use",
+  "files": {
+    "deploy.py": {
+      "path": "apps/affiliate/reports/editorial-refresh-2026-10-20/deploy.py",
+      "sha256": "ecdbfd57487b52add7e57097d5ccf24d7fdc2505cffacf9b3c6781efef182b42",
+      "bytes": 12425
+    },
+    "artifact.json": {
+      "path": "apps/affiliate/reports/editorial-refresh-2026-10-20/artifact.json",
+      "sha256": "ee6442393ec7822280aea7d712b7f6fa3e82d100220ddba8663fd84dd032f29a",
+      "bytes": 526
+    },
+    "release-urls.json": {
+      "path": "apps/affiliate/reports/editorial-refresh-2026-10-20/release-urls.json",
+      "sha256": "f011ad7976c4f46a4db1cb73eecd586f1ffd450a3ecd7158136a8edcda3d61f2",
+      "bytes": 20072
+    },
+    "check-release-capacity.mjs": {
+      "path": "apps/affiliate/reports/editorial-refresh-2026-10-20/check-release-capacity.mjs",
+      "sha256": "dc3f33d8220b3ffbd381b8e271c1a6a818a05043e495df0d3e12917e70ec458e",
+      "bytes": 3765
+    },
+    "main-runtime.tgz": {
+      "path": "apps/main/.release/main-runtime.tgz",
+      "bytes": 17345173,
+      "sha256": "dabaa582d9abbeb42850a1cdb2ec49ebe662ace553eca37cd27e5395dbe99d05"
+    },
+    "affiliate-runtime.tgz": {
+      "path": "apps/affiliate/.release/affiliate-runtime.tgz",
+      "bytes": 61107476,
+      "sha256": "e55f67d91fd65c20b19df5aa0b24edc88264d6a7cee26a3bed1e17d139939d64"
+    }
+  },
+  "serverInputDirectory": "/var/tmp/madabase-editorial-inputs-20261021",
+  "status": "all-six-verified-and-deployed",
+  "completedAt": "2026-10-21T10:53:49.193289+08:00"
+}

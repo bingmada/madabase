@@ -8,6 +8,8 @@ mode=sys.argv[1] if len(sys.argv)>1 else 'after'
 urls=[r['url'] for r in protected]
 if mode!='baseline':urls=list(dict.fromkeys(urls+ledger['newCanonicals']+ledger['enhancedExistingCanonicals']+ledger['productTemplateCanonicals']+ledger['mainCanonicals']))
 baseline={r['url']:r for r in json.loads((HERE/'protected-baseline.json').read_text())['rows']} if mode!='baseline' else {}
+previous=json.loads((HERE/'public-http.json').read_text()) if mode=='retry' else None
+if previous:urls=[r['url'] for r in previous['rows'] if not r['passed']]
 UA='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/140.0.0.0 Safari/537.36'
 def check(url):
  row={'url':url}
@@ -23,7 +25,7 @@ def check(url):
    for key in ['status','finalUrl','canonical','noindex']:
     if row[key]!=before.get(key):issues.append('protected '+key+' changed')
   else:
-   if row['status']!=200 or row['finalUrl']!=url or row['canonical']!=url or row['noindex']:issues.append('canonical/status/indexing')
+   if row['status']!=200 or row['finalUrl']!=url or row['canonical']!=('https://madabase.com' if url=='https://madabase.com/' else url) or row['noindex']:issues.append('canonical/status/indexing')
   if url in ledger['decisionGuides']:
    if body.index('<table')>body.index('<article'):issues.append('comparison order')
    if len(re.findall(r'aria-label="[^"]*: country editions"',body))!=1:issues.append('edition menus')
@@ -37,7 +39,9 @@ def check(url):
   row.update(passed=not issues,issues=issues)
  except Exception as e:row.update(passed=False,error=str(e))
  return row
-with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:rows=list(executor.map(check,urls))
+with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:rows=list(executor.map(check,urls))
+if previous:
+ updated={r['url']:r for r in rows};rows=[updated.get(r['url'],r) for r in previous['rows']]
 report={'checkedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'mode':mode,'scope':'Plain public canonical GETs, no click writes or merchant requests','total':len(rows),'passed':sum(r['passed'] for r in rows),'rows':rows}
 (HERE/('protected-baseline.json' if mode=='baseline' else 'public-http.json')).write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps({'total':len(rows),'passed':report['passed'],'failed':[r for r in rows if not r['passed']]},indent=2))

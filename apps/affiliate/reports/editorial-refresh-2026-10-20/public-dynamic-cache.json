@@ -1,0 +1,70 @@
+{
+  "checkedAt": "2026-10-21T02:58:23.088491+00:00",
+  "scope": "GET only; no click event created",
+  "rows": [
+    {
+      "url": "https://madabase.com/search?q=M70q%20Gen%202",
+      "status": 200,
+      "cache": "DYNAMIC",
+      "cacheControl": "private, no-store, max-age=0",
+      "passed": true
+    },
+    {
+      "url": "https://homeoffice.madabase.com/search?q=M70q%20Gen%202",
+      "status": 200,
+      "cache": "DYNAMIC",
+      "cacheControl": "private, no-store, max-age=0",
+      "passed": true
+    },
+    {
+      "url": "https://network.madabase.com/search?q=M70q%20Gen%202",
+      "status": 200,
+      "cache": "DYNAMIC",
+      "cacheControl": "private, no-store, max-age=0",
+      "passed": true
+    },
+    {
+      "url": "https://smarthome.madabase.com/search?q=M70q%20Gen%202",
+      "status": 200,
+      "cache": "DYNAMIC",
+      "cacheControl": "private, no-store, max-age=0",
+      "passed": true
+    },
+    {
+      "url": "https://baby.madabase.com/search?q=M70q%20Gen%202",
+      "status": 200,
+      "cache": "DYNAMIC",
+      "cacheControl": "private, no-store, max-age=0",
+      "passed": true
+    },
+    {
+      "url": "https://pets.madabase.com/search?q=M70q%20Gen%202",
+      "status": 200,
+      "cache": "DYNAMIC",
+      "cacheControl": "private, no-store, max-age=0",
+      "passed": true
+    },
+    {
+      "url": "https://style.madabase.com/search?q=M70q%20Gen%202",
+      "status": 200,
+      "cache": "DYNAMIC",
+      "cacheControl": "private, no-store, max-age=0",
+      "passed": true
+    },
+    {
+      "url": "https://costumes.madabase.com/search?q=M70q%20Gen%202",
+      "status": 200,
+      "cache": "DYNAMIC",
+      "cacheControl": "private, no-store, max-age=0",
+      "passed": true
+    },
+    {
+      "url": "https://homeoffice.madabase.com/api/affiliate-clicks",
+      "status": 405,
+      "cache": "DYNAMIC",
+      "cacheControl": "",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

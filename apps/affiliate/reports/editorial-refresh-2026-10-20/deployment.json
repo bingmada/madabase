@@ -1,0 +1,75 @@
+{
+  "revision": "b627cf911f4542922ed16ffd98f4cb6a00cbd317",
+  "status": "origin-verified",
+  "testWorkingDirectory": "/srv/madabase-test/releases/local-20260820-next15523",
+  "apps": {
+    "main": {
+      "old": "/srv/madabase-main/releases/journey-20261019-220b8038204e847da6609d83a6169c7222517754",
+      "new": "/srv/madabase-main/releases/editorial-20261021-b627cf911f4542922ed16ffd98f4cb6a00cbd317",
+      "sha256": "dabaa582d9abbeb42850a1cdb2ec49ebe662ace553eca37cd27e5395dbe99d05",
+      "retainedAssets": 33
+    },
+    "affiliate": {
+      "old": "/srv/madabase-affiliate/releases/journey-20261019-220b8038204e847da6609d83a6169c7222517754",
+      "new": "/srv/madabase-affiliate/releases/editorial-20261021-b627cf911f4542922ed16ffd98f4cb6a00cbd317",
+      "sha256": "e55f67d91fd65c20b19df5aa0b24edc88264d6a7cee26a3bed1e17d139939d64",
+      "retainedAssets": 64
+    }
+  },
+  "startedAt": 1792551207.550726,
+  "forecast": {
+    "capacity": {
+      "passed": false,
+      "availableMiB": 294.296875,
+      "sliceHeadroomMiB": "unlimited",
+      "requiredMiB": 704,
+      "candidateMiB": 512,
+      "reserveMiB": 192,
+      "pressureAvg10": 0,
+      "reasons": [
+        "Insufficient MemAvailable; swap does not count as candidate capacity."
+      ]
+    },
+    "reclaimedAnonymousMiB": 524.9140625,
+    "projectedMiB": 819.2109375,
+    "requiredMiB": 768
+  },
+  "testPaused": true,
+  "testRestored": true,
+  "gates": {
+    "main": {
+      "passed": true,
+      "availableMiB": 814.65234375,
+      "sliceHeadroomMiB": "unlimited",
+      "requiredMiB": 704,
+      "candidateMiB": 512,
+      "reserveMiB": 192,
+      "pressureAvg10": 0,
+      "reasons": []
+    },
+    "affiliate": {
+      "passed": true,
+      "availableMiB": 704.33984375,
+      "sliceHeadroomMiB": "unlimited",
+      "requiredMiB": 704,
+      "candidateMiB": 512,
+      "reserveMiB": 192,
+      "pressureAvg10": 0,
+      "reasons": []
+    }
+  },
+  "verification": {
+    "main": {
+      "researchFeed": true,
+      "ownershipCalculator": true,
+      "gen2Search": true
+    },
+    "affiliate": {
+      "contentCanonicals": 60,
+      "sitemaps": 7,
+      "databaseProduct": true,
+      "identityAndEvidence": true
+    }
+  },
+  "completedAt": 1792551229.193289
+}
