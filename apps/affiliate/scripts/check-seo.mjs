@@ -379,30 +379,7 @@ for (const guide of quadrupleExpansionModule.quadrupleExpansionGuides) {
   });
 }
 
-const breadthDataFiles = {
-  familyPoolData: "breadth-draft-120-150-research-pool.json",
-  indexedZeroRecoveryData: "indexed-zero-recovery-cohort-2026-09-07.json",
-  opportunityData: "breadth-draft-120-plus-opportunity-evidence.json",
-  babyProductData: "breadth-draft-baby-product-research.json",
-  communityEvidenceData: "breadth-draft-120-plus-community-evidence.json",
-  homeofficeProductData: "breadth-draft-homeoffice-product-research.json",
-  networkProductData: "breadth-draft-network-product-research.json",
-  petProductData: "breadth-draft-pet-product-research.json",
-  smarthomeProductData: "breadth-draft-smarthome-product-research.json",
-};
-const breadthFile = path.join(libDir, "breadth-draft-120-plus-content.ts");
-const breadthContentJavascript = ts.transpileModule(fs.readFileSync(breadthFile, "utf8"), {
-  compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 },
-  fileName: breadthFile,
-}).outputText.replace(/^import [^;]+;\n/gm, "");
-const breadthJavascript = [
-  ...Object.entries(breadthDataFiles).map(([name, filename]) =>
-    `const ${name} = ${fs.readFileSync(path.join(workspaceDir, "config", filename), "utf8")};`),
-  breadthContentJavascript,
-].join("\n");
-const breadthModule = await import(
-  `data:text/javascript;base64,${Buffer.from(breadthJavascript).toString("base64")}`
-);
+const breadthModule = loadAffiliateTypescript("../../lib/breadth-draft-120-plus-content.ts");
 for (const guide of breadthModule.breadthDraft120PlusGuides) {
   entries.push({
     site: guide.site,
@@ -561,7 +538,10 @@ for (const entry of entries) {
 
 const publishedEntries = entries.filter((entry) => entry.status === "published");
 const qualityPilot = portfolioPolicy.qualityPilot20261019;
-const approvedPilotGuides = new Set(qualityPilot?.registeredGuides ?? []);
+const approvedPilotGuides = new Set([
+  ...(qualityPilot?.registeredGuides ?? []),
+  ...(portfolioPolicy.editorialExpansion20261020?.registeredGuides ?? []),
+]);
 const governedEntries = publishedEntries.filter((entry) => !approvedPilotGuides.has(`${entry.site}:${entry.kind}:${entry.slug}`));
 for (const key of approvedPilotGuides) {
   if (!publishedEntries.some((entry) => `${entry.site}:${entry.kind}:${entry.slug}` === key)) errors.push(`Approved quality-pilot guide missing: ${key}`);

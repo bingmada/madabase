@@ -1,0 +1,4 @@
+> main@0.1.0 check:site
+> node scripts/check-site.mjs --origin=http://127.0.0.1:3030
+
+Main-site verification passed: 13 canonical pages, robots, sitemap, locale isolation, and IndexNow key.

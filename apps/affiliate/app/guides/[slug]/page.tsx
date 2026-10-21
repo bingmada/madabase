@@ -227,7 +227,8 @@ function GuideDecisionTable({ table }: { table: Guide["comparisonTable"] }) {
           <section className="mt-10">
             <p className="eyebrow">Side-by-side checks</p>
             <h2 className="mt-3 text-2xl font-bold">{table.title}</h2>
-            <div className="mt-5 overflow-x-auto rounded-md border border-[var(--border)] bg-white">
+            <p className="mt-3 text-xs text-[var(--muted)] sm:hidden">Swipe across the table to compare all options.</p>
+            <div aria-label={table.title} className="mt-5 overflow-x-auto rounded-md border border-[var(--border)] bg-white" role="region" tabIndex={0}>
               <table className="w-full min-w-[680px] text-left text-sm">
                 <thead className="bg-[var(--surface-muted)] text-xs uppercase text-[var(--muted)]">
                   <tr>
@@ -284,7 +285,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
     rawGuide.familySlug ? siteGuideFamily(site.key, rawGuide.familySlug) : [rawGuide],
   );
   const consolidatedFamilyHub = isConsolidatedFamilyHub(guide);
-  const tailoredGuide = Boolean(focusedSearchAnswer(site.key, "guide", slug));
+  const tailoredGuide = Boolean(guide.decisionLayout || focusedSearchAnswer(site.key, "guide", slug));
   const searchOpportunity = findSearchOpportunity(site.key, "guide", slug);
   const effectiveUpdatedAt = effectiveContentUpdatedAt(guide.updatedAt, searchOpportunity?.updatedAt);
   const effectiveGuide = effectiveUpdatedAt === guide.updatedAt ? guide : { ...guide, updatedAt: effectiveUpdatedAt };
@@ -310,8 +311,8 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
     ...familyGuides.filter((item) => item.slug !== guide.slug),
     ...explicitRelatedGuides,
     ...reciprocalRelatedGuides,
-    ...siteGuides(site.key).filter((item) => item.slug !== guide.slug && item.category === guide.category),
-    ...siteGuides(site.key).filter((item) => item.slug !== guide.slug),
+    ...(guide.decisionLayout ? [] : siteGuides(site.key).filter((item) => item.slug !== guide.slug && item.category === guide.category)),
+    ...(guide.decisionLayout ? [] : siteGuides(site.key).filter((item) => item.slug !== guide.slug)),
   ]
     .filter((item, index, items) => items.findIndex((candidate) => candidate.slug === item.slug) === index)
     .slice(0, guide.familySlug ? 8 : 4);
@@ -430,7 +431,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
           <p className="eyebrow">{guide.category}</p>
         )}
         <h1 className="mt-3 text-3xl font-black leading-tight sm:text-4xl">{guide.title}</h1>
-        {!plannerTopic && (topProduct || topRoundup || commerceProduct || amazonFamilyProduct || cjFamilyAffiliateOffer || costumeCommerceProduct) ? (
+        {!guide.decisionLayout && !plannerTopic && (topProduct || topRoundup || commerceProduct || amazonFamilyProduct || cjFamilyAffiliateOffer || costumeCommerceProduct) ? (
           <section
             className="mt-4 rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-4 sm:mt-5 sm:p-5"
             aria-label="First-screen purchase path"
@@ -578,9 +579,9 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         ) : null}
         {searchOpportunity && !tailoredGuide ? <SearchOpportunityBlock opportunity={searchOpportunity} /> : null}
         <SearchOpportunityBacklinks site={site.key} kind="guide" slug={slug} />
-        <BaseMarketEditionLinks site={site} basePath={`/guides/${slug}`} />
+        {!guide.decisionLayout ? <BaseMarketEditionLinks site={site} basePath={`/guides/${slug}`} /> : null}
         {commerceProduct ? <AmazonListingFreshness site={site.key} productSlug={commerceProduct.slug} /> : null}
-        {guide.image ? (
+        {guide.image && !guide.decisionLayout ? (
           <figure className="mt-8">
             <div className="relative aspect-[16/9] w-full overflow-hidden rounded-md bg-[var(--surface-muted)]">
               <Image
@@ -818,6 +819,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             )}
           </section>
         ) : null}
+        {guide.decisionLayout ? <BaseMarketEditionLinks site={site} basePath={`/guides/${slug}`} /> : null}
         {site.key === "costume" ? (
           <section className="mt-10 rounded-md border border-[#d7b58a] bg-[#fff8ee] p-6">
             <p className="eyebrow">Put the guide into a complete Halloween story</p>

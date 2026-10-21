@@ -688,6 +688,22 @@ img {
   line-height: 1.55;
 }
 
+.ownership-calculator { margin: 2rem 0; padding: 1.5rem; border: 1px solid var(--line); border-radius: 12px; background: white; }
+.ownership-calculator p { line-height: 1.6; }
+.ownership-controls { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; margin-block: 1rem; }
+.ownership-controls select { margin-left: .5rem; padding: .4rem; border: 1px solid var(--line); border-radius: 5px; }
+.ownership-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
+.ownership-grid fieldset { min-width: 0; border: 1px solid var(--line); padding: 1rem; }
+.ownership-grid legend { font-weight: 700; padding-inline: .4rem; }
+.ownership-field { display: grid; gap: .35rem; margin-bottom: 1rem; }
+.ownership-field label { font-weight: 600; }
+.ownership-field input { width: 100%; min-width: 0; padding: .6rem; border: 1px solid #75867e; border-radius: 5px; color: var(--ink); background: white; }
+.ownership-field small { color: var(--muted); line-height: 1.4; }
+.ownership-results { margin-block: 1rem; overflow-x: auto; }
+.ownership-results table { width: 100%; border-collapse: collapse; text-align: left; font-size: .9rem; }
+.ownership-results th, .ownership-results td { border-bottom: 1px solid var(--line); padding: .7rem .35rem; }
+@media (max-width: 650px) { .ownership-grid { grid-template-columns: minmax(0, 1fr); } .ownership-calculator { padding: 1rem; } }
+
 .research-page-grid {
   display: grid;
   gap: 0;

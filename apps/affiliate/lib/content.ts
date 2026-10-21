@@ -1,4 +1,5 @@
 import type { Guide, Product, Roundup, SiteKey, Tool } from "./types";
+import { addEditorialExpansionLinks, editorialExpansionGuides } from "./october-editorial-expansion";
 import { upgradeGuides } from "./upgrade-guides";
 import { applyIndexingRepair } from "./indexing-repair-content";
 import { applyLowClickRepair } from "./low-click-repairs";
@@ -2459,6 +2460,7 @@ guides.push(...broadProductPilotGuides);
 guides.push(...broadProductPilot2Guides);
 guides.push(...broadProductPilot3Guides);
 guides.push(...breadthDraft120PlusGuides);
+guides.push(...editorialExpansionGuides);
 
 for (let index = 0; index < products.length; index += 1) {
   products[index] = refreshCommerceProduct(applyFocusedProductRecovery(applyPortfolioSearchRecoveryProduct(products[index])));
@@ -2472,7 +2474,7 @@ for (let index = 0; index < guides.length; index += 1) {
   const repaired = refreshCommerceGuide(applyFocusedGuideRecovery(applyPortfolioSearchRecoveryGuide(
     applyOctoberSearchRecovery(applyLowClickRepair(applyIndexingRepair(guides[index]))),
   )));
-  guides[index] = { ...repaired, sources: repaired.sources?.filter((source) => !isBlockedAmazonSource(repaired.site, source.url)) };
+  guides[index] = addEditorialExpansionLinks({ ...repaired, sources: repaired.sources?.filter((source) => !isBlockedAmazonSource(repaired.site, source.url)) });
 }
 
 const includeDrafts = process.env.AFFILIATE_INCLUDE_DRAFTS === "1";

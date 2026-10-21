@@ -1,0 +1,57 @@
+{
+  "scope": "Final standalone release, local HTTP",
+  "total": 10,
+  "passed": 10,
+  "rows": [
+    {
+      "url": "https://homeoffice.madabase.com/guides/receipt-scanners-buying-guide",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/rolling-file-cabinets-buying-guide",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/under-desk-pedal-exercisers-buying-guide",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/vesa-monitor-adapters-buying-guide",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/webcam-key-lights-buying-guide",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/caldigit-ts4-vs-ts5-vs-ts5-plus",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/insta360-link-2-vs-link-2-pro-webcam",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://network.madabase.com/guides/home-network-smart-home-outage-plan",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/guides/matter-apple-google-home-assistant-feature-checklist",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "url": "https://smarthome.madabase.com/guides/renter-no-drill-smart-home-plan",
+      "passed": true,
+      "issues": []
+    }
+  ]
+}

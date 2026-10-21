@@ -1,0 +1,56 @@
+> main@0.1.0 prebuild:release
+> node ../affiliate/scripts/export-site-search.mjs
+
+{"pages":1140,"mode":"exported","bySite":{"homeoffice":238,"network":166,"smarthome":239,"baby":224,"pet":184,"style":63,"costume":23,"main":3}}
+
+> main@0.1.0 build:release
+> NEXT_RELEASE_DIST_DIR=.next-release NEXT_STANDALONE_RELEASE=1 next build && NEXT_RELEASE_DIST_DIR=.next-release node ../../scripts/package-next-standalone.mjs main
+
+   ▲ Next.js 15.5.23
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 1401ms
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/21) ...
+   Generating static pages (5/21)
+   Generating static pages (10/21)
+   Generating static pages (15/21)
+ ✓ Generating static pages (21/21)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                             Size  First Load JS
+┌ ○ /                                                  412 B         112 kB
+├ ○ /_not-found                                        133 B         103 kB
+├ ○ /about                                             177 B         106 kB
+├ ○ /affiliate-disclosure                              177 B         106 kB
+├ ○ /contact                                           414 B         112 kB
+├ ○ /editorial-policy                                  177 B         106 kB
+├ ○ /guides                                            414 B         112 kB
+├ ● /guides/[slug]                                   2.57 kB         114 kB
+├   ├ /guides/connected-home-buying-order
+├   ├ /guides/home-office-network-and-ergonomics
+├   └ /guides/household-tech-subscription-checklist
+├ ○ /icon.svg                                            0 B            0 B
+├ ○ /llms.txt                                          133 B         103 kB
+├ ○ /methodology                                       177 B         106 kB
+├ ○ /privacy                                           177 B         106 kB
+├ ○ /research                                          413 B         112 kB
+├ ○ /robots.txt                                        133 B         103 kB
+├ ƒ /search                                            988 B         104 kB
+├ ○ /sitemap.xml                                       133 B         103 kB
+└ ○ /terms                                             177 B         106 kB
++ First Load JS shared by all                         103 kB
+  ├ chunks/18-536e344942e9442c.js                    46.4 kB
+  ├ chunks/87c73c54-24122e7b92478d00.js              54.2 kB
+  └ other shared chunks (total)                      1.92 kB
+
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+
+Created /Users/liyingda/Documents/project/self/madabase/apps/main/.release/main-runtime.tgz
+Archive size: 16.5 MB
+Start after extraction: HOSTNAME=127.0.0.1 PORT=3000 node start.mjs

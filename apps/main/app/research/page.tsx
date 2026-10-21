@@ -22,16 +22,17 @@ export default function ResearchPage() {
   return (
     <main>
       <JsonLd data={itemList} />
-      <PageIntro eyebrow="Latest research" title="Selected decisions, recently checked." body="This is a deliberately small view of the work across Madabase. Each entry is here because model identity, compatibility, total cost, fit, or a meaningful trade-off was checked and made visible." />
+      <PageIntro eyebrow="Latest research" title="What changed in the decision library." body="Recent additions and substantive updates, newest first. Each entry explains what changed in the linked guide or planner. A page update does not certify current retailer stock or pricing." />
       <section className="section">
         <div className="shell research-page-grid">
           {researchItems.map((item, index) => (
             <article className="research-feature" key={item.href}>
-              <div className="research-feature-number">0{index + 1}</div>
+              <div className="research-feature-number">{String(index + 1).padStart(2, "0")}</div>
               <div>
                 <p className="eyebrow">{item.topic} · {item.publication}</p>
                 <h2>{item.title}</h2>
                 <p>{item.summary}</p>
+                <p><strong>What changed:</strong> {item.change}</p>
                 <span className="updated-label">{item.updated}</span>
               </div>
               <TrackedLink className="button button-dark" href={item.href} position="research-index" publication={item.publication}>

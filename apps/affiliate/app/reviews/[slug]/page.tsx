@@ -16,7 +16,7 @@ import { productEvidencePresentation } from "@/lib/evidence";
 import { effectiveContentUpdatedAt, findSearchOpportunity, searchOpportunityMetaDescription } from "@/lib/search-opportunities";
 import { breadcrumbSchema, pageMetadata, productNotesSchema, productPageTitle } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
-import type { AffiliateOffer, Product } from "@/lib/types";
+import type { Product } from "@/lib/types";
 
 function siteContext(siteKey: string) {
   if (siteKey === "pet") return "pet-care routine";
@@ -62,36 +62,6 @@ function beforeYouBuyChecks(siteKey: string) {
   ];
 }
 
-function listingVerificationRows(product: Product, displayName: string, offers: AffiliateOffer[]) {
-  const asin = product.asin ?? product.specs.ASIN;
-  const amazonOffer = offers.find((offer) => offer.merchant.toLowerCase().includes("amazon"));
-  const primaryOffer = amazonOffer ?? offers[0];
-  const modelOrPack = product.specs.Model ?? product.specs.Pack ?? product.specs["Product type"] ?? displayName;
-  const listingAnchor = asin
-    ? `Amazon ASIN ${asin}`
-    : product.specs["Retailer listing anchor"] ??
-      product.specs["CJ link identity"] ??
-      `Confirm the exact listing on ${primaryOffer?.merchant ?? "the retailer"}`;
-
-  return [
-    ["Current listing", listingAnchor],
-    ["Product name", displayName],
-    ["Model or bundle", modelOrPack],
-    ["Confirm before buying", product.evidence[0] ?? "Confirm exact model, region, hardware revision, and included accessories"],
-    ["Live buying conditions", primaryOffer?.priceNote ?? "Verify live price, coupon, stock, shipping, and return window"],
-  ];
-}
-
-function updateRecord(product: Product, offers: AffiliateOffer[]) {
-  const asin = product.asin ?? product.specs.ASIN;
-  return [
-    ["Page updated", product.updatedAt ?? "Update date pending"],
-    ["Exact product", asin ? `Amazon ASIN ${asin}` : offers[0] ? `Authorized ${offers[0].merchant} listing` : "Retail listing confirmation pending"],
-    ["Price and availability", offers.length ? "Check the merchant page for the current price, coupon, stock, and delivery" : "Buying links are being refreshed"],
-    ["Seller and returns", "Confirm the selected seller, included bundle, warranty path, and return terms before ordering"],
-  ];
-}
-
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const site = await getCurrentSite();
   const { slug } = await params;
@@ -114,14 +84,6 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
   const pageTitle = productPageTitle(product);
   const displayImage = product.amazonImage ?? product.image;
   const asin = product.asin ?? product.specs.ASIN;
-  const productFacts = [
-    ["Exact product", displayName],
-    ["Brand", product.brand],
-    ["Best use case", product.bestFor],
-    ["Category", product.category],
-    [asin ? "ASIN" : "Retailer anchor", asin ?? product.specs["Retailer listing anchor"] ?? "Confirm on the exact retailer listing"],
-    ["Price band", product.priceBand],
-  ];
   const compatibilityChecks = product.evidence.slice(0, 5);
   const category = site.categories.find((item) => item.slug === product.category);
   const comparisonProducts = (product.compareSlugs ?? [])
@@ -139,34 +101,12 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
   const commerceProduct = reviewCommerceProduct(site.key, product);
   const commerceOffer = commerceProduct?.offers[0];
   const commerceIsAlternative = Boolean(commerceProduct && commerceProduct.slug !== product.slug);
-  const sourceCount = product.sources?.length ?? 0;
   const externalTests = product.externalTests ?? [];
   const evidencePresentation = productEvidencePresentation(product);
-  const listingRows = listingVerificationRows(product, displayName, primaryOffers);
-  const updateRows = updateRecord(effectiveProduct, primaryOffers);
   const officialSpecRows = Object.entries(product.specs)
     .filter(([key, value]) => key !== "Link status" && Boolean(value))
     .slice(0, 8);
   const comparisonRows = [product, ...comparisonProducts].slice(0, 4);
-  const decisionBranches = [
-    ["Best when", `Your priority is ${product.bestFor.toLowerCase()} and the exact listing matches the specs below.`],
-    ["Main trade-off", product.cons[0] ?? "The main trade-off touches your most important use case."],
-    ["Also compare", product.alternatives?.[0] ?? comparisonProducts[0]?.bestFor ?? "A nearby model fits the room, setup, or budget better."],
-    ["Confirm before checkout", product.evidence[0] ?? "Confirm model, seller, bundle, and return path before checkout."],
-  ];
-  const evidenceSnapshot = [
-    ["Updated", effectiveUpdatedAt ?? "Update schedule pending"],
-    [
-      "Decision scope",
-      externalTests.length
-        ? "Performance, fit, version, ownership, and current-listing checks"
-        : sourceCount
-          ? "Fit, compatibility, ownership, and current-listing checks"
-          : "Retailer listing, current seller, and product details should be verified before purchase",
-    ],
-    ["Version risk", product.evidence[0] ?? "Confirm exact model, bundle, and hardware version before checkout"],
-    ["Price or bundle risk", primaryOffers[0]?.priceNote ?? "Buying links are being updated; confirm seller and return window before purchase"],
-  ];
   const hasSpecificSkipSection = product.editorialSections?.some((section) => section.heading.toLowerCase().includes("who should skip"));
   const purchaseChecks = beforeYouBuyChecks(site.key);
   if (site.key === "style") {
@@ -288,6 +228,10 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                         <dd className="text-[var(--muted)]">{product.bestFor}</dd>
                       </div>
                       <div className="grid gap-1 py-2">
+                        <dt className="font-bold text-[var(--text)]">Skip when this matters</dt>
+                        <dd className="text-[var(--muted)]">{product.cons[0]}</dd>
+                      </div>
+                      <div className="grid gap-1 py-2">
                         <dt className="font-bold text-[var(--text)]">Verify on {commerceOffer.merchant}</dt>
                         <dd className="text-[var(--muted)]">{commerceOffer.priceNote}</dd>
                       </div>
@@ -310,10 +254,6 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
               {searchOpportunity ? <SearchOpportunityBlock opportunity={searchOpportunity} /> : null}
               <SearchOpportunityBacklinks site={site.key} kind="product" slug={slug} />
               <BaseMarketEditionLinks site={site} basePath={`/reviews/${slug}`} />
-              <div className="not-prose rounded-md border border-[var(--brand)] bg-[var(--brand-soft)] p-5">
-                <p className="text-xs font-bold uppercase text-[var(--brand-strong)]">{evidencePresentation.label}</p>
-                <p className="mt-2 text-sm font-semibold leading-6 text-[var(--text)]">{evidencePresentation.summary}</p>
-              </div>
               <div className="not-prose mt-5 rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-5">
                 <h2 className="text-xl font-bold">Quick verdict</h2>
                 <div className="mt-4 grid gap-4 sm:grid-cols-3">
@@ -331,17 +271,23 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                   </div>
                 </div>
               </div>
-              <div className="not-prose mt-5 rounded-md border border-[var(--border)] bg-white p-5">
-                <h2 className="text-xl font-bold">What matters most</h2>
-                <dl className="mt-4 divide-y divide-[var(--border)]">
-                  {evidenceSnapshot.map(([label, value]) => (
-                    <div className="grid gap-2 py-3 text-sm sm:grid-cols-[150px_1fr]" key={label}>
-                      <dt className="font-semibold text-[var(--muted)]">{label}</dt>
-                      <dd className="break-words font-semibold text-[var(--text)]">{value}</dd>
-                    </div>
-                  ))}
-                </dl>
-              </div>
+              <h2>The decision</h2>
+              <p>
+                {product.verdict ??
+                  `This pick works best when the product's strengths match your ${context}. The notes below separate the main upside from the trade-offs so it is easier to compare with nearby alternatives.`}
+              </p>
+              {product.whyItMatters ? (
+                <>
+                  <h2>Why it matters</h2>
+                  <p>{product.whyItMatters}</p>
+                </>
+              ) : null}
+              {product.editorialSections?.map((section) => (
+                <section key={section.heading}>
+                  <h2>{buyerFacingHeading(section.heading)}</h2>
+                  <p>{buyerFacingBody(section.body)}</p>
+                </section>
+              ))}
               {externalTests.length ? (
                 <section className="not-prose mt-5 rounded-md border border-[var(--border)] bg-white p-5" aria-labelledby="independent-test-evidence">
                   <p className="text-xs font-bold uppercase text-[var(--muted)]">Performance patterns</p>
@@ -397,42 +343,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                   </div>
                 </section>
               ) : null}
-              <div className="not-prose mt-5 grid min-w-0 gap-5 lg:grid-cols-2">
-                <section className="min-w-0 rounded-md border border-[var(--border)] bg-white p-5">
-                  <h2 className="text-xl font-bold">Current product and listing</h2>
-                  <dl className="mt-4 divide-y divide-[var(--border)]">
-                    {listingRows.map(([label, value]) => (
-                      <div className="grid gap-2 py-3 text-sm sm:grid-cols-[140px_1fr]" key={label}>
-                        <dt className="font-semibold text-[var(--muted)]">{label}</dt>
-                        <dd className="break-words font-semibold text-[var(--text)]">{value}</dd>
-                      </div>
-                    ))}
-                  </dl>
-                </section>
-                <section className="min-w-0 rounded-md border border-[var(--border)] bg-white p-5">
-                  <h2 className="text-xl font-bold">What can change before checkout</h2>
-                  <dl className="mt-4 divide-y divide-[var(--border)]">
-                    {updateRows.map(([label, value]) => (
-                      <div className="grid gap-2 py-3 text-sm sm:grid-cols-[140px_1fr]" key={label}>
-                        <dt className="font-semibold text-[var(--muted)]">{label}</dt>
-                        <dd className="break-words font-semibold text-[var(--text)]">{value}</dd>
-                      </div>
-                    ))}
-                  </dl>
-                </section>
-              </div>
               <div className="not-prose mt-5 grid gap-5 lg:grid-cols-2">
-                <section className="rounded-md border border-[var(--border)] bg-white p-5">
-                  <h2 className="text-xl font-bold">Product facts</h2>
-                  <dl className="mt-4 divide-y divide-[var(--border)]">
-                    {productFacts.map(([label, value]) => (
-                      <div className="grid grid-cols-[130px_1fr] gap-3 py-3 text-sm" key={label}>
-                        <dt className="font-semibold text-[var(--muted)]">{label}</dt>
-                        <dd className="font-bold text-[var(--text)]">{value}</dd>
-                      </div>
-                    ))}
-                  </dl>
-                </section>
                 <section className="rounded-md border border-[var(--border)] bg-white p-5">
                   <h2 className="text-xl font-bold">Compatibility checks</h2>
                   <ul className="mt-4 space-y-3 text-sm leading-6 text-[var(--muted)]">
@@ -467,35 +378,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                     </table>
                   </div>
                 </section>
-                <section className="min-w-0 rounded-md border border-[var(--border)] bg-white p-5">
-                  <h2 className="text-xl font-bold">Fit decision guide</h2>
-                  <div className="mt-4 grid gap-3">
-                    {decisionBranches.map(([label, detail]) => (
-                      <div className="rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-4" key={label}>
-                        <h3 className="text-sm font-bold uppercase text-[var(--muted)]">{label}</h3>
-                        <p className="mt-2 text-sm font-semibold leading-6 text-[var(--text)]">{detail}</p>
-                      </div>
-                    ))}
-                  </div>
-                </section>
               </div>
-              <h2>Bottom line</h2>
-              <p>
-                {product.verdict ??
-                  `This pick works best when the product's strengths match your ${context}. The notes below separate the main upside from the trade-offs so it is easier to compare with nearby alternatives.`}
-              </p>
-              {product.whyItMatters ? (
-                <>
-                  <h2>Why it matters</h2>
-                  <p>{product.whyItMatters}</p>
-                </>
-              ) : null}
-              {product.editorialSections?.map((section) => (
-                <section key={section.heading}>
-                  <h2>{buyerFacingHeading(section.heading)}</h2>
-                  <p>{buyerFacingBody(section.body)}</p>
-                </section>
-              ))}
               <h2>Where it wins</h2>
               <ul>
                 {(product.amazonFeatures?.length ? product.amazonFeatures.slice(0, 3) : product.pros).map((pro) => (
@@ -508,16 +391,6 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                   <li key={con}>{con}</li>
                 ))}
               </ul>
-              <h2>What to verify</h2>
-              <ul>
-                {product.evidence.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-              <h2>Who should buy it</h2>
-              <p>
-                Consider {displayName} if your priority is {product.bestFor.toLowerCase()} and you want a product that fits your {context} without adding unnecessary complexity.
-              </p>
               {!hasSpecificSkipSection ? (
                 <>
                   <h2>Who should skip it</h2>
@@ -610,18 +483,14 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                   </div>
                 </>
               ) : null}
-              <h2>Version and price risk</h2>
-              <p>
-                Treat the exact listing as part of the product. Confirm the model number, hardware revision, included accessories, seller, coupon state, and return path before checkout.
-                {primaryOffers[0]?.priceNote ? ` Current link note: ${primaryOffers[0].priceNote}` : ""}
-              </p>
-              <h2>Before you buy</h2>
-              <ul>
-                {purchaseChecks.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-                <li>Check for recurring quality-control patterns after confirming the exact model.</li>
-              </ul>
+              <details className="not-prose my-6 rounded-md border border-[var(--border)] bg-white p-5">
+                <summary className="cursor-pointer font-bold">Exact listing and buying checks</summary>
+                <p className="mt-3 text-sm leading-6">{displayName}{asin ? ` · ASIN ${asin}` : ""}</p>
+                {primaryOffers[0]?.priceNote ? <p className="mt-2 text-sm leading-6">{primaryOffers[0].priceNote}</p> : null}
+                <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-6">
+                  {purchaseChecks.map((item) => <li key={item}>{item}</li>)}
+                </ul>
+              </details>
               <h2>Sources and methodology</h2>
               <p>{evidencePresentation.note}</p>
               {product.sources?.length ? (

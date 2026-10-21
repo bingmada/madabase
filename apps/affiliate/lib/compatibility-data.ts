@@ -1,8 +1,10 @@
 export { miniPcProfiles } from "./tiny-models";
 // Editorial facts and offer identity are deliberately separate. No live price or stock is inferred here.
 export const evidenceCheckedAt = "October 19, 2026";
-export type EvidenceSource = { id: string; title: string; url: string; locator: string };
+export type EvidenceSource = { id: string; title: string; url: string; locator: string; checkedAt?: string };
 export const compatibilitySources: EvidenceSource[] = [
+  {id:"m70q-gen2",title:"Lenovo PSREF: ThinkCentre M70q Gen 2",url:"https://psref.lenovo.com/syspool/Sys/PDF/ThinkCentre/ThinkCentre_M70q_Gen_2/ThinkCentre_M70q_Gen_2_Spec.pdf",locator:"Memory/Storage p.3 and expansion p.5: two DDR4 slots, one storage M.2 and one WLAN M.2. Chipset label conflicts with processor information; chipset-derived claims remain unresolved.",checkedAt:"October 20, 2026"},
+  {id:"m70q-gen2-hmm",title:"Lenovo M70q Gen 2 / M90q Gen 2 maintenance manual",url:"https://download.lenovo.com/pccbbs/thinkcentre_pdf/m70q_gen2_m90q_gen2_hmm_en.pdf",locator:"Manufacturer maintenance reference; use the exact machine type and Parts Lookup for fitted parts. This library has not verified an M70q Gen 2 cable/carrier or a cross-generation replacement.",checkedAt:"October 20, 2026"},
   {id:"m710q",title:"Lenovo PSREF: ThinkCentre M710 Tiny",url:"https://psref.lenovo.com/syspool/Sys/PDF/ThinkCentre/ThinkCentre_M710_Tiny/ThinkCentre_M710_Tiny_Spec.pdf",locator:"One-page platform specification: memory, storage, processor-dependent memory rate and power"},
   {id:"m710q-hmm",title:"Lenovo M710q user and hardware maintenance manual",url:"https://download.lenovo.com/pccbbs/pubs/m710q/en/index.html",locator:"Cover machine types; replaceable parts; storage drive, memory and M.2 replacement topics"},
   {id:"m910q",title:"Lenovo PSREF: ThinkCentre M910 Tiny",url:"https://psref.lenovo.com/syspool/Sys/PDF/ThinkCentre/ThinkCentre_M910_Tiny/ThinkCentre_M910_Tiny_Spec.pdf",locator:"One-page platform specification: memory, storage, chipset and power; M910q not M910x"},

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-10-19",
+  "updatedAt": "2026-10-20",
   "ownerConstraints": {
     "handsOnTestingAvailable": false,
     "rule": "Do not claim first-hand use, testing, measurements, comfort, durability or performance. Default product evidence to official-spec; use research-synthesis only when every external test preserves its source, setup, result, interpretation and limitation.",
@@ -291,5 +291,23 @@
     ],
     "reviewPolicy": "Day 7/14/30 dates begin at actual production activation; previous cohorts retain their gates.",
     "report": "apps/affiliate/reports/compatibility-search-2026-10-19/README.md"
+  },
+  "editorialExpansion20261020": {
+    "authorization": "Owner explicitly requested fixing all identified problems and completing all seven proposed directions on 2026-10-20, then directed staged execution with quality taking priority. This supersedes earlier blanket publication restrictions for this exact scope; no new skill scoring or output quota applies.",
+    "status": "implemented-awaiting-local-validation",
+    "registeredGuides": [
+      "homeoffice:guide:caldigit-ts4-vs-ts5-vs-ts5-plus",
+      "homeoffice:guide:insta360-link-2-vs-link-2-pro-webcam",
+      "smarthome:guide:matter-apple-google-home-assistant-feature-checklist",
+      "network:guide:home-network-smart-home-outage-plan",
+      "smarthome:guide:renter-no-drill-smart-home-plan"
+    ],
+    "existingRoutes": [
+      "https://homeoffice.madabase.com/compatibility/mini-pcs",
+      "https://madabase.com/guides/household-tech-subscription-checklist"
+    ],
+    "newMerchants": 0,
+    "newPurchaseIdentities": 0,
+    "measurement": "Treat five new guides, the model addition and the calculator as separately reviewable cohorts after actual publication. No monthly search volume, ranking or commercial result has been established."
   }
 }

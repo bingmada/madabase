@@ -1,4 +1,5 @@
 import type { SiteKey } from "./types";
+import { editorialExpansionGuides } from "./october-editorial-expansion";
 
 export type SiteDecisionModule = {
   site: SiteKey;
@@ -307,5 +308,14 @@ const decisionModules: SiteDecisionModule[] = [
 ];
 
 export function siteDecisionModules(site: SiteKey) {
-  return decisionModules.filter((module) => module.site === site);
+  const additions = editorialExpansionGuides.filter((guide) => guide.site === site);
+  return [
+    ...decisionModules.filter((module) => module.site === site),
+    ...(additions.length ? [{
+      site, slug: "current-setup-decisions", eyebrow: "New in the library",
+      title: site === "homeoffice" ? "Compare the next generation with the equipment you own" : site === "network" ? "Plan for connection and power failures" : "Plan compatibility and reversible installation",
+      description: site === "homeoffice" ? "Separate an upgrade you can use from a replacement that changes little." : site === "network" ? "Keep local control, access and recovery steps separate from cloud access." : "Check the actual functions, required network and installation before choosing a device.",
+      links: additions.map((guide) => ({ href: `/guides/${guide.slug}`, label: guide.title, note: guide.dek })),
+    }] : []),
+  ];
 }

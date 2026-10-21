@@ -1,0 +1,110 @@
+{
+  "description": "Substantive published changes. Dates describe the linked content change, not an automatic build or a stock check.",
+  "entries": [
+    {
+      "href": "https://homeoffice.madabase.com/compatibility/mini-pcs",
+      "updatedAt": "2026-10-20",
+      "change": "Expanded to eight Tiny models, including a separate M70q Gen 2 reference, with generation-specific memory and unresolved-parts boundaries."
+    },
+    {
+      "href": "https://homeoffice.madabase.com/guides/thinkcentre-m720q-upgrade-compatibility-guide",
+      "updatedAt": "2026-10-20",
+      "change": "Added cable-and-carrier checks, existing-parts checks and the conditions for avoiding a duplicate kit purchase."
+    },
+    {
+      "href": "https://homeoffice.madabase.com/guides/thinkcentre-m920q-upgrade-compatibility-guide",
+      "updatedAt": "2026-10-20",
+      "change": "Clarified machine-type parts evidence and the conflict between a PCIe card and a 2.5-inch drive."
+    },
+    {
+      "href": "https://homeoffice.madabase.com/guides/thinkcentre-m920x-upgrade-compatibility-guide",
+      "updatedAt": "2026-10-20",
+      "change": "Separated two-NVMe storage options from configuration-specific PCIe and SATA fit."
+    },
+    {
+      "href": "https://homeoffice.madabase.com/compatibility/docks",
+      "updatedAt": "2026-10-19",
+      "change": "Added complete cable paths, Mac display limits, DisplayLink requirements and missing-parts checks."
+    },
+    {
+      "href": "https://homeoffice.madabase.com/compatibility/monitor-arms",
+      "updatedAt": "2026-10-19",
+      "change": "Added actual clamp geometry, minimum monitor weight, reinforcement thickness and unknown-fit outcomes."
+    },
+    {
+      "href": "https://network.madabase.com/compatibility/ethernet",
+      "updatedAt": "2026-10-19",
+      "change": "Separated local NAS, routed, direct and internet paths, with complete port budgets and link-rate ceilings."
+    },
+    {
+      "href": "https://network.madabase.com/guides/deco-be63-be67-two-pack-vs-three-pack",
+      "updatedAt": "2026-10-19",
+      "change": "Clarified exact pack choices, the WAN/backhaul path and verified buying options."
+    },
+    {
+      "href": "https://homeoffice.madabase.com/reviews/caldigit-ts4-thunderbolt-dock",
+      "updatedAt": "2026-10-19",
+      "change": "Added the TS4-versus-newer-dock decision and the limits that a new dock cannot remove."
+    },
+    {
+      "href": "https://baby.madabase.com/guides/toddler-learning-towers-buying-guide",
+      "updatedAt": "2026-10-19",
+      "change": "Paused an unavailable exact listing and distinguished the Original model from a different recalled folding model."
+    },
+    {
+      "href": "https://homeoffice.madabase.com/guides/caldigit-ts4-vs-ts5-vs-ts5-plus",
+      "updatedAt": "2026-10-20",
+      "change": "Added a three-generation comparison with keep-or-upgrade decisions, charging, network and cable-path checks."
+    },
+    {
+      "href": "https://homeoffice.madabase.com/guides/insta360-link-2-vs-link-2-pro-webcam",
+      "updatedAt": "2026-10-20",
+      "change": "Added the Link 2 and Pro comparison, including fixed versus motorized framing and computer software limitations."
+    },
+    {
+      "href": "https://smarthome.madabase.com/guides/matter-apple-google-home-assistant-feature-checklist",
+      "updatedAt": "2026-10-20",
+      "change": "Added platform-specific feature checks and the differences between a native integration and a Matter bridge."
+    },
+    {
+      "href": "https://network.madabase.com/guides/home-network-smart-home-outage-plan",
+      "updatedAt": "2026-10-20",
+      "change": "Added a complete-chain outage plan that separates ISP loss, local-network failure and loss of mains power."
+    },
+    {
+      "href": "https://smarthome.madabase.com/guides/renter-no-drill-smart-home-plan",
+      "updatedAt": "2026-10-20",
+      "change": "Added exact-generation no-drill mount checks, surface limitations and a reversible installation plan."
+    },
+    {
+      "href": "https://madabase.com/guides/household-tech-subscription-checklist",
+      "updatedAt": "2026-10-20",
+      "change": "Added a two-option ownership calculator with separate first-year and renewal subscriptions, consumables and electricity."
+    },
+    {
+      "href": "https://homeoffice.madabase.com/guides/under-desk-pedal-exercisers-buying-guide",
+      "updatedAt": "2026-10-20",
+      "change": "Added moving-knee clearance, chair stability and powered-versus-manual checks without transferring another brand's measurements."
+    },
+    {
+      "href": "https://homeoffice.madabase.com/guides/vesa-monitor-adapters-buying-guide",
+      "updatedAt": "2026-10-20",
+      "change": "Separated model-specific and grip-style adapters, combined load and unresolved exact-monitor fit."
+    },
+    {
+      "href": "https://homeoffice.madabase.com/guides/receipt-scanners-buying-guide",
+      "updatedAt": "2026-10-20",
+      "change": "Identified the RR-60 as a single-sheet scanner and added exact paper-handling and export checks."
+    },
+    {
+      "href": "https://homeoffice.madabase.com/guides/webcam-key-lights-buying-guide",
+      "updatedAt": "2026-10-20",
+      "change": "Added camera placement, reflection, clamp and power checks, keeping different manufacturers' specifications separate."
+    },
+    {
+      "href": "https://homeoffice.madabase.com/guides/rolling-file-cabinets-buying-guide",
+      "updatedAt": "2026-10-20",
+      "change": "Corrected the linked item to an open letter-size file cart and compared it with an enclosed drawer cabinet."
+    }
+  ]
+}

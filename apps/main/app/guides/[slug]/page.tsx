@@ -5,6 +5,7 @@ import { ArrowLeft, ArrowRight, Check, ExternalLink } from "lucide-react";
 import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/JsonLd";
 import { TrackedLink } from "@/components/TrackedLink";
+import { OwnershipCostCalculator } from "@/components/OwnershipCostCalculator";
 import { getGuide, guides } from "@/lib/content";
 import { pageMetadata, siteUrl } from "@/lib/seo";
 
@@ -27,7 +28,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
     "@type": "Article",
     headline: guide.title,
     description: guide.dek,
-    dateModified: "2026-07-21",
+    dateModified: new Date(guide.updatedAt).toISOString().slice(0, 10),
     datePublished: "2026-07-21",
     mainEntityOfPage: canonical,
     image: `${siteUrl}${guide.image}`,
@@ -76,6 +77,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
                 {guide.steps.map((step) => <li key={step}>{step}</li>)}
               </ol>
             </section>
+            {guide.slug === "household-tech-subscription-checklist" ? <OwnershipCostCalculator /> : null}
             <div className="article-prose">
               {guide.sections.map((section) => (
                 <section key={section.heading}>

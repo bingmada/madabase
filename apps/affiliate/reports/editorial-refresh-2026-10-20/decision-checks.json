@@ -1,0 +1,126 @@
+{
+  "passed": true,
+  "checks": 30,
+  "rows": [
+    {
+      "name": "One year does not charge a renewal",
+      "passed": true
+    },
+    {
+      "name": "Three years includes exactly two renewals",
+      "passed": true
+    },
+    {
+      "name": "Power is converted from watts to kWh",
+      "passed": true
+    },
+    {
+      "name": "Complete three-year example",
+      "passed": true
+    },
+    {
+      "name": "Zero-priced confirmed inputs are allowed",
+      "passed": true
+    },
+    {
+      "name": "Invalid purchase -1 rejected",
+      "passed": true
+    },
+    {
+      "name": "Invalid purchase Infinity rejected",
+      "passed": true
+    },
+    {
+      "name": "Invalid purchase NaN rejected",
+      "passed": true
+    },
+    {
+      "name": "More than 24 powered hours rejected",
+      "passed": true
+    },
+    {
+      "name": "Invalid ownership period 0",
+      "passed": true
+    },
+    {
+      "name": "Invalid ownership period 1.5",
+      "passed": true
+    },
+    {
+      "name": "Invalid ownership period 11",
+      "passed": true
+    },
+    {
+      "name": "Five distinct canonical guides",
+      "passed": true
+    },
+    {
+      "name": "Published registry and sources: caldigit-ts4-vs-ts5-vs-ts5-plus",
+      "passed": true
+    },
+    {
+      "name": "Discovery and reciprocal links: caldigit-ts4-vs-ts5-vs-ts5-plus",
+      "passed": true
+    },
+    {
+      "name": "Published registry and sources: insta360-link-2-vs-link-2-pro-webcam",
+      "passed": true
+    },
+    {
+      "name": "Discovery and reciprocal links: insta360-link-2-vs-link-2-pro-webcam",
+      "passed": true
+    },
+    {
+      "name": "Published registry and sources: matter-apple-google-home-assistant-feature-checklist",
+      "passed": true
+    },
+    {
+      "name": "Discovery and reciprocal links: matter-apple-google-home-assistant-feature-checklist",
+      "passed": true
+    },
+    {
+      "name": "Published registry and sources: home-network-smart-home-outage-plan",
+      "passed": true
+    },
+    {
+      "name": "Discovery and reciprocal links: home-network-smart-home-outage-plan",
+      "passed": true
+    },
+    {
+      "name": "Published registry and sources: renter-no-drill-smart-home-plan",
+      "passed": true
+    },
+    {
+      "name": "Discovery and reciprocal links: renter-no-drill-smart-home-plan",
+      "passed": true
+    },
+    {
+      "name": "All 54 generic-title replacements are topic-specific and distinct",
+      "passed": true
+    },
+    {
+      "name": "Cart guide distinguishes the linked cart from a cabinet",
+      "passed": true
+    },
+    {
+      "name": "Scanner guide identifies individual receipt feeding",
+      "passed": true
+    },
+    {
+      "name": "Other-brand specifications are not transferred to the linked product",
+      "passed": true
+    },
+    {
+      "name": "Gen 2 is a separate searchable model",
+      "passed": true
+    },
+    {
+      "name": "Gen 2 does not inherit a second NVMe position",
+      "passed": true
+    },
+    {
+      "name": "Gen 2 cannot buy another generation's SATA kit",
+      "passed": true
+    }
+  ]
+}

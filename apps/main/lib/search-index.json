@@ -2,6 +2,22 @@
   {
     "site": "homeoffice",
     "kind": "topic",
+    "title": "ThinkCentre M70q Gen 2 Tiny: memory, storage and FRU reference",
+    "summary": "2 DDR4 SO-DIMM slots; up to 64GB documented. CPU-specific memory rates must be checked. 64GB documented; 1 storage M.2 position(s). Machine-type-specific parts evidence; no hands-on build certification.",
+    "href": "https://homeoffice.madabase.com/compatibility/mini-pcs#tiny-model-m70q-gen2",
+    "category": "desks",
+    "modelIds": [
+      "m70q-gen2"
+    ],
+    "aliases": [
+      "ThinkCentre M70q Gen 2 Tiny",
+      "11MY 11N0 11N3 11N4 11N1 11N2 11N5 11N6",
+      "RAM SSD NVMe SATA cable carrier FRU parts upgrade"
+    ]
+  },
+  {
+    "site": "homeoffice",
+    "kind": "topic",
     "title": "ThinkCentre M710q Tiny: memory, storage and FRU reference",
     "summary": "2 DDR4 SO-DIMM slots; DDR4-2400, reduced to the processor's supported rate. 32GB documented; 1 storage M.2 position(s). Machine-type-specific parts evidence; no hands-on build certification.",
     "href": "https://homeoffice.madabase.com/compatibility/mini-pcs#tiny-model-m710q",
@@ -96,11 +112,12 @@
     "site": "homeoffice",
     "kind": "topic",
     "title": "ThinkCentre Tiny upgrade planner",
-    "summary": "Seven Tiny profiles: M710q, M910q, M720q, M920q, M920x, M70q Gen 3 and M90q Gen 3; DDR4/DDR5, storage positions and machine-specific FRU checks.",
+    "summary": "8 Tiny profiles: M70q Gen 2, M710q, M910q, M720q, M920q, M920x, M70q Gen 3, M90q Gen 3; DDR4/DDR5, storage positions and machine-specific FRU checks.",
     "href": "https://homeoffice.madabase.com/compatibility/mini-pcs",
     "category": "desks",
     "aliases": [
       "RAM SSD NVMe SATA PCIe FRU cable carrier retainer riser",
+      "ThinkCentre M70q Gen 2 Tiny 11MY 11N0 11N3 11N4 11N1 11N2 11N5 11N6 2 DDR4 SO-DIMM slots; up to 64GB documented. CPU-specific memory rates must be checked",
       "ThinkCentre M710q Tiny 10MQ 10MR 10MS 10MT 10QR 2 DDR4 SO-DIMM slots; DDR4-2400, reduced to the processor's supported rate",
       "ThinkCentre M910q Tiny 10MU 10MV 10MW 10MX 10QN 10V7 10VF 2 DDR4 SO-DIMM slots; DDR4-2400, subject to CPU downclocking",
       "ThinkCentre M720q Tiny 10T7 10T8 10T9 10TA 10TC 10U8 10U9 10UA 2 DDR4 SO-DIMM slots; DDR4-2666 platform specification",
@@ -1428,16 +1445,16 @@
   {
     "site": "homeoffice",
     "kind": "guide",
-    "title": "Acoustic desk dividers: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to acoustic desk dividers, using an exact current Amazon item as the checkout anchor while comparing it with room treatment and microphone positioning.",
+    "title": "Acoustic Desk Dividers: Panel Size, Mounting and Noise Limits",
+    "summary": "Clear opening if claims are disciplined: a small felt divider can block sight lines and absorb some nearby reflections but cannot promise speech privacy or soundproofing.",
     "href": "https://homeoffice.madabase.com/guides/acoustic-desk-dividers-buying-guide",
     "category": "meetings"
   },
   {
     "site": "homeoffice",
     "kind": "guide",
-    "title": "Active sitting stools: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to active sitting stools, using an exact current Amazon item as the checkout anchor while comparing it with a conventional task chair plus movement breaks.",
+    "title": "Active Sitting Stools: Height, Base Movement and Foot Support",
+    "summary": "Independent perch/wobble decision: height range, base behavior, seat edge, foot support, task duration and posture changes matter more than an unsupported active-sitting health claim.",
     "href": "https://homeoffice.madabase.com/guides/active-sitting-stools-buying-guide",
     "category": "ergonomics"
   },
@@ -1460,64 +1477,64 @@
   {
     "site": "homeoffice",
     "kind": "guide",
-    "title": "Desk cable grommets: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to desk cable grommets, using an exact current Amazon item as the checkout anchor while comparing it with surface cable clips or a rear-edge route.",
+    "title": "Desk Cable Grommets: Hole Size, Plug Clearance and Desktop Fit",
+    "summary": "A permanent-hole decision distinct from cable trays: bundle width, plug passage, barrel/cutout diameter, surface material, drill clearance, abrasion, cap or brush style and downstream tray location.",
     "href": "https://homeoffice.madabase.com/guides/desk-cable-grommets-buying-guide",
     "category": "desks"
   },
   {
     "site": "homeoffice",
     "kind": "guide",
-    "title": "Desk cable sleeves: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to desk cable sleeves, using an exact current Amazon item as the checkout anchor while comparing it with individual clips and an under-desk cable tray.",
+    "title": "Desk Cable Sleeves: Bundle Diameter, Breakouts and Access",
+    "summary": "A true sleeve page is distinct from a mixed clip-and-tie kit. Choose wrap, split-loom, zipper or braided construction by bundle diameter, breakouts, movement, cut finishing, heat and access rather than repeat unsupported pet-proof or fire-safety claims.",
     "href": "https://homeoffice.madabase.com/guides/desk-cable-sleeves-buying-guide",
     "category": "desks"
   },
   {
     "site": "homeoffice",
     "kind": "guide",
-    "title": "Desk pegboard organizers: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to desk pegboard organizers, using an exact current Amazon item as the checkout anchor while comparing it with drawer organizers and cable trays.",
+    "title": "Desk Pegboards: Attachment, Reach and Accessory Load",
+    "summary": "Independent vertical-storage decision: wall, clamp or freestanding mount; desk thickness; board dimensions; accessory ecosystem; load distribution; wobble; reach; and clearance behind a sit-stand desk.",
     "href": "https://homeoffice.madabase.com/guides/desk-pegboard-organizers-buying-guide",
     "category": "desks"
   },
   {
     "site": "homeoffice",
     "kind": "guide",
-    "title": "Desktop computer speakers: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to desktop computer speakers, using an exact current Amazon item as the checkout anchor while comparing it with headphones or monitor-integrated speakers.",
+    "title": "Desktop Speakers: Inputs, Desk Space and Volume Controls",
+    "summary": "Qualified but highly competitive. The site needs a narrow home-office angle: near-field distance, footprint, input switching, USB/analog/Bluetooth paths, standby noise, call behavior, and shared work/play use.",
     "href": "https://homeoffice.madabase.com/guides/desktop-computer-speakers-buying-guide",
     "category": "meetings"
   },
   {
     "site": "homeoffice",
     "kind": "guide",
-    "title": "Desktop file organizers: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to desktop file organizers, using an exact current Amazon item as the checkout anchor while comparing it with drawer filing or a paperless workflow.",
+    "title": "Desktop File Organizers: Paper Size, Capacity and Access",
+    "summary": "Niche but separable by letter versus folder dimensions, vertical slots versus in/out trays, active-paper volume, label visibility, expansion, tipping and the footprint consumed on a small desk.",
     "href": "https://homeoffice.madabase.com/guides/desktop-file-organizers-buying-guide",
     "category": "desks"
   },
   {
     "site": "homeoffice",
     "kind": "guide",
-    "title": "Desktop ring lights: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to desktop ring lights, using an exact current Amazon item as the checkout anchor while comparing it with two diffused side lights for more directional control.",
+    "title": "Desktop Ring Lights: Camera Position, Glare and Stand Fit",
+    "summary": "Qualified but lower priority because competition is strong. Preserve the distinct ring-light question: opening size, camera/phone placement, working distance, catchlight, desk stability, and reflections.",
     "href": "https://homeoffice.madabase.com/guides/desktop-ring-lights-buying-guide",
     "category": "meetings"
   },
   {
     "site": "homeoffice",
     "kind": "guide",
-    "title": "Desktop shelf systems: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to desktop shelf systems, using an exact current Amazon item as the checkout anchor while comparing it with wall shelving or drawer storage.",
+    "title": "Desktop Shelves: Depth, Height, Load and Monitor Clearance",
+    "summary": "Check desk width and depth, monitor stand or arm geometry, keyboard clearance, shelf load, speaker placement, cable exits and whether a simple riser or wall shelf solves the same job.",
     "href": "https://homeoffice.madabase.com/guides/desktop-shelf-systems-buying-guide",
     "category": "desks"
   },
   {
     "site": "homeoffice",
     "kind": "guide",
-    "title": "Floor cable covers: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to floor cable covers, using an exact current Amazon item as the checkout anchor while comparing it with rerouting power and data away from walking paths.",
+    "title": "Floor Cable Covers: Cable Capacity, Wheels and Trip Edges",
+    "summary": "",
     "href": "https://homeoffice.madabase.com/guides/floor-cable-covers-buying-guide",
     "category": "desks"
   },
@@ -1525,31 +1542,31 @@
     "site": "homeoffice",
     "kind": "guide",
     "title": "4K webcams Buying Guide: Workspace Fit, Workflow, and Ownership Cost",
-    "summary": "A decision-first guide to 4k webcams, using an exact current Amazon item as the checkout anchor while comparing it with a good 1080p webcam with better lighting.",
+    "summary": "Very competitive. The page must answer when 4K changes crops, digital zoom, framing, bandwidth, USB mode, lighting, privacy, software and meeting-app output instead of equating resolution with quality.",
     "href": "https://homeoffice.madabase.com/guides/four-k-webcams-buying-guide",
     "category": "meetings"
   },
   {
     "site": "homeoffice",
     "kind": "guide",
-    "title": "Ink tank printers: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to ink tank printers, using an exact current Amazon item as the checkout anchor while comparing it with laser printers or cartridge inkjets for low volume.",
+    "title": "Ink Tank Printers: Print Volume, Ink Cost and Maintenance",
+    "summary": "Demand is strong but competitive. The page must win on monthly volume, idle periods, duplex/ADF needs, ink maintenance, footprint, and cost modeling rather than generic rankings.",
     "href": "https://homeoffice.madabase.com/guides/ink-tank-printers-buying-guide",
     "category": "meetings"
   },
   {
     "site": "homeoffice",
     "kind": "guide",
-    "title": "Keyboard wrist rests: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to keyboard wrist rests, using an exact current Amazon item as the checkout anchor while comparing it with desk-height and keyboard-angle adjustment.",
+    "title": "Keyboard Wrist Rests: Height, Palm Support and Keyboard Fit",
+    "summary": "Keep the purchase question evidence-led: match height, slope, depth and width to the keyboard; support the palm during pauses rather than pinning wrists while typing; fix desk and keyboard position first.",
     "href": "https://homeoffice.madabase.com/guides/keyboard-wrist-rests-buying-guide",
     "category": "ergonomics"
   },
   {
     "site": "homeoffice",
     "kind": "guide",
-    "title": "Laptop cooling pads: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to laptop cooling pads, using an exact current Amazon item as the checkout anchor while comparing it with raising the laptop and cleaning its cooling path.",
+    "title": "Laptop Cooling Pads: Vent Position, Elevation and Fan Fit",
+    "summary": "Separate simple elevation from forced airflow, map intake vents and seal geometry, and avoid inventing temperature gains without testing.",
     "href": "https://homeoffice.madabase.com/guides/laptop-cooling-pads-buying-guide",
     "category": "ergonomics"
   },
@@ -1564,8 +1581,8 @@
   {
     "site": "homeoffice",
     "kind": "guide",
-    "title": "Monitor light bars: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to monitor light bars, using an exact current Amazon item as the checkout anchor while comparing it with an adjustable desk lamp positioned away from the screen.",
+    "title": "Monitor Light Bars: Screen Shape, Glare and Webcam Clearance",
+    "summary": "Demand is current and competitive. The independent purchase is clamp/curvature/camera fit, forward glare, user glare, desk-only illumination, power, controls, and color-work boundaries.",
     "href": "https://homeoffice.madabase.com/guides/monitor-light-bars-buying-guide",
     "category": "ergonomics"
   },
@@ -1580,15 +1597,15 @@
   {
     "site": "homeoffice",
     "kind": "guide",
-    "title": "Mouse wrist rests: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to mouse wrist rests, using an exact current Amazon item as the checkout anchor while comparing it with pointer placement and forearm support changes.",
+    "title": "Mouse Wrist Rests: Reach, Movement and Palm Support",
+    "summary": "Check mouse travel, palm glide versus stationary pads, input-device size, reach and side pressure determine fit. Avoid treatment claims.",
     "href": "https://homeoffice.madabase.com/guides/mouse-wrist-rests-buying-guide",
     "category": "ergonomics"
   },
   {
     "site": "homeoffice",
     "kind": "guide",
-    "title": "Office lumbar support cushions: Fit, Trade-offs & Buying Guide",
+    "title": "Lumbar Cushions: Chair Shape, Thickness and Seat-Depth Loss",
     "summary": "Check whether a lumbar cushion fits the chair's backrest and leaves enough usable seat depth, or whether adjusting the existing chair is the better first step.",
     "href": "https://homeoffice.madabase.com/guides/office-lumbar-cushions-buying-guide",
     "category": "ergonomics"
@@ -1596,7 +1613,7 @@
   {
     "site": "homeoffice",
     "kind": "guide",
-    "title": "Office printer stands: Fit, Trade-offs & Buying Guide",
+    "title": "Printer Stands: Loaded Size, Paper Paths and Cable Clearance",
     "summary": "Size a printer stand with trays extended, scanner lid open and cables connected. Compare a fixed shelf with a rolling cart before buying extra storage.",
     "href": "https://homeoffice.madabase.com/guides/office-printer-stands-buying-guide",
     "category": "desks"
@@ -1620,73 +1637,89 @@
   {
     "site": "homeoffice",
     "kind": "guide",
-    "title": "Overhead book scanners: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to overhead book scanners, using an exact current Amazon item as the checkout anchor while comparing it with flatbed scanning or a copy stand with a camera.",
+    "title": "Overhead Book Scanners: Page Size, Flattening and OCR Workflow",
+    "summary": "Independent intent is bound-book handling, page curvature, glare, capture area, OCR, privacy, and archive workflow rather than ordinary document scanning.",
     "href": "https://homeoffice.madabase.com/guides/overhead-book-scanners-buying-guide",
     "category": "meetings"
   },
   {
     "site": "homeoffice",
     "kind": "guide",
-    "title": "Portable photo printers: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to portable photo printers, using an exact current Amazon item as the checkout anchor while comparing it with retail photo printing or a desktop inkjet.",
+    "title": "Portable Photo Printers: Print Size, Media and Phone Support",
+    "summary": "Strong current intent, but established publishers compete heavily. A qualified page needs print technology, exact media cost, image permanence limits, app dependency, size, and portability.",
     "href": "https://homeoffice.madabase.com/guides/portable-photo-printers-buying-guide",
     "category": "meetings"
   },
   {
     "site": "homeoffice",
     "kind": "guide",
-    "title": "PTZ conference cameras: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to ptz conference cameras, using an exact current Amazon item as the checkout anchor while comparing it with fixed webcams or all-in-one video bars.",
+    "title": "PTZ Conference Cameras: Room Framing, Control and USB Support",
+    "summary": "Independent room-scale decision covering optical versus digital zoom, back-of-room distance, presets, tracking, UVC/HDMI/IP outputs, mounting, microphones and whether a video bar is simpler.",
     "href": "https://homeoffice.madabase.com/guides/ptz-conference-cameras-buying-guide",
     "category": "meetings"
   },
   {
     "site": "homeoffice",
     "kind": "guide",
-    "title": "Receipt scanners: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to receipt scanners, using an exact current Amazon item as the checkout anchor while comparing it with phone capture plus accounting software.",
+    "title": "Receipt Scanners: Single-Sheet Feeding, Paper Limits and Export",
+    "summary": "Compare the Epson RR-60’s individual-feed workflow with an automatic feeder or phone capture, including paper limits, export and software costs.",
     "href": "https://homeoffice.madabase.com/guides/receipt-scanners-buying-guide",
     "category": "meetings"
   },
   {
     "site": "homeoffice",
     "kind": "guide",
-    "title": "Rolling file cabinets: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to rolling file cabinets, using an exact current Amazon item as the checkout anchor while comparing it with fixed drawers or digitized document storage.",
+    "title": "Rolling File Storage: Open Cart or Drawer Cabinet?",
+    "summary": "Choose between an open letter-size hanging-file cart and an enclosed drawer cabinet, then check folder access, floor clearance and documented load limits.",
     "href": "https://homeoffice.madabase.com/guides/rolling-file-cabinets-buying-guide",
     "category": "desks"
   },
   {
     "site": "homeoffice",
     "kind": "guide",
-    "title": "Under-desk foot hammocks: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to under-desk foot hammocks, using an exact current Amazon item as the checkout anchor while comparing it with an adjustable office footrest.",
+    "title": "Desk Foot Hammocks: Attachment, Knee Space and Stable Support",
+    "summary": "Compare stable foot support against a swinging hammock and verify desk width, attachment path, knee clearance, frame interference and standing-desk motion.",
     "href": "https://homeoffice.madabase.com/guides/under-desk-foot-hammocks-buying-guide",
     "category": "ergonomics"
   },
   {
     "site": "homeoffice",
     "kind": "guide",
-    "title": "Under-desk pedal exercisers: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to under-desk pedal exercisers, using an exact current Amazon item as the checkout anchor while comparing it with scheduled walking and standing breaks.",
+    "title": "Under-Desk Pedal Exercisers: Knee Clearance and Chair Movement",
+    "summary": "Measure moving knee clearance, chair stability and control reach, and distinguish powered pedal motion from manual resistance before choosing a desk exerciser.",
     "href": "https://homeoffice.madabase.com/guides/under-desk-pedal-exercisers-buying-guide",
     "category": "ergonomics"
   },
   {
     "site": "homeoffice",
     "kind": "guide",
-    "title": "VESA monitor adapters: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to vesa monitor adapters, using an exact current Amazon item as the checkout anchor while comparing it with a monitor with native VESA mounting points.",
+    "title": "Non-VESA Monitor Adapters: Grip, Load and Port Clearance",
+    "summary": "Check the exact monitor enclosure, attachment method, combined load and cable clearance before fitting a non-VESA screen to an arm.",
     "href": "https://homeoffice.madabase.com/guides/vesa-monitor-adapters-buying-guide",
     "category": "ergonomics"
   },
   {
     "site": "homeoffice",
     "kind": "guide",
-    "title": "Webcam key lights: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to webcam key lights, using an exact current Amazon item as the checkout anchor while comparing it with window light or a conventional diffused lamp.",
+    "title": "Webcam Key Lights: Position, Glare, Power and Mounting",
+    "summary": "Compare an existing lamp, a monitor-mounted light and a separate stand by face lighting, screen reflections, mounting space and USB power.",
     "href": "https://homeoffice.madabase.com/guides/webcam-key-lights-buying-guide",
+    "category": "meetings"
+  },
+  {
+    "site": "homeoffice",
+    "kind": "guide",
+    "title": "CalDigit TS4 vs TS5 vs TS5 Plus: Upgrade or Keep Your Dock?",
+    "summary": "Compare the three CalDigit generations by host connection, charging, Ethernet and display wiring, with a separate decision for keeping a working TS4.",
+    "href": "https://homeoffice.madabase.com/guides/caldigit-ts4-vs-ts5-vs-ts5-plus",
+    "category": "desks"
+  },
+  {
+    "site": "homeoffice",
+    "kind": "guide",
+    "title": "Insta360 Link 2 vs Link 2 Pro: Fixed Desk or Moving Presenter?",
+    "summary": "Choose between Link 2, Link 2C, Link 2 Pro and Link 2C Pro by framing, sensor, audio needs, computer support and the equipment you already own.",
+    "href": "https://homeoffice.madabase.com/guides/insta360-link-2-vs-link-2-pro-webcam",
     "category": "meetings"
   },
   {
@@ -2785,202 +2818,210 @@
   {
     "site": "network",
     "kind": "guide",
-    "title": "Bulk Ethernet cable reels: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to bulk ethernet cable reels, using an exact current Amazon item as the checkout anchor while comparing it with factory-terminated patch cables or contractor-installed cabling.",
+    "title": "Bulk Ethernet Cable: Conductor, Jacket and Installation Checks",
+    "summary": "Check solid bare copper versus CCA, conductor gauge, Cat6/Cat6A, CMR/CMP/outdoor jacket, PoE heat, distance marks, pull packaging and certification after termination.",
     "href": "https://network.madabase.com/guides/bulk-ethernet-cable-reels-buying-guide",
     "category": "wired"
   },
   {
     "site": "network",
     "kind": "guide",
-    "title": "Cloud-managed Wi-Fi access points: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to cloud-managed wi-fi access points, using an exact current Amazon item as the checkout anchor while comparing it with locally managed access points or a consumer mesh.",
+    "title": "Cloud-Managed Access Points: Licences, Control and Offline Use",
+    "summary": "Check license term, retained features after expiry, remote logs, controller choice, tenant transfer and Internet-outage behavior can determine ownership cost.",
     "href": "https://network.madabase.com/guides/cloud-managed-access-points-buying-guide",
     "category": "wifi"
   },
   {
     "site": "network",
     "kind": "guide",
-    "title": "Coax cable testers: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to coax cable testers, using an exact current Amazon item as the checkout anchor while comparing it with a multimeter plus professional signal-level testing.",
+    "title": "Coax Cable Testers: Continuity, Mapping or Signal Testing?",
+    "summary": "Check F-connector fit, continuity and remote IDs, length and distance-to-fault, live CATV detection, topology mapping and the limits of a basic continuity result.",
     "href": "https://network.madabase.com/guides/coax-cable-testers-buying-guide",
     "category": "wired"
   },
   {
     "site": "network",
     "kind": "guide",
-    "title": "Coax compression tools: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to coax compression tools, using an exact current Amazon item as the checkout anchor while comparing it with factory-terminated coax leads or installer termination.",
+    "title": "Coax Compression Tools: Match the Cable and Connector",
+    "summary": "Check match RG59/RG6/RG6Q/RG11, F/BNC/RCA connector series, compression stroke and plunger, prep dimensions, confined access and a post-termination signal test.",
     "href": "https://network.madabase.com/guides/coax-compression-tools-buying-guide",
     "category": "wired"
   },
   {
     "site": "network",
     "kind": "guide",
-    "title": "Ethernet inline couplers: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to ethernet inline couplers, using an exact current Amazon item as the checkout anchor while comparing it with one correctly sized uninterrupted cable run.",
+    "title": "Ethernet Couplers: Cable Category, Shielding and Placement",
+    "summary": "A serviceable extension purchase governed by cable category, shield path, PoE current, link speed, jack retention and whole-channel length; one uninterrupted correctly sized cable remains the benchmark.",
     "href": "https://network.madabase.com/guides/ethernet-inline-couplers-buying-guide",
     "category": "wired"
   },
   {
     "site": "network",
     "kind": "guide",
-    "title": "Ethernet network taps: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to ethernet network taps, using an exact current Amazon item as the checkout anchor while comparing it with managed-switch port mirroring.",
+    "title": "Ethernet Network TAPs: Link Speed, Capture and Power Checks",
+    "summary": "Copper/fiber, link speed, passive/active behavior, fail-open path, breakout versus aggregation, monitor capacity and SPAN alternative decide suitability.",
     "href": "https://network.madabase.com/guides/ethernet-network-taps-buying-guide",
     "category": "wired"
   },
   {
     "site": "network",
     "kind": "guide",
-    "title": "Fiber optic cleaning kits: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to fiber optic cleaning kits, using an exact current Amazon item as the checkout anchor while comparing it with pre-inspected capped leads handled in a clean workflow.",
+    "title": "Fiber Cleaning Kits: Match the Connector and Inspect the End",
+    "summary": "Check connector and receptacle type, one-click reach, swab size, lint-free wipes, approved solvent, inspection workflow and avoiding cross-contamination.",
     "href": "https://network.madabase.com/guides/fiber-cleaning-kits-buying-guide",
     "category": "wired"
   },
   {
     "site": "network",
     "kind": "guide",
-    "title": "Fiber optic patch cables: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to fiber optic patch cables, using an exact current Amazon item as the checkout anchor while comparing it with direct-attach copper for short compatible links.",
+    "title": "Fiber Patch Cables: Connector, Polish and Fiber-Type Checks",
+    "summary": "Exact link matching requires OS2/OM3/OM4, connector at each end, UPC versus APC, simplex/duplex, polarity, transceiver wavelength, reach, jacket and bend protection; color alone is insufficient.",
     "href": "https://network.madabase.com/guides/fiber-optic-patch-cables-buying-guide",
     "category": "wired"
   },
   {
     "site": "network",
     "kind": "guide",
-    "title": "Fiber optic power meters: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to fiber optic power meters, using an exact current Amazon item as the checkout anchor while comparing it with a complete source-and-meter test kit or certification service.",
+    "title": "Fiber Power Meters: Wavelength, Range and Test Method",
+    "summary": "Check wavelength calibration, power range, detector, connector adapter, reference procedure, paired light source, storage and calibration; optical power alone does not locate a fault.",
     "href": "https://network.madabase.com/guides/fiber-optic-power-meters-buying-guide",
     "category": "wired"
   },
   {
     "site": "network",
     "kind": "guide",
-    "title": "Fiber visual fault locators: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to fiber visual fault locators, using an exact current Amazon item as the checkout anchor while comparing it with an optical loss test set or professional certification.",
+    "title": "Fiber Fault Locators: What Visible Light Can and Cannot Prove",
+    "summary": "Choose by laser class and power, connector/ferrule adapter, realistic range, pulse mode and job type, with explicit eye-safety rules and no claim that a VFL replaces loss testing or OTDR analysis.",
     "href": "https://network.madabase.com/guides/fiber-visual-fault-locators-buying-guide",
     "category": "wired"
   },
   {
     "site": "network",
     "kind": "guide",
-    "title": "Industrial Ethernet switches: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to industrial ethernet switches, using an exact current Amazon item as the checkout anchor while comparing it with indoor commercial switches inside a controlled enclosure.",
+    "title": "Industrial Ethernet Switches: Power, Mounting and Environment",
+    "summary": "Check DIN rail, DC range, redundant inputs, alarm relay, temperature, vibration, ingress protection, PoE and protocol management.",
     "href": "https://network.madabase.com/guides/industrial-ethernet-switches-buying-guide",
     "category": "wired"
   },
   {
     "site": "network",
     "kind": "guide",
-    "title": "KVM over IP extenders: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to kvm over ip extenders, using an exact current Amazon item as the checkout anchor while comparing it with remote desktop software or direct local KVM cabling.",
+    "title": "KVM over IP: Video, USB, Latency and Network Requirements",
+    "summary": "Check Distinguish remote BIOS console from low-latency desk extension and verify video input, resolution/frame rate, keyboard/mouse emulation, USB media, security, updates and network latency.",
     "href": "https://network.madabase.com/guides/kvm-over-ip-extenders-buying-guide",
     "category": "wired"
   },
   {
     "site": "network",
     "kind": "guide",
-    "title": "Managed 2.5GbE switches: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to managed 2.5gbe switches, using an exact current Amazon item as the checkout anchor while comparing it with unmanaged multi-gig switches or 10GbE aggregation.",
+    "title": "Managed 2.5GbE Switches: VLANs, Uplinks and Port Planning",
+    "summary": "Check VLANs, port mirroring, LACP, loop controls, management mode, 10GbE uplinks and the operational burden of configuration.",
     "href": "https://network.madabase.com/guides/managed-2-5gbe-switches-buying-guide",
     "category": "wired"
   },
   {
     "site": "network",
     "kind": "guide",
-    "title": "Mini UPS units for routers: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to mini ups units for routers, using an exact current Amazon item as the checkout anchor while comparing it with a conventional AC UPS or modem battery option.",
+    "title": "Mini Router UPS: Voltage, Polarity, Connectors and Runtime",
+    "summary": "Check exact voltage, connector diameter, polarity, current headroom, pass-through behavior, watt-hours, protected device count and battery replacement matter more than advertised mAh.",
     "href": "https://network.madabase.com/guides/mini-ups-for-routers-buying-guide",
     "category": "backup"
   },
   {
     "site": "network",
     "kind": "guide",
-    "title": "Network rack cooling fans: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to network rack cooling fans, using an exact current Amazon item as the checkout anchor while comparing it with passive ventilation and reduced equipment density.",
+    "title": "Rack Cooling Fans: Airflow Path, Temperature and Noise",
+    "summary": "Start with measured ambient and component temperatures, then decide intake/exhaust path, cabinet openings, CFM, static pressure, thermostat placement, noise and whether removing trapped heat from the room is the real fix.",
     "href": "https://network.madabase.com/guides/network-rack-cooling-fans-buying-guide",
     "category": "wired"
   },
   {
     "site": "network",
     "kind": "guide",
-    "title": "Network rack shelves: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to network rack shelves, using an exact current Amazon item as the checkout anchor while comparing it with device-specific rack ears or a separate equipment cabinet.",
+    "title": "Network Rack Shelves: Depth, Mounting and Load Checks",
+    "summary": "Check two-post versus four-post support, usable depth, equipment feet, load and leverage, ventilation, rack units, rear cables and slide-out versus fixed construction.",
     "href": "https://network.madabase.com/guides/network-rack-shelves-buying-guide",
     "category": "wired"
   },
   {
     "site": "network",
     "kind": "guide",
-    "title": "Preterminated fiber cable runs: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to preterminated fiber cable runs, using an exact current Amazon item as the checkout anchor while comparing it with field termination by a qualified fiber installer.",
+    "title": "Preterminated Fiber: Pulling Route, Connectors and Spare Length",
+    "summary": "Independent install purchase covering exact route length plus slack, indoor/outdoor rating, fiber count, connectors and polarity, conduit fill, pulling eye, maximum pull and bend limits, and testing before and after pulling.",
     "href": "https://network.madabase.com/guides/preterminated-fiber-runs-buying-guide",
     "category": "wired"
   },
   {
     "site": "network",
     "kind": "guide",
-    "title": "Rack blanking panels: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to rack blanking panels, using an exact current Amazon item as the checkout anchor while comparing it with open rack spaces when airflow containment is unnecessary.",
+    "title": "Rack Blanking Panels: Airflow Need, Mounting and Cable Access",
+    "summary": "Consider when blanking helps front-to-rear airflow, when an open home rack gains little, and how 1U size, square-hole mounting, tool-less retention and cable paths affect selection.",
     "href": "https://network.madabase.com/guides/rack-blanking-panels-buying-guide",
     "category": "wired"
   },
   {
     "site": "network",
     "kind": "guide",
-    "title": "Rackmount UPS units for network gear: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to rackmount ups units for network gear, using an exact current Amazon item as the checkout anchor while comparing it with tower UPS units or DC backup sized to the actual load.",
+    "title": "Rackmount UPS: Depth, Rails, Outlets and Load-Based Runtime",
+    "summary": "Distinct from the existing desktop UPS guide through rack depth, 1U/2U rails, weight placement, outlet and plug type, topology, network card, replaceable batteries and runtime at measured rack load.",
     "href": "https://network.madabase.com/guides/rackmount-network-ups-buying-guide",
     "category": "backup"
   },
   {
     "site": "network",
     "kind": "guide",
-    "title": "Serial device servers: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to serial device servers, using an exact current Amazon item as the checkout anchor while comparing it with a local USB serial adapter or controller replacement.",
+    "title": "Serial Device Servers: RS-232/422/485 and Software Fit",
+    "summary": "Exact interface decision covering RS-232/422/485, port count and connector, isolation, baud and framing, virtual COM versus raw TCP, security, power, DIN mounting and legacy software support.",
     "href": "https://network.madabase.com/guides/serial-device-servers-buying-guide",
     "category": "wired"
   },
   {
     "site": "network",
     "kind": "guide",
-    "title": "SFP28 network switches: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to sfp28 network switches, using an exact current Amazon item as the checkout anchor while comparing it with 10GbE SFP+ switching or direct-attach point links.",
+    "title": "SFP28 Switches: 25GbE Links, Optics, Uplinks and Noise",
+    "summary": "Port count, 10/25G fallback, QSFP28 uplinks, switching versus routed performance, fan noise and optics budget define the decision.",
     "href": "https://network.madabase.com/guides/sfp28-network-switches-buying-guide",
     "category": "wired"
   },
   {
     "site": "network",
     "kind": "guide",
-    "title": "SFP28 transceivers: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to sfp28 transceivers, using an exact current Amazon item as the checkout anchor while comparing it with vendor-qualified direct-attach cables.",
+    "title": "SFP28 Transceivers: Fiber, Reach, FEC and Host Compatibility",
+    "summary": "Exact compatibility purchase covering SR/LR/BiDi, wavelength, fiber type, connector, reach, FEC, host coding, temperature and whether a qualified DAC is simpler for the link.",
     "href": "https://network.madabase.com/guides/sfp28-transceivers-buying-guide",
     "category": "wired"
   },
   {
     "site": "network",
     "kind": "guide",
-    "title": "Wall-plate Wi-Fi access points: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to wall-plate wi-fi access points, using an exact current Amazon item as the checkout anchor while comparing it with ceiling access points with separate wall Ethernet ports.",
+    "title": "Wall-Plate Access Points: Wall Box, PoE and Downlink Ports",
+    "summary": "Room-by-room intent hinges on wall-box and uplink fit, PoE input, wired downlinks, radio orientation, controller ecosystem and whether a ceiling AP can cover the same rooms more efficiently.",
     "href": "https://network.madabase.com/guides/wall-plate-access-points-buying-guide",
     "category": "wifi"
   },
   {
     "site": "network",
     "kind": "guide",
-    "title": "Waterproof RJ45 couplers: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to waterproof rj45 couplers, using an exact current Amazon item as the checkout anchor while comparing it with a sealed junction box with a serviceable termination.",
+    "title": "Outdoor RJ45 Couplers: Gland Fit, Cable and Sealing Checks",
+    "summary": "Separate outdoor intent through IP rating only when fully mated, cable-diameter seals, cap, shield and category support, strain relief, service access and the limits of an exposed inline joint.",
     "href": "https://network.madabase.com/guides/waterproof-rj45-couplers-buying-guide",
     "category": "wired"
   },
   {
     "site": "network",
     "kind": "guide",
-    "title": "Optical time-domain reflectometers: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to optical time-domain reflectometers, using an exact current Amazon item as the checkout anchor while comparing it with a simpler loss test set or professional trace.",
+    "title": "OTDR Buying Guide: Fiber, Range, Dead Zones and Test Leads",
+    "summary": "Qualified for technicians who can define single/multimode wavelengths, link length, dynamic range, event and attenuation dead zones, launch/receive fibers, connector type, reporting and OLTS boundaries.",
     "href": "https://network.madabase.com/guides/optical-time-domain-reflectometers-buying-guide",
     "category": "wired"
+  },
+  {
+    "site": "network",
+    "kind": "guide",
+    "title": "Home Network Outage Plan: Power, Local Control and Recovery",
+    "summary": "Separate ISP loss, router failure and power loss, then plan the modem, ONT, router, hubs and essential device fallbacks as a complete chain.",
+    "href": "https://network.madabase.com/guides/home-network-smart-home-outage-plan",
+    "category": "backup"
   },
   {
     "site": "network",
@@ -4962,7 +5003,7 @@
     "site": "smarthome",
     "kind": "guide",
     "title": "Smart floor lamps Buying Guide: Fit, Local Control, and Safety",
-    "summary": "A decision-first guide to smart floor lamps, using an exact current Amazon item as the checkout anchor while comparing it with standard floor lamps with smart bulbs.",
+    "summary": "Integrated floor-lamp selection hinges on uplight/task/ambient beam pattern, output and color-temperature range, base stability, footprint, segmented effects, physical controls and ecosystem support rather than bulb socket compatibility.",
     "href": "https://smarthome.madabase.com/guides/smart-floor-lamps-buying-guide",
     "category": "automation"
   },
@@ -5042,7 +5083,7 @@
     "site": "smarthome",
     "kind": "guide",
     "title": "Smart recessed lights Buying Guide: Fit, Local Control, and Safety",
-    "summary": "A decision-first guide to smart recessed lights, using an exact current Amazon item as the checkout anchor while comparing it with standard recessed LEDs controlled by a compatible dimmer.",
+    "summary": "Kept distinct from surface ceiling lights through retrofit-can versus canless-wafer construction, aperture size, E26 adapter or junction box, ceiling depth, damp rating, smart-dimmer conflicts and permanent-light-switch behavior.",
     "href": "https://smarthome.madabase.com/guides/smart-recessed-lights-buying-guide",
     "category": "automation"
   },
@@ -5082,7 +5123,7 @@
     "site": "smarthome",
     "kind": "guide",
     "title": "Smart under-cabinet lights Buying Guide: Fit, Local Control, and Safety",
-    "summary": "A decision-first guide to smart under-cabinet lights, using an exact current Amazon item as the checkout anchor while comparing it with hardwired task lighting with a local control.",
+    "summary": "Fixture bars and pucks only, not another strip-light page. The decision covers edge/back lighting, bar length, glare, plug-in versus direct-wire junction box, jump-cable routing, linked-fixture limits, Matter/app setup and physical control.",
     "href": "https://smarthome.madabase.com/guides/smart-under-cabinet-lights-buying-guide",
     "category": "automation"
   },
@@ -5133,6 +5174,22 @@
     "summary": "Compare a smart vibration sensor with a contact, tilt, or motion sensor by event, false alerts, placement, best fit.",
     "href": "https://smarthome.madabase.com/guides/smart-vibration-sensors-buying-guide",
     "category": "access"
+  },
+  {
+    "site": "smarthome",
+    "kind": "guide",
+    "title": "Matter in Apple Home, Google Home and Home Assistant: Feature Checks",
+    "summary": "Check the exact controls, transport, bridge and firmware before choosing an ecosystem; a Matter badge does not describe every available device feature.",
+    "href": "https://smarthome.madabase.com/guides/matter-apple-google-home-assistant-feature-checklist",
+    "category": "automation"
+  },
+  {
+    "site": "smarthome",
+    "kind": "guide",
+    "title": "Renter Smart Home Plan: No-Drill Mounts and Reversible Upgrades",
+    "summary": "Check the doorbell generation, wall finish, removal method, charging access and move-out cost before choosing a supposedly rental-friendly device.",
+    "href": "https://smarthome.madabase.com/guides/renter-no-drill-smart-home-plan",
+    "category": "cameras"
   },
   {
     "site": "smarthome",
@@ -6860,7 +6917,7 @@
     "site": "baby",
     "kind": "guide",
     "title": "Baby bath thermometers Buying Guide: Fit, Cleaning, and Safety Checks",
-    "summary": "A decision-first guide to baby bath thermometers, using an exact current Amazon item as the checkout anchor while comparing it with running and mixing water carefully with adult hand checks.",
+    "summary": "Accuracy range, response time, continuous display, hot/cold alert, waterproof rating, cleaning and a tool-secured battery compartment create a meaningful comparison. A thermometer is a secondary check: caregivers must mix water, test it directly, limit water-heater temperature and stay within arm's reach.",
     "href": "https://baby.madabase.com/guides/baby-bath-thermometers-buying-guide",
     "category": "gear"
   },
@@ -6868,7 +6925,7 @@
     "site": "baby",
     "kind": "guide",
     "title": "Baby wipe dispensers Buying Guide: Fit, Cleaning, and Safety Checks",
-    "summary": "A decision-first guide to baby wipe dispensers, using an exact current Amazon item as the checkout anchor while comparing it with the original resealable wipe package.",
+    "summary": "This is a one-handed dispensing and storage problem: weighted plate, one-wipe separation, gasket, refill pack compatibility, capacity, footprint, portability and cleanability. It will not make unsupported claims about preventing contamination or preserving wipes indefinitely.",
     "href": "https://baby.madabase.com/guides/baby-wipe-dispensers-buying-guide",
     "category": "gear"
   },
@@ -6907,7 +6964,7 @@
   {
     "site": "baby",
     "kind": "guide",
-    "title": "Childproof door knob covers: Fit, Trade-offs & Buying Guide",
+    "title": "Door Knob Covers: Knob Fit, Adult Access and Exit Checks",
     "summary": "Check a door-knob cover's shape, secure assembly and adult emergency access. Lever handles and knobs require different hardware.",
     "href": "https://baby.madabase.com/guides/childproof-door-knob-covers-buying-guide",
     "category": "gear"
@@ -6923,8 +6980,8 @@
   {
     "site": "baby",
     "kind": "guide",
-    "title": "Childproof refrigerator locks: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to childproof refrigerator locks, using an exact current Amazon item as the checkout anchor while comparing it with appliance placement and kitchen access control.",
+    "title": "Refrigerator Locks: Door Fit, Attachment and Adult Access",
+    "summary": "French-door, side-by-side and single-door appliances need different adhesive strap or latch geometry; opening effort, one-hand adult use, finish compatibility, door seal clearance and failure visibility matter. Compare framed as access management, not food-safety protection or a substitute for locking hazardous medicines and chemicals separately.",
     "href": "https://baby.madabase.com/guides/childproof-refrigerator-locks-buying-guide",
     "category": "gear"
   },
@@ -6940,7 +6997,7 @@
     "site": "baby",
     "kind": "guide",
     "title": "Childproof toilet locks Buying Guide: Fit, Cleaning, and Safety Checks",
-    "summary": "A decision-first guide to childproof toilet locks, using an exact current Amazon item as the checkout anchor while comparing it with a closed bathroom door with a high latch.",
+    "summary": "Bowl and lid profile, hinge clearance, adhesive or clamp attachment, automatic relocking, adult release, cleaning and guest usability create a distinct safety purchase. A toilet lock is secondary protection only; bathroom doors, constant supervision near water and emptying other water containers remain necessary.",
     "href": "https://baby.madabase.com/guides/childproof-toilet-locks-buying-guide",
     "category": "gear"
   },
@@ -6948,7 +7005,7 @@
     "site": "baby",
     "kind": "guide",
     "title": "Crib mobiles Buying Guide: Fit, Cleaning, and Safety Checks",
-    "summary": "A decision-first guide to crib mobiles, using an exact current Amazon item as the checkout anchor while comparing it with visual play outside the crib during awake time.",
+    "summary": "Mount compatibility, reach, mechanical versus electronic motion, sound and light controls, timer, battery-door security and current recalls create the buying decision. Require secure out-of-reach mounting and removal at five months or when the baby first pushes up on hands and knees, whichever occurs first.",
     "href": "https://baby.madabase.com/guides/crib-mobiles-buying-guide",
     "category": "sleep"
   },
@@ -6956,7 +7013,7 @@
     "site": "baby",
     "kind": "guide",
     "title": "Formula mixing pitchers Buying Guide: Fit, Cleaning, and Safety Checks",
-    "summary": "A decision-first guide to formula mixing pitchers, using an exact current Amazon item as the checkout anchor while comparing it with individual bottles prepared according to formula instructions.",
+    "summary": "Batch preparation creates a separate choice around true usable volume, blade and stopper design, clump and foam control, measurement visibility, lid and spout leakage, refrigerator footprint and cleaning. It will not alter formula ratios: water first, exact label directions, refrigerate promptly and discard within official limits.",
     "href": "https://baby.madabase.com/guides/formula-mixing-pitchers-buying-guide",
     "category": "feeding"
   },
@@ -6964,7 +7021,7 @@
     "site": "baby",
     "kind": "guide",
     "title": "Furniture anchor kits Buying Guide: Fit, Cleaning, and Safety Checks",
-    "summary": "A decision-first guide to furniture anchor kits, using an exact current Amazon item as the checkout anchor while comparing it with manufacturer-supplied anti-tip hardware installed to the correct wall.",
+    "summary": "Furniture and wall material, bracket versus strap, rated load and slack, stud or masonry fasteners, included hardware, movement for cleaning and reinspection drive this high-value safety purchase. Content will require following both furniture and anchor instructions and will never recommend drywall-only fastening unless explicitly approved by the manufacturer.",
     "href": "https://baby.madabase.com/guides/furniture-anchor-kits-buying-guide",
     "category": "gear"
   },
@@ -6972,7 +7029,7 @@
     "site": "baby",
     "kind": "guide",
     "title": "High-chair floor mats Buying Guide: Fit, Cleaning, and Safety Checks",
-    "summary": "A decision-first guide to high-chair floor mats, using an exact current Amazon item as the checkout anchor while comparing it with a washable hard floor or small machine-washable mat.",
+    "summary": "The purchase problem is floor protection under a high chair: true coverage from chair legs to drop zone, edge curl and slip, waterproof backing, wipe versus machine wash, foldability and compatibility with hard floors or carpet. Compare positioned as cleanup equipment, not a substitute for supervised seated feeding.",
     "href": "https://baby.madabase.com/guides/high-chair-floor-mats-buying-guide",
     "category": "feeding"
   },
@@ -6980,7 +7037,7 @@
     "site": "baby",
     "kind": "guide",
     "title": "Nursery blackout curtains Buying Guide: Fit, Cleaning, and Safety Checks",
-    "summary": "A decision-first guide to nursery blackout curtains, using an exact current Amazon item as the checkout anchor while comparing it with room-darkening shades with secured cords.",
+    "summary": "Real intent spans measured width and fullness, true room darkening versus light filtering, thermal backing, grommet or rod pocket, wash care and light leakage at edges. Cordless treatment and keeping cribs and furniture away from window-covering cords are non-negotiable; darkness will not be presented as a sleep-treatment claim.",
     "href": "https://baby.madabase.com/guides/nursery-blackout-curtains-buying-guide",
     "category": "sleep"
   },
@@ -6988,7 +7045,7 @@
     "site": "baby",
     "kind": "guide",
     "title": "Nursing covers Buying Guide: Fit, Cleaning, and Safety Checks",
-    "summary": "A decision-first guide to nursing covers, using an exact current Amazon item as the checkout anchor while comparing it with layered clothing or an unrestrictive muslin cloth.",
+    "summary": "The buying question is coverage format rather than generic maternity clothing: apron visibility versus poncho coverage, airflow and heat, neckline access, fabric opacity, wash care and whether it doubles as a stroller or car-seat cover. Content will warn against restricting an infant's airflow or allowing overheating.",
     "href": "https://baby.madabase.com/guides/nursing-covers-buying-guide",
     "category": "feeding"
   },
@@ -6996,7 +7053,7 @@
     "site": "baby",
     "kind": "guide",
     "title": "Nursing pillows Buying Guide: Fit, Cleaning, and Safety Checks",
-    "summary": "A decision-first guide to nursing pillows, using an exact current Amazon item as the checkout anchor while comparing it with ordinary firm pillows used only during awake supervised feeding.",
+    "summary": "Fit around the caregiver, height and firmness during active feeding, cover washability, closure and travel bulk create a high-intent comparison. The page will treat these as awake, attended feeding aids only and explicitly reject sleep, lounging, propping and leaving an infant unattended.",
     "href": "https://baby.madabase.com/guides/nursing-pillows-buying-guide",
     "category": "feeding"
   },
@@ -7004,7 +7061,7 @@
     "site": "baby",
     "kind": "guide",
     "title": "Portable changing mats Buying Guide: Fit, Cleaning, and Safety Checks",
-    "summary": "A decision-first guide to portable changing mats, using an exact current Amazon item as the checkout anchor while comparing it with disposable liners on a safe changing surface.",
+    "summary": "Kept separate from full-size changing pads by folded size, wipe-clean area, padding, clutch closure, integrated wipes and diaper storage, laundry care and one-hand setup on the floor. A flat travel mat does not make an elevated surface safe; content will recommend a clean floor whenever practical and constant hands-on attention.",
     "href": "https://baby.madabase.com/guides/portable-changing-mats-buying-guide",
     "category": "gear"
   },
@@ -7012,7 +7069,7 @@
     "site": "baby",
     "kind": "guide",
     "title": "Potty training seats Buying Guide: Fit, Cleaning, and Safety Checks",
-    "summary": "A decision-first guide to potty training seats, using an exact current Amazon item as the checkout anchor while comparing it with a standalone potty chair or integrated child seat.",
+    "summary": "This is a category decision between floor potties, toilet reducers and travel/folding seats, with stability, opening size, splash guard, handles, foot support, cleaning and storage as the dimensions. It stays separate from the existing exact Bc Babycare review and will emphasize readiness rather than an arbitrary training age.",
     "href": "https://baby.madabase.com/guides/potty-training-seats-buying-guide",
     "category": "gear"
   },
@@ -7020,7 +7077,7 @@
     "site": "baby",
     "kind": "guide",
     "title": "Powder formula dispensers Buying Guide: Fit, Cleaning, and Safety Checks",
-    "summary": "A decision-first guide to powder formula dispensers, using an exact current Amazon item as the checkout anchor while comparing it with premeasured dry containers and separate safe water preparation.",
+    "summary": "This is a travel portioning decision, not a formula-preparation shortcut: compartment seal, number and size of premeasured feeds, pour control, cleaning and diaper-bag leakage are the buying dimensions. The page must say to measure water separately, add the exact labeled powder amount and follow CDC time limits because powdered formula is not sterile.",
     "href": "https://baby.madabase.com/guides/powder-formula-dispensers-buying-guide",
     "category": "feeding"
   },
@@ -7060,7 +7117,7 @@
     "site": "baby",
     "kind": "guide",
     "title": "Stroller rain covers Buying Guide: Fit, Cleaning, and Safety Checks",
-    "summary": "A decision-first guide to stroller rain covers, using an exact current Amazon item as the checkout anchor while comparing it with a stroller canopy plus shelter and weather planning.",
+    "summary": "Model-specific versus universal fit, ventilation openings, access zipper, attachment in wind, visibility, storage size and whether it works with a reclined seat are the decision points. Do not assume sealed DIY covers and emphasize airflow, temperature checks and stroller-manufacturer compatibility.",
     "href": "https://baby.madabase.com/guides/stroller-rain-covers-buying-guide",
     "category": "travel"
   },
@@ -7084,7 +7141,7 @@
     "site": "baby",
     "kind": "guide",
     "title": "Toddler step stools Buying Guide: Fit, Cleaning, and Safety Checks",
-    "summary": "A decision-first guide to toddler step stools, using an exact current Amazon item as the checkout anchor while comparing it with adult lifting or a fixed low setup.",
+    "summary": "Kept distinct from learning towers by low bathroom and sink access: platform dimensions, one- versus two-step height, nonslip top and feet, base width, edge geometry, child carry weight and cleaning. No stool is fall-proof; level dry flooring and adult supervision are required.",
     "href": "https://baby.madabase.com/guides/toddler-step-stools-buying-guide",
     "category": "gear"
   },
@@ -8468,7 +8525,7 @@
     "site": "pet",
     "kind": "guide",
     "title": "Dog backpacks Buying Guide: Sizing, Setup, and Safe Use",
-    "summary": "A decision-first guide to dog backpacks, using an exact current Amazon item as the checkout anchor while comparing it with carrying supplies separately and keeping the dog unloaded.",
+    "summary": "This is gear carried by the dog, not a dog carrier: girth fit, saddlebag volume, empty pack weight, balanced loading, bounce control, elbow clearance, handle, hydration access and wash care define the purchase. Start with empty and light loads and recommend veterinary guidance before loading young, senior or mobility-limited dogs.",
     "href": "https://pets.madabase.com/guides/dog-backpacks-buying-guide",
     "category": "comfort"
   },
@@ -8476,7 +8533,7 @@
     "site": "pet",
     "kind": "guide",
     "title": "Dog bicycle baskets Buying Guide: Sizing, Setup, and Safe Use",
-    "summary": "A decision-first guide to dog bicycle baskets, using an exact current Amazon item as the checkout anchor while comparing it with a correctly sized bike trailer.",
+    "summary": "This is a small-dog carrier question distinct from trailers: front versus rear mounting, exact rack or handlebar compatibility, pet weight, base support, steering effect, ventilation, harness-only tether geometry and weather cover. Collar tethering, improvised baskets and exceeding bike or basket limits are excluded.",
     "href": "https://pets.madabase.com/guides/dog-bicycle-baskets-buying-guide",
     "category": "comfort"
   },
@@ -8484,7 +8541,7 @@
     "site": "pet",
     "kind": "guide",
     "title": "Dog bike trailers Buying Guide: Sizing, Setup, and Safe Use",
-    "summary": "A decision-first guide to dog bike trailers, using an exact current Amazon item as the checkout anchor while comparing it with walking routes or a vehicle carrier.",
+    "summary": "Interior standing and turning room, pet and cargo weight limits, hitch compatibility, floor support, ventilation, entry height, restraint points, rollover structure, wheel and brake behavior and folded size create a strong buying decision. Require acclimation, harness restraint, short test rides, cooler routes and manufacturer-specific hitch installation.",
     "href": "https://pets.madabase.com/guides/dog-bike-trailers-buying-guide",
     "category": "comfort"
   },
@@ -8492,7 +8549,7 @@
     "site": "pet",
     "kind": "guide",
     "title": "Hands-free dog leashes Buying Guide: Sizing, Setup, and Safe Use",
-    "summary": "A decision-first guide to hands-free dog leashes, using an exact current Amazon item as the checkout anchor while comparing it with a conventional hand-held leash.",
+    "summary": "Waist versus cross-body wear, working length, stretch, traffic handle, buckle redundancy, swivel, reflective trim, dog size and whether the handler can release or regain hand control drive this query. Separate casual walking from canicross and will not recommend hands-free use for an untrained strong puller or unsafe terrain.",
     "href": "https://pets.madabase.com/guides/hands-free-dog-leashes-buying-guide",
     "category": "comfort"
   },
@@ -8500,7 +8557,7 @@
     "site": "pet",
     "kind": "guide",
     "title": "Pet stairs Buying Guide: Sizing, Setup, and Safe Use",
-    "summary": "A decision-first guide to pet stairs, using an exact current Amazon item as the checkout anchor while comparing it with a stable pet ramp or restricting furniture access.",
+    "summary": "Kept distinct from the existing dog-ramp page by a stairs-versus-ramp decision for beds and sofas: total rise, individual tread rise and depth, width, nonslip base, side support, weight rating, washable cover and whether the animal will actually use steps. Mobility pain or a sudden reluctance to climb requires veterinary assessment rather than a product promise.",
     "href": "https://pets.madabase.com/guides/pet-stairs-buying-guide",
     "category": "comfort"
   },
@@ -8508,7 +8565,7 @@
     "site": "pet",
     "kind": "guide",
     "title": "Reflective dog harnesses Buying Guide: Sizing, Setup, and Safe Use",
-    "summary": "A decision-first guide to reflective dog harnesses, using an exact current Amazon item as the checkout anchor while comparing it with a standard harness with separate visibility lights.",
+    "summary": "Check 360-degree low-light visibility: reflective webbing area and viewing angles, daytime color contrast, fit, attachment points, handle, light loop and whether a separate high-visibility vest is better. Reflective material only works when illuminated and does not replace a light, leash or traffic avoidance.",
     "href": "https://pets.madabase.com/guides/reflective-dog-harnesses-buying-guide",
     "category": "comfort"
   },
@@ -8516,7 +8573,7 @@
     "site": "pet",
     "kind": "guide",
     "title": "Cat litter disposal systems Buying Guide: Sizing, Setup, and Safe Use",
-    "summary": "A decision-first guide to cat litter disposal systems, using an exact current Amazon item as the checkout anchor while comparing it with small sealed bags removed daily.",
+    "summary": "Bin opening, seal mechanism, refill format and lock-in, real waste capacity, bag cutting and tying, child and pet access, footprint and cleaning determine ownership cost. It is a waste-transfer tool, not permission to scoop less often; boxes still need at least daily attention and the disposal bin needs scheduled emptying and cleaning.",
     "href": "https://pets.madabase.com/guides/cat-litter-disposal-systems-buying-guide",
     "category": "home-care"
   },
@@ -8524,7 +8581,7 @@
     "site": "pet",
     "kind": "guide",
     "title": "Ceramic pet fountains Buying Guide: Sizing, Setup, and Safe Use",
-    "summary": "A decision-first guide to ceramic pet fountains, using an exact current Amazon item as the checkout anchor while comparing it with stainless fountains or refreshed bowls.",
+    "summary": "Also material-constrained: glaze condition, chip and crack inspection, unit weight, two drinking levels, actual capacity, pump removal, corner access, filter availability and dishwasher-safe components distinguish ceramic from stainless and plastic. Heavy does not mean tip-proof, and damaged ceramic must be retired.",
     "href": "https://pets.madabase.com/guides/ceramic-pet-fountains-buying-guide",
     "category": "feeding"
   },
@@ -8532,15 +8589,15 @@
     "site": "pet",
     "kind": "guide",
     "title": "Collapsible travel pet bowls Buying Guide: Sizing, Setup, and Safe Use",
-    "summary": "A decision-first guide to collapsible travel pet bowls, using an exact current Amazon item as the checkout anchor while comparing it with lightweight rigid bowls.",
+    "summary": "Silicone pop-open, folding fabric and roll-up formats differ in true capacity, base stability, lip height, packed size, clip, drying time, odor retention and dishwasher or machine-wash instructions. Food and water bowls must be cleaned and fully dried; a compact bowl is not automatically suitable for an unattended crate.",
     "href": "https://pets.madabase.com/guides/collapsible-travel-pet-bowls-buying-guide",
     "category": "feeding"
   },
   {
     "site": "pet",
     "kind": "guide",
-    "title": "Covered self-cleaning litter boxes: Fit, Trade-offs & Buying Guide",
-    "summary": "A decision-first guide to covered self-cleaning litter boxes, using an exact current Amazon item as the checkout anchor while comparing it with large open litter boxes scooped manually.",
+    "title": "Covered Automatic Litter Boxes: Interior Size and Sensor Limits",
+    "summary": "Kept distinct from the existing open-top automatic-box page through entrance and internal globe size, cat detection, minimum weight and age, cycle delay, escape path, litter compatibility, waste drawer, deep cleaning, app and subscription. Cat acceptance comes before automation; a large manual open box remains the fallback and elimination changes require veterinary attention.",
     "href": "https://pets.madabase.com/guides/covered-self-cleaning-litter-boxes-buying-guide",
     "category": "home-care"
   },
@@ -8548,7 +8605,7 @@
     "site": "pet",
     "kind": "guide",
     "title": "Dog boots Buying Guide: Sizing, Setup, and Safe Use",
-    "summary": "A decision-first guide to dog boots, using an exact current Amazon item as the checkout anchor while comparing it with route and timing changes that avoid hot, icy, or treated surfaces.",
+    "summary": "Front and rear paw measurements, hot pavement versus ice or trail use, sole flex and traction, upper breathability, closure position, dewclaw clearance, pair count and break-in are the buying dimensions. Boots are not permission to extend unsafe heat exposure; fit and paw checks are required shortly after starting and throughout use.",
     "href": "https://pets.madabase.com/guides/dog-boots-buying-guide",
     "category": "comfort"
   },
@@ -8556,7 +8613,7 @@
     "site": "pet",
     "kind": "guide",
     "title": "Dog cooling bandanas Buying Guide: Sizing, Setup, and Safe Use",
-    "summary": "A decision-first guide to dog cooling bandanas, using an exact current Amazon item as the checkout anchor while comparing it with shade, water, cooler schedules, and indoor rest.",
+    "summary": "Evaporative fabric versus frozen insert, climate and humidity suitability, neck fit, wet duration, re-wetting, weight, chew risk and washing create a real accessory comparison distinct from cooling vests. It is only a comfort aid; shade, fresh water, rest, cooler schedules and recognizing heat illness take priority.",
     "href": "https://pets.madabase.com/guides/dog-cooling-bandanas-buying-guide",
     "category": "comfort"
   },
@@ -8564,7 +8621,7 @@
     "site": "pet",
     "kind": "guide",
     "title": "Dog paw washers Buying Guide: Sizing, Setup, and Safe Use",
-    "summary": "A decision-first guide to dog paw washers, using an exact current Amazon item as the checkout anchor while comparing it with a shallow basin and soft towel.",
+    "summary": "Cup opening and depth, paw diameter, silicone-finger stiffness, disassembly, water volume, portability and drying define this mud-removal tool. Consider lukewarm water, gentle insertion, separate toe and pad inspection and thorough drying; wounds, burns, swelling or persistent licking are not a cleaning problem.",
     "href": "https://pets.madabase.com/guides/dog-paw-washers-buying-guide",
     "category": "home-care"
   },
@@ -8572,7 +8629,7 @@
     "site": "pet",
     "kind": "guide",
     "title": "Dog raincoats Buying Guide: Sizing, Setup, and Safe Use",
-    "summary": "A decision-first guide to dog raincoats, using an exact current Amazon item as the checkout anchor while comparing it with shorter outings and towel drying.",
+    "summary": "Back length and chest girth, vest versus coverall coverage, waterproof construction, breathability, storm collar, leg loops, leash portal, visibility and wash care drive the decision. A raincoat should not restrict gait, toileting or panting, and wet skin and harness areas still need inspection and drying.",
     "href": "https://pets.madabase.com/guides/dog-raincoats-buying-guide",
     "category": "comfort"
   },
@@ -8580,7 +8637,7 @@
     "site": "pet",
     "kind": "guide",
     "title": "Elevated dog bowls Buying Guide: Sizing, Setup, and Safe Use",
-    "summary": "A decision-first guide to elevated dog bowls, using an exact current Amazon item as the checkout anchor while comparing it with stable floor bowls selected with veterinary guidance when needed.",
+    "summary": "Stand height range, bowl volume and material, base stability, spill containment, adjustability, cleaning and access while wearing an e-collar create a legitimate equipment choice. Do not assume digestion and bloat-prevention claims: evidence on elevation and GDV is conflicting, and height should follow the individual dog's needs and veterinary advice.",
     "href": "https://pets.madabase.com/guides/elevated-dog-bowls-buying-guide",
     "category": "feeding"
   },
@@ -8588,7 +8645,7 @@
     "site": "pet",
     "kind": "guide",
     "title": "Gravity pet waterers Buying Guide: Sizing, Setup, and Safe Use",
-    "summary": "A decision-first guide to gravity pet waterers, using an exact current Amazon item as the checkout anchor while comparing it with several measured bowls refreshed on schedule.",
+    "summary": "Reservoir size versus lifting weight, bowl material, flow valve, air-lock behavior, fill opening, base stability, disassembly and cleaning frequency form a distinct no-power purchase. A large reservoir does not keep water sanitary for weeks; the bowl and reservoir still require frequent refresh and cleaning, with another water source available.",
     "href": "https://pets.madabase.com/guides/gravity-pet-waterers-buying-guide",
     "category": "feeding"
   },
@@ -8596,7 +8653,7 @@
     "site": "pet",
     "kind": "guide",
     "title": "No-pull dog harnesses Buying Guide: Sizing, Setup, and Safe Use",
-    "summary": "A decision-first guide to no-pull dog harnesses, using an exact current Amazon item as the checkout anchor while comparing it with a well-fitted standard harness plus training.",
+    "summary": "Front-clip, dual-clip and tightening-loop designs have different fit and control tradeoffs; chest measurement, strap path behind the elbow, adjustment range, leash geometry, chafe points and escape resistance are the comparison. No harness stops pulling by itself, so content will pair equipment with reward-based training and fit checks.",
     "href": "https://pets.madabase.com/guides/no-pull-dog-harnesses-buying-guide",
     "category": "comfort"
   },
@@ -8604,7 +8661,7 @@
     "site": "pet",
     "kind": "guide",
     "title": "Stainless steel pet fountains Buying Guide: Sizing, Setup, and Safe Use",
-    "summary": "A decision-first guide to stainless steel pet fountains, using an exact current Amazon item as the checkout anchor while comparing it with multiple frequently refreshed water bowls.",
+    "summary": "Compare a material-constrained shortlist, not a duplicate of the existing general cat-fountain guide: grade and amount of exposed stainless steel, removable basin, seams, capacity, pump architecture, filter lock-in, cable or battery design, noise and dishwasher access are central. Backup bowls and daily hygiene remain required.",
     "href": "https://pets.madabase.com/guides/stainless-steel-pet-fountains-buying-guide",
     "category": "feeding"
   },
@@ -8612,7 +8669,7 @@
     "site": "pet",
     "kind": "guide",
     "title": "Cat litter box enclosures Buying Guide: Sizing, Setup, and Safe Use",
-    "summary": "A decision-first guide to cat litter box enclosures, using an exact current Amazon item as the checkout anchor while comparing it with an open box in a quiet ventilated location.",
+    "summary": "Internal dimensions after hinges and dividers, entrance count and size, ventilation, box removal path, waterproof surfaces, structural stability and whether a cat can be trapped by another pet define the choice. The cabinet must fit a box about 1.5 times the cat's length and preserve easy access; appearance and odor hiding do not outrank feline acceptance.",
     "href": "https://pets.madabase.com/guides/cat-litter-enclosures-buying-guide",
     "category": "home-care"
   },
@@ -8620,7 +8677,7 @@
     "site": "pet",
     "kind": "guide",
     "title": "Cat window perches Buying Guide: Sizing, Setup, and Safe Use",
-    "summary": "A decision-first guide to cat window perches, using an exact current Amazon item as the checkout anchor while comparing it with a stable cat tree positioned near the window.",
+    "summary": "Suction-cup, sill-braced and screw-mounted perches require different window geometry; usable platform, stated load, multi-cat margin, blind clearance, cover washing, landing route and maintenance create the purchase. Require exact surface measurement, periodic mount inspection and a safe path up and down.",
     "href": "https://pets.madabase.com/guides/cat-window-perches-buying-guide",
     "category": "comfort"
   },
@@ -8628,7 +8685,7 @@
     "site": "pet",
     "kind": "guide",
     "title": "Cat wall shelves Buying Guide: Sizing, Setup, and Safe Use",
-    "summary": "A decision-first guide to cat wall shelves, using an exact current Amazon item as the checkout anchor while comparing it with freestanding cat furniture.",
+    "summary": "Wall construction and stud spacing, fasteners, shelf depth and traction, rated load, jump gap, upward and downward route, escape choices and older-cat accessibility form a layout decision rather than a decorative list. Every installation will follow the exact substrate instructions and avoid creating a dead-end where cats can block one another.",
     "href": "https://pets.madabase.com/guides/cat-wall-shelves-buying-guide",
     "category": "comfort"
   },
@@ -8636,7 +8693,7 @@
     "site": "pet",
     "kind": "guide",
     "title": "Cat exercise wheels Buying Guide: Sizing, Setup, and Safe Use",
-    "summary": "A decision-first guide to cat exercise wheels, using an exact current Amazon item as the checkout anchor while comparing it with interactive floor play and climbing furniture.",
+    "summary": "Running diameter, track width and surface, base footprint, wheel stability, noise, cleanability, replacement track and gradual reward-based introduction create a distinct high-cost query. A wheel is optional enrichment, never a forced exercise device or replacement for interactive play, climbing, hiding and veterinary weight management.",
     "href": "https://pets.madabase.com/guides/cat-exercise-wheels-buying-guide",
     "category": "comfort"
   },
@@ -8644,7 +8701,7 @@
     "site": "pet",
     "kind": "guide",
     "title": "Cat play tunnels Buying Guide: Sizing, Setup, and Safe Use",
-    "summary": "A decision-first guide to cat play tunnels, using an exact current Amazon item as the checkout anchor while comparing it with boxes and supervised interactive toys.",
+    "summary": "Diameter and length, multiple exits, rigid versus collapsible frame, crinkle or electronic elements, dangling-part security, skid, washability and folded storage create the decision. Multi-cat tunnels need escape choices, and play should be supervised until loose wires, exposed frame ends and detachable pieces are ruled out.",
     "href": "https://pets.madabase.com/guides/cat-play-tunnels-buying-guide",
     "category": "comfort"
   },
@@ -8652,7 +8709,7 @@
     "site": "pet",
     "kind": "guide",
     "title": "Pet monitoring cameras Buying Guide: Sizing, Setup, and Safe Use",
-    "summary": "A decision-first guide to pet monitoring cameras, using an exact current Amazon item as the checkout anchor while comparing it with a general indoor camera without pet-specific features.",
+    "summary": "Pet detection versus generic motion, fixed or rotating view, night image, two-way audio, treat size and jam access, power-loss behavior, cloud recording, alert and playback paywalls, account security and camera placement drive the purchase. Monitoring is not emergency response, and content will not claim a camera diagnoses behavior or separation distress.",
     "href": "https://pets.madabase.com/guides/pet-monitoring-cameras-buying-guide",
     "category": "home-care"
   },
@@ -8660,7 +8717,7 @@
     "site": "pet",
     "kind": "guide",
     "title": "Wireless dog doorbells Buying Guide: Sizing, Setup, and Safe Use",
-    "summary": "A decision-first guide to wireless dog doorbells, using an exact current Amazon item as the checkout anchor while comparing it with hanging bells or a consistent door routine.",
+    "summary": "Touch pressure, nose versus paw target, transmitter power and weather rating, receiver range, volume, tones, multiple-door expansion, mounting and outage behavior create a real training-device query. Compare presented as a conditioned communication cue within a consistent housetraining routine, not proof that every ring means toileting or a substitute for scheduled trips.",
     "href": "https://pets.madabase.com/guides/wireless-dog-doorbells-buying-guide",
     "category": "home-care"
   },
@@ -8668,7 +8725,7 @@
     "site": "pet",
     "kind": "guide",
     "title": "Pet food storage containers Buying Guide: Sizing, Setup, and Safe Use",
-    "summary": "A decision-first guide to pet food storage containers, using an exact current Amazon item as the checkout anchor while comparing it with the sealed original bag inside a protected bin.",
+    "summary": "Bag-in-bin dimensions, realistic capacity by bag shape, gasket and latch, pet and pest resistance, wheels, scoop storage, wash and full-dry access and pantry temperature drive the purchase. Preserve the original bag and lot code inside a clean dry bin instead of recommending repeated direct kibble dumping.",
     "href": "https://pets.madabase.com/guides/pet-food-storage-containers-buying-guide",
     "category": "feeding"
   },
@@ -8676,7 +8733,7 @@
     "site": "pet",
     "kind": "guide",
     "title": "Hard-sided pet carriers Buying Guide: Sizing, Setup, and Safe Use",
-    "summary": "A decision-first guide to hard-sided pet carriers, using an exact current Amazon item as the checkout anchor while comparing it with a correctly supported soft carrier for suitable trips.",
+    "summary": "Everyday hard carriers for veterinary and ground trips are separated from airline cargo crates through interior dimensions, carrier weight, top versus front loading, fasteners, door latch, ventilation, handholds, leak-resistant base and car placement. No generic 'airline approved' claim will be used; trip rules and restraint arrangements must be checked separately.",
     "href": "https://pets.madabase.com/guides/hard-sided-pet-carriers-buying-guide",
     "category": "comfort"
   },
@@ -8684,7 +8741,7 @@
     "site": "pet",
     "kind": "guide",
     "title": "Quick-dry dog towels Buying Guide: Sizing, Setup, and Safe Use",
-    "summary": "A decision-first guide to quick-dry dog towels, using an exact current Amazon item as the checkout anchor while comparing it with washable household microfiber towels kept for pet use.",
+    "summary": "Flat microfiber towels, mitts and wearable drying coats differ in absorbent area, fabric weight, fit, belly and leg reach, wringing, wash cycle, hang-dry time and packed size. 'Quick dry' will refer to the towel's documented care or measured behavior, not a promise that a thick-coated dog is dry underneath.",
     "href": "https://pets.madabase.com/guides/quick-dry-dog-towels-buying-guide",
     "category": "home-care"
   },
@@ -8692,7 +8749,7 @@
     "site": "pet",
     "kind": "guide",
     "title": "Aquarium canister filters Buying Guide: Sizing, Setup, and Safe Use",
-    "summary": "A decision-first guide to aquarium canister filters, using an exact current Amazon item as the checkout anchor while comparing it with hang-on-back or sponge filtration sized to the tank.",
+    "summary": "Actual tank volume and bioload, manufacturer flow versus loaded flow, media baskets, hose diameter and reach, valve block, priming, head height, seal and impeller service, leak containment, noise and power use create a technical buying decision. Product flow ratings will not replace stocking- and species-specific aquarium design.",
     "href": "https://pets.madabase.com/guides/aquarium-canister-filters-buying-guide",
     "category": "home-care"
   },
@@ -8700,7 +8757,7 @@
     "site": "pet",
     "kind": "guide",
     "title": "Aquarium air pumps Buying Guide: Sizing, Setup, and Safe Use",
-    "summary": "A decision-first guide to aquarium air pumps, using an exact current Amazon item as the checkout anchor while comparing it with surface agitation from the main filter.",
+    "summary": "Rated airflow, tank depth and back pressure, number of outlets, gang-valve use, check valve and above-water placement, diaphragm parts, vibration isolation, noise and outage backup define the purchase. Bubbles are not automatically sufficient oxygenation or filtration; the whole system and livestock needs determine whether an air pump is needed.",
     "href": "https://pets.madabase.com/guides/aquarium-air-pumps-buying-guide",
     "category": "home-care"
   },
@@ -8708,7 +8765,7 @@
     "site": "pet",
     "kind": "guide",
     "title": "Aquarium heaters Buying Guide: Sizing, Setup, and Safe Use",
-    "summary": "A decision-first guide to aquarium heaters, using an exact current Amazon item as the checkout anchor while comparing it with a stable room-temperature setup for suitable species.",
+    "summary": "Species temperature, true water volume, room delta, wattage, adjustable versus fixed setpoint, guard, mounting orientation, dry-run protection, indicator, calibration and independent thermometer create a high-intent safety decision. Follow the exact immersion and unplug/cooling instructions and will not rely on the heater dial as the only temperature check.",
     "href": "https://pets.madabase.com/guides/aquarium-heaters-buying-guide",
     "category": "home-care"
   },
@@ -8716,7 +8773,7 @@
     "site": "pet",
     "kind": "guide",
     "title": "Reptile thermostat controllers Buying Guide: Sizing, Setup, and Safe Use",
-    "summary": "A decision-first guide to reptile thermostat controllers, using an exact current Amazon item as the checkout anchor while comparing it with professionally designed habitat controls with independent monitoring.",
+    "summary": "On/off, pulse and dimming output must match the heat source; channel count, maximum load, probe type and secure placement, day/night schedule, high/low alarms, fail-safe behavior and independent thermometer checks define this critical controller. Species-specific gradients and guarded heat sources remain mandatory, and automation never replaces daily verification.",
     "href": "https://pets.madabase.com/guides/reptile-thermostat-controllers-buying-guide",
     "category": "home-care"
   },
@@ -8724,7 +8781,7 @@
     "site": "pet",
     "kind": "guide",
     "title": "Airline dog crates Buying Guide: Sizing, Setup, and Safe Use",
-    "summary": "A decision-first guide to airline dog crates, using an exact current Amazon item as the checkout anchor while comparing it with in-cabin travel when permitted or ground transport.",
+    "summary": "This high-stakes intent is about current route, airline and animal-specific acceptance: IATA 2026 internal sizing, rigid construction, ventilation, metal fasteners and door, external handles, absorbent bedding, attached food and water bowls, labels and acclimation. No crate is universally approved; the airline and destination rules must be confirmed before purchase.",
     "href": "https://pets.madabase.com/guides/airline-dog-crates-buying-guide",
     "category": "comfort"
   },
@@ -8732,7 +8789,7 @@
     "site": "pet",
     "kind": "guide",
     "title": "Cat grooming gloves Buying Guide: Sizing, Setup, and Safe Use",
-    "summary": "A decision-first guide to cat grooming gloves, using an exact current Amazon item as the checkout anchor while comparing it with a species-appropriate brush or comb.",
+    "summary": "Hand sizing, bristle length and firmness, five-finger versus mitt control, wrist closure, hair release, wet use and cleaning create a narrow but distinct low-friction grooming query. Gloves are for gentle loose-hair removal and positive handling; mats, painful skin, sudden overgrooming or intolerance need a different tool or veterinary guidance.",
     "href": "https://pets.madabase.com/guides/cat-grooming-gloves-buying-guide",
     "category": "home-care"
   },
@@ -8740,7 +8797,7 @@
     "site": "pet",
     "kind": "guide",
     "title": "Aquarium LED lights Buying Guide: Sizing, Setup, and Safe Use",
-    "summary": "A decision-first guide to aquarium led lights, using an exact current Amazon item as the checkout anchor while comparing it with species-appropriate ambient or basic tank lighting.",
+    "summary": "Tank length and mounting, freshwater fish-only versus planted or reef use, intensity and spread at depth, spectrum control, timer and ramping, local fallback, water protection, heat and app dependency create separate sub-intents. Lighting will be matched to livestock and plant needs and algae management, not selected by maximum wattage or decorative color alone.",
     "href": "https://pets.madabase.com/guides/aquarium-led-lights-buying-guide",
     "category": "home-care"
   },
@@ -8748,7 +8805,7 @@
     "site": "pet",
     "kind": "guide",
     "title": "Portable dog water bottles Buying Guide: Sizing, Setup, and Safe Use",
-    "summary": "A decision-first guide to portable dog water bottles, using an exact current Amazon item as the checkout anchor while comparing it with a separate bottle and collapsible bowl.",
+    "summary": "Integrated trough versus cap bowl, capacity, one-hand flow, return-water contamination, leak lock, cup-holder fit, insulation, cleaning access and carrying loop create an independent travel query. Consider fresh water and frequent offers, not supplements or a fixed universal intake claim.",
     "href": "https://pets.madabase.com/guides/portable-dog-water-bottles-buying-guide",
     "category": "feeding"
   },
@@ -8756,7 +8813,7 @@
     "site": "pet",
     "kind": "guide",
     "title": "Dog bath sprayers Buying Guide: Sizing, Setup, and Safe Use",
-    "summary": "A decision-first guide to dog bath sprayers, using an exact current Amazon item as the checkout anchor while comparing it with a pitcher and low-pressure hose.",
+    "summary": "Shower-arm, faucet and garden-hose compatibility, diverter, hose reach, usable pressure patterns, one-hand pause, grip, thick-coat penetration and mineral cleaning define the purchase. The page will use lukewarm water, avoid eyes and ears, keep pressure gentle and make secure footing and calm acclimation more important than spray force.",
     "href": "https://pets.madabase.com/guides/dog-bath-sprayers-buying-guide",
     "category": "home-care"
   },

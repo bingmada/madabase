@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { guides } from "@/lib/content";
+import { guides, researchItems } from "@/lib/content";
 import { siteUrl } from "@/lib/seo";
 
 const staticPages = [
@@ -17,7 +17,7 @@ const staticPages = [
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
-    ...staticPages.map((page) => ({ url: `${siteUrl}${page.path}`, changeFrequency: page.frequency, priority: page.priority, lastModified: new Date("2026-07-21") })),
-    ...guides.map((guide) => ({ url: `${siteUrl}/guides/${guide.slug}`, changeFrequency: "monthly" as const, priority: 0.8, lastModified: new Date("2026-07-21") })),
+    ...staticPages.map((page) => ({ url: `${siteUrl}${page.path}`, changeFrequency: page.frequency, priority: page.priority, lastModified: new Date((page.path === "" || page.path === "/research") && researchItems[0] ? researchItems[0].updatedAt : "2026-07-21") })),
+    ...guides.map((guide) => ({ url: `${siteUrl}/guides/${guide.slug}`, changeFrequency: "monthly" as const, priority: 0.8, lastModified: new Date(guide.updatedAt) })),
   ];
 }

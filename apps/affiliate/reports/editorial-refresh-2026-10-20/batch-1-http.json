@@ -1,0 +1,1368 @@
+{
+  "checkedAt": "2026-10-21T02:43:26.355Z",
+  "scope": "Local production build; no merchant request or click event",
+  "total": 170,
+  "passed": 170,
+  "results": [
+    {
+      "site": "pet",
+      "path": "/reviews/litter-genie-plus-pail",
+      "status": 200,
+      "canonical": "https://pets.madabase.com/reviews/litter-genie-plus-pail",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "pet",
+      "path": "/reviews/catit-flower-cat-water-fountain",
+      "status": 200,
+      "canonical": "https://pets.madabase.com/reviews/catit-flower-cat-water-fountain",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "pet",
+      "path": "/reviews/wyze-cam-pan-v3-pet-camera",
+      "status": 200,
+      "canonical": "https://pets.madabase.com/reviews/wyze-cam-pan-v3-pet-camera",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "pet",
+      "path": "/reviews/petlibro-granary-automatic-cat-feeder",
+      "status": 200,
+      "canonical": "https://pets.madabase.com/reviews/petlibro-granary-automatic-cat-feeder",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "pet",
+      "path": "/reviews/furbo-360-dog-camera",
+      "status": 200,
+      "canonical": "https://pets.madabase.com/reviews/furbo-360-dog-camera",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "pet",
+      "path": "/reviews/petfusion-ultimate-dog-bed",
+      "status": 200,
+      "canonical": "https://pets.madabase.com/reviews/petfusion-ultimate-dog-bed",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "pet",
+      "path": "/reviews/chomchom-roller-pet-hair-remover",
+      "status": 200,
+      "canonical": "https://pets.madabase.com/reviews/chomchom-roller-pet-hair-remover",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "pet",
+      "path": "/reviews/shark-neverchange-max-air-purifier",
+      "status": 200,
+      "canonical": "https://pets.madabase.com/reviews/shark-neverchange-max-air-purifier",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "pet",
+      "path": "/reviews/coway-airmega-mighty2-air-purifier",
+      "status": 200,
+      "canonical": "https://pets.madabase.com/reviews/coway-airmega-mighty2-air-purifier",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "pet",
+      "path": "/reviews/levoit-vital-200s-p-air-purifier",
+      "status": 200,
+      "canonical": "https://pets.madabase.com/reviews/levoit-vital-200s-p-air-purifier",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "pet",
+      "path": "/reviews/winix-5510-air-purifier",
+      "status": 200,
+      "canonical": "https://pets.madabase.com/reviews/winix-5510-air-purifier",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "pet",
+      "path": "/reviews/petlibro-one-rfid-smart-feeder",
+      "status": 200,
+      "canonical": "https://pets.madabase.com/reviews/petlibro-one-rfid-smart-feeder",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "pet",
+      "path": "/reviews/neakasa-m1-plus-self-cleaning-litter-box",
+      "status": 200,
+      "canonical": "https://pets.madabase.com/reviews/neakasa-m1-plus-self-cleaning-litter-box",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "pet",
+      "path": "/reviews/petkit-puramax-2-self-cleaning-litter-box",
+      "status": 200,
+      "canonical": "https://pets.madabase.com/reviews/petkit-puramax-2-self-cleaning-litter-box",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "pet",
+      "path": "/reviews/neakasa-p1-pro-pet-grooming-vacuum",
+      "status": 200,
+      "canonical": "https://pets.madabase.com/reviews/neakasa-p1-pro-pet-grooming-vacuum",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "pet",
+      "path": "/reviews/tractive-dog-6-gps-tracker",
+      "status": 200,
+      "canonical": "https://pets.madabase.com/reviews/tractive-dog-6-gps-tracker",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/reviews/uplift-v3-standing-desk",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/reviews/uplift-v3-standing-desk",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/reviews/flexispot-e7-mini-standing-desk",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/reviews/flexispot-e7-mini-standing-desk",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/reviews/hon-ignition-2-0-chair",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/reviews/hon-ignition-2-0-chair",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/reviews/branch-ergonomic-chair",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/reviews/branch-ergonomic-chair",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/reviews/huanuo-titanlift-heavy-duty-monitor-arm",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/reviews/huanuo-titanlift-heavy-duty-monitor-arm",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/reviews/logitech-litra-glow",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/reviews/logitech-litra-glow",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/reviews/amazon-basics-monitor-arm",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/reviews/amazon-basics-monitor-arm",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/reviews/benq-screenbar-halo",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/reviews/benq-screenbar-halo",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/reviews/anker-675-usb-c-docking-station",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/reviews/anker-675-usb-c-docking-station",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/reviews/plugable-usbc-6950pdz-displaylink-dock",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/reviews/plugable-usbc-6950pdz-displaylink-dock",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/reviews/urevo-smart-walking-pad",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/reviews/urevo-smart-walking-pad",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/reviews/plugable-tbt4-ud5-thunderbolt-dock",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/reviews/plugable-tbt4-ud5-thunderbolt-dock",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/reviews/caldigit-ts4-thunderbolt-dock",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/reviews/caldigit-ts4-thunderbolt-dock",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/reviews/ergotron-hx-monitor-arm",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/reviews/ergotron-hx-monitor-arm",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/reviews/elgato-key-light-neo",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/reviews/elgato-key-light-neo",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/reviews/ergear-48x24-electric-standing-desk",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/reviews/ergear-48x24-electric-standing-desk",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/reviews/lume-cube-edge-2-desk-light",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/reviews/lume-cube-edge-2-desk-light",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/reviews/logitech-mx-brio-4k-webcam",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/reviews/logitech-mx-brio-4k-webcam",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/reviews/insta360-link-2-webcam",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/reviews/insta360-link-2-webcam",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/reviews/ugreen-30768-usb-3-switch",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/reviews/ugreen-30768-usb-3-switch",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/reviews/jabra-speak2-40-usb-speakerphone",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/reviews/jabra-speak2-40-usb-speakerphone",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "baby",
+      "path": "/reviews/infant-optics-dxr-8-pro",
+      "status": 200,
+      "canonical": "https://baby.madabase.com/reviews/infant-optics-dxr-8-pro",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/reviews/asus-zenscreen-mb16acv-portable-monitor",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/reviews/asus-zenscreen-mb16acv-portable-monitor",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "baby",
+      "path": "/reviews/nanit-pro-smart-baby-monitor",
+      "status": 200,
+      "canonical": "https://baby.madabase.com/reviews/nanit-pro-smart-baby-monitor",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "baby",
+      "path": "/reviews/baby-jogger-city-tour-2-stroller",
+      "status": 200,
+      "canonical": "https://baby.madabase.com/reviews/baby-jogger-city-tour-2-stroller",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "baby",
+      "path": "/reviews/summer-3dlite-convenience-stroller",
+      "status": 200,
+      "canonical": "https://baby.madabase.com/reviews/summer-3dlite-convenience-stroller",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "baby",
+      "path": "/reviews/momcozy-kleanpal-pro-baby-bottle-washer",
+      "status": 200,
+      "canonical": "https://baby.madabase.com/reviews/momcozy-kleanpal-pro-baby-bottle-washer",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "baby",
+      "path": "/reviews/baby-brezza-sterilizer-dryer-advanced",
+      "status": 200,
+      "canonical": "https://baby.madabase.com/reviews/baby-brezza-sterilizer-dryer-advanced",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "baby",
+      "path": "/reviews/hatch-rest-sound-machine",
+      "status": 200,
+      "canonical": "https://baby.madabase.com/reviews/hatch-rest-sound-machine",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "baby",
+      "path": "/reviews/ergobaby-omni-breeze-carrier",
+      "status": 200,
+      "canonical": "https://baby.madabase.com/reviews/ergobaby-omni-breeze-carrier",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "baby",
+      "path": "/reviews/babybjorn-carrier-harmony",
+      "status": 200,
+      "canonical": "https://baby.madabase.com/reviews/babybjorn-carrier-harmony",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "baby",
+      "path": "/reviews/babybjorn-carrier-mini-3d-mesh",
+      "status": 200,
+      "canonical": "https://baby.madabase.com/reviews/babybjorn-carrier-mini-3d-mesh",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "baby",
+      "path": "/reviews/momcozy-purehug-baby-carrier",
+      "status": 200,
+      "canonical": "https://baby.madabase.com/reviews/momcozy-purehug-baby-carrier",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "baby",
+      "path": "/reviews/baby-tula-lite-carrier",
+      "status": 200,
+      "canonical": "https://baby.madabase.com/reviews/baby-tula-lite-carrier",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "baby",
+      "path": "/reviews/bc-babycare-hexa-effortless-carrier",
+      "status": 200,
+      "canonical": "https://baby.madabase.com/reviews/bc-babycare-hexa-effortless-carrier",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "baby",
+      "path": "/reviews/bc-babycare-clarvion-bottle-washer",
+      "status": 200,
+      "canonical": "https://baby.madabase.com/reviews/bc-babycare-clarvion-bottle-washer",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "baby",
+      "path": "/reviews/bc-babycare-baby-food-maker",
+      "status": 200,
+      "canonical": "https://baby.madabase.com/reviews/bc-babycare-baby-food-maker",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "baby",
+      "path": "/reviews/bc-babycare-3-in-1-potty-chair",
+      "status": 200,
+      "canonical": "https://baby.madabase.com/reviews/bc-babycare-3-in-1-potty-chair",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "baby",
+      "path": "/reviews/dr-browns-all-in-one-sterilizer-dryer",
+      "status": 200,
+      "canonical": "https://baby.madabase.com/reviews/dr-browns-all-in-one-sterilizer-dryer",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "baby",
+      "path": "/reviews/grownsy-bottle-sterilizer-dryer",
+      "status": 200,
+      "canonical": "https://baby.madabase.com/reviews/grownsy-bottle-sterilizer-dryer",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "baby",
+      "path": "/reviews/chicco-advanced-sterilizer-dryer",
+      "status": 200,
+      "canonical": "https://baby.madabase.com/reviews/chicco-advanced-sterilizer-dryer",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "baby",
+      "path": "/reviews/philips-avent-premium-fast-bottle-warmer-scf358",
+      "status": 200,
+      "canonical": "https://baby.madabase.com/reviews/philips-avent-premium-fast-bottle-warmer-scf358",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "baby",
+      "path": "/reviews/baby-brezza-smart-bottle-warmer",
+      "status": 200,
+      "canonical": "https://baby.madabase.com/reviews/baby-brezza-smart-bottle-warmer",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "baby",
+      "path": "/reviews/ubbi-steel-diaper-pail",
+      "status": 200,
+      "canonical": "https://baby.madabase.com/reviews/ubbi-steel-diaper-pail",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "baby",
+      "path": "/reviews/boon-lawn-bottle-drying-rack",
+      "status": 200,
+      "canonical": "https://baby.madabase.com/reviews/boon-lawn-bottle-drying-rack",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "baby",
+      "path": "/reviews/momcozy-mw05-portable-milk-warmer",
+      "status": 200,
+      "canonical": "https://baby.madabase.com/reviews/momcozy-mw05-portable-milk-warmer",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/reviews/amazon-eero-6-mesh-wifi-system",
+      "status": 200,
+      "canonical": "https://network.madabase.com/reviews/amazon-eero-6-mesh-wifi-system",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/reviews/tp-link-deco-be63-wifi-7-mesh",
+      "status": 200,
+      "canonical": "https://network.madabase.com/reviews/tp-link-deco-be63-wifi-7-mesh",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/reviews/netgear-orbi-970-wifi-7-mesh",
+      "status": 200,
+      "canonical": "https://network.madabase.com/reviews/netgear-orbi-970-wifi-7-mesh",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/reviews/tp-link-be400-wifi-7-router",
+      "status": 200,
+      "canonical": "https://network.madabase.com/reviews/tp-link-be400-wifi-7-router",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/reviews/asus-rt-be86u-wifi-7-gaming-router",
+      "status": 200,
+      "canonical": "https://network.madabase.com/reviews/asus-rt-be86u-wifi-7-gaming-router",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/reviews/glinet-beryl-ax-travel-router",
+      "status": 200,
+      "canonical": "https://network.madabase.com/reviews/glinet-beryl-ax-travel-router",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/reviews/jadaol-cat6-flat-ethernet-cable",
+      "status": 200,
+      "canonical": "https://network.madabase.com/reviews/jadaol-cat6-flat-ethernet-cable",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/reviews/tp-link-tl-sg108-gigabit-switch",
+      "status": 200,
+      "canonical": "https://network.madabase.com/reviews/tp-link-tl-sg108-gigabit-switch",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/reviews/netgear-gs308e-gigabit-switch",
+      "status": 200,
+      "canonical": "https://network.madabase.com/reviews/netgear-gs308e-gigabit-switch",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/reviews/monoprice-slimrun-cat6a-ethernet-patch-cable",
+      "status": 200,
+      "canonical": "https://network.madabase.com/reviews/monoprice-slimrun-cat6a-ethernet-patch-cable",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/reviews/ugreen-revodok-usb-c-gigabit-ethernet-hub",
+      "status": 200,
+      "canonical": "https://network.madabase.com/reviews/ugreen-revodok-usb-c-gigabit-ethernet-hub",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/reviews/motorola-mb8611-cable-modem",
+      "status": 200,
+      "canonical": "https://network.madabase.com/reviews/motorola-mb8611-cable-modem",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/reviews/arris-surfboard-s33-cable-modem",
+      "status": 200,
+      "canonical": "https://network.madabase.com/reviews/arris-surfboard-s33-cable-modem",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/reviews/hitron-coda56-cable-modem",
+      "status": 200,
+      "canonical": "https://network.madabase.com/reviews/hitron-coda56-cable-modem",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/reviews/trendnet-teg-s350-2-5g-switch",
+      "status": 200,
+      "canonical": "https://network.madabase.com/reviews/trendnet-teg-s350-2-5g-switch",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/reviews/tp-link-ue302c-2-5g-usb-c-ethernet-adapter",
+      "status": 200,
+      "canonical": "https://network.madabase.com/reviews/tp-link-ue302c-2-5g-usb-c-ethernet-adapter",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/reviews/sabrent-nt-25ga-2-5g-usb-c-ethernet-adapter",
+      "status": 200,
+      "canonical": "https://network.madabase.com/reviews/sabrent-nt-25ga-2-5g-usb-c-ethernet-adapter",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/reviews/screenbeam-ecb7250k02-moca-2-5-adapter-kit",
+      "status": 200,
+      "canonical": "https://network.madabase.com/reviews/screenbeam-ecb7250k02-moca-2-5-adapter-kit",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/reviews/netgear-ms305-2-5g-switch",
+      "status": 200,
+      "canonical": "https://network.madabase.com/reviews/netgear-ms305-2-5g-switch",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/reviews/tp-link-tl-sg105-m2-2-5g-switch",
+      "status": 200,
+      "canonical": "https://network.madabase.com/reviews/tp-link-tl-sg105-m2-2-5g-switch",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/reviews/apc-back-ups-router-modem-bundle",
+      "status": 200,
+      "canonical": "https://network.madabase.com/reviews/apc-back-ups-router-modem-bundle",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/reviews/apc-be600m1-router-ups",
+      "status": 200,
+      "canonical": "https://network.madabase.com/reviews/apc-be600m1-router-ups",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/reviews/cyberpower-sl700u-router-ups",
+      "status": 200,
+      "canonical": "https://network.madabase.com/reviews/cyberpower-sl700u-router-ups",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/reviews/tp-link-tl-sg108pe-poe-switch",
+      "status": 200,
+      "canonical": "https://network.madabase.com/reviews/tp-link-tl-sg108pe-poe-switch",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/reviews/tp-link-tl-sg1005p-poe-switch",
+      "status": 200,
+      "canonical": "https://network.madabase.com/reviews/tp-link-tl-sg1005p-poe-switch",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/reviews/netgear-gs308epp-poe-switch",
+      "status": 200,
+      "canonical": "https://network.madabase.com/reviews/netgear-gs308epp-poe-switch",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/reviews/reolink-rla-ps1-poe-switch",
+      "status": 200,
+      "canonical": "https://network.madabase.com/reviews/reolink-rla-ps1-poe-switch",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/reviews/tp-link-deco-be67-wifi-7-mesh",
+      "status": 200,
+      "canonical": "https://network.madabase.com/reviews/tp-link-deco-be67-wifi-7-mesh",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/reviews/tp-link-deco-be25-wifi-7-mesh",
+      "status": 200,
+      "canonical": "https://network.madabase.com/reviews/tp-link-deco-be25-wifi-7-mesh",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/reviews/tp-link-deco-be85-wifi-7-mesh",
+      "status": 200,
+      "canonical": "https://network.madabase.com/reviews/tp-link-deco-be85-wifi-7-mesh",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/reviews/asus-zenwifi-bt6-wifi-7-mesh",
+      "status": 200,
+      "canonical": "https://network.madabase.com/reviews/asus-zenwifi-bt6-wifi-7-mesh",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/reviews/trendnet-teg-s380-2-5g-switch",
+      "status": 200,
+      "canonical": "https://network.madabase.com/reviews/trendnet-teg-s380-2-5g-switch",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "smarthome",
+      "path": "/reviews/aqara-smart-lock-u100",
+      "status": 200,
+      "canonical": "https://smarthome.madabase.com/reviews/aqara-smart-lock-u100",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "smarthome",
+      "path": "/reviews/aqara-smart-lock-u400",
+      "status": 200,
+      "canonical": "https://smarthome.madabase.com/reviews/aqara-smart-lock-u400",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "smarthome",
+      "path": "/reviews/ring-battery-doorbell-plus-2nd-gen",
+      "status": 200,
+      "canonical": "https://smarthome.madabase.com/reviews/ring-battery-doorbell-plus-2nd-gen",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "smarthome",
+      "path": "/reviews/ecobee-smart-thermostat-premium",
+      "status": 200,
+      "canonical": "https://smarthome.madabase.com/reviews/ecobee-smart-thermostat-premium",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "smarthome",
+      "path": "/reviews/tapo-d210-video-doorbell",
+      "status": 200,
+      "canonical": "https://smarthome.madabase.com/reviews/tapo-d210-video-doorbell",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "smarthome",
+      "path": "/reviews/google-nest-learning-thermostat-4th-gen",
+      "status": 200,
+      "canonical": "https://smarthome.madabase.com/reviews/google-nest-learning-thermostat-4th-gen",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "smarthome",
+      "path": "/reviews/aqara-water-leak-sensor-3-pack-hub-kit",
+      "status": 200,
+      "canonical": "https://smarthome.madabase.com/reviews/aqara-water-leak-sensor-3-pack-hub-kit",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "smarthome",
+      "path": "/reviews/govee-wifi-water-leak-detector-3-pack",
+      "status": 200,
+      "canonical": "https://smarthome.madabase.com/reviews/govee-wifi-water-leak-detector-3-pack",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "smarthome",
+      "path": "/reviews/yolink-lora-water-alarm-bundle",
+      "status": 200,
+      "canonical": "https://smarthome.madabase.com/reviews/yolink-lora-water-alarm-bundle",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "smarthome",
+      "path": "/reviews/x-sense-sws0a41-water-leak-detector-kit",
+      "status": 200,
+      "canonical": "https://smarthome.madabase.com/reviews/x-sense-sws0a41-water-leak-detector-kit",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "smarthome",
+      "path": "/reviews/yolink-x3-bulldog-valve-controller",
+      "status": 200,
+      "canonical": "https://smarthome.madabase.com/reviews/yolink-x3-bulldog-valve-controller",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "smarthome",
+      "path": "/reviews/aqara-valve-controller-t1",
+      "status": 200,
+      "canonical": "https://smarthome.madabase.com/reviews/aqara-valve-controller-t1",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "smarthome",
+      "path": "/reviews/moen-flo-900-001-smart-water-shutoff",
+      "status": 200,
+      "canonical": "https://smarthome.madabase.com/reviews/moen-flo-900-001-smart-water-shutoff",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "smarthome",
+      "path": "/reviews/aqara-door-and-window-sensor-p2",
+      "status": 200,
+      "canonical": "https://smarthome.madabase.com/reviews/aqara-door-and-window-sensor-p2",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "smarthome",
+      "path": "/reviews/aqara-hub-m3",
+      "status": 200,
+      "canonical": "https://smarthome.madabase.com/reviews/aqara-hub-m3",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "smarthome",
+      "path": "/reviews/tapo-p110m-energy-monitoring-smart-plug",
+      "status": 200,
+      "canonical": "https://smarthome.madabase.com/reviews/tapo-p110m-energy-monitoring-smart-plug",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "smarthome",
+      "path": "/reviews/tapo-p125m-matter-smart-plug",
+      "status": 200,
+      "canonical": "https://smarthome.madabase.com/reviews/tapo-p125m-matter-smart-plug",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "smarthome",
+      "path": "/reviews/schlage-encode-plus-smart-lock",
+      "status": 200,
+      "canonical": "https://smarthome.madabase.com/reviews/schlage-encode-plus-smart-lock",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "smarthome",
+      "path": "/reviews/yale-assure-lock-2-touch-fingerprint",
+      "status": 200,
+      "canonical": "https://smarthome.madabase.com/reviews/yale-assure-lock-2-touch-fingerprint",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "smarthome",
+      "path": "/reviews/eufy-video-doorbell-e340",
+      "status": 200,
+      "canonical": "https://smarthome.madabase.com/reviews/eufy-video-doorbell-e340",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "smarthome",
+      "path": "/reviews/ultraloq-bolt-se-smart-lock",
+      "status": 200,
+      "canonical": "https://smarthome.madabase.com/reviews/ultraloq-bolt-se-smart-lock",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "smarthome",
+      "path": "/reviews/aqara-presence-multi-sensor-fp300",
+      "status": 200,
+      "canonical": "https://smarthome.madabase.com/reviews/aqara-presence-multi-sensor-fp300",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "smarthome",
+      "path": "/reviews/aqara-presence-sensor-fp2",
+      "status": 200,
+      "canonical": "https://smarthome.madabase.com/reviews/aqara-presence-sensor-fp2",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "smarthome",
+      "path": "/reviews/meross-msg100-homekit-garage-door-opener",
+      "status": 200,
+      "canonical": "https://smarthome.madabase.com/reviews/meross-msg100-homekit-garage-door-opener",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "smarthome",
+      "path": "/reviews/switchbot-blind-tilt",
+      "status": 200,
+      "canonical": "https://smarthome.madabase.com/reviews/switchbot-blind-tilt",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "smarthome",
+      "path": "/reviews/emporia-vue-3-home-energy-monitor",
+      "status": 200,
+      "canonical": "https://smarthome.madabase.com/reviews/emporia-vue-3-home-energy-monitor",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/betsey-johnson-moon-star-drop-earrings",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/betsey-johnson-moon-star-drop-earrings",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/betsey-johnson-lucky-charm-earrings",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/betsey-johnson-lucky-charm-earrings",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/betsey-johnson-cupcake-mismatch-earrings",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/betsey-johnson-cupcake-mismatch-earrings",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/loungefly-minnie-mouse-bow-mini-backpack",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/loungefly-minnie-mouse-bow-mini-backpack",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/betsey-johnson-backyard-frog-earrings",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/betsey-johnson-backyard-frog-earrings",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/artistic-face-drop-earrings",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/artistic-face-drop-earrings",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/sparkly-square-leverback-earrings",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/sparkly-square-leverback-earrings",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/xocartige-champagne-bottle-earrings",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/xocartige-champagne-bottle-earrings",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/nattasoul-champagne-martini-earring-set",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/nattasoul-champagne-martini-earring-set",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/loungefly-minnie-mouse-dress-mini-backpack",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/loungefly-minnie-mouse-dress-mini-backpack",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/loungefly-minnie-rock-the-dots-backpack",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/loungefly-minnie-rock-the-dots-backpack",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/loungefly-mickey-checkered-convertible-bag",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/loungefly-mickey-checkered-convertible-bag",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/loungefly-mickey-minnie-aop-backpack",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/loungefly-mickey-minnie-aop-backpack",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/loungefly-mickey-mouse-mini-backpack",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/loungefly-mickey-mouse-mini-backpack",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/loungefly-princess-books-mini-backpack",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/loungefly-princess-books-mini-backpack",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/betsey-johnson-straight-as-charm-earrings",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/betsey-johnson-straight-as-charm-earrings",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/betsey-johnson-football-mismatch-earrings",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/betsey-johnson-football-mismatch-earrings",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/betsey-johnson-pink-sugar-skull-earrings",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/betsey-johnson-pink-sugar-skull-earrings",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/betsey-johnson-pumpkin-spice-earrings",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/betsey-johnson-pumpkin-spice-earrings",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/betsey-johnson-chocolate-strawberry-earrings",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/betsey-johnson-chocolate-strawberry-earrings",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/betsey-johnson-boho-butterfly-earrings",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/betsey-johnson-boho-butterfly-earrings",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/betsey-johnson-pencil-mismatch-earrings",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/betsey-johnson-pencil-mismatch-earrings",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/betsey-johnson-starfish-earrings",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/betsey-johnson-starfish-earrings",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/betsey-johnson-cup-dangle-earrings",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/betsey-johnson-cup-dangle-earrings",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/betsey-johnson-bee-stud-earrings",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/betsey-johnson-bee-stud-earrings",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/loungefly-princess-stained-glass-backpack",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/loungefly-princess-stained-glass-backpack",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/loungefly-minnie-floral-rock-the-dots-backpack",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/loungefly-minnie-floral-rock-the-dots-backpack",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/loungefly-mickey-friends-canvas-backpack",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/loungefly-mickey-friends-canvas-backpack",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/loungefly-princess-ice-cream-backpack",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/loungefly-princess-ice-cream-backpack",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/loungefly-tigger-mini-backpack",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/loungefly-tigger-mini-backpack",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/loungefly-eeyore-mini-backpack",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/loungefly-eeyore-mini-backpack",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/loungefly-mickey-minnie-donald-daisy-backpack",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/loungefly-mickey-minnie-donald-daisy-backpack",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/loungefly-disney-dogs-mini-backpack",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/loungefly-disney-dogs-mini-backpack",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/spiderweb-skeleton-hand-hair-clips",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/spiderweb-skeleton-hand-hair-clips",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/neutral-flower-claw-clip-set",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/neutral-flower-claw-clip-set",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/mehayi-large-pearl-hair-clips",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/mehayi-large-pearl-hair-clips",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/metal-butterfly-flower-hair-clips",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/metal-butterfly-flower-hair-clips",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/chill-pill-hair-claw-clip",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/chill-pill-hair-claw-clip",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/jasmine-rhinestone-tassel-hair-claw",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/jasmine-rhinestone-tassel-hair-claw",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/camila-paris-green-french-hair-clip",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/camila-paris-green-french-hair-clip",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/large-mulberry-silk-long-scarf",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/large-mulberry-silk-long-scarf",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/aufeel-small-mulberry-silk-scarf",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/aufeel-small-mulberry-silk-scarf",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/long-skinny-multipurpose-scarf",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/long-skinny-multipurpose-scarf",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/relang-printed-satin-hair-scarf",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/relang-printed-satin-hair-scarf",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/twenty-four-fashion-scarf-set",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/twenty-four-fashion-scarf-set",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/wecibor-colorful-novelty-crew-socks",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/wecibor-colorful-novelty-crew-socks",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/jeasona-cute-cat-socks",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/jeasona-cute-cat-socks",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/moggei-printed-cotton-boot-socks",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/moggei-printed-cotton-boot-socks",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/glcmxmart-food-animal-fun-socks",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/glcmxmart-food-animal-fun-socks",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "style",
+      "path": "/reviews/jspupifip-fruit-ankle-socks",
+      "status": 200,
+      "canonical": "https://style.madabase.com/reviews/jspupifip-fruit-ankle-socks",
+      "passed": true,
+      "errors": []
+    }
+  ]
+}

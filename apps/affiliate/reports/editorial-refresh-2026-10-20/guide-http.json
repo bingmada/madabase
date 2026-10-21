@@ -1,0 +1,640 @@
+{
+  "checkedAt": "2026-10-21T02:43:17.131Z",
+  "scope": "Local final production build; no merchant requests",
+  "total": 79,
+  "passed": 79,
+  "results": [
+    {
+      "site": "network",
+      "path": "/guides/home-network-smart-home-outage-plan",
+      "status": 200,
+      "canonical": "https://network.madabase.com/guides/home-network-smart-home-outage-plan",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "smarthome",
+      "path": "/guides/matter-apple-google-home-assistant-feature-checklist",
+      "status": 200,
+      "canonical": "https://smarthome.madabase.com/guides/matter-apple-google-home-assistant-feature-checklist",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/guides/caldigit-ts4-vs-ts5-vs-ts5-plus",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/guides/caldigit-ts4-vs-ts5-vs-ts5-plus",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/guides/insta360-link-2-vs-link-2-pro-webcam",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/guides/insta360-link-2-vs-link-2-pro-webcam",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "smarthome",
+      "path": "/en-gb/guides/matter-apple-google-home-assistant-feature-checklist",
+      "status": 200,
+      "canonical": "https://smarthome.madabase.com/en-gb/guides/matter-apple-google-home-assistant-feature-checklist",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/en-gb/guides/home-network-smart-home-outage-plan",
+      "status": 200,
+      "canonical": "https://network.madabase.com/en-gb/guides/home-network-smart-home-outage-plan",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/en-gb/guides/insta360-link-2-vs-link-2-pro-webcam",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/en-gb/guides/insta360-link-2-vs-link-2-pro-webcam",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/en-gb/guides/caldigit-ts4-vs-ts5-vs-ts5-plus",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/en-gb/guides/caldigit-ts4-vs-ts5-vs-ts5-plus",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "smarthome",
+      "path": "/en-ca/guides/matter-apple-google-home-assistant-feature-checklist",
+      "status": 200,
+      "canonical": "https://smarthome.madabase.com/en-ca/guides/matter-apple-google-home-assistant-feature-checklist",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/en-ca/guides/home-network-smart-home-outage-plan",
+      "status": 200,
+      "canonical": "https://network.madabase.com/en-ca/guides/home-network-smart-home-outage-plan",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/en-ca/guides/caldigit-ts4-vs-ts5-vs-ts5-plus",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/en-ca/guides/caldigit-ts4-vs-ts5-vs-ts5-plus",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/en-ca/guides/insta360-link-2-vs-link-2-pro-webcam",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/en-ca/guides/insta360-link-2-vs-link-2-pro-webcam",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "smarthome",
+      "path": "/de-de/guides/matter-apple-google-home-assistant-feature-checklist",
+      "status": 200,
+      "canonical": "https://smarthome.madabase.com/de-de/guides/matter-apple-google-home-assistant-feature-checklist",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/de-de/guides/home-network-smart-home-outage-plan",
+      "status": 200,
+      "canonical": "https://network.madabase.com/de-de/guides/home-network-smart-home-outage-plan",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/de-de/guides/insta360-link-2-vs-link-2-pro-webcam",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/de-de/guides/insta360-link-2-vs-link-2-pro-webcam",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/de-de/guides/caldigit-ts4-vs-ts5-vs-ts5-plus",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/de-de/guides/caldigit-ts4-vs-ts5-vs-ts5-plus",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "smarthome",
+      "path": "/nl-nl/guides/matter-apple-google-home-assistant-feature-checklist",
+      "status": 200,
+      "canonical": "https://smarthome.madabase.com/nl-nl/guides/matter-apple-google-home-assistant-feature-checklist",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/nl-nl/guides/insta360-link-2-vs-link-2-pro-webcam",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/nl-nl/guides/insta360-link-2-vs-link-2-pro-webcam",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/nl-nl/guides/caldigit-ts4-vs-ts5-vs-ts5-plus",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/nl-nl/guides/caldigit-ts4-vs-ts5-vs-ts5-plus",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/nl-nl/guides/home-network-smart-home-outage-plan",
+      "status": 200,
+      "canonical": "https://network.madabase.com/nl-nl/guides/home-network-smart-home-outage-plan",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "smarthome",
+      "path": "/guides/renter-no-drill-smart-home-plan",
+      "status": 200,
+      "canonical": "https://smarthome.madabase.com/guides/renter-no-drill-smart-home-plan",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "pet",
+      "path": "/guides/covered-self-cleaning-litter-boxes-buying-guide",
+      "status": 200,
+      "canonical": "https://pets.madabase.com/guides/covered-self-cleaning-litter-boxes-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/guides/acoustic-desk-dividers-buying-guide",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/guides/acoustic-desk-dividers-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/guides/active-sitting-stools-buying-guide",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/guides/active-sitting-stools-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "smarthome",
+      "path": "/en-gb/guides/renter-no-drill-smart-home-plan",
+      "status": 200,
+      "canonical": "https://smarthome.madabase.com/en-gb/guides/renter-no-drill-smart-home-plan",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/guides/desk-cable-grommets-buying-guide",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/guides/desk-cable-grommets-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/guides/desk-cable-sleeves-buying-guide",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/guides/desk-cable-sleeves-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/guides/desk-pegboard-organizers-buying-guide",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/guides/desk-pegboard-organizers-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "smarthome",
+      "path": "/en-ca/guides/renter-no-drill-smart-home-plan",
+      "status": 200,
+      "canonical": "https://smarthome.madabase.com/en-ca/guides/renter-no-drill-smart-home-plan",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "smarthome",
+      "path": "/de-de/guides/renter-no-drill-smart-home-plan",
+      "status": 200,
+      "canonical": "https://smarthome.madabase.com/de-de/guides/renter-no-drill-smart-home-plan",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/guides/desktop-computer-speakers-buying-guide",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/guides/desktop-computer-speakers-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/guides/desktop-file-organizers-buying-guide",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/guides/desktop-file-organizers-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/guides/desktop-ring-lights-buying-guide",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/guides/desktop-ring-lights-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "smarthome",
+      "path": "/nl-nl/guides/renter-no-drill-smart-home-plan",
+      "status": 200,
+      "canonical": "https://smarthome.madabase.com/nl-nl/guides/renter-no-drill-smart-home-plan",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/guides/floor-cable-covers-buying-guide",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/guides/floor-cable-covers-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/guides/desktop-shelf-systems-buying-guide",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/guides/desktop-shelf-systems-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/guides/ink-tank-printers-buying-guide",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/guides/ink-tank-printers-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/guides/keyboard-wrist-rests-buying-guide",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/guides/keyboard-wrist-rests-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/guides/laptop-cooling-pads-buying-guide",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/guides/laptop-cooling-pads-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/guides/mouse-wrist-rests-buying-guide",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/guides/mouse-wrist-rests-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/guides/monitor-light-bars-buying-guide",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/guides/monitor-light-bars-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/guides/office-lumbar-cushions-buying-guide",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/guides/office-lumbar-cushions-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/guides/portable-photo-printers-buying-guide",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/guides/portable-photo-printers-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/guides/office-printer-stands-buying-guide",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/guides/office-printer-stands-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/guides/overhead-book-scanners-buying-guide",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/guides/overhead-book-scanners-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/guides/ptz-conference-cameras-buying-guide",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/guides/ptz-conference-cameras-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/guides/receipt-scanners-buying-guide",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/guides/receipt-scanners-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/guides/rolling-file-cabinets-buying-guide",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/guides/rolling-file-cabinets-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/guides/under-desk-foot-hammocks-buying-guide",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/guides/under-desk-foot-hammocks-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/guides/under-desk-pedal-exercisers-buying-guide",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/guides/under-desk-pedal-exercisers-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/guides/webcam-key-lights-buying-guide",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/guides/webcam-key-lights-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "homeoffice",
+      "path": "/guides/vesa-monitor-adapters-buying-guide",
+      "status": 200,
+      "canonical": "https://homeoffice.madabase.com/guides/vesa-monitor-adapters-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "baby",
+      "path": "/guides/childproof-door-knob-covers-buying-guide",
+      "status": 200,
+      "canonical": "https://baby.madabase.com/guides/childproof-door-knob-covers-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "baby",
+      "path": "/guides/childproof-refrigerator-locks-buying-guide",
+      "status": 200,
+      "canonical": "https://baby.madabase.com/guides/childproof-refrigerator-locks-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/guides/cloud-managed-access-points-buying-guide",
+      "status": 200,
+      "canonical": "https://network.madabase.com/guides/cloud-managed-access-points-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/guides/bulk-ethernet-cable-reels-buying-guide",
+      "status": 200,
+      "canonical": "https://network.madabase.com/guides/bulk-ethernet-cable-reels-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/guides/coax-cable-testers-buying-guide",
+      "status": 200,
+      "canonical": "https://network.madabase.com/guides/coax-cable-testers-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/guides/coax-compression-tools-buying-guide",
+      "status": 200,
+      "canonical": "https://network.madabase.com/guides/coax-compression-tools-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/guides/ethernet-inline-couplers-buying-guide",
+      "status": 200,
+      "canonical": "https://network.madabase.com/guides/ethernet-inline-couplers-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/guides/ethernet-network-taps-buying-guide",
+      "status": 200,
+      "canonical": "https://network.madabase.com/guides/ethernet-network-taps-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/guides/fiber-cleaning-kits-buying-guide",
+      "status": 200,
+      "canonical": "https://network.madabase.com/guides/fiber-cleaning-kits-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/guides/fiber-optic-patch-cables-buying-guide",
+      "status": 200,
+      "canonical": "https://network.madabase.com/guides/fiber-optic-patch-cables-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/guides/fiber-optic-power-meters-buying-guide",
+      "status": 200,
+      "canonical": "https://network.madabase.com/guides/fiber-optic-power-meters-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/guides/fiber-visual-fault-locators-buying-guide",
+      "status": 200,
+      "canonical": "https://network.madabase.com/guides/fiber-visual-fault-locators-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/guides/industrial-ethernet-switches-buying-guide",
+      "status": 200,
+      "canonical": "https://network.madabase.com/guides/industrial-ethernet-switches-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/guides/kvm-over-ip-extenders-buying-guide",
+      "status": 200,
+      "canonical": "https://network.madabase.com/guides/kvm-over-ip-extenders-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/guides/managed-2-5gbe-switches-buying-guide",
+      "status": 200,
+      "canonical": "https://network.madabase.com/guides/managed-2-5gbe-switches-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/guides/mini-ups-for-routers-buying-guide",
+      "status": 200,
+      "canonical": "https://network.madabase.com/guides/mini-ups-for-routers-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/guides/network-rack-cooling-fans-buying-guide",
+      "status": 200,
+      "canonical": "https://network.madabase.com/guides/network-rack-cooling-fans-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/guides/network-rack-shelves-buying-guide",
+      "status": 200,
+      "canonical": "https://network.madabase.com/guides/network-rack-shelves-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/guides/preterminated-fiber-runs-buying-guide",
+      "status": 200,
+      "canonical": "https://network.madabase.com/guides/preterminated-fiber-runs-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/guides/rack-blanking-panels-buying-guide",
+      "status": 200,
+      "canonical": "https://network.madabase.com/guides/rack-blanking-panels-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/guides/rackmount-network-ups-buying-guide",
+      "status": 200,
+      "canonical": "https://network.madabase.com/guides/rackmount-network-ups-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/guides/serial-device-servers-buying-guide",
+      "status": 200,
+      "canonical": "https://network.madabase.com/guides/serial-device-servers-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/guides/sfp28-network-switches-buying-guide",
+      "status": 200,
+      "canonical": "https://network.madabase.com/guides/sfp28-network-switches-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/guides/sfp28-transceivers-buying-guide",
+      "status": 200,
+      "canonical": "https://network.madabase.com/guides/sfp28-transceivers-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/guides/wall-plate-access-points-buying-guide",
+      "status": 200,
+      "canonical": "https://network.madabase.com/guides/wall-plate-access-points-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/guides/waterproof-rj45-couplers-buying-guide",
+      "status": 200,
+      "canonical": "https://network.madabase.com/guides/waterproof-rj45-couplers-buying-guide",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "site": "network",
+      "path": "/guides/optical-time-domain-reflectometers-buying-guide",
+      "status": 200,
+      "canonical": "https://network.madabase.com/guides/optical-time-domain-reflectometers-buying-guide",
+      "passed": true,
+      "errors": []
+    }
+  ]
+}

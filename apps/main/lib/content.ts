@@ -1,3 +1,5 @@
+import researchUpdates from "./research-updates.json";
+
 export type Publication = {
   key: string;
   name: string;
@@ -86,14 +88,15 @@ export const publications: Publication[] = [
   },
 ];
 
-export const researchItems = [
-  { publication: "Signalwise Picks", topic: "Home networking", title: "Deco BE67 vs. BE63: where the upgrade actually matters", summary: "A model-by-model decision around ports, backhaul, pack count, and the homes that can use the extra capacity.", href: "https://network.madabase.com/best/tp-link-deco-be67-vs-be63", updated: "Updated July 2026" },
-  { publication: "Dwellwise Picks", topic: "Smart home", title: "Matter, Thread, Wi-Fi, or Zigbee before checkout", summary: "A compatibility-first checklist that separates the app, controller, radio, hub, and border-router requirements.", href: "https://smarthome.madabase.com/guides/matter-thread-wifi-zigbee-device-checklist", updated: "Updated July 2026" },
-  { publication: "Deskwise Picks", topic: "Home office", title: "Branch Ergonomic Chair: warranty, returns, and fit", summary: "The decision beyond dimensions, including current warranty scope, return friction, adjustment range, and alternatives.", href: "https://homeoffice.madabase.com/reviews/branch-ergonomic-chair", updated: "Updated July 2026" },
-  { publication: "NestCheck Picks", topic: "Baby gear", title: "Ergobaby Omni Breeze positions by age", summary: "A milestone-led guide to newborn setup, inward carry, outward-facing timing, hip carry, and back carry.", href: "https://baby.madabase.com/guides/ergobaby-omni-breeze-positions-by-age", updated: "Updated July 2026" },
-  { publication: "PawSelect Picks", topic: "Pet care", title: "Furbo 360: what stays free and what needs Nanny", summary: "A clear separation of live camera controls, paid detection features, current subscription risk, and checkout variants.", href: "https://pets.madabase.com/reviews/furbo-360-dog-camera", updated: "Updated July 2026" },
-  { publication: "Sideglance Style", topic: "Personal style", title: "Which Minnie mini backpack is easier to wear", summary: "A practical comparison of scale, palette, capacity, outfit range, and the details to verify before ordering.", href: "https://style.madabase.com/best/loungefly-minnie-bow-vs-rock-the-dots-backpack", updated: "Updated July 2026" },
-];
+export const researchItems = researchUpdates.map((item) => {
+  const publication = publications.find((entry) => entry.key === item.site);
+  return {
+    ...item,
+    publication: publication?.name ?? "Madabase",
+    topic: publication?.label ?? "Household decisions",
+    updated: `Updated ${new Intl.DateTimeFormat("en-US", { dateStyle: "long", timeZone: "UTC" }).format(new Date(`${item.updatedAt}T00:00:00Z`))}`,
+  };
+});
 
 export type GuideSection = {
   heading: string;
@@ -177,7 +180,7 @@ export const guides: Guide[] = [
     title: "The household technology subscription checklist",
     dek: "Compare the cost and usefulness of cloud features before a camera, monitor, doorbell, or feeder becomes another monthly bill.",
     category: "Recurring cost",
-    updatedAt: "July 21, 2026",
+    updatedAt: "October 20, 2026",
     readingTime: "8 minute read",
     image: "/images/smart-home.webp",
     verdict: "Separate what the hardware does for free from what the subscription adds. Then compare the amount billed today, renewal price, minimum term, camera or household limits, cancellation timing, and what happens to recordings and automations when the plan ends.",

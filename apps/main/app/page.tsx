@@ -124,18 +124,18 @@ export default function HomePage() {
           <div className="section-heading split-heading">
             <div>
               <p className="eyebrow">Recently checked</p>
-              <h2>Research with a reason to exist.</h2>
+              <h2>What changed, and why it matters.</h2>
             </div>
             <Link className="text-link" href="/research">View all selected research <ArrowRight size={16} aria-hidden="true" /></Link>
           </div>
           <div className="research-list">
-            {researchItems.slice(0, 4).map((item, index) => (
+            {researchItems.slice(0, 6).map((item, index) => (
               <article className="research-row" key={item.href}>
-                <span className="research-index">0{index + 1}</span>
+                <span className="research-index">{String(index + 1).padStart(2, "0")}</span>
                 <div>
                   <p className="eyebrow">{item.topic} · {item.publication}</p>
                   <h3>{item.title}</h3>
-                  <p>{item.summary}</p>
+                  <p>{item.change}</p>
                 </div>
                 <div className="research-action">
                   <span>{item.updated}</span>

@@ -1,0 +1,170 @@
+[
+  {
+    "site": "homeoffice",
+    "title": "ThinkCentre Tiny upgrade planner",
+    "href": "https://homeoffice.madabase.com/compatibility/mini-pcs",
+    "summary": "8 Tiny profiles: M70q Gen 2, M710q, M910q, M720q, M920q, M920x, M70q Gen 3, M90q Gen 3; DDR4/DDR5, storage positions and machine-specific FRU checks.",
+    "updatedAt": "2026-10-20",
+    "change": "Expanded to eight Tiny models, including a separate M70q Gen 2 reference, with generation-specific memory and unresolved-parts boundaries."
+  },
+  {
+    "site": "homeoffice",
+    "title": "CalDigit TS4 vs TS5 vs TS5 Plus: Upgrade or Keep Your Dock?",
+    "href": "https://homeoffice.madabase.com/guides/caldigit-ts4-vs-ts5-vs-ts5-plus",
+    "summary": "Compare the three CalDigit generations by host connection, charging, Ethernet and display wiring, with a separate decision for keeping a working TS4.",
+    "updatedAt": "2026-10-20",
+    "change": "Added a three-generation comparison with keep-or-upgrade decisions, charging, network and cable-path checks."
+  },
+  {
+    "site": "homeoffice",
+    "title": "Insta360 Link 2 vs Link 2 Pro: Fixed Desk or Moving Presenter?",
+    "href": "https://homeoffice.madabase.com/guides/insta360-link-2-vs-link-2-pro-webcam",
+    "summary": "Choose between Link 2, Link 2C, Link 2 Pro and Link 2C Pro by framing, sensor, audio needs, computer support and the equipment you already own.",
+    "updatedAt": "2026-10-20",
+    "change": "Added the Link 2 and Pro comparison, including fixed versus motorized framing and computer software limitations."
+  },
+  {
+    "site": "homeoffice",
+    "title": "Receipt Scanners: Single-Sheet Feeding, Paper Limits and Export",
+    "href": "https://homeoffice.madabase.com/guides/receipt-scanners-buying-guide",
+    "summary": "Compare the Epson RR-60’s individual-feed workflow with an automatic feeder or phone capture, including paper limits, export and software costs.",
+    "updatedAt": "2026-10-20",
+    "change": "Identified the RR-60 as a single-sheet scanner and added exact paper-handling and export checks."
+  },
+  {
+    "site": "homeoffice",
+    "title": "Rolling File Storage: Open Cart or Drawer Cabinet?",
+    "href": "https://homeoffice.madabase.com/guides/rolling-file-cabinets-buying-guide",
+    "summary": "Choose between an open letter-size hanging-file cart and an enclosed drawer cabinet, then check folder access, floor clearance and documented load limits.",
+    "updatedAt": "2026-10-20",
+    "change": "Corrected the linked item to an open letter-size file cart and compared it with an enclosed drawer cabinet."
+  },
+  {
+    "site": "homeoffice",
+    "title": "ThinkCentre M720q Tiny: RAM, SSD and PCIe Upgrade Checks",
+    "href": "https://homeoffice.madabase.com/guides/thinkcentre-m720q-upgrade-compatibility-guide",
+    "summary": "Check ThinkCentre M720q Tiny storage sockets, factory-validated memory, the SATA/PCIe conflict, power options and missing installation parts before buying an upgrade.",
+    "updatedAt": "2026-10-20",
+    "change": "Added cable-and-carrier checks, existing-parts checks and the conditions for avoiding a duplicate kit purchase."
+  },
+  {
+    "site": "homeoffice",
+    "title": "ThinkCentre M920q Tiny: RAM, SSD and PCIe Upgrade Checks",
+    "href": "https://homeoffice.madabase.com/guides/thinkcentre-m920q-upgrade-compatibility-guide",
+    "summary": "Check ThinkCentre M920q Tiny storage sockets, factory-validated memory, the SATA/PCIe conflict, power options and missing installation parts before buying an upgrade.",
+    "updatedAt": "2026-10-20",
+    "change": "Clarified machine-type parts evidence and the conflict between a PCIe card and a 2.5-inch drive."
+  },
+  {
+    "site": "homeoffice",
+    "title": "ThinkCentre M920x Tiny: RAM, SSD and PCIe Upgrade Checks",
+    "href": "https://homeoffice.madabase.com/guides/thinkcentre-m920x-upgrade-compatibility-guide",
+    "summary": "Check ThinkCentre M920x Tiny storage sockets, factory-validated memory, the SATA/PCIe conflict, power options and missing installation parts before buying an upgrade.",
+    "updatedAt": "2026-10-20",
+    "change": "Separated two-NVMe storage options from configuration-specific PCIe and SATA fit."
+  },
+  {
+    "site": "homeoffice",
+    "title": "Under-Desk Pedal Exercisers: Knee Clearance and Chair Movement",
+    "href": "https://homeoffice.madabase.com/guides/under-desk-pedal-exercisers-buying-guide",
+    "summary": "Measure moving knee clearance, chair stability and control reach, and distinguish powered pedal motion from manual resistance before choosing a desk exerciser.",
+    "updatedAt": "2026-10-20",
+    "change": "Added moving-knee clearance, chair stability and powered-versus-manual checks without transferring another brand's measurements."
+  },
+  {
+    "site": "homeoffice",
+    "title": "Non-VESA Monitor Adapters: Grip, Load and Port Clearance",
+    "href": "https://homeoffice.madabase.com/guides/vesa-monitor-adapters-buying-guide",
+    "summary": "Check the exact monitor enclosure, attachment method, combined load and cable clearance before fitting a non-VESA screen to an arm.",
+    "updatedAt": "2026-10-20",
+    "change": "Separated model-specific and grip-style adapters, combined load and unresolved exact-monitor fit."
+  },
+  {
+    "site": "homeoffice",
+    "title": "Webcam Key Lights: Position, Glare, Power and Mounting",
+    "href": "https://homeoffice.madabase.com/guides/webcam-key-lights-buying-guide",
+    "summary": "Compare an existing lamp, a monitor-mounted light and a separate stand by face lighting, screen reflections, mounting space and USB power.",
+    "updatedAt": "2026-10-20",
+    "change": "Added camera placement, reflection, clamp and power checks, keeping different manufacturers' specifications separate."
+  },
+  {
+    "site": "main",
+    "title": "The household technology subscription checklist",
+    "href": "https://madabase.com/guides/household-tech-subscription-checklist",
+    "summary": "Compare the cost and usefulness of cloud features before a camera, monitor, doorbell, or feeder becomes another monthly bill.",
+    "updatedAt": "2026-10-20",
+    "change": "Added a two-option ownership calculator with separate first-year and renewal subscriptions, consumables and electricity."
+  },
+  {
+    "site": "network",
+    "title": "Home Network Outage Plan: Power, Local Control and Recovery",
+    "href": "https://network.madabase.com/guides/home-network-smart-home-outage-plan",
+    "summary": "Separate ISP loss, router failure and power loss, then plan the modem, ONT, router, hubs and essential device fallbacks as a complete chain.",
+    "updatedAt": "2026-10-20",
+    "change": "Added a complete-chain outage plan that separates ISP loss, local-network failure and loss of mains power."
+  },
+  {
+    "site": "smarthome",
+    "title": "Matter in Apple Home, Google Home and Home Assistant: Feature Checks",
+    "href": "https://smarthome.madabase.com/guides/matter-apple-google-home-assistant-feature-checklist",
+    "summary": "Check the exact controls, transport, bridge and firmware before choosing an ecosystem; a Matter badge does not describe every available device feature.",
+    "updatedAt": "2026-10-20",
+    "change": "Added platform-specific feature checks and the differences between a native integration and a Matter bridge."
+  },
+  {
+    "site": "smarthome",
+    "title": "Renter Smart Home Plan: No-Drill Mounts and Reversible Upgrades",
+    "href": "https://smarthome.madabase.com/guides/renter-no-drill-smart-home-plan",
+    "summary": "Check the doorbell generation, wall finish, removal method, charging access and move-out cost before choosing a supposedly rental-friendly device.",
+    "updatedAt": "2026-10-20",
+    "change": "Added exact-generation no-drill mount checks, surface limitations and a reversible installation plan."
+  },
+  {
+    "site": "baby",
+    "title": "Toddler Learning Tower Buying Guide: Stability, Openings, Platform, and Recall Checks",
+    "href": "https://baby.madabase.com/guides/toddler-learning-towers-buying-guide",
+    "summary": "Choose a standing helper tower by the child's age and skills, current recall status, platform lock, tip resistance, side openings, entry, rail height, counter gap, footprint, assembly, supervision, and storage—not by Montessori wording alone.",
+    "updatedAt": "2026-10-19",
+    "change": "Paused an unavailable exact listing and distinguished the Original model from a different recalled folding model."
+  },
+  {
+    "site": "homeoffice",
+    "title": "MacBook and dock compatibility finder",
+    "href": "https://homeoffice.madabase.com/compatibility/docks",
+    "summary": "Chip, lid position, two independent displays, cables, power and DisplayLink permissions.",
+    "updatedAt": "2026-10-19",
+    "change": "Added complete cable paths, Mac display limits, DisplayLink requirements and missing-parts checks."
+  },
+  {
+    "site": "homeoffice",
+    "title": "Monitor arm and desk fit checker",
+    "href": "https://homeoffice.madabase.com/compatibility/monitor-arms",
+    "summary": "Screen weight without stand, VESA pattern, clamp thickness, curved-screen and desk construction checks.",
+    "updatedAt": "2026-10-19",
+    "change": "Added actual clamp geometry, minimum monitor weight, reinforcement thickness and unknown-fit outcomes."
+  },
+  {
+    "site": "homeoffice",
+    "title": "CalDigit TS4 Thunderbolt 4 Dock",
+    "href": "https://homeoffice.madabase.com/reviews/caldigit-ts4-thunderbolt-dock",
+    "summary": "A premium 18-port Thunderbolt 4 dock with 98W host charging, 2.5GbE, DisplayPort, downstream Thunderbolt, extensive USB and audio, and host-dependent dual-display support.",
+    "updatedAt": "2026-10-19",
+    "change": "Added the TS4-versus-newer-dock decision and the limits that a new dock cannot remove."
+  },
+  {
+    "site": "network",
+    "title": "NAS and Ethernet bottleneck planner",
+    "href": "https://network.madabase.com/compatibility/ethernet",
+    "summary": "Check every link from a laptop or Tiny PC to a NAS, count switch ports and distinguish LAN from internet speed.",
+    "updatedAt": "2026-10-19",
+    "change": "Separated local NAS, routed, direct and internet paths, with complete port budgets and link-rate ceilings."
+  },
+  {
+    "site": "network",
+    "title": "Deco BE63 2-Pack vs 3-Pack: Which Pack Do You Need?",
+    "href": "https://network.madabase.com/guides/deco-be63-be67-two-pack-vs-three-pack",
+    "summary": "Start with two Deco nodes when one satellite covers the measured weak zone; buy three only for a separate floor or wing with a strong wireless or Ethernet path.",
+    "updatedAt": "2026-10-19",
+    "change": "Clarified exact pack choices, the WAN/backhaul path and verified buying options."
+  }
+]

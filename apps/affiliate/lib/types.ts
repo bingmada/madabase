@@ -110,6 +110,7 @@ export type Guide = Publishable & {
   image?: string;
   imageAlt?: string;
   searchQuestion?: string;
+  decisionLayout?: boolean;
   quickAnswer?: string;
   editorialMethod?: string[];
   communityEvidence?: Array<{

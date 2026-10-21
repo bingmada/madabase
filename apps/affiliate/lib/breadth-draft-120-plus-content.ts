@@ -8,6 +8,7 @@ import networkProductData from "../config/breadth-draft-network-product-research
 import petProductData from "../config/breadth-draft-pet-product-research.json";
 import smarthomeProductData from "../config/breadth-draft-smarthome-product-research.json";
 import type { Guide, SiteKey } from "./types";
+import { applyGuideEditorialRepair, familyDecisionTitles, publicDecisionNote } from "./guide-editorial-repairs";
 
 type BreadthSite = Extract<SiteKey, "network" | "smarthome" | "homeoffice" | "baby" | "pet">;
 
@@ -105,7 +106,7 @@ const titleSuffixBySite: Record<BreadthSite, string> = {
 const setupPlaybookBySite: Record<BreadthSite, string> = {
   network: "Record the full path, port standards, power source, cable or optic type, connector at each end, mounting location, environmental limits and the test that will prove the installed link works. Configure the minimum required features first, save a known-good configuration, label both ends and test the real traffic or load instead of accepting a link light as proof.",
   smarthome: "Confirm physical and electrical fit before creating an account. Complete the manufacturer's local setup, update firmware, document required hubs and subscriptions, test physical fallback, then disconnect the Internet briefly to learn what still works. Keep safety-critical operation available without a cloud routine whenever the product class allows it.",
-  homeoffice: "Measure the working position with the desk, chair, display, laptop, cables and paper path in place. Test the exact workflow during the return window, including the least convenient task, then record storage, cleaning, consumables, driver or app support and the condition that would make the simpler alternative preferable.",
+  homeoffice: "Check the actual workstation and the movement space needed by the item. Follow the exact model's installation and operating instructions, then try the task that prompted the purchase during the return window. Keep a working existing arrangement when the new item does not remove that limitation.",
   baby: "Follow the exact manufacturer's assembly, age, size and care instructions; inspect small parts, fasteners, straps, adhesives and wear before first use and regularly afterward. Use the product only for its stated awake or supervised purpose, keep a non-product safety plan in place and recheck recalls and current guidance as the child develops.",
   pet: "Measure the animal and the real location rather than selecting by breed photo. Introduce the item gradually with the pet supervised, verify every restraint, fastener and wear point, and stop if gait, breathing, stress, eating, drinking or elimination changes. Product convenience never replaces veterinary assessment of a new health or mobility problem.",
 };
@@ -113,7 +114,7 @@ const setupPlaybookBySite: Record<BreadthSite, string> = {
 const evidenceBoundaryBySite: Record<BreadthSite, string> = {
   network: "A compatible title is not a performance certification. Publish no throughput, PoE, reach, environmental or protection claim that is not supported by the exact model documentation and an appropriate installed test.",
   smarthome: "Connectivity is a control layer, not proof of safe autonomous operation. Do not promise unattended use, guaranteed detection, energy savings or continued cloud service; state hub, subscription and offline boundaries plainly.",
-  homeoffice: "This is research synthesis, not a hands-on durability or ergonomics trial. Avoid invented productivity, pain-relief, acoustic, print-cost or image-quality claims and separate measured specifications from workflow judgment.",
+  homeoffice: "We have not tested this product or its fit in your workstation. Use the exact model's dimensions and instructions; a feature list is not a measured result.",
   baby: "This page cannot describe any accessory as childproof, sleep-safe, drowning-proof, scald-proof or a substitute for attentive care. Health and safety instructions come from authoritative guidance and the exact manufacturer's current directions, not marketplace copy.",
   pet: "This page cannot make medical, treatment, heat-protection, escape-proof, airline-approval or behavior guarantees. Verify carrier rules, habitat requirements and product instructions for the exact animal and trip, and use professional advice when risk is material.",
 };
@@ -127,6 +128,7 @@ const categoryPromptBySite: Record<BreadthSite, string> = {
 };
 
 function guideTitle(family: FamilyRecord) {
+  if (familyDecisionTitles[family.familySlug]) return familyDecisionTitles[family.familySlug];
   const detailed = `${family.familyName} Buying Guide: ${titleSuffixBySite[family.site]}`;
   if (detailed.length <= 72) return detailed;
   const compact = `${family.familyName}: Fit, Trade-offs & Buying Guide`;
@@ -185,7 +187,7 @@ function buildGuide(product: ProductRecord): Guide {
     familySlug: family.familySlug,
     familyRole: "buying",
     title: indexedZeroRecovery?.title ?? guideTitle(family),
-    dek: recoveryDek ?? `A decision-first guide to ${family.familyName.toLowerCase()}, using an exact current Amazon item as the checkout anchor while comparing it with ${family.alternative}.`,
+    dek: recoveryDek ?? publicDecisionNote(opportunity.note),
     category: family.category,
     publicationStatus: "published",
     releaseCandidate,
@@ -196,7 +198,7 @@ function buildGuide(product: ProductRecord): Guide {
     searchQuestion: indexedZeroRecovery?.searchQuestion ?? `How do I choose ${family.familyName.toLowerCase()}, and when is ${family.alternative} the better solution?`,
     quickAnswer: indexedZeroRecovery
       ? `${indexedZeroRecovery.choosePrimary} ${indexedZeroRecovery.chooseAlternative}`
-      : `Start with the constraint, not the product label. ${opportunity.note} Use ASIN ${product.asin} only as a current checkout anchor, and recheck the exact variation, seller, included parts, and return path before ordering.`,
+      : `${publicDecisionNote(opportunity.note)} Compare these requirements with ${family.alternative} before choosing the exact model.`,
     governance: {
       decision: "rewrite",
       independentDemand: indexedZeroRecovery?.searchQuestion ?? opportunity.note,
@@ -216,17 +218,16 @@ function buildGuide(product: ProductRecord): Guide {
       title: `${family.familyName} pre-purchase record`,
       columns: ["Record before ordering", "Why it changes this decision"],
       rows: [
-        { label: "Use case", values: [categoryPromptBySite[family.site], opportunity.note] },
-        { label: "Exact anchor", values: [`${exactBrand}: ${product.title} (ASIN ${product.asin})`, "A family name can hide different sizes, bundles, generations, connectors or regional models. The selected detail page must match the claim used in the article."] },
-        { label: "Control option", values: [family.alternative, `Choose ${alternative} when it solves the same constraint with less installation, maintenance, account dependence or safety exposure.`] },
-        { label: "Release evidence", values: [`Two decision sources plus Amazon detail verification dated ${product.verifiedAt.slice(0, 10)}`, "Search presence proves neither product quality nor long-term availability. Sources support the decision dimensions; the exact listing controls checkout identity."] },
+        { label: "Use case", values: [categoryPromptBySite[family.site], publicDecisionNote(opportunity.note)] },
+        { label: "Linked model", values: [`${exactBrand}: ${product.title} (ASIN ${product.asin})`, "Match the actual model, dimensions, included parts and instructions; a product-family name alone does not establish fit."] },
+        { label: "Simpler option", values: [family.alternative, `Keep ${alternative} when it already handles the task and the new product adds no useful capability.`] },
+        { label: "Listing check date", values: [product.verifiedAt.slice(0, 10), "This historical identity check is not a current stock, price or compatibility guarantee."] },
       ],
     },
     editorialMethod: [
-      `Write down the exact constraint and compare it with ${family.alternative} before opening a merchant page.`,
-      "Verify every compatibility, size, material, power, capacity, protocol and included-part claim against the exact model documentation.",
-      "Use owner discussions to locate recurring setup failures, but do not convert anecdotes, marketplace ratings or review counts into test results.",
-      "Recheck Amazon identity and availability, inspect the dedicated decision image and related guides, then save the exact variation and return conditions used for the purchase decision.",
+      "The sources below describe decision criteria and use limits. We have not physically tested the linked item or measured its performance.",
+      `The retail identity was recorded on ${product.verifiedAt.slice(0, 10)}. That date is separate from article revisions and does not certify current price, stock or seller.`,
+      "Community examples are anecdotal context, not specifications, test results or proof of a universal fit.",
     ],
     communityEvidence: communityDiscussion ? [{
       sourceName: communityDiscussion.sourceName,
@@ -237,28 +238,24 @@ function buildGuide(product: ProductRecord): Guide {
     sections: [
       ...(recoveryDecisionSection ? [recoveryDecisionSection] : []),
       {
-        heading: "Define the independent buying problem",
-        body: opportunity.note,
+        heading: `What changes the ${family.familyName.toLowerCase()} decision`,
+        body: publicDecisionNote(opportunity.note),
       },
       {
-        heading: `Audit the exact ${exactBrand} checkout anchor`,
-        body: `The researched anchor is “${product.title},” ASIN ${product.asin}. Its Amazon detail page returned the same ASIN without a current-unavailable signal on ${product.verifiedAt.slice(0, 10)}, and the title matched this product family. That does not freeze the offer. Before purchase, confirm the selected variation, seller, included parts, dimensions, current documentation, return terms and any safety or recall notice. This guide does not preserve a live price, star rating, review count or Amazon-hosted image as if those details were permanent.`,
+        heading: `Which ${exactBrand} model is linked`,
+        body: `The linked item is “${product.title},” ASIN ${product.asin}. Its recorded listing-identity check is dated ${product.verifiedAt.slice(0, 10)}. Confirm the selected model, included parts and current instructions before ordering; this dated record does not establish today's stock, price or seller.`,
       },
       {
-        heading: `Use ${alternative} as the control`,
-        body: `A useful buying guide must explain when not to buy. Compare the product class with ${family.alternative} using the same measured constraint. If the alternative removes a subscription, avoids a permanent modification, needs less maintenance, is easier to verify or handles the edge case more safely, it should win even when the affiliate item has more features. Record that decision before checkout so novelty does not replace fit.`,
+        heading: `When ${alternative} is enough`,
+        body: `Keep ${family.alternative} when it already solves the task described above. Compare the actual space, installation, maintenance and recurring costs before adding another product. A replacement is useful only when it removes a specific limitation of the current arrangement.`,
       },
       {
         heading: "Set up a real acceptance test",
         body: setupPlaybookBySite[family.site],
       },
       {
-        heading: "Keep claims inside the evidence boundary",
+        heading: "Evidence and use limits",
         body: evidenceBoundaryBySite[family.site],
-      },
-      {
-        heading: "Final checkout checklist",
-        body: `Open the decision sources and the Amazon detail page before ordering. Verify ASIN ${product.asin}, current availability, exact variation, seller, included parts, compatibility limits, merchant disclosure, return terms and any current safety notice. Use the dedicated ${family.familyName.toLowerCase()} decision image and the related guides as planning aids, not as proof that a marketplace variation has stayed unchanged. If a material fact cannot be confirmed, remove that assumption from the buying decision or choose the simpler alternative.`,
       },
     ],
     sources: [
@@ -278,4 +275,4 @@ function buildGuide(product: ProductRecord): Guide {
   };
 }
 
-export const breadthDraft120PlusGuides: Guide[] = products.map(buildGuide);
+export const breadthDraft120PlusGuides: Guide[] = products.map((product) => applyGuideEditorialRepair(buildGuide(product)));

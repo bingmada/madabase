@@ -1,0 +1,49 @@
+{
+  "status": "local-validated-ready-for-production",
+  "ownerRequest": "Independent audit without the legacy affiliate-growth-expander strategy; address all findings and implement all seven candidate directions in quality-controlled batches. Owner explicitly authorized publication through supplied Aliyun Workbench on October 21.",
+  "implemented": {
+    "existingPageRepair": [
+      "Main homepage and research feed derive from 21 recorded substantive changes",
+      "Product template removes repetitive panels and keeps exact merchant identity and evidence before purchase CTA",
+      "54 generic titles replaced with distinct topic titles; internal editorial instructions cleaned in generated family guides",
+      "Five Homeoffice guides deeply rewritten, including intros, quick answers, comparison tables, evidence boundaries and focused layout"
+    ],
+    "sevenDirections": [
+      "CalDigit TS4 / TS5 / TS5 Plus comparison",
+      "Insta360 Link 2 / 2C / Pro comparison",
+      "Matter feature checks across Apple, Google and Home Assistant",
+      "Home network and smart-home outage planning",
+      "Renter installation and no-drill compatibility",
+      "M70q Gen 2 added as eighth Tiny model with no inherited cross-generation kit qualification",
+      "Existing household subscription guide extended with interactive two-option 1/3/5-year cost calculator"
+    ]
+  },
+  "qualityReview": {
+    "focusedGuides": 10,
+    "desktop": "Answers and table before the article; no repeated generic framework or unrelated scene image; exact sources and one country menu",
+    "mobile": "All ten focused guides checked at 390px; document width375, table viewport343px, no document overflow",
+    "limits": [
+      "Five existing guides were deeply rewritten; the other title and copy repairs are not claimed as full original research",
+      "No current merchant availability or performance test is claimed",
+      "M70q Gen 2 chipset discrepancy and exact-parts gaps remain explicitly unresolved",
+      "Local standalone runtime excludes production environment and cannot verify Costume database inventory; production gate must check its unchanged 76 product sitemap entries"
+    ]
+  },
+  "localValidation": {
+    "productPages": 170,
+    "guideAndLocalePages": 79,
+    "focusedLayoutPages": 10,
+    "mainCanonicalPages": 13,
+    "decisionAndArithmeticChecks": 30,
+    "purchaseLinkFormatChecks": 506,
+    "merchantLiveAvailabilityChecks": 0,
+    "releaseFailureTests": 10,
+    "capacityScenarios": 9,
+    "lint": "both passed on Node20",
+    "seo": "passed",
+    "searchIndexEntries": 1140,
+    "newIndexableGuides": 5
+  },
+  "publication": "Not deployed at report creation; fill actual activation and public checks after release",
+  "automation": "No recurring schedule created; daily updates should follow substantive evidence and review, not automatic date changes."
+}
