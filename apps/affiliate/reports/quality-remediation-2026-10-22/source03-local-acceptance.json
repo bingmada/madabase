@@ -1,0 +1,51 @@
+{
+  "acceptedAt": "2026-10-25T13:55:00.540Z",
+  "status": "passed_local",
+  "releaseId": "qszA6RQt-xptrOY48SXsk",
+  "mainBuildId": "T10-x-IHJC96qrCe2vOr6",
+  "scope": {
+    "sourceGuides": 6,
+    "guideSections": 36,
+    "decisionTables": 6,
+    "relatedProductNotes": 3,
+    "totalChangedPages": 9
+  },
+  "checks": {
+    "fullPageHttp": "9/9",
+    "desktopAndMobileHeads": "18/18",
+    "exactModelCards": "10/10 across five guides",
+    "keyboardAccessibleTables": "6/6",
+    "regressionPages": 21,
+    "staticAssets": 10,
+    "mainExactExport": "9/9",
+    "isolatedQaEventCurrentAndStale": "passed; persisted=false",
+    "releaseIdentityScenarios": 7,
+    "deployFailureRecoveryCases": 10,
+    "schemaShapeMockCases": 6,
+    "exactPurchasePositiveModels": 5,
+    "exactPurchaseMutationGuards": 75,
+    "typecheck": "passed",
+    "scopedLint": "passed",
+    "qualifiedPurchaseAndSetupChecks": "passed"
+  },
+  "evidence": [
+    "source03-editorial-review.json",
+    "source03-primary-review-completed.json",
+    "source03-rendered-metadata-before.json",
+    "source03-page-http-checks.json",
+    "source03-ui-checks.json",
+    "source03-release-local-checks.json",
+    "source03-release-identity-checks.json",
+    "source03-package-checks.json",
+    "build-affiliate-source03-final.log",
+    "build-main-source03.log"
+  ],
+  "limits": [
+    "Manufacturer-document research, not hands-on product testing.",
+    "Historical Amazon listing identities and original retailer observation dates preserved; no fresh stock/seller/hardware certification claimed.",
+    "GSC evidence includes page-level impressions; no page-query mapping or post-change CTR improvement claimed.",
+    "Other ledger batches and global acceptance remain open."
+  ],
+  "deployed": false,
+  "wholeTaskComplete": false
+}

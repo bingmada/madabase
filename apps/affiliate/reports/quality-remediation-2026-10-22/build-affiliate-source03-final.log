@@ -1,0 +1,77 @@
+
+> affiliate@0.1.0 build:release
+> NEXT_RELEASE_DIST_DIR=.next-release NEXT_STANDALONE_RELEASE=1 next build && NEXT_RELEASE_DIST_DIR=.next-release NEXT_STANDALONE_SHARP_TARGET=linux-x64 node ../../scripts/package-next-standalone.mjs affiliate
+
+   ▲ Next.js 15.5.23
+   - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 2.9s
+   Linting and checking validity of types ...
+
+./lib/seo.ts
+17:54  Warning: '_path' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
+   Collecting page data ...
+   Generating static pages (0/28) ...
+   Generating static pages (7/28)
+   Generating static pages (14/28)
+   Generating static pages (21/28)
+ ✓ Generating static pages (28/28)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                                          Size  First Load JS
+┌ ƒ /                                                             2.28 kB         120 kB
+├ ƒ /_not-found                                                     987 B         104 kB
+├ ● /[slug]                                                         190 B         118 kB
+├   ├ /about
+├   ├ /methodology
+├   ├ /editorial-policy
+├   └ [+7 more paths]
+├ ƒ /[slug]/[kind]/[contentSlug]                                    190 B         118 kB
+├ ƒ /api/affiliate-clicks                                           148 B         103 kB
+├ ƒ /api/amazon-listing/[site]/[slug]                               148 B         103 kB
+├ ƒ /api/commerce-events                                            148 B         103 kB
+├ ƒ /api/distribution-feed                                          148 B         103 kB
+├ ƒ /api/pinterest-image/[kind]/[slug]                              148 B         103 kB
+├ ƒ /best/[slug]                                                  1.09 kB         119 kB
+├ ƒ /best/halloween-animatronics-small-yards-and-porches          3.73 kB         117 kB
+├ ƒ /catalog                                                      3.01 kB         112 kB
+├ ƒ /categories/[slug]                                             4.8 kB         123 kB
+├ ƒ /compatibility                                                  161 B         106 kB
+├ ƒ /compatibility/[topic]                                          179 B         151 kB
+├ ƒ /go/cj/[token]                                                  148 B         103 kB
+├ ƒ /guides/[slug]                                                 4.3 kB         161 kB
+├ ƒ /halloween                                                    3.73 kB         117 kB
+├ ƒ /halloween-ideas                                              1.37 kB         112 kB
+├ ● /halloween-ideas/[slug]                                       3.73 kB         117 kB
+├   ├ /halloween-ideas/haunted-carnival-clown-costume-yard-scene
+├   ├ /halloween-ideas/zombie-graveyard-group-costume-yard-scene
+├   └ /halloween-ideas/gothic-witch-apothecary-costume-entryway
+├ ○ /icon.svg                                                         0 B            0 B
+├ ƒ /llms.txt                                                       148 B         103 kB
+├ ƒ /premium                                                      3.01 kB         112 kB
+├ ƒ /products/[slug]                                              3.01 kB         112 kB
+├ ƒ /reviews/[slug]                                               1.09 kB         119 kB
+├ ƒ /robots.txt                                                     148 B         103 kB
+├ ƒ /search                                                       1.02 kB         107 kB
+├ ○ /sitemap-index.xml                                              148 B         103 kB
+├ ƒ /sitemap.xml                                                    148 B         103 kB
+└ ƒ /tools/[slug]                                                  4.6 kB         123 kB
++ First Load JS shared by all                                      103 kB
+  ├ chunks/18-536e344942e9442c.js                                 46.4 kB
+  ├ chunks/87c73c54-24122e7b92478d00.js                           54.2 kB
+  └ other shared chunks (total)                                   1.92 kB
+
+
+ƒ Middleware                                                        36 kB
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+
+Created /Users/liyingda/Documents/project/self/madabase/apps/affiliate/.release/affiliate-runtime.tgz
+Archive size: 59.6 MB
+Start after extraction: HOSTNAME=127.0.0.1 PORT=3000 node start.mjs

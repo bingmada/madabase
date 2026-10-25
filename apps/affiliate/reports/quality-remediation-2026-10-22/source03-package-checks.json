@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "app": "affiliate",
+      "entries": 6344,
+      "environmentFiles": [],
+      "nestedRuntime": [],
+      "symbolicLinks": [],
+      "sha256": "9d1fce715594aa095b70e1ee2e63d9d840dccb435a8f2bce6b9312566f5f914a",
+      "passed": true
+    },
+    {
+      "app": "main",
+      "entries": 4878,
+      "environmentFiles": [],
+      "nestedRuntime": [],
+      "symbolicLinks": [],
+      "sha256": "a80849f2044c03e1e4e2291857c4c07da7d5dcb31a2951d4a9567e864f0d126c",
+      "passed": true
+    }
+  ]
+}

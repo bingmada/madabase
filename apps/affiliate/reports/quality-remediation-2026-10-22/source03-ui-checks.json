@@ -1,0 +1,476 @@
+{
+  "checkedAt": "2026-10-25T13:47:34.712Z",
+  "releaseId": "qszA6RQt-xptrOY48SXsk",
+  "pageHeads": [
+    {
+      "key": "network:poe-vs-poe-plus-for-cameras-access-points",
+      "view": "desktop",
+      "brokenImages": 0,
+      "ctaCount": 2,
+      "h1": "PoE vs PoE+: Camera and Access Point Power Checks",
+      "height": 818,
+      "overflow": false,
+      "release": "qszA6RQt-xptrOY48SXsk",
+      "width": 1309
+    },
+    {
+      "key": "network:managed-vs-unmanaged-poe-switch-home-guide",
+      "view": "desktop",
+      "brokenImages": 0,
+      "ctaCount": 2,
+      "h1": "Managed vs Unmanaged PoE: Camera VLAN and Power Checks",
+      "height": 818,
+      "overflow": false,
+      "release": "qszA6RQt-xptrOY48SXsk",
+      "width": 1309
+    },
+    {
+      "key": "smarthome:smart-garage-door-controller-compatibility-hub-offline-guide",
+      "view": "desktop",
+      "brokenImages": 0,
+      "ctaCount": 2,
+      "h1": "Garage Door Controllers: Opener Fit, Hubs and Offline Use",
+      "height": 818,
+      "overflow": false,
+      "release": "qszA6RQt-xptrOY48SXsk",
+      "width": 1309
+    },
+    {
+      "key": "smarthome:smart-blind-motor-hub-local-control-guide",
+      "view": "desktop",
+      "brokenImages": 0,
+      "ctaCount": 2,
+      "h1": "Blind Tilt: Fit, Matter Hubs and Offline Control",
+      "height": 818,
+      "overflow": false,
+      "release": "qszA6RQt-xptrOY48SXsk",
+      "width": 1309
+    },
+    {
+      "key": "smarthome:whole-home-energy-monitor-cloud-local-installation-guide",
+      "view": "desktop",
+      "brokenImages": 0,
+      "ctaCount": 2,
+      "h1": "Vue 3 Energy Monitor: Panel Fit, Cloud and Offline Data",
+      "height": 818,
+      "overflow": false,
+      "release": "qszA6RQt-xptrOY48SXsk",
+      "width": 1309
+    },
+    {
+      "key": "baby:baby-registry-essentials-guide",
+      "view": "desktop",
+      "brokenImages": 0,
+      "ctaCount": 0,
+      "h1": "Baby Registry Essentials: What to Prepare and What Can Wait",
+      "height": 818,
+      "overflow": false,
+      "release": "qszA6RQt-xptrOY48SXsk",
+      "width": 1309
+    },
+    {
+      "key": "smarthome:meross-msg100-homekit-garage-door-opener",
+      "view": "desktop",
+      "brokenImages": 0,
+      "ctaCount": 2,
+      "h1": "Meross MSG100 Guide: Compatibility, Hub & Offline Use",
+      "height": 818,
+      "overflow": false,
+      "release": "qszA6RQt-xptrOY48SXsk",
+      "width": 1309
+    },
+    {
+      "key": "smarthome:switchbot-blind-tilt",
+      "view": "desktop",
+      "brokenImages": 0,
+      "ctaCount": 2,
+      "h1": "SwitchBot Blind Tilt Guide: Hub, Matter & Offline Use",
+      "height": 818,
+      "overflow": false,
+      "release": "qszA6RQt-xptrOY48SXsk",
+      "width": 1309
+    },
+    {
+      "key": "smarthome:emporia-vue-3-home-energy-monitor",
+      "view": "desktop",
+      "brokenImages": 0,
+      "ctaCount": 2,
+      "h1": "Emporia Vue 3 Guide: Panel Fit, Cloud & Offline Data",
+      "height": 818,
+      "overflow": false,
+      "release": "qszA6RQt-xptrOY48SXsk",
+      "width": 1309
+    },
+    {
+      "key": "network:poe-vs-poe-plus-for-cameras-access-points",
+      "view": "mobile",
+      "brokenImages": 0,
+      "ctaCount": 2,
+      "h1": "PoE vs PoE+: Camera and Access Point Power Checks",
+      "height": 844,
+      "overflow": false,
+      "release": "qszA6RQt-xptrOY48SXsk",
+      "width": 390
+    },
+    {
+      "key": "network:managed-vs-unmanaged-poe-switch-home-guide",
+      "view": "mobile",
+      "brokenImages": 0,
+      "ctaCount": 2,
+      "h1": "Managed vs Unmanaged PoE: Camera VLAN and Power Checks",
+      "height": 844,
+      "overflow": false,
+      "release": "qszA6RQt-xptrOY48SXsk",
+      "width": 390
+    },
+    {
+      "key": "smarthome:smart-garage-door-controller-compatibility-hub-offline-guide",
+      "view": "mobile",
+      "brokenImages": 0,
+      "ctaCount": 2,
+      "h1": "Garage Door Controllers: Opener Fit, Hubs and Offline Use",
+      "height": 844,
+      "overflow": false,
+      "release": "qszA6RQt-xptrOY48SXsk",
+      "width": 390
+    },
+    {
+      "key": "smarthome:smart-blind-motor-hub-local-control-guide",
+      "view": "mobile",
+      "brokenImages": 0,
+      "ctaCount": 2,
+      "h1": "Blind Tilt: Fit, Matter Hubs and Offline Control",
+      "height": 844,
+      "overflow": false,
+      "release": "qszA6RQt-xptrOY48SXsk",
+      "width": 390
+    },
+    {
+      "key": "smarthome:whole-home-energy-monitor-cloud-local-installation-guide",
+      "view": "mobile",
+      "brokenImages": 0,
+      "ctaCount": 2,
+      "h1": "Vue 3 Energy Monitor: Panel Fit, Cloud and Offline Data",
+      "height": 844,
+      "overflow": false,
+      "release": "qszA6RQt-xptrOY48SXsk",
+      "width": 390
+    },
+    {
+      "key": "baby:baby-registry-essentials-guide",
+      "view": "mobile",
+      "brokenImages": 0,
+      "ctaCount": 0,
+      "h1": "Baby Registry Essentials: What to Prepare and What Can Wait",
+      "height": 844,
+      "overflow": false,
+      "release": "qszA6RQt-xptrOY48SXsk",
+      "width": 390
+    },
+    {
+      "key": "smarthome:meross-msg100-homekit-garage-door-opener",
+      "view": "mobile",
+      "brokenImages": 0,
+      "ctaCount": 2,
+      "h1": "Meross MSG100 Guide: Compatibility, Hub & Offline Use",
+      "height": 844,
+      "overflow": false,
+      "release": "qszA6RQt-xptrOY48SXsk",
+      "width": 390
+    },
+    {
+      "key": "smarthome:switchbot-blind-tilt",
+      "view": "mobile",
+      "brokenImages": 0,
+      "ctaCount": 2,
+      "h1": "SwitchBot Blind Tilt Guide: Hub, Matter & Offline Use",
+      "height": 844,
+      "overflow": false,
+      "release": "qszA6RQt-xptrOY48SXsk",
+      "width": 390
+    },
+    {
+      "key": "smarthome:emporia-vue-3-home-energy-monitor",
+      "view": "mobile",
+      "brokenImages": 0,
+      "ctaCount": 2,
+      "h1": "Emporia Vue 3 Guide: Panel Fit, Cloud & Offline Data",
+      "height": 844,
+      "overflow": false,
+      "release": "qszA6RQt-xptrOY48SXsk",
+      "width": 390
+    }
+  ],
+  "decisionViews": [
+    {
+      "key": "network:poe-vs-poe-plus-for-cameras-access-points",
+      "view": "desktop-decision",
+      "screenshot": "source03-desktop-decision-poe-vs-poe-plus-for-cameras-access-points.png",
+      "decisionLinks": [
+        {
+          "h": 40,
+          "href": "https://www.amazon.com/dp/B076HZFY3F?tag=madanetwork-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+          "text": "Check TP-Link TL-SG1005P on Amazon",
+          "y": 517.0809326171875
+        }
+      ],
+      "height": 818,
+      "overflow": false,
+      "release": "qszA6RQt-xptrOY48SXsk",
+      "width": 1309
+    },
+    {
+      "key": "network:managed-vs-unmanaged-poe-switch-home-guide",
+      "view": "desktop-decision",
+      "screenshot": "source03-desktop-decision-managed-vs-unmanaged-poe-switch-home-guide.png",
+      "decisionLinks": [
+        {
+          "h": 40,
+          "href": "https://www.amazon.com/dp/B01BW0AD1W?tag=madanetwork-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+          "text": "Check TP-Link TL-SG108PE on Amazon",
+          "y": 529.8011474609375
+        }
+      ],
+      "height": 818,
+      "overflow": false,
+      "release": "qszA6RQt-xptrOY48SXsk",
+      "width": 1309
+    },
+    {
+      "key": "smarthome:smart-garage-door-controller-compatibility-hub-offline-guide",
+      "view": "desktop-decision",
+      "screenshot": "source03-desktop-decision-smart-garage-door-controller-compatibility-hub-offline-guide.png",
+      "decisionLinks": [
+        {
+          "h": 40,
+          "href": "https://www.amazon.com/dp/B084Z5QZR2?tag=madasmart-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+          "text": "Check Meross MSG100HK on Amazon",
+          "y": 542.4502563476562
+        }
+      ],
+      "height": 818,
+      "overflow": false,
+      "release": "qszA6RQt-xptrOY48SXsk",
+      "width": 1309
+    },
+    {
+      "key": "smarthome:smart-blind-motor-hub-local-control-guide",
+      "view": "desktop-decision",
+      "screenshot": "source03-desktop-decision-smart-blind-motor-hub-local-control-guide.png",
+      "decisionLinks": [
+        {
+          "h": 40,
+          "href": "https://www.amazon.com/dp/B0BMLFZ4CP?tag=madasmart-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+          "text": "Check SwitchBot Blind Tilt on Amazon",
+          "y": 529.7230224609375
+        }
+      ],
+      "height": 818,
+      "overflow": false,
+      "release": "qszA6RQt-xptrOY48SXsk",
+      "width": 1309
+    },
+    {
+      "key": "smarthome:whole-home-energy-monitor-cloud-local-installation-guide",
+      "view": "desktop-decision",
+      "screenshot": "source03-desktop-decision-whole-home-energy-monitor-cloud-local-installation-guide.png",
+      "decisionLinks": [
+        {
+          "h": 40,
+          "href": "https://www.amazon.com/dp/B0C79PNK84?tag=madasmart-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+          "text": "Check Emporia Vue 3 on Amazon",
+          "y": 525.163330078125
+        }
+      ],
+      "height": 818,
+      "overflow": false,
+      "release": "qszA6RQt-xptrOY48SXsk",
+      "width": 1309
+    },
+    {
+      "key": "network:poe-vs-poe-plus-for-cameras-access-points",
+      "view": "mobile-decision",
+      "screenshot": "source03-mobile-decision-poe-vs-poe-plus-for-cameras-access-points.png",
+      "decisionLinks": [
+        {
+          "h": 59.999996185302734,
+          "href": "https://www.amazon.com/dp/B076HZFY3F?tag=madanetwork-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+          "text": "Check TP-Link TL-SG1005P on Amazon",
+          "y": 670.8025512695312
+        }
+      ],
+      "height": 844,
+      "overflow": false,
+      "release": "qszA6RQt-xptrOY48SXsk",
+      "width": 390
+    },
+    {
+      "key": "network:managed-vs-unmanaged-poe-switch-home-guide",
+      "view": "mobile-decision",
+      "screenshot": "source03-mobile-decision-managed-vs-unmanaged-poe-switch-home-guide.png",
+      "decisionLinks": [
+        {
+          "h": 59.999996185302734,
+          "href": "https://www.amazon.com/dp/B01BW0AD1W?tag=madanetwork-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+          "text": "Check TP-Link TL-SG108PE on Amazon",
+          "y": 676.7471313476562
+        }
+      ],
+      "height": 844,
+      "overflow": false,
+      "release": "qszA6RQt-xptrOY48SXsk",
+      "width": 390
+    },
+    {
+      "key": "smarthome:smart-garage-door-controller-compatibility-hub-offline-guide",
+      "view": "mobile-decision",
+      "screenshot": "source03-mobile-decision-smart-garage-door-controller-compatibility-hub-offline-guide.png",
+      "decisionLinks": [
+        {
+          "h": 40,
+          "href": "https://www.amazon.com/dp/B084Z5QZR2?tag=madasmart-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+          "text": "Check Meross MSG100HK on Amazon",
+          "y": 627.8551025390625
+        }
+      ],
+      "height": 844,
+      "overflow": false,
+      "release": "qszA6RQt-xptrOY48SXsk",
+      "width": 390
+    },
+    {
+      "key": "smarthome:smart-blind-motor-hub-local-control-guide",
+      "view": "mobile-decision",
+      "screenshot": "source03-mobile-decision-smart-blind-motor-hub-local-control-guide.png",
+      "decisionLinks": [
+        {
+          "h": 40,
+          "href": "https://www.amazon.com/dp/B0BMLFZ4CP?tag=madasmart-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+          "text": "Check SwitchBot Blind Tilt on Amazon",
+          "y": 672.9474487304688
+        }
+      ],
+      "height": 844,
+      "overflow": false,
+      "release": "qszA6RQt-xptrOY48SXsk",
+      "width": 390
+    },
+    {
+      "key": "smarthome:whole-home-energy-monitor-cloud-local-installation-guide",
+      "view": "mobile-decision",
+      "screenshot": "source03-mobile-decision-whole-home-energy-monitor-cloud-local-installation-guide.png",
+      "decisionLinks": [
+        {
+          "h": 40,
+          "href": "https://www.amazon.com/dp/B0C79PNK84?tag=madasmart-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+          "text": "Check Emporia Vue 3 on Amazon",
+          "y": 656.65478515625
+        }
+      ],
+      "height": 844,
+      "overflow": false,
+      "release": "qszA6RQt-xptrOY48SXsk",
+      "width": 390
+    }
+  ],
+  "keyboard": [
+    {
+      "key": "network:poe-vs-poe-plus-for-cameras-access-points",
+      "focused": true,
+      "left": 139.5454559326172,
+      "max": 140,
+      "overflow": false
+    },
+    {
+      "key": "network:managed-vs-unmanaged-poe-switch-home-guide",
+      "focused": true,
+      "left": 139.5454559326172,
+      "max": 140,
+      "overflow": false
+    },
+    {
+      "key": "smarthome:smart-garage-door-controller-compatibility-hub-offline-guide",
+      "focused": true,
+      "left": 80.45454406738281,
+      "max": 140,
+      "overflow": false
+    },
+    {
+      "key": "smarthome:smart-blind-motor-hub-local-control-guide",
+      "focused": true,
+      "left": 139.5454559326172,
+      "max": 140,
+      "overflow": false
+    },
+    {
+      "key": "smarthome:whole-home-energy-monitor-cloud-local-installation-guide",
+      "focused": true,
+      "left": 70.90908813476562,
+      "max": 140,
+      "overflow": false
+    },
+    {
+      "key": "baby:baby-registry-essentials-guide",
+      "focused": true,
+      "left": 119.09090423583984,
+      "max": 140,
+      "overflow": false
+    }
+  ],
+  "screenshots": [
+    "source03-desktop-baby-registry-essentials-guide.png",
+    "source03-desktop-decision-managed-vs-unmanaged-poe-switch-home-guide.png",
+    "source03-desktop-decision-poe-vs-poe-plus-for-cameras-access-points.png",
+    "source03-desktop-decision-smart-blind-motor-hub-local-control-guide.png",
+    "source03-desktop-decision-smart-garage-door-controller-compatibility-hub-offline-guide.png",
+    "source03-desktop-decision-whole-home-energy-monitor-cloud-local-installation-guide.png",
+    "source03-desktop-emporia-vue-3-home-energy-monitor.png",
+    "source03-desktop-managed-vs-unmanaged-poe-switch-home-guide.png",
+    "source03-desktop-meross-msg100-homekit-garage-door-opener.png",
+    "source03-desktop-poe-vs-poe-plus-for-cameras-access-points.png",
+    "source03-desktop-smart-blind-motor-hub-local-control-guide.png",
+    "source03-desktop-smart-garage-door-controller-compatibility-hub-offline-guide.png",
+    "source03-desktop-switchbot-blind-tilt.png",
+    "source03-desktop-table-baby-registry-essentials-guide.png",
+    "source03-desktop-table-managed-vs-unmanaged-poe-switch-home-guide.png",
+    "source03-desktop-table-poe-vs-poe-plus-for-cameras-access-points.png",
+    "source03-desktop-table-smart-blind-motor-hub-local-control-guide.png",
+    "source03-desktop-table-smart-garage-door-controller-compatibility-hub-offline-guide.png",
+    "source03-desktop-table-whole-home-energy-monitor-cloud-local-installation-guide.png",
+    "source03-desktop-whole-home-energy-monitor-cloud-local-installation-guide.png",
+    "source03-mobile-baby-registry-essentials-guide.png",
+    "source03-mobile-decision-managed-vs-unmanaged-poe-switch-home-guide.png",
+    "source03-mobile-decision-poe-vs-poe-plus-for-cameras-access-points.png",
+    "source03-mobile-decision-smart-blind-motor-hub-local-control-guide.png",
+    "source03-mobile-decision-smart-garage-door-controller-compatibility-hub-offline-guide.png",
+    "source03-mobile-decision-whole-home-energy-monitor-cloud-local-installation-guide.png",
+    "source03-mobile-emporia-vue-3-home-energy-monitor.png",
+    "source03-mobile-managed-vs-unmanaged-poe-switch-home-guide.png",
+    "source03-mobile-meross-msg100-homekit-garage-door-opener.png",
+    "source03-mobile-poe-vs-poe-plus-for-cameras-access-points.png",
+    "source03-mobile-smart-blind-motor-hub-local-control-guide.png",
+    "source03-mobile-smart-garage-door-controller-compatibility-hub-offline-guide.png",
+    "source03-mobile-switchbot-blind-tilt.png",
+    "source03-mobile-table-left-baby-registry-essentials-guide.png",
+    "source03-mobile-table-left-managed-vs-unmanaged-poe-switch-home-guide.png",
+    "source03-mobile-table-left-poe-vs-poe-plus-for-cameras-access-points.png",
+    "source03-mobile-table-left-smart-blind-motor-hub-local-control-guide.png",
+    "source03-mobile-table-left-smart-garage-door-controller-compatibility-hub-offline-guide.png",
+    "source03-mobile-table-left-whole-home-energy-monitor-cloud-local-installation-guide.png",
+    "source03-mobile-table-right-baby-registry-essentials-guide.png",
+    "source03-mobile-table-right-managed-vs-unmanaged-poe-switch-home-guide.png",
+    "source03-mobile-table-right-poe-vs-poe-plus-for-cameras-access-points.png",
+    "source03-mobile-table-right-smart-blind-motor-hub-local-control-guide.png",
+    "source03-mobile-table-right-smart-garage-door-controller-compatibility-hub-offline-guide.png",
+    "source03-mobile-table-right-whole-home-energy-monitor-cloud-local-installation-guide.png",
+    "source03-mobile-whole-home-energy-monitor-cloud-local-installation-guide.png",
+    "source03-mobile-optional-task-destination.png"
+  ],
+  "scope": "All nine page heads, six comparison tables and five conditional purchase cards visually inspected at desktop and mobile sizes. Read-only metric sweep recorded after prior screenshot inspection. No merchant link clicked. Registry has no default merchant card. Keyboard scroll final right-edge screenshots preserve right column and sticky labels.",
+  "optionalTaskNavigation": {
+    "from": "baby-registry-essentials-guide",
+    "to": "best-baby-monitors-for-apartments",
+    "internalNavigationVerified": true,
+    "noMerchantTraversal": true
+  }
+}

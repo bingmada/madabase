@@ -125,6 +125,7 @@ export function categoryCommerceProduct(site: SiteKey, category: string) {
  * name a product directly.
  */
 export function guideCommerceProduct(site: SiteKey, guide: Guide) {
+  if (guide.purchaseFlow === "task-links") return;
   const directlyRelatedProducts = (guide.relatedProducts ?? []).map((slug) => findProduct(site, slug));
   const directlyRelatedProduct = firstPurchasable(directlyRelatedProducts);
   if (directlyRelatedProduct) return directlyRelatedProduct;

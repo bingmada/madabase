@@ -1,0 +1,337 @@
+[
+  {
+    "key": "smarthome:meross-msg100-homekit-garage-door-opener",
+    "page": {
+      "site": "smarthome",
+      "slug": "meross-msg100-homekit-garage-door-opener",
+      "asin": "B084Z5QZR2",
+      "amazonTitle": "meross Smart Wi-Fi Garage Door Opener MSG100 HomeKit",
+      "seoTitle": "Meross MSG100 Guide: Compatibility, Hub & Offline Use",
+      "name": "Meross MSG100 HomeKit Garage Door Opener",
+      "brand": "Meross",
+      "category": "automation",
+      "image": "/images/affiliate/smarthome-second-round-editorial.webp",
+      "imageAlt": "Editorial smart-home utility scene with an unbranded garage controller, blind motor, and energy sensors",
+      "summary": "A retrofit controller for one compatible garage-door opener, with 2.4GHz Wi-Fi, HomeKit, Alexa, Google Home, and SmartThings support but a required opener-compatibility check.",
+      "verdict": "Choose MSG100 when one existing opener passes Meross's compatibility test and the household wants app or voice access without a separate Meross hub. Skip it when the opener needs an unavailable accessory or local-only automation is the main requirement.",
+      "bestFor": "One compatible garage door in an established HomeKit or voice-control home",
+      "pros": [
+        "No separate Meross hub is required",
+        "Supports major voice ecosystems",
+        "Existing wall button and remotes remain the physical fallback"
+      ],
+      "cons": [
+        "Compatibility must be checked by opener model",
+        "Remote and app features depend on the home network",
+        "Some opener families need an extra accessory"
+      ],
+      "specs": {
+        "ASIN": "B084Z5QZR2",
+        "Model": "MSG100HK",
+        "Network": "2.4GHz Wi-Fi",
+        "Hub": "No Meross hub required",
+        "Door": "One garage door",
+        "Platforms": "Apple Home, Alexa, Google Home, SmartThings"
+      },
+      "evidence": [
+        "Run the official compatibility check with the opener brand and model",
+        "Confirm whether Meross specifies an accessory for the exact opener",
+        "Verify 2.4GHz Wi-Fi at the ceiling unit",
+        "Keep the wall control and original remotes available for network outages"
+      ],
+      "alternatives": [
+        "Use the MSG200 family when two or three doors need one controller after a separate compatibility check.",
+        "Keep the existing opener unchanged when physical remotes already solve the job."
+      ],
+      "sources": [
+        {
+          "name": "Meross MSG100",
+          "url": "https://www.meross.com/en-gc/product-detail/Smart%20Wi-Fi%20Garage%20Door%20Opener/29",
+          "note": "Official platform, network, door-count, and installation information."
+        },
+        {
+          "name": "Meross compatibility FAQ",
+          "url": "https://www.meross.com/en-gc/support/FAQ/79.html",
+          "note": "Official opener compatibility and accessory path."
+        },
+        {
+          "name": "Amazon B084Z5QZR2",
+          "url": "https://www.amazon.com/dp/B084Z5QZR2",
+          "note": "Exact US HomeKit MSG100 listing identity."
+        }
+      ],
+      "updatedAt": "August 8, 2026",
+      "evidenceMode": "official-spec",
+      "researchNote": "We have not tested this product ourselves. This buying note uses current manufacturer documentation and exact-listing identity checks; confirm the selected model, seller, bundle, current terms, and return window before checkout.",
+      "amazonDetailUrl": "https://www.amazon.com/dp/B084Z5QZR2",
+      "whyItMatters": "Choose MSG100 when one existing opener passes Meross's compatibility test and the household wants app or voice access without a separate Meross hub. Skip it when the opener needs an unavailable accessory or local-only automation is the main requirement.",
+      "priceBand": "$$",
+      "rating": 0,
+      "scores": [
+        {
+          "label": "Decision clarity",
+          "value": 9
+        },
+        {
+          "label": "Setup fit",
+          "value": 8
+        },
+        {
+          "label": "Ongoing ownership",
+          "value": 8
+        }
+      ],
+      "editorialSections": [
+        {
+          "heading": "Compatibility comes before platform badges",
+          "body": "MSG100 closes a dry-contact control path, but garage opener wiring and security interfaces vary. Use Meross's compatibility tool and accessory guidance for the exact opener model before ordering."
+        },
+        {
+          "heading": "No hub does not mean no infrastructure",
+          "body": "The controller joins 2.4GHz Wi-Fi directly. HomeKit remote access still relies on the buyer's Apple home infrastructure, while Alexa, Google, SmartThings, and Meross remote control depend on their normal network and cloud paths."
+        },
+        {
+          "heading": "What still works when the internet is down",
+          "body": "Do not promise remote or app control during an outage. The existing wall button and compatible original remotes remain the practical physical fallback, so they should never be removed from the household plan."
+        },
+        {
+          "heading": "Who should skip it",
+          "body": "Skip when compatibility is unresolved, the garage lacks reliable Wi-Fi, more than one door needs control, or the household requires a documented fully local automation path."
+        }
+      ],
+      "offers": [
+        {
+          "merchant": "Amazon US",
+          "url": "https://www.amazon.com/dp/B084Z5QZR2?tag=madasmart-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+          "label": "Check Meross MSG100 HomeKit Garage Door Opener on Amazon",
+          "priceNote": "Confirm ASIN B084Z5QZR2, exact model, seller, included parts, live price, and availability."
+        }
+      ]
+    }
+  },
+  {
+    "key": "smarthome:switchbot-blind-tilt",
+    "page": {
+      "site": "smarthome",
+      "slug": "switchbot-blind-tilt",
+      "asin": "B0BMLFZ4CP",
+      "amazonTitle": "SwitchBot Blind Tilt Motorized Blinds Controller",
+      "seoTitle": "SwitchBot Blind Tilt Guide: Hub, Matter & Offline Use",
+      "name": "SwitchBot Blind Tilt",
+      "brand": "SwitchBot",
+      "category": "automation",
+      "image": "/images/affiliate/smarthome-second-round-editorial.webp",
+      "imageAlt": "Editorial smart-home utility scene with a blind-tilt motor on horizontal blinds",
+      "summary": "A solar-assisted retrofit motor for horizontal blinds with a tilt wand, using nearby Bluetooth by itself and a SwitchBot Hub for remote, voice, or Matter integrations.",
+      "verdict": "Blind Tilt is useful when the existing horizontal blind and wand fit its mechanism and nearby Bluetooth schedules are enough. Budget for Hub 2 when Matter, Apple Home, remote access, or broader ecosystem control is part of the goal.",
+      "bestFor": "Existing horizontal blinds with a tilt wand that should open on a schedule",
+      "pros": [
+        "Retrofits the tilt wand without replacing the blind",
+        "Nearby Bluetooth control does not require a hub",
+        "Manual wand movement remains available"
+      ],
+      "cons": [
+        "Not for roller or vertical blinds",
+        "Remote and voice control need a compatible SwitchBot Hub",
+        "Matter and Apple Home require the correct Hub 2 path"
+      ],
+      "specs": {
+        "ASIN": "B0BMLFZ4CP",
+        "Connection": "Bluetooth; Wi-Fi through SwitchBot Hub",
+        "Hub": "Optional for nearby use; required for remote and ecosystem control",
+        "Matter": "Via SwitchBot Hub 2",
+        "Blind": "Horizontal blind with tilt wand",
+        "Power": "Rechargeable motor with solar panel"
+      },
+      "evidence": [
+        "Confirm horizontal-blind and tilt-wand geometry",
+        "Choose standalone Bluetooth or Hub 2 before buying",
+        "Test manual wand movement after calibration",
+        "Do not equate cloud offline-control features for other SwitchBot products with Blind Tilt support"
+      ],
+      "alternatives": [
+        "Use a purpose-built roller-shade motor for bead-chain or roller mechanisms.",
+        "Replace the blind only when lift, tilt, and fabric all need changing together."
+      ],
+      "sources": [
+        {
+          "name": "SwitchBot Blind Tilt",
+          "url": "https://us.switch-bot.com/products/switchbot-blind-tilt",
+          "note": "Official fit, Bluetooth, hub, voice, Matter, and HomeKit information."
+        },
+        {
+          "name": "SwitchBot Hub guide",
+          "url": "https://support.switch-bot.com/hc/en-us/articles/7257579858455-Learn-More-About-SwitchBot-Hub",
+          "note": "Official local, cloud, and remote-control path explanation."
+        },
+        {
+          "name": "Amazon B0BMLFZ4CP",
+          "url": "https://www.amazon.com/dp/B0BMLFZ4CP",
+          "note": "Exact US single Blind Tilt listing identity."
+        }
+      ],
+      "updatedAt": "August 8, 2026",
+      "evidenceMode": "official-spec",
+      "researchNote": "We have not tested this product ourselves. This buying note uses current manufacturer documentation and exact-listing identity checks; confirm the selected model, seller, bundle, current terms, and return window before checkout.",
+      "amazonDetailUrl": "https://www.amazon.com/dp/B0BMLFZ4CP",
+      "whyItMatters": "Blind Tilt is useful when the existing horizontal blind and wand fit its mechanism and nearby Bluetooth schedules are enough. Budget for Hub 2 when Matter, Apple Home, remote access, or broader ecosystem control is part of the goal.",
+      "priceBand": "$$",
+      "rating": 0,
+      "scores": [
+        {
+          "label": "Decision clarity",
+          "value": 9
+        },
+        {
+          "label": "Setup fit",
+          "value": 8
+        },
+        {
+          "label": "Ongoing ownership",
+          "value": 8
+        }
+      ],
+      "editorialSections": [
+        {
+          "heading": "The blind mechanism is the first gate",
+          "body": "Blind Tilt rotates a compatible horizontal-blind wand. It does not convert roller shades, vertical blinds, cord loops, or damaged tilt mechanisms into a compatible system."
+        },
+        {
+          "heading": "A hub changes the control model",
+          "body": "Nearby phone control can use Bluetooth. Remote access and voice integrations use a SwitchBot Hub, while Matter and Apple Home integration require the supported Hub 2 route. Buy the hub only for a control path the household will use."
+        },
+        {
+          "heading": "Offline fallback is local and manual",
+          "body": "Manual wand rotation remains the most dependable fallback. Nearby Bluetooth and saved schedules may still be useful, but remote and cloud-dependent commands should be treated as unavailable when the network path fails."
+        },
+        {
+          "heading": "Who should skip it",
+          "body": "Skip if the blind has no compatible wand, slats bind, remote control without a hub is expected, or the household wants full shade lifting rather than tilt control."
+        }
+      ],
+      "offers": [
+        {
+          "merchant": "Amazon US",
+          "url": "https://www.amazon.com/dp/B0BMLFZ4CP?tag=madasmart-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+          "label": "Check SwitchBot Blind Tilt on Amazon",
+          "priceNote": "Confirm ASIN B0BMLFZ4CP, exact model, seller, included parts, live price, and availability."
+        }
+      ]
+    }
+  },
+  {
+    "key": "smarthome:emporia-vue-3-home-energy-monitor",
+    "page": {
+      "site": "smarthome",
+      "slug": "emporia-vue-3-home-energy-monitor",
+      "asin": "B0C79PNK84",
+      "amazonTitle": "Emporia Vue 3 Home Energy Monitor",
+      "seoTitle": "Emporia Vue 3 Guide: Panel Fit, Cloud & Offline Data",
+      "name": "Emporia Vue 3 Home Energy Monitor",
+      "brand": "Emporia",
+      "category": "climate",
+      "image": "/images/affiliate/smarthome-second-round-editorial.webp",
+      "imageAlt": "Editorial smart-home utility scene with clamp-style energy sensors beside a closed electrical panel",
+      "summary": "A circuit-level electrical-panel monitor with clamp sensors, Wi-Fi or Ethernet connectivity, cloud dashboards, and strict panel, installation, and offline-data trade-offs.",
+      "verdict": "Vue 3 is a strong fit when circuit-level trends justify professional panel work and cloud access is acceptable. It is not a local-first energy monitor: the device keeps measuring during outages, but the app cannot read it directly without the cloud.",
+      "bestFor": "Homeowners who want circuit-level usage trends and accept cloud dashboards",
+      "pros": [
+        "Circuit clamps show more detail than a utility bill",
+        "Wi-Fi or Ethernet connectivity",
+        "Short outages are buffered before upload"
+      ],
+      "cons": [
+        "Electrical-panel installation has shock and arc-flash risk",
+        "No direct local dashboard",
+        "Longer outages lose fine-grained resolution"
+      ],
+      "specs": {
+        "ASIN": "B0C79PNK84",
+        "Model": "Vue Gen 3",
+        "Installation": "Inside a compatible electrical panel",
+        "Sensors": "Main and branch-circuit CT clamps by bundle",
+        "Network": "Wi-Fi or Ethernet",
+        "LocalData": "No direct local data access"
+      },
+      "evidence": [
+        "Have a qualified electrician assess the panel and local rules",
+        "Confirm service type, panel space, conductor access, and clamp count",
+        "Choose Wi-Fi or Ethernet before installation",
+        "Accept cloud dependence and outage averaging before purchase"
+      ],
+      "alternatives": [
+        "Use utility-provided interval data when whole-home trends are enough.",
+        "Choose a documented local-first monitor when cloud independence is a hard requirement."
+      ],
+      "sources": [
+        {
+          "name": "Emporia Vue 3 technical specifications",
+          "url": "https://www.emporiaenergy.com/wp-content/uploads/2024/03/Emporia-Vue-Gen-3-Technical-Specs.pdf",
+          "note": "Official service, sensor, network, and environmental specifications."
+        },
+        {
+          "name": "Emporia Vue 3 installation guide",
+          "url": "https://cdn.emporiaenergy.com/products/vue3/Vue3-Installation-Guide-EN-110525.pdf",
+          "note": "Official electrical and panel installation requirements."
+        },
+        {
+          "name": "Emporia offline behavior",
+          "url": "https://help.emporiaenergy.com/en/articles/14809190-vue-offline-behavior",
+          "note": "Official buffering, averaging, cloud, and local-access limits."
+        },
+        {
+          "name": "Amazon B0C79PNK84",
+          "url": "https://www.amazon.com/dp/B0C79PNK84",
+          "note": "Exact US Vue 3 listing identity."
+        }
+      ],
+      "updatedAt": "August 8, 2026",
+      "evidenceMode": "official-spec",
+      "researchNote": "We have not tested this product ourselves. This buying note uses current manufacturer documentation and exact-listing identity checks; confirm the selected model, seller, bundle, current terms, and return window before checkout.",
+      "amazonDetailUrl": "https://www.amazon.com/dp/B0C79PNK84",
+      "whyItMatters": "Vue 3 is a strong fit when circuit-level trends justify professional panel work and cloud access is acceptable. It is not a local-first energy monitor: the device keeps measuring during outages, but the app cannot read it directly without the cloud.",
+      "priceBand": "$$",
+      "rating": 0,
+      "scores": [
+        {
+          "label": "Decision clarity",
+          "value": 9
+        },
+        {
+          "label": "Setup fit",
+          "value": 8
+        },
+        {
+          "label": "Ongoing ownership",
+          "value": 8
+        }
+      ],
+      "editorialSections": [
+        {
+          "heading": "Panel safety is a stop gate",
+          "body": "The product installs around energized service and branch conductors. Follow the current installation guide and use a qualified electrician when required or whenever the panel cannot be made and verified safe."
+        },
+        {
+          "heading": "Count the circuits and physical space",
+          "body": "Service configuration, conductor diameter, clamp bundle, panel fill, cable routing, and Ethernet access determine fit. A compatible electrical service does not guarantee enough physical room."
+        },
+        {
+          "heading": "It measures offline but does not become local-first",
+          "body": "Emporia documents short-outage buffering and averaged data for longer outages. The app still depends on the Emporia cloud and does not read the Vue directly from the local network."
+        },
+        {
+          "heading": "Who should skip it",
+          "body": "Skip if panel work is not acceptable, a direct local API or dashboard is required, or whole-home utility data already answers the buyer's only question."
+        }
+      ],
+      "offers": [
+        {
+          "merchant": "Amazon US",
+          "url": "https://www.amazon.com/dp/B0C79PNK84?tag=madasmart-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+          "label": "Check Emporia Vue 3 Home Energy Monitor on Amazon",
+          "priceNote": "Confirm ASIN B0C79PNK84, exact model, seller, included parts, live price, and availability."
+        }
+      ]
+    }
+  }
+]

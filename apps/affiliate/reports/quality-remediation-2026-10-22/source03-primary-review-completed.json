@@ -1,0 +1,170 @@
+{
+  "checkedAt": "2026-10-25T13:16:03.089Z",
+  "scope": "Documentation review completed for authored claims; physical tests and current merchant offers remain separate.",
+  "previousResearch": "source03-primary-research-in-progress.json",
+  "sources": [
+    {
+      "url": "https://www.tp-link.com/us/business-networking/easy-smart-switch/tl-sg108pe/",
+      "extent": "CurrentV5overview and complete relevant hardware/software specification tables read.",
+      "facts": [
+        "EightGigabitports,four802.3af/atpoweredports,64Wbudget,web/utilityVLANmanagement.",
+        "DefaultcurrentversionV5;V3andV4haveexplicitpagechoices. No V3whole-modeldiscontinuation inferred.",
+        "V5PSU53.5V1.31A differsfromV354V1.3A;do nottransferreceivedrevision/adapteridentity."
+      ]
+    },
+    {
+      "url": "https://www.tp-link.com/us/business-networking/easy-smart-switch/tl-sg108pe/v3/",
+      "extent": "Relevant completeV3hardware/software tables and management/overload body read.",
+      "facts": [
+        "Fourpoweredports1–4,64Wtotal;32simultaneousVLANs/port/tagVLAN,not fullrouterfirewallpolicy.",
+        "Perport30Wcap does notestablish4x30Wtotal;overloadcuts lowerpriorityports."
+      ]
+    },
+    {
+      "url": "https://www.meross.com/en-gc/product-detail/Smart%20Wi-Fi%20Garage%20Door%20Opener/29",
+      "extent": "Directretrievalmostlysite shell; indexedmanufacturerfullspecbodyread. Embeddedvideosnotwatched.",
+      "facts": [
+        "MSG100HomeKitversions distinctfromnon-HomeKit;2.4GHzWiFi,version-specificpowersupplies. No HomeKit=>Matter inference."
+      ]
+    },
+    {
+      "url": "https://www.meross.com/en-gc/compatibility-check/garage-door-opener",
+      "extent": "Entire relevant compatibility text read; no interactive test or wiring performed.",
+      "facts": [
+        "MSG100/100HK/200/200HKchecker explicitlyseparatefromMSG150/150HKdocument.",
+        "Manufacturer warns not to short terminals if their location is uncertain; do not republish a universal short-test recipe."
+      ]
+    },
+    {
+      "url": "https://www.meross.com/en-gc/faq/79.html",
+      "extent": "CanonicalaccessoryFAQ relevantbodyread.",
+      "facts": [
+        "Accessoryregional/modelrestrictions apply;not universal opener workaround or automaticfreeaccessoryguarantee."
+      ]
+    },
+    {
+      "url": "https://shop.meross.com/products/smart-wifi-garage-door-opener-msg150",
+      "extent": "Complete relevant current product description read.",
+      "facts": [
+        "MSG150targetsChamberlain/LiftMaster/Craftsman;shopdirectsotherbrandstoMSG100HK. It is not an automatic universal successor replacement."
+      ]
+    },
+    {
+      "url": "https://support.switch-bot.com/hc/en-us/articles/13569889726743-Differences-Between-Hub-Mini-Hub-2-Hub-Mini-Matter-Enabled-and-Hub-3",
+      "extent": "Whole comparison table and notes read.",
+      "facts": [
+        "PlainHubMini lacksMatter;Hub2,HubMiniMatterEnabled,Hub3 have distinct capabilities/slotlimits.",
+        "IRofflinefunction is not proof of everyBlindTilt/local automation path."
+      ]
+    },
+    {
+      "url": "https://support.switch-bot.com/hc/en-us/articles/13282638111127-Which-SwitchBot-Devices-Can-Be-Added-to-Apple-Home-As-Sub-devices-via-Matter",
+      "extent": "Supportedbridge/device table andBlindTilt/Hub2firmwarenotesread;not all unrelateddeviceprocedures.",
+      "facts": [
+        "CurrentBlindTiltsupportincludesHub2,Hub3,HubMiniMatterEnabledascompatiblebridges;olderHub2-onlysitecopyisoutdated.",
+        "BridgeMatteravailability does not implyThreadradio,allplatformfeaturesorallofflinetriggers."
+      ]
+    },
+    {
+      "url": "https://support.switch-bot.com/hc/en-us/articles/11696634725783-What-types-of-blinds-does-Blind-Tilt-support",
+      "extent": "Entire short manufacturer answerread.",
+      "facts": [
+        "Horizontalblindswithpole,documentedpolesizes;not fullblindlifting."
+      ]
+    },
+    {
+      "url": "https://support.switch-bot.com/hc/en-us/articles/11642036286359-Does-Blind-Tilt-support-vertical-blinds",
+      "extent": "Entiremanufactureranswerread;commentsnotmanufacturerfitproof.",
+      "facts": [
+        "Verticalandrollerblindsnot supported."
+      ]
+    },
+    {
+      "url": "https://support.switch-bot.com/hc/en-us/articles/12004451785239-After-installing-the-Blind-Tilt-is-it-possible-to-rotate-the-pole-manually",
+      "extent": "Entiremanufactureranswerread.",
+      "facts": [
+        "Manualpolerotationdocumented,not an independentlyperformedphysicalfailuretest."
+      ]
+    },
+    {
+      "url": "https://help.emporiaenergy.com/en/articles/14809190-vue-offline-behavior",
+      "extent": "Entire articlebodyread.",
+      "facts": [
+        "Cloudrequiredforappread,no directlocaldataaccess.",
+        "About15minbuffer;longeroutagesaveragedandnotthesameaccuracyguarantee. WiFilanguageinarticlemustbereadwithGen3manualEthernetpath."
+      ]
+    },
+    {
+      "url": "https://www.emporiaenergy.com/product-documentation/",
+      "extent": "Current permanent manual and technical-sheet links followed; updated review scopes and document hashes recorded below.",
+      "facts": [
+        "Current40-page Vue3manual relevant safety/network/technical sections read; selected physical pages11and37 visually inspected.",
+        "All4technicalsheetpages read, page2 visually inspected; no panel work or accuracy test performed."
+      ]
+    },
+    {
+      "url": "https://www.cpsc.gov/SafeSleep",
+      "extent": "Complete relevant safe-sleepdos/dontsbodyread;linkedrecallsandvideosnotindividuallyreviewed.",
+      "facts": [
+        "US sleep-space guidance and recalls;bareappropriatefederallycompliantsleepspace,no weighted sleepgear. No exactSKUrecall-clearance inferred."
+      ]
+    },
+    {
+      "url": "https://www.nhtsa.gov/vehicle-safety/car-seats-and-booster-seats",
+      "extent": "Selection/installation/registration overview and relevantchild-age/size sections throughline200read;videosnotwatched.",
+      "facts": [
+        "Choosebychildage/sizeandvehiclefit,followexactseatandvehicleinstructions,registerforrecalls.",
+        "No universalused-seatcrashhistoryorindividualinstallationcertification inferred."
+      ]
+    },
+    {
+      "url": "https://link.emporiaenergy.com/installation-guides/vue3",
+      "extent": "Current40-page document downloaded; native safety/setup/network/model and relevant technical text read. Rendered physical pages11and37 inspected. No claim that every wiring diagram or all40pages were visually read.",
+      "facts": [
+        "EMV3A supports Ethernet and 2.4GHz Wi-Fi, prioritizes wired LAN; not evidence of local app data access.",
+        "Installation professional requirement and incoming mains danger explicitly retained; wiring instructions not republished."
+      ]
+    },
+    {
+      "url": "https://link.emporiaenergy.com/sell-sheets/vue3",
+      "extent": "All4pages native text read; physical page2 rendered and visually inspected.",
+      "facts": [
+        "Main-only/8branch/16branch kits distinct; electrical/physical fit and delivered kit remain unknown.",
+        "Ethernet10/100 and2.4GHzWiFi independently visible. No output, insulation, altitude or certification typo propagated."
+      ]
+    },
+    {
+      "url": "https://www.netgear.com/images/datasheet/switches/GS305EP_GS305EPP_GS308EP_GS308EPP.pdf",
+      "extent": "All4pages native text read; physical page2 rendered and visually inspected.",
+      "facts": [
+        "GS308EPP8poweredports/123W,distinctGS308EP62W.",
+        "VLAN/tagging/interface/portmirroring/cabletest/configexport stated in exact tables.",
+        "Different indexed installation guide contains4-port wording inconsistent with8-port datasheet; that wording is not used as the port-count source."
+      ]
+    },
+    {
+      "url": "https://support.apple.com/en-us/102557",
+      "extent": "Full relevant current support body read.",
+      "facts": [
+        "Apple home-hub requirement separatefromMerossWiFi; HomeKit doesnotestablishMatterorThread."
+      ]
+    },
+    {
+      "url": "https://shop.meross.com/collections/smart-garage-door-opener/products/smart-wifi-garage-door-opener",
+      "extent": "Complete relevant product feature/specification and local-control body read; no options selected or transaction started.",
+      "facts": [
+        "Manufacturer advertises MerossappLANcontrolwheninternetfails; workingLANstillrequired. No installed/firmware/outage result inferred.",
+        "MSG100HKvariant andcompatibilitychecks retained; noolduniversalapp-cloud-onlystatement."
+      ]
+    },
+    {
+      "url": "https://www.cdc.gov/hygiene/about/clean-sanitize-store-infant-feeding-items.html",
+      "extent": "Whole relevant cleaning/sanitizing/storage body read.",
+      "facts": [
+        "Cleaning andsanitizing distinct; daily indicationforunder2months/prematurity/immuneconcerns retained.",
+        "Supported dishwashercycle canavoidseparate sanitizingstep; no universal countertop machine requirement."
+      ]
+    }
+  ],
+  "wholeTaskComplete": false
+}

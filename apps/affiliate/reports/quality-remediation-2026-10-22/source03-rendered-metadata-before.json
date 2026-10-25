@@ -1,0 +1,86 @@
+{
+  "releaseId": "uFvnHZrw66_38mU8Rzew1",
+  "rows": [
+    {
+      "key": "network:poe-vs-poe-plus-for-cameras-access-points",
+      "path": "/guides/poe-vs-poe-plus-for-cameras-access-points",
+      "site": "network",
+      "status": 200,
+      "title": "PoE vs PoE+ for Cameras and Access Points",
+      "description": "Understand 802.3af, 802.3at, per-port wattage, total switch budget, and when Wi-Fi access points need more than basic PoE.",
+      "expectedBuild": true
+    },
+    {
+      "key": "network:managed-vs-unmanaged-poe-switch-home-guide",
+      "path": "/guides/managed-vs-unmanaged-poe-switch-home-guide",
+      "site": "network",
+      "status": 200,
+      "title": "Managed vs Unmanaged PoE Switch for Home Cameras",
+      "description": "Use unmanaged PoE for simple power; choose Easy Smart or managed PoE when VLANs, camera isolation, monitoring, and port controls matter.",
+      "expectedBuild": true
+    },
+    {
+      "key": "smarthome:smart-garage-door-controller-compatibility-hub-offline-guide",
+      "path": "/guides/smart-garage-door-controller-compatibility-hub-offline-guide",
+      "site": "smarthome",
+      "status": 200,
+      "title": "Smart Garage Door Controller Compatibility, Hub, and Offline Guide",
+      "description": "Check opener wiring, platform control, hub requirements, alert paths, and physical fallback before adding a retrofit controller.",
+      "expectedBuild": true
+    },
+    {
+      "key": "smarthome:smart-blind-motor-hub-local-control-guide",
+      "path": "/guides/smart-blind-motor-hub-local-control-guide",
+      "site": "smarthome",
+      "status": 200,
+      "title": "Smart Blind Motor Hub and Local-Control Guide",
+      "description": "Match wand, chain, roller, or curtain hardware to the right motor, then decide whether Bluetooth, a hub, Matter, or manual control is enough.",
+      "expectedBuild": true
+    },
+    {
+      "key": "smarthome:whole-home-energy-monitor-cloud-local-installation-guide",
+      "path": "/guides/whole-home-energy-monitor-cloud-local-installation-guide",
+      "site": "smarthome",
+      "status": 200,
+      "title": "Whole-Home Energy Monitor: Cloud, Local Data, and Installation Guide",
+      "description": "Compare panel fit, sensor count, electrician work, network dependence, data retention, and actionable household decisions.",
+      "expectedBuild": true
+    },
+    {
+      "key": "baby:baby-registry-essentials-guide",
+      "path": "/guides/baby-registry-essentials-guide",
+      "site": "baby",
+      "status": 200,
+      "title": "Baby Registry Essentials Without the Clutter",
+      "description": "A calmer way to separate daily-use gear from nice-to-have extras.",
+      "expectedBuild": true
+    },
+    {
+      "key": "smarthome:meross-msg100-homekit-garage-door-opener",
+      "path": "/reviews/meross-msg100-homekit-garage-door-opener",
+      "site": "smarthome",
+      "status": 200,
+      "title": "Meross MSG100 Guide: Compatibility, Hub &amp; Offline Use",
+      "description": "Verify the exact opener against Meross compatibility guidance, including whether an accessory is required, then check 2.4GHz signal at the controller and the selected MSG100 regional variant. HomeKit support does not remove the need for correct sensor placement, physical door safety checks, and a tested manual fallback.",
+      "expectedBuild": true
+    },
+    {
+      "key": "smarthome:switchbot-blind-tilt",
+      "path": "/reviews/switchbot-blind-tilt",
+      "site": "smarthome",
+      "status": 200,
+      "title": "SwitchBot Blind Tilt Guide: Hub, Matter &amp; Offline Use",
+      "description": "A solar-assisted retrofit motor for horizontal blinds with a tilt wand, using nearby Bluetooth by itself and a SwitchBot Hub for remote, voice, or Matter integrations.",
+      "expectedBuild": true
+    },
+    {
+      "key": "smarthome:emporia-vue-3-home-energy-monitor",
+      "path": "/reviews/emporia-vue-3-home-energy-monitor",
+      "site": "smarthome",
+      "status": 200,
+      "title": "Emporia Vue 3 Guide: Panel Fit, Cloud &amp; Offline Data",
+      "description": "A circuit-level electrical-panel monitor with clamp sensors, Wi-Fi or Ethernet connectivity, cloud dashboards, and strict panel, installation, and offline-data trade-offs.",
+      "expectedBuild": true
+    }
+  ]
+}

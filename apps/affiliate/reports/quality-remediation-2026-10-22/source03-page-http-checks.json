@@ -1,0 +1,229 @@
+{
+  "checkedAt": "2026-10-25T13:29:42.166Z",
+  "releaseId": "qszA6RQt-xptrOY48SXsk",
+  "total": 9,
+  "passed": 9,
+  "rows": [
+    {
+      "key": "network:poe-vs-poe-plus-for-cameras-access-points",
+      "kind": "guide",
+      "host": "network.madabase.com",
+      "path": "/guides/poe-vs-poe-plus-for-cameras-access-points",
+      "status": 200,
+      "title": "PoE vs PoE+: Camera and Access Point Power Checks",
+      "description": "Compare PoE and PoE+ power at the switch and device, the shared budget, camera or AP modes, and why watts do not establish link speed.",
+      "sections": 6,
+      "offers": [
+        {
+          "product": "tp-link-tl-sg1005p-poe-switch",
+          "merchant": "Amazon US",
+          "position": "guide-decision-exact-model",
+          "href": "https://www.amazon.com/dp/B076HZFY3F?tag=madanetwork-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl"
+        },
+        {
+          "product": "tp-link-tl-sg1005p-poe-switch",
+          "merchant": "Amazon US",
+          "position": "guide-retailer-primary",
+          "href": "https://www.amazon.com/dp/B076HZFY3F?tag=madanetwork-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl"
+        }
+      ],
+      "errors": [],
+      "passed": true
+    },
+    {
+      "key": "network:managed-vs-unmanaged-poe-switch-home-guide",
+      "kind": "guide",
+      "host": "network.madabase.com",
+      "path": "/guides/managed-vs-unmanaged-poe-switch-home-guide",
+      "status": 200,
+      "title": "Managed vs Unmanaged PoE: Camera VLAN and Power Checks",
+      "description": "Choose unmanaged or managed PoE by the camera VLAN plan, gateway support, powered-port count and budget. Keep suitable existing equipment.",
+      "sections": 6,
+      "offers": [
+        {
+          "product": "tp-link-tl-sg108pe-poe-switch",
+          "merchant": "Amazon US",
+          "position": "guide-decision-exact-model",
+          "href": "https://www.amazon.com/dp/B01BW0AD1W?tag=madanetwork-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl"
+        },
+        {
+          "product": "tp-link-tl-sg108pe-poe-switch",
+          "merchant": "Amazon US",
+          "position": "guide-retailer-primary",
+          "href": "https://www.amazon.com/dp/B01BW0AD1W?tag=madanetwork-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl"
+        }
+      ],
+      "errors": [],
+      "passed": true
+    },
+    {
+      "key": "smarthome:smart-garage-door-controller-compatibility-hub-offline-guide",
+      "kind": "guide",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-garage-door-controller-compatibility-hub-offline-guide",
+      "status": 200,
+      "title": "Garage Door Controllers: Opener Fit, Hubs and Offline Use",
+      "description": "Check opener fit, accessory eligibility and MSG100HK identity. Separate Apple remote access, Meross LAN control and power-failure limits.",
+      "sections": 6,
+      "offers": [
+        {
+          "product": "meross-msg100-homekit-garage-door-opener",
+          "merchant": "Amazon US",
+          "position": "guide-decision-exact-model",
+          "href": "https://www.amazon.com/dp/B084Z5QZR2?tag=madasmart-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl"
+        },
+        {
+          "product": "meross-msg100-homekit-garage-door-opener",
+          "merchant": "Amazon US",
+          "position": "guide-retailer-primary",
+          "href": "https://www.amazon.com/dp/B084Z5QZR2?tag=madasmart-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl"
+        }
+      ],
+      "errors": [],
+      "passed": true
+    },
+    {
+      "key": "smarthome:smart-blind-motor-hub-local-control-guide",
+      "kind": "guide",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-blind-motor-hub-local-control-guide",
+      "status": 200,
+      "title": "Blind Tilt: Fit, Matter Hubs and Offline Control",
+      "description": "Check Blind Tilt wand fit, nearby Bluetooth and current Matter bridges, including Hub 2, Hub Mini Matter Enabled and Hub 3. Keep manual control.",
+      "sections": 6,
+      "offers": [
+        {
+          "product": "switchbot-blind-tilt",
+          "merchant": "Amazon US",
+          "position": "guide-decision-exact-model",
+          "href": "https://www.amazon.com/dp/B0BMLFZ4CP?tag=madasmart-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl"
+        },
+        {
+          "product": "switchbot-blind-tilt",
+          "merchant": "Amazon US",
+          "position": "guide-retailer-primary",
+          "href": "https://www.amazon.com/dp/B0BMLFZ4CP?tag=madasmart-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl"
+        }
+      ],
+      "errors": [],
+      "passed": true
+    },
+    {
+      "key": "smarthome:whole-home-energy-monitor-cloud-local-installation-guide",
+      "kind": "guide",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/whole-home-energy-monitor-cloud-local-installation-guide",
+      "status": 200,
+      "title": "Vue 3 Energy Monitor: Panel Fit, Cloud and Offline Data",
+      "description": "Vue 3 uses Ethernet or Wi-Fi but still needs the cloud for app data. Check panel fit, sensor kits and outage buffering before arranging installation.",
+      "sections": 6,
+      "offers": [
+        {
+          "product": "emporia-vue-3-home-energy-monitor",
+          "merchant": "Amazon US",
+          "position": "guide-decision-exact-model",
+          "href": "https://www.amazon.com/dp/B0C79PNK84?tag=madasmart-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl"
+        },
+        {
+          "product": "emporia-vue-3-home-energy-monitor",
+          "merchant": "Amazon US",
+          "position": "guide-retailer-primary",
+          "href": "https://www.amazon.com/dp/B0C79PNK84?tag=madasmart-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl"
+        }
+      ],
+      "errors": [],
+      "passed": true
+    },
+    {
+      "key": "baby:baby-registry-essentials-guide",
+      "kind": "guide",
+      "host": "baby.madabase.com",
+      "path": "/guides/baby-registry-essentials-guide",
+      "status": 200,
+      "title": "Baby Registry Essentials: What to Prepare and What Can Wait",
+      "description": "Prepare sleep, feeding, diapering and car travel for the first weeks. Check instructions and cleaning needs, then decide which extra gadgets can wait.",
+      "sections": 6,
+      "offers": [],
+      "errors": [],
+      "passed": true
+    },
+    {
+      "key": "smarthome:meross-msg100-homekit-garage-door-opener",
+      "kind": "product",
+      "host": "smarthome.madabase.com",
+      "path": "/reviews/meross-msg100-homekit-garage-door-opener",
+      "status": 200,
+      "title": "Meross MSG100 Guide: Compatibility, Hub & Offline Use",
+      "description": "Check MSG100HK opener compatibility, accessory eligibility, Apple home-hub needs and the documented local-network control path before buying.",
+      "sections": 4,
+      "offers": [
+        {
+          "product": "meross-msg100-homekit-garage-door-opener",
+          "merchant": "Amazon US",
+          "position": "review-first-viewport",
+          "href": "https://www.amazon.com/dp/B084Z5QZR2?tag=madasmart-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl"
+        },
+        {
+          "product": "meross-msg100-homekit-garage-door-opener",
+          "merchant": "Amazon US",
+          "position": "review-sidebar",
+          "href": "https://www.amazon.com/dp/B084Z5QZR2?tag=madasmart-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl"
+        }
+      ],
+      "errors": [],
+      "passed": true
+    },
+    {
+      "key": "smarthome:switchbot-blind-tilt",
+      "kind": "product",
+      "host": "smarthome.madabase.com",
+      "path": "/reviews/switchbot-blind-tilt",
+      "status": 200,
+      "title": "SwitchBot Blind Tilt Guide: Hub, Matter & Offline Use",
+      "description": "Blind Tilt controls compatible horizontal-blind wands. Compare nearby Bluetooth with a supported Matter bridge, bundle identity and manual operation.",
+      "sections": 4,
+      "offers": [
+        {
+          "product": "switchbot-blind-tilt",
+          "merchant": "Amazon US",
+          "position": "review-first-viewport",
+          "href": "https://www.amazon.com/dp/B0BMLFZ4CP?tag=madasmart-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl"
+        },
+        {
+          "product": "switchbot-blind-tilt",
+          "merchant": "Amazon US",
+          "position": "review-sidebar",
+          "href": "https://www.amazon.com/dp/B0BMLFZ4CP?tag=madasmart-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl"
+        }
+      ],
+      "errors": [],
+      "passed": true
+    },
+    {
+      "key": "smarthome:emporia-vue-3-home-energy-monitor",
+      "kind": "product",
+      "host": "smarthome.madabase.com",
+      "path": "/reviews/emporia-vue-3-home-energy-monitor",
+      "status": 200,
+      "title": "Emporia Vue 3 Guide: Panel Fit, Cloud & Offline Data",
+      "description": "Vue 3 needs suitable panel installation and cloud app access. Check the sensor bundle, Ethernet or Wi-Fi, and what detailed data is lost during outages.",
+      "sections": 4,
+      "offers": [
+        {
+          "product": "emporia-vue-3-home-energy-monitor",
+          "merchant": "Amazon US",
+          "position": "review-first-viewport",
+          "href": "https://www.amazon.com/dp/B0C79PNK84?tag=madasmart-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl"
+        },
+        {
+          "product": "emporia-vue-3-home-energy-monitor",
+          "merchant": "Amazon US",
+          "position": "review-sidebar",
+          "href": "https://www.amazon.com/dp/B0C79PNK84?tag=madasmart-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl"
+        }
+      ],
+      "errors": [],
+      "passed": true
+    }
+  ]
+}

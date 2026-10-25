@@ -1,0 +1,204 @@
+[
+  {
+    "key": "network:poe-vs-poe-plus-for-cameras-access-points",
+    "page": {
+      "site": "network",
+      "slug": "poe-vs-poe-plus-for-cameras-access-points",
+      "title": "PoE vs PoE+ for Cameras and Access Points",
+      "dek": "Understand 802.3af, 802.3at, per-port wattage, total switch budget, and when Wi-Fi access points need more than basic PoE.",
+      "category": "wired",
+      "updatedAt": "July 9, 2026",
+      "relatedProducts": [
+        "tp-link-tl-sg1005p-poe-switch",
+        "tp-link-tl-sg108pe-poe-switch",
+        "netgear-gs308epp-poe-switch"
+      ],
+      "relatedRoundups": [
+        "best-poe-switches-for-home-cameras-and-access-points"
+      ],
+      "sections": [
+        {
+          "heading": "PoE and PoE+ are power classes",
+          "body": "Basic PoE and PoE+ describe how much power can be delivered under supported standards. The endpoint and switch must agree on what is needed."
+        },
+        {
+          "heading": "Cameras vary widely",
+          "body": "Simple fixed cameras may be modest loads, while PTZ, heater, spotlight, or multi-sensor cameras can need more power."
+        },
+        {
+          "heading": "Access points can push the budget",
+          "body": "Modern Wi-Fi access points may need PoE+ or higher, and some also benefit from 2.5GbE uplinks. Check both power and data speed."
+        },
+        {
+          "heading": "Do not ignore cable and run length",
+          "body": "Poor cable, long runs, outdoor routing, or bad terminations can make a theoretically compatible PoE setup unreliable."
+        }
+      ]
+    }
+  },
+  {
+    "key": "network:managed-vs-unmanaged-poe-switch-home-guide",
+    "page": {
+      "site": "network",
+      "slug": "managed-vs-unmanaged-poe-switch-home-guide",
+      "title": "Managed vs Unmanaged PoE Switch for Home Cameras",
+      "dek": "Use unmanaged PoE for simple power; choose Easy Smart or managed PoE when VLANs, camera isolation, monitoring, and port controls matter.",
+      "category": "wired",
+      "updatedAt": "July 9, 2026",
+      "relatedProducts": [
+        "tp-link-tl-sg1005p-poe-switch",
+        "tp-link-tl-sg108pe-poe-switch",
+        "netgear-gs308epp-poe-switch"
+      ],
+      "relatedRoundups": [
+        "best-poe-switches-for-home-cameras-and-access-points",
+        "best-wired-networking-upgrades"
+      ],
+      "sections": [
+        {
+          "heading": "Unmanaged PoE is fine for a flat network",
+          "body": "If the goal is only to power a few devices and plug them into the same LAN, unmanaged PoE is simpler and cheaper."
+        },
+        {
+          "heading": "Managed PoE helps with isolation",
+          "body": "Cameras, guest Wi-Fi, smart-home devices, and access points often deserve VLAN or traffic controls. Easy Smart switches can be enough for basic segmentation."
+        },
+        {
+          "heading": "Monitoring can save troubleshooting time",
+          "body": "Port status, PoE draw, link speed, and error counters help diagnose a camera that drops offline or an AP that negotiates the wrong speed."
+        },
+        {
+          "heading": "Complexity has a cost",
+          "body": "Do not buy a managed switch if nobody will maintain VLANs, firmware, passwords, backups, or documentation."
+        }
+      ]
+    }
+  },
+  {
+    "key": "smarthome:smart-garage-door-controller-compatibility-hub-offline-guide",
+    "page": {
+      "updatedAt": "August 8, 2026",
+      "relatedRoundups": [],
+      "site": "smarthome",
+      "slug": "smart-garage-door-controller-compatibility-hub-offline-guide",
+      "title": "Smart Garage Door Controller Compatibility, Hub, and Offline Guide",
+      "dek": "Check opener wiring, platform control, hub requirements, alert paths, and physical fallback before adding a retrofit controller.",
+      "category": "automation",
+      "relatedProducts": [
+        "meross-msg100-homekit-garage-door-opener"
+      ],
+      "relatedGuides": [
+        "matter-over-thread-hub-checklist"
+      ],
+      "sections": [
+        {
+          "heading": "Identify the opener before the controller",
+          "body": "Record opener manufacturer, model, learn-button color, wall-control wiring, door count, safety sensors, and accessory requirements. A platform logo cannot resolve an incompatible opener interface."
+        },
+        {
+          "heading": "Separate direct Wi-Fi from ecosystem hubs",
+          "body": "A controller can join Wi-Fi without its own hub while Apple remote access, Matter, or another ecosystem still relies on home controllers. Draw the actual path from phone to door."
+        },
+        {
+          "heading": "Plan the outage state",
+          "body": "Keep original wall controls and remotes. Document what happens during internet, router, platform, phone, and power outages, and never let a smart controller bypass required safety sensors."
+        }
+      ]
+    }
+  },
+  {
+    "key": "smarthome:smart-blind-motor-hub-local-control-guide",
+    "page": {
+      "updatedAt": "August 8, 2026",
+      "relatedRoundups": [],
+      "site": "smarthome",
+      "slug": "smart-blind-motor-hub-local-control-guide",
+      "title": "Smart Blind Motor Hub and Local-Control Guide",
+      "dek": "Match wand, chain, roller, or curtain hardware to the right motor, then decide whether Bluetooth, a hub, Matter, or manual control is enough.",
+      "category": "automation",
+      "relatedProducts": [
+        "switchbot-blind-tilt"
+      ],
+      "relatedGuides": [
+        "matter-over-thread-hub-checklist"
+      ],
+      "sections": [
+        {
+          "heading": "Name the mechanism",
+          "body": "Tilt wand, bead chain, roller tube, curtain rod, lift cord, and vertical vane systems need different hardware. Measure the control side and clearance before considering software."
+        },
+        {
+          "heading": "Buy the hub for a specific job",
+          "body": "Nearby control, remote access, voice, shared household access, and Matter are separate requirements. Choose the least complex path that meets the real routine."
+        },
+        {
+          "heading": "Keep a manual exit",
+          "body": "Confirm that blinds can still be adjusted safely when the battery, hub, Wi-Fi, internet, or platform is unavailable. Test limits and obstruction behavior after installation."
+        }
+      ]
+    }
+  },
+  {
+    "key": "smarthome:whole-home-energy-monitor-cloud-local-installation-guide",
+    "page": {
+      "updatedAt": "August 8, 2026",
+      "relatedRoundups": [],
+      "site": "smarthome",
+      "slug": "whole-home-energy-monitor-cloud-local-installation-guide",
+      "title": "Whole-Home Energy Monitor: Cloud, Local Data, and Installation Guide",
+      "dek": "Compare panel fit, sensor count, electrician work, network dependence, data retention, and actionable household decisions.",
+      "category": "climate",
+      "relatedProducts": [
+        "emporia-vue-3-home-energy-monitor"
+      ],
+      "relatedGuides": [
+        "tapo-p110m-home-assistant-energy-monitoring"
+      ],
+      "sections": [
+        {
+          "heading": "Start with the decision the data should change",
+          "body": "Circuit-level data is valuable when it can find standby loads, schedule equipment, or verify a change. It is excessive when a utility interval chart already answers the question."
+        },
+        {
+          "heading": "Treat the panel as professional work",
+          "body": "Service type, conductor access, panel fill, CT direction, mains voltage, local code, and energized components require the current manual and an appropriate electrician."
+        },
+        {
+          "heading": "Ask where data lives",
+          "body": "Compare direct local access, cloud dashboards, outage buffering, resolution after reconnection, exports, retention, account deletion, and what remains visible without the vendor service."
+        }
+      ]
+    }
+  },
+  {
+    "key": "baby:baby-registry-essentials-guide",
+    "page": {
+      "site": "baby",
+      "slug": "baby-registry-essentials-guide",
+      "updatedAt": "June 21, 2026",
+      "title": "Baby Registry Essentials Without the Clutter",
+      "dek": "A calmer way to separate daily-use gear from nice-to-have extras.",
+      "category": "sleep",
+      "relatedRoundups": [
+        "best-baby-monitors-for-apartments",
+        "best-travel-strollers",
+        "best-bottle-sterilizers-and-dryers",
+        "best-baby-carriers-and-sleep-routine-upgrades"
+      ],
+      "sections": [
+        {
+          "heading": "Buy for the first 90 days first",
+          "body": "Prioritize sleep, feeding, diapering, and safe transport before specialized accessories."
+        },
+        {
+          "heading": "Check cleaning effort",
+          "body": "Anything used daily should be easy to wash, dry, and reassemble while tired."
+        },
+        {
+          "heading": "Keep safety notes visible",
+          "body": "For sleep and travel gear, read age, weight, and use-position limits before comparing style or color."
+        }
+      ]
+    }
+  }
+]

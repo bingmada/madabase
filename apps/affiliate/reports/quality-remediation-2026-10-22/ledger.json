@@ -1452,8 +1452,26 @@
         "smarthome:whole-home-energy-monitor-cloud-local-installation-guide",
         "baby:baby-registry-essentials-guide"
       ],
-      "status": "in_progress",
-      "startedAt": "2026-10-25T00:56:09.186Z"
+      "status": "passed_local",
+      "startedAt": "2026-10-25T00:56:09.186Z",
+      "reviewEvidence": "source03-editorial-review.json",
+      "changedGuidePages": 6,
+      "relatedProductNotes": 3,
+      "acceptedAt": "2026-10-25T13:55:00.540Z",
+      "acceptedReleaseId": "qszA6RQt-xptrOY48SXsk",
+      "evidence": [
+        "source03-local-acceptance.json",
+        "source03-editorial-review.json",
+        "source03-primary-review-completed.json",
+        "source03-rendered-metadata-before.json",
+        "source03-page-http-checks.json",
+        "source03-ui-checks.json",
+        "source03-release-local-checks.json",
+        "source03-release-identity-checks.json",
+        "source03-package-checks.json",
+        "build-affiliate-source03-final.log",
+        "build-main-source03.log"
+      ]
     },
     {
       "id": "SOURCE-04",
@@ -12916,37 +12934,55 @@
         "key": "network:poe-vs-poe-plus-for-cameras-access-points",
         "site": "network",
         "slug": "poe-vs-poe-plus-for-cameras-access-points",
-        "status": "pending"
+        "status": "passed_local",
+        "reviewEvidence": "source03-editorial-review.json",
+        "acceptedAt": "2026-10-25T13:55:00.540Z",
+        "evidence": "source03-local-acceptance.json"
       },
       {
         "key": "network:managed-vs-unmanaged-poe-switch-home-guide",
         "site": "network",
         "slug": "managed-vs-unmanaged-poe-switch-home-guide",
-        "status": "pending"
+        "status": "passed_local",
+        "reviewEvidence": "source03-editorial-review.json",
+        "acceptedAt": "2026-10-25T13:55:00.540Z",
+        "evidence": "source03-local-acceptance.json"
       },
       {
         "key": "smarthome:smart-garage-door-controller-compatibility-hub-offline-guide",
         "site": "smarthome",
         "slug": "smart-garage-door-controller-compatibility-hub-offline-guide",
-        "status": "pending"
+        "status": "passed_local",
+        "reviewEvidence": "source03-editorial-review.json",
+        "acceptedAt": "2026-10-25T13:55:00.540Z",
+        "evidence": "source03-local-acceptance.json"
       },
       {
         "key": "smarthome:smart-blind-motor-hub-local-control-guide",
         "site": "smarthome",
         "slug": "smart-blind-motor-hub-local-control-guide",
-        "status": "pending"
+        "status": "passed_local",
+        "reviewEvidence": "source03-editorial-review.json",
+        "acceptedAt": "2026-10-25T13:55:00.540Z",
+        "evidence": "source03-local-acceptance.json"
       },
       {
         "key": "smarthome:whole-home-energy-monitor-cloud-local-installation-guide",
         "site": "smarthome",
         "slug": "whole-home-energy-monitor-cloud-local-installation-guide",
-        "status": "pending"
+        "status": "passed_local",
+        "reviewEvidence": "source03-editorial-review.json",
+        "acceptedAt": "2026-10-25T13:55:00.540Z",
+        "evidence": "source03-local-acceptance.json"
       },
       {
         "key": "baby:baby-registry-essentials-guide",
         "site": "baby",
         "slug": "baby-registry-essentials-guide",
-        "status": "pending"
+        "status": "passed_local",
+        "reviewEvidence": "source03-editorial-review.json",
+        "acceptedAt": "2026-10-25T13:55:00.540Z",
+        "evidence": "source03-local-acceptance.json"
       },
       {
         "key": "baby:travel-stroller-for-small-car-guide",
@@ -39624,6 +39660,38 @@
       "batchesTotal": 111,
       "wholeTaskComplete": false,
       "evidence": "completed-release-receipt.json"
+    },
+    {
+      "at": "2026-10-25T13:16:03.084Z",
+      "batch": "SOURCE-03",
+      "status": "modified_awaiting_checks",
+      "guides": 6,
+      "guideSections": 36,
+      "decisionTables": 6,
+      "relatedProductNotes": 3,
+      "checks": {
+        "typecheck": "passed",
+        "scopedLint": "passed",
+        "exactGuidePurchaseIdentityGuards": 75,
+        "qualifiedPlannerChecks": "passed",
+        "sourceIntegrityNeighborRecordsPreserved": 26
+      },
+      "remaining": "Current release builds; every-page metadata/full-content/table/offer HTTP acceptance; actual desktop and mobile review; final release and public verification.",
+      "deployed": false,
+      "wholeTaskComplete": false
+    },
+    {
+      "at": "2026-10-25T13:55:00.540Z",
+      "batch": "SOURCE-03",
+      "status": "passed_local",
+      "batchesPassedLocal": 61,
+      "batchesTotal": 111,
+      "sourcePagesPassed": 18,
+      "sourcePagesTotal": 41,
+      "changedPages": 9,
+      "evidence": "source03-local-acceptance.json",
+      "deployed": false,
+      "wholeTaskComplete": false
     }
   ],
   "newIssues": [
@@ -42564,6 +42632,33 @@
         "live-retailer-us-body-reading-07.json"
       ],
       "requiredFix": "Resolve exact manufacturer identity/instructions where obtainable; retain explicit unknown/stop state when material facts conflict. Keep purchase and rental obligations separate, surface exact selected option and product-specific limitations before retailer handoff. Do not silently correct units, transfer rental contents to Buy, or infer individual fit from matching SKU."
+    },
+    {
+      "id": "registry-checklist-default-merchant-reference",
+      "status": "passed_local",
+      "finding": "Baby registry checklist inherited one default monitor purchase from a broad related roundup, even though no single device is required by the planning task.",
+      "affected": [
+        "baby:baby-registry-essentials-guide"
+      ],
+      "resolution": "Explicit task-links purchase flow suppresses the default product; optional subject-specific comparisons remain accessible.",
+      "next": "Public verification after the accepted batch deploys; optional task navigation verified locally.",
+      "evidence": [
+        "source03-editorial-review.json",
+        "check-guide-decision-purchase.mjs",
+        "source03-local-acceptance.json"
+      ]
+    },
+    {
+      "id": "poe-power-guide-misclassified-as-ups",
+      "status": "passed_local",
+      "ownerBatch": "SOURCE-03",
+      "finding": "PoE power guide inherited the backup-power task because PoE was missing from wired-network topic terms. Router/NAS UPS titles also needed explicit backup-task recognition.",
+      "resolution": "Recognize PoE/Power over Ethernet as wired networking and explicit UPS/backup-power titles as backup before generic router/NAS words.",
+      "evidence": [
+        "source03-local-acceptance.json",
+        "source03-desktop-poe-vs-poe-plus-for-cameras-access-points.png"
+      ],
+      "globalAcceptanceStillOpen": true
     }
   ],
   "merchantRegionPreference": {
@@ -42582,15 +42677,16 @@
     "access": "New Workbench link supplied in the current conversation; access token is not copied into repository artifacts.",
     "scope": "Finish all remaining remediation batches and quality checks, then publish through the supplied Workbench. Verify production pages, commerce paths and measurement and prepare rollback.",
     "currentState": "User explicitly authorized the additive production schema patch; applied and verified. Source revision 27a538d deployed, 594 unique public URLs and 8 static assets passed. Test restored at original directory; Google accepted 8 sitemap submissions and IndexNow accepted 583 URLs. Remaining batches continue; no whole-ledger completion claim.",
-    "gate": "User explicitly superseded all-ledger-complete publication requirement. Publish a concrete verified completed scope with rollback and production checks; retain unresolved work in subsequent batches. Newly modified code must pass its own acceptance before inclusion.",
+    "gate": "User confirms continuing all remaining batches, careful per-page verification, publication after each batch passes acceptance, and proactive periodic progress reports. Retain rollback and post-release verification; no whole-task completion until the entire ledger passes.",
     "previousGate": "Publication requires completion and acceptance of the entire remediation ledger, including remaining batches and newly discovered issues. Completion of any individual batch does not authorize publication.",
-    "updatedAt": "2026-10-25T11:23:58.276Z",
+    "updatedAt": "2026-10-25T13:16:03.083Z",
     "userInstruction": "我感觉你现在经常卡住，如果不行的话你就把当前做完的先发布，然后我们再继续按批次处理",
     "schemaAuthorization": {
       "authorized": true,
       "scope": "Nullable AffiliateClick.market, CommerceEvent table, three indexes, and recording in the existing Prisma migration registry",
       "evidence": "completed-scope-db-schema-applied.json"
     },
-    "productionReceipt": "completed-release-receipt.json"
+    "productionReceipt": "completed-release-receipt.json",
+    "latestUserInstruction": "继续处理剩下的批次，注意质量，每个页面都认真核验，验收通过后分批发布，定期反馈整体进度，不用等我催。"
   }
 }

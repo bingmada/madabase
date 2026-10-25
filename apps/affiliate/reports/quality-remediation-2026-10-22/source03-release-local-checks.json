@@ -1,0 +1,419 @@
+{
+  "checkedAt": "2026-10-25T13:51:18.173Z",
+  "builds": {
+    "affiliate": {
+      "path": "apps/affiliate/.release/affiliate-runtime.tgz",
+      "bytes": 62481470,
+      "sha256": "9d1fce715594aa095b70e1ee2e63d9d840dccb435a8f2bce6b9312566f5f914a",
+      "buildId": "qszA6RQt-xptrOY48SXsk"
+    },
+    "main": {
+      "path": "apps/main/.release/main-runtime.tgz",
+      "bytes": 18201066,
+      "sha256": "a80849f2044c03e1e4e2291857c4c07da7d5dcb31a2951d4a9567e864f0d126c",
+      "buildId": "T10-x-IHJC96qrCe2vOr6"
+    }
+  },
+  "scope": "Read-only local packaged-runtime page/static requests, exact Main export and isolated QA events. Both servers started with DATABASE_URL empty. No merchant traversal or production write.",
+  "rows": [
+    {
+      "app": "affiliate",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/office-printer-stands-buying-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/office-printer-stands-buying-guide",
+      "markers": [
+        "fit-worksheet"
+      ],
+      "status": 200,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/small-home-office-setup-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/small-home-office-setup-guide",
+      "markers": [
+        "Choose the first change"
+      ],
+      "status": 200,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "host": "network.madabase.com",
+      "path": "/guides/poe-switch-for-home-cameras-and-access-points-guide",
+      "canonical": "https://network.madabase.com/guides/poe-switch-for-home-cameras-and-access-points-guide",
+      "markers": [
+        "B076HZFY3F"
+      ],
+      "status": 200,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "host": "network.madabase.com",
+      "path": "/guides/travel-router-vpn-guide",
+      "canonical": "https://network.madabase.com/guides/travel-router-vpn-guide",
+      "markers": [
+        "Beryl"
+      ],
+      "status": 200,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "host": "network.madabase.com",
+      "path": "/guides/usb-c-ethernet-adapter-guide",
+      "canonical": "https://network.madabase.com/guides/usb-c-ethernet-adapter-guide",
+      "markers": [
+        "Ethernet"
+      ],
+      "status": 200,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "host": "network.madabase.com",
+      "path": "/guides/moca-2-5-vs-ethernet-run-guide",
+      "canonical": "https://network.madabase.com/guides/moca-2-5-vs-ethernet-run-guide",
+      "markers": [
+        "ScreenBeam"
+      ],
+      "status": 200,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "host": "baby.madabase.com",
+      "path": "/guides/toddler-learning-towers-buying-guide",
+      "canonical": "https://baby.madabase.com/guides/toddler-learning-towers-buying-guide",
+      "markers": [
+        "Toddler Learning Towers: Recall, Stability & Counter Fit"
+      ],
+      "status": 200,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "host": "pets.madabase.com",
+      "path": "/guides/wet-food-automatic-feeders-buying-guide",
+      "canonical": "https://pets.madabase.com/guides/wet-food-automatic-feeders-buying-guide",
+      "markers": [
+        "Wet-Food Feeder Guide: Cooling, Meal Timing & Care"
+      ],
+      "status": 200,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "host": "costumes.madabase.com",
+      "path": "/guides/masks-and-masquerade-buying-guide",
+      "canonical": "https://costumes.madabase.com/guides/masks-and-masquerade-buying-guide",
+      "markers": [
+        "mask"
+      ],
+      "status": 200,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "host": "network.madabase.com",
+      "path": "/guides/poe-vs-poe-plus-for-cameras-access-points",
+      "canonical": "https://network.madabase.com/guides/poe-vs-poe-plus-for-cameras-access-points",
+      "markers": [
+        "PoE vs PoE+: Camera and Access Point Power Checks",
+        "October 25, 2026"
+      ],
+      "status": 200,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "host": "network.madabase.com",
+      "path": "/guides/managed-vs-unmanaged-poe-switch-home-guide",
+      "canonical": "https://network.madabase.com/guides/managed-vs-unmanaged-poe-switch-home-guide",
+      "markers": [
+        "Managed vs Unmanaged PoE: Camera VLAN and Power Checks",
+        "October 25, 2026"
+      ],
+      "status": 200,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-garage-door-controller-compatibility-hub-offline-guide",
+      "canonical": "https://smarthome.madabase.com/guides/smart-garage-door-controller-compatibility-hub-offline-guide",
+      "markers": [
+        "Garage Door Controllers: Opener Fit, Hubs and Offline Use",
+        "October 25, 2026"
+      ],
+      "status": 200,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-blind-motor-hub-local-control-guide",
+      "canonical": "https://smarthome.madabase.com/guides/smart-blind-motor-hub-local-control-guide",
+      "markers": [
+        "Blind Tilt: Fit, Matter Hubs and Offline Control",
+        "October 25, 2026"
+      ],
+      "status": 200,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/whole-home-energy-monitor-cloud-local-installation-guide",
+      "canonical": "https://smarthome.madabase.com/guides/whole-home-energy-monitor-cloud-local-installation-guide",
+      "markers": [
+        "Vue 3 Energy Monitor: Panel Fit, Cloud and Offline Data",
+        "October 25, 2026"
+      ],
+      "status": 200,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "host": "baby.madabase.com",
+      "path": "/guides/baby-registry-essentials-guide",
+      "canonical": "https://baby.madabase.com/guides/baby-registry-essentials-guide",
+      "markers": [
+        "Baby Registry Essentials: What to Prepare and What Can Wait",
+        "October 25, 2026"
+      ],
+      "status": 200,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "host": "smarthome.madabase.com",
+      "path": "/reviews/meross-msg100-homekit-garage-door-opener",
+      "canonical": "https://smarthome.madabase.com/reviews/meross-msg100-homekit-garage-door-opener",
+      "markers": [
+        "Meross MSG100 Guide: Compatibility, Hub & Offline Use",
+        "October 25, 2026"
+      ],
+      "status": 200,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "host": "smarthome.madabase.com",
+      "path": "/reviews/switchbot-blind-tilt",
+      "canonical": "https://smarthome.madabase.com/reviews/switchbot-blind-tilt",
+      "markers": [
+        "SwitchBot Blind Tilt Guide: Hub, Matter & Offline Use",
+        "October 25, 2026"
+      ],
+      "status": 200,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "host": "smarthome.madabase.com",
+      "path": "/reviews/emporia-vue-3-home-energy-monitor",
+      "canonical": "https://smarthome.madabase.com/reviews/emporia-vue-3-home-energy-monitor",
+      "markers": [
+        "Emporia Vue 3 Guide: Panel Fit, Cloud & Offline Data",
+        "October 25, 2026"
+      ],
+      "status": 200,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "main",
+      "host": "madabase.com",
+      "path": "/research",
+      "markers": [
+        "What changed"
+      ],
+      "status": 200,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "main",
+      "host": "madabase.com",
+      "path": "/search?q=Ethernet",
+      "markers": [
+        "Ethernet"
+      ],
+      "status": 200,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "main",
+      "host": "madabase.com",
+      "path": "/search?q=PoE",
+      "markers": [
+        "PoE vs PoE+: Camera and Access Point Power Checks",
+        "Managed vs Unmanaged PoE: Camera VLAN and Power Checks"
+      ],
+      "status": 200,
+      "errors": [],
+      "passed": true
+    }
+  ],
+  "assets": [
+    {
+      "app": "affiliate",
+      "host": "homeoffice.madabase.com",
+      "path": "/_next/static/css/f622efb3abdc0e3d.css",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "host": "homeoffice.madabase.com",
+      "path": "/_next/static/chunks/webpack-dbddb8e4135c4c28.js",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "host": "homeoffice.madabase.com",
+      "path": "/_next/static/chunks/87c73c54-24122e7b92478d00.js",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "host": "homeoffice.madabase.com",
+      "path": "/_next/static/chunks/18-536e344942e9442c.js",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "host": "homeoffice.madabase.com",
+      "path": "/_next/static/chunks/main-app-a95f53a759d7fe46.js",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "app": "main",
+      "host": "madabase.com",
+      "path": "/_next/static/css/c165edf0c9485afa.css",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "app": "main",
+      "host": "madabase.com",
+      "path": "/_next/static/chunks/webpack-dbddb8e4135c4c28.js",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "app": "main",
+      "host": "madabase.com",
+      "path": "/_next/static/chunks/87c73c54-24122e7b92478d00.js",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "app": "main",
+      "host": "madabase.com",
+      "path": "/_next/static/chunks/18-536e344942e9442c.js",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "app": "main",
+      "host": "madabase.com",
+      "path": "/_next/static/chunks/main-app-a95f53a759d7fe46.js",
+      "status": 200,
+      "passed": true
+    }
+  ],
+  "exports": [
+    {
+      "key": "network:poe-vs-poe-plus-for-cameras-access-points",
+      "exactCount": 1,
+      "passed": true
+    },
+    {
+      "key": "network:managed-vs-unmanaged-poe-switch-home-guide",
+      "exactCount": 1,
+      "passed": true
+    },
+    {
+      "key": "smarthome:smart-garage-door-controller-compatibility-hub-offline-guide",
+      "exactCount": 1,
+      "passed": true
+    },
+    {
+      "key": "smarthome:smart-blind-motor-hub-local-control-guide",
+      "exactCount": 1,
+      "passed": true
+    },
+    {
+      "key": "smarthome:whole-home-energy-monitor-cloud-local-installation-guide",
+      "exactCount": 1,
+      "passed": true
+    },
+    {
+      "key": "baby:baby-registry-essentials-guide",
+      "exactCount": 1,
+      "passed": true
+    },
+    {
+      "key": "smarthome:meross-msg100-homekit-garage-door-opener",
+      "exactCount": 1,
+      "passed": true
+    },
+    {
+      "key": "smarthome:switchbot-blind-tilt",
+      "exactCount": 1,
+      "passed": true
+    },
+    {
+      "key": "smarthome:emporia-vue-3-home-energy-monitor",
+      "exactCount": 1,
+      "passed": true
+    }
+  ],
+  "events": [
+    {
+      "releaseId": "qszA6RQt-xptrOY48SXsk",
+      "status": 200,
+      "body": {
+        "ok": true,
+        "persisted": false,
+        "validated": true,
+        "reason": "qa_visit"
+      }
+    },
+    {
+      "releaseId": "stale-source03-release",
+      "status": 400,
+      "body": {
+        "ok": false,
+        "reason": "invalid_event"
+      }
+    }
+  ],
+  "passed": true
+}

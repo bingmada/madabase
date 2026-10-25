@@ -1,0 +1,33 @@
+{
+  "capturedAt": "2026-10-25T13:16:03.119Z",
+  "files": [
+    {
+      "name": "vue3-manual.pdf",
+      "sha256": "e44cae2a6b8535ee6806ff6f5600735df8d2da37f6466860d7bcffe42281620f"
+    },
+    {
+      "name": "vue3-spec.pdf",
+      "sha256": "dad02e2eaa7fef5a5d478b102ab81ea33e2a2ed20438750917f473dc9cee033d"
+    },
+    {
+      "name": "netgear-spec.pdf",
+      "sha256": "2ff38034db15a2f14c2558669beb33221c6858fbfacd9dda4200928e68769491"
+    },
+    {
+      "name": "vue3-spec-p2.png",
+      "sha256": "e558dcbee485265e2f367dbe9fe470f9e6af9cdff7343aabcee7e1809989dfcd"
+    },
+    {
+      "name": "vue3-manual-p11.png",
+      "sha256": "9aecedf9be13c95e92a04f747c4f404e69b1fef5fdb361cb7fe1cdb977d7fd9d"
+    },
+    {
+      "name": "vue3-manual-p37.png",
+      "sha256": "cabb5bddff7d0c2b330643659665bba777cf11f1f172130f99643f4fcb168cb8"
+    },
+    {
+      "name": "netgear-p2.png",
+      "sha256": "a409b77fc1b1f3978c8e8fef2492894fa3abe76421ed91f2a6a25422727cdaec"
+    }
+  ]
+}

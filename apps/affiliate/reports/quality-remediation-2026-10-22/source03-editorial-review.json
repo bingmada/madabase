@@ -1,0 +1,1667 @@
+{
+  "reviewedAt": "2026-10-25T13:13:41.712Z",
+  "status": "modified_awaiting_checks",
+  "pages": [
+    {
+      "key": "network:poe-vs-poe-plus-for-cameras-access-points",
+      "kind": "guide",
+      "beforeSha256": "06ab1e0c5b1dad0e59f383a903f3f540cc1254ad9d6d22d42a4fb50a1fa252eb",
+      "afterSha256": "4db2034dccb2125a4f0f004adafb0a441c9309b5e3ae4d2805d062c5245e3876",
+      "before": {
+        "site": "network",
+        "slug": "poe-vs-poe-plus-for-cameras-access-points",
+        "title": "PoE vs PoE+ for Cameras and Access Points",
+        "dek": "Understand 802.3af, 802.3at, per-port wattage, total switch budget, and when Wi-Fi access points need more than basic PoE.",
+        "category": "wired",
+        "updatedAt": "July 9, 2026",
+        "relatedProducts": [
+          "tp-link-tl-sg1005p-poe-switch",
+          "tp-link-tl-sg108pe-poe-switch",
+          "netgear-gs308epp-poe-switch"
+        ],
+        "relatedRoundups": [
+          "best-poe-switches-for-home-cameras-and-access-points"
+        ],
+        "sections": [
+          {
+            "heading": "PoE and PoE+ are power classes",
+            "body": "Basic PoE and PoE+ describe how much power can be delivered under supported standards. The endpoint and switch must agree on what is needed."
+          },
+          {
+            "heading": "Cameras vary widely",
+            "body": "Simple fixed cameras may be modest loads, while PTZ, heater, spotlight, or multi-sensor cameras can need more power."
+          },
+          {
+            "heading": "Access points can push the budget",
+            "body": "Modern Wi-Fi access points may need PoE+ or higher, and some also benefit from 2.5GbE uplinks. Check both power and data speed."
+          },
+          {
+            "heading": "Do not ignore cable and run length",
+            "body": "Poor cable, long runs, outdoor routing, or bad terminations can make a theoretically compatible PoE setup unreliable."
+          }
+        ]
+      },
+      "after": {
+        "site": "network",
+        "slug": "poe-vs-poe-plus-for-cameras-access-points",
+        "title": "PoE vs PoE+: Camera and Access Point Power Checks",
+        "dek": "Compare power at the switch and device, add the shared PoE budget, and check the data link before choosing a camera or access-point switch.",
+        "category": "wired",
+        "updatedAt": "October 25, 2026",
+        "searchQuestion": "Does my camera or access point need PoE or PoE+?",
+        "quickAnswer": "Use the exact endpoint's supported PoE standard and required operating mode. IEEE 802.3af provides up to 15.4 W at the source and 12.95 W at the device; 802.3at raises those limits to 30 W and 25.5 W. Each port and the switch's shared budget must pass separately. A PoE+ label does not establish a 2.5GbE data link.",
+        "relatedProducts": [
+          "tp-link-tl-sg1005p-poe-switch",
+          "tp-link-tl-sg108pe-poe-switch",
+          "netgear-gs308epp-poe-switch"
+        ],
+        "relatedRoundups": [
+          "best-poe-switches-for-home-cameras-and-access-points"
+        ],
+        "relatedGuides": [
+          "poe-switch-power-budget-calculator-guide",
+          "managed-vs-unmanaged-poe-switch-home-guide"
+        ],
+        "decisionPurchase": {
+          "asin": "B076HZFY3F",
+          "model": "TP-Link TL-SG1005P",
+          "qualifies": "Consider this unmanaged reference only when up to four powered endpoints accept 802.3af/at, their source-side allocation fits the selected revision's documented budget, and Gigabit links meet the job.",
+          "stop": "Hold the purchase if power allocation, supplied adapter or hardware revision is unknown, if any endpoint requires an unsupported higher-power or passive supply, or if 2.5GbE or configurable VLANs are required.",
+          "keep": "Keep an existing switch or supported injector when its standard, operating-mode power, shared budget and data link already pass these checks."
+        },
+        "comparisonTable": {
+          "title": "Power at the source and at the endpoint",
+          "columns": [
+            "802.3af · PoE",
+            "802.3at · PoE+"
+          ],
+          "rows": [
+            {
+              "label": "Source-port limit",
+              "values": [
+                "Up to 15.4 W",
+                "Up to 30 W"
+              ]
+            },
+            {
+              "label": "Power at device input",
+              "values": [
+                "Up to 12.95 W",
+                "Up to 25.5 W"
+              ]
+            },
+            {
+              "label": "Shared switch budget",
+              "values": [
+                "Add the allocations for all powered ports",
+                "A 30 W port does not mean every port can use 30 W together"
+              ]
+            },
+            {
+              "label": "Camera or AP decision",
+              "values": [
+                "Only when the exact required mode supports af",
+                "When the exact required mode calls for at; higher-power needs require another check"
+              ]
+            },
+            {
+              "label": "Data rate",
+              "values": [
+                "Verify separately from watts",
+                "Verify separately from watts"
+              ]
+            }
+          ]
+        },
+        "sources": [
+          {
+            "name": "Cisco: PoE standards and power at the device",
+            "url": "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/poe-ind-data-control-single-cable-so.html",
+            "note": "Tables 1–2 distinguish source and powered-device limits; these are standard limits, not measurements of our reference switches."
+          },
+          {
+            "name": "TP-Link TL-SG1005P US specifications",
+            "url": "https://www.tp-link.com/us/business-networking/soho-switch-unmanaged/tl-sg1005p/",
+            "note": "Current four-port PoE+, 65 W budget and Extend Mode description. Match the received revision; Extend Mode's 250 m claim reduces the specified port speed to 10 Mbps."
+          },
+          {
+            "name": "TP-Link TL-SG108PE V3",
+            "url": "https://www.tp-link.com/us/business-networking/easy-smart-switch/tl-sg108pe/v3/",
+            "note": "A distinct Easy Smart reference with four powered ports and 64 W shared budget; not eight powered ports."
+          }
+        ],
+        "editorialMethod": [
+          "Manufacturer specifications and standard-limit guidance reviewed October 25, 2026. No bench test or live seller/stock verification is claimed.",
+          "The 60.8 W worked example uses illustrative source-side allocations. It is not a measured camera or AP load."
+        ],
+        "sections": [
+          {
+            "heading": "Read the endpoint's required operating mode",
+            "body": "Find the complete camera or access-point model and the power section of its manual. Record the accepted standard and the requirement with the functions you will enable, including any supported heater, IR, motor or USB accessory. An idle draw or a successful boot is not proof of full operation. Leave an unspecified power requirement unresolved. A passive-voltage device also needs its own supply check; do not treat an Ethernet-shaped socket as evidence of IEEE PoE compatibility."
+          },
+          {
+            "heading": "Add allocations on the same side of the cable",
+            "body": "The switch supplies more power than reaches the endpoint because the cable path has losses. Compare the allocation counted by the switch with its usable PoE budget, rather than mixing endpoint watts with source watts. In an illustrative plan, two ports allocated 15.4 W and one allocated 30 W total 60.8 W. Against a documented 65 W budget, that leaves 4.2 W. This arithmetic does not prove sufficient capacity for another endpoint, startup behavior or the installation environment."
+          },
+          {
+            "heading": "Check the data link independently",
+            "body": "A camera may need only a modest data rate, while an access point may have a faster wired interface. The TL-SG1005P and TL-SG108PE references use Gigabit ports. Their PoE+ support does not turn those ports into 2.5GbE. Record the required power standard, negotiated data rate and upstream connection as separate checks; replace equipment only for a limit that affects the intended workload."
+          },
+          {
+            "heading": "Do not transfer a long-distance headline",
+            "body": "Use the cable type, channel length and installation conditions specified for the exact equipment. TP-Link's current TL-SG1005P page describes an Extend Mode up to 250 m, with the specified ports reduced to 10 Mbps and distance dependent on cable and endpoint load. That is not a promise of Gigabit operation over 250 m, nor proof that an older revision has the same mode. Outdoor exposure and building entry need their own suitable installation plan."
+          },
+          {
+            "heading": "Choose a switch only after the port plan passes",
+            "body": "Count powered ports separately from total Ethernet ports, leaving a data connection for the uplink where required. The TL-SG1005P is a four-powered-port unmanaged reference; the TL-SG108PE has eight total ports but only four powered ports. Confirm the selected hardware revision and included power adapter against its own documentation. Keep an existing suitable injector or switch when it already supplies the required power and data path."
+          },
+          {
+            "heading": "Check the actual setup after installation",
+            "body": "Using the equipment's instructions, verify negotiated links and the switch's available power information, then check the endpoint's required operating modes and a normal simultaneous restart. Record any denied-power or reduced-function indication. These are acceptance checks for the owner to perform; we have not carried them out on the linked hardware and do not infer stability from the specification table."
+          }
+        ]
+      }
+    },
+    {
+      "key": "network:managed-vs-unmanaged-poe-switch-home-guide",
+      "kind": "guide",
+      "beforeSha256": "68395ee28bb50d1e0adb0434e309fe8e46cc591e31a6447fb681ee51a6ee702b",
+      "afterSha256": "147e5405ab5052c22b6d8f0979cac621668b74f0f2876cfd60f26d0c6437452b",
+      "before": {
+        "site": "network",
+        "slug": "managed-vs-unmanaged-poe-switch-home-guide",
+        "title": "Managed vs Unmanaged PoE Switch for Home Cameras",
+        "dek": "Use unmanaged PoE for simple power; choose Easy Smart or managed PoE when VLANs, camera isolation, monitoring, and port controls matter.",
+        "category": "wired",
+        "updatedAt": "July 9, 2026",
+        "relatedProducts": [
+          "tp-link-tl-sg1005p-poe-switch",
+          "tp-link-tl-sg108pe-poe-switch",
+          "netgear-gs308epp-poe-switch"
+        ],
+        "relatedRoundups": [
+          "best-poe-switches-for-home-cameras-and-access-points",
+          "best-wired-networking-upgrades"
+        ],
+        "sections": [
+          {
+            "heading": "Unmanaged PoE is fine for a flat network",
+            "body": "If the goal is only to power a few devices and plug them into the same LAN, unmanaged PoE is simpler and cheaper."
+          },
+          {
+            "heading": "Managed PoE helps with isolation",
+            "body": "Cameras, guest Wi-Fi, smart-home devices, and access points often deserve VLAN or traffic controls. Easy Smart switches can be enough for basic segmentation."
+          },
+          {
+            "heading": "Monitoring can save troubleshooting time",
+            "body": "Port status, PoE draw, link speed, and error counters help diagnose a camera that drops offline or an AP that negotiates the wrong speed."
+          },
+          {
+            "heading": "Complexity has a cost",
+            "body": "Do not buy a managed switch if nobody will maintain VLANs, firmware, passwords, backups, or documentation."
+          }
+        ]
+      },
+      "after": {
+        "site": "network",
+        "slug": "managed-vs-unmanaged-poe-switch-home-guide",
+        "title": "Managed vs Unmanaged PoE: Camera VLAN and Power Checks",
+        "dek": "Choose simple PoE for a flat LAN or configurable VLANs for a planned network. Compare port power, gateway support and the work of maintaining it.",
+        "category": "wired",
+        "updatedAt": "October 25, 2026",
+        "searchQuestion": "Do home cameras need a managed PoE switch?",
+        "quickAnswer": "An unmanaged PoE switch can supply compatible cameras on one flat LAN. Choose a configurable switch when you have a specific VLAN, monitoring or port-control plan. A VLAN-capable switch alone does not complete camera isolation: the gateway, addressing, uplinks and access rules must match. Power capacity remains a separate requirement.",
+        "relatedProducts": [
+          "tp-link-tl-sg108pe-poe-switch",
+          "netgear-gs308epp-poe-switch",
+          "tp-link-tl-sg1005p-poe-switch"
+        ],
+        "relatedRoundups": [
+          "best-poe-switches-for-home-cameras-and-access-points",
+          "best-wired-networking-upgrades"
+        ],
+        "relatedGuides": [
+          "poe-vs-poe-plus-for-cameras-access-points",
+          "poe-switch-power-budget-calculator-guide"
+        ],
+        "decisionPurchase": {
+          "asin": "B01BW0AD1W",
+          "model": "TP-Link TL-SG108PE",
+          "qualifies": "Consider this Easy Smart reference for a documented VLAN or monitoring plan, no more than four compatible powered endpoints, Gigabit links and a verified 64 W shared power budget for the selected revision.",
+          "stop": "Resolve unknown gateway VLAN/firewall support, endpoint allocations and received hardware revision first. More than four powered endpoints, higher link rates or features absent from its manual require a different plan.",
+          "keep": "Keep the unmanaged switch when a flat LAN is appropriate and it already meets power and port needs. A new switch is not required just because cameras are connected."
+        },
+        "comparisonTable": {
+          "title": "Choose the network job before the management label",
+          "columns": [
+            "Flat-LAN unmanaged reference",
+            "Configurable reference"
+          ],
+          "rows": [
+            {
+              "label": "Example",
+              "values": [
+                "TL-SG1005P",
+                "TL-SG108PE / GS308EPP"
+              ]
+            },
+            {
+              "label": "Job",
+              "values": [
+                "Supply compatible devices on the existing LAN",
+                "Apply a documented VLAN or port-management plan"
+              ]
+            },
+            {
+              "label": "Powered-port examples",
+              "values": [
+                "TL-SG1005P: four; current US page lists 65 W total",
+                "TL-SG108PE: four / 64 W; GS308EPP: eight / 123 W"
+              ]
+            },
+            {
+              "label": "Isolation still needs",
+              "values": [
+                "A separate suitable network design if required",
+                "Compatible gateway, addressing, uplinks and tested rules"
+              ]
+            },
+            {
+              "label": "Reason to keep current gear",
+              "values": [
+                "Flat LAN and existing power/link capacity meet the job",
+                "Existing managed equipment already implements the required plan"
+              ]
+            }
+          ]
+        },
+        "sources": [
+          {
+            "name": "TP-Link TL-SG108PE V3 specifications",
+            "url": "https://www.tp-link.com/us/business-networking/easy-smart-switch/tl-sg108pe/v3/",
+            "note": "V3 hardware, 64 W/four powered ports, web management and VLAN functions. Check the received revision rather than copying current V5-only features."
+          },
+          {
+            "name": "TP-Link current TL-SG108PE V5 page",
+            "url": "https://www.tp-link.com/us/business-networking/easy-smart-switch/tl-sg108pe/",
+            "note": "Current US V5 documentation and links to V3/V4. A newer revision is not proof that the older model family is discontinued or that an Amazon offer supplies V5."
+          },
+          {
+            "name": "NETGEAR GS308EPP family datasheet",
+            "url": "https://www.netgear.com/images/datasheet/switches/GS305EP_GS305EPP_GS308EP_GS308EPP.pdf",
+            "note": "Pages 2–3: eight powered ports, 123 W shared budget, VLAN tagging, management interface and configuration export. GS308EP is the different 62 W model."
+          },
+          {
+            "name": "TP-Link TL-SG1005P US page",
+            "url": "https://www.tp-link.com/us/business-networking/soho-switch-unmanaged/tl-sg1005p/",
+            "note": "Current unmanaged four-powered-port / 65 W reference; automatic power features do not establish configurable VLAN support."
+          }
+        ],
+        "editorialMethod": [
+          "Manufacturer hardware and management tables reviewed October 25, 2026. No installed-network security or throughput test is claimed.",
+          "The VLAN planning and keep-existing choices are editorial decision checks, not certification that a named switch or gateway isolates a particular home network."
+        ],
+        "sections": [
+          {
+            "heading": "Start with the traffic that should be allowed",
+            "body": "Write down which cameras need the recorder, which phones may view them, whether internet access is required and who can administer the devices. Then draw the intended network boundaries. A managed-switch purchase is useful only when its features implement part of that plan. If one flat LAN is appropriate and the existing switch powers everything reliably within specification, keeping it is a valid result."
+          },
+          {
+            "heading": "Trace the VLAN beyond the camera port",
+            "body": "A tag on a switch port does not create the rest of the network. Confirm how the uplink carries each VLAN, where addresses are assigned and where traffic between networks is permitted or denied. Check gateway support before buying the switch. Avoid copying a VLAN number from an example without understanding the gateway and recorder paths; unresolved upstream support should remain unresolved rather than becoming an isolation claim."
+          },
+          {
+            "heading": "Match the exact management feature",
+            "body": "The TL-SG108PE V3 documents web/utility management and VLAN functions. NETGEAR's GS308EPP datasheet lists VLAN tagging, port mirroring, cable tests and configuration export. These are specific features, not a promise of a full router firewall, every enterprise authentication feature or a universal camera-security setup. Confirm the needed control in the exact hardware and firmware manual before comparing prices."
+          },
+          {
+            "heading": "Make a separate powered-port bill",
+            "body": "Eight Ethernet sockets do not always mean eight powered sockets. TL-SG108PE has four powered ports sharing 64 W; GS308EPP has eight sharing 123 W. GS308EP is the different 62 W model. Keep the per-port standard and total allocation checks from the power-budget guide, and include the actual uplink port plan. Management features cannot repair an overloaded supply or add 2.5GbE to Gigabit ports."
+          },
+          {
+            "heading": "Check revisions without inventing obsolescence",
+            "body": "TP-Link's current US TL-SG108PE page selects V5 and still links separate V3/V4 pages. Our historical Amazon reference names V3; it does not prove today's received revision or adapter. Compare the selected revision's manual and support files. A newer revision or a changed web default alone is not evidence that the older family has been discontinued, nor a reason to replace functioning equipment."
+          },
+          {
+            "heading": "Leave a maintainable handover record",
+            "body": "Record the port map, VLAN membership, gateway rules, supported firmware and a recovery path before changing the installed network. Keep a configuration backup where supported, and verify required viewing and blocked paths after the change. Someone must own future maintenance. If nobody can explain or maintain the intended segmentation, resolve that plan before adding a configurable switch."
+          }
+        ]
+      }
+    },
+    {
+      "key": "smarthome:smart-garage-door-controller-compatibility-hub-offline-guide",
+      "kind": "guide",
+      "beforeSha256": "7ba226182807e23c6bd06b40438cc385dd13df58e2485cb2655cd04bbbfb986b",
+      "afterSha256": "ad14c6e6b86d49d72161592227c21519e4e6683327f0295d1ab42c1d415b273f",
+      "before": {
+        "updatedAt": "August 8, 2026",
+        "relatedRoundups": [],
+        "site": "smarthome",
+        "slug": "smart-garage-door-controller-compatibility-hub-offline-guide",
+        "title": "Smart Garage Door Controller Compatibility, Hub, and Offline Guide",
+        "dek": "Check opener wiring, platform control, hub requirements, alert paths, and physical fallback before adding a retrofit controller.",
+        "category": "automation",
+        "relatedProducts": [
+          "meross-msg100-homekit-garage-door-opener"
+        ],
+        "relatedGuides": [
+          "matter-over-thread-hub-checklist"
+        ],
+        "sections": [
+          {
+            "heading": "Identify the opener before the controller",
+            "body": "Record opener manufacturer, model, learn-button color, wall-control wiring, door count, safety sensors, and accessory requirements. A platform logo cannot resolve an incompatible opener interface."
+          },
+          {
+            "heading": "Separate direct Wi-Fi from ecosystem hubs",
+            "body": "A controller can join Wi-Fi without its own hub while Apple remote access, Matter, or another ecosystem still relies on home controllers. Draw the actual path from phone to door."
+          },
+          {
+            "heading": "Plan the outage state",
+            "body": "Keep original wall controls and remotes. Document what happens during internet, router, platform, phone, and power outages, and never let a smart controller bypass required safety sensors."
+          }
+        ]
+      },
+      "after": {
+        "updatedAt": "October 25, 2026",
+        "relatedRoundups": [],
+        "site": "smarthome",
+        "slug": "smart-garage-door-controller-compatibility-hub-offline-guide",
+        "title": "Garage Door Controllers: Opener Fit, Hubs and Offline Use",
+        "dek": "Check the exact opener, accessory and HomeKit variant. Separate Meross local-network control from remote access and retain the original door controls.",
+        "category": "automation",
+        "searchQuestion": "Will a Meross controller work with my opener, and what works offline?",
+        "quickAnswer": "Confirm the opener in Meross's model-specific checker before choosing MSG100HK. It joins 2.4GHz Wi-Fi without a Meross hub; Apple remote access needs a supported home hub. Meross advertises app control on a working home LAN during an internet outage, which is different from router or power failure. Keep compatibility and untested outage behavior unresolved.",
+        "relatedProducts": [
+          "meross-msg100-homekit-garage-door-opener"
+        ],
+        "relatedGuides": [
+          "matter-over-thread-hub-checklist"
+        ],
+        "decisionPurchase": {
+          "asin": "B084Z5QZR2",
+          "model": "Meross MSG100HK",
+          "qualifies": "Consider the historical HK listing reference only after the exact opener and any required accessory are confirmed, the selected HK variant is explicit, and the intended network/control path is documented.",
+          "stop": "Do not buy through an unknown opener result, an unconfirmed accessory or an assumed Matter/Thread capability. Seller, included parts and current stock remain checkout checks.",
+          "keep": "Keep the original wall button and remotes when they already solve the job. A supported existing controller does not need replacement merely because another model is newer."
+        },
+        "comparisonTable": {
+          "title": "Five separate garage-controller checks",
+          "columns": [
+            "What to establish",
+            "Reason to pause"
+          ],
+          "rows": [
+            {
+              "label": "Opener",
+              "values": [
+                "Complete brand/model in the correct Meross checker",
+                "Unlisted model or uncertain control interface"
+              ]
+            },
+            {
+              "label": "Accessory",
+              "values": [
+                "Exact required accessory and regional/order eligibility",
+                "Assuming every incompatible opener gets a free adapter"
+              ]
+            },
+            {
+              "label": "Apple Home",
+              "values": [
+                "HK version plus supported home hub for remote access",
+                "Non-HK variant or presumed Matter/Thread support"
+              ]
+            },
+            {
+              "label": "Internet outage",
+              "values": [
+                "Manufacturer-advertised LAN app path on a working local network",
+                "Treating it as tested remote, router-free or power-free operation"
+              ]
+            },
+            {
+              "label": "Existing controls",
+              "values": [
+                "Wall control and original remotes retained under opener instructions",
+                "Smart features being used to bypass safety functions"
+              ]
+            }
+          ]
+        },
+        "sources": [
+          {
+            "name": "Meross exact-model compatibility checker",
+            "url": "https://www.meross.com/en-gc/compatibility-check/garage-door-opener",
+            "note": "MSG100/100HK/200/200HK scope and warning against terminal testing when the terminals are uncertain."
+          },
+          {
+            "name": "Meross accessory FAQ",
+            "url": "https://www.meross.com/en-gc/faq/79.html",
+            "note": "Supported opener families, US/CA/MX scope and order/warranty conditions; individual eligibility is not established here."
+          },
+          {
+            "name": "Meross MSG100 current manufacturer listing",
+            "url": "https://shop.meross.com/collections/smart-garage-door-opener/products/smart-wifi-garage-door-opener",
+            "note": "2.4GHz specifications and advertised in-LAN app control without internet; no physical outage test is claimed."
+          },
+          {
+            "name": "Apple home-hub setup",
+            "url": "https://support.apple.com/en-us/102557",
+            "note": "Remote Apple Home control requires appropriate home infrastructure; separate from the retrofit controller's connection."
+          },
+          {
+            "name": "Meross MSG150 current scope",
+            "url": "https://shop.meross.com/products/smart-wifi-garage-door-opener-msg150",
+            "note": "Manufacturer targets Chamberlain/LiftMaster/Craftsman and points other brands to MSG100HK. No universal successor is inferred."
+          }
+        ],
+        "editorialMethod": [
+          "Relevant manufacturer compatibility, product and ecosystem guidance reviewed October 25, 2026. No wiring, powered-door or outage test performed.",
+          "The existing Amazon identity is historical. This documentation review does not verify a current seller, stock, accessory shipment or received variant."
+        ],
+        "sections": [
+          {
+            "heading": "Write down the opener's complete identity",
+            "body": "Record the opener brand and full model, door count, region and the control method the household needs. Use the appropriate manufacturer's checker rather than a platform logo or visual similarity of terminals. Meross separates the MSG100/MSG200 checker from the MSG150 document. Keep an unlisted model open with support instead of treating a nearby model name as a match."
+          },
+          {
+            "heading": "Resolve accessory eligibility before ordering",
+            "body": "Meross's accessory FAQ limits the workaround to specified opener families and US, Canadian and Mexican units, with order and warranty conditions. It does not establish that any opener can be adapted or that every buyer receives a free part. Get confirmation for the exact opener and controller variant. The checker warns against its terminal test when the terminal location is uncertain; this guide does not turn that test into universal wiring instructions."
+          },
+          {
+            "heading": "Separate the device connection from Apple remote access",
+            "body": "The MSG100HK reference uses 2.4GHz Wi-Fi without a separate Meross hub. For Apple Home, verify the HK purchasing identity and the supported home hub required for remote access. Draw the phone, home hub, router and controller path. HomeKit support does not establish Matter or Thread, and another controller in the same product family may have different platform support."
+          },
+          {
+            "heading": "Name the component that has failed",
+            "body": "Meross advertises app control inside the home LAN when the internet is down. That statement still needs a working local network and the correct device/app path. It does not prove off-site control, a functioning router during router failure, or door operation during loss of electrical power. Check the exact firmware and intended command before relying on a fallback; this article has not tested these outage cases."
+          },
+          {
+            "heading": "Compare MSG150 without assuming universal replacement",
+            "body": "The current Meross store describes MSG150 for Chamberlain, LiftMaster and Craftsman and directs other brands toward MSG100HK. Treat it as another model-specific compatibility path. Do not transfer a platform badge, accessory promise or compatibility result between models. If existing controls or an already-supported controller meet the household's needs, a newer product is not a reason to replace them."
+          },
+          {
+            "heading": "Keep the original safe operating routine",
+            "body": "Retain the opener's wall control and remotes and follow its own installation and safety instructions. After a suitable installation, an appropriate installer or owner should verify the permitted controls and door-status reporting. Never remove required safety sensors or use an automation to bypass the opener's safeguards. An app status label is not proof that an unobserved door movement is safe."
+          }
+        ]
+      }
+    },
+    {
+      "key": "smarthome:smart-blind-motor-hub-local-control-guide",
+      "kind": "guide",
+      "beforeSha256": "5515f556d4b35940464dd9bd8d5510979d822ae4b8915463d281a1730e97c407",
+      "afterSha256": "48549fa88679db2eb7f4e0b34ec7315ecc281f6f4e051f4a3722fa6fd1ee7ccb",
+      "before": {
+        "updatedAt": "August 8, 2026",
+        "relatedRoundups": [],
+        "site": "smarthome",
+        "slug": "smart-blind-motor-hub-local-control-guide",
+        "title": "Smart Blind Motor Hub and Local-Control Guide",
+        "dek": "Match wand, chain, roller, or curtain hardware to the right motor, then decide whether Bluetooth, a hub, Matter, or manual control is enough.",
+        "category": "automation",
+        "relatedProducts": [
+          "switchbot-blind-tilt"
+        ],
+        "relatedGuides": [
+          "matter-over-thread-hub-checklist"
+        ],
+        "sections": [
+          {
+            "heading": "Name the mechanism",
+            "body": "Tilt wand, bead chain, roller tube, curtain rod, lift cord, and vertical vane systems need different hardware. Measure the control side and clearance before considering software."
+          },
+          {
+            "heading": "Buy the hub for a specific job",
+            "body": "Nearby control, remote access, voice, shared household access, and Matter are separate requirements. Choose the least complex path that meets the real routine."
+          },
+          {
+            "heading": "Keep a manual exit",
+            "body": "Confirm that blinds can still be adjusted safely when the battery, hub, Wi-Fi, internet, or platform is unavailable. Test limits and obstruction behavior after installation."
+          }
+        ]
+      },
+      "after": {
+        "updatedAt": "October 25, 2026",
+        "relatedRoundups": [],
+        "site": "smarthome",
+        "slug": "smart-blind-motor-hub-local-control-guide",
+        "title": "Blind Tilt: Fit, Matter Hubs and Offline Control",
+        "dek": "Check the blind mechanism first, then choose nearby Bluetooth or a supported Matter bridge. Hub 2, Hub Mini Matter Enabled and Hub 3 have distinct limits.",
+        "category": "automation",
+        "searchQuestion": "Does SwitchBot Blind Tilt need a hub or work offline?",
+        "quickAnswer": "Blind Tilt fits supported horizontal blinds with a tilt wand; it does not lift the blind or convert roller or vertical systems. Nearby Bluetooth control needs no hub. Matter integration uses a compatible bridge, including Hub 2, Hub Mini Matter Enabled or Hub 3; plain Hub Mini lacks Matter. Verify the exact firmware, exposed actions and intended fallback before buying another hub.",
+        "relatedProducts": [
+          "switchbot-blind-tilt"
+        ],
+        "relatedGuides": [
+          "matter-over-thread-hub-checklist"
+        ],
+        "decisionPurchase": {
+          "asin": "B0BMLFZ4CP",
+          "model": "SwitchBot Blind Tilt",
+          "qualifies": "Consider the single-motor reference after the horizontal blind, wand and available space pass the manufacturer's fit checks, and either nearby Bluetooth or your documented supported bridge meets the intended control task.",
+          "stop": "Pause for an unknown fit, binding mechanism, roller/vertical blind, required lifting function, unsupported bridge or unverified offline automation. Confirm motor count and included hub/solar accessories in the selected offer.",
+          "keep": "Keep the existing blind and a compatible bridge when they already meet the task. Do not add a hub solely for nearby Bluetooth control."
+        },
+        "comparisonTable": {
+          "title": "Choose a control path for the fitted blind",
+          "columns": [
+            "Nearby Bluetooth",
+            "Matter through a compatible bridge"
+          ],
+          "rows": [
+            {
+              "label": "Additional bridge",
+              "values": [
+                "Not required for nearby phone control",
+                "Check the current supported-device table and your existing bridge"
+              ]
+            },
+            {
+              "label": "Common hub options",
+              "values": [
+                "No hub purchase just for this path",
+                "Hub 2, Hub Mini Matter Enabled, Hub 3; plain Hub Mini has no Matter"
+              ]
+            },
+            {
+              "label": "Scope to verify",
+              "values": [
+                "Phone range and intended command",
+                "Firmware, sub-device slots and platform-exposed actions"
+              ]
+            },
+            {
+              "label": "Outage check",
+              "values": [
+                "Verify the nearby command you need",
+                "Do not infer every automation from an infrared offline feature"
+              ]
+            },
+            {
+              "label": "Physical limit",
+              "values": [
+                "Tilts compatible horizontal slats",
+                "The bridge does not add blind lifting or change mechanical fit"
+              ]
+            }
+          ]
+        },
+        "sources": [
+          {
+            "name": "SwitchBot Blind Tilt supported mechanisms",
+            "url": "https://support.switch-bot.com/hc/en-us/articles/11696634725783-What-types-of-blinds-does-Blind-Tilt-support",
+            "note": "Horizontal pole-operated blinds; documented pole diameters are 6.2–10.2 mm and 12 mm. Check shape, mounting and installation instructions too."
+          },
+          {
+            "name": "SwitchBot vertical/roller exclusions",
+            "url": "https://support.switch-bot.com/hc/en-us/articles/11642036286359-Does-Blind-Tilt-support-vertical-blinds",
+            "note": "Explicit exclusions; having a wand alone does not make vertical blinds compatible."
+          },
+          {
+            "name": "SwitchBot hub comparison",
+            "url": "https://support.switch-bot.com/hc/en-us/articles/13569889726743-Differences-Between-Hub-Mini-Hub-2-Hub-Mini-Matter-Enabled-and-Hub-3",
+            "note": "Matter capability, sub-device limits and infrared offline control are separate rows with separate meanings."
+          },
+          {
+            "name": "Current Matter sub-device support",
+            "url": "https://support.switch-bot.com/hc/en-us/articles/13282638111127-Which-SwitchBot-Devices-Can-Be-Added-to-Apple-Home-As-Sub-devices-via-Matter",
+            "note": "Blind Tilt actions and firmware notes. The current table also lists other bridge devices; check an already-owned supported device before adding a hub."
+          },
+          {
+            "name": "Manual wand operation",
+            "url": "https://support.switch-bot.com/hc/en-us/articles/12004451785239-After-installing-the-Blind-Tilt-is-it-possible-to-rotate-the-pole-manually",
+            "note": "Manufacturer permits manual pole rotation; this article has not physically tested it."
+          }
+        ],
+        "editorialMethod": [
+          "Manufacturer fit and bridge-support pages reviewed October 25, 2026; no physical installation, range or outage measurement.",
+          "Bridge support does not prove Thread radio support, every ecosystem action or a tested local automation. The retailer's selected bundle is a separate check."
+        ],
+        "sections": [
+          {
+            "heading": "Match the motor to the actual blind mechanism",
+            "body": "Blind Tilt rotates a compatible horizontal-blind wand. It does not raise the blind and is not a motor for roller shades, vertical blinds or arbitrary bead-chain systems. The support page lists pole diameters of 6.2–10.2 mm and 12 mm; that is not a continuous promise for every diameter between 6.2 and 12 mm. Check the wand's shape, mounting room and current installation instructions, and resolve binding or damaged blinds first."
+          },
+          {
+            "heading": "Start with nearby Bluetooth if it does the job",
+            "body": "A household that only needs nearby phone control does not need a hub for that task. Define the required function before adding a bridge: away-from-home access, a particular voice ecosystem, an automation and Matter exposure are different requirements. An unused integration is not a reason to add another powered device and setup dependency."
+          },
+          {
+            "heading": "Update the old Hub 2-only assumption",
+            "body": "Current SwitchBot documentation includes Blind Tilt through compatible bridges such as Hub 2, Hub Mini Matter Enabled and Hub 3. Plain Hub Mini has no Matter function. Check the full current support table, because it also lists other bridge devices. An existing supported bridge may already be enough. Match firmware, remaining sub-device slots and the actions exposed to the chosen platform before purchasing another hub."
+          },
+          {
+            "heading": "Separate local commands from cloud-triggered routines",
+            "body": "Nearby Bluetooth, the motor's saved behavior, a bridge command, an ecosystem automation and an internet-triggered service are different paths. SwitchBot's hub comparison includes an infrared offline-control row; Blind Tilt is not an infrared appliance, so that row is not proof of its outage behavior. Verify the exact routine you need with the current instructions. Matter bridging also does not change the Blind Tilt motor into a Thread device."
+          },
+          {
+            "heading": "Preserve and check the manual route",
+            "body": "SwitchBot documents manual wand rotation after installation. Follow the installation and calibration guidance, confirm that the normal control remains reachable and verify the intended manual operation without forcing a binding mechanism. Solar charging depends on the selected bundle and placement; this article does not promise unlimited battery life, radio range or a measured interval between charges."
+          },
+          {
+            "heading": "Keep a short record for each window",
+            "body": "Record the blind mechanism, measured wand, mounting position, motor count and the control path chosen for that window. Note the exact bridge and firmware only where it is needed. Leave unknown fit or unsupported platform actions open instead of solving them by buying a larger bundle. Replace the blind only if its actual mechanical job also needs to change."
+          }
+        ]
+      }
+    },
+    {
+      "key": "smarthome:whole-home-energy-monitor-cloud-local-installation-guide",
+      "kind": "guide",
+      "beforeSha256": "3fd2bbf0ff26791a7b91f3c62ea02f282008e2dc66499abe228996cc941fc5f8",
+      "afterSha256": "9c0dc20d5ec812d0017cd6d81f6e70a127209536d501eb398d185f3b5d83e12c",
+      "before": {
+        "updatedAt": "August 8, 2026",
+        "relatedRoundups": [],
+        "site": "smarthome",
+        "slug": "whole-home-energy-monitor-cloud-local-installation-guide",
+        "title": "Whole-Home Energy Monitor: Cloud, Local Data, and Installation Guide",
+        "dek": "Compare panel fit, sensor count, electrician work, network dependence, data retention, and actionable household decisions.",
+        "category": "climate",
+        "relatedProducts": [
+          "emporia-vue-3-home-energy-monitor"
+        ],
+        "relatedGuides": [
+          "tapo-p110m-home-assistant-energy-monitoring"
+        ],
+        "sections": [
+          {
+            "heading": "Start with the decision the data should change",
+            "body": "Circuit-level data is valuable when it can find standby loads, schedule equipment, or verify a change. It is excessive when a utility interval chart already answers the question."
+          },
+          {
+            "heading": "Treat the panel as professional work",
+            "body": "Service type, conductor access, panel fill, CT direction, mains voltage, local code, and energized components require the current manual and an appropriate electrician."
+          },
+          {
+            "heading": "Ask where data lives",
+            "body": "Compare direct local access, cloud dashboards, outage buffering, resolution after reconnection, exports, retention, account deletion, and what remains visible without the vendor service."
+          }
+        ]
+      },
+      "after": {
+        "updatedAt": "October 25, 2026",
+        "relatedRoundups": [],
+        "site": "smarthome",
+        "slug": "whole-home-energy-monitor-cloud-local-installation-guide",
+        "title": "Vue 3 Energy Monitor: Panel Fit, Cloud and Offline Data",
+        "dek": "Decide whether circuit data justifies panel work. Check Vue 3 sensor bundles, Ethernet or Wi-Fi, cloud access and the limits of outage buffering.",
+        "category": "climate",
+        "searchQuestion": "Does Emporia Vue 3 work locally, and what should I check before installation?",
+        "quickAnswer": "Vue 3 uses wired Ethernet or 2.4GHz Wi-Fi, but the Emporia app still reads through the cloud rather than directly from the device. The manufacturer describes roughly 15 minutes of detailed outage buffering, followed by averaged longer-outage data. A qualified professional must assess the actual electrical service, panel space and sensor kit. Utility interval data may already be enough.",
+        "relatedProducts": [
+          "emporia-vue-3-home-energy-monitor"
+        ],
+        "relatedGuides": [
+          "tapo-p110m-home-assistant-energy-monitoring"
+        ],
+        "decisionPurchase": {
+          "asin": "B0C79PNK84",
+          "model": "Emporia Vue 3",
+          "qualifies": "Consider this Vue 3 reference when circuit-level data answers a useful household question, cloud access is acceptable and a qualified professional confirms the service, physical panel fit, CT kit and network plan.",
+          "stop": "Pause when panel suitability or sensor count is unknown, installation cannot be appropriately arranged, or direct local data access and detailed long-outage records are requirements.",
+          "keep": "Use existing utility interval charts or suitable existing metering when they already answer the question. The monitor does not itself guarantee lower bills."
+        },
+        "comparisonTable": {
+          "title": "Confirm the data job and the installation separately",
+          "columns": [
+            "Vue 3 documentation",
+            "Your decision"
+          ],
+          "rows": [
+            {
+              "label": "Network",
+              "values": [
+                "Ethernet or 2.4GHz Wi-Fi; wired LAN prioritized when both are configured",
+                "Plan a suitable connection before panel work"
+              ]
+            },
+            {
+              "label": "App data path",
+              "values": [
+                "Through the Emporia cloud; no direct local app read",
+                "Skip if a cloud-independent dashboard is required"
+              ]
+            },
+            {
+              "label": "Short outage",
+              "values": [
+                "About 15 minutes buffered under manufacturer guidance",
+                "Not a tested unlimited logging period"
+              ]
+            },
+            {
+              "label": "Long outage",
+              "values": [
+                "Averaged data; detail and accuracy guarantees differ",
+                "Do not rely on it for precise outage-event reconstruction"
+              ]
+            },
+            {
+              "label": "Sensor bundle",
+              "values": [
+                "Main-only, 8-branch or 16-branch options in the technical sheet",
+                "Verify the exact kit and accessible conductors with the installer"
+              ]
+            },
+            {
+              "label": "Simpler starting point",
+              "values": [
+                "Utility interval data needs no new panel monitor",
+                "Keep it when whole-home trends answer the job"
+              ]
+            }
+          ]
+        },
+        "sources": [
+          {
+            "name": "Current Vue 3 installation manual",
+            "url": "https://link.emporiaenergy.com/installation-guides/vue3",
+            "note": "Safety pages 2–4, network pages 11–13 and technical page 37; relevant text and selected rendered pages inspected. No installation performed."
+          },
+          {
+            "name": "Current Vue 3 technical sheet",
+            "url": "https://link.emporiaenergy.com/sell-sheets/vue3",
+            "note": "All four pages read; page 2 table visually checked. Bundle, service, network and dimensions are specifications, not proof of panel fit."
+          },
+          {
+            "name": "Emporia offline behavior",
+            "url": "https://help.emporiaenergy.com/en/articles/14809190-vue-offline-behavior",
+            "note": "Short buffering, averaged extended outages, accuracy limitation and lack of direct local data access; read alongside the Gen 3 Ethernet manual."
+          }
+        ],
+        "editorialMethod": [
+          "Current official manual, four-page technical sheet and offline-data article reviewed October 25, 2026. No electrical work or accuracy test performed.",
+          "Panel-specific approval, delivered sensor kit and seller availability remain separate checks. No savings forecast is made."
+        ],
+        "sections": [
+          {
+            "heading": "Name the decision the extra circuit data would change",
+            "body": "Start with a question, such as which circuit carries a recurring load or whether a schedule change alters a usage pattern. Check the utility's available interval chart first. If it already answers the question, no new panel monitor is needed. Extra data is useful only when someone will interpret it and act; the product does not establish a guaranteed saving or replace the utility's billing measurement."
+          },
+          {
+            "heading": "Arrange a panel assessment before choosing a kit",
+            "body": "Emporia says installation should be performed by a skilled person such as a licensed electrician or other qualified professional under the applicable electrical code. Turning off the main breaker does not establish that incoming service conductors are safe to touch. Have the professional check the exact service arrangement, available enclosure space and permitted installation using the current manual. This guide does not provide a wiring recipe."
+          },
+          {
+            "heading": "Count sensors and confirm physical access",
+            "body": "The current technical sheet offers main-only, eight-branch and sixteen-branch kit options. The number in a bundle is not a promise that the supplied clamps fit every conductor or that each desired circuit is accessible. Ask the installer to identify the required sensor types, available space and any additional manufacturer-approved equipment for the actual service. Solar and less common service arrangements need their own applicable documentation."
+          },
+          {
+            "heading": "Use Ethernet for connectivity, not as a local-data promise",
+            "body": "The Gen 3 manual documents wired LAN and 2.4GHz Wi-Fi, with wired LAN prioritized when both are configured. Plan that path before installation; a cable route into an electrical enclosure has its own requirements for the professional to assess. Ethernet can change the network connection, but it does not create a local dashboard or API. Emporia's app still uses the cloud, even when phone and monitor share a LAN."
+          },
+          {
+            "heading": "Read outage detail as a separate limitation",
+            "body": "Emporia describes detailed buffering for interruptions under roughly fifteen minutes. Longer interruptions are represented by averaged outage data and are not held to the same accuracy guarantees as live cloud-reported data. Continued measurement is not the same as a directly readable local record. If precise peaks during an extended outage are essential, this behavior does not meet that requirement; do not infer otherwise from the word buffer."
+          },
+          {
+            "heading": "Review the delivered plan before paying for installation",
+            "body": "Compare the exact sensor bundle, professional installation scope, network requirements and the data access you expect with the full cost. Leave any unconfirmed item open. For an existing working system, replace it only for a documented limitation that changes the household's use. Keep a record of what is monitored and how the data will be used, rather than treating more channels as automatically better."
+          }
+        ]
+      }
+    },
+    {
+      "key": "baby:baby-registry-essentials-guide",
+      "kind": "guide",
+      "beforeSha256": "cdc02237b65564310a26ed8b18c86166dec02c72855880fb048b5240a0916cd3",
+      "afterSha256": "1ff66706ac391bd969ae7d3088b287619ed607b14869cb535485b2247b6b21f3",
+      "before": {
+        "site": "baby",
+        "slug": "baby-registry-essentials-guide",
+        "updatedAt": "June 21, 2026",
+        "title": "Baby Registry Essentials Without the Clutter",
+        "dek": "A calmer way to separate daily-use gear from nice-to-have extras.",
+        "category": "sleep",
+        "relatedRoundups": [
+          "best-baby-monitors-for-apartments",
+          "best-travel-strollers",
+          "best-bottle-sterilizers-and-dryers",
+          "best-baby-carriers-and-sleep-routine-upgrades"
+        ],
+        "sections": [
+          {
+            "heading": "Buy for the first 90 days first",
+            "body": "Prioritize sleep, feeding, diapering, and safe transport before specialized accessories."
+          },
+          {
+            "heading": "Check cleaning effort",
+            "body": "Anything used daily should be easy to wash, dry, and reassemble while tired."
+          },
+          {
+            "heading": "Keep safety notes visible",
+            "body": "For sleep and travel gear, read age, weight, and use-position limits before comparing style or color."
+          }
+        ]
+      },
+      "after": {
+        "site": "baby",
+        "slug": "baby-registry-essentials-guide",
+        "updatedAt": "October 25, 2026",
+        "title": "Baby Registry Essentials: What to Prepare and What Can Wait",
+        "dek": "Plan sleep, feeding, diapering and transport for the first weeks. Check fit and cleaning needs, and defer gadgets until there is a specific household task.",
+        "category": "sleep",
+        "purchaseFlow": "task-links",
+        "searchQuestion": "What baby registry essentials do we need before birth?",
+        "quickAnswer": "Prepare a suitable sleep space, the supplies for your feeding plan, basic diapering and clothing, and an appropriate car seat if the baby will travel by car. Check exact instructions and recalls before accepting a product. A monitor, bottle warmer, washer or second stroller should answer a specific household need; none is the default first purchase for every family.",
+        "relatedRoundups": [
+          "best-baby-monitors-for-apartments",
+          "best-travel-strollers",
+          "best-bottle-sterilizers-and-dryers",
+          "best-baby-carriers-and-sleep-routine-upgrades"
+        ],
+        "comparisonTable": {
+          "title": "Prepare the task, then decide whether extra equipment helps",
+          "columns": [
+            "Prepare before it is needed",
+            "What can wait or needs another check"
+          ],
+          "rows": [
+            {
+              "label": "Sleep",
+              "values": [
+                "Suitable compliant sleep product, its approved mattress and fitted sheet",
+                "Decorative bedding, pillows, positioners and weighted sleep gear are not registry essentials"
+              ]
+            },
+            {
+              "label": "Feeding",
+              "values": [
+                "Supplies for the actual feeding plan and a way to clean, sanitize when indicated and dry parts",
+                "Large matching bottle sets or appliances before fit and the cleaning routine are known"
+              ]
+            },
+            {
+              "label": "Diapering",
+              "values": [
+                "Initial supplies, washable changes and a practical changing routine",
+                "Bulk sizing or a special bin before space and refill costs are checked"
+              ]
+            },
+            {
+              "label": "Car travel",
+              "values": [
+                "Appropriate seat, child/vehicle fit, manuals and an installation plan",
+                "Assuming a stroller bundle establishes car-seat compatibility or correct installation"
+              ]
+            },
+            {
+              "label": "Monitoring",
+              "values": [
+                "Decide who checks the baby and where",
+                "Camera, cloud plan or subscription without a defined use and privacy plan"
+              ]
+            },
+            {
+              "label": "Gifts",
+              "values": [
+                "Exact model/size where decided; otherwise flexible credit for later",
+                "Several expensive items that duplicate the same job"
+              ]
+            }
+          ]
+        },
+        "sources": [
+          {
+            "name": "CPSC safe-sleep guidance",
+            "url": "https://www.cpsc.gov/SafeSleep",
+            "note": "US sleep-product requirements, bare sleep space, back sleeping and recall checks. This does not verify any individual SKU or guarantee a sleep outcome."
+          },
+          {
+            "name": "NHTSA car-seat selection and installation",
+            "url": "https://www.nhtsa.gov/vehicle-safety/car-seats-and-booster-seats",
+            "note": "Choose for the child's age/size and vehicle, follow the exact seat and vehicle instructions, seek installation help and register for safety notices."
+          },
+          {
+            "name": "CDC cleaning and sanitizing infant feeding items",
+            "url": "https://www.cdc.gov/hygiene/about/clean-sanitize-store-infant-feeding-items.html",
+            "note": "Cleaning after feeds, sanitizing indications, supported dishwasher methods and complete air drying. No single appliance is required by this guide."
+          }
+        ],
+        "editorialMethod": [
+          "Relevant US CPSC, NHTSA and CDC guidance reviewed October 25, 2026. This is a planning checklist, not a product safety certification or individual feeding plan.",
+          "No single retailer product is selected by default. Use the related topic guides only after identifying a household need; exact models, recalls and current offers require separate checks."
+        ],
+        "sections": [
+          {
+            "heading": "Build the first-weeks list around actual routines",
+            "body": "Write down where the baby will sleep, how feeding supplies will be prepared and cleaned, where changes happen and how the baby will travel home and to appointments. Add the exact item only after the task is clear. Start with supplies that suit the household's plan and can be replenished, rather than guessing one large quantity or committing every gift to a matching equipment system. Keep space and help with daily tasks in the plan too."
+          },
+          {
+            "heading": "Keep the sleep space simple",
+            "body": "For US households, CPSC recommends sleep products intended for the job that meet federal requirements, a bare sleep space with a fitted sheet and placing the baby on their back. Do not add pillows, loose blankets, positioners or weighted sleep products to make the registry look complete. A swing, rocker or other seated product is not a substitute sleep space. Read the exact product's instructions and check recalls; this page does not certify a particular model."
+          },
+          {
+            "heading": "Prepare cleaning before buying a feeding appliance",
+            "body": "Match initial supplies to the feeding plan and the exact parts' cleaning instructions. CDC distinguishes cleaning after feeds from sanitizing, with extra importance for babies under two months, premature babies and those with weakened immune systems. It also describes suitable hot-water dishwasher and heated-dry or sanitizing cycles that remove the need for a separate sanitizing step. Check item compatibility and any individual care guidance. A countertop washer or sterilizer is an optional way to organize that routine, not a universal registry requirement."
+          },
+          {
+            "heading": "Check the child, seat and vehicle together",
+            "body": "If the baby will travel by car, choose the appropriate seat for the child's age and size and confirm fit in the actual vehicle. Follow both the seat and vehicle manuals; a product bundle or matching brand does not establish the installation. NHTSA provides selection tools, installation help and an inspection-station route. Register the chosen seat for safety notices. Do not treat a registry checklist or retailer star rating as an installation approval."
+          },
+          {
+            "heading": "Buy optional equipment for a named job",
+            "body": "A monitor may help a caregiver see or hear from a particular room; choose it only after deciding coverage, who has access and whether cloud service is wanted. A warmer, drying machine or specialized bin should solve a specific preparation, cleaning or space problem. Price consumables and ongoing service separately. If the existing routine already works, defer the equipment; related guides are routes for investigating those tasks, not a list every household must complete."
+          },
+          {
+            "heading": "Give gifts room to adapt",
+            "body": "Where a model or size has been decided, list it precisely so a gift does not arrive as an incompatible substitute. Where fit or the daily routine is still unknown, flexible credit can be more useful than several duplicate devices. Keep instructions and purchase information, check current recall notices for accepted products and revisit limits as the child grows. Review the remaining list after real needs become clear instead of buying every item before birth."
+          }
+        ]
+      }
+    },
+    {
+      "key": "smarthome:meross-msg100-homekit-garage-door-opener",
+      "kind": "product",
+      "beforeSha256": "3e625d903aa6f77ca6163b7dc5ca13837bedac7b5c539aba026a7d423fc4e810",
+      "afterSha256": "8f318d1c822022d82b7498ed919b6f8d3afa479ae8c489d4e03b660cae3900a9",
+      "before": {
+        "site": "smarthome",
+        "slug": "meross-msg100-homekit-garage-door-opener",
+        "asin": "B084Z5QZR2",
+        "amazonTitle": "meross Smart Wi-Fi Garage Door Opener MSG100 HomeKit",
+        "seoTitle": "Meross MSG100 Guide: Compatibility, Hub & Offline Use",
+        "name": "Meross MSG100 HomeKit Garage Door Opener",
+        "brand": "Meross",
+        "category": "automation",
+        "image": "/images/affiliate/smarthome-second-round-editorial.webp",
+        "imageAlt": "Editorial smart-home utility scene with an unbranded garage controller, blind motor, and energy sensors",
+        "summary": "A retrofit controller for one compatible garage-door opener, with 2.4GHz Wi-Fi, HomeKit, Alexa, Google Home, and SmartThings support but a required opener-compatibility check.",
+        "verdict": "Choose MSG100 when one existing opener passes Meross's compatibility test and the household wants app or voice access without a separate Meross hub. Skip it when the opener needs an unavailable accessory or local-only automation is the main requirement.",
+        "bestFor": "One compatible garage door in an established HomeKit or voice-control home",
+        "pros": [
+          "No separate Meross hub is required",
+          "Supports major voice ecosystems",
+          "Existing wall button and remotes remain the physical fallback"
+        ],
+        "cons": [
+          "Compatibility must be checked by opener model",
+          "Remote and app features depend on the home network",
+          "Some opener families need an extra accessory"
+        ],
+        "specs": {
+          "ASIN": "B084Z5QZR2",
+          "Model": "MSG100HK",
+          "Network": "2.4GHz Wi-Fi",
+          "Hub": "No Meross hub required",
+          "Door": "One garage door",
+          "Platforms": "Apple Home, Alexa, Google Home, SmartThings"
+        },
+        "evidence": [
+          "Run the official compatibility check with the opener brand and model",
+          "Confirm whether Meross specifies an accessory for the exact opener",
+          "Verify 2.4GHz Wi-Fi at the ceiling unit",
+          "Keep the wall control and original remotes available for network outages"
+        ],
+        "alternatives": [
+          "Use the MSG200 family when two or three doors need one controller after a separate compatibility check.",
+          "Keep the existing opener unchanged when physical remotes already solve the job."
+        ],
+        "sources": [
+          {
+            "name": "Meross MSG100",
+            "url": "https://www.meross.com/en-gc/product-detail/Smart%20Wi-Fi%20Garage%20Door%20Opener/29",
+            "note": "Official platform, network, door-count, and installation information."
+          },
+          {
+            "name": "Meross compatibility FAQ",
+            "url": "https://www.meross.com/en-gc/support/FAQ/79.html",
+            "note": "Official opener compatibility and accessory path."
+          },
+          {
+            "name": "Amazon B084Z5QZR2",
+            "url": "https://www.amazon.com/dp/B084Z5QZR2",
+            "note": "Exact US HomeKit MSG100 listing identity."
+          }
+        ],
+        "updatedAt": "August 8, 2026",
+        "evidenceMode": "official-spec",
+        "researchNote": "We have not tested this product ourselves. This buying note uses current manufacturer documentation and exact-listing identity checks; confirm the selected model, seller, bundle, current terms, and return window before checkout.",
+        "amazonDetailUrl": "https://www.amazon.com/dp/B084Z5QZR2",
+        "whyItMatters": "Choose MSG100 when one existing opener passes Meross's compatibility test and the household wants app or voice access without a separate Meross hub. Skip it when the opener needs an unavailable accessory or local-only automation is the main requirement.",
+        "priceBand": "$$",
+        "rating": 0,
+        "scores": [
+          {
+            "label": "Decision clarity",
+            "value": 9
+          },
+          {
+            "label": "Setup fit",
+            "value": 8
+          },
+          {
+            "label": "Ongoing ownership",
+            "value": 8
+          }
+        ],
+        "editorialSections": [
+          {
+            "heading": "Compatibility comes before platform badges",
+            "body": "MSG100 closes a dry-contact control path, but garage opener wiring and security interfaces vary. Use Meross's compatibility tool and accessory guidance for the exact opener model before ordering."
+          },
+          {
+            "heading": "No hub does not mean no infrastructure",
+            "body": "The controller joins 2.4GHz Wi-Fi directly. HomeKit remote access still relies on the buyer's Apple home infrastructure, while Alexa, Google, SmartThings, and Meross remote control depend on their normal network and cloud paths."
+          },
+          {
+            "heading": "What still works when the internet is down",
+            "body": "Do not promise remote or app control during an outage. The existing wall button and compatible original remotes remain the practical physical fallback, so they should never be removed from the household plan."
+          },
+          {
+            "heading": "Who should skip it",
+            "body": "Skip when compatibility is unresolved, the garage lacks reliable Wi-Fi, more than one door needs control, or the household requires a documented fully local automation path."
+          }
+        ],
+        "offers": [
+          {
+            "merchant": "Amazon US",
+            "url": "https://www.amazon.com/dp/B084Z5QZR2?tag=madasmart-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+            "label": "Check Meross MSG100 HomeKit Garage Door Opener on Amazon",
+            "priceNote": "Confirm ASIN B084Z5QZR2, exact model, seller, included parts, live price, and availability."
+          }
+        ]
+      },
+      "after": {
+        "site": "smarthome",
+        "slug": "meross-msg100-homekit-garage-door-opener",
+        "updatedAt": "October 25, 2026",
+        "researchNote": "Manufacturer compatibility, accessory and Apple home-hub guidance reviewed October 25, 2026. We have not installed or tested this controller. The US ASIN remains the historical listing reference; today's variant, seller, stock and accessory eligibility have not been established by this documentation review.",
+        "asin": "B084Z5QZR2",
+        "amazonTitle": "meross Smart Wi-Fi Garage Door Opener MSG100 HomeKit",
+        "seoTitle": "Meross MSG100 Guide: Compatibility, Hub & Offline Use",
+        "name": "Meross MSG100 HomeKit Garage Door Opener",
+        "brand": "Meross",
+        "category": "automation",
+        "image": "/images/affiliate/smarthome-second-round-editorial.webp",
+        "imageAlt": "Editorial smart-home utility scene with an unbranded garage controller, blind motor, and energy sensors",
+        "summary": "A one-door Wi-Fi retrofit reference whose MSG100HK version adds Apple Home support. The opener interface, exact HomeKit variant and any required regional accessory must be confirmed separately.",
+        "verdict": "Consider MSG100HK after the exact opener passes Meross's compatibility check and any required accessory is confirmed. It uses no separate Meross hub, while Apple remote access needs a supported home hub. Keep the original controls when they already meet the job; do not buy through an unresolved compatibility result.",
+        "bestFor": "One compatible garage door in an established HomeKit or voice-control home",
+        "pros": [
+          "No separate Meross hub is required",
+          "Supports major voice ecosystems",
+          "Existing wall button and remotes remain the physical fallback"
+        ],
+        "cons": [
+          "Compatibility must be checked by opener model",
+          "Remote and app features depend on the home network",
+          "Some opener families need an extra accessory"
+        ],
+        "specs": {
+          "ASIN": "B084Z5QZR2",
+          "Model": "MSG100HK",
+          "Network": "2.4GHz Wi-Fi",
+          "Hub": "No Meross hub required",
+          "Door": "One garage door",
+          "Platforms": "Apple Home, Alexa, Google Home, SmartThings"
+        },
+        "evidence": [
+          "Run the official compatibility check with the opener brand and model",
+          "Confirm whether Meross specifies an accessory for the exact opener",
+          "Verify 2.4GHz Wi-Fi at the ceiling unit",
+          "Keep the wall control and original remotes available for network outages"
+        ],
+        "alternatives": [
+          "Use the MSG200 family when two or three doors need one controller after a separate compatibility check.",
+          "Keep the existing opener unchanged when physical remotes already solve the job."
+        ],
+        "sources": [
+          {
+            "name": "Meross MSG100 current manufacturer listing",
+            "url": "https://shop.meross.com/collections/smart-garage-door-opener/products/smart-wifi-garage-door-opener",
+            "note": "Manufacturer network specifications and advertised in-LAN app control during an internet outage. This is not our own outage test or proof of every automation path."
+          },
+          {
+            "name": "Meross opener compatibility checker",
+            "url": "https://www.meross.com/en-gc/compatibility-check/garage-door-opener",
+            "note": "MSG100/100HK/200/200HK scope and warning against uncertain terminal testing; MSG150 has a different document."
+          },
+          {
+            "name": "Meross accessory eligibility FAQ",
+            "url": "https://www.meross.com/en-gc/faq/79.html",
+            "note": "Accessory model, US/CA/MX region and order/warranty conditions; not an unconditional free-accessory promise."
+          },
+          {
+            "name": "Apple home-hub requirements",
+            "url": "https://support.apple.com/en-us/102557",
+            "note": "Supported home-hub setup for remote access; this is separate from the Meross device's Wi-Fi connection."
+          },
+          {
+            "name": "Meross MSG150 scope",
+            "url": "https://shop.meross.com/products/smart-wifi-garage-door-opener-msg150",
+            "note": "Current manufacturer comparison points other opener brands toward MSG100HK; no universal replacement is inferred."
+          },
+          {
+            "name": "Historical US ASIN B084Z5QZR2",
+            "url": "https://www.amazon.com/dp/B084Z5QZR2",
+            "note": "Existing listing reference, not a new seller, stock or included-accessory verification."
+          }
+        ],
+        "evidenceMode": "official-spec",
+        "amazonDetailUrl": "https://www.amazon.com/dp/B084Z5QZR2",
+        "whyItMatters": "Consider MSG100HK after the exact opener passes Meross's compatibility check and any required accessory is confirmed. It uses no separate Meross hub, while Apple remote access needs a supported home hub. Keep the original controls when they already meet the job; do not buy through an unresolved compatibility result.",
+        "priceBand": "$$",
+        "rating": 0,
+        "scores": [
+          {
+            "label": "Decision clarity",
+            "value": 9
+          },
+          {
+            "label": "Setup fit",
+            "value": 8
+          },
+          {
+            "label": "Ongoing ownership",
+            "value": 8
+          }
+        ],
+        "editorialSections": [
+          {
+            "heading": "Compatibility comes before platform badges",
+            "body": "Use Meross's MSG100/MSG100HK compatibility checker with the opener's complete brand and model. Some security interfaces need an accessory; a universal two-wire assumption is not enough. The manufacturer warns against its terminal test when the correct terminals are uncertain. Ask Meross or an appropriate installer instead of improvising wiring or bypassing safety sensors."
+          },
+          {
+            "heading": "Check the HomeKit variant and Apple hub separately",
+            "body": "MSG100 and MSG100HK are distinct purchasing identities. Confirm the selected HK version if Apple Home is required. The controller connects by 2.4GHz Wi-Fi without a Meross hub; Apple's current documentation requires a home hub for remote accessory access. A HomeKit label is not a Matter or Thread specification. This review does not establish which bundle an Amazon seller will supply."
+          },
+          {
+            "heading": "Make a realistic outage plan",
+            "body": "Meross's current store page advertises Meross app control within the home network when the internet is down. That requires a working local network and the supported app/device path; it does not establish remote control or operation without power. Verify the exact firmware and intended function before relying on it. Retain the original wall control and remotes, and check them under the opener's instructions. No outage behavior has been physically tested for this article."
+          },
+          {
+            "heading": "Who should skip it",
+            "body": "Hold the purchase when the opener or accessory remains unconfirmed, Wi-Fi coverage is inadequate, or the required automation path has no supporting documentation. Meross's newer MSG150 is aimed at Chamberlain, LiftMaster and Craftsman and has a separate compatibility document; it is not a universal successor for other brands. Keep the opener unchanged if existing controls already meet the household's needs."
+          }
+        ],
+        "offers": [
+          {
+            "merchant": "Amazon US",
+            "url": "https://www.amazon.com/dp/B084Z5QZR2?tag=madasmart-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+            "label": "Check Meross MSG100 HomeKit Garage Door Opener on Amazon",
+            "priceNote": "Confirm ASIN B084Z5QZR2, exact model, seller, included parts, live price, and availability."
+          }
+        ]
+      }
+    },
+    {
+      "key": "smarthome:switchbot-blind-tilt",
+      "kind": "product",
+      "beforeSha256": "52ae4f12626e69697eb59c4104494e54eafb76a0d8041cee9a711099b4eb3d9b",
+      "afterSha256": "63c8f5f782288e84e315843b24f1bbb3ee16c3865a8d7fc1ad6eea4651d1e48b",
+      "before": {
+        "site": "smarthome",
+        "slug": "switchbot-blind-tilt",
+        "asin": "B0BMLFZ4CP",
+        "amazonTitle": "SwitchBot Blind Tilt Motorized Blinds Controller",
+        "seoTitle": "SwitchBot Blind Tilt Guide: Hub, Matter & Offline Use",
+        "name": "SwitchBot Blind Tilt",
+        "brand": "SwitchBot",
+        "category": "automation",
+        "image": "/images/affiliate/smarthome-second-round-editorial.webp",
+        "imageAlt": "Editorial smart-home utility scene with a blind-tilt motor on horizontal blinds",
+        "summary": "A solar-assisted retrofit motor for horizontal blinds with a tilt wand, using nearby Bluetooth by itself and a SwitchBot Hub for remote, voice, or Matter integrations.",
+        "verdict": "Blind Tilt is useful when the existing horizontal blind and wand fit its mechanism and nearby Bluetooth schedules are enough. Budget for Hub 2 when Matter, Apple Home, remote access, or broader ecosystem control is part of the goal.",
+        "bestFor": "Existing horizontal blinds with a tilt wand that should open on a schedule",
+        "pros": [
+          "Retrofits the tilt wand without replacing the blind",
+          "Nearby Bluetooth control does not require a hub",
+          "Manual wand movement remains available"
+        ],
+        "cons": [
+          "Not for roller or vertical blinds",
+          "Remote and voice control need a compatible SwitchBot Hub",
+          "Matter and Apple Home require the correct Hub 2 path"
+        ],
+        "specs": {
+          "ASIN": "B0BMLFZ4CP",
+          "Connection": "Bluetooth; Wi-Fi through SwitchBot Hub",
+          "Hub": "Optional for nearby use; required for remote and ecosystem control",
+          "Matter": "Via SwitchBot Hub 2",
+          "Blind": "Horizontal blind with tilt wand",
+          "Power": "Rechargeable motor with solar panel"
+        },
+        "evidence": [
+          "Confirm horizontal-blind and tilt-wand geometry",
+          "Choose standalone Bluetooth or Hub 2 before buying",
+          "Test manual wand movement after calibration",
+          "Do not equate cloud offline-control features for other SwitchBot products with Blind Tilt support"
+        ],
+        "alternatives": [
+          "Use a purpose-built roller-shade motor for bead-chain or roller mechanisms.",
+          "Replace the blind only when lift, tilt, and fabric all need changing together."
+        ],
+        "sources": [
+          {
+            "name": "SwitchBot Blind Tilt",
+            "url": "https://us.switch-bot.com/products/switchbot-blind-tilt",
+            "note": "Official fit, Bluetooth, hub, voice, Matter, and HomeKit information."
+          },
+          {
+            "name": "SwitchBot Hub guide",
+            "url": "https://support.switch-bot.com/hc/en-us/articles/7257579858455-Learn-More-About-SwitchBot-Hub",
+            "note": "Official local, cloud, and remote-control path explanation."
+          },
+          {
+            "name": "Amazon B0BMLFZ4CP",
+            "url": "https://www.amazon.com/dp/B0BMLFZ4CP",
+            "note": "Exact US single Blind Tilt listing identity."
+          }
+        ],
+        "updatedAt": "August 8, 2026",
+        "evidenceMode": "official-spec",
+        "researchNote": "We have not tested this product ourselves. This buying note uses current manufacturer documentation and exact-listing identity checks; confirm the selected model, seller, bundle, current terms, and return window before checkout.",
+        "amazonDetailUrl": "https://www.amazon.com/dp/B0BMLFZ4CP",
+        "whyItMatters": "Blind Tilt is useful when the existing horizontal blind and wand fit its mechanism and nearby Bluetooth schedules are enough. Budget for Hub 2 when Matter, Apple Home, remote access, or broader ecosystem control is part of the goal.",
+        "priceBand": "$$",
+        "rating": 0,
+        "scores": [
+          {
+            "label": "Decision clarity",
+            "value": 9
+          },
+          {
+            "label": "Setup fit",
+            "value": 8
+          },
+          {
+            "label": "Ongoing ownership",
+            "value": 8
+          }
+        ],
+        "editorialSections": [
+          {
+            "heading": "The blind mechanism is the first gate",
+            "body": "Blind Tilt rotates a compatible horizontal-blind wand. It does not convert roller shades, vertical blinds, cord loops, or damaged tilt mechanisms into a compatible system."
+          },
+          {
+            "heading": "A hub changes the control model",
+            "body": "Nearby phone control can use Bluetooth. Remote access and voice integrations use a SwitchBot Hub, while Matter and Apple Home integration require the supported Hub 2 route. Buy the hub only for a control path the household will use."
+          },
+          {
+            "heading": "Offline fallback is local and manual",
+            "body": "Manual wand rotation remains the most dependable fallback. Nearby Bluetooth and saved schedules may still be useful, but remote and cloud-dependent commands should be treated as unavailable when the network path fails."
+          },
+          {
+            "heading": "Who should skip it",
+            "body": "Skip if the blind has no compatible wand, slats bind, remote control without a hub is expected, or the household wants full shade lifting rather than tilt control."
+          }
+        ],
+        "offers": [
+          {
+            "merchant": "Amazon US",
+            "url": "https://www.amazon.com/dp/B0BMLFZ4CP?tag=madasmart-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+            "label": "Check SwitchBot Blind Tilt on Amazon",
+            "priceNote": "Confirm ASIN B0BMLFZ4CP, exact model, seller, included parts, live price, and availability."
+          }
+        ]
+      },
+      "after": {
+        "site": "smarthome",
+        "slug": "switchbot-blind-tilt",
+        "updatedAt": "October 25, 2026",
+        "researchNote": "Manufacturer fit, current Matter bridge support and manual-operation guidance reviewed October 25, 2026. We have not installed or tested the motor. The existing US ASIN is a historical single-motor reference; current seller, included hub, quantity and availability need a separate offer check.",
+        "asin": "B0BMLFZ4CP",
+        "amazonTitle": "SwitchBot Blind Tilt Motorized Blinds Controller",
+        "seoTitle": "SwitchBot Blind Tilt Guide: Hub, Matter & Offline Use",
+        "name": "SwitchBot Blind Tilt",
+        "brand": "SwitchBot",
+        "category": "automation",
+        "image": "/images/affiliate/smarthome-second-round-editorial.webp",
+        "imageAlt": "Editorial smart-home utility scene with a blind-tilt motor on horizontal blinds",
+        "summary": "A solar-assisted retrofit motor for horizontal blinds with a tilt wand, using nearby Bluetooth by itself and a SwitchBot Hub for remote, voice, or Matter integrations.",
+        "verdict": "Consider Blind Tilt for a compatible horizontal-blind tilt wand when tilt control solves the job. Nearby Bluetooth needs no hub. For Apple Home through Matter, check a supported bridge such as Hub 2, Hub Mini Matter Enabled or Hub 3, its firmware and available device slots. Keep an existing compatible bridge instead of buying another by default.",
+        "bestFor": "Existing horizontal blinds with a tilt wand that should open on a schedule",
+        "pros": [
+          "Retrofits the tilt wand without replacing the blind",
+          "Nearby Bluetooth control does not require a hub",
+          "Manual wand movement remains available"
+        ],
+        "cons": [
+          "Not for roller or vertical blinds, or for lifting the blind",
+          "Remote and ecosystem functions require the documented bridge path",
+          "Plain Hub Mini lacks Matter; firmware and bridge slots need checking"
+        ],
+        "specs": {
+          "ASIN": "B0BMLFZ4CP",
+          "Connection": "Bluetooth; network integration through a supported bridge",
+          "Hub": "Not required for nearby Bluetooth",
+          "Matter": "Supported bridge, including Hub 2 / Hub Mini Matter Enabled / Hub 3",
+          "Blind": "Compatible horizontal blind with tilt wand",
+          "Power": "Rechargeable motor; verify the selected solar-panel bundle"
+        },
+        "evidence": [
+          "Confirm the horizontal-blind mechanism and wand fit",
+          "Separate nearby Bluetooth from the required remote or Matter route",
+          "Check exact bridge model, firmware and remaining sub-device slots",
+          "Verify manual operation using the motor's instructions; no physical test is claimed here"
+        ],
+        "alternatives": [
+          "Use a purpose-built roller-shade motor for bead-chain or roller mechanisms.",
+          "Replace the blind only when lift, tilt, and fabric all need changing together."
+        ],
+        "sources": [
+          {
+            "name": "SwitchBot Blind Tilt",
+            "url": "https://us.switch-bot.com/products/switchbot-blind-tilt",
+            "note": "Official fit, Bluetooth, hub, voice, Matter, and HomeKit information."
+          },
+          {
+            "name": "SwitchBot bridge comparison",
+            "url": "https://support.switch-bot.com/hc/en-us/articles/13569889726743-Differences-Between-Hub-Mini-Hub-2-Hub-Mini-Matter-Enabled-and-Hub-3",
+            "note": "Plain Hub Mini versus Matter-enabled bridges; device slots and infrared offline features have separate scopes."
+          },
+          {
+            "name": "Blind Tilt in the Matter sub-device table",
+            "url": "https://support.switch-bot.com/hc/en-us/articles/13282638111127-Which-SwitchBot-Devices-Can-Be-Added-to-Apple-Home-As-Sub-devices-via-Matter",
+            "note": "Current supported bridges, Blind Tilt actions and firmware notes; not proof of every platform feature or offline trigger."
+          },
+          {
+            "name": "Blind Tilt supported mechanisms",
+            "url": "https://support.switch-bot.com/hc/en-us/articles/11696634725783-What-types-of-blinds-does-Blind-Tilt-support",
+            "note": "Horizontal blinds with a pole and the documented diameter ranges; no individual fit test."
+          },
+          {
+            "name": "Manual pole rotation",
+            "url": "https://support.switch-bot.com/hc/en-us/articles/12004451785239-After-installing-the-Blind-Tilt-is-it-possible-to-rotate-the-pole-manually",
+            "note": "Manufacturer's manual-operation statement; not our own physical test."
+          },
+          {
+            "name": "Historical US ASIN B0BMLFZ4CP",
+            "url": "https://www.amazon.com/dp/B0BMLFZ4CP",
+            "note": "Existing single-motor listing reference; recheck included hub, quantity, seller and stock."
+          }
+        ],
+        "evidenceMode": "official-spec",
+        "amazonDetailUrl": "https://www.amazon.com/dp/B0BMLFZ4CP",
+        "whyItMatters": "Consider Blind Tilt for a compatible horizontal-blind tilt wand when tilt control solves the job. Nearby Bluetooth needs no hub. For Apple Home through Matter, check a supported bridge such as Hub 2, Hub Mini Matter Enabled or Hub 3, its firmware and available device slots. Keep an existing compatible bridge instead of buying another by default.",
+        "priceBand": "$$",
+        "rating": 0,
+        "scores": [
+          {
+            "label": "Decision clarity",
+            "value": 9
+          },
+          {
+            "label": "Setup fit",
+            "value": 8
+          },
+          {
+            "label": "Ongoing ownership",
+            "value": 8
+          }
+        ],
+        "editorialSections": [
+          {
+            "heading": "The blind mechanism is the first gate",
+            "body": "Blind Tilt rotates a compatible horizontal-blind wand. It does not convert roller shades, vertical blinds, cord loops, or damaged tilt mechanisms into a compatible system."
+          },
+          {
+            "heading": "Check a current bridge rather than a Hub 2-only rule",
+            "body": "SwitchBot's current support table includes Blind Tilt through compatible Matter bridges, including Hub 2, Hub Mini Matter Enabled and Hub 3. Plain Hub Mini does not have Matter. Confirm the exact bridge, firmware, exposed actions and remaining slots; a bridge does not turn the Blind Tilt radio into Thread. The guide below explains why buying a second hub may be unnecessary."
+          },
+          {
+            "heading": "Test the specific fallback you need",
+            "body": "The manufacturer documents manual wand rotation, while nearby phone control uses Bluetooth. Those are different from an internet command, a scheduled action or a platform automation. A hub's infrared offline feature does not establish Blind Tilt behavior. After installation, verify the intended fallback under its instructions and keep a usable manual route; no outage or physical-fit test has been performed for this page."
+          },
+          {
+            "heading": "Who should skip it",
+            "body": "Skip if the blind has no compatible wand, slats bind, remote control without a hub is expected, or the household wants full shade lifting rather than tilt control."
+          }
+        ],
+        "offers": [
+          {
+            "merchant": "Amazon US",
+            "url": "https://www.amazon.com/dp/B0BMLFZ4CP?tag=madasmart-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+            "label": "Check SwitchBot Blind Tilt on Amazon",
+            "priceNote": "Confirm ASIN B0BMLFZ4CP, exact model, seller, included parts, live price, and availability."
+          }
+        ]
+      }
+    },
+    {
+      "key": "smarthome:emporia-vue-3-home-energy-monitor",
+      "kind": "product",
+      "beforeSha256": "21ceb966c9fc7be5e968259651bda510f40705e70b29b42dfab174e8ba38f176",
+      "afterSha256": "cb4562f8fd0bbe72a4c4d8c7fde3f0ccb0d57f75dc29a18c563bf75ed1efc38e",
+      "before": {
+        "site": "smarthome",
+        "slug": "emporia-vue-3-home-energy-monitor",
+        "asin": "B0C79PNK84",
+        "amazonTitle": "Emporia Vue 3 Home Energy Monitor",
+        "seoTitle": "Emporia Vue 3 Guide: Panel Fit, Cloud & Offline Data",
+        "name": "Emporia Vue 3 Home Energy Monitor",
+        "brand": "Emporia",
+        "category": "climate",
+        "image": "/images/affiliate/smarthome-second-round-editorial.webp",
+        "imageAlt": "Editorial smart-home utility scene with clamp-style energy sensors beside a closed electrical panel",
+        "summary": "A circuit-level electrical-panel monitor with clamp sensors, Wi-Fi or Ethernet connectivity, cloud dashboards, and strict panel, installation, and offline-data trade-offs.",
+        "verdict": "Vue 3 is a strong fit when circuit-level trends justify professional panel work and cloud access is acceptable. It is not a local-first energy monitor: the device keeps measuring during outages, but the app cannot read it directly without the cloud.",
+        "bestFor": "Homeowners who want circuit-level usage trends and accept cloud dashboards",
+        "pros": [
+          "Circuit clamps show more detail than a utility bill",
+          "Wi-Fi or Ethernet connectivity",
+          "Short outages are buffered before upload"
+        ],
+        "cons": [
+          "Electrical-panel installation has shock and arc-flash risk",
+          "No direct local dashboard",
+          "Longer outages lose fine-grained resolution"
+        ],
+        "specs": {
+          "ASIN": "B0C79PNK84",
+          "Model": "Vue Gen 3",
+          "Installation": "Inside a compatible electrical panel",
+          "Sensors": "Main and branch-circuit CT clamps by bundle",
+          "Network": "Wi-Fi or Ethernet",
+          "LocalData": "No direct local data access"
+        },
+        "evidence": [
+          "Have a qualified electrician assess the panel and local rules",
+          "Confirm service type, panel space, conductor access, and clamp count",
+          "Choose Wi-Fi or Ethernet before installation",
+          "Accept cloud dependence and outage averaging before purchase"
+        ],
+        "alternatives": [
+          "Use utility-provided interval data when whole-home trends are enough.",
+          "Choose a documented local-first monitor when cloud independence is a hard requirement."
+        ],
+        "sources": [
+          {
+            "name": "Emporia Vue 3 technical specifications",
+            "url": "https://www.emporiaenergy.com/wp-content/uploads/2024/03/Emporia-Vue-Gen-3-Technical-Specs.pdf",
+            "note": "Official service, sensor, network, and environmental specifications."
+          },
+          {
+            "name": "Emporia Vue 3 installation guide",
+            "url": "https://cdn.emporiaenergy.com/products/vue3/Vue3-Installation-Guide-EN-110525.pdf",
+            "note": "Official electrical and panel installation requirements."
+          },
+          {
+            "name": "Emporia offline behavior",
+            "url": "https://help.emporiaenergy.com/en/articles/14809190-vue-offline-behavior",
+            "note": "Official buffering, averaging, cloud, and local-access limits."
+          },
+          {
+            "name": "Amazon B0C79PNK84",
+            "url": "https://www.amazon.com/dp/B0C79PNK84",
+            "note": "Exact US Vue 3 listing identity."
+          }
+        ],
+        "updatedAt": "August 8, 2026",
+        "evidenceMode": "official-spec",
+        "researchNote": "We have not tested this product ourselves. This buying note uses current manufacturer documentation and exact-listing identity checks; confirm the selected model, seller, bundle, current terms, and return window before checkout.",
+        "amazonDetailUrl": "https://www.amazon.com/dp/B0C79PNK84",
+        "whyItMatters": "Vue 3 is a strong fit when circuit-level trends justify professional panel work and cloud access is acceptable. It is not a local-first energy monitor: the device keeps measuring during outages, but the app cannot read it directly without the cloud.",
+        "priceBand": "$$",
+        "rating": 0,
+        "scores": [
+          {
+            "label": "Decision clarity",
+            "value": 9
+          },
+          {
+            "label": "Setup fit",
+            "value": 8
+          },
+          {
+            "label": "Ongoing ownership",
+            "value": 8
+          }
+        ],
+        "editorialSections": [
+          {
+            "heading": "Panel safety is a stop gate",
+            "body": "The product installs around energized service and branch conductors. Follow the current installation guide and use a qualified electrician when required or whenever the panel cannot be made and verified safe."
+          },
+          {
+            "heading": "Count the circuits and physical space",
+            "body": "Service configuration, conductor diameter, clamp bundle, panel fill, cable routing, and Ethernet access determine fit. A compatible electrical service does not guarantee enough physical room."
+          },
+          {
+            "heading": "It measures offline but does not become local-first",
+            "body": "Emporia documents short-outage buffering and averaged data for longer outages. The app still depends on the Emporia cloud and does not read the Vue directly from the local network."
+          },
+          {
+            "heading": "Who should skip it",
+            "body": "Skip if panel work is not acceptable, a direct local API or dashboard is required, or whole-home utility data already answers the buyer's only question."
+          }
+        ],
+        "offers": [
+          {
+            "merchant": "Amazon US",
+            "url": "https://www.amazon.com/dp/B0C79PNK84?tag=madasmart-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+            "label": "Check Emporia Vue 3 Home Energy Monitor on Amazon",
+            "priceNote": "Confirm ASIN B0C79PNK84, exact model, seller, included parts, live price, and availability."
+          }
+        ]
+      },
+      "after": {
+        "site": "smarthome",
+        "slug": "emporia-vue-3-home-energy-monitor",
+        "updatedAt": "October 25, 2026",
+        "researchNote": "Current manufacturer Vue 3 installation, technical and offline-data documentation reviewed October 25, 2026. Relevant manual pages and specification tables were inspected; we have not installed the unit or tested its accuracy. The existing US ASIN does not verify today's seller, sensor bundle or availability.",
+        "asin": "B0C79PNK84",
+        "amazonTitle": "Emporia Vue 3 Home Energy Monitor",
+        "seoTitle": "Emporia Vue 3 Guide: Panel Fit, Cloud & Offline Data",
+        "name": "Emporia Vue 3 Home Energy Monitor",
+        "brand": "Emporia",
+        "category": "climate",
+        "image": "/images/affiliate/smarthome-second-round-editorial.webp",
+        "imageAlt": "Editorial smart-home utility scene with clamp-style energy sensors beside a closed electrical panel",
+        "summary": "A circuit-level electrical-panel monitor with clamp sensors, Wi-Fi or Ethernet connectivity, cloud dashboards, and strict panel, installation, and offline-data trade-offs.",
+        "verdict": "Vue 3 is a strong fit when circuit-level trends justify professional panel work and cloud access is acceptable. It is not a local-first energy monitor: the device keeps measuring during outages, but the app cannot read it directly without the cloud.",
+        "bestFor": "Homeowners who want circuit-level usage trends and accept cloud dashboards",
+        "pros": [
+          "Circuit clamps show more detail than a utility bill",
+          "Wi-Fi or Ethernet connectivity",
+          "Short outages are buffered before upload"
+        ],
+        "cons": [
+          "Electrical-panel installation has shock and arc-flash risk",
+          "No direct local dashboard",
+          "Longer outages lose fine-grained resolution"
+        ],
+        "specs": {
+          "ASIN": "B0C79PNK84",
+          "Model": "Vue Gen 3",
+          "Installation": "Inside a compatible electrical panel",
+          "Sensors": "Main and branch-circuit CT clamps by bundle",
+          "Network": "Wi-Fi or Ethernet",
+          "LocalData": "No direct local data access"
+        },
+        "evidence": [
+          "Have a qualified electrician assess the panel and local rules",
+          "Confirm service type, panel space, conductor access, and clamp count",
+          "Choose Wi-Fi or Ethernet before installation",
+          "Accept cloud dependence and outage averaging before purchase"
+        ],
+        "alternatives": [
+          "Use utility-provided interval data when whole-home trends are enough.",
+          "Choose a documented local-first monitor when cloud independence is a hard requirement."
+        ],
+        "sources": [
+          {
+            "name": "Current Emporia Vue 3 technical sheet",
+            "url": "https://link.emporiaenergy.com/sell-sheets/vue3",
+            "note": "Four-page manufacturer sheet: kit options, service configurations, Ethernet/Wi-Fi and dimensions. Electrical compatibility and included sensors still require a kit-specific check."
+          },
+          {
+            "name": "Current Emporia Vue 3 installation guide",
+            "url": "https://link.emporiaenergy.com/installation-guides/vue3",
+            "note": "Current permanent manufacturer link. Relevant safety, network and technical pages inspected; no panel installation performed."
+          },
+          {
+            "name": "Emporia offline behavior",
+            "url": "https://help.emporiaenergy.com/en/articles/14809190-vue-offline-behavior",
+            "note": "Official buffering, averaging, cloud, and local-access limits."
+          },
+          {
+            "name": "Historical US ASIN B0C79PNK84",
+            "url": "https://www.amazon.com/dp/B0C79PNK84",
+            "note": "Existing Vue 3 listing reference, not a new check of the sensor bundle, seller or stock."
+          }
+        ],
+        "evidenceMode": "official-spec",
+        "amazonDetailUrl": "https://www.amazon.com/dp/B0C79PNK84",
+        "whyItMatters": "Vue 3 is a strong fit when circuit-level trends justify professional panel work and cloud access is acceptable. It is not a local-first energy monitor: the device keeps measuring during outages, but the app cannot read it directly without the cloud.",
+        "priceBand": "$$",
+        "rating": 0,
+        "scores": [
+          {
+            "label": "Decision clarity",
+            "value": 9
+          },
+          {
+            "label": "Setup fit",
+            "value": 8
+          },
+          {
+            "label": "Ongoing ownership",
+            "value": 8
+          }
+        ],
+        "editorialSections": [
+          {
+            "heading": "Panel safety is a stop gate",
+            "body": "Emporia says installation should be performed by a skilled person such as a licensed electrician or other qualified professional under the applicable electrical code. Turning off a main breaker does not establish that incoming service conductors are de-energized. Have the professional assess the actual panel and supplied kit using the current guide; this buying note is not a wiring procedure."
+          },
+          {
+            "heading": "Count the circuits and physical space",
+            "body": "Service configuration, conductor diameter, clamp bundle, panel fill, cable routing, and Ethernet access determine fit. A compatible electrical service does not guarantee enough physical room."
+          },
+          {
+            "heading": "Wired networking still uses the cloud",
+            "body": "The Gen 3 manual documents wired LAN and 2.4GHz Wi-Fi, prioritizing wired LAN when both are configured. This changes the network connection, not the data architecture: the Emporia app has no direct local read path. Emporia describes buffering for roughly 15 minutes, then averaged longer-outage data without the same accuracy guarantee as live cloud reporting. Do not interpret that as unlimited detailed local logging."
+          },
+          {
+            "heading": "Who should skip it",
+            "body": "Skip if panel work is not acceptable, a direct local API or dashboard is required, or whole-home utility data already answers the buyer's only question."
+          }
+        ],
+        "offers": [
+          {
+            "merchant": "Amazon US",
+            "url": "https://www.amazon.com/dp/B0C79PNK84?tag=madasmart-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+            "label": "Check Emporia Vue 3 Home Energy Monitor on Amazon",
+            "priceNote": "Confirm ASIN B0C79PNK84, exact model, seller, included parts, live price, and availability."
+          }
+        ]
+      }
+    }
+  ],
+  "unchangedNeighborRecords": 26,
+  "guideSections": 36,
+  "guideTables": 6,
+  "productNotes": 3,
+  "sourceScope": "Manufacturer and authority documentation. No new retailer availability, seller or individual fit assertion; merchant stream remains open.",
+  "queryScope": "October22 page-level GSC baseline has 5/2/1 impressions and zero clicks for energy/garage/registry. No matching query in the aggregate export; no query-to-page association invented.",
+  "wholeTaskComplete": false,
+  "deployed": false
+}

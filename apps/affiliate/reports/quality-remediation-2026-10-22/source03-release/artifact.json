@@ -1,0 +1,18 @@
+{
+  "status": "validated-final-candidate",
+  "scope": "SOURCE-03: six source-reviewed guides and three related product notes. Other ledger batches remain open.",
+  "artifacts": {
+    "affiliate": {
+      "path": "apps/affiliate/.release/affiliate-runtime.tgz",
+      "bytes": 62481470,
+      "sha256": "9d1fce715594aa095b70e1ee2e63d9d840dccb435a8f2bce6b9312566f5f914a",
+      "buildId": "qszA6RQt-xptrOY48SXsk"
+    },
+    "main": {
+      "path": "apps/main/.release/main-runtime.tgz",
+      "bytes": 18201066,
+      "sha256": "a80849f2044c03e1e4e2291857c4c07da7d5dcb31a2951d4a9567e864f0d126c",
+      "buildId": "T10-x-IHJC96qrCe2vOr6"
+    }
+  }
+}

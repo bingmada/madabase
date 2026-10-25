@@ -32,6 +32,7 @@ import { decoBuyingChoices } from "@/lib/commerce-refresh";
 import { amazonAsinAffiliateUrl } from "@/lib/affiliate-tracking";
 import { findAuthorizedCjFamilyOffer } from "@/lib/cj-offers";
 import { guideCommerceProduct, isCommerceAlternative } from "@/lib/commerce-paths";
+import { guideDecisionPurchaseOption } from "@/lib/guide-decision-purchase";
 import { buyerFacingBody, buyerFacingHeading, buyerFacingSummary } from "@/lib/conversion-copy";
 import {
   consolidationTargetSlug,
@@ -318,6 +319,10 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
     label: "Check this exact ASIN on Amazon",
     priceNote: `Confirm ASIN ${amazonFamilyProduct.asin}, exact model or variant, seller, availability, shipping, and returns before checkout.`,
   } : undefined;
+  const directDecisionOption = !amazonFamilyProduct ? guideDecisionPurchaseOption(guide, relatedProducts) : undefined;
+  const familyDecisionMatches = Boolean(guide.decisionPurchase && amazonFamilyProduct && guide.decisionPurchase.asin === amazonFamilyProduct.asin && !amazonFamilyBlock);
+  const decisionPurchaseIdentity = familyDecisionMatches ? amazonFamilyIdentity : directDecisionOption?.product;
+  const decisionPurchaseOffer = familyDecisionMatches ? amazonFamilyOffer : directDecisionOption?.offer;
   const buyingChoices = site.key === "network" && guide.slug === "deco-be63-vs-be67-vs-be85-buying-guide"
     ? decoBuyingChoices.map((choice) => ({ ...choice, product: findProduct(site.key, choice.slug) })) : [];
   // An unresolved model-specific operating or safety question does not qualify
@@ -440,12 +445,12 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
           </section>
         ) : null}
         <GuideDecisionTable table={guide.comparisonTable} />
-        {guide.decisionPurchase && !plannerTopic && amazonFamilyProduct?.asin === guide.decisionPurchase.asin && amazonFamilyIdentity && amazonFamilyOffer && !amazonFamilyBlock ? (
+        {guide.decisionPurchase && !plannerTopic && guide.purchaseFlow !== "task-links" && decisionPurchaseIdentity && decisionPurchaseOffer ? (
           <aside className="mt-4 rounded-md border border-[var(--border)] bg-white p-5" aria-label={`Next step for ${guide.decisionPurchase.model}`} data-guide-decision-purchase="true">
             <h2 className="text-lg font-bold">When {guide.decisionPurchase.model} fits</h2>
             <p className="mt-2 text-sm leading-6">{guide.decisionPurchase.qualifies}</p>
             <p className="mt-3 text-sm leading-6 text-[var(--muted)]">{guide.decisionPurchase.stop}</p>
-            <div className="mt-3"><AffiliateButton site={site.key} product={amazonFamilyIdentity} offer={amazonFamilyOffer} modelLabel={guide.decisionPurchase.model} position="guide-decision-exact-model" resolveCreatorsListing={false} /></div>
+            <div className="mt-3"><AffiliateButton site={site.key} product={decisionPurchaseIdentity} offer={decisionPurchaseOffer} modelLabel={guide.decisionPurchase.model} position="guide-decision-exact-model" resolveCreatorsListing={false} /></div>
             <p className="mt-2 text-sm leading-6 text-[var(--muted)]">{guide.decisionPurchase.keep}</p>
           </aside>
         ) : null}
@@ -462,7 +467,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             </section>
           ))}
         </article>
-        {!plannerTopic && !requiresTopologyChoice && (amazonFamilyBlock || (!amazonFamilyProduct && !cjFamilyAffiliateOffer && (topProduct || topRoundup || commerceProduct || costumeCommerceProduct))) ? (
+        {!plannerTopic && !requiresTopologyChoice && guide.purchaseFlow !== "task-links" && (amazonFamilyBlock || (!amazonFamilyProduct && !cjFamilyAffiliateOffer && (topProduct || topRoundup || commerceProduct || costumeCommerceProduct))) ? (
           <section
             className="mt-4 rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-4 sm:mt-5 sm:p-5"
             aria-label="Retailer options after the guide"

@@ -112,6 +112,8 @@ export type Guide = Publishable & {
   imageAlt?: string;
   searchQuestion?: string;
   decisionLayout?: boolean;
+  /** A multi-task checklist has no single default product to buy. */
+  purchaseFlow?: "task-links";
   decisionPurchase?: {
     asin: string;
     model: string;
