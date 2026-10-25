@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-10-25T05:56:19.963Z",
+  "releaseId": "uFvnHZrw66_38mU8Rzew1",
+  "current": {
+    "status": 200,
+    "body": {
+      "ok": true,
+      "persisted": false,
+      "validated": true,
+      "reason": "qa_visit"
+    }
+  },
+  "stale": {
+    "status": 400,
+    "body": {
+      "ok": false,
+      "reason": "invalid_event"
+    }
+  },
+  "passed": true,
+  "isolation": "Local server in exec session 95564 was explicitly started with DATABASE_URL empty; packaged runtime contains no environment files. Both requests target 127.0.0.1:3025 and carry localhost Host and QA referrer. Content-view validation returns before persistence; no production URL or database is contacted."
+}

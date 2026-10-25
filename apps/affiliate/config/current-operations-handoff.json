@@ -42,7 +42,10 @@
       "apps/affiliate/reports/seo-consolidation-ledger-2026-09-08.json",
       "apps/affiliate/reports/soft151-url-inspection-followup-2026-09-08.json",
       "apps/affiliate/reports/daily-operations-2026-09-07.md",
+      "apps/affiliate/reports/external-distribution-2026-09-10.md",
+      "apps/affiliate/reports/external-distribution-2026-09-09.md",
       "apps/affiliate/reports/external-distribution-2026-09-08.md",
+      "apps/affiliate/reports/external-distribution-2026-09-14.md",
       "apps/affiliate/config/indexed-zero-recovery-cohort-2026-09-07.json",
       "apps/affiliate/reports/soft151-search-gate-2026-09-07.json",
       "apps/affiliate/config/comparison-first-cohort-2026-09-04.json",
@@ -758,11 +761,14 @@
     "stickyConversionReview": "Review after 14 days and at least 100 eligible post-CTA scroll sessions; split desktop and mobile, then compare first-viewport versus sticky-bottom affiliate clicks, merchant clicks, ordered items and earnings."
   },
   "latestExternalDistribution": {
-    "date": "2026-08-28",
-    "ownership": "separate external-distribution workflow; daily operations did not repeat or modify its working-tree report",
-    "workingTreeLog": "apps/affiliate/reports/external-distribution-2026-08-28.md",
-    "status": "The separate August 28 measurement-first workflow published one qualified Pinterest experiment and updated its own durable policy. The untracked report remains user-owned and is deliberately excluded from this daily-operation commit.",
-    "dailyAction": "no additional publication in daily operations; follow the separate experiment gates and attribution rules"
+    "date": "2026-09-24",
+    "ownership": "separate external-distribution workflow; daily operations must read but not duplicate its platform actions",
+    "workingTreeLog": "apps/affiliate/reports/external-distribution-2026-09-24.md",
+    "status": "Completed overdue Pinterest September 21 review: variants 1/2 have 41/8 detailed impressions and zero Pin clicks, saves and outbound clicks. No third variant or Quora answer published. Five Quora query families checked; existing three recent citations remain public at 3/4/4 views.",
+    "strategy": "Do not search, draft, fill, publish, edit, appeal, contact moderators or monitor Reddit; preserve its history only and reactivate solely after a new explicit owner instruction. Continue opportunity-driven Quora distribution without a posting quota. Direct affiliate links remain prohibited.",
+    "portfolioScope": "External-distribution discovery covers Main, Network, Smarthome, Homeoffice, Baby, Pets, Style, Costumes and Wellness wherever an eligible evidence page exists. Do not default to Network; choose by current opportunity and evidence fit.",
+    "measurement": "Authenticated Clarity Last 30 Days recovered: no Pinterest source match; two raw Quora sessions are September 8 same-visitor QA contamination, one with explicit QA entry. Exclude both conservatively; zero verified acquired sessions and no verified downstream affiliate_click. Unfiltered 280 sessions/12 affiliate_click sessions are project context only.",
+    "dailyAction": "Hold both Pinterest variants unchanged. Next explicit distribution run starts with exact measurement; October 7 retains the original 10 verified non-QA session plus one affiliate_click gate or 90-day pause. Quora remains opportunity-driven; inspect citation URLs without opening production UTMs and use QA tags for checks. Preserve Reddit retirement and forum blockers."
   },
   "doNotDo": [
     "Do not maintain or monitor tools.madabase.com. Exclude it and legacy Tools paths from GSC, Bing, Clarity, sitemap, IndexNow, SEO, crawl, uptime and recommendation work; historical data is usable only to remove it from active-growth aggregates.",
@@ -1037,6 +1043,22 @@
       "followupEvidence": "apps/affiliate/reports/seo-release-2026-09-25/wellness-tls-followup.json"
     },
     "cloudflareFollowup": "apps/affiliate/reports/seo-release-2026-09-25/wellness-tls-followup.json"
+  },
+  "focusedSeoRecovery20261013": {
+    "status": "deployed-and-publicly-verified",
+    "runtimeCommit": "3ddb75d66d84ebf9b89b7eb026dfb1e4d8baaada",
+    "report": "apps/affiliate/reports/seo-focus-2026-10-13/README.md",
+    "deploymentRecord": "apps/affiliate/reports/seo-focus-2026-10-13/deployment.json",
+    "nextAction": "Review the exact changed batch on October 20 using complete seven-day evidence, then October 27 and November 12. Use delayed 24h data for anomalies. Preserve protected pages and the previous cohort gates; no new indexing submission or expansion.",
+    "reviewDates": [
+      "2026-10-20",
+      "2026-10-27",
+      "2026-11-12"
+    ],
+    "activeRelease": "/srv/madabase-affiliate/releases/focus-20261013-3ddb75d66d84ebf9b89b7eb026dfb1e4d8baaada",
+    "activatedAt": "2026-10-13T13:42:38+0800",
+    "mainRestored": true,
+    "publicChecksPassed": 76
   },
   "compatibilitySearch20261019": {
     "status": "deployed-publicly-verified",

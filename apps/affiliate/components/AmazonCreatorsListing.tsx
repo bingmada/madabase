@@ -15,12 +15,12 @@ export type AmazonCreatorsClientListing = {
   expiresAt: string;
 };
 
-const listingRequests = new Map<string, Promise<AmazonCreatorsClientListing | null>>();
+const listingRequests = new Map<string, { promise: Promise<AmazonCreatorsClientListing | null>; expiresAt: number }>();
 
 function listingRequest(site: SiteKey, productSlug: string, market: AmazonMarketKey) {
   const key = `${site}:${productSlug}:${market}`;
   const existing = listingRequests.get(key);
-  if (existing) return existing;
+  if (existing && existing.expiresAt > Date.now()) return existing.promise;
 
   const request = fetch(
     `/api/amazon-listing/${encodeURIComponent(site)}/${encodeURIComponent(productSlug)}?market=${encodeURIComponent(market)}`,
@@ -29,10 +29,15 @@ function listingRequest(site: SiteKey, productSlug: string, market: AmazonMarket
     .then(async (response) => {
       if (!response.ok) return null;
       const data = (await response.json()) as { listing?: AmazonCreatorsClientListing | null };
-      return data.listing ?? null;
+      const listing = data.listing;
+      return listing && Date.parse(listing.expiresAt) > Date.now() ? listing : null;
     })
     .catch(() => null);
-  listingRequests.set(key, request);
+  const entry = { promise: request, expiresAt: Date.now() + 30_000 };
+  listingRequests.set(key, entry);
+  void request.then((listing) => {
+    entry.expiresAt = listing ? Math.min(Date.parse(listing.expiresAt), Date.now() + 300_000) : Date.now() + 30_000;
+  });
   return request;
 }
 
@@ -42,23 +47,32 @@ export function useAmazonCreatorsListing(
   market: AmazonMarketKey,
   enabled = true,
 ) {
-  const [listing, setListing] = useState<AmazonCreatorsClientListing | null>(null);
+  const key = `${site}:${productSlug}:${market}`;
+  const [snapshot, setSnapshot] = useState<{ key: string; listing: AmazonCreatorsClientListing | null } | null>(null);
 
   useEffect(() => {
     let active = true;
+    let expiryTimer: ReturnType<typeof setTimeout> | undefined;
     if (!enabled) return () => {
       active = false;
     };
 
     void listingRequest(site, productSlug, market).then((value) => {
-      if (active) setListing(value);
+      if (active) {
+        setSnapshot({ key, listing: value });
+        if (value) expiryTimer = setTimeout(() => {
+          if (active) setSnapshot((current) => current?.key === key ? null : current);
+        }, Math.max(0, Date.parse(value.expiresAt) - Date.now()));
+      }
     });
     return () => {
       active = false;
+      if (expiryTimer) clearTimeout(expiryTimer);
     };
-  }, [enabled, market, productSlug, site]);
+  }, [enabled, key, market, productSlug, site]);
 
-  return listing;
+  const listing = enabled && snapshot?.key === key ? snapshot.listing : null;
+  return listing && Date.parse(listing.expiresAt) > Date.now() ? listing : null;
 }
 
 const listingCopy: Record<AmazonMarketKey, { checked: string; match: string; locale: string }> = {

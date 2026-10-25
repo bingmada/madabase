@@ -22,6 +22,7 @@ export type AmazonFamilyProduct = {
   verifiedAt: string;
   relevanceScore: number;
   publicationStatus?: "published" | "draft";
+  editorialProductSlug?: string;
 };
 
 const amazonFamilyProducts: AmazonFamilyProduct[] = [

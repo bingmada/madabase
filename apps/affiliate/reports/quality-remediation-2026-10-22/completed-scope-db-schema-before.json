@@ -1,0 +1,99 @@
+{
+  "checkedAt": "2026-10-25T05:26:55.867Z",
+  "readOnly": {
+    "transaction_read_only": "on"
+  },
+  "rows": [
+    {
+      "table_name": "AffiliateClick",
+      "column_name": "id",
+      "data_type": "text",
+      "is_nullable": "NO"
+    },
+    {
+      "table_name": "AffiliateClick",
+      "column_name": "eventId",
+      "data_type": "text",
+      "is_nullable": "NO"
+    },
+    {
+      "table_name": "AffiliateClick",
+      "column_name": "site",
+      "data_type": "text",
+      "is_nullable": "NO"
+    },
+    {
+      "table_name": "AffiliateClick",
+      "column_name": "productSlug",
+      "data_type": "text",
+      "is_nullable": "NO"
+    },
+    {
+      "table_name": "AffiliateClick",
+      "column_name": "merchant",
+      "data_type": "text",
+      "is_nullable": "NO"
+    },
+    {
+      "table_name": "AffiliateClick",
+      "column_name": "position",
+      "data_type": "text",
+      "is_nullable": "NO"
+    },
+    {
+      "table_name": "AffiliateClick",
+      "column_name": "path",
+      "data_type": "text",
+      "is_nullable": "NO"
+    },
+    {
+      "table_name": "AffiliateClick",
+      "column_name": "createdAt",
+      "data_type": "timestamp without time zone",
+      "is_nullable": "NO"
+    },
+    {
+      "table_name": "AffiliateClick",
+      "column_name": "network",
+      "data_type": "text",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "AffiliateClick",
+      "column_name": "pid",
+      "data_type": "text",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "AffiliateClick",
+      "column_name": "aid",
+      "data_type": "text",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "AffiliateClick",
+      "column_name": "sid",
+      "data_type": "text",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "AffiliateClick",
+      "column_name": "destinationUrl",
+      "data_type": "text",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "AffiliateClick",
+      "column_name": "affiliateLinkId",
+      "data_type": "text",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "AffiliateClick",
+      "column_name": "merchantProductId",
+      "data_type": "text",
+      "is_nullable": "YES"
+    }
+  ],
+  "productionWrites": false
+}

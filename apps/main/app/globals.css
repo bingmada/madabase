@@ -710,6 +710,12 @@ img {
   border-top: 1px solid var(--line);
 }
 
+.research-resources-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin-top: 28px; }
+.research-resource { display: flex; min-width: 0; flex-direction: column; align-items: flex-start; border: 1px solid var(--line); padding: 24px; background: var(--paper, #fff); }
+.research-resource h3 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: 24px; line-height: 1.25; }
+.research-resource p { flex-grow: 1; margin: 14px 0 20px; color: var(--muted); font-size: 15px; line-height: 1.65; }
+@media (max-width: 650px) { .research-resources-grid { grid-template-columns: minmax(0, 1fr); } }
+
 .research-feature {
   display: grid;
   grid-template-columns: 58px minmax(0, 1fr) auto;

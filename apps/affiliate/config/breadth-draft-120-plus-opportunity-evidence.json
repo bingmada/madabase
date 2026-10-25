@@ -33,7 +33,8 @@
         "https://shop.czur.com/blogs/blog/a-beginners-guide-to-overhead-book-scanners-do-you-need-one",
         "https://www.reddit.com/r/DataHoarder/comments/1tlb8gu/scanner_for_hard_cover_illustrated_books/"
       ],
-      "note": "Independent intent is bound-book handling, page curvature, glare, capture area, OCR, privacy, and archive workflow rather than ordinary document scanning."
+      "note": "Independent intent is bound-book handling, page curvature, glare, capture area, OCR, privacy, and archive workflow rather than ordinary document scanning.",
+      "publicDecision": "Compare bound-book handling, page curvature, glare, capture area, OCR, privacy and archive workflow before choosing an overhead scanner instead of a flatbed or camera copy stand."
     },
     {
       "site": "homeoffice",
@@ -64,7 +65,8 @@
         "https://www.techradar.com/news/best-home-printer",
         "https://www.reddit.com/r/printers/comments/1vks6d3/firsttime_printer_buyer_which_inktank_printer/"
       ],
-      "note": "Demand is strong but competitive. The page must win on monthly volume, idle periods, duplex/ADF needs, ink maintenance, footprint, and cost modeling rather than generic rankings."
+      "note": "Demand is strong but competitive. The page must win on monthly volume, idle periods, duplex/ADF needs, ink maintenance, footprint, and cost modeling rather than generic rankings.",
+      "publicDecision": "Compare monthly print volume, idle periods, duplex and automatic-feeder needs, ink maintenance, footprint and recurring costs before choosing an ink tank printer."
     },
     {
       "site": "homeoffice",
@@ -84,7 +86,8 @@
         "https://www.techadvisor.com/article/723535/best-portable-printers.html",
         "https://www.rtings.com/printer/reviews/best/portable"
       ],
-      "note": "Strong current intent, but established publishers compete heavily. A qualified page needs print technology, exact media cost, image permanence limits, app dependency, size, and portability."
+      "note": "Strong current intent, but established publishers compete heavily. A qualified page needs print technology, exact media cost, image permanence limits, app dependency, size, and portability.",
+      "publicDecision": "Compare print technology, exact media cost, image permanence limits, app dependency, print size and portability before choosing a portable photo printer."
     },
     {
       "site": "homeoffice",
@@ -114,7 +117,8 @@
         "https://www.irisusainc.com/products/desktop-organizer-5-piece",
         "https://www.staples.com/jam-paper-stackable-paper-trays-white-desktop-document-letter-file-organizer-tray-sold-individually-344wh/product_24364938"
       ],
-      "note": "Niche but separable by letter versus folder dimensions, vertical slots versus in/out trays, active-paper volume, label visibility, expansion, tipping and the footprint consumed on a small desk."
+      "note": "Niche but separable by letter versus folder dimensions, vertical slots versus in/out trays, active-paper volume, label visibility, expansion, tipping and the footprint consumed on a small desk.",
+      "publicDecision": "Match letter and folder dimensions, vertical slots or in/out trays, active-paper volume, labels, expansion and tipping risk to the space available on your desk."
     },
     {
       "site": "homeoffice",
@@ -124,7 +128,8 @@
         "https://standdesklab.com/accessories/best-monitor-light-bar/",
         "https://www.reddit.com/r/desksetup/comments/1rv2pja/before_you_buy_a_monitor_light_bar_read_this/"
       ],
-      "note": "Demand is current and competitive. The independent purchase is clamp/curvature/camera fit, forward glare, user glare, desk-only illumination, power, controls, and color-work boundaries."
+      "note": "Demand is current and competitive. The independent purchase is clamp/curvature/camera fit, forward glare, user glare, desk-only illumination, power, controls, and color-work boundaries.",
+      "publicDecision": "Check the monitor light bar clamp against screen curvature and webcam placement. Compare screen and user glare, desk illumination, power, controls and limits for color-sensitive work."
     },
     {
       "site": "homeoffice",
@@ -144,7 +149,8 @@
         "https://www.digitalcameraworld.com/buying-guides/best-ring-light",
         "https://www.wfhlounge.com/blog/best-ring-lights-home-office"
       ],
-      "note": "Qualified but lower priority because competition is strong. Preserve the distinct ring-light question: opening size, camera/phone placement, working distance, catchlight, desk stability, and reflections."
+      "note": "Qualified but lower priority because competition is strong. Preserve the distinct ring-light question: opening size, camera/phone placement, working distance, catchlight, desk stability, and reflections.",
+      "publicDecision": "Check the ring opening, camera or phone position, working distance, catchlight, stand stability and reflections before choosing a desk ring light."
     },
     {
       "site": "homeoffice",
@@ -154,7 +160,8 @@
         "https://www.pcworld.com/article/393756/1080p-4k-webcam-buying-guide.html",
         "https://www.digitalcameraworld.com/buying-guides/best-4k-webcam"
       ],
-      "note": "Very competitive. The page must answer when 4K changes crops, digital zoom, framing, bandwidth, USB mode, lighting, privacy, software and meeting-app output instead of equating resolution with quality."
+      "note": "Very competitive. The page must answer when 4K changes crops, digital zoom, framing, bandwidth, USB mode, lighting, privacy, software and meeting-app output instead of equating resolution with quality.",
+      "publicDecision": "Compare 4K webcams by crop flexibility, digital zoom, framing, bandwidth, USB mode, lighting, privacy, software and meeting-app output. Resolution alone does not establish picture quality."
     },
     {
       "site": "homeoffice",
@@ -164,7 +171,8 @@
         "https://striveav.com/faq/meeting-room-cameras/",
         "https://www.digitalcameraworld.com/buying-guides/best-ptz-camera"
       ],
-      "note": "Independent room-scale decision covering optical versus digital zoom, back-of-room distance, presets, tracking, UVC/HDMI/IP outputs, mounting, microphones and whether a video bar is simpler."
+      "note": "Independent room-scale decision covering optical versus digital zoom, back-of-room distance, presets, tracking, UVC/HDMI/IP outputs, mounting, microphones and whether a video bar is simpler.",
+      "publicDecision": "Compare optical and digital zoom, room distance, presets, tracking, UVC, HDMI or IP outputs, mounting and microphone arrangements. Consider whether a video bar would simplify the room."
     },
     {
       "site": "homeoffice",
@@ -184,7 +192,8 @@
         "https://www.wired.com/gallery/best-computer-speakers/",
         "https://www.tomshardware.com/best-picks/best-pc-speakers"
       ],
-      "note": "Qualified but highly competitive. The site needs a narrow home-office angle: near-field distance, footprint, input switching, USB/analog/Bluetooth paths, standby noise, call behavior, and shared work/play use."
+      "note": "Qualified but highly competitive. The site needs a narrow home-office angle: near-field distance, footprint, input switching, USB/analog/Bluetooth paths, standby noise, call behavior, and shared work/play use.",
+      "publicDecision": "Compare desktop speakers by listening distance, footprint, input switching, USB, analog or Bluetooth connections, standby noise, call behavior and shared work/play use."
     },
     {
       "site": "homeoffice",
@@ -194,7 +203,8 @@
         "https://gibbsonninteriors.com/2026/acoustic-office-partitions/",
         "https://arxiv.org/abs/2501.15744"
       ],
-      "note": "Clear opening if claims are disciplined: a small felt divider can block sight lines and absorb some nearby reflections but cannot promise speech privacy or soundproofing."
+      "note": "Clear opening if claims are disciplined: a small felt divider can block sight lines and absorb some nearby reflections but cannot promise speech privacy or soundproofing.",
+      "publicDecision": "Compare panel size, attachment, sight lines and nearby reflections. A small felt divider cannot establish speech privacy or soundproofing."
     },
     {
       "site": "homeoffice",
@@ -214,7 +224,8 @@
         "https://www.ikea.com/us/en/files/pdf/c2/82/c2822620/skadis_jan_2024.pdf",
         "https://www.ikea.com/sg/en/p/skadis-connector-white-10320794/"
       ],
-      "note": "Independent vertical-storage decision: wall, clamp or freestanding mount; desk thickness; board dimensions; accessory ecosystem; load distribution; wobble; reach; and clearance behind a sit-stand desk."
+      "note": "Independent vertical-storage decision: wall, clamp or freestanding mount; desk thickness; board dimensions; accessory ecosystem; load distribution; wobble; reach; and clearance behind a sit-stand desk.",
+      "publicDecision": "Compare wall, clamp and freestanding pegboards by desk thickness, board dimensions, compatible accessories, load distribution, wobble and reach. Leave clearance behind a moving sit-stand desk."
     },
     {
       "site": "homeoffice",
@@ -274,7 +285,8 @@
         "https://standdesklab.com/chairs/best-standing-desk-chair/",
         "https://www.osha.gov/etools/computer-workstations/components/chairs"
       ],
-      "note": "Independent perch/wobble decision: height range, base behavior, seat edge, foot support, task duration and posture changes matter more than an unsupported active-sitting health claim."
+      "note": "Independent perch/wobble decision: height range, base behavior, seat edge, foot support, task duration and posture changes matter more than an unsupported active-sitting health claim.",
+      "publicDecision": "Compare stool height, base movement, seat edges, foot support and task duration. Check whether the movement suits the workstation without relying on an unsupported health claim."
     },
     {
       "site": "homeoffice",
@@ -334,7 +346,8 @@
         "https://www.kleintools.com/catalog/cable-management/cable-and-wire-management-sleeves-175-inch-diameter-3-foot-long",
         "https://www.wentronic.com/en/wire-sleeve-black-51919"
       ],
-      "note": "A true sleeve page is distinct from a mixed clip-and-tie kit. It must choose wrap, split-loom, zipper or braided construction by bundle diameter, breakouts, movement, cut finishing, heat and access rather than repeat unsupported pet-proof or fire-safety claims."
+      "note": "A true sleeve page is distinct from a mixed clip-and-tie kit. It must choose wrap, split-loom, zipper or braided construction by bundle diameter, breakouts, movement, cut finishing, heat and access rather than repeat unsupported pet-proof or fire-safety claims.",
+      "publicDecision": "Choose wrap, split-loom, zipper or braided sleeves by bundle diameter, cable breakouts, movement, cut finishing, heat and access. Do not assume a sleeve is pet-proof or fire-safe without exact-product evidence."
     },
     {
       "site": "homeoffice",
@@ -674,7 +687,8 @@
         "https://flair.co/pages/central-systems-smart-vents",
         "https://flair.co/pages/faq"
       ],
-      "note": "Independent airflow-balancing purchase with exact duct-opening sizes, supply-versus-return identification, bridge and room-sensor requirements, battery or 24-V power, and back-pressure protection. The page must not present vent closure as a substitute for HVAC diagnosis or balancing."
+      "note": "Independent airflow-balancing purchase with exact duct-opening sizes, supply-versus-return identification, bridge and room-sensor requirements, battery or 24-V power, and back-pressure protection. The page must not present vent closure as a substitute for HVAC diagnosis or balancing.",
+      "publicDecision": "Check duct-opening size, supply or return placement, bridge and room-sensor requirements, battery or 24-V power and back-pressure protection. Vent closure does not replace HVAC diagnosis or balancing."
     },
     {
       "site": "smarthome",
@@ -684,7 +698,8 @@
         "https://www.cpsc.gov/s3fs-public/CPSC-Staff-Assessment-on-Portable-Electric-Heaters-February-2023-SH.pdf",
         "https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Fire-Safety-Information-Center"
       ],
-      "note": "Demand is strong but safety-sensitive. The independent decision is listed heater type, wattage and circuit fit, tip-over and overheat protection, thermostat behavior, child lock, app dependence and whether remote controls can be disabled; no unattended-use promise is allowed."
+      "note": "Demand is strong but safety-sensitive. The independent decision is listed heater type, wattage and circuit fit, tip-over and overheat protection, thermostat behavior, child lock, app dependence and whether remote controls can be disabled; no unattended-use promise is allowed.",
+      "publicDecision": "Compare the listed heater type, wattage and circuit fit, tip-over and overheat protection, thermostat, child lock and app dependence. Check whether remote controls can be disabled; app control does not establish safe unattended use."
     },
     {
       "site": "smarthome",
@@ -934,7 +949,8 @@
         "https://lomi.com/products/lomi-3-food-recycler",
         "https://lomi.com/pages/app"
       ],
-      "note": "The page will use the accurate term food recycler and distinguish pre-compost/output handling from finished compost. Capacity, accepted scraps, cycle time and kWh, filters, noise, bucket cleaning, Wi-Fi/app features and recurring costs create the purchase decision."
+      "note": "The page will use the accurate term food recycler and distinguish pre-compost/output handling from finished compost. Capacity, accepted scraps, cycle time and kWh, filters, noise, bucket cleaning, Wi-Fi/app features and recurring costs create the purchase decision.",
+      "publicDecision": "Distinguish a food recycler and its output handling from finished compost. Compare capacity, accepted scraps, cycle time, electricity use, filters, noise, bucket cleaning, app features and recurring costs."
     },
     {
       "site": "smarthome",
@@ -964,7 +980,8 @@
         "https://ca.munchkin.com/baby-formula-dispenser",
         "https://www.cdc.gov/infant-toddler-nutrition/formula-feeding/preparation-and-storage.html"
       ],
-      "note": "This is a travel portioning decision, not a formula-preparation shortcut: compartment seal, number and size of premeasured feeds, pour control, cleaning and diaper-bag leakage are the buying dimensions. The page must say to measure water separately, add the exact labeled powder amount and follow CDC time limits because powdered formula is not sterile."
+      "note": "This is a travel portioning decision, not a formula-preparation shortcut: compartment seal, number and size of premeasured feeds, pour control, cleaning and diaper-bag leakage are the buying dimensions. The page must say to measure water separately, add the exact labeled powder amount and follow CDC time limits because powdered formula is not sterile.",
+      "publicDecision": "Compare compartment seals, premeasured portion capacity, pour control, cleaning and bag leakage. A dispenser stores dry portions; it does not prepare formula. Follow the exact formula label, measure water first, then add powder, and follow CDC preparation and storage guidance because powdered formula is not sterile."
     },
     {
       "site": "baby",
@@ -984,7 +1001,8 @@
         "https://www.medela.com/en-us/breastfeeding-pumping/products/bottles-bags/easy-pour-breast-milk-storage-bags?productId=1036",
         "https://www.medela.com/en/breastfeeding-pumping/products/bottles-bags/reusable-breast-milk-storage-bags?productId=41941"
       ],
-      "note": "Independent intent covers disposable versus reusable systems, verified capacity, freeze-flat shape, double-seal leakage, labeling, pour geometry, pump adapters, cleaning burden and total cost. Storage and thawing instructions will be sourced separately from health guidance, not inferred from a bag maker's marketing."
+      "note": "Independent intent covers disposable versus reusable systems, verified capacity, freeze-flat shape, double-seal leakage, labeling, pour geometry, pump adapters, cleaning burden and total cost. Storage and thawing instructions will be sourced separately from health guidance, not inferred from a bag maker's marketing.",
+      "publicDecision": "Compare disposable and reusable storage systems by capacity, freeze-flat shape, seal leakage, labeling, pouring, pump adapters, cleaning and total cost. Check storage and thawing instructions against health guidance separately from bag marketing."
     },
     {
       "site": "baby",
@@ -994,7 +1012,8 @@
         "https://www.cpsc.gov/FAQ/Nursing-Pillows",
         "https://www.cpsc.gov/Newsroom/News-Releases/2021/CPSC-Warns-Parents-Not-to-Use-Nursing-Pillows-for-Sleep-Agency-Is-Investigating-Infant-Deaths-that-May-Be-Associated-with-Pillow-Like-Products?language=en"
       ],
-      "note": "Fit around the caregiver, height and firmness during active feeding, cover washability, closure and travel bulk create a high-intent comparison. The page will treat these as awake, attended feeding aids only and explicitly reject sleep, lounging, propping and leaving an infant unattended."
+      "note": "Fit around the caregiver, height and firmness during active feeding, cover washability, closure and travel bulk create a high-intent comparison. The page will treat these as awake, attended feeding aids only and explicitly reject sleep, lounging, propping and leaving an infant unattended.",
+      "publicDecision": "Compare caregiver fit, support height and firmness during active feeding, cover washing, closure and travel bulk. These are awake, attended feeding aids; do not use them for infant sleep, lounging, propping or unattended use."
     },
     {
       "site": "baby",
@@ -1064,7 +1083,8 @@
         "https://www.healthychildren.org/English/ages-stages/toddler/nutrition/Pages/Self-Feeding.aspx",
         "https://www.oxo.com/tot-cut-prep-set-3-piece.html"
       ],
-      "note": "Independent intent covers pre-spoon versus toddler fork-and-spoon sets, handle geometry, utensil head size and depth, metal versus silicone, gag-guard claims, handedness and dishwasher cleanup. Recommendations will align with developmental readiness and supervised self-feeding rather than promise faster skill acquisition."
+      "note": "Independent intent covers pre-spoon versus toddler fork-and-spoon sets, handle geometry, utensil head size and depth, metal versus silicone, gag-guard claims, handedness and dishwasher cleanup. Recommendations will align with developmental readiness and supervised self-feeding rather than promise faster skill acquisition.",
+      "publicDecision": "Compare pre-spoons and toddler fork-and-spoon sets by handle shape, head size and depth, metal or silicone, gag-guard claims, handedness and dishwasher care. Choose for developmental readiness and supervised self-feeding without promises of faster skill acquisition."
     },
     {
       "site": "baby",
@@ -1074,7 +1094,8 @@
         "https://haakaausa.com/products/haakaa-silicone-yummy-pouch-4-5-oz-1-pk",
         "https://www.healthychildren.org/English/health-issues/injuries-emergencies/Pages/Choking-Prevention.aspx"
       ],
-      "note": "The decision is fill opening, cap security, flow, cleaning visibility, freezer and dishwasher instructions, labeling and replacement parts across silicone and zip-bottom formats. The page will address cap and part hazards, supervised seated use, food texture and realistic hygiene rather than treating the pouch as a complete feeding solution."
+      "note": "The decision is fill opening, cap security, flow, cleaning visibility, freezer and dishwasher instructions, labeling and replacement parts across silicone and zip-bottom formats. The page will address cap and part hazards, supervised seated use, food texture and realistic hygiene rather than treating the pouch as a complete feeding solution.",
+      "publicDecision": "Compare fill openings, cap security, flow, cleaning visibility, freezer and dishwasher instructions, labels and replacement parts. Check cap and small-part hazards, food texture and supervised seated use; a pouch is only one part of a feeding routine."
     },
     {
       "site": "baby",
@@ -1174,7 +1195,8 @@
         "https://www.cpsc.gov/Newsroom/News-Releases/2018/New-Federal-Safety-Standard-for-Infant-Bath-Tubs-Takes-Effect",
         "https://www.healthychildren.org/English/safety-prevention/at-home/pages/Bathroom-Safety.aspx"
       ],
-      "note": "Attachment on tile or tub, actual drainage and airflow, mesh versus rigid bin, toy capacity, removable cleaning and whether a child can pull it down define the purchase. The page will not imply that storage eliminates mold; toys and organizer still need draining, cleaning and periodic inspection."
+      "note": "Attachment on tile or tub, actual drainage and airflow, mesh versus rigid bin, toy capacity, removable cleaning and whether a child can pull it down define the purchase. The page will not imply that storage eliminates mold; toys and organizer still need draining, cleaning and periodic inspection.",
+      "publicDecision": "Check tile or tub attachment, drainage, airflow, mesh or rigid construction, capacity and cleaning access. Consider whether a child can pull the organizer down. Toys and storage still need draining, cleaning and inspection; storage does not eliminate mold."
     },
     {
       "site": "baby",
@@ -1574,7 +1596,8 @@
         "https://showers.waterpik.com/product-support/manuals/waterpik-dual-power-pulse-ZZR-769ME-instruction-manual/",
         "https://showers.waterpik.com/pdfs/20032028-F.pdf"
       ],
-      "note": "Shower-arm, faucet and garden-hose compatibility, diverter, hose reach, usable pressure patterns, one-hand pause, grip, thick-coat penetration and mineral cleaning define the purchase. The page will use lukewarm water, avoid eyes and ears, keep pressure gentle and make secure footing and calm acclimation more important than spray force."
+      "note": "Shower-arm, faucet and garden-hose compatibility, diverter, hose reach, usable pressure patterns, one-hand pause, grip, thick-coat penetration and mineral cleaning define the purchase. The page will use lukewarm water, avoid eyes and ears, keep pressure gentle and make secure footing and calm acclimation more important than spray force.",
+      "publicDecision": "Check shower-arm, faucet or garden-hose compatibility, diverter, hose reach, pressure patterns, pause control, grip and cleaning. Use lukewarm water, gentle pressure, secure footing and calm acclimation; avoid the eyes and ears."
     },
     {
       "site": "pet",
@@ -1634,7 +1657,8 @@
         "https://eheim.com/en_GB/aquatics/technology/aquarium-heaters/thermocontrol/thermocontrol-200",
         "https://eheim.com/media/53/58/61/1706018431/3631_3640_thermocontrol_e.pdf"
       ],
-      "note": "Species temperature, true water volume, room delta, wattage, adjustable versus fixed setpoint, guard, mounting orientation, dry-run protection, indicator, calibration and independent thermometer create a high-intent safety decision. The page will follow the exact immersion and unplug/cooling instructions and will not rely on the heater dial as the only temperature check."
+      "note": "Species temperature, true water volume, room delta, wattage, adjustable versus fixed setpoint, guard, mounting orientation, dry-run protection, indicator, calibration and independent thermometer create a high-intent safety decision. The page will follow the exact immersion and unplug/cooling instructions and will not rely on the heater dial as the only temperature check.",
+      "publicDecision": "Match species temperature, actual water volume and room temperature difference to the heater type, wattage, setpoint, guard and mounting instructions. Check dry-run protection, indicators and calibration. Follow exact immersion, unplugging and cooling instructions, and use an independent thermometer rather than the heater dial alone."
     },
     {
       "site": "pet",

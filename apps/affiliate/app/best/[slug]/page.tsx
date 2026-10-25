@@ -10,7 +10,7 @@ import { findProduct, findRoundup, siteGuides } from "@/lib/content";
 import { roundupCommerceProduct } from "@/lib/commerce-paths";
 import { buyerFacingBody, buyerFacingHeading, buyerFacingSummary } from "@/lib/conversion-copy";
 import { roundupEvidencePresentation } from "@/lib/evidence";
-import { effectiveContentUpdatedAt, findSearchOpportunity, searchOpportunityMetaDescription } from "@/lib/search-opportunities";
+import { effectiveContentUpdatedAt, findSearchOpportunity, reviewedSearchDescription, searchOpportunityMetaDescription } from "@/lib/search-opportunities";
 import { breadcrumbSchema, faqPageSchema, pageMetadata, roundupArticleSchema, roundupProductListSchema } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 import type { Product, Roundup, SiteKey } from "@/lib/types";
@@ -171,7 +171,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const roundup = findRoundup(site.key, slug);
   if (!roundup) return {};
   const searchOpportunity = findSearchOpportunity(site.key, "roundup", slug);
-  return pageMetadata(site, `/best/${slug}`, roundup.seoTitle ?? roundup.title, searchOpportunityMetaDescription(searchOpportunity, roundup.dek));
+  return pageMetadata(site, `/best/${slug}`, roundup.seoTitle ?? roundup.title, reviewedSearchDescription(site.key, "roundup", slug) ?? searchOpportunityMetaDescription(searchOpportunity, roundup.dek));
 }
 
 export default async function RoundupPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -193,7 +193,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
   const relatedGuides = siteGuides(site.key)
     .filter((guide) => guide.relatedRoundups.includes(roundup.slug))
     .slice(0, 6);
-  const answer = quickAnswer(roundup.title, roundup.intent, picks);
+  const answer = roundup.quickAnswer ?? quickAnswer(roundup.title, roundup.intent, picks);
   const advice = getRoundupAdvice(site.key, roundup.category);
   const sources = officialSourceLinks(picks, roundup.sources);
   const evidencePresentation = roundupEvidencePresentation(picks);
@@ -272,7 +272,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
           <p className="mt-4 text-base leading-7 text-[var(--muted)] sm:mt-5 sm:text-lg sm:leading-8">{buyerFacingSummary(roundup.dek)}</p>
           {effectiveUpdatedAt ? (
             <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-xs font-semibold text-[var(--muted)] sm:mt-4 sm:gap-y-2 sm:text-sm">
-              <span className="hidden sm:inline">Prepared by the {site.name} editorial desk</span>
+              <Link className="hidden underline underline-offset-4 sm:inline" href="/about">Prepared by the {site.name} editorial desk</Link>
               <span>Updated {effectiveUpdatedAt}</span>
             </div>
           ) : null}
@@ -390,20 +390,20 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
               <section className="panel p-5">
                 <p className="eyebrow">Side-by-side checks</p>
                 <h2 className="mt-3 text-xl font-bold">{roundup.comparisonTable.title}</h2>
-                <div className="mt-5 overflow-x-auto rounded-md border border-[var(--border)] bg-white">
-                  <table className="w-full min-w-[920px] text-left text-sm">
+                <div className="mt-5 overflow-x-auto rounded-md border border-[var(--border)] bg-white" role="region" aria-label={roundup.comparisonTable.title} tabIndex={0}>
+                  <table className={`w-full text-left text-sm ${roundup.comparisonTable.columns.length <= 2 ? "min-w-[600px]" : "min-w-[920px]"}`}>
                     <thead className="bg-[var(--surface-muted)] text-xs uppercase text-[var(--muted)]">
                       <tr>
-                        <th className="px-4 py-3">Pick</th>
+                        <th className="px-4 py-3" scope="col">Check</th>
                         {roundup.comparisonTable.columns.map((column) => (
-                          <th className="px-4 py-3" key={column}>{column}</th>
+                          <th className="px-4 py-3" scope="col" key={column}>{column}</th>
                         ))}
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-[var(--border)]">
                       {roundup.comparisonTable.rows.map((row) => (
                         <tr key={row.label}>
-                          <th className="px-4 py-4 font-bold">{row.label}</th>
+                          <th className="px-4 py-4 font-bold" scope="row">{row.label}</th>
                           {roundup.comparisonTable?.columns.map((column, index) => (
                             <td className="px-4 py-4 leading-6 text-[var(--muted)]" key={`${row.label}-${column}`}>
                               {row.values[index] ?? "Confirm before purchase"}
@@ -414,6 +414,17 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
                     </tbody>
                   </table>
                 </div>
+                {site.key === "baby" && ["babybjorn-harmony-vs-ergobaby-omni-breeze", "dr-browns-vs-baby-brezza-sterilizer-dryer"].includes(roundup.slug) ? <>
+                  <div className="mt-5 grid gap-3 sm:grid-cols-2" aria-label="Exact models from this comparison" data-comparison-model-actions="true">
+                    {picks.slice(0,2).map(product => <div className="min-w-0 rounded-md border border-[var(--border)] bg-white p-4" key={product.slug}>
+                      <h3 className="font-bold">{product.name}</h3>
+                      <p className="my-3 text-sm leading-6 text-[var(--muted)]">{product.slug === "babybjorn-carrier-harmony" ? "Compare for front-access fastening after checking the child's size, allowed position and fit on each caregiver. Confirm Silver 3D Mesh and the exact return terms." : product.slug === "ergobaby-omni-breeze-carrier" ? "Compare when hip carry or the higher overall range has a job. This is Omni Breeze in Onyx Black; use its own position instructions." : product.slug === "dr-browns-all-in-one-sterilizer-dryer" ? "Compare when the six-bottle layout fits your actual washed parts. Confirm AC177/AC377, the selected bundle and voltage." : "Compare Advanced when its larger modular layout fits your actual washed parts. Confirm Sterilizer Dryer Advanced, colour and voltage; Washer Pro is a different appliance."}</p>
+                      {product.offers.length ? <AffiliateButtonGroup site={site.key} product={product} position="roundup-comparison-exact-model" limit={1} sticky={false} /> : <p className="text-sm font-bold">Exact retailer option paused</p>}
+                      <Link className="mt-3 block text-sm font-bold underline" href={`/reviews/${product.slug}`}>Check the model details</Link>
+                    </div>)}
+                  </div>
+                  <p className="mt-4 text-sm leading-6">Keep a working setup when it already meets the job. Pause the purchase when the exact model, child or part fit, or return conditions remain unclear.</p>
+                </> : null}
               </section>
             ) : null}
             {roundup.sections?.map((section) => (

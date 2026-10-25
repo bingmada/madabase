@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { costumeFeedTransaction } from "./lib/costume-feed-classification.mjs";
 import { spawn } from "node:child_process";
 import { finished } from "node:stream/promises";
 
@@ -157,7 +158,7 @@ function candidateFor(row) {
   const availability = normalizeAvailability(pick(row, ["availability", "stock_status"]));
   const primaryText = `${title} ${productType} ${tags}`;
   const allText = `${primaryText} ${description}`;
-  const rental = /rental|rent\b/i.test(allText);
+  const rental = costumeFeedTransaction(row) === "rent";
   const themes = themeDefinitions
     .filter(([, pattern]) => pattern.test(allText))
     .map(([theme]) => theme);

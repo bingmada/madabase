@@ -1,0 +1,104 @@
+{
+  "checkedAt": "2026-10-25T05:41:44.342Z",
+  "releaseId": "vnINyJoJdbRRTLjgzdci4",
+  "scope": "Actual browser views of a captured-cohort local runtime with fake tracking tokens; no real merchant navigation or database write.",
+  "rows": [
+    {
+      "name": "house-conflict-mobile",
+      "slug": "harry-potter-hufflepuff-child-robe-zlyr8ok",
+      "docks": 0,
+      "height": 844,
+      "holds": [
+        "details-conflict"
+      ],
+      "scrollWidth": 390,
+      "title": "Harry Potter Hufflepuff Child Robe: Price, Availability, and Buying Checks",
+      "visibleButtons": [],
+      "width": 390
+    },
+    {
+      "name": "unavailable-mobile",
+      "slug": "cali-blonde-marilyn-starlet-wig-lvklnhr",
+      "docks": 0,
+      "height": 844,
+      "holds": [
+        "unavailable"
+      ],
+      "scrollWidth": 390,
+      "title": "Cali Blonde Marilyn Starlet Wig: Price, Availability, and Buying Checks",
+      "visibleButtons": [],
+      "width": 390
+    },
+    {
+      "name": "rental-mobile",
+      "slug": "7-piece-professional-red-plush-santa-suit-adult-costume-di5qoyc",
+      "docks": 0,
+      "height": 844,
+      "holds": [],
+      "scrollWidth": 390,
+      "title": "7 Piece Professional Red Plush Santa Suit Adult Costume: Price, Availability, and Buying Checks",
+      "visibleButtons": [
+        {
+          "bottom": 865.46875,
+          "text": "Check this exact option at Abracadabra NYC",
+          "top": 805.46875
+        }
+      ],
+      "width": 390
+    },
+    {
+      "name": "purchase-desktop",
+      "slug": "polar-bear-mascot-i-a__ns",
+      "docks": 0,
+      "height": 844,
+      "holds": [],
+      "scrollWidth": 1440,
+      "title": "Polar Bear Mascot: Price, Availability, and Buying Checks",
+      "visibleButtons": [
+        {
+          "bottom": 823.828125,
+          "text": "Read the exact retailer listing",
+          "top": 783.828125
+        },
+        {
+          "bottom": 591.296875,
+          "text": "Check this exact option at Abracadabra NYC",
+          "top": 531.296875
+        }
+      ],
+      "width": 1440
+    },
+    {
+      "name": "house-conflict-desktop",
+      "slug": "harry-potter-hufflepuff-child-robe-zlyr8ok",
+      "docks": 0,
+      "height": 844,
+      "holds": [
+        "details-conflict"
+      ],
+      "scrollWidth": 1440,
+      "title": "Harry Potter Hufflepuff Child Robe: Price, Availability, and Buying Checks",
+      "visibleButtons": [],
+      "width": 1440
+    },
+    {
+      "name": "rental-details-mobile",
+      "slug": "7-piece-professional-red-plush-santa-suit-adult-costume-di5qoyc",
+      "docks": 0,
+      "height": 844,
+      "holds": [],
+      "scrollWidth": 390,
+      "title": "7 Piece Professional Red Plush Santa Suit Adult Costume: Price, Availability, and Buying Checks",
+      "visibleButtons": [
+        {
+          "bottom": 265.46875,
+          "text": "Check this exact option at Abracadabra NYC",
+          "top": 205.46875
+        }
+      ],
+      "width": 390
+    }
+  ],
+  "visuallyInspected": true,
+  "deployed": false
+}

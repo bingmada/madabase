@@ -89,7 +89,8 @@ export const publications: Publication[] = [
 ];
 
 export const researchItems = researchUpdates.map((item) => {
-  const publication = publications.find((entry) => entry.key === item.site);
+  const publication = publications.find((entry) => entry.key === item.site)
+    ?? (item.site === "costume" ? { name: "Madabase Halloween & Costume Guide", label: "Halloween and costumes" } : undefined);
   return {
     ...item,
     publication: publication?.name ?? "Madabase",

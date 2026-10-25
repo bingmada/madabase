@@ -320,8 +320,9 @@ if (amazonFamilyProducts.length !== expectedAmazonFamilyTotal) {
 }
 const amazonFamilyKeys = new Set();
 const amazonFamilyAsins = new Set();
+const existingEditorialProducts = amazonExpansionSites.flatMap((site) => loadAffiliateTypescript("../../lib/content.ts").siteProducts(site));
 const existingEditorialAsins = new Set(
-  amazonExpansionSites.flatMap((site) => loadAffiliateTypescript("../../lib/content.ts").siteProducts(site))
+  existingEditorialProducts
     .map((product) => product.asin ?? product.specs.ASIN)
     .filter(Boolean),
 );
@@ -347,7 +348,9 @@ for (const product of amazonFamilyProducts) {
   if (amazonFamilyKeys.has(familyKey)) errors.push(`Duplicate Amazon family listing ${familyKey}`);
   if (!/^[A-Z0-9]{10}$/.test(product.asin ?? "")) errors.push(`Invalid ASIN for Amazon family listing ${familyKey}`);
   if (amazonFamilyAsins.has(product.asin)) errors.push(`Amazon family ASIN ${product.asin} is reused`);
-  if (existingEditorialAsins.has(product.asin)) errors.push(`Amazon family ASIN ${product.asin} duplicates an existing editorial product`);
+  const linkedEditorialProduct = product.editorialProductSlug && existingEditorialProducts.find((item) => item.site === product.site && item.slug === product.editorialProductSlug && (item.asin ?? item.specs.ASIN) === product.asin);
+  if (product.editorialProductSlug && !linkedEditorialProduct) errors.push(`Amazon family editorial reference is not the same exact product for ${familyKey}`);
+  if (existingEditorialAsins.has(product.asin) && !linkedEditorialProduct) errors.push(`Amazon family ASIN ${product.asin} duplicates an existing editorial product without an exact shared reference`);
   if (product.detailUrl !== `https://www.amazon.com/dp/${product.asin}`) errors.push(`Unexpected Amazon detail URL for ${familyKey}`);
   if (!product.title?.trim() || !product.brand?.trim() || Number(product.relevanceScore) < 5) errors.push(`Incomplete Amazon family listing ${familyKey}`);
   if (!amazonFamilyTitleMeetsPolicy(product.familySlug, product.title)) errors.push(`Amazon listing title fails semantic policy for ${familyKey}`);

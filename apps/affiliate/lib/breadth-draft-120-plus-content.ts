@@ -33,6 +33,7 @@ type OpportunityRecord = {
   };
   evidence: string[];
   note: string;
+  publicDecision?: string;
 };
 
 type ProductRecord = FamilyRecord & {
@@ -112,8 +113,8 @@ const setupPlaybookBySite: Record<BreadthSite, string> = {
 };
 
 const evidenceBoundaryBySite: Record<BreadthSite, string> = {
-  network: "A compatible title is not a performance certification. Publish no throughput, PoE, reach, environmental or protection claim that is not supported by the exact model documentation and an appropriate installed test.",
-  smarthome: "Connectivity is a control layer, not proof of safe autonomous operation. Do not promise unattended use, guaranteed detection, energy savings or continued cloud service; state hub, subscription and offline boundaries plainly.",
+  network: "A compatible listing title does not establish throughput, PoE capability, reach or environmental protection. Match each requirement to the exact model documentation, then verify the installed path with an appropriate test before depending on it.",
+  smarthome: "A connectivity badge does not establish safe autonomous operation. Check the exact model's limits for unattended use, detection, energy monitoring and offline operation, along with the required hub and subscription. Continued cloud service is not guaranteed.",
   homeoffice: "We have not tested this product or its fit in your workstation. Use the exact model's dimensions and instructions; a feature list is not a measured result.",
   baby: "This page cannot describe any accessory as childproof, sleep-safe, drowning-proof, scald-proof or a substitute for attentive care. Health and safety instructions come from authoritative guidance and the exact manufacturer's current directions, not marketplace copy.",
   pet: "This page cannot make medical, treatment, heat-protection, escape-proof, airline-approval or behavior guarantees. Verify carrier rules, habitat requirements and product instructions for the exact animal and trip, and use professional advice when risk is material.",
@@ -162,6 +163,7 @@ function buildGuide(product: ProductRecord): Guide {
   const communityDiscussion = communityByKey.get(key);
   const indexedZeroRecovery = indexedZeroRecoveryByKey.get(key);
   if (!family || !opportunity) throw new Error(`Missing breadth editorial evidence for ${key}`);
+  const decisionNote = opportunity.publicDecision ?? publicDecisionNote(opportunity.note);
 
   const alternative = family.alternative.replace(/^a\s+/i, "");
   const exactBrand = product.brand === "Brand shown on the Amazon listing" ? "the listed brand" : product.brand;
@@ -187,7 +189,7 @@ function buildGuide(product: ProductRecord): Guide {
     familySlug: family.familySlug,
     familyRole: "buying",
     title: indexedZeroRecovery?.title ?? guideTitle(family),
-    dek: recoveryDek ?? publicDecisionNote(opportunity.note),
+    dek: recoveryDek ?? decisionNote,
     category: family.category,
     publicationStatus: "published",
     releaseCandidate,
@@ -198,7 +200,7 @@ function buildGuide(product: ProductRecord): Guide {
     searchQuestion: indexedZeroRecovery?.searchQuestion ?? `How do I choose ${family.familyName.toLowerCase()}, and when is ${family.alternative} the better solution?`,
     quickAnswer: indexedZeroRecovery
       ? `${indexedZeroRecovery.choosePrimary} ${indexedZeroRecovery.chooseAlternative}`
-      : `${publicDecisionNote(opportunity.note)} Compare these requirements with ${family.alternative} before choosing the exact model.`,
+      : `${decisionNote} Compare these requirements with ${family.alternative} before choosing the exact model.`,
     governance: {
       decision: "rewrite",
       independentDemand: indexedZeroRecovery?.searchQuestion ?? opportunity.note,
@@ -218,7 +220,7 @@ function buildGuide(product: ProductRecord): Guide {
       title: `${family.familyName} pre-purchase record`,
       columns: ["Record before ordering", "Why it changes this decision"],
       rows: [
-        { label: "Use case", values: [categoryPromptBySite[family.site], publicDecisionNote(opportunity.note)] },
+        { label: "Use case", values: [categoryPromptBySite[family.site], decisionNote] },
         { label: "Linked model", values: [`${exactBrand}: ${product.title} (ASIN ${product.asin})`, "Match the actual model, dimensions, included parts and instructions; a product-family name alone does not establish fit."] },
         { label: "Simpler option", values: [family.alternative, `Keep ${alternative} when it already handles the task and the new product adds no useful capability.`] },
         { label: "Listing check date", values: [product.verifiedAt.slice(0, 10), "This historical identity check is not a current stock, price or compatibility guarantee."] },
@@ -239,7 +241,7 @@ function buildGuide(product: ProductRecord): Guide {
       ...(recoveryDecisionSection ? [recoveryDecisionSection] : []),
       {
         heading: `What changes the ${family.familyName.toLowerCase()} decision`,
-        body: publicDecisionNote(opportunity.note),
+        body: decisionNote,
       },
       {
         heading: `Which ${exactBrand} model is linked`,
@@ -262,7 +264,7 @@ function buildGuide(product: ProductRecord): Guide {
       ...opportunity.evidence.map((url, index) => ({
         name: `${sourceName(url)} decision source ${index + 1}`,
         url,
-        note: index === 0 ? "Primary or authoritative evidence used to define the product family's buying dimensions and boundaries." : "Independent supporting evidence used to challenge fit, workflow, ownership or safety assumptions.",
+        note: index === 0 ? "Background source for the buying question. Identify the exact model in manufacturer documentation before treating a statement as its specification." : "Supporting context for fit, workflow, ownership or safety questions; this is not a test of the linked product.",
       })),
       {
         name: `Amazon ASIN ${product.asin}`,

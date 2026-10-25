@@ -2,6 +2,61 @@
   "description": "Substantive published changes. Dates describe the linked content change, not an automatic build or a stock check.",
   "entries": [
     {
+      "href": "https://network.madabase.com/guides/moca-splitter-filter-checklist",
+      "updatedAt": "2026-10-21",
+      "change": "Replaced age-based part replacement with documented compatibility checks; distinguished point-of-entry filtering from Ethernet power and added provider-specific DOCSIS boundaries."
+    },
+    {
+      "href": "https://network.madabase.com/guides/poe-switch-power-budget-calculator-guide",
+      "updatedAt": "2026-10-21",
+      "change": "Added a six-device worked budget, distinguished source-side allocation from endpoint watts, and clarified negotiation, cable loss and model-specific overload behavior."
+    },
+    {
+      "href": "https://network.madabase.com/guides/mesh-wifi-node-placement-guide",
+      "updatedAt": "2026-10-21",
+      "change": "Added primary manufacturer references and separated mesh-backhaul testing from client performance with a repeatable placement record."
+    },
+    {
+      "href": "https://network.madabase.com/guides/router-placement-guide",
+      "updatedAt": "2026-10-21",
+      "change": "Added manufacturer placement evidence and a repeatable location comparison that separates ISP speed from Wi-Fi diagnosis."
+    },
+    {
+      "href": "https://baby.madabase.com/guides/nursery-sound-machine-night-light-guide",
+      "updatedAt": "2026-10-21",
+      "change": "Replaced vague volume advice with attributed AAP exposure guidance and explained why a volume percentage cannot establish a safe sound level."
+    },
+    {
+      "href": "https://baby.madabase.com/guides/bottle-parts-cleaning-routine-guide",
+      "updatedAt": "2026-10-21",
+      "change": "Added CDC cleaning and sanitizing conditions, higher-risk infant criteria and the applicable dishwasher alternative."
+    },
+    {
+      "href": "https://baby.madabase.com/guides/baby-bottle-drying-rack-storage-workflow-guide",
+      "updatedAt": "2026-10-21",
+      "change": "Corrected towel-drying advice and specified CDC rack-cleaning and protected-storage conditions."
+    },
+    {
+      "href": "https://pets.madabase.com/guides/apartment-litter-odor-control-guide",
+      "updatedAt": "2026-10-21",
+      "change": "Added veterinary litter-box care evidence and separated particle filtration from gas/odor removal using EPA guidance."
+    },
+    {
+      "href": "https://costumes.madabase.com/guides/halloween-fog-machine-lighting-power-guide",
+      "updatedAt": "2026-10-21",
+      "change": "Added a named manufacturer manual example, indoor-use and electrical limits, and an alarm plan that preserves fire protection."
+    },
+    {
+      "href": "https://homeoffice.madabase.com/guides/office-printer-stands-buying-guide",
+      "updatedAt": "2026-10-21",
+      "change": "Added an interactive and printable worksheet for operating footprint, shelf-specific load and scanner-lid clearance, with an explicitly illustrative worked example."
+    },
+    {
+      "href": "https://homeoffice.madabase.com/guides/office-lumbar-cushions-buying-guide",
+      "updatedAt": "2026-10-21",
+      "change": "Added an interactive and printable seat-depth worksheet, a worked subtraction example and repeatable checks for the actual chair and cushion."
+    },
+    {
       "href": "https://homeoffice.madabase.com/compatibility/mini-pcs",
       "updatedAt": "2026-10-20",
       "change": "Expanded to eight Tiny models, including a separate M70q Gen 2 reference, with generation-specific memory and unresolved-parts boundaries."
@@ -105,6 +160,66 @@
       "href": "https://homeoffice.madabase.com/guides/rolling-file-cabinets-buying-guide",
       "updatedAt": "2026-10-20",
       "change": "Corrected the linked item to an open letter-size file cart and compared it with an enclosed drawer cabinet."
+    },
+    {
+      "href": "https://homeoffice.madabase.com/guides/small-home-office-setup-guide",
+      "updatedAt": "2026-10-25",
+      "change": "Rebuilt the setup decision around room footprint, screen distance, chair clearance and buying only for the remaining constraint."
+    },
+    {
+      "href": "https://homeoffice.madabase.com/guides/monitor-arm-for-small-desk-guide",
+      "updatedAt": "2026-10-25",
+      "change": "Added exact load/interface, desktop attachment and folded-arm clearance checks with explicit unresolved and keep-stand outcomes."
+    },
+    {
+      "href": "https://homeoffice.madabase.com/guides/home-office-cable-management-guide",
+      "updatedAt": "2026-10-25",
+      "change": "Separated moving/fixed cable paths and model-specific travel, mounting and service-access conditions."
+    },
+    {
+      "href": "https://homeoffice.madabase.com/guides/usb-switch-vs-kvm-vs-dock-guide",
+      "updatedAt": "2026-10-25",
+      "change": "Separated peripheral, display and two-host switching roles; current UGREEN 15705 documentation is not transferred to 30768."
+    },
+    {
+      "href": "https://homeoffice.madabase.com/guides/usb-speakerphone-vs-headset-video-meetings",
+      "updatedAt": "2026-10-25",
+      "change": "Added privacy, shared seating, wired Speak2 40 variant boundaries and current Teams device-selection checks."
+    },
+    {
+      "href": "https://network.madabase.com/guides/wifi-7-vs-wifi-6-guide",
+      "updatedAt": "2026-10-25",
+      "change": "Distinguished Wi-Fi 6E from 7, with client/region/software, backhaul and complete wired-path upgrade conditions."
+    },
+    {
+      "href": "https://network.madabase.com/guides/ethernet-cable-category-guide",
+      "updatedAt": "2026-10-25",
+      "change": "Added complete-channel and construction checks, keep-existing outcomes and removed the automatic switch purchase fallback."
+    },
+    {
+      "href": "https://network.madabase.com/guides/home-ethernet-switch-guide",
+      "updatedAt": "2026-10-25",
+      "change": "Added upstream port counting, exact hardware-revision chains and separate management, PoE and link-rate decisions."
+    },
+    {
+      "href": "https://network.madabase.com/guides/usb-c-ethernet-adapter-guide",
+      "updatedAt": "2026-10-25",
+      "change": "Separated USB, Ethernet, OS, display and power paths and removed an unrelated switch as the adapter buying route."
+    },
+    {
+      "href": "https://network.madabase.com/guides/travel-router-vpn-guide",
+      "updatedAt": "2026-10-25",
+      "change": "Replaced home-mesh references with a travel-router reference, current portal limitations and documented Beryl 7 comparison."
+    },
+    {
+      "href": "https://network.madabase.com/guides/moca-2-5-vs-ethernet-run-guide",
+      "updatedAt": "2026-10-25",
+      "change": "Added provider/coax/security/node-count conditions from current linked documents and separated MoCA from endpoint PoE."
+    },
+    {
+      "href": "https://network.madabase.com/guides/poe-switch-for-home-cameras-and-access-points-guide",
+      "updatedAt": "2026-10-25",
+      "change": "Replaced non-PoE purchase references with a conditional PoE model and separated power standards, allocation, port count and data rates."
     }
   ]
 }

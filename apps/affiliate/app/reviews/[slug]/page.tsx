@@ -13,7 +13,7 @@ import { reviewCommerceProduct } from "@/lib/commerce-paths";
 import { buyerFacingBody, buyerFacingHeading, buyerFacingSummary } from "@/lib/conversion-copy";
 import { findAmazonOfferBlock } from "@/lib/amazon-offer-blocks";
 import { productEvidencePresentation } from "@/lib/evidence";
-import { effectiveContentUpdatedAt, findSearchOpportunity, searchOpportunityMetaDescription } from "@/lib/search-opportunities";
+import { effectiveContentUpdatedAt, findSearchOpportunity, reviewedSearchDescription, searchOpportunityMetaDescription } from "@/lib/search-opportunities";
 import { breadcrumbSchema, pageMetadata, productNotesSchema, productPageTitle } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 import type { Product } from "@/lib/types";
@@ -68,7 +68,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const product = findProduct(site.key, slug);
   if (!product) return {};
   const searchOpportunity = findSearchOpportunity(site.key, "product", slug);
-  return pageMetadata(site, `/reviews/${slug}`, productPageTitle(product), searchOpportunityMetaDescription(searchOpportunity, product.summary), product.amazonImage ?? product.image);
+  return pageMetadata(site, `/reviews/${slug}`, productPageTitle(product), reviewedSearchDescription(site.key, "product", slug) ?? searchOpportunityMetaDescription(searchOpportunity, product.summary), product.amazonImage ?? product.image);
 }
 
 export default async function ReviewPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -195,7 +195,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                 <p className="mt-5 text-lg leading-8 text-[var(--muted)]">{buyerFacingSummary(product.summary)}</p>
                 {effectiveUpdatedAt ? (
                   <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm font-semibold text-[var(--muted)]">
-                    <span>Prepared by the {site.name} editorial desk</span>
+                    <Link className="underline underline-offset-4" href="/about">Prepared by the {site.name} editorial desk</Link>
                     <span>Updated {effectiveUpdatedAt}</span>
                   </div>
                 ) : null}
@@ -250,6 +250,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                 ) : null}
               </div>
             </div>
+            <DecisionReference site={site.key} slug={product.slug} />
             <div className="prose-lite mt-8">
               {searchOpportunity ? <SearchOpportunityBlock opportunity={searchOpportunity} /> : null}
               <SearchOpportunityBacklinks site={site.key} kind="product" slug={slug} />
@@ -569,3 +570,4 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
     </main>
   );
 }
+import { DecisionReference } from "@/components/DecisionReference";

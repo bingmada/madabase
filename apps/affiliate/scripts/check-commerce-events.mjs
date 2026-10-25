@@ -1,0 +1,37 @@
+import assert from "node:assert/strict";
+import {loadAffiliateTypescript as load} from "./lib/load-affiliate-typescript.mjs";
+const {commercePage,knownAutomation,commerceContextChannel,validateCommerceEvent,exposureStartedAt,exposureQualified}=load("../../lib/commerce-events.ts");
+const {commerceFunnelReport}=load("../../lib/commerce-funnel-report.ts");
+const {isPublishedCommerceClick}=load("../../lib/commerce-inventory.ts");
+const {localizedMarketPages}=load("../../lib/market-content.ts");
+const event={eventType:"content_view",sessionId:"12345678-1234-4234-8234-123456789012",site:"homeoffice",path:"/guides/office-printer-stands-buying-guide",releaseId:"abc123",device:"desktop",channel:"search",source:"google",campaign:"",productSlug:"",merchant:"",position:""};
+assert.equal(validateCommerceEvent(event,"homeoffice.madabase.com").market,"us");
+assert.equal(validateCommerceEvent({...event,path:"/en-gb/reviews/caldigit-ts4-thunderbolt-dock"},"homeoffice.madabase.com").market,"gb");
+for(const path of ["/","/search?q=private","/guides/x?email=private","//evil.test/guides/a","/guides/../../privacy"]) assert.equal(commercePage(path),undefined);
+for(const delta of [{site:"network"},{sessionId:"arbitrary"},{device:"phone"},{eventType:"order"},{source:"email@example.com"},{campaign:"private search terms"},{releaseId:"../../secret"},{eventType:"cta_view",productSlug:"unknown"}]) assert.equal(validateCommerceEvent({...event,...delta},"homeoffice.madabase.com"),undefined);
+assert.equal(validateCommerceEvent(event,"evil.test"),undefined);
+assert.equal(knownAutomation("Googlebot/2.1"),true);assert.equal(knownAutomation("Mozilla HeadlessChrome"),true);assert.equal(knownAutomation("Mozilla Safari"),false);
+assert.deepEqual(commerceContextChannel("https://www.google.com/search?q=secret",""),{channel:"search",source:"google",campaign:""});
+assert.deepEqual(commerceContextChannel("https://www.pinterest.com/pin/123/","?utm_source=pinterest&utm_medium=social&utm_campaign=dock_20261022&utm_term=private"),{channel:"social",source:"pinterest",campaign:"dock_20261022"});
+assert.equal(commerceContextChannel("https://elsewhere.test/private?email=a","?utm_source=not%20safe").source,"other");
+let start=exposureStartedAt(undefined,0.5,true,100);
+assert.equal(exposureQualified(start,1099),false);assert.equal(exposureQualified(start,1100),true);
+start=exposureStartedAt(start,0.49,true,900);assert.equal(start,undefined);
+start=exposureStartedAt(start,1,true,1000);assert.equal(start,1000);assert.equal(exposureQualified(start,1999),false);
+assert.equal(exposureStartedAt(start,1,false,1500),undefined);
+const offer={...event,eventType:"cta_view",productSlug:"caldigit-ts4-thunderbolt-dock",merchant:"Amazon US",position:"compatibility-qualified-result",createdAt:"2026-10-22T01:00:00Z"};
+const sessionB="22345678-1234-4234-8234-123456789012", sessionC="32345678-1234-4234-8234-123456789012";
+const events=[{...event,createdAt:offer.createdAt},offer,offer,{...offer,eventType:"affiliate_click"},{...offer,eventType:"affiliate_click"},{...offer,eventType:"affiliate_click",sessionId:sessionB},{...event,sessionId:sessionB,createdAt:offer.createdAt},{...offer,eventType:"affiliate_click",sessionId:sessionC},{...offer,eventType:"affiliate_click",createdAt:"2026-10-23T00:00:00Z"}];
+const report=commerceFunnelReport(events,"2026-10-22T00:00:00Z","2026-10-23T00:00:00Z");
+assert.equal(report.pages[0].contentSessions,2);assert.equal(report.pages[0].matchedClickSessions,2);assert.equal(report.pages[0].clickSessionsWithoutContentView,1);
+assert.equal(report.buttons[0].exposedSessions,1);assert.equal(report.buttons[0].matchedClickSessions,1);assert.equal(report.buttons[0].clickSessionsWithoutQualifiedExposure,2);assert.equal(report.buttons[0].observedButtonCtrPercent,100);
+assert.equal(commerceFunnelReport([{...offer,eventType:"affiliate_click"}],"2026-10-22","2026-10-23").buttons[0].observedButtonCtrPercent,null);
+for(const slug of ["bc-babycare-portable-fan","bc-babycare-airy-silicone-bib"]) assert.ok(isPublishedCommerceClick("baby",slug,"Bc Babycare via CJ"));
+assert.equal(isPublishedCommerceClick("baby","bc-babycare-dino-barron-playpen","Bc Babycare via CJ"),false);
+let localizedIdentities=0;
+for(const page of localizedMarketPages.filter(p=>p.commerceFamilyAsin && !p.commercePausedReason)) {
+  assert.ok(page.commerceFamilyProductSlug,`${page.site}:${page.slug} needs canonical identity`);
+  assert.ok(isPublishedCommerceClick(page.site,page.commerceFamilyProductSlug,"Amazon US"),`Localized identity not tracked: ${page.site}:${page.slug}`);
+  localizedIdentities++;
+}
+console.log(JSON.stringify({passed:true,privacyAndPayloadValidation:true,continuousHalfVisibilityOneSecond:true,tabHiddenResetsDwell:true,duplicateSessionsDeduplicated:true,unmatchedClicksReportedSeparately:true,zeroDenominatorsAreNull:true,cjFamilyCoverage:true,localizedCanonicalIdentities:localizedIdentities},null,2));

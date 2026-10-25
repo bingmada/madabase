@@ -42,6 +42,15 @@ assert.equal(costSummary([{owned:false,cost:"-1"}]).total,null);
 assert.equal(entryTopic({site:"homeoffice",title:"ThinkCentre M720q RAM"}),"tiny");
 assert.equal(entryTopic({site:"homeoffice",title:"TS4 Thunderbolt dock"}),"displays");
 assert.equal(entryTopic({site:"network",title:"NAS Ethernet bottleneck"}),"nas");
+assert.equal(entryTopic({site:"homeoffice",title:"HL-L2405W Setup: Print Route, Paper & Wake Checks",familySlug:"monochrome-laser-printers"}),"printing");
+assert.equal(entryTopic({site:"homeoffice",title:"VF3120 Compatibility: Apple Silicon, WIA & A3 Fit",familySlug:"flatbed-document-scanners"}),"printing");
+assert.equal(entryTopic({site:"homeoffice",title:"Profile Restore on a New Computer",familySlug:"monitor-color-calibrators"}),"displays");
+assert.equal(entryTopic({site:"homeoffice",title:"USB Document Camera for Live Calls",familySlug:"usb-document-cameras"}),"meetings");
+assert.equal(entryTopic({site:"homeoffice",title:"Camera Capture and OCR",familySlug:"overhead-book-scanners"}),"printing");
+for (const href of ["/guides/small-home-office-setup-guide", "https://homeoffice.madabase.com/guides/small-home-office-setup-guide?view=layout#chair"]) {
+  assert.equal(entryTopic({site:"homeoffice",title:"Small Home Office Setup: Fit the Desk, Screen and Chair First",href}),"desks");
+}
+assert.equal(entryTopic({site:"homeoffice",title:"Choose a Chair for a Small Desk",href:"/guides/chair-fit"}),"seating");
 for(const model of ["m720q","m920q","m920x"])for(const task of ["ram","sata","nvme","second-nvme"]) for(const part of miniPcParts(model,task,32,[0,0])) assert.ok(compatibilitySources.some(x=>x.id===part.source),`No evidence for ${model}:${part.id}`);
 for(const offer of upgradeComponentOffers) {
   assert.equal(activeComponentOffers(Date.parse(offer.expiresAt)).some(x=>x.asin===offer.asin),false);

@@ -5,7 +5,7 @@ export type AmazonOfferBlock = {
   site: SiteKey;
   slug: string;
   asin: string;
-  status: "identity-drift" | "unavailable";
+  status: "identity-drift" | "unavailable" | "documentation-unverified" | "end-of-life";
   checkedAt: string;
   observedListing: string;
   reason: string;

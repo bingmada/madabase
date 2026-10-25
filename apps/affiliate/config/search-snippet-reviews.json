@@ -1,0 +1,42 @@
+{
+  "homeoffice:product:anker-675-usb-c-docking-station": {
+    "description": "Anker 675 is a fixed-height monitor stand and USB-C dock for one 4K60 screen. Check desk fit, charging and its single-display limit.",
+    "answer": "Anker 675 is a fixed-height monitor riser and USB-C dock for one external 4K60 display. It cannot raise the keyboard into a standing workstation or run two independent external screens. Measure the riser height and desk footprint, then check host video support and charging before choosing it.",
+    "referenceDate": "October 21, 2026"
+  },
+  "homeoffice:guide:portable-monitor-usb-c-dp-alt-mode-displaylink-guide": {
+    "description": "DP Alt Mode normally needs no separate driver. Diagnose USB-C video support, cables, HDMI and actual DisplayLink hardware before buying."
+  },
+  "homeoffice:product:caldigit-ts4-thunderbolt-dock": {
+    "description": "Check TS4 Mac dual-monitor limits, DisplayPort and Thunderbolt cable paths, 98W charging, and when TS5 or TS5 Plus is worth comparing.",
+    "answer": "TS4 can run two external monitors only when the exact host supports that native display count. Use DisplayPort plus a downstream Thunderbolt video path, or two downstream video paths; the ordinary USB-C data ports are not display outputs. TS4 does not add DisplayLink graphics or override a Mac chip's limit. Keep a working dock when it already meets the job.",
+    "referenceDate": "October 22, 2026"
+  },
+  "baby:guide:ergobaby-omni-breeze-forward-facing-age-guide": {
+    "description": "Omni Breeze forward-facing age is only a guide. Check size, head control and chin clearance with the original manual; no outward-facing sleep."
+  },
+  "baby:guide:ergobaby-omni-breeze-positions-by-age": {
+    "description": "Compare Omni Breeze inward, outward, hip and back positions by size and readiness. Find the original manual and checks beyond approximate ages."
+  },
+  "baby:roundup:babybjorn-harmony-vs-ergobaby-omni-breeze": {
+    "description": "Harmony or Omni Breeze? Compare front buckles, hip carry, child-size limits and caregiver adjustments, plus what to check before buying."
+  },
+  "baby:roundup:dr-browns-vs-baby-brezza-sterilizer-dryer": {
+    "description": "Compare Dr. Brown's six-bottle dryer with Baby Brezza Advanced: mixed-load fit, drying versus full-cycle timing, clearance and washing needs."
+  },
+  "baby:guide:toddler-learning-towers-buying-guide": {
+    "description": "Choose a toddler learning tower by exact recall identity, platform locks, openings and counter fit. The linked Original model's offer remains paused."
+  },
+  "network:guide:deco-be63-vs-be67-vs-be85-buying-guide": {
+    "description": "Compare Deco BE63, BE67 and BE85 by exact port layout, backhaul and pack size. Find when 2.5GbE is enough and when a 10GbE path matters."
+  },
+  "network:guide:xfinity-gateway-bridge-mode-vs-own-router-guide": {
+    "description": "Keep Xfinity's gateway, bridge it to your router, or replace the modem? Compare routing, extender and hotspot limits before buying hardware."
+  },
+  "network:guide:pass-through-ethernet-crimping-tools-buying-guide": {
+    "description": "Match Klein VDV226-110 to the correct Pass-Thru plugs, cable and blade. Use the connector matrix, check kit contents, and test each termination."
+  },
+  "smarthome:guide:aqara-hub-m3-home-assistant-matter-guide": {
+    "description": "Connect Aqara M3 to Home Assistant through Matter. Check bridge roles, IPv6, mDNS and Thread, and whether an existing hub already does the job."
+  }
+}

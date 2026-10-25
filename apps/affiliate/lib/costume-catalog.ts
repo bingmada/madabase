@@ -1,5 +1,10 @@
 import type { Prisma } from "../generated/prisma/client";
 import { getAffiliatePrisma, hasDatabaseUrl } from "./db";
+import { compareCostumePrices, costumeProductWhere } from "./costume-catalog-query";
+import { collectCostumeFamilyProducts, costumeFamilyProductMatches, costumeGuideProductWhere, costumeRelatedFamily, costumeRelatedProductMatches } from "./costume-family-selection";
+import { costumeGeneralCommerceWhere, costumeProductRequiresEyeCare } from "./costume-commerce-eligibility";
+import { costumeVariantState, costumeReviewedCommerceWhere, type CostumeVariantState } from "./costume-variant-review";
+import { collectAllCostumeProducts } from "./costume-indexable-pagination";
 
 export const costumeCatalogCategories = [
   "costumes",
@@ -42,6 +47,8 @@ export type CostumeCatalogProduct = {
   professional: boolean;
   halloween: boolean;
   rental: boolean;
+  destinationUrl: string;
+  variantState: CostumeVariantState | null;
   lastSeenAt: Date;
   authorizedImage: { url: string; altText: string | null; permissionRef: string } | null;
   activeLink: { clickToken: string; verifiedAt: Date } | null;
@@ -102,44 +109,6 @@ export function parseCostumeCatalogFilters(
   };
 }
 
-function priceWhere(price: CostumeCatalogFilters["price"]): Prisma.DecimalNullableFilter | undefined {
-  if (price === "under-50") return { lt: 50 };
-  if (price === "50-199") return { gte: 50, lt: 200 };
-  if (price === "200-999") return { gte: 200, lt: 1000 };
-  if (price === "1000-plus") return { gte: 1000 };
-  return undefined;
-}
-
-function productWhere(filters: CostumeCatalogFilters): Prisma.MerchantProductWhereInput {
-  const feature = filters.feature === "premium-professional"
-    ? { OR: [{ premium: true }, { professional: true }] }
-    : filters.feature
-      ? { [filters.feature]: true }
-      : {};
-
-  return {
-    merchant: { slug: "abracadabra-nyc", advertiserCid: "7889430" },
-    softRetiredAt: null,
-    availability: { not: "out of stock" },
-    ...(filters.category ? { categorySlug: filters.category } : {}),
-    ...(filters.price ? { price: priceWhere(filters.price) } : {}),
-    ...(filters.audience ? { audience: { has: filters.audience } } : {}),
-    ...(filters.occasion === "halloween" ? { halloween: true } : {}),
-    ...(filters.occasion === "year-round" ? { halloween: false } : {}),
-    ...feature,
-    ...(filters.q
-      ? {
-          OR: [
-            { title: { contains: filters.q, mode: "insensitive" } },
-            { brand: { contains: filters.q, mode: "insensitive" } },
-            { productType: { contains: filters.q, mode: "insensitive" } },
-            { description: { contains: filters.q, mode: "insensitive" } },
-          ],
-        }
-      : {}),
-  };
-}
-
 function productOrder(sort: CostumeCatalogSort): Prisma.MerchantProductOrderByWithRelationInput[] {
   if (sort === "price-asc") return [{ price: { sort: "asc", nulls: "last" } }, { title: "asc" }];
   if (sort === "price-desc") return [{ price: { sort: "desc", nulls: "last" } }, { title: "asc" }];
@@ -170,6 +139,7 @@ type ProductWithLaunchState = Prisma.MerchantProductGetPayload<{ include: typeof
 function catalogProduct(product: ProductWithLaunchState): CostumeCatalogProduct {
   const image = product.images[0];
   const link = product.affiliateLinks[0];
+  const variantState = costumeVariantState(product);
 
   return {
     id: product.id,
@@ -181,16 +151,18 @@ function catalogProduct(product: ProductWithLaunchState): CostumeCatalogProduct 
     categorySlug: product.categorySlug as CostumeCatalogCategory,
     tags: product.tags,
     audience: product.audience,
-    price: product.price?.toString() ?? null,
-    currency: product.currency,
-    availability: product.availability,
+    price: variantState?.identity === "matched" ? variantState.review.price : product.price?.toString() ?? null,
+    currency: variantState?.identity === "matched" ? variantState.review.currency : product.currency,
+    availability: variantState?.identity === "matched" && !variantState.review.available ? "out of stock" : product.availability,
     premium: product.premium,
     professional: product.professional,
     halloween: product.halloween,
-    rental: product.rental,
+    rental: variantState?.identity === "matched" && variantState.review.transaction === "rent",
+    destinationUrl: product.destinationUrl,
+    variantState,
     lastSeenAt: product.lastSeenAt,
     authorizedImage: image?.permissionRef ? { ...image, permissionRef: image.permissionRef } : null,
-    activeLink: link?.verifiedAt ? { clickToken: link.clickToken, verifiedAt: link.verifiedAt } : null,
+    activeLink: link?.verifiedAt && !costumeProductRequiresEyeCare(product) && !variantState?.hold ? { clickToken: link.clickToken, verifiedAt: link.verifiedAt } : null,
     editorial: product.editorial,
   };
 }
@@ -200,7 +172,19 @@ export async function listCostumeCatalogProducts(filters: CostumeCatalogFilters)
 
   try {
     const prisma = getAffiliatePrisma();
-    const where = productWhere(filters);
+    const where = costumeProductWhere(filters);
+    if (filters.sort === "price-asc" || filters.sort === "price-desc") {
+      // Sort the displayed dated prices before pagination. SQL feed prices may
+      // predate a reviewed observation and cannot order these cards correctly.
+      const all = await collectAllCostumeProducts(async (afterId, take) => {
+        const rows = await prisma.merchantProduct.findMany({ where: { ...where, ...(afterId ? { id: { gt: afterId } } : {}) }, include: productInclude, orderBy: [{ id: "asc" }], take });
+        return rows.map(catalogProduct);
+      }, (product) => !product.variantState?.hold);
+      all.sort((a, b) => compareCostumePrices(a, b, filters.sort === "price-desc"));
+      const totalPages = Math.max(1, Math.ceil(all.length / pageSize));
+      const page = Math.min(filters.page, totalPages);
+      return { available: true, items: all.slice((page - 1) * pageSize, page * pageSize), total: all.length, page, pageSize, totalPages };
+    }
     const total = await prisma.merchantProduct.count({ where });
     const totalPages = Math.max(1, Math.ceil(total / pageSize));
     const page = Math.min(filters.page, totalPages);
@@ -262,23 +246,22 @@ export async function findCostumeCatalogAlias(slugPrefix: string) {
 }
 
 export async function relatedCostumeCatalogProducts(product: CostumeCatalogProduct, take = 3) {
-  if (!hasDatabaseUrl()) return [];
+  const family = costumeRelatedFamily(product);
+  const where = family ? costumeGuideProductWhere(family, product.categorySlug) : null;
+  if (!where || !hasDatabaseUrl()) return [];
   try {
     const prisma = getAffiliatePrisma();
-    const products = await prisma.merchantProduct.findMany({
-      where: {
-        id: { not: product.id },
-        categorySlug: product.categorySlug,
-        merchant: { slug: "abracadabra-nyc", advertiserCid: "7889430" },
-        softRetiredAt: null,
-        availability: { not: "out of stock" },
-      },
-      include: productInclude,
-      orderBy: productOrder("featured"),
-      take,
-    });
-
-    return products.map(catalogProduct);
+    return await collectCostumeFamilyProducts(async (skip, pageTake) => {
+      const products = await prisma.merchantProduct.findMany({
+        where: { ...where, id: { not: product.id } },
+        include: productInclude,
+        orderBy: [...productOrder("featured"), { id: "asc" }],
+        skip,
+        take: pageTake,
+      });
+      return products.map(catalogProduct);
+    }, (candidate) => candidate.id !== product.id && isCostumeProductIndexable(candidate)
+      && costumeRelatedProductMatches(product, candidate), Math.min(Math.max(take, 1), 3));
   } catch {
     console.error("Related Costume product query failed.");
     return [];
@@ -287,7 +270,9 @@ export async function relatedCostumeCatalogProducts(product: CostumeCatalogProdu
 
 export function isCostumeProductIndexable(product: CostumeCatalogProduct) {
   return Boolean(
-    product.editorial?.status === "published"
+    !costumeProductRequiresEyeCare(product)
+      && !product.variantState?.hold
+      && product.editorial?.status === "published"
       && product.editorial.indexable
       && product.authorizedImage
       && product.activeLink
@@ -295,20 +280,61 @@ export function isCostumeProductIndexable(product: CostumeCatalogProduct) {
   );
 }
 
+export async function listCostumeGuideProducts(family: string, category: CostumeCatalogCategory) {
+  const where = costumeGuideProductWhere(family, category);
+  if (!where || !hasDatabaseUrl()) return [];
+  try {
+    const prisma = getAffiliatePrisma();
+    return await collectCostumeFamilyProducts(async (skip, take) => {
+      const products = await prisma.merchantProduct.findMany({
+        where,
+        include: productInclude,
+        orderBy: [...productOrder("featured"), { id: "asc" }],
+        skip,
+        take,
+      });
+      return products.map(catalogProduct);
+    }, (product) => isCostumeProductIndexable(product) && costumeFamilyProductMatches(product, family, category));
+  } catch {
+    console.error("Costume guide product query failed.");
+    return [];
+  }
+}
+
+function indexableCostumeWhere(category?: CostumeCatalogCategory): Prisma.MerchantProductWhereInput {
+  return {
+    merchant: { slug: "abracadabra-nyc", advertiserCid: "7889430" },
+    softRetiredAt: null,
+    ...(category ? { categorySlug: category } : {}),
+    availability: { not: "out of stock" },
+    images: { some: { usageStatus: "authorized", permissionRef: { not: null } } },
+    affiliateLinks: { some: { site: "costume", active: true, verifiedAt: { not: null } } },
+    editorial: { is: { status: "published", indexable: true } },
+    AND: [costumeGeneralCommerceWhere(), costumeReviewedCommerceWhere()],
+  };
+}
+
+export async function listAllIndexableCostumeProducts() {
+  if (!hasDatabaseUrl()) return [];
+  const prisma = getAffiliatePrisma();
+  const where = indexableCostumeWhere();
+  return collectAllCostumeProducts(async (afterId, take) => {
+    const products = await prisma.merchantProduct.findMany({
+      where: { ...where, ...(afterId ? { id: { gt: afterId } } : {}) },
+      include: productInclude,
+      orderBy: [{ id: "asc" }],
+      take,
+    });
+    return products.map(catalogProduct);
+  }, isCostumeProductIndexable);
+}
+
 export async function listIndexableCostumeProducts(take = 30, category?: CostumeCatalogCategory) {
   if (!hasDatabaseUrl()) return [];
   try {
     const prisma = getAffiliatePrisma();
     const products = await prisma.merchantProduct.findMany({
-      where: {
-        merchant: { slug: "abracadabra-nyc", advertiserCid: "7889430" },
-        softRetiredAt: null,
-        ...(category ? { categorySlug: category } : {}),
-        availability: { not: "out of stock" },
-        images: { some: { usageStatus: "authorized", permissionRef: { not: null } } },
-        affiliateLinks: { some: { site: "costume", active: true, verifiedAt: { not: null } } },
-        editorial: { is: { status: "published", indexable: true } },
-      },
+      where: indexableCostumeWhere(category),
       include: productInclude,
       orderBy: [{ editorial: { publishedAt: "desc" } }, ...productOrder("featured")],
       take: Math.min(Math.max(take, 1), 100),
@@ -335,6 +361,7 @@ export async function listCuratedCostumeProducts(slugs: string[]) {
         availability: { not: "out of stock" },
         images: { some: { usageStatus: "authorized", permissionRef: { not: null } } },
         affiliateLinks: { some: { site: "costume", active: true, verifiedAt: { not: null } } },
+        AND: [costumeGeneralCommerceWhere(), costumeReviewedCommerceWhere()],
       },
       include: productInclude,
     });
@@ -342,7 +369,7 @@ export async function listCuratedCostumeProducts(slugs: string[]) {
 
     return uniqueSlugs.flatMap((slug) => {
       const product = bySlug.get(slug);
-      return product?.authorizedImage && product.activeLink ? [product] : [];
+      return product?.authorizedImage && product.activeLink && !costumeProductRequiresEyeCare(product) ? [product] : [];
     });
   } catch {
     console.error("Curated Costume product query failed.");
@@ -357,6 +384,7 @@ export async function getCostumeCatalogStats() {
     const base: Prisma.MerchantProductWhereInput = {
       merchant: { slug: "abracadabra-nyc", advertiserCid: "7889430" },
       softRetiredAt: null,
+      AND: [costumeGeneralCommerceWhere(), costumeReviewedCommerceWhere()],
     };
     const [total, available, premium, professional, halloween, authorizedImages, activeLinks] = await Promise.all([
       prisma.merchantProduct.count({ where: base }),

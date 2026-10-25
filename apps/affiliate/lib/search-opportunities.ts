@@ -1,5 +1,7 @@
 import { siteGuides, siteProducts, siteRoundups } from "./content";
 import { focusedSearchAnswer } from "./focused-content-recovery";
+import { reviewedGuideContent } from "./reviewed-guide-content";
+import snippetReviews from "../config/search-snippet-reviews.json";
 import { portfolioRankingOpportunities, portfolioRankingRefreshAt } from "./portfolio-ranking-opportunities";
 import type { SiteKey } from "./types";
 
@@ -12,6 +14,7 @@ export type SearchOpportunity = {
   query: string;
   answer: string;
   updatedAt: string;
+  metaDescription?: string;
   preferredPaths?: string[];
 };
 
@@ -959,8 +962,17 @@ function overlap(left: Set<string>, right: Set<string>) {
 
 export function findSearchOpportunity(site: SiteKey, kind: SearchOpportunityKind, slug: string) {
   const opportunity = searchOpportunities.find((item) => item.site === site && item.kind === kind && item.slug === slug);
+  const reviewed = kind === "guide" ? reviewedGuideContent(site, slug) : undefined;
+  const snippet = (snippetReviews as Record<string,{description:string;answer?:string;referenceDate?:string}>)[`${site}:${kind}:${slug}`];
+  if (opportunity && reviewed?.quickAnswer) return {...opportunity,answer:reviewed.quickAnswer,query:reviewed.searchQuestion ?? opportunity.query,updatedAt:"October 22, 2026",metaDescription:snippet?.description};
+  if (opportunity && snippet?.answer) return {...opportunity,answer:snippet.answer,updatedAt:snippet.referenceDate ?? opportunity.updatedAt,metaDescription:snippet.description};
   const answer = focusedSearchAnswer(site, kind, slug);
-  return opportunity && answer ? { ...opportunity, answer, updatedAt: "October 13, 2026" } : opportunity;
+  const result = opportunity && answer ? { ...opportunity, answer, updatedAt: "October 13, 2026" } : opportunity;
+  return result && snippet ? {...result,metaDescription:snippet.description} : result;
+}
+
+export function reviewedSearchDescription(site: SiteKey, kind: SearchOpportunityKind, slug: string) {
+  return (snippetReviews as Record<string,{description:string}>)[`${site}:${kind}:${slug}`]?.description;
 }
 
 export function searchOpportunityUpdatedAt(site: SiteKey, kind: SearchOpportunityKind, slug: string) {
@@ -968,10 +980,7 @@ export function searchOpportunityUpdatedAt(site: SiteKey, kind: SearchOpportunit
 }
 
 export function searchOpportunityMetaDescription(opportunity?: SearchOpportunity, fallback?: string) {
-  const value = (opportunity?.answer ?? fallback ?? "").replace(/\s+/g, " ").trim();
-  if (value.length <= 158) return value;
-  const shortened = value.slice(0, 155).replace(/\s+\S*$/, "").trim();
-  return `${shortened}…`;
+  return (opportunity?.metaDescription ?? opportunity?.answer ?? fallback ?? "").replace(/\s+/g, " ").trim();
 }
 
 export function effectiveContentUpdatedAt(contentUpdatedAt?: string, opportunityUpdatedAt?: string) {

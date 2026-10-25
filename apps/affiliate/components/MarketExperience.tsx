@@ -7,8 +7,8 @@ import { JsonLd } from "./JsonLd";
 import {
   basePathForMarketPage,
   indexableLocalizedMarketPagesForSite,
+  isIndexableLocalizedMarketPage,
   localizedMarketPages,
-  localizedMarketPagesForSite,
   localizedMarketPath,
   localizedMarketPathForBasePath,
   marketHomeCopy,
@@ -104,6 +104,16 @@ export function MarketEditionNav({
   currentMarket: MarketProfile;
   basePath?: string;
 }) {
+  const page = localizedMarketPages.find(
+    (item) => item.site === site.key && basePathForMarketPage(item) === basePath,
+  );
+  if (basePath !== "/" && (!page || !isIndexableLocalizedMarketPage(page))) {
+    return (
+      <nav className="mt-8 border-t border-[var(--border)] pt-6" aria-label="Original research">
+        <Link className="button-secondary" href={basePath}>Read the original research in English</Link>
+      </nav>
+    );
+  }
   return (
     <nav className="mt-8 border-t border-[var(--border)] pt-6" aria-label={`${site.name}: ${currentMarket.labels.otherEditions}`}>
       <p className="text-xs font-bold uppercase tracking-[0.12em] text-[var(--muted)]">{currentMarket.labels.otherEditions}</p>
@@ -127,21 +137,12 @@ export function MarketEditionNav({
 export function MarketHome({ site, market }: { site: SiteConfig; market: MarketProfile }) {
   const copy = marketHomeCopy[market.key][site.key];
   if (!copy) return null;
-  const pages = localizedMarketPagesForSite(site.key, market.key);
   const indexablePages = indexableLocalizedMarketPagesForSite(site.key, market.key);
-  const indexablePageKeys = new Set(
-    indexablePages.map(({ page }) => `${page.route}:${page.slug}`),
-  );
-  const featured = [
-    ...indexablePages,
-    ...pages.filter(
-      ({ page }) => !indexablePageKeys.has(`${page.route}:${page.slug}`),
-    ),
-  ].slice(0, 6);
+  const featured = indexablePages.slice(0, 6);
   const directory = (["reviews", "best", "guides", "tools", "categories"] as const)
     .map((route) => ({
       route,
-      pages: pages.filter((item) => item.page.route === route),
+      pages: indexablePages.filter((item) => item.page.route === route),
     }))
     .filter((group) => group.pages.length);
   const url = absoluteUrl(site, marketPath(market));
@@ -183,6 +184,7 @@ export function MarketHome({ site, market }: { site: SiteConfig; market: MarketP
           <div>
             <p className="eyebrow">{market.labels.featuredDecision}</p>
             <div className="mt-5 grid gap-5">
+              {!featured.length ? <p className="panel p-6"><Link className="font-bold underline" href="/">Read the original English research library</Link></p> : null}
               {featured.map(({ page, variant }) => (
                 <Link
                   className="panel block p-6 transition hover:-translate-y-0.5 hover:shadow-[var(--shadow)]"
@@ -258,7 +260,7 @@ export function BaseMarketEditionLinks({ site, basePath }: { site: SiteConfig; b
   const page = localizedMarketPages.find(
     (item) => item.site === site.key && basePathForMarketPage(item) === basePath,
   );
-  if (!page) return null;
+  if (!page || !isIndexableLocalizedMarketPage(page)) return null;
 
   return (
     <nav className="not-prose mt-7 rounded-md border border-[var(--border)] bg-white p-5" aria-label={`${site.name}: country editions`}>
@@ -346,8 +348,8 @@ export function LocalizedMarketContent({
       : undefined);
   const commerceIsAlternative = Boolean(product && commerceProduct && product.slug !== commerceProduct.slug);
   const displayName = product?.amazonTitle ?? product?.name ?? page.sourceTitle ?? page.slug;
-  const displayImage =
-    page.image ?? product?.amazonImage ?? product?.image ?? site.heroImage;
+  const displayImage = page.image
+    ?? (page.route === "guides" ? undefined : product?.amazonImage ?? product?.image ?? site.heroImage);
   const marketProduct = commerceProduct
     ? {
         ...commerceProduct,
@@ -358,9 +360,9 @@ export function LocalizedMarketContent({
         })),
       }
     : undefined;
-  const commerceFamilyIdentity = page.commerceFamilyAsin && page.commerceFamilyTitle
+  const commerceFamilyIdentity = page.commerceFamilyAsin && page.commerceFamilyTitle && page.commerceFamilyProductSlug
     ? {
-        slug: `family-${page.slug}-${page.commerceFamilyAsin.toLowerCase()}`,
+        slug: page.commerceFamilyProductSlug,
         name: page.commerceFamilyTitle,
         amazonTitle: page.commerceFamilyTitle,
         asin: page.commerceFamilyAsin,
@@ -374,6 +376,10 @@ export function LocalizedMarketContent({
         label: market.labels.cta,
         priceNote: market.labels.oneLink,
       }
+    : undefined;
+  const familyDecision = !commercePausedReason
+    && page.decisionPurchase?.asin === commerceFamilyIdentity?.asin
+    ? page.decisionPurchase
     : undefined;
   const basePath = basePathForMarketPage(page);
   const localizedPath = localizedMarketPath(market, page);
@@ -400,7 +406,7 @@ export function LocalizedMarketContent({
           inLanguage: market.languageTag,
           contentLocation: { "@type": "Country", name: market.countryName },
           dateModified: dateModified(page.updatedAt),
-          image: absoluteUrl(site, displayImage),
+          image: displayImage ? absoluteUrl(site, displayImage) : undefined,
           about: product
             ? {
                 "@type": "Thing",
@@ -442,7 +448,7 @@ export function LocalizedMarketContent({
                 <p className="mt-2 text-sm leading-5">{page.commerceFamilyTitle}</p>
                 <p className="mt-2 text-sm leading-5 text-[var(--muted)]">{commercePausedReason}</p>
               </section>
-            ) : (marketProduct && marketProduct.offers.length) || (commerceFamilyIdentity && commerceFamilyOffer) ? (
+            ) : !familyDecision && ((marketProduct && marketProduct.offers.length) || (commerceFamilyIdentity && commerceFamilyOffer)) ? (
               <section className="mt-4 rounded-md border border-[var(--border)] bg-white p-4 sm:mt-5" aria-label="First-screen retailer option" data-first-viewport-commerce="true">
                 <p className="eyebrow">{commerceIsAlternative ? "Different product · verified alternative" : market.labels.quickAnswer}</p>
                 <p className="mt-2 text-sm font-semibold leading-5 text-[var(--muted)]">
@@ -470,6 +476,17 @@ export function LocalizedMarketContent({
                 />
               ) : null}
             </section>
+            {familyDecision && commerceFamilyIdentity && commerceFamilyOffer ? (
+              <aside className="mt-4 rounded-md border border-[var(--border)] bg-white p-5" aria-label={`Next step for ${familyDecision.model}`} data-guide-decision-purchase="true">
+                <h2 className="text-lg font-bold">When {familyDecision.model} fits</h2>
+                <p className="mt-2 text-sm leading-6">{familyDecision.qualifies}</p>
+                <p className="mt-3 text-sm leading-6 text-[var(--muted)]">{familyDecision.stop}</p>
+                <div className="mt-3">
+                  <AffiliateButton site={site.key} product={commerceFamilyIdentity} offer={commerceFamilyOffer} market={market.key} modelLabel={familyDecision.model} position={`market-${market.key}-decision-exact-model`} resolveCreatorsListing={false} sticky />
+                </div>
+                <p className="mt-2 text-sm leading-6 text-[var(--muted)]">{familyDecision.keep}</p>
+              </aside>
+            ) : null}
             <div className="prose-lite mt-9">
               {variant.sections.map((section) => (
                 <section key={section.heading}>
@@ -540,9 +557,9 @@ export function LocalizedMarketContent({
             <MarketEditionNav site={site} currentMarket={market} basePath={basePath} />
           </article>
           <aside className="h-fit lg:sticky lg:top-24">
-            <div className="relative aspect-[4/3] overflow-hidden rounded-md bg-[var(--surface-muted)]">
-              <Image className="object-cover" src={displayImage} alt={displayName} fill priority sizes="(min-width: 1024px) 340px, 100vw" />
-            </div>
+            {displayImage ? <div className="relative aspect-[4/3] overflow-hidden rounded-md bg-[var(--surface-muted)]">
+              <Image className="object-cover" src={displayImage} alt={page.imageAlt ?? displayName} fill priority sizes="(min-width: 1024px) 340px, 100vw" />
+            </div> : null}
             <div className="panel mt-5 p-5 text-sm leading-6 text-[var(--muted)]">
               <strong className="text-[var(--text)]">{market.amazonStore}:</strong> {market.labels.oneLink}
             </div>

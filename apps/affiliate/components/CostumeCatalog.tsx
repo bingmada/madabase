@@ -2,8 +2,11 @@ import { ArrowLeft, ArrowRight, ImageOff, Link2Off, Search, ShieldCheck } from "
 import Link from "next/link";
 import type { SiteConfig } from "@/lib/sites";
 import { TrackedCommerceLink } from "./TrackedCommerceLink";
+import { costumeEyeCareNote, costumeEyeCareSource, costumeProductRequiresEyeCare } from "@/lib/costume-commerce-eligibility";
+import { costumeObservationDate, costumeTransactionLabel } from "@/lib/costume-variant-review";
 import {
   formatCostumePrice,
+  isCostumeProductIndexable,
   listCostumeCatalogProducts,
   type CostumeCatalogCategory,
   type CostumeCatalogFilters,
@@ -27,9 +30,12 @@ function audienceLabel(audience: string[]) {
   return audience.length ? audience.join(" · ") : "Audience not specified";
 }
 
-export function CostumeCatalogCard({ product, retailerCta = false }: { product: CostumeCatalogProduct; retailerCta?: boolean }) {
+export function CostumeCatalogCard({ product, retailerCta = false, horizontal = false }: { product: CostumeCatalogProduct; retailerCta?: boolean; horizontal?: boolean }) {
+  if (costumeProductRequiresEyeCare(product)) return null;
+  const transaction = costumeTransactionLabel(product.variantState);
+  const observation = product.variantState?.identity === "matched" ? product.variantState.review : null;
   return (
-    <article className="panel flex h-full flex-col overflow-hidden">
+    <article className={`panel flex h-full flex-col overflow-hidden ${horizontal ? "sm:grid sm:grid-cols-[minmax(180px,.65fr)_minmax(0,1.35fr)]" : ""}`}>
       <div className="costume-card-art relative grid min-h-48 content-between overflow-hidden p-5">
         {product.authorizedImage ? (
           <>
@@ -49,7 +55,7 @@ export function CostumeCatalogCard({ product, retailerCta = false }: { product: 
           {product.premium ? <span className="costume-chip">$1,000+</span> : null}
           {product.professional ? <span className="costume-chip">Professional</span> : null}
           {product.halloween ? <span className="costume-chip">Halloween</span> : null}
-          {product.rental ? <span className="costume-chip">Rental</span> : null}
+          {transaction ? <span className="costume-chip">{transaction}</span> : null}
         </div>
         {!product.authorizedImage ? (
           <div className="relative z-10 flex items-center gap-2 text-xs font-black uppercase tracking-[0.14em] text-white/80">
@@ -61,18 +67,16 @@ export function CostumeCatalogCard({ product, retailerCta = false }: { product: 
       <div className="flex flex-1 flex-col p-5">
         <p className="eyebrow">{product.brand || product.productType || "Abracadabra NYC"}</p>
         <h2 className="mt-2 text-xl font-bold leading-7">{product.title}</h2>
-        <p className="mt-3 text-sm font-semibold text-[var(--brand-strong)]">{formatCostumePrice(product)} · {product.availability}</p>
+        <p className="mt-3 text-sm font-semibold text-[var(--brand-strong)]">{formatCostumePrice(product)} · {observation ? `observed ${costumeObservationDate(observation.observedAt)}` : `feed observed ${costumeObservationDate(product.lastSeenAt.toISOString())}`}</p>
+        {observation?.selectedOptions.length ? <p className="mt-2 text-sm font-semibold">Selected: {observation.selectedOptions.join(" / ")}</p> : null}
         <p className="mt-2 flex-1 text-sm leading-6 text-[var(--muted)]">{audienceLabel(product.audience)}</p>
         <div className="mt-5 flex flex-wrap gap-2">
           <Link className="button-secondary self-start" href={`/products/${product.slug}`}>
             View product details
             <ArrowRight aria-hidden="true" size={16} />
           </Link>
-          {retailerCta && product.activeLink && product.authorizedImage && product.availability !== "out of stock" ? (
-            <Link className="button-primary self-start" href={`/go/cj/${product.activeLink.clickToken}`} rel="nofollow sponsored">
-              Check current price &amp; availability
-              <ArrowRight aria-hidden="true" size={16} />
-            </Link>
+          {retailerCta && product.activeLink && isCostumeProductIndexable(product) ? (
+            <TrackedCommerceLink href={`/go/cj/${product.activeLink.clickToken}`} label="Check current price & availability" merchant="Abracadabra NYC" position="costume-catalog-retailer" productName={product.title} productSlug={product.slug} site="costume" />
           ) : null}
         </div>
       </div>
@@ -233,20 +237,37 @@ export async function CostumeCatalogExplorer({
 }
 
 export function CostumePurchaseState({ product, firstViewport = false }: { product: CostumeCatalogProduct; firstViewport?: boolean }) {
-  const ready = Boolean(product.activeLink && product.authorizedImage && product.availability !== "out of stock");
+  if (costumeProductRequiresEyeCare(product)) return (
+    <section className="panel p-5" aria-label="Eye-care requirements" data-costume-commerce-hold="eye-care">
+      <h2 className="text-xl font-bold">Eye-care requirements come first</h2>
+      <p className="mt-3 text-sm leading-6 text-[var(--muted)]">{costumeEyeCareNote}</p>
+      <a className="mt-3 inline-block font-semibold underline" href={costumeEyeCareSource}>Read FDA guidance on decorative contact lenses</a>
+    </section>
+  );
+  if (product.variantState?.hold) return (
+    <section className="panel p-5" aria-label="Selected option needs confirmation" data-costume-commerce-hold={product.variantState.identity === "conflict" ? "identity" : !product.variantState.review.available ? "unavailable" : "details-conflict"}>
+      <Link2Off aria-hidden="true" className="text-[var(--brand)]" size={22} />
+      <h2 className="mt-4 text-xl font-bold">{product.variantState.identity === "matched" && !product.variantState.review.available ? "Selected option unavailable when checked" : "Resolve the selected option first"}</h2>
+      <p className="mt-3 text-sm leading-6 text-[var(--muted)]">{product.variantState.hold}</p>
+      <p className="mt-3 text-sm leading-6 text-[var(--muted)]">{product.variantState.identity === "matched" ? product.variantState.review.notes.join(" ") : "The earlier review cannot be applied to the changed listing."}</p>
+      <Link className="button-secondary mt-4" href="#exact-variant-review">Read the option checks</Link>
+    </section>
+  );
+  const ready = isCostumeProductIndexable(product);
 
   if (ready && product.activeLink) {
     return (
       <div className="panel p-5">
         <ShieldCheck aria-hidden="true" className="text-[var(--brand)]" size={22} />
-        <h2 className="mt-4 text-xl font-bold">Available at Abracadabra NYC</h2>
-        <p className="mt-3 text-sm leading-6 text-[var(--muted)]">Check the exact variant, current availability, shipping, and return terms on the retailer page.</p>
+        <h2 className="mt-4 text-xl font-bold">Check this option at Abracadabra NYC</h2>
+        <p className="mt-3 text-sm leading-6 text-[var(--muted)]">{product.variantState?.review.selectedOptions.length ? `Selected: ${product.variantState.review.selectedOptions.join(" / ")}. ` : ""}Recheck live availability, shipping and terms. A listed option does not confirm individual fit or an event-date reservation.</p>
+        {product.variantState?.identity === "matched" && product.variantState.review.transaction === "unknown" ? <p className="mt-3 text-sm leading-6 text-[var(--muted)]">The option does not explicitly identify rent or buy; confirm the transaction before paying.</p> : null}
         {firstViewport ? (
           <div className="mt-5">
             <TrackedCommerceLink
               firstViewport
               href={`/go/cj/${product.activeLink.clickToken}`}
-              label="Check current price & availability at Abracadabra NYC"
+              label="Check this exact option at Abracadabra NYC"
               merchant="Abracadabra NYC"
               position="costume-product-first-viewport"
               productName={product.title}
@@ -255,7 +276,7 @@ export function CostumePurchaseState({ product, firstViewport = false }: { produ
             />
           </div>
         ) : (
-          <Link className="button-primary mt-5" href={`/go/cj/${product.activeLink.clickToken}`} rel="nofollow sponsored">Check current price &amp; availability at Abracadabra NYC <ArrowRight aria-hidden="true" size={16} /></Link>
+          <div className="mt-5"><TrackedCommerceLink href={`/go/cj/${product.activeLink.clickToken}`} label="Check this exact option at Abracadabra NYC" merchant="Abracadabra NYC" position="costume-product-retailer" productName={product.title} productSlug={product.slug} site="costume" /></div>
         )}
       </div>
     );

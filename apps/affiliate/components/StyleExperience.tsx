@@ -7,6 +7,7 @@ import type { SiteConfig } from "@/lib/sites";
 import type { Guide, Product, Roundup } from "@/lib/types";
 import { AffiliateButtonGroup } from "./AffiliateButton";
 import { SearchForm } from "../../shared/SearchControls";
+import { NavigationDisclosure } from "./NavigationDisclosure";
 
 export function StyleChrome({ site, children }: { site: SiteConfig; children: React.ReactNode }) {
   return (
@@ -27,7 +28,7 @@ export function StyleChrome({ site, children }: { site: SiteConfig; children: Re
             <Link href="/categories/styling">Styling guides</Link>
             <Link href="/#collections">The edit</Link>
           </nav>
-          <details className="style-mobile-nav">
+          <NavigationDisclosure className="style-mobile-nav">
             <summary><Menu aria-hidden="true" size={18} /> Browse</summary>
             <nav aria-label="Mobile navigation">
               <Link href="/search">Search the library</Link>
@@ -39,7 +40,7 @@ export function StyleChrome({ site, children }: { site: SiteConfig; children: Re
               <Link href="/categories/styling">Styling guides</Link>
               <Link href="/#collections">The edit</Link>
             </nav>
-          </details>
+          </NavigationDisclosure>
         </div>
       </header>
       <div className="discovery-strip"><div className="style-shell"><SearchForm compact /></div></div>

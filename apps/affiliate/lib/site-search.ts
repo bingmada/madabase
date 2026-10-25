@@ -2,13 +2,18 @@ import { miniPcProfiles } from "./tiny-models";
 import { siteGuides, siteProducts, siteRoundups, siteTools } from "./content";
 import type { SiteKey } from "./types";
 import type { SearchEntry } from "../../shared/content-search";
+import { reviewedGuideContent } from "./reviewed-guide-content";
 
 export const searchSites: SiteKey[] = ["homeoffice", "network", "smarthome", "baby", "pet", "style", "costume"];
 const hosts: Record<SiteKey, string> = { homeoffice: "homeoffice", network: "network", smarthome: "smarthome", baby: "baby", pet: "pets", style: "style", costume: "costumes" };
 export function siteSearchIndex(site: SiteKey): SearchEntry[] {
   const visible = (item: { publicationStatus?: string; discoveryExcluded?: boolean; sitemapExcluded?: boolean }) => item.publicationStatus !== "draft" && !item.discoveryExcluded && !item.sitemapExcluded;
   const result: SearchEntry[] = [
-    ...siteGuides(site).filter(visible).map((item) => ({ site, kind: "guide" as const, title: item.title, summary: item.dek, href: `/guides/${item.slug}`, category: item.category,
+    ...siteGuides(site).filter(visible).map((item) => ({ site, kind: "guide" as const, title: item.title, summary: item.dek, href: `/guides/${item.slug}`, category: item.category, familySlug:item.familySlug,
+      searchText: (() => {
+        const reviewed = reviewedGuideContent(site, item.slug);
+        return reviewed ? [reviewed.searchQuestion, reviewed.quickAnswer, ...reviewed.sections.map((section) => `${section.heading} ${section.body}`)].join(" ") : item.quickAnswer;
+      })(),
       modelIds: item.slug.match(/^thinkcentre-(m(?:720q|920q|920x))-upgrade-compatibility-guide$/)?.slice(1),
       aliases: /^thinkcentre-m(720q|920q|920x)-upgrade-compatibility-guide$/.test(item.slug) ? [
         ...item.sections.map((section) => `${section.heading} ${section.body}`),

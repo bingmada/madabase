@@ -31,7 +31,7 @@ export function OwnershipCostCalculator() {
     setExample(false);
     setForms((previous) => previous.map((form, position) => position === index ? { ...form, [key]: value } : form) as [Form, Form]);
   }
-  return <section className="ownership-calculator" aria-labelledby={`${id}-title`}>
+  return <section className="ownership-calculator" id="ownership-cost-calculator" aria-labelledby={`${id}-title`} data-clarity-mask="true">
     <h2 id={`${id}-title`}>Compare the complete ownership cost</h2>
     <p>Enter both options in one currency. Blank means unknown, not free. Enter 0 only for a cost you know does not apply. Inputs stay in this page and are not saved.</p>
     <div className="ownership-controls">

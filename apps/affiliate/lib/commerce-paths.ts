@@ -16,7 +16,7 @@ const okinRollingDeskAlternative: Product = {
   category: "desks",
   image: "",
   summary: "A compact electric sit-stand desk sold in a configuration with lockable casters.",
-  verdict: "Treat this as a current retailer alternative, not as a replacement for the editorial verdict on another desk.",
+  verdict: "This is a retailer alternative checked on September 8, 2026. Confirm the listing again before buying; the editorial verdict on another desk does not apply to it.",
   bestFor: "A compact mobile workstation where lockable casters are a real requirement",
   priceBand: "$$",
   rating: 0,
@@ -43,7 +43,7 @@ const okinRollingDeskAlternative: Product = {
     {
       name: "Amazon listing for ASIN B0FH4RDV1Q",
       url: "https://www.amazon.com/dp/B0FH4RDV1Q",
-      note: "Retailer listing used only to verify the current product identity, selected wheel configuration, availability, and buying terms.",
+      note: "Listing identity and wheel configuration checked on September 8, 2026. Recheck availability and buying terms at the retailer.",
     },
   ],
   offers: [
@@ -55,6 +55,12 @@ const okinRollingDeskAlternative: Product = {
     },
   ],
 };
+
+// These are intentionally excluded from editorial discovery, but their offers
+// are rendered as explicitly labelled alternatives on selected pages.
+export function explicitCommerceAlternatives() {
+  return [okinRollingDeskAlternative];
+}
 
 export function findCommerceProduct(site: SiteKey, slug: string) {
   return findProduct(site, slug)
@@ -108,10 +114,7 @@ function categoryProducts(site: SiteKey, category: string) {
 }
 
 export function categoryCommerceProduct(site: SiteKey, category: string) {
-  return firstPurchasable([
-    ...categoryProducts(site, category),
-    ...siteProducts(site),
-  ]);
+  return firstPurchasable(categoryProducts(site, category));
 }
 
 /**

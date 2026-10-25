@@ -1,6 +1,190 @@
 [
   {
     "site": "homeoffice",
+    "title": "Home Office Cable Management: Fixed and Standing Desk Paths",
+    "href": "https://homeoffice.madabase.com/guides/home-office-cable-management-guide",
+    "summary": "Map fixed and moving cables, preserve chair clearance and service access, and size clips or trays after checking the full desk and monitor movement.",
+    "updatedAt": "2026-10-25",
+    "change": "Separated moving/fixed cable paths and model-specific travel, mounting and service-access conditions."
+  },
+  {
+    "site": "homeoffice",
+    "title": "Monitor Arm for a Small Desk: Load, Clamp and Wall Clearance",
+    "href": "https://homeoffice.madabase.com/guides/monitor-arm-for-small-desk-guide",
+    "summary": "Check the exact display, mounting interface, desk construction and folded-arm space before using a monitor arm to recover room on a small desk.",
+    "updatedAt": "2026-10-25",
+    "change": "Added exact load/interface, desktop attachment and folded-arm clearance checks with explicit unresolved and keep-stand outcomes."
+  },
+  {
+    "site": "homeoffice",
+    "title": "Small Home Office Setup: Fit the Desk, Screen and Chair First",
+    "href": "https://homeoffice.madabase.com/guides/small-home-office-setup-guide",
+    "summary": "Plan a small office around screen distance, keyboard reach, legroom and chair movement. Use a measured layout to decide which purchase actually earns its space.",
+    "updatedAt": "2026-10-25",
+    "change": "Rebuilt the setup decision around room footprint, screen distance, chair clearance and buying only for the remaining constraint."
+  },
+  {
+    "site": "homeoffice",
+    "title": "USB Speakerphone vs Headset: Which Should You Use?",
+    "href": "https://homeoffice.madabase.com/guides/usb-speakerphone-vs-headset-video-meetings",
+    "summary": "Choose meeting audio by privacy, room noise and who must speak. Check the exact USB connection and app settings before replacing a working device.",
+    "updatedAt": "2026-10-25",
+    "change": "Added privacy, shared seating, wired Speak2 40 variant boundaries and current Teams device-selection checks."
+  },
+  {
+    "site": "homeoffice",
+    "title": "USB Switch vs KVM vs Dock: What Two Computers Can Share",
+    "href": "https://homeoffice.madabase.com/guides/usb-switch-vs-kvm-vs-dock-guide",
+    "summary": "Choose by the signals you need to move: USB peripherals, displays, Ethernet and laptop power. Check host limits before buying a combined switching dock.",
+    "updatedAt": "2026-10-25",
+    "change": "Separated peripheral, display and two-host switching roles; current UGREEN 15705 documentation is not transferred to 30768."
+  },
+  {
+    "site": "network",
+    "title": "Cat6 vs Cat6A and Flat Ethernet Cable: Choose for the Run",
+    "href": "https://network.madabase.com/guides/ethernet-cable-category-guide",
+    "summary": "Choose Ethernet cable by the required link, complete run, conductor construction and route. Keep a working cable when replacing it would not remove a bottleneck.",
+    "updatedAt": "2026-10-25",
+    "change": "Added complete-channel and construction checks, keep-existing outcomes and removed the automatic switch purchase fallback."
+  },
+  {
+    "site": "network",
+    "title": "Home Ethernet Switch: Port Count, Gigabit, 2.5G and VLANs",
+    "href": "https://network.madabase.com/guides/home-ethernet-switch-guide",
+    "summary": "Count the upstream cable and endpoints, trace the needed link rate, and separate VLAN management from PoE before choosing a home switch.",
+    "updatedAt": "2026-10-25",
+    "change": "Added upstream port counting, exact hardware-revision chains and separate management, PoE and link-rate decisions."
+  },
+  {
+    "site": "network",
+    "title": "MoCA 2.5 vs Ethernet: Check Coax, Service and the Full Cost",
+    "href": "https://network.madabase.com/guides/moca-2-5-vs-ethernet-run-guide",
+    "summary": "Compare MoCA with a new Ethernet run after mapping coax, provider compatibility, adapter count, local power and the useful backhaul path.",
+    "updatedAt": "2026-10-25",
+    "change": "Added provider/coax/security/node-count conditions from current linked documents and separated MoCA from endpoint PoE."
+  },
+  {
+    "site": "network",
+    "title": "PoE Switch for Home Cameras and APs: Power and Port Checks",
+    "href": "https://network.madabase.com/guides/poe-switch-for-home-cameras-and-access-points-guide",
+    "summary": "Match each camera or access point to its PoE standard, allocated power, cable and data path. Count powered ports separately from uplinks before choosing a switch.",
+    "updatedAt": "2026-10-25",
+    "change": "Replaced non-PoE purchase references with a conditional PoE model and separated power standards, allocation, port count and data rates."
+  },
+  {
+    "site": "network",
+    "title": "Travel Router or Phone Hotspot? Portals, VPNs and Newer Models",
+    "href": "https://network.madabase.com/guides/travel-router-vpn-guide",
+    "summary": "Decide whether a travel router solves a real venue or device problem. Check captive portals, VPN behavior, power and upstream access before choosing a model.",
+    "updatedAt": "2026-10-25",
+    "change": "Replaced home-mesh references with a travel-router reference, current portal limitations and documented Beryl 7 comparison."
+  },
+  {
+    "site": "network",
+    "title": "USB-C Ethernet Adapter vs Hub or Dock: Check the Whole Path",
+    "href": "https://network.madabase.com/guides/usb-c-ethernet-adapter-guide",
+    "summary": "Choose a laptop Ethernet adapter, hub or dock by the missing functions, USB data rate, operating-system support, charging and actual network bottleneck.",
+    "updatedAt": "2026-10-25",
+    "change": "Separated USB, Ethernet, OS, display and power paths and removed an unrelated switch as the adapter buying route."
+  },
+  {
+    "site": "network",
+    "title": "Wi-Fi 7 vs Wi-Fi 6 and 6E: When a Home Upgrade Helps",
+    "href": "https://network.madabase.com/guides/wifi-7-vs-wifi-6-guide",
+    "summary": "Separate Wi-Fi 6, 6E and 7, then check client features, 6GHz access, Ethernet and mesh backhaul against the problem an upgrade must solve.",
+    "updatedAt": "2026-10-25",
+    "change": "Distinguished Wi-Fi 6E from 7, with client/region/software, backhaul and complete wired-path upgrade conditions."
+  },
+  {
+    "site": "baby",
+    "title": "Baby Bottle Drying Rack and Storage Workflow Guide",
+    "href": "https://baby.madabase.com/guides/baby-bottle-drying-rack-storage-workflow-guide",
+    "summary": "Build a clean path from washing to air drying, reassembly, protected storage, and routine rack cleaning.",
+    "updatedAt": "2026-10-21",
+    "change": "Corrected towel-drying advice and specified CDC rack-cleaning and protected-storage conditions."
+  },
+  {
+    "site": "baby",
+    "title": "Bottle Parts Cleaning Routine Guide",
+    "href": "https://baby.madabase.com/guides/bottle-parts-cleaning-routine-guide",
+    "summary": "How to plan bottle, nipple, cap, and pump-part cleaning before choosing a sterilizer or dryer.",
+    "updatedAt": "2026-10-21",
+    "change": "Added CDC cleaning and sanitizing conditions, higher-risk infant criteria and the applicable dishwasher alternative."
+  },
+  {
+    "site": "baby",
+    "title": "Nursery Sound Machine and Night Light Guide",
+    "href": "https://baby.madabase.com/guides/nursery-sound-machine-night-light-guide",
+    "summary": "How to choose sound, light, app controls, portability, and placement without treating a device as a sleep guarantee.",
+    "updatedAt": "2026-10-21",
+    "change": "Replaced vague volume advice with attributed AAP exposure guidance and explained why a volume percentage cannot establish a safe sound level."
+  },
+  {
+    "site": "costume",
+    "title": "Halloween Fog Machine and Lighting Power Guide",
+    "href": "https://costumes.madabase.com/guides/halloween-fog-machine-lighting-power-guide",
+    "summary": "Plan an effects scene around the exact machine's approved location, fluid, heat clearance, electrical requirements and visibility limits.",
+    "updatedAt": "2026-10-21",
+    "change": "Added a named manufacturer manual example, indoor-use and electrical limits, and an alarm plan that preserves fire protection."
+  },
+  {
+    "site": "homeoffice",
+    "title": "Lumbar Cushions: Chair Shape, Thickness and Seat-Depth Loss",
+    "href": "https://homeoffice.madabase.com/guides/office-lumbar-cushions-buying-guide",
+    "summary": "Check whether a lumbar cushion fits the chair's backrest and leaves enough usable seat depth, or whether adjusting the existing chair is the better first step.",
+    "updatedAt": "2026-10-21",
+    "change": "Added an interactive and printable seat-depth worksheet, a worked subtraction example and repeatable checks for the actual chair and cushion."
+  },
+  {
+    "site": "homeoffice",
+    "title": "Printer Stands: Loaded Size, Paper Paths and Cable Clearance",
+    "href": "https://homeoffice.madabase.com/guides/office-printer-stands-buying-guide",
+    "summary": "Size a printer stand with trays extended, scanner lid open and cables connected. Compare a fixed shelf with a rolling cart before buying extra storage.",
+    "updatedAt": "2026-10-21",
+    "change": "Added an interactive and printable worksheet for operating footprint, shelf-specific load and scanner-lid clearance, with an explicitly illustrative worked example."
+  },
+  {
+    "site": "network",
+    "title": "Mesh Wi-Fi Node Placement Guide: Fix Dead Zones Without Overbuying",
+    "href": "https://network.madabase.com/guides/mesh-wifi-node-placement-guide",
+    "summary": "Place mesh nodes so they solve coverage instead of repeating a weak signal or tempting you into an unnecessary extra pack.",
+    "updatedAt": "2026-10-21",
+    "change": "Added primary manufacturer references and separated mesh-backhaul testing from client performance with a repeatable placement record."
+  },
+  {
+    "site": "network",
+    "title": "MoCA Splitter and Filter Checklist",
+    "href": "https://network.madabase.com/guides/moca-splitter-filter-checklist",
+    "summary": "Check the connected coax path, documented splitter compatibility, amplifier layout and provider-approved filter placement before replacing parts.",
+    "updatedAt": "2026-10-21",
+    "change": "Replaced age-based part replacement with documented compatibility checks; distinguished point-of-entry filtering from Ethernet power and added provider-specific DOCSIS boundaries."
+  },
+  {
+    "site": "network",
+    "title": "How to Calculate a PoE Switch Power Budget",
+    "href": "https://network.madabase.com/guides/poe-switch-power-budget-calculator-guide",
+    "summary": "Work through an example using switch-side power allocations, per-port standards and the usable total budget before buying for cameras or access points.",
+    "updatedAt": "2026-10-21",
+    "change": "Added a six-device worked budget, distinguished source-side allocation from endpoint watts, and clarified negotiation, cable loss and model-specific overload behavior."
+  },
+  {
+    "site": "network",
+    "title": "Router Placement Guide Before Buying Mesh Wi-Fi",
+    "href": "https://network.madabase.com/guides/router-placement-guide",
+    "summary": "Choose a router location for apartments and small homes before buying another mesh node, extender, or flagship router.",
+    "updatedAt": "2026-10-21",
+    "change": "Added manufacturer placement evidence and a repeatable location comparison that separates ISP speed from Wi-Fi diagnosis."
+  },
+  {
+    "site": "pet",
+    "title": "Apartment Litter Odor Control Guide",
+    "href": "https://pets.madabase.com/guides/apartment-litter-odor-control-guide",
+    "summary": "How to combine scooping, disposal, airflow, litter choice, and pet-hair cleanup instead of relying on one odor product.",
+    "updatedAt": "2026-10-21",
+    "change": "Added veterinary litter-box care evidence and separated particle filtration from gas/odor removal using EPA guidance."
+  },
+  {
+    "site": "homeoffice",
     "title": "ThinkCentre Tiny upgrade planner",
     "href": "https://homeoffice.madabase.com/compatibility/mini-pcs",
     "summary": "8 Tiny profiles: M70q Gen 2, M710q, M910q, M720q, M920q, M920x, M70q Gen 3, M90q Gen 3; DDR4/DDR5, storage positions and machine-specific FRU checks.",
@@ -121,7 +305,7 @@
   },
   {
     "site": "baby",
-    "title": "Toddler Learning Tower Buying Guide: Stability, Openings, Platform, and Recall Checks",
+    "title": "Toddler Learning Towers: Recall, Stability & Counter Fit",
     "href": "https://baby.madabase.com/guides/toddler-learning-towers-buying-guide",
     "summary": "Choose a standing helper tower by the child's age and skills, current recall status, platform lock, tip resistance, side openings, entry, rail height, counter gap, footprint, assembly, supervision, and storage—not by Montessori wording alone.",
     "updatedAt": "2026-10-19",

@@ -5,7 +5,7 @@ import { marketSitemapEntries } from "@/lib/market-content";
 import { effectiveContentUpdatedAt, searchOpportunityUpdatedAt } from "@/lib/search-opportunities";
 import { staticPageSlugs } from "@/lib/static-pages";
 import { getCurrentSite } from "@/lib/sites";
-import { listIndexableCostumeProducts } from "@/lib/costume-catalog";
+import { listAllIndexableCostumeProducts } from "@/lib/costume-catalog";
 import { costumeHalloweenIdeaSlugs } from "@/lib/costume-halloween-ideas";
 import { compatibilityTopics } from "@/lib/compatibility-topics";
 
@@ -16,7 +16,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const roundups = siteRoundups(site.key).filter((item) => !item.sitemapExcluded);
   const guides = siteGuides(site.key).filter((item) => !item.sitemapExcluded);
   const tools = siteTools(site.key).filter((item) => !item.sitemapExcluded);
-  const costumeProducts = site.key === "costume" ? await listIndexableCostumeProducts(100) : [];
+  const costumeProducts = site.key === "costume" ? await listAllIndexableCostumeProducts() : [];
   const urls: Array<{
     path: string;
     changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"];

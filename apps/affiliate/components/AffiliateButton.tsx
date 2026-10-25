@@ -1,8 +1,9 @@
 "use client";
 
 import { ExternalLink } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import { useAmazonCreatorsListing } from "./AmazonCreatorsListing";
+import { useStickyCommerceDock } from "./useStickyCommerceDock";
 import { trackClarityAffiliateClick } from "./ClarityAnalytics";
 import { isQaVisit } from "../../../shared/analytics-traffic";
 import type { AffiliateOffer, AmazonMarketKey, MarketKey, Product, SiteKey } from "@/lib/types";
@@ -17,6 +18,9 @@ export function AffiliateButton({
   position,
   resolveCreatorsListing = true,
   firstViewport = false,
+  sticky = firstViewport,
+  stickyStartId,
+  modelLabel,
 }: {
   site: SiteKey;
   product: AffiliateProductIdentity;
@@ -25,6 +29,9 @@ export function AffiliateButton({
   position: string;
   resolveCreatorsListing?: boolean;
   firstViewport?: boolean;
+  sticky?: boolean;
+  stickyStartId?: string;
+  modelLabel?: string;
 }) {
   const amazonMarket: AmazonMarketKey = market ?? "us";
   const isAmazon = offer.merchant.toLowerCase().includes("amazon");
@@ -42,37 +49,10 @@ export function AffiliateButton({
   const href = creatorsListing?.detailPageUrl ?? offer.url;
   const merchantName = offer.merchant.replace(/\s+via\s+CJ$/i, "");
   const visibleLabel = isAmazon
-    ? "Check current price & availability on Amazon"
+    ? modelLabel ? `Check ${modelLabel} on Amazon` : "Check current price & availability on Amazon"
     : `Check current price & availability at ${merchantName}`;
-  const [showStickyDock, setShowStickyDock] = useState(false);
-  const firstViewportLink = useRef<HTMLAnchorElement>(null);
-
-  useEffect(() => {
-    if (!firstViewport || !firstViewportLink.current) return;
-
-    let firstLinkPassed = false;
-    let footerVisible = false;
-    const updateDock = () => setShowStickyDock(firstLinkPassed && !footerVisible);
-    const firstLinkObserver = new IntersectionObserver(([entry]) => {
-      firstLinkPassed = !entry.isIntersecting && entry.boundingClientRect.bottom < 0;
-      updateDock();
-    });
-    const footer = document.querySelector("footer");
-    const footerObserver = footer
-      ? new IntersectionObserver(([entry]) => {
-          footerVisible = entry.isIntersecting;
-          updateDock();
-        })
-      : null;
-
-    firstLinkObserver.observe(firstViewportLink.current);
-    if (footer && footerObserver) footerObserver.observe(footer);
-
-    return () => {
-      firstLinkObserver.disconnect();
-      footerObserver?.disconnect();
-    };
-  }, [firstViewport]);
+  const purchaseLink = useRef<HTMLAnchorElement>(null);
+  const showStickyDock = useStickyCommerceDock({ enabled: sticky, buttonRef: purchaseLink, startId: stickyStartId, scopeKey: `${site}:${product.slug}:${amazonMarket}:${position}` });
 
   function trackClick(clickPosition = position) {
     if (isQaVisit()) return;
@@ -107,8 +87,11 @@ export function AffiliateButton({
 
   const primaryButton = (
     <a
-      ref={firstViewport ? firstViewportLink : undefined}
+      ref={sticky ? purchaseLink : undefined}
       className="button-primary"
+      data-commerce-product={product.slug}
+      data-commerce-merchant={offer.merchant}
+      data-commerce-position={position}
       href={href}
       target="_blank"
       rel="sponsored nofollow noopener noreferrer"
@@ -118,7 +101,8 @@ export function AffiliateButton({
       }
       data-first-viewport-affiliate={firstViewport ? "true" : undefined}
       data-cta-intent={firstViewport ? "price-availability" : undefined}
-      data-sticky-commerce-enabled={firstViewport ? "true" : undefined}
+      data-sticky-commerce-enabled={sticky ? "true" : undefined}
+      data-sticky-commerce-start={sticky ? stickyStartId : undefined}
       onClick={() => trackClick()}
     >
       {visibleLabel}
@@ -126,16 +110,16 @@ export function AffiliateButton({
     </a>
   );
 
-  if (!firstViewport) return primaryButton;
+  if (!sticky) return primaryButton;
 
   return (
     <>
-      <div className="inline-flex max-w-full flex-col items-start gap-1.5">
+      {firstViewport ? <div className="inline-flex max-w-full flex-col items-start gap-1.5">
         {primaryButton}
         <p className="max-w-md text-xs leading-5 text-[var(--muted)]">
           Current price &amp; availability · purchase link
         </p>
-      </div>
+      </div> : primaryButton}
       {showStickyDock ? (
         <a
           aria-label={`Purchase option for ${creatorsListing?.title ?? product.amazonTitle ?? product.name}`}
@@ -144,6 +128,9 @@ export function AffiliateButton({
             creatorsListing ? "amazon-creators-api" : isAmazon ? "verified-amazon-fallback" : "authorized-offer"
           }
           data-cta-intent="price-availability"
+          data-commerce-product={product.slug}
+          data-commerce-merchant={offer.merchant}
+          data-commerce-position={`${position}-sticky-bottom`}
           data-sticky-commerce-dock="responsive"
           href={href}
           onClick={() => trackClick(`${position}-sticky-bottom`)}
@@ -159,7 +146,7 @@ export function AffiliateButton({
               <p className="mt-0.5 text-[11px] leading-4 text-[var(--muted)]">Current price &amp; availability · purchase link</p>
             </div>
             <span className="button-primary shrink-0 px-3 py-2 text-xs">
-              Check price
+              {isAmazon ? "Amazon price" : "Check price"}
               <ExternalLink aria-hidden="true" size={14} />
             </span>
           </div>
@@ -176,6 +163,8 @@ export function AffiliateButtonGroup({
   position,
   limit = 2,
   firstViewport = false,
+  sticky = firstViewport,
+  stickyStartId,
 }: {
   site: SiteKey;
   product: Product;
@@ -183,14 +172,16 @@ export function AffiliateButtonGroup({
   position: string;
   limit?: number;
   firstViewport?: boolean;
+  sticky?: boolean;
+  stickyStartId?: string;
 }) {
   const offers = product.offers.slice(0, limit);
   if (offers.length === 0) return null;
 
   return (
     <>
-      {offers.map((offer) => (
-        <AffiliateButton key={offer.merchant} site={site} product={product} offer={offer} market={market} position={position} firstViewport={firstViewport} />
+      {offers.map((offer, index) => (
+        <AffiliateButton key={offer.merchant} site={site} product={product} offer={offer} market={market} position={position} firstViewport={firstViewport} sticky={sticky && index === 0} stickyStartId={stickyStartId} />
       ))}
     </>
   );

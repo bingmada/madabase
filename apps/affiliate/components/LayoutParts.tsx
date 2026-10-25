@@ -6,6 +6,7 @@ import type { SiteDecisionModule } from "@/lib/site-decision-modules";
 import type { SiteConfig } from "@/lib/sites";
 import type { Product, Roundup } from "@/lib/types";
 import { TaskNavigation } from "./TaskNavigation";
+import { NavigationDisclosure } from "./NavigationDisclosure";
 import { SearchForm } from "../../shared/SearchControls";
 
 export function SiteChrome({ site, children }: { site: SiteConfig; children: React.ReactNode }) {
@@ -23,7 +24,7 @@ export function SiteChrome({ site, children }: { site: SiteConfig; children: Rea
     >
       <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-white/95 backdrop-blur">
         <div className="shell flex min-h-16 items-center justify-between gap-4 py-3">
-          <Link className="shrink-0 whitespace-nowrap text-lg font-black text-[var(--brand-strong)]" href="/">
+          <Link className="shrink-0 whitespace-nowrap text-base font-black text-[var(--brand-strong)] sm:text-lg" href="/">
             {site.key === "costume" ? (
               <>
                 <span className="sm:hidden">Madabase Halloween</span>
@@ -57,12 +58,12 @@ export function SiteChrome({ site, children }: { site: SiteConfig; children: Rea
               Methodology
             </Link>
           </nav>
-          <details className="relative lg:hidden">
+          <NavigationDisclosure className="relative lg:hidden">
             <summary className="button-secondary list-none cursor-pointer px-3 py-2" aria-label="Open navigation menu">
               <Menu aria-hidden="true" size={17} />
               <span>Browse</span>
             </summary>
-            <div className="panel absolute right-0 top-full z-50 mt-2 w-56 p-2 shadow-[var(--shadow)]">
+            <div className="panel absolute right-0 top-full z-50 mt-2 max-h-[calc(100dvh-6rem)] w-56 overflow-y-auto p-2 shadow-[var(--shadow)]">
               <nav className="grid gap-1 text-sm font-semibold" aria-label="Mobile navigation">
                 <Link className="rounded-md px-3 py-2 font-black" href="/search">Search the library</Link>
                 {site.key === "homeoffice" || site.key === "network" ? <Link className="rounded-md px-3 py-2" href="/compatibility">Compatibility & upgrades</Link> : null}
@@ -84,7 +85,7 @@ export function SiteChrome({ site, children }: { site: SiteConfig; children: Rea
                 <Link className="rounded-md px-3 py-2 hover:bg-[var(--surface-muted)]" href="/methodology">Methodology</Link>
               </nav>
             </div>
-          </details>
+          </NavigationDisclosure>
         </div>
       </header>
       <div className="discovery-strip"><div className="shell"><SearchForm compact /><TaskNavigation site={site.key} /></div></div>

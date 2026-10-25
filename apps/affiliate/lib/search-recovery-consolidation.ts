@@ -150,7 +150,7 @@ export function mergeConsolidatedFamilyGuide(guide: Guide, familyGuides: Guide[]
 
   // These hubs already incorporate each useful sibling decision in authored
   // model-specific sections. Re-appending the old template would undo the repair.
-  if (family.mergeMode === "curated") return guide;
+  if (family.mergeMode === "curated" || guide.curatedFamilyHub) return guide;
 
   const orderedFamilyGuides = familyGuides
     .filter((item) => item.site === guide.site && item.familySlug === guide.familySlug && item.familyRole)
@@ -191,12 +191,8 @@ export function mergeConsolidatedFamilyGuide(guide: Guide, familyGuides: Guide[]
 
   return {
     ...guide,
-    dek: family.preservePrimaryFields
-      ? guide.dek
-      : `${guide.dek} This consolidated guide also covers alternatives, compatibility and fit, ownership cost, maintenance, and setup workflow in one decision path.`,
-    quickAnswer: family.preservePrimaryFields
-      ? guide.quickAnswer
-      : `${guide.quickAnswer ?? guide.sections[0]?.body ?? guide.dek} Continue through the checks below before choosing: the former comparison, fit, ownership, and workflow material is now preserved on this page.`,
+    dek: guide.dek,
+    quickAnswer: guide.quickAnswer ?? guide.sections[0]?.body ?? guide.dek,
     updatedAt: latestConsolidatedUpdate(orderedFamilyGuides, family.consolidatedAt),
     editorialMethod: uniqueBy(
       orderedFamilyGuides.flatMap((item) => item.editorialMethod ?? []),
@@ -218,7 +214,9 @@ export function mergeConsolidatedFamilyGuide(guide: Guide, familyGuides: Guide[]
       orderedFamilyGuides.flatMap((item) => item.sources ?? []),
       (item) => item.url,
     ),
-    sections: uniqueBy(mergedSections, (item) => `${item.heading}\n${item.body}`),
+    // A sibling's table or answer may have been appended under several role
+    // headings. Keep every distinct paragraph once, including all safety limits.
+    sections: uniqueBy(mergedSections, (item) => item.body.replace(/\s+/g, " ").trim()),
     relatedRoundups: uniqueBy(
       orderedFamilyGuides.flatMap((item) => item.relatedRoundups),
       (item) => item,

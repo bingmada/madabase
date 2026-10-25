@@ -87,6 +87,7 @@ export async function POST(request: Request) {
       create: {
         eventId,
         site,
+        market,
         productSlug,
         merchant,
         position,

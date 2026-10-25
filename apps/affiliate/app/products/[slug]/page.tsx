@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { JsonLd } from "@/components/JsonLd";
 import { CostumeCatalogCard, CostumePurchaseState } from "@/components/CostumeCatalog";
+import { TrackedCommerceLink } from "@/components/TrackedCommerceLink";
 import { costumeGuides } from "@/lib/costume-content";
 import {
   findCostumeCatalogAlias,
@@ -13,16 +14,13 @@ import {
   type CostumeCatalogProduct,
 } from "@/lib/costume-catalog";
 import { costumeHalloweenPick } from "@/lib/costume-halloween";
+import { cleanCostumeFeedText as cleanFeedText } from "@/lib/costume-copy";
+import { costumeEyeCareNote, costumeProductRequiresEyeCare } from "@/lib/costume-commerce-eligibility";
+import { costumeObservationDate, costumeTransactionLabel } from "@/lib/costume-variant-review";
 import { absoluteUrl, breadcrumbSchema, pageMetadata } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 
 export const dynamic = "force-dynamic";
-
-function cleanFeedText(value: string | null, limit = 700) {
-  if (!value) return null;
-  const clean = value.replace(/<[^>]*>/g, " ").replace(/&nbsp;|&#160;/g, " ").replace(/\s+/g, " ").trim();
-  return clean.length > limit ? `${clean.slice(0, limit).trimEnd()}…` : clean;
-}
 
 function catalogBuyerJob(product: CostumeCatalogProduct) {
   if (product.editorial?.buyerJob) return product.editorial.buyerJob;
@@ -44,12 +42,24 @@ function catalogGuidance(product: CostumeCatalogProduct) {
   return bestFor || skipIf || confirmBeforeOrdering.length ? { bestFor, skipIf, confirmBeforeOrdering } : null;
 }
 
+function catalogDescription(product: CostumeCatalogProduct) {
+  const review = product.variantState?.identity === "matched" ? product.variantState.review : null;
+  if (review) return cleanFeedText(review.notes[0]
+    ?? `${product.title}. ${review.selectedOptions.length ? `Selected: ${review.selectedOptions.join(" / ")}. ` : ""}Confirm the exact package, fit and current retailer terms.`, 155)!;
+  return cleanFeedText(product.editorial?.summary ?? product.description, 155)
+    ?? `Review fit, package and retailer terms for ${product.title}.`;
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const site = await getCurrentSite();
   const { slug } = await params;
   if (site.key !== "costume") return {};
   const catalogProduct = await getCostumeCatalogProduct(slug) ?? await findCostumeCatalogAlias(slug);
   if (catalogProduct) {
+    if (costumeProductRequiresEyeCare(catalogProduct)) return {
+      ...pageMetadata(site, `/products/${catalogProduct.slug}`, `${catalogProduct.title}: Eye-care Requirements`, costumeEyeCareNote),
+      robots: { index: false, follow: true },
+    };
     const halloweenPick = costumeHalloweenPick(catalogProduct.slug);
     const metadata = pageMetadata(
       site,
@@ -57,7 +67,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       halloweenPick
         ? `${catalogProduct.title}: Halloween Fit and Setup Checks`
         : `${catalogProduct.title}: Price, Availability, and Buying Checks`,
-      catalogProduct.editorial?.summary ?? cleanFeedText(catalogProduct.description, 155) ?? `Check current price, availability, audience, fit, and buying considerations for ${catalogProduct.title}.`,
+      catalogDescription(catalogProduct),
     );
     return {
       ...metadata,
@@ -80,6 +90,17 @@ export default async function CostumeProductPage({ params }: { params: Promise<{
     notFound();
   }
   if (catalogProduct) {
+    if (costumeProductRequiresEyeCare(catalogProduct)) return (
+      <main className="section">
+        <div className="shell max-w-3xl">
+          <p className="eyebrow">Product use requirements</p>
+          <h1 className="mt-3 text-4xl font-black leading-tight">{catalogProduct.title}</h1>
+          <div className="mt-7"><CostumePurchaseState product={catalogProduct} /></div>
+          <p className="mt-6 leading-8 text-[var(--muted)]">An eye-care professional must determine the appropriate lens and fit. A standard costume-size check or a signed care sheet cannot do that.</p>
+          <Link className="button-secondary mt-6" href="/guides/theatrical-face-body-makeup-buying-guide">Continue with costume makeup planning</Link>
+        </div>
+      </main>
+    );
     const halloweenPick = costumeHalloweenPick(catalogProduct.slug);
     const category = site.categories.find((item) => item.slug === catalogProduct.categorySlug);
     const relatedGuides = costumeGuides.filter((guide) => guide.category === catalogProduct.categorySlug).slice(0, 3);
@@ -88,6 +109,9 @@ export default async function CostumeProductPage({ params }: { params: Promise<{
     const buyerJob = catalogBuyerJob(catalogProduct);
     const guidance = catalogGuidance(catalogProduct);
     const indexable = isCostumeProductIndexable(catalogProduct);
+    const variantState = catalogProduct.variantState;
+    const variantReview = variantState?.identity === "matched" ? variantState.review : null;
+    const transaction = costumeTransactionLabel(variantState);
     const currentChecks = [
       "Exact product, variant, and included pieces",
       "Current price, stock, shipping, and return terms",
@@ -105,24 +129,16 @@ export default async function CostumeProductPage({ params }: { params: Promise<{
           ...(category ? [{ name: category.name, path: `/categories/${category.slug}` }] : []),
           { name: catalogProduct.title, path: `/products/${catalogProduct.slug}` },
         ])} />
-        {indexable && catalogProduct.price && catalogProduct.authorizedImage ? (
+        {indexable ? (
           <JsonLd data={{
             "@context": "https://schema.org",
-            "@type": "Product",
-            name: catalogProduct.title,
-            description: catalogProduct.editorial?.summary ?? feedDescription ?? buyerJob,
-            image: [catalogProduct.authorizedImage.url],
-            category: category?.name ?? catalogProduct.categorySlug,
-            ...(catalogProduct.brand ? { brand: { "@type": "Brand", name: catalogProduct.brand } } : {}),
-            offers: {
-              "@type": "Offer",
-              url: absoluteUrl(site, `/products/${catalogProduct.slug}`),
-              price: catalogProduct.price,
-              priceCurrency: catalogProduct.currency,
-              availability: catalogProduct.availability === "in stock" ? "https://schema.org/InStock" : "https://schema.org/LimitedAvailability",
-              itemCondition: "https://schema.org/NewCondition",
-              seller: { "@type": "Organization", name: "Abracadabra NYC" },
-            },
+            "@type": "Article",
+            headline: `${catalogProduct.title}: Selected Option and Buying Checks`,
+            description: catalogDescription(catalogProduct),
+            ...(catalogProduct.authorizedImage ? { image: [catalogProduct.authorizedImage.url] } : {}),
+            mainEntityOfPage: absoluteUrl(site, `/products/${catalogProduct.slug}`),
+            author: { "@type": "Organization", name: site.name },
+            publisher: { "@type": "Organization", name: site.name },
           }} />
         ) : null}
         <div className="shell">
@@ -133,7 +149,7 @@ export default async function CostumeProductPage({ params }: { params: Promise<{
                 {catalogProduct.premium ? <span className="costume-chip !bg-[var(--brand-strong)]">$1,000+ Premium</span> : null}
                 {catalogProduct.professional ? <span className="costume-chip !bg-[var(--brand-strong)]">Professional</span> : null}
                 {catalogProduct.halloween ? <span className="costume-chip !bg-[var(--brand-strong)]">Halloween</span> : null}
-                {catalogProduct.rental ? <span className="costume-chip !bg-[var(--brand-strong)]">Rental</span> : null}
+                {transaction ? <span className="costume-chip !bg-[var(--brand-strong)]">{transaction}</span> : null}
               </div>
               <p className="eyebrow mt-5">{catalogProduct.brand || catalogProduct.productType || "Abracadabra NYC"}</p>
               <h1 className="mt-3 text-4xl font-black leading-tight">{catalogProduct.title}</h1>
@@ -141,6 +157,21 @@ export default async function CostumeProductPage({ params }: { params: Promise<{
                 <CostumePurchaseState product={catalogProduct} firstViewport />
               </div>
               <p className="mt-5 text-xl font-black text-[var(--brand-strong)]">{formatCostumePrice(catalogProduct)}</p>
+              <p className="mt-2 text-sm leading-6 text-[var(--muted)]">{variantReview ? `Retailer price observed ${costumeObservationDate(variantReview.observedAt)} in USD for this selected option.` : `Historical merchant feed price observed ${costumeObservationDate(catalogProduct.lastSeenAt.toISOString())}.`} Recheck the live total, shipping and any rental charges before payment.</p>
+              {variantState ? (
+                <section className="mt-7 scroll-mt-24 rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-5" id="exact-variant-review" aria-labelledby="exact-variant-title">
+                  <h2 className="text-xl font-bold" id="exact-variant-title">Selected option and unresolved checks</h2>
+                  {variantReview ? <>
+                    <p className="mt-3 font-semibold">{variantReview.selectedOptions.length ? variantReview.selectedOptions.join(" / ") : "Default retailer option"}</p>
+                    <p className="mt-2 break-words text-sm leading-6 text-[var(--muted)]">Retailer SKU: {variantReview.sku || "Not specified"} · Variant: {variantReview.variantId}</p>
+                    <p className="mt-2 text-sm leading-6 text-[var(--muted)]">{transaction ?? "Rent or buy is not explicit in this option; confirm the transaction."} · {variantReview.available ? "Available when checked; live stock and event dates remain unconfirmed." : "Unavailable when checked; shopping link paused."}</p>
+                    {variantReview.notes.length ? <ul className="mt-4 space-y-3 text-sm leading-7 text-[var(--muted)]">{variantReview.notes.map((note) => <li key={note}>{note}</li>)}</ul> : null}
+                    <div className="mt-4 text-sm leading-6">{catalogProduct.activeLink && indexable ? <TrackedCommerceLink href={`/go/cj/${catalogProduct.activeLink.clickToken}`} label="Read the exact retailer listing" merchant="Abracadabra NYC" position="costume-product-source-reference" productName={catalogProduct.title} productSlug={catalogProduct.slug} site="costume" /> : <a className="font-semibold underline" data-source-reference="retailer" href={variantReview.destinationUrl}>Read the retailer source to resolve these details</a>}<p className="mt-2">Checked {costumeObservationDate(variantReview.observedAt)}</p></div>
+                    {variantReview.additionalSources.map((source) => <p className="mt-2 break-words text-sm leading-6" key={source}><a className="font-semibold underline" href={source}>Read the matching manufacturer reference</a></p>)}
+                  </> : <p className="mt-3 leading-7 text-[var(--muted)]">{variantState.hold}</p>}
+                  <p className="mt-4 text-sm leading-6 text-[var(--muted)]">Keep an existing suitable item or postpone buying if these checks remain unresolved. A matching variant number establishes the listing identity, not personal fit, installation readiness or delivery.</p>
+                </section>
+              ) : null}
               {catalogProduct.authorizedImage ? (
                 <figure className="mt-8 overflow-hidden rounded-md border border-[var(--border)] bg-white p-4">
                   {/* The URL is rights-gated in PostgreSQL and can come from different authorized CJ/Abracadabra CDNs. */}
@@ -189,20 +220,20 @@ export default async function CostumeProductPage({ params }: { params: Promise<{
                 <section className="mt-9">
                   <p className="eyebrow">Product information</p>
                   <h2 className="mt-3 text-2xl font-bold">Details supplied by Abracadabra NYC</h2>
-                  <p className="mt-4 leading-8 text-[var(--muted)]">{feedDescription}</p>
+                  <p className="mt-4 whitespace-pre-line leading-8 text-[var(--muted)]">{feedDescription}</p>
                   <p className="mt-3 text-sm leading-6 text-[var(--muted)]">Merchant-supplied details can change. Open the exact retailer page to compare the live price, availability, delivery, variant, and return terms.</p>
                 </section>
               ) : null}
               <section className="mt-9 rounded-md border border-[var(--border)] bg-white p-5">
-                <h2 className="text-2xl font-bold">Current product details</h2>
+                <h2 className="text-2xl font-bold">Product details and observation dates</h2>
                 <dl className="mt-4 divide-y divide-[var(--border)] text-sm">
                   <div className="grid gap-2 py-3 sm:grid-cols-[180px_1fr]"><dt className="font-semibold text-[var(--muted)]">Merchant</dt><dd className="font-bold">Abracadabra NYC via CJ</dd></div>
                   <div className="grid gap-2 py-3 sm:grid-cols-[180px_1fr]"><dt className="font-semibold text-[var(--muted)]">Product type</dt><dd className="font-bold">{category?.name || catalogProduct.categorySlug.replaceAll("-", " ")}</dd></div>
-                  <div className="grid gap-2 py-3 sm:grid-cols-[180px_1fr]"><dt className="font-semibold text-[var(--muted)]">Price</dt><dd className="font-bold">{formatCostumePrice(catalogProduct)}</dd></div>
-                  <div className="grid gap-2 py-3 sm:grid-cols-[180px_1fr]"><dt className="font-semibold text-[var(--muted)]">Availability</dt><dd className="font-bold capitalize">{catalogProduct.availability}</dd></div>
+                  <div className="grid gap-2 py-3 sm:grid-cols-[180px_1fr]"><dt className="font-semibold text-[var(--muted)]">Observed price</dt><dd className="font-bold">{formatCostumePrice(catalogProduct)}{variantReview ? ` · ${costumeObservationDate(variantReview.observedAt)}` : " · historical feed"}</dd></div>
+                  <div className="grid gap-2 py-3 sm:grid-cols-[180px_1fr]"><dt className="font-semibold text-[var(--muted)]">Availability observation</dt><dd className="font-bold">{variantReview ? `${variantReview.available ? "Available" : "Unavailable"} on ${costumeObservationDate(variantReview.observedAt)}; recheck live stock` : `${catalogProduct.availability} in the historical feed; live stock unconfirmed`}</dd></div>
                   <div className="grid gap-2 py-3 sm:grid-cols-[180px_1fr]"><dt className="font-semibold text-[var(--muted)]">Audience</dt><dd className="font-bold">{catalogProduct.audience.length ? catalogProduct.audience.join(" · ") : "Not specified by the retailer"}</dd></div>
-                  <div className="grid gap-2 py-3 sm:grid-cols-[180px_1fr]"><dt className="font-semibold text-[var(--muted)]">Information checked</dt><dd className="font-bold">{catalogProduct.lastSeenAt.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</dd></div>
-                  <div className="grid gap-2 py-3 sm:grid-cols-[180px_1fr]"><dt className="font-semibold text-[var(--muted)]">Research basis</dt><dd className="font-bold">Authorized merchant-feed specifications with editorial buying checks</dd></div>
+                  <div className="grid gap-2 py-3 sm:grid-cols-[180px_1fr]"><dt className="font-semibold text-[var(--muted)]">Merchant feed last observed</dt><dd className="font-bold">{catalogProduct.lastSeenAt.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</dd></div>
+                  <div className="grid gap-2 py-3 sm:grid-cols-[180px_1fr]"><dt className="font-semibold text-[var(--muted)]">Evidence</dt><dd className="font-bold">Merchant-supplied details. Exact instructions, received condition and individual fit need separate confirmation.</dd></div>
                 </dl>
               </section>
             </article>
@@ -239,11 +270,12 @@ export default async function CostumeProductPage({ params }: { params: Promise<{
           </div>
 
           {relatedProducts.length ? (
-            <section className="mt-12 border-t border-[var(--border)] pt-10">
+            <section className="mt-12 scroll-mt-24 border-t border-[var(--border)] pt-10" id="related-costume-products" aria-labelledby="related-costume-title">
               <p className="eyebrow">Related products</p>
-              <h2 className="mt-3 text-3xl font-black">Compare nearby options</h2>
-              <div className="mt-6 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-                {relatedProducts.map((product) => <CostumeCatalogCard key={product.id} product={product} />)}
+              <h2 className="mt-3 text-3xl font-black" id="related-costume-title">Compare similar choices</h2>
+              <p className="mt-3 leading-7 text-[var(--muted)]">Each listing needs its own size, included-piece and use-limit checks. A fit for this product does not establish a fit for another.</p>
+              <div className={`mt-6 grid gap-5 ${relatedProducts.length === 1 ? "grid-cols-1" : relatedProducts.length === 2 ? "md:grid-cols-2" : "md:grid-cols-2 lg:grid-cols-3"}`} data-related-costume-count={relatedProducts.length}>
+                {relatedProducts.map((product) => <CostumeCatalogCard horizontal={relatedProducts.length === 1} key={product.id} product={product} />)}
               </div>
             </section>
           ) : null}

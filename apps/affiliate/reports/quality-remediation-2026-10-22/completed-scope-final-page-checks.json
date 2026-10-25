@@ -1,0 +1,4715 @@
+{
+  "checkedAt": "2026-10-25T05:55:33.792Z",
+  "releaseId": "uFvnHZrw66_38mU8Rzew1",
+  "scope": "Read-only GET verification. Editorial uses local packaged runtime. Catalog uses captured production records with fake link tokens and a DB replacement. No statistics endpoint request, merchant traversal or database write.",
+  "editorial": {
+    "total": 500,
+    "passed": 500,
+    "rows": [
+      {
+        "key": "homeoffice:monitor-color-calibrators-buying-guide",
+        "path": "/guides/monitor-color-calibrators-buying-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/monitor-color-calibrators-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:monitor-color-calibrators-compatibility-and-fit-guide",
+        "path": "/guides/monitor-color-calibrators-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/monitor-color-calibrators-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:monitor-color-calibrators-ownership-cost-and-maintenance",
+        "path": "/guides/monitor-color-calibrators-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/monitor-color-calibrators-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:monitor-color-calibrators-setup-and-daily-workflow",
+        "path": "/guides/monitor-color-calibrators-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/monitor-color-calibrators-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:monitor-color-calibrators-vs-alternatives",
+        "path": "/guides/monitor-color-calibrators-vs-alternatives",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/monitor-color-calibrators-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:ultrawide-office-monitors-buying-guide",
+        "path": "/guides/ultrawide-office-monitors-buying-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/ultrawide-office-monitors-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:ultrawide-office-monitors-compatibility-and-fit-guide",
+        "path": "/guides/ultrawide-office-monitors-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/ultrawide-office-monitors-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:ultrawide-office-monitors-ownership-cost-and-maintenance",
+        "path": "/guides/ultrawide-office-monitors-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/ultrawide-office-monitors-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:ultrawide-office-monitors-setup-and-daily-workflow",
+        "path": "/guides/ultrawide-office-monitors-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/ultrawide-office-monitors-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:ultrawide-office-monitors-vs-alternatives",
+        "path": "/guides/ultrawide-office-monitors-vs-alternatives",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/ultrawide-office-monitors-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:vertical-office-monitors-buying-guide",
+        "path": "/guides/vertical-office-monitors-buying-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/vertical-office-monitors-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:vertical-office-monitors-compatibility-and-fit-guide",
+        "path": "/guides/vertical-office-monitors-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/vertical-office-monitors-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:vertical-office-monitors-ownership-cost-and-maintenance",
+        "path": "/guides/vertical-office-monitors-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/vertical-office-monitors-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:vertical-office-monitors-vs-alternatives",
+        "path": "/guides/vertical-office-monitors-vs-alternatives",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/vertical-office-monitors-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:vertical-office-monitors-setup-and-daily-workflow",
+        "path": "/guides/vertical-office-monitors-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/vertical-office-monitors-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:ergonomic-split-keyboards-buying-guide",
+        "path": "/guides/ergonomic-split-keyboards-buying-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/ergonomic-split-keyboards-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:ergonomic-split-keyboards-ownership-cost-and-maintenance",
+        "path": "/guides/ergonomic-split-keyboards-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/ergonomic-split-keyboards-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:ergonomic-split-keyboards-vs-alternatives",
+        "path": "/guides/ergonomic-split-keyboards-vs-alternatives",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/ergonomic-split-keyboards-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:ergonomic-split-keyboards-compatibility-and-fit-guide",
+        "path": "/guides/ergonomic-split-keyboards-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/ergonomic-split-keyboards-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:ergonomic-split-keyboards-setup-and-daily-workflow",
+        "path": "/guides/ergonomic-split-keyboards-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/ergonomic-split-keyboards-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:ergobaby-omni-breeze-forward-facing-age-guide",
+        "path": "/guides/ergobaby-omni-breeze-forward-facing-age-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/ergobaby-omni-breeze-forward-facing-age-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:ergobaby-omni-breeze-positions-by-age",
+        "path": "/guides/ergobaby-omni-breeze-positions-by-age",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/ergobaby-omni-breeze-positions-by-age",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:ergobaby-omni-breeze-newborn-fit-checklist",
+        "path": "/guides/ergobaby-omni-breeze-newborn-fit-checklist",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/ergobaby-omni-breeze-newborn-fit-checklist",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:ergobaby-omni-breeze-cleaning-guide",
+        "path": "/guides/ergobaby-omni-breeze-cleaning-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/ergobaby-omni-breeze-cleaning-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:baby-carrier-hot-weather-and-caregiver-fit-guide",
+        "path": "/guides/baby-carrier-hot-weather-and-caregiver-fit-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/baby-carrier-hot-weather-and-caregiver-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:ergobaby-omni-breeze-vs-babybjorn-harmony-by-age",
+        "path": "/guides/ergobaby-omni-breeze-vs-babybjorn-harmony-by-age",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/ergobaby-omni-breeze-vs-babybjorn-harmony-by-age",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "network:xfinity-gateway-bridge-mode-vs-own-router-guide",
+        "path": "/guides/xfinity-gateway-bridge-mode-vs-own-router-guide",
+        "status": 200,
+        "canonical": "https://network.madabase.com/guides/xfinity-gateway-bridge-mode-vs-own-router-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:aqara-hub-m3-home-assistant-matter-guide",
+        "path": "/guides/aqara-hub-m3-home-assistant-matter-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/aqara-hub-m3-home-assistant-matter-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:toddler-learning-towers-buying-guide",
+        "path": "/guides/toddler-learning-towers-buying-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/toddler-learning-towers-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "network:pass-through-ethernet-crimping-tools-buying-guide",
+        "path": "/guides/pass-through-ethernet-crimping-tools-buying-guide",
+        "status": 200,
+        "canonical": "https://network.madabase.com/guides/pass-through-ethernet-crimping-tools-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:table-booster-seats-buying-guide",
+        "path": "/guides/table-booster-seats-buying-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/table-booster-seats-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:table-booster-seats-vs-alternatives",
+        "path": "/guides/table-booster-seats-vs-alternatives",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/table-booster-seats-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:table-booster-seats-compatibility-and-fit-guide",
+        "path": "/guides/table-booster-seats-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/table-booster-seats-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:table-booster-seats-ownership-cost-and-maintenance",
+        "path": "/guides/table-booster-seats-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/table-booster-seats-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:table-booster-seats-setup-and-daily-workflow",
+        "path": "/guides/table-booster-seats-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/table-booster-seats-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:table-booster-seats-safety-and-skip-guide",
+        "path": "/guides/table-booster-seats-safety-and-skip-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/table-booster-seats-safety-and-skip-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:productivity-mice-buying-guide",
+        "path": "/guides/productivity-mice-buying-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/productivity-mice-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:productivity-mice-compatibility-and-fit-guide",
+        "path": "/guides/productivity-mice-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/productivity-mice-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:productivity-mice-ownership-cost-and-maintenance",
+        "path": "/guides/productivity-mice-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/productivity-mice-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:productivity-mice-setup-and-daily-workflow",
+        "path": "/guides/productivity-mice-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/productivity-mice-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:productivity-mice-vs-alternatives",
+        "path": "/guides/productivity-mice-vs-alternatives",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/productivity-mice-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:vertical-mice-buying-guide",
+        "path": "/guides/vertical-mice-buying-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/vertical-mice-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:vertical-mice-compatibility-and-fit-guide",
+        "path": "/guides/vertical-mice-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/vertical-mice-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:vertical-mice-ownership-cost-and-maintenance",
+        "path": "/guides/vertical-mice-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/vertical-mice-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:vertical-mice-setup-and-daily-workflow",
+        "path": "/guides/vertical-mice-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/vertical-mice-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:vertical-mice-vs-alternatives",
+        "path": "/guides/vertical-mice-vs-alternatives",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/vertical-mice-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:office-trackballs-buying-guide",
+        "path": "/guides/office-trackballs-buying-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/office-trackballs-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:office-call-headsets-buying-guide",
+        "path": "/guides/office-call-headsets-buying-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/office-call-headsets-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:office-call-headsets-compatibility-and-fit-guide",
+        "path": "/guides/office-call-headsets-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/office-call-headsets-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:office-call-headsets-ownership-cost-and-maintenance",
+        "path": "/guides/office-call-headsets-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/office-call-headsets-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:office-call-headsets-setup-and-daily-workflow",
+        "path": "/guides/office-call-headsets-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/office-call-headsets-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:office-call-headsets-vs-alternatives",
+        "path": "/guides/office-call-headsets-vs-alternatives",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/office-call-headsets-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:wireless-conference-headsets-buying-guide",
+        "path": "/guides/wireless-conference-headsets-buying-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/wireless-conference-headsets-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:usb-condenser-microphones-buying-guide",
+        "path": "/guides/usb-condenser-microphones-buying-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/usb-condenser-microphones-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:usb-condenser-microphones-compatibility-and-fit-guide",
+        "path": "/guides/usb-condenser-microphones-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/usb-condenser-microphones-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:usb-condenser-microphones-ownership-cost-and-maintenance",
+        "path": "/guides/usb-condenser-microphones-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/usb-condenser-microphones-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:usb-condenser-microphones-setup-and-daily-workflow",
+        "path": "/guides/usb-condenser-microphones-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/usb-condenser-microphones-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:usb-condenser-microphones-vs-alternatives",
+        "path": "/guides/usb-condenser-microphones-vs-alternatives",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/usb-condenser-microphones-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:xlr-office-microphones-buying-guide",
+        "path": "/guides/xlr-office-microphones-buying-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/xlr-office-microphones-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:xlr-office-microphones-ownership-cost-and-maintenance",
+        "path": "/guides/xlr-office-microphones-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/xlr-office-microphones-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:xlr-office-microphones-setup-and-daily-workflow",
+        "path": "/guides/xlr-office-microphones-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/xlr-office-microphones-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:xlr-office-microphones-vs-alternatives",
+        "path": "/guides/xlr-office-microphones-vs-alternatives",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/xlr-office-microphones-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:xlr-office-microphones-compatibility-and-fit-guide",
+        "path": "/guides/xlr-office-microphones-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/xlr-office-microphones-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:desktop-audio-interfaces-buying-guide",
+        "path": "/guides/desktop-audio-interfaces-buying-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/desktop-audio-interfaces-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:desktop-audio-interfaces-ownership-cost-and-maintenance",
+        "path": "/guides/desktop-audio-interfaces-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/desktop-audio-interfaces-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:desktop-audio-interfaces-setup-and-daily-workflow",
+        "path": "/guides/desktop-audio-interfaces-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/desktop-audio-interfaces-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:desktop-audio-interfaces-vs-alternatives",
+        "path": "/guides/desktop-audio-interfaces-vs-alternatives",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/desktop-audio-interfaces-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:desktop-audio-interfaces-compatibility-and-fit-guide",
+        "path": "/guides/desktop-audio-interfaces-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/desktop-audio-interfaces-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:thunderbolt-kvm-docks-buying-guide",
+        "path": "/guides/thunderbolt-kvm-docks-buying-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/thunderbolt-kvm-docks-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:thunderbolt-kvm-docks-vs-alternatives",
+        "path": "/guides/thunderbolt-kvm-docks-vs-alternatives",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/thunderbolt-kvm-docks-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:thunderbolt-kvm-docks-compatibility-and-fit-guide",
+        "path": "/guides/thunderbolt-kvm-docks-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/thunderbolt-kvm-docks-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:thunderbolt-kvm-docks-ownership-cost-and-maintenance",
+        "path": "/guides/thunderbolt-kvm-docks-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/thunderbolt-kvm-docks-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:thunderbolt-kvm-docks-setup-and-daily-workflow",
+        "path": "/guides/thunderbolt-kvm-docks-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/thunderbolt-kvm-docks-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:sheetfed-document-scanners-buying-guide",
+        "path": "/guides/sheetfed-document-scanners-buying-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/sheetfed-document-scanners-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:sheetfed-document-scanners-vs-alternatives",
+        "path": "/guides/sheetfed-document-scanners-vs-alternatives",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/sheetfed-document-scanners-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:sheetfed-document-scanners-compatibility-and-fit-guide",
+        "path": "/guides/sheetfed-document-scanners-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/sheetfed-document-scanners-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:sheetfed-document-scanners-ownership-cost-and-maintenance",
+        "path": "/guides/sheetfed-document-scanners-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/sheetfed-document-scanners-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:sheetfed-document-scanners-setup-and-daily-workflow",
+        "path": "/guides/sheetfed-document-scanners-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/sheetfed-document-scanners-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:flatbed-document-scanners-buying-guide",
+        "path": "/guides/flatbed-document-scanners-buying-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/flatbed-document-scanners-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:flatbed-document-scanners-vs-alternatives",
+        "path": "/guides/flatbed-document-scanners-vs-alternatives",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/flatbed-document-scanners-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:flatbed-document-scanners-compatibility-and-fit-guide",
+        "path": "/guides/flatbed-document-scanners-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/flatbed-document-scanners-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:flatbed-document-scanners-ownership-cost-and-maintenance",
+        "path": "/guides/flatbed-document-scanners-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/flatbed-document-scanners-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:flatbed-document-scanners-setup-and-daily-workflow",
+        "path": "/guides/flatbed-document-scanners-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/flatbed-document-scanners-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:monochrome-laser-printers-buying-guide",
+        "path": "/guides/monochrome-laser-printers-buying-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/monochrome-laser-printers-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:monochrome-laser-printers-vs-alternatives",
+        "path": "/guides/monochrome-laser-printers-vs-alternatives",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/monochrome-laser-printers-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:monochrome-laser-printers-compatibility-and-fit-guide",
+        "path": "/guides/monochrome-laser-printers-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/monochrome-laser-printers-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:monochrome-laser-printers-ownership-cost-and-maintenance",
+        "path": "/guides/monochrome-laser-printers-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/monochrome-laser-printers-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:monochrome-laser-printers-setup-and-daily-workflow",
+        "path": "/guides/monochrome-laser-printers-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/monochrome-laser-printers-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:color-laser-multifunction-printers-buying-guide",
+        "path": "/guides/color-laser-multifunction-printers-buying-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/color-laser-multifunction-printers-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:color-laser-multifunction-printers-vs-alternatives",
+        "path": "/guides/color-laser-multifunction-printers-vs-alternatives",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/color-laser-multifunction-printers-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:color-laser-multifunction-printers-compatibility-and-fit-guide",
+        "path": "/guides/color-laser-multifunction-printers-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/color-laser-multifunction-printers-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:color-laser-multifunction-printers-ownership-cost-and-maintenance",
+        "path": "/guides/color-laser-multifunction-printers-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/color-laser-multifunction-printers-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:color-laser-multifunction-printers-setup-and-daily-workflow",
+        "path": "/guides/color-laser-multifunction-printers-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/color-laser-multifunction-printers-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:adjustable-laptop-stands-buying-guide",
+        "path": "/guides/adjustable-laptop-stands-buying-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/adjustable-laptop-stands-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:adjustable-laptop-stands-vs-alternatives",
+        "path": "/guides/adjustable-laptop-stands-vs-alternatives",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/adjustable-laptop-stands-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:adjustable-laptop-stands-compatibility-and-fit-guide",
+        "path": "/guides/adjustable-laptop-stands-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/adjustable-laptop-stands-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:adjustable-laptop-stands-ownership-cost-and-maintenance",
+        "path": "/guides/adjustable-laptop-stands-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/adjustable-laptop-stands-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:adjustable-laptop-stands-setup-and-daily-workflow",
+        "path": "/guides/adjustable-laptop-stands-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/adjustable-laptop-stands-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:under-desk-keyboard-trays-buying-guide",
+        "path": "/guides/under-desk-keyboard-trays-buying-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/under-desk-keyboard-trays-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:under-desk-keyboard-trays-vs-alternatives",
+        "path": "/guides/under-desk-keyboard-trays-vs-alternatives",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/under-desk-keyboard-trays-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:under-desk-keyboard-trays-compatibility-and-fit-guide",
+        "path": "/guides/under-desk-keyboard-trays-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/under-desk-keyboard-trays-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:under-desk-keyboard-trays-ownership-cost-and-maintenance",
+        "path": "/guides/under-desk-keyboard-trays-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/under-desk-keyboard-trays-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:under-desk-keyboard-trays-setup-and-daily-workflow",
+        "path": "/guides/under-desk-keyboard-trays-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/under-desk-keyboard-trays-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:office-footrests-buying-guide",
+        "path": "/guides/office-footrests-buying-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/office-footrests-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:office-footrests-vs-alternatives",
+        "path": "/guides/office-footrests-vs-alternatives",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/office-footrests-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:office-footrests-compatibility-and-fit-guide",
+        "path": "/guides/office-footrests-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/office-footrests-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:office-footrests-ownership-cost-and-maintenance",
+        "path": "/guides/office-footrests-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/office-footrests-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:office-footrests-setup-and-daily-workflow",
+        "path": "/guides/office-footrests-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/office-footrests-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:standing-desk-anti-fatigue-mats-buying-guide",
+        "path": "/guides/standing-desk-anti-fatigue-mats-buying-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/standing-desk-anti-fatigue-mats-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:standing-desk-anti-fatigue-mats-vs-alternatives",
+        "path": "/guides/standing-desk-anti-fatigue-mats-vs-alternatives",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/standing-desk-anti-fatigue-mats-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:standing-desk-anti-fatigue-mats-compatibility-and-fit-guide",
+        "path": "/guides/standing-desk-anti-fatigue-mats-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/standing-desk-anti-fatigue-mats-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:standing-desk-anti-fatigue-mats-ownership-cost-and-maintenance",
+        "path": "/guides/standing-desk-anti-fatigue-mats-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/standing-desk-anti-fatigue-mats-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:standing-desk-anti-fatigue-mats-setup-and-daily-workflow",
+        "path": "/guides/standing-desk-anti-fatigue-mats-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/standing-desk-anti-fatigue-mats-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:home-office-acoustic-panels-buying-guide",
+        "path": "/guides/home-office-acoustic-panels-buying-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/home-office-acoustic-panels-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:home-office-acoustic-panels-vs-alternatives",
+        "path": "/guides/home-office-acoustic-panels-vs-alternatives",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/home-office-acoustic-panels-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:home-office-acoustic-panels-compatibility-and-fit-guide",
+        "path": "/guides/home-office-acoustic-panels-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/home-office-acoustic-panels-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:home-office-acoustic-panels-ownership-cost-and-maintenance",
+        "path": "/guides/home-office-acoustic-panels-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/home-office-acoustic-panels-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:home-office-acoustic-panels-setup-and-daily-workflow",
+        "path": "/guides/home-office-acoustic-panels-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/home-office-acoustic-panels-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:under-desk-cable-trays-buying-guide",
+        "path": "/guides/under-desk-cable-trays-buying-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/under-desk-cable-trays-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:under-desk-cable-trays-vs-alternatives",
+        "path": "/guides/under-desk-cable-trays-vs-alternatives",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/under-desk-cable-trays-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:under-desk-cable-trays-compatibility-and-fit-guide",
+        "path": "/guides/under-desk-cable-trays-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/under-desk-cable-trays-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:under-desk-cable-trays-ownership-cost-and-maintenance",
+        "path": "/guides/under-desk-cable-trays-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/under-desk-cable-trays-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:under-desk-cable-trays-setup-and-daily-workflow",
+        "path": "/guides/under-desk-cable-trays-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/under-desk-cable-trays-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:desktop-power-centers-buying-guide",
+        "path": "/guides/desktop-power-centers-buying-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/desktop-power-centers-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:desktop-power-centers-vs-alternatives",
+        "path": "/guides/desktop-power-centers-vs-alternatives",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/desktop-power-centers-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:desktop-power-centers-compatibility-and-fit-guide",
+        "path": "/guides/desktop-power-centers-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/desktop-power-centers-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:desktop-power-centers-ownership-cost-and-maintenance",
+        "path": "/guides/desktop-power-centers-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/desktop-power-centers-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:desktop-power-centers-setup-and-daily-workflow",
+        "path": "/guides/desktop-power-centers-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/desktop-power-centers-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "network:ten-gigabit-ethernet-switches-buying-guide",
+        "path": "/guides/ten-gigabit-ethernet-switches-buying-guide",
+        "status": 200,
+        "canonical": "https://network.madabase.com/guides/ten-gigabit-ethernet-switches-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "network:ten-gigabit-ethernet-switches-vs-alternatives",
+        "path": "/guides/ten-gigabit-ethernet-switches-vs-alternatives",
+        "status": 200,
+        "canonical": "https://network.madabase.com/guides/ten-gigabit-ethernet-switches-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "network:ten-gigabit-ethernet-switches-compatibility-and-fit-guide",
+        "path": "/guides/ten-gigabit-ethernet-switches-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://network.madabase.com/guides/ten-gigabit-ethernet-switches-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "network:ten-gigabit-ethernet-switches-ownership-cost-and-maintenance",
+        "path": "/guides/ten-gigabit-ethernet-switches-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://network.madabase.com/guides/ten-gigabit-ethernet-switches-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "network:sfp-plus-transceivers-compatibility-and-fit-guide",
+        "path": "/guides/sfp-plus-transceivers-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://network.madabase.com/guides/sfp-plus-transceivers-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "network:hardware-firewall-appliances-buying-guide",
+        "path": "/guides/hardware-firewall-appliances-buying-guide",
+        "status": 200,
+        "canonical": "https://network.madabase.com/guides/hardware-firewall-appliances-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "network:hardware-firewall-appliances-vs-alternatives",
+        "path": "/guides/hardware-firewall-appliances-vs-alternatives",
+        "status": 200,
+        "canonical": "https://network.madabase.com/guides/hardware-firewall-appliances-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "network:hardware-firewall-appliances-compatibility-and-fit-guide",
+        "path": "/guides/hardware-firewall-appliances-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://network.madabase.com/guides/hardware-firewall-appliances-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "network:hardware-firewall-appliances-ownership-cost-and-maintenance",
+        "path": "/guides/hardware-firewall-appliances-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://network.madabase.com/guides/hardware-firewall-appliances-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "network:vpn-gateways-buying-guide",
+        "path": "/guides/vpn-gateways-buying-guide",
+        "status": 200,
+        "canonical": "https://network.madabase.com/guides/vpn-gateways-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "network:dual-wan-routers-compatibility-and-fit-guide",
+        "path": "/guides/dual-wan-routers-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://network.madabase.com/guides/dual-wan-routers-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "network:five-g-home-internet-gateways-compatibility-and-fit-guide",
+        "path": "/guides/five-g-home-internet-gateways-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://network.madabase.com/guides/five-g-home-internet-gateways-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "network:mobile-hotspots-buying-guide",
+        "path": "/guides/mobile-hotspots-buying-guide",
+        "status": 200,
+        "canonical": "https://network.madabase.com/guides/mobile-hotspots-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "network:ethernet-patch-panels-buying-guide",
+        "path": "/guides/ethernet-patch-panels-buying-guide",
+        "status": 200,
+        "canonical": "https://network.madabase.com/guides/ethernet-patch-panels-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "network:ethernet-cable-testers-compatibility-and-fit-guide",
+        "path": "/guides/ethernet-cable-testers-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://network.madabase.com/guides/ethernet-cable-testers-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:matter-smart-bulbs-buying-guide",
+        "path": "/guides/matter-smart-bulbs-buying-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/matter-smart-bulbs-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:matter-smart-bulbs-vs-alternatives",
+        "path": "/guides/matter-smart-bulbs-vs-alternatives",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/matter-smart-bulbs-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:matter-smart-bulbs-compatibility-and-fit-guide",
+        "path": "/guides/matter-smart-bulbs-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/matter-smart-bulbs-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:matter-smart-bulbs-ownership-cost-and-maintenance",
+        "path": "/guides/matter-smart-bulbs-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/matter-smart-bulbs-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:matter-smart-bulbs-setup-and-daily-workflow",
+        "path": "/guides/matter-smart-bulbs-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/matter-smart-bulbs-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-light-strips-buying-guide",
+        "path": "/guides/smart-light-strips-buying-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-light-strips-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-light-strips-vs-alternatives",
+        "path": "/guides/smart-light-strips-vs-alternatives",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-light-strips-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-light-strips-compatibility-and-fit-guide",
+        "path": "/guides/smart-light-strips-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-light-strips-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-light-strips-ownership-cost-and-maintenance",
+        "path": "/guides/smart-light-strips-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-light-strips-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-light-strips-setup-and-daily-workflow",
+        "path": "/guides/smart-light-strips-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-light-strips-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-wall-switches-buying-guide",
+        "path": "/guides/smart-wall-switches-buying-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-wall-switches-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-wall-switches-vs-alternatives",
+        "path": "/guides/smart-wall-switches-vs-alternatives",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-wall-switches-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-wall-switches-compatibility-and-fit-guide",
+        "path": "/guides/smart-wall-switches-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-wall-switches-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-wall-switches-ownership-cost-and-maintenance",
+        "path": "/guides/smart-wall-switches-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-wall-switches-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-wall-switches-setup-and-daily-workflow",
+        "path": "/guides/smart-wall-switches-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-wall-switches-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-dimmer-switches-buying-guide",
+        "path": "/guides/smart-dimmer-switches-buying-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-dimmer-switches-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-dimmer-switches-vs-alternatives",
+        "path": "/guides/smart-dimmer-switches-vs-alternatives",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-dimmer-switches-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-dimmer-switches-compatibility-and-fit-guide",
+        "path": "/guides/smart-dimmer-switches-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-dimmer-switches-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-dimmer-switches-ownership-cost-and-maintenance",
+        "path": "/guides/smart-dimmer-switches-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-dimmer-switches-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-dimmer-switches-setup-and-daily-workflow",
+        "path": "/guides/smart-dimmer-switches-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-dimmer-switches-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-power-strips-buying-guide",
+        "path": "/guides/smart-power-strips-buying-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-power-strips-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-power-strips-vs-alternatives",
+        "path": "/guides/smart-power-strips-vs-alternatives",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-power-strips-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-power-strips-compatibility-and-fit-guide",
+        "path": "/guides/smart-power-strips-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-power-strips-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-power-strips-ownership-cost-and-maintenance",
+        "path": "/guides/smart-power-strips-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-power-strips-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-power-strips-setup-and-daily-workflow",
+        "path": "/guides/smart-power-strips-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-power-strips-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:outdoor-smart-plugs-buying-guide",
+        "path": "/guides/outdoor-smart-plugs-buying-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/outdoor-smart-plugs-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:outdoor-smart-plugs-vs-alternatives",
+        "path": "/guides/outdoor-smart-plugs-vs-alternatives",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/outdoor-smart-plugs-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:outdoor-smart-plugs-compatibility-and-fit-guide",
+        "path": "/guides/outdoor-smart-plugs-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/outdoor-smart-plugs-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:outdoor-smart-plugs-ownership-cost-and-maintenance",
+        "path": "/guides/outdoor-smart-plugs-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/outdoor-smart-plugs-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:outdoor-smart-plugs-setup-and-daily-workflow",
+        "path": "/guides/outdoor-smart-plugs-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/outdoor-smart-plugs-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:mmwave-presence-sensors-buying-guide",
+        "path": "/guides/mmwave-presence-sensors-buying-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/mmwave-presence-sensors-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:mmwave-presence-sensors-vs-alternatives",
+        "path": "/guides/mmwave-presence-sensors-vs-alternatives",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/mmwave-presence-sensors-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:mmwave-presence-sensors-compatibility-and-fit-guide",
+        "path": "/guides/mmwave-presence-sensors-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/mmwave-presence-sensors-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:mmwave-presence-sensors-ownership-cost-and-maintenance",
+        "path": "/guides/mmwave-presence-sensors-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/mmwave-presence-sensors-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:mmwave-presence-sensors-setup-and-daily-workflow",
+        "path": "/guides/mmwave-presence-sensors-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/mmwave-presence-sensors-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-contact-sensors-buying-guide",
+        "path": "/guides/smart-contact-sensors-buying-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-contact-sensors-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-contact-sensors-vs-alternatives",
+        "path": "/guides/smart-contact-sensors-vs-alternatives",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-contact-sensors-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-contact-sensors-compatibility-and-fit-guide",
+        "path": "/guides/smart-contact-sensors-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-contact-sensors-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-contact-sensors-ownership-cost-and-maintenance",
+        "path": "/guides/smart-contact-sensors-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-contact-sensors-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-contact-sensors-setup-and-daily-workflow",
+        "path": "/guides/smart-contact-sensors-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-contact-sensors-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-motion-sensors-buying-guide",
+        "path": "/guides/smart-motion-sensors-buying-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-motion-sensors-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-motion-sensors-vs-alternatives",
+        "path": "/guides/smart-motion-sensors-vs-alternatives",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-motion-sensors-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-motion-sensors-compatibility-and-fit-guide",
+        "path": "/guides/smart-motion-sensors-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-motion-sensors-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-motion-sensors-ownership-cost-and-maintenance",
+        "path": "/guides/smart-motion-sensors-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-motion-sensors-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-motion-sensors-setup-and-daily-workflow",
+        "path": "/guides/smart-motion-sensors-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-motion-sensors-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:temperature-humidity-sensors-buying-guide",
+        "path": "/guides/temperature-humidity-sensors-buying-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/temperature-humidity-sensors-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:temperature-humidity-sensors-vs-alternatives",
+        "path": "/guides/temperature-humidity-sensors-vs-alternatives",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/temperature-humidity-sensors-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:temperature-humidity-sensors-compatibility-and-fit-guide",
+        "path": "/guides/temperature-humidity-sensors-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/temperature-humidity-sensors-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:temperature-humidity-sensors-ownership-cost-and-maintenance",
+        "path": "/guides/temperature-humidity-sensors-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/temperature-humidity-sensors-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:temperature-humidity-sensors-setup-and-daily-workflow",
+        "path": "/guides/temperature-humidity-sensors-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/temperature-humidity-sensors-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:indoor-air-quality-monitors-buying-guide",
+        "path": "/guides/indoor-air-quality-monitors-buying-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/indoor-air-quality-monitors-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:indoor-air-quality-monitors-vs-alternatives",
+        "path": "/guides/indoor-air-quality-monitors-vs-alternatives",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/indoor-air-quality-monitors-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:indoor-air-quality-monitors-compatibility-and-fit-guide",
+        "path": "/guides/indoor-air-quality-monitors-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/indoor-air-quality-monitors-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:indoor-air-quality-monitors-ownership-cost-and-maintenance",
+        "path": "/guides/indoor-air-quality-monitors-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/indoor-air-quality-monitors-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:indoor-air-quality-monitors-setup-and-daily-workflow",
+        "path": "/guides/indoor-air-quality-monitors-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/indoor-air-quality-monitors-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-smoke-co-listeners-buying-guide",
+        "path": "/guides/smart-smoke-co-listeners-buying-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-smoke-co-listeners-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-blind-motors-buying-guide",
+        "path": "/guides/smart-blind-motors-buying-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-blind-motors-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-blind-motors-vs-alternatives",
+        "path": "/guides/smart-blind-motors-vs-alternatives",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-blind-motors-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-blind-motors-compatibility-and-fit-guide",
+        "path": "/guides/smart-blind-motors-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-blind-motors-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-blind-motors-ownership-cost-and-maintenance",
+        "path": "/guides/smart-blind-motors-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-blind-motors-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-blind-motors-setup-and-daily-workflow",
+        "path": "/guides/smart-blind-motors-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-blind-motors-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-curtain-motors-buying-guide",
+        "path": "/guides/smart-curtain-motors-buying-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-curtain-motors-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-curtain-motors-vs-alternatives",
+        "path": "/guides/smart-curtain-motors-vs-alternatives",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-curtain-motors-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-curtain-motors-compatibility-and-fit-guide",
+        "path": "/guides/smart-curtain-motors-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-curtain-motors-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-curtain-motors-ownership-cost-and-maintenance",
+        "path": "/guides/smart-curtain-motors-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-curtain-motors-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-curtain-motors-setup-and-daily-workflow",
+        "path": "/guides/smart-curtain-motors-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-curtain-motors-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-garage-door-controllers-buying-guide",
+        "path": "/guides/smart-garage-door-controllers-buying-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-garage-door-controllers-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:whole-home-energy-monitors-buying-guide",
+        "path": "/guides/whole-home-energy-monitors-buying-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/whole-home-energy-monitors-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:whole-home-energy-monitors-vs-alternatives",
+        "path": "/guides/whole-home-energy-monitors-vs-alternatives",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/whole-home-energy-monitors-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:whole-home-energy-monitors-compatibility-and-fit-guide",
+        "path": "/guides/whole-home-energy-monitors-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/whole-home-energy-monitors-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:whole-home-energy-monitors-ownership-cost-and-maintenance",
+        "path": "/guides/whole-home-energy-monitors-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/whole-home-energy-monitors-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:whole-home-energy-monitors-setup-and-daily-workflow",
+        "path": "/guides/whole-home-energy-monitors-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/whole-home-energy-monitors-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-water-shutoff-valves-buying-guide",
+        "path": "/guides/smart-water-shutoff-valves-buying-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-water-shutoff-valves-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-water-shutoff-valves-vs-alternatives",
+        "path": "/guides/smart-water-shutoff-valves-vs-alternatives",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-water-shutoff-valves-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-water-shutoff-valves-compatibility-and-fit-guide",
+        "path": "/guides/smart-water-shutoff-valves-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-water-shutoff-valves-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-water-shutoff-valves-ownership-cost-and-maintenance",
+        "path": "/guides/smart-water-shutoff-valves-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-water-shutoff-valves-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-water-shutoff-valves-setup-and-daily-workflow",
+        "path": "/guides/smart-water-shutoff-valves-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-water-shutoff-valves-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-irrigation-controllers-buying-guide",
+        "path": "/guides/smart-irrigation-controllers-buying-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-irrigation-controllers-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-irrigation-controllers-vs-alternatives",
+        "path": "/guides/smart-irrigation-controllers-vs-alternatives",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-irrigation-controllers-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-irrigation-controllers-compatibility-and-fit-guide",
+        "path": "/guides/smart-irrigation-controllers-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-irrigation-controllers-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-irrigation-controllers-ownership-cost-and-maintenance",
+        "path": "/guides/smart-irrigation-controllers-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-irrigation-controllers-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-irrigation-controllers-setup-and-daily-workflow",
+        "path": "/guides/smart-irrigation-controllers-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-irrigation-controllers-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:matter-hubs-bridges-buying-guide",
+        "path": "/guides/matter-hubs-bridges-buying-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/matter-hubs-bridges-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:matter-hubs-bridges-vs-alternatives",
+        "path": "/guides/matter-hubs-bridges-vs-alternatives",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/matter-hubs-bridges-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:matter-hubs-bridges-compatibility-and-fit-guide",
+        "path": "/guides/matter-hubs-bridges-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/matter-hubs-bridges-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:matter-hubs-bridges-ownership-cost-and-maintenance",
+        "path": "/guides/matter-hubs-bridges-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/matter-hubs-bridges-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:matter-hubs-bridges-setup-and-daily-workflow",
+        "path": "/guides/matter-hubs-bridges-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/matter-hubs-bridges-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-scene-buttons-buying-guide",
+        "path": "/guides/smart-scene-buttons-buying-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-scene-buttons-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-scene-buttons-vs-alternatives",
+        "path": "/guides/smart-scene-buttons-vs-alternatives",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-scene-buttons-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-scene-buttons-compatibility-and-fit-guide",
+        "path": "/guides/smart-scene-buttons-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-scene-buttons-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-scene-buttons-ownership-cost-and-maintenance",
+        "path": "/guides/smart-scene-buttons-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-scene-buttons-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-scene-buttons-setup-and-daily-workflow",
+        "path": "/guides/smart-scene-buttons-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-scene-buttons-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-home-sirens-buying-guide",
+        "path": "/guides/smart-home-sirens-buying-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-home-sirens-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-home-sirens-vs-alternatives",
+        "path": "/guides/smart-home-sirens-vs-alternatives",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-home-sirens-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-home-sirens-compatibility-and-fit-guide",
+        "path": "/guides/smart-home-sirens-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-home-sirens-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-home-sirens-ownership-cost-and-maintenance",
+        "path": "/guides/smart-home-sirens-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-home-sirens-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-home-sirens-setup-and-daily-workflow",
+        "path": "/guides/smart-home-sirens-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-home-sirens-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:diy-smart-alarm-kits-buying-guide",
+        "path": "/guides/diy-smart-alarm-kits-buying-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/diy-smart-alarm-kits-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:indoor-security-cameras-buying-guide",
+        "path": "/guides/indoor-security-cameras-buying-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/indoor-security-cameras-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:indoor-security-cameras-vs-alternatives",
+        "path": "/guides/indoor-security-cameras-vs-alternatives",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/indoor-security-cameras-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:indoor-security-cameras-compatibility-and-fit-guide",
+        "path": "/guides/indoor-security-cameras-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/indoor-security-cameras-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:indoor-security-cameras-ownership-cost-and-maintenance",
+        "path": "/guides/indoor-security-cameras-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/indoor-security-cameras-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:indoor-security-cameras-setup-and-daily-workflow",
+        "path": "/guides/indoor-security-cameras-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/indoor-security-cameras-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:outdoor-security-cameras-buying-guide",
+        "path": "/guides/outdoor-security-cameras-buying-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/outdoor-security-cameras-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:outdoor-security-cameras-vs-alternatives",
+        "path": "/guides/outdoor-security-cameras-vs-alternatives",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/outdoor-security-cameras-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:outdoor-security-cameras-compatibility-and-fit-guide",
+        "path": "/guides/outdoor-security-cameras-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/outdoor-security-cameras-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:outdoor-security-cameras-ownership-cost-and-maintenance",
+        "path": "/guides/outdoor-security-cameras-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/outdoor-security-cameras-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:outdoor-security-cameras-setup-and-daily-workflow",
+        "path": "/guides/outdoor-security-cameras-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/outdoor-security-cameras-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:floodlight-security-cameras-buying-guide",
+        "path": "/guides/floodlight-security-cameras-buying-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/floodlight-security-cameras-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:floodlight-security-cameras-vs-alternatives",
+        "path": "/guides/floodlight-security-cameras-vs-alternatives",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/floodlight-security-cameras-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:floodlight-security-cameras-compatibility-and-fit-guide",
+        "path": "/guides/floodlight-security-cameras-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/floodlight-security-cameras-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:floodlight-security-cameras-ownership-cost-and-maintenance",
+        "path": "/guides/floodlight-security-cameras-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/floodlight-security-cameras-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:floodlight-security-cameras-setup-and-daily-workflow",
+        "path": "/guides/floodlight-security-cameras-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/floodlight-security-cameras-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:robot-vacuums-buying-guide",
+        "path": "/guides/robot-vacuums-buying-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/robot-vacuums-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:robot-vacuums-vs-alternatives",
+        "path": "/guides/robot-vacuums-vs-alternatives",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/robot-vacuums-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:robot-vacuums-compatibility-and-fit-guide",
+        "path": "/guides/robot-vacuums-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/robot-vacuums-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:robot-vacuums-ownership-cost-and-maintenance",
+        "path": "/guides/robot-vacuums-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/robot-vacuums-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:robot-vacuums-setup-and-daily-workflow",
+        "path": "/guides/robot-vacuums-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/robot-vacuums-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:robot-mops-buying-guide",
+        "path": "/guides/robot-mops-buying-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/robot-mops-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:robot-mops-vs-alternatives",
+        "path": "/guides/robot-mops-vs-alternatives",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/robot-mops-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:robot-mops-compatibility-and-fit-guide",
+        "path": "/guides/robot-mops-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/robot-mops-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:robot-mops-ownership-cost-and-maintenance",
+        "path": "/guides/robot-mops-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/robot-mops-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:robot-mops-setup-and-daily-workflow",
+        "path": "/guides/robot-mops-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/robot-mops-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-speakers-buying-guide",
+        "path": "/guides/smart-speakers-buying-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-speakers-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-speakers-vs-alternatives",
+        "path": "/guides/smart-speakers-vs-alternatives",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-speakers-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-speakers-compatibility-and-fit-guide",
+        "path": "/guides/smart-speakers-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-speakers-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-speakers-ownership-cost-and-maintenance",
+        "path": "/guides/smart-speakers-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-speakers-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-speakers-setup-and-daily-workflow",
+        "path": "/guides/smart-speakers-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-speakers-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-ev-chargers-buying-guide",
+        "path": "/guides/smart-ev-chargers-buying-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-ev-chargers-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-ev-chargers-vs-alternatives",
+        "path": "/guides/smart-ev-chargers-vs-alternatives",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-ev-chargers-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-ev-chargers-compatibility-and-fit-guide",
+        "path": "/guides/smart-ev-chargers-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-ev-chargers-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-ev-chargers-ownership-cost-and-maintenance",
+        "path": "/guides/smart-ev-chargers-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-ev-chargers-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:smart-ev-chargers-setup-and-daily-workflow",
+        "path": "/guides/smart-ev-chargers-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/guides/smart-ev-chargers-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:infant-car-seats-buying-guide",
+        "path": "/guides/infant-car-seats-buying-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/infant-car-seats-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:infant-car-seats-vs-alternatives",
+        "path": "/guides/infant-car-seats-vs-alternatives",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/infant-car-seats-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:infant-car-seats-compatibility-and-fit-guide",
+        "path": "/guides/infant-car-seats-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/infant-car-seats-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:infant-car-seats-ownership-cost-and-maintenance",
+        "path": "/guides/infant-car-seats-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/infant-car-seats-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:infant-car-seats-setup-and-daily-workflow",
+        "path": "/guides/infant-car-seats-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/infant-car-seats-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:infant-car-seats-safety-and-skip-guide",
+        "path": "/guides/infant-car-seats-safety-and-skip-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/infant-car-seats-safety-and-skip-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:convertible-car-seats-buying-guide",
+        "path": "/guides/convertible-car-seats-buying-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/convertible-car-seats-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:convertible-car-seats-vs-alternatives",
+        "path": "/guides/convertible-car-seats-vs-alternatives",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/convertible-car-seats-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:convertible-car-seats-compatibility-and-fit-guide",
+        "path": "/guides/convertible-car-seats-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/convertible-car-seats-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:convertible-car-seats-ownership-cost-and-maintenance",
+        "path": "/guides/convertible-car-seats-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/convertible-car-seats-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:convertible-car-seats-setup-and-daily-workflow",
+        "path": "/guides/convertible-car-seats-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/convertible-car-seats-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:convertible-car-seats-safety-and-skip-guide",
+        "path": "/guides/convertible-car-seats-safety-and-skip-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/convertible-car-seats-safety-and-skip-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:belt-positioning-booster-seats-buying-guide",
+        "path": "/guides/belt-positioning-booster-seats-buying-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/belt-positioning-booster-seats-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:belt-positioning-booster-seats-vs-alternatives",
+        "path": "/guides/belt-positioning-booster-seats-vs-alternatives",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/belt-positioning-booster-seats-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:belt-positioning-booster-seats-compatibility-and-fit-guide",
+        "path": "/guides/belt-positioning-booster-seats-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/belt-positioning-booster-seats-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:belt-positioning-booster-seats-ownership-cost-and-maintenance",
+        "path": "/guides/belt-positioning-booster-seats-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/belt-positioning-booster-seats-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:belt-positioning-booster-seats-setup-and-daily-workflow",
+        "path": "/guides/belt-positioning-booster-seats-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/belt-positioning-booster-seats-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:belt-positioning-booster-seats-safety-and-skip-guide",
+        "path": "/guides/belt-positioning-booster-seats-safety-and-skip-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/belt-positioning-booster-seats-safety-and-skip-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:full-size-strollers-buying-guide",
+        "path": "/guides/full-size-strollers-buying-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/full-size-strollers-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:full-size-strollers-vs-alternatives",
+        "path": "/guides/full-size-strollers-vs-alternatives",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/full-size-strollers-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:full-size-strollers-compatibility-and-fit-guide",
+        "path": "/guides/full-size-strollers-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/full-size-strollers-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:full-size-strollers-ownership-cost-and-maintenance",
+        "path": "/guides/full-size-strollers-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/full-size-strollers-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:full-size-strollers-setup-and-daily-workflow",
+        "path": "/guides/full-size-strollers-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/full-size-strollers-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:full-size-strollers-safety-and-skip-guide",
+        "path": "/guides/full-size-strollers-safety-and-skip-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/full-size-strollers-safety-and-skip-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:jogging-strollers-buying-guide",
+        "path": "/guides/jogging-strollers-buying-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/jogging-strollers-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:jogging-strollers-vs-alternatives",
+        "path": "/guides/jogging-strollers-vs-alternatives",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/jogging-strollers-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:jogging-strollers-compatibility-and-fit-guide",
+        "path": "/guides/jogging-strollers-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/jogging-strollers-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:jogging-strollers-ownership-cost-and-maintenance",
+        "path": "/guides/jogging-strollers-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/jogging-strollers-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:jogging-strollers-setup-and-daily-workflow",
+        "path": "/guides/jogging-strollers-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/jogging-strollers-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:jogging-strollers-safety-and-skip-guide",
+        "path": "/guides/jogging-strollers-safety-and-skip-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/jogging-strollers-safety-and-skip-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:stroller-wagons-buying-guide",
+        "path": "/guides/stroller-wagons-buying-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/stroller-wagons-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:stroller-wagons-vs-alternatives",
+        "path": "/guides/stroller-wagons-vs-alternatives",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/stroller-wagons-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:stroller-wagons-compatibility-and-fit-guide",
+        "path": "/guides/stroller-wagons-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/stroller-wagons-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:stroller-wagons-ownership-cost-and-maintenance",
+        "path": "/guides/stroller-wagons-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/stroller-wagons-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:stroller-wagons-setup-and-daily-workflow",
+        "path": "/guides/stroller-wagons-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/stroller-wagons-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:stroller-wagons-safety-and-skip-guide",
+        "path": "/guides/stroller-wagons-safety-and-skip-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/stroller-wagons-safety-and-skip-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:baby-travel-systems-buying-guide",
+        "path": "/guides/baby-travel-systems-buying-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/baby-travel-systems-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:baby-travel-systems-vs-alternatives",
+        "path": "/guides/baby-travel-systems-vs-alternatives",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/baby-travel-systems-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:baby-travel-systems-compatibility-and-fit-guide",
+        "path": "/guides/baby-travel-systems-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/baby-travel-systems-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:baby-travel-systems-ownership-cost-and-maintenance",
+        "path": "/guides/baby-travel-systems-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/baby-travel-systems-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:baby-travel-systems-setup-and-daily-workflow",
+        "path": "/guides/baby-travel-systems-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/baby-travel-systems-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:baby-travel-systems-safety-and-skip-guide",
+        "path": "/guides/baby-travel-systems-safety-and-skip-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/baby-travel-systems-safety-and-skip-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:baby-wraps-slings-buying-guide",
+        "path": "/guides/baby-wraps-slings-buying-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/baby-wraps-slings-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:baby-wraps-slings-vs-alternatives",
+        "path": "/guides/baby-wraps-slings-vs-alternatives",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/baby-wraps-slings-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:baby-wraps-slings-compatibility-and-fit-guide",
+        "path": "/guides/baby-wraps-slings-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/baby-wraps-slings-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:baby-wraps-slings-ownership-cost-and-maintenance",
+        "path": "/guides/baby-wraps-slings-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/baby-wraps-slings-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:baby-wraps-slings-setup-and-daily-workflow",
+        "path": "/guides/baby-wraps-slings-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/baby-wraps-slings-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:baby-wraps-slings-safety-and-skip-guide",
+        "path": "/guides/baby-wraps-slings-safety-and-skip-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/baby-wraps-slings-safety-and-skip-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:hip-seat-carriers-buying-guide",
+        "path": "/guides/hip-seat-carriers-buying-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/hip-seat-carriers-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:hip-seat-carriers-vs-alternatives",
+        "path": "/guides/hip-seat-carriers-vs-alternatives",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/hip-seat-carriers-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:hip-seat-carriers-compatibility-and-fit-guide",
+        "path": "/guides/hip-seat-carriers-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/hip-seat-carriers-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:hip-seat-carriers-ownership-cost-and-maintenance",
+        "path": "/guides/hip-seat-carriers-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/hip-seat-carriers-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:hip-seat-carriers-setup-and-daily-workflow",
+        "path": "/guides/hip-seat-carriers-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/hip-seat-carriers-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:hip-seat-carriers-safety-and-skip-guide",
+        "path": "/guides/hip-seat-carriers-safety-and-skip-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/hip-seat-carriers-safety-and-skip-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:bedside-bassinets-buying-guide",
+        "path": "/guides/bedside-bassinets-buying-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/bedside-bassinets-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:bedside-bassinets-vs-alternatives",
+        "path": "/guides/bedside-bassinets-vs-alternatives",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/bedside-bassinets-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:bedside-bassinets-compatibility-and-fit-guide",
+        "path": "/guides/bedside-bassinets-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/bedside-bassinets-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:bedside-bassinets-ownership-cost-and-maintenance",
+        "path": "/guides/bedside-bassinets-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/bedside-bassinets-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:bedside-bassinets-setup-and-daily-workflow",
+        "path": "/guides/bedside-bassinets-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/bedside-bassinets-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:bedside-bassinets-safety-and-skip-guide",
+        "path": "/guides/bedside-bassinets-safety-and-skip-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/bedside-bassinets-safety-and-skip-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:convertible-baby-cribs-buying-guide",
+        "path": "/guides/convertible-baby-cribs-buying-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/convertible-baby-cribs-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:convertible-baby-cribs-vs-alternatives",
+        "path": "/guides/convertible-baby-cribs-vs-alternatives",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/convertible-baby-cribs-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:convertible-baby-cribs-compatibility-and-fit-guide",
+        "path": "/guides/convertible-baby-cribs-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/convertible-baby-cribs-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:convertible-baby-cribs-ownership-cost-and-maintenance",
+        "path": "/guides/convertible-baby-cribs-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/convertible-baby-cribs-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:convertible-baby-cribs-setup-and-daily-workflow",
+        "path": "/guides/convertible-baby-cribs-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/convertible-baby-cribs-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:convertible-baby-cribs-safety-and-skip-guide",
+        "path": "/guides/convertible-baby-cribs-safety-and-skip-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/convertible-baby-cribs-safety-and-skip-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:crib-mattresses-buying-guide",
+        "path": "/guides/crib-mattresses-buying-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/crib-mattresses-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:crib-mattresses-vs-alternatives",
+        "path": "/guides/crib-mattresses-vs-alternatives",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/crib-mattresses-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:crib-mattresses-compatibility-and-fit-guide",
+        "path": "/guides/crib-mattresses-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/crib-mattresses-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:crib-mattresses-ownership-cost-and-maintenance",
+        "path": "/guides/crib-mattresses-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/crib-mattresses-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:crib-mattresses-setup-and-daily-workflow",
+        "path": "/guides/crib-mattresses-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/crib-mattresses-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:crib-mattresses-safety-and-skip-guide",
+        "path": "/guides/crib-mattresses-safety-and-skip-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/crib-mattresses-safety-and-skip-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:travel-cribs-playards-buying-guide",
+        "path": "/guides/travel-cribs-playards-buying-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/travel-cribs-playards-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:travel-cribs-playards-vs-alternatives",
+        "path": "/guides/travel-cribs-playards-vs-alternatives",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/travel-cribs-playards-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:travel-cribs-playards-compatibility-and-fit-guide",
+        "path": "/guides/travel-cribs-playards-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/travel-cribs-playards-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:travel-cribs-playards-ownership-cost-and-maintenance",
+        "path": "/guides/travel-cribs-playards-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/travel-cribs-playards-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:travel-cribs-playards-setup-and-daily-workflow",
+        "path": "/guides/travel-cribs-playards-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/travel-cribs-playards-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:travel-cribs-playards-safety-and-skip-guide",
+        "path": "/guides/travel-cribs-playards-safety-and-skip-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/travel-cribs-playards-safety-and-skip-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:adjustable-high-chairs-buying-guide",
+        "path": "/guides/adjustable-high-chairs-buying-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/adjustable-high-chairs-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:adjustable-high-chairs-vs-alternatives",
+        "path": "/guides/adjustable-high-chairs-vs-alternatives",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/adjustable-high-chairs-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:adjustable-high-chairs-compatibility-and-fit-guide",
+        "path": "/guides/adjustable-high-chairs-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/adjustable-high-chairs-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:adjustable-high-chairs-ownership-cost-and-maintenance",
+        "path": "/guides/adjustable-high-chairs-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/adjustable-high-chairs-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:adjustable-high-chairs-setup-and-daily-workflow",
+        "path": "/guides/adjustable-high-chairs-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/adjustable-high-chairs-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:adjustable-high-chairs-safety-and-skip-guide",
+        "path": "/guides/adjustable-high-chairs-safety-and-skip-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/adjustable-high-chairs-safety-and-skip-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:baby-food-makers-buying-guide",
+        "path": "/guides/baby-food-makers-buying-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/baby-food-makers-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:baby-food-makers-vs-alternatives",
+        "path": "/guides/baby-food-makers-vs-alternatives",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/baby-food-makers-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:baby-food-makers-compatibility-and-fit-guide",
+        "path": "/guides/baby-food-makers-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/baby-food-makers-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:baby-food-makers-ownership-cost-and-maintenance",
+        "path": "/guides/baby-food-makers-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/baby-food-makers-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:baby-food-makers-setup-and-daily-workflow",
+        "path": "/guides/baby-food-makers-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/baby-food-makers-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:baby-food-makers-safety-and-skip-guide",
+        "path": "/guides/baby-food-makers-safety-and-skip-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/baby-food-makers-safety-and-skip-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:changing-pads-buying-guide",
+        "path": "/guides/changing-pads-buying-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/changing-pads-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:changing-pads-vs-alternatives",
+        "path": "/guides/changing-pads-vs-alternatives",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/changing-pads-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:changing-pads-compatibility-and-fit-guide",
+        "path": "/guides/changing-pads-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/changing-pads-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:changing-pads-ownership-cost-and-maintenance",
+        "path": "/guides/changing-pads-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/changing-pads-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:changing-pads-setup-and-daily-workflow",
+        "path": "/guides/changing-pads-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/changing-pads-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:changing-pads-safety-and-skip-guide",
+        "path": "/guides/changing-pads-safety-and-skip-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/changing-pads-safety-and-skip-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:structured-diaper-bags-buying-guide",
+        "path": "/guides/structured-diaper-bags-buying-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/structured-diaper-bags-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:structured-diaper-bags-vs-alternatives",
+        "path": "/guides/structured-diaper-bags-vs-alternatives",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/structured-diaper-bags-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:structured-diaper-bags-compatibility-and-fit-guide",
+        "path": "/guides/structured-diaper-bags-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/structured-diaper-bags-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:structured-diaper-bags-ownership-cost-and-maintenance",
+        "path": "/guides/structured-diaper-bags-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/structured-diaper-bags-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:structured-diaper-bags-setup-and-daily-workflow",
+        "path": "/guides/structured-diaper-bags-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/structured-diaper-bags-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:structured-diaper-bags-safety-and-skip-guide",
+        "path": "/guides/structured-diaper-bags-safety-and-skip-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/structured-diaper-bags-safety-and-skip-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:hardware-mounted-baby-gates-buying-guide",
+        "path": "/guides/hardware-mounted-baby-gates-buying-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/hardware-mounted-baby-gates-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:hardware-mounted-baby-gates-vs-alternatives",
+        "path": "/guides/hardware-mounted-baby-gates-vs-alternatives",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/hardware-mounted-baby-gates-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:hardware-mounted-baby-gates-compatibility-and-fit-guide",
+        "path": "/guides/hardware-mounted-baby-gates-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/hardware-mounted-baby-gates-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:hardware-mounted-baby-gates-ownership-cost-and-maintenance",
+        "path": "/guides/hardware-mounted-baby-gates-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/hardware-mounted-baby-gates-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:hardware-mounted-baby-gates-setup-and-daily-workflow",
+        "path": "/guides/hardware-mounted-baby-gates-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/hardware-mounted-baby-gates-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:hardware-mounted-baby-gates-safety-and-skip-guide",
+        "path": "/guides/hardware-mounted-baby-gates-safety-and-skip-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/hardware-mounted-baby-gates-safety-and-skip-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:nursery-humidifiers-buying-guide",
+        "path": "/guides/nursery-humidifiers-buying-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/nursery-humidifiers-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:nursery-humidifiers-vs-alternatives",
+        "path": "/guides/nursery-humidifiers-vs-alternatives",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/nursery-humidifiers-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:nursery-humidifiers-compatibility-and-fit-guide",
+        "path": "/guides/nursery-humidifiers-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/nursery-humidifiers-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:nursery-humidifiers-ownership-cost-and-maintenance",
+        "path": "/guides/nursery-humidifiers-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/nursery-humidifiers-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:nursery-humidifiers-setup-and-daily-workflow",
+        "path": "/guides/nursery-humidifiers-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/nursery-humidifiers-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:nursery-humidifiers-safety-and-skip-guide",
+        "path": "/guides/nursery-humidifiers-safety-and-skip-guide",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/guides/nursery-humidifiers-safety-and-skip-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:wet-food-automatic-feeders-buying-guide",
+        "path": "/guides/wet-food-automatic-feeders-buying-guide",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/wet-food-automatic-feeders-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:wet-food-automatic-feeders-vs-alternatives",
+        "path": "/guides/wet-food-automatic-feeders-vs-alternatives",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/wet-food-automatic-feeders-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:wet-food-automatic-feeders-compatibility-and-fit-guide",
+        "path": "/guides/wet-food-automatic-feeders-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/wet-food-automatic-feeders-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:wet-food-automatic-feeders-ownership-cost-and-maintenance",
+        "path": "/guides/wet-food-automatic-feeders-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/wet-food-automatic-feeders-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:wet-food-automatic-feeders-setup-and-daily-workflow",
+        "path": "/guides/wet-food-automatic-feeders-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/wet-food-automatic-feeders-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:microchip-pet-feeders-buying-guide",
+        "path": "/guides/microchip-pet-feeders-buying-guide",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/microchip-pet-feeders-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:microchip-pet-feeders-vs-alternatives",
+        "path": "/guides/microchip-pet-feeders-vs-alternatives",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/microchip-pet-feeders-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:microchip-pet-feeders-compatibility-and-fit-guide",
+        "path": "/guides/microchip-pet-feeders-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/microchip-pet-feeders-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:microchip-pet-feeders-ownership-cost-and-maintenance",
+        "path": "/guides/microchip-pet-feeders-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/microchip-pet-feeders-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:microchip-pet-feeders-setup-and-daily-workflow",
+        "path": "/guides/microchip-pet-feeders-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/microchip-pet-feeders-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:wireless-pump-pet-fountains-buying-guide",
+        "path": "/guides/wireless-pump-pet-fountains-buying-guide",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/wireless-pump-pet-fountains-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:wireless-pump-pet-fountains-vs-alternatives",
+        "path": "/guides/wireless-pump-pet-fountains-vs-alternatives",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/wireless-pump-pet-fountains-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:wireless-pump-pet-fountains-compatibility-and-fit-guide",
+        "path": "/guides/wireless-pump-pet-fountains-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/wireless-pump-pet-fountains-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:wireless-pump-pet-fountains-ownership-cost-and-maintenance",
+        "path": "/guides/wireless-pump-pet-fountains-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/wireless-pump-pet-fountains-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:wireless-pump-pet-fountains-setup-and-daily-workflow",
+        "path": "/guides/wireless-pump-pet-fountains-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/wireless-pump-pet-fountains-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:cat-gps-trackers-setup-and-daily-workflow",
+        "path": "/guides/cat-gps-trackers-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/cat-gps-trackers-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:dog-activity-collars-buying-guide",
+        "path": "/guides/dog-activity-collars-buying-guide",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/dog-activity-collars-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:airtag-pet-collar-holders-setup-and-daily-workflow",
+        "path": "/guides/airtag-pet-collar-holders-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/airtag-pet-collar-holders-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:motorized-smart-pet-doors-buying-guide",
+        "path": "/guides/motorized-smart-pet-doors-buying-guide",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/motorized-smart-pet-doors-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:motorized-smart-pet-doors-vs-alternatives",
+        "path": "/guides/motorized-smart-pet-doors-vs-alternatives",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/motorized-smart-pet-doors-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:motorized-smart-pet-doors-compatibility-and-fit-guide",
+        "path": "/guides/motorized-smart-pet-doors-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/motorized-smart-pet-doors-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:motorized-smart-pet-doors-ownership-cost-and-maintenance",
+        "path": "/guides/motorized-smart-pet-doors-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/motorized-smart-pet-doors-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:motorized-smart-pet-doors-setup-and-daily-workflow",
+        "path": "/guides/motorized-smart-pet-doors-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/motorized-smart-pet-doors-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:treat-dispensing-pet-cameras-buying-guide",
+        "path": "/guides/treat-dispensing-pet-cameras-buying-guide",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/treat-dispensing-pet-cameras-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:treat-dispensing-pet-cameras-vs-alternatives",
+        "path": "/guides/treat-dispensing-pet-cameras-vs-alternatives",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/treat-dispensing-pet-cameras-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:treat-dispensing-pet-cameras-compatibility-and-fit-guide",
+        "path": "/guides/treat-dispensing-pet-cameras-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/treat-dispensing-pet-cameras-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:treat-dispensing-pet-cameras-ownership-cost-and-maintenance",
+        "path": "/guides/treat-dispensing-pet-cameras-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/treat-dispensing-pet-cameras-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:treat-dispensing-pet-cameras-setup-and-daily-workflow",
+        "path": "/guides/treat-dispensing-pet-cameras-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/treat-dispensing-pet-cameras-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:open-top-self-cleaning-litter-boxes-buying-guide",
+        "path": "/guides/open-top-self-cleaning-litter-boxes-buying-guide",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/open-top-self-cleaning-litter-boxes-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:open-top-self-cleaning-litter-boxes-vs-alternatives",
+        "path": "/guides/open-top-self-cleaning-litter-boxes-vs-alternatives",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/open-top-self-cleaning-litter-boxes-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:open-top-self-cleaning-litter-boxes-compatibility-and-fit-guide",
+        "path": "/guides/open-top-self-cleaning-litter-boxes-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/open-top-self-cleaning-litter-boxes-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:open-top-self-cleaning-litter-boxes-ownership-cost-and-maintenance",
+        "path": "/guides/open-top-self-cleaning-litter-boxes-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/open-top-self-cleaning-litter-boxes-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:open-top-self-cleaning-litter-boxes-setup-and-daily-workflow",
+        "path": "/guides/open-top-self-cleaning-litter-boxes-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/open-top-self-cleaning-litter-boxes-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:top-entry-litter-boxes-buying-guide",
+        "path": "/guides/top-entry-litter-boxes-buying-guide",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/top-entry-litter-boxes-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:top-entry-litter-boxes-vs-alternatives",
+        "path": "/guides/top-entry-litter-boxes-vs-alternatives",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/top-entry-litter-boxes-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:top-entry-litter-boxes-compatibility-and-fit-guide",
+        "path": "/guides/top-entry-litter-boxes-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/top-entry-litter-boxes-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:top-entry-litter-boxes-ownership-cost-and-maintenance",
+        "path": "/guides/top-entry-litter-boxes-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/top-entry-litter-boxes-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:top-entry-litter-boxes-setup-and-daily-workflow",
+        "path": "/guides/top-entry-litter-boxes-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/top-entry-litter-boxes-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:cat-litter-mats-compatibility-and-fit-guide",
+        "path": "/guides/cat-litter-mats-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/cat-litter-mats-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:pet-hair-vacuum-tools-buying-guide",
+        "path": "/guides/pet-hair-vacuum-tools-buying-guide",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/pet-hair-vacuum-tools-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:pet-hair-vacuum-tools-vs-alternatives",
+        "path": "/guides/pet-hair-vacuum-tools-vs-alternatives",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/pet-hair-vacuum-tools-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:pet-hair-vacuum-tools-compatibility-and-fit-guide",
+        "path": "/guides/pet-hair-vacuum-tools-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/pet-hair-vacuum-tools-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:pet-hair-vacuum-tools-ownership-cost-and-maintenance",
+        "path": "/guides/pet-hair-vacuum-tools-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/pet-hair-vacuum-tools-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:pet-hair-vacuum-tools-setup-and-daily-workflow",
+        "path": "/guides/pet-hair-vacuum-tools-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/pet-hair-vacuum-tools-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:pet-hair-clippers-buying-guide",
+        "path": "/guides/pet-hair-clippers-buying-guide",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/pet-hair-clippers-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:pet-hair-clippers-vs-alternatives",
+        "path": "/guides/pet-hair-clippers-vs-alternatives",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/pet-hair-clippers-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:pet-hair-clippers-compatibility-and-fit-guide",
+        "path": "/guides/pet-hair-clippers-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/pet-hair-clippers-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:pet-hair-clippers-ownership-cost-and-maintenance",
+        "path": "/guides/pet-hair-clippers-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/pet-hair-clippers-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:pet-hair-clippers-setup-and-daily-workflow",
+        "path": "/guides/pet-hair-clippers-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/pet-hair-clippers-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:pet-nail-grinders-buying-guide",
+        "path": "/guides/pet-nail-grinders-buying-guide",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/pet-nail-grinders-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:pet-nail-grinders-vs-alternatives",
+        "path": "/guides/pet-nail-grinders-vs-alternatives",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/pet-nail-grinders-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:pet-nail-grinders-compatibility-and-fit-guide",
+        "path": "/guides/pet-nail-grinders-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/pet-nail-grinders-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:pet-nail-grinders-ownership-cost-and-maintenance",
+        "path": "/guides/pet-nail-grinders-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/pet-nail-grinders-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:pet-nail-grinders-setup-and-daily-workflow",
+        "path": "/guides/pet-nail-grinders-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/pet-nail-grinders-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:pet-dryers-buying-guide",
+        "path": "/guides/pet-dryers-buying-guide",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/pet-dryers-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:pet-dryers-vs-alternatives",
+        "path": "/guides/pet-dryers-vs-alternatives",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/pet-dryers-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:pet-dryers-compatibility-and-fit-guide",
+        "path": "/guides/pet-dryers-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/pet-dryers-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:pet-dryers-ownership-cost-and-maintenance",
+        "path": "/guides/pet-dryers-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/pet-dryers-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:pet-dryers-setup-and-daily-workflow",
+        "path": "/guides/pet-dryers-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/pet-dryers-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:pet-stain-carpet-cleaners-buying-guide",
+        "path": "/guides/pet-stain-carpet-cleaners-buying-guide",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/pet-stain-carpet-cleaners-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:cooling-pet-beds-setup-and-daily-workflow",
+        "path": "/guides/cooling-pet-beds-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/cooling-pet-beds-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:washable-orthopedic-pet-beds-buying-guide",
+        "path": "/guides/washable-orthopedic-pet-beds-buying-guide",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/washable-orthopedic-pet-beds-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:soft-sided-pet-carriers-buying-guide",
+        "path": "/guides/soft-sided-pet-carriers-buying-guide",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/soft-sided-pet-carriers-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:soft-sided-pet-carriers-vs-alternatives",
+        "path": "/guides/soft-sided-pet-carriers-vs-alternatives",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/soft-sided-pet-carriers-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:soft-sided-pet-carriers-compatibility-and-fit-guide",
+        "path": "/guides/soft-sided-pet-carriers-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/soft-sided-pet-carriers-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:soft-sided-pet-carriers-ownership-cost-and-maintenance",
+        "path": "/guides/soft-sided-pet-carriers-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/soft-sided-pet-carriers-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:soft-sided-pet-carriers-setup-and-daily-workflow",
+        "path": "/guides/soft-sided-pet-carriers-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/soft-sided-pet-carriers-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:vehicle-pet-restraints-buying-guide",
+        "path": "/guides/vehicle-pet-restraints-buying-guide",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/vehicle-pet-restraints-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:vehicle-pet-restraints-vs-alternatives",
+        "path": "/guides/vehicle-pet-restraints-vs-alternatives",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/vehicle-pet-restraints-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:vehicle-pet-restraints-compatibility-and-fit-guide",
+        "path": "/guides/vehicle-pet-restraints-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/vehicle-pet-restraints-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:vehicle-pet-restraints-ownership-cost-and-maintenance",
+        "path": "/guides/vehicle-pet-restraints-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/vehicle-pet-restraints-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:vehicle-pet-restraints-setup-and-daily-workflow",
+        "path": "/guides/vehicle-pet-restraints-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/vehicle-pet-restraints-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:interactive-puzzle-feeders-buying-guide",
+        "path": "/guides/interactive-puzzle-feeders-buying-guide",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/interactive-puzzle-feeders-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:automatic-ball-launchers-buying-guide",
+        "path": "/guides/automatic-ball-launchers-buying-guide",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/automatic-ball-launchers-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:smart-bird-feeders-buying-guide",
+        "path": "/guides/smart-bird-feeders-buying-guide",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/smart-bird-feeders-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:smart-bird-feeders-vs-alternatives",
+        "path": "/guides/smart-bird-feeders-vs-alternatives",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/smart-bird-feeders-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:smart-bird-feeders-compatibility-and-fit-guide",
+        "path": "/guides/smart-bird-feeders-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/smart-bird-feeders-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:smart-bird-feeders-ownership-cost-and-maintenance",
+        "path": "/guides/smart-bird-feeders-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/smart-bird-feeders-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:smart-bird-feeders-setup-and-daily-workflow",
+        "path": "/guides/smart-bird-feeders-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/smart-bird-feeders-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:automatic-aquarium-feeders-setup-and-daily-workflow",
+        "path": "/guides/automatic-aquarium-feeders-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/automatic-aquarium-feeders-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "pet:aquarium-water-monitors-setup-and-daily-workflow",
+        "path": "/guides/aquarium-water-monitors-setup-and-daily-workflow",
+        "status": 200,
+        "canonical": "https://pets.madabase.com/guides/aquarium-water-monitors-setup-and-daily-workflow",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "costume:high-end-costumes-buying-guide",
+        "path": "/guides/high-end-costumes-buying-guide",
+        "status": 200,
+        "canonical": "https://costume.madabase.com/guides/high-end-costumes-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "costume:mascot-costumes-buying-guide",
+        "path": "/guides/mascot-costumes-buying-guide",
+        "status": 200,
+        "canonical": "https://costume.madabase.com/guides/mascot-costumes-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "costume:historical-theatrical-costumes-buying-guide",
+        "path": "/guides/historical-theatrical-costumes-buying-guide",
+        "status": 200,
+        "canonical": "https://costume.madabase.com/guides/historical-theatrical-costumes-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "costume:adult-costumes-buying-guide",
+        "path": "/guides/adult-costumes-buying-guide",
+        "status": 200,
+        "canonical": "https://costume.madabase.com/guides/adult-costumes-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "costume:child-costumes-buying-guide",
+        "path": "/guides/child-costumes-buying-guide",
+        "status": 200,
+        "canonical": "https://costume.madabase.com/guides/child-costumes-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "costume:costume-wigs-buying-guide",
+        "path": "/guides/costume-wigs-buying-guide",
+        "status": 200,
+        "canonical": "https://costume.madabase.com/guides/costume-wigs-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "costume:costume-wigs-vs-alternatives",
+        "path": "/guides/costume-wigs-vs-alternatives",
+        "status": 200,
+        "canonical": "https://costume.madabase.com/guides/costume-wigs-vs-alternatives",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "costume:costume-wigs-compatibility-and-fit-guide",
+        "path": "/guides/costume-wigs-compatibility-and-fit-guide",
+        "status": 200,
+        "canonical": "https://costume.madabase.com/guides/costume-wigs-compatibility-and-fit-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "costume:costume-wigs-ownership-cost-and-maintenance",
+        "path": "/guides/costume-wigs-ownership-cost-and-maintenance",
+        "status": 200,
+        "canonical": "https://costume.madabase.com/guides/costume-wigs-ownership-cost-and-maintenance",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "costume:masks-and-masquerade-buying-guide",
+        "path": "/guides/masks-and-masquerade-buying-guide",
+        "status": 200,
+        "canonical": "https://costume.madabase.com/guides/masks-and-masquerade-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "costume:prosthetics-special-effects-buying-guide",
+        "path": "/guides/prosthetics-special-effects-buying-guide",
+        "status": 200,
+        "canonical": "https://costume.madabase.com/guides/prosthetics-special-effects-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "costume:theatrical-face-body-makeup-buying-guide",
+        "path": "/guides/theatrical-face-body-makeup-buying-guide",
+        "status": 200,
+        "canonical": "https://costume.madabase.com/guides/theatrical-face-body-makeup-buying-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:babybjorn-harmony-vs-ergobaby-omni-breeze",
+        "path": "/best/babybjorn-harmony-vs-ergobaby-omni-breeze",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/best/babybjorn-harmony-vs-ergobaby-omni-breeze",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:dr-browns-vs-baby-brezza-sterilizer-dryer",
+        "path": "/best/dr-browns-vs-baby-brezza-sterilizer-dryer",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/best/dr-browns-vs-baby-brezza-sterilizer-dryer",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "baby:ergobaby-omni-breeze-carrier",
+        "path": "/reviews/ergobaby-omni-breeze-carrier",
+        "status": 200,
+        "canonical": "https://baby.madabase.com/reviews/ergobaby-omni-breeze-carrier",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:aqara-door-and-window-sensor-p2",
+        "path": "/reviews/aqara-door-and-window-sensor-p2",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/reviews/aqara-door-and-window-sensor-p2",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:small-home-office-setup-guide",
+        "path": "/guides/small-home-office-setup-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/small-home-office-setup-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:monitor-arm-for-small-desk-guide",
+        "path": "/guides/monitor-arm-for-small-desk-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/monitor-arm-for-small-desk-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:home-office-cable-management-guide",
+        "path": "/guides/home-office-cable-management-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/home-office-cable-management-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:usb-switch-vs-kvm-vs-dock-guide",
+        "path": "/guides/usb-switch-vs-kvm-vs-dock-guide",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/usb-switch-vs-kvm-vs-dock-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "homeoffice:usb-speakerphone-vs-headset-video-meetings",
+        "path": "/guides/usb-speakerphone-vs-headset-video-meetings",
+        "status": 200,
+        "canonical": "https://homeoffice.madabase.com/guides/usb-speakerphone-vs-headset-video-meetings",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "network:wifi-7-vs-wifi-6-guide",
+        "path": "/guides/wifi-7-vs-wifi-6-guide",
+        "status": 200,
+        "canonical": "https://network.madabase.com/guides/wifi-7-vs-wifi-6-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "network:ethernet-cable-category-guide",
+        "path": "/guides/ethernet-cable-category-guide",
+        "status": 200,
+        "canonical": "https://network.madabase.com/guides/ethernet-cable-category-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "network:home-ethernet-switch-guide",
+        "path": "/guides/home-ethernet-switch-guide",
+        "status": 200,
+        "canonical": "https://network.madabase.com/guides/home-ethernet-switch-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "network:usb-c-ethernet-adapter-guide",
+        "path": "/guides/usb-c-ethernet-adapter-guide",
+        "status": 200,
+        "canonical": "https://network.madabase.com/guides/usb-c-ethernet-adapter-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "network:travel-router-vpn-guide",
+        "path": "/guides/travel-router-vpn-guide",
+        "status": 200,
+        "canonical": "https://network.madabase.com/guides/travel-router-vpn-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "network:moca-2-5-vs-ethernet-run-guide",
+        "path": "/guides/moca-2-5-vs-ethernet-run-guide",
+        "status": 200,
+        "canonical": "https://network.madabase.com/guides/moca-2-5-vs-ethernet-run-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "network:poe-switch-for-home-cameras-and-access-points-guide",
+        "path": "/guides/poe-switch-for-home-cameras-and-access-points-guide",
+        "status": 200,
+        "canonical": "https://network.madabase.com/guides/poe-switch-for-home-cameras-and-access-points-guide",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "key": "smarthome:aqara-door-and-window-sensor-p2",
+        "path": "/reviews/aqara-door-and-window-sensor-p2",
+        "status": 200,
+        "canonical": "https://smarthome.madabase.com/reviews/aqara-door-and-window-sensor-p2",
+        "passed": true,
+        "errors": []
+      }
+    ]
+  },
+  "catalog": {
+    "total": 77,
+    "passed": 77,
+    "rows": [
+      {
+        "id": "007abd7e-d648-416e-801f-1ddf402ae3d5",
+        "slug": "cali-blonde-marilyn-starlet-wig-lvklnhr",
+        "held": true,
+        "links": 0,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "08a38e54-a19b-4b16-8d32-6a6d3c811bc2",
+        "slug": "black-two-horned-half-mask-gvjatlr",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "18054056-7c91-4aef-be32-a84a6d256632",
+        "slug": "the-deluxe-joker-purple-green-child-costume-w-mask-vmgnrkq",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "18a6ca2f-8182-4251-9b16-11ca38c7892d",
+        "slug": "polar-bear-mascot-i-a__ns",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "18e32e23-e4d4-4833-a6ed-76d9c564b7a4",
+        "slug": "the-hobbit-gandalf-adult-costume-6sfdetw",
+        "held": true,
+        "links": 0,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "1d737dfe-3954-43fc-897a-cdd058f42efb",
+        "slug": "pumpkin-bat-ghost-string-lights-slbqrxp",
+        "held": true,
+        "links": 0,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "1fb8a386-68fd-4c11-80e3-0599d7f6aa60",
+        "slug": "black-spot-dog-high-end-mascot-adult-costume-g0ysvuw",
+        "held": true,
+        "links": 0,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "20c41322-605c-4c7c-8423-77cfa6d91b41",
+        "slug": "classic-1920s-scalloped-sequin-flapper-dress-women-s-adult-costume-dabhg_c",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "230efb06-1742-429d-b484-235033c25485",
+        "slug": "floating-ghost-revenant-uv-reactive-animatronic-tocj9ij",
+        "held": true,
+        "links": 0,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "27a7f2ba-8b20-476c-8a94-ed045acd3f62",
+        "slug": "5-kraken-posable-tentacle-blacklight-prop-z_vmtvb",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "35dbb24b-2225-46c9-8bfd-773aedb3a03a",
+        "slug": "authentic-vintage-1960s-blue-sailor-pinup-dress-women-s-costume-snyc3vr",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "4043c83c-8945-4457-bd92-f8bc0e9a823a",
+        "slug": "premium-wolf-man-professional-cosplay-adult-costume-hpp9toe",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "41f5ae63-c666-4017-8ba3-4847c570ac90",
+        "slug": "ben-nye-liquid-latex-almqlbe",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "425ba82c-eab3-4d89-9018-9124509356e1",
+        "slug": "blissful-black-cat-mascot-adult-costume-gozmxlx",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "4397ca1d-b61d-408f-bbd1-0619ae0256fe",
+        "slug": "2-octopus-posable-tentacle-blacklight-prop-c2kwigo",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "46802e1e-b497-423c-a535-a7d684f6c9dd",
+        "slug": "bat-foam-latex-prosthetic-nysajb-",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "4bf84c09-9822-46ca-be89-53f0578ea396",
+        "slug": "fox-ears-and-tail-set-k8t3evd",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "4db2c96f-45de-46ed-81d8-4bfc45585584",
+        "slug": "diablo-matte-black-masquerade-mask-kbqldec",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "4fb9de75-c610-4050-93bb-e315fa3cd212",
+        "slug": "7-piece-professional-red-plush-santa-suit-adult-costume-di5qoyc",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "54ff5c22-ce03-407c-81ed-fbf978b9c460",
+        "slug": "bright-sunshine-gold-sequin-tailcoat-men-s-costume-rxxeivg",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "58db2b2c-85c7-4c15-bc56-d69fd68a2b22",
+        "slug": "judge-unisex-wig--wjwnun",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "5a765a24-01cf-4306-8c40-00ad1c383ee1",
+        "slug": "brown-leather-plague-doctor-goggle-mask-4ewd08a",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "5be758d5-454e-49ac-bba6-5dd1d08572df",
+        "slug": "harley-inspired-curled-pink-and-blue-pigtail-wig-3hiyszo",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "5cad998e-dfbb-467a-83e5-81953f3c4ba3",
+        "slug": "creepy-vintage-bloody-clown-adult-costume-re9xptj",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "5da9efa1-1b72-4a4c-a6e2-232eb627eb2a",
+        "slug": "cotton-candy-theatrical-contact-lenses-fpyb29g",
+        "held": true,
+        "links": 0,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "5fb5fbce-027f-45cb-914c-7d7579dcd824",
+        "slug": "brown-bunny-mascot-adult-costume-0q-blim",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "62964beb-9d63-4698-bcaf-2069ac9f7cb9",
+        "slug": "professional-1920s-grey-plaid-suit-adult-costume-vsfiea9",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "657dee1d-6e05-4177-a413-8f8415fd61c8",
+        "slug": "creeping-dead-mask-w-bone-suit-adult-costume-b7b3xh8",
+        "held": true,
+        "links": 0,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "67cc8dea-890d-4c4d-afb3-71649509bcfa",
+        "slug": "deluxe-vintage-creeper-clown-women-s-costume-ncrshdh",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "6e3e2a9e-37a8-4691-a8b9-123e25bec98d",
+        "slug": "ben-nye-stage-blood-dbds8bj",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "6e67dba4-d6b0-4999-b2a1-183d7cbf9146",
+        "slug": "fantasy-dark-gothic-wicked-witch-adult-costume-uik2kxx",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "70bec230-ff6c-48d0-9176-5e4210553ad6",
+        "slug": "woochie-fx-dark-lord-foam-latex-prosthetic--qtrtcu",
+        "held": true,
+        "links": 0,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "71c10eac-0f3c-40e1-9750-6897974cb8c9",
+        "slug": "dc-universe-catwoman-adult-costume-ikdxwcg",
+        "held": true,
+        "links": 0,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "75c83911-80d0-4fc7-b71e-67d900121493",
+        "slug": "angry-villain-violently-shaking-animated-prop-jhez1p5",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "762897b7-1cbe-4fe1-a313-779073ee1594",
+        "slug": "classic-pope-adult-costume-j-v8fbb",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "770d903c-304a-4c09-828e-f0a0a1cdb443",
+        "slug": "7-rotten-harvester-skeleton-scarecrow-animated-prop-decoration-ubtr30k",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "7a418db1-3637-40a4-93f7-d40fd11077e1",
+        "slug": "manic-panic-trash-goddess-wig-lecanry",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "822b7f88-91b3-48b3-8a6c-08f432bdd0fe",
+        "slug": "7-whimsical-witch-animated-prop-decoration-gd8qxgu",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "827eeacd-9a37-43b9-8577-1e18eaf3b616",
+        "slug": "adult-cotton-engineer-hat-bxcvoso",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "8f477549-3b65-40a0-ae95-997a97ba9378",
+        "slug": "day-of-the-dead-hair-clip-2_6uepg",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "907e0765-6673-4ebb-aaca-448b3024e62e",
+        "slug": "24-fleur-de-lis-silver-king-crown-lzigvdr",
+        "held": true,
+        "links": 0,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "90b1ae58-cf23-484a-9996-e8fdfe2526d0",
+        "slug": "3-piece-hanging-halloween-ghost-w-witch-hat-decoration-qehek2n",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "92c1bcaf-261f-4df3-89a7-9bc64af495c1",
+        "slug": "gus-deluxe-old-man-mask-p-bqxfw",
+        "held": true,
+        "links": 0,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "943554ba-731a-4824-8610-6eadde7c4199",
+        "slug": "led-light-up-jack-o-lantern-w-sound-t96hg8z",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "960b317d-09d9-4bcb-afd6-504103aa8113",
+        "slug": "blue-police-ceremony-uniform-adult-costume-1ekzdvb",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "96101c9f-588f-464a-a231-8e3808c3b4a6",
+        "slug": "classic-harley-quinn-adult-costume-igt9bmj",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "9721d235-062b-439a-86be-f2d1f6203f1e",
+        "slug": "clean-old-joel-arm-dark-zisgsfe",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "978a609d-835b-4ba1-99cd-de60e7a61a61",
+        "slug": "exclusive-1920s-brown-striped-double-breasted-suit-men-s-costume-xsnsmmo",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "981c4926-f91a-43a4-a0b3-ef2e234e153c",
+        "slug": "embalming-fluid-bottle-prop-44rnj33",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "99649cf0-0f94-4231-8ae0-0a544fb5cfde",
+        "slug": "misting-pumpkin-halloween-decoration-p7ew4c5",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "99d2a533-ab54-43a7-ba94-e38ce3b40457",
+        "slug": "rochelle-feathered-venetian-lace-mask-scopfsh",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "9a439206-7ff5-43ba-ac0d-1ef9ef78938c",
+        "slug": "lil-lion-cub-onesie-baby-costume-5wexwct",
+        "held": true,
+        "links": 0,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "a43e6e27-a992-4375-b34b-f73c1dfa89ec",
+        "slug": "demonia-bolt-450-combat-boots-pqkpzii",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "a4d8456b-4b2b-4ef6-afc4-a3812be955cc",
+        "slug": "black-grey-terrier-mascot-adult-costume-vcxsoxd",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "abeeb94f-8cf1-49d5-a0d2-ad7fa4a94c70",
+        "slug": "regal-true-red-professional-santa-suit-adult-costume-aer4zwj",
+        "held": true,
+        "links": 0,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "b51900a9-1f19-469c-a2d6-9d7074b58225",
+        "slug": "4-bloodnight-wings-for-devils-demons-gargoyles-2e8fjra",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "b6bc4274-a2da-413c-a756-be47095e8955",
+        "slug": "albert-einstein-physicist-classic-kids-costume-hhe7fb3",
+        "held": true,
+        "links": 0,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "b872ad72-5a6f-4469-9261-d69db614a3dc",
+        "slug": "7-gargoyle-w-expandable-wings-fog-breath-electric-animatronic-prop-xfptvun",
+        "held": true,
+        "links": 0,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "b95b51fd-b0e6-4a3b-9382-608fde43b9fb",
+        "slug": "delicious-goat-head-mask-w-working-jaw-0cksm82",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "c49b8ab9-4a4a-4a09-8ddb-25785b8c246c",
+        "slug": "7-piece-professional-red-plush-santa-suit-adult-costume-nljenk3",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "c5c0cf9b-6705-490a-9a1b-28644e9eeda0",
+        "slug": "ben-nye-burns-blisters-wheel-fx-creme-makeup-1xw6mmw",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "ce2c6e78-0680-41d8-8f30-97d066b37d0b",
+        "slug": "ground-breaker-zombie-left-arm-grabber-animatronic-prop-ghfielf",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "cfcd3a32-e1dc-453a-8798-24552abf87ad",
+        "slug": "deluxe-grey-military-hat-zax4i1e",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "d7994dc0-f293-4b27-8426-a8b02afb1118",
+        "slug": "harry-potter-hufflepuff-child-robe-zlyr8ok",
+        "held": true,
+        "links": 0,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "d9fbc5c1-2b92-44fd-bfc3-01703542cef4",
+        "slug": "haunted-tree-led-light-up-animatronic-9oq3s6r",
+        "held": true,
+        "links": 0,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "da22052f-8db9-47a4-8417-a567abfc2512",
+        "slug": "extra-toasty-freddy-inspired-deluxe-silicone-mask-9f_nsln",
+        "held": true,
+        "links": 0,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "da70c4de-d43c-4906-90d3-bbb0d516cfc8",
+        "slug": "scarlet-red-long-feather-carnival-headpiece-9plcxyd",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "e21ca4a2-0f9b-4992-bc45-ed6e099be88e",
+        "slug": "christmas-santa-wig-beard-set-gdf3cco",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "e3b34706-d914-4d13-9517-9736d824a35d",
+        "slug": "ground-breaker-zombie-left-arm-grabber-animatronic-prop-5mn6-ix",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "eb74046d-4e1d-4de7-9cff-8c4e28f070ba",
+        "slug": "creature-bloody-multi-layered-fx-fangs-pb85kep",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "ecbee047-248b-4202-8e02-fd3e9f343975",
+        "slug": "skin-illustrator-alchemy-alcohol-activated-makeup-fx-palette-ivi4ryz",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "ecd525b9-aabf-4649-9003-478279515908",
+        "slug": "rotten-gums-zombie-mask-memz_4t",
+        "held": true,
+        "links": 0,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "efcc8b1d-4699-4995-8a90-72867d4871b0",
+        "slug": "1920s-black-silver-sequin-flapper-dress-women-s-costume-fe30pzp",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "f3d8782f-04bd-405e-99b6-b85c9efb3555",
+        "slug": "black-deluxe-padre-hat-varvyos",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "f9c7b674-384e-4f52-a5bc-8ef704cffc38",
+        "slug": "gargoyle-flexi-ears-f9eu7jd",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "fa942b64-a8f1-40d2-bade-66a0246706d6",
+        "slug": "ben-nye-fake-aged-dark-blood-upuntqa",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "id": "facc6353-cd28-4a3a-a563-c2f63330f9e3",
+        "slug": "morgan-face-specimen-jar-prop-wpfpfyg",
+        "held": false,
+        "links": 3,
+        "passed": true,
+        "errors": []
+      }
+    ],
+    "sitemapProducts": 58,
+    "rentalCountPassed": true,
+    "priceSortHTTP": 200
+  },
+  "assets": [
+    {
+      "path": "/_next/static/css/f622efb3abdc0e3d.css",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "path": "/_next/static/chunks/webpack-dbddb8e4135c4c28.js",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "path": "/_next/static/chunks/87c73c54-24122e7b92478d00.js",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "path": "/_next/static/chunks/18-536e344942e9442c.js",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "path": "/_next/static/chunks/main-app-a95f53a759d7fe46.js",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "path": "/_next/static/chunks/664-6d821dc1aacb6b48.js",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "path": "/_next/static/chunks/813-de40f36a78e836a3.js",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "path": "/_next/static/chunks/489-7239d0684fc3678d.js",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "path": "/_next/static/chunks/817-6cc85ba514a72c7e.js",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "path": "/_next/static/chunks/930-8b3f47b8a4234189.js",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "path": "/_next/static/chunks/app/guides/%5Bslug%5D/page-b6c27bb78a06c5d1.js",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "path": "/_next/static/chunks/app/layout-9778af60690427f8.js",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "path": "/_next/static/chunks/polyfills-42372ed130431b0a.js",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "path": "/_next/static/chunks/app/best/%5Bslug%5D/page-b076eab9156e2b12.js",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "path": "/_next/static/chunks/app/reviews/%5Bslug%5D/page-bfacab2dae5f19bd.js",
+      "status": 200,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "deployed": false
+}

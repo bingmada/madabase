@@ -1,4 +1,7 @@
 import type { Guide, Product, Roundup, SiteKey, Tool } from "./types";
+import { applySeoQualityImprovements } from "./seo-quality-improvements";
+import { applyReviewedGuideContent } from "./reviewed-guide-content";
+import { applyReviewedRoundupContent } from "./reviewed-roundup-content";
 import { addEditorialExpansionLinks, editorialExpansionGuides } from "./october-editorial-expansion";
 import { upgradeGuides } from "./upgrade-guides";
 import { applyIndexingRepair } from "./indexing-repair-content";
@@ -1373,8 +1376,8 @@ export const products: Product[] = [
       "Linked variant": "Omni Breeze, Onyx Black",
       "Listed overall range": "7–45lb / 3.2–20.4kg; minimum height 20in / 50.8cm",
       "Front inward": "From the listed newborn minimum",
-      "Front outward": "Strong head/neck control; over 25in; about 5–6 months",
-      "Hip and back": "Sits unassisted; minimum 17.2lb; usually about 6 months",
+      "Front outward": "Manual: 14–about 30lb and strong, consistent head/neck control; confirm all fit checks",
+      "Hip and back": "Manual: 17.2–45lb; retain unassisted-sitting and head-control checks; confirm exact instructions",
       Material: "SoftFlex mesh",
       "Infant insert": "Not required within the listed newborn limits",
       "Common searches answered": "Ergobaby Omni Breeze review, newborn fit, weight limit, and carry positions",
@@ -1384,7 +1387,7 @@ export const products: Product[] = [
     editorialSections: [
       {
         heading: "A note about this guide",
-        body: "This is a research-based buying guide built from Ergobaby's current product page and instructions; it is not a hands-on test and does not claim that one carrier fits every body. Use the manufacturer manual for setup and position changes, and use the return window to evaluate caregiver comfort and fit.",
+        body: "This research-based guide uses the original Omni Breeze manual, IM-OMNIBRZ-201021-ROW-V1, and model-specific guidance. It is not a hands-on test or an individual fit assessment. Match the instructions supplied with your carrier and region. Ergobaby's current Classic and Deluxe models have their own instructions; those are not substitutes for Breeze setup.",
       },
       {
         heading: "Quick answer for shoppers",
@@ -1396,7 +1399,7 @@ export const products: Product[] = [
       },
       {
         heading: "Carry positions are milestone-dependent",
-        body: "Front inward is the starting position. Ergobaby says outward facing requires strong head and neck control, the chin above the panel, and height over 25in, usually around 5–6 months; its FAQ also recommends a 14–30lb range for that position. Hip and back carry require the baby to sit upright unassisted and weigh at least 17.2lb, usually around 6 months.",
+        body: "The original Breeze manual lists 14–about 30lb for outward carry and 17.2–45lb for hip and back carry; approximate months are general guides. Its warnings require strong, consistent head and neck control before outward carry. The earlier Breeze FAQ also specified height over 25in and chin clearance for outward carry, and unassisted sitting for hip and back. Retain those checks and ask Ergobaby to confirm anything missing from your carrier's instructions. Remove the baby before changing position and never allow outward-facing sleep.",
       },
       {
         heading: "Adjustment mistakes to avoid",
@@ -1415,14 +1418,14 @@ export const products: Product[] = [
     compareSlugs: ["babybjorn-carrier-harmony", "momcozy-purehug-baby-carrier"],
     sources: [
       {
-        name: "Ergobaby Omni Breeze product page and FAQ",
-        url: "https://ergobaby.com/omni-breeze-baby-carrier-all",
-        note: "Official weight, height, position, adjustment, material, and infant-insert guidance.",
+        name: "Ergobaby Omni Breeze original instruction manual",
+        url: "https://cdn.shopify.com/s/files/1/0157/0150/8160/files/IM_OMNIBRZ_201021_ROW_V1.pdf?v=1630054302",
+        note: "Manufacturer-authored IM-OMNIBRZ-201021-ROW-V1, PDF pages 1–2, retrieved October 22, 2026. Position chart and warnings. Earlier Breeze FAQ checks retained as additional conditions are not attributed to this PDF; confirm exact carrier and regional instructions.",
       },
       {
-        name: "Ergobaby Omni Breeze instructions",
-        url: "https://ergobaby.com/instructions-omni-breeze/",
-        note: "Official manuals and position-specific setup videos.",
+        name: "Ergobaby US customer care",
+        url: "https://ergobaby.com/en-us/pages/customer-care",
+        note: "Ask for help matching the instructions and fit to an existing Omni Breeze. The former Breeze product and instruction pages have moved; do not use a different Omni model's manual.",
       },
       {
         name: "Amazon listing: Ergobaby Omni Breeze Onyx Black",
@@ -1935,14 +1938,19 @@ export const guides: Guide[] = [
     title: "Apartment Litter Odor Control Guide",
     dek: "How to combine scooping, disposal, airflow, litter choice, and pet-hair cleanup instead of relying on one odor product.",
     category: "home-care",
-    updatedAt: "June 28, 2026",
+    updatedAt: "October 21, 2026",
     relatedProducts: ["shark-neverchange-max-air-purifier"],
     relatedRoundups: ["best-pet-odor-and-litter-upgrades"],
+    sources: [
+      { name: "Feline Veterinary Medical Association: house-soiling information for cat owners", url: "https://catvets.com/wp-content/uploads/2024/12/FelineVMA-House-Soiling_Web.pdf", note: "Veterinary guidance on waste removal, litter preferences, box access and medical contributors. It is not a test of a purifier or an automatic litter box." },
+      { name: "US EPA: guide to air cleaners in the home", url: "https://www.epa.gov/indoor-air-quality-iaq/guide-air-cleaners-home", note: "Distinguishes particle filtration from gas removal and source control. A particle CADR does not certify removal of litter odors." },
+    ],
     sections: [
       { heading: "Start at the source", body: "Air purifiers and sprays cannot make up for a box that is not scooped often enough. The first upgrade is usually a routine that makes scooping and disposal easier to repeat." },
       { heading: "Separate litter odor from fabric odor", body: "Litter odor, pet-bed odor, and couch hair need different tools. A disposal pail helps after scooping, while washable covers and hair removers help fabrics hold less smell." },
-      { heading: "Match purifier size to the room", body: "An air purifier should be sized for the actual room where the pet spends time. It also needs open airflow and realistic filter upkeep to be worth the space." },
+      { heading: "Separate particle filtration from odor removal", body: "Size a purifier for the actual room and keep its airflow clear, but do not use particle CADR or a HEPA label as proof of odor removal. EPA distinguishes particle filters from gas-removal media such as activated carbon; effectiveness depends on the pollutant and filter. A purifier remains a supplement to waste removal, cleaning and appropriate ventilation." },
       { heading: "Watch recurring costs", body: "Refills, filters, bags, and replacement parts change the real price. Check them before choosing a cheaper-looking odor-control product." },
+      { heading: "Keep the box usable for the cat", body: "The Feline Veterinary Medical Association recommends removing waste at least daily and notes that many cats dislike scented litter or deodorizers. Keep boxes accessible in separate suitable locations instead of crowding them behind an odor gadget. New house-soiling or a change in urination warrants veterinary assessment; buying a fragrance or a new box does not identify the cause." },
     ],
   },
   {
@@ -2214,16 +2222,19 @@ export const guides: Guide[] = [
   {
     site: "baby",
     slug: "nursery-sound-machine-night-light-guide",
-    updatedAt: "June 23, 2026",
+    updatedAt: "October 21, 2026",
     title: "Nursery Sound Machine and Night Light Guide",
     dek: "How to choose sound, light, app controls, portability, and placement without treating a device as a sleep guarantee.",
     category: "sleep",
     relatedRoundups: ["best-baby-carriers-and-sleep-routine-upgrades"],
+    sources: [
+      { name: "American Academy of Pediatrics: how noise affects children", url: "https://www.healthychildren.org/English/safety-prevention/all-around/Pages/how-noise-affects-your-child.aspx", note: "AAP advice on limiting sleep-machine exposure and keeping the device away from the baby's head; it does not establish a universally safe volume percentage for a product." },
+    ],
     sections: [
       { heading: "Use it as a routine cue", body: "A sound machine or night light can support a repeatable bedtime routine, but it should not be framed as a sleep fix. Consistency and safe sleep basics still come first." },
       { heading: "Check controls before features", body: "Volume, brightness, schedules, physical buttons, and app reliability matter more at night than a long sound library." },
       { heading: "Confirm the exact generation", body: "Products like sound machines often have multiple versions. Check which generation, app features, power setup, and portability the listing includes." },
-      { heading: "Place it sensibly", body: "Keep volume moderate and place the device away from the baby according to current pediatric guidance and the product manual." },
+      { heading: "Limit exposure rather than trusting a volume percentage", body: "The American Academy of Pediatrics warns that some infant sound machines can reach hazardous levels. Its guidance recommends maximizing distance from the baby's head and limiting use to short periods. A setting such as 20% is not a sound-level measurement: output depends on the device, sound and distance. Follow the exact manual and discuss individual concerns with the pediatrician; this guide does not certify a safe decibel level or promise better sleep." },
     ],
   },
   {
@@ -2315,16 +2326,19 @@ export const guides: Guide[] = [
   {
     site: "baby",
     slug: "bottle-parts-cleaning-routine-guide",
-    updatedAt: "June 25, 2026",
+    updatedAt: "October 21, 2026",
     title: "Bottle Parts Cleaning Routine Guide",
     dek: "How to plan bottle, nipple, cap, and pump-part cleaning before choosing a sterilizer or dryer.",
     category: "feeding",
     relatedRoundups: ["best-bottle-sterilizers-and-dryers"],
+    sources: [
+      { name: "CDC: cleaning, sanitizing and storing infant feeding items", url: "https://www.cdc.gov/hygiene/about/clean-sanitize-store-infant-feeding-items.html", note: "US public-health instructions for bottle parts, sanitizing conditions and drying. Check the separate instructions for pump parts and individual clinical needs." },
+    ],
     sections: [
       { heading: "Count the parts, not just bottles", body: "A feeding routine includes nipples, rings, caps, valves, pump parts, and drying space. Capacity claims are easier to compare after counting the real parts used in a day." },
-      { heading: "Separate washing, sterilizing, and drying", body: "These are different steps. A sterilizer does not necessarily wash parts, and a sterilizer-only appliance may still leave wet items that need a clean drying area." },
+      { heading: "Separate cleaning, sanitizing and drying", body: "A product sold as a sterilizer does not necessarily wash parts or dry them. CDC advises cleaning bottles after each feed and cleaning before sanitizing. Check each part's compatibility with the chosen method." },
       { heading: "Match the appliance to the bottleneck", body: "If the problem is drying clutter, a dryer matters. If the problem is occasional sterilizing, a smaller or simpler option may be enough." },
-      { heading: "Follow product and medical guidance", body: "Cleaning needs can vary by baby, feeding method, and professional advice. Use the appliance manual and pediatric guidance as the final rule for safe use." },
+      { heading: "Choose the routine for the infant", body: "CDC advises daily sanitizing for infants younger than two months, born prematurely or with weakened immunity. For older healthy infants, careful cleaning after use may make daily sanitizing unnecessary. A suitable hot-water dishwasher cycle with heated drying or a sanitizing setting can replace a separate sanitizing step. Follow the part and appliance manuals and the infant's clinical advice." },
     ],
   },
 ];
@@ -2467,14 +2481,14 @@ for (let index = 0; index < products.length; index += 1) {
 }
 
 for (let index = 0; index < roundups.length; index += 1) {
-  roundups[index] = refreshCommerceRoundup(applyFocusedRoundupRecovery(roundups[index]));
+  roundups[index] = applyReviewedRoundupContent(refreshCommerceRoundup(applyFocusedRoundupRecovery(roundups[index])));
 }
 
 for (let index = 0; index < guides.length; index += 1) {
   const repaired = refreshCommerceGuide(applyFocusedGuideRecovery(applyPortfolioSearchRecoveryGuide(
     applyOctoberSearchRecovery(applyLowClickRepair(applyIndexingRepair(guides[index]))),
   )));
-  guides[index] = addEditorialExpansionLinks({ ...repaired, sources: repaired.sources?.filter((source) => !isBlockedAmazonSource(repaired.site, source.url)) });
+  guides[index] = applyReviewedGuideContent(applySeoQualityImprovements(addEditorialExpansionLinks({ ...repaired, sources: repaired.sources?.filter((source) => !isBlockedAmazonSource(repaired.site, source.url)) })));
 }
 
 const includeDrafts = process.env.AFFILIATE_INCLUDE_DRAFTS === "1";

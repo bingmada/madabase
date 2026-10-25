@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-10-25T05:55:39.923Z",
+  "releaseId": "uFvnHZrw66_38mU8Rzew1",
+  "passed": true,
+  "scenarios": [
+    {
+      "name": "Configured release takes precedence",
+      "passed": true
+    },
+    {
+      "name": "Invalid environment falls back to release file",
+      "passed": true
+    },
+    {
+      "name": "Normal release file",
+      "passed": true
+    },
+    {
+      "name": "Normal next-start fallback",
+      "passed": true
+    },
+    {
+      "name": "Invalid release file uses next fallback",
+      "passed": true
+    },
+    {
+      "name": "No build metadata during development",
+      "passed": true
+    },
+    {
+      "name": "Resolved release remains stable in the running process",
+      "passed": true
+    }
+  ],
+  "traceManifests": 33,
+  "recursiveTraces": [],
+  "packagedIdentityMatches": true,
+  "nestedRuntimeAbsent": true
+}

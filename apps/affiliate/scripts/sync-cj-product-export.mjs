@@ -3,6 +3,7 @@ import fs from "node:fs";
 import { spawn } from "node:child_process";
 import { finished } from "node:stream/promises";
 import { Pool } from "pg";
+import { classifyCostumeFeedProduct, costumeFeedTransaction } from "./lib/costume-feed-classification.mjs";
 
 const exportPath = process.env.CJ_PRODUCT_EXPORT_PATH;
 const databaseUrl = process.env.DATABASE_URL;
@@ -156,14 +157,7 @@ function slugify(value) {
 }
 
 function classify(title, productType, description) {
-  const primary = `${title} ${productType}`.toLowerCase();
-  const secondary = description.toLowerCase();
-  if (/\b(prop|animatronic|animated|weapon|sword|axe|skeleton|statue|figure|decoration)\b/.test(primary)) return "props-animatronics";
-  if (/\b(mask|prosthetic|appliance|fangs?|teeth|latex mask)\b/.test(primary)) return "masks-prosthetics";
-  if (/\b(wig|facial hair|makeup|make-up|cosmetic|eyelash|beard|moustache|mustache|face paint)\b/.test(primary)) return "wigs-makeup";
-  if (/\b(costume|dress|jacket|coat|suit|robe|tights|corset|catsuit|mascot|uniform)\b/.test(primary)) return "costumes";
-  if (/\b(prosthetic|wig|makeup|facial hair)\b/.test(secondary)) return /\b(prosthetic)\b/.test(secondary) ? "masks-prosthetics" : "wigs-makeup";
-  return "accessories-party-effects";
+  return classifyCostumeFeedProduct(title, productType, description);
 }
 
 function normalizeAvailability(value) {
@@ -301,7 +295,7 @@ function normalizeProduct(row) {
     premium: price != null && price >= 1000,
     professional: /professional|theatrical|stage|prosthetic|animatronic/i.test(categorySource),
     halloween: /halloween|spooky|haunted|costume/i.test(categorySource),
-    rental: /rental|rent\b/i.test(categorySource),
+    rental: costumeFeedTransaction(row) === "rent",
     raw: row,
     imageUrls: [...new Set(imageUrls)],
     trackingUrl,

@@ -63,13 +63,15 @@ export const ModelName = {
   TestShareLink: 'TestShareLink',
   ReferralReward: 'ReferralReward',
   AffiliateClick: 'AffiliateClick',
+  CommerceEvent: 'CommerceEvent',
   Merchant: 'Merchant',
   MerchantProduct: 'MerchantProduct',
   MerchantProductImage: 'MerchantProductImage',
   AffiliateLink: 'AffiliateLink',
   EditorialProduct: 'EditorialProduct',
   AffiliateTransaction: 'AffiliateTransaction',
-  ProductSyncRun: 'ProductSyncRun'
+  ProductSyncRun: 'ProductSyncRun',
+  AmazonProductSnapshot: 'AmazonProductSnapshot'
 } as const
 
 export type ModelName = (typeof ModelName)[keyof typeof ModelName]
@@ -226,6 +228,7 @@ export const AffiliateClickScalarFieldEnum = {
   merchant: 'merchant',
   position: 'position',
   path: 'path',
+  market: 'market',
   network: 'network',
   pid: 'pid',
   aid: 'aid',
@@ -237,6 +240,28 @@ export const AffiliateClickScalarFieldEnum = {
 } as const
 
 export type AffiliateClickScalarFieldEnum = (typeof AffiliateClickScalarFieldEnum)[keyof typeof AffiliateClickScalarFieldEnum]
+
+
+export const CommerceEventScalarFieldEnum = {
+  id: 'id',
+  eventType: 'eventType',
+  sessionId: 'sessionId',
+  site: 'site',
+  path: 'path',
+  pageType: 'pageType',
+  market: 'market',
+  releaseId: 'releaseId',
+  device: 'device',
+  channel: 'channel',
+  source: 'source',
+  campaign: 'campaign',
+  productSlug: 'productSlug',
+  merchant: 'merchant',
+  position: 'position',
+  createdAt: 'createdAt'
+} as const
+
+export type CommerceEventScalarFieldEnum = (typeof CommerceEventScalarFieldEnum)[keyof typeof CommerceEventScalarFieldEnum]
 
 
 export const MerchantScalarFieldEnum = {
@@ -382,6 +407,29 @@ export const ProductSyncRunScalarFieldEnum = {
 } as const
 
 export type ProductSyncRunScalarFieldEnum = (typeof ProductSyncRunScalarFieldEnum)[keyof typeof ProductSyncRunScalarFieldEnum]
+
+
+export const AmazonProductSnapshotScalarFieldEnum = {
+  id: 'id',
+  site: 'site',
+  market: 'market',
+  productSlug: 'productSlug',
+  asin: 'asin',
+  marketplace: 'marketplace',
+  detailPageUrl: 'detailPageUrl',
+  title: 'title',
+  imageUrl: 'imageUrl',
+  features: 'features',
+  parentAsin: 'parentAsin',
+  fetchedAt: 'fetchedAt',
+  expiresAt: 'expiresAt',
+  lastErrorCode: 'lastErrorCode',
+  lastErrorAt: 'lastErrorAt',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
+} as const
+
+export type AmazonProductSnapshotScalarFieldEnum = (typeof AmazonProductSnapshotScalarFieldEnum)[keyof typeof AmazonProductSnapshotScalarFieldEnum]
 
 
 export const SortOrder = {

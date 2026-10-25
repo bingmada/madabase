@@ -86,6 +86,7 @@ export type Roundup = Publishable & {
   dek: string;
   category: string;
   intent: string;
+  quickAnswer?: string;
   intro?: string;
   sources?: Array<{ name: string; url: string; note?: string }>;
   sections?: Array<{ heading: string; body: string }>;
@@ -111,6 +112,15 @@ export type Guide = Publishable & {
   imageAlt?: string;
   searchQuestion?: string;
   decisionLayout?: boolean;
+  decisionPurchase?: {
+    asin: string;
+    model: string;
+    qualifies: string;
+    stop: string;
+    keep: string;
+  };
+  /** Authored hub already covers the redirected siblings' useful decisions. */
+  curatedFamilyHub?: boolean;
   quickAnswer?: string;
   editorialMethod?: string[];
   communityEvidence?: Array<{

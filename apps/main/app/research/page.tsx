@@ -7,7 +7,7 @@ import { pageMetadata, siteUrl } from "@/lib/seo";
 
 export const metadata = pageMetadata(
   "Latest buying research",
-  "Selected, recently checked buying research from the six Madabase publications, with model, compatibility, fit, subscription, and version risks kept visible.",
+  "Substantive updates from Madabase publications and seasonal guides, with model, compatibility, fit, subscription, and version risks kept visible.",
   "/research",
 );
 
@@ -23,6 +23,22 @@ export default function ResearchPage() {
     <main>
       <JsonLd data={itemList} />
       <PageIntro eyebrow="Latest research" title="What changed in the decision library." body="Recent additions and substantive updates, newest first. Each entry explains what changed in the linked guide or planner. A page update does not certify current retailer stock or pricing." />
+      <section className="section" aria-labelledby="research-resources">
+        <div className="shell">
+          <p className="eyebrow">Use and share the research</p>
+          <h2 id="research-resources">Worksheets, compatibility references and cost comparisons.</h2>
+          <div className="research-resources-grid">
+            {[
+              { title: "Printer stand measurement worksheet", href: "https://homeoffice.madabase.com/guides/office-printer-stands-buying-guide#fit-worksheet", summary: "Compare operating width, depth, lid clearance and documented shelf capacity using your own measurements.", publication: "homeoffice" },
+              { title: "Lumbar cushion seat-depth worksheet", href: "https://homeoffice.madabase.com/guides/office-lumbar-cushions-buying-guide#fit-worksheet", summary: "See how a fitted cushion changes usable seat depth, then print a record for your real chair.", publication: "homeoffice" },
+              { title: "Tiny PC compatibility references", href: "https://homeoffice.madabase.com/compatibility/mini-pcs", summary: "Compare eight generations and retain the model-specific memory, storage and unresolved-parts limits.", publication: "homeoffice" },
+              { title: "Household technology ownership cost", href: "/guides/household-tech-subscription-checklist#ownership-cost-calculator", summary: "Compare two options over one, three or five years, including recurring costs and unknown inputs.", publication: "main" },
+            ].map((resource) => <article className="research-resource" key={resource.href}>
+              <h3>{resource.title}</h3><p>{resource.summary}</p><TrackedLink className="button button-light" href={resource.href} position="research-resource" publication={resource.publication}>Open the resource <ArrowRight size={16} aria-hidden="true" /></TrackedLink>
+            </article>)}
+          </div>
+        </div>
+      </section>
       <section className="section">
         <div className="shell research-page-grid">
           {researchItems.map((item, index) => (

@@ -6,6 +6,8 @@ import { useEffect, useState, type FormEvent } from "react";
 import { checkArm, checkDock, planMiniPc, type CompatibilityResult, type DockInput } from "@/lib/compatibility-engine";
 import { armProfiles, dockProfiles, evidenceCheckedAt, evidenceSources, macProfiles, miniPcProfiles, monitorProfiles } from "@/lib/compatibility-data";
 import { discoveryEvent } from "../../shared/SearchControls";
+import { AffiliateButton } from "./AffiliateButton";
+import { qualifiedPurchaseOption, type CompatibilityPurchaseOption } from "@/lib/compatibility-purchase";
 
 function Choice({ name, label, options, initial = "", onChange }: { name: string; label: string; options: readonly (readonly [string, string])[]; initial?: string; onChange?: (value: string) => void }) {
   return <label><span>{label}</span><select name={name} defaultValue={initial} onChange={(event) => onChange?.(event.target.value)} required><option value="" disabled>Select…</option>{options.map(([value, text]) => <option value={value} key={value}>{text}</option>)}</select></label>;
@@ -16,7 +18,19 @@ function NumberField({ name, label, max = 500, step = "1", initial }: { name: st
 const yesNo = [["unknown", "Not confirmed"], ["yes", "Yes"], ["no", "No"]] as const;
 const statusLabels = {supported:"Documented checks pass",conditional:"Conditional match",incompatible:"Requirement conflict",unknown:"Evidence incomplete"};
 
-function Result({ result }: { result: CompatibilityResult }) {
+function PurchaseStep({ result, options, position }: { result: CompatibilityResult; options: readonly CompatibilityPurchaseOption[]; position: string }) {
+  const option = qualifiedPurchaseOption(result, options);
+  if (!option) return null;
+  return <aside className="discovery-card mt-4" aria-label={`Purchase next step for ${option.product.name}`} data-compatible-purchase={option.product.slug}>
+    <h3>If you need {option.product.name}</h3>
+    <p>{result.status === "conditional" ? "Complete the setup checks in this result before ordering. " : "Keep working equipment; order only if this model fills a missing requirement. "}{option.check}</p>
+    <p className="evidence-note">The retailer confirms current stock and buying terms. This link does not certify the completed setup.</p>
+    <AffiliateButton site={option.site} product={option.product} offer={option.offer} position={position} sticky={false} />
+    <p><a href={`/reviews/${option.product.slug}`}>Read the exact model and alternatives →</a></p>
+  </aside>;
+}
+
+function Result({ result, purchaseOptions }: { result: CompatibilityResult; purchaseOptions: readonly CompatibilityPurchaseOption[] }) {
   const [copied,setCopied] = useState(false);
   const [copyFallback,setCopyFallback] = useState("");
   const [worksheet,setWorksheet] = useState<PartsWorksheet | null>(null);
@@ -31,6 +45,7 @@ function Result({ result }: { result: CompatibilityResult }) {
     <p className="eyebrow">{statusLabels[result.status]}</p><p className="evidence-note">{result.context}</p><h3>{result.title}</h3>
     <div className="discovery-card mt-4"><h3>{decision}</h3>{result.noBuy ? <p>{result.noBuy}</p> : <p>{result.status === "conditional" || result.status === "supported" ? "This is a planning checklist, subject to the exact component and assembly checks below." : "The parts list is a reference for a revised plan, not approval to buy the unresolved combination."}</p>}</div>
     <ul>{result.reasons.map((reason) => <li key={reason}>{reason}</li>)}</ul>
+    <PurchaseStep result={result} options={purchaseOptions} position="compatibility-qualified-result" />
     {!result.noBuy && result.parts?.length ? <><h3>What to buy, reuse or verify</h3><ul>{result.parts.map((part) => <li key={part.id}><strong>{part.name}: {part.quantity}</strong>{part.id === "memory" ? <p>{part.check}</p> : null}</li>)}</ul></> : null}
     {result.checklist.length ? <><h3 className="mt-5">{result.status === "incompatible" ? "Checks for a revised setup" : "Your next checks"}</h3><ol>{result.checklist.map((item) => <li key={item}>{item}</li>)}</ol></> : null}
     <button type="button" className="decision-button" onClick={copy}>Copy this checklist</button><span role="status" className="evidence-note">{copied ? " Checklist copied. Keep it with the seller's exact parts and return details." : ""}</span>
@@ -41,7 +56,7 @@ function Result({ result }: { result: CompatibilityResult }) {
   </section>;
 }
 export type PlannerTopic = "docks" | "monitor-arms" | "mini-pcs" | "ethernet";
-export function CompatibilityPlanner({ topic, initialModel = "" }: { topic: PlannerTopic; initialModel?: string }) {
+export function CompatibilityPlanner({ topic, initialModel = "", purchaseOptions = [] }: { topic: PlannerTopic; initialModel?: string; purchaseOptions?: readonly CompatibilityPurchaseOption[] }) {
   const [result, setResult] = useState<CompatibilityResult | null>(null);
   const [ready,setReady] = useState(false);
   useEffect(() => { setReady(true); },[]);
@@ -150,9 +165,9 @@ export function CompatibilityPlanner({ topic, initialModel = "" }: { topic: Plan
       <div className="compat-wide"><button type="submit">Check my setup</button><p className="evidence-note mt-3">No account needed. Answers stay in this page; analytics records completion and result type, not your raw inputs.</p></div>
       </fieldset>
     </form>
-    {result ? <Result key={JSON.stringify(result)} result={result} /> : null}
+    {result ? <Result key={JSON.stringify(result)} result={result} purchaseOptions={purchaseOptions} /> : null}
     {topic === "mini-pcs" ? <TinyFruResolver key={tinyModel} modelId={tinyModel} /> : null}
-    {comparison ? <section className="mt-6" id="dock-comparison" style={{scrollMarginTop:110}} tabIndex={-1} aria-label="Dock comparison results"><h3 className="text-xl font-bold">Compare all three docks with these same requirements</h3><p>{comparison.guidance}</p><p>Choose a route below to see its exact wiring, missing pieces and cost worksheet. A conflict or unknown result is a reason to hold that purchase.</p><div className="discovery-grid">{comparison.candidates.map(({id,name,result:candidate}) => <article className="discovery-card" key={id}><h3>{name}</h3><p><strong>{statusLabels[candidate.status]}</strong> · {candidate.title}</p><ul>{candidate.reasons.map((reason) => <li key={reason}>{reason}</li>)}</ul><button type="button" className="decision-button" onClick={() => chooseDock(id)}>Show checklist for {name}</button><p><a href={candidate.href}>Read exact model</a></p></article>)}</div></section> : null}
+    {comparison ? <section className="mt-6" id="dock-comparison" style={{scrollMarginTop:110}} tabIndex={-1} aria-label="Dock comparison results"><h3 className="text-xl font-bold">Compare all three docks with these same requirements</h3><p>{comparison.guidance}</p><p>Choose a route below to see its exact wiring, missing pieces and cost worksheet. A conflict or unknown result is a reason to hold that purchase.</p><div className="discovery-grid">{comparison.candidates.map(({id,name,result:candidate}) => <article className="discovery-card" key={id}><h3>{name}</h3><p><strong>{statusLabels[candidate.status]}</strong> · {candidate.title}</p><ul>{candidate.reasons.map((reason) => <li key={reason}>{reason}</li>)}</ul><button type="button" className="decision-button" onClick={() => chooseDock(id)}>Show checklist for {name}</button><p><a href={candidate.href}>Read exact model</a></p><PurchaseStep result={{...candidate,noBuy:comparison.noBuy}} options={purchaseOptions} position={`compatibility-comparison-${id}`} /></article>)}</div></section> : null}
     {!result && !comparison ? <p className="evidence-note mt-4">Choose your equipment and submit to see the result. No model is recommended before these checks.</p> : null}
   </section>;
 }

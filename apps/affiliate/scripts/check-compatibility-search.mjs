@@ -4,7 +4,7 @@ import { loadAffiliateTypescript } from "./lib/load-affiliate-typescript.mjs";
 const { checkDock, checkArm, planMiniPc, planEthernet } = loadAffiliateTypescript("../../lib/compatibility-engine.ts");
 const { compatibilitySources, dockProfiles, macProfiles, miniPcProfiles } = loadAffiliateTypescript("../../lib/compatibility-data.ts");
 const { siteSearchIndex, allSiteSearchIndex } = loadAffiliateTypescript("../../lib/site-search.ts");
-const { searchContent } = loadAffiliateTypescript("../../../shared/content-search.ts");
+const { searchContent, normalizeSearch } = loadAffiliateTypescript("../../../shared/content-search.ts");
 const { compatibilityTopics } = loadAffiliateTypescript("../../lib/compatibility-topics.ts");
 const { findGuide, findProduct, findRoundup, findTool } = loadAffiliateTypescript("../../lib/content.ts");
 let checks = 0;
@@ -76,6 +76,19 @@ const queryResults = queries.map(([site, query, expected]) => {
   return { site, query, expected, rank };
 });
 check("Unknown model cannot match generic display words", searchContent(siteSearchIndex("homeoffice"), "TS9999 dual monitor").length, 0);
+check("USB condenser is not collapsed into USB-C", normalizeSearch("USB condenser microphone"), "usb condenser microphone");
+check("Plus suffix remains a model distinction", normalizeSearch("NT-USB+"), "nt usb plus");
+const ntUsbResults=searchContent(allSiteSearchIndex(),"NT-USB");
+check("NT-USB has a useful reviewed microphone answer",ntUsbResults.some((entry)=>entry.href.endsWith("/guides/usb-condenser-microphones-buying-guide")),true);
+check("NT-USB cannot return the unrelated NT-25GA adapter",ntUsbResults.some((entry)=>entry.href.includes("nt-25ga")),false);
+check("Spaced model name ranks microphone context before an unrelated adapter",searchContent(allSiteSearchIndex(),"nt usb").slice(0,3).every((entry)=>!entry.href.includes("nt-25ga")),true);
+const shortNameFixtures=[
+  {site:"test",kind:"guide",title:"USB input control",summary:"Front-mounted controls",category:"audio",href:"/unrelated"},
+  {site:"test",kind:"guide",title:"USB microphone choice",summary:"Compare the microphone",searchText:"RØDE NT-USB and NT-USB+",category:"audio",href:"/relevant"},
+];
+check("Short model fragment cannot match inside front or input",searchContent(shortNameFixtures,"nt usb").map((entry)=>entry.href),["/relevant"]);
+check("Hyphenated alphanumeric hub model keeps its exact reviewed fit answer",searchContent(allSiteSearchIndex(),"GP-AEOHUBV4US").some((entry)=>entry.href.endsWith("/guides/matter-hubs-bridges-compatibility-and-fit-guide")),true);
+check("Unknown hub revision is not answered by the current V4",searchContent(allSiteSearchIndex(),"GP-AEOHUBV9US").length,0);
 const all = allSiteSearchIndex();
 check("Search has no duplicate destinations", all.length, new Set(all.map((entry) => entry.href)).size);
 check("Search excludes retired Tools", all.some((entry) => entry.href.includes("tools.madabase.com")), false);

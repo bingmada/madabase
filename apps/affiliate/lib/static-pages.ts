@@ -26,6 +26,10 @@ export function getStaticPages(site: SiteConfig): StaticPage[] {
       dek: `${site.name} publishes practical buying notes for people who want fewer regret buys and clearer trade-offs.`,
       sections: [
         {
+          heading: "Publisher and editorial responsibility",
+          body: `${site.name} is a Madabase publication. The Madabase editorial desk is responsible for the research, comparisons, corrections and affiliate disclosures on this site. Send a correction to 15797688584@163.com with the page URL, exact model and supporting source. The editorial-desk byline identifies the publisher; it does not imply a laboratory, professional certification or a team of product testers.`,
+        },
+        {
           heading: "What this site is for",
           body: `${site.name} is built around practical buying decisions, not shopping hype. We organize products by the job they need to do, then explain who they fit, who should skip them, and what to verify before checkout.`,
         },
@@ -36,6 +40,14 @@ export function getStaticPages(site: SiteConfig): StaticPage[] {
         {
           heading: "What we avoid",
           body: "We do not present marketplace star ratings as our own evaluation, publish fake hands-on testing, or hide affiliate relationships. When a product has version, accessory, subscription, or sizing risk, that risk belongs on the page.",
+        },
+        {
+          heading: "What a research guide can establish",
+          body: "Manufacturer documentation can establish a stated specification or supported configuration. A standards document explains a protocol or general requirement. An independent test applies to its named equipment and conditions. A retailer listing identifies an offer at the time it was checked. We keep those roles separate and describe unresolved model-specific details as questions to verify, rather than transferring a claim from a similar product.",
+        },
+        {
+          heading: "Article updates and retailer checks have different dates",
+          body: "An article revision records a change to the explanation, comparison or sources. A listing-identity date records when the named product and ASIN were checked. Neither is a promise of today's price, stock, seller, delivery or return terms. Where a current listing snapshot is available, it has its own timestamp; otherwise the historical record stays visibly dated.",
         },
       ],
     },
@@ -64,6 +76,10 @@ export function getStaticPages(site: SiteConfig): StaticPage[] {
           heading: "Decision factors, not star ratings",
           body: `Our decision factors show what to compare for the stated use case without assigning unsupported numeric ratings. Before buying, readers should still confirm ${checkoutSource(site)}, exact version, price, availability, shipping, and current return terms.`,
         },
+        {
+          heading: "A repeatable research record",
+          body: "Start with the exact question and model. Record the manufacturer source, hardware generation, region, included parts and the date of the evidence. Compare the alternatives under the same task and name any missing fact. A dimensional worksheet compares the measurements supplied by the reader; it cannot certify a load rating, safe installation, comfort or compatibility that the exact manufacturer has not documented.",
+        },
       ],
     },
     {
@@ -82,6 +98,10 @@ export function getStaticPages(site: SiteConfig): StaticPage[] {
         {
           heading: "Corrections",
           body: "If a product name, link, version, image, or compatibility note looks wrong, we treat that as a correction priority because it can affect the buying decision.",
+        },
+        {
+          heading: "What changes an update date",
+          body: "A new source, corrected specification, revised comparison, changed compatibility finding or substantial new tool can justify an article update. Layout, navigation and distribution changes do not renew the underlying product evidence. A failed retailer check remains unconfirmed; it does not become a successful check through a page rebuild.",
         },
       ],
     },
@@ -120,6 +140,10 @@ export function getStaticPages(site: SiteConfig): StaticPage[] {
         {
           heading: "Site usage and cookies",
           body: `The site may process basic technical and usage information needed for security, reliability, measurement, and performance. Microsoft Clarity may record interaction signals such as page visits, scrolling, clicks, device details, and session replays so we can identify usability problems. ${site.key === "costume" ? "CJ and Abracadabra may use cookies or similar technologies for affiliate attribution after tracked links are enabled." : site.key === "baby" ? "Amazon, CJ, and Bc Babycare may use cookies or similar technologies for affiliate attribution when their respective links are followed." : "Amazon may also use cookies or similar technologies for affiliate attribution."} Third-party services apply their own privacy policies and cookie controls.`,
+        },
+        {
+          heading: "Shopping-path measurement",
+          body: "We use a random identifier in tab session storage to count content visits, visible shopping buttons and retailer clicks. A session expires after 30 minutes of inactivity. Records include the page path, exact product and merchant, button position, site version, broad device type and referral channel. We do not send calculator answers, form values, full referring URLs or search terms to this measurement system. You can clear tab storage through your browser controls.",
         },
         {
           heading: "Affiliate and external links",

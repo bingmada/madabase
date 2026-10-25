@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
 import { MarketHome } from "@/components/MarketExperience";
 import {
@@ -72,6 +73,11 @@ export default async function StaticPage({ params }: { params: Promise<{ slug: s
             </section>
           ))}
         </article>
+        <nav className="mt-10 flex flex-wrap gap-4 border-t border-[var(--border)] pt-6 text-sm font-bold" aria-label="Editorial accountability">
+          {staticPageSlugs.filter((item) => item !== slug && item !== "privacy" && item !== "affiliate-disclosure").map((item) => (
+            <Link className="underline underline-offset-4" href={`/${item}`} key={item}>{findStaticPage(site, item)?.title}</Link>
+          ))}
+        </nav>
       </div>
     </main>
   );

@@ -1,0 +1,18 @@
+{
+  "acceptedAt": "2026-10-25T06:15:53.529346+00:00",
+  "scope": "Completed-scope partial release authorized October25; no whole-ledger completion claim.",
+  "batchesPassed": 60,
+  "batchesTotal": 111,
+  "editorialRoutes": 500,
+  "capturedCatalogProducts": 77,
+  "catalogFixtureLimit": "Captured real fields with fake tracking tokens; no merchant navigation or DB connection.",
+  "releaseId": "uFvnHZrw66_38mU8Rzew1",
+  "mainReleaseId": "CiD44KyBP9lnIuLctNl91",
+  "seo": "passed",
+  "lint": "passed with two existing warnings",
+  "recoveryTests": 10,
+  "commerceSchemaTests": 6,
+  "eventTestDatabaseIsolated": true,
+  "productionDeployment": "pending",
+  "wholeTaskComplete": false
+}

@@ -45,6 +45,10 @@
 
 .task-navigation { margin-top: .6rem; gap: .4rem; }
 .task-navigation a { padding: .35rem .65rem; font-size: .8rem; }
+@media (max-width: 640px) {
+  .task-navigation { flex-wrap: nowrap; max-width: 100%; overflow-x: auto; overscroll-behavior-x: contain; padding-bottom: .3rem; scrollbar-width: thin; }
+  .task-navigation a { display: inline-flex; flex: 0 0 auto; align-items: center; min-height: 44px; white-space: nowrap; }
+}
 .category-browser-results { margin-top: 1rem; line-height: 1.7; }
 .category-browser-results li { margin: .6rem 0; }
 .guide-toc { border: 1px solid #cedce1; padding: 1rem; border-radius: 8px; }
@@ -61,7 +65,7 @@
 .parts-budget input[type=number], .parts-budget select { width: 100%; max-width: 200px; border: 1px solid #aebfc5; background: #fff; padding: .5rem; border-radius: 5px; }
 .parts-budget label { display: block; margin: .6rem 0; }
 .decision-button { min-height: 44px; border: 1px solid #193e51; border-radius: 6px; padding: .6rem 1rem; background: #193e51; color: #fff; font: inherit; font-weight: 700; cursor: pointer; }
-.compat-result, #dock-comparison { scroll-margin-top: 1.5rem; }
+.compat-result, #dock-comparison, #guide-comparison, #fit-worksheet, #guide-quick-answer, [data-decision-reference] { scroll-margin-top: 100px; }
 .compat-result:focus, #dock-comparison:focus { outline: 2px solid #376d83; outline-offset: 4px; }
 .checklist-copy { display: block; margin-top: 1rem; }
 .checklist-copy textarea { display: block; width: 100%; padding: .7rem; border: 1px solid #aebfc5; }

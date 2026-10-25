@@ -115,85 +115,153 @@ export const adjacentExpansionProducts: Product[] = [
     ],
   },
   {
-    site: "smarthome",
-    slug: "aqara-door-and-window-sensor-p2",
-    asin: "B0BTL8B72D",
-    seoTitle: "Aqara P2 Guide: Matter over Thread, Hub Requirements & Battery",
-    updatedAt: "July 17, 2026",
-    name: "Aqara Door and Window Sensor P2",
-    brand: "Aqara",
-    category: "automation",
-    image: "/images/affiliate/smarthome-aqara-hub-m3-realistic.webp",
-    summary: "A setup-focused guide to Aqara's Matter-over-Thread contact sensor, including controller and border-router requirements, magnet alignment, battery access, automations, and why it is closer to IKEA MYGGBETT than the Zigbee IKEA PARASOLL sensor.",
-    verdict: "The P2 is a clean contact-sensor choice when the home already has a compatible Matter controller and Thread border router. A Zigbee Aqara sensor may be simpler for an established Aqara hub installation that does not need native Matter over Thread.",
-    whyItMatters: "The sensor does not join an Aqara Zigbee hub like older Aqara contact sensors. Its Thread network and Matter commissioning path must be ready before the small hardware can become useful.",
-    bestFor: "Native Matter-over-Thread door and window automations",
-    priceBand: "$",
-    rating: 4.3,
-    scores: [
-      { label: "Ecosystem reach", value: 9 },
-      { label: "Installation", value: 8 },
-      { label: "Controller clarity", value: 6 },
+    "site": "smarthome",
+    "slug": "aqara-door-and-window-sensor-p2",
+    "asin": "B0BTL8B72D",
+    "seoTitle": "Aqara P2 Guide: Thread Controller, Magnet Gap & Battery",
+    "updatedAt": "October 23, 2026",
+    "name": "Aqara Door and Window Sensor P2",
+    "amazonTitle": "Aqara P2 DW-S02E indoor Matter-over-Thread contact sensor",
+    "amazonDetailUrl": "https://www.amazon.com/dp/B0BTL8B72D",
+    "brand": "Aqara",
+    "category": "automation",
+    "image": "/images/affiliate/category-smarthome-automation-editorial-v2.webp",
+    "imageAlt": "Editorial scene of unbranded smart-home devices, including a two-piece opening sensor, on a table",
+    "summary": "Check the exact P2 controller and Thread border-router path, indoor alignment, less-than-22mm magnet gap and CR123A access before choosing an opening-state sensor.",
+    "verdict": "P2 is a candidate for indoor opening-state reminders when the complete Matter-over-Thread system and mounting fit. It does not establish locked status or room vacancy. Keep a suitable working contact sensor when its current system already meets the task.",
+    "whyItMatters": "The reviewed US option is DW-S02E, a separate Matter-over-Thread model. It does not pair as a Zigbee child device or replace a Wi-Fi/Tuya sensor without changing the control path.",
+    "bestFor": "Indoor opening-state reminders with a suitable Matter controller and Thread border router",
+    "priceBand": "$",
+    "rating": 4.3,
+    "scores": [
+      {
+        "label": "Controller and Thread path",
+        "value": 9
+      },
+      {
+        "label": "Indoor pair alignment",
+        "value": 8
+      },
+      {
+        "label": "Actual platform functions",
+        "value": 6
+      }
     ],
-    pros: ["Native Matter over Thread", "Works across compatible Matter ecosystems", "Simple open-and-closed state enables many automations"],
-    cons: ["Requires a compatible Matter controller and Thread border router", "Not an Aqara Zigbee child device", "Placement and magnet alignment control reliability"],
-    specs: {
-      ASIN: "B0BTL8B72D",
-      Model: "DW-S02D / DW-S02E; confirm regional version",
-      Protocol: "Matter over Thread",
-      Requirement: "Compatible Matter controller and Thread border router",
-      Battery: "CR123A",
-      Detection: "Open and closed contact state",
+    "pros": [
+      "Documented native Matter-over-Thread path",
+      "Opening state for supported reminders and automations",
+      "Replaceable CR123A battery"
+    ],
+    "cons": [
+      "Requires compatible controller and Thread border router",
+      "Indoor-only mounting with exact alignment and service access",
+      "Closed state does not establish a locked door or an empty room"
+    ],
+    "specs": {
+      "ASIN": "B0BTL8B72D",
+      "Reviewed US option": "DW-S02E, one sensor pair; UPC 192784000847",
+      "Protocol": "Matter over Thread; BLE for commissioning",
+      "Required roles": "Compatible Matter controller and Thread border router",
+      "Battery": "CR123A; use the exact received instructions",
+      "Sensing fit": "Align main/accessory marks; FAQ specifies a gap below 22mm",
+      "Environment": "Indoor only; no condensation or outdoor/weatherproofing inference",
+      "Observation": "Exact US identity and new offer checked October 23, 2026; no physical installation test"
     },
-    evidence: [
-      "Confirm the chosen ecosystem provides both Matter control and a compatible Thread border router",
-      "Dry-fit the sensor and magnet before using permanent adhesive",
-      "Check door or window clearance and battery access through the full opening path",
+    "evidence": [
+      "Match the received regional model and current installation instructions",
+      "Check controller and Thread roles for the actual ecosystem",
+      "Dry-fit both pieces through full opening movement with battery access",
+      "Verify real open/closed events, intended notifications and missing-data behavior"
     ],
-    editorialSections: [
+    "editorialSections": [
       {
-        heading: "P2 is not the older Zigbee contact sensor",
-        body: "The P2 commissions through Matter and communicates over Thread. Do not follow a Zigbee pairing guide or buy an Aqara hub solely on the assumption that every Aqara sensor joins it in the same way.",
+        "heading": "Confirm the complete Matter-over-Thread system",
+        "body": "P2 commissions through Matter and communicates over Thread. Confirm the exact controller and compatible Thread border router, including current software, before ordering. An existing suitable combined device can be enough. A generic Wi-Fi router or any Aqara Zigbee hub does not automatically provide both required roles."
       },
       {
-        heading: "IKEA PARASOLL is not a Matter-over-Thread equivalent",
-        body: "IKEA's US PARASOLL listing and manual describe a Zigbee sensor that uses DIRIGERA for app notifications or can pair directly with compatible IKEA lighting. IKEA MYGGBETT is the separate Matter-over-Thread contact sensor. Compare P2 with MYGGBETT when Thread is the requirement; compare PARASOLL with other Zigbee sensors when a DIRIGERA-centered setup is the plan.",
+        "heading": "Fit the aligned pair to this opening",
+        "body": "Follow the alignment marks and matching indoor instructions. The reviewed FAQ specifies less than 22mm between main sensor and magnet; that is not the radio distance to the border router. Allow for frame movement, collision clearance and later battery access. Its manual excludes humid/outdoor use, and the FAQ cautions about metal mounting."
       },
       {
-        heading: "Controller and border router are separate checks",
-        body: "Some ecosystem devices perform both roles, while others do not. Verify the exact Apple, Google, Alexa, SmartThings, Home Assistant, or Aqara controller model and current software before installation.",
+        "heading": "Test the meaning of the reported state",
+        "body": "Confirm both open and closed states at the real mounting location and then the intended platform reminder or automation. A door can be closed without being locked, and an open/closed event does not describe room occupancy. Keep a deliberate unavailable-data outcome and appropriate independent checks for tasks requiring greater certainty."
       },
       {
-        heading: "The magnet gap is part of the setup",
-        body: "Test the reported state while opening and closing the door before committing the adhesive. Avoid mounting positions that collide, flex, or make battery replacement difficult.",
+        "heading": "Compare the right IKEA control path",
+        "body": "IKEA MYGGBETT is the separate Matter-over-Thread contact option with its own border-router and battery requirements. PARASOLL uses a different DIRIGERA/direct-light pairing path and the current US listing carries a Last chance label. Do not treat either model as interchangeable P2 hardware or infer an exact support-end date from that sales label."
       },
+      {
+        "heading": "Preserve battery and commissioning recovery",
+        "body": "Use the matching CR123A instructions and keep the compartment serviceable and batteries secure. Store Matter setup codes privately. Entering pairing mode and restoring factory settings are different procedures; follow the exact current instructions rather than resetting a working sensor to add another ecosystem. No sensor was paired, installed or outage-tested here."
+      },
+      {
+        "heading": "Compare the exact current retailer option",
+        "body": "The reviewed Amazon option is one DW-S02E sensor pair from AqaraDirect, fulfilled by Amazon. The ordinary new offer was checked separately from Prime pricing and mixed new/used minimum prices. Confirm current seller, condition, contents and return terms before ordering. This observation does not guarantee future stock or delivered hardware."
+      }
     ],
-    sources: [
+    "sources": [
       {
-        name: "Aqara Door and Window Sensor P2",
-        url: "https://www.aqara.com/us/product/door-and-window-sensor-p2/",
-        note: "Official protocol, battery, setup, and ecosystem requirements.",
+        "name": "Aqara P2 exact specifications",
+        "url": "https://www.aqara.com/us/product/door-and-window-sensor-p2/specs/",
+        "note": "DW-S02E/DW-S02D, CR123A, Thread/BLE, operating conditions and distinct included-parts lists."
       },
       {
-        name: "IKEA PARASOLL door/window sensor",
-        url: "https://www.ikea.com/us/en/p/parasoll-door-window-sensor-smart-white-70504318/",
-        note: "Official Zigbee-era DIRIGERA, direct-light pairing, battery, and mounting reference used to prevent protocol confusion.",
+        "name": "P2 manufacturer user manual supplied with the listing",
+        "url": "https://m.media-amazon.com/images/I/91bo6fVOk1L.pdf",
+        "note": "English installation, Matter setup, indoor-only restrictions, battery and convenience/status-notification purpose. Matching regional instructions govern installation."
       },
       {
-        name: "IKEA MYGGBETT door/window sensor",
-        url: "https://www.ikea.com/us/en/p/myggbett-door-window-sensor-smart-60617641/",
-        note: "Official Matter-over-Thread model and Thread Border Router requirement used for the closest IKEA comparison.",
+        "name": "P2 installation and troubleshooting FAQ",
+        "url": "https://m.media-amazon.com/images/I/61ULKk62iGL.pdf",
+        "note": "Alignment and less-than-22mm sensor-to-magnet gap, metal-surface cautions and reset distinctions. The repeated 22mm in its router-distance paragraph is not used as a radio-range specification; older platform wording requires current confirmation."
       },
+      {
+        "name": "Current Aqara P2 product range",
+        "url": "https://www.aqara.com/us/product/door-and-window-sensor-p2/",
+        "note": "Matter-over-Thread controller and border-router requirements. Older future-feature wording is not treated as proof every feature is presently exposed in every platform."
+      },
+      {
+        "name": "Aqara P2 current US store",
+        "url": "https://us.aqara.com/products/door-and-window-sensor-p2",
+        "note": "Current manufacturer model reference; actual Amazon seller, condition and availability were checked separately."
+      },
+      {
+        "name": "Exact P2 US retailer identity",
+        "url": "https://www.amazon.com/dp/B0BTL8B72D",
+        "note": "Single DW-S02E, UPC 192784000847. New ordinary-price AqaraDirect offer observed separately from Prime and mixed new/used offers; no received-unit or room test."
+      },
+      {
+        "name": "IKEA MYGGBETT US model",
+        "url": "https://www.ikea.com/us/en/p/myggbett-door-window-sensor-smart-60617641/",
+        "note": "Current page explicitly identifies Matter over Thread and its own battery/border-router requirements. No local-store stock established."
+      },
+      {
+        "name": "IKEA PARASOLL US model",
+        "url": "https://www.ikea.com/us/en/p/parasoll-door-window-sensor-smart-white-70504318/",
+        "note": "Current Last chance sales label and distinct DIRIGERA/direct-light path; not a unit-specific support deadline."
+      },
+      {
+        "name": "PARASOLL operating guide",
+        "url": "https://www.ikea.com/us/en/manuals/parasoll-door-window-sensor-smart-white__AA-2422302-1-100.pdf",
+        "note": "English operation checked for the different direct-light and DIRIGERA routes. Its placement, gap and reset instructions are not applied to P2."
+      }
     ],
-    compareSlugs: ["aqara-hub-m3"],
-    offers: [
-      {
-        merchant: "Amazon US",
-        url: "https://amzn.to/3RceNLC",
-        label: "Check Aqara P2 price on Amazon",
-        priceNote: "Confirm ASIN B0BTL8B72D and the Matter-over-Thread P2 model.",
-      },
+    "compareSlugs": [
+      "aqara-hub-m3"
     ],
+    "alternatives": [
+      "Keep a suitable existing contact sensor and supported system when the opening reminder already works.",
+      "Compare a separately documented Thread model such as MYGGBETT only after matching its own mounting, power and platform needs.",
+      "Retain an appropriate manual check where a consumer status sensor cannot meet the required certainty."
+    ],
+    "offers": [
+      {
+        "merchant": "Amazon US",
+        "url": "https://www.amazon.com/dp/B0BTL8B72D",
+        "label": "Check Aqara P2 DW-S02E on Amazon",
+        "priceNote": "Confirm one DW-S02E sensor pair, current new condition, AqaraDirect or chosen seller, contents and return terms; controller and Thread border router sold separately."
+      }
+    ]
   },
   {
     site: "smarthome",

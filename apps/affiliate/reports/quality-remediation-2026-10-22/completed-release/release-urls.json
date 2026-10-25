@@ -1,0 +1,126 @@
+{
+  "affiliateChecks": [
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/office-printer-stands-buying-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/office-printer-stands-buying-guide",
+      "markers": [
+        "fit-worksheet"
+      ]
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/small-home-office-setup-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/small-home-office-setup-guide",
+      "markers": [
+        "Choose the first change"
+      ]
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/guides/poe-switch-for-home-cameras-and-access-points-guide",
+      "canonical": "https://network.madabase.com/guides/poe-switch-for-home-cameras-and-access-points-guide",
+      "markers": [
+        "B076HZFY3F"
+      ]
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/guides/travel-router-vpn-guide",
+      "canonical": "https://network.madabase.com/guides/travel-router-vpn-guide",
+      "markers": [
+        "Beryl"
+      ]
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/guides/usb-c-ethernet-adapter-guide",
+      "canonical": "https://network.madabase.com/guides/usb-c-ethernet-adapter-guide",
+      "markers": [
+        "Ethernet"
+      ]
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/guides/moca-2-5-vs-ethernet-run-guide",
+      "canonical": "https://network.madabase.com/guides/moca-2-5-vs-ethernet-run-guide",
+      "markers": [
+        "ScreenBeam"
+      ]
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/guides/toddler-learning-towers-buying-guide",
+      "canonical": "https://baby.madabase.com/guides/toddler-learning-towers-buying-guide",
+      "markers": [
+        "Toddler Learning Towers: Recall, Stability & Counter Fit"
+      ]
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/guides/wet-food-automatic-feeders-buying-guide",
+      "canonical": "https://pets.madabase.com/guides/wet-food-automatic-feeders-buying-guide",
+      "markers": [
+        "Wet-Food Feeder Guide: Cooling, Meal Timing & Care"
+      ]
+    },
+    {
+      "host": "costumes.madabase.com",
+      "path": "/guides/historical-theatrical-costumes-buying-guide",
+      "canonical": "https://costumes.madabase.com/guides/historical-theatrical-costumes-buying-guide",
+      "markers": [
+        "1920"
+      ]
+    },
+    {
+      "host": "costumes.madabase.com",
+      "path": "/guides/masks-and-masquerade-buying-guide",
+      "canonical": "https://costumes.madabase.com/guides/masks-and-masquerade-buying-guide",
+      "markers": [
+        "mask"
+      ]
+    },
+    {
+      "host": "costumes.madabase.com",
+      "path": "/products/polar-bear-mascot-i-a__ns",
+      "canonical": "https://costumes.madabase.com/products/polar-bear-mascot-i-a__ns",
+      "markers": [
+        "Selected purchase",
+        "45452097880226"
+      ]
+    },
+    {
+      "host": "costumes.madabase.com",
+      "path": "/products/cali-blonde-marilyn-starlet-wig-lvklnhr",
+      "canonical": "https://costumes.madabase.com/products/cali-blonde-marilyn-starlet-wig-lvklnhr",
+      "markers": [
+        "Selected option unavailable when checked"
+      ]
+    },
+    {
+      "host": "costumes.madabase.com",
+      "path": "/products/harry-potter-hufflepuff-child-robe-zlyr8ok",
+      "canonical": "https://costumes.madabase.com/products/harry-potter-hufflepuff-child-robe-zlyr8ok",
+      "markers": [
+        "Resolve the selected option first",
+        "Ravenclaw"
+      ]
+    }
+  ],
+  "mainChecks": [
+    {
+      "host": "madabase.com",
+      "path": "/research",
+      "markers": [
+        "What changed"
+      ]
+    },
+    {
+      "host": "madabase.com",
+      "path": "/search?q=Ethernet",
+      "markers": [
+        "Ethernet"
+      ]
+    }
+  ]
+}

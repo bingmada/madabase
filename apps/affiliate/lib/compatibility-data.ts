@@ -40,7 +40,7 @@ export const compatibilitySources: EvidenceSource[] = [
   { id: "lx-clamp", title: "Ergotron LX attachment geometry (German)", url: "https://media.ergotron.com/reserved/resources/choose-attachment-lx-de-orig.pdf", locator: "Standard 2-piece desk clamp diagram; verify supplied clamp revision" },
   { id: "dell-27-32", title: "Dell U2723QE / U3223QE official datasheet", url: "https://www.delltechnologies.com/asset/en-us/products/electronics-and-accessories/technical-support/dell-ultrasharp-27-and-32-usbc-hub-monitors-u2723qe-u3223qe-datasheet.pdf", locator: "Technical specification: panel-only VESA weight; mounting interface. Direct PDF access can vary by region." },
   { id: "dell-40", title: "Dell U4025QW technical specifications", url: "https://www.dell.com/en-us/shop/monitors/apd/dell-ultrasharp-40-curved-thunderbolttm-hub-monitor-u4025qw/u4025qw_monitor/-", locator: "Physical Characteristics: VESA 100×100; Dimensions and Weight: 8.35kg without stand and cables; curved panel" },
-  { id: "hx", title: "Ergotron HX specification sheet", url: "https://media.ergotron.com/reserved/resources/05-hxarms-fur-ea-orig.pdf", locator: "HX Single load range and VESA; pivot accessories are distinct" },
+  { id: "hx", title: "Ergotron HX model and capacity table", url: "https://media.ergotron.com/reserved/resources/pro-arms-and-clamp-kits-all-orig.pdf", locator: "PDF p.2: white 45-475-216 with two-piece clamp, 20–42 lb. Checker conservatively uses 9.1–19kg; confirm exact pivot and supplied clamp. Checked October 22, 2026." },
   { id: "hx-clamp", title: "Ergotron HX attachment geometry", url: "https://www.ergotron.com/portals/0/literature/guidelines/choose-attachment-hx.pdf", locator: "Standard 2-piece desk clamp: 16–66mm; use exact clamp revision" },
   { id: "m720q", title: "Lenovo PSREF: ThinkCentre M720 Tiny", url: "https://psref.lenovo.com/syspool/Sys/PDF/ThinkCentre/ThinkCentre_M720_Tiny/ThinkCentre_M720_Tiny_Spec.html", locator: "Memory; Storage; Power Supply; Mechanical notes; Onboard Ethernet" },
   { id: "m920q", title: "Lenovo PSREF: ThinkCentre M920 Tiny", url: "https://psref.lenovo.com/syspool/Sys/PDF/ThinkCentre/ThinkCentre_M920_Tiny/ThinkCentre_M920_Tiny_Spec.html", locator: "Memory; Storage; Power Supply; Mechanical notes; Onboard Ethernet" },
@@ -65,7 +65,7 @@ export const dockProfiles = [
 ] as const;
 export const armProfiles = [
   { id: "lx", name: "Ergotron LX single, standard 2-piece clamp", sku: "45-241 series (not LX Pro)", minKg: 3.2, maxKg: 11.3, minMm: 10, maxMm: 60, vesa: ["75x75", "100x100"], source: "lx", href: "/best/best-monitor-arms-for-home-office" },
-  { id: "hx", name: "Ergotron HX single, standard 2-piece clamp", sku: "45-475 series; original clamp drawing", minKg: 9, maxKg: 19, minMm: 16, maxMm: 66, vesa: ["75x75", "100x100", "200x200"], source: "hx", href: "/reviews/ergotron-hx-monitor-arm" },
+  { id: "hx", name: "Ergotron HX single, standard 2-piece clamp", sku: "45-475-216 white, standard pivot; confirm supplied clamp revision", minKg: 9.1, maxKg: 19, minMm: 16, maxMm: 66, vesa: ["75x75", "100x100"], source: "hx", href: "/reviews/ergotron-hx-monitor-arm" },
 ];
 export const monitorProfiles = [
   { id: "u2723qe", name: "Dell U2723QE", kg: 4.48, vesa: "100x100", curved: "flat", source: "dell-27-32" },

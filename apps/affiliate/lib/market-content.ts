@@ -23,7 +23,7 @@ import {
 } from "./commerce-paths";
 import { sites } from "./sites";
 import { findAmazonFamilyProduct } from "./amazon-family-products";
-import type { MarketKey, SiteKey } from "./types";
+import type { Guide, MarketKey, SiteKey } from "./types";
 
 export type MarketContentRoute = "reviews" | "guides" | "best" | "tools" | "categories";
 
@@ -51,13 +51,16 @@ export type LocalizedMarketPage = {
   primaryProductSlug?: string;
   commerceProductSlug?: string;
   commerceFamilyAsin?: string;
+  commerceFamilyProductSlug?: string;
   commerceFamilyTitle?: string;
   commercePausedReason?: string;
+  decisionPurchase?: Guide["decisionPurchase"];
   sourceTitle?: string;
   sourceDek?: string;
   sourceDecision?: string;
   sourceRisk?: string;
   image?: string;
+  imageAlt?: string;
   sourceLinks?: Array<{ name: string; url: string; note?: string }>;
   relatedPaths: Array<{ label: string; path: string }>;
   updatedAt: string;
@@ -675,7 +678,9 @@ function automaticPagesForSite(siteKey: SiteKey): LocalizedMarketPage[] {
         primaryProductSlug: primaryProduct?.slug,
         commerceProductSlug: familyProduct ? undefined : guideCommerceProduct(siteKey, guide)?.slug,
         commerceFamilyAsin: familyProduct?.offerBlock ? undefined : familyProduct?.asin,
+        commerceFamilyProductSlug: familyProduct ? `family-${familyProduct.familySlug}-${familyProduct.asin.toLowerCase()}` : undefined,
         commerceFamilyTitle: familyProduct?.title,
+        decisionPurchase: guide.decisionPurchase,
         commercePausedReason: familyProduct?.offerBlock
           ? `Listing checked ${familyProduct.offerBlock.checkedAt}: ${familyProduct.offerBlock.reason}`
           : !familyProduct && !guideCommerceProduct(siteKey, guide)
@@ -684,9 +689,12 @@ function automaticPagesForSite(siteKey: SiteKey): LocalizedMarketPage[] {
             : undefined,
         sourceTitle: guide.title,
         sourceDek: guide.dek,
-        sourceDecision: guide.sections[0]?.body,
+        sourceDecision: guide.quickAnswer ?? guide.sections[0]?.body,
         sourceRisk: primaryProduct?.cons[0],
-        image: guide.image ?? primaryProduct?.amazonImage ?? primaryProduct?.image ?? site.heroImage,
+        image: guide.image && guide.image !== site.heroImage && !guide.image.startsWith("/images/affiliate/category-")
+          ? guide.image
+          : undefined,
+        imageAlt: guide.imageAlt,
         sourceLinks: guide.sources ?? primaryProduct?.sources ?? [],
         updatedAt: guide.updatedAt ?? "July 27, 2026",
         relatedPaths: uniqueRelatedPaths([
@@ -818,7 +826,7 @@ export function localizedMarketPathForBasePath(
   const page = localizedMarketPages.find(
     (item) => item.site === site && basePathForMarketPage(item) === path,
   );
-  return page ? localizedMarketPath(market, page) : undefined;
+  return page && isIndexableLocalizedMarketPage(page) ? localizedMarketPath(market, page) : undefined;
 }
 
 export function localizedAlternatesForBasePath(domain: string, site: SiteKey, path: string) {

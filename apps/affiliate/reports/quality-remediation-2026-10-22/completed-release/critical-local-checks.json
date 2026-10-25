@@ -1,0 +1,92 @@
+[
+  {
+    "app": "main",
+    "path": "/research",
+    "status": 200,
+    "missing": []
+  },
+  {
+    "app": "main",
+    "path": "/search?q=Ethernet",
+    "status": 200,
+    "missing": []
+  },
+  {
+    "app": "affiliate",
+    "path": "/guides/office-printer-stands-buying-guide",
+    "status": 200,
+    "missing": []
+  },
+  {
+    "app": "affiliate",
+    "path": "/guides/small-home-office-setup-guide",
+    "status": 200,
+    "missing": []
+  },
+  {
+    "app": "affiliate",
+    "path": "/guides/poe-switch-for-home-cameras-and-access-points-guide",
+    "status": 200,
+    "missing": []
+  },
+  {
+    "app": "affiliate",
+    "path": "/guides/travel-router-vpn-guide",
+    "status": 200,
+    "missing": []
+  },
+  {
+    "app": "affiliate",
+    "path": "/guides/usb-c-ethernet-adapter-guide",
+    "status": 200,
+    "missing": []
+  },
+  {
+    "app": "affiliate",
+    "path": "/guides/moca-2-5-vs-ethernet-run-guide",
+    "status": 200,
+    "missing": []
+  },
+  {
+    "app": "affiliate",
+    "path": "/guides/baby-carrier-buying-guide",
+    "status": 404,
+    "missing": []
+  },
+  {
+    "app": "affiliate",
+    "path": "/guides/automatic-pet-feeder-buying-guide",
+    "status": 404,
+    "missing": []
+  },
+  {
+    "app": "affiliate",
+    "path": "/guides/historical-theatrical-costumes-buying-guide",
+    "status": 200,
+    "missing": []
+  },
+  {
+    "app": "affiliate",
+    "path": "/guides/masks-and-masquerade-buying-guide",
+    "status": 200,
+    "missing": []
+  },
+  {
+    "app": "affiliate",
+    "path": "/products/polar-bear-mascot-i-a__ns",
+    "status": 200,
+    "missing": []
+  },
+  {
+    "app": "affiliate",
+    "path": "/products/cali-blonde-marilyn-starlet-wig-lvklnhr",
+    "status": 200,
+    "missing": []
+  },
+  {
+    "app": "affiliate",
+    "path": "/products/harry-potter-hufflepuff-child-robe-zlyr8ok",
+    "status": 200,
+    "missing": []
+  }
+]

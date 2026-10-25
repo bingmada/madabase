@@ -181,6 +181,7 @@ model AffiliateClick {
   merchant          String
   position          String
   path              String
+  market            String?
   network           String?
   pid               String?
   aid               String?
@@ -198,6 +199,29 @@ model AffiliateClick {
   @@index([path, createdAt])
   @@index([affiliateLinkId, createdAt])
   @@index([merchantProductId, createdAt])
+}
+
+model CommerceEvent {
+  id          String   @id
+  eventType   String
+  sessionId   String
+  site        String
+  path        String
+  pageType    String
+  market      String
+  releaseId   String
+  device      String
+  channel     String
+  source      String
+  campaign    String
+  productSlug String
+  merchant    String
+  position    String
+  createdAt   DateTime @default(now())
+
+  @@index([site, createdAt])
+  @@index([releaseId, createdAt])
+  @@index([path, eventType, createdAt])
 }
 
 model Merchant {

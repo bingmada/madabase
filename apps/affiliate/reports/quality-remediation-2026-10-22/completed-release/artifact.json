@@ -1,0 +1,18 @@
+{
+  "status": "validated-final-candidate",
+  "artifacts": {
+    "affiliate": {
+      "path": "apps/affiliate/.release/affiliate-runtime.tgz",
+      "bytes": 62464476,
+      "sha256": "acbabed5a0e7a18f8f796fae3f1fcef619493b722610c132b015b10839f36687",
+      "buildId": "uFvnHZrw66_38mU8Rzew1"
+    },
+    "main": {
+      "path": "apps/main/.release/main-runtime.tgz",
+      "bytes": 18198410,
+      "sha256": "8818c5b976eb812498133dd4324d90a9d5008a1c1f0f7a57a8ad73b9f67cd94f",
+      "buildId": "CiD44KyBP9lnIuLctNl91"
+    }
+  },
+  "scope": "499 reviewed editorial pages plus bounded commerce/catalog corrections; remaining ledger work continues after this release."
+}

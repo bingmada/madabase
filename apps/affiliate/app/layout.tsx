@@ -5,6 +5,8 @@ import "../../shared/discovery.css";
 import { SiteChrome } from "@/components/LayoutParts";
 import { StyleChrome } from "@/components/StyleExperience";
 import { ClarityAnalytics } from "@/components/ClarityAnalytics";
+import { CommerceAnalytics } from "@/components/CommerceAnalytics";
+import { commerceReleaseId } from "@/lib/release-identity";
 import { getMarketByRouteSlug } from "@/lib/markets";
 import { getCurrentSite } from "@/lib/sites";
 
@@ -38,7 +40,7 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
   const clarityProjectId = process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID ?? "xlte5zsd33";
 
   return (
-    <html lang={market?.languageTag ?? "en-US"}>
+    <html lang={market?.languageTag ?? "en-US"} data-commerce-release={commerceReleaseId()}>
       <head>
         {/* @ts-expect-error Impact verification requires its non-standard meta value attribute. */}
         <meta name="impact-site-verification" value="ba96bb1e-788f-4f05-80ec-38b7ceb8d31a" />
@@ -48,11 +50,13 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
       {site.key === "style" ? (
         <StyleChrome site={site}>
           <ClarityAnalytics projectId={clarityProjectId} site={site.key} />
+          <CommerceAnalytics site={site.key} releaseId={commerceReleaseId()} />
           {children}
         </StyleChrome>
       ) : (
         <SiteChrome site={site}>
           <ClarityAnalytics projectId={clarityProjectId} site={site.key} />
+          <CommerceAnalytics site={site.key} releaseId={commerceReleaseId()} />
           {children}
         </SiteChrome>
       )}

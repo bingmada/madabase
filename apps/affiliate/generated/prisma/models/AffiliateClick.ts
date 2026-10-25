@@ -32,6 +32,7 @@ export type AffiliateClickMinAggregateOutputType = {
   merchant: string | null
   position: string | null
   path: string | null
+  market: string | null
   network: string | null
   pid: string | null
   aid: string | null
@@ -50,6 +51,7 @@ export type AffiliateClickMaxAggregateOutputType = {
   merchant: string | null
   position: string | null
   path: string | null
+  market: string | null
   network: string | null
   pid: string | null
   aid: string | null
@@ -68,6 +70,7 @@ export type AffiliateClickCountAggregateOutputType = {
   merchant: number
   position: number
   path: number
+  market: number
   network: number
   pid: number
   aid: number
@@ -88,6 +91,7 @@ export type AffiliateClickMinAggregateInputType = {
   merchant?: true
   position?: true
   path?: true
+  market?: true
   network?: true
   pid?: true
   aid?: true
@@ -106,6 +110,7 @@ export type AffiliateClickMaxAggregateInputType = {
   merchant?: true
   position?: true
   path?: true
+  market?: true
   network?: true
   pid?: true
   aid?: true
@@ -124,6 +129,7 @@ export type AffiliateClickCountAggregateInputType = {
   merchant?: true
   position?: true
   path?: true
+  market?: true
   network?: true
   pid?: true
   aid?: true
@@ -215,6 +221,7 @@ export type AffiliateClickGroupByOutputType = {
   merchant: string
   position: string
   path: string
+  market: string | null
   network: string | null
   pid: string | null
   aid: string | null
@@ -254,6 +261,7 @@ export type AffiliateClickWhereInput = {
   merchant?: Prisma.StringFilter<"AffiliateClick"> | string
   position?: Prisma.StringFilter<"AffiliateClick"> | string
   path?: Prisma.StringFilter<"AffiliateClick"> | string
+  market?: Prisma.StringNullableFilter<"AffiliateClick"> | string | null
   network?: Prisma.StringNullableFilter<"AffiliateClick"> | string | null
   pid?: Prisma.StringNullableFilter<"AffiliateClick"> | string | null
   aid?: Prisma.StringNullableFilter<"AffiliateClick"> | string | null
@@ -275,6 +283,7 @@ export type AffiliateClickOrderByWithRelationInput = {
   merchant?: Prisma.SortOrder
   position?: Prisma.SortOrder
   path?: Prisma.SortOrder
+  market?: Prisma.SortOrderInput | Prisma.SortOrder
   network?: Prisma.SortOrderInput | Prisma.SortOrder
   pid?: Prisma.SortOrderInput | Prisma.SortOrder
   aid?: Prisma.SortOrderInput | Prisma.SortOrder
@@ -300,6 +309,7 @@ export type AffiliateClickWhereUniqueInput = Prisma.AtLeast<{
   merchant?: Prisma.StringFilter<"AffiliateClick"> | string
   position?: Prisma.StringFilter<"AffiliateClick"> | string
   path?: Prisma.StringFilter<"AffiliateClick"> | string
+  market?: Prisma.StringNullableFilter<"AffiliateClick"> | string | null
   network?: Prisma.StringNullableFilter<"AffiliateClick"> | string | null
   pid?: Prisma.StringNullableFilter<"AffiliateClick"> | string | null
   aid?: Prisma.StringNullableFilter<"AffiliateClick"> | string | null
@@ -320,6 +330,7 @@ export type AffiliateClickOrderByWithAggregationInput = {
   merchant?: Prisma.SortOrder
   position?: Prisma.SortOrder
   path?: Prisma.SortOrder
+  market?: Prisma.SortOrderInput | Prisma.SortOrder
   network?: Prisma.SortOrderInput | Prisma.SortOrder
   pid?: Prisma.SortOrderInput | Prisma.SortOrder
   aid?: Prisma.SortOrderInput | Prisma.SortOrder
@@ -344,6 +355,7 @@ export type AffiliateClickScalarWhereWithAggregatesInput = {
   merchant?: Prisma.StringWithAggregatesFilter<"AffiliateClick"> | string
   position?: Prisma.StringWithAggregatesFilter<"AffiliateClick"> | string
   path?: Prisma.StringWithAggregatesFilter<"AffiliateClick"> | string
+  market?: Prisma.StringNullableWithAggregatesFilter<"AffiliateClick"> | string | null
   network?: Prisma.StringNullableWithAggregatesFilter<"AffiliateClick"> | string | null
   pid?: Prisma.StringNullableWithAggregatesFilter<"AffiliateClick"> | string | null
   aid?: Prisma.StringNullableWithAggregatesFilter<"AffiliateClick"> | string | null
@@ -362,6 +374,7 @@ export type AffiliateClickCreateInput = {
   merchant: string
   position: string
   path: string
+  market?: string | null
   network?: string | null
   pid?: string | null
   aid?: string | null
@@ -381,6 +394,7 @@ export type AffiliateClickUncheckedCreateInput = {
   merchant: string
   position: string
   path: string
+  market?: string | null
   network?: string | null
   pid?: string | null
   aid?: string | null
@@ -400,6 +414,7 @@ export type AffiliateClickUpdateInput = {
   merchant?: Prisma.StringFieldUpdateOperationsInput | string
   position?: Prisma.StringFieldUpdateOperationsInput | string
   path?: Prisma.StringFieldUpdateOperationsInput | string
+  market?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   network?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   pid?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   aid?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
@@ -419,6 +434,7 @@ export type AffiliateClickUncheckedUpdateInput = {
   merchant?: Prisma.StringFieldUpdateOperationsInput | string
   position?: Prisma.StringFieldUpdateOperationsInput | string
   path?: Prisma.StringFieldUpdateOperationsInput | string
+  market?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   network?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   pid?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   aid?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
@@ -438,6 +454,7 @@ export type AffiliateClickCreateManyInput = {
   merchant: string
   position: string
   path: string
+  market?: string | null
   network?: string | null
   pid?: string | null
   aid?: string | null
@@ -456,6 +473,7 @@ export type AffiliateClickUpdateManyMutationInput = {
   merchant?: Prisma.StringFieldUpdateOperationsInput | string
   position?: Prisma.StringFieldUpdateOperationsInput | string
   path?: Prisma.StringFieldUpdateOperationsInput | string
+  market?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   network?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   pid?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   aid?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
@@ -472,6 +490,7 @@ export type AffiliateClickUncheckedUpdateManyInput = {
   merchant?: Prisma.StringFieldUpdateOperationsInput | string
   position?: Prisma.StringFieldUpdateOperationsInput | string
   path?: Prisma.StringFieldUpdateOperationsInput | string
+  market?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   network?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   pid?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   aid?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
@@ -490,6 +509,7 @@ export type AffiliateClickCountOrderByAggregateInput = {
   merchant?: Prisma.SortOrder
   position?: Prisma.SortOrder
   path?: Prisma.SortOrder
+  market?: Prisma.SortOrder
   network?: Prisma.SortOrder
   pid?: Prisma.SortOrder
   aid?: Prisma.SortOrder
@@ -508,6 +528,7 @@ export type AffiliateClickMaxOrderByAggregateInput = {
   merchant?: Prisma.SortOrder
   position?: Prisma.SortOrder
   path?: Prisma.SortOrder
+  market?: Prisma.SortOrder
   network?: Prisma.SortOrder
   pid?: Prisma.SortOrder
   aid?: Prisma.SortOrder
@@ -526,6 +547,7 @@ export type AffiliateClickMinOrderByAggregateInput = {
   merchant?: Prisma.SortOrder
   position?: Prisma.SortOrder
   path?: Prisma.SortOrder
+  market?: Prisma.SortOrder
   network?: Prisma.SortOrder
   pid?: Prisma.SortOrder
   aid?: Prisma.SortOrder
@@ -659,6 +681,7 @@ export type AffiliateClickCreateWithoutMerchantProductInput = {
   merchant: string
   position: string
   path: string
+  market?: string | null
   network?: string | null
   pid?: string | null
   aid?: string | null
@@ -677,6 +700,7 @@ export type AffiliateClickUncheckedCreateWithoutMerchantProductInput = {
   merchant: string
   position: string
   path: string
+  market?: string | null
   network?: string | null
   pid?: string | null
   aid?: string | null
@@ -724,6 +748,7 @@ export type AffiliateClickScalarWhereInput = {
   merchant?: Prisma.StringFilter<"AffiliateClick"> | string
   position?: Prisma.StringFilter<"AffiliateClick"> | string
   path?: Prisma.StringFilter<"AffiliateClick"> | string
+  market?: Prisma.StringNullableFilter<"AffiliateClick"> | string | null
   network?: Prisma.StringNullableFilter<"AffiliateClick"> | string | null
   pid?: Prisma.StringNullableFilter<"AffiliateClick"> | string | null
   aid?: Prisma.StringNullableFilter<"AffiliateClick"> | string | null
@@ -742,6 +767,7 @@ export type AffiliateClickCreateWithoutAffiliateLinkInput = {
   merchant: string
   position: string
   path: string
+  market?: string | null
   network?: string | null
   pid?: string | null
   aid?: string | null
@@ -760,6 +786,7 @@ export type AffiliateClickUncheckedCreateWithoutAffiliateLinkInput = {
   merchant: string
   position: string
   path: string
+  market?: string | null
   network?: string | null
   pid?: string | null
   aid?: string | null
@@ -804,6 +831,7 @@ export type AffiliateClickCreateWithoutTransactionsInput = {
   merchant: string
   position: string
   path: string
+  market?: string | null
   network?: string | null
   pid?: string | null
   aid?: string | null
@@ -822,6 +850,7 @@ export type AffiliateClickUncheckedCreateWithoutTransactionsInput = {
   merchant: string
   position: string
   path: string
+  market?: string | null
   network?: string | null
   pid?: string | null
   aid?: string | null
@@ -856,6 +885,7 @@ export type AffiliateClickUpdateWithoutTransactionsInput = {
   merchant?: Prisma.StringFieldUpdateOperationsInput | string
   position?: Prisma.StringFieldUpdateOperationsInput | string
   path?: Prisma.StringFieldUpdateOperationsInput | string
+  market?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   network?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   pid?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   aid?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
@@ -874,6 +904,7 @@ export type AffiliateClickUncheckedUpdateWithoutTransactionsInput = {
   merchant?: Prisma.StringFieldUpdateOperationsInput | string
   position?: Prisma.StringFieldUpdateOperationsInput | string
   path?: Prisma.StringFieldUpdateOperationsInput | string
+  market?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   network?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   pid?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   aid?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
@@ -892,6 +923,7 @@ export type AffiliateClickCreateManyMerchantProductInput = {
   merchant: string
   position: string
   path: string
+  market?: string | null
   network?: string | null
   pid?: string | null
   aid?: string | null
@@ -909,6 +941,7 @@ export type AffiliateClickUpdateWithoutMerchantProductInput = {
   merchant?: Prisma.StringFieldUpdateOperationsInput | string
   position?: Prisma.StringFieldUpdateOperationsInput | string
   path?: Prisma.StringFieldUpdateOperationsInput | string
+  market?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   network?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   pid?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   aid?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
@@ -927,6 +960,7 @@ export type AffiliateClickUncheckedUpdateWithoutMerchantProductInput = {
   merchant?: Prisma.StringFieldUpdateOperationsInput | string
   position?: Prisma.StringFieldUpdateOperationsInput | string
   path?: Prisma.StringFieldUpdateOperationsInput | string
+  market?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   network?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   pid?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   aid?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
@@ -945,6 +979,7 @@ export type AffiliateClickUncheckedUpdateManyWithoutMerchantProductInput = {
   merchant?: Prisma.StringFieldUpdateOperationsInput | string
   position?: Prisma.StringFieldUpdateOperationsInput | string
   path?: Prisma.StringFieldUpdateOperationsInput | string
+  market?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   network?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   pid?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   aid?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
@@ -962,6 +997,7 @@ export type AffiliateClickCreateManyAffiliateLinkInput = {
   merchant: string
   position: string
   path: string
+  market?: string | null
   network?: string | null
   pid?: string | null
   aid?: string | null
@@ -979,6 +1015,7 @@ export type AffiliateClickUpdateWithoutAffiliateLinkInput = {
   merchant?: Prisma.StringFieldUpdateOperationsInput | string
   position?: Prisma.StringFieldUpdateOperationsInput | string
   path?: Prisma.StringFieldUpdateOperationsInput | string
+  market?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   network?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   pid?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   aid?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
@@ -997,6 +1034,7 @@ export type AffiliateClickUncheckedUpdateWithoutAffiliateLinkInput = {
   merchant?: Prisma.StringFieldUpdateOperationsInput | string
   position?: Prisma.StringFieldUpdateOperationsInput | string
   path?: Prisma.StringFieldUpdateOperationsInput | string
+  market?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   network?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   pid?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   aid?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
@@ -1015,6 +1053,7 @@ export type AffiliateClickUncheckedUpdateManyWithoutAffiliateLinkInput = {
   merchant?: Prisma.StringFieldUpdateOperationsInput | string
   position?: Prisma.StringFieldUpdateOperationsInput | string
   path?: Prisma.StringFieldUpdateOperationsInput | string
+  market?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   network?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   pid?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   aid?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
@@ -1063,6 +1102,7 @@ export type AffiliateClickSelect<ExtArgs extends runtime.Types.Extensions.Intern
   merchant?: boolean
   position?: boolean
   path?: boolean
+  market?: boolean
   network?: boolean
   pid?: boolean
   aid?: boolean
@@ -1085,6 +1125,7 @@ export type AffiliateClickSelectCreateManyAndReturn<ExtArgs extends runtime.Type
   merchant?: boolean
   position?: boolean
   path?: boolean
+  market?: boolean
   network?: boolean
   pid?: boolean
   aid?: boolean
@@ -1105,6 +1146,7 @@ export type AffiliateClickSelectUpdateManyAndReturn<ExtArgs extends runtime.Type
   merchant?: boolean
   position?: boolean
   path?: boolean
+  market?: boolean
   network?: boolean
   pid?: boolean
   aid?: boolean
@@ -1125,6 +1167,7 @@ export type AffiliateClickSelectScalar = {
   merchant?: boolean
   position?: boolean
   path?: boolean
+  market?: boolean
   network?: boolean
   pid?: boolean
   aid?: boolean
@@ -1135,7 +1178,7 @@ export type AffiliateClickSelectScalar = {
   createdAt?: boolean
 }
 
-export type AffiliateClickOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "eventId" | "site" | "productSlug" | "merchant" | "position" | "path" | "network" | "pid" | "aid" | "sid" | "destinationUrl" | "affiliateLinkId" | "merchantProductId" | "createdAt", ExtArgs["result"]["affiliateClick"]>
+export type AffiliateClickOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "eventId" | "site" | "productSlug" | "merchant" | "position" | "path" | "market" | "network" | "pid" | "aid" | "sid" | "destinationUrl" | "affiliateLinkId" | "merchantProductId" | "createdAt", ExtArgs["result"]["affiliateClick"]>
 export type AffiliateClickInclude<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   affiliateLink?: boolean | Prisma.AffiliateClick$affiliateLinkArgs<ExtArgs>
   merchantProduct?: boolean | Prisma.AffiliateClick$merchantProductArgs<ExtArgs>
@@ -1166,6 +1209,7 @@ export type $AffiliateClickPayload<ExtArgs extends runtime.Types.Extensions.Inte
     merchant: string
     position: string
     path: string
+    market: string | null
     network: string | null
     pid: string | null
     aid: string | null
@@ -1607,6 +1651,7 @@ export interface AffiliateClickFieldRefs {
   readonly merchant: Prisma.FieldRef<"AffiliateClick", 'String'>
   readonly position: Prisma.FieldRef<"AffiliateClick", 'String'>
   readonly path: Prisma.FieldRef<"AffiliateClick", 'String'>
+  readonly market: Prisma.FieldRef<"AffiliateClick", 'String'>
   readonly network: Prisma.FieldRef<"AffiliateClick", 'String'>
   readonly pid: Prisma.FieldRef<"AffiliateClick", 'String'>
   readonly aid: Prisma.FieldRef<"AffiliateClick", 'String'>
