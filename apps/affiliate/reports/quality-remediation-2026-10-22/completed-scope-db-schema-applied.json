@@ -1,0 +1,25 @@
+{
+  "mode": "apply",
+  "before": {
+    "passed": false,
+    "fatal": [],
+    "missing": [
+      "AffiliateClick.market",
+      "CommerceEvent"
+    ]
+  },
+  "after": {
+    "passed": true,
+    "fatal": [],
+    "missing": []
+  },
+  "operations": [
+    "Added nullable AffiliateClick.market",
+    "Created CommerceEvent and its indexes",
+    "Recorded applied migration in existing Prisma registry"
+  ],
+  "applicationDataDeleted": false,
+  "applicationRowsInserted": false,
+  "verifiedAt": "2026-10-25T11:06:20.588Z",
+  "userAuthorized": true
+}

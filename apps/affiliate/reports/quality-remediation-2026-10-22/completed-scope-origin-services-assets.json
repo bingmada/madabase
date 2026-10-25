@@ -1,0 +1,85 @@
+{
+  "services": {
+    "main": {
+      "MainPID": "412931",
+      "WorkingDirectory": "/srv/madabase-main/releases/remediation-20261025-27a538d7a40e83c062e4d6ac2d74e63786187fe9",
+      "ActiveState": "active"
+    },
+    "affiliate": {
+      "MainPID": "413072",
+      "WorkingDirectory": "/srv/madabase-affiliate/releases/remediation-20261025-27a538d7a40e83c062e4d6ac2d74e63786187fe9",
+      "ActiveState": "active"
+    },
+    "test": {
+      "MainPID": "413146",
+      "WorkingDirectory": "/srv/madabase-test/releases/local-20260820-next15523",
+      "ActiveState": "active"
+    }
+  },
+  "assets": [
+    {
+      "app": "main",
+      "kind": "retained",
+      "host": "madabase.com",
+      "path": "/_next/static/Iq00kNhqTzjuVLPv6W8td/_buildManifest.js",
+      "status": 200,
+      "bytes": "1087"
+    },
+    {
+      "app": "main",
+      "kind": "retained",
+      "host": "madabase.com",
+      "path": "/_next/static/css/22901a4fbe21c888.css",
+      "status": 200,
+      "bytes": "27248"
+    },
+    {
+      "app": "main",
+      "kind": "current",
+      "host": "madabase.com",
+      "path": "/_next/static/CiD44KyBP9lnIuLctNl91/_buildManifest.js",
+      "status": 200,
+      "bytes": "1087"
+    },
+    {
+      "app": "main",
+      "kind": "current",
+      "host": "madabase.com",
+      "path": "/_next/static/css/c165edf0c9485afa.css",
+      "status": 200,
+      "bytes": "28174"
+    },
+    {
+      "app": "affiliate",
+      "kind": "retained",
+      "host": "homeoffice.madabase.com",
+      "path": "/_next/static/1afVJjHJWofFX8QHoUIS4/_buildManifest.js",
+      "status": 200,
+      "bytes": "1356"
+    },
+    {
+      "app": "affiliate",
+      "kind": "retained",
+      "host": "homeoffice.madabase.com",
+      "path": "/_next/static/css/2a5fcae10e2b85ff.css",
+      "status": 200,
+      "bytes": "42845"
+    },
+    {
+      "app": "affiliate",
+      "kind": "current",
+      "host": "homeoffice.madabase.com",
+      "path": "/_next/static/chunks/817-6cc85ba514a72c7e.js",
+      "status": 200,
+      "bytes": "11265"
+    },
+    {
+      "app": "affiliate",
+      "kind": "current",
+      "host": "homeoffice.madabase.com",
+      "path": "/_next/static/css/f622efb3abdc0e3d.css",
+      "status": 200,
+      "bytes": "45561"
+    }
+  ]
+}

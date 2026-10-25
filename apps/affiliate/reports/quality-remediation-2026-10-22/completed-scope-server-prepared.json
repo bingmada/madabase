@@ -1,0 +1,19 @@
+{
+  "revision": "27a538d7a40e83c062e4d6ac2d74e63786187fe9",
+  "status": "prepared",
+  "testWorkingDirectory": "/srv/madabase-test/releases/local-20260820-next15523",
+  "apps": {
+    "main": {
+      "old": "/srv/madabase-main/releases/editorial-20261021-b627cf911f4542922ed16ffd98f4cb6a00cbd317",
+      "new": "/srv/madabase-main/releases/remediation-20261025-27a538d7a40e83c062e4d6ac2d74e63786187fe9",
+      "sha256": "8818c5b976eb812498133dd4324d90a9d5008a1c1f0f7a57a8ad73b9f67cd94f",
+      "retainedAssets": 37
+    },
+    "affiliate": {
+      "old": "/srv/madabase-affiliate/releases/editorial-20261021-b627cf911f4542922ed16ffd98f4cb6a00cbd317",
+      "new": "/srv/madabase-affiliate/releases/remediation-20261025-27a538d7a40e83c062e4d6ac2d74e63786187fe9",
+      "sha256": "acbabed5a0e7a18f8f796fae3f1fcef619493b722610c132b015b10839f36687",
+      "retainedAssets": 94
+    }
+  }
+}

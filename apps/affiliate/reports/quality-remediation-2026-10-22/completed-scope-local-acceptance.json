@@ -3,7 +3,9 @@
   "scope": "Completed-scope partial release authorized October25; no whole-ledger completion claim.",
   "batchesPassed": 60,
   "batchesTotal": 111,
-  "editorialRoutes": 500,
+  "editorialRoutes": 499,
+  "editorialCheckRequests": 500,
+  "editorialCountCorrection": "The Aqara P2 image correction is already among the reviewed pages; its repeat request is not an additional unique page.",
   "capturedCatalogProducts": 77,
   "catalogFixtureLimit": "Captured real fields with fake tracking tokens; no merchant navigation or DB connection.",
   "releaseId": "uFvnHZrw66_38mU8Rzew1",
@@ -13,6 +15,7 @@
   "recoveryTests": 10,
   "commerceSchemaTests": 6,
   "eventTestDatabaseIsolated": true,
-  "productionDeployment": "pending",
+  "productionDeploymentAtLocalAcceptance": "pending",
+  "productionReceipt": "completed-release-receipt.json",
   "wholeTaskComplete": false
 }

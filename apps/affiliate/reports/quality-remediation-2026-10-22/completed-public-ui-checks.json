@@ -1,0 +1,34 @@
+{
+  "checkedAt": "2026-10-25T11:15:46.533Z",
+  "releaseId": "uFvnHZrw66_38mU8Rzew1",
+  "scope": "Actual public desktop rendering; QA visit excluded from statistics; no merchant links followed.",
+  "width": 1280,
+  "height": 720,
+  "checks": [
+    {
+      "page": "homeoffice/guides/office-printer-stands-buying-guide",
+      "worksheetSuppressesDock": true,
+      "readingBodyShowsDock": true,
+      "exactAsin": "B0DBZ98D94",
+      "overflow": false,
+      "screenshot": "completed-public-printer-stand-dock.png"
+    },
+    {
+      "page": "costumes/products/polar-bear-mascot-i-a__ns",
+      "selectedVariant": "45452097880226",
+      "purchaseButton": {
+        "top": 531.296875,
+        "height": 60
+      },
+      "overflow": false,
+      "screenshot": "completed-public-polar-buy.png"
+    },
+    {
+      "page": "costumes/products/harry-potter-hufflepuff-child-robe-zlyr8ok",
+      "conflict": "Hufflepuff versus Ravenclaw",
+      "purchaseLinks": 0,
+      "overflow": false,
+      "screenshot": "completed-public-hufflepuff-hold.png"
+    }
+  ]
+}

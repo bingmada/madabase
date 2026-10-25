@@ -1,0 +1,45 @@
+{
+  "submittedAt": "2026-10-25T11:20:54.740Z",
+  "revision": "27a538d7a40e83c062e4d6ac2d74e63786187fe9",
+  "urlCount": 583,
+  "acceptedUrlCount": 583,
+  "receipts": [
+    {
+      "host": "network.madabase.com",
+      "urls": 25,
+      "httpStatus": 200
+    },
+    {
+      "host": "smarthome.madabase.com",
+      "urls": 136,
+      "httpStatus": 200
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "urls": 118,
+      "httpStatus": 200
+    },
+    {
+      "host": "baby.madabase.com",
+      "urls": 131,
+      "httpStatus": 200
+    },
+    {
+      "host": "pets.madabase.com",
+      "urls": 82,
+      "httpStatus": 200
+    },
+    {
+      "host": "style.madabase.com",
+      "urls": 1,
+      "httpStatus": 200
+    },
+    {
+      "host": "costumes.madabase.com",
+      "urls": 90,
+      "httpStatus": 200
+    }
+  ],
+  "exitCode": 0,
+  "scope": "IndexNow accepted requests are update notifications, not proof of crawl, indexing or ranking."
+}

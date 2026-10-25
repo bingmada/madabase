@@ -1,0 +1,5585 @@
+{
+  "checkedAt": "2026-10-25T11:16:00.809Z",
+  "revision": "27a538d7a40e83c062e4d6ac2d74e63786187fe9",
+  "buildIds": {
+    "main": "CiD44KyBP9lnIuLctNl91",
+    "affiliate": "uFvnHZrw66_38mU8Rzew1"
+  },
+  "scope": "Public plain canonical GET responses; no statistics request, merchant redirect traversal or database write.",
+  "total": 595,
+  "passed": 574,
+  "rows": [
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/monitor-color-calibrators-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/monitor-color-calibrators-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/monitor-color-calibrators-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/monitor-color-calibrators-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/monitor-color-calibrators-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/ultrawide-office-monitors-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/ultrawide-office-monitors-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/ultrawide-office-monitors-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/ultrawide-office-monitors-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/ultrawide-office-monitors-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/vertical-office-monitors-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/vertical-office-monitors-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/vertical-office-monitors-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/vertical-office-monitors-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/vertical-office-monitors-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/ergonomic-split-keyboards-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/ergonomic-split-keyboards-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/ergonomic-split-keyboards-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/ergonomic-split-keyboards-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/ergonomic-split-keyboards-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/ergobaby-omni-breeze-positions-by-age",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/ergobaby-omni-breeze-forward-facing-age-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/ergobaby-omni-breeze-newborn-fit-checklist",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/ergobaby-omni-breeze-cleaning-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/baby-carrier-hot-weather-and-caregiver-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/ergobaby-omni-breeze-vs-babybjorn-harmony-by-age",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/aqara-hub-m3-home-assistant-matter-guide",
+      "status": 200,
+      "cache": "UPDATING",
+      "age": "86825",
+      "passed": false,
+      "errors": [
+        "Stale or missing build identity"
+      ]
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/toddler-learning-towers-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "network.madabase.com",
+      "path": "/guides/xfinity-gateway-bridge-mode-vs-own-router-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/table-booster-seats-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/table-booster-seats-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "network.madabase.com",
+      "path": "/guides/pass-through-ethernet-crimping-tools-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/table-booster-seats-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/table-booster-seats-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/table-booster-seats-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/table-booster-seats-safety-and-skip-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/productivity-mice-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/productivity-mice-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/productivity-mice-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/productivity-mice-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/productivity-mice-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/vertical-mice-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/vertical-mice-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/vertical-mice-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/vertical-mice-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/vertical-mice-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/office-trackballs-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/office-call-headsets-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/office-call-headsets-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/office-call-headsets-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/office-call-headsets-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/office-call-headsets-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "EXPIRED",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/usb-condenser-microphones-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/wireless-conference-headsets-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/usb-condenser-microphones-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/usb-condenser-microphones-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/usb-condenser-microphones-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/usb-condenser-microphones-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/xlr-office-microphones-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "UPDATING",
+      "age": "42636",
+      "passed": false,
+      "errors": [
+        "Stale or missing build identity"
+      ]
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/xlr-office-microphones-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/xlr-office-microphones-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/xlr-office-microphones-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/xlr-office-microphones-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/desktop-audio-interfaces-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/desktop-audio-interfaces-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/desktop-audio-interfaces-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/desktop-audio-interfaces-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/desktop-audio-interfaces-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/thunderbolt-kvm-docks-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/thunderbolt-kvm-docks-vs-alternatives",
+      "status": 200,
+      "cache": "EXPIRED",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/thunderbolt-kvm-docks-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/thunderbolt-kvm-docks-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/thunderbolt-kvm-docks-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/sheetfed-document-scanners-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/sheetfed-document-scanners-vs-alternatives",
+      "status": 200,
+      "cache": "EXPIRED",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/sheetfed-document-scanners-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/sheetfed-document-scanners-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/sheetfed-document-scanners-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/flatbed-document-scanners-vs-alternatives",
+      "status": 200,
+      "cache": "EXPIRED",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/flatbed-document-scanners-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/flatbed-document-scanners-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/flatbed-document-scanners-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/flatbed-document-scanners-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/monochrome-laser-printers-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/monochrome-laser-printers-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/monochrome-laser-printers-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/monochrome-laser-printers-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/monochrome-laser-printers-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/color-laser-multifunction-printers-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/color-laser-multifunction-printers-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/color-laser-multifunction-printers-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/color-laser-multifunction-printers-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/color-laser-multifunction-printers-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/adjustable-laptop-stands-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/adjustable-laptop-stands-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/adjustable-laptop-stands-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/adjustable-laptop-stands-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/adjustable-laptop-stands-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/under-desk-keyboard-trays-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/under-desk-keyboard-trays-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/under-desk-keyboard-trays-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/under-desk-keyboard-trays-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/under-desk-keyboard-trays-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/office-footrests-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/office-footrests-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/office-footrests-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/office-footrests-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/office-footrests-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/standing-desk-anti-fatigue-mats-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/standing-desk-anti-fatigue-mats-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/standing-desk-anti-fatigue-mats-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/standing-desk-anti-fatigue-mats-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/standing-desk-anti-fatigue-mats-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/home-office-acoustic-panels-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/home-office-acoustic-panels-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/home-office-acoustic-panels-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/home-office-acoustic-panels-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/under-desk-cable-trays-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/home-office-acoustic-panels-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/under-desk-cable-trays-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/under-desk-cable-trays-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/under-desk-cable-trays-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/under-desk-cable-trays-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/desktop-power-centers-vs-alternatives",
+      "status": 200,
+      "cache": "UPDATING",
+      "age": "23688",
+      "passed": false,
+      "errors": [
+        "Stale or missing build identity"
+      ]
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/desktop-power-centers-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/desktop-power-centers-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/desktop-power-centers-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/desktop-power-centers-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "network.madabase.com",
+      "path": "/guides/ten-gigabit-ethernet-switches-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "network.madabase.com",
+      "path": "/guides/ten-gigabit-ethernet-switches-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "network.madabase.com",
+      "path": "/guides/ten-gigabit-ethernet-switches-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "network.madabase.com",
+      "path": "/guides/ten-gigabit-ethernet-switches-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "network.madabase.com",
+      "path": "/guides/sfp-plus-transceivers-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "HIT",
+      "age": "1471",
+      "passed": false,
+      "errors": [
+        "Stale or missing build identity"
+      ]
+    },
+    {
+      "kind": "editorial",
+      "host": "network.madabase.com",
+      "path": "/guides/hardware-firewall-appliances-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "network.madabase.com",
+      "path": "/guides/hardware-firewall-appliances-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "network.madabase.com",
+      "path": "/guides/hardware-firewall-appliances-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "UPDATING",
+      "age": "41563",
+      "passed": false,
+      "errors": [
+        "Stale or missing build identity"
+      ]
+    },
+    {
+      "kind": "editorial",
+      "host": "network.madabase.com",
+      "path": "/guides/hardware-firewall-appliances-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "network.madabase.com",
+      "path": "/guides/vpn-gateways-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "network.madabase.com",
+      "path": "/guides/five-g-home-internet-gateways-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "HIT",
+      "age": "2635",
+      "passed": false,
+      "errors": [
+        "Stale or missing build identity"
+      ]
+    },
+    {
+      "kind": "editorial",
+      "host": "network.madabase.com",
+      "path": "/guides/mobile-hotspots-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "network.madabase.com",
+      "path": "/guides/dual-wan-routers-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "network.madabase.com",
+      "path": "/guides/ethernet-cable-testers-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "network.madabase.com",
+      "path": "/guides/ethernet-patch-panels-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/matter-smart-bulbs-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/matter-smart-bulbs-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/matter-smart-bulbs-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/matter-smart-bulbs-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-light-strips-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/matter-smart-bulbs-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-light-strips-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-light-strips-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-light-strips-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-light-strips-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "EXPIRED",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-wall-switches-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-wall-switches-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-wall-switches-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-wall-switches-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-wall-switches-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-dimmer-switches-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-dimmer-switches-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-dimmer-switches-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-dimmer-switches-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-dimmer-switches-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-power-strips-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-power-strips-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-power-strips-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-power-strips-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-power-strips-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/outdoor-smart-plugs-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/outdoor-smart-plugs-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/outdoor-smart-plugs-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/outdoor-smart-plugs-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/outdoor-smart-plugs-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/mmwave-presence-sensors-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/mmwave-presence-sensors-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/mmwave-presence-sensors-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/mmwave-presence-sensors-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/mmwave-presence-sensors-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-contact-sensors-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-contact-sensors-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-contact-sensors-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-contact-sensors-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-contact-sensors-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-motion-sensors-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-motion-sensors-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-motion-sensors-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-motion-sensors-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-motion-sensors-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/temperature-humidity-sensors-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/temperature-humidity-sensors-vs-alternatives",
+      "status": 200,
+      "cache": "EXPIRED",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/temperature-humidity-sensors-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/temperature-humidity-sensors-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/temperature-humidity-sensors-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/indoor-air-quality-monitors-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/indoor-air-quality-monitors-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/indoor-air-quality-monitors-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/indoor-air-quality-monitors-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/indoor-air-quality-monitors-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-smoke-co-listeners-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-blind-motors-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-blind-motors-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-blind-motors-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-blind-motors-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-blind-motors-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-curtain-motors-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-curtain-motors-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-curtain-motors-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-curtain-motors-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-curtain-motors-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/whole-home-energy-monitors-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-garage-door-controllers-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/whole-home-energy-monitors-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/whole-home-energy-monitors-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/whole-home-energy-monitors-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/whole-home-energy-monitors-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-water-shutoff-valves-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-water-shutoff-valves-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-water-shutoff-valves-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-water-shutoff-valves-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-water-shutoff-valves-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-irrigation-controllers-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-irrigation-controllers-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-irrigation-controllers-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-irrigation-controllers-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-irrigation-controllers-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/matter-hubs-bridges-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/matter-hubs-bridges-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/matter-hubs-bridges-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/matter-hubs-bridges-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "EXPIRED",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/matter-hubs-bridges-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-scene-buttons-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-scene-buttons-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-scene-buttons-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-scene-buttons-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-scene-buttons-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-home-sirens-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-home-sirens-vs-alternatives",
+      "status": 200,
+      "cache": "UPDATING",
+      "age": "43725",
+      "passed": false,
+      "errors": [
+        "Stale or missing build identity"
+      ]
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-home-sirens-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-home-sirens-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "UPDATING",
+      "age": "31529",
+      "passed": false,
+      "errors": [
+        "Stale or missing build identity"
+      ]
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-home-sirens-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/diy-smart-alarm-kits-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/indoor-security-cameras-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/indoor-security-cameras-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/indoor-security-cameras-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/indoor-security-cameras-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/indoor-security-cameras-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/outdoor-security-cameras-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/outdoor-security-cameras-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/outdoor-security-cameras-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/outdoor-security-cameras-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/outdoor-security-cameras-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/floodlight-security-cameras-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/floodlight-security-cameras-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/floodlight-security-cameras-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/floodlight-security-cameras-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/robot-vacuums-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/floodlight-security-cameras-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/robot-vacuums-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/robot-vacuums-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/robot-vacuums-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "EXPIRED",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/robot-vacuums-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/robot-mops-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/robot-mops-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/robot-mops-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/robot-mops-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/robot-mops-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-speakers-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-speakers-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-speakers-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-speakers-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-speakers-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-ev-chargers-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-ev-chargers-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-ev-chargers-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-ev-chargers-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-ev-chargers-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/infant-car-seats-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/infant-car-seats-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/infant-car-seats-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/infant-car-seats-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/infant-car-seats-safety-and-skip-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/infant-car-seats-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/convertible-car-seats-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/convertible-car-seats-vs-alternatives",
+      "status": 200,
+      "cache": "EXPIRED",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/convertible-car-seats-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/convertible-car-seats-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/convertible-car-seats-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "UPDATING",
+      "age": "82232",
+      "passed": false,
+      "errors": [
+        "Stale or missing build identity"
+      ]
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/convertible-car-seats-safety-and-skip-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/belt-positioning-booster-seats-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/belt-positioning-booster-seats-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/belt-positioning-booster-seats-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/belt-positioning-booster-seats-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/belt-positioning-booster-seats-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/belt-positioning-booster-seats-safety-and-skip-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/full-size-strollers-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/full-size-strollers-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/full-size-strollers-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/full-size-strollers-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/full-size-strollers-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/full-size-strollers-safety-and-skip-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/jogging-strollers-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/jogging-strollers-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/jogging-strollers-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/jogging-strollers-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/jogging-strollers-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/jogging-strollers-safety-and-skip-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/stroller-wagons-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/stroller-wagons-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/stroller-wagons-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/stroller-wagons-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/stroller-wagons-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/stroller-wagons-safety-and-skip-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/baby-travel-systems-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/baby-travel-systems-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/baby-travel-systems-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/baby-travel-systems-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/baby-travel-systems-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/baby-travel-systems-safety-and-skip-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/baby-wraps-slings-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/baby-wraps-slings-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/baby-wraps-slings-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/baby-wraps-slings-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/baby-wraps-slings-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "EXPIRED",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/baby-wraps-slings-safety-and-skip-guide",
+      "status": 200,
+      "cache": "EXPIRED",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/hip-seat-carriers-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/hip-seat-carriers-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/hip-seat-carriers-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/hip-seat-carriers-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/hip-seat-carriers-safety-and-skip-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/hip-seat-carriers-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/bedside-bassinets-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/bedside-bassinets-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/bedside-bassinets-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/bedside-bassinets-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/bedside-bassinets-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/bedside-bassinets-safety-and-skip-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/convertible-baby-cribs-buying-guide",
+      "status": 200,
+      "cache": "EXPIRED",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/convertible-baby-cribs-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/convertible-baby-cribs-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/convertible-baby-cribs-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/convertible-baby-cribs-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "UPDATING",
+      "age": "3944",
+      "passed": false,
+      "errors": [
+        "Stale or missing build identity"
+      ]
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/convertible-baby-cribs-safety-and-skip-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/crib-mattresses-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/crib-mattresses-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/crib-mattresses-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/crib-mattresses-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/crib-mattresses-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/crib-mattresses-safety-and-skip-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/travel-cribs-playards-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/travel-cribs-playards-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/travel-cribs-playards-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/travel-cribs-playards-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/travel-cribs-playards-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/travel-cribs-playards-safety-and-skip-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/adjustable-high-chairs-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/adjustable-high-chairs-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/adjustable-high-chairs-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/adjustable-high-chairs-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/adjustable-high-chairs-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/adjustable-high-chairs-safety-and-skip-guide",
+      "status": 200,
+      "cache": "EXPIRED",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/baby-food-makers-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/baby-food-makers-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/baby-food-makers-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/baby-food-makers-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/baby-food-makers-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/baby-food-makers-safety-and-skip-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/changing-pads-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/changing-pads-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/changing-pads-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/changing-pads-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/changing-pads-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/changing-pads-safety-and-skip-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/structured-diaper-bags-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/structured-diaper-bags-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/structured-diaper-bags-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/structured-diaper-bags-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/structured-diaper-bags-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/structured-diaper-bags-safety-and-skip-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/hardware-mounted-baby-gates-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/hardware-mounted-baby-gates-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/hardware-mounted-baby-gates-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/hardware-mounted-baby-gates-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/hardware-mounted-baby-gates-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "EXPIRED",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/hardware-mounted-baby-gates-safety-and-skip-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/nursery-humidifiers-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/nursery-humidifiers-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/nursery-humidifiers-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "UPDATING",
+      "age": "64673",
+      "passed": false,
+      "errors": [
+        "Stale or missing build identity"
+      ]
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/nursery-humidifiers-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/nursery-humidifiers-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/nursery-humidifiers-safety-and-skip-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/wet-food-automatic-feeders-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/wet-food-automatic-feeders-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/wet-food-automatic-feeders-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/wet-food-automatic-feeders-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/wet-food-automatic-feeders-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/microchip-pet-feeders-buying-guide",
+      "status": 200,
+      "cache": "EXPIRED",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/microchip-pet-feeders-vs-alternatives",
+      "status": 200,
+      "cache": "EXPIRED",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/microchip-pet-feeders-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/microchip-pet-feeders-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/microchip-pet-feeders-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/wireless-pump-pet-fountains-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/wireless-pump-pet-fountains-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/wireless-pump-pet-fountains-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/wireless-pump-pet-fountains-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/wireless-pump-pet-fountains-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/cat-gps-trackers-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/dog-activity-collars-buying-guide",
+      "status": 200,
+      "cache": "HIT",
+      "age": "56",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/airtag-pet-collar-holders-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/motorized-smart-pet-doors-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/motorized-smart-pet-doors-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/motorized-smart-pet-doors-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/motorized-smart-pet-doors-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/motorized-smart-pet-doors-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/treat-dispensing-pet-cameras-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/treat-dispensing-pet-cameras-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/treat-dispensing-pet-cameras-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/treat-dispensing-pet-cameras-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/treat-dispensing-pet-cameras-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/open-top-self-cleaning-litter-boxes-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/open-top-self-cleaning-litter-boxes-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/open-top-self-cleaning-litter-boxes-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "UPDATING",
+      "age": "8513",
+      "passed": false,
+      "errors": [
+        "Stale or missing build identity"
+      ]
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/open-top-self-cleaning-litter-boxes-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/open-top-self-cleaning-litter-boxes-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/top-entry-litter-boxes-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/top-entry-litter-boxes-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/top-entry-litter-boxes-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/top-entry-litter-boxes-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/top-entry-litter-boxes-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/cat-litter-mats-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/pet-hair-vacuum-tools-vs-alternatives",
+      "status": 200,
+      "cache": "UPDATING",
+      "age": "6778",
+      "passed": false,
+      "errors": [
+        "Stale or missing build identity"
+      ]
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/pet-hair-vacuum-tools-buying-guide",
+      "status": 200,
+      "cache": "UPDATING",
+      "age": "13530",
+      "passed": false,
+      "errors": [
+        "Stale or missing build identity"
+      ]
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/pet-hair-vacuum-tools-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/pet-hair-vacuum-tools-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/pet-hair-vacuum-tools-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/pet-hair-clippers-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/pet-hair-clippers-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/pet-hair-clippers-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/pet-hair-clippers-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/pet-hair-clippers-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/pet-nail-grinders-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/pet-nail-grinders-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/pet-nail-grinders-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/pet-nail-grinders-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/pet-nail-grinders-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/pet-dryers-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/pet-dryers-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/pet-dryers-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/pet-dryers-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/pet-dryers-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/cooling-pet-beds-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/pet-stain-carpet-cleaners-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/soft-sided-pet-carriers-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/washable-orthopedic-pet-beds-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/soft-sided-pet-carriers-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/soft-sided-pet-carriers-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/soft-sided-pet-carriers-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/soft-sided-pet-carriers-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/vehicle-pet-restraints-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/vehicle-pet-restraints-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/vehicle-pet-restraints-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/vehicle-pet-restraints-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/vehicle-pet-restraints-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/interactive-puzzle-feeders-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/automatic-ball-launchers-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/smart-bird-feeders-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/smart-bird-feeders-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/smart-bird-feeders-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/smart-bird-feeders-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/smart-bird-feeders-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/automatic-aquarium-feeders-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/aquarium-water-monitors-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "costumes.madabase.com",
+      "path": "/guides/high-end-costumes-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "costumes.madabase.com",
+      "path": "/guides/mascot-costumes-buying-guide",
+      "status": 200,
+      "cache": "EXPIRED",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "costumes.madabase.com",
+      "path": "/guides/adult-costumes-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "costumes.madabase.com",
+      "path": "/guides/historical-theatrical-costumes-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "costumes.madabase.com",
+      "path": "/guides/child-costumes-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "costumes.madabase.com",
+      "path": "/guides/costume-wigs-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "costumes.madabase.com",
+      "path": "/guides/costume-wigs-vs-alternatives",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "costumes.madabase.com",
+      "path": "/guides/costume-wigs-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "costumes.madabase.com",
+      "path": "/guides/masks-and-masquerade-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "costumes.madabase.com",
+      "path": "/guides/costume-wigs-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "costumes.madabase.com",
+      "path": "/guides/theatrical-face-body-makeup-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "costumes.madabase.com",
+      "path": "/guides/prosthetics-special-effects-buying-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/best/babybjorn-harmony-vs-ergobaby-omni-breeze",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/best/dr-browns-vs-baby-brezza-sterilizer-dryer",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/reviews/ergobaby-omni-breeze-carrier",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/reviews/aqara-door-and-window-sensor-p2",
+      "status": 200,
+      "cache": "UPDATING",
+      "age": "29122",
+      "passed": false,
+      "errors": [
+        "Stale or missing build identity"
+      ]
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/monitor-arm-for-small-desk-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/small-home-office-setup-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/home-office-cable-management-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/usb-switch-vs-kvm-vs-dock-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/usb-speakerphone-vs-headset-video-meetings",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "network.madabase.com",
+      "path": "/guides/wifi-7-vs-wifi-6-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "network.madabase.com",
+      "path": "/guides/ethernet-cable-category-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "network.madabase.com",
+      "path": "/guides/home-ethernet-switch-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "network.madabase.com",
+      "path": "/guides/usb-c-ethernet-adapter-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "network.madabase.com",
+      "path": "/guides/travel-router-vpn-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "network.madabase.com",
+      "path": "/guides/moca-2-5-vs-ethernet-run-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "network.madabase.com",
+      "path": "/guides/poe-switch-for-home-cameras-and-access-points-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/reviews/aqara-door-and-window-sensor-p2",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/cali-blonde-marilyn-starlet-wig-lvklnhr",
+      "held": true,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/black-two-horned-half-mask-gvjatlr",
+      "held": false,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/the-deluxe-joker-purple-green-child-costume-w-mask-vmgnrkq",
+      "held": false,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/polar-bear-mascot-i-a__ns",
+      "held": false,
+      "transaction": "buy",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/the-hobbit-gandalf-adult-costume-6sfdetw",
+      "held": true,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/pumpkin-bat-ghost-string-lights-slbqrxp",
+      "held": true,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/black-spot-dog-high-end-mascot-adult-costume-g0ysvuw",
+      "held": true,
+      "transaction": "buy",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/classic-1920s-scalloped-sequin-flapper-dress-women-s-adult-costume-dabhg_c",
+      "held": false,
+      "transaction": "rent",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/floating-ghost-revenant-uv-reactive-animatronic-tocj9ij",
+      "held": true,
+      "transaction": "buy",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/5-kraken-posable-tentacle-blacklight-prop-z_vmtvb",
+      "held": false,
+      "transaction": "rent",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/authentic-vintage-1960s-blue-sailor-pinup-dress-women-s-costume-snyc3vr",
+      "held": false,
+      "transaction": "rent",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/premium-wolf-man-professional-cosplay-adult-costume-hpp9toe",
+      "held": false,
+      "transaction": "buy",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/ben-nye-liquid-latex-almqlbe",
+      "held": false,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/blissful-black-cat-mascot-adult-costume-gozmxlx",
+      "held": false,
+      "transaction": "buy",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/2-octopus-posable-tentacle-blacklight-prop-c2kwigo",
+      "held": false,
+      "transaction": "rent",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/bat-foam-latex-prosthetic-nysajb-",
+      "held": false,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/fox-ears-and-tail-set-k8t3evd",
+      "held": false,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/diablo-matte-black-masquerade-mask-kbqldec",
+      "held": false,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/7-piece-professional-red-plush-santa-suit-adult-costume-di5qoyc",
+      "held": false,
+      "transaction": "rent",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/bright-sunshine-gold-sequin-tailcoat-men-s-costume-rxxeivg",
+      "held": false,
+      "transaction": "rent",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/judge-unisex-wig--wjwnun",
+      "held": false,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/brown-leather-plague-doctor-goggle-mask-4ewd08a",
+      "held": false,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/harley-inspired-curled-pink-and-blue-pigtail-wig-3hiyszo",
+      "held": false,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/creepy-vintage-bloody-clown-adult-costume-re9xptj",
+      "held": false,
+      "transaction": "buy",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/cotton-candy-theatrical-contact-lenses-fpyb29g",
+      "held": true,
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/brown-bunny-mascot-adult-costume-0q-blim",
+      "held": false,
+      "transaction": "buy",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/professional-1920s-grey-plaid-suit-adult-costume-vsfiea9",
+      "held": false,
+      "transaction": "rent",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/creeping-dead-mask-w-bone-suit-adult-costume-b7b3xh8",
+      "held": true,
+      "transaction": "buy",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/deluxe-vintage-creeper-clown-women-s-costume-ncrshdh",
+      "held": false,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/ben-nye-stage-blood-dbds8bj",
+      "held": false,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/fantasy-dark-gothic-wicked-witch-adult-costume-uik2kxx",
+      "held": false,
+      "transaction": "rent",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/woochie-fx-dark-lord-foam-latex-prosthetic--qtrtcu",
+      "held": true,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/dc-universe-catwoman-adult-costume-ikdxwcg",
+      "held": true,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/angry-villain-violently-shaking-animated-prop-jhez1p5",
+      "held": false,
+      "transaction": "buy",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/classic-pope-adult-costume-j-v8fbb",
+      "held": false,
+      "transaction": "rent",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/7-rotten-harvester-skeleton-scarecrow-animated-prop-decoration-ubtr30k",
+      "held": false,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/manic-panic-trash-goddess-wig-lecanry",
+      "held": false,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/7-whimsical-witch-animated-prop-decoration-gd8qxgu",
+      "held": false,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/adult-cotton-engineer-hat-bxcvoso",
+      "held": false,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/day-of-the-dead-hair-clip-2_6uepg",
+      "held": false,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/24-fleur-de-lis-silver-king-crown-lzigvdr",
+      "held": true,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/3-piece-hanging-halloween-ghost-w-witch-hat-decoration-qehek2n",
+      "held": false,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/gus-deluxe-old-man-mask-p-bqxfw",
+      "held": true,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/led-light-up-jack-o-lantern-w-sound-t96hg8z",
+      "held": false,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/blue-police-ceremony-uniform-adult-costume-1ekzdvb",
+      "held": false,
+      "transaction": "buy",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/classic-harley-quinn-adult-costume-igt9bmj",
+      "held": false,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/clean-old-joel-arm-dark-zisgsfe",
+      "held": false,
+      "transaction": "buy",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/exclusive-1920s-brown-striped-double-breasted-suit-men-s-costume-xsnsmmo",
+      "held": false,
+      "transaction": "buy",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/embalming-fluid-bottle-prop-44rnj33",
+      "held": false,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/misting-pumpkin-halloween-decoration-p7ew4c5",
+      "held": false,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/lil-lion-cub-onesie-baby-costume-5wexwct",
+      "held": true,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/rochelle-feathered-venetian-lace-mask-scopfsh",
+      "held": false,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/demonia-bolt-450-combat-boots-pqkpzii",
+      "held": false,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/black-grey-terrier-mascot-adult-costume-vcxsoxd",
+      "held": false,
+      "transaction": "buy",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/regal-true-red-professional-santa-suit-adult-costume-aer4zwj",
+      "held": true,
+      "transaction": "rent",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/4-bloodnight-wings-for-devils-demons-gargoyles-2e8fjra",
+      "held": false,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/albert-einstein-physicist-classic-kids-costume-hhe7fb3",
+      "held": true,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/7-gargoyle-w-expandable-wings-fog-breath-electric-animatronic-prop-xfptvun",
+      "held": true,
+      "transaction": "buy",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/delicious-goat-head-mask-w-working-jaw-0cksm82",
+      "held": false,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/7-piece-professional-red-plush-santa-suit-adult-costume-nljenk3",
+      "held": false,
+      "transaction": "buy",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/ben-nye-burns-blisters-wheel-fx-creme-makeup-1xw6mmw",
+      "held": false,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/ground-breaker-zombie-left-arm-grabber-animatronic-prop-ghfielf",
+      "held": false,
+      "transaction": "buy",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/deluxe-grey-military-hat-zax4i1e",
+      "held": false,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/harry-potter-hufflepuff-child-robe-zlyr8ok",
+      "held": true,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/extra-toasty-freddy-inspired-deluxe-silicone-mask-9f_nsln",
+      "held": true,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/haunted-tree-led-light-up-animatronic-9oq3s6r",
+      "held": true,
+      "transaction": "buy",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/scarlet-red-long-feather-carnival-headpiece-9plcxyd",
+      "held": false,
+      "transaction": "buy",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/christmas-santa-wig-beard-set-gdf3cco",
+      "held": false,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/ground-breaker-zombie-left-arm-grabber-animatronic-prop-5mn6-ix",
+      "held": false,
+      "transaction": "rent",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/creature-bloody-multi-layered-fx-fangs-pb85kep",
+      "held": false,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/skin-illustrator-alchemy-alcohol-activated-makeup-fx-palette-ivi4ryz",
+      "held": false,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/rotten-gums-zombie-mask-memz_4t",
+      "held": true,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/1920s-black-silver-sequin-flapper-dress-women-s-costume-fe30pzp",
+      "held": false,
+      "transaction": "rent",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/black-deluxe-padre-hat-varvyos",
+      "held": false,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/gargoyle-flexi-ears-f9eu7jd",
+      "held": false,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/ben-nye-fake-aged-dark-blood-upuntqa",
+      "held": false,
+      "transaction": "unknown",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "catalog",
+      "host": "costumes.madabase.com",
+      "path": "/products/morgan-face-specimen-jar-prop-wpfpfyg",
+      "held": false,
+      "transaction": "rent",
+      "status": 200,
+      "cache": "BYPASS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "home",
+      "host": "network.madabase.com",
+      "path": "/",
+      "status": 200,
+      "cache": "UPDATING",
+      "age": "7037",
+      "passed": false,
+      "errors": [
+        "Stale or missing build identity"
+      ]
+    },
+    {
+      "kind": "sitemap",
+      "host": "network.madabase.com",
+      "path": "/sitemap.xml",
+      "status": 200,
+      "cache": "DYNAMIC",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "home",
+      "host": "smarthome.madabase.com",
+      "path": "/",
+      "status": 200,
+      "cache": "UPDATING",
+      "age": "27031",
+      "passed": false,
+      "errors": [
+        "Stale or missing build identity"
+      ]
+    },
+    {
+      "kind": "sitemap",
+      "host": "smarthome.madabase.com",
+      "path": "/sitemap.xml",
+      "status": 200,
+      "cache": "DYNAMIC",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "home",
+      "host": "homeoffice.madabase.com",
+      "path": "/",
+      "status": 200,
+      "cache": "UPDATING",
+      "age": "6828",
+      "passed": false,
+      "errors": [
+        "Stale or missing build identity"
+      ]
+    },
+    {
+      "kind": "sitemap",
+      "host": "homeoffice.madabase.com",
+      "path": "/sitemap.xml",
+      "status": 200,
+      "cache": "DYNAMIC",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "home",
+      "host": "baby.madabase.com",
+      "path": "/",
+      "status": 200,
+      "cache": "UPDATING",
+      "age": "24838",
+      "passed": false,
+      "errors": [
+        "Stale or missing build identity"
+      ]
+    },
+    {
+      "kind": "sitemap",
+      "host": "baby.madabase.com",
+      "path": "/sitemap.xml",
+      "status": 200,
+      "cache": "DYNAMIC",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "home",
+      "host": "pets.madabase.com",
+      "path": "/",
+      "status": 200,
+      "cache": "UPDATING",
+      "age": "19493",
+      "passed": false,
+      "errors": [
+        "Stale or missing build identity"
+      ]
+    },
+    {
+      "kind": "home",
+      "host": "style.madabase.com",
+      "path": "/",
+      "status": 200,
+      "cache": "UPDATING",
+      "age": "25710",
+      "passed": false,
+      "errors": [
+        "Stale or missing build identity"
+      ]
+    },
+    {
+      "kind": "sitemap",
+      "host": "pets.madabase.com",
+      "path": "/sitemap.xml",
+      "status": 200,
+      "cache": "DYNAMIC",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "sitemap",
+      "host": "style.madabase.com",
+      "path": "/sitemap.xml",
+      "status": 200,
+      "cache": "DYNAMIC",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "home",
+      "host": "costumes.madabase.com",
+      "path": "/",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "sitemap",
+      "host": "costumes.madabase.com",
+      "path": "/sitemap.xml",
+      "status": 200,
+      "cache": "DYNAMIC",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "main",
+      "host": "madabase.com",
+      "path": "/",
+      "status": 200,
+      "cache": "DYNAMIC",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "main",
+      "host": "madabase.com",
+      "path": "/research",
+      "status": 200,
+      "cache": "DYNAMIC",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "main",
+      "host": "madabase.com",
+      "path": "/search?q=Ethernet",
+      "status": 200,
+      "cache": "DYNAMIC",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "sitemap",
+      "host": "madabase.com",
+      "path": "/sitemap.xml",
+      "status": 200,
+      "cache": "DYNAMIC",
+      "passed": true,
+      "errors": []
+    }
+  ]
+}

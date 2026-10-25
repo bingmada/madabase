@@ -1,0 +1,47 @@
+{
+  "submittedAt": "2026-10-25T11:19:47.879Z",
+  "property": "sc-domain:madabase.com",
+  "rows": [
+    {
+      "url": "https://homeoffice.madabase.com/sitemap.xml",
+      "confirmedAt": "2026-10-25T11:18:44.937Z",
+      "receipt": "Sitemap submitted successfully"
+    },
+    {
+      "url": "https://madabase.com/sitemap.xml",
+      "confirmedAt": "2026-10-25T11:18:51.390Z",
+      "receipt": "Sitemap submitted successfully"
+    },
+    {
+      "url": "https://smarthome.madabase.com/sitemap.xml",
+      "confirmedAt": "2026-10-25T11:18:57.782Z",
+      "receipt": "Sitemap submitted successfully"
+    },
+    {
+      "url": "https://network.madabase.com/sitemap.xml",
+      "confirmedAt": "2026-10-25T11:19:04.180Z",
+      "receipt": "Sitemap submitted successfully"
+    },
+    {
+      "url": "https://baby.madabase.com/sitemap.xml",
+      "confirmedAt": "2026-10-25T11:19:28.665Z",
+      "receipt": "Sitemap submitted successfully"
+    },
+    {
+      "url": "https://pets.madabase.com/sitemap.xml",
+      "confirmedAt": "2026-10-25T11:19:35.056Z",
+      "receipt": "Sitemap submitted successfully"
+    },
+    {
+      "url": "https://costumes.madabase.com/sitemap.xml",
+      "confirmedAt": "2026-10-25T11:19:41.461Z",
+      "receipt": "Sitemap submitted successfully"
+    },
+    {
+      "url": "https://style.madabase.com/sitemap.xml",
+      "confirmedAt": "2026-10-25T11:19:47.879Z",
+      "receipt": "Sitemap submitted successfully"
+    }
+  ],
+  "scope": "Existing affected sitemaps resubmitted; acceptance does not establish recrawl or indexing."
+}

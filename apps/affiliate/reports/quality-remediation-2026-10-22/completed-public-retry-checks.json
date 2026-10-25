@@ -1,0 +1,227 @@
+{
+  "checkedAt": "2026-10-25T11:17:20.839Z",
+  "revision": "27a538d7a40e83c062e4d6ac2d74e63786187fe9",
+  "buildIds": {
+    "main": "CiD44KyBP9lnIuLctNl91",
+    "affiliate": "uFvnHZrw66_38mU8Rzew1"
+  },
+  "scope": "Public plain canonical GET responses; no statistics request, merchant redirect traversal or database write.",
+  "total": 22,
+  "passed": 22,
+  "rows": [
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/aqara-hub-m3-home-assistant-matter-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/xlr-office-microphones-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/desktop-power-centers-vs-alternatives",
+      "status": 200,
+      "cache": "HIT",
+      "age": "453",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "network.madabase.com",
+      "path": "/guides/hardware-firewall-appliances-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "network.madabase.com",
+      "path": "/guides/sfp-plus-transceivers-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-home-sirens-vs-alternatives",
+      "status": 200,
+      "cache": "HIT",
+      "age": "341",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-home-sirens-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "network.madabase.com",
+      "path": "/guides/five-g-home-internet-gateways-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "MISS",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/convertible-baby-cribs-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "HIT",
+      "age": "281",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/convertible-car-seats-setup-and-daily-workflow",
+      "status": 200,
+      "cache": "HIT",
+      "age": "312",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "baby.madabase.com",
+      "path": "/guides/nursery-humidifiers-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": "HIT",
+      "age": "256",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/open-top-self-cleaning-litter-boxes-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": "HIT",
+      "age": "216",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/pet-hair-vacuum-tools-buying-guide",
+      "status": 200,
+      "cache": "HIT",
+      "age": "207",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "pets.madabase.com",
+      "path": "/guides/pet-hair-vacuum-tools-vs-alternatives",
+      "status": 200,
+      "cache": "HIT",
+      "age": "208",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/reviews/aqara-door-and-window-sensor-p2",
+      "status": 200,
+      "cache": "HIT",
+      "age": "153",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "host": "smarthome.madabase.com",
+      "path": "/reviews/aqara-door-and-window-sensor-p2",
+      "status": 200,
+      "cache": "HIT",
+      "age": "132",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "home",
+      "host": "smarthome.madabase.com",
+      "path": "/",
+      "status": 200,
+      "cache": "HIT",
+      "age": "85",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "home",
+      "host": "network.madabase.com",
+      "path": "/",
+      "status": 200,
+      "cache": "HIT",
+      "age": "87",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "home",
+      "host": "homeoffice.madabase.com",
+      "path": "/",
+      "status": 200,
+      "cache": "HIT",
+      "age": "85",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "home",
+      "host": "baby.madabase.com",
+      "path": "/",
+      "status": 200,
+      "cache": "HIT",
+      "age": "84",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "home",
+      "host": "style.madabase.com",
+      "path": "/",
+      "status": 200,
+      "cache": "HIT",
+      "age": "83",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "home",
+      "host": "pets.madabase.com",
+      "path": "/",
+      "status": 200,
+      "cache": "HIT",
+      "age": "84",
+      "passed": true,
+      "errors": []
+    }
+  ]
+}

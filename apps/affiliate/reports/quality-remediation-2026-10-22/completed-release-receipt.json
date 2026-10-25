@@ -1,0 +1,65 @@
+{
+  "recordedAt": "2026-10-25T11:23:58.276Z",
+  "state": "production_published_public_verified",
+  "sourceRevision": "27a538d7a40e83c062e4d6ac2d74e63786187fe9",
+  "releasedAt": "2026-10-25T11:07:27.034Z",
+  "method": "Git push, server fetch, pinned Git-object archive extraction; server source working tree preserved",
+  "publicUniqueTargets": 594,
+  "publicPassed": 594,
+  "uniqueEditorialPages": 499,
+  "catalogProducts": 77,
+  "staticAssetsPassed": 8,
+  "originCriticalPages": 15,
+  "testRestored": true,
+  "testWorkingDirectory": "/srv/madabase-test/releases/local-20260820-next15523",
+  "cutoverSeconds": 15.305436611175537,
+  "schema": {
+    "userExplicitlyAuthorized": true,
+    "afterPassed": true,
+    "operations": [
+      "Added nullable AffiliateClick.market",
+      "Created CommerceEvent and its indexes",
+      "Recorded applied migration in existing Prisma registry"
+    ],
+    "applicationDataDeleted": false,
+    "applicationRowsInserted": false
+  },
+  "notifications": {
+    "gscSitemapsAccepted": 8,
+    "indexnowUrlsAccepted": 583,
+    "indexnowHostsAccepted": 7,
+    "indexingGuaranteed": false
+  },
+  "cache": {
+    "initialOldResponses": 21,
+    "allExactRechecksPassed": true,
+    "globalPurge": false
+  },
+  "overall": {
+    "batchesPassedLocal": 60,
+    "batchesTotal": 111,
+    "percentage": 54,
+    "wholeTaskComplete": false
+  },
+  "evidence": [
+    "completed-scope-db-schema-applied.json",
+    "completed-scope-server-prepared.json",
+    "completed-scope-origin-verified.json",
+    "completed-scope-origin-services-assets.json",
+    "completed-scope-origin-event-checks.json",
+    "completed-scope-readonly-event-monitor.json",
+    "completed-release-final-health.json",
+    "completed-public-checks.json",
+    "completed-public-retry-checks.json",
+    "completed-public-final-acceptance.json",
+    "completed-public-assets.json",
+    "completed-public-ui-checks.json",
+    "completed-release-gsc-sitemaps.json",
+    "completed-release-indexnow-receipts.json"
+  ],
+  "rollback": {
+    "controller": "/var/tmp/madabase-remediation-inputs-20261025-27a538d/deploy.py",
+    "action": "rollback",
+    "schemaPolicy": "Retain additive schema and any subsequently collected events"
+  }
+}

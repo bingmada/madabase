@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-10-25T11:12:29.431Z",
+  "scope": "QA referrer ensures no database event persistence; no genuine visitor or click was simulated.",
+  "rows": [
+    {
+      "releaseId": "uFvnHZrw66_38mU8Rzew1",
+      "status": 200,
+      "body": {
+        "ok": true,
+        "persisted": false,
+        "validated": true,
+        "reason": "qa_visit"
+      }
+    },
+    {
+      "releaseId": "stale-release-check",
+      "status": 400,
+      "body": {
+        "ok": false,
+        "reason": "invalid_event"
+      }
+    }
+  ]
+}

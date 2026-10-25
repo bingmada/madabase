@@ -1,0 +1,26 @@
+{
+  "checkedAtEpoch": 1792927346.9705617,
+  "services": {
+    "main": {
+      "MainPID": "412931",
+      "NRestarts": "0",
+      "WorkingDirectory": "/srv/madabase-main/releases/remediation-20261025-27a538d7a40e83c062e4d6ac2d74e63786187fe9",
+      "ActiveState": "active",
+      "httpStatus": 200
+    },
+    "affiliate": {
+      "MainPID": "413072",
+      "NRestarts": "0",
+      "WorkingDirectory": "/srv/madabase-affiliate/releases/remediation-20261025-27a538d7a40e83c062e4d6ac2d74e63786187fe9",
+      "ActiveState": "active",
+      "httpStatus": 200
+    },
+    "test": {
+      "MainPID": "413146",
+      "NRestarts": "0",
+      "WorkingDirectory": "/srv/madabase-test/releases/local-20260820-next15523",
+      "ActiveState": "active",
+      "httpStatus": 200
+    }
+  }
+}

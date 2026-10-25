@@ -1,0 +1,95 @@
+{
+  "checkedAt": "2026-10-25T11:13:07.822Z",
+  "total": 8,
+  "passed": 8,
+  "rows": [
+    {
+      "app": "main",
+      "kind": "retained",
+      "host": "madabase.com",
+      "path": "/_next/static/Iq00kNhqTzjuVLPv6W8td/_buildManifest.js",
+      "status": 200,
+      "bytes": "1087",
+      "receivedBytes": 1087,
+      "cache": "MISS",
+      "passed": true
+    },
+    {
+      "app": "main",
+      "kind": "retained",
+      "host": "madabase.com",
+      "path": "/_next/static/css/22901a4fbe21c888.css",
+      "status": 200,
+      "bytes": "27248",
+      "receivedBytes": 27248,
+      "cache": "MISS",
+      "passed": true
+    },
+    {
+      "app": "main",
+      "kind": "current",
+      "host": "madabase.com",
+      "path": "/_next/static/CiD44KyBP9lnIuLctNl91/_buildManifest.js",
+      "status": 200,
+      "bytes": "1087",
+      "receivedBytes": 1087,
+      "cache": "MISS",
+      "passed": true
+    },
+    {
+      "app": "main",
+      "kind": "current",
+      "host": "madabase.com",
+      "path": "/_next/static/css/c165edf0c9485afa.css",
+      "status": 200,
+      "bytes": "28174",
+      "receivedBytes": 28174,
+      "cache": "MISS",
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "retained",
+      "host": "homeoffice.madabase.com",
+      "path": "/_next/static/1afVJjHJWofFX8QHoUIS4/_buildManifest.js",
+      "status": 200,
+      "bytes": "1356",
+      "receivedBytes": 1356,
+      "cache": "MISS",
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "retained",
+      "host": "homeoffice.madabase.com",
+      "path": "/_next/static/css/2a5fcae10e2b85ff.css",
+      "status": 200,
+      "bytes": "42845",
+      "receivedBytes": 42845,
+      "cache": "HIT",
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "current",
+      "host": "homeoffice.madabase.com",
+      "path": "/_next/static/chunks/817-6cc85ba514a72c7e.js",
+      "status": 200,
+      "bytes": "11265",
+      "receivedBytes": 11265,
+      "cache": "MISS",
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "current",
+      "host": "homeoffice.madabase.com",
+      "path": "/_next/static/css/f622efb3abdc0e3d.css",
+      "status": 200,
+      "bytes": "45561",
+      "receivedBytes": 45561,
+      "cache": "MISS",
+      "passed": true
+    }
+  ]
+}
