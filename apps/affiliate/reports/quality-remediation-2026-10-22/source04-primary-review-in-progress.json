@@ -1,0 +1,99 @@
+{
+  "reviewedAt": "2026-10-25T23:39:11.863Z",
+  "sources": [
+    {
+      "url": "https://help.babyjogger.com/s/article/CITY-TOUR-2-SPECIFICATIONS",
+      "scope": "Full live rendered specification table read in IAB after web parser showed CSS error. Fold/carton dimensions, regional seat/load labels and configuration limits distinguished."
+    },
+    {
+      "url": "https://www.babyjogger.com/strollers/shop-all-strollers/compact-and-lightweight/baby-jogger-city-tour-2-ultra-compact-travel-stroller/SAP_2081849.html",
+      "scope": "Plain URL returned HTTP410. Not treated as discontinuation evidence. Indexed older retailer-style manufacturer content not used to establish current stock."
+    },
+    {
+      "url": "https://www.babyjogger.com/discontinued-products.html",
+      "scope": "Search-visible official list distinguishes City Tour predecessor from City Tour2 and unrelated GT2/GT3. Absence from list is not continuity or successor proof; further model-currency review remains."
+    },
+    {
+      "url": "https://www.aa.com/web/i18n/travel-info/special-assistance/traveling-children.html",
+      "scope": "Full relevant stroller check-in/gate-check section read; separate operating-carrier and itinerary decision."
+    },
+    {
+      "url": "https://www.aa.com/web/i18n/customer-service/support/conditions-of-carriage.html",
+      "scope": "Relevant carry-on excerpt read: carrier decides suitability and space. No universal cabin acceptance or carried-over 20lb gate rule inferred."
+    },
+    {
+      "url": "https://www.cpsc.gov/safety-education/safety-guides/kids-and-babies/infants-strollers-must-be-properly-secured-all-times",
+      "scope": "Official alert text and linked publication content reviewed for harness and supervision; no recall clearance or newborn seat approval."
+    },
+    {
+      "url": "https://www.nanit.com/products/insights-plan",
+      "scope": "Native page FAQ read, core features without Insights. Generic plan tabs incomplete; do not certify current account renewal prices."
+    },
+    {
+      "url": "https://support.nanit.com/en_us/what-is-the-difference-between-the-different-nanit-insights-plans-SJylmn0Kgg",
+      "scope": "Full live browser table read and saved locally. Published2025 price examples, separate event/video history and caregiver counts; no universal price or current checkout quote inferred."
+    },
+    {
+      "url": "https://support.nanit.com/en_us/will-the-monitoring-work-if-my-internet-connectionwi-fi-is-down.-HyCAhAFxe",
+      "scope": "Full live browser article read. Scope is Breathing Motion; same LAN and powered camera-only alerts are not a guarantee for all video/cloud functions."
+    },
+    {
+      "url": "https://www.nanit.com/pages/privacy-security",
+      "scope": "Relevant manufacturer MFA-required, user-permission and data/security body read. Marketing security guarantees not adopted as an independent audit."
+    },
+    {
+      "url": "https://ubbiworld.com/a/faq",
+      "scope": "Full relevant diaper-pail FAQ read: standard13gal bag, no disassembly, dry-cloth/no-liquid care, cloth-liner differences, capacity and actual emptying."
+    },
+    {
+      "url": "https://ubbiworld.com/products/ubbi-diaper-pail",
+      "scope": "Relevant current US/USD product/material/dimension/variant body read. No Amazon seller or stock verification transferred from manufacturer page."
+    },
+    {
+      "url": "https://www.cdc.gov/infant-toddler-nutrition/formula-feeding/preparation-and-storage.html",
+      "scope": "Preparation, optional warming, use/storage and higher-risk infant sections read. No new formula recipe or generalized storage clock written."
+    },
+    {
+      "url": "https://www.cdc.gov/breastfeeding/breast-milk-preparation-and-storage/handling-breastmilk.html",
+      "scope": "Relevant storage/thawing/optional warming/feeding sections read. Milk and formula handling kept separate."
+    },
+    {
+      "url": "https://support.momcozy.com/article/59403741998617",
+      "scope": "Full relevant product warning read. Affected supplied18V adapter is not for other ordinaryUSB-C devices; warmer itself not declared recalled or universally unusable. Package applicability remains separate."
+    },
+    {
+      "url": "https://support.momcozy.com/article/54582249655193",
+      "scope": "Full relevant MW05 spec table read.2700mAh still listed; no battery runtime or universal charging interchangeability inferred."
+    },
+    {
+      "url": "https://support.momcozy.com/article/54592254435609",
+      "scope": "Full relevant operation and milk/water mode body read. No measured heating-time/feed-count or indefinite keep-warm promise."
+    },
+    {
+      "url": "https://support.momcozy.com/article/54594111643417",
+      "scope": "Full relevant cleaning body read: seal/chamber/lid, dry electrical areas, no immersion/dishwasher, complete drying and mold support route."
+    },
+    {
+      "url": "https://petlibro.com/pages/how-the-granary-wifi-feeder-works",
+      "scope": "Full relevant PLAF103 tips/FAQ read: original5V supply, dry2-15mm food, emergency alkaline batteries, retained schedules and disabled functions."
+    },
+    {
+      "url": "https://petlibro.com/pages/how-much-is-in-one-feeding-portion-plaf001-002-101-102-plaf003-004-plaf005-006-103-203-plaf008-plaf107-plaf108-plaf301",
+      "scope": "Full relevant portion explanation and table read. Volume rather than fixed grams/calories."
+    },
+    {
+      "url": "https://petlibro.com/products/one-rfid-pet-feeder",
+      "scope": "Current relevant model specs/FAQ read. PLAF301, dedicated collar tag not implanted microchip, one tag per unit, reader required, backup restrictions. Optional care subscriptions not treated as required basic feeding charges."
+    },
+    {
+      "url": "https://petlibro.com/pages/how-do-i-disassemble-and-clean-the-granary-smart-feeder-af103-plaf103",
+      "scope": "Full relevant cleaning body read. Washable components separate; powered base cannot be rinsed or wet-wiped. No generic dishwasher instruction."
+    }
+  ],
+  "remaining": [
+    "Read linked CPSC monitor-cord PDF in full, including visual placement extent if retained as PDF reference.",
+    "Read linked manufacturer PLAF301 support images/manual portions where needed; productFAQ supports current identity claims.",
+    "Verify remaining product-page links, model/successor evidence and related-roundup contradictions before acceptance.",
+    "No fresh Amazon stock/seller/return or delivered-adapter identity established."
+  ]
+}

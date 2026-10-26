@@ -1,0 +1,57 @@
+{
+  "recordedAt": "2026-10-25T23:36:20.169Z",
+  "state": "published_verified",
+  "sourceRevision": "7db7935277c7608342a2a82695d77ac86905fa61",
+  "releaseId": "qszA6RQt-xptrOY48SXsk",
+  "mainBuildId": "T10-x-IHJC96qrCe2vOr6",
+  "releasedAt": "2026-10-25T23:05:21.393Z",
+  "method": "Explicit Git commit push, server fetch, pinned immutable runtime extraction and bounded systemd cutover with independent recovery timer.",
+  "changedPages": 9,
+  "sourceGuidePages": 6,
+  "relatedProductNotes": 3,
+  "publicUniqueTargets": 57,
+  "publicPassed": 57,
+  "staticAssetsPassed": 16,
+  "originCriticalPages": 25,
+  "hostSitemaps": 8,
+  "testRestored": true,
+  "testWorkingDirectory": "/srv/madabase-test/releases/local-20260820-next15523",
+  "cutoverSeconds": 21.15147852897644,
+  "schema": "Existing additive commerce schema checked read only; no new migration or business-record write.",
+  "healthEvidence": "source03-origin-final-health.json",
+  "cache": "Eight initial older critical pages and homepages refreshed naturally. Last smarthome homepage confirmed current after its normal cache expiry. No Cloudflare login completed or cache purge performed.",
+  "notifications": {
+    "gsc": {
+      "acceptedSitemaps": 4,
+      "evidence": "source03-gsc-submissions.json"
+    },
+    "indexnow": {
+      "urls": 9,
+      "hosts": 3,
+      "httpStatus": 200,
+      "evidence": "source03-indexnow-submission.log"
+    },
+    "limit": "Submission accepted, not proof of indexing, rankings or CTR improvement."
+  },
+  "overall": {
+    "batchesPassedLocal": 61,
+    "batchesTotal": 111,
+    "sourcePagesPassed": 18,
+    "sourcePagesTotal": 41,
+    "wholeTaskComplete": false,
+    "source04": "local modifications awaiting build and every-page acceptance"
+  },
+  "nextReleasePolicy": "SOURCE-03 is this authorized release. All remaining remediation stays local until every remaining batch, discovered issue and final whole-site acceptance passes; then publish it together.",
+  "rollback": "python3 /var/tmp/madabase-source03-inputs-20261025-7db7935/deploy.py rollback",
+  "evidence": [
+    "source03-local-acceptance.json",
+    "source03-origin-transaction.json",
+    "source03-origin-final-health.json",
+    "source03-public-page-checks.json",
+    "source03-public-final-acceptance.json",
+    "source03-public-desktop-purchase.png",
+    "source03-public-mobile-purchase.png",
+    "source03-gsc-submissions.json",
+    "source03-indexnow-submission.log"
+  ]
+}

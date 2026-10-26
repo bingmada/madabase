@@ -1,0 +1,27 @@
+{
+  "checkedAtEpoch": 1792970344.5526354,
+  "services": {
+    "main": {
+      "ActiveState": "active",
+      "WorkingDirectory": "/srv/madabase-main/releases/source03-20261025-7db7935277c7608342a2a82695d77ac86905fa61",
+      "NRestarts": "0",
+      "httpStatus": 200,
+      "buildId": "T10-x-IHJC96qrCe2vOr6"
+    },
+    "affiliate": {
+      "ActiveState": "active",
+      "WorkingDirectory": "/srv/madabase-affiliate/releases/source03-20261025-7db7935277c7608342a2a82695d77ac86905fa61",
+      "NRestarts": "0",
+      "httpStatus": 200,
+      "buildId": "qszA6RQt-xptrOY48SXsk"
+    },
+    "test": {
+      "ActiveState": "active",
+      "WorkingDirectory": "/srv/madabase-test/releases/local-20260820-next15523",
+      "NRestarts": "0",
+      "httpStatus": 200
+    }
+  },
+  "recoveryTimer": "ActiveState=inactive\nSubState=dead",
+  "productionCheckoutTrackedDirtyCount": 14
+}

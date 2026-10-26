@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-10-25T23:06:33.097Z",
+  "services": {
+    "main": {
+      "ActiveState": "active",
+      "WorkingDirectory": "/srv/madabase-main/releases/source03-20261025-7db7935277c7608342a2a82695d77ac86905fa61",
+      "NRestarts": "0"
+    },
+    "affiliate": {
+      "ActiveState": "active",
+      "WorkingDirectory": "/srv/madabase-affiliate/releases/source03-20261025-7db7935277c7608342a2a82695d77ac86905fa61",
+      "NRestarts": "0"
+    },
+    "test": {
+      "ActiveState": "active",
+      "WorkingDirectory": "/srv/madabase-test/releases/local-20260820-next15523",
+      "NRestarts": "0"
+    }
+  }
+}

@@ -1471,7 +1471,13 @@
         "source03-package-checks.json",
         "build-affiliate-source03-final.log",
         "build-main-source03.log"
-      ]
+      ],
+      "publication": {
+        "state": "published_verified",
+        "sourceRevision": "7db7935277c7608342a2a82695d77ac86905fa61",
+        "releaseId": "qszA6RQt-xptrOY48SXsk",
+        "evidence": "source03-release-receipt.json"
+      }
     },
     {
       "id": "SOURCE-04",
@@ -1484,7 +1490,12 @@
         "baby:travel-bottle-warmer-heating-cleaning-battery-guide",
         "pet:automatic-feeder-buying-guide"
       ],
-      "status": "pending"
+      "status": "modified_awaiting_checks",
+      "startedAt": "2026-10-25T23:12:48.607Z",
+      "reviewEvidence": "source04-editorial-review-in-progress.json",
+      "changedGuidePages": 6,
+      "relatedProductNotes": 2,
+      "remaining": "Primary/model boundaries, related-page consistency, snippet review, new build and every-page HTTP/purchase/mobile/desktop acceptance. Local only until all remaining work passes."
     },
     {
       "id": "SOURCE-05",
@@ -12937,7 +12948,11 @@
         "status": "passed_local",
         "reviewEvidence": "source03-editorial-review.json",
         "acceptedAt": "2026-10-25T13:55:00.540Z",
-        "evidence": "source03-local-acceptance.json"
+        "evidence": "source03-local-acceptance.json",
+        "publication": {
+          "state": "published_verified",
+          "releaseId": "qszA6RQt-xptrOY48SXsk"
+        }
       },
       {
         "key": "network:managed-vs-unmanaged-poe-switch-home-guide",
@@ -12946,7 +12961,11 @@
         "status": "passed_local",
         "reviewEvidence": "source03-editorial-review.json",
         "acceptedAt": "2026-10-25T13:55:00.540Z",
-        "evidence": "source03-local-acceptance.json"
+        "evidence": "source03-local-acceptance.json",
+        "publication": {
+          "state": "published_verified",
+          "releaseId": "qszA6RQt-xptrOY48SXsk"
+        }
       },
       {
         "key": "smarthome:smart-garage-door-controller-compatibility-hub-offline-guide",
@@ -12955,7 +12974,11 @@
         "status": "passed_local",
         "reviewEvidence": "source03-editorial-review.json",
         "acceptedAt": "2026-10-25T13:55:00.540Z",
-        "evidence": "source03-local-acceptance.json"
+        "evidence": "source03-local-acceptance.json",
+        "publication": {
+          "state": "published_verified",
+          "releaseId": "qszA6RQt-xptrOY48SXsk"
+        }
       },
       {
         "key": "smarthome:smart-blind-motor-hub-local-control-guide",
@@ -12964,7 +12987,11 @@
         "status": "passed_local",
         "reviewEvidence": "source03-editorial-review.json",
         "acceptedAt": "2026-10-25T13:55:00.540Z",
-        "evidence": "source03-local-acceptance.json"
+        "evidence": "source03-local-acceptance.json",
+        "publication": {
+          "state": "published_verified",
+          "releaseId": "qszA6RQt-xptrOY48SXsk"
+        }
       },
       {
         "key": "smarthome:whole-home-energy-monitor-cloud-local-installation-guide",
@@ -12973,7 +13000,11 @@
         "status": "passed_local",
         "reviewEvidence": "source03-editorial-review.json",
         "acceptedAt": "2026-10-25T13:55:00.540Z",
-        "evidence": "source03-local-acceptance.json"
+        "evidence": "source03-local-acceptance.json",
+        "publication": {
+          "state": "published_verified",
+          "releaseId": "qszA6RQt-xptrOY48SXsk"
+        }
       },
       {
         "key": "baby:baby-registry-essentials-guide",
@@ -12982,43 +13013,47 @@
         "status": "passed_local",
         "reviewEvidence": "source03-editorial-review.json",
         "acceptedAt": "2026-10-25T13:55:00.540Z",
-        "evidence": "source03-local-acceptance.json"
+        "evidence": "source03-local-acceptance.json",
+        "publication": {
+          "state": "published_verified",
+          "releaseId": "qszA6RQt-xptrOY48SXsk"
+        }
       },
       {
         "key": "baby:travel-stroller-for-small-car-guide",
         "site": "baby",
         "slug": "travel-stroller-for-small-car-guide",
-        "status": "pending"
+        "status": "modified_awaiting_checks"
       },
       {
         "key": "baby:travel-stroller-folded-size-checklist",
         "site": "baby",
         "slug": "travel-stroller-folded-size-checklist",
-        "status": "pending"
+        "status": "modified_awaiting_checks"
       },
       {
         "key": "baby:baby-monitor-subscription-and-privacy-checklist",
         "site": "baby",
         "slug": "baby-monitor-subscription-and-privacy-checklist",
-        "status": "pending"
+        "status": "modified_awaiting_checks"
       },
       {
         "key": "baby:diaper-pail-replacement-bag-annual-cost-guide",
         "site": "baby",
         "slug": "diaper-pail-replacement-bag-annual-cost-guide",
-        "status": "pending"
+        "status": "modified_awaiting_checks"
       },
       {
         "key": "baby:travel-bottle-warmer-heating-cleaning-battery-guide",
         "site": "baby",
         "slug": "travel-bottle-warmer-heating-cleaning-battery-guide",
-        "status": "pending"
+        "status": "modified_awaiting_checks"
       },
       {
         "key": "pet:automatic-feeder-buying-guide",
         "site": "pet",
         "slug": "automatic-feeder-buying-guide",
-        "status": "pending"
+        "status": "modified_awaiting_checks"
       },
       {
         "key": "pet:pet-camera-without-too-many-subscriptions",
@@ -39692,6 +39727,37 @@
       "evidence": "source03-local-acceptance.json",
       "deployed": false,
       "wholeTaskComplete": false
+    },
+    {
+      "at": "2026-10-25T23:02:30.194Z",
+      "type": "owner-release-policy-change",
+      "currentAuthorizedRelease": "SOURCE-03 / 7db7935277c7608342a2a82695d77ac86905fa61",
+      "subsequentBatches": "local remediation and acceptance only until all remaining work passes; then one combined release",
+      "wholeTaskComplete": false
+    },
+    {
+      "at": "2026-10-25T23:36:20.175Z",
+      "batch": "SOURCE-03",
+      "type": "production-release",
+      "status": "published_verified",
+      "sourceRevision": "7db7935277c7608342a2a82695d77ac86905fa61",
+      "batchesPassedLocal": 61,
+      "batchesTotal": 111,
+      "publicPassed": 57,
+      "evidence": "source03-release-receipt.json",
+      "wholeTaskComplete": false
+    },
+    {
+      "at": "2026-10-25T23:36:20.175Z",
+      "batch": "SOURCE-04",
+      "status": "modified_awaiting_checks",
+      "guides": 6,
+      "sections": 36,
+      "tables": 6,
+      "relatedProductNotes": 2,
+      "deployed": false,
+      "releasePolicy": "hold all remaining work for final combined release",
+      "wholeTaskComplete": false
     }
   ],
   "newIssues": [
@@ -42646,7 +42712,11 @@
         "source03-editorial-review.json",
         "check-guide-decision-purchase.mjs",
         "source03-local-acceptance.json"
-      ]
+      ],
+      "publication": {
+        "state": "published_verified",
+        "evidence": "source03-release-receipt.json"
+      }
     },
     {
       "id": "poe-power-guide-misclassified-as-ups",
@@ -42658,7 +42728,36 @@
         "source03-local-acceptance.json",
         "source03-desktop-poe-vs-poe-plus-for-cameras-access-points.png"
       ],
-      "globalAcceptanceStillOpen": true
+      "globalAcceptanceStillOpen": true,
+      "publication": {
+        "state": "published_verified",
+        "evidence": "source03-release-receipt.json"
+      }
+    },
+    {
+      "id": "smarthome-control-guide-unrelated-next-reading",
+      "status": "pending",
+      "ownerBatch": "P0-02",
+      "finding": "Public Blind Tilt guide related-reading cards all lead to leak-sensor and shutoff topics through a broad automation category. They are valid pages but weak continuations for blind mechanism, bridges and offline-control decisions.",
+      "requiredFix": "Review task-specific related reading on every source guide and affected product page; prefer relevant existing coverage and keep an honest empty state when no useful next task exists. Do not add unrelated links just to fill four cards.",
+      "evidence": [
+        "source03-public-desktop-purchase.png",
+        "https://smarthome.madabase.com/guides/smart-blind-motor-hub-local-control-guide"
+      ],
+      "releasePolicy": "Local correction with all remaining work; no separate production release after SOURCE-03."
+    },
+    {
+      "id": "mw05-included-adapter-warning-coverage",
+      "ownerBatch": "SOURCE-04",
+      "status": "modified_awaiting_checks",
+      "problem": "Current manufacturer warns that included18V adapters in affected MW05 packages must not power other ordinary USB-C devices. Historical generic USB-C wording omitted the package boundary and warning.",
+      "resolution": "Guide and MW05 product note now explain scope and preserve no-buy/unknown package checks. Do not label every warmer unusable, infer all regional package contents, or claim a fresh Amazon inspection.",
+      "evidence": [
+        "https://support.momcozy.com/article/59403741998617",
+        "source04-editorial-review-in-progress.json"
+      ],
+      "requiredBeforeFinalCombinedRelease": true,
+      "deployed": false
     }
   ],
   "merchantRegionPreference": {
@@ -42672,21 +42771,22 @@
     "proofScope": "Amazon page content only; full native Chrome screenshot rejected and not saved in that attempt because it could include unrelated tabs"
   },
   "releaseAuthorization": {
-    "state": "authorized_completed_scope_release_then_continue_batches",
+    "state": "authorized_source03_then_hold_remaining_until_complete",
     "providedAt": "2026-10-22T13:39:06.235311+00:00",
     "access": "New Workbench link supplied in the current conversation; access token is not copied into repository artifacts.",
     "scope": "Finish all remaining remediation batches and quality checks, then publish through the supplied Workbench. Verify production pages, commerce paths and measurement and prepare rollback.",
-    "currentState": "User explicitly authorized the additive production schema patch; applied and verified. Source revision 27a538d deployed, 594 unique public URLs and 8 static assets passed. Test restored at original directory; Google accepted 8 sitemap submissions and IndexNow accepted 583 URLs. Remaining batches continue; no whole-ledger completion claim.",
-    "gate": "User confirms continuing all remaining batches, careful per-page verification, publication after each batch passes acceptance, and proactive periodic progress reports. Retain rollback and post-release verification; no whole-task completion until the entire ledger passes.",
+    "currentState": "SOURCE-03 source revision 7db7935277c7608342a2a82695d77ac86905fa61 published and publicly verified. Subsequent batches must remain local until all remaining remediation and final acceptance pass.",
+    "gate": "Finish the already accepted and pushed SOURCE-03 release. After it, do not publish subsequent batches individually. Complete all remaining remediation and whole-site final acceptance locally, then publish the remaining work together.",
     "previousGate": "Publication requires completion and acceptance of the entire remediation ledger, including remaining batches and newly discovered issues. Completion of any individual batch does not authorize publication.",
-    "updatedAt": "2026-10-25T13:16:03.083Z",
+    "updatedAt": "2026-10-25T23:02:30.193Z",
     "userInstruction": "我感觉你现在经常卡住，如果不行的话你就把当前做完的先发布，然后我们再继续按批次处理",
     "schemaAuthorization": {
       "authorized": true,
       "scope": "Nullable AffiliateClick.market, CommerceEvent table, three indexes, and recording in the existing Prisma migration registry",
       "evidence": "completed-scope-db-schema-applied.json"
     },
-    "productionReceipt": "completed-release-receipt.json",
-    "latestUserInstruction": "继续处理剩下的批次，注意质量，每个页面都认真核验，验收通过后分批发布，定期反馈整体进度，不用等我催。"
+    "productionReceipt": "source03-release-receipt.json",
+    "latestUserInstruction": "这次发布完你就不要每次都发布了，剩下的搞完一起发布吧",
+    "currentReleaseCompleted": true
   }
 }

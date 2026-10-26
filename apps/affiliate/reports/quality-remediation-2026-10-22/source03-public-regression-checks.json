@@ -1,0 +1,852 @@
+{
+  "checkedAt": "2026-10-25T23:07:53.030Z",
+  "sourceRevision": "7db7935277c7608342a2a82695d77ac86905fa61",
+  "scope": "Plain public canonical GETs; no cache bypass, merchant link traversal or actual visitor click. QA referrer ensures no event persistence.",
+  "total": 59,
+  "passed": 44,
+  "rows": [
+    {
+      "app": "affiliate",
+      "kind": "critical",
+      "host": "network.madabase.com",
+      "path": "/guides/travel-router-vpn-guide",
+      "canonical": "https://network.madabase.com/guides/travel-router-vpn-guide",
+      "markers": [
+        "Beryl"
+      ],
+      "status": 200,
+      "cache": "UPDATING",
+      "bytes": 73571,
+      "errors": [
+        "release"
+      ],
+      "passed": false
+    },
+    {
+      "app": "affiliate",
+      "kind": "critical",
+      "host": "network.madabase.com",
+      "path": "/guides/poe-switch-for-home-cameras-and-access-points-guide",
+      "canonical": "https://network.madabase.com/guides/poe-switch-for-home-cameras-and-access-points-guide",
+      "markers": [
+        "B076HZFY3F"
+      ],
+      "status": 200,
+      "cache": "UPDATING",
+      "bytes": 78371,
+      "errors": [
+        "release"
+      ],
+      "passed": false
+    },
+    {
+      "app": "affiliate",
+      "kind": "critical",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/small-home-office-setup-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/small-home-office-setup-guide",
+      "markers": [
+        "Choose the first change"
+      ],
+      "status": 200,
+      "cache": "MISS",
+      "bytes": 68488,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "critical",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/office-printer-stands-buying-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/office-printer-stands-buying-guide",
+      "markers": [
+        "fit-worksheet"
+      ],
+      "status": 200,
+      "cache": "MISS",
+      "bytes": 72968,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "critical",
+      "host": "network.madabase.com",
+      "path": "/guides/moca-2-5-vs-ethernet-run-guide",
+      "canonical": "https://network.madabase.com/guides/moca-2-5-vs-ethernet-run-guide",
+      "markers": [
+        "ScreenBeam"
+      ],
+      "status": 200,
+      "cache": "UPDATING",
+      "bytes": 77849,
+      "errors": [
+        "release"
+      ],
+      "passed": false
+    },
+    {
+      "app": "affiliate",
+      "kind": "critical",
+      "host": "network.madabase.com",
+      "path": "/guides/usb-c-ethernet-adapter-guide",
+      "canonical": "https://network.madabase.com/guides/usb-c-ethernet-adapter-guide",
+      "markers": [
+        "Ethernet"
+      ],
+      "status": 200,
+      "cache": "UPDATING",
+      "bytes": 70402,
+      "errors": [
+        "release"
+      ],
+      "passed": false
+    },
+    {
+      "app": "affiliate",
+      "kind": "critical",
+      "host": "baby.madabase.com",
+      "path": "/guides/toddler-learning-towers-buying-guide",
+      "canonical": "https://baby.madabase.com/guides/toddler-learning-towers-buying-guide",
+      "markers": [
+        "Toddler Learning Towers: Recall, Stability & Counter Fit"
+      ],
+      "status": 200,
+      "cache": "UPDATING",
+      "bytes": 65756,
+      "errors": [
+        "release"
+      ],
+      "passed": false
+    },
+    {
+      "app": "affiliate",
+      "kind": "critical",
+      "host": "pets.madabase.com",
+      "path": "/guides/wet-food-automatic-feeders-buying-guide",
+      "canonical": "https://pets.madabase.com/guides/wet-food-automatic-feeders-buying-guide",
+      "markers": [
+        "Wet-Food Feeder Guide: Cooling, Meal Timing & Care"
+      ],
+      "status": 200,
+      "cache": "UPDATING",
+      "bytes": 59759,
+      "errors": [
+        "release"
+      ],
+      "passed": false
+    },
+    {
+      "app": "affiliate",
+      "kind": "critical",
+      "host": "costumes.madabase.com",
+      "path": "/guides/masks-and-masquerade-buying-guide",
+      "canonical": "https://costumes.madabase.com/guides/masks-and-masquerade-buying-guide",
+      "markers": [
+        "mask"
+      ],
+      "status": 200,
+      "cache": "UPDATING",
+      "bytes": 87464,
+      "errors": [
+        "release"
+      ],
+      "passed": false
+    },
+    {
+      "app": "affiliate",
+      "kind": "critical",
+      "host": "costumes.madabase.com",
+      "path": "/guides/historical-theatrical-costumes-buying-guide",
+      "canonical": "https://costumes.madabase.com/guides/historical-theatrical-costumes-buying-guide",
+      "markers": [
+        "1920"
+      ],
+      "status": 200,
+      "cache": "UPDATING",
+      "bytes": 90568,
+      "errors": [
+        "release"
+      ],
+      "passed": false
+    },
+    {
+      "app": "affiliate",
+      "kind": "critical",
+      "host": "costumes.madabase.com",
+      "path": "/products/polar-bear-mascot-i-a__ns",
+      "canonical": "https://costumes.madabase.com/products/polar-bear-mascot-i-a__ns",
+      "markers": [
+        "Selected purchase",
+        "45452097880226"
+      ],
+      "status": 200,
+      "cache": "BYPASS",
+      "bytes": 71217,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "critical",
+      "host": "costumes.madabase.com",
+      "path": "/products/cali-blonde-marilyn-starlet-wig-lvklnhr",
+      "canonical": "https://costumes.madabase.com/products/cali-blonde-marilyn-starlet-wig-lvklnhr",
+      "markers": [
+        "Selected option unavailable when checked"
+      ],
+      "status": 200,
+      "cache": "BYPASS",
+      "bytes": 74288,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "critical",
+      "host": "costumes.madabase.com",
+      "path": "/products/harry-potter-hufflepuff-child-robe-zlyr8ok",
+      "canonical": "https://costumes.madabase.com/products/harry-potter-hufflepuff-child-robe-zlyr8ok",
+      "markers": [
+        "Resolve the selected option first",
+        "Ravenclaw"
+      ],
+      "status": 200,
+      "cache": "BYPASS",
+      "bytes": 65201,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "critical",
+      "host": "network.madabase.com",
+      "path": "/guides/managed-vs-unmanaged-poe-switch-home-guide",
+      "canonical": "https://network.madabase.com/guides/managed-vs-unmanaged-poe-switch-home-guide",
+      "markers": [
+        "Managed vs Unmanaged PoE: Camera VLAN and Power Checks",
+        "October 25, 2026"
+      ],
+      "status": 200,
+      "cache": "HIT",
+      "bytes": 81746,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "critical",
+      "host": "network.madabase.com",
+      "path": "/guides/poe-vs-poe-plus-for-cameras-access-points",
+      "canonical": "https://network.madabase.com/guides/poe-vs-poe-plus-for-cameras-access-points",
+      "markers": [
+        "PoE vs PoE+: Camera and Access Point Power Checks",
+        "October 25, 2026"
+      ],
+      "status": 200,
+      "cache": "HIT",
+      "bytes": 79269,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "critical",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-garage-door-controller-compatibility-hub-offline-guide",
+      "canonical": "https://smarthome.madabase.com/guides/smart-garage-door-controller-compatibility-hub-offline-guide",
+      "markers": [
+        "Garage Door Controllers: Opener Fit, Hubs and Offline Use",
+        "October 25, 2026"
+      ],
+      "status": 200,
+      "cache": "HIT",
+      "bytes": 81612,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "critical",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-blind-motor-hub-local-control-guide",
+      "canonical": "https://smarthome.madabase.com/guides/smart-blind-motor-hub-local-control-guide",
+      "markers": [
+        "Blind Tilt: Fit, Matter Hubs and Offline Control",
+        "October 25, 2026"
+      ],
+      "status": 200,
+      "cache": "HIT",
+      "bytes": 81269,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "critical",
+      "host": "smarthome.madabase.com",
+      "path": "/reviews/meross-msg100-homekit-garage-door-opener",
+      "canonical": "https://smarthome.madabase.com/reviews/meross-msg100-homekit-garage-door-opener",
+      "markers": [
+        "Meross MSG100 Guide: Compatibility, Hub & Offline Use",
+        "October 25, 2026"
+      ],
+      "status": 200,
+      "cache": "HIT",
+      "bytes": 95379,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "critical",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/whole-home-energy-monitor-cloud-local-installation-guide",
+      "canonical": "https://smarthome.madabase.com/guides/whole-home-energy-monitor-cloud-local-installation-guide",
+      "markers": [
+        "Vue 3 Energy Monitor: Panel Fit, Cloud and Offline Data",
+        "October 25, 2026"
+      ],
+      "status": 200,
+      "cache": "HIT",
+      "bytes": 78198,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "critical",
+      "host": "baby.madabase.com",
+      "path": "/guides/baby-registry-essentials-guide",
+      "canonical": "https://baby.madabase.com/guides/baby-registry-essentials-guide",
+      "markers": [
+        "Baby Registry Essentials: What to Prepare and What Can Wait",
+        "October 25, 2026"
+      ],
+      "status": 200,
+      "cache": "HIT",
+      "bytes": 65077,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "critical",
+      "host": "smarthome.madabase.com",
+      "path": "/reviews/emporia-vue-3-home-energy-monitor",
+      "canonical": "https://smarthome.madabase.com/reviews/emporia-vue-3-home-energy-monitor",
+      "markers": [
+        "Emporia Vue 3 Guide: Panel Fit, Cloud & Offline Data",
+        "October 25, 2026"
+      ],
+      "status": 200,
+      "cache": "HIT",
+      "bytes": 80596,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "critical",
+      "host": "smarthome.madabase.com",
+      "path": "/reviews/switchbot-blind-tilt",
+      "canonical": "https://smarthome.madabase.com/reviews/switchbot-blind-tilt",
+      "markers": [
+        "SwitchBot Blind Tilt Guide: Hub, Matter & Offline Use",
+        "October 25, 2026"
+      ],
+      "status": 200,
+      "cache": "HIT",
+      "bytes": 85340,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "main",
+      "kind": "critical",
+      "host": "madabase.com",
+      "path": "/search?q=Ethernet",
+      "markers": [
+        "Ethernet"
+      ],
+      "status": 200,
+      "cache": "DYNAMIC",
+      "bytes": 94575,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "main",
+      "kind": "critical",
+      "host": "madabase.com",
+      "path": "/research",
+      "markers": [
+        "What changed"
+      ],
+      "status": 200,
+      "cache": "DYNAMIC",
+      "bytes": 178484,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "root",
+      "host": "smarthome.madabase.com",
+      "path": "/",
+      "markers": [],
+      "status": 200,
+      "cache": "HIT",
+      "bytes": 170354,
+      "errors": [
+        "release"
+      ],
+      "passed": false
+    },
+    {
+      "app": "affiliate",
+      "kind": "root",
+      "host": "network.madabase.com",
+      "path": "/",
+      "markers": [],
+      "status": 200,
+      "cache": "UPDATING",
+      "bytes": 170833,
+      "errors": [
+        "release"
+      ],
+      "passed": false
+    },
+    {
+      "app": "main",
+      "kind": "critical",
+      "host": "madabase.com",
+      "path": "/search?q=PoE",
+      "markers": [
+        "PoE vs PoE+: Camera and Access Point Power Checks",
+        "Managed vs Unmanaged PoE: Camera VLAN and Power Checks"
+      ],
+      "status": 200,
+      "cache": "DYNAMIC",
+      "bytes": 65869,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "sitemap",
+      "host": "network.madabase.com",
+      "path": "/sitemap.xml",
+      "markers": [],
+      "status": 200,
+      "cache": "MISS",
+      "bytes": 36032,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "sitemap",
+      "host": "smarthome.madabase.com",
+      "path": "/sitemap.xml",
+      "markers": [],
+      "status": 200,
+      "cache": "MISS",
+      "bytes": 52201,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "root",
+      "host": "baby.madabase.com",
+      "path": "/",
+      "markers": [],
+      "status": 200,
+      "cache": "UPDATING",
+      "bytes": 164803,
+      "errors": [
+        "release"
+      ],
+      "passed": false
+    },
+    {
+      "app": "affiliate",
+      "kind": "sitemap",
+      "host": "homeoffice.madabase.com",
+      "path": "/sitemap.xml",
+      "markers": [],
+      "status": 200,
+      "cache": "MISS",
+      "bytes": 51149,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "root",
+      "host": "homeoffice.madabase.com",
+      "path": "/",
+      "markers": [],
+      "status": 200,
+      "cache": "UPDATING",
+      "bytes": 171705,
+      "errors": [
+        "release"
+      ],
+      "passed": false
+    },
+    {
+      "app": "affiliate",
+      "kind": "sitemap",
+      "host": "baby.madabase.com",
+      "path": "/sitemap.xml",
+      "markers": [],
+      "status": 200,
+      "cache": "MISS",
+      "bytes": 47707,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "sitemap",
+      "host": "pets.madabase.com",
+      "path": "/sitemap.xml",
+      "markers": [],
+      "status": 200,
+      "cache": "MISS",
+      "bytes": 38063,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "root",
+      "host": "style.madabase.com",
+      "path": "/",
+      "markers": [],
+      "status": 200,
+      "cache": "UPDATING",
+      "bytes": 109056,
+      "errors": [
+        "release"
+      ],
+      "passed": false
+    },
+    {
+      "app": "affiliate",
+      "kind": "root",
+      "host": "pets.madabase.com",
+      "path": "/",
+      "markers": [],
+      "status": 200,
+      "cache": "UPDATING",
+      "bytes": 163643,
+      "errors": [
+        "release"
+      ],
+      "passed": false
+    },
+    {
+      "app": "main",
+      "kind": "root",
+      "host": "madabase.com",
+      "path": "/",
+      "markers": [],
+      "status": 200,
+      "cache": "DYNAMIC",
+      "bytes": 104917,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "sitemap",
+      "host": "style.madabase.com",
+      "path": "/sitemap.xml",
+      "markers": [],
+      "status": 200,
+      "cache": "MISS",
+      "bytes": 14179,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "sitemap",
+      "host": "costumes.madabase.com",
+      "path": "/sitemap.xml",
+      "markers": [],
+      "status": 200,
+      "cache": "MISS",
+      "bytes": 20124,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "root",
+      "host": "costumes.madabase.com",
+      "path": "/",
+      "markers": [],
+      "status": 200,
+      "cache": "UPDATING",
+      "bytes": 126654,
+      "errors": [
+        "release"
+      ],
+      "passed": false
+    },
+    {
+      "app": "main",
+      "kind": "retained-static",
+      "host": "madabase.com",
+      "path": "/_next/static/Iq00kNhqTzjuVLPv6W8td/_buildManifest.js",
+      "markers": [],
+      "status": 200,
+      "cache": "HIT",
+      "bytes": 1087,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "main",
+      "kind": "sitemap",
+      "host": "madabase.com",
+      "path": "/sitemap.xml",
+      "markers": [],
+      "status": 200,
+      "cache": "DYNAMIC",
+      "bytes": 2229,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "main",
+      "kind": "retained-static",
+      "host": "madabase.com",
+      "path": "/_next/static/CiD44KyBP9lnIuLctNl91/_buildManifest.js",
+      "markers": [],
+      "status": 200,
+      "cache": "HIT",
+      "bytes": 1087,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "main",
+      "kind": "retained-static",
+      "host": "madabase.com",
+      "path": "/_next/static/css/22901a4fbe21c888.css",
+      "markers": [],
+      "status": 200,
+      "cache": "HIT",
+      "bytes": 27248,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "retained-static",
+      "host": "homeoffice.madabase.com",
+      "path": "/_next/static/1afVJjHJWofFX8QHoUIS4/_buildManifest.js",
+      "markers": [],
+      "status": 200,
+      "cache": "HIT",
+      "bytes": 1356,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "main",
+      "kind": "retained-static",
+      "host": "madabase.com",
+      "path": "/_next/static/css/c165edf0c9485afa.css",
+      "markers": [],
+      "status": 200,
+      "cache": "HIT",
+      "bytes": 28174,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "retained-static",
+      "host": "homeoffice.madabase.com",
+      "path": "/_next/static/css/2a5fcae10e2b85ff.css",
+      "markers": [],
+      "status": 200,
+      "cache": "HIT",
+      "bytes": 42845,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "retained-static",
+      "host": "homeoffice.madabase.com",
+      "path": "/_next/static/chunks/817-6cc85ba514a72c7e.js",
+      "markers": [],
+      "status": 200,
+      "cache": "HIT",
+      "bytes": 11265,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "current-static",
+      "host": "homeoffice.madabase.com",
+      "path": "/_next/static/chunks/webpack-dbddb8e4135c4c28.js",
+      "markers": [],
+      "status": 200,
+      "cache": "HIT",
+      "bytes": 3404,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "current-static",
+      "host": "homeoffice.madabase.com",
+      "path": "/_next/static/css/f622efb3abdc0e3d.css",
+      "markers": [],
+      "status": 200,
+      "cache": "HIT",
+      "bytes": 45561,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "retained-static",
+      "host": "homeoffice.madabase.com",
+      "path": "/_next/static/css/f622efb3abdc0e3d.css",
+      "markers": [],
+      "status": 200,
+      "cache": "HIT",
+      "bytes": 45561,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "current-static",
+      "host": "homeoffice.madabase.com",
+      "path": "/_next/static/chunks/87c73c54-24122e7b92478d00.js",
+      "markers": [],
+      "status": 200,
+      "cache": "HIT",
+      "bytes": 173019,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "current-static",
+      "host": "homeoffice.madabase.com",
+      "path": "/_next/static/chunks/main-app-a95f53a759d7fe46.js",
+      "markers": [],
+      "status": 200,
+      "cache": "HIT",
+      "bytes": 554,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "main",
+      "kind": "current-static",
+      "host": "madabase.com",
+      "path": "/_next/static/css/c165edf0c9485afa.css",
+      "markers": [],
+      "status": 200,
+      "cache": "HIT",
+      "bytes": 28174,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "main",
+      "kind": "current-static",
+      "host": "madabase.com",
+      "path": "/_next/static/chunks/webpack-dbddb8e4135c4c28.js",
+      "markers": [],
+      "status": 200,
+      "cache": "MISS",
+      "bytes": 3404,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "current-static",
+      "host": "homeoffice.madabase.com",
+      "path": "/_next/static/chunks/18-536e344942e9442c.js",
+      "markers": [],
+      "status": 200,
+      "cache": "HIT",
+      "bytes": 173629,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "main",
+      "kind": "current-static",
+      "host": "madabase.com",
+      "path": "/_next/static/chunks/main-app-a95f53a759d7fe46.js",
+      "markers": [],
+      "status": 200,
+      "cache": "MISS",
+      "bytes": 554,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "main",
+      "kind": "current-static",
+      "host": "madabase.com",
+      "path": "/_next/static/chunks/18-536e344942e9442c.js",
+      "markers": [],
+      "status": 200,
+      "cache": "MISS",
+      "bytes": 173629,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "main",
+      "kind": "current-static",
+      "host": "madabase.com",
+      "path": "/_next/static/chunks/87c73c54-24122e7b92478d00.js",
+      "markers": [],
+      "status": 200,
+      "cache": "MISS",
+      "bytes": 173019,
+      "errors": [],
+      "passed": true
+    }
+  ],
+  "events": [
+    {
+      "releaseId": "qszA6RQt-xptrOY48SXsk",
+      "status": 200,
+      "body": {
+        "ok": true,
+        "persisted": false,
+        "validated": true,
+        "reason": "qa_visit"
+      }
+    },
+    {
+      "releaseId": "stale-source03-release",
+      "status": 400,
+      "body": {
+        "ok": false,
+        "reason": "invalid_event"
+      }
+    }
+  ],
+  "eventsPassed": true
+}

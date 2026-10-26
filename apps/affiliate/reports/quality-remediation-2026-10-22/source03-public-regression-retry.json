@@ -1,0 +1,236 @@
+{
+  "checkedAt": "2026-10-25T23:09:17.800Z",
+  "sourceRevision": "7db7935277c7608342a2a82695d77ac86905fa61",
+  "scope": "Plain public canonical GETs; no cache bypass, merchant link traversal or actual visitor click. QA referrer ensures no event persistence.",
+  "total": 15,
+  "passed": 14,
+  "rows": [
+    {
+      "app": "affiliate",
+      "kind": "critical",
+      "host": "network.madabase.com",
+      "path": "/guides/poe-switch-for-home-cameras-and-access-points-guide",
+      "canonical": "https://network.madabase.com/guides/poe-switch-for-home-cameras-and-access-points-guide",
+      "markers": [
+        "B076HZFY3F"
+      ],
+      "status": 200,
+      "cache": "HIT",
+      "bytes": 78451,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "critical",
+      "host": "network.madabase.com",
+      "path": "/guides/travel-router-vpn-guide",
+      "canonical": "https://network.madabase.com/guides/travel-router-vpn-guide",
+      "markers": [
+        "Beryl"
+      ],
+      "status": 200,
+      "cache": "HIT",
+      "bytes": 73571,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "critical",
+      "host": "network.madabase.com",
+      "path": "/guides/moca-2-5-vs-ethernet-run-guide",
+      "canonical": "https://network.madabase.com/guides/moca-2-5-vs-ethernet-run-guide",
+      "markers": [
+        "ScreenBeam"
+      ],
+      "status": 200,
+      "cache": "HIT",
+      "bytes": 77849,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "critical",
+      "host": "network.madabase.com",
+      "path": "/guides/usb-c-ethernet-adapter-guide",
+      "canonical": "https://network.madabase.com/guides/usb-c-ethernet-adapter-guide",
+      "markers": [
+        "Ethernet"
+      ],
+      "status": 200,
+      "cache": "HIT",
+      "bytes": 70402,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "critical",
+      "host": "pets.madabase.com",
+      "path": "/guides/wet-food-automatic-feeders-buying-guide",
+      "canonical": "https://pets.madabase.com/guides/wet-food-automatic-feeders-buying-guide",
+      "markers": [
+        "Wet-Food Feeder Guide: Cooling, Meal Timing & Care"
+      ],
+      "status": 200,
+      "cache": "HIT",
+      "bytes": 59759,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "critical",
+      "host": "costumes.madabase.com",
+      "path": "/guides/masks-and-masquerade-buying-guide",
+      "canonical": "https://costumes.madabase.com/guides/masks-and-masquerade-buying-guide",
+      "markers": [
+        "mask"
+      ],
+      "status": 200,
+      "cache": "HIT",
+      "bytes": 87464,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "critical",
+      "host": "baby.madabase.com",
+      "path": "/guides/toddler-learning-towers-buying-guide",
+      "canonical": "https://baby.madabase.com/guides/toddler-learning-towers-buying-guide",
+      "markers": [
+        "Toddler Learning Towers: Recall, Stability & Counter Fit"
+      ],
+      "status": 200,
+      "cache": "HIT",
+      "bytes": 65756,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "critical",
+      "host": "costumes.madabase.com",
+      "path": "/guides/historical-theatrical-costumes-buying-guide",
+      "canonical": "https://costumes.madabase.com/guides/historical-theatrical-costumes-buying-guide",
+      "markers": [
+        "1920"
+      ],
+      "status": 200,
+      "cache": "HIT",
+      "bytes": 90568,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "root",
+      "host": "network.madabase.com",
+      "path": "/",
+      "markers": [],
+      "status": 200,
+      "cache": "HIT",
+      "bytes": 170833,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "root",
+      "host": "baby.madabase.com",
+      "path": "/",
+      "markers": [],
+      "status": 200,
+      "cache": "HIT",
+      "bytes": 165043,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "root",
+      "host": "smarthome.madabase.com",
+      "path": "/",
+      "markers": [],
+      "status": 200,
+      "cache": "HIT",
+      "bytes": 170354,
+      "errors": [
+        "release"
+      ],
+      "passed": false
+    },
+    {
+      "app": "affiliate",
+      "kind": "root",
+      "host": "homeoffice.madabase.com",
+      "path": "/",
+      "markers": [],
+      "status": 200,
+      "cache": "HIT",
+      "bytes": 171705,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "root",
+      "host": "costumes.madabase.com",
+      "path": "/",
+      "markers": [],
+      "status": 200,
+      "cache": "HIT",
+      "bytes": 126654,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "root",
+      "host": "pets.madabase.com",
+      "path": "/",
+      "markers": [],
+      "status": 200,
+      "cache": "HIT",
+      "bytes": 163643,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "app": "affiliate",
+      "kind": "root",
+      "host": "style.madabase.com",
+      "path": "/",
+      "markers": [],
+      "status": 200,
+      "cache": "HIT",
+      "bytes": 109056,
+      "errors": [],
+      "passed": true
+    }
+  ],
+  "events": [
+    {
+      "releaseId": "qszA6RQt-xptrOY48SXsk",
+      "status": 200,
+      "body": {
+        "ok": true,
+        "persisted": false,
+        "validated": true,
+        "reason": "qa_visit"
+      }
+    },
+    {
+      "releaseId": "stale-source03-release",
+      "status": 400,
+      "body": {
+        "ok": false,
+        "reason": "invalid_event"
+      }
+    }
+  ],
+  "eventsPassed": true
+}

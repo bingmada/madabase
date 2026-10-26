@@ -1,0 +1,26 @@
+{
+  "property": "sc-domain:madabase.com",
+  "rows": [
+    {
+      "sitemap": "https://network.madabase.com/sitemap.xml",
+      "status": "Sitemap submitted successfully",
+      "at": "2026-10-25T23:13:38.046Z"
+    },
+    {
+      "sitemap": "https://smarthome.madabase.com/sitemap.xml",
+      "status": "Sitemap submitted successfully",
+      "at": "2026-10-25T23:13:44.592Z"
+    },
+    {
+      "sitemap": "https://baby.madabase.com/sitemap.xml",
+      "status": "Sitemap submitted successfully",
+      "at": "2026-10-25T23:14:04.770Z"
+    },
+    {
+      "sitemap": "https://madabase.com/sitemap.xml",
+      "status": "Sitemap submitted successfully",
+      "at": "2026-10-25T23:14:11.324Z"
+    }
+  ],
+  "scope": "Submission accepted; not proof of recrawl, indexing or ranking improvement."
+}

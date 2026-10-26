@@ -1,0 +1,74 @@
+{
+  "revision": "7db7935277c7608342a2a82695d77ac86905fa61",
+  "status": "origin-verified",
+  "testWorkingDirectory": "/srv/madabase-test/releases/local-20260820-next15523",
+  "apps": {
+    "main": {
+      "old": "/srv/madabase-main/releases/remediation-20261025-27a538d7a40e83c062e4d6ac2d74e63786187fe9",
+      "new": "/srv/madabase-main/releases/source03-20261025-7db7935277c7608342a2a82695d77ac86905fa61",
+      "sha256": "a80849f2044c03e1e4e2291857c4c07da7d5dcb31a2951d4a9567e864f0d126c",
+      "retainedAssets": 39
+    },
+    "affiliate": {
+      "old": "/srv/madabase-affiliate/releases/remediation-20261025-27a538d7a40e83c062e4d6ac2d74e63786187fe9",
+      "new": "/srv/madabase-affiliate/releases/source03-20261025-7db7935277c7608342a2a82695d77ac86905fa61",
+      "sha256": "9d1fce715594aa095b70e1ee2e63d9d840dccb435a8f2bce6b9312566f5f914a",
+      "retainedAssets": 97
+    }
+  },
+  "startedAt": 1792969500.2422416,
+  "forecast": {
+    "capacity": {
+      "passed": false,
+      "availableMiB": 232.625,
+      "sliceHeadroomMiB": "unlimited",
+      "requiredMiB": 704,
+      "candidateMiB": 512,
+      "reserveMiB": 192,
+      "pressureAvg10": 0.19,
+      "reasons": [
+        "Insufficient MemAvailable; swap does not count as candidate capacity."
+      ]
+    },
+    "reclaimedAnonymousMiB": 579.7734375,
+    "projectedMiB": 812.3984375,
+    "requiredMiB": 768
+  },
+  "testPaused": true,
+  "testRestored": true,
+  "gates": {
+    "main": {
+      "passed": true,
+      "availableMiB": 799.7109375,
+      "sliceHeadroomMiB": "unlimited",
+      "requiredMiB": 704,
+      "candidateMiB": 512,
+      "reserveMiB": 192,
+      "pressureAvg10": 0.19,
+      "reasons": []
+    },
+    "affiliate": {
+      "passed": true,
+      "availableMiB": 725.125,
+      "sliceHeadroomMiB": "unlimited",
+      "requiredMiB": 704,
+      "candidateMiB": 512,
+      "reserveMiB": 192,
+      "pressureAvg10": 0.19,
+      "reasons": []
+    }
+  },
+  "verification": {
+    "main": {
+      "criticalPages": 3,
+      "hostSitemaps": 1,
+      "buildId": "T10-x-IHJC96qrCe2vOr6"
+    },
+    "affiliate": {
+      "criticalPages": 22,
+      "hostSitemaps": 7,
+      "buildId": "qszA6RQt-xptrOY48SXsk"
+    }
+  },
+  "completedAt": 1792969521.3937201
+}
