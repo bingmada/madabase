@@ -19,7 +19,7 @@ const dryRun = process.argv.includes("--dry-run");
 const probeOnly = process.argv.includes("--probe");
 const marketArgument = process.argv.find((argument) => argument.startsWith("--market="));
 const requestedMarket = marketArgument?.slice("--market=".length) ?? "us";
-const supportedSites = new Set(["network", "smarthome", "homeoffice", "baby", "pet", "style"]);
+const supportedSites = new Set(["network", "smarthome", "homeoffice", "baby", "pet",]);
 
 const marketConfigs = {
   us: { marketplace: "www.amazon.com", language: "en_US" },

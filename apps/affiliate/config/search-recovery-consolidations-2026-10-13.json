@@ -46,19 +46,6 @@
         "direct-attach-copper-cables-compatibility-and-fit-guide",
         "direct-attach-copper-cables-ownership-cost-and-maintenance"
       ]
-    },
-    {
-      "site": "costume",
-      "familySlug": "props-and-animatronics",
-      "targetRole": "comparison",
-      "targetSlug": "props-and-animatronics-vs-alternatives",
-      "mergeMode": "curated",
-      "selectionEvidence": "No current page-row demand signal across four siblings. Static-versus-animated display selection is one user job; preserve movement/space, power/environment, activation/audience, storage and arrival checks on the comparison rather than repeating them in buying, fit and ownership templates.",
-      "sourceSlugs": [
-        "props-and-animatronics-buying-guide",
-        "props-and-animatronics-compatibility-and-fit-guide",
-        "props-and-animatronics-ownership-cost-and-maintenance"
-      ]
     }
   ],
   "requestIndexing": false

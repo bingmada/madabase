@@ -4,7 +4,7 @@ import { SearchForm, SearchResultLink } from "../../../shared/SearchControls";
 import searchIndex from "@/lib/search-index.json";
 import { pageMetadata } from "@/lib/seo";
 export const metadata = { ...pageMetadata("Search Madabase publications", "Find exact models, setup questions and comparisons across the active Madabase publications.", "/search"), robots: { index: false, follow: true } };
-const siteNames: Record<string, string> = { main: "Madabase editorial", homeoffice: "Home office", network: "Home networking", smarthome: "Smart home", baby: "Baby gear", pet: "Pet care", style: "Style", costume: "Costumes" };
+const siteNames: Record<string, string> = { main: "Madabase editorial", homeoffice: "Home office", network: "Home networking", smarthome: "Smart home", baby: "Baby gear", pet: "Pet care", };
 export default async function SearchPage({ searchParams }: { searchParams: Promise<Record<string, string | string[] | undefined>> }) {
   const params = await searchParams; const query = typeof params.q === "string" ? params.q.trim().slice(0,120) : "";
   const site = typeof params.site === "string" ? params.site : ""; const kind = typeof params.kind === "string" ? params.kind : "";

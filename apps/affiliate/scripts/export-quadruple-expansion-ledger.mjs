@@ -38,7 +38,6 @@ const domains = {
   homeoffice: "https://homeoffice.madabase.com",
   baby: "https://baby.madabase.com",
   pet: "https://pets.madabase.com",
-  costume: "https://costumes.madabase.com",
 };
 
 function csv(value) {
@@ -65,7 +64,7 @@ const rows = expansion.quadrupleExpansionGuides.map((guide) => {
   const family = familyBySlug.get(`${guide.site}:${guide.familySlug}`);
   if (!family) throw new Error(`Missing family for ${guide.site}:${guide.slug}`);
   const amazonProduct = amazonProductByFamily.get(`${guide.site}:${guide.familySlug}`);
-  if (guide.site !== "costume" && !amazonProduct) throw new Error(`Missing Amazon product for ${guide.site}:${guide.familySlug}`);
+  if (!amazonProduct) throw new Error(`Missing Amazon product for ${guide.site}:${guide.familySlug}`);
   return {
     site: guide.site,
     family: guide.familySlug,
@@ -84,8 +83,8 @@ const rows = expansion.quadrupleExpansionGuides.map((guide) => {
     coreWordCount: wordCount(guide),
     originalEditorialImage: guide.image ?? "",
     communityEvidence: guide.communityEvidence?.[0]?.url ?? "not used: no sufficiently relevant public discussion retained",
-    merchantSource: guide.site === "costume" ? "Costume PostgreSQL/CJ catalog" : "Amazon US",
-    merchantStatus: guide.site === "costume" ? "CTA requires active verified database offer" : "exact listing verified",
+    merchantSource: "Amazon US",
+    merchantStatus: "exact listing verified",
     asin: amazonProduct?.asin ?? "",
     productTitle: amazonProduct?.title ?? "database product selected at request time",
     productVerifiedAt: amazonProduct?.verifiedAt ?? "database availability checked at request time",
@@ -114,7 +113,6 @@ const markdown = [
   "",
   "The exact URL-level ledger is stored in `docs/affiliate-quadruple-expansion-ledger-2026-08-09.csv`.",
   "",
-  "Costume database products are a separate additive production cohort. Its working catalog may grow only by one 1,000-product step per sync; only products that pass exact link, image authorization, availability, identity, and editorial checks become indexable.",
   "",
 ].join("\n");
 

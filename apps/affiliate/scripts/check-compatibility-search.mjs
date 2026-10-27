@@ -122,6 +122,6 @@ if (activeUpgradeOffers().length) {
   assert.equal(isPublishedCommerceClick("homeoffice", verifiedOffer.slug, "eBay"), false);
 }
 const mainIndex = JSON.parse(fs.readFileSync(new URL("../../main/lib/search-index.json",import.meta.url),"utf8"));
-const publicationHosts = {main:"madabase.com",homeoffice:"homeoffice.madabase.com",network:"network.madabase.com",smarthome:"smarthome.madabase.com",baby:"baby.madabase.com",pet:"pets.madabase.com",style:"style.madabase.com",costume:"costumes.madabase.com"};
+const publicationHosts = {main:"madabase.com",homeoffice:"homeoffice.madabase.com",network:"network.madabase.com",smarthome:"smarthome.madabase.com",baby:"baby.madabase.com",pet:"pets.madabase.com",};
 check("Cross-site search publication labels match every destination",mainIndex.every((item)=>new URL(item.href).host===publicationHosts[item.site]),true);
 console.log(JSON.stringify({passed:true,engineAndIntegrityChecks:checks,queryCases:queryResults,sourceRecords:compatibilitySources.length,modelGuides:miniPcProfiles.filter((model)=>model.guide).length,documentedModelProfiles:miniPcProfiles.length,exactAmazonOfferChecks:7},null,2));

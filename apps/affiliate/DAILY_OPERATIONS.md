@@ -130,3 +130,5 @@ Bing：not-due 或结果
 ```
 
 最后同步更新 `docs/affiliate-growth-state.json`、`apps/affiliate/config/current-operations-handoff.json` 和本文件中的日期闸门；历史记录不回写成最新事实。
+
+- 2026-10-27 owner decision supersedes the earlier no-shutdown rule: remove Tools and Style code, exclusive data and public discovery in the final combined release. Until that release, local removal is not a production shutdown. Preserve all retained-site quality gates; retirement is not content acceptance.

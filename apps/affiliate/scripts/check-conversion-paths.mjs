@@ -24,8 +24,6 @@ const siteHosts = {
   homeoffice: "homeoffice.madabase.com",
   baby: "baby.madabase.com",
   pet: "pets.madabase.com",
-  style: "style.madabase.com",
-  costume: "costumes.madabase.com",
 };
 const siteTrackingIds = {
   network: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_NETWORK ?? "madanetwork-20",
@@ -33,13 +31,12 @@ const siteTrackingIds = {
   homeoffice: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_HOMEOFFICE ?? "madaoffice-20",
   baby: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_BABY ?? "madababy-20",
   pet: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_PET ?? "madapets-20",
-  style: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_STYLE ?? "madastyle-20",
 };
 const criticalFirstViewportAsins = new Map([
   ["https://baby.madabase.com/guides/ergobaby-omni-breeze-positions-by-age", "B0931ZY7DK"],
 ]);
 const requestedSites = siteArgument
-  ? siteArgument.slice("--site=".length).split(",").flatMap((site) => site === "amazon" ? Object.keys(siteHosts).filter((key) => key !== "costume") : site)
+  ? siteArgument.slice("--site=".length).split(",").flatMap((site) => site === "amazon" ? Object.keys(siteHosts) : site)
   : Object.keys(siteHosts);
 const selectedSiteHosts = Object.fromEntries(
   Object.entries(siteHosts).filter(([site]) => requestedSites.includes(site)),
@@ -154,8 +151,6 @@ function expandMarketRoutes(urls) {
   for (const value of urls) {
     const url = new URL(value);
     if (!contentPathPattern.test(url.pathname)) continue;
-    // Costume has no country editions. Do not invent 404 routes for this audit.
-    if (url.hostname === siteHosts.costume) continue;
     for (const market of marketPrefixes) {
       expanded.push(normalizeUrl(new URL(`/${market}${url.pathname}`, url.origin).toString()));
     }
@@ -245,7 +240,7 @@ async function inspectPage(publicUrl) {
       ? firstH1CloseIndex + firstContentImageOffset
       : -1;
     const beforeFirstImage = firstCommerceIndex >= 0 && (firstImageIndex < 0 || firstCommerceIndex < firstImageIndex);
-    const requirePreImageCta = !(site === "style" && pageKind(url.pathname) === "review")
+    const requirePreImageCta = true
       && pageKind(url.pathname) !== "catalog-product";
 
     if (response.status !== 200) errors.push(`HTTP ${response.status}`);

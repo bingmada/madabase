@@ -94,7 +94,7 @@ for (const filename of sourceFiles) {
   visit(sourceFile);
 }
 
-const validSites = new Set(["network", "smarthome", "homeoffice", "baby", "pet", "style", "costume"]);
+const validSites = new Set(["network", "smarthome", "homeoffice", "baby", "pet",]);
 const validKinds = new Set(["product", "guide", "roundup"]);
 const targetKeys = new Set();
 const normalizedQueries = new Set();
@@ -158,8 +158,6 @@ if (runtimeOrigin) {
     homeoffice: "homeoffice.madabase.com",
     baby: "baby.madabase.com",
     pet: "pets.madabase.com",
-    style: "style.madabase.com",
-    costume: "costumes.madabase.com",
   };
   const pathFor = (opportunity) => ({
     product: `/reviews/${opportunity.slug}`,

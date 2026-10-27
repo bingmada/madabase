@@ -522,175 +522,212 @@ export const august2026ExpansionProducts: Product[] = [
     offers: [{ merchant: "Amazon US", url: amazonUrl("B09H17F8F3"), label: "Check Baby Brezza Smart Warmer on Amazon", priceNote: "Confirm ASIN B09H17F8F3, current Bluetooth model, US voltage, measuring cup, seller, live price, and availability." }],
   },
   {
-    site: "pet",
-    slug: "neakasa-m1-plus-self-cleaning-litter-box",
-    asin: "B0CSKBWBF6",
-    amazonTitle: "Neakasa M1 Plus Open-Top Self-Cleaning Cat Litter Box",
-    amazonDetailUrl: "https://www.amazon.com/dp/B0CSKBWBF6",
-    seoTitle: "Neakasa M1 Plus Guide: Open Top, Cat Size & PuraMax 2",
-    updatedAt,
-    evidenceMode: "official-spec",
-    researchNote:
-      "We have not tested cat acceptance, odor, sensor behavior, app accuracy, or long-term reliability. This guide uses Neakasa's current M1 Plus specifications and the exact Amazon listing. Keep a conventional litter box available during transition and supervise the new routine.",
-    name: "Neakasa M1 Plus Self-Cleaning Litter Box",
-    brand: "Neakasa",
-    category: "home-care",
-    image: "/images/affiliate/pet-neakasa-m1-litter-box-editorial.webp",
-    imageAlt: "Editorial image of an open-top automatic litter box with a pull-out waste drawer",
-    summary:
-      "An open-top automatic litter box with a 7.17L litter bed, 11.23L waste bin, infrared and weight sensors, app monitoring, pull-and-wrap waste handling, and a listed 2.2-to-33-pound cat range.",
-    verdict:
-      "M1 Plus is the stronger candidate for large, tall, or enclosure-averse cats because the open top reduces the tunnel-like entry of enclosed robots. PuraMax 2 provides a more contained body and broader listed clumping-litter options, but its opening and age/weight rules need closer checking.",
-    whyItMatters:
-      "Automatic scooping is useful only when the cat accepts the box, sensors detect the cat reliably, the litter clumps correctly, waste is inspected, and a person maintains the machine.",
-    bestFor: "Larger or enclosure-wary cats that are comfortable with an open-top box",
-    priceBand: "$$$$",
-    rating: 4.2,
-    scores: [
-      { label: "Open access", value: 9 },
-      { label: "Large-cat fit", value: 9 },
-      { label: "Litter flexibility", value: 6 },
+    "site": "pet",
+    "slug": "neakasa-m1-plus-self-cleaning-litter-box",
+    "asin": "B0CSKBWBF6",
+    "amazonTitle": "Neakasa M1 Plus Open-Top Self-Cleaning Cat Litter Box",
+    "amazonDetailUrl": "https://www.amazon.com/dp/B0CSKBWBF6",
+    "seoTitle": "Neakasa M1 Plus: Size, Version and Cat Fit Checks",
+    "updatedAt": "October 27, 2026",
+    "evidenceMode": "official-spec",
+    "researchNote": "Current M1 Plus product/FAQ text and all 22 pages of the linked original M1 family manual were reviewed October 26, 2026. They differ in capacity, liner and warranty wording. We have not tested cat fit, odor, sensors or durability, and exact Plus manual applicability remains unknown.",
+    "name": "Neakasa M1 Plus Self-Cleaning Litter Box",
+    "brand": "Neakasa",
+    "category": "home-care",
+    "image": "/images/affiliate/pet-m1-plus-version-editorial.svg",
+    "imageAlt": "Editorial decision diagram: current M1 Plus catalog and older M1 manual are separate references",
+    "summary": "An open-top automatic-litter-box reference. The current M1 Plus page and its linked older M1 manual differ, so the received version and applicable instructions matter more than a generic M1 label.",
+    "verdict": "Consider an M1 Plus only after confirming the exact received version, cat eligibility, stable space, applicable manual and the litter/liner package. Open-top construction is not proof that every large cat fits or that cleaning is risk free. Keep a suitable conventional box when acceptance or documentation is unresolved.",
+    "whyItMatters": "Consider an M1 Plus only after confirming the exact received version, cat eligibility, stable space, applicable manual and the litter/liner package. Open-top construction is not proof that every large cat fits or that cleaning is risk free. Keep a suitable conventional box when acceptance or documentation is unresolved.",
+    "bestFor": "An eligible cat that accepts an open-top machine, with confirmed Plus instructions and practical cleaning space",
+    "priceBand": "$$$$",
+    "rating": 0,
+    "scores": [],
+    "pros": [
+      "Open-top layout provides an alternative to an enclosed chamber",
+      "Current Plus documentation identifies its own capacities and sensor arrangement",
+      "A pull-out drawer can be evaluated against the available service space"
     ],
-    pros: [
-      "Open top can feel less confining and provides a large visible entrance",
-      "Listed for cats from 2.2 to 33 pounds",
-      "Large litter and waste capacities with app usage monitoring",
+    "cons": [
+      "Original M1 instructions are not automatically exact M1 Plus instructions",
+      "Cat acceptance, actual working room and cleaning access need separate checks",
+      "Sensor count and marketing waste duration do not establish safe unattended use"
     ],
-    cons: [
-      "Open design can allow more visible litter scatter",
-      "Requires clumping or scoopable litter and excludes several non-clumping formats",
-      "App records and automatic cycles do not replace checking output, waste bin, and cat behavior",
-    ],
-    specs: {
-      ASIN: "B0CSKBWBF6",
-      Model: "M1 Plus current listing",
-      Design: "Open-top rotating litter bed",
-      "Cat range": "2.2–33lb listed",
-      "Litter capacity": "7.17L",
-      "Waste bin": "11.23L",
-      Sensors: "6 pairs of infrared sensors plus 4 weight sensors listed",
-      Dimensions: "20.67 × 23.26 × 20.2in listed",
+    "specs": {
+      "Historical ASIN": "B0CSKBWBF6",
+      "Version boundary": "Current M1 Plus page; received revision not reverified",
+      "Design": "Open top with a rotating litter bed",
+      "Current Plus catalog capacities": "7.17 L litter / 11.23 L waste; not original M1 manual figures",
+      "Current Plus catalog sensors": "6 infrared pairs plus 4 weight sensors; not an outcome test",
+      "Manual match": "Linked document identifies original PS0120/M1; exact Plus applicability unresolved",
+      "Warranty": "Current Plus terms and older manual differ; check originating seller and region",
+      "Historical listed dimensions": "20.67 × 23.26 × 20.2 in; exact Plus revision unconfirmed, not service clearance"
     },
-    evidence: [
-      "Confirm ASIN B0CSKBWBF6 and that the selected listing says M1 Plus, including color, mat, bags, seller, and warranty",
-      "Use only a supported clumping or scoopable litter and confirm granule guidance before filling",
-      "Introduce gradually with the automatic cycle disabled, retain a conventional box, and monitor acceptance",
-      "Inspect every cycle, waste, stool and urine changes, sensors, liner, seals, and moving parts regularly",
+    "evidence": [
+      "Check the received Plus model and applicable instructions before applying original M1 limits",
+      "Do not present an open top or sensor count as a safety or cat-comfort guarantee",
+      "The current Plus page and older manual disagree on some version-specific figures and terms",
+      "A historical ASIN is not a new seller, stock, warranty or returns observation"
     ],
-    editorialSections: [
+    "editorialSections": [
       {
-        heading: "The open top is the main difference",
-        body: "M1 Plus does not make the cat enter a circular tunnel. That can be easier for large or cautious cats, but it can also expose more litter scatter and requires enough open space above and around the rotating bed.",
+        "heading": "Confirm which M1 version would arrive",
+        "body": "The current manufacturer page is headed M1 Plus and describes changes from original M1. Its manual link leads to an original M1 family document. That mismatch matters: do not silently combine capacities, accessory rules or warranty periods into a single certified specification. Identify the received unit and its applicable instructions before setup."
       },
       {
-        heading: "The listing is now M1 Plus",
-        body: "ASIN B0CSKBWBF6 previously appeared under M1 naming and now resolves to M1 Plus. Confirm the current title, sensor set, leak protection, mat, bag quantity, seller, and warranty rather than relying on an older review or accessory bundle.",
+        "heading": "Measure the full footprint and service space",
+        "body": "The saved listing used 20.67 × 23.26 × 20.2 inches, but this review has not confirmed that figure against the exact received Plus revision. Treat it as a historical listing claim, not a fit guarantee. Confirm dimensions and their order, entry height, chamber movement and room to remove the drawer and cleaning parts. A cabinet opening that fits an idle outer box may still be unsuitable during operation or service."
       },
       {
-        heading: "Automation does not replace daily observation",
-        body: "A usage log can show visits, not whether a cat is comfortable or healthy. Check the cat, litter, waste, sensor areas, bin, liner, and machine behavior. Contact a veterinarian when elimination behavior or output changes; do not diagnose from an app chart.",
+        "heading": "Evaluate the cat and working space separately",
+        "body": "Check the actual cat’s eligibility and entry against the applicable instructions, then leave stable floor space and access for removing and cleaning parts. An open top may be a preferred layout, but we have not measured usable space for a particular cat. A step, mat or larger advertised capacity does not fix ineligibility or rejection. Keep an ordinary box available."
       },
       {
-        heading: "Who should skip it",
-        body: "Skip M1 Plus when the cat rejects moving boxes, uses unsupported litter, needs a very low step without an accessory, sprays above the open rim, or the household cannot keep a backup box and maintain the machine.",
+        "heading": "Buy only accessories confirmed for the received revision",
+        "body": "Record the included litter, liner, mat and any odor accessory. The original manual illustrates how bag seating and wrinkles can affect a sensor, but its dedicated-accessory wording does not settle every Plus liner choice. Do not borrow a generic-bag permission or an old granule limit without confirming the exact instructions."
       },
+      {
+        "heading": "Choose a cleaning routine rather than a hands-free promise",
+        "body": "Waste capacity is not permission to leave a cat unattended for a marketing number of days. Plan inspections, waste removal, approved cleaning and complete drying. The original document illustrates electrical-base and chamber handling limits, but use the received Plus instructions for the actual procedure. Stop and use the backup box when model documentation or operation is unclear."
+      }
     ],
-    alternatives: [
-      "Choose PETKIT PuraMax 2 for a more enclosed form and its listed clumping-litter compatibility.",
-      "Choose a large conventional box when reliability, observation, and simple cleaning matter more than automatic scooping.",
+    "alternatives": [
+      "petkit-puramax-2-self-cleaning-litter-box"
     ],
-    compareSlugs: ["petkit-puramax-2-self-cleaning-litter-box", "chomchom-roller-pet-hair-remover"],
-    sources: [
-      { name: "Neakasa M1 Plus", url: "https://neakasa.com/products/neakasa-m1-cat-litter-box", note: "Official current model name, capacities, cat range, dimensions, sensor, litter, app, and bundle information." },
-      { name: "Neakasa M1 Plus Amazon listing", url: "https://www.amazon.com/dp/B0CSKBWBF6", note: "Exact US ASIN and current M1 Plus title, seller, color, mat, and bag bundle check." },
+    "compareSlugs": [
+      "petkit-puramax-2-self-cleaning-litter-box"
     ],
-    offers: [{ merchant: "Amazon US", url: amazonUrl("B0CSKBWBF6"), label: "Check Neakasa M1 Plus on Amazon", priceNote: "Confirm ASIN B0CSKBWBF6, current M1 Plus title, color, mat, bag quantity, seller, live price, and availability." }],
+    "sources": [
+      {
+        "name": "Neakasa: current M1 Plus product and FAQ",
+        "url": "https://neakasa.com/products/neakasa-m1-cat-litter-box",
+        "note": "Current Plus page links an older M1 family manual. Capacity, liner and warranty wording differ; confirm the received Plus instructions before applying the older document."
+      },
+      {
+        "name": "Neakasa: original M1 family manual linked by the Plus page",
+        "url": "https://cdn.shopify.com/s/files/1/0600/4736/0185/files/Neakasa_M1_Manual.pdf?v=1706772466",
+        "note": "All 22 pages read. Original PS0120/M1 scope, not confirmed exact Plus applicability; preserve differing capacities, bag rules and warranty terms."
+      },
+      {
+        "name": "Historical Amazon listing reference",
+        "url": "https://www.amazon.com/dp/B0CSKBWBF6",
+        "note": "Historical selected listing identity only. The October26 documentation review is not a fresh10001 availability, seller, delivery or returns check."
+      }
+    ],
+    "offers": [
+      {
+        "merchant": "Amazon US",
+        "url": "https://www.amazon.com/dp/B0CSKBWBF6?tag=madapets-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+        "label": "Check Neakasa M1 Plus Self-Cleaning Litter Box listing",
+        "priceNote": "Confirm ASIN B0CSKBWBF6, selected model/variant, included parts, seller, current price, delivery and returns."
+      }
+    ],
+    "purchaseAlternatives": [],
+    "purchaseCheck": "Pause if the applicable Plus manual or the cat’s eligibility is unresolved. Confirm B0CSKBWBF6, the selected M1 Plus rather than original M1 revision, received label/manual, litter and liner compatibility, included mat/bag quantity and seller terms. The old family manual does not certify this exact Plus ASIN."
   },
   {
-    site: "pet",
-    slug: "petkit-puramax-2-self-cleaning-litter-box",
-    asin: "B0DFYF2D7D",
-    amazonTitle: "PETKIT PuraMax 2 Automatic Self-Cleaning Cat Litter Box",
-    amazonDetailUrl: "https://www.amazon.com/dp/B0DFYF2D7D",
-    seoTitle: "PETKIT PuraMax 2 Guide: Cat Limits, Litter & Neakasa",
-    updatedAt,
-    evidenceMode: "official-spec",
-    researchNote:
-      "We have not tested cat acceptance, odor, leak resistance, sensor behavior, app accuracy, or long-term reliability. This guide uses PETKIT's current product page, official P9902 manual, and exact Amazon listing. Retain a conventional box and supervise the transition.",
-    name: "PETKIT PuraMax 2 Self-Cleaning Litter Box",
-    brand: "PETKIT",
-    category: "home-care",
-    image: "/images/affiliate/pet-petkit-puramax-2-editorial.webp",
-    imageAlt: "Editorial image of an enclosed automatic litter box with a large circular entrance",
-    summary:
-      "An enclosed P9902 automatic litter box with a 76L interior, 7L waste bin, low entrance, 11 listed safety sensors, app controls, a sealed rotating cylinder, and support for several clumping-litter types.",
-    verdict:
-      "PuraMax 2 is the more contained litter-robot option when the cat accepts an enclosed opening and the household wants a sealed cylinder plus multiple clumping-litter choices. Neakasa M1 Plus is easier to consider for a large or enclosure-wary cat that benefits from an open top.",
-    whyItMatters:
-      "Safety sensors reduce risk only when the machine is assembled, placed, cleaned, and operated exactly as instructed and the cat meets the age and weight guidance.",
-    bestFor: "Adult cats that accept an enclosed box and supported clumping litter",
-    priceBand: "$$$$",
-    rating: 4.2,
-    scores: [
-      { label: "Contained design", value: 9 },
-      { label: "Litter compatibility", value: 8 },
-      { label: "Large-cat openness", value: 6 },
+    "site": "pet",
+    "slug": "petkit-puramax-2-self-cleaning-litter-box",
+    "asin": "B0DFYF2D7D",
+    "amazonTitle": "PETKIT PuraMax 2 Automatic Self-Cleaning Cat Litter Box",
+    "amazonDetailUrl": "https://www.amazon.com/dp/B0DFYF2D7D",
+    "seoTitle": "PETKIT PuraMax 2: Cat Limits, Bundles and Cleaning Checks",
+    "updatedAt": "October 27, 2026",
+    "evidenceMode": "official-spec",
+    "researchNote": "All 29 pages of PETKIT’s PURA MAX 2 English V1.1 manual, including diagrams, were reviewed October 26, 2026. No cat, sensor, odor or cleaning-performance trial was performed. The older bundle URL now redirects to Max3; that is not proof of discontinuation or permission to transfer new specs.",
+    "name": "PETKIT PuraMax 2 Self-Cleaning Litter Box",
+    "brand": "PETKIT",
+    "category": "home-care",
+    "image": "/images/affiliate/pet-puramax2-eligibility-editorial.svg",
+    "imageAlt": "Editorial decision diagram: PuraMax 2 age, weight and premium-package boundaries",
+    "summary": "An enclosed automatic-litter-box reference whose reviewed PURA MAX 2 manual sets overall cat eligibility and distinguishes basic from premium accessories. Kitten Mode is not a workaround for an ineligible cat.",
+    "verdict": "Consider the exact PuraMax 2 only after the cat meets the applicable age and weight guidance, accepts the machine, and the owner can maintain sensor space, correct litter and cleaning. The reviewed manual recommends against use below six months or 1.5 kg. Keep a suitable conventional box during growth, transition or any unresolved condition.",
+    "whyItMatters": "Consider the exact PuraMax 2 only after the cat meets the applicable age and weight guidance, accepts the machine, and the owner can maintain sensor space, correct litter and cleaning. The reviewed manual recommends against use below six months or 1.5 kg. Keep a suitable conventional box during growth, transition or any unresolved condition.",
+    "bestFor": "An eligible cat and household able to maintain the exact PuraMax 2 setup, consumables and cleaning routine",
+    "priceBand": "$$$$",
+    "rating": 0,
+    "scores": [],
+    "pros": [
+      "The reviewed manual specifies setup and cleaning by component",
+      "Separate sifter and bundle descriptions help identify required consumables",
+      "Manual cleaning options are documented for eligible use, without an automatic exemption for kittens"
     ],
-    pros: [
-      "Sealed rotating cylinder and contained front opening",
-      "Supports tofu, bentonite, clay, and mixed clumping litters per PETKIT",
-      "App controls, usage logs, and eleven listed safety sensors",
+    "cons": [
+      "Not recommended below the manual’s overall age or weight guidance",
+      "Smart Spray is premium-package specific and separate from the N50 module",
+      "Approach space, sensor settings, liner seating and complete drying require attention"
     ],
-    cons: [
-      "Manual does not recommend use for cats younger than six months or under 1.5kg",
-      "Enclosed entrance may not suit every large or cautious cat",
-      "Deodorizer, spray, bags, litter, cleaning, and replacement parts add recurring work and cost",
-    ],
-    specs: {
-      ASIN: "B0DFYF2D7D",
-      Model: "P9902 / T4-2-A-N50 PuraMax 2",
-      Design: "Enclosed rotating cylinder with open entrance during rotation",
-      "Cat guidance": "Older than 6 months and at least 1.5kg per manual",
-      Interior: "76L listed",
-      "Waste bin": "7L listed",
-      Sensors: "11 high-precision safety sensors listed",
-      Dimensions: "24.41 × 21.18 × 21.73in listed",
+    "specs": {
+      "Historical ASIN": "B0DFYF2D7D",
+      "Document reviewed": "PURA MAX 2 English V1.1, March 5, 2025; name/revision required",
+      "Cat guidance": "Older than 6 months; not recommended under 1.5 kg per reviewed manual",
+      "Dimensions in reviewed manual": "620×538×552mm /24.41×21.18×21.73in",
+      "Rated input": "12 V DC, 2 A in reviewed manual; match regional supplied adapter",
+      "Network": "Manual setup excludes 5 GHz; follow applicable app instructions",
+      "Package boundary": "Basic versus premium; Smart Spray premium-only",
+      "Current offer and revision": "Not freshly verified in this documentation review"
     },
-    evidence: [
-      "Confirm ASIN B0DFYF2D7D, PuraMax 2 rather than the original PuraMax, bundle, seller, voltage, and warranty",
-      "Follow the manual's minimum age and weight guidance; use manual operation if the cat does not qualify",
-      "Use a supported clumping litter and select the correct sifter and app settings",
-      "Keep a conventional box, introduce gradually, and inspect waste, sensors, cylinder, liner, entrance, and moving parts",
+    "evidence": [
+      "Do not recommend manual operation as a workaround below 6 months or 1.5 kg",
+      "Smart Spray inclusion must be checked separately from the N50 odor module",
+      "Use the correct sifter and litter dimensions, flat liner and clear sensor approach",
+      "Match the document by product name and revision; P9902 also occurs in older family documents"
     ],
-    editorialSections: [
+    "editorialSections": [
       {
-        heading: "Age and weight are hard gates",
-        body: "PETKIT's manual says cats younger than six months and cats under 1.5kg are not recommended to use the automatic function. Do not substitute an Amazon bullet or app setting for the current manual, and keep manual scooping available during growth or transition.",
+        "heading": "Use the overall cat limits before selecting a mode",
+        "body": "The reviewed manual’s general guidance recommends against this product for cats younger than six months or under 1.5 kg. Its Kitten Mode section disables automatic and scheduled cleaning and describes manual control, but does not explicitly waive those overall limits. Do not present manual operation as permission to use an ineligible cat. Keep an appropriate conventional box during growth or transition."
       },
       {
-        heading: "PuraMax 2 is not the original PuraMax",
-        body: "Closely related PuraMax listings and accessory bundles remain online. Confirm PuraMax 2, ASIN B0DFYF2D7D, model/bundle identity, sealed cylinder, included deodorizer or spray, mat, bags, seller, and warranty before comparing price.",
+        "heading": "Check the exact PuraMax 2 package and document",
+        "body": "Match the received product name and manual revision, not P9902 alone, because that code also appears in older documents. Basic and premium instructions share the reviewed manual, with Smart Spray marked premium-only. A current old-bundle URL redirects to Max3, which is a separate catalog identity; no Max3 feature, warranty or availability is transferred here."
       },
       {
-        heading: "Litter compatibility is broader but still bounded",
-        body: "PETKIT lists tofu, bentonite, clay, and mixed clumping litter. The litter still needs to clump and sift correctly, and the selected sifter and settings must match. Do not use a litter merely because its material name appears compatible.",
+        "heading": "Resolve the consumables and clear the approach",
+        "body": "Identify the installed sifter and follow its litter-granule instructions. Keep the liner flat and the drawer correctly latched. The manual illustrates a clear zone in front of the approach sensors; a mat or step must not obstruct it. N50 and spray refills are separate items. Do not infer required accessories from a large bundle picture."
       },
       {
-        heading: "Who should skip it",
-        body: "Skip PuraMax 2 for an under-age or under-weight cat, a cat that rejects enclosed boxes, unsupported litter, a home without room for gradual introduction and a backup box, or anyone unwilling to inspect and deep-clean a complex machine.",
+        "heading": "Do not infer safety from sensor count or a setting name",
+        "body": "The manual describes a Continuous Rotation option that does not stop merely because a cat approaches. This page does not recommend enabling it or claim a sensor count guarantees an outcome. Follow the received instructions and stop operation for an unresolved fault, interference or unsuitable animal response rather than bypassing detection."
       },
+      {
+        "heading": "Maintain each part as instructed and dry completely",
+        "body": "Disconnect power for maintenance. The reviewed manual distinguishes washable parts from a base that must not be rinsed or soaked, and gives special limits for the litter pad. Reassemble only when the applicable parts are fully dry and correctly seated. Odor modules and app logs do not replace waste removal, inspection or a familiar backup box."
+      }
     ],
-    alternatives: [
-      "Choose Neakasa M1 Plus when an open top and larger visible entry are more important than enclosure.",
-      "Choose a conventional litter box when simple inspection, cleaning, and failure-proof access are the priority.",
+    "alternatives": [
+      "neakasa-m1-plus-self-cleaning-litter-box"
     ],
-    compareSlugs: ["neakasa-m1-plus-self-cleaning-litter-box", "chomchom-roller-pet-hair-remover"],
-    sources: [
-      { name: "PETKIT PuraMax 2", url: "https://www.petkit.com/products/petkit-puramax-2", note: "Official current interior, waste bin, litter, sensor, app, cylinder, and bundle information." },
-      { name: "PETKIT PuraMax 2 manual", url: "https://instructions.petkit.com/App%20Manual/T4-2/T4-2_User%20Manual_EN_V1.1_250305_%20.pdf", note: "Official P9902 dimensions, power, network, age, weight, safety, operation, and maintenance guidance." },
-      { name: "PETKIT PuraMax 2 Amazon listing", url: "https://www.amazon.com/dp/B0DFYF2D7D", note: "Exact US ASIN, P9902 bundle identity, title, seller, and included-parts check." },
+    "compareSlugs": [
+      "neakasa-m1-plus-self-cleaning-litter-box"
     ],
-    offers: [{ merchant: "Amazon US", url: amazonUrl("B0DFYF2D7D"), label: "Check PETKIT PuraMax 2 on Amazon", priceNote: "Confirm ASIN B0DFYF2D7D, PuraMax 2 model and bundle, seller, US power adapter, live price, and availability." }],
+    "sources": [
+      {
+        "name": "PETKIT: PURA MAX 2 English user manual, V1.1",
+        "url": "https://instructions.petkit.com/App%20Manual/T4-2/T4-2_User%20Manual_EN_V1.1_250305_%20.pdf",
+        "note": "All 29 PDF pages, including diagrams, reviewed. Product name and revision matter: P9902 alone also appears on older documents. Premium-only spray, liners, litter and age/weight boundaries are model specific."
+      },
+      {
+        "name": "PETKIT: old bundle URL now redirects to Max3",
+        "url": "https://www.petkit.com/products/puramax-2-ultimate-bundles",
+        "note": "Redirect observed October 26, 2026. Target is a different product, not evidence for PuraMax2 specifications, stock or end-of-life."
+      },
+      {
+        "name": "Historical Amazon listing reference",
+        "url": "https://www.amazon.com/dp/B0DFYF2D7D",
+        "note": "Historical selected listing identity only. The October26 documentation review is not a fresh10001 availability, seller, delivery or returns check."
+      }
+    ],
+    "offers": [
+      {
+        "merchant": "Amazon US",
+        "url": "https://www.amazon.com/dp/B0DFYF2D7D?tag=madapets-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+        "label": "Check PETKIT PuraMax 2 Self-Cleaning Litter Box listing",
+        "priceNote": "Confirm ASIN B0DFYF2D7D, selected model/variant, included parts, seller, current price, delivery and returns."
+      }
+    ],
+    "purchaseAlternatives": [],
+    "purchaseCheck": "Consider only for a cat older than six months and at least 1.5 kg under the applicable manual; Kitten Mode does not waive those overall limits. Check B0DFYF2D7D as PuraMax 2, its received product/manual revision, regional adapter, installed sifter and basic/premium package. Confirm Smart Spray separately. A redirected Max3 page or model code P9902 alone does not establish this bundle."
   },
 ];
 

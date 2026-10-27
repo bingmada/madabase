@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 880" role="img" aria-labelledby="title desc">
+<style>text{font-family:Arial,sans-serif;fill:#153d39}.title{font-size:45px;font-weight:700}.sub{font-size:23px;fill:#55716c}.label{font-size:26px;font-weight:700}.small{font-size:22px}.line{fill:none;stroke:#285e57;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.muted{fill:#dcece5;stroke:#5f8b7e;stroke-width:4}.tag{font-size:20px;letter-spacing:2px;font-weight:700;fill:#53746c}</style>
+<rect width="1440" height="880" fill="#f5f7ed"/><circle cx="1370" cy="20" r="260" fill="#e4eddb"/>
+<title id="title">Measure dog-bed sleeping space and room footprint separately</title><desc id="desc">A top-down bolstered bed shows an inner usable rectangle and an outer footprint. Adjacent checks cover the dog at rest, door clearance, and individual cover/liner/foam care.</desc>
+<text x="70" y="95" class="title">One bed, two measurements</text><text x="70" y="140" class="sub">The outer footprint is larger than the usable sleeping area.</text>
+<rect x="70" y="210" width="780" height="535" rx="28" fill="#fff"/>
+<rect x="160" y="292" width="595" height="345" rx="65" fill="#d8e7df" stroke="#285e57" stroke-width="6"/>
+<rect x="224" y="355" width="465" height="220" rx="38" fill="#fff7df" stroke="#a67b38" stroke-dasharray="10 10" stroke-width="4"/>
+<path d="M320 485Q300 420 360 414Q400 380 450 435Q500 420 550 468L590 496Q520 540 445 505Q355 540 320 485Z" class="line"/>
+<path d="M160 265H755M160 250V280M755 250V280" class="line"/><text x="330" y="245" class="small">Outer footprint</text>
+<path d="M224 605H689M224 590V620M689 590V620" fill="none" stroke="#a67b38" stroke-width="4"/><text x="308" y="688" class="label">Usable inner area</text>
+<rect x="900" y="210" width="470" height="535" rx="28" fill="#e0ece7"/>
+<text x="945" y="280" class="label">Before choosing a size</text>
+<text x="945" y="345" class="small">1  Observe the dog at rest</text><text x="945" y="410" class="small">2  Check inner dimensions</text><text x="945" y="475" class="small">3  Tape out the whole bed</text><text x="945" y="540" class="small">4  Keep access routes clear</text>
+<path d="M945 575H1320" stroke="#91b0a2" stroke-width="2"/><text x="945" y="625" class="label">Care is layer-specific</text><text x="945" y="670" class="small">Cover ≠ liner ≠ foam</text>
+<text x="70" y="820" class="tag">MADABASE · EDITORIAL DIAGRAM · NOT A PRODUCT PHOTOGRAPH</text></svg>

@@ -1,43 +1,23 @@
 # Madabase
 
-SSR-first monorepo for SEO-driven tools and future AI products.
-
-## Run locally
+Independent buying research and five focused affiliate publications.
 
 ```bash
 nvm use 20
 npm install
-npm run dev --workspace apps/web
-npm run dev:test
+npm run dev:main
+npm run dev:affiliate
 ```
 
-## Phase 1 scope
+- `apps/main`: Madabase research and cross-site search.
+- `apps/affiliate`: Homeoffice, Network, Smarthome, Baby and Pets.
 
-- Next.js 15 SSR app
-- Path-based i18n (`/en/...`, `/zh/...`)
-- Registry-driven tool pages
-- SEO metadata, sitemap, robots
-- Placeholder ad slots
-- Docker deployment files
+Owner-authorized retirement on October27,2026 removes Tools,Test,Style,
+Wellness and Costumes business code and exclusive local content. The final
+combined release returns410 on their old hosts and paths; robots stays
+crawlable without sitemap discovery. Retained task-specific compatibility
+and planning tools remain available. Baby CJ infrastructure remains active.
 
-## Test subdomain
-
-The interactive test product is a separate Next.js workspace in `apps/test`.
-
-```bash
-npm run dev:test
-npm run build:test
-```
-
-Production URLs and shared authentication are configured with:
-
-```bash
-NEXT_PUBLIC_SITE_URL=https://madabase.com
-NEXT_PUBLIC_TEST_SITE_URL=https://test.madabase.com
-NEXT_PUBLIC_MAIN_SITE_URL=https://madabase.com
-AUTH_COOKIE_DOMAIN=.madabase.com
-```
-
-Point `test.madabase.com` at the test deployment. Both applications use the
-same `DATABASE_URL`; the cookie domain allows the same session to work across
-the root domain and test subdomain.
+Actual production services, host rules and exclusively owned database records
+are cleaned only with the final accepted combined release. Local code/schema
+changes are not evidence of production shutdown or a database transaction.

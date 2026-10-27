@@ -4,8 +4,8 @@ import type { SiteKey } from "./types";
 import type { SearchEntry } from "../../shared/content-search";
 import { reviewedGuideContent } from "./reviewed-guide-content";
 
-export const searchSites: SiteKey[] = ["homeoffice", "network", "smarthome", "baby", "pet", "style", "costume"];
-const hosts: Record<SiteKey, string> = { homeoffice: "homeoffice", network: "network", smarthome: "smarthome", baby: "baby", pet: "pets", style: "style", costume: "costumes" };
+export const searchSites: SiteKey[] = ["homeoffice", "network", "smarthome", "baby", "pet",];
+const hosts: Record<SiteKey, string> = { homeoffice: "homeoffice", network: "network", smarthome: "smarthome", baby: "baby", pet: "pets", };
 export function siteSearchIndex(site: SiteKey): SearchEntry[] {
   const visible = (item: { publicationStatus?: string; discoveryExcluded?: boolean; sitemapExcluded?: boolean }) => item.publicationStatus !== "draft" && !item.discoveryExcluded && !item.sitemapExcluded;
   const result: SearchEntry[] = [

@@ -37,7 +37,6 @@ import {
   commercialExpansionRoundups,
 } from "./commercial-expansion-content";
 import { expansionGuides } from "./expansion-guides";
-import { costumeGuides } from "./costume-content";
 import { cjBabyProducts } from "./cj-baby-content";
 import { cjBabyExpansionProducts } from "./cj-baby-expansion-content";
 import { gscPriorityGuides, gscPriorityProducts, gscPriorityRoundups } from "./gsc-priority-expansion-content";
@@ -75,10 +74,7 @@ import {
   homeofficeDockRoundups,
 } from "./homeoffice-dock-content";
 import { smartHomeGuides, smartHomeProducts, smartHomeRoundups } from "./smarthome-content";
-import { styleCatalogProducts, styleCatalogRoundups } from "./style-catalog-expansion";
-import { styleCatalog50Products, styleCatalog50Roundups } from "./style-catalog-50";
 import { topicClusterGuides, topicClusterTools } from "./topic-cluster-content";
-import { styleGuides, styleProducts, styleRoundups } from "./style-content";
 import {
   verifiedAffiliateBatchGuides,
   verifiedAffiliateBatchProducts,
@@ -107,26 +103,24 @@ export const products: Product[] = [
   {
     site: "pet",
     slug: "petlibro-granary-automatic-cat-feeder",
+    purchaseCheck: "Confirm PLAF103 capacity and bowls, suitable dry food, weighed portions, backup limits and human care. This listing does not promise RFID access or Granary 2 weighing; keep a suitable existing routine.",
     asin: "B0BYD73PHN",
     seoTitle: "PETLIBRO Granary Smart Feeder Guide: Portions, Wi-Fi & Backup Power",
-    updatedAt: "July 28, 2026",
+    updatedAt: "October 26, 2026",
     evidenceMode: "official-spec",
-    researchNote: "We have not tested this feeder ourselves. This guide uses PETLIBRO's current PLAF103 product page, support material, cleaning instructions, portion guidance, and manual; the exact Amazon capacity, bowl configuration, color, included parts, and seller still require a checkout check.",
+    researchNote: "PLAF103 manufacturer product, support, portion and cleaning documents and the complete V3.0 manual reviewed October 26, 2026. No physical dispensing, jam, portion-precision or battery test. Historical ASIN identity does not refresh retailer capacity, bowl configuration, seller, stock or returns; Granary 2 is a separate current comparison.",
     name: "PETLIBRO Granary Smart Cat Feeder",
     brand: "PETLIBRO",
     category: "feeding",
-    image: "/images/affiliate/pet-petlibro-granary-automatic-cat-feeder.webp",
-    summary: "A research-based guide to the current 5L PLAF103 Wi-Fi Granary feeder, including scheduled volume portions, dry-kibble limits, app alerts, battery behavior, cleaning, and the Amazon capacity and bowl-variant checks buyers should make before ordering.",
-    verdict: "The Granary Smart Feeder is worth comparing when a cat or small dog needs repeatable dry-food schedules and remote changes are genuinely useful. It is not a substitute for checking actual food intake, and buyers should confirm the exact capacity because PETLIBRO sells several Granary versions under closely related names.",
+    image: "/images/affiliate/pet-smart-feeder-realistic.webp",
+    imageAlt: "Editorial dry-food feeder scene; not an exact PLAF103 capacity or bowl configuration",
+    summary: "A PLAF103 scheduled dry-food feeder reference. Match the selected capacity and bowls, weigh actual portions, and check the saved schedule, dry-base cleaning and emergency mode before comparing newer Granary 2 features.",
+    verdict: "Compare PLAF103 for timed dry meals when selective access is unnecessary and actual food, portion, schedule and care checks pass. Confirm capacity and bowl configuration separately. Keep suitable existing gear, or compare Granary 2 for a specific weighing need; this link remains the older PLAF103 reference.",
     whyItMatters: "Automatic feeders reduce routine friction only when the selected kibble dispenses consistently, the programmed volume matches the pet's diet, and someone still checks the bowl, hopper, and pet. App control adds convenience, but local schedules and backup-power behavior matter more during an outage.",
     bestFor: "Scheduled dry-food feeding with app control and local backup",
     priceBand: "$",
-    rating: 4.6,
-    scores: [
-      { label: "Portion control", value: 9 },
-      { label: "Cleaning", value: 7 },
-      { label: "Reliability", value: 8 },
-    ],
+    rating: 0,
+    scores: [],
     pros: ["Schedules and feeding history can be managed in the PETLIBRO app", "Supports both 2.4GHz and 5GHz Wi-Fi", "Battery backup continues scheduled meals when normal power is unavailable"],
     cons: ["Dry food only, with a listed 2–15mm kibble range", "Portions are measured by volume and can vary in weight with kibble shape and density", "Wi-Fi and some controls are disabled while operating only on backup batteries"],
     specs: {
@@ -134,7 +128,7 @@ export const products: Product[] = [
       "Model family": "PLAF103 Granary Smart Feeder",
       "Official current PLAF103 capacity": "5L; confirm the Amazon ASIN capacity, single- or dual-bowl variant, color, and seller before checkout",
       Network: "2.4GHz and 5GHz Wi-Fi",
-      Schedules: "Up to 10 meals",
+      Schedules: "Current spec lists up to 10; confirm the selected version and app rather than an older FAQ example",
       Portions: "1–50 portions per meal; about 20mL per portion",
       "Allowed food": "Dry kibble, 2–15mm",
       Power: "5V adapter; 3 alkaline D batteries for backup",
@@ -142,13 +136,13 @@ export const products: Product[] = [
     evidence: [
       "Confirm the selected Amazon variation, capacity, bowl count, and PLAF103 model before checkout",
       "Weigh several real dispenses with the pet's usual kibble instead of treating a volume portion as a fixed calorie amount",
-      "Test the saved schedule and battery switchover before depending on the feeder during a long absence",
+      "Test the saved schedule and battery switchover while someone is present and maintain a human care arrangement for any absence",
       "Inspect the outlet, bowl, food level, and desiccant regularly even when app alerts are enabled",
     ],
     editorialSections: [
       {
         heading: "A note about this guide",
-        body: "This is a research-based buying guide built from PETLIBRO's current Granary Smart Feeder page and support material; it is not a hands-on reliability test. The linked ASIN and the official page can expose different capacity or bowl variants, so the exact selection at checkout controls the specifications you receive.",
+        body: "This document comparison uses the current PLAF103 page and model-specific instructions, not a hands-on reliability test. The historical ASIN and official configuration may differ in capacity or bowls; verify the selected model and supplied parts. The current specification lists up to ten meals, while an older FAQ example says six. Confirm the actual version and app support before depending on a required schedule rather than silently combining conflicting examples.",
       },
       {
         heading: "Check 3L versus 5L before comparing price",
@@ -160,12 +154,13 @@ export const products: Product[] = [
       },
       {
         heading: "What happens during a power or network outage",
-        body: "PETLIBRO lists three alkaline D batteries as emergency backup. Scheduled meals can continue on battery power, but Wi-Fi and some controls are disabled to conserve energy. That makes a tested local schedule valuable, but it does not eliminate the need for a person to check the feeder during a prolonged trip.",
+        body: "The PLAF103 V3.0 manual and support describe three alkaline D batteries for emergency operation: saved meals continue while Wi-Fi, playback and reset controls are disabled. Test the intended schedule, clock and recovery with someone present; no indefinite runtime or normal remote app access is established. Keep human checks for food received and eaten, water, litter and wellbeing even during a short absence. Do not transfer this battery mode to One RFID or Granary 2 revisions.",
       },
       {
         heading: "Cleaning and jam prevention are part of reliability",
-        body: "Use only dry food within the listed 2–15mm range, keep the base and electronics dry, and let washable parts dry completely before reassembly. App alerts for low food or blockage are useful signals, not proof that a meal reached the bowl or that the pet ate it.",
+        body: "Use supported dry food in the listed 2–15mm range. Power off for care. The manual separates removable washable parts from the powered feeder base, which uses a soft dry cloth; do not rinse or wet-wipe the electronics. Only its stainless-steel bowl is listed as dishwasher-safe. Dry washed parts fully before reassembly. Low-food or blockage alerts are signals, not proof that a meal reached the bowl or was eaten.",
       },
+      { heading: "When to compare Granary 2", body: "Granary 2 adds weighing; camera and access features depend on its separate model. Compare those functions only for an actual need. They are not upgrades contained in this PLAF103 ASIN, and the older model is not declared discontinued merely because the new series exists." },
       {
         heading: "Who should skip it",
         body: "Skip this feeder for wet food, very large or irregular kibble, pets that need individual access control, or a household that cannot tolerate app and Wi-Fi setup. A simple non-connected feeder may be better when remote schedule changes and feeding history would go unused.",
@@ -173,6 +168,7 @@ export const products: Product[] = [
     ],
     alternatives: ["Choose a non-Wi-Fi feeder when a local schedule is enough and app setup would add friction.", "Choose an access-controlled or RFID feeder when one pet steals another pet's food.", "Use a slow-feed bowl when eating speed, rather than meal timing, is the main problem."],
     sources: [
+      { name: "PETLIBRO Granary 2 series", url: "https://petlibro.com/products/granary-2-series", note: "Separate newer weighing and model-specific camera/access options; do not transfer their features or power mode to PLAF103." },
       {
         name: "PETLIBRO Granary Smart Feeder product page",
         url: "https://petlibro.com/products/petlibro-5g-wifi-automatic-pet-feeder",
@@ -202,183 +198,330 @@ export const products: Product[] = [
     offers: [{ merchant: "Amazon US", url: "https://amzn.to/3Qj2NaW", label: "Check price on Amazon", priceNote: "Confirm ASIN B0BYD73PHN, PLAF103, capacity, single- or dual-bowl variant, color, included splitter or tray, seller, live price, and availability." }],
   },
   {
-    site: "pet",
-    slug: "catit-flower-cat-water-fountain",
-    asin: "B0146QXOB0",
-    amazonDetailUrl: "https://www.amazon.com/dp/B0146QXOB0",
-    seoTitle: "Catit Flower Fountain Guide: 3L Capacity, Filters & Cleaning",
-    updatedAt: "July 26, 2026",
-    evidenceMode: "official-spec",
-    researchNote: "Research-based model, cleaning, and recurring-filter guide using Catit documentation and the exact Amazon ASIN; this is not a hands-on pump-noise or cat-preference test.",
-    sources: [
-      { name: "Catit Flower Fountain", url: "https://www.catit.com/products/drinking-fountains/flower-fountain/", note: "Official model, dimensions, capacity, flow settings, filter, and water-level-window information." },
-      { name: "Amazon listing B0146QXOB0", url: "https://www.amazon.com/dp/B0146QXOB0", note: "Exact original fountain version, seller, filter bundle, and return terms." },
+    "site": "pet",
+    "slug": "catit-flower-cat-water-fountain",
+    "asin": "B0146QXOB0",
+    "amazonDetailUrl": "https://www.amazon.com/dp/B0146QXOB0",
+    "seoTitle": "Catit Flower Fountain Guide: 3L Capacity, Filters & Cleaning",
+    "updatedAt": "October 26, 2026",
+    "evidenceMode": "official-spec",
+    "researchNote": "Original 43742 manual English text/diagrams and current Catit model/filter support reviewed October 26, 2026. No pump-noise, water-intake, tipping, water-quality or cat-preference test. Historical ASIN identity is not a fresh selected bundle, seller or return observation.",
+    "sources": [
+      {
+        "name": "Catit original Flower product",
+        "url": "https://www.catit.com/products/drinking-fountains/flower-fountain/",
+        "note": "Original green 43742, capacity, dimensions and flow settings; no measured pet outcome."
+      },
+      {
+        "name": "Catit original 43742 manual",
+        "url": "https://www.catit.com/shared/Product-Manual_Catit-Flower-Fountain_NA.pdf",
+        "note": "VER 05/22 English and diagrams reviewed, including maintenance and pump limits."
+      },
+      {
+        "name": "Catit current Triple Action pad",
+        "url": "https://www.catit.com/products/drinking-fountains/flower-fountain-triple-action-filter-pad/",
+        "note": "Current 43738/43739 compatibility; replacement-pack directions remain separate."
+      },
+      {
+        "name": "Catit Flower model support",
+        "url": "https://www.catit.com/help-advice/drinking-fountains/flower-fountain/",
+        "note": "Separate manuals for original, LED and stainless models."
+      },
+      {
+        "name": "Catit placement and care Q&A",
+        "url": "https://www.catit.com/spotlight/catit-flower-fountain-qa/",
+        "note": "Floor placement reference; follow the applicable model manual where maintenance intervals differ."
+      }
     ],
-    editorialSections: [
-      { heading: "Match the original plastic model, not a similar Flower Fountain", body: "Catit sells original, LED, and stainless-steel Flower Fountain variants. ASIN B0146QXOB0 should be checked against the original 3L model, included filter, plug, and selected color before applying any replacement-part advice." },
-      { heading: "Capacity does not replace cleaning", body: "Catit lists a 3L reservoir, three flow settings, and a Triple Action Filter. Refill with fresh water, clean the reservoir and accessible pump parts on the manual's schedule, and keep a backup bowl available while the cat adjusts." },
-      { heading: "Budget for filters and pump access", body: "Recurring filter availability, correct fit, pump disassembly, cable route, outlet placement, and cleaning access determine long-term ownership more than the purchase price. Do not assume every Catit-branded filter fits every fountain generation." },
+    "editorialSections": [
+      {
+        "heading": "Identify original 43742 before applying advice",
+        "body": "The historical ASIN refers to the original green 3 L family, not every Flower-branded product. LED 43747 and stainless 43725 have distinct instructions. Confirm the received model, regional power supply and filter package instead of applying a similar photograph’s parts or washing claims."
+      },
+      {
+        "heading": "Use the manual’s maintenance rather than capacity claims",
+        "body": "The reviewed original manual calls for weekly maintenance and conditional filter replacement. Reservoir volume and a filter do not establish clean-water duration or measured drinking. Unplug before handling, keep the pump submerged during use and follow the exact disassembly and rinsing directions. A separate fresh-water bowl covers introduction and cleaning downtime."
+      },
+      {
+        "heading": "Keep old cartridge and new pad directions separate",
+        "body": "The VER 05/22 manual depicts 43745/43746 cartridge packs. Catit’s current 43738/43739 pad page explicitly lists compatible full-size Flower variants. That does not establish fit for PIXI, Mini or every generic filter, and the new pack’s own instructions matter. Include actual compatible-filter cost instead of treating the initial fountain price as the whole ownership cost."
+      },
+      {
+        "heading": "Keep preference and health outcomes unmeasured",
+        "body": "This page has not observed the cat’s use, pump sound, tipping resistance or water quality. Catit’s placement advice favors a stable floor location, while the exact manual sets the electrical and water-level requirements. Keep the current bowl when it works; a fountain does not diagnose or treat a drinking or health change."
+      }
     ],
-    name: "Catit Flower Cat Water Fountain",
-    brand: "Catit",
-    category: "feeding",
-    image: "/images/affiliate/pet-catit-flower-cat-water-fountain.webp",
-    summary: "A cat water fountain for homes where encouraging drinking matters more than smart tracking.",
-    verdict: "The Catit Flower Fountain is a practical first fountain because it is easy to understand, easy to place, and focused on the one job most cats need: fresher moving water.",
-    whyItMatters: "Moving water may encourage some cats to use a fountain, but the unit still needs to be quiet enough, easy enough to clean, and useful alongside fresh backup water.",
-    bestFor: "Cats that prefer moving water",
-    priceBand: "$",
-    rating: 4.3,
-    scores: [
-      { label: "Cleaning", value: 8 },
-      { label: "Cat appeal", value: 8 },
-      { label: "Counter fit", value: 8 },
+    "name": "Catit Flower Cat Water Fountain",
+    "brand": "Catit",
+    "category": "feeding",
+    "image": "/images/affiliate/pet-fountain-care-editorial.svg",
+    "summary": "The original green Catit Flower 43742 is a 3 L fountain reference with three documented flow configurations. Pump access, exact filters and routine cleaning determine fit; the cat may still prefer a bowl.",
+    "verdict": "Consider original 43742 when its placement, exact filters and cleaning routine suit the home and the cat uses it. Do not buy it as a proven hydration treatment or a way to leave water unchecked. Keep a suitable bowl routine when a fountain adds no useful benefit.",
+    "whyItMatters": "Consider original 43742 when its placement, exact filters and cleaning routine suit the home and the cat uses it. Do not buy it as a proven hydration treatment or a way to leave water unchecked. Keep a suitable bowl routine when a fountain adds no useful benefit.",
+    "bestFor": "A monitored moving-water routine with practical model-specific cleaning",
+    "priceBand": "$",
+    "rating": 0,
+    "scores": [],
+    "pros": [
+      "Three documented flow configurations",
+      "Reservoir and pump parts have model-specific diagrams",
+      "Current full-size Flower filter compatibility is documented"
     ],
-    pros: ["Simple design with recognizable replacement filters", "Good low-cost fountain option", "Small enough for kitchens and laundry rooms"],
-    cons: ["Filter replacements add ongoing cost", "Some cats still prefer bowls"],
-    specs: { ASIN: "B0146QXOB0", Model: "Original Catit Flower Fountain", Capacity: "3L / 100 fl oz listed", Dimensions: "8.3 × 8.3 × 7.3 in listed", Flow: "Three settings listed", Filter: "Catit Triple Action Filter", "Before buying": "Confirm plug, selected version, included filter, seller, and return terms" },
-    evidence: ["Confirm ASIN B0146QXOB0 is the original 3L fountain rather than the LED or stainless version", "Verify the current compatible filter and pump-part path for the exact model", "Measure outlet, cable, cleaning, refill, and backup-bowl placement", "Treat pump noise and cat preference as untested until the fountain is used in the actual home"],
-    alternatives: ["Choose a stainless-steel fountain if plastic cleaning is a concern.", "Keep a backup water bowl nearby during the transition."],
-    offers: [{ merchant: "Amazon US", url: "https://amzn.to/4oFSqdZ", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." }],
-  },
-  {
-    site: "pet",
-    slug: "furbo-360-dog-camera",
-    asin: "B0BWN22T25",
-    seoTitle: "Furbo 360 Guide: Is It Free Without Furbo Nanny?",
-    updatedAt: "September 24, 2026",
-    name: "Furbo 360 Dog Camera",
-    amazonTitle: "Furbo 360 Dog Camera — Paid Plan Required to Activate",
-    brand: "Furbo",
-    category: "home-care",
-    image: "/images/affiliate/pet-furbo-360-dog-camera-editorial-realistic.webp",
-    summary: "A research-based Furbo 360 review answering whether Furbo Nanny is required, which standalone features stay free, what the current US plans cost, and how to avoid buying a subscription-linked camera by mistake.",
-    verdict: "The linked Amazon ASIN B0BWN22T25 requires a paid plan to activate and currently states a three-month minimum. Choose it only if the subscription and treat-tossing routine are useful. A separately sold standalone Furbo can retain basic free features, but that does not describe this linked offer.",
-    whyItMatters: "The camera price is only half of this decision. Owners need to separate the useful free controls from paid detection and cloud history, compare the current plan's billed total and renewal terms, and make sure the dog reacts calmly to the motor, voice, and treat launcher.",
-    bestFor: "Dog owners who accept a paid activation plan for rotating view and treat tossing",
-    priceBand: "$$",
-    rating: 4.5,
-    scores: [
-      { label: "Video clarity", value: 8 },
-      { label: "Alerts", value: 8 },
-      { label: "Interaction", value: 9 },
+    "cons": [
+      "Filters add recurring purchases",
+      "Pump and channels still need cleaning",
+      "A cat may prefer a bowl; intake and noise are untested"
     ],
-    pros: ["Live view, two-way audio, treat tossing, and bark alerts in an activated camera", "1080p camera, night vision, and rotating view cover more of an open room", "Live-view Auto Dog Tracking can follow movement without a Nanny subscription"],
-    cons: ["Linked ASIN requires a paid plan to activate; three-month minimum shown", "Subscription Required listings can impose a minimum paid-plan commitment", "Treat size, stable placement, 2.4GHz Wi-Fi, and the dog's reaction all need checking"],
-    specs: {
-      ASIN: "B0BWN22T25",
-      Camera: "1080p FHD; 132° lens; 4x digital zoom; automatic night vision",
-      Rotation: "360° viewing coverage through a rotating base",
-      Audio: "Built-in microphone and speaker",
-      Treats: "About 100 pieces; round treats around 0.5in / 1cm recommended",
-      Connectivity: "2.4GHz Wi-Fi; Bluetooth 4.2 for setup",
-      "App requirements": "iOS 14+ or Android 10+ listed",
-      "Nanny list pricing": "US Standard $9.99 monthly; Premium $12.49 monthly; longer terms reduce the monthly equivalent",
-      "Extra cameras": "$2 per month for each additional camera on Standard and Premium",
-      "Purchase plan": "Paid plan required to activate; three-month minimum shown on linked ASIN",
+    "specs": {
+      "ASIN": "B0146QXOB0; confirm selected package",
+      "Model": "Original green Flower Fountain 43742",
+      "Capacity": "3 L listed; not days without care",
+      "Dimensions": "8.3 ×8.3 ×7.3 inches listed",
+      "Other models": "LED 43747 and stainless 43725 are distinct",
+      "Filter generation": "Historical 43745/43746 cartridges; current 43738/43739 pads need own instructions",
+      "Care": "Original manual calls for weekly maintenance and conditional filter replacement",
+      "Pump": "Must stay submerged; do not run dry"
     },
-    evidence: [
-      "ASIN B0BWN22T25 was verified as Paid Plan Required to Activate on September 24, 2026; read its three-month minimum, renewal, and cancellation terms",
-      "Map free live-view, audio, treat, bark-alert, and live-tracking features separately from paid cloud and AI features",
-      "Place the camera on a stable surface within the official height and router-distance guidance without obstructing rotation",
-      "Introduce the sound, movement, voice, and treat launcher while someone is home before using them remotely",
+    "evidence": [
+      "Original 43742 English manual and component diagrams visually read",
+      "Different Flower versions and filter generations kept distinct",
+      "Capacity is not unattended-care duration",
+      "No clinical prevention, universal quietness or cat-preference claim"
     ],
-    editorialSections: [
-      { heading: "The linked camera requires a paid activation plan", body: "Amazon currently identifies ASIN B0BWN22T25 as the paid-plan-required model, with a three-month subscription minimum. Do not buy this offer expecting free standalone activation. Compare the camera charge plus the committed service term, renewal price, and cancellation conditions before checkout." },
-      {
-        heading: "A note about this guide",
-        body: "This is a research-based buying guide built from Furbo's product and support pages; it is not a hands-on camera or behavior test. Furbo sells similar hardware through standalone and subscription-linked offers, so current checkout terms take priority over older reviews or screenshots.",
-      },
-      {
-        heading: "The standalone camera still has useful free features",
-        body: "Furbo says standalone models retain live video, two-way audio, treat tossing, and barking alerts without a Nanny subscription. Live-view Auto Dog Tracking also works without Nanny. That free set may be enough for owners who open the app deliberately and do not need automatic behavior clips.",
-      },
-      {
-        heading: "What Furbo Nanny costs in July 2026",
-        body: "Furbo's US help center lists Standard at $9.99 month to month, $7.99 per month on a yearly term, or $7.49 per month on a two-year term. Premium lists at $12.49, $9.99, or $9.37 per month on those same terms. Each additional camera adds $2 per month. Furbo's product page can show a lower first-year or bundle promotion, so compare the amount billed today, renewal price, minimum term, and cancellation deadline rather than relying on the headline monthly equivalent.",
-      },
-      {
-        heading: "What the Nanny plan changes",
-        body: "Furbo Nanny adds services such as advanced AI alerts and automatic cloud recording. Furbo also sells Subscription Required packages with their own minimum terms. Do not compare only the camera's sale price: identify the purchase model, minimum commitment, renewal terms, cancellation timing, and which alerts you would actually use.",
-      },
-      {
-        heading: "Placement controls the useful view",
-        body: "Furbo recommends an elevated, uncluttered position and placement close enough to the Wi-Fi router. Leave room for the base to rotate, keep the USB cable secure, and aim the starting view at the pet's real resting area rather than the room entrance. A rotating camera cannot see through furniture or compensate for weak Wi-Fi.",
-      },
-      {
-        heading: "Treat tossing needs a calm introduction",
-        body: "Use treats close to Furbo's recommended size and make sure they fit the dog's diet. Test the launcher while present: some dogs enjoy the cue, while others may bark at the sound, guard food, paw at the camera, or become more aroused. In those cases, live view without treats may be the better routine.",
-      },
-      {
-        heading: "Privacy and care limits",
-        body: "An indoor camera captures household activity as well as the pet. Review account access, cloud-storage choices, microphone use, placement, and the comfort of everyone who enters the room. Furbo can show a problem and support a check-in; it cannot replace exercise, supervision, temperature safety, medication, or an in-person backup plan.",
-      },
-      {
-        heading: "Who should skip it",
-        body: "Choose a simpler indoor camera if live view is the only requirement. Skip treat tossing if the dog guards food or reacts poorly to the mechanism, and avoid a subscription-linked listing if paid alerts and cloud recording do not justify the ongoing cost.",
-      },
+    "alternatives": [
+      "Keep a suitable fresh-water bowl and ordinary care routine.",
+      "Compare a different fountain only after checking its own manual and parts."
     ],
-    alternatives: ["Choose a basic Wyze-style pan camera if live view and room coverage matter more than pet-specific features.", "Use a fixed local-storage camera when cloud clips and treat tossing are unnecessary.", "Skip remote treats when the dog becomes overexcited or guards food."],
-    compareSlugs: ["wyze-cam-pan-v3-pet-camera"],
-    sources: [
+    "offers": [
       {
-        name: "Furbo 360 Dog Camera product specifications",
-        url: "https://furbo.com/us/products/furbo-360-dog-camera",
-        note: "Current official camera page, purchase-model details, promotional pricing, warranty, and product specifications.",
-      },
-      {
-        name: "Furbo Nanny plans and US pricing",
-        url: "https://help.furbo.com/hc/en-us/articles/17462739016089-Furbo-Nanny-Plans-and-Pricing",
-        note: "Official Standard and Premium monthly, yearly, two-year, and additional-camera pricing checked July 16, 2026.",
-      },
-      {
-        name: "Furbo features available without Nanny",
-        url: "https://help.furbo.com/hc/en-us/articles/17462722245785-Basic-Features-you-can-use-without-Furbo-Nanny",
-        note: "Official distinction between free standalone features and subscription-linked offers.",
-      },
-      {
-        name: "Furbo 360 quick-start and placement guide",
-        url: "https://help.furbo.com/hc/en-us/articles/29794759618201-Quick-Start-Guide-to-Furbo-360-Dog-Camera",
-        note: "Official placement, power, setup, and included-feature guidance.",
-      },
+        "merchant": "Amazon US",
+        "url": "https://www.amazon.com/dp/B0146QXOB0?tag=madapets-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+        "label": "Check price on Amazon",
+        "priceNote": "Check live price and availability on Amazon."
+      }
     ],
-    offers: [
-      { merchant: "Amazon US", url: "https://www.amazon.com/dp/B0BWN22T25", label: "Check Furbo paid-plan camera on Amazon", priceNote: "ASIN B0BWN22T25 requires a paid plan to activate; three-month minimum shown. Confirm total cost, renewal, and cancellation terms." },
-    ],
+    "imageAlt": "Editorial fountain-care diagram showing reservoir, filter and pump as separate maintenance checks; not a Catit product photograph",
+    "purchaseCheck": "Confirm original green 43742, received regional supply and exact filter package. Choose only when the placement and cleaning routine work; keep a fresh-water bowl available. Capacity and filtration do not establish unattended-care duration or a health benefit."
   },
   {
-    site: "pet",
-    slug: "wyze-cam-pan-v3-pet-camera",
-    updatedAt: "October 8, 2026",
-    asin: "B0DTNKLF1K",
-    evidenceMode: "official-spec",
-    researchNote: "Official-spec camera, storage, connectivity, and placement guide using Wyze documentation and the exact Amazon listing; this is not a hands-on video, tracking, privacy, reliability, or pet-behavior test.",
-    sources: [
-      { name: "Wyze Cam Pan v3", url: "https://www.wyze.com/products/wyze-cam-pan", note: "Official current product, feature, purchase, and variant reference." },
-      { name: "Wyze Cam Pan v3 technical specifications", url: "https://support.wyze.com/hc/en-us/articles/11795670894875-Wyze-Cam-Pan-v3-Tech-Specs", note: "Official resolution, field of view, rotation, storage, security, Wi-Fi, power, weather, and integration details." },
-      { name: "Amazon listing B0DTNKLF1K", url: "https://www.amazon.com/dp/B0DTNKLF1K", note: "Exact linked model, seller, price, stock, and return terms." },
+    "site": "pet",
+    "slug": "furbo-360-dog-camera",
+    "asin": "B0BWN22T25",
+    "seoTitle": "Is Furbo Free? 360 Dog Camera Plans and Standalone Limits",
+    "updatedAt": "October 26, 2026",
+    "name": "Furbo 360 Dog Camera",
+    "amazonTitle": "Furbo 360 Dog Camera — Paid Plan Required to Activate",
+    "brand": "Furbo",
+    "category": "home-care",
+    "image": "/images/affiliate/pet-furbo-360-dog-camera-editorial-realistic.webp",
+    "summary": "The historical B0BWN22T25 reference is a Furbo 360 Dog Camera sold with paid activation, distinct from Standalone hardware. Current official articles disagree on basic access after cancellation, so that entitlement remains unknown.",
+    "verdict": "Furbo Standalone has documented free basic features, but the linked B0BWN22T25 requires paid activation. Choose this subscription-required camera only if the applicable ongoing contract and treat interaction are useful. Free basic access after cancellation remains unconfirmed because official articles conflict.",
+    "whyItMatters": "Furbo Standalone has documented free basic features, but the linked B0BWN22T25 requires paid activation. Choose this subscription-required camera only if the applicable ongoing contract and treat interaction are useful. Free basic access after cancellation remains unconfirmed because official articles conflict.",
+    "bestFor": "Dog check-ins and treat interaction when the applicable paid contract is acceptable",
+    "priceBand": "$$",
+    "rating": 0,
+    "scores": [],
+    "pros": [
+      "Rotating view and two-way interaction in the activated system",
+      "Treat tossing is a separate interaction option",
+      "Manufacturer provides model and activation documentation"
     ],
-    name: "Wyze Cam Pan v3",
-    brand: "Wyze",
-    category: "home-care",
-    image: "/images/affiliate/pet-wyze-cam-pan-v3-pet-camera.webp",
-    summary: "A budget pan-and-tilt camera that can work for pet check-ins when treat tossing is unnecessary.",
-    verdict: "Wyze Cam Pan v3 is the budget comparison point for pet monitoring: less pet-specific, but often enough for people who just want to see the room.",
-    whyItMatters: "A general security camera can be the better buy if the pet does not need treats or two-way interaction. The trade-off is fewer pet-specific alerts and a less playful experience.",
-    bestFor: "Budget pet check-ins in apartments",
-    priceBand: "$",
-    rating: 4.2,
-    scores: [
-      { label: "Budget fit", value: 9 },
-      { label: "Room coverage", value: 8 },
-      { label: "Pet features", value: 5 },
+    "cons": [
+      "Paid activation is part of the historical linked purchase",
+      "Official articles conflict on post-cancellation basic access",
+      "Pet response, placement, exact package and network coverage need checking"
     ],
-    pros: ["Lower cost than dedicated pet cameras", "Pan-and-tilt view helps cover more of a room", "Useful for simple live checks"],
-    cons: ["No treat tossing", "Cloud storage and smart alerts may need plan review"],
-    specs: { ASIN: "B0DTNKLF1K", "Product type": "Indoor camera", "Use case": "Simple pet monitoring", "Link status": "Amazon affiliate link added" },
-    evidence: ["Compare Wyze cloud, local storage, and privacy settings", "Check placement where the pet actually rests, not just the room entrance", "Verify whether pan tracking or subscription features are needed"],
-    alternatives: ["Choose Furbo if treat tossing is important.", "Use a fixed camera if the room is small and the pet stays in one spot."],
-    offers: [{ merchant: "Amazon US", url: "https://amzn.to/4w0eORs", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." }],
+    "specs": {
+      "ASIN": "B0BWN22T25",
+      "Historical offer identity": "Paid Plan Required to Activate; not Standalone",
+      "Model": "360 Dog Camera; not Cat Camera or Mini 360",
+      "Network": "Use model-specific 2.4 GHz setup instructions",
+      "Plan cost": "Compare selected billed term, renewal and additional cameras; no current checkout total verified",
+      "After cancellation": "Unknown for this exact offer because official articles conflict",
+      "Placement": "Quick-start distances are guidance, not measured room or Wi-Fi coverage",
+      "Power package": "Confirm supplied adapter and cable; current quick-start package wording may differ"
+    },
+    "evidence": [
+      "Historical September 24 listing required paid activation; this is not a new seller or stock observation",
+      "Plans article requires active service for all functions on Subscription Required hardware",
+      "Activation article describes basic access after initial term; applicability not resolved",
+      "Mini 360 and Cat Camera are separate model comparisons, not upgrades to this ASIN"
+    ],
+    "editorialSections": [
+      {
+        "heading": "Separate this ASIN from Standalone hardware",
+        "body": "The September 24 listing observation identified B0BWN22T25 as Paid Plan Required to Activate. Furbo’s Standalone basic-feature guidance therefore cannot be applied to it. The camera discount and the plan are parts of one buying decision; confirm the currently selected contract rather than treating a historical three-month minimum as today’s universal offer."
+      },
+      {
+        "heading": "Leave post-cancellation access unknown",
+        "body": "Furbo’s plans page says subscription-required cameras need active service for all features, including basic controls. Its activation article describes basic access after an initial subscription period. Those official statements conflict. This guide does not promise that cancellation restores free live view, talking, treat tossing or alerts for the linked offer; budget for continuing service until its applicable terms resolve the point."
+      },
+      {
+        "heading": "Compare current billing without freezing a promotion",
+        "body": "Check the full amount billed now, any minimum term, renewal, cancellation timing and additional-camera charges. Longer prepaid plans can have a lower monthly equivalent but a larger initial payment. Promotional camera-plus-plan prices are not the standard recurring price. No current seller, delivery, refund eligibility or checkout total has been verified in this documentation review."
+      },
+      {
+        "heading": "Treat interaction and placement still need a real check",
+        "body": "Confirm appropriate treats and the exact instructions before use, observe the dog’s response calmly and keep placement stable with a protected cable. A rotating camera cannot prove coverage of every pet location. The quick-start guide’s suggested height and router distance are starting references, not a test of this home; follow the received power and package instructions."
+      },
+      {
+        "heading": "Mini 360 and Cat Camera are separate models",
+        "body": "Furbo’s current catalog also shows Mini 360 with 2K positioning and a separate Cat Camera. Those names do not update the historical Dog Camera’s resolution, included parts, contract or warranty. A newer model on sale is not evidence that the older model is discontinued. Keep a working camera if the additional interaction or paid services do not solve a real need."
+      }
+    ],
+    "alternatives": [
+      "Keep an existing suitable camera for occasional check-ins.",
+      "Compare an exact Standalone or local-card model only after its own feature and contract checks."
+    ],
+    "compareSlugs": [
+      "wyze-cam-pan-v3-pet-camera"
+    ],
+    "sources": [
+      {
+        "name": "Furbo Standalone basic features",
+        "url": "https://help.furbo.com/hc/en-us/articles/17462722245785-Basic-Features-you-can-use-without-Furbo-Nanny",
+        "note": "Standalone scope; not a free-function promise for this historical offer."
+      },
+      {
+        "name": "Furbo plans and pricing",
+        "url": "https://help.furbo.com/hc/en-us/articles/17462739016089-Furbo-Nanny-Plans-and-Pricing",
+        "note": "Active-plan wording for subscription-required cameras; compare billed tiers and renewal."
+      },
+      {
+        "name": "Furbo Subscription Required activation",
+        "url": "https://help.furbo.com/hc/en-us/articles/17462056102169-How-to-Setup-and-Activate-Nanny-Bundle-Camera-Subscription-Required",
+        "note": "Conflicting after-initial-term basic-access wording; exact applicability remains unknown."
+      },
+      {
+        "name": "Furbo payment and refund terms",
+        "url": "https://help.furbo.com/hc/en-us/articles/17462358359705-Payment-Terms-and-Refund-Policy",
+        "note": "Read the applicable minimum term, billing and cancellation; no exact current contract certified."
+      },
+      {
+        "name": "Furbo 360 Dog quick start",
+        "url": "https://help.furbo.com/hc/en-us/articles/29794759618201-Quick-Start-Guide-to-Furbo-360-Dog-Camera",
+        "note": "Placement and setup guidance, not a current package or coverage inspection."
+      },
+      {
+        "name": "Furbo current camera catalog",
+        "url": "https://furbo.com/us/products/furbo-360-dog-camera",
+        "note": "Current Mini 360 and Cat models are separate; no specs transferred to B0BWN22T25."
+      }
+    ],
+    "offers": [
+      {
+        "merchant": "Amazon US",
+        "url": "https://www.amazon.com/dp/B0BWN22T25?tag=madapets-20",
+        "label": "Check Furbo paid-plan camera on Amazon",
+        "priceNote": "Compare the device price and selected recurring plan together on Amazon."
+      }
+    ],
+    "evidenceMode": "official-spec",
+    "researchNote": "Manufacturer plan, activation, quick-start and current model-catalog guidance reviewed October 26, 2026; no hands-on camera, alert, treat or security test. September 24 listing observations remain historical. Post-cancellation access and today’s exact billed contract remain unconfirmed.",
+    "purchaseAlternatives": [],
+    "purchaseCheck": "This historical ASIN is the Paid Plan Required to Activate version. Confirm the full selected plan, minimum billed term, renewal and cancellation conditions and budget for ongoing service. Do not choose it on a promise of free basic access after cancellation. Keep a suitable existing camera when treat interaction adds no value."
+  },
+  {
+    "site": "pet",
+    "slug": "wyze-cam-pan-v3-pet-camera",
+    "updatedAt": "October 26, 2026",
+    "asin": "B0DTNKLF1K",
+    "evidenceMode": "official-spec",
+    "researchNote": "Wyze Pan v3 technical, storage, privacy and newer-model documentation reviewed October 26, 2026; no physical camera, tracking or security test. The historical ASIN identity-drift hold remains, and no replacement listing has been verified.",
+    "sources": [
+      {
+        "name": "Wyze Pan v3 technical specifications",
+        "url": "https://support.wyze.com/hc/en-us/articles/11795670894875-Wyze-Cam-Pan-v3-Tech-Specs",
+        "note": "Exact model video, motion, power, network and card boundaries."
+      },
+      {
+        "name": "Wyze Pan v4 versus Pan v3",
+        "url": "https://support.wyze.com/hc/en-us/articles/40185187360155-How-is-Wyze-Cam-Pan-v4-different-than-Wyze-Cam-Pan-v3",
+        "note": "Separate newer model; no end-of-life or automatic ASIN upgrade inferred."
+      },
+      {
+        "name": "Wyze microSD versus Cam Plus",
+        "url": "https://support.wyze.com/hc/en-us/articles/7372980709275-How-do-Cam-Plus-and-a-microSD-card-compare",
+        "note": "Local continuous recordings differ from paid cloud-event/AI services."
+      },
+      {
+        "name": "Wyze Privacy Mode",
+        "url": "https://support.wyze.com/hc/en-us/articles/11791894386971-What-is-Privacy-Mode",
+        "note": "Pan v3/v4 lens and audio state only; not an account-security audit."
+      }
+    ],
+    "name": "Wyze Cam Pan v3",
+    "brand": "Wyze",
+    "category": "home-care",
+    "image": "/images/affiliate/pet-camera-workflow-editorial.svg",
+    "summary": "A documented 1080p pan-and-tilt model with separate local-card and cloud-service paths. This page describes Pan v3, while the historical linked ASIN remains paused for a different observed camera identity.",
+    "verdict": "Pan v3 can be compared for ordinary room check-ins when its exact network, recording and privacy behavior suits the task. The historical ASIN does not currently qualify as its purchase path. Keep a working camera or wait for a matched listing rather than buying a different fixed camera or a paid-plan substitute.",
+    "whyItMatters": "Pan v3 can be compared for ordinary room check-ins when its exact network, recording and privacy behavior suits the task. The historical ASIN does not currently qualify as its purchase path. Keep a working camera or wait for a matched listing rather than buying a different fixed camera or a paid-plan substitute.",
+    "bestFor": "Model-specific room check-ins after an exact Pan v3 listing is established",
+    "priceBand": "$",
+    "rating": 0,
+    "scores": [],
+    "pros": [
+      "Manufacturer documents pan/tilt and local-card support",
+      "Local recording and cloud services can be compared separately",
+      "Model-specific Privacy Mode is documented"
+    ],
+    "cons": [
+      "Historical ASIN points to a different observed camera identity",
+      "Local card support does not establish an offline remote app",
+      "Pan v4 specifications belong to a separate model"
+    ],
+    "specs": {
+      "Historical ASIN": "B0DTNKLF1K; purchase held for identity drift",
+      "Described model": "Wyze Cam Pan v3",
+      "Video": "1080p; 120° field of view listed",
+      "Movement": "360° horizontal and 180° vertical range listed; not measured coverage",
+      "Network": "2.4 GHz Wi-Fi; no 5 GHz support",
+      "Power": "5 V/2 A microUSB in Pan v3 specifications",
+      "Local card": "FAT32 up to 32 GB; exFAT up to 256 GB in linked model documentation",
+      "Privacy Mode": "Lens folds into base and sound recording stops; not a universal account-security guarantee"
+    },
+    "evidence": [
+      "Keep the historical identity-drift purchase hold",
+      "Match Pan v3 name, power, network and card documentation",
+      "Review playback, privacy mode and account access as separate functions",
+      "Do not claim observed image quality, tracking success or security"
+    ],
+    "alternatives": [
+      "Keep a suitable existing camera while the exact purchase is unresolved.",
+      "Compare another model for the actual recording and plan task, with its own identity checks."
+    ],
+    "offers": [
+      {
+        "merchant": "Amazon US",
+        "url": "https://amzn.to/4w0eORs",
+        "label": "Check price on Amazon",
+        "priceNote": "Historical identity reference only; exact purchase remains held."
+      }
+    ],
+    "seoTitle": "Wyze Cam Pan v3: Local Storage, Privacy and Listing Hold",
+    "purchaseAlternatives": [],
+    "amazonDetailUrl": "https://www.amazon.com/dp/B0DTNKLF1K",
+    "imageAlt": "Editorial diagram separating live view, local-card recordings and cloud-service checks; not a Wyze product photograph",
+    "purchaseCheck": "The exact purchase is paused because B0DTNKLF1K was observed as a fixed Cam v3 rather than Pan v3. Match a real Pan v3 listing before buying. A paid-activation Furbo is not automatically substituted for a basic check-in or local-card task.",
+    "editorialSections": [
+      {
+        "heading": "Do not buy a fixed Cam v3 as Pan v3",
+        "body": "The existing July 29 observation found the historical ASIN showing a fixed Wyze Cam v3, which is a different product from Cam Pan v3. Its exact purchase remains paused. This documentation review has not established a corrected seller or replacement ASIN. No Furbo purchase is inherited merely because both products appear in a pet-camera comparison."
+      },
+      {
+        "heading": "Keep local recording and cloud features separate",
+        "body": "Wyze distinguishes continuous recording to a compatible microSD card from paid cloud events and AI. Follow Pan v3 card format and capacity instructions and check the playback/export path you need. Card recording does not prove that a remote app, account or every function works through an internet outage."
+      },
+      {
+        "heading": "Use model-specific privacy and account controls",
+        "body": "Wyze describes Pan v3 Privacy Mode as folding its lens into the base and stopping sound recording. Account sharing, authentication and recovery still need separate checks. This page has not audited encryption, tested session revocation or established that a visible status cue removes all exposure."
+      },
+      {
+        "heading": "Pan v4 is a separate comparison",
+        "body": "Wyze’s manufacturer comparison lists 4K and 5 GHz/Wi-Fi 6 changes for Pan v4. Pan v3 remains the 1080p, 2.4 GHz reference here. Do not transfer newer resolution, networking, accessories or buying identity to the old ASIN, or infer discontinuation solely from a newer release."
+      }
+    ]
   },
   {
     site: "pet",
@@ -421,84 +564,178 @@ export const products: Product[] = [
     offers: [{ merchant: "Amazon US", url: "https://amzn.to/4uU4Twb", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." }],
   },
   {
-    site: "pet",
-    slug: "petfusion-ultimate-dog-bed",
-    asin: "B089RGDQBB",
-    amazonDetailUrl: "https://www.amazon.com/dp/B089RGDQBB",
-    seoTitle: "PetFusion Ultimate Dog Bed Guide: Size, Foam & Cover Checks",
-    updatedAt: "July 26, 2026",
-    evidenceMode: "official-spec",
-    researchNote: "Research-based size and ownership guide using PetFusion and exact Amazon listing information; this is not a hands-on foam, wash-cycle, durability, or pet-preference test.",
-    sources: [
-      { name: "PetFusion Ultimate Dog Bed overview", url: "https://pet-fusion.com/blogs/petfusion-blog/why-you-shouldnt-let-your-dog-sleep-in-the-bed-with-you", note: "Brand reference for the Ultimate bed's solid memory-foam base and multi-size positioning." },
-      { name: "Amazon listing B089RGDQBB", url: "https://www.amazon.com/dp/B089RGDQBB", note: "Exact selected size, color, foam, cover, seller, care, and return information." },
+    "site": "pet",
+    "slug": "petfusion-ultimate-dog-bed",
+    "asin": "B089RGDQBB",
+    "seoTitle": "PetFusion Ultimate Dog Bed Guide: Size, Foam & Cover Checks",
+    "updatedAt": "October 26, 2026",
+    "evidenceMode": "official-spec",
+    "researchNote": "Petmate’s PetFusion catalog and a specific Ultimate partner SKU reviewed October 26, 2026. No hands-on foam, support, wash or durability test. The historical ASIN is not matched to that SKU, and its existing purchase hold remains.",
+    "sources": [
+      {
+        "name": "Petmate PetFusion collection",
+        "url": "https://www.petmate.com/collections/pet-fusion",
+        "note": "Brand/catalog reference; not exact ASIN availability or proof of discontinuation."
+      },
+      {
+        "name": "Petmate Partners Ultimate XL sandstone",
+        "url": "https://www.petmatepartners.com/pf-ibxl3.html",
+        "note": "Specific PF-IBXL3 SKU; size, foam and care not transferred to B089RGDQBB."
+      }
     ],
-    editorialSections: [
-      { heading: "Size from sleeping shape, not breed label", body: "Measure the dog while stretched out and while curled, then compare both with the usable inner sleep area and bolster footprint on the selected Amazon variation. A bed can have generous outside dimensions while leaving less flat foam than expected." },
-      { heading: "Confirm every layer on the exact listing", body: "Check foam thickness and construction, liner, cover fabric, zipper arrangement, washing instructions, skid base, color, and included pieces for ASIN B089RGDQBB. Similar PetFusion beds and sizes should not be treated as identical." },
-      { heading: "Supportive foam is not chew-proof", body: "A bolstered memory-foam bed is better suited to a dog that rests calmly than one that tears seams or ingests filling. Choose a simpler supervised mat or more appropriate durable design when destructive chewing is active." },
+    "editorialSections": [
+      {
+        "heading": "A brand catalog is not an exact variant match",
+        "body": "Petmate’s current site confirms its PetFusion brand collection. Its partner catalog also lists Ultimate XL sandstone PF-IBXL3. Neither establishes that B089RGDQBB is that size or construction. Partial channel availability and newer bed families are not proof that this historical model is discontinued; the exact purchase remains paused."
+      },
+      {
+        "heading": "Measure usable space before apartment fit",
+        "body": "Compare the dog’s resting shape with the clear area inside the bolsters, then separately tape out the entire outer bed and approach route. A weight range or overall width cannot resolve both checks. Leave fit unknown if inner dimensions are missing rather than shrinking the resting area to fit furniture."
+      },
+      {
+        "heading": "Keep care and support claims specific",
+        "body": "A care statement for one SKU cannot certify another size’s cover, liner or foam. Check the received labels for removal, washing and drying. This page has not measured pressure distribution or compression, and “orthopedic” is not proof that a bed treats an individual animal’s pain. Follow suitable veterinary advice for mobility or discomfort."
+      },
+      {
+        "heading": "No cleaning-tool purchase substitution",
+        "body": "ChomChom may be compared separately for compatible fabric cleanup. It does not provide the sleeping surface, padding or entry of a bed. This paused page therefore does not inherit that roller’s shopping button. Keeping a suitable existing bed is a valid result."
+      }
     ],
-    name: "PetFusion Ultimate Dog Bed",
-    brand: "PetFusion",
-    category: "comfort",
-    image: "/images/affiliate/pet-petfusion-ultimate-dog-bed.webp",
-    summary: "A supportive bolstered dog bed for pets that need a real rest zone rather than a thin mat.",
-    verdict: "PetFusion Ultimate is a good comparison pick when support, washable covers, and a sofa-like edge matter more than the cheapest possible bed.",
-    whyItMatters: "Pet beds fail when the foam flattens, covers are hard to wash, or the size is wrong for the dog's sleeping shape.",
-    bestFor: "Dogs that like bolsters and supportive foam",
-    priceBand: "$",
-    rating: 4.5,
-    scores: [
-      { label: "Support", value: 8 },
-      { label: "Washability", value: 8 },
-      { label: "Size options", value: 8 },
+    "name": "PetFusion Ultimate Dog Bed",
+    "brand": "PetFusion",
+    "category": "comfort",
+    "image": "/images/affiliate/pet-bed-fit-editorial.svg",
+    "summary": "A historical bolstered-bed reference whose selected size and construction still need an exact match. Compare usable sleeping area and layer-specific care without treating a current XL catalog entry as proof for this ASIN.",
+    "verdict": "Keep the PetFusion purchase paused until the exact size, usable area and layer-specific instructions match the actual offer. No measured support, chew resistance or wash performance is established here. Keep an intact suitable bed when replacement does not solve a real fit or care problem.",
+    "whyItMatters": "Keep the PetFusion purchase paused until the exact size, usable area and layer-specific instructions match the actual offer. No measured support, chew resistance or wash performance is established here. Keep an intact suitable bed when replacement does not solve a real fit or care problem.",
+    "bestFor": "A bolstered-bed comparison after exact sleeping-space and care checks",
+    "priceBand": "$",
+    "rating": 0,
+    "scores": [],
+    "pros": [
+      "Bolster layout can be compared with the dog’s resting position",
+      "Official Petmate catalog retains PetFusion brand references"
     ],
-    pros: ["Bolster edge suits dogs that curl or lean", "Washable cover matters for long-term use", "Better support than thin budget mats"],
-    cons: ["Takes more floor space", "Not the cheapest option for destructive chewers"],
-    specs: { ASIN: "B089RGDQBB", "Product type": "Bolstered memory-foam dog bed", "Sizing rule": "Confirm selected variation and usable inner sleeping area", "Care rule": "Verify cover, liner, zipper, and washing instructions on the exact listing", "Chewing": "Not represented here as chew-proof", "Evidence basis": "PetFusion brand reference and exact Amazon listing" },
-    evidence: ["Confirm ASIN B089RGDQBB, selected size, color, seller, and return window", "Measure the dog's stretched and curled sleeping footprint against usable inner dimensions", "Verify foam, liner, cover, zipper, and care instructions on the selected variation", "Treat support, durability, and pet preference as untested until used in the actual home"],
-    alternatives: ["Choose an elevated cot for hot climates or outdoor use.", "Choose a cheaper washable mat for crates or travel."],
-    offers: [{ merchant: "Amazon US", url: "https://amzn.to/4eAjIO1", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." }],
+    "cons": [
+      "Historical ASIN is not matched to the reviewed official SKU",
+      "Outer dimensions do not establish usable sleeping area",
+      "No pressure, durability, wash or chew-proof result established"
+    ],
+    "specs": {
+      "Historical ASIN": "B089RGDQBB; exact purchase held",
+      "Product family": "PetFusion Ultimate bolstered bed",
+      "Selected size and color": "Not established by the reviewed current official SKU",
+      "Sleeping-space check": "Measure inner clear area separately from full outer footprint",
+      "Layer care": "Confirm cover, liner, foam and bolster instructions individually",
+      "Official SKU boundary": "PF-IBXL3 is XL sandstone, not a verified ASIN match",
+      "Medical or chewing claim": "No treatment benefit or chew-proof performance established"
+    },
+    "evidence": [
+      "Current Petmate ownership/catalog reference reviewed",
+      "Exact ASIN-to-SKU match unresolved; historical hold preserved",
+      "Sleeping area, floor footprint and layer care are independent checks",
+      "No inferred foam superiority, medical effect or chew resistance"
+    ],
+    "alternatives": [
+      "Keep an intact bed that already fits and can be cared for.",
+      "Compare another exact bed only after its own dimensions, entry and care checks."
+    ],
+    "offers": [
+      {
+        "merchant": "Amazon US",
+        "url": "https://amzn.to/4eAjIO1",
+        "label": "Check price on Amazon",
+        "priceNote": "Historical listing reference; exact purchase remains held."
+      }
+    ],
+    "purchaseAlternatives": [],
+    "imageAlt": "Editorial dog-bed fit diagram comparing inner sleeping area with full room footprint; not a PetFusion product photograph",
+    "purchaseCheck": "The exact PetFusion purchase remains paused. Match selected size, usable inner area, outer footprint and cover/liner/foam care before choosing a bed. A ChomChom roller is a separate cleaning tool and is not substituted for a sleeping surface."
   },
   {
-    site: "pet",
-    slug: "chomchom-roller-pet-hair-remover",
-    asin: "B0C2FMZMHP",
-    amazonDetailUrl: "https://www.amazon.com/dp/B0C2FMZMHP",
-    seoTitle: "ChomChom Roller Guide: Surfaces, Cleaning & Reusable Fit",
-    updatedAt: "July 26, 2026",
-    evidenceMode: "official-spec",
-    researchNote: "Research-based surface-fit and ownership guide using product documentation and the exact Amazon ASIN; this is not a hands-on pickup, fabric-safety, or durability test.",
-    sources: [
-      { name: "ChomChom Roller product overview", url: "https://chomchomco.com/original-chomchom-roller-white/", note: "Product mechanism, reusable design, collection chamber, and intended-surface overview." },
-      { name: "Amazon listing B0C2FMZMHP", url: "https://www.amazon.com/dp/B0C2FMZMHP", note: "Exact linked roller version, seller, included pieces, instructions, and return terms." },
+    "site": "pet",
+    "slug": "chomchom-roller-pet-hair-remover",
+    "asin": "B0C2FMZMHP",
+    "amazonDetailUrl": "https://www.amazon.com/dp/B0C2FMZMHP",
+    "seoTitle": "ChomChom Black Classic: Surface Fit and Version Checks",
+    "updatedAt": "October 26, 2026",
+    "evidenceMode": "official-spec",
+    "researchNote": "The indexed exact Amazon identity and feature bullets were reviewed October 26, 2026, identifying Black Classic B0C2FMZMHP. A manufacturer-controlled care source for that version has not been established. No pickup, fabric-safety, durability, savings or fresh US seller/return test.",
+    "sources": [
+      {
+        "name": "Amazon B0C2FMZMHP identity and mechanism",
+        "url": "https://www.amazon.com/dp/B0C2FMZMHP",
+        "note": "Indexed Black Classic identity and product bullets only. Not fresh stock, seller, returns or verified manufacturer care documentation."
+      }
     ],
-    editorialSections: [
-      { heading: "Use it on serviceable fabric, not every surface", body: "Start on a hidden area and follow the exact listing instructions. Upholstery weave, knit, delicate fabric, loose threads, hard surfaces, seams, and tight corners can respond differently; this guide does not claim universal fabric safety." },
-      { heading: "The reusable chamber replaces sticky sheets, not deep cleaning", body: "The roller collects accessible hair through repeated manual strokes and an internal chamber. Empty the chamber as directed, but keep a vacuum or detail tool for deep carpet, crevices, and debris that a surface roller cannot reach." },
-      { heading: "Match the exact version and seller", body: "ChomChom-style rollers and multiple sizes can look similar. Confirm ASIN B0C2FMZMHP, the original-size configuration, seller, included parts, and return window before applying this page's buying checks." },
+    "editorialSections": [
+      {
+        "heading": "Black Classic is the represented version",
+        "body": "The indexed Amazon variation map identifies B0C2FMZMHP as Black Classic, while White Classic and Black Matte have different ASINs. The previous white-product source did not establish applicable care for this black version. Several similarly named external sites claim the brand name; their names alone do not establish manufacturer control."
+      },
+      {
+        "heading": "Use the listing mechanism without adopting its performance claims",
+        "body": "The exact listing describes manual back-and-forth movement, a collection chamber and opening it to empty hair. Its claims of universal pickup or deep cleaning are not adopted as test results. Check the applicable directions and a suitable fabric area rather than assuming every weave, seam, trim or delicate material tolerates the tool."
+      },
+      {
+        "heading": "Do not invent a wash procedure",
+        "body": "A manufacturer-controlled Black Classic care document has not been established in this review. No immersion, machine-wash, detergent or sterilizing permission is inferred from a white version or a lookalike roller. Resolve care and surface compatibility before choosing it for a material that may be damaged."
+      },
+      {
+        "heading": "A cleanup tool is separate from bedding",
+        "body": "Hair removal does not wash a cover, clean embedded debris, restore foam or provide a sleeping surface. Compare the repeated cleanup task and the current tool before buying. A lack of adhesive sheets does not establish lower lifetime cost without usable life and real replacement consumption."
+      }
     ],
-    name: "ChomChom Roller Pet Hair Remover",
-    brand: "ChomChom",
-    category: "home-care",
-    image: "/images/affiliate/pet-chomchom-roller-pet-hair-remover.webp",
-    summary: "A reusable pet-hair roller for furniture, bedding, and car seats where sticky sheets get expensive.",
-    verdict: "ChomChom is a practical first pet-hair tool because it targets the surfaces people actually notice: sofas, blankets, and seats.",
-    whyItMatters: "Pet hair cleanup is a repeated chore, so reusable tools can matter more than one-time deep cleaning products.",
-    bestFor: "Furniture and car-seat pet hair",
-    priceBand: "$",
-    rating: 4.6,
-    scores: [
-      { label: "Furniture cleanup", value: 9 },
-      { label: "Running cost", value: 9 },
-      { label: "Detail work", value: 6 },
+    "name": "ChomChom Roller Pet Hair Remover",
+    "brand": "ChomChom",
+    "category": "home-care",
+    "image": "/images/affiliate/pet-hair-cleanup-editorial.svg",
+    "summary": "An original-size reusable manual roller identified as Black Classic in the indexed B0C2FMZMHP listing. It is a surface-hair cleanup option, with fabric compatibility and exact care still requiring confirmation.",
+    "verdict": "Consider Black Classic only for a compatible surface and an identified cleanup need after reading its applicable instructions. The indexed listing supports the chamber mechanism, not universal fabric safety, deep cleaning or guaranteed savings. Keep an existing effective tool when another roller adds little.",
+    "whyItMatters": "Consider Black Classic only for a compatible surface and an identified cleanup need after reading its applicable instructions. The indexed listing supports the chamber mechanism, not universal fabric safety, deep cleaning or guaranteed savings. Keep an existing effective tool when another roller adds little.",
+    "bestFor": "A separate surface-hair cleanup task after fabric and version checks",
+    "priceBand": "$",
+    "rating": 0,
+    "scores": [],
+    "pros": [
+      "Listing describes a reusable manual design without adhesive sheets",
+      "Built-in collection chamber can be emptied"
     ],
-    pros: ["Reusable design avoids sticky-sheet waste", "Strong fit for sofas and bedding", "Easy impulse add-on for pet households"],
-    cons: ["Not for every fabric texture", "Corners and tight seams still need another tool"],
-    specs: { ASIN: "B0C2FMZMHP", "Product type": "Reusable manual pet-hair roller", Consumables: "No sticky-sheet refill required for the represented design", "Collection path": "Internal chamber; empty according to instructions", "Primary use": "Serviceable upholstery, bedding, and car-seat fabric", "Before buying": "Confirm version, seller, instructions, and return terms" },
-    evidence: ["Confirm ASIN B0C2FMZMHP, represented size, seller, included pieces, and return terms", "Test a hidden area and follow the listing's surface guidance", "Use repeated manual strokes and empty the chamber according to instructions", "Treat pickup performance, fabric safety, and durability as untested on the home's actual surfaces"],
-    alternatives: ["Use a vacuum attachment for rugs and deep seams.", "Choose disposable rollers for clothing and travel bags."],
-    offers: [{ merchant: "Amazon US", url: "https://amzn.to/4eUGkKC", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." }],
+    "cons": [
+      "Exact fabric safety and care are not established for every surface",
+      "Does not replace cover washing or deep cleaning",
+      "White Classic, Black Matte and Black Classic have different ASINs"
+    ],
+    "specs": {
+      "ASIN": "B0C2FMZMHP",
+      "Indexed selected variant": "Black Classic, Original Size",
+      "Different versions": "White Classic B00BAGTNAQ; Black Matte B0C6RMY8QJ",
+      "Mechanism": "Manual back-and-forth strokes and collection chamber described in listing",
+      "Consumables": "No adhesive sheet required for this listed design",
+      "Care applicability": "Exact Black Classic instructions still need confirmation; no whole-tool washing rule assumed"
+    },
+    "evidence": [
+      "Indexed exact title and selected Black Classic ASIN reviewed; no fresh regional offer inspection",
+      "Removed unverified manufacturer attribution from the white-product source",
+      "No universal pickup, fabric-safety, deep-cleaning or savings promise",
+      "Kept bedding and cleanup as separate tasks"
+    ],
+    "alternatives": [
+      "Keep an effective existing cleanup tool.",
+      "Use a suitable vacuum attachment or cover-washing method under the fabric’s instructions when the task requires it."
+    ],
+    "offers": [
+      {
+        "merchant": "Amazon US",
+        "url": "https://www.amazon.com/dp/B0C2FMZMHP?tag=madapets-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+        "label": "Check ChomChom Black Classic on Amazon",
+        "priceNote": "Check the selected Black Classic offer and delivered price on Amazon."
+      }
+    ],
+    "amazonTitle": "ChomChom Roller — Original Size, Black Classic",
+    "purchaseAlternatives": [],
+    "imageAlt": "Editorial diagram separating loose surface-hair removal from cover washing and deep cleaning; not a ChomChom product photograph",
+    "purchaseCheck": "Confirm Original Size Black Classic B0C2FMZMHP and applicable surface/care instructions, seller and returns. Pause for delicate or unidentified fabric compatibility. Keep a working cleanup method; this roller does not replace washing, deep cleaning or a dog bed."
   },
   {
     site: "pet",
@@ -1130,36 +1367,43 @@ export const products: Product[] = [
   {
     site: "baby",
     slug: "infant-optics-dxr-8-pro",
+    purchaseCheck: "Confirm the non-SS model, actual room coverage, safe cord placement and separate camera/parent-unit power supplies. PRO SS split-screen and dual-audio features belong to a different model.",
     asin: "B08FF4GV5C",
     amazonTitle: "Infant Optics DXR-8 PRO Baby Monitor",
     seoTitle: "Infant Optics DXR-8 Pro Guide: Range, Cameras & Safe Placement",
-    updatedAt: "June 30, 2026",
-    sources: [{ name: "DXR-8 Pro user manual", url: "https://fccid.io/2AAAM-DXR8PPZ-ABU/User-Manual/Users-Manual-4799058.pdf", note: "Setup, safety placement, camera pairing, radio interference, and operating guidance." }],
+    updatedAt: "October 26, 2026",
+    evidenceMode: "official-spec",
+    researchNote: "Current manufacturer product, separate PRO SS model and V3.7 manual reviewed October 26, 2026. No physical range, night-image, audio, battery-duration or security test. The July retailer identity record is not a fresh seller, stock or return inspection.",
+    sources: [
+      { name: "Infant Optics DXR-8 PRO", url: "https://www.infantoptics.com/product/dxr-8-pro", note: "Current non-SS single-view model; published range does not establish actual room coverage." },
+      { name: "Infant Optics DXR-8 PRO SS", url: "https://www.infantoptics.com/product/dxr-8-pro-ss", note: "Separate split-screen and simultaneous dual-audio model, not the linked non-SS ASIN." },
+      { name: "DXR-8 PRO manual V3.7", url: "https://cdn.shopify.com/s/files/1/0780/1408/7346/files/DXR-8-PRO-User-Manual-V3.7.pdf.pdf?v=1788237500", note: "Current official-support download covering placement, power, pairing, interference and care; match the received unit." },
+      { name: "Infant Optics current support", url: "https://www.infantoptics.com/support", note: "Manufacturer route to model-specific manuals and compatibility information." },
+      { name: "CPSC monitor cord warning", url: "https://www.cpsc.gov/s3fs-public/5066.pdf", note: "Cord distance from every part of the sleep environment and out of reach; never inside or on the crib edge." },
+    ],
     editorialSections: [
-      { heading: "Why a dedicated monitor still fits", body: "The DXR-8 Pro uses a separate parent unit rather than household Wi-Fi or a phone app. That reduces phone dependency, but it also means range and 2.4GHz interference should be tested in the actual home." },
-      { heading: "Camera placement is a safety check", body: "The manual says to keep the unit and cord at least 3 feet (0.9m) from the crib and out of reach. Secure cords and never place the camera or adapter inside the sleep space." },
-      { heading: "Know the system limits", body: "The parent unit can pair with multiple cameras, but this is a convenience monitor—not a supervision substitute or medical device. Test alerts, sound, night view, charging, and camera switching before relying on it overnight." },
+      { heading: "Why a dedicated monitor still fits", body: "DXR-8 PRO uses a dedicated parent unit rather than a phone app or household Wi-Fi. It is an at-home viewing path, not remote internet access. Check the actual rooms, closed doors, charging and sound while another caregiver is present; a line-of-sight range figure does not prove coverage through walls. A radio-only connection also is not an independently established security guarantee." },
+      { heading: "Camera placement is a safety check", body: "Follow the selected camera's installation instructions. CPSC requires monitor cords at least 3 feet from every part of the crib, bassinet, play yard or other sleep environment and out of reach; never put a monitor inside or on the edge of a crib. Keep the camera, cords and small optical parts away from the child. A wider view does not justify moving a cord into reach." },
+      { heading: "Know the system limits and the newer SS option", body: "The current non-SS model lists up to four paired cameras and single-view monitoring. The separate DXR-8 PRO SS adds split-screen and simultaneous dual audio for two rooms. Do not transfer those SS functions to ASIN B08FF4GV5C or assume camera/monitor interchangeability from a shared family name. Keep the existing working system when it already meets the required viewing and care routine." },
+      { heading: "Use the exact power and care instructions", body: "The V3.7 manual distinguishes camera and monitor adapters, battery care and keeping electronics dry. Use the specified supplied equipment rather than a connector-only substitute. Stop using a swollen, damaged or hard-to-fit battery and follow the manufacturer's replacement route. Camera power, parent-unit charge, sound, reconnection and camera switching all need checking. This is not a medical monitor or a supervision substitute." },
     ],
     name: "Infant Optics DXR-8 PRO Baby Monitor",
     brand: "Infant Optics",
     category: "sleep",
-    image: "/images/affiliate/baby-infant-optics-dxr-8-pro.webp",
-    summary: "A dedicated baby monitor for parents who want a separate screen instead of relying on a phone app overnight.",
-    verdict: "Infant Optics DXR-8 PRO is a strong starting point for parents who want local monitoring, a parent unit, and less phone dependency at night.",
-    whyItMatters: "Baby monitors are partly about reassurance and partly about friction. A dedicated parent unit can be easier at 2 a.m. than opening an app, checking Wi-Fi, and managing phone battery.",
-    bestFor: "Parents who want a non-Wi-Fi parent unit",
+    image: "/images/affiliate/baby-parent-unit-workflow-editorial.svg",
+    imageAlt: "Editorial diagram of a camera and dedicated parent unit; not an exact DXR-8 PRO product image",
+    summary: "A non-Wi-Fi parent-unit monitor reference for checking from elsewhere at home. Verify actual room coverage and safe placement; this non-SS model does not gain the newer SS model's split-screen and dual audio.",
+    verdict: "Compare DXR-8 PRO when a dedicated at-home screen meets the job and the exact bundle, power setup and room checks pass. Compare PRO SS separately if two-room split-screen and simultaneous audio matter. Keep a suitable working monitor rather than upgrading for a newer name alone.",
+    whyItMatters: "A local screen and remote app access solve different tasks. Decide which rooms and caregivers need access before comparing features, and leave coverage unknown until it has been checked in the actual home.",
+    bestFor: "At-home parent-unit monitoring after room and placement checks",
     priceBand: "$$",
-    rating: 4.6,
-    scores: [
-      { label: "Night video", value: 9 },
-      { label: "Parent unit", value: 9 },
-      { label: "Ease of use", value: 8 },
-    ],
-    pros: ["Dedicated screen avoids phone dependence", "Good fit for overnight monitoring", "Interchangeable lens ecosystem is useful for different rooms"],
-    cons: ["Not ideal if remote app access is the main need", "Parent-unit battery and range still need household checking"],
-    specs: { ASIN: "B08FF4GV5C", "Product type": "Baby monitor", "Use case": "Local overnight monitoring", "Link status": "Amazon affiliate link verified July 16, 2026" },
+    rating: 0,
+    scores: [],
+    pros: ["Dedicated screen without a phone-app viewing routine", "Model-specific pairing and power instructions are available", "Manufacturer lists the non-SS model alongside PRO SS"],
+    cons: ["No remote internet viewing path", "Actual coverage, sound and parent-unit charge need checking", "Single view; PRO SS split-screen and dual audio are different-model features"],
+    specs: { ASIN: "B08FF4GV5C", "Product type": "DXR-8 PRO non-SS parent-unit monitor", "Published camera support": "Up to 4 cameras; single-view model", "Newer comparison": "PRO SS is separate; no SS feature or accessory compatibility transfer", "Link status": "Amazon affiliate link verified July 16, 2026; no fresh offer inspection in this document review" },
     evidence: ["Confirm ASIN B08FF4GV5C, the DXR-8 PRO bundle contents, lens options, and parent-unit details on Amazon", "Compare local monitor versus Wi-Fi preference", "Check room layout, range needs, and overnight charging routine"],
-    alternatives: ["Choose Nanit if app insights and wall-mounted tracking matter more.", "Choose a simpler audio monitor if video adds more anxiety than value."],
+    alternatives: ["Compare Nanit's exact current configuration if remote app access is necessary; the historical Essentials purchase link remains paused.", "Keep a suitable existing monitor, or compare a documented audio-only workflow if video is unnecessary."],
     offers: [
       { merchant: "Amazon US", url: "https://www.amazon.com/dp/B08FF4GV5C?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check price on Amazon", priceNote: "Confirm ASIN B08FF4GV5C, bundle contents, seller, live price, and availability." },
     ],
@@ -1167,68 +1411,87 @@ export const products: Product[] = [
   {
     site: "baby",
     slug: "nanit-pro-smart-baby-monitor",
+    purchaseCheck: "The historical Essentials purchase remains paused. Match the actual floor-stand bundle, account access and plan renewal terms separately from current camera-only or display options.",
     asin: "B0FMZ3H8SB",
     amazonTitle: "Nanit Essentials Smart Baby Monitor with Floor Stand",
     seoTitle: "Nanit Essentials Monitor Guide: Floor Stand, Plan & Bundle",
-    updatedAt: "July 16, 2026",
+    updatedAt: "October 26, 2026",
+    evidenceMode: "official-spec",
+    researchNote: "Current Nanit configuration, plan, privacy and feature-specific outage documents reviewed October 26, 2026. The Essentials ASIN is a historical bundle reference with its purchase path still paused; no fresh listing, supplied-parts, plan-quote or stock verification. No image, range, outage, security or medical-performance test.",
     name: "Nanit Essentials Smart Baby Monitor with Floor Stand",
     brand: "Nanit",
     category: "sleep",
-    image: "/images/affiliate/baby-nanit-pro-smart-baby-monitor.webp",
-    summary: "A current Nanit bundle with the Pro camera, floor stand, Sound + Light Machine, and a trial of the Insights Sleep Plan for app-based nursery monitoring.",
-    verdict: "Nanit Essentials is the premium smart-monitor comparison point when a full-height stand and connected sleep features justify the larger bundle. Confirm the included trial and ongoing plan cost rather than assuming every insight remains free.",
-    whyItMatters: "The current Amazon offer is a larger floor-stand bundle, not the older Flex Stand listing. Mount type, subscription boundaries, Wi-Fi reliability, floor space, and privacy comfort all belong in the purchase decision.",
-    bestFor: "Parents who want a floor-stand smart monitor bundle",
+    image: "/images/affiliate/baby-wifi-monitor-workflow-editorial.svg",
+    imageAlt: "Editorial diagram of a camera, Wi-Fi router and phone app; not an exact Nanit bundle image",
+    summary: "A historical Nanit Essentials floor-stand bundle reference. Its exact purchase link remains paused; current camera/display choices and Insights terms do not establish this package's contents or renewal offer.",
+    verdict: "Use this page to compare the floor-stand and account workflow, with the exact historical Essentials purchase path still paused. Confirm any replacement configuration independently. Keep a suitable existing monitor when core viewing already meets the need; extra history, analytics or a connected display are optional.",
+    whyItMatters: "A camera-only floor-stand configuration, a package with a connected display and the historical Essentials bundle are different selections. A current family page cannot restore an unresolved ASIN or establish its supplied hardware and trial.",
+    bestFor: "Comparing the floor-stand app workflow while exact bundle purchase is paused",
     priceBand: "$$$",
-    rating: 4.4,
-    scores: [
-      { label: "Smart features", value: 9 },
-      { label: "Video setup", value: 8 },
-      { label: "Budget fit", value: 5 },
-    ],
-    pros: ["Includes a full-height floor stand", "Strong app-first feature set and remote access", "Bundle includes the Sound + Light Machine"],
-    cons: ["Larger and more expensive than a camera-only package", "Some Insights features continue only with a paid plan", "Floor placement and cord routing need planning"],
-    specs: { ASIN: "B0FMZ3H8SB", "Product type": "Smart baby monitor bundle with floor stand", "Included hardware": "Nanit Pro camera, floor stand, Sound + Light Machine", "Service": "Trial of Nanit Insights Sleep Plan; confirm current renewal terms", "Use case": "App-based monitoring", "Link status": "Amazon affiliate link verified July 16, 2026" },
+    rating: 0,
+    scores: [],
+    pros: ["Current manufacturer documents distinguish core viewing from paid history", "Named caregiver permissions and required MFA are documented", "Current camera, mount and optional display choices can be compared separately"],
+    cons: ["Historical Essentials ASIN purchase remains paused", "Current bundle contents and renewal quote are unresolved", "Safe mount, cords, account and network paths need separate checks"],
+    specs: { ASIN: "B0FMZ3H8SB", "Historical bundle": "Pro camera, floor stand and Sound + Light Machine reference; recheck any replacement's own contents", "Service": "Historical Insights Sleep trial reference; no current trial duration or renewal amount established", "Current choices": "Manufacturer separates mounts and camera-only/camera-plus-display configurations", "Link status": "Historical July 16, 2026 identity; purchase paused after September 25, 2026 observation, not reverified here" },
     evidence: ["Confirm ASIN B0FMZ3H8SB and the exact floor-stand bundle contents at checkout", "Check the trial length and which Nanit Insights features require a paid plan afterward", "Measure floor space, plan safe cord routing, and compare Wi-Fi privacy comfort against local monitors"],
-    alternatives: ["Choose Infant Optics if you want a parent unit and less app dependence.", "Use an audio monitor if sleep data is not helpful for your household."],
+    alternatives: ["Compare a documented local parent-unit system when at-home viewing is sufficient.", "Keep suitable current gear when paid history or extra hardware is unnecessary; pause if safe placement or required functionality is unknown."],
+    editorialSections: [
+      { heading: "The historical bundle is not the current store selection", body: "The old Nanit Pro URL redirects to a current monitor page that separates mount and camera-only/camera-plus-display choices. It does not identify the supplied parts of historical Essentials ASIN B0FMZ3H8SB. Do not assume an added display or the Sound + Light Machine is included with a different selection. A connected display also does not turn an account-based Wi-Fi system into a local radio monitor." },
+      { heading: "Separate core viewing, paid history and the renewal quote", body: "Nanit retains core live view, background audio and alerts without Insights. Event clips, continuous video history, analytics and caregiver entitlements need their own plan check. The older support comparison is not the actual current renewal bill. Record the selected configuration, trial end, billing period and renewal quote before paying for a feature; keep core viewing alone when it meets the task." },
+      { heading: "Check the actual account and outage path", body: "Nanit requires multi-factor authentication. Use named caregivers, review their permissions and remove obsolete access. Its Breathing Motion outage article describes particular camera-power and local-network states, not a guarantee that all video, saved footage and remote alerts work offline. No security or clinical guarantee follows from these manufacturer descriptions." },
+      { heading: "Keep placement and purchase holds separate", body: "Follow the exact mount instructions. Keep cords at least 3 feet from every part of the sleep environment and out of reach, and never place a monitor inside or on the crib edge. Monitoring does not replace direct care or safe sleep practices. The exact retailer purchase remains paused until identity and terms are verified; a current manufacturer page alone does not remove that hold." },
+    ],
     sources: [
-      { name: "Nanit Pro baby monitor", url: "https://www.nanit.com/products/nanit-pro-camera?mount=floor-stand", note: "Official camera, floor-stand, monitoring, and plan positioning." },
-      { name: "Amazon Nanit Essentials bundle B0FMZ3H8SB", url: "https://www.amazon.com/dp/B0FMZ3H8SB", note: "Exact current floor-stand bundle, included Sound + Light Machine, trial, seller, and availability." },
+      { name: "Nanit current monitor configurations", url: "https://www.nanit.com/products/smart-baby-monitor", note: "Mount and optional display choices; not verification of the historical Essentials bundle." },
+      { name: "Nanit Insights FAQ", url: "https://www.nanit.com/products/insights-plan", note: "Core features without Insights; verify the actual selected plan and current quote." },
+      { name: "Nanit Insights plan comparison", url: "https://support.nanit.com/en_us/what-is-the-difference-between-the-different-nanit-insights-plans-SJylmn0Kgg", note: "Older feature table, not an account-specific renewal price." },
+      { name: "Nanit privacy and security", url: "https://www.nanit.com/pages/privacy-security", note: "Required MFA and user permissions, not an independent security audit." },
+      { name: "Nanit Breathing Motion outage guidance", url: "https://support.nanit.com/en_us/will-the-monitoring-work-if-my-internet-connectionwi-fi-is-down.-HyCAhAFxe", note: "Feature-specific camera-power and network scope, not all-functions offline approval." },
+      { name: "CPSC monitor cord warning", url: "https://www.cpsc.gov/s3fs-public/5066.pdf", note: "Placement, reach and sleep-environment cord distance." },
     ],
     offers: [{ merchant: "Amazon US", url: "https://www.amazon.com/dp/B0FMZ3H8SB?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check price on Amazon", priceNote: "Confirm ASIN B0FMZ3H8SB, floor stand, Sound + Light Machine, trial terms, seller, live price, and availability." }],
   },
   {
     site: "baby",
     slug: "baby-jogger-city-tour-2-stroller",
+    purchaseCheck: "Confirm the selected Eco Black package, included parts, child instructions and complete folded loading path. A family measurement does not prove car or airline fit; keep an existing suitable stroller.",
     asin: "B0CN79NZ8J",
     amazonTitle: "Baby Jogger City Tour 2 Ultra-Compact Travel Stroller with Belly Bar",
-    updatedAt: "October 8, 2026",
+    seoTitle: "Baby Jogger City Tour 2: Fold, Eco Version and Fit Checks",
+    updatedAt: "October 26, 2026",
     evidenceMode: "official-spec",
-    researchNote: "Official-spec travel-stroller guide using Baby Jogger documentation and the exact Amazon listing; this is not a hands-on fold, carry, wheel, comfort, or airline-fit test.",
+    researchNote: "Manufacturer documentation and model-family pages reviewed October 26, 2026. The ASIN and Eco Black/belly-bar package are historical retailer references, not a fresh inspection of seller, stock or supplied parts. No physical fold, lift, child-fit, wheel, comfort or airline test.",
     sources: [
-      { name: "Baby Jogger City Tour 2 stroller", url: "https://www.babyjogger.com/strollers/shop-all-strollers/compact-and-lightweight/baby-jogger-city-tour-2-ultra-compact-travel-stroller/SAP_2081849.html", note: "Official weight, fold, recline, calf support, travel-system, recommended-use, and accessory reference." },
-      { name: "Amazon listing B0CN79NZ8J", url: "https://www.amazon.com/dp/B0CN79NZ8J", note: "Exact current variant, included belly bar, seller, price, stock, and return terms." },
+      { name: "Baby Jogger City Tour 2 specifications", url: "https://help.babyjogger.com/s/article/CITY-TOUR-2-SPECIFICATIONS", note: "Separates folded stroller, shipping box, seat load and other load figures. Match the actual version and regional instructions before applying a measurement." },
+      { name: "Baby Jogger current City Tour 2 collection", url: "https://www.babyjogger.com/strollers/shop-all-strollers/compact-and-lightweight/city-tour-2/", note: "Manufacturer collection currently includes City Tour 2 Eco. This does not establish the exact Amazon ASIN's configuration, seller or availability." },
+      { name: "Baby Jogger discontinued products", url: "https://www.babyjogger.com/discontinued-products.html", note: "Distinguishes the original City Tour from City Tour 2. An expired product URL or a different stroller family's newer generation does not establish discontinuation of this selected version." },
+      { name: "American Airlines stroller guidance", url: "https://www.aa.com/web/i18n/travel-info/special-assistance/traveling-children.html", note: "One carrier's check-in and gate-check guidance; confirm the operating carrier and actual trip." },
+      { name: "CPSC stroller restraint alert", url: "https://www.cpsc.gov/safety-education/safety-guides/kids-and-babies/infants-strollers-must-be-properly-secured-all-times", note: "Harness use and supervision, including with a reclined seat. Not individual model or recall clearance." },
+      { name: "Amazon listing B0CN79NZ8J", url: "https://www.amazon.com/dp/B0CN79NZ8J", note: "Historical retailer identity reference. Recheck the exact version, supplied belly bar/bag, seller, live price, stock and returns at the retailer." },
     ],
     name: "Baby Jogger City Tour 2 Stroller",
     brand: "Baby Jogger",
     category: "travel",
     image: "/images/affiliate/baby-travel-stroller-realistic.webp",
-    summary: "A compact travel stroller for families who need a smaller fold without giving up everyday errand usability.",
-    verdict: "City Tour 2 is a practical travel-stroller pick when storage and car-trunk space matter, but the stroller still needs to feel useful outside the airport.",
-    whyItMatters: "Travel strollers are often bought for one trip, then used for errands every week. Fold size, recline, basket access, and wheel behavior all matter.",
-    bestFor: "Families balancing travel and daily errands",
+    imageAlt: "Editorial compact-stroller scene; not an exact City Tour 2 configuration",
+    summary: "Compare this City Tour 2 reference only after matching the selected Eco Black package, the child's instructions and the actual folded loading path. A small fold does not prove car or cabin fit.",
+    verdict: "City Tour 2 remains a model family to compare for limited storage: the current manufacturer collection lists City Tour 2 Eco. Confirm that the retailer's selected version and supplied parts match the instructions you use; no replacement is needed if the existing stroller already meets the job.",
+    whyItMatters: "Fold dimensions, carton dimensions and child-seat limits answer different questions. A published model-family measurement does not settle the received package, the caregiver's lift or the child's suitability.",
+    bestFor: "A measured small-storage routine with the exact child and model fit confirmed",
     priceBand: "$$",
-    rating: 4.4,
-    scores: [
-      { label: "Fold size", value: 9 },
-      { label: "Maneuvering", value: 8 },
-      { label: "Storage", value: 6 },
+    rating: 0,
+    scores: [],
+    pros: ["Manufacturer support separates folded dimensions from the shipping box", "Current collection provides a City Tour 2 Eco comparison reference", "Fold, carry and accessory questions can be checked against the exact regional instructions"],
+    cons: ["No physical loading, wheel, comfort or child-fit test is available here", "The support-table model and selected Eco bundle are not assumed dimensionally identical", "Airline carriage and actual bin space require a separate trip-specific check"],
+    specs: { ASIN: "B0CN79NZ8J", "Product type": "Compact travel stroller reference", "Historical selected package": "Eco Black with belly bar; recheck supplied parts", "Model-family fold reference": "21.6 × 16.9 × 6.8 in in the City Tour 2 support table; confirm the selected version", "Current manufacturer collection": "City Tour 2 Eco listed; exact retailer configuration still needs checking", "Link status": "Amazon affiliate link verified July 16, 2026; no fresh offer inspection in this document review" },
+    evidence: ["Match ASIN B0CN79NZ8J, the selected version, color, belly bar, bag and any other supplied accessories before using their dimensions", "Measure the car opening, usable storage, loading motion and remaining luggage room; resolve a tight result with an actual fit check", "Read the exact seat and accessory instructions for child suitability, restraint, load limits and approved combinations; near-flat recline does not establish newborn approval"],
+    alternatives: ["Keep the existing stroller when it remains suitable for the child and already fits the routine.", "Compare Summer 3Dlite only with its own current instructions, complete folded dimensions and retailer package; no comfort or value ranking is established here.", "If daily handling or storage is still unresolved, compare another documented configuration before choosing a replacement."],
+    editorialSections: [
+      { heading: "Current family, selected version and old links", body: "The previous manufacturer product URL has expired, but the current official collection lists City Tour 2 Eco. The discontinued-products page identifies the original City Tour as a predecessor. Neither an expired URL nor another Baby Jogger family's newer generation proves this selected City Tour 2 package is discontinued. This review has not established a like-for-like successor to ASIN B0CN79NZ8J or a fresh Amazon offer." },
+      { heading: "Use the right fold measurement", body: "The City Tour 2 support table lists a 21.6 × 16.9 × 6.8 inch fold separately from its shipping box. Treat it as a named-model reference until the regional version, included parts and folding instructions agree with the selected package. Measure the complete package you intend to load, including a bag and any attached parts. All three dimensions, the trunk opening, loading movement and hatch closure matter; a volume or floor-plan comparison alone is insufficient." },
+      { heading: "Check the child and the adult's routine", body: "Follow the exact seat's age, developmental, height and weight requirements and approved accessory combinations. A belly bar or reclined seat does not replace the harness or supervision. With the child safely out and supervised, check the documented fold, latch, carry point and lift. Handling, canopy and basket access need a practical check on the intended routes; no measured ride or maneuvering result is claimed here." },
+      { heading: "Keep a separate flight and no-buy decision", body: "Check the operating carrier's current cabin, gate-check and ticket-counter rules for the trip and keep a permitted fallback. American Airlines is one policy example, not approval by another carrier or a guarantee of bin space. Pause when the child's suitability, regional instructions, selected package or physical loading path remains unknown. Keep a suitable existing stroller when it already meets the need." },
     ],
-    pros: ["Compact fold for small cars and apartments", "More everyday-friendly than ultra-minimal umbrella strollers", "Good fit for travel-stroller comparisons"],
-    cons: ["Basket space is limited", "Rough sidewalks may still favor a larger stroller"],
-    specs: { ASIN: "B0CN79NZ8J", "Product type": "Ultra-compact travel stroller", Color: "Eco Black", "Included accessory": "Belly bar", "Use case": "Errands and travel", "Link status": "Amazon affiliate link verified July 16, 2026" },
-    evidence: ["Confirm ASIN B0CN79NZ8J, Eco Black color, belly bar, and any other included accessories on Amazon", "Compare folded dimensions against trunk, hallway, and airline storage needs; carry-on rules vary", "Check age, weight, recline, basket access, and car-seat adapter compatibility"],
-    alternatives: ["Choose Summer 3Dlite if price and simplicity matter more.", "Choose a full-size stroller if rough sidewalks are daily reality."],
     offers: [
       { merchant: "Amazon US", url: "https://www.amazon.com/dp/B0CN79NZ8J?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check price on Amazon", priceNote: "Confirm ASIN B0CN79NZ8J, Eco Black variant, belly bar, seller, live price, and availability." },
     ],
@@ -1236,35 +1499,41 @@ export const products: Product[] = [
   {
     site: "baby",
     slug: "summer-3dlite-convenience-stroller",
+    purchaseCheck: "The exact purchase remains paused until the selected model and applicable manual are matched. Do not borrow child limits or folded dimensions from another 3Dlite SKU.",
     asin: "B0D5BGKNBX",
     amazonTitle: "Summer by Ingenuity 3Dlite Convenience Stroller",
-    updatedAt: "October 8, 2026",
+    seoTitle: "Summer 3Dlite: Model, Child Fit and Fold Checks",
+    updatedAt: "October 26, 2026",
     evidenceMode: "official-spec",
-    researchNote: "Official-instruction and exact-listing guide. The current product page is not reliably available from the manufacturer, so this page does not claim hands-on fold, wheel, comfort, durability, or airline-fit findings.",
+    researchNote: "Current Kids2 model pages and the linked 2025 manual reviewed October 26, 2026, alongside the older family manual. Exact instructions applicable to historical ASIN B0D5BGKNBX remain unresolved, so its purchase is paused. No physical fold, handling, comfort, durability or airline test; no fresh seller, stock or return observation.",
     sources: [
-      { name: "Summer Infant 3Dlite instruction manual", url: "https://m.media-amazon.com/images/I/C11b2ZSi3ES.pdf", note: "Manufacturer-branded instruction and safety reference for the 3Dlite family; match the model and current manual before use." },
-      { name: "Amazon listing B0D5BGKNBX", url: "https://www.amazon.com/dp/B0D5BGKNBX", note: "Exact current Summer by Ingenuity variant, limits, seller, price, stock, and return terms." },
+      { name: "Kids2 3Dlite SKU 32843-000", url: "https://www.kids2.com/products/32843-000-summer-by-ingenuity-3dlite-convenience-stroller-jet-black", note: "Current Jet Black family reference and original manual route; not established as the selected historical ASIN." },
+      { name: "Kids2 3Dlite SKU 32303-000", url: "https://www.kids2.com/products/32303-000-summer-by-ingenuity-3dlite-convenience-stroller", note: "A separate current SKU. Do not transfer its age field, dimensions, parts or instructions to another selection." },
+      { name: "Kids2 21930/32843 manual, June 2025", url: "https://images.salsify.com/image/upload/s--iQDrVPv_--/woyvtadtahb5aekcoj0d.pdf", note: "English instructions and diagrams read in full. Listed model scope does not establish applicability to B0D5BGKNBX." },
     ],
     name: "Summer 3Dlite Convenience Stroller",
     brand: "Summer",
     category: "travel",
-    image: "/images/affiliate/baby-summer-3dlite-convenience-stroller.webp",
-    summary: "A budget-friendly lightweight stroller for errands, grandparents' cars, and simple travel needs.",
-    verdict: "Summer 3Dlite is the value comparison pick: not the most polished stroller, but a sensible lightweight option when budget and simplicity lead.",
-    whyItMatters: "A second stroller can be useful if it folds easily, stores easily, and does not make short errands feel like a gear project.",
-    bestFor: "Budget lightweight stroller needs",
+    image: "/images/affiliate/baby-travel-stroller-realistic.webp",
+    imageAlt: "Editorial compact-stroller scene; not an exact Summer 3Dlite product photo",
+    summary: "A Summer/Ingenuity 3Dlite family reference with the exact ASIN purchase paused while model and manual applicability are checked. Current family pages do not establish the selected version's child limits or complete fold.",
+    verdict: "Compare the documented 3Dlite family only after the received model, child requirements and actual loading routine are established. The historical B0D5BGKNBX purchase remains paused. Keep a suitable existing stroller instead of buying a second one for an unverified price or comfort advantage.",
+    whyItMatters: "A family name can cover different colors, SKUs and instructions. Child suitability, fold procedure and supplied parts must match the actual selection before a compact or lightweight label can help the decision.",
+    bestFor: "Checking exact 3Dlite instructions before any new purchase",
     priceBand: "$",
-    rating: 4.2,
-    scores: [
-      { label: "Budget fit", value: 9 },
-      { label: "Weight", value: 8 },
-      { label: "Premium feel", value: 5 },
+    rating: 0,
+    scores: [],
+    pros: ["Current Kids2 family pages provide named SKU references", "Manufacturer-linked instructions distinguish harness, fold and care checks", "Existing suitable gear remains a valid alternative"],
+    cons: ["Exact ASIN-to-manual applicability is unresolved; purchase paused", "No verified complete fold for the selected retailer version", "No physical comfort, wheel, durability or value ranking"],
+    specs: { ASIN: "B0D5BGKNBX", "Product type": "Historical 3Dlite family reference", "Model and manual": "Unresolved for the selected ASIN; 21930/32843 manual is not automatically applicable", "Folded dimensions": "Obtain all 3 measurements for the exact version and attached parts", "Child limits": "Use the matched regional manual; no limits transferred from another SKU", "Link status": "Historical July 16, 2026 identity; documentation review has not refreshed retailer availability" },
+    evidence: ["Match the received label, SKU, current regional instructions and supplied parts; a family-name match is insufficient", "Check the child's age, development, height and weight against that exact manual", "Measure the complete fold, loading movement, trunk opening and daily carry routine without a child in the stroller"],
+    alternatives: ["Keep a suitable existing stroller when it already fits the child's needs and real loading routine.", "Compare City Tour 2 only against its own selected version and instructions; this page does not establish a comfort or price winner."],
+    editorialSections: [
+      { heading: "Current family pages do not settle the historical ASIN", body: "Kids2 currently lists 3Dlite SKUs including 32843-000 and 32303-000. The linked 2025 manual identifies 21930/32843, while the older December 2015 family document lists earlier model codes. The retailer reference has not been reconciled to that scope. This is a documentation gap, not proof that the whole family is discontinued, unsafe or replaced by a particular newer model. The exact purchase stays paused." },
+      { heading: "Use the matching instructions before applying limits", body: "Read the actual label and regional manual for child suitability, restraint, permitted accessories, child load and separate basket or cup-holder loads. Do not transfer one SKU's age field or another manual's numbers. Recline is not newborn approval or permission to leave a child unattended. Pause when those requirements cannot be established." },
+      { heading: "Check the complete fold and adult routine", body: "Measure all three dimensions of the actual folded version, including the bag and anything that remains attached. With the child safely out and supervised, follow that model's fold, latch and carry instructions and check the loading path, hatch closure and adult lift. No listed footprint, shipping carton or lightweight label proves vehicle fit or easy handling." },
+      { heading: "Care, flights and keeping the current stroller", body: "Use the matching manual's cleaning and inspection rules and keep children clear of assembly and folding. Check the operating carrier's current stroller rules separately; no cabin acceptance is established here. Retain a suitable existing stroller when it already solves the task, and compare another documented model only for a specific remaining need." },
     ],
-    pros: ["Lower cost than premium travel strollers", "Easy to keep as a secondary stroller", "Useful for quick errands"],
-    cons: ["Less refined than premium compact strollers", "Comfort and wheel feel have limits"],
-    specs: { ASIN: "B0D5BGKNBX", "Product type": "Lightweight stroller", "Use case": "Budget travel", "Link status": "Amazon affiliate link verified July 16, 2026" },
-    evidence: ["Confirm ASIN B0D5BGKNBX, the current Summer by Ingenuity 3Dlite variant, color, and weight limit", "Compare folded size to car trunk or closet space", "Use as a value lightweight stroller rather than an all-terrain stroller"],
-    alternatives: ["Choose Baby Jogger City Tour 2 for a more compact travel-first setup.", "Choose a full-size stroller if storage and suspension are priorities."],
     offers: [
       { merchant: "Amazon US", url: "https://www.amazon.com/dp/B0D5BGKNBX?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check price on Amazon", priceNote: "Confirm ASIN B0D5BGKNBX, variant, seller, live price, and availability." },
     ],
@@ -1481,48 +1750,192 @@ export const roundups: Roundup[] = [
   {
     site: "pet",
     slug: "best-automatic-cat-feeders",
-    updatedAt: "June 21, 2026",
-    title: "Automatic Cat Feeders for Consistent Meals",
-    dek: "Scheduled feeders should solve meal timing without creating cleaning problems, food jams, or a new routine your pet can defeat.",
+    updatedAt: "October 26, 2026",
+    title: "Automatic Cat Feeders: Scheduled Meals or RFID Access?",
+    dek: "Compare Granary meal scheduling with One RFID food access, then check dry-food size, actual portion weight, emergency power and daily care.",
     category: "feeding",
-    intent: "Choose a feeder that keeps meal timing steady without creating cleaning or jamming problems.",
-    intro: "Automatic feeders are useful when the household schedule is inconsistent, but they are not all-purpose pet sitters. Start with food type, portion range, cleaning access, and whether the hopper can survive a curious cat. Smart features are nice only after the feeding path is reliable.",
+    intent: "Separate a meal-timing need from access control and confirm the actual food and care routine before buying.",
+    quickAnswer: "Start with Granary PLAF103 when the job is scheduling compatible dry food and selective access is unnecessary. Compare One RFID PLAF301 when access for one pet matters and its dedicated collar tag and reader are suitable. Neither model identifies an implanted microchip, turns a volume setting into a fixed gram allowance or replaces daily human care. Keep the current routine if it already works.",
+    purchaseCheck: "The first listing is the Granary reference for scheduled dry meals, not RFID access. Pause until the selected model, food size, repeated portion weights and care plan are confirmed. Choose no new feeder when the existing routine meets the need; an app success message does not prove the pet ate.",
+    intro: "A late meal and one pet stealing another's food are different problems. Granary's scheduling and One RFID's tagged access should be compared against those jobs rather than treated as a universal ranking. The linked product identities are historical retailer references; check the selected model, supplied parts, seller and returns again. This comparison uses manufacturer documentation and has not measured jamming, access success or portion repeatability.",
     decisionGuide: [
-      { label: "Dry-food routine", detail: "Choose a feeder with clear portion controls and a hopper that seals well." },
-      { label: "Pet eats too fast", detail: "A slow feeder may solve the problem better than a scheduled feeder." },
-      { label: "Short trips", detail: "Prioritize power backup, food capacity, and a simple schedule you can verify before leaving." },
-      { label: "Multiple pets", detail: "Check whether one pet can steal meals before assuming a single feeder is enough." },
+      { label: "Scheduling only", detail: "Check Granary PLAF103 with compatible dry food and an individually established feeding plan. Weigh repeated actual dispenses before relying on the setting." },
+      { label: "Selective access", detail: "Check One RFID PLAF301's dedicated collar tag and reader with the intended pet. It is not an implanted-microchip reader; other pets' access must be observed." },
+      { label: "Wet food or a special diet", detail: "These dry-food models are not substitutes for a documented wet-food system or veterinary feeding instructions. Pause when the food or dietary requirement is unresolved." },
+      { label: "Away from home", detail: "Arrange human checks for food received and eaten, water, litter and wellbeing. Verify the exact revision's backup functions rather than assuming normal remote visibility." },
     ],
-    methodology: ["Check dry-food compatibility before app features", "Compare hopper size against real feeding schedule", "Prioritize cleaning access around the chute and bowl"],
-    productSlugs: ["petlibro-one-rfid-smart-feeder", "petlibro-granary-automatic-cat-feeder"],
+    sources: [
+      { name: "PETLIBRO Granary Wi-Fi feeder instructions", url: "https://petlibro.com/pages/how-the-granary-wifi-feeder-works", note: "PLAF103 dry-food size and emergency-power restrictions; not an independent reliability test." },
+      { name: "PETLIBRO portion explanation", url: "https://petlibro.com/pages/how-much-is-in-one-feeding-portion-plaf001-002-101-102-plaf003-004-plaf005-006-103-203-plaf008-plaf107-plaf108-plaf301", note: "Portion volume is not a fixed food weight or calorie allowance." },
+      { name: "PETLIBRO One RFID specifications and FAQ", url: "https://petlibro.com/products/one-rfid-pet-feeder", note: "PLAF301 uses its own collar tag and reader, not an implanted microchip. Match the supplied model and backup restrictions." },
+      { name: "PETLIBRO One RFID V0005 manual", url: "https://cdn.shopify.com/s/files/1/0252/5197/1119/files/Petlibro-AF301-3L-_US_DE_IT_FR_ES.pdf?v=1774007057", note: "English battery mode retains Wi-Fi, unlike older product/support wording. Match the received revision before depending on a function." },
+      { name: "PETLIBRO Granary 2 series", url: "https://petlibro.com/products/granary-2-series", note: "Newer weighing and model-specific access options are separate comparisons. Do not transfer their features or battery mode to PLAF103 or PLAF301." },
+      { name: "PETLIBRO Granary disassembly and cleaning", url: "https://petlibro.com/pages/how-do-i-disassemble-and-clean-the-granary-smart-feeder-af103-plaf103", note: "Separate washable removable parts from the powered base; full drying before reassembly." },
+    ],
+    sections: [
+      { heading: "Match the food and measure the delivered portion", body: "The cited PLAF103 and PLAF301 documentation specifies dry food in the 2–15 mm size range. Match the actual shape and texture as well as size, and do not add wet, moist or otherwise unsupported food. A numbered portion represents volume, so different foods can produce different weights. Use the feeding allowance appropriate to the individual pet, weigh repeated dispenses of the actual food and recheck after a food change. This comparison does not prescribe a gram or calorie target." },
+      { heading: "Test access separately from timing", body: "One RFID PLAF301 relies on its dedicated collar tag and reader; it does not read an implanted identification chip or arbitrary third-party tags. Observe the intended pet learning access and check whether another pet can reach or steal the meal. Granary scheduling alone does not provide this selective access. A completed app event is not proof that food reached the bowl or that the intended pet consumed it." },
+      { heading: "Compare a newer model for the feature you need", body: "PETLIBRO now lists Granary 2 models with weighing, while camera and access features vary across the series. Those are separate models from PLAF103 and One RFID PLAF301. The links here remain those older identities; no newer feature or purchase is silently substituted." },
+      { heading: "Keep power recovery and care in the plan", body: "PLAF103's manual disables Wi-Fi and some controls in emergency alkaline-battery operation while retaining saved meals. One RFID needs a separate revision check: its V0005 manual retains Wi-Fi, but product/support wording says otherwise. Leave the received unit's behavior unresolved until its instructions and an actual recovery check agree. Do not infer indefinite battery life or remote visibility. Human care must still cover meals, water, litter and wellbeing even on a short absence." },
+      { heading: "Make cleaning practical before committing", body: "Check the chute, bowl, hopper, removable parts and complete drying routine. Granary's instructions distinguish washable components from its powered base, which must not be rinsed or wet-wiped. Follow the selected model's own cleaning instructions rather than transferring a dishwasher or immersion claim from another feeder. Keep the existing feeding arrangement when it already provides suitable meals and care; pause for unresolved food fit, access or portion evidence." },
+    ],
+    methodology: ["Manufacturer instructions and model/portion tables reviewed October 26, 2026; no physical dispense, jam, tamper or access test.", "Compare meal scheduling and selective access as separate needs; no single model is required for every household.", "Retailer identities are historical references. Live seller, stock, included tag/reader and returns must be confirmed separately."],
+    productSlugs: ["petlibro-granary-automatic-cat-feeder", "petlibro-one-rfid-smart-feeder"],
     faqs: [
-      { question: "Are automatic feeders safe for wet food?", answer: "Most are designed for dry kibble. Wet-food feeders need cooling packs and shorter holding times." },
-      { question: "What matters most for cats on a diet?", answer: "Portion repeatability and a tamper-resistant lid matter more than camera or voice features." },
-      { question: "Should I still have someone check on my pet?", answer: "Yes for longer trips. A feeder can support routine, but it does not replace water checks, litter care, and general pet safety." },
+      { question: "Can these two feeders dispense wet food?", answer: "No wet-food use is established here: the cited Granary PLAF103 and One RFID PLAF301 documentation specifies dry food. A separate wet-food design needs its own food, cooling, holding-time and cleaning instructions; do not assume all such designs use the same cooling method." },
+      { question: "Does one portion mean the same number of grams?", answer: "No. The manufacturer's setting describes volume, and weight varies with the actual food. Establish the pet's feeding plan separately, weigh repeated dispenses and recheck after a food change. Do not infer calories or a dietary prescription from the portion count." },
+      { question: "Does RFID mean it reads my pet's microchip?", answer: "No. One RFID PLAF301 uses its dedicated collar tag and reader. Verify that the supplied parts and the intended pet's use work for the access problem; Granary is the scheduling reference here." },
+      { question: "Should someone still check on my pet during a short trip?", answer: "Yes. Arrange human care to confirm meals are received and eaten and to check water, litter and wellbeing. A feeder, camera, app log or emergency battery does not establish that these needs have been met." },
     ],
   },
   {
-    site: "pet",
-    slug: "best-pet-cameras-for-apartments",
-    updatedAt: "June 21, 2026",
-    title: "Pet Cameras for Apartments",
-    dek: "Apartment-friendly pet cameras should balance room coverage, privacy comfort, alerts, and whether interactive features are actually useful.",
-    category: "home-care",
-    intent: "Keep an eye on pets without turning every hallway shadow into a notification.",
-    intro: "A pet camera should reduce worry, not create a second stream of notifications. Dedicated pet cameras are better for interaction, while budget pan-and-tilt cameras can be enough for simple check-ins. The right choice depends on room layout, privacy comfort, subscription tolerance, and how your pet reacts to voice or treats.",
-    decisionGuide: [
-      { label: "Dog responds to treats", detail: "A treat-tossing camera can make short check-ins more useful." },
-      { label: "Simple room check", detail: "A budget pan-and-tilt camera may be enough if live view is the main need." },
-      { label: "Privacy-sensitive home", detail: "Check indicator lights, storage settings, and placement before buying." },
-      { label: "Notification fatigue", detail: "Favor adjustable alerts over the longest feature list." },
+    "site": "pet",
+    "slug": "best-pet-cameras-for-apartments",
+    "updatedAt": "October 26, 2026",
+    "title": "Pet Cameras for Apartments: Basic Check-ins or Treat Interaction?",
+    "dek": "Compare Pan v3 and Furbo 360 by recording task, activation contract, placement and account access rather than a universal ranking.",
+    "category": "home-care",
+    "intent": "Choose a camera workflow only after its model, storage and contract checks.",
+    "purchaseFlow": "task-links",
+    "quickAnswer": "Use a basic check-in or local-recording workflow when interaction is unnecessary; compare Furbo only when treat interaction and its applicable plan are useful. The historical Wyze ASIN remains paused for identity drift. The linked Furbo is paid-activation hardware, not confirmed subscription-free equipment. Keep a suitable existing camera when neither adds value.",
+    "purchaseCheck": "Choose the task and exact model below before opening a retailer. Wyze’s held ASIN has no shopping substitute. For Furbo, confirm the billed contract and budget for ongoing service; basic access after cancellation is unresolved. Do not buy through an unidentified model, plan or room-coverage result.",
+    "intro": "An apartment camera may answer a short live-check question, preserve an earlier recording or enable interaction. Those are different jobs. This comparison uses manufacturer documentation and historical retailer identities, with no physical image, tracking, latency, acoustic or security test. A low hardware price cannot resolve a subscription commitment or a wrong ASIN.",
+    "decisionGuide": [
+      {
+        "label": "Occasional live checks",
+        "detail": "Check the exact camera’s free-function terms, useful view and account access. A working existing camera may already meet this job."
+      },
+      {
+        "label": "Retrieve earlier events",
+        "detail": "Compare local card playback with cloud event history, including retention and export. A card slot is not an offline-app promise."
+      },
+      {
+        "label": "Treat interaction",
+        "detail": "Check Furbo only if the dog accepts the routine and the applicable paid contract is acceptable."
+      },
+      {
+        "label": "No confirmed purchase match",
+        "detail": "Keep Wyze’s identity hold and leave unknown contract or coverage results unresolved. Do not replace it with a different paid workflow."
+      }
     ],
-    methodology: ["Match camera type to the pet's behavior", "Check storage and subscription requirements", "Place the camera where the pet actually rests"],
-    productSlugs: ["furbo-360-dog-camera", "wyze-cam-pan-v3-pet-camera"],
-    faqs: [
-      { question: "Do pet cameras need subscriptions?", answer: "Live view usually works without one, but cloud history and smarter alerts often cost extra." },
-      { question: "Where should a pet camera go?", answer: "Place it where your pet naturally rests, with a visible status light and no view into private neighbor spaces." },
-      { question: "Is treat tossing always worth it?", answer: "No. It is useful for some dogs, but unnecessary for pets that ignore treats or become overexcited." },
+    "comparisonTable": {
+      "title": "Compare workflows and unresolved boundaries",
+      "columns": [
+        "Wyze Cam Pan v3 reference",
+        "Furbo 360 Dog paid-activation reference"
+      ],
+      "rows": [
+        {
+          "label": "Task",
+          "values": [
+            "Room check-ins or model-specific card recording",
+            "Check-ins plus treat interaction"
+          ]
+        },
+        {
+          "label": "Purchase identity",
+          "values": [
+            "Historical ASIN held after fixed Cam v3 observation",
+            "Historical ASIN requires paid activation"
+          ]
+        },
+        {
+          "label": "Ongoing costs",
+          "values": [
+            "Card and optional cloud/AI services checked separately",
+            "Selected billed plan, renewal and additional cameras"
+          ]
+        },
+        {
+          "label": "Unknown",
+          "values": [
+            "Corrected exact Pan v3 offer not established",
+            "Post-cancellation basic access conflicts in official articles"
+          ]
+        },
+        {
+          "label": "No-purchase route",
+          "values": [
+            "Keep a suitable existing camera or wait for a matched offer",
+            "Skip if interaction or recurring service adds no useful action"
+          ]
+        }
+      ]
+    },
+    "sections": [
+      {
+        "heading": "Do not let the first shopping button choose the job",
+        "body": "The comparison cards identify the model and its conditions. A fixed Wyze Cam v3 is not Cam Pan v3, and Furbo’s subscription-required ASIN does not acquire the free features documented for Standalone hardware. A held model therefore does not automatically hand the user to another product with a different activation or storage contract."
+      },
+      {
+        "heading": "Keep new cameras separate from historical identities",
+        "body": "Wyze documents Pan v4 as a newer model with different resolution and networking. Furbo’s current catalog includes Mini 360 and a separate Cat Camera. These are comparison candidates, not silent updates to the linked historical ASINs. New releases do not establish discontinuation, nor do their specifications prove the old model’s behavior."
+      },
+      {
+        "heading": "Check the home and account before relying on an image",
+        "body": "Review the actual useful area, blind spots, cable route and supported power supply. Limit household exposure and use appropriate authentication and individual sharing where supported. A connected icon, privacy label or rotating lens does not prove coverage, account security or that the pet is well. Maintain a human response when access fails."
+      }
     ],
+    "methodology": [
+      "Manufacturer model, activation, storage and privacy guidance reviewed October 26, 2026; no hands-on performance ranking.",
+      "Compare live check-ins, recordings and treat interaction as separate tasks.",
+      "Retailer observations remain dated historical evidence; current seller, stock, selected contract and returns need separate verification."
+    ],
+    "productSlugs": [
+      "wyze-cam-pan-v3-pet-camera",
+      "furbo-360-dog-camera"
+    ],
+    "sources": [
+      {
+        "name": "Wyze Pan v3 technical specifications",
+        "url": "https://support.wyze.com/hc/en-us/articles/11795670894875-Wyze-Cam-Pan-v3-Tech-Specs",
+        "note": "Model-specific camera, network and card boundaries."
+      },
+      {
+        "name": "Wyze local versus cloud recording",
+        "url": "https://support.wyze.com/hc/en-us/articles/7372980709275-How-do-Cam-Plus-and-a-microSD-card-compare",
+        "note": "Different recording and paid-feature paths."
+      },
+      {
+        "name": "Wyze Pan v4 comparison",
+        "url": "https://support.wyze.com/hc/en-us/articles/40185187360155-How-is-Wyze-Cam-Pan-v4-different-than-Wyze-Cam-Pan-v3",
+        "note": "Newer model remains separate from Pan v3."
+      },
+      {
+        "name": "Furbo Standalone basic functions",
+        "url": "https://help.furbo.com/hc/en-us/articles/17462722245785-Basic-Features-you-can-use-without-Furbo-Nanny",
+        "note": "Free-function scope does not certify Subscription Required hardware."
+      },
+      {
+        "name": "Furbo plans and access",
+        "url": "https://help.furbo.com/hc/en-us/articles/17462739016089-Furbo-Nanny-Plans-and-Pricing",
+        "note": "Active-plan wording conflicts with activation-page basic-access wording."
+      },
+      {
+        "name": "Furbo activation instructions",
+        "url": "https://help.furbo.com/hc/en-us/articles/17462056102169-How-to-Setup-and-Activate-Nanny-Bundle-Camera-Subscription-Required",
+        "note": "Exact post-cancellation entitlement remains unconfirmed."
+      },
+      {
+        "name": "Furbo current camera choices",
+        "url": "https://furbo.com/us/products/furbo-360-dog-camera",
+        "note": "Mini 360 and Cat Camera are separate model comparisons."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Do all pet cameras have free live view?",
+        "answer": "No universal rule applies. Furbo’s Standalone basic-feature page does not describe every subscription-required purchase. Identify the exact hardware and applicable terms; the linked paid-activation Furbo has unresolved post-cancellation access."
+      },
+      {
+        "question": "Does a microSD slot mean no internet is needed?",
+        "answer": "No. Local recording is a storage path, while account setup, app playback and remote access have their own dependencies. Check the exact model and required function rather than treating a card slot as a local-only guarantee."
+      },
+      {
+        "question": "Should I replace a working camera with the newest model?",
+        "answer": "Only when the new model solves an established task after its own checks. Pan v4 and Furbo Mini 360 specifications do not update these historical ASINs, and a newer release does not prove an older model discontinued."
+      }
+    ]
   },
   {
     site: "pet",
@@ -1548,27 +1961,137 @@ export const roundups: Roundup[] = [
     ],
   },
   {
-    site: "pet",
-    slug: "best-dog-beds-and-comfort-upgrades",
-    updatedAt: "June 22, 2026",
-    title: "Dog Beds and Comfort Upgrades for Everyday Rest",
-    dek: "A good comfort upgrade should match your pet's sleep position, cleaning needs, floor space, and chewing behavior.",
-    category: "comfort",
-    intent: "Choose comfort gear that pets actually use and owners can keep clean.",
-    intro: "Pet comfort gear is easy to buy emotionally and hard to keep using if it is the wrong size, hard to wash, or placed where the pet never rests. Start with sleeping shape, washable covers, and where the bed will live in the room.",
-    decisionGuide: [
-      { label: "Dog curls or leans", detail: "A bolstered bed can feel more secure than a flat mat." },
-      { label: "Hot climate", detail: "Consider airflow and washable surfaces before thick foam." },
-      { label: "Heavy shedding", detail: "Pair the bed with a reusable hair-removal routine." },
-      { label: "Chewer", detail: "Avoid assuming premium foam means chew-proof construction." },
+    "site": "pet",
+    "slug": "best-dog-beds-and-comfort-upgrades",
+    "updatedAt": "October 26, 2026",
+    "title": "Dog Bed Fit and Fabric Cleanup: Two Different Decisions",
+    "dek": "Check sleeping space, room footprint and layer care for a bed; compare a hair roller only for a separate fabric-cleanup task.",
+    "category": "comfort",
+    "intent": "Separate bedding fit from surface cleanup and retain a working existing setup.",
+    "purchaseFlow": "task-links",
+    "quickAnswer": "Choose a bed for usable sleeping area, room access and exact layer care. Choose a hair-removal tool only for compatible fabric cleanup. PetFusion’s historical purchase remains paused because its exact SKU and care are unresolved; ChomChom Black Classic does not replace a bed, washing or deep cleaning. Keep suitable existing equipment when replacement adds no value.",
+    "purchaseCheck": "Choose the actual task below. The held PetFusion bed has no automatic roller substitute. Before choosing Black Classic, confirm exact version, surface and care instructions and current seller terms. Pause for unresolved fit or fabric compatibility; keeping a working bed and cleanup method is valid.",
+    "intro": "A better place to rest and a quicker way to remove loose hair are separate household needs. Pairing them on one page should not turn a cleanup tool into a fallback bed recommendation. This comparison has no hands-on foam, pressure, wash, pickup or durability results. It records the exact limitations of the historical product references.",
+    "decisionGuide": [
+      {
+        "label": "The dog needs more usable sleeping room",
+        "detail": "Compare inner clear dimensions and resting shape, then check the full outer footprint and entry. Do not choose a roller for this task."
+      },
+      {
+        "label": "The current bed is hard to maintain",
+        "detail": "Read cover, liner, foam and drying instructions separately. A new cover or a better care routine may solve the problem without another bed."
+      },
+      {
+        "label": "Loose hair on compatible fabric",
+        "detail": "Compare the exact Black Classic roller’s instructions with the fabric and the existing cleanup method; pickup and fabric safety are untested here."
+      },
+      {
+        "label": "Working setup",
+        "detail": "Keep an intact suitable bed and effective cleanup routine. New foam labels or a reusable-tool claim do not establish a benefit."
+      }
     ],
-    methodology: ["Match bed size to sleeping position", "Check cover removal and washing steps", "Consider hair cleanup as part of the comfort routine"],
-    productSlugs: ["petfusion-ultimate-dog-bed", "chomchom-roller-pet-hair-remover"],
-    faqs: [
-      { question: "Do dogs need bolsters?", answer: "Some dogs love a raised edge for leaning or curling, while others prefer flat mats or cool surfaces." },
-      { question: "What makes a pet bed easier to own?", answer: "A removable washable cover, realistic size, and fabric that does not trap hair too aggressively." },
-      { question: "Should I buy based on weight or length?", answer: "Use both. Weight helps with support, but sleeping length and curl style decide the footprint." },
+    "comparisonTable": {
+      "title": "Bedding and cleanup are not interchangeable",
+      "columns": [
+        "PetFusion Ultimate bed reference",
+        "ChomChom Black Classic reference"
+      ],
+      "rows": [
+        {
+          "label": "Job",
+          "values": [
+            "Provide a suitable resting surface",
+            "Remove loose surface hair from suitable fabric"
+          ]
+        },
+        {
+          "label": "Critical fit",
+          "values": [
+            "Inner sleeping area, outer footprint and entry",
+            "Exact fabric, trim, tool version and care"
+          ]
+        },
+        {
+          "label": "Unresolved",
+          "values": [
+            "Historical ASIN not matched to reviewed official SKU",
+            "Manufacturer-controlled Black Classic care not established"
+          ]
+        },
+        {
+          "label": "Current purchase boundary",
+          "values": [
+            "Exact offer remains paused",
+            "Confirm instructions and surface before choosing"
+          ]
+        },
+        {
+          "label": "Does not establish",
+          "values": [
+            "Medical benefit, chew-proofing or measured durability",
+            "Deep cleaning, cover washing or a bed replacement"
+          ]
+        }
+      ]
+    },
+    "sections": [
+      {
+        "heading": "A current brand reference does not qualify every bed size",
+        "body": "Petmate’s PetFusion collection and its partner Ultimate XL sandstone entry establish brand and specific-SKU information. They do not match the historical ASIN to that size, construction or care label. Keep the exact purchase held. Do not infer discontinuation from missing retail cards or transfer dimensions from a current bed with a similar name."
+      },
+      {
+        "heading": "Use two measurements and separate layer instructions",
+        "body": "The dog’s resting shape must fit inside the bolsters, while the complete bed and access route must fit the room. The cover, liner, foam and bolster filling can have different washing and drying limits. Do not treat a machine-washable cover as a washable core or interpret a foam label as a proven treatment."
+      },
+      {
+        "heading": "Keep the roller’s version and source limits visible",
+        "body": "The indexed Amazon identity maps B0C2FMZMHP to Original Size Black Classic, distinct from White Classic and Black Matte. A white-product page and similarly named external sites do not establish manufacturer-controlled Black Classic care. Follow applicable instructions, leave doubtful fabric compatibility unresolved and do not invent a whole-tool washing method."
+      },
+      {
+        "heading": "Compare with what already works",
+        "body": "Surface hair removal does not wash a cover, remove all embedded debris or restore worn foam. Replace only the part of the routine that has an established problem. An existing bed that fits and can be maintained may need no upgrade, and a reusable roller does not establish savings without usable life and real refill consumption."
+      }
     ],
+    "methodology": [
+      "Full existing bed and cleanup notes, manufacturer catalog/SKU evidence and exact indexed roller identity reviewed October 26, 2026.",
+      "Treat sleeping-space fit and surface cleanup as different tasks; no numeric performance ranking.",
+      "Current retail availability, seller and returns remain separate from source and editorial checks."
+    ],
+    "productSlugs": [
+      "petfusion-ultimate-dog-bed",
+      "chomchom-roller-pet-hair-remover"
+    ],
+    "sources": [
+      {
+        "name": "Petmate PetFusion collection",
+        "url": "https://www.petmate.com/collections/pet-fusion",
+        "note": "Brand/catalog reference, not exact historical ASIN qualification."
+      },
+      {
+        "name": "Petmate Partners Ultimate XL sandstone",
+        "url": "https://www.petmatepartners.com/pf-ibxl3.html",
+        "note": "Specific SKU only; no size, foam or care transfer to an unconfirmed ASIN."
+      },
+      {
+        "name": "Amazon Black Classic identity",
+        "url": "https://www.amazon.com/dp/B0C2FMZMHP",
+        "note": "Indexed version/mechanism reference only; no fresh seller/returns or manufacturer care verification."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can the hair roller replace a dog bed?",
+        "answer": "No. It is a separate surface-cleanup tool. It provides no sleeping area, cushioning or entry, so a held bed does not inherit its shopping button."
+      },
+      {
+        "question": "Does a washable cover mean washable foam?",
+        "answer": "No. Confirm each layer’s exact instructions and drying requirements. Instructions for a current XL sandstone SKU do not certify every Ultimate size or the historical ASIN."
+      },
+      {
+        "question": "Should I choose a bed by the dog’s weight?",
+        "answer": "Weight is one input, but usable inner dimensions, ordinary resting shape, entry and the full room footprint need separate checks. No medical support or individual comfort outcome is established by a size label alone."
+      }
+    ]
   },
   {
     site: "homeoffice",
@@ -1736,47 +2259,81 @@ export const roundups: Roundup[] = [
   {
     site: "baby",
     slug: "best-baby-monitors-for-apartments",
-    updatedAt: "June 21, 2026",
-    title: "Baby Monitors for Apartments",
-    dek: "Small spaces still need clear night video, manageable alerts, and a connection style that fits your comfort level.",
+    updatedAt: "October 26, 2026",
+    title: "Baby Monitors for Apartments: Parent Unit or Wi-Fi?",
+    dek: "Compare local parent-unit and Nanit app workflows by actual room coverage, subscription features, account access and safe cord placement.",
     category: "sleep",
-    intent: "Choose a monitor that gives useful reassurance without unnecessary app noise.",
-    intro: "Apartment baby monitors do not need the biggest feature list. They need clear night visibility, a connection method you trust, and controls that are easy when you are tired. Local parent-unit monitors and smart Wi-Fi monitors solve different problems, so start with your comfort level before comparing specs.",
+    intent: "Match the monitoring workflow to the real rooms and caregivers, then verify the exact features and safe placement.",
+    quickAnswer: "Compare a dedicated parent unit when the job is checking from elsewhere at home, and a Wi-Fi account when remote caregiver access is necessary. For Nanit, core live view, background audio and alerts remain available without Insights, while history and analytics depend on the plan. Test the actual rooms and notification path; apartment size, a range claim or breathing analytics does not establish safety or reliable coverage.",
+    purchaseCheck: "The first listing is the DXR-8 PRO parent-unit reference. Before choosing it, confirm the exact bundle, safe placement and coverage from the rooms you actually use. If those checks are unresolved, pause; keep an existing suitable monitor when it already meets the need. Nanit is a separate app-and-account comparison below.",
+    intro: "A small apartment can still have a weak signal or an awkward camera location. Start with where caregivers need to see or hear the child, which device receives alerts, and what happens during an outage. The linked models illustrate two workflows; this comparison has not tested their range, night images, alert delivery or medical performance. A monitor supports caregiving and does not replace supervision, safe sleep practices or medical advice.",
     decisionGuide: [
-      { label: "Want less phone dependence", detail: "Choose a dedicated parent-unit monitor for overnight use." },
-      { label: "Want remote app access", detail: "A smart Wi-Fi monitor makes more sense if caregivers check in away from home." },
-      { label: "Shared walls", detail: "Prioritize clear alerts and volume control rather than overly sensitive notifications." },
-      { label: "Privacy concern", detail: "Compare local monitoring, account requirements, and storage settings before buying." },
+      { label: "Checking elsewhere at home", detail: "Compare the parent-unit workflow against actual room coverage, charging, screen and sound controls. A published range is not a room-by-room test." },
+      { label: "Remote caregivers", detail: "Compare Nanit's exact camera/mount bundle, necessary app access and named users. Confirm phone settings and the feature's network requirements." },
+      { label: "Subscription costs", detail: "Separate core viewing from event history, continuous video history and analytics. Check the selected trial, renewal date, billing period and account quote." },
+      { label: "Placement and privacy", detail: "Keep cords at least 3 feet from every part of the sleep environment and out of reach. For Nanit, use required MFA and review caregiver access; no monitor is assumed risk-free." },
     ],
-    methodology: ["Compare local versus Wi-Fi connection trade-offs", "Check night video and alert clarity", "Review mounting, privacy, and subscription details"],
+    sources: [
+      { name: "Nanit Insights plan FAQ", url: "https://www.nanit.com/products/insights-plan", note: "Core live view, background audio and alerts without Insights; verify current account-specific plan terms." },
+      { name: "Nanit Insights feature comparison", url: "https://support.nanit.com/en_us/what-is-the-difference-between-the-different-nanit-insights-plans-SJylmn0Kgg", note: "Separates event/video history and other entitlements. The support table is dated 2025, not a current renewal quote." },
+      { name: "Nanit Breathing Motion during an outage", url: "https://support.nanit.com/en_us/will-the-monitoring-work-if-my-internet-connectionwi-fi-is-down.-HyCAhAFxe", note: "Feature-specific local-network and camera-power conditions, not a promise that every video/cloud function works offline." },
+      { name: "Nanit privacy and security", url: "https://www.nanit.com/pages/privacy-security", note: "Required MFA and user permissions; manufacturer statements are not an independent security audit." },
+      { name: "CPSC baby monitor cord warning", url: "https://www.cpsc.gov/s3fs-public/5066.pdf", note: "Cords at least 3 feet from any part of the sleep environment and out of reach; no monitor inside or on the edge of a crib." },
+      { name: "Infant Optics DXR-8 PRO", url: "https://www.infantoptics.com/product/dxr-8-pro", note: "Current single-view parent-unit model reference; actual coverage still needs checking." },
+      { name: "Infant Optics DXR-8 PRO SS", url: "https://www.infantoptics.com/product/dxr-8-pro-ss", note: "Separate split-screen and simultaneous dual-audio model. Those features are not transferred to the linked non-SS ASIN." },
+      { name: "Nanit current monitor configurations", url: "https://www.nanit.com/products/smart-baby-monitor", note: "Current camera/mount and optional display choices, not proof of the historical Essentials package contents." },
+    ],
+    sections: [
+      { heading: "Check the real monitoring path", body: "List the rooms, closed doors and caregiver locations used overnight and during the day. Confirm the selected model's instructions, power and mount, then test sound, images, alerts, charging and reconnection in those locations while someone is present. Remote access, phone permissions and background audio are separate checks. Neither apartment floor area nor a manufacturer range figure proves coverage through the actual walls and interference." },
+      { heading: "Do not mix the current model and bundle choices", body: "Infant Optics currently lists both DXR-8 PRO and DXR-8 PRO SS. The SS adds a split-screen and simultaneous dual-audio option for two rooms; the linked non-SS reference is not that model. Nanit's current store also separates camera-only and camera-plus-display configurations. An extra connected screen does not make a Wi-Fi system the same as a local radio monitor, and it is not assumed to be included with the historical Essentials bundle. Compare those differences only when the actual caregiving workflow needs them; a newer option alone does not require replacing a suitable monitor." },
+      { heading: "Price the features you will keep", body: "Nanit's FAQ retains core live view, background audio and alerts without Insights. Event history, continuous video history, analytics and caregiver entitlements must be checked individually against the selected plan. Its older support comparison is useful for those distinctions, but it is not a current universal renewal price. Record the actual trial end, billing period, renewal quote and cancellation route before paying for history you may not need." },
+      { heading: "Check security and outages by feature", body: "Nanit requires multi-factor authentication. Use named caregivers, review permissions and remove access that is no longer needed; do not treat those controls as a guarantee against every security problem. The manufacturer's outage article concerns Breathing Motion with a powered camera and particular local-network conditions. It does not establish that every video, phone alert, cloud recording or remote feature continues during an internet or power outage." },
+      { heading: "Plan a safe location and a no-buy outcome", body: "CPSC says monitor cords must remain at least 3 feet from any part of the crib, bassinet, play yard or other safe sleep environment and out of reach. Do not place a monitor inside or on the edge of the crib. Follow the exact mount instructions and recheck as the child grows. Analytics do not establish a diagnosis or make an unsafe sleep setup safe. Keep a suitable existing monitor when it already provides the needed workflow; pause when safe placement, coverage or required features cannot be confirmed." },
+    ],
+    methodology: ["Manufacturer plan, privacy and feature-specific outage documents and the CPSC cord warning reviewed October 26, 2026.", "Documentation comparison only; no physical range, night-image, alert, security or medical-performance test.", "Linked retailer bundle identities are historical references. Recheck the exact selected hardware, mount, trial and seller separately."],
     productSlugs: ["infant-optics-dxr-8-pro", "nanit-pro-smart-baby-monitor"],
     faqs: [
-      { question: "Are Wi-Fi monitors better?", answer: "Wi-Fi models are convenient outside the home, but local monitors can be simpler overnight." },
-      { question: "Should I buy breathing analytics?", answer: "Treat analytics as optional reassurance, not a replacement for safe sleep guidance or medical advice." },
-      { question: "Do apartments need long-range monitors?", answer: "Usually less than larger houses, but walls, interference, and where you sleep still matter." },
+      { question: "Is a Wi-Fi monitor automatically better in an apartment?", answer: "No. Choose the workflow you need: a dedicated parent unit at home or account-based access for remote caregivers. Test the selected device in the actual rooms and verify power, notifications and outage behavior; apartment size alone does not decide coverage." },
+      { question: "Does Nanit require Insights for live viewing?", answer: "Nanit's current FAQ says core live view, background audio and alerts remain without Insights. History, analytics and other entitlements require a feature-by-feature plan check. Confirm the trial and current renewal quote rather than treating an older support-table price as your bill." },
+      { question: "Should breathing analytics decide the purchase?", answer: "Treat them as an optional feature with its own instructions and limitations, not proof of health, a diagnostic result or a substitute for safe sleep and caregiving. Discuss medical concerns with the child's clinician." },
+      { question: "Where can the camera cord go?", answer: "CPSC requires at least 3 feet between cords and any part of the sleep environment, with cords out of reach. Never place the monitor inside or on the edge of the crib, and follow the selected mount's instructions." },
     ],
   },
   {
     site: "baby",
     slug: "best-travel-strollers",
-    updatedAt: "June 21, 2026",
-    title: "Travel Strollers for Everyday Errands and Flights",
-    dek: "The best travel stroller is easy to fold, light enough to carry, and still comfortable enough for real naps.",
+    updatedAt: "October 26, 2026",
+    title: "Travel Strollers: Compare Fold, Child Fit and Loading",
+    dek: "Compare City Tour 2 and Summer 3Dlite as model references, then verify the selected version, child's instructions, complete fold and real loading routine.",
     category: "travel",
-    intent: "Pick a stroller that solves storage and travel friction without giving up daily usability.",
-    intro: "Travel strollers are not just airport gear. They often become the stroller kept in the car, hallway, or grandparent's house. Fold size matters, but so do recline, wheel feel, basket access, and whether the stroller is pleasant enough for ordinary errands.",
+    intent: "Solve an actual storage or carrying problem while retaining the child's suitability and a workable daily routine.",
+    quickAnswer: "Compare the complete folded stroller with both the storage opening and usable space, then check the child's exact seat instructions and the caregiver's lift. City Tour 2 and Summer 3Dlite are model references to verify, not tested comfort winners or guaranteed cabin bags. Keep the existing suitable stroller if it already fits; pause for unknown child suitability or an unconfirmed selected version.",
+    purchaseCheck: "The first listing is the historical City Tour 2 Eco Black/belly-bar reference. Confirm the selected version, included parts, child suitability and actual loading path before choosing it. A family-name fold figure does not establish that bundle's car or airline fit; keeping a suitable existing stroller is a valid result.",
+    intro: "Start with the problem the current stroller fails to solve: the trunk opening, a lift, apartment storage or a particular trip. Baby Jogger's current collection lists City Tour 2 Eco, but that does not verify every retailer package. Summer 3Dlite needs its own model instructions and measurements. This comparison has not tested either stroller's fold, wheel behavior, ride comfort or airline acceptance, and it does not rank one as universally more comfortable or better value.",
     decisionGuide: [
-      { label: "Small car or apartment", detail: "Prioritize folded dimensions and a carry-friendly frame." },
-      { label: "Budget second stroller", detail: "A simpler lightweight stroller may be enough for errands and backup use." },
-      { label: "Frequent flights", detail: "Check airline rules and folded size before assuming cabin-bin fit." },
-      { label: "Daily rough sidewalks", detail: "A full-size stroller may be less frustrating than an ultra-light travel model." },
+      { label: "Small opening or storage space", detail: "Measure the exact complete fold, narrow opening, loading movement, hatch and remaining luggage room. A carton size or trunk volume is insufficient." },
+      { label: "Child and daily route", detail: "Confirm the exact seat and accessory instructions, restraint, limits and daily handling. Recline alone is not newborn approval or a tested comfort result." },
+      { label: "Flight", detail: "Check the operating carrier, cabin/gate/counter rules and a permitted fallback for the actual trip. No cabin-friendly label guarantees bin space." },
+      { label: "Second stroller", detail: "Compare the full cost with a specific unsolved need. Skip a second purchase when the existing suitable stroller already does the job." },
     ],
-    methodology: ["Compare folded size against real storage needs", "Check age and weight limits", "Separate travel convenience from daily comfort"],
+    sources: [
+      { name: "Baby Jogger City Tour 2 specifications", url: "https://help.babyjogger.com/s/article/CITY-TOUR-2-SPECIFICATIONS", note: "Folded dimensions and shipping box are separate; match the exact version before applying the model-family numbers." },
+      { name: "Baby Jogger City Tour 2 collection", url: "https://www.babyjogger.com/strollers/shop-all-strollers/compact-and-lightweight/city-tour-2/", note: "Current collection lists City Tour 2 Eco, without establishing a selected Amazon package or a like-for-like successor." },
+      { name: "American Airlines child-travel guidance", url: "https://www.aa.com/web/i18n/travel-info/special-assistance/traveling-children.html", note: "Current stroller check-in and gate-check example; do not transfer it to another carrier." },
+      { name: "CPSC stroller restraint alert", url: "https://www.cpsc.gov/safety-education/safety-guides/kids-and-babies/infants-strollers-must-be-properly-secured-all-times", note: "Harness and supervision including in a reclined seat, not individual model or recall clearance." },
+    ],
+    sections: [
+      { heading: "Compare the actual package, not the family name", body: "Record the selected model, regional version, color, bag and parts supplied or left attached during the documented fold. City Tour 2 support lists a 21.6 × 16.9 × 6.8 inch fold separately from carton dimensions; that is a model-table example, not an established measurement of every Eco or retailer bundle. A current manufacturer family page and an older ASIN reference do not resolve the received configuration. Obtain the selected Summer 3Dlite's own complete measurements rather than inferring them from its lightweight label." },
+      { heading: "Resolve loading and suitability before price", body: "Measure the narrow opening and usable storage with the seats and luggage in their real positions. Check the loading motion and hatch, and resolve a tight result with an actual fit check. With the child safely out and supervised, follow the fold/latch/carry instructions and check the adult's lift. Read the exact seat's age, developmental, height and weight limits and approved accessory combinations. Use the harness and supervision; a belly bar or recline does not replace them." },
+      { heading: "Keep daily handling and flights as separate checks", body: "Check brakes, canopy, basket access and handling on the intended routes without assuming that a frame category predicts ride comfort. For flights, confirm the operating carrier's current baggage and stroller rules and where checked gear is returned. Car fit is not cabin acceptance, and a listed compact fold does not reserve overhead space. Keep a permitted fallback for the trip." },
+      { heading: "Keep, pause or compare another configuration", body: "Keep a suitable existing stroller when it passes the actual routine. Pause a purchase if the child's suitability, regional instructions, package identity or loading result is unknown. Compare another documented configuration only for the need that remains unresolved. There is no physical comfort, suspension, maneuvering or durability ranking in this document comparison." },
+    ],
+    methodology: ["Baby Jogger model-family documents, airline guidance and CPSC restraint alert reviewed October 26, 2026; no hands-on stroller comparison.", "No current retailer stock, price, supplied-part or return observation is established by this documentation review.", "Apply each model's own current instructions; do not transfer dimensions, child limits or accessory approvals between versions."],
     productSlugs: ["baby-jogger-city-tour-2-stroller", "summer-3dlite-convenience-stroller"],
     faqs: [
-      { question: "Do travel strollers fit airplane bins?", answer: "Some do, but airline rules vary. Check folded dimensions against the carrier before travel." },
-      { question: "Can a travel stroller replace a full-size stroller?", answer: "It can for urban families, but storage basket size and rough-surface comfort are common trade-offs." },
-      { question: "Should I buy the lightest stroller?", answer: "Not automatically. The lightest option can give up recline, shade, basket space, or wheel comfort." },
+      { question: "Does a small fold guarantee airplane-bin fit?", answer: "No. Check the operating carrier's current policy and the complete selected package, including its bag and attached parts. Cabin acceptance and actual space are separate from fitting a car trunk, so plan a permitted gate- or counter-check fallback." },
+      { question: "Has City Tour 2 been discontinued?", answer: "The current Baby Jogger collection lists City Tour 2 Eco. The original City Tour is identified separately as a predecessor, and an expired product URL alone is not discontinuation proof. Confirm the exact retailer version; this review does not establish a like-for-like successor for the historical ASIN." },
+      { question: "Should I buy the lightest or a second stroller?", answer: "Only if it solves an actual need while meeting the child's instructions and the adult's loading and daily routine. A low listed weight does not prove an easy lift or comfortable ride. Keep the existing suitable stroller when it already meets those requirements." },
     ],
   },
   {
@@ -1904,33 +2461,158 @@ export const guides: Guide[] = [
   {
     site: "pet",
     slug: "automatic-feeder-buying-guide",
-    updatedAt: "June 21, 2026",
-    title: "How to Choose an Automatic Pet Feeder",
-    dek: "A practical checklist for portion control, power backup, cleaning, and food compatibility.",
+    updatedAt: "October 26, 2026",
+    title: "Automatic Pet Feeders: Food Fit, Portions and Backup Checks",
+    dek: "Match the actual food and pet, weigh repeated portions, check the saved schedule and backup mode, and keep a person responsible for care.",
     category: "feeding",
     image: "/images/affiliate/pet-smart-feeder-realistic.webp",
     imageAlt: "Automatic pet feeder set up for portion, power-backup, food-fit, and cleaning checks",
     relatedRoundups: ["best-automatic-cat-feeders"],
+    relatedProducts: ["petlibro-granary-automatic-cat-feeder", "petlibro-one-rfid-smart-feeder"],
+    relatedGuides: ["automatic-feeder-portion-size-guide", "automatic-feeder-cleaning-checklist"],
+    searchQuestion: "What matters most when choosing an automatic pet feeder?",
+    quickAnswer: "Start with the exact food, the pet's access needs and an established feeding plan. Confirm that the chosen model can dispense repeatable portions of that food, run its saved schedule in the required backup state and be cleaned as instructed. Dry-food compatibility is not evidence of superior reliability, and an app log does not prove the pet received or ate a meal. Keep a human care and fault-response plan.",
+    sources: [
+      { name: "PETLIBRO PLAF103 operation and backup", url: "https://petlibro.com/pages/how-the-granary-wifi-feeder-works", note: "Dry 2–15mm food, original power supply and emergency alkaline-battery mode. Battery operation continues schedules while disabling Wi-Fi and some controls." },
+      { name: "PETLIBRO Granary 2 series", url: "https://petlibro.com/products/granary-2-series", note: "A newer series, separate from the linked PLAF103. Compare the exact model and required feature; its specifications do not replace the older model's instructions." },
+      { name: "PETLIBRO portion-size explanation", url: "https://petlibro.com/pages/how-much-is-in-one-feeding-portion-plaf001-002-101-102-plaf003-004-plaf005-006-103-203-plaf008-plaf107-plaf108-plaf301", note: "Portions are volumetric, with food-dependent variation; the table does not promise a fixed gram or calorie amount." },
+      { name: "PETLIBRO One RFID PLAF301 support", url: "https://petlibro.com/pages/how-the-one-rfid-pet-feeder-works-plaf301", note: "Exact model's collar binding, lid-mode and operating instructions. A dedicated RFID tag is not evidence of implanted-microchip support." },
+      { name: "PETLIBRO One RFID manual V0005", url: "https://cdn.shopify.com/s/files/1/0252/5197/1119/files/Petlibro-AF301-3L-_US_DE_IT_FR_ES.pdf?v=1774007057", note: "English instructions retain Wi-Fi in battery mode, conflicting with product/support wording. Verify the received revision; no universal offline promise." },
+      { name: "PETLIBRO Granary PLAF103 cleaning", url: "https://petlibro.com/pages/how-do-i-disassemble-and-clean-the-granary-smart-feeder-af103-plaf103", note: "Use the exact removable-part, powered-base, drying and reassembly instructions rather than a generic dishwasher rule." },
+    ],
+    editorialMethod: ["Manufacturer model, portion and backup documentation reviewed October 26, 2026. No hands-on dispensing, jam, pet-access or battery-duration test.", "Historical Amazon identities remain model references. Confirm the selected capacity, bowl configuration, included parts and seller; this review does not refresh stock or delivery observations."],
+    comparisonTable: { title: "Separate timing from access control", columns: ["Timed dry-food feeder", "Individual-access model"], rows: [
+      { label: "Job", values: ["Dispense the planned food at saved times", "Control which eligible pet can reach the meal"] },
+      { label: "Food check", values: ["Exact model's food type, shape and size range", "Exact model's food range as well as its access mechanism"] },
+      { label: "Portion check", values: ["Repeated weighed dispenses of the actual food", "Weighed dispenses plus observation of the intended pet eating"] },
+      { label: "Identification", values: ["Does not by itself stop a second pet taking food", "Dedicated tag or microchip support must be explicitly documented"] },
+      { label: "Backup", values: ["Saved schedule, clock, power mode and disabled functions", "Those checks plus lid and identification behavior"] },
+      { label: "No-purchase route", values: ["Keep a reliable manual routine when timing adds no value", "Do not buy access hardware for an unresolved fit or behavior problem"] },
+    ] },
+    decisionPurchase: { asin: "B0BYD73PHN", model: "PETLIBRO Granary Smart Feeder", qualifies: "Consider this historical PLAF103 listing reference when timed dry-food portions are the actual job, the food meets the exact model's limits, measured portions match the established plan, and the selected capacity and bowl version are confirmed.", stop: "Pause for wet food, an unresolved dispensing result, a need to restrict another pet's access, an unknown selected variant or an unverified backup and care plan. A family name or app alert does not resolve those checks.", keep: "Keep a suitable manual feeding routine or an existing feeder that already passes the food, portion, schedule, cleaning and care checks. New connectivity is optional." },
     sections: [
-      { heading: "Start with food type", body: "Dry kibble feeders are the most reliable. If you feed wet food, choose a model with cooling support and shorter schedules." },
-      { heading: "Measure portions by weight", body: "Cup markings hide big differences between kibble shapes. We prefer feeders that repeat the same gram weight across several meals." },
-      { heading: "Plan for cleaning", body: "A feeder that takes ten minutes to clean every day will eventually stop being used. Removable bowls and clear chutes matter." },
+      { heading: "Match the exact food before comparing electronics", body: "Check the model's allowed food type, dimensions and shape. PETLIBRO's PLAF103 instructions specify dry kibble in a 2–15mm range; do not transfer that limit to every feeder. A dry-food model is not a wet-food holding system, and a dry hopper is not evidence of superior reliability. Wet-food storage needs a separately documented device and food-handling routine, not an improvised cooling pack or a longer unattended schedule." },
+      { heading: "Weigh repeated portions of the actual food", body: "Use a feeding amount already established for the individual pet, with veterinary advice where needed. PETLIBRO explains that a feeder portion is volume rather than weight, and food characteristics change the result. Weigh repeated dispenses, include snacks in the plan and recheck when food changes. A nominal milliliter value or an app portion count is not a fixed number of grams or calories, and this guide has not measured dispensing precision." },
+      { heading: "Decide whether the problem is timing or access", body: "A timed release does not ensure that the intended pet eats it. Observe competition, approach and access before buying more scheduling features. The One RFID model uses its documented collar-tag and reader system; do not infer implanted-microchip compatibility from the word RFID. Check the exact model's identifier limit, required accessories and lid behavior. If the intended pet cannot use the system comfortably under its instructions, keep the access result unresolved." },
+      { heading: "Compare a newer series without mixing specifications", body: "PETLIBRO's newer Granary 2 series adds weighing and model-specific camera or access options. It is separate from PLAF103 and One RFID PLAF301. Compare it when those functions solve the actual job; do not transfer its battery behavior, food limits or features to either older listing." },
+      { heading: "Check the saved schedule and each failure state", body: "Distinguish internet loss, local-network failure and loss of normal power. PLAF103 documentation retains meal schedules while disabling Wi-Fi and some controls in emergency battery mode. Do not transfer that rule to One RFID: its V0005 manual retains Wi-Fi, unlike product/support wording, so the received revision needs confirmation. Follow the applicable instructions when checking the clock, saved meals and recovery. No indefinite runtime or universal remote visibility is established; keep someone able to respond to missed or uneaten meals." },
+      { heading: "Read alerts as signals rather than meal confirmation", body: "An app record can describe a scheduled or commanded event without proving how much reached the bowl or who consumed it. Check for uneaten food, blockage and competing pets in ordinary supervised use. Decide who will notice and act if the normal monitoring path fails. A larger hopper or camera does not replace water checks, suitable food handling, observation of the pet or an appropriate human care arrangement." },
+      { heading: "Make cleaning and the keep-existing option practical", body: "Read which parts can be removed and washed, which powered parts must stay dry and how everything must dry before reassembly. Access-controlled feeders add a lid and reader path that need their own attention. Do not apply a dishwasher rule from a different model. Include replacement consumables and care time in the comparison, and keep the current manual routine or suitable feeder when it already meets the real task." },
     ],
   },
   {
-    site: "pet",
-    slug: "pet-camera-without-too-many-subscriptions",
-    updatedAt: "June 23, 2026",
-    title: "How to Choose a Pet Camera Without Overpaying for Alerts",
-    dek: "A practical guide to live view, treat tossing, subscriptions, storage, and privacy before buying a pet camera.",
-    category: "home-care",
-    relatedRoundups: ["best-pet-cameras-for-apartments"],
-    sections: [
-      { heading: "Decide whether interaction matters", body: "If you only need to confirm that a pet is resting, a budget pan-and-tilt camera may be enough. Treat tossing and pet-specific alerts are useful only when they change the routine in a good way." },
-      { heading: "Check subscription boundaries", body: "Many cameras separate live view from cloud history, smart alerts, and event detection. Before buying, confirm which features are included and which require a recurring plan." },
-      { heading: "Place the camera around behavior", body: "A camera pointed at the front door is less useful if the pet sleeps on the couch all day. Pick the room and angle based on where the pet naturally rests, eats, or waits." },
-      { heading: "Keep privacy visible", body: "Look for clear status lights, account controls, and storage settings. Pet cameras should reduce worry, not create a new privacy concern in shared living spaces." },
+    "site": "pet",
+    "slug": "pet-camera-without-too-many-subscriptions",
+    "updatedAt": "October 26, 2026",
+    "title": "Pet Camera Subscription Costs: Activation, Storage and Alerts",
+    "dek": "Separate hardware activation, free live view, cloud history and recurring plans before choosing a pet camera.",
+    "category": "home-care",
+    "purchaseFlow": "task-links",
+    "decisionLayout": true,
+    "searchQuestion": "Can a pet camera work without a subscription?",
+    "quickAnswer": "Some can, but the exact hardware and purchase contract decide. Furbo Standalone basic features differ from its Subscription Required offers. Wyze local card recording is separate from paid cloud events and AI. List the functions you need, identify the exact model and add the billed plan term before comparing costs; do not assume every camera becomes free after cancellation.",
+    "relatedRoundups": [
+      "best-pet-cameras-for-apartments"
     ],
+    "relatedProducts": [
+      "furbo-360-dog-camera",
+      "wyze-cam-pan-v3-pet-camera"
+    ],
+    "relatedGuides": [
+      "pet-camera-privacy-and-placement-guide"
+    ],
+    "editorialMethod": [
+      "Manufacturer activation, plan and storage documentation reviewed October 26, 2026; no camera, notification or recording performance test.",
+      "Historical ASINs identify references, not newly verified stock, seller, delivery or return terms."
+    ],
+    "sources": [
+      {
+        "name": "Furbo: Standalone basic features",
+        "url": "https://help.furbo.com/hc/en-us/articles/17462722245785-Basic-Features-you-can-use-without-Furbo-Nanny",
+        "note": "Free basic features are described for Standalone hardware, not every subscription-required purchase."
+      },
+      {
+        "name": "Furbo: plans and feature access",
+        "url": "https://help.furbo.com/hc/en-us/articles/17462739016089-Furbo-Nanny-Plans-and-Pricing",
+        "note": "Compare current recurring tiers and hardware restrictions; this page requires an active plan for subscription-required cameras."
+      },
+      {
+        "name": "Furbo: Subscription Required activation",
+        "url": "https://help.furbo.com/hc/en-us/articles/17462056102169-How-to-Setup-and-Activate-Nanny-Bundle-Camera-Subscription-Required",
+        "note": "Activation is required. Its post-cancellation wording differs from the plans page, so continuing basic access remains unconfirmed for the historical listing."
+      },
+      {
+        "name": "Wyze: microSD versus Cam Plus",
+        "url": "https://support.wyze.com/hc/en-us/articles/7372980709275-How-do-Cam-Plus-and-a-microSD-card-compare",
+        "note": "Local continuous recording and paid cloud event/AI functions are different paths; this is not an offline-app guarantee."
+      }
+    ],
+    "comparisonTable": {
+      "title": "Compare the contract before the camera price",
+      "columns": [
+        "Basic check-in or local clips",
+        "Pet interaction and paid services"
+      ],
+      "rows": [
+        {
+          "label": "Required function",
+          "values": [
+            "Live view or a recording you can actually retrieve",
+            "Treat interaction, selected alerts or retained cloud clips"
+          ]
+        },
+        {
+          "label": "Hardware identity",
+          "values": [
+            "Confirm exact pan/tilt model and card support",
+            "Distinguish Standalone from Subscription Required"
+          ]
+        },
+        {
+          "label": "Plan check",
+          "values": [
+            "Which functions remain available without renewal?",
+            "Activation, billed term, renewal and cancellation terms"
+          ]
+        },
+        {
+          "label": "Storage check",
+          "values": [
+            "Card capacity, overwrite behavior and playback access",
+            "Event versus continuous history, retention and export"
+          ]
+        },
+        {
+          "label": "Stop or keep",
+          "values": [
+            "Pause for an unidentified listing; keep a suitable camera",
+            "Skip a paid tier when the wanted feature adds no useful action"
+          ]
+        }
+      ]
+    },
+    "sections": [
+      {
+        "heading": "Write down the question the camera must answer",
+        "body": "“Is the dog resting?” may need only an occasional live view. Reviewing an earlier event needs a retrievable recording, while treat interaction is a third job. Choose the needed function before comparing hardware discounts. A clearer image, a larger alert list or an AI label does not establish that anyone will notice and respond to a problem."
+      },
+      {
+        "heading": "Treat Standalone and Subscription Required as different purchases",
+        "body": "Furbo documents basic features without Nanny for Standalone hardware. The historical B0BWN22T25 listing was identified as Paid Plan Required to Activate; it must not inherit the Standalone promise. Furbo’s current plans article requires an active plan even for basic access on subscription-required cameras, while its activation article describes basic access after an initial term. Until the applicable contract resolves that conflict, budget for continued service and leave post-cancellation access unknown."
+      },
+      {
+        "heading": "Compare the billed total rather than a monthly equivalent",
+        "body": "Write down camera cost, activation charge if any, the full prepaid term, renewal amount, additional-camera charge and any card or accessory. A discounted camera plus an annual plan is a different cash commitment from a monthly subscription. Read the selected offer’s minimum term, automatic renewal and cancellation deadline; a free trial or an introductory rate does not establish the later price. This guide does not quote a current checkout total."
+      },
+      {
+        "heading": "Separate a local card from cloud history",
+        "body": "Wyze distinguishes card-based continuous recording from cloud event storage and paid AI features. Check the exact model’s card limits and whether the app can find, play and export the event you need. “Has a microSD slot” does not mean the account, app or remote view works without internet, or that recordings survive theft of the camera. Use the model’s instructions to check ordinary operation and failure states before relying on it."
+      },
+      {
+        "heading": "Make alerts earn their place in the routine",
+        "body": "Start with the few events that lead to an action, such as asking a caregiver to check the pet. Decide who can respond and what happens if the phone is muted, the network fails or a clip is missing. A pet camera does not diagnose distress or replace suitable care. Keep an existing camera or a no-camera arrangement when it already answers the question without another recurring charge."
+      }
+    ]
   },
   {
     site: "pet",
@@ -1954,33 +2636,222 @@ export const guides: Guide[] = [
     ],
   },
   {
-    site: "pet",
-    slug: "cat-water-fountain-buying-guide",
-    title: "Cat Water Fountain Buying Guide",
-    dek: "What to check before buying a cat fountain: capacity, filters, pump cleaning, materials, noise, and backup bowls.",
-    category: "feeding",
-    relatedRoundups: ["best-automatic-cat-feeders"],
-    sections: [
-      { heading: "Capacity should match the household", body: "One cat in a small apartment does not need the same reservoir as a multi-cat home. More capacity is useful only if the fountain stays clean and the pump remains covered." },
-      { heading: "Filters are part of the purchase", body: "Before buying, check the exact replacement filter type, price, and availability. A fountain with hard-to-find filters can become annoying after the first month." },
-      { heading: "Cleaning decides long-term use", body: "Pump access, corners, plastic surfaces, and dishwasher-safe parts matter more than decorative shape. If cleaning is awkward, the fountain is less likely to stay in rotation." },
-      { heading: "Keep a bowl nearby", body: "Some cats need time to accept moving water, and power or pump issues can happen. A simple backup bowl keeps hydration from depending on one device." },
+    "site": "pet",
+    "slug": "cat-water-fountain-buying-guide",
+    "updatedAt": "October 26, 2026",
+    "title": "Cat Water Fountain Buying Guide: Cleaning, Filters and Fit",
+    "dek": "Compare pump access, exact filter compatibility, placement and the cat’s drinking routine before reservoir size.",
+    "category": "feeding",
+    "decisionLayout": true,
+    "searchQuestion": "What should you check before buying a cat water fountain?",
+    "quickAnswer": "Choose a fountain only when you can clean its water path, source its exact filters and monitor ordinary use. The original Catit Flower 43742 is a 3 L reference, not a promise of days without care. Confirm the selected version, accessible pump and suitable power location, keep a fresh-water bowl available, and retain a working bowl routine when a fountain adds no benefit.",
+    "relatedRoundups": [],
+    "relatedProducts": [
+      "catit-flower-cat-water-fountain"
     ],
+    "relatedGuides": [
+      "cat-fountain-filter-replacement-guide"
+    ],
+    "editorialMethod": [
+      "Original Catit 43742 English manual, current product and filter documentation reviewed October 26, 2026. No water-intake, noise, hygiene or tipping tests.",
+      "This model example does not establish that other fountains share its parts, cleaning methods or electrical instructions."
+    ],
+    "sources": [
+      {
+        "name": "Catit: original Flower Fountain",
+        "url": "https://www.catit.com/products/drinking-fountains/flower-fountain/",
+        "note": "Original green model 43742, 3 L; distinguish LED, stainless and other product families."
+      },
+      {
+        "name": "Catit: original 43742 North American manual",
+        "url": "https://www.catit.com/shared/Product-Manual_Catit-Flower-Fountain_NA.pdf",
+        "note": "VER 05/22 English instructions and diagrams reviewed. Weekly maintenance, filter condition, submerged pump and indoor-use limits; match the received model and regional instructions."
+      },
+      {
+        "name": "Catit: Flower model support",
+        "url": "https://www.catit.com/help-advice/drinking-fountains/flower-fountain/",
+        "note": "Separate original, LED and stainless manuals; do not transfer pump, adapter or filter instructions by appearance."
+      },
+      {
+        "name": "Catit: current Triple Action Filter Pad",
+        "url": "https://www.catit.com/products/drinking-fountains/flower-fountain-triple-action-filter-pad/",
+        "note": "Current 43738/43739 pads list full-size Flower variants. Not universal PIXI or Mini compatibility; use the replacement pack instructions."
+      }
+    ],
+    "comparisonTable": {
+      "title": "Check the complete water routine",
+      "columns": [
+        "What to establish",
+        "Pause or keep the bowl when"
+      ],
+      "rows": [
+        {
+          "label": "Model",
+          "values": [
+            "Read model code and regional instructions, not just Flower branding",
+            "The received variant or power supply is unidentified"
+          ]
+        },
+        {
+          "label": "Cleaning",
+          "values": [
+            "Reach the reservoir, channels and removable pump parts",
+            "Care cannot fit the household routine"
+          ]
+        },
+        {
+          "label": "Filters",
+          "values": [
+            "Match current part number, pack instructions and cost",
+            "Only a similar-looking generic filter is available"
+          ]
+        },
+        {
+          "label": "Placement",
+          "values": [
+            "Stable level location, protected cable and appropriate outlet",
+            "The pet can pull the cable or the site cannot meet instructions"
+          ]
+        },
+        {
+          "label": "Water access",
+          "values": [
+            "Observe use and maintain a separate fresh bowl",
+            "The cat rejects the fountain or reliable checking is unavailable"
+          ]
+        }
+      ]
+    },
+    "sections": [
+      {
+        "heading": "Use capacity as a refill constraint, not an absence allowance",
+        "body": "Catit lists 3 L for original green 43742. That does not establish how much the cat will drink, how long water remains acceptable or how long a pump may be left unchecked. Check the water level and actual drinking behavior as part of the normal care routine. A fountain is optional equipment, and an existing suitable fresh-water bowl can remain the better choice."
+      },
+      {
+        "heading": "Open the cleaning path before choosing a shape",
+        "body": "Identify every wetted surface and how the pump, cover and impeller come apart under the applicable instructions. The original 43742 manual calls for weekly maintenance and earlier attention when conditions require it. A clear reservoir or a filter does not prove the internal channels are clean. Do not transfer dishwasher, abrasive-cleaner or immersion permissions from a different model."
+      },
+      {
+        "heading": "Match model and replacement consumables together",
+        "body": "Original Flower 43742, LED 43747 and stainless 43725 are distinct products. Catit’s current filter-pad page explicitly names compatible full-size Flower variants, but that is not evidence of fit for PIXI, Mini or every third-party disk. Record the actual pack code and instructions. Include filters, cleaning time and any compatible pump replacement in the ownership comparison rather than comparing the fountain price alone."
+      },
+      {
+        "heading": "Check placement and power in the actual home",
+        "body": "Use a stable level location that follows the received manual; Catit’s placement advice favors the floor rather than a counter. Protect the cable from chewing, pulling and entanglement and use the specified supply. For 43742, the pump must remain submerged and must not run dry. Stop using damaged equipment; another adapter or a larger reservoir does not resolve an unsafe installation."
+      },
+      {
+        "heading": "Let the cat keep a choice",
+        "body": "Leave a separate bowl of fresh water during introduction and cleaning. Observe drinking rather than assuming moving water is preferred. A new fountain cannot establish hydration or treat a health concern; changes in drinking or health need appropriate veterinary advice. Skip the purchase if its upkeep or placement cannot be managed, or the current bowl already works."
+      }
+    ],
+    "decisionPurchase": {
+      "asin": "B0146QXOB0",
+      "model": "Catit Original Flower Fountain 43742",
+      "qualifies": "Consider this original 43742 reference when moving water solves an observed preference, the selected version and regional supply are confirmed, and its exact filters, placement and cleaning routine are practical. Observe the cat’s use rather than assuming capacity establishes drinking.",
+      "stop": "Pause for an unidentified model or filter, unsuitable cable/power placement, a cat that will not use it, or a maintenance routine that cannot be managed. A 3 L label does not establish days without checking.",
+      "keep": "Keep a suitable fresh-water bowl or an existing fountain that already meets the actual task. A new fountain is optional, and a separate bowl remains useful during cleaning."
+    }
   },
   {
-    site: "pet",
-    slug: "dog-bed-for-small-apartment-guide",
-    updatedAt: "June 23, 2026",
-    title: "How to Pick a Dog Bed for a Small Apartment",
-    dek: "Choose a bed by sleep position, washable covers, floor space, support, and how much hair the fabric traps.",
-    category: "comfort",
-    relatedRoundups: ["best-dog-beds-and-comfort-upgrades"],
-    sections: [
-      { heading: "Measure the sleeping shape", body: "A dog that curls into a ball may like bolsters, while a dog that stretches out needs more length than the product photo suggests. Measure the resting position, not just weight." },
-      { heading: "Protect floor space", body: "In a small apartment, a bed competes with walkways, doors, desks, and storage. Pick the place first, then choose a size that can stay there permanently." },
-      { heading: "Washability matters more than softness", body: "A removable cover, accessible zipper, and realistic drying time keep the bed usable. Very plush beds can be harder to clean when hair and odor build up." },
-      { heading: "Do not assume chew resistance", body: "Supportive foam and bolsters are not the same as chew-proof construction. For destructive chewers, durability and supervision matter more than premium comfort claims." },
+    "site": "pet",
+    "slug": "dog-bed-for-small-apartment-guide",
+    "updatedAt": "October 26, 2026",
+    "title": "Dog Bed for a Small Apartment: Sleeping Area, Footprint and Care",
+    "dek": "Measure the usable sleeping area, room clearance and washable layers before choosing a compact dog bed.",
+    "category": "comfort",
+    "purchaseFlow": "task-links",
+    "decisionLayout": true,
+    "searchQuestion": "How do you fit a dog bed into a small apartment?",
+    "quickAnswer": "Measure the dog’s ordinary sleeping shape and the bed’s usable inner area, then tape out its full outer footprint and access route. Bolsters can take space away from the sleeping surface. Confirm the exact size and which layers may be washed; keep a suitable existing bed if replacement only adds bulk. A hair roller cleans fabric and does not substitute for a bed.",
+    "relatedRoundups": [
+      "best-dog-beds-and-comfort-upgrades"
     ],
+    "relatedProducts": [
+      "petfusion-ultimate-dog-bed"
+    ],
+    "relatedGuides": [],
+    "editorialMethod": [
+      "PetFusion brand catalog and a specific Petmate Partners Ultimate SKU reviewed October 26, 2026. No hands-on pressure, durability or washing test.",
+      "The historical Amazon ASIN has not been matched to that current official SKU. Its purchase remains paused, with size and care unresolved."
+    ],
+    "sources": [
+      {
+        "name": "Petmate: PetFusion brand catalog",
+        "url": "https://www.petmate.com/collections/pet-fusion",
+        "note": "Current brand ownership/catalog reference. No proof that the historical Ultimate ASIN matches another listed bed or has been discontinued."
+      },
+      {
+        "name": "Petmate Partners: Ultimate XL sandstone SKU",
+        "url": "https://www.petmatepartners.com/pf-ibxl3.html",
+        "note": "PF-IBXL3 is a specific XL sandstone product, not a verified match for ASIN B089RGDQBB. Its dimensions and care cannot certify another variant."
+      }
+    ],
+    "comparisonTable": {
+      "title": "Measure three different spaces",
+      "columns": [
+        "Record before buying",
+        "Do not infer"
+      ],
+      "rows": [
+        {
+          "label": "Dog at rest",
+          "values": [
+            "Usual curled and stretched sleeping positions",
+            "Weight category alone proves comfort"
+          ]
+        },
+        {
+          "label": "Usable sleeping area",
+          "values": [
+            "Inner clear length and width inside bolsters",
+            "Outer package dimensions are sleeping space"
+          ]
+        },
+        {
+          "label": "Room footprint",
+          "values": [
+            "Outer bed outline plus doors, walkways and access",
+            "A bed fits because its width is below the wall length"
+          ]
+        },
+        {
+          "label": "Cleaning",
+          "values": [
+            "Cover, liner and foam instructions separately",
+            "A washable cover means washable foam"
+          ]
+        },
+        {
+          "label": "No-purchase result",
+          "values": [
+            "Existing bed still fits, is intact and can be cared for",
+            "A more expensive foam label guarantees a health benefit"
+          ]
+        }
+      ]
+    },
+    "sections": [
+      {
+        "heading": "Measure the dog and the inside of the bed",
+        "body": "Observe ordinary resting positions rather than forcing the dog into a smaller outline. Compare those measurements with the model’s clear sleeping surface. Raised sides can be useful for a dog that rests against an edge, but they also reduce usable area. If the seller gives only overall dimensions, leave internal fit unconfirmed instead of choosing by a breed photo or a weight range alone."
+      },
+      {
+        "heading": "Tape out the full footprint with the room in use",
+        "body": "Include the entire bolster outline, nearby door swing, cleaning access and the route the dog uses to approach or leave. Check the layout with normal furniture and people present. A compact label does not resolve a blocked walkway, slippery placement or an entry edge the individual dog struggles to cross. Do not shrink the sleeping surface solely to preserve a decorative corner."
+      },
+      {
+        "heading": "Read the care label for each layer",
+        "body": "Separate cover, liner, bolster filling and foam. A removable machine-washable cover does not make the core washable or waterproof. Check drying requirements and whether an exact replacement cover is available for the size. Petmate Partners lists care for one XL sandstone Ultimate SKU; those instructions cannot certify the historical ASIN until its actual size and construction are matched."
+      },
+      {
+        "heading": "Keep support claims and chewing risk in proportion",
+        "body": "This guide has not measured foam firmness, pressure distribution or long-term compression. “Orthopedic” is not a diagnosis or proof that a particular bed treats pain. Follow individual veterinary advice when mobility or discomfort matters. No ordinary fabric bed should be assumed chew-proof; reassess damaged covers, accessible filling and the dog’s behavior rather than promising that thicker foam solves those risks."
+      },
+      {
+        "heading": "Compare the new choice with a working bed",
+        "body": "Replace when fit, damage, entry or maintainability creates a real problem. Keep an intact suitable bed when the alternative adds cost without improving that task. A reusable hair-removal tool may be a separate cleaning option for a compatible cover, but it supplies no sleeping surface, cushioning or support. The paused PetFusion listing therefore has no roller purchase substitution."
+      }
+    ]
   },
   {
     site: "pet",
@@ -2007,34 +2878,229 @@ export const guides: Guide[] = [
     ],
   },
   {
-    site: "pet",
-    slug: "pet-camera-privacy-and-placement-guide",
-    updatedAt: "June 25, 2026",
-    title: "Pet Camera Privacy and Placement Guide",
-    dek: "Where to place a pet camera, what privacy settings to check, and how to avoid paying for features you will ignore.",
-    category: "home-care",
-    relatedRoundups: ["best-pet-cameras-for-apartments"],
-    sections: [
-      { heading: "Point it at behavior, not empty space", body: "The best camera angle is usually where the pet rests, waits, eats, or plays. A wide view of the room is less useful if the pet spends all day in one corner." },
-      { heading: "Use visible status cues", body: "Indicator lights, account controls, and clear recording settings make the device easier to trust in shared spaces. Review these before placing a camera in a living room or bedroom." },
-      { heading: "Keep notifications narrow", body: "Too many alerts make pet cameras easy to ignore. Start with fewer notification types, then add smart alerts only if they answer a real question." },
-      { heading: "Treat tossing needs testing", body: "Some dogs love treat tossing; others get overexcited or guard food. Test behavior calmly before using it as the reason to buy a more expensive camera." },
+    "site": "pet",
+    "slug": "pet-camera-privacy-and-placement-guide",
+    "updatedAt": "October 26, 2026",
+    "title": "Pet Camera Privacy and Placement: Accounts, Recording and Coverage",
+    "dek": "Limit the view, review account sharing and recording states, and check the actual pet area before relying on a camera.",
+    "category": "home-care",
+    "purchaseFlow": "task-links",
+    "decisionLayout": true,
+    "searchQuestion": "Where should a pet camera go, and which privacy settings matter?",
+    "quickAnswer": "Frame the pet’s useful area while avoiding private household spaces and exposed cables. Use individual account sharing where supported, check authentication and recovery, and distinguish recording controls from lens position or status lights. Test the intended view and access from the rooms and phones you use; a privacy label or connected app is not proof of secure or complete coverage.",
+    "relatedRoundups": [
+      "best-pet-cameras-for-apartments"
     ],
+    "relatedProducts": [
+      "furbo-360-dog-camera",
+      "wyze-cam-pan-v3-pet-camera"
+    ],
+    "relatedGuides": [
+      "pet-camera-without-too-many-subscriptions"
+    ],
+    "editorialMethod": [
+      "Manufacturer privacy-mode, account-security and placement guidance reviewed October 26, 2026. No security audit, radio survey or hands-on camera test.",
+      "This page addresses household access and placement. Activation, plans and storage costs are covered separately in the subscription guide."
+    ],
+    "sources": [
+      {
+        "name": "Wyze: account security and sharing",
+        "url": "https://support.wyze.com/hc/en-us/articles/360039577592-How-do-I-keep-my-Wyze-account-secure",
+        "note": "Use individual device sharing rather than distributing owner credentials; review authentication."
+      },
+      {
+        "name": "Wyze: 2FA and recovery FAQ",
+        "url": "https://support.wyze.com/hc/en-us/articles/8559141097755-2FA-Updates-and-FAQs",
+        "note": "Recovery access matters. 2FA on sign-in is not a fresh challenge every time an already signed-in app opens."
+      },
+      {
+        "name": "Wyze: Privacy Mode scope",
+        "url": "https://support.wyze.com/hc/en-us/articles/11791894386971-What-is-Privacy-Mode",
+        "note": "Pan v3/v4 fold the lens into the base and turn off sound recording; do not generalize to every camera."
+      },
+      {
+        "name": "Furbo 360 Dog quick-start guide",
+        "url": "https://help.furbo.com/hc/en-us/articles/29794759618201-Quick-Start-Guide-to-Furbo-360-Dog-Camera",
+        "note": "Model-specific placement and power guidance, not a measured guarantee of home Wi-Fi coverage."
+      }
+    ],
+    "comparisonTable": {
+      "title": "Check view, access and recording separately",
+      "columns": [
+        "Confirm",
+        "Unresolved result"
+      ],
+      "rows": [
+        {
+          "label": "View",
+          "values": [
+            "Useful resting area, blind spots and household privacy",
+            "Pan range alone cannot prove pet coverage"
+          ]
+        },
+        {
+          "label": "Account",
+          "values": [
+            "Individual sharing, authentication and recovery access",
+            "A shared owner password leaves access hard to manage"
+          ]
+        },
+        {
+          "label": "Privacy state",
+          "values": [
+            "Actual model’s video, audio and local/cloud controls",
+            "A light or downward lens is not a universal off switch"
+          ]
+        },
+        {
+          "label": "Placement",
+          "values": [
+            "Stable mount, protected cable and ordinary room coverage",
+            "A distance-to-router number does not prove connection"
+          ]
+        },
+        {
+          "label": "Keep existing",
+          "values": [
+            "Current camera passes the needed checks",
+            "Do not buy another camera to avoid fixing account access"
+          ]
+        }
+      ]
+    },
+    "sections": [
+      {
+        "heading": "Frame a useful pet area with the household’s agreement",
+        "body": "Choose the resting or activity area that answers the actual check-in question. Review what a pan movement can reveal beyond the starting view, including screens, private rooms and people. Agree when recording is appropriate and how guests or caregivers are informed. More coverage is not automatically better when it captures spaces that do not serve the pet-care task."
+      },
+      {
+        "heading": "Separate device sharing from the owner login",
+        "body": "Wyze recommends that other users have their own accounts and receive shared devices instead of the owner’s password. Review who has access and remove obsolete shares through the supported controls. Check the authentication method and recovery details before the camera becomes important to the routine. Do not assume that another brand has the same sharing permissions or that changing one setting revokes every existing session."
+      },
+      {
+        "heading": "Read the precise privacy state for the model",
+        "body": "Wyze describes Pan v3/v4 Privacy Mode as folding the lens into the base and stopping sound recording. That model-specific behavior is different from a network disconnection, a cloud-history setting or a powered-off device. Inspect video and audio settings separately and use the manufacturer’s instructions to verify the intended state. Status lights, encryption claims and 2FA are useful controls, but none proves that all household exposure is removed."
+      },
+      {
+        "heading": "Check the mounting and power path before remote viewing",
+        "body": "Keep the camera stable and route the cable where the pet cannot pull, chew or become entangled in it. Furbo’s quick-start placement distances are starting guidance rather than proof of reception through the home’s walls. Check the intended view and normal remote-access route, and follow the exact power-supply requirements. Do not transfer package contents or mounting advice from a Mini, Cat or later camera to the historical 360 Dog listing."
+      },
+      {
+        "heading": "Keep a care response when the view fails",
+        "body": "Decide who can check the animal when a phone, account, internet connection or camera is unavailable. A missed alert, a silent room or a connected status icon does not prove the animal is well. Review unnecessary notifications and recording retention without buying another plan by default. Keep an existing suitable camera when the remaining work is placement, account cleanup or a clearer care arrangement."
+      }
+    ]
   },
   {
-    site: "pet",
-    slug: "cat-fountain-filter-replacement-guide",
-    updatedAt: "June 25, 2026",
-    title: "Cat Fountain Filter Replacement Guide",
-    dek: "How to compare fountain filters, pump cleaning, replacement costs, and backup water plans.",
-    category: "feeding",
-    relatedRoundups: ["best-automatic-cat-feeders"],
-    sections: [
-      { heading: "Confirm the exact filter type", body: "Fountain brands often sell several filter shapes. Before buying a fountain, check the exact replacement filter name, pack size, and availability." },
-      { heading: "Pump access matters", body: "Filters are only part of upkeep. Hair, mineral buildup, and food debris can collect around the pump, so easy disassembly is a long-term ownership feature." },
-      { heading: "Calculate recurring cost", body: "A low fountain price can be offset by expensive filters. Compare the likely replacement interval and pack price before deciding what is actually cheaper." },
-      { heading: "Keep a backup bowl", body: "Even a good fountain can be unplugged, run low, or need cleaning. A backup water bowl keeps hydration from depending on one moving part." },
+    "site": "pet",
+    "slug": "cat-fountain-filter-replacement-guide",
+    "updatedAt": "October 26, 2026",
+    "title": "Cat Fountain Filter Replacement: Exact Fit, Cleaning and Cost",
+    "dek": "Match the fountain and filter generation, separate pump cleaning from filter replacement, and budget from the actual pack.",
+    "category": "feeding",
+    "purchaseFlow": "task-links",
+    "decisionLayout": true,
+    "searchQuestion": "How often should you replace a cat fountain filter?",
+    "quickAnswer": "Follow the exact fountain and replacement-pack instructions and replace earlier when condition or restricted flow requires it. The original Catit 43742 manual specifies 3–4 weeks for its filter and weekly fountain maintenance; the current Triple Action pad page recommends 30 days or visible saturation. Those intervals do not replace cleaning, and a dirty filter does not mean the whole fountain must be replaced.",
+    "relatedRoundups": [],
+    "relatedProducts": [
+      "catit-flower-cat-water-fountain"
     ],
+    "relatedGuides": [
+      "cat-water-fountain-buying-guide"
+    ],
+    "editorialMethod": [
+      "Catit original 43742 manual and current filter-pad documentation reviewed October 26, 2026. No measured filter life, water-quality or microbial testing.",
+      "Historical cartridge codes and new pad codes are kept distinct. Received filter-pack instructions take precedence over an assumed universal fitting procedure."
+    ],
+    "sources": [
+      {
+        "name": "Catit: original 43742 North American manual",
+        "url": "https://www.catit.com/shared/Product-Manual_Catit-Flower-Fountain_NA.pdf",
+        "note": "VER 05/22 English instructions and diagrams reviewed. Weekly maintenance, filter condition, submerged pump and indoor-use limits; match the received model and regional instructions."
+      },
+      {
+        "name": "Catit: current Triple Action Filter Pad",
+        "url": "https://www.catit.com/products/drinking-fountains/flower-fountain-triple-action-filter-pad/",
+        "note": "Current 43738/43739 pads list full-size Flower variants. Not universal PIXI or Mini compatibility; use the replacement pack instructions."
+      },
+      {
+        "name": "Catit: Flower model support",
+        "url": "https://www.catit.com/help-advice/drinking-fountains/flower-fountain/",
+        "note": "Separate original, LED and stainless manuals; do not transfer pump, adapter or filter instructions by appearance."
+      },
+      {
+        "name": "Catit: cleaning guide",
+        "url": "https://www.catit.com/spotlight/catit-flower-fountain-cleaning-guide/",
+        "note": "Pump access and soft-sponge care. This article’s biweekly pump interval differs from another Q&A; use applicable model instructions rather than a universal interval."
+      }
+    ],
+    "comparisonTable": {
+      "title": "Replace the right item for the actual fault",
+      "columns": [
+        "Check first",
+        "Next step"
+      ],
+      "rows": [
+        {
+          "label": "Unknown filter",
+          "values": [
+            "Fountain code, holder, pack code and explicit compatibility",
+            "Pause purchase rather than choosing by diameter alone"
+          ]
+        },
+        {
+          "label": "Restricted flow",
+          "values": [
+            "Water level, installed filter and pump path under instructions",
+            "Unplug before handling; clean or replace the relevant part"
+          ]
+        },
+        {
+          "label": "Dirty filter",
+          "values": [
+            "Condition and applicable replacement interval",
+            "Replace filter, not automatically the whole fountain"
+          ]
+        },
+        {
+          "label": "Recurring cost",
+          "values": [
+            "Pack price divided by usable compatible filters",
+            "Multiply by actual annual replacements, not a sale pack headline"
+          ]
+        },
+        {
+          "label": "Cleaning downtime",
+          "values": [
+            "Safe fresh-water bowl available",
+            "Keep the bowl route while parts are cleaned or replaced"
+          ]
+        }
+      ]
+    },
+    "sections": [
+      {
+        "heading": "Identify the fountain and the filter generation",
+        "body": "Write down the fountain code and the replacement pack code. Catit’s original 43742 manual illustrates older cartridge packs 43745/43746; the current pad page lists 43738/43739 and explicit full-size Flower compatibility. That does not make a similar-looking PIXI, Mini or generic filter interchangeable. Check the replacement pack’s installation directions instead of automatically transferring the older cartridge’s orientation or holder procedure."
+      },
+      {
+        "heading": "Use an interval as a check point, not a promise",
+        "body": "The original manual’s 3–4 week interval and the current pad page’s 30 day recommendation are conditional guidance. Debris, saturation or restricted flow can require earlier attention. Do not infer a fixed clean-water life from the calendar or assume that rinsing restores exhausted filter media. A filter also does not establish water safety or a medical benefit."
+      },
+      {
+        "heading": "Clean the water path independently of filter replacement",
+        "body": "The original 43742 manual calls for weekly fountain maintenance, rinsing the filter without soap and checking dirty pump parts. Unplug before handling, keep electrical parts appropriately dry and follow the model’s pump diagram. Catit support articles mention different pump-cleaning intervals, so use the applicable received instructions and observed condition rather than treating a monthly reminder as permission to ignore buildup."
+      },
+      {
+        "heading": "Calculate cost from compatible filters actually used",
+        "body": "Divide the current pack total by its count of compatible filters, then multiply by the number used in a year. Add shipping or a documented replacement pump only when relevant. Keep the interval explicit in the calculation; a household that replaces sooner has a different cost. This guide has not established a current checkout price or a guaranteed annual replacement count."
+      },
+      {
+        "heading": "Keep the fountain only if it remains suitable",
+        "body": "Weak flow can come from water level, assembly, the filter or the pump; it is not automatically a reason to buy a new fountain. Follow the manufacturer’s troubleshooting without running the pump dry or repairing damaged electrical parts. Maintain a separate fresh-water bowl during downtime. Replace the whole unit when a real fit, damage or serviceability problem is established, rather than using a consumable reminder as a purchase trigger."
+      }
+    ]
   },
   {
     site: "homeoffice",
@@ -2227,16 +3293,40 @@ export const guides: Guide[] = [
   {
     site: "baby",
     slug: "travel-stroller-for-small-car-guide",
-    updatedAt: "June 23, 2026",
-    title: "Travel Stroller Guide for Small Cars and Apartments",
-    dek: "How to compare fold size, weight, recline, basket access, and daily comfort before buying a travel stroller.",
+    updatedAt: "October 26, 2026",
+    title: "Travel Strollers for Small Cars: Fold, Loading and Child Fit",
+    dek: "Check the folded stroller, trunk opening and remaining luggage space, then compare child limits, lifting and the routes you use every day.",
     category: "travel",
+    searchQuestion: "How do I know a travel stroller will fit my small car?",
+    quickAnswer: "Compare the exact stroller's folded dimensions with both the trunk opening and usable storage space. Include the travel bag and any parts left attached. Then check that you can load it, close the hatch and carry the other luggage. A small fold does not establish child suitability, comfortable handling or airline acceptance.",
+    relatedProducts: ["baby-jogger-city-tour-2-stroller", "summer-3dlite-convenience-stroller"],
     relatedRoundups: ["best-travel-strollers"],
+    relatedGuides: ["travel-stroller-folded-size-checklist"],
+    sources: [
+      { name: "Baby Jogger City Tour 2 single specifications", url: "https://help.babyjogger.com/s/article/CITY-TOUR-2-SPECIFICATIONS", note: "Lists folded dimensions separately from shipping-box dimensions, stroller weight and seat load. Match the actual configuration; no vehicle-fit test." },
+      { name: "American Airlines: traveling with children", url: "https://www.aa.com/web/i18n/travel-info/special-assistance/traveling-children.html", note: "Current stroller check-in and gate-check guidance. Airline acceptance is separate from car fit; confirm the operating carrier for the actual trip." },
+      { name: "CPSC stroller restraint alert", url: "https://www.cpsc.gov/safety-education/safety-guides/kids-and-babies/infants-strollers-must-be-properly-secured-all-times", note: "Use the harness and supervise the child, including when the seat is reclined. This is not individual model or recall clearance." },
+    ],
+    editorialMethod: [
+      "Manufacturer specifications and airline/CPSC guidance reviewed October 26, 2026; no physical fold, lift, child-fit, wheel or vehicle test.",
+      "The two linked product notes are comparison references. Their historical retailer identities do not verify today's seller, stock, included parts or the unit you receive.",
+    ],
+    comparisonTable: { title: "Check the whole loading routine", columns: ["Evidence to collect", "Reason to pause or keep current gear"], rows: [
+      { label: "Folded package", values: ["Exact model, configuration, all three dimensions and carry bag", "Only a box size or a different regional model is documented"] },
+      { label: "Trunk access", values: ["Narrow opening, usable storage space and loading path", "Fits the floor plan but will not pass the opening or close under the hatch"] },
+      { label: "Other luggage", values: ["Remaining room for the real bags and daily supplies", "The stroller fits only after removing essential luggage"] },
+      { label: "Lifting and home storage", values: ["Your actual lift, fold latch, carrying route and storage location", "Small dimensions still leave an awkward lift or blocked access"] },
+      { label: "Child and daily route", values: ["Current instructions, restraint, seating limits and intended surfaces", "Child suitability is unknown, or the existing stroller already does the job"] },
+      { label: "Flight", values: ["Operating carrier's current stroller and baggage rules", "A cabin-friendly label is being treated as guaranteed bin space"] },
+    ] },
+    decisionPurchase: { asin: "B0CN79NZ8J", model: "Baby Jogger City Tour 2", qualifies: "Consider this historical model reference only after the exact selected version meets the child's instructions and your measured loading, storage and lifting needs. Confirm whether the belly bar, bag and other supplied parts affect the fold you will use.", stop: "Pause for unknown child suitability, a tight or untested loading path, missing regional instructions or a seller selection that does not clearly identify the expected version. A published fold size is not a vehicle or airline approval.", keep: "Keep the existing stroller if it remains suitable for the child and already fits the real routine. A second stroller is optional, even when another model folds smaller." },
     sections: [
-      { heading: "Measure storage before weight", body: "The lightest stroller is not always the best one. Check folded dimensions against your car trunk, hallway, closet, and travel plans." },
-      { heading: "Separate airport use from daily use", body: "A stroller bought for one trip may become the everyday errand stroller. Recline, canopy, basket access, and wheel feel still matter after the flight." },
-      { heading: "Check age and weight limits", body: "Confirm the exact model's child weight range, recline rules, and accessory compatibility. Do not rely only on product photos or category names." },
-      { heading: "Know the rough-sidewalk trade-off", body: "Compact strollers usually give up some wheel comfort and storage. If rough sidewalks are daily reality, a full-size stroller may be less frustrating." },
+      { heading: "Measure the opening as well as the trunk", body: "A trunk's quoted capacity in liters does not describe the shape of its opening. Measure the narrowest usable entry and the space inside with the seats in the position you need. Include a sloping hatch, wheel arches and other obstructions. Compare possible loading orientations without treating a rectangular-size comparison as proof that the whole package can pass through the opening. Resolve a tight result with an actual fit check before committing." },
+      { heading: "Match dimensions to the folded version you will carry", body: "Record the complete model, regional instructions and parts that stay on during its documented fold. A shipping carton is not the folded stroller. Baby Jogger's City Tour 2 support table separates these measurements; it also separates seat load from other weight figures. That table is a reference for the named model, not proof that a selected retailer bundle has an identical folded envelope. Check the received version and any bag, belly bar or accessory separately." },
+      { heading: "Rehearse the adult's loading and storage routine", body: "With the child safely out of the stroller and supervised, follow the exact folding instructions and check the transport latch, carrying point and lift into the real car. Do not carry a child in a folded stroller or improvise a carry point. Include the route from the car to the apartment and the space needed to open the stroller again. A low listed weight alone does not establish that the lift or fold is manageable for a particular caregiver." },
+      { heading: "Reserve room for the rest of the journey", body: "Plan for the diaper bag, groceries or travel luggage that will be there at the same time. A stroller that occupies the only usable storage space may not solve the small-car problem. Check that the hatch closes without forcing the stroller and follow the vehicle's guidance for securing luggage. At home, keep the normal walking route and access clear. Reusing an existing suitable stroller can be the better answer when it already passes these checks." },
+      { heading: "Keep child suitability and daily handling in the decision", body: "Read the exact seat's age, developmental, height and weight requirements, restraint instructions and approved accessory combinations. Near-flat recline or a belly bar does not replace those requirements or the harness. CPSC warns against leaving a child unattended in a stroller, including with the seat reclined. Check braking, canopy, basket access and handling on the intended routes; this guide has not measured ride comfort or established that one wheel design performs better than another." },
+      { heading: "Make a separate flight plan", body: "A stroller fitting a small car says nothing about airline baggage policy or the overhead space on the operating aircraft. Check the current carrier rules for cabin carriage, gate checking, ticket-counter checking and where the stroller will be returned. American Airlines' child-travel page, for example, distinguishes stroller check-in routes. Do not transfer that policy to another carrier or treat marketing wording as a seat or bin reservation. Keep a permitted fallback plan for the actual trip." },
     ],
   },
   {
@@ -2331,16 +3421,39 @@ export const guides: Guide[] = [
   {
     site: "baby",
     slug: "travel-stroller-folded-size-checklist",
-    updatedAt: "June 25, 2026",
-    title: "Travel Stroller Folded Size Checklist",
-    dek: "A practical checklist for trunk fit, hallway storage, airline assumptions, recline, and daily errand use.",
+    updatedAt: "October 26, 2026",
+    title: "Stroller Folded Size Checklist: Measure the Package and Opening",
+    dek: "Write down the exact folded configuration, all three dimensions, trunk opening and loading path before deciding whether a smaller stroller is needed.",
     category: "travel",
+    purchaseFlow: "task-links",
+    searchQuestion: "Which measurements should I take for a folded stroller?",
+    quickAnswer: "Measure the actual folded package's length, width and height, including the bag and parts you will leave attached. Record the narrowest opening, usable storage dimensions and the route into that space. Check both the car and home storage, then verify the real loading motion. Keep unknown measurements unresolved rather than treating a compact label as a fit result.",
     relatedRoundups: ["best-travel-strollers"],
+    relatedGuides: ["travel-stroller-for-small-car-guide"],
+    sources: [
+      { name: "Baby Jogger City Tour 2 single specifications", url: "https://help.babyjogger.com/s/article/CITY-TOUR-2-SPECIFICATIONS", note: "Example of a manufacturer listing folded dimensions and shipping-box dimensions separately. It does not establish clearance for your car or a different version." },
+      { name: "American Airlines conditions of carriage", url: "https://www.aa.com/web/i18n/customer-service/support/conditions-of-carriage.html", note: "Carry-on suitability and available overhead space remain airline decisions, even when a collapsible stroller meets a published limit." },
+      { name: "CPSC stroller restraint alert", url: "https://www.cpsc.gov/safety-education/safety-guides/kids-and-babies/infants-strollers-must-be-properly-secured-all-times", note: "Harness use and supervision remain separate from storage measurements or a reclined seat." },
+    ],
+    editorialMethod: [
+      "Manufacturer and carrier documents reviewed October 26, 2026. This is a measurement checklist, not a physical vehicle-fit or airline-acceptance test.",
+      "No default new-stroller purchase is attached to a measurement task. Compare alternatives only if the current suitable stroller fails a real requirement.",
+    ],
+    comparisonTable: { title: "Record one complete measurement set", columns: ["Write down", "Do not substitute"], rows: [
+      { label: "Identity", values: ["Model, region, instructions and folded configuration", "A family name or another version's measurements"] },
+      { label: "Package", values: ["Folded length × width × height, bag and attached parts", "Shipping-carton dimensions or volume alone"] },
+      { label: "Opening", values: ["Narrowest usable width and height along the entry", "The largest floor-space measurement inside"] },
+      { label: "Storage", values: ["Usable depth, width and height with seats and hatch in use", "Nominal trunk capacity or an empty-car demonstration"] },
+      { label: "Carry routine", values: ["Latch, intended carrying point, lift and route home", "A low listed weight as proof of manageable carrying"] },
+      { label: "Decision", values: ["Actual loading check, remaining luggage room and unknowns", "A fit guarantee from this checklist or an airline-friendly label"] },
+    ] },
     sections: [
-      { heading: "Measure the storage spot", body: "Check trunk depth, closet width, hallway space, and where the stroller will sit at home. Folded dimensions matter more when storage is the daily problem." },
-      { heading: "Avoid assuming airline fit", body: "Cabin-bin rules vary by airline, route, and aircraft. A compact fold helps, but the carrier's current rules are the final check before travel." },
-      { heading: "Check the carry routine", body: "A stroller that folds small but is awkward to lift, latch, or shoulder-carry may still be frustrating through airports and parking lots." },
-      { heading: "Keep daily comfort in view", body: "If the stroller will also handle errands, check recline, canopy, basket access, brakes, and wheel feel before choosing only by folded size." },
+      { heading: "Label the configuration before taking measurements", body: "Write down the complete model and the instructions used for folding. Note whether the basket must be emptied or an accessory removed under those instructions, and whether the transport bag is included in your measurement. Record every detached part that must travel too. The useful package is the one you will actually carry, not the smallest arrangement that can be photographed." },
+      { heading: "Keep package, carton and storage dimensions separate", body: "Use one unit throughout and label the axes. Baby Jogger's support table lists a City Tour 2 fold of 21.6 × 16.9 × 6.8 inches separately from its box size. Use that only as a documented model example; verify the actual regional version, supplied parts and bag. A retailer carton measurement cannot fill a missing fold measurement, and a three-number specification cannot describe every protrusion or flexible part." },
+      { heading: "Trace the entry into the storage space", body: "Measure the narrowest usable opening, then the depth, width and height of the destination. Account for obstructions, a sloping hatch and the orientation in which the folded stroller can be handled. Different orientations may be possible, but a mathematical size comparison cannot prove that the loading motion works. Do not force a tight fit or treat a missing dimension as zero. Leave the result unknown until it can be checked." },
+      { heading: "Repeat with the normal luggage and home setup", body: "Keep the vehicle seats where they need to be and include the bags normally carried with the child. Check hatch closure and the vehicle's luggage-securing guidance. At home, check the closet opening, walking route, storage location and room to unfold again. Record where any removed accessory will go. The checklist has not passed if it solves the car but creates an obstruction at home." },
+      { heading: "Check the lift, then return to the child's needs", body: "With the child safely out and supervised, use the documented fold, latch and carrying point to check the adult's real lift and carrying route. Never use the folded stroller to carry the child. A successful storage check does not establish the child's permitted seating, restraint or accessory configuration. Read those requirements separately and use the harness and supervision required by the instructions and CPSC guidance." },
+      { heading: "Keep a separate airline and replacement decision", body: "Record the operating carrier and current stroller rules for every flight rather than copying a generic cabin-size promise. American Airlines' conditions reserve carry-on suitability and overhead-space decisions to the airline. If the existing suitable stroller passes the car and home checks, keep it; if it fails, use the travel-stroller comparison with the missing requirement written down. A new purchase is a possible response to a demonstrated problem, not the outcome of completing this worksheet." },
     ],
   },
   {
@@ -2455,13 +3568,6 @@ products.push(...homeofficeDockProducts);
 roundups.push(...homeofficeDockRoundups);
 guides.push(...homeofficeDockGuides);
 guides.push(...upgradeGuides);
-products.push(...styleProducts);
-roundups.push(...styleRoundups);
-guides.push(...styleGuides);
-products.push(...styleCatalogProducts);
-roundups.push(...styleCatalogRoundups);
-products.push(...styleCatalog50Products);
-roundups.push(...styleCatalog50Roundups);
 products.push(...adjacentExpansionProducts);
 roundups.push(...adjacentExpansionRoundups);
 guides.push(...adjacentExpansionGuides);
@@ -2488,7 +3594,6 @@ guides.push(...secondRoundAugust2026Guides);
 products.push(...productExpansionPilot20260821Products);
 roundups.push(...aggressivePortfolioRoundups);
 guides.push(...aggressivePortfolioGuides);
-guides.push(...costumeGuides);
 guides.push(...quadrupleExpansionGuides);
 guides.push(...broadProductPilotGuides);
 guides.push(...broadProductPilot2Guides);

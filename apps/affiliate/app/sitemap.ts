@@ -5,8 +5,6 @@ import { marketSitemapEntries } from "@/lib/market-content";
 import { effectiveContentUpdatedAt, searchOpportunityUpdatedAt } from "@/lib/search-opportunities";
 import { staticPageSlugs } from "@/lib/static-pages";
 import { getCurrentSite } from "@/lib/sites";
-import { listAllIndexableCostumeProducts } from "@/lib/costume-catalog";
-import { costumeHalloweenIdeaSlugs } from "@/lib/costume-halloween-ideas";
 import { compatibilityTopics } from "@/lib/compatibility-topics";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
@@ -16,7 +14,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const roundups = siteRoundups(site.key).filter((item) => !item.sitemapExcluded);
   const guides = siteGuides(site.key).filter((item) => !item.sitemapExcluded);
   const tools = siteTools(site.key).filter((item) => !item.sitemapExcluded);
-  const costumeProducts = site.key === "costume" ? await listAllIndexableCostumeProducts() : [];
   const urls: Array<{
     path: string;
     changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"];
@@ -26,20 +23,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: "", changeFrequency: "weekly", priority: 1 },
     ...(["homeoffice", "network"].includes(site.key) ? [{ path: "/compatibility", changeFrequency: "monthly" as const, priority: 0.8, lastModified: new Date("2026-10-19T00:00:00Z") }] : []),
     ...compatibilityTopics.filter((item) => item.site === site.key).map((item) => ({ path: `/compatibility/${item.id}`, changeFrequency: "monthly" as const, priority: 0.8, lastModified: new Date("2026-10-19T00:00:00Z") })),
-    ...(site.key === "costume"
-      ? [
-          { path: "/halloween", changeFrequency: "weekly" as const, priority: 0.95, lastModified: new Date("2026-08-03T00:00:00Z") },
-          { path: "/best/halloween-animatronics-small-yards-and-porches", changeFrequency: "weekly" as const, priority: 0.92, lastModified: new Date("2026-08-03T00:00:00Z") },
-          { path: "/halloween-ideas", changeFrequency: "weekly" as const, priority: 0.93, lastModified: new Date("2026-08-06T00:00:00Z") },
-          ...costumeHalloweenIdeaSlugs.map((slug) => ({
-            path: `/halloween-ideas/${slug}`,
-            changeFrequency: "monthly" as const,
-            priority: 0.9,
-            lastModified: new Date("2026-08-06T00:00:00Z"),
-          })),
-          { path: "/premium", changeFrequency: "weekly" as const, priority: 0.82 },
-        ]
-      : []),
+    ...([]),
     ...staticPageSlugs.map((slug) => ({ path: `/${slug}`, changeFrequency: "monthly" as const, priority: 0.45 })),
     ...site.categories.map((category) => ({
       path: `/categories/${category.slug}`,
@@ -81,12 +65,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         ...(updated ? { lastModified: updated.date } : {}),
       };
     }),
-    ...costumeProducts.map((item) => ({
-      path: `/products/${item.slug}`,
-      changeFrequency: "weekly" as const,
-      priority: 0.84,
-      lastModified: item.lastSeenAt,
-    })),
     ...guides.map((item) => {
       const updated = contentDate(effectiveContentUpdatedAt(item.updatedAt, searchOpportunityUpdatedAt(site.key, "guide", item.slug)));
 

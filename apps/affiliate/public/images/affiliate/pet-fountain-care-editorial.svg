@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 880" role="img" aria-labelledby="title desc">
+<style>text{font-family:Arial,sans-serif;fill:#153d39}.title{font-size:45px;font-weight:700}.sub{font-size:23px;fill:#55716c}.label{font-size:26px;font-weight:700}.small{font-size:22px}.line{fill:none;stroke:#285e57;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.muted{fill:#dcece5;stroke:#5f8b7e;stroke-width:4}.tag{font-size:20px;letter-spacing:2px;font-weight:700;fill:#53746c}</style>
+<rect width="1440" height="880" fill="#f5f7ed"/><circle cx="1370" cy="20" r="260" fill="#e4eddb"/>
+<title id="title">Separate the reservoir, filter and pump maintenance</title><desc id="desc">A cutaway schematic fountain shows a reservoir, filter and submerged pump. It emphasizes checking exact replacement parts, following the cleaning instructions, and retaining a separate water bowl.</desc>
+<text x="70" y="95" class="title">Three parts of fountain care</text><text x="70" y="140" class="sub">A filter and a large reservoir do not remove the cleaning routine.</text>
+<rect x="70" y="210" width="650" height="535" rx="28" fill="#fff"/>
+<path d="M190 390V595Q190 650 250 650H535Q595 650 595 595V390" fill="#dbebe7" stroke="#285e57" stroke-width="6"/>
+<path d="M205 475H580" stroke="#70aaa8" stroke-width="5"/>
+<ellipse cx="393" cy="385" rx="220" ry="55" class="muted"/><ellipse cx="393" cy="385" rx="105" ry="24" fill="#ead49f" stroke="#a67b38" stroke-width="4"/>
+<rect x="335" y="545" width="110" height="70" rx="15" class="muted"/><path d="M390 545V395M390 360V315M390 315Q340 290 315 330M390 315Q440 290 465 330" class="line"/>
+<text x="160" y="700" class="small">Schematic only • identify the actual model</text>
+<rect x="770" y="210" width="600" height="155" rx="24" fill="#e0ece7"/><text x="815" y="268" class="label">Reservoir and channels</text><text x="815" y="312" class="small">Fresh water • level • cleaning access</text>
+<rect x="770" y="395" width="600" height="155" rx="24" fill="#e0ece7"/><text x="815" y="453" class="label">Exact filter and holder</text><text x="815" y="497" class="small">Part code • condition • pack instructions</text>
+<rect x="770" y="580" width="600" height="165" rx="24" fill="#e0ece7"/><text x="815" y="638" class="label">Pump and power path</text><text x="815" y="682" class="small">Unplug before handling • no dry running</text>
+<text x="70" y="820" class="tag">MADABASE · EDITORIAL DIAGRAM · NOT A PRODUCT PHOTOGRAPH</text></svg>

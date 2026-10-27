@@ -4,7 +4,7 @@ import comparisonFirstData from "../config/comparison-first-cohort-2026-09-04.js
 import deepRankRecoveryData from "../config/deep-rank-recovery-2026-08-27.json";
 import { findFamilyEditorialBrief } from "./quadruple-family-editorial";
 
-type ExpansionSite = Exclude<SiteKey, "style">;
+type ExpansionSite = SiteKey;
 
 type ProductFamily = {
   site: ExpansionSite;
@@ -144,23 +144,6 @@ const siteProfiles: Record<ExpansionSite, SiteProfile> = {
     failureModes: "loss of power, network, water flow, food delivery, waste removal, a consumable, normal access, or an animal refusing the device",
     identityRecord: "manufacturer, complete model, animal-size limits, capacity, compatible consumables, power method, app or subscription needs, and included parts",
   },
-  costume: {
-    image: "/images/affiliate/hero-halloween-costume-studio-v1.webp",
-    imageAlt: "Halloween costume and scene pieces arranged for fit, setup, and storage planning",
-    fit: "Confirm body or display measurements, materials, visibility, movement, venue rules, power, weather limits, application supplies, delivery timing, and the exact included pieces.",
-    ownership: "Include missing accessories, makeup or adhesive, batteries and fluid, alterations, cleaning, transport, storage volume, replacement parts, shipping, and return restrictions.",
-    workflow: "Run a complete dress rehearsal or display setup before the event, including movement, visibility, power, guest clearance, touch-ups, removal, cleanup, and storage.",
-    risk: "Skip a product when its materials, visibility, breathing, moving parts, power, weather exposure, skin contact, delivery timing, or storage requirements cannot be verified for the actual event.",
-    sourceName: "U.S. FDA — Halloween Safety",
-    sourceUrl: "https://www.fda.gov/consumers/consumer-updates/halloween-safety-tips-costumes-candy-and-colored-contact-lenses",
-    purchaseNoise: "a premium label, a dramatic product photo, a character promise, or a bundle count that hides missing pieces",
-    planningContext: "record the wearer or display measurements, event and venue, movement and visibility needs, materials and skin contact, weather, power, arrival deadline, included pieces, return terms, cleanup, and storage",
-    dependencies: "alterations, underlayers, adhesive, remover, makeup, batteries, fog fluid, rigging, transport cases, venue approval, or professional application",
-    realContext: "wearer or display, venue, lighting, movement, visibility, weather, setup time, cleanup, and storage",
-    operatingCosts: "alterations, missing accessories, makeup or adhesive, batteries and fluid, cleaning, repairs, transport, insured shipping, and storage",
-    failureModes: "restricted vision or movement, skin irritation, a failed closure or attachment, loss of power, weather exposure, a moving mechanism, delayed delivery, or damaged storage",
-    identityRecord: "seller, complete product or set name, materials, measurements, included pieces, power requirements, delivery promise, return terms, and care instructions",
-  },
 };
 
 const categoryImages: Record<ExpansionSite, Record<string, { image: string; imageAlt: string }>> = {
@@ -189,12 +172,6 @@ const categoryImages: Record<ExpansionSite, Record<string, { image: string; imag
     comfort: { image: "/images/affiliate/category-pet-comfort-editorial-v2.webp", imageAlt: "Original editorial scene with unbranded pet bedding, carrier, ramp, tracker, and door equipment" },
     "home-care": { image: "/images/affiliate/category-pet-home-care-editorial-v2.webp", imageAlt: "Original editorial scene with unbranded pet cleaning, litter, grooming, and camera equipment" },
   },
-  costume: {
-    costumes: { image: "/images/affiliate/category-costume-costumes-editorial-v2.webp", imageAlt: "Original unlicensed costume designs on dress forms in a professional fitting studio" },
-    "wigs-makeup": { image: "/images/affiliate/category-costume-wigs-editorial-v2.webp", imageAlt: "Original costume wigs and generic theatrical makeup tools in a hygienic studio" },
-    "masks-prosthetics": { image: "/images/affiliate/category-costume-masks-editorial-v2.webp", imageAlt: "Original unlicensed masks and neutral prosthetic materials arranged for safe application planning" },
-    "props-animatronics": { image: "/images/affiliate/category-costume-props-editorial-v2.webp", imageAlt: "Original unlicensed theatrical props and animatronic mechanisms arranged for setup and storage planning" },
-  },
 };
 
 const categorySources: Record<ExpansionSite, Record<string, Array<{ name: string; url: string; note: string }>>> = {
@@ -222,12 +199,6 @@ const categorySources: Record<ExpansionSite, Record<string, Array<{ name: string
     feeding: [{ name: "AVMA — Pet Care", url: "https://www.avma.org/resources-tools/pet-owners/petcare", note: "Veterinary-owner baseline for feeding, hydration, behavior, and when equipment cannot replace care." }],
     comfort: [{ name: "AVMA — Pet Care", url: "https://www.avma.org/resources-tools/pet-owners/petcare", note: "Veterinary-owner baseline for fit, behavior, transport, mobility, and health escalation." }],
     "home-care": [{ name: "AVMA — Pet Care", url: "https://www.avma.org/resources-tools/pet-owners/petcare", note: "Veterinary-owner baseline for grooming, hygiene, monitoring, and care limits." }],
-  },
-  costume: {
-    costumes: [{ name: "U.S. CPSC — Halloween Safety", url: "https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Halloween", note: "Authoritative visibility, flammability, movement, and supervision baseline." }],
-    "wigs-makeup": [{ name: "U.S. FDA — Halloween Safety", url: "https://www.fda.gov/consumers/consumer-updates/halloween-safety-tips-costumes-candy-and-colored-contact-lenses", note: "Authoritative cosmetic, eye-area, skin-contact, and costume safety baseline." }],
-    "masks-prosthetics": [{ name: "U.S. FDA — Halloween Safety", url: "https://www.fda.gov/consumers/consumer-updates/halloween-safety-tips-costumes-candy-and-colored-contact-lenses", note: "Authoritative face, eye, skin-contact, and visibility baseline." }],
-    "props-animatronics": [{ name: "U.S. CPSC — Halloween Safety", url: "https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Halloween", note: "Authoritative seasonal fire, movement, visibility, and supervision baseline." }],
   },
 };
 
@@ -380,17 +351,6 @@ const productFamilies: ProductFamily[] = [
   { site: "pet", slug: "smart-bird-feeders", name: "Smart bird feeders", category: "comfort", alternative: "standard wildlife feeders" },
   { site: "pet", slug: "automatic-aquarium-feeders", name: "Automatic aquarium feeders", category: "feeding", alternative: "manual measured feeding" },
   { site: "pet", slug: "aquarium-water-monitors", name: "Aquarium water monitors", category: "home-care", alternative: "manual liquid test kits" },
-
-  { site: "costume", slug: "high-end-costumes", name: "High-end costumes", category: "costumes", alternative: "standard party costumes or rentals" },
-  { site: "costume", slug: "mascot-costumes", name: "Mascot costumes", category: "costumes", alternative: "character masks with separate garments" },
-  { site: "costume", slug: "historical-theatrical-costumes", name: "Historical and theatrical costumes", category: "costumes", alternative: "standard party costumes" },
-  { site: "costume", slug: "adult-costumes", name: "Adult costumes", category: "costumes", alternative: "separately assembled character looks" },
-  { site: "costume", slug: "child-costumes", name: "Child costumes", category: "costumes", alternative: "simple clothing-based dress-up" },
-  { site: "costume", slug: "costume-wigs", name: "Costume wigs", category: "wigs-makeup", alternative: "temporary hair color or headpieces" },
-  { site: "costume", slug: "masks-and-masquerade", name: "Masks and masquerade masks", category: "masks-prosthetics", alternative: "prosthetics or makeup-only transformations" },
-  { site: "costume", slug: "prosthetics-special-effects", name: "Prosthetics and special effects", category: "masks-prosthetics", alternative: "full-face masks" },
-  { site: "costume", slug: "theatrical-face-body-makeup", name: "Theatrical face and body makeup", category: "wigs-makeup", alternative: "masks or ready-made character kits" },
-  { site: "costume", slug: "props-and-animatronics", name: "Props and animatronics", category: "props-animatronics", alternative: "compact static decorations" },
 ];
 
 const rolesBySite: Record<ExpansionSite, Array<"buying" | "comparison" | "fit" | "ownership" | "workflow" | "safety">> = {
@@ -399,7 +359,6 @@ const rolesBySite: Record<ExpansionSite, Array<"buying" | "comparison" | "fit" |
   homeoffice: ["buying", "comparison", "fit", "ownership", "workflow"],
   baby: ["buying", "comparison", "fit", "ownership", "workflow", "safety"],
   pet: ["buying", "comparison", "fit", "ownership", "workflow"],
-  costume: ["buying", "comparison", "fit", "ownership"],
 };
 
 function roleSlug(family: ProductFamily, role: (typeof rolesBySite)[ExpansionSite][number]) {
@@ -652,7 +611,7 @@ function guideFor(family: ProductFamily, role: (typeof rolesBySite)[ExpansionSit
       ...(comparisonFirstTarget ? ["Answer the exact A-versus-B decision before broader fit, ownership, and workflow guidance."] : []),
       "Define one independent purchase or use question for this URL.",
       `Verify the four family-specific dimensions: ${brief.dimensions.join("; ")}.`,
-      effectiveFamily.site === "costume" ? "Resolve shoppable products only from the active Costume PostgreSQL/CJ catalog." : "Use an exact Amazon ASIN only as a current retailer identity and checkout anchor, not as hands-on evidence.",
+      "Use an exact Amazon ASIN only as a current retailer identity and checkout anchor, not as hands-on evidence.",
       discussion ? "Separate public community discussion from official specifications and editorial judgment." : "Do not add a community claim when no sufficiently relevant public discussion was found.",
       "Keep a written stop condition and a reversible test path.",
     ],

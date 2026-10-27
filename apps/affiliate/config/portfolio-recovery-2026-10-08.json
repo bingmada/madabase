@@ -28,12 +28,12 @@
   },
   "canonicalInventoryBaseline": {
     "measuredAt": "2026-10-08",
-    "publishedBasePages": 1134,
-    "publishedContentRegistryPages": 1134,
-    "accessibleBaseEditorialPagesIncludingStandalone": 1135,
+    "publishedBasePages": 1045,
+    "publishedContentRegistryPages": 1045,
+    "accessibleBaseEditorialPagesIncludingStandalone": 1045,
     "softLaunchRegistryPagesExcludedFromSitemapAndDiscovery": 5,
-    "standaloneEditorialRoutesOutsideRegistry": 1,
-    "sitemapBaseEditorialPages": 1130,
+    "standaloneEditorialRoutesOutsideRegistry": 0,
+    "sitemapBaseEditorialPages": 1040,
     "pagesWithImpressionsInRepositoryExport": 374,
     "pagesWithoutImpressionRowInRepositoryExport": 760,
     "sites": {
@@ -41,14 +41,12 @@
       "baby": 225,
       "network": 171,
       "smarthome": 238,
-      "pet": 185,
-      "style": 63,
-      "costume": 26
+      "pet": 185
     },
     "composition": {
-      "guides": 875,
-      "products": 175,
-      "roundups": 77,
+      "guides": 844,
+      "products": 125,
+      "roundups": 69,
       "tools": 7
     },
     "sitemapBaseEditorialBySite": {
@@ -56,12 +54,36 @@
       "baby": 224,
       "network": 170,
       "smarthome": 237,
-      "pet": 184,
-      "style": 63,
-      "costume": 27
+      "pet": 184
     },
     "scope": "All published base-canonical editorial routes after applying current permanent-consolidation rules, including factory-generated products, factory-generated guides, the 151 research-pool guides and the governed family guides that remain canonical. The 240 consolidated guide sources, home pages, category archives and localized compatibility editions are tracked separately and are not counted as editorial base pages.",
-    "localizedEditions": "Locale editions inherit the evidence and lifecycle decision of their base canonical; they are not independent content-production targets."
+    "localizedEditions": "Locale editions inherit the evidence and lifecycle decision of their base canonical; they are not independent content-production targets.",
+    "retirementAdjustment": {
+      "at": "2026-10-27T07:16:45.283358+00:00",
+      "ownerAuthorized": true,
+      "site": "style",
+      "removedRegistryPages": 63,
+      "removedByKind": {
+        "guide": 5,
+        "product": 50,
+        "roundup": 8,
+        "tool": 0
+      },
+      "originalAggregateInventory": {
+        "publishedBasePages": 1134,
+        "publishedContentRegistryPages": 1134,
+        "accessibleBaseEditorialPagesIncludingStandalone": 1135,
+        "sitemapBaseEditorialPages": 1130
+      },
+      "limit": "Inventory scope adjustment only. Historical traffic/revenue observations are not updated or inferred. No new publication allowance."
+    },
+    "costumeRetirementAdjustment": {
+      "at": "2026-10-27T07:53:56.997207+00:00",
+      "removedCanonicalGuides": 26,
+      "removedStandaloneRoutes": 1,
+      "ownerDelegatedDecision": true,
+      "rule": "Subtract only withdrawn inventory; no new publication allowance or traffic/revenue inference."
+    }
   },
   "measurementBaseline": {
     "googleSearchConsole": {
@@ -69,7 +91,7 @@
       "clicks": 27,
       "impressions": 4511,
       "ctrPercent": 0.6,
-      "averagePosition": 14.0,
+      "averagePosition": 14,
       "pageRows": 432,
       "note": "The full URL ledger is generated from the most recent repository CSV through 2026-09-30; the newer live headline and leading-page evidence are recorded here and must replace it at the next full export."
     },
@@ -132,24 +154,6 @@
         "ownership cost, cleaning and compatibility"
       ],
       "reviewAt": "2026-11-05"
-    },
-    "style": {
-      "state": "maintenance",
-      "priority": 6,
-      "focus": [
-        "preserve technical health and distinct sizing/material pages only"
-      ],
-      "retireReviewAt": "2026-11-05"
-    },
-    "costume": {
-      "state": "seasonal-maintenance",
-      "priority": 7,
-      "focus": [
-        "exact merchant identity",
-        "availability and delivery timing",
-        "measured space, fit and included pieces"
-      ],
-      "seasonReviewAt": "2026-11-05"
     }
   },
   "protectedBaseCanonicals": [
@@ -223,25 +227,23 @@
   },
   "canonicalInventoryCurrent": {
     "measuredAt": "2026-10-13",
-    "publishedBasePages": 1125,
-    "publishedContentRegistryPages": 1125,
-    "accessibleBaseEditorialPagesIncludingStandalone": 1126,
+    "publishedBasePages": 1039,
+    "publishedContentRegistryPages": 1039,
+    "accessibleBaseEditorialPagesIncludingStandalone": 1039,
     "softLaunchRegistryPagesExcludedFromSitemapAndDiscovery": 5,
-    "standaloneEditorialRoutesOutsideRegistry": 1,
-    "sitemapBaseEditorialPages": 1121,
+    "standaloneEditorialRoutesOutsideRegistry": 0,
+    "sitemapBaseEditorialPages": 1034,
     "sites": {
       "homeoffice": 226,
       "baby": 225,
       "network": 165,
       "smarthome": 238,
-      "pet": 185,
-      "style": 63,
-      "costume": 23
+      "pet": 185
     },
     "composition": {
-      "guides": 866,
-      "products": 175,
-      "roundups": 77,
+      "guides": 838,
+      "products": 125,
+      "roundups": 69,
       "tools": 7
     },
     "sitemapBaseEditorialBySite": {
@@ -249,12 +251,36 @@
       "baby": 224,
       "network": 164,
       "smarthome": 237,
-      "pet": 184,
-      "style": 63,
-      "costume": 24
+      "pet": 184
     },
     "scope": "October 8 inventory minus nine newly consolidated base guide routes. The October 8 historical baseline and its exposure counts are preserved separately.",
-    "localizedEditions": "Locale editions inherit the evidence and lifecycle decision of their base canonical; they are not independent content-production targets."
+    "localizedEditions": "Locale editions inherit the evidence and lifecycle decision of their base canonical; they are not independent content-production targets.",
+    "retirementAdjustment": {
+      "at": "2026-10-27T07:16:45.283708+00:00",
+      "ownerAuthorized": true,
+      "site": "style",
+      "removedRegistryPages": 63,
+      "removedByKind": {
+        "guide": 5,
+        "product": 50,
+        "roundup": 8,
+        "tool": 0
+      },
+      "originalAggregateInventory": {
+        "publishedBasePages": 1125,
+        "publishedContentRegistryPages": 1125,
+        "accessibleBaseEditorialPagesIncludingStandalone": 1126,
+        "sitemapBaseEditorialPages": 1121
+      },
+      "limit": "Inventory scope adjustment only. Historical traffic/revenue observations are not updated or inferred. No new publication allowance."
+    },
+    "costumeRetirementAdjustment": {
+      "at": "2026-10-27T07:53:56.997207+00:00",
+      "removedCanonicalGuides": 23,
+      "removedStandaloneRoutes": 1,
+      "ownerDelegatedDecision": true,
+      "rule": "Subtract only withdrawn inventory; no new publication allowance or traffic/revenue inference."
+    }
   },
   "qualityPilot20261019": {
     "status": "local-validated-awaiting-production-cutover",

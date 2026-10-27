@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+ <title id="title">Camera and dedicated parent unit</title>
+ <desc id="desc">An editorial workflow illustration, not an exact product image. Check actual room coverage and the power supply of each unit.</desc>
+ <rect width="1200" height="900" rx="32" fill="#f2eadf"/>
+ <text x="80" y="115" font-family="Arial,sans-serif" font-size="36" font-weight="700" fill="#6c4e2a">DEDICATED PARENT UNIT</text>
+ <rect x="80" y="170" width="1040" height="520" rx="36" fill="#fff"/>
+ <g fill="none" stroke="#304d4d" stroke-width="18">
+  <rect x="155" y="270" width="240" height="220" rx="55" fill="#e2eeeb"/>
+  <circle cx="275" cy="365" r="50"/>
+  <path d="M275 490v70m-85 0h170M690 240h300a25 25 0 0 1 25 25v240a25 25 0 0 1-25 25H690a25 25 0 0 1-25-25V265a25 25 0 0 1 25-25Z" fill="#e2eeeb"/>
+  <path d="M700 280h280v190H700zM770 575h140m-70-45v45M480 390h115m-35-35 35 35-35 35"/>
+ </g>
+ <text x="275" y="630" text-anchor="middle" font-family="Arial,sans-serif" font-size="38" fill="#253a37">Camera</text>
+ <text x="840" y="630" text-anchor="middle" font-family="Arial,sans-serif" font-size="38" fill="#253a37">Parent unit</text>
+ <text x="80" y="770" font-family="Arial,sans-serif" font-size="38" font-weight="700" fill="#253a37">Check coverage + power for both units</text>
+ <text x="80" y="835" font-family="Arial,sans-serif" font-size="29" fill="#62675d">Workflow illustration · appearance and model features vary</text>
+</svg>

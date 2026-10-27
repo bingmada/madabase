@@ -1,4 +1,4 @@
-query CostumePublisherCommissions(
+query PublisherCommissions(
   $publisherIds: [String!]!
   $advertiserIds: [String!]
   $websiteIds: [String!]

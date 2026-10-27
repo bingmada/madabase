@@ -129,7 +129,7 @@ for (const product of productData.products) {
 
 const existingSlugs = new Set([...existingContentFiles.matchAll(/\bslug:\s*["']([^"']+)["']/g)].map((match) => match[1]));
 const generatedBuyingSlugs = new Set(
-  [...fs.readFileSync(path.join(workspaceDir, "lib", "quadruple-expansion-content.ts"), "utf8").matchAll(/\{\s*site:\s*"(?:network|smarthome|homeoffice|baby|pet|costume)",\s*slug:\s*"([^"]+)"/g)]
+  [...fs.readFileSync(path.join(workspaceDir, "lib", "quadruple-expansion-content.ts"), "utf8").matchAll(/\{\s*site:\s*"(?:network|smarthome|homeoffice|baby|pet)",\s*slug:\s*"([^"]+)"/g)]
     .map((match) => `${match[1]}-buying-guide`),
 );
 const allKnownSlugs = new Set([...existingSlugs, ...generatedBuyingSlugs, ...guides.map((guide) => guide.slug)]);

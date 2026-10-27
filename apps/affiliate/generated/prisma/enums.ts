@@ -9,11 +9,7 @@
 * 🟢 You can import this file directly.
 */
 
-export const CreditTransactionType = {
-  grant: 'grant',
-  consume: 'consume',
-  refund: 'refund',
-  adjustment: 'adjustment'
-} as const
 
-export type CreditTransactionType = (typeof CreditTransactionType)[keyof typeof CreditTransactionType]
+
+// This file is empty because there are no enums in the schema.
+export {}

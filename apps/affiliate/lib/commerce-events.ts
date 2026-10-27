@@ -16,7 +16,7 @@ export type CommerceEvent = {
   merchant: string;
   position: string;
 };
-const siteHosts: Record<string,string> = {homeoffice:"homeoffice",network:"network",smarthome:"smarthome",baby:"baby",pet:"pets",style:"style",costume:"costumes"};
+const siteHosts: Record<string,string> = {homeoffice:"homeoffice",network:"network",smarthome:"smarthome",baby:"baby",pet:"pets",};
 const localeMarkets: Record<string,string> = {"en-gb":"gb","en-ca":"ca","de-de":"de","nl-nl":"nl"};
 
 export function commercePage(path: string) {

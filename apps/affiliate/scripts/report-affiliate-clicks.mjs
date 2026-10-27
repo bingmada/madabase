@@ -14,7 +14,6 @@ const asJson = process.argv.includes("--json");
 if (!process.env.DATABASE_URL) {
   for (const file of [
     path.join(root, ".env.local"),
-    path.join(root, "apps/web/.env.local"),
   ]) {
     if (!fs.existsSync(file)) continue;
     const line = fs

@@ -57,11 +57,6 @@ for (const row of rows(groups.recoveryWatch)) {
     errors.push(`Recovery-watch page lacks current or previous exposure: ${row.url}`);
   }
 }
-const costumeProducts = rows(groups.costumeSeasonalCatalog).filter((row) => row.kind === "product").length;
-const costumeEditorial = rows(groups.costumeSeasonalCatalog).filter((row) => row.kind !== "product").length;
-if (costumeProducts !== groups.costumeSeasonalCatalog.productPages) errors.push(`Expected ${groups.costumeSeasonalCatalog.productPages} Costume products; found ${costumeProducts}`);
-if (costumeEditorial !== groups.costumeSeasonalCatalog.editorialPages) errors.push(`Expected ${groups.costumeSeasonalCatalog.editorialPages} Costume editorial pages; found ${costumeEditorial}`);
-
 let publicSitemapUrls = 0;
 if (liveAudit) {
   const sitemapUrls = new Set();
@@ -97,7 +92,6 @@ const report = {
   protected: rows(groups.protected).length,
   recoveryWatch: rows(groups.recoveryWatch).length,
   doubleZeroReview: rows(groups.doubleZeroInspectionAndIntentReview).length,
-  costume: rows(groups.costumeSeasonalCatalog).length,
   publicSitemapUrls,
 };
 

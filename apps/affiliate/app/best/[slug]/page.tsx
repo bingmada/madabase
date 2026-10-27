@@ -5,7 +5,6 @@ import { JsonLd } from "@/components/JsonLd";
 import { Disclosure, ProductCard } from "@/components/LayoutParts";
 import { BaseMarketEditionLinks } from "@/components/MarketExperience";
 import { SearchOpportunityBacklinks, SearchOpportunityBlock } from "@/components/SearchOpportunityBlock";
-import { StyleCollectionPage } from "@/components/StyleExperience";
 import { findProduct, findRoundup, siteGuides } from "@/lib/content";
 import { roundupCommerceProduct } from "@/lib/commerce-paths";
 import { buyerFacingBody, buyerFacingHeading, buyerFacingSummary } from "@/lib/conversion-copy";
@@ -113,39 +112,6 @@ const roundupAdvice: Record<SiteKey, Record<string, { spendMore: string; spendLe
       compare: ["Controller roles", "Radio support", "Local fallback", "Cross-platform sharing"],
     },
   },
-  style: {
-    jewelry: {
-      spendMore: "Spend more when the exact materials, closure, construction, and dimensions support comfortable repeat wear.",
-      spendLess: "Spend less when the piece is highly occasion-specific or the listing does not identify the material details you need.",
-      compare: ["Length and width", "Closure style", "Exact material claims", "Seller and return path"],
-    },
-    bags: {
-      spendMore: "Spend more when construction, strap adjustment, usable capacity, and licensed design all support regular carry.",
-      spendLess: "Spend less when a neutral bag plus a removable charm creates the same outfit effect with more flexibility.",
-      compare: ["Exterior and opening size", "Real carry list", "Strap range", "Material and care"],
-    },
-    hair: {
-      spendMore: "Spend more when the spring, teeth, finish, and size support the hairstyle you repeat most often.",
-      spendLess: "Spend less on highly seasonal motifs or multipacks when only one clip size fits your hair.",
-      compare: ["Clip dimensions", "Hair volume", "Spring and teeth", "Snag risk"],
-    },
-    scarves: {
-      spendMore: "Spend more for a verified fiber, finished edges, and dimensions that support several real tying methods.",
-      spendLess: "Spend less when the scarf will mainly decorate a bag handle or serve one event outfit.",
-      compare: ["Fiber claim", "Dimensions", "Edge finish", "Care"],
-    },
-    socks: {
-      spendMore: "Spend more when the fiber blend, heel shape, cuff, and wash performance make the pair easy to repeat.",
-      spendLess: "Spend less on multipacks when novelty matters more than long-term structure.",
-      compare: ["Size range", "Fiber blend", "Cuff fit", "Pattern stretch"],
-    },
-    styling: {
-      spendMore: "Spend more on one focal accessory that works with several owned outfits and is comfortable enough to repeat.",
-      spendLess: "Spend less on a trend-specific motif that requires several new clothing purchases to make it work.",
-      compare: ["Focal zone", "Color repetition", "Visual scale", "Dress-code fit"],
-    },
-  },
-  costume: {},
 };
 
 function getRoundupAdvice(siteKey: SiteKey, category: string) {
@@ -197,27 +163,6 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
   const advice = getRoundupAdvice(site.key, roundup.category);
   const sources = officialSourceLinks(picks, roundup.sources);
   const evidencePresentation = roundupEvidencePresentation(picks);
-  if (site.key === "style") {
-    return (
-      <>
-        <JsonLd
-          data={breadcrumbSchema(site, [
-            { name: "Home", path: "/" },
-            ...(category ? [{ name: category.name, path: `/categories/${category.slug}` }] : []),
-            { name: roundup.title, path: `/best/${slug}` },
-          ])}
-        />
-        <JsonLd data={roundupProductListSchema(site, roundup.title, picks)} />
-        <JsonLd data={roundupArticleSchema(site, effectiveRoundup, picks)} />
-        <JsonLd data={faqPageSchema(roundup.faqs)} />
-        <StyleCollectionPage site={site} roundup={effectiveRoundup} products={picks} />
-        <div className="style-shell pb-12">
-          <SearchOpportunityBacklinks site={site.key} kind="roundup" slug={slug} />
-          <BaseMarketEditionLinks site={site} basePath={`/best/${slug}`} />
-        </div>
-      </>
-    );
-  }
 
   return (
     <main className="section">
@@ -245,9 +190,15 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
             <p className="text-xs font-bold uppercase text-[var(--brand-strong)]">{evidencePresentation.label}</p>
             <p className="mt-1 text-sm font-semibold leading-6 text-[var(--text)]">{evidencePresentation.summary}</p>
           </div>
-          {topPick || commerceProduct ? (
+          {roundup.purchaseFlow === "task-links" ? (
+            <div className="mt-4 rounded-md border border-[var(--border)] bg-white p-4 sm:p-5" data-roundup-task-choice="true">
+              <p className="text-xs font-bold uppercase text-[var(--muted)]">Choose the task first</p>
+              {roundup.purchaseCheck ? <p className="mt-2 text-sm leading-6" data-roundup-purchase-check="true">{roundup.purchaseCheck}</p> : null}
+              <a className="button-secondary mt-3" href="#quick-comparison">Compare model conditions</a>
+            </div>
+          ) : topPick || commerceProduct ? (
             <div
-              className="mt-4 grid gap-3 rounded-md border border-[var(--border)] bg-white p-4 sm:mt-5 sm:grid-cols-[1fr_auto] sm:items-center sm:p-5"
+              className="mt-4 grid gap-3 rounded-md border border-[var(--border)] bg-white p-4 sm:mt-5 sm:p-5"
               aria-label="First-screen purchase path"
               data-commerce-paused={commercePathPaused ? "true" : undefined}
               data-first-viewport-commerce="true"
@@ -262,8 +213,9 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
                 ) : topPick ? (
                   <p className="mt-2 text-sm leading-5 text-[var(--muted)]">Best for {topPick.bestFor.toLowerCase()}. Open the listing to compare the live price, availability, delivery, seller, and returns.</p>
                 ) : null}
+                {roundup.purchaseCheck ? <p className="mt-3 text-sm leading-6" data-roundup-purchase-check="true">{roundup.purchaseCheck}</p> : null}
               </div>
-              <div className="flex flex-wrap items-start gap-2 sm:justify-end">
+              <div className="flex flex-wrap items-start gap-2">
                 {commerceProduct ? <AffiliateButtonGroup site={site.key} product={commerceProduct} position={commerceIsAlternative ? "roundup-first-viewport-verified-alternative" : "roundup-first-viewport-primary"} limit={1} firstViewport /> : null}
                 {topPick ? <Link className="button-secondary" href={`/reviews/${topPick.slug}`}>Product guide</Link> : null}
               </div>
@@ -289,7 +241,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
           <div className="min-w-0 space-y-5">
             <Disclosure site={site} />
             {picks.length ? (
-              <section className="panel overflow-hidden">
+              <section className="panel scroll-mt-6 overflow-hidden" id="quick-comparison">
                 <div className="border-b border-[var(--border)] p-5">
                   <h2 className="text-xl font-bold">Quick comparison</h2>
                   <p className="mt-2 text-sm leading-6 text-[var(--muted)]">Start here if you already know the job you need the product to solve.</p>
@@ -297,11 +249,11 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
                 <div className="divide-y divide-[var(--border)]">
                   {picks.map((product, index) =>
                     product ? (
-                      <div className="grid gap-4 p-5 md:grid-cols-[44px_1.1fr_1fr_1fr_0.8fr_auto]" key={product.slug}>
-                        <div className="flex h-9 w-9 items-center justify-center rounded-md bg-[var(--brand-soft)] text-sm font-black text-[var(--brand-strong)]">
+                      <div className="grid min-w-0 gap-4 p-5 md:grid-cols-[44px_minmax(0,1fr)_minmax(0,1fr)]" key={product.slug}>
+                        <div className="flex h-9 w-9 items-center justify-center rounded-md bg-[var(--brand-soft)] text-sm font-black text-[var(--brand-strong)] md:row-span-3">
                           {index + 1}
                         </div>
-                        <div>
+                        <div className="min-w-0 md:col-span-2">
                           <p className="text-xs font-bold uppercase text-[var(--muted)]">{product.brand}</p>
                           <h3 className="mt-1 font-bold">{product.amazonTitle ?? product.name}</h3>
                         </div>
@@ -319,7 +271,10 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
                             {product.asin ? `ASIN ${product.asin}` : product.priceBand} · {product.category}
                           </p>
                         </div>
-                        <div className="flex flex-wrap items-start gap-2 md:justify-end">
+                        {roundup.purchaseFlow === "task-links" && product.purchaseCheck ? (
+                          <p className="text-sm leading-6 text-[var(--muted)] md:col-span-2 md:col-start-2" data-roundup-model-purchase-check="true">{product.purchaseCheck}</p>
+                        ) : null}
+                        <div className={`flex flex-wrap items-start gap-2 md:justify-end ${roundup.purchaseFlow === "task-links" ? "md:col-start-3" : ""}`}>
                           <Link className="button-secondary" href={`/reviews/${product.slug}`}>
                             Notes
                           </Link>
@@ -337,21 +292,22 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
                 <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
                   Match the exact model, bundle, seller, coupon, and return window before choosing between the picks.
                 </p>
-                <div className="mt-4 overflow-x-auto rounded-md border border-[var(--border)]">
+                <p className="mt-2 text-xs leading-5 text-[var(--muted)] sm:hidden">Swipe across the table to compare details; the product name stays in view.</p>
+                <div className="mt-4 overflow-x-auto rounded-md border border-[var(--border)]" role="region" aria-label="Compare the current options" tabIndex={0}>
                   <table className="w-full min-w-[820px] text-left text-sm">
                     <thead className="bg-[var(--surface-muted)] text-xs uppercase text-[var(--muted)]">
                       <tr>
-                        <th className="px-4 py-3">Pick</th>
-                        <th className="px-4 py-3">Key fit details</th>
-                        <th className="px-4 py-3">Exact listing</th>
-                        <th className="px-4 py-3">What can change</th>
-                        <th className="px-4 py-3">Updated</th>
+                        <th className="sticky left-0 z-20 min-w-[160px] bg-[var(--surface-muted)] px-4 py-3" scope="col">Pick</th>
+                        <th className="px-4 py-3" scope="col">Key fit details</th>
+                        <th className="px-4 py-3" scope="col">Exact listing</th>
+                        <th className="px-4 py-3" scope="col">What can change</th>
+                        <th className="px-4 py-3" scope="col">Updated</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-[var(--border)] bg-white">
                       {picks.map((product) => (
                         <tr key={product.slug}>
-                          <th className="px-4 py-4 font-bold">
+                          <th className="sticky left-0 z-10 min-w-[160px] bg-white px-4 py-4 font-bold" scope="row">
                             <Link className="hover:text-[var(--brand-strong)] hover:underline" href={`/reviews/${product.slug}`}>
                               {product.amazonTitle ?? product.name}
                             </Link>
@@ -387,14 +343,15 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
               </section>
             ) : null}
             {roundup.comparisonTable ? (
-              <section className="panel p-5">
+              <section className="panel scroll-mt-24 p-5" id="roundup-comparison">
                 <p className="eyebrow">Side-by-side checks</p>
                 <h2 className="mt-3 text-xl font-bold">{roundup.comparisonTable.title}</h2>
-                <div className="mt-5 overflow-x-auto rounded-md border border-[var(--border)] bg-white" role="region" aria-label={roundup.comparisonTable.title} tabIndex={0}>
-                  <table className={`w-full text-left text-sm ${roundup.comparisonTable.columns.length <= 2 ? "min-w-[600px]" : "min-w-[920px]"}`}>
+                {roundup.purchaseFlow === "task-links" ? <p className="mt-3 text-sm text-[var(--muted)]">Scroll across to compare models; the check name stays in view.</p> : null}
+                <div className={`mt-5 overflow-x-auto rounded-md border border-[var(--border)] bg-white ${roundup.purchaseFlow === "task-links" ? "[container-type:inline-size]" : ""}`} role="region" aria-label={roundup.comparisonTable.title} tabIndex={0}>
+                  <table className={`text-left text-sm ${roundup.purchaseFlow === "task-links" && roundup.comparisonTable.columns.length === 2 ? "w-[calc(200cqw-7rem)] table-fixed md:w-full md:table-auto" : `w-full ${roundup.comparisonTable.columns.length <= 2 ? "min-w-[600px]" : "min-w-[920px]"}`}`}>
                     <thead className="bg-[var(--surface-muted)] text-xs uppercase text-[var(--muted)]">
                       <tr>
-                        <th className="px-4 py-3" scope="col">Check</th>
+                        <th className={`px-4 py-3 ${roundup.purchaseFlow === "task-links" ? "sticky left-0 z-10 w-28 bg-[var(--surface-muted)] md:w-auto" : ""}`} scope="col">Check</th>
                         {roundup.comparisonTable.columns.map((column) => (
                           <th className="px-4 py-3" scope="col" key={column}>{column}</th>
                         ))}
@@ -403,7 +360,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
                     <tbody className="divide-y divide-[var(--border)]">
                       {roundup.comparisonTable.rows.map((row) => (
                         <tr key={row.label}>
-                          <th className="px-4 py-4 font-bold" scope="row">{row.label}</th>
+                          <th className={`px-4 py-4 font-bold ${roundup.purchaseFlow === "task-links" ? "sticky left-0 z-10 bg-white" : ""}`} scope="row">{row.label}</th>
                           {roundup.comparisonTable?.columns.map((column, index) => (
                             <td className="px-4 py-4 leading-6 text-[var(--muted)]" key={`${row.label}-${column}`}>
                               {row.values[index] ?? "Confirm before purchase"}
@@ -414,6 +371,18 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
                     </tbody>
                   </table>
                 </div>
+                {roundup.purchaseFlow === "task-links" ? (
+                  <div className="mt-5 grid gap-3 sm:grid-cols-2" aria-label="Exact models from this comparison" data-comparison-model-actions="true">
+                    {picks.map((product) => (
+                      <div className="min-w-0 rounded-md border border-[var(--border)] bg-white p-4" key={product.slug}>
+                        <h3 className="font-bold">{product.amazonTitle ?? product.name}</h3>
+                        {product.purchaseCheck ? <p className="my-3 text-sm leading-6 text-[var(--muted)]">{product.purchaseCheck}</p> : null}
+                        {product.offers.length ? <AffiliateButtonGroup site={site.key} product={product} position="roundup-comparison-exact-model" limit={1} sticky={false} /> : <p className="mt-3 text-sm font-bold">Exact retailer option paused</p>}
+                        <Link className="mt-3 block text-sm font-bold underline" href={`/reviews/${product.slug}`}>Check the model details</Link>
+                      </div>
+                    ))}
+                  </div>
+                ) : null}
                 {site.key === "baby" && ["babybjorn-harmony-vs-ergobaby-omni-breeze", "dr-browns-vs-baby-brezza-sterilizer-dryer"].includes(roundup.slug) ? <>
                   <div className="mt-5 grid gap-3 sm:grid-cols-2" aria-label="Exact models from this comparison" data-comparison-model-actions="true">
                     {picks.slice(0,2).map(product => <div className="min-w-0 rounded-md border border-[var(--border)] bg-white p-4" key={product.slug}>

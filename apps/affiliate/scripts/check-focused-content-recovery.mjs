@@ -97,7 +97,7 @@ if (origin) {
     }
     for (const source of family.sources) {
       const sourceUrl = new URL(source);
-      for (const prefix of family.site === "costume" ? [""] : ["", "/en-gb", "/en-ca", "/de-de", "/nl-nl"]) {
+      for (const prefix of ["", "/en-gb", "/en-ca", "/de-de", "/nl-nl"]) {
         const response = await request(`${sourceUrl.origin}${prefix}${sourceUrl.pathname}`);
         assert.equal(response.status, 308);
         assert.equal(new URL(response.headers.get("location"), source).pathname, prefix + new URL(family.target).pathname);

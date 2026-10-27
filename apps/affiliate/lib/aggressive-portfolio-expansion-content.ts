@@ -119,52 +119,154 @@ export const aggressivePortfolioRoundups: Roundup[] = [
     ],
   },
   {
-    site: "pet",
-    slug: "furbo-360-vs-wyze-cam-pan-v3-for-pets",
-    seoTitle: "Furbo 360 vs Wyze Cam Pan v3: Pet Camera or Budget Pan Cam?",
-    updatedAt,
-    title: "Furbo 360 vs. Wyze Cam Pan v3 for Pet Monitoring",
-    dek: "Compare treat tossing, live view, rotation, pet alerts, subscriptions, local-storage expectations, placement, and the real reason to pay for a pet-specific camera.",
-    category: "home-care",
-    intent: "Decide whether pet-specific interaction justifies Furbo or a budget pan camera is enough.",
-    intro: "Furbo earns its premium through the treat launcher and dog-focused experience. Wyze is the disciplined choice when the owner mainly wants rotating live view and two-way check-ins without paying for a pet-specific enclosure.",
-    decisionGuide: [
-      { label: "Treat routine", detail: "Choose Furbo only after confirming treat size and the pet's calm response to the sound." },
-      { label: "Simple room checks", detail: "Wyze can be enough when live view and pan-and-tilt coverage are the whole job." },
-      { label: "Paid alerts", detail: "Compare current subscription terms and the exact alerts the household will use." },
-      { label: "Privacy-first setup", detail: "Review account access, recording, microphone, and placement for either camera." },
+    "site": "pet",
+    "slug": "furbo-360-vs-wyze-cam-pan-v3-for-pets",
+    "seoTitle": "Furbo 360 vs Wyze Cam Pan v3: Plans, Storage and Model Checks",
+    "updatedAt": "October 26, 2026",
+    "title": "Furbo 360 vs Wyze Cam Pan v3: Interaction or Basic Check-ins?",
+    "dek": "Compare the exact paid-activation Furbo with the Pan v3 workflow, keeping local storage, subscription terms and the held Wyze identity separate.",
+    "category": "home-care",
+    "intent": "Compare interaction and recording workflows without silently substituting models or contracts.",
+    "intro": "The useful comparison is the job and contract, not an assumed image-quality winner. This page uses manufacturer documents and historical retailer references; it has not tested latency, image quality, tracking, treat behavior, security or total ownership cost. Correcting a camera identity is separate from deciding whether interaction is worth a recurring payment.",
+    "decisionGuide": [
+      {
+        "label": "You need a short live check",
+        "detail": "Start with the useful view and supported free-function terms of an exact model. A working existing camera may already answer the question."
+      },
+      {
+        "label": "You need to retrieve past events",
+        "detail": "Compare local-card playback/export with cloud-event history. Verify the actual dependency rather than equating a card slot with a fully offline app."
+      },
+      {
+        "label": "You need treat interaction",
+        "detail": "Consider Furbo only when the pet accepts the routine and the applicable paid contract is acceptable."
+      },
+      {
+        "label": "You cannot confirm the listing or contract",
+        "detail": "Pause. A model name, a promotion or another product in the same comparison does not resolve it."
+      }
     ],
-    methodology: ["Separate free from paid features", "Compare the same room and camera height", "Include treat and subscription costs", "Treat privacy settings as a buying criterion"],
-    productSlugs: ["furbo-360-dog-camera", "wyze-cam-pan-v3-pet-camera"],
-    faqs: [
-      { question: "Is Furbo worth more than Wyze?", answer: "Only when treat tossing, dog-focused alerts, and the Furbo interaction are genuinely useful. For basic live checks, Wyze can be enough." },
-      { question: "Does Furbo require a subscription?", answer: "Standalone models retain useful basic features, while paid Nanny plans add cloud and detection features. Verify the selected purchase model and current terms." },
-      { question: "Can either camera replace an in-person check?", answer: "No. A camera can show a problem and support a check-in, but it cannot provide exercise, medication, temperature safety, or emergency care." },
+    "methodology": [
+      "Exact manufacturer feature, activation, storage and model-change documentation reviewed October 26, 2026.",
+      "Compare tasks and contracts; no hands-on performance or value ranking.",
+      "Historical ASIN evidence is not a fresh seller, stock, shipping or return inspection."
     ],
-  },
-  {
-    site: "style",
-    slug: "loungefly-minnie-bow-vs-rock-the-dots-backpack",
-    seoTitle: "Loungefly Minnie Bow vs Rock the Dots Mini Backpack",
-    updatedAt: "September 24, 2026",
-    title: "Loungefly Minnie Bow vs. Rock the Dots Mini Backpack",
-    dek: "Choose between the established black-red bow bag and the newer white-red coquette design by palette, visual intensity, carry list, seller, and return path.",
-    category: "bags",
-    intent: "Pick a Minnie mini backpack that works with owned clothes and a realistic adult carry rather than the newest close-up photo.",
-    intro: "The classic bow bag is the easier first Loungefly because its black-red-white palette is familiar. Rock the Dots is the trend-forward choice for buyers who specifically want white, bows, texture, and coquette styling.",
-    decisionGuide: [
-      { label: "Most versatile palette", detail: "The classic bow bag is easier with denim, black, red, and neutral layers." },
-      { label: "Lighter palette", detail: "Rock the Dots is the deliberate choice for a lighter coquette look." },
-      { label: "Construction check", detail: "Inspect the exact bag’s applique, edge paint, zipper, and straps during the return window." },
-      { label: "More capacity", detail: "Skip both mini formats and compare a full-size bag when a bottle, layer, or family supplies are essential." },
+    "productSlugs": [
+      "furbo-360-dog-camera",
+      "wyze-cam-pan-v3-pet-camera"
     ],
-    methodology: ["Compare the exact selected listing and seller", "Measure the real carry before choosing artwork", "Inspect applique, edge paint, zipper, and straps", "Score outfit range separately from collectibility"],
-    productSlugs: ["loungefly-minnie-mouse-bow-mini-backpack", "loungefly-minnie-rock-the-dots-backpack", "loungefly-minnie-mouse-dress-mini-backpack"],
-    faqs: [
-      { question: "Are both bags the same size?", answer: "Do not assume so from the mini-backpack label. Verify the dimensions and opening on the live listing for the exact design." },
-      { question: "Which one is easier to wear every day?", answer: "The classic bow palette is easier to repeat. Rock the Dots is better when its white-red coquette styling already fits the wardrobe." },
-      { question: "Can either carry a park-day water bottle?", answer: "Some small bottles may fit, but test the actual bottle and the rest of the carry list. A mini bag is not automatically a full park bag." },
+    "faqs": [
+      {
+        "question": "Which is better for a quick pet check-in?",
+        "answer": "Choose by the exact useful view, access and recording task. Treat interaction need not justify another contract when a current camera already works. The held Wyze ASIN has no verified purchase substitution."
+      },
+      {
+        "question": "Is this Furbo subscription-free after activation?",
+        "answer": "That is not established for B0BWN22T25. Standalone guidance differs from subscription-required hardware, and official articles conflict on post-cancellation access. Budget for ongoing service until applicable terms resolve it."
+      },
+      {
+        "question": "Can either replace in-person care?",
+        "answer": "No. A recording, alert or treat command does not establish that the pet’s needs are met. Keep a suitable care and fault-response arrangement when viewing, power or the network is unavailable."
+      }
     ],
+    "purchaseFlow": "task-links",
+    "quickAnswer": "Compare Furbo when treat interaction and an acceptable ongoing contract are part of the task. Compare the documented Pan v3 workflow when ordinary check-ins or local-card recordings matter instead. The historical Wyze ASIN is held for a different observed camera identity, and the linked Furbo is paid-activation hardware; neither is a verified free-use substitute for the other.",
+    "purchaseCheck": "Choose a workflow below before opening a retailer. Keep Wyze’s exact listing paused; it does not inherit a paid Furbo offer. For Furbo, confirm the full selected term and renewal and leave free access after cancellation unknown. Keep a suitable existing camera when these differences add no useful benefit.",
+    "comparisonTable": {
+      "title": "Compare the two actual workflows",
+      "columns": [
+        "Furbo 360 Dog paid-activation reference",
+        "Wyze Cam Pan v3 model reference"
+      ],
+      "rows": [
+        {
+          "label": "Distinct job",
+          "values": [
+            "Treat interaction plus camera check-ins",
+            "Room check-ins or model-specific local recordings"
+          ]
+        },
+        {
+          "label": "Purchase boundary",
+          "values": [
+            "B0BWN22T25 historically required paid activation",
+            "B0DTNKLF1K remains held after fixed Cam v3 identity observation"
+          ]
+        },
+        {
+          "label": "Plan/storage",
+          "values": [
+            "Selected paid term, renewal and retention limits",
+            "Card playback separate from optional cloud/AI services"
+          ]
+        },
+        {
+          "label": "Unknown",
+          "values": [
+            "Post-cancellation basic access conflicts across official articles",
+            "Corrected exact Pan v3 retailer offer not established"
+          ]
+        },
+        {
+          "label": "Keep existing",
+          "values": [
+            "Skip when interaction or recurring service adds no value",
+            "Keep a suitable camera while exact identity is unresolved"
+          ]
+        }
+      ]
+    },
+    "sections": [
+      {
+        "heading": "The Furbo hardware contract changes the answer",
+        "body": "Standalone free-feature documentation is not an entitlement for every Furbo camera. The historical linked ASIN requires paid activation. Current official plans and activation articles differ about basic access after an initial term, so this comparison does not promise free live view, audio or treat control after cancellation. Compare the full amount billed, renewal and minimum commitment for the selected offer."
+      },
+      {
+        "heading": "The held Wyze ASIN does not establish a Pan v3 purchase",
+        "body": "The existing identity observation found a fixed Cam v3 at the historical ASIN. That is a different camera from Pan v3, and a low price cannot qualify it as a pan-and-tilt option. Pan v3’s local-card, account and network requirements must be assessed on a matched model. A camera without treat tossing is not automatically free of all cloud or AI charges."
+      },
+      {
+        "heading": "New models and ordinary care remain separate",
+        "body": "Pan v4 and Furbo Mini 360 have their own specifications and buying terms. Do not transfer their resolution, connectivity or included parts to these historical identities or infer discontinuation because a newer model exists. Test the useful view, ordinary access route and household privacy settings under the exact instructions, and retain someone who can respond when camera access fails."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Wyze Pan v3 technical specifications",
+        "url": "https://support.wyze.com/hc/en-us/articles/11795670894875-Wyze-Cam-Pan-v3-Tech-Specs",
+        "note": "Model-specific camera, network and card boundaries."
+      },
+      {
+        "name": "Wyze local versus cloud recording",
+        "url": "https://support.wyze.com/hc/en-us/articles/7372980709275-How-do-Cam-Plus-and-a-microSD-card-compare",
+        "note": "Different recording and paid-feature paths."
+      },
+      {
+        "name": "Wyze Pan v4 comparison",
+        "url": "https://support.wyze.com/hc/en-us/articles/40185187360155-How-is-Wyze-Cam-Pan-v4-different-than-Wyze-Cam-Pan-v3",
+        "note": "Newer model remains separate from Pan v3."
+      },
+      {
+        "name": "Furbo Standalone basic functions",
+        "url": "https://help.furbo.com/hc/en-us/articles/17462722245785-Basic-Features-you-can-use-without-Furbo-Nanny",
+        "note": "Free-function scope does not certify Subscription Required hardware."
+      },
+      {
+        "name": "Furbo plans and access",
+        "url": "https://help.furbo.com/hc/en-us/articles/17462739016089-Furbo-Nanny-Plans-and-Pricing",
+        "note": "Active-plan wording conflicts with activation-page basic-access wording."
+      },
+      {
+        "name": "Furbo activation instructions",
+        "url": "https://help.furbo.com/hc/en-us/articles/17462056102169-How-to-Setup-and-Activate-Nanny-Bundle-Camera-Subscription-Required",
+        "note": "Exact post-cancellation entitlement remains unconfirmed."
+      },
+      {
+        "name": "Furbo current camera choices",
+        "url": "https://furbo.com/us/products/furbo-360-dog-camera",
+        "note": "Mini 360 and Cat Camera are separate model comparisons."
+      }
+    ]
   },
 ];
 
@@ -473,51 +575,5 @@ export const aggressivePortfolioGuides: Guide[] = [
     relatedRoundups: ["furbo-360-vs-wyze-cam-pan-v3-for-pets", "best-pet-cameras-for-apartments"],
     relatedProducts: ["furbo-360-dog-camera", "wyze-cam-pan-v3-pet-camera"],
     relatedGuides: ["furbo-360-treat-size-and-jam-guide", "pet-camera-without-too-many-subscriptions", "pet-camera-privacy-and-placement-guide"],
-  },
-  {
-    site: "style",
-    slug: "loungefly-mini-backpack-vs-full-size-for-park-day",
-    title: "Loungefly Mini Backpack vs. Full-Size Bag for a Park Day",
-    dek: "Choose the bag after packing the actual phone, wallet, charger, medication, sunscreen, bottle, layer, and family supplies; character artwork comes second.",
-    category: "bags",
-    updatedAt,
-    image: "/images/affiliate/style-loungefly-minnie-backpack-realistic.webp",
-    imageAlt: "Minnie-themed mini backpack prepared for a small park-day carry",
-    sources: [
-      { name: "Walt Disney World park rules", url: "https://disneyworld.disney.go.com/park-rules/", note: "Official current bag-size and prohibited-item starting point; verify rules for the destination and date." },
-      { name: "Loungefly Minnie Rock the Dots look book", url: "https://loungefly.com/ca/loungefly-blog-home/the-loungefly-2026-minnie-rock-the-dots-look-book.html", note: "Official current collection and styling context." },
-    ],
-    sections: [
-      { heading: "Use a mini bag for one adult's compact essentials", body: "A mini backpack can work for phone, wallet, keys, small charger, medication, sunscreen, and a few compact extras. It becomes difficult when a large bottle, jacket, camera, or children's supplies are non-negotiable." },
-      { heading: "Use a full-size bag for shared or weather-heavy loads", body: "Families, longer days, changing weather, and refillable bottles can exceed the mini format quickly. A larger ordinary backpack may be less collectible but more comfortable and easier to organize." },
-      { heading: "Check the opening, not only dimensions", body: "Curved tops, lining, front applique, and a narrow zipper can reduce usable capacity. Load the largest object first and confirm it can pass through the opening without stressing the zipper." },
-      { heading: "Verify current venue rules", body: "Bag and item policies vary by park and can change. Check the official destination rules shortly before travel instead of treating a product-page claim or old forum answer as permission." },
-    ],
-    relatedRoundups: ["loungefly-minnie-bow-vs-rock-the-dots-backpack", "best-loungefly-mini-backpacks-by-outfit", "best-statement-accessories-for-one-focal-point"],
-    relatedProducts: ["loungefly-minnie-mouse-bow-mini-backpack", "loungefly-minnie-rock-the-dots-backpack", "loungefly-mickey-checkered-convertible-bag"],
-    relatedGuides: ["loungefly-faux-leather-rain-and-care-guide", "mini-backpack-capacity-measurement-guide"],
-  },
-  {
-    site: "style",
-    slug: "loungefly-faux-leather-rain-and-care-guide",
-    title: "Loungefly Faux-Leather Care, Rain & Storage Guide",
-    dek: "Protect applique, edge paint, lining, straps, and hardware with conservative spot cleaning, prompt drying, sensible storage, and an inspection during the return window.",
-    category: "bags",
-    updatedAt,
-    image: "/images/affiliate/style-loungefly-minnie-backpack-realistic.webp",
-    imageAlt: "Minnie-themed faux-leather mini backpack stored upright and dry",
-    sources: [
-      { name: "Loungefly Minnie Rock the Dots look book", url: "https://loungefly.com/ca/loungefly-blog-home/the-loungefly-2026-minnie-rock-the-dots-look-book.html", note: "Official collection material and design context." },
-      { name: "Amazon Minnie Bow listing", url: "https://www.amazon.com/dp/B06XH489LG", note: "Exact classic-bag material, dimensions, seller, care, and return details to confirm at purchase." },
-    ],
-    sections: [
-      { heading: "Follow the exact bag label first", body: "Loungefly designs mix faux leather, fabric, applique, embroidery, printed panels, metal hardware, and decorative finishes. The received care label controls; do not apply one cleaner across every surface because another collector recommended it." },
-      { heading: "Treat rain as a prompt-drying problem", body: "A brief shower is different from soaking. Blot moisture with a clean soft cloth, empty the bag, open pockets, and air-dry away from heaters or direct sun. Do not trap damp lining inside a closed display shelf." },
-      { heading: "Store without crushing the shape", body: "Empty heavy items, support the body lightly with clean acid-free tissue or an appropriate insert, and keep straps relaxed. Avoid tight hooks that crease straps or pressure the applique." },
-      { heading: "Inspect before removing tags", body: "Check zipper alignment, edge paint, stitching, applique, lining, strap anchors, hardware, seller, and licensing details during the return window. Character accuracy does not replace normal bag quality control." },
-    ],
-    relatedRoundups: ["loungefly-minnie-bow-vs-rock-the-dots-backpack", "best-loungefly-mini-backpacks-by-outfit", "best-statement-accessories-for-one-focal-point"],
-    relatedProducts: ["loungefly-minnie-mouse-bow-mini-backpack", "loungefly-minnie-rock-the-dots-backpack", "loungefly-minnie-mouse-dress-mini-backpack"],
-    relatedGuides: ["loungefly-mini-backpack-vs-full-size-for-park-day", "mini-backpack-capacity-measurement-guide"],
   },
 ];

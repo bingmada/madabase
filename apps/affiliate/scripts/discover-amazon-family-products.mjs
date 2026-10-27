@@ -219,7 +219,7 @@ function parseFamilies() {
     }
     throw new Error(`Family source ${familySourcePath} does not contain a families array or site seed map`);
   }
-  const pattern = /\{ site: "(network|smarthome|homeoffice|baby|pet|costume)", slug: "([^"]+)", name: "([^"]+)", category: "([^"]+)", alternative: "([^"]+)" \}/g;
+  const pattern = /\{ site: "(network|smarthome|homeoffice|baby|pet)", slug: "([^"]+)", name: "([^"]+)", category: "([^"]+)", alternative: "([^"]+)" \}/g;
   return [...source.matchAll(pattern)]
     .map((match) => ({ site: match[1], familySlug: match[2], familyName: match[3], category: match[4], alternative: match[5] }))
     .filter((family) => supportedSites.has(family.site));

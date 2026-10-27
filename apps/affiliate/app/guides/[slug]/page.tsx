@@ -18,7 +18,6 @@ import { AmazonListingFreshness } from "@/components/AmazonCreatorsListing";
 import { JsonLd } from "@/components/JsonLd";
 import { BaseMarketEditionLinks } from "@/components/MarketExperience";
 import { SearchOpportunityBacklinks, SearchOpportunityBlock } from "@/components/SearchOpportunityBlock";
-import { StyleGuidePage } from "@/components/StyleExperience";
 import { TrackedCommerceLink } from "@/components/TrackedCommerceLink";
 import { findGuide, findProduct, findRoundup, findTool, siteGuideFamily, siteGuides } from "@/lib/content";
 import { effectiveContentUpdatedAt, findSearchOpportunity, reviewedSearchDescription, searchOpportunityMetaDescription } from "@/lib/search-opportunities";
@@ -26,7 +25,6 @@ import { focusedSearchAnswer } from "@/lib/focused-content-recovery";
 import { breadcrumbSchema, guideSchema, itemListSchema, pageMetadata } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 import type { Guide, SiteKey } from "@/lib/types";
-import { costumeHalloweenIdeas } from "@/lib/costume-halloween-ideas";
 import { amazonFamilyProductIdentity, findAmazonFamilyProduct } from "@/lib/amazon-family-products";
 import { decoBuyingChoices } from "@/lib/commerce-refresh";
 import { amazonAsinAffiliateUrl } from "@/lib/affiliate-tracking";
@@ -40,10 +38,6 @@ import {
   isConsolidatedSupportGuide,
   mergeConsolidatedFamilyGuide,
 } from "@/lib/search-recovery-consolidation";
-import {
-  listCostumeGuideProducts,
-  type CostumeCatalogCategory,
-} from "@/lib/costume-catalog";
 
 type AdviceBlock = {
   checklist: string[];
@@ -135,32 +129,6 @@ const siteAdvice: Record<SiteKey, AdviceBlock> = {
     ],
     decision: "Choose the device with the clearest compatibility and local fallback path; add premium ecosystem features only when they remove a recurring household problem.",
   },
-  style: {
-    checklist: [
-      "Use stated dimensions and compare them with an accessory already comfortable to wear or carry.",
-      "Check closure, strap range, material language, seller, and return path before choosing the motif.",
-      "Name the accessory's outfit role: focal point, color repeat, texture, or practical carry.",
-    ],
-    mistakes: [
-      "Judging scale only from close-up product photography.",
-      "Treating nickel-free, plated, base metal, and hypoallergenic as interchangeable claims.",
-      "Combining several large novelty motifs without a shared palette or quiet clothing base.",
-    ],
-    decision: "Choose the expressive item that fits a real outfit and physical routine first; the most unusual design is useful only when its scale, comfort, and carry method make it easy to wear.",
-  },
-  costume: {
-    checklist: [
-      "Confirm the exact product or variant, included pieces, dimensions, materials, availability, delivery timing, and current return terms.",
-      "Plan the full event workflow: fitting, movement, visibility, power, application, removal, transport, cleaning, and storage.",
-      "Treat seasonal photography and a familiar license as starting points, not proof of fit, construction, or repeat-use value.",
-    ],
-    mistakes: [
-      "Choosing from the character image without checking measurements and included components.",
-      "Buying a large prop or effect before measuring doors, venue paths, power, weather exposure, and storage.",
-      "Leaving delivery, exchanges, alterations, makeup practice, or prop testing until the final week.",
-    ],
-    decision: "Choose the option that can be fitted, used, transported, removed, cleaned, and stored safely for the real event; spend more only when construction or repeat use solves a known need.",
-  },
 };
 
 const categoryAdvice: Record<string, string[]> = {
@@ -185,7 +153,6 @@ const categoryAdvice: Record<string, string[]> = {
   scarves: ["Dimensions decide whether a scarf works at the neck, hair, bag, or waist.", "Read fiber claims literally: satin describes a weave, not necessarily silk.", "Check care instructions and color transfer before tying against light clothing."],
   socks: ["Check the stated size range and fiber blend.", "A graphic can distort when stretched across the foot or calf.", "Choose cuff pressure and shoe thickness before choosing the joke."],
   styling: ["Assign one focal zone.", "Repeat one color or shape once.", "Use a full-body photo to check balance."],
-  costumes: ["Use the exact product size chart.", "List every included and missing piece.", "Test sitting, walking, stairs, and visibility before the event."],
   "props-animatronics": ["Measure the shipping and setup route.", "Confirm power, sound, motion, weather, and supervision limits.", "Plan transport and off-season storage."],
   "masks-prosthetics": ["Check head or face measurements and visibility.", "Identify every skin-contact material.", "Follow exact application and removal instructions."],
   "wigs-makeup": ["Check cap fit, fiber, and heat limits.", "Use only compatible skin and hair products.", "Plan touch-ups, removal, cleaning, and shape-preserving storage."],
@@ -288,12 +255,12 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
     .filter((item) => !isConsolidatedSupportGuide(item));
   const reciprocalRelatedGuides = siteGuides(site.key)
     .filter((item) => item.slug !== guide.slug && item.relatedGuides?.includes(guide.slug));
-  const relatedGuides = [
+  const relatedGuides = (guide.relatedGuidePolicy === "explicit" ? explicitRelatedGuides : [
     ...familyGuides.filter((item) => item.slug !== guide.slug),
     ...explicitRelatedGuides,
     ...reciprocalRelatedGuides,
     ...(guide.decisionLayout ? [] : siteGuides(site.key).filter((item) => item.slug !== guide.slug && item.category === guide.category)),
-  ]
+  ])
     .filter((item, index, items) => items.findIndex((candidate) => candidate.slug === item.slug) === index)
     .slice(0, guide.familySlug ? 8 : 4);
   const topProduct = relatedProducts[0];
@@ -345,47 +312,12 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
     label: `Check the exact variant at ${cjFamilyOffer.merchantName}`,
     priceNote: `Confirm ${cjFamilyOffer.variantLabel ?? "the exact variant"}, included pieces, live price, stock, shipping destination, and the direct-brand return terms before checkout.`,
   } : undefined;
-  const costumeCatalogProducts = site.key === "costume"
-    ? await listCostumeGuideProducts(guide.familySlug ?? "", guide.category as CostumeCatalogCategory)
-    : [];
-  const costumeCommerceProduct = costumeCatalogProducts.find((product) =>
-    product.activeLink && product.authorizedImage && product.availability !== "out of stock",
-  );
   const commercePathPaused = Boolean(
     amazonFamilyBlock || (topProduct || topRoundup)
     && !commerceProduct
     && !amazonFamilyOffer
-    && !cjFamilyAffiliateOffer
-    && !costumeCommerceProduct,
+    && !cjFamilyAffiliateOffer,
   );
-
-  if (site.key === "style") {
-    return (
-      <>
-        <JsonLd
-          data={breadcrumbSchema(site, [
-            { name: "Home", path: "/" },
-            ...(category ? [{ name: category.name, path: `/categories/${category.slug}` }] : []),
-            { name: guide.title, path: `/guides/${slug}` },
-          ])}
-        />
-        <JsonLd data={guideSchema(site, effectiveGuide)} />
-        <StyleGuidePage
-          site={site}
-          guide={effectiveGuide}
-          relatedProducts={relatedProducts}
-          commerceProduct={commerceProduct}
-          relatedGuides={relatedGuides}
-          relatedRoundups={relatedRoundups}
-          advice={advice}
-        />
-        <div className="style-shell pb-12">
-          <SearchOpportunityBacklinks site={site.key} kind="guide" slug={slug} />
-          <BaseMarketEditionLinks site={site} basePath={`/guides/${slug}`} />
-        </div>
-      </>
-    );
-  }
 
   return (
     <main className="section">
@@ -467,7 +399,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             </section>
           ))}
         </article>
-        {!plannerTopic && !requiresTopologyChoice && guide.purchaseFlow !== "task-links" && (amazonFamilyBlock || (!amazonFamilyProduct && !cjFamilyAffiliateOffer && (topProduct || topRoundup || commerceProduct || costumeCommerceProduct))) ? (
+        {!plannerTopic && !requiresTopologyChoice && guide.purchaseFlow !== "task-links" && (amazonFamilyBlock || (!amazonFamilyProduct && !cjFamilyAffiliateOffer && (topProduct || topRoundup || commerceProduct))) ? (
           <section
             className="mt-4 rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-4 sm:mt-5 sm:p-5"
             aria-label="Retailer options after the guide"
@@ -478,7 +410,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             <div className="mt-2 grid gap-3">
               <div className="min-w-0">
                 <h2 className="text-lg font-bold sm:text-xl">
-                  {amazonFamilyProduct?.title ?? topProduct?.name ?? commerceProduct?.name ?? costumeCommerceProduct?.title ?? "Compare the short list"}
+                  {amazonFamilyProduct?.title ?? topProduct?.name ?? commerceProduct?.name ?? "Compare the short list"}
                 </h2>
                 {amazonFamilyBlock ? (
                   <p className="mt-2 max-w-xl text-sm leading-5 text-[var(--muted)]">
@@ -499,18 +431,6 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
                   <AffiliateButton site={site.key} product={amazonFamilyIdentity} offer={amazonFamilyOffer} position="guide-retailer-family-amazon" resolveCreatorsListing={false} sticky stickyStartId="guide-commerce-start" />
                 ) : cjFamilyOffer && cjFamilyIdentity && cjFamilyAffiliateOffer ? (
                   <AffiliateButton site={site.key} product={cjFamilyIdentity} offer={cjFamilyAffiliateOffer} position="guide-retailer-family-cj" resolveCreatorsListing={false} sticky stickyStartId="guide-commerce-start" />
-                ) : costumeCommerceProduct?.activeLink ? (
-                  <TrackedCommerceLink
-                    href={`/go/cj/${costumeCommerceProduct.activeLink.clickToken}`}
-                    label="Check current price & availability at Abracadabra NYC"
-                    merchant="Abracadabra NYC"
-                    position="costume-guide-retailer"
-                    productName={costumeCommerceProduct.title}
-                    productSlug={costumeCommerceProduct.slug}
-                    site="costume"
-                    sticky
-                    stickyStartId="guide-commerce-start"
-                  />
                 ) : commerceProduct ? (
                   <AffiliateButtonGroup site={site.key} product={commerceProduct} position={commerceIsAlternative ? "guide-retailer-verified-alternative" : "guide-retailer-primary"} limit={1} sticky stickyStartId="guide-commerce-start" />
                 ) : null}
@@ -521,8 +441,6 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             <p className="mt-3 text-xs leading-5 text-[var(--muted)]">
               {amazonFamilyBlock
                 ? "The exact purchase link is paused. Review this guide’s fit checks and alternatives before considering another product."
-                : costumeCommerceProduct
-                ? `Open the exact ${costumeCommerceProduct.title} listing to compare the live price, availability, delivery, and returns.`
                 : amazonFamilyProduct
                   ? "Open the exact family listing to compare the live price, availability, delivery, seller, and returns."
                   : commerceProduct
@@ -735,55 +653,9 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             ) : null;
           })}
         </div>
-        {site.key === "costume" ? (
-          <section className="mt-10 rounded-md border border-[#d7b58a] bg-[#fff8ee] p-6" aria-labelledby="costume-family-products">
-            <p className="eyebrow">Live Costume catalog</p>
-            <h2 className="mt-3 text-2xl font-bold" id="costume-family-products">Products to check for this buying question</h2>
-            {costumeCatalogProducts.length ? (
-              <div className={`mt-5 grid gap-4 ${costumeCatalogProducts.length === 1 ? "grid-cols-1" : costumeCatalogProducts.length === 2 ? "sm:grid-cols-2" : "sm:grid-cols-2 lg:grid-cols-3"}`} data-costume-candidate-count={costumeCatalogProducts.length}>
-                {costumeCatalogProducts.map((product) => (
-                  <Link className={`overflow-hidden rounded-md border border-[#e8d2b8] bg-white ${costumeCatalogProducts.length === 1 ? "sm:grid sm:grid-cols-[minmax(160px,.65fr)_minmax(0,1.35fr)]" : ""}`} href={`/products/${product.slug}`} key={product.slug}>
-                    {product.authorizedImage ? (
-                      <div className={`relative bg-[#f4ede3] ${costumeCatalogProducts.length === 1 ? "aspect-square sm:aspect-auto sm:min-h-48" : "aspect-square"}`}>
-                        {/* This URL is rights-gated in PostgreSQL and may use an authorized merchant CDN outside Next's optimizer allowlist. */}
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img
-                          alt={product.authorizedImage.altText ?? product.title}
-                          className="absolute inset-0 h-full w-full bg-white object-contain"
-                          loading="lazy"
-                          referrerPolicy="no-referrer"
-                          src={product.authorizedImage.url}
-                        />
-                      </div>
-                    ) : null}
-                    <div className="p-4">
-                      <h3 className="font-bold leading-6">{product.title}</h3>
-                      <p className="mt-2 text-sm leading-6 text-[var(--muted)]">Compare the exact size, included pieces and use limits before choosing.</p>
-                      <p className="mt-4 text-sm font-bold underline">View exact product details and use limits</p>
-                    </div>
-                  </Link>
-                ))}
-              </div>
-            ) : (
-              <p className="mt-4 leading-7 text-[var(--muted)]">No product is shown here while the exact item or retailer availability remains unconfirmed. Keep the guide’s fit checks and suitable existing options; a different category is not a substitute.</p>
-            )}
-          </section>
-        ) : null}
+        {null}
         <BaseMarketEditionLinks site={site} basePath={`/guides/${slug}`} />
-        {site.key === "costume" ? (
-          <section className="mt-10 rounded-md border border-[#d7b58a] bg-[#fff8ee] p-6">
-            <p className="eyebrow">Put the guide into a complete Halloween story</p>
-            <h2 className="mt-3 text-2xl font-bold">Costume and scene recipes</h2>
-            <div className="mt-5 grid gap-4 sm:grid-cols-3">
-              {costumeHalloweenIdeas.map((idea) => (
-                <Link className="rounded-md border border-[#e8d2b8] bg-white p-4" href={`/halloween-ideas/${idea.slug}`} key={idea.slug}>
-                  <h3 className="font-bold">{idea.title}</h3>
-                  <p className="mt-2 text-sm leading-6 text-[var(--muted)]">{idea.dek}</p>
-                </Link>
-              ))}
-            </div>
-          </section>
-        ) : null}
+        {null}
       </div>
     </main>
   );

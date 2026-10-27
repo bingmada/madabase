@@ -1,7 +1,7 @@
 import sharp from "sharp";
 
-const SITES = ["network", "smarthome", "homeoffice", "baby", "pet", "style"];
-const PROHIBITED_DESTINATION_HOSTS = new Set(["tools.madabase.com", "test.madabase.com"]);
+const SITES = ["network", "smarthome", "homeoffice", "baby", "pet",];
+const PROHIBITED_DESTINATION_HOSTS = new Set(["tools.madabase.com", "test.madabase.com", "style.madabase.com", "wellness.madabase.com", "costumes.madabase.com", "costume.madabase.com"]);
 const baseUrl = process.argv[2] ?? "http://127.0.0.1:3011";
 const errors = [];
 let checked = 0;

@@ -14,7 +14,6 @@ const cases = [
   ["homeoffice", "/reviews/anker-675-usb-c-docking-station", "Monitor height and standing height are different jobs"],
   ["baby", "/reviews/grownsy-bottle-sterilizer-dryer", "Five bottles in the listing, six in the illustration"],
   ["baby", "/reviews/chicco-advanced-sterilizer-dryer", "Does not wash bottles"],
-  ["style", "/categories/styling", "Styling guides"],
 ];
 const results = [];
 const scripts = new Map();

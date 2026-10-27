@@ -6,41 +6,39 @@ export const verifiedAffiliateBatchProducts: Product[] = [
   {
     site: "pet",
     slug: "petlibro-one-rfid-smart-feeder",
+    purchaseCheck: "The exact purchase remains paused. Match the dedicated collar tag and reader, food and portion results, and received revision; current battery-mode documents conflict.",
     asin: "B0FJMFYPNH",
     seoTitle:
       "PETLIBRO One RFID Feeder Guide: Collar Tag, Portions & Multi-Cat Fit",
-    updatedAt: "July 28, 2026",
+    updatedAt: "October 26, 2026",
     evidenceMode: "official-spec",
     researchNote:
-      "We have not tested this feeder ourselves. This guide uses PETLIBRO's current PLAF301 product page, support material, cleaning instructions, portion guidance, and manual; the exact Amazon color, pack quantity, included tag and reader mat, and seller still require a checkout check.",
+      "Manufacturer PLAF301 product/portion documents and the complete English portion of manual V0005 reviewed October 26, 2026. No physical access, dispensing, battery or cleaning test. Historical ASIN purchase remains paused. Product/support and current manual differ on battery Wi-Fi and dimensions; the received revision is not assumed resolved.",
     name: "PETLIBRO One RFID Smart Feeder",
     brand: "PETLIBRO",
     category: "feeding",
     image: "/images/affiliate/pet-smart-feeder-realistic.webp",
     summary:
-      "A model-specific guide to PETLIBRO's PLAF301 access-controlled feeder, including its dedicated collar tag, one-tag limit, dry-food range, meal schedules, reader mat, Wi-Fi, and backup-power behavior.",
+      "A PLAF301 collar-tag access reference with its exact retailer purchase still paused. Check the dedicated reader and tag, actual dry-food portions and received revision; current battery-mode documents conflict.",
     verdict:
-      "The One RFID is the stronger PETLIBRO choice when one pet steals another pet's dry food or needs a separate diet. The less expensive Granary is easier to justify when scheduled portions—not access control—are the real problem.",
+      "Compare One RFID only for a real selective-access need after the intended pet, dedicated tag/reader and food checks pass. The historical ASIN purchase remains paused, and backup connectivity needs revision-specific confirmation. Keep an effective current routine when access hardware is unnecessary.",
     whyItMatters:
       "This feeder recognizes PETLIBRO's dedicated collar tag rather than an implanted microchip. Each feeder binds to one tag, so a multi-pet plan may require one unit per protected pet and enough floor space to separate the readers.",
     bestFor:
       "Protecting one pet's scheduled dry-food meals in a multi-pet home",
     priceBand: "$$",
-    rating: 4.2,
-    scores: [
-      { label: "Access control", value: 9 },
-      { label: "Schedule control", value: 8 },
-      { label: "Cleaning simplicity", value: 6 },
-    ],
+    rating: 0,
+    scores: [],
     pros: [
       "Dedicated RFID collar tag controls access to the covered bowl",
       "Up to ten scheduled meals or snacks with feeding logs",
-      "Supports 2.4GHz and 5GHz Wi-Fi with emergency battery backup",
+      "Normal-power dual-band Wi-Fi and a documented emergency-power mode",
     ],
     cons: [
       "It does not read implanted microchips or third-party tags",
       "One feeder binds to one collar tag, which raises multi-pet cost",
       "Dry food only; the reader mat and moving lid add cleaning and placement work",
+      "Historical purchase paused; battery Wi-Fi and exact dimensions need revision matching",
     ],
     specs: {
       ASIN: "B0FJMFYPNH",
@@ -54,7 +52,8 @@ export const verifiedAffiliateBatchProducts: Product[] = [
         "Approximately 20mL per portion by volume; no fixed gram value",
       Network: "2.4GHz and 5GHz Wi-Fi",
       Power: "Corded; 3 alkaline D batteries for emergency backup",
-      Dimensions: "442 x 196 x 320mm",
+      Dimensions: "Product page lists 442mm length; V0005 manual lists 449mm. Match the received revision and full installed footprint",
+      "Battery connectivity": "Unresolved by revision: V0005 retains Wi-Fi; product/support describes Wi-Fi disabled",
       "Collar tag":
         "23 x 23 x 14.18mm; 4.2g; splashproof, not submersible",
       "Identifier limit":
@@ -71,7 +70,7 @@ export const verifiedAffiliateBatchProducts: Product[] = [
     editorialSections: [
       {
         heading: "One tag per feeder is the central limitation",
-        body: "The One RFID does not identify every pet in the house and route several diets through one bowl. PETLIBRO says one feeder syncs with one dedicated collar tag. In a two-pet home, that can still protect one prescription or weight-control diet, but protecting two separate diets may require two feeders.",
+        body: "PETLIBRO describes one dedicated collar tag per feeder, not several diets routed through one bowl. Observe the intended pet using the lid and check competing pets' access; the feature description is not a tested guarantee that no food can be stolen. Follow veterinary instructions for any prescribed diet rather than treating a tagged lid as proof the correct meal was eaten.",
       },
       {
         heading: "It is RFID, but not a microchip feeder",
@@ -79,11 +78,13 @@ export const verifiedAffiliateBatchProducts: Product[] = [
       },
       {
         heading: "Battery power is a backup mode",
-        body: "PETLIBRO lists three D batteries as emergency backup. Scheduled meals can continue, while Wi-Fi and some controls are disabled to preserve power. Test the saved schedule before relying on the feeder during an outage or trip.",
+        body: "The V0005 manual says battery mode retains RFID recognition, Wi-Fi and feeding while disabling other functions. The product/support material instead describes Wi-Fi disabled. Do not publish either as a universal rule for every PLAF301 or the historical ASIN. Match the received revision, applicable instructions and actual outage behavior before depending on remote visibility. Three alkaline D batteries are an emergency arrangement, not a substitute for power planning or human checks.",
       },
+      { heading: "Reader, lid and cleaning checks are separate", body: "The manual shows the reader on a flat surface away from metal, with the body properly seated and lid pivot locked. The reader is not waterproof. Power off before care and follow the received revision's component instructions; the manual permits only the stainless-steel bowl in a dishwasher. Keep electronics out of wash water and let cleaned parts dry. Actual portion weights, access and meals still need observation even when the app records an event." },
+      { heading: "Newer access options do not change this identity", body: "Granary 2 X is a separate newer access comparison. It does not change PLAF301 into another product or restore this paused retailer path. Confirm its own instructions, configuration and terms if considering it." },
       {
         heading: "Who should skip it",
-        body: "Skip it for wet food, implanted-microchip access, very large pets, or a household that only needs timed portions. A conventional automatic feeder costs less and has fewer moving access-control parts.",
+        body: "Skip for wet food, implanted-microchip access or an unsuitable tag, lid or reader arrangement. Scheduling alone does not require selective access hardware. Pause when the exact model, battery path or required care remains unknown, and retain a suitable existing or supervised routine. Arrange human checks of food received and eaten, water, litter and wellbeing during any absence.",
       },
     ],
     alternatives: [
@@ -93,6 +94,7 @@ export const verifiedAffiliateBatchProducts: Product[] = [
     ],
     compareSlugs: ["petlibro-granary-automatic-cat-feeder"],
     sources: [
+      { name: "PETLIBRO Granary 2 series", url: "https://petlibro.com/products/granary-2-series", note: "Separate newer access comparison; no automatic identity or feature transfer." },
       {
         name: "PETLIBRO One RFID Smart Feeder",
         url: "https://petlibro.com/products/one-rfid-pet-feeder",
@@ -111,7 +113,7 @@ export const verifiedAffiliateBatchProducts: Product[] = [
       {
         name: "PETLIBRO One RFID PLAF301 user manual",
         url: "https://cdn.shopify.com/s/files/1/0252/5197/1119/files/Petlibro-AF301-3L-_US_DE_IT_FR_ES.pdf?v=1774007057",
-        note: "Current official multilingual PLAF301 operating manual.",
+        note: "V0005 English instructions and diagrams read in full. Battery Wi-Fi and dimensions differ from product/support wording, so received-revision applicability needs confirmation.",
       },
       {
         name: "PETLIBRO portion-size guidance",

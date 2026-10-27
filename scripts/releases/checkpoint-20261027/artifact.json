@@ -1,0 +1,16 @@
+{
+  "artifacts": {
+    "main": {
+      "buildId": "zKhd8bnPrjOZqLUKlngEI",
+      "sha256": "5b881c21aabf75246a9d67a993cddd85afe4a3642e62e2cc2ad4498475f0e02f",
+      "bytes": 18051630,
+      "distDir": ".next-release"
+    },
+    "affiliate": {
+      "buildId": "vffatDT8fVA_nZufy_yWp",
+      "sha256": "d8b11348284b660950c9c107265abd8758aaac5a9611e7bce0ff9159ca01a3b9",
+      "bytes": 57656398,
+      "distDir": ".next-release"
+    }
+  }
+}

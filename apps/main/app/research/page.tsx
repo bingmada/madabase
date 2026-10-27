@@ -63,7 +63,7 @@ export default function ResearchPage() {
           <div>
             <p className="eyebrow on-dark">Browse by publication</p>
             <h2>Go deeper in one decision area.</h2>
-            <p>The six publications maintain their own complete archives, sitemaps, evidence pages, and update paths.</p>
+            <p>The five publications maintain their own complete archives, sitemaps, evidence pages, and update paths.</p>
           </div>
           <div className="directory-links">
             {publications.map((publication) => (

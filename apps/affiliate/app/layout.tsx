@@ -3,7 +3,6 @@ import { headers } from "next/headers";
 import "./globals.css";
 import "../../shared/discovery.css";
 import { SiteChrome } from "@/components/LayoutParts";
-import { StyleChrome } from "@/components/StyleExperience";
 import { ClarityAnalytics } from "@/components/ClarityAnalytics";
 import { CommerceAnalytics } from "@/components/CommerceAnalytics";
 import { commerceReleaseId } from "@/lib/release-identity";
@@ -47,19 +46,11 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
         <meta name="msvalidate.01" content="1925B816DE0B8EE2EF64514E52A1D382" />
         <meta name="p:domain_verify" content="b0c3e6f557905e271f2868a46ca16d75" />
       </head>
-      {site.key === "style" ? (
-        <StyleChrome site={site}>
-          <ClarityAnalytics projectId={clarityProjectId} site={site.key} />
-          <CommerceAnalytics site={site.key} releaseId={commerceReleaseId()} />
-          {children}
-        </StyleChrome>
-      ) : (
-        <SiteChrome site={site}>
+      <SiteChrome site={site}>
           <ClarityAnalytics projectId={clarityProjectId} site={site.key} />
           <CommerceAnalytics site={site.key} releaseId={commerceReleaseId()} />
           {children}
         </SiteChrome>
-      )}
     </html>
   );
 }

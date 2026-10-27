@@ -55,7 +55,6 @@ for (const site of Object.values(sites)) for (const category of site.categories)
   if (product) assert.equal(product.category,category.slug,`${site.key}/${category.slug} should not sell another category`);
   commerce.push({site:site.key,category:category.slug,product:product?.slug??null});
 }
-assert.equal(categoryCommerceProduct('style','styling'),undefined,'Editorial styling category does not default to earrings');
 const report = {checkedAt:new Date().toISOString(),calculatorCases:rows.length,rows,guidesScanned:guides,readerPlanningLeaks:0,categoryCommerce:commerce,passed:true};
 fs.mkdirSync(new URL('../reports/conversion-quality-2026-10-22/',import.meta.url),{recursive:true});
 fs.writeFileSync(new URL('../reports/conversion-quality-2026-10-22/code-checks.json',import.meta.url),JSON.stringify(report,null,2)+'\n');

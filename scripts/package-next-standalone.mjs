@@ -9,10 +9,7 @@ const appName = process.argv[2];
 const distDir = process.env.NEXT_RELEASE_DIST_DIR ?? ".next-release";
 const pm2Defaults = {
   main: { name: "madabase-main", port: 3008 },
-  web: { name: "madabase-tools", port: 3018 },
-  test: { name: "madabase-test", port: 3000 },
   affiliate: { name: "madabase-affiliate", port: 3020 },
-  wellness: { name: "madabase-wellness", port: 3030 },
 };
 
 if (!appName || !/^[a-z0-9-]+$/.test(appName)) {

@@ -23,8 +23,6 @@ const siteStates = {
   homeoffice: "protect",
   baby: "protect",
   pet: "recovery",
-  style: "maintenance",
-  costume: "observe",
 };
 const dailyEvidence = {
   network: { impressions7d: 1252, clicks7d: 10, aug16: 208, aug17: 209, aug18: 13, state: "recovery" },
@@ -32,8 +30,6 @@ const dailyEvidence = {
   homeoffice: { impressions7d: 1266, clicks7d: 5, aug16: 156, aug17: 169, aug18: 186, state: "protect" },
   baby: { impressions7d: 831, clicks7d: 7, aug16: 157, aug17: 126, aug18: 105, state: "protect" },
   pet: { impressions7d: 440, clicks7d: 3, aug16: 79, aug17: 78, aug18: 2, state: "recovery" },
-  style: { impressions7d: 16, clicks7d: 0, aug16: null, aug17: null, aug18: null, state: "maintenance" },
-  costume: { impressions7d: 30, clicks7d: 0, aug16: null, aug17: null, aug18: null, state: "observe" },
 };
 
 function parseCsv(text) {

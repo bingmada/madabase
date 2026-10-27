@@ -1,8 +1,6 @@
 import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
 import { DecisionModules, Hero, ProductCard, RoundupCard, TrustBar } from "@/components/LayoutParts";
-import { StyleHome } from "@/components/StyleExperience";
-import { CostumeHome } from "@/components/CostumeExperience";
 import { siteGuides, siteProducts, siteRoundups, siteTools } from "@/lib/content";
 import { itemListSchema, organizationSchema, pageMetadata, websiteSchema } from "@/lib/seo";
 import { siteDecisionModules } from "@/lib/site-decision-modules";
@@ -36,16 +34,6 @@ const homeCopy: Record<SiteKey, { eyebrow: string; heading: string; body: string
     eyebrow: "Smart-home buying guides",
     heading: "Choose connected-home gear by compatibility, control, and recurring cost.",
     body: "Compare smart locks, video doorbells, thermostats, and home-automation standards by door fit, wiring, hubs, subscriptions, privacy, and the controls your household will actually use.",
-  },
-  style: {
-    eyebrow: "Expressive accessory guides",
-    heading: "Find the interesting piece, then build an outfit that lets it work.",
-    body: "Compare statement earrings, character bags, and other playful accessories by size, weight, material, closure, capacity, and how easily they fit real outfits.",
-  },
-  costume: {
-    eyebrow: "Costume and prop buying guides",
-    heading: "Plan fit, materials, movement, timing, and storage before choosing the look.",
-    body: "Compare costumes, props, masks, wigs, makeup, and party effects by the full event job rather than scrolling an undifferentiated catalog.",
   },
 };
 
@@ -105,12 +93,6 @@ export default async function HomePage() {
     12,
   );
   const copy = homeCopy[site.key];
-  if (site.key === "costume") {
-    return <CostumeHome site={site} />;
-  }
-  if (site.key === "style") {
-    return <StyleHome site={site} products={products} roundups={roundups} guides={guides} />;
-  }
   const discoveryItems = [
     ...featuredRoundups.map((roundup) => ({ name: roundup.title, path: `/best/${roundup.slug}` })),
     ...featuredProducts.map((product) => ({ name: product.amazonTitle ?? product.name, path: `/reviews/${product.slug}` })),

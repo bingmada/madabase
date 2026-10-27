@@ -12,7 +12,6 @@ const siteHosts = {
   homeoffice: "homeoffice.madabase.com",
   baby: "baby.madabase.com",
   pet: "pets.madabase.com",
-  costume: "costumes.madabase.com",
 };
 
 if (!publicAudit && !localOrigin) {

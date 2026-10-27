@@ -3,9 +3,7 @@ import https from "node:https";
 
 const localOrigin = new URL(process.env.MAIN_SITE_URL ?? "http://127.0.0.1:3030");
 const canonicalOrigin = new URL(process.env.CANONICAL_ORIGIN ?? "https://madabase.com");
-const toolsOrigin = new URL(process.env.TOOLS_ORIGIN ?? "https://tools.madabase.com");
 const expectedMinimumPages = 13;
-const isPublicOrigin = localOrigin.origin === canonicalOrigin.origin;
 
 function localUrl(pathname) {
   return new URL(pathname, localOrigin).toString();
@@ -80,23 +78,9 @@ await Promise.all(sitemapUrls.map(async (value) => {
   }
 }));
 
-for (const localePath of ["/en", "/en/tools/json-formatter", "/zh", "/zh/tools/json-formatter"]) {
-  const response = await fetchPage(localUrl(localePath), isPublicOrigin ? 308 : 404);
-  if (isPublicOrigin) {
-    const expectedLocation = new URL(localePath, toolsOrigin).toString();
-    if (response.location !== expectedLocation) {
-      throw new Error(`${localePath} redirects to ${response.location ?? "<missing>"}; expected ${expectedLocation}`);
-    }
-  }
-}
-
-if (isPublicOrigin) {
-  const probePath = "/en/tools/json-formatter?main_site_probe=1";
-  const response = await fetchPage(localUrl(probePath), 308);
-  const expectedLocation = new URL(probePath, toolsOrigin).toString();
-  if (response.location !== expectedLocation) {
-    throw new Error(`locale query-string redirect is ${response.location ?? "<missing>"}; expected ${expectedLocation}`);
-  }
+for (const localePath of ["/en", "/en/tools/json-formatter", "/zh", "/zh/tools/json-formatter", "/tools/json-formatter"]) {
+  const response = await fetchPage(localUrl(localePath), 410);
+  if (response.location) throw new Error(`Retired path redirects: ${localePath}`);
 }
 
 const indexNowKey = "70abb1dcfc7c05c96feaa2a5388c71b2";
@@ -105,4 +89,4 @@ if (keyBody.trim() !== indexNowKey) {
   throw new Error("IndexNow key file body does not match its filename");
 }
 
-console.log(`Main-site verification passed: ${sitemapUrls.length} canonical pages, robots, sitemap, ${isPublicOrigin ? "locale redirects" : "locale isolation"}, and IndexNow key.`);
+console.log(`Main-site verification passed: ${sitemapUrls.length} canonical pages, robots, sitemap, retired locale410, and IndexNow key.`);

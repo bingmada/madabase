@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-24",
+  "updatedAt": "2026-10-26",
   "pageUpdatedAt": "July 30, 2026",
   "blocks": [
     {
@@ -544,6 +544,16 @@
       "pageUpdatedAt": "October 24, 2026",
       "observedListing": "kactoily Aquarium Monitor — KY-YGJCQ-S01US, Glossy Black & Metal Gray",
       "reason": "The selected KY-YGJCQ-S01US aquarium SKU lacks a matched original. The brand AQUA-P7-1 download returned a 28-page WiFi Pool Monitor cover and CL display rather than SG; current aquarium help/range copy also conflicts. The exact purchase link is paused pending probe/parameter, calibration, power and component mapping. No direct ammonia, nitrite, nitrate or dissolved-oxygen measurement is established; derived values are not automatically invalid."
+    },
+    {
+      "site": "baby",
+      "slug": "summer-3dlite-convenience-stroller",
+      "asin": "B0D5BGKNBX",
+      "status": "documentation-unverified",
+      "checkedAt": "2026-07-16",
+      "pageUpdatedAt": "October 26, 2026",
+      "observedListing": "Historical B0D5BGKNBX family identity only; no fresh US seller, stock, delivery or return inspection.",
+      "reason": "Manufacturer documents reviewed October 26, 2026 include a current 21930/32843 manual and separate current SKUs. Applicability to the historical selected ASIN is not established. Purchase is paused until the exact model, regional child requirements and instructions match; this is not a recall or whole-family discontinuation finding."
     }
   ]
 }

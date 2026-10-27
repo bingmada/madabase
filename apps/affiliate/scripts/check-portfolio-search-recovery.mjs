@@ -15,7 +15,7 @@ const consolidationSource = fs.readFileSync(path.join(affiliateDir, "lib/search-
 const assemblySource = fs.readFileSync(path.join(affiliateDir, "lib/content.ts"), "utf8");
 const errors = [];
 
-const expectedSites = ["network", "smarthome", "homeoffice", "baby", "pet", "style", "costume"];
+const expectedSites = ["network", "smarthome", "homeoffice", "baby", "pet",];
 const actionSites = config.siteActions.map((item) => item.site);
 if (config.action !== "all-affiliate-site-existing-page-search-recovery") errors.push(`Unexpected action ${config.action}`);
 if (JSON.stringify(config.scope?.sites) !== JSON.stringify(expectedSites)) errors.push("Portfolio scope must enumerate all seven active affiliate sites in operating order");
@@ -42,8 +42,6 @@ if (new Set(redirects).size !== 55) errors.push(`Derived ${new Set(redirects).si
 for (const key of [
   "network:deco-be63-vs-be67-vs-be85-buying-guide",
   "smarthome:matter-thread-wifi-zigbee-device-checklist",
-  "style:loungefly-faux-leather-rain-and-care-guide",
-  "costume:costume-rental-vs-buying-guide",
   "pet:levoit-vital-200s-p-air-purifier",
 ]) {
   if (!contentSource.includes(`"${key}"`)) errors.push(`Missing all-site content patch for ${key}`);
@@ -105,7 +103,7 @@ if (runtimeOrigin && errors.length === 0) {
 
   await mapWithConcurrency(canonicals, 10, async (canonicalUrl) => {
     const canonical = new URL(canonicalUrl);
-    const localizable = !canonical.hostname.startsWith("costumes.");
+    const localizable = true;
     for (const market of [null, ...(localizable ? markets : [])]) {
       const prefix = market ? `/${market}` : "";
       const response = await request(`${prefix}${canonical.pathname}`, canonical.hostname);

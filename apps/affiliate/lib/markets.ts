@@ -151,7 +151,7 @@ export const markets: Record<MarketKey, MarketProfile> = {
 
 export const marketKeys = Object.keys(markets) as MarketKey[];
 export const marketRouteSlugs = marketKeys.map((key) => markets[key].routeSlug);
-export const marketSiteKeys: SiteKey[] = ["network", "smarthome", "homeoffice", "baby", "pet", "style"];
+export const marketSiteKeys: SiteKey[] = ["network", "smarthome", "homeoffice", "baby", "pet",];
 
 export function getMarketByKey(key: string | undefined | null) {
   return marketKeys.includes(key as MarketKey) ? markets[key as MarketKey] : undefined;

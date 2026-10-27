@@ -7,7 +7,6 @@ import { JsonLd } from "@/components/JsonLd";
 import { Disclosure } from "@/components/LayoutParts";
 import { BaseMarketEditionLinks } from "@/components/MarketExperience";
 import { SearchOpportunityBacklinks, SearchOpportunityBlock } from "@/components/SearchOpportunityBlock";
-import { StyleProductPage } from "@/components/StyleExperience";
 import { findProduct, siteGuides, siteProducts, siteRoundups } from "@/lib/content";
 import { reviewCommerceProduct } from "@/lib/commerce-paths";
 import { buyerFacingBody, buyerFacingHeading, buyerFacingSummary } from "@/lib/conversion-copy";
@@ -83,6 +82,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
   const displayName = product.amazonTitle ?? product.name;
   const pageTitle = productPageTitle(product);
   const displayImage = product.amazonImage ?? product.image;
+  const editorialDiagram = displayImage.endsWith(".svg") && product.imageAlt?.startsWith("Editorial ");
   const asin = product.asin ?? product.specs.ASIN;
   const compatibilityChecks = product.evidence.slice(0, 5);
   const category = site.categories.find((item) => item.slug === product.category);
@@ -109,37 +109,6 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
   const comparisonRows = [product, ...comparisonProducts].slice(0, 4);
   const hasSpecificSkipSection = product.editorialSections?.some((section) => section.heading.toLowerCase().includes("who should skip"));
   const purchaseChecks = beforeYouBuyChecks(site.key);
-  if (site.key === "style") {
-    const related = siteProducts(site.key)
-      .filter((item) => item.category === product.category && item.slug !== product.slug)
-      .reverse()
-      .slice(0, 6);
-    return (
-      <>
-        <JsonLd
-          data={breadcrumbSchema(site, [
-            { name: "Home", path: "/" },
-            ...(category ? [{ name: category.name, path: `/categories/${category.slug}` }] : []),
-            { name: product.name, path: `/reviews/${slug}` },
-          ])}
-        />
-        <JsonLd data={productNotesSchema(site, effectiveProduct)} />
-        <StyleProductPage
-          site={site}
-          product={effectiveProduct}
-          commerceProduct={commerceProduct}
-          related={related}
-          relatedRoundups={relatedRoundups}
-          relatedGuides={relatedGuides}
-        />
-        <div className="style-shell pb-12">
-          {searchOpportunity ? <SearchOpportunityBlock opportunity={searchOpportunity} /> : null}
-          <SearchOpportunityBacklinks site={site.key} kind="product" slug={slug} />
-          <BaseMarketEditionLinks site={site} basePath={`/reviews/${slug}`} />
-        </div>
-      </>
-    );
-  }
 
   return (
     <main className="section">
@@ -154,7 +123,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
       <div className="shell">
         <div className="grid min-w-0 gap-8 lg:grid-cols-[minmax(0,1fr)_380px]">
           <article className="min-w-0">
-            <div className="grid gap-7 md:grid-cols-[minmax(0,1fr)_minmax(250px,0.78fr)] md:items-start">
+            <div className={editorialDiagram ? "space-y-7" : "grid gap-7 md:grid-cols-[minmax(0,1fr)_minmax(250px,0.78fr)] md:items-start"}>
               <div>
                 <div className="flex flex-wrap items-center gap-3">
                   <p className="eyebrow">{product.brand}</p>
@@ -174,6 +143,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                     <p className="text-xs font-bold uppercase text-[var(--muted)]">{commerceIsAlternative ? "Different product · verified alternative" : "Current buying option"}</p>
                     <p className="mt-2 font-bold">{commerceProduct.amazonTitle ?? commerceProduct.name}</p>
                     {commerceIsAlternative ? <p className="mt-1 text-sm leading-5 text-[var(--muted)]">The exact reviewed listing is paused; this button is for the named alternative above.</p> : null}
+                    {commerceProduct.purchaseCheck ? <p className="mt-2 text-sm leading-6 text-[var(--muted)]" data-review-purchase-check="true">{commerceProduct.purchaseCheck}</p> : null}
                     <div className="mt-3">
                       <AffiliateButton site={site.key} product={commerceProduct} offer={commerceOffer} position={commerceIsAlternative ? "review-first-viewport-verified-alternative" : "review-first-viewport"} firstViewport />
                     </div>
@@ -209,7 +179,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                     className="mt-5 rounded-md border border-amber-300 bg-amber-50 p-4 text-sm leading-6 text-amber-950"
                     data-commerce-paused={!commerceOffer ? "true" : undefined}
                   >
-                    <p className="font-bold">Amazon purchase link paused after a listing check</p>
+                    <p className="font-bold">Amazon purchase link paused</p>
                     <p className="mt-1">
                       {offerBlock.reason} Observed on {offerBlock.checkedAt}: {offerBlock.observedListing}. We will restore a
                       purchase button only after the exact product and attribution path are verified again.
@@ -240,10 +210,12 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                 ) : null}
               </div>
               <div>
-                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-md bg-[var(--surface-muted)]">
-                  <Image className="object-cover" src={displayImage} alt={product.imageAlt ?? displayName} fill priority sizes="(min-width: 768px) 300px, 100vw" />
+                <div className={`relative w-full overflow-hidden rounded-md bg-[var(--surface-muted)] ${editorialDiagram ? "aspect-[18/11]" : "aspect-[4/3]"}`}>
+                  <Image className={editorialDiagram ? "object-contain" : "object-cover"} src={displayImage} alt={product.imageAlt ?? displayName} fill priority sizes={editorialDiagram ? "(min-width: 1024px) 700px, 100vw" : "(min-width: 768px) 300px, 100vw"} />
                 </div>
-                {displayImage.includes("-realistic.webp") ? (
+                {editorialDiagram ? (
+                  <p className="mt-2 text-xs leading-5 text-[var(--muted)]">Editorial decision diagram; not a product photograph. <a className="font-semibold underline underline-offset-2" href={displayImage} target="_blank" rel="noopener noreferrer">Open full diagram</a></p>
+                ) : displayImage.includes("-realistic.webp") || product.imageAlt?.startsWith("Editorial ") ? (
                   <p className="mt-2 text-xs leading-5 text-[var(--muted)]">
                     Editorial image for visual context; the linked listing may have a different product appearance or configuration.
                   </p>
@@ -272,12 +244,14 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                   </div>
                 </div>
               </div>
+              {!searchOpportunity || searchOpportunity.answer.trim() !== product.verdict?.trim() ? <>
               <h2>The decision</h2>
               <p>
                 {product.verdict ??
                   `This pick works best when the product's strengths match your ${context}. The notes below separate the main upside from the trade-offs so it is easier to compare with nearby alternatives.`}
               </p>
-              {product.whyItMatters ? (
+              </> : null}
+              {product.whyItMatters && product.whyItMatters.trim() !== product.verdict?.trim() ? (
                 <>
                   <h2>Why it matters</h2>
                   <p>{product.whyItMatters}</p>
@@ -315,21 +289,21 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                       </article>
                     ))}
                   </div>
-                  <div className="mt-4 hidden overflow-x-auto md:block">
+                  <div className="mt-4 hidden overflow-x-auto md:block" role="region" aria-label="Published test results" tabIndex={0}>
                     <table className="w-full min-w-[1050px] text-left text-sm">
                       <thead className="text-xs uppercase text-[var(--muted)]">
                         <tr>
-                          <th className="border-b border-[var(--border)] px-3 py-3">Source</th>
-                          <th className="border-b border-[var(--border)] px-3 py-3">Test conditions</th>
-                          <th className="border-b border-[var(--border)] px-3 py-3">Published result</th>
-                          <th className="border-b border-[var(--border)] px-3 py-3">What it means</th>
-                          <th className="border-b border-[var(--border)] px-3 py-3">Limits</th>
+                          <th className="border-b border-[var(--border)] px-3 py-3" scope="col">Source</th>
+                          <th className="border-b border-[var(--border)] px-3 py-3" scope="col">Test conditions</th>
+                          <th className="border-b border-[var(--border)] px-3 py-3" scope="col">Published result</th>
+                          <th className="border-b border-[var(--border)] px-3 py-3" scope="col">What it means</th>
+                          <th className="border-b border-[var(--border)] px-3 py-3" scope="col">Limits</th>
                         </tr>
                       </thead>
                       <tbody className="divide-y divide-[var(--border)] align-top">
                         {externalTests.map((test) => (
                           <tr key={test.url}>
-                            <th className="px-3 py-4 font-bold">
+                            <th className="px-3 py-4 font-bold" scope="row">
                               <a className="text-[var(--brand-strong)] hover:underline" href={test.url} rel="noopener noreferrer" target="_blank">{test.source}</a>
                               {test.date ? <span className="mt-1 block text-xs font-semibold text-[var(--muted)]">{test.date}</span> : null}
                             </th>
@@ -360,19 +334,19 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
               <div className="not-prose mt-5 grid min-w-0 gap-5 lg:grid-cols-2">
                 <section className="min-w-0 rounded-md border border-[var(--border)] bg-white p-5">
                   <h2 className="text-xl font-bold">Key specifications</h2>
-                  <div className="mt-4 overflow-x-auto">
-                    <table className="w-full min-w-[420px] text-left text-sm">
+                  <div className="mt-4 overflow-x-auto" role="region" aria-label="Key specifications" tabIndex={0}>
+                    <table className="w-full text-left text-sm">
                       <thead className="text-xs uppercase text-[var(--muted)]">
                         <tr>
-                          <th className="border-b border-[var(--border)] pb-2 pr-4">Spec</th>
-                          <th className="border-b border-[var(--border)] pb-2">Value to verify</th>
+                          <th className="border-b border-[var(--border)] pb-2 pr-4" scope="col">Spec</th>
+                          <th className="border-b border-[var(--border)] pb-2" scope="col">Value to verify</th>
                         </tr>
                       </thead>
                       <tbody className="divide-y divide-[var(--border)]">
                         {officialSpecRows.map(([key, value]) => (
                           <tr key={key}>
-                            <th className="py-3 pr-4 font-semibold text-[var(--muted)]">{key}</th>
-                            <td className="py-3 font-bold text-[var(--text)]">{value}</td>
+                            <th className="py-3 pr-4 font-semibold text-[var(--muted)]" scope="row">{key}</th>
+                            <td className="break-words py-3 font-bold text-[var(--text)]">{value}</td>
                           </tr>
                         ))}
                       </tbody>
@@ -413,21 +387,21 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
               {comparisonProducts.length ? (
                 <>
                   <h2>Compare nearby options</h2>
-                  <div className="not-prose overflow-x-auto rounded-md border border-[var(--border)] bg-white">
+                  <div className="not-prose overflow-x-auto rounded-md border border-[var(--border)] bg-white" role="region" aria-label="Compare nearby options" tabIndex={0}>
                     <table className="w-full min-w-[760px] text-left text-sm">
                       <thead className="bg-[var(--surface-muted)] text-xs uppercase text-[var(--muted)]">
                         <tr>
-                          <th className="px-4 py-3">Product</th>
-                          <th className="px-4 py-3">Best for</th>
-                          <th className="px-4 py-3">Check first</th>
-                          <th className="px-4 py-3">Price band</th>
-                          <th className="px-4 py-3">Exact listing</th>
+                          <th className="px-4 py-3" scope="col">Product</th>
+                          <th className="px-4 py-3" scope="col">Best for</th>
+                          <th className="px-4 py-3" scope="col">Check first</th>
+                          <th className="px-4 py-3" scope="col">Price band</th>
+                          <th className="px-4 py-3" scope="col">Exact listing</th>
                         </tr>
                       </thead>
                       <tbody className="divide-y divide-[var(--border)]">
                         {comparisonRows.map((item) => (
                           <tr key={item.slug}>
-                            <th className="px-4 py-4 font-bold">
+                            <th className="px-4 py-4 font-bold" scope="row">
                               <Link className="hover:text-[var(--brand-strong)] hover:underline" href={`/reviews/${item.slug}`}>
                                 {item.amazonTitle ?? item.name}
                               </Link>
@@ -525,6 +499,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                   <div className="rounded-md border border-[var(--border)] p-3" key={offer.merchant}>
                     <p className="font-bold">{offer.merchant}</p>
                     <p className="mt-1 text-sm text-[var(--muted)]">{offer.priceNote}</p>
+                    {product.purchaseCheck ? <p className="mt-2 text-sm leading-6 text-[var(--muted)]" data-review-purchase-check="true">{product.purchaseCheck}</p> : null}
                     <div className="mt-3">
                       <AffiliateButton site={site.key} product={product} offer={offer} position="review-sidebar" />
                     </div>
@@ -535,6 +510,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                     <p className="text-xs font-bold uppercase text-[var(--muted)]">Verified alternative—not the product discussed above</p>
                     <p className="mt-1 font-bold">{commerceProduct.amazonTitle ?? commerceProduct.name}</p>
                     <p className="mt-1 text-sm text-[var(--muted)]">{commerceOffer.priceNote}</p>
+                    {commerceProduct.purchaseCheck ? <p className="mt-2 text-sm leading-6 text-[var(--muted)]" data-review-purchase-check="true">{commerceProduct.purchaseCheck}</p> : null}
                     <div className="mt-3">
                       <AffiliateButton site={site.key} product={commerceProduct} offer={commerceOffer} position="review-sidebar-verified-alternative" />
                     </div>
@@ -542,7 +518,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                 ) : null}
               </div>
             </div>
-            <div className="panel p-5">
+            {product.scores.length ? <div className="panel p-5">
               <h2 className="text-xl font-bold">Decision factors</h2>
               <p className="mt-2 text-sm leading-6 text-[var(--muted)]">Use these factors to compare the product with nearby alternatives.</p>
               <ul className="mt-4 space-y-3 text-sm font-semibold">
@@ -550,7 +526,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                   <li className="rounded-md bg-[var(--surface-muted)] px-3 py-2" key={score.label}>{score.label}</li>
                 ))}
               </ul>
-            </div>
+            </div> : null}
             <div className="panel p-5">
               <h2 className="text-xl font-bold">Specs</h2>
               <dl className="mt-4 divide-y divide-[var(--border)]">

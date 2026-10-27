@@ -10,7 +10,13 @@
     "2026-09-27 through 2026-10-03"
   ],
   "scope": {
-    "sites": ["network", "smarthome", "homeoffice", "baby", "pet", "style", "costume"],
+    "sites": [
+      "network",
+      "smarthome",
+      "homeoffice",
+      "baby",
+      "pet"
+    ],
     "changedCanonicals": 17,
     "existingFamilyCanonicals": 12,
     "additionalSiteCanonicals": 5,
@@ -22,7 +28,9 @@
   "siteActions": [
     {
       "site": "network",
-      "categories": ["wifi"],
+      "categories": [
+        "wifi"
+      ],
       "state": "recovery-protect-winner",
       "canonicalPath": "/guides/deco-be63-vs-be67-vs-be85-buying-guide",
       "action": "protect-and-strengthen",
@@ -31,7 +39,9 @@
     },
     {
       "site": "smarthome",
-      "categories": ["automation"],
+      "categories": [
+        "automation"
+      ],
       "state": "recovery-consolidate-overlap",
       "canonicalPath": "/guides/matter-thread-wifi-zigbee-device-checklist",
       "action": "merge-and-rewrite",
@@ -43,7 +53,10 @@
     },
     {
       "site": "homeoffice",
-      "categories": ["meetings", "ergonomics"],
+      "categories": [
+        "meetings",
+        "ergonomics"
+      ],
       "state": "recovery-existing-family-consolidation",
       "canonicalPaths": [
         "/guides/dual-screen-portable-monitors-vs-alternatives",
@@ -61,7 +74,11 @@
     },
     {
       "site": "baby",
-      "categories": ["feeding", "sleep", "travel"],
+      "categories": [
+        "feeding",
+        "sleep",
+        "travel"
+      ],
       "state": "recovery-existing-family-consolidation",
       "canonicalPaths": [
         "/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
@@ -75,33 +92,17 @@
     },
     {
       "site": "pet",
-      "categories": ["home-care"],
+      "categories": [
+        "home-care"
+      ],
       "state": "recovery-page-one-ctr",
       "canonicalPath": "/reviews/levoit-vital-200s-p-air-purifier",
       "action": "query-and-evidence-refresh",
       "evidence": "The page had 18 impressions, zero clicks and average position 3.94 in the current 28-day export. Align the title with pet-home intent, preserve the research-only boundary, and add a recent attributed two-week pet-home observation without replacing the official and instrumented evidence.",
       "redirectSources": []
-    },
-    {
-      "site": "style",
-      "categories": ["bags"],
-      "state": "maintenance-concentrate-existing-signal",
-      "canonicalPath": "/guides/loungefly-faux-leather-rain-and-care-guide",
-      "action": "rewrite-existing-guide-no-expansion",
-      "evidence": "Style had only one current 28-day homepage impression. The care guide had 8 impressions in the preceding comparison window, the strongest recorded Style guide signal. Keep the route, separate care from capacity and park-day intent, and replace generic collector advice with an exact-label, material, rain, storage and safety worksheet.",
-      "redirectSources": []
-    },
-    {
-      "site": "costume",
-      "categories": ["costumes"],
-      "state": "seasonal-recovery-existing-intent",
-      "canonicalPath": "/guides/costume-rental-vs-buying-guide",
-      "action": "merchant-term-seasonal-refresh",
-      "evidence": "The page recorded 18 impressions at average position 7.5 in the preceding 28-day comparison window and then lost exposure. October is the active decision window. Preserve the route and rewrite it from Abracadabra NYC's current rental period, deposit, cleaning, cancellation, included-piece and alteration terms.",
-      "redirectSources": []
     }
   ],
-  "contentBoundary": "No invented hands-on use, price, stock, score, safety result or durability claim. Network and Smarthome facts use primary manufacturer or standards sources; Pet external tests remain attributed and separated; Style care starts with the exact product label; Costume terms require an exact transaction check.",
+  "contentBoundary": "No invented hands-on use, price, stock, score, safety result or durability claim. Network and Smarthome facts use primary manufacturer or standards sources; Pet external tests remain attributed and separated.",
   "protectedFields": [
     "click-bearing or current exposure-leading URL",
     "proven first-screen search intent",

@@ -70,7 +70,7 @@ export async function GET(
     return Response.redirect(destination, 307);
   }
 
-  const imageUrl = await localImageDataUrl(item.image, item.kind === "reviews" || site.key === "style" ? "contain" : "cover");
+  const imageUrl = await localImageDataUrl(item.image, item.kind === "reviews" ? "contain" : "cover");
 
   return new ImageResponse(
     (

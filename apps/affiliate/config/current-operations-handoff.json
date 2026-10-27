@@ -15,7 +15,6 @@
     "audit": "apps/affiliate/scripts/check-live-page-coverage.mjs",
     "scope": "Nine active hosts excluding retired tools.madabase.com contain 1,401 Sitemap URLs: 1,264 content URLs plus 137 structural, policy, category, home and localized routes. Prior exact ledgers cover 1,126 live content URLs; this ledger classifies the remaining 138, leaving zero unassigned live content URLs as of the audit snapshot.",
     "classification": "18 current top-20 pages are protected; nine pages with current or previous exposure are recovery-watch; 32 ordinary Affiliate pages are zero in both compared complete seven-day windows and require exact live index plus intent review before mutation; 79 Costume URLs are governed as a separate seasonal/database cohort.",
-    "costumeAudit": "All 76 live Costume product pages returned HTTP 200, index/follow, exact self-canonical, Product schema and InStock schema. One duplicated visible Santa title belongs to two different-price/different-click-token rental records; preserve both until production product/variant identity is confirmed instead of inventing a canonical.",
     "inspectionSample": "Live Search Console inspection on September 13 confirmed Baby baby-bouncers-buying-guide and Pets cat-trees-and-towers-buying-guide are on Google and indexed. No bulk Request indexing was used.",
     "control": "Run npm run check:page-coverage --workspace apps/affiliate for ledger integrity; add LIVE_PAGE_COVERAGE_PUBLIC_AUDIT=1 to compare all classified URLs and exact Sitemap counts against production."
   },
@@ -156,9 +155,7 @@
       "smarthome": "2 vs 5 clicks; 693 vs 1,120 impressions; 0.3% vs 0.4% CTR; position 28.1 vs 22.7",
       "homeoffice": "3 vs 3 clicks; 1,180 vs 1,040 impressions; 0.3% CTR in both; position 42.7 vs 37.1",
       "baby": "5 vs 3 clicks; 770 vs 683 impressions; 0.6% vs 0.4% CTR; position 25.9 vs 21.6",
-      "pet": "4 vs 0 clicks; 291 vs 340 impressions; 1.4% vs 0% CTR; position 24.4 vs 21.9",
-      "style": "0 clicks; 10 vs 21 impressions; too small for a recovery decision",
-      "costume": "0 clicks; 17 vs 26 impressions; too small for a recovery decision"
+      "pet": "4 vs 0 clicks; 291 vs 340 impressions; 1.4% vs 0% CTR; position 24.4 vs 21.9"
     },
     "expansion757Day14": "The exact 757-URL ledger for August 14-20 contains 292 exposed and 465 zero-impression URLs, 2 clicks, 797 impressions, 0.251% CTR and weighted position 45.979. The preceding ledger had 360 exposed, 397 zero, 1 click, 1,119 impressions and weighted position 38.527. Hold and do not expand.",
     "zeroInspection": "The exact Expansion757 plus Ranking118 zero-impression union is 486 URLs. Cumulative live evidence covers 260: 252 indexed and 8 not on Google; 226 remain after the daily quota alert. Today's fresh batch successfully checked 99 URLs: 96 indexed and 3 not on Google; the 100th request hit quota.",
@@ -206,9 +203,7 @@
       "smarthome": "recovery",
       "homeoffice": "protect",
       "baby": "protect",
-      "pet": "recovery",
-      "style": "maintenance",
-      "costume": "observe"
+      "pet": "recovery"
     },
     "exactDailyEvidence": {
       "network": "August 16/17/18 page impressions 208/209/13",
@@ -384,7 +379,6 @@
       },
       "zeroBySite": {
         "baby": 71,
-        "costume": 38,
         "homeoffice": 71,
         "network": 52,
         "pet": 103,
@@ -605,17 +599,6 @@
       "inventory": "290 exact US ASIN-backed products; six US site Partner Tag configurations",
       "nonUs": "GB, CA, DE and NL remain 0 explicit ASIN mappings and 0 local Partner Tag configurations",
       "productionEndpoint": "HTTP 200, private no-store, noindex, Cloudflare DYNAMIC and listing=null; verified static Amazon CTAs remain the fallback"
-    },
-    "costumeSmallSpacePilot": {
-      "day14Gate": "2026-08-17",
-      "searchConsoleSinceLaunch": {
-        "clicks": 0,
-        "impressions": 0,
-        "queries": "no-data"
-      },
-      "urlInspection": "Blocked by the property daily quota, so indexing status is unproven rather than assumed not indexed.",
-      "technical": "HTTP 200, self-canonical, Article/FAQ/ItemList structured data, sitemap membership, three live Costume internal entrances and first-viewport sponsored CJ commerce are healthy.",
-      "action": "Commit c1ebfcb adds a direct tracked Main seasonal link to this exact buyer page while retaining the broad Halloween hub. Do not open another animatronics URL or rewrite the pilot without query evidence."
     }
   },
   "cohorts": {
@@ -642,8 +625,7 @@
         "smarthome": 27,
         "homeoffice": 24,
         "baby": 15,
-        "pet": 17,
-        "style": 2
+        "pet": 17
       },
       "runtimePassed": 118,
       "titleChanges": 3,
@@ -657,11 +639,8 @@
     "homeoffice": 275,
     "baby": 264,
     "pet": 234,
-    "style": 76,
-    "costume": 121,
     "governedCategoryLastmod": "2026-08-16",
     "softLaunch151Included": 151,
-    "costumePilotIncluded": true,
     "firstExpansionClickPageIncluded": true
   },
   "cloudflare": {
@@ -677,13 +656,10 @@
       "smarthome",
       "homeoffice",
       "baby",
-      "pet",
-      "style"
+      "pet"
     ],
     "babyCj": "Only the separately recorded bounded Bc Babycare pilot is authorized.",
-    "costume": "Database-backed eligible Abracadabra/CJ products supply first-viewport guide, category, product and curated-roundup paths, including same-category fallback for guides without an exact active family offer.",
-    "petMedicationMerchant": "CanadaPetCare remains blocked from public CTAs.",
-    "style": "maintenance_only"
+    "petMedicationMerchant": "CanadaPetCare remains blocked from public CTAs."
   },
   "validation": {
     "seoAudit": {
@@ -706,11 +682,9 @@
     "publicHosts": "release_ab2cf6d_all_seven_correct_homepages_and_sitemaps_http_200_27_hubs_91_base_plus_91_en-gb_redirects_and_19_category_discovery_paths_passed_on_2026_09_15",
     "productionTarget": "exact_B0931ZY7DK_madababy-20_first_viewport_and_self_canonical",
     "firstExpansionClickPage": "exact_B0H5X15MHS_madapets-20_first_viewport_and_self_canonical",
-    "costumePilot": "first_viewport_CJ_self_canonical_structured_data_and_sitemap_passed",
     "productionCache": "exact Momcozy, Ergobaby review and Costume guide HTML returned HTTP_200 and Cloudflare_HIT with current conversion markers on 2026-08-18",
     "productionProcess": "affiliate_release_ab2cf6d_systemd_port_3011_active_restart_0; candidate_3111_closed; immutable_rollback_3d04dcd_retained",
     "searchConsolidation20260823": "25_of_25_family_hubs; 113_of_113_measured_urls; 88_base_plus_88_en-gb_permanent_redirects; public_errors_0",
-    "costumeConversionPublic20260823": "132_of_132_passed; failed_0_noCta_0",
     "responsiveStickyCommerce": "desktop_1440x900_and_mobile_390x844_exact_Momcozy_B0DKHCWJ5G_madababy-20_anchor_passed_on_current_production_runtime",
     "fullCommercialRouteAudit": "6710_of_6710_local_routes_passed; candidate_385_of_385_production_database_routes_passed; failed_0_noCta_0",
     "mainCandidate": "commit_c1ebfcb_deployed_and_public_fingerprint_verified",
@@ -756,7 +730,6 @@
     "september11TwoFamilyAndCtrDay7": "2026-09-18",
     "september11TwoFamilyAndCtrDay14": "2026-09-25",
     "september11TwoFamilyAndCtrDay30": "2026-10-11",
-    "costumePilotNextGate": "2026-09-02",
     "productPilot5SearchPromotionGate": "No fixed promotion date. Add to sitemap, IndexNow and Search Console only after reciprocal-link and production gates pass; do not mass-promote the remaining 125 candidates.",
     "stickyConversionReview": "Review after 14 days and at least 100 eligible post-CTA scroll sessions; split desktop and mobile, then compare first-viewport versus sticky-bottom affiliate clicks, merchant clicks, ordered items and earnings."
   },
@@ -766,12 +739,12 @@
     "workingTreeLog": "apps/affiliate/reports/external-distribution-2026-09-24.md",
     "status": "Completed overdue Pinterest September 21 review: variants 1/2 have 41/8 detailed impressions and zero Pin clicks, saves and outbound clicks. No third variant or Quora answer published. Five Quora query families checked; existing three recent citations remain public at 3/4/4 views.",
     "strategy": "Do not search, draft, fill, publish, edit, appeal, contact moderators or monitor Reddit; preserve its history only and reactivate solely after a new explicit owner instruction. Continue opportunity-driven Quora distribution without a posting quota. Direct affiliate links remain prohibited.",
-    "portfolioScope": "External-distribution discovery covers Main, Network, Smarthome, Homeoffice, Baby, Pets, Style, Costumes and Wellness wherever an eligible evidence page exists. Do not default to Network; choose by current opportunity and evidence fit.",
+    "portfolioScope": "Main, Network, Smarthome, Homeoffice, Baby and Pets only. Retired sites are excluded from new distribution and maintenance.",
     "measurement": "Authenticated Clarity Last 30 Days recovered: no Pinterest source match; two raw Quora sessions are September 8 same-visitor QA contamination, one with explicit QA entry. Exclude both conservatively; zero verified acquired sessions and no verified downstream affiliate_click. Unfiltered 280 sessions/12 affiliate_click sessions are project context only.",
     "dailyAction": "Hold both Pinterest variants unchanged. Next explicit distribution run starts with exact measurement; October 7 retains the original 10 verified non-QA session plus one affiliate_click gate or 90-day pause. Quora remains opportunity-driven; inspect citation URLs without opening production UTMs and use QA tags for checks. Preserve Reddit retirement and forum blockers."
   },
   "doNotDo": [
-    "Do not maintain or monitor tools.madabase.com. Exclude it and legacy Tools paths from GSC, Bing, Clarity, sitemap, IndexNow, SEO, crawl, uptime and recommendation work; historical data is usable only to remove it from active-growth aggregates.",
+    "Do not maintain, monitor, submit or distribute Tools, Test, Style, Wellness or Costumes. Historical data stays historical; final retirement execution remains pending combined release.",
     "Do not resubmit or rewrite the 151-page sitemap release before its 2026-09-03 Day-14 gate unless a technical, merchant or indexability defect appears.",
     "Do not describe the 151-page cohort as sitemap-excluded after release 6eec199; all 151 are now included and submitted.",
     "Do not reopen or bulk-request indexing for the completed 486-URL zero-impression queue; only the two discovered-currently-not-indexed Smarthome URLs have a scheduled 2026-09-03 recheck.",
@@ -810,8 +783,6 @@
       "homeoffice",
       "baby",
       "pet",
-      "style",
-      "costume",
       "wellness"
     ],
     "excluded": [
@@ -887,8 +858,7 @@
       "eslint": "Affiliate and Wellness passed",
       "seo": "passed",
       "pageOneCTR": "passed",
-      "build": "Affiliate and Wellness production builds, types and packages passed",
-      "costume": "32 local data-dependent routes remain unverified, not passed"
+      "build": "Affiliate and Wellness production builds, types and packages passed"
     },
     "finalAffiliateSourceCommit": "8055b15",
     "localValidationProcessesStopped": true,
@@ -1022,8 +992,6 @@
       "publicPages": 302,
       "publicPagesPassed": 302,
       "priorityAndMerchantPages": 82,
-      "costumePurchasePages": 32,
-      "costumeProductDiscovery": 76,
       "sitemapUrls": 1401,
       "sitemaps": 9,
       "robots": 9,
@@ -1313,5 +1281,44 @@
     ],
     "publicPreview": "https://homeoffice.madabase.com/compatibility/mini-pcs",
     "localPreviewStatus": "historical; local QA servers no longer running"
+  },
+  "retirementOverride20261027": {
+    "at": "2026-10-27T06:16:39.872737+00:00",
+    "ownerAuthorized": [
+      "tools",
+      "test",
+      "style"
+    ],
+    "status": "removed_locally_not_deployed",
+    "activeAffiliateSites": [
+      "homeoffice",
+      "network",
+      "smarthome",
+      "baby",
+      "pet"
+    ],
+    "supersedes": "All earlier maintenance-only/no-shutdown policies for these3sites. Prior metrics below are dated historical snapshots.",
+    "executionEvidence": "reports/quality-remediation-2026-10-22/site-retirement-progress-latest.json",
+    "release": "All remaining remediation and retirement together after final acceptance."
+  },
+  "retirement20261027": {
+    "at": "2026-10-27T08:01:32.659897+00:00",
+    "activeAffiliateSites": [
+      "homeoffice",
+      "baby",
+      "network",
+      "smarthome",
+      "pet"
+    ],
+    "retiredSites": [
+      "tools",
+      "test",
+      "style",
+      "wellness",
+      "costume"
+    ],
+    "state": "local_remediation_no_production_change",
+    "rule": "Overrides all earlier seasonal, Wellness, Style, Test and Tools maintenance/distribution followups. Preserve historical evidence as history only. Retire code and exclusive data with final combined release after all retained batches and final acceptance; no per-batch publication.",
+    "evidence": "reports/quality-remediation-2026-10-22/site-retirement-progress-latest.json"
   }
 }

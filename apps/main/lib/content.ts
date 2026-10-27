@@ -74,23 +74,10 @@ export const publications: Publication[] = [
     featuredHref: "https://pets.madabase.com/reviews/furbo-360-dog-camera",
     accent: "#187366",
   },
-  {
-    key: "style",
-    name: "Sideglance Style",
-    domain: "https://style.madabase.com",
-    image: "/images/style.webp",
-    label: "Personal style",
-    description: "Expressive bags and accessories considered by scale, comfort, materials, capacity, outfit fit, and return risk.",
-    decision: "Start here when the interesting piece still needs to work with real outfits and ordinary days.",
-    featuredTitle: "Loungefly Minnie bow vs. Rock the Dots",
-    featuredHref: "https://style.madabase.com/best/loungefly-minnie-bow-vs-rock-the-dots-backpack",
-    accent: "#a44462",
-  },
 ];
 
 export const researchItems = researchUpdates.map((item) => {
-  const publication = publications.find((entry) => entry.key === item.site)
-    ?? (item.site === "costume" ? { name: "Madabase Halloween & Costume Guide", label: "Halloween and costumes" } : undefined);
+  const publication = publications.find((entry) => entry.key === item.site);
   return {
     ...item,
     publication: publication?.name ?? "Madabase",

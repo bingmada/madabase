@@ -85,7 +85,7 @@ export default function HomePage() {
         <div className="shell">
           <div className="section-heading split-heading">
             <div>
-              <p className="eyebrow">Six focused publications</p>
+              <p className="eyebrow">{publications.length} focused publications</p>
               <h2>Start with the decision you are actually making.</h2>
             </div>
             <p>Each publication stays narrow enough to understand its products, while Madabase connects the decisions that cross rooms and routines.</p>
@@ -96,28 +96,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section seasonal-section">
-        <div className="shell seasonal-callout">
-          <div>
-            <p className="eyebrow on-dark">Seasonal decision desk · Halloween 2026</p>
-            <h2>Plan the costume, scare, and setup while there is still time to test it.</h2>
-            <p>Use the Madabase Halloween &amp; Costume Guide for sizing, masks, haunted props, animatronics, lighting, delivery timing, and simpler backups before October 31.</p>
-          </div>
-          <div className="seasonal-actions">
-            <TrackedLink
-              className="button button-light"
-              href="https://costumes.madabase.com/best/halloween-animatronics-small-yards-and-porches"
-              position="home-seasonal-small-space-animatronics"
-              publication="Madabase Halloween & Costume Guide"
-            >
-              Compare small-space animatronics <ArrowRight size={17} aria-hidden="true" />
-            </TrackedLink>
-            <TrackedLink className="button button-ghost" href="https://costumes.madabase.com/halloween" position="home-seasonal-halloween" publication="Madabase Halloween & Costume Guide">
-              Open Halloween planning
-            </TrackedLink>
-          </div>
-        </div>
-      </section>
+
 
       <section className="section research-section">
         <div className="shell">

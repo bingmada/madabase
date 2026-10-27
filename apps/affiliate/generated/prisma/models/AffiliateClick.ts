@@ -573,6 +573,18 @@ export type AffiliateClickNullableScalarRelationFilter = {
   isNot?: Prisma.AffiliateClickWhereInput | null
 }
 
+export type StringFieldUpdateOperationsInput = {
+  set?: string
+}
+
+export type NullableStringFieldUpdateOperationsInput = {
+  set?: string | null
+}
+
+export type DateTimeFieldUpdateOperationsInput = {
+  set?: Date | string
+}
+
 export type AffiliateClickCreateNestedManyWithoutMerchantProductInput = {
   create?: Prisma.XOR<Prisma.AffiliateClickCreateWithoutMerchantProductInput, Prisma.AffiliateClickUncheckedCreateWithoutMerchantProductInput> | Prisma.AffiliateClickCreateWithoutMerchantProductInput[] | Prisma.AffiliateClickUncheckedCreateWithoutMerchantProductInput[]
   connectOrCreate?: Prisma.AffiliateClickCreateOrConnectWithoutMerchantProductInput | Prisma.AffiliateClickCreateOrConnectWithoutMerchantProductInput[]

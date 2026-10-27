@@ -10,8 +10,6 @@ const SITE_DOMAINS = {
   homeoffice: process.env.NEXT_PUBLIC_HOMEOFFICE_SITE_URL ?? "https://homeoffice.madabase.com",
   baby: process.env.NEXT_PUBLIC_BABY_SITE_URL ?? "https://baby.madabase.com",
   pet: process.env.NEXT_PUBLIC_PET_SITE_URL ?? "https://pets.madabase.com",
-  style: process.env.NEXT_PUBLIC_STYLE_SITE_URL ?? "https://style.madabase.com",
-  costume: process.env.NEXT_PUBLIC_COSTUME_SITE_URL ?? "https://costumes.madabase.com",
 };
 const SITE_KEYS = Object.keys(SITE_DOMAINS);
 const STATIC_PATHS = [
@@ -28,8 +26,6 @@ const SITE_CATEGORIES = {
   homeoffice: ["desks", "ergonomics", "meetings"],
   baby: ["sleep", "travel", "feeding"],
   pet: ["feeding", "home-care", "comfort"],
-  style: ["jewelry", "bags", "hair", "scarves", "socks", "styling"],
-  costume: [],
 };
 const REPO_ROOT = execFileSync("git", ["rev-parse", "--show-toplevel"], { encoding: "utf8" }).trim();
 
@@ -279,10 +275,6 @@ function addTemplateChangeUrls(urls, catalog, fromRef, toRef, selectedSites) {
   }
   if (changedFiles.includes("apps/affiliate/lib/static-pages.ts") || changedFiles.includes("apps/affiliate/app/[slug]/page.tsx")) {
     for (const site of selectedSites) STATIC_PATHS.forEach((path) => urls.add(pageUrl(site, path)));
-  }
-  if (changedFiles.includes("apps/affiliate/components/StyleExperience.tsx") && selectedSites.has("style")) {
-    addSiteShellUrls(urls, "style");
-    addRecordsByType(urls, catalog, new Set(["style"]), new Set(["reviews", "best", "guides", "tools"]));
   }
 
   return changedFiles;

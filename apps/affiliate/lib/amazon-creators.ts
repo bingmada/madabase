@@ -51,7 +51,7 @@ export async function getFreshAmazonCreatorsListing(
   productSlug: string,
   market: AmazonMarketKey,
 ): Promise<FreshAmazonCreatorsListing | null> {
-  if (!hasDatabaseUrl() || site === "costume") return null;
+  if (!hasDatabaseUrl()) return null;
 
   try {
     const prisma = getAffiliatePrisma();

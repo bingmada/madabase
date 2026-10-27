@@ -146,6 +146,7 @@ function addEntry(sourceFile, node, kind, factoryName) {
     sitemapExcluded: booleanValue(props.get("sitemapExcluded")) ?? false,
     hasUpdateDate: props.has("updatedAt") || Boolean(factoryName),
     image: stringValue(props.get("image")),
+    imageAlt: stringValue(props.get("imageAlt")),
     familySlug: stringValue(props.get("familySlug")),
     familyRole: stringValue(props.get("familyRole")),
     productSlugs: stringArray(props.get("productSlugs")),
@@ -247,7 +248,7 @@ if (!categoryPageSource.includes("...guides.map((guide)")) {
   errors.push("Category ItemList schema must mirror the curated visible guide set");
 }
 if (!categoryPageSource.includes("<GovernedDecisionGuideLinks guides={allCategoryGuides} />")) {
-  errors.push("Costume category pages must expose every primary governed buying hub");
+  errors.push("Category pages must expose every primary governed buying hub");
 }
 if (
   !governedSitemapSource.includes('"2026-08-23T00:00:00Z"')
@@ -266,7 +267,6 @@ const expectedExpansionFamilies = {
   homeoffice: 33,
   baby: 24,
   pet: 30,
-  costume: 10,
 };
 const expectedExpansionGuides = {
   network: 108,
@@ -274,7 +274,6 @@ const expectedExpansionGuides = {
   homeoffice: 165,
   baby: 144,
   pet: 150,
-  costume: 40,
 };
 for (const [site, expected] of Object.entries(expectedExpansionFamilies)) {
   const actual = quadrupleExpansionModule.quadrupleExpansionFamilies.filter((family) => family.site === site).length;
@@ -288,14 +287,17 @@ for (const [site, expected] of Object.entries(expectedExpansionGuides)) {
     errors.push(`Quadruple expansion must generate one ${site} family hub per family; found ${familyHubCount}`);
   }
 }
-if (quadrupleExpansionModule.quadrupleExpansionGuides.length !== 757) {
-  errors.push(`Quadruple expansion must generate 757 URL-level guides; found ${quadrupleExpansionModule.quadrupleExpansionGuides.length}`);
+const expectedGuideTotal = Object.values(expectedExpansionGuides).reduce((total, count) => total + count, 0);
+const expectedFamilyTotal = Object.values(expectedExpansionFamilies).reduce((total, count) => total + count, 0);
+if (quadrupleExpansionModule.quadrupleExpansionGuides.length !== expectedGuideTotal) {
+  errors.push(`Retained expansion must generate ${expectedGuideTotal} URL-level guides; found ${quadrupleExpansionModule.quadrupleExpansionGuides.length}`);
 }
-if (Object.keys(quadrupleExpansionModule.familyEditorialBriefs ?? {}).length !== 154) {
-  errors.push(`Quadruple expansion must contain 154 family-specific editorial briefs; found ${Object.keys(quadrupleExpansionModule.familyEditorialBriefs ?? {}).length}`);
+if (Object.keys(quadrupleExpansionModule.familyEditorialBriefs ?? {}).length !== expectedFamilyTotal) {
+  errors.push(`Retained expansion must contain ${expectedFamilyTotal} family-specific editorial briefs; found ${Object.keys(quadrupleExpansionModule.familyEditorialBriefs ?? {}).length}`);
 }
-if (quadrupleCommunityEvidenceData.discussions.length !== 113) {
-  errors.push(`Quadruple expansion community-evidence review must retain 113 relevant discussions; found ${quadrupleCommunityEvidenceData.discussions.length}`);
+// Two Costume discussions were withdrawn with that site; the five retained sites keep all 111.
+if (quadrupleCommunityEvidenceData.discussions.length !== 111) {
+  errors.push(`Retained community-evidence review must contain 111 relevant discussions; found ${quadrupleCommunityEvidenceData.discussions.length}`);
 }
 for (const guide of quadrupleExpansionModule.quadrupleExpansionGuides) {
   const coreText = [guide.dek, guide.quickAnswer, ...guide.sections.map((section) => `${section.heading} ${section.body}`)].filter(Boolean).join(" ");
@@ -475,7 +477,12 @@ for (const entry of entries) {
   }
 
   if (entry.image?.toLowerCase().endsWith(".svg")) {
-    errors.push(`Content image ${entry.image} for ${routeKey} must use a photographic bitmap instead of a placeholder SVG`);
+    const imagePath = path.join(publicDir, entry.image);
+    const source = fs.existsSync(imagePath) ? fs.readFileSync(imagePath, "utf8") : "";
+    const labelledDiagram = entry.image.endsWith("-editorial.svg")
+      && entry.imageAlt?.startsWith("Editorial ")
+      && /<svg\b/.test(source) && /<title\b/.test(source) && /<desc\b/.test(source);
+    if (!labelledDiagram) errors.push(`Content SVG ${entry.image} for ${routeKey} needs an explicitly labelled editorial diagram with title and description`);
   }
 
   for (const url of entry.offerUrls) {
@@ -591,7 +598,7 @@ if (portfolioPolicy.publicationFreeze?.status === "active") {
   }
   for (const [site, expected] of Object.entries(baseline.sitemapBaseEditorialBySite ?? {})) {
     const actual = governedEntries.filter((entry) => entry.site === site && !entry.sitemapExcluded).length
-      + (site === "costume" ? standaloneCount : 0);
+      + (0);
     if (actual !== expected) errors.push(`Expected ${expected} sitemap base editorial routes for ${site}; found ${actual}`);
   }
 }
@@ -602,8 +609,6 @@ const siteByHost = new Map([
   ["baby.madabase.com", "baby"],
   ["network.madabase.com", "network"],
   ["smarthome.madabase.com", "smarthome"],
-  ["style.madabase.com", "style"],
-  ["costumes.madabase.com", "costume"],
 ]);
 const kindByPathPrefix = new Map([
   ["reviews", "product"],
@@ -664,8 +669,9 @@ opportunitySource.statements.forEach((statement) => {
   });
 });
 
-if (searchOpportunities.length !== 100) {
-  errors.push(`Search opportunity registry must contain exactly 100 entries; found ${searchOpportunities.length}`);
+// The owner's Style retirement removes its two registered opportunities.
+if (searchOpportunities.length !== 98) {
+  errors.push(`Active search opportunity registry must contain exactly 98 entries; found ${searchOpportunities.length}`);
 }
 const opportunityKeys = new Set();
 const opportunityDateKeys = new Set();
@@ -710,8 +716,8 @@ moduleSource.statements.forEach((statement) => {
     });
   });
 });
-if (decisionModules.length !== 12) {
-  errors.push(`Site decision-module registry must contain exactly 12 modules; found ${decisionModules.length}`);
+if (decisionModules.length !== 10) {
+  errors.push(`Five-site decision-module registry must contain exactly 10 modules; found ${decisionModules.length}`);
 }
 const moduleKeys = new Set();
 const moduleCounts = new Map();
@@ -739,11 +745,8 @@ for (const decisionModule of decisionModules) {
     }
   }
 }
-for (const site of ["network", "smarthome", "homeoffice", "baby", "pet", "costume"]) {
+for (const site of ["network", "smarthome", "homeoffice", "baby", "pet",]) {
   if (moduleCounts.get(site) !== 2) errors.push(`${site} must expose exactly 2 site decision modules`);
-}
-for (const site of ["style"]) {
-  if (moduleCounts.has(site)) errors.push(`${site} must remain outside the current decision-module expansion`);
 }
 for (const opportunity of searchOpportunities) {
   const key = `${opportunity.site}:${opportunity.kind}:${opportunity.slug}`;
@@ -923,7 +926,7 @@ if (!sitemapSource.includes("siteProducts(site.key)") || !sitemapSource.includes
   errors.push("Sitemap must use publication-aware content selectors");
 }
 
-const amazonSiteKeys = ["network", "smarthome", "homeoffice", "baby", "pet", "style"];
+const amazonSiteKeys = ["network", "smarthome", "homeoffice", "baby", "pet",];
 const marketsSource = fs.readFileSync(path.join(libDir, "markets.ts"), "utf8");
 for (const siteKey of amazonSiteKeys) {
   if (!marketsSource.match(new RegExp(`marketSiteKeys[^;]+["']${siteKey}["']`, "s"))) {

@@ -13,9 +13,7 @@
       "network",
       "baby",
       "smarthome",
-      "pet",
-      "style",
-      "costume"
+      "pet"
     ]
   },
   "reviewGates": {
@@ -469,101 +467,6 @@
           "name": "PETLIBRO: One RFID AF301 / PLAF301 cleaning",
           "url": "https://petlibro.com/pages/how-do-i-disassemble-and-clean-the-one-rfid-pet-feeder-af301-plaf301",
           "note": "Base, RFID-tag and reader restrictions; complete-drying requirement."
-        }
-      ],
-      "sourceCheckedAt": "2026-10-13"
-    },
-    {
-      "site": "style",
-      "kind": "guide",
-      "slug": "mini-backpack-capacity-measurement-guide",
-      "url": "https://style.madabase.com/guides/mini-backpack-capacity-measurement-guide",
-      "titlePreserved": true,
-      "seoTitlePreserved": true,
-      "baselinePageRows": {
-        "clicks": "",
-        "impressions": "",
-        "ctr_percent": "",
-        "position": "",
-        "band": "zero-impression"
-      },
-      "pageFilteredEvidence": {
-        "visibleQueries": [],
-        "pageClicks": 0,
-        "pageImpressions": 0
-      },
-      "defect": "No sources or worked external-versus-usable calculation.",
-      "change": "repair-guide",
-      "sources": [
-        {
-          "name": "Loungefly: Hello Kitty Gingham Mini Backpack SANBK0463",
-          "url": "https://loungefly.com/hello-kitty-gingham-mini-backpack/SANBK0463.html",
-          "note": "Exact exterior dimensions and bottom-width measurement; the bounding-box calculation is ours, not tested usable capacity."
-        }
-      ],
-      "sourceCheckedAt": "2026-10-13"
-    },
-    {
-      "site": "costume",
-      "kind": "guide",
-      "slug": "when-to-order-a-halloween-costume",
-      "url": "https://costumes.madabase.com/guides/when-to-order-a-halloween-costume",
-      "titlePreserved": true,
-      "seoTitlePreserved": true,
-      "baselinePageRows": {
-        "clicks": "",
-        "impressions": "",
-        "ctr_percent": "",
-        "position": "",
-        "band": "zero-impression"
-      },
-      "pageFilteredEvidence": {
-        "visibleQueries": [],
-        "pageClicks": 0,
-        "pageImpressions": 0
-      },
-      "defect": "No current merchant handling evidence or dated assumption-labelled backward plan.",
-      "change": "repair-guide",
-      "sources": [
-        {
-          "name": "AbracadabraNYC: shipping and local pickup information",
-          "url": "https://abracadabranyc.com/pages/shipping-pick-up-info",
-          "note": "Current processing and carrier caveats checked October 13, 2026. Our dated example uses explicit assumptions and is not a merchant delivery promise."
-        }
-      ],
-      "sourceCheckedAt": "2026-10-13"
-    },
-    {
-      "site": "costume",
-      "kind": "guide",
-      "slug": "props-and-animatronics-vs-alternatives",
-      "url": "https://costumes.madabase.com/guides/props-and-animatronics-vs-alternatives",
-      "titlePreserved": true,
-      "seoTitlePreserved": true,
-      "baselinePageRows": {
-        "clicks": "",
-        "impressions": "",
-        "ctr_percent": "",
-        "position": "",
-        "band": "zero-impression"
-      },
-      "pageFilteredEvidence": {
-        "visibleQueries": [],
-        "pageClicks": 0,
-        "pageImpressions": 0
-      },
-      "defect": "Overlapping four-role templates; no complete movement/power/storage/arrival decision.",
-      "change": "repair-guide",
-      "sources": [
-        {
-          "name": "CPSC: household extension-cord fire prevention",
-          "url": "https://www.cpsc.gov/safety-education/safety-guides/electronics-and-electrical-home-fire/household-extension-cords-can",
-          "note": "General electrical boundary; the exact prop's manual controls installation, movement clearance and environmental approval."
-        },
-        {
-          "name": "AbracadabraNYC: shipping and pickup information",
-          "url": "https://abracadabranyc.com/pages/shipping-pick-up-info",
-          "note": "Handling and delivery constraints; no guarantee of a particular prop's stock or arrival."
         }
       ],
       "sourceCheckedAt": "2026-10-13"

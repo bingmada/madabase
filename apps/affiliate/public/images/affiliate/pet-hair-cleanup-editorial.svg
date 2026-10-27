@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 880" role="img" aria-labelledby="title desc">
+<style>text{font-family:Arial,sans-serif;fill:#153d39}.title{font-size:45px;font-weight:700}.sub{font-size:23px;fill:#55716c}.label{font-size:26px;font-weight:700}.small{font-size:22px}.line{fill:none;stroke:#285e57;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.muted{fill:#dcece5;stroke:#5f8b7e;stroke-width:4}.tag{font-size:20px;letter-spacing:2px;font-weight:700;fill:#53746c}</style>
+<rect width="1440" height="880" fill="#f5f7ed"/><circle cx="1370" cy="20" r="260" fill="#e4eddb"/>
+<title id="title">Pet-hair cleanup involves three different tasks</title><desc id="desc">A schematic upholstery cushion and loose hairs accompany three separate labelled checks: surface hair removal, cover washing, and deep cleaning. No branded roller is depicted.</desc>
+<text x="70" y="95" class="title">Match the tool to the cleanup</text><text x="70" y="140" class="sub">Removing loose hair does not replace washing or deep cleaning.</text>
+<rect x="70" y="210" width="620" height="535" rx="28" fill="#fff"/>
+<rect x="155" y="325" width="440" height="245" rx="55" class="muted"/><path d="M185 455H565M375 355V550M185 570V615M565 570V615" class="line"/>
+<path d="M230 390Q240 370 251 386M310 419Q325 435 337 414M435 380Q448 362 460 381M500 496Q513 477 525 496M250 510Q270 527 281 505" fill="none" stroke="#a67b38" stroke-width="5" stroke-linecap="round"/>
+<text x="150" y="678" class="label">Fabric compatibility first</text>
+<rect x="740" y="210" width="630" height="155" rx="24" fill="#e0ece7"/><text x="785" y="270" class="label">Surface hair</text><text x="785" y="315" class="small">Exact roller • suitable fabric • chamber</text>
+<rect x="740" y="395" width="630" height="155" rx="24" fill="#e0ece7"/><text x="785" y="455" class="label">Cover washing</text><text x="785" y="500" class="small">Care label • removal • complete drying</text>
+<rect x="740" y="580" width="630" height="165" rx="24" fill="#e0ece7"/><text x="785" y="640" class="label">Embedded debris and seams</text><text x="785" y="685" class="small">A different tool or cleaning method</text>
+<text x="70" y="820" class="tag">MADABASE · EDITORIAL DIAGRAM · NOT A PRODUCT PHOTOGRAPH</text></svg>

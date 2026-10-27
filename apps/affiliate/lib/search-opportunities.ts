@@ -128,8 +128,8 @@ export const searchOpportunities: SearchOpportunity[] = [
     kind: "product",
     slug: "furbo-360-dog-camera",
     query: "Does Furbo 360 work without a Furbo Nanny subscription?",
-    answer: "A standalone Furbo 360 retains basic free features, but the linked Amazon ASIN B0BWN22T25 is the paid-plan-required version: activation needs a subscription and the current listing states a three-month minimum. Do not treat this offer as the standalone camera. Compare the full committed cost and renewal terms.",
-    updatedAt: "September 25, 2026",
+    answer: "Furbo Standalone has documented free basic functions, but B0BWN22T25 is the historical paid-activation reference. Confirm the selected billed contract and renewal. Official articles disagree on basic access after cancellation, so that entitlement remains unknown for this offer.",
+    updatedAt: "October 26, 2026",
     preferredPaths: ["/guides/furbo-360-placement-height-and-wifi-guide", "/best/furbo-360-vs-wyze-cam-pan-v3-for-pets"],
   },
   {
@@ -718,15 +718,6 @@ export const searchOpportunities: SearchOpportunity[] = [
     preferredPaths: ["/best/coway-mighty2-vs-winix-5510-vs-levoit-vital-200s", "/reviews/levoit-vital-200s-p-air-purifier", "/best/coway-mighty2-vs-shark-neverchange-max", "/guides/air-purifier-placement-near-litter-box"],
   },
   {
-    site: "style",
-    kind: "product",
-    slug: "loungefly-mickey-mouse-mini-backpack",
-    query: "What fits in a Loungefly Mickey Mouse mini backpack?",
-    answer: "Use the listed exterior dimensions only as a starting point: the zipper opening, lining, front pocket, and structured shape reduce usable volume. Compare the actual daily carry list and strap range before buying it as more than an occasional statement bag.",
-    updatedAt,
-    preferredPaths: ["/guides/loungefly-mini-backpack-vs-full-size-for-park-day", "/guides/loungefly-faux-leather-rain-and-care-guide", "/reviews/loungefly-minnie-mouse-bow-mini-backpack"],
-  },
-  {
     site: "baby",
     kind: "guide",
     slug: "bottle-sterilizer-dryer-for-twins-capacity-guide",
@@ -751,16 +742,7 @@ export const searchOpportunities: SearchOpportunity[] = [
     query: "How do you choose a cat water fountain?",
     answer: "Choose from reservoir size, material, pump access, filter availability, noise, cleaning time, and the cat's drinking behavior. Keep a separate fresh-water bowl during the transition and confirm that replacement parts remain available.",
     updatedAt,
-    preferredPaths: ["/reviews/catit-flower-cat-water-fountain", "/guides/cat-fountain-filter-replacement-guide", "/guides/automatic-feeder-cleaning-checklist"],
-  },
-  {
-    site: "style",
-    kind: "product",
-    slug: "betsey-johnson-cupcake-mismatch-earrings",
-    query: "Are Betsey Johnson cupcake mismatch earrings comfortable for repeat wear?",
-    answer: "Comfort depends on the listed length, weight, closure, and the wearer's sensitivity more than the motif. Compare the dimensions with an owned pair, inspect the finish and seller during the return window, and let the earrings remain the outfit's focal point.",
-    updatedAt,
-    preferredPaths: ["/best/best-betsey-johnson-mismatched-earrings", "/guides/statement-earring-size-weight-closure-guide", "/reviews/betsey-johnson-moon-star-drop-earrings"],
+    preferredPaths: ["/reviews/catit-flower-cat-water-fountain", "/guides/cat-fountain-filter-replacement-guide"],
   },
   {
     site: "network",
@@ -983,18 +965,7 @@ export function searchOpportunityMetaDescription(opportunity?: SearchOpportunity
   return (opportunity?.metaDescription ?? opportunity?.answer ?? fallback ?? "").replace(/\s+/g, " ").trim();
 }
 
-export function effectiveContentUpdatedAt(contentUpdatedAt?: string, opportunityUpdatedAt?: string) {
-  const timestamp = (value?: string) => {
-    if (!value) return undefined;
-    const parsed = new Date(`${value} 00:00:00 UTC`).getTime();
-    return Number.isNaN(parsed) ? undefined : parsed;
-  };
-  const contentTimestamp = timestamp(contentUpdatedAt);
-  const opportunityTimestamp = timestamp(opportunityUpdatedAt);
-  if (contentTimestamp === undefined) return opportunityTimestamp === undefined ? undefined : opportunityUpdatedAt;
-  if (opportunityTimestamp === undefined) return contentUpdatedAt;
-  return opportunityTimestamp > contentTimestamp ? opportunityUpdatedAt : contentUpdatedAt;
-}
+export { effectiveContentUpdatedAt } from "./content-updated-at";
 
 export function searchOpportunityLinks(opportunity: SearchOpportunity): SearchOpportunityLink[] {
   const products = siteProducts(opportunity.site).map((item) => ({

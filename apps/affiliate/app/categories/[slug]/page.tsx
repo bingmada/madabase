@@ -6,15 +6,12 @@ import { JsonLd } from "@/components/JsonLd";
 import { AffiliateButtonGroup } from "@/components/AffiliateButton";
 import { BaseMarketEditionLinks } from "@/components/MarketExperience";
 import { ProductCard, RoundupCard } from "@/components/LayoutParts";
-import { StyleCategoryPage } from "@/components/StyleExperience";
-import { CostumeCategoryPage } from "@/components/CostumeExperience";
 import { siteGuides, siteProducts, siteRoundups, siteTools } from "@/lib/content";
 import { categoryCommerceProduct } from "@/lib/commerce-paths";
 import { breadcrumbSchema, itemListSchema, pageMetadata } from "@/lib/seo";
 import { prioritizeBySearchDemand, siteSearchDemandPriorities } from "@/lib/search-demand-priorities";
 import { getCurrentSite } from "@/lib/sites";
 import type { Guide, SiteKey } from "@/lib/types";
-import { parseCostumeCatalogFilters, type CostumeCatalogCategory } from "@/lib/costume-catalog";
 import { isFamilyDiscoveryHub } from "@/lib/search-recovery-consolidation";
 
 const categoryFrameworks: Record<SiteKey, Record<string, { focus: string; checks: string[] }>> = {
@@ -96,54 +93,6 @@ const categoryFrameworks: Record<SiteKey, Record<string, { focus: string; checks
       checks: ["Matter controller", "Thread border router", "Zigbee hub", "Local control when offline"],
     },
   },
-  style: {
-    jewelry: {
-      focus: "Statement jewelry should be visually specific without becoming physically annoying; scale, weight, closure, material claims, and outfit role matter together.",
-      checks: ["Length and face scale", "Closure and earlobe comfort", "Metal and material claims", "One clear outfit focal point"],
-    },
-    bags: {
-      focus: "An expressive bag still has to carry the day: measure the opening, strap range, interior, and actual essentials before buying the character or shape.",
-      checks: ["Exterior dimensions", "Phone and wallet fit", "Strap adjustment", "Seller and return path"],
-    },
-    hair: {
-      focus: "A decorative clip works only when its opening, spring tension, teeth, and weight match the wearer's hair volume and intended style.",
-      checks: ["Clip opening and size", "Hair volume and texture", "Teeth and spring tension", "Snag points and finish"],
-    },
-    scarves: {
-      focus: "Scarf material, dimensions, edge finish, and care determine whether it works at the neck, in hair, on a bag, or only in product photos.",
-      checks: ["Fiber claim", "Length and width", "Edge finish", "Care and color transfer"],
-    },
-    socks: {
-      focus: "Statement socks still need a usable cuff, fiber blend, wash routine, and shoe fit; the graphic is only one part of the choice.",
-      checks: ["Size range", "Fiber blend", "Cuff pressure", "Pattern after stretching"],
-    },
-    styling: {
-      focus: "The easiest expressive outfits use one deliberate focal piece, repeat one color or shape, and keep the remaining elements quieter.",
-      checks: ["Choose the focal item", "Repeat one color", "Balance visual scale", "Match the dress code"],
-    },
-  },
-  costume: {
-    costumes: {
-      focus: "Costume choice begins with the wearer, measurements, movement, event duration, included pieces, and return risk—not the character image alone.",
-      checks: ["Exact product and included pieces", "Body and garment measurements", "Movement, visibility, and layers", "Delivery and return terms"],
-    },
-    "props-animatronics": {
-      focus: "Props and animatronics need a verified route, footprint, material, power plan, venue fit, supervision plan, and storage location.",
-      checks: ["Dimensions and weight", "Power and moving parts", "Venue and weather limits", "Shipping, setup, and storage"],
-    },
-    "masks-prosthetics": {
-      focus: "Masks and prosthetics should be compared by fit, visibility, breathing, material identity, application, removal, and realistic wear time.",
-      checks: ["Head and face fit", "Visibility and ventilation", "Material and adhesive compatibility", "Application and removal time"],
-    },
-    "wigs-makeup": {
-      focus: "Wigs, facial hair, makeup, and effects work as a system: confirm fit, fiber, heat limits, skin-contact materials, touch-ups, removal, and care.",
-      checks: ["Cap and hairline fit", "Fiber and heat limits", "Compatible application products", "Removal, cleaning, and storage"],
-    },
-    "accessories-party-effects": {
-      focus: "Accessories and party effects should match the room, audience, setup time, power, cleanup, delivery window, and repeat-use plan.",
-      checks: ["Dimensions and quantity", "Power or consumables", "Indoor or outdoor fit", "Setup, cleanup, and storage"],
-    },
-  },
 };
 
 function getCategoryFramework(siteKey: SiteKey, category: string) {
@@ -205,30 +154,10 @@ export default async function CategoryPage({
     siteGuides(site.key).filter((item) => item.category === slug && !item.discoveryExcluded),
     (item) => `/guides/${item.slug}`,
   );
-  if (site.key === "costume") {
-    const categorySlug = slug as CostumeCatalogCategory;
-    const filters = parseCostumeCatalogFilters(await searchParams, { category: categorySlug });
-    const governedGuideItems = allCategoryGuides
-      .filter((guide) => guide.familySlug && isFamilyDiscoveryHub(guide))
-      .map((guide) => ({ name: guide.title, path: `/guides/${guide.slug}` }));
-    return (
-      <>
-        {governedGuideItems.length ? <JsonLd data={itemListSchema(site, `${category.name} specialized decision guides`, governedGuideItems)} /> : null}
-        <CostumeCategoryPage filters={filters} site={site} slug={categorySlug} />
-        {governedGuideItems.length ? (
-          <div className="section pt-0">
-            <div className="shell">
-              <GovernedDecisionGuideLinks guides={allCategoryGuides} />
-            </div>
-          </div>
-        ) : null}
-      </>
-    );
-  }
   const products = prioritizeBySearchDemand(
     site.key,
     siteProducts(site.key)
-      .filter((item) => item.category === slug && !item.discoveryExcluded && (site.key === "style" || item.offers.length > 0))
+      .filter((item) => item.category === slug && !item.discoveryExcluded && item.offers.length > 0)
       .reverse(),
     (item) => `/reviews/${item.slug}`,
   );
@@ -254,27 +183,6 @@ export default async function CategoryPage({
     ...tools.map((tool) => ({ name: tool.title, path: `/tools/${tool.slug}` })),
   ];
   const framework = getCategoryFramework(site.key, slug);
-  if (site.key === "style") {
-    return (
-      <>
-        <JsonLd data={breadcrumbSchema(site, [{ name: "Home", path: "/" }, { name: category.name, path: `/categories/${slug}` }])} />
-        <JsonLd data={itemListSchema(site, `${category.name} buying guides`, categoryItems)} />
-        <StyleCategoryPage
-          site={site}
-          title={category.name}
-          description={category.description}
-          products={products}
-          commerceProduct={commerceProduct}
-          roundups={roundups}
-          guides={guides}
-        />
-        <div className="style-shell pb-12">
-          <CategoryBrowser site={site.key} entries={siteSearchIndex(site.key).filter((entry) => entry.category === slug)} />
-          <BaseMarketEditionLinks site={site} basePath={`/categories/${slug}`} />
-        </div>
-      </>
-    );
-  }
 
   return (
     <main className="section">

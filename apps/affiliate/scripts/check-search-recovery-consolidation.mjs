@@ -85,7 +85,7 @@ const ledger = [];
 
 for (const family of config.families) {
   const familyRows = rows.filter((row) => row.site === family.site && row.family === family.familySlug);
-  const expectedRoles = family.site === "network" || family.site === "costume" ? 4 : 5;
+  const expectedRoles = family.site === "network" ? 4 : 5;
   if (familyRows.length !== expectedRoles) {
     errors.push(`${family.site}:${family.familySlug} has ${familyRows.length} gate rows; expected ${expectedRoles}`);
     continue;

@@ -36,7 +36,7 @@ for (const [name, kind, values, expected] of [
   examples.push({ name, status: result.status });
 }
 
-const sites = ["homeoffice", "network", "smarthome", "baby", "pet", "style", "costume"];
+const sites = ["homeoffice", "network", "smarthome", "baby", "pet",];
 const after = sites.flatMap((site) => siteGuides(site));
 assert.deepEqual(after.map((g) => `${g.site}:${g.slug}`).sort(), before.map((g) => `${g.site}:${g.slug}`).sort(), "Published guide identities stay unchanged");
 const { publicDecisionNote } = loadAffiliateTypescript("../../lib/guide-editorial-repairs.ts");
@@ -51,34 +51,6 @@ const authoredReplacements = [];
 // Each authored canonical hub has its own reviewed decisions. A future hub must
 // be added explicitly; the flag alone must never waive information preservation.
 const authoredHubContracts = new Map([
-  ["costume:masks-and-masquerade-buying-guide", {
-    terms: ["m39050", "prosthetic", "materials", "stationary", "stairs", "breathing", "glasses", "child", "final", "existing"],
-    decisions: ["mask versus skin-adhered appliance and actual fastening", "exact Diablo example with measured fit and material gaps", "wearer measurements, skin contact and pressure", "stationary vision qualification before movement with no restricted-sight stairs trial", "comfortable breathing, speech and practical removal", "glasses and complete headwear ensemble", "child age/use labels, supervision and venue limits", "independently qualified alternative rather than automatic makeup or prosthetic substitution", "final sale and exact owned/rental care", "condition, real replacement need and keep-existing"],
-  }],
-  ["costume:prosthetics-special-effects-buying-guide", {
-    terms: ["hd600-117", "fx faces", "bat", "face form", "latex", "spirit gum", "remover", "reaction", "reuse", "existing"],
-    decisions: ["exact appliance versus other face-changing products", "two same-name Bat brands/SKUs and different included/excluded packages", "actual contact materials and no known-problem trial", "matching current appliance and adhesive instructions", "exact remover before application and no forced or improvised removal", "actual openings, view, breathing and permitted fit work", "compatible color/edge system without a universal solvent recipe", "time, advance checks, reaction stop and complete removal", "actual consumables and conditional reuse without a fixed safe-wear count", "final sale, missing pieces and suitable simpler existing look"],
-  }],
-  ["costume:theatrical-face-body-makeup-buying-guide", {
-    terms: ["ck-5", "ew-5", "half-ounce", "one-ounce", "premarket", "color additives", "eye", "hygiene", "removal", "existing"],
-    decisions: ["actual color effect and application area", "finished cosmetic versus color-additive permissions without FDA endorsement", "CK-5 and EW-5 actual size and price-selection distinction", "exact base, setting and complete supporting system", "shade-specific eye/lip use restrictions", "advance checks without an allergy-free guarantee", "clean hands, containers and tools without shared or improvised sanitizing", "unmeasured lighting/coverage/transfer/longevity and realistic quantity", "exact removal, storage and received-freshness uncertainty", "separate lens, latex, adhesive and tool pathways", "final-sale selection and keep-existing simpler design"],
-  }],
-  ["costume:mascot-costumes-buying-guide", {
-    terms: ["standard", "$475", "$1,400", "$925", "handler", "removal", "heat", "fan", "without laundering", "existing"],
-    decisions: ["actual character, performer task, audience and route", "received head/jumpsuit/feet/mittens versus assumed cooling equipment", "separate current rental and purchase variants, deposit and date availability", "actual body measurements and usable head fit", "vision, hands, footwear and complete movement", "handler, communication and permitted prompt removal", "individual heat/rest plan without universal minutes", "only documented powered accessories", "final sale, rental permission and exact no-laundering example", "transport, storage, successor uncertainty and keep-existing"],
-  }],
-  ["costume:historical-theatrical-costumes-buying-guide", {
-    terms: ["reconstruction", "stylized", "understructure", "blocking", "changes", "lighting", "permission", "final", "polar bear", "existing"],
-    decisions: ["agreed reconstruction versus stylized or theatrical character brief", "identified period and visual references versus unsupported era label", "complete ensemble and permitted understructure", "performer measurements and usable movement", "closures, assisted changes and repeated performance", "actual production conditions and no protective-performance inference", "selected rental/purchase obligations and final sale", "permission and material limits before alteration", "exact care, continuity, repair and storage", "positive period-garment relevance versus generic theatrical mascot copy and keep-existing"],
-  }],
-  ["costume:adult-costumes-buying-guide", {
-    terms: ["adult", "measurements", "chart", "included", "restroom", "visibility", "layers", "final", "rent", "existing"],
-    decisions: ["actual event character and owned-clothing alternative", "current wearer and exact garment chart", "complete package and only required extras", "usable sitting, walking, shoes and restroom access", "actual headwear and separately qualified optional cosmetics", "weather and intended underlayers", "selected rental/purchase and final-sale conditions", "real destination/date and preparation window", "permission, exact component care and received condition", "positive age/variant evidence, conflict/unknown stop and keep-existing"],
-  }],
-  ["costume:child-costumes-buying-guide", {
-    terms: ["current", "growth", "hems", "shoes", "breathing", "age", "battery", "supervision", "adult mascot", "existing"],
-    decisions: ["actual child, willingness, activity and appropriate supervision", "current chart/layers versus blanket growth oversizing", "hems, usable movement and suitable shoes", "actual view, breathing, headwear and practical removal", "age/use labels, loose pieces and no guessed breakaway retrofit", "actual material restrictions and flame resistance versus fireproofing", "route visibility and only documented powered pieces", "supervision, venue and conditions", "exact child variant, final sale and no adult-mascot fallback", "permitted care, growth reassessment and keep-existing dress-up"],
-  }],
   ["pet:automatic-aquarium-feeders-setup-and-daily-workflow", {
     terms: ["cy-109", "cy-019", "15", "outlet", "flakes", "monday then wednesday", "not waterproof", "adapter-input", "carer", "existing"],
     decisions: ["compartment tray versus reservoir drum", "actual animal ration versus seller compartment capacity", "15 meals and empty outlet position", "clock and enabled timers versus rounds and consumed compartments", "skipped-day interval examples versus daily setting", "received mounting diagram, lid and dry outlet path", "exact power and component-care requirements", "ordinary scheduled release and actual food access", "competent human care and no unattended-duration guarantee", "damp food, fault, service, successor uncertainty and keep-existing"],
@@ -86,10 +58,6 @@ const authoredHubContracts = new Map([
   ["pet:aquarium-water-monitors-setup-and-daily-workflow", {
     terms: ["ky-ygjcq-s01us", "derived", "ammonia", "nitrite", "nitrate", "dissolved-oxygen", "pool", "cl", "reference", "notification", "existing"],
     decisions: ["actual species/system water questions", "sensed inputs versus legitimate derived values", "ORP versus direct nitrogen-compound tests", "selected aquarium SKU versus mismatched pool original", "exact probe, installation, power and exposure", "matched calibration and independent reference checks", "units, conversion and compensation", "whole notification and response path without harmful chemistry tests", "exact probe, consumable, care and service cost", "abnormal readings, appropriate help and keep-existing"],
-  }],
-  ["costume:high-end-costumes-buying-guide", {
-    terms: ["rent", "buy", "$150", "$1,200", "$250", "final", "measurement", "alteration", "flame", "launder", "existing"],
-    decisions: ["actual event and repeat-use job", "selected rental versus purchase price and deposit", "final sale and no routine fitting return", "exact chart and comfortable usable movement", "actual construction/material claims and included pieces", "permission before irreversible alteration or incompatible products", "visibility, venue, comfort and no fireproof inference", "selected destination/date, pickup and rental return obligations", "exact garment care versus rental no-laundering example", "family-qualified catalog or keep-existing"],
   }],
   ["pet:interactive-puzzle-feeders-buying-guide", {
     terms: ["280ml", "potaroma-d1-ddgwj", "remote accessory", "dry food", "daily intake", "supervis", "charging", "electronics", "meal", "existing"],

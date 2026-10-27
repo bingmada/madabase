@@ -30,8 +30,6 @@ const siteHosts = {
   homeoffice: "homeoffice.madabase.com",
   baby: "baby.madabase.com",
   pet: "pets.madabase.com",
-  style: "style.madabase.com",
-  costume: "costumes.madabase.com",
 };
 const pathPrefixes = { product: "reviews", guide: "guides", roundup: "best" };
 

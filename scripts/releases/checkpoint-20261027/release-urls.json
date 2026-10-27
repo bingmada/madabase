@@ -1,0 +1,361 @@
+{
+  "affiliateChecks": [
+    {
+      "host": "baby.madabase.com",
+      "path": "/guides/travel-stroller-for-small-car-guide",
+      "canonical": "https://baby.madabase.com/guides/travel-stroller-for-small-car-guide",
+      "markers": [
+        "Travel Strollers for Small Cars: Fold, Loading and Child Fit"
+      ],
+      "batchEvidence": "source04-editorial-review-in-progress.json"
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/guides/travel-stroller-folded-size-checklist",
+      "canonical": "https://baby.madabase.com/guides/travel-stroller-folded-size-checklist",
+      "markers": [
+        "Stroller Folded Size Checklist: Measure the Package and Opening"
+      ],
+      "batchEvidence": "source04-editorial-review-in-progress.json"
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/guides/baby-monitor-subscription-and-privacy-checklist",
+      "canonical": "https://baby.madabase.com/guides/baby-monitor-subscription-and-privacy-checklist",
+      "markers": [
+        "Baby Monitor Subscriptions: Live View, History and Privacy"
+      ],
+      "batchEvidence": "source04-editorial-review-in-progress.json"
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/guides/diaper-pail-replacement-bag-annual-cost-guide",
+      "canonical": "https://baby.madabase.com/guides/diaper-pail-replacement-bag-annual-cost-guide",
+      "markers": [
+        "Diaper Pail Bag Cost: Count Real Refills, Not Diaper Claims"
+      ],
+      "batchEvidence": "source04-editorial-review-in-progress.json"
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/guides/travel-bottle-warmer-heating-cleaning-battery-guide",
+      "canonical": "https://baby.madabase.com/guides/travel-bottle-warmer-heating-cleaning-battery-guide",
+      "markers": [
+        "Portable Bottle Warmers: Milk, Cleaning and Adapter Checks"
+      ],
+      "batchEvidence": "source04-editorial-review-in-progress.json"
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/guides/automatic-feeder-buying-guide",
+      "canonical": "https://pets.madabase.com/guides/automatic-feeder-buying-guide",
+      "markers": [
+        "Automatic Pet Feeders: Food Fit, Portions and Backup Checks"
+      ],
+      "batchEvidence": "source04-editorial-review-in-progress.json"
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/reviews/ubbi-steel-diaper-pail",
+      "canonical": "https://baby.madabase.com/reviews/ubbi-steel-diaper-pail",
+      "markers": [
+        "Ubbi Steel Diaper Pail Guide: Bag Cost & Cleaning"
+      ],
+      "batchEvidence": "source04-editorial-review-in-progress.json"
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/reviews/momcozy-mw05-portable-milk-warmer",
+      "canonical": "https://baby.madabase.com/reviews/momcozy-mw05-portable-milk-warmer",
+      "markers": [
+        "Momcozy MW05 Guide: Travel Heating, Cleaning & Safety"
+      ],
+      "batchEvidence": "source04-editorial-review-in-progress.json"
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/reviews/baby-jogger-city-tour-2-stroller",
+      "canonical": "https://baby.madabase.com/reviews/baby-jogger-city-tour-2-stroller",
+      "markers": [
+        "Baby Jogger City Tour 2: Fold, Eco Version and Fit Checks"
+      ],
+      "batchEvidence": "source04-editorial-review-in-progress.json"
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/reviews/summer-3dlite-convenience-stroller",
+      "canonical": "https://baby.madabase.com/reviews/summer-3dlite-convenience-stroller",
+      "markers": [
+        "Summer 3Dlite: Model, Child Fit and Fold Checks"
+      ],
+      "batchEvidence": "source04-editorial-review-in-progress.json"
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/reviews/infant-optics-dxr-8-pro",
+      "canonical": "https://baby.madabase.com/reviews/infant-optics-dxr-8-pro",
+      "markers": [
+        "Infant Optics DXR-8 Pro Guide: Range, Cameras & Safe Placement"
+      ],
+      "batchEvidence": "source04-editorial-review-in-progress.json"
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/reviews/nanit-pro-smart-baby-monitor",
+      "canonical": "https://baby.madabase.com/reviews/nanit-pro-smart-baby-monitor",
+      "markers": [
+        "Nanit Essentials Monitor Guide: Floor Stand, Plan & Bundle"
+      ],
+      "batchEvidence": "source04-editorial-review-in-progress.json"
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/reviews/petlibro-granary-automatic-cat-feeder",
+      "canonical": "https://pets.madabase.com/reviews/petlibro-granary-automatic-cat-feeder",
+      "markers": [
+        "PETLIBRO Granary Smart Feeder Guide: Portions, Wi-Fi & Backup Power"
+      ],
+      "batchEvidence": "source04-editorial-review-in-progress.json"
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/reviews/petlibro-one-rfid-smart-feeder",
+      "canonical": "https://pets.madabase.com/reviews/petlibro-one-rfid-smart-feeder",
+      "markers": [
+        "PETLIBRO One RFID Feeder Guide: Collar Tag, Portions & Multi-Cat Fit"
+      ],
+      "batchEvidence": "source04-editorial-review-in-progress.json"
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/best/best-travel-strollers",
+      "canonical": "https://baby.madabase.com/best/best-travel-strollers",
+      "markers": [
+        "Travel Strollers: Compare Fold, Child Fit and Loading"
+      ],
+      "batchEvidence": "source04-editorial-review-in-progress.json"
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/best/best-baby-monitors-for-apartments",
+      "canonical": "https://baby.madabase.com/best/best-baby-monitors-for-apartments",
+      "markers": [
+        "Baby Monitors for Apartments: Parent Unit or Wi-Fi?"
+      ],
+      "batchEvidence": "source04-editorial-review-in-progress.json"
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/best/best-automatic-cat-feeders",
+      "canonical": "https://pets.madabase.com/best/best-automatic-cat-feeders",
+      "markers": [
+        "Automatic Cat Feeders: Scheduled Meals or RFID Access?"
+      ],
+      "batchEvidence": "source04-editorial-review-in-progress.json"
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/guides/pet-camera-without-too-many-subscriptions",
+      "canonical": "https://pets.madabase.com/guides/pet-camera-without-too-many-subscriptions",
+      "markers": [
+        "Pet Camera Subscription Costs: Activation, Storage and Alerts"
+      ],
+      "batchEvidence": "source05-editorial-review-in-progress.json"
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/guides/cat-water-fountain-buying-guide",
+      "canonical": "https://pets.madabase.com/guides/cat-water-fountain-buying-guide",
+      "markers": [
+        "Cat Water Fountain Buying Guide: Cleaning, Filters and Fit"
+      ],
+      "batchEvidence": "source05-editorial-review-in-progress.json"
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/guides/dog-bed-for-small-apartment-guide",
+      "canonical": "https://pets.madabase.com/guides/dog-bed-for-small-apartment-guide",
+      "markers": [
+        "Dog Bed for a Small Apartment: Sleeping Area, Footprint and Care"
+      ],
+      "batchEvidence": "source05-editorial-review-in-progress.json"
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/guides/pet-camera-privacy-and-placement-guide",
+      "canonical": "https://pets.madabase.com/guides/pet-camera-privacy-and-placement-guide",
+      "markers": [
+        "Pet Camera Privacy and Placement: Accounts, Recording and Coverage"
+      ],
+      "batchEvidence": "source05-editorial-review-in-progress.json"
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/guides/cat-fountain-filter-replacement-guide",
+      "canonical": "https://pets.madabase.com/guides/cat-fountain-filter-replacement-guide",
+      "markers": [
+        "Cat Fountain Filter Replacement: Exact Fit, Cleaning and Cost"
+      ],
+      "batchEvidence": "source05-editorial-review-in-progress.json"
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/guides/pet-grooming-vacuum-noise-coat-cleaning-guide",
+      "canonical": "https://pets.madabase.com/guides/pet-grooming-vacuum-noise-coat-cleaning-guide",
+      "markers": [
+        "Pet Grooming Vacuum Guide: Noise, Coat Fit and Filter Care"
+      ],
+      "batchEvidence": "source05-editorial-review-in-progress.json"
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/reviews/neakasa-p1-pro-pet-grooming-vacuum",
+      "canonical": "https://pets.madabase.com/reviews/neakasa-p1-pro-pet-grooming-vacuum",
+      "markers": [
+        "Neakasa P1 Pro Guide: Noise, Coat Fit & Cleaning"
+      ],
+      "batchEvidence": "source05-editorial-review-in-progress.json"
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/reviews/furbo-360-dog-camera",
+      "canonical": "https://pets.madabase.com/reviews/furbo-360-dog-camera",
+      "markers": [
+        "Is Furbo Free? 360 Dog Camera Plans and Standalone Limits"
+      ],
+      "batchEvidence": "source05-editorial-review-in-progress.json"
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/reviews/wyze-cam-pan-v3-pet-camera",
+      "canonical": "https://pets.madabase.com/reviews/wyze-cam-pan-v3-pet-camera",
+      "markers": [
+        "Wyze Cam Pan v3: Local Storage, Privacy and Listing Hold"
+      ],
+      "batchEvidence": "source05-editorial-review-in-progress.json"
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/reviews/petfusion-ultimate-dog-bed",
+      "canonical": "https://pets.madabase.com/reviews/petfusion-ultimate-dog-bed",
+      "markers": [
+        "PetFusion Ultimate Dog Bed Guide: Size, Foam & Cover Checks"
+      ],
+      "batchEvidence": "source05-editorial-review-in-progress.json"
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/reviews/chomchom-roller-pet-hair-remover",
+      "canonical": "https://pets.madabase.com/reviews/chomchom-roller-pet-hair-remover",
+      "markers": [
+        "ChomChom Black Classic: Surface Fit and Version Checks"
+      ],
+      "batchEvidence": "source05-editorial-review-in-progress.json"
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/reviews/catit-flower-cat-water-fountain",
+      "canonical": "https://pets.madabase.com/reviews/catit-flower-cat-water-fountain",
+      "markers": [
+        "Catit Flower Fountain Guide: 3L Capacity, Filters & Cleaning"
+      ],
+      "batchEvidence": "source05-editorial-review-in-progress.json"
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/best/best-pet-cameras-for-apartments",
+      "canonical": "https://pets.madabase.com/best/best-pet-cameras-for-apartments",
+      "markers": [
+        "Pet Cameras for Apartments: Basic Check-ins or Treat Interaction?"
+      ],
+      "batchEvidence": "source05-editorial-review-in-progress.json"
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/best/best-dog-beds-and-comfort-upgrades",
+      "canonical": "https://pets.madabase.com/best/best-dog-beds-and-comfort-upgrades",
+      "markers": [
+        "Dog Bed Fit and Fabric Cleanup: Two Different Decisions"
+      ],
+      "batchEvidence": "source05-editorial-review-in-progress.json"
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/best/furbo-360-vs-wyze-cam-pan-v3-for-pets",
+      "canonical": "https://pets.madabase.com/best/furbo-360-vs-wyze-cam-pan-v3-for-pets",
+      "markers": [
+        "Furbo 360 vs Wyze Cam Pan v3: Plans, Storage and Model Checks"
+      ],
+      "batchEvidence": "source05-editorial-review-in-progress.json"
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/guides/pet-gps-tracker-subscription-cost-coverage-guide",
+      "canonical": "https://pets.madabase.com/guides/pet-gps-tracker-subscription-cost-coverage-guide",
+      "markers": [
+        "Pet GPS Tracker Cost: Subscription, Coverage and DOG 6 Fit"
+      ],
+      "batchEvidence": "source06-editorial-review-in-progress.json"
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/guides/automatic-litter-box-accessories-cost-guide",
+      "canonical": "https://pets.madabase.com/guides/automatic-litter-box-accessories-cost-guide",
+      "markers": [
+        "Automatic Litter Box Accessories: What to Budget and Skip"
+      ],
+      "batchEvidence": "source06-editorial-review-in-progress.json"
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/reviews/tractive-dog-6-gps-tracker",
+      "canonical": "https://pets.madabase.com/reviews/tractive-dog-6-gps-tracker",
+      "markers": [
+        "Tractive DOG 6: Subscription, Coverage and Battery Checks"
+      ],
+      "batchEvidence": "source06-editorial-review-in-progress.json"
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/reviews/neakasa-m1-plus-self-cleaning-litter-box",
+      "canonical": "https://pets.madabase.com/reviews/neakasa-m1-plus-self-cleaning-litter-box",
+      "markers": [
+        "Neakasa M1 Plus: Size, Version and Cat Fit Checks"
+      ],
+      "batchEvidence": "source06-editorial-review-in-progress.json"
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/reviews/petkit-puramax-2-self-cleaning-litter-box",
+      "canonical": "https://pets.madabase.com/reviews/petkit-puramax-2-self-cleaning-litter-box",
+      "markers": [
+        "PETKIT PuraMax 2: Cat Limits, Bundles and Cleaning Checks"
+      ],
+      "batchEvidence": "source06-editorial-review-in-progress.json"
+    }
+  ],
+  "mainChecks": [
+    {
+      "host": "madabase.com",
+      "path": "/",
+      "canonical": "https://madabase.com",
+      "markers": [
+        "focused publications"
+      ]
+    },
+    {
+      "host": "madabase.com",
+      "path": "/about",
+      "markers": [
+        "Madabase"
+      ]
+    },
+    {
+      "host": "madabase.com",
+      "path": "/research",
+      "markers": [
+        "What changed"
+      ]
+    }
+  ]
+}

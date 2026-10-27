@@ -39,8 +39,6 @@ const siteHosts = {
   baby: "baby.madabase.com",
   network: "network.madabase.com",
   smarthome: "smarthome.madabase.com",
-  style: "style.madabase.com",
-  costume: "costumes.madabase.com",
 };
 const productFactoryNames = new Set(["catalogProduct", "expandedProduct", "exactProduct"]);
 const guideFactoryNames = new Set(["guide", "pilotGuide", "pilot3Guide"]);
@@ -159,7 +157,6 @@ function defaultProductTitle(site, name) {
     baby: "Guide: Age, Fit & Use Checks",
     network: "Guide: Specs, Compatibility & Setup",
     smarthome: "Guide: Compatibility, Wiring & Setup",
-    style: "Guide: Size, Materials & Outfit Fit",
   }[site];
   const detailedTitle = `${name} ${suffix}`;
   if (detailedTitle.length <= 72) return detailedTitle;
@@ -803,7 +800,6 @@ function duplicateCandidates(entry) {
 }
 
 function recoveryDecision(entry, duplicates) {
-  if (entry.site === "style") return "maintenance-hold";
   if (entry.age !== undefined && entry.age <= 7) return "observe-day-7";
   if (entry.age !== undefined && entry.age <= 30) return "observe-day-30";
   if (duplicates.length) return "duplicate-intent-review";
@@ -943,7 +939,7 @@ const lines = [
   "| --- | ---: | ---: | ---: | ---: |",
   ...Object.keys(siteHosts).map((site) => {
     const registryPages = portfolio.filter((entry) => entry.site === site);
-    const standalone = site === "costume" ? standaloneEditorialRoutes : 0;
+    const standalone = 0;
     return `| ${site} | ${registryPages.length} | ${registryPages.filter((entry) => !entry.sitemapExcluded).length + standalone} | ${registryPages.filter((entry) => entry.metrics).length} | ${registryPages.filter((entry) => !entry.metrics).length} |`;
   }),
   "",

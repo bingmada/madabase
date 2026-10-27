@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 880" role="img" aria-labelledby="title desc">
+<style>text{font-family:Arial,sans-serif;fill:#153d39}.title{font-size:45px;font-weight:700}.sub{font-size:23px;fill:#55716c}.label{font-size:26px;font-weight:700}.small{font-size:22px}.line{fill:none;stroke:#285e57;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.muted{fill:#dcece5;stroke:#5f8b7e;stroke-width:4}.tag{font-size:20px;letter-spacing:2px;font-weight:700;fill:#53746c}</style>
+<rect width="1440" height="880" fill="#f5f7ed"/><circle cx="1370" cy="20" r="260" fill="#e4eddb"/>
+<title id="title">A camera has three separate access paths</title><desc id="desc">A room camera points toward a pet resting area. Three labelled paths separate live viewing, local card recordings, and cloud plan checks.</desc>
+<text x="70" y="95" class="title">Choose the recording path</text><text x="70" y="140" class="sub">Live view, local storage and cloud services need separate checks.</text>
+<rect x="70" y="210" width="650" height="535" rx="28" fill="#fff"/>
+<path d="M125 640H650M175 640V390L365 280L590 390V640" class="line"/>
+<rect x="310" y="480" width="250" height="150" rx="35" class="muted"/>
+<path d="M350 560Q360 520 405 538L430 554Q464 548 476 570M370 580H480" class="line"/>
+<circle cx="360" cy="546" r="8" fill="#285e57"/>
+<rect x="155" y="425" width="105" height="100" rx="28" class="muted"/><circle cx="208" cy="466" r="22" class="line"/><path d="M208 525V565M175 565H242M260 465L320 435M260 485L310 520" class="line"/>
+<text x="130" y="695" class="small">Check the useful area and blind spots</text>
+<rect x="770" y="210" width="600" height="155" rx="24" fill="#e0ece7"/><circle cx="825" cy="266" r="20" fill="#d49d4b"/>
+<text x="870" y="267" class="label">Live view</text><text x="870" y="309" class="small">Account • network • access</text>
+<rect x="770" y="395" width="600" height="155" rx="24" fill="#e0ece7"/><path d="M809 435H834V470H809Z" class="line"/>
+<text x="870" y="452" class="label">Local recordings</text><text x="870" y="494" class="small">Card • playback • export</text>
+<rect x="770" y="580" width="600" height="165" rx="24" fill="#e0ece7"/><path d="M803 638Q793 614 816 610Q836 595 846 619Q863 621 850 640Z" class="line"/>
+<text x="870" y="638" class="label">Cloud services</text><text x="870" y="680" class="small">Events • retention • plan terms</text>
+<text x="70" y="820" class="tag">MADABASE · EDITORIAL DIAGRAM · NOT A PRODUCT PHOTOGRAPH</text></svg>

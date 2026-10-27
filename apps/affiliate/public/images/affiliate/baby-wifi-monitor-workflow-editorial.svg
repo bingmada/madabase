@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+ <title id="title">Wi-Fi camera and phone app</title>
+ <desc id="desc">An editorial workflow illustration, not an exact Nanit bundle. Account access, subscription features and outage behavior need separate checks.</desc>
+ <rect width="1200" height="900" rx="32" fill="#f2eadf"/>
+ <text x="80" y="115" font-family="Arial,sans-serif" font-size="36" font-weight="700" fill="#6c4e2a">WI-FI CAMERA + APP</text>
+ <rect x="80" y="170" width="1040" height="520" rx="36" fill="#fff"/>
+ <g fill="none" stroke="#304d4d" stroke-width="16">
+  <rect x="145" y="300" width="180" height="170" rx="42" fill="#e2eeeb"/>
+  <circle cx="235" cy="375" r="38"/>
+  <path d="M235 470v75m-60 0h120M490 420h220v85H490zM520 420v-80m160 80v-80" fill="#e2eeeb"/>
+  <path d="M550 280q50-45 100 0m-77 33q27-24 54 0M365 420h70m-24-24 24 24-24 24M755 420h65m-24-24 24 24-24 24"/>
+  <rect x="875" y="255" width="155" height="300" rx="25" fill="#e2eeeb"/>
+  <path d="M905 305h95v175h-95zM930 520h45"/>
+ </g>
+ <g font-family="Arial,sans-serif" font-size="34" text-anchor="middle" fill="#253a37">
+  <text x="235" y="625">Camera</text><text x="600" y="625">Wi-Fi</text><text x="950" y="625">Phone app</text>
+ </g>
+ <text x="80" y="770" font-family="Arial,sans-serif" font-size="38" font-weight="700" fill="#253a37">Check access, plans + outage limits</text>
+ <text x="80" y="835" font-family="Arial,sans-serif" font-size="29" fill="#62675d">Workflow illustration · not a bundle or feature guarantee</text>
+</svg>

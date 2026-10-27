@@ -136,6 +136,12 @@ export function guideCommerceProduct(site: SiteKey, guide: Guide) {
 }
 
 export function reviewCommerceProduct(site: SiteKey, product: Product) {
+  if (product.purchaseAlternatives !== undefined) {
+    return firstPurchasable([
+      product,
+      ...product.purchaseAlternatives.map((slug) => findCommerceProduct(site, slug)),
+    ]);
+  }
   const containingRoundups = siteProductsFromContainingRoundups(site, product.slug);
   return firstPurchasable([
     product,
@@ -154,6 +160,7 @@ function siteProductsFromContainingRoundups(site: SiteKey, productSlug: string) 
 }
 
 export function roundupCommerceProduct(site: SiteKey, roundup: Roundup) {
+  if (roundup.purchaseFlow === "task-links") return;
   return firstPurchasable(roundup.productSlugs.map((slug) => findProduct(site, slug)))
     ?? explicitRoundupAlternative(site, roundup);
 }

@@ -1,49 +1,66 @@
-# Low-resource standalone releases
+# Combined release for the retained publications
 
-All five Next.js workspaces can produce an isolated standalone archive. Generated archives are intentionally ignored by Git: commit the configuration and packaging script, then build and upload the archive through the release pipeline.
+The retained applications are `apps/main` and `apps/affiliate`. Affiliate serves
+Homeoffice, Baby, Network, Smarthome and Pets in one host-aware process.
 
-## Build one application
+On October 27 the owner authorized publishing the current accepted checkpoint
+(SOURCE-04/05/06 plus five-site retirement) before continuing later batches.
+Keep unmodified BODY-01 baselines and unresolved merchant work separate from accepted edits.
+SOURCE-03 is already live at
+`7db7935277c7608342a2a82695d77ac86905fa61`; do not publish it again as a separate release.
+
+## Prepare and deploy the final fixed version
+
+Use the existing Git workflow: commit the accepted source, push it, and have the
+server fetch and select that exact commit. Do not deploy an unpinned moving branch
+or overwrite a running checkout. Inspect the actual server service and proxy
+configuration first; the repository Docker/nginx examples are not that configuration.
+
+Build the two standalone packages sequentially with Node 20:
 
 ```bash
-npm run build:release:main
-npm run build:release:web
-npm run build:release:test
 npm run build:release:affiliate
-npm run build:release:wellness
+npm run build:release:main
 ```
 
-Build every application sequentially, rather than concurrently, with:
+Each command creates `apps/<name>/.release/<name>-runtime.tgz`. Packages contain the
+traced runtime, static assets and public files. Secrets stay in the existing server
+environment. Do not run `npm install` or `next build` on the low-memory server.
 
-```bash
-npm run build:release:all
-```
+Record the commit, build IDs and archive hashes. Stage each package in a new fixed
+release directory, verify it on a candidate port, and switch the actual existing
+service only after those checks pass. Preserve prior static assets for cached HTML
+and the active publications' rollback resources. If candidate checks fail, leave the
+current version serving traffic. Validate exact public canonical URLs after the
+switch, including shopping identities, isolated QA statistics, service health and
+cache freshness; origin-only checks do not establish public cache freshness.
+Record the release receipt and the already-authorized search update notifications.
 
-Each command writes `apps/<name>/.release/<name>-runtime.tgz`. Release builds use `.next-release`, so they do not overwrite a running development server's `.next` directory. Archives contain traced runtime dependencies, `.next/static`, `public/`, and—where present—the runtime-read `content/` directory. They exclude build caches, application source, and development dependencies.
+## Retire Tools, Test, Style, Wellness and Costumes
 
-## Deploy
+Execute production retirement with the owner-authorized current checkpoint release.
+Retarget all retired hosts away from their old services. Return HTTP 410 for all
+former pages, APIs, assets and sitemaps. Keep `/robots.txt` crawlable without a
+sitemap so crawlers can see the removal. Do not redirect unrelated retired pages
+to the Main homepage. Remove old root `/en`, `/zh` and `/tools` proxy redirects;
+the new Main middleware returns 410 for these legacy Tools/Test paths.
 
-Upload one archive and extract it into that application's fixed server release directory. The package already contains `start.mjs`, the complete traced runtime, runtime-read content, and `ecosystem.config.cjs`; the server does not run `npm install` or `next build`.
+Stop and remove the old Tools, Test and Wellness services and their exclusive files.
+Style and Costumes shared Affiliate; their exclusive content, assets, catalog,
+variant and seasonal routes are removed from its new package. Remove old entries
+from actual proxy, service, deployment and sitemap configuration after inspecting it.
 
-The one-time PM2 migration for each application is:
+The database cleanup manifest is
+`apps/affiliate/reports/quality-remediation-2026-10-22/retired-sites-database-cleanup-plan.json`.
+It is a plan, not an executed transaction. Inspect the actual schema, foreign keys,
+exact ownership and preview row counts before preparing the bounded transaction.
+Remove verified retired-site records and obsolete Tools/Test account, favorite,
+usage, credit, test and referral tables. Preserve retained-site commerce, shared
+merchant infrastructure and financial records belonging to other publications.
+Abracadabra and Avidlove records require exclusive-ownership verification; no
+blanket merchant cascade may delete Baby CJ products, links, clicks or commissions.
+Record executed conditions, affected counts and post-checks in the final receipt.
 
-```bash
-cd <fixed-application-release-directory>
-pm2 start ecosystem.config.cjs
-pm2 save
-```
-
-After that, every release is exactly: build locally, upload and extract over the same fixed directory, then restart the existing process:
-
-```bash
-pm2 restart madabase-main
-pm2 restart madabase-tools
-pm2 restart madabase-test
-pm2 restart madabase-affiliate
-pm2 restart madabase-wellness
-```
-
-Restart only the application whose archive changed. PM2 keeps the server-side environment, including `DATABASE_URL` and secrets. Keep a copy of the previous archive for rollback and verify the restarted application's routes, APIs, assets, database access, canonicals, and proxy response.
-
-The affiliate application remains one host-aware process for all affiliate subdomains. Database-backed applications still receive `DATABASE_URL` and other secrets from the PM2/server environment; secrets are never embedded in the archive or committed to Git.
-
-The existing `npm run build` and `next start` commands remain unchanged. Standalone mode is enabled only by the `build:release` commands.
+Do not create a new archive of the removed sites. Keep only the rollback resources
+needed by the retained publications and the audit evidence distinguishing planned,
+locally verified and actually executed work.

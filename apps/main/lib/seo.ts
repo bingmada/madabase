@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const siteUrl = (process.env.NEXT_PUBLIC_MAIN_SITE_URL ?? "https://madabase.com").replace(/\/$/, "");
 export const siteName = "Madabase";
-export const siteDescription = "Independent buying research for connected homes, better workspaces, family care, pet care, and personal style.";
+export const siteDescription = "Independent buying research for connected homes, better workspaces, family care, pet care.";
 
 export function pageMetadata(title: string, description: string, path = "/"): Metadata {
   const canonical = `${siteUrl}${path === "/" ? "" : path}`;

@@ -25,12 +25,7 @@ export function SiteChrome({ site, children }: { site: SiteConfig; children: Rea
       <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-white/95 backdrop-blur">
         <div className="shell flex min-h-16 items-center justify-between gap-4 py-3">
           <Link className="shrink-0 whitespace-nowrap text-base font-black text-[var(--brand-strong)] sm:text-lg" href="/">
-            {site.key === "costume" ? (
-              <>
-                <span className="sm:hidden">Madabase Halloween</span>
-                <span className="hidden sm:inline">{site.name}</span>
-              </>
-            ) : site.name}
+            {site.name}
           </Link>
           <nav className="hidden min-w-0 flex-nowrap items-center justify-end gap-x-3 whitespace-nowrap text-xs font-semibold lg:flex lg:gap-x-4 lg:text-sm" aria-label="Primary navigation">
             <Link className="font-black hover:underline" href="/search">Search</Link>
@@ -38,20 +33,18 @@ export function SiteChrome({ site, children }: { site: SiteConfig; children: Rea
             <Link className="hidden hover:text-[var(--brand-strong)] sm:inline" href="/">
               Home
             </Link>
-            {site.key === "costume" ? <Link className="font-black text-[#a14f1c] hover:text-[var(--brand-strong)]" href="/halloween">Halloween</Link> : null}
-            {site.key === "costume" ? <Link className="hover:text-[var(--brand-strong)]" href="/halloween-ideas">Ideas & kits</Link> : null}
-            {site.key === "costume" ? <Link className="hover:text-[var(--brand-strong)]" href="/catalog">Catalog</Link> : null}
+            {null}
+            {null}
+            {null}
             {site.categories.map((category) => (
-              <Link className={site.key === "costume" ? "hidden" : "hover:text-[var(--brand-strong)]"} href={`/categories/${category.slug}`} key={category.slug}>
+              <Link className={"hover:text-[var(--brand-strong)]"} href={`/categories/${category.slug}`} key={category.slug}>
                 {category.name}
               </Link>
             ))}
             <Link className="hidden hover:text-[var(--brand-strong)] sm:inline" href="/#guides">
               Guides
             </Link>
-            {site.key === "costume" ? (
-              <Link className="hidden hover:text-[var(--brand-strong)] sm:inline" href="/premium">Premium</Link>
-            ) : (
+            {(
               <Link className="hidden hover:text-[var(--brand-strong)] sm:inline" href="/#tools">Tools</Link>
             )}
             <Link className="hidden hover:text-[var(--brand-strong)] sm:inline" href="/methodology">
@@ -68,18 +61,16 @@ export function SiteChrome({ site, children }: { site: SiteConfig; children: Rea
                 <Link className="rounded-md px-3 py-2 font-black" href="/search">Search the library</Link>
                 {site.key === "homeoffice" || site.key === "network" ? <Link className="rounded-md px-3 py-2" href="/compatibility">Compatibility & upgrades</Link> : null}
                 <Link className="rounded-md px-3 py-2 hover:bg-[var(--surface-muted)]" href="/">Home</Link>
-                {site.key === "costume" ? <Link className="rounded-md px-3 py-2 font-black text-[#a14f1c] hover:bg-[var(--surface-muted)]" href="/halloween">Halloween 2026</Link> : null}
-                {site.key === "costume" ? <Link className="rounded-md px-3 py-2 hover:bg-[var(--surface-muted)]" href="/halloween-ideas">Ideas & editorial kits</Link> : null}
-                {site.key === "costume" ? <Link className="rounded-md px-3 py-2 hover:bg-[var(--surface-muted)]" href="/catalog">Catalog</Link> : null}
+                {null}
+                {null}
+                {null}
                 {site.categories.map((category) => (
                   <Link className="rounded-md px-3 py-2 hover:bg-[var(--surface-muted)]" href={`/categories/${category.slug}`} key={category.slug}>
                     {category.name}
                   </Link>
                 ))}
                 <Link className="rounded-md px-3 py-2 hover:bg-[var(--surface-muted)]" href="/#guides">Guides</Link>
-                {site.key === "costume" ? (
-                  <Link className="rounded-md px-3 py-2 hover:bg-[var(--surface-muted)]" href="/premium">Premium & Professional</Link>
-                ) : (
+                {(
                   <Link className="rounded-md px-3 py-2 hover:bg-[var(--surface-muted)]" href="/#tools">Tools</Link>
                 )}
                 <Link className="rounded-md px-3 py-2 hover:bg-[var(--surface-muted)]" href="/methodology">Methodology</Link>
@@ -125,7 +116,6 @@ export function SiteChrome({ site, children }: { site: SiteConfig; children: Rea
             <a className="hover:text-[var(--brand-strong)]" href="https://baby.madabase.com">Baby gear</a>
             <a className="hover:text-[var(--brand-strong)]" href="https://network.madabase.com">Home network</a>
             <a className="hover:text-[var(--brand-strong)]" href="https://smarthome.madabase.com">Smart home</a>
-            <a className="hover:text-[var(--brand-strong)]" href="https://style.madabase.com">Style accessories</a>
           </nav>
         </div>
       </footer>
@@ -228,7 +218,7 @@ export function ProductCard({ product }: { product: Product }) {
   return (
     <article className="panel overflow-hidden">
       <Link className="relative block h-52 w-full" href={`/reviews/${product.slug}`}>
-        <Image className="object-cover" src={displayImage} alt={displayName} fill sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" />
+        <Image className={displayImage.endsWith(".svg") && product.imageAlt?.startsWith("Editorial ") ? "object-contain" : "object-cover"} src={displayImage} alt={product.imageAlt ?? displayName} fill sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" />
       </Link>
       <div className="p-5">
         <div>

@@ -1,6 +1,7 @@
 import type { AffiliateOffer, Product, SiteKey } from "./types";
 import { findAmazonOfferBlock } from "./amazon-offer-blocks";
 import { findAuthorizedCjProductOffer } from "./cj-offers";
+import { effectiveContentUpdatedAt } from "./content-updated-at";
 
 export const amazonTrackingIds: Partial<Record<SiteKey, string>> = {
   network: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_NETWORK ?? "madanetwork-20",
@@ -8,7 +9,6 @@ export const amazonTrackingIds: Partial<Record<SiteKey, string>> = {
   homeoffice: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_HOMEOFFICE ?? "madaoffice-20",
   baby: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_BABY ?? "madababy-20",
   pet: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_PET ?? "madapets-20",
-  style: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_STYLE ?? "madastyle-20",
 };
 
 export function amazonAsinAffiliateUrl(site: SiteKey, asin: string) {
@@ -67,15 +67,12 @@ function trackedAmazonUrl(site: SiteKey, product: Product, offer: AffiliateOffer
 }
 
 export function applySiteAffiliateTracking(product: Product): Product {
-  if (product.site === "costume") {
-    return { ...product, offers: [] };
-  }
 
   const offerBlock = findAmazonOfferBlock(product);
   if (offerBlock) {
     return {
       ...product,
-      updatedAt: offerBlock.pageUpdatedAt,
+      updatedAt: effectiveContentUpdatedAt(product.updatedAt, offerBlock.pageUpdatedAt),
       amazonDetailUrl: referencesBlockedAsin(product.amazonDetailUrl, offerBlock.asin)
         ? undefined
         : product.amazonDetailUrl,

@@ -1,7 +1,11 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { getMarketByRouteSlug } from "./lib/markets";
+import { isRetiredSite, retiredSiteResponse } from "../shared/retired-sites";
 
 export function middleware(request: NextRequest) {
+  if (isRetiredSite(request.headers)) {
+    return retiredSiteResponse(request.nextUrl.pathname, request.method);
+  }
   const routeSlug = request.nextUrl.pathname.split("/")[1];
   const market = getMarketByRouteSlug(routeSlug);
   if (!market) return NextResponse.next();
@@ -17,5 +21,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/en-gb/:path*", "/en-ca/:path*", "/de-de/:path*", "/nl-nl/:path*"],
+  matcher: ["/:path*"],
 };

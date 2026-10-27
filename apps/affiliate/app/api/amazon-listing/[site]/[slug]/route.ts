@@ -3,7 +3,7 @@ import { getFreshAmazonCreatorsListing } from "@/lib/amazon-creators";
 import { findProduct } from "@/lib/content";
 import type { AmazonMarketKey, SiteKey } from "@/lib/types";
 
-const amazonSites = new Set<SiteKey>(["network", "smarthome", "homeoffice", "baby", "pet", "style"]);
+const amazonSites = new Set<SiteKey>(["network", "smarthome", "homeoffice", "baby", "pet",]);
 const amazonMarkets = new Set<AmazonMarketKey>(["us", "gb", "ca", "de", "nl"]);
 const responseHeaders = {
   "Cache-Control": "private, no-store, max-age=0",

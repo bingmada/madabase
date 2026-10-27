@@ -497,6 +497,14 @@ export type MerchantProductImageUncheckedUpdateManyWithoutProductNestedInput = {
   deleteMany?: Prisma.MerchantProductImageScalarWhereInput | Prisma.MerchantProductImageScalarWhereInput[]
 }
 
+export type IntFieldUpdateOperationsInput = {
+  set?: number
+  increment?: number
+  decrement?: number
+  multiply?: number
+  divide?: number
+}
+
 export type MerchantProductImageCreateWithoutProductInput = {
   id?: string
   url: string

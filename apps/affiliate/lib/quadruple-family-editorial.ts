@@ -1,6 +1,6 @@
 import type { SiteKey } from "./types";
 
-export type ExpansionSite = Exclude<SiteKey, "style">;
+export type ExpansionSite = SiteKey;
 
 export type FamilyEditorialBrief = {
   job: string;
@@ -1028,76 +1028,6 @@ export const familyEditorialBriefs: Record<string, FamilyEditorialBrief> = {
     "calibrate with fresh standards, compare against a trusted manual test, place probes in stable flow, and set alert thresholds from the aquarium's normal range",
     "calibration fluid, probe cleaning and replacement, drift checks, app access, power backup, and retaining manual liquid tests",
     "the monitor estimates an unmeasured value, probes cannot be calibrated, or one alert is being trusted over livestock observation and confirmatory testing",
-  ),
-  "costume:high-end-costumes": brief(
-    "justify premium construction through exact materials, tailoring, movement, and repeat-use needs",
-    ["garment measurements and alteration allowance", "fabric, trim, lining, and closure details", "included pieces and character accuracy", "delivery, insured return, cleaning, and storage"],
-    "request or verify exact measurements, conduct a full fitting as soon as it arrives, test movement and seating, and schedule alterations before the event",
-    "alterations, specialty cleaning, garment bag or box, repairs, insured shipping, and climate-controlled storage for delicate materials",
-    "the seller cannot document materials or measurements, delivery leaves no alteration window, or the costume is priced as collectible quality without construction evidence",
-  ),
-  "costume:mascot-costumes": brief(
-    "support a performer through a timed appearance with safe vision, ventilation, movement, and handler support",
-    ["performer height and body range", "head visibility and ventilation", "entry, closures, gloves, and footwear", "venue temperature, route, cleaning, and storage volume"],
-    "run a supervised dress rehearsal, time heat breaks, assign a handler, test stairs and doors, and establish signals for immediate removal",
-    "spot cleaning, drying, fan or battery service, shape-preserving storage, transport cases, and performer-specific hygiene barriers",
-    "vision or breathing is restricted, the performer cannot exit quickly, venue heat is uncontrolled, or no trained handler and rest plan exists",
-  ),
-  "costume:historical-theatrical-costumes": brief(
-    "create a stage-readable period silhouette while distinguishing historical reference from durable performance construction",
-    ["production period and visual references", "garment measurements and understructure", "fabric, closure, and quick-change needs", "stage light, movement, alterations, cleaning, and repairs"],
-    "fit over every required underlayer, rehearse blocking and quick changes, reinforce only with compatible methods, and photograph the finished continuity look",
-    "alterations, duplicates for long runs, laundering or dry cleaning, trim repair, labeling, and storage by production and performer",
-    "historical claims are unsupported, the garment cannot survive the blocking or cleaning schedule, or fit cannot be corrected before performance",
-  ),
-  "costume:adult-costumes": brief(
-    "assemble an event-ready character look that fits the wearer's body, venue, movement, and weather",
-    ["body measurements rather than ordinary clothing size", "included and missing pieces", "sitting, walking, restroom, and visibility", "fabric, closures, delivery, returns, and venue rules"],
-    "try on every layer early, add shoes and accessories, rehearse the real event movements, and prepare a small repair and comfort kit",
-    "alterations, base layers, missing props, makeup, cleaning, repair, transport, and storing pieces that may be reused",
-    "the size chart cannot be matched, movement or breathing is restricted, required pieces will not arrive, or venue and weather make the look impractical",
-  ),
-  "costume:child-costumes": brief(
-    "create a recognizable look that preserves a child's visibility, movement, comfort, and adult supervision",
-    ["current body measurements and growth allowance", "included pieces, fasteners, and breakaway needs", "vision, breathing, walking, and warmth", "material labeling, venue rules, delivery, and returns"],
-    "fit all pieces with the intended shoes, practice stairs and sitting, remove tripping or vision obstructions, and keep an adult repair and layer plan",
-    "growth, washing, lost accessories, closures, weather layers, school or venue restrictions, and passing on or storing the costume",
-    "a mask blocks vision or breathing, hems create trips, small or sharp pieces are unsuitable, or the child is uncomfortable and cannot remove it easily",
-  ),
-  "costume:costume-wigs": brief(
-    "complete a character silhouette with a cap and fiber that can be fitted, styled, worn, and stored safely",
-    ["cap circumference and adjustment", "fiber type and heat limit", "density, length, parting, and color", "wig cap, pins, skin contact, detangling, and storage"],
-    "patch-test skin-contact products, fit the cap, style only within fiber limits, rehearse movement, and store on a stand or in a shape-preserving bag",
-    "detangling products, caps and pins, washing, drying, restyling, shedding, and storage that prevents crushing",
-    "the cap causes pain, fiber contacts flame or unsafe heat, adhesives are untested, or visibility and secure removal cannot be maintained",
-  ),
-  "costume:masks-and-masquerade": brief(
-    "change the face silhouette while preserving vision, breathing, communication, and quick removal",
-    ["head or face measurements", "eye opening, peripheral view, and ventilation", "strap, padding, and skin-contact materials", "glasses, makeup, venue, and duration"],
-    "try the mask in good light, walk and use stairs with a spotter, test speaking and removal, and limit wear time based on heat and visibility",
-    "strap replacement, padding, makeup transfer, cleaning, shape protection, and a carrying case for periods when it is removed",
-    "breathing or sight is restricted, skin-contact materials are unknown, the mask cannot be removed quickly, or venue movement requires full vision",
-  ),
-  "costume:prosthetics-special-effects": brief(
-    "create a temporary skin effect with compatible prosthetic, adhesive, color, and remover systems",
-    ["prosthetic material and skin-contact disclosure", "adhesive and remover compatibility", "application time, edge blending, and movement", "patch testing, ventilation, cleanup, and disposal"],
-    "patch-test every product in advance, rehearse the full application and removal, protect eyes and hair, and follow exact skin-contact instructions",
-    "single-use pieces, adhesives, removers, makeup, tools, touch-ups, skin recovery, and safe storage before application",
-    "materials or removal steps are unknown, irritation occurs, products approach eyes or airways contrary to instructions, or application time exceeds the event plan",
-  ),
-  "costume:theatrical-face-body-makeup": brief(
-    "build durable stage or character color using products approved for the exact skin area",
-    ["face, body, lip, or eye-area approval", "water, alcohol, cream, or grease base", "coverage, setting, transfer, and lighting", "patch test, applicators, removal, and hygiene"],
-    "patch-test, sanitize tools, rehearse color under event lighting, set only with compatible products, and complete a gentle removal trial",
-    "sponges and brushes, setting products, touch-ups, removers, staining, laundering, expiration, and avoiding cross-contamination",
-    "the product is not approved for the intended area, irritation develops, sharing cannot be hygienic, or removal would require unsafe scrubbing or solvents",
-  ),
-  "costume:props-and-animatronics": brief(
-    "add a large visual or moving scene element only when transport, guest clearance, power, weather, and storage are solved",
-    ["assembled and shipping dimensions", "power, batteries, sound, motion, and fluid", "indoor or outdoor rating and anchoring", "guest distance, trigger behavior, setup route, and off-season storage"],
-    "measure every doorway and display zone, assemble in daylight, test motion and sound under supervision, secure cords and anchors, and rehearse shutdown",
-    "batteries, motors, belts, pumps or fluid, weather covers, cleaning, repairs, transport help, and climate-safe storage volume",
-    "the route or storage is too small, moving parts contact guests, power cannot be protected, weather limits are exceeded, or supervision is unavailable",
   ),
 };
 

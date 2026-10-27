@@ -5,7 +5,6 @@ import { useRef } from "react";
 import { trackClarityAffiliateClick } from "./ClarityAnalytics";
 import { useStickyCommerceDock } from "./useStickyCommerceDock";
 import type { SiteKey } from "@/lib/types";
-import { costumeMerchantPolicyNote, costumeMerchantPolicyUrl } from "@/lib/costume-copy";
 
 export function TrackedCommerceLink({
   site,
@@ -60,12 +59,7 @@ export function TrackedCommerceLink({
     </a>
   );
 
-  const informedButton = site === "costume" ? (
-    <div className="flex max-w-md flex-col items-start gap-3" data-costume-merchant-terms="true">
-      <p className="text-xs leading-5 text-[var(--muted)]">{costumeMerchantPolicyNote} <a className="font-semibold underline" href={costumeMerchantPolicyUrl}>Read merchant policies</a>.</p>
-      {primaryButton}
-    </div>
-  ) : primaryButton;
+  const informedButton = primaryButton;
 
   if (!sticky) return informedButton;
 
@@ -95,7 +89,7 @@ export function TrackedCommerceLink({
           <div className="flex min-w-0 items-center gap-3">
             <div className="min-w-0 flex-1">
               <p className="truncate text-xs font-bold text-[var(--text)]">{productName}</p>
-              <p className="mt-0.5 text-[11px] leading-4 text-[var(--muted)]">{site === "costume" ? "Final sale · confirm rent or buy" : "Current price & availability · purchase link"}</p>
+              <p className="mt-0.5 text-[11px] leading-4 text-[var(--muted)]">{"Current price & availability · purchase link"}</p>
             </div>
             <span className="button-primary shrink-0 px-3 py-2 text-xs">
               Check price

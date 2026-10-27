@@ -31,8 +31,6 @@ export function productPageTitle(product: Product) {
     baby: "Guide: Age, Fit & Use Checks",
     network: "Guide: Specs, Compatibility & Setup",
     smarthome: "Guide: Compatibility, Wiring & Setup",
-    style: "Guide: Size, Materials & Outfit Fit",
-    costume: "Buying Guide: Fit, Use & Trade-offs",
   }[product.site]);
 
   const detailedTitle = `${product.name} ${suffix}`;

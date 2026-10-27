@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 
-const DEFAULT_SITES = ["style", "baby", "homeoffice", "pet"];
+const DEFAULT_SITES = [ "baby", "homeoffice", "pet"];
 
 function parseArgs(argv) {
   const options = {

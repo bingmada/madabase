@@ -6520,10 +6520,11 @@
   {
     "site": "baby",
     "kind": "guide",
-    "title": "Travel Stroller Guide for Small Cars and Apartments",
-    "summary": "How to compare fold size, weight, recline, basket access, and daily comfort before buying a travel stroller.",
+    "title": "Travel Strollers for Small Cars: Fold, Loading and Child Fit",
+    "summary": "Check the folded stroller, trunk opening and remaining luggage space, then compare child limits, lifting and the routes you use every day.",
     "href": "https://baby.madabase.com/guides/travel-stroller-for-small-car-guide",
-    "category": "travel"
+    "category": "travel",
+    "searchText": "Compare the exact stroller's folded dimensions with both the trunk opening and usable storage space. Include the travel bag and any parts left attached. Then check that you can load it, close the hatch and carry the other luggage. A small fold does not establish child suitability, comfortable handling or airline acceptance."
   },
   {
     "site": "baby",
@@ -6544,10 +6545,11 @@
   {
     "site": "baby",
     "kind": "guide",
-    "title": "Travel Stroller Folded Size Checklist",
-    "summary": "A practical checklist for trunk fit, hallway storage, airline assumptions, recline, and daily errand use.",
+    "title": "Stroller Folded Size Checklist: Measure the Package and Opening",
+    "summary": "Write down the exact folded configuration, all three dimensions, trunk opening and loading path before deciding whether a smaller stroller is needed.",
     "href": "https://baby.madabase.com/guides/travel-stroller-folded-size-checklist",
-    "category": "travel"
+    "category": "travel",
+    "searchText": "Measure the actual folded package's length, width and height, including the bag and parts you will leave attached. Record the narrowest opening, usable storage dimensions and the route into that space. Check both the car and home storage, then verify the real loading motion. Keep unknown measurements unresolved rather than treating a compact label as a fit result."
   },
   {
     "site": "baby",
@@ -6587,10 +6589,11 @@
   {
     "site": "baby",
     "kind": "guide",
-    "title": "Baby Monitor Subscription and Privacy Checklist",
-    "summary": "Before choosing Nanit, Infant Optics, or another monitor, separate local video, cloud history, app sharing, security, and renewal costs.",
+    "title": "Baby Monitor Subscriptions: Live View, History and Privacy",
+    "summary": "Separate the features that remain without a plan from paid history, caregiver access and renewal charges. Check the control path and account permissions too.",
     "href": "https://baby.madabase.com/guides/baby-monitor-subscription-and-privacy-checklist",
-    "category": "monitoring"
+    "category": "sleep",
+    "searchText": "It depends on the model and the feature. Nanit says its core live view, background audio and several alerts remain available without Insights, while history and analytics have separate plan limits. Check your actual camera, mounting setup, account offer and renewal terms. A subscription, Wi-Fi connection or security claim does not establish every function's outage behavior."
   },
   {
     "site": "baby",
@@ -6655,18 +6658,20 @@
   {
     "site": "baby",
     "kind": "guide",
-    "title": "Diaper Pail Replacement Bag Annual Cost Guide",
-    "summary": "Compare proprietary cassettes with standard kitchen bags using real change frequency, bag capacity, leaks, odor routine, and local prices.",
+    "title": "Diaper Pail Bag Cost: Count Real Refills, Not Diaper Claims",
+    "summary": "Calculate annual cost from actual bag changes or refill usage. Match the exact pail and pack, include delivery, and check whether replacing a working bin pays back.",
     "href": "https://baby.madabase.com/guides/diaper-pail-replacement-bag-annual-cost-guide",
-    "category": "feeding"
+    "category": "feeding",
+    "searchText": "For separate bags, multiply the delivered price per usable bag by the household's changes per week and 52. For a continuous-film cassette, use observed cassette consumption rather than assuming a fixed number of bags or trusting a maximum diaper count. Add required consumables consistently. An unknown refill yield should produce a cost range, not a precise saving or an automatic new-pail purchase."
   },
   {
     "site": "baby",
     "kind": "guide",
-    "title": "Travel Bottle Warmer Heating, Cleaning, and Battery Guide",
-    "summary": "Compare direct-contact and bottle-adapter warmers by transfer steps, cleaning, battery cycles, temperature checks, and travel conditions.",
+    "title": "Portable Bottle Warmers: Milk, Cleaning and Adapter Checks",
+    "summary": "Decide whether warming is needed, then check liquid-contact parts, the actual charging system and the time to clean and dry between feeds.",
     "href": "https://baby.madabase.com/guides/travel-bottle-warmer-heating-cleaning-battery-guide",
-    "category": "feeding"
+    "category": "feeding",
+    "searchText": "First decide whether the feed needs warming: CDC says breast milk and infant formula do not have to be warmed. If warming is wanted, check the liquid-contact parts, cleaning and drying routine, real travel volume and exact charging instructions. For MW05 packages with an adapter, resolve Momcozy's 18V-adapter warning before treating that adapter as a general USB-C charger."
   },
   {
     "site": "baby",
@@ -8356,7 +8361,7 @@
     "site": "baby",
     "kind": "product",
     "title": "Infant Optics DXR-8 PRO Baby Monitor",
-    "summary": "A dedicated baby monitor for parents who want a separate screen instead of relying on a phone app overnight.",
+    "summary": "A non-Wi-Fi parent-unit monitor reference for checking from elsewhere at home. Verify actual room coverage and safe placement; this non-SS model does not gain the newer SS model's split-screen and dual audio.",
     "href": "https://baby.madabase.com/reviews/infant-optics-dxr-8-pro",
     "category": "sleep",
     "aliases": [
@@ -8369,7 +8374,7 @@
     "site": "baby",
     "kind": "product",
     "title": "Nanit Essentials Smart Baby Monitor with Floor Stand",
-    "summary": "A current Nanit bundle with the Pro camera, floor stand, Sound + Light Machine, and a trial of the Insights Sleep Plan for app-based nursery monitoring.",
+    "summary": "A historical Nanit Essentials floor-stand bundle reference. Its exact purchase link remains paused; current camera/display choices and Insights terms do not establish this package's contents or renewal offer.",
     "href": "https://baby.madabase.com/reviews/nanit-pro-smart-baby-monitor",
     "category": "sleep",
     "aliases": [
@@ -8382,7 +8387,7 @@
     "site": "baby",
     "kind": "product",
     "title": "Baby Jogger City Tour 2 Stroller",
-    "summary": "A compact travel stroller for families who need a smaller fold without giving up everyday errand usability.",
+    "summary": "Compare this City Tour 2 reference only after matching the selected Eco Black package, the child's instructions and the actual folded loading path. A small fold does not prove car or cabin fit.",
     "href": "https://baby.madabase.com/reviews/baby-jogger-city-tour-2-stroller",
     "category": "travel",
     "aliases": [
@@ -8395,7 +8400,7 @@
     "site": "baby",
     "kind": "product",
     "title": "Summer 3Dlite Convenience Stroller",
-    "summary": "A budget-friendly lightweight stroller for errands, grandparents' cars, and simple travel needs.",
+    "summary": "A Summer/Ingenuity 3Dlite family reference with the exact ASIN purchase paused while model and manual applicability are checked. Current family pages do not establish the selected version's child limits or complete fold.",
     "href": "https://baby.madabase.com/reviews/summer-3dlite-convenience-stroller",
     "category": "travel",
     "aliases": [
@@ -8642,12 +8647,12 @@
     "site": "baby",
     "kind": "product",
     "title": "Momcozy MW05 Portable Milk Warmer",
-    "summary": "A 17-ounce battery-powered direct-contact warmer for milk or water, with separate temperature modes, USB-C charging, and a cleaning workflow that matters between feeds.",
+    "summary": "A 17-ounce direct-contact milk or water warmer whose exact charging package matters: Momcozy warns against using the included 18V adapter from affected packages with other ordinary USB-C devices.",
     "href": "https://baby.madabase.com/reviews/momcozy-mw05-portable-milk-warmer",
     "category": "feeding",
     "aliases": [
       "Momcozy",
-      "MW05",
+      "MW05; confirm the received regional version and adapter",
       "B0DKHCWJ5G"
     ]
   },
@@ -8667,16 +8672,16 @@
   {
     "site": "baby",
     "kind": "comparison",
-    "title": "Baby Monitors for Apartments",
-    "summary": "Small spaces still need clear night video, manageable alerts, and a connection style that fits your comfort level.",
+    "title": "Baby Monitors for Apartments: Parent Unit or Wi-Fi?",
+    "summary": "Compare local parent-unit and Nanit app workflows by actual room coverage, subscription features, account access and safe cord placement.",
     "href": "https://baby.madabase.com/best/best-baby-monitors-for-apartments",
     "category": "sleep"
   },
   {
     "site": "baby",
     "kind": "comparison",
-    "title": "Travel Strollers for Everyday Errands and Flights",
-    "summary": "The best travel stroller is easy to fold, light enough to carry, and still comfortable enough for real naps.",
+    "title": "Travel Strollers: Compare Fold, Child Fit and Loading",
+    "summary": "Compare City Tour 2 and Summer 3Dlite as model references, then verify the selected version, child's instructions, complete fold and real loading routine.",
     "href": "https://baby.madabase.com/best/best-travel-strollers",
     "category": "travel"
   },
@@ -8763,18 +8768,20 @@
   {
     "site": "pet",
     "kind": "guide",
-    "title": "How to Choose an Automatic Pet Feeder",
-    "summary": "A practical checklist for portion control, power backup, cleaning, and food compatibility.",
+    "title": "Automatic Pet Feeders: Food Fit, Portions and Backup Checks",
+    "summary": "Match the actual food and pet, weigh repeated portions, check the saved schedule and backup mode, and keep a person responsible for care.",
     "href": "https://pets.madabase.com/guides/automatic-feeder-buying-guide",
-    "category": "feeding"
+    "category": "feeding",
+    "searchText": "Start with the exact food, the pet's access needs and an established feeding plan. Confirm that the chosen model can dispense repeatable portions of that food, run its saved schedule in the required backup state and be cleaned as instructed. Dry-food compatibility is not evidence of superior reliability, and an app log does not prove the pet received or ate a meal. Keep a human care and fault-response plan."
   },
   {
     "site": "pet",
     "kind": "guide",
-    "title": "How to Choose a Pet Camera Without Overpaying for Alerts",
-    "summary": "A practical guide to live view, treat tossing, subscriptions, storage, and privacy before buying a pet camera.",
+    "title": "Pet Camera Subscription Costs: Activation, Storage and Alerts",
+    "summary": "Separate hardware activation, free live view, cloud history and recurring plans before choosing a pet camera.",
     "href": "https://pets.madabase.com/guides/pet-camera-without-too-many-subscriptions",
-    "category": "home-care"
+    "category": "home-care",
+    "searchText": "Some can, but the exact hardware and purchase contract decide. Furbo Standalone basic features differ from its Subscription Required offers. Wyze local card recording is separate from paid cloud events and AI. List the functions you need, identify the exact model and add the billed plan term before comparing costs; do not assume every camera becomes free after cancellation."
   },
   {
     "site": "pet",
@@ -8787,18 +8794,20 @@
   {
     "site": "pet",
     "kind": "guide",
-    "title": "Cat Water Fountain Buying Guide",
-    "summary": "What to check before buying a cat fountain: capacity, filters, pump cleaning, materials, noise, and backup bowls.",
+    "title": "Cat Water Fountain Buying Guide: Cleaning, Filters and Fit",
+    "summary": "Compare pump access, exact filter compatibility, placement and the cat’s drinking routine before reservoir size.",
     "href": "https://pets.madabase.com/guides/cat-water-fountain-buying-guide",
-    "category": "feeding"
+    "category": "feeding",
+    "searchText": "Choose a fountain only when you can clean its water path, source its exact filters and monitor ordinary use. The original Catit Flower 43742 is a 3 L reference, not a promise of days without care. Confirm the selected version, accessible pump and suitable power location, keep a fresh-water bowl available, and retain a working bowl routine when a fountain adds no benefit."
   },
   {
     "site": "pet",
     "kind": "guide",
-    "title": "How to Pick a Dog Bed for a Small Apartment",
-    "summary": "Choose a bed by sleep position, washable covers, floor space, support, and how much hair the fabric traps.",
+    "title": "Dog Bed for a Small Apartment: Sleeping Area, Footprint and Care",
+    "summary": "Measure the usable sleeping area, room clearance and washable layers before choosing a compact dog bed.",
     "href": "https://pets.madabase.com/guides/dog-bed-for-small-apartment-guide",
-    "category": "comfort"
+    "category": "comfort",
+    "searchText": "Measure the dog’s ordinary sleeping shape and the bed’s usable inner area, then tape out its full outer footprint and access route. Bolsters can take space away from the sleeping surface. Confirm the exact size and which layers may be washed; keep a suitable existing bed if replacement only adds bulk. A hair roller cleans fabric and does not substitute for a bed."
   },
   {
     "site": "pet",
@@ -8811,18 +8820,20 @@
   {
     "site": "pet",
     "kind": "guide",
-    "title": "Pet Camera Privacy and Placement Guide",
-    "summary": "Where to place a pet camera, what privacy settings to check, and how to avoid paying for features you will ignore.",
+    "title": "Pet Camera Privacy and Placement: Accounts, Recording and Coverage",
+    "summary": "Limit the view, review account sharing and recording states, and check the actual pet area before relying on a camera.",
     "href": "https://pets.madabase.com/guides/pet-camera-privacy-and-placement-guide",
-    "category": "home-care"
+    "category": "home-care",
+    "searchText": "Frame the pet’s useful area while avoiding private household spaces and exposed cables. Use individual account sharing where supported, check authentication and recovery, and distinguish recording controls from lens position or status lights. Test the intended view and access from the rooms and phones you use; a privacy label or connected app is not proof of secure or complete coverage."
   },
   {
     "site": "pet",
     "kind": "guide",
-    "title": "Cat Fountain Filter Replacement Guide",
-    "summary": "How to compare fountain filters, pump cleaning, replacement costs, and backup water plans.",
+    "title": "Cat Fountain Filter Replacement: Exact Fit, Cleaning and Cost",
+    "summary": "Match the fountain and filter generation, separate pump cleaning from filter replacement, and budget from the actual pack.",
     "href": "https://pets.madabase.com/guides/cat-fountain-filter-replacement-guide",
-    "category": "feeding"
+    "category": "feeding",
+    "searchText": "Follow the exact fountain and replacement-pack instructions and replace earlier when condition or restricted flow requires it. The original Catit 43742 manual specifies 3–4 weeks for its filter and weekly fountain maintenance; the current Triple Action pad page recommends 30 days or visible saturation. Those intervals do not replace cleaning, and a dirty filter does not mean the whole fountain must be replaced."
   },
   {
     "site": "pet",
@@ -8892,26 +8903,29 @@
   {
     "site": "pet",
     "kind": "guide",
-    "title": "Pet Grooming Vacuum Noise, Coat, and Cleaning Guide",
-    "summary": "Match suction, brush, clipper, hose, cup, filter, and introduction plan to the individual pet before grooming.",
+    "title": "Pet Grooming Vacuum Guide: Noise, Coat Fit and Filter Care",
+    "summary": "Check the individual pet, exact grooming tools and drying routine before choosing a vacuum kit such as Neakasa P1 Pro.",
     "href": "https://pets.madabase.com/guides/pet-grooming-vacuum-noise-coat-cleaning-guide",
-    "category": "home-care"
+    "category": "home-care",
+    "searchText": "Only if the individual pet accepts the sound and airflow, the tool suits its coat and skin, and the household can maintain the exact model. A quieter-sounding claim or five attachments does not prove suitability. Keep an ordinary brush or professional grooming route when those checks fail; do not use a kit to improvise mat removal or a universal shave."
   },
   {
     "site": "pet",
     "kind": "guide",
-    "title": "Pet GPS Tracker Subscription Cost and Coverage Guide",
-    "summary": "Compare device price, billed subscription, renewal, coverage, battery, collar fit, recovery workflow, and multi-pet cost.",
+    "title": "Pet GPS Tracker Cost: Subscription, Coverage and DOG 6 Fit",
+    "summary": "Compare the prepaid plan total, renewal, local coverage and collar fit before choosing a pet GPS tracker. Keep a working recovery plan when no tracker fits.",
     "href": "https://pets.madabase.com/guides/pet-gps-tracker-subscription-cost-coverage-guide",
-    "category": "comfort"
+    "category": "comfort",
+    "searchText": "Budget the tracker and the full billed subscription term separately. A monthly equivalent can require years of prepayment. Check the exact tracker on your normal routes: a country coverage claim or good phone signal does not establish reliable tracking there."
   },
   {
     "site": "pet",
     "kind": "guide",
-    "title": "Automatic Litter Box Accessories and Annual Cost Guide",
-    "summary": "Budget liners, litter, deodorizers, filters, mats, steps, cleaning tools, and backup-box space without buying every optional accessory.",
+    "title": "Automatic Litter Box Accessories: What to Budget and Skip",
+    "summary": "Separate required liners and litter from optional steps, mats and odor refills. Check M1 Plus and PuraMax 2 versions before buying a bundle.",
     "href": "https://pets.madabase.com/guides/automatic-litter-box-accessories-cost-guide",
-    "category": "home-care"
+    "category": "home-care",
+    "searchText": "Start with the received machine’s manual and a conventional backup box. Buy compatible essentials first; add a step or mat only for an observed need. PuraMax 2 spray hardware and M1 family instructions do not apply to every package or revision."
   },
   {
     "site": "pet",
@@ -10283,7 +10297,7 @@
     "site": "pet",
     "kind": "product",
     "title": "PETLIBRO Granary Smart Cat Feeder",
-    "summary": "A research-based guide to the current 5L PLAF103 Wi-Fi Granary feeder, including scheduled volume portions, dry-kibble limits, app alerts, battery behavior, cleaning, and the Amazon capacity and bowl-variant checks buyers should make before ordering.",
+    "summary": "A PLAF103 scheduled dry-food feeder reference. Match the selected capacity and bowls, weigh actual portions, and check the saved schedule, dry-base cleaning and emergency mode before comparing newer Granary 2 features.",
     "href": "https://pets.madabase.com/reviews/petlibro-granary-automatic-cat-feeder",
     "category": "feeding",
     "aliases": [
@@ -10296,12 +10310,12 @@
     "site": "pet",
     "kind": "product",
     "title": "Catit Flower Cat Water Fountain",
-    "summary": "A cat water fountain for homes where encouraging drinking matters more than smart tracking.",
+    "summary": "The original green Catit Flower 43742 is a 3 L fountain reference with three documented flow configurations. Pump access, exact filters and routine cleaning determine fit; the cat may still prefer a bowl.",
     "href": "https://pets.madabase.com/reviews/catit-flower-cat-water-fountain",
     "category": "feeding",
     "aliases": [
       "Catit",
-      "Original Catit Flower Fountain",
+      "Original green Flower Fountain 43742",
       "B0146QXOB0"
     ]
   },
@@ -10309,12 +10323,12 @@
     "site": "pet",
     "kind": "product",
     "title": "Furbo 360 Dog Camera",
-    "summary": "A research-based Furbo 360 review answering whether Furbo Nanny is required, which standalone features stay free, what the current US plans cost, and how to avoid buying a subscription-linked camera by mistake.",
+    "summary": "The historical B0BWN22T25 reference is a Furbo 360 Dog Camera sold with paid activation, distinct from Standalone hardware. Current official articles disagree on basic access after cancellation, so that entitlement remains unknown.",
     "href": "https://pets.madabase.com/reviews/furbo-360-dog-camera",
     "category": "home-care",
     "aliases": [
       "Furbo",
-      "",
+      "360 Dog Camera; not Cat Camera or Mini 360",
       "B0BWN22T25"
     ]
   },
@@ -10322,7 +10336,7 @@
     "site": "pet",
     "kind": "product",
     "title": "Wyze Cam Pan v3",
-    "summary": "A budget pan-and-tilt camera that can work for pet check-ins when treat tossing is unnecessary.",
+    "summary": "A documented 1080p pan-and-tilt model with separate local-card and cloud-service paths. This page describes Pan v3, while the historical linked ASIN remains paused for a different observed camera identity.",
     "href": "https://pets.madabase.com/reviews/wyze-cam-pan-v3-pet-camera",
     "category": "home-care",
     "aliases": [
@@ -10348,7 +10362,7 @@
     "site": "pet",
     "kind": "product",
     "title": "PetFusion Ultimate Dog Bed",
-    "summary": "A supportive bolstered dog bed for pets that need a real rest zone rather than a thin mat.",
+    "summary": "A historical bolstered-bed reference whose selected size and construction still need an exact match. Compare usable sleeping area and layer-specific care without treating a current XL catalog entry as proof for this ASIN.",
     "href": "https://pets.madabase.com/reviews/petfusion-ultimate-dog-bed",
     "category": "comfort",
     "aliases": [
@@ -10361,7 +10375,7 @@
     "site": "pet",
     "kind": "product",
     "title": "ChomChom Roller Pet Hair Remover",
-    "summary": "A reusable pet-hair roller for furniture, bedding, and car seats where sticky sheets get expensive.",
+    "summary": "An original-size reusable manual roller identified as Black Classic in the indexed B0C2FMZMHP listing. It is a surface-hair cleanup option, with fabric compatibility and exact care still requiring confirmation.",
     "href": "https://pets.madabase.com/reviews/chomchom-roller-pet-hair-remover",
     "category": "home-care",
     "aliases": [
@@ -10426,7 +10440,7 @@
     "site": "pet",
     "kind": "product",
     "title": "PETLIBRO One RFID Smart Feeder",
-    "summary": "A model-specific guide to PETLIBRO's PLAF301 access-controlled feeder, including its dedicated collar tag, one-tag limit, dry-food range, meal schedules, reader mat, Wi-Fi, and backup-power behavior.",
+    "summary": "A PLAF301 collar-tag access reference with its exact retailer purchase still paused. Check the dedicated reader and tag, actual dry-food portions and received revision; current battery-mode documents conflict.",
     "href": "https://pets.madabase.com/reviews/petlibro-one-rfid-smart-feeder",
     "category": "feeding",
     "aliases": [
@@ -10439,12 +10453,12 @@
     "site": "pet",
     "kind": "product",
     "title": "Neakasa M1 Plus Self-Cleaning Litter Box",
-    "summary": "An open-top automatic litter box with a 7.17L litter bed, 11.23L waste bin, infrared and weight sensors, app monitoring, pull-and-wrap waste handling, and a listed 2.2-to-33-pound cat range.",
+    "summary": "An open-top automatic-litter-box reference. The current M1 Plus page and its linked older M1 manual differ, so the received version and applicable instructions matter more than a generic M1 label.",
     "href": "https://pets.madabase.com/reviews/neakasa-m1-plus-self-cleaning-litter-box",
     "category": "home-care",
     "aliases": [
       "Neakasa",
-      "M1 Plus current listing",
+      "",
       "B0CSKBWBF6"
     ]
   },
@@ -10452,12 +10466,12 @@
     "site": "pet",
     "kind": "product",
     "title": "PETKIT PuraMax 2 Self-Cleaning Litter Box",
-    "summary": "An enclosed P9902 automatic litter box with a 76L interior, 7L waste bin, low entrance, 11 listed safety sensors, app controls, a sealed rotating cylinder, and support for several clumping-litter types.",
+    "summary": "An enclosed automatic-litter-box reference whose reviewed PURA MAX 2 manual sets overall cat eligibility and distinguishes basic from premium accessories. Kitten Mode is not a workaround for an ineligible cat.",
     "href": "https://pets.madabase.com/reviews/petkit-puramax-2-self-cleaning-litter-box",
     "category": "home-care",
     "aliases": [
       "PETKIT",
-      "P9902 / T4-2-A-N50 PuraMax 2",
+      "",
       "B0DFYF2D7D"
     ]
   },
@@ -10465,12 +10479,12 @@
     "site": "pet",
     "kind": "product",
     "title": "Neakasa P1 Pro Grooming Vacuum",
-    "summary": "A corded grooming vacuum with five tools, adjustable suction, a one-liter dust cup, and a gradual-introduction requirement for pets that react to noise or airflow.",
+    "summary": "A corded P1 Pro grooming-kit reference with separate brushing, deshedding, clipping and cleanup tools. Individual pet acceptance and exact filter care matter more than accessory count.",
     "href": "https://pets.madabase.com/reviews/neakasa-p1-pro-pet-grooming-vacuum",
     "category": "home-care",
     "aliases": [
       "Neakasa",
-      "P1 Pro",
+      "P1 Pro; match received electrical version",
       "B09ZTMMXTK"
     ]
   },
@@ -10478,28 +10492,28 @@
     "site": "pet",
     "kind": "product",
     "title": "Tractive DOG 6 GPS Tracker",
-    "summary": "A collar-mounted LTE and GPS tracker for dogs above the stated weight, with live location, escape alerts, activity trends, and a required cellular subscription.",
+    "summary": "A collar-mounted GPS and cellular tracker with a required paid plan. Its value depends on actual route coverage, collar fit, charging and a response plan; a country-support claim is not a route test.",
     "href": "https://pets.madabase.com/reviews/tractive-dog-6-gps-tracker",
     "category": "comfort",
     "aliases": [
       "Tractive",
-      "DOG 6 black / TG6A",
+      "",
       "B0D6Z4L6BW"
     ]
   },
   {
     "site": "pet",
     "kind": "comparison",
-    "title": "Automatic Cat Feeders for Consistent Meals",
-    "summary": "Scheduled feeders should solve meal timing without creating cleaning problems, food jams, or a new routine your pet can defeat.",
+    "title": "Automatic Cat Feeders: Scheduled Meals or RFID Access?",
+    "summary": "Compare Granary meal scheduling with One RFID food access, then check dry-food size, actual portion weight, emergency power and daily care.",
     "href": "https://pets.madabase.com/best/best-automatic-cat-feeders",
     "category": "feeding"
   },
   {
     "site": "pet",
     "kind": "comparison",
-    "title": "Pet Cameras for Apartments",
-    "summary": "Apartment-friendly pet cameras should balance room coverage, privacy comfort, alerts, and whether interactive features are actually useful.",
+    "title": "Pet Cameras for Apartments: Basic Check-ins or Treat Interaction?",
+    "summary": "Compare Pan v3 and Furbo 360 by recording task, activation contract, placement and account access rather than a universal ranking.",
     "href": "https://pets.madabase.com/best/best-pet-cameras-for-apartments",
     "category": "home-care"
   },
@@ -10514,8 +10528,8 @@
   {
     "site": "pet",
     "kind": "comparison",
-    "title": "Dog Beds and Comfort Upgrades for Everyday Rest",
-    "summary": "A good comfort upgrade should match your pet's sleep position, cleaning needs, floor space, and chewing behavior.",
+    "title": "Dog Bed Fit and Fabric Cleanup: Two Different Decisions",
+    "summary": "Check sleeping space, room footprint and layer care for a bed; compare a hair roller only for a separate fabric-cleanup task.",
     "href": "https://pets.madabase.com/best/best-dog-beds-and-comfort-upgrades",
     "category": "comfort"
   },
@@ -10562,8 +10576,8 @@
   {
     "site": "pet",
     "kind": "comparison",
-    "title": "Furbo 360 vs. Wyze Cam Pan v3 for Pet Monitoring",
-    "summary": "Compare treat tossing, live view, rotation, pet alerts, subscriptions, local-storage expectations, placement, and the real reason to pay for a pet-specific camera.",
+    "title": "Furbo 360 vs Wyze Cam Pan v3: Interaction or Basic Check-ins?",
+    "summary": "Compare the exact paid-activation Furbo with the Pan v3 workflow, keeping local storage, subscription terms and the held Wyze identity separate.",
     "href": "https://pets.madabase.com/best/furbo-360-vs-wyze-cam-pan-v3-for-pets",
     "category": "home-care"
   },
@@ -10582,974 +10596,6 @@
     "summary": "Estimate a planning CADR target from room area, ceiling height, and a pet-room air-change goal.",
     "href": "https://pets.madabase.com/tools/pet-room-air-change-calculator",
     "category": "home-care"
-  },
-  {
-    "site": "style",
-    "kind": "guide",
-    "title": "How to Style Novelty Accessories Without Looking Costumey",
-    "summary": "Use one focal point, one repeated color, and one quiet clothing base to make unusual earrings and character bags feel intentional.",
-    "href": "https://style.madabase.com/guides/how-to-style-novelty-accessories-without-looking-costumey",
-    "category": "styling"
-  },
-  {
-    "site": "style",
-    "kind": "guide",
-    "title": "Statement Earring Size, Weight & Closure Guide",
-    "summary": "Translate product-page measurements into face scale, movement, comfort, and a closure that fits the day.",
-    "href": "https://style.madabase.com/guides/statement-earring-size-weight-closure-guide",
-    "category": "jewelry"
-  },
-  {
-    "site": "style",
-    "kind": "guide",
-    "title": "Will a Mini Backpack Fit Your Day? A Measurement Guide",
-    "summary": "Check a mini backpack's opening, usable internal space, rigid-item dimensions, and packed shape before assuming that exterior measurements describe what fits.",
-    "href": "https://style.madabase.com/guides/mini-backpack-capacity-measurement-guide",
-    "category": "bags",
-    "searchText": "Measure your largest rigid item including its case, then compare it with the bag's usable opening and internal dimensions. Exterior width × height × depth gives a bounding box, not usable capacity. Ask for opening and internal measurements when the brand lists only exterior dimensions; decorative shapes, lining, curved corners and pockets can reduce the space."
-  },
-  {
-    "site": "style",
-    "kind": "guide",
-    "title": "Loungefly Mini Backpack vs. Full-Size Bag for a Park Day",
-    "summary": "Choose the bag after packing the actual phone, wallet, charger, medication, sunscreen, bottle, layer, and family supplies; character artwork comes second.",
-    "href": "https://style.madabase.com/guides/loungefly-mini-backpack-vs-full-size-for-park-day",
-    "category": "bags"
-  },
-  {
-    "site": "style",
-    "kind": "guide",
-    "title": "How to Clean and Store a Loungefly Mini Backpack",
-    "summary": "Use the exact bag label to clean polyurethane, fabric, applique, embroidery, lining, straps, and hardware without turning one collector tip into a rule for every Loungefly bag.",
-    "href": "https://style.madabase.com/guides/loungefly-faux-leather-rain-and-care-guide",
-    "category": "bags",
-    "searchText": "Start with the exact bag's sewn-in label and materials. Remove the contents, test any permitted method in a hidden area, use the least moisture and friction needed, and keep water away from paperboard structure, edge paint, applique, embroidery, plush, glitter, and metal finishes unless the manufacturer says otherwise. Blot unexpected rain promptly and air-dry the open bag away from direct heat or sun. Store it empty, upright, lightly supported, and without tension on the straps."
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Betsey Johnson Moon and Star Drop Earrings",
-    "summary": "A mismatched celestial pair with a crescent moon, star shapes, blue glass accents, and enough scale to serve as the one obvious focal point in an outfit.",
-    "href": "https://style.madabase.com/reviews/betsey-johnson-moon-star-drop-earrings",
-    "category": "jewelry",
-    "aliases": [
-      "Betsey Johnson",
-      "",
-      "B072BN4Y67"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Betsey Johnson Cupcake Mismatch Drop Earrings",
-    "summary": "A cupcake on one ear and a stand mixer on the other: compact, unmistakably playful, and easier to style when the rest of the outfit stays graphic and simple.",
-    "href": "https://style.madabase.com/reviews/betsey-johnson-cupcake-mismatch-earrings",
-    "category": "jewelry",
-    "aliases": [
-      "Betsey Johnson",
-      "",
-      "B0DFJS2G8Q"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Loungefly Disney Minnie Mouse Bow Mini Backpack",
-    "summary": "An officially licensed faux-leather Minnie bag with a recognizable bow, front pocket, adjustable straps, and a 9-by-10.5-by-4.5-inch footprint.",
-    "href": "https://style.madabase.com/reviews/loungefly-minnie-mouse-bow-mini-backpack",
-    "category": "bags",
-    "aliases": [
-      "Loungefly",
-      "",
-      "B06XH489LG"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Betsey Johnson Lucky Charm Earrings",
-    "summary": "Long rainbow chandelier earrings with clover, horseshoe, number 13, and mixed-chain charms.",
-    "href": "https://style.madabase.com/reviews/betsey-johnson-lucky-charm-earrings",
-    "category": "jewelry",
-    "aliases": [
-      "Betsey Johnson",
-      "",
-      "B0CP4G9VTH"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Betsey Johnson Backyard Frog Dangle Earrings",
-    "summary": "A garden-frog motif for someone who wants the accessory to feel odd, cheerful, and immediately recognizable.",
-    "href": "https://style.madabase.com/reviews/betsey-johnson-backyard-frog-earrings",
-    "category": "jewelry",
-    "aliases": [
-      "Betsey Johnson",
-      "",
-      "B0DYKD3H1C"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Artistic Face Drop Earrings",
-    "summary": "Abstract line-art faces translated into dangling earrings, with a stronger art-gallery feeling than a literal food or character motif.",
-    "href": "https://style.madabase.com/reviews/artistic-face-drop-earrings",
-    "category": "jewelry",
-    "aliases": [
-      "Marketplace find",
-      "",
-      "B07SGKDS6X"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Sparkly Square Leverback Earrings",
-    "summary": "Large colorful square drops with a lever-back closure—a geometric statement that avoids literal characters and food.",
-    "href": "https://style.madabase.com/reviews/sparkly-square-leverback-earrings",
-    "category": "jewelry",
-    "aliases": [
-      "Marketplace find",
-      "",
-      "B0793BVGJX"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "XOCARTIGE Champagne Bottle Earrings",
-    "summary": "Rhinestone champagne-bottle drops built for New Year, weddings, birthdays, and other unmistakably celebratory outfits.",
-    "href": "https://style.madabase.com/reviews/xocartige-champagne-bottle-earrings",
-    "category": "jewelry",
-    "aliases": [
-      "XOCARTIGE",
-      "",
-      "B09KRB54KG"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "NATTASOUL Champagne & Martini Glass Earring Set",
-    "summary": "A three-pair novelty set built around champagne and martini glass shapes, useful when variety matters more than one premium pair.",
-    "href": "https://style.madabase.com/reviews/nattasoul-champagne-martini-earring-set",
-    "category": "jewelry",
-    "aliases": [
-      "NATTASOUL",
-      "",
-      "B0CJB5MX29"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Loungefly Minnie Mouse Dress Mini Backpack",
-    "summary": "A Minnie dress-inspired mini backpack with a more costume-forward look than the simpler bow design.",
-    "href": "https://style.madabase.com/reviews/loungefly-minnie-mouse-dress-mini-backpack",
-    "category": "bags",
-    "aliases": [
-      "Loungefly",
-      "",
-      "B08GH468WM"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Loungefly Minnie Rock the Dots Coquette Mini Backpack",
-    "summary": "A newer Minnie mini backpack that leans into bows, dots, and coquette styling rather than classic character portraiture.",
-    "href": "https://style.madabase.com/reviews/loungefly-minnie-rock-the-dots-backpack",
-    "category": "bags",
-    "aliases": [
-      "Loungefly",
-      "",
-      "B0GGTMMD1W"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Loungefly Mickey Checkered Convertible Mini Backpack",
-    "summary": "A Mickey checkered bag that converts between mini-backpack and crossbody carry.",
-    "href": "https://style.madabase.com/reviews/loungefly-mickey-checkered-convertible-bag",
-    "category": "bags",
-    "aliases": [
-      "Loungefly",
-      "",
-      "B0D5S6SWZG"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Loungefly Disney Mickey Mouse Mini Backpack",
-    "summary": "A classic Mickey mini backpack for outfits built around a familiar character motif.",
-    "href": "https://style.madabase.com/reviews/loungefly-mickey-mouse-mini-backpack",
-    "category": "bags",
-    "aliases": [
-      "Loungefly",
-      "",
-      "B08JPXWS1N"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Loungefly Mickey & Minnie AOP Mini Backpack",
-    "summary": "An all-over Mickey-and-Minnie print in red and navy for buyers who prefer repeat graphics over a sculptural character front.",
-    "href": "https://style.madabase.com/reviews/loungefly-mickey-minnie-aop-backpack",
-    "category": "bags",
-    "aliases": [
-      "Loungefly",
-      "",
-      "B09971YKT8"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Loungefly Disney Princess Books Mini Backpack",
-    "summary": "A storybook-themed Disney Princess backpack with a zipper charm and a strong collectible-bag identity.",
-    "href": "https://style.madabase.com/reviews/loungefly-princess-books-mini-backpack",
-    "category": "bags",
-    "aliases": [
-      "Loungefly",
-      "",
-      "B09QX8TS2C"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Betsey Johnson Straight A's Charm Huggie Earrings",
-    "summary": "School-themed huggies with pencil-and-letter charm energy in a smaller silhouette than a long novelty drop.",
-    "href": "https://style.madabase.com/reviews/betsey-johnson-straight-as-charm-earrings",
-    "category": "jewelry",
-    "aliases": [
-      "Betsey Johnson",
-      "",
-      "B0F9ZQYQLN"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Betsey Johnson Floral Pink Sugar Skull Earrings",
-    "summary": "Pink floral sugar-skull drops with a seasonal edge and enough color to carry a simple black, denim, or cream outfit.",
-    "href": "https://style.madabase.com/reviews/betsey-johnson-pink-sugar-skull-earrings",
-    "category": "jewelry",
-    "aliases": [
-      "Betsey Johnson",
-      "",
-      "B0FZYCRMDY"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Betsey Johnson Kick Off Football Mismatch Earrings",
-    "summary": "A deliberately mismatched football pair for game-day outfits that need one joke rather than a full team-color uniform.",
-    "href": "https://style.madabase.com/reviews/betsey-johnson-football-mismatch-earrings",
-    "category": "jewelry",
-    "aliases": [
-      "Betsey Johnson",
-      "",
-      "B0FB13P58L"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Betsey Johnson Pumpkin Spice Mismatch Earrings",
-    "summary": "A fall-food mismatch that makes a seasonal outfit obvious while staying smaller than a novelty bag or printed sweater.",
-    "href": "https://style.madabase.com/reviews/betsey-johnson-pumpkin-spice-earrings",
-    "category": "jewelry",
-    "aliases": [
-      "Betsey Johnson",
-      "",
-      "B0D54RS4KF"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Betsey Johnson Love Spell Chocolate Strawberry Earrings",
-    "summary": "Chocolate-covered strawberry drops that turn a Valentine motif into a compact food-jewelry focal point.",
-    "href": "https://style.madabase.com/reviews/betsey-johnson-chocolate-strawberry-earrings",
-    "category": "jewelry",
-    "aliases": [
-      "Betsey Johnson",
-      "",
-      "B0FPRQB8DN"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Betsey Johnson Boho Butterfly Gem Earrings",
-    "summary": "Gemmed butterfly drops that sit between literal novelty and conventional colorful statement jewelry.",
-    "href": "https://style.madabase.com/reviews/betsey-johnson-boho-butterfly-earrings",
-    "category": "jewelry",
-    "aliases": [
-      "Betsey Johnson",
-      "",
-      "B0DNNP5FRN"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Betsey Johnson Pencil Mismatch Linear Earrings",
-    "summary": "Long pencil-themed mismatched earrings designed to read clearly against a quiet neckline or pulled-back hair.",
-    "href": "https://style.madabase.com/reviews/betsey-johnson-pencil-mismatch-earrings",
-    "category": "jewelry",
-    "aliases": [
-      "Betsey Johnson",
-      "",
-      "B0D54PGGW4"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Betsey Johnson BJ Cup Dangle Earrings",
-    "summary": "Colorful cup-shaped drops with a recognizable food-and-drink motif.",
-    "href": "https://style.madabase.com/reviews/betsey-johnson-cup-dangle-earrings",
-    "category": "jewelry",
-    "aliases": [
-      "Betsey Johnson",
-      "",
-      "B0D54QPDZB"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Betsey Johnson Mermaid Jewels Starfish Earrings",
-    "summary": "Sparkly starfish drops for a beach reference that can still work with linen, denim, and plain summer dresses.",
-    "href": "https://style.madabase.com/reviews/betsey-johnson-starfish-earrings",
-    "category": "jewelry",
-    "aliases": [
-      "Betsey Johnson",
-      "",
-      "B0DYKDVJKD"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Betsey Johnson Bee Stud Earrings",
-    "summary": "Small bee studs for a compact animal motif without the movement of a long drop.",
-    "href": "https://style.madabase.com/reviews/betsey-johnson-bee-stud-earrings",
-    "category": "jewelry",
-    "aliases": [
-      "Betsey Johnson",
-      "",
-      "B07MC8JSP8"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Loungefly Disney Princess Stained Glass Mini Backpack",
-    "summary": "A pale pink Princess mini backpack built around a stained-glass storybook effect.",
-    "href": "https://style.madabase.com/reviews/loungefly-princess-stained-glass-backpack",
-    "category": "bags",
-    "aliases": [
-      "Loungefly",
-      "",
-      "B0F3LHRYFZ"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Loungefly Disney Princess Ice Cream Mini Backpack",
-    "summary": "A dessert-colored Princess backpack with a deliberately sweet palette.",
-    "href": "https://style.madabase.com/reviews/loungefly-princess-ice-cream-backpack",
-    "category": "bags",
-    "aliases": [
-      "Loungefly",
-      "",
-      "B0892PWWHH"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Loungefly Minnie Floral Rock The Dots Mini Backpack",
-    "summary": "A Minnie dots-and-floral design that softens the classic red-black palette.",
-    "href": "https://style.madabase.com/reviews/loungefly-minnie-floral-rock-the-dots-backpack",
-    "category": "bags",
-    "aliases": [
-      "Loungefly",
-      "",
-      "B0D71N7PWN"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Loungefly Mickey and Friends Canvas Mini Backpack",
-    "summary": "A canvas character bag for buyers who prefer a flatter, less glossy finish.",
-    "href": "https://style.madabase.com/reviews/loungefly-mickey-friends-canvas-backpack",
-    "category": "bags",
-    "aliases": [
-      "Loungefly",
-      "",
-      "B0D9L29KLC"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Loungefly Disney Tigger Mini Backpack",
-    "summary": "A bright Tigger bag that supplies the orange statement color all by itself.",
-    "href": "https://style.madabase.com/reviews/loungefly-tigger-mini-backpack",
-    "category": "bags",
-    "aliases": [
-      "Loungefly",
-      "",
-      "B0G4SK2QNH"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Loungefly Disney Eeyore Mini Backpack",
-    "summary": "A soft blue-gray Eeyore bag with a quieter palette than many character backpacks.",
-    "href": "https://style.madabase.com/reviews/loungefly-eeyore-mini-backpack",
-    "category": "bags",
-    "aliases": [
-      "Loungefly",
-      "",
-      "B0BTN4587G"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Loungefly Disney Dogs Mini Backpack",
-    "summary": "A multi-character dog design for Disney fans who want several favorite dogs on one bag.",
-    "href": "https://style.madabase.com/reviews/loungefly-disney-dogs-mini-backpack",
-    "category": "bags",
-    "aliases": [
-      "Loungefly",
-      "",
-      "B093QTGNPS"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Loungefly Mickey Minnie Donald Daisy Mini Backpack",
-    "summary": "A four-character mini backpack for someone who wants the whole classic group rather than one face.",
-    "href": "https://style.madabase.com/reviews/loungefly-mickey-minnie-donald-daisy-backpack",
-    "category": "bags",
-    "aliases": [
-      "Loungefly",
-      "",
-      "B0996W4NV4"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Spider Web Skeleton Hand Hair Claw Clip Set",
-    "summary": "A three-piece black gothic set using spiderweb, skeleton-hand, and skull details.",
-    "href": "https://style.madabase.com/reviews/spiderweb-skeleton-hand-hair-clips",
-    "category": "hair",
-    "aliases": [
-      "Marketplace find",
-      "",
-      "B0D5TSZMQ8"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Eight-Piece Flower Claw Clip Set",
-    "summary": "Neutral flower claws with enough quantity to test several colors and hair sections.",
-    "href": "https://style.madabase.com/reviews/neutral-flower-claw-clip-set",
-    "category": "hair",
-    "aliases": [
-      "Marketplace find",
-      "",
-      "B0BRX9MTK6"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Mehayi Large Pearl Hair Claw Clip Set",
-    "summary": "Four large pearl-covered claws that make the clip itself the jewelry.",
-    "href": "https://style.madabase.com/reviews/mehayi-large-pearl-hair-clips",
-    "category": "hair",
-    "aliases": [
-      "Mehayi",
-      "",
-      "B09HJWZWWF"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Metal Butterfly and Flower Hair Clip Set",
-    "summary": "A six-piece metal set with butterfly and flower shapes for smaller decorative sections.",
-    "href": "https://style.madabase.com/reviews/metal-butterfly-flower-hair-clips",
-    "category": "hair",
-    "aliases": [
-      "Marketplace find",
-      "",
-      "B0C1TVVSKW"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Jasmine Flower Rhinestone Tassel Hair Claw",
-    "summary": "A floral claw with rhinestones, pearls, and tassel movement for a deliberately ornate finish.",
-    "href": "https://style.madabase.com/reviews/jasmine-rhinestone-tassel-hair-claw",
-    "category": "hair",
-    "aliases": [
-      "Marketplace find",
-      "",
-      "B0DF36F7JY"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Chill Pill Hair Claw Clip",
-    "summary": "A pill-shaped novelty claw that turns a practical hair tool into a compact visual joke.",
-    "href": "https://style.madabase.com/reviews/chill-pill-hair-claw-clip",
-    "category": "hair",
-    "aliases": [
-      "Marketplace find",
-      "",
-      "B0DC3WL6SX"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Camila Paris Large Green French Hair Clip",
-    "summary": "A large green French-style clip with a more polished shape than the novelty sets.",
-    "href": "https://style.madabase.com/reviews/camila-paris-green-french-hair-clip",
-    "category": "hair",
-    "aliases": [
-      "Camila Paris",
-      "",
-      "B01LWP22Z3"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Large Mulberry Silk Long Scarf",
-    "summary": "A long scarf listed as mulberry silk, sized for neck drapes and larger wrapping ideas.",
-    "href": "https://style.madabase.com/reviews/large-mulberry-silk-long-scarf",
-    "category": "scarves",
-    "aliases": [
-      "Marketplace find",
-      "",
-      "B07D114MCF"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Relang Printed Satin Hair Scarf",
-    "summary": "A narrow 7-by-59-inch printed satin scarf for hair, neck, or bag-handle color.",
-    "href": "https://style.madabase.com/reviews/relang-printed-satin-hair-scarf",
-    "category": "scarves",
-    "aliases": [
-      "Relang",
-      "",
-      "B0FK51FJM6"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Aufeel Mulberry Silk Small Square Scarf",
-    "summary": "A 21-inch square listed as real mulberry silk for compact neck and hair ties.",
-    "href": "https://style.madabase.com/reviews/aufeel-small-mulberry-silk-scarf",
-    "category": "scarves",
-    "aliases": [
-      "Aufeel",
-      "",
-      "B0FC6GYJRR"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Long Skinny Multipurpose Scarf",
-    "summary": "A 58-inch skinny scarf intended for neck, hair, purse, or belt styling.",
-    "href": "https://style.madabase.com/reviews/long-skinny-multipurpose-scarf",
-    "category": "scarves",
-    "aliases": [
-      "Marketplace find",
-      "",
-      "B0FY3KY2NY"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Twenty-Four Piece Fashion Scarf Set",
-    "summary": "A large multipack of small fashion scarves for bag handles, ponytails, and group gifting.",
-    "href": "https://style.madabase.com/reviews/twenty-four-fashion-scarf-set",
-    "category": "scarves",
-    "aliases": [
-      "Marketplace find",
-      "",
-      "B0GX67VZQ1"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "WeciBor Colorful Novelty Crew Socks",
-    "summary": "A colorful cotton crew-sock assortment for mixing patterns across everyday outfits.",
-    "href": "https://style.madabase.com/reviews/wecibor-colorful-novelty-crew-socks",
-    "category": "socks",
-    "aliases": [
-      "WeciBor",
-      "",
-      "B0BQBS7V6M"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "GLCMXMART Food and Animal Fun Socks",
-    "summary": "Food-and-animal graphics in a multipack for someone who wants several jokes rather than one hero pair.",
-    "href": "https://style.madabase.com/reviews/glcmxmart-food-animal-fun-socks",
-    "category": "socks",
-    "aliases": [
-      "GLCMXMART",
-      "",
-      "B0CGMCXNWM"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "MOGGEI Novelty Printed Cotton Boot Socks",
-    "summary": "Printed cotton-blend boot socks with strong rating context and more leg coverage than ankle sets.",
-    "href": "https://style.madabase.com/reviews/moggei-printed-cotton-boot-socks",
-    "category": "socks",
-    "aliases": [
-      "MOGGEI",
-      "",
-      "B0BK426C58"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Jeasona Cute Cat Socks",
-    "summary": "A cat-sock set for buyers who want an animal motif in an everyday accessory.",
-    "href": "https://style.madabase.com/reviews/jeasona-cute-cat-socks",
-    "category": "socks",
-    "aliases": [
-      "Jeasona",
-      "",
-      "B075P7R3VN"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "product",
-    "title": "Jspupifip Fruit Ankle Socks",
-    "summary": "Nine pairs of fruit-themed ankle socks for warm-weather shoes and a smaller visible graphic.",
-    "href": "https://style.madabase.com/reviews/jspupifip-fruit-ankle-socks",
-    "category": "socks",
-    "aliases": [
-      "Jspupifip",
-      "",
-      "B0F436ZK17"
-    ]
-  },
-  {
-    "site": "style",
-    "kind": "comparison",
-    "title": "Statement Accessories for a One-Focal-Point Outfit",
-    "summary": "Three expressive starting points—a celestial mismatch, a bakery joke, and a character mini backpack—compared by scale, comfort, capacity, and styling range.",
-    "href": "https://style.madabase.com/best/best-statement-accessories-for-one-focal-point",
-    "category": "styling"
-  },
-  {
-    "site": "style",
-    "kind": "comparison",
-    "title": "Betsey Johnson Mismatched Earrings: Celestial or Cupcake?",
-    "summary": "Choose between a larger moon-and-star statement and a smaller cupcake-and-mixer joke by dimensions, closure, material language, and outfit range.",
-    "href": "https://style.madabase.com/best/best-betsey-johnson-mismatched-earrings",
-    "category": "jewelry"
-  },
-  {
-    "site": "style",
-    "kind": "comparison",
-    "title": "Weird Earrings That Are Still Wearable",
-    "summary": "Compare frogs, abstract faces, lucky charms, geometric crystals, champagne bottles, and martini glasses by scale, closure, material, and outfit range.",
-    "href": "https://style.madabase.com/best/best-weird-earrings-that-are-still-wearable",
-    "category": "jewelry"
-  },
-  {
-    "site": "style",
-    "kind": "comparison",
-    "title": "Loungefly Mini Backpacks by Outfit",
-    "summary": "Compare Minnie bows and dots, classic Mickey, convertible checks, all-over prints, and Princess books by visual intensity, carry mode, capacity, and wardrobe fit.",
-    "href": "https://style.madabase.com/best/best-loungefly-mini-backpacks-by-outfit",
-    "category": "bags"
-  },
-  {
-    "site": "style",
-    "kind": "comparison",
-    "title": "Playful Hair Accessories by Hair Volume",
-    "summary": "Compare gothic claws, neutral flowers, pearls, butterflies, tassels, novelty pills, and a French clip by size, hold, snag risk, and outfit mood.",
-    "href": "https://style.madabase.com/best/best-playful-hair-accessories",
-    "category": "hair"
-  },
-  {
-    "site": "style",
-    "kind": "comparison",
-    "title": "Scarves for Adding One Useful Color",
-    "summary": "Compare silk claims, satin, square and skinny dimensions, tying range, care, and multipack value before choosing the print.",
-    "href": "https://style.madabase.com/best/best-scarves-for-outfit-color",
-    "category": "scarves"
-  },
-  {
-    "site": "style",
-    "kind": "comparison",
-    "title": "Funny Socks That Still Fit the Shoe",
-    "summary": "Compare colorful crews, food and animal sets, boot socks, cats, and fruit ankles by size, fiber, cuff, pattern stretch, and shoe bulk.",
-    "href": "https://style.madabase.com/best/best-funny-socks-for-colorful-outfits",
-    "category": "socks"
-  },
-  {
-    "site": "style",
-    "kind": "comparison",
-    "title": "Loungefly Minnie Bow vs. Rock the Dots Mini Backpack",
-    "summary": "Choose between the established black-red bow bag and the newer white-red coquette design by palette, visual intensity, carry list, seller, and return path.",
-    "href": "https://style.madabase.com/best/loungefly-minnie-bow-vs-rock-the-dots-backpack",
-    "category": "bags"
-  },
-  {
-    "site": "costume",
-    "kind": "guide",
-    "title": "Halloween Fog Machine and Lighting Power Guide",
-    "summary": "Plan an effects scene around the exact machine's approved location, fluid, heat clearance, electrical requirements and visibility limits.",
-    "href": "https://costumes.madabase.com/guides/halloween-fog-machine-lighting-power-guide",
-    "category": "accessories-party-effects"
-  },
-  {
-    "site": "costume",
-    "kind": "guide",
-    "title": "Special-Effects Makeup Skin Contact and Removal Guide",
-    "summary": "Choose masks, prosthetics, adhesives, pigments, fake blood, removers, wear time, and cleanup as one seasonal system.",
-    "href": "https://costumes.madabase.com/guides/special-effects-makeup-skin-contact-removal-guide",
-    "category": "wigs-makeup"
-  },
-  {
-    "site": "costume",
-    "kind": "guide",
-    "title": "Costume Sizing, Measurements, and Return-Risk Guide",
-    "summary": "How to use body and garment measurements, leave movement room, and check seasonal return limits before ordering.",
-    "href": "https://costumes.madabase.com/guides/costume-sizing-measurements-and-returns",
-    "category": "costumes"
-  },
-  {
-    "site": "costume",
-    "kind": "guide",
-    "title": "Professional Costume vs. Standard Costume",
-    "summary": "What a higher price can buy in construction, materials, finish, repairability, and repeat use—and what it does not guarantee.",
-    "href": "https://costumes.madabase.com/guides/professional-costume-vs-standard-costume",
-    "category": "costumes"
-  },
-  {
-    "site": "costume",
-    "kind": "guide",
-    "title": "Large Prop and Animatronic Space, Power, and Safety Checklist",
-    "summary": "Measure the route, display area, power path, weather exposure, sound, storage, and supervision needs before buying a large effect.",
-    "href": "https://costumes.madabase.com/guides/large-prop-animatronic-space-and-power-checklist",
-    "category": "props-animatronics"
-  },
-  {
-    "site": "costume",
-    "kind": "guide",
-    "title": "Mask and Prosthetic Fit, Materials, and Removal Guide",
-    "summary": "Compare visibility, breathing, materials, adhesives, makeup, removal, and wear time before building the look around a mask or prosthetic.",
-    "href": "https://costumes.madabase.com/guides/mask-and-prosthetic-fit-materials-guide",
-    "category": "masks-prosthetics"
-  },
-  {
-    "site": "costume",
-    "kind": "guide",
-    "title": "Halloween Costume Wig, Facial Hair, and Makeup Guide",
-    "summary": "Choose a costume wig by silhouette, cap construction, fiber and heat limits, then coordinate facial hair, adhesives, makeup, wear time, removal, cleaning, and storage.",
-    "href": "https://costumes.madabase.com/guides/wig-facial-hair-and-makeup-planning-guide",
-    "category": "wigs-makeup"
-  },
-  {
-    "site": "costume",
-    "kind": "guide",
-    "title": "Rent or Buy a Halloween Costume? Cost, Deposits & Fit",
-    "summary": "Compare full event cost, security deposits, fit and alteration limits, pickup and return dates, cleaning, damage risk, storage, and realistic reuse before renting or buying.",
-    "href": "https://costumes.madabase.com/guides/costume-rental-vs-buying-guide",
-    "category": "costumes",
-    "searchText": "Rent when one event needs a higher-end complete look, local fitting and return logistics are practical, and the deposit and damage terms are acceptable. Buy when the costume will be reused, altered, combined with other looks, shipped outside the rental area, or stored and maintained without creating more cost than it saves. Compare the full event total rather than the headline fee: include deposit or card hold, accessories, travel or shipping, cleaning, alterations, late or damage charges, and storage."
-  },
-  {
-    "site": "costume",
-    "kind": "guide",
-    "title": "When to Order a Halloween Costume",
-    "summary": "Work backward from your event and fitting date using the exact item's production, processing, transit and return terms, instead of treating a shipping estimate as an arrival promise.",
-    "href": "https://costumes.madabase.com/guides/when-to-order-a-halloween-costume",
-    "category": "accessories-party-effects",
-    "searchText": "Order to a fitting date before your event, not to Halloween itself. Add the exact item's production or processing time, business-day transit, and a buffer for checking size, missing parts or a permitted exchange. For Halloween 2026, October 31 is a Saturday; use your own earlier party date when that is the real deadline. No generic cutoff guarantees delivery."
-  },
-  {
-    "site": "costume",
-    "kind": "guide",
-    "title": "Costume and Prop Care and Storage Guide",
-    "summary": "Plan cleaning, drying, shape support, repairs, batteries, labels, and storage space so reusable pieces survive the next event.",
-    "href": "https://costumes.madabase.com/guides/costume-prop-care-and-storage-guide",
-    "category": "props-animatronics"
-  },
-  {
-    "site": "costume",
-    "kind": "guide",
-    "title": "Premium Costume Buying Guide: Fit, Rent vs Buy & Final Sale",
-    "summary": "Check the exact garment and transaction before paying more for a performance costume.",
-    "href": "https://costumes.madabase.com/guides/high-end-costumes-buying-guide",
-    "category": "costumes",
-    "familySlug": "high-end-costumes",
-    "searchText": "When is a premium or professional costume worth buying? Pay more only when the exact construction, fit, included pieces and repeat-use requirements justify it. Compare rental and purchase as different transactions. Abracadabra NYC’s current general policy lists ordinary sales as final, without returns, refunds or exchanges; do not plan on a free home fitting. Confirm the selected variant, delivery, care and any rental deposit before ordering. Define the performance and repeat-use job Separate a short party appearance, a production wardrobe, repeated stage work and an enclosed mascot performance. Each creates different fit, movement, visibility, care and transport needs. A high price or professional category label does not establish quality, comfort or protective performance. Keep a suitable owned outfit when it already meets the event brief. Compare rent and buy on the exact variant A From price may be the rental price. The observed medium Blue Police Ceremony Uniform offers Rent at $150 and Buy at $1,200; the selected rental lists a separate $250 deposit. Those are different variants and obligations, not a discounted purchase. This is one current example, not a price or deposit rule for every costume. Recheck the merchant’s actual selection and total. Resolve final-sale limits before the first order The merchant’s current general policy states ordinary sales are final with no refunds, returns or exchanges. Do not order several sizes expecting a routine return or assume an unworn item is refundable. The policy has separate damaged/missing-item contact conditions; they are not a fit guarantee. Confirm any explicit exception with the merchant before relying on it. Match body measurements and usable movement Use the exact garment’s measurement chart and included-piece information with the intended wearer, shoes and permitted underlayers. A Medium label is not a universal body range. Plan sitting, walking, reaching and the actual event route. If no adequate measurements are available and a poor fit cannot be corrected within confirmed terms, do not use a final-sale order as the fitting test. Inspect construction claims and missing pieces Ask for actual fabric or other material, lining, closures, seams, finishing and included accessories relevant to the job. Product photos can include separate pieces. The police example lists a long jacket, pants and white shirt; it does not establish every accessory shown or a measured quality grade. Do not infer leather, heat resistance, certification or repairability from a premium label. Confirm alterations before cutting or applying products Obtain permission and actual alteration, return and rental terms before trimming, hemming, dyeing, gluing or replacing fasteners. A rental may prohibit changes that would be acceptable on an owned garment. Check skin or hair products and adhesive compatibility with exact materials under their own instructions; a generic costume article is not permission to modify a rented piece. Plan visibility, comfort and venue access Check the actual headpiece, mask, footwear, hem and loose parts against the wearer’s vision, movement and the event’s doors, stairs and audience rules. Enclosed mascot heads and heavy outfits need their own wearing and assistance plan. Follow relevant costume and venue guidance; flame-resistant wording is not fireproof approval or permission to use an outfit near ignition sources. Make delivery and rental timing explicit Confirm the selected variant is available for the actual destination and date, including processing, delivery or pickup and a realistic opportunity to resolve problems. A storefront stock count or estimated delivery window is not a reservation. The observed uniform rental permits up to three days and asks longer rentals to contact the store; confirm pickup/return times and deposit handling for the actual order. Use the exact care and return-as-rented routine Check care labels, material limits and the merchant’s rental instructions before laundering, steaming or applying stain remover. The observed uniform rental says return as is without laundering and allows extra damage charges. Do not transfer that rule to every owned garment or assume all rentals share it. Include drying, shape-preserving storage, transport and realistic repair access for repeat use. Choose only a relevant catalog option or keep the existing outfit Use the premium/professional costume selection to investigate actual candidates, then compare each exact variant against the event requirements. An empty qualified selection is not permission to substitute an unrelated costume from the same broad category. No purchase is needed if an owned outfit fits the brief; a higher current price, updated photo or new stock entry is not a verified improvement."
-  },
-  {
-    "site": "costume",
-    "kind": "guide",
-    "title": "Mascot Costume Buying Guide: Performer Fit, Heat & Rental Terms",
-    "summary": "Choose the performer and event plan before the animal character.",
-    "href": "https://costumes.madabase.com/guides/mascot-costumes-buying-guide",
-    "category": "costumes",
-    "familySlug": "mascot-costumes",
-    "searchText": "What should I check before renting or buying a mascot costume? Confirm the exact suit’s performer measurements, head visibility, entry and removal, movement and permitted care, together with a handler and an appropriate event plan. Standard size is not a measured fit range. The Polar Bear example offers separate rental and purchase variants with a rental deposit; neither the character nor a high price establishes comfortable wear or a safe appearance duration. Match the character to the actual appearance Agree whether the performer will greet guests, walk a route, climb steps, dance or remain in a controlled position. Include the audience, available space and any assistance needed. A full mascot, an open-face character outfit and a separate mask create different restrictions. Replacing a restrictive head with another mask does not automatically solve visibility, breathing or heat concerns. Check the exact package rather than the photograph The observed Polar Bear listing includes a mascot head, jumpsuit, feet and mittens and describes the size as Standard. No actual performer-height or body-measurement range was established. The listed package does not establish a fan, cooling system, storage case or every underlayer. Ask about the received configuration and condition instead of filling gaps with another mascot’s specifications. Separate the rental, purchase and deposit Current retailer variant data lists the Polar Bear rental at $475 and purchase at $1,400. The description states a separate $925 rental deposit and up to three days, with longer rentals requiring store confirmation. These are dated example terms, not a rule for every mascot. Confirm the selected variant, full charges, event availability and pickup or delivery before committing; an available flag does not reserve a date. Fit the performer and the complete suit Obtain the exact size chart or garment measurements and compare them with the intended performer and permitted underlayers. Check torso, limbs, footwear and gloves together with the head fit; height alone cannot qualify the ensemble. A Standard or one-size label does not approve an arbitrary performer. Resolve unknown measurements before a final-sale order or rental commitment. Check vision, movement and the actual route Assess the actual head’s usable view and the wearer’s ordinary movement with the complete received suit under an appropriate supervised plan. Include doors, thresholds, steps, hands, footwear and the intended interaction with the audience. Attractive eye placement in a photo does not establish where the performer can see. Restriction or loss of comfortable control is a reason to stop and choose an independently suitable approach. Arrange assistance and an immediate removal plan Agree a suitable handler, a way to communicate and the permitted process for removing the head or suit promptly. Keep a usable route to a private recovery area and make sure assistance can reach the performer. A hidden zipper, mitten-covered hands or a crowded event can change what is practical. Do not rely on an improvised modification or an assumed emergency release. Plan heat and rest for the actual conditions Clothing, physical effort and the environment combine to affect heat burden. Obtain appropriate event or workplace advice for the performer, suit, task and conditions, including a suitable recovery area and the ability to stop. No universal number of minutes, fan setting or rest interval is approved here. Do not use a trial appearance to push through discomfort or treat a mascot as protective equipment. Verify any powered accessory separately Only assess a fan, battery or other cooling accessory if the exact suit actually includes or permits it. Confirm its mounting, power, care and operating limits under the matching instructions. A fan can be an additional dependency; it is not a substitute for the whole performer and event plan or proof that enclosed wear is suitable. No retrofit or improvised electrical arrangement is recommended. Keep alteration and care within the transaction Abracadabra NYC’s ordinary sales are final under its current general policy. Confirm permission before trimming, gluing, changing openings or applying products to a rental. The observed Polar Bear rental says return as is without laundering, with possible damage charges. Do not generalize that rule to an owned suit or assume that every head, foam part and garment can be washed together. Budget transport, storage and a suitable existing option Include a documented way to protect the head shape, keep components dry and transport the complete package without losing pieces. Confirm repair and replacement-part availability for the exact suit. A Clearance label, a stock count or a new photo does not prove discontinuation or a required upgrade. Keep a suitable existing costume or revise the appearance when the performer, venue or care requirements cannot be met."
-  },
-  {
-    "site": "costume",
-    "kind": "guide",
-    "title": "Historical & Theatrical Costumes: Period References & Stage Fit",
-    "summary": "Separate the agreed period look from the garment’s performance and transaction.",
-    "href": "https://costumes.madabase.com/guides/historical-theatrical-costumes-buying-guide",
-    "category": "costumes",
-    "familySlug": "historical-theatrical-costumes",
-    "searchText": "How should I choose a historical or theatrical costume? Start with the production’s agreed period, character and visual references, then verify the actual garment, understructure, performer fit, blocking, changes and care. A historical title does not establish accuracy, and generic theatrical marketing does not qualify a period silhouette. Confirm rental or purchase and current final-sale conditions before using an order as a fitting exercise. Agree whether the brief needs a period reconstruction or a stage look A historically sourced reconstruction, a stylized period impression and a theatrical character outfit are different jobs. Agree the reference and acceptable departures with the production or event before shopping. A recognizable stage silhouette can be deliberate without claiming historical accuracy. Keep that distinction clear so price and professional labels do not replace the actual brief. Use identified references for the claimed period Specify the period, place, character and relevant visual references rather than relying on a broad costume name. Compare the actual cut, proportions, closures, fabric appearance and accessories with the agreed reference. A merchant’s era label is a lead to investigate, not provenance. Where the necessary evidence is missing, describe the look as inspired or stylized and obtain the production’s agreement. Identify the understructure and missing pieces Find out whether the intended silhouette needs separate permitted underlayers, support garments, footwear, headwear or accessories. Check exactly what the selected package includes and whether each extra piece is compatible with the wearer and garment. A photo can show a styled ensemble rather than one complete order. Do not improvise a restrictive support garment to force the advertised outline. Match the performer’s measurements and normal movement Use the exact chart or actual garment measurements with the intended underlayers and shoes. Include reaching, sitting, walking and the agreed blocking. A period silhouette does not justify restricted breathing, an unusable closure or uncontrolled hems. Resolve sizing and alteration feasibility before ordering under final-sale terms; a generic everyday clothing size is insufficient. Assess changes, closures and repeated performance Agree who helps with dressing, which closures are accessible and whether the real change sequence can be completed comfortably. Check storage between appearances, secure placement of loose pieces and realistic repair access. Do not assume a party outfit supports a long run or that a professional label guarantees quick changes. Any rehearsal must follow the actual garment and transaction conditions. Review the appearance under the actual production conditions Consider the planned lighting, viewing distance, movement and agreed costume finish when assessing the look. Photographs do not establish how fabric, trim or layers read in the actual event. A theatrical costume is not protective equipment; follow venue and garment restrictions for ignition sources, scenery and movement. No exact fabric or flame-performance test is claimed here. Compare the actual rental and purchase obligations Compare the selected rental period, deposit, pickup, return, care and damage terms with a purchase’s total and realistic reuse. Abracadabra NYC’s current general policy lists ordinary transactions as final, without routine returns, refunds or exchanges. Do not buy multiple sizes assuming a fitting return. A From price can describe a rental, so inspect the actual transaction rather than the lowest headline. Obtain permission before alteration or treatment Confirm ownership or rental permission and a material-compatible method before hemming, dyeing, gluing, adding fasteners or applying distressing products. A reversible-looking change can still affect a rental or the garment’s care and appearance. Keep the agreed construction and care limits with the costume; this guide does not approve a universal repair, dye or cleaning recipe. Plan care, continuity and storage for the run Use the exact care label and any rental instructions, and arrange permitted cleaning or service between appearances. Record the agreed complete look, wearer allocation and included pieces so replacements or handovers do not change the intended silhouette. Budget transport and storage that protect shape and trim. A spare costume helps only if its actual fit, appearance and availability are independently suitable. Require relevant candidates and keep a suitable wardrobe option The observed Polar Bear Mascot is a character suit whose description mentions theatrical performance. That word does not make it evidence for a period garment or historically sourced silhouette. Use the actual production brief to choose relevant candidates; an empty qualified selection remains an unresolved choice. Retain suitable owned wardrobe, borrow or rent under confirmed terms, or revise the brief rather than accept an unrelated product."
-  },
-  {
-    "site": "costume",
-    "kind": "guide",
-    "title": "Adult Costume Buying Guide: Measurements, Pieces & Final Sale",
-    "summary": "Build the complete event look around the wearer and actual transaction.",
-    "href": "https://costumes.madabase.com/guides/adult-costumes-buying-guide",
-    "category": "costumes",
-    "familySlug": "adult-costumes",
-    "searchText": "How do I choose an adult costume that fits the event? Match the wearer’s current measurements to the exact garment chart, then check included pieces, comfortable movement, shoes, visibility, venue and timing. Compare a complete costume with a suitable look assembled from owned clothing. Confirm the selected rent or buy option and final-sale terms before ordering; an Adult label identifies an audience, not a body-measurement range. Define the character and the event before the basket Agree the appearance and the actual activities: a seated party, walking route, dance, performance or outdoor event impose different demands. Include travel, weather, access and any venue restrictions. A complete costume can simplify an outfit, while suitable owned clothing and selected accessories may meet the same brief. Neither route automatically removes fit and comfort checks. Use the exact chart with the current wearer Compare the actual garment’s stated body or finished measurements with the wearer and intended underlayers. Find out what each listed measurement means and where the garment has limited stretch or adjustment. Do not convert automatically from everyday clothing size or treat Small, Medium or Adult as a universal range. Resolve missing measurements before making a final-sale commitment. List included pieces and the full cost of the look Compare the actual package with the required shoes, underlayers, headwear and accessories. Styled photos can include separate items. Add only pieces needed for the agreed look and permitted by the wearer and venue. A wig, makeup product, adhesive or powered effect is not a compulsory part of every costume; each has its own fit and use requirements. Check sitting, walking, reaching and restroom access Consider the whole received ensemble, including shoes, closures and any bulky or trailing parts, under an appropriate ordinary fitting plan. You need usable movement for the actual event and a practical way to dress and undress. Discomfort, an inaccessible closure or unstable footwear should change the choice rather than be accepted to preserve the photograph. Assess headwear, visibility and optional cosmetics Check the actual view, comfortable breathing, speech and removal of any mask or headpiece. A separate mask is not an automatic improvement over an enclosed costume. If cosmetics or adhesives are used, confirm that the exact products are permitted for their intended area and the wearer and follow their labels. No generic face-paint, adhesive or removal recipe is supplied here. Plan weather and underlayers together Include the actual indoor or outdoor conditions, physical activity and the clothes that will be worn beneath or over the costume. A tight outfit can lose usable movement when layered; a bulky look can add heat and obstruct access. Do not choose an arbitrary larger size or an unapproved cooling accessory as a universal fix. Revise the look when the actual conditions cannot be accommodated. Separate rental terms from a purchase Compare the actual selected transaction, total, deposit, rental duration, care, return timing and damage obligations. Abracadabra NYC’s current general policy lists ordinary sales as final, without routine returns, refunds or exchanges. A damage or missing-piece contact route is not a fitting guarantee. Confirm any explicit exception before relying on it, and check whether the lowest From price is a rental. Confirm the real ordering and preparation window Check the exact variant’s availability for the event date and destination, allowing a realistic opportunity to resolve missing or unsuitable pieces. A stock flag or estimated arrival does not reserve a rental or guarantee delivery. Establish pickup and return details when relevant. Keep an independently suitable existing outfit available when the new plan depends on uncertain timing. Keep alterations and care within the actual instructions Obtain permission before trimming, hemming, gluing or treating a rental or a garment whose terms remain unresolved. Follow the exact material label and merchant rental instructions for washing, steaming, drying and storage. Inspect received condition promptly under the merchant’s actual remedy process. Do not use an ordinary garment-cleaning routine for an undocumented headpiece or electronic accessory. Choose a relevant adult candidate or keep the working look An explicit adult audience or title can identify a candidate, but mixed adult/child variants and missing age information need clarification. It does not establish individual fit. Compare suitable outfits on the actual event brief rather than promote the first item from a broad category. Keep an owned look that meets the job; a higher price, premium badge or new listing is not itself a reason to replace it."
-  },
-  {
-    "site": "costume",
-    "kind": "guide",
-    "title": "Kids Costume Buying Guide: Current Fit, Visibility & Age Labels",
-    "summary": "Choose for the child’s actual size and activity, with clear adult supervision.",
-    "href": "https://costumes.madabase.com/guides/child-costumes-buying-guide",
-    "category": "costumes",
-    "familySlug": "child-costumes",
-    "searchText": "How should I choose a costume for my child? Use the child’s current measurements, the exact garment chart and actual age or use labels, with the intended clothes and shoes. Check hems, visibility, comfortable breathing, closures and suitable accessories before choosing. Buying larger for growth can create loose or trailing parts. An adult costume is not a fallback when a qualified children’s variant is missing; keep a suitable simple dress-up option. Start with the child and the actual occasion Agree a look the child is comfortable wearing and identify the school, party, performance or walking activity. Consider the child’s actual age, capabilities, supervision and venue requirements. A recognizable outfit does not need every decorative piece shown in a photograph. If the child dislikes or cannot comfortably use the costume, choose another suitable look. Fit current measurements with the intended layers Use the exact size chart or garment measurements with the clothes that will actually be worn underneath. Check what the size numbers and age labels describe. Growth allowance is not permission for overlong hems, loose footwear or oversized headwear; no fixed amount of extra room is prescribed here. Unknown measurements or a mixed adult/child listing require clarification before an order. Check walking, hems and well-fitting shoes Assess the actual outfit with the intended shoes and the child’s ordinary movements, including sitting and the real route. Keep hems and loose pieces from becoming tripping obstacles and use suitable, well-fitting footwear. Do not rely on unfamiliar oversized shoes or make an unapproved alteration to rescue an unsuitable fit. Adjust the planned look when the required movement cannot be achieved comfortably. Keep visibility, breathing and removal practical Check the actual headwear or mask on the intended child under appropriate supervision. A face opening in a photo does not establish a clear view or comfortable breathing. Do not accept slipping headwear, blocked sight or a piece the child cannot remove appropriately. A smaller adult mask or an improvised fastener is not an automatically suitable replacement. Match accessories and labels to the actual child Read the exact age and use labels and confirm included pieces, closures and small or detachable decorations. Avoid unsuitable sharp or rigid costume props and resolve loose-part concerns before use. A product called Kids is not suitable for every age or capability. Do not retrofit a guessed breakaway mechanism or add an accessory merely because it matches the character. Review materials and fire-related claims literally Check the received material and care labels and relevant garment and venue restrictions. CPSC’s general advice covers fit, visibility and fire precautions; a flame-resistant label does not mean fireproof. A premium price, synthetic material name or product photograph is not an independent performance test. Keep the actual event plan within the garment’s restrictions rather than relying on a costume to provide protection. Plan visibility and any powered pieces separately For an evening walking activity, plan how the child can see the route and be seen under appropriate adult supervision. Ordinary suitable visibility aids may be more useful than a decorative light-up feature. If the selected costume actually includes electronics, follow its exact age, battery, access, weather and care instructions. Do not add an undocumented battery pack or assume illuminated decorations establish visibility or safe fit. Include supervision, weather and the venue Choose for the planned clothes, conditions and activity, with an appropriate responsible adult and a way to stop or change the outfit. Check the actual school or venue rules before ordering. A complete costume can be unsuitable if layers restrict movement, heat becomes uncomfortable or the route cannot be managed. No costume, mask or alert device replaces supervision. Resolve transaction and sizing uncertainty before ordering Abracadabra NYC’s current general policy lists ordinary sales as final, without routine returns, refunds or exchanges. Do not order an uncertain size expecting a free home-fitting return. Confirm the exact children’s variant, delivery and any explicit exception. Missing qualified children’s products remain an unresolved choice; an adult mascot or a same-category item must not be silently substituted. Care for the received pieces and retain a suitable option Follow the exact component and garment labels and any merchant rental conditions. Separate powered or removable pieces only as instructed before permitted care, and inspect condition and missing pieces promptly under the actual remedy process. Reassess fit before reuse as the child changes. Keep a suitable owned or simple clothing-based dress-up look when it meets the brief; no new outfit is required."
-  },
-  {
-    "site": "costume",
-    "kind": "guide",
-    "title": "Costume Wig Buying Guide: Cap Fit, Fiber & Included Pieces",
-    "summary": "Choose the character silhouette with a cap and care plan you can actually use.",
-    "href": "https://costumes.madabase.com/guides/costume-wigs-buying-guide",
-    "category": "wigs-makeup",
-    "familySlug": "costume-wigs",
-    "searchText": "What should I check before buying a costume wig? Choose the needed length, shape, color and parting, then confirm the exact cap measurements, adjustment, fiber and permitted styling. One Size Fits Most is not a measured fit range. The Franco Judge Wig lists a white wig with caps and accessories sold separately; its heat limit was not established. Resolve those gaps before a final-sale order, or keep suitable existing hair or headwear. Define the silhouette before choosing a brand Specify the character’s outline, length, volume, parting and color, together with the actual event or stage brief. A short white judicial wig and a long fashion wig solve different appearance questions. Decide whether the existing hairstyle or a suitable headpiece already communicates the character before adding a full wig. A new product photo is not evidence that an older working look needs replacement. Check what the exact wig order includes The observed Franco Judge Unisex Wig, SKU 24-2403, lists white hair and One Size Fits Most; wig caps and other accessories are separate purchases. That is a package description, not proof of an included cap, pins or adhesive. Match the exact item and selected variant to the look you need and budget only the additional pieces that the actual cap and wearer require. Resolve cap measurements and usable adjustment Ask for the exact cap’s stated circumference or fit range, adjustment method and any model-specific limits. Compare them with the wearer and the way their own hair will be contained. A universal size word, unisex label or adjustable strap does not establish every head size. Use the separate fit guide to assess pressure, movement, glasses and practical removal. Keep heat instructions tied to the received fiber Identify the actual fiber and permitted styling method before planning a tool or buying a wig that needs reshaping. Arda publishes different limits for its CLASSIC and SILKY fibers; those figures cannot be transferred to the Franco Judge Wig. An unknown heat limit remains unknown. Select a suitable ready-shaped option when the required look depends on undocumented heat treatment. Compare the complete preparation and transaction Include permitted styling, any needed cap or fixings, transport and storage, with time to assemble the look. Abracadabra NYC’s ordinary sales are final, so do not buy an uncertain fit expecting a normal fitting return. Confirm the exact item’s delivery or pickup for the actual event; an available flag is not a guaranteed arrival or a completed reservation. Choose a wearable look and retain a suitable existing option Assess the whole outfit, including headwear, hair length, view, glasses and removal. A wig that slips, causes pressure or interferes with the required activity should change the choice. Temporary hair color and elaborate headpieces have their own labels and use limits; they are not automatic solutions. Keep suitable existing hair or revise the character when the proposed wig adds unresolved dependencies."
-  },
-  {
-    "site": "costume",
-    "kind": "guide",
-    "title": "Costume Wig vs Your Own Hair, Headpiece or Temporary Color",
-    "summary": "Compare the actual silhouette, preparation and removal for the planned character.",
-    "href": "https://costumes.madabase.com/guides/costume-wigs-vs-alternatives",
-    "category": "wigs-makeup",
-    "familySlug": "costume-wigs",
-    "searchText": "Should I use a wig, my own hair, a headpiece or temporary hair color? Use a wig when the character needs a different length, volume or hairline and the exact cap and fiber are suitable. Keep your own hair when it can meet the brief without a new contact product. A headpiece can supply a smaller visual cue; temporary color changes color rather than length and needs its own hair-use and removal instructions. None is an automatic fallback for an unsuitable wig. Decide which visual feature really needs changing Break the character down into length, hairline, volume, color and a recognizable accessory. A full wig can change several features together, while a hat or another suitable headpiece may communicate the role without recreating every detail. Agree the acceptable look for the actual party or production. Compare complete achievable looks rather than a styled product photograph with unfinished ordinary hair. Use a wig for a different silhouette only when the cap qualifies A wig can provide an outline the wearer’s own hair cannot readily achieve. It also adds a cap, a way to contain natural hair, permitted styling and transport. The Judge Wig is a white judicial look, not a general replacement for every hairstyle. Its One Size Fits Most label still leaves the actual cap range and wearer fit to confirm. Keep your own hair when the agreed look allows it An existing hairstyle may be the least preparation-intensive choice when its length and shape already suit the character. Do not add color, tight styling or a new contact product solely to match every photograph. Include the wearer’s usual comfort and the actual event requirements. A suitable existing look can be a complete decision without a new purchase. Assess a headpiece as a separate worn object Check the specific headpiece’s weight, fixings, view, balance and removal with the hairstyle and other costume parts. A large hat, crown or pointed decoration can introduce restrictions even though it is smaller than a wig. It is a useful alternative only when the visual brief and the actual wearer both qualify it; it does not resolve every cap or skin-contact problem by default. Treat temporary color as a different product decision Hair color changes the shade of existing hair; it cannot create missing length or a new hairline. Check that the exact product is intended for the relevant use and follow its application, testing, ventilation and removal labels. Include possible transfer to clothing and the time needed to restore the usual look. Do not apply ordinary craft pigment or borrow a face-paint rule to improvise a hair product. Compare preparation, restoration and the cost of keeping the look Include the specific wig’s permitted restyling and storage, the headpiece’s fixings or the hair product’s actual removal needs. Confirm merchant terms before ordering; a trial look does not create a return right. When two suitable routes meet the brief, choose the one the wearer can prepare and remove comfortably. Revise the character if all proposed routes remain unsuitable."
-  },
-  {
-    "site": "costume",
-    "kind": "guide",
-    "title": "Costume Wig Fit Guide: Cap Range, Hair, Glasses & Movement",
-    "summary": "Check the actual cap on the wearer before relying on a one-size label.",
-    "href": "https://costumes.madabase.com/guides/costume-wigs-compatibility-and-fit-guide",
-    "category": "wigs-makeup",
-    "familySlug": "costume-wigs",
-    "searchText": "How do I check whether a costume wig will fit? Match the exact cap’s stated range and adjustment to the wearer with their own hair arranged as intended. Check the hairline, pressure, stability, view, glasses and removal with the whole outfit. Resolve missing measurements before a final-sale order. Do not force a tight cap, add an undocumented adhesive or use another brand’s cap size as proof. Identify the exact cap and measurement basis Obtain the selected model’s cap measurements, adjustment and relevant measuring directions. Find out whether the number describes the wearer’s head or the unstretched cap. The Judge Wig’s One Size Fits Most label supplies no measured range by itself. Record a missing range as a question to resolve with the exact supplier rather than infer it from another white or judicial wig. Include the hair that must fit underneath Plan how the wearer’s own hair will be contained without creating painful pressure or uneven bulk. Confirm whether the particular wig needs a separate cap and what is actually supplied. The Judge listing sells caps separately, so a photograph must not be read as a full containment kit. A cap that works with one hairstyle may fit differently with the intended event arrangement. Use only the documented adjustment and fixing method Confirm which straps, combs, pins or other fixings the received cap actually includes or permits. Do not cut elastic, enlarge the cap or add glue based on a different manufacturer’s fitting advice. A comfortable fit should not depend on force or an unexplained workaround. Skin-contact adhesive, when genuinely required, creates a separate material and removal decision. Check pressure, hairline and ordinary head movement Assess the received wig under an appropriate ordinary fitting plan and the actual transaction conditions. It should sit as intended without painful pressure, unstable slipping or the need to keep holding it in place. Include normal head turns and the activity the outfit requires. If it does not fit, stop that plan rather than increase tension to preserve the appearance. Include glasses, headwear, vision and removal Consider temples of glasses, any mask or hat, the fringe and long fibers together. The complete combination must allow the needed view, communication and practical removal. Qualify the ordinary fit before movement; do not use stairs or traffic to test restricted sight. A shorter hairstyle or another suitable character plan may work when the full ensemble cannot be used comfortably. Keep styling and transaction questions separate from fit A cap match does not establish a heat limit, material tolerance or return right. Follow the actual fiber instructions for any styling and confirm final-sale or rental conditions before ordering. Keep the fit decision unknown when the necessary measurements or use limits are missing. An available listing or a professional tag cannot complete these checks."
-  },
-  {
-    "site": "costume",
-    "kind": "guide",
-    "title": "Costume Wig Care & Cost: Fiber Limits, Detangling and Storage",
-    "summary": "Budget only the care that the exact fiber, cap and planned reuse require.",
-    "href": "https://costumes.madabase.com/guides/costume-wigs-ownership-cost-and-maintenance",
-    "category": "wigs-makeup",
-    "familySlug": "costume-wigs",
-    "searchText": "What care and extra costs does a costume wig need? Keep the exact fiber and cap care instructions with the wig, then budget any permitted detangling, washing, drying, styling and shape-preserving storage. An unknown heat or wash limit is a reason to obtain instructions, not to borrow a routine from another brand. Buy accessories only when needed, and keep a suitable owned wig instead of replacing it for a new photo or premium label. Build a cost list around the actual package Separate the wig price from any required cap, permitted fixings, care products and transport or storage support. The Judge Wig lists caps and other accessories as separate purchases, but that does not mean every wearer needs an adhesive kit or a full styling-tool set. Price the complete useful look and realistic reuse rather than impose a generic first-year consumables allowance. Keep material and care instructions with the wig Identify the received fiber, cap construction and manufacturer’s washing, drying and styling restrictions before treatment. Preserve the product identity and relevant labels so a later owner does not use a different wig’s routine. No Judge fiber heat or wash specification was established in this review. Obtain the matching directions before choosing a process that depends on them. Detangle without turning a generic tip into a guarantee Use a tool and technique permitted for the actual fiber, curl pattern, styling and cap attachment. Arda’s own FAQ offers fiber-care advice, but its products and construction are not a universal model for every costume wig. Stop if a proposed treatment requires pulling, an unknown chemical or an undocumented heat method. Professional restyling is useful only when the exact wig permits it and the cost makes sense. Plan washing and drying only from the exact directions Check whether the actual wig and any attached decorations may be washed, which products are permitted and how shape should be supported during drying. Do not adopt a fabric-softener mixture, solvent, steam or hot-tool temperature from an unrelated tutorial. A rental can have its own care obligations; obtain permission before treating it. An uncertain cleaning plan should be resolved before relying on repeated wear. Protect the shape and inspect before reuse Store the dry wig as its directions require, protecting its style, cap and attached pieces from crushing or tangling. Keep permitted accessories together without putting pressure on the fibers. Recheck condition, usable fixings and wearer fit before another event, especially after a different hairstyle or transport. No fixed number of wears or wash cycles is guaranteed here. Repair or replace for a specific reason Compare an allowed repair or restyling cost with the value of the actual look and expected use. A failed cap, unsuitable fit or damaged fiber can justify another choice; a higher price, new image or same-name listing does not establish an upgrade. Confirm the actual merchant remedy for a received defect promptly. Keep a suitable owned wig or simpler agreed hairstyle when it still does the job."
-  },
-  {
-    "site": "costume",
-    "kind": "guide",
-    "title": "Costume Mask Buying Guide: Vision, Fit, Removal & Final Sale",
-    "summary": "Choose the exact mask around the wearer’s view and actual event.",
-    "href": "https://costumes.madabase.com/guides/masks-and-masquerade-buying-guide",
-    "category": "masks-prosthetics",
-    "familySlug": "masks-and-masquerade",
-    "searchText": "How do I choose a costume or masquerade mask? Distinguish a tied or strapped mask from a skin-adhered prosthetic, then confirm the exact size, contact materials, view, comfortable breathing, glasses and removal. A photo, working jaw or half-mask label does not establish usable vision. Qualify ordinary fit before movement and reject restrictions; do not use stairs or traffic as a visibility test. Confirm final-sale terms before ordering. Choose the actual type of face covering A rigid masquerade mask, flexible full-head mask and glued foam-latex prosthetic attach and come off differently. Decide which type the event actually needs before comparing prices. A product description can use the word mask for an appliance that requires adhesive. Establish how the exact piece is worn instead of assigning all face-changing products the same fitting and removal routine. Read the exact example without filling its gaps The observed Diablo Matte Black Masquerade Mask, SKU M39050, has one default retailer variant and a matte-black character design. Its current description does not establish measured face fit, usable field of view, contact materials or fastening performance. The decorative finish and a Masquerade category are appearance cues. Obtain the missing physical information before treating this example as suitable for a wearer. Match measurements and skin-contact materials Ask for actual face or head measurements and the specific adjustment, padding and contact surfaces. Check them with the intended wearer, hairstyle and other costume pieces. One size or an adult-looking photo is not an age or fit assessment. Unknown materials and unsuitable pressure are unresolved problems; do not add unapproved padding, straps or skin products to force a match. Qualify vision before considering movement Check the actual eye openings and usable view under an appropriate stationary fitting plan. A wide-looking opening in a photograph does not show where the wearer can see through the received mask. Reject obscured or unstable sight before attempting the event activity. A spotter does not make stairs, a road or a crowded route an appropriate test of restricted vision. Assess breathing, speech and practical removal The wearer needs comfortable ordinary breathing, communication and a practical way to remove the actual mask. A vent, moving jaw or open mouth in a photo does not establish those functions. Include access with gloves or headwear if they are part of the outfit. Stop when breathing, communication or removal is restricted; no fixed wear time can qualify that problem. Check glasses and the complete costume together Include glasses, wig, hat, collar and any decorations that can shift the mask or enter the view. Confirm the actual fastening and removal sequence. A flexible material or premium label does not establish glasses clearance or comfortable pressure. If the pieces conflict, revise the combination rather than assume each separately usable item will work as an ensemble. Keep children’s use and venue requirements explicit Use the exact age and use labels with the child’s capabilities and appropriate adult supervision. Do not assume a smaller adult mask or a new tie is a suitable children’s product. Check the actual venue’s face-covering and prop rules before ordering. Choose a different suitable character treatment when the mask cannot meet the event requirements. Treat makeup or a prosthetic as a new decision An open-face look, cosmetic design or glued appliance may change the visual approach, but each has its own skin-area, material and removal conditions. They are not automatic remedies for an unsuitable mask. Avoid starting a more complex application merely because a full-face piece failed. A suitable existing outfit without a face covering may already communicate the character. Confirm the transaction and complete care instructions Abracadabra NYC’s ordinary sales are final; an uncertain face fit should not be ordered as a routine returnable trial. Confirm the exact item, arrival or pickup and any explicit rental conditions. Follow matching instructions for permitted cleaning, drying and shape protection. Do not immerse, heat, disinfect or alter an undocumented mask using a generic household method. Keep or replace for a demonstrated need Inspect the actual shell, fastenings and contact surfaces before reuse, following their care limits. A loose fastening, damaged surface or changed wearer can alter suitability. A new title, moving feature or higher price does not establish an upgrade. Keep a suitable working mask, remove the face-covering element from the planned look or choose another independently qualified option."
-  },
-  {
-    "site": "costume",
-    "kind": "guide",
-    "title": "Costume Prosthetic Buying Guide: Exact Piece, Adhesive & Removal",
-    "summary": "Buy a compatible application and removal plan for the exact appliance.",
-    "href": "https://costumes.madabase.com/guides/prosthetics-special-effects-buying-guide",
-    "category": "masks-prosthetics",
-    "familySlug": "prosthetics-special-effects",
-    "searchText": "What should I check before buying a costume prosthetic? Identify the exact maker, appliance, material and package, then confirm a compatible adhesive, color system and remover under the matching current instructions. Two Bat Foam Latex products at the retailer have different brands and SKUs; neither is an established successor to the other. Unresolved skin contact, fit or removal means pause or simplify the look, rather than substitute a full-face mask automatically. Identify the exact appliance rather than its character name A foam-latex face appliance, separate ears, a strapped mask and a liquid effect are different products. Record the actual manufacturer, SKU, material, included pieces and intended attachment. A description that calls something a mask does not establish a strap or quick removal. Start with the exact piece and the effect it must create, not an assumed complete transformation kit. Separate the two same-name Bat examples The retailer currently lists a Stage Frights Bat Foam Latex Prosthetic, SKU HD600-117, and an FX Faces Bat, SKU BAT. The FX Faces package expressly lists an unpainted appliance, face form and instruction booklet, with makeup, adhesive and remover excluded. Same-name appearance and different price do not establish identical construction, interchangeable directions or a verified new-model replacement. Resolve materials and the intended skin-contact use Confirm the received appliance and every contact product’s exact material and restrictions for the wearer and intended area. The FX Faces booklet identifies latex; another product’s Latex-free claim cannot qualify this piece or its adhesive. Do not use a known problem material to see whether it becomes tolerable. Missing disclosures or previous reactions require an appropriate alternative or professional advice before a new application plan. Match the adhesive to both the appliance and the wearer Use the appliance’s matching directions together with the exact adhesive’s current label and permitted use. A general skin-safe marketing phrase does not establish compatibility with every foam, silicone or edge. Mehron Spirit Gum is a distinct alcohol/resin adhesive with its own remover instructions. This does not qualify it for the Stage Frights or FX Faces piece without confirming the complete selected system. Arrange the exact remover before application The FX Faces booklet distinguishes adhesive methods and their removal requirements; the Mehron page specifies Spirit Gum Remover for its own adhesive. These examples show why glue and remover must be planned together. Obtain the current matching labels and a practical removal plan before starting. Do not peel forcibly, improvise a household solvent or assume every latex or silicone product comes off the same way. Check fit, openings and comfortable control Follow the exact appliance instructions for a suitable fit assessment and obtain skilled assistance where needed. Its openings, edges and complete ensemble must allow the required sight, comfortable breathing, speech and removal. This guide supplies no cutting, stretching or eye-area solvent technique. An attractive molded face or expressive marketing claim does not qualify the wearer’s actual movement. Plan color and edge work within the matching system Confirm which products the exact appliance permits for surface preparation, coloring and edge work, and which are actually supplied. A paint that works on one foam or finished mask is not universally compatible with every prosthetic. Keep pigment use on actual skin within its own intended-area labels. A retailer tutorial is not permission to mix unnamed adhesives, solvents and cosmetics near eyes or airways. Include preparation, wearer checks and an unhurried exit Allow enough time for the selected system’s actual application, any prescribed advance checks and complete removal. A small-area check under product directions does not guarantee reaction-free full wear or override a known sensitivity. Stop after an unexpected reaction and obtain appropriate care. When the time or skill needed is unavailable, simplify the character rather than rush the removal or assume another face covering is suitable. Price consumables and reuse without a fixed guarantee Include only the required adhesive, remover, permitted color and tools, along with the actual application labor. Reuse depends on the particular appliance, permitted cleaning, edge condition and removal. The FX Faces booklet discusses reuse, but that is not a fixed number of safe wears for every received piece or another brand. Do not buy a larger supply solely from an assumed application count. Confirm final sale and keep a simpler suitable look Check the exact item, delivery, missing-piece process and final-sale terms before ordering. Opening or using a contact product does not create a routine return right. A face form or booklet in one package must not be inferred for the other Bat listing. Keep a suitable existing look, omit the appliance or choose an independently suitable option when identity, contact or removal remains unresolved."
-  },
-  {
-    "site": "costume",
-    "kind": "guide",
-    "title": "Stage Makeup Buying Guide: Exact Shade, Skin Area & Removal",
-    "summary": "Choose the labeled product, size and complete removal plan for the intended look.",
-    "href": "https://costumes.madabase.com/guides/theatrical-face-body-makeup-buying-guide",
-    "category": "wigs-makeup",
-    "familySlug": "theatrical-face-body-makeup",
-    "searchText": "How do I choose face or body makeup for a costume? Choose the exact cosmetic and shade for the intended skin area, then confirm ingredients, application, setting, hygiene and removal. Finished cosmetics generally do not receive FDA premarket approval; color additives have separate use permissions. Ben Nye’s half-ounce CK-5 and one-ounce EW-5 are different variants. Contact lenses, liquid latex, adhesives and removers are separate decisions, not interchangeable face paint. Define the color effect and the actual application area Agree the appearance, skin areas, event lighting and time available for application and removal. A colored surface effect, a raised prosthetic and artificial blood do different jobs. A smaller design using already suitable cosmetics may meet the brief without an elaborate kit. Keep eyes, lips and other restricted areas out of a generic face-or-body assumption. Read intended use without inventing FDA product approval Check the exact product, shade, ingredients and current use restrictions. FDA explains that finished cosmetics generally do not need premarket approval, while color additives have separate requirements. Do not describe a cosmetic as FDA-approved merely because it is sold by a professional brand. A general face or body label does not by itself establish every eye or lip use. Distinguish the CK-5 and EW-5 size variants The current Abracadabra listing offers Ben Nye Burns & Blisters Wheel as half-ounce CK-5 and one-ounce EW-5, with separate prices. Ben Nye’s original CK-5 page identifies that specific wheel and lists ingredients subject to change. Select the actual size and received label; a lower From price need not describe the larger variant. No newly released successor or identical application count is established by the size difference. Match the base and any setting products Identify the selected cosmetic’s actual formulation, permitted application and any required setting or removal products. Cream, water-activated and other systems can create different preparation and transfer questions. Do not add alcohol, a household liquid or a sealer based solely on a tutorial for another product. Match the exact instructions before buying extras; a larger kit is not automatically the simpler route. Keep general makeup out of unqualified eye and lip use Read each shade’s intended-area limits even when the package photograph shows a dramatic look. FDA’s novelty-makeup guidance distinguishes color permissions and label restrictions. A swatch on an arm cannot authorize an eye or lip application. Choose a documented suitable design rather than move a face pigment into a restricted area to finish the character. Allow advance checks without promising allergy-free wear Follow the product’s labels and appropriate advice for the wearer, including any advance small-area check. FDA’s Halloween guidance recommends trying planned makeup in advance; this is not a guarantee against reactions during full wear. Do not use a known problem product or treat a Natural or Hypoallergenic label as individual approval. Stop after an unexpected reaction and seek appropriate care. Keep hands, containers and applicators clean FDA advises clean hands and containers and avoiding shared makeup. Follow the exact products’ and tools’ hygiene directions, including any professional kit procedure. Do not add saliva or improvise a disinfecting solvent to make a used product shareable. A brush set or palette is not evidence that the complete application process is hygienic. Assess the actual appearance without inventing performance Judge the intended look under relevant event lighting and with the costume pieces it may touch, within the cosmetic’s permitted use. Coverage, transfer, sweat resistance and longevity are product- and condition-specific; none was measured here. Do not promise all-night wear, waterproof performance or a fixed number of applications from brand reputation or pan size. Select the amount needed for the actual job. Plan removal and storage before the event Obtain the label-directed remover and a realistic amount of time for gentle removal. A cosmetic remover is not automatically suitable for every adhesive or prosthetic. Keep products closed and stored under their actual limits, and review condition and labeling before reuse. A newly observed retail listing does not establish the manufacturing date or freshness of the received cosmetic. Keep lenses, latex and adhesives in their own pathways Decorative contact lenses need a separate eye-care, prescription and fitting pathway; a costume photo or merchant care sheet is not a makeup suitability check. Liquid latex builds or seals effects and introduces its own material and removal conditions. Adhesives, removers, brushes and wig accessories are supporting products rather than pigments. Do not select one of these as a substitute because no qualified color option is available. Confirm the exact purchase or keep the simpler design Before ordering, compare the selected shade, size, included pieces, actual delivery and final-sale conditions. Buy required support products only after their compatibility is known. A package that lacks the matching removal plan is unfinished even if its price is attractive. Keep a suitable existing cosmetic design or omit the effect when the necessary product or intended-area evidence remains unresolved."
-  },
-  {
-    "site": "costume",
-    "kind": "guide",
-    "title": "Props and Animatronics vs. compact static decorations",
-    "summary": "Compare an animated Halloween prop with static decorations using the full movement area, power and weather rating, audience, setup time, shipping, and storage.",
-    "href": "https://costumes.madabase.com/guides/props-and-animatronics-vs-alternatives",
-    "category": "props-animatronics",
-    "familySlug": "props-and-animatronics",
-    "searchText": "Choose an animatronic only when you can accommodate its documented movement area, approved power arrangement, intended environment, and setup work. A static prop is usually simpler when the display is narrow, unattended, or difficult to power. Compare exact products: a dramatic video does not establish outdoor suitability, motion clearance, included parts, or an achievable arrival date."
   },
   {
     "site": "main",

@@ -70,7 +70,7 @@ assert.equal(attempts, 0);
 assert.equal((await post(valid)).body.persisted, true);
 assert.equal((await post(valid)).body.persisted, true);
 assert.equal(writes.size, 1);
-for (const bad of [null, [], { ...valid, productSlug: 123 }, { ...valid, site: "costume" }, { ...valid, merchant: "Wrong" }, { ...valid, productSlug: valid.productSlug + "-extra" }, { ...valid, path: "https://example.com" }, { ...valid, site: "baby", productSlug: "family-toddler-learning-towers-b001echxvc" }]) {
+for (const bad of [null, [], { ...valid, productSlug: 123 }, { ...valid, merchant: "Wrong" }, { ...valid, productSlug: valid.productSlug + "-extra" }, { ...valid, path: "https://example.com" }, { ...valid, site: "baby", productSlug: "family-toddler-learning-towers-b001echxvc" }]) {
   assert.equal((await post(bad, true)).status, 400);
 }
 assert.equal(attempts, 2);

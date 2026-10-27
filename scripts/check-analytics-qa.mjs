@@ -11,7 +11,7 @@ const scenarios = [
   ["?utm_medium=verification", true], ["?utm_source=google&utm_medium=organic", false],
   ["?utm_source=quora&utm_medium=referral", false], ["", false],
 ];
-for (const component of ["affiliate/components/ClarityAnalytics.tsx", "main/components/Analytics.tsx", "wellness/components/ClarityAnalytics.tsx"]) {
+for (const component of ["affiliate/components/ClarityAnalytics.tsx", "main/components/Analytics.tsx"]) {
   const componentSource = fs.readFileSync(new URL(`../apps/${component}`, import.meta.url), "utf8");
   const template = componentSource.match(/\{`([\s\S]*?)`\}/)?.[1];
   assert.ok(template, component);
@@ -20,7 +20,7 @@ for (const component of ["affiliate/components/ClarityAnalytics.tsx", "main/comp
       const values = new Map();
       let loads = 0;
       const window = {
-        location: { search, pathname: "/guides/example", hostname: component.startsWith("wellness") ? "wellness.madabase.com" : "madabase.com" },
+        location: { search, pathname: "/guides/example", hostname: "madabase.com" },
         sessionStorage: { setItem(k, v) { if (storageUnavailable) throw Error("disabled"); values.set(k, v); }, getItem(k) { if (storageUnavailable) throw Error("disabled"); return values.get(k); } },
       };
       const context = vm.createContext({ exports: {}, window, URLSearchParams, document: { createElement: () => ({}), getElementsByTagName: () => [{ parentNode: { insertBefore() { loads += 1; } } }] } });

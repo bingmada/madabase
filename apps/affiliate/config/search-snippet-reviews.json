@@ -83,5 +83,190 @@
     "description": "Vue 3 needs suitable panel installation and cloud app access. Check the sensor bundle, Ethernet or Wi-Fi, and what detailed data is lost during outages.",
     "answer": "Vue 3 is a strong fit when circuit-level trends justify professional panel work and cloud access is acceptable. It is not a local-first energy monitor: the device keeps measuring during outages, but the app cannot read it directly without the cloud.",
     "referenceDate": "October 25, 2026"
+  },
+  "baby:guide:travel-stroller-for-small-car-guide": {
+    "description": "Check the complete stroller fold, trunk opening, loading path and luggage space, then confirm child suitability and the exact selected version.",
+    "answer": "Compare the exact stroller's folded dimensions with both the trunk opening and usable storage space. Include the travel bag and any parts left attached. Then check that you can load it, close the hatch and carry the other luggage. A small fold does not establish child suitability, comfortable handling or airline acceptance.",
+    "referenceDate": "October 26, 2026"
+  },
+  "baby:guide:travel-stroller-folded-size-checklist": {
+    "description": "Measure the folded stroller, narrow opening and loading path. Separate City Tour 2 model-table dimensions from the selected bundle and airline rules.",
+    "answer": "Measure the actual folded package's length, width and height, including the bag and parts you will leave attached. Record the narrowest opening, usable storage dimensions and the route into that space. Check both the car and home storage, then verify the real loading motion. Keep unknown measurements unresolved rather than treating a compact label as a fit result.",
+    "referenceDate": "October 26, 2026"
+  },
+  "baby:guide:baby-monitor-subscription-and-privacy-checklist": {
+    "description": "Check baby-monitor live view, event versus video history, Nanit plan renewals, required MFA and feature-specific outage limits before paying.",
+    "answer": "It depends on the model and the feature. Nanit says its core live view, background audio and several alerts remain available without Insights, while history and analytics have separate plan limits. Check your actual camera, mounting setup, account offer and renewal terms. A subscription, Wi-Fi connection or security claim does not establish every function's outage behavior.",
+    "referenceDate": "October 26, 2026"
+  },
+  "baby:guide:diaper-pail-replacement-bag-annual-cost-guide": {
+    "description": "Calculate diaper-pail bag or cassette costs from actual use. Check Ubbi dry-cloth care and whether replacing a working pail saves anything.",
+    "answer": "For separate bags, multiply the delivered price per usable bag by the household's changes per week and 52. For a continuous-film cassette, use observed cassette consumption rather than assuming a fixed number of bags or trusting a maximum diaper count. Add required consumables consistently. An unknown refill yield should produce a cost range, not a precise saving or an automatic new-pail purchase.",
+    "referenceDate": "October 26, 2026"
+  },
+  "baby:guide:travel-bottle-warmer-heating-cleaning-battery-guide": {
+    "description": "Warming is optional. Compare milk handling, direct-contact cleaning and trip power needs, including the MW05 supplied-adapter warning.",
+    "answer": "First decide whether the feed needs warming: CDC says breast milk and infant formula do not have to be warmed. If warming is wanted, check the liquid-contact parts, cleaning and drying routine, real travel volume and exact charging instructions. For MW05 packages with an adapter, resolve Momcozy's 18V-adapter warning before treating that adapter as a general USB-C charger.",
+    "referenceDate": "October 26, 2026"
+  },
+  "pet:guide:automatic-feeder-buying-guide": {
+    "description": "Check dry-food fit, actual portion weights, RFID versus scheduling, emergency power limits and daily human care before choosing a feeder.",
+    "answer": "Start with the exact food, the pet's access needs and an established feeding plan. Confirm that the chosen model can dispense repeatable portions of that food, run its saved schedule in the required backup state and be cleaned as instructed. Dry-food compatibility is not evidence of superior reliability, and an app log does not prove the pet received or ate a meal. Keep a human care and fault-response plan.",
+    "referenceDate": "October 26, 2026"
+  },
+  "baby:product:ubbi-steel-diaper-pail": {
+    "description": "Ubbi supports standard bags, but savings depend on real use. Check dry-cloth-only care, liner airflow, exact white model and replacement cost.",
+    "answer": "Consider Ubbi when standard-bag flexibility solves a real refill problem and its dry-cloth care routine suits the household. Compare actual annual consumables and the cost of replacing a working pail; no universal savings or odor-elimination result has been measured here.",
+    "referenceDate": "October 26, 2026"
+  },
+  "baby:product:momcozy-mw05-portable-milk-warmer": {
+    "description": "Check MW05 direct-contact cleaning, optional warming and exact charging package. Affected supplied adapters must not power other USB-C devices.",
+    "answer": "Consider MW05 only when warming away from an outlet solves a real task and the exact adapter, liquid-transfer and cleaning routine are understood. Identify any adapter covered by the manufacturer warning before sharing travel charging equipment. Keep a working unwarmed or warm-water routine when extra equipment adds no benefit.",
+    "referenceDate": "October 26, 2026"
+  },
+  "baby:product:baby-jogger-city-tour-2-stroller": {
+    "description": "Check City Tour 2 Eco version, complete fold, child instructions and car loading. A model-family measurement does not verify a retailer bundle.",
+    "answer": "City Tour 2 remains a model family to compare for limited storage: the current manufacturer collection lists City Tour 2 Eco. Confirm that the retailer's selected version and supplied parts match the instructions you use; no replacement is needed if the existing stroller already meets the job.",
+    "referenceDate": "October 26, 2026"
+  },
+  "baby:roundup:best-travel-strollers": {
+    "description": "Compare City Tour 2 and Summer 3Dlite by the exact child and model fit, complete fold and loading routine, with airline and no-buy checks.",
+    "answer": "Compare the complete folded stroller with both the storage opening and usable space, then check the child's exact seat instructions and the caregiver's lift. City Tour 2 and Summer 3Dlite are model references to verify, not tested comfort winners or guaranteed cabin bags. Keep the existing suitable stroller if it already fits; pause for unknown child suitability or an unconfirmed selected version.",
+    "referenceDate": "October 26, 2026"
+  },
+  "baby:roundup:best-baby-monitors-for-apartments": {
+    "description": "Compare parent-unit and Wi-Fi monitor workflows, actual room coverage, Nanit subscription limits, account access and safe cord placement.",
+    "answer": "Compare a dedicated parent unit when the job is checking from elsewhere at home, and a Wi-Fi account when remote caregiver access is necessary. For Nanit, core live view, background audio and alerts remain available without Insights, while history and analytics depend on the plan. Test the actual rooms and notification path; apartment size, a range claim or breathing analytics does not establish safety or reliable coverage.",
+    "referenceDate": "October 26, 2026"
+  },
+  "pet:roundup:best-automatic-cat-feeders": {
+    "description": "Compare Granary scheduling with One RFID access. Check dry-food size, measured portion weights, backup limits and care beyond the app log.",
+    "answer": "Start with Granary PLAF103 when the job is scheduling compatible dry food and selective access is unnecessary. Compare One RFID PLAF301 when access for one pet matters and its dedicated collar tag and reader are suitable. Neither model identifies an implanted microchip, turns a volume setting into a fixed gram allowance or replaces daily human care. Keep the current routine if it already works.",
+    "referenceDate": "October 26, 2026"
+  },
+  "baby:product:summer-3dlite-convenience-stroller": {
+    "description": "Summer 3Dlite purchase is paused pending exact model and manual matching. Check child requirements, the complete fold and current Kids2 SKU differences.",
+    "answer": "Compare the documented 3Dlite family only after the received model, child requirements and actual loading routine are established. The historical B0D5BGKNBX purchase remains paused. Keep a suitable existing stroller instead of buying a second one for an unverified price or comfort advantage.",
+    "referenceDate": "October 26, 2026"
+  },
+  "baby:product:infant-optics-dxr-8-pro": {
+    "description": "Check DXR-8 PRO room coverage, safe cords and exact power setup. Compare PRO SS separately for split-screen and dual audio; keep suitable current gear.",
+    "answer": "Compare DXR-8 PRO when a dedicated at-home screen meets the job and the exact bundle, power setup and room checks pass. Compare PRO SS separately if two-room split-screen and simultaneous audio matter. Keep a suitable working monitor rather than upgrading for a newer name alone.",
+    "referenceDate": "October 26, 2026"
+  },
+  "baby:product:nanit-pro-smart-baby-monitor": {
+    "description": "Nanit Essentials purchase remains paused. Separate the historical floor-stand bundle from current display choices, plan history and renewal terms.",
+    "answer": "Use this page to compare the floor-stand and account workflow, with the exact historical Essentials purchase path still paused. Confirm any replacement configuration independently. Keep a suitable existing monitor when core viewing already meets the need; extra history, analytics or a connected display are optional.",
+    "referenceDate": "October 26, 2026"
+  },
+  "pet:product:petlibro-granary-automatic-cat-feeder": {
+    "description": "Check PLAF103 food, portion weights, bowl version and emergency mode. Granary 2 weighing is a separate model comparison, not this ASIN upgrade.",
+    "answer": "Compare PLAF103 for timed dry meals when selective access is unnecessary and actual food, portion, schedule and care checks pass. Confirm capacity and bowl configuration separately. Keep suitable existing gear, or compare Granary 2 for a specific weighing need; this link remains the older PLAF103 reference.",
+    "referenceDate": "October 26, 2026"
+  },
+  "pet:product:petlibro-one-rfid-smart-feeder": {
+    "description": "One RFID purchase remains paused. Verify its dedicated tag and reader, actual portions and revision-specific battery Wi-Fi before relying on it.",
+    "answer": "Compare One RFID only for a real selective-access need after the intended pet, dedicated tag/reader and food checks pass. The historical ASIN purchase remains paused, and backup connectivity needs revision-specific confirmation. Keep an effective current routine when access hardware is unnecessary.",
+    "referenceDate": "October 26, 2026"
+  },
+  "pet:guide:pet-camera-without-too-many-subscriptions": {
+    "description": "Separate camera activation, free live view, local-card recording and cloud plans. Compare the billed term and keep post-cancellation access unknown when unclear.",
+    "answer": "Some can, but the exact hardware and purchase contract decide. Furbo Standalone basic features differ from its Subscription Required offers. Wyze local card recording is separate from paid cloud events and AI. List the functions you need, identify the exact model and add the billed plan term before comparing costs; do not assume every camera becomes free after cancellation.",
+    "referenceDate": "October 26, 2026"
+  },
+  "pet:guide:cat-water-fountain-buying-guide": {
+    "description": "Choose a cat fountain by exact filters, pump access, placement and cleaning. Check Catit 43742 separately from LED or stainless models and keep a fresh bowl.",
+    "answer": "Choose a fountain only when you can clean its water path, source its exact filters and monitor ordinary use. The original Catit Flower 43742 is a 3 L reference, not a promise of days without care. Confirm the selected version, accessible pump and suitable power location, keep a fresh-water bowl available, and retain a working bowl routine when a fountain adds no benefit.",
+    "referenceDate": "October 26, 2026"
+  },
+  "pet:guide:dog-bed-for-small-apartment-guide": {
+    "description": "Measure usable sleeping area and the full dog-bed footprint. Check each layer’s care and keep a suitable bed; a hair roller is a separate cleanup tool.",
+    "answer": "Measure the dog’s ordinary sleeping shape and the bed’s usable inner area, then tape out its full outer footprint and access route. Bolsters can take space away from the sleeping surface. Confirm the exact size and which layers may be washed; keep a suitable existing bed if replacement only adds bulk. A hair roller cleans fabric and does not substitute for a bed.",
+    "referenceDate": "October 26, 2026"
+  },
+  "pet:guide:pet-camera-privacy-and-placement-guide": {
+    "description": "Check pet-camera view, account sharing, authentication, recording states and cable placement. Model-specific privacy controls do not prove complete security.",
+    "answer": "Frame the pet’s useful area while avoiding private household spaces and exposed cables. Use individual account sharing where supported, check authentication and recovery, and distinguish recording controls from lens position or status lights. Test the intended view and access from the rooms and phones you use; a privacy label or connected app is not proof of secure or complete coverage.",
+    "referenceDate": "October 26, 2026"
+  },
+  "pet:guide:cat-fountain-filter-replacement-guide": {
+    "description": "Match the fountain and filter generation, check condition and cleaning separately, and calculate real refill cost before replacing a working fountain.",
+    "answer": "Follow the exact fountain and replacement-pack instructions and replace earlier when condition or restricted flow requires it. The original Catit 43742 manual specifies 3–4 weeks for its filter and weekly fountain maintenance; the current Triple Action pad page recommends 30 days or visible saturation. Those intervals do not replace cleaning, and a dirty filter does not mean the whole fountain must be replaced.",
+    "referenceDate": "October 26, 2026"
+  },
+  "pet:guide:pet-grooming-vacuum-noise-coat-cleaning-guide": {
+    "description": "Check pet response, coat tools, noise limits and P1 Pro filter drying. Keep an ordinary brush or professional grooming route when a vacuum does not fit.",
+    "answer": "Only if the individual pet accepts the sound and airflow, the tool suits its coat and skin, and the household can maintain the exact model. A quieter-sounding claim or five attachments does not prove suitability. Keep an ordinary brush or professional grooming route when those checks fail; do not use a kit to improvise mat removal or a universal shave.",
+    "referenceDate": "October 26, 2026"
+  },
+  "pet:product:neakasa-p1-pro-pet-grooming-vacuum": {
+    "description": "Check P1 Pro coat fit, pet response and filter drying. Manufacturer noise values do not predict acceptance; keep other kit specifications separate.",
+    "answer": "Consider P1 Pro only when the pet accepts the sound and airflow, the chosen tool suits its coat and the household can clean and fully dry the filters. It is not a universal mat-removal or shaving solution, and a manufacturer acoustic figure does not establish quietness for the individual animal.",
+    "referenceDate": "October 26, 2026"
+  },
+  "pet:product:furbo-360-dog-camera": {
+    "description": "Is Furbo free? Standalone basic features differ from the linked paid-activation 360 Dog offer. Check ongoing terms; post-cancellation access is unresolved.",
+    "answer": "Furbo Standalone has documented free basic features, but the linked B0BWN22T25 requires paid activation. Choose this subscription-required camera only if the applicable ongoing contract and treat interaction are useful. Free basic access after cancellation remains unconfirmed because official articles conflict.",
+    "referenceDate": "October 26, 2026"
+  },
+  "pet:product:wyze-cam-pan-v3-pet-camera": {
+    "description": "Check Pan v3 local-card, network and privacy limits. Its historical ASIN remains paused for identity drift; Pan v4 is a separate model, not an ASIN upgrade.",
+    "answer": "Pan v3 can be compared for ordinary room check-ins when its exact network, recording and privacy behavior suits the task. The historical ASIN does not currently qualify as its purchase path. Keep a working camera or wait for a matched listing rather than buying a different fixed camera or a paid-plan substitute.",
+    "referenceDate": "October 26, 2026"
+  },
+  "pet:product:petfusion-ultimate-dog-bed": {
+    "description": "PetFusion’s exact purchase stays paused. Check the selected size, usable sleeping area and layer care; a hair roller does not substitute for a bed.",
+    "answer": "Keep the PetFusion purchase paused until the exact size, usable area and layer-specific instructions match the actual offer. No measured support, chew resistance or wash performance is established here. Keep an intact suitable bed when replacement does not solve a real fit or care problem.",
+    "referenceDate": "October 26, 2026"
+  },
+  "pet:product:chomchom-roller-pet-hair-remover": {
+    "description": "Match ChomChom Original Size Black Classic, exact fabric and care instructions. No universal pickup, deep-cleaning, washing or savings result is established.",
+    "answer": "Consider Black Classic only for a compatible surface and an identified cleanup need after reading its applicable instructions. The indexed listing supports the chamber mechanism, not universal fabric safety, deep cleaning or guaranteed savings. Keep an existing effective tool when another roller adds little.",
+    "referenceDate": "October 26, 2026"
+  },
+  "pet:product:catit-flower-cat-water-fountain": {
+    "description": "Check original Catit 43742 cleaning, pump and exact filter generation. Its 3 L capacity does not replace water checks, a fresh bowl or ordinary care.",
+    "answer": "Consider original 43742 when its placement, exact filters and cleaning routine suit the home and the cat uses it. Do not buy it as a proven hydration treatment or a way to leave water unchecked. Keep a suitable bowl routine when a fountain adds no useful benefit.",
+    "referenceDate": "October 26, 2026"
+  },
+  "pet:roundup:best-pet-cameras-for-apartments": {
+    "description": "Compare basic pet check-ins with treat interaction. Keep Wyze’s identity hold and distinguish paid-activation Furbo from Standalone and newer camera models.",
+    "answer": "Use a basic check-in or local-recording workflow when interaction is unnecessary; compare Furbo only when treat interaction and its applicable plan are useful. The historical Wyze ASIN remains paused for identity drift. The linked Furbo is paid-activation hardware, not confirmed subscription-free equipment. Keep a suitable existing camera when neither adds value.",
+    "referenceDate": "October 26, 2026"
+  },
+  "pet:roundup:best-dog-beds-and-comfort-upgrades": {
+    "description": "Separate dog-bed fit from surface-hair cleanup. PetFusion remains held; ChomChom Black Classic does not replace a bed, cover washing or deep cleaning.",
+    "answer": "Choose a bed for usable sleeping area, room access and exact layer care. Choose a hair-removal tool only for compatible fabric cleanup. PetFusion’s historical purchase remains paused because its exact SKU and care are unresolved; ChomChom Black Classic does not replace a bed, washing or deep cleaning. Keep suitable existing equipment when replacement adds no value.",
+    "referenceDate": "October 26, 2026"
+  },
+  "pet:roundup:furbo-360-vs-wyze-cam-pan-v3-for-pets": {
+    "description": "Compare Furbo’s paid-activation contract with Pan v3 recording tasks. Keep the held Wyze identity, cancellation unknowns and newer models separate.",
+    "answer": "Compare Furbo when treat interaction and an acceptable ongoing contract are part of the task. Compare the documented Pan v3 workflow when ordinary check-ins or local-card recordings matter instead. The historical Wyze ASIN is held for a different observed camera identity, and the linked Furbo is paid-activation hardware; neither is a verified free-use substitute for the other.",
+    "referenceDate": "October 26, 2026"
+  },
+  "pet:guide:pet-gps-tracker-subscription-cost-coverage-guide": {
+    "description": "Compare pet GPS tracker subscription totals, renewal and actual coverage. Check DOG 6 collar fit and keep a practical recovery plan when no tracker fits.",
+    "answer": "Budget the tracker and the full billed subscription term separately. A monthly equivalent can require years of prepayment. Check the exact tracker on your normal routes: a country coverage claim or good phone signal does not establish reliable tracking there.",
+    "referenceDate": "October 26, 2026"
+  },
+  "pet:guide:automatic-litter-box-accessories-cost-guide": {
+    "description": "Budget litter, liners and odor refills for the exact litter box. Check M1 Plus and PuraMax 2 bundles, skip unneeded extras and keep a conventional box.",
+    "answer": "Start with the received machine’s manual and a conventional backup box. Buy compatible essentials first; add a step or mat only for an observed need. PuraMax 2 spray hardware and M1 family instructions do not apply to every package or revision.",
+    "referenceDate": "October 26, 2026"
+  },
+  "pet:product:tractive-dog-6-gps-tracker": {
+    "description": "Check DOG 6 subscription totals, route coverage and battery conditions. Separate XL models and keep exact hardware, seller and return checks explicit.",
+    "answer": "Consider DOG 6 only when the exact received model fits the dog and collar, the full subscription term is affordable, and a permitted evaluation can confirm useful updates on the required routes. Keep physical containment and an ordinary recovery plan. We have not verified this historical ASIN’s current offer or exact radio revision.",
+    "referenceDate": "October 27, 2026"
+  },
+  "pet:product:neakasa-m1-plus-self-cleaning-litter-box": {
+    "description": "Check M1 Plus dimensions, cat fit and received version. Current Plus details and the linked older M1 manual differ; confirm space and accessories before buying.",
+    "answer": "Consider an M1 Plus only after confirming the exact received version, cat eligibility, stable space, applicable manual and the litter/liner package. Open-top construction is not proof that every large cat fits or that cleaning is risk free. Keep a suitable conventional box when acceptance or documentation is unresolved.",
+    "referenceDate": "October 27, 2026"
+  },
+  "pet:product:petkit-puramax-2-self-cleaning-litter-box": {
+    "description": "Check PuraMax 2 cat age and weight limits, exact manual, sifter and spray bundle. Kitten Mode does not override overall eligibility; keep a backup box.",
+    "answer": "Consider the exact PuraMax 2 only after the cat meets the applicable age and weight guidance, accepts the machine, and the owner can maintain sensor space, correct litter and cleaning. The reviewed manual recommends against use below six months or 1.5 kg. Keep a suitable conventional box during growth, transition or any unresolved condition.",
+    "referenceDate": "October 27, 2026"
   }
 }

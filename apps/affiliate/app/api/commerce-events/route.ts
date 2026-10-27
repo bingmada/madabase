@@ -5,7 +5,6 @@ import { validateCommerceEvent, knownAutomation } from "@/lib/commerce-events";
 import { isPublishedCommerceClick } from "@/lib/commerce-inventory";
 import { commerceReleaseId } from "@/lib/release-identity";
 import { getAffiliatePrisma, hasDatabaseUrl } from "@/lib/db";
-import { getCostumeCatalogProduct, isCostumeProductIndexable } from "@/lib/costume-catalog";
 
 const headers = {"Cache-Control":"private, no-store"};
 export async function POST(request: Request) {
@@ -20,8 +19,7 @@ export async function POST(request: Request) {
   const payload = validateCommerceEvent(await request.json().catch(()=>null),host);
   if (!payload || payload.releaseId !== commerceReleaseId()) return NextResponse.json({ok:false,reason:"invalid_event"},{status:400,headers});
   if (payload.eventType !== "content_view" && !isPublishedCommerceClick(payload.site,payload.productSlug,payload.merchant)) {
-    const product = payload.site === "costume" && payload.merchant === "Abracadabra NYC" ? await getCostumeCatalogProduct(payload.productSlug) : null;
-    if (!product || !isCostumeProductIndexable(product)) return NextResponse.json({ok:false,reason:"invalid_offer"},{status:400,headers});
+    return NextResponse.json({ok:false,reason:"invalid_offer"},{status:400,headers});
   }
   let qa = host === "localhost" || host === "127.0.0.1" || host.endsWith(".localhost");
   try {qa ||= hasQaParameters(new URL(request.headers.get("referer") || request.url).search);} catch { /* No valid referrer. */ }

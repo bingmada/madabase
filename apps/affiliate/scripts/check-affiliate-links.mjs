@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 import { loadAffiliateTypescript } from "./lib/load-affiliate-typescript.mjs";
 
 const { publishedCommerceInventory } = loadAffiliateTypescript("../../lib/commerce-inventory.ts");
+const amazonOfferBlockStatuses = ["identity-drift", "unavailable", "documentation-unverified", "end-of-life"];
 
 const root = path.resolve(new URL("../../..", import.meta.url).pathname);
 const offerBlockPath = path.join(root, "apps/affiliate/config/amazon-offer-blocks.json");
@@ -15,7 +16,6 @@ const siteTrackingIds = {
   homeoffice: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_HOMEOFFICE ?? "madaoffice-20",
   baby: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_BABY ?? "madababy-20",
   pet: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_PET ?? "madapets-20",
-  style: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_STYLE ?? "madastyle-20",
 };
 const inventoryOnly = process.argv.includes("--inventory");
 const siteArgument = process.argv.find((argument) =>
@@ -39,7 +39,7 @@ function readOfferBlocks() {
         typeof block.site !== "string" ||
         typeof block.slug !== "string" ||
         !/^[A-Z0-9]{10}$/.test(block.asin ?? "") ||
-        !["identity-drift", "unavailable"].includes(block.status),
+        !amazonOfferBlockStatuses.includes(block.status),
     )
   ) {
     throw new Error("amazon-offer-blocks.json contains an invalid block");

@@ -1,4 +1,4 @@
-export type SiteKey = "pet" | "homeoffice" | "baby" | "network" | "smarthome" | "style" | "costume";
+export type SiteKey = "pet" | "homeoffice" | "baby" | "network" | "smarthome";
 
 export type MarketKey = "gb" | "ca" | "de" | "nl";
 export type AmazonMarketKey = "us" | MarketKey;
@@ -40,6 +40,9 @@ export type Product = Publishable & {
   updatedAt?: string;
   evidenceMode?: EvidenceMode;
   researchNote?: string;
+  purchaseCheck?: string;
+  /** Explicit task-matched substitutes; an empty list keeps an unavailable offer paused. */
+  purchaseAlternatives?: string[];
   externalTests?: ExternalTestEvidence[];
   sources?: Array<{ name: string; url: string; note?: string }>;
   editorialSections?: Array<{ heading: string; body: string }>;
@@ -87,6 +90,9 @@ export type Roundup = Publishable & {
   category: string;
   intent: string;
   quickAnswer?: string;
+  purchaseCheck?: string;
+  /** Different tasks require choosing a model from the comparison before buying. */
+  purchaseFlow?: "task-links";
   intro?: string;
   sources?: Array<{ name: string; url: string; note?: string }>;
   sections?: Array<{ heading: string; body: string }>;
@@ -147,6 +153,8 @@ export type Guide = Publishable & {
   relatedRoundups: string[];
   relatedProducts?: string[];
   relatedGuides?: string[];
+  /** Keep the authored next steps, including an intentionally empty list. */
+  relatedGuidePolicy?: "explicit";
   relatedTools?: string[];
   familySlug?: string;
   familyRole?: "buying" | "comparison" | "fit" | "ownership" | "workflow" | "safety";

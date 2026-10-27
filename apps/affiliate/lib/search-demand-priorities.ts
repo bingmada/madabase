@@ -187,8 +187,6 @@ const priorities: Record<SiteKey, SearchDemandPriority[]> = {
       decision: "Compare privacy, placement, local storage, subscriptions, and neighbor noise.",
     },
   ],
-  style: [],
-  costume: [],
 };
 
 // Search Console recovery queue reviewed on August 23, 2026. These are
@@ -271,8 +269,6 @@ const homepageRecoveryPaths: Record<SiteKey, string[]> = {
     "/guides/furbo-360-placement-height-and-wifi-guide",
     "/best/furbo-360-vs-wyze-cam-pan-v3-for-pets",
   ],
-  style: [],
-  costume: [],
 };
 
 export function siteSearchDemandPriorities(site: SiteKey) {

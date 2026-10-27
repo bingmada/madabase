@@ -48,7 +48,6 @@ const hosts = {
   homeoffice: "homeoffice.madabase.com",
   baby: "baby.madabase.com",
   pet: "pets.madabase.com",
-  costume: "costumes.madabase.com",
 };
 const validSites = new Set(Object.keys(hosts));
 const targets = recovery.targets ?? [];

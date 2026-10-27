@@ -257,54 +257,6 @@ const decisionModules: SiteDecisionModule[] = [
       },
     ],
   },
-  {
-    site: "costume",
-    slug: "scene-props-planning",
-    eyebrow: "Build the scene before buying the prop",
-    title: "Plan space, power, timing, and storage for Halloween",
-    description: "Treat a large prop as a seasonal setup with delivery, footprint, anchoring, power, weather, and off-season storage requirements.",
-    links: [
-      {
-        href: "/guides/large-prop-animatronic-space-and-power-checklist",
-        label: "Check animatronic space and power",
-        note: "Footprint, ceiling height, outlets, anchoring, and weather",
-      },
-      {
-        href: "/guides/halloween-fog-machine-lighting-power-guide",
-        label: "Plan fog, lighting, and power",
-        note: "Visibility, rated fluid, cables, weather, and shutdown",
-      },
-      {
-        href: "/guides/costume-prop-care-and-storage-guide",
-        label: "Protect props between events",
-        note: "Cleaning, drying, batteries, packing, and storage space",
-      },
-    ],
-  },
-  {
-    site: "costume",
-    slug: "fit-finish-repeat-use",
-    eyebrow: "A look that survives the whole event",
-    title: "Resolve fit, materials, visibility, and finish",
-    description: "Combine measurements, mask comfort, hair, makeup, and repeat-use care before committing to a complete character look.",
-    links: [
-      {
-        href: "/guides/special-effects-makeup-skin-contact-removal-guide",
-        label: "Plan special-effects makeup safely",
-        note: "Skin-contact materials, patch directions, removal, and cleanup",
-      },
-      {
-        href: "/guides/mask-and-prosthetic-fit-materials-guide",
-        label: "Check mask and prosthetic fit",
-        note: "Materials, ventilation, visibility, adhesives, and skin contact",
-      },
-      {
-        href: "/guides/wig-facial-hair-and-makeup-planning-guide",
-        label: "Coordinate wig, facial hair, and makeup",
-        note: "Attachment order, color matching, wear time, and cleanup",
-      },
-    ],
-  },
 ];
 
 export function siteDecisionModules(site: SiteKey) {

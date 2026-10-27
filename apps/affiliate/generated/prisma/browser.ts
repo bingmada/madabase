@@ -18,61 +18,6 @@ export { Prisma }
 export * as $Enums from './enums'
 export * from './enums';
 /**
- * Model User
- * 
- */
-export type User = Prisma.UserModel
-/**
- * Model Session
- * 
- */
-export type Session = Prisma.SessionModel
-/**
- * Model EmailVerificationCode
- * 
- */
-export type EmailVerificationCode = Prisma.EmailVerificationCodeModel
-/**
- * Model Favorite
- * 
- */
-export type Favorite = Prisma.FavoriteModel
-/**
- * Model ToolUsage
- * 
- */
-export type ToolUsage = Prisma.ToolUsageModel
-/**
- * Model Credit
- * 
- */
-export type Credit = Prisma.CreditModel
-/**
- * Model CreditTransaction
- * 
- */
-export type CreditTransaction = Prisma.CreditTransactionModel
-/**
- * Model UserUnlock
- * 
- */
-export type UserUnlock = Prisma.UserUnlockModel
-/**
- * Model TestAttempt
- * 
- */
-export type TestAttempt = Prisma.TestAttemptModel
-/**
- * Model TestShareLink
- * 
- */
-export type TestShareLink = Prisma.TestShareLinkModel
-/**
- * Model ReferralReward
- * 
- */
-export type ReferralReward = Prisma.ReferralRewardModel
-/**
  * Model AffiliateClick
  * 
  */

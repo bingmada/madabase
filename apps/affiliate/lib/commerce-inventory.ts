@@ -6,7 +6,7 @@ import { activeComponentOffers, componentAffiliateOffer, activeUpgradeOffers, up
 import { explicitCommerceAlternatives } from "./commerce-paths";
 import { authorizedCjOffers } from "./cj-offers";
 
-const commerceSites: SiteKey[] = ["network", "smarthome", "homeoffice", "baby", "pet", "style"];
+const commerceSites: SiteKey[] = ["network", "smarthome", "homeoffice", "baby", "pet",];
 
 // Read the same published, offer-filtered objects used by the rendered pages.
 // Family slugs must include the exact ASIN; accepting a prefix alone loses identity.

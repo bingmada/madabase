@@ -993,6 +993,14 @@ export type NullableDecimalFieldUpdateOperationsInput = {
   divide?: runtime.Decimal | runtime.DecimalJsLike | number | string
 }
 
+export type BoolFieldUpdateOperationsInput = {
+  set?: boolean
+}
+
+export type NullableDateTimeFieldUpdateOperationsInput = {
+  set?: Date | string | null
+}
+
 export type MerchantProductCreateNestedOneWithoutImagesInput = {
   create?: Prisma.XOR<Prisma.MerchantProductCreateWithoutImagesInput, Prisma.MerchantProductUncheckedCreateWithoutImagesInput>
   connectOrCreate?: Prisma.MerchantProductCreateOrConnectWithoutImagesInput
