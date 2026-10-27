@@ -40,7 +40,10 @@ def retired_config():
 def apply():
  transaction=json.loads((STATE/'transaction.json').read_text())
  if transaction['status']!='prepared':raise RuntimeError('Prepare pinned release before retiring infrastructure')
- if (STATE/'retirement-infra.json').exists():raise RuntimeError('Inspect existing infra state before another action')
+ if (STATE/'retirement-infra.json').exists():
+  prior=json.loads((STATE/'retirement-infra.json').read_text())
+  if prior['status']!='failed_before_service_stop':raise RuntimeError('Existing infra attempt requires inspection')
+  (STATE/('retirement-infra-prior-'+str(time.time_ns())+'.json')).write_text(json.dumps(prior,indent=2)+'\n')
  before=MAIN.read_text();after=main_after(before)
  if NEW.exists():raise RuntimeError('Retired configuration already exists; inspect state')
  originals={name:{'content':(ENABLED/name).read_text(),'symlink':str((ENABLED/name).readlink()) if (ENABLED/name).is_symlink() else None} for name in NAMES}
@@ -51,6 +54,12 @@ def apply():
   MAIN.write_text(after);NEW.write_text(retired_config())
   for name in NAMES:(ENABLED/name).unlink()
   run(['nginx','-t']);run(['systemctl','reload','nginx'])
+  # nginx reload returns before the new worker generation accepts connections.
+  deadline=time.monotonic()+8
+  while True:
+   if get('tools.madabase.com','/')[0]==410 and get('madabase.com','/en')[0]==410:break
+   if time.monotonic()>=deadline:raise RuntimeError('New nginx worker generation did not take over')
+   time.sleep(.1)
   rows=[]
   for host in HOSTS:
    for path in ['/','/sitemap.xml','/catalog','/api/commerce-events','/ads.txt']:
