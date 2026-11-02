@@ -4,6 +4,11 @@ import { ArrowRight, CheckCircle2, Globe2, MapPin, ShieldCheck } from "lucide-re
 import { AffiliateButton, AffiliateButtonGroup } from "./AffiliateButton";
 import { AmazonListingFreshness } from "./AmazonCreatorsListing";
 import { JsonLd } from "./JsonLd";
+import { GuideTaskPaths } from "./GuideTaskPaths";
+import { GuideTaskAlternative } from "./GuideTaskAlternative";
+import { GuideMerchant21Routes } from "./GuideMerchant21Routes";
+import { GuideMerchant22Routes } from "./GuideMerchant22Routes";
+import { taskGuidePaths } from "@/lib/task-guide-paths";
 import {
   basePathForMarketPage,
   indexableLocalizedMarketPagesForSite,
@@ -21,8 +26,9 @@ import type { SiteConfig } from "@/lib/sites";
 import { findProduct } from "@/lib/content";
 import { amazonAsinAffiliateUrl } from "@/lib/affiliate-tracking";
 import { findCommerceProduct } from "@/lib/commerce-paths";
-import { findAmazonOfferBlock } from "@/lib/amazon-offer-blocks";
+import { findAmazonOfferBlock, isBlockedAmazonSource } from "@/lib/amazon-offer-blocks";
 import { buyerFacingBody, buyerFacingHeading } from "@/lib/conversion-copy";
+import { editorialCategoryImageCaption, editorialImageAlt, isEditorialCategoryImage, editorialImageForDisplay } from "@/lib/editorial-image";
 
 function marketEditionLinks(currentMarket: MarketProfile, basePath = "/") {
   return marketKeys.map((key) => {
@@ -81,16 +87,16 @@ function marketEvidenceBoundary(
   const copy = {
     gb: comparison
       ? { label: "Research-based comparison · not hands-on", summary: "This comparison uses current manufacturer documentation, exact-model checks, and attributed sources; it does not claim first-hand testing." }
-      : { label: "Official-spec product guide · not hands-on", summary: "This guide uses current manufacturer documentation and exact-model checks; it does not claim first-hand testing." },
+      : { label: "Source-based product guide · not hands-on", summary: "Use the named sources and their model limits below. Retailer observations and manufacturer instructions answer different questions; no first-hand test is claimed." },
     ca: comparison
       ? { label: "Research-based comparison · not hands-on", summary: "This comparison uses current manufacturer documentation, exact-model checks, and attributed sources; it does not claim first-hand testing." }
-      : { label: "Official-spec product guide · not hands-on", summary: "This guide uses current manufacturer documentation and exact-model checks; it does not claim first-hand testing." },
+      : { label: "Source-based product guide · not hands-on", summary: "Use the named sources and their model limits below. Retailer observations and manufacturer instructions answer different questions; no first-hand test is claimed." },
     de: comparison
       ? { label: "Quellenbasierter Vergleich · kein Praxistest", summary: "Der Vergleich nutzt aktuelle Herstellerunterlagen, genaue Modellprüfungen und zugeordnete Quellen; eigene Produkttests werden nicht behauptet." }
-      : { label: "Leitfaden nach Herstellerangaben · kein Praxistest", summary: "Der Leitfaden nutzt aktuelle Herstellerunterlagen und genaue Modellprüfungen; eigene Produkttests werden nicht behauptet." },
+      : { label: "Quellenbasierter Produktleitfaden · kein Praxistest", summary: "Beachten Sie die benannten Quellen und Modellgrenzen unten. Händlerbeobachtungen und Herstelleranleitungen beantworten unterschiedliche Fragen; ein eigener Praxistest wird nicht behauptet." },
     nl: comparison
       ? { label: "Vergelijking op basis van bronnen · niet zelf getest", summary: "Deze vergelijking gebruikt actuele fabrikantdocumentatie, controles van het exacte model en herleidbare bronnen; er wordt geen eigen praktijktest geclaimd." }
-      : { label: "Productgids op basis van specificaties · niet zelf getest", summary: "Deze gids gebruikt actuele fabrikantdocumentatie en controles van het exacte model; er wordt geen eigen praktijktest geclaimd." },
+      : { label: "Productgids op basis van bronnen · niet zelf getest", summary: "Lees de genoemde bronnen en modelgrenzen hieronder. Winkelwaarnemingen en fabrikantaanwijzingen beantwoorden verschillende vragen; er wordt geen eigen praktijktest geclaimd." },
   } as const;
   return copy[market.key];
 }
@@ -286,7 +292,6 @@ function marketFactRows(
   market: MarketProfile,
   displayName: string,
   asin: string | undefined,
-  evidenceMode: string | undefined,
 ) {
   if (market.key === "de") {
     return [
@@ -294,8 +299,8 @@ function marketFactRows(
       ["ASIN", asin ?? "Im passenden Amazon-Angebot prüfen"],
       ["Länderausgabe", market.localName],
       ["Vergleichswährung", market.currency],
-      ["Amazon-Weiterleitung", "Earn Globally / OneLink über den geprüften US-Associates-Link"],
-      ["Belegmodus", evidenceMode ?? "Offizielle Spezifikation"],
+      ["Amazon-Weiterleitung", "US Associates / OneLink; regionales Modell und Angebot prüfen"],
+      ["Quellenumfang", "Benannte Quellen und ihre Modell- und Geltungsgrenzen unten beachten"],
     ];
   }
   if (market.key === "nl") {
@@ -304,8 +309,8 @@ function marketFactRows(
       ["ASIN", asin ?? "Controleer in het passende Amazon-aanbod"],
       ["Landedities", market.localName],
       ["Vergelijkingsvaluta", market.currency],
-      ["Amazon-doorsturen", "Earn Globally / OneLink via de gecontroleerde Amerikaanse Associates-link"],
-      ["Onderzoeksmodus", evidenceMode ?? "Officiële specificaties"],
+      ["Amazon-doorsturen", "US Associates / OneLink; controleer het regionale model en aanbod"],
+      ["Bronbereik", "Zie de genoemde bronnen en hun model- en toepassingsgrenzen hieronder"],
     ];
   }
   return [
@@ -313,8 +318,8 @@ function marketFactRows(
     ["ASIN", asin ?? "Verify on the matching Amazon offer"],
     ["Country edition", market.localName],
     ["Currency to compare", market.currency],
-    ["Amazon routing", "Earn Globally / OneLink from the verified US Associates link"],
-    ["Evidence mode", evidenceMode ?? "Official specification"],
+    ["Amazon routing", "US Associates / OneLink; confirm the regional model and offer"],
+    ["Source coverage", "See the named references and their model and scope notes below"],
   ];
 }
 
@@ -337,19 +342,25 @@ export function LocalizedMarketContent({
   const product = page.primaryProductSlug
     ? findProduct(site.key, page.primaryProductSlug)
     : undefined;
-  const commerceProduct = page.commercePausedReason ? undefined : page.commerceProductSlug
+  const taskPaths = page.route === "guides" ? taskGuidePaths(site.key, page.slug) : undefined;
+  const modelCheckerHandoff = site.key === "homeoffice" && page.route === "guides"
+    && ["thinkcentre-m720q-upgrade-compatibility-guide", "thinkcentre-m920q-upgrade-compatibility-guide", "thinkcentre-m920x-upgrade-compatibility-guide"].includes(page.slug);
+  const commerceProduct = taskPaths || page.commercePausedReason ? undefined : page.commerceProductSlug
     ? findCommerceProduct(site.key, page.commerceProductSlug)
     : product;
   const productOfferBlock = !commerceProduct?.offers.length && product ? findAmazonOfferBlock(product) : undefined;
   const commercePausedReason = page.commercePausedReason ?? (productOfferBlock
-    ? `Listing checked ${productOfferBlock.checkedAt}: ${productOfferBlock.reason}`
+    ? `Purchase path reviewed ${productOfferBlock.checkedAt}: ${productOfferBlock.reason}`
     : product && !commerceProduct?.offers.length && !page.commerceFamilyAsin
       ? "No verified purchase offer is available for this product. Check the named manufacturer's current configuration and buying terms before ordering."
       : undefined);
   const commerceIsAlternative = Boolean(product && commerceProduct && product.slug !== commerceProduct.slug);
   const displayName = product?.amazonTitle ?? product?.name ?? page.sourceTitle ?? page.slug;
-  const displayImage = page.image
+  const sourceImage = page.image
     ?? (page.route === "guides" ? undefined : product?.amazonImage ?? product?.image ?? site.heroImage);
+  const displayImage = sourceImage ? editorialImageForDisplay(sourceImage) : undefined;
+  const displayImageAlt = page.imageAlt ?? product?.imageAlt ?? displayName;
+  const editorialDiagram = Boolean(displayImage?.endsWith(".svg") && displayImageAlt.startsWith("Editorial "));
   const marketProduct = commerceProduct
     ? {
         ...commerceProduct,
@@ -389,7 +400,6 @@ export function LocalizedMarketContent({
     market,
     displayName,
     product?.asin ?? product?.specs.ASIN,
-    product?.evidenceMode,
   );
   const evidenceBoundary = marketEvidenceBoundary(market, page.route);
 
@@ -417,7 +427,7 @@ export function LocalizedMarketContent({
                 "@type": page.route === "tools" ? "SoftwareApplication" : "Thing",
                 name: displayName,
               },
-          citation: sourceLinks.map((source) => source.url),
+          citation: sourceLinks.filter((source) => !isBlockedAmazonSource(site.key, source.url)).map((source) => source.url),
           author: {
             "@type": "Organization",
             name: `${site.name} editorial desk`,
@@ -450,24 +460,26 @@ export function LocalizedMarketContent({
               </section>
             ) : !familyDecision && ((marketProduct && marketProduct.offers.length) || (commerceFamilyIdentity && commerceFamilyOffer)) ? (
               <section className="mt-4 rounded-md border border-[var(--border)] bg-white p-4 sm:mt-5" aria-label="First-screen retailer option" data-first-viewport-commerce="true">
-                <p className="eyebrow">{commerceIsAlternative ? "Different product · verified alternative" : market.labels.quickAnswer}</p>
+                <p className="eyebrow">{commerceIsAlternative ? "Different product · separate buying option" : market.labels.quickAnswer}</p>
                 <p className="mt-2 text-sm font-semibold leading-5 text-[var(--muted)]">
                   {commerceFamilyIdentity?.amazonTitle ?? (commerceIsAlternative ? `This button is for ${commerceProduct?.amazonTitle ?? commerceProduct?.name}, not the original item.` : commerceProduct?.amazonTitle ?? commerceProduct?.name)}
                 </p>
+                {marketProduct?.purchaseCheck ? <p className="mt-2 text-sm leading-6 text-[var(--muted)]" lang="en" data-review-purchase-check="true">{marketProduct.purchaseCheck}</p> : null}
                 <div className="mt-3">
                   {commerceFamilyIdentity && commerceFamilyOffer ? (
                     <AffiliateButton site={site.key} product={commerceFamilyIdentity} offer={commerceFamilyOffer} market={market.key} position={`market-${market.key}-first-viewport-family`} resolveCreatorsListing={false} firstViewport />
                   ) : marketProduct ? (
-                    <AffiliateButtonGroup site={site.key} product={marketProduct} market={market.key} position={`market-${market.key}-first-viewport`} limit={1} firstViewport />
+                    <AffiliateButtonGroup site={site.key} product={marketProduct} market={market.key} position={`market-${market.key}-first-viewport`} limit={1} firstViewport sticky={page.route !== "categories"} />
                   ) : null}
+                  {page.route === "categories" ? <p className="mt-2 text-xs leading-5 text-[var(--muted)]">Current price &amp; availability · purchase link</p> : null}
                 </div>
               </section>
             ) : null}
             <p className="mt-5 text-lg leading-8 text-[var(--muted)]">{variant.dek}</p>
             <p className="mt-4 text-sm font-semibold text-[var(--muted)]">{market.labels.updated} {page.updatedAt}</p>
             <section className="mt-8 rounded-md border border-[var(--brand)] bg-[var(--brand-soft)] p-6">
-              <p className="eyebrow">{market.labels.quickAnswer}</p>
-              <p className="mt-3 text-lg font-bold leading-8">{variant.quickAnswer}</p>
+              <p className="eyebrow">{variant.answerLanguage === "en" ? (market.key === "de" ? "Fachentscheidung aus der englischen Recherche" : "Inhoudelijk advies uit het Engelse onderzoek") : market.labels.quickAnswer}</p>
+              <p className="mt-3 text-lg font-bold leading-8" lang={variant.answerLanguage}>{variant.quickAnswer}</p>
               {commerceProduct ? (
                 <AmazonListingFreshness
                   site={site.key}
@@ -476,6 +488,20 @@ export function LocalizedMarketContent({
                 />
               ) : null}
             </section>
+            {taskPaths ? <GuideTaskPaths site={site.key} slug={page.slug} market={market} /> : null}
+            {modelCheckerHandoff ? <aside className="mt-6 rounded-md border border-[var(--border)] bg-white p-5" lang="en" aria-label="Model-specific parts checker" data-guide-task-paths="true">
+              <h2 className="text-xl font-bold">Check this exact ThinkCentre before choosing parts</h2>
+              <p className="mt-3 text-sm leading-6">Use the matching model checker to identify the machine, intended upgrade and documented parts requirements. A similar case or a different ThinkCentre generation does not establish memory, storage or power compatibility.</p>
+              <Link className="mt-3 inline-block font-bold underline underline-offset-4" href={`${basePath}#compatibility-checker`}>Open this model’s setup checker (English)</Link>
+              <p className="mt-4 text-sm leading-6 text-[var(--muted)]">Keep suitable existing parts. Unknown machine type, received revision, connector or required kit remains unknown; the checker does not require a purchase and does not verify a regional offer.</p>
+            </aside> : null}
+            {page.route === "guides" ? (
+              <div lang="en" data-market-existing-task-options="true">
+                <GuideTaskAlternative site={site.key} slug={page.slug} market={market.key} />
+                <GuideMerchant21Routes site={site.key} slug={page.slug} market={market.key} />
+                <GuideMerchant22Routes site={site.key} slug={page.slug} />
+              </div>
+            ) : null}
             {familyDecision && commerceFamilyIdentity && commerceFamilyOffer ? (
               <aside className="mt-4 rounded-md border border-[var(--border)] bg-white p-5" aria-label={`Next step for ${familyDecision.model}`} data-guide-decision-purchase="true">
                 <h2 className="text-lg font-bold">When {familyDecision.model} fits</h2>
@@ -521,9 +547,12 @@ export function LocalizedMarketContent({
                 <ul className="mt-5 space-y-3">
                   {sourceLinks.slice(0, 6).map((source) => (
                     <li key={source.url}>
-                      <a className="font-bold text-[var(--brand-strong)] hover:underline" href={source.url} rel="noopener noreferrer" target="_blank">
-                        {source.name}
-                      </a>
+                      <>{isBlockedAmazonSource(site.key, source.url) ? (
+                        <span className="font-bold" data-source-link-paused="true">{source.name}</span>
+                      ) : (
+                        <a className="font-bold text-[var(--brand-strong)] hover:underline" href={source.url} rel="noopener noreferrer" target="_blank">{source.name}</a>
+                      )}
+                      {source.note ? <p className="mt-1 text-sm leading-6 text-[var(--muted)]">{source.note}</p> : null}</>
                     </li>
                   ))}
                 </ul>
@@ -558,8 +587,10 @@ export function LocalizedMarketContent({
           </article>
           <aside className="h-fit lg:sticky lg:top-24">
             {displayImage ? <div className="relative aspect-[4/3] overflow-hidden rounded-md bg-[var(--surface-muted)]">
-              <Image className="object-cover" src={displayImage} alt={page.imageAlt ?? displayName} fill priority sizes="(min-width: 1024px) 340px, 100vw" />
+              <Image className={editorialDiagram ? "object-contain" : "object-cover"} src={displayImage} alt={editorialImageAlt(displayImage, displayImageAlt)} fill priority sizes="(min-width: 1024px) 340px, 100vw" />
             </div> : null}
+            {displayImage && isEditorialCategoryImage(displayImage) ? <p className="mt-2 text-xs leading-5 text-[var(--muted)]">{editorialCategoryImageCaption}</p> : null}
+            {editorialDiagram ? <p className="mt-2 text-xs leading-5 text-[var(--muted)]">Editorial decision diagram; not a product photograph.</p> : null}
             <div className="panel mt-5 p-5 text-sm leading-6 text-[var(--muted)]">
               <strong className="text-[var(--text)]">{market.amazonStore}:</strong> {market.labels.oneLink}
             </div>

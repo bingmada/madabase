@@ -33,7 +33,7 @@ export function PartsBudget({ parts, allowComponents = false, onWorksheetChange 
       const part = parts.find((item) => item.id === offer.part)!;
       return <article className="discovery-card mt-4" key={offer.asin}>
         <h3>{offer.name}</h3><p><strong>Required purchase: {part.purchaseCount} {offer.part === "memory" ? "single module(s)" : "drive(s)"}.</strong> {offer.part === "memory" ? "The listing is one module; choose this quantity at the merchant, not one kit." : "Drive only; keep the model-matched installation pieces listed above."}</p>
-        <p>{offer.limits}</p><p className="evidence-note">Paid link: as an Amazon Associate we earn from qualifying purchases. Exact listing checked October 19, 2026; no live price or stock promise. This option appears after the selected route checks, and is not an instruction to replace a working part.</p>
+        <p>{offer.limits}</p><p className="evidence-note">Paid link: as an Amazon Associate we earn from qualifying purchases. Exact listing checked {new Date(offer.verifiedAt).toLocaleDateString("en-US", { timeZone: "UTC", year: "numeric", month: "long", day: "numeric" })}; no live price or stock promise. This option appears after the selected route checks, and is not an instruction to replace a working part.</p>
         <AffiliateButton site={offer.site} product={{slug:offer.slug,name:offer.name,asin:offer.asin,specs:{ASIN:offer.asin}}} offer={componentAffiliateOffer(offer)} position="tiny-parts-after-compatibility" resolveCreatorsListing={false} />
       </article>;
     })}

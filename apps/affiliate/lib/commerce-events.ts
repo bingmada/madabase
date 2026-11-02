@@ -19,6 +19,11 @@ export type CommerceEvent = {
 const siteHosts: Record<string,string> = {homeoffice:"homeoffice",network:"network",smarthome:"smarthome",baby:"baby",pet:"pets",};
 const localeMarkets: Record<string,string> = {"en-gb":"gb","en-ca":"ca","de-de":"de","nl-nl":"nl"};
 
+export function commerceSiteMatchesHost(site: string, host: string) {
+  return Boolean(siteHosts[site]) && (host === `${siteHosts[site]}.madabase.com`
+    || host === `${siteHosts[site]}.localhost` || host === "localhost" || host === "127.0.0.1");
+}
+
 export function commercePage(path: string) {
   const match = /^\/(?:(en-gb|en-ca|de-de|nl-nl)\/)?(guides|reviews|best|tools|compatibility|categories|products)\/([a-z0-9-]+)\/?$/.exec(path);
   return match ? {pageType:match[2],market:localeMarkets[match[1]] ?? "us"} : undefined;
@@ -47,7 +52,7 @@ export function validateCommerceEvent(body: unknown, host: string): CommerceEven
   const site = text("site",20);
   const sessionId = text("sessionId",40);
   if (!page || !siteHosts[site] || !commerceEventTypes.includes(eventType) || !/^[a-f0-9-]{36}$/.test(sessionId)) return;
-  if (host !== `${siteHosts[site]}.madabase.com` && host !== `${siteHosts[site]}.localhost` && host !== "localhost" && host !== "127.0.0.1") return;
+  if (!commerceSiteMatchesHost(site, host)) return;
   const releaseId = text("releaseId",80);
   const device = text("device",10);
   const channel = text("channel",10);

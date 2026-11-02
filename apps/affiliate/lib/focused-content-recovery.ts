@@ -309,7 +309,7 @@ const products: Array<Pick<Product, "site" | "slug"> & Partial<Product>> = [
   {
     site: "smarthome", slug: "aqara-presence-multi-sensor-fp300",
     evidenceMode: "official-spec",
-    researchNote: "We have not tested FP300. This guide uses Aqara's US product page, official manual and platform connection guide checked October 13, 2026. Firmware, exposed controls, room behaviour, seller and bundle must be verified for the buyer's actual setup.",
+    "researchNote": "We have not tested FP300. This guide uses Aqara's US product page, official manual and platform connection guide checked October 13, 2026. Firmware, exposed controls, room behaviour, seller and bundle must be verified for the buyer's actual setup. November 1, 2026: selected US retailer identity and purchase conditions reviewed separately; no received-unit, installation, performance or reliability test.",
     summary: "A model-specific buying and setup guide to FP300's battery-powered presence sensing: choose Thread or Zigbee, budget for the required controller, check what settings the platform exposes, and verify presence and absence before relying on an automation.",
     verdict: "Choose FP300 for presence automation where a permanent power cable is awkward and the intended platform supports the required functions. Choose the documented FP2 alternative when the job needs room-zone mapping. Budget for the complete controller setup and battery replacements, not just the sensor's listed price.",
     editorialSections: [
@@ -320,13 +320,37 @@ const products: Array<Pick<Product, "site" | "slug"> & Partial<Product>> = [
       { heading: "Check occupied and empty-room behaviour separately", body: "Before using the sensor to control lighting, log its presence state in your actual seated location and its absence state after you leave. Repeat the check with the usual fan or HVAC conditions and note placement and firmware. Aqara's FAQ warns that interference can extend absence confirmation beyond the configured period. Start with a reversible light rule and a manual control, then observe the result. This is a suggested acceptance procedure, not a claim that FP300 passed our reliability test or will never produce a false trigger." },
       { heading: "Decide whether single-area presence is the right job", body: "A battery sensor can simplify placement, but one presence decision is different from separate desk, sofa and doorway zones. Compare the linked FP2 documentation when zone mapping is required. If you need an unverified advanced control, have no compatible controller, or cannot place the sensor according to the supplied manual, resolve that gap before ordering. The manufacturer manual and US product page also differ on the upper operating-temperature figure, so use the documentation supplied for your region and exact unit rather than a blended specification." },
     ],
-    sources: [
-      { name: "Aqara US: Presence Multi-Sensor FP300", url: "https://us.aqara.com/products/presence-multi-sensor-fp300", note: "US product specifications and mode-dependent battery estimates." },
-      { name: "Aqara: FP300 help centre and FAQ", url: "https://store-support.aqara.com/products/multi-presence-sensor-fp300", note: "Official support, lab assumptions and absence-confirmation caveats." },
-      { name: "Aqara: FP300 English user manual", url: "https://cdn.shopify.com/s/files/1/0710/9220/7830/files/Presence_Multi-Sensor_FP300_User_Manual-EN.pdf?v=1762828282", note: "Controller requirements, protocol-switch data loss and safe setup instructions. Region-specific limits must be checked." },
-      { name: "Aqara: connecting FP300 to third-party platforms", url: "https://cdn.shopify.com/s/files/1/0710/9220/7830/files/How_to_Connect_to_Third-Party_Platforms.pdf?v=1780542797", note: "Platform-specific prerequisites and connection paths." },
-    ],
+    "sources": [
+  {
+    "name": "Aqara US: Presence Multi-Sensor FP300",
+    "url": "https://us.aqara.com/products/presence-multi-sensor-fp300",
+    "note": "US product specifications and mode-dependent battery estimates."
   },
+  {
+    "name": "Aqara: FP300 help centre and FAQ",
+    "url": "https://store-support.aqara.com/products/multi-presence-sensor-fp300",
+    "note": "Official support, lab assumptions and absence-confirmation caveats."
+  },
+  {
+    "name": "Aqara: FP300 English user manual",
+    "url": "https://cdn.shopify.com/s/files/1/0710/9220/7830/files/Presence_Multi-Sensor_FP300_User_Manual-EN.pdf?v=1762828282",
+    "note": "Controller requirements, protocol-switch data loss and safe setup instructions. Region-specific limits must be checked."
+  },
+  {
+    "name": "Aqara: connecting FP300 to third-party platforms",
+    "url": "https://cdn.shopify.com/s/files/1/0710/9220/7830/files/How_to_Connect_to_Third-Party_Platforms.pdf?v=1780542797",
+    "note": "Platform-specific prerequisites and connection paths."
+  },
+  {
+    "name": "Selected US retailer identity, November 1, 2026",
+    "url": "https://www.amazon.com/dp/B0FG2MD3YP",
+    "note": "Exact model and selected package observed for New York 10001. Seller, condition, delivered total and current returns remain purchase-time checks; this is not a received-unit approval."
+  }
+],
+  "purchaseCheck": "Match FP300 PS-S04E, supplied mount and two specified CR2450 cells. Choose Thread or Zigbee and verify the required controller and exposed settings. Switching protocols clears settings/data. Keep a suitable PIR or wired FP2 path when that better meets the room task.",
+"rating": 0,
+"scores": [],
+},
 ];
 
 const guideByKey = new Map(guides.map((item) => [`${item.site}:${item.slug}`, item]));

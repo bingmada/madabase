@@ -135,7 +135,7 @@ export const portfolioRankingOpportunities: PortfolioRankingOpportunity[] = [
   {
     site: "baby", kind: "product", slug: "babybjorn-carrier-harmony",
     query: "Is BabyBjörn Carrier Harmony suitable for a newborn and later back carry?",
-    answer: "Harmony can cover different stages only when the baby meets the current size and developmental requirements for each position and the exact newborn settings are correct. Back and outward carry are not newborn modes. Confirm the manual, material, caregiver fit, airway visibility, head support, seller and return path before use.",
+    answer: "Harmony’s linked US manual gives a 7 lb starting chart but an 8 lb warning and differing leg-strap instructions. Resolve the applicable unit and instructions before newborn use. Later outward use requires independent upright head control and has a 26 lb maximum; back use starts at 12 months in the reviewed manual. Match all size, support and fit conditions, or pause. Keep an existing suitable carrier when no new carrying job remains.",
     updatedAt: portfolioRankingRefreshAt,
     preferredPaths: ["/guides/babybjorn-harmony-newborn-fit-checklist", "/best/babybjorn-mini-vs-harmony", "/best/babybjorn-harmony-vs-ergobaby-omni-breeze", "/reviews/ergobaby-omni-breeze-carrier"],
   },

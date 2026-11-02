@@ -1,0 +1,311 @@
+{
+  "mainChecks": [
+    {
+      "host": "madabase.com",
+      "path": "/",
+      "canonical": "https://madabase.com",
+      "markers": [
+        "Madabase"
+      ]
+    },
+    {
+      "host": "madabase.com",
+      "path": "/research",
+      "canonical": "https://madabase.com/research",
+      "markers": [
+        "Madabase"
+      ]
+    }
+  ],
+  "affiliateChecks": [
+    {
+      "host": "network.madabase.com",
+      "path": "/reviews/amazon-eero-6-mesh-wifi-system",
+      "canonical": "https://network.madabase.com/reviews/amazon-eero-6-mesh-wifi-system",
+      "markers": [
+        "What Is eero 6? Router vs Extender, Ports & Coverage"
+      ]
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/guides/2-5g-vs-10g-switch-for-home-nas-guide",
+      "canonical": "https://network.madabase.com/guides/2-5g-vs-10g-switch-for-home-nas-guide",
+      "markers": [
+        "2.5G vs 10G Switch for a Home NAS"
+      ]
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/best/arris-s33-vs-motorola-mb8611-vs-hitron-coda56",
+      "canonical": "https://network.madabase.com/best/arris-s33-vs-motorola-mb8611-vs-hitron-coda56",
+      "markers": [
+        "ARRIS S33 vs Motorola MB8611 vs Hitron CODA56"
+      ]
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/categories/backup",
+      "canonical": "https://network.madabase.com/categories/backup",
+      "markers": [
+        "Backup power"
+      ]
+    },
+    {
+      "host": "smarthome.madabase.com",
+      "path": "/reviews/aqara-door-and-window-sensor-p2",
+      "canonical": "https://smarthome.madabase.com/reviews/aqara-door-and-window-sensor-p2",
+      "markers": [
+        "Aqara P2 Guide: Thread Controller, Magnet Gap & Battery"
+      ]
+    },
+    {
+      "host": "smarthome.madabase.com",
+      "path": "/guides/apple-home-key-smart-lock-buying-guide",
+      "canonical": "https://smarthome.madabase.com/guides/apple-home-key-smart-lock-buying-guide",
+      "markers": [
+        "Apple Home Key Smart Lock Buying Guide"
+      ]
+    },
+    {
+      "host": "smarthome.madabase.com",
+      "path": "/best/aqara-fp300-vs-fp2",
+      "canonical": "https://smarthome.madabase.com/best/aqara-fp300-vs-fp2",
+      "markers": [
+        "Aqara FP300 vs. FP2: Battery Sensor or Zoned Room Map?"
+      ]
+    },
+    {
+      "host": "smarthome.madabase.com",
+      "path": "/categories/access",
+      "canonical": "https://smarthome.madabase.com/categories/access",
+      "markers": [
+        "Smart access"
+      ]
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/reviews/amazon-basics-monitor-arm",
+      "canonical": "https://homeoffice.madabase.com/reviews/amazon-basics-monitor-arm",
+      "markers": [
+        "Amazon Basics Gas-Spring Monitor Arm Guide: 27-Inch Fit Checks"
+      ]
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/48-vs-55-inch-desk-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/48-vs-55-inch-desk-guide",
+      "markers": [
+        "48-Inch vs. 55-Inch Desk for a Home Office"
+      ]
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/best/best-dual-monitor-docks-mac-windows",
+      "canonical": "https://homeoffice.madabase.com/best/best-dual-monitor-docks-mac-windows",
+      "markers": [
+        "Dual-Monitor Docks for Mac and Windows"
+      ]
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/categories/desks",
+      "canonical": "https://homeoffice.madabase.com/categories/desks",
+      "markers": [
+        "Desks"
+      ]
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/reviews/baby-brezza-smart-bottle-warmer",
+      "canonical": "https://baby.madabase.com/reviews/baby-brezza-smart-bottle-warmer",
+      "markers": [
+        "Baby Brezza Smart Bottle Warmer Guide & SCF358 Comparison"
+      ]
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/guides/adjustable-high-chairs-buying-guide",
+      "canonical": "https://baby.madabase.com/guides/adjustable-high-chairs-buying-guide",
+      "markers": [
+        "High Chair Buying Guide: KUB Hold & Chicco Zest Alternative"
+      ]
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/best/babybjorn-harmony-vs-ergobaby-omni-breeze",
+      "canonical": "https://baby.madabase.com/best/babybjorn-harmony-vs-ergobaby-omni-breeze",
+      "markers": [
+        "BabyBj\u00f6rn Harmony vs. Ergobaby Omni Breeze"
+      ]
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/categories/feeding",
+      "canonical": "https://baby.madabase.com/categories/feeding",
+      "markers": [
+        "Feeding"
+      ]
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/reviews/catit-flower-cat-water-fountain",
+      "canonical": "https://pets.madabase.com/reviews/catit-flower-cat-water-fountain",
+      "markers": [
+        "Catit Flower Fountain Guide: 3L Capacity, Filters & Cleaning"
+      ]
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/guides/air-purifier-pet-hair-dander-odor-guide",
+      "canonical": "https://pets.madabase.com/guides/air-purifier-pet-hair-dander-odor-guide",
+      "markers": [
+        "Air Purifier Guide for Pet Hair, Dander and Odor"
+      ]
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/best/best-automatic-cat-feeders",
+      "canonical": "https://pets.madabase.com/best/best-automatic-cat-feeders",
+      "markers": [
+        "Automatic Cat Feeders: Scheduled Meals or RFID Access?"
+      ]
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/categories/comfort",
+      "canonical": "https://pets.madabase.com/categories/comfort",
+      "markers": [
+        "Comfort"
+      ]
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/tools/diaper-usage-calculator",
+      "canonical": "https://baby.madabase.com/tools/diaper-usage-calculator",
+      "markers": [
+        "Diaper Usage Calculator by Age and Days"
+      ]
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/thinkcentre-m920q-upgrade-compatibility-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/thinkcentre-m920q-upgrade-compatibility-guide",
+      "markers": [
+        "ThinkCentre M920q Tiny: RAM, SSD and PCIe Upgrade Checks"
+      ]
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/thinkcentre-m920x-upgrade-compatibility-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/thinkcentre-m920x-upgrade-compatibility-guide",
+      "markers": [
+        "ThinkCentre M920x Tiny: RAM, SSD and PCIe Upgrade Checks"
+      ]
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/tools/desk-height-calculator",
+      "canonical": "https://homeoffice.madabase.com/tools/desk-height-calculator",
+      "markers": [
+        "Desk Height Calculator for Sitting and Standing"
+      ]
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/tools/mesh-node-and-backhaul-planner",
+      "canonical": "https://network.madabase.com/tools/mesh-node-and-backhaul-planner",
+      "markers": [
+        "Mesh Node and Backhaul Planner"
+      ]
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/tools/wifi-coverage-estimator",
+      "canonical": "https://network.madabase.com/tools/wifi-coverage-estimator",
+      "markers": [
+        "Wi-Fi Coverage Estimator for Router and Mesh Nodes"
+      ]
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/tools/pet-feeding-calculator",
+      "canonical": "https://pets.madabase.com/tools/pet-feeding-calculator",
+      "markers": [
+        "Pet Feeding Schedule Calculator by Meals and Calories"
+      ]
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/tools/pet-room-air-change-calculator",
+      "canonical": "https://pets.madabase.com/tools/pet-room-air-change-calculator",
+      "markers": [
+        "Pet Room Air-Change and CADR Calculator"
+      ]
+    },
+    {
+      "host": "smarthome.madabase.com",
+      "path": "/tools/matter-thread-compatibility-checker",
+      "canonical": "https://smarthome.madabase.com/tools/matter-thread-compatibility-checker",
+      "markers": [
+        "Matter and Thread Border Router Compatibility Checker"
+      ]
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/de-de/guides/thinkcentre-m920q-upgrade-compatibility-guide",
+      "canonical": "https://homeoffice.madabase.com/de-de/guides/thinkcentre-m920q-upgrade-compatibility-guide",
+      "markers": [
+        "Check this exact ThinkCentre before choosing parts",
+        "Open this model\u2019s setup checker (English)"
+      ]
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/reviews/grownsy-bottle-sterilizer-dryer",
+      "canonical": "https://baby.madabase.com/reviews/grownsy-bottle-sterilizer-dryer",
+      "markers": [
+        "Catalog identity record"
+      ]
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/desktop-audio-interfaces-buying-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/desktop-audio-interfaces-buying-guide",
+      "markers": [
+        "Kmise MI8423-KUS USB audio interface"
+      ]
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/desktop-audio-interfaces-compatibility-and-fit-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/desktop-audio-interfaces-compatibility-and-fit-guide",
+      "markers": [
+        "Kmise MI8423-KUS USB audio interface"
+      ]
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/desktop-audio-interfaces-ownership-cost-and-maintenance",
+      "canonical": "https://homeoffice.madabase.com/guides/desktop-audio-interfaces-ownership-cost-and-maintenance",
+      "markers": [
+        "Kmise MI8423-KUS USB audio interface"
+      ]
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/desktop-audio-interfaces-setup-and-daily-workflow",
+      "canonical": "https://homeoffice.madabase.com/guides/desktop-audio-interfaces-setup-and-daily-workflow",
+      "markers": [
+        "Kmise MI8423-KUS USB audio interface"
+      ]
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/desktop-audio-interfaces-vs-alternatives",
+      "canonical": "https://homeoffice.madabase.com/guides/desktop-audio-interfaces-vs-alternatives",
+      "markers": [
+        "Kmise MI8423-KUS USB audio interface"
+      ]
+    }
+  ]
+}

@@ -4,430 +4,493 @@ const updatedAt = "July 1, 2026";
 
 export const adjacentExpansionProducts: Product[] = [
   {
-    site: "smarthome",
-    slug: "aqara-hub-m3",
-    asin: "B0CWLHSKYC",
-    seoTitle: "Aqara Hub M3 Guide: Matter, Thread, PoE & M2 Upgrade",
-    updatedAt: "July 16, 2026",
-    name: "Aqara Hub M3",
-    brand: "Aqara",
-    category: "automation",
-    image: "/images/affiliate/smarthome-aqara-hub-m3-realistic.webp",
-    summary: "A source-backed Aqara Hub M3 review covering Matter controller and bridge roles, Thread border routing, Zigbee migration, Home Assistant, PoE, infrared control, and whether M2 owners should upgrade.",
-    verdict: "Buy the Hub M3 when Aqara Home will be the center of a mixed Zigbee, Thread, and Matter installation, or when PoE and local Aqara automations solve a real placement or reliability problem. Keep an M2 or existing controller when stable Zigbee automations already work and the M3's Thread, third-party Matter, or PoE roles would go unused.",
-    whyItMatters: "The M3 can be an Aqara Zigbee hub, Matter controller, Matter bridge, and Thread border router, but those are separate jobs. Naming the devices assigned to each job prevents the common assumption that buying one hub automatically migrates every device or exposes every feature to every ecosystem.",
-    bestFor: "Aqara-centered homes that need Thread, Matter bridging, and wired PoE placement",
-    priceBand: "$$",
-    rating: 4.5,
-    scores: [
-      { label: "Protocol coverage", value: 9 },
-      { label: "Local automation", value: 8 },
-      { label: "Setup simplicity", value: 6 },
-    ],
-    pros: ["Combines Matter controller, Matter bridge, Thread border-router, and Aqara Zigbee hub roles", "Dual-band Wi-Fi, Ethernet with PoE, and USB-C offer flexible network and power placement", "Local storage, local automations, infrared control, and a built-in speaker broaden its use beyond simple bridging"],
-    cons: ["Supported third-party Matter device types and bridged features remain narrower than each vendor's native app", "M2-to-M3 migration and ecosystem sharing still require device-by-device checks", "A power adapter is not included and PoE requires compatible network equipment"],
-    specs: {
-      ASIN: "B0CWLHSKYC",
-      Model: "HM-G01D / HM-G01E; confirm regional version",
-      Roles: "Matter controller, Matter bridge, Thread border router, Aqara Zigbee hub",
-      Capacity: "Up to 127 Thread and Zigbee devices; repeaters can be required",
-      Network: "2.4GHz/5GHz Wi-Fi, Ethernet, WPA3, and PoE",
-      Power: "5V 2A USB-C or 48V 0.27A PoE; adapter not included",
-      Storage: "8GB eMMC with encrypted local storage",
-      Infrared: "360-degree IR control with supported feedback and AC use cases",
-      Dimensions: "105 x 105 x 36.5 mm",
-    },
-    evidence: [
-      "Confirm ASIN B0CWLHSKYC, the regional HM-G01D/HM-G01E variant, seller, and included power accessories",
-      "List which devices use Zigbee, Thread, Wi-Fi, infrared, and Matter before assuming one hub replaces every controller",
-      "Check Aqara's current exposed-device list because Matter bridging does not publish every proprietary feature",
-      "Verify the Aqara Home migration path on a small device group before resetting an existing M2 or other Aqara hub",
-      "For Home Assistant, distinguish adding M3 as a Matter bridge from operating Home Assistant's own Matter controller and Thread network",
-    ],
-    editorialSections: [
-      {
-        heading: "A note about this review",
-        body: "This is a research-based decision guide built from Aqara's current US product page, developer documentation, manual, and Home Assistant's current Matter documentation. It is not a long-term hands-on reliability test, and firmware, bridged device types, ecosystem features, and retailer bundles can change after publication.",
-      },
-      {
-        heading: "Four roles that should not be collapsed into one label",
-        body: "The M3 can coordinate compatible Aqara Zigbee devices, commission supported Matter devices into Aqara Home, bridge supported Aqara devices to other Matter ecosystems, and route Thread traffic. A device exposed through the Matter bridge remains on its original network; it does not become a native Matter-over-Thread device.",
-      },
-      {
-        heading: "M3 versus M2 is an upgrade decision, not a generation contest",
-        body: "M2 remains useful for a stable Aqara Zigbee installation with Ethernet and infrared control. M3 earns its higher cost when Thread devices, third-party Matter control in Aqara Home, PoE placement, local edge automations, or broader bridging are part of a written plan. Existing M2 owners should name the missing role before migrating.",
-      },
-      {
-        heading: "Matter compatibility is narrower than the logo suggests",
-        body: "Aqara lists selected third-party Matter device categories and notes that device support can vary by ecosystem. The common Matter controls may work while vendor-specific settings, scenes, energy details, infrared functions, or advanced sensor data remain in the Aqara app. Check the exact child-device type rather than assuming the whole account will appear elsewhere.",
-      },
-      {
-        heading: "Home Assistant can use M3 as a Matter bridge",
-        body: "Home Assistant's Matter integration acts as a separate Matter controller. The M3 can share supported bridged devices into that controller, but feature exposure is limited by both Aqara's bridge and Home Assistant's supported Matter device types. Keep IPv6 and local discovery working and do not assume the M3 automatically merges every existing Thread network.",
-      },
-      {
-        heading: "PoE is useful only when the cable path is deliberate",
-        body: "A compatible PoE port can carry data and power to a central wall, ceiling, or utility location. Confirm the switch or injector, cable route, network segment, and mounting position first. USB-C remains the simpler choice when the hub can sit beside a stable outlet and Ethernet drop.",
-      },
-      {
-        heading: "Migration needs an exit plan",
-        body: "Inventory child devices, automations, infrared scenes, ecosystem links, family access, and notification dependencies before replacing an older Aqara hub. Move a small group first, verify it for several normal days, and keep the old hub available until critical routines and physical fallbacks are proven.",
-      },
-      {
-        heading: "Who should skip it",
-        body: "Skip the M3 when an existing Apple, Google, SmartThings, Home Assistant, or Aqara controller already provides every required role and no Aqara Zigbee, infrared, PoE, or Aqara Home automation need remains. Adding another controller can increase commissioning and troubleshooting work without improving the household routine.",
-      },
-    ],
-    alternatives: [
-      "Keep Hub M2 when existing Aqara Zigbee automations are stable and Thread, PoE, and third-party Matter control are not required.",
-      "Use an existing compatible Matter controller and Thread border router when the home has no Aqara Zigbee or infrared plan.",
-      "Choose a simpler Aqara hub when price and basic Zigbee bridging matter more than M3's combined controller roles.",
-    ],
-    sources: [
-      {
-        name: "Aqara Hub M3 US product page",
-        url: "https://us.aqara.com/products/hub-m3",
-        note: "Current official roles, device capacity, networking, power, storage, dimensions, and included components.",
-      },
-      {
-        name: "Aqara Hub M3 developer documentation",
-        url: "https://opendoc.aqara.com/en/docs/AqaraDevice/Hub-M3.html",
-        note: "Official controller, bridge, Thread, Home Assistant, and supported-device-role documentation.",
-      },
-      {
-        name: "Aqara Hub M3 user manual",
-        url: "https://www.aqara.com/wp-content/uploads/2024/05/M3-User-Manual-1.pdf",
-        note: "Official installation, model, power, network, reset, and safety reference.",
-      },
-      {
-        name: "Aqara Hub M2 product page",
-        url: "https://www.aqara.com/us/product/hub-m2/",
-        note: "Official M2 Zigbee, Ethernet, infrared, speaker, and USB-power baseline used for the upgrade comparison.",
-      },
-    ],
-    offers: [
-      {
-        merchant: "Amazon US",
-        url: "https://amzn.to/4wiir5x",
-        label: "Check Aqara Hub M3 price on Amazon",
-        priceNote: "Confirm ASIN B0CWLHSKYC, regional version, seller, and included power accessories.",
-      },
-    ],
+  "site": "smarthome",
+  "slug": "aqara-hub-m3",
+  "asin": "B0CWLHSKYC",
+  "seoTitle": "Aqara Hub M3 Guide: Matter, Thread, PoE & M2 Upgrade",
+  "updatedAt": "November 1, 2026",
+  "name": "Aqara Hub M3",
+  "brand": "Aqara",
+  "category": "automation",
+  "image": "/images/affiliate/smarthome-aqara-hub-m3-realistic.webp",
+  "summary": "A source-backed Aqara Hub M3 review covering Matter controller and bridge roles, Thread border routing, Zigbee migration, Home Assistant, PoE, infrared control, and whether M2 owners should upgrade.",
+  "verdict": "Buy the Hub M3 when Aqara Home will be the center of a mixed Zigbee, Thread, and Matter installation, or when PoE and local Aqara automations solve a real placement or reliability problem. Keep an M2 or existing controller when stable Zigbee automations already work and the M3's Thread, third-party Matter, or PoE roles would go unused.",
+  "whyItMatters": "The M3 can be an Aqara Zigbee hub, Matter controller, Matter bridge, and Thread border router, but those are separate jobs. Naming the devices assigned to each job prevents the common assumption that buying one hub automatically migrates every device or exposes every feature to every ecosystem.",
+  "bestFor": "Aqara-centered homes that need Thread, Matter bridging, and wired PoE placement",
+  "priceBand": "$$",
+  "rating": 0,
+  "scores": [],
+  "pros": [
+    "Combines Matter controller, Matter bridge, Thread border-router, and Aqara Zigbee hub roles",
+    "Dual-band Wi-Fi, Ethernet with PoE, and USB-C offer flexible network and power placement",
+    "Local storage, local automations, infrared control, and a built-in speaker broaden its use beyond simple bridging"
+  ],
+  "cons": [
+    "Supported third-party Matter device types and bridged features remain narrower than each vendor's native app",
+    "M2-to-M3 migration and ecosystem sharing still require device-by-device checks",
+    "A power adapter is not included and PoE requires compatible network equipment"
+  ],
+  "specs": {
+    "ASIN": "B0CWLHSKYC",
+    "Model": "HM-G01D / HM-G01E; confirm regional version",
+    "Roles": "Matter controller, Matter bridge, Thread border router, Aqara Zigbee hub",
+    "Capacity": "Published device counts require category, repeaters and actual supported child-device checks; do not assume a combined 254-device deployment",
+    "Network": "2.4GHz/5GHz Wi-Fi, Ethernet, WPA3, and PoE",
+    "Power": "5V 2A USB-C or 48V 0.27A PoE; adapter not included",
+    "Storage": "8GB eMMC with encrypted local storage",
+    "Infrared": "360-degree IR control with supported feedback and AC use cases",
+    "Dimensions": "105 x 105 x 36.5 mm"
   },
-  {
-    "site": "smarthome",
-    "slug": "aqara-door-and-window-sensor-p2",
-    "asin": "B0BTL8B72D",
-    "seoTitle": "Aqara P2 Guide: Thread Controller, Magnet Gap & Battery",
-    "updatedAt": "October 23, 2026",
-    "name": "Aqara Door and Window Sensor P2",
-    "amazonTitle": "Aqara P2 DW-S02E indoor Matter-over-Thread contact sensor",
-    "amazonDetailUrl": "https://www.amazon.com/dp/B0BTL8B72D",
-    "brand": "Aqara",
-    "category": "automation",
-    "image": "/images/affiliate/category-smarthome-automation-editorial-v2.webp",
-    "imageAlt": "Editorial scene of unbranded smart-home devices, including a two-piece opening sensor, on a table",
-    "summary": "Check the exact P2 controller and Thread border-router path, indoor alignment, less-than-22mm magnet gap and CR123A access before choosing an opening-state sensor.",
-    "verdict": "P2 is a candidate for indoor opening-state reminders when the complete Matter-over-Thread system and mounting fit. It does not establish locked status or room vacancy. Keep a suitable working contact sensor when its current system already meets the task.",
-    "whyItMatters": "The reviewed US option is DW-S02E, a separate Matter-over-Thread model. It does not pair as a Zigbee child device or replace a Wi-Fi/Tuya sensor without changing the control path.",
-    "bestFor": "Indoor opening-state reminders with a suitable Matter controller and Thread border router",
-    "priceBand": "$",
-    "rating": 4.3,
-    "scores": [
-      {
-        "label": "Controller and Thread path",
-        "value": 9
-      },
-      {
-        "label": "Indoor pair alignment",
-        "value": 8
-      },
-      {
-        "label": "Actual platform functions",
-        "value": 6
-      }
-    ],
-    "pros": [
-      "Documented native Matter-over-Thread path",
-      "Opening state for supported reminders and automations",
-      "Replaceable CR123A battery"
-    ],
-    "cons": [
-      "Requires compatible controller and Thread border router",
-      "Indoor-only mounting with exact alignment and service access",
-      "Closed state does not establish a locked door or an empty room"
-    ],
-    "specs": {
-      "ASIN": "B0BTL8B72D",
-      "Reviewed US option": "DW-S02E, one sensor pair; UPC 192784000847",
-      "Protocol": "Matter over Thread; BLE for commissioning",
-      "Required roles": "Compatible Matter controller and Thread border router",
-      "Battery": "CR123A; use the exact received instructions",
-      "Sensing fit": "Align main/accessory marks; FAQ specifies a gap below 22mm",
-      "Environment": "Indoor only; no condensation or outdoor/weatherproofing inference",
-      "Observation": "Exact US identity and new offer checked October 23, 2026; no physical installation test"
+  "evidence": [
+    "Confirm ASIN B0CWLHSKYC, the regional HM-G01D/HM-G01E variant, seller, and included power accessories",
+    "List which devices use Zigbee, Thread, Wi-Fi, infrared, and Matter before assuming one hub replaces every controller",
+    "Check Aqara's current exposed-device list because Matter bridging does not publish every proprietary feature",
+    "Verify the Aqara Home migration path on a small device group before resetting an existing M2 or other Aqara hub",
+    "For Home Assistant, distinguish adding M3 as a Matter bridge from operating Home Assistant's own Matter controller and Thread network"
+  ],
+  "editorialSections": [
+    {
+      "heading": "A note about this review",
+      "body": "This is a research-based decision guide built from Aqara's current US product page, developer documentation, manual, and Home Assistant's current Matter documentation. It is not a long-term hands-on reliability test, and firmware, bridged device types, ecosystem features, and retailer bundles can change after publication."
     },
-    "evidence": [
-      "Match the received regional model and current installation instructions",
-      "Check controller and Thread roles for the actual ecosystem",
-      "Dry-fit both pieces through full opening movement with battery access",
-      "Verify real open/closed events, intended notifications and missing-data behavior"
-    ],
-    "editorialSections": [
-      {
-        "heading": "Confirm the complete Matter-over-Thread system",
-        "body": "P2 commissions through Matter and communicates over Thread. Confirm the exact controller and compatible Thread border router, including current software, before ordering. An existing suitable combined device can be enough. A generic Wi-Fi router or any Aqara Zigbee hub does not automatically provide both required roles."
-      },
-      {
-        "heading": "Fit the aligned pair to this opening",
-        "body": "Follow the alignment marks and matching indoor instructions. The reviewed FAQ specifies less than 22mm between main sensor and magnet; that is not the radio distance to the border router. Allow for frame movement, collision clearance and later battery access. Its manual excludes humid/outdoor use, and the FAQ cautions about metal mounting."
-      },
-      {
-        "heading": "Test the meaning of the reported state",
-        "body": "Confirm both open and closed states at the real mounting location and then the intended platform reminder or automation. A door can be closed without being locked, and an open/closed event does not describe room occupancy. Keep a deliberate unavailable-data outcome and appropriate independent checks for tasks requiring greater certainty."
-      },
-      {
-        "heading": "Compare the right IKEA control path",
-        "body": "IKEA MYGGBETT is the separate Matter-over-Thread contact option with its own border-router and battery requirements. PARASOLL uses a different DIRIGERA/direct-light pairing path and the current US listing carries a Last chance label. Do not treat either model as interchangeable P2 hardware or infer an exact support-end date from that sales label."
-      },
-      {
-        "heading": "Preserve battery and commissioning recovery",
-        "body": "Use the matching CR123A instructions and keep the compartment serviceable and batteries secure. Store Matter setup codes privately. Entering pairing mode and restoring factory settings are different procedures; follow the exact current instructions rather than resetting a working sensor to add another ecosystem. No sensor was paired, installed or outage-tested here."
-      },
-      {
-        "heading": "Compare the exact current retailer option",
-        "body": "The reviewed Amazon option is one DW-S02E sensor pair from AqaraDirect, fulfilled by Amazon. The ordinary new offer was checked separately from Prime pricing and mixed new/used minimum prices. Confirm current seller, condition, contents and return terms before ordering. This observation does not guarantee future stock or delivered hardware."
-      }
-    ],
-    "sources": [
-      {
-        "name": "Aqara P2 exact specifications",
-        "url": "https://www.aqara.com/us/product/door-and-window-sensor-p2/specs/",
-        "note": "DW-S02E/DW-S02D, CR123A, Thread/BLE, operating conditions and distinct included-parts lists."
-      },
-      {
-        "name": "P2 manufacturer user manual supplied with the listing",
-        "url": "https://m.media-amazon.com/images/I/91bo6fVOk1L.pdf",
-        "note": "English installation, Matter setup, indoor-only restrictions, battery and convenience/status-notification purpose. Matching regional instructions govern installation."
-      },
-      {
-        "name": "P2 installation and troubleshooting FAQ",
-        "url": "https://m.media-amazon.com/images/I/61ULKk62iGL.pdf",
-        "note": "Alignment and less-than-22mm sensor-to-magnet gap, metal-surface cautions and reset distinctions. The repeated 22mm in its router-distance paragraph is not used as a radio-range specification; older platform wording requires current confirmation."
-      },
-      {
-        "name": "Current Aqara P2 product range",
-        "url": "https://www.aqara.com/us/product/door-and-window-sensor-p2/",
-        "note": "Matter-over-Thread controller and border-router requirements. Older future-feature wording is not treated as proof every feature is presently exposed in every platform."
-      },
-      {
-        "name": "Aqara P2 current US store",
-        "url": "https://us.aqara.com/products/door-and-window-sensor-p2",
-        "note": "Current manufacturer model reference; actual Amazon seller, condition and availability were checked separately."
-      },
-      {
-        "name": "Exact P2 US retailer identity",
-        "url": "https://www.amazon.com/dp/B0BTL8B72D",
-        "note": "Single DW-S02E, UPC 192784000847. New ordinary-price AqaraDirect offer observed separately from Prime and mixed new/used offers; no received-unit or room test."
-      },
-      {
-        "name": "IKEA MYGGBETT US model",
-        "url": "https://www.ikea.com/us/en/p/myggbett-door-window-sensor-smart-60617641/",
-        "note": "Current page explicitly identifies Matter over Thread and its own battery/border-router requirements. No local-store stock established."
-      },
-      {
-        "name": "IKEA PARASOLL US model",
-        "url": "https://www.ikea.com/us/en/p/parasoll-door-window-sensor-smart-white-70504318/",
-        "note": "Current Last chance sales label and distinct DIRIGERA/direct-light path; not a unit-specific support deadline."
-      },
-      {
-        "name": "PARASOLL operating guide",
-        "url": "https://www.ikea.com/us/en/manuals/parasoll-door-window-sensor-smart-white__AA-2422302-1-100.pdf",
-        "note": "English operation checked for the different direct-light and DIRIGERA routes. Its placement, gap and reset instructions are not applied to P2."
-      }
-    ],
-    "compareSlugs": [
-      "aqara-hub-m3"
-    ],
-    "alternatives": [
-      "Keep a suitable existing contact sensor and supported system when the opening reminder already works.",
-      "Compare a separately documented Thread model such as MYGGBETT only after matching its own mounting, power and platform needs.",
-      "Retain an appropriate manual check where a consumer status sensor cannot meet the required certainty."
-    ],
-    "offers": [
-      {
-        "merchant": "Amazon US",
-        "url": "https://www.amazon.com/dp/B0BTL8B72D",
-        "label": "Check Aqara P2 DW-S02E on Amazon",
-        "priceNote": "Confirm one DW-S02E sensor pair, current new condition, AqaraDirect or chosen seller, contents and return terms; controller and Thread border router sold separately."
-      }
-    ]
-  },
-  {
-    site: "smarthome",
-    slug: "tapo-p110m-energy-monitoring-smart-plug",
-    asin: "B0DKG52WQ4",
-    amazonTitle: "Tapo P110M Smart Plug Mini, Matter Certified, Energy Monitoring (4-Pack)",
-    amazonDetailUrl: "https://www.amazon.com/dp/B0DKG52WQ4",
-    seoTitle: "Tapo P110M Guide: Energy Monitoring, Matter & 4-Pack Checks",
-    updatedAt: "July 12, 2026",
-    name: "Tapo P110M Energy-Monitoring Smart Plug (4-Pack)",
-    brand: "Tapo",
-    category: "automation",
-    image: "/images/affiliate/smarthome-smart-plug-realistic.webp",
-    summary: "A model- and pack-aware guide to Tapo P110M, including energy monitoring, Matter setup, 2.4GHz Wi-Fi, electrical limits, and the difference between Tapo app data and third-party ecosystem controls.",
-    verdict: "Tapo P110M is the better Tapo choice when energy monitoring is the reason for buying. Pick P125M instead when compact Matter on/off control matters more and usage data does not.",
-    whyItMatters: "P110M and P125M look like close siblings, but they solve different shopping problems. The P110M listing also varies by region and pack count, so the model suffix, ASIN, and number of plugs must remain visible at checkout.",
-    bestFor: "Energy monitoring for lamps and ordinary indoor plug-in loads",
-    priceBand: "$$",
-    rating: 4.4,
-    scores: [
-      { label: "Energy insight", value: 9 },
-      { label: "Matter reach", value: 8 },
-      { label: "Model clarity", value: 6 },
-    ],
-    pros: ["Energy monitoring in the Tapo app", "Matter-certified smart-plug path for compatible ecosystems", "Four-pack can cover several small household routines at once"],
-    cons: ["Third-party Matter apps may expose fewer energy features than Tapo", "The linked Amazon listing is a four-pack; regional and pack variants are easy to confuse", "Electrical limits and appliance type still need checking before use"],
-    specs: {
-      ASIN: "B0DKG52WQ4",
-      Model: "P110M",
-      Pack: "4-pack; confirm current Amazon variation",
-      Network: "2.4GHz Wi-Fi",
-      Matter: "Matter-certified; verify current firmware and ecosystem feature exposure",
-      "Energy monitoring": "Available in Tapo app; third-party availability may differ",
-      Electrical: "15A / 1800W maximum listed; follow appliance restrictions",
+    {
+      "heading": "Four roles that should not be collapsed into one label",
+      "body": "The M3 can coordinate compatible Aqara Zigbee devices, commission supported Matter devices into Aqara Home, bridge supported Aqara devices to other Matter ecosystems, and route Thread traffic. A device exposed through the Matter bridge remains on its original network; it does not become a native Matter-over-Thread device."
     },
-    evidence: [
-      "Confirm ASIN B0DKG52WQ4, model P110M, and four-plug quantity before checkout",
-      "Use the Tapo app as the baseline for energy history and confirm what the chosen Matter ecosystem exposes",
-      "Check the appliance's running and startup load; do not treat a 15A headline as approval for every motor, compressor, heater, or safety-critical appliance",
-      "Confirm the regional plug, voltage, seller, and return path because P110M pack and regional listings differ",
-    ],
-    editorialSections: [
-      {
-        heading: "P110M is the energy-monitoring branch",
-        body: "Choose P110M when the household wants to see usage history, compare a lamp or appliance's consumption, or build a simple energy-aware routine. If the only requirement is remote on/off control, the less expensive P125M can be the more disciplined choice.",
-      },
-      {
-        heading: "Tapo app and Matter do not expose identical controls",
-        body: "Matter makes cross-ecosystem control possible, but the exact energy entities and history may depend on the current firmware and the third-party controller. Set up the plug in Tapo first, confirm energy data there, then verify the Apple Home, Google Home, Alexa, SmartThings, or Home Assistant path you actually plan to use.",
-      },
-      {
-        heading: "The four-pack is part of the decision",
-        body: "The linked US listing is a four-pack. Confirm that the cart still contains four P110M plugs rather than a single unit, a two-pack, or a closely named P125M bundle. A multi-pack only saves money when the household has four sensible indoor loads to automate.",
-      },
-      {
-        heading: "Use it on ordinary indoor loads",
-        body: "Follow Tapo's current electrical restrictions and keep the plug away from water, outdoor exposure, overloaded strips, and appliances whose startup behavior exceeds the rated use. Keep the appliance's physical switch and a manual fallback available when the load is important.",
-      },
-      {
-        heading: "Who should skip it",
-        body: "Skip P110M when energy data will not be used, when the home needs outdoor or high-load control, when the regional plug is wrong, or when a third-party ecosystem must expose every Tapo-specific feature without app setup. P125M is the simpler comparison for basic Matter on/off routines.",
-      },
-    ],
-    alternatives: ["Choose Tapo P125M for compact Matter on/off control without energy monitoring.", "Choose a different energy-monitoring plug when the chosen ecosystem has a better-supported power dashboard.", "Use a local power meter when the job is a one-time measurement rather than an automation."],
-    compareSlugs: ["tapo-p125m-matter-smart-plug"],
-    sources: [
-      {
-        name: "TP-Link Tapo P110M US datasheet",
-        url: "https://static.tp-link.com/upload/product-overview/2026/202603/20260324/Tapo%20P110M%28US%291.0_Datasheet.pdf",
-        note: "Official US model, Matter, energy-monitoring, electrical, and network reference.",
-      },
-      {
-        name: "Amazon listing for ASIN B0DKG52WQ4",
-        url: "https://www.amazon.com/dp/B0DKG52WQ4",
-        note: "Exact linked four-pack listing; confirm seller, quantity, regional plug, and current variation.",
-      },
-    ],
-    offers: [
-      {
-        merchant: "Amazon US",
-        url: "https://www.amazon.com/dp/B0DKG52WQ4?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
-        label: "Check Tapo P110M 4-pack on Amazon",
-        priceNote: "Confirm ASIN B0DKG52WQ4, P110M model, four-pack quantity, regional plug, seller, and energy-monitoring details.",
-      },
-    ],
-  },
-  {
-    site: "smarthome",
-    slug: "tapo-p125m-matter-smart-plug",
-    asin: "B0BXMNJDW3",
-    seoTitle: "Tapo P125M Guide: Matter Smart Plug vs. P110M Energy Monitoring",
-    updatedAt: "July 11, 2026",
-    name: "Tapo P125M Matter Smart Plug (3-Pack)",
-    brand: "Tapo",
-    category: "automation",
-    image: "/images/affiliate/smarthome-smart-plug-realistic.webp",
-    summary: "A model-correct guide to the compact P125M Matter smart plug, covering 15A loads, 2.4GHz Wi-Fi, ecosystem commissioning, local controls, schedules, and the lack of energy monitoring.",
-    verdict: "The P125M is a practical Matter plug for lamps and ordinary plug-in appliances when compact size and broad ecosystem control matter. Choose an energy-monitoring model instead when usage data is the reason for buying.",
-    whyItMatters: "Smart-plug families reuse similar names while changing Matter, HomeKit, energy-monitoring, and pack-count features. The linked offer is the P125M three-pack, not the P125 or P110M.",
-    bestFor: "Compact Matter control for lamps and ordinary appliances",
-    priceBand: "$",
-    rating: 4.5,
-    scores: [
-      { label: "Ecosystem fit", value: 9 },
-      { label: "Outlet fit", value: 9 },
-      { label: "Energy insight", value: 2 },
-    ],
-    pros: ["Matter support for compatible ecosystems", "Compact body is designed to avoid blocking the second outlet", "Tapo app schedules, timers, and away-mode controls"],
-    cons: ["2.4GHz Wi-Fi only", "No energy-monitoring feature", "Not suitable for loads outside the listed electrical rating"],
-    specs: {
-      ASIN: "B0BXMNJDW3",
-      Model: "P125M",
-      Pack: "3-pack",
-      Electrical: "15A / 1800W maximum listed; follow load restrictions",
-      Network: "2.4GHz Wi-Fi",
-      Ecosystems: "Matter-compatible Apple Home, Alexa, Google Home, and SmartThings",
-      "Energy monitoring": "No",
+    {
+      "heading": "M3 versus M2 is an upgrade decision, not a generation contest",
+      "body": "M2 remains useful for a stable Aqara Zigbee installation with Ethernet and infrared control. M3 earns its higher cost when Thread devices, third-party Matter control in Aqara Home, PoE placement, local edge automations, or broader bridging are part of a written plan. Existing M2 owners should name the missing role before migrating."
     },
-    evidence: [
-      "Confirm P125M and the three-pack before checkout",
-      "Check the appliance's running and startup load against the plug's rating and restrictions",
-      "Use the physical button and original appliance controls as a fallback",
-    ],
-    editorialSections: [
-      {
-        heading: "The M suffix matters",
-        body: "P125M is the Matter version. P125 and P110M are different products with different ecosystem and energy features, so model numbers should stay visible in comparisons and setup instructions.",
-      },
-      {
-        heading: "Matter does not remove Wi-Fi setup",
-        body: "The plug still needs a suitable 2.4GHz network and a compatible Matter controller for the selected ecosystem. Keep the Matter setup code until commissioning and household sharing are complete.",
-      },
-      {
-        heading: "Choose loads conservatively",
-        body: "Use the plug for supported plug-in loads and follow Tapo's electrical restrictions. Avoid treating a headline 15A rating as approval for every heater, motor, compressor, or safety-critical appliance.",
-      },
-    ],
-    sources: [
-      {
-        name: "TP-Link Tapo P125M product page",
-        url: "https://www.tp-link.com/us/home-networking/smart-plug/tapo-p125m/",
-        note: "Official Matter, electrical, network, app, and compatibility details.",
-      },
-    ],
-    offers: [
-      {
-        merchant: "Amazon US",
-        url: "https://amzn.to/4y3dwqY",
-        label: "Check Tapo P125M 3-pack price on Amazon",
-        priceNote: "Confirm ASIN B0BXMNJDW3, model P125M, and three-pack quantity.",
-      },
-    ],
-    compareSlugs: ["tapo-p110m-energy-monitoring-smart-plug"],
-  },
+    {
+      "heading": "Matter compatibility is narrower than the logo suggests",
+      "body": "Aqara lists selected third-party Matter device categories and notes that device support can vary by ecosystem. The common Matter controls may work while vendor-specific settings, scenes, energy details, infrared functions, or advanced sensor data remain in the Aqara app. Check the exact child-device type rather than assuming the whole account will appear elsewhere."
+    },
+    {
+      "heading": "Home Assistant can use M3 as a Matter bridge",
+      "body": "Home Assistant's Matter integration acts as a separate Matter controller. The M3 can share supported bridged devices into that controller, but feature exposure is limited by both Aqara's bridge and Home Assistant's supported Matter device types. Keep IPv6 and local discovery working and do not assume the M3 automatically merges every existing Thread network."
+    },
+    {
+      "heading": "PoE is useful only when the cable path is deliberate",
+      "body": "A compatible PoE port can carry data and power to a central wall, ceiling, or utility location. Confirm the switch or injector, cable route, network segment, and mounting position first. USB-C remains the simpler choice when the hub can sit beside a stable outlet and Ethernet drop."
+    },
+    {
+      "heading": "Migration needs an exit plan",
+      "body": "Inventory child devices, automations, infrared scenes, ecosystem links, family access, and notification dependencies before replacing an older Aqara hub. Move a small group first, verify it for several normal days, and keep the old hub available until critical routines and physical fallbacks are proven."
+    },
+    {
+      "heading": "Who should skip it",
+      "body": "Skip the M3 when an existing Apple, Google, SmartThings, Home Assistant, or Aqara controller already provides every required role and no Aqara Zigbee, infrared, PoE, or Aqara Home automation need remains. Adding another controller can increase commissioning and troubleshooting work without improving the household routine."
+    },
+    {
+      "heading": "Keep resets and automation scope deliberate",
+      "body": "The original distinguishes network reset/unbinding from factory restoration. Preserve device lists, setup codes and automations before following the exact recovery procedure. Its warning frames M3 and child devices as convenience/status equipment, not a substitute for dedicated security protection. Indoor, dry ventilation and a matching 5 V / 2 A USB supply or approved PoE path still apply."
+    }
+  ],
+  "alternatives": [
+    "Keep Hub M2 when existing Aqara Zigbee automations are stable and Thread, PoE, and third-party Matter control are not required.",
+    "Use an existing compatible Matter controller and Thread border router when the home has no Aqara Zigbee or infrared plan.",
+    "Choose a simpler Aqara hub when price and basic Zigbee bridging matter more than M3's combined controller roles."
+  ],
+  "sources": [
+    {
+      "name": "Aqara Hub M3 US product page",
+      "url": "https://us.aqara.com/products/hub-m3",
+      "note": "Current official roles, device capacity, networking, power, storage, dimensions, and included components."
+    },
+    {
+      "name": "Aqara Hub M3 developer documentation",
+      "url": "https://opendoc.aqara.com/en/docs/AqaraDevice/Hub-M3.html",
+      "note": "Official controller, bridge, Thread, Home Assistant, and supported-device-role documentation."
+    },
+    {
+      "name": "Aqara Hub M3 user manual",
+      "url": "https://www.aqara.com/wp-content/uploads/2024/05/M3-User-Manual-1.pdf",
+      "note": "Official installation, model, power, network, reset, and safety reference."
+    },
+    {
+      "name": "Aqara Hub M2 product page",
+      "url": "https://www.aqara.com/us/product/hub-m2/",
+      "note": "Official M2 Zigbee, Ethernet, infrared, speaker, and USB-power baseline used for the upgrade comparison."
+    },
+    {
+      "name": "Selected US retailer identity, November 1, 2026",
+      "url": "https://www.amazon.com/dp/B0CWLHSKYC",
+      "note": "Exact model and selected package observed for New York 10001. Seller, condition, delivered total and current returns remain purchase-time checks; this is not a received-unit approval."
+    },
+    {
+      "name": "M3 manufacturer original supplied with retail selection",
+      "url": "https://m.media-amazon.com/images/I/B1tKA-G4+QL.pdf",
+      "note": "Complete English logical pages 1–11, physical 3–13, including installation and power diagrams reviewed. Printed multilingual index does not imply every translation was supplied or read; no pairing, reset or firmware update performed."
+    }
+  ],
+  "offers": [
+    {
+      "merchant": "Amazon US",
+      "url": "https://www.amazon.com/dp/B0CWLHSKYC?tag=madasmart-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+      "label": "Check Aqara Hub M3 on Amazon",
+      "priceNote": "Confirm the exact model and package, current condition, seller, delivered total and return terms; read the model-specific fit check above."
+    }
+  ],
+  "evidenceMode": "official-spec",
+  "researchNote": "Manufacturer documentation and exact selected retailer identity inform this guide. We have not installed or tested this product. November 1, 2026: selected US retailer identity and purchase conditions reviewed separately; no received-unit, installation, performance or reliability test.",
+  "purchaseCheck": "Match the regional M3 and the specific Zigbee, Matter/controller or Thread job it must perform. Include the missing 5 V / 2 A adapter or compatible PoE source, suitable dry placement and current feature support. Keep a working M2/controller when no needed role is missing."
+},
   {
+  "site": "smarthome",
+  "slug": "aqara-door-and-window-sensor-p2",
+  "asin": "B0BTL8B72D",
+  "seoTitle": "Aqara P2 Guide: Thread Controller, Magnet Gap & Battery",
+  "updatedAt": "November 1, 2026",
+  "name": "Aqara Door and Window Sensor P2",
+  "amazonTitle": "Aqara P2 DW-S02E indoor Matter-over-Thread contact sensor",
+  "amazonDetailUrl": "https://www.amazon.com/dp/B0BTL8B72D",
+  "brand": "Aqara",
+  "category": "automation",
+  "image": "/images/affiliate/category-smarthome-automation-editorial-v2.webp",
+  "imageAlt": "Editorial scene of unbranded smart-home devices, including a two-piece opening sensor, on a table",
+  "summary": "Check the exact P2 controller and Thread border-router path, indoor alignment, less-than-22mm magnet gap and CR123A access before choosing an opening-state sensor.",
+  "verdict": "P2 is a candidate for indoor opening-state reminders when the complete Matter-over-Thread system and mounting fit. It does not establish locked status or room vacancy. Keep a suitable working contact sensor when its current system already meets the task.",
+  "whyItMatters": "The reviewed US option is DW-S02E, a separate Matter-over-Thread model. It does not pair as a Zigbee child device or replace a Wi-Fi/Tuya sensor without changing the control path.",
+  "bestFor": "Indoor opening-state reminders with a suitable Matter controller and Thread border router",
+  "priceBand": "$",
+  "rating": 0,
+  "scores": [],
+  "pros": [
+    "Documented native Matter-over-Thread path",
+    "Opening state for supported reminders and automations",
+    "Replaceable CR123A battery"
+  ],
+  "cons": [
+    "Requires compatible controller and Thread border router",
+    "Indoor-only mounting with exact alignment and service access",
+    "Closed state does not establish a locked door or an empty room"
+  ],
+  "specs": {
+    "ASIN": "B0BTL8B72D",
+    "Reviewed US option": "DW-S02E, one sensor pair; UPC 192784000847",
+    "Protocol": "Matter over Thread; BLE for commissioning",
+    "Required roles": "Compatible Matter controller and Thread border router",
+    "Battery": "CR123A; use the exact received instructions",
+    "Sensing fit": "Align main/accessory marks; FAQ specifies a gap below 22mm",
+    "Environment": "Indoor only; no condensation or outdoor/weatherproofing inference; reviewed manual mounting height no greater than 2 m",
+    "Observation": "Earlier DW-S02E technical/model review retained; current single-pair US retailer identity checked November 1, 2026"
+  },
+  "evidence": [
+    "Match the received regional model and current installation instructions",
+    "Check controller and Thread roles for the actual ecosystem",
+    "Dry-fit both pieces through full opening movement with battery access",
+    "Verify real open/closed events, intended notifications and missing-data behavior"
+  ],
+  "editorialSections": [
+    {
+      "heading": "Confirm the complete Matter-over-Thread system",
+      "body": "P2 commissions through Matter and communicates over Thread. Confirm the exact controller and compatible Thread border router, including current software, before ordering. An existing suitable combined device can be enough. A generic Wi-Fi router or any Aqara Zigbee hub does not automatically provide both required roles."
+    },
+    {
+      "heading": "Fit the aligned pair to this opening",
+      "body": "Follow the alignment marks and matching indoor instructions. The reviewed FAQ specifies less than 22 mm between main sensor and magnet; that is not the radio distance to the border router. Allow for frame movement, collision clearance and later battery access. Its manual excludes humid/outdoor use, and the FAQ cautions about metal mounting. The reviewed manual permits mounting at heights no greater than 2 m; check the proposed position against that limit and the received instructions."
+    },
+    {
+      "heading": "Test the meaning of the reported state",
+      "body": "Confirm both open and closed states at the real mounting location and then the intended platform reminder or automation. A door can be closed without being locked, and an open/closed event does not describe room occupancy. Keep a deliberate unavailable-data outcome and appropriate independent checks for tasks requiring greater certainty."
+    },
+    {
+      "heading": "Compare the right IKEA control path",
+      "body": "IKEA MYGGBETT is the separate Matter-over-Thread contact option with its own border-router and battery requirements. PARASOLL uses a different DIRIGERA/direct-light pairing path and the current US listing carries a Last chance label. Do not treat either model as interchangeable P2 hardware or infer an exact support-end date from that sales label."
+    },
+    {
+      "heading": "Preserve battery and commissioning recovery",
+      "body": "Use the matching CR123A instructions and keep the compartment serviceable and batteries secure. Store Matter setup codes privately. Entering pairing mode and restoring factory settings are different procedures; follow the exact current instructions rather than resetting a working sensor to add another ecosystem. No sensor was paired, installed or outage-tested here."
+    },
+    {
+      "heading": "Compare the exact current retailer option",
+      "body": "The current single-pair Amazon selection remains from AqaraDirect, fulfilled by Amazon. The earlier DW-S02E original-document review is retained separately from today’s offer observation. Confirm the delivered regional model, current condition, contents, total and returns before ordering. Closed state remains different from a locked door or an empty room."
+    }
+  ],
+  "sources": [
+    {
+      "name": "Aqara P2 exact specifications",
+      "url": "https://www.aqara.com/us/product/door-and-window-sensor-p2/specs/",
+      "note": "DW-S02E/DW-S02D, CR123A, Thread/BLE, operating conditions and distinct included-parts lists."
+    },
+    {
+      "name": "P2 manufacturer user manual supplied with the listing",
+      "url": "https://m.media-amazon.com/images/I/91bo6fVOk1L.pdf",
+      "note": "English installation, Matter setup, indoor-only restrictions, battery and convenience/status-notification purpose. Matching regional instructions govern installation."
+    },
+    {
+      "name": "P2 installation and troubleshooting FAQ",
+      "url": "https://m.media-amazon.com/images/I/61ULKk62iGL.pdf",
+      "note": "Alignment and less-than-22mm sensor-to-magnet gap, metal-surface cautions and reset distinctions. The repeated 22mm in its router-distance paragraph is not used as a radio-range specification; older platform wording requires current confirmation."
+    },
+    {
+      "name": "Current Aqara P2 product range",
+      "url": "https://www.aqara.com/us/product/door-and-window-sensor-p2/",
+      "note": "Matter-over-Thread controller and border-router requirements. Older future-feature wording is not treated as proof every feature is presently exposed in every platform."
+    },
+    {
+      "name": "Aqara P2 current US store",
+      "url": "https://us.aqara.com/products/door-and-window-sensor-p2",
+      "note": "Current manufacturer model reference; actual Amazon seller, condition and availability were checked separately."
+    },
+    {
+      "name": "IKEA MYGGBETT US model",
+      "url": "https://www.ikea.com/us/en/p/myggbett-door-window-sensor-smart-60617641/",
+      "note": "Current page explicitly identifies Matter over Thread and its own battery/border-router requirements. No local-store stock established."
+    },
+    {
+      "name": "IKEA PARASOLL US model",
+      "url": "https://www.ikea.com/us/en/p/parasoll-door-window-sensor-smart-white-70504318/",
+      "note": "Current Last chance sales label and distinct DIRIGERA/direct-light path; not a unit-specific support deadline."
+    },
+    {
+      "name": "PARASOLL operating guide",
+      "url": "https://www.ikea.com/us/en/manuals/parasoll-door-window-sensor-smart-white__AA-2422302-1-100.pdf",
+      "note": "English operation checked for the different direct-light and DIRIGERA routes. Its placement, gap and reset instructions are not applied to P2."
+    },
+    {
+      "name": "Selected US retailer identity, November 1, 2026",
+      "url": "https://www.amazon.com/dp/B0BTL8B72D",
+      "note": "Exact model and selected package observed for New York 10001. Seller, condition, delivered total and current returns remain purchase-time checks; this is not a received-unit approval."
+    }
+  ],
+  "compareSlugs": [
+    "aqara-hub-m3"
+  ],
+  "alternatives": [
+    "Keep a suitable existing contact sensor and supported system when the opening reminder already works.",
+    "Compare a separately documented Thread model such as MYGGBETT only after matching its own mounting, power and platform needs.",
+    "Retain an appropriate manual check where a consumer status sensor cannot meet the required certainty."
+  ],
+  "offers": [
+    {
+      "merchant": "Amazon US",
+      "url": "https://www.amazon.com/dp/B0BTL8B72D?tag=madasmart-20",
+      "label": "Check Aqara Door and Window Sensor P2 on Amazon",
+      "priceNote": "Confirm the exact model and package, current condition, seller, delivered total and return terms; read the model-specific fit check above."
+    }
+  ],
+  "evidenceMode": "official-spec",
+  "researchNote": "Manufacturer documentation and exact selected retailer identity inform this guide. We have not installed or tested this product. November 1, 2026: selected US retailer identity and purchase conditions reviewed separately; no received-unit, installation, performance or reliability test.",
+  "purchaseCheck": "Match the single P2 pair and regional instructions. Confirm a compatible Matter controller and Thread border router, indoor aligned mounting with the specified magnet gap, CR123A access and supported opening-state alerts. A closed state does not prove locking or vacancy."
+},
+  {
+  "site": "smarthome",
+  "slug": "tapo-p110m-energy-monitoring-smart-plug",
+  "asin": "B0DKG52WQ4",
+  "amazonTitle": "Tapo P110M Smart Plug Mini, Matter Certified, Energy Monitoring (4-Pack)",
+  "amazonDetailUrl": "https://www.amazon.com/dp/B0DKG52WQ4",
+  "seoTitle": "Tapo P110M Guide: Energy Monitoring, Matter & 4-Pack Checks",
+  "updatedAt": "November 1, 2026",
+  "name": "Tapo P110M Energy-Monitoring Smart Plug (4-Pack)",
+  "brand": "Tapo",
+  "category": "automation",
+  "image": "/images/affiliate/smarthome-smart-plug-realistic.webp",
+  "summary": "A model- and pack-aware guide to Tapo P110M, including energy monitoring, Matter setup, 2.4GHz Wi-Fi, electrical limits, and the difference between Tapo app data and third-party ecosystem controls.",
+  "verdict": "Tapo P110M is the better Tapo choice when energy monitoring is the reason for buying. Pick P125M instead when compact Matter on/off control matters more and usage data does not.",
+  "whyItMatters": "P110M and P125M look like close siblings, but they solve different shopping problems. The P110M listing also varies by region and pack count, so the model suffix, ASIN, and number of plugs must remain visible at checkout.",
+  "bestFor": "Energy monitoring for lamps and ordinary indoor plug-in loads",
+  "priceBand": "$$",
+  "rating": 0,
+  "scores": [],
+  "pros": [
+    "Energy monitoring in the Tapo app",
+    "Matter-certified smart-plug path for compatible ecosystems",
+    "Four-pack can cover several small household routines at once"
+  ],
+  "cons": [
+    "Third-party Matter apps may expose fewer energy features than Tapo",
+    "The linked Amazon listing is a four-pack; regional and pack variants are easy to confuse",
+    "Electrical limits and appliance type still need checking before use"
+  ],
+  "specs": {
+    "ASIN": "B0DKG52WQ4",
+    "Model": "P110M",
+    "Pack": "4-pack; confirm current Amazon variation",
+    "Network": "2.4GHz Wi-Fi",
+    "Matter": "Matter-certified; verify current firmware and ecosystem feature exposure",
+    "Energy monitoring": "Available in Tapo app; third-party availability may differ",
+    "Electrical": "Use the received US label and lowest applicable load-specific limit; 15 A is not universal appliance approval"
+  },
+  "evidence": [
+    "Confirm ASIN B0DKG52WQ4, model P110M, and four-plug quantity before checkout",
+    "Use the Tapo app as the baseline for energy history and confirm what the chosen Matter ecosystem exposes",
+    "Check the appliance's running and startup load; do not treat a 15A headline as approval for every motor, compressor, heater, or safety-critical appliance",
+    "Confirm the regional plug, voltage, seller, and return path because P110M pack and regional listings differ"
+  ],
+  "editorialSections": [
+    {
+      "heading": "P110M is the energy-monitoring branch",
+      "body": "Choose P110M when the household wants to see usage history, compare a lamp or appliance's consumption, or build a simple energy-aware routine. If the only requirement is remote on/off control, the less expensive P125M can be the more disciplined choice."
+    },
+    {
+      "heading": "Tapo app and Matter do not expose identical controls",
+      "body": "Matter makes cross-ecosystem control possible, but the exact energy entities and history may depend on the current firmware and the third-party controller. Set up the plug in Tapo first, confirm energy data there, then verify the Apple Home, Google Home, Alexa, SmartThings, or Home Assistant path you actually plan to use."
+    },
+    {
+      "heading": "The four-pack is part of the decision",
+      "body": "The linked US listing is a four-pack. Confirm that the cart still contains four P110M plugs rather than a single unit, a two-pack, or a closely named P125M bundle. A multi-pack only saves money when the household has four sensible indoor loads to automate."
+    },
+    {
+      "heading": "Read the load-specific table before switching power",
+      "body": "The attached quick guide separates resistive, incandescent and motor limits; its 1/6 HP motor rating is not approval for every 15 A appliance. The table also gives narrower examples for lamps, computers and adapters. It warns that some 60–75 W power adapters/USB chargers can cause damaging inrush, and excludes EV charging. Resolve the exact load and startup behavior using the supplied instructions. Keep the plug indoors and ventilated, and retain the appliance’s normal control."
+    },
+    {
+      "heading": "Who should skip it",
+      "body": "Skip P110M when energy data will not be used, when the home needs outdoor or high-load control, when the regional plug is wrong, or when a third-party ecosystem must expose every Tapo-specific feature without app setup. P125M is the simpler comparison for basic Matter on/off routines."
+    },
+    {
+      "heading": "Treat energy history as an app feature to verify",
+      "body": "Tapo energy charts and tariff estimates do not establish billing-grade measurement or identical data in every Matter controller. Check the actual firmware and platform entities before choosing a four-pack for an energy dashboard. A current maker specification page may show a different pack count; the reviewed Amazon selection is explicitly four P110M plugs."
+    }
+  ],
+  "alternatives": [
+    "Choose Tapo P125M for compact Matter on/off control without energy monitoring.",
+    "Choose a different energy-monitoring plug when the chosen ecosystem has a better-supported power dashboard.",
+    "Use a local power meter when the job is a one-time measurement rather than an automation."
+  ],
+  "compareSlugs": [
+    "tapo-p125m-matter-smart-plug"
+  ],
+  "sources": [
+    {
+      "name": "TP-Link Tapo P110M US datasheet",
+      "url": "https://static.tp-link.com/upload/product-overview/2026/202603/20260324/Tapo%20P110M%28US%291.0_Datasheet.pdf",
+      "note": "Official US model, Matter, energy-monitoring, electrical, and network reference."
+    },
+    {
+      "name": "Selected US retailer identity, November 1, 2026",
+      "url": "https://www.amazon.com/dp/B0DKG52WQ4",
+      "note": "Exact model and selected package observed for New York 10001. Seller, condition, delivered total and current returns remain purchase-time checks; this is not a received-unit approval."
+    },
+    {
+      "name": "Retail-attached US plug quick guide and load table",
+      "url": "https://m.media-amazon.com/images/I/A1CnCN0S0AL.pdf",
+      "note": "Both English physical sheets and full load/safety table read. Generic Mini Smart Wi-Fi Plug guide attached to the selected listing; received model/revision remains controlling. No powered load or energy-accuracy test."
+    }
+  ],
+  "offers": [
+    {
+      "merchant": "Amazon US",
+      "url": "https://www.amazon.com/dp/B0DKG52WQ4?tag=madasmart-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+      "label": "Check Tapo P110M Energy-Monitoring Smart Plug (4-Pack) on Amazon",
+      "priceNote": "Confirm the exact model and package, current condition, seller, delivered total and return terms; read the model-specific fit check above."
+    }
+  ],
+  "evidenceMode": "official-spec",
+  "researchNote": "Manufacturer documentation and exact selected retailer identity inform this guide. We have not installed or tested this product. November 1, 2026: selected US retailer identity and purchase conditions reviewed separately; no received-unit, installation, performance or reliability test.",
+  "purchaseCheck": "Match the US P110M four-pack and the required Tapo/Matter energy features. Check the exact load-specific and startup limits, including the attached guide’s 60–75 W adapter warning; no EV charging. Use the lowest matching rating and keep local appliance controls available."
+},
+  {
+  "site": "smarthome",
+  "slug": "tapo-p125m-matter-smart-plug",
+  "asin": "B0BXMNJDW3",
+  "seoTitle": "Tapo P125M Guide: Matter Smart Plug vs. P110M Energy Monitoring",
+  "updatedAt": "November 1, 2026",
+  "name": "Tapo P125M Matter Smart Plug (3-Pack)",
+  "brand": "Tapo",
+  "category": "automation",
+  "image": "/images/affiliate/smarthome-smart-plug-realistic.webp",
+  "summary": "A model-correct guide to the compact P125M Matter smart plug, covering 15A loads, 2.4GHz Wi-Fi, ecosystem commissioning, local controls, schedules, and the lack of energy monitoring.",
+  "verdict": "The P125M is a practical Matter plug for lamps and ordinary plug-in appliances when compact size and broad ecosystem control matter. Choose an energy-monitoring model instead when usage data is the reason for buying.",
+  "whyItMatters": "Smart-plug families reuse similar names while changing Matter, HomeKit, energy-monitoring, and pack-count features. The linked offer is the P125M three-pack, not the P125 or P110M.",
+  "bestFor": "Compact Matter control for lamps and ordinary appliances",
+  "priceBand": "$",
+  "rating": 0,
+  "scores": [],
+  "pros": [
+    "Matter support for compatible ecosystems",
+    "Compact body is designed to avoid blocking the second outlet",
+    "Tapo app schedules, timers, and away-mode controls"
+  ],
+  "cons": [
+    "2.4GHz Wi-Fi only",
+    "No energy-monitoring feature",
+    "Not suitable for loads outside the listed electrical rating"
+  ],
+  "specs": {
+    "ASIN": "B0BXMNJDW3",
+    "Model": "P125M",
+    "Pack": "3-pack",
+    "Electrical": "15A / 1800W maximum listed; follow load restrictions",
+    "Network": "2.4GHz Wi-Fi",
+    "Ecosystems": "Matter-compatible Apple Home, Alexa, Google Home, and SmartThings",
+    "Energy monitoring": "No"
+  },
+  "evidence": [
+    "Confirm P125M and the three-pack before checkout",
+    "Check the appliance's running and startup load against the plug's rating and restrictions",
+    "Use the physical button and original appliance controls as a fallback"
+  ],
+  "editorialSections": [
+    {
+      "heading": "The M suffix matters",
+      "body": "P125M is the Matter version. P125 and P110M are different products with different ecosystem and energy features, so model numbers should stay visible in comparisons and setup instructions."
+    },
+    {
+      "heading": "Matter does not remove Wi-Fi setup",
+      "body": "The plug still needs a suitable 2.4GHz network and a compatible Matter controller for the selected ecosystem. Keep the Matter setup code until commissioning and household sharing are complete."
+    },
+    {
+      "heading": "Choose loads conservatively",
+      "body": "Use the plug for supported plug-in loads and follow Tapo's electrical restrictions. Avoid treating a headline 15A rating as approval for every heater, motor, compressor, or safety-critical appliance."
+    },
+    {
+      "heading": "Use the US rating for the actual load",
+      "body": "The selected three-pack’s attached guide lists US 100–125 V, 15 A general/resistive, 1/6 HP motor and 8 A incandescent ratings. Those are different load classes, not permission for any appliance below a single wattage headline. Use the received label and applicable instructions, keep it indoors and ventilated, and preserve local control for an important load."
+    },
+    {
+      "heading": "Keep pairing codes and working schedules",
+      "body": "The attached guide distinguishes a Wi-Fi reset that keeps prior settings from a factory reset. Follow the supplied revision and store setup codes privately. Matter on/off operation does not add P110M’s energy monitoring, guarantee every controller feature or establish future compatibility with every ecosystem."
+    }
+  ],
+  "sources": [
+    {
+      "name": "TP-Link Tapo P125M product page",
+      "url": "https://www.tp-link.com/us/home-networking/smart-plug/tapo-p125m/",
+      "note": "Official Matter, electrical, network, app, and compatibility details."
+    },
+    {
+      "name": "Selected US retailer identity, November 1, 2026",
+      "url": "https://www.amazon.com/dp/B0BXMNJDW3",
+      "note": "Exact model and selected package observed for New York 10001. Seller, condition, delivered total and current returns remain purchase-time checks; this is not a received-unit approval."
+    },
+    {
+      "name": "P125M retail-attached original quick guide",
+      "url": "https://m.media-amazon.com/images/I/81ec-HQH6xL.pdf",
+      "note": "English setup and US load/indoor-use notes across both physical sheets reviewed; reset distinction and component figures read. Other translations and their regional ratings are not transferred to the US selection."
+    }
+  ],
+  "offers": [
+    {
+      "merchant": "Amazon US",
+      "url": "https://www.amazon.com/dp/B0BXMNJDW3?tag=madasmart-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+      "label": "Check Tapo P125M Matter Smart Plug (3-Pack) on Amazon",
+      "priceNote": "Confirm the exact model and package, current condition, seller, delivered total and return terms; read the model-specific fit check above."
+    }
+  ],
+  "compareSlugs": [
+    "tapo-p110m-energy-monitoring-smart-plug"
+  ],
+  "evidenceMode": "official-spec",
+  "researchNote": "Manufacturer documentation and exact selected retailer identity inform this guide. We have not installed or tested this product. November 1, 2026: selected US retailer identity and purchase conditions reviewed separately; no received-unit, installation, performance or reliability test.",
+  "purchaseCheck": "Match the US P125M three-pack, supported 2.4 GHz Wi-Fi and chosen Matter controller. Confirm the actual load class and supplied limits; choose an energy-monitoring model if consumption data is the goal. Keep a suitable existing manual switch when remote control adds no useful function."
+},
+  {
+    purchaseAlternatives: [
+  "ergobaby-omni-breeze-onyx-blooms-retailer-alternative"
+],
     site: "baby",
     slug: "babybjorn-carrier-harmony",
     asin: "B0947B35TG",
     seoTitle: "BabyBjörn Carrier Harmony Guide: Fit, Mesh & Positions",
-    updatedAt,
+    "updatedAt": "October 31, 2026",
     name: "BabyBjörn Carrier Harmony 3D Mesh",
     brand: "BabyBjörn",
     category: "travel",
     image: "/images/affiliate/baby-carrier-realistic.webp",
-    summary: "A fit-first guide to Carrier Harmony's newborn sizing, 3D mesh, head support, pressure-relieving waist belt, carry positions, and the practical differences from Ergobaby Omni Breeze.",
-    verdict: "Carrier Harmony is the cleaner choice for caregivers who prefer its front-buckle workflow and soft structured feel. Omni Breeze offers a higher listed maximum weight and hip carry, so the better carrier depends on body fit and intended positions rather than brand reputation.",
+    summary: "Harmony 3D Mesh guidance for front buckles, position-specific limits and a newborn-instruction conflict that needs exact-version confirmation.",
+    verdict: "Compare Harmony when its front-buckle and waist-belt layout suits the caregiver. Resolve the linked US manual's newborn weight and leg-strap discrepancies before relying on a 7 lb headline; use separate limits for outward and back carry.",
     whyItMatters: "Carrier comfort cannot be established from specifications alone. The baby's size, developmental milestone, adult torso, strap path, and return window matter more than a small difference in product weight.",
     bestFor: "Soft structured mesh with front-access buckles",
     priceBand: "$$$",
@@ -437,42 +500,75 @@ export const adjacentExpansionProducts: Product[] = [
       { label: "Adjustment access", value: 9 },
       { label: "Long-range capacity", value: 7 },
     ],
-    pros: ["Soft 3D mesh and adjustable head support", "Front-access buckles can simplify loading and unloading", "Inward, outward, and back-carry options at the stated milestones"],
-    cons: ["No hip-carry position", "Higher price than many structured carriers", "Fit remains personal despite broad adjustment range"],
+    pros: [
+      "Front-access buckles and adjustable head support",
+      "Waist-belt and back-support adjustments for the actual wearer",
+      "Documented later outward and back positions with separate limits"
+    ],
+    cons: [
+      "Unresolved newborn minimum and leg-strap differences in the linked US manual",
+      "No hip position; reviewed back position starts at 12 months",
+      "No personal comfort or temperature result established by specifications"
+    ],
     specs: {
-      ASIN: "B0947B35TG",
-      Material: "3D mesh",
-      "Listed range": "7–40lb / 3.2–18kg",
-      Positions: "Front inward, front outward, and back carry",
-      "Newborn use": "Follow minimum size and head-support instructions",
+      "ASIN": "B0947B35TG",
+      "Material": "3D mesh",
+      "Listed range": "Current product page: 7–40 lb; linked US manual warning: 8–40 lb, while its chart says 7 lb. Resolve the exact version before newborn use.",
+      "Positions": "Front inward, front outward, and back carry",
+      "Newborn use": "Minimum length 21 in; verify the conflicting weight and leg-strap instructions with BabyBjörn for the supplied US version.",
       "Linked color": "Silver; confirm selected variation",
+      "Outward / back": "US manual: outward only with independent upright head control, around 5 months, max 26 lb; back from 12 months, max 40 lb/40 in. Match supplied version."
     },
     evidence: [
-      "Confirm the baby meets the listed size and developmental requirements for the chosen position",
-      "Use inward-facing newborn setup and keep the face and airway visible",
-      "Evaluate caregiver comfort while the return window is still open",
+      "Match B0947B35TG, Silver 3D Mesh and the supplied US instruction/label version.",
+      "Confirm the conflicting newborn minimum and leg-strap cutoff with BabyBjörn before use.",
+      "Check outward and back requirements separately; a 40 lb overall limit does not authorize every position.",
+      "Confirm seller-specific returns before planning a fit trial; stop when secure positioning cannot be maintained."
     ],
     editorialSections: [
-      {
-        heading: "Harmony versus Omni Breeze",
-        body: "Harmony emphasizes soft material and front-access buckles. Omni Breeze lists hip carry and a 45lb maximum. Neither difference predicts which waist belt and shoulder path will feel better on a particular caregiver.",
-      },
-      {
-        heading: "Positions change with development",
-        body: "Newborn use begins inward-facing. Outward and back carry have later age, size, and developmental requirements. Follow the Harmony manual for the exact head-support and zipper settings instead of copying a marketing image.",
-      },
-      {
-        heading: "Fit both adults independently",
-        body: "Reset the waist belt, back support, shoulder straps, and head support for each wearer. A shared carrier is not a shared strap setting.",
-      },
-    ],
+  {
+    "heading": "Resolve the newborn instruction conflict",
+    "body": "The US manual linked by BabyBjörn has a 7 lb starting chart but an 8 lb minimum in its warning pages. It also differs on the leg-strap cutoff. Confirm the instructions and label for the exact US version with BabyBjörn before newborn use; do not select the less restrictive line from a conflicting document. The stated weight or length alone cannot establish fit."
+  },
+  {
+    "heading": "Each later position has its own limits",
+    "body": "The linked US instructions place outward carry after the child can hold their head upright unaided, around five months, with a 26 lb maximum. Back carry begins at 12 months and remains within the listed height and weight limits. These are Harmony instructions, not the lower back-carry age used by some other carriers. Its four-position wording counts two inward setups and adds no hip position."
+  },
+  {
+    "heading": "Keep the full setup sequence",
+    "body": "Use the matching manual for newborn-seat zips, leg-position zips, head support and leg straps. Keep the face unobstructed and support the child while fastening or removing the front. The guide is a planning reference; the original diagrams and any manufacturer clarification control the actual setup."
+  },
+  {
+    "heading": "Compare the workflow on each caregiver",
+    "body": "Harmony has front-access buckles and a waist belt. Omni Breeze offers hip carry under its own requirements. Neither feature list predicts comfort on a particular adult. Reset the straps for each wearer, check eligibility for any fit trial before ordering and keep a suitable existing carrier when it already serves the routine."
+  },
+  {
+    "heading": "A separate carrier to compare while Harmony is paused",
+    "body": "If you need a structured carrier now, compare the independently named Omni Breeze Onyx Blooms option below. It has its own inward and later-position requirements and different fastenings. It does not resolve Harmony’s 7/8 lb or leg-strap conflict, and Breeze instructions must never be used to set up Harmony. Compare the fit on each caregiver; do not assume equal front-buckle access or comfort."
+  }
+],
     sources: [
-      {
-        name: "BabyBjörn Carrier Harmony",
-        url: "https://www.babybjorn.com/products/baby-carriers/baby-carrier-harmony/",
-        note: "Official material, size range, positions, and adjustment guidance.",
-      },
-    ],
+  {
+    "name": "BabyBjörn Carrier Harmony",
+    "url": "https://www.babybjorn.com/products/baby-carriers/baby-carrier-harmony/",
+    "note": "Official material, size range, positions, and adjustment guidance."
+  },
+  {
+    "name": "BabyBjörn Harmony US instructions",
+    "url": "https://a.storyblok.com/f/187315/x/1267c722e3/bc-harmony-om-us-v4-202104-lr.pdf",
+    "note": "English printed pages 4–11 and every diagram reviewed. The chart starts at 7 lb while the warnings start at 8 lb; the leg-strap instructions say under 10 lb in one section and 7–11 lb in another. Confirm the exact version instead of selecting the less restrictive statement."
+  },
+  {
+    "name": "Ergobaby Omni Breeze and Omni Dream original instructions",
+    "url": "https://m.media-amazon.com/images/I/C1hZwZsKKuL.pdf",
+    "note": "Manufacturer-authored joint manual IM-OMNIBRZ+DRM_ROW_210315_V1: complete English and all diagrams on two physical spreads previously read. Linked from the original Onyx Black listing; model-family guidance, not proof of the supplied regional instructions for every Onyx Blooms unit."
+  },
+  {
+    "name": "Amazon Omni Breeze Onyx Blooms B0BQCPHV9J",
+    "url": "https://www.amazon.com/dp/B0BQCPHV9J",
+    "note": "October 31, 2026, US ZIP 10001: selected Onyx Blooms, BCZ360PONYXBLM, UPC191653007062, Amazon.com offer and expanded 90-day returns observed. Description also spells Oynx Blue; match selection/model rather than treating it as original Onyx Black. Selected New not explicitly displayed."
+  }
+],
     compareSlugs: ["babybjorn-carrier-mini-3d-mesh", "ergobaby-omni-breeze-carrier"],
     offers: [
       {
@@ -482,13 +578,19 @@ export const adjacentExpansionProducts: Product[] = [
         priceNote: "Confirm ASIN B0947B35TG, 3D Mesh material, color, and seller.",
       },
     ],
+    "purchaseCheck": "Resolve the exact US label and instructions before relying on newborn eligibility: the linked manual has differing 7/8 lb and leg-strap statements. Silver 3D Mesh identity and a current offer do not resolve that conflict. Outward and back limits remain separate.",
   },
   {
+"purchaseCheck": "Compare the selected two-pack when a defined WAN, backhaul or local-transfer path can use its single 10 GbE port. Count the other 2.5 GbE and 1 GbE ports separately and match regional hardware/firmware. The retailer component table contains a quantity typo; confirm two nodes and two supplies. Keep adequate existing Wi-Fi; coverage and signal-class numbers are not measured results.",
+"evidenceMode": "research-synthesis",
+"imageAlt": "Editorial illustration of the product category; not a photograph of the selected retail unit.",
+"researchNote": "November 1 selected US10001 identity/offer state and the named manufacturer product, specification or support sections reviewed. This is documented purchase research, not a physical speed, installation, security, alert, comfort or reliability test. Applicable manual scope and remaining revision/service conditions are explicit; no whole-manual claim is implied.",
+
     site: "network",
     slug: "tp-link-deco-be67-wifi-7-mesh",
     asin: "B0FQYQRZQX",
     seoTitle: "TP-Link Deco BE67 Guide: 10GbE, Ports & Who Should Buy It",
-    updatedAt: "July 19, 2026",
+    updatedAt: "November 1, 2026",
     name: "TP-Link Deco BE67 Wi-Fi 7 Mesh (2-Pack)",
     brand: "TP-Link",
     category: "wifi",
@@ -498,12 +600,8 @@ export const adjacentExpansionProducts: Product[] = [
     whyItMatters: "The faster mesh only pays off when the modem, wired backhaul, switch, and clients can use it. Otherwise better placement or the less expensive BE63 can deliver the same practical result.",
     bestFor: "Premium Wi-Fi 7 mesh with a real 10GbE use case",
     priceBand: "$$$$",
-    rating: 4.5,
-    scores: [
-      { label: "Wireless capacity", value: 10 },
-      { label: "Multi-gig path", value: 9 },
-      { label: "Value discipline", value: 6 },
-    ],
+    rating: 0,
+    scores: [],
     pros: ["Tri-band BE14000 Wi-Fi 7 with 6GHz", "10GbE plus 2.5GbE and 1GbE ports per unit", "Ethernet and wireless backhaul options"],
     cons: ["Costs more than BE63", "Only useful at full potential with compatible clients and wired equipment", "Two-pack coverage still depends on layout and placement"],
     specs: {
@@ -540,17 +638,22 @@ export const adjacentExpansionProducts: Product[] = [
       },
     ],
     sources: [
-      {
-        name: "TP-Link Deco BE67 product page",
-        url: "https://www.tp-link.com/us/deco-mesh-wifi/product-family/deco-be67/",
-        note: "Official wireless class, coverage, ports, backhaul, and feature specifications.",
-      },
-      {
-        name: "TP-Link Deco BE67 support and firmware",
-        url: "https://www.tp-link.com/us/support/download/deco-be67/",
-        note: "Official hardware-version, regional-firmware, release-date, and current feature notes.",
-      },
-    ],
+  {
+    "name": "TP-Link Deco BE67 product page",
+    "url": "https://www.tp-link.com/us/deco-mesh-wifi/product-family/deco-be67/",
+    "note": "Official wireless class, coverage, ports, backhaul, and feature specifications."
+  },
+  {
+    "name": "TP-Link Deco BE67 support and firmware",
+    "url": "https://www.tp-link.com/us/support/download/deco-be67/",
+    "note": "Official hardware-version, regional-firmware, release-date, and current feature notes."
+  },
+  {
+    "name": "Exact selected US retail identity and offer observation",
+    "url": "https://www.amazon.com/dp/B0FQYQRZQX",
+    "note": "November 1, 2026 US10001 public selection checked. New primary selection and expanded return terms observed; point-in-time seller/delivery/conditions, not a future availability or warranty promise."
+  }
+],
     compareSlugs: ["tp-link-deco-be63-wifi-7-mesh", "tp-link-deco-be85-wifi-7-mesh"],
     offers: [
       {
@@ -565,10 +668,10 @@ export const adjacentExpansionProducts: Product[] = [
     site: "pet",
     slug: "levoit-vital-200s-p-air-purifier",
     asin: "B0BGPF71Q6",
-    seoTitle: "Levoit Vital 200S-P Guide: CADR, Noise & Filter Cost",
-    updatedAt: "July 28, 2026",
+    seoTitle: "Levoit Vital 200S-P: Room Fit & Filters",
+    updatedAt: "November 1, 2026",
     evidenceMode: "research-synthesis",
-    researchNote: "We have not tested the Vital 200S-P ourselves. This guide keeps Levoit's current specifications separate from attributed RTINGS and HouseFresh tests of the Vital 200S family. Their results use different particle sensors, room assumptions, fan settings, and noise methods, so the numbers are not averaged or treated as interchangeable.",
+    researchNote: "We have not tested the Vital 200S-P ourselves. This guide separates Levoit's current specifications from attributed RTINGS and HouseFresh tests of the Vital 200S family and Popular Mechanics' two-week pet-home use of the current Vital 200S-P. Their rooms, units, particle sensors, fan settings, noise methods, pets, and observations differ, so results are not averaged or presented as our own. November 1: current official model/specification page and applicable original operating pages 1–24, including figures, reviewed; warranty pages were outside this update. The manual lists 51W versus the product page’s 50W. The selected White new US Amazon offer was observed separately; earlier attributed external-test findings were not re-dated as new tests.",
     externalTests: [
       {
         source: "RTINGS",
@@ -598,28 +701,24 @@ export const adjacentExpansionProducts: Product[] = [
     whyItMatters: "Pet hair, airborne dander, and odor sources require different responses. A purifier can help with particles and some airborne odors, but it cannot replace litter, bedding, upholstery, and accident cleaning.",
     bestFor: "Pet rooms needing a washable pre-filter and smart controls",
     priceBand: "$$",
-    rating: 4.7,
-    scores: [
-      { label: "Pet-hair intake", value: 9 },
-      { label: "Smart controls", value: 9 },
-      { label: "Filter cost clarity", value: 7 },
-    ],
+    rating: 0,
+    scores: [],
     pros: ["Washable pre-filter catches larger hair and dust", "U-shaped inlet and Pet Mode target pet-room use", "VeSync schedules, air-quality display, and automatic modes"],
     cons: ["Main filter remains a recurring replacement cost", "Coverage changes with desired air changes per hour", "Cannot solve persistent odor at its source"],
     specs: {
-      ASIN: "B0BGPF71Q6",
-      Model: "Vital 200S-P",
-      "Linked color": "White",
-      "Official CADR": "250 CFM",
-      "Official room ratings": "1,862 sq. ft. at 1 ACH; 388 sq. ft. at 4.8 ACH",
-      "Pre-filter": "Washable",
-      Controls: "VeSync app, auto mode, schedules, and air-quality display",
-      "Official dimensions": "15.6 x 8.5 x 19.8 in",
-      "Official rated power": "50W",
-      "Official noise range": "23-54dB",
-      Filter: "Vital 200S-P three-stage replacement filter; official interval is 6-12 months",
-      "Filter purchase check": "Verify the selected Vital 200S-P series filter, live price, and stock before checkout",
-    },
+  "ASIN": "B0BGPF71Q6",
+  "Model": "Vital 200S-P",
+  "Linked color": "White",
+  "Official CADR": "250 CFM",
+  "Official room ratings": "1,862 sq. ft. at 1 ACH; 388 sq. ft. at 4.8 ACH",
+  "Pre-filter": "Washable",
+  "Controls": "VeSync app, auto mode, schedules, and air-quality display",
+  "Official dimensions": "15.6 x 8.5 x 19.8 in",
+  "Official rated power": "Product page 50W; linked original manual 51W. Use the received electrical label; neither is measured running consumption.",
+  "Official noise range": "23-54dB",
+  "Filter": "Exact Vital 200S-P main/carbon filter. Linked manual recommends around 12 months depending on use; replacement-page 6–12-month guidance is a separate estimate.",
+  "Filter purchase check": "Verify the selected Vital 200S-P series filter, live price, and stock before checkout"
+},
     evidence: [
       "Size the purifier by room volume and desired air changes, not maximum coverage alone",
       "Clean the washable pre-filter according to the current manual and allow it to dry fully before reinstalling",
@@ -648,42 +747,52 @@ export const adjacentExpansionProducts: Product[] = [
       },
     ],
     sources: [
-      {
-        name: "Levoit Vital 200S-P product page — White/Grey",
-        url: "https://levoit.com/collections/air-purifiers/products/levoit-vital-200s-p-smart-air-purifier-white-grey",
-        note: "Official page for the linked color variant and current product-family identity.",
-      },
-      {
-        name: "Levoit Vital 200S-P product page — Black",
-        url: "https://levoit.com/products/levoit-vital-200s-p-smart-air-purifier-black",
-        note: "Official current CADR, ACH-based room ratings, filtration, controls, dimensions, power, and noise specifications; the linked Amazon offer remains the White variant.",
-      },
-      {
-        name: "Levoit Vital 200S-P user manual",
-        url: "https://levoit.com/cdn/shop/files/HEAPAPLVSUS0166Y_0124A_LAP-V201S-WUS_LAP-V201S-KUS_Vital_200S-P_Smart_Air_Purifier_manual_US_A0-240924.pdf?v=13235666559482571905",
-        note: "Official LAP-V201S-WUS and LAP-V201S-KUS operating modes, particle-sensor limits, care, and filter-life guidance.",
-      },
-      {
-        name: "AHAM Verifide directory",
-        url: "https://ahamverifide.org/directory-of-air-cleaners/",
-        note: "Independent directory for current certified room-air-cleaner performance data.",
-      },
-      {
-        name: "Levoit Vital 200S replacement filter",
-        url: "https://levoit.com/products/vital-200s-replacement-filter",
-        note: "Official compatibility, 6-12 month interval, filtration-layer, variant, price, and availability check.",
-      },
-      {
-        name: "RTINGS Vital 200S test",
-        url: "https://www.rtings.com/air-purifier/reviews/levoit/vital-200s",
-        note: "Attributed maximum and low-noise PM1 CADR, room-size, noise, filter, and variant evidence.",
-      },
-      {
-        name: "HouseFresh Vital 200S long-term test",
-        url: "https://housefresh.com/levoit-vital-200s-review/",
-        note: "Attributed purchased-unit particle, noise, power, filter-cost, and long-term-use evidence.",
-      },
-    ],
+  {
+    "name": "Levoit Vital 200S-P product page — White/Grey",
+    "url": "https://levoit.com/collections/air-purifiers/products/levoit-vital-200s-p-smart-air-purifier-white-grey",
+    "note": "Official page for the linked color variant and current product-family identity."
+  },
+  {
+    "name": "Levoit Vital 200S-P product page — Black",
+    "url": "https://levoit.com/products/levoit-vital-200s-p-smart-air-purifier-black",
+    "note": "Separate Black variant; current White LAP-V201S-WUS specifications are also linked below. Match color and received electrical label."
+  },
+  {
+    "name": "Levoit Vital 200S-P user manual",
+    "url": "https://levoit.com/cdn/shop/files/HEAPAPLVSUS0166Y_0124A_LAP-V201S-WUS_LAP-V201S-KUS_Vital_200S-P_Smart_Air_Purifier_manual_US_A0-240924.pdf?v=13235666559482571905",
+    "note": "Official LAP-V201S-WUS and LAP-V201S-KUS operating modes, particle-sensor limits, care, and filter-life guidance."
+  },
+  {
+    "name": "AHAM Verifide directory",
+    "url": "https://ahamverifide.org/directory-of-air-cleaners/",
+    "note": "Independent directory for current certified room-air-cleaner performance data."
+  },
+  {
+    "name": "Levoit Vital 200S replacement filter",
+    "url": "https://levoit.com/products/vital-200s-replacement-filter",
+    "note": "Official compatibility, 6-12 month interval, filtration-layer, variant, price, and availability check."
+  },
+  {
+    "name": "RTINGS Vital 200S test",
+    "url": "https://www.rtings.com/air-purifier/reviews/levoit/vital-200s",
+    "note": "Attributed maximum and low-noise PM1 CADR, room-size, noise, filter, and variant evidence."
+  },
+  {
+    "name": "HouseFresh Vital 200S long-term test",
+    "url": "https://housefresh.com/levoit-vital-200s-review/",
+    "note": "Attributed purchased-unit particle, noise, power, filter-cost, and long-term-use evidence."
+  },
+  {
+    "name": "November 1 exact US retailer observation",
+    "url": "https://www.amazon.com/dp/B0BGPF71Q6",
+    "note": "Selected US 10001 listing checked November 1. Match the exact model, selected condition, included kit, seller, delivery and return terms again before ordering; this is not physical product testing."
+  },
+  {
+    "name": "Levoit White LAP-V201S-WUS current specifications",
+    "url": "https://levoit.com/products/vital-200s-p-smart-air-purifier",
+    "note": "Product page retains 250 CFM, 388 sq ft at 4.8 ACH and 1862 at 1 ACH. Current manual 51W differs from page 50W; no new hands-on measurement or certification claim."
+  }
+],
     compareSlugs: ["coway-airmega-mighty2-air-purifier", "winix-5510-air-purifier", "shark-neverchange-max-air-purifier"],
     offers: [
       {
@@ -693,6 +802,8 @@ export const adjacentExpansionProducts: Product[] = [
         priceNote: "Confirm ASIN B0BGPF71Q6, white Vital 200S-P, seller, and included filter.",
       },
     ],
+
+    "purchaseCheck": "Choose White Vital 200S-P when room size, fan sound, clearance and filter cost fit. Confirm the selected New offer and exact filter. Keep an adequate current purifier and source-cleaning routine; this cannot remove settled hair or fix odor sources.",
   },
 ];
 

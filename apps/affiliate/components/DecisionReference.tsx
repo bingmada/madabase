@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { CSSProperties } from "react";
 import type { SiteKey } from "@/lib/types";
 
 const breezeManual = "https://cdn.shopify.com/s/files/1/0157/0150/8160/files/IM_OMNIBRZ_201021_ROW_V1.pdf?v=1630054302";
@@ -22,7 +23,7 @@ function ReferenceCard({reference:r}: {reference:Reference}) {
     <h2 className="mt-2 text-xl font-bold" id={`${r.id}-title`}>{r.title}</h2>
     <p className="mt-3 leading-7 text-[var(--muted)]">{r.intro}</p>
     {r.steps ? <ol className="mt-4 grid list-none gap-3 p-0 sm:grid-cols-2">{r.steps.map((step,index)=><li className="rounded-md bg-[var(--surface-muted)] p-4" key={step.label}><p className="text-sm font-bold">{index+1}. {step.label}</p><p className="mt-2 text-sm leading-6">{step.detail}</p></li>)}</ol> : null}
-    {r.rows && r.columns ? <div className="mt-4 overflow-x-auto rounded-md border border-[var(--border)]" role="region" aria-label={r.title} tabIndex={0}><table className="w-full min-w-[600px] text-left text-sm"><caption className="sr-only">{r.title}</caption><thead className="bg-[var(--surface-muted)]"><tr><th scope="col" className="p-3">Path or component</th>{r.columns.map(column=><th scope="col" className="p-3" key={column}>{column}</th>)}</tr></thead><tbody>{r.rows.map(row=><tr className="border-t border-[var(--border)]" key={row.label}><th scope="row" className="p-3 align-top">{row.label}</th>{row.values.map((value,index)=><td className="p-3 align-top leading-6" key={index}>{value}</td>)}</tr>)}</tbody></table></div> : null}
+    {r.rows && r.columns ? <div className="guide-decision-scroll mt-4 overflow-x-auto rounded-md border border-[var(--border)]" role="region" aria-label={r.title} tabIndex={0}><table className="guide-decision-table w-full min-w-[600px] text-left text-sm" style={{ "--guide-value-columns": r.columns.length } as CSSProperties}><caption className="sr-only">{r.title}</caption><colgroup><col className="guide-decision-label-column" />{r.columns.map(column=><col className="guide-decision-value-column" key={column} />)}</colgroup><thead className="bg-[var(--surface-muted)]"><tr><th scope="col" className="p-3">Path or component</th>{r.columns.map(column=><th scope="col" className="p-3" key={column}>{column}</th>)}</tr></thead><tbody>{r.rows.map(row=><tr className="border-t border-[var(--border)]" key={row.label}><th scope="row" className="p-3 align-top">{row.label}</th>{row.values.map((value,index)=><td className="p-3 align-top leading-6" key={index}>{value}</td>)}</tr>)}</tbody></table></div> : null}
     <p className="mt-4 text-sm leading-6">{r.note}</p>
     <p className="mt-3 text-sm leading-6">Sources: {r.sources.map((source,index)=><span key={source.href}>{index ? " · " : ""}<a className="font-semibold underline underline-offset-4" href={source.href}>{source.label}</a></span>)}</p>
     {r.next ? <Link className="button-secondary mt-4" href={r.next.href}>{r.next.label}</Link> : null}
@@ -71,7 +72,7 @@ const crimperReference:Reference = {
     {label:"Cat6",values:["VDV826-729 (10), -703 (50), -763 (200)","Actual conductor and cable dimensions; do not substitute an unrelated plug"]},
     {label:"Cat6A UTP",values:["VDV826-704 (50), -764 (200)","Unshielded connector fit for the actual larger cable; category alone is insufficient"]},
     {label:"Cat6A STP",values:["VDV826-705 (50), -754 (100)","Shielded connector construction, cable fit and instructed shield termination"]},
-    {label:"Other RJ45 plugs",values:["Standard non-Pass-Thru or another manufacturer's system", "No assumed compatibility. Klein excludes standard non-Pass-Thru RJ45 plugs for this tool."]}
+    {label:"Other RJ45 plugs",values:["Standard non-Pass-Thru or another manufacturer's system", "No compatibility is assumed. The reviewed instructions establish the Klein Pass-Thru system; standard non-Pass-Thru RJ45 compatibility remains unverified."]}
   ],
   note:"Numbers in parentheses are pack counts from sheet 82979 Rev. 06/21 A, page 2. Recheck the selected part and current instructions. Replacement blade VDV999-076 belongs to VDV226-110; VDV999-078 belongs to the different compact crimper. Inspect and test every termination. Keep factory-made patch leads when they already meet the job.",
   sources:[{label:"Klein connector-system sheet",href:kleinSheet},{label:"VDV226-110 instructions",href:"https://data.kleintools.com/sites/all/product_assets/documents/instructions/klein/VDV226-110_WEBINSTRUCTIONS.pdf"}]

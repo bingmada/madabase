@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import { editorialImageForDisplay, editorialImageAlt } from "./editorial-image";
 import {
   localizedAlternatesForBasePath,
   localizedMarketHomeAlternates,
 } from "./market-content";
 import { supportsMarketEditions } from "./markets";
+import { isBlockedAmazonSource } from "./amazon-offer-blocks";
 import type { SiteConfig } from "./sites";
 import type { Guide, Product, Roundup, Tool } from "./types";
 
@@ -130,13 +132,13 @@ export function pageMetadata(site: SiteConfig, path: string, title: string, desc
       url,
       siteName: site.name,
       type: "website",
-      images: [{ url: image, width: 1200, height: 630, alt: title }],
+      images: [{ url: editorialImageForDisplay(image), width: 1200, height: 630, alt: editorialImageAlt(image, title) }],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description: descriptionText,
-      images: [image],
+      images: [editorialImageForDisplay(image)],
     },
   };
 }
@@ -231,7 +233,8 @@ export function roundupArticleSchema(site: SiteConfig, roundup: Roundup, product
   const url = absoluteUrl(site, `/best/${roundup.slug}`);
   const updated = contentDate(roundup.updatedAt);
   const citations = [...new Set(products.flatMap((product) => product.sources?.map((source) => source.url) ?? []))];
-  const firstImage = products[0]?.amazonImage ?? products[0]?.image;
+  const sourceImage = products[0]?.amazonImage ?? products[0]?.image;
+  const firstImage = sourceImage ? editorialImageForDisplay(sourceImage) : undefined;
 
   return {
     "@context": "https://schema.org",
@@ -267,7 +270,7 @@ export function roundupArticleSchema(site: SiteConfig, roundup: Roundup, product
 
 export function productNotesSchema(site: SiteConfig, product: Product) {
   const displayName = product.amazonTitle ?? product.name;
-  const displayImage = product.amazonImage ?? product.image;
+  const displayImage = editorialImageForDisplay(product.amazonImage ?? product.image);
   const headline = productPageTitle(product);
   const url = absoluteUrl(site, `/reviews/${product.slug}`);
   const productId = `${url}#product`;
@@ -367,13 +370,14 @@ export function productNotesSchema(site: SiteConfig, product: Product) {
 export function guideSchema(site: SiteConfig, guide: Guide) {
   const url = absoluteUrl(site, `/guides/${guide.slug}`);
   const updated = contentDate(guide.updatedAt);
+  const citations = guide.sources?.filter((source) => !isBlockedAmazonSource(site.key, source.url)).map((source) => source.url) ?? [];
 
   return {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: guide.title,
     description: guide.dek,
-    ...(guide.image ? { image: absoluteUrl(site, guide.image) } : {}),
+    ...(guide.image ? { image: absoluteUrl(site, editorialImageForDisplay(guide.image)) } : {}),
     url,
     mainEntityOfPage: {
       "@type": "WebPage",
@@ -381,7 +385,7 @@ export function guideSchema(site: SiteConfig, guide: Guide) {
     },
     articleSection: guide.category,
     ...(updated ? { dateModified: updated.isoDateTime } : {}),
-    ...(guide.sources?.length ? { citation: guide.sources.map((source) => source.url) } : {}),
+    ...(citations.length ? { citation: citations } : {}),
     author: {
       "@type": "Organization",
       name: `${site.name} editorial desk`,

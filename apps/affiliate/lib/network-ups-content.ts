@@ -10,11 +10,11 @@ export const networkUpsProducts: Product[] = [
     slug: "apc-back-ups-router-modem-bundle",
     asin: "B085JJZDFK",
     amazonTitle: "APC Back-UPS 850VA, 450W, BE850G2",
-    seoTitle: "APC BE850G2 Guide: Router, ONT and NAS Backup",
-    updatedAt,
+    seoTitle: "APC BE850G2: Load & Runtime Fit",
+    "updatedAt": "November 1, 2026",
     evidenceMode: "official-spec",
     researchNote:
-      "We have not runtime-tested this UPS. This page uses APC's current BE850G2 specifications and the exact Amazon listing identity. Runtime depends on the measured load, battery condition, ambient temperature, and outage pattern.",
+      "We have not runtime-tested this UPS. This page uses APC's current BE850G2 specifications and the exact Amazon listing identity. Runtime depends on the measured load, battery condition, ambient temperature, and outage pattern. The November 1, 2026 US retail observation is for ZIP 10001 and the exact ASIN. It is not a delivery, warranty, physical-revision or performance guarantee.",
     name: "APC BE850G2 Back-UPS 850VA",
     brand: "APC",
     category: "backup",
@@ -27,12 +27,8 @@ export const networkUpsProducts: Product[] = [
       "The old page pointed to a changing bundle instead of one UPS. The rebuilt page pins the exact BE850G2 identity so outlet count, battery path, and checkout selection can be verified before money changes hands.",
     bestFor: "A fuller network shelf with ONT, router, switch and optional small NAS",
     priceBand: "$$",
-    rating: 4.5,
-    scores: [
-      { label: "Outlet flexibility", value: 9 },
-      { label: "Network headroom", value: 9 },
-      { label: "Compact placement", value: 6 },
-    ],
+    rating: 0,
+    scores: [],
     pros: [
       "850VA and 450W official output rating",
       "Six battery-plus-surge outlets and three surge-only outlets",
@@ -61,63 +57,73 @@ export const networkUpsProducts: Product[] = [
       "Test a controlled power loss after setup and repeat self-tests as the battery ages",
     ],
     editorialSections: [
-      {
-        heading: "The exact model is the first correction",
-        body: "This URL previously described a vague two-UPS bundle. It now covers the BE850G2 only. Confirm the model and ASIN at checkout because BE850G2, BE850M2, BR-series units, and retailer bundles do not share the same outlet layout or battery path.",
-      },
-      {
-        heading: "Who should buy it",
-        body: "Choose BE850G2 when the protected chain includes several small devices, a switch, or a modest NAS and nine total outlets reduce power-strip clutter. Its larger output rating is headroom, not a promise that every connected device belongs on battery backup.",
-      },
-      {
-        heading: "Who should skip it",
-        body: "Skip it when only an ONT and router need protection, the shelf cannot fit the chassis, or the ISP's neighborhood equipment immediately fails during outages. A BE600M1 or compact SL700U may fit a smaller chain better.",
-      },
-      {
-        heading: "Runtime needs a load-specific check",
-        body: "Add the measured watts for every required device, then use the manufacturer's runtime information at a comparable load. Do not extrapolate a router result from a half-load runtime number. Battery age, temperature, repeated outages, and charging state all move the result.",
-      },
-      {
-        heading: "Battery ownership is part of the price",
-        body: "APC lists RBC17 as the replacement battery. Confirm local availability and replacement instructions before purchase, label the install date, keep ventilation clear, and replace a battery that fails a self-test or can no longer support the required chain.",
-      },
-    ],
+  {
+    "heading": "The exact model is the first correction",
+    "body": "This URL previously described a vague two-UPS bundle. It now covers the BE850G2 only. Confirm the model and ASIN at checkout because BE850G2, BE850M2, BR-series units, and retailer bundles do not share the same outlet layout or battery path."
+  },
+  {
+    "heading": "Who should buy it",
+    "body": "Choose BE850G2 when the protected chain includes several small devices, a switch, or a modest NAS and nine total outlets reduce power-strip clutter. Its larger output rating is headroom, not a promise that every connected device belongs on battery backup."
+  },
+  {
+    "heading": "Who should skip it",
+    "body": "Skip it when only an ONT and router need protection, the shelf cannot fit the chassis, or the ISP's neighborhood equipment immediately fails during outages. A BE600M1 or compact SL700U may fit a smaller chain better."
+  },
+  {
+    "heading": "Runtime needs a load-specific check",
+    "body": "Add the measured watts for every required device, then use the manufacturer's runtime information at a comparable load. Do not extrapolate a router result from a half-load runtime number. Battery age, temperature, repeated outages, and charging state all move the result."
+  },
+  {
+    "heading": "Battery ownership is part of the price",
+    "body": "APC lists RBC17 as the replacement battery. Confirm local availability and replacement instructions before purchase, label the install date, keep ventilation clear, and replace a battery that fails a self-test or can no longer support the required chain."
+  },
+  {
+    "heading": "A distributor status is not marketplace stock",
+    "body": "Schneider’s current BE850G2 page says it is not normally stocked at its distribution facility and lists a replacement battery as available. The exact Amazon listing separately showed an offer shipped and sold by Amazon.com on November 1. Neither observation establishes a discontinuation date, a fresh battery or runtime at your load. Compare the delivered battery condition and support path; the 850VA/450W rating is an output limit, not hours of internet backup."
+  },
+  {
+    "heading": "Before choosing the offered unit",
+    "body": "Choose the BE850G2 single UPS only after measuring the complete required load and checking a matching runtime curve, 120V/NEMA fit and six battery-backed sockets. No router or modem is included. Confirm battery age, service/replacement path and returns; keep a healthy UPS that already meets the target."
+  }
+],
     alternatives: [
       "Choose APC BE600M1 for a smaller ONT, modem, and router chain.",
       "Choose CyberPower SL700U when a flatter wall-mountable format matters more than a user-replaceable battery.",
     ],
     compareSlugs: ["apc-be600m1-router-ups", "cyberpower-sl700u-router-ups"],
     sources: [
-      {
-        name: "APC BE850G2 product page",
-        url: "https://www.apc.com/us/en/product/BE850G2/apc-backups-850va-120v-2-usb-charging-ports-9-nema-outlets-3-surge/",
-        note: "Official capacity, outlet layout, USB, battery, and product-document source.",
-      },
-      {
-        name: "Amazon listing for ASIN B085JJZDFK",
-        url: "https://www.amazon.com/dp/B085JJZDFK",
-        note: "Exact BE850G2 marketplace identity; seller, stock, price, and delivery remain checkout checks.",
-      },
-    ],
+  {
+    "name": "APC BE850G2 product page",
+    "url": "https://www.apc.com/us/en/product/BE850G2/apc-backups-850va-120v-2-usb-charging-ports-9-nema-outlets-3-surge/",
+    "note": "Official capacity, outlet layout, USB, battery, and product-document source."
+  },
+  {
+    "name": "Amazon listing for ASIN B085JJZDFK",
+    "url": "https://www.amazon.com/dp/B085JJZDFK",
+    "note": "Exact BE850G2 marketplace identity; seller, stock, price, and delivery remain checkout checks."
+  }
+],
     offers: [
-      {
-        merchant: "Amazon US",
-        url: amazonUrl("B085JJZDFK"),
-        label: "Check BE850G2 price on Amazon",
-        priceNote: "Confirm ASIN B085JJZDFK, BE850G2, seller, battery condition policy, delivery, and return terms.",
-      },
-    ],
+  {
+    "merchant": "Amazon US",
+    "url": "https://www.amazon.com/dp/B085JJZDFK?tag=madanetwork-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+    "label": "Check BE850G2 price on Amazon",
+    "priceNote": "Confirm ASIN B085JJZDFK, BE850G2, seller, battery condition policy, delivery, and return terms."
+  }
+],
+
+    "purchaseCheck": "Choose this single 120V UPS only after checking measured load, matching runtime and six battery-backed sockets. No router/modem included. Confirm battery condition, replacement path and returns. Keep a healthy UPS that already meets the target.",
   },
   {
     site: "network",
     slug: "apc-be600m1-router-ups",
     asin: "B01FWAZEIU",
     amazonTitle: "APC UPS Battery Backup and Surge Protector, 600VA, BE600M1",
-    seoTitle: "APC BE600M1 Guide: Small Router and Modem UPS",
-    updatedAt,
+    seoTitle: "APC BE600M1: Load & Runtime Fit",
+    "updatedAt": "November 1, 2026",
     evidenceMode: "official-spec",
     researchNote:
-      "We have not runtime-tested this unit. The decision is based on APC and Schneider Electric documentation plus the exact Amazon identity. Runtime must be checked against the buyer's measured watt load.",
+      "We have not runtime-tested this unit. The decision is based on APC and Schneider Electric documentation plus the exact Amazon identity. Runtime must be checked against the buyer's measured watt load. The November 1, 2026 US retail observation is for ZIP 10001 and the exact ASIN. It is not a delivery, warranty, physical-revision or performance guarantee.",
     name: "APC BE600M1 Back-UPS 600VA",
     brand: "APC",
     category: "backup",
@@ -130,12 +136,8 @@ export const networkUpsProducts: Product[] = [
       "Small network loads can make a 600VA UPS more rational than an 850VA model, but the real decision is measured watts, outlet fit, and battery maintenance rather than the lowest purchase price.",
     bestFor: "ONT, modem, router and one low-power switch",
     priceBand: "$",
-    rating: 4.4,
-    scores: [
-      { label: "Small-network fit", value: 9 },
-      { label: "Battery serviceability", value: 8 },
-      { label: "High-load headroom", value: 5 },
-    ],
+    rating: 0,
+    scores: [],
     pros: [
       "600VA and 330W output suits many small networking chains",
       "Five battery-plus-surge outlets and two surge-only outlets",
@@ -163,64 +165,74 @@ export const networkUpsProducts: Product[] = [
       "Verify seller, stock, battery condition policy, and delivery at checkout",
     ],
     editorialSections: [
-      {
-        heading: "The 600VA sweet spot",
-        body: "For an ONT, modem, router, and small switch, 330W can provide ample output headroom. The remaining question is runtime at the actual measured load, not whether the UPS can power a gaming PC at the same time.",
-      },
-      {
-        heading: "Outlet count is not usable-outlet count",
-        body: "BE600M1 lists seven outlets, but only five are battery backed. Draw the power-brick shapes on paper or test the layout while the return window is open so one oversized adapter does not block the protected sockets needed by the ONT or router.",
-      },
-      {
-        heading: "Keep nonessential loads off the battery",
-        body: "A lamp, printer, speaker, or monitor can consume runtime needed by the network. Put only the minimum internet chain on battery-backed outlets and use surge-only outlets for equipment that can turn off during an outage.",
-      },
-      {
-        heading: "Who should skip it",
-        body: "Skip it when the required load approaches the unit's output rating, a workstation or large NAS must stay up, or the runtime target demands a larger battery. Move to BE850G2 or a purpose-sized higher-capacity UPS after measuring the load.",
-      },
-    ],
+  {
+    "heading": "The 600VA sweet spot",
+    "body": "For an ONT, modem, router, and small switch, 330W can provide ample output headroom. The remaining question is runtime at the actual measured load, not whether the UPS can power a gaming PC at the same time."
+  },
+  {
+    "heading": "Outlet count is not usable-outlet count",
+    "body": "BE600M1 lists seven outlets, but only five are battery backed. Draw the power-brick shapes on paper or test the layout while the return window is open so one oversized adapter does not block the protected sockets needed by the ONT or router."
+  },
+  {
+    "heading": "Keep nonessential loads off the battery",
+    "body": "A lamp, printer, speaker, or monitor can consume runtime needed by the network. Put only the minimum internet chain on battery-backed outlets and use surge-only outlets for equipment that can turn off during an outage."
+  },
+  {
+    "heading": "Who should skip it",
+    "body": "Skip it when the required load approaches the unit's output rating, a workstation or large NAS must stay up, or the runtime target demands a larger battery. Move to BE850G2 or a purpose-sized higher-capacity UPS after measuring the load."
+  },
+  {
+    "heading": "Separate warehouse availability from battery ownership",
+    "body": "Schneider’s current page lists a replacement battery and labels its own distribution availability Non-Stock. The exact Amazon offer was separately observed In Stock with Amazon.com shipping and selling. That does not guarantee the battery’s manufacture date or performance. A replacement-battery path can make this model preferable to a sealed compact UPS, but use the exact BE600M1 instructions and measured load rather than transferring a BE850G2 runtime."
+  },
+  {
+    "heading": "Before choosing the offered unit",
+    "body": "Choose BE600M1 only after measuring the protected network load, checking a matching runtime curve, 120V/NEMA fit and five battery-backed sockets. Confirm delivered battery condition, replacement instructions and seller terms. Keep a serviceable UPS that already meets the required runtime."
+  }
+],
     alternatives: [
       "Choose APC BE850G2 for more outlets and output headroom.",
       "Choose CyberPower SL700U for a slim wall-mountable chassis and two USB-A charging ports.",
     ],
     compareSlugs: ["apc-back-ups-router-modem-bundle", "cyberpower-sl700u-router-ups"],
     sources: [
-      {
-        name: "Schneider Electric APC BE600M1 product page",
-        url: "https://www.se.com/us/en/product/BE600M1/apc-backups-600va-120v-1-usb-charging-port-7-nema-outlets-2-surge/",
-        note: "Official capacity, outlet, USB, battery, and direct-channel status source.",
-      },
-      {
-        name: "APC BE600M1 manual",
-        url: "https://www.se.com/us/en/download/document/SPD_AHUG-9XB6SU_EN/",
-        note: "Official operation, safety, alarm, and maintenance documentation.",
-      },
-      {
-        name: "Amazon listing for ASIN B01FWAZEIU",
-        url: "https://www.amazon.com/dp/B01FWAZEIU",
-        note: "Exact BE600M1 marketplace identity; confirm seller, stock, delivery, and return terms.",
-      },
-    ],
+  {
+    "name": "Schneider Electric APC BE600M1 product page",
+    "url": "https://www.se.com/us/en/product/BE600M1/apc-backups-600va-120v-1-usb-charging-port-7-nema-outlets-2-surge/",
+    "note": "Official capacity, outlet, USB, battery, and direct-channel status source."
+  },
+  {
+    "name": "APC BE600M1 manual",
+    "url": "https://www.se.com/us/en/download/document/SPD_AHUG-9XB6SU_EN/",
+    "note": "Official operation, safety, alarm, and maintenance documentation."
+  },
+  {
+    "name": "Amazon listing for ASIN B01FWAZEIU",
+    "url": "https://www.amazon.com/dp/B01FWAZEIU",
+    "note": "Exact BE600M1 marketplace identity; confirm seller, stock, delivery, and return terms."
+  }
+],
     offers: [
-      {
-        merchant: "Amazon US",
-        url: amazonUrl("B01FWAZEIU"),
-        label: "Check BE600M1 price on Amazon",
-        priceNote: "Confirm ASIN B01FWAZEIU, BE600M1, seller, battery policy, delivery, and return terms.",
-      },
-    ],
+  {
+    "merchant": "Amazon US",
+    "url": "https://www.amazon.com/dp/B01FWAZEIU?tag=madanetwork-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+    "label": "Check BE600M1 price on Amazon",
+    "priceNote": "Confirm ASIN B01FWAZEIU, BE600M1, seller, battery policy, delivery, and return terms."
+  }
+],
+
+    "purchaseCheck": "Choose only after checking measured load, matching runtime, 120V/NEMA fit and five battery-backed sockets. Confirm battery condition, replacement instructions and seller terms. Keep a serviceable UPS that already meets the required runtime.",
   },
   {
     site: "network",
     slug: "cyberpower-sl700u-router-ups",
     asin: "B07SKX78PV",
     amazonTitle: "CyberPower SL700U Standby UPS Battery Backup and Surge Protector",
-    seoTitle: "CyberPower SL700U Guide: Slim Router UPS Tradeoffs",
-    updatedAt,
+    seoTitle: "CyberPower SL700U UPS",
+    "updatedAt": "November 1, 2026",
     evidenceMode: "official-spec",
     researchNote:
-      "We have not runtime-tested the SL700U. CyberPower's official figures are retained at their stated half-load and full-load conditions and are not extrapolated to a router-only load.",
+      "We have not runtime-tested the SL700U. CyberPower's official figures are retained at their stated half-load and full-load conditions and are not extrapolated to a router-only load. The November 1, 2026 US retail observation is for ZIP 10001 and the exact ASIN. It is not a delivery, warranty, physical-revision or performance guarantee.",
     name: "CyberPower SL700U Standby UPS",
     brand: "CyberPower",
     category: "backup",
@@ -233,12 +245,8 @@ export const networkUpsProducts: Product[] = [
       "A UPS that fits the utility wall and leaves power bricks accessible can be better than a larger unit on the floor, but form factor should not hide the replacement-battery limitation.",
     bestFor: "Tight shelves or wall-mounted network installations",
     priceBand: "$$",
-    rating: 4.2,
-    scores: [
-      { label: "Placement flexibility", value: 9 },
-      { label: "Network output", value: 8 },
-      { label: "Battery serviceability", value: 3 },
-    ],
+    rating: 0,
+    scores: [],
     pros: [
       "700VA and 370W official output rating",
       "Five battery-plus-surge outlets, three surge-only outlets, and two USB-A ports",
@@ -268,48 +276,58 @@ export const networkUpsProducts: Product[] = [
       "Verify seller, stock, delivery region, mounting clearance, and return terms",
     ],
     editorialSections: [
-      {
-        heading: "Placement is the reason to choose it",
-        body: "The slim chassis and wall-mount option can keep a network shelf clear and make outlet access easier. Verify wall material, mounting orientation, cable strain, ventilation, and the distance to every power brick before treating the form factor as solved.",
-      },
-      {
-        heading: "Do not convert half-load runtime into router hours",
-        body: "CyberPower lists two minutes at full load and nine minutes at half load. A router chain is usually far below half load, but the battery discharge curve is not linear. Use a measured load and manufacturer guidance instead of multiplying nine minutes into a made-up promise.",
-      },
-      {
-        heading: "The battery tradeoff is permanent",
-        body: "CyberPower lists the SL700U battery as non-user-replaceable. That can be acceptable for a compact installation, but buyers who want to service the UPS after the battery ages should favor a model with an official replacement-battery path.",
-      },
-      {
-        heading: "Who should skip it",
-        body: "Skip it if a replaceable battery is a requirement, a much longer outage target demands larger capacity, or the network shelf already fits a serviceable APC model cleanly.",
-      },
-    ],
+  {
+    "heading": "Placement is the reason to choose it",
+    "body": "The slim chassis and wall-mount option can keep a network shelf clear and make outlet access easier. Verify wall material, mounting orientation, cable strain, ventilation, and the distance to every power brick before treating the form factor as solved."
+  },
+  {
+    "heading": "Do not convert half-load runtime into router hours",
+    "body": "CyberPower lists two minutes at full load and nine minutes at half load. A router chain is usually far below half load, but the battery discharge curve is not linear. Use a measured load and manufacturer guidance instead of multiplying nine minutes into a made-up promise."
+  },
+  {
+    "heading": "The battery tradeoff is permanent",
+    "body": "CyberPower lists the SL700U battery as non-user-replaceable. That can be acceptable for a compact installation, but buyers who want to service the UPS after the battery ages should favor a model with an official replacement-battery path."
+  },
+  {
+    "heading": "Who should skip it",
+    "body": "Skip it if a replaceable battery is a requirement, a much longer outage target demands larger capacity, or the network shelf already fits a serviceable APC model cleanly."
+  },
+  {
+    "heading": "Current specifications retain the battery tradeoff",
+    "body": "CyberPower’s current specifications still state 700VA/370W, five battery-plus-surge outlets, three surge-only outlets and no user-replaceable battery. Its two-minute full-load and nine-minute half-load figures describe those stated loads, not a router-only result. The exact November 1 Amazon offer was shipped and sold by Amazon.com. Neither retail availability nor the manufacturer’s limited warranty is a battery-health test."
+  },
+  {
+    "heading": "Before choosing the offered unit",
+    "body": "Choose SL700U when the slim 120V/NEMA installation fits the measured network load and a non-user-replaceable battery is acceptable. Check runtime at the required load and seller/battery terms; choose a serviceable UPS if battery replacement is a requirement, or keep one that already meets the target."
+  }
+],
     alternatives: [
       "Choose APC BE600M1 when battery replacement and a smaller network chain are the priorities.",
       "Choose APC BE850G2 when more output headroom and nine total outlets matter.",
     ],
     compareSlugs: ["apc-be600m1-router-ups", "apc-back-ups-router-modem-bundle"],
     sources: [
-      {
-        name: "CyberPower SL700U product page",
-        url: "https://www.cyberpowersystems.com/product/ups/standby/sl700u/",
-        note: "Official capacity, outlet, runtime, battery, USB, topology, warranty, and mounting specifications.",
-      },
-      {
-        name: "Amazon listing for ASIN B07SKX78PV",
-        url: "https://www.amazon.com/dp/B07SKX78PV",
-        note: "Exact SL700U marketplace identity; confirm seller, stock, delivery, and return terms.",
-      },
-    ],
+  {
+    "name": "CyberPower SL700U product page",
+    "url": "https://www.cyberpowersystems.com/product/ups/standby/sl700u/",
+    "note": "Official capacity, outlet, runtime, battery, USB, topology, warranty, and mounting specifications."
+  },
+  {
+    "name": "Amazon listing for ASIN B07SKX78PV",
+    "url": "https://www.amazon.com/dp/B07SKX78PV",
+    "note": "Exact SL700U marketplace identity; confirm seller, stock, delivery, and return terms."
+  }
+],
     offers: [
-      {
-        merchant: "Amazon US",
-        url: amazonUrl("B07SKX78PV"),
-        label: "Check SL700U price on Amazon",
-        priceNote: "Confirm ASIN B07SKX78PV, SL700U, seller, battery policy, delivery, and return terms.",
-      },
-    ],
+  {
+    "merchant": "Amazon US",
+    "url": "https://www.amazon.com/dp/B07SKX78PV?tag=madanetwork-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+    "label": "Check SL700U price on Amazon",
+    "priceNote": "Confirm ASIN B07SKX78PV, SL700U, seller, battery policy, delivery, and return terms."
+  }
+],
+
+    "purchaseCheck": "Choose if the slim 120V installation and load-specific runtime fit, and a non-user-replaceable battery is acceptable. Confirm seller/battery terms. Choose a serviceable UPS if replacement is required; keep one that already meets the target.",
   },
 ];
 

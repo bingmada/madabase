@@ -18,17 +18,24 @@
       "category": "meetings",
       "alternative": "room treatment and microphone positioning",
       "asin": "B0DRHQCNVR",
-      "title": "4 Pack Acoustic Desk Dividers Desk Partition (Dark Gray) | 24\" x 20\" Freestanding Privacy Panels Set, Noise-Reducing Design Cubicle Sound Proof, Ideal for Office, Classroom, and Home",
+      "title": "AMUSIGHT freestanding dividers, Dark Gray four pack, 24 × 20 in",
       "brand": "AMUSIGHT",
       "detailUrl": "https://www.amazon.com/dp/B0DRHQCNVR",
-      "verifiedAt": "2026-08-12T08:56:03.591Z",
+      "verifiedAt": "2026-11-01T06:35:24.963Z",
       "searchRank": 11,
       "sponsoredSearchResult": false,
       "relevanceScore": 17.1,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant29/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "No independent acoustic rating or speech-privacy test",
+          "Panel size does not establish support footprint or stability."
+        ]
       }
     },
     {
@@ -37,19 +44,36 @@
       "familyName": "Active sitting stools",
       "category": "ergonomics",
       "alternative": "a conventional task chair plus movement breaks",
-      "asin": "B0GY5QT89Z",
-      "title": "Tervo Model W - Wobble Stool - Ergonomic Standing Desk Chair - Sit Active | Height adjustable sit to stand balance chair for adults. Ergonomic tilting standing desk stool for office active sitting",
-      "brand": "Tervo",
-      "detailUrl": "https://www.amazon.com/dp/B0GY5QT89Z",
-      "verifiedAt": "2026-08-12T08:58:27.938Z",
-      "searchRank": 4,
+      "asin": "B0FVHHWC4F",
+      "title": "UPLIFT Engage CHR474, Graphite",
+      "brand": "UPLIFT DESK",
+      "detailUrl": "https://www.amazon.com/dp/B0FVHHWC4F",
+      "verifiedAt": "2026-11-01T06:48:21.922Z",
+      "searchRank": null,
       "sponsoredSearchResult": false,
       "relevanceScore": 15.38,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
-      }
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant29/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "Original Tervo currently unavailable",
+          "Retail long-use wording conflicts with manufacturer short-period guidance",
+          "No measured health, comfort or productivity benefit."
+        ]
+      },
+      "previousSelection": {
+        "asin": "B0GY5QT89Z",
+        "title": "Tervo Model W - Wobble Stool - Ergonomic Standing Desk Chair - Sit Active | Height adjustable sit to stand balance chair for adults. Ergonomic tilting standing desk stool for office active sitting",
+        "detailUrl": "https://www.amazon.com/dp/B0GY5QT89Z",
+        "observedOn": "2026-11-01",
+        "status": "unavailable",
+        "note": "November 1, 2026: original Tervo Model W selection showed Currently unavailable; no discontinuation or support-life inference."
+      },
+      "anchorConfidence": "explicit-task-matched-alternative"
     },
     {
       "site": "homeoffice",
@@ -58,17 +82,24 @@
       "category": "desks",
       "alternative": "a print service or larger ink-tank printer",
       "asin": "B0FMBTJLX6",
-      "title": "Canon PIXMA TS6520 Wireless Color Inkjet Printer Duplex Printing, White – Home Printer with Copier/Scanner, 1.42” OLED Display, Intuitive Control Panel, Compact Design | Copier/Scanner, 1.42' OLED Display, Intuitive Control Panel, Compact Design, Duplex Printing",
-      "brand": "Brand shown on the Amazon listing",
+      "title": "Canon PIXMA TS6520 White, 7179C002",
+      "brand": "Canon",
       "detailUrl": "https://www.amazon.com/dp/B0FMBTJLX6",
-      "verifiedAt": "2026-08-12T08:48:29.282Z",
+      "verifiedAt": "2026-11-01T07:36:18.176Z",
       "searchRank": 2,
       "sponsoredSearchResult": false,
       "relevanceScore": 16.96,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant30/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "Manufacturer storefront lifecycle labels conflict; no definitive EOL claim",
+          "No measured cartridge yield, output quality or ownership cost."
+        ]
       }
     },
     {
@@ -78,17 +109,25 @@
       "category": "meetings",
       "alternative": "headsets or separate microphones and speakers",
       "asin": "B0BVZLS5GZ",
-      "title": "EMEET M0 Plus Conference Speaker and Microphone, 4 Mics 360° Voice Pickup | Noise Reduction, USB C&C-to-A Adapter, Bluetooth Speakerphone for 8 People w/Daisy Chain for 16, Works with Leading Software",
+      "title": "EMEET OfficeCore M0 Plus, for 8 People selection",
       "brand": "EMEET",
       "detailUrl": "https://www.amazon.com/dp/B0BVZLS5GZ",
-      "verifiedAt": "2026-08-12T08:55:25.077Z",
+      "verifiedAt": "2026-11-01T07:36:29.210Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 14,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant30/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "Regular offer separately expanded; Prime-exclusive price not used as access proof",
+          "Daisy-chain cable and second unit not assumed included",
+          "No measured room capacity, noise suppression or platform certification."
+        ]
       }
     },
     {
@@ -98,17 +137,25 @@
       "category": "desks",
       "alternative": "surface cable clips or a rear-edge route",
       "asin": "B0CWY7X6ZJ",
-      "title": "Desk Grommet 2 Inch (50 mm) 8 Pieces, Desk Hole Cover for Cables Black, ABS Plastic Grommet Hole Cover with Hole Saw for Wires Cables Through the Countertop by XIOGZAXI",
+      "title": "XIOGZAXI Black-M, 2-inch / 50 mm, eight grommets plus saw",
       "brand": "XIOGZAXI",
       "detailUrl": "https://www.amazon.com/dp/B0CWY7X6ZJ",
-      "verifiedAt": "2026-08-12T09:01:05.002Z",
+      "verifiedAt": "2026-11-01T07:36:35.181Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 15.5,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant30/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "Nominal 2 inch /50 mm fit tolerance unverified",
+          "Selected8pieces versus AI image10pieces",
+          "No sealing, strain-relief or universal cutting-surface assurance."
+        ]
       }
     },
     {
@@ -118,17 +165,25 @@
       "category": "organization",
       "alternative": "individual reusable cable ties",
       "asin": "B09DMDN294",
-      "title": "Zipper Cable Sleeve by Wrap-It Storage - 24\" x 4\" (4-Pack) Black | Cord Organizer and Cable Protector for Desk, Computer, TV Cord Management to Hide and Cover Wire and Extension Cables",
+      "title": "Wrap-It Storage zipper sleeves, Black four-pack, 24 × 4 in",
       "brand": "Wrap-It Storage",
       "detailUrl": "https://www.amazon.com/dp/B09DMDN294",
-      "verifiedAt": "2026-08-12T11:13:55.394Z",
+      "verifiedAt": "2026-11-01T07:37:13.922Z",
       "searchRank": 7,
       "sponsoredSearchResult": false,
       "relevanceScore": 15.26,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant30/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "Expanded return eligibility not established in this capture",
+          "24x4in does not establish usable internal diameter",
+          "No fire, chew, insulation or water rating."
+        ]
       }
     },
     {
@@ -138,17 +193,25 @@
       "category": "desks",
       "alternative": "drawer organizers and cable trays",
       "asin": "B0BJ16TCMS",
-      "title": "VIVO Black Clamp-on 20 x 24 inch Desk Pegboard, PP-DK24B | Steel Privacy Panel, Magnetic Peg Board, Office Accessory Organizer, Above or Under Desk Placement",
-      "brand": "Brand shown on the Amazon listing",
+      "title": "VIVO PP-DK24B Black, 24-inch selection",
+      "brand": "VIVO",
       "detailUrl": "https://www.amazon.com/dp/B0BJ16TCMS",
-      "verifiedAt": "2026-08-12T08:56:53.183Z",
+      "verifiedAt": "2026-11-01T07:37:19.155Z",
       "searchRank": 3,
       "sponsoredSearchResult": false,
       "relevanceScore": 15.42,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant30/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "Exact supplied load/distribution requirement unresolved",
+          "Manufacturer family includes other variants",
+          "Clamp opening alone does not prove desktop suitability."
+        ]
       }
     },
     {
@@ -158,17 +221,24 @@
       "category": "meetings",
       "alternative": "headphones or monitor-integrated speakers",
       "asin": "B0H7H94XGS",
-      "title": "Tylubio Computer Speakers for Desktop, HiFi Stereo PC Soundbar with Dynamic RGB Lighting, USB & Type-C Plug&Play, Volume Control Knob, Wired Speakers for Gaming, Laptop, Monitor, Office Black",
+      "title": "Tylubio ST800 Black USB / Type-C soundbar",
       "brand": "Tylubio",
       "detailUrl": "https://www.amazon.com/dp/B0H7H94XGS",
-      "verifiedAt": "2026-08-12T08:55:40.511Z",
+      "verifiedAt": "2026-11-01T07:37:24.669Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 14,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant30/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "No microphone, Bluetooth or analog-input capability established",
+          "No measured latency, frequency response or distortion."
+        ]
       }
     },
     {
@@ -178,17 +248,24 @@
       "category": "desks",
       "alternative": "drawer filing or a paperless workflow",
       "asin": "B0CNRH8NNS",
-      "title": "MINDEPOT 4-Tier Paper Organizer + 3-Pocket File Holder + Drawer + Pen Holders, Desktop File Organizers Paper Tray for Office Accessories School Classroom Organization (Black)",
+      "title": "MINDEPOT DFO3+4 Black, four trays / three file pockets",
       "brand": "MINDEPOT",
       "detailUrl": "https://www.amazon.com/dp/B0CNRH8NNS",
-      "verifiedAt": "2026-08-12T08:51:19.476Z",
+      "verifiedAt": "2026-11-01T08:02:26.864Z",
       "searchRank": 11,
       "sponsoredSearchResult": false,
       "relevanceScore": 15.6,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant30/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "No-tools marketing conflicts with screws/screwdriver contents",
+          "No verified lock, load capacity or loaded stability."
+        ]
       }
     },
     {
@@ -198,17 +275,25 @@
       "category": "meetings",
       "alternative": "two diffused side lights for more directional control",
       "asin": "B0F4WK69GV",
-      "title": "NEEWER Basics 2 Pack 7\" Desktop Ring Lights for Video Recording, 10W Dimmable Full Screen Key Lighting with Desk Stands & Phone Holders for iPhone Computer Laptop Vlog Streaming Video Conference, R06",
+      "title": "NEEWER BASICS R06 two-pack, 7-inch round LED panels",
       "brand": "NEEWER",
       "detailUrl": "https://www.amazon.com/dp/B0F4WK69GV",
-      "verifiedAt": "2026-08-12T08:54:19.142Z",
+      "verifiedAt": "2026-11-01T08:02:35.979Z",
       "searchRank": 7,
       "sponsoredSearchResult": false,
       "relevanceScore": 15.76,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant30/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "R06 is solid panel not open-center ring",
+          "Wall adapters not established in selected two-pack",
+          "No measured output, flicker or color performance."
+        ]
       }
     },
     {
@@ -218,17 +303,25 @@
       "category": "desks",
       "alternative": "wall shelving or drawer storage",
       "asin": "B0F4CGXCNQ",
-      "title": "Clamp on Desk Shelf, 44\" Desktop Shelving System, Black | with Pegboard and Accessories, Desktop Organizer with 2-Tier Shelf, Desk Pegboard for Office Home Gaming",
+      "title": "PEGZONE HWO1002BK Black, 44-inch clamp-on shelf",
       "brand": "PEGZONE",
       "detailUrl": "https://www.amazon.com/dp/B0F4CGXCNQ",
-      "verifiedAt": "2026-08-12T08:56:36.157Z",
+      "verifiedAt": "2026-11-01T08:02:48.396Z",
       "searchRank": 2,
       "sponsoredSearchResult": false,
       "relevanceScore": 13.96,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant30/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "Retail66lb is total not each shelf",
+          "Desk material and actual load distribution unverified",
+          "No no-damage or loaded stability guarantee."
+        ]
       }
     },
     {
@@ -238,17 +331,24 @@
       "category": "desks",
       "alternative": "rerouting power and data away from walking paths",
       "asin": "B082FPMR14",
-      "title": "D-Line 6ft Floor Cord Cover, Cable Protector, Hide Extension Cords, Protect Cords, Prevent Cable Trips, Heavy Duty Cord Hider - Cable Cavity = 0.63\" (W) x 0.31\" (H) - Beige",
+      "title": "D-Line CC-3 Beige, 6 ft, 0.63 × 0.31 in channel",
       "brand": "D-Line",
       "detailUrl": "https://www.amazon.com/dp/B082FPMR14",
-      "verifiedAt": "2026-08-12T09:00:53.250Z",
+      "verifiedAt": "2026-11-01T08:03:45.196Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 15.5,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant30/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "Seasonal return summary label observed; expanded exceptions unverified",
+          "No vehicle-load, outdoor or universal slip/trip-prevention rating."
+        ]
       }
     },
     {
@@ -258,17 +358,25 @@
       "category": "meetings",
       "alternative": "a good 1080p webcam with better lighting",
       "asin": "B0DYMDGHKB",
-      "title": "EasyCam 4K Webcam for PC - Ultra 4K HD, PDAF Autofocus, Dual Mics | Auto Light Correction, 79°FOV, Plug & Play, Privacy Cover, Computer Camera for High-End Business Meetings & Live Streaming",
+      "title": "NEWORK EasyCam 502, 4K Fast Focus selection",
       "brand": "NEWORK",
       "detailUrl": "https://www.amazon.com/dp/B0DYMDGHKB",
-      "verifiedAt": "2026-08-12T08:54:37.786Z",
+      "verifiedAt": "2026-11-01T08:03:51.008Z",
       "searchRank": 2,
       "sponsoredSearchResult": false,
       "relevanceScore": 13.96,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant30/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "No measured4K/frame-rate/autofocus/microphone performance",
+          "Application transmission limits remain separate",
+          "Lens cover does not establish audio isolation."
+        ]
       }
     },
     {
@@ -277,19 +385,37 @@
       "familyName": "Ink tank printers",
       "category": "desks",
       "alternative": "laser printers or cartridge inkjets for low volume",
-      "asin": "B0BL466Y41",
-      "title": "HP Smart Tank 5101 Wireless All-in-One Refillable Printer, Scanner, Copier with 2 Years of Ink Included, Wireless (2.4ghz only) Printer-for-Home use (1F3Y0A)",
-      "brand": "Brand shown on the Amazon listing",
-      "detailUrl": "https://www.amazon.com/dp/B0BL466Y41",
-      "verifiedAt": "2026-08-12T08:47:46.771Z",
-      "searchRank": 2,
+      "asin": "B0BSMSYM9N",
+      "title": "Canon PIXMA MegaTank G3270 Black, 5805C002",
+      "brand": "Canon",
+      "detailUrl": "https://www.amazon.com/dp/B0BSMSYM9N",
+      "verifiedAt": "2026-11-01T08:21:30.696Z",
+      "searchRank": null,
       "sponsoredSearchResult": false,
       "relevanceScore": 15.46,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
-      }
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant30/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "Original HP5101 currently unavailable",
+          "Different Canon model; no HP specification transfer",
+          "Seasonal return label observed; expanded exceptions unread",
+          "No measured yield, savings, print speed or quality."
+        ]
+      },
+      "previousSelection": {
+        "asin": "B0BL466Y41",
+        "title": "HP Smart Tank 5101 Wireless All-in-One Refillable Printer, Scanner, Copier with 2 Years of Ink Included, Wireless (2.4ghz only) Printer-for-Home use (1F3Y0A)",
+        "detailUrl": "https://www.amazon.com/dp/B0BL466Y41",
+        "observedOn": "2026-11-01",
+        "status": "unavailable",
+        "note": "November1,2026: original HP Smart Tank5101 B0BL466Y41 selected page showed Currently unavailable; no active exact offer verified and no EOL inferred."
+      },
+      "anchorConfidence": "explicit-task-matched-alternative"
     },
     {
       "site": "homeoffice",
@@ -298,17 +424,25 @@
       "category": "ergonomics",
       "alternative": "desk-height and keyboard-angle adjustment",
       "asin": "B08C56DKS5",
-      "title": "Vaydeer Wrist Rest for Keyboard and Mouse, Computer Ergonomic Wrist Support Pad, Soft Memory Foam Arm Cushion for Desk, Palm Hand Office Laptop Typing",
+      "title": "Vaydeer STA#021 Black Large keyboard-and-mouse rest set",
       "brand": "Vaydeer",
       "detailUrl": "https://www.amazon.com/dp/B08C56DKS5",
-      "verifiedAt": "2026-08-12T08:57:09.454Z",
+      "verifiedAt": "2026-11-01T08:05:00.199Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 15.5,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant30/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "No medical or comfort trial",
+          "Nominal height and dimensions do not establish personal fit",
+          "Newer-model retail suggestion not treated as EOL evidence."
+        ]
       }
     },
     {
@@ -318,17 +452,25 @@
       "category": "ergonomics",
       "alternative": "raising the laptop and cleaning its cooling path",
       "asin": "B00NNMB3KS",
-      "title": "havit HV-F2056 15.6\"-17\" Laptop Cooler Cooling Pad - Slim Portable USB Powered (3 Fans), Black/Blue | Three quiet USB-powered fans circulate air below the laptop, two height settings improve viewing and typing comfort",
+      "title": "havit HV-F2056 Black+Blue, three-fan USB pad",
       "brand": "havit",
       "detailUrl": "https://www.amazon.com/dp/B00NNMB3KS",
-      "verifiedAt": "2026-08-12T08:59:45.470Z",
+      "verifiedAt": "2026-11-01T08:05:14.317Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 10.667,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant30/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "No independent temperature, noise or performance measurement",
+          "Screen diagonal not a platform/support guarantee",
+          "Exact USB passthrough data/power capability unresolved."
+        ]
       }
     },
     {
@@ -338,10 +480,10 @@
       "category": "meetings",
       "alternative": "physical seating and display-position changes",
       "asin": "B09TD2HVVQ",
-      "title": "SightPro Magnetic Privacy Screen for MacBook Pro 14 Inch (2021-2026, M1-M5, Pro, Max) Patented Removable Laptop Privacy Filter Shield and Protector",
+      "title": "SightPro SP-PSM14MP21 / PFNAP011, MacBook Pro14in selection",
       "brand": "SightPro",
       "detailUrl": "https://www.amazon.com/dp/B09TD2HVVQ",
-      "verifiedAt": "2026-08-12T11:18:00.000Z",
+      "verifiedAt": "2026-11-01T08:08:10.705Z",
       "searchRank": null,
       "sponsoredSearchResult": false,
       "relevanceScore": 14.5,
@@ -349,7 +491,15 @@
         "directStatus": 200,
         "asinMatched": true,
         "unavailable": false,
-        "manualDirectTitleCheck": true
+        "manualDirectTitleCheck": true,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant30/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "Compatibility limited to confirmed exact model; no future-generation inference",
+          "No direct-behind privacy or digital-security guarantee",
+          "Actual thickness and lid-closure clearance unverified."
+        ]
       }
     },
     {
@@ -359,17 +509,24 @@
       "category": "ergonomics",
       "alternative": "an adjustable desk lamp positioned away from the screen",
       "asin": "B08DKQ3JG1",
-      "title": "Quntis Computer Monitor Lamp, Screen Monitor Light Bar for Eye Caring, USB Reading LED Task Lamp with Auto-Dimming, Dimmable Light Bar, Touch Control, No Glare Space Saving Home Office Desk Lamps",
+      "title": "Quntis LI-HY-0214-BK, selected ScreenLinear Pro Gray",
       "brand": "Quntis",
       "detailUrl": "https://www.amazon.com/dp/B08DKQ3JG1",
-      "verifiedAt": "2026-08-12T08:53:29.071Z",
+      "verifiedAt": "2026-11-01T07:22:07.771Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 10.667,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible Amazon US page / selected variant; New York 10001",
+        "observationFile": "reverse-merchant31/retail-raw.json",
+        "suitability": "Conditional; actual use, fit and instructions must match",
+        "issues": [
+          "Pro Gray selection versus LI-HY-0214-BK code; maker similar F40BK naming differs.",
+          "Exact clip, input and received revision need confirmation; no optical/medical tests."
+        ]
       }
     },
     {
@@ -379,17 +536,24 @@
       "category": "meetings",
       "alternative": "desk orientation and controlled access",
       "asin": "B0CJBHHGPG",
-      "title": "Magicmoon 2-Pack 24 Inch Computer Privacy Screen Filter for 16:9 Monitor | Anti-Spy/Glare Protector Film Widescreen 16:9 Aspect Ratio Filter Size: width: 20 15/16\", Height: 11 13/16\" (531mm x 298mm)",
+      "title": "Magicmoon 24-inch 16:9 privacy filters, two pack",
       "brand": "Magicmoon",
       "detailUrl": "https://www.amazon.com/dp/B0CJBHHGPG",
-      "verifiedAt": "2026-08-12T09:00:23.080Z",
+      "verifiedAt": "2026-11-01T07:22:16.171Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 15.5,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible Amazon US page / selected variant; New York 10001",
+        "observationFile": "reverse-merchant31/retail-raw.json",
+        "suitability": "Conditional; actual use, fit and instructions must match",
+        "issues": [
+          "Nominal diagonal is insufficient; rounded and fractional dimensions differ slightly.",
+          "No measured privacy angle, blue-light health or color-fidelity result."
+        ]
       }
     },
     {
@@ -399,17 +563,24 @@
       "category": "ergonomics",
       "alternative": "pointer placement and forearm support changes",
       "asin": "B098P87YJX",
-      "title": "DELTAHUB Carpio 2.0 - Right-Handed Truly Ergonomic Wrist Rest for Mouse, Carpal Tunnel Support, Pain Relief, Anti-Fatigue, Easy Glide, Sleek, Office Computer, Laptop, Gaming - Large, White",
+      "title": "DELTAHUB Carpio 2.0 Right Large White",
       "brand": "DELTAHUB",
       "detailUrl": "https://www.amazon.com/dp/B098P87YJX",
-      "verifiedAt": "2026-08-12T08:57:30.260Z",
+      "verifiedAt": "2026-11-01T07:26:24.168Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 15.5,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible Amazon US page / selected variant; New York 10001",
+        "observationFile": "reverse-merchant31/retail-raw.json",
+        "suitability": "Conditional; actual use, fit and instructions must match",
+        "issues": [
+          "No personal fit or medical/injury-prevention test.",
+          "Holiday return label observed; expanded order eligibility unreviewed."
+        ]
       }
     },
     {
@@ -419,17 +590,24 @@
       "category": "ergonomics",
       "alternative": "built-in adjustable lumbar support",
       "asin": "B074C9F45S",
-      "title": "Lumbar Support Pillow for Office Chair,Mothers Day Gifts for Mom, Back Support Pillow for Car, Office Supplies, Chair Cushions, Back Pain Relief Improve Posture, Mesh Cover Double Adjustable Straps",
+      "title": "QUTOOL Black Standard LSP-A-01 lumbar cushion",
       "brand": "QUTOOL",
       "detailUrl": "https://www.amazon.com/dp/B074C9F45S",
-      "verifiedAt": "2026-08-12T08:58:04.364Z",
+      "verifiedAt": "2026-11-01T07:26:28.940Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 15.5,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible Amazon US page / selected variant; New York 10001",
+        "observationFile": "reverse-merchant31/retail-raw.json",
+        "suitability": "Conditional; actual use, fit and instructions must match",
+        "issues": [
+          "Care conflict: retail removable cover machine wash versus linked hand-wash icon/seat-cushion footer.",
+          "Compressed fit, strap retention, cooling and clinical results untested."
+        ]
       }
     },
     {
@@ -439,17 +617,24 @@
       "category": "desks",
       "alternative": "a reinforced desk surface or fixed cabinet",
       "asin": "B0DBZ98D94",
-      "title": "GYIIYUO 2 Drawer File Cabinet 24''W, Mobile Filing Cabinet, Printer Stand | 24'' Extended Desktop, Rolling, Side Bag, Fits A4/Letter Size, Home Office, Fabric Drawer",
+      "title": "GYIIYUO Light Brown 24-inch two-drawer printer stand",
       "brand": "GYIIYUO",
       "detailUrl": "https://www.amazon.com/dp/B0DBZ98D94",
-      "verifiedAt": "2026-08-12T08:50:07.686Z",
+      "verifiedAt": "2026-11-01T07:26:37.728Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 14,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible Amazon US page / selected variant; New York 10001",
+        "observationFile": "reverse-merchant31/retail-raw.json",
+        "suitability": "Conditional; actual use, fit and instructions must match",
+        "issues": [
+          "Width fields differ; usable top and separate working loads need confirmation.",
+          "No installed stability or monitor-arm clamp qualification."
+        ]
       }
     },
     {
@@ -459,17 +644,24 @@
       "category": "ergonomics",
       "alternative": "adjustable drafting or task chairs",
       "asin": "B0CP2H7KBP",
-      "title": "FIRAVOE Saddle Stool, Swivel Saddle Stool with Wheels, Adjustable Rolling Stool 18\"-26\", Faux Leather Rolling Stool for Salon, Massage, Clinic, Lab, Office (Light Grey, 1PCS (18\"-26\"))",
+      "title": "FIRAVOE Light Grey 61020 saddle stool, one 18–26-inch unit",
       "brand": "FIRAVOE",
       "detailUrl": "https://www.amazon.com/dp/B0CP2H7KBP",
-      "verifiedAt": "2026-08-12T08:58:40.835Z",
+      "verifiedAt": "2026-11-01T07:28:10.821Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 14,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible Amazon US page / selected variant; New York 10001",
+        "observationFile": "reverse-merchant31/retail-raw.json",
+        "suitability": "Conditional; actual use, fit and instructions must match",
+        "issues": [
+          "Comparison-row capacity and package counts not exact-unit proof.",
+          "No brake, installed stability, posture correction or long-duration comfort test."
+        ]
       }
     },
     {
@@ -479,17 +671,24 @@
       "category": "ergonomics",
       "alternative": "a properly fitted chair and scheduled movement",
       "asin": "B01EBDV9BU",
-      "title": "Everlasting Comfort Doctor Recommended Memory Foam Seat Cushion for Office Chairs & Car - Ergonomic Office Desk Accessories - Cushions for Tailbone Pain Relief, Sciatica (Black, Large)",
+      "title": "Everlasting Comfort Black Large memory-foam seat cushion",
       "brand": "Everlasting Comfort",
       "detailUrl": "https://www.amazon.com/dp/B01EBDV9BU",
-      "verifiedAt": "2026-08-12T08:57:48.196Z",
+      "verifiedAt": "2026-11-01T07:28:29.307Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 14,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible Amazon US page / selected variant; New York 10001",
+        "observationFile": "reverse-merchant31/retail-raw.json",
+        "suitability": "Conditional; actual use, fit and instructions must match",
+        "issues": [
+          "Exact usable dimensions and compressed thickness not established.",
+          "No treatment, pressure-distribution, upholstery-grip or durability test."
+        ]
       }
     },
     {
@@ -499,17 +698,25 @@
       "category": "desks",
       "alternative": "flatbed scanning or a copy stand with a camera",
       "asin": "B0GXZJ5FC6",
-      "title": "VIISAN S48 Duo Overhead Book Scanner - A2/A3 Large Format, Dual 48MP, 600 DPI with OCR & Text-to-Speech for Archiving and Distance Education",
+      "title": "VIISAN S48 Duo A2 overhead scanner",
       "brand": "VIISAN",
       "detailUrl": "https://www.amazon.com/dp/B0GXZJ5FC6",
-      "verifiedAt": "2026-08-12T08:45:49.310Z",
+      "verifiedAt": "2026-11-01T07:28:51.793Z",
       "searchRank": 2,
       "sponsoredSearchResult": false,
       "relevanceScore": 15.46,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible Amazon US page / selected variant; New York 10001",
+        "observationFile": "reverse-merchant31/retail-raw.json",
+        "suitability": "Conditional; actual use, fit and instructions must match",
+        "issues": [
+          "S48 metadata versus S48 Duo title; exact delivered model/package must match.",
+          "Retail old OS/5W fields conflict with current maker download and 12V2 A references.",
+          "No physical capture, OCR/translation accuracy or installed-software validation."
+        ]
       }
     },
     {
@@ -519,17 +726,25 @@
       "category": "desks",
       "alternative": "retail photo printing or a desktop inkjet",
       "asin": "B0F9L9RYFY",
-      "title": "Nelko PP01 Photo Printer, 2x3 Portable Photo Printer, Mini Printer, White | Instant Color Inkjet Printer for Smartphone, Sticky-Back Photos, Bluetooth Compatible with iOS & Android, AI App Editing",
+      "title": "Nelko PP01 White inkjet photo printer",
       "brand": "Nelko",
       "detailUrl": "https://www.amazon.com/dp/B0F9L9RYFY",
-      "verifiedAt": "2026-08-12T08:49:13.250Z",
+      "verifiedAt": "2026-11-01T07:30:30.896Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 15.5,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible Amazon US page / selected variant; New York 10001",
+        "observationFile": "reverse-merchant31/retail-raw.json",
+        "suitability": "Conditional; actual use, fit and instructions must match",
+        "issues": [
+          "Retail 2 ×3 and up-to 80 yield versus maker 45 ×60 mm image and conditional 60-photo reference.",
+          "Google Drive manual download failed; no manual review or installed-app validation.",
+          "Exact starter contents, input rating, paid/cloud and archival behavior unverified."
+        ]
       }
     },
     {
@@ -539,17 +754,25 @@
       "category": "meetings",
       "alternative": "fixed webcams or all-in-one video bars",
       "asin": "B0C2Q2HV8Q",
-      "title": "TONGVEO Conference Room PTZ Camera System with 20X Optical Zoom, AI Auto Tracking 1080P 60fps HDMI USB Webcam for Church Streaming Online Video Conference,Compatible with Zoom, OBS Easy Setup",
+      "title": "TONGVEO TV2-NV-20H Black USB/HDMI PTZ camera",
       "brand": "TONGVEO",
       "detailUrl": "https://www.amazon.com/dp/B0C2Q2HV8Q",
-      "verifiedAt": "2026-08-12T08:55:01.386Z",
+      "verifiedAt": "2026-11-01T07:31:44.534Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 15.5,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible Amazon US page / selected variant; New York 10001",
+        "observationFile": "reverse-merchant31/retail-raw.json",
+        "suitability": "Conditional; actual use, fit and instructions must match",
+        "issues": [
+          "TV2-NV-20H retail versus linked NVPro 20H family manual; exact current AI revision unverified.",
+          "No NDI/PoE/SDI or full audio-kit qualification.",
+          "255 device presets do not imply 255 IR presets; no physical tracking test."
+        ]
       }
     },
     {
@@ -559,17 +782,25 @@
       "category": "desks",
       "alternative": "phone capture plus accounting software",
       "asin": "B08P3YM18F",
-      "title": "Epson RapidReceipt RR-60 Compact Mobile Document Scanner Receipt | Mobile Receipt Scanner for Small Business USB-Powered 10 Pages per Minute PC and Mac Compatible",
-      "brand": "Brand shown on the Amazon listing",
+      "title": "Epson RapidReceipt RR-60 USB receipt scanner",
+      "brand": "Epson",
       "detailUrl": "https://www.amazon.com/dp/B08P3YM18F",
-      "verifiedAt": "2026-08-12T08:46:28.617Z",
+      "verifiedAt": "2026-11-01T07:31:54.240Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 14,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible Amazon US page / selected variant; New York 10001",
+        "observationFile": "reverse-merchant31/retail-raw.json",
+        "suitability": "Conditional; actual use, fit and instructions must match",
+        "issues": [
+          "Retail 60-sheet capacity field is not the actual single-sheet format.",
+          "Shared RR-70W battery/wireless topics not RR-60 features.",
+          "Current installed OS, licensing and accounting integration not tested."
+        ]
       }
     },
     {
@@ -579,17 +810,24 @@
       "category": "desks",
       "alternative": "fixed drawers or digitized document storage",
       "asin": "B0DZGLD3J1",
-      "title": "Sbanmao Rolling File Cart, Mobile File Cabinet with Wheels Hanging Files, Metal Hanging File Folder Cart File Organizer Fit Letter Size for Home Office, Black (Patent Pending)",
+      "title": "Sbanmao Black Large Letter rolling file cart",
       "brand": "Sbanmao",
       "detailUrl": "https://www.amazon.com/dp/B0DZGLD3J1",
-      "verifiedAt": "2026-08-12T08:50:44.330Z",
+      "verifiedAt": "2026-11-01T07:32:06.508Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 15.5,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible Amazon US page / selected variant; New York 10001",
+        "observationFile": "reverse-merchant31/retail-raw.json",
+        "suitability": "Conditional; actual use, fit and instructions must match",
+        "issues": [
+          "Letter selection not proof of A4/Legal fit or included folders.",
+          "Lockable casters do not mean locked storage;60 lb not an installed test."
+        ]
       }
     },
     {
@@ -599,17 +837,24 @@
       "category": "ergonomics",
       "alternative": "an adjustable office footrest",
       "asin": "B07C3M678F",
-      "title": "iMissiu Foot Hammock Under Desk Footrest, Adjustable Office Foot Rest Under Desk Hammock, Portable Desk Feet Hammock with Headphones Holder (Black)",
+      "title": "iMissiu Black 22 ×6.6-inch desk foot hammock",
       "brand": "iMissiu",
       "detailUrl": "https://www.amazon.com/dp/B07C3M678F",
-      "verifiedAt": "2026-08-12T08:58:17.338Z",
+      "verifiedAt": "2026-11-01T08:08:05.971Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 17,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible Amazon US page / selected variant; New York 10001",
+        "observationFile": "reverse-merchant31/retail-raw.json",
+        "suitability": "Conditional; actual use, fit and instructions must match",
+        "issues": [
+          "Usable 22 ×6.6-inch fabric differs from 9 ×3 ×2-inch metadata.",
+          "No installed clamp,80 kg, circulation or symptom-relief result."
+        ]
       }
     },
     {
@@ -619,17 +864,24 @@
       "category": "ergonomics",
       "alternative": "scheduled walking and standing breaks",
       "asin": "B0DF2WS15J",
-      "title": "Under Desk Elliptical Machine, Electric Leg Exerciser for Seniors | 100% No Assembly, Portable Quiet Elliptical Exercise Machine, Seated Pedal Exerciser with Remote Control & 12 Speeds",
+      "title": "Putnen Orange 5761 / MF-H-01 seated electric elliptical",
       "brand": "Putnen",
       "detailUrl": "https://www.amazon.com/dp/B0DF2WS15J",
-      "verifiedAt": "2026-08-12T08:58:53.950Z",
+      "verifiedAt": "2026-11-01T07:32:51.836Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 17,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible Amazon US page / selected variant; New York 10001",
+        "observationFile": "reverse-merchant31/retail-raw.json",
+        "suitability": "Conditional; actual use, fit and instructions must match",
+        "issues": [
+          "Exact input, stop/fault limits, duty period and remote battery type unestablished from a verified primary manual.",
+          "Speed levels not resistance; no rehabilitation, circulation, calorie or sound test."
+        ]
       }
     },
     {
@@ -639,17 +891,24 @@
       "category": "ergonomics",
       "alternative": "a monitor with native VESA mounting points",
       "asin": "B09STXZRMS",
-      "title": "suptek Universal VESA Mount Bracket Adapter Monitor Arm Mounting Kit for Screen 17 to 27 inch",
+      "title": "suptek Black 17–27-inch non-VESA adapter",
       "brand": "suptek",
       "detailUrl": "https://www.amazon.com/dp/B09STXZRMS",
-      "verifiedAt": "2026-08-12T09:02:16.197Z",
+      "verifiedAt": "2026-11-01T07:33:01.614Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 15.5,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible Amazon US page / selected variant; New York 10001",
+        "observationFile": "reverse-merchant31/retail-raw.json",
+        "suitability": "Conditional; actual use, fit and instructions must match",
+        "issues": [
+          "Exact 8 kg statement versus 22 lb comparison metadata; no installed grip or load test.",
+          "Monitor permission, edge support, fasteners and combined arm capacity must be confirmed."
+        ]
       }
     },
     {
@@ -659,17 +918,24 @@
       "category": "meetings",
       "alternative": "window light or a conventional diffused lamp",
       "asin": "B0CJM9HRL8",
-      "title": "2 Pack Streaming Key Light with Desk Stand C-Clamp Stand Dimmable Video Panel Light for Video Recording Conference Webcam Laptop Zoom",
+      "title": "SWDPORT PB004 two-panel lights, 2pack No arm",
       "brand": "SWDPORT",
       "detailUrl": "https://www.amazon.com/dp/B0CJM9HRL8",
-      "verifiedAt": "2026-08-12T08:53:56.501Z",
+      "verifiedAt": "2026-11-01T06:32:59.101Z",
       "searchRank": 8,
       "sponsoredSearchResult": false,
       "relevanceScore": 15.22,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible Amazon US page / selected variant; New York 10001",
+        "observationFile": "reverse-merchant32/retail-raw.json",
+        "suitability": "Conditional; actual use, fit and instructions must match",
+        "issues": [
+          "No arm selection versus stand/C-clamp title; exact hardware needs confirmation.",
+          "Input rating, adapter inclusion, flicker and CRI performance unestablished."
+        ]
       }
     }
   ],

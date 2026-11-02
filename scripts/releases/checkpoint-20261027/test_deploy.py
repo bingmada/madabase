@@ -4,6 +4,18 @@ from pathlib import Path
 from unittest.mock import patch
 SPEC=importlib.util.spec_from_file_location('discovery_release',Path(__file__).with_name('deploy.py'))
 release=importlib.util.module_from_spec(SPEC);SPEC.loader.exec_module(release)
+class UnitRetargetTests(unittest.TestCase):
+ def test_both_runtime_paths_move_together(self):
+  old='/srv/madabase-main/releases/previous';new='/srv/madabase-main/releases/current'
+  config='WorkingDirectory='+old+'\nReadWritePaths='+old+'\nExecStart=/usr/bin/node start.mjs\n'
+  result=release.retarget_unit(config,old,new)
+  self.assertNotIn(old,result);self.assertIn('WorkingDirectory='+new,result);self.assertIn('ReadWritePaths='+new,result)
+ def test_stale_write_path_stops_release(self):
+  with self.assertRaisesRegex(RuntimeError,'ReadWritePaths'):
+   release.retarget_unit('WorkingDirectory=/releases/previous\nReadWritePaths=/releases/ancient\n','/releases/previous','/releases/current')
+ def test_write_scope_cannot_silently_expand(self):
+  with self.assertRaises(RuntimeError):
+   release.retarget_unit('WorkingDirectory=/releases/previous\nReadWritePaths=/releases/previous\n','/releases/previous','/other/current')
 class ReleaseFailureTests(unittest.TestCase):
  def setUp(self):
   self.temp=tempfile.TemporaryDirectory();self.addCleanup(self.temp.cleanup)

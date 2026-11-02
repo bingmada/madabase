@@ -31,6 +31,7 @@ html {
 .guide-decision-scroll {
   position: relative;
   isolation: isolate;
+  container-type: inline-size;
 }
 
 .guide-decision-table tr > th:first-child {
@@ -67,6 +68,13 @@ html {
     overflow-wrap: anywhere;
   }
 
+  @supports (width: 1cqw) {
+    .guide-decision-table {
+      /* One complete option beside the fixed label. Viewport widths include
+         scrollbars and left a narrow strip of the previous option visible. */
+      --guide-value-width: calc(100cqw - var(--guide-label-width));
+    }
+  }
 }
 
 body {

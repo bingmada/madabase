@@ -487,21 +487,45 @@ export const aggressivePortfolioGuides: Guide[] = [
     site: "baby",
     slug: "bottle-sterilizer-dryer-for-twins-capacity-guide",
     title: "Bottle Sterilizer Dryer for Twins: Capacity Checklist",
-    dek: "Count bottles, pump parts, valves, caps, pacifiers, cycle time, drying time, and overnight demand before trusting a six-bottle headline.",
+    dek: "Plan the actual bottle and pump-part load, complete cycle and cooling time, counter clearance and existing routine before choosing a sterilizer-dryer.",
     category: "feeding",
     updatedAt,
     image: "/images/affiliate/baby-bottle-sterilizer-dryer-realistic.webp",
     imageAlt: "Bottle sterilizer and dryer loaded with bottles and feeding accessories",
     sources: [
-      { name: "CDC infant-feeding hygiene", url: "https://www.cdc.gov/hygiene/about/about-hygiene-and-safety-for-infant-feeding.html", note: "Current public-health cleaning, sanitizing, drying, and storage guidance." },
-      { name: "Baby Brezza Sterilizer Dryer Advanced", url: "https://babybrezza.com/products/sterilizer-and-dryer-advanced", note: "Official capacity, cycle, and product-use reference." },
-      { name: "Dr. Brown's Amazon listing", url: "https://www.amazon.com/dp/B089QWNQXC", note: "Exact model and current six-bottle listing reference." },
+      {
+        "name": "CDC infant-feeding item cleaning and sanitizing",
+        "url": "https://www.cdc.gov/hygiene/about/about-hygiene-and-safety-for-infant-feeding.html",
+        "note": "Complete cleaning, sanitizing and drying guidance read. A suitable dishwasher sanitizing/heated-dry routine may remove the need for a separate sanitizing step; follow the child’s care guidance."
+      },
+      {
+        "name": "Dr. Brown's AC177/AC377 manual",
+        "url": "https://cdn.shopify.com/s/files/1/0831/9071/0549/files/WSW006_F5_SterilizerAndDryer_Instructions_WEB_ADA.pdf?v=1744040458",
+        "note": "Complete English instructions and diagrams read, including active cycles, separate cooling, water, descaling and filter care."
+      },
+      {
+        "name": "Baby Brezza Advanced BRZ0069 manual",
+        "url": "https://cdn.shopify.com/s/files/1/1465/2384/files/SDA_-_New_-_BRZ0069_IM_EN_201102.pdf?v=1606162335",
+        "note": "Entire four-page English file and diagrams read. 30/45/60-minute settings are drying; five-minute cooling and at least 30 minutes between operations are separate conditions."
+      }
     ],
     sections: [
-      { heading: "Count parts, not bottles", body: "One feeding can create a bottle, nipple, collar, cap, vent pieces, and pump components. Lay out a complete load from the busiest part of the day and check whether steam and airflow can reach every item." },
-      { heading: "Calculate cycles per day", body: "Divide the total clean-part demand by the realistic load, then include cycle, cooling, unloading, and refill time. A nominal six-bottle unit may still require several cycles for twins or exclusive pumping." },
-      { heading: "Protect the overnight reserve", body: "Keep enough clean, dry feeding parts outside the active cycle for the next feed. A machine should reduce routine pressure, not create a single point of failure when a cycle is delayed." },
-      { heading: "Separate cleaning from sanitizing", body: "Milk residue and film must be removed before sanitizing. If washing is the true bottleneck, compare a purpose-built bottle washer or an appropriate dishwasher workflow instead of buying a larger sterilizer." },
+      {
+        "heading": "Write down one real load",
+        "body": "Count bottle bodies, nipples, rings, vents, valves and pump pieces that need to be ready together. Check each part maker’s allowed steam and drying method, then compare the appliance’s illustrated loading pattern. Dr. Brown’s publishes up to six bottles and Advanced up to eight or two pump-part sets, but large shapes and mixed accessories can reduce the useful load. Neither headline guarantees one full day’s equipment for twins."
+      },
+      {
+        "heading": "Compare wash-to-ready time on the same basis",
+        "body": "These sterilizer-dryers require parts to be washed first. Dr. Brown’s AC177/AC377 instructions describe about nine minutes of steam and 45 minutes of drying, with a separate ten-minute cooling instruction after steam. Advanced BRZ0069 offers 30/45/60-minute drying after steam, five-minute cooling before opening and at least 30 minutes between operations with the unit cooled. Do not plan back-to-back loads from the shortest drying label alone."
+      },
+      {
+        "heading": "Measure the whole counter workflow",
+        "body": "Allow space for the base, lid opening, basket lifting, water filling and clean parts before and after loading. Match voltage and frequency to the actual unit: the reviewed US AC177/AC377 and BRZ0069 manuals specify 120 V/60 Hz. Include descaling and replacement filters in the routine. A closed-lid storage claim does not remain useful once the lid is opened for the next bottle."
+      },
+      {
+        "heading": "Keep a routine that already meets the need",
+        "body": "CDC guidance distinguishes cleaning, any required sanitizing and complete air drying. A suitable dishwasher sanitizing/heated-dry routine may already cover the sanitizing step for compatible parts; follow the child’s clinician when additional precautions are advised. Keep that routine when it supplies the needed clean, dry parts. Pause buying when the exact parts, model or usable capacity is unresolved rather than buying a second appliance by bottle count."
+      }
     ],
     relatedRoundups: ["dr-browns-vs-baby-brezza-sterilizer-dryer", "best-bottle-sterilizers-and-dryers"],
     relatedProducts: ["dr-browns-all-in-one-sterilizer-dryer", "baby-brezza-sterilizer-dryer-advanced", "momcozy-kleanpal-pro-baby-bottle-washer"],
@@ -511,20 +535,50 @@ export const aggressivePortfolioGuides: Guide[] = [
     site: "baby",
     slug: "bottle-sterilizer-hard-water-descaling-guide",
     title: "Bottle Sterilizer Hard-Water & Descaling Guide",
-    dek: "Recognize mineral scale, protect the heating plate, follow the exact appliance manual, dry parts safely, and decide whether water choice or cleaning frequency needs to change.",
+    dek: "Distinguish visible deposits from a diagnosis, follow the exact model’s water and descaling instructions, and keep cleaning, sanitizing and drying separate.",
     category: "feeding",
     updatedAt,
     image: "/images/affiliate/baby-bottle-sterilizer-dryer-realistic.webp",
     imageAlt: "Clean bottle sterilizer heating plate and water reservoir ready for maintenance",
     sources: [
-      { name: "CDC infant-feeding hygiene", url: "https://www.cdc.gov/hygiene/about/about-hygiene-and-safety-for-infant-feeding.html", note: "Public-health guidance for clean, dry feeding equipment and safe storage." },
-      { name: "Baby Brezza Sterilizer Dryer Advanced", url: "https://babybrezza.com/products/sterilizer-and-dryer-advanced", note: "Official product and maintenance starting point; follow the model manual for descaling." },
+      {
+        "name": "CDC infant-feeding item cleaning and sanitizing",
+        "url": "https://www.cdc.gov/hygiene/about/about-hygiene-and-safety-for-infant-feeding.html",
+        "note": "Complete cleaning, sanitizing and drying guidance read. A suitable dishwasher sanitizing/heated-dry routine may remove the need for a separate sanitizing step; follow the child’s care guidance."
+      },
+      {
+        "name": "Dr. Brown's AC177/AC377 manual",
+        "url": "https://cdn.shopify.com/s/files/1/0831/9071/0549/files/WSW006_F5_SterilizerAndDryer_Instructions_WEB_ADA.pdf?v=1744040458",
+        "note": "Complete English instructions and diagrams read, including active cycles, separate cooling, water, descaling and filter care."
+      },
+      {
+        "name": "Baby Brezza Advanced BRZ0069 manual",
+        "url": "https://cdn.shopify.com/s/files/1/1465/2384/files/SDA_-_New_-_BRZ0069_IM_EN_201102.pdf?v=1606162335",
+        "note": "Entire four-page English file and diagrams read. 30/45/60-minute settings are drying; five-minute cooling and at least 30 minutes between operations are separate conditions."
+      },
+      {
+        "name": "GROWNSY LS-BE916 manual",
+        "url": "https://cdn.shopify.com/s/files/1/0280/5016/1725/files/bottle-sterilizer-user-manual-916.pdf?v=1734062493",
+        "note": "Complete English physical pages 1–9 and diagrams read. 120 V/60 Hz model, 90 mL distilled water for steam and its own maintenance procedure; do not borrow another model’s recipe."
+      }
     ],
     sections: [
-      { heading: "Mineral film is a maintenance signal", body: "White or brown deposits on the heating plate usually come from water minerals, not from successful sterilizing. Let the unit cool, unplug it, and follow the exact model's cleaning instructions before deposits become thick." },
-      { heading: "Do not improvise chemicals", body: "Vinegar, citric acid, concentration, soak time, and rinse steps vary by manufacturer. Use only the method named for the appliance and keep cleaners away from feeding parts unless the instructions explicitly include them." },
-      { heading: "Change frequency based on the water", body: "Harder water can require more frequent maintenance. Record how quickly scale returns, use the water type permitted by the manual, and do not assume distilled water is mandatory or prohibited without checking the model." },
-      { heading: "Dry before storage", body: "After cleaning and rinsing, leave the reservoir and removable parts dry according to the instructions. Standing water and a closed warm appliance create a separate hygiene problem that descaling alone does not solve." },
+      {
+        "heading": "Identify the model before treating the deposit",
+        "body": "Mineral deposits can build up on a heating area, but appearance alone does not establish what every white or brown mark is. Unplug the unit, wait the cooling interval required for maintenance and inspect it according to the matching instructions. Stop and seek the maker’s guidance for unexplained damage, residue or malfunction rather than assuming a descaling cycle resolves it."
+      },
+      {
+        "heading": "Use that model’s water and maintenance method",
+        "body": "The reviewed Dr. Brown’s AC177/AC377 manual recommends distilled water and gives its own descaling procedure; GROWNSY LS-BE916 specifies 90 mL distilled water for steam and its own citric-acid maintenance directions. Advanced BRZ0069 has separate cleaning instructions. Concentration, amount, soaking, heating and rinsing are not interchangeable. Do not run a heated vinegar or citric-acid recipe copied from another appliance."
+      },
+      {
+        "heading": "Separate cooling for unloading from cooling for care",
+        "body": "A normal cycle’s safe-opening instruction is not automatically the maintenance wait. Dr. Brown’s directs unplugging and at least 60 minutes of cooling for cleaning, descaling or filter work. Keep the base and electrical parts out of water, and follow the matching instructions for removable parts and permitted cleaning tools. Never mix cleaners or include feeding parts in a treatment unless their instructions explicitly allow it."
+      },
+      {
+        "heading": "Track recurrence and preserve the feeding routine",
+        "body": "Record the permitted water type, cleaning date and how quickly deposits return, then adjust only within the maker’s instructions. Rinse and dry the allowed parts as directed. Descaling the appliance does not wash milk from bottles or replace any necessary sanitizing step. CDC guidance calls for clean, fully dry feeding items before storage; keep a suitable existing routine and pause use when residue or the manual match remains unresolved."
+      }
     ],
     relatedRoundups: ["dr-browns-vs-baby-brezza-sterilizer-dryer", "best-bottle-sterilizers-and-dryers"],
     relatedProducts: ["dr-browns-all-in-one-sterilizer-dryer", "baby-brezza-sterilizer-dryer-advanced", "grownsy-bottle-sterilizer-dryer"],

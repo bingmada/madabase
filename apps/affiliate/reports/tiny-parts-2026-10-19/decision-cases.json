@@ -127,7 +127,7 @@
       "passed": true
     },
     {
-      "task": "M70q Gen2 search does not substitute Gen3",
+      "task": "M70q Gen2 search resolves its own generation",
       "passed": true
     },
     {

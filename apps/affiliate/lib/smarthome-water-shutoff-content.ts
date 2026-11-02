@@ -6,313 +6,344 @@ const amazonUrl = (asin: string) =>
 
 export const smartHomeWaterShutoffProducts: Product[] = [
   {
-    site: "smarthome",
-    slug: "aqara-valve-controller-t1",
-    asin: "B0DB8KS8Q3",
-    amazonTitle: "Aqara Smart Valve Controller T1, Zigbee 3.0, Hub Required",
-    seoTitle: "Aqara Valve Controller T1 Guide: Fit, Hub and Leak Automation",
-    updatedAt,
-    evidenceMode: "official-spec",
-    researchNote:
-      "We have not installed this valve controller. This page uses Aqara's current specifications and the exact Amazon identity. Valve geometry, stiffness, clearance, regional plumbing practice, hub firmware, and automation setup must be verified in the home.",
-    name: "Aqara Valve Controller T1",
-    brand: "Aqara",
-    category: "automation",
-    image: "/images/affiliate/smarthome-water-valve-retrofit-editorial-realistic.webp",
-    summary:
-      "A battery-powered Zigbee retrofit actuator for compatible lever or butterfly valves, with Aqara-hub automation, Matter-over-bridge support, manual control, and valve-fit limits.",
-    verdict:
-      "Aqara T1 is the cleanest next step for an Aqara leak-sensor household with an accessible, smooth quarter-turn valve and room for the clamp. Skip it when the main valve is stiff, corroded, gate-style, outdoors in condensation, or part of a plumbing or fire system that needs professional review.",
-    whyItMatters:
-      "A leak alert only reduces damage when someone can reach the shutoff. A compatible local automation can shorten that response, but a motor attached to the wrong or unhealthy valve can create false confidence.",
-    bestFor: "Aqara homes with a compatible accessible quarter-turn main valve",
-    priceBand: "$$",
-    rating: 4.4,
-    scores: [
-      { label: "Aqara automation fit", value: 9 },
-      { label: "Retrofit simplicity", value: 8 },
-      { label: "Valve compatibility", value: 6 },
-    ],
-    pros: [
-      "Retrofits without cutting a compatible pipe or replacing the valve",
-      "Battery power avoids placing a mains outlet beside the valve",
-      "Aqara hub can connect leak detection, alerts, and shutoff automations",
-    ],
-    cons: [
-      "Requires a compatible Aqara Zigbee hub for smart functions",
-      "Only fits supported valve sizes, handle styles, torque, and mounting clearance",
-      "Matter-over-bridge does not make every third-party automation or valve state identical",
-    ],
-    specs: {
-      ASIN: "B0DB8KS8Q3",
-      Model: "Valve Controller T1",
-      Radio: "Zigbee 3.0; Aqara hub required for connected features",
-      Matter: "Matter over a compatible Aqara bridge",
-      Power: "4 x AA batteries",
-      "Valve fit": "DN15, DN20, DN25; 1/2, 3/4, and 1 in listed",
-      Handles: "Compatible lever and butterfly valves listed",
-      Torque: "3.6 N m listed",
-      Environment: "Indoor use; avoid condensation and incompatible conditions",
-    },
-    evidence: [
-      "Confirm ASIN B0DB8KS8Q3 and Valve Controller T1 rather than an Aqara sensor or hub bundle",
-      "Photograph the valve, handle sweep, pipe size, wall clearance, and nearby obstructions before ordering",
-      "A plumber should inspect a stiff, corroded, leaking, inaccessible, or non-quarter-turn valve",
-      "Confirm the exact Aqara hub, region, firmware, sensor, app, and Matter path",
-      "Test manual operation, alert routing, automation, battery warning, and recovery while someone is present",
-    ],
-    editorialSections: [
-      {
-        heading: "The valve fit is the buying decision",
-        body: "Aqara lists DN15, DN20, and DN25 pipe sizes and compatible lever or butterfly valves. That is not permission to force the actuator onto any shutoff. Confirm the handle style, 90-degree sweep, stem condition, torque, clamp position, and clearance on every side.",
-      },
-      {
-        heading: "Aqara closes the sensor-to-valve loop",
-        body: "The strongest use case is an Aqara hub already receiving leak alerts. Build an automation that closes the valve, sounds a local alarm, and notifies the household. Keep the automation narrow enough that one noisy or misplaced sensor does not create repeated unnecessary shutoffs.",
-      },
-      {
-        heading: "Hub and Matter are separate checks",
-        body: "The controller uses Zigbee and needs a compatible Aqara hub for connected features. Matter exposure happens through the bridge, so confirm which states and commands reach the chosen platform instead of assuming every ecosystem reproduces the Aqara app.",
-      },
-      {
-        heading: "Who should skip it",
-        body: "Skip it for gate valves, seized or corroded valves, insufficient clearance, wet or condensing locations outside the rating, shared-building systems, or any line whose closure could affect fire suppression. Those conditions need a plumber or building professional, not a stronger motor.",
-      },
-      {
-        heading: "Manual fallback stays essential",
-        body: "Everyone in the home should still know the manual shutoff and how to respond if the hub, battery, app, internet, or actuator fails. Run supervised tests and never hide the valve behind permanent storage.",
-      },
-    ],
-    alternatives: [
-      "Choose YoLink X3 plus Bulldog when long-range local device-to-device control and outdoor-rated hardware matter.",
-      "Choose Moen Flo when inline flow and pressure monitoring plus automatic shutoff justify professional plumbing work.",
-    ],
-    compareSlugs: ["yolink-x3-bulldog-valve-controller", "moen-flo-900-001-smart-water-shutoff"],
-    sources: [
-      {
-        name: "Aqara Valve Controller T1 product page",
-        url: "https://us.aqara.com/products/aqara-valve-controller-t1",
-        note: "Official valve sizes, handle compatibility, battery, torque, Zigbee, hub, Matter-over-bridge, and use conditions.",
-      },
-      {
-        name: "Aqara Valve Controller T1 announcement",
-        url: "https://www.aqara.com/en/?p=94712",
-        note: "Official retrofit, automation, hub, battery-life assumption, and ecosystem context.",
-      },
-      {
-        name: "Amazon listing for ASIN B0DB8KS8Q3",
-        url: "https://www.amazon.com/dp/B0DB8KS8Q3",
-        note: "Exact current marketplace identity; confirm seller, region, stock, delivery, and return terms.",
-      },
-    ],
-    offers: [
-      {
-        merchant: "Amazon US",
-        url: amazonUrl("B0DB8KS8Q3"),
-        label: "Check Aqara T1 price on Amazon",
-        priceNote: "Confirm ASIN B0DB8KS8Q3, valve fit, hub requirement, seller, region, delivery, and return terms.",
-      },
-    ],
+  "site": "smarthome",
+  "slug": "aqara-valve-controller-t1",
+  "asin": "B0DB8KS8Q3",
+  "amazonTitle": "Aqara Smart Valve Controller T1, Zigbee 3.0, Hub Required",
+  "seoTitle": "Aqara Valve Controller T1 Guide: Fit, Hub and Leak Automation",
+  "updatedAt": "November 1, 2026",
+  "evidenceMode": "official-spec",
+  "researchNote": "We have not installed this valve controller. This page uses Aqara's current specifications and the exact Amazon identity. Valve geometry, stiffness, clearance, regional plumbing practice, hub firmware, and automation setup must be verified in the home. November 1, 2026: selected US retailer identity and purchase conditions reviewed separately; no received-unit, installation, performance or reliability test.",
+  "name": "Aqara Valve Controller T1",
+  "brand": "Aqara",
+  "category": "automation",
+  "image": "/images/affiliate/smarthome-water-valve-retrofit-editorial-realistic.webp",
+  "summary": "A battery-powered Zigbee retrofit actuator for compatible lever or butterfly valves, with Aqara-hub automation, Matter-over-bridge support, manual control, and valve-fit limits.",
+  "verdict": "Compare T1 when the existing valve is healthy, compatible with the supplied clamp and handle geometry, and the exact Aqara hub and automation path meet the job. Keep manual access. A stiff or corroded valve, shared system or fire-suppression concern needs professional assessment before choosing an actuator.",
+  "whyItMatters": "A leak alert only reduces damage when someone can reach the shutoff. A compatible local automation can shorten that response, but a motor attached to the wrong or unhealthy valve can create false confidence.",
+  "bestFor": "Aqara homes with a compatible accessible quarter-turn main valve",
+  "priceBand": "$$",
+  "rating": 0,
+  "scores": [],
+  "pros": [
+    "Retrofits without cutting a compatible pipe or replacing the valve",
+    "Battery power avoids placing a mains outlet beside the valve",
+    "Aqara hub can connect leak detection, alerts, and shutoff automations"
+  ],
+  "cons": [
+    "Requires a compatible Aqara Zigbee hub for smart functions",
+    "Only fits supported valve sizes, handle styles, torque, and mounting clearance",
+    "Matter-over-bridge does not make every third-party automation or valve state identical"
+  ],
+  "specs": {
+    "ASIN": "B0DB8KS8Q3",
+    "Model": "VC-X01E selected US record; match the supplied revision",
+    "Radio": "Zigbee 3.0; Aqara hub required for connected features",
+    "Matter": "Matter over a compatible Aqara bridge",
+    "Power": "4 x AA batteries",
+    "Valve fit": "DN15, DN20, DN25; 1/2, 3/4, and 1 in listed",
+    "Handles": "Compatible lever and butterfly valves listed",
+    "Torque": "Manufacturer maximum ≤ 3.6 N·m, not approval for a stiff valve",
+    "Environment": "Indoor, no water ingress protection; no condensation or outdoor installation"
   },
+  "evidence": [
+    "Confirm ASIN B0DB8KS8Q3 and Valve Controller T1 rather than an Aqara sensor or hub bundle",
+    "Photograph the valve, handle sweep, pipe size, wall clearance, and nearby obstructions before ordering",
+    "A plumber should inspect a stiff, corroded, leaking, inaccessible, or non-quarter-turn valve",
+    "Confirm the exact Aqara hub, region, firmware, sensor, app, and Matter path",
+    "Test manual operation, alert routing, automation, battery warning, and recovery while someone is present"
+  ],
+  "editorialSections": [
+    {
+      "heading": "The valve fit is the buying decision",
+      "body": "Aqara lists DN15, DN20, and DN25 pipe sizes and compatible lever or butterfly valves. That is not permission to force the actuator onto any shutoff. Confirm the handle style, 90-degree sweep, stem condition, torque, clamp position, and clearance on every side."
+    },
+    {
+      "heading": "Aqara closes the sensor-to-valve loop",
+      "body": "The strongest use case is an Aqara hub already receiving leak alerts. Build an automation that closes the valve, sounds a local alarm, and notifies the household. Keep the automation narrow enough that one noisy or misplaced sensor does not create repeated unnecessary shutoffs."
+    },
+    {
+      "heading": "Hub and Matter are separate checks",
+      "body": "The controller uses Zigbee and needs a compatible Aqara hub for connected features. Matter exposure happens through the bridge, so confirm which states and commands reach the chosen platform instead of assuming every ecosystem reproduces the Aqara app."
+    },
+    {
+      "heading": "Who should skip it",
+      "body": "Skip it for gate valves, seized or corroded valves, insufficient clearance, wet or condensing locations outside the rating, shared-building systems, or any line whose closure could affect fire suppression. Those conditions need a plumber or building professional, not a stronger motor."
+    },
+    {
+      "heading": "Manual fallback stays essential",
+      "body": "Everyone in the home should still know the manual shutoff and how to respond if the hub, battery, app, internet, or actuator fails. Run supervised tests and never hide the valve behind permanent storage."
+    },
+    {
+      "heading": "Plan the recurring supervised check",
+      "body": "Aqara’s current FAQ recommends a monthly self-check with someone present to observe the valve and correct mounting problems. Check complete closure and manual/clutch access using the received instructions. A closed icon alone is not a measured water-flow result, and battery-life estimates do not remove battery monitoring."
+    }
+  ],
+  "alternatives": [
+    "Choose YoLink X3 plus Bulldog when long-range local device-to-device control and outdoor-rated hardware matter.",
+    "Choose Moen Flo when inline flow and pressure monitoring plus automatic shutoff justify professional plumbing work."
+  ],
+  "compareSlugs": [
+    "yolink-x3-bulldog-valve-controller",
+    "moen-flo-900-001-smart-water-shutoff"
+  ],
+  "sources": [
+    {
+      "name": "Aqara Valve Controller T1 product page",
+      "url": "https://us.aqara.com/products/aqara-valve-controller-t1",
+      "note": "Official valve sizes, handle compatibility, battery, torque, Zigbee, hub, Matter-over-bridge, and use conditions."
+    },
+    {
+      "name": "Aqara Valve Controller T1 announcement",
+      "url": "https://www.aqara.com/en/?p=94712",
+      "note": "Official retrofit, automation, hub, battery-life assumption, and ecosystem context."
+    },
+    {
+      "name": "Selected US retailer identity, November 1, 2026",
+      "url": "https://www.amazon.com/dp/B0DB8KS8Q3",
+      "note": "Exact model and selected package observed for New York 10001. Seller, condition, delivered total and current returns remain purchase-time checks; this is not a received-unit approval."
+    },
+    {
+      "name": "T1 exact manufacturer specifications",
+      "url": "https://www.aqara.com/us/product/valve-controller-t1-specs/",
+      "note": "VC-X01E/VC-X01D, maximum torque, pipe/handle range and four AA cells. Actual supplied clamp and complete valve condition still govern fit."
+    },
+    {
+      "name": "T1 manufacturer FAQ and current installation context",
+      "url": "https://eu.aqara.com/products/aqara-valve-controller-t1",
+      "note": "Monthly supervised self-check, indoor/non-waterproof boundary, supported handle sizes and Matter-over-bridge prerequisites; EU offer/stock is not used as US retail availability."
+    }
+  ],
+  "offers": [
+    {
+      "merchant": "Amazon US",
+      "url": "https://www.amazon.com/dp/B0DB8KS8Q3?tag=madasmart-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+      "label": "Check Aqara Valve Controller T1 on Amazon",
+      "priceNote": "Confirm the exact model and package, current condition, seller, delivered total and return terms; read the model-specific fit check above."
+    }
+  ],
+  "purchaseCheck": "Match T1 VC-X01E, supplied clamp and the actual healthy valve’s handle, size, sweep and clearance. Include a supported Aqara hub, suitable sensor and tested automation. Keep the unit dry and manual shutoff accessible; do not force a stiff valve."
+},
   {
-    site: "smarthome",
-    slug: "yolink-x3-bulldog-valve-controller",
-    seoTitle: "YoLink X3 Bulldog Valve Controller: Long-Range Shutoff Guide",
-    updatedAt,
-    evidenceMode: "official-spec",
-    researchNote:
-      "We have not installed this system. The specifications come from YoLink's official product page. A previously suspected Amazon ASIN resolves to an unrelated plumbing product, so this page intentionally has no purchase button until an exact Amazon listing is verified.",
-    name: "YoLink X3 Valve Controller & Bulldog Valve Robot",
-    brand: "YoLink",
-    category: "automation",
-    image: "/images/affiliate/smarthome-water-valve-retrofit-editorial-realistic.webp",
-    summary:
-      "A battery-powered LoRa controller and bolt-on Bulldog actuator for an existing ball valve, with device-to-device pairing, long-range placement, IP67 controller housing, and official product documentation.",
-    verdict:
-      "YoLink X3 Bulldog is the retrofit choice for a basement, utility room, or detached space where long range and local sensor-to-valve pairing matter more than Matter branding. Its high purchase price and mechanical valve-fit check make it a deliberate system, not a casual add-on.",
-    whyItMatters:
-      "Leak sensors often sit in the home's worst radio locations. YoLink's long-range LoRa path and device-to-device pairing can keep a local shutoff rule useful when ordinary Wi-Fi coverage or cloud access is unreliable.",
-    bestFor: "Long-range leak-to-shutoff automation on an existing ball valve",
-    priceBand: "$$$",
-    rating: 4.3,
-    scores: [
-      { label: "Long-range fit", value: 10 },
-      { label: "Local pairing", value: 9 },
-      { label: "Purchase price", value: 4 },
-    ],
-    pros: [
-      "Bolt-on Bulldog actuator avoids pipe cutting on a compatible ball valve",
-      "LoRa controller supports long-range placement and device-to-device pairing",
-      "Replaceable lithium battery and IP67 controller enclosure are officially listed",
-    ],
-    cons: [
-      "Full app functionality requires a YoLink Hub or SpeakerHub",
-      "Official direct kit is materially more expensive than a simple Zigbee actuator",
-      "Bulldog mechanical fit, handle travel, controller mounting, and extension cable still require inspection",
-    ],
-    specs: {
-      Model: "YS5001 X3 Valve Controller plus BDOG Bulldog Valve Robot",
-      Radio: "YoLink LoRa",
-      Power: "Replaceable 3.6V lithium battery in X3 controller",
-      "Controller rating": "IP67 listed",
-      Range: "Up to 1/4 mile open air listed; buildings reduce range",
-      Pairing: "Device-to-device control supported",
-      "Actuator time": "Under 18 seconds listed",
-      Hub: "Required for full connected functionality",
-    },
-    evidence: [
-      "Buy from the exact official YS5001-BDOG page; no Amazon ASIN is represented here",
-      "Ignore Amazon ASIN B08TWTQJQF for this product because it currently identifies an unrelated shower valve",
-      "Confirm an existing compatible ball valve, handle sweep, mounting clearance, and controller cable route",
-      "Confirm hub inclusion separately; the base product page requires a hub for full functionality",
-      "Test device-to-device shutoff, app alerts, manual operation, battery status, and recovery under supervision",
-    ],
-    editorialSections: [
-      {
-        heading: "Why there is no Amazon button",
-        body: "Merchant identity is a release-critical fact. The Amazon ASIN previously associated with this category now identifies a different shower-valve product. This page links only to YoLink's exact official YS5001-BDOG kit rather than risking a commission link to the wrong item.",
-      },
-      {
-        heading: "Long range is the system advantage",
-        body: "The X3 controller uses YoLink's LoRa radio and supports device-to-device pairing. That makes it useful when a basement or detached utility area has weak Wi-Fi and the leak sensor should still command the valve locally. The open-air range claim is not an indoor guarantee.",
-      },
-      {
-        heading: "The controller and actuator are separate pieces",
-        body: "The battery-powered X3 controller can be mounted away from the valve and drives the Bulldog actuator through its cable. Plan both mounting surfaces, the cable path, service access, and the actuator's full movement before ordering.",
-      },
-      {
-        heading: "Who should skip it",
-        body: "Skip it when a cheaper Aqara retrofit fits an existing hub, when the valve is unhealthy or incompatible, or when an inline flow-monitoring system is the real goal. A plumber should assess any valve that cannot be moved smoothly by hand.",
-      },
-    ],
-    alternatives: [
-      "Choose Aqara Valve Controller T1 for a lower-cost Aqara Zigbee retrofit path.",
-      "Choose Moen Flo when flow, pressure, and whole-home anomaly monitoring justify an inline installation.",
-    ],
-    compareSlugs: ["aqara-valve-controller-t1", "moen-flo-900-001-smart-water-shutoff"],
-    sources: [
-      {
-        name: "YoLink X3 Valve Controller & Bulldog Valve Robot",
-        url: "https://shop.yosmart.com/products/ys5001-bdog",
-        note: "Official current merchant, exact kit contents, hub requirement, controller, actuator, radio, power, warranty, and installation details.",
-      },
-    ],
-    offers: [],
+  "site": "smarthome",
+  "slug": "yolink-x3-bulldog-valve-controller",
+  "seoTitle": "YoLink X3 Bulldog Guide: Valve Fit, D2D & Kit Contents",
+  "updatedAt": "November 1, 2026",
+  "evidenceMode": "official-spec",
+  "researchNote": "We have not installed this system. The specifications come from YoLink's official product page. A previously suspected Amazon ASIN resolves to an unrelated plumbing product, so this page intentionally has no purchase button until an exact Amazon listing is verified. November 1, 2026: selected US retailer identity and purchase conditions reviewed separately; no received-unit, installation, performance or reliability test.",
+  "name": "YoLink X3 Valve Controller & Bulldog Valve Robot",
+  "brand": "YoLink",
+  "category": "automation",
+  "image": "/images/affiliate/smarthome-water-valve-retrofit-editorial-realistic.webp",
+  "summary": "A separate X3 controller and Bulldog actuator system: compare valve-body bracket fit, manual clutch access, configured D2D control, power and the supplied kit contents.",
+  "verdict": "Use this as a manufacturer-documented comparison for a compatible existing ball valve and a planned local leak-response system. The exact Amazon kit is still unverified, so this page keeps a reference-only path. Resolve supplied revision and environmental limits before considering an exposed installation.",
+  "whyItMatters": "Leak sensors often sit in the home's worst radio locations. YoLink's long-range LoRa path and device-to-device pairing can keep a local shutoff rule useful when ordinary Wi-Fi coverage or cloud access is unreliable.",
+  "bestFor": "Long-range leak-to-shutoff automation on an existing ball valve",
+  "priceBand": "$$$",
+  "rating": 0,
+  "scores": [],
+  "pros": [
+    "Bolt-on Bulldog actuator avoids pipe cutting on a compatible ball valve",
+    "LoRa controller supports long-range placement and device-to-device pairing",
+    "Replaceable lithium battery and IP67 controller enclosure are officially listed"
+  ],
+  "cons": [
+    "Full app functionality requires a YoLink Hub or SpeakerHub",
+    "Official direct kit is materially more expensive than a simple Zigbee actuator",
+    "Bulldog mechanical fit, handle travel, controller mounting, and extension cable still require inspection"
+  ],
+  "specs": {
+    "Model": "Current maker page: YS5001S X3 + Bulldog; match supplied controller and guide",
+    "Radio": "YoLink LoRa",
+    "Power": "Replaceable 3.6V lithium battery in X3 controller",
+    "Controller rating": "Current webpage IP67 conflicts with the linked guide’s controller IP65 table; resolve exact revision before weather exposure",
+    "Range": "Current maker open-air claim up to 2,034 ft; no installed range measured",
+    "Pairing": "Device-to-device control supported",
+    "Hub": "Kit-only selection excludes hub; app access/remote alerts need a compatible hub",
+    "Valve fit": "Healthy compatible ball valve and secure bracket on its non-round valve body; actual handle/axis clearance required"
   },
+  "evidence": [
+    "Current manufacturer YS5001S kit and matching original linked guide reviewed November 1, 2026; exact Amazon option not established",
+    "Current controller webpage IP67 versus original controller table IP65 kept unresolved; no weather or ingress test",
+    "No valve installed, bracket mounted, D2D paired, battery replaced or flow-stop test performed"
+  ],
+  "editorialSections": [
+    {
+      "heading": "Keep the exact kit identity visible",
+      "body": "The current official range names a YS5001S controller with a Bulldog Valve Robot. Kit-only and a separate hub-plus-four-sensors configuration have different contents. No exact Amazon listing is verified here; the historical unrelated shower-valve ASIN remains excluded. Use the manufacturer reference to verify the exact kit and supplied documents before choosing a seller."
+    },
+    {
+      "heading": "The bracket fits the valve body, not any nearby pipe",
+      "body": "The linked original says the existing ball valve must move smoothly and close fully. It secures the bracket to a suitable non-round part of the valve body, with the motor and valve shafts aligned. An actuator cannot repair a seized, leaking or mechanically unsuitable valve. Have an appropriate professional assess the valve and installation; retain clutch and manual access."
+    },
+    {
+      "heading": "Separate local D2D from app access",
+      "body": "Configured compatible Control-D2D pairs can act without a hub or internet while the sensor and controller remain powered and within radio range. Pairing is separate from app automations and must reflect the intended closed-valve response. Follow the exact guide and verify real closure; this review did not pair a sensor or operate a valve."
+    },
+    {
+      "heading": "Resolve the supplied environmental rating",
+      "body": "The current product page calls the controller IP67, while its linked YS5001(S)-UC guide’s controller table says IP65. The actuator is separately listed IP65. Do not blend those into a system waterproof claim. The original forbids immersion and asks for overhead cover or an enclosure outdoors; confirm the actual revision and conditions before any exposed placement."
+    },
+    {
+      "heading": "Maintain the exact battery and the response plan",
+      "body": "The original specifies its matching battery assembly and handling procedure, rather than an arbitrary loose replacement cell. Keep the supplied instructions and a supervised test schedule, inspect mounting and cable connections, and preserve the manual shutoff. A reported valve state alone is not proof that water has stopped."
+    },
+    {
+      "heading": "Keep a suitable simpler route",
+      "body": "Keep an adequate manual or existing supported shutoff routine when it meets the task. Aqara T1 is a different indoor actuator with its own hub and valve-fit requirements; an inline monitor such as Flo is a separate plumbing installation. Neither is a drop-in substitute for this system."
+    }
+  ],
+  "alternatives": [
+    "Choose Aqara Valve Controller T1 for a lower-cost Aqara Zigbee retrofit path.",
+    "Choose Moen Flo when flow, pressure, and whole-home anomaly monitoring justify an inline installation."
+  ],
+  "compareSlugs": [
+    "aqara-valve-controller-t1",
+    "moen-flo-900-001-smart-water-shutoff"
+  ],
+  "sources": [
+    {
+      "name": "YoLink X3 Valve Controller & Bulldog Valve Robot",
+      "url": "https://shop.yosmart.com/products/ys5001-bdog",
+      "note": "Official current merchant, exact kit contents, hub requirement, controller, actuator, radio, power, warranty, and installation details."
+    },
+    {
+      "name": "Current X3 Bulldog maker kit",
+      "url": "https://shop.yosmart.com/products/yolink-x3-valve-controller-bulldog-kit",
+      "note": "Current YS5001S kit contents, hub exclusion, valve condition, separate controller/actuator ratings and configured D2D context."
+    },
+    {
+      "name": "Maker-linked X3 Bulldog original guide",
+      "url": "https://www.yosmart.com/help/docs/products/YS5001BDOG-UC/YS5001BDOG-UC_instruction.pdf",
+      "note": "June 11, 2026 guide, 53 physical pages. Relevant valve-body mounting, local pairing, specifications, battery and warning sections reviewed; not a unit-specific revision or physical installation test."
+    }
+  ],
+  "offers": [],
+  "purchaseCheck": "Reference-only: exact Amazon kit remains unverified. Match YS5001S/controller/actuator revision, kit contents, valve-body bracket fit, manual access and configured D2D path. Resolve the controller rating conflict before exposed use; keep a suitable manual or supported existing system."
+},
   {
-    site: "smarthome",
-    slug: "moen-flo-900-001-smart-water-shutoff",
-    asin: "B00C03D01Q",
-    amazonTitle: "Moen Flo 3/4-inch Smart Water Shut Off Valve, Model 900-001",
-    seoTitle: "Moen Flo 900-001 Guide: 3/4-Inch Fit and Install",
-    updatedAt,
-    evidenceMode: "official-spec",
-    researchNote:
-      "We have not installed or flow-tested this unit. This page uses Moen's current model, specification, installation, and power documentation plus the exact 3/4-inch Amazon identity. A licensed plumber and local code determine the final installation.",
-    name: "Moen Flo 3/4-Inch Smart Water Shutoff 900-001",
-    brand: "Moen",
-    category: "automation",
-    image: "/images/affiliate/smarthome-water-valve-inline-editorial-realistic.webp",
-    summary:
-      "An inline 3/4-inch smart water monitor and shutoff with flow, pressure, temperature, remote and automatic closure, exact pipe-size variants, power and Wi-Fi requirements, and professional-installation risks.",
-    verdict:
-      "Moen Flo 900-001 is the higher-commitment choice when whole-home flow monitoring and automatic inline shutoff are worth plumbing work, power, Wi-Fi, and setup. Do not buy the 3/4-inch ASIN until a plumber confirms the service-line size, straight-pipe space, manual-shutoff position, code, and fire-sprinkler layout.",
-    whyItMatters:
-      "Unlike a bolt-on actuator, Flo watches flow, pressure, and temperature and sits directly in the main water line. That can detect patterns that a floor sensor misses, but installation errors or the wrong pipe-size variant are much more consequential.",
-    bestFor: "Whole-home flow monitoring plus inline automatic shutoff",
-    priceBand: "$$$$",
-    rating: 4.4,
-    scores: [
-      { label: "Whole-home monitoring", value: 10 },
-      { label: "Automatic response", value: 9 },
-      { label: "Installation simplicity", value: 3 },
-    ],
-    pros: [
-      "Measures real-time flow, pressure, and temperature and supports automatic, remote, and manual shutoff",
-      "Official 3/4-inch model uses included NPT tailpieces",
-      "App modes, alerts, water-use goals, and manual health tests are documented",
-    ],
-    cons: [
-      "Requires inline plumbing work, nearby approved power, Wi-Fi, commissioning, and code review",
-      "3/4, 1, and 1-1/4-inch versions use different model numbers and Amazon ASINs",
-      "Must not be installed on fire-sprinkler or hot-water distribution lines",
-    ],
-    specs: {
-      ASIN: "B00C03D01Q",
-      Model: "900-001",
-      Size: "3/4 in with included NPT tailpieces",
-      Monitoring: "Flow, pressure, and temperature",
-      Shutoff: "Automatic, remote, and manual",
-      Network: "Wi-Fi with Moen app",
-      "Maximum pressure": "175 psi listed",
-      Power: "AC adapter and nearby approved outlet required",
-      Orientation: "Horizontal or vertical with flow direction observed",
-    },
-    evidence: [
-      "Confirm ASIN B00C03D01Q, model 900-001, and 3/4-inch size; 1-inch and 1-1/4-inch models are different products",
-      "Have a licensed plumber confirm service-line size, pipe material, straight-pipe space, unions, pressure, grounding, and code",
-      "Install after the manual shutoff and pressure regulator and before household branches under Moen guidance",
-      "Do not install on a fire-sprinkler or suppression line or hot-water distribution line",
-      "Confirm approved power reach, Wi-Fi signal, app setup, manual fallback, seller, stock, and return terms",
-    ],
-    editorialSections: [
-      {
-        heading: "Pipe size is an exact product identity",
-        body: "Model 900-001 is the 3/4-inch unit. Moen identifies 900-006 as 1 inch and 900-002 as 1-1/4 inch. These are not selectable labels on one universal valve. A plumber should measure and confirm the line before checkout.",
-      },
-      {
-        heading: "Inline monitoring changes what the system can see",
-        body: "Flo monitors flow, pressure, and temperature and can run leak-detection health tests. That adds whole-home anomaly detection beyond a floor sensor, while separate point sensors can still provide fast evidence at a washer, water heater, or sink.",
-      },
-      {
-        heading: "Installation location has safety boundaries",
-        body: "Moen says the unit belongs on the main supply after the manual shutoff and pressure-reducing valve, before the plumbing branches. It must not be installed on fire-sprinkler or suppression systems or hot-water distribution lines. Local code and complex shared or irrigation systems need professional review.",
-      },
-      {
-        heading: "Power and Wi-Fi are part of the plumbing plan",
-        body: "The AC adapter needs an approved nearby outlet and the app needs reliable Wi-Fi at the main line. Confirm cord routing, outdoor or damp-location requirements, network signal, and manual operation before the pipe is cut.",
-      },
-      {
-        heading: "Who should skip it",
-        body: "Skip it in a rental without approval, where installation space or power is missing, where fire-suppression plumbing cannot be isolated safely, or when a compatible bolt-on valve actuator solves the actual leak-response goal with less cost and disruption.",
-      },
-    ],
-    alternatives: [
-      "Choose Aqara Valve Controller T1 for a battery Zigbee retrofit on a compatible existing valve.",
-      "Choose YoLink X3 Bulldog for long-range local sensor-to-valve pairing without cutting pipe.",
-    ],
-    compareSlugs: ["aqara-valve-controller-t1", "yolink-x3-bulldog-valve-controller"],
-    sources: [
-      {
-        name: "Moen 900-001 specification sheet",
-        url: "https://assets.moen.com/shared/docs/product-specifications/900-001sp.pdf",
-        note: "Official model, size, monitoring, shutoff, pressure, app, and certification details.",
-      },
-      {
-        name: "Moen Flo installation guidance",
-        url: "https://solutions.moen.com/Smart_Water_Security_Products/Help_Center/Setup/Installing_the_Moen_Flo_Shutoff",
-        note: "Official main-line location and fire-suppression and hot-water exclusions.",
-      },
-      {
-        name: "Moen Flo size guide",
-        url: "https://solutions.moen.com/Moen_Flo_Shutoff/Get_to_know_your_Product/What_size_is_my_Moen_Flo_Shutoff%3F",
-        note: "Official mapping of 900-001, 900-006, and 900-002 to pipe sizes.",
-      },
-      {
-        name: "Amazon listing for ASIN B00C03D01Q",
-        url: "https://www.amazon.com/dp/B00C03D01Q",
-        note: "Exact 3/4-inch 900-001 marketplace identity; confirm seller, stock, delivery, and return terms.",
-      },
-    ],
-    offers: [
-      {
-        merchant: "Amazon US",
-        url: amazonUrl("B00C03D01Q"),
-        label: "Check Moen Flo 900-001 price on Amazon",
-        priceNote: "Confirm ASIN B00C03D01Q, model 900-001, 3/4-inch line fit, seller, delivery, and return terms.",
-      },
-    ],
+  "site": "smarthome",
+  "slug": "moen-flo-900-001-smart-water-shutoff",
+  "asin": "B00C03D01Q",
+  "amazonTitle": "Moen Flo 3/4-inch Smart Water Shut Off Valve, Model 900-001",
+  "seoTitle": "Moen Flo 900-001 Guide: 3/4-Inch Fit and Install",
+  "updatedAt": "November 1, 2026",
+  "evidenceMode": "official-spec",
+  "researchNote": "We have not installed or flow-tested this unit. This page uses Moen's current model, specification, installation, and power documentation plus the exact 3/4-inch Amazon identity. A licensed plumber and local code determine the final installation. November 1, 2026: selected US retailer identity and purchase conditions reviewed separately; no received-unit, installation, performance or reliability test.",
+  "name": "Moen Flo 3/4-Inch Smart Water Shutoff 900-001",
+  "brand": "Moen",
+  "category": "automation",
+  "image": "/images/affiliate/smarthome-water-valve-inline-editorial-realistic.webp",
+  "summary": "An inline 3/4-inch smart water monitor and shutoff with flow, pressure, temperature, remote and automatic closure, exact pipe-size variants, power and Wi-Fi requirements, and professional-installation risks.",
+  "verdict": "Moen Flo 900-001 is the higher-commitment choice when whole-home flow monitoring and automatic inline shutoff are worth plumbing work, power, Wi-Fi, and setup. Do not buy the 3/4-inch ASIN until a plumber confirms the service-line size, straight-pipe space, manual-shutoff position, code, and fire-sprinkler layout.",
+  "whyItMatters": "Unlike a bolt-on actuator, Flo watches flow, pressure, and temperature and sits directly in the main water line. That can detect patterns that a floor sensor misses, but installation errors or the wrong pipe-size variant are much more consequential.",
+  "bestFor": "Whole-home flow monitoring plus inline automatic shutoff",
+  "priceBand": "$$$$",
+  "rating": 0,
+  "scores": [],
+  "pros": [
+    "Measures real-time flow, pressure, and temperature and supports automatic, remote, and manual shutoff",
+    "Official 3/4-inch model uses included NPT tailpieces",
+    "App modes, alerts, water-use goals, and manual health tests are documented"
+  ],
+  "cons": [
+    "Requires inline plumbing work, nearby approved power, Wi-Fi, commissioning, and code review",
+    "3/4, 1, and 1-1/4-inch versions use different model numbers and Amazon ASINs",
+    "Must not be installed on fire-sprinkler or hot-water distribution lines"
+  ],
+  "specs": {
+    "ASIN": "B00C03D01Q",
+    "Model": "900-001",
+    "Size": "3/4 in with included NPT tailpieces",
+    "Monitoring": "Flow, pressure, and temperature",
+    "Shutoff": "Automatic, remote, and manual",
+    "Network": "2.4 GHz Wi-Fi and correct Moen account type; offline/Local Mode affects shutoff behavior",
+    "Maximum pressure": "Installer guide recommends maximum continuous 80 psi; have the actual pressure and required regulator assessed",
+    "Power": "AC adapter and nearby approved outlet required",
+    "Orientation": "Horizontal or vertical with flow direction observed"
   },
+  "evidence": [
+    "Confirm ASIN B00C03D01Q, model 900-001, and 3/4-inch size; 1-inch and 1-1/4-inch models are different products",
+    "Have a licensed plumber confirm service-line size, pipe material, straight-pipe space, unions, pressure, grounding, and code",
+    "Install after the manual shutoff and pressure regulator and before household branches under Moen guidance",
+    "Do not install on a fire-sprinkler or suppression line or hot-water distribution line",
+    "Confirm approved power reach, Wi-Fi signal, app setup, manual fallback, seller, stock, and return terms"
+  ],
+  "editorialSections": [
+    {
+      "heading": "Pipe size is an exact product identity",
+      "body": "Model 900-001 is the 3/4-inch unit. Moen identifies 900-006 as 1 inch and 900-002 as 1-1/4 inch. These are not selectable labels on one universal valve. A plumber should measure and confirm the line before checkout."
+    },
+    {
+      "heading": "Inline monitoring changes what the system can see",
+      "body": "Flo monitors flow, pressure, and temperature and can run leak-detection health tests. That adds whole-home anomaly detection beyond a floor sensor, while separate point sensors can still provide fast evidence at a washer, water heater, or sink."
+    },
+    {
+      "heading": "Installation location has safety boundaries",
+      "body": "Moen says the unit belongs on the main supply after the manual shutoff and pressure-reducing valve, before the plumbing branches. It must not be installed on fire-sprinkler or suppression systems or hot-water distribution lines. Local code and complex shared or irrigation systems need professional review."
+    },
+    {
+      "heading": "Power and Wi-Fi are part of the plumbing plan",
+      "body": "The AC adapter needs an approved nearby outlet and the app needs reliable Wi-Fi at the main line. Confirm cord routing, outdoor or damp-location requirements, network signal, and manual operation before the pipe is cut."
+    },
+    {
+      "heading": "Who should skip it",
+      "body": "Skip it in a rental without approval, where installation space or power is missing, where fire-suppression plumbing cannot be isolated safely, or when a compatible bolt-on valve actuator solves the actual leak-response goal with less cost and disruption."
+    },
+    {
+      "heading": "Commissioning and pressure are part of the purchase",
+      "body": "The linked INS11955A installer guide recommends maximum continuous pressure of 80 psi. That differs from quoting a broad component maximum as an installation target. Its normal single-home setup includes an initial health test and a 7–10-day learning period; a powered device left unconnected can enter Local Mode with frequent shutoffs. Settle account, internet and recovery behavior before the pipe is cut."
+    },
+    {
+      "heading": "Check the complete clearance and power arrangement",
+      "body": "Use the exact 900-001 installation drawing, including straight inlet/outlet runs and clearance above, below and beside the device. The guide keeps the power supply off the ground, specifies approved low-voltage extension arrangements and requires a weatherproof receptacle enclosure for applicable outdoor installations. Do not use a mains extension cord to improvise reach. Retain the installation spacer and have the plumber confirm flow direction, sealing and manual access."
+    }
+  ],
+  "alternatives": [
+    "Choose Aqara Valve Controller T1 for a battery Zigbee retrofit on a compatible existing valve.",
+    "Choose YoLink X3 Bulldog for long-range local sensor-to-valve pairing without cutting pipe."
+  ],
+  "compareSlugs": [
+    "aqara-valve-controller-t1",
+    "yolink-x3-bulldog-valve-controller"
+  ],
+  "sources": [
+    {
+      "name": "Moen 900-001 specification sheet",
+      "url": "https://assets.moen.com/shared/docs/product-specifications/900-001sp.pdf",
+      "note": "Official model, size, monitoring, shutoff, pressure, app, and certification details."
+    },
+    {
+      "name": "Moen Flo installation guidance",
+      "url": "https://solutions.moen.com/Smart_Water_Security_Products/Help_Center/Setup/Installing_the_Moen_Flo_Shutoff",
+      "note": "Official main-line location and fire-suppression and hot-water exclusions."
+    },
+    {
+      "name": "Moen Flo size guide",
+      "url": "https://solutions.moen.com/Moen_Flo_Shutoff/Get_to_know_your_Product/What_size_is_my_Moen_Flo_Shutoff%3F",
+      "note": "Official mapping of 900-001, 900-006, and 900-002 to pipe sizes."
+    },
+    {
+      "name": "Selected US retailer identity, November 1, 2026",
+      "url": "https://www.amazon.com/dp/B00C03D01Q",
+      "note": "Exact model and selected package observed for New York 10001. Seller, condition, delivered total and current returns remain purchase-time checks; this is not a received-unit approval."
+    },
+    {
+      "name": "Flo original installation guide INS11955A",
+      "url": "https://m.media-amazon.com/images/I/C1UNLrFONrL.pdf",
+      "note": "12 physical pages; English installation requirements, 80 psi continuous recommendation, mains/approved-extension limits, pipe/clearance diagrams and commissioning/Local Mode notes reviewed. Not a plumbing or pressure test."
+    }
+  ],
+  "offers": [
+    {
+      "merchant": "Amazon US",
+      "url": "https://www.amazon.com/dp/B00C03D01Q?tag=madasmart-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+      "label": "Check Moen Flo 3/4-Inch Smart Water Shutoff 900-001 on Amazon",
+      "priceNote": "Confirm the exact model and package, current condition, seller, delivered total and return terms; read the model-specific fit check above."
+    }
+  ],
+  "purchaseCheck": "Match 900-001, the 3/4-inch variant. Have a plumber confirm line size, pressure, exact clearance, fire-system separation and code. Include approved nearby power, 2.4 GHz Wi-Fi, correct account, learning period and manual fallback; never treat 175 psi as a continuous installation target."
+},
 ];
 
 export const smartHomeWaterShutoffRoundups: Roundup[] = [

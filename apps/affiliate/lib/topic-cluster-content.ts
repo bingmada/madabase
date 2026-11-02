@@ -27,22 +27,44 @@ export const topicClusterGuides: Guide[] = [
     site: "baby",
     slug: "babybjorn-harmony-newborn-fit-checklist",
     title: "BabyBjörn Harmony Newborn Fit Checklist",
-    dek: "Check minimum size, inward-facing setup, leg position, head support, airway visibility, and caregiver adjustment.",
+    dek: "Resolve Harmony’s conflicting newborn minimums, then check the matching unit’s inward setup, leg straps, head support, airway and each caregiver’s adjustments.",
     category: "travel",
     updatedAt,
     image: "/images/affiliate/baby-carrier-realistic.webp",
     imageAlt: "Structured mesh baby carrier positioned for a newborn airway and fit checklist",
     relatedProducts: ["babybjorn-carrier-harmony"],
     relatedRoundups: ["babybjorn-harmony-vs-ergobaby-omni-breeze", "best-baby-carriers-and-sleep-routine-upgrades"],
+    relatedGuides: ["ergobaby-omni-breeze-positions-by-age", "ergobaby-omni-breeze-newborn-fit-checklist"],
+    relatedGuidePolicy: "explicit",
     sources: [
-      { name: "BabyBjörn Carrier Harmony", url: "https://www.babybjorn.com/products/baby-carriers/baby-carrier-harmony/", note: "Official size, position, and adjustment guidance." },
-      { name: "BabyBjörn Harmony manual", url: "https://www.babybjorn.com/customer-service/manuals/", note: "Official manuals and model-specific instructions." },
+      {
+        "name": "BabyBjörn Carrier Harmony",
+        "url": "https://www.babybjorn.com/products/baby-carriers/baby-carrier-harmony/",
+        "note": "Official size, position, and adjustment guidance."
+      },
+      {
+        "name": "BabyBjörn Harmony US manual",
+        "url": "https://a.storyblok.com/f/187315/x/1267c722e3/bc-harmony-om-us-v4-202104-lr.pdf",
+        "note": "English pages 4–11 and diagrams read. Chart and warning minimums differ within this document; confirm instructions matching the exact unit rather than selecting the lower figure."
+      }
     ],
     sections: [
-      { heading: "Confirm the stated minimums", body: "Use the carrier only after the baby meets the listed weight and length requirements. A newborn begins front inward; later carry positions have separate developmental limits." },
-      { heading: "Set the newborn height position", body: "Follow the Harmony manual for zipper, head-support, and leg-position settings. Do not reuse the configuration shown for an older baby." },
-      { heading: "Keep the airway visible", body: "The baby's face should remain visible, with the chin clear of the chest and the head supported according to the instructions. Reposition immediately if the baby slumps or the fabric covers the face." },
-      { heading: "Adjust each caregiver separately", body: "Set the waist belt, back support, and shoulder straps for the current wearer. Complete the first short carry with another adult nearby and recheck the fit after moving." },
+      {
+        "heading": "Resolve the manual and label conflict first",
+        "body": "The currently linked US manual is internally inconsistent: its size chart starts at 7 lb and 21 inches, while its fall/suffocation warning starts at 8 lb. Leg-strap instructions also differ between under 10 lb and 7–11 lb. The current product page’s 7 lb claim does not resolve those warnings. Confirm the instructions for the exact unit with BabyBjörn before use; do not select the lower number or assume passing 8 lb resolves the setup conflict."
+      },
+      {
+        "heading": "Use the newborn inward configuration from the matching instructions",
+        "body": "The manual separates newborn and later-baby settings, including the height zipper, leg position and head support. Follow that complete sequence and engage the required fasteners; an older baby’s photograph is not a newborn setup. Check the unit label, regional instructions and minimum length as well as weight. Front outward and back carry have separate conditions and are not options for a newborn."
+      },
+      {
+        "heading": "Recheck the face, support and position while carrying",
+        "body": "Keep the baby upright with the face visible, nose and mouth unobstructed and chin clear of the chest. Apply the matching instructions’ head and neck support and leg-strap rules. Stop and reposition if the baby slumps or fabric obstructs the face. A correctly fastened carrier still needs ongoing attention; mesh does not establish airway safety or a safe temperature."
+      },
+      {
+        "heading": "Check each wearer and keep a fallback",
+        "body": "Adjust the waist belt, back support and shoulder path for the adult actually carrying. Learn the sequence with help and the child supported, then check access to every buckle and the resulting position before a short carry. Pause when the instruction version or fit remains uncertain, and use another suitable carrying plan. Before buying, read the seller’s opened-item return conditions rather than assuming a wearing trial is returnable."
+      }
     ],
   },
   {

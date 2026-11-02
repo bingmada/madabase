@@ -316,7 +316,7 @@ const productFamilies: ProductFamily[] = [
   { site: "baby", slug: "automatic-bottle-washers", name: "Automatic bottle washers", category: "feeding", alternative: "manual washing plus sterilizer-dryers" },
   { site: "baby", slug: "changing-pads", name: "Changing pads", category: "feeding", alternative: "portable changing mats" },
   { site: "baby", slug: "structured-diaper-bags", name: "Structured diaper bags", category: "travel", alternative: "ordinary backpacks with organizers" },
-  { site: "baby", slug: "infant-bath-tubs", name: "Infant bath tubs", category: "feeding", alternative: "sink inserts or supported bathing" },
+  { site: "baby", slug: "infant-bath-tubs", name: "Infant bath tubs", category: "gear", alternative: "sink inserts or supported bathing" },
   { site: "baby", slug: "hardware-mounted-baby-gates", name: "Hardware-mounted baby gates", category: "sleep", alternative: "pressure-mounted gates" },
   { site: "baby", slug: "nursery-glider-chairs", name: "Nursery glider chairs", category: "sleep", alternative: "supportive stationary chairs" },
   { site: "baby", slug: "nursery-humidifiers", name: "Nursery humidifiers", category: "sleep", alternative: "whole-home humidity control" },

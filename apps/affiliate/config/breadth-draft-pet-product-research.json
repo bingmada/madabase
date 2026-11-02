@@ -19,17 +19,24 @@
       "category": "comfort",
       "alternative": "carrying supplies separately and keeping the dog unloaded",
       "asin": "B0DKJN4XL6",
-      "title": "ONETIGRIS Dog Backpack for Medium & Large Dogs, Mammoth Nylon Dog Pack Tactical Backpack Harness with Side Pockets for Hiking Walking Training Running (Pink, Large)",
+      "title": "OneTigris MAMMOTH Pink Large dog pack",
       "brand": "ONETIGRIS",
       "detailUrl": "https://www.amazon.com/dp/B0DKJN4XL6",
-      "verifiedAt": "2026-08-12T12:40:39.683Z",
+      "verifiedAt": "2026-11-01T02:32:57.225Z",
       "searchRank": 3,
       "sponsoredSearchResult": false,
       "relevanceScore": 13.92,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "reverse-merchant34/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "RetailLarge neck21–31.5/chest29–36in; confirm actual revision near sizing limits.",
+          "Pouch volume is not a load, lifting or heat-safety test."
+        ]
       }
     },
     {
@@ -39,17 +46,24 @@
       "category": "comfort",
       "alternative": "a correctly sized bike trailer",
       "asin": "B089HT2RDW",
-      "title": "K&H Dog Bike Basket, Travel Bicycle Basket for Pets, Front Mount, 16x12x10 | Cat & Small Dog Carrier for Bike, Bicycle Basket with Safety Leash, Soft Fleece Washable Liner, Heavy Duty Metal Frame",
+      "title": "K&H Large front-mount bike basket",
       "brand": "K&H Pet Products",
       "detailUrl": "https://www.amazon.com/dp/B089HT2RDW",
-      "verifiedAt": "2026-08-12T12:36:46.617Z",
+      "verifiedAt": "2026-11-01T02:33:30.849Z",
       "searchRank": 2,
       "sponsoredSearchResult": false,
       "relevanceScore": 15.46,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "reverse-merchant34/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "16×12×10in nominal exterior is not confirmed usable pet space.",
+          "No installed mount, steering or containment test; exact bicycle compatibility must be checked."
+        ]
       }
     },
     {
@@ -59,17 +73,25 @@
       "category": "comfort",
       "alternative": "walking routes or a vehicle carrier",
       "asin": "B0BW2FKJF1",
-      "title": "Burley Tail Wagon | Lightweight Dog Bike Trailer with Mesh Windows, Removable Floor & Low-Clearance Entry",
+      "title": "Burley Tail Wagon 947108 bike trailer",
       "brand": "Burley Design",
       "detailUrl": "https://www.amazon.com/dp/B0BW2FKJF1",
-      "verifiedAt": "2026-08-12T12:35:55.632Z",
+      "verifiedAt": "2026-11-01T02:33:36.251Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 15.5,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "reverse-merchant34/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "Maker page70lb prose versus75lb table/manual; confirm near boundary.",
+          "Retail19.1lb versusmaker21lb unladen weight not reconciled.",
+          "No installed bicycle/axle fit or physical containment test."
+        ]
       }
     },
     {
@@ -79,17 +101,24 @@
       "category": "comfort",
       "alternative": "a conventional hand-held leash",
       "asin": "B0F6WBB2WR",
-      "title": "Hands Free Dog Leash with Pouch,Waist Leash, Dog Walking,25-120 lbs | Retractable Leashes with Dual Padded Handles, Adjustable Reflective Belt for Small, Medium, Large Dogs, Running, Jogging",
+      "title": "VavoPaw Black/Blue waist leash with pouch",
       "brand": "VavoPaw",
       "detailUrl": "https://www.amazon.com/dp/B0F6WBB2WR",
-      "verifiedAt": "2026-08-12T12:39:08.836Z",
+      "verifiedAt": "2026-11-01T02:33:42.157Z",
       "searchRank": 4,
       "sponsoredSearchResult": false,
       "relevanceScore": 16.88,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "reverse-merchant34/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "Retail retractable wording describeselasticextension; no reel established.",
+          "No injury prevention, balance, range-of-dog-weight or visibility performance test."
+        ]
       }
     },
     {
@@ -99,17 +128,24 @@
       "category": "comfort",
       "alternative": "a stable pet ramp or restricting furniture access",
       "asin": "B0H1YG58ZP",
-      "title": "Pet Gear Easy Step II Pet Stairs, Wheat, 2 Step | For Cats/Dogs up to 75 Pounds, Portable, Removable Washable Carpet Tread, No Tools Required",
+      "title": "Pet Gear Easy Step II Wheat 9710WT",
       "brand": "Pet Gear",
       "detailUrl": "https://www.amazon.com/dp/B0H1YG58ZP",
-      "verifiedAt": "2026-08-12T12:35:14.410Z",
+      "verifiedAt": "2026-11-01T02:34:23.902Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 14.5,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "reverse-merchant34/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "Maker75lb limit not a mobility or installed-load test.",
+          "Usable top-landing gap depends on actual furniture and assembly."
+        ]
       }
     },
     {
@@ -119,17 +155,25 @@
       "category": "comfort",
       "alternative": "a standard harness with separate visibility lights",
       "asin": "B0DXRTZ3X4",
-      "title": "Ruffwear, Front Range Dog Harness and Leash, Reflective and Padded, No Pull Harness and 5-ft Leash with Padded Handle for Walking, Blue Pool & Reef Fish",
+      "title": "Ruffwear Front Range Blue Pool harness/leash bundle",
       "brand": "Ruffwear",
       "detailUrl": "https://www.amazon.com/dp/B0DXRTZ3X4",
-      "verifiedAt": "2026-08-12T12:39:56.317Z",
+      "verifiedAt": "2026-11-01T02:34:26.742Z",
       "searchRank": 2,
       "sponsoredSearchResult": false,
       "relevanceScore": 10.627,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "reverse-merchant34/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "Harness size not visible/established for this bundle.",
+          "30dayreturn label visible but not expanded; do not transfer FREE summary from otherproducts.",
+          "No independent pulling, visibility, escape or crash test."
+        ]
       }
     },
     {
@@ -139,10 +183,10 @@
       "category": "home-care",
       "alternative": "small sealed bags removed daily",
       "asin": "B0C7LRR4W4",
-      "title": "Litter Genie XL+ Pail with 24 ft Jumbo Refill, Ideal for Multi-Cat Homes",
+      "title": "Litter Genie XL+ Silver pail with Jumbo refill",
       "brand": "Litter Genie",
       "detailUrl": "https://www.amazon.com/dp/B0C7LRR4W4",
-      "verifiedAt": "2026-08-13T02:48:56.528Z",
+      "verifiedAt": "2026-11-01T02:34:31.998Z",
       "searchRank": 2,
       "sponsoredSearchResult": false,
       "relevanceScore": 15,
@@ -151,8 +195,15 @@
         "directStatus": 200,
         "asinMatched": true,
         "unavailable": false,
-        "verificationChannel": "interactive Amazon search and detail page",
-        "preferredBrandMatched": true
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "preferredBrandMatched": true,
+        "observationFile": "reverse-merchant34/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "Retail24ft versusmaker28ft currentbundle.",
+          "Retail9.35cube conflicts with22inassembledheight; confirmactualusableplacement.",
+          "No fixed odor-free/days-to-empty result or universalrefillcompatibility."
+        ]
       }
     },
     {
@@ -162,10 +213,10 @@
       "category": "feeding",
       "alternative": "stainless fountains or refreshed bowls",
       "asin": "B0GVYM8MHM",
-      "title": "PetSafe Creekside Ceramic Pet Fountain, 60 Oz, Extra Filters",
+      "title": "PetSafe Creekside 60 oz fountain with extra filters",
       "brand": "PetSafe",
       "detailUrl": "https://www.amazon.com/dp/B0GVYM8MHM",
-      "verifiedAt": "2026-08-13T02:49:05.282Z",
+      "verifiedAt": "2026-11-01T02:35:22.424Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 15,
@@ -174,8 +225,15 @@
         "directStatus": 200,
         "asinMatched": true,
         "unavailable": false,
-        "verificationChannel": "interactive Amazon search and detail page",
-        "preferredBrandMatched": true
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "preferredBrandMatched": true,
+        "observationFile": "reverse-merchant34/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "BasePWW00-17097 versusretailBND-186: exactbonuscontentsretailobservation only.",
+          "Includedbasefilterplus12carbon/2foamextras; not12/2total withoutcheckingpackage.",
+          "No kidney-health,sterilewater,noise or unattendeddurationresult."
+        ]
       }
     },
     {
@@ -185,10 +243,10 @@
       "category": "feeding",
       "alternative": "lightweight rigid bowls",
       "asin": "B07VT1468W",
-      "title": "Dog Bowl Pet Collapsible Bowls, 2 Pack for Cats Dogs, Portable Pet Feeding Watering Dish for Walking Parking Traveling with 2 Carabiners (Small, Blue+Green)",
+      "title": "SLSON Small Blue/Green two-bowl set",
       "brand": "SLSON",
       "detailUrl": "https://www.amazon.com/dp/B07VT1468W",
-      "verifiedAt": "2026-08-13T02:49:14.796Z",
+      "verifiedAt": "2026-11-01T02:35:31.471Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 10,
@@ -197,8 +255,14 @@
         "directStatus": 200,
         "asinMatched": true,
         "unavailable": false,
-        "verificationChannel": "interactive Amazon search and detail page",
-        "preferredBrandMatched": false
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "preferredBrandMatched": false,
+        "observationFile": "reverse-merchant34/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "Materiallistedplastic; do notlabelsilicone.",
+          "Small12fl oz not hydration duration orappropriatebowlfit; carabinersnotrestraint-rated."
+        ]
       }
     },
     {
@@ -208,10 +272,10 @@
       "category": "home-care",
       "alternative": "large open litter boxes scooped manually",
       "asin": "B0H3PQ8Q27",
-      "title": "Automatic Litter Box, FEELNEEDY Self Cleaning Litter Box, Odor Control Robot, Cat Ears Design, 65L APP Real-Time Monitor, Cat Litter-Boxs for Multiple Cats, Safety Sensors, with 1 Trash Bag",
+      "title": "FEELNEEDY S20-A enclosed litter box",
       "brand": "FEELNEEDY",
       "detailUrl": "https://www.amazon.com/dp/B0H3PQ8Q27",
-      "verifiedAt": "2026-08-13T02:49:29.235Z",
+      "verifiedAt": "2026-11-01T02:35:39.867Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 10,
@@ -220,8 +284,16 @@
         "directStatus": 200,
         "asinMatched": true,
         "unavailable": false,
-        "verificationChannel": "interactive Amazon search and detail page",
-        "preferredBrandMatched": false
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "preferredBrandMatched": false,
+        "observationFile": "reverse-merchant34/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "S20-A retaildimensionsconflict;65Lnotusablefloor.",
+          "Shared4073B/S20-A documentation includesanotherbody; exactUSrevisionmustmatch.",
+          "Manufacturerrequirescat>1kgANDshoulderheight>15cm; no physicalsensor/obstructiontest.",
+          "No medical diagnosis,odor-free,zero-maintenanceor10–14dayunattendedclaim."
+        ]
       }
     },
     {
@@ -230,21 +302,36 @@
       "familyName": "Dog boots",
       "category": "comfort",
       "alternative": "route and timing changes that avoid hot, icy, or treated surfaces",
-      "asin": "B0GG9ZZCBC",
-      "title": "Dog Shoes for Hot Pavement - Comfortable Paw Protection for Medium & Large Dogs, Adjustable Strap & Non-Slip, Easy-Clean, Outdoor Sports Boots, Dog Booties for Summer Rain (Green, M)",
-      "brand": "HERTIENDO",
-      "detailUrl": "https://www.amazon.com/dp/B0GG9ZZCBC",
-      "verifiedAt": "2026-08-13T02:49:42.012Z",
-      "searchRank": 1,
+      "asin": "B01MR5M5YQ",
+      "title": "Ruffwear Grip Trex Black 2.25 in pair",
+      "brand": "Ruffwear",
+      "detailUrl": "https://www.amazon.com/dp/B01MR5M5YQ",
+      "verifiedAt": "2026-11-01T02:39:24.133Z",
+      "searchRank": null,
       "sponsoredSearchResult": false,
       "relevanceScore": 10,
-      "anchorConfidence": "exact-fit",
+      "anchorConfidence": "explicit-task-matched-alternative",
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
         "unavailable": false,
-        "verificationChannel": "interactive Amazon search and detail page",
-        "preferredBrandMatched": false
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "preferredBrandMatched": false,
+        "observationFile": "reverse-merchant34/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "OriginalB0GG9ZZCBCpage_not_found,notEOLor ordinaryout-of-stockproof.",
+          "AlternativedifferentASIN,color,size,brand;2bootsdespiteretailUnitCount1field.",
+          "No measuredheat,grip,punctureoruniversalfitguarantee."
+        ]
+      },
+      "previousSelection": {
+        "asin": "B0GG9ZZCBC",
+        "title": "Dog Shoes for Hot Pavement - Comfortable Paw Protection for Medium & Large Dogs, Adjustable Strap & Non-Slip, Easy-Clean, Outdoor Sports Boots, Dog Booties for Summer Rain (Green, M)",
+        "detailUrl": "https://www.amazon.com/dp/B0GG9ZZCBC",
+        "observedOn": "2026-11-01",
+        "status": "page_not_found",
+        "note": "Original page returned Page Not Found; not proof of ordinary out-of-stock inventory or discontinuation. New named option is a different product."
       }
     },
     {
@@ -254,10 +341,10 @@
       "category": "comfort",
       "alternative": "shade, water, cooler schedules, and indoor rest",
       "asin": "B0C2HN8D3G",
-      "title": "Back on Track Cool on Track Cooling Dog Bandana (X-Large)",
+      "title": "Back on Track Cool on Track X-Large bandana",
       "brand": "Back on Track",
       "detailUrl": "https://www.amazon.com/dp/B0C2HN8D3G",
-      "verifiedAt": "2026-08-13T02:49:51.089Z",
+      "verifiedAt": "2026-11-01T02:36:56.427Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 10,
@@ -266,8 +353,14 @@
         "directStatus": 200,
         "asinMatched": true,
         "unavailable": false,
-        "verificationChannel": "interactive Amazon search and detail page",
-        "preferredBrandMatched": false
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "preferredBrandMatched": false,
+        "observationFile": "reverse-merchant34/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "TitleonebandanaversusUnitCount4; resolve actualpackage.",
+          "No fixedtemperaturedrop,durationorheatstrokeprotectiontested."
+        ]
       }
     },
     {
@@ -277,10 +370,10 @@
       "category": "home-care",
       "alternative": "a shallow basin and soft towel",
       "asin": "B0GDV9K26M",
-      "title": "Electric Dog Paw Cleaner for Dogs，2 Speeds Automatic Dog Foot Paw Washer for Medium Large Cat Dog Pet",
+      "title": "KUEIOX Grey electric paw washer",
       "brand": "KUEIOX",
       "detailUrl": "https://www.amazon.com/dp/B0GDV9K26M",
-      "verifiedAt": "2026-08-13T02:50:11.342Z",
+      "verifiedAt": "2026-11-01T02:37:03.319Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 10,
@@ -289,8 +382,15 @@
         "directStatus": 200,
         "asinMatched": true,
         "unavailable": false,
-        "verificationChannel": "interactive Amazon search and detail page",
-        "preferredBrandMatched": false
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "preferredBrandMatched": false,
+        "observationFile": "reverse-merchant34/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "Exactcharginginput,adapterandwaterprotectionnotestablished.",
+          "Retail3.2inopeningneedsusablefitconfirmation; noforceentry.",
+          "Noone-minute,skin-health,comfortorbattery-runtimetest."
+        ]
       }
     },
     {
@@ -300,10 +400,10 @@
       "category": "comfort",
       "alternative": "shorter outings and towel drying",
       "asin": "B0CPYNF77V",
-      "title": "Spark Paws Dog Raincoat - Waterproof Rain Jacket w/Hood, Full Coverage",
+      "title": "Spark Paws Breatheshield raincoat, Mustard Yellow, 3XL",
       "brand": "Spark Paws",
       "detailUrl": "https://www.amazon.com/dp/B0CPYNF77V",
-      "verifiedAt": "2026-08-13T02:50:24.790Z",
+      "verifiedAt": "2026-11-01T01:55:08.066Z",
       "searchRank": 2,
       "sponsoredSearchResult": false,
       "relevanceScore": 10,
@@ -312,8 +412,15 @@
         "directStatus": 200,
         "asinMatched": true,
         "unavailable": false,
-        "verificationChannel": "interactive Amazon search and detail page",
-        "preferredBrandMatched": false
+        "verificationChannel": "Visible Amazon US selected variant and offer; New York 10001",
+        "preferredBrandMatched": false,
+        "observationFile": "reverse-merchant35/retail-raw.json",
+        "suitability": "Conditional exact selection; unresolved details are explicit in the buying guide",
+        "issues": [
+          "Exact selected 3XL and 01 Mustard Yellow must be named; generic full-coverage title does not fit every dog.",
+          "Retail model DR233026 vs part number DR233021 differs; do not resolve garment identity by those fields alone.",
+          "Waterproof/breathable/reflective claims are manufacturer/retailer descriptions, not measured protection."
+        ]
       }
     },
     {
@@ -323,10 +430,10 @@
       "category": "feeding",
       "alternative": "stable floor bowls selected with veterinary guidance when needed",
       "asin": "B0799Z9NH3",
-      "title": "Neater Feeder Deluxe Mess-Proof Elevated Dog Bowls for Large Dogs (40+ lbs), 2 Height Adjustable (14.5” & 17.5”) No-Spill Raised Dog Bowl Stand, Stainless Steel Food Bowl Set, Made in USA, Black",
+      "title": "Neater Feeder Deluxe Large Midnight Black with leg extensions (100-235-LE)",
       "brand": "Neater Pet Brands",
       "detailUrl": "https://www.amazon.com/dp/B0799Z9NH3",
-      "verifiedAt": "2026-08-13T02:50:31.902Z",
+      "verifiedAt": "2026-11-01T01:55:29.411Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 15,
@@ -335,8 +442,15 @@
         "directStatus": 200,
         "asinMatched": true,
         "unavailable": false,
-        "verificationChannel": "interactive Amazon search and detail page",
-        "preferredBrandMatched": true
+        "verificationChannel": "Visible Amazon US selected variant and offer; New York 10001",
+        "preferredBrandMatched": true,
+        "observationFile": "reverse-merchant35/retail-raw.json",
+        "suitability": "Conditional exact selection; unresolved details are explicit in the buying guide",
+        "issues": [
+          "100-235-LE, UPC814516021103, Large+Standard Bowl; included leg extensions, 7-cup food and9-cup water bowls.",
+          "14.5/17.5in overall guard height differs from8/11in feeding rim height; manufacturer confirms.",
+          "Retail digestion/joint-pain claims not adopted. ACVS describes elevated feeding as a suggested GDV risk association, not a bloat-prevention measure."
+        ]
       }
     },
     {
@@ -346,10 +460,10 @@
       "category": "feeding",
       "alternative": "several measured bowls refreshed on schedule",
       "asin": "B0GRJQMN32",
-      "title": "Petmate Replendish Gravity Dog Waterer, 0.5 Gal, Microban, 2 Filters",
+      "title": "Petmate Replendish 0.5 gal waterer with 2 extra filters, Pearl Smoke Gray",
       "brand": "Petmate",
       "detailUrl": "https://www.amazon.com/dp/B0GRJQMN32",
-      "verifiedAt": "2026-08-13T02:50:49.076Z",
+      "verifiedAt": "2026-11-01T01:55:36.391Z",
       "searchRank": 2,
       "sponsoredSearchResult": false,
       "relevanceScore": 10,
@@ -358,8 +472,15 @@
         "directStatus": 200,
         "asinMatched": true,
         "unavailable": false,
-        "verificationChannel": "interactive Amazon search and detail page",
-        "preferredBrandMatched": false
+        "verificationChannel": "Visible Amazon US selected variant and offer; New York 10001",
+        "preferredBrandMatched": false,
+        "observationFile": "reverse-merchant35/retail-raw.json",
+        "suitability": "Conditional exact selection; unresolved details are explicit in the buying guide",
+        "issues": [
+          "Listing44308 / UPC029695443084 includes waterer and3total filters (2extra), not just2total.",
+          "Current maker half-gallon page SKU24540 is base product, not proof of exact retail bonus kit.",
+          "Microban is a product-surface claim, not sterile or purified drinking water; no unattended-days promise."
+        ]
       }
     },
     {
@@ -369,10 +490,10 @@
       "category": "comfort",
       "alternative": "a well-fitted standard harness plus training",
       "asin": "B07BGHY8Z6",
-      "title": "2 Hounds Design Freedom No Pull Dog Harness, 1 inch XL, Rose",
+      "title": "2 Hounds Design Freedom harness only, Rose, 1 in XL",
       "brand": "2 Hounds Design",
       "detailUrl": "https://www.amazon.com/dp/B07BGHY8Z6",
-      "verifiedAt": "2026-08-13T02:51:13.082Z",
+      "verifiedAt": "2026-11-01T01:56:24.853Z",
       "searchRank": 2,
       "sponsoredSearchResult": true,
       "relevanceScore": 15,
@@ -381,8 +502,15 @@
         "directStatus": 200,
         "asinMatched": true,
         "unavailable": false,
-        "verificationChannel": "interactive Amazon search and detail page",
-        "preferredBrandMatched": true
+        "verificationChannel": "Visible Amazon US selected variant and offer; New York 10001",
+        "preferredBrandMatched": true,
+        "observationFile": "reverse-merchant35/retail-raw.json",
+        "suitability": "Conditional exact selection; unresolved details are explicit in the buying guide",
+        "issues": [
+          "Harness ONLY; double-connection leash pictured in manual is separate.",
+          "Current retail XL32-38in vs manufacturer current XL32-36in. Do not promise fit at36-38in without maker confirmation.",
+          "No escape-proof, immediate pull-elimination or car-crash protection claim."
+        ]
       }
     },
     {
@@ -392,10 +520,10 @@
       "category": "feeding",
       "alternative": "multiple frequently refreshed water bowls",
       "asin": "B0C8MHHVPC",
-      "title": "Cat Water Fountain Stainless Steel: 108oz/3.2L Cat Fountain for Drinking",
+      "title": "Neareal 3.2 L fountain with 4 filters and 4 sponges, listing HY-F1",
       "brand": "Neareal",
       "detailUrl": "https://www.amazon.com/dp/B0C8MHHVPC",
-      "verifiedAt": "2026-08-13T02:52:14.076Z",
+      "verifiedAt": "2026-11-01T01:56:29.549Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 10,
@@ -404,8 +532,16 @@
         "directStatus": 200,
         "asinMatched": true,
         "unavailable": false,
-        "verificationChannel": "interactive Amazon search and detail page",
-        "preferredBrandMatched": false
+        "verificationChannel": "Visible Amazon US selected variant and offer; New York 10001",
+        "preferredBrandMatched": false,
+        "observationFile": "reverse-merchant35/retail-raw.json",
+        "suitability": "Conditional exact selection; unresolved details are explicit in the buying guide",
+        "issues": [
+          "Listing HY-F1; served six-page Neareal manual says HY001. Exact revision and care applicability unresolved.",
+          "Manual states5V1A, filter/sponge replacement1-2weeks and pump cleaning; do not transfer exact electrical/replacement limits to HY-F1 without revision match.",
+          "Manual warranty text mentions Dianu; no blanket18month warranty promise.",
+          "Retail 7days away,1x1x1in package and6.8lb capacity fields not adopted; body dimensions9.17x7.56x6.77in and3.2L are attributed listing claims."
+        ]
       }
     },
     {
@@ -415,10 +551,10 @@
       "category": "home-care",
       "alternative": "an open box in a quiet ventilated location",
       "asin": "B0D62ML81W",
-      "title": "Halitaa Cat Litter Box Enclosure, Hidden Litter Box with Scratch Pad",
+      "title": "Halitaa White litter-box enclosure with scratch pad, K1A013BS0M",
       "brand": "Halitaa",
       "detailUrl": "https://www.amazon.com/dp/B0D62ML81W",
-      "verifiedAt": "2026-08-13T02:52:25.243Z",
+      "verifiedAt": "2026-11-01T01:57:18.687Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 10,
@@ -427,8 +563,15 @@
         "directStatus": 200,
         "asinMatched": true,
         "unavailable": false,
-        "verificationChannel": "interactive Amazon search and detail page",
-        "preferredBrandMatched": false
+        "verificationChannel": "Visible Amazon US selected variant and offer; New York 10001",
+        "preferredBrandMatched": false,
+        "observationFile": "reverse-merchant35/retail-raw.json",
+        "suitability": "Conditional exact selection; unresolved details are explicit in the buying guide",
+        "issues": [
+          "White31x17x28.5in nominal exterior includes upper storage; no usable inner tray space established.",
+          "No matching independent maker assembly sheet found; do not substitute Unipaws instructions.",
+          "Do not promise odor-free enclosure or universal feline preference."
+        ]
       }
     },
     {
@@ -438,10 +581,10 @@
       "category": "comfort",
       "alternative": "a stable cat tree positioned near the window",
       "asin": "B09ZCM83Q8",
-      "title": "K&H Cat Window Perch, Unheated Kitty Sill, 24x14in, Gray Fleece",
+      "title": "K&H Kitty Sill, Unheated Gray Fleece, 24 x 14 in (100546595)",
       "brand": "K&H Pet Products",
       "detailUrl": "https://www.amazon.com/dp/B09ZCM83Q8",
-      "verifiedAt": "2026-08-13T02:52:32.697Z",
+      "verifiedAt": "2026-11-01T01:57:22.831Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 15,
@@ -450,8 +593,16 @@
         "directStatus": 200,
         "asinMatched": true,
         "unavailable": false,
-        "verificationChannel": "interactive Amazon search and detail page",
-        "preferredBrandMatched": true
+        "verificationChannel": "Visible Amazon US selected variant and offer; New York 10001",
+        "preferredBrandMatched": true,
+        "observationFile": "reverse-merchant35/retail-raw.json",
+        "suitability": "Conditional exact selection; unresolved details are explicit in the buying guide",
+        "issues": [
+          "Original Kitty Sill uses support legs and hook-loop or wooden-sill screws; not EZ Mount suction model.",
+          "Maker page requires2in sill and describes40lb support as rating, not measured installed strength.",
+          "Single-page original manual visually confirms hook-loop24hour adhesion wait, wood-only screw option and leveled fully snapped legs.",
+          "Heated variant electrical claims do not apply to unheated selection."
+        ]
       }
     },
     {
@@ -461,10 +612,10 @@
       "category": "comfort",
       "alternative": "freestanding cat furniture",
       "asin": "B07KNJXWD3",
-      "title": "TRIXIE Wall Mounted Cat Lounge Set with Hammock & Condo – Climbing Shelve with Plush Condo & Sisal Step – Wall-Mounted Cat Furniture for Scratching & Lounging – Gray-Brown, 18.75 x 11 x 11.25 in",
+      "title": "TRIXIE 49924 brown four-piece wall lounge set",
       "brand": "Trixie",
       "detailUrl": "https://www.amazon.com/dp/B07KNJXWD3",
-      "verifiedAt": "2026-08-13T02:52:53.634Z",
+      "verifiedAt": "2026-11-01T01:57:41.772Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 10,
@@ -473,8 +624,16 @@
         "directStatus": 200,
         "asinMatched": true,
         "unavailable": false,
-        "verificationChannel": "interactive Amazon search and detail page",
-        "preferredBrandMatched": false
+        "verificationChannel": "Visible Amazon US selected variant and offer; New York 10001",
+        "preferredBrandMatched": false,
+        "observationFile": "reverse-merchant35/retail-raw.json",
+        "suitability": "Conditional exact selection; unresolved details are explicit in the buying guide",
+        "issues": [
+          "Retail selected4pc Set-Brown/model49924 vs generic bullet2condos+3steps. Maker and manual specify1condo+1hammock+2steps.",
+          "Maker product page and current49923/49924 manual disagree on component dimensions; do not silently reconcile or promise fit from18.75x11x11.25in as a whole-set footprint.",
+          "Manual distinguisheswood/masonry/drywall/studs. Masonry/drywall anchors notincluded; recommendmatchingstudconnection, notgenericfastenerpermission.",
+          "No independently verified installed load rating."
+        ]
       }
     },
     {
@@ -484,10 +643,10 @@
       "category": "comfort",
       "alternative": "interactive floor play and climbing furniture",
       "asin": "B0BL3L38CX",
-      "title": "Homegroove Cat Exercise Wheel for Indoor Cats, 46 Inch",
+      "title": "Homegroove XL Natural Wood cat wheel (46-inch listing)",
       "brand": "homegroove",
       "detailUrl": "https://www.amazon.com/dp/B0BL3L38CX",
-      "verifiedAt": "2026-08-13T02:52:58.024Z",
+      "verifiedAt": "2026-11-01T01:57:48.047Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 10,
@@ -496,8 +655,15 @@
         "directStatus": 200,
         "asinMatched": true,
         "unavailable": false,
-        "verificationChannel": "interactive Amazon search and detail page",
-        "preferredBrandMatched": false
+        "verificationChannel": "Visible Amazon US selected variant and offer; New York 10001",
+        "preferredBrandMatched": false,
+        "observationFile": "reverse-merchant35/retail-raw.json",
+        "suitability": "Conditional exact selection; unresolved details are explicit in the buying guide",
+        "issues": [
+          "Retail title46in vs reported overall43.3x14.37x45.27in and othercomparison39.4in; actual usable running diameter/track width not established.",
+          "No silent, pinch-proof or weight-loss promise; no One Fast Cat model specifications transferred.",
+          "Optional enrichment; voluntary introduction, accessible lock and supervised initial use."
+        ]
       }
     },
     {
@@ -507,10 +673,10 @@
       "category": "comfort",
       "alternative": "boxes and supervised interactive toys",
       "asin": "B0DNJKFFX5",
-      "title": "Potaroma Spiral Tunnel Cat Toy, Self Play Collapsible Spring Kitten Tunnel",
+      "title": "Potaroma spiral cat play tunnel, Potaroma-THMSD",
       "brand": "Potaroma",
       "detailUrl": "https://www.amazon.com/dp/B0DNJKFFX5",
-      "verifiedAt": "2026-08-13T02:53:09.837Z",
+      "verifiedAt": "2026-11-01T01:58:35.944Z",
       "searchRank": 2,
       "sponsoredSearchResult": false,
       "relevanceScore": 10,
@@ -519,8 +685,15 @@
         "directStatus": 200,
         "asinMatched": true,
         "unavailable": false,
-        "verificationChannel": "interactive Amazon search and detail page",
-        "preferredBrandMatched": false
+        "verificationChannel": "Visible Amazon US selected variant and offer; New York 10001",
+        "preferredBrandMatched": false,
+        "observationFile": "reverse-merchant35/retail-raw.json",
+        "suitability": "Conditional exact selection; unresolved details are explicit in the buying guide",
+        "issues": [
+          "Retail table7.8in diameter vs bullet9.8in; confirm actual opening before choosing for a large cat.",
+          "Includes dangling bird/feather/bell descriptions; inspect loose pieces and exposed spring wire, not an unsupervised safety guarantee.",
+          "No KONG product instructions applied to this Potaroma tunnel."
+        ]
       }
     },
     {
@@ -530,10 +703,10 @@
       "category": "home-care",
       "alternative": "a general indoor camera without pet-specific features",
       "asin": "B0F1TMFNLZ",
-      "title": "ZUMIMALL Pet Camera with Laser Toy, 2K WiFi Dog Cat Camera with Phone App",
+      "title": "ZUMIMALL BF-BK07 indoor pet camera with laser feature",
       "brand": "ZUMIMALL",
       "detailUrl": "https://www.amazon.com/dp/B0F1TMFNLZ",
-      "verifiedAt": "2026-08-13T02:53:27.116Z",
+      "verifiedAt": "2026-11-01T01:58:40.138Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 10,
@@ -542,8 +715,16 @@
         "directStatus": 200,
         "asinMatched": true,
         "unavailable": false,
-        "verificationChannel": "interactive Amazon search and detail page",
-        "preferredBrandMatched": false
+        "verificationChannel": "Visible Amazon US selected variant and offer; New York 10001",
+        "preferredBrandMatched": false,
+        "observationFile": "reverse-merchant35/retail-raw.json",
+        "suitability": "Conditional exact selection; unresolved details are explicit in the buying guide",
+        "issues": [
+          "ActualBF-BK07 / currentmaker tutorial index listsBK07. Not Furbo; no treat dispenser demonstrated.",
+          "Retail2Ktitle/3MPbullets and2.4/5GHz are untested listing claims.",
+          "No exact current subscription price, cloud retention, SD compatibility or service-end guarantee established.",
+          "Do not recommend unattended automated laser play; no laser class/eye-safety certificate established. Monitoring-only use requires laser can stay off."
+        ]
       }
     },
     {
@@ -553,10 +734,10 @@
       "category": "home-care",
       "alternative": "hanging bells or a consistent door routine",
       "asin": "B073XD4XSD",
-      "title": "Mighty Paw Smart Bell 2.0 Wireless Dog Door Bell & Doorbell, 2 Button Pack",
+      "title": "Mighty Paw Smart Bell 2.0, White, two activators",
       "brand": "Mighty Paw",
       "detailUrl": "https://www.amazon.com/dp/B073XD4XSD",
-      "verifiedAt": "2026-08-13T02:53:40.825Z",
+      "verifiedAt": "2026-11-01T01:59:26.000Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 10,
@@ -565,8 +746,16 @@
         "directStatus": 200,
         "asinMatched": true,
         "unavailable": false,
-        "verificationChannel": "interactive Amazon search and detail page",
-        "preferredBrandMatched": false
+        "verificationChannel": "Visible Amazon US selected variant and offer; New York 10001",
+        "preferredBrandMatched": false,
+        "observationFile": "reverse-merchant35/retail-raw.json",
+        "suitability": "Conditional exact selection; unresolved details are explicit in the buying guide",
+        "issues": [
+          "Two activators selected; receiver plugs in, no battery-free backup on mains outage.",
+          "Currentmaker saysbattery-free transmitters/110Vreceiver; retail AA-batteries metadata conflicts. Verify supplied labels/kit.",
+          "Maker90daycopy and30daysatisfactionbadge conflict; do not transfer direct-store promise toAmazonobserved30dayterms.",
+          "No universal1000ftrange, all-dogs-pressurefit or guaranteed house-training success."
+        ]
       }
     },
     {
@@ -576,10 +765,10 @@
       "category": "feeding",
       "alternative": "the sealed original bag inside a protected bin",
       "asin": "B0002DJON4",
-      "title": "Vittles Vault Vittles Vault Junior Pet Food Storage Container, 4 Pounds",
+      "title": "Gamma2 Vittles Vault Junior small dry-food container, Gray",
       "brand": "Gamma2",
       "detailUrl": "https://www.amazon.com/dp/B0002DJON4",
-      "verifiedAt": "2026-08-13T02:53:47.992Z",
+      "verifiedAt": "2026-11-01T01:59:29.572Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 15,
@@ -588,8 +777,16 @@
         "directStatus": 200,
         "asinMatched": true,
         "unavailable": false,
-        "verificationChannel": "interactive Amazon search and detail page",
-        "preferredBrandMatched": true
+        "verificationChannel": "Visible Amazon US selected variant and offer; New York 10001",
+        "preferredBrandMatched": true,
+        "observationFile": "reverse-merchant35/retail-raw.json",
+        "suitability": "Conditional exact selection; unresolved details are explicit in the buying guide",
+        "issues": [
+          "No featuredoffer, but actual buyingoptionsdrawer showsNew19.45USD KwikRetail/Amazon.com and3otherNew offers. Not unavailable.",
+          "Seller returnterms notshown/expanded; do not copy30daypromise from otheritems.",
+          "4lbtitle/5lbcapacityfield/4-6lbbullet dependondensity andconflict; noexactkibblebagfit or2-3dayfoodpromise.",
+          "No current independent Junior maker range/support-end statement established. FDA original-bag/lot/clean-dry guidance applies generally."
+        ]
       }
     },
     {
@@ -599,10 +796,10 @@
       "category": "comfort",
       "alternative": "a correctly supported soft carrier for suitable trips",
       "asin": "B00OP6SVJW",
-      "title": "Amazon Basics Sturdy Portable 2-Door Top-Load Hard-Sided Pet Travel Carrier with Secure Ventilation, Handle, Front & Top Entry for Dogs, Cats, 22.8\"L x 15\"W x 13\"H, Gray & Blue",
+      "title": "Amazon Basics 23-inch two-door carrier, Gray & Blue (6009-M-APL)",
       "brand": "Amazon Basics",
       "detailUrl": "https://www.amazon.com/dp/B00OP6SVJW",
-      "verifiedAt": "2026-08-13T02:54:10.624Z",
+      "verifiedAt": "2026-11-01T02:02:46.871Z",
       "searchRank": 2,
       "sponsoredSearchResult": false,
       "relevanceScore": 10,
@@ -611,8 +808,15 @@
         "directStatus": 200,
         "asinMatched": true,
         "unavailable": false,
-        "verificationChannel": "interactive Amazon search and detail page",
-        "preferredBrandMatched": false
+        "verificationChannel": "Visible Amazon US selected variant and offer; New York 10001",
+        "preferredBrandMatched": false,
+        "observationFile": "reverse-merchant35/retail-raw.json",
+        "suitability": "Conditional exact selection; unresolved details are explicit in the buying guide",
+        "issues": [
+          "Currentlisting22.83x14.96x12.99in exterior; no usableinternalmeasurements established.",
+          "Listing-provided manual has19/23size table and labels23in asHeight; do not overwrite current13in exteriorheight or treatlengthasusableheight.",
+          "Manual assembly diagrams/weight limit must be interpreted for23size only. No airline approval/crash-test claim."
+        ]
       }
     },
     {
@@ -622,10 +826,10 @@
       "category": "home-care",
       "alternative": "washable household microfiber towels kept for pet use",
       "asin": "B0144B7LQQ",
-      "title": "Bone Dry Pet Grooming Microfiber Towel, Embroidered Collection, X-Large,41x23.5\", Blue",
+      "title": "Bone Dry Blue embroidered microfiber pet towel, 41 x 23.5 in",
       "brand": "Bone Dry",
       "detailUrl": "https://www.amazon.com/dp/B0144B7LQQ",
-      "verifiedAt": "2026-08-13T02:55:12.186Z",
+      "verifiedAt": "2026-11-01T02:02:51.194Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 10,
@@ -634,8 +838,15 @@
         "directStatus": 200,
         "asinMatched": true,
         "unavailable": false,
-        "verificationChannel": "interactive Amazon search and detail page",
-        "preferredBrandMatched": false
+        "verificationChannel": "Visible Amazon US selected variant and offer; New York 10001",
+        "preferredBrandMatched": false,
+        "observationFile": "reverse-merchant35/retail-raw.json",
+        "suitability": "Conditional exact selection; unresolved details are explicit in the buying guide",
+        "issues": [
+          "Flat41x23.5in towel, not Ruffwear wearable wrap.",
+          "Retailmachine-washable/no fabricsoftenercare; exactwashheatanddryerlimits notestablished.",
+          "No measuredabsorbency,dryingtime,thermalprotectionorfullydryundercoat guarantee; no independentcurrentmaker-range statement established."
+        ]
       }
     },
     {
@@ -645,10 +856,10 @@
       "category": "home-care",
       "alternative": "hang-on-back or sponge filtration sized to the tank",
       "asin": "B07JH4JHTC",
-      "title": "Fluval 307 Perfomance Canister Filter for Aquariums up to 70 Gallons",
+      "title": "Fluval 307 Performance Canister Filter for Aquariums up to 70 Gallons",
       "brand": "Fluval",
       "detailUrl": "https://www.amazon.com/dp/B07JH4JHTC",
-      "verifiedAt": "2026-08-13T02:55:16.529Z",
+      "verifiedAt": "2026-10-31T13:37:22.166Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 15,
@@ -657,8 +868,10 @@
         "directStatus": 200,
         "asinMatched": true,
         "unavailable": false,
-        "verificationChannel": "interactive Amazon search and detail page",
-        "preferredBrandMatched": true
+        "verificationChannel": "Current visible Amazon US selection, item details and buying panel, New York 10001",
+        "preferredBrandMatched": true,
+        "observationFile": "reverse-merchant36/retail-observations.json",
+        "suitability": "Conditional; see exact guide for unresolved limits"
       }
     },
     {
@@ -671,7 +884,7 @@
       "title": "Tetra Whisper Air Pump for Aquariums Up to 60 Gallons, Non-UL",
       "brand": "Tetra",
       "detailUrl": "https://www.amazon.com/dp/B0009YJ4NG",
-      "verifiedAt": "2026-08-13T02:55:38.294Z",
+      "verifiedAt": "2026-10-31T13:43:07.901Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 15,
@@ -680,8 +893,10 @@
         "directStatus": 200,
         "asinMatched": true,
         "unavailable": false,
-        "verificationChannel": "interactive Amazon search and detail page",
-        "preferredBrandMatched": true
+        "verificationChannel": "Current visible Amazon US selection, item details and buying panel, New York 10001",
+        "preferredBrandMatched": true,
+        "observationFile": "reverse-merchant36/retail-observations.json",
+        "suitability": "Conditional; see exact guide for unresolved limits"
       }
     },
     {
@@ -694,7 +909,7 @@
       "title": "EHEIM Jager Aquarium Thermostat Heater 150W",
       "brand": "Eheim",
       "detailUrl": "https://www.amazon.com/dp/B003M7P9YU",
-      "verifiedAt": "2026-08-13T02:55:48.388Z",
+      "verifiedAt": "2026-10-31T13:44:22.726Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 15,
@@ -703,8 +918,10 @@
         "directStatus": 200,
         "asinMatched": true,
         "unavailable": false,
-        "verificationChannel": "interactive Amazon search and detail page",
-        "preferredBrandMatched": true
+        "verificationChannel": "Current visible Amazon US selection, item details and buying panel, New York 10001",
+        "preferredBrandMatched": true,
+        "observationFile": "reverse-merchant36/retail-observations.json",
+        "suitability": "Conditional; see exact guide for unresolved limits"
       }
     },
     {
@@ -717,7 +934,7 @@
       "title": "Exo Terra Dimming and Pulse Proportional Thermostat for Reptile Terrariums",
       "brand": "Exo Terra",
       "detailUrl": "https://www.amazon.com/dp/B08R29S2WB",
-      "verifiedAt": "2026-08-13T02:56:07.521Z",
+      "verifiedAt": "2026-10-31T13:44:38.756Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 10,
@@ -726,8 +943,10 @@
         "directStatus": 200,
         "asinMatched": true,
         "unavailable": false,
-        "verificationChannel": "interactive Amazon search and detail page",
-        "preferredBrandMatched": false
+        "verificationChannel": "Current visible Amazon US selection, item details and buying panel, New York 10001",
+        "preferredBrandMatched": false,
+        "observationFile": "reverse-merchant36/retail-observations.json",
+        "suitability": "Conditional; see exact guide for unresolved limits"
       }
     },
     {
@@ -740,7 +959,7 @@
       "title": "SportPet Airline Compliant LARGE 31.5\" Travel Dog Kennel-Durable Plastic Airline Pet Carrier w/ Removable Wheels & Food Bowls, Collapsible Indoor/Outdoor Dog Kennel, Dogs up to 28\"L & 20\"H-Cream/Gray",
       "brand": "SportPet Designs",
       "detailUrl": "https://www.amazon.com/dp/B07HFK7K8T",
-      "verifiedAt": "2026-08-13T02:56:46.730Z",
+      "verifiedAt": "2026-10-31T13:45:08.853Z",
       "searchRank": null,
       "sponsoredSearchResult": false,
       "relevanceScore": 9,
@@ -749,8 +968,10 @@
         "directStatus": 200,
         "asinMatched": true,
         "unavailable": false,
-        "verificationChannel": "interactive Amazon direct detail page after family search",
-        "preferredBrandMatched": false
+        "verificationChannel": "Current visible Amazon US selection, item details and buying panel, New York 10001",
+        "preferredBrandMatched": false,
+        "observationFile": "reverse-merchant36/retail-observations.json",
+        "suitability": "Conditional; see exact guide for unresolved limits"
       }
     },
     {
@@ -763,7 +984,7 @@
       "title": "Pet Grooming Gloves - Patented #1 Ranked, Award Winning Shedding, Bathing, & Hair Remover Gloves - Gentle Brush for Cats, Dogs, and Horses (Grey, Medium)",
       "brand": "H HANDSON",
       "detailUrl": "https://www.amazon.com/dp/B09437VRHX",
-      "verifiedAt": "2026-08-13T02:57:00.564Z",
+      "verifiedAt": "2026-10-31T13:45:36.397Z",
       "searchRank": null,
       "sponsoredSearchResult": false,
       "relevanceScore": 9,
@@ -772,8 +993,10 @@
         "directStatus": 200,
         "asinMatched": true,
         "unavailable": false,
-        "verificationChannel": "interactive Amazon direct detail page after family search",
-        "preferredBrandMatched": false
+        "verificationChannel": "Current visible Amazon US selection, item details and buying panel, New York 10001",
+        "preferredBrandMatched": false,
+        "observationFile": "reverse-merchant36/retail-observations.json",
+        "suitability": "Conditional; see exact guide for unresolved limits"
       }
     },
     {
@@ -786,7 +1009,7 @@
       "title": "15 inches LED Aquarium Light, 2.5W Fish Tank Light Underwater Light Submersible Crystal Glass Lights, 21 LED Beads 12 Colors 19 Modes Brightness Adjustable Memory Function IP68 Waterproof",
       "brand": "COVOART",
       "detailUrl": "https://www.amazon.com/dp/B073TDV9CN",
-      "verifiedAt": "2026-08-13T02:57:10.415Z",
+      "verifiedAt": "2026-10-31T13:45:42.723Z",
       "searchRank": null,
       "sponsoredSearchResult": false,
       "relevanceScore": 9,
@@ -795,8 +1018,10 @@
         "directStatus": 200,
         "asinMatched": true,
         "unavailable": false,
-        "verificationChannel": "interactive Amazon direct detail page after family search",
-        "preferredBrandMatched": false
+        "verificationChannel": "Current visible Amazon US selection, item details and buying panel, New York 10001",
+        "preferredBrandMatched": false,
+        "observationFile": "reverse-merchant36/retail-observations.json",
+        "suitability": "Conditional; see exact guide for unresolved limits"
       }
     },
     {
@@ -805,21 +1030,28 @@
       "familyName": "Portable dog water bottles",
       "category": "feeding",
       "alternative": "a separate bottle and collapsible bowl",
-      "asin": "B07C79C5BT",
-      "title": "MalsiPree Dog Water Bottle Dispenser - 12 oz Blue, Leak-Proof",
+      "asin": "B0BQN9V4NS",
+      "title": "MalsiPree Black 12 oz Dog Water Bottle, selected 12oz-Standard",
       "brand": "MalsiPree",
-      "detailUrl": "https://www.amazon.com/dp/B07C79C5BT",
-      "verifiedAt": "2026-08-13T02:57:33.697Z",
-      "searchRank": 2,
+      "detailUrl": "https://www.amazon.com/dp/B0BQN9V4NS",
+      "verifiedAt": "2026-10-31T13:54:08.000Z",
+      "searchRank": null,
       "sponsoredSearchResult": false,
       "relevanceScore": 14,
-      "anchorConfidence": "preferred-brand-exact",
+      "anchorConfidence": "explicit-task-matched-alternative",
       "validation": {
-        "directStatus": 200,
         "asinMatched": true,
         "unavailable": false,
-        "verificationChannel": "interactive Amazon search and detail page; title variant verified by page title",
-        "preferredBrandMatched": true
+        "verificationChannel": "Current visible Amazon US selection and buying panel, New York 10001; conditional suitability in guide",
+        "previousUnavailableAsin": "B07C79C5BT"
+      },
+      "previousSelection": {
+        "asin": "B07C79C5BT",
+        "title": "MalsiPree Dog Water Bottle Dispenser - 12 oz Blue, Leak-Proof",
+        "detailUrl": "https://www.amazon.com/dp/B07C79C5BT",
+        "observedOn": "2026-10-31",
+        "status": "unavailable",
+        "note": "Explicitly named different selection; original merchant audit record is retained."
       }
     },
     {
@@ -828,21 +1060,28 @@
       "familyName": "Dog bath sprayers",
       "category": "home-care",
       "alternative": "a pitcher and low-pressure hose",
-      "asin": "B0D9BJXSSF",
-      "title": "Dog Shower Sprayer with 8ft Hose – High Pressure Dog Shower Attachment for Bathing & Grooming – Pet Shower Hose Sprayer with Indoor/Outdoor Adapters",
-      "brand": "WHALUNA",
-      "detailUrl": "https://www.amazon.com/dp/B0D9BJXSSF",
-      "verifiedAt": "2026-08-13T02:58:03.638Z",
-      "searchRank": 2,
+      "asin": "B08B5LRXGR",
+      "title": "Aquapaw Pro Large Hand-Worn Dog Bath Sprayer and Scrubber with 8 ft Hose",
+      "brand": "Aquapaw",
+      "detailUrl": "https://www.amazon.com/dp/B08B5LRXGR",
+      "verifiedAt": "2026-10-31T14:41:36.625Z",
+      "searchRank": null,
       "sponsoredSearchResult": false,
       "relevanceScore": 10,
-      "anchorConfidence": "exact-fit",
+      "anchorConfidence": "explicit-task-matched-alternative",
       "validation": {
-        "directStatus": 200,
         "asinMatched": true,
         "unavailable": false,
-        "verificationChannel": "interactive Amazon search and detail page",
-        "preferredBrandMatched": false
+        "verificationChannel": "Current visible Amazon US selection and buying panel, New York 10001; conditional suitability in guide",
+        "previousUnavailableAsin": "B0D9BJXSSF"
+      },
+      "previousSelection": {
+        "asin": "B0D9BJXSSF",
+        "title": "Dog Shower Sprayer with 8ft Hose – High Pressure Dog Shower Attachment for Bathing & Grooming – Pet Shower Hose Sprayer with Indoor/Outdoor Adapters",
+        "detailUrl": "https://www.amazon.com/dp/B0D9BJXSSF",
+        "observedOn": "2026-10-31",
+        "status": "unavailable",
+        "note": "Explicitly named different selection; original merchant audit record is retained."
       }
     }
   ],

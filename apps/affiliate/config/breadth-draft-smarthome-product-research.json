@@ -17,19 +17,35 @@
       "familyName": "Smart aroma diffusers",
       "category": "automation",
       "alternative": "manual diffusers or fragrance-free rooms",
-      "asin": "B0GSFHFQBF",
-      "title": "Waterless Essential Oil Diffuser, Smart App Controlled Scent Diffuser for Large Room, Covers Up to 4000 Sq Ft, Quiet Aroma Diffuser for Home Hotel Office,360° Ambient Light (Silver, Desktop)",
-      "brand": "LuxHydvat",
-      "detailUrl": "https://www.amazon.com/dp/B0GSFHFQBF",
-      "verifiedAt": "2026-08-12T11:46:26.196Z",
-      "searchRank": 15,
+      "asin": "B0FWT27J86",
+      "title": "Pura Home 4 diffuser, 2025 version (refills separate)",
+      "brand": "Pura",
+      "detailUrl": "https://www.amazon.com/dp/B0FWT27J86",
+      "verifiedAt": "2026-11-01T05:35:24.225Z",
+      "searchRank": null,
       "sponsoredSearchResult": false,
       "relevanceScore": 13.44,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
-      }
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant28/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "Original LuxHydvat identity and offer remain unverified",
+          "Pura supplied hardware revision, selected condition and every refill’s suitability remain separate checks."
+        ]
+      },
+      "previousSelection": {
+        "asin": "B0GSFHFQBF",
+        "title": "Waterless Essential Oil Diffuser, Smart App Controlled Scent Diffuser for Large Room, Covers Up to 4000 Sq Ft, Quiet Aroma Diffuser for Home Hotel Office,360° Ambient Light (Silver, Desktop)",
+        "detailUrl": "https://www.amazon.com/dp/B0GSFHFQBF",
+        "observedOn": "2026-11-01",
+        "status": "page_not_found",
+        "note": "Original page returned Page Not Found; not proof of ordinary out-of-stock inventory or discontinuation. New named option is a different product."
+      },
+      "anchorConfidence": "explicit-task-matched-alternative"
     },
     {
       "site": "smarthome",
@@ -38,17 +54,25 @@
       "category": "climate",
       "alternative": "humidity-sensing wall controls with a standard fan",
       "asin": "B0FR4J5QQ3",
-      "title": "Smart Bathroom Exhaust Fan with Light & Bluetooth Speaker, Humidity & Odor Sensor, 3 RGB Dynamic Mode, Adjustable Lighting (0-2600lm,3CCT), 1 Sone Quiet, Easy Install (Grey)",
+      "title": "ROJOSAN remote-control exhaust fan with Bluetooth speaker",
       "brand": "ROJOSAN",
       "detailUrl": "https://www.amazon.com/dp/B0FR4J5QQ3",
-      "verifiedAt": "2026-08-12T11:36:25.168Z",
+      "verifiedAt": "2026-11-01T05:30:01.395Z",
       "searchRank": 18,
       "sponsoredSearchResult": false,
       "relevanceScore": 9.987,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant28/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "Old humidity/odor-sensor claim not supported by current remote-only listing",
+          "Exact model manual, supply rating, electrical listing and wet-location permission unresolved",
+          "230 CFM / 1 sone not independently measured."
+        ]
       }
     },
     {
@@ -58,17 +82,24 @@
       "category": "automation",
       "alternative": "municipal organics collection or passive composting",
       "asin": "B0F2697XCD",
-      "title": "4L Electric Composter for Kitchen, Smart Countertop Compost Bin | Odorless, Low Noise, Auto-Cleaning, Turn Food Waste into Fertilizer, Indoor Food Waste Compost Machine, Black",
+      "title": "Ouaken Black 4 L electric food-waste processor",
       "brand": "Ouaken",
       "detailUrl": "https://www.amazon.com/dp/B0F2697XCD",
-      "verifiedAt": "2026-08-12T11:45:55.229Z",
+      "verifiedAt": "2026-11-01T05:28:26.509Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 14,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant28/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "No finished-compost, plant-safety, cycle, volume-reduction or emissions test",
+          "Exact manual and consumable availability require confirmation."
+        ]
       }
     },
     {
@@ -78,17 +109,25 @@
       "category": "automation",
       "alternative": "standard floor lamps with smart bulbs",
       "asin": "B0GK5R7BC5",
-      "title": "Smart Floor Lamps for Living Room, RGB+WW Ripple Projector Lamp | App & Button Control, RGB+IC Ambient Side Light & Warm White Reading Light, 66.8 Inch LED Standing Floor Light for Bedroom",
+      "title": "Arsoma 66.8-inch RGB/WW ripple floor lamp",
       "brand": "Arsoma",
       "detailUrl": "https://www.amazon.com/dp/B0GK5R7BC5",
-      "verifiedAt": "2026-08-12T11:40:27.399Z",
+      "verifiedAt": "2026-11-01T05:28:36.245Z",
       "searchRank": 45,
       "sponsoredSearchResult": false,
       "relevanceScore": 15,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant28/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "Title remote versus feature physical-button control needs kit confirmation",
+          "No Wi-Fi/Matter, measured illuminance, flicker, stability or eye-health result",
+          "Exact adapter and repair parts unverified."
+        ]
       }
     },
     {
@@ -98,17 +137,24 @@
       "category": "climate",
       "alternative": "manual registers and proper HVAC balancing",
       "asin": "B07TJCMZ4T",
-      "title": "Flair Smart Vent 6x10 (White), AC Vent Cover for Floors, Walls and Ceilings.",
+      "title": "Flair White 6x10 Smart Vent",
       "brand": "Flair",
       "detailUrl": "https://www.amazon.com/dp/B07TJCMZ4T",
-      "verifiedAt": "2026-08-12T11:35:24.906Z",
+      "verifiedAt": "2026-11-01T05:28:41.080Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 14,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant28/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "No measured static-pressure, comfort or energy-saving result",
+          "Actual existing hub generation, thermostat integration and duct fit remain installation checks."
+        ]
       }
     },
     {
@@ -118,17 +164,24 @@
       "category": "automation",
       "alternative": "passive planters with a timer-controlled grow light",
       "asin": "B0DBHGMPXC",
-      "title": "Hydroponic Growing System Kit 16 Pods, Smart Herb Garden with Sprout Mode Can Seedling in Advance & 24W Full Spectrum LED Grow Light, Indoor Garden Planter for Home/Office/School (White)",
+      "title": "DRYADES White 16-pod garden with 24 W light",
       "brand": "DRYADES",
       "detailUrl": "https://www.amazon.com/dp/B0DBHGMPXC",
-      "verifiedAt": "2026-08-12T11:44:27.059Z",
+      "verifiedAt": "2026-11-01T05:28:46.643Z",
       "searchRank": 15,
       "sponsoredSearchResult": false,
       "relevanceScore": 11.94,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant28/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "No app, automatic dosing or harvest result established",
+          "Exact usable clearance, kit contents, manual and replacement parts require confirmation."
+        ]
       }
     },
     {
@@ -138,17 +191,24 @@
       "category": "automation",
       "alternative": "original remotes or device-native integrations",
       "asin": "B0DFBWZ1DZ",
-      "title": "RM4 Pro IR/RF Universal Remote Control BroadLink, All-in-One Hub, Code Learning Function, TV, STB, Air Conditioning, Curtain Motor(Support Only RF Fixed Code) Compatible with Alexa.(2.4GHz Wi-Fi Only)",
+      "title": "B BestCon RM4 Pro with HTS2 sensor cable, 433 MHz version",
       "brand": "B BestCon",
       "detailUrl": "https://www.amazon.com/dp/B0DFBWZ1DZ",
-      "verifiedAt": "2026-08-12T11:43:03.483Z",
+      "verifiedAt": "2026-11-01T05:28:53.583Z",
       "searchRank": 10,
       "sponsoredSearchResult": false,
       "relevanceScore": 12.64,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant28/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "Exact regional hardware and adapter contents unresolved",
+          "No 315 MHz support, command success, state feedback or external service longevity established."
+        ]
       }
     },
     {
@@ -158,17 +218,24 @@
       "category": "automation",
       "alternative": "standard outdoor fixtures on a listed smart control",
       "asin": "B0FN46GW8Z",
-      "title": "Smart Landscape Spotlights,Solar Low Voltage IP67 Waterproof Outdoor Spot Lights Compatible with APP/Remote Control Color Changing Lights for Yard Garden Pathway Lawn Tree Festival 2pack",
+      "title": "AurNyvaMay solar/USB landscape spotlights, two pack",
       "brand": "AurNyvaMay",
       "detailUrl": "https://www.amazon.com/dp/B0FN46GW8Z",
-      "verifiedAt": "2026-08-12T11:38:47.295Z",
+      "verifiedAt": "2026-11-01T05:28:58.802Z",
       "searchRank": 25,
       "sponsoredSearchResult": false,
       "relevanceScore": 15.04,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant28/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "No measured runtime, beam output or ingress result",
+          "Exact app, USB input and accessory weather protection unresolved."
+        ]
       }
     },
     {
@@ -178,17 +245,24 @@
       "category": "access",
       "alternative": "mechanical or keypad levers",
       "asin": "B0CLG8TCTJ",
-      "title": "Keypad Smart Door Lock with Handle: Kucacci Keyless Entry Door Lock - Smart Lock for Front Door - Electronic Door Lock with Keypad for Exterior Door - Deadbolt Lever Alternative - Easy Installation",
+      "title": "KUCACCI Z2 Smart Lock with lever and keypad",
       "brand": "KUCACCI",
       "detailUrl": "https://www.amazon.com/dp/B0CLG8TCTJ",
-      "verifiedAt": "2026-08-12T11:40:59.119Z",
+      "verifiedAt": "2026-11-01T05:29:03.734Z",
       "searchRank": 27,
       "sponsoredSearchResult": false,
       "relevanceScore": 13,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant28/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "Z2 NICE DIGI/Tuya controller conflict and deadbolt/lever field conflict",
+          "Exact door-prep manual, security rating, exterior and rated-door suitability unverified."
+        ]
       }
     },
     {
@@ -198,17 +272,24 @@
       "category": "automation",
       "alternative": "low-voltage lighting with a central smart transformer",
       "asin": "B0FQ3KX7FL",
-      "title": "Pathway Lights,RGBCW Walkway Lights with APP Control,4 Pack | IP65 Waterproof,Low Voltage Landscape Lighting 800LM,Color Changing,for Garden, Yard, Patio,Compatible with Alexa",
+      "title": "APPECK RGBCW wired pathway lights, four pack",
       "brand": "APPECK",
       "detailUrl": "https://www.amazon.com/dp/B0FQ3KX7FL",
-      "verifiedAt": "2026-08-12T11:38:24.644Z",
+      "verifiedAt": "2026-11-01T05:29:13.157Z",
       "searchRank": 12,
       "sponsoredSearchResult": false,
       "relevanceScore": 13.56,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant28/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "Exact adapter voltage, cable spacing, extension limits and accessory weather protection unresolved",
+          "No illuminance, whole-night availability or power-loss behavior test."
+        ]
       }
     },
     {
@@ -218,17 +299,25 @@
       "category": "cameras",
       "alternative": "a doorbell camera where installation rules permit it",
       "asin": "B0D31TJHRK",
-      "title": "Peephole Camera for Apartment Front Door Doorbell with Monitor | 1080P HD Video Calling, PIR Motion Detection, 120° Night Vision, Cloud/TF Storage, UBOX App",
+      "title": "Cawhum 1080p peephole camera with indoor monitor",
       "brand": "Cawhum",
       "detailUrl": "https://www.amazon.com/dp/B0D31TJHRK",
-      "verifiedAt": "2026-08-12T11:42:14.034Z",
+      "verifiedAt": "2026-11-01T05:29:17.990Z",
       "searchRank": 4,
       "sponsoredSearchResult": false,
       "relevanceScore": 13.88,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant28/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "Actual upper hole size, mounting and cable clearances unresolved",
+          "Storage media limits, subscription, encryption and offline behavior unverified",
+          "No detection, night-image or battery test."
+        ]
       }
     },
     {
@@ -238,17 +327,25 @@
       "category": "climate",
       "alternative": "a manual floating thermometer",
       "asin": "B0H5BQZY9M",
-      "title": "Solar Pool Thermometer, Smart Wireless Digital Pool Thermometer Easy Read, IPX8 Waterproof Water Temperature Monitor for Hot Tub, Bath, Swimming, Pond",
+      "title": "Inkbird 2026-P05R-NEW solar pool thermometer listing",
       "brand": "Inkbird",
       "detailUrl": "https://www.amazon.com/dp/B0H5BQZY9M",
-      "verifiedAt": "2026-08-12T11:38:02.969Z",
+      "verifiedAt": "2026-11-01T05:29:22.887Z",
       "searchRank": 2,
       "sponsoredSearchResult": false,
       "relevanceScore": 13.96,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant28/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "2026-P05R-NEW model not conclusively mapped to manufacturer manual",
+          "Bluetooth/receiver/range and one-AA/two-AA field conflicts",
+          "No demonstrated accuracy improvement, water limits or app access."
+        ]
       }
     },
     {
@@ -258,17 +355,24 @@
       "category": "climate",
       "alternative": "manual TRVs or a zoned central heating controller",
       "asin": "B0D14FJSTJ",
-      "title": "Smart Thermostat Radiator Valve: Programmable Thermostatic Valve, Zigbee Thermostat for Temperature Adjustment, App Control, Tuya Zigbee Hub Required, Compatible with Alexa, Google Home (Black)",
+      "title": "SENCKIT Zigbee-TRV, Black (Tuya hub required)",
       "brand": "SENCKIT",
       "detailUrl": "https://www.amazon.com/dp/B0D14FJSTJ",
-      "verifiedAt": "2026-08-12T11:34:55.427Z",
+      "verifiedAt": "2026-11-01T06:31:14.283Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 15.5,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant29/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "Valve thread, adapter contents and exact manual unresolved",
+          "No boiler call-for-heat, offline behavior or savings established."
+        ]
       }
     },
     {
@@ -277,19 +381,36 @@
       "familyName": "Smart recessed lights",
       "category": "automation",
       "alternative": "standard recessed LEDs controlled by a compatible dimmer",
-      "asin": "B0F2Y8J62K",
-      "title": "24Pack Smart Recessed Lighting 4 Inch RGBCW Color Changing 12W LED Downlight with Junction Box,1080 Lumen Recessed Ceiling Light Compatible with Alexa,Dimmable by Bluetooth Control",
+      "asin": "B0FMY5ZFWR",
+      "title": "SikSog TD4C001, Black 24-pack, 4-inch 12 W",
       "brand": "SikSog",
-      "detailUrl": "https://www.amazon.com/dp/B0F2Y8J62K",
-      "verifiedAt": "2026-08-12T11:39:09.099Z",
-      "searchRank": 37,
+      "detailUrl": "https://www.amazon.com/dp/B0FMY5ZFWR",
+      "verifiedAt": "2026-11-01T06:47:56.151Z",
+      "searchRank": null,
       "sponsoredSearchResult": false,
       "relevanceScore": 13,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
-      }
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant29/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "Original URL selected different ASIN B0FMY5ZFWR",
+          "1080 versus 1000 lumen conflict",
+          "Exact cutout, electrical listing, permitted location and wall-dimmer compatibility unresolved."
+        ]
+      },
+      "previousSelection": {
+        "asin": "B0F2Y8J62K",
+        "title": "24Pack Smart Recessed Lighting 4 Inch RGBCW Color Changing 12W LED Downlight with Junction Box,1080 Lumen Recessed Ceiling Light Compatible with Alexa,Dimmable by Bluetooth Control",
+        "detailUrl": "https://www.amazon.com/dp/B0F2Y8J62K",
+        "observedOn": "2026-11-01",
+        "status": "identity-drift",
+        "note": "November 1, 2026: the historical URL B0F2Y8J62K rendered selected ASIN B0FMY5ZFWR. Original exact identity is not verified."
+      },
+      "anchorConfidence": "explicit-task-matched-alternative"
     },
     {
       "site": "smarthome",
@@ -298,17 +419,24 @@
       "category": "automation",
       "alternative": "local-control immersion circulators",
       "asin": "B0H4KFQ83Y",
-      "title": "Wifi Sous Vide Cooker, Ultra Quiet Immersion Circulator with Water Level Alarm, App Control with 14 Preset Recipes, Calibration & Timer Function,Fast/Stable Heating with Shared Control,1000W",
+      "title": "CharMeter 1000 W / 120 V, 2.4 GHz Wi-Fi circulator",
       "brand": "CharMeter",
       "detailUrl": "https://www.amazon.com/dp/B0H4KFQ83Y",
-      "verifiedAt": "2026-08-12T11:45:03.919Z",
+      "verifiedAt": "2026-11-01T06:32:26.256Z",
       "searchRank": 2,
       "sponsoredSearchResult": false,
       "relevanceScore": 15.46,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant29/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "Exact model-numbered primary manual and app identity unresolved",
+          "Accuracy, quietness, low-water cutoff and recipe safety not independently established."
+        ]
       }
     },
     {
@@ -318,17 +446,25 @@
       "category": "climate",
       "alternative": "manual listed heaters with conservative placement and timers",
       "asin": "B0DPX33FCD",
-      "title": "1500W Smart Electric Space Heater for Indoor Spaces - WiFi/App Control, Remote Included, 24H Timer, 5 Modes for Home, Office, Bedroom, Bathroom Use",
+      "title": "DAYETTE SH002, 1500 W app-controlled heater",
       "brand": "DAYETTE",
       "detailUrl": "https://www.amazon.com/dp/B0DPX33FCD",
-      "verifiedAt": "2026-08-12T11:35:49.046Z",
+      "verifiedAt": "2026-11-01T06:32:30.352Z",
       "searchRank": 16,
       "sponsoredSearchResult": false,
       "relevanceScore": 13.4,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant29/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "Exact first-party manual and electrical listing unverified",
+          "Bathroom marketing not endorsed",
+          "No physical protection, room-coverage, energy-savings or recall-clearance test."
+        ]
       }
     },
     {
@@ -338,17 +474,25 @@
       "category": "climate",
       "alternative": "high-water alarms and scheduled pump inspection",
       "asin": "B09YK8KY9N",
-      "title": "WiFi Sump Pump Monitor & Protector - No Sensors, Real-Time Alerts to Your Mobile Device: Prevent Pump Burnout, Over-Cycling & Flooding from Power Outage, Remote Control & Overload Protection",
+      "title": "PumpFuse PF03 indoor Wi-Fi current monitor",
       "brand": "PumpFuse",
       "detailUrl": "https://www.amazon.com/dp/B09YK8KY9N",
-      "verifiedAt": "2026-08-12T11:37:22.498Z",
+      "verifiedAt": "2026-11-01T06:32:36.445Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 15.5,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant29/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "PF03 versus PF03B and PF-SUMP-001 must remain distinct",
+          "No water-level or flood-prevention guarantee",
+          "Exact starting-load fit and protective configuration require confirmation."
+        ]
       }
     },
     {
@@ -358,17 +502,24 @@
       "category": "automation",
       "alternative": "a conventional lamp with a smart bulb or smart plug",
       "asin": "B099MV5XMX",
-      "title": "Smart Table Lamp, Dimmable Desk Lamp with App/Voice Control, LED RGB Color Changing Touch Lamp, Night Lamp for Bedroom Compatible with Alexa",
+      "title": "Hifree T21, Touch + APP + Voice Control",
       "brand": "Hifree",
       "detailUrl": "https://www.amazon.com/dp/B099MV5XMX",
-      "verifiedAt": "2026-08-12T11:39:57.040Z",
+      "verifiedAt": "2026-11-01T06:32:43.224Z",
       "searchRank": 3,
       "sponsoredSearchResult": false,
       "relevanceScore": 13.92,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant29/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "No measured illumination or eye-protection performance",
+          "Adapter contents, light-source replaceability and warranty eligibility unresolved."
+        ]
       }
     },
     {
@@ -378,17 +529,24 @@
       "category": "automation",
       "alternative": "hardwired task lighting with a local control",
       "asin": "B08CCDH8P9",
-      "title": "Smart Under Cabinet Lighting Strip Lights White & Color Changing Dimmable Work with Alexa Google Smart Thing Phone App, RGB Multi Colored Lamp for Kitchen Counter Light Fixture (6 Lights Bar Kit)",
+      "title": "LAMPAOUS YF-P-CA-06 RGBW six-bar kit",
       "brand": "LAMPAOUS",
       "detailUrl": "https://www.amazon.com/dp/B08CCDH8P9",
-      "verifiedAt": "2026-08-12T11:39:35.128Z",
+      "verifiedAt": "2026-11-01T06:34:03.521Z",
       "searchRank": 16,
       "sponsoredSearchResult": false,
       "relevanceScore": 14.9,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant29/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "Six-bar versus ten-strip included-components conflict",
+          "Exact app/network, extension limit and dimmer compatibility unresolved."
+        ]
       }
     },
     {
@@ -397,19 +555,36 @@
       "familyName": "Smart-home wall control panels",
       "category": "automation",
       "alternative": "scene buttons or a securely mounted tablet",
-      "asin": "B07C6LX1NF",
-      "title": "Brilliant Smart Home Control (2-Switch Panel) — Alexa Built-In & Compatible with Ring, Sonos, Hue, Google Nest, Wemo, SmartThings, Apple HomeKit — In-Wall Touchscreen Control for Lights, Music, & More",
-      "brand": "Brilliant",
-      "detailUrl": "https://www.amazon.com/dp/B07C6LX1NF",
-      "verifiedAt": "2026-08-12T11:43:43.384Z",
-      "searchRank": 1,
+      "asin": "B0BNMRHYG5",
+      "title": "SONOFF NSPanel US-format, White one pack (not Pro)",
+      "brand": "SONOFF",
+      "detailUrl": "https://www.amazon.com/dp/B0BNMRHYG5",
+      "verifiedAt": "2026-11-01T06:48:05.098Z",
+      "searchRank": null,
       "sponsoredSearchResult": false,
       "relevanceScore": 15.5,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
-      }
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant29/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "Original Brilliant currently unavailable",
+          "Retail 10 A conflicts with manual 2 A/gang, 4 A total",
+          "Exact supplied US/USW model and box fit require confirmation."
+        ]
+      },
+      "previousSelection": {
+        "asin": "B07C6LX1NF",
+        "title": "Brilliant Smart Home Control (2-Switch Panel) — Alexa Built-In & Compatible with Ring, Sonos, Hue, Google Nest, Wemo, SmartThings, Apple HomeKit — In-Wall Touchscreen Control for Lights, Music, & More",
+        "detailUrl": "https://www.amazon.com/dp/B07C6LX1NF",
+        "observedOn": "2026-11-01",
+        "status": "unavailable",
+        "note": "November 1, 2026: original Brilliant two-switch selection showed Currently unavailable; no discontinuation inferred."
+      },
+      "anchorConfidence": "explicit-task-matched-alternative"
     },
     {
       "site": "smarthome",
@@ -418,17 +593,25 @@
       "category": "automation",
       "alternative": "programmable coffee makers without remote start",
       "asin": "B0B5W2RM9D",
-      "title": "Keurig K-Supreme SMART Single Serve Coffee Maker With WiFi Compatibility, 4 Brew Sizes, And 66oz Removable Reservoir, Compatible with Alexa, White",
+      "title": "Keurig K-Supreme SMART, White, 66 oz (not Plus)",
       "brand": "Keurig",
       "detailUrl": "https://www.amazon.com/dp/B0B5W2RM9D",
-      "verifiedAt": "2026-08-12T11:50:41.822Z",
+      "verifiedAt": "2026-11-01T06:34:17.536Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 14,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant29/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "No Plus feature transfer",
+          "Exact current remote setup and accessory compatibility require confirmation",
+          "No measured brewing or durability result."
+        ]
       }
     },
     {
@@ -437,19 +620,36 @@
       "familyName": "Smart glass-break sensors",
       "category": "access",
       "alternative": "door and window contacts plus professional alarm design",
-      "asin": "B08TG6NCTS",
-      "title": "Ring Alarm Glass Break Sensor – 1-pack",
+      "asin": "B0FP6FV2XX",
+      "title": "Ring Glass Break Sensor, one pack, Sidewalk / Z-Wave selection",
       "brand": "Ring",
-      "detailUrl": "https://www.amazon.com/dp/B08TG6NCTS",
-      "verifiedAt": "2026-08-12T11:49:52.402Z",
-      "searchRank": 1,
+      "detailUrl": "https://www.amazon.com/dp/B0FP6FV2XX",
+      "verifiedAt": "2026-11-01T06:58:51.952Z",
+      "searchRank": null,
       "sponsoredSearchResult": false,
       "relevanceScore": 15.5,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
-      }
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant29/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "Original Alarm one-pack currently unavailable",
+          "Current different ASIN uses Sidewalk or compatible Ring Alarm base",
+          "No measured detection, range or monitoring-service qualification."
+        ]
+      },
+      "previousSelection": {
+        "asin": "B08TG6NCTS",
+        "title": "Ring Alarm Glass Break Sensor – 1-pack",
+        "detailUrl": "https://www.amazon.com/dp/B08TG6NCTS",
+        "observedOn": "2026-11-01",
+        "status": "unavailable",
+        "note": "November 1, 2026: original Ring Alarm one-pack B08TG6NCTS showed Currently unavailable. Current B0FP6FV2XX is a separately identified product."
+      },
+      "anchorConfidence": "explicit-task-matched-alternative"
     },
     {
       "site": "smarthome",
@@ -458,17 +658,25 @@
       "category": "climate",
       "alternative": "manual gauge checks and supplier telemetry",
       "asin": "B09J6MXJKT",
-      "title": "Mopeka Pro Check Bluetooth Propane Tank Sensor, Magnetic, 250 Gallon Max | Bottom-Mount Unit Fits Steel LPG Cylinders, Includes Spacers for 20, 30 and 40 lb Sizes and Uses a Replaceable CR2032 Cell",
+      "title": "Mopeka Pro Check Bluetooth sensor, Pro selection",
       "brand": "Mopeka",
       "detailUrl": "https://www.amazon.com/dp/B09J6MXJKT",
-      "verifiedAt": "2026-08-12T11:49:30.889Z",
+      "verifiedAt": "2026-11-01T06:35:12.100Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 10.667,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant29/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "Retail title 250 gallons versus feature 120 gallons/420 lb",
+          "Do not transfer Universal specifications",
+          "Exact tank geometry, couplant and region fit require confirmation."
+        ]
       }
     },
     {
@@ -477,19 +685,36 @@
       "familyName": "Smart slow cookers",
       "category": "automation",
       "alternative": "manual or programmable slow cookers",
-      "asin": "B07V7GQBB5",
-      "title": "Crock-Pot 6 Quart Programmable Slow Cooker and Food Warmer Works with Alexa, Stainless Steel (2139005)",
-      "brand": "Brand shown on the Amazon listing",
-      "detailUrl": "https://www.amazon.com/dp/B07V7GQBB5",
-      "verifiedAt": "2026-08-12T11:55:57.834Z",
-      "searchRank": 1,
+      "asin": "B004P2NG0K",
+      "title": "Crock-Pot CPSCVC60LL-S Cook & Carry, 6 qt Stainless Steel",
+      "brand": "Crock-Pot",
+      "detailUrl": "https://www.amazon.com/dp/B004P2NG0K",
+      "verifiedAt": "2026-11-01T06:48:13.070Z",
+      "searchRank": null,
       "sponsoredSearchResult": false,
       "relevanceScore": 14,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
-      }
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant29/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "Original model 2139005 retail 220 V / 880 W fields unresolved",
+          "Different local programmable selection; no Alexa or Wi-Fi",
+          "Exact primary manual association and component-care limits require confirmation."
+        ]
+      },
+      "previousSelection": {
+        "asin": "B07V7GQBB5",
+        "title": "Crock-Pot 6 Quart Programmable Slow Cooker and Food Warmer Works with Alexa, Stainless Steel (2139005)",
+        "detailUrl": "https://www.amazon.com/dp/B07V7GQBB5",
+        "observedOn": "2026-11-01",
+        "status": "documentation-unverified",
+        "note": "November 1, 2026: original Alexa model 2139005 showed 220 V / 880 W fields and no confirmed active US offer. Electrical identity remains unresolved."
+      },
+      "anchorConfidence": "explicit-task-matched-alternative"
     },
     {
       "site": "smarthome",
@@ -498,17 +723,25 @@
       "category": "access",
       "alternative": "contact, tilt, or motion sensors chosen for the event",
       "asin": "B07PJT939B",
-      "title": "Aqara Zigbee Vibration Sensor, Wireless Mini Glass Break Detector | For Alarm System, Home Automation, Requires Aqara Hub (not 3rd-Party), Compatible with HomeKit, Alexa, IFTTT, Home Assistant",
+      "title": "Aqara Zigbee Vibration Sensor, original model selection",
       "brand": "Aqara",
       "detailUrl": "https://www.amazon.com/dp/B07PJT939B",
-      "verifiedAt": "2026-08-12T11:55:43.827Z",
+      "verifiedAt": "2026-11-01T06:35:19.926Z",
       "searchRank": 1,
       "sponsoredSearchResult": false,
       "relevanceScore": 14,
       "validation": {
         "directStatus": 200,
         "asinMatched": true,
-        "unavailable": false
+        "unavailable": false,
+        "verificationChannel": "Visible selected Amazon US variant and offer; New York 10001",
+        "observationFile": "continuous-merchant29/retail-raw.json",
+        "suitability": "Conditional; see exact guide for fit, operational and documentation limits",
+        "issues": [
+          "Original sensor not T1/P100",
+          "Not an acoustic glass detector or certified cycle-completion detector",
+          "Regular-price active offer separately observed; no Prime subscription joined."
+        ]
       }
     }
   ],

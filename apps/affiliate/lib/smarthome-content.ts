@@ -4,12 +4,17 @@ const updatedAt = "June 30, 2026";
 
 export const smartHomeProducts: Product[] = [
   {
+"purchaseCheck": "Choose U400 only when the actual door/deadbolt fits and every required entry method has a supported phone/controller path. UWB Apple approach unlocking specifically requires compatible Apple devices and a Thread-enabled Apple home hub; a generic Matter logo does not clear it. Check the selected Black US unit and rechargeable-pack routine. Keep a suitable working lock when UWB adds no useful benefit.",
+"evidenceMode": "research-synthesis",
+"imageAlt": "Editorial illustration of the product category; not a photograph of the selected retail unit.",
+"researchNote": "November 1 selected US10001 identity/offer state and the named manufacturer product, specification or support sections reviewed. This is documented purchase research, not a physical speed, installation, security, alert, comfort or reliability test. Applicable manual scope and remaining revision/service conditions are explicit; no whole-manual claim is implied.",
+
     site: "smarthome",
     slug: "aqara-smart-lock-u400",
     asin: "B0FRS6T6HL",
     amazonTitle: "Aqara UWB Smart Lock U400",
     seoTitle: "Aqara U400 Guide: UWB, Matter over Thread & Door Fit",
-    updatedAt: "July 16, 2026",
+    updatedAt: "November 1, 2026",
     name: "Aqara Smart Lock U400",
     brand: "Aqara",
     category: "access",
@@ -19,38 +24,62 @@ export const smartHomeProducts: Product[] = [
     whyItMatters: "UWB is the headline feature, but the lock still has to fit a single-cylinder deadbolt and connect to the correct Matter controller or Thread border router. The exact regional version and household phone support matter more than the logo list.",
     bestFor: "Apple households that want UWB hands-free entry plus local backup methods",
     priceBand: "$$$$",
-    rating: 4.5,
-    scores: [{ label: "Entry options", value: 9 }, { label: "Ecosystem fit", value: 8 }, { label: "Setup clarity", value: 7 }],
+    rating: 0,
+    scores: [],
     pros: ["UWB approach unlocking on supported devices", "Matter over Thread and Apple Home Key support", "Fingerprint, keypad, NFC, app, and physical-key fallbacks"],
     cons: ["Advanced ecosystem features require compatible controllers and phones", "Single-cylinder deadbolt and door measurements must be checked", "A rechargeable battery creates a charging routine"],
     specs: {
-      ASIN: "B0FRS6T6HL",
-      "Primary network": "Matter over Thread",
-      "Entry methods": "UWB, fingerprint, keypad, Home Key, NFC, app, physical key",
-      "Door type": "Compatible single-cylinder deadbolt; verify dimensions",
-      Battery: "Rechargeable; Aqara states up to 6 months under stated conditions",
-      Weather: "Exterior assembly rated IP65",
-      "Before buying": "Confirm regional version, phone support, Matter controller, and Thread border router",
-      "Link status": "Amazon affiliate link verified July 16, 2026",
-    },
+  "ASIN": "B0FRS6T6HL",
+  "Primary network": "Matter over Thread",
+  "Entry methods": "UWB, fingerprint, keypad, Home Key, NFC, app, physical key",
+  "Door type": "Compatible single-cylinder deadbolt; verify dimensions",
+  "Battery": "Rechargeable; actual service interval depends on use and applicable instructions",
+  "Weather": "Exterior assembly rated IP65",
+  "Before buying": "Confirm regional version, phone support, Matter controller, and Thread border router"
+},
     evidence: ["Aqara lists UWB approach unlocking as the U400's differentiating feature.", "The manufacturer requires a compatible Thread-enabled controller for ecosystem integrations.", "Battery life is an estimate under stated conditions, not a guaranteed interval for every door."],
     editorialSections: [
-      { heading: "The reason to buy the U400", body: "Choose it for UWB approach unlocking, not merely because it is the newer model. Fingerprint and keypad entry already cover most daily routines on cheaper locks." },
-      { heading: "Compatibility comes in layers", body: "The lock, phone, Matter controller, Thread border router, and chosen ecosystem each play a role. Confirm the exact path for every household member before installation." },
-      { heading: "Door fit and fallback", body: "Measure the existing deadbolt and door before checkout. Keep the physical key available and decide where the rechargeable battery will be charged before it becomes urgent." },
-    ],
-    sources: [{ name: "Aqara U400 product page", url: "https://www.aqara.com/us/product/smart-lock-u400/", note: "Features, compatibility, battery, weather rating, and installation requirements." }],
+  {
+    "heading": "The reason to buy the U400",
+    "body": "Choose it for UWB approach unlocking, not merely because it is the newer model. Fingerprint and keypad entry already cover most daily routines on cheaper locks."
+  },
+  {
+    "heading": "Compatibility comes in layers",
+    "body": "UWB approach unlocking requires the supported Apple device and a Thread-enabled Apple home hub identified by Aqara. An arbitrary Matter controller is not an equivalent Apple path. Other entry methods and ecosystems have separate requirements; future Aliro or broader-device wording is not proof that every household phone works today."
+  },
+  {
+    "heading": "Door fit and fallback",
+    "body": "Measure the existing deadbolt and door before checkout. Keep the physical key available and decide where the rechargeable battery will be charged before it becomes urgent."
+  }
+],
+    sources: [
+  {
+    "name": "Aqara U400 product page",
+    "url": "https://www.aqara.com/us/product/smart-lock-u400/",
+    "note": "Features, compatibility, battery, weather rating, and installation requirements."
+  },
+  {
+    "name": "Exact selected US retail identity and offer observation",
+    "url": "https://www.amazon.com/dp/B0FRS6T6HL",
+    "note": "November 1, 2026 US10001 public selection checked. New primary selection and expanded return terms observed; point-in-time seller/delivery/conditions, not a future availability or warranty promise."
+  }
+],
     compareSlugs: ["aqara-smart-lock-u100"],
     offers: [
       { merchant: "Amazon", url: "https://www.amazon.com/dp/B0FRS6T6HL?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check Aqara U400 price on Amazon", priceNote: "Confirm ASIN B0FRS6T6HL, the exact regional version, finish, seller, and included accessories." },
     ],
   },
   {
+"purchaseCheck": "Compare the selected Gray U100 for documented local fingerprint, keypad and Home Key entry on a suitable door. Remote and broader integration paths need the appropriate Aqara hub and ecosystem setup; this is not a direct Matter-over-Thread U400. Check the four-AA routine, mechanical-key fallback, seller and returns. Keep a suitable existing lock when those extra methods do not help.",
+"evidenceMode": "research-synthesis",
+"imageAlt": "Editorial illustration of the product category; not a photograph of the selected retail unit.",
+"researchNote": "November 1 selected US10001 identity/offer state and the named manufacturer product, specification or support sections reviewed. This is documented purchase research, not a physical speed, installation, security, alert, comfort or reliability test. Applicable manual scope and remaining revision/service conditions are explicit; no whole-manual claim is implied.",
+
     site: "smarthome",
     slug: "aqara-smart-lock-u100",
     asin: "B0BZSD2L1W",
     seoTitle: "Aqara U100 Guide: Home Key, Fingerprint & Hub Requirements",
-    updatedAt,
+    "updatedAt": "November 1, 2026",
     name: "Aqara Smart Lock U100",
     brand: "Aqara",
     category: "access",
@@ -60,8 +89,8 @@ export const smartHomeProducts: Product[] = [
     whyItMatters: "A smart lock can work well locally while its remote features remain unavailable. Decide whether local entry is enough or whether an Aqara hub and compatible ecosystem controller belong in the budget.",
     bestFor: "Fingerprint and Apple Home Key entry without paying for UWB",
     priceBand: "$$$",
-    rating: 4.4,
-    scores: [{ label: "Entry options", value: 9 }, { label: "Value", value: 8 }, { label: "Remote setup", value: 6 }],
+    rating: 0,
+    scores: [],
     pros: ["Fingerprint, keypad, Apple Home Key, NFC, app, and key entry", "Stores multiple fingerprints and temporary codes", "Replaceable AA batteries simplify the power routine"],
     cons: ["Aqara hub is required for remote and broader third-party functions", "Zigbee architecture is less direct than Matter-over-Thread locks", "Door dimensions and deadbolt type still require checking"],
     specs: {
@@ -79,21 +108,39 @@ export const smartHomeProducts: Product[] = [
       { heading: "Keep entry boring", body: "Enroll more than one fingerprint per frequent user, save a keypad fallback, and keep the physical key accessible outside the locked home." },
     ],
     sources: [
-      { name: "Aqara U100 product page", url: "https://www.aqara.com/us/product/smart-lock-u100/", note: "Entry methods, Zigbee, hub, battery, and fit information." },
-      { name: "Aqara US U100 listing", url: "https://us.aqara.com/products/smart-lock-u100", note: "Current US model positioning and specifications." },
-    ],
+  {
+    "name": "Aqara U100 product page",
+    "url": "https://www.aqara.com/us/product/smart-lock-u100/",
+    "note": "Entry methods, Zigbee, hub, battery, and fit information."
+  },
+  {
+    "name": "Aqara US U100 listing",
+    "url": "https://us.aqara.com/products/smart-lock-u100",
+    "note": "Current US model positioning and specifications."
+  },
+  {
+    "name": "Exact selected US retail identity and offer observation",
+    "url": "https://www.amazon.com/dp/B0BZSD2L1W",
+    "note": "November 1, 2026 US10001 public selection checked. New primary selection and expanded return terms observed; point-in-time seller/delivery/conditions, not a future availability or warranty promise."
+  }
+],
     compareSlugs: ["aqara-smart-lock-u400"],
     offers: [
       { merchant: "Amazon", url: "https://amzn.to/4ybD4SS", label: "Check Aqara U100 price on Amazon", priceNote: "Confirm ASIN B0BZSD2L1W, finish, seller, and included accessories." },
     ],
   },
   {
+"purchaseCheck": "This exact purchase is Nickel Silver Doorbell Plus 2nd Gen plus White Chime Plus, not the standalone doorbell. Match the US power/installation instructions and budget the current paid recording plan separately; saved history is not included merely by buying hardware. November 1 expanded returns allow possible shipping fees. Keep an adequate doorbell; choose another documented recording path if the plan is unsuitable.",
+"evidenceMode": "research-synthesis",
+"imageAlt": "Editorial illustration of the product category; not a photograph of the selected retail unit.",
+"researchNote": "November 1 selected US10001 identity/offer state and the named manufacturer product, specification or support sections reviewed. This is documented purchase research, not a physical speed, installation, security, alert, comfort or reliability test. Applicable manual scope and remaining revision/service conditions are explicit; no whole-manual claim is implied.",
+
     site: "smarthome",
     slug: "ring-battery-doorbell-plus-2nd-gen",
     asin: "B0H2FZR33K",
     amazonTitle: "Ring Battery Doorbell Plus (2nd Gen) with Chime Plus",
     seoTitle: "Ring Battery Doorbell Plus 2nd Gen Guide: 2K Video & Subscription",
-    updatedAt: "July 16, 2026",
+    updatedAt: "November 1, 2026",
     name: "Ring Battery Doorbell Plus (2nd Gen)",
     brand: "Ring",
     category: "cameras",
@@ -103,41 +150,72 @@ export const smartHomeProducts: Product[] = [
     whyItMatters: "Doorbell value depends on what happens after an alert. Recording history and some advanced Ring features depend on a paid plan, so compare the long-term service choice before treating the hardware price as the total cost.",
     bestFor: "Alexa households that want a removable battery and polished Ring app",
     priceBand: "$$$",
-    rating: 4.3,
-    scores: [{ label: "App experience", value: 9 }, { label: "Power flexibility", value: 8 }, { label: "No-plan value", value: 5 }],
+    rating: 0,
+    scores: [],
     pros: ["2K video with a square head-to-toe view", "Removable battery plus optional 8–24VAC wiring", "Dual-band Wi-Fi 6 and broad Ring/Alexa ecosystem"],
     cons: ["Recording history and some features require a Ring plan", "The linked Amazon offer is a Doorbell Plus and Chime Plus bundle", "Frequent motion can shorten the charging interval"],
     specs: {
-      ASIN: "B0H2FZR33K",
-      Video: "Retinal 2K",
-      "Field of view": "140° horizontal × 140° vertical; 178° diagonal",
-      Power: "Quick-release battery or optional 8–24VAC hardwire",
-      Network: "Dual-band Wi-Fi 6",
-      Weather: "IP55",
-      "Linked offer": "Battery Doorbell Plus (2nd Gen) with Chime Plus",
-      "Link status": "Amazon affiliate link verified July 16, 2026",
-    },
+  "ASIN": "B0H2FZR33K",
+  "Video": "Retinal 2K",
+  "Field of view": "140° horizontal × 140° vertical, 1:1 aspect ratio in the current US retail technical table",
+  "Power": "Quick-release battery or optional 8–24 VAC hardwire",
+  "Network": "Dual-band Wi-Fi 6",
+  "Weather": "IP55",
+  "Linked offer": "Battery Doorbell Plus (2nd Gen) with Chime Plus"
+},
     evidence: ["Ring lists 2K video, 6× zoom, and a 140° by 140° view.", "Optional low-voltage wiring can keep the removable battery charged but does not turn it into every wired Ring model.", "Recording and advanced feature availability changes with the selected Ring plan."],
     editorialSections: [
-      { heading: "The bundle is not the standalone doorbell", body: "The Amazon link supplied for this guide includes Chime Plus. Compare the bundle price against the standalone hardware before checkout and confirm the exact contents in the cart." },
-      { heading: "Price the subscription separately", body: "Live view and alerts are not the same as saved event history. Check Ring's current plan matrix for the features and cameras you intend to cover." },
-      { heading: "Battery or wire", body: "Battery installation offers placement flexibility. Existing compatible low-voltage wiring can reduce charging work, but voltage and transformer condition still need checking." },
-    ],
-    sources: [
-      { name: "Ring Battery Doorbell Plus (2nd Gen)", url: "https://ring.com/products/battery-doorbell-plus-2nd-gen", note: "Video, view, power, network, and plan information." },
-      { name: "Ring product support", url: "https://ring.com/support/products/doorbells/battery-doorbell-plus-2nd-gen?page=1", note: "Setup and model-specific support." },
-    ],
-    compareSlugs: ["eufy-video-doorbell-e340", "tapo-d210-video-doorbell"],
-    offers: [
-      { merchant: "Amazon", url: "https://www.amazon.com/dp/B0H2FZR33K?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check Ring + Chime Plus bundle on Amazon", priceNote: "Confirm ASIN B0H2FZR33K, the 2nd Gen doorbell, Chime Plus, finish, and current plan trial." },
-    ],
+  {
+    "heading": "The bundle is not the standalone doorbell",
+    "body": "The Amazon link supplied for this guide includes Chime Plus. Compare the bundle price against the standalone hardware before checkout and confirm the exact contents in the cart."
   },
   {
+    "heading": "Price the subscription separately",
+    "body": "Live view and basic alerts differ from saved event history. Read the current US Ring plan matrix for the intended cameras, recording and advanced features; a Chime Plus bundle does not include a permanent recording plan. November 1 expanded bundle returns said shipping fees may apply. Do not compare it as a standalone doorbell or promise free returns."
+  },
+  {
+    "heading": "Battery or wire",
+    "body": "Battery installation offers placement flexibility. Existing compatible low-voltage wiring can reduce charging work, but voltage and transformer condition still need checking."
+  }
+],
+    sources: [
+  {
+    "name": "Ring Battery Doorbell Plus (2nd Gen)",
+    "url": "https://ring.com/products/battery-doorbell-plus-2nd-gen",
+    "note": "Video, view, power, network, and plan information."
+  },
+  {
+    "name": "Ring product support",
+    "url": "https://ring.com/support/products/doorbells/battery-doorbell-plus-2nd-gen?page=1",
+    "note": "Setup and model-specific support."
+  },
+  {
+    "name": "Exact selected US bundle: identity,offer and manufacturer technical details",
+    "url": "https://www.amazon.com/dp/B0H2FZR33K",
+    "note": "November 1, 2026 US10001 public selection checked. New primary selection and expanded return terms observed; point-in-time seller/delivery/conditions, not a future availability or warranty promise. Possible return-shipping fees; not free returns. US selected bundle technical table:2K, 140 × 140 view, Wi-Fi6dual-band, IP55 and compatible8–24 VAC wiring conditions. Root Ring page redirected to Spain in the reader; no Spanish warranty, plan or package terms transferred."
+  }
+],
+    compareSlugs: ["eufy-video-doorbell-e340", "tapo-d210-video-doorbell"],
+    offers: [
+  {
+    "merchant": "Amazon",
+    "url": "https://www.amazon.com/dp/B0H2FZR33K?tag=madasmart-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+    "label": "Check Ring + Chime Plus bundle on Amazon",
+    "priceNote": "Exact Nickel Silver 2nd Gen doorbell + White Chime Plus; paid recording separate. Current returns may charge shipping."
+  }
+],
+  },
+  {
+"purchaseCheck": "Compare this battery-only D210 and included chime when2.4 GHz Wi-Fi, the view and a separate compatible microSD card meet the entrance need. Confirm V1/V2 before using a battery or sensor figure; do not borrow D225 hardwire features. Keep an adequate current doorbell. Recheck the selected New unit, included parts, seller and recording ownership requirements.",
+"evidenceMode": "research-synthesis",
+"imageAlt": "Editorial illustration of the product category; not a photograph of the selected retail unit.",
+"researchNote": "November 1 selected US10001 identity/offer state and the named manufacturer product, specification or support sections reviewed. This is documented purchase research, not a physical speed, installation, security, alert, comfort or reliability test. Applicable manual scope and remaining revision/service conditions are explicit; no whole-manual claim is implied.",
+
     site: "smarthome",
     slug: "tapo-d210-video-doorbell",
     asin: "B0D8M6GNP3",
     seoTitle: "Tapo D210 Guide: 2K Doorbell, Local Storage & Battery",
-    updatedAt: "July 28, 2026",
+    updatedAt: "November 1, 2026",
     name: "Tapo D210 Video Doorbell",
     brand: "Tapo",
     category: "cameras",
@@ -147,8 +225,8 @@ export const smartHomeProducts: Product[] = [
     whyItMatters: "Tapo's closely named doorbells have different power options, and TP-Link also publishes different D210 battery and sensor specifications by hardware version. The supplied Amazon listing is D210 rather than D225, but buyers must still verify D210 V1 or V2 before relying on one battery-capacity or detection specification.",
     bestFor: "Battery installation with local microSD storage and no required recording plan",
     priceBand: "$",
-    rating: 4.4,
-    scores: [{ label: "No-plan value", value: 9 }, { label: "Image coverage", value: 8 }, { label: "Power flexibility", value: 6 }],
+    rating: 0,
+    scores: [],
     pros: ["2K 3MP video and 160° diagonal head-to-toe view", "Local microSD recording up to 512GB plus optional Tapo Care", "Included indoor chime and free person detection"],
     cons: ["Battery-only D210 requires periodic charging", "2.4GHz Wi-Fi only", "microSD card is not included"],
     specs: {
@@ -172,18 +250,36 @@ export const smartHomeProducts: Product[] = [
       { heading: "Plan the charging route", body: "Battery life varies with events, live view, temperature, and settings. Make sure the doorbell can be removed and charged without turning the entrance into a recurring project." },
     ],
     sources: [
-      { name: "TP-Link Tapo D210 current US product page", url: "https://www.tp-link.com/us/smart-home/smart-doorbell/tapo-d210/", note: "Official current US page and V2 specifications, including the listed 5200mAh battery and current detection details." },
-      { name: "TP-Link Tapo D210 V1 US product page", url: "https://www.tp-link.com/us/smart-home/smart-doorbell/tapo-d210/v1/", note: "Official US V1 specifications, including the listed 6400mAh battery and V1 detection details." },
-    ],
+  {
+    "name": "TP-Link Tapo D210 current US product page",
+    "url": "https://www.tp-link.com/us/smart-home/smart-doorbell/tapo-d210/",
+    "note": "Official current US page and V2 specifications, including the listed 5200 mAh battery and current detection details."
+  },
+  {
+    "name": "TP-Link Tapo D210 V1 US product page",
+    "url": "https://www.tp-link.com/us/smart-home/smart-doorbell/tapo-d210/v1/",
+    "note": "Official US V1 specifications, including the listed 6400 mAh battery and V1 detection details."
+  },
+  {
+    "name": "Exact selected US retail identity and offer observation",
+    "url": "https://www.amazon.com/dp/B0D8M6GNP3",
+    "note": "November 1, 2026 US10001 public selection checked. New primary selection and expanded return terms observed; point-in-time seller/delivery/conditions, not a future availability or warranty promise."
+  }
+],
     compareSlugs: ["ring-battery-doorbell-plus-2nd-gen"],
     offers: [{ merchant: "Amazon", url: "https://amzn.to/4wc5nhZ", label: "Check Tapo D210 price on Amazon", priceNote: "Confirm ASIN B0D8M6GNP3, model D210 rather than D225, hardware version, listed battery capacity, included chime, seller, and return path." }],
   },
   {
+"purchaseCheck": "Clear the exact 24 VAC system and C-wire or supported PEK path before choosing the selected Comfort and Security bundle. It includes door/window sensors and a selected 30-day service option; do not assume a free or permanent subscription. Siri additionally needs the documented Apple home hub. November 1 returns may charge shipping. Keep an adequate thermostat and use a qualified installer when system identity is unclear.",
+"evidenceMode": "research-synthesis",
+"imageAlt": "Editorial illustration of the product category; not a photograph of the selected retail unit.",
+"researchNote": "November 1 selected US10001 identity/offer state and the named manufacturer product, specification or support sections reviewed. This is documented purchase research, not a physical speed, installation, security, alert, comfort or reliability test. Applicable manual scope and remaining revision/service conditions are explicit; no whole-manual claim is implied.",
+
     site: "smarthome",
     slug: "ecobee-smart-thermostat-premium",
     asin: "B0B1X7G9J2",
     seoTitle: "ecobee Smart Thermostat Premium Guide: Wiring, Sensors & Bundle",
-    updatedAt,
+    "updatedAt": "November 1, 2026",
     name: "ecobee Smart Thermostat Premium",
     brand: "ecobee",
     category: "climate",
@@ -193,37 +289,75 @@ export const smartHomeProducts: Product[] = [
     whyItMatters: "Thermostat installation is an HVAC compatibility decision first. Confirm wiring and equipment support before valuing sensors, voice control, air-quality trends, or optional security services.",
     bestFor: "Room-aware comfort and broad ecosystem support on a compatible 24VAC system",
     priceBand: "$$$$",
-    rating: 4.5,
-    scores: [{ label: "Room sensing", value: 9 }, { label: "Ecosystem fit", value: 9 }, { label: "Bundle clarity", value: 6 }],
-    pros: ["Room SmartSensor support and occupancy-based comfort features", "Built-in air-quality, humidity, occupancy, Alexa, and Siri features", "Supports Apple Home, Alexa, Google Assistant, and SmartThings"],
-    cons: ["HVAC compatibility and power wiring must be checked", "Some security features require an optional subscription", "The linked offer adds door/window sensors and a security trial"],
+    rating: 0,
+    scores: [],
+    pros: [
+  "Room SmartSensor support and occupancy-based comfort features",
+  "Air-quality, humidity and occupancy features; Alexa Built-in and Siri with the documented Apple home hub",
+  "Supports Apple Home, Alexa, Google Assistant, and SmartThings"
+],
+    cons: [
+  "HVAC compatibility and power wiring must be checked",
+  "Some security features require an optional subscription",
+  "The linked offer adds door/window sensors and a selected 30-day Smart Security option"
+],
     specs: {
-      HVAC: "Most 24VAC systems; verify exact equipment",
-      Power: "C-wire or included Power Extender Kit for supported systems",
-      Sensors: "Thermostat sensors plus compatible ecobee SmartSensors",
-      Network: "Dual-band Wi-Fi",
-      Ecosystems: "Apple Home, Alexa, Google Assistant, SmartThings",
-      "Linked offer": "Comfort and Security Bundle with door/window sensors and trial",
-    },
+  "HVAC": "Most 24 VAC systems; verify exact equipment",
+  "Power": "C-wire or included Power Extender Kit for supported systems",
+  "Sensors": "Thermostat sensors plus compatible ecobee SmartSensors",
+  "Network": "Dual-band Wi-Fi",
+  "Ecosystems": "Apple Home, Alexa, Google Assistant, SmartThings",
+  "Linked offer": "Comfort and Security Bundle; door/window two-pack and selected 30-day service option"
+},
     evidence: ["ecobee provides a system compatibility checker and documents C-wire or PEK power paths.", "The Premium thermostat includes air-quality and occupancy sensing.", "Security alerts and services have separate subscription boundaries."],
     editorialSections: [
-      { heading: "Check the HVAC before the app", body: "Photograph and label old wiring, identify system type, and use ecobee's compatibility checker. Multi-stage, heat-pump, accessory, and proprietary systems deserve extra care." },
-      { heading: "Understand the linked bundle", body: "The supplied Amazon offer is not just the standard thermostat package. It includes door/window sensors and a Smart Security trial, so compare its price with the current thermostat-only option." },
-      { heading: "Room sensors need a plan", body: "Place sensors where comfort problems actually occur and understand how participating sensors influence the schedule. More sensors do not automatically fix airflow or equipment sizing." },
-    ],
-    sources: [{ name: "ecobee Smart Thermostat Premium", url: "https://www.ecobee.com/en-us/smart-thermostats/smart-thermostat-premium/", note: "Compatibility, power, sensors, ecosystem, and service features." }],
-    compareSlugs: ["google-nest-learning-thermostat-4th-gen"],
-    offers: [
-      { merchant: "Amazon", url: "https://amzn.to/4aoAX3U", label: "Check ecobee Comfort and Security bundle on Amazon", priceNote: "ASIN B0B1X7G9J2 is a bundle with door/window sensors and a trial; compare with thermostat-only pricing." },
-    ],
+  {
+    "heading": "Check the HVAC before the app",
+    "body": "Photograph and label old wiring, identify system type, and use ecobee's compatibility checker. Multi-stage, heat-pump, accessory, and proprietary systems deserve extra care."
   },
   {
+    "heading": "Understand the linked bundle",
+    "body": "The selected offer combines Smart Thermostat Premium with its room SmartSensor and a door/window sensor two-pack. The selected pattern names a 30-day subscription option; confirm its actual charge, renewal and cancellation terms rather than assume a free trial. The maker requires HomePod/HomePod mini and compatible Apple software to enable Siri. Current return shipping may be charged."
+  },
+  {
+    "heading": "Room sensors need a plan",
+    "body": "Place sensors where comfort problems actually occur and understand how participating sensors influence the schedule. More sensors do not automatically fix airflow or equipment sizing."
+  }
+],
+    sources: [
+  {
+    "name": "ecobee Smart Thermostat Premium",
+    "url": "https://www.ecobee.com/en-us/smart-thermostats/smart-thermostat-premium/",
+    "note": "Compatibility, power, sensors, ecosystem, and service features."
+  },
+  {
+    "name": "Exact selected US retail identity and offer observation",
+    "url": "https://www.amazon.com/dp/B0B1X7G9J2",
+    "note": "November 1, 2026 US10001 public selection checked. New primary selection and expanded return terms observed; point-in-time seller/delivery/conditions, not a future availability or warranty promise. Possible return-shipping fees; not free returns."
+  }
+],
+    compareSlugs: ["google-nest-learning-thermostat-4th-gen"],
+    offers: [
+  {
+    "merchant": "Amazon",
+    "url": "https://www.amazon.com/dp/B0B1X7G9J2?tag=madasmart-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+    "label": "Check ecobee Comfort and Security bundle on Amazon",
+    "priceNote": "Exact Comfort and Security bundle with door/window sensors and selected 30-day service option; confirm service charge/renewal and possible return-shipping fees."
+  }
+],
+  },
+  {
+"purchaseCheck": "Compare the selected Polished Gold 4th Gen plus temperature sensor only after Google’s current HVAC and power compatibility checks pass. Matter does not approve wiring or every ecosystem feature. Some systems need a C-wire or documented power accessory. Keep an adequate thermostat; do not replace equipment merely for a display or promise that a remote sensor repairs airflow.",
+"evidenceMode": "research-synthesis",
+"imageAlt": "Editorial illustration of the product category; not a photograph of the selected retail unit.",
+"researchNote": "November 1 selected US10001 identity/offer state and the named manufacturer product, specification or support sections reviewed. This is documented purchase research, not a physical speed, installation, security, alert, comfort or reliability test. Applicable manual scope and remaining revision/service conditions are explicit; no whole-manual claim is implied.",
+
     site: "smarthome",
     slug: "google-nest-learning-thermostat-4th-gen",
     asin: "B01HHQZHRK",
     amazonTitle: "Google Nest Learning Thermostat (4th Gen) with Nest Temperature Sensor",
     seoTitle: "Nest Learning Thermostat 4th Gen Guide: Matter, Wiring & Sensor",
-    updatedAt: "July 16, 2026",
+    updatedAt: "November 1, 2026",
     name: "Google Nest Learning Thermostat (4th Gen)",
     brand: "Google Nest",
     category: "climate",
@@ -233,20 +367,19 @@ export const smartHomeProducts: Product[] = [
     whyItMatters: "A Matter logo does not bypass HVAC wiring requirements. Use Google's compatibility checker for the exact system, then decide whether learning behavior and the included remote sensor address a real comfort problem.",
     bestFor: "Google Home households that want a polished learning thermostat and remote sensor",
     priceBand: "$$$$",
-    rating: 4.4,
-    scores: [{ label: "Interface", value: 9 }, { label: "Automation", value: 8 }, { label: "Compatibility clarity", value: 7 }],
+    rating: 0,
+    scores: [],
     pros: ["Large 2.7-inch 600×600 display", "Matter support and Google Home app control", "The supplied offer includes a Nest Temperature Sensor"],
     cons: ["Exact 24V HVAC and power compatibility must be checked", "Some advanced household integrations remain ecosystem-dependent", "Premium display and design raise the purchase price"],
     specs: {
-      ASIN: "B01HHQZHRK",
-      Display: "2.7-inch, 600 × 600",
-      Sensors: "Temperature, humidity, ambient light, and Soli presence sensing",
-      HVAC: "Most 24V systems; verify exact equipment",
-      Network: "Dual-band Wi-Fi",
-      "Smart home": "Matter; Google Home app",
-      "Linked offer": "Polished Gold thermostat with Nest Temperature Sensor",
-      "Link status": "Amazon affiliate link verified July 16, 2026",
-    },
+  "ASIN": "B01HHQZHRK",
+  "Display": "2.7-inch, 600 × 600",
+  "Sensors": "Temperature, humidity, ambient light, and Soli presence sensing",
+  "HVAC": "Most 24 V systems; verify exact equipment",
+  "Network": "Dual-band Wi-Fi",
+  "Smart home": "Matter; Google Home app",
+  "Linked offer": "Polished Gold thermostat with Nest Temperature Sensor"
+},
     evidence: ["Google lists a 2.7-inch 600×600 display and built-in environmental sensing.", "The thermostat supports Matter but still requires compatible HVAC equipment and power.", "The supplied Amazon title includes a remote Nest Temperature Sensor."],
     editorialSections: [
       { heading: "Run the compatibility check first", body: "Do not infer compatibility from the previous thermostat's shape or wire count. Identify the HVAC terminals and use Google's current checker before purchase or removal." },
@@ -254,9 +387,17 @@ export const smartHomeProducts: Product[] = [
       { heading: "Use the remote sensor intentionally", body: "Place the included sensor in a room with a known temperature problem, away from direct sun, drafts, and heat sources. It cannot repair airflow or an oversized HVAC system." },
     ],
     sources: [
-      { name: "Google Nest Learning Thermostat 4th Gen specifications", url: "https://store.google.com/product/nest_learning_thermostat_4th_gen_specs?hl=en-US", note: "Display, sensors, network, and compatibility specifications." },
-      { name: "Google Nest thermostat compatibility", url: "https://support.google.com/googlenest/answer/9230098", note: "HVAC and wiring compatibility guidance." },
-    ],
+  {
+    "name": "Google Nest thermostat technical specifications and compatibility links",
+    "url": "https://support.google.com/googlehome/answer/9230098",
+    "note": "Current4th Gen model, display, sensors, network,24VHVAC and conditional C-wire/power-accessory guidance. The former Store specs URL redirected to Japan; no Japanese-market information used. Follow the exact-system checker linked from this primary help page."
+  },
+  {
+    "name": "Exact selected US retail identity and offer observation",
+    "url": "https://www.amazon.com/dp/B01HHQZHRK",
+    "note": "November 1, 2026 US10001 public selection checked. New primary selection and expanded return terms observed; point-in-time seller/delivery/conditions, not a future availability or warranty promise."
+  }
+],
     compareSlugs: ["ecobee-smart-thermostat-premium"],
     offers: [
       { merchant: "Amazon", url: "https://www.amazon.com/dp/B01HHQZHRK?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check Nest 4th Gen bundle on Amazon", priceNote: "Confirm ASIN B01HHQZHRK, the Polished Gold finish, included temperature sensor, seller, and HVAC compatibility." },

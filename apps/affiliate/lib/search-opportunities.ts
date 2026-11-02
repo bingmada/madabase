@@ -623,7 +623,7 @@ export const searchOpportunities: SearchOpportunity[] = [
     kind: "product",
     slug: "momcozy-purehug-baby-carrier",
     query: "Is Momcozy PureHug suitable from birth, and which carry positions are documented?",
-    answer: "The exact PureHug Black page recommends 3–24 months and 7–45lb, so reaching 7lb does not make it suitable from birth. It documents front carry facing inward; require both the age and weight gates, check panel and airway fit, and do not infer back, hip, or outward-facing support from generic marketplace images. Confirm ASIN B0CDQ2KVJD and the standard-versus-Air-Mesh variation before ordering.",
+    answer: "PureHug Black’s current page starts at three months and has 44/45 lb upper-limit differences. It now advertises back carry, but matching original back-position instructions and the exact B0CDQ2KVJD revision remain unconfirmed. Do not treat 7 lb as newborn approval or marketing as a complete mode procedure. Pause an unresolved identity and confirm the exact fabric, instructions and return terms.",
     updatedAt: "July 31, 2026",
     preferredPaths: ["/best/momcozy-purehug-vs-ergobaby-omni-breeze", "/reviews/ergobaby-omni-breeze-carrier", "/guides/baby-carrier-hot-weather-and-caregiver-fit-guide"],
   },
@@ -632,7 +632,7 @@ export const searchOpportunities: SearchOpportunity[] = [
     kind: "product",
     slug: "babybjorn-carrier-mini-3d-mesh",
     query: "How long is BabyBjörn Carrier Mini useful, and can it be used for back carry?",
-    answer: "Carrier Mini is designed for simple front loading and shorter early-stage carries within the exact model's current listed range. The linked 3D Mesh model is listed for 7–25 lb and does not provide a back-carry position; outward carry is also not a newborn setup. Confirm the material, baby fit, current manual, seller, and return terms before ordering.",
+    answer: "Mini has front inward and eligible outward positions, with no back carry. The current US page lists 7–24 lb while the linked manual lists 7–25 lb, so confirm the exact supplied version rather than extending use from the higher number. Apply minimum length, head support, leg straps and later outward-readiness conditions together. Keep a suitable existing carrier when it already meets the need.",
     updatedAt: portfolioBatchUpdatedAt,
     preferredPaths: ["/best/babybjorn-mini-vs-harmony", "/reviews/babybjorn-carrier-harmony", "/guides/babybjorn-harmony-newborn-fit-checklist"],
   },
@@ -641,7 +641,7 @@ export const searchOpportunities: SearchOpportunity[] = [
     kind: "guide",
     slug: "babybjorn-harmony-newborn-fit-checklist",
     query: "Can a newborn use BabyBjörn Carrier Harmony safely?",
-    answer: "Harmony may be used only after the baby meets the current listed minimums and the carrier is configured for front-inward newborn use. Follow the exact manual for the zipper, seat, leg, and head-support settings; keep the face visible and chin clear of the chest. Adjust every caregiver separately, begin with a short supported carry, and stop immediately if the baby slumps or the airway becomes obscured.",
+    answer: "Resolve Harmony’s linked US manual first: its chart starts at 7 lb but its warning at 8 lb, and leg-strap statements also differ. Confirm instructions matching the exact unit before use; passing one number does not resolve the setup conflict. Use only the applicable inward newborn configuration with required head support, visible unobstructed airway and caregiver adjustments. Pause when instructions or fit remain unknown.",
     updatedAt: portfolioBatchUpdatedAt,
     preferredPaths: ["/reviews/babybjorn-carrier-harmony", "/best/babybjorn-mini-vs-harmony", "/best/babybjorn-harmony-vs-ergobaby-omni-breeze"],
   },
@@ -650,7 +650,7 @@ export const searchOpportunities: SearchOpportunity[] = [
     kind: "roundup",
     slug: "momcozy-purehug-vs-ergobaby-omni-breeze",
     query: "Is Ergobaby Omni Breeze worth paying more for than Momcozy PureHug?",
-    answer: "Pay more for Omni Breeze when its open mesh, hip-carry option, broader model-specific instructions, or mature position system solves a real need. PureHug remains the value direction when its exact current model, inward-carry setup, waistband, and cross-back strap path fit both the baby and caregiver. Do not choose from price alone; compare the manuals, developmental limits, seller, material, and usable return path.",
+    answer: "Compare Breeze for a documented outward, hip or back position that has a real job and meets its own requirements. PureHug Black’s current 44/45 lb and back-mode wording remains unresolved against exact original instructions, so it is not a verified value alternative here. Compare exact versions, fit and actual current offers after those questions are resolved; keep an existing suitable carrier when no gap remains.",
     updatedAt: portfolioBatchUpdatedAt,
     preferredPaths: ["/reviews/momcozy-purehug-baby-carrier", "/reviews/ergobaby-omni-breeze-carrier", "/guides/baby-carrier-hot-weather-and-caregiver-fit-guide"],
   },
@@ -659,7 +659,7 @@ export const searchOpportunities: SearchOpportunity[] = [
     kind: "guide",
     slug: "ergobaby-omni-breeze-vs-babybjorn-harmony-by-age",
     query: "Ergobaby Omni Breeze or BabyBjörn Harmony: which carrier fits each stage better?",
-    answer: "For newborn use, choose only after both caregivers can achieve the current inward-facing setup, visible airway, and head support. In later months, compare milestone-gated outward carry, waistband comfort, mesh, and back-carry workflow. Age alone does not approve a position, so the exact manual, baby's size and control, caregiver fit, and return path should decide.",
+    answer: "Breeze and Harmony have different position conditions. Harmony’s linked manual has conflicting newborn minimum/leg-strap statements, outward use limited to 26 lb with suitable head control, and back carry from 12 months. Breeze’s outward, hip and back positions use its own size and developmental rules. Confirm the exact instructions and fit rather than approving a position from age or an overall weight range.",
     updatedAt: portfolioBatchUpdatedAt,
     preferredPaths: ["/reviews/ergobaby-omni-breeze-carrier", "/reviews/babybjorn-carrier-harmony", "/best/babybjorn-harmony-vs-ergobaby-omni-breeze"],
   },
@@ -1030,7 +1030,11 @@ export function searchOpportunityBacklinks(site: SiteKey, kind: SearchOpportunit
   return searchOpportunities.filter(
     (opportunity) =>
       opportunity.site === site &&
+      !(site === "homeoffice" && kind === "guide" && slug === "ergonomic-split-keyboards-compatibility-and-fit-guide"
+        && opportunity.kind === "product" && opportunity.slug === "hon-ignition-2-0-chair") &&
       `${opportunity.kind}:${opportunity.slug}` !== `${kind}:${slug}` &&
+      !(site === "baby" && kind === "guide" && slug === "baby-wipe-warmers-buying-guide"
+        && opportunity.kind === "product" && opportunity.slug === "momcozy-mw05-portable-milk-warmer") &&
       searchOpportunityLinks(opportunity).some((link) => link.href === sourcePath),
   );
 }

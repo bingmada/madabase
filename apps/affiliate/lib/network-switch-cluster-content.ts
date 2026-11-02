@@ -10,11 +10,11 @@ export const networkSwitchClusterProducts: Product[] = [
     slug: "tp-link-tl-sg105-m2-2-5g-switch",
     asin: "B08ZHGT2ZP",
     amazonTitle: "TP-Link TL-SG105-M2 5-Port 2.5G Unmanaged Switch",
-    seoTitle: "TP-Link TL-SG105-M2 Guide: 5-Port 2.5G Switch & Version Risks",
-    updatedAt,
+    seoTitle: "TP-Link TL-SG105-M2: Five-Port Fit",
+    "updatedAt": "November 1, 2026",
     evidenceMode: "official-spec",
     researchNote:
-      "We have not bench-tested this switch. This guide uses TP-Link's current US product and support pages plus the exact Amazon listing identity. Throughput, heat, and link stability still depend on the connected devices, cabling, workload, and hardware version.",
+      "We have not bench-tested this switch. This guide uses TP-Link's current US product and support pages plus the exact Amazon listing identity. Throughput, heat, and link stability still depend on the connected devices, cabling, workload, and hardware version. The November 1, 2026 US retail observation is for ZIP 10001 and the exact ASIN. It is not a delivery, warranty, physical-revision or performance guarantee.",
     name: "TP-Link TL-SG105-M2 5-Port 2.5G Switch",
     brand: "TP-Link",
     category: "wired",
@@ -27,12 +27,8 @@ export const networkSwitchClusterProducts: Product[] = [
       "A typical upstream link consumes one port. Counting the NAS, mesh node, access point, desktop, dock, and spare connection before checkout prevents a compact bargain from becoming an immediate replacement.",
     bestFor: "Five-port 2.5GbE expansion with detailed official documentation",
     priceBand: "$$",
-    rating: 4.5,
-    scores: [
-      { label: "Port-speed value", value: 9 },
-      { label: "Setup simplicity", value: 9 },
-      { label: "Growth room", value: 5 },
-    ],
+    rating: 0,
+    scores: [],
     pros: [
       "Five auto-negotiating 100M, 1G, and 2.5G RJ45 ports",
       "Fanless metal enclosure with desktop or wall-mount placement",
@@ -62,23 +58,31 @@ export const networkSwitchClusterProducts: Product[] = [
       "Amazon confirms the exact model, but seller, price, delivery region, and stock remain checkout checks",
     ],
     editorialSections: [
-      {
-        heading: "The five-port budget is the buying decision",
-        body: "One port normally connects upstream to a router or another switch. That leaves four ports for a NAS, desktop, access point, mesh node, dock, or test adapter. If all four are already named, start with an eight-port switch instead of planning an immediate daisy chain.",
-      },
-      {
-        heading: "Fanless does not mean heat-free",
-        body: "TP-Link lists a fanless metal chassis and a maximum power draw of 12.11W. Leave space around the enclosure and do not bury it under power bricks or fabric. Ambient temperature, traffic, and hardware revision can change how warm it feels.",
-      },
-      {
-        heading: "Unmanaged keeps setup simple",
-        body: "There is no switch login or VLAN plan to maintain. That suits a simple home NAS or wired-backhaul shelf, but it is wrong for deliberate segmentation, port monitoring, link aggregation, or PoE-powered devices.",
-      },
-      {
-        heading: "Who should skip it",
-        body: "Skip it when gigabit clears the workload, five ports leave no spare capacity, the design needs PoE, or a 10GbE NAS backbone is the next planned upgrade.",
-      },
-    ],
+  {
+    "heading": "The five-port budget is the buying decision",
+    "body": "One port normally connects upstream to a router or another switch. That leaves four ports for a NAS, desktop, access point, mesh node, dock, or test adapter. If all four are already named, start with an eight-port switch instead of planning an immediate daisy chain."
+  },
+  {
+    "heading": "Fanless does not mean heat-free",
+    "body": "TP-Link lists a fanless metal chassis and a maximum power draw of 12.11W. Leave space around the enclosure and do not bury it under power bricks or fabric. Ambient temperature, traffic, and hardware revision can change how warm it feels."
+  },
+  {
+    "heading": "Unmanaged keeps setup simple",
+    "body": "There is no switch login or VLAN plan to maintain. That suits a simple home NAS or wired-backhaul shelf, but it is wrong for deliberate segmentation, port monitoring, link aggregation, or PoE-powered devices."
+  },
+  {
+    "heading": "Who should skip it",
+    "body": "Skip it when gigabit clears the workload, five ports leave no spare capacity, the design needs PoE, or a 10GbE NAS backbone is the next planned upgrade."
+  },
+  {
+    "heading": "Allow for delivery and the actual revision",
+    "body": "The November 1 US offer was shipped and sold by Amazon.com but said available to ship in 1–2 days rather than In Stock. The selected hardware revision was not exposed. Match the delivered label to TP-Link’s regional support files before using dimensions, adapter ratings or firmware-related instructions from a different revision. The current product page still lists this unmanaged five-port model; a larger switch is useful only when the port plan calls for it."
+  },
+  {
+    "heading": "Before choosing the offered unit",
+    "body": "Choose TL-SG105-M2 for up to four downstream devices after counting the upstream port, with a real 2.5GbE workload. Confirm the regional hardware version and delivery date; the observed offer said available to ship in 1–2 days. Keep gigabit if sufficient, and choose managed or PoE hardware when those functions are needed."
+  }
+],
     alternatives: [
       "Choose NETGEAR MS305 when its smaller listed footprint and warranty path are more useful.",
       "Choose TRENDnet TEG-S350 when its current five-port offer is the better value.",
@@ -90,42 +94,43 @@ export const networkSwitchClusterProducts: Product[] = [
       "trendnet-teg-s380-2-5g-switch",
     ],
     sources: [
-      {
-        name: "TP-Link TL-SG105-M2 product page",
-        url: "https://www.tp-link.com/us/business-networking/unmanaged-switch/tl-sg105-m2/",
-        note: "Official US ports, capacity, fanless design, dimensions, power, jumbo-frame, and mounting specifications.",
-      },
-      {
-        name: "TP-Link TL-SG105-M2 support",
-        url: "https://www.tp-link.com/us/support/download/tl-sg105-m2/",
-        note: "Official hardware-version and region warning plus version-specific documentation.",
-      },
-      {
-        name: "Amazon listing for ASIN B08ZHGT2ZP",
-        url: "https://www.amazon.com/dp/B08ZHGT2ZP",
-        note: "Exact current model identity; confirm seller, region, revision, price, and delivery at checkout.",
-      },
-    ],
+  {
+    "name": "TP-Link TL-SG105-M2 product page",
+    "url": "https://www.tp-link.com/us/business-networking/unmanaged-switch/tl-sg105-m2/",
+    "note": "Official US ports, capacity, fanless design, dimensions, power, jumbo-frame, and mounting specifications."
+  },
+  {
+    "name": "TP-Link TL-SG105-M2 support",
+    "url": "https://www.tp-link.com/us/support/download/tl-sg105-m2/",
+    "note": "Official hardware-version and region warning plus version-specific documentation."
+  },
+  {
+    "name": "Amazon listing for ASIN B08ZHGT2ZP",
+    "url": "https://www.amazon.com/dp/B08ZHGT2ZP",
+    "note": "Exact current model identity; confirm seller, region, revision, price, and delivery at checkout."
+  }
+],
     offers: [
-      {
-        merchant: "Amazon US",
-        url: amazonUrl("B08ZHGT2ZP"),
-        label: "Check TL-SG105-M2 price on Amazon",
-        priceNote:
-          "Confirm ASIN B08ZHGT2ZP, five-port TL-SG105-M2, hardware version, seller, US delivery, and return terms.",
-      },
-    ],
+  {
+    "merchant": "Amazon US",
+    "url": "https://www.amazon.com/dp/B08ZHGT2ZP?tag=madanetwork-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+    "label": "Check TL-SG105-M2 price on Amazon",
+    "priceNote": "Confirm ASIN B08ZHGT2ZP, five-port TL-SG105-M2, hardware version, seller, US delivery, and return terms."
+  }
+],
+
+    "purchaseCheck": "Choose for four downstream devices after the uplink and a real 2.5GbE need. Keep sufficient gigabit gear. Confirm regional revision and delivery: observed shipping was in 1–2 days. Choose other hardware for PoE or managed VLANs.",
   },
   {
     site: "network",
     slug: "netgear-ms305-2-5g-switch",
     asin: "B0BGYS7731",
     amazonTitle: "NETGEAR MS305 5-Port 2.5G Unmanaged Switch",
-    seoTitle: "NETGEAR MS305 Guide: Compact 5-Port 2.5G Fanless Switch",
-    updatedAt,
+    seoTitle: "NETGEAR MS305: Five-Port 2.5G Fit",
+    "updatedAt": "November 1, 2026",
     evidenceMode: "official-spec",
     researchNote:
-      "We have not bench-tested this switch. This guide uses NETGEAR's current product page, datasheet, installation guide, and exact Amazon identity. Real throughput and reliability depend on the complete path and installation environment.",
+      "We have not bench-tested this switch. This guide uses NETGEAR's current product page, datasheet, installation guide, and exact Amazon identity. Real throughput and reliability depend on the complete path and installation environment. The November 1, 2026 US retail observation is for ZIP 10001 and the exact ASIN. It is not a delivery, warranty, physical-revision or performance guarantee.",
     name: "NETGEAR MS305 5-Port 2.5G Switch",
     brand: "NETGEAR",
     category: "wired",
@@ -138,12 +143,8 @@ export const networkSwitchClusterProducts: Product[] = [
       "MS305 is smaller on paper than TL-SG105-M2, which helps under a desk or on a shallow shelf. Size comes after the port budget because a compact switch that is already full is not a clean installation.",
     bestFor: "Compact under-desk or wall-mounted five-port 2.5GbE expansion",
     priceBand: "$$",
-    rating: 4.4,
-    scores: [
-      { label: "Compact placement", value: 9 },
-      { label: "Setup simplicity", value: 9 },
-      { label: "Management features", value: 3 },
-    ],
+    rating: 0,
+    scores: [],
     pros: [
       "Five 100M, 1G, and 2.5G copper Ethernet ports",
       "Fanless metal chassis with desktop, wall, or under-table mounting",
@@ -173,23 +174,31 @@ export const networkSwitchClusterProducts: Product[] = [
       "Amazon confirms the exact model, but seller, price, delivery region, and stock remain checkout checks",
     ],
     editorialSections: [
-      {
-        heading: "MS305 is the compact-placement option",
-        body: "NETGEAR lists the chassis at 158 x 101 x 29mm and includes mounting hardware. That can be useful under a desk or on a shallow shelf, but leave ventilation space and keep Ethernet bend radius practical.",
-      },
-      {
-        heading: "The warranty needs a region check",
-        body: "NETGEAR advertises a limited lifetime hardware warranty on its US business page. Coverage, registration, support level, and replacement terms can vary by region and channel, so check them before warranty becomes the deciding factor.",
-      },
-      {
-        heading: "It is still a simple unmanaged switch",
-        body: "MS305 provides plug-and-play multi-gig ports without a configuration interface. Buyers who need VLANs, traffic counters, loop controls, or PoE should move to a different class rather than expecting a software upgrade.",
-      },
-      {
-        heading: "Who should skip it",
-        body: "Skip it when the network is gigabit-only, more than four downstream connections are planned, or the installation needs managed segmentation, PoE, or a 10GbE uplink.",
-      },
-    ],
+  {
+    "heading": "MS305 is the compact-placement option",
+    "body": "NETGEAR lists the chassis at 158 x 101 x 29mm and includes mounting hardware. That can be useful under a desk or on a shallow shelf, but leave ventilation space and keep Ethernet bend radius practical."
+  },
+  {
+    "heading": "The warranty needs a region check",
+    "body": "NETGEAR advertises a limited lifetime hardware warranty on its US business page. Coverage, registration, support level, and replacement terms can vary by region and channel, so check them before warranty becomes the deciding factor."
+  },
+  {
+    "heading": "It is still a simple unmanaged switch",
+    "body": "MS305 provides plug-and-play multi-gig ports without a configuration interface. Buyers who need VLANs, traffic counters, loop controls, or PoE should move to a different class rather than expecting a software upgrade."
+  },
+  {
+    "heading": "Who should skip it",
+    "body": "Skip it when the network is gigabit-only, more than four downstream connections are planned, or the installation needs managed segmentation, PoE, or a 10GbE uplink."
+  },
+  {
+    "heading": "MS305 is not MS305E",
+    "body": "NETGEAR’s current MS305 page and March 2024 installation guide describe the unmanaged five-port model. The guide’s access point requires its own power supply: MS305 does not supply PoE. Its sample diagram uses an MS308, so count the actual MS305’s five sockets rather than copying the pictured eight-port layout. Check the seller’s warranty eligibility and registration requirements before treating the advertised limited lifetime hardware warranty as a reason to pay more."
+  },
+  {
+    "heading": "Before choosing the offered unit",
+    "body": "Choose MS305 when five unmanaged ports, including the upstream connection, cover a confirmed 2.5GbE workload. Select MS305 rather than MS305E, verify US warranty eligibility and matching power adapter, and keep a working gigabit switch if it already meets the workload."
+  }
+],
     alternatives: [
       "Choose TP-Link TL-SG105-M2 when its documentation, current price, or hardware path is the better fit.",
       "Choose TRENDnet TEG-S350 for another compact five-port unmanaged option.",
@@ -201,31 +210,32 @@ export const networkSwitchClusterProducts: Product[] = [
       "trendnet-teg-s380-2-5g-switch",
     ],
     sources: [
-      {
-        name: "NETGEAR MS305 product page",
-        url: "https://www.netgear.com/business/wired/switches/unmanaged/ms305/",
-        note: "Official current ports, dimensions, power, fanless design, mounting, jumbo-frame, and warranty information.",
-      },
-      {
-        name: "NETGEAR MS305 installation guide",
-        url: "https://www.downloads.netgear.com/files/GDC/MS305/MS305_IG_EN.pdf",
-        note: "Official model, package, placement, power, and installation reference.",
-      },
-      {
-        name: "Amazon listing for ASIN B0BGYS7731",
-        url: "https://www.amazon.com/dp/B0BGYS7731",
-        note: "Exact current MS305-100NAS identity; confirm seller, region, price, and delivery at checkout.",
-      },
-    ],
+  {
+    "name": "NETGEAR MS305 product page",
+    "url": "https://www.netgear.com/business/wired/switches/unmanaged/ms305/",
+    "note": "Official current ports, dimensions, power, fanless design, mounting, jumbo-frame, and warranty information."
+  },
+  {
+    "name": "NETGEAR MS305 installation guide",
+    "url": "https://www.downloads.netgear.com/files/GDC/MS305/MS305_IG_EN.pdf",
+    "note": "Official model, package, placement, power, and installation reference."
+  },
+  {
+    "name": "Amazon listing for ASIN B0BGYS7731",
+    "url": "https://www.amazon.com/dp/B0BGYS7731",
+    "note": "Exact current MS305-100NAS identity; confirm seller, region, price, and delivery at checkout."
+  }
+],
     offers: [
-      {
-        merchant: "Amazon US",
-        url: amazonUrl("B0BGYS7731"),
-        label: "Check NETGEAR MS305 price on Amazon",
-        priceNote:
-          "Confirm ASIN B0BGYS7731, MS305-100NAS, five 2.5G ports, seller, US delivery, warranty eligibility, and return terms.",
-      },
-    ],
+  {
+    "merchant": "Amazon US",
+    "url": "https://www.amazon.com/dp/B0BGYS7731?tag=madanetwork-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+    "label": "Check NETGEAR MS305 price on Amazon",
+    "priceNote": "Confirm ASIN B0BGYS7731, MS305-100NAS, five 2.5G ports, seller, US delivery, warranty eligibility, and return terms."
+  }
+],
+
+    "purchaseCheck": "Choose MS305, not MS305E, for four downstream devices after the uplink and a 2.5GbE need. No PoE or managed VLANs. Keep sufficient gigabit gear. Check the supplied adapter, US warranty eligibility and seller terms.",
   },
 ];
 

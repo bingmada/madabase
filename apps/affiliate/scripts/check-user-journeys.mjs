@@ -4,7 +4,7 @@ const { searchContent } = loadAffiliateTypescript('../../../shared/content-searc
 const { siteSearchIndex, allSiteSearchIndex } = loadAffiliateTypescript('../../lib/site-search.ts');
 const { planMiniPc, checkArm } = loadAffiliateTypescript('../../lib/compatibility-engine.ts');
 const { miniPcParts, costSummary } = loadAffiliateTypescript('../../lib/upgrade-parts.ts');
-const { matchingComponentOffers } = loadAffiliateTypescript('../../lib/upgrade-offers.ts');
+const { matchingComponentOffers, upgradeComponentOffers } = loadAffiliateTypescript('../../lib/upgrade-offers.ts');
 const { networkDecision, compareDocks } = loadAffiliateTypescript('../../lib/setup-decisions.ts');
 const rows = [];
 function scenario(question, expected, verify) { verify(); rows.push({question,expected,passed:true}); }
@@ -18,7 +18,11 @@ scenario('MacBook M2 two4K60 monitors','Resolution describes the request without
 scenario('Unknown exact model with familiar capacity','No substitution of an unrelated Tiny model',()=>assert.equal(searchContent(allSiteSearchIndex(),'M9999q RAM 32GB').length,0));
 scenario('Publication and content filters','No other publication leaks into a zero-result exact model request',()=>assert.equal(searchContent(allSiteSearchIndex(),'M720q RAM 32GB',{site:'network',kind:'product'}).length,0));
 const p={model:'m720q',task:'ram',ramGb:32,pcie:'unknown',hasKit:'unknown'};
-const now=Date.parse('2026-10-19T12:00:00Z');
+const memoryOffer=upgradeComponentOffers.find((offer)=>offer.asin==='B07D2DZ42B');
+assert.ok(memoryOffer,'The exact 16GB component fixture must exist');
+// Exercise the offer inside its recorded interval, independently of a later retailer recheck.
+const now=Date.parse(memoryOffer.verifiedAt)+1;
+assert.ok(now<Date.parse(memoryOffer.expiresAt));
 scenario('8GB + 4GB to 16GB','Buy one8GB; retain slot1, replace slot2; show the8GB reference, never substitute a16GB offer',()=>{
  const parts=miniPcParts('m720q','ram',16,[8,4]);
  assert.equal(parts[0].purchaseCount,1);assert.equal(parts[0].capacityGb,8);assert.match(parts[0].reference,/KCP426SS8\/8/);
@@ -51,8 +55,8 @@ scenario('M720q second NVMe','Reject this position; propose replacing existing N
  const r=planMiniPc({...p,task:'second-nvme',storageNeed:'yes',storageReady:'yes'});assert.equal(r.status,'incompatible');assert.match(r.reasons.join(' '),/Replace the existing NVMe/);
 });
 scenario('Missing SATA kit despite a suitable drive listing','Hold the purchase; a bare drive is not a completed assembly',()=>assert.equal(planMiniPc({...p,task:'sata',storageNeed:'yes',pcie:'no',hasKit:'unknown'}).status,'unknown'));
-scenario('Copied or reused part already owned / offer expired','No unwanted or expired component button',()=>{
- const parts=miniPcParts('m720q','ram',32,[16,0]);assert.equal(matchingComponentOffers(parts,[true,false,false],now).length,0);assert.equal(matchingComponentOffers(parts,[false,false,false],Date.parse('2026-10-26T09:20:00Z')).length,0);
+scenario('Copied or reused part already owned / exact offer expiry boundary','No unwanted or expired component button',()=>{
+ const parts=miniPcParts('m720q','ram',32,[16,0]);assert.equal(matchingComponentOffers(parts,[true,false,false],now).length,0);assert.equal(matchingComponentOffers(parts,[false,false,false],Date.parse(memoryOffer.expiresAt)).length,0);
 });
 scenario('Existing arm meets the confirmed fit','Keep the matching arm; no replacement needed',()=>{
  const r=checkArm({arm:'lx',kg:4.48,mm:25,vesa:'100x100',construction:'approved',curved:'flat',clearance:'yes',ports:'yes',travel:'yes',alreadyOwned:'yes'});assert.ok(r.noBuy);

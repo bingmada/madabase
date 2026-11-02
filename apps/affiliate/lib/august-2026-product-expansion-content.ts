@@ -6,180 +6,232 @@ const amazonUrl = (asin: string) =>
 
 export const august2026ExpansionProducts: Product[] = [
   {
-    site: "smarthome",
-    slug: "aqara-presence-multi-sensor-fp300",
-    asin: "B0FG2MD3YP",
-    amazonTitle: "Aqara Presence Sensor FP300 Wireless 5-in-1 Motion Sensor",
-    amazonDetailUrl: "https://www.amazon.com/dp/B0FG2MD3YP",
-    seoTitle: "Aqara FP300 Guide: Price, Battery, Thread & FP2",
-    updatedAt: "August 23, 2026",
-    evidenceMode: "official-spec",
-    researchNote:
-      "We have not tested the FP300 ourselves. This guide uses Aqara's current US specifications, official setup material, and the exact Amazon listing; room geometry, hub firmware, false triggers, battery life, seller, and bundle still need to be checked in the buyer's home.",
-    name: "Aqara Presence Multi-Sensor FP300",
-    brand: "Aqara",
-    category: "automation",
-    image: "/images/affiliate/smarthome-aqara-fp300-editorial.webp",
-    imageAlt: "Editorial image of a compact wireless presence sensor mounted on a living-room wall",
-    summary:
-      "A model-specific guide to Aqara's battery-powered FP300, including PIR plus 60GHz mmWave sensing, light, temperature and humidity readings, Thread versus Zigbee setup, battery expectations, mounting, and the limits that separate it from the wired FP2.",
-    verdict:
-      "FP300 is the simpler presence-automation choice when battery power, compact mounting, and Matter or Aqara Zigbee support matter more than room mapping. Choose FP2 when one wired sensor must create multiple zones or follow several people in a larger room.",
-    whyItMatters:
-      "Presence sensors can keep lights or climate automations active while someone sits still, but protocol choice, hub requirements, placement, fans, curtains, pets, and absence delay still decide whether the automation feels reliable.",
-    bestFor: "Single-zone presence automation where a power cable would be awkward",
-    priceBand: "$",
-    rating: 4.3,
-    scores: [
-      { label: "Installation flexibility", value: 9 },
-      { label: "Sensor coverage", value: 8 },
-      { label: "Zone control", value: 5 },
-    ],
-    pros: [
-      "Battery power avoids a permanent USB cable",
-      "Combines PIR, 60GHz mmWave, light, temperature, and humidity sensing",
-      "Can use Matter over Thread or Aqara Zigbee",
-    ],
-    cons: [
-      "Does not provide FP2-style multi-zone room mapping",
-      "Thread mode needs a compatible Matter controller and Thread border router",
-      "Published battery life is an estimate that changes with mode, settings, and traffic",
-    ],
-    specs: {
-      ASIN: "B0FG2MD3YP",
-      Model: "PS-S04E / Presence Multi-Sensor FP300",
-      Detection: "PIR plus 60GHz mmWave",
-      "Environmental sensing": "Light, temperature, and humidity",
-      Protocols: "Thread/Matter or Zigbee",
-      Power: "2× replaceable CR2450 batteries",
-      "Published battery estimate": "Up to 3 years in Zigbee or 2 years in Thread",
-      Coverage: "120° field of view; up to 6m listed range",
-      "Price check": "Compare the live official and exact-ASIN price; include any required Aqara hub or Matter controller and Thread border router",
-    },
-    evidence: [
-      "Confirm ASIN B0FG2MD3YP, PS-S04E, seller, region, and included mount before checkout",
-      "Choose Thread or Zigbee before setup; their controller requirements and available settings differ",
-      "Place away from moving curtains, fans, direct HVAC airflow, and other sources that can complicate sensing",
-      "Test presence and absence delay in the real seated position before connecting lights or HVAC",
-    ],
-    editorialSections: [
-      {
-        heading: "Thread and Zigbee are different setup paths",
-        body: "Matter over Thread requires both a compatible Matter controller and Thread border router. Aqara Zigbee requires a supported Aqara hub and can expose additional Aqara-specific controls. Pick the path around the infrastructure already in the home rather than treating both labels as simultaneous connections.",
-      },
-      {
-        heading: "How much does Aqara FP300 cost?",
-        body: "FP300 pricing can change with seller, promotion, region, and multipack bundle, so this page does not freeze a launch price into the recommendation. Compare the current official US listing and exact Amazon ASIN B0FG2MD3YP, then include the cost of an Aqara hub for Zigbee or a compatible Matter controller plus Thread border router for Thread if the home does not already have them.",
-      },
-      {
-        heading: "Battery power changes the placement trade-off",
-        body: "FP300 is easier to mount where a USB cable would look awkward, but battery life depends on protocol, reporting, enabled sensors, sensitivity, temperature, and actual activity. Treat Aqara's multi-year figures as estimates and keep a replacement reminder.",
-      },
-      {
-        heading: "It is a single-zone sensor, not a room map",
-        body: "FP300 can detect fine movement within its field, but it does not reproduce FP2's up-to-30-zone layout or multi-person positioning. Use it when one automation decision covers the room or area; use FP2 when the sofa, desk, and doorway need separate rules.",
-      },
-      {
-        heading: "Who should skip it",
-        body: "Skip FP300 when the room needs zone-level automations, when a wired sensor is acceptable and continuous reporting matters more than battery freedom, or when the household has no compatible Thread/Matter or Aqara Zigbee controller.",
-      },
-    ],
-    alternatives: [
-      "Choose Aqara FP2 for wired power, room zones, and multi-person positioning.",
-      "Choose a basic PIR sensor when motion-only automations are enough and stationary presence is unnecessary.",
-    ],
-    compareSlugs: ["aqara-presence-sensor-fp2", "aqara-door-window-sensor-p2", "aqara-hub-m3"],
-    sources: [
-      { name: "Aqara FP300", url: "https://us.aqara.com/products/presence-multi-sensor-fp300", note: "Official US sensor, protocol, power, range, and battery specifications." },
-      { name: "Aqara FP300 Amazon listing", url: "https://www.amazon.com/dp/B0FG2MD3YP", note: "Exact US ASIN, PS-S04E identity, title, seller, and bundle check." },
-    ],
-    offers: [{ merchant: "Amazon US", url: amazonUrl("B0FG2MD3YP"), label: "Check Aqara FP300 on Amazon", priceNote: "Confirm ASIN B0FG2MD3YP, PS-S04E, seller, included mount, live price, and availability." }],
+  "site": "smarthome",
+  "slug": "aqara-presence-multi-sensor-fp300",
+  "asin": "B0FG2MD3YP",
+  "amazonTitle": "Aqara Presence Sensor FP300 Wireless 5-in-1 Motion Sensor",
+  "amazonDetailUrl": "https://www.amazon.com/dp/B0FG2MD3YP",
+  "seoTitle": "Aqara FP300 Guide: Price, Battery, Thread & FP2",
+  "updatedAt": "October 13, 2026",
+  "evidenceMode": "official-spec",
+  "researchNote": "We have not tested FP300. This guide uses Aqara's US product page, official manual and platform connection guide checked October 13, 2026. Firmware, exposed controls, room behaviour, seller and bundle must be verified for the buyer's actual setup. November 1, 2026: selected US retailer identity and purchase conditions reviewed separately; no received-unit, installation, performance or reliability test.",
+  "name": "Aqara Presence Multi-Sensor FP300",
+  "brand": "Aqara",
+  "category": "automation",
+  "image": "/images/affiliate/smarthome-aqara-fp300-editorial.webp",
+  "imageAlt": "Editorial image of a compact wireless presence sensor mounted on a living-room wall",
+  "summary": "A model-specific buying and setup guide to FP300's battery-powered presence sensing: choose Thread or Zigbee, budget for the required controller, check what settings the platform exposes, and verify presence and absence before relying on an automation.",
+  "verdict": "Choose FP300 for presence automation where a permanent power cable is awkward and the intended platform supports the required functions. Choose the documented FP2 alternative when the job needs room-zone mapping. Budget for the complete controller setup and battery replacements, not just the sensor's listed price.",
+  "whyItMatters": "Presence sensors can keep lights or climate automations active while someone sits still, but protocol choice, hub requirements, placement, fans, curtains, pets, and absence delay still decide whether the automation feels reliable.",
+  "bestFor": "Single-zone presence automation where a power cable would be awkward",
+  "priceBand": "$",
+  "rating": 0,
+  "scores": [],
+  "pros": [
+    "Battery power avoids a permanent USB cable",
+    "Combines PIR, 60GHz mmWave, light, temperature, and humidity sensing",
+    "Can use Matter over Thread or Aqara Zigbee"
+  ],
+  "cons": [
+    "Does not provide FP2-style multi-zone room mapping",
+    "Thread mode needs a compatible Matter controller and Thread border router",
+    "Published battery life is an estimate that changes with mode, settings, and traffic"
+  ],
+  "specs": {
+    "ASIN": "B0FG2MD3YP",
+    "Model": "PS-S04E / Presence Multi-Sensor FP300",
+    "Detection": "PIR plus 60GHz mmWave",
+    "Environmental sensing": "Light, temperature, and humidity",
+    "Protocols": "Thread/Matter or Zigbee",
+    "Power": "2× replaceable CR2450 batteries",
+    "Published battery estimate": "Up to 3 years in Zigbee or 2 years in Thread",
+    "Coverage": "120° field of view; up to 6m listed range",
+    "Price check": "Compare the live official and exact-ASIN price; include any required Aqara hub or Matter controller and Thread border router"
   },
+  "evidence": [
+    "Confirm ASIN B0FG2MD3YP, PS-S04E, seller, region, and included mount before checkout",
+    "Choose Thread or Zigbee before setup; their controller requirements and available settings differ",
+    "Place away from moving curtains, fans, direct HVAC airflow, and other sources that can complicate sensing",
+    "Test presence and absence delay in the real seated position before connecting lights or HVAC"
+  ],
+  "editorialSections": [
+    {
+      "heading": "Price: compare the complete setup cost",
+      "body": "For the exact PS-S04E / ASIN B0FG2MD3YP listing, record the sensor price, quantity, seller, mount contents, shipping and return terms. Then add the hardware your home lacks: the supported Aqara hub for Zigbee, or the required Matter controller and Thread border-router functions for Thread. One compatible device may supply both controller roles, but verify that explicitly. Battery replacements also belong in the ownership budget. We do not freeze a promotional price into this guide or assume a multipack is the same purchase."
+    },
+    {
+      "heading": "Choose Thread or Zigbee by the function you need",
+      "body": "Aqara documents two protocol paths. Thread joins a supported Matter ecosystem with a Matter controller and Thread border router. Zigbee joins a supported Aqara hub and exposes Aqara-specific controls. Write down the exact hub, app and firmware versions, then check whether your platform exposes the occupancy and environmental readings needed by the proposed rule. A compatibility logo does not establish every advanced setting. Use the official platform guide for your ecosystem before committing to a protocol."
+    },
+    {
+      "heading": "Protocol switching needs a settings record",
+      "body": "The official manual warns that switching protocols is equivalent to restoring factory settings and clears device settings and data. Save the current configuration and automation requirements before following the app's procedure. Do not treat switching as a harmless toggle or assume existing rules will follow the sensor into the other protocol. Aqara also recommends updating firmware through the supported app workflow. Confirm the current procedure for your device instead of copying a forum sequence written for another firmware version."
+    },
+    {
+      "heading": "Battery figures are estimates with stated conditions",
+      "body": "The US product page states up to three years for Zigbee and two for Thread using two CR2450 cells. Aqara's support FAQ describes laboratory assumptions including 25°C, default dual-presence mode, four hours of daily presence and a specified reporting load. Those conditions are not a prediction for your room. Record installation date, protocol, enabled readings and reporting settings so that a later change in battery life has context. Follow the supplied battery replacement instructions and keep coin cells away from children."
+    },
+    {
+      "heading": "Check occupied and empty-room behaviour separately",
+      "body": "Before using the sensor to control lighting, log its presence state in your actual seated location and its absence state after you leave. Repeat the check with the usual fan or HVAC conditions and note placement and firmware. Aqara's FAQ warns that interference can extend absence confirmation beyond the configured period. Start with a reversible light rule and a manual control, then observe the result. This is a suggested acceptance procedure, not a claim that FP300 passed our reliability test or will never produce a false trigger."
+    },
+    {
+      "heading": "Decide whether single-area presence is the right job",
+      "body": "A battery sensor can simplify placement, but one presence decision is different from separate desk, sofa and doorway zones. Compare the linked FP2 documentation when zone mapping is required. If you need an unverified advanced control, have no compatible controller, or cannot place the sensor according to the supplied manual, resolve that gap before ordering. The manufacturer manual and US product page also differ on the upper operating-temperature figure, so use the documentation supplied for your region and exact unit rather than a blended specification."
+    }
+  ],
+  "alternatives": [
+    "Choose Aqara FP2 for wired power, room zones, and multi-person positioning.",
+    "Choose a basic PIR sensor when motion-only automations are enough and stationary presence is unnecessary."
+  ],
+  "compareSlugs": [
+    "aqara-presence-sensor-fp2",
+    "aqara-door-and-window-sensor-p2",
+    "aqara-hub-m3"
+  ],
+  "sources": [
+    {
+      "name": "Aqara US: Presence Multi-Sensor FP300",
+      "url": "https://us.aqara.com/products/presence-multi-sensor-fp300",
+      "note": "US product specifications and mode-dependent battery estimates."
+    },
+    {
+      "name": "Aqara: FP300 help centre and FAQ",
+      "url": "https://store-support.aqara.com/products/multi-presence-sensor-fp300",
+      "note": "Official support, lab assumptions and absence-confirmation caveats."
+    },
+    {
+      "name": "Aqara: FP300 English user manual",
+      "url": "https://cdn.shopify.com/s/files/1/0710/9220/7830/files/Presence_Multi-Sensor_FP300_User_Manual-EN.pdf?v=1762828282",
+      "note": "Controller requirements, protocol-switch data loss and safe setup instructions. Region-specific limits must be checked."
+    },
+    {
+      "name": "Aqara: connecting FP300 to third-party platforms",
+      "url": "https://cdn.shopify.com/s/files/1/0710/9220/7830/files/How_to_Connect_to_Third-Party_Platforms.pdf?v=1780542797",
+      "note": "Platform-specific prerequisites and connection paths."
+    },
+    {
+      "name": "Selected US retailer identity, November 1, 2026",
+      "url": "https://www.amazon.com/dp/B0FG2MD3YP",
+      "note": "Exact model and selected package observed for New York 10001. Seller, condition, delivered total and current returns remain purchase-time checks; this is not a received-unit approval."
+    }
+  ],
+  "offers": [
+    {
+      "merchant": "Amazon US",
+      "url": "https://www.amazon.com/dp/B0FG2MD3YP?tag=madasmart-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+      "label": "Check Aqara Presence Multi-Sensor FP300 on Amazon",
+      "priceNote": "Confirm the exact model and package, current condition, seller, delivered total and return terms; read the model-specific fit check above."
+    }
+  ],
+  "purchaseCheck": "Match FP300 PS-S04E, supplied mount and two specified CR2450 cells. Choose Thread or Zigbee and verify the required controller and exposed settings. Switching protocols clears settings/data. Keep a suitable PIR or wired FP2 path when that better meets the room task."
+},
   {
-    site: "smarthome",
-    slug: "aqara-presence-sensor-fp2",
-    asin: "B0BXWZMQJ3",
-    amazonTitle: "Aqara Presence Sensor FP2 mmWave Radar Wired Smart Motion Sensor",
-    amazonDetailUrl: "https://www.amazon.com/dp/B0BXWZMQJ3",
-    seoTitle: "Aqara FP2 Guide: Zones, Wi-Fi, Wiring & FP300",
-    updatedAt,
-    evidenceMode: "official-spec",
-    researchNote:
-      "We have not tested this sensor ourselves. This guide synthesizes Aqara's FP2 documentation and the exact Amazon listing; calibration, room geometry, Wi-Fi quality, detection behavior, and fall-mode suitability need to be tested in the intended room.",
-    name: "Aqara Presence Sensor FP2",
-    brand: "Aqara",
-    category: "automation",
-    image: "/images/affiliate/smarthome-aqara-fp2-editorial.webp",
-    imageAlt: "Editorial image of a wired presence sensor on a stand overlooking an open room",
-    summary:
-      "A wired 2.4GHz Wi-Fi mmWave presence sensor built around room mapping, up to 30 zones, multi-person positioning, and platform integrations without an Aqara hub, with important placement, power, privacy, and fall-detection limits.",
-    verdict:
-      "FP2 is the better Aqara sensor for a large room with distinct activity zones or multiple people. It asks for more setup, a permanent cable, and careful calibration than FP300, so a simple single-zone automation may not justify the extra complexity.",
-    whyItMatters:
-      "One FP2 can expose multiple room zones as separate occupancy signals, which can replace several basic sensors when the room layout and automation rules are stable.",
-    bestFor: "Mapped living rooms, bedrooms, or offices with several automation zones",
-    priceBand: "$$",
-    rating: 4.2,
-    scores: [
-      { label: "Zone control", value: 9 },
-      { label: "Multi-person features", value: 9 },
-      { label: "Setup simplicity", value: 5 },
-    ],
-    pros: [
-      "Maps up to 30 zones in a room",
-      "Supports multi-person positioning and stationary presence detection",
-      "Uses Wi-Fi and does not require an Aqara hub for listed integrations",
-    ],
-    cons: [
-      "Needs continuous USB power and 2.4GHz Wi-Fi",
-      "Calibration and room edges can require repeated tuning",
-      "Fall detection uses a different ceiling-mounted mode and is not a medical system",
-    ],
-    specs: {
-      ASIN: "B0BXWZMQJ3",
-      Model: "PS-S02E / Presence Sensor FP2",
-      Detection: "60GHz mmWave",
-      Network: "2.4GHz Wi-Fi",
-      Power: "Wired USB-C",
-      Coverage: "Up to 40m² listed room coverage",
-      Zones: "Up to 30 configurable zones",
-      "Multi-person": "Up to 5 targets listed",
-    },
-    evidence: [
-      "Confirm ASIN B0BXWZMQJ3, PS-S02E, seller, cable, mount, and region before checkout",
-      "Plan a permanent USB power route and verify 2.4GHz Wi-Fi at the mounting point",
-      "Calibrate room edges, entrances, interference areas, and each automation zone after mounting",
-      "Treat fall detection as a consumer notification feature, not medical monitoring or emergency response",
-    ],
-    editorialSections: [
-      {
-        heading: "Zones are the reason to choose FP2",
-        body: "A single FP2 can represent a desk, sofa, bed, or doorway as separate zones. That is materially different from using one occupancy signal for the entire room and is the main reason to accept its wired installation and longer setup.",
-      },
-      {
-        heading: "Placement and calibration are part of ownership",
-        body: "Room shape, mirrors, moving fans, curtains, pets, and the sensor's angle can change results. Mount first, draw the room and interference zones, then observe real arrivals, seated periods, and departures before using the signal for essential automations.",
-      },
-      {
-        heading: "Fall mode has strict boundaries",
-        body: "Aqara's fall mode requires ceiling mounting and cannot be treated as a medical device, guaranteed event detector, or emergency service. Anyone who needs health or safety monitoring should use appropriate professional guidance and a separate response plan.",
-      },
-      {
-        heading: "Who should skip it",
-        body: "Skip FP2 when a cable is impractical, the room only needs one occupied-or-empty signal, 2.4GHz Wi-Fi is unreliable, or the household will not maintain zone calibration after furniture changes.",
-      },
-    ],
-    alternatives: [
-      "Choose Aqara FP300 for a compact battery-powered single-zone sensor with Thread or Zigbee.",
-      "Choose a basic motion sensor when rapid motion detection is enough and the room does not need stationary presence.",
-    ],
-    compareSlugs: ["aqara-presence-multi-sensor-fp300", "aqara-hub-m3", "aqara-door-window-sensor-p2"],
-    sources: [
-      { name: "Aqara Presence Sensor FP2", url: "https://us.aqara.com/products/presence-sensor-fp2", note: "Official room, zone, power, Wi-Fi, multi-person, and mode information." },
-      { name: "Aqara FP2 Amazon listing", url: "https://www.amazon.com/dp/B0BXWZMQJ3", note: "Exact US ASIN, PS-S02E identity, title, and seller check." },
-    ],
-    offers: [{ merchant: "Amazon US", url: amazonUrl("B0BXWZMQJ3"), label: "Check Aqara FP2 on Amazon", priceNote: "Confirm ASIN B0BXWZMQJ3, PS-S02E, seller, included cable and mount, live price, and availability." }],
+  "site": "smarthome",
+  "slug": "aqara-presence-sensor-fp2",
+  "asin": "B0BXWZMQJ3",
+  "amazonTitle": "Aqara Presence Sensor FP2 mmWave Radar Wired Smart Motion Sensor",
+  "amazonDetailUrl": "https://www.amazon.com/dp/B0BXWZMQJ3",
+  "seoTitle": "Aqara FP2 Guide: Zones, Wi-Fi, Wiring & FP300",
+  "updatedAt": "November 1, 2026",
+  "evidenceMode": "official-spec",
+  "researchNote": "We have not tested this sensor ourselves. This guide synthesizes Aqara's FP2 documentation and the exact Amazon listing; calibration, room geometry, Wi-Fi quality, detection behavior, and fall-mode suitability need to be tested in the intended room. November 1, 2026: selected US retailer identity and purchase conditions reviewed separately; no received-unit, installation, performance or reliability test.",
+  "name": "Aqara Presence Sensor FP2",
+  "brand": "Aqara",
+  "category": "automation",
+  "image": "/images/affiliate/smarthome-aqara-fp2-editorial.webp",
+  "imageAlt": "Editorial image of a wired presence sensor on a stand overlooking an open room",
+  "summary": "A wired 2.4GHz Wi-Fi mmWave presence sensor built around room mapping, up to 30 zones, multi-person positioning, and platform integrations without an Aqara hub, with important placement, power, privacy, and fall-detection limits.",
+  "verdict": "FP2 is the better Aqara sensor for a large room with distinct activity zones or multiple people. It asks for more setup, a permanent cable, and careful calibration than FP300, so a simple single-zone automation may not justify the extra complexity.",
+  "whyItMatters": "One FP2 can expose multiple room zones as separate occupancy signals, which can replace several basic sensors when the room layout and automation rules are stable.",
+  "bestFor": "Mapped living rooms, bedrooms, or offices with several automation zones",
+  "priceBand": "$$",
+  "rating": 0,
+  "scores": [],
+  "pros": [
+    "Maps up to 30 zones in a room",
+    "Supports multi-person positioning and stationary presence detection",
+    "Uses Wi-Fi and does not require an Aqara hub for listed integrations"
+  ],
+  "cons": [
+    "Needs continuous USB power and 2.4GHz Wi-Fi",
+    "Calibration and room edges can require repeated tuning",
+    "Fall detection uses a different ceiling-mounted mode and is not a medical system"
+  ],
+  "specs": {
+    "ASIN": "B0BXWZMQJ3",
+    "Model": "PS-S02E / Presence Sensor FP2",
+    "Detection": "60GHz mmWave",
+    "Network": "2.4GHz Wi-Fi",
+    "Power": "Continuous 5 V/1A USB supply required; adapter not included with current retail selection",
+    "Coverage": "Up to 40m² listed room coverage",
+    "Zones": "Up to 30 configurable zones",
+    "Multi-person": "Up to 5 targets listed"
   },
+  "evidence": [
+    "Confirm ASIN B0BXWZMQJ3, PS-S02E, seller, cable, mount, and region before checkout",
+    "Plan a permanent USB power route and verify 2.4GHz Wi-Fi at the mounting point",
+    "Calibrate room edges, entrances, interference areas, and each automation zone after mounting",
+    "Treat fall detection as a consumer notification feature, not medical monitoring or emergency response"
+  ],
+  "editorialSections": [
+    {
+      "heading": "Zones are the reason to choose FP2",
+      "body": "A single FP2 can represent a desk, sofa, bed, or doorway as separate zones. That is materially different from using one occupancy signal for the entire room and is the main reason to accept its wired installation and longer setup."
+    },
+    {
+      "heading": "Placement and calibration are part of ownership",
+      "body": "Room shape, mirrors, moving fans, curtains, pets, and the sensor's angle can change results. Mount first, draw the room and interference zones, then observe real arrivals, seated periods, and departures before using the signal for essential automations."
+    },
+    {
+      "heading": "Fall mode has strict boundaries",
+      "body": "Aqara's fall mode requires ceiling mounting and cannot be treated as a medical device, guaranteed event detector, or emergency service. Anyone who needs health or safety monitoring should use appropriate professional guidance and a separate response plan."
+    },
+    {
+      "heading": "Who should skip it",
+      "body": "Skip FP2 when a cable is impractical, the room only needs one occupied-or-empty signal, 2.4GHz Wi-Fi is unreliable, or the household will not maintain zone calibration after furniture changes."
+    },
+    {
+      "heading": "Do not turn presence data into a health or privacy guarantee",
+      "body": "The current retail marketing includes elderly-care and cloud-analysis language. This guide does not adopt that as medical monitoring, emergency response or proof that all data stays local. The original warns that some falls can be missed and objects can trigger false events; remote notifications and chosen cloud services remain separate from local automation. Confirm actual platform behavior and retain appropriate independent checks."
+    }
+  ],
+  "alternatives": [
+    "Choose Aqara FP300 for a compact battery-powered single-zone sensor with Thread or Zigbee.",
+    "Choose a basic motion sensor when rapid motion detection is enough and the room does not need stationary presence."
+  ],
+  "compareSlugs": [
+    "aqara-presence-multi-sensor-fp300",
+    "aqara-hub-m3",
+    "aqara-door-window-sensor-p2"
+  ],
+  "sources": [
+    {
+      "name": "Aqara Presence Sensor FP2",
+      "url": "https://us.aqara.com/products/presence-sensor-fp2",
+      "note": "Official room, zone, power, Wi-Fi, multi-person, and mode information."
+    },
+    {
+      "name": "Selected US retailer identity, November 1, 2026",
+      "url": "https://www.amazon.com/dp/B0BXWZMQJ3",
+      "note": "Exact model and selected package observed for New York 10001. Seller, condition, delivered total and current returns remain purchase-time checks; this is not a received-unit approval."
+    },
+    {
+      "name": "FP2 manufacturer original supplied with retail selection",
+      "url": "https://m.media-amazon.com/images/I/C1Z4jrPIqkL.pdf",
+      "note": "English introduction, warnings, placement/power and binding sections physical1–5 reviewed. Multi-language remainder not claimed fully read; no fall, health, presence-reliability or privacy audit performed."
+    }
+  ],
+  "offers": [
+    {
+      "merchant": "Amazon US",
+      "url": "https://www.amazon.com/dp/B0BXWZMQJ3?tag=madasmart-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+      "label": "Check Aqara Presence Sensor FP2 on Amazon",
+      "priceNote": "Confirm the exact model and package, current condition, seller, delivered total and return terms; read the model-specific fit check above."
+    }
+  ],
+  "purchaseCheck": "Match FP2 PS-S02E, continuous approved 5V/1A power and 2.4 GHz Wi-Fi. Plan zone calibration, supplied mounting rules and actual platform features. Fall detection and elderly-care marketing do not establish a medical or guaranteed-response system."
+},
   {
     site: "homeoffice",
     slug: "logitech-mx-brio-4k-webcam",
@@ -199,7 +251,7 @@ export const august2026ExpansionProducts: Product[] = [
     summary:
       "A fixed premium webcam with 4K30 or 1080p60 capture, autofocus, three fields of view, dual beamforming microphones, Show Mode, USB-C connectivity, and an integrated privacy shutter.",
     verdict:
-      "MX Brio is the safer premium choice for a fixed seated desk where privacy, dependable framing, 1080p60, and Logitech software matter. Insta360 Link 2 earns its premium when physical tracking and presentation modes will be used regularly.",
+      "Compare MX Brio when you want a fixed camera with a physical shutter, USB-C connection and manual image controls. Check the host’s USB 3 path, meeting-app resolution and mount clearance first; a built-in camera that already meets your needs may be enough.",
     whyItMatters:
       "A premium webcam pays off only after lighting, camera height, connection bandwidth, and meeting-app settings stop limiting the image.",
     bestFor: "A fixed professional desk that needs sharp video and a physical privacy control",
@@ -238,21 +290,25 @@ export const august2026ExpansionProducts: Product[] = [
     ],
     editorialSections: [
       {
-        heading: "Choose the frame rate around the job",
-        body: "4K30 favors detail for recorded content or reframing. 1080p60 favors smoother motion. Many calls will not transmit full 4K, so lighting and a stable 1080p setup can matter more than selecting the largest resolution number.",
+        "heading": "Choose the frame rate around the job",
+        "body": "4K30 favors detail for recorded content or reframing. 1080p60 favors smoother motion. Many calls will not transmit full 4K, so lighting and a stable 1080p setup can matter more than selecting the largest resolution number."
       },
       {
-        heading: "Fixed framing is a strength for a seated desk",
-        body: "MX Brio has no motorized gimbal, which removes tracking movement and keeps the frame predictable. That is useful for a stable desk, while a presenter who walks or uses a whiteboard may benefit more from Link 2.",
+        "heading": "Fixed framing is a strength for a seated desk",
+        "body": "MX Brio has no motorized gimbal, which removes tracking movement and keeps the frame predictable. That is useful for a stable desk, while a presenter who walks or uses a whiteboard may benefit more from Link 2."
       },
       {
-        heading: "Privacy is visible and local",
-        body: "The integrated shutter provides a physical cue when the lens is covered. It does not replace account security, meeting controls, microphone settings, or unplugging the device for highly sensitive spaces.",
+        "heading": "Privacy is visible and local",
+        "body": "The integrated shutter covers the camera lens. The original manual separately identifies a yellow activity light for audio-only use, so check microphone controls independently. The shutter does not replace meeting permissions, account security or unplugging the device for a sensitive space."
       },
       {
-        heading: "Who should skip it",
-        body: "Skip MX Brio when the call platform and network cannot benefit from its modes, when the room needs automatic tracking, or when better lighting would solve the current webcam problem for less.",
+        "heading": "Show Mode depends on how the mount is secured",
+        "body": "Follow Logitech’s micro-suction mounting instructions before tilting the camera toward the desk. Without the pad secured, its guide calls for one hand to hold the mount while the other tilts the camera. Check the current supported Logi software for your operating system; the older printed guide’s app name is not a promise about today’s software."
       },
+      {
+        "heading": "Who should skip it",
+        "body": "Skip MX Brio when the call platform and network cannot benefit from its modes, when the room needs automatic tracking, or when better lighting would solve the current webcam problem for less."
+      }
     ],
     alternatives: [
       "Choose Insta360 Link 2 when physical tracking, whiteboard, and presenter movement are central.",
@@ -260,8 +316,21 @@ export const august2026ExpansionProducts: Product[] = [
     ],
     compareSlugs: ["insta360-link-2-webcam", "logitech-litra-glow", "elgato-key-light-neo"],
     sources: [
-      { name: "Logitech MX Brio", url: "https://www.logitech.com/en-us/shop/p/mx-brio-4k-webcam.960-001558", note: "Official resolution, frame rate, field of view, focus, microphone, shutter, and connection specifications." },
-      { name: "MX Brio Amazon listing", url: "https://www.amazon.com/dp/B0BFJ4CRKD", note: "Exact US ASIN, consumer MX Brio title, color, and seller check." },
+      {
+        "name": "Logitech MX Brio",
+        "url": "https://www.logitech.com/en-us/shop/p/mx-brio-4k-webcam.960-001558",
+        "note": "Official resolution, frame rate, field of view, focus, microphone, shutter, and connection specifications."
+      },
+      {
+        "name": "MX Brio Amazon listing",
+        "url": "https://www.amazon.com/dp/B0BFJ4CRKD",
+        "note": "Exact US ASIN, consumer MX Brio title, color, and seller check."
+      },
+      {
+        "name": "Logitech MX Brio original setup guide",
+        "url": "https://www.logitech.com/assets/70085/mx_brio_ww_web_qsg.pdf",
+        "note": "All English pages 3–10 reviewed with mount, shutter/activity-light, Show Mode and tripod diagrams; current software recommendations checked separately."
+      }
     ],
     offers: [{ merchant: "Amazon US", url: amazonUrl("B0BFJ4CRKD"), label: "Check Logitech MX Brio on Amazon", priceNote: "Confirm ASIN B0BFJ4CRKD, consumer MX Brio, graphite color, cable, seller, live price, and availability." }],
   },
@@ -272,10 +341,10 @@ export const august2026ExpansionProducts: Product[] = [
     amazonTitle: "Insta360 Link 2 PTZ 4K Webcam",
     amazonDetailUrl: "https://www.amazon.com/dp/B0DDTH3HX8",
     seoTitle: "Insta360 Link 2 Guide: AI Tracking vs MX Brio",
-    updatedAt,
+    "updatedAt": "October 31, 2026",
     evidenceMode: "official-spec",
     researchNote:
-      "We have not conducted a hands-on tracking or image-quality test. This guide uses Insta360's current specifications, support material, and the exact Amazon listing; tracking, audio, autofocus, and performance should be tested on the buyer's computer during the return window.",
+      "Exact original CINSABNB/CINSABNB-ST retail kit and US10001 selected offer/expanded returns checked October 31, 2026. Current ASIN-linked original quick-start guide and previously read manufacturer operating articles support setup/host boundaries. No physical tracking, privacy-security, image, audio or software test.",
     name: "Insta360 Link 2 Webcam",
     brand: "Insta360",
     category: "meetings",
@@ -284,17 +353,13 @@ export const august2026ExpansionProducts: Product[] = [
     summary:
       "A 4K webcam with a 1/2-inch sensor, two-axis gimbal, AI tracking, phase-detection autofocus, HDR, DeskView, Whiteboard, portrait modes, gesture control, and automatic lens-down privacy behavior.",
     verdict:
-      "Link 2 is the more useful premium webcam for teachers, presenters, streamers, and anyone who moves around the room. MX Brio is easier to justify for a seated fixed frame, especially when an integrated manual shutter and simpler behavior matter more than tracking.",
+      "Compare Link 2 when physical pan-and-tilt tracking solves a presentation or demonstration need. For a seated fixed frame, compare a fixed webcam and lighting first. The original Link 2 standard kit is separate from Link 2C and the newer Pro models; advanced modes still depend on the host and software.",
     whyItMatters:
       "A motorized webcam changes the workflow only when movement, demonstrations, or whiteboards are frequent enough to justify setup, software, and privacy decisions.",
     bestFor: "Presenters who move, demonstrate desk work, or use a whiteboard",
     priceBand: "$$$",
     rating: 4.5,
-    scores: [
-      { label: "Presenter tracking", value: 9 },
-      { label: "Specialized modes", value: 9 },
-      { label: "Set-and-forget simplicity", value: 6 },
-    ],
+    scores: [],
     pros: [
       "Physical two-axis tracking can follow a presenter",
       "4K30, 1080p60, HDR, DeskView, Whiteboard, and portrait modes",
@@ -322,35 +387,65 @@ export const august2026ExpansionProducts: Product[] = [
       "Review camera and microphone permissions, privacy position, indicator behavior, and household comfort",
     ],
     editorialSections: [
-      {
-        heading: "The gimbal is the buying reason",
-        body: "Link 2 physically pans and tilts to follow movement. That matters for instruction, whiteboards, standing presentations, and demonstrations; it adds little when every meeting happens seated in the same frame.",
-      },
-      {
-        heading: "Link 2 and Link 2C are not the same camera body",
-        body: "Link 2 includes the motorized gimbal. Link 2C uses fixed framing and can appear in the same store and comparison material. Confirm the exact edition and ASIN before comparing a promotional price.",
-      },
-      {
-        heading: "Specialized modes still need rehearsal",
-        body: "DeskView, Whiteboard, portrait framing, gestures, and remote controls are useful only after the camera position, markers, lighting, and software are tested. Rehearse the exact presentation rather than enabling every feature during a live call.",
-      },
-      {
-        heading: "Who should skip it",
-        body: "Skip Link 2 for a fixed seated frame, an organization that restricts companion software, a weak monitor mount, or a workflow where a less expensive webcam plus better lighting already meets the need.",
-      },
-    ],
+  {
+    "heading": "The gimbal is the buying reason",
+    "body": "Link 2 physically pans and tilts to follow movement. That matters for instruction, whiteboards, standing presentations, and demonstrations; it adds little when every meeting happens seated in the same frame."
+  },
+  {
+    "heading": "Link 2 and Link 2C are not the same camera body",
+    "body": "Link 2 includes the motorized gimbal. Link 2C uses fixed framing and can appear in the same store and comparison material. Confirm the exact edition and ASIN before comparing a promotional price."
+  },
+  {
+    "heading": "Specialized modes still need rehearsal",
+    "body": "DeskView, Whiteboard, portrait framing, gestures, and remote controls are useful only after the camera position, markers, lighting, and software are tested. Rehearse the exact presentation rather than enabling every feature during a live call."
+  },
+  {
+    "heading": "Software effects have a separate host requirement",
+    "body": "Check the current Link Controller, operating-system and GPU requirements for the effects you need. The physical Link 2 camera’s 1080p60 mode does not mean Insta360 Virtual Camera can deliver 50/60 fps. Linux has UVC/UAC camera support but no Link Controller. If workplace policy blocks companion software or camera extensions, decide from the basic camera functions."
+  },
+  {
+    "heading": "Lens privacy and microphone state are separate",
+    "body": "The original Link 2 can face its lens down in Privacy Mode. Microphone muting is a separate Link Controller setting. Verify the camera and microphone states independently; the gimbal position is not a security certification."
+  },
+  {
+    "heading": "Who should skip it",
+    "body": "Skip Link 2 for a fixed seated frame, an organization that restricts companion software, a weak monitor mount, or a workflow where a less expensive webcam plus better lighting already meets the need."
+  },
+  {
+    "heading": "Check the mount and USB path before checkout",
+    "body": "The original Link 2 quick-start guide shows the magnetic clip/mount and a quarter-inch tripod connection, and calls for the included USB cable and a suitable directly powered USB connection. The selected retail kit lists the camera, magnetic mount, four recognition markers, USB-C cable and USB-C-to-A adapter. Match the actual supplied kit and screen-edge fit. A mount drawing does not prove that a thin or unstable monitor can support the setup."
+  }
+],
     alternatives: [
       "Choose Logitech MX Brio for a premium fixed frame, integrated shutter, and simpler seated workflow.",
       "Choose a fixed Link 2C only after confirming that gimbal tracking is unnecessary.",
     ],
     compareSlugs: ["logitech-mx-brio-4k-webcam", "elgato-key-light-neo", "lume-cube-edge-2-desk-light"],
     sources: [
-      { name: "Insta360 Link 2 store", url: "https://store.insta360.com/product/link-2", note: "Official edition, bundle, sensor, tracking, audio, mode, and warranty information." },
-      { name: "Insta360 Link 2 shooting specifications", url: "https://onlinemanual.insta360.com/link2/en-us/faq/specs/shooting", note: "Official resolution and frame-rate support." },
-      { name: "Insta360 Link 2 Amazon listing", url: "https://www.amazon.com/dp/B0DDTH3HX8", note: "Exact US ASIN, CINSABNB identity, title, and seller check." },
-    ],
-    offers: [{ merchant: "Amazon US", url: amazonUrl("B0DDTH3HX8"), label: "Check Insta360 Link 2 on Amazon", priceNote: "Confirm ASIN B0DDTH3HX8, Link 2 gimbal edition, graphite black standard bundle, seller, live price, and availability." }],
+  {
+    "name": "Insta360 Link 2 store",
+    "url": "https://store.insta360.com/product/link-2",
+    "note": "Official edition, bundle, sensor, tracking, audio, mode, and warranty information."
   },
+  {
+    "name": "Insta360 Link 2 shooting specifications",
+    "url": "https://onlinemanual.insta360.com/link2/en-us/faq/specs/shooting",
+    "note": "Official resolution and frame-rate support."
+  },
+  {
+    "name": "Insta360 Link 2 Amazon listing",
+    "url": "https://www.amazon.com/dp/B0DDTH3HX8",
+    "note": "October 31, 2026 US10001: original CINSABNB Graphite Black standard kit, Insta360 Direct seller, Amazon fulfillment and expanded free 30-day returns observed. Selected condition remains unconfirmed."
+  },
+  {
+    "name": "Insta360 Link 2 CINSABNB quick-start guide",
+    "url": "https://m.media-amazon.com/images/I/812wo6m5egL.pdf",
+    "note": "Current ASIN-linked original V1.2PB.ABN000103: English setup, mounting and USB connection diagrams, controls, privacy indicators and care reviewed. Applies to original Link 2, not Pro/2C."
+  }
+],
+    offers: [{ merchant: "Amazon US", url: amazonUrl("B0DDTH3HX8"), label: "Check Insta360 Link 2 on Amazon", priceNote: "Confirm ASIN B0DDTH3HX8, Link 2 gimbal edition, graphite black standard bundle, seller, live price, and availability." }],
+  "purchaseCheck": "Original Link 2 CINSABNB, Graphite Black standard kit, not 2C or Pro. Check USB power, magnetic mount, supplied cable/adapter and required software permissions; compare condition, seller and returns.",
+},
   {
     site: "baby",
     slug: "philips-avent-premium-fast-bottle-warmer-scf358",
@@ -358,49 +453,45 @@ export const august2026ExpansionProducts: Product[] = [
     amazonTitle: "Philips Avent Premium Fast Bottle Warmer SCF358",
     amazonDetailUrl: "https://www.amazon.com/dp/B0876T9DQZ",
     seoTitle: "Philips Avent SCF358 Bottle Warmer Guide",
-    updatedAt,
+    "updatedAt": "October 31, 2026",
     evidenceMode: "official-spec",
     researchNote:
-      "We have not tested warming speed or temperature consistency ourselves. This safety-minded guide uses Philips' current SCF358/00 page, instructions, and exact Amazon listing. Bottle material, volume, starting temperature, water level, scale, and room conditions change the result; always follow the manual and test the feed before offering it.",
+      "Current Philips product/support information and all 23 pages of the retailer-linked SCF358 English manual, including operating diagrams, were read. That linked 2021 revision is not proof of the manual or regional label in every received package. October 31 US retail identity and expanded returns were observed; selected New was not explicit. No physical warming or food-safety test.",
     name: "Philips Avent Premium Fast Bottle Warmer SCF358",
     brand: "Philips Avent",
     category: "feeding",
     image: "/images/affiliate/baby-philips-avent-scf358-bottle-warmer-editorial.webp",
     imageAlt: "Editorial image of a simple white dial-controlled bottle warmer on a kitchen counter",
     summary:
-      "A dial-controlled water-bath warmer with automatic temperature control, volume settings, defrost, baby-food warming, automatic shut-off, and a keep-warm period of up to 60 minutes.",
+      "A physical-dial SCF358/00 water-bath warmer with volume settings, defrost and baby-food modes. The reviewed instructions include warming in its roughly 60-minute shut-off period.",
     verdict:
       "SCF358 is the simpler bottle warmer when repeatable physical controls and broad bottle fit matter more than an app. Baby Brezza is worth comparing when the household wants phone alerts and separate water-bath or steam workflows.",
     whyItMatters:
       "A bottle warmer can reduce night-feed friction, but it does not know the exact bottle, milk condition, or serving temperature. The caregiver still controls safe storage, timing, mixing, and the final temperature check.",
     bestFor: "A straightforward counter warmer with physical controls and no app requirement",
     priceBand: "$",
-    rating: 4.4,
-    scores: [
-      { label: "Control simplicity", value: 9 },
-      { label: "Bottle compatibility", value: 8 },
-      { label: "Remote alerts", value: 2 },
-    ],
+    rating: 0,
+    scores: [],
     pros: [
-      "Simple dial and volume-based setup",
-      "Defrost and baby-food warming modes",
-      "Keeps contents warm for up to 60 minutes before shut-off",
-    ],
+  "Physical dial and volume-based setup",
+  "Separate defrost and baby-food warming modes",
+  "Automatic shut-off; the reviewed approximately 60-minute period includes warming"
+],
     cons: [
       "No phone notification or remote control",
       "Published three-minute warming applies only to stated test conditions",
       "Water level, bottle material, scale, and starting temperature affect results",
     ],
     specs: {
-      ASIN: "B0876T9DQZ",
-      Model: "SCF358/00",
-      Method: "Water-bath warming with automatic temperature control",
-      Controls: "Physical dial with volume and mode selections",
-      Modes: "Milk warming, defrost, and baby-food warming",
-      "Keep warm": "Up to 60 minutes",
-      "Published fastest result": "As little as 3 minutes under Philips' stated 150mL / 20°C conditions",
-      Power: "Corded electric",
-    },
+  "ASIN": "B0876T9DQZ",
+  "Model": "SCF358/00",
+  "Method": "Water-bath warming with automatic temperature control",
+  "Controls": "Physical dial with volume and mode selections",
+  "Modes": "Milk warming, defrost, and baby-food warming",
+  "Keep warm": "Reviewed instructions shut off after about 60 minutes including warming time; not another 60 minutes after warming.",
+  "Published fastest result": "Current Philips leaflet: 150 mL at 22°C / 72°F in a 260 mL Natural bottle; not a refrigerated-feed timing guarantee.",
+  "Power": "Corded electric"
+},
     evidence: [
       "Confirm ASIN B0876T9DQZ, model SCF358/00, US voltage, seller, and included parts",
       "Use the current manual's water, volume, starting-temperature, and bottle guidance",
@@ -408,34 +499,58 @@ export const august2026ExpansionProducts: Product[] = [
       "Follow current breast-milk or formula storage guidance independently of the warmer",
     ],
     editorialSections: [
-      {
-        heading: "The three-minute claim is conditional",
-        body: "Philips states that warming can take as little as three minutes for 150mL of milk at 20°C in a 260mL Avent Natural bottle. A refrigerated feed, larger volume, glass bottle, different shape, or scale buildup can take longer. Time the real household setup before relying on a shortcut.",
-      },
-      {
-        heading: "Automatic control does not replace the final check",
-        body: "The warmer selects a pattern based on the chosen setting, but it cannot verify how milk was stored, how the bottle conducts heat, whether contents were mixed, or what temperature the baby will accept. Follow the manual and check every feed before use.",
-      },
-      {
-        heading: "Keep-warm is a convenience boundary",
-        body: "The unit can keep the feed warm for up to 60 minutes, but that is not permission to ignore current food-safety and milk-storage guidance. Prepare feeds as close as practical to use and discard or store them according to authoritative guidance.",
-      },
-      {
-        heading: "Who should skip it",
-        body: "Skip SCF358 when the household needs a travel solution without mains power, wants phone alerts, or would rather use a simpler approved warming method that already fits the feeding routine.",
-      },
-    ],
+  {
+    "heading": "The three-minute claim is conditional",
+    "body": "The current Philips leaflet's three-minute example uses 150 mL of milk at 22°C / 72°F in a 260 mL Natural bottle. A refrigerated feed, larger quantity, different bottle material or scale can change warming time. The reviewed instructions select the actual milk volume, not the bottle's maximum capacity. This page has not timed the warmer."
+  },
+  {
+    "heading": "Automatic control does not replace the final check",
+    "body": "The warmer selects a pattern based on the chosen setting, but it cannot verify how milk was stored, how the bottle conducts heat, whether contents were mixed, or what temperature the baby will accept. Follow the manual and check every feed before use."
+  },
+  {
+    "heading": "Keep-warm is a convenience boundary",
+    "body": "The reviewed SCF358 instructions include warming in the approximately 60-minute automatic shut-off period. This is not a fresh 60-minute storage allowance after warming. Follow the applicable milk or formula handling guidance, check the feed before use, and let the warmer cool before preparing another bottle; an already-lit indicator does not prove that a new cycle ran."
+  },
+  {
+    "heading": "Who should skip it",
+    "body": "Skip SCF358 when the household needs a travel solution without mains power, wants phone alerts, or would rather use a simpler approved warming method that already fits the feeding routine."
+  }
+],
     alternatives: [
       "Choose Baby Brezza Smart Bottle Warmer when app alerts and two distinct warming modes are useful.",
       "Use a simple manual warming routine when counter space and another appliance are bigger problems than timing.",
     ],
     compareSlugs: ["baby-brezza-smart-bottle-warmer", "baby-brezza-sterilizer-dryer-advanced", "dr-browns-all-in-one-sterilizer-dryer"],
     sources: [
-      { name: "Philips Avent SCF358/00", url: "https://www.usa.philips.com/c-p/SCF358_00/avent-fast-bottle-warmer", note: "Official controls, modes, conditional timing, keep-warm, and compatibility information." },
-      { name: "Philips Avent SCF358 Amazon listing", url: "https://www.amazon.com/dp/B0876T9DQZ", note: "Exact US ASIN, model identity, title, seller, and return check." },
-    ],
-    offers: [{ merchant: "Amazon US", url: amazonUrl("B0876T9DQZ"), label: "Check Philips Avent SCF358 on Amazon", priceNote: "Confirm ASIN B0876T9DQZ, SCF358/00, US voltage, seller, live price, and availability." }],
+  {
+    "name": "Philips Avent SCF358/00",
+    "url": "https://www.usa.philips.com/c-p/SCF358_00/avent-fast-bottle-warmer",
+    "note": "Official controls, modes, conditional timing, keep-warm, and compatibility information."
   },
+  {
+    "name": "Philips SCF358 current retail leaflet",
+    "url": "https://acc.documents.philips.com/assets/20250728/f793d3986a2a42d9a539b328012ab94e.pdf",
+    "note": "2025-07-28 manufacturer leaflet; specific three-minute example uses 150 mL at 22°C in a 260 mL Natural bottle."
+  },
+  {
+    "name": "Philips SCF358 retailer-linked English manual",
+    "url": "https://m.media-amazon.com/images/I/A1reJ2ARYsL.pdf",
+    "note": "Complete 23-page English revision dated September 16, 2021, including diagrams, read. Regional label and supplied instructions still govern; shut-off time includes warming."
+  },
+  {
+    "name": "Philips repeat-bottle guidance",
+    "url": "https://www.usa.philips.com/c-f/XC000019039/can-i-use-the-philips-avent-bottle-warmer-twice-in-a-row",
+    "note": "SCF358/00-specific cooldown and progress-indicator guidance."
+  },
+  {
+    "name": "Amazon SCF358/00 selection",
+    "url": "https://www.amazon.com/dp/B0876T9DQZ",
+    "note": "October 31 US ZIP 10001 identity, Amazon.com selected offer and expanded 90-day returns observed; separate lower-priced New summary not mixed with the selected offer."
+  }
+],
+    offers: [{ merchant: "Amazon US", url: amazonUrl("B0876T9DQZ"), label: "Check Philips Avent SCF358 on Amazon", priceNote: "Confirm ASIN B0876T9DQZ, SCF358/00, US voltage, seller, live price, and availability." }],
+  "purchaseCheck": "Match SCF358/00 and B0876T9DQZ, the received regional voltage and the actual bottle material. Choose the milk volume rather than bottle capacity, check every feed, and recheck current seller, condition, delivery and returns on Amazon.",
+},
   {
     site: "baby",
     slug: "baby-brezza-smart-bottle-warmer",
@@ -443,29 +558,25 @@ export const august2026ExpansionProducts: Product[] = [
     amazonTitle: "Baby Brezza Smart Baby Bottle Warmer with Bluetooth",
     amazonDetailUrl: "https://www.amazon.com/dp/B09H17F8F3",
     seoTitle: "Baby Brezza Smart Bottle Warmer Guide & SCF358 Comparison",
-    updatedAt,
+    "updatedAt": "October 31, 2026",
     evidenceMode: "official-spec",
     researchNote:
-      "We have not tested temperatures or the app ourselves. This guide uses Baby Brezza's current product page, instructions, and exact Amazon listing. Manufacturer nutrition or warming claims are not treated as independent test results; follow the manual, current feeding guidance, and a final temperature check.",
+      "The current official Smart Bottle Warmer page and October 31 BRZ0088 US retail identity/expanded returns were reviewed. An older six-spread Safe + Smart original was fully read but identifies BRZ00139, so its technical ratings and instructions are not certified for this ASIN. No app, warming or nutrition test; selected New condition was not explicit.",
     name: "Baby Brezza Smart Bottle Warmer",
     brand: "Baby Brezza",
     category: "feeding",
     image: "/images/affiliate/baby-brezza-smart-bottle-warmer-editorial.webp",
     imageAlt: "Editorial image of a tall digital bottle warmer with measuring cup on a kitchen counter",
     summary:
-      "A Bluetooth-connected bottle warmer with separate Steady Warm water-bath and Quick Warm steam modes, nine preset combinations, app alerts, automatic shut-off, defrost capability, and broad bottle and milk-bag fit.",
+      "A BRZ0088 Bluetooth warmer with water-bath and steam modes, physical controls and completion alerts. Match the supplied instructions; an older Safe + Smart manual identifies a different model.",
     verdict:
       "Baby Brezza is the better fit when phone alerts and a choice between gentler water-bath warming and faster steam warming will actually be used. Philips SCF358 is simpler for households that prefer physical controls and fewer setup decisions.",
     whyItMatters:
       "Two warming modes create flexibility but also more opportunity to select the wrong setting. The caregiver still has to match the feed type, starting temperature, volume, and container, then test before feeding.",
     bestFor: "App-assisted night feeds with a deliberate choice of water-bath or steam mode",
     priceBand: "$$",
-    rating: 4.3,
-    scores: [
-      { label: "Mode flexibility", value: 9 },
-      { label: "Night-feed alerts", value: 8 },
-      { label: "Control simplicity", value: 6 },
-    ],
+    rating: 0,
+    scores: [],
     pros: [
       "Separate water-bath and steam warming modes",
       "Bluetooth app can send an alert when warming finishes",
@@ -493,44 +604,57 @@ export const august2026ExpansionProducts: Product[] = [
       "Mix as directed and test the feed temperature before every feeding",
     ],
     editorialSections: [
-      {
-        heading: "The two modes solve different jobs",
-        body: "Steady Warm uses a water bath; Quick Warm uses steam. The correct choice depends on feed type, container, volume, and starting temperature. Do not select the fastest mode automatically, and follow the current settings guide rather than a remembered number.",
-      },
-      {
-        heading: "Bluetooth is a completion alert, not supervision",
-        body: "The app can reduce waiting at the counter, but the warmer still needs correct water, an appropriate container, stable placement, and an adult to remove, mix, and test the feed. Keep the appliance and hot water out of reach.",
-      },
-      {
-        heading: "Treat manufacturer nutrition language cautiously",
-        body: "Baby Brezza describes different temperature paths for breast milk and formula. This page does not turn manufacturer marketing into an independent health claim. Follow current pediatric and food-safety guidance and the instructions for the specific feed.",
-      },
-      {
-        heading: "Who should skip it",
-        body: "Skip this model when an app adds friction, only one warming method is needed, counter space is tight, or the household wants a travel warmer rather than a corded appliance.",
-      },
-    ],
+  {
+    "heading": "The two modes solve different jobs",
+    "body": "Steady Warm uses a water bath; Quick Warm uses steam. The correct choice depends on feed type, container, volume, and starting temperature. Do not select the fastest mode automatically, and follow the current settings guide rather than a remembered number."
+  },
+  {
+    "heading": "Bluetooth is a completion alert, not supervision",
+    "body": "The app can reduce waiting at the counter, but the warmer still needs correct water, an appropriate container, stable placement, and an adult to remove, mix, and test the feed. Keep the appliance and hot water out of reach."
+  },
+  {
+    "heading": "Treat manufacturer nutrition language cautiously",
+    "body": "Baby Brezza describes different temperature paths for breast milk and formula. This page does not turn manufacturer marketing into an independent health claim. Follow current pediatric and food-safety guidance and the instructions for the specific feed."
+  },
+  {
+    "heading": "Who should skip it",
+    "body": "Skip this model when an app adds friction, only one warming method is needed, counter space is tight, or the household wants a travel warmer rather than a corded appliance."
+  },
+  {
+    "heading": "Match BRZ0088 before borrowing another manual",
+    "body": "The selected Amazon item lists BRZ0088. A reviewed older Safe + Smart instruction file identifies BRZ00139, so its 500 W rating, setting chart and exact procedure are not assigned to BRZ0088 here. The current official product page supports the Bluetooth and two warming-mode comparison. Check the received label and matching instructions before use; app compatibility and actual temperature performance have not been tested."
+  }
+],
     alternatives: [
       "Choose Philips Avent SCF358 for a simpler dial-controlled water-bath workflow.",
       "Use a simpler approved warming method when app alerts and preset combinations would go unused.",
     ],
     compareSlugs: ["philips-avent-premium-fast-bottle-warmer-scf358", "baby-brezza-sterilizer-dryer-advanced", "dr-browns-all-in-one-sterilizer-dryer"],
     sources: [
-      { name: "Baby Brezza Smart Bottle Warmer", url: "https://babybrezza.com/products/safe-smart-bottle-warmer", note: "Official modes, settings, app, fit, automatic shut-off, and warranty information." },
-      { name: "Baby Brezza Amazon listing", url: "https://www.amazon.com/dp/B09H17F8F3", note: "Exact US ASIN, current Bluetooth warmer title, seller, and bundle check." },
-    ],
-    offers: [{ merchant: "Amazon US", url: amazonUrl("B09H17F8F3"), label: "Check Baby Brezza Smart Warmer on Amazon", priceNote: "Confirm ASIN B09H17F8F3, current Bluetooth model, US voltage, measuring cup, seller, live price, and availability." }],
+  {
+    "name": "Baby Brezza Smart Bottle Warmer",
+    "url": "https://babybrezza.com/products/safe-smart-bottle-warmer",
+    "note": "Current official Bluetooth, water-bath/steam modes, controls, fit and measuring-cup description reviewed. Direct-store stock and warranty are not Amazon terms."
   },
+  {
+    "name": "Amazon BRZ0088 selected item",
+    "url": "https://www.amazon.com/dp/B09H17F8F3",
+    "note": "October 31 US ZIP 10001: BRZ0088, UPC 886267008450, selected Amazon.com offer and expanded 90-day return window. Different model numbers and separate seller summaries are not merged."
+  }
+],
+    offers: [{ merchant: "Amazon US", url: amazonUrl("B09H17F8F3"), label: "Check Baby Brezza Smart Warmer on Amazon", priceNote: "Confirm ASIN B09H17F8F3, current Bluetooth model, US voltage, measuring cup, seller, live price, and availability." }],
+  "purchaseCheck": "Select BRZ0088, B09H17F8F3 and the required measuring cup; do not assume a PerfectWarm non-Bluetooth model is the same item. Confirm the received regional power label and matching instructions, current condition, seller, delivery and returns.",
+},
   {
     "site": "pet",
     "slug": "neakasa-m1-plus-self-cleaning-litter-box",
     "asin": "B0CSKBWBF6",
     "amazonTitle": "Neakasa M1 Plus Open-Top Self-Cleaning Cat Litter Box",
     "amazonDetailUrl": "https://www.amazon.com/dp/B0CSKBWBF6",
-    "seoTitle": "Neakasa M1 Plus: Size, Version and Cat Fit Checks",
-    "updatedAt": "October 27, 2026",
+    "seoTitle": "Neakasa M1 Plus: Version & Cat Fit",
+    "updatedAt": "November 1, 2026",
     "evidenceMode": "official-spec",
-    "researchNote": "Current M1 Plus product/FAQ text and all 22 pages of the linked original M1 family manual were reviewed October 26, 2026. They differ in capacity, liner and warranty wording. We have not tested cat fit, odor, sensors or durability, and exact Plus manual applicability remains unknown.",
+    "researchNote": "Current M1 Plus product/FAQ text and all 22 pages of the linked original M1 family manual were reviewed October 26, 2026. They differ in capacity, liner and warranty wording. We have not tested cat fit, odor, sensors or durability, and exact Plus manual applicability remains unknown. November 1: selected Grey M1 Plus/PS0120 offer in stock, shipped by Amazon and sold by Neakasa official. Selected New condition was not separately established. Model code alone does not resolve current Plus capacities, liner rules or supplied revision; the original manual remains a dated family reference.",
     "name": "Neakasa M1 Plus Self-Cleaning Litter Box",
     "brand": "Neakasa",
     "category": "home-care",
@@ -554,43 +678,44 @@ export const august2026ExpansionProducts: Product[] = [
       "Sensor count and marketing waste duration do not establish safe unattended use"
     ],
     "specs": {
-      "Historical ASIN": "B0CSKBWBF6",
-      "Version boundary": "Current M1 Plus page; received revision not reverified",
-      "Design": "Open top with a rotating litter bed",
-      "Current Plus catalog capacities": "7.17 L litter / 11.23 L waste; not original M1 manual figures",
-      "Current Plus catalog sensors": "6 infrared pairs plus 4 weight sensors; not an outcome test",
-      "Manual match": "Linked document identifies original PS0120/M1; exact Plus applicability unresolved",
-      "Warranty": "Current Plus terms and older manual differ; check originating seller and region",
-      "Historical listed dimensions": "20.67 × 23.26 × 20.2 in; exact Plus revision unconfirmed, not service clearance"
-    },
+  "Historical ASIN": "B0CSKBWBF6",
+  "Version boundary": "Current M1 Plus page; received revision not reverified",
+  "Design": "Open top with a rotating litter bed",
+  "Current Plus catalog capacities": "7.17 L litter / 11.23 L waste; not original M1 manual figures",
+  "Current Plus catalog sensors": "6 infrared pairs plus 4 weight sensors; not an outcome test",
+  "Manual match": "Linked document identifies original PS0120/M1; exact Plus applicability unresolved",
+  "Warranty": "Current Plus terms and older manual differ; check originating seller and region",
+  "Historical listed dimensions": "Older listing20.67×23.26×20.2in differs from November 1 listing22×20×26in. Neither is a measured usable/service clearance.",
+  "Retail identity": "November 1: Grey, M1 Plus Model, retail modelPS0120; exact received Plus operating revision still needs confirmation"
+},
     "evidence": [
-      "Check the received Plus model and applicable instructions before applying original M1 limits",
-      "Do not present an open top or sensor count as a safety or cat-comfort guarantee",
-      "The current Plus page and older manual disagree on some version-specific figures and terms",
-      "A historical ASIN is not a new seller, stock, warranty or returns observation"
-    ],
+  "Check the received Plus model and applicable instructions before applying original M1 limits",
+  "Do not present an open top or sensor count as a safety or cat-comfort guarantee",
+  "The current Plus page and older manual disagree on some version-specific figures and terms",
+  "November 1 retail offer observed separately; current seller coverage, exact received Plus instructions and actual service clearance still need confirmation"
+],
     "editorialSections": [
-      {
-        "heading": "Confirm which M1 version would arrive",
-        "body": "The current manufacturer page is headed M1 Plus and describes changes from original M1. Its manual link leads to an original M1 family document. That mismatch matters: do not silently combine capacities, accessory rules or warranty periods into a single certified specification. Identify the received unit and its applicable instructions before setup."
-      },
-      {
-        "heading": "Measure the full footprint and service space",
-        "body": "The saved listing used 20.67 × 23.26 × 20.2 inches, but this review has not confirmed that figure against the exact received Plus revision. Treat it as a historical listing claim, not a fit guarantee. Confirm dimensions and their order, entry height, chamber movement and room to remove the drawer and cleaning parts. A cabinet opening that fits an idle outer box may still be unsuitable during operation or service."
-      },
-      {
-        "heading": "Evaluate the cat and working space separately",
-        "body": "Check the actual cat’s eligibility and entry against the applicable instructions, then leave stable floor space and access for removing and cleaning parts. An open top may be a preferred layout, but we have not measured usable space for a particular cat. A step, mat or larger advertised capacity does not fix ineligibility or rejection. Keep an ordinary box available."
-      },
-      {
-        "heading": "Buy only accessories confirmed for the received revision",
-        "body": "Record the included litter, liner, mat and any odor accessory. The original manual illustrates how bag seating and wrinkles can affect a sensor, but its dedicated-accessory wording does not settle every Plus liner choice. Do not borrow a generic-bag permission or an old granule limit without confirming the exact instructions."
-      },
-      {
-        "heading": "Choose a cleaning routine rather than a hands-free promise",
-        "body": "Waste capacity is not permission to leave a cat unattended for a marketing number of days. Plan inspections, waste removal, approved cleaning and complete drying. The original document illustrates electrical-base and chamber handling limits, but use the received Plus instructions for the actual procedure. Stop and use the backup box when model documentation or operation is unclear."
-      }
-    ],
+  {
+    "heading": "Confirm which M1 version would arrive",
+    "body": "The current manufacturer page is headed M1 Plus and describes changes from original M1. Its manual link leads to an original M1 family document. That mismatch matters: do not silently combine capacities, accessory rules or warranty periods into a single certified specification. Identify the received unit and its applicable instructions before setup."
+  },
+  {
+    "heading": "Measure the full footprint and service space",
+    "body": "The older listing used20.67×23.26×20.2 inches; the November 1 selected Grey M1 Plus listing gives22×20×26 inches. Do not choose whichever figure fits a cabinet. Confirm the received Plus dimensions and their order, entry and chamber movement, and drawer/cleaning access with the seller or manufacturer before ordering for a fixed space."
+  },
+  {
+    "heading": "Evaluate the cat and working space separately",
+    "body": "Check the actual cat’s eligibility and entry against the applicable instructions, then leave stable floor space and access for removing and cleaning parts. An open top may be a preferred layout, but we have not measured usable space for a particular cat. A step, mat or larger advertised capacity does not fix ineligibility or rejection. Keep an ordinary box available."
+  },
+  {
+    "heading": "Buy only accessories confirmed for the received revision",
+    "body": "Record the included litter, liner, mat and any odor accessory. The original manual illustrates how bag seating and wrinkles can affect a sensor, but its dedicated-accessory wording does not settle every Plus liner choice. Do not borrow a generic-bag permission or an old granule limit without confirming the exact instructions."
+  },
+  {
+    "heading": "Choose a cleaning routine rather than a hands-free promise",
+    "body": "Waste capacity is not permission to leave a cat unattended for a marketing number of days. Plan inspections, waste removal, approved cleaning and complete drying. The original document illustrates electrical-base and chamber handling limits, but use the received Plus instructions for the actual procedure. Stop and use the backup box when model documentation or operation is unclear."
+  }
+],
     "alternatives": [
       "petkit-puramax-2-self-cleaning-litter-box"
     ],
@@ -598,22 +723,27 @@ export const august2026ExpansionProducts: Product[] = [
       "petkit-puramax-2-self-cleaning-litter-box"
     ],
     "sources": [
-      {
-        "name": "Neakasa: current M1 Plus product and FAQ",
-        "url": "https://neakasa.com/products/neakasa-m1-cat-litter-box",
-        "note": "Current Plus page links an older M1 family manual. Capacity, liner and warranty wording differ; confirm the received Plus instructions before applying the older document."
-      },
-      {
-        "name": "Neakasa: original M1 family manual linked by the Plus page",
-        "url": "https://cdn.shopify.com/s/files/1/0600/4736/0185/files/Neakasa_M1_Manual.pdf?v=1706772466",
-        "note": "All 22 pages read. Original PS0120/M1 scope, not confirmed exact Plus applicability; preserve differing capacities, bag rules and warranty terms."
-      },
-      {
-        "name": "Historical Amazon listing reference",
-        "url": "https://www.amazon.com/dp/B0CSKBWBF6",
-        "note": "Historical selected listing identity only. The October26 documentation review is not a fresh10001 availability, seller, delivery or returns check."
-      }
-    ],
+  {
+    "name": "Neakasa: current M1 Plus product and FAQ",
+    "url": "https://neakasa.com/products/neakasa-m1-cat-litter-box",
+    "note": "Current Plus page links an older M1 family manual. Capacity, liner and warranty wording differ; confirm the received Plus instructions before applying the older document."
+  },
+  {
+    "name": "Neakasa: original M1 family manual linked by the Plus page",
+    "url": "https://cdn.shopify.com/s/files/1/0600/4736/0185/files/Neakasa_M1_Manual.pdf?v=1706772466",
+    "note": "All 22 pages read. Original PS0120/M1 scope, not confirmed exact Plus applicability; preserve differing capacities, bag rules and warranty terms."
+  },
+  {
+    "name": "Historical Amazon listing reference",
+    "url": "https://www.amazon.com/dp/B0CSKBWBF6",
+    "note": "November 1 selected retailer identity and offer observed separately below. The earlier October 26 manual review remains dated; no received-unit, route or safety certification."
+  },
+  {
+    "name": "November 1 exact US retailer observation",
+    "url": "https://www.amazon.com/dp/B0CSKBWBF6",
+    "note": "Selected US 10001 listing checked November 1. Match the exact model, selected condition, included kit, seller, delivery and return terms again before ordering; this is not physical product testing."
+  }
+],
     "offers": [
       {
         "merchant": "Amazon US",
@@ -623,7 +753,7 @@ export const august2026ExpansionProducts: Product[] = [
       }
     ],
     "purchaseAlternatives": [],
-    "purchaseCheck": "Pause if the applicable Plus manual or the cat’s eligibility is unresolved. Confirm B0CSKBWBF6, the selected M1 Plus rather than original M1 revision, received label/manual, litter and liner compatibility, included mat/bag quantity and seller terms. The old family manual does not certify this exact Plus ASIN."
+    "purchaseCheck": "Compare after the seller confirms the Grey M1 Plus, applicable instructions, cat eligibility, dimensions and accessories. PS0120 alone does not settle the Plus revision. Recheck condition and terms; keep an ordinary box when those requirements remain unknown."
   },
   {
     "site": "pet",
@@ -631,10 +761,10 @@ export const august2026ExpansionProducts: Product[] = [
     "asin": "B0DFYF2D7D",
     "amazonTitle": "PETKIT PuraMax 2 Automatic Self-Cleaning Cat Litter Box",
     "amazonDetailUrl": "https://www.amazon.com/dp/B0DFYF2D7D",
-    "seoTitle": "PETKIT PuraMax 2: Cat Limits, Bundles and Cleaning Checks",
-    "updatedAt": "October 27, 2026",
+    "seoTitle": "PETKIT PuraMax 2: Cat Limits & Care",
+    "updatedAt": "November 1, 2026",
     "evidenceMode": "official-spec",
-    "researchNote": "All 29 pages of PETKIT’s PURA MAX 2 English V1.1 manual, including diagrams, were reviewed October 26, 2026. No cat, sensor, odor or cleaning-performance trial was performed. The older bundle URL now redirects to Max3; that is not proof of discontinuation or permission to transfer new specs.",
+    "researchNote": "November 1: official manual directory now links PURA MAX 2 English V1.3 dated February 2, 2026. All 29 pages, text and diagrams reviewed; linked videos not watched. Overall older-than-six-month and1.5kg boundaries remain; Kitten Mode does not waive them. Current in-stock PETKIT-US offer observed, with 30-day return control but no separately confirmed New selection. No physical safety, cat-acceptance, cleaning or app test was performed.",
     "name": "PETKIT PuraMax 2 Self-Cleaning Litter Box",
     "brand": "PETKIT",
     "category": "home-care",
@@ -658,15 +788,15 @@ export const august2026ExpansionProducts: Product[] = [
       "Approach space, sensor settings, liner seating and complete drying require attention"
     ],
     "specs": {
-      "Historical ASIN": "B0DFYF2D7D",
-      "Document reviewed": "PURA MAX 2 English V1.1, March 5, 2025; name/revision required",
-      "Cat guidance": "Older than 6 months; not recommended under 1.5 kg per reviewed manual",
-      "Dimensions in reviewed manual": "620×538×552mm /24.41×21.18×21.73in",
-      "Rated input": "12 V DC, 2 A in reviewed manual; match regional supplied adapter",
-      "Network": "Manual setup excludes 5 GHz; follow applicable app instructions",
-      "Package boundary": "Basic versus premium; Smart Spray premium-only",
-      "Current offer and revision": "Not freshly verified in this documentation review"
-    },
+  "Historical ASIN": "B0DFYF2D7D",
+  "Document reviewed": "Current official directory links English V1.3, February 2, 2026; all 29 pages and diagrams reviewed November 1",
+  "Cat guidance": "Older than 6 months; not recommended under 1.5 kg per reviewed manual",
+  "Dimensions in reviewed manual": "620×538×552mm /24.41×21.18×21.73in",
+  "Rated input": "12 V DC, 2 A in reviewed manual; match regional supplied adapter",
+  "Network": "Manual setup excludes 5 GHz; follow applicable app instructions",
+  "Package boundary": "Basic versus premium; Smart Spray premium-only",
+  "Current offer and revision": "November 1 in-stock offer shipped and sold by PETKIT-US; selected New and supplied revision not separately established"
+},
     "evidence": [
       "Do not recommend manual operation as a workaround below 6 months or 1.5 kg",
       "Smart Spray inclusion must be checked separately from the N50 odor module",
@@ -674,27 +804,27 @@ export const august2026ExpansionProducts: Product[] = [
       "Match the document by product name and revision; P9902 also occurs in older family documents"
     ],
     "editorialSections": [
-      {
-        "heading": "Use the overall cat limits before selecting a mode",
-        "body": "The reviewed manual’s general guidance recommends against this product for cats younger than six months or under 1.5 kg. Its Kitten Mode section disables automatic and scheduled cleaning and describes manual control, but does not explicitly waive those overall limits. Do not present manual operation as permission to use an ineligible cat. Keep an appropriate conventional box during growth or transition."
-      },
-      {
-        "heading": "Check the exact PuraMax 2 package and document",
-        "body": "Match the received product name and manual revision, not P9902 alone, because that code also appears in older documents. Basic and premium instructions share the reviewed manual, with Smart Spray marked premium-only. A current old-bundle URL redirects to Max3, which is a separate catalog identity; no Max3 feature, warranty or availability is transferred here."
-      },
-      {
-        "heading": "Resolve the consumables and clear the approach",
-        "body": "Identify the installed sifter and follow its litter-granule instructions. Keep the liner flat and the drawer correctly latched. The manual illustrates a clear zone in front of the approach sensors; a mat or step must not obstruct it. N50 and spray refills are separate items. Do not infer required accessories from a large bundle picture."
-      },
-      {
-        "heading": "Do not infer safety from sensor count or a setting name",
-        "body": "The manual describes a Continuous Rotation option that does not stop merely because a cat approaches. This page does not recommend enabling it or claim a sensor count guarantees an outcome. Follow the received instructions and stop operation for an unresolved fault, interference or unsuitable animal response rather than bypassing detection."
-      },
-      {
-        "heading": "Maintain each part as instructed and dry completely",
-        "body": "Disconnect power for maintenance. The reviewed manual distinguishes washable parts from a base that must not be rinsed or soaked, and gives special limits for the litter pad. Reassemble only when the applicable parts are fully dry and correctly seated. Odor modules and app logs do not replace waste removal, inspection or a familiar backup box."
-      }
-    ],
+  {
+    "heading": "Use the overall cat limits before selecting a mode",
+    "body": "The reviewed manual’s general guidance recommends against this product for cats younger than six months or under 1.5 kg. Its Kitten Mode section disables automatic and scheduled cleaning and describes manual control, but does not explicitly waive those overall limits. Do not present manual operation as permission to use an ineligible cat. Keep an appropriate conventional box during growth or transition."
+  },
+  {
+    "heading": "Check the exact PuraMax 2 package and document",
+    "body": "The current official manual directory links PuraMax 2 V1.3, February 2, 2026. Match that product name and the received revision, not P9902 alone, because that code also appears on older documents. Smart Spray is marked premium-only. The old bundle URL redirected to Max3 in the October 26 check; this is not evidence that a selected PuraMax 2 offer contains Max3 features or is discontinued."
+  },
+  {
+    "heading": "Resolve the consumables and clear the approach",
+    "body": "Identify the installed sifter and follow its litter-granule instructions. Keep the liner flat and the drawer correctly latched. The manual illustrates a clear zone in front of the approach sensors; a mat or step must not obstruct it. N50 and spray refills are separate items. Do not infer required accessories from a large bundle picture."
+  },
+  {
+    "heading": "Do not infer safety from sensor count or a setting name",
+    "body": "The manual describes a Continuous Rotation option that does not stop merely because a cat approaches. This page does not recommend enabling it or claim a sensor count guarantees an outcome. Follow the received instructions and stop operation for an unresolved fault, interference or unsuitable animal response rather than bypassing detection."
+  },
+  {
+    "heading": "Maintain each part as instructed and dry completely",
+    "body": "Disconnect power for maintenance. The reviewed manual distinguishes washable parts from a base that must not be rinsed or soaked, and gives special limits for the litter pad. Reassemble only when the applicable parts are fully dry and correctly seated. Odor modules and app logs do not replace waste removal, inspection or a familiar backup box."
+  }
+],
     "alternatives": [
       "neakasa-m1-plus-self-cleaning-litter-box"
     ],
@@ -702,22 +832,32 @@ export const august2026ExpansionProducts: Product[] = [
       "neakasa-m1-plus-self-cleaning-litter-box"
     ],
     "sources": [
-      {
-        "name": "PETKIT: PURA MAX 2 English user manual, V1.1",
-        "url": "https://instructions.petkit.com/App%20Manual/T4-2/T4-2_User%20Manual_EN_V1.1_250305_%20.pdf",
-        "note": "All 29 PDF pages, including diagrams, reviewed. Product name and revision matter: P9902 alone also appears on older documents. Premium-only spray, liners, litter and age/weight boundaries are model specific."
-      },
-      {
-        "name": "PETKIT: old bundle URL now redirects to Max3",
-        "url": "https://www.petkit.com/products/puramax-2-ultimate-bundles",
-        "note": "Redirect observed October 26, 2026. Target is a different product, not evidence for PuraMax2 specifications, stock or end-of-life."
-      },
-      {
-        "name": "Historical Amazon listing reference",
-        "url": "https://www.amazon.com/dp/B0DFYF2D7D",
-        "note": "Historical selected listing identity only. The October26 documentation review is not a fresh10001 availability, seller, delivery or returns check."
-      }
-    ],
+  {
+    "name": "PETKIT PURA MAX 2 English original instructions V1.3",
+    "url": "https://instructions.petkit.com/App%20Manual/T4-2/20260202/T4-2_User%20Manual_EN_V1.3_20260202.pdf",
+    "note": "All 29 pages and diagrams read. Current official-directory link; retain overall age/weight, basic/premium, sifter, sensor-approach and component-care requirements. Videos not watched."
+  },
+  {
+    "name": "PETKIT: old bundle URL now redirects to Max3",
+    "url": "https://www.petkit.com/products/puramax-2-ultimate-bundles",
+    "note": "Redirect observed October 26, 2026. Target is a different product, not evidence for PuraMax 2 specifications, stock or end-of-life."
+  },
+  {
+    "name": "Historical Amazon listing reference",
+    "url": "https://www.amazon.com/dp/B0DFYF2D7D",
+    "note": "November 1 selected retailer identity and offer observed separately below. The earlier October 26 manual review remains dated; no received-unit, route or safety certification."
+  },
+  {
+    "name": "November 1 exact US retailer observation",
+    "url": "https://www.amazon.com/dp/B0DFYF2D7D",
+    "note": "Selected US 10001 listing checked November 1. Match the exact model, selected condition, included kit, seller, delivery and return terms again before ordering; this is not physical product testing."
+  },
+  {
+    "name": "PETKIT current manual directory",
+    "url": "https://www.petkit.com/pages/manual-downloads",
+    "note": "November 1 current PuraMax 2 link resolves to English V1.3; other current models retain separate documents."
+  }
+],
     "offers": [
       {
         "merchant": "Amazon US",
@@ -727,7 +867,7 @@ export const august2026ExpansionProducts: Product[] = [
       }
     ],
     "purchaseAlternatives": [],
-    "purchaseCheck": "Consider only for a cat older than six months and at least 1.5 kg under the applicable manual; Kitten Mode does not waive those overall limits. Check B0DFYF2D7D as PuraMax 2, its received product/manual revision, regional adapter, installed sifter and basic/premium package. Confirm Smart Spray separately. A redirected Max3 page or model code P9902 alone does not establish this bundle."
+    "purchaseCheck": "Consider only for a cat older than six months and at least 1.5 kg. Match PuraMax 2, received revision, adapter, sifter and basic/premium kit; check Smart Spray separately. Recheck condition and terms. Keep an ordinary box if eligibility or setup is uncertain."
   },
 ];
 

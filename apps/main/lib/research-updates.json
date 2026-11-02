@@ -121,17 +121,17 @@
   },
   {
     "site": "homeoffice",
-    "title": "Lumbar Cushions: Chair Shape, Thickness and Seat-Depth Loss",
+    "title": "QUTOOL lumbar cushion: chair depth and strap reach first",
     "href": "https://homeoffice.madabase.com/guides/office-lumbar-cushions-buying-guide",
-    "summary": "Check whether a lumbar cushion fits the chair's backrest and leaves enough usable seat depth, or whether adjusting the existing chair is the better first step.",
+    "summary": "A thick back cushion changes how far forward you sit; check the whole seat rather than just the strap length.",
     "updatedAt": "2026-10-21",
     "change": "Added an interactive and printable seat-depth worksheet, a worked subtraction example and repeatable checks for the actual chair and cushion."
   },
   {
     "site": "homeoffice",
-    "title": "Printer Stands: Loaded Size, Paper Paths and Cable Clearance",
+    "title": "Printer stands: full working clearance beyond the tabletop",
     "href": "https://homeoffice.madabase.com/guides/office-printer-stands-buying-guide",
-    "summary": "Size a printer stand with trays extended, scanner lid open and cables connected. Compare a fixed shelf with a rolling cart before buying extra storage.",
+    "summary": "A 24-inch top must support the printer’s feet while leaving space for paper trays, cables and service access.",
     "updatedAt": "2026-10-21",
     "change": "Added an interactive and printable worksheet for operating footprint, shelf-specific load and scanner-lid clearance, with an explicitly illustrative worked example."
   },
@@ -201,17 +201,17 @@
   },
   {
     "site": "homeoffice",
-    "title": "Receipt Scanners: Single-Sheet Feeding, Paper Limits and Export",
+    "title": "RR-60 receipt scanner: single-sheet work and software checks",
     "href": "https://homeoffice.madabase.com/guides/receipt-scanners-buying-guide",
-    "summary": "Compare the Epson RR-60’s individual-feed workflow with an automatic feeder or phone capture, including paper limits, export and software costs.",
+    "summary": "The RR-60 is a portable USB scanner; a 60-sheet retail field does not make it a batch feeder.",
     "updatedAt": "2026-10-20",
     "change": "Identified the RR-60 as a single-sheet scanner and added exact paper-handling and export checks."
   },
   {
     "site": "homeoffice",
-    "title": "Rolling File Storage: Open Cart or Drawer Cabinet?",
+    "title": "Rolling file cart: Letter folders and under-desk clearance",
     "href": "https://homeoffice.madabase.com/guides/rolling-file-cabinets-buying-guide",
-    "summary": "Choose between an open letter-size hanging-file cart and an enclosed drawer cabinet, then check folder access, floor clearance and documented load limits.",
+    "summary": "The selected Sbanmao is an open cart with locking casters, rather than a secure lockable drawer cabinet.",
     "updatedAt": "2026-10-20",
     "change": "Corrected the linked item to an open letter-size file cart and compared it with an enclosed drawer cabinet."
   },
@@ -241,25 +241,25 @@
   },
   {
     "site": "homeoffice",
-    "title": "Under-Desk Pedal Exercisers: Knee Clearance and Chair Movement",
+    "title": "Under-desk powered pedals: knee room and a reachable stop",
     "href": "https://homeoffice.madabase.com/guides/under-desk-pedal-exercisers-buying-guide",
-    "summary": "Measure moving knee clearance, chair stability and control reach, and distinguish powered pedal motion from manual resistance before choosing a desk exerciser.",
+    "summary": "The selected Orange Putnen is a motorized seated device; speed settings and resistance are different buying decisions.",
     "updatedAt": "2026-10-20",
     "change": "Added moving-knee clearance, chair stability and powered-versus-manual checks without transferring another brand's measurements."
   },
   {
     "site": "homeoffice",
-    "title": "Non-VESA Monitor Adapters: Grip, Load and Port Clearance",
+    "title": "Non-VESA adapters: bezel grip, total load and port clearance",
     "href": "https://homeoffice.madabase.com/guides/vesa-monitor-adapters-buying-guide",
-    "summary": "Check the exact monitor enclosure, attachment method, combined load and cable clearance before fitting a non-VESA screen to an arm.",
+    "summary": "A screen-size range alone cannot establish that edge clamps will hold the monitor safely.",
     "updatedAt": "2026-10-20",
     "change": "Separated model-specific and grip-style adapters, combined load and unresolved exact-monitor fit."
   },
   {
     "site": "homeoffice",
-    "title": "Webcam Key Lights: Position, Glare, Power and Mounting",
+    "title": "SWDPORT webcam lights: check the stand before buying a pair",
     "href": "https://homeoffice.madabase.com/guides/webcam-key-lights-buying-guide",
-    "summary": "Compare an existing lamp, a monitor-mounted light and a separate stand by face lighting, screen reflections, mounting space and USB power.",
+    "summary": "The selected option says “2pack No arm”; the title’s C-clamp wording does not establish which supports arrive.",
     "updatedAt": "2026-10-20",
     "change": "Added camera placement, reflection, clamp and power checks, keeping different manufacturers' specifications separate."
   },

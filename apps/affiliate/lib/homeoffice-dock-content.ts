@@ -9,12 +9,12 @@ export const homeofficeDockProducts: Product[] = [
     site: "homeoffice",
     slug: "plugable-usbc-6950pdz-displaylink-dock",
     asin: "B0BKLT853Z",
-    amazonTitle: "Plugable USB-C Dual HDMI Docking Station, USBC-6950PDZ",
+    amazonTitle: "Plugable USBC-6950PDZ · DisplayLink dock",
     seoTitle: "Plugable USBC-6950PDZ Guide: Dual Monitors on Base M Macs",
-    updatedAt,
+
     evidenceMode: "official-spec",
     researchNote:
-      "We have not tested this dock. The guide uses Plugable's current product and support documentation plus the exact Amazon identity. DisplayLink behavior can change with the host, OS, driver, permissions, monitor, cable, and managed-device policy.",
+      "Research-based guide; no hands-on, installed-fit, durability, comfort or performance test. November 1 exact merchant identity checks are separate from manufacturer specifications and any earlier manual review. Recheck the actual supplied model, accessories and current seller terms.",
     name: "Plugable USBC-6950PDZ DisplayLink Dock",
     brand: "Plugable",
     category: "desks",
@@ -27,12 +27,8 @@ export const homeofficeDockProducts: Product[] = [
       "A dock cannot remove an Apple chip's native display limit just because it has two HDMI sockets. DisplayLink sends compressed display data through USB software, which solves office-screen count while creating driver, permission, and workload tradeoffs.",
     bestFor: "Two office displays on base M-series Macs that allow DisplayLink software",
     priceBand: "$$",
-    rating: 4.3,
-    scores: [
-      { label: "Base Mac dual-display fit", value: 9 },
-      { label: "Office productivity", value: 8 },
-      { label: "Media and gaming fit", value: 3 },
-    ],
+    rating: 0,
+    scores: [],
     pros: [
       "Two extended 4K60 HDMI displays through DisplayLink",
       "Works around native one-display limits on supported base M-series Macs",
@@ -91,22 +87,22 @@ export const homeofficeDockProducts: Product[] = [
     ],
     compareSlugs: ["plugable-tbt4-ud5-thunderbolt-dock", "caldigit-ts4-thunderbolt-dock", "anker-675-usb-c-docking-station"],
     sources: [
-      {
-        name: "Plugable USBC-6950PDZ product page",
-        url: "https://plugable.com/products/usbc-6950pdz",
-        note: "Official display, driver, charging, port, OS, HDCP, gaming, and protected-video limitations.",
-      },
-      {
-        name: "Plugable USBC-6950PDZ display technology note",
-        url: "https://kb.plugable.com/en_US/what-technology-drives-each-of-the-displays-outputs-within-the-usbc-6950pdz",
-        note: "Official clarification that both HDMI outputs use DisplayLink technology.",
-      },
-      {
-        name: "Amazon listing for ASIN B0BKLT853Z",
-        url: "https://www.amazon.com/dp/B0BKLT853Z",
-        note: "Exact current marketplace identity; confirm seller, stock, delivery, and return terms.",
-      },
-    ],
+  {
+    "name": "Plugable USBC-6950PDZ product page",
+    "url": "https://plugable.com/products/usbc-6950pdz",
+    "note": "Official display, driver, charging, port, OS, HDCP, gaming, and protected-video limitations."
+  },
+  {
+    "name": "Plugable USBC-6950PDZ display technology note",
+    "url": "https://kb.plugable.com/en_US/what-technology-drives-each-of-the-displays-outputs-within-the-usbc-6950pdz",
+    "note": "Official clarification that both HDMI outputs use DisplayLink technology."
+  },
+  {
+    "name": "Exact US Amazon selection B0BKLT853Z",
+    "url": "https://www.amazon.com/dp/B0BKLT853Z",
+    "note": "November 1, 2026, US 10001: exact selection, New offer and named seller observed. Expanded conditional 30-day return summary reviewed. Recheck condition, package and live terms."
+  }
+],
     offers: [
       {
         merchant: "Amazon US",
@@ -115,17 +111,20 @@ export const homeofficeDockProducts: Product[] = [
         priceNote: "Confirm ASIN B0BKLT853Z, DisplayLink model, seller, charger inclusion, delivery, and return terms.",
       },
     ],
-  },
+
+"updatedAt": "November 1, 2026",
+"purchaseCheck": "Select USBC-6950PDZ B0BKLT853Z. Both HDMI outputs use DisplayLink; allow driver installation and macOS Screen Recording permission. Bring a compatible 45–100 W USB-C charger: the dock passes up to 82 W to the laptop and includes no power adapter. Skip for protected video, gaming, color-critical work or computers that prohibit the software.",
+},
   {
     site: "homeoffice",
     slug: "plugable-tbt4-ud5-thunderbolt-dock",
     asin: "B0CNTTVVN6",
-    amazonTitle: "Plugable Thunderbolt 4 Dock, TBT4-UD5",
+    amazonTitle: "Plugable TBT4-UD5 · Thunderbolt 4 dock",
     seoTitle: "Plugable TBT4-UD5 Guide: Native Dual 4K Mac Compatibility",
-    updatedAt,
+
     evidenceMode: "official-spec",
     researchNote:
-      "We have not tested this dock. Host display support is based on Plugable's current compatibility matrix and can change by exact chip, port, OS, cable, display, and firmware. The two HDMI sockets do not override a one-display host.",
+      "Research-based guide; no hands-on, installed-fit, durability, comfort or performance test. November 1 exact merchant identity checks are separate from manufacturer specifications and any earlier manual review. Recheck the actual supplied model, accessories and current seller terms.",
     name: "Plugable TBT4-UD5 Thunderbolt 4 Dock",
     brand: "Plugable",
     category: "desks",
@@ -138,12 +137,8 @@ export const homeofficeDockProducts: Product[] = [
       "Native Thunderbolt avoids DisplayLink software and protected-content limitations, but the host GPU still controls how many displays exist. Matching the chip before the dock prevents the most common dual-monitor return.",
     bestFor: "Compatible Thunderbolt 4 or USB4 laptops needing driverless dual 4K60 HDMI",
     priceBand: "$$$",
-    rating: 4.5,
-    scores: [
-      { label: "Native dual-display fit", value: 9 },
-      { label: "Port balance", value: 9 },
-      { label: "Base M1/M2 fit", value: 3 },
-    ],
+    rating: 0,
+    scores: [],
     pros: [
       "Two native HDMI outputs up to dual 4K60 on compatible hosts",
       "13 ports with Gigabit Ethernet, SD, microSD, audio, USB-A, USB-C, and downstream Thunderbolt",
@@ -196,22 +191,22 @@ export const homeofficeDockProducts: Product[] = [
     ],
     compareSlugs: ["plugable-usbc-6950pdz-displaylink-dock", "caldigit-ts4-thunderbolt-dock", "anker-675-usb-c-docking-station"],
     sources: [
-      {
-        name: "Plugable TBT4-UD5 product page",
-        url: "https://plugable.com/products/tbt4-ud5",
-        note: "Official display, host-chip, charging, port, Ethernet, and OS compatibility source.",
-      },
-      {
-        name: "Plugable TBT4-UD5 display-count guide",
-        url: "https://kb.plugable.com/en_US/docking-stations/how-many-external-displays-can-i-connect-to-the-tbt4-ud5",
-        note: "Official explanation of host video limits and HDMI/downstream-port allocation.",
-      },
-      {
-        name: "Amazon listing for ASIN B0CNTTVVN6",
-        url: "https://www.amazon.com/dp/B0CNTTVVN6",
-        note: "Exact current marketplace identity; confirm seller, stock, delivery, and return terms.",
-      },
-    ],
+  {
+    "name": "Plugable TBT4-UD5 product page",
+    "url": "https://plugable.com/products/tbt4-ud5",
+    "note": "Official display, host-chip, charging, port, Ethernet, and OS compatibility source."
+  },
+  {
+    "name": "Plugable TBT4-UD5 display-count guide",
+    "url": "https://kb.plugable.com/en_US/docking-stations/how-many-external-displays-can-i-connect-to-the-tbt4-ud5",
+    "note": "Official explanation of host video limits and HDMI/downstream-port allocation."
+  },
+  {
+    "name": "Exact US Amazon selection B0CNTTVVN6",
+    "url": "https://www.amazon.com/dp/B0CNTTVVN6",
+    "note": "November 1, 2026, US 10001: exact selection, New offer and named seller observed. Expanded conditional 30-day return summary reviewed. Recheck condition, package and live terms."
+  }
+],
     offers: [
       {
         merchant: "Amazon US",
@@ -220,7 +215,10 @@ export const homeofficeDockProducts: Product[] = [
         priceNote: "Confirm ASIN B0CNTTVVN6, host-chip support, seller, delivery, and return terms.",
       },
     ],
-  },
+
+"updatedAt": "November 1, 2026",
+"purchaseCheck": "Select TBT4-UD5 B0CNTTVVN6 with its power supply and Thunderbolt cable. Two HDMI sockets do not override the host: base M1/M2 give one display; base M3 needs the documented closed-lid setup; check newer chips, ports and OS separately. Thunderbolt 3 or ordinary USB-C gives one. Up to 100 W charging is 96 W certified, not the retail 134 W field as laptop output.",
+},
   {
     site: "homeoffice",
     slug: "caldigit-ts4-thunderbolt-dock",
@@ -278,21 +276,21 @@ export const homeofficeDockProducts: Product[] = [
     ],
     editorialSections: [
       {
-        heading: "Buy it for the complete desk, not only two screens",
-        body: "TS4 combines 2.5GbE, 98W host power, multiple USB paths, card readers, audio, DisplayPort, and downstream Thunderbolt. It becomes rational when several of those solve real bottlenecks, not when the desk needs only a keyboard and one 1080p monitor.",
+        "heading": "Buy it for the complete desk, not only two screens",
+        "body": "TS4 combines Ethernet, up to 98 W host power, USB ports, card readers, audio, DisplayPort and downstream Thunderbolt. Compare it when several of those solve a real desk bottleneck. CalDigit supports its 2.5 GbE port on Thunderbolt-based hosts only; a USB-C-only host should not be assumed to gain Ethernet through this dock."
       },
       {
-        heading: "Native display limits still apply",
-        body: "A base M1 Mac remains a one-external-display host through a native dock. Pro, Max, Ultra, newer base chips, and Windows systems have different limits. Check the exact chip and CalDigit's current table before choosing cables or adapters.",
+        "heading": "Native display limits still apply",
+        "body": "A base M1 Mac remains a one-external-display host through a native dock. Pro, Max, Ultra, newer base chips, and Windows systems have different limits. Check the exact chip and CalDigit's current table before choosing cables or adapters."
       },
       {
-        heading: "Display wiring needs a drawing",
-        body: "TS4 uses DisplayPort and downstream Thunderbolt/USB-C video paths rather than a simple pair of built-in HDMI ports. Record each monitor input, resolution, refresh rate, cable, adapter, and the host's DSC capability before buying.",
+        "heading": "Display wiring needs a drawing",
+        "body": "TS4 uses DisplayPort and downstream Thunderbolt video paths. Its three USB-C data ports do not output video. Record each monitor input, resolution, refresh rate, cable and the host’s display/DSC limits. CalDigit requires an active adapter when converting its DisplayPort output to another display connector; a pair of adapters cannot remove a host display-count limit."
       },
       {
-        heading: "Who should skip it",
-        body: "Skip it if Gigabit Ethernet is enough, the laptop needs less power, only one display is supported, or most ports would remain unused. TBT4-UD5 is a clearer native dual-HDMI choice; USBC-6950PDZ handles base-Mac office screens through DisplayLink.",
-      },
+        "heading": "Who should skip it",
+        "body": "Skip TS4 if Gigabit Ethernet and a simpler connection already meet the job, the host supports fewer displays than you need, or most ports would remain unused. Compare the exact TBT4-UD5 for a native dual-HDMI layout or a documented DisplayLink dock for a supported driver-based workflow; neither bypasses every host or workplace constraint."
+      }
     ],
     alternatives: [
       "Choose Plugable TBT4-UD5 for a simpler native dual-HDMI desk.",
@@ -302,20 +300,20 @@ export const homeofficeDockProducts: Product[] = [
     compareSlugs: ["plugable-tbt4-ud5-thunderbolt-dock", "plugable-usbc-6950pdz-displaylink-dock", "anker-675-usb-c-docking-station"],
     sources: [
       {
-        name: "CalDigit TS4 product page",
-        url: "https://us.caldigit.com/products/ts4",
-        note: "Official port, charging, Ethernet, display, orientation, and compatibility source.",
+        "name": "CalDigit TS4 product page",
+        "url": "https://us.caldigit.com/products/ts4",
+        "note": "Official port, charging, Ethernet, display, orientation, and compatibility source."
       },
       {
-        name: "CalDigit TS4 manual",
-        url: "https://downloads.caldigit.com/TS4/CalDigit_TS4_Manual.pdf",
-        note: "Official setup, display matrix, adapter, port, power, and safety documentation.",
+        "name": "CalDigit TS4 manual",
+        "url": "https://downloads.caldigit.com/TS4/CalDigit_TS4_Manual.pdf",
+        "note": "Official setup, display matrix, adapter, port, power, and safety documentation."
       },
       {
-        name: "Amazon listing for ASIN B09GK8LBWS",
-        url: "https://www.amazon.com/dp/B09GK8LBWS",
-        note: "Exact current marketplace identity; confirm seller, regional power supply, stock, and delivery.",
-      },
+        "name": "Amazon listing for ASIN B09GK8LBWS",
+        "url": "https://www.amazon.com/dp/B09GK8LBWS",
+        "note": "Exact current marketplace identity; confirm seller, regional power supply, stock, and delivery."
+      }
     ],
     offers: [
       {

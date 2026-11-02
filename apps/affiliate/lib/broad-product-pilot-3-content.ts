@@ -926,7 +926,7 @@ export const broadProductPilot3Guides: Guide[] = [
     ],
     sources: [
       { name: "CPSC stroller safety", url: "https://www.cpsc.gov/Safety-Education/Safety-Guides/Kids-and-Babies/Strollers", note: "Authoritative stability, restraint, brake, fold, and child-safety context for stroller use." },
-      { name: "AAP stroller safety", url: "https://www.healthychildren.org/English/safety-prevention/on-the-go/Pages/Stroller-Safety.aspx", note: "Pediatric guidance on stroller stability, brakes, restraints, supervision, and hanging bags." },
+      { name: "AAP stroller safety", url: "https://www.healthychildren.org/English/safety-prevention/on-the-go/Pages/How-to-Buy-a-Safe-Stroller.aspx", note: "Pediatric guidance on stroller stability, brakes, restraints, supervision, and hanging bags." },
     ],
     asin: "B07JMZYJVW",
     relatedGuides: ["stroller-fans-buying-guide", "structured-diaper-bags-buying-guide", "travel-stroller-folded-size-checklist"],
@@ -1150,7 +1150,7 @@ export const broadProductPilot3Guides: Guide[] = [
       ["Aim indirectly and monitor the child", "Use the lowest useful airflow and avoid a fixed blast into eyes, face, or one cold area. Check skin, breathing, behavior, sweating, color, and overall comfort frequently, alongside the fan mount and fabric clearance. Stop for concerning heat signs or any device fault. Never leave the child unattended with the fan, even when the stroller is stationary indoors."],
     ],
     sources: [
-      { name: "AAP extreme heat guidance for children", url: "https://www.healthychildren.org/English/safety-prevention/at-play/Pages/Protecting-Children-from-Extreme-Heat-Information-for-Parents.aspx", note: "Pediatric heat-exposure, hydration, activity, symptom, and emergency-response guidance." },
+      { name: "AAP extreme heat guidance for children", url: "https://www.healthychildren.org/English/safety-prevention/at-home/Pages/Protecting-Children-from-Extreme-Heat-Information-for-Parents.aspx", note: "Pediatric heat-exposure, hydration, activity, symptom, and emergency-response guidance." },
       { name: "CPSC stroller safety", url: "https://www.cpsc.gov/Safety-Education/Safety-Guides/Kids-and-Babies/Strollers", note: "Authoritative stroller attachment, stability, restraint, fold, and supervision context." },
     ],
     asin: "B0CQ2RMMFN",
@@ -1289,7 +1289,7 @@ export const broadProductPilot3Guides: Guide[] = [
       { name: "FDA pet food and bowl handling", url: "https://www.fda.gov/animal-veterinary/animal-health-literacy/tips-safe-handling-pet-food-and-treats", note: "Authoritative pet-food handling, bowl washing, storage, and hygiene guidance." },
     ],
     asin: "B0C5HSCS8J",
-    relatedGuides: ["cat-scratching-posts-buying-guide", "automatic-feeder-buying-guide", "interactive-puzzle-feeders-buying-guide"],
+    relatedGuides: ["automatic-feeder-buying-guide", "interactive-puzzle-feeders-buying-guide"],
   }),
 
   pilot3Guide({
@@ -1334,7 +1334,7 @@ export const broadProductPilot3Guides: Guide[] = [
       { name: "Ohio State Indoor Pet Initiative scratching", url: "https://indoorpet.osu.edu/cats/basicneeds/scratching", note: "Veterinary-school behavior guidance on orientation, material, stability, location, and positive redirection." },
     ],
     asin: "B0BML72176",
-    relatedGuides: ["slow-feeder-dog-bowls-buying-guide", "cat-trees-and-towers-buying-guide", "interactive-puzzle-feeders-buying-guide"],
+    relatedGuides: ["cat-trees-and-towers-buying-guide"],
   }),
 
   pilot3Guide({

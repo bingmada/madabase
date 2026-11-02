@@ -16,7 +16,7 @@
       "title": "Cable Matters 25-Pack Cat6 RJ45 Keystone Jacks with Punch-Down Stand",
       "brand": "Cable Matters",
       "detailUrl": "https://www.amazon.com/dp/B004D5PFGW",
-      "verifiedAt": "2026-08-10T08:00:00.000Z",
+      "verifiedAt": "2026-11-01T05:15:48.668490+00:00",
       "relevanceScore": 10
     },
     {
@@ -28,7 +28,7 @@
       "title": "Legrand On-Q ENP3050NA 30-Inch Plastic Structured Media Enclosure with Trim Ring and Hinged Door",
       "brand": "Legrand On-Q",
       "detailUrl": "https://www.amazon.com/dp/B082B5GYFD",
-      "verifiedAt": "2026-08-10T08:00:00.000Z",
+      "verifiedAt": "2026-11-01T05:15:48.668490+00:00",
       "relevanceScore": 10
     },
     {
@@ -40,7 +40,7 @@
       "title": "Klein Tools VDV226-110 Ratcheting Modular Data Cable Crimper, Stripper and Cutter for RJ45 Pass-Thru Connectors",
       "brand": "Klein Tools",
       "detailUrl": "https://www.amazon.com/dp/B076MGPQZQ",
-      "verifiedAt": "2026-10-19",
+      "verifiedAt": "2026-11-01T05:15:48.668490+00:00",
       "relevanceScore": 10
     },
     {
@@ -52,7 +52,7 @@
       "title": "First Alert SC5 Hardwire Smart Smoke and Carbon Monoxide Alarm SMCO600NV-AC",
       "brand": "First Alert",
       "detailUrl": "https://www.amazon.com/dp/B0DS2VG4P1",
-      "verifiedAt": "2026-08-10T08:00:00.000Z",
+      "verifiedAt": "2026-11-01T05:15:48.668490+00:00",
       "relevanceScore": 10
     },
     {
@@ -64,7 +64,7 @@
       "title": "Rachio Smart Hose Timer with One Valve and WiFi Hub",
       "brand": "Rachio",
       "detailUrl": "https://www.amazon.com/dp/B0BWXZWJ1C",
-      "verifiedAt": "2026-08-10T08:00:00.000Z",
+      "verifiedAt": "2026-11-01T05:15:48.668490+00:00",
       "relevanceScore": 10
     },
     {
@@ -76,7 +76,7 @@
       "title": "Midea Cube 20-Pint Smart WiFi Dehumidifier MAD20S1QWT with Drain Hose",
       "brand": "Midea",
       "detailUrl": "https://www.amazon.com/dp/B08ZMY8BC8",
-      "verifiedAt": "2026-08-10T08:00:00.000Z",
+      "verifiedAt": "2026-11-01T05:15:48.668490+00:00",
       "relevanceScore": 10
     },
     {
@@ -88,7 +88,7 @@
       "title": "Elgato Prompter All-in-One Teleprompter with Built-In 9-Inch Display",
       "brand": "Elgato",
       "detailUrl": "https://www.amazon.com/dp/B0CH3P9K1X",
-      "verifiedAt": "2026-08-10T08:00:00.000Z",
+      "verifiedAt": "2026-11-01T05:15:48.668490+00:00",
       "relevanceScore": 10
     },
     {
@@ -96,12 +96,20 @@
       "familySlug": "vertical-laptop-stands",
       "familyName": "Vertical laptop stands",
       "category": "ergonomics",
-      "asin": "B09WY2RLQG",
-      "title": "Satechi Dual Vertical Laptop Stand ST-ADVSM",
-      "brand": "Satechi",
-      "detailUrl": "https://www.amazon.com/dp/B09WY2RLQG",
-      "verifiedAt": "2026-08-10T08:00:00.000Z",
-      "relevanceScore": 10
+      "asin": "B078W3QSZY",
+      "title": "OMOTON Black adjustable dual-slot laptop stand B078W3QSZY",
+      "brand": "OMOTON",
+      "detailUrl": "https://www.amazon.com/dp/B078W3QSZY",
+      "verifiedAt": "2026-10-31",
+      "relevanceScore": 10,
+      "validation": {
+        "method": "visible selected US retailer variant and offer",
+        "checkedAt": "2026-10-31",
+        "asinMatched": true,
+        "unavailable": false,
+        "condition": "not explicitly exposed; conditional option",
+        "evidence": "independent-merchant24/us-offer-observations.json"
+      }
     },
     {
       "site": "homeoffice",
@@ -109,10 +117,10 @@
       "familyName": "FIDO hardware security keys",
       "category": "meetings",
       "asin": "B08DHL1YDL",
-      "title": "Yubico YubiKey 5C NFC USB-C and NFC Hardware Security Key",
+      "title": "Yubico YubiKey 5C NFC, USB-C and NFC",
       "brand": "Yubico",
       "detailUrl": "https://www.amazon.com/dp/B08DHL1YDL",
-      "verifiedAt": "2026-08-10T08:00:00.000Z",
+      "verifiedAt": "2026-10-31",
       "relevanceScore": 10
     },
     {
@@ -121,10 +129,10 @@
       "familyName": "Roll-up feeding bibs",
       "category": "feeding",
       "asin": "B0CQPJWT65",
-      "title": "OXO Tot Roll-Up Bib Two-Pack in Drizzle and Dusk",
+      "title": "OXO Tot Roll-Up Bib, Drizzle / Dusk two-pack",
       "brand": "OXO Tot",
       "detailUrl": "https://www.amazon.com/dp/B0CQPJWT65",
-      "verifiedAt": "2026-08-10T08:00:00.000Z",
+      "verifiedAt": "2026-10-31",
       "relevanceScore": 10
     },
     {
@@ -132,12 +140,20 @@
       "familySlug": "toddler-learning-towers",
       "familyName": "Toddler learning towers",
       "category": "gear",
-      "asin": "B001ECHXVC",
-      "title": "Little Partners Original Learning Tower Toddler Tower LP01411 in Natural",
+      "asin": "B07GNVH8NM",
+      "title": "Little Partners Explore 'N Store LP01454, Soft White",
       "brand": "Little Partners",
-      "detailUrl": "https://www.amazon.com/dp/B001ECHXVC",
-      "verifiedAt": "2026-10-19",
-      "relevanceScore": 10
+      "detailUrl": "https://www.amazon.com/dp/B07GNVH8NM",
+      "verifiedAt": "2026-10-31",
+      "relevanceScore": 10,
+      "validation": {
+        "method": "visible selected US retailer variant and offer",
+        "checkedAt": "2026-10-31",
+        "asinMatched": true,
+        "unavailable": false,
+        "condition": "not explicitly exposed; conditional option",
+        "evidence": "independent-merchant24/us-offer-observations.json"
+      }
     },
     {
       "site": "baby",
@@ -145,10 +161,10 @@
       "familyName": "Childproof cabinet locks",
       "category": "gear",
       "asin": "B076QN2V4Q",
-      "title": "Safety 1st Adhesive Magnetic Lock System with Eight Locks and Two Keys",
+      "title": "Safety 1st HS294, eight magnetic locks and two keys",
       "brand": "Safety 1st",
       "detailUrl": "https://www.amazon.com/dp/B076QN2V4Q",
-      "verifiedAt": "2026-08-10T08:00:00.000Z",
+      "verifiedAt": "2026-10-31",
       "relevanceScore": 10
     },
     {
@@ -157,10 +173,10 @@
       "familyName": "Dog exercise pens",
       "category": "comfort",
       "asin": "B075898NLN",
-      "title": "Amazon Basics Portable Foldable Octagonal Metal Exercise Dog Playpen with Single Door, 30-Inch",
+      "title": "Amazon Basics 9004-30B, Black 30-inch single-door pen",
       "brand": "Amazon Basics",
       "detailUrl": "https://www.amazon.com/dp/B075898NLN",
-      "verifiedAt": "2026-08-10T08:00:00.000Z",
+      "verifiedAt": "2026-10-31",
       "relevanceScore": 10
     },
     {
@@ -169,10 +185,10 @@
       "familyName": "Dog life jackets",
       "category": "travel",
       "asin": "B0081XIKYG",
-      "title": "Outward Hound Granby Splash Orange Dog Life Jacket, Medium",
+      "title": "Outward Hound Granby Splash 22020, Orange Medium",
       "brand": "Outward Hound",
       "detailUrl": "https://www.amazon.com/dp/B0081XIKYG",
-      "verifiedAt": "2026-08-10T08:00:00.000Z",
+      "verifiedAt": "2026-10-31",
       "relevanceScore": 10
     },
     {
@@ -181,10 +197,10 @@
       "familyName": "Pet grooming tables",
       "category": "grooming",
       "asin": "B001VPAEQS",
-      "title": "Master Equipment TP160 18-Inch Small Pet Grooming Table in Blue",
+      "title": "Master Equipment TP160, Blue 18-inch rotating tabletop",
       "brand": "Master Equipment",
       "detailUrl": "https://www.amazon.com/dp/B001VPAEQS",
-      "verifiedAt": "2026-08-10T08:00:00.000Z",
+      "verifiedAt": "2026-10-31",
       "relevanceScore": 10
     }
   ]

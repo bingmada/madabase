@@ -248,7 +248,7 @@ export const expansionGuides: Guide[] = [
     title: "Bottle Washer vs. Sterilizer vs. Dryer",
     dek: "Separate cleaning, sanitizing, and drying so you can choose the appliance that matches the real bottleneck.",
     category: "feeding",
-    updatedAt: "July 26, 2026",
+    updatedAt: "November 1, 2026",
     relatedRoundups: ["best-bottle-sterilizers-and-dryers"],
     comparisonTable: {
       title: "Match the appliance to the repeated feeding-cleanup job",
@@ -261,25 +261,67 @@ export const expansionGuides: Guide[] = [
       ],
     },
     sources: [
-      {
-        name: "CDC: Clean, Sanitize, and Store Infant Feeding Items",
-        url: "https://www.cdc.gov/hygiene/about/clean-sanitize-store-infant-feeding-items.html",
-        note: "Primary public-health guidance distinguishing cleaning, sanitizing, complete air-drying, and storage.",
-      },
-      {
-        name: "CDC: How to Clean and Sanitize Breast Pumps",
-        url: "https://www.cdc.gov/hygiene/about/about-breast-pump-hygiene.html",
-        note: "Primary guidance for pump-part cleaning and following the pump manufacturer's instructions.",
-      },
-    ],
-    sections: [
-      { heading: "Cleaning, sanitizing, and drying are different jobs", body: "A washer removes milk residue with water and detergent. A sterilizer or sanitizing cycle adds an extra germ-reduction step after cleaning, while a dryer removes moisture; a machine name does not guarantee that it performs all three." },
-      { heading: "Choose a washer when scrubbing is the bottleneck", body: "An all-in-one washer can help when many bottles, valves, nipples, and compatible pump parts accumulate each day. Confirm detergent requirements, spray coverage, filter maintenance, cycle time, and exact part compatibility." },
-      { heading: "Choose a sterilizer when guidance calls for sanitizing", body: "CDC guidance notes that sanitizing needs vary with age and health circumstances and may be unnecessary as a separate step when compatible items use an appropriate dishwasher cycle. Follow current public-health, medical, and manufacturer guidance for your situation." },
-      { heading: "Choose a dryer when clean parts stay wet", body: "Drying can be the useful upgrade when counter space is crowded or parts are needed again quickly. Check whether the cycle dries small valves and narrow pieces completely and where finished parts will be stored without recontamination." },
-      { heading: "Map one full day before buying", body: "Count every bottle and part, note when each is needed again, and mark which steps currently consume time. Buy the appliance that removes that repeated bottleneck rather than the model with the longest list of overlapping cycle names." },
-    ],
+  {
+    "name": "CDC: Clean, sanitize, and store infant feeding items",
+    "url": "https://www.cdc.gov/hygiene/about/clean-sanitize-store-infant-feeding-items.html",
+    "note": "Current official cleaning, dishwasher, sanitizing, drying, and storage guidance, including higher-risk infant circumstances."
   },
+  {
+    "name": "CDC: Clean and sanitize breast pumps",
+    "url": "https://www.cdc.gov/hygiene/about/about-breast-pump-hygiene.html",
+    "note": "Official pump-part cleaning and sanitizing boundaries; exact pump instructions still control compatibility."
+  },
+  {
+    "name": "Baby Brezza Bottle Washer Pro: current tank, load and accessory choices",
+    "url": "https://babybrezza.com/products/bottle-washer-pro",
+    "note": "Manufacturer description of tank-based washing, loading and separately sold wearable-pump rack. Marketing performance and water-saving claims are not independent findings here."
+  },
+  {
+    "name": "Bottle Washer Pro original US operating and care manual",
+    "url": "https://cdn.shopify.com/s/files/1/1465/2384/files/BRZ0103_Bottle_Washer_Pro_BW_IM_US_250903.pdf?v=1765855769",
+    "note": "Current maker-linked eight-spread English file, byte-identical to the selected retailer attachment. Complete text and operating/loading/care diagrams read. Match supplied model; no physical cleaning or safety test."
+  },
+  {
+    "name": "Amazon Charcoal Bottle Washer Pro selection",
+    "url": "https://www.amazon.com/dp/B0DDLGJG5J",
+    "note": "November 1, 2026, US10001: Charcoal, UPC886267002830, Amazon.com offer and expanded 90-day returns. Selected New condition and supplied model label not explicit; recheck live terms."
+  }
+],
+    sections: [
+  {
+    "heading": "Separate cleaning, sanitizing, drying, and storage",
+    "body": "CDC says feeding items should be taken apart and cleaned after use. Sanitizing happens only after cleaning and is especially important for babies under two months, born prematurely, or with weakened immune systems. Completely dry parts before protected storage. Do not describe one appliance as doing a step its exact instructions omit."
+  },
+  {
+    "heading": "Build one complete disassembled batch",
+    "body": "List bottles, nipples, caps, rings, valves, membranes, flanges, collection cups, and any small inserts used between normal wash cycles. Mark which items are dishwasher-safe and which appliance racks or nozzles explicitly support them. Capacity stated as a bottle count does not prove that the accompanying pump parts fit or receive a usable spray and drying path."
+  },
+  {
+    "heading": "Compare the existing dishwasher before adding an appliance",
+    "body": "For dishwasher-safe items, CDC advises disassembly, rinsing, containment of small parts, hot water, and heated drying or a sanitizing setting where possible. A dedicated washer may still save handling or keep feeding items separate, but compare actual cycle frequency, kitchen capacity, water connections, detergent, unloading, and storage instead of assuming a new countertop machine is automatically cleaner."
+  },
+  {
+    "heading": "Price the maintenance path",
+    "body": "Record detergent or tablet requirements, filter replacement, clean- and waste-water tanks, nozzle inspection, descaling interval, rack cleaning, drying path, and the space needed to open and service the machine. Stop use for residue, blocked spray paths, retained water, damaged parts, odors, or a recall. Keep a manual or dishwasher fallback for downtime and travel."
+  },
+  {
+    "heading": "When the tank-based Bottle Washer Pro fits",
+    "body": "The Charcoal Amazon selection was sold and shipped by Amazon.com on November 1, with expanded 90-day returns observed; selected New condition was not explicit. The maker describes separate clean- and waste-water tanks and up to four bottles, with a separate rack for wearable pump parts. Its currently linked US manual is byte-identical to the selected retailer’s original. Match the supplied model and load diagrams, including nipples facing up on the upper rack; some wide parts need another cycle. Budget for the dedicated detergent and ongoing tank, jet and filter care. The reviewed manual separates wash/rinse, optional steam and drying, so the short wash-only claim is not the full combined routine. Clinical superiority, universal compatibility, guaranteed dryness and a measured time saving are not established here."
+  }
+],
+
+"familySlug": "automatic-bottle-washers",
+"decisionPurchase": {
+  "asin": "B0DDLGJG5J",
+  "model": "Baby Brezza Bottle Washer Pro, Charcoal",
+  "qualifies": "Compare this tank-based washer when cleaning compatible bottles is the repeated bottleneck and a correctly loaded batch fits. The current link is the Charcoal washer, not the Sterilizer Dryer Advanced or the separate ProWash360.",
+  "stop": "Confirm the supplied model, US power, exact rack and allowed parts. Wearable pump parts may need a separately sold rack. Include the required detergent, filter care, counter and tank access; a four-bottle headline does not settle your mixed load.",
+  "keep": "Keep a suitable dishwasher or manual routine when it already meets the task. A sterilizer-dryer is a separate option for parts that were already washed."
+},
+"editorialMethod": [
+  "CDC task separation and the current maker/retailer-linked original Bottle Washer Pro instructions inform this comparison. No microbial, cleaning, dryness, timing or physical-capacity test was performed. Supplied model, part fit and live offer conditions still need checking."
+],
+},
   {
     site: "baby",
     slug: "ergobaby-omni-breeze-positions-by-age",

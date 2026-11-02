@@ -133,11 +133,11 @@ const guidePatches: Record<string, Partial<Guide>> = {
 
 const productPatches: Record<string, Partial<Product>> = {
   "pet:levoit-vital-200s-p-air-purifier": {
-    seoTitle: "Levoit Vital 200S-P for Pets: CADR, Hair & Filter Cost",
-    updatedAt,
+    seoTitle: "Levoit Vital 200S-P: Room Fit & Filters",
+    "updatedAt": "November 1, 2026",
     summary: "A research-based Levoit Vital 200S-P guide for pet homes, separating the 250 CFM official specification and washable pre-filter from attributed particle, noise, pet-hair, and ownership observations.",
     verdict: "Vital 200S-P is a strong medium-room candidate when airborne pet hair loads the washable pre-filter, schedules are useful, and the 388-square-foot 4.8-ACH rating fits the closed room. Skip it for a large open plan, a household expecting it to remove settled hair, or a buyer who cannot accept recurring main-filter cost and source-level odor cleaning.",
-    researchNote: "We have not tested the Vital 200S-P ourselves. This guide separates Levoit's current specifications from attributed RTINGS and HouseFresh tests of the Vital 200S family and Popular Mechanics' two-week pet-home use of the current Vital 200S-P. Their rooms, units, particle sensors, fan settings, noise methods, pets, and observations differ, so results are not averaged or presented as our own.",
+    researchNote: "We have not tested the Vital 200S-P ourselves. This guide separates Levoit's current specifications from attributed RTINGS and HouseFresh tests of the Vital 200S family and Popular Mechanics' two-week pet-home use of the current Vital 200S-P. Their rooms, units, particle sensors, fan settings, noise methods, pets, and observations differ, so results are not averaged or presented as our own. November 1: current official model/specification page and applicable original operating pages 1–24, including figures, reviewed; warranty pages were outside this update. The manual lists 51W versus the product page’s 50W. The selected White new US Amazon offer was observed separately; earlier attributed external-test findings were not re-dated as new tests.",
     externalTests: [
       {
         source: "RTINGS",

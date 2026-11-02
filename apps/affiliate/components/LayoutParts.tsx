@@ -2,6 +2,7 @@ import { ArrowRight, CheckCircle2, Menu, Scale, Search, ShieldCheck } from "luci
 import Image from "next/image";
 import Link from "next/link";
 import { buyerFacingSummary } from "@/lib/conversion-copy";
+import { editorialImageAlt, isEditorialCategoryImage, editorialImageForDisplay } from "@/lib/editorial-image";
 import type { SiteDecisionModule } from "@/lib/site-decision-modules";
 import type { SiteConfig } from "@/lib/sites";
 import type { Product, Roundup } from "@/lib/types";
@@ -213,13 +214,14 @@ export function DecisionModules({ modules }: { modules: SiteDecisionModule[] }) 
 
 export function ProductCard({ product }: { product: Product }) {
   const displayName = product.amazonTitle ?? product.name;
-  const displayImage = product.amazonImage ?? product.image;
+  const displayImage = editorialImageForDisplay(product.amazonImage ?? product.image);
 
   return (
     <article className="panel overflow-hidden">
       <Link className="relative block h-52 w-full" href={`/reviews/${product.slug}`}>
-        <Image className={displayImage.endsWith(".svg") && product.imageAlt?.startsWith("Editorial ") ? "object-contain" : "object-cover"} src={displayImage} alt={product.imageAlt ?? displayName} fill sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" />
+        <Image className={displayImage.endsWith(".svg") && product.imageAlt?.startsWith("Editorial ") ? "object-contain" : "object-cover"} src={displayImage} alt={editorialImageAlt(displayImage, product.imageAlt ?? displayName)} fill sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" />
       </Link>
+      {isEditorialCategoryImage(displayImage) ? <p className="px-5 pt-3 text-xs leading-5 text-[var(--muted)]">Editorial context image; not an exact product photograph.</p> : null}
       <div className="p-5">
         <div>
           <p className="text-xs font-bold uppercase text-[var(--muted)]">{product.brand}</p>

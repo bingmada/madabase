@@ -10,8 +10,8 @@ export const networkPoeExpansionProducts: Product[] = [
     slug: "tp-link-tl-sg1005p-poe-switch",
     asin: "B076HZFY3F",
     amazonTitle: "TP-Link TL-SG1005P, 5 Port Gigabit PoE Switch, 4 PoE+ Ports @65W",
-    seoTitle: "TP-Link TL-SG1005P Guide: 5-Port PoE Switch Buying Notes",
-    updatedAt,
+    seoTitle: "TL-SG1005P: PoE Budget",
+    "updatedAt": "November 1, 2026",
     name: "TP-Link TL-SG1005P 5-Port Gigabit PoE Switch",
     brand: "TP-Link",
     category: "wired",
@@ -21,22 +21,18 @@ export const networkPoeExpansionProducts: Product[] = [
     whyItMatters: "PoE switches are often bought by port count alone, but the real fit is powered-port count, per-port wattage, total power budget, and whether camera/AP isolation needs management.",
     bestFor: "Small camera or access-point installs needing four PoE+ ports",
     priceBand: "$",
-    rating: 4.6,
-    scores: [
-      { label: "Starter value", value: 9 },
-      { label: "PoE budget", value: 7 },
-      { label: "Management features", value: 2 },
-    ],
+    rating: 0,
+    scores: [],
     pros: ["Four PoE+ gigabit ports plus one non-PoE gigabit port", "65W total PoE budget listed", "Fanless plug-and-play design"],
     cons: ["Only four powered ports", "No VLAN or port-monitoring interface", "Gigabit-only, so it is not a 2.5GbE AP uplink upgrade"],
     specs: {
-      ASIN: "B076HZFY3F",
-      Ports: "5x gigabit RJ45 total",
-      "PoE ports": "4x PoE+ ports listed",
-      "PoE budget": "65W total listed",
-      Management: "Unmanaged",
-      Cooling: "Fanless",
-    },
+  "ASIN": "B076HZFY3F",
+  "Ports": "5x gigabit RJ45 total",
+  "PoE ports": "4 ports; retailer says PoE+, verify actual revision and per-port limit",
+  "PoE budget": "65W shared, listed; match supplied adapter and version",
+  "Management": "Unmanaged",
+  "Cooling": "Fanless"
+},
     evidence: [
       "Amazon title verified as TP-Link TL-SG1005P 5 Port Gigabit PoE Switch",
       "Listing references 4 PoE+ ports, 30W per port, and 65W total budget",
@@ -44,25 +40,60 @@ export const networkPoeExpansionProducts: Product[] = [
       "Choose managed PoE when camera VLANs or AP isolation are required",
     ],
     editorialSections: [
-      { heading: "Four PoE ports is the buying limit", body: "This is a small shelf switch. It is good when the buyer can name every powered device before checkout." },
-      { heading: "Budget wattage, not just ports", body: "Four ports do not mean four maximum-power devices at once. Add the camera or access-point wattage and leave headroom for startup draw." },
-      { heading: "Who should skip it", body: "Skip it for VLAN planning, eight-camera installs, 2.5GbE access points, or any network shelf likely to grow quickly." },
-    ],
+  {
+    "heading": "Four PoE ports is the buying limit",
+    "body": "This is a small shelf switch. It is good when the buyer can name every powered device before checkout."
+  },
+  {
+    "heading": "Budget wattage, not just ports",
+    "body": "Four ports do not mean four maximum-power devices at once. Add the camera or access-point wattage and leave headroom for startup draw."
+  },
+  {
+    "heading": "Who should skip it",
+    "body": "Skip it for VLAN planning, eight-camera installs, 2.5GbE access points, or any network shelf likely to grow quickly."
+  },
+  {
+    "heading": "The revision must resolve the per-port power question",
+    "body": "The selected Amazon offer identifies four PoE+ ports and a 65W shared budget. TP-Link’s US page mixes at/af wording with a 15.4W-per-port bullet, so the model name and total budget do not alone establish 30W delivery on the supplied revision. For a higher-power access point, get the version-specific documentation and supplied adapter confirmed first. One of five sockets is normally the upstream data link; four powered sockets are not four simultaneous maximum-power loads."
+  },
+  {
+    "heading": "Before choosing the offered unit",
+    "body": "Choose TL-SG1005P only for at most four powered devices within the confirmed revision’s total budget and per-port standard. The offer lists 65W and PoE+, but the official page contains conflicting per-port wording; confirm the hardware label and adapter before buying for a device needing more than 15.4W. Keep existing injectors if they meet the task."
+  }
+],
     alternatives: ["Choose TL-SG108PE when VLANs or monitoring matter.", "Choose NETGEAR GS308EPP when every port may need PoE+ and a larger power budget.", "Choose Reolink RLA-PS1 when the system is centered on Reolink cameras."],
     compareSlugs: ["tp-link-tl-sg108pe-poe-switch", "netgear-gs308epp-poe-switch", "reolink-rla-ps1-poe-switch"],
     sources: [
-      { name: "TP-Link TL-SG1005P", url: "https://www.tp-link.com/us/business-networking/poe-switch/tl-sg1005p/", note: "Official model page and hardware family details." },
-      amazonSource("B076HZFY3F", "Exact linked listing; confirm hardware version, 65W budget, seller, and included power adapter."),
-    ],
-    offers: [{ merchant: "Amazon US", url: amazonUrl("B076HZFY3F"), label: "Check TL-SG1005P price on Amazon", priceNote: "Confirm ASIN B076HZFY3F, hardware version, 4 PoE+ ports, 65W budget, and seller." }],
+  {
+    "name": "TP-Link TL-SG1005P",
+    "url": "https://www.tp-link.com/us/business-networking/poe-switch/tl-sg1005p/",
+    "note": "Official model page and hardware family details."
+  },
+  {
+    "name": "Amazon listing for ASIN B076HZFY3F",
+    "url": "https://www.amazon.com/dp/B076HZFY3F",
+    "note": "Exact linked listing; confirm hardware version, 65W budget, seller, and included power adapter."
+  }
+],
+    offers: [
+  {
+    "merchant": "Amazon US",
+    "url": "https://www.amazon.com/dp/B076HZFY3F?tag=madanetwork-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+    "label": "Check TL-SG1005P price on Amazon",
+    "priceNote": "Confirm ASIN B076HZFY3F, hardware version, 4 PoE+ ports, 65W budget, and seller."
+  }
+],
+
+    "purchaseCheck": "Choose for up to four powered devices within the confirmed shared budget. Above 15.4W per device, verify the actual revision’s PoE+ limit and adapter first: official wording conflicts. Keep sufficient injectors; check exact model and seller.",
+    "researchNote": "This is a document-based buying guide; we have not bench-tested this model or inspected a delivered unit. The November 1, 2026 US retail observation is for ZIP 10001 and the exact ASIN. It is not a delivery, warranty, physical-revision or performance guarantee.",
   },
   {
     site: "network",
     slug: "tp-link-tl-sg108pe-poe-switch",
     asin: "B01BW0AD1W",
     amazonTitle: "TP-Link TL-SG108PE V3, 8 Port Gigabit PoE Switch, Easy Smart Managed, 4 PoE+ Ports @64W",
-    seoTitle: "TP-Link TL-SG108PE: Easy Smart PoE Switch Guide",
-    updatedAt,
+    seoTitle: "TL-SG108PE V3",
+    "updatedAt": "November 1, 2026",
     name: "TP-Link TL-SG108PE 8-Port Easy Smart PoE Switch",
     brand: "TP-Link",
     category: "wired",
@@ -72,12 +103,8 @@ export const networkPoeExpansionProducts: Product[] = [
     whyItMatters: "Camera and access-point installs often need separation later. Easy Smart management can be the difference between a tidy camera VLAN and a flat network full of unmanaged devices.",
     bestFor: "Small PoE installs needing VLANs or basic switch management",
     priceBand: "$$",
-    rating: 4.5,
-    scores: [
-      { label: "Management value", value: 8 },
-      { label: "PoE flexibility", value: 7 },
-      { label: "All-port PoE", value: 4 },
-    ],
+    rating: 0,
+    scores: [],
     pros: ["Eight gigabit ports with four PoE+ ports listed", "Easy Smart features include VLAN/QoS/IGMP-style management", "Fanless desktop or wall-mountable metal design"],
     cons: ["Only four of eight ports provide PoE", "64W budget needs checking against AP or camera draw", "Not a full Omada controller-managed switch"],
     specs: {
@@ -95,25 +122,65 @@ export const networkPoeExpansionProducts: Product[] = [
       "Do not buy it expecting PoE on all eight ports",
     ],
     editorialSections: [
-      { heading: "The management layer is the reason", body: "Compared with TL-SG1005P, this model adds enough management for basic segmentation and visibility without moving into a larger business switch." },
-      { heading: "Four powered ports still limits growth", body: "Eight physical ports can hide the fact that only four are PoE. Count cameras, APs, and any powered bridges before comparing price." },
-      { heading: "Who should skip it", body: "Skip it when every port may power a device, when Omada controller integration is required, or when 2.5GbE AP uplinks are the main goal." },
-    ],
+  {
+    "heading": "The management layer is the reason",
+    "body": "Compared with TL-SG1005P, this model adds enough management for basic segmentation and visibility without moving into a larger business switch."
+  },
+  {
+    "heading": "Four powered ports still limits growth",
+    "body": "Eight physical ports can hide the fact that only four are PoE. Count cameras, APs, and any powered bridges before comparing price."
+  },
+  {
+    "heading": "Who should skip it",
+    "body": "Skip it when every port may power a device, when Omada controller integration is required, or when 2.5GbE AP uplinks are the main goal."
+  },
+  {
+    "heading": "V3 is a specific offer, not the default current web edition",
+    "body": "The selected Amazon title says V3, while TP-Link’s default US page opens V5 and offers separate V3, V4 and V5 pages. The V3 page confirms eight gigabit ports, four PoE+ ports and a 64W shared budget. Do not transfer newer firmware or revision-specific behavior to a V3 unit just because the base model name matches. A router uplink can use one of the four non-PoE sockets, preserving all four powered sockets for devices."
+  },
+  {
+    "heading": "Before choosing the offered unit",
+    "body": "Choose the listed TL-SG108PE V3 only when four PoE+ devices fit the 64W shared budget and basic local VLAN/monitoring is sufficient. Confirm V3 on the supplied unit and use its own firmware files. Keep a suitable existing switch; choose another model for more powered ports, 2.5GbE or Omada controller management."
+  }
+],
     alternatives: ["Choose TL-SG1005P for cheaper unmanaged PoE.", "Choose NETGEAR GS308EPP for PoE+ on all eight ports and a larger budget.", "Choose a 2.5GbE PoE switch for Wi-Fi 7 access points with multi-gig uplinks."],
     compareSlugs: ["tp-link-tl-sg1005p-poe-switch", "netgear-gs308epp-poe-switch", "trendnet-teg-s350-2-5g-switch"],
     sources: [
-      { name: "TP-Link TL-SG108PE", url: "https://www.tp-link.com/us/business-networking/easy-smart-switch/tl-sg108pe/", note: "Official model page and Easy Smart switch family details." },
-      amazonSource("B01BW0AD1W", "Exact linked listing; confirm V3, PoE budget, seller, and included power supply."),
-    ],
-    offers: [{ merchant: "Amazon US", url: amazonUrl("B01BW0AD1W"), label: "Check TL-SG108PE price on Amazon", priceNote: "Confirm ASIN B01BW0AD1W, V3 listing, 4 PoE+ ports, 64W budget, and seller." }],
+  {
+    "name": "TP-Link TL-SG108PE",
+    "url": "https://www.tp-link.com/us/business-networking/easy-smart-switch/tl-sg108pe/",
+    "note": "Official model page and Easy Smart switch family details."
+  },
+  {
+    "name": "Amazon listing for ASIN B01BW0AD1W",
+    "url": "https://www.amazon.com/dp/B01BW0AD1W",
+    "note": "Exact linked listing; confirm V3, PoE budget, seller, and included power supply."
+  },
+  {
+    "name": "TP-Link TL-SG108PE V3",
+    "url": "https://www.tp-link.com/us/business-networking/easy-smart-switch/tl-sg108pe/v3/",
+    "note": "Exact listed hardware edition; four PoE+ ports and shared 64W budget, not eight powered ports. Default page now presents V5."
+  }
+],
+    offers: [
+  {
+    "merchant": "Amazon US",
+    "url": "https://www.amazon.com/dp/B01BW0AD1W?tag=madanetwork-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+    "label": "Check TL-SG108PE price on Amazon",
+    "priceNote": "Confirm ASIN B01BW0AD1W, V3 listing, 4 PoE+ ports, 64W budget, and seller."
+  }
+],
+
+    "purchaseCheck": "Choose V3 for four PoE+ devices within 64W total and local management. Confirm revision, matching firmware and seller. Keep sufficient gear; choose another model for more powered ports, 2.5GbE or Omada management.",
+    "researchNote": "This is a document-based buying guide; we have not bench-tested this model or inspected a delivered unit. The November 1, 2026 US retail observation is for ZIP 10001 and the exact ASIN. It is not a delivery, warranty, physical-revision or performance guarantee.",
   },
   {
     site: "network",
     slug: "netgear-gs308epp-poe-switch",
     asin: "B08MBF6JMQ",
     amazonTitle: "NETGEAR GS308EPP 8 Port PoE Gigabit Ethernet Easy Smart Managed Essentials Switch",
-    seoTitle: "NETGEAR GS308EPP: 8-Port PoE+ Switch Buying Guide",
-    updatedAt,
+    seoTitle: "NETGEAR GS308EPP: PoE Fit",
+    "updatedAt": "November 1, 2026",
     name: "NETGEAR GS308EPP 8-Port PoE+ Easy Smart Switch",
     brand: "NETGEAR",
     category: "wired",
@@ -123,14 +190,15 @@ export const networkPoeExpansionProducts: Product[] = [
     whyItMatters: "A cheap four-port PoE switch can become a dead end after the fifth camera or second access point. All-port PoE reduces that growth trap.",
     bestFor: "Eight-port camera or access-point installs needing more PoE headroom",
     priceBand: "$$$",
-    rating: 4.5,
-    scores: [
-      { label: "PoE headroom", value: 9 },
-      { label: "All-port PoE", value: 9 },
-      { label: "Budget fit", value: 6 },
-    ],
+    rating: 0,
+    scores: [],
     pros: ["Eight PoE+ ports listed", "123W total PoE budget listed", "Easy Smart managed essentials features for VLAN/QoS/monitoring"],
-    cons: ["Costs more than four-port PoE switches", "Gigabit-only ports", "Buyers should confirm shipping availability and seller because Amazon availability can vary by location"],
+    cons: [
+  "Costs more than four-port PoE switches",
+  "Gigabit-only ports",
+  "Buyers should confirm shipping availability and seller because Amazon availability can vary by location",
+  "A normal router uplink leaves seven device sockets; the total 123W budget must cover all powered devices"
+],
     specs: {
       ASIN: "B08MBF6JMQ",
       Ports: "8x gigabit RJ45",
@@ -146,47 +214,95 @@ export const networkPoeExpansionProducts: Product[] = [
       "Check location-specific availability before relying on this exact ASIN",
     ],
     editorialSections: [
-      { heading: "All eight ports being PoE changes planning", body: "Instead of choosing which four devices get power, the buyer can plan a fuller camera or AP shelf and watch the total wattage budget." },
-      { heading: "It is still gigabit-only", body: "This is not a multi-gig AP switch. If Wi-Fi 7 access points need 2.5GbE uplinks, shop a 2.5GbE PoE model instead." },
-      { heading: "Who should skip it", body: "Skip it for one or two low-power devices, for 2.5GbE AP uplinks, or when a cheaper unmanaged four-port switch fully covers the plan." },
-    ],
-    alternatives: ["Choose TL-SG108PE for lower-cost Easy Smart management with four PoE ports.", "Choose TL-SG1005P for a small unmanaged install.", "Choose Reolink RLA-PS1 when the switch is mainly for a Reolink camera/NVR setup."],
-    compareSlugs: ["tp-link-tl-sg108pe-poe-switch", "tp-link-tl-sg1005p-poe-switch", "reolink-rla-ps1-poe-switch"],
-    sources: [amazonSource("B08MBF6JMQ", "Exact linked listing; confirm GS308EPP, 8 PoE+ ports, 123W budget, seller, and delivery availability.")],
-    offers: [{ merchant: "Amazon US", url: amazonUrl("B08MBF6JMQ"), label: "Check GS308EPP price on Amazon", priceNote: "Confirm ASIN B08MBF6JMQ, GS308EPP model, 123W budget, seller, and delivery availability." }],
+  {
+    "heading": "All eight ports being PoE changes planning",
+    "body": "Instead of choosing which four devices get power, the buyer can plan a fuller camera or AP shelf and watch the total wattage budget."
   },
   {
+    "heading": "It is still gigabit-only",
+    "body": "This is not a multi-gig AP switch. If Wi-Fi 7 access points need 2.5GbE uplinks, shop a 2.5GbE PoE model instead."
+  },
+  {
+    "heading": "Who should skip it",
+    "body": "Skip it for one or two low-power devices, for 2.5GbE AP uplinks, or when a cheaper unmanaged four-port switch fully covers the plan."
+  },
+  {
+    "heading": "Eight powered sockets still share a total budget and an uplink",
+    "body": "NETGEAR’s product page identifies eight PoE+ gigabit sockets and 123W total, not eight simultaneous 30W loads. A router connection consumes a socket, leaving seven for powered endpoints in a normal setup. The February 2026 installation guide contains a conflicting ports 1–4 sentence; confirm the supplied label and support documentation rather than using that sentence to plan a deployment. On November 1 the buying-options panel showed a New offer sold by Prime Electronics USA and shipped by Amazon.com; its return policy was not expanded or verified."
+  },
+  {
+    "heading": "Before choosing the offered unit",
+    "body": "Choose GS308EPP only when the 123W shared budget, per-device PoE+ class and gigabit ports meet the plan. Count the router uplink: it normally leaves seven device sockets. The main page had no featured offer; select and verify a New seller in buying options, including return and warranty terms. Keep existing gear if sufficient."
+  }
+],
+    alternatives: ["Choose TL-SG108PE for lower-cost Easy Smart management with four PoE ports.", "Choose TL-SG1005P for a small unmanaged install.", "Choose Reolink RLA-PS1 when the switch is mainly for a Reolink camera/NVR setup."],
+    compareSlugs: ["tp-link-tl-sg108pe-poe-switch", "tp-link-tl-sg1005p-poe-switch", "reolink-rla-ps1-poe-switch"],
+    sources: [
+  {
+    "name": "Amazon listing for ASIN B08MBF6JMQ",
+    "url": "https://www.amazon.com/dp/B08MBF6JMQ",
+    "note": "Exact linked listing; confirm GS308EPP, 8 PoE+ ports, 123W budget, seller, and delivery availability."
+  },
+  {
+    "name": "NETGEAR GS308EPP official product page",
+    "url": "https://www.netgear.com/business/wired/switches/easy-smart/gs308epp/",
+    "note": "Eight PoE+ gigabit sockets and shared 123W budget. Marketing fabric-capacity wording conflicts with its table; no unsupported capacity claim copied."
+  },
+  {
+    "name": "NETGEAR GS308EP / GS308EPP installation guide",
+    "url": "https://www.downloads.netgear.com/files/GDC/GS308EP/GS308EP_GS308EPP_IG_EN.pdf",
+    "note": "Seven-page February 2026 text reviewed, sample wiring diagram viewed. Registration, indoor use and total budget; the ports 1–4 sentence conflicts with the product page and should not qualify a deployment."
+  }
+],
+    offers: [
+  {
+    "merchant": "Amazon US",
+    "url": "https://www.amazon.com/dp/B08MBF6JMQ?tag=madanetwork-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+    "label": "Check GS308EPP price on Amazon",
+    "priceNote": "Confirm ASIN B08MBF6JMQ, GS308EPP model, 123W budget, seller, and delivery availability."
+  }
+],
+
+    "purchaseCheck": "Choose only if 123W shared PoE+, gigabit and seven device sockets after the uplink suffice. Keep sufficient gear. No featured offer was shown: select and verify a New seller in buying options, including returns and warranty.",
+    "researchNote": "This is a document-based buying guide; we have not bench-tested this model or inspected a delivered unit. The November 1, 2026 US retail observation is for ZIP 10001 and the exact ASIN. It is not a delivery, warranty, physical-revision or performance guarantee.",
+  },
+  {
+"purchaseCheck": "Compare this exact camera switch only after the received revision’s port map, permitted PoE loads and 120 W shared budget fit the NVR plan. The current maker overview says gigabit PoE while its table says 10/100; do not assume eight gigabit device ports. Keep a suitable existing switch; choose separately documented all-gigabit or managed equipment when required.",
+"evidenceMode": "research-synthesis",
+"imageAlt": "Editorial illustration of the product category; not a photograph of the selected retail unit.",
+"researchNote": "November 1 selected US10001 identity/offer state and the named manufacturer product, specification or support sections reviewed. This is documented purchase research, not a physical speed, installation, security, alert, comfort or reliability test. Applicable manual scope and remaining revision/service conditions are explicit; no whole-manual claim is implied.",
+
     site: "network",
     slug: "reolink-rla-ps1-poe-switch",
     asin: "B0BWHKQ5N9",
     amazonTitle: "REOLINK PoE Switch with 8 PoE and 2 Gigabit Uplink Ports, RLA-PS1",
     seoTitle: "Reolink RLA-PS1 Guide: PoE Switch for Camera Systems",
-    updatedAt,
+    "updatedAt": "November 1, 2026",
     name: "Reolink RLA-PS1 PoE Switch",
     brand: "Reolink",
     category: "wired",
     image: "/images/affiliate/network-poe-switch-realistic.webp",
     summary: "A camera-first PoE switch guide for Reolink users comparing 8 PoE camera ports, 2 gigabit uplinks, a 120W budget, and NVR-centered wiring.",
-    verdict: "RLA-PS1 is the camera-system pick when the buyer is already building around Reolink cameras or RLN36-style NVR wiring. It is less universal than a general managed PoE switch.",
+    verdict: "Compare RLA-PS1 for a documented camera/NVR PoE plan after matching the received port revision. The maker overview and specification table disagree on PoE-port speed; it is not an unconditional eight-port-gigabit recommendation.",
     whyItMatters: "Camera PoE switches solve a different problem than desk switches: stable camera power, NVR uplinks, port priority, and simple wall-mount deployment often matter more than broad switch features.",
     bestFor: "Reolink PoE camera systems and NVR-centered installs",
     priceBand: "$$",
-    rating: 4.4,
-    scores: [
-      { label: "Camera fit", value: 9 },
-      { label: "General switch features", value: 5 },
-      { label: "PoE budget", value: 8 },
-    ],
+    rating: 0,
+    scores: [],
     pros: ["Eight PoE camera ports plus two gigabit uplinks listed", "120W total PoE budget listed", "Designed around Reolink PoE camera and NVR workflows"],
-    cons: ["PoE camera ports are listed as 10/100Mbps, while uplinks are gigabit", "Less flexible for VLAN-heavy general networking", "Best fit depends on staying inside Reolink camera/NVR assumptions"],
+    cons: [
+  "Current maker overview says gigabit PoE, while its specification table says 10/100; exact stock revision must be confirmed",
+  "Less flexible for VLAN-heavy general networking",
+  "Best fit depends on staying inside Reolink camera/NVR assumptions"
+],
     specs: {
-      ASIN: "B0BWHKQ5N9",
-      Model: "RLA-PS1",
-      "PoE ports": "8x 10/100Mbps PoE ports listed",
-      Uplinks: "2x gigabit uplink ports listed",
-      "PoE budget": "120W total listed",
-      Standard: "IEEE 802.3af/at listed",
-    },
+  "ASIN": "B0BWHKQ5N9",
+  "Model": "RLA-PS1",
+  "PoE ports": "Eight PoE+ ports; current maker overview/table conflict on data rate",
+  "Uplinks": "2x gigabit uplink ports listed",
+  "PoE budget": "120 W total listed",
+  "Standard": "IEEE 802.3af/at listed"
+},
     evidence: [
       "Amazon title verified as Reolink RLA-PS1 with 8 PoE and 2 gigabit uplink ports",
       "Listing references 120W total budget and compatibility with PoE IP cameras",
@@ -194,16 +310,33 @@ export const networkPoeExpansionProducts: Product[] = [
       "Confirm whether 10/100 camera ports are acceptable for the intended cameras",
     ],
     editorialSections: [
-      { heading: "Camera topology first", body: "The product belongs in a camera plan: PoE cameras on powered ports, uplink to NVR/router, and power priority managed around cameras." },
-      { heading: "The uplink split matters", body: "The listing describes 10/100 PoE ports and gigabit uplinks. That can be fine for many cameras but wrong for general high-speed wired clients." },
-      { heading: "Who should skip it", body: "Skip it for access-point uplinks, NAS/desktop switching, VLAN-heavy networks, or non-camera devices that need full gigabit on every port." },
-    ],
+  {
+    "heading": "Camera topology first",
+    "body": "The product belongs in a camera plan: PoE cameras on powered ports, uplink to NVR/router, and power priority managed around cameras."
+  },
+  {
+    "heading": "The uplink split matters",
+    "body": "The current manufacturer overview describes10/100/1000PoE ports, while its specification table still lists 8×10/100. Do not settle that conflict by copying either headline onto an unknown unit. Match its regional revision and port map before buying for gigabit clients; the two listed uplinks do not prove every powered port is gigabit."
+  },
+  {
+    "heading": "Who should skip it",
+    "body": "Skip it for access-point uplinks, NAS/desktop switching, VLAN-heavy networks, or non-camera devices that need full gigabit on every port."
+  }
+],
     alternatives: ["Choose NETGEAR GS308EPP for eight gigabit PoE+ ports.", "Choose TL-SG108PE for basic VLAN management.", "Choose TL-SG1005P for a tiny unmanaged PoE shelf."],
     compareSlugs: ["netgear-gs308epp-poe-switch", "tp-link-tl-sg108pe-poe-switch", "tp-link-tl-sg1005p-poe-switch"],
     sources: [
-      { name: "Reolink RLA-PS1", url: "https://reolink.com/product/rla-ps1/", note: "Official product page availability and model context." },
-      amazonSource("B0BWHKQ5N9", "Exact linked listing; confirm RLA-PS1 model, port speeds, PoE budget, seller, and NVR compatibility."),
-    ],
+  {
+    "name": "Reolink RLA-PS1",
+    "url": "https://reolink.com/product/rla-ps1/",
+    "note": "Official product page availability and model context."
+  },
+  {
+    "name": "Amazon listing for ASIN B0BWHKQ5N9",
+    "url": "https://www.amazon.com/dp/B0BWHKQ5N9",
+    "note": "Exact linked listing; confirm RLA-PS1 model, port speeds, PoE budget, seller, and NVR compatibility. November 1, 2026 US10001 public selection checked. New primary selection and expanded return terms observed; point-in-time seller/delivery/conditions, not a future availability or warranty promise."
+  }
+],
     offers: [{ merchant: "Amazon US", url: amazonUrl("B0BWHKQ5N9"), label: "Check RLA-PS1 price on Amazon", priceNote: "Confirm ASIN B0BWHKQ5N9, RLA-PS1 model, port speeds, 120W budget, seller, and NVR fit." }],
   },
 ];

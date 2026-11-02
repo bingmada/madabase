@@ -25,6 +25,9 @@ export type AuthorizedCjOffer = {
 
 export const authorizedCjOffers: AuthorizedCjOffer[] = [
   {
+"publicationStatus": "draft",
+"releaseCandidate": "cj-documentation-hold-2026-10-29",
+
     token: "bc-babycare-hexa-effortless",
     site: "baby",
     productSlug: "bc-babycare-hexa-effortless-carrier",
@@ -62,7 +65,7 @@ export const authorizedCjOffers: AuthorizedCjOffer[] = [
     destinationUrl:
       "https://www.bcbabycare.com/products/portable-fan?variant=49900838387958",
     allowedDestinationHosts: ["bcbabycare.com", "www.bcbabycare.com"],
-    verifiedAt: "2026-08-12",
+    verifiedAt: "2026-10-31",
   },
   {
     token: "bc-babycare-airy-silicone-bib",
@@ -86,7 +89,7 @@ export const authorizedCjOffers: AuthorizedCjOffer[] = [
     destinationUrl:
       "https://www.bcbabycare.com/products/airy-silicone-bib?variant=48169661497590",
     allowedDestinationHosts: ["bcbabycare.com", "www.bcbabycare.com"],
-    verifiedAt: "2026-08-12",
+    verifiedAt: "2026-10-31",
   },
   {
     token: "bc-babycare-clarvion-bundle",
@@ -144,7 +147,7 @@ export const authorizedCjOffers: AuthorizedCjOffer[] = [
     variantLabel: "Soft Green · Standard Set · variant 47121956372726",
     catalogSku: "shopify_US_8805182996726_47121956372726",
     catalogUpdatedAt: "2026-06-27",
-    publicationStatus: "published",
+    publicationStatus: "draft",
     releaseCandidate: "breadth-64-2026-08-16",
     merchantSlug: "bc-babycare",
     merchantName: "Bc Babycare",

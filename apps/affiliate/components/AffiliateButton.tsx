@@ -122,7 +122,7 @@ export function AffiliateButton({
       </div> : primaryButton}
       {showStickyDock ? (
         <a
-          aria-label={`Purchase option for ${creatorsListing?.title ?? product.amazonTitle ?? product.name}`}
+          aria-label={`Purchase option for ${modelLabel ?? creatorsListing?.title ?? product.amazonTitle ?? product.name}`}
           className="fixed inset-x-3 z-40 rounded-lg border border-[var(--border)] bg-white/95 p-2.5 shadow-[0_10px_35px_rgba(15,23,42,0.24)] backdrop-blur transition hover:border-[var(--brand)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand)] lg:inset-x-auto lg:right-6 lg:w-[22rem] lg:max-w-[calc(100vw-3rem)]"
           data-affiliate-link-source={
             creatorsListing ? "amazon-creators-api" : isAmazon ? "verified-amazon-fallback" : "authorized-offer"
@@ -141,7 +141,7 @@ export function AffiliateButton({
           <div className="flex min-w-0 items-center gap-3">
             <div className="min-w-0 flex-1">
               <p className="truncate text-xs font-bold text-[var(--text)]">
-                {creatorsListing?.title ?? product.amazonTitle ?? product.name}
+                {modelLabel ?? creatorsListing?.title ?? product.amazonTitle ?? product.name}
               </p>
               <p className="mt-0.5 text-[11px] leading-4 text-[var(--muted)]">Current price &amp; availability · purchase link</p>
             </div>

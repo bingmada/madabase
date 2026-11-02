@@ -12,10 +12,19 @@ export type AmazonOfferBlock = {
   pageUpdatedAt: string;
 };
 
-const amazonOfferBlocks = offerBlockConfig.blocks.map((block) => ({
-  ...block,
-  pageUpdatedAt: block.pageUpdatedAt ?? offerBlockConfig.pageUpdatedAt,
-})) as AmazonOfferBlock[];
+const seenBlockIdentities = new Set<string>();
+const amazonOfferBlocks = offerBlockConfig.blocks.map((block) => {
+  if (typeof block.slug !== "string" || !block.slug.trim()
+    || !/^[A-Z0-9]{10}$/.test(block.asin)
+    || !["identity-drift", "unavailable", "documentation-unverified", "end-of-life"].includes(block.status)
+    || !block.reason?.trim()) {
+    throw new Error(`Invalid Amazon offer block: ${block.site}/${block.asin}`);
+  }
+  const identity = `${block.site}:${block.slug}:${block.asin}`;
+  if (seenBlockIdentities.has(identity)) throw new Error(`Duplicate Amazon offer block: ${identity}`);
+  seenBlockIdentities.add(identity);
+  return { ...block, pageUpdatedAt: block.pageUpdatedAt ?? offerBlockConfig.pageUpdatedAt };
+}) as AmazonOfferBlock[];
 
 function productAsin(product: Product) {
   return (product.asin ?? product.specs.ASIN)?.trim().toUpperCase();

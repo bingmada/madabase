@@ -6,22 +6,22 @@ export const verifiedAffiliateBatchProducts: Product[] = [
   {
     site: "pet",
     slug: "petlibro-one-rfid-smart-feeder",
-    purchaseCheck: "The exact purchase remains paused. Match the dedicated collar tag and reader, food and portion results, and received revision; current battery-mode documents conflict.",
+    purchaseCheck: "Compare PLAF301W for corded use when the dedicated tag, reader, dry food and measured portions fit. Skip implanted-microchip access, wet food or guaranteed outage Wi-Fi. Confirm the selected New single 3 L kit and terms; keep supervised feeding if fit fails.",
     asin: "B0FJMFYPNH",
     seoTitle:
-      "PETLIBRO One RFID Feeder Guide: Collar Tag, Portions & Multi-Cat Fit",
-    updatedAt: "October 26, 2026",
+      "PETLIBRO One RFID: Tag, Portions & Power",
+    updatedAt: "November 1, 2026",
     evidenceMode: "official-spec",
     researchNote:
-      "Manufacturer PLAF301 product/portion documents and the complete English portion of manual V0005 reviewed October 26, 2026. No physical access, dispensing, battery or cleaning test. Historical ASIN purchase remains paused. Product/support and current manual differ on battery Wi-Fi and dimensions; the received revision is not assumed resolved.",
+      "PLAF301 product/portion documents and complete English V0005 manual were previously reviewed October 26. November 1 retailer identity now shows PLAF301W single 3 L with a selected new Amazon.com offer, so the old stock-based purchase pause is resolved for conditional corded-use comparison. Battery Wi-Fi, dimensions and supplied tag/revision still need matching. No access, dispensing, outage or cleaning test was performed.",
     name: "PETLIBRO One RFID Smart Feeder",
     brand: "PETLIBRO",
     category: "feeding",
     image: "/images/affiliate/pet-smart-feeder-realistic.webp",
     summary:
-      "A PLAF301 collar-tag access reference with its exact retailer purchase still paused. Check the dedicated reader and tag, actual dry-food portions and received revision; current battery-mode documents conflict.",
+      "A PLAF301W collar-tag feeder for a real selective-access and scheduled dry-food need. The original ASIN has a current new offer; battery-mode Wi-Fi and received-revision details still need confirmation.",
     verdict:
-      "Compare One RFID only for a real selective-access need after the intended pet, dedicated tag/reader and food checks pass. The historical ASIN purchase remains paused, and backup connectivity needs revision-specific confirmation. Keep an effective current routine when access hardware is unnecessary.",
+      "Compare One RFID PLAF301W for normal corded use when one dedicated collar tag and reader fit the intended pet and actual dry-food portions work. The historical ASIN has a current new offer. Battery-mode Wi-Fi remains unresolved by revision; do not depend on remote visibility during an outage. Keep an effective current routine when selective-access hardware is unnecessary.",
     whyItMatters:
       "This feeder recognizes PETLIBRO's dedicated collar tag rather than an implanted microchip. Each feeder binds to one tag, so a multi-pet plan may require one unit per protected pet and enough floor space to separate the readers.",
     bestFor:
@@ -35,32 +35,28 @@ export const verifiedAffiliateBatchProducts: Product[] = [
       "Normal-power dual-band Wi-Fi and a documented emergency-power mode",
     ],
     cons: [
-      "It does not read implanted microchips or third-party tags",
-      "One feeder binds to one collar tag, which raises multi-pet cost",
-      "Dry food only; the reader mat and moving lid add cleaning and placement work",
-      "Historical purchase paused; battery Wi-Fi and exact dimensions need revision matching",
-    ],
+  "It does not read implanted microchips or third-party tags",
+  "One feeder binds to one collar tag, which raises multi-pet cost",
+  "Dry food only; the reader mat and moving lid add cleaning and placement work",
+  "Battery Wi-Fi and exact footprint differ across documents; match the received revision"
+],
     specs: {
-      ASIN: "B0FJMFYPNH",
-      "Official model family": "PLAF301 One RFID Smart Feeder",
-      Capacity: "3L / about 13 cups",
-      "Pet recognition":
-        "Dedicated PETLIBRO RFID collar tag; not an implanted microchip",
-      Meals: "Up to 10 scheduled meals or snacks per day",
-      Kibble: "Dry food, 2–15mm",
-      Portions:
-        "Approximately 20mL per portion by volume; no fixed gram value",
-      Network: "2.4GHz and 5GHz Wi-Fi",
-      Power: "Corded; 3 alkaline D batteries for emergency backup",
-      Dimensions: "Product page lists 442mm length; V0005 manual lists 449mm. Match the received revision and full installed footprint",
-      "Battery connectivity": "Unresolved by revision: V0005 retains Wi-Fi; product/support describes Wi-Fi disabled",
-      "Collar tag":
-        "23 x 23 x 14.18mm; 4.2g; splashproof, not submersible",
-      "Identifier limit":
-        "One feeder binds to one dedicated PETLIBRO collar tag; implanted microchips and third-party tags are unsupported",
-      "Reader requirement":
-        "The PETLIBRO RFID reader mat is required for recognition",
-    },
+  "ASIN": "B0FJMFYPNH",
+  "Official model family": "PLAF301 One RFID Smart Feeder",
+  "Capacity": "3L / about 13 cups",
+  "Pet recognition": "Dedicated PETLIBRO RFID collar tag; not an implanted microchip",
+  "Meals": "Up to 10 scheduled meals or snacks per day",
+  "Kibble": "Dry food, 2–15mm",
+  "Portions": "Approximately 20mL per portion by volume; no fixed gram value",
+  "Network": "2.4GHz and 5GHz Wi-Fi",
+  "Power": "Corded; 3 alkaline D batteries for emergency backup",
+  "Dimensions": "Product page lists 442mm length; V0005 manual lists 449mm. Match the received revision and full installed footprint",
+  "Battery connectivity": "Unresolved by revision: V0005 retains Wi-Fi; product/support describes Wi-Fi disabled",
+  "Collar tag": "23 x 23 x 14.18mm; 4.2g; splashproof, not submersible",
+  "Identifier limit": "One feeder binds to one dedicated PETLIBRO collar tag; implanted microchips and third-party tags are unsupported",
+  "Reader requirement": "The PETLIBRO RFID reader mat is required for recognition",
+  "Retail identity": "November 1 selected single 3 L PLAF301W; received revision and tag contents must match"
+},
     evidence: [
       "Confirm ASIN B0FJMFYPNH, color, pack quantity, seller, and included collar tag",
       "Use it only with the dedicated tag and reader mat; PETLIBRO says other tags and implanted microchips are unsupported",
@@ -68,25 +64,31 @@ export const verifiedAffiliateBatchProducts: Product[] = [
       "Weigh several real portions with the exact kibble instead of treating a volume setting as a fixed calorie amount",
     ],
     editorialSections: [
-      {
-        heading: "One tag per feeder is the central limitation",
-        body: "PETLIBRO describes one dedicated collar tag per feeder, not several diets routed through one bowl. Observe the intended pet using the lid and check competing pets' access; the feature description is not a tested guarantee that no food can be stolen. Follow veterinary instructions for any prescribed diet rather than treating a tagged lid as proof the correct meal was eaten.",
-      },
-      {
-        heading: "It is RFID, but not a microchip feeder",
-        body: "The included reader mat detects PETLIBRO's collar tag and opens the lid for the bound pet. Buyers specifically searching for an implanted-microchip feeder should not treat the word RFID as proof of microchip compatibility.",
-      },
-      {
-        heading: "Battery power is a backup mode",
-        body: "The V0005 manual says battery mode retains RFID recognition, Wi-Fi and feeding while disabling other functions. The product/support material instead describes Wi-Fi disabled. Do not publish either as a universal rule for every PLAF301 or the historical ASIN. Match the received revision, applicable instructions and actual outage behavior before depending on remote visibility. Three alkaline D batteries are an emergency arrangement, not a substitute for power planning or human checks.",
-      },
-      { heading: "Reader, lid and cleaning checks are separate", body: "The manual shows the reader on a flat surface away from metal, with the body properly seated and lid pivot locked. The reader is not waterproof. Power off before care and follow the received revision's component instructions; the manual permits only the stainless-steel bowl in a dishwasher. Keep electronics out of wash water and let cleaned parts dry. Actual portion weights, access and meals still need observation even when the app records an event." },
-      { heading: "Newer access options do not change this identity", body: "Granary 2 X is a separate newer access comparison. It does not change PLAF301 into another product or restore this paused retailer path. Confirm its own instructions, configuration and terms if considering it." },
-      {
-        heading: "Who should skip it",
-        body: "Skip for wet food, implanted-microchip access or an unsuitable tag, lid or reader arrangement. Scheduling alone does not require selective access hardware. Pause when the exact model, battery path or required care remains unknown, and retain a suitable existing or supervised routine. Arrange human checks of food received and eaten, water, litter and wellbeing during any absence.",
-      },
-    ],
+  {
+    "heading": "One tag per feeder is the central limitation",
+    "body": "PETLIBRO describes one dedicated collar tag per feeder, not several diets routed through one bowl. Observe the intended pet using the lid and check competing pets' access; the feature description is not a tested guarantee that no food can be stolen. Follow veterinary instructions for any prescribed diet rather than treating a tagged lid as proof the correct meal was eaten."
+  },
+  {
+    "heading": "It is RFID, but not a microchip feeder",
+    "body": "The included reader mat detects PETLIBRO's collar tag and opens the lid for the bound pet. Buyers specifically searching for an implanted-microchip feeder should not treat the word RFID as proof of microchip compatibility."
+  },
+  {
+    "heading": "Battery power is a backup mode",
+    "body": "The V0005 manual says battery mode retains RFID recognition, Wi-Fi and feeding while disabling other functions. The product/support material instead describes Wi-Fi disabled. Neither description establishes battery-mode Wi-Fi behavior for every PLAF301 revision or the historical ASIN. Match the received revision, applicable instructions and actual outage behavior before depending on remote visibility. Three alkaline D batteries are an emergency arrangement, not a substitute for power planning or human checks."
+  },
+  {
+    "heading": "Reader, lid and cleaning checks are separate",
+    "body": "The manual shows the reader on a flat surface away from metal, with the body properly seated and lid pivot locked. The reader is not waterproof. Power off before care and follow the received revision's component instructions; the manual permits only the stainless-steel bowl in a dishwasher. Keep electronics out of wash water and let cleaned parts dry. Actual portion weights, access and meals still need observation even when the app records an event."
+  },
+  {
+    "heading": "Newer access options do not change this identity",
+    "body": "The original One RFID ASIN now shows a current new offer. Granary2X remains a separate newer comparison, with its own instructions and configuration; its existence does not change PLAF301W into a different feeder or resolve the One’s battery-mode document conflict."
+  },
+  {
+    "heading": "Who should skip it",
+    "body": "Skip for wet food, implanted-microchip access or an unsuitable tag, lid or reader arrangement. Scheduling alone does not require selective access hardware. Pause when the exact model, battery path or required care remains unknown, and retain a suitable existing or supervised routine. Arrange human checks of food received and eaten, water, litter and wellbeing during any absence."
+  }
+],
     alternatives: [
       "Choose PETLIBRO Granary when timed dry-food portions are enough.",
       "Choose an implanted-microchip feeder when a collar tag is unsuitable.",
@@ -94,42 +96,50 @@ export const verifiedAffiliateBatchProducts: Product[] = [
     ],
     compareSlugs: ["petlibro-granary-automatic-cat-feeder"],
     sources: [
-      { name: "PETLIBRO Granary 2 series", url: "https://petlibro.com/products/granary-2-series", note: "Separate newer access comparison; no automatic identity or feature transfer." },
-      {
-        name: "PETLIBRO One RFID Smart Feeder",
-        url: "https://petlibro.com/products/one-rfid-pet-feeder",
-        note: "Official model, tag, schedule, capacity, kibble, power, network, placement, and box-content information.",
-      },
-      {
-        name: "PETLIBRO One RFID PLAF301 support",
-        url: "https://petlibro.com/pages/how-the-one-rfid-pet-feeder-works-plaf301",
-        note: "Exact tag, reader, placement, food, power, network, and battery-mode limitations.",
-      },
-      {
-        name: "PETLIBRO One RFID PLAF301 cleaning",
-        url: "https://petlibro.com/pages/how-do-i-disassemble-and-clean-the-one-rfid-pet-feeder-af301-plaf301",
-        note: "Exact powered-base, collar-tag, RFID-reader, drying, and reassembly restrictions.",
-      },
-      {
-        name: "PETLIBRO One RFID PLAF301 user manual",
-        url: "https://cdn.shopify.com/s/files/1/0252/5197/1119/files/Petlibro-AF301-3L-_US_DE_IT_FR_ES.pdf?v=1774007057",
-        note: "V0005 English instructions and diagrams read in full. Battery Wi-Fi and dimensions differ from product/support wording, so received-revision applicability needs confirmation.",
-      },
-      {
-        name: "PETLIBRO portion-size guidance",
-        url: "https://petlibro.com/pages/how-much-is-in-one-feeding-portion-plaf001-002-101-102-plaf003-004-plaf005-006-103-203-plaf008-plaf107-plaf108-plaf301",
-        note: "Official explanation that PLAF301 portions are approximately 20mL by volume and do not have a fixed gram weight.",
-      },
-    ],
+  {
+    "name": "PETLIBRO Granary 2 series",
+    "url": "https://petlibro.com/products/granary-2-series",
+    "note": "Separate newer access comparison; no automatic identity or feature transfer."
+  },
+  {
+    "name": "PETLIBRO One RFID Smart Feeder",
+    "url": "https://petlibro.com/products/one-rfid-pet-feeder",
+    "note": "Official model, tag, schedule, capacity, kibble, power, network, placement, and box-content information."
+  },
+  {
+    "name": "PETLIBRO One RFID PLAF301 support",
+    "url": "https://petlibro.com/pages/how-the-one-rfid-pet-feeder-works-plaf301",
+    "note": "Exact tag, reader, placement, food, power, network, and battery-mode limitations."
+  },
+  {
+    "name": "PETLIBRO One RFID PLAF301 cleaning",
+    "url": "https://petlibro.com/pages/how-do-i-disassemble-and-clean-the-one-rfid-pet-feeder-af301-plaf301",
+    "note": "Exact powered-base, collar-tag, RFID-reader, drying, and reassembly restrictions."
+  },
+  {
+    "name": "PETLIBRO One RFID PLAF301 user manual",
+    "url": "https://cdn.shopify.com/s/files/1/0252/5197/1119/files/Petlibro-AF301-3L-_US_DE_IT_FR_ES.pdf?v=1774007057",
+    "note": "V0005 English instructions and diagrams read in full. Battery Wi-Fi and dimensions differ from product/support wording, so received-revision applicability needs confirmation."
+  },
+  {
+    "name": "PETLIBRO portion-size guidance",
+    "url": "https://petlibro.com/pages/how-much-is-in-one-feeding-portion-plaf001-002-101-102-plaf003-004-plaf005-006-103-203-plaf008-plaf107-plaf108-plaf301",
+    "note": "Official explanation that PLAF301 portions are approximately 20mL by volume and do not have a fixed gram weight."
+  },
+  {
+    "name": "November 1 exact US retailer observation",
+    "url": "https://www.amazon.com/dp/B0FJMFYPNH",
+    "note": "Selected US 10001 listing checked November 1. Match the exact model, selected condition, included kit, seller, delivery and return terms again before ordering; this is not physical product testing."
+  }
+],
     offers: [
-      {
-        merchant: "Amazon US",
-        url: "https://amzn.to/4aywtHU",
-        label: "Check PETLIBRO One RFID price on Amazon",
-        priceNote:
-          "Confirm ASIN B0FJMFYPNH, PLAF301, pack quantity, color, seller, and inclusion of the dedicated collar tag and RFID reader mat.",
-      },
-    ],
+  {
+    "merchant": "Amazon US",
+    "url": "https://www.amazon.com/dp/B0FJMFYPNH?tag=madapets-20",
+    "label": "Check PETLIBRO One RFID PLAF301W on Amazon",
+    "priceNote": "Confirm selected New, single 3 L kit, dedicated tag/reader, seller, delivery and current returns. No battery-mode Wi-Fi guarantee."
+  }
+],
   },
   {
     site: "homeoffice",
@@ -137,35 +147,30 @@ export const verifiedAffiliateBatchProducts: Product[] = [
     asin: "B0B6JJKSNM",
     seoTitle:
       "ErGear 48×24 Electric Standing Desk Guide: Is It Good for Small Spaces?",
-    updatedAt: "July 11, 2026",
+    updatedAt: "October 31, 2026",
     name: "ErGear 48×24 Electric Standing Desk with Wheels",
     brand: "ErGear",
     category: "desks",
     image: "/images/affiliate/homeoffice-ergear-48x24-standing-desk-realistic.webp",
     summary:
-      "A buyer-focused review of ErGear's 48-by-24-inch electric standing desk with wheels, covering small-room fit, monitor distance, seated height, wheel stability, cable travel, and the exact listing configuration.",
+      "The original ErGear 48×24-inch wheeled desk was unavailable in the US listing checked October 31. This guide keeps its wheel and space checks separate from a named, in-stock fixed-foot ErGear alternative for readers who do not need mobility.",
     verdict:
-      "This ErGear is worth comparing when a compact desk must move between rooms or clear a shared space. A fixed-foot desk is the safer choice when maximum stability, a heavy monitor arm, or a one-piece top matters more than mobility.",
+      "The original wheeled ASIN is currently unavailable, not proven discontinued. For a stationary sit-stand setup, compare the separately identified EGESD5B Black option below after checking its actual dimensions and supplied controller. If wheels are essential, that fixed-foot alternative does not meet the requirement.",
     whyItMatters:
       "Casters solve a real layout problem but raise the work surface and create another movement point. The useful question is not whether the desk rolls; it is whether the locked desk remains stable at the user's standing height with the complete monitor and cable setup.",
     bestFor: "A compact sit-stand workstation that occasionally needs to move",
     priceBand: "$$",
     rating: 4.2,
-    scores: [
-      { label: "Small-room fit", value: 8 },
-      { label: "Mobility", value: 9 },
-      { label: "Heavy-monitor stability", value: 6 },
-    ],
+    scores: [],
     pros: [
-      "48×24-inch footprint fits many bedrooms and shared rooms",
-      "Included wheels support occasional workstation movement",
-      "Memory controls reduce daily sit-to-stand adjustment friction",
-    ],
+  "A compact workstation checklist separates room fit, seated height and cable travel",
+  "A named fixed-foot alternative is available to compare when mobility is unnecessary"
+],
     cons: [
-      "A split desktop has seams and more assembly alignment",
-      "Wheels can increase height and movement compared with fixed feet",
-      "The live listing must be checked for current height range, capacity, warranty, and exact top",
-    ],
+  "The original wheeled listing is currently unavailable",
+  "The alternative does not roll and has a controller-preset claim discrepancy",
+  "No measured stability, load-distribution, noise or reliability results"
+],
     specs: {
       ASIN: "B0B6JJKSNM",
       Desktop: "48 × 24 inches; split-board construction in the linked listing",
@@ -182,44 +187,58 @@ export const verifiedAffiliateBatchProducts: Product[] = [
       "Keep power and display cables clear through the full height and rolling range",
     ],
     editorialSections: [
-      {
-        heading: "The wheels change desk height and stability",
-        body: "Casters can make a shared room more flexible, but they add height and another mechanical connection below the frame. Confirm the desk can still reach a neutral seated keyboard height and test all wheel locks before loading the desktop.",
-      },
-      {
-        heading: "Twenty-four inches of depth needs a screen plan",
-        body: "A stock monitor stand can consume much of a 24-inch-deep top. A compatible arm may recover space, but the split top, underside frame, clamp clearance, monitor weight, and desk movement all need checking together.",
-      },
-      {
-        heading: "Treat the Amazon listing as the configuration source",
-        body: "ErGear sells closely related sizes, colors, frames, and tops. This guide is tied to ASIN B0B6JJKSNM and the 48×24 listing with wheels; confirm every live dimension, capacity, seller, and warranty term before checkout.",
-      },
-      {
-        heading: "Who should skip it",
-        body: "Skip it when the workstation supports a very heavy display, must feel immovable while typing, or needs a seamless one-piece work surface. Fixed feet and a stiffer frame are usually a better foundation for those priorities.",
-      },
-    ],
+  {
+    "heading": "The wheels change desk height and stability",
+    "body": "Casters add height and another mechanical connection below the frame. If mobility is essential, confirm the exact rolling configuration, usable keyboard height and caster instructions. The original wheeled ASIN is unavailable in the current US check; the fixed-foot option named below is not a rolling substitute."
+  },
+  {
+    "heading": "Twenty-four inches of depth needs a screen plan",
+    "body": "A stock monitor stand can consume much of a shallow top. Measure the actual work surface and viewing position. A compatible arm also needs an appropriate underside, clamp clearance and permitted load distribution; a whole-desk load rating does not establish monitor-arm compatibility."
+  },
+  {
+    "heading": "Original listing and current buying option are separate",
+    "body": "The original B0B6JJKSNM page still describes a Black 48×24-inch desk with wheels but showed Currently unavailable for US10001 on October 31. That is an availability observation, not discontinuation evidence. The independent B0B41YH9B6 option is ErGear EGESD5B Black with fixed leveling feet. Its nominal 48×24 selection lists a 47.2×23.6-inch top. Confirm the actual dimensions rather than transferring the old wheeled desk’s measurements."
+  },
+  {
+    "heading": "A fixed-foot option when the desk stays in one place",
+    "body": "The current EGESD5B listing links an ErGear Rev06 manual that includes EGESD5B, shows a split desktop and fixed leveling feet, and gives a roughly 28.3–46.5-inch adjustment range. It is a conditional option for a stationary workstation, not proof of greater stiffness or caster compatibility. The title advertises four presets while the attached manual documents three stored heights; confirm the supplied controller if that difference matters."
+  },
+  {
+    "heading": "Keep, wait or buy for the actual room",
+    "body": "Keep a desk that already supports the needed working positions. Wait for a documented mobile option if rolling is required. If choosing EGESD5B, check the supplied adapter and instructions, safe cable travel and current condition/seller/returns. October 31’s selected regular offer had Amazon fulfillment and an expanded free 30-day return option; the separate Prime price required eligibility. Neither observation guarantees a received configuration or future availability."
+  }
+],
     alternatives: [
-      "Choose FlexiSpot E7 Mini when frame stiffness and a more permanent setup matter more than wheels.",
-      "Choose a fixed-height desk when standing adjustment would rarely be used.",
-      "Use a mobile laptop cart when the entire desktop does not need to travel.",
+      "Compare a fixed-foot desk when mobility is unnecessary, checking its own height range, desktop, load limits and assembly manual.",
+      "Keep a fixed-height desk if its current working position meets the task and standing adjustment would rarely be used.",
+      "Consider a mobile laptop cart only when its own model and load limits cover the equipment that needs to move."
     ],
     compareSlugs: [
       "flexispot-e7-mini-standing-desk",
       "uplift-v3-standing-desk",
     ],
     sources: [
-      {
-        name: "Amazon listing for ASIN B0B6JJKSNM",
-        url: "https://www.amazon.com/dp/B0B6JJKSNM",
-        note: "Exact linked configuration title and current retailer details; verify live specifications and seller before purchase.",
-      },
-      {
-        name: "OSHA computer workstation positions",
-        url: "https://www.osha.gov/etools/computer-workstations/positions",
-        note: "Primary neutral-position and workstation-adjustment guidance.",
-      },
-    ],
+  {
+    "name": "OSHA computer workstation positions",
+    "url": "https://www.osha.gov/etools/computer-workstations/positions",
+    "note": "Primary neutral-position and workstation-adjustment guidance."
+  },
+  {
+    "name": "Original ErGear wheeled ASIN B0B6JJKSNM",
+    "url": "https://www.amazon.com/dp/B0B6JJKSNM",
+    "note": "October 31 US10001 original48×24 Black wheeled listing showed Currently unavailable. No discontinued claim or current purchase qualification."
+  },
+  {
+    "name": "ErGear EGESD5B Rev06 assembly and controller manual",
+    "url": "https://m.media-amazon.com/images/I/C1l2n7xoGPL.pdf",
+    "note": "ErGear Rev06 includes EGESD5B. Assembly drawings show fixed feet and a split top; three stored heights differ from the current four-preset listing claim. Match the supplied controller."
+  },
+  {
+    "name": "Amazon ErGear EGESD5B Black B0B41YH9B6",
+    "url": "https://www.amazon.com/dp/B0B41YH9B6",
+    "note": "Black nominal 48×24 selection, EGESD5B model, regular-price offer and expanded returns observed October 31, 2026 for US 10001. Recheck actual dimensions, supplied controller and condition."
+  }
+],
     offers: [
       {
         merchant: "Amazon US",
@@ -229,7 +248,13 @@ export const verifiedAffiliateBatchProducts: Product[] = [
           "Confirm ASIN B0B6JJKSNM, 48×24 size, wheels, finish, height range, capacity, seller, and warranty.",
       },
     ],
-  },
+    purchaseAlternatives: [
+  "ergear-egesd5b-black-fixed-foot-desk-retailer-alternative"
+],
+  "researchNote": "Based on the current retailer listings and attached ErGear Rev06 instructions, checked October 31, 2026 for US 10001. The original wheeled desk is unavailable; EGESD5B is a separate fixed-foot option. Preset count and supplied configuration need confirmation. No hands-on test.",
+"purchaseCheck": "Original wheeled B0B6JJKSNM unavailable on October 31. The separate EGESD5B Black option uses fixed feet, not wheels; check actual top, height, controller, seller and returns.",
+"evidenceMode": "official-spec",
+},
   {
     site: "baby",
     slug: "baby-tula-lite-carrier",
@@ -242,12 +267,12 @@ export const verifiedAffiliateBatchProducts: Product[] = [
     category: "travel",
     image: "/images/affiliate/baby-carrier-realistic.webp",
     summary:
-      "A safety-first guide to the packable ripstop Tula Lite, including its 12–30 lb range, inward-front and back carry positions, attached storage pouch, hood, fit checks, and newborn and outward-facing limits.",
+      "Tula Lite guidance for front inward at 12–30 lb and later back carry at 18–30 lb with developmental requirements, plus the packable pouch, hood and version checks.",
     verdict:
       "Tula Lite is best treated as a compact travel or backup carrier for a baby who already meets its size and fit requirements. It is not a newborn carrier and not the right Tula for outward-facing carry.",
     whyItMatters:
       "The packable pouch is useful only after the child fits the carrier safely. Baby Tula lists a 12–30 lb range and says the child must sit supported knee to knee without being overextended.",
-    bestFor: "Packable inward-front and back carrying after the newborn stage",
+    bestFor: "Packable carrying for a child who meets the intended Lite position’s requirements",
     priceBand: "$$",
     rating: 4.6,
     scores: [
@@ -256,23 +281,24 @@ export const verifiedAffiliateBatchProducts: Product[] = [
       { label: "Newborn use", value: 2 },
     ],
     pros: [
-      "Packs into its attached waistband while leaving a hip pouch available",
-      "Quick-drying ripstop fabric and approximately one-pound carrier weight",
-      "Supports inward-front and age-appropriate back carrying",
+      "Packs into its attached waistband with a separate hip pouch",
+      "Manufacturer describes ripstop fabric and about 1 lb; Amazon lists 1.65 lb, and the weight difference remains unresolved.",
+      "Front inward and later back positions have different child conditions"
     ],
     cons: [
-      "Not designed for newborns and starts at 12 lb with additional fit requirements",
-      "No outward-facing carry position",
-      "Lighter travel structure may be less supportive for long carries than an all-stage carrier",
+      "Not newborn use; front begins at 12 lb and back at 18 lb with additional requirements",
+      "No outward position or infant insert for an undersized child",
+      "Personal fit and current regional instructions remain necessary"
     ],
     specs: {
-      ASIN: "B09X8R4PZH",
-      "Listed child range": "12–30 lb",
-      Positions: "Front inward and back carry; no outward-facing carry",
-      Material: "Quick-drying ripstop nylon",
-      Storage: "Packs into attached waistband with zippered hip pouch",
-      Weight: "About 1 lb",
-      Hood: "Detachable sleep / sun hood included",
+      "ASIN": "B09X8R4PZH",
+      "Listed child range": "Front inward 12–30 lb; back 18–30 lb plus head/neck/torso control and seated readiness.",
+      "Positions": "Front inward and back carry; no outward-facing carry",
+      "Material": "Quick-drying ripstop nylon",
+      "Storage": "Packs into attached waistband with zippered hip pouch",
+      "Weight": "Manufacturer: about 1 lb; current Amazon Item Weight: 1.65 lb. The difference is unresolved; neither is our measurement.",
+      "Hood": "Detachable sleep / sun hood included",
+      "Storage load": "Original Lite manual: pouch maximum 3 lb/1.4 kg; no sharp or bulky items affecting child position."
     },
     evidence: [
       "Confirm the child meets weight, developmental, and knee-to-knee fit guidance before first use",
@@ -282,26 +308,30 @@ export const verifiedAffiliateBatchProducts: Product[] = [
     ],
     editorialSections: [
       {
-        heading: "This is not a newborn carrier",
-        body: "Baby Tula says the Lite begins at 12 lb and requires a supported knee-to-knee seat without overextension. A baby's age or weight alone does not replace the complete fit check.",
+        "heading": "This is not a newborn carrier",
+        "body": "Baby Tula says the Lite begins at 12 lb and requires a supported knee-to-knee seat without overextension. A baby's age or weight alone does not replace the complete fit check."
       },
       {
-        heading: "Packability is the reason to buy it",
-        body: "The ripstop carrier folds into the attached waistband and keeps a front pouch available for small essentials. That makes it attractive for airports, short errands, and the stage when a child alternates between walking and being carried.",
+        "heading": "Choose Lite when packability solves a real job",
+        "body": "The ripstop carrier folds into the attached waistband and keeps a front pouch available for small essentials. That makes it attractive for airports, short errands, and the stage when a child alternates between walking and being carried."
       },
       {
-        heading: "Carry positions are intentionally limited",
-        body: "Tula Lite supports inward-front and back carry, not outward-facing carry. Buyers wanting an outward position or a longer all-stage range should compare Tula Explore or another model whose current manual permits those uses.",
+        "heading": "Back carry starts above the front-carry minimum",
+        "body": "Current official Lite guidance and the original diagrams distinguish front-inward 12–30 lb from back 18–30 lb. Back carry also needs strong, consistent head, neck and torso control and stable seated readiness. Neither a birthday nor the lower 12 lb front-carry threshold approves back carry. Lite has no outward position and is not designed for an infant insert to make an undersized child fit."
       },
       {
-        heading: "Who should skip it",
-        body: "Skip it for a newborn, a child above the listed range, outward-facing carry, or long sessions where a more structured waistband and panel fit the caregiver better.",
+        "heading": "Who should skip it",
+        "body": "Skip it for a newborn, a child above the listed range, outward-facing carry, or long sessions where a more structured waistband and panel fit the caregiver better."
       },
+      {
+        "heading": "The pouch and hood have their own checks",
+        "body": "The original Lite instructions cap the storage pocket at 3 lb and exclude sharp or bulky objects that could affect the baby's position. Keep the face visible when using the hood. Inspect the unpacked carrier and follow its own loading/removal diagrams; do not substitute the generic hood or position instructions for Explore, Original or Kid."
+      }
     ],
     alternatives: [
-      "Choose BabyBjörn Mini for a newborn-focused front-carry workflow.",
-      "Choose Ergobaby Omni Breeze for a broader listed range and more positions.",
-      "Choose BabyBjörn Harmony when longer-range support matters more than packability.",
+      "Keep a suitable existing carrier when Lite would duplicate its job.",
+      "Compare Mini only for a documented eligible front routine and exact version.",
+      "Compare Breeze or Harmony only for a needed position after their own manual and fit conditions are resolved."
     ],
     compareSlugs: [
       "babybjorn-carrier-mini-3d-mesh",
@@ -310,15 +340,20 @@ export const verifiedAffiliateBatchProducts: Product[] = [
     ],
     sources: [
       {
-        name: "Baby Tula Lite product page",
-        url: "https://babytula.com/products/slate-tula-lite-baby-carrier",
-        note: "Official range, positions, material, storage, measurements, hood, fit, and care information.",
+        "name": "Baby Tula current Lite position guidance",
+        "url": "https://babytula.com/pages/learn",
+        "note": "Current official US Lite front 12–30 lb with knee-to-knee fit; back minimum 18 lb plus stable head/neck/torso control and sitting; other model instructions remain separate."
       },
       {
-        name: "Baby Tula Lite carrier overview",
-        url: "https://babytula.com/pages/tula-lite-baby-carrier",
-        note: "Official travel and packability positioning.",
+        "name": "Baby Tula Slate Lite current regional product information",
+        "url": "https://babytula.com/products/slate-tula-lite-baby-carrier",
+        "note": "Currently redirects to a Poland regional Lite Slate page; product/size/care and no-infant-insert/no-outward FAQs read. Not evidence of US stock, delivery or returns."
       },
+      {
+        "name": "Original Baby Tula Lite instruction manual, publicly archived copy",
+        "url": "https://myturn-prod-attachments.s3-us-west-2.amazonaws.com/1/481/item/---/file_attachment/Tula_Lite_Instruction_Manual-23A6D236-8A77-CA49-C18D-C1B6C681A208.pdf",
+        "note": "Original manufacturer-branded Lite manual. Complete English warnings/care/legend P1–4 and shared 22 instruction diagram pages P14–35 read. Public third-party-hosted copy, not claimed a current original-host revision; current official Lite position limits cross-checked."
+      }
     ],
     offers: [
       {
@@ -329,14 +364,20 @@ export const verifiedAffiliateBatchProducts: Product[] = [
           "Confirm ASIN B09X8R4PZH, Slate color, seller, child fit, and current instructions.",
       },
     ],
+    "purchaseCheck": "Match Lite Slate and its supplied instructions. The reviewed guidance separates front inward 12–30 lb from back 18–30 lb plus required head/neck/torso and sitting control. It is not newborn, outward or infant-insert use.",
   },
   {
+"purchaseCheck": "Compare this eight-port unmanaged model only when the endpoints and cable path can use 2.5 GbE. Confirm the hardware label and included supply. The retailer’s 25 Gbps title does not replace the reviewed manufacturer’s 40 Gbps aggregate figure or measure one transfer. November 1 selected offer showed a seasonal return deadline and expanded free-return policy; verify the current policy. Keep adequate gigabit equipment.",
+"evidenceMode": "research-synthesis",
+"imageAlt": "Editorial illustration of the product category; not a photograph of the selected retail unit.",
+"researchNote": "November 1 selected US10001 identity/offer state and the named manufacturer product, specification or support sections reviewed. This is documented purchase research, not a physical speed, installation, security, alert, comfort or reliability test. Applicable manual scope and remaining revision/service conditions are explicit; no whole-manual claim is implied.",
+
     site: "network",
     slug: "trendnet-teg-s380-2-5g-switch",
     asin: "B08XWKF55C",
     seoTitle:
       "TRENDnet TEG-S380 Guide: 8-Port 2.5G Switch, Versions & Bottlenecks",
-    updatedAt,
+    "updatedAt": "November 1, 2026",
     name: "TRENDnet TEG-S380 8-Port 2.5G Switch",
     brand: "TRENDnet",
     category: "wired",
@@ -349,12 +390,8 @@ export const verifiedAffiliateBatchProducts: Product[] = [
       "A 2.5G switch does not make a gigabit router, adapter, NAS, or client faster. Every segment of the path must negotiate above gigabit, and local file transfers should be evaluated separately from internet speed.",
     bestFor: "Quiet eight-port 2.5GbE expansion for a multi-gig home network",
     priceBand: "$$",
-    rating: 4.6,
-    scores: [
-      { label: "Multi-gig port count", value: 9 },
-      { label: "Setup simplicity", value: 9 },
-      { label: "Management features", value: 3 },
-    ],
+    rating: 0,
+    scores: [],
     pros: [
       "Eight 2.5GBASE-T ports with backward compatibility",
       "Fanless metal enclosure suits desks and network shelves",
@@ -366,15 +403,14 @@ export const verifiedAffiliateBatchProducts: Product[] = [
       "TRENDnet has multiple hardware versions, so the live listing and support page must match",
     ],
     specs: {
-      ASIN: "B08XWKF55C",
-      Ports: "8 × 2.5GBASE-T RJ-45",
-      Compatibility: "Backward compatible with slower Ethernet devices",
-      "Official switching capacity":
-        "40Gbps; verify the exact hardware version",
-      Cooling: "Fanless",
-      Enclosure: "Metal; wall-mountable",
-      Cabling: "Cat5e or better for supported 2.5GbE paths",
-    },
+  "ASIN": "B08XWKF55C",
+  "Ports": "8 × 2.5GBASE-T RJ-45",
+  "Compatibility": "Backward compatible with slower Ethernet devices",
+  "Official switching capacity": "Reviewed manufacturer version: 40 Gbps aggregate; not single-transfer throughput or proof of retail hardware revision",
+  "Cooling": "Fanless",
+  "Enclosure": "Metal; wall-mountable",
+  "Cabling": "Cat5e or better for supported 2.5GbE paths"
+},
     evidence: [
       "Confirm ASIN B08XWKF55C and the TEG-S380 hardware version before using a version-specific datasheet",
       "Verify 2.5GbE support on the router, adapters, NAS, and clients at both ends of every important path",
@@ -382,23 +418,23 @@ export const verifiedAffiliateBatchProducts: Product[] = [
       "Choose a managed switch instead if VLANs, traffic visibility, or link aggregation are required",
     ],
     editorialSections: [
-      {
-        heading: "Hardware version is not a footnote",
-        body: "TRENDnet's support site distinguishes versions and marks older revisions as replaced by V2. Confirm the label on the retailer listing or delivered switch before downloading firmware, a datasheet, or a setup guide.",
-      },
-      {
-        heading: "Eight 2.5G ports are useful only with a real path",
-        body: "A 2.5GbE desktop talking to a 2.5GbE NAS can benefit even when the internet is slower. A 2.5Gbps internet plan also needs a compatible modem, router WAN/LAN path, client adapter, and cabling.",
-      },
-      {
-        heading: "Unmanaged is a feature and a limitation",
-        body: "Plug-and-play operation is ideal for a simple home network. It is the wrong fit when the design requires VLAN separation, per-port statistics, spanning-tree controls, or deliberate link aggregation.",
-      },
-      {
-        heading: "Who should skip it",
-        body: "Skip it when the entire network is gigabit, a five-port switch is enough, or the next planned upgrade is 10GbE. Buying unused port speed does not improve reliability.",
-      },
-    ],
+  {
+    "heading": "Hardware version is not a footnote",
+    "body": "TRENDnet documents different hardware revisions. Match the exact unit label to its support material and power supply; a current support page does not identify retail stock. Do not treat a new revision, an older support page or a changed retailer aggregate-capacity title as proof of an exact mandatory successor or EOL."
+  },
+  {
+    "heading": "Eight 2.5G ports are useful only with a real path",
+    "body": "A 2.5 GbE desktop talking to a 2.5 GbE NAS can benefit even when the internet is slower. A 2.5 Gbps internet plan also needs a compatible modem, router WAN/LAN path, client adapter, and cabling."
+  },
+  {
+    "heading": "Unmanaged is a feature and a limitation",
+    "body": "Plug-and-play operation is ideal for a simple home network. It is the wrong fit when the design requires VLAN separation, per-port statistics, spanning-tree controls, or deliberate link aggregation."
+  },
+  {
+    "heading": "Who should skip it",
+    "body": "Skip it when the entire network is gigabit, a five-port switch is enough, or the next planned upgrade is 10 GbE. Buying unused port speed does not improve reliability."
+  }
+],
     alternatives: [
       "Choose TP-Link TL-SG108 for inexpensive unmanaged gigabit expansion.",
       "Choose NETGEAR GS308E when light management matters more than 2.5GbE.",
@@ -410,17 +446,17 @@ export const verifiedAffiliateBatchProducts: Product[] = [
       "trendnet-teg-s350-2-5g-switch",
     ],
     sources: [
-      {
-        name: "TRENDnet TEG-S380 support",
-        url: "https://www.trendnet.com/support/support-detail.asp?prod=110_TEG-S380",
-        note: "Official version selector, ports, switching capacity, fanless design, cabling, and datasheets.",
-      },
-      {
-        name: "Amazon listing for ASIN B08XWKF55C",
-        url: "https://www.amazon.com/dp/B08XWKF55C",
-        note: "Exact linked offer; confirm hardware version and seller against the TRENDnet label.",
-      },
-    ],
+  {
+    "name": "TRENDnet TEG-S380 support",
+    "url": "https://www.trendnet.com/support/support-detail.asp?prod=110_TEG-S380",
+    "note": "Official version selector, ports, switching capacity, fanless design, cabling, and datasheets."
+  },
+  {
+    "name": "Amazon listing for ASIN B08XWKF55C",
+    "url": "https://www.amazon.com/dp/B08XWKF55C",
+    "note": "Exact linked offer; confirm hardware version and seller against the TRENDnet label. November 1, 2026 US10001 public selection checked. New primary selection and expanded return terms observed; point-in-time seller/delivery/conditions, not a future availability or warranty promise."
+  }
+],
     offers: [
       {
         merchant: "Amazon US",
@@ -432,107 +468,113 @@ export const verifiedAffiliateBatchProducts: Product[] = [
     ],
   },
   {
-    site: "smarthome",
-    slug: "ultraloq-bolt-se-smart-lock",
-    asin: "B0FQC6VCDW",
-    seoTitle:
-      "ULTRALOQ Bolt SE Guide: Matter vs Wi-Fi Variant, Fingerprint & Door Fit",
-    updatedAt,
-    name: "ULTRALOQ Bolt SE Smart Lock",
-    brand: "ULTRALOQ",
-    category: "access",
-    image: "/images/affiliate/smarthome-smart-lock-realistic.webp",
-    summary:
-      "A variant-aware guide to the Bolt SE fingerprint deadbolt, covering Matter over Thread versus Wi-Fi connectivity, controller requirements, entry methods, battery routine, weather rating, door measurements, and physical-key fallback.",
-    verdict:
-      "Bolt SE is a strong value option when fingerprint and keypad entry are the daily priority. Choose the exact Matter or Wi-Fi version around the household's controller infrastructure rather than assuming every listing combines both connection paths.",
-    whyItMatters:
-      "ULTRALOQ's official page presents Matter and Wi-Fi as technology variants. The Amazon title can be read more broadly, so buyers should verify the selected version, controller needs, and ecosystem behavior before ordering.",
-    bestFor:
-      "Fingerprint and keypad entry with a deliberately chosen Matter or Wi-Fi path",
-    priceBand: "$$",
-    rating: 4.3,
-    scores: [
-      { label: "Entry flexibility", value: 9 },
-      { label: "Value", value: 9 },
-      { label: "Variant clarity", value: 6 },
-    ],
-    pros: [
-      "Fingerprint, keypad, app, auto-unlock, and physical-key entry",
-      "Matter option supports major compatible smart-home platforms",
-      "Standard deadbolt format with no new wiring",
-    ],
-    cons: [
-      "Matter over Thread requires a compatible controller and Thread border router",
-      "The exact Wi-Fi versus Matter version must be confirmed",
-      "Door preparation, thickness, backset, alignment, and exterior exposure still control fit",
-    ],
-    specs: {
-      ASIN: "B0FQC6VCDW",
-      "Hardware type": "Replacement deadbolt",
-      "Entry methods":
-        "Fingerprint, PIN code, app, auto-unlock, and physical key",
-      Connectivity:
-        "Confirm Matter over Thread or Wi-Fi variant on the selected offer",
-      Ecosystems:
-        "Apple Home, Alexa, Google Home, and SmartThings listed for compatible Matter models",
-      Weather:
-        "Exterior assembly listed with weather protection; interior assembly remains indoors",
-      Power:
-        "Replaceable batteries; life varies with technology, battery type, signal, and use",
-    },
-    evidence: [
-      "Confirm ASIN B0FQC6VCDW and the selected Matter or Wi-Fi technology before checkout",
-      "For Matter over Thread, identify the household's compatible Matter controller and Thread border router",
-      "Measure door thickness, bore holes, backset, trim clearance, and deadbolt movement",
-      "Keep the physical key available outside the locked home and test every fallback method",
-    ],
-    editorialSections: [
-      {
-        heading: "Matter and Wi-Fi should be treated as variants",
-        body: "ULTRALOQ's current product page asks buyers to choose a technology. Matter over Thread emphasizes local ecosystem control and needs compatible infrastructure; a Wi-Fi version follows a different remote-access path. Confirm the exact Amazon selection rather than relying on the combined wording of a long marketplace title.",
-      },
-      {
-        heading: "Fingerprint is the everyday reason to buy",
-        body: "Matter compatibility is useful, but the lock earns its keep through reliable daily entry. Enroll more than one fingerprint per frequent user, create a memorable keypad fallback, and retain the mechanical key.",
-      },
-      {
-        heading: "Door alignment affects smart-lock reliability",
-        body: "The deadbolt should extend without pushing or pulling the door. A motorized lock cannot permanently correct a tight strike plate, seasonal swelling, or an incompatible bore and backset.",
-      },
-      {
-        heading: "Who should skip it",
-        body: "Skip it when the door is not a compatible US-style deadbolt, household members cannot maintain a dependable fallback, or no one wants to manage batteries, firmware, accounts, and controller compatibility.",
-      },
-    ],
-    alternatives: [
-      "Choose Aqara U400 when UWB approach unlocking is the defining requirement.",
-      "Choose Aqara U100 when Apple Home Key and an Aqara hub fit the household.",
-      "Choose a non-connected keypad lock when remote control and ecosystem integration add no value.",
-    ],
-    compareSlugs: ["aqara-smart-lock-u400", "aqara-smart-lock-u100"],
-    sources: [
-      {
-        name: "ULTRALOQ Bolt SE product page",
-        url: "https://ultraloq.com/products/bolt-se",
-        note: "Official variants, entry methods, Matter requirements, ecosystems, weather, battery, and installation information.",
-      },
-      {
-        name: "ULTRALOQ Matter multi-platform support",
-        url: "https://support.ultraloq.com/hc/en-us/articles/47696415238041-Can-the-ULTRALOQ-Bolt-Fingerprint-Matter-Lock-be-added-to-Matter-compatible-platforms-after-being-added-to-Xthings-Home-Formerly-U-home-App-already",
-        note: "Official Matter sharing and Thread border-router requirements.",
-      },
-    ],
-    offers: [
-      {
-        merchant: "Amazon US",
-        url: "https://amzn.to/4wm0kM6",
-        label: "Check ULTRALOQ Bolt SE price on Amazon",
-        priceNote:
-          "Confirm ASIN B0FQC6VCDW, Matter or Wi-Fi technology, finish, seller, and included hardware.",
-      },
-    ],
+  "site": "smarthome",
+  "slug": "ultraloq-bolt-se-smart-lock",
+  "asin": "B0FQC6VCDW",
+  "seoTitle": "ULTRALOQ Bolt SE Guide: Wi-Fi or Matter Mode & Door Fit",
+  "updatedAt": "November 1, 2026",
+  "name": "ULTRALOQ Bolt SE Smart Lock",
+  "brand": "ULTRALOQ",
+  "category": "access",
+  "image": "/images/affiliate/smarthome-smart-lock-realistic.webp",
+  "summary": "Choose one Bolt SE operating path at a time: Wi-Fi remote access or Matter over Thread. Compare door fit, controller requirements, local entry and the supplied model instructions.",
+  "verdict": "Compare Bolt SE when fingerprint, keypad and physical-key entry meet the household’s routine. The current maker describes Wi-Fi and Matter as mutually exclusive operating modes, not proof of two separate hardware variants. Plan the chosen mode and its controller path before ordering.",
+  "whyItMatters": "The maker’s current FAQ resolves the combined title: Wi-Fi and Matter modes cannot run simultaneously. That distinction changes remote access and setup, even though the selected retailer title says both.",
+  "bestFor": "Fingerprint/keypad entry with a deliberately chosen Wi-Fi or Matter-over-Thread mode",
+  "priceBand": "$$",
+  "rating": 0,
+  "scores": [],
+  "pros": [
+    "Fingerprint, code, app and physical-key entry documented",
+    "Choice of Wi-Fi or Matter operating path",
+    "Existing standard-deadbolt installation can be assessed without new mains wiring"
+  ],
+  "cons": [
+    "Wi-Fi and Matter modes do not run simultaneously",
+    "Matter/controller requirements and remote access differ by chosen path",
+    "Door sensor is not included; timer auto-lock is not proof the door closed"
+  ],
+  "specs": {
+    "ASIN": "B0FQC6VCDW",
+    "Hardware type": "Replacement deadbolt",
+    "Entry methods": "Fingerprint, PIN code, app, auto-unlock, and physical key",
+    "Connectivity": "Current manufacturer: choose Wi-Fi or Matter-over-Thread operating mode; not simultaneous",
+    "Ecosystems": "Apple Home, Alexa, Google Home, and SmartThings listed for compatible Matter models",
+    "Weather": "Exterior assembly listed with weather protection; interior assembly remains indoors",
+    "Power": "Replaceable batteries; life varies with technology, battery type, signal, and use",
+    "Exact selection": "Black UUL-BOLT-BK retailer reference; match supplied Bolt SE instructions"
   },
+  "evidence": [
+    "Confirm ASIN B0FQC6VCDW and the selected Matter or Wi-Fi technology before checkout",
+    "For Matter over Thread, identify the household's compatible Matter controller and Thread border router",
+    "Measure door thickness, bore holes, backset, trim clearance, and deadbolt movement",
+    "Keep the physical key available outside the locked home and test every fallback method"
+  ],
+  "editorialSections": [
+    {
+      "heading": "Choose one operating mode",
+      "body": "The current Bolt SE manufacturer FAQ explicitly says Wi-Fi and Matter-over-Thread cannot operate simultaneously. Its attached Bolt guide gives the same mode distinction. Choose the path around actual controller and remote-access requirements; do not describe a combined title as two concurrently working radios or assume two separate hardware variants. Match the supplied SE revision before following any generic Bolt setup sequence."
+    },
+    {
+      "heading": "Fingerprint is the everyday reason to buy",
+      "body": "Matter compatibility is useful, but the lock earns its keep through reliable daily entry. Enroll more than one fingerprint per frequent user, create a memorable keypad fallback, and retain the mechanical key."
+    },
+    {
+      "heading": "Door alignment affects smart-lock reliability",
+      "body": "The deadbolt should extend without pushing or pulling the door. A motorized lock cannot permanently correct a tight strike plate, seasonal swelling, or an incompatible bore and backset."
+    },
+    {
+      "heading": "Who should skip it",
+      "body": "Skip it when the door is not a compatible US-style deadbolt, household members cannot maintain a dependable fallback, or no one wants to manage batteries, firmware, accounts, and controller compatibility."
+    },
+    {
+      "heading": "Keep local entry and door state separate",
+      "body": "The selected retailer record is Black UUL-BOLT-BK and lists two emergency keys. Its door sensor is not included. Timer auto-lock can move a bolt without proving the door is shut; correct alignment and test local entry with the door open. Follow the matching alkaline-battery and indoor/exterior instructions and preserve a physical-key fallback outside the locked home. No fingerprint accuracy, battery lifetime or security test was performed."
+    }
+  ],
+  "alternatives": [
+    "Choose Aqara U400 when UWB approach unlocking is the defining requirement.",
+    "Choose Aqara U100 when Apple Home Key and an Aqara hub fit the household.",
+    "Choose a non-connected keypad lock when remote control and ecosystem integration add no value."
+  ],
+  "compareSlugs": [
+    "aqara-smart-lock-u400",
+    "aqara-smart-lock-u100"
+  ],
+  "sources": [
+    {
+      "name": "ULTRALOQ Bolt SE product page",
+      "url": "https://ultraloq.com/products/bolt-se",
+      "note": "Official variants, entry methods, Matter requirements, ecosystems, weather, battery, and installation information."
+    },
+    {
+      "name": "ULTRALOQ Matter multi-platform support",
+      "url": "https://support.ultraloq.com/hc/en-us/articles/47696415238041-Can-the-ULTRALOQ-Bolt-Fingerprint-Matter-Lock-be-added-to-Matter-compatible-platforms-after-being-added-to-Xthings-Home-Formerly-U-home-App-already",
+      "note": "Official Matter sharing and Thread border-router requirements."
+    },
+    {
+      "name": "Selected US retailer identity, November 1, 2026",
+      "url": "https://www.amazon.com/dp/B0FQC6VCDW",
+      "note": "Exact model and selected package observed for New York 10001. Seller, condition, delivered total and current returns remain purchase-time checks; this is not a received-unit approval."
+    },
+    {
+      "name": "Retail-attached Bolt original guide",
+      "url": "https://m.media-amazon.com/images/I/B1nnX6Zy7GL.pdf",
+      "note": "Relevant English sections and figures within the 20-page original reviewed for mode choice, installation cautions, alkaline batteries, reset and fallback. Cover says Bolt rather than SE; no unverified dimensions or reset sequence is transferred without matching the supplied revision."
+    }
+  ],
+  "offers": [
+    {
+      "merchant": "Amazon US",
+      "url": "https://www.amazon.com/dp/B0FQC6VCDW?tag=madasmart-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+      "label": "Check ULTRALOQ Bolt SE Smart Lock on Amazon",
+      "priceNote": "Confirm the exact model and package, current condition, seller, delivered total and return terms; read the model-specific fit check above."
+    }
+  ],
+  "evidenceMode": "official-spec",
+  "researchNote": "Manufacturer documentation and exact selected retailer identity inform this guide. We have not installed or tested this product. November 1, 2026: selected US retailer identity and purchase conditions reviewed separately; no received-unit, installation, performance or reliability test.",
+  "purchaseCheck": "Match Black Bolt SE/UUL-BOLT-BK and its supplied instructions. Choose Wi-Fi or Matter mode; they cannot run simultaneously. Confirm door fit, batteries, controller/remote-access path and a physical-key fallback. A door sensor is not included."
+},
 ];
 
 export const verifiedAffiliateBatchRoundups: Roundup[] = [
@@ -675,7 +717,7 @@ export const verifiedAffiliateBatchRoundups: Roundup[] = [
     sections: [
       {
         heading: "Bolt SE leads on simple value",
-        body: "Fingerprint and keypad access cover most daily entries. Confirm the exact Matter or Wi-Fi variant and required controller path before treating a low price as a complete system.",
+        body: "Fingerprint and keypad access cover most daily entries. The current Bolt SE maker FAQ describes Wi-Fi and Matter-over-Thread as operating modes that do not run simultaneously. Match the supplied model instructions and plan the chosen controller and remote-access path before ordering.",
       },
       {
         heading: "U400 leads on hands-free UWB",
@@ -690,7 +732,7 @@ export const verifiedAffiliateBatchRoundups: Roundup[] = [
       {
         label: "Buy Bolt SE",
         detail:
-          "Fingerprint and keypad lead, and its exact connectivity variant matches the home.",
+          "Fingerprint and keypad lead, and one chosen Wi-Fi or Matter operating mode meets the home’s requirements.",
       },
       {
         label: "Buy U400",
@@ -796,60 +838,65 @@ export const verifiedAffiliateBatchGuides: Guide[] = [
     ],
     sections: [
       {
-        heading: "Use wheels only for a real room constraint",
-        body: "Casters earn their trade-offs in a shared room, rental, or cleaning-heavy setup where the desk must move. If the desk stays parked, fixed feet usually protect seated height and stability better.",
+        "heading": "Name the room problem before adding wheels",
+        "body": "Decide what must move, how often and through which route. Moving a laptop station for cleaning is different from rolling a loaded desk through doorways. If the desk can remain parked, keep its documented existing configuration unless a specific mobility need remains. Neither wheels nor fixed feet establish better stability by themselves; the complete frame, desktop, floor and load need their own checks."
       },
       {
-        heading: "Add caster height before checking fit",
-        body: "Wheels can raise the lowest desk position. Compare the finished keyboard height with seated elbow height rather than relying on the frame's number without casters.",
+        "heading": "Compare the finished desk height, not the bare frame",
+        "body": "Use the manufacturer’s height range for the exact finished configuration, including the permitted casters and desktop. Check the lowest usable keyboard position with the normal chair, and the highest position needed by the actual user. Do not add an assumed caster diameter to a marketing range that may already include feet or wheels. If the manual does not establish the completed height, leave the result unknown rather than promising that it will fit."
       },
       {
-        heading: "Lock every wheel before working",
-        body: "Test rolling, braking, and frame movement on the real floor. A wheel that works on hard flooring may behave differently on a rug or soft mat.",
+        "heading": "Use only the desk’s documented caster and load arrangement",
+        "body": "Match the exact caster attachment, hardware, load limit and floor guidance from the desk manufacturer. Confirm how its locks operate and whether the manual permits moving the desk with equipment attached. A wheel fitting the threaded hole is not proof of a supported configuration. Keep the purchase paused when the model or assembly manual is missing; the historical ErGear B0B6JJKSNM 48×24 wheeled reference remains in that state."
       },
       {
-        heading: "Move the cable system with the desk",
-        body: "Secure the power strip to the moving desktop when appropriate, preserve one safe path to the wall, and keep cable loops away from wheels and feet.",
+        "heading": "Plan power and cable travel before moving anything",
+        "body": "Map the desk’s full adjustment and permitted movement route, including the wall connection, monitor cables and devices that stay elsewhere. Keep cables clear of wheel paths and moving joints; a cable tied to the desk can still pull on a fixed wall socket or monitor. Follow the exact power-strip and desk instructions for attachment and disconnection. Do not treat extra slack as permission to roll a powered, loaded setup contrary to its manual."
       },
       {
-        heading: "Heavy monitors reduce the benefit",
-        body: "A long monitor arm and heavy display increase visible movement and leverage. Keep the screen near its post and reconsider wheels when display stability is the main priority.",
-      },
+        "heading": "Decide from the complete setup and return terms",
+        "body": "A monitor arm, heavy display and extended desktop layout change the moving load and the route through the room. Verify those requirements before buying rather than assuming a caster lock turns any desk into a suitable support. If a permitted home check is practical, retain the packaging and use the documented setup within the return terms. Keep a suitable existing desk when mobility offers no clear benefit, or choose a separately documented configuration when requirements remain unresolved."
+      }
     ],
   },
   {
     site: "baby",
     slug: "packable-baby-carrier-travel-checklist",
     title: "Packable Baby Carrier Travel Checklist",
-    dek: "Check child fit, carry positions, caregiver adjustment, heat, storage, inspection, and backup transport before a flight or day trip.",
+    dek: "Check Tula Lite’s front and back minimums, supported adjustments, hood and pouch limits, then decide whether a packable carrier solves the trip.",
     category: "travel",
     updatedAt,
     relatedProducts: ["baby-tula-lite-carrier", "ergobaby-omni-breeze-carrier"],
     relatedRoundups: ["best-baby-carriers-and-sleep-routine-upgrades"],
     sources: [
       {
-        name: "Baby Tula Lite product page",
-        url: "https://babytula.com/products/slate-tula-lite-baby-carrier",
-        note: "Official fit, range, positions, fabric, storage, and care information.",
+        "name": "Baby Tula position guidance",
+        "url": "https://babytula.com/pages/learn",
+        "note": "Current Lite position guidance: front inward 12–30 lb; back from 18 lb with required head, neck, torso and sitting control. No outward or newborn position."
       },
+      {
+        "name": "Tula Lite manufacturer-authored instruction copy",
+        "url": "https://myturn-prod-attachments.s3-us-west-2.amazonaws.com/1/481/item/---/file_attachment/Tula_Lite_Instruction_Manual-23A6D236-8A77-CA49-C18D-C1B6C681A208.pdf",
+        "note": "Original branded English instructions pages 1–4 and all shared illustration pages 14–35 read. Public library copy, not proof of the latest original-host revision; compare the supplied instructions."
+      }
     ],
     sections: [
       {
-        heading: "Fit the child before packing",
-        body: "Weight is only one requirement. Follow the exact carrier's developmental, seat, panel, airway, and position guidance before making it the travel plan.",
+        "heading": "Check the intended position before packing",
+        "body": "Tula Lite is not a newborn or outward-facing carrier. The reviewed original instructions allow front inward at 12–30 lb and back at 18–30 lb; current official guidance also requires appropriate head, neck and torso control and stable sitting for back carry. Meeting a weight alone does not establish readiness or fit. Use the instructions supplied with the exact version and pause an unresolved match."
       },
       {
-        heading: "Practice every adjustment at home",
-        body: "Both caregivers should know the buckles, strap path, hood, and safe removal routine before using the carrier in a busy terminal or parking lot.",
+        "heading": "Practise the full setup before the travel day",
+        "body": "Check waistband fastening, shoulder adjustments, the connecting strap and support for the child while loading or unloading. The manual tells the wearer to remove the child before changing carrying positions. Check every fastener and keep the face visible. Packability does not remove the need for an adult who can reliably perform the complete sequence."
       },
       {
-        heading: "Inspect after storage",
-        body: "Unpack the carrier and check fabric, seams, webbing, buckles, and adjustment before each trip. Compact storage should not hide damage or twisted straps.",
+        "heading": "Keep the pouch and hood within their own limits",
+        "body": "The reviewed instructions limit the pouch to 3 lb and exclude sharp or bulky contents. Stored gear must not interfere with the child or fasteners. Apply the hood instructions without covering the face or obstructing breathing, and check the child’s position regularly. Confirm the exact fabric and care label rather than transferring another Tula model’s wash settings."
       },
       {
-        heading: "Keep a backup transport plan",
-        body: "Heat, fatigue, child mood, baggage, or a long walk can make a stroller or cart more appropriate. Packability does not make one carrier ideal for every travel segment.",
-      },
+        "heading": "Plan the trip around the actual use",
+        "body": "Check whether the carrier solves a short transfer, stairs or another specific gap; keep a suitable existing carrier when it already works. Carry a fallback when size, weather, adult access or the child’s suitability makes the plan uncertain. A carrier is not an aircraft restraint approval, stroller allowance or permission to use it during every stage of transport. Confirm each operator’s rules separately before the trip."
+      }
     ],
   },
   {

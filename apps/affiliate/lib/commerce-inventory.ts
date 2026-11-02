@@ -8,6 +8,22 @@ import { authorizedCjOffers } from "./cj-offers";
 
 const commerceSites: SiteKey[] = ["network", "smarthome", "homeoffice", "baby", "pet",];
 
+export function commerceInventoryAsin(product: { asin?: string; specs: Record<string, string>; offers: AffiliateOffer[] }) {
+  const declared = product.asin ?? product.specs.ASIN;
+  if (declared) return declared;
+  // Older product records store their identity only in the authored offer URL.
+  // Recover a single exact identity without choosing between differing offers.
+  const asins = new Set(product.offers.flatMap((offer) => {
+    try {
+      const url = new URL(offer.url);
+      const asin = url.hostname === "www.amazon.com" || url.hostname === "amazon.com"
+        ? url.pathname.match(/\/dp\/([A-Z0-9]{10})(?:\/|$)/i)?.[1].toUpperCase() : undefined;
+      return asin ? [asin] : [];
+    } catch { return []; }
+  }));
+  return asins.size === 1 ? [...asins][0] : undefined;
+}
+
 // Read the same published, offer-filtered objects used by the rendered pages.
 // Family slugs must include the exact ASIN; accepting a prefix alone loses identity.
 export function publishedCommerceInventory() {
@@ -27,7 +43,7 @@ export function publishedCommerceInventory() {
     ...activeUpgradeOffers().map((item) => ({site:item.site, slug:item.slug, catalogSlug:item.guide, asin:item.asin, offers:[upgradeAffiliateOffer(item)], kind:"guide-offer" as const})),
     ...commerceSites.flatMap((site) => siteProducts(site).filter((product) => product.publicationStatus !== "draft").map((product) => ({
       site, slug: product.slug, catalogSlug: product.slug,
-      asin: product.asin ?? product.specs.ASIN,
+      asin: commerceInventoryAsin(product),
       offers: product.offers,
       kind: "product" as const,
     }))),

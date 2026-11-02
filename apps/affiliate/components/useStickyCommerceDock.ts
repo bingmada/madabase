@@ -22,18 +22,29 @@ export function useStickyCommerceDock({
     if (!enabled || !button || !start) return;
 
     const footer = document.querySelector("footer");
-    const suppressors = [...document.querySelectorAll("[data-sticky-commerce-suppress], #fit-worksheet, #compatibility-checker")];
+    const header = document.querySelector("header");
+    const matchingPurchaseLinks = [...document.querySelectorAll("[data-sticky-commerce-suppress]")]
+      .flatMap((element) => element.matches("a[data-commerce-product]")
+        ? [element]
+        : [...element.querySelectorAll("a[data-commerce-product]")])
+      .filter((element) => element.getAttribute("data-commerce-product") === button.dataset.commerceProduct);
+    const suppressors = [...new Set([
+      ...matchingPurchaseLinks,
+      ...document.querySelectorAll("#fit-worksheet, #compatibility-checker"),
+    ])];
     let frame: number | undefined;
     let active = true;
-    const inViewport = (element: Element) => {
+    const inViewport = (element: Element, visibleTop: number) => {
       const rect = element.getBoundingClientRect();
-      return rect.width > 0 && rect.height > 0 && rect.bottom > 0 && rect.top < window.innerHeight && rect.right > 0 && rect.left < window.innerWidth;
+      return rect.width > 0 && rect.height > 0 && rect.bottom > visibleTop && rect.top < window.innerHeight && rect.right > 0 && rect.left < window.innerWidth;
     };
     const update = () => {
       frame = undefined;
       if (!active) return;
-      const visible = start.isConnected && button.isConnected && start.getBoundingClientRect().bottom <= 0
-        && !inViewport(button) && !(footer && inViewport(footer)) && !suppressors.some(inViewport);
+      const visibleTop = Math.max(0, Math.min(window.innerHeight, header?.getBoundingClientRect().bottom ?? 0));
+      const visible = start.isConnected && button.isConnected && start.getBoundingClientRect().bottom <= visibleTop
+        && !inViewport(button, visibleTop) && !(footer && inViewport(footer, visibleTop))
+        && !suppressors.some((element) => inViewport(element, visibleTop));
       setState((current) => current.key === scopeKey && current.visible === visible ? current : { key: scopeKey, visible });
     };
     const schedule = () => {

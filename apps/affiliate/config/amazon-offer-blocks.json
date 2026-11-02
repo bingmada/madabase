@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-26",
+  "updatedAt": "2026-11-01",
   "pageUpdatedAt": "July 30, 2026",
   "blocks": [
     {
@@ -8,9 +8,10 @@
       "slug": "flexispot-e7-mini-standing-desk",
       "asin": "B0F9X3FDYY",
       "status": "identity-drift",
-      "checkedAt": "2026-07-29",
-      "observedListing": "HUANUO 32-inch compact standing desk",
-      "reason": "The ASIN no longer identifies the recorded FlexiSpot E7 Mini."
+      "checkedAt": "2026-11-01",
+      "observedListing": "HUANUO 32×19-inch Natural desk, ESD01N-80A-US; B0F9X3FDYY",
+      "reason": "The original ASIN currently identifies a different HUANUO desk, not FlexiSpot E7 Mini. Original purchase remains paused; no discontinuation or exact replacement inferred.",
+      "pageUpdatedAt": "November 1, 2026"
     },
     {
       "site": "pet",
@@ -58,32 +59,14 @@
       "reason": "The exact recorded desk did not have a current US offer."
     },
     {
-      "site": "pet",
-      "slug": "petlibro-one-rfid-smart-feeder",
-      "asin": "B0FJMFYPNH",
-      "status": "unavailable",
-      "checkedAt": "2026-07-30",
-      "observedListing": "Currently unavailable in the Amazon Creator picker",
-      "reason": "The exact recorded feeder did not have a current US offer."
-    },
-    {
-      "site": "baby",
-      "slug": "chicco-advanced-sterilizer-dryer",
-      "asin": "B0BG67HG7S",
-      "status": "unavailable",
-      "checkedAt": "2026-07-30",
-      "observedListing": "Currently unavailable in the Amazon Creator picker",
-      "reason": "The exact recorded sterilizer-dryer did not have a current US offer."
-    },
-    {
       "site": "homeoffice",
       "slug": "branch-ergonomic-chair",
       "asin": "B0GWGK4JFK",
       "status": "unavailable",
-      "checkedAt": "2026-09-24",
-      "pageUpdatedAt": "September 24, 2026",
-      "observedListing": "Amazon Page Not Found",
-      "reason": "The former exact Amazon product page could not be found. The Amazon purchase link is paused; any named alternative is a different chair, not the Branch Ergonomic Chair."
+      "checkedAt": "2026-11-01",
+      "pageUpdatedAt": "November 1, 2026",
+      "observedListing": "Original B0GWGK4JFK: Amazon Page Not Found",
+      "reason": "The original exact page was not found. Original link remains paused; a separately named HON chair is not Branch and does not establish the original model is discontinued."
     },
     {
       "site": "baby",
@@ -100,10 +83,10 @@
       "slug": "govee-wifi-water-leak-detector-3-pack",
       "asin": "B07J9HZ5VN",
       "status": "unavailable",
-      "checkedAt": "2026-09-25",
-      "pageUpdatedAt": "September 25, 2026",
-      "observedListing": "Currently unavailable in the checked Amazon buy box",
-      "reason": "The exact three-pack listing showed no available offer in the checked storefront. The purchase link is paused until availability is reverified."
+      "checkedAt": "2026-11-01",
+      "pageUpdatedAt": "November 1, 2026",
+      "observedListing": "November1 US10001 exact Govee H5040/H5054 three-pack remains Currently unavailable,no restock date or selected seller.",
+      "reason": "The exact three-pack still has no current purchasable offer in this US observation. Shopping remains paused; no EOL or future restock claim. The original gateway/detector architecture and complete alert-path comparisons remain useful."
     },
     {
       "site": "baby",
@@ -130,9 +113,9 @@
       "slug": "family-open-top-self-cleaning-litter-boxes",
       "asin": "B0H5X15MHS",
       "status": "documentation-unverified",
-      "checkedAt": "2026-10-24",
-      "pageUpdatedAt": "October 24, 2026",
-      "observedListing": "Zoquid FJ108; UPC 769851533180 / Gray. Current selected US state: Currently unavailable.",
+      "checkedAt": "2026-11-01",
+      "pageUpdatedAt": "November 1, 2026",
+      "observedListing": "Zoquid FJ108 B0H5X15MHS: Currently unavailable in November1 US10001 session; original operating limits remain unresolved.",
       "reason": "No current selected US buybox. Exact original moving path, cat age/weight, detection, floor, litter, cleaning and abnormal-operation instructions not established. Complete-safety and ten-day absence claims not adopted. Purchase paused; manual box retained. Neakasa current M1 Plus/M1 Lite/M9 are distinct candidates, not verified Zoquid successors or automatic fallbacks."
     },
     {
@@ -150,20 +133,10 @@
       "slug": "family-network-attached-storage",
       "asin": "B0H6PB35VV",
       "status": "unavailable",
-      "checkedAt": "2026-09-25",
-      "pageUpdatedAt": "September 25, 2026",
-      "observedListing": "Amazon Page Not Found",
-      "reason": "The exact NAS product page could not be found. The purchase link is paused pending a verified exact listing."
-    },
-    {
-      "site": "network",
-      "slug": "netgear-orbi-970-wifi-7-mesh",
-      "asin": "B0CGJGXFCS",
-      "status": "unavailable",
-      "checkedAt": "2026-09-25",
-      "pageUpdatedAt": "September 25, 2026",
-      "observedListing": "Selected RBE973S three-pack shows a Used: Very Good offer from Atomic Cellular",
-      "reason": "The checked purchase box offered a used three-pack, while this review does not evaluate used-unit condition or that seller. The purchase link is paused until a matching new-unit offer is verified."
+      "checkedAt": "2026-11-01",
+      "pageUpdatedAt": "November 1, 2026",
+      "observedListing": "B0H6PB35VV",
+      "reason": "Original Yxk ASIN still visibly Page Not Found. Separate SynologyDS225+ diskless option has its own drives/DSM/backup requirements."
     },
     {
       "site": "smarthome",
@@ -176,34 +149,14 @@
       "reason": "The purchase link is paused until current model-matched electrical ratings and installation instructions are verified. Two buttons do not establish US two-gang or multi-way fit; current stock and FCC/IP fields do not resolve these requirements."
     },
     {
-      "site": "homeoffice",
-      "slug": "elgato-key-light-neo",
-      "asin": "B0FDBL5MVM",
-      "status": "unavailable",
-      "checkedAt": "2026-09-25",
-      "pageUpdatedAt": "September 25, 2026",
-      "observedListing": "No featured offer; Sellers on Amazon drawer shows only Used - Like New from Gear(4)Less",
-      "reason": "The checked seller list offered a used unit, while this review does not evaluate its condition or that seller. The purchase link is paused until a matching new-unit offer is verified."
-    },
-    {
       "site": "baby",
       "slug": "family-toddler-learning-towers",
       "asin": "B001ECHXVC",
       "status": "unavailable",
-      "checkedAt": "2026-10-19",
-      "pageUpdatedAt": "October 19, 2026",
-      "observedListing": "Little Partners Original Learning Tower LP01411 Natural: Currently unavailable for US ZIP 10001; no restock date",
-      "reason": "The exact Original Learning Tower has no current US offer. Purchase links are paused pending exact-model availability verification. This is not the different Grow N Stow LP01711 recall."
-    },
-    {
-      "site": "network",
-      "slug": "tp-link-deco-be85-wifi-7-mesh",
-      "asin": "B0C4W1L4B3",
-      "status": "unavailable",
-      "checkedAt": "2026-10-19",
-      "pageUpdatedAt": "October 19, 2026",
-      "observedListing": "Deco BE85 BE22000 2 Pack: Currently unavailable for US ZIP 10001; no featured offer or restock date",
-      "reason": "The exact two-pack has no current US offer. Purchase links are paused. The three-pack and BE67 are different purchases and are not substituted under this button."
+      "checkedAt": "2026-10-31",
+      "pageUpdatedAt": "October 31, 2026",
+      "observedListing": "Original LP01411 Natural remains currently unavailable in observed US region",
+      "reason": "Original remains held. A different Explore N Store LP01454 Soft White option uses its own revision, load, step locking and recall checks; it is not restocked Original or recalled Grow N Stow LP01711."
     },
     {
       "site": "baby",
@@ -239,11 +192,11 @@
       "site": "network",
       "slug": "family-hardware-firewall-appliances",
       "asin": "B0F4WXKZRB",
-      "status": "documentation-unverified",
-      "checkedAt": "2026-10-22",
-      "pageUpdatedAt": "October 22, 2026",
-      "observedListing": "UDPTCP0GB RAM0GB SSD: titleN150/twoSFP+/threeRJ45;structuredmodelN100/6L and WaterCooling contents;no exact board documentation matched",
-      "reason": "The purchase link is paused because exact motherboard, BIOS and support documentation could not be matched to inconsistent product fields. Current stock and software-compatibility marketing do not establish a documented complete firewall. This is not a finding that the hardware is unsafe or unavailable."
+      "status": "identity-drift",
+      "checkedAt": "2026-11-01",
+      "pageUpdatedAt": "November 1, 2026",
+      "observedListing": "B0F4WXKZRB",
+      "reason": "Original UDPTCP title N150/dualSFP+ conflicts with N100/6L and WaterCooling fields; exact board unsupported. Independent V1410 is four2.5GbE/noNVMe/noOS,not10G."
     },
     {
       "site": "network",
@@ -256,16 +209,6 @@
       "reason": "The new-purchase link is paused because the US manufacturer marks TL-R600VPN End of Life. Remaining retailer stock is not proof of current support. A replacement must be evaluated as its own model;no precise security-support end date or automatic successor is inferred."
     },
     {
-      "site": "network",
-      "slug": "family-mobile-hotspots",
-      "asin": "B08G8FK29N",
-      "status": "documentation-unverified",
-      "checkedAt": "2026-10-23",
-      "pageUpdatedAt": "October 23, 2026",
-      "observedListing": "R10 4G–10GB current selection advertises ten devices and USB-C; older manufacturer R10 manual states five clients and shows an older charging connector. Exact bundle activation, destinations and validity terms remain unconfirmed.",
-      "reason": "The purchase link is paused until a current model-matched manual resolves the client-capacity and charging revision, and the selected data bundle terms are clear. A current US offer and manufacturer purchase link were observed; this is not an out-of-stock or discontinuation finding."
-    },
-    {
       "site": "smarthome",
       "slug": "family-smart-light-strips",
       "asin": "B0F3HVP518",
@@ -274,16 +217,6 @@
       "pageUpdatedAt": "October 23, 2026",
       "observedListing": "AM-COB-3-2700 selected 2700K /9.84FT: Bluetooth; inconsistent1.96ft/50mm cut interval",
       "reason": "The purchase link is paused until a current model-matched manual confirms the cutting and complete power/control system and the genuine matching app. Current stock does not resolve those documentation conflicts."
-    },
-    {
-      "site": "smarthome",
-      "slug": "family-smart-power-strips",
-      "asin": "B083JKSSR5",
-      "status": "unavailable",
-      "checkedAt": "2026-10-23",
-      "pageUpdatedAt": "October 23, 2026",
-      "observedListing": "Exact KP303 US purchase box offered Used: Like New from Amazon Resale; new-unit offer and shipped hardware revision not established",
-      "reason": "The purchase link is paused until a matching new-unit offer and supplied hardware revision/support are verified. The checked used offer is not evaluated as a new purchase; older US 1.0/1.10 EOS records are not applied to every KP303 revision."
     },
     {
       "site": "smarthome",
@@ -460,9 +393,9 @@
       "slug": "family-motorized-smart-pet-doors",
       "asin": "B0FQJVDJW9",
       "status": "documentation-unverified",
-      "checkedAt": "2026-10-24",
-      "pageUpdatedAt": "October 24, 2026",
-      "observedListing": "AJKJ PT001-2025 / New, White, Large Door & 1 Key. Current selected US state: Only 8 left in stock.",
+      "checkedAt": "2026-11-01",
+      "pageUpdatedAt": "November 1, 2026",
+      "observedListing": "AJKJ PT001-2025, B0FQJVDJW9; November1 primary US offer present, matching installation/movement/key/power-loss instructions not established.",
       "reason": "Current US new offer observed, but exact original installation, movement, key/battery and manual/power-loss instructions not established. Old AJKJ-1 third-party-hosted material is not a verified alias. Purchase paused; no current-stock, defect, recall or EOL conclusion from documentation gap. Retail Frequently returned item flag gives no independently verified failure rate."
     },
     {
@@ -480,19 +413,19 @@
       "slug": "family-pet-nail-grinders",
       "asin": "B0C72S38F3",
       "status": "documentation-unverified",
-      "checkedAt": "2026-10-24",
-      "pageUpdatedAt": "October 24, 2026",
-      "observedListing": "LOPSIC Black selected current listing advertises four LEDs and three speeds; generic model field does not resolve the original revision.",
-      "reason": "A complete original matching the selected four-LED, three-speed version was not established. Older two-LED, two-speed documents do not qualify its guard, bit, charging or care. The exact purchase link is paused pending that match; current availability is not a suitability or discontinuation finding."
+      "checkedAt": "2026-11-01",
+      "pageUpdatedAt": "November 1, 2026",
+      "observedListing": "LOPSIC B0C72S38F3: generic quiet model versus Powerful size/style; LED illumination, three speeds and three bits advertised; exact revision/LED count not established.",
+      "reason": "Current selected offer does not resolve the manufacturer manual, revision, guard/bit, charging and care requirements. An older two-speed document is not a match. Original purchase remains paused; no EOL or safety/comfort guarantee inferred."
     },
     {
       "site": "pet",
       "slug": "family-pet-dryers",
       "asin": "B0CW33KPGJ",
       "status": "documentation-unverified",
-      "checkedAt": "2026-10-24",
-      "pageUpdatedAt": "October 24, 2026",
-      "observedListing": "Xapigo Blue XP-00, generic model dog dryer; current selected US offer observed.",
+      "checkedAt": "2026-11-01",
+      "pageUpdatedAt": "November 1, 2026",
+      "observedListing": "Xapigo XP-00, generic dog dryer model, B0CW33KPGJ; November1 primary US offer present, exact controls and electrical/operating instructions not established.",
       "reason": "A complete original matching the received electrical version, airflow/heat controls, nozzle use and permitted maintenance was not established. Retail stepless, two-speed and ten-setting fields do not supply an operating chart. The exact purchase link is paused pending that match; current stock is not a suitability or discontinuation finding."
     },
     {
@@ -554,6 +487,445 @@
       "pageUpdatedAt": "October 26, 2026",
       "observedListing": "Historical B0D5BGKNBX family identity only; no fresh US seller, stock, delivery or return inspection.",
       "reason": "Manufacturer documents reviewed October 26, 2026 include a current 21930/32843 manual and separate current SKUs. Applicability to the historical selected ASIN is not established. Purchase is paused until the exact model, regional child requirements and instructions match; this is not a recall or whole-family discontinuation finding."
+    },
+    {
+      "site": "homeoffice",
+      "slug": "family-business-usb-c-monitors",
+      "asin": "B0H296K3RT",
+      "status": "documentation-unverified",
+      "checkedAt": "2026-10-28",
+      "pageUpdatedAt": "October 28, 2026",
+      "observedListing": "Historical catalog names Dell P2426H; current exact marketplace identity and bundle not yet rechecked.",
+      "reason": "Dell documents USB-C downstream accessory ports on P2426H, not the P2426HE USB-C upstream laptop-video and host-power path. This anchor is paused for the one-cable hub use case; no unverified HE listing is substituted."
+    },
+    {
+      "site": "homeoffice",
+      "slug": "family-office-paper-shredders",
+      "asin": "B0GY2YMNNM",
+      "status": "unavailable",
+      "checkedAt": "2026-11-01",
+      "pageUpdatedAt": "November 1, 2026",
+      "observedListing": "Locksworth110-sheet AZ1689VC B0GY2YMNNM: November1 US10001 Currently unavailable.",
+      "reason": "No active exact110-sheet US offer was observed. Original purchase remains paused; other capacities are different selections. No discontinuation or automatic alternative inferred."
+    },
+    {
+      "site": "network",
+      "slug": "family-wifi-range-extenders",
+      "asin": "B0H8Z1L236",
+      "status": "identity-drift",
+      "checkedAt": "2026-10-28",
+      "pageUpdatedAt": "October 28, 2026",
+      "observedListing": "US ZIP 10001: title WiFi Repeater Signal Booster NODHSAKDSJNN12314311213, Aodcaopul, used-only primary offer from Amazon Resale.",
+      "reason": "The current title and used-only primary offer do not establish the historical model or supported modes. A matching manufacturer manual is unverified. The exact shortcut is paused; nearby listings and advertised coverage are not verified substitutes."
+    },
+    {
+      "site": "baby",
+      "slug": "family-infant-bath-tubs",
+      "asin": "B0CY23C7QC",
+      "status": "documentation-unverified",
+      "checkedAt": "2026-10-29",
+      "observedListing": "Tavlshero Pink folding tub with floating cushion",
+      "reason": "Matching manufacturer instructions, support stages and folding-lock details remain unverified; current listing uses conflicting branding/stages. Do not use an infant to resolve missing documentation.",
+      "pageUpdatedAt": "October 29, 2026"
+    },
+    {
+      "site": "baby",
+      "slug": "family-nursery-glider-chairs",
+      "asin": "B0G25GVL95",
+      "status": "documentation-unverified",
+      "checkedAt": "2026-10-29",
+      "observedListing": "Chistronger Chenille Black airbag rocker without footrest",
+      "reason": "Exact assembly/load/motion instructions remain unverified and displayed dimensions conflict. A glider/recliner category label does not confirm the mechanism.",
+      "pageUpdatedAt": "October 29, 2026"
+    },
+    {
+      "site": "pet",
+      "slug": "family-dog-ramps",
+      "asin": "B0CG2VNXWG",
+      "status": "documentation-unverified",
+      "checkedAt": "2026-11-01",
+      "observedListing": "HerCcreta WIDE RAMP / TT78, B0CG2VNXWG; November1 primary US offer present, but250lb load versus270lb highlight and17/17.3-inch widths still conflict.",
+      "reason": "Manufacturer instructions for the selected version are unconfirmed. Listing fields disagree about the load limit, dimensions and pack quantity. The separate 71 in selections do not establish specifications for this ASIN.",
+      "pageUpdatedAt": "November 1, 2026"
+    },
+    {
+      "site": "homeoffice",
+      "slug": "family-desktop-label-printers",
+      "asin": "B0GWD6F3X3",
+      "status": "documentation-unverified",
+      "checkedAt": "2026-10-29",
+      "observedListing": "HKHKPI N40 thermal label printer, Pink",
+      "reason": "Matching operating instructions and the software/driver applicability for this HKHKPI-branded N40 are unconfirmed. A different brand’s N40 support entry does not resolve the selected version."
+    },
+    {
+      "site": "homeoffice",
+      "slug": "family-desktop-audio-interfaces",
+      "asin": "B0DGLB5V9X",
+      "status": "documentation-unverified",
+      "checkedAt": "2026-10-29",
+      "pageUpdatedAt": "October 29, 2026",
+      "observedListing": "Kmise two-in/two-out desktop audio interface; exact original driver/manual mapping unresolved",
+      "reason": "The selected Kmise interface has not been matched to applicable original operating and driver documentation. Confirm the exact unit, supported OS, inputs, phantom-power procedure and monitoring route before buying."
+    },
+    {
+      "site": "baby",
+      "slug": "babybjorn-carrier-harmony",
+      "asin": "B0947B35TG",
+      "status": "documentation-unverified",
+      "checkedAt": "2026-10-29",
+      "pageUpdatedAt": "October 29, 2026",
+      "observedListing": "Harmony linked US manual: conflicting 7/8 lb newborn minimum and leg-strap wording",
+      "reason": "The linked US instructions contain different newborn minimums and leg-strap rules, and an older manual differs from the current product-page height range. Match the exact supplied revision and resolve these instructions before buying; this is a documentation hold, not a recall or discontinuation finding."
+    },
+    {
+      "site": "baby",
+      "slug": "babybjorn-carrier-mini-3d-mesh",
+      "asin": "B07DY4BNHV",
+      "status": "documentation-unverified",
+      "checkedAt": "2026-10-29",
+      "pageUpdatedAt": "October 29, 2026",
+      "observedListing": "Mini 3D Mesh current-page 24 lb versus US-manual 25 lb upper limit; exact selected revision unresolved",
+      "reason": "The current sales page and US manual give different upper limits. The exact selected Mini3DMesh revision has not been matched to its supplied instructions. Resolve that version before buying or using an overall range to approve a position; no recall or discontinuation is inferred."
+    },
+    {
+      "site": "baby",
+      "slug": "momcozy-purehug-baby-carrier",
+      "asin": "B0CDQ2KVJD",
+      "status": "documentation-unverified",
+      "checkedAt": "2026-10-29",
+      "pageUpdatedAt": "October 29, 2026",
+      "observedListing": "PureHug Black current-page 44/45 lb limits and back-carry claim without matched original position instructions",
+      "reason": "The current PureHug information has differing 44/45 lb limits and an added back-carry claim that has not been mapped to original instructions for this exact listing. Resolve the received model, material and position-specific manual before buying; other Momcozy carrier manuals are not substitutes."
+    },
+    {
+      "site": "network",
+      "slug": "family-usb-c-ethernet-adapters",
+      "asin": "B082K62S48",
+      "status": "documentation-unverified",
+      "checkedAt": "2026-10-29",
+      "pageUpdatedAt": "October 29, 2026",
+      "observedListing": "Catalog reference: UGREEN 35243 / CM199, 0.3 FT Space Grey USB-C Ethernet adapter. This is a documentation review, not a new retail availability or buying-terms observation.",
+      "reason": "The exact original instructions and controller, driver and operating-system mapping for this 35243 / CM199 adapter remain unverified. Older 50737 material and generated guides for another ASIN do not resolve that gap. The exact purchase link is paused pending matching documentation."
+    },
+    {
+      "site": "smarthome",
+      "slug": "family-smart-dimmer-switches",
+      "asin": "B0BC2MWTR9",
+      "status": "documentation-unverified",
+      "checkedAt": "2026-10-29",
+      "pageUpdatedAt": "October 29, 2026",
+      "observedListing": "Catalog reference: Kasa KS230 KIT V2 main-and-satellite dimmer pair. Documentation review only; current retailer stock, delivery and returns were not rechecked.",
+      "reason": "The matching V2 installation documents differ in box dimensions and terminal-torque guidance. Clarify the applicable instructions for the supplied revision with the manufacturer and qualified installer before purchase or installation. The exact purchase link is paused; no recall or end-of-support finding is implied."
+    },
+    {
+      "site": "smarthome",
+      "slug": "family-outdoor-security-cameras",
+      "asin": "B0GFMHFQST",
+      "status": "documentation-unverified",
+      "checkedAt": "2026-10-29",
+      "pageUpdatedAt": "October 29, 2026",
+      "observedListing": "Catalog reference: GMK CG6 four-camera battery pack described as 2K / 3MP. This records a documentation review, without a fresh retailer or buying-terms observation.",
+      "reason": "The selected 2K / 3MP revision has not been matched to complete original charging, weather and recording-media instructions. Older 1080p material and VicoHome app setup do not resolve the hardware-document gap. The exact purchase link is paused; current stock or discontinuation is not determined here."
+    },
+    {
+      "site": "pet",
+      "slug": "family-pet-strollers",
+      "asin": "B00THLOACM",
+      "status": "unavailable",
+      "checkedAt": "2026-11-01",
+      "pageUpdatedAt": "November 1, 2026",
+      "observedListing": "Exact original selected listing currently unavailable for US 10001 on November 1. Separate current option is identified in the guide; original documentation limits remain.",
+      "reason": "The current manufacturer page and PG8030NZ manual disagree on usable cabin dimensions, and the web copy mixes zipper and NO-ZIP entry descriptions. The exact purchase link is paused until the selected variant, entry and matching cabin requirements are confirmed."
+    },
+    {
+      "site": "baby",
+      "slug": "family-baby-food-storage-containers",
+      "asin": "B075H1X6M7",
+      "status": "unavailable",
+      "checkedAt": "2026-11-01",
+      "pageUpdatedAt": "November 1, 2026",
+      "observedListing": "Exact original selected listing currently unavailable for US 10001 on November 1. Separate current option is identified in the guide; original documentation limits remain.",
+      "reason": "The exact supplied glass-and-lid revision and complete applicable heating and care instructions remain unverified. Plastic Baby Blocks and generic glass-bakeware limits are not substitutes. The exact purchase link is paused until the model, lid and intended handling path are documented."
+    },
+    {
+      "site": "pet",
+      "slug": "family-cat-trees-and-towers",
+      "asin": "B0794T79KM",
+      "status": "documentation-unverified",
+      "checkedAt": "2026-10-29",
+      "pageUpdatedAt": "October 29, 2026",
+      "observedListing": "Catalog reference: Yaheetech 54-inch dark-gray cat tree. Exact retail model mapping remains unresolved, and retailer conditions were not rechecked.",
+      "reason": "The linked assembly scan lacks its cover and model page, so it has not been matched to this exact dark-gray variant. Other 54-inch trees have different dimensions and capacities. The exact purchase link is paused until the model and complete applicable instructions are confirmed."
+    },
+    {
+      "site": "homeoffice",
+      "slug": "satechi-dual-vertical-laptop-stand",
+      "asin": "B09WY2RLQG",
+      "status": "documentation-unverified",
+      "checkedAt": "2026-10-31",
+      "pageUpdatedAt": "October 31, 2026",
+      "observedListing": "ST-ADVSM Space Gray, UPC 879961007058. Retail bullets and actual dimension image show 0.4/0.6in; current manufacturer FAQ shows 12/20 mm. New third-party sellers were visible, but seller return terms remain unresolved.",
+      "reason": "Slot dimensions conflict between the manufacturer and this listing. Confirm the supplied openings before choosing the original stand. A separately identified OMOTON adjustable dual-slot option is available for two devices within its own 14–42mm range."
+    },
+    {
+      "site": "pet",
+      "slug": "family-portable-dog-water-bottles",
+      "asin": "B07C79C5BT",
+      "status": "unavailable",
+      "checkedAt": "2026-10-31",
+      "pageUpdatedAt": "October 31, 2026",
+      "observedListing": "MalsiPree Dog Water Bottle Dispenser - 12 oz Blue, Leak-Proof",
+      "reason": "Original selection was currently unavailable for the observed US region. The guide explicitly names a different ASIN as an alternative; this original is not represented as restocked."
+    },
+    {
+      "site": "pet",
+      "slug": "family-dog-bath-sprayers",
+      "asin": "B0D9BJXSSF",
+      "status": "unavailable",
+      "checkedAt": "2026-10-31",
+      "pageUpdatedAt": "October 31, 2026",
+      "observedListing": "Dog Shower Sprayer with 8ft Hose – High Pressure Dog Shower Attachment for Bathing & Grooming – Pet Shower Hose Sprayer with Indoor/Outdoor Adapters",
+      "reason": "Original selection was currently unavailable for the observed US region. The guide explicitly names a different ASIN as an alternative; this original is not represented as restocked."
+    },
+    {
+      "site": "smarthome",
+      "slug": "family-robot-lawn-mowers",
+      "asin": "B0G3CBW2H8",
+      "status": "identity-drift",
+      "checkedAt": "2026-10-31",
+      "pageUpdatedAt": "October 31, 2026",
+      "observedListing": "Pro 800 / B0GSFGZ9D7",
+      "reason": "Requested original Ultra 2000 reference selected a different Pro 800 ASIN. The guide explicitly compares a separate 2000 AWD; the original is not represented as the same product or qualified."
+    },
+    {
+      "site": "network",
+      "slug": "family-fiber-cleaning-kits",
+      "asin": "B0BLRWC713",
+      "status": "identity-drift",
+      "checkedAt": "2026-10-31",
+      "pageUpdatedAt": "October 31, 2026",
+      "observedListing": "YICIZOL MR200/400x / MR400 / YC-PEN conflicting fields",
+      "reason": "Original YICIZOL title, model and kit-content signals conflict. The guide explicitly compares a different, narrower Fluke 2.5 mm cleaning box; no original microscope or universal-cleaner qualification is claimed."
+    },
+    {
+      "site": "homeoffice",
+      "slug": "family-wireless-presentation-clickers",
+      "asin": "B09DQ7872W",
+      "status": "documentation-unverified",
+      "checkedAt": "2026-10-31",
+      "pageUpdatedAt": "October 31, 2026",
+      "observedListing": "QUI BK600; optical class unknown",
+      "reason": "QUI BK600 retail model is identified, but its optical class and matching laser instructions remain unverified. The guide names a separate Logitech R400 with its own documented controls and laser boundary; no QUI optical qualification is inferred."
+    },
+    {
+      "site": "network",
+      "slug": "family-ethernet-surge-protectors",
+      "asin": "B07GBLFFNK",
+      "status": "unavailable",
+      "checkedAt": "2026-10-31",
+      "pageUpdatedAt": "October 31, 2026",
+      "observedListing": "Tupavco TP302 two-pack; currently unavailable",
+      "reason": "Original Tupavco TP302 two-pack is currently unavailable in the observed US region. The guide names a different single-unit ETH-SP-G2 option with separate grounding, power and quantity requirements; the original is not treated as restocked."
+    },
+    {
+      "site": "pet",
+      "slug": "family-dog-boots",
+      "asin": "B0GG9ZZCBC",
+      "status": "unavailable",
+      "checkedAt": "2026-11-01",
+      "pageUpdatedAt": "November 1, 2026",
+      "observedListing": "Original Dog Shoes for Hot Pavement - Comfortable Paw Protection for Medium & Large Dogs, Adjustable Strap & Non-Slip, Easy-Clean, Outdoor Sports Boots, Dog Booties for Summer Rain (Green, M) — Page Not Found",
+      "reason": "The original exact product page returned Page Not Found in the observed US session. Its identity and offer could not be verified; this guard is a purchase hold, not proof of stock unavailability or end of life. A separately named Ruffwear ASIN is reviewed as a different alternative."
+    },
+    {
+      "site": "network",
+      "slug": "family-fiber-optic-power-meters",
+      "asin": "B09MLP5GYH",
+      "status": "documentation-unverified",
+      "checkedAt": "2026-10-31",
+      "pageUpdatedAt": "October 31, 2026",
+      "observedListing": "B09MLP5GYH",
+      "reason": "OFCN combined meter/VFL has unresolved exact calibration and laser specification (2MV and incomplete wavelength fields). A separate Jonard FPM-50A meter is documented; it does not inherit the original laser or FPM-55 storage functions."
+    },
+    {
+      "site": "network",
+      "slug": "family-fiber-visual-fault-locators",
+      "asin": "B0G58HNK8W",
+      "status": "documentation-unverified",
+      "checkedAt": "2026-10-31",
+      "pageUpdatedAt": "October 31, 2026",
+      "observedListing": "B0G58HNK8W",
+      "reason": "Trileria HT-50 foldout lacks matching laser class/output specification despite retail less-than-5mW and distance claims. Different Fluke VisiFault named with its own Class2 instructions and adapter requirements."
+    },
+    {
+      "site": "network",
+      "slug": "family-mini-ups-for-routers",
+      "asin": "B0FHH5LTQK",
+      "status": "documentation-unverified",
+      "checkedAt": "2026-10-31",
+      "pageUpdatedAt": "October 31, 2026",
+      "observedListing": "B0FHH5LTQK",
+      "reason": "Sorandy exact output polarity, barrel/pinout, power allocation and PoE negotiation remain unverified. A different AC APC BE600M1 route retains device original adapters; no directDC/PoE substitution is implied."
+    },
+    {
+      "site": "network",
+      "slug": "family-sfp28-network-switches",
+      "asin": "B0FSTKNF74",
+      "status": "identity-drift",
+      "checkedAt": "2026-10-31",
+      "pageUpdatedAt": "October 31, 2026",
+      "observedListing": "B0FSTKNF74",
+      "reason": "Retail CRS812 title conflicts with Halny HL-4GMV2-US manufacturer/model fields and manufacturer port specifications. Different exact CRS510-8XS-2XQ-IN is independently selected; original not qualified."
+    },
+    {
+      "site": "smarthome",
+      "slug": "family-smart-aroma-diffusers",
+      "asin": "B0GSFHFQBF",
+      "status": "unavailable",
+      "checkedAt": "2026-11-01",
+      "pageUpdatedAt": "November 1, 2026",
+      "observedListing": "Original Waterless Essential Oil Diffuser, Smart App Controlled Scent Diffuser for Large Room, Covers Up to 4000 Sq Ft, Quiet Aroma Diffuser for Home Hotel Office,360° Ambient Light (Silver, Desktop) — Page Not Found",
+      "reason": "The original exact product page returned Page Not Found in the observed US session. Its identity and offer could not be verified; this guard is a purchase hold, not proof of stock unavailability or end of life. A separately named Pura ASIN is reviewed as a different alternative."
+    },
+    {
+      "site": "baby",
+      "slug": "family-stroller-footmuffs",
+      "asin": "B0BCC1ZLS3",
+      "status": "identity-drift",
+      "checkedAt": "2026-11-01",
+      "pageUpdatedAt": "November 1, 2026",
+      "observedListing": "Original reference redirects to B07W858MXB, PlushPOD Black Plush 0–18M",
+      "reason": "Original B0BCC1ZLS3 navigation selected a different ASIN and model. Original identity is not verified; no out-of-stock, restock or discontinuation claim. A separately named PlushPOD is conditionally reviewed as a different selection."
+    },
+    {
+      "site": "smarthome",
+      "slug": "family-in-wall-smart-relays",
+      "asin": "B0DZHZCL6Z",
+      "status": "documentation-unverified",
+      "checkedAt": "2026-11-01",
+      "pageUpdatedAt": "November 1, 2026",
+      "observedListing": "Selected US title now explicitly names Shelly1Gen4UL15A; Shelly USA offer, model3800238074609/part460 and expanded returns observed.",
+      "reason": "The US retail identity is clearer, but the manufacturer US page still links or copies EU16A installation material. Obtain the applicable US instructions with a qualified electrician before this fixed-wiring purchase. No EU electrical diagram or rating is applied to the selected US UL-labelled model."
+    },
+    {
+      "site": "baby",
+      "slug": "family-childproof-stove-knob-covers",
+      "asin": "B0GTT22D4M",
+      "status": "unavailable",
+      "checkedAt": "2026-11-01",
+      "pageUpdatedAt": "November 1, 2026",
+      "observedListing": "Huggful five-pack: Currently unavailable",
+      "reason": "No active offer in the observed US delivery session. Original link remains paused; this does not establish discontinuation. Fit, heat and installation limits remain unresolved."
+    },
+    {
+      "site": "baby",
+      "slug": "family-crib-mobiles",
+      "asin": "B0GTTJX9Z9",
+      "status": "unavailable",
+      "checkedAt": "2026-11-01",
+      "pageUpdatedAt": "November 1, 2026",
+      "observedListing": "Original ZFSZSY reference: Page Not Found",
+      "reason": "The original exact page could not be found, so identity and offer were not verified. This is a purchase hold, not ordinary stock-unavailability or discontinuation evidence. No replacement silently selected."
+    },
+    {
+      "site": "smarthome",
+      "slug": "family-smart-recessed-lights",
+      "asin": "B0F2Y8J62K",
+      "status": "identity-drift",
+      "checkedAt": "2026-11-01",
+      "pageUpdatedAt": "November 1, 2026",
+      "observedListing": "24Pack Smart Recessed Lighting 4 Inch RGBCW Color Changing 12W LED Downlight with Junction Box,1080 Lumen Recessed Ceiling Light Compatible with Alexa,Dimmable by Bluetooth Control",
+      "reason": "November 1, 2026: the historical URL B0F2Y8J62K rendered selected ASIN B0FMY5ZFWR. Original exact identity is not verified. Current different selection SikSog TD4C001, Black 24-pack, 4-inch 12 W / B0FMY5ZFWR is identified separately in the guide; this does not qualify the original or prove end of life."
+    },
+    {
+      "site": "smarthome",
+      "slug": "family-smart-wall-control-panels",
+      "asin": "B07C6LX1NF",
+      "status": "unavailable",
+      "checkedAt": "2026-11-01",
+      "pageUpdatedAt": "November 1, 2026",
+      "observedListing": "Brilliant Smart Home Control (2-Switch Panel) — Alexa Built-In & Compatible with Ring, Sonos, Hue, Google Nest, Wemo, SmartThings, Apple HomeKit — In-Wall Touchscreen Control for Lights, Music, & More",
+      "reason": "November 1, 2026: original Brilliant two-switch selection showed Currently unavailable; no discontinuation inferred. Current different selection SONOFF NSPanel US-format, White one pack (not Pro) / B0BNMRHYG5 is identified separately in the guide; this does not qualify the original or prove end of life."
+    },
+    {
+      "site": "smarthome",
+      "slug": "family-smart-glass-break-sensors",
+      "asin": "B08TG6NCTS",
+      "status": "unavailable",
+      "checkedAt": "2026-11-01",
+      "pageUpdatedAt": "November 1, 2026",
+      "observedListing": "Ring Alarm Glass Break Sensor – 1-pack",
+      "reason": "November 1, 2026: original Ring Alarm one-pack B08TG6NCTS showed Currently unavailable. Current B0FP6FV2XX is a separately identified product. Current different selection Ring Glass Break Sensor, one pack, Sidewalk / Z-Wave selection / B0FP6FV2XX is identified separately in the guide; this does not qualify the original or prove end of life."
+    },
+    {
+      "site": "smarthome",
+      "slug": "family-smart-slow-cookers",
+      "asin": "B07V7GQBB5",
+      "status": "documentation-unverified",
+      "checkedAt": "2026-11-01",
+      "pageUpdatedAt": "November 1, 2026",
+      "observedListing": "Crock-Pot 6 Quart Programmable Slow Cooker and Food Warmer Works with Alexa, Stainless Steel (2139005)",
+      "reason": "November 1, 2026: original Alexa model 2139005 showed 220 V / 880 W fields and no confirmed active US offer. Electrical identity remains unresolved. Current different selection Crock-Pot CPSCVC60LL-S Cook & Carry, 6 qt Stainless Steel / B004P2NG0K is identified separately in the guide; this does not qualify the original or prove end of life."
+    },
+    {
+      "site": "homeoffice",
+      "slug": "family-active-sitting-stools",
+      "asin": "B0GY5QT89Z",
+      "status": "unavailable",
+      "checkedAt": "2026-11-01",
+      "pageUpdatedAt": "November 1, 2026",
+      "observedListing": "Tervo Model W - Wobble Stool - Ergonomic Standing Desk Chair - Sit Active | Height adjustable sit to stand balance chair for adults. Ergonomic tilting standing desk stool for office active sitting",
+      "reason": "November 1, 2026: original Tervo Model W selection showed Currently unavailable; no discontinuation or support-life inference. Current different selection UPLIFT Engage CHR474, Graphite / B0FVHHWC4F is identified separately in the guide; this does not qualify the original or prove end of life."
+    },
+    {
+      "site": "homeoffice",
+      "slug": "family-ink-tank-printers",
+      "asin": "B0BL466Y41",
+      "status": "unavailable",
+      "checkedAt": "2026-11-01",
+      "pageUpdatedAt": "November 1, 2026",
+      "observedListing": "HP Smart Tank 5101 Wireless All-in-One Refillable Printer, Scanner, Copier with 2 Years of Ink Included, Wireless (2.4ghz only) Printer-for-Home use (1F3Y0A)",
+      "reason": "November1,2026: original HP Smart Tank5101 B0BL466Y41 selected page showed Currently unavailable; no active exact offer verified and no EOL inferred. Current different selection Canon PIXMA MegaTank G3270 Black, 5805C002 / B0BSMSYM9N is identified separately in the guide; this does not qualify the original or prove end of life."
+    },
+    {
+      "site": "pet",
+      "slug": "family-cooling-pet-beds",
+      "asin": "B0G1Z1RP4B",
+      "status": "identity-drift",
+      "checkedAt": "2026-11-01",
+      "pageUpdatedAt": "November 1, 2026",
+      "observedListing": "Direct ASIN selects Black Sherpa20×19×6in; historical Cooling Blue not matched. Frost Blue is another ASIN with Sherpa wording.",
+      "reason": "The current selected construction does not establish the historical Cooling Blue fabric. The old shortcut is paused until intended variant and care instructions agree; color or a shared product family is not cooling evidence. Keep a suitable ordinary bed and environment when they already meet the need."
+    },
+    {
+      "site": "network",
+      "slug": "family-poe-splitters",
+      "asin": "B08HS4NT13",
+      "status": "documentation-unverified",
+      "checkedAt": "2026-11-01",
+      "pageUpdatedAt": "November 1, 2026",
+      "observedListing": "B08HS4NT13",
+      "reason": "REVOTECH PS5712TG exact output polarity and original input/power allocation remain unverified. Independent af POE10R is lower power12V1A,not a24W substitute."
+    },
+    {
+      "site": "baby",
+      "slug": "family-travel-cribs-playards",
+      "asin": "B00AKKDSNG",
+      "status": "unavailable",
+      "checkedAt": "2026-11-01",
+      "pageUpdatedAt": "November 1, 2026",
+      "observedListing": "Original Guava Lotus B00AKKDSNG detail URL returned Page Not Found",
+      "reason": "The original linked detail page is unavailable in the current US observation; no discontinuation claim. A separately named Chicco Alfa Lite Dove option has its own model, mattress, attachment and stopping limits; this does not qualify the old Lotus identity."
+    },
+    {
+      "site": "network",
+      "slug": "asus-zenwifi-bt6-wifi-7-mesh",
+      "asin": "B0DHWBW4MZ",
+      "status": "documentation-unverified",
+      "checkedAt": "2026-11-01",
+      "pageUpdatedAt": "November 1, 2026",
+      "observedListing": "No featured offer. One New two-pack from Midnight Raven Systems,shipped by that seller,Nov17–23 delivery; complete returns/warranty eligibility not verified.",
+      "reason": "The observed New third-party offer does not yet establish a complete return and ownership path. Exact shortcut paused; not a finding of no stock,EOL or misconduct. Compare the actual ASUS port layout and separately documented alternatives."
     }
   ]
 }

@@ -1,9 +1,16 @@
 import Image from "next/image";
+import { editorialImageAlt, isEditorialCategoryImage, editorialCategoryImageCaption, editorialImageForDisplay } from "@/lib/editorial-image";
 import type { CSSProperties } from "react";
 import { DecisionReference } from "@/components/DecisionReference";
+import { GuideTaskAlternative } from "@/components/GuideTaskAlternative";
+import { GuideTaskPaths } from "@/components/GuideTaskPaths";
+import { taskGuidePaths } from "@/lib/task-guide-paths";
+import { GuideMerchant21Routes } from "@/components/GuideMerchant21Routes";
+import { GuideMerchant22Routes } from "@/components/GuideMerchant22Routes";
 import { FitWorksheet } from "@/components/FitWorksheet";
 import { ListingIdentityNote } from "@/components/ListingIdentityNote";
 import { fitWorksheetForGuide } from "@/lib/fit-worksheet";
+import { isBlockedAmazonSource } from "@/lib/amazon-offer-blocks";
 import { UpgradePartsReference } from "@/components/UpgradePartsReference";
 import { miniPcProfiles } from "@/lib/compatibility-data";
 import { entryTopic } from "@/lib/discovery-topics";
@@ -234,6 +241,8 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
     rawGuide.familySlug ? siteGuideFamily(site.key, rawGuide.familySlug) : [rawGuide],
   );
   const tailoredGuide = Boolean(guide.decisionLayout || focusedSearchAnswer(site.key, "guide", slug));
+  const authoredTaskPaths = taskGuidePaths(site.key, guide.slug);
+  const taskOnly = guide.purchaseFlow === "task-links" || Boolean(authoredTaskPaths);
   const searchOpportunity = findSearchOpportunity(site.key, "guide", slug);
   const effectiveUpdatedAt = effectiveContentUpdatedAt(guide.updatedAt, searchOpportunity?.updatedAt);
   const effectiveGuide = effectiveUpdatedAt === guide.updatedAt ? guide : { ...guide, updatedAt: effectiveUpdatedAt };
@@ -352,9 +361,9 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
           <Link className="underline underline-offset-4" href="/about">Prepared by the {site.name} editorial desk</Link>
           {effectiveUpdatedAt ? <span>Updated {effectiveUpdatedAt}</span> : null}
         </div>
-        <section className="mt-8 rounded-md border border-[var(--brand)] bg-[var(--brand-soft)] p-5" aria-labelledby="guide-quick-answer" id={!dedicatedAnswer ? "guide-section-1" : undefined}>
+        <section className="mt-8 scroll-mt-24 rounded-md border border-[var(--brand)] bg-[var(--brand-soft)] p-5" aria-labelledby="guide-quick-answer" id={!dedicatedAnswer ? "guide-section-1" : undefined}>
           <p className="eyebrow">Quick answer</p>
-          <h2 className="mt-2 text-xl font-bold" id="guide-quick-answer">{answerHeading}</h2>
+          <h2 className="mt-2 scroll-mt-24 text-xl font-bold" id="guide-quick-answer">{answerHeading}</h2>
           <p className="mt-3 leading-7 text-[var(--text)]">{directAnswer}</p>
         </section>
         <details className="guide-toc mt-6"><summary>On this page</summary><nav aria-label="Guide contents"><ul><li><a href="#guide-quick-answer">Quick answer</a></li>{guide.comparisonTable ? <li><a href="#guide-comparison">Decision table</a></li> : null}{worksheetKind ? <li><a href="#fit-worksheet">Measurement worksheet</a></li> : null}{plannerTopic ? <li><a href="#compatibility-checker">Check my setup</a></li> : null}{plannerTopic === "mini-pcs" ? <li><a href="#parts-reference">Parts, quantities and exact-FRU steps</a></li> : null}{guide.sections.map((section, index) => <li key={`${index}-${section.heading}`}><a href={`#guide-section-${index + 1}`}>{buyerFacingHeading(section.heading)}</a></li>)}</ul></nav></details>
@@ -377,7 +386,8 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
           </section>
         ) : null}
         <GuideDecisionTable table={guide.comparisonTable} />
-        {guide.decisionPurchase && !plannerTopic && guide.purchaseFlow !== "task-links" && decisionPurchaseIdentity && decisionPurchaseOffer ? (
+        <GuideTaskPaths site={site.key} slug={guide.slug} />
+        {guide.decisionPurchase && !plannerTopic && !taskOnly && decisionPurchaseIdentity && decisionPurchaseOffer ? (
           <aside className="mt-4 rounded-md border border-[var(--border)] bg-white p-5" aria-label={`Next step for ${guide.decisionPurchase.model}`} data-guide-decision-purchase="true">
             <h2 className="text-lg font-bold">When {guide.decisionPurchase.model} fits</h2>
             <p className="mt-2 text-sm leading-6">{guide.decisionPurchase.qualifies}</p>
@@ -386,20 +396,29 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             <p className="mt-2 text-sm leading-6 text-[var(--muted)]">{guide.decisionPurchase.keep}</p>
           </aside>
         ) : null}
-        {requiresTopologyChoice ? <section className="mt-5 rounded-md border border-[var(--border)] bg-white p-5" aria-label="Next step for your Xfinity topology"><h2 className="text-xl font-bold">Choose the route that matches your plan</h2><ul className="mt-3 list-disc space-y-3 pl-5 text-sm leading-6"><li>Gateway or existing router already meets the job: keep it; no purchase is required.</li><li>Keep the gateway as a modem and add routing or Wi-Fi: <Link className="font-bold underline" href="/guides/deco-be63-vs-be67-vs-be85-buying-guide">compare router and mesh ports, backhaul and pack size</Link>.</li><li>Replace the modem only after service approval: <Link className="font-bold underline" href="/best/best-cable-modems-for-xfinity-spectrum-cox">review the exact modem candidates and provider conditions</Link>. A comparison entry does not approve it for your address or voice plan.</li><li>Gateway model, service requirements or network role unclear: resolve those first with Xfinity and the device documentation.</li></ul></section> : null}
+        {requiresTopologyChoice ? <section className="mt-5 rounded-md border border-[var(--border)] bg-white p-5" aria-label="Next step for your Xfinity topology" data-guide-task-paths="true"><h2 className="text-xl font-bold">Choose the route that matches your plan</h2><ul className="mt-3 list-disc space-y-3 pl-5 text-sm leading-6"><li>Gateway or existing router already meets the job: keep it; no purchase is required.</li><li>Keep the gateway as a modem and add routing or Wi-Fi: <Link className="font-bold underline" href="/guides/deco-be63-vs-be67-vs-be85-buying-guide">compare router and mesh ports, backhaul and pack size</Link>.</li><li>Replace the modem only after service approval: <Link className="font-bold underline" href="/best/best-cable-modems-for-xfinity-spectrum-cox">review the exact modem candidates and provider conditions</Link>. A comparison entry does not approve it for your address or voice plan.</li><li>Gateway model, service requirements or network role unclear: resolve those first with Xfinity and the device documentation.</li></ul></section> : null}
         <DecisionReference site={site.key} slug={guide.slug} />
-        {site.key === "network" && guide.slug === "pass-through-ethernet-crimping-tools-buying-guide" && amazonFamilyIdentity && amazonFamilyOffer ? <div className="mt-4 rounded-md border border-[var(--border)] p-4" aria-label="Exact crimper retailer option"><p className="mb-3 text-sm leading-6">Need the tool after matching your connector and cable? This option is the VDV226-110 crimper. Confirm included pieces; the connector examples above are separate parts.</p><AffiliateButton site={site.key} product={amazonFamilyIdentity} offer={{...amazonFamilyOffer,label:"Check Klein VDV226-110 on Amazon"}} position="guide-connector-matrix-exact-tool" resolveCreatorsListing={false} /></div> : null}
+        <GuideTaskAlternative site={site.key} slug={guide.slug} />
+        <GuideMerchant21Routes site={site.key} slug={guide.slug} />
+        <GuideMerchant22Routes site={site.key} slug={guide.slug} />
+        {site.key === "network" && guide.slug === "pass-through-ethernet-crimping-tools-buying-guide" && amazonFamilyIdentity && amazonFamilyOffer ? <aside className="mt-4 rounded-md border border-[var(--border)] p-4" aria-label="Exact crimper retailer option" data-guide-decision-purchase="true">
+          <h2 className="text-lg font-bold">Compare VDV226-110 after matching the connector</h2>
+          <p className="mt-3 text-sm leading-6">Consider this crimper after matching the actual cable and a documented Klein Pass-Thru plug from the reference above. Confirm the selected tool and included pieces.</p>
+          <p className="mt-3 text-sm leading-6">Stop if the plug system, conductor or diameter fit, or termination procedure remains unclear. Compatibility with other RJ45 systems is not established by the cable category.</p>
+          <div className="mt-3"><AffiliateButton site={site.key} product={amazonFamilyIdentity} offer={{...amazonFamilyOffer,label:"Check Klein VDV226-110 on Amazon"}} position="guide-decision-exact-model" modelLabel="Klein VDV226-110" resolveCreatorsListing={false} /></div>
+          <p className="mt-3 text-sm leading-6">Keep factory-made patch leads when they already meet the job. The connector packs and replacement blades listed above are separate parts; do not assume they are included with the tool.</p>
+        </aside> : null}
         <div id="guide-commerce-start" className="h-px" aria-hidden="true" />
         {worksheetKind ? <FitWorksheet kind={worksheetKind} /> : null}
         <article className="prose-lite mt-8">
           {guide.sections.map((section, index) => !dedicatedAnswer && index === 0 ? null : (
-            <section id={`guide-section-${index + 1}`} key={section.heading}>
+            <section className="scroll-mt-24" id={`guide-section-${index + 1}`} key={section.heading}>
               <h2>{buyerFacingHeading(section.heading)}</h2>
               <p>{buyerFacingBody(section.body)}</p>
             </section>
           ))}
         </article>
-        {!plannerTopic && !requiresTopologyChoice && guide.purchaseFlow !== "task-links" && (amazonFamilyBlock || (!amazonFamilyProduct && !cjFamilyAffiliateOffer && (topProduct || topRoundup || commerceProduct))) ? (
+        {!plannerTopic && !requiresTopologyChoice && !taskOnly && (amazonFamilyBlock || (!amazonFamilyProduct && !cjFamilyAffiliateOffer && (topProduct || topRoundup || commerceProduct))) ? (
           <section
             className="mt-4 rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-4 sm:mt-5 sm:p-5"
             aria-label="Retailer options after the guide"
@@ -410,15 +429,15 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             <div className="mt-2 grid gap-3">
               <div className="min-w-0">
                 <h2 className="text-lg font-bold sm:text-xl">
-                  {amazonFamilyProduct?.title ?? topProduct?.name ?? commerceProduct?.name ?? "Compare the short list"}
+                  {amazonFamilyProduct?.title ?? commerceProduct?.name ?? topProduct?.name ?? "Compare the short list"}
                 </h2>
                 {amazonFamilyBlock ? (
                   <p className="mt-2 max-w-xl text-sm leading-5 text-[var(--muted)]">
-                    Listing checked {amazonFamilyBlock.checkedAt}: {amazonFamilyBlock.reason}
+                    Purchase path reviewed {amazonFamilyBlock.checkedAt}: {amazonFamilyBlock.reason}
                   </p>
                 ) : commerceIsAlternative && commerceProduct && !amazonFamilyOffer && !cjFamilyAffiliateOffer ? (
                   <p className="mt-2 max-w-xl text-sm leading-5 text-[var(--muted)]">
-                    Different product: the exact {topProduct?.name} link is paused. This button is for the verified alternative {commerceProduct.name}.
+                    Different product: the exact {topProduct?.name} link is paused. This retailer option is {commerceProduct.name}; check its own specifications and buying terms.
                   </p>
                 ) : commercePathPaused ? (
                   <p className="mt-2 max-w-xl text-sm leading-5 text-[var(--muted)]">
@@ -428,13 +447,13 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
               </div>
               <div className="flex min-w-0 flex-wrap gap-2">
                 {amazonFamilyBlock ? null : amazonFamilyProduct && amazonFamilyIdentity && amazonFamilyOffer ? (
-                  <AffiliateButton site={site.key} product={amazonFamilyIdentity} offer={amazonFamilyOffer} position="guide-retailer-family-amazon" resolveCreatorsListing={false} sticky stickyStartId="guide-commerce-start" />
+                  <AffiliateButton site={site.key} product={amazonFamilyIdentity} offer={amazonFamilyOffer} modelLabel={familyDecisionMatches ? guide.decisionPurchase?.model : undefined} position="guide-retailer-family-amazon" resolveCreatorsListing={false} sticky stickyStartId="guide-commerce-start" />
                 ) : cjFamilyOffer && cjFamilyIdentity && cjFamilyAffiliateOffer ? (
                   <AffiliateButton site={site.key} product={cjFamilyIdentity} offer={cjFamilyAffiliateOffer} position="guide-retailer-family-cj" resolveCreatorsListing={false} sticky stickyStartId="guide-commerce-start" />
                 ) : commerceProduct ? (
                   <AffiliateButtonGroup site={site.key} product={commerceProduct} position={commerceIsAlternative ? "guide-retailer-verified-alternative" : "guide-retailer-primary"} limit={1} sticky stickyStartId="guide-commerce-start" />
                 ) : null}
-                {topProduct ? <Link className="button-secondary" href={`/reviews/${topProduct.slug}`}>Review the product</Link> : null}
+                {topProduct ? <Link className="button-secondary" href={`/reviews/${topProduct.slug}`}>{commerceIsAlternative ? "Review the original product" : "Review the product"}</Link> : null}
                 {topRoundup ? <Link className="button-secondary" href={`/best/${topRoundup.slug}`}>Compare picks</Link> : null}
               </div>
             </div>
@@ -451,11 +470,11 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             </p>
           </section>
         ) : null}
-        {site.key === "homeoffice" || site.key === "network" ? <aside className="discovery-card mt-8"><h2>Continue with this decision</h2><p><Link href={discoveryTopic === "other" ? "/search" : `/search?topic=${discoveryTopic}`}>Browse the model references and comparisons</Link></p>{plannerTopic ? <p><Link href={`/compatibility/${plannerTopic}`}>Check compatibility, missing parts and sources</Link></p> : null}</aside> : null}
+        {(site.key === "homeoffice" || site.key === "network") && !["desktop-teleprompters-buying-guide", "fido-hardware-security-keys-buying-guide"].includes(guide.slug) ? <aside className="discovery-card mt-8"><h2>Continue with this decision</h2><p><Link href={discoveryTopic === "other" ? "/search" : `/search?topic=${discoveryTopic}`}>Browse the model references and comparisons</Link></p>{plannerTopic ? <p><Link href={`/compatibility/${plannerTopic}`}>Check compatibility, missing parts and sources</Link></p> : null}</aside> : null}
         {amazonFamilyProduct && amazonFamilyIdentity && amazonFamilyOffer ? (
-          <section className="mt-10 rounded-md border border-[var(--border)] bg-white p-5" aria-labelledby="amazon-family-listing">
+          <section className="mt-10 rounded-md border border-[var(--border)] bg-white p-5" aria-labelledby="amazon-family-listing" data-guide-family-purchase-reference="true">
             <p className="eyebrow">Amazon listing reference</p>
-            <h2 className="mt-3 text-2xl font-bold" id="amazon-family-listing">Check this exact product</h2>
+            <h2 className="mt-3 scroll-mt-24 text-2xl font-bold" id="amazon-family-listing">Check this exact product</h2>
             <p className="mt-4 text-lg font-bold leading-7">{amazonFamilyProduct.title}</p>
             <dl className="mt-4 grid gap-3 text-sm sm:grid-cols-3">
               <div>
@@ -467,23 +486,24 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
                 <dd className="mt-1 text-[var(--muted)]">{amazonFamilyProduct.brand}</dd>
               </div>
               <div>
-                <dt className="font-bold">Identity last checked</dt>
+                <dt className="font-bold">Catalog identity record</dt>
                 <dd className="mt-1 text-[var(--muted)]">{new Date(amazonFamilyProduct.verifiedAt).toLocaleDateString("en-US", { timeZone: "UTC" })}</dd>
               </div>
             </dl>
             <ListingIdentityNote checkedAt={amazonFamilyProduct.verifiedAt} />
+            {guide.sources?.length ? <a className="mt-2 inline-block text-sm font-semibold underline" href="#guide-sources">Read the separately dated source and offer observations</a> : null}
             <p className="mt-4 max-w-3xl text-sm leading-6 text-[var(--muted)]">
               Compare the current title, ASIN, variant, seller, stock, shipping, price, and return path before ordering.
             </p>
             <div className="mt-5">
-              <AffiliateButton site={site.key} product={amazonFamilyIdentity} offer={amazonFamilyOffer} position="family-guide-amazon-anchor" resolveCreatorsListing={false} sticky stickyStartId="guide-commerce-start" />
+              <AffiliateButton site={site.key} product={amazonFamilyIdentity} offer={amazonFamilyOffer} modelLabel={familyDecisionMatches ? guide.decisionPurchase?.model : undefined} position="family-guide-amazon-anchor" resolveCreatorsListing={false} sticky stickyStartId="guide-commerce-start" />
             </div>
           </section>
         ) : null}
         {cjFamilyOffer && cjFamilyIdentity && cjFamilyAffiliateOffer ? (
-          <section className="mt-10 rounded-md border border-[var(--accent)] bg-[var(--accent-soft)] p-5" aria-labelledby="cj-family-listing">
+          <section className="mt-10 rounded-md border border-[var(--accent)] bg-[var(--accent-soft)] p-5" aria-labelledby="cj-family-listing" data-sticky-commerce-suppress>
             <p className="eyebrow">Authorized direct-brand alternative</p>
-            <h2 className="mt-3 text-2xl font-bold" id="cj-family-listing">Compare one exact Bc Babycare variant</h2>
+            <h2 className="mt-3 scroll-mt-24 text-2xl font-bold" id="cj-family-listing">Compare one exact Bc Babycare variant</h2>
             <p className="mt-4 text-lg font-bold leading-7">{cjFamilyIdentity.name}</p>
             <dl className="mt-4 grid gap-3 text-sm sm:grid-cols-3">
               <div>
@@ -509,15 +529,22 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
           </section>
         ) : null}
         {guide.sources?.length ? (
-          <section className="mt-10 rounded-md border border-[var(--border)] bg-white p-5">
+          <section className="mt-10 scroll-mt-24 rounded-md border border-[var(--border)] bg-white p-5" id="guide-sources">
             <p className="eyebrow">Sources and evidence</p>
             <h2 className="mt-3 text-2xl font-bold">References used for this guide</h2>
             <ul className="mt-4 space-y-4">
               {guide.sources.map((source) => (
                 <li key={source.url}>
-                  <a className="font-bold text-[var(--brand-strong)] underline-offset-4 hover:underline" href={source.url} rel="noopener noreferrer" target="_blank">
-                    {source.name}
-                  </a>
+                  {isBlockedAmazonSource(site.key, source.url) ? (
+                    <span data-source-link-paused="true" className="font-bold text-[var(--text)]">
+                      {source.name}
+                      <span className="mt-1 block text-xs font-normal text-[var(--muted)]">Retailer link paused</span>
+                    </span>
+                  ) : (
+                    <a className="font-bold text-[var(--brand-strong)] underline-offset-4 hover:underline" href={source.url} rel="noopener noreferrer" target="_blank">
+                      {source.name}
+                    </a>
+                  )}
                   {source.note ? <p className="mt-1 text-sm leading-6 text-[var(--muted)]">{source.note}</p> : null}
                 </li>
               ))}
@@ -547,7 +574,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         {guide.editorialMethod?.length ? (
           <section className="mt-10 rounded-md border border-[var(--border)] bg-white p-5" aria-labelledby="editorial-method">
             <p className="eyebrow">Research notes</p>
-            <h2 className="mt-3 text-2xl font-bold" id="editorial-method">How we evaluated these choices</h2>
+            <h2 className="mt-3 scroll-mt-24 text-2xl font-bold" id="editorial-method">How we evaluated these choices</h2>
             <ol className="mt-4 space-y-3 text-sm leading-6 text-[var(--muted)]">
               {guide.editorialMethod.map((item, index) => <li key={item}><span className="mr-2 font-bold text-[var(--text)]">{index + 1}.</span>{item}</li>)}
             </ol>
@@ -596,21 +623,17 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
           <figure className="mt-8">
             <div className="relative aspect-[16/9] w-full overflow-hidden rounded-md bg-[var(--surface-muted)]">
               <Image
-                alt={guide.imageAlt ?? guide.title}
+                alt={editorialImageAlt(guide.image, guide.imageAlt ?? guide.title)}
                 className="object-cover"
                 fill
                 loading="lazy"
                 sizes="(min-width: 1024px) 896px, 100vw"
-                src={guide.image}
+                src={editorialImageForDisplay(guide.image)}
               />
             </div>
-            {guide.familySlug ? (
+            {isEditorialCategoryImage(guide.image) ? (
               <figcaption className="mt-2 text-xs leading-5 text-[var(--muted)]">
-                Original editorial image for category, fit, and use context; verify the exact linked product appearance and configuration on the retailer page.
-              </figcaption>
-            ) : guide.image.includes("-realistic.webp") ? (
-              <figcaption className="mt-2 text-xs leading-5 text-[var(--muted)]">
-                Editorial image for visual context; device appearance and configuration can vary by model and region.
+                {editorialCategoryImageCaption}
               </figcaption>
             ) : null}
           </figure>
@@ -625,7 +648,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
               <p className="mt-3 leading-7 text-[var(--muted)]">{tool.dek}</p>
             </Link> : null;
           })}
-          {relatedGuides.filter((item) => plannerTopic !== "mini-pcs" || miniPcProfiles.some((model) => model.guide === item.slug)).map((item) => (
+          {(authoredTaskPaths ? [] : relatedGuides).filter((item) => plannerTopic !== "mini-pcs" || miniPcProfiles.some((model) => model.guide === item.slug)).map((item) => (
             <Link className="panel p-5" href={`/guides/${item.slug}`} key={item.slug}>
               <p className="eyebrow">Related guide</p>
               <h2 className="mt-3 text-xl font-bold">{item.title}</h2>
@@ -642,7 +665,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
               </Link>
             ) : null;
           })}
-          {guide.relatedRoundups.map((slug) => {
+          {(authoredTaskPaths ? [] : guide.relatedRoundups).map((slug) => {
             const roundup = findRoundup(site.key, slug);
             return roundup ? (
               <Link className="panel p-5" href={`/best/${roundup.slug}`} key={roundup.slug}>

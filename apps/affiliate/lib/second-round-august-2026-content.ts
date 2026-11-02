@@ -47,11 +47,7 @@ function exactProduct(input: ProductInput): Product {
     // Product.rating is retained for compatibility with the older content type,
     // but is not rendered or emitted as aggregate-rating schema for this official-spec page.
     rating: 0,
-    scores: input.scores ?? [
-      { label: "Decision clarity", value: 9 },
-      { label: "Setup fit", value: 8 },
-      { label: "Ongoing ownership", value: 8 },
-    ],
+    scores: input.scores ?? [],
     editorialSections: sections,
     offers: [
       {
@@ -68,10 +64,10 @@ export const secondRoundAugust2026Products: Product[] = [
   exactProduct({
     site: "smarthome",
     slug: "meross-msg100-homekit-garage-door-opener",
-    updatedAt: "October 25, 2026",
-    researchNote: "Manufacturer compatibility, accessory and Apple home-hub guidance reviewed October 25, 2026. We have not installed or tested this controller. The US ASIN remains the historical listing reference; today's variant, seller, stock and accessory eligibility have not been established by this documentation review.",
+    updatedAt: "November 1, 2026",
+    researchNote: "Manufacturer compatibility, accessory and Apple home-hub guidance reviewed October 25, 2026. We have not installed or tested this controller.  November 1, 2026: the exact US10001 selection and New seller offer were observed separately; this does not validate received hardware or installation.",
     asin: "B084Z5QZR2",
-    amazonTitle: "meross Smart Wi-Fi Garage Door Opener MSG100 HomeKit",
+    amazonTitle: "Meross MSG100HK · one-door controller",
     seoTitle: "Meross MSG100 Guide: Compatibility, Hub & Offline Use",
     name: "Meross MSG100 HomeKit Garage Door Opener",
     brand: "Meross",
@@ -93,21 +89,50 @@ export const secondRoundAugust2026Products: Product[] = [
     ],
     alternatives: ["Use the MSG200 family when two or three doors need one controller after a separate compatibility check.", "Keep the existing opener unchanged when physical remotes already solve the job."],
     sources: [
-      { name: "Meross MSG100 current manufacturer listing", url: "https://shop.meross.com/collections/smart-garage-door-opener/products/smart-wifi-garage-door-opener", note: "Manufacturer network specifications and advertised in-LAN app control during an internet outage. This is not our own outage test or proof of every automation path." },
-      { name: "Meross opener compatibility checker", url: "https://www.meross.com/en-gc/compatibility-check/garage-door-opener", note: "MSG100/100HK/200/200HK scope and warning against uncertain terminal testing; MSG150 has a different document." },
-      { name: "Meross accessory eligibility FAQ", url: "https://www.meross.com/en-gc/faq/79.html", note: "Accessory model, US/CA/MX region and order/warranty conditions; not an unconditional free-accessory promise." },
-      { name: "Apple home-hub requirements", url: "https://support.apple.com/en-us/102557", note: "Supported home-hub setup for remote access; this is separate from the Meross device's Wi-Fi connection." },
-      { name: "Meross MSG150 scope", url: "https://shop.meross.com/products/smart-wifi-garage-door-opener-msg150", note: "Current manufacturer comparison points other opener brands toward MSG100HK; no universal replacement is inferred." },
-      { name: "Historical US ASIN B084Z5QZR2", url: "https://www.amazon.com/dp/B084Z5QZR2", note: "Existing listing reference, not a new seller, stock or included-accessory verification." },
-    ],
-  }),
+  {
+    "name": "Meross MSG100 current manufacturer listing",
+    "url": "https://shop.meross.com/collections/smart-garage-door-opener/products/smart-wifi-garage-door-opener",
+    "note": "Manufacturer network specifications and advertised in-LAN app control during an internet outage. This is not our own outage test or proof of every automation path."
+  },
+  {
+    "name": "Meross opener compatibility checker",
+    "url": "https://www.meross.com/en-gc/compatibility-check/garage-door-opener",
+    "note": "MSG100/100HK/200/200HK scope and warning against uncertain terminal testing; MSG150 has a different document."
+  },
+  {
+    "name": "Meross accessory eligibility FAQ",
+    "url": "https://www.meross.com/en-gc/faq/79.html",
+    "note": "Accessory model, US/CA/MX region and order/warranty conditions; not an unconditional free-accessory promise."
+  },
+  {
+    "name": "Apple home-hub requirements",
+    "url": "https://support.apple.com/en-us/102557",
+    "note": "Supported home-hub setup for remote access; this is separate from the Meross device's Wi-Fi connection."
+  },
+  {
+    "name": "Meross MSG150 scope",
+    "url": "https://shop.meross.com/products/smart-wifi-garage-door-opener-msg150",
+    "note": "Current manufacturer comparison points other opener brands toward MSG100HK; no universal replacement is inferred."
+  },
+  {
+    "name": "Exact US Amazon selection B084Z5QZR2",
+    "url": "https://www.amazon.com/dp/B084Z5QZR2",
+    "note": "November 1, 2026, US 10001: exact selection, New offer and named seller observed. Visible return label recorded; detailed eligibility and exceptions were not fully expanded for this selection. Recheck condition, package and live terms."
+  }
+],
+
+"purchaseCheck": "MSG100HK for one compatible opener, on 2.4 GHz Wi-Fi. Run Meross's exact opener check and confirm any accessory before buying; Security+ 3.0 is excluded in the current listing. No Meross hub is needed, but Apple remote access has its own home-hub requirement. Keep working original controls when smart access adds no benefit.",
+
+
+"scores": [],
+}),
   exactProduct({
     site: "smarthome",
     slug: "switchbot-blind-tilt",
-    updatedAt: "October 25, 2026",
-    researchNote: "Manufacturer fit, current Matter bridge support and manual-operation guidance reviewed October 25, 2026. We have not installed or tested the motor. The existing US ASIN is a historical single-motor reference; current seller, included hub, quantity and availability need a separate offer check.",
+    updatedAt: "November 1, 2026",
+    researchNote: "Manufacturer fit, current Matter bridge support and manual-operation guidance reviewed October 25, 2026. We have not installed or tested the motor.  November 1, 2026: the exact US10001 selection and New seller offer were observed separately; this does not validate received hardware or installation.",
     asin: "B0BMLFZ4CP",
-    amazonTitle: "SwitchBot Blind Tilt Motorized Blinds Controller",
+    amazonTitle: "SwitchBot Blind Tilt · one motor + solar panel",
     seoTitle: "SwitchBot Blind Tilt Guide: Hub, Matter & Offline Use",
     name: "SwitchBot Blind Tilt",
     brand: "SwitchBot",
@@ -129,21 +154,50 @@ export const secondRoundAugust2026Products: Product[] = [
     ],
     alternatives: ["Use a purpose-built roller-shade motor for bead-chain or roller mechanisms.", "Replace the blind only when lift, tilt, and fabric all need changing together."],
     sources: [
-      { name: "SwitchBot Blind Tilt", url: "https://us.switch-bot.com/products/switchbot-blind-tilt", note: "Official fit, Bluetooth, hub, voice, Matter, and HomeKit information." },
-      { name: "SwitchBot bridge comparison", url: "https://support.switch-bot.com/hc/en-us/articles/13569889726743-Differences-Between-Hub-Mini-Hub-2-Hub-Mini-Matter-Enabled-and-Hub-3", note: "Plain Hub Mini versus Matter-enabled bridges; device slots and infrared offline features have separate scopes." },
-      { name: "Blind Tilt in the Matter sub-device table", url: "https://support.switch-bot.com/hc/en-us/articles/13282638111127-Which-SwitchBot-Devices-Can-Be-Added-to-Apple-Home-As-Sub-devices-via-Matter", note: "Current supported bridges, Blind Tilt actions and firmware notes; not proof of every platform feature or offline trigger." },
-      { name: "Blind Tilt supported mechanisms", url: "https://support.switch-bot.com/hc/en-us/articles/11696634725783-What-types-of-blinds-does-Blind-Tilt-support", note: "Horizontal blinds with a pole and the documented diameter ranges; no individual fit test." },
-      { name: "Manual pole rotation", url: "https://support.switch-bot.com/hc/en-us/articles/12004451785239-After-installing-the-Blind-Tilt-is-it-possible-to-rotate-the-pole-manually", note: "Manufacturer's manual-operation statement; not our own physical test." },
-      { name: "Historical US ASIN B0BMLFZ4CP", url: "https://www.amazon.com/dp/B0BMLFZ4CP", note: "Existing single-motor listing reference; recheck included hub, quantity, seller and stock." },
-    ],
-  }),
+  {
+    "name": "SwitchBot Blind Tilt",
+    "url": "https://us.switch-bot.com/products/switchbot-blind-tilt",
+    "note": "Official fit, Bluetooth, hub, voice, Matter, and HomeKit information."
+  },
+  {
+    "name": "SwitchBot bridge comparison",
+    "url": "https://support.switch-bot.com/hc/en-us/articles/13569889726743-Differences-Between-Hub-Mini-Hub-2-Hub-Mini-Matter-Enabled-and-Hub-3",
+    "note": "Plain Hub Mini versus Matter-enabled bridges; device slots and infrared offline features have separate scopes."
+  },
+  {
+    "name": "Blind Tilt in the Matter sub-device table",
+    "url": "https://support.switch-bot.com/hc/en-us/articles/13282638111127-Which-SwitchBot-Devices-Can-Be-Added-to-Apple-Home-As-Sub-devices-via-Matter",
+    "note": "Current supported bridges, Blind Tilt actions and firmware notes; not proof of every platform feature or offline trigger."
+  },
+  {
+    "name": "Blind Tilt supported mechanisms",
+    "url": "https://support.switch-bot.com/hc/en-us/articles/11696634725783-What-types-of-blinds-does-Blind-Tilt-support",
+    "note": "Horizontal blinds with a pole and the documented diameter ranges; no individual fit test."
+  },
+  {
+    "name": "Manual pole rotation",
+    "url": "https://support.switch-bot.com/hc/en-us/articles/12004451785239-After-installing-the-Blind-Tilt-is-it-possible-to-rotate-the-pole-manually",
+    "note": "Manufacturer's manual-operation statement; not our own physical test."
+  },
+  {
+    "name": "Exact US Amazon selection B0BMLFZ4CP",
+    "url": "https://www.amazon.com/dp/B0BMLFZ4CP",
+    "note": "November 1, 2026, US 10001: exact selection, New offer and named seller observed. Visible return label recorded; detailed eligibility and exceptions were not fully expanded for this selection. Recheck condition, package and live terms."
+  }
+],
+
+"purchaseCheck": "Select Blind Tilt ×1 B0BMLFZ4CP: one motor and a solar panel, with no hub included. Fits a compatible horizontal-blind tilt wand; it does not lift blinds or drive roller/vertical shades. Nearby Bluetooth needs no hub; Apple Home via Matter needs a supported bridge, firmware and available slots. Plain Hub Mini is not the Matter-enabled model.",
+
+
+"scores": [],
+}),
   exactProduct({
     site: "smarthome",
     slug: "emporia-vue-3-home-energy-monitor",
-    updatedAt: "October 25, 2026",
-    researchNote: "Current manufacturer Vue 3 installation, technical and offline-data documentation reviewed October 25, 2026. Relevant manual pages and specification tables were inspected; we have not installed the unit or tested its accuracy. The existing US ASIN does not verify today's seller, sensor bundle or availability.",
+    updatedAt: "November 1, 2026",
+    researchNote: "Current manufacturer Vue 3 installation, technical and offline-data documentation reviewed October 25, 2026. Relevant manual pages and specification tables were inspected; we have not installed the unit or tested its accuracy.  November 1, 2026: the exact US10001 selection and New seller offer were observed separately; this does not validate received hardware or installation.",
     asin: "B0C79PNK84",
-    amazonTitle: "Emporia Vue 3 Home Energy Monitor",
+    amazonTitle: "Emporia Vue 3 EMV3A-2P-16 · 16 branch sensors",
     seoTitle: "Emporia Vue 3 Guide: Panel Fit, Cloud & Offline Data",
     name: "Emporia Vue 3 Home Energy Monitor",
     brand: "Emporia",
@@ -165,12 +219,33 @@ export const secondRoundAugust2026Products: Product[] = [
     ],
     alternatives: ["Use utility-provided interval data when whole-home trends are enough.", "Choose a documented local-first monitor when cloud independence is a hard requirement."],
     sources: [
-      { name: "Current Emporia Vue 3 technical sheet", url: "https://link.emporiaenergy.com/sell-sheets/vue3", note: "Four-page manufacturer sheet: kit options, service configurations, Ethernet/Wi-Fi and dimensions. Electrical compatibility and included sensors still require a kit-specific check." },
-      { name: "Current Emporia Vue 3 installation guide", url: "https://link.emporiaenergy.com/installation-guides/vue3", note: "Current permanent manufacturer link. Relevant safety, network and technical pages inspected; no panel installation performed." },
-      { name: "Emporia offline behavior", url: "https://help.emporiaenergy.com/en/articles/14809190-vue-offline-behavior", note: "Official buffering, averaging, cloud, and local-access limits." },
-      { name: "Historical US ASIN B0C79PNK84", url: "https://www.amazon.com/dp/B0C79PNK84", note: "Existing Vue 3 listing reference, not a new check of the sensor bundle, seller or stock." },
-    ],
-  }),
+  {
+    "name": "Current Emporia Vue 3 technical sheet",
+    "url": "https://link.emporiaenergy.com/sell-sheets/vue3",
+    "note": "Four-page manufacturer sheet: kit options, service configurations, Ethernet/Wi-Fi and dimensions. Electrical compatibility and included sensors still require a kit-specific check."
+  },
+  {
+    "name": "Current Emporia Vue 3 installation guide",
+    "url": "https://link.emporiaenergy.com/installation-guides/vue3",
+    "note": "Current permanent manufacturer link. Relevant safety, network and technical pages inspected; no panel installation performed."
+  },
+  {
+    "name": "Emporia offline behavior",
+    "url": "https://help.emporiaenergy.com/en/articles/14809190-vue-offline-behavior",
+    "note": "Official buffering, averaging, cloud, and local-access limits."
+  },
+  {
+    "name": "Exact US Amazon selection B0C79PNK84",
+    "url": "https://www.amazon.com/dp/B0C79PNK84",
+    "note": "November 1, 2026, US 10001: exact selection, New offer and named seller observed. Visible return label recorded; detailed eligibility and exceptions were not fully expanded for this selection. Recheck condition, package and live terms."
+  }
+],
+
+"purchaseCheck": "Select Vue Gen 3 EMV3A-2P-16 with 16 branch sensors, B0C79PNK84. Have a qualified electrician check the service, panel space, CT fit and required extra sensors before purchase. Cloud access is required for app readings; Ethernet does not create local access. Use existing utility data instead when circuit detail does not justify panel work.",
+
+
+"scores": [],
+}),
   exactProduct({
     site: "homeoffice",
     slug: "ugreen-30768-usb-3-switch",
@@ -187,20 +262,61 @@ export const secondRoundAugust2026Products: Product[] = [
     bestFor: "Two computers sharing USB peripherals while the monitor is switched separately",
     pros: ["Four shared USB-A peripheral ports", "Simple physical host button", "Two host cables are included"],
     cons: ["No video switching", "Shared 5Gbps upstream bandwidth", "High-power devices may need the auxiliary power input"],
-    specs: { ASIN: "B01N6GD9JO", Model: "30768", Hosts: "Two computers", Devices: "Four USB-A peripherals", Speed: "USB 3.0 up to 5Gbps shared", Video: "None", Switching: "Physical button" },
+    specs: {
+  "ASIN": "B01N6GD9JO",
+  "Model": "30768",
+  "Hosts": "Two computers",
+  "Devices": "Four USB-A peripherals",
+  "Speed": "USB 3.0 up to 5Gbps shared",
+  "Video": "None",
+  "Switching": "Physical button",
+  "Auxiliary-power version": "Current retail: USB-C 5 V 2 A; older US216 manual: Micro-USB 5 V. Match supplied unit and instructions."
+},
     evidence: ["List every USB peripheral and its bandwidth", "Plan monitor input switching separately", "Avoid USB storage transfers during frequent host changes", "Check auxiliary power needs and the included-cable bundle"],
     sections: [
-      { heading: "This is a USB switch, not a display KVM", body: "The device changes which computer owns the four USB ports. It does not carry HDMI, DisplayPort, USB-C video, Ethernet, or laptop charging." },
-      { heading: "A dock can sit beside it, not inside every path", body: "A dock solves port expansion for one host; the USB switch shares selected peripherals. Chaining high-bandwidth docks, storage, capture devices, and webcams through one 5Gbps path can create bottlenecks or power problems." },
-      { heading: "Switching disconnects and reconnects devices", body: "Operating systems may take time to re-enumerate audio, cameras, storage, and security keys. A keyboard and mouse are lower risk than an active file transfer or firmware update." },
-      { heading: "Who should skip it", body: "Skip if the monitor must follow the same button, both computers need USB-C charging, or the workflow cannot tolerate peripheral reconnection." },
-    ],
+  {
+    "heading": "This is a USB switch, not a display KVM",
+    "body": "The device changes which computer owns the four USB ports. It does not carry HDMI, DisplayPort, USB-C video, Ethernet, or laptop charging."
+  },
+  {
+    "heading": "A dock can sit beside it, not inside every path",
+    "body": "A dock solves port expansion for one host; the USB switch shares selected peripherals. Chaining high-bandwidth docks, storage, capture devices, and webcams through one 5 Gbps path can create bottlenecks or power problems."
+  },
+  {
+    "heading": "Switching disconnects and reconnects devices",
+    "body": "Operating systems may take time to re-enumerate audio, cameras, storage, and security keys. A keyboard and mouse are lower risk than an active file transfer or firmware update."
+  },
+  {
+    "heading": "Match the USB 3 model and plan auxiliary power",
+    "body": "The original US216 sheet distinguishes USB 3.0 model 30768 from USB 2.0 model 30767 and depicts a 5 V Micro-USB auxiliary input. The current 30768 retail description instead specifies a USB-C auxiliary 5 V 2 A input. Treat that as a version difference to resolve, not a promise that the old power cable fits the selected unit. Match the physical port and supplied instructions before adding external power. The switch still uses a physical selection button; do not assume automatic host detection."
+  },
+  {
+    "heading": "Who should skip it",
+    "body": "Skip if the monitor must follow the same button, both computers need USB-C charging, or the workflow cannot tolerate peripheral reconnection."
+  }
+],
     alternatives: ["Use a true KVM for synchronized monitor, keyboard, and mouse switching.", "Use a monitor with built-in KVM when display and USB input mapping already fit both computers."],
     sources: [
-      { name: "UGREEN 30768 product page", url: "https://es.ugreen.com/nl/products/ugreen-4-puertos-usb-3-0-switch-2-entradas-y-4-salidas-switch-usb-con-2-cable-usb", note: "Official port, host, speed, button, cable, and power information." },
-      { name: "Amazon B01N6GD9JO", url: "https://www.amazon.com/dp/B01N6GD9JO", note: "Exact US model 30768 listing identity." },
-    ],
-  }),
+  {
+    "name": "UGREEN 30768 product page",
+    "url": "https://es.ugreen.com/nl/products/ugreen-4-puertos-usb-3-0-switch-2-entradas-y-4-salidas-switch-usb-con-2-cable-usb",
+    "note": "Official port, host, speed, button, cable, and power information."
+  },
+  {
+    "name": "Amazon B01N6GD9JO",
+    "url": "https://www.amazon.com/dp/B01N6GD9JO",
+    "note": "October 31, 2026 US10001: model/part 30768, UGREEN GROUP LIMITED seller, Amazon fulfillment and expanded 30-day returns observed. Current USB-C auxiliary-power text differs from the older manual’s Micro-USB diagram."
+  },
+  {
+    "name": "UGREEN US216 original 30767/30768 manual",
+    "url": "https://gzhls.at/blob/ldb/b/e/7/d/e34617c60450ee3bdc60a6f5e766164bb25b.pdf",
+    "note": "Branded manufacturer design sheet hosted by a product distributor; English 30768 diagram, connections, power and selection reviewed."
+  }
+],
+  "researchNote": "Current model/part 30768 and US10001 offer/expanded returns checked October 31, 2026, alongside previously read manufacturer guidance and the original US216 sheet. The current auxiliary USB-C description conflicts with the older Micro-USB diagram; received revision and high-load behavior are not certified.",
+"purchaseCheck": "30768 shares USB peripherals, not video or laptop charging. Check the selected auxiliary-power port: current retail says USB-C, older instructions show Micro-USB. Confirm host adapter, supplied cables, condition and returns.",
+"updatedAt": "October 31, 2026",
+}),
   exactProduct({
     site: "homeoffice",
     slug: "jabra-speak2-40-usb-speakerphone",
@@ -213,23 +329,65 @@ export const secondRoundAugust2026Products: Product[] = [
     image: "/images/affiliate/homeoffice-second-round-editorial.webp",
     imageAlt: "Editorial desk with a wired round conference speakerphone",
     summary: "A wired USB-A and USB-C speakerphone with four beamforming microphones, full-duplex audio, a 50mm speaker, and separate UC versus Microsoft Teams variants.",
-    verdict: "Speak2 40 is the simple choice for one person or a small table that values reliable wired audio over Bluetooth. Confirm the UC 2740-209 version at checkout unless the dedicated Teams controls are specifically required.",
+    verdict: "Compare Speak2 40 for one person or a small table that needs a wired USB speakerphone. Confirm the UC 2740-209 version at checkout unless the dedicated Teams controls are specifically required.",
     bestFor: "Small-room calls where several people need one wired microphone and speaker",
     pros: ["Integrated USB-C cable with USB-A adapter", "Four beamforming microphones and full-duplex audio", "No battery or Bluetooth pairing to maintain"],
     cons: ["Wired only", "Not a private option for shared spaces", "UC and Microsoft Teams variants are easy to confuse"],
     specs: { ASIN: "B0BWKTR73Y", Model: "2740-209 UC", Connection: "Integrated USB-C with USB-A adapter", Microphones: "Four digital MEMS beamforming microphones", Pickup: "Up to 2.3m listed", Speaker: "50mm", Protection: "IP64 listed" },
     evidence: ["Confirm 2740-209 UC rather than 2740-109 Teams", "Measure seating within the listed pickup radius", "Check USB cable reach and computer port", "Use a headset for confidential or noisy calls"],
     sections: [
-      { heading: "Choose a speakerphone for a room, not privacy", body: "A tabletop unit lets several nearby people join naturally, but everyone in the room can hear the call and room noise remains part of the acoustic problem." },
-      { heading: "Wired is the feature", body: "Speak2 40 has no Bluetooth or internal battery. The integrated USB-C cable and USB-A adapter remove charging and pairing, which is useful for a fixed desk or shared huddle setup." },
-      { heading: "UC and Teams are different order lines", body: "Model 2740-209 is the UC version; 2740-109 is the Microsoft Teams version. Verify the exact model and button behavior instead of relying on a shared product-family title." },
-      { heading: "Who should skip it", body: "Skip for confidential calls, a noisy open office, a room larger than the supported pickup area, or a workflow that needs wireless phone use." },
+      {
+        "heading": "Choose a speakerphone for a room, not privacy",
+        "body": "A tabletop unit lets several nearby people join naturally, but everyone in the room can hear the call and room noise remains part of the acoustic problem."
+      },
+      {
+        "heading": "Wired is the feature",
+        "body": "Speak2 40 has no Bluetooth or internal battery. It connects to a computer by USB-C or the cable’s attached USB-A adapter. Jabra recommends USB-C for maximum volume; a USB-A computer port must be capable of charging. Do not remove the attached adapter or reuse it with another device. Select Speak2 40 as both playback and recording device in the operating system and meeting app."
+      },
+      {
+        "heading": "UC and Teams are different order lines",
+        "body": "Model 2740-209 is the UC version; 2740-109 is the Microsoft Teams version. Verify the exact model and button behavior instead of relying on a shared product-family title."
+      },
+      {
+        "heading": "Place it within the documented range",
+        "body": "Jabra’s guide places the speakerphone at the center of the table, 0.5–2.3 m from each participant. That is a placement instruction, not a measured room-coverage result. The current support page lists computer softphones; do not assume USB-C phone, tablet or deskphone support."
+      },
+      {
+        "heading": "Who should skip it",
+        "body": "Skip for confidential calls, a noisy open office, a room larger than the supported pickup area, or a workflow that needs wireless phone use."
+      },
+      {
+        "heading": "Check the current firmware before troubleshooting",
+        "body": "Jabra’s release notes list firmware 1.2.8 dated February 19, 2026, addressing freezing on certain Macs at full volume. Check the current manufacturer instructions for your computer and unit; no software or firmware was installed for this review."
+      }
     ],
     alternatives: ["Use a wired headset for privacy and consistent mouth-to-mic distance.", "Use a larger room system when participants sit beyond the pickup area."],
     sources: [
-      { name: "Jabra Speak2 40", url: "https://www.jabra.com/business/speakerphones/jabra-speak-series/jabra-speak2-40", note: "Official product positioning and platform support." },
-      { name: "Jabra Speak2 40 technical sheet", url: "https://www.jabra.com/_/media/Jabra_VXi_Product-Documentation/Jabra-Speak2-40/Technical-specifications/RevA/Jabra-Speak2-40-Tech-Sheet-270123-WEB.pdf", note: "Official 2740-209 connectivity, microphone, speaker, pickup, and protection specifications." },
-      { name: "Amazon B0BWKTR73Y", url: "https://www.amazon.com/dp/B0BWKTR73Y", note: "Exact US 2740-209 UC listing identity." },
+      {
+        "name": "Jabra Speak2 40",
+        "url": "https://www.jabra.com/business/speakerphones/jabra-speak-series/jabra-speak2-40",
+        "note": "Official product positioning and platform support."
+      },
+      {
+        "name": "Jabra Speak2 40 original data sheet",
+        "url": "https://www.jabra.com/_/media/Jabra_VXi_Product-Documentation/Jabra-Speak2-40/Datasheets/RevA/EN-Jabra-Speak2-40-Datasheet-A4-270123-WEB.pdf",
+        "note": "Manufacturer wired USB connectivity, UC/MS variants and speakerphone features. Match the exact current retail version separately; no room-performance test."
+      },
+      {
+        "name": "Amazon B0BWKTR73Y",
+        "url": "https://www.amazon.com/dp/B0BWKTR73Y",
+        "note": "Exact US 2740-209 UC listing identity."
+      },
+      {
+        "name": "Jabra Speak2 40 original user manual",
+        "url": "https://www.jabra.com/_/media/Jabra_VXi_Product-Documentation/Jabra-Speak2-40/User-Manuals/RevA/Jabra-Speak2-40_User-Manual_EN_English_RevA.pdf",
+        "note": "Complete 24-page English manual; UC/Teams differences, placement, captive adapter, computer setup and care. Current support and firmware checked separately."
+      },
+      {
+        "name": "Jabra Speak2 40 support and release notes",
+        "url": "https://www.jabra.com/supportpages/jabra-speak2-40",
+        "note": "Current computer compatibility and firmware history, including the February 2026 Mac fix. Follow the manufacturer instructions for the exact unit."
+      }
     ],
   }),
   exactProduct({
@@ -244,33 +402,90 @@ export const secondRoundAugust2026Products: Product[] = [
     image: "/images/affiliate/homeoffice-second-round-editorial.webp",
     imageAlt: "Editorial desk with a slim portable monitor on its kickstand",
     summary: "A 15.6-inch 1080p IPS portable display with a kickstand and one hybrid USB-C port, using DP Alt Mode directly or DisplayLink software for compatible USB-A hosts.",
-    verdict: "MB16ACV is a practical second screen when one cable and a matte 1080p panel matter more than brightness, speakers, touch, or HDMI. Verify DP Alt Mode or DisplayLink support before buying—the USB-C shape alone proves nothing.",
+    verdict: "Compare MB16ACV only after confirming the exact model and a supported host display path. It is documented as a one-USB-C portable screen, not an HDMI or speaker-equipped replacement. Keep a working screen or choose another documented model when the manual, software or required connection remains unknown.",
     bestFor: "Travel and temporary desks with a verified USB-C video or DisplayLink path",
     pros: ["15.6-inch FHD IPS anti-glare panel", "Integrated kickstand", "Can support compatible USB-A hosts through DisplayLink"],
     cons: ["No HDMI input", "One USB-C port", "DisplayLink use requires software and has workflow limits"],
-    specs: { ASIN: "B0966YYP65", Model: "MB16ACV", Panel: "15.6-inch 1920×1080 IPS, 60Hz", Brightness: "250 nits listed", Port: "One USB-C with DP Alt Mode and USB data", Weight: "0.9kg listed", Audio: "No speakers" },
+    specs: {
+      "ASIN": "B0966YYP65",
+      "Model": "MB16ACV",
+      "Panel": "15.6-inch 1920×1080 IPS, 60Hz",
+      "Brightness": "250 nits listed",
+      "Port": "One USB-C with DP Alt Mode and USB data",
+      "Weight": "ASUS 2021 launch: 0.83 kg; current global estimate: 0.9 kg, varying by region. Confirm the exact revision and travel weight.",
+      "Audio": "No speakers"
+    },
     evidence: ["Confirm the computer port supports DP Alt Mode or approved DisplayLink software", "Confirm the hybrid USB driver path for USB-A", "Accept no HDMI and no speakers", "Measure stand depth and cable-side clearance"],
     sections: [
-      { heading: "USB-C is a connector, not a video guarantee", body: "Direct one-cable video needs DisplayPort Alt Mode from the computer. A charging- or data-only USB-C port will not produce native video just because the cable fits." },
-      { heading: "DisplayLink is the compatibility fallback", body: "The hybrid USB path can carry compressed display data through USB-A or data-capable USB-C after the supported driver is installed. That adds software, host resources, and possible corporate-device restrictions." },
-      { heading: "The missing ports define the use case", body: "MB16ACV has no HDMI and no speakers. It is a portable productivity panel, not a universal console screen or media monitor." },
-      { heading: "Who should skip it", body: "Skip if HDMI, touch, high brightness, high refresh, speakers, driver-free data-only USB, or a built-in battery is required." },
+      {
+        "heading": "USB-C is a connector, not a video guarantee",
+        "body": "Direct one-cable video needs DisplayPort Alt Mode from the computer. A charging- or data-only USB-C port will not produce native video just because the cable fits."
+      },
+      {
+        "heading": "DisplayLink is the compatibility fallback",
+        "body": "ASUS documents a hybrid USB graphics path that requires a supported driver when native DP Alt Mode is unavailable. That is a separate decision from plugging in a video-capable USB-C host. Check the current MB16ACV downloads for the exact operating system and workplace permissions before relying on USB-A. A generic DisplayLink guide or a utility for another ZenScreen model does not establish this configuration."
+      },
+      {
+        "heading": "The missing ports define the use case",
+        "body": "ASUS’s model-level MB16ACV I/O table lists one hybrid USB-C port and no speaker. Some current retail metadata mixes in HDMI, extra USB ports, audio and warranty claims that do not match that table. Do not choose this model expecting a direct HDMI input, headphone socket or a different monitor’s features. Confirm the exact label, connections and included parts before keeping the unit."
+      },
+      {
+        "heading": "Check the documentation and support window",
+        "body": "ASUS currently lists a product security-update support period through December 31, 2026. That specific statement does not establish a hardware discontinuation date, warranty duration or future DisplayLink operating-system guarantee. The current English manual is listed by ASUS, but its full contents and applicability to the selected unit remain unverified in this review. Resolve that manual and host match before relying on the hybrid driver path."
+      },
+      {
+        "heading": "Who should skip it",
+        "body": "Skip if HDMI, touch, high brightness, high refresh, speakers, driver-free data-only USB, or a built-in battery is required."
+      },
+      {
+        "heading": "Published weight is not a measurement of your travel kit",
+        "body": "ASUS’s 2021 launch material lists 0.83 kg, while the current global table estimates 0.9 kg and says weight can vary by region. These are different published references, not a confirmed hardware upgrade. Check the exact version and include the sleeve, cables and any required adapter in the bag weight that matters to you."
+      }
     ],
     alternatives: ["Choose a portable display with HDMI for consoles and broader source compatibility.", "Use a fixed monitor when brightness, ergonomics, and multiple inputs matter more than travel weight."],
     sources: [
-      { name: "ASUS ZenScreen MB16ACV", url: "https://www.asus.com/us/displays-desktops/monitors/zenscreen/zenscreen-mb16acv/", note: "Official product, stand, panel, and connection overview." },
-      { name: "ASUS MB16ACV specifications", url: "https://www.asus.com/us/displays-desktops/monitors/zenscreen/zenscreen-mb16acv/techspec/", note: "Official panel, brightness, port, size, weight, and audio specifications." },
-      { name: "ASUS USB-C display support", url: "https://www.asus.com/us/support/faq/1048768/", note: "Official DP Alt Mode and USB display-path checks." },
-      { name: "Amazon B0966YYP65", url: "https://www.amazon.com/dp/B0966YYP65", note: "Exact US MB16ACV listing identity." },
+      {
+        "name": "ASUS ZenScreen MB16ACV",
+        "url": "https://www.asus.com/us/displays-desktops/monitors/zenscreen/zenscreen-mb16acv/",
+        "note": "Official product, stand, panel, and connection overview."
+      },
+      {
+        "name": "ASUS MB16ACV specifications",
+        "url": "https://www.asus.com/us/displays-desktops/monitors/zenscreen/zenscreen-mb16acv/techspec/",
+        "note": "Official panel, brightness, port, size, weight, and audio specifications."
+      },
+      {
+        "name": "ASUS USB-C display support",
+        "url": "https://www.asus.com/us/support/faq/1048768/",
+        "note": "Official DP Alt Mode and USB display-path checks."
+      },
+      {
+        "name": "Amazon B0966YYP65",
+        "url": "https://www.amazon.com/dp/B0966YYP65",
+        "note": "Exact US MB16ACV listing identity."
+      },
+      {
+        "name": "ASUS MB16ACV global I/O and support-period table",
+        "url": "https://www.asus.com/displays-desktops/monitors/zenscreen/zenscreen-mb16acv/techspec/",
+        "note": "Model-level USB-C and audio specifications, region-dependent weight estimates and the specifically labelled security-update period. Retail metadata does not change the documented ports."
+      },
+      {
+        "name": "ASUS current MB16ACV manuals",
+        "url": "https://www.asus.com/displays-desktops/monitors/zenscreen/zenscreen-mb16acv/helpdesk_manual?model2Name=ZenScreen-MB16ACV",
+        "note": "Current English manual index; the full document and its exact applicability remain unresolved."
+      }
     ],
-  }),
+  "updatedAt": "October 31, 2026",
+"researchNote": "Manufacturer model-level I/O and USB display guidance reviewed October 29, 2026; the dated US10001 Buy New Amazon.com offer and expanded 30-day returns were separately observed that day. Retail metadata conflicts are documented below. The full original manual and exact USB-A software applicability remain unverified; no physical or driver test.",
+"purchaseCheck": "MB16ACV has one USB-C input and no HDMI or speakers. Confirm a video-capable DP Alt Mode host; verify exact MB16ACV drivers and permissions before relying on USB-A. Recheck included parts, seller and returns.",
+}),
   exactProduct({
     site: "baby",
     slug: "ubbi-steel-diaper-pail",
-    purchaseCheck: "Confirm the white model, standard-bag fit and dry-cloth-only care suit your routine. Compare real refill costs and keep a working pail when replacement adds no useful benefit.",
+    purchaseCheck: "Choose the standard White pail B00821FLT4, not Venti, Fluted White or the gift set. Confirm standard-bag fit and dry-cloth-only care. The October 31 US selection explicitly showed Buy New from Amazon.com; recheck live terms and keep a working pail when replacement adds no useful benefit.",
     scores: [],
-    updatedAt: "October 26, 2026",
-    researchNote: "Ubbi's current product page and complete diaper-pail FAQ reviewed October 26, 2026. We have not tested odor, capacity, bag yield or cleaning. The historical white Amazon ASIN and its retailer observation date are preserved; current seller, stock, delivered version and returns are separate checks.",
+    updatedAt: "October 31, 2026",
+    researchNote: "Reuse of the fully reviewed Ubbi product and complete diaper-pail FAQ from October 26. October 31 US ZIP 10001 White selection, UPC 698904100003, explicit Buy New Amazon.com offer and expanded 90-day returns observed. No measured odor, capacity, bag yield or savings result; the Amazon Resale offer was not selected.",
     asin: "B00821FLT4",
     amazonTitle: "Ubbi Steel Diaper Pail, White",
     seoTitle: "Ubbi Steel Diaper Pail Guide: Bag Cost & Cleaning",
@@ -302,10 +517,10 @@ export const secondRoundAugust2026Products: Product[] = [
   exactProduct({
     site: "baby",
     slug: "momcozy-mw05-portable-milk-warmer",
-    purchaseCheck: "Identify the received MW05 version and charging package. Included 18V adapters in affected packages must not power other USB-C devices. Warming is optional; confirm direct-contact cleaning before choosing this warmer.",
+    purchaseCheck: "Choose MW05 B0DKHCWJ5G in the intended green configuration and identify the received charging package. Keep any affected included 18V adapter away from other USB-C devices. The October 31 selected offer was Momcozy Direct Store, shipped by Amazon; recheck condition, supplied parts, delivery and returns. Warming remains optional.",
     scores: [],
-    updatedAt: "October 26, 2026",
-    researchNote: "Momcozy's MW05 specifications, operating and cleaning pages, exact adapter warning and current CDC feeding guidance reviewed October 26, 2026. No physical warming, charging, battery or microbiological test. The historical Amazon identity and retailer observation date are unchanged; the actual package, adapter and received version still require confirmation.",
+    updatedAt: "October 31, 2026",
+    researchNote: "Momcozy's MW05 specifications, operating and cleaning pages, exact adapter warning and current CDC feeding guidance reviewed October 26, 2026. No physical warming, charging, battery or microbiological test. The historical Amazon identity and retailer observation date are unchanged; the actual package, adapter and received version still require confirmation. October 31 US ZIP 10001 retail selection matched MW05 and UPC 810184057970, with expanded 90-day returns. The received adapter and selected New condition were not established.",
     asin: "B0DKHCWJ5G",
     amazonTitle: "Momcozy MW05 17oz Portable Milk and Water Warmer",
     seoTitle: "Momcozy MW05 Guide: Travel Heating, Cleaning & Safety",
@@ -352,33 +567,76 @@ export const secondRoundAugust2026Products: Product[] = [
     category: "feeding",
     image: "/images/affiliate/baby-second-round-editorial.webp",
     imageAlt: "Editorial nursery utility counter with a green bottle drying rack and clean bottle parts",
-    summary: "A 13.5-by-11-inch flexible-blade drying rack with a removable lower tray, designed for bottle parts and accessories that still need full air drying and protected storage.",
+    summary: "A green LAWN blade-and-tray drying rack for a dedicated bottle-parts area. Confirm the selected revision and footprint; the current maker and retail dimension tables differ.",
     verdict: "LAWN works when the counter can dedicate its footprint to infant items and the rack itself will be washed and dried. It organizes drying; it does not sanitize parts or make damp items safe to store.",
     bestFor: "A dedicated bottle-parts drying zone with enough counter space",
     pros: ["Flexible blades support varied bottle parts", "Water drains into a removable tray", "Optional stem accessories lift small parts"],
     cons: ["Uses meaningful counter space", "Hand wash only", "The rack can retain moisture if it is not cleaned and dried"],
-    specs: { ASIN: "B004OR1DTC", Model: "LAWN", Footprint: "13.5 × 11 × 2.5 inches listed", Material: "Polypropylene and ABS", Cleaning: "Hand wash in warm soapy water", Dishwasher: "Not dishwasher-safe" },
+    specs: {
+  "ASIN": "B004OR1DTC",
+  "Model": "LAWN",
+  "Footprint": "Manufacturer 13.5 × 11 × 2.5 inches; current retail table 11 × 11 × 2.5 differs. Confirm the supplied version and measure the available counter.",
+  "Material": "Polypropylene and ABS",
+  "Cleaning": "Hand wash in warm soapy water",
+  "Dishwasher": "Not dishwasher-safe",
+  "Version": "Current maker page B377A8; selected Amazon model B377A2 / part B377. Exact delivered revision remains unknown."
+},
     evidence: ["Measure the clean counter zone", "Use only for infant feeding items", "Wash and dry both blade rack and tray", "Store parts only after they are fully air-dried"],
     sections: [
-      { heading: "The rack is one step in the workflow", body: "Cleaning, any required sanitizing, full air drying, reassembly, and protected storage are separate steps. A visually organized rack does not prove that parts are clean or dry." },
-      { heading: "The rack itself must dry", body: "Boon directs hand washing in warm soapy water and says not to dishwash, boil, sterilize, microwave, or freeze the rack. Separate the pieces so trapped water does not remain under the flexible surface." },
-      { heading: "Small parts need vertical space", body: "Nipples, valves, pacifiers, and pump pieces can consume the blades quickly. Compatible stem accessories can lift small items, but they should not create unstable stacks or block airflow." },
-      { heading: "Who should skip it", body: "Skip if the counter cannot keep a dedicated infant-item zone, the household needs dishwasher-safe rack parts, or a clean disposable drying surface is easier to maintain." },
-    ],
+  {
+    "heading": "The rack is one step in the workflow",
+    "body": "Cleaning, any required sanitizing, full air drying, reassembly, and protected storage are separate steps. A visually organized rack does not prove that parts are clean or dry."
+  },
+  {
+    "heading": "The rack itself must dry",
+    "body": "Boon directs hand washing in warm soapy water and says not to dishwash, boil, sterilize, microwave, or freeze the rack. Separate the pieces so trapped water does not remain under the flexible surface."
+  },
+  {
+    "heading": "Small parts need vertical space",
+    "body": "Nipples, valves, pacifiers, and pump pieces can consume the blades quickly. Compatible stem accessories can lift small items, but they should not create unstable stacks or block airflow."
+  },
+  {
+    "heading": "Who should skip it",
+    "body": "Skip if the counter cannot keep a dedicated infant-item zone, the household needs dishwasher-safe rack parts, or a clean disposable drying surface is easier to maintain."
+  },
+  {
+    "heading": "A shared LAWN name does not settle the revision",
+    "body": "The current manufacturer page describes an updated airflow design and antimicrobial tray. The Amazon selection lists B377A2 and a different footprint from the current B377A8 page; do not assume every supplied rack is the newer revision. Its two-piece rack and tray are not a promise of two complete drying racks. The tray claim does not sanitize bottles or replace washing and complete air drying."
+  }
+],
     alternatives: ["Use a clean unused towel or paper towel when a dedicated rack cannot be cleaned reliably.", "Choose a smaller rack when counter footprint is the limiting factor."],
     sources: [
-      { name: "Boon LAWN", url: "https://booninc.com/lawn-green/", note: "Official dimensions, material, tray, airflow, cleaning, and care limits." },
-      { name: "CDC infant feeding-item hygiene", url: "https://www.cdc.gov/hygiene/about/clean-sanitize-store-infant-feeding-items.html", note: "Authoritative cleaning, air-drying, and protected-storage workflow." },
-      { name: "CDC drying-rack FAQ", url: "https://www.cdc.gov/hygiene/faq/index.html", note: "Authoritative rack cleaning and moisture caution." },
-      { name: "Amazon B004OR1DTC", url: "https://www.amazon.com/dp/B004OR1DTC", note: "Exact US green LAWN listing identity." },
-    ],
-  }),
+  {
+    "name": "Boon LAWN",
+    "url": "https://booninc.com/lawn-green/",
+    "note": "Current B377A8 description, 13.5 × 11 × 2.5-inch reference, material and complete hand-wash care section; newer tray claims are not universal received-version or bottle-sanitizing proof."
+  },
+  {
+    "name": "CDC infant feeding-item hygiene",
+    "url": "https://www.cdc.gov/hygiene/about/clean-sanitize-store-infant-feeding-items.html",
+    "note": "Authoritative cleaning, air-drying, and protected-storage workflow."
+  },
+  {
+    "name": "CDC drying-rack FAQ",
+    "url": "https://www.cdc.gov/hygiene/faq/index.html",
+    "note": "Authoritative rack cleaning and moisture caution."
+  },
+  {
+    "name": "Amazon LAWN green selection",
+    "url": "https://www.amazon.com/dp/B004OR1DTC",
+    "note": "October 31 US B377A2/part B377 selection, differing dimension table, Amazon.com offer and expanded 90-day returns observed. No two-complete-rack or selected-New inference."
+  }
+],
+  "researchNote": "Current LAWN manufacturer description, specifications and complete care section reviewed, plus October 31 US retail model/selection and expanded returns. Different dimension and revision labels remain explicit. No airflow, antimicrobial, drying, material-safety or received-version test.",
+"purchaseCheck": "Choose green LAWN B004OR1DTC and confirm its actual footprint and rack/tray package. Current retail B377A2 and manufacturer B377A8 labels differ. Hand-wash care and full air drying must suit the routine; recheck current condition, seller, delivery and returns.",
+"updatedAt": "October 31, 2026",
+}),
   exactProduct({
     "site": "pet",
     "slug": "neakasa-p1-pro-pet-grooming-vacuum",
     "asin": "B09ZTMMXTK",
     "amazonTitle": "Neakasa P1 Pro Pet Grooming Vacuum Kit",
-    "seoTitle": "Neakasa P1 Pro Guide: Noise, Coat Fit & Cleaning",
+    "seoTitle": "Neakasa P1 Pro: Coat, Noise & Drying",
     "name": "Neakasa P1 Pro Grooming Vacuum",
     "brand": "Neakasa",
     "category": "home-care",
@@ -417,31 +675,36 @@ export const secondRoundAugust2026Products: Product[] = [
       "Use qualified grooming for a coat or trim that cannot be handled comfortably and safely."
     ],
     "sources": [
-      {
-        "name": "Neakasa P1 Pro English user guide",
-        "url": "https://cdn.shopify.com/s/files/1/0600/4736/0185/files/Neakasa_P1_Pro_User_Guide.pdf?v=1683714218",
-        "note": "English 1–13 and diagrams visually reviewed; model-specific package, acoustic and maintenance information."
-      },
-      {
-        "name": "Neakasa P1 Pro FAQ",
-        "url": "https://neakasa.com/pages/neakasa-p1-pro-faq",
-        "note": "Introduction, filter inspection, damaged hose and airflow path. Not proof that every pet accepts the kit."
-      },
-      {
-        "name": "Neakasa support model list",
-        "url": "https://neakasa.com/pages/support-center",
-        "note": "P1 Pro and other kits retain separate manual links; no end-of-life inference."
-      },
-      {
-        "name": "ASPCA coat matting guidance",
-        "url": "https://www.aspca.org/news/haircut-could-save-life-preventing-your-pets-coat-matting",
-        "note": "Appropriate coat tools and professional handling of difficult mats; no scissors for mat removal."
-      }
-    ],
-    "updatedAt": "October 26, 2026",
-    "researchNote": "P1 Pro English manual and diagrams, current FAQ and coat-care guidance reviewed October 26, 2026. We have not tested noise, suction, grooming or pet acceptance. The historical ASIN is a model reference; current seller, package and returns have not been freshly verified.",
+  {
+    "name": "Neakasa P1 Pro English user guide",
+    "url": "https://cdn.shopify.com/s/files/1/0600/4736/0185/files/Neakasa_P1_Pro_User_Guide.pdf?v=1683714218",
+    "note": "English 1–13 and diagrams visually reviewed; model-specific package, acoustic and maintenance information."
+  },
+  {
+    "name": "Neakasa P1 Pro FAQ",
+    "url": "https://neakasa.com/pages/neakasa-p1-pro-faq",
+    "note": "Introduction, filter inspection, damaged hose and airflow path. Not proof that every pet accepts the kit."
+  },
+  {
+    "name": "Neakasa support model list",
+    "url": "https://neakasa.com/pages/support-center",
+    "note": "P1 Pro and other kits retain separate manual links; no end-of-life inference."
+  },
+  {
+    "name": "ASPCA coat matting guidance",
+    "url": "https://www.aspca.org/news/haircut-could-save-life-preventing-your-pets-coat-matting",
+    "note": "Appropriate coat tools and professional handling of difficult mats; no scissors for mat removal."
+  },
+  {
+    "name": "November 1 exact US retailer observation",
+    "url": "https://www.amazon.com/dp/B09ZTMMXTK",
+    "note": "Selected US 10001 listing checked November 1. Match the exact model, selected condition, included kit, seller, delivery and return terms again before ordering; this is not physical product testing."
+  }
+],
+    "updatedAt": "November 1, 2026",
+    "researchNote": "P1 Pro English manual/diagrams, FAQ and coat-care guidance previously reviewed October 26. November 1 selected White P1 Pro five-tool offer observed, shipped by Amazon/sold by Neakasa official with 30-day return control; New condition was not separately established. No noise, suction, grooming or pet-acceptance test was performed.",
     "scores": [],
-    "purchaseCheck": "Confirm P1 Pro, the received power version and included tools. Proceed only with a suitable coat task, calm pet introduction and a workable cleaning/drying routine; keep a manual brush or professional care when those checks fail.",
+    "purchaseCheck": "Confirm P1 Pro, received power version and included tools. Compare only for a suitable coat task, calm introduction and workable cleaning/drying routine. Keep a manual brush or professional care when those checks fail; recheck selected condition and seller terms.",
     "sections": [
       {
         "heading": "Different attachments do different jobs",
@@ -466,14 +729,14 @@ export const secondRoundAugust2026Products: Product[] = [
     "slug": "tractive-dog-6-gps-tracker",
     "asin": "B0D6Z4L6BW",
     "amazonTitle": "Tractive DOG 6 Smart GPS Tracker, Black",
-    "seoTitle": "Tractive DOG 6: Subscription, Coverage and Battery Checks",
+    "seoTitle": "Tractive DOG 6: Fit, Coverage & Plan",
     "name": "Tractive DOG 6 GPS Tracker",
     "brand": "Tractive",
     "category": "comfort",
     "image": "/images/affiliate/pet-dog6-decision-editorial.svg",
     "imageAlt": "Editorial decision diagram: DOG 6 fit, route connection and billed plan",
     "summary": "A collar-mounted GPS and cellular tracker with a required paid plan. Its value depends on actual route coverage, collar fit, charging and a response plan; a country-support claim is not a route test.",
-    "verdict": "Consider DOG 6 only when the exact received model fits the dog and collar, the full subscription term is affordable, and a permitted evaluation can confirm useful updates on the required routes. Keep physical containment and an ordinary recovery plan. We have not verified this historical ASIN’s current offer or exact radio revision.",
+    "verdict": "Compare DOG 6 Black when the model fits the dog and collar, the full US subscription term is affordable and a permitted evaluation can confirm useful updates on the required routes. A current new Amazon.com offer was observed. Exact radio revision, route performance and battery endurance remain untested; keep physical containment and an ordinary recovery plan.",
     "bestFor": "A dog and collar that fit the exact DOG 6, with usable local connectivity and a maintained paid plan",
     "pros": [
       "Built-in SIM avoids choosing a separate personal SIM card",
@@ -481,10 +744,10 @@ export const secondRoundAugust2026Products: Product[] = [
       "A paid plan can support location updates where the actual tracker has suitable service"
     ],
     "cons": [
-      "Paid plan and renewal are separate from the device price",
-      "Poor cellular service can delay updates and shorten battery life",
-      "Exact historical radio revision, route performance and current offer remain unresolved"
-    ],
+  "Paid plan and renewal are separate from the device price",
+  "Poor cellular service can delay updates and shorten battery life",
+  "Exact radio revision, route performance and real battery endurance remain unverified"
+],
     "specs": {
       "Historical ASIN": "B0D6Z4L6BW",
       "Named reference": "DOG 6 Black / historical TG6A listing",
@@ -495,54 +758,59 @@ export const secondRoundAugust2026Products: Product[] = [
       "Charging": "DOG 6 USB-C; follow received manual and keep port dry"
     },
     "evidence": [
-      "Full initial plan charge and renewal must be recorded before comparing monthly equivalents",
-      "Phone coverage and country support do not establish the tracker’s bands or route performance",
-      "DOG 6 XL and XL Adventure have separate size and battery claims",
-      "No current 10001 seller, delivery or return offer was verified in this documentation review"
-    ],
+  "Full initial plan charge and renewal must be recorded before comparing monthly equivalents",
+  "Phone coverage and country support do not establish the tracker’s bands or route performance",
+  "DOG 6 XL and XL Adventure have separate size and battery claims",
+  "November 1 selected new Amazon.com offer observed; subscription charge, renewal and seller-specific evaluation terms still require confirmation"
+],
     "alternatives": [],
     "sources": [
-      {
-        "name": "Tractive: DOG 6 setup and model-specific manual",
-        "url": "https://help.tractive.com/hc/en-us/articles/19444832630290-Get-started-with-your-Tractive-DOG-6",
-        "note": "DOG 6 attachment, charging and connection states. English manual reviewed separately; XL models and exact historical hardware remain distinct."
-      },
-      {
-        "name": "Tractive: DOG 6 English manual",
-        "url": "https://help.tractive.com/hc/article_attachments/20633224756882",
-        "note": "English pages and diagrams reviewed; exact received revision and regional applicability still need confirmation."
-      },
-      {
-        "name": "Tractive: US plan selector",
-        "url": "https://tractive.com/en/c/plans?shopCountry=US",
-        "note": "Check the selected country, full initial charge, renewal and optional Care separately. A monthly equivalent is not a monthly payment option."
-      },
-      {
-        "name": "Tractive: when monthly payment is available",
-        "url": "https://help.tractive.com/hc/en-us/articles/360000473159-Can-I-pay-monthly-for-my-subscription",
-        "note": "Monthly Basic availability is country dependent; Premium terms are prepaid. No exact US checkout quote has been verified here."
-      },
-      {
-        "name": "Tractive: cellular coverage and poor-signal limits",
-        "url": "https://help.tractive.com/hc/en-us/articles/360001156409-Do-I-need-cellular-coverage",
-        "note": "A phone and tracker can use different bands; check a real route. Brand-store refund wording does not establish another retailer’s return terms."
-      },
-      {
-        "name": "Tractive: current DOG model comparison",
-        "url": "https://tractive.com/en/pd/gps-tracker-dog",
-        "note": "Relevant model, technical and package blocks reviewed; no newer-model specification transferred to the old ASIN."
-      },
-      {
-        "name": "Historical Amazon listing reference",
-        "url": "https://www.amazon.com/dp/B0D6Z4L6BW",
-        "note": "Historical selected listing identity only. The October26 documentation review is not a fresh10001 availability, seller, delivery or returns check."
-      }
-    ],
-    "updatedAt": "October 27, 2026",
+  {
+    "name": "Tractive: DOG 6 setup and model-specific manual",
+    "url": "https://help.tractive.com/hc/en-us/articles/19444832630290-Get-started-with-your-Tractive-DOG-6",
+    "note": "DOG 6 attachment, charging and connection states. English manual reviewed separately; XL models and exact historical hardware remain distinct."
+  },
+  {
+    "name": "Tractive: DOG 6 English manual",
+    "url": "https://help.tractive.com/hc/article_attachments/20633224756882",
+    "note": "English pages and diagrams reviewed; exact received revision and regional applicability still need confirmation."
+  },
+  {
+    "name": "Tractive: US plan selector",
+    "url": "https://tractive.com/en/c/plans?shopCountry=US",
+    "note": "Check the selected country, full initial charge, renewal and optional Care separately. A monthly equivalent is not a monthly payment option."
+  },
+  {
+    "name": "Tractive: when monthly payment is available",
+    "url": "https://help.tractive.com/hc/en-us/articles/360000473159-Can-I-pay-monthly-for-my-subscription",
+    "note": "Monthly Basic availability is country dependent; Premium terms are prepaid. No exact US checkout quote has been verified here."
+  },
+  {
+    "name": "Tractive: cellular coverage and poor-signal limits",
+    "url": "https://help.tractive.com/hc/en-us/articles/360001156409-Do-I-need-cellular-coverage",
+    "note": "A phone and tracker can use different bands; check a real route. Brand-store refund wording does not establish another retailer’s return terms."
+  },
+  {
+    "name": "Tractive: current DOG model comparison",
+    "url": "https://tractive.com/en/pd/gps-tracker-dog",
+    "note": "Relevant model, technical and package blocks reviewed; no newer-model specification transferred to the old ASIN."
+  },
+  {
+    "name": "Historical Amazon listing reference",
+    "url": "https://www.amazon.com/dp/B0D6Z4L6BW",
+    "note": "November 1 selected retailer identity and offer observed separately below. The earlier October 26 manual review remains dated; no received-unit, route or safety certification."
+  },
+  {
+    "name": "November 1 exact US retailer observation",
+    "url": "https://www.amazon.com/dp/B0D6Z4L6BW",
+    "note": "Selected US 10001 listing checked November 1. Match the exact model, selected condition, included kit, seller, delivery and return terms again before ordering; this is not physical product testing."
+  }
+],
+    "updatedAt": "November 1, 2026",
     "evidenceMode": "official-spec",
-    "researchNote": "DOG 6 setup, English manual and current plan/model guidance were reviewed October 26, 2026. No route, battery, alert or animal trial was performed. Catalog and general-help radio descriptions differ; no carrier-specific claim or fresh merchant acceptance is made.",
+    "researchNote": "DOG 6 setup, English manual and model/plan guidance were previously reviewed October 26. November 1 current manufacturer model distinctions and selected new US Amazon.com offer checked. US plan checkout was not completed or numerically quoted. No route, battery, alert or animal trial; exact received radio revision remains unresolved.",
     "amazonDetailUrl": "https://www.amazon.com/dp/B0D6Z4L6BW",
-    "whyItMatters": "Consider DOG 6 only when the exact received model fits the dog and collar, the full subscription term is affordable, and a permitted evaluation can confirm useful updates on the required routes. Keep physical containment and an ordinary recovery plan. We have not verified this historical ASIN’s current offer or exact radio revision.",
+    "whyItMatters": "DOG 6 combines a tracker, a paid plan and cellular coverage. Check the complete subscription charge and actual route behavior before relying on updates. A current new Amazon.com offer was observed November 1; exact received radio revision and route performance still need confirmation. Keep physical containment and an ordinary recovery plan.",
     "priceBand": "$$",
     "rating": 0,
     "scores": [],
@@ -573,7 +841,7 @@ export const secondRoundAugust2026Products: Product[] = [
       }
     ],
     "purchaseAlternatives": [],
-    "purchaseCheck": "Check B0D6Z4L6BW as DOG 6 Black, not DOG 6 XL or XL Adventure. Confirm received model, collar attachment, full plan payment and renewal, then the seller’s evaluation/return conditions. Route performance, current radio revision and stock remain unverified here.",
+    "purchaseCheck": "Match DOG 6 Black, dog/collar fit, full US plan charge and renewal. Check selected New and evaluation/return terms. Current stock does not prove radio revision or route coverage. Keep physical containment and a recovery plan.",
     "compareSlugs": []
   },
 ];

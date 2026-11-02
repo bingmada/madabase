@@ -30,11 +30,22 @@
     ]
   },
   "include": [
-    "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
+    ".next-body01/types/**/*.ts",
+    ".next-body02/types/**/*.ts",
+    ".next-body03/types/**/*.ts",
+    ".next-body04/types/**/*.ts",
+    ".next-body05/types/**/*.ts",
+    ".next-merchant07/types/**/*.ts",
+    ".next-merchant08/types/**/*.ts",
+    ".next-merchant14/types/**/*.ts",
+    ".next-parallel-critical/types/**/*.ts",
+    ".next-release/types/**/*.ts",
+    ".next-score-repair/types/**/*.ts",
     ".next/types/**/*.ts",
-    ".next-release/types/**/*.ts"
+    "next-env.d.ts",
+    ".next-merchant08-final/types/**/*.ts"
   ],
   "exclude": [
     "node_modules",

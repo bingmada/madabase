@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { hasQaParameters } from "../../../../../shared/analytics-traffic";
 import { isPublishedCommerceClick } from "@/lib/commerce-inventory";
+import { commercePage, commerceSiteMatchesHost, knownAutomation } from "@/lib/commerce-events";
 import { getAffiliatePrisma, hasDatabaseUrl } from "@/lib/db";
 import type { MarketKey, SiteKey } from "@/lib/types";
 
@@ -21,8 +22,15 @@ function cleanText(value: unknown, maxLength: number) {
 }
 
 export async function POST(request: Request) {
+  const requestHost = request.headers.get("host") || new URL(request.url).host;
+  let host: string;
+  try { host = new URL(`https://${requestHost}`).hostname; } catch { return NextResponse.json({ ok: false }, { status: 400 }); }
+  const origin = request.headers.get("origin");
+  try {
+    if (request.headers.get("sec-fetch-site") === "cross-site" || (origin && new URL(origin).host !== requestHost)) return NextResponse.json({ ok: false, reason: "origin_mismatch" }, { status: 403 });
+  } catch { return NextResponse.json({ ok: false, reason: "invalid_origin" }, { status: 403 }); }
   const referrer = request.headers.get("referer");
-  let qaVisit = false;
+  let qaVisit = host === "localhost" || host === "127.0.0.1" || host.endsWith(".localhost");
   if (referrer) {
     try {
       if (hasQaParameters(new URL(referrer).search)) {
@@ -41,13 +49,14 @@ export async function POST(request: Request) {
   const merchant = cleanText(payload.merchant, 80);
   const position = cleanText(payload.position, 80);
   const path = cleanText(payload.path, 240);
+  const page = commercePage(path);
   const eventId = cleanText(payload.eventId, 80);
 
   if (
     !eventId ||
     !merchant ||
     !position ||
-    !path.startsWith("/") ||
+    !page || !commerceSiteMatchesHost(site, host) || page.market !== market ||
     !isPublishedCommerceClick(site, productSlug, merchant)
   ) {
     return NextResponse.json(
@@ -60,6 +69,7 @@ export async function POST(request: Request) {
   if (qaVisit) {
     return NextResponse.json({ ok: true, persisted: false, reason: "qa_visit", validated: true });
   }
+  if (knownAutomation(request.headers.get("user-agent") || "")) return NextResponse.json({ ok: true, persisted: false, reason: "known_automation", validated: true });
 
   const cleanPayload = {
     eventId,

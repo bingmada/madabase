@@ -1,5 +1,5 @@
 {
-  "reviewedAt": "2026-10-25T23:39:11.863Z",
+  "reviewedAt": "2026-10-26T06:46:56.766Z",
   "sources": [
     {
       "url": "https://help.babyjogger.com/s/article/CITY-TOUR-2-SPECIFICATIONS",
@@ -11,7 +11,7 @@
     },
     {
       "url": "https://www.babyjogger.com/discontinued-products.html",
-      "scope": "Search-visible official list distinguishes City Tour predecessor from City Tour2 and unrelated GT2/GT3. Absence from list is not continuity or successor proof; further model-currency review remains."
+      "scope": "Relevant discontinued-family list read in full. Original City Tour is a predecessor of City Tour2; GT2/GT3 is a different family. No inference from an expired URL or absence on a list."
     },
     {
       "url": "https://www.aa.com/web/i18n/travel-info/special-assistance/traveling-children.html",
@@ -88,12 +88,95 @@
     {
       "url": "https://petlibro.com/pages/how-do-i-disassemble-and-clean-the-granary-smart-feeder-af103-plaf103",
       "scope": "Full relevant cleaning body read. Washable components separate; powered base cannot be rinsed or wet-wiped. No generic dishwasher instruction."
+    },
+    {
+      "url": "https://www.babyjogger.com/city-tour.html",
+      "scope": "Current family feature and accessory body read. No retailer configuration, stock, child fit or physical performance transferred."
+    },
+    {
+      "url": "https://www.babyjogger.com/strollers/shop-all-strollers/compact-and-lightweight/city-tour-2/",
+      "scope": "Current official collection body read: City Tour2 Eco listed. Exact ASIN package and like-for-like successor remain separate, not established by the collection."
+    },
+    {
+      "url": "https://www.babyjogger.com/accessories/shop-all-accessories/city-tour-accessories/",
+      "scope": "Relevant current accessory collection read. Accessory availability does not establish contents of the selected stroller bundle."
+    },
+    {
+      "url": "https://www.cpsc.gov/s3fs-public/5066.pdf",
+      "scope": "Full one-page text read and downloaded PDF rendered and visually inspected, including cord placement diagram. Three feet from any part of sleep environment, out of reach, never inside/on crib edge. Local SHA256 5d79ca9e59bc6d89dc29175a7123f5a1fbf26f2137925ba96a309aae68c54cdb."
+    },
+    {
+      "url": "https://momcozy.com/products/portable-breast-milk-water-warmer-for-travel",
+      "scope": "Full relevant description, package variation, adapter warning, US/variant selector, return/warranty text and all10 FAQs read. It currently warns that supplied adapter is for this warmer only and packages vary. Simultaneous stock labels do not verify availability. Heating/feed-count, 100percent-safe and formula marketing are not adopted as tested or clinical guarantees."
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/C11b2ZSi3ES.pdf",
+      "scope": "All4 PDF spreads rendered locally and visually read, covering printed panels1-8, safety, model codes, assembly, harness/recline, brake/fold and care diagrams. Document dated12/2015 lists21840A,21930A,21960A,21970A,21940A,21990A,21920A. It does not establish applicability to historical ASIN B0D5BGKNBX or current availability; family-level manual only."
+    },
+    {
+      "url": "https://www.nanit.com/products/nanit-pro-camera?mount=floor-stand",
+      "scope": "Redirects to current smart-baby-monitor variant. Relevant overview, mount/display choices and complete FAQ read. Dynamic tabs retain placeholder text. Camera-only versus camera-plus-display choices do not establish the held Essentials ASIN contents; no fresh stock or current bundle match established."
+    },
+    {
+      "url": "https://www.infantoptics.com/product/dxr-8-pro",
+      "scope": "Relevant current model, technical specification and SS comparison sections read. Non-SS is single-view, up to4 cameras, non-WiFi parent-unit workflow. Range is line-of-sight manufacturer specification, not a home coverage test; privacy and outcome guarantees not adopted."
+    },
+    {
+      "url": "https://www.infantoptics.com/product/dxr-8-pro-ss",
+      "scope": "Relevant complete product description, tradeoffs and technical model table read. Separate SS split-screen/simultaneous dual-audio reference; not the linked non-SS ASIN or an assertion that the older product is discontinued. No security guarantee or retailer availability transferred."
+    },
+    {
+      "url": "https://www.infantoptics.com/support",
+      "scope": "Current support model/manual list read; current PRO manual is linked from official support to Shopify CDN and was downloaded/rendered/read. Old wordpress manual404 and FCC mirror cache miss are not product discontinuation evidence."
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0780/1408/7346/files/DXR-8-PRO-User-Manual-V3.7.pdf.pdf?v=1788237500",
+      "scope": "Located through current official support, downloaded and full16 printed panels visually read from rendered crops. Model-specific power, placement, pairing, battery and interference boundaries retained; no physical performance, security guarantee or current retailer inspection."
+    },
+    {
+      "url": "https://petlibro.com/products/petlibro-5g-wifi-automatic-pet-feeder",
+      "scope": "Current PLAF103 overview, current Granary2 link, capacity/bowl contents, complete relevant spec and food/portion/backup FAQ read. Portion-weight example is not fixed grams; spec says10 schedules while an FAQ example says6. Current active stock is not established by mixed generic buttons."
+    },
+    {
+      "url": "https://petlibro.com/products/granary-2-series",
+      "scope": "New-series comparison rows and full relevant specification/FAQ block read. Weighing and model-specific camera/access features differ from older PLAF103/PLAF301. Selected spec versus general FAQ contains food-size2-15/2-18mm and floor/carpet conflicts. No automatic model replacement, new merchant offer or verified performance claimed."
+    },
+    {
+      "url": "https://petlibro.com/pages/how-do-i-disassemble-and-clean-the-one-rfid-pet-feeder-af301-plaf301",
+      "scope": "Native page body is incomplete/image-based. Care boundaries are supported separately by the V0005 English manual, fully read with diagrams; no universal procedure transferred to another revision."
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0252/5197/1119/files/PETLIBRO_Granary_WIFI_Feeder_PLAF103_USER_MANUAL_7e70ddbd-4395-4885-bfd2-fdfdb143874b.pdf?v=1691135055",
+      "scope": "Downloaded V3.0 original-labelled manual; all13 PDF spreads visually read including22 printed English pages. Food, portions, power restrictions, dry base, only steel-bowl dishwasher claim, care, specification, warranty and diagrams reviewed. Current product spec differs in weight/temperature/warranty examples; those are not silently combined."
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0252/5197/1119/files/Petlibro-AF301-3L-_US_DE_IT_FR_ES.pdf?v=1774007057",
+      "scope": "Downloaded64-page multilingual V0005 manual. Cover, contents and complete English printed1-23 (PDF5-16) visually read with diagrams. Other-language repetitions not reviewed. English16 explicitly retains battery Wi-Fi, conflicting with product/support;449mm manual versus442mm product length also unresolved by received revision. Purchase hold remains."
+    },
+    {
+      "url": "https://www.kids2.com/products/32843-000-summer-by-ingenuity-3dlite-convenience-stroller-jet-black",
+      "scope": "Full relevant current SKU32843 description, child fields, dimensions, care and original-manual route read. A current family SKU is not established as historical B0D5BGKNBX. No manufacturer comfort ranking or current retailer availability transferred."
+    },
+    {
+      "url": "https://www.kids2.com/products/32303-000-summer-by-ingenuity-3dlite-convenience-stroller",
+      "scope": "Full relevant current SKU32303 body read. Distinct age fields/SKU; not used to certify another variant."
+    },
+    {
+      "url": "https://images.salsify.com/image/upload/s--iQDrVPv_--/woyvtadtahb5aekcoj0d.pdf",
+      "scope": "June2025 official Kids2-linked21930/32843 manual downloaded. Complete English PDF1-8 read visually, including all fold, harness, brake, assembly and care diagrams. Other languages not reviewed. ASIN applicability unresolved; purchase paused, not a recall/EOL finding."
+    },
+    {
+      "url": "https://www.amazon.com/dp/B0D5BGKNBX",
+      "scope": "Web parser returned an indexed raw retailer document crawled2weeks earlier. Title/model/ASIN fields read for an identity discrepancy; model17013 and child-tray fields do not establish an exact manual match. Not a live browser offer, delivery-region, stock, seller or return observation. No verification date refreshed."
     }
   ],
   "remaining": [
-    "Read linked CPSC monitor-cord PDF in full, including visual placement extent if retained as PDF reference.",
-    "Read linked manufacturer PLAF301 support images/manual portions where needed; productFAQ supports current identity claims.",
-    "Verify remaining product-page links, model/successor evidence and related-roundup contradictions before acceptance.",
-    "No fresh Amazon stock/seller/return or delivered-adapter identity established."
-  ]
+    "Summer exact ASIN/model/manual applicability",
+    "Nanit historical Essentials bundle identity/current offer",
+    "One RFID received revision and conflicting battery Wi-Fi/dimension documents"
+  ],
+  "pendingRelatedProductReviews": [],
+  "status": "bounded_source_claim_review_passed_local",
+  "acceptedAt": "2026-10-26T07:28:34.331223+00:00",
+  "acceptanceLimit": "Exact merchant identity unresolved; public-facing claims retain unknown states and purchase holds. Not merchant acceptance."
 }

@@ -199,7 +199,8 @@ export default async function CategoryPage({
               <p className="mt-2 max-w-xl text-sm leading-6 text-[var(--muted)]">Open the named listing to compare the live price, availability, delivery, seller, configuration, and returns.</p>
             </div>
             <div className="shrink-0">
-              <AffiliateButtonGroup site={site.key} product={commerceProduct} position="category-first-viewport-starting-option" limit={1} firstViewport />
+              <AffiliateButtonGroup site={site.key} product={commerceProduct} position="category-first-viewport-starting-option" limit={1} firstViewport sticky={false} />
+              <p className="mt-2 text-xs leading-5 text-[var(--muted)]">Current price &amp; availability · purchase link</p>
             </div>
           </section>
         ) : null}

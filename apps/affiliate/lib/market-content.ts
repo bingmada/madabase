@@ -24,6 +24,7 @@ import {
 import { sites } from "./sites";
 import { findAmazonFamilyProduct } from "./amazon-family-products";
 import type { Guide, MarketKey, SiteKey } from "./types";
+import { taskGuidePaths } from "./task-guide-paths";
 
 export type MarketContentRoute = "reviews" | "guides" | "best" | "tools" | "categories";
 
@@ -39,6 +40,7 @@ export type LocalizedMarketVariant = {
   title: string;
   dek: string;
   quickAnswer: string;
+  answerLanguage?: "en";
   sections: Array<{ heading: string; body: string }>;
   checkoutChecks: string[];
 };
@@ -503,8 +505,9 @@ function automaticVariant(page: MarketPageDescriptor, market: MarketProfile): Lo
   if (market.key === "de") {
     return {
       title: `${sourceTitle}: Kaufberatung für Deutschland`,
-      dek: `Deutsche Länderausgabe mit regionaler Modell-, Kompatibilitäts- und Angebotsprüfung. Grundlage ist die redaktionelle Hauptrecherche zu „${sourceTitle}“.`,
-      quickAnswer: `Nutzen Sie die Hauptrecherche zu „${sourceTitle}“ für die Sachentscheidung und prüfen Sie danach das genaue deutsche beziehungsweise EU-Modell, bevor Sie ein Angebot auswählen.`,
+      dek: `Englische Fachentscheidung zu „${sourceTitle}“ mit deutschen Hinweisen zum genauen Modell und Angebot. Eine eigenständige Übersetzung oder Prüfung des regionalen Produkts wird hier nicht behauptet.`,
+      quickAnswer: sourceDecision,
+      answerLanguage: "en",
       sections: [
         {
           heading: "Hauptrecherche und Länderausgabe zusammen verwenden",
@@ -512,7 +515,7 @@ function automaticVariant(page: MarketPageDescriptor, market: MarketProfile): Lo
         },
         {
           heading: "Regionales Modell und Kompatibilität neu bestätigen",
-          body: "Gleiche Produktnamen können andere Modellnummern, Funkbänder, Stecker, Netzteile, Größen, Materialien, Sets oder App-Funktionen bezeichnen. Vergleichen Sie das konkrete deutsche beziehungsweise EU-Angebot mit den Herstellerunterlagen.",
+          body: "Vergleichen Sie die genaue Modellkennung, die gewählte Variante und den Lieferumfang mit der Anleitung. Die Bedingungen und Ausschlüsse in der obigen Fachentscheidung gelten weiterhin; eine ähnlich benannte EU-Ausführung ist nicht automatisch dasselbe Produkt.",
         },
         {
           heading: "Das vollständige Angebot bewerten",
@@ -521,7 +524,7 @@ function automaticVariant(page: MarketPageDescriptor, market: MarketProfile): Lo
       ],
       checkoutChecks: [
         "Genaues deutsches beziehungsweise EU-Modell",
-        "230V, Stecker, Funk, Maße oder regionale Kompatibilität",
+        "Bedingungen und Ausschlüsse der konkreten Fachentscheidung",
         "Lieferumfang, Verkäufer, Versand und Mehrwertsteuer",
         "Garantie, Rückgabe und aktuelle Verfügbarkeit",
       ],
@@ -531,8 +534,9 @@ function automaticVariant(page: MarketPageDescriptor, market: MarketProfile): Lo
   if (market.key === "nl") {
     return {
       title: `${sourceTitle}: koophulp voor Nederland`,
-      dek: `Nederlandse landeditie met controle van regionaal model, compatibiliteit en aanbod. Het redactionele hoofdonderzoek naar ‘${sourceTitle}’ blijft de inhoudelijke basis.`,
-      quickAnswer: `Gebruik het hoofdonderzoek naar ‘${sourceTitle}’ voor de inhoudelijke keuze en controleer daarna het exacte Nederlandse of EU-model voordat je een aanbod selecteert.`,
+      dek: `Engelstalig inhoudelijk advies over ‘${sourceTitle}’ met Nederlandse controles van het exacte model en aanbod. Dit is geen zelfstandige vertaling of bevestiging van een regionaal product.`,
+      quickAnswer: sourceDecision,
+      answerLanguage: "en",
       sections: [
         {
           heading: "Gebruik hoofdonderzoek en landeditie samen",
@@ -540,7 +544,7 @@ function automaticVariant(page: MarketPageDescriptor, market: MarketProfile): Lo
         },
         {
           heading: "Bevestig regionaal model en compatibiliteit opnieuw",
-          body: "Dezelfde productnaam kan andere modelnummers, radiobanden, stekkers, voedingen, maten, materialen, pakketten of appfuncties omvatten. Vergelijk het concrete Nederlandse of EU-aanbod met de documentatie van de fabrikant.",
+          body: "Vergelijk het exacte model, de gekozen uitvoering en de pakketinhoud met de handleiding. De voorwaarden en uitsluitingen in het inhoudelijke advies hierboven blijven gelden; een gelijknamige EU-uitvoering is niet automatisch hetzelfde product.",
         },
         {
           heading: "Beoordeel het volledige aanbod",
@@ -549,7 +553,7 @@ function automaticVariant(page: MarketPageDescriptor, market: MarketProfile): Lo
       ],
       checkoutChecks: [
         "Exact Nederlands of EU-model",
-        "230V, stekker, radio, maten of regionale compatibiliteit",
+        "Voorwaarden en uitsluitingen uit het specifieke inhoudelijke advies",
         "Pakketinhoud, verkoper, levering en btw",
         "Garantie, retour en actuele beschikbaarheid",
       ],
@@ -570,7 +574,7 @@ function automaticVariant(page: MarketPageDescriptor, market: MarketProfile): Lo
       },
       {
         heading: `Match the exact ${regional} model`,
-        body: `A shared product name can hide different model numbers, wireless bands, plugs, power supplies, dimensions, materials, bundles or app features. Compare the selected ${regional} offer with current manufacturer documentation.`,
+        body: `Match the selected ${regional} model, variant and included pieces to its instructions. Keep the task-specific conditions and exclusions in the answer above; a similarly named regional version does not establish the same fit or capabilities.`,
       },
       {
         heading: "Check the complete landed offer",
@@ -579,7 +583,7 @@ function automaticVariant(page: MarketPageDescriptor, market: MarketProfile): Lo
     ],
     checkoutChecks: [
       `Exact ${regional} model and configuration`,
-      "Power, plug, radio, dimensions or regional compatibility",
+      "Task-specific conditions and exclusions from the answer above",
       `${landedCost}, seller, delivery and included pieces`,
       "Regional warranty, returns and current availability",
     ],
@@ -613,10 +617,11 @@ function automaticPagesForSite(siteKey: SiteKey): LocalizedMarketPage[] {
         sourceDecision: product.verdict ?? product.summary,
         sourceRisk: product.cons[0],
         image: product.amazonImage ?? product.image,
+        imageAlt: product.imageAlt,
         sourceLinks: product.sources ?? [],
         updatedAt: product.updatedAt ?? "July 27, 2026",
         relatedPaths: uniqueRelatedPaths([
-          { label: site.categories.find((item) => item.slug === product.category)?.name ?? product.category, path: `/categories/${product.category}` },
+          ...site.categories.filter((item) => item.slug === product.category).map((item) => ({ label: item.name, path: `/categories/${item.slug}` })),
           ...(product.compareSlugs ?? []).map((slug) => {
             const related = findProduct(siteKey, slug);
             return related ? { label: related.amazonTitle ?? related.name, path: `/reviews/${related.slug}` } : undefined;
@@ -647,15 +652,13 @@ function automaticPagesForSite(siteKey: SiteKey): LocalizedMarketPage[] {
         commerceProductSlug: roundupCommerceProduct(siteKey, roundup)?.slug,
         sourceTitle: roundup.title,
         sourceDek: roundup.dek,
-        sourceDecision: topPick
-          ? `Start with ${topPick.amazonTitle ?? topPick.name} when the priority is ${topPick.bestFor.toLowerCase()}.`
-          : roundup.intent,
+        sourceDecision: roundup.quickAnswer ?? roundup.intent,
         sourceRisk: topPick?.cons[0],
         image: topPick?.amazonImage ?? topPick?.image ?? site.heroImage,
         sourceLinks,
         updatedAt: roundup.updatedAt ?? latestUpdate(picks.map((product) => product.updatedAt)),
         relatedPaths: uniqueRelatedPaths([
-          { label: site.categories.find((item) => item.slug === roundup.category)?.name ?? roundup.category, path: `/categories/${roundup.category}` },
+          ...site.categories.filter((item) => item.slug === roundup.category).map((item) => ({ label: item.name, path: `/categories/${item.slug}` })),
           ...picks.map((product) => ({ label: product.amazonTitle ?? product.name, path: `/reviews/${product.slug}` })),
           ...guides
             .filter((guide) => guide.relatedRoundups.includes(roundup.slug))
@@ -665,6 +668,7 @@ function automaticPagesForSite(siteKey: SiteKey): LocalizedMarketPage[] {
     }),
     ...guides.map((guide) => {
       const ownPath = `/guides/${guide.slug}`;
+      const taskPaths = taskGuidePaths(siteKey, guide.slug);
       const primaryProduct = guide.relatedProducts
         ?.map((slug) => findProduct(siteKey, slug))
         .find(Boolean);
@@ -682,8 +686,8 @@ function automaticPagesForSite(siteKey: SiteKey): LocalizedMarketPage[] {
         commerceFamilyTitle: familyProduct?.title,
         decisionPurchase: guide.decisionPurchase,
         commercePausedReason: familyProduct?.offerBlock
-          ? `Listing checked ${familyProduct.offerBlock.checkedAt}: ${familyProduct.offerBlock.reason}`
-          : !familyProduct && !guideCommerceProduct(siteKey, guide)
+          ? `Purchase path reviewed ${familyProduct.offerBlock.checkedAt}: ${familyProduct.offerBlock.reason}`
+          : !taskPaths && !familyProduct && !guideCommerceProduct(siteKey, guide)
             && ((guide.relatedProducts?.length ?? 0) > 0 || guide.relatedRoundups.length > 0)
             ? "Purchase links for the products discussed here are paused until a matching offer can be verified. Use the specifications and fit checks below when comparing current retailer listings."
             : undefined,
@@ -697,8 +701,8 @@ function automaticPagesForSite(siteKey: SiteKey): LocalizedMarketPage[] {
         imageAlt: guide.imageAlt,
         sourceLinks: guide.sources ?? primaryProduct?.sources ?? [],
         updatedAt: guide.updatedAt ?? "July 27, 2026",
-        relatedPaths: uniqueRelatedPaths([
-          { label: site.categories.find((item) => item.slug === guide.category)?.name ?? guide.category, path: `/categories/${guide.category}` },
+        relatedPaths: uniqueRelatedPaths(taskPaths ? taskPaths.choices.map((choice) => ({label:choice.label,path:choice.href})) : [
+          ...site.categories.filter((item) => item.slug === guide.category).map((item) => ({ label: item.name, path: `/categories/${item.slug}` })),
           ...(guide.relatedProducts ?? []).map((slug) => {
             const product = findProduct(siteKey, slug);
             return product ? { label: product.amazonTitle ?? product.name, path: `/reviews/${product.slug}` } : undefined;
@@ -727,7 +731,7 @@ function automaticPagesForSite(siteKey: SiteKey): LocalizedMarketPage[] {
         image: site.heroImage,
         updatedAt: tool.updatedAt ?? "July 27, 2026",
         relatedPaths: uniqueRelatedPaths([
-          { label: site.categories.find((item) => item.slug === tool.category)?.name ?? tool.category, path: `/categories/${tool.category}` },
+          ...site.categories.filter((item) => item.slug === tool.category).map((item) => ({ label: item.name, path: `/categories/${item.slug}` })),
           ...tool.relatedRoundups.map((slug) => {
             const roundup = findRoundup(siteKey, slug);
             return roundup ? { label: roundup.title, path: `/best/${roundup.slug}` } : undefined;

@@ -1,6 +1,7 @@
 node_modules
-.next
-.next-release
+# Next.js output, including temporary per-batch build directories.
+.next*/
+next-env.d.ts
 *.tsbuildinfo
 .env
 .env.*
@@ -9,7 +10,18 @@ node_modules
 docs
 deploy
 tiktok
-
+reports
 # Local account verification; never publish private account status.
 apps/affiliate/reports/compatibility-search-2026-10-19/merchant-verification.json
 apps/affiliate/reports/compatibility-search-2026-10-19/__pycache__/
+
+# OS metadata and Python bytecode caches.
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+
+# Generated media and release archives; keep skill and package source visible.
+/artifacts/pinterest/
+/artifacts/amazon-storefront/
+/packages/**/*.tgz

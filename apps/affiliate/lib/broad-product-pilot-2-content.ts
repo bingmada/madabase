@@ -343,16 +343,48 @@ export const broadProductPilot2Guides: Guide[] = [
       note: "Used to identify real desk-space, fit, cooling, and stability questions; no single setup is treated as universal compatibility evidence.",
     }],
     sections: [
-      { heading: "Measure the real device, not the product family", body: "Laptop generations, feet, tapered edges, hard shells, skins, and sleeves change effective thickness. Measure at the point that will sit in the slot and note whether the stand grips the center or a tapered edge. An adjustable design provides range, but it still needs even padded contact without forcing the display and base together or allowing uncontrolled lean." },
-      { heading: "Test stability during removal", body: "A stand can feel solid with two devices installed yet move when one is lifted. Check base width, mass, non-slip feet, slot spacing, device center of gravity, and the direction of cable pull. Place it away from desk edges and pet or child traffic. If the stand must be held down with one hand during every removal, the workspace fit is incomplete." },
-      { heading: "Route cables so they do not become levers", body: "Identify which ports stay connected and whether plugs exit upward, sideways, or toward the desk. Leave enough slack for a clean lift, preserve cable bend radius, and anchor the cable bundle independently of the laptop. A rigid dock cable or heavy adapter hanging sideways can rotate the device in the slot and transmit desk movement directly to its ports." },
-      { heading: "Verify the computer's closed-display requirements", body: "A vertical stand stores the computer; it does not change operating-system policy. Confirm the laptop maker's requirements for external power, display, keyboard, pointing device, sleep, wake, and lid behavior. If fingerprint, power, or recovery controls become inaccessible, decide how they will be reached. Test updates and restart flows, not only the normal logged-in desktop." },
-      { heading: "Watch heat and contact wear", body: "Keep vents and exhaust paths clear and compare closed-lid use with the computer's thermal guidance. Vertical orientation may expose some surfaces but can obstruct others depending on the model. Inspect silicone pads for compression, adhesive movement, and dust. Clean both stand and laptop before repeated insertion; soft padding with embedded grit can still mark an anodized or painted finish." },
+      {
+        "heading": "Measure the real device, not the product family",
+        "body": "Laptop generations, feet, tapered edges, hard shells, skins, and sleeves change effective thickness. Measure at the point that will sit in the slot and note whether the stand grips the center or a tapered edge. An adjustable design still needs even padded contact without forcing the display and base together or allowing uncontrolled lean. For Satechi ST-ADVSM, the manufacturer lists fixed front/rear openings of about 12/20 mm, while the linked ASIN's bullets and dimension image show 0.4/0.6 inches, about 10.2/15.2 mm. Keep that exact purchase paused until the supplied openings are confirmed; the manufacturer's larger figures do not guarantee retail fit. Its dedicated support page also lists Surface Pro 9 as incompatible despite a conflicting generic product-page list. Check the exact device and case rather than assuming compatibility from the family name."
+      },
+      {
+        "heading": "Test stability during removal",
+        "body": "A stand can feel solid with two devices installed yet move when one is lifted. Check base width, mass, non-slip feet, slot spacing, device center of gravity, and the direction of cable pull. Place it away from desk edges and pet or child traffic. If the stand must be held down with one hand during every removal, the workspace fit is incomplete."
+      },
+      {
+        "heading": "Route cables so they do not become levers",
+        "body": "Identify which ports stay connected and whether plugs exit upward, sideways, or toward the desk. Leave enough slack for a clean lift, preserve cable bend radius, and anchor the cable bundle independently of the laptop. A rigid dock cable or heavy adapter hanging sideways can rotate the device in the slot and transmit desk movement directly to its ports."
+      },
+      {
+        "heading": "Verify the computer's closed-display requirements",
+        "body": "A vertical stand stores the computer; it does not change operating-system policy. Confirm the laptop maker's requirements for external power, display, keyboard, pointing device, sleep, wake, and lid behavior. If fingerprint, power, or recovery controls become inaccessible, decide how they will be reached. Test updates and restart flows, not only the normal logged-in desktop."
+      },
+      {
+        "heading": "Watch heat and contact wear",
+        "body": "Keep vents and exhaust paths clear and compare closed-lid use with the computer's thermal guidance. Vertical orientation may expose some surfaces but can obstruct others depending on the model. Inspect silicone pads for compression, adhesive movement, and dust. Clean both stand and laptop before repeated insertion; soft padding with embedded grit can still mark an anodized or painted finish."
+      }
     ],
     sources: [
-      { name: "Satechi Dual Vertical Laptop Stand specifications", url: "https://support.satechi.com/hc/en-us/articles/41209485070363-Technical-Specifications-Dual-Vertical-Laptop-Stand-ST-ADVSM", note: "Official slot range, capacity, materials, padding, base, dimensions, and model identity." },
-      { name: "Apple use a Mac laptop in closed-display mode", url: "https://support.apple.com/102597", note: "Primary platform guidance for closed-display requirements; other laptop makers have their own instructions." },
-      { name: "Amazon ASIN B09WY2RLQG", url: "https://www.amazon.com/dp/B09WY2RLQG", note: "Exact Satechi ST-ADVSM draft anchor; verify seller, model, and current selection before publication." },
+      {
+        "name": "Satechi ST-ADVSM product specifications and FAQ",
+        "url": "https://satechi.com/products/satechi-dual-vertical-laptop-stand",
+        "note": "Model, fixed slot widths, case fit and published dimensions. The footprint wording needs confirmation for a tight desk layout."
+      },
+      {
+        "name": "Satechi ST-ADVSM device compatibility",
+        "url": "https://support.satechi.com/hc/en-us/articles/30289399353499-Device-Compatibility-Dual-Vertical-Laptop-Stand-ST-ADVSM",
+        "note": "The dedicated compatibility list conflicts with the generic product page on Surface Pro 9. Do not assume fit from the product-family label."
+      },
+      {
+        "name": "Apple use a Mac laptop in closed-display mode",
+        "url": "https://support.apple.com/102597",
+        "note": "Primary platform guidance for closed-display requirements; other laptop makers have their own instructions."
+      },
+      {
+        "name": "Amazon ASIN B09WY2RLQG",
+        "url": "https://www.amazon.com/dp/B09WY2RLQG",
+        "note": "Current ST-ADVSM listing and slot-width image checked October 30, 2026. Its 0.4/0.6-inch openings conflict with the manufacturer's 12/20 mm figures. The exact purchase remains paused pending supplied-unit fit confirmation; current seller return terms are unresolved."
+      }
     ],
     relatedGuides: ["adjustable-laptop-stands-buying-guide", "usb-switch-vs-kvm-vs-dock-guide"],
     relatedRoundups: ["best-home-office-cable-management"],

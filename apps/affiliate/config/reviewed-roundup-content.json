@@ -4,7 +4,7 @@
     "dek": "Compare fit workflow, mesh, carry positions, listed weight range, lumbar support, and which differences matter before trying either carrier.",
     "category": "travel",
     "intent": "Choose between two premium breathable structured baby carriers without pretending specifications can replace a fit test.",
-    "intro": "Shortlist Harmony when its front-access buckle workflow suits the caregiver. Compare Omni Breeze when hip carry or its higher overall limit has a job. Check the exact child-size and position conditions on each model, then assess each wearer separately within the return terms. Neither a mesh label nor an overall weight range establishes fit.",
+    "intro": "Compare Harmony’s front-access fastening with Breeze’s documented hip-carry option and separate position ranges. Resolve Harmony’s inconsistent newborn warning before treating it as a newborn choice. Neither an overall weight ceiling nor mesh establishes a fit, cooler use or a permitted later position. Keep a suitable existing carrier when neither difference has a job.",
     "comparisonTable": {
       "title": "Differences that change the carry routine",
       "columns": [
@@ -13,10 +13,10 @@
       ],
       "rows": [
         {
-          "label": "Overall listed range",
+          "label": "Overall range and version",
           "values": [
-            "7–40 lb and 21–39 in; position-specific instructions apply",
-            "7–45 lb and at least 20 in; position-specific limits apply"
+            "Current page 7–40 lb/21–39 in; manual has 7/8 lb minimum and leg-strap conflicts",
+            "Original manual 7–45 lb/minimum 20 in; separate fit and position requirements"
           ]
         },
         {
@@ -24,6 +24,13 @@
           "values": [
             "Front inward, eligible outward, and back",
             "Front inward, eligible outward, hip, and back"
+          ]
+        },
+        {
+          "label": "Later position condition",
+          "values": [
+            "Outward from independent upright head control, about five months, max 26 lb; back from 12 months",
+            "Outward has its own size/readiness conditions; hip/back from 17.2 lb with required development and sitting guidance"
           ]
         },
         {
@@ -51,26 +58,26 @@
     },
     "decisionGuide": [
       {
-        "label": "Front buckles",
-        "detail": "Harmony is easier to shortlist when front-access fastening is the preferred workflow."
+        "label": "Front-access buckles",
+        "detail": "Compare Harmony’s adjustment sequence only after the applicable instructions are resolved."
       },
       {
-        "label": "Hip carry",
-        "detail": "Omni Breeze is the candidate because Harmony does not list a hip-carry position."
+        "label": "Hip position needed",
+        "detail": "Breeze documents a hip option with separate child-size and developmental conditions."
       },
       {
-        "label": "Higher maximum",
-        "detail": "Omni Breeze lists 45lb versus Harmony's 40lb."
+        "label": "Later back position",
+        "detail": "Harmony begins at 12 months in the reviewed manual; Breeze uses its own weight, sitting and fit requirements."
       },
       {
-        "label": "Personal comfort",
-        "detail": "Try the waist belt and shoulder path with realistic weight before deciding."
+        "label": "Existing carrier works",
+        "detail": "Keep it if it correctly fits the child, wearer and intended documented position."
       }
     ],
     "methodology": [
-      "Compare official position and size limits",
-      "Keep newborn and later-position rules separate",
-      "Treat caregiver fit and returns as decision criteria"
+      "Compared the published size and position limits and adjustment instructions for Harmony and Omni Breeze. Harmony’s differing newborn minimum and leg-strap statements remain unresolved.",
+      "Kept newborn, outward and back-use conditions separate, and distinguished the Breeze hip option from Harmony’s documented positions. Exact retail versions and return terms remain separate checks.",
+      "No carrier was worn or loaded with a child, and no comfort, temperature, loading-speed or fit comparison was performed."
     ],
     "productSlugs": [
       "babybjorn-carrier-harmony",
@@ -79,15 +86,15 @@
     "faqs": [
       {
         "question": "Which carrier is cooler?",
-        "answer": "Both use breathable mesh, but heat also depends on body contact, clothing, weather, activity, and fit."
+        "answer": "Mesh is a fabric description here, not a measured temperature advantage. Body contact, clothing, weather, activity and fit still affect the outing; plan breaks or another carrying method when needed."
       },
       {
         "question": "Which is easier to put on?",
-        "answer": "Harmony's front buckles suit some caregivers; others prefer Omni Breeze after learning its strap sequence."
+        "answer": "Compare each caregiver’s access to Harmony’s front buckles and Breeze’s strap sequence. This review has not timed loading or established a universal comfort winner."
       },
       {
         "question": "Can both carry a newborn?",
-        "answer": "Both list newborn use from stated minimums, but only in the correct inward-facing setup with the required head support."
+        "answer": "Breeze has an eligible inward newborn setup with size and fit conditions. Harmony’s currently linked manual has unresolved minimum and leg-strap differences; confirm the exact unit’s instructions before use."
       }
     ],
     "sections": [
@@ -98,18 +105,22 @@
       {
         "heading": "Compare the named carrier with current alternatives",
         "body": "This table compares Harmony with Omni Breeze. Ergobaby also offers Omni Deluxe, with different storage and adjustment features. Compare that model separately for a new purchase; its manual does not replace the Breeze instructions. Keep a correctly fitting existing carrier when it still serves the intended use."
+      },
+      {
+        "heading": "Newborn and back-use differences need explicit checks",
+        "body": "Harmony’s linked US manual has a 7 lb chart but an 8 lb warning and differing leg-strap conditions. Ask for the matching instructions; do not select the lower statement. Harmony back carry starts at 12 months, while Breeze has its own weight and developmental conditions. A child eligible for one carrier’s position is not automatically eligible for the other."
       }
     ],
     "sources": [
       {
-        "name": "BabyBjörn Harmony",
-        "url": "https://www.babybjorn.com/products/baby-carriers/baby-carrier-harmony/",
-        "note": "Checked October 22, 2026: published overall size range, materials and carry modes; follow the exact manual for position readiness."
+        "name": "Harmony US manual",
+        "url": "https://a.storyblok.com/f/187315/x/1267c722e3/bc-harmony-om-us-v4-202104-lr.pdf",
+        "note": "Complete English use/safety pages 4–11 and diagrams read. Newborn weight and leg-strap statements conflict within the manual; confirm matching instructions."
       },
       {
         "name": "Original Omni Breeze manual",
         "url": "https://cdn.shopify.com/s/files/1/0157/0150/8160/files/IM_OMNIBRZ_201021_ROW_V1.pdf?v=1630054302",
-        "note": "IM-OMNIBRZ-201021-ROW-V1, pages 1–2. Match the unit label and regional instructions; no individualized fit approval."
+        "note": "Previously read complete original two-spread instructions, chart and diagrams; no Classic or Deluxe instruction transfer."
       },
       {
         "name": "Ergobaby Omni Deluxe",
@@ -117,7 +128,7 @@
         "note": "A separate current option, not evidence that Breeze has been discontinued."
       }
     ],
-    "quickAnswer": "Harmony suits a preferred front-buckle workflow; Omni Breeze adds hip carry and a higher overall weight ceiling. Choose only after checking the exact position requirements and fit on each caregiver. Keep an existing correctly fitting carrier when neither difference has a job."
+    "quickAnswer": "Harmony offers a front-buckle workflow; Breeze adds hip carry. Harmony’s newborn minimum/leg-strap conflict requires exact-version clarification, and its back position begins at 12 months in the reviewed manual. Choose only from a documented eligible position and individual fit."
   },
   "baby:dr-browns-vs-baby-brezza-sterilizer-dryer": {
     "seoTitle": "Dr. Brown's vs Baby Brezza Sterilizer Dryer: Capacity & Fit",
@@ -155,10 +166,10 @@
           ]
         },
         {
-          "label": "Timing check",
+          "label": "Timing and restart",
           "values": [
-            "AC177/AC377: about 9 min steam plus about 45 min dry; follow the separate cooling instructions",
-            "Advanced: published 30 min drying, not a complete sterilize/dry/unload total"
+            "AC177/AC377: about 9 min steam and 45 min dry, with separate 10 min cooling after steam",
+            "BRZ0069: 30/45/60 min drying after steam; 5 min cooling before opening and at least 30 min between cooled operations"
           ]
         },
         {
@@ -189,10 +200,10 @@
       }
     ],
     "methodology": [
-      "Separate washing from sterilizing and drying",
-      "Compare a real full-day part list",
-      "Measure lid and cabinet clearance",
-      "Include descaling and drying maintenance"
+      "Compared the reviewed Dr. Brown’s and BRZ0069 English instructions for loading, operating modes, separate cooling and maintenance.",
+      "Capacity and timing figures are manufacturer instructions or claims, not measured performance.",
+      "No bottle-fit, drying-time, temperature or hygiene test was performed.",
+      "Current selected-offer availability, delivery and returns remain a separate checkout check."
     ],
     "productSlugs": [
       "dr-browns-all-in-one-sterilizer-dryer",
@@ -219,11 +230,11 @@
       },
       {
         "heading": "Compare timing on the same basis",
-        "body": "The AC177/AC377 manual lists roughly nine minutes of steam and 45 minutes of drying, and instructs a ten-minute cooling wait after sterilizing before handling parts. Do not assume active-cycle arithmetic gives the safe unload time in every mode. Baby Brezza advertises 30-minute drying for Advanced; add the selected steam cycle, preparation and any cooling or handling steps from its manual. These are manufacturer descriptions, not our timed side-by-side test."
+        "body": "The AC177/AC377 manual describes roughly nine minutes of steam and 45 minutes of drying with a separate ten-minute cooling instruction after steam. Advanced BRZ0069 has 30/45/60-minute drying after steam, five-minute cooling before opening and at least 30 minutes between operations with the unit cooled. Add preparation, washing, loading and safe handling as applicable. These are manufacturer instructions, not our timed comparison; do not plan safe back-to-back loads from a dry-setting label."
       },
       {
-        "heading": "Measure the counter routine",
-        "body": "Allow space for the unit, opening the lid, lifting baskets and placing cleaned parts before loading. Check the outlet, voltage and supplied accessories for the region. Include washing, descaling and filter replacement in the routine; an unopened-lid storage claim stops being useful when the next bottle requires opening the machine."
+        "heading": "Measure the counter routine and match regional power",
+        "body": "Allow space for the base, opening the lid, lifting baskets and placing cleaned parts. Both reviewed US manuals specify 120 V/60 Hz; match the actual base and supplied regional parts. Include permitted water, descaling and filter care. Dr. Brown’s has a six-month filter interval in the reviewed instructions; Advanced has a three-month interval. An unopened storage claim does not cover repeated opening for the next bottle."
       }
     ],
     "sources": [
@@ -241,8 +252,500 @@
         "name": "Baby Brezza Sterilizer Dryer Advanced",
         "url": "https://babybrezza.com/products/sterilizer-and-dryer-advanced",
         "note": "Checked October 22, 2026: published capacity, modular arrangements and 30-minute drying. This is not a complete-cycle time comparison."
+      },
+      {
+        "name": "Baby Brezza Advanced BRZ0069 manual",
+        "url": "https://cdn.shopify.com/s/files/1/1465/2384/files/SDA_-_New_-_BRZ0069_IM_EN_201102.pdf?v=1606162335",
+        "note": "Complete English four-page file and diagrams read; drying selections and cooling/restart instructions are separate."
       }
     ],
-    "quickAnswer": "Compare the six-bottle Dr. Brown's AC177/AC377 layout with Baby Brezza Advanced's larger modular capacity. Decide from the actual washed parts and available counter space. The published 30-minute Advanced drying mode is not a complete sterilize-to-unload time, and neither machine replaces washing."
+    "quickAnswer": "Compare the real mixed load with the six-bottle AC177/AC377 layout or Advanced BRZ0069’s larger modular arrangement. Neither machine washes residue. Drying labels exclude steam and separate cooling/restart conditions, so choose from the complete routine and regional power match; keep an effective existing setup when no gap remains."
+  },
+  "pet:best-dog-beds-and-comfort-upgrades": {
+    "quickAnswer": "Choose PetFusion Large Brown when its usable sleeping area, entry and room footprint fit the dog and the exact layer care is acceptable. Choose ChomChom Black Classic only for a separate compatible-fabric hair-removal task. The bed link now points to B017J9KPGS/PF-IBL2; a roller still cannot replace a bed, washing or deep cleaning. Keep suitable existing equipment when replacement adds no value.",
+    "purchaseCheck": "For the bed, confirm Large Brown PF-IBL2, usable inner dimensions and received care labels. For Black Classic, confirm the fabric and tool instructions. The two shopping buttons serve different tasks; unresolved fit or surface compatibility is a reason to wait, not to buy the other product.",
+    "intro": "A suitable resting surface and a way to remove loose hair are separate household needs. This page compares the Large Brown PF-IBL2 bed with Original Size Black Classic as different tools, not substitutes. The former bed ASIN led to Bedsure and is excluded; the corrected bed selection has dated retail evidence. No foam, pressure, washing, hair-pickup or durability test was performed.",
+    "comparisonTable": {
+      "title": "Bedding and cleanup are not interchangeable",
+      "columns": [
+        "PetFusion Large Brown PF-IBL2",
+        "ChomChom Black Classic reference"
+      ],
+      "rows": [
+        {
+          "label": "Job",
+          "values": [
+            "Provide a suitable resting surface",
+            "Remove loose surface hair from suitable fabric"
+          ]
+        },
+        {
+          "label": "Critical fit",
+          "values": [
+            "Inner sleeping area, outer footprint and entry",
+            "Exact fabric, trim, tool version and care"
+          ]
+        },
+        {
+          "label": "Unresolved",
+          "values": [
+            "Inner sleeping area and received care labels; supplier/retailer UPC disagreement",
+            "Manufacturer-controlled Black Classic care not established"
+          ]
+        },
+        {
+          "label": "Current purchase boundary",
+          "values": [
+            "B017J9KPGS Large Brown; confirm fit and selected offer terms",
+            "Confirm instructions and surface before choosing"
+          ]
+        },
+        {
+          "label": "Does not establish",
+          "values": [
+            "Medical benefit, chew-proofing or measured durability",
+            "Deep cleaning, cover washing or a bed replacement"
+          ]
+        }
+      ]
+    },
+    "sections": [
+      {
+        "heading": "Match the bed size and color before using its specifications",
+        "body": "The current link is B017J9KPGS, Large Brown PF-IBL2, with a dated Amazon.com offer. The old B089RGDQBB led to Bedsure and stays excluded. Petmate Partners provides this Large Brown SKU, but its UPC differs from the retailer and is not used to settle identity. Do not transfer XL sandstone dimensions or assume outer dimensions are clear sleeping area."
+      },
+      {
+        "heading": "Use two measurements and separate layer instructions",
+        "body": "The dog’s resting shape must fit inside the bolsters, while the complete bed and access route must fit the room. The cover, liner, foam and bolster filling can have different washing and drying limits. Do not treat a machine-washable cover as a washable core or interpret a foam label as a proven treatment."
+      },
+      {
+        "heading": "Keep the roller’s version and source limits visible",
+        "body": "The current Amazon selection maps B0C2FMZMHP to Original Size Black Classic, distinct from White Classic and Black Matte. Its October 31 offer was sold by ChomChom Roller and shipped by Amazon, with expanded 30-day returns observed. Selected New condition and manufacturer-controlled Black Classic washing instructions remain unconfirmed. Follow applicable instructions and leave doubtful fabric compatibility unresolved."
+      },
+      {
+        "heading": "Compare with what already works",
+        "body": "Surface hair removal does not wash a cover, remove all embedded debris or restore worn foam. Replace only the part of the routine that has an established problem. An existing bed that fits and can be maintained may need no upgrade, and a reusable roller does not establish savings without usable life and real refill consumption."
+      }
+    ],
+    "methodology": [
+      "Full bed and cleanup notes reviewed with the current Large Brown PF-IBL2 partner page and October 31 selected retail identities.",
+      "Sleeping-space fit and surface cleanup remain different tasks; no numeric performance ranking or medical benefit certification.",
+      "Selected sellers, shipping and expanded returns were observed on October 31. Stock may change; selected New condition was not explicit for these offers."
+    ],
+    "sources": [
+      {
+        "name": "Petmate PetFusion collection",
+        "url": "https://www.petmate.com/collections/pet-fusion",
+        "note": "Brand/catalog reference, not exact historical ASIN qualification."
+      },
+      {
+        "name": "Petmate Partners: Ultimate Large Brown PF-IBL2",
+        "url": "https://www.petmatepartners.com/pf-ibl2.html",
+        "note": "Exact model/color reference for the current B017J9KPGS selection. Supplier and retailer UPCs differ; inner sleeping area and received care labels remain unconfirmed."
+      },
+      {
+        "name": "Amazon Black Classic identity",
+        "url": "https://www.amazon.com/dp/B0C2FMZMHP",
+        "note": "Original Size Black Classic selected offer observed October 31: ChomChom Roller/Amazon fulfillment and expanded 30-day returns. Selected New and manufacturer washing guidance remain unconfirmed."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can the hair roller replace a dog bed?",
+        "answer": "No. It supplies no sleeping area, cushioning or entry. Compare the bed for resting-space needs and the roller only for compatible-fabric cleanup."
+      },
+      {
+        "question": "Does a washable cover mean washable foam?",
+        "answer": "No. The Large Brown partner entry describes a washable removable cover; confirm each received layer’s care and drying instructions. That does not make foam or bolsters washable."
+      },
+      {
+        "question": "Should I choose a bed by the dog’s weight?",
+        "answer": "Weight is one input, but usable inner dimensions, ordinary resting shape, entry and the full room footprint need separate checks. No medical support or individual comfort outcome is established by a size label alone."
+      }
+    ]
+  },
+  "pet:best-pet-cameras-for-apartments": {
+    "quickAnswer": "Choose Wyze Cam Pan v3 for ordinary room check-ins or supported local-card recording when its 2.4 GHz setup and account requirements fit. Choose Furbo 360 only when treat interaction justifies paid activation and the selected minimum term. The Wyze link is now the matched White 1-pack B0B9TWY11Q; Furbo B0BWN22T25 is not a subscription-free camera. Keep a suitable existing camera when neither adds value.",
+    "purchaseCheck": "For Wyze, confirm B0B9TWY11Q/WYZECPAN3 White 1-pack and the required power and mount setup; outdoor use requires a separate suitable adapter. For Furbo, read the full amount billed, minimum term and renewal before purchase. Post-cancellation access remains unresolved. Choose the camera for its own job rather than substituting a different paid workflow.",
+    "intro": "Compare the job, recording path and ongoing contract rather than assuming an image-quality winner. The current Wyze link is the matched Pan v3 White 1-pack; the former fixed Cam v3 link is excluded. The Furbo selection requires paid activation. No image quality, tracking, latency, acoustics, security or total-cost performance test was performed.",
+    "decisionGuide": [
+      {
+        "label": "Occasional live checks",
+        "detail": "Check the exact camera’s free-function terms, useful view and account access. A working existing camera may already meet this job."
+      },
+      {
+        "label": "Retrieve earlier events",
+        "detail": "Compare local card playback with cloud event history, including retention and export. A card slot is not an offline-app promise."
+      },
+      {
+        "label": "Treat interaction",
+        "detail": "Check Furbo only if the dog accepts the routine and the applicable paid contract is acceptable."
+      },
+      {
+        "label": "Match the exact selection",
+        "detail": "Use the corrected Pan v3 link for ordinary check-ins, or evaluate Furbo separately for treat interaction and its paid contract. Wait when the room, power or terms are unresolved."
+      }
+    ],
+    "comparisonTable": {
+      "title": "Compare workflows and unresolved boundaries",
+      "columns": [
+        "Wyze Cam Pan v3 White 1-pack",
+        "Furbo 360 Dog paid-activation model"
+      ],
+      "rows": [
+        {
+          "label": "Task",
+          "values": [
+            "Room check-ins or model-specific card recording",
+            "Check-ins plus treat interaction"
+          ]
+        },
+        {
+          "label": "Purchase identity",
+          "values": [
+            "B0B9TWY11Q / WYZECPAN3; matched Pan v3 selection",
+            "B0BWN22T25 / FD030CEG501; paid activation"
+          ]
+        },
+        {
+          "label": "Ongoing costs",
+          "values": [
+            "Card and optional cloud/AI services checked separately",
+            "Three-month minimum currently listed; full billing and renewal need checking"
+          ]
+        },
+        {
+          "label": "Unknown",
+          "values": [
+            "Received mount-kit design and outdoor power setup; no hands-on test",
+            "Post-cancellation basic access conflicts in official articles"
+          ]
+        },
+        {
+          "label": "No-purchase route",
+          "values": [
+            "Keep a suitable existing camera if it already meets the task",
+            "Skip if interaction or recurring service adds no useful action"
+          ]
+        }
+      ]
+    },
+    "sections": [
+      {
+        "heading": "Do not let the first shopping button choose the job",
+        "body": "The shopping cards now identify a White 1-pack Pan v3 and the paid-activation Furbo 360. The previous Wyze ASIN showed fixed Cam v3 and is excluded. Furbo’s subscription-required model does not inherit Standalone free-function terms. Compare each camera’s own storage and contract before opening its retailer offer. The current Furbo listing specifies a three-month minimum. Its monthly activation option collects $29.97 for the first three months, then $9.99 monthly; annual billing is a separate option. Recheck the selected plan instead of assuming the low hardware price covers service."
+      },
+      {
+        "heading": "Keep new cameras separate from historical identities",
+        "body": "Wyze documents Pan v4 as a newer model with different resolution and networking. Furbo’s current catalog includes Mini 360 and a separate Cat Camera. These are comparison candidates, not silent updates to the linked historical ASINs. New releases do not establish discontinuation, nor do their specifications prove the old model’s behavior."
+      },
+      {
+        "heading": "Check the home and account before relying on an image",
+        "body": "Review the actual useful area, blind spots, cable route and supported power supply. Limit household exposure and use appropriate authentication and individual sharing where supported. A connected icon, privacy label or rotating lens does not prove coverage, account security or that the pet is well. Maintain a human response when access fails."
+      }
+    ],
+    "methodology": [
+      "Manufacturer model, storage, privacy and activation guidance, plus the October 31 exact retail selections. No hands-on performance ranking.",
+      "Wyze B0B9TWY11Q/WYZECPAN3 is separate from the former fixed Cam v3 ASIN. Two mount-kit designs may ship; the received kit remains unconfirmed.",
+      "Wyze Buy New/Amazon.com and expanded 30-day returns were observed; Furbo/Furbo seller/Amazon fulfillment and 30-day returns were observed, but selected New was not explicit for Furbo. Future stock is not guaranteed."
+    ],
+    "sources": [
+      {
+        "name": "Wyze Pan v3 technical specifications",
+        "url": "https://support.wyze.com/hc/en-us/articles/11795670894875-Wyze-Cam-Pan-v3-Tech-Specs",
+        "note": "Model-specific camera, network and card boundaries."
+      },
+      {
+        "name": "Wyze local versus cloud recording",
+        "url": "https://support.wyze.com/hc/en-us/articles/7372980709275-How-do-Cam-Plus-and-a-microSD-card-compare",
+        "note": "Different recording and paid-feature paths."
+      },
+      {
+        "name": "Wyze Pan v4 comparison",
+        "url": "https://support.wyze.com/hc/en-us/articles/40185187360155-How-is-Wyze-Cam-Pan-v4-different-than-Wyze-Cam-Pan-v3",
+        "note": "Newer model remains separate from Pan v3."
+      },
+      {
+        "name": "Furbo Standalone basic functions",
+        "url": "https://help.furbo.com/hc/en-us/articles/17462722245785-Basic-Features-you-can-use-without-Furbo-Nanny",
+        "note": "Free-function scope does not certify Subscription Required hardware."
+      },
+      {
+        "name": "Furbo plans and access",
+        "url": "https://help.furbo.com/hc/en-us/articles/17462739016089-Furbo-Nanny-Plans-and-Pricing",
+        "note": "Active-plan wording conflicts with activation-page basic-access wording."
+      },
+      {
+        "name": "Furbo activation instructions",
+        "url": "https://help.furbo.com/hc/en-us/articles/17462056102169-How-to-Setup-and-Activate-Nanny-Bundle-Camera-Subscription-Required",
+        "note": "Exact post-cancellation entitlement remains unconfirmed."
+      },
+      {
+        "name": "Furbo current camera choices",
+        "url": "https://furbo.com/us/products/furbo-360-dog-camera",
+        "note": "Mini 360 and Cat Camera are separate model comparisons."
+      },
+      {
+        "name": "Wyze: current Cam Pan v3 product and kit notes",
+        "url": "https://www.wyze.com/products/wyze-cam-pan",
+        "note": "White 1-pack, 1080p/2.4 GHz and two possible mount kits. Outdoor power requirements remain separate from the ordinary indoor check-in route."
+      }
+    ]
+  },
+  "pet:furbo-360-vs-wyze-cam-pan-v3-for-pets": {
+    "dek": "Compare the matched Pan v3 White 1-pack with Furbo 360 paid activation, local-card storage, subscription terms and the actual setup each requires.",
+    "intro": "Compare the job, recording path and ongoing contract rather than assuming an image-quality winner. The current Wyze link is the matched Pan v3 White 1-pack; the former fixed Cam v3 link is excluded. The Furbo selection requires paid activation. No image quality, tracking, latency, acoustics, security or total-cost performance test was performed.",
+    "methodology": [
+      "Manufacturer model, storage, privacy and activation guidance, plus the October 31 exact retail selections. No hands-on performance ranking.",
+      "Wyze B0B9TWY11Q/WYZECPAN3 is separate from the former fixed Cam v3 ASIN. Two mount-kit designs may ship; the received kit remains unconfirmed.",
+      "Wyze Buy New/Amazon.com and expanded 30-day returns were observed; Furbo/Furbo seller/Amazon fulfillment and 30-day returns were observed, but selected New was not explicit for Furbo. Future stock is not guaranteed."
+    ],
+    "faqs": [
+      {
+        "question": "Which is better for a quick pet check-in?",
+        "answer": "Compare the matched Pan v3 for ordinary live checks or supported card recordings. Choose Furbo only if treat interaction and the selected paid term add value. A working existing camera may already answer the question."
+      },
+      {
+        "question": "Is this Furbo subscription-free after activation?",
+        "answer": "That is not established for B0BWN22T25. Standalone guidance differs from subscription-required hardware, and official articles conflict on post-cancellation access. Budget for ongoing service until applicable terms resolve it."
+      },
+      {
+        "question": "Can either replace in-person care?",
+        "answer": "No. A recording, alert or treat command does not establish that the pet’s needs are met. Keep a suitable care and fault-response arrangement when viewing, power or the network is unavailable."
+      }
+    ],
+    "quickAnswer": "Choose Wyze Cam Pan v3 for ordinary room check-ins or supported local-card recording when its 2.4 GHz setup and account requirements fit. Choose Furbo 360 only when treat interaction justifies paid activation and the selected minimum term. The Wyze link is now the matched White 1-pack B0B9TWY11Q; Furbo B0BWN22T25 is not a subscription-free camera. Keep a suitable existing camera when neither adds value.",
+    "purchaseCheck": "For Wyze, confirm B0B9TWY11Q/WYZECPAN3 White 1-pack and the required power and mount setup; outdoor use requires a separate suitable adapter. For Furbo, read the full amount billed, minimum term and renewal before purchase. Post-cancellation access remains unresolved. Choose the camera for its own job rather than substituting a different paid workflow.",
+    "comparisonTable": {
+      "title": "Compare the two actual workflows",
+      "columns": [
+        "Furbo 360 Dog paid-activation model",
+        "Wyze Cam Pan v3 White 1-pack"
+      ],
+      "rows": [
+        {
+          "label": "Distinct job",
+          "values": [
+            "Treat interaction plus camera check-ins",
+            "Room check-ins or model-specific local recordings"
+          ]
+        },
+        {
+          "label": "Purchase boundary",
+          "values": [
+            "B0BWN22T25 / FD030CEG501; paid activation",
+            "B0B9TWY11Q / WYZECPAN3; matched Pan v3 selection"
+          ]
+        },
+        {
+          "label": "Plan/storage",
+          "values": [
+            "Three-month minimum currently listed; full billing and renewal need checking",
+            "Card playback separate from optional cloud/AI services"
+          ]
+        },
+        {
+          "label": "Unknown",
+          "values": [
+            "Post-cancellation basic access conflicts across official articles",
+            "Received mount-kit design and outdoor power setup; no hands-on test"
+          ]
+        },
+        {
+          "label": "Keep existing",
+          "values": [
+            "Skip when interaction or recurring service adds no value",
+            "Keep a suitable existing camera if it already meets the task"
+          ]
+        }
+      ]
+    },
+    "sections": [
+      {
+        "heading": "The Furbo hardware contract changes the answer",
+        "body": "Standalone free-feature documentation is not an entitlement for every Furbo camera. The historical linked ASIN requires paid activation. Current official plans and activation articles differ about basic access after an initial term, so this comparison does not promise free live view, audio or treat control after cancellation. Compare the full amount billed, renewal and minimum commitment for the selected offer. The current Furbo listing specifies a three-month minimum. Its monthly activation option collects $29.97 for the first three months, then $9.99 monthly; annual billing is a separate option. Recheck the selected plan instead of assuming the low hardware price covers service."
+      },
+      {
+        "heading": "Use the corrected Pan v3 selection for the basic-camera task",
+        "body": "The current link is B0B9TWY11Q, White 1-pack WYZECPAN3, sold and shipped by Amazon.com in the October 31 Buy New observation. The old B0DTNKLF1K showed fixed Cam v3 and remains excluded. Follow Pan v3’s own local-card, account and 2.4 GHz requirements; Pan v4 features do not transfer. Two mount-kit designs may arrive, and outdoor use requires a separate suitable power adapter."
+      },
+      {
+        "heading": "New models and ordinary care remain separate",
+        "body": "Pan v4 and Furbo Mini 360 have their own specifications and buying terms. Do not transfer their resolution, connectivity or included parts to these historical identities or infer discontinuation because a newer model exists. Test the useful view, ordinary access route and household privacy settings under the exact instructions, and retain someone who can respond when camera access fails."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Wyze Pan v3 technical specifications",
+        "url": "https://support.wyze.com/hc/en-us/articles/11795670894875-Wyze-Cam-Pan-v3-Tech-Specs",
+        "note": "Model-specific camera, network and card boundaries."
+      },
+      {
+        "name": "Wyze local versus cloud recording",
+        "url": "https://support.wyze.com/hc/en-us/articles/7372980709275-How-do-Cam-Plus-and-a-microSD-card-compare",
+        "note": "Different recording and paid-feature paths."
+      },
+      {
+        "name": "Wyze Pan v4 comparison",
+        "url": "https://support.wyze.com/hc/en-us/articles/40185187360155-How-is-Wyze-Cam-Pan-v4-different-than-Wyze-Cam-Pan-v3",
+        "note": "Newer model remains separate from Pan v3."
+      },
+      {
+        "name": "Furbo Standalone basic functions",
+        "url": "https://help.furbo.com/hc/en-us/articles/17462722245785-Basic-Features-you-can-use-without-Furbo-Nanny",
+        "note": "Free-function scope does not certify Subscription Required hardware."
+      },
+      {
+        "name": "Furbo plans and access",
+        "url": "https://help.furbo.com/hc/en-us/articles/17462739016089-Furbo-Nanny-Plans-and-Pricing",
+        "note": "Active-plan wording conflicts with activation-page basic-access wording."
+      },
+      {
+        "name": "Furbo activation instructions",
+        "url": "https://help.furbo.com/hc/en-us/articles/17462056102169-How-to-Setup-and-Activate-Nanny-Bundle-Camera-Subscription-Required",
+        "note": "Exact post-cancellation entitlement remains unconfirmed."
+      },
+      {
+        "name": "Furbo current camera choices",
+        "url": "https://furbo.com/us/products/furbo-360-dog-camera",
+        "note": "Mini 360 and Cat Camera are separate model comparisons."
+      },
+      {
+        "name": "Wyze: current Cam Pan v3 product and kit notes",
+        "url": "https://www.wyze.com/products/wyze-cam-pan",
+        "note": "White 1-pack, 1080p/2.4 GHz and two possible mount kits. Outdoor power requirements remain separate from the ordinary indoor check-in route."
+      }
+    ]
+  },
+  "pet:levoit-vital-200s-p-vs-shark-neverchange-max": {
+    "intro": "Levoit uses a washable pre-filter. The linked Shark is HP301, with debris screens and a conditional long-life HEPA claim; it is not the HP302 variant. Neither replaces source cleaning. Compare room volume, desired air changes and maintenance rather than maximum coverage alone.",
+    "decisionGuide": [
+      {
+        "label": "Lower purchase price",
+        "detail": "Vital 200S-P is usually the more restrained starting point."
+      },
+      {
+        "label": "Large open pet area",
+        "detail": "Compare the linked HP301 for the actual room and airflow task. Its 1,300 sq ft one-hour claim is not a measured equivalent to Levoit at the same air changes."
+      },
+      {
+        "label": "Fragrance-sensitive home",
+        "detail": "Levoit avoids making a scented cartridge central to the purchase."
+      },
+      {
+        "label": "Filter routine",
+        "detail": "Compare conventional replacement cost with Shark's conditional long-life claim."
+      }
+    ],
+    "methodology": [
+      "Compare room size at equivalent air changes",
+      "Separate hair, dander, and odor sources",
+      "Include filters and maintenance in total cost",
+      "The October 31 Shark selection is HP301/Grey, not HP302: its maker lists 1,300 sq ft at one hour. Maker and retailer dimensions/weight disagree, so a tight-space fit remains unconfirmed.",
+      "Shark’s up-to-five-year HEPA claim uses a 300 sq ft room, 12 hours daily at MAX and a 50% CADR-decline threshold under GB/T 18801-2015. It is not a maintenance-free guarantee."
+    ],
+    "sources": [
+      {
+        "name": "Shark: HP301 NeverChange MAX",
+        "url": "https://www.sharkninja.com/shark-neverchange-air-purifier-max/HP301.html",
+        "note": "Exact HP301 model, 1,300 sq ft one-hour claim and conditional filter-life test. Dimensions and weight conflict with retail metadata."
+      }
+    ]
+  },
+  "baby:philips-avent-scf358-vs-baby-brezza-smart-bottle-warmer": {
+    "sections": [
+      {
+        "heading": "Choose the simpler control loop",
+        "body": "Compare SCF358/00 when a physical dial and a water-bath routine suit the household. Baby Brezza’s current Smart product page describes two modes and Bluetooth alerts, but the selected BRZ0088 has not been mapped to the reviewed BRZ00139 manual. Confirm its supplied instructions and app requirements rather than importing the older settings."
+      },
+      {
+        "heading": "Do not compare headline minutes alone",
+        "body": "Starting temperature, volume, bottle material, water amount, scale and mode change warming time. Philips’ current three-minute example uses 150 mL at 22°C/72°F in a 260 mL Natural bottle; it is not a universal result. Its up-to-60-minute period includes warming, not an extra hour after completion. Use the exact instructions and check every feed rather than chasing a headline time."
+      },
+      {
+        "heading": "The adult remains the safety system",
+        "body": "Neither warmer confirms safe storage, mixes the bottle correctly, or knows the serving temperature. Follow current instructions and feeding guidance and test every feed."
+      }
+    ],
+    "methodology": [
+      "Reviewed the full 23-page English SCF358 manual linked by the selected retailer, including operating diagrams, and the current Philips manufacturer timing example. The supplied US revision remains unconfirmed.",
+      "Read all six spreads of the older Baby Brezza manual; its BRZ00139 label differs from the current BRZ0088 selection. It supports no transfer of electrical rating, exact settings or procedure.",
+      "Current Smart product-page modes and Bluetooth claims are manufacturer statements, not an app, heating, nutrition or feeding-safety test. Both selected offers were observed October 31 with Amazon.com fulfillment and expanded 90-day returns; selected New condition was not explicit."
+    ],
+    "comparisonTable": {
+      "title": "Bottle warmer decision table",
+      "columns": [
+        "Philips Avent SCF358",
+        "Baby Brezza Smart Bottle Warmer"
+      ],
+      "rows": [
+        {
+          "label": "Heating path",
+          "values": [
+            "Automatic water bath",
+            "Steady water bath or Quick Warm steam"
+          ]
+        },
+        {
+          "label": "Controls",
+          "values": [
+            "Physical dial",
+            "Device controls plus Bluetooth app"
+          ]
+        },
+        {
+          "label": "Completion alert",
+          "values": [
+            "Device indicator",
+            "Device and phone alert"
+          ]
+        },
+        {
+          "label": "Keep-warm / shut-off",
+          "values": [
+            "Up to 60 minutes total including warming, then shut-off",
+            "Confirm the matching BRZ0088 instructions; reviewed BRZ00139 manual is a different model"
+          ]
+        },
+        {
+          "label": "Best fit",
+          "values": [
+            "Simple repeatable counter routine",
+            "App-assisted routine with mode choice"
+          ]
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Which bottle warmer is faster?",
+        "answer": "There is no single answer across feeds and bottles. The Philips three-minute example is conditional, and the current Brezza BRZ0088 instructions remain to be matched. Neither headline is a measured winner here."
+      },
+      {
+        "question": "Does Bluetooth make the Baby Brezza remote?",
+        "answer": "It provides nearby app control and completion alerts, but an adult still needs to set up, supervise, remove, mix, and test the feed."
+      },
+      {
+        "question": "Do I still need to test the bottle temperature?",
+        "answer": "Yes. Follow the current manual, mix as directed, and check every feed before offering it."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Philips SCF358 manual linked by selected retailer",
+        "url": "https://m.media-amazon.com/images/I/A1reJ2ARYsL.pdf",
+        "note": "23-page English file dated September 16, 2021; complete text and operating diagrams read. Supplied US regional revision unconfirmed."
+      },
+      {
+        "name": "Philips SCF358 manufacturer leaflet",
+        "url": "https://acc.documents.philips.com/assets/20250728/f793d3986a2a42d9a539b328012ab94e.pdf",
+        "note": "Conditional three-minute example: 150 mL at 22°C/72°F in a 260 mL Natural bottle."
+      },
+      {
+        "name": "Baby Brezza Safe + Smart product page",
+        "url": "https://babybrezza.com/products/safe-smart-bottle-warmer",
+        "note": "Current two-mode/Bluetooth product description. Does not map the older BRZ00139 manual to selected BRZ0088."
+      }
+    ]
   }
 }

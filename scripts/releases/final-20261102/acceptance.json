@@ -1,0 +1,118 @@
+{
+  "at": "2026-11-02T02:23:12.415633+00:00",
+  "status": "passed_local",
+  "batch": "ACCEPTANCE-01",
+  "retainedSites": [
+    "Main",
+    "Homeoffice",
+    "Baby",
+    "Network",
+    "Smarthome",
+    "Pets"
+  ],
+  "precedingAcceptedBatches": 105,
+  "finalArtifacts": {
+    "main": {
+      "buildId": "6hUvLEUkSw42HFHofif7a",
+      "sha256": "1785b5b6a96a145dfb6e92bcfb0d480884af637e7e7cb64dbd6363cde4ec1bca",
+      "bytes": 18426355,
+      "distDir": ".next-release",
+      "archivePath": "apps/main/.release/main-runtime.tgz"
+    },
+    "affiliate": {
+      "buildId": "V0KHmbn9Nx0XyyxwbMJsG",
+      "sha256": "b1ed33ab5571955534803ba28c7334d8e2513d5a9a5731a3454d986612142462",
+      "bytes": 58778677,
+      "distDir": ".next-release",
+      "archivePath": "apps/affiliate/.release/affiliate-runtime.tgz"
+    }
+  },
+  "sourceManifestSha256": "a51928789f2fd7e90b9cf77260e1810d0fa4af955deb9c38d1a76be36176e19c",
+  "acceptance": {
+    "fullPathCohort": {
+      "passed": 5320,
+      "build": "faYyEBnEfHgYJeVqDZNtb",
+      "htmlAndModelDestinationEvidence": "final-all-conversion.json",
+      "seoImagesAnd228693InternalAnchors": "final-html-seo-and-links.json"
+    },
+    "otherInternalDestinations": 94,
+    "lastLabelDelta": {
+      "finalBuild": "V0KHmbn9Nx0XyyxwbMJsG",
+      "freshFullHTML": 30,
+      "passed": 30,
+      "otherSourceObjectsExactlyEqual": 1039,
+      "all513CommerceRegistryRowsExactlyEqual": true,
+      "localizedDataChangedOnlyForFiveTargetGuides": true,
+      "evidence": "last-label-source-contract.json"
+    },
+    "focusedNativeViewportCases": {
+      "taskHandoffs": 44,
+      "sharedFocusedCases": 42,
+      "modelCheckerCases": 24,
+      "categoryLinkCases": 8,
+      "relatedTaskCases": 4,
+      "lastLabelCases": 12
+    },
+    "nativeScope": "Changed regions and common-template regression; predecessor full-page/source reading reused under explicit current contracts. Not134 newly read full articles. Initial animated-key and pre-paint captures excluded in favor of stable DOM geometry, named targets and followup screenshots.",
+    "staticMainPages": 13,
+    "searchExportRows": 1054,
+    "behaviorAndMeasurementSuites": 10,
+    "mockCutoverRollbackTests": 17,
+    "readOnlyControllerCriticalPages": 38,
+    "hostSitemaps": 6,
+    "automaticBuildIdentityWithoutEnvironmentOverride": true,
+    "archiveUnsafeOrEnvironmentFiles": 0
+  },
+  "merchantAudits": {
+    "original489": {
+      "qualifiedRecords": 40,
+      "observedConditionalReferenceOrHeldRecords": 449,
+      "pendingRecords": 0,
+      "totalRecords": 489
+    },
+    "additional17": {
+      "qualifiedRecords": 2,
+      "observedConditionalReferenceOrHeldRecords": 15,
+      "pendingRecords": 0,
+      "totalRecords": 17
+    },
+    "all506": {
+      "qualifiedRecords": 42,
+      "observedConditionalReferenceOrHeldRecords": 464,
+      "pendingRecords": 0,
+      "totalRecords": 506
+    },
+    "currentRuntimePurchaseRegistry": 513,
+    "newQualificationsInThisFinalIntegration": 0,
+    "legacyPendingAlignedWithAcceptedHold": 1
+  },
+  "queueCounts": {
+    "summaries": [
+      354,
+      354
+    ],
+    "sourceProblemPages": [
+      32,
+      32
+    ],
+    "bodyCandidates": [
+      257,
+      257
+    ]
+  },
+  "productionWrites": 0,
+  "published": false,
+  "wholeTaskComplete": false,
+  "next": "Push fixed locally built artifacts, server fetch/pull pinned revision without building, origin/public acceptance and authorized search updates.",
+  "limits": [
+    "Remediation acceptance does not qualify every offer, delivered unit, driver or unresolved manual. Retained conditional and held records keep their published boundaries.",
+    "US retail observations remain dated; regional offers and future stock are not certified.",
+    "No indexing, rankings, CTR or earnings improvement is asserted."
+  ],
+  "evidenceLocal": "apps/affiliate/reports/quality-remediation-2026-10-22/final-integration-root/final-local-acceptance.json",
+  "postBuildFormatting": {
+    "proof": "final-integration-root/format-only-output-equality.json",
+    "typescriptExecutableOutputExactlyEqual": true,
+    "runtimeArchiveUnchanged": true
+  }
+}

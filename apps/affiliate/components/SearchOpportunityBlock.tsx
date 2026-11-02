@@ -17,7 +17,7 @@ export function SearchOpportunityBlock({ opportunity, linksOnly = false }: { opp
       <h2 className="mt-2 text-2xl font-bold" id={`search-answer-${opportunity.slug}`}>{linksOnly ? "Related decisions" : opportunity.query}</h2>
       {!linksOnly ? <><p className="mt-3 leading-7 text-[var(--text)]">{opportunity.answer}</p>
       <div className="mt-4 flex flex-wrap items-center gap-2 text-xs font-semibold uppercase tracking-[0.12em] text-[var(--muted)]">
-        <span>Answer references checked {opportunity.updatedAt}</span>
+        <span>Editorial record dated {opportunity.updatedAt}</span>
         <span aria-hidden="true">•</span>
         <span>Reconfirm exact model and current terms</span>
       </div></> : null}

@@ -70,6 +70,16 @@ def verify(app):
 def install(app,suffix):
  target=Path('/etc/systemd/system')/unit(app);temporary=target.with_suffix('.service.journey-tmp')
  shutil.copyfile(STATE/(app+'.service.'+suffix),temporary);temporary.chmod(0o644);os.replace(temporary,target)
+def retarget_unit(config,old,new):
+ if Path(old).parent!=Path(new).parent:raise RuntimeError('Runtime release roots differ')
+ lines=config.splitlines(keepends=True)
+ for field in ['WorkingDirectory','ReadWritePaths']:
+  expected=field+'='+old
+  matches=[index for index,line in enumerate(lines) if line.rstrip('\r\n')==expected]
+  if len(matches)!=1:raise RuntimeError('Unit drift '+field)
+  index=matches[0];ending=lines[index][len(lines[index].rstrip('\r\n')):]
+  lines[index]=field+'='+new+ending
+ return ''.join(lines)
 def prepare(revision):
  if not re.fullmatch(r'[0-9a-f]{40}',revision):raise RuntimeError('Explicit source commit required')
  if not run(['node','--version']).startswith('v20.'):raise RuntimeError('Node 20 required')
@@ -100,9 +110,9 @@ def prepare(revision):
     if not destination.exists():destination.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(file,destination);retained+=1
   run(['chown','-R','madabase:madabase',str(target)])
   config=(Path('/etc/systemd/system')/unit(app)).read_text()
-  if config.count('WorkingDirectory='+old)!=1:raise RuntimeError('Unit drift '+app)
+  after=retarget_unit(config,old,str(target))
   (STATE/(app+'.service.before')).write_text(config)
-  (STATE/(app+'.service.after')).write_text(config.replace('WorkingDirectory='+old,'WorkingDirectory='+str(target)))
+  (STATE/(app+'.service.after')).write_text(after)
   record['apps'][app]={'old':old,'new':str(target),'sha256':digest,'retainedAssets':retained}
  record['status']='prepared';save('transaction.json',record);print(json.dumps(record),flush=True)
 def restore_test(record):

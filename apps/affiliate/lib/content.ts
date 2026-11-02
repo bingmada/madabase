@@ -103,12 +103,12 @@ export const products: Product[] = [
   {
     site: "pet",
     slug: "petlibro-granary-automatic-cat-feeder",
-    purchaseCheck: "Confirm PLAF103 capacity and bowls, suitable dry food, weighed portions, backup limits and human care. This listing does not promise RFID access or Granary 2 weighing; keep a suitable existing routine.",
+    purchaseCheck: "Select Black 3L-with WiFi B0BYD73PHN/PLAF103 if that capacity and bowl suit the task. Confirm its actual portion range, suitable dry food, backup limits and human care; do not treat it as a 5 L or Granary 2 weighing/RFID feeder. Recheck current seller, delivery and returns.",
     asin: "B0BYD73PHN",
     seoTitle: "PETLIBRO Granary Smart Feeder Guide: Portions, Wi-Fi & Backup Power",
-    updatedAt: "October 26, 2026",
+    updatedAt: "October 31, 2026",
     evidenceMode: "official-spec",
-    researchNote: "PLAF103 manufacturer product, support, portion and cleaning documents and the complete V3.0 manual reviewed October 26, 2026. No physical dispensing, jam, portion-precision or battery test. Historical ASIN identity does not refresh retailer capacity, bowl configuration, seller, stock or returns; Granary 2 is a separate current comparison.",
+    researchNote: "PLAF103 manufacturer product, support, portion and cleaning documents and the complete V3.0 manual reviewed October 26, 2026. No physical dispensing, jam, portion-precision or battery test. Historical ASIN identity does not refresh retailer capacity, bowl configuration, seller, stock or returns; Granary 2 is a separate current comparison. October 31 US ZIP 10001 selected Black 3 L PLAF103 Buy New from Amazon.com and expanded 30-day returns observed. The 3 L versus official 5 L and 48 versus 50-portion revision boundaries remain explicit.",
     name: "PETLIBRO Granary Smart Cat Feeder",
     brand: "PETLIBRO",
     category: "feeding",
@@ -124,15 +124,16 @@ export const products: Product[] = [
     pros: ["Schedules and feeding history can be managed in the PETLIBRO app", "Supports both 2.4GHz and 5GHz Wi-Fi", "Battery backup continues scheduled meals when normal power is unavailable"],
     cons: ["Dry food only, with a listed 2–15mm kibble range", "Portions are measured by volume and can vary in weight with kibble shape and density", "Wi-Fi and some controls are disabled while operating only on backup batteries"],
     specs: {
-      ASIN: "B0BYD73PHN",
-      "Model family": "PLAF103 Granary Smart Feeder",
-      "Official current PLAF103 capacity": "5L; confirm the Amazon ASIN capacity, single- or dual-bowl variant, color, and seller before checkout",
-      Network: "2.4GHz and 5GHz Wi-Fi",
-      Schedules: "Current spec lists up to 10; confirm the selected version and app rather than an older FAQ example",
-      Portions: "1–50 portions per meal; about 20mL per portion",
-      "Allowed food": "Dry kibble, 2–15mm",
-      Power: "5V adapter; 3 alkaline D batteries for backup",
-    },
+  "ASIN": "B0BYD73PHN",
+  "Model family": "PLAF103 Granary Smart Feeder",
+  "Official current PLAF103 capacity": "5L; confirm the Amazon ASIN capacity, single- or dual-bowl variant, color, and seller before checkout",
+  "Network": "2.4GHz and 5GHz Wi-Fi",
+  "Schedules": "Current spec lists up to 10; confirm the selected version and app rather than an older FAQ example",
+  "Portions": "Current selected retail title says up to 48 per meal; reviewed official model information says 1–50. Confirm the actual revision/app; portion weight still varies.",
+  "Allowed food": "Dry kibble, 2–15mm",
+  "Power": "5V adapter; 3 alkaline D batteries for backup",
+  "Selected Amazon configuration": "October 31: Black, 3L-with WiFi, one item and single bowl pictured; PLAF103, UPC 755752553631."
+},
     evidence: [
       "Confirm the selected Amazon variation, capacity, bowl count, and PLAF103 model before checkout",
       "Weigh several real dispenses with the pet's usual kibble instead of treating a volume portion as a fixed calorie amount",
@@ -140,61 +141,73 @@ export const products: Product[] = [
       "Inspect the outlet, bowl, food level, and desiccant regularly even when app alerts are enabled",
     ],
     editorialSections: [
-      {
-        heading: "A note about this guide",
-        body: "This document comparison uses the current PLAF103 page and model-specific instructions, not a hands-on reliability test. The historical ASIN and official configuration may differ in capacity or bowls; verify the selected model and supplied parts. The current specification lists up to ten meals, while an older FAQ example says six. Confirm the actual version and app support before depending on a required schedule rather than silently combining conflicting examples.",
-      },
-      {
-        heading: "Check 3L versus 5L before comparing price",
-        body: "Granary names are reused across automatic, Wi-Fi, camera, single-bowl, and dual-bowl products. The linked ASIN has appeared as a Wi-Fi PLAF103 listing, while PETLIBRO's current official PLAF103 page describes a 5L configuration. Confirm capacity, color, bowl count, camera presence, and model number in the selected Amazon variation rather than relying on the family name alone.",
-      },
-      {
-        heading: "A portion is volume, not a nutrition promise",
-        body: "PETLIBRO describes Granary portions in milliliters. The actual grams and calories change with kibble diameter, shape, freshness, and density. Start by weighing repeated dispenses of the exact food, then set the schedule around a veterinarian-approved daily amount. Recheck after changing food instead of assuming the old portion count still applies.",
-      },
-      {
-        heading: "What happens during a power or network outage",
-        body: "The PLAF103 V3.0 manual and support describe three alkaline D batteries for emergency operation: saved meals continue while Wi-Fi, playback and reset controls are disabled. Test the intended schedule, clock and recovery with someone present; no indefinite runtime or normal remote app access is established. Keep human checks for food received and eaten, water, litter and wellbeing even during a short absence. Do not transfer this battery mode to One RFID or Granary 2 revisions.",
-      },
-      {
-        heading: "Cleaning and jam prevention are part of reliability",
-        body: "Use supported dry food in the listed 2–15mm range. Power off for care. The manual separates removable washable parts from the powered feeder base, which uses a soft dry cloth; do not rinse or wet-wipe the electronics. Only its stainless-steel bowl is listed as dishwasher-safe. Dry washed parts fully before reassembly. Low-food or blockage alerts are signals, not proof that a meal reached the bowl or was eaten.",
-      },
-      { heading: "When to compare Granary 2", body: "Granary 2 adds weighing; camera and access features depend on its separate model. Compare those functions only for an actual need. They are not upgrades contained in this PLAF103 ASIN, and the older model is not declared discontinued merely because the new series exists." },
-      {
-        heading: "Who should skip it",
-        body: "Skip this feeder for wet food, very large or irregular kibble, pets that need individual access control, or a household that cannot tolerate app and Wi-Fi setup. A simple non-connected feeder may be better when remote schedule changes and feeding history would go unused.",
-      },
-    ],
+  {
+    "heading": "A note about this guide",
+    "body": "This document comparison uses the current PLAF103 page and model-specific instructions, not a hands-on reliability test. The historical ASIN and official configuration may differ in capacity or bowls; verify the selected model and supplied parts. The current specification lists up to ten meals, while an older FAQ example says six. Confirm the actual version and app support before depending on a required schedule rather than silently combining conflicting examples."
+  },
+  {
+    "heading": "The current selected option is 3 L, not the official 5 L configuration",
+    "body": "The October 31 B0BYD73PHN selection showed Black, 3L-with WiFi and one item, with model PLAF103 and one bowl pictured. The current manufacturer reference describes a 5 L configuration. Match the actual capacity, bowl and revision rather than assigning the official 5 L package or a newer camera/weighing feature to this 3 L offer. The retail title also says up to 48 portions while the reviewed model information says 1–50; confirm the setting range on the received version."
+  },
+  {
+    "heading": "A portion is volume, not a nutrition promise",
+    "body": "PETLIBRO describes Granary portions in milliliters. The actual grams and calories change with kibble diameter, shape, freshness, and density. Start by weighing repeated dispenses of the exact food, then set the schedule around a veterinarian-approved daily amount. Recheck after changing food instead of assuming the old portion count still applies."
+  },
+  {
+    "heading": "What happens during a power or network outage",
+    "body": "The PLAF103 V3.0 manual and support describe three alkaline D batteries for emergency operation: saved meals continue while Wi-Fi, playback and reset controls are disabled. Test the intended schedule, clock and recovery with someone present; no indefinite runtime or normal remote app access is established. Keep human checks for food received and eaten, water, litter and wellbeing even during a short absence. Do not transfer this battery mode to One RFID or Granary 2 revisions."
+  },
+  {
+    "heading": "Cleaning and jam prevention are part of reliability",
+    "body": "Use supported dry food in the listed 2–15mm range. Power off for care. The manual separates removable washable parts from the powered feeder base, which uses a soft dry cloth; do not rinse or wet-wipe the electronics. Only its stainless-steel bowl is listed as dishwasher-safe. Dry washed parts fully before reassembly. Low-food or blockage alerts are signals, not proof that a meal reached the bowl or was eaten."
+  },
+  {
+    "heading": "When to compare Granary 2",
+    "body": "Granary 2 adds weighing; camera and access features depend on its separate model. Compare those functions only for an actual need. They are not upgrades contained in this PLAF103 ASIN, and the older model is not declared discontinued merely because the new series exists."
+  },
+  {
+    "heading": "Who should skip it",
+    "body": "Skip this feeder for wet food, very large or irregular kibble, pets that need individual access control, or a household that cannot tolerate app and Wi-Fi setup. A simple non-connected feeder may be better when remote schedule changes and feeding history would go unused."
+  }
+],
     alternatives: ["Choose a non-Wi-Fi feeder when a local schedule is enough and app setup would add friction.", "Choose an access-controlled or RFID feeder when one pet steals another pet's food.", "Use a slow-feed bowl when eating speed, rather than meal timing, is the main problem."],
     sources: [
-      { name: "PETLIBRO Granary 2 series", url: "https://petlibro.com/products/granary-2-series", note: "Separate newer weighing and model-specific camera/access options; do not transfer their features or power mode to PLAF103." },
-      {
-        name: "PETLIBRO Granary Smart Feeder product page",
-        url: "https://petlibro.com/products/petlibro-5g-wifi-automatic-pet-feeder",
-        note: "Official current PLAF103 capacity, bowl variants, Wi-Fi, schedule, portion, kibble, power, and box-content information.",
-      },
-      {
-        name: "PETLIBRO Granary WiFi PLAF103 support",
-        url: "https://petlibro.com/pages/how-the-granary-wifi-feeder-works",
-        note: "Exact kibble, desiccant, power-supply, battery-mode, schedule, and connectivity limitations.",
-      },
-      {
-        name: "PETLIBRO Granary PLAF103 cleaning",
-        url: "https://petlibro.com/pages/how-do-i-disassemble-and-clean-the-granary-smart-feeder-af103-plaf103",
-        note: "Exact removable washable parts, powered-base restriction, drying, and reassembly guidance.",
-      },
-      {
-        name: "PETLIBRO Granary PLAF103 user manual",
-        url: "https://cdn.shopify.com/s/files/1/0252/5197/1119/files/PETLIBRO_Granary_WIFI_Feeder_PLAF103_USER_MANUAL_7e70ddbd-4395-4885-bfd2-fdfdb143874b.pdf?v=1691135055",
-        note: "Exact official PLAF103 operating and care instructions.",
-      },
-      {
-        name: "PETLIBRO portion-size guidance",
-        url: "https://petlibro.com/pages/how-much-is-in-one-feeding-portion-plaf001-002-101-102-plaf003-004-plaf005-006-103-203-plaf008-plaf107-plaf108-plaf301",
-        note: "Official explanation that feeder portions are volumetric and vary with the food.",
-      },
-    ],
+  {
+    "name": "PETLIBRO Granary 2 series",
+    "url": "https://petlibro.com/products/granary-2-series",
+    "note": "Separate newer weighing and model-specific camera/access options; do not transfer their features or power mode to PLAF103."
+  },
+  {
+    "name": "PETLIBRO Granary Smart Feeder product page",
+    "url": "https://petlibro.com/products/petlibro-5g-wifi-automatic-pet-feeder",
+    "note": "Official current PLAF103 capacity, bowl variants, Wi-Fi, schedule, portion, kibble, power, and box-content information."
+  },
+  {
+    "name": "PETLIBRO Granary WiFi PLAF103 support",
+    "url": "https://petlibro.com/pages/how-the-granary-wifi-feeder-works",
+    "note": "Exact kibble, desiccant, power-supply, battery-mode, schedule, and connectivity limitations."
+  },
+  {
+    "name": "PETLIBRO Granary PLAF103 cleaning",
+    "url": "https://petlibro.com/pages/how-do-i-disassemble-and-clean-the-granary-smart-feeder-af103-plaf103",
+    "note": "Exact removable washable parts, powered-base restriction, drying, and reassembly guidance."
+  },
+  {
+    "name": "PETLIBRO Granary PLAF103 user manual",
+    "url": "https://cdn.shopify.com/s/files/1/0252/5197/1119/files/PETLIBRO_Granary_WIFI_Feeder_PLAF103_USER_MANUAL_7e70ddbd-4395-4885-bfd2-fdfdb143874b.pdf?v=1691135055",
+    "note": "Exact official PLAF103 operating and care instructions."
+  },
+  {
+    "name": "PETLIBRO portion-size guidance",
+    "url": "https://petlibro.com/pages/how-much-is-in-one-feeding-portion-plaf001-002-101-102-plaf003-004-plaf005-006-103-203-plaf008-plaf107-plaf108-plaf301",
+    "note": "Official explanation that feeder portions are volumetric and vary with the food."
+  },
+  {
+    "name": "Amazon PLAF103 Black 3 L selection",
+    "url": "https://www.amazon.com/dp/B0BYD73PHN",
+    "note": "October 31 selected 3L-with WiFi, one item, PLAF103 and explicit Buy New Amazon.com offer; expanded 30-day returns. Different capacity/portion wording is not silently merged with current 5 L documentation."
+  }
+],
     offers: [{ merchant: "Amazon US", url: "https://amzn.to/3Qj2NaW", label: "Check price on Amazon", priceNote: "Confirm ASIN B0BYD73PHN, PLAF103, capacity, single- or dual-bowl variant, color, included splitter or tray, seller, live price, and availability." }],
   },
   {
@@ -203,59 +216,69 @@ export const products: Product[] = [
     "asin": "B0146QXOB0",
     "amazonDetailUrl": "https://www.amazon.com/dp/B0146QXOB0",
     "seoTitle": "Catit Flower Fountain Guide: 3L Capacity, Filters & Cleaning",
-    "updatedAt": "October 26, 2026",
+    "updatedAt": "October 31, 2026",
     "evidenceMode": "official-spec",
-    "researchNote": "Original 43742 manual English text/diagrams and current Catit model/filter support reviewed October 26, 2026. No pump-noise, water-intake, tipping, water-quality or cat-preference test. Historical ASIN identity is not a fresh selected bundle, seller or return observation.",
+    "researchNote": "Original 43742 manual English text/diagrams and current Catit model/filter support reviewed October 26, 2026. No pump-noise, water-intake, tipping, water-quality or cat-preference test. Historical ASIN identity is not a fresh selected bundle, seller or return observation. October 31 selected Green 43742W identity, Amazon.com offer and expanded 30-day returns observed. The title says LED despite the 43742W model; no 43747 nightlight feature, received supply or dimension measurement is certified.",
     "sources": [
-      {
-        "name": "Catit original Flower product",
-        "url": "https://www.catit.com/products/drinking-fountains/flower-fountain/",
-        "note": "Original green 43742, capacity, dimensions and flow settings; no measured pet outcome."
-      },
-      {
-        "name": "Catit original 43742 manual",
-        "url": "https://www.catit.com/shared/Product-Manual_Catit-Flower-Fountain_NA.pdf",
-        "note": "VER 05/22 English and diagrams reviewed, including maintenance and pump limits."
-      },
-      {
-        "name": "Catit current Triple Action pad",
-        "url": "https://www.catit.com/products/drinking-fountains/flower-fountain-triple-action-filter-pad/",
-        "note": "Current 43738/43739 compatibility; replacement-pack directions remain separate."
-      },
-      {
-        "name": "Catit Flower model support",
-        "url": "https://www.catit.com/help-advice/drinking-fountains/flower-fountain/",
-        "note": "Separate manuals for original, LED and stainless models."
-      },
-      {
-        "name": "Catit placement and care Q&A",
-        "url": "https://www.catit.com/spotlight/catit-flower-fountain-qa/",
-        "note": "Floor placement reference; follow the applicable model manual where maintenance intervals differ."
-      }
-    ],
+  {
+    "name": "Catit original Flower product",
+    "url": "https://www.catit.com/products/drinking-fountains/flower-fountain/",
+    "note": "Original green 43742, capacity, dimensions and flow settings; no measured pet outcome."
+  },
+  {
+    "name": "Catit original 43742 manual",
+    "url": "https://www.catit.com/shared/Product-Manual_Catit-Flower-Fountain_NA.pdf",
+    "note": "VER 05/22 English and diagrams reviewed, including maintenance and pump limits."
+  },
+  {
+    "name": "Catit current Triple Action pad",
+    "url": "https://www.catit.com/products/drinking-fountains/flower-fountain-triple-action-filter-pad/",
+    "note": "Current 43738/43739 compatibility; replacement-pack directions remain separate."
+  },
+  {
+    "name": "Catit Flower model support",
+    "url": "https://www.catit.com/help-advice/drinking-fountains/flower-fountain/",
+    "note": "Separate manuals for original, LED and stainless models."
+  },
+  {
+    "name": "Catit placement and care Q&A",
+    "url": "https://www.catit.com/spotlight/catit-flower-fountain-qa/",
+    "note": "Floor placement reference; follow the applicable model manual where maintenance intervals differ."
+  },
+  {
+    "name": "Hagen original Flower 43742W reference",
+    "url": "https://hagen.es/products/flower-fountain",
+    "note": "Official 43742W reference and EAN 022517437421; not proof of a supplied US adapter or LED 43747 features."
+  },
+  {
+    "name": "Amazon Green 43742W selection",
+    "url": "https://www.amazon.com/dp/B0146QXOB0",
+    "note": "October 31 selected model/UPC and expanded 30-day return observation; LED title and dimension discrepancy remain unresolved."
+  }
+],
     "editorialSections": [
-      {
-        "heading": "Identify original 43742 before applying advice",
-        "body": "The historical ASIN refers to the original green 3 L family, not every Flower-branded product. LED 43747 and stainless 43725 have distinct instructions. Confirm the received model, regional power supply and filter package instead of applying a similar photograph’s parts or washing claims."
-      },
-      {
-        "heading": "Use the manual’s maintenance rather than capacity claims",
-        "body": "The reviewed original manual calls for weekly maintenance and conditional filter replacement. Reservoir volume and a filter do not establish clean-water duration or measured drinking. Unplug before handling, keep the pump submerged during use and follow the exact disassembly and rinsing directions. A separate fresh-water bowl covers introduction and cleaning downtime."
-      },
-      {
-        "heading": "Keep old cartridge and new pad directions separate",
-        "body": "The VER 05/22 manual depicts 43745/43746 cartridge packs. Catit’s current 43738/43739 pad page explicitly lists compatible full-size Flower variants. That does not establish fit for PIXI, Mini or every generic filter, and the new pack’s own instructions matter. Include actual compatible-filter cost instead of treating the initial fountain price as the whole ownership cost."
-      },
-      {
-        "heading": "Keep preference and health outcomes unmeasured",
-        "body": "This page has not observed the cat’s use, pump sound, tipping resistance or water quality. Catit’s placement advice favors a stable floor location, while the exact manual sets the electrical and water-level requirements. Keep the current bowl when it works; a fountain does not diagnose or treat a drinking or health change."
-      }
-    ],
+  {
+    "heading": "Use the green 43742W identity, not an LED word in the title",
+    "body": "The current B0146QXOB0 selection is Green and lists model 43742W, UPC 022517437421. Hagen also identifies that reference as the original Flower fountain. Its Amazon title includes LED, which does not establish that it is the separate blue 43747 model or includes its nightlight. Confirm the received pump, regional supply and filter package. The current retailer and original manufacturer dimensions also differ."
+  },
+  {
+    "heading": "Use the manual’s maintenance rather than capacity claims",
+    "body": "The reviewed original manual calls for weekly maintenance and conditional filter replacement. Reservoir volume and a filter do not establish clean-water duration or measured drinking. Unplug before handling, keep the pump submerged during use and follow the exact disassembly and rinsing directions. A separate fresh-water bowl covers introduction and cleaning downtime."
+  },
+  {
+    "heading": "Keep old cartridge and new pad directions separate",
+    "body": "The VER 05/22 manual depicts 43745/43746 cartridge packs. Catit’s current 43738/43739 pad page explicitly lists compatible full-size Flower variants. That does not establish fit for PIXI, Mini or every generic filter, and the new pack’s own instructions matter. Include actual compatible-filter cost instead of treating the initial fountain price as the whole ownership cost."
+  },
+  {
+    "heading": "Keep preference and health outcomes unmeasured",
+    "body": "This page has not observed the cat’s use, pump sound, tipping resistance or water quality. Catit’s placement advice favors a stable floor location, while the exact manual sets the electrical and water-level requirements. Keep the current bowl when it works; a fountain does not diagnose or treat a drinking or health change."
+  }
+],
     "name": "Catit Flower Cat Water Fountain",
     "brand": "Catit",
     "category": "feeding",
     "image": "/images/affiliate/pet-fountain-care-editorial.svg",
-    "summary": "The original green Catit Flower 43742 is a 3 L fountain reference with three documented flow configurations. Pump access, exact filters and routine cleaning determine fit; the cat may still prefer a bowl.",
+    "summary": "A green Catit Flower 3 L fountain reference. The current listing identifies 43742W but uses LED in its title; confirm the actual model, footprint, supplied pump and filters before selecting it.",
     "verdict": "Consider original 43742 when its placement, exact filters and cleaning routine suit the home and the cat uses it. Do not buy it as a proven hydration treatment or a way to leave water unchecked. Keep a suitable bowl routine when a fountain adds no useful benefit.",
     "whyItMatters": "Consider original 43742 when its placement, exact filters and cleaning routine suit the home and the cat uses it. Do not buy it as a proven hydration treatment or a way to leave water unchecked. Keep a suitable bowl routine when a fountain adds no useful benefit.",
     "bestFor": "A monitored moving-water routine with practical model-specific cleaning",
@@ -273,15 +296,15 @@ export const products: Product[] = [
       "A cat may prefer a bowl; intake and noise are untested"
     ],
     "specs": {
-      "ASIN": "B0146QXOB0; confirm selected package",
-      "Model": "Original green Flower Fountain 43742",
-      "Capacity": "3 L listed; not days without care",
-      "Dimensions": "8.3 ×8.3 ×7.3 inches listed",
-      "Other models": "LED 43747 and stainless 43725 are distinct",
-      "Filter generation": "Historical 43745/43746 cartridges; current 43738/43739 pads need own instructions",
-      "Care": "Original manual calls for weekly maintenance and conditional filter replacement",
-      "Pump": "Must stay submerged; do not run dry"
-    },
+  "ASIN": "B0146QXOB0; confirm selected package",
+  "Model": "Selected green 43742W, UPC 022517437421; Amazon title says LED, while the model belongs to the original green Flower reference.",
+  "Capacity": "3 L listed; not days without care",
+  "Dimensions": "Current retail selection 9.0 × 8.3 × 7.7 inches; official original reference 8.3 × 8.3 × 7.3 differs. Confirm the actual footprint.",
+  "Other models": "LED 43747 and stainless 43725 are distinct",
+  "Filter generation": "Historical 43745/43746 cartridges; current 43738/43739 pads need own instructions",
+  "Care": "Original manual calls for weekly maintenance and conditional filter replacement",
+  "Pump": "Must stay submerged; do not run dry"
+},
     "evidence": [
       "Original 43742 English manual and component diagrams visually read",
       "Different Flower versions and filter generations kept distinct",
@@ -301,14 +324,14 @@ export const products: Product[] = [
       }
     ],
     "imageAlt": "Editorial fountain-care diagram showing reservoir, filter and pump as separate maintenance checks; not a Catit product photograph",
-    "purchaseCheck": "Confirm original green 43742, received regional supply and exact filter package. Choose only when the placement and cleaning routine work; keep a fresh-water bowl available. Capacity and filtration do not establish unattended-care duration or a health benefit."
+    "purchaseCheck": "Choose the intended Green 43742W B0146QXOB0 package and resolve any LED/model or footprint uncertainty before checkout. Confirm the regional supply, filter package, current condition, seller, delivery and returns. Keep a fresh-water bowl and routine human checks."
   },
   {
     "site": "pet",
     "slug": "furbo-360-dog-camera",
     "asin": "B0BWN22T25",
     "seoTitle": "Is Furbo Free? 360 Dog Camera Plans and Standalone Limits",
-    "updatedAt": "October 26, 2026",
+    "updatedAt": "October 31, 2026",
     "name": "Furbo 360 Dog Camera",
     "amazonTitle": "Furbo 360 Dog Camera — Paid Plan Required to Activate",
     "brand": "Furbo",
@@ -332,15 +355,17 @@ export const products: Product[] = [
       "Pet response, placement, exact package and network coverage need checking"
     ],
     "specs": {
-      "ASIN": "B0BWN22T25",
-      "Historical offer identity": "Paid Plan Required to Activate; not Standalone",
-      "Model": "360 Dog Camera; not Cat Camera or Mini 360",
-      "Network": "Use model-specific 2.4 GHz setup instructions",
-      "Plan cost": "Compare selected billed term, renewal and additional cameras; no current checkout total verified",
-      "After cancellation": "Unknown for this exact offer because official articles conflict",
-      "Placement": "Quick-start distances are guidance, not measured room or Wi-Fi coverage",
-      "Power package": "Confirm supplied adapter and cable; current quick-start package wording may differ"
-    },
+  "ASIN": "B0BWN22T25",
+  "Historical offer identity": "Paid Plan Required to Activate; not Standalone",
+  "Model": "360 Dog Camera; not Cat Camera or Mini 360",
+  "Network": "Use model-specific 2.4 GHz setup instructions",
+  "Plan cost": "Compare selected billed term, renewal and additional cameras; no current checkout total verified",
+  "After cancellation": "Unknown for this exact offer because official articles conflict",
+  "Placement": "Quick-start distances are guidance, not measured room or Wi-Fi coverage",
+  "Power package": "Confirm supplied adapter and cable; current quick-start package wording may differ",
+  "Current selected identity": "FD030CEG501 / 360 Dog Camera / Subscription Required to Activate",
+  "Minimum term": "Current exact retail offer states a 3-month minimum; monthly or annual billing and renewal must be checked separately."
+},
     "evidence": [
       "Historical September 24 listing required paid activation; this is not a new seller or stock observation",
       "Plans article requires active service for all functions on Subscription Required hardware",
@@ -348,27 +373,31 @@ export const products: Product[] = [
       "Mini 360 and Cat Camera are separate model comparisons, not upgrades to this ASIN"
     ],
     "editorialSections": [
-      {
-        "heading": "Separate this ASIN from Standalone hardware",
-        "body": "The September 24 listing observation identified B0BWN22T25 as Paid Plan Required to Activate. Furbo’s Standalone basic-feature guidance therefore cannot be applied to it. The camera discount and the plan are parts of one buying decision; confirm the currently selected contract rather than treating a historical three-month minimum as today’s universal offer."
-      },
-      {
-        "heading": "Leave post-cancellation access unknown",
-        "body": "Furbo’s plans page says subscription-required cameras need active service for all features, including basic controls. Its activation article describes basic access after an initial subscription period. Those official statements conflict. This guide does not promise that cancellation restores free live view, talking, treat tossing or alerts for the linked offer; budget for continuing service until its applicable terms resolve the point."
-      },
-      {
-        "heading": "Compare current billing without freezing a promotion",
-        "body": "Check the full amount billed now, any minimum term, renewal, cancellation timing and additional-camera charges. Longer prepaid plans can have a lower monthly equivalent but a larger initial payment. Promotional camera-plus-plan prices are not the standard recurring price. No current seller, delivery, refund eligibility or checkout total has been verified in this documentation review."
-      },
-      {
-        "heading": "Treat interaction and placement still need a real check",
-        "body": "Confirm appropriate treats and the exact instructions before use, observe the dog’s response calmly and keep placement stable with a protected cable. A rotating camera cannot prove coverage of every pet location. The quick-start guide’s suggested height and router distance are starting references, not a test of this home; follow the received power and package instructions."
-      },
-      {
-        "heading": "Mini 360 and Cat Camera are separate models",
-        "body": "Furbo’s current catalog also shows Mini 360 with 2K positioning and a separate Cat Camera. Those names do not update the historical Dog Camera’s resolution, included parts, contract or warranty. A newer model on sale is not evidence that the older model is discontinued. Keep a working camera if the additional interaction or paid services do not solve a real need."
-      }
-    ],
+  {
+    "heading": "Separate this ASIN from Standalone hardware",
+    "body": "The September 24 listing observation identified B0BWN22T25 as Paid Plan Required to Activate. Furbo’s Standalone basic-feature guidance therefore cannot be applied to it. The camera discount and the plan are parts of one buying decision; confirm the currently selected contract rather than treating a historical three-month minimum as today’s universal offer."
+  },
+  {
+    "heading": "Leave post-cancellation access unknown",
+    "body": "Furbo’s plans page says subscription-required cameras need active service for all features, including basic controls. Its activation article describes basic access after an initial subscription period. Those official statements conflict. This guide does not promise that cancellation restores free live view, talking, treat tossing or alerts for the linked offer; budget for continuing service until its applicable terms resolve the point."
+  },
+  {
+    "heading": "Compare current billing without freezing a promotion",
+    "body": "Check the full amount billed now, any minimum term, renewal, cancellation timing and additional-camera charges. Longer prepaid plans can have a lower monthly equivalent but a larger initial payment. Promotional camera-plus-plan prices are not the standard recurring price. No current seller, delivery, refund eligibility or checkout total has been verified in this documentation review."
+  },
+  {
+    "heading": "Treat interaction and placement still need a real check",
+    "body": "Confirm appropriate treats and the exact instructions before use, observe the dog’s response calmly and keep placement stable with a protected cable. A rotating camera cannot prove coverage of every pet location. The quick-start guide’s suggested height and router distance are starting references, not a test of this home; follow the received power and package instructions."
+  },
+  {
+    "heading": "Mini 360 and Cat Camera are separate models",
+    "body": "Furbo’s current catalog also shows Mini 360 with 2K positioning and a separate Cat Camera. Those names do not update the historical Dog Camera’s resolution, included parts, contract or warranty. A newer model on sale is not evidence that the older model is discontinued. Keep a working camera if the additional interaction or paid services do not solve a real need."
+  },
+  {
+    "heading": "The current offer still requires paid activation",
+    "body": "The October 31 selection remains Subscription Required to Activate, not the subscription-optional or six-month-included choice. Its description states a three-month minimum. Compare the actual activation charge, billed term, renewal and additional-camera cost rather than treating an annual-plan monthly equivalent as a cancel-any-month price. Current retail wording says basic functions remain after cancellation, but the conflicting manufacturer support articles have not been reconciled here."
+  }
+],
     "alternatives": [
       "Keep an existing suitable camera for occasional check-ins.",
       "Compare an exact Standalone or local-card model only after its own feature and contract checks."
@@ -377,37 +406,42 @@ export const products: Product[] = [
       "wyze-cam-pan-v3-pet-camera"
     ],
     "sources": [
-      {
-        "name": "Furbo Standalone basic features",
-        "url": "https://help.furbo.com/hc/en-us/articles/17462722245785-Basic-Features-you-can-use-without-Furbo-Nanny",
-        "note": "Standalone scope; not a free-function promise for this historical offer."
-      },
-      {
-        "name": "Furbo plans and pricing",
-        "url": "https://help.furbo.com/hc/en-us/articles/17462739016089-Furbo-Nanny-Plans-and-Pricing",
-        "note": "Active-plan wording for subscription-required cameras; compare billed tiers and renewal."
-      },
-      {
-        "name": "Furbo Subscription Required activation",
-        "url": "https://help.furbo.com/hc/en-us/articles/17462056102169-How-to-Setup-and-Activate-Nanny-Bundle-Camera-Subscription-Required",
-        "note": "Conflicting after-initial-term basic-access wording; exact applicability remains unknown."
-      },
-      {
-        "name": "Furbo payment and refund terms",
-        "url": "https://help.furbo.com/hc/en-us/articles/17462358359705-Payment-Terms-and-Refund-Policy",
-        "note": "Read the applicable minimum term, billing and cancellation; no exact current contract certified."
-      },
-      {
-        "name": "Furbo 360 Dog quick start",
-        "url": "https://help.furbo.com/hc/en-us/articles/29794759618201-Quick-Start-Guide-to-Furbo-360-Dog-Camera",
-        "note": "Placement and setup guidance, not a current package or coverage inspection."
-      },
-      {
-        "name": "Furbo current camera catalog",
-        "url": "https://furbo.com/us/products/furbo-360-dog-camera",
-        "note": "Current Mini 360 and Cat models are separate; no specs transferred to B0BWN22T25."
-      }
-    ],
+  {
+    "name": "Furbo Standalone basic features",
+    "url": "https://help.furbo.com/hc/en-us/articles/17462722245785-Basic-Features-you-can-use-without-Furbo-Nanny",
+    "note": "Standalone scope; not a free-function promise for this historical offer."
+  },
+  {
+    "name": "Furbo plans and pricing",
+    "url": "https://help.furbo.com/hc/en-us/articles/17462739016089-Furbo-Nanny-Plans-and-Pricing",
+    "note": "Active-plan wording for subscription-required cameras; compare billed tiers and renewal."
+  },
+  {
+    "name": "Furbo Subscription Required activation",
+    "url": "https://help.furbo.com/hc/en-us/articles/17462056102169-How-to-Setup-and-Activate-Nanny-Bundle-Camera-Subscription-Required",
+    "note": "Conflicting after-initial-term basic-access wording; exact applicability remains unknown."
+  },
+  {
+    "name": "Furbo payment and refund terms",
+    "url": "https://help.furbo.com/hc/en-us/articles/17462358359705-Payment-Terms-and-Refund-Policy",
+    "note": "Read the applicable minimum term, billing and cancellation; no exact current contract certified."
+  },
+  {
+    "name": "Furbo 360 Dog quick start",
+    "url": "https://help.furbo.com/hc/en-us/articles/29794759618201-Quick-Start-Guide-to-Furbo-360-Dog-Camera",
+    "note": "Placement and setup guidance, not a current package or coverage inspection."
+  },
+  {
+    "name": "Furbo current camera catalog",
+    "url": "https://furbo.com/us/products/furbo-360-dog-camera",
+    "note": "Current Mini 360 and Cat models are separate; no specs transferred to B0BWN22T25."
+  },
+  {
+    "name": "Amazon Furbo paid-activation selection",
+    "url": "https://www.amazon.com/dp/B0BWN22T25",
+    "note": "October 31 exact 360 Dog Camera/Subscription Required selection and three-month-minimum wording read; expanded 30-day returns. Separate subscription-optional and included-term variants are not merged."
+  }
+],
     "offers": [
       {
         "merchant": "Amazon US",
@@ -417,47 +451,57 @@ export const products: Product[] = [
       }
     ],
     "evidenceMode": "official-spec",
-    "researchNote": "Manufacturer plan, activation, quick-start and current model-catalog guidance reviewed October 26, 2026; no hands-on camera, alert, treat or security test. September 24 listing observations remain historical. Post-cancellation access and today’s exact billed contract remain unconfirmed.",
+    "researchNote": "Manufacturer plan, activation, quick-start and current model-catalog guidance reviewed October 26, 2026; no hands-on camera, alert, treat or security test. September 24 listing observations remain historical. Post-cancellation access and today’s exact billed contract remain unconfirmed. October 31 US ZIP 10001 FD030CEG501 paid-activation selection, Furbo seller/Amazon shipping and expanded 30-day returns observed. No account activation, subscription purchase or post-cancellation test was performed.",
     "purchaseAlternatives": [],
-    "purchaseCheck": "This historical ASIN is the Paid Plan Required to Activate version. Confirm the full selected plan, minimum billed term, renewal and cancellation conditions and budget for ongoing service. Do not choose it on a promise of free basic access after cancellation. Keep a suitable existing camera when treat interaction adds no value."
+    "purchaseCheck": "Choose B0BWN22T25 only if the Subscription Required to Activate offer and its stated three-month minimum fit the budget. Review the actual activation, billed term and renewal; confirm the selected model, condition, seller, delivery and returns. Post-cancellation basic access remains a separate unresolved entitlement."
   },
   {
     "site": "pet",
     "slug": "wyze-cam-pan-v3-pet-camera",
-    "updatedAt": "October 26, 2026",
-    "asin": "B0DTNKLF1K",
+    "updatedAt": "October 31, 2026",
+    "asin": "B0B9TWY11Q",
     "evidenceMode": "official-spec",
-    "researchNote": "Wyze Pan v3 technical, storage, privacy and newer-model documentation reviewed October 26, 2026; no physical camera, tracking or security test. The historical ASIN identity-drift hold remains, and no replacement listing has been verified.",
+    "researchNote": "Current Wyze Pan v3 product specifications, full relevant box/FAQ/setup text and October 31 US White 1-pack Buy New Amazon.com offer/expanded returns reviewed. Reuse of the previous complete Pan v3 storage/privacy/newer-model review. Corrected the former fixed-Cam-v3 ASIN; no physical security, tracking, outdoor or received-kit certification.",
     "sources": [
-      {
-        "name": "Wyze Pan v3 technical specifications",
-        "url": "https://support.wyze.com/hc/en-us/articles/11795670894875-Wyze-Cam-Pan-v3-Tech-Specs",
-        "note": "Exact model video, motion, power, network and card boundaries."
-      },
-      {
-        "name": "Wyze Pan v4 versus Pan v3",
-        "url": "https://support.wyze.com/hc/en-us/articles/40185187360155-How-is-Wyze-Cam-Pan-v4-different-than-Wyze-Cam-Pan-v3",
-        "note": "Separate newer model; no end-of-life or automatic ASIN upgrade inferred."
-      },
-      {
-        "name": "Wyze microSD versus Cam Plus",
-        "url": "https://support.wyze.com/hc/en-us/articles/7372980709275-How-do-Cam-Plus-and-a-microSD-card-compare",
-        "note": "Local continuous recordings differ from paid cloud-event/AI services."
-      },
-      {
-        "name": "Wyze Privacy Mode",
-        "url": "https://support.wyze.com/hc/en-us/articles/11791894386971-What-is-Privacy-Mode",
-        "note": "Pan v3/v4 lens and audio state only; not an account-security audit."
-      }
-    ],
+  {
+    "name": "Wyze Pan v3 technical specifications",
+    "url": "https://support.wyze.com/hc/en-us/articles/11795670894875-Wyze-Cam-Pan-v3-Tech-Specs",
+    "note": "Exact model video, motion, power, network and card boundaries."
+  },
+  {
+    "name": "Wyze Pan v4 versus Pan v3",
+    "url": "https://support.wyze.com/hc/en-us/articles/40185187360155-How-is-Wyze-Cam-Pan-v4-different-than-Wyze-Cam-Pan-v3",
+    "note": "Separate newer model; no end-of-life or automatic ASIN upgrade inferred."
+  },
+  {
+    "name": "Wyze microSD versus Cam Plus",
+    "url": "https://support.wyze.com/hc/en-us/articles/7372980709275-How-do-Cam-Plus-and-a-microSD-card-compare",
+    "note": "Local continuous recordings differ from paid cloud-event/AI services."
+  },
+  {
+    "name": "Wyze Privacy Mode",
+    "url": "https://support.wyze.com/hc/en-us/articles/11791894386971-What-is-Privacy-Mode",
+    "note": "Pan v3/v4 lens and audio state only; not an account-security audit."
+  },
+  {
+    "name": "Wyze Cam Pan v3 current product and setup",
+    "url": "https://www.wyze.com/products/wyze-cam-pan",
+    "note": "Full relevant specifications, box contents, FAQ and setup reviewed; either mount design can arrive and outdoor power is separate."
+  },
+  {
+    "name": "Amazon White 1-pack Pan v3 selection",
+    "url": "https://www.amazon.com/dp/B0B9TWY11Q",
+    "note": "October 31 US ZIP 10001: WYZECPAN3/UPC 810083471822, explicit Buy New Amazon.com selection and expanded 30-day returns. TECH61 used offer excluded."
+  }
+],
     "name": "Wyze Cam Pan v3",
     "brand": "Wyze",
     "category": "home-care",
     "image": "/images/affiliate/pet-camera-workflow-editorial.svg",
-    "summary": "A documented 1080p pan-and-tilt model with separate local-card and cloud-service paths. This page describes Pan v3, while the historical linked ASIN remains paused for a different observed camera identity.",
-    "verdict": "Pan v3 can be compared for ordinary room check-ins when its exact network, recording and privacy behavior suits the task. The historical ASIN does not currently qualify as its purchase path. Keep a working camera or wait for a matched listing rather than buying a different fixed camera or a paid-plan substitute.",
-    "whyItMatters": "Pan v3 can be compared for ordinary room check-ins when its exact network, recording and privacy behavior suits the task. The historical ASIN does not currently qualify as its purchase path. Keep a working camera or wait for a matched listing rather than buying a different fixed camera or a paid-plan substitute.",
-    "bestFor": "Model-specific room check-ins after an exact Pan v3 listing is established",
+    "summary": "The White single-camera Wyze Cam Pan v3 option now uses matched ASIN B0B9TWY11Q. Compare 2.4 GHz setup, local-card recording, paid cloud features and the required power/mounting kit.",
+    "verdict": "Consider Pan v3 for ordinary room check-ins when its powered placement, network and recording choices fit the task. A corrected White 1-pack link is available; keep a suitable existing camera when it already does the job. Remote app access and account security still need their own checks.",
+    "whyItMatters": "A rotating camera, local recording and paid cloud services solve different tasks. The exact camera and power package must match before comparing price or planning installation.",
+    "bestFor": "Powered indoor room check-ins with an explicit local-card or cloud-recording plan",
     "priceBand": "$",
     "rating": 0,
     "scores": [],
@@ -467,207 +511,270 @@ export const products: Product[] = [
       "Model-specific Privacy Mode is documented"
     ],
     "cons": [
-      "Historical ASIN points to a different observed camera identity",
-      "Local card support does not establish an offline remote app",
-      "Pan v4 specifications belong to a separate model"
-    ],
+  "Requires suitable power and 2.4 GHz Wi-Fi",
+  "Cloud AI and local-card recording have different requirements",
+  "Outdoor power and the received mounting-kit revision need separate checks"
+],
     "specs": {
-      "Historical ASIN": "B0DTNKLF1K; purchase held for identity drift",
-      "Described model": "Wyze Cam Pan v3",
-      "Video": "1080p; 120° field of view listed",
-      "Movement": "360° horizontal and 180° vertical range listed; not measured coverage",
-      "Network": "2.4 GHz Wi-Fi; no 5 GHz support",
-      "Power": "5 V/2 A microUSB in Pan v3 specifications",
-      "Local card": "FAT32 up to 32 GB; exFAT up to 256 GB in linked model documentation",
-      "Privacy Mode": "Lens folds into base and sound recording stops; not a universal account-security guarantee"
-    },
+  "Historical ASIN": "B0DTNKLF1K is a fixed Cam v3 and is not the current buying path.",
+  "Described model": "Wyze Cam Pan v3",
+  "Video": "1080p; 120° field of view listed",
+  "Movement": "360° horizontal and 180° vertical range listed; not measured coverage",
+  "Network": "2.4 GHz Wi-Fi; no 5 GHz support",
+  "Power": "5 V/2 A microUSB in Pan v3 specifications",
+  "Local card": "FAT32 up to 32 GB; exFAT up to 256 GB in linked model documentation",
+  "Privacy Mode": "Lens folds into base and sound recording stops; not a universal account-security guarantee",
+  "ASIN": "B0B9TWY11Q; current White 1-pack Pan v3 selection",
+  "Selected retail model": "WYZECPAN3, UPC 810083471822"
+},
     "evidence": [
-      "Keep the historical identity-drift purchase hold",
-      "Match Pan v3 name, power, network and card documentation",
-      "Review playback, privacy mode and account access as separate functions",
-      "Do not claim observed image quality, tracking success or security"
-    ],
+  "Current White 1-pack Pan v3 identity and selected Buy New offer observed October 31",
+  "Manufacturer technical, box, FAQ and setup guidance reviewed; previous model-specific storage/privacy reading reused",
+  "Fixed Cam v3 and newer Pan v4 are distinct products",
+  "No measured tracking, image quality, weather or account-security result"
+],
     "alternatives": [
-      "Keep a suitable existing camera while the exact purchase is unresolved.",
-      "Compare another model for the actual recording and plan task, with its own identity checks."
-    ],
+  "Keep a suitable existing camera.",
+  "Compare another exact camera only for a required feature, with its own power, recording and plan conditions."
+],
     "offers": [
-      {
-        "merchant": "Amazon US",
-        "url": "https://amzn.to/4w0eORs",
-        "label": "Check price on Amazon",
-        "priceNote": "Historical identity reference only; exact purchase remains held."
-      }
-    ],
-    "seoTitle": "Wyze Cam Pan v3: Local Storage, Privacy and Listing Hold",
+  {
+    "merchant": "Amazon US",
+    "url": "https://www.amazon.com/dp/B0B9TWY11Q?tag=madapets-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+    "label": "Check Wyze Cam Pan v3 on Amazon",
+    "priceNote": "Choose White 1-pack WYZECPAN3; confirm power package, current condition, seller and returns."
+  }
+],
+    "seoTitle": "Wyze Cam Pan v3: Exact Model, Local Storage and Plans",
     "purchaseAlternatives": [],
-    "amazonDetailUrl": "https://www.amazon.com/dp/B0DTNKLF1K",
+    "amazonDetailUrl": "https://www.amazon.com/dp/B0B9TWY11Q",
     "imageAlt": "Editorial diagram separating live view, local-card recordings and cloud-service checks; not a Wyze product photograph",
-    "purchaseCheck": "The exact purchase is paused because B0DTNKLF1K was observed as a fixed Cam v3 rather than Pan v3. Match a real Pan v3 listing before buying. A paid-activation Furbo is not automatically substituted for a basic check-in or local-card task.",
+    "purchaseCheck": "Select Pan v3 B0B9TWY11Q, White 1-pack, model WYZECPAN3. Confirm indoor power, 2.4 GHz Wi-Fi and the chosen recording method; an outdoor installation needs the correct separate adapter. Recheck condition, current seller, delivery and returns.",
     "editorialSections": [
-      {
-        "heading": "Do not buy a fixed Cam v3 as Pan v3",
-        "body": "The existing July 29 observation found the historical ASIN showing a fixed Wyze Cam v3, which is a different product from Cam Pan v3. Its exact purchase remains paused. This documentation review has not established a corrected seller or replacement ASIN. No Furbo purchase is inherited merely because both products appear in a pet-camera comparison."
-      },
-      {
-        "heading": "Keep local recording and cloud features separate",
-        "body": "Wyze distinguishes continuous recording to a compatible microSD card from paid cloud events and AI. Follow Pan v3 card format and capacity instructions and check the playback/export path you need. Card recording does not prove that a remote app, account or every function works through an internet outage."
-      },
-      {
-        "heading": "Use model-specific privacy and account controls",
-        "body": "Wyze describes Pan v3 Privacy Mode as folding its lens into the base and stopping sound recording. Account sharing, authentication and recovery still need separate checks. This page has not audited encryption, tested session revocation or established that a visible status cue removes all exposure."
-      },
-      {
-        "heading": "Pan v4 is a separate comparison",
-        "body": "Wyze’s manufacturer comparison lists 4K and 5 GHz/Wi-Fi 6 changes for Pan v4. Pan v3 remains the 1080p, 2.4 GHz reference here. Do not transfer newer resolution, networking, accessories or buying identity to the old ASIN, or infer discontinuation solely from a newer release."
-      }
-    ]
+  {
+    "heading": "The corrected link buys Pan v3, not fixed Cam v3",
+    "body": "B0B9TWY11Q is the selected White 1-pack Wyze Cam Pan v3, model WYZECPAN3. The former B0DTNKLF1K reference currently identifies a fixed Cam v3 and is no longer used for this article’s shopping link. Select the single camera rather than a two-pack or Renewed offer. For indoor room check-ins, match a powered location, 2.4 GHz Wi-Fi and the actual recording task."
   },
+  {
+    "heading": "Keep local recording and cloud features separate",
+    "body": "Wyze distinguishes continuous recording to a compatible microSD card from paid cloud events and AI. Follow Pan v3 card format and capacity instructions and check the playback/export path you need. Card recording does not prove that a remote app, account or every function works through an internet outage."
+  },
+  {
+    "heading": "Use model-specific privacy and account controls",
+    "body": "Wyze describes Pan v3 Privacy Mode as folding its lens into the base and stopping sound recording. Account sharing, authentication and recovery still need separate checks. This page has not audited encryption, tested session revocation or established that a visible status cue removes all exposure."
+  },
+  {
+    "heading": "Pan v4 is a separate comparison",
+    "body": "Wyze’s manufacturer comparison lists 4K and 5 GHz/Wi-Fi 6 changes for Pan v4. Pan v3 remains the 1080p, 2.4 GHz reference here. Do not transfer newer resolution, networking, accessories or buying identity to the old ASIN, or infer discontinuation solely from a newer release."
+  },
+  {
+    "heading": "Plan mounting and outdoor power separately",
+    "body": "Wyze says either of two mounting-kit designs may arrive regardless of the design pictured on the box. Outdoor use requires its separately specified outdoor adapter and protected card slot; the ordinary included indoor power supply does not establish an outdoor-ready kit. No hands-on tracking, weather, recording or account-security test is claimed here."
+  }
+]
+  ,
+"amazonTitle": "Wyze Cam Pan v3 — White, 1-pack, WYZECPAN3",
+},
   {
     site: "pet",
     slug: "litter-genie-plus-pail",
-    asin: "B09V399NTV",
-    amazonDetailUrl: "https://www.amazon.com/dp/B09V399NTV",
+    asin: "B007IRMTXE",
+    amazonDetailUrl: "https://www.amazon.com/dp/B007IRMTXE",
     seoTitle: "Litter Genie Plus Pail Guide: Refill Fit, Capacity & Cost",
-    updatedAt: "July 26, 2026",
+    updatedAt: "October 31, 2026",
     evidenceMode: "official-spec",
-    researchNote: "Research-based pail and refill-compatibility guide using Litter Genie documentation and the exact Amazon ASIN; this is not a hands-on odor-containment or refill-duration test.",
+    researchNote: "Current official Plus Pail description, full relevant use/refill compatibility text and support FAQ read. October 31 US Silver Plus identity and four explicitly New seller-fulfilled offers observed. No individual seller return policy, odor performance, refill yield or received-package test; the old Easy Roll ASIN is not relabeled Plus.",
     sources: [
-      { name: "Litter Genie Plus Pail", url: "https://www.littergenie.com/products/litter-genie-plus-pail", note: "Official included items, capacity framing, refill duration, compatible refills, and operating steps." },
-      { name: "Amazon listing B09V399NTV", url: "https://www.amazon.com/dp/B09V399NTV", note: "Exact linked pail color, bundle, seller, and current return terms." },
-    ],
+  {
+    "name": "Litter Genie Plus Pail",
+    "url": "https://www.littergenie.com/products/litter-genie-plus-pail",
+    "note": "Official included items, capacity framing, refill duration, compatible refills, and operating steps."
+  },
+  {
+    "name": "Litter Genie refill-to-pail compatibility",
+    "url": "https://www.littergenie.com/pages/litter-genie-refill-to-pail-compatibility-chart",
+    "note": "Text distinguishes square continuous film from Easy Roll tear-off bags; Plus product page lists Standard, Jumbo and Jumbo Eco."
+  },
+  {
+    "name": "Litter Genie support FAQ",
+    "url": "https://www.littergenie.com/pages/support-faq",
+    "note": "Relevant pail use and Easy Roll/square-refill differences read; duration figures remain conditional manufacturer examples."
+  },
+  {
+    "name": "Amazon Silver Plus Pail",
+    "url": "https://www.amazon.com/dp/B007IRMTXE",
+    "note": "October 31 selected Plus identity and four New seller-fulfilled offers observed; no featured offer or seller-specific return window established."
+  }
+],
     editorialSections: [
-      { heading: "Refill compatibility is the recurring-cost decision", body: "Litter Genie lists Standard, Jumbo, and Jumbo Eco square refills as compatible with the Plus Pail. Compare live refill cost and local availability before buying the pail; a low initial price can be misleading when the refill system is inconvenient." },
-      { heading: "Duration claims depend on one-cat use", body: "The brand frames the pail as holding up to 14 days of soiled litter for one cat and the included refill as lasting up to two and a half months. Scoop size, litter type, number of cats, bag length, and emptying preference can shorten both figures." },
-      { heading: "Containment begins after prompt scooping", body: "The pail can contain tied-off waste between trash runs, but it does not clean the box, improve litter performance, or solve urine and odor sources elsewhere in the room. Keep the scoop-drop-lock routine and normal box cleaning separate." },
-    ],
+  {
+    "heading": "The Silver Plus Pail uses a corrected listing",
+    "body": "The current link is B007IRMTXE, Silver Plus Pail with a square refill. The previous B09V399NTV is Easy Roll with tear-off bags, which does not make the two refill systems interchangeable. The October 31 Silver selection had separate seller-fulfilled offers and no featured offer. Compare the seller, full delivered cost and that seller’s return conditions before choosing one; Amazon fulfillment or a particular return window is not established here."
+  },
+  {
+    "heading": "Refill compatibility is the recurring-cost decision",
+    "body": "Litter Genie lists Standard, Jumbo, and Jumbo Eco square refills as compatible with the Plus Pail. Compare live refill cost and local availability before buying the pail; a low initial price can be misleading when the refill system is inconvenient."
+  },
+  {
+    "heading": "Duration claims depend on one-cat use",
+    "body": "The brand frames the pail as holding up to 14 days of soiled litter for one cat and the included refill as lasting up to two and a half months. Scoop size, litter type, number of cats, bag length, and emptying preference can shorten both figures."
+  },
+  {
+    "heading": "Containment begins after prompt scooping",
+    "body": "The pail can contain tied-off waste between trash runs, but it does not clean the box, improve litter performance, or solve urine and odor sources elsewhere in the room. Keep the scoop-drop-lock routine and normal box cleaning separate."
+  }
+],
     name: "Litter Genie Plus Pail",
     brand: "Litter Genie",
     category: "home-care",
     image: "/images/affiliate/pet-litter-genie-plus-pail.webp",
-    summary: "A litter disposal pail for reducing daily odor trips between the litter box and the outside trash.",
-    verdict: "Litter Genie Plus is not glamorous, but it solves a real apartment problem: containing scooped litter odor between trash runs.",
+    summary: "Silver Plus Pail with a square-refill system. The buying link now matches Plus rather than Easy Roll; compare seller-fulfilled offers and recurring refill cost.",
+    verdict: "Consider Plus Pail when its square refills, disposal routine and current seller terms suit the home. Compare the total refill and delivery cost with keeping a suitable lidded bin. Neither the 14-day capacity nor the refill-duration headline is a measured result for this household.",
     whyItMatters: "Odor control often fails after the box is scooped. A disposal pail can make daily maintenance easier if refill cost and placement are acceptable.",
     bestFor: "Apartments where litter odor control is the priority",
     priceBand: "$",
-    rating: 4.4,
-    scores: [
-      { label: "Odor control", value: 8 },
-      { label: "Daily convenience", value: 9 },
-      { label: "Refill cost", value: 6 },
-    ],
+    rating: 0,
+    scores: [],
     pros: ["Keeps scooped litter contained near the box", "Useful for multi-day trash routines", "Small footprint for bathrooms or closets"],
     cons: ["Refills add recurring cost", "Does not replace litter-box cleaning"],
-    specs: { ASIN: "B09V399NTV", "Product type": "Litter disposal pail", "Brand capacity framing": "Up to 14 days for one cat", "Included refill framing": "Up to 2.5 months for one cat", "Compatible refill families": "Standard, Jumbo, and Jumbo Eco square refills listed", "Before buying": "Confirm color, bundle, refill type, seller, and recurring cost" },
+    specs: {
+  "ASIN": "B007IRMTXE; Silver Plus Pail with square refill",
+  "Product type": "Litter disposal pail",
+  "Brand capacity framing": "Up to 14 days for one cat",
+  "Included refill framing": "Up to 2.5 months for one cat",
+  "Compatible refill families": "Standard, Jumbo, and Jumbo Eco square refills listed",
+  "Before buying": "Confirm color, bundle, refill type, seller, and recurring cost",
+  "Historical mismatch": "B09V399NTV is Easy Roll, a different tear-off refill system, and is not this Plus Pail buying link."
+},
     evidence: ["Confirm ASIN B09V399NTV, Plus Pail model, color, included refill, scoop, and seller", "Compare current compatible-refill price and availability", "Treat 14-day and 2.5-month figures as brand maxima dependent on one-cat usage", "Use with prompt scooping and regular litter-box cleaning rather than as an odor-source shortcut"],
     alternatives: ["Choose a covered trash can if refill cost is the main concern.", "Use better litter and ventilation if odor starts before scooping."],
-    offers: [{ merchant: "Amazon US", url: "https://amzn.to/4uU4Twb", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." }],
-  },
+    offers: [
+  {
+    "merchant": "Amazon US",
+    "url": "https://www.amazon.com/dp/B007IRMTXE?tag=madapets-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+    "label": "Compare Silver Plus Pail offers on Amazon",
+    "priceNote": "Choose Silver Plus Pail with square refill. Compare the specific seller, condition, delivery cost and return policy; no featured offer was observed."
+  }
+],
+
+"amazonTitle": "Litter Genie Plus Pail — Silver, Square Refill",
+"purchaseCheck": "Select Silver Plus Pail B007IRMTXE and the required square Standard/Jumbo/Jumbo Eco refill. Easy Roll tear-off bags are a different system. Current offers were seller-fulfilled with no featured offer; check the actual seller, condition, delivered price and seller-specific return terms.",
+},
   {
     "site": "pet",
     "slug": "petfusion-ultimate-dog-bed",
-    "asin": "B089RGDQBB",
-    "seoTitle": "PetFusion Ultimate Dog Bed Guide: Size, Foam & Cover Checks",
-    "updatedAt": "October 26, 2026",
+    "asin": "B017J9KPGS",
+    "seoTitle": "PetFusion Ultimate Large Bed: Size, Foam and Cover Care",
+    "updatedAt": "October 31, 2026",
     "evidenceMode": "official-spec",
-    "researchNote": "Petmate’s PetFusion catalog and a specific Ultimate partner SKU reviewed October 26, 2026. No hands-on foam, support, wash or durability test. The historical ASIN is not matched to that SKU, and its existing purchase hold remains.",
+    "researchNote": "Current selected Large Brown PF-IBL2 retail identity, included-layer description and expanded US returns reviewed October 31; corresponding full relevant Petmate partner SKU text read. Partner UPC metadata disagrees with retail and is repeated across SKUs. No physical inner dimensions, foam, support, fabric-safety, clinical or wash test; selected New condition was not explicit.",
     "sources": [
-      {
-        "name": "Petmate PetFusion collection",
-        "url": "https://www.petmate.com/collections/pet-fusion",
-        "note": "Brand/catalog reference; not exact ASIN availability or proof of discontinuation."
-      },
-      {
-        "name": "Petmate Partners Ultimate XL sandstone",
-        "url": "https://www.petmatepartners.com/pf-ibxl3.html",
-        "note": "Specific PF-IBXL3 SKU; size, foam and care not transferred to B089RGDQBB."
-      }
-    ],
+  {
+    "name": "Petmate PetFusion collection",
+    "url": "https://www.petmate.com/collections/pet-fusion",
+    "note": "Brand/catalog reference; not exact ASIN availability or proof of discontinuation."
+  },
+  {
+    "name": "Petmate PetFusion Ultimate Large Brown PF-IBL2",
+    "url": "https://www.petmatepartners.com/pf-ibl2.html",
+    "note": "Corresponding Large Brown SKU description and removable-cover care; repeated partner UPC not used as proof of exact retail identity."
+  },
+  {
+    "name": "Amazon PetFusion Large Brown selection",
+    "url": "https://www.amazon.com/dp/B017J9KPGS",
+    "note": "October 31 US ZIP 10001: PF-IBL2, Large 36×28, Brown, current Amazon.com offer and expanded 30-day returns observed. Not the old Bedsure ASIN or Sandstone XL."
+  }
+],
     "editorialSections": [
-      {
-        "heading": "A brand catalog is not an exact variant match",
-        "body": "Petmate’s current site confirms its PetFusion brand collection. Its partner catalog also lists Ultimate XL sandstone PF-IBXL3. Neither establishes that B089RGDQBB is that size or construction. Partial channel availability and newer bed families are not proof that this historical model is discontinued; the exact purchase remains paused."
-      },
-      {
-        "heading": "Measure usable space before apartment fit",
-        "body": "Compare the dog’s resting shape with the clear area inside the bolsters, then separately tape out the entire outer bed and approach route. A weight range or overall width cannot resolve both checks. Leave fit unknown if inner dimensions are missing rather than shrinking the resting area to fit furniture."
-      },
-      {
-        "heading": "Keep care and support claims specific",
-        "body": "A care statement for one SKU cannot certify another size’s cover, liner or foam. Check the received labels for removal, washing and drying. This page has not measured pressure distribution or compression, and “orthopedic” is not proof that a bed treats an individual animal’s pain. Follow suitable veterinary advice for mobility or discomfort."
-      },
-      {
-        "heading": "No cleaning-tool purchase substitution",
-        "body": "ChomChom may be compared separately for compatible fabric cleanup. It does not provide the sleeping surface, padding or entry of a bed. This paused page therefore does not inherit that roller’s shopping button. Keeping a suitable existing bed is a valid result."
-      }
-    ],
+  {
+    "heading": "The corrected purchase is Large Brown PF-IBL2",
+    "body": "B017J9KPGS currently identifies PetFusion Ultimate Large Brown, model PF-IBL2. The old B089RGDQBB identifies a Bedsure bed and is no longer the purchase link. Petmate’s PF-IBL2 page also identifies Large Brown; the earlier XL Sandstone reference is a different size and color. The partner catalog repeats one UPC across several sizes, so the model and selected retail fields matter more than that duplicated metadata."
+  },
+  {
+    "heading": "Measure usable space before apartment fit",
+    "body": "Compare the dog’s resting shape with the clear area inside the bolsters, then separately tape out the entire outer bed and approach route. A weight range or overall width cannot resolve both checks. Leave fit unknown if inner dimensions are missing rather than shrinking the resting area to fit furniture."
+  },
+  {
+    "heading": "Wash the cover, not every layer by assumption",
+    "body": "The matched retail and maker descriptions support a removable machine-washable cover. They do not establish a whole-bed wash procedure for the foam, liner and filled bolsters. Read the actual labels for removal, washing and drying before choosing the bed for a frequent-wash routine. Published memory-foam or orthopedic language is not evidence that the bed treats an individual dog’s discomfort."
+  },
+  {
+    "heading": "Buy a sleeping surface for a sleeping task",
+    "body": "Keep an intact bed that already fits when replacement adds no useful benefit. A hair roller may help with a separate compatible-fabric cleanup job, but it does not supply cushioning or restore a damaged bed. Persistent pain or mobility changes need suitable veterinary guidance."
+  }
+],
     "name": "PetFusion Ultimate Dog Bed",
     "brand": "PetFusion",
     "category": "comfort",
     "image": "/images/affiliate/pet-bed-fit-editorial.svg",
-    "summary": "A historical bolstered-bed reference whose selected size and construction still need an exact match. Compare usable sleeping area and layer-specific care without treating a current XL catalog entry as proof for this ASIN.",
-    "verdict": "Keep the PetFusion purchase paused until the exact size, usable area and layer-specific instructions match the actual offer. No measured support, chew resistance or wash performance is established here. Keep an intact suitable bed when replacement does not solve a real fit or care problem.",
-    "whyItMatters": "Keep the PetFusion purchase paused until the exact size, usable area and layer-specific instructions match the actual offer. No measured support, chew resistance or wash performance is established here. Keep an intact suitable bed when replacement does not solve a real fit or care problem.",
-    "bestFor": "A bolstered-bed comparison after exact sleeping-space and care checks",
+    "summary": "A matched Large Brown PF-IBL2 PetFusion Ultimate bed option. Its listed 36 × 28-inch outer footprint does not establish the clear sleeping area inside the bolsters.",
+    "verdict": "Consider the Large Brown PF-IBL2 only when the dog’s resting shape, entry needs and available floor space fit the actual bed. A corrected PetFusion link replaces the former Bedsure reference. No measured pressure relief, pain treatment, chew resistance or wash durability is established.",
+    "whyItMatters": "A bed must fit both the dog and the room. Measure the usable sleeping area separately from the outer footprint, and check cover, liner, foam and bolster care individually.",
+    "bestFor": "A bolstered Large-bed comparison after resting-space and layer-care checks",
     "priceBand": "$",
     "rating": 0,
     "scores": [],
     "pros": [
-      "Bolster layout can be compared with the dog’s resting position",
-      "Official Petmate catalog retains PetFusion brand references"
-    ],
+  "Current Large Brown model is separately identified",
+  "Bolster layout can be compared with the dog’s resting position",
+  "Removable cover has a separate care route"
+],
     "cons": [
-      "Historical ASIN is not matched to the reviewed official SKU",
-      "Outer dimensions do not establish usable sleeping area",
-      "No pressure, durability, wash or chew-proof result established"
-    ],
+  "Inner sleeping space and entry suitability need checking",
+  "Cover instructions do not authorize washing the foam or liner",
+  "Manufacturer partner UPC metadata conflicts with retail; no material or medical certification claimed"
+],
     "specs": {
-      "Historical ASIN": "B089RGDQBB; exact purchase held",
-      "Product family": "PetFusion Ultimate bolstered bed",
-      "Selected size and color": "Not established by the reviewed current official SKU",
-      "Sleeping-space check": "Measure inner clear area separately from full outer footprint",
-      "Layer care": "Confirm cover, liner, foam and bolster instructions individually",
-      "Official SKU boundary": "PF-IBXL3 is XL sandstone, not a verified ASIN match",
-      "Medical or chewing claim": "No treatment benefit or chew-proof performance established"
-    },
+  "ASIN": "B017J9KPGS",
+  "Selected model": "PF-IBL2; Large Brown, not XL Sandstone",
+  "Listed outer size": "36 × 28 × 9 inches; not an independently measured inner resting area",
+  "Base": "Retail and corresponding maker SKU describe a 4-inch memory-foam base; no pressure or medical test",
+  "Cover": "Removable and machine washable; follow the actual care label",
+  "Liner/foam/bolsters": "Do not transfer cover washing instructions to these separate layers",
+  "UPC boundary": "Retail lists 859473002345; partner catalog repeats 859473002642 across different SKU pages. UPC agreement is not claimed.",
+  "Historical ASIN": "B089RGDQBB currently identifies Bedsure and is no longer this buying path."
+},
     "evidence": [
-      "Current Petmate ownership/catalog reference reviewed",
-      "Exact ASIN-to-SKU match unresolved; historical hold preserved",
-      "Sleeping area, floor footprint and layer care are independent checks",
-      "No inferred foam superiority, medical effect or chew resistance"
-    ],
+  "Selected current PetFusion PF-IBL2 identity and expanded US returns observed",
+  "Corresponding maker Large Brown page read; XL and Sandstone not substituted",
+  "Outer footprint, clear sleeping area and layer care checked as separate decisions",
+  "No clinical, pressure, chew-proof or universal wash result"
+],
     "alternatives": [
       "Keep an intact bed that already fits and can be cared for.",
       "Compare another exact bed only after its own dimensions, entry and care checks."
     ],
     "offers": [
-      {
-        "merchant": "Amazon US",
-        "url": "https://amzn.to/4eAjIO1",
-        "label": "Check price on Amazon",
-        "priceNote": "Historical listing reference; exact purchase remains held."
-      }
-    ],
+  {
+    "merchant": "Amazon US",
+    "url": "https://www.amazon.com/dp/B017J9KPGS?tag=madapets-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+    "label": "Check PetFusion Large Brown bed on Amazon",
+    "priceNote": "Choose Large Brown PF-IBL2; check inner fit, layer-care labels, current condition, seller and returns."
+  }
+],
     "purchaseAlternatives": [],
     "imageAlt": "Editorial dog-bed fit diagram comparing inner sleeping area with full room footprint; not a PetFusion product photograph",
-    "purchaseCheck": "The exact PetFusion purchase remains paused. Match selected size, usable inner area, outer footprint and cover/liner/foam care before choosing a bed. A ChomChom roller is a separate cleaning tool and is not substituted for a sleeping surface."
-  },
+    "purchaseCheck": "Choose PetFusion Large Brown PF-IBL2, B017J9KPGS. Confirm usable sleeping area as well as the 36 × 28-inch listed outer footprint, entry height and separate cover/liner/foam care. Recheck current condition, seller, delivery and returns. Keep an intact suitable bed if replacement solves no real problem."
+  ,
+"amazonDetailUrl": "https://www.amazon.com/dp/B017J9KPGS",
+"amazonTitle": "PetFusion Ultimate Dog Bed — Large Brown, PF-IBL2",
+},
   {
     "site": "pet",
     "slug": "chomchom-roller-pet-hair-remover",
     "asin": "B0C2FMZMHP",
     "amazonDetailUrl": "https://www.amazon.com/dp/B0C2FMZMHP",
     "seoTitle": "ChomChom Black Classic: Surface Fit and Version Checks",
-    "updatedAt": "October 26, 2026",
+    "updatedAt": "October 31, 2026",
     "evidenceMode": "official-spec",
-    "researchNote": "The indexed exact Amazon identity and feature bullets were reviewed October 26, 2026, identifying Black Classic B0C2FMZMHP. A manufacturer-controlled care source for that version has not been established. No pickup, fabric-safety, durability, savings or fresh US seller/return test.",
+    "researchNote": "The complete current page and October 31 exact Black Classic retail selection, operating bullets, ChomChomRoller seller/Amazon shipping and expanded US returns were reviewed. The listing supports the chamber mechanism, not universal fabric safety or deep cleaning. Manufacturer-controlled Black Classic washing instructions and selected New condition remain unestablished; no pickup, durability or savings test.",
     "sources": [
-      {
-        "name": "Amazon B0C2FMZMHP identity and mechanism",
-        "url": "https://www.amazon.com/dp/B0C2FMZMHP",
-        "note": "Indexed Black Classic identity and product bullets only. Not fresh stock, seller, returns or verified manufacturer care documentation."
-      }
-    ],
+  {
+    "name": "Amazon Black Classic current selection",
+    "url": "https://www.amazon.com/dp/B0C2FMZMHP",
+    "note": "October 31 Original Size Black Classic/UPC 856957004154, selected seller and expanded 30-day returns observed. Listing mechanism is not manufacturer care or universal fabric-safety proof."
+  }
+],
     "editorialSections": [
       {
         "heading": "Black Classic is the represented version",
@@ -715,11 +822,11 @@ export const products: Product[] = [
       "Care applicability": "Exact Black Classic instructions still need confirmation; no whole-tool washing rule assumed"
     },
     "evidence": [
-      "Indexed exact title and selected Black Classic ASIN reviewed; no fresh regional offer inspection",
-      "Removed unverified manufacturer attribution from the white-product source",
-      "No universal pickup, fabric-safety, deep-cleaning or savings promise",
-      "Kept bedding and cleanup as separate tasks"
-    ],
+  "October 31 current Original Size Black Classic identity and seller/expanded returns observed",
+  "Exact retail bullets describe back-and-forth movement and chamber emptying",
+  "No universal pickup, fabric-safety, deep-cleaning or savings promise",
+  "Bedding and loose-hair cleanup remain separate tasks"
+],
     "alternatives": [
       "Keep an effective existing cleanup tool.",
       "Use a suitable vacuum attachment or cover-washing method under the fabric’s instructions when the task requires it."
@@ -741,86 +848,102 @@ export const products: Product[] = [
     site: "pet",
     slug: "shark-neverchange-max-air-purifier",
     asin: "B0C95R5CBW",
-    seoTitle: "Shark NeverChange MAX HP302 Buying Guide: Pet Dander, Odor & Filter Life",
-    updatedAt: "July 26, 2026",
+    seoTitle: "Shark NeverChange MAX HP301: Room Fit and Filter Care",
+    updatedAt: "October 31, 2026",
     evidenceMode: "official-spec",
-    researchNote: "Research-based room-fit and maintenance guide using Shark documentation; this is not a hands-on CADR, noise, odor, or filter-life test.",
-    name: "Shark NeverChange Max Air Purifier",
+    researchNote: "The complete current page, exact October 31 HP301 Buy New Amazon.com offer/expanded returns, current official HP301 product text and full ten-page English HP300 Series original owner’s guide with all diagrams were read. The original is retailer-hosted, not established as the exact revision inside this package. No CADR, sound, odor, filter-life, medical or received-unit test; conflicting dimension/weight tables remain unknown.",
+    name: "Shark NeverChange MAX HP301 Air Purifier",
     brand: "Shark",
     category: "home-care",
     image: "/images/affiliate/pet-shark-neverchange-max-air-purifier.webp",
-    summary: "A research-based guide to the Shark NeverChange MAX HP302, including its listed 1,400-square-foot one-hour coverage, debris screens, long-life HEPA filter claim, odor cartridge, and the limits of using filtration for pet smells.",
-    verdict: "The HP302 is worth comparing for a large living room or open pet area when hair and dander place a heavy load on the pre-filter. It is harder to justify in a small bedroom, for fragrance-sensitive households, or when the real problem is an uncleaned litter box or fabric source.",
+    summary: "The linked Grey B0C95R5CBW is HP301, with a listed 1,300-square-foot one-hour coverage claim. Compare room airflow, screen/HEPA care and the scented cartridge; HP302’s 1,400 figure is a different model reference.",
+    verdict: "Consider HP301 for an airborne-particle task when its room placement and maintenance fit the home. Use the selected model’s one-hour coverage framing, not a whole-home guarantee. Clean odor sources first and compare fragrance requirements before choosing the cartridge-equipped system.",
     whyItMatters: "Pet dander and visible hair are particle problems; litter, urine, and fabric smells begin at a source. An air purifier can support cleaning and ventilation, but its coverage number, filter conditions, noise, and scent cartridge need to fit the actual room.",
     bestFor: "Large pet rooms where dander and pre-filter cleaning matter",
     priceBand: "$$$",
-    rating: 4.4,
-    scores: [
-      { label: "Room coverage", value: 9 },
-      { label: "Noise control", value: 8 },
-      { label: "Filter upkeep", value: 7 },
-    ],
-    pros: ["Washable Debris Defense screens catch larger hair and dust before the HEPA filter", "CleanSense IQ displays changes in measured air quality", "Listed for up to 1,400 square feet in one hour"],
-    cons: ["The 1,400-square-foot figure represents one cleaning cycle per hour, not identical performance in every layout", "The Odor Neutralizer cartridge releases a scent, which will not suit every household", "Long filter-life claims depend on stated test and use conditions"],
+    rating: 0,
+    scores: [],
+    pros: [
+  "Removable debris screens have a separate care path from the HEPA filter",
+  "Particle display and automatic fan mode are documented",
+  "Manufacturer frames HP301 maximum coverage as 1,300 square feet in one hour"
+],
+    cons: [
+  "Coverage is a one-hour framing rather than uniform filtration through every room",
+  "Scented odor cartridge will not suit every household",
+  "Filter-life and saving claims depend on specific tests; ongoing maintenance remains necessary"
+],
     specs: {
-      ASIN: "B0C95R5CBW",
-      Model: "HP302",
-      "Product type": "True HEPA multi-filter air purifier",
-      "Listed coverage": "Up to 1,400 sq. ft. in one hour",
-      Filtration: "NeverChange HEPA filter plus washable Debris Defense screens",
-      "Odor feature": "Replaceable Odor Neutralizer Technology cartridge",
-      Dimensions: "13.27 x 13.27 x 24.72 in",
-      Weight: "13.45 lb",
-      Warranty: "2 years listed by Shark",
-    },
-    evidence: ["Confirm the Amazon listing is HP302 rather than HP152, HP202, or another Shark MAX model", "Size the purifier around the room and desired cleaning frequency, not the largest headline coverage alone", "Keep the intake and exhaust clear and clean the Debris Defense screens as directed", "Check whether the scented odor cartridge is acceptable before making it part of a bedroom or shared-room routine"],
+  "ASIN": "B0C95R5CBW",
+  "Model": "HP301, Grey; current retail UPC 622356610261",
+  "Listed coverage": "Up to 1,300 sq. ft. in one hour; not HP302’s 1,400 figure",
+  "Filtration": "NeverChange HEPA filter plus separately maintained debris screens",
+  "Odor feature": "Separate scented Odor Neutralizer cartridge; confirm package and desired use",
+  "Dimensions": "Retail 13.2 × 13.2 × 22.5 in; official HP301 table 14.88 × 13.31 × 25.04 in. Discrepancy unresolved, measure the available space.",
+  "Weight": "Retail 12.27 lb; official HP301 table 16.53 lb. Not resolved or measured.",
+  "Warranty": "Manufacturer lists two-year limited warranty, subject to its applicable terms; not the retailer return period."
+},
+    evidence: [
+  "Exact current retail identity is HP301, not HP302",
+  "Use the one-hour model-specific coverage framing and confirm actual room airflow",
+  "Keep HEPA dry and follow the applicable debris-screen instructions",
+  "No universal filter lifetime, quantified personal saving, clinical benefit or scent tolerance established"
+],
     editorialSections: [
-      {
-        heading: "What this guide is based on",
-        body: "This is a research-based buying guide using Shark's current HP302 product and filter information; it is not a hands-on air-quality or noise test. Room layout, fan speed, pollutant source, placement, and maintenance can change the result in a real pet home.",
-      },
-      {
-        heading: "HP302 versus the smaller NeverChange models",
-        body: "The model number matters. Shark lists the HP302 as the extra-large NeverChange MAX with up to 1,400-square-foot one-hour coverage, while smaller NeverChange models use lower coverage figures and different dimensions. Confirm HP302 on the retailer page before comparing price, filters, or floor-space needs.",
-      },
-      {
-        heading: "Read the 1,400-square-foot coverage correctly",
-        body: "Shark describes the maximum figure as cleaning up to 1,400 square feet in one hour. That is a one-cycle-per-hour framing, not a promise that every corner of a divided 1,400-square-foot home receives equal filtration. A smaller closed room can cycle through the purifier more frequently; open doors, hallways, ceilings, and furniture change the effective path.",
-      },
-      {
-        heading: "Pet hair, dander, and odor are different jobs",
-        body: "The washable Debris Defense screens are useful for larger hair and dust, while the HEPA filter targets smaller airborne particles such as dander. The Odor Neutralizer cartridge is a separate scented feature. None of these replaces scooping litter, cleaning accidents, washing bedding, vacuuming upholstery, or addressing moisture at the source.",
-      },
-      {
-        heading: "What NeverChange means in practice",
-        body: "Shark markets long HEPA-filter life under stated testing and use conditions, but the unit is not maintenance-free. The outer debris screens still need routine cleaning, the odor cartridge is a replaceable part, and Shark sells a compatible HEPA replacement filter. Treat the long-life claim as a potential reduction in replacement frequency rather than a promise to ignore the filter.",
-      },
-      {
-        heading: "Who should skip the HP302",
-        body: "Choose a smaller purifier when the target is one modest bedroom or office. Skip the scented odor feature if anyone in the home dislikes fragrance, and solve source cleaning first when the complaint is litter, urine, damp fabric, or a dirty pet bed rather than airborne particles.",
-      },
-    ],
+  {
+    "heading": "This linked model is HP301",
+    "body": "B0C95R5CBW currently selects the Grey HP301 with the 1,300-square-foot option. HP302 and its 1,400-square-foot description are separate. The current retailer and official HP301 dimension and weight tables disagree; do not guess that either describes packaging or claim a measured footprint."
+  },
+  {
+    "heading": "One hour of headline coverage is not every room cleaned equally",
+    "body": "Shark frames HP301 coverage as up to 1,300 square feet in one hour. Fan setting, ceiling height, walls, open doors and pollutant sources affect the actual airflow. Select for the target room and required cleaning frequency rather than using the largest headline as a guarantee of uniform whole-home filtration."
+  },
+  {
+    "heading": "Pet hair, dander, and odor are different jobs",
+    "body": "The washable Debris Defense screens are useful for larger hair and dust, while the HEPA filter targets smaller airborne particles such as dander. The Odor Neutralizer cartridge is a separate scented feature. None of these replaces scooping litter, cleaning accidents, washing bedding, vacuuming upholstery, or addressing moisture at the source."
+  },
+  {
+    "heading": "NeverChange still requires care",
+    "body": "The original HP300 Series guide keeps the HEPA filter dry and gives separate mesh-screen maintenance. The up-to-five-year claim uses a 300-square-foot test area, 12 hours daily on maximum speed and a stated decline threshold; it does not promise five maintenance-free years in a pet home. Use the matching supplied guide for cleaning and keep the cartridge’s replacement routine separate."
+  },
+  {
+    "heading": "The display does not measure every pollutant",
+    "body": "The current selected listing explains that 100% reflects particulate levels at or below the sensor’s detection limit. It does not establish air free of every pollutant, remove an odor source or certify a clinical outcome. Cleaning litter, accidents, damp material and bedding remains a separate job."
+  },
+  {
+    "heading": "Who should skip HP301",
+    "body": "Choose a smaller purifier when the target is one modest bedroom or office. Skip the scented odor feature if anyone in the home dislikes fragrance, and solve source cleaning first when the complaint is litter, urine, damp fabric, or a dirty pet bed rather than airborne particles."
+  }
+],
     alternatives: ["Choose a smaller purifier when one closed bedroom is the only target.", "Prioritize litter, accident, and fabric cleaning when odor starts at a persistent source."],
     compareSlugs: ["coway-airmega-mighty2-air-purifier", "levoit-vital-200s-p-air-purifier"],
     sources: [
-      {
-        name: "Shark NeverChange Air Purifier MAX HP302",
-        url: "https://www.sharkclean.com/products/shark-neverchange-air-purifier-max-zidHP302",
-        note: "Official model, coverage, filtration, odor-cartridge, dimensions, weight, and warranty information.",
-      },
-      {
-        name: "Shark NeverChange HEPA replacement filter",
-        url: "https://www.sharkclean.com/products/shark-neverchangeanti-allergen-true-hepa-filter-zidHE3FKPET",
-        note: "Official replacement-filter compatibility for HP300, HP301, HP302, and HP305.",
-      },
-    ],
-    offers: [{ merchant: "Amazon US", url: "https://amzn.to/4fZIfP6", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." }],
+  {
+    "name": "Shark official HP301 product",
+    "url": "https://www.sharkninja.com/shark-neverchange-air-purifier-max/HP301.html",
+    "note": "Current HP301 model, one-hour 1,300-square-foot framing, filter-life test conditions, scented cartridge and box contents. Its dimension/weight table conflicts with selected retail."
   },
+  {
+    "name": "Shark original HP300 Series owner’s guide",
+    "url": "https://images.thdstatic.com/catalog/pdfImages/47/4775fbc9-ce84-479a-89d5-d9ff19e1d798.pdf",
+    "note": "Complete ten-page English Shark original HP300Series_IB-A4_MP_Mv4 and all diagrams read; retailer-hosted original, not claimed as the received package revision."
+  },
+  {
+    "name": "Amazon HP301 Grey selected offer",
+    "url": "https://www.amazon.com/dp/B0C95R5CBW",
+    "note": "October 31 US ZIP 10001 HP301/Grey/1,300 option, explicit Buy New Amazon.com offer and expanded 30-day returns observed; Open Box Amazon Resale excluded."
+  }
+],
+    offers: [{ merchant: "Amazon US", url: "https://amzn.to/4fZIfP6", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." }],
+
+"amazonTitle": "Shark NeverChange Air Purifier MAX — HP301, Grey",
+"purchaseCheck": "Select Grey HP301 B0C95R5CBW, 1,300-square-foot option; not the HP302/1,400-square-foot variation. Check the actual dimensions because retail and maker tables differ, leave intake clearance and confirm current condition, seller, package and returns. Keep suitable existing equipment when it meets the task.",
+},
   {
     site: "homeoffice",
     slug: "flexispot-e7-mini-standing-desk",
     seoTitle: "FlexiSpot E7 Mini Guide: Dimensions, Height & Small-Desk Fit",
-    updatedAt: "September 24, 2026",
+    updatedAt: "November 1, 2026",
     asin: "B0F9X3FDYY",
     name: "FlexiSpot E7 Mini Standing Desk",
     brand: "FlexiSpot",
@@ -831,12 +954,8 @@ export const products: Product[] = [
     whyItMatters: "Narrow standing desks are constrained by more than width. Monitor distance, arm-clamp clearance, cable movement, chair pullout, and desktop thickness can turn a frame that technically fits into an awkward daily workstation.",
     bestFor: "Bedrooms, closet offices, and narrow work corners",
     priceBand: "$$$",
-    rating: 4.6,
-    scores: [
-      { label: "Small-room fit", value: 9 },
-      { label: "Lift range", value: 8 },
-      { label: "Accessory needs", value: 7 },
-    ],
+    rating: 0,
+    scores: [],
     pros: ["Official listed desktop range is designed around compact tops", "22.8–48.4-inch frame range covers a broad set of seated and standing positions", "Listed 352-pound capacity and memory presets are unusual strengths for a compact frame"],
     cons: ["A compact top leaves limited room for two monitors, a printer, or large speakers", "Final working height depends on the desktop thickness, not only the frame specification", "Monitor-arm clamps, the frame, and cable management can compete for the same small underside area"],
     specs: {
@@ -901,12 +1020,16 @@ export const products: Product[] = [
       },
     ],
     offers: [{ merchant: "Amazon US", url: "https://amzn.to/4eRxmxH", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." }],
-  },
+
+"purchaseCheck": "The historical Amazon reference B0F9X3FDYY now names a HUANUO 32×19-inch desk, not a FlexiSpot E7 Mini; that link stays paused. Use FlexiSpot's exact Mini top/frame dimensions as a reference and confirm the selected configuration. The maker's 31.5–40 and 31.5–45-inch desktop tables disagree; capacity does not establish room fit or raised stability.",
+"evidenceMode": "official-spec",
+"researchNote": "Research-based guide; no hands-on, installed-fit, durability, comfort or performance test. November 1 exact merchant identity checks are separate from manufacturer specifications and any earlier manual review. The old ASIN remains paused; a matching current offer was not established.",
+},
   {
     site: "homeoffice",
     slug: "uplift-v3-standing-desk",
     seoTitle: "UPLIFT V3 Standing Desk: Size, Height & Fit Guide",
-    updatedAt: "September 24, 2026",
+    updatedAt: "November 1, 2026",
     name: "UPLIFT V3 Standing Desk",
     brand: "UPLIFT Desk",
     category: "desks",
@@ -916,24 +1039,22 @@ export const products: Product[] = [
     whyItMatters: "A larger configurable desk buys usable surface and accessory flexibility, but it also changes chair clearance, delivery, assembly, cable routing, and the amount of permanent floor space the workstation consumes.",
     bestFor: "Long-term workstations with heavier monitors and accessories",
     priceBand: "$$$$",
-    rating: 4.7,
-    scores: [
-      { label: "Customization", value: 9 },
-      { label: "Heavy setup fit", value: 9 },
-      { label: "Budget fit", value: 6 },
-    ],
-    pros: ["Supports desktops from 42 to 80 inches wide", "21.6–47.7-inch listed frame range and 355-pound capacity", "Included cable-management system and extensive desktop choices"],
+    rating: 0,
+    scores: [],
+    pros: [
+  "Current configurator offers 42–80-inch tops in two depths",
+  "Keypad and accessories can be chosen for the task",
+  "Cable management is included in the listed configuration"
+],
     cons: ["Requires more room than a true compact desk", "Configuration choices can raise the final price quickly", "Large and heavy packages can make delivery, assembly, and later moves harder"],
     specs: {
-      "Product type": "Configurable electric standing desk",
-      "Supported desktops": "42–80 in wide",
-      "Frame dimensions": "41.3–72.2 in wide × 27.6 in deep",
-      "Frame height": "21.6–47.7 in",
-      "Listed lifting capacity": "355 lb",
-      "Travel speed": "2 in per second",
-      "Listed noise": "Below 48 dB",
-      Warranty: "15 years listed by UPLIFT Desk",
-    },
+  "Product type": "Configurable electric standing desk",
+  "Current desktop choices": "42–80 inches wide; 24 or 30 inches deep in current configurator",
+  "Listed finished height": "22.6–48.7 inches in current configurator; verify selected top",
+  "Keypad": "Basic constant-touch; memory and other features depend on option",
+  "Cable management": "FlexMount cable manager and 10 mounted wraps listed",
+  "Warranty": "15 years advertised; check component, purchase and geography terms"
+},
     evidence: [
       "Measure the configured desktop rather than only the adjustable frame width.",
       "Add desktop thickness when comparing the real seated and standing keyboard height.",
@@ -941,27 +1062,27 @@ export const products: Product[] = [
       "Leave clearance around the moving desktop and route every cable through the full travel range.",
     ],
     editorialSections: [
-      {
-        heading: "This is the larger-workstation alternative",
-        body: "UPLIFT lists the V3 frame for desktops from 42 to 80 inches wide. That makes it much more suitable than the E7 Mini for two monitors, speakers, documents, and a larger docking setup, but it also rules it out for some closet offices and very narrow bedroom walls.",
-      },
-      {
-        heading: "Read the height with the selected desktop",
-        body: "The listed 21.6–47.7-inch range describes the frame. Desktop materials vary in thickness, so add the selected top before comparing the lowest keyboard position with seated elbow height. Do the same at standing height with normal shoes or a floor mat.",
-      },
-      {
-        heading: "Capacity is not a stability promise at every extension",
-        body: "UPLIFT lists a 355-pound lifting capacity, but monitor-arm reach, desktop material, uneven floors, and a fully raised frame can still affect visible movement. Heavy accessories should be positioned deliberately and the feet leveled after assembly.",
-      },
-      {
-        heading: "UPLIFT V3 versus FlexiSpot E7 Mini",
-        body: "Compare the exact E7 Mini top with the exact V3 configuration. FlexiSpot currently offers compact 32×24 and 42×24-inch options, so 42 inches alone does not distinguish the models. Choose by usable depth, minimum surface height, frame clearance, and the equipment that must fit.",
-      },
-      {
-        heading: "Who should skip it",
-        body: "Skip the V3 when the room cannot preserve chair pullout and walking space around a 42-inch-or-larger top. A fixed desk may also be better when height adjustment will rarely be used, while a compact frame is the cleaner choice for a closet office.",
-      },
-    ],
+  {
+    "heading": "This is the larger-workstation alternative",
+    "body": "UPLIFT lists the V3 frame for desktops from 42 to 80 inches wide. That makes it much more suitable than the E7 Mini for two monitors, speakers, documents, and a larger docking setup, but it also rules it out for some closet offices and very narrow bedroom walls."
+  },
+  {
+    "heading": "Read the height with the selected desktop",
+    "body": "The current configurator describes 22.6–48.7 inches. Verify the chosen desktop and its thickness before comparing the finished surface with relaxed seated and standing elbow height. The older bare-frame range is not being treated as a fresh measurement."
+  },
+  {
+    "heading": "UPLIFT V3 versus FlexiSpot E7 Mini",
+    "body": "Compare the exact E7 Mini top with the exact V3 configuration. FlexiSpot currently offers compact 32×24 and 42×24-inch options, so 42 inches alone does not distinguish the models. Choose by usable depth, minimum surface height, frame clearance, and the equipment that must fit."
+  },
+  {
+    "heading": "Who should skip it",
+    "body": "Skip the V3 when the room cannot preserve chair pullout and walking space around a 42-inch-or-larger top. A fixed desk may also be better when height adjustment will rarely be used, while a compact frame is the cleaner choice for a closet office."
+  },
+  {
+    "heading": "Check stability with the actual layout",
+    "body": "Monitor-arm reach, desktop material, floor level and a raised frame all affect movement. A load rating is not a wobble test. Keep heavy equipment within the exact configured desk instructions and preserve cable slack through the full lift range."
+  }
+],
     alternatives: [
       "Choose the FlexiSpot E7 Mini when the desktop must stay below roughly 42 inches wide.",
       "Use a fixed desk when surface area matters but sit-stand movement is unlikely to become a daily habit.",
@@ -969,20 +1090,24 @@ export const products: Product[] = [
     ],
     compareSlugs: ["flexispot-e7-mini-standing-desk"],
     sources: [
-      {
-        name: "UPLIFT V3 Standing Desk",
-        url: "https://www.upliftdesk.com/2-leg-standing-desk/",
-        note: "Official frame dimensions, supported desktop range, height, capacity, speed, noise, cable management, certifications, and warranty information.",
-      },
-    ],
+  {
+    "name": "UPLIFT V3 Standing Desk",
+    "url": "https://www.upliftdesk.com/2-leg-standing-desk/",
+    "note": "Official frame dimensions, supported desktop range, height, capacity, speed, noise, cable management, certifications, and warranty information."
+  }
+],
     offers: [],
-  },
+
+"purchaseCheck": "UPLIFT V3 is a configurable reference with no verified Amazon offer here. Choose the exact 42–80-inch top, keypad and accessories; compare the finished keyboard height and room clearance. The current configurator lists 22.6–48.7 inches, but verify the selected top thickness. Keep a suitable existing desk when height adjustment is not needed.",
+"evidenceMode": "official-spec",
+"researchNote": "Research-based guide; no hands-on, installed-fit, durability, comfort or performance test. November 1 exact merchant identity checks are separate from manufacturer specifications and any earlier manual review. Recheck the actual supplied model, accessories and current seller terms.",
+},
   {
     site: "homeoffice",
     slug: "branch-ergonomic-chair",
     compareSlugs: ["hon-ignition-2-0-chair"],
     seoTitle: "Branch Ergonomic Chair Guide: Warranty, Fit & Returns",
-    updatedAt: "September 24, 2026",
+    updatedAt: "November 1, 2026",
     sources: [
       { name: "Branch Ergonomic Chair", url: "https://www.branchfurniture.com/products/ergonomic-chair", note: "Official adjustment points, user range, certification, capacity, and current product warranty." },
       { name: "Branch warranty policy", url: "https://www.branchfurniture.com/pages/warranty", note: "Official coverage window, purchase-channel, proof-of-purchase, registration, geography, transfer, and exclusion terms." },
@@ -995,7 +1120,7 @@ export const products: Product[] = [
       { heading: "A 30-day return is not a free chair trial", body: "Branch's direct-purchase policy requires a like-new product in its original packaging within 30 days and currently deducts $40 per chair for return shipping. An Amazon purchase follows the live listing's seller and return terms instead. Check the applicable path before assembly and keep every insert until fit is proven." },
     ],
     evidenceMode: "official-spec",
-    researchNote: "Research-based fit and purchase-policy guide using Branch documentation; no hands-on comfort or durability testing is claimed.",
+    researchNote: "Research-based guide; no hands-on, installed-fit, durability, comfort or performance test. November 1 exact merchant identity checks are separate from manufacturer specifications and any earlier manual review. The old ASIN remains paused; a matching current offer was not established.",
     asin: "B0GWGK4JFK",
     name: "Branch Ergonomic Chair",
     brand: "Branch",
@@ -1006,32 +1131,59 @@ export const products: Product[] = [
     whyItMatters: "Chair fit is personal, but most home workers need the same basics first: seat height that lets feet rest flat, arms that do not force shoulders upward, and back support that stays useful after lunch.",
     bestFor: "Remote workers upgrading from a dining chair",
     priceBand: "$$",
-    rating: 4.5,
-    scores: [
-      { label: "Adjustment range", value: 8 },
-      { label: "Daily comfort", value: 8 },
-      { label: "Price fit", value: 8 },
-    ],
+    rating: 0,
+    scores: [],
     pros: ["Useful adjustment set for a broad range of users", "Cleaner design than many budget task chairs", "Strong fit for under-$500 chair shoppers"],
     cons: ["Not as deeply adjustable as premium Steelcase or Herman Miller models", "Fit still depends heavily on user height and seat preference"],
-    specs: { ASIN: "B0GWGK4JFK", "Chair type": "Ergonomic task chair", "Use case": "All-day home office", Warranty: "Components: 7 years; fabric: 3 years; eligibility and exclusions apply", "Direct return": "Like-new in original packaging within 30 days of delivery; $40 per chair return shipping", "Link status": "Exact Amazon listing paused after September 24 page-not-found verification" },
-    evidence: ["The former ASIN B0GWGK4JFK returned Page Not Found on September 24; use the clearly named HON alternative or Branch official product source", "Keep proof of purchase and register an authorized third-party purchase when Branch requires it", "Compare seat depth, lumbar adjustment, user height range, return shipping, and warranty exclusions", "Treat chair fit as personal even when the feature set looks right"],
+    specs: {
+  "ASIN": "B0GWGK4JFK",
+  "Chair type": "Ergonomic task chair",
+  "Use case": "All-day home office",
+  "Warranty": "Components: 7 years; fabric: 3 years; eligibility and exclusions apply",
+  "Direct return": "Like-new in original packaging within 30 days of delivery; $40 per chair return shipping",
+  "Link status": "Original exact Amazon page not found November 1, 2026; purchase held"
+},
+    evidence: [
+  "November 1, 2026: original ASIN B0GWGK4JFK returned Page Not Found; no stock or discontinuation conclusion follows.",
+  "Keep proof of purchase and register an authorized third-party purchase when Branch requires it",
+  "Compare seat depth, lumbar adjustment, user height range, return shipping, and warranty exclusions",
+  "Treat chair fit as personal even when the feature set looks right"
+],
     alternatives: ["Compare HON Ignition 2.0 if you prefer a more traditional office-chair feel.", "Look at used Steelcase or Herman Miller options if return policy and local condition are easy to verify."],
     offers: [{ merchant: "Amazon US", url: "https://amzn.to/4eWkGpe", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." }],
-  },
+
+"purchaseCheck": "The former Branch ASIN B0GWGK4JFK still returns Page Not Found; the original Amazon link stays paused. Ergonomic Chair, Lite and Pro are different models. Measure seat and arm fit, confirm seller warranty eligibility and keep packaging. Branch's direct 30-day policy deducts $40 per chair; that is not the Amazon seller's return policy.",
+},
   {
     site: "homeoffice",
     slug: "hon-ignition-2-0-chair",
     asin: "B06Y3PGPR2",
     seoTitle: "HON Ignition 2.0 Guide: Warranty, Fit & Controls",
-    updatedAt: "September 24, 2026",
+    updatedAt: "November 1, 2026",
     evidenceMode: "official-spec",
-    researchNote: "Research-based configuration and fit guide using HON documentation and the exact Amazon ASIN; this is not a hands-on comfort or durability test.",
+    researchNote: "Research-based guide; no hands-on, installed-fit, durability, comfort or performance test. November 1 exact merchant identity checks are separate from manufacturer specifications and any earlier manual review. Recheck the actual supplied model, accessories and current seller terms.",
     sources: [
-      { name: "HON Ignition 2.0 functionality guide", url: "https://www.hon.com/sites/hon.com/files/ignition-2-task-seating-functionality-guide.pdf", note: "Official control, adjustment, lumbar, and fit-function reference for the Ignition 2.0 family." },
-      { name: "HON warranty", url: "https://www.hon.com/warranty", note: "Official warranty scope, component terms, exclusions, geography, and dealer-service path." },
-      { name: "Amazon listing B06Y3PGPR2", url: "https://www.amazon.com/dp/B06Y3PGPR2", note: "Live identity verified September 24, 2026: HON Ignition 2.0, black frame, Advanced Tilt, black. The selected non-US delivery address prevents a US stock conclusion; check the actual delivery region and seller." },
-    ],
+  {
+    "name": "HON Ignition 2.0 functionality guide",
+    "url": "https://www.hon.com/sites/hon.com/files/ignition-2-task-seating-functionality-guide.pdf",
+    "note": "Official control, adjustment, lumbar, and fit-function reference for the Ignition 2.0 family."
+  },
+  {
+    "name": "HON warranty",
+    "url": "https://www.hon.com/warranty",
+    "note": "Official warranty scope, component terms, exclusions, geography, and dealer-service path."
+  },
+  {
+    "name": "Exact US Amazon selection B06Y3PGPR2",
+    "url": "https://www.amazon.com/dp/B06Y3PGPR2",
+    "note": "November 1, 2026, US 10001: exact selection, New offer and named seller observed. Visible return label recorded; detailed eligibility and exceptions were not fully expanded for this selection. Recheck condition, package and live terms."
+  },
+  {
+    "name": "HON supplied functionality sheet",
+    "url": "https://m.media-amazon.com/images/I/91OoavuyZWL.pdf",
+    "note": "One-page control guide read; explicitly says the chair may not include all illustrated features. Not an exact retail configuration or comfort test."
+  }
+],
     editorialSections: [
       { heading: "Lifetime coverage has shorter component terms", body: "HON lists lifetime coverage for eligible defects, with specific limits: seating controls, pneumatic cylinders and 4-Way Stretch Mesh are covered for 12 years, and seating textiles for five. Ordinary wear is excluded. Identify the exact material and component before assuming a lifetime term applies to it." },
       { heading: "This is a configuration guide, not a comfort test", body: "HON's Ignition 2.0 family includes multiple control and option combinations. The official functionality guide explains possible adjustments, while the linked Amazon ASIN identifies the version being sold. Confirm that the selected listing includes the seat-depth, arm, lumbar, and tilt controls required before comparing price." },
@@ -1047,25 +1199,24 @@ export const products: Product[] = [
     whyItMatters: "A chair can look ergonomic and still miss the basics. The buying question is whether the exact configuration gives you the arm, lumbar, and seat controls your body actually needs.",
     bestFor: "Value-focused buyers who still want adjustable arms and lumbar support",
     priceBand: "$",
-    rating: 4.4,
-    scores: [
-      { label: "Adjustability", value: 8 },
-      { label: "Durability signal", value: 8 },
-      { label: "Design polish", value: 6 },
-    ],
+    rating: 0,
+    scores: [],
     pros: ["Official family documentation makes the adjustment roles clear", "Traditional task-chair design is easier to compare by fit than decorative features", "Useful value alternative to Branch when the exact controls are present"],
     cons: ["Ignition 2.0 configurations can differ by arms, lumbar, seat depth, and control", "Comfort remains personal and is not established by the family feature list", "Warranty support and returns depend on the purchase channel and seller"],
     specs: { ASIN: "B06Y3PGPR2", "Chair type": "Configurable ergonomic task chair", "Configuration rule": "Verify arms, lumbar, seat depth, and tilt on the exact listing", "Warranty path": "Confirm seller eligibility, proof, geography, component terms, and dealer service", "Evidence basis": "HON functionality guide, warranty policy, and exact Amazon listing" },
     evidence: ["Confirm ASIN B06Y3PGPR2 and record every listed control before ordering", "Compare seat height, seat depth, lumbar position, arm range, tilt, and desk clearance", "Confirm the Amazon seller, return path, warranty eligibility, and packaging requirements", "Keep proof of purchase and the underside serial label for support"],
     alternatives: ["Choose Branch if you want a cleaner home-office look.", "Skip both and shop premium used chairs if you need deeper back customization."],
     offers: [{ merchant: "Amazon US", url: "https://www.amazon.com/dp/B06Y3PGPR2?tag=madaoffice-20", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." }],
-  },
+
+"purchaseCheck": "Select Black HON Ignition 2.0 B06Y3PGPR2 and confirm the delivered control set before assembly. Current retail model HONI2MM2AMC10BT and part HONI2M2AMLC10TK differ; the family guide says not every chair includes every control. Verify seat glide, lumbar, arms and tilt rather than promising them from the family name; check seller warranty eligibility and returns.",
+"amazonTitle": "HON Ignition 2.0 · Black",
+},
   {
     site: "homeoffice",
     slug: "huanuo-titanlift-heavy-duty-monitor-arm",
     asin: "B0DQ19YC9H",
     seoTitle: "HUANUO TitanLift Monitor Arm Guide: 49-Inch & 44lb Fit Checks",
-    updatedAt: "June 29, 2026",
+    updatedAt: "November 1, 2026",
     name: "HUANUO TitanLift Heavy Duty Monitor Arm",
     brand: "HUANUO",
     category: "ergonomics",
@@ -1075,12 +1226,8 @@ export const products: Product[] = [
     whyItMatters: "A large monitor arm is a compatibility system, not just an accessory. Screen size alone is insufficient: monitor-only weight, VESA position, recessed mounting areas, desk thickness, underside obstructions, desktop stiffness, and arm extension all affect whether the setup holds position safely.",
     bestFor: "Heavy single monitors and ultrawides that pass every fit check",
     priceBand: "$$",
-    rating: 4.7,
-    scores: [
-      { label: "Stability", value: 9 },
-      { label: "Adjustment", value: 9 },
-      { label: "Value", value: 7 },
-    ],
+    rating: 0,
+    scores: [],
     pros: ["Listed for monitors up to 49 inches and 44lb", "Supports 75x75mm and 100x100mm VESA patterns", "C-clamp/grommet mounting, quick-release VESA head, and cable management support a cleaner setup"],
     cons: ["Large screen size does not guarantee compatibility with weight, VESA, or rear-panel shape", "A heavy monitor creates substantial leverage on thin, hollow, glass, or flexible desktops", "Maximum extension can increase visible movement on sit-stand and walking desks"],
     specs: {
@@ -1134,66 +1281,121 @@ export const products: Product[] = [
     alternatives: ["Choose Amazon Basics when a standard-size monitor is comfortably within a lighter-duty arm's limits.", "Keep the stock stand when it already provides good ergonomics and the desk edge cannot take a clamp.", "Consider a compatible wall mount when the desktop is weak or blocked."],
     compareSlugs: ["amazon-basics-monitor-arm"],
     sources: [
-      {
-        name: "HUANUO TitanLift product page",
-        url: "https://www.huanuostand.com/product/huanuo-titanlift-monitor-arm-for-ultrawide-screens-up-to-49%E2%80%B3-heavy-duty-single-mount-holds-44-lbs-fully-adjustable-gaming-monitor-arm-with-c-clamp-grommet-base-max-vesa-100-x-100mm-rgb4-2/",
-        note: "Official TitanLift family load, VESA, screen, mounting, adjustment, and installation specifications; verify variant differences.",
-      },
-      {
-        name: "HUANUO TitanLift ASIN B0DQ19YC9H listing",
-        url: "https://www.amazon.com/dp/B0DQ19YC9H",
-        note: "Exact non-RGB marketplace variant and current included-hardware details.",
-      },
-    ],
-    offers: [{ merchant: "Amazon US", url: "https://amzn.to/43O98hI", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." }],
+  {
+    "name": "HUANUO TitanLift product page",
+    "url": "https://www.huanuostand.com/product/huanuo-titanlift-monitor-arm-for-ultrawide-screens-up-to-49%E2%80%B3-heavy-duty-single-mount-holds-44-lbs-fully-adjustable-gaming-monitor-arm-with-c-clamp-grommet-base-max-vesa-100-x-100mm-rgb4-2/",
+    "note": "Official TitanLift family load, VESA, screen, mounting, adjustment, and installation specifications; verify variant differences."
   },
+  {
+    "name": "Exact US Amazon selection B0DQ19YC9H",
+    "url": "https://www.amazon.com/dp/B0DQ19YC9H",
+    "note": "November 1, 2026, US 10001: exact selection, New offer and named seller observed. Expanded conditional 30-day return summary reviewed. Recheck condition, package and live terms."
+  },
+  {
+    "name": "Linked TitanLift HNSS48 family manual",
+    "url": "https://m.media-amazon.com/images/I/E19OwAQlDjL.pdf",
+    "note": "80-page PDF; physical pages1–9 visually inspected for cover, VESA, pressurized-spring precautions, parts and base setup. Cover says HNSS48, retail says HNSS48B; no whole-manual or exact-B-variant approval claimed."
+  }
+],
+    offers: [{ merchant: "Amazon US", url: "https://amzn.to/43O98hI", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." }],
+
+"purchaseCheck": "Select non-RGB HUANUO HNSS48B / B0DQ19YC9H. All three limits must pass: 17–49-inch display, 6.6–44 lb monitor-only weight and 75×75 or 100×100 mm VESA. Confirm the supplied HNSS48B instructions and desk mounting range; the linked HNSS48 family manual is not proof of every B-variant detail. Keep the stock stand if the desk cannot carry the leverage.",
+"evidenceMode": "official-spec",
+"amazonTitle": "HUANUO TitanLift HNSS48B · non-RGB single arm",
+"researchNote": "Research-based guide; no hands-on, installed-fit, durability, comfort or performance test. November 1 exact merchant identity checks are separate from manufacturer specifications and any earlier manual review. Recheck the actual supplied model, accessories and current seller terms.",
+},
   {
     site: "homeoffice",
     slug: "amazon-basics-monitor-arm",
     seoTitle: "Amazon Basics Gas-Spring Monitor Arm Guide: 27-Inch Fit Checks",
-    updatedAt: "June 30, 2026",
-    sources: [{ name: "Amazon listing B0CQXMT3QC", url: "https://www.amazon.com/dp/B0CQXMT3QC", note: "Exact single-arm listing, current dimensions, weight limit, VESA support, and included hardware." }],
+    updatedAt: "November 1, 2026",
+    sources: [
+  {
+    "name": "Exact US Amazon selection B0CQXMT3QC",
+    "url": "https://www.amazon.com/dp/B0CQXMT3QC",
+    "note": "November 1, 2026, US 10001: exact selection, New offer and named seller observed. Visible return label recorded; detailed eligibility and exceptions were not fully expanded for this selection. Recheck condition, package and live terms."
+  },
+  {
+    "name": "Amazon Basics B0CQXMT3QC supplied manual",
+    "url": "https://m.media-amazon.com/images/I/D1XLEJgU6ZL.pdf",
+    "note": "44-page PDF; cover, English safety/specification pages2–3 and assembly/tension figures37–42 visually reviewed. Other languages and unreviewed middle assembly pages not certified."
+  }
+],
     editorialSections: [
-      { heading: "Match the exact listing", body: "ASIN B0CQXMT3QC is a gas-spring single-monitor arm marketed for screens up to 27 inches. Verify the current monitor-only weight range and VESA patterns on the live listing because Amazon Basics models can look similar." },
-      { heading: "Inspect the desk, not only the screen", body: "Check desktop thickness, rear-edge clearance, underside bracing, wall distance, and cable slack. Particleboard and thin hollow desktops may need reinforcement even when the clamp physically fits." },
-      { heading: "Budget arm, standard job", body: "This model makes sense for lifting a normal single display off its stock stand. A heavy ultrawide, recessed VESA mount, or walking-desk stability problem calls for a more specialized arm." },
-    ],
+  {
+    "heading": "Pass all four fit checks",
+    "body": "The current selected single arm is DS-MADSBE: 15–27-inch display, 4.4–15.4 lb without the stock stand, and 75×75 or 100×100 mm VESA. Confirm recesses, screw depth and spacers with the monitor instructions. The desk also needs a sound, unobstructed mounting area."
+  },
+  {
+    "heading": "Use the supplied installation sequence",
+    "body": "The linked B0CQXMT3QC manual warns that the gas spring is pressurized and must not be opened or modified. It instructs users to attach the monitor and keep the arm horizontal before adjusting tension. Support the screen, follow the supplied diagrams and stop if the clamp shifts or the arm will not hold position."
+  },
+  {
+    "heading": "Keep the stock stand when it already works",
+    "body": "An arm is optional. A sound existing stand is the simpler answer when it already gives the right height and viewing distance, or when the desk cannot support a clamp. A heavier-duty arm is a separate choice for a screen outside this model’s range."
+  }
+],
     asin: "B0CQXMT3QC",
     name: "Amazon Basics Monitor Arm",
     brand: "Amazon Basics",
     category: "ergonomics",
     image: "/images/affiliate/homeoffice-amazon-basics-monitor-arm.webp",
-    summary: "A budget monitor arm for home offices that need better screen height without a premium accessory spend.",
-    verdict: "Amazon Basics is the budget monitor-arm option to consider when the goal is simple height and depth improvement, not a premium adjustment feel.",
+    summary: "A single gas-spring arm for a measured 15–27-inch monitor weighing 4.4–15.4 lb, with VESA, desk support and spring-tension checks.",
+    verdict: "Consider DS-MADSBE when screen size, monitor-only weight, VESA and the desk mounting area all pass. Keep a suitable stock stand if the desktop is weak or the screen is outside the range; price alone does not establish fit.",
     whyItMatters: "The cheapest way to make a small desk feel bigger is often removing the bulky stock monitor stand. Just check monitor weight, VESA support, and clamp space before buying.",
     bestFor: "Budget buyers with one standard-size monitor",
     priceBand: "$",
-    rating: 4.2,
-    scores: [
-      { label: "Budget fit", value: 9 },
-      { label: "Adjustment", value: 7 },
-      { label: "Finish", value: 6 },
-    ],
-    pros: ["Good low-cost comparison option", "Can make a small desk feel deeper", "Easy Amazon search and purchase path"],
-    cons: ["Less polished than premium arms", "Weight and clamp limits need careful checking"],
-    specs: { ASIN: "B0CQXMT3QC", "Arm type": "Single monitor arm", "Use case": "Budget setup", "Link status": "Amazon affiliate link added" },
+    rating: 0,
+    scores: [],
+    pros: [
+  "Can recover desk depth when fit checks pass",
+  "Single-arm format for one compatible screen",
+  "Clamp and grommet methods listed"
+],
+    cons: [
+  "Outside the listed weight range, the spring may not hold position",
+  "Clamp fit does not establish strength of hollow, glass or damaged tops"
+],
+    specs: {
+  "ASIN": "B0CQXMT3QC",
+  "Model": "DS-MADSBE",
+  "Selected type": "Single / GasSpringMonitor",
+  "Screen size": "15–27 inches listed",
+  "Monitor-only weight": "4.4–15.4 lb (2–7 kg) listed",
+  "VESA": "75×75 or 100×100 mm",
+  "Desk range": "0.39–4 inches in retail listing; confirm actual mounting method and instructions",
+  "Spring": "Pressurized mechanism; do not open or modify"
+},
     evidence: ["Verify current Amazon Basics listing compatibility with your monitor weight", "Check VESA pattern and desk clamp clearance before buying", "Compare against HUANUO TitanLift if heavy-screen support matters"],
     alternatives: ["Choose HUANUO TitanLift if heavy-screen support matters more than the lowest price.", "Avoid a monitor arm if your desk edge is too thin, too thick, or blocked by a rear panel."],
     offers: [{ merchant: "Amazon US", url: "https://amzn.to/3Sjls73", label: "Check price on Amazon", priceNote: "Check live price and availability on Amazon." }],
-  },
+
+"purchaseCheck": "Select single GasSpringMonitor DS-MADSBE / B0CQXMT3QC. Match 15–27-inch screen size, 4.4–15.4 lb monitor-only weight and 75×75 or 100×100 mm VESA together. Retail lists 0.39–4-inch desks, but material, underside clearance and the supplied mounting instructions still control. Adjust spring tension only with the monitor supported and attached as instructed; never open the spring.",
+"evidenceMode": "official-spec",
+"amazonTitle": "Amazon Basics DS-MADSBE · single gas-spring arm",
+"researchNote": "Research-based guide; no hands-on, installed-fit, durability, comfort or performance test. November 1 exact merchant identity checks are separate from manufacturer specifications and any earlier manual review. Recheck the actual supplied model, accessories and current seller terms.",
+},
   {
     site: "homeoffice",
     slug: "logitech-litra-glow",
     asin: "B097QZGRCQ",
-    amazonTitle: "Logitech Litra Glow Premium LED Streaming Light with TrueSoft",
+    amazonTitle: "Logitech Litra Glow 946-000001 · Graphite",
     seoTitle: "Logitech Litra Glow Guide: Mount, Controls & Call-Lighting Fit",
-    updatedAt: "July 26, 2026",
+    updatedAt: "November 1, 2026",
     evidenceMode: "official-spec",
-    researchNote: "Research-based fit and buying guide using Logitech's official product page and the exact Amazon ASIN; this is not a hands-on color or long-duration heat test.",
+    researchNote: "Research-based guide; no hands-on, installed-fit, durability, comfort or performance test. November 1 exact merchant identity checks are separate from manufacturer specifications and any earlier manual review. Recheck the actual supplied model, accessories and current seller terms.",
     sources: [
-      { name: "Logitech Litra Glow", url: "https://www.logitech.com/en-us/products/lighting/litra-glow.946-000001.html", note: "Official mounting, diffusion, controls, compatibility, and product details." },
-      { name: "Amazon listing B097QZGRCQ", url: "https://www.amazon.com/dp/B097QZGRCQ", note: "Exact linked ASIN, current seller, bundle, and return terms." },
-    ],
+  {
+    "name": "Logitech Litra Glow",
+    "url": "https://www.logitech.com/en-us/products/lighting/litra-glow.946-000001.html",
+    "note": "Official mounting, diffusion, controls, compatibility, and product details."
+  },
+  {
+    "name": "Exact US Amazon selection B097QZGRCQ",
+    "url": "https://www.amazon.com/dp/B097QZGRCQ",
+    "note": "November 1, 2026, US 10001: exact selection, New offer and named seller observed. Visible return label recorded; detailed eligibility and exceptions were not fully expanded for this selection. Recheck condition, package and live terms."
+  }
+],
     editorialSections: [
       { heading: "A face light is different from a monitor light bar", body: "Litra Glow is designed to put diffused light toward the face near the camera. It is not the best choice when the actual goal is illuminating the keyboard, notes, or the entire room; compare a task lamp or monitor bar for those jobs." },
       { heading: "Mount fit decides whether compact lighting stays compact", body: "Check monitor thickness and shape, laptop-lid strength, webcam location, vents, screen controls, and wall clearance. The mount should hold the light near the camera without blocking the lens or forcing the display into an awkward position." },
@@ -1208,12 +1410,8 @@ export const products: Product[] = [
     whyItMatters: "Most bad video calls are lighting problems before they are webcam problems. A compact front light can make a normal laptop or webcam feed look cleaner and less shadowy.",
     bestFor: "Laptop and monitor-based video calls in dim rooms",
     priceBand: "$",
-    rating: 4.4,
-    scores: [
-      { label: "Video-call fit", value: 9 },
-      { label: "Desk footprint", value: 9 },
-      { label: "Lighting control", value: 8 },
-    ],
+    rating: 0,
+    scores: [],
     pros: ["Compact face-light role is clearer than a general desk lamp", "Diffused official design targets close camera use", "Mount avoids adding a conventional lamp base to the desk"],
     cons: ["Does not replace task or room lighting", "Mount can conflict with monitor shape, webcam, or laptop lid", "This guide does not independently measure color accuracy, heat, or long-session comfort"],
     specs: { ASIN: "B097QZGRCQ", "Light type": "Compact diffused face light", "Primary use": "Video calls and streaming near the camera", "Before buying": "Confirm mount, camera clearance, power, controls, seller, bundle, and return terms", "Evidence basis": "Logitech official page and exact Amazon listing" },
@@ -1222,20 +1420,39 @@ export const products: Product[] = [
     offers: [
       { merchant: "Amazon US", url: "https://www.amazon.com/dp/B097QZGRCQ?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check price on Amazon", priceNote: "Confirm ASIN B097QZGRCQ, seller, live price, and availability." },
     ],
-  },
+
+"purchaseCheck": "Select Litra Glow Graphite 946-000001 / B097QZGRCQ for face lighting near the camera. Check monitor-edge support, webcam clearance, supplied USB cable and adequate USB power. G HUB controls require a supported computer; physical controls are separate. It is not a desk lamp, and diffuse light does not guarantee glare-free glasses or eye comfort.",
+},
   {
     site: "homeoffice",
     slug: "benq-screenbar-halo",
     asin: "B0DK59YKRS",
-    amazonTitle: "BenQ ScreenBar Halo 2 LED Monitor Light Bar",
-    updatedAt: "October 8, 2026",
+    amazonTitle: "BenQ ScreenBar Halo 2",
+    updatedAt: "November 1, 2026",
     evidenceMode: "official-spec",
-    researchNote: "Official-spec monitor-fit and lighting-control guide using BenQ documentation and the exact Amazon listing; this is not a hands-on glare, eye-comfort, color, heat, or long-session test.",
+    researchNote: "Research-based guide; no hands-on, installed-fit, durability, comfort or performance test. November 1 exact merchant identity checks are separate from manufacturer specifications and any earlier manual review. Recheck the actual supplied model, accessories and current seller terms.",
     sources: [
-      { name: "BenQ ScreenBar Halo 2", url: "https://www.benq.com/en-us/lighting/monitor-light/screenbar-halo-2.html", note: "Official clamp range, monitor curvature, controls, front and rear lighting, dimensions, and product specifications." },
-      { name: "BenQ ScreenBar Halo 2 user guide", url: "https://esupportdownload.benq.com/esupport/E-READING%20LAMP/UserManual/ScreenBar%20Halo%202/ScreenBar%20Halo%202_UM_DE_EN_ES_FR_IT_JA_NL_SV_ZH-TW_250627174322.pdf", note: "Official setup, controller, brightness, color-temperature, and operating instructions." },
-      { name: "Amazon listing B0DK59YKRS", url: "https://www.amazon.com/dp/B0DK59YKRS", note: "Exact current model, seller, price, stock, bundle, and return terms." },
-    ],
+  {
+    "name": "BenQ ScreenBar Halo 2",
+    "url": "https://www.benq.com/en-us/lighting/monitor-light/screenbar-halo-2.html",
+    "note": "Official clamp range, monitor curvature, controls, front and rear lighting, dimensions, and product specifications."
+  },
+  {
+    "name": "BenQ Halo 2 current manual index",
+    "url": "https://www.benq.com/en-us/support/downloads-faq/products/lighting/screenbar-halo-2/manual.html",
+    "note": "Current official support entry. The former dated PDF URL returned404 on November1; no new complete PDF review claimed."
+  },
+  {
+    "name": "Exact US Amazon selection B0DK59YKRS",
+    "url": "https://www.amazon.com/dp/B0DK59YKRS",
+    "note": "November 1, 2026, US 10001: exact selection, New offer and named seller observed. Expanded conditional 30-day return summary reviewed. Recheck condition, package and live terms."
+  },
+  {
+    "name": "BenQ Halo 2 exact specification table",
+    "url": "https://www.benq.com/en-us/lighting/monitor-light/screenbar-halo-2/spec.html",
+    "note": "Current monitor thickness and 5 V / max3 A USB-C input, max15 W; retailer package contents must still be checked."
+  }
+],
     name: "BenQ ScreenBar Halo 2",
     brand: "BenQ",
     category: "meetings",
@@ -1245,31 +1462,37 @@ export const products: Product[] = [
     whyItMatters: "In compact offices, lighting and clutter fight each other. A monitor light bar can brighten the keyboard and desk area while leaving room for notebooks, docks, and input devices.",
     bestFor: "Desk lighting without taking up surface space",
     priceBand: "$",
-    rating: 4.5,
-    scores: [
-      { label: "Desk footprint", value: 10 },
-      { label: "Lighting quality", value: 8 },
-      { label: "Budget fit", value: 6 },
-    ],
+    rating: 0,
+    scores: [],
     pros: ["Leaves the desktop clear", "Pairs naturally with monitor-arm setups", "Good premium lighting option"],
     cons: ["More expensive than basic lamps", "May not fit every monitor shape cleanly"],
-    specs: { ASIN: "B0DK59YKRS", "Light type": "Monitor light bar", Generation: "ScreenBar Halo 2", "Use case": "Desk illumination", "Link status": "Amazon affiliate link verified July 16, 2026" },
+    specs: {
+  "ASIN": "B0DK59YKRS",
+  "Light type": "Monitor light bar",
+  "Generation": "ScreenBar Halo 2",
+  "Use case": "Desk illumination",
+  "Power input": "USB-C 5 V, max. 3 A; max. 15 W",
+  "Monitor thickness": "0.43–6 cm listed; check housing and bezel",
+  "Controller": "Wireless, rechargeable; confirm supplied package"
+},
     evidence: ["Confirm ASIN B0DK59YKRS and ScreenBar Halo 2 compatibility with the monitor shape and bezel", "Check whether the wireless controller, backlight, and motion sensor matter for your desk", "Compare with Logitech Litra Glow for camera-focused lighting"],
     alternatives: ["Choose Logitech Litra Glow if your main issue is how your face looks on calls.", "Choose a standard desk lamp if you need room lighting, not just desktop lighting."],
     offers: [
       { merchant: "Amazon US", url: "https://www.amazon.com/dp/B0DK59YKRS?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check price on Amazon", priceNote: "Confirm ASIN B0DK59YKRS, ScreenBar Halo 2, seller, live price, and availability." },
     ],
-  },
+
+"purchaseCheck": "This is ScreenBar Halo 2 B0DK59YKRS, not the original Halo. BenQ lists 0.43–6 cm monitor thickness and USB-C 5 V / up to 3 A input; verify the rear housing and bezel can take the clamp. Confirm adapter, controller and webcam accessory in the selected package. It lights the desk, not your face, and cannot guarantee comfort or zero reflections for every setup.",
+},
   {
     site: "homeoffice",
     slug: "anker-675-usb-c-docking-station",
     asin: "B0BNZ4D72B",
-    amazonTitle: "Anker 675 USB-C Docking Station (12-in-1, Monitor Stand, Wireless)",
+    amazonTitle: "Anker 675 A8377 · 12-in-1 monitor stand",
     seoTitle: "Anker 675 Guide: One-Monitor Dock and Stand, Not Dual Display",
-    updatedAt: "September 24, 2026",
+    updatedAt: "November 1, 2026",
     evidenceMode: "official-spec",
     researchNote:
-      "We have not used this stand. The page uses Anker's current official FAQ and the exact Amazon identity. It supports one external HDMI monitor, not two, and USB-C ports do not output video.",
+      "Research-based guide; no hands-on, installed-fit, durability, comfort or performance test. November 1 exact merchant identity checks are separate from manufacturer specifications and any earlier manual review. Recheck the actual supplied model, accessories and current seller terms.",
     name: "Anker 675 USB-C Docking Station",
     brand: "Anker",
     category: "desks",
@@ -1282,12 +1505,8 @@ export const products: Product[] = [
       "A monitor riser changes screen height, while a sit-stand desk changes the height of the entire working surface. Decide which adjustment you need before paying for an integrated dock; Anker's display support is limited to one HDMI monitor.",
     bestFor: "One-monitor desks that need a powered stand and cable cleanup",
     priceBand: "$$$",
-    rating: 4.3,
-    scores: [
-      { label: "Cable cleanup", value: 9 },
-      { label: "One-monitor workflow", value: 8 },
-      { label: "Dual-monitor fit", value: 1 },
-    ],
+    rating: 0,
+    scores: [],
     pros: [
       "Combines a monitor stand, powered dock, cable-routing surface, and wireless charging area",
       "One HDMI output supports up to 4K60 under Anker's official guidance",
@@ -1344,26 +1563,28 @@ export const products: Product[] = [
     ],
     compareSlugs: ["plugable-usbc-6950pdz-displaylink-dock", "plugable-tbt4-ud5-thunderbolt-dock", "caldigit-ts4-thunderbolt-dock"],
     sources: [
-      {
-        name: "Anker 675 official FAQ",
-        url: "https://service.anker.com/article-description/Anker-675-USB-C-Docking-Station-12-in-1-Monitor-Stand-Wireless-FAQ",
-        note: "Official single-monitor limit, HDMI resolution, USB-C video exclusion, charging, cable, adapter, OS, and stand-load guidance.",
-      },
-      {
-        name: "Anker 675 dimensions and specifications",
-        url: "https://service.anker.com/article-description/Introduction-to-Anker-675-USB-C-Docking-Station-12-in-1-Monitor-Stand-Wireless",
-        note: "Official 21.26 x 8.66 x 3.54-inch dimensions and listed stand load, checked September 24, 2026.",
-      },
-      {
-        name: "Amazon listing for ASIN B0BNZ4D72B",
-        url: "https://www.amazon.com/dp/B0BNZ4D72B",
-        note: "Exact current marketplace identity; confirm seller, adapter, regional plug, stock, and delivery.",
-      },
-    ],
+  {
+    "name": "Anker 675 official FAQ",
+    "url": "https://service.anker.com/article-description/Anker-675-USB-C-Docking-Station-12-in-1-Monitor-Stand-Wireless-FAQ",
+    "note": "Official single-monitor limit, HDMI resolution, USB-C video exclusion, charging, cable, adapter, OS, and stand-load guidance."
+  },
+  {
+    "name": "Anker 675 dimensions and specifications",
+    "url": "https://service.anker.com/article-description/Introduction-to-Anker-675-USB-C-Docking-Station-12-in-1-Monitor-Stand-Wireless",
+    "note": "Official 21.26 x 8.66 x 3.54-inch dimensions and listed stand load, checked September 24, 2026."
+  },
+  {
+    "name": "Exact US Amazon selection B0BNZ4D72B",
+    "url": "https://www.amazon.com/dp/B0BNZ4D72B",
+    "note": "November 1, 2026, US 10001: exact selection, New offer and named seller observed. Expanded conditional 30-day return summary reviewed. Recheck condition, package and live terms."
+  }
+],
     offers: [
       { merchant: "Amazon US", url: "https://www.amazon.com/dp/B0BNZ4D72B?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check Anker 675 price on Amazon", priceNote: "Confirm ASIN B0BNZ4D72B, one-monitor limit, 180W adapter, regional plug, seller, and return terms." },
     ],
-  },
+
+"purchaseCheck": "Select Anker 675 A8377 / B0BNZ4D72B for one HDMI display up to 4K60; its USB-C accessory ports do not output video. Check full-function host USB-C, included upstream cable and the 180 W regional power adapter. Up to 100 W host charging is separate from shared accessory power. The fixed-height riser does not raise the keyboard or replace a standing desk.",
+},
   {
     site: "baby",
     slug: "infant-optics-dxr-8-pro",
@@ -1411,13 +1632,14 @@ export const products: Product[] = [
   {
     site: "baby",
     slug: "nanit-pro-smart-baby-monitor",
-    purchaseCheck: "The historical Essentials purchase remains paused. Match the actual floor-stand bundle, account access and plan renewal terms separately from current camera-only or display options.",
+    purchaseCheck: "The historical Essentials purchase remains paused. The separately named camera-and-floor-stand option has its own ASIN and package; it does not establish the old bundle's contents. Confirm mount, account access and renewing plan terms.",
+    purchaseAlternatives: ["nanit-camera-floor-stand-nb303n-retailer-alternative"],
     asin: "B0FMZ3H8SB",
     amazonTitle: "Nanit Essentials Smart Baby Monitor with Floor Stand",
     seoTitle: "Nanit Essentials Monitor Guide: Floor Stand, Plan & Bundle",
-    updatedAt: "October 26, 2026",
+    updatedAt: "October 30, 2026",
     evidenceMode: "official-spec",
-    researchNote: "Current Nanit configuration, plan, privacy and feature-specific outage documents reviewed October 26, 2026. The Essentials ASIN is a historical bundle reference with its purchase path still paused; no fresh listing, supplied-parts, plan-quote or stock verification. No image, range, outage, security or medical-performance test.",
+    researchNote: "The October 26, 2026 configuration, plan, privacy and outage review is retained for the historical Essentials reference. A separate NB303N camera-and-floor-stand offer was observed October 30. The currently linked squared-base instructions were read in English, including setup diagrams; confirm the supplied stand version. No received-kit, image, range, outage, security or medical-performance test.",
     name: "Nanit Essentials Smart Baby Monitor with Floor Stand",
     brand: "Nanit",
     category: "sleep",
@@ -1439,7 +1661,8 @@ export const products: Product[] = [
       { heading: "The historical bundle is not the current store selection", body: "The old Nanit Pro URL redirects to a current monitor page that separates mount and camera-only/camera-plus-display choices. It does not identify the supplied parts of historical Essentials ASIN B0FMZ3H8SB. Do not assume an added display or the Sound + Light Machine is included with a different selection. A connected display also does not turn an account-based Wi-Fi system into a local radio monitor." },
       { heading: "Separate core viewing, paid history and the renewal quote", body: "Nanit retains core live view, background audio and alerts without Insights. Event clips, continuous video history, analytics and caregiver entitlements need their own plan check. The older support comparison is not the actual current renewal bill. Record the selected configuration, trial end, billing period and renewal quote before paying for a feature; keep core viewing alone when it meets the task." },
       { heading: "Check the actual account and outage path", body: "Nanit requires multi-factor authentication. Use named caregivers, review their permissions and remove obsolete access. Its Breathing Motion outage article describes particular camera-power and local-network states, not a guarantee that all video, saved footage and remote alerts work offline. No security or clinical guarantee follows from these manufacturer descriptions." },
-      { heading: "Keep placement and purchase holds separate", body: "Follow the exact mount instructions. Keep cords at least 3 feet from every part of the sleep environment and out of reach, and never place a monitor inside or on the crib edge. Monitoring does not replace direct care or safe sleep practices. The exact retailer purchase remains paused until identity and terms are verified; a current manufacturer page alone does not remove that hold." },
+      { heading: "Keep placement and purchase holds separate", body: "Follow the exact mount instructions. Keep cords at least 3 feet from every part of the sleep environment and out of reach, and never place a monitor inside or on the crib edge. Monitoring does not replace direct care or safe sleep practices. The historical Essentials purchase remains paused; the separately named camera-and-floor-stand offer has its own identity and buying checks." },
+      { heading: "A current camera-and-floor-stand option", body: "The separately selected Amazon option is B0FTSL4FXJ, retailer part NB303N, Camera & Floor Stand. It is not the old Essentials bundle, the stand accessory alone or the eight-inch-display package. The current manufacturer site separates those configurations. Confirm the actual supplied parts, power adapter and base instructions. The currently linked squared-base guide covers height adjustment, covered-cord routing and optional wall security; do not apply it to a different stand. Account setup, network access and any renewing Insights plan remain separate decisions. Keep a suitable existing monitor when its viewing and caregiver workflow already meet the need." },
     ],
     sources: [
       { name: "Nanit current monitor configurations", url: "https://www.nanit.com/products/smart-baby-monitor", note: "Mount and optional display choices; not verification of the historical Essentials bundle." },
@@ -1448,27 +1671,63 @@ export const products: Product[] = [
       { name: "Nanit privacy and security", url: "https://www.nanit.com/pages/privacy-security", note: "Required MFA and user permissions, not an independent security audit." },
       { name: "Nanit Breathing Motion outage guidance", url: "https://support.nanit.com/en_us/will-the-monitoring-work-if-my-internet-connectionwi-fi-is-down.-HyCAhAFxe", note: "Feature-specific camera-power and network scope, not all-functions offline approval." },
       { name: "CPSC monitor cord warning", url: "https://www.cpsc.gov/s3fs-public/5066.pdf", note: "Placement, reach and sleep-environment cord distance." },
+      { name: "Nanit currently linked squared-base floor-stand instructions", url: "https://cdn.shopify.com/s/files/1/1354/7173/files/Floor-Stand-With-Square-Based-User-Guide.pdf?v=1680283334", note: "Complete English physical pages 1–26 and all setup diagrams on pages 4–23 read; colophon v2.0_03.23.23. Current support article links this guide for squared-base Pro stands. Match the supplied version; it does not certify the received NB303N kit or camera regulatory revision." },
+      { name: "Amazon Camera & Floor Stand B0FTSL4FXJ", url: "https://www.amazon.com/dp/B0FTSL4FXJ", note: "NB303N and UPC 810108757115 observed October 30, 2026. Amazon.com seller and shipper, in-stock quote and expanded free 90-day refund/replacement were visible for US 10001. Recheck condition, parts and live terms; no display or Sound + Light contents are inferred." },
     ],
     offers: [{ merchant: "Amazon US", url: "https://www.amazon.com/dp/B0FMZ3H8SB?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check price on Amazon", priceNote: "Confirm ASIN B0FMZ3H8SB, floor stand, Sound + Light Machine, trial terms, seller, live price, and availability." }],
   },
   {
     site: "baby",
     slug: "baby-jogger-city-tour-2-stroller",
-    purchaseCheck: "Confirm the selected Eco Black package, included parts, child instructions and complete folded loading path. A family measurement does not prove car or airline fit; keep an existing suitable stroller.",
+    purchaseCheck: "Eco Black with Belly Bar, Single Stroller. Match the supplied US/CAN Eco instructions and child fit; seat, basket and pocket limits are separate. Check actual fold, carrier allowance, seller and returns.",
     asin: "B0CN79NZ8J",
     amazonTitle: "Baby Jogger City Tour 2 Ultra-Compact Travel Stroller with Belly Bar",
     seoTitle: "Baby Jogger City Tour 2: Fold, Eco Version and Fit Checks",
-    updatedAt: "October 26, 2026",
+    updatedAt: "October 31, 2026",
     evidenceMode: "official-spec",
-    researchNote: "Manufacturer documentation and model-family pages reviewed October 26, 2026. The ASIN and Eco Black/belly-bar package are historical retailer references, not a fresh inspection of seller, stock or supplied parts. No physical fold, lift, child-fit, wheel, comfort or airline test.",
+    researchNote: "Current Eco Black retailer package and US10001 Buy New offer/expanded returns checked October 31, 2026. The current manufacturer-linked Eco USA/CAN instructions were read in their complete English scope with the shared operating diagrams. No physical child-fit, fold, lift, wheel, comfort or airline test.",
     sources: [
-      { name: "Baby Jogger City Tour 2 specifications", url: "https://help.babyjogger.com/s/article/CITY-TOUR-2-SPECIFICATIONS", note: "Separates folded stroller, shipping box, seat load and other load figures. Match the actual version and regional instructions before applying a measurement." },
-      { name: "Baby Jogger current City Tour 2 collection", url: "https://www.babyjogger.com/strollers/shop-all-strollers/compact-and-lightweight/city-tour-2/", note: "Manufacturer collection currently includes City Tour 2 Eco. This does not establish the exact Amazon ASIN's configuration, seller or availability." },
-      { name: "Baby Jogger discontinued products", url: "https://www.babyjogger.com/discontinued-products.html", note: "Distinguishes the original City Tour from City Tour 2. An expired product URL or a different stroller family's newer generation does not establish discontinuation of this selected version." },
-      { name: "American Airlines stroller guidance", url: "https://www.aa.com/web/i18n/travel-info/special-assistance/traveling-children.html", note: "One carrier's check-in and gate-check guidance; confirm the operating carrier and actual trip." },
-      { name: "CPSC stroller restraint alert", url: "https://www.cpsc.gov/safety-education/safety-guides/kids-and-babies/infants-strollers-must-be-properly-secured-all-times", note: "Harness use and supervision, including with a reclined seat. Not individual model or recall clearance." },
-      { name: "Amazon listing B0CN79NZ8J", url: "https://www.amazon.com/dp/B0CN79NZ8J", note: "Historical retailer identity reference. Recheck the exact version, supplied belly bar/bag, seller, live price, stock and returns at the retailer." },
-    ],
+  {
+    "name": "Baby Jogger City Tour 2 specifications",
+    "url": "https://help.babyjogger.com/s/article/CITY-TOUR-2-SPECIFICATIONS",
+    "note": "Separates folded stroller, shipping box, seat load and other load figures. Match the actual version and regional instructions before applying a measurement."
+  },
+  {
+    "name": "Baby Jogger current City Tour 2 collection",
+    "url": "https://www.babyjogger.com/strollers/shop-all-strollers/compact-and-lightweight/city-tour-2/",
+    "note": "Manufacturer collection currently includes City Tour 2 Eco. This does not establish the exact Amazon ASIN's configuration, seller or availability."
+  },
+  {
+    "name": "Baby Jogger discontinued products",
+    "url": "https://www.babyjogger.com/discontinued-products.html",
+    "note": "Distinguishes the original City Tour from City Tour 2. An expired product URL or a different stroller family's newer generation does not establish discontinuation of this selected version."
+  },
+  {
+    "name": "American Airlines stroller guidance",
+    "url": "https://www.aa.com/web/i18n/travel-info/special-assistance/traveling-children.html",
+    "note": "One carrier's check-in and gate-check guidance; confirm the operating carrier and actual trip."
+  },
+  {
+    "name": "CPSC stroller restraint alert",
+    "url": "https://www.cpsc.gov/safety-education/safety-guides/kids-and-babies/infants-strollers-must-be-properly-secured-all-times",
+    "note": "Harness use and supervision, including with a reclined seat. Not individual model or recall clearance."
+  },
+  {
+    "name": "Amazon listing B0CN79NZ8J",
+    "url": "https://www.amazon.com/dp/B0CN79NZ8J",
+    "note": "October 31, 2026 US10001: Eco Black with Belly Bar, Single Stroller, Buy New selected at Little Folks NYC with Amazon fulfillment; expanded free 90-day returns observed. Recheck supplied package, child instructions and actual fit."
+  },
+  {
+    "name": "Baby Jogger City Tour 2 Eco Black product instructions",
+    "url": "https://www.babyjogger.com/strollers/shop-all-strollers/compact-and-lightweight/city-tour-2/city-tour-2-eco-stroller/SAP_2205373.html",
+    "note": "Current manufacturer Eco Black reference 2205373 and stated belly bar/carry bag. Match the received label and version; nominal model-family measurements do not certify the actual loaded fold."
+  },
+  {
+    "name": "Baby Jogger City Tour 2 Eco USA/CAN instructions",
+    "url": "https://s7d1.scene7.com/is/content/NewellBrands/nwl0001598054a-city-tour-2-eco-usa-can-r03-1pdf",
+    "note": "Currently linked original NWL0001598054A: complete English instructions and shared assembly, harness, fold and belly-bar drawings reviewed. Applies to Eco USA/CAN; other regional versions and accessory instructions remain separate."
+  }
+],
     name: "Baby Jogger City Tour 2 Stroller",
     brand: "Baby Jogger",
     category: "travel",
@@ -1483,15 +1742,36 @@ export const products: Product[] = [
     scores: [],
     pros: ["Manufacturer support separates folded dimensions from the shipping box", "Current collection provides a City Tour 2 Eco comparison reference", "Fold, carry and accessory questions can be checked against the exact regional instructions"],
     cons: ["No physical loading, wheel, comfort or child-fit test is available here", "The support-table model and selected Eco bundle are not assumed dimensionally identical", "Airline carriage and actual bin space require a separate trip-specific check"],
-    specs: { ASIN: "B0CN79NZ8J", "Product type": "Compact travel stroller reference", "Historical selected package": "Eco Black with belly bar; recheck supplied parts", "Model-family fold reference": "21.6 × 16.9 × 6.8 in in the City Tour 2 support table; confirm the selected version", "Current manufacturer collection": "City Tour 2 Eco listed; exact retailer configuration still needs checking", "Link status": "Amazon affiliate link verified July 16, 2026; no fresh offer inspection in this document review" },
+    specs: {
+  "ASIN": "B0CN79NZ8J",
+  "Product type": "Compact travel stroller reference",
+  "Model-family fold reference": "21.6 × 16.9 × 6.8 in in the City Tour 2 support table; confirm the selected version",
+  "Current manufacturer collection": "City Tour 2 Eco listed; exact retailer configuration still needs checking",
+  "Current selected package": "Eco Black with Belly Bar; Single Stroller. Confirm received parts and regional label.",
+  "Dated offer check": "October 31 US10001 Buy New and item-specific 90-day returns observed; not a future-stock guarantee.",
+  "US/CAN Eco seat limit": "45 lb / 20.5 kg and 40 in / 101.6 cm in the current linked Eco instructions; match supplied regional version",
+  "Separate storage limits": "Basket 15 lb; pocket 1 lb where present; these do not increase the seat limit."
+},
     evidence: ["Match ASIN B0CN79NZ8J, the selected version, color, belly bar, bag and any other supplied accessories before using their dimensions", "Measure the car opening, usable storage, loading motion and remaining luggage room; resolve a tight result with an actual fit check", "Read the exact seat and accessory instructions for child suitability, restraint, load limits and approved combinations; near-flat recline does not establish newborn approval"],
     alternatives: ["Keep the existing stroller when it remains suitable for the child and already fits the routine.", "Compare Summer 3Dlite only with its own current instructions, complete folded dimensions and retailer package; no comfort or value ranking is established here.", "If daily handling or storage is still unresolved, compare another documented configuration before choosing a replacement."],
     editorialSections: [
-      { heading: "Current family, selected version and old links", body: "The previous manufacturer product URL has expired, but the current official collection lists City Tour 2 Eco. The discontinued-products page identifies the original City Tour as a predecessor. Neither an expired URL nor another Baby Jogger family's newer generation proves this selected City Tour 2 package is discontinued. This review has not established a like-for-like successor to ASIN B0CN79NZ8J or a fresh Amazon offer." },
-      { heading: "Use the right fold measurement", body: "The City Tour 2 support table lists a 21.6 × 16.9 × 6.8 inch fold separately from its shipping box. Treat it as a named-model reference until the regional version, included parts and folding instructions agree with the selected package. Measure the complete package you intend to load, including a bag and any attached parts. All three dimensions, the trunk opening, loading movement and hatch closure matter; a volume or floor-plan comparison alone is insufficient." },
-      { heading: "Check the child and the adult's routine", body: "Follow the exact seat's age, developmental, height and weight requirements and approved accessory combinations. A belly bar or reclined seat does not replace the harness or supervision. With the child safely out and supervised, check the documented fold, latch, carry point and lift. Handling, canopy and basket access need a practical check on the intended routes; no measured ride or maneuvering result is claimed here." },
-      { heading: "Keep a separate flight and no-buy decision", body: "Check the operating carrier's current cabin, gate-check and ticket-counter rules for the trip and keep a permitted fallback. American Airlines is one policy example, not approval by another carrier or a guarantee of bin space. Pause when the child's suitability, regional instructions, selected package or physical loading path remains unknown. Keep a suitable existing stroller when it already meets the need." },
-    ],
+  {
+    "heading": "Current family, selected version and old links",
+    "body": "The current official Eco Black product page identifies reference 2205373 and links Eco USA/CAN instructions. The selected B0CN79NZ8J retail option was Eco Black with Belly Bar, Single Stroller, with a Buy New offer and expanded 90-day return terms observed October 31. Match the supplied label and instructions rather than treating another color, older City Tour or regional edition as identical. Neither an expired product URL nor the predecessor’s discontinued listing proves this Eco package is discontinued."
+  },
+  {
+    "heading": "Use the right fold measurement",
+    "body": "The City Tour 2 support table lists a 21.6 × 16.9 × 6.8 inch fold separately from its shipping box. Treat it as a named-model reference until the regional version, included parts and folding instructions agree with the selected package. Measure the complete package you intend to load, including a bag and any attached parts. All three dimensions, the trunk opening, loading movement and hatch closure matter; a volume or floor-plan comparison alone is insufficient."
+  },
+  {
+    "heading": "Check the child and the adult's routine",
+    "body": "The current USA/CAN Eco instructions list a 45 lb and 40 inch seat limit, with separate 15 lb basket and 1 lb pocket limits where present. Follow the supplied version and child-fit instructions. The manual recommends the most reclined seat position for newborns; a belly bar or reclined position does not replace the harness, supervision or a suitable bed. It excludes running and jogging. Fold with the child out, remove attachments and basket contents, and follow the documented latch and carry sequence. This review has not physically tested those operations."
+  },
+  {
+    "heading": "Keep a separate flight and no-buy decision",
+    "body": "Check the operating carrier's current cabin, gate-check and ticket-counter rules for the trip and keep a permitted fallback. American Airlines is one policy example, not approval by another carrier or a guarantee of bin space. Pause when the child's suitability, regional instructions, selected package or physical loading path remains unknown. Keep a suitable existing stroller when it already meets the need."
+  }
+],
     offers: [
       { merchant: "Amazon US", url: "https://www.amazon.com/dp/B0CN79NZ8J?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check price on Amazon", priceNote: "Confirm ASIN B0CN79NZ8J, Eco Black variant, belly bar, seller, live price, and availability." },
     ],
@@ -1499,18 +1779,48 @@ export const products: Product[] = [
   {
     site: "baby",
     slug: "summer-3dlite-convenience-stroller",
+    purchaseAlternatives: [
+  "baby-jogger-city-tour-2-stroller"
+],
     purchaseCheck: "The exact purchase remains paused until the selected model and applicable manual are matched. Do not borrow child limits or folded dimensions from another 3Dlite SKU.",
     asin: "B0D5BGKNBX",
     amazonTitle: "Summer by Ingenuity 3Dlite Convenience Stroller",
     seoTitle: "Summer 3Dlite: Model, Child Fit and Fold Checks",
-    updatedAt: "October 26, 2026",
+    updatedAt: "October 31, 2026",
     evidenceMode: "official-spec",
     researchNote: "Current Kids2 model pages and the linked 2025 manual reviewed October 26, 2026, alongside the older family manual. Exact instructions applicable to historical ASIN B0D5BGKNBX remain unresolved, so its purchase is paused. No physical fold, handling, comfort, durability or airline test; no fresh seller, stock or return observation.",
     sources: [
-      { name: "Kids2 3Dlite SKU 32843-000", url: "https://www.kids2.com/products/32843-000-summer-by-ingenuity-3dlite-convenience-stroller-jet-black", note: "Current Jet Black family reference and original manual route; not established as the selected historical ASIN." },
-      { name: "Kids2 3Dlite SKU 32303-000", url: "https://www.kids2.com/products/32303-000-summer-by-ingenuity-3dlite-convenience-stroller", note: "A separate current SKU. Do not transfer its age field, dimensions, parts or instructions to another selection." },
-      { name: "Kids2 21930/32843 manual, June 2025", url: "https://images.salsify.com/image/upload/s--iQDrVPv_--/woyvtadtahb5aekcoj0d.pdf", note: "English instructions and diagrams read in full. Listed model scope does not establish applicability to B0D5BGKNBX." },
-    ],
+  {
+    "name": "Kids2 3Dlite SKU 32843-000",
+    "url": "https://www.kids2.com/products/32843-000-summer-by-ingenuity-3dlite-convenience-stroller-jet-black",
+    "note": "Current Jet Black family reference and original manual route; not established as the selected historical ASIN."
+  },
+  {
+    "name": "Kids2 3Dlite SKU 32303-000",
+    "url": "https://www.kids2.com/products/32303-000-summer-by-ingenuity-3dlite-convenience-stroller",
+    "note": "A separate current SKU. Do not transfer its age field, dimensions, parts or instructions to another selection."
+  },
+  {
+    "name": "Kids2 21930/32843 manual, June 2025",
+    "url": "https://images.salsify.com/image/upload/s--iQDrVPv_--/woyvtadtahb5aekcoj0d.pdf",
+    "note": "English instructions and diagrams read in full. Listed model scope does not establish applicability to B0D5BGKNBX."
+  },
+  {
+    "name": "Amazon listing B0CN79NZ8J",
+    "url": "https://www.amazon.com/dp/B0CN79NZ8J",
+    "note": "October 31, 2026 US10001: Eco Black with Belly Bar, Single Stroller, Buy New selected at Little Folks NYC with Amazon fulfillment; expanded free 90-day returns observed. Recheck supplied package, child instructions and actual fit."
+  },
+  {
+    "name": "Baby Jogger City Tour 2 Eco Black product instructions",
+    "url": "https://www.babyjogger.com/strollers/shop-all-strollers/compact-and-lightweight/city-tour-2/city-tour-2-eco-stroller/SAP_2205373.html",
+    "note": "Current manufacturer Eco Black reference 2205373 and stated belly bar/carry bag. Match the received label and version; nominal model-family measurements do not certify the actual loaded fold."
+  },
+  {
+    "name": "Baby Jogger City Tour 2 Eco USA/CAN instructions",
+    "url": "https://s7d1.scene7.com/is/content/NewellBrands/nwl0001598054a-city-tour-2-eco-usa-can-r03-1pdf",
+    "note": "Currently linked original NWL0001598054A: complete English instructions and shared assembly, harness, fold and belly-bar drawings reviewed. Applies to Eco USA/CAN; other regional versions and accessory instructions remain separate."
+  }
+],
     name: "Summer 3Dlite Convenience Stroller",
     brand: "Summer",
     category: "travel",
@@ -1529,11 +1839,27 @@ export const products: Product[] = [
     evidence: ["Match the received label, SKU, current regional instructions and supplied parts; a family-name match is insufficient", "Check the child's age, development, height and weight against that exact manual", "Measure the complete fold, loading movement, trunk opening and daily carry routine without a child in the stroller"],
     alternatives: ["Keep a suitable existing stroller when it already fits the child's needs and real loading routine.", "Compare City Tour 2 only against its own selected version and instructions; this page does not establish a comfort or price winner."],
     editorialSections: [
-      { heading: "Current family pages do not settle the historical ASIN", body: "Kids2 currently lists 3Dlite SKUs including 32843-000 and 32303-000. The linked 2025 manual identifies 21930/32843, while the older December 2015 family document lists earlier model codes. The retailer reference has not been reconciled to that scope. This is a documentation gap, not proof that the whole family is discontinued, unsafe or replaced by a particular newer model. The exact purchase stays paused." },
-      { heading: "Use the matching instructions before applying limits", body: "Read the actual label and regional manual for child suitability, restraint, permitted accessories, child load and separate basket or cup-holder loads. Do not transfer one SKU's age field or another manual's numbers. Recline is not newborn approval or permission to leave a child unattended. Pause when those requirements cannot be established." },
-      { heading: "Check the complete fold and adult routine", body: "Measure all three dimensions of the actual folded version, including the bag and anything that remains attached. With the child safely out and supervised, follow that model's fold, latch and carry instructions and check the loading path, hatch closure and adult lift. No listed footprint, shipping carton or lightweight label proves vehicle fit or easy handling." },
-      { heading: "Care, flights and keeping the current stroller", body: "Use the matching manual's cleaning and inspection rules and keep children clear of assembly and folding. Check the operating carrier's current stroller rules separately; no cabin acceptance is established here. Retain a suitable existing stroller when it already solves the task, and compare another documented model only for a specific remaining need." },
-    ],
+  {
+    "heading": "Current family pages do not settle the historical ASIN",
+    "body": "Kids2 currently lists 3Dlite SKUs including 32843-000 and 32303-000. The linked 2025 manual identifies 21930/32843, while the older December 2015 family document lists earlier model codes. The retailer reference has not been reconciled to that scope. This is a documentation gap, not proof that the whole family is discontinued, unsafe or replaced by a particular newer model. The exact purchase stays paused."
+  },
+  {
+    "heading": "Use the matching instructions before applying limits",
+    "body": "Read the actual label and regional manual for child suitability, restraint, permitted accessories, child load and separate basket or cup-holder loads. Do not transfer one SKU's age field or another manual's numbers. Recline is not newborn approval or permission to leave a child unattended. Pause when those requirements cannot be established."
+  },
+  {
+    "heading": "Check the complete fold and adult routine",
+    "body": "Measure all three dimensions of the actual folded version, including the bag and anything that remains attached. With the child safely out and supervised, follow that model's fold, latch and carry instructions and check the loading path, hatch closure and adult lift. No listed footprint, shipping carton or lightweight label proves vehicle fit or easy handling."
+  },
+  {
+    "heading": "Care, flights and keeping the current stroller",
+    "body": "Use the matching manual's cleaning and inspection rules and keep children clear of assembly and folding. Check the operating carrier's current stroller rules separately; no cabin acceptance is established here. Retain a suitable existing stroller when it already solves the task, and compare another documented model only for a specific remaining need."
+  },
+  {
+    "heading": "Compare a separately documented compact stroller",
+    "body": "If a compact loading routine is the unsolved need, compare the separate City Tour 2 Eco Black with belly-bar option. Its currently linked USA/CAN Eco instructions and dated selected New offer were checked independently. This does not verify the historical 3Dlite ASIN, promise an umbrella fold, lower weight or a similar price. Check the selected Eco child limits, complete folded package, adult lift and actual loading path before buying."
+  }
+],
     offers: [
       { merchant: "Amazon US", url: "https://www.amazon.com/dp/B0D5BGKNBX?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check price on Amazon", priceNote: "Confirm ASIN B0D5BGKNBX, variant, seller, live price, and availability." },
     ],
@@ -1546,20 +1872,55 @@ export const products: Product[] = [
     seoTitle: "Momcozy KleanPal Pro Guide: Cycles, Capacity & Counter Fit",
     updatedAt: "June 30, 2026",
     sources: [
-      { name: "Momcozy KleanPal Pro", url: "https://momcozy.com/products/momcozy-kleanpal-pro-baby-bottle-washer", note: "BS03 capacity, modes, water use, filter, and storage claims." },
-      { name: "Momcozy support", url: "https://support.momcozy.com/article/54468237368857", note: "Operation and maintenance guidance." },
+      {
+        "name": "Momcozy KleanPal Pro",
+        "url": "https://momcozy.com/products/momcozy-kleanpal-pro-baby-bottle-washer",
+        "note": "BS03 capacity, modes, water use, filter, and storage claims."
+      },
+      {
+        "name": "Momcozy BS03 US original instructions",
+        "url": "https://cdn.shopify.com/s/files/1/0559/2321/2486/files/BS03_A9-20251209.pdf?v=1765418560",
+        "note": "Complete English printed 1–30 plus cover read; all structural, installation, loading and filter diagrams checked. Keep BS03 separate from D8/BW05."
+      },
+      {
+        "name": "Momcozy current BS03 instruction index",
+        "url": "https://momcozy.com/pages/kleanpal-pro-baby-bottle-washer-instructions",
+        "note": "Manufacturer mapping for the US English A9 manual and separate D8 guide."
+      },
+      {
+        "name": "CDC feeding-item cleaning and sanitizing",
+        "url": "https://www.cdc.gov/hygiene/about/clean-sanitize-store-infant-feeding-items.html",
+        "note": "Cleaning after every feeding, compatibility, drying, protected storage and when separate sanitizing may be unnecessary."
+      }
     ],
     editorialSections: [
-      { heading: "It replaces more than sterilizing", body: "KleanPal Pro is designed to wash, steam, dry, and store. Momcozy lists space for four bottles plus accessories and about 2.5L of water per cycle, so it best fits homes where hand-washing is the actual bottleneck." },
-      { heading: "Counter and drain planning", body: "Measure the machine, lid clearance, clean-water access, outlet, and drain route as one setup. A large all-in-one appliance saves labor only when loading and draining are easy every day." },
-      { heading: "Use the specified consumables", body: "Follow Momcozy's low-suds detergent and filter guidance rather than substituting normal dish soap. Hot steam and recently completed parts need cooling time before handling." },
+      {
+        "heading": "Buy the washing step only when it is the bottleneck",
+        "body": "BS03 combines washing, steam and drying for a four-bottle planning load. It still requires disassembly, emptying milk, correct loading and post-cycle inspection. If a suitable existing dishwasher or hand-washing routine already handles the work, another appliance may add expense and maintenance without solving a recurring problem."
+      },
+      {
+        "heading": "A short wash is not the complete turnaround",
+        "body": "The original US manual separates 19- and 29-minute wash programs from drying, optional steam and storage. Its drying table includes a 60-minute stage and a possible extension in cooler conditions. It also calls for ten minutes of cooling before removing parts. Plan the whole program and loading routine; a rapid-wash headline does not mean clean, dry parts are ready in 19 minutes."
+      },
+      {
+        "heading": "Resolve counter fit for the exact version",
+        "body": "The A9 manual and an older support specification table give different appliance dimensions. Confirm the measurements for the selected BS03 version, then include lid removal, side-tank access, outlet position, ventilation and the instructed drain route. A carton measurement or another Momcozy washer's dimensions cannot establish the fit."
+      },
+      {
+        "heading": "Use the specified detergent and loading diagrams",
+        "body": "Follow the exact consumable instructions and bottle/pump layouts, keeping spray arms unobstructed. Do not substitute ordinary dish soap. The original diagrams show separate pump-part arrangements rather than universal compatibility. Check each feeding item's washing and heat limits, maintain removable parts and filters, and inspect for residue or retained water."
+      },
+      {
+        "heading": "Keep the newer washer separate",
+        "body": "Momcozy now documents DeepClean D8/BW05 separately. Its features, racks and manual are not BS03 upgrades by implication, and its presence does not establish that BS03 is discontinued. Compare exact models only when a different capacity or workflow has a documented job."
+      }
     ],
     name: "Momcozy KleanPal Pro Baby Bottle Washer, Sterilizer & Dryer",
     brand: "Momcozy",
     category: "feeding",
     image: "/images/affiliate/baby-momcozy-kleanpal-pro-baby-bottle-washer.webp",
     summary: "An all-in-one bottle washer, sterilizer, and dryer for families who want less hand-washing across bottles, pump parts, and baby feeding essentials.",
-    verdict: "Momcozy KleanPal Pro makes sense when washing is the bottleneck, not just sterilizing. It is the bigger counter-space commitment for parents who want a machine to handle more of the bottle routine from start to finish.",
+    verdict: "Compare BS03 when washing compatible feeding parts is a recurring bottleneck and its four-bottle layout, complete program and maintenance fit the household. Confirm exact-version dimensions and the regional power label. Keep an effective existing routine when automation adds no useful capacity or work reduction.",
     whyItMatters: "Bottle cleanup is not one step. Washing, sterilizing, drying, and storing clean parts all compete for time and counter space, so an all-in-one machine should be judged by the routine it replaces.",
     bestFor: "Bottle-heavy homes that want washing plus sterilizing and drying",
     priceBand: "$$$",
@@ -1569,12 +1930,31 @@ export const products: Product[] = [
       { label: "Routine fit", value: 8 },
       { label: "Counter footprint", value: 5 },
     ],
-    pros: ["Combines washing, sterilizing, and drying in one machine", "Useful for bottles, pump parts, and repeated daily feeding cleanup", "Can reduce hand-washing time when bottle volume is high"],
-    cons: ["Much larger and pricier than basic sterilizers", "Part compatibility, detergent needs, and cycle time need checking"],
-    specs: { ASIN: "B0CWLHKQNT", "Product type": "Bottle washer, sterilizer, and dryer", "Use case": "All-in-one feeding-part cleanup", "Link status": "Amazon affiliate link verified July 16, 2026" },
+    pros: [
+      "Combines washing with separately selected steam/drying functions",
+      "Original BS03 diagrams provide specific bottle and pump-part loading patterns",
+      "Manufacturer documents a four-bottle planning load"
+    ],
+    cons: [
+      "Manual and older support dimensions differ; exact-version counter fit needs confirmation",
+      "Dedicated detergent, drain routing, loading and maintenance remain part of the routine",
+      "Short wash settings exclude later drying and cooling stages"
+    ],
+    specs: {
+      "ASIN": "B0CWLHKQNT",
+      "Product type": "Bottle washer, sterilizer, and dryer",
+      "Use case": "All-in-one feeding-part cleanup",
+      "Model boundary": "BS03 KleanPal Pro; DeepClean D8/BW05 is a different washer.",
+      "US power": "Original US manual: 120 V / 60 Hz, 530 W; match appliance label.",
+      "Capacity": "Four bottles in the manual; exact bottle/pump layout still needs care and fit checks.",
+      "Dimensions": "Original A9 manual 340×250×410 mm; older support table 350×270×390 mm. Confirm actual-version dimensions and lid/drain clearance."
+    },
     evidence: ["Confirm ASIN B0CWLHKQNT, the exact Momcozy KleanPal Pro bundle, and compatible bottle or pump-part shapes", "Check wash, sterilize, dry, and storage cycle options before comparing price", "Measure counter footprint and review detergent or maintenance requirements"],
     alternatives: ["Choose Baby Brezza if drying is the main upgrade and you do not need automatic washing.", "Use microwave bags or a basic sterilizer if counter space is tight."],
     offers: [{ merchant: "Amazon US", url: "https://www.amazon.com/dp/B0CWLHKQNT?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check price on Amazon", priceNote: "Confirm ASIN B0CWLHKQNT, bundle, seller, live price, and availability." }],
+    "evidenceMode": "official-spec",
+    "researchNote": "Manufacturer BS03 instructions and public-health care guidance reviewed. We have not tested cleaning efficacy, temperature, noise, dryness, water savings or loaded capacity.",
+    "purchaseCheck": "Match BS03 KleanPal Pro B0CWLHKQNT, selected kit and US 120 V/60 Hz base; D8/BW05 is a separate model. Confirm actual-version dimensions, drain access, consumables, compatible loading and the complete wash/steam/dry/cooling routine before ordering.",
   },
   {
     site: "baby",
@@ -1585,15 +1965,28 @@ export const products: Product[] = [
     updatedAt: "August 23, 2026",
     evidenceMode: "official-spec",
     sources: [
-      { name: "Baby Brezza One Step Sterilizer Dryer Advanced", url: "https://babybrezza.com/products/sterilizer-and-dryer-advanced", note: "Official eight-bottle or two-pump-set capacity, 30-minute drying, four functions, HEPA filter, and 48-hour closed-lid storage guidance." },
-      { name: "Amazon listing: Baby Brezza Sterilizer Dryer Advanced", url: "https://www.amazon.com/dp/B0C3DHK1LL", note: "ASIN, selected color, seller, bundle, and current listing verification." },
+      {
+        "name": "Baby Brezza One Step Sterilizer Dryer Advanced",
+        "url": "https://babybrezza.com/products/sterilizer-and-dryer-advanced",
+        "note": "Official eight-bottle or two-pump-set capacity, 30-minute drying, four functions, HEPA filter, and 48-hour closed-lid storage guidance."
+      },
+      {
+        "name": "Amazon listing: Baby Brezza Sterilizer Dryer Advanced",
+        "url": "https://www.amazon.com/dp/B0C3DHK1LL",
+        "note": "ASIN, selected color, seller, bundle, and current listing verification."
+      },
+      {
+        "name": "Baby Brezza original US BRZ0069 instructions",
+        "url": "https://cdn.shopify.com/s/files/1/1465/2384/files/SDA_-_New_-_BRZ0069_IM_EN_201102.pdf?v=1606162335",
+        "note": "Current official US manual hub links this BRZ0069 guide; all 4 physical pages / 6 printed pages, full English and diagrams reviewed. Other Sterilizer Dryer/Superfast / SuperQuick models use different instructions."
+      }
     ],
     name: "Baby Brezza Sterilizer Dryer Advanced",
     brand: "Baby Brezza",
     category: "feeding",
     image: "/images/affiliate/baby-baby-brezza-sterilizer-dryer-advanced.webp",
     summary: "A model-specific look at the eight-bottle Baby Brezza Sterilizer Dryer Advanced, including which bottle materials and brands it supports, how the modular bins change usable capacity, and what still needs to be measured before buying.",
-    verdict: "Baby Brezza Sterilizer Dryer Advanced is the convenience upgrade when drying time and large mixed loads are the pain points. Baby Brezza says it works with bottles from any brand, but eight bottles is a maximum layout—not a promise that eight wide bottles, pump sets, and accessories all fit together.",
+    verdict: "Compare Advanced BRZ0069 when its modular layout fits the actual washed bottles and pump parts. Include the selected drying stage, separate cooling/restart instructions, counter access and maintenance. Keep a suitable existing routine when its published larger capacity solves no recurring gap.",
     whyItMatters: "Sterilizing is only half the routine. Wet parts still need a clean place to dry, and that is where combo units can reduce counter clutter.",
     bestFor: "Large bottle or pump-part loads that need sterilizing plus drying",
     priceBand: "$$",
@@ -1603,31 +1996,76 @@ export const products: Product[] = [
       { label: "Capacity", value: 8 },
       { label: "Counter fit", value: 6 },
     ],
-    pros: ["Published capacity for eight bottles or two complete pump-part sets", "30-minute HEPA-filtered drying mode", "Four modular configurations for mixed bottle and accessory loads"],
-    cons: ["Costs more than basic sterilizers", "Large modular bins need permanent counter and lid clearance", "It still does not wash milk residue from parts"],
-    specs: { ASIN: "B0C3DHK1LL", "Product type": "Sterilizer and dryer", "Published capacity": "Up to 8 bottles or 2 full pump-part sets plus accessories", "Bottle compatibility": "Any brand; plastic, silicone, and glass according to Baby Brezza", Functions: "Sterilize and dry, sterilize only, dry only, storage rack", "Published drying": "30 minutes", "Closed-lid storage": "Up to 48 hours", "Before buying": "Confirm color, seller, bundle, voltage, and current warranty" },
+    pros: [
+      "Published capacity up to eight bottles or two complete pump-part sets, subject to layout",
+      "Selectable 30/45/60-minute drying after steam in the reviewed BRZ0069 instructions",
+      "Four illustrated basket/tray configurations"
+    ],
+    cons: [
+      "Does not wash milk residue from feeding parts",
+      "Modular bins need full lid, loading and basket-removal clearance",
+      "Cooling and at least 30 minutes between cooled operations affect repeated loads"
+    ],
+    specs: {
+      "ASIN": "B0C3DHK1LL",
+      "Product type": "Sterilizer and dryer",
+      "Published capacity": "Up to 8 bottles or 2 full pump-part sets plus accessories",
+      "Bottle compatibility": "Any brand; plastic, silicone, and glass according to Baby Brezza",
+      "Functions": "Sterilize and dry, sterilize only, dry only, storage rack",
+      "Published drying": "30 minutes",
+      "Closed-lid storage": "Up to 48 hours",
+      "Before buying": "Confirm color, seller, bundle, voltage, and current warranty",
+      "US manual model": "BRZ0069, 120 V / 60 Hz 750 W; match selected model label.",
+      "Drying options": "30/45/60 minutes after steam; 30 minutes is not total cycle time.",
+      "Cooling and repeat cycles": "Manual: cool 5 minutes before lifting lid; allow at least 30 minutes between operations and confirm unit has cooled."
+    },
     evidence: ["Confirm ASIN B0C3DHK1LL, selected color, seller, and current bundle", "Count and sketch one real bottle-and-pump load; wide bottles and wearable pump parts use more of the modular layout", "Measure permanent counter footprint, cabinet clearance, and the lid-opening path", "Follow the current HEPA-filter replacement and descaling instructions"],
     editorialSections: [
-      { heading: "Which bottle sizes fit?", body: "Baby Brezza describes the Advanced model as compatible with bottles from any brand and with plastic, silicone, and glass bottles. The official page does not publish a single ounce or height cutoff. Use the large lower bin for taller bottles, the shorter upper bin and accessory tray for smaller parts, and confirm an unusually tall or wide bottle against the current manual before treating 'all brands' as a guaranteed eight-bottle load." },
-      { heading: "Eight bottles is a maximum, not every mixed load", body: "The published maximum is eight bottles or two complete pump-part sets plus accessories. Real capacity changes with wide bottle bodies, handles, valves, flanges, wearable pump parts, and how much open space steam and drying air need. Build the load around one full feeding cycle rather than the headline number." },
-      { heading: "Measure the appliance workflow, not only the bottle", body: "A large chamber helps only if the unit has a permanent counter position, enough cabinet and lid clearance, and a nearby place to wash parts first. This machine sterilizes and dries; it does not remove milk residue, so washing remains a separate step." },
+      {
+        "heading": "Which bottle sizes fit?",
+        "body": "Baby Brezza describes the Advanced model as compatible with bottles from any brand and with plastic, silicone, and glass bottles. The official page does not publish a single ounce or height cutoff. Use the large lower bin for taller bottles, the shorter upper bin and accessory tray for smaller parts, and confirm an unusually tall or wide bottle against the current manual before treating 'all brands' as a guaranteed eight-bottle load."
+      },
+      {
+        "heading": "Eight bottles is a maximum, not every mixed load",
+        "body": "The published maximum is eight bottles or two complete pump-part sets plus accessories. Real capacity changes with wide bottle bodies, handles, valves, flanges, wearable pump parts, and how much open space steam and drying air need. Build the load around one full feeding cycle rather than the headline number."
+      },
+      {
+        "heading": "Measure the appliance workflow, not only the bottle",
+        "body": "A large chamber helps only if the unit has a permanent counter position, enough cabinet and lid clearance, and a nearby place to wash parts first. This machine sterilizes and dries; it does not remove milk residue, so washing remains a separate step."
+      },
+      {
+        "heading": "Thirty minutes refers to the drying choice",
+        "body": "The original BRZ0069 manual provides 30-, 45- and 60-minute drying selections after steam. It also calls for five minutes of cooling before lifting the lid and at least 30 minutes between operations, with the unit cooled before restarting. Plan those stages when scheduling repeated loads; do not equate the advertised 30-minute dry setting with a full steam-and-dry turnaround."
+      },
+      {
+        "heading": "Keep compatible loading and maintenance in the routine",
+        "body": "The original diagrams show four basket/tray arrangements and remove the accessory tray for tall bottles. Avoid overloading or pockets that retain water. Use the matching manual for the water fill, pouring direction, descaling and filter replacement. It still needs washed, rinsed parts first. Keep a suitable existing cleaning/sanitizing/drying routine when a separate appliance would duplicate it."
+      }
     ],
-    alternatives: ["Choose Momcozy KleanPal Pro if washing bottles and pump parts is the main bottleneck.", "Use microwave bags if space is more important than drying convenience."],
+    alternatives: [
+      "Keep a suitable existing washing/sanitizing/drying routine when another appliance adds little.",
+      "Compare a documented washer only when washing is the unresolved job."
+    ],
     offers: [{ merchant: "Amazon US", url: "https://www.amazon.com/dp/B0C3DHK1LL?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check Baby Brezza Advanced on Amazon", priceNote: "Confirm ASIN B0C3DHK1LL, selected color, seller, bundle, live price, and warranty." }],
+    "researchNote": "Current manufacturer information and complete original US BRZ0069 instructions reviewed. No hands-on drying, temperature, hygiene or loaded-capacity test.",
+    "purchaseCheck": "Match ASIN B0C3DHK1LL to Advanced BRZ0069, the regional power label, selected color and included parts. The 30-minute claim is drying after steam, with separate cooling and restart conditions; verify the current offer and returns before ordering.",
   },
   {
     site: "baby",
     slug: "ergobaby-omni-breeze-carrier",
+    purchaseAlternatives: [
+  "ergobaby-omni-breeze-onyx-blooms-retailer-alternative"
+],
     asin: "B0931ZY7DK",
     amazonTitle: "Ergobaby Omni Breeze Baby Carrier All Carry Positions, Onyx Black",
     seoTitle: "Ergobaby Omni Breeze Guide: Newborn Fit, Weight Limit & Positions",
-    updatedAt: "August 16, 2026",
+    updatedAt: "October 31, 2026",
     name: "Ergobaby Omni Breeze Baby Carrier",
     brand: "Ergobaby",
     category: "travel",
     image: "/images/affiliate/baby-ergobaby-omni-breeze-carrier.webp",
     summary: "A research-based Ergobaby Omni Breeze review covering newborn fit, weight and height limits, four carry positions, SoftFlex mesh, adjustment steps, and the fit questions that product photos cannot answer.",
-    verdict: "Ergobaby Omni Breeze is worth comparing when you want one structured carrier from newborn size through toddler use and expect airflow and lumbar support to matter. Fit is personal, so the return path and a careful first adjustment matter more than the feature count.",
+    verdict: "Compare the original Breeze only for a documented position and fit that the household needs. Its historical Onyx Black exact offer remains paused until current conditions are verified; Classic and Deluxe are separate models. Keep a suitable existing carrier when the extra positions or design do not solve a gap.",
     whyItMatters: "A carrier has to fit both baby and adult. Strap adjustment, hip support, heat, and carry positions matter more than color or pattern.",
     bestFor: "A breathable, structured carrier with four positions",
     priceBand: "$$",
@@ -1638,7 +2076,11 @@ export const products: Product[] = [
       { label: "Learning curve", value: 6 },
     ],
     pros: ["Four positions: front inward, front outward, hip, and back", "SoftFlex mesh is designed to increase airflow", "Adjustable seat, padded straps, and lumbar-support waistbelt"],
-    cons: ["Requires position-specific setup and a learning period", "A structured carrier can feel bulky compared with a soft wrap", "Mesh improves airflow but does not eliminate heat for baby or caregiver"],
+    cons: [
+      "Each carry position needs its own size, development and setup conditions",
+      "Caregiver adjustments and secure fastening access remain individual checks",
+      "Mesh is not a measured temperature advantage or permission for unsuitable weather"
+    ],
     specs: {
       ASIN: "B0931ZY7DK",
       "Product type": "Structured baby carrier",
@@ -1654,54 +2096,67 @@ export const products: Product[] = [
     },
     evidence: ["Confirm the baby meets both the weight, height, and developmental requirements for the intended position", "Adjust the seat width to the baby's height using the waistbelt markings", "Make sure the face remains visible and follow the manual's head-and-neck-support instructions", "Fit each caregiver separately instead of assuming one strap setting works for everyone"],
     editorialSections: [
-      {
-        heading: "A note about this guide",
-        body: "This research-based guide uses the original Omni Breeze manual, IM-OMNIBRZ-201021-ROW-V1, and model-specific guidance. It is not a hands-on test or an individual fit assessment. Match the instructions supplied with your carrier and region. Ergobaby's current Classic and Deluxe models have their own instructions; those are not substitutes for Breeze setup.",
-      },
-      {
-        heading: "Quick answer for shoppers",
-        body: "The Omni Breeze is most compelling when you want one structured carrier that starts at the listed newborn minimum and can continue through toddler use, but the buying decision should center on weight, height, position readiness, and caregiver comfort. It is not automatically the best carrier for every newborn or every adult body.",
-      },
-      {
-        heading: "Newborn fit has specific conditions",
-        body: "Ergobaby lists the Omni Breeze from 7lb and 20in, with a newborn carried on the front facing inward; no infant insert is required. The seat setting and head-and-neck support change with the baby's size and development. “From birth” should therefore be read as meeting the stated minimums and following the newborn setup—not as permission to use every carry position.",
-      },
-      {
-        heading: "Carry positions are milestone-dependent",
-        body: "The original Breeze manual lists 14–about 30lb for outward carry and 17.2–45lb for hip and back carry; approximate months are general guides. Its warnings require strong, consistent head and neck control before outward carry. The earlier Breeze FAQ also specified height over 25in and chin clearance for outward carry, and unassisted sitting for hip and back. Retain those checks and ask Ergobaby to confirm anything missing from your carrier's instructions. Remove the baby before changing position and never allow outward-facing sleep.",
-      },
-      {
-        heading: "Adjustment mistakes to avoid",
-        body: "Set the seat width for the baby's height before tightening the carrier, keep the waistband level and secure, and check that the panel and head support match the chosen position. Do not reuse one caregiver's settings without checking the fit. Before trying a new position, follow the position-specific manual or official video rather than copying a product photo.",
-      },
-      {
-        heading: "What SoftFlex mesh can—and cannot—do",
-        body: "The mesh is intended to improve airflow and may be preferable to a heavier fabric in warm weather. It cannot make babywearing cool in every climate: the adult and baby still share body heat, and comfort changes with clothing, shade, activity, and trip length. Shorter carries or a stroller may be the better tool on very hot days.",
-      },
-      {
-        heading: "Who should skip it",
-        body: "Skip or compare another format if you want the compact feel of a wrap, dislike a structured waistband, need a carrier below the stated newborn limits, or cannot get comfortable after careful adjustment. Families using a carrier only occasionally may not benefit enough from the premium mesh design to justify the price.",
-      },
+  {
+    "heading": "A note about this guide",
+    "body": "This research-based guide uses the original Omni Breeze manual, IM-OMNIBRZ-201021-ROW-V1, and model-specific guidance. It is not a hands-on test or an individual fit assessment. Match the instructions supplied with your carrier and region. Ergobaby's current Classic and Deluxe models have their own instructions; those are not substitutes for Breeze setup."
+  },
+  {
+    "heading": "Quick answer for shoppers",
+    "body": "The Omni Breeze is most compelling when you want one structured carrier that starts at the listed newborn minimum and can continue through toddler use, but the buying decision should center on weight, height, position readiness, and caregiver comfort. It is not automatically the best carrier for every newborn or every adult body."
+  },
+  {
+    "heading": "Newborn fit has specific conditions",
+    "body": "Ergobaby lists the Omni Breeze from 7lb and 20in, with a newborn carried on the front facing inward; no infant insert is required. The seat setting and head-and-neck support change with the baby's size and development. “From birth” should therefore be read as meeting the stated minimums and following the newborn setup—not as permission to use every carry position."
+  },
+  {
+    "heading": "Carry positions are milestone-dependent",
+    "body": "The original Breeze manual lists 14–about 30lb for outward carry and 17.2–45lb for hip and back carry; approximate months are general guides. Its warnings require strong, consistent head and neck control before outward carry. The earlier Breeze FAQ also specified height over 25in and chin clearance for outward carry, and unassisted sitting for hip and back. Retain those checks and ask Ergobaby to confirm anything missing from your carrier's instructions. Remove the baby before changing position and never allow outward-facing sleep."
+  },
+  {
+    "heading": "Adjustment mistakes to avoid",
+    "body": "Set the seat width for the baby's height before tightening the carrier, keep the waistband level and secure, and check that the panel and head support match the chosen position. Do not reuse one caregiver's settings without checking the fit. Before trying a new position, follow the position-specific manual or official video rather than copying a product photo."
+  },
+  {
+    "heading": "What SoftFlex mesh can—and cannot—do",
+    "body": "The mesh is intended to improve airflow and may be preferable to a heavier fabric in warm weather. It cannot make babywearing cool in every climate: the adult and baby still share body heat, and comfort changes with clothing, shade, activity, and trip length. Shorter carries or a stroller may be the better tool on very hot days."
+  },
+  {
+    "heading": "Who should skip it",
+    "body": "Skip or compare another format if you want the compact feel of a wrap, dislike a structured waistband, need a carrier below the stated newborn limits, or cannot get comfortable after careful adjustment. Families using a carrier only occasionally may not benefit enough from the premium mesh design to justify the price."
+  },
+  {
+    "heading": "Compare a separately selected Breeze color",
+    "body": "The original Onyx Black ASIN B0931ZY7DK remained unavailable on October 31. The purchase option here separately names Omni Breeze Onyx Blooms, B0BQCPHV9J, model BCZ360PONYXBLM. Its Amazon.com offer and expanded 90-day returns were observed for US ZIP 10001; selected New was not explicitly shown. The description also spells Oynx Blue, so match the color selection and model. Use Breeze instructions that match the supplied carrier and region. This is not Classic, Dream or Deluxe, and a different pattern is not a reason to replace a suitable Breeze."
+  }
+],
+    alternatives: [
+      "Keep an existing carrier that correctly fits the intended documented position.",
+      "Compare another named model only against its own instructions and selected retail identity.",
+      "Use another suitable travel plan when weather, fit or the actual outing makes body carrying impractical."
     ],
-    alternatives: ["Compare a soft wrap if compact storage and slower newborn use matter more than four carry positions.", "Use a stroller when heat, caregiver comfort, or a long outing makes body carrying impractical."],
     compareSlugs: ["babybjorn-carrier-harmony", "momcozy-purehug-baby-carrier"],
     sources: [
-      {
-        name: "Ergobaby Omni Breeze original instruction manual",
-        url: "https://cdn.shopify.com/s/files/1/0157/0150/8160/files/IM_OMNIBRZ_201021_ROW_V1.pdf?v=1630054302",
-        note: "Manufacturer-authored IM-OMNIBRZ-201021-ROW-V1, PDF pages 1–2, retrieved October 22, 2026. Position chart and warnings. Earlier Breeze FAQ checks retained as additional conditions are not attributed to this PDF; confirm exact carrier and regional instructions.",
-      },
-      {
-        name: "Ergobaby US customer care",
-        url: "https://ergobaby.com/en-us/pages/customer-care",
-        note: "Ask for help matching the instructions and fit to an existing Omni Breeze. The former Breeze product and instruction pages have moved; do not use a different Omni model's manual.",
-      },
-      {
-        name: "Amazon listing: Ergobaby Omni Breeze Onyx Black",
-        url: "https://www.amazon.com/dp/B0931ZY7DK",
-        note: "Exact Omni Breeze identity, Onyx Black variant, Amazon.com seller and shipper, stock, and free-return path verified for New York 10001 on August 16, 2026. Reconfirm all checkout details before ordering.",
-      },
-    ],
+  {
+    "name": "Ergobaby Omni Breeze original instruction manual",
+    "url": "https://cdn.shopify.com/s/files/1/0157/0150/8160/files/IM_OMNIBRZ_201021_ROW_V1.pdf?v=1630054302",
+    "note": "Manufacturer-authored IM-OMNIBRZ-201021-ROW-V1, PDF pages 1–2, retrieved October 22, 2026. Position chart and warnings. Earlier Breeze FAQ checks retained as additional conditions are not attributed to this PDF; confirm exact carrier and regional instructions."
+  },
+  {
+    "name": "Ergobaby US customer care",
+    "url": "https://ergobaby.com/en-us/pages/customer-care",
+    "note": "Ask for help matching the instructions and fit to an existing Omni Breeze. The former Breeze product and instruction pages have moved; do not use a different Omni model's manual."
+  },
+  {
+    "name": "Ergobaby Omni Breeze and Omni Dream original instructions",
+    "url": "https://m.media-amazon.com/images/I/C1hZwZsKKuL.pdf",
+    "note": "Manufacturer-authored joint manual IM-OMNIBRZ+DRM_ROW_210315_V1: complete English and all diagrams on two physical spreads previously read. Linked from the original Onyx Black listing; model-family guidance, not proof of the supplied regional instructions for every Onyx Blooms unit."
+  },
+  {
+    "name": "Amazon Omni Breeze Onyx Blooms B0BQCPHV9J",
+    "url": "https://www.amazon.com/dp/B0BQCPHV9J",
+    "note": "October 31, 2026, US ZIP 10001: selected Onyx Blooms, BCZ360PONYXBLM, UPC191653007062, Amazon.com offer and expanded 90-day returns observed. Description also spells Oynx Blue; match selection/model rather than treating it as original Onyx Black. Selected New not explicitly displayed."
+  }
+],
     offers: [
       { merchant: "Amazon US", url: "https://www.amazon.com/dp/B0931ZY7DK?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check Omni Breeze on Amazon", priceNote: "Confirm ASIN B0931ZY7DK, Omni Breeze, Onyx Black, Amazon.com seller and shipper, live price, stock, and free-return eligibility." },
     ],
@@ -1711,22 +2166,50 @@ export const products: Product[] = [
     slug: "hatch-rest-sound-machine",
     asin: "B0F7C6XJ3P",
     amazonTitle: "Hatch Baby Sound Machine and Night Light",
-    seoTitle: "Hatch Baby Sound Machine Guide: Rest Successor, App & Subscription",
+    seoTitle: "Hatch Baby Sound Machine Guide: Setup, Power and Subscription",
     updatedAt: "October 8, 2026",
     evidenceMode: "official-spec",
-    researchNote: "Official-spec model and subscription guide using Hatch product and support documentation plus the exact Amazon listing; this is not a hands-on sound, app-reliability, or sleep-outcome test.",
+    researchNote: "Current Hatch Baby support and feature documentation reviewed; no hands-on sound-level, offline, network or sleep-outcome test.",
     sources: [
-      { name: "Hatch Rest 2nd gen", url: "https://www.hatch.co/tkm/rest-second-gen", note: "Official sound, light, clock, app, trial, warranty, and Hatch+ positioning for the current Rest generation." },
-      { name: "Hatch product quick-start guides", url: "https://help.hatch.co/hc/en-us/articles/14668645947031-Quick-Start-Guides-for-all-Hatch-Products", note: "Official manual directory used to distinguish Rest generations and setup instructions." },
-      { name: "Amazon listing B0F7C6XJ3P", url: "https://www.amazon.com/dp/B0F7C6XJ3P", note: "Exact linked model, color, included content, seller, price, stock, and return terms." },
+      {
+        "name": "Hatch Baby current product information",
+        "url": "https://www.hatch.co/baby",
+        "note": "Current Hatch Baby family and color choices; distinct from older Rest generation."
+      },
+      {
+        "name": "Hatch Baby setup and installation",
+        "url": "https://help.hatch.co/hc/en-us/articles/31323477886487-Hatch-Baby-Set-Up-and-Installation",
+        "note": "Full setup steps read: included adapter, Hatch Sleep app, Wi-Fi, physical controls; no Rest generation transfer."
+      },
+      {
+        "name": "Hatch Baby controls",
+        "url": "https://help.hatch.co/hc/en-us/articles/40619104259479-Hatch-Baby-Controls-Guide",
+        "note": "Full guide to buttons, volume, nightlight, brightness, pairing, time and toddler lock read."
+      },
+      {
+        "name": "Hatch Baby free versus Hatch+ features",
+        "url": "https://help.hatch.co/hc/en-us/articles/35706253623447-What-do-I-get-with-Hatch-What-do-I-get-for-free",
+        "note": "Full October 10 feature table read; sleep sounds and basic lights remain free, premium library/guides/support differ."
+      },
+      {
+        "name": "Hatch Baby purchase and placement guidance",
+        "url": "https://help.hatch.co/hc/en-us/articles/34903995447959-Your-Hatch-Baby-Purchase",
+        "note": "Complete article read; device placement/cords, third-party returns and trial-duration wording considered. Its three- versus six-month statements disagree; confirm exact offer."
+      },
+      {
+        "name": "Hatch Baby power requirement",
+        "url": "https://help.hatch.co/hc/en-us/articles/34905301374999-Does-Hatch-Baby-have-a-battery",
+        "note": "Current support explicitly says plugged-in use and no backup battery."
+      }
     ],
     name: "Hatch Baby Sound Machine",
     brand: "Hatch",
     category: "sleep",
     image: "/images/affiliate/baby-hatch-rest-sound-machine.webp",
-    summary: "The current Hatch Baby sound machine and night light listing for building more consistent nursery sleep cues, replacing the old Amazon link that targeted a Rest-branded generation.",
-    verdict: "Hatch Baby is the current comparison point for parents who want sound, light, app control, and repeatable cues in one device; confirm free versus subscription content before buying.",
-    whyItMatters: "Sleep products should support a routine, not promise magic. Consistent sound, dim light, and simple controls can make bedtime smoother.",
+    imageAlt: "Nursery context image; the Hatch device is not shown",
+    summary: "Hatch Baby Putty guidance for app setup, physical controls, power needs and free versus subscription features, using the current generation's support information.",
+    verdict: "Consider Hatch Baby when combined sound, light and app routines solve a specific need. Confirm the current generation, continuous power, network setup and trial terms; keep a simpler existing device when it already provides the routine.",
+    whyItMatters: "A combined sound/light device is useful only when its actual controls solve a routine gap. Check app and network setup, continuous power, placement and paid-content terms before adding it.",
     bestFor: "Nursery sound and night-light routines",
     priceBand: "$",
     rating: 4.3,
@@ -1735,14 +2218,59 @@ export const products: Product[] = [
       { label: "Controls", value: 8 },
       { label: "Portability", value: 6 },
     ],
-    pros: ["Combines sound and night light", "Useful through baby and toddler stages", "Strong registry recognition"],
-    cons: ["App features may be more than some families need", "Not a substitute for safe sleep basics"],
-    specs: { ASIN: "B0F7C6XJ3P", "Product type": "Wi-Fi sound machine and night light", "Current listing": "Hatch Baby, Putty", "Use case": "Sleep routine", "Link status": "Amazon affiliate link verified July 16, 2026" },
-    evidence: ["Confirm ASIN B0F7C6XJ3P and the current Hatch Baby listing rather than an older Rest generation", "Check which app content is included and which features require Hatch+", "Use alongside safe sleep guidance rather than as a sleep guarantee"],
+    pros: [
+      "Physical controls cover favorites, volume, nightlight and brightness after appropriate setup",
+      "Current basic sleep sounds and light functions do not require continued Hatch+",
+      "Combined app and physical controls may reduce the need for separate devices"
+    ],
+    cons: [
+      "App and Wi-Fi setup may add a dependency the routine does not need",
+      "No battery backup; continuous power is required",
+      "Exact current retail trial and renewal terms need confirmation; no sleep outcome is guaranteed"
+    ],
+    specs: {
+      "ASIN": "B0F7C6XJ3P",
+      "Product type": "Wi-Fi sound machine and night light",
+      "Current listing": "Hatch Baby, Putty",
+      "Use case": "Sleep routine",
+      "Model boundary": "Hatch Baby Putty; Rest/Rest+ and Rest Go instructions are different.",
+      "Power": "Included adapter required; Hatch Baby has no backup battery.",
+      "Setup": "Hatch Sleep app and Wi-Fi required for setup; Bluetooth pairing is not arbitrary speaker playback.",
+      "Subscription": "Basic lights/sleep sounds remain without Hatch+; premium content/support and included trial terms need exact offer confirmation."
+    },
+    evidence: [
+      "Match B0F7C6XJ3P, Putty Hatch Baby and supplied adapter rather than older Rest hardware.",
+      "Confirm Wi-Fi/app setup, power requirements and any needed offline behavior.",
+      "Read exact free/premium, trial, renewal and retailer-return terms before subscribing.",
+      "Place device and cord according to current instructions; do not infer a sleep or medical benefit."
+    ],
     alternatives: ["Choose a simple white-noise machine if app features are unnecessary.", "Use a separate dim night light if sound is not needed."],
     offers: [
       { merchant: "Amazon US", url: "https://www.amazon.com/dp/B0F7C6XJ3P?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check price on Amazon", priceNote: "Confirm ASIN B0F7C6XJ3P, Putty color, included content, seller, live price, and availability." },
     ],
+    "editorialSections": [
+      {
+        "heading": "This link is Hatch Baby, not Rest 2nd Gen",
+        "body": "Confirm the Putty Hatch Baby selection before ordering. Its redesigned controls and current support guides are separate from Rest and Rest+. A familiar brand name does not make the older generation's power, battery, setup or subscription instructions applicable."
+      },
+      {
+        "heading": "Plan app setup and continuous power",
+        "body": "Hatch instructs owners to use the supplied adapter and Hatch Sleep app with Wi-Fi for setup. Hatch Baby has no backup battery, so a power interruption is a different question from ordinary button control. Do not choose it as a portable or battery-backed sound machine. Confirm network compatibility and any offline behavior you need before purchase."
+      },
+      {
+        "heading": "Know what remains without the subscription",
+        "body": "Hatch's current feature table keeps basic lights and sleep sounds available without Hatch+. Premium stories, guides and sleep-team support have separate terms. Confirm the exact included trial and renewal terms: one support article contains both three- and six-month wording. Returning a device to a retailer and canceling an app-store subscription are separate actions."
+      },
+      {
+        "heading": "Keep the device and cord away from the sleep space",
+        "body": "Hatch says to place Hatch Baby at least three feet from the baby's sleep space, keep cords out of reach and never perch it on the crib. Choose a low usable sound level and ask the child's clinician about individual hearing or sleep concerns. A light/sound routine is not a monitor, medical treatment or guarantee of better sleep."
+      },
+      {
+        "heading": "Buy only when the combined controls have a job",
+        "body": "Compare the physical button, nightlight, brightness and app workflow with a simple light or sound machine already owned. Check the seller's selected-item return terms; Hatch's direct-store trial does not automatically apply to Amazon. Keep existing suitable gear when app routines or the combined controls would add little."
+      }
+    ],
+    "purchaseCheck": "Match Hatch Baby Putty B0F7C6XJ3P and the included adapter, not older Rest hardware. Confirm app/Wi-Fi setup, continuous power without battery backup and the exact included trial/renewal terms. Basic lights and sounds remain available without premium content.",
   },
 ];
 
@@ -2302,13 +2830,13 @@ export const roundups: Roundup[] = [
   {
     site: "baby",
     slug: "best-travel-strollers",
-    updatedAt: "October 26, 2026",
+    updatedAt: "October 31, 2026",
     title: "Travel Strollers: Compare Fold, Child Fit and Loading",
     dek: "Compare City Tour 2 and Summer 3Dlite as model references, then verify the selected version, child's instructions, complete fold and real loading routine.",
     category: "travel",
     intent: "Solve an actual storage or carrying problem while retaining the child's suitability and a workable daily routine.",
     quickAnswer: "Compare the complete folded stroller with both the storage opening and usable space, then check the child's exact seat instructions and the caregiver's lift. City Tour 2 and Summer 3Dlite are model references to verify, not tested comfort winners or guaranteed cabin bags. Keep the existing suitable stroller if it already fits; pause for unknown child suitability or an unconfirmed selected version.",
-    purchaseCheck: "The first listing is the historical City Tour 2 Eco Black/belly-bar reference. Confirm the selected version, included parts, child suitability and actual loading path before choosing it. A family-name fold figure does not establish that bundle's car or airline fit; keeping a suitable existing stroller is a valid result.",
+    purchaseCheck: "The City Tour 2 link opens the Eco Black with belly-bar listing observed October 31, 2026. Match the selected package to the Eco USA/CAN instructions, then check the child limits and actual loading path. Check the current seller, condition, delivery and returns before buying. Family-name fold figures do not establish car or cabin fit; keeping a suitable existing stroller remains a valid result.",
     intro: "Start with the problem the current stroller fails to solve: the trunk opening, a lift, apartment storage or a particular trip. Baby Jogger's current collection lists City Tour 2 Eco, but that does not verify every retailer package. Summer 3Dlite needs its own model instructions and measurements. This comparison has not tested either stroller's fold, wheel behavior, ride comfort or airline acceptance, and it does not rank one as universally more comfortable or better value.",
     decisionGuide: [
       { label: "Small opening or storage space", detail: "Measure the exact complete fold, narrow opening, loading movement, hatch and remaining luggage room. A carton size or trunk volume is insufficient." },
@@ -2328,7 +2856,7 @@ export const roundups: Roundup[] = [
       { heading: "Keep daily handling and flights as separate checks", body: "Check brakes, canopy, basket access and handling on the intended routes without assuming that a frame category predicts ride comfort. For flights, confirm the operating carrier's current baggage and stroller rules and where checked gear is returned. Car fit is not cabin acceptance, and a listed compact fold does not reserve overhead space. Keep a permitted fallback for the trip." },
       { heading: "Keep, pause or compare another configuration", body: "Keep a suitable existing stroller when it passes the actual routine. Pause a purchase if the child's suitability, regional instructions, package identity or loading result is unknown. Compare another documented configuration only for the need that remains unresolved. There is no physical comfort, suspension, maneuvering or durability ranking in this document comparison." },
     ],
-    methodology: ["Baby Jogger model-family documents, airline guidance and CPSC restraint alert reviewed October 26, 2026; no hands-on stroller comparison.", "No current retailer stock, price, supplied-part or return observation is established by this documentation review.", "Apply each model's own current instructions; do not transfer dimensions, child limits or accessory approvals between versions."],
+    methodology: ["Baby Jogger model-family documents, airline guidance and CPSC restraint alert were reviewed October 26, 2026; the currently linked Eco USA/CAN original instructions were read October 31. This is not a hands-on stroller comparison.", "On October 31 the selected City Tour 2 Eco Black with belly-bar Amazon listing showed Buy New, Little Folks NYC as seller, Amazon fulfillment and expanded free 90-day returns. This dated observation does not guarantee future price, stock, received parts or an individual free-return method. Summer remains paused because its exact manual applicability is unresolved.", "Apply each model's own current instructions; do not transfer dimensions, child limits or accessory approvals between versions."],
     productSlugs: ["baby-jogger-city-tour-2-stroller", "summer-3dlite-convenience-stroller"],
     faqs: [
       { question: "Does a small fold guarantee airplane-bin fit?", answer: "No. Check the operating carrier's current policy and the complete selected package, including its bag and attached parts. Cabin acceptance and actual space are separate from fitting a car trunk, so plan a permitted gate- or counter-check fallback." },
@@ -2339,85 +2867,110 @@ export const roundups: Roundup[] = [
   {
     site: "baby",
     slug: "best-bottle-sterilizers-and-dryers",
-    seoTitle: "Bottle Sterilizer and Dryer: 5 Picks for Pump Parts",
+    seoTitle: "Bottle Sterilizers and Dryers: Capacity, Cycles and Fit",
     updatedAt: "August 20, 2026",
-    title: "Bottle Sterilizer and Dryer: 5 Picks Compared",
-    dek: "Compare five bottle sterilizer and dryer picks for bottles and pump parts by capacity, drying, counter space, cycle time, cleanup, and total cost.",
+    title: "Bottle Sterilizers and Dryers: Compare the Routine",
+    dek: "Compare actual mixed loads, washing versus steam/drying, complete cycles, cooling, voltage, counter access and maintenance before buying.",
     category: "feeding",
     intent: "Choose a bottle sterilizer and dryer that removes the actual cleanup bottleneck without taking over the counter.",
-    intro: "Dr. Brown's is the best starting point for a familiar six-bottle sterilizer-dryer without paying for automatic washing. Choose GROWNSY for a smaller footprint, Chicco for capacity and controls, or Momcozy only when hand-washing is the bottleneck. Every option still requires clean parts before sterilizing.",
+    intro: "Start with the part of the routine that fails: washing, a required sanitizing step, drying space or the next ready load. Dr. Brown’s, GROWNSY, Chicco and Baby Brezza are sterilizer-dryer references; KleanPal Pro also automates washing. Choose from the exact compatible parts and model instructions, not a universal best-pick ranking or bottle count. Keep a suitable existing routine when it already supplies clean, dry equipment.",
     decisionGuide: [
-      { label: "Best starting pick", detail: "Choose Dr. Brown's for a recognizable mid-price unit listed for up to six bottles plus accessories." },
-      { label: "Small kitchen", detail: "Choose GROWNSY when footprint matters more than maximum bottle and pump-part capacity." },
-      { label: "Capacity and controls", detail: "Choose Chicco for a six-bottle layout, drying modes, and delay-start flexibility." },
-      { label: "Washing is the bottleneck", detail: "Choose Momcozy KleanPal Pro only when automatic washing justifies the larger footprint and price." },
+      {
+        "label": "Parts still need washing",
+        "detail": "Compare the existing cleaning routine with a documented washer such as BS03; a sterilizer-dryer does not remove milk residue."
+      },
+      {
+        "label": "Clean parts need drying space",
+        "detail": "Compare the real mixed load, dry setting, cooling and safe handling steps rather than the smallest advertised time."
+      },
+      {
+        "label": "Counter space is tight",
+        "detail": "Confirm exact-version dimensions and allow lid, basket, filling and drain access. A footprint alone is insufficient."
+      },
+      {
+        "label": "The routine already works",
+        "detail": "Keep compatible equipment and a suitable cleaning/sanitizing/drying routine; an extra appliance is optional."
+      }
     ],
     comparisonTable: {
-      title: "Capacity, function, footprint, and maintenance compared",
-      columns: ["Published capacity or load", "What it actually does", "Counter and upkeep checks", "Skip when"],
-      rows: [
-        {
-          label: "Dr. Brown's",
-          values: [
-            "Up to 6 bottles, or pump parts and small accessories",
-            "Sterilize, dry, or run both; contents can remain protected for up to 24 hours with the lid unopened",
-            "Use distilled water, descale the heating area, and budget for HEPA-filter replacement",
-            "You need the appliance to wash milk residue from parts",
-          ],
-        },
-        {
-          label: "GROWNSY 916",
-          values: [
-            "Compact tray layout; count bottles, valves, and pump parts before assuming a full-day load",
-            "Steam sterilizing and drying after parts have already been washed",
-            "Listed at 8.1 × 7.5 × 14.94 inches; verify tray layout and current filter or cleaning instructions",
-            "High-volume pump parts matter more than the smallest footprint",
-          ],
-        },
-        {
-          label: "Chicco Advanced",
-          values: [
-            "Up to 6 bottles plus nipples, rings, and lids in full-size mode",
-            "Sterilize only, sterilize and dry, dry only, or delayed start; full cycle is listed under 40 minutes",
-            "10.75 × 7.9 × 14.75 inches; coated plate and descale alert reduce, but do not remove, upkeep",
-            "Delay start and full/compact modes do not improve your routine",
-          ],
-        },
-        {
-          label: "Baby Brezza Advanced",
-          values: [
-            "Up to 8 bottles or 2 full pump-part sets plus accessories",
-            "Sterilize and dry, sterilize only, dry only, or use as a storage rack; 30-minute drying is published",
-            "Modular bins need lid and cabinet clearance; replace the included HEPA filter on schedule",
-            "You do not need the largest sterilizer-dryer load or 48-hour closed-lid storage",
-          ],
-        },
-        {
-          label: "Momcozy KleanPal Pro",
-          values: [
-            "Up to 4 bottles; about 2–3 when pump parts share the load",
-            "Washes, sterilizes, dries, and stores rather than only sterilizing clean parts",
-            "Uses about 2.5 L per cycle; plan detergent, clean-water access, outlet, and drain hose",
-            "Hand-washing is not the bottleneck or four-bottle capacity is too small",
-          ],
-        },
+      "title": "Capacity, function, footprint, and maintenance compared",
+      "columns": [
+        "Published capacity or load",
+        "What it actually does",
+        "Counter and upkeep checks",
+        "Skip when"
       ],
+      "rows": [
+        {
+          "label": "Dr. Brown's",
+          "values": [
+            "Up to six bottles; match the rack and exact AC177/AC377 version",
+            "Steam, dry or combined operation after washing; unopened storage is a conditional manufacturer claim",
+            "120 V/60 Hz; distilled water, descaling and six-month filter guidance in the reviewed manual",
+            "The unresolved task is washing milk residue from parts"
+          ]
+        },
+        {
+          "label": "GROWNSY 916",
+          "values": [
+            "Count actual compatible bottles and pump pieces; headline capacity does not settle a mixed load",
+            "LS-BE916 steam and drying after washing; about eight-minute steam and 60-minute dry are separate settings",
+            "120 V/60 Hz, 90 mL distilled water for steam and its own care instructions; confirm actual footprint",
+            "The exact part load or selected model is unconfirmed"
+          ]
+        },
+        {
+          "label": "Chicco Advanced",
+          "values": [
+            "Up to six bottles in full size, with the instructed racks; compact mode for small accessories",
+            "06951_DU: steam only, steam plus selected 20/30/45-minute dry, or dry only; separate delayed scheduling",
+            "120 V/60 Hz; check 10.75 × 7.9 × 14.75 in loading/lid space, complete cooldown and four-month nonwashable filter care",
+            "The exact model/load is unknown or an existing effective routine already covers the job"
+          ]
+        },
+        {
+          "label": "Baby Brezza Advanced",
+          "values": [
+            "Published up to eight bottles or two full pump-part sets; layout and part shapes matter",
+            "BRZ0069 steam plus selected 30/45/60-minute drying, or separate modes; no washing",
+            "120 V/60 Hz; modular lid clearance, five-minute cooling and at least 30 minutes between cooled operations",
+            "The existing clean/dry routine already covers the actual load"
+          ]
+        },
+        {
+          "label": "Momcozy KleanPal Pro",
+          "values": [
+            "BS03 four-bottle planning load; pump parts can reduce that load",
+            "Washes with dedicated consumables, with separate optional steam, drying and storage steps",
+            "120 V/60 Hz, water/drain/outlet and detergent; confirm A9 versus older dimensions before measuring a tight space",
+            "Washing is not the bottleneck or the documented load does not fit"
+          ]
+        }
+      ]
     },
     sections: [
       {
-        heading: "Do not compare bottle count alone",
-        body: "Published bottle capacity assumes a particular layout. Nipples, rings, caps, valves, wearable-pump pieces, and bottle height can turn a six- or eight-bottle claim into a smaller real load. Count one full day of clean parts, then compare that load with the tray and bin arrangement.",
+        "heading": "Fit one useful load before ranking capacity",
+        "body": "List the bottles, vents, nipples, flanges, valves and other parts that need to run together. Check each part’s allowed steam and drying method and the appliance’s illustrated loading pattern. Mixed shapes can reduce an advertised six- or eight-bottle count. A larger headline does not establish that the pump pieces fit or that one cycle supplies the next feeding."
       },
       {
-        heading: "Match the appliance to the step that wastes time",
-        body: "Dr. Brown's, GROWNSY, Chicco, and Baby Brezza sterilize and dry parts that have already been washed. Momcozy KleanPal Pro is the only pick here intended to automate washing as well. Paying for the larger washer makes sense only when scrubbing and rinsing—not drying space—is the repeated bottleneck.",
+        "heading": "Separate active settings from safe turnaround",
+        "body": "The reviewed AC177/AC377 manual describes about nine minutes of steam and 45 minutes of drying with separate cooling guidance. Advanced BRZ0069 has 30/45/60-minute drying after steam and a cooldown/restart condition. LS-BE916 and BS03 use different programs. Add washing, filling, loading, cooling and unloading as applicable; these are manufacturer instructions, not a timed comparison."
       },
       {
-        heading: "Total cost includes water, filters, detergent, and counter space",
-        body: "The purchase price is only the first comparison. HEPA filters, washer detergent, descaling, distilled-water guidance, drain access, and permanent counter clearance affect whether the appliance remains convenient after the first month.",
+        "heading": "Check version, power and recurring work",
+        "body": "The reviewed US AC177/AC377, BRZ0069, LS-BE916 and BS03 instructions specify 120 V/60 Hz. Match the actual base and supplied regional parts. BS03 A9 dimensions differ from an older support table, so do not average them. Include each model’s allowed water, detergent, descaling and filter schedule rather than borrowing another unit’s maintenance recipe."
       },
+      {
+        "heading": "Use public-health guidance to decide whether to add anything",
+        "body": "Cleaning, any necessary sanitizing and complete drying are separate steps. CDC guidance describes an appropriate dishwasher sanitizing/heated-dry route for compatible items that may make a separate sanitizing step unnecessary. Follow the child’s care advice where additional precautions apply. Keep an effective existing routine, and pause buying when compatibility or the exact instruction version is unknown."
+      }
     ],
-    methodology: ["Use current manufacturer documentation for capacity, functions, dimensions, filters, and maintenance", "Compare one full day of bottles and pump parts against the tray layout rather than bottle count alone", "Separate washing, sterilizing, drying, and closed-lid storage functions", "Measure counter footprint, lid clearance, outlet, water, drain, and cleanup access before buying"],
+    methodology: [
+      "Documentation comparison of named models; no hands-on capacity, cleaning efficacy, temperature, noise or timing test.",
+      "English operating and safety instructions were reviewed for AC177/AC377, BRZ0069, LS-BE916, BS03 and Chicco 06951_DU. Match the exact regional unit and follow each model’s own loading, cooling and maintenance rules.",
+      "Retail identity, live stock, seller, supplied accessories and expanded returns require separate dated confirmation."
+    ],
     productSlugs: [
       "dr-browns-all-in-one-sterilizer-dryer",
       "chicco-advanced-sterilizer-dryer",
@@ -2426,10 +2979,55 @@ export const roundups: Roundup[] = [
       "momcozy-kleanpal-pro-baby-bottle-washer",
     ],
     faqs: [
-      { question: "Which bottle sterilizer and dryer is best?", answer: "Dr. Brown's is the practical starting pick for a familiar six-bottle sterilizer-dryer. GROWNSY better fits a small counter, Chicco emphasizes capacity and cycle controls, and Momcozy makes sense when automatic washing is the main need." },
-      { question: "Do all parents need a bottle sterilizer?", answer: "No. Needs vary by feeding routine, medical guidance, and how many bottles or pump parts are used each day." },
-      { question: "Is a dryer worth it?", answer: "It can be useful when drying space is limited or parts need to be ready faster." },
-      { question: "Can I use microwave sterilizer bags instead?", answer: "Yes for many occasional routines, but bags can be less convenient for high-volume daily use." },
+      {
+        "question": "Which bottle sterilizer and dryer is best?",
+        "answer": "There is no universal winner here. Match the permitted part load, needed function, whole-cycle routine, exact regional model and available counter access. Keep an effective existing routine when no gap remains."
+      },
+      {
+        "question": "Do all parents need a separate sterilizer?",
+        "answer": "No. Follow current feeding-equipment hygiene and the child’s care guidance; compatible dishwasher or other approved sanitizing methods can meet the need without another appliance."
+      },
+      {
+        "question": "Is a 30-minute dry setting a 30-minute complete cycle?",
+        "answer": "No. Add the model’s steam step, preparation, cooling and any restart delay. The shortest drying label does not establish safe back-to-back turnaround."
+      },
+      {
+        "question": "Do these all wash bottles?",
+        "answer": "No. The listed sterilizer-dryers require cleaned parts first; KleanPal Pro BS03 is the washer reference and has its own loading and consumable rules."
+      }
+    ],
+    "quickAnswer": "Choose by the actual washed-part load, full cycle and cooling time, regional power and available counter routine. Consider a washer only when washing is the unresolved job. Pause for an unknown model or part compatibility; a suitable existing hygiene routine may need no new appliance.",
+    "sources": [
+      {
+        "name": "Dr. Brown's AC177/AC377 manual",
+        "url": "https://cdn.shopify.com/s/files/1/0831/9071/0549/files/WSW006_F5_SterilizerAndDryer_Instructions_WEB_ADA.pdf?v=1744040458",
+        "note": "Complete English instructions and diagrams read; steam/dry timing, separate cooling, water, maintenance and filter instructions."
+      },
+      {
+        "name": "Baby Brezza Advanced BRZ0069 manual",
+        "url": "https://cdn.shopify.com/s/files/1/1465/2384/files/SDA_-_New_-_BRZ0069_IM_EN_201102.pdf?v=1606162335",
+        "note": "Complete English four-page file and diagrams read; drying selections and cooling/restart instructions are separate."
+      },
+      {
+        "name": "GROWNSY LS-BE916 manual",
+        "url": "https://cdn.shopify.com/s/files/1/0280/5016/1725/files/bottle-sterilizer-user-manual-916.pdf?v=1734062493",
+        "note": "Complete English physical pages 1–9 and diagrams read. No newer-model HEPA feature or capacity transfer."
+      },
+      {
+        "name": "KleanPal Pro BS03 US manual",
+        "url": "https://cdn.shopify.com/s/files/1/0559/2321/2486/files/BS03_A9-20251209.pdf?v=1765418560",
+        "note": "Complete English instructions, printed pages 1–30, and diagrams read. A9 dimensions differ from the older support table; confirm the received revision."
+      },
+      {
+        "name": "CDC feeding item hygiene",
+        "url": "https://www.cdc.gov/hygiene/about/about-hygiene-and-safety-for-infant-feeding.html",
+        "note": "Complete cleaning, sanitizing, drying and storage guidance read. A separate appliance is not universally required."
+      },
+      {
+        "name": "Chicco Advanced original US owner’s manual",
+        "url": "https://www.chiccousa.com/on/demandware.static/-/Sites-chicco_catalog/default/dw60b3907d/images/products/Manuals/feeding/Chicco-Advanced-Steam-Sterilizer-with-Dryer-Manual.pdf",
+        "note": "IS0216ESF_02, February 2023; complete English instructions, all shared diagrams and visible technical table read. Model 06951_DU/reference 00007392100070; separate programs, delay, cooling and care."
+      }
     ],
   },
   {
@@ -2437,22 +3035,104 @@ export const roundups: Roundup[] = [
     slug: "best-baby-carriers-and-sleep-routine-upgrades",
     updatedAt: "June 22, 2026",
     title: "Baby Carrier and Sleep Routine Upgrades",
-    dek: "Some baby gear earns its space by making repeated daily moments easier: carrying, soothing, bedtime cues, and short errands.",
+    dek: "Choose a carrier for a documented position or a sound/light device for a specific routine, while keeping instruction conflicts, power and subscription conditions visible.",
     category: "travel",
     intent: "Choose daily-use baby gear that supports routines without promising unrealistic fixes.",
-    intro: "Carrier and sleep-routine products are easy to oversell. A carrier should fit the baby and caregiver safely; a sound machine should support a consistent routine, not replace safe sleep basics. Look for products that reduce real daily friction.",
+    intro: "Carriers and a sound/light device solve different jobs. Start with the baby’s eligible position and each caregiver’s ability to fit the carrier; for bedtime cues, decide whether simple existing controls already work. None of these products guarantees sleep, comfort or a safe fit. Pause for an unknown instruction version rather than buying around it.",
     decisionGuide: [
-      { label: "Hands-free errands", detail: "A structured carrier can help when stroller use is awkward." },
-      { label: "Warm weather", detail: "Carrier airflow and caregiver fit matter before color." },
-      { label: "Bedtime cues", detail: "A sound machine and dim light can help create repeatable signals." },
-      { label: "Minimal setup", detail: "Skip app-heavy features if simple controls are enough." },
+      {
+        "label": "Short transfer or errand",
+        "detail": "Check the exact carrier’s current eligible position and adult fastening access before comparing packability."
+      },
+      {
+        "label": "Later carrying modes",
+        "detail": "Mini has no back position; Lite is not newborn use. Harmony, PureHug and Hexa have unresolved version or instruction boundaries described below."
+      },
+      {
+        "label": "Sound and light controls",
+        "detail": "Compare Hatch Baby’s free basic controls with any paid content, and confirm the actual retail trial rather than transferring a Rest offer."
+      },
+      {
+        "label": "Simple routine already works",
+        "detail": "Keep it. A new carrier, subscription or connected light is not required to improve a routine."
+      }
     ],
-    methodology: ["Check age and weight guidance first", "Compare caregiver fit and learning curve", "Keep sleep products aligned with safe sleep guidance"],
+    methodology: [
+      "The comparison uses model-specific documents and online operating guidance; no child fit, comfort, sleep or temperature test was performed.",
+      "Carrier positions and instruction conflicts are considered separately from connected sound/light features.",
+      "No current retail availability or return eligibility established by this document comparison."
+    ],
     productSlugs: ["baby-tula-lite-carrier", "babybjorn-carrier-mini-3d-mesh", "momcozy-purehug-baby-carrier", "ergobaby-omni-breeze-carrier", "babybjorn-carrier-harmony", "hatch-rest-sound-machine"],
     faqs: [
-      { question: "Can a carrier replace a stroller?", answer: "For short errands and travel moments, sometimes. For long walks or hot days, a stroller can still be easier." },
-      { question: "Are sound machines safe?", answer: "Use moderate volume and sensible placement. Follow pediatric guidance and avoid placing devices too close to the baby." },
-      { question: "What matters most in a carrier?", answer: "Safe positioning, baby weight guidance, caregiver comfort, and whether it is easy enough to adjust correctly." },
+      {
+        "question": "Can a carrier replace a stroller?",
+        "answer": "It may solve a particular transfer or errand after the baby and wearer meet the exact instructions. Keep another suitable travel plan for weather, fit, loading or duration that the carrier does not solve."
+      },
+      {
+        "question": "Does Hatch Baby work without a subscription?",
+        "answer": "Current official guidance includes basic sounds and lights for free; premium content is separate. Confirm the exact device, setup and current offer. It needs power and has no battery backup."
+      },
+      {
+        "question": "What matters most in a carrier?",
+        "answer": "The matching instructions, child’s eligible position, visible unobstructed airway, ongoing support and each caregiver’s ability to fasten and recheck it. Unknown instructions mean pause."
+      }
+    ],
+    "quickAnswer": "Use carrier instructions and the current child’s fit to choose a carrying plan. Consider Hatch Baby only when its particular sound/light controls solve a routine gap and app, Wi-Fi and power needs are acceptable. Keep existing suitable equipment; unresolved instructions mean pause.",
+    "sections": [
+      {
+        "heading": "Keep the carrier eligibility differences visible",
+        "body": "Lite front carry begins at 12 lb and back carry at 18 lb with developmental requirements. Mini has no back carry and differing current-page/manual maximums. Harmony’s linked manual has inconsistent newborn/leg-strap statements. PureHug Black’s upper limit and newly advertised back mode still need matching instructions. Hexa’s sales-page 8 lb minimum conflicts with its manual’s 13.2 lb warning. Resolve the exact case before purchase or use."
+      },
+      {
+        "heading": "Hatch Baby is a separate generation with power and setup needs",
+        "body": "The linked product is Hatch Baby Putty, not Rest 2nd Gen or Rest+. Current official setup uses the app, Wi-Fi and included power adapter; the device has no battery backup. Basic sounds and lights are available without paid Hatch+ content, while the exact current retail subscription trial must be checked. Keep the device and cord out of the sleep space and follow the maker’s placement guidance, including at least three feet from the sleep area."
+      },
+      {
+        "heading": "Choose a specific benefit and keep a fallback",
+        "body": "Try the caregiver adjustment sequence only within permitted return terms; unused-only returns do not authorize a wearing trial. For sound or light, decide which control is missing from the existing routine before adding app dependence or paid content. A carrier is not a sleep surface, and a sound machine does not replace safe-sleep practice. Unknown fit, placement or power means change the plan rather than rely on a feature claim."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Harmony US manual",
+        "url": "https://a.storyblok.com/f/187315/x/1267c722e3/bc-harmony-om-us-v4-202104-lr.pdf",
+        "note": "Complete English use/safety pages 4–11 and diagrams read. Newborn weight and leg-strap statements conflict within the manual; confirm matching instructions."
+      },
+      {
+        "name": "Mini US manual",
+        "url": "https://a.storyblok.com/f/187315/x/0301cfadea/2676a-bc-mini_om_us_print.pdf",
+        "note": "Complete English use/safety pages 6–13 and diagrams read. Manual 25 lb maximum differs from current US product page’s 24 lb."
+      },
+      {
+        "name": "Original Omni Breeze manual",
+        "url": "https://cdn.shopify.com/s/files/1/0157/0150/8160/files/IM_OMNIBRZ_201021_ROW_V1.pdf?v=1630054302",
+        "note": "Previously read complete original two-spread instructions, chart and diagrams; no Classic or Deluxe instruction transfer."
+      },
+      {
+        "name": "Baby Tula position guidance",
+        "url": "https://babytula.com/pages/learn",
+        "note": "Lite front inward 12–30 lb; back from 18 lb and appropriate head/neck/torso and sitting control. Match supplied instructions."
+      },
+      {
+        "name": "PureHug Black product and version conditions",
+        "url": "https://momcozy.com/products/momcozy-purehug-baby-carrier-black",
+        "note": "Current page has 44/45 lb upper-limit differences and a back-carry marketing claim. Matching original back-position instructions remain unconfirmed."
+      },
+      {
+        "name": "Hexa original manual",
+        "url": "https://www.bcbabycare.com/cdn/shop/files/Hexa_Effortless_Carrier_User_Manual.pdf",
+        "note": "Complete English physical pages 5–17 and diagrams read. BC2402503KJ warning starts at 13.2 lb, conflicting with the sales page’s 8 lb; exact purchase remains paused."
+      },
+      {
+        "name": "Hatch Baby setup and installation",
+        "url": "https://help.hatch.co/hc/en-us/articles/31323477886487-Hatch-Baby-Set-Up-and-Installation",
+        "note": "Complete current setup instructions read; app, Wi-Fi, included adapter and placement conditions."
+      },
+      {
+        "name": "Hatch free and paid features",
+        "url": "https://help.hatch.co/hc/en-us/articles/35706253623447-What-do-I-get-with-Hatch-What-do-I-get-for-free",
+        "note": "Complete current free/premium feature table read; no paid sleep outcome guarantee."
+      }
     ],
   },
 ];
@@ -2759,7 +3439,7 @@ export const guides: Guide[] = [
     "title": "Dog Bed for a Small Apartment: Sleeping Area, Footprint and Care",
     "dek": "Measure the usable sleeping area, room clearance and washable layers before choosing a compact dog bed.",
     "category": "comfort",
-    "purchaseFlow": "task-links",
+
     "decisionLayout": true,
     "searchQuestion": "How do you fit a dog bed into a small apartment?",
     "quickAnswer": "Measure the dog’s ordinary sleeping shape and the bed’s usable inner area, then tape out its full outer footprint and access route. Bolsters can take space away from the sleeping surface. Confirm the exact size and which layers may be washed; keep a suitable existing bed if replacement only adds bulk. A hair roller cleans fabric and does not substitute for a bed.",
@@ -3357,8 +4037,21 @@ export const guides: Guide[] = [
     relatedRoundups: ["best-baby-monitors-for-apartments"],
     relatedProducts: ["infant-optics-dxr-8-pro", "nanit-pro-smart-baby-monitor"],
     sources: [
-      { name: "Infant Optics DXR-8 Pro user manual", url: "https://fccid.io/2AAAM-DXR8PPZ-ABU/User-Manual/Users-Manual-4799058.pdf", note: "Primary setup, charging, camera pairing, range, 2.4GHz interference, cord-placement, and operating guidance for a dedicated parent-unit monitor." },
-      { name: "Nanit Pro camera and floor stand", url: "https://www.nanit.com/products/nanit-pro-camera?mount=floor-stand", note: "Official app-based monitoring, mount, connected-feature, and plan context for a Wi-Fi comparison." },
+      {
+        "name": "Infant Optics DXR-8 PRO official user manual",
+        "url": "https://cdn.shopify.com/s/files/1/0780/1408/7346/files/DXR-8-PRO-User-Manual-V3.7.pdf.pdf?v=1788237500",
+        "note": "Officially linked non-SS DXR-8 PRO instructions for power, placement, pairing, battery care and interference. Split-screen SS features are separate."
+      },
+      {
+        "name": "CPSC baby-monitor cord alert",
+        "url": "https://www.cpsc.gov/s3fs-public/5066.pdf",
+        "note": "Keep monitor cords at least three feet from any part of the sleep environment and out of reach. Never put a monitor inside or on a crib edge."
+      },
+      {
+        "name": "Nanit Pro camera and floor stand",
+        "url": "https://www.nanit.com/products/nanit-pro-camera?mount=floor-stand",
+        "note": "Official app-based monitoring, mount, connected-feature, and plan context for a Wi-Fi comparison."
+      }
     ],
     comparisonTable: {
       title: "Wi-Fi monitor or dedicated parent unit?",
@@ -3409,13 +4102,38 @@ export const guides: Guide[] = [
       ],
     },
     sections: [
-      { heading: "Start with who needs access", body: "If caregivers need to check the room away from home, Wi-Fi access may matter. If the main use is overnight monitoring in the same home, a local parent unit can be simpler." },
-      { heading: "Think about phone dependence", body: "App monitors can be convenient, but they share attention with notifications, battery, updates, and Wi-Fi. A parent unit keeps monitoring separate from the phone." },
-      { heading: "Test local range in the actual home", body: "A non-Wi-Fi label does not guarantee perfect coverage. Walls, floors, appliances, and other 2.4GHz equipment can affect the camera-to-parent-unit link. Test the bedroom, normal caregiver location, charging position, sound, brightness, camera switching, and signal behavior before the return window closes." },
-      { heading: "Count parent-unit friction", body: "Battery runtime, overnight charging, cable placement, screen brightness, volume controls, button layout, replacement-unit availability, and extra-camera support often matter more at 2 a.m. than a long feature list." },
-      { heading: "Review privacy comfort on both paths", body: "For Wi-Fi monitors, check account sharing, two-factor authentication, storage, deletion, firmware, network security, and whether a past caregiver still has access. For local monitors, check paired cameras, physical access to the parent unit, usable radio range, and what must be reset if a unit is replaced or lost." },
-      { heading: "Confirm the exact bundle before comparing price", body: "A familiar monitor name can cover camera-only, wall-mount, floor-stand, flex-stand, extra-camera, lens, replacement-unit, and subscription-trial variations. Match the current ASIN, camera count, mount, parent unit, included accessories, service trial, seller, and return terms." },
-      { heading: "Do not buy analytics by default", body: "Sleep insights can be useful for some families, but they can also create more checking. Treat analytics as optional support, not a replacement for safe sleep guidance." },
+      {
+        "heading": "Start with who needs access",
+        "body": "If caregivers need to check the room away from home, Wi-Fi access may matter. If the main use is overnight monitoring in the same home, a local parent unit can be simpler."
+      },
+      {
+        "heading": "Think about phone dependence",
+        "body": "App monitors can be convenient, but they share attention with notifications, battery, updates, and Wi-Fi. A parent unit keeps monitoring separate from the phone."
+      },
+      {
+        "heading": "Test local range in the actual home",
+        "body": "A non-Wi-Fi label does not guarantee perfect coverage. Walls, floors, appliances, and other 2.4GHz equipment can affect the camera-to-parent-unit link. Test the bedroom, normal caregiver location, charging position, sound, brightness, camera switching, and signal behavior before the return window closes."
+      },
+      {
+        "heading": "Count parent-unit friction",
+        "body": "Battery runtime, overnight charging, cable placement, screen brightness, volume controls, button layout, replacement-unit availability, and extra-camera support often matter more at 2 a.m. than a long feature list."
+      },
+      {
+        "heading": "Review privacy comfort on both paths",
+        "body": "For Wi-Fi monitors, check account sharing, two-factor authentication, storage, deletion, firmware, network security, and whether a past caregiver still has access. For local monitors, check paired cameras, physical access to the parent unit, usable radio range, and what must be reset if a unit is replaced or lost."
+      },
+      {
+        "heading": "Confirm the exact bundle before comparing price",
+        "body": "A familiar monitor name can cover camera-only, wall-mount, floor-stand, flex-stand, extra-camera, lens, replacement-unit, and subscription-trial variations. Match the current ASIN, camera count, mount, parent unit, included accessories, service trial, seller, and return terms."
+      },
+      {
+        "heading": "Do not buy analytics by default",
+        "body": "Sleep insights can be useful for some families, but they can also create more checking. Treat analytics as optional support, not a replacement for safe sleep guidance."
+      },
+      {
+        "heading": "Keep camera power and cord placement in the decision",
+        "body": "A local radio link still needs a powered camera; a charged parent unit does not power it remotely. Match the exact model’s supplied adapters and battery instructions rather than borrowing a similarly shaped charger. Follow the mount instructions and keep cords at least three feet from any part of the safe sleep environment and out of reach, as CPSC advises. Never place a monitor inside or on a crib edge. No camera replaces supervision or establishes a safe-sleep outcome."
+      }
     ],
   },
   {

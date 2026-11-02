@@ -1,7 +1,7 @@
 import data from "../config/reviewed-guide-content.json";
 import type { Guide, SiteKey } from "./types";
 
-type PageRepair = Pick<Guide,"dek"|"quickAnswer"|"sections"|"comparisonTable"|"searchQuestion"> & Partial<Pick<Guide,"title"|"updatedAt"|"editorialMethod"|"decisionLayout"|"decisionPurchase"|"communityEvidence"|"curatedFamilyHub"|"relatedGuides"|"relatedProducts"|"relatedRoundups"|"image"|"imageAlt">>;
+type PageRepair = Pick<Guide,"dek"|"quickAnswer"|"sections"|"comparisonTable"|"searchQuestion"> & Partial<Pick<Guide,"title"|"updatedAt"|"editorialMethod"|"decisionLayout"|"decisionPurchase"|"communityEvidence"|"governance"|"curatedFamilyHub"|"relatedGuides"|"relatedGuidePolicy"|"relatedProducts"|"relatedRoundups"|"image"|"imageAlt">>;
 const families = data as Record<string,{sources:NonNullable<Guide["sources"]>;pages:Record<string,PageRepair>}>;
 const pages = new Map(Object.entries(families).flatMap(([key, family]) =>
   Object.entries(family.pages).map(([slug, page]) => [`${key.split(":")[0]}:${slug}`, {...page, sources:family.sources}] as const),

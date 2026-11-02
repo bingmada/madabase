@@ -1,6 +1,6 @@
 {
-  "at": "2026-10-25T23:39:11.864Z",
-  "status": "modified_awaiting_checks",
+  "at": "2026-10-26T06:46:56.766Z",
+  "status": "passed_local",
   "pages": [
     {
       "key": "baby:travel-stroller-for-small-car-guide",
@@ -875,6 +875,11 @@
             "note": "Dry 2–15mm food, original power supply and emergency alkaline-battery mode. Battery operation continues schedules while disabling Wi-Fi and some controls."
           },
           {
+            "name": "PETLIBRO Granary 2 series",
+            "url": "https://petlibro.com/products/granary-2-series",
+            "note": "A newer series, separate from the linked PLAF103. Compare the exact model and required feature; its specifications do not replace the older model's instructions."
+          },
+          {
             "name": "PETLIBRO portion-size explanation",
             "url": "https://petlibro.com/pages/how-much-is-in-one-feeding-portion-plaf001-002-101-102-plaf003-004-plaf005-006-103-203-plaf008-plaf107-plaf108-plaf301",
             "note": "Portions are volumetric, with food-dependent variation; the table does not promise a fixed gram or calorie amount."
@@ -883,6 +888,11 @@
             "name": "PETLIBRO One RFID PLAF301 support",
             "url": "https://petlibro.com/pages/how-the-one-rfid-pet-feeder-works-plaf301",
             "note": "Exact model's collar binding, lid-mode and operating instructions. A dedicated RFID tag is not evidence of implanted-microchip support."
+          },
+          {
+            "name": "PETLIBRO One RFID manual V0005",
+            "url": "https://cdn.shopify.com/s/files/1/0252/5197/1119/files/Petlibro-AF301-3L-_US_DE_IT_FR_ES.pdf?v=1774007057",
+            "note": "English instructions retain Wi-Fi in battery mode, conflicting with product/support wording. Verify the received revision; no universal offline promise."
           },
           {
             "name": "PETLIBRO Granary PLAF103 cleaning",
@@ -966,8 +976,12 @@
             "body": "A timed release does not ensure that the intended pet eats it. Observe competition, approach and access before buying more scheduling features. The One RFID model uses its documented collar-tag and reader system; do not infer implanted-microchip compatibility from the word RFID. Check the exact model's identifier limit, required accessories and lid behavior. If the intended pet cannot use the system comfortably under its instructions, keep the access result unresolved."
           },
           {
+            "heading": "Compare a newer series without mixing specifications",
+            "body": "PETLIBRO's newer Granary 2 series adds weighing and model-specific camera or access options. It is separate from PLAF103 and One RFID PLAF301. Compare it when those functions solve the actual job; do not transfer its battery behavior, food limits or features to either older listing."
+          },
+          {
             "heading": "Check the saved schedule and each failure state",
-            "body": "Distinguish internet loss, local-network failure and loss of normal power. PLAF103 documentation describes an emergency alkaline-battery mode that retains meal schedules while disabling Wi-Fi and some controls; it is not a promise of normal app behavior or indefinite battery life. Follow the exact instructions when checking the clock, saved meals and recovery. Keep someone able to respond when food does not dispense or the pet does not eat."
+            "body": "Distinguish internet loss, local-network failure and loss of normal power. PLAF103 documentation retains meal schedules while disabling Wi-Fi and some controls in emergency battery mode. Do not transfer that rule to One RFID: its V0005 manual retains Wi-Fi, unlike product/support wording, so the received revision needs confirmation. Follow the applicable instructions when checking the clock, saved meals and recovery. No indefinite runtime or universal remote visibility is established; keep someone able to respond to missed or uneaten meals."
           },
           {
             "heading": "Read alerts as signals rather than meal confirmation",
@@ -980,7 +994,7 @@
         ]
       },
       "beforeSha256": "aeeceb575349317cd00ec7718ec3b98da60f727f438a82538354e6d837c2f6d6",
-      "afterSha256": "8511bd5fb6e629491f45c1449c6a8f426a330b9eddfacd2ccddadf66c59545e5"
+      "afterSha256": "497b5b073d43601734e1d599b97479b37b9999e2b48d183eaa0b1bfbe72bbe55"
     },
     {
       "key": "baby:ubbi-steel-diaper-pail",
@@ -1095,6 +1109,8 @@
       "after": {
         "site": "baby",
         "slug": "ubbi-steel-diaper-pail",
+        "purchaseCheck": "Confirm the white model, standard-bag fit and dry-cloth-only care suit your routine. Compare real refill costs and keep a working pail when replacement adds no useful benefit.",
+        "scores": [],
         "updatedAt": "October 26, 2026",
         "researchNote": "Ubbi's current product page and complete diaper-pail FAQ reviewed October 26, 2026. We have not tested odor, capacity, bag yield or cleaning. The historical white Amazon ASIN and its retailer observation date are preserved; current seller, stock, delivered version and returns are separate checks.",
         "asin": "B00821FLT4",
@@ -1159,20 +1175,6 @@
         "whyItMatters": "Consider Ubbi when standard-bag flexibility solves a real refill problem and its dry-cloth care routine suits the household. Compare actual annual consumables and the cost of replacing a working pail; no universal savings or odor-elimination result has been measured here.",
         "priceBand": "$$",
         "rating": 0,
-        "scores": [
-          {
-            "label": "Decision clarity",
-            "value": 9
-          },
-          {
-            "label": "Setup fit",
-            "value": 8
-          },
-          {
-            "label": "Ongoing ownership",
-            "value": 8
-          }
-        ],
         "editorialSections": [
           {
             "heading": "The cost advantage is bag flexibility",
@@ -1201,7 +1203,7 @@
         ]
       },
       "beforeSha256": "6d33b32032f8b2816d573e01fc7e1664ed40f18c6beabd167f3b0e512bd99d90",
-      "afterSha256": "602e0de7a1b2862afbaa28f4dd55c1c01d2c32e3b2210461881485303a651235"
+      "afterSha256": "c7256ea6a31af8af90a6883b5ca9d04db884baea117c8df3eb60d926fa7b856b"
     },
     {
       "key": "baby:momcozy-mw05-portable-milk-warmer",
@@ -1322,6 +1324,8 @@
       "after": {
         "site": "baby",
         "slug": "momcozy-mw05-portable-milk-warmer",
+        "purchaseCheck": "Identify the received MW05 version and charging package. Included 18V adapters in affected packages must not power other USB-C devices. Warming is optional; confirm direct-contact cleaning before choosing this warmer.",
+        "scores": [],
         "updatedAt": "October 26, 2026",
         "researchNote": "Momcozy's MW05 specifications, operating and cleaning pages, exact adapter warning and current CDC feeding guidance reviewed October 26, 2026. No physical warming, charging, battery or microbiological test. The historical Amazon identity and retailer observation date are unchanged; the actual package, adapter and received version still require confirmation.",
         "asin": "B0DKHCWJ5G",
@@ -1412,20 +1416,6 @@
         "whyItMatters": "Consider MW05 only when warming away from an outlet solves a real task and the exact adapter, liquid-transfer and cleaning routine are understood. Identify any adapter covered by the manufacturer warning before sharing travel charging equipment. Keep a working unwarmed or warm-water routine when extra equipment adds no benefit.",
         "priceBand": "$$",
         "rating": 0,
-        "scores": [
-          {
-            "label": "Decision clarity",
-            "value": 9
-          },
-          {
-            "label": "Setup fit",
-            "value": 8
-          },
-          {
-            "label": "Ongoing ownership",
-            "value": 8
-          }
-        ],
         "editorialSections": [
           {
             "heading": "It warms liquid inside its own chamber",
@@ -1462,29 +1452,1777 @@
         ]
       },
       "beforeSha256": "ed04f38f5cef30557c13ce847c4e45e4783591c4e43f5cca2e03737aad6eaf33",
-      "afterSha256": "91b282882de39440a4ce849876d0079539f301fcd1d2d81196e2baa9c536b87e"
+      "afterSha256": "dea74b6561fc0a8e93f237cac6a97ada49bc3135dac22e22cc4f74622a56243f"
+    },
+    {
+      "key": "baby:baby-jogger-city-tour-2-stroller",
+      "kind": "product",
+      "before": {
+        "site": "baby",
+        "slug": "baby-jogger-city-tour-2-stroller",
+        "asin": "B0CN79NZ8J",
+        "amazonTitle": "Baby Jogger City Tour 2 Ultra-Compact Travel Stroller with Belly Bar",
+        "updatedAt": "October 8, 2026",
+        "evidenceMode": "official-spec",
+        "researchNote": "Official-spec travel-stroller guide using Baby Jogger documentation and the exact Amazon listing; this is not a hands-on fold, carry, wheel, comfort, or airline-fit test.",
+        "sources": [
+          {
+            "name": "Baby Jogger City Tour 2 stroller",
+            "url": "https://www.babyjogger.com/strollers/shop-all-strollers/compact-and-lightweight/baby-jogger-city-tour-2-ultra-compact-travel-stroller/SAP_2081849.html",
+            "note": "Official weight, fold, recline, calf support, travel-system, recommended-use, and accessory reference."
+          },
+          {
+            "name": "Amazon listing B0CN79NZ8J",
+            "url": "https://www.amazon.com/dp/B0CN79NZ8J",
+            "note": "Exact current variant, included belly bar, seller, price, stock, and return terms."
+          }
+        ],
+        "name": "Baby Jogger City Tour 2 Stroller",
+        "brand": "Baby Jogger",
+        "category": "travel",
+        "image": "/images/affiliate/baby-travel-stroller-realistic.webp",
+        "summary": "A compact travel stroller for families who need a smaller fold without giving up everyday errand usability.",
+        "verdict": "City Tour 2 is a practical travel-stroller pick when storage and car-trunk space matter, but the stroller still needs to feel useful outside the airport.",
+        "whyItMatters": "Travel strollers are often bought for one trip, then used for errands every week. Fold size, recline, basket access, and wheel behavior all matter.",
+        "bestFor": "Families balancing travel and daily errands",
+        "priceBand": "$$",
+        "rating": 4.4,
+        "scores": [
+          {
+            "label": "Fold size",
+            "value": 9
+          },
+          {
+            "label": "Maneuvering",
+            "value": 8
+          },
+          {
+            "label": "Storage",
+            "value": 6
+          }
+        ],
+        "pros": [
+          "Compact fold for small cars and apartments",
+          "More everyday-friendly than ultra-minimal umbrella strollers",
+          "Good fit for travel-stroller comparisons"
+        ],
+        "cons": [
+          "Basket space is limited",
+          "Rough sidewalks may still favor a larger stroller"
+        ],
+        "specs": {
+          "ASIN": "B0CN79NZ8J",
+          "Product type": "Ultra-compact travel stroller",
+          "Color": "Eco Black",
+          "Included accessory": "Belly bar",
+          "Use case": "Errands and travel",
+          "Link status": "Amazon affiliate link verified July 16, 2026"
+        },
+        "evidence": [
+          "Confirm ASIN B0CN79NZ8J, Eco Black color, belly bar, and any other included accessories on Amazon",
+          "Compare folded dimensions against trunk, hallway, and airline storage needs; carry-on rules vary",
+          "Check age, weight, recline, basket access, and car-seat adapter compatibility"
+        ],
+        "alternatives": [
+          "Choose Summer 3Dlite if price and simplicity matter more.",
+          "Choose a full-size stroller if rough sidewalks are daily reality."
+        ],
+        "offers": [
+          {
+            "merchant": "Amazon US",
+            "url": "https://www.amazon.com/dp/B0CN79NZ8J?tag=madababy-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+            "label": "Check price on Amazon",
+            "priceNote": "Confirm ASIN B0CN79NZ8J, Eco Black variant, belly bar, seller, live price, and availability."
+          }
+        ]
+      },
+      "after": {
+        "site": "baby",
+        "slug": "baby-jogger-city-tour-2-stroller",
+        "purchaseCheck": "Confirm the selected Eco Black package, included parts, child instructions and complete folded loading path. A family measurement does not prove car or airline fit; keep an existing suitable stroller.",
+        "asin": "B0CN79NZ8J",
+        "amazonTitle": "Baby Jogger City Tour 2 Ultra-Compact Travel Stroller with Belly Bar",
+        "seoTitle": "Baby Jogger City Tour 2: Fold, Eco Version and Fit Checks",
+        "updatedAt": "October 26, 2026",
+        "evidenceMode": "official-spec",
+        "researchNote": "Manufacturer documentation and model-family pages reviewed October 26, 2026. The ASIN and Eco Black/belly-bar package are historical retailer references, not a fresh inspection of seller, stock or supplied parts. No physical fold, lift, child-fit, wheel, comfort or airline test.",
+        "sources": [
+          {
+            "name": "Baby Jogger City Tour 2 specifications",
+            "url": "https://help.babyjogger.com/s/article/CITY-TOUR-2-SPECIFICATIONS",
+            "note": "Separates folded stroller, shipping box, seat load and other load figures. Match the actual version and regional instructions before applying a measurement."
+          },
+          {
+            "name": "Baby Jogger current City Tour 2 collection",
+            "url": "https://www.babyjogger.com/strollers/shop-all-strollers/compact-and-lightweight/city-tour-2/",
+            "note": "Manufacturer collection currently includes City Tour 2 Eco. This does not establish the exact Amazon ASIN's configuration, seller or availability."
+          },
+          {
+            "name": "Baby Jogger discontinued products",
+            "url": "https://www.babyjogger.com/discontinued-products.html",
+            "note": "Distinguishes the original City Tour from City Tour 2. An expired product URL or a different stroller family's newer generation does not establish discontinuation of this selected version."
+          },
+          {
+            "name": "American Airlines stroller guidance",
+            "url": "https://www.aa.com/web/i18n/travel-info/special-assistance/traveling-children.html",
+            "note": "One carrier's check-in and gate-check guidance; confirm the operating carrier and actual trip."
+          },
+          {
+            "name": "CPSC stroller restraint alert",
+            "url": "https://www.cpsc.gov/safety-education/safety-guides/kids-and-babies/infants-strollers-must-be-properly-secured-all-times",
+            "note": "Harness use and supervision, including with a reclined seat. Not individual model or recall clearance."
+          },
+          {
+            "name": "Amazon listing B0CN79NZ8J",
+            "url": "https://www.amazon.com/dp/B0CN79NZ8J",
+            "note": "Historical retailer identity reference. Recheck the exact version, supplied belly bar/bag, seller, live price, stock and returns at the retailer."
+          }
+        ],
+        "name": "Baby Jogger City Tour 2 Stroller",
+        "brand": "Baby Jogger",
+        "category": "travel",
+        "image": "/images/affiliate/baby-travel-stroller-realistic.webp",
+        "imageAlt": "Editorial compact-stroller scene; not an exact City Tour 2 configuration",
+        "summary": "Compare this City Tour 2 reference only after matching the selected Eco Black package, the child's instructions and the actual folded loading path. A small fold does not prove car or cabin fit.",
+        "verdict": "City Tour 2 remains a model family to compare for limited storage: the current manufacturer collection lists City Tour 2 Eco. Confirm that the retailer's selected version and supplied parts match the instructions you use; no replacement is needed if the existing stroller already meets the job.",
+        "whyItMatters": "Fold dimensions, carton dimensions and child-seat limits answer different questions. A published model-family measurement does not settle the received package, the caregiver's lift or the child's suitability.",
+        "bestFor": "A measured small-storage routine with the exact child and model fit confirmed",
+        "priceBand": "$$",
+        "rating": 0,
+        "scores": [],
+        "pros": [
+          "Manufacturer support separates folded dimensions from the shipping box",
+          "Current collection provides a City Tour 2 Eco comparison reference",
+          "Fold, carry and accessory questions can be checked against the exact regional instructions"
+        ],
+        "cons": [
+          "No physical loading, wheel, comfort or child-fit test is available here",
+          "The support-table model and selected Eco bundle are not assumed dimensionally identical",
+          "Airline carriage and actual bin space require a separate trip-specific check"
+        ],
+        "specs": {
+          "ASIN": "B0CN79NZ8J",
+          "Product type": "Compact travel stroller reference",
+          "Historical selected package": "Eco Black with belly bar; recheck supplied parts",
+          "Model-family fold reference": "21.6 × 16.9 × 6.8 in in the City Tour 2 support table; confirm the selected version",
+          "Current manufacturer collection": "City Tour 2 Eco listed; exact retailer configuration still needs checking",
+          "Link status": "Amazon affiliate link verified July 16, 2026; no fresh offer inspection in this document review"
+        },
+        "evidence": [
+          "Match ASIN B0CN79NZ8J, the selected version, color, belly bar, bag and any other supplied accessories before using their dimensions",
+          "Measure the car opening, usable storage, loading motion and remaining luggage room; resolve a tight result with an actual fit check",
+          "Read the exact seat and accessory instructions for child suitability, restraint, load limits and approved combinations; near-flat recline does not establish newborn approval"
+        ],
+        "alternatives": [
+          "Keep the existing stroller when it remains suitable for the child and already fits the routine.",
+          "Compare Summer 3Dlite only with its own current instructions, complete folded dimensions and retailer package; no comfort or value ranking is established here.",
+          "If daily handling or storage is still unresolved, compare another documented configuration before choosing a replacement."
+        ],
+        "editorialSections": [
+          {
+            "heading": "Current family, selected version and old links",
+            "body": "The previous manufacturer product URL has expired, but the current official collection lists City Tour 2 Eco. The discontinued-products page identifies the original City Tour as a predecessor. Neither an expired URL nor another Baby Jogger family's newer generation proves this selected City Tour 2 package is discontinued. This review has not established a like-for-like successor to ASIN B0CN79NZ8J or a fresh Amazon offer."
+          },
+          {
+            "heading": "Use the right fold measurement",
+            "body": "The City Tour 2 support table lists a 21.6 × 16.9 × 6.8 inch fold separately from its shipping box. Treat it as a named-model reference until the regional version, included parts and folding instructions agree with the selected package. Measure the complete package you intend to load, including a bag and any attached parts. All three dimensions, the trunk opening, loading movement and hatch closure matter; a volume or floor-plan comparison alone is insufficient."
+          },
+          {
+            "heading": "Check the child and the adult's routine",
+            "body": "Follow the exact seat's age, developmental, height and weight requirements and approved accessory combinations. A belly bar or reclined seat does not replace the harness or supervision. With the child safely out and supervised, check the documented fold, latch, carry point and lift. Handling, canopy and basket access need a practical check on the intended routes; no measured ride or maneuvering result is claimed here."
+          },
+          {
+            "heading": "Keep a separate flight and no-buy decision",
+            "body": "Check the operating carrier's current cabin, gate-check and ticket-counter rules for the trip and keep a permitted fallback. American Airlines is one policy example, not approval by another carrier or a guarantee of bin space. Pause when the child's suitability, regional instructions, selected package or physical loading path remains unknown. Keep a suitable existing stroller when it already meets the need."
+          }
+        ],
+        "offers": [
+          {
+            "merchant": "Amazon US",
+            "url": "https://www.amazon.com/dp/B0CN79NZ8J?tag=madababy-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+            "label": "Check price on Amazon",
+            "priceNote": "Confirm ASIN B0CN79NZ8J, Eco Black variant, belly bar, seller, live price, and availability."
+          }
+        ]
+      },
+      "beforeSha256": "f23951364bea7be7922ced4015aab3b6ce728fa9eea41923a1aee4d3a7bff7dc",
+      "afterSha256": "6e7c481e737aa9ba5a7a150a6c39ce7f19f2f60bb699358c9508e36ca806c5a9"
+    },
+    {
+      "key": "baby:summer-3dlite-convenience-stroller",
+      "kind": "product",
+      "before": {
+        "site": "baby",
+        "slug": "summer-3dlite-convenience-stroller",
+        "asin": "B0D5BGKNBX",
+        "amazonTitle": "Summer by Ingenuity 3Dlite Convenience Stroller",
+        "updatedAt": "October 8, 2026",
+        "evidenceMode": "official-spec",
+        "researchNote": "Official-instruction and exact-listing guide. The current product page is not reliably available from the manufacturer, so this page does not claim hands-on fold, wheel, comfort, durability, or airline-fit findings.",
+        "sources": [
+          {
+            "name": "Summer Infant 3Dlite instruction manual",
+            "url": "https://m.media-amazon.com/images/I/C11b2ZSi3ES.pdf",
+            "note": "Manufacturer-branded instruction and safety reference for the 3Dlite family; match the model and current manual before use."
+          },
+          {
+            "name": "Amazon listing B0D5BGKNBX",
+            "url": "https://www.amazon.com/dp/B0D5BGKNBX",
+            "note": "Exact current Summer by Ingenuity variant, limits, seller, price, stock, and return terms."
+          }
+        ],
+        "name": "Summer 3Dlite Convenience Stroller",
+        "brand": "Summer",
+        "category": "travel",
+        "image": "/images/affiliate/baby-summer-3dlite-convenience-stroller.webp",
+        "summary": "A budget-friendly lightweight stroller for errands, grandparents' cars, and simple travel needs.",
+        "verdict": "Summer 3Dlite is the value comparison pick: not the most polished stroller, but a sensible lightweight option when budget and simplicity lead.",
+        "whyItMatters": "A second stroller can be useful if it folds easily, stores easily, and does not make short errands feel like a gear project.",
+        "bestFor": "Budget lightweight stroller needs",
+        "priceBand": "$",
+        "rating": 4.2,
+        "scores": [
+          {
+            "label": "Budget fit",
+            "value": 9
+          },
+          {
+            "label": "Weight",
+            "value": 8
+          },
+          {
+            "label": "Premium feel",
+            "value": 5
+          }
+        ],
+        "pros": [
+          "Lower cost than premium travel strollers",
+          "Easy to keep as a secondary stroller",
+          "Useful for quick errands"
+        ],
+        "cons": [
+          "Less refined than premium compact strollers",
+          "Comfort and wheel feel have limits"
+        ],
+        "specs": {
+          "ASIN": "B0D5BGKNBX",
+          "Product type": "Lightweight stroller",
+          "Use case": "Budget travel",
+          "Link status": "Amazon affiliate link verified July 16, 2026"
+        },
+        "evidence": [
+          "Confirm ASIN B0D5BGKNBX, the current Summer by Ingenuity 3Dlite variant, color, and weight limit",
+          "Compare folded size to car trunk or closet space",
+          "Use as a value lightweight stroller rather than an all-terrain stroller"
+        ],
+        "alternatives": [
+          "Choose Baby Jogger City Tour 2 for a more compact travel-first setup.",
+          "Choose a full-size stroller if storage and suspension are priorities."
+        ],
+        "offers": [
+          {
+            "merchant": "Amazon US",
+            "url": "https://www.amazon.com/dp/B0D5BGKNBX?tag=madababy-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+            "label": "Check price on Amazon",
+            "priceNote": "Confirm ASIN B0D5BGKNBX, variant, seller, live price, and availability."
+          }
+        ]
+      },
+      "after": {
+        "site": "baby",
+        "slug": "summer-3dlite-convenience-stroller",
+        "purchaseCheck": "The exact purchase remains paused until the selected model and applicable manual are matched. Do not borrow child limits or folded dimensions from another 3Dlite SKU.",
+        "asin": "B0D5BGKNBX",
+        "amazonTitle": "Summer by Ingenuity 3Dlite Convenience Stroller",
+        "seoTitle": "Summer 3Dlite: Model, Child Fit and Fold Checks",
+        "updatedAt": "October 26, 2026",
+        "evidenceMode": "official-spec",
+        "researchNote": "Current Kids2 model pages and the linked 2025 manual reviewed October 26, 2026, alongside the older family manual. Exact instructions applicable to historical ASIN B0D5BGKNBX remain unresolved, so its purchase is paused. No physical fold, handling, comfort, durability or airline test; no fresh seller, stock or return observation.",
+        "sources": [
+          {
+            "name": "Kids2 3Dlite SKU 32843-000",
+            "url": "https://www.kids2.com/products/32843-000-summer-by-ingenuity-3dlite-convenience-stroller-jet-black",
+            "note": "Current Jet Black family reference and original manual route; not established as the selected historical ASIN."
+          },
+          {
+            "name": "Kids2 3Dlite SKU 32303-000",
+            "url": "https://www.kids2.com/products/32303-000-summer-by-ingenuity-3dlite-convenience-stroller",
+            "note": "A separate current SKU. Do not transfer its age field, dimensions, parts or instructions to another selection."
+          },
+          {
+            "name": "Kids2 21930/32843 manual, June 2025",
+            "url": "https://images.salsify.com/image/upload/s--iQDrVPv_--/woyvtadtahb5aekcoj0d.pdf",
+            "note": "English instructions and diagrams read in full. Listed model scope does not establish applicability to B0D5BGKNBX."
+          }
+        ],
+        "name": "Summer 3Dlite Convenience Stroller",
+        "brand": "Summer",
+        "category": "travel",
+        "image": "/images/affiliate/baby-travel-stroller-realistic.webp",
+        "imageAlt": "Editorial compact-stroller scene; not an exact Summer 3Dlite product photo",
+        "summary": "A Summer/Ingenuity 3Dlite family reference with the exact ASIN purchase paused while model and manual applicability are checked. Current family pages do not establish the selected version's child limits or complete fold.",
+        "verdict": "Compare the documented 3Dlite family only after the received model, child requirements and actual loading routine are established. The historical B0D5BGKNBX purchase remains paused. Keep a suitable existing stroller instead of buying a second one for an unverified price or comfort advantage.",
+        "whyItMatters": "A family name can cover different colors, SKUs and instructions. Child suitability, fold procedure and supplied parts must match the actual selection before a compact or lightweight label can help the decision.",
+        "bestFor": "Checking exact 3Dlite instructions before any new purchase",
+        "priceBand": "$",
+        "rating": 0,
+        "scores": [],
+        "pros": [
+          "Current Kids2 family pages provide named SKU references",
+          "Manufacturer-linked instructions distinguish harness, fold and care checks",
+          "Existing suitable gear remains a valid alternative"
+        ],
+        "cons": [
+          "Exact ASIN-to-manual applicability is unresolved; purchase paused",
+          "No verified complete fold for the selected retailer version",
+          "No physical comfort, wheel, durability or value ranking"
+        ],
+        "specs": {
+          "ASIN": "B0D5BGKNBX",
+          "Product type": "Historical 3Dlite family reference",
+          "Model and manual": "Unresolved for the selected ASIN; 21930/32843 manual is not automatically applicable",
+          "Folded dimensions": "Obtain all 3 measurements for the exact version and attached parts",
+          "Child limits": "Use the matched regional manual; no limits transferred from another SKU",
+          "Link status": "Historical July 16, 2026 identity; documentation review has not refreshed retailer availability"
+        },
+        "evidence": [
+          "Match the received label, SKU, current regional instructions and supplied parts; a family-name match is insufficient",
+          "Check the child's age, development, height and weight against that exact manual",
+          "Measure the complete fold, loading movement, trunk opening and daily carry routine without a child in the stroller"
+        ],
+        "alternatives": [
+          "Keep a suitable existing stroller when it already fits the child's needs and real loading routine.",
+          "Compare City Tour 2 only against its own selected version and instructions; this page does not establish a comfort or price winner."
+        ],
+        "editorialSections": [
+          {
+            "heading": "Current family pages do not settle the historical ASIN",
+            "body": "Kids2 currently lists 3Dlite SKUs including 32843-000 and 32303-000. The linked 2025 manual identifies 21930/32843, while the older December 2015 family document lists earlier model codes. The retailer reference has not been reconciled to that scope. This is a documentation gap, not proof that the whole family is discontinued, unsafe or replaced by a particular newer model. The exact purchase stays paused."
+          },
+          {
+            "heading": "Use the matching instructions before applying limits",
+            "body": "Read the actual label and regional manual for child suitability, restraint, permitted accessories, child load and separate basket or cup-holder loads. Do not transfer one SKU's age field or another manual's numbers. Recline is not newborn approval or permission to leave a child unattended. Pause when those requirements cannot be established."
+          },
+          {
+            "heading": "Check the complete fold and adult routine",
+            "body": "Measure all three dimensions of the actual folded version, including the bag and anything that remains attached. With the child safely out and supervised, follow that model's fold, latch and carry instructions and check the loading path, hatch closure and adult lift. No listed footprint, shipping carton or lightweight label proves vehicle fit or easy handling."
+          },
+          {
+            "heading": "Care, flights and keeping the current stroller",
+            "body": "Use the matching manual's cleaning and inspection rules and keep children clear of assembly and folding. Check the operating carrier's current stroller rules separately; no cabin acceptance is established here. Retain a suitable existing stroller when it already solves the task, and compare another documented model only for a specific remaining need."
+          }
+        ],
+        "offers": []
+      },
+      "beforeSha256": "b347328e38247f221bb8fc4c5716dd1bfd851cfbb1e68d4a804dfc335b7de5f7",
+      "afterSha256": "4ad456aac52fb9467beb63753cb56bb33136ef509342fc8db1de22acd52d170e"
+    },
+    {
+      "key": "baby:infant-optics-dxr-8-pro",
+      "kind": "product",
+      "before": {
+        "site": "baby",
+        "slug": "infant-optics-dxr-8-pro",
+        "asin": "B08FF4GV5C",
+        "amazonTitle": "Infant Optics DXR-8 PRO Baby Monitor",
+        "seoTitle": "Infant Optics DXR-8 Pro Guide: Range, Cameras & Safe Placement",
+        "updatedAt": "June 30, 2026",
+        "sources": [
+          {
+            "name": "DXR-8 Pro user manual",
+            "url": "https://fccid.io/2AAAM-DXR8PPZ-ABU/User-Manual/Users-Manual-4799058.pdf",
+            "note": "Setup, safety placement, camera pairing, radio interference, and operating guidance."
+          }
+        ],
+        "editorialSections": [
+          {
+            "heading": "Why a dedicated monitor still fits",
+            "body": "The DXR-8 Pro uses a separate parent unit rather than household Wi-Fi or a phone app. That reduces phone dependency, but it also means range and 2.4GHz interference should be tested in the actual home."
+          },
+          {
+            "heading": "Camera placement is a safety check",
+            "body": "The manual says to keep the unit and cord at least 3 feet (0.9m) from the crib and out of reach. Secure cords and never place the camera or adapter inside the sleep space."
+          },
+          {
+            "heading": "Know the system limits",
+            "body": "The parent unit can pair with multiple cameras, but this is a convenience monitor—not a supervision substitute or medical device. Test alerts, sound, night view, charging, and camera switching before relying on it overnight."
+          }
+        ],
+        "name": "Infant Optics DXR-8 PRO Baby Monitor",
+        "brand": "Infant Optics",
+        "category": "sleep",
+        "image": "/images/affiliate/baby-infant-optics-dxr-8-pro.webp",
+        "summary": "A dedicated baby monitor for parents who want a separate screen instead of relying on a phone app overnight.",
+        "verdict": "Infant Optics DXR-8 PRO is a strong starting point for parents who want local monitoring, a parent unit, and less phone dependency at night.",
+        "whyItMatters": "Baby monitors are partly about reassurance and partly about friction. A dedicated parent unit can be easier at 2 a.m. than opening an app, checking Wi-Fi, and managing phone battery.",
+        "bestFor": "Parents who want a non-Wi-Fi parent unit",
+        "priceBand": "$$",
+        "rating": 4.6,
+        "scores": [
+          {
+            "label": "Night video",
+            "value": 9
+          },
+          {
+            "label": "Parent unit",
+            "value": 9
+          },
+          {
+            "label": "Ease of use",
+            "value": 8
+          }
+        ],
+        "pros": [
+          "Dedicated screen avoids phone dependence",
+          "Good fit for overnight monitoring",
+          "Interchangeable lens ecosystem is useful for different rooms"
+        ],
+        "cons": [
+          "Not ideal if remote app access is the main need",
+          "Parent-unit battery and range still need household checking"
+        ],
+        "specs": {
+          "ASIN": "B08FF4GV5C",
+          "Product type": "Baby monitor",
+          "Use case": "Local overnight monitoring",
+          "Link status": "Amazon affiliate link verified July 16, 2026"
+        },
+        "evidence": [
+          "Confirm ASIN B08FF4GV5C, the DXR-8 PRO bundle contents, lens options, and parent-unit details on Amazon",
+          "Compare local monitor versus Wi-Fi preference",
+          "Check room layout, range needs, and overnight charging routine"
+        ],
+        "alternatives": [
+          "Choose Nanit if app insights and wall-mounted tracking matter more.",
+          "Choose a simpler audio monitor if video adds more anxiety than value."
+        ],
+        "offers": [
+          {
+            "merchant": "Amazon US",
+            "url": "https://www.amazon.com/dp/B08FF4GV5C?tag=madababy-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+            "label": "Check price on Amazon",
+            "priceNote": "Confirm ASIN B08FF4GV5C, bundle contents, seller, live price, and availability."
+          }
+        ]
+      },
+      "after": {
+        "site": "baby",
+        "slug": "infant-optics-dxr-8-pro",
+        "purchaseCheck": "Confirm the non-SS model, actual room coverage, safe cord placement and separate camera/parent-unit power supplies. PRO SS split-screen and dual-audio features belong to a different model.",
+        "asin": "B08FF4GV5C",
+        "amazonTitle": "Infant Optics DXR-8 PRO Baby Monitor",
+        "seoTitle": "Infant Optics DXR-8 Pro Guide: Range, Cameras & Safe Placement",
+        "updatedAt": "October 26, 2026",
+        "evidenceMode": "official-spec",
+        "researchNote": "Current manufacturer product, separate PRO SS model and V3.7 manual reviewed October 26, 2026. No physical range, night-image, audio, battery-duration or security test. The July retailer identity record is not a fresh seller, stock or return inspection.",
+        "sources": [
+          {
+            "name": "Infant Optics DXR-8 PRO",
+            "url": "https://www.infantoptics.com/product/dxr-8-pro",
+            "note": "Current non-SS single-view model; published range does not establish actual room coverage."
+          },
+          {
+            "name": "Infant Optics DXR-8 PRO SS",
+            "url": "https://www.infantoptics.com/product/dxr-8-pro-ss",
+            "note": "Separate split-screen and simultaneous dual-audio model, not the linked non-SS ASIN."
+          },
+          {
+            "name": "DXR-8 PRO manual V3.7",
+            "url": "https://cdn.shopify.com/s/files/1/0780/1408/7346/files/DXR-8-PRO-User-Manual-V3.7.pdf.pdf?v=1788237500",
+            "note": "Current official-support download covering placement, power, pairing, interference and care; match the received unit."
+          },
+          {
+            "name": "Infant Optics current support",
+            "url": "https://www.infantoptics.com/support",
+            "note": "Manufacturer route to model-specific manuals and compatibility information."
+          },
+          {
+            "name": "CPSC monitor cord warning",
+            "url": "https://www.cpsc.gov/s3fs-public/5066.pdf",
+            "note": "Cord distance from every part of the sleep environment and out of reach; never inside or on the crib edge."
+          }
+        ],
+        "editorialSections": [
+          {
+            "heading": "Why a dedicated monitor still fits",
+            "body": "DXR-8 PRO uses a dedicated parent unit rather than a phone app or household Wi-Fi. It is an at-home viewing path, not remote internet access. Check the actual rooms, closed doors, charging and sound while another caregiver is present; a line-of-sight range figure does not prove coverage through walls. A radio-only connection also is not an independently established security guarantee."
+          },
+          {
+            "heading": "Camera placement is a safety check",
+            "body": "Follow the selected camera's installation instructions. CPSC requires monitor cords at least 3 feet from every part of the crib, bassinet, play yard or other sleep environment and out of reach; never put a monitor inside or on the edge of a crib. Keep the camera, cords and small optical parts away from the child. A wider view does not justify moving a cord into reach."
+          },
+          {
+            "heading": "Know the system limits and the newer SS option",
+            "body": "The current non-SS model lists up to four paired cameras and single-view monitoring. The separate DXR-8 PRO SS adds split-screen and simultaneous dual audio for two rooms. Do not transfer those SS functions to ASIN B08FF4GV5C or assume camera/monitor interchangeability from a shared family name. Keep the existing working system when it already meets the required viewing and care routine."
+          },
+          {
+            "heading": "Use the exact power and care instructions",
+            "body": "The V3.7 manual distinguishes camera and monitor adapters, battery care and keeping electronics dry. Use the specified supplied equipment rather than a connector-only substitute. Stop using a swollen, damaged or hard-to-fit battery and follow the manufacturer's replacement route. Camera power, parent-unit charge, sound, reconnection and camera switching all need checking. This is not a medical monitor or a supervision substitute."
+          }
+        ],
+        "name": "Infant Optics DXR-8 PRO Baby Monitor",
+        "brand": "Infant Optics",
+        "category": "sleep",
+        "image": "/images/affiliate/baby-parent-unit-workflow-editorial.svg",
+        "imageAlt": "Editorial diagram of a camera and dedicated parent unit; not an exact DXR-8 PRO product image",
+        "summary": "A non-Wi-Fi parent-unit monitor reference for checking from elsewhere at home. Verify actual room coverage and safe placement; this non-SS model does not gain the newer SS model's split-screen and dual audio.",
+        "verdict": "Compare DXR-8 PRO when a dedicated at-home screen meets the job and the exact bundle, power setup and room checks pass. Compare PRO SS separately if two-room split-screen and simultaneous audio matter. Keep a suitable working monitor rather than upgrading for a newer name alone.",
+        "whyItMatters": "A local screen and remote app access solve different tasks. Decide which rooms and caregivers need access before comparing features, and leave coverage unknown until it has been checked in the actual home.",
+        "bestFor": "At-home parent-unit monitoring after room and placement checks",
+        "priceBand": "$$",
+        "rating": 0,
+        "scores": [],
+        "pros": [
+          "Dedicated screen without a phone-app viewing routine",
+          "Model-specific pairing and power instructions are available",
+          "Manufacturer lists the non-SS model alongside PRO SS"
+        ],
+        "cons": [
+          "No remote internet viewing path",
+          "Actual coverage, sound and parent-unit charge need checking",
+          "Single view; PRO SS split-screen and dual audio are different-model features"
+        ],
+        "specs": {
+          "ASIN": "B08FF4GV5C",
+          "Product type": "DXR-8 PRO non-SS parent-unit monitor",
+          "Published camera support": "Up to 4 cameras; single-view model",
+          "Newer comparison": "PRO SS is separate; no SS feature or accessory compatibility transfer",
+          "Link status": "Amazon affiliate link verified July 16, 2026; no fresh offer inspection in this document review"
+        },
+        "evidence": [
+          "Confirm ASIN B08FF4GV5C, the DXR-8 PRO bundle contents, lens options, and parent-unit details on Amazon",
+          "Compare local monitor versus Wi-Fi preference",
+          "Check room layout, range needs, and overnight charging routine"
+        ],
+        "alternatives": [
+          "Compare Nanit's exact current configuration if remote app access is necessary; the historical Essentials purchase link remains paused.",
+          "Keep a suitable existing monitor, or compare a documented audio-only workflow if video is unnecessary."
+        ],
+        "offers": [
+          {
+            "merchant": "Amazon US",
+            "url": "https://www.amazon.com/dp/B08FF4GV5C?tag=madababy-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+            "label": "Check price on Amazon",
+            "priceNote": "Confirm ASIN B08FF4GV5C, bundle contents, seller, live price, and availability."
+          }
+        ]
+      },
+      "beforeSha256": "a497ee887411c2256d7f501a11bd8fca816bd12767e3f7dd7ed3e3cbe00b64cd",
+      "afterSha256": "0ca6eef8932bd9ef34410927743606d6de13257fd3056bc9a9e5e192c19ecff2"
+    },
+    {
+      "key": "baby:nanit-pro-smart-baby-monitor",
+      "kind": "product",
+      "before": {
+        "site": "baby",
+        "slug": "nanit-pro-smart-baby-monitor",
+        "asin": "B0FMZ3H8SB",
+        "amazonTitle": "Nanit Essentials Smart Baby Monitor with Floor Stand",
+        "seoTitle": "Nanit Essentials Monitor Guide: Floor Stand, Plan & Bundle",
+        "updatedAt": "September 25, 2026",
+        "name": "Nanit Essentials Smart Baby Monitor with Floor Stand",
+        "brand": "Nanit",
+        "category": "sleep",
+        "image": "/images/affiliate/baby-nanit-pro-smart-baby-monitor.webp",
+        "summary": "A current Nanit bundle with the Pro camera, floor stand, Sound + Light Machine, and a trial of the Insights Sleep Plan for app-based nursery monitoring.",
+        "verdict": "Nanit Essentials is the premium smart-monitor comparison point when a full-height stand and connected sleep features justify the larger bundle. Confirm the included trial and ongoing plan cost rather than assuming every insight remains free.",
+        "whyItMatters": "The current Amazon offer is a larger floor-stand bundle, not the older Flex Stand listing. Mount type, subscription boundaries, Wi-Fi reliability, floor space, and privacy comfort all belong in the purchase decision.",
+        "bestFor": "Parents who want a floor-stand smart monitor bundle",
+        "priceBand": "$$$",
+        "rating": 4.4,
+        "scores": [
+          {
+            "label": "Smart features",
+            "value": 9
+          },
+          {
+            "label": "Video setup",
+            "value": 8
+          },
+          {
+            "label": "Budget fit",
+            "value": 5
+          }
+        ],
+        "pros": [
+          "Includes a full-height floor stand",
+          "Strong app-first feature set and remote access",
+          "Bundle includes the Sound + Light Machine"
+        ],
+        "cons": [
+          "Larger and more expensive than a camera-only package",
+          "Some Insights features continue only with a paid plan",
+          "Floor placement and cord routing need planning"
+        ],
+        "specs": {
+          "ASIN": "B0FMZ3H8SB",
+          "Product type": "Smart baby monitor bundle with floor stand",
+          "Included hardware": "Nanit Pro camera, floor stand, Sound + Light Machine",
+          "Service": "Trial of Nanit Insights Sleep Plan; confirm current renewal terms",
+          "Use case": "App-based monitoring",
+          "Link status": "Amazon affiliate link verified July 16, 2026"
+        },
+        "evidence": [
+          "Confirm ASIN B0FMZ3H8SB and the exact floor-stand bundle contents at checkout",
+          "Check the trial length and which Nanit Insights features require a paid plan afterward",
+          "Measure floor space, plan safe cord routing, and compare Wi-Fi privacy comfort against local monitors"
+        ],
+        "alternatives": [
+          "Choose Infant Optics if you want a parent unit and less app dependence.",
+          "Use an audio monitor if sleep data is not helpful for your household."
+        ],
+        "sources": [
+          {
+            "name": "Nanit Pro baby monitor",
+            "url": "https://www.nanit.com/products/nanit-pro-camera?mount=floor-stand",
+            "note": "Official camera, floor-stand, monitoring, and plan positioning."
+          }
+        ],
+        "offers": []
+      },
+      "after": {
+        "site": "baby",
+        "slug": "nanit-pro-smart-baby-monitor",
+        "purchaseCheck": "The historical Essentials purchase remains paused. Match the actual floor-stand bundle, account access and plan renewal terms separately from current camera-only or display options.",
+        "asin": "B0FMZ3H8SB",
+        "amazonTitle": "Nanit Essentials Smart Baby Monitor with Floor Stand",
+        "seoTitle": "Nanit Essentials Monitor Guide: Floor Stand, Plan & Bundle",
+        "updatedAt": "October 26, 2026",
+        "evidenceMode": "official-spec",
+        "researchNote": "Current Nanit configuration, plan, privacy and feature-specific outage documents reviewed October 26, 2026. The Essentials ASIN is a historical bundle reference with its purchase path still paused; no fresh listing, supplied-parts, plan-quote or stock verification. No image, range, outage, security or medical-performance test.",
+        "name": "Nanit Essentials Smart Baby Monitor with Floor Stand",
+        "brand": "Nanit",
+        "category": "sleep",
+        "image": "/images/affiliate/baby-wifi-monitor-workflow-editorial.svg",
+        "imageAlt": "Editorial diagram of a camera, Wi-Fi router and phone app; not an exact Nanit bundle image",
+        "summary": "A historical Nanit Essentials floor-stand bundle reference. Its exact purchase link remains paused; current camera/display choices and Insights terms do not establish this package's contents or renewal offer.",
+        "verdict": "Use this page to compare the floor-stand and account workflow, with the exact historical Essentials purchase path still paused. Confirm any replacement configuration independently. Keep a suitable existing monitor when core viewing already meets the need; extra history, analytics or a connected display are optional.",
+        "whyItMatters": "A camera-only floor-stand configuration, a package with a connected display and the historical Essentials bundle are different selections. A current family page cannot restore an unresolved ASIN or establish its supplied hardware and trial.",
+        "bestFor": "Comparing the floor-stand app workflow while exact bundle purchase is paused",
+        "priceBand": "$$$",
+        "rating": 0,
+        "scores": [],
+        "pros": [
+          "Current manufacturer documents distinguish core viewing from paid history",
+          "Named caregiver permissions and required MFA are documented",
+          "Current camera, mount and optional display choices can be compared separately"
+        ],
+        "cons": [
+          "Historical Essentials ASIN purchase remains paused",
+          "Current bundle contents and renewal quote are unresolved",
+          "Safe mount, cords, account and network paths need separate checks"
+        ],
+        "specs": {
+          "ASIN": "B0FMZ3H8SB",
+          "Historical bundle": "Pro camera, floor stand and Sound + Light Machine reference; recheck any replacement's own contents",
+          "Service": "Historical Insights Sleep trial reference; no current trial duration or renewal amount established",
+          "Current choices": "Manufacturer separates mounts and camera-only/camera-plus-display configurations",
+          "Link status": "Historical July 16, 2026 identity; purchase paused after September 25, 2026 observation, not reverified here"
+        },
+        "evidence": [
+          "Confirm ASIN B0FMZ3H8SB and the exact floor-stand bundle contents at checkout",
+          "Check the trial length and which Nanit Insights features require a paid plan afterward",
+          "Measure floor space, plan safe cord routing, and compare Wi-Fi privacy comfort against local monitors"
+        ],
+        "alternatives": [
+          "Compare a documented local parent-unit system when at-home viewing is sufficient.",
+          "Keep suitable current gear when paid history or extra hardware is unnecessary; pause if safe placement or required functionality is unknown."
+        ],
+        "editorialSections": [
+          {
+            "heading": "The historical bundle is not the current store selection",
+            "body": "The old Nanit Pro URL redirects to a current monitor page that separates mount and camera-only/camera-plus-display choices. It does not identify the supplied parts of historical Essentials ASIN B0FMZ3H8SB. Do not assume an added display or the Sound + Light Machine is included with a different selection. A connected display also does not turn an account-based Wi-Fi system into a local radio monitor."
+          },
+          {
+            "heading": "Separate core viewing, paid history and the renewal quote",
+            "body": "Nanit retains core live view, background audio and alerts without Insights. Event clips, continuous video history, analytics and caregiver entitlements need their own plan check. The older support comparison is not the actual current renewal bill. Record the selected configuration, trial end, billing period and renewal quote before paying for a feature; keep core viewing alone when it meets the task."
+          },
+          {
+            "heading": "Check the actual account and outage path",
+            "body": "Nanit requires multi-factor authentication. Use named caregivers, review their permissions and remove obsolete access. Its Breathing Motion outage article describes particular camera-power and local-network states, not a guarantee that all video, saved footage and remote alerts work offline. No security or clinical guarantee follows from these manufacturer descriptions."
+          },
+          {
+            "heading": "Keep placement and purchase holds separate",
+            "body": "Follow the exact mount instructions. Keep cords at least 3 feet from every part of the sleep environment and out of reach, and never place a monitor inside or on the crib edge. Monitoring does not replace direct care or safe sleep practices. The exact retailer purchase remains paused until identity and terms are verified; a current manufacturer page alone does not remove that hold."
+          }
+        ],
+        "sources": [
+          {
+            "name": "Nanit current monitor configurations",
+            "url": "https://www.nanit.com/products/smart-baby-monitor",
+            "note": "Mount and optional display choices; not verification of the historical Essentials bundle."
+          },
+          {
+            "name": "Nanit Insights FAQ",
+            "url": "https://www.nanit.com/products/insights-plan",
+            "note": "Core features without Insights; verify the actual selected plan and current quote."
+          },
+          {
+            "name": "Nanit Insights plan comparison",
+            "url": "https://support.nanit.com/en_us/what-is-the-difference-between-the-different-nanit-insights-plans-SJylmn0Kgg",
+            "note": "Older feature table, not an account-specific renewal price."
+          },
+          {
+            "name": "Nanit privacy and security",
+            "url": "https://www.nanit.com/pages/privacy-security",
+            "note": "Required MFA and user permissions, not an independent security audit."
+          },
+          {
+            "name": "Nanit Breathing Motion outage guidance",
+            "url": "https://support.nanit.com/en_us/will-the-monitoring-work-if-my-internet-connectionwi-fi-is-down.-HyCAhAFxe",
+            "note": "Feature-specific camera-power and network scope, not all-functions offline approval."
+          },
+          {
+            "name": "CPSC monitor cord warning",
+            "url": "https://www.cpsc.gov/s3fs-public/5066.pdf",
+            "note": "Placement, reach and sleep-environment cord distance."
+          }
+        ],
+        "offers": []
+      },
+      "beforeSha256": "da611dd3172226cf379831cca8c84e8fd6928930d66f61caf5cdc275e863a54c",
+      "afterSha256": "5e0e4a4dd801c271f42f3bf1711628a0efbea1fa2d9b65cb87ced2722c383273"
+    },
+    {
+      "key": "pet:petlibro-granary-automatic-cat-feeder",
+      "kind": "product",
+      "before": {
+        "site": "pet",
+        "slug": "petlibro-granary-automatic-cat-feeder",
+        "asin": "B0BYD73PHN",
+        "seoTitle": "PETLIBRO Granary Smart Feeder Guide: Portions, Wi-Fi & Backup Power",
+        "updatedAt": "July 28, 2026",
+        "evidenceMode": "official-spec",
+        "researchNote": "We have not tested this feeder ourselves. This guide uses PETLIBRO's current PLAF103 product page, support material, cleaning instructions, portion guidance, and manual; the exact Amazon capacity, bowl configuration, color, included parts, and seller still require a checkout check.",
+        "name": "PETLIBRO Granary Smart Cat Feeder",
+        "brand": "PETLIBRO",
+        "category": "feeding",
+        "image": "/images/affiliate/pet-petlibro-granary-automatic-cat-feeder.webp",
+        "summary": "A research-based guide to the current 5L PLAF103 Wi-Fi Granary feeder, including scheduled volume portions, dry-kibble limits, app alerts, battery behavior, cleaning, and the Amazon capacity and bowl-variant checks buyers should make before ordering.",
+        "verdict": "The Granary Smart Feeder is worth comparing when a cat or small dog needs repeatable dry-food schedules and remote changes are genuinely useful. It is not a substitute for checking actual food intake, and buyers should confirm the exact capacity because PETLIBRO sells several Granary versions under closely related names.",
+        "whyItMatters": "Automatic feeders reduce routine friction only when the selected kibble dispenses consistently, the programmed volume matches the pet's diet, and someone still checks the bowl, hopper, and pet. App control adds convenience, but local schedules and backup-power behavior matter more during an outage.",
+        "bestFor": "Scheduled dry-food feeding with app control and local backup",
+        "priceBand": "$",
+        "rating": 4.6,
+        "scores": [
+          {
+            "label": "Portion control",
+            "value": 9
+          },
+          {
+            "label": "Cleaning",
+            "value": 7
+          },
+          {
+            "label": "Reliability",
+            "value": 8
+          }
+        ],
+        "pros": [
+          "Schedules and feeding history can be managed in the PETLIBRO app",
+          "Supports both 2.4GHz and 5GHz Wi-Fi",
+          "Battery backup continues scheduled meals when normal power is unavailable"
+        ],
+        "cons": [
+          "Dry food only, with a listed 2–15mm kibble range",
+          "Portions are measured by volume and can vary in weight with kibble shape and density",
+          "Wi-Fi and some controls are disabled while operating only on backup batteries"
+        ],
+        "specs": {
+          "ASIN": "B0BYD73PHN",
+          "Model family": "PLAF103 Granary Smart Feeder",
+          "Official current PLAF103 capacity": "5L; confirm the Amazon ASIN capacity, single- or dual-bowl variant, color, and seller before checkout",
+          "Network": "2.4GHz and 5GHz Wi-Fi",
+          "Schedules": "Up to 10 meals",
+          "Portions": "1–50 portions per meal; about 20mL per portion",
+          "Allowed food": "Dry kibble, 2–15mm",
+          "Power": "5V adapter; 3 alkaline D batteries for backup"
+        },
+        "evidence": [
+          "Confirm the selected Amazon variation, capacity, bowl count, and PLAF103 model before checkout",
+          "Weigh several real dispenses with the pet's usual kibble instead of treating a volume portion as a fixed calorie amount",
+          "Test the saved schedule and battery switchover before depending on the feeder during a long absence",
+          "Inspect the outlet, bowl, food level, and desiccant regularly even when app alerts are enabled"
+        ],
+        "editorialSections": [
+          {
+            "heading": "A note about this guide",
+            "body": "This is a research-based buying guide built from PETLIBRO's current Granary Smart Feeder page and support material; it is not a hands-on reliability test. The linked ASIN and the official page can expose different capacity or bowl variants, so the exact selection at checkout controls the specifications you receive."
+          },
+          {
+            "heading": "Check 3L versus 5L before comparing price",
+            "body": "Granary names are reused across automatic, Wi-Fi, camera, single-bowl, and dual-bowl products. The linked ASIN has appeared as a Wi-Fi PLAF103 listing, while PETLIBRO's current official PLAF103 page describes a 5L configuration. Confirm capacity, color, bowl count, camera presence, and model number in the selected Amazon variation rather than relying on the family name alone."
+          },
+          {
+            "heading": "A portion is volume, not a nutrition promise",
+            "body": "PETLIBRO describes Granary portions in milliliters. The actual grams and calories change with kibble diameter, shape, freshness, and density. Start by weighing repeated dispenses of the exact food, then set the schedule around a veterinarian-approved daily amount. Recheck after changing food instead of assuming the old portion count still applies."
+          },
+          {
+            "heading": "What happens during a power or network outage",
+            "body": "PETLIBRO lists three alkaline D batteries as emergency backup. Scheduled meals can continue on battery power, but Wi-Fi and some controls are disabled to conserve energy. That makes a tested local schedule valuable, but it does not eliminate the need for a person to check the feeder during a prolonged trip."
+          },
+          {
+            "heading": "Cleaning and jam prevention are part of reliability",
+            "body": "Use only dry food within the listed 2–15mm range, keep the base and electronics dry, and let washable parts dry completely before reassembly. App alerts for low food or blockage are useful signals, not proof that a meal reached the bowl or that the pet ate it."
+          },
+          {
+            "heading": "Who should skip it",
+            "body": "Skip this feeder for wet food, very large or irregular kibble, pets that need individual access control, or a household that cannot tolerate app and Wi-Fi setup. A simple non-connected feeder may be better when remote schedule changes and feeding history would go unused."
+          }
+        ],
+        "alternatives": [
+          "Choose a non-Wi-Fi feeder when a local schedule is enough and app setup would add friction.",
+          "Choose an access-controlled or RFID feeder when one pet steals another pet's food.",
+          "Use a slow-feed bowl when eating speed, rather than meal timing, is the main problem."
+        ],
+        "sources": [
+          {
+            "name": "PETLIBRO Granary Smart Feeder product page",
+            "url": "https://petlibro.com/products/petlibro-5g-wifi-automatic-pet-feeder",
+            "note": "Official current PLAF103 capacity, bowl variants, Wi-Fi, schedule, portion, kibble, power, and box-content information."
+          },
+          {
+            "name": "PETLIBRO Granary WiFi PLAF103 support",
+            "url": "https://petlibro.com/pages/how-the-granary-wifi-feeder-works",
+            "note": "Exact kibble, desiccant, power-supply, battery-mode, schedule, and connectivity limitations."
+          },
+          {
+            "name": "PETLIBRO Granary PLAF103 cleaning",
+            "url": "https://petlibro.com/pages/how-do-i-disassemble-and-clean-the-granary-smart-feeder-af103-plaf103",
+            "note": "Exact removable washable parts, powered-base restriction, drying, and reassembly guidance."
+          },
+          {
+            "name": "PETLIBRO Granary PLAF103 user manual",
+            "url": "https://cdn.shopify.com/s/files/1/0252/5197/1119/files/PETLIBRO_Granary_WIFI_Feeder_PLAF103_USER_MANUAL_7e70ddbd-4395-4885-bfd2-fdfdb143874b.pdf?v=1691135055",
+            "note": "Exact official PLAF103 operating and care instructions."
+          },
+          {
+            "name": "PETLIBRO portion-size guidance",
+            "url": "https://petlibro.com/pages/how-much-is-in-one-feeding-portion-plaf001-002-101-102-plaf003-004-plaf005-006-103-203-plaf008-plaf107-plaf108-plaf301",
+            "note": "Official explanation that feeder portions are volumetric and vary with the food."
+          }
+        ],
+        "offers": [
+          {
+            "merchant": "Amazon US",
+            "url": "https://www.amazon.com/dp/B0BYD73PHN?tag=madapets-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+            "label": "Check price on Amazon",
+            "priceNote": "Confirm ASIN B0BYD73PHN, PLAF103, capacity, single- or dual-bowl variant, color, included splitter or tray, seller, live price, and availability."
+          }
+        ]
+      },
+      "after": {
+        "site": "pet",
+        "slug": "petlibro-granary-automatic-cat-feeder",
+        "purchaseCheck": "Confirm PLAF103 capacity and bowls, suitable dry food, weighed portions, backup limits and human care. This listing does not promise RFID access or Granary 2 weighing; keep a suitable existing routine.",
+        "asin": "B0BYD73PHN",
+        "seoTitle": "PETLIBRO Granary Smart Feeder Guide: Portions, Wi-Fi & Backup Power",
+        "updatedAt": "October 26, 2026",
+        "evidenceMode": "official-spec",
+        "researchNote": "PLAF103 manufacturer product, support, portion and cleaning documents and the complete V3.0 manual reviewed October 26, 2026. No physical dispensing, jam, portion-precision or battery test. Historical ASIN identity does not refresh retailer capacity, bowl configuration, seller, stock or returns; Granary 2 is a separate current comparison.",
+        "name": "PETLIBRO Granary Smart Cat Feeder",
+        "brand": "PETLIBRO",
+        "category": "feeding",
+        "image": "/images/affiliate/pet-smart-feeder-realistic.webp",
+        "imageAlt": "Editorial dry-food feeder scene; not an exact PLAF103 capacity or bowl configuration",
+        "summary": "A PLAF103 scheduled dry-food feeder reference. Match the selected capacity and bowls, weigh actual portions, and check the saved schedule, dry-base cleaning and emergency mode before comparing newer Granary 2 features.",
+        "verdict": "Compare PLAF103 for timed dry meals when selective access is unnecessary and actual food, portion, schedule and care checks pass. Confirm capacity and bowl configuration separately. Keep suitable existing gear, or compare Granary 2 for a specific weighing need; this link remains the older PLAF103 reference.",
+        "whyItMatters": "Automatic feeders reduce routine friction only when the selected kibble dispenses consistently, the programmed volume matches the pet's diet, and someone still checks the bowl, hopper, and pet. App control adds convenience, but local schedules and backup-power behavior matter more during an outage.",
+        "bestFor": "Scheduled dry-food feeding with app control and local backup",
+        "priceBand": "$",
+        "rating": 0,
+        "scores": [],
+        "pros": [
+          "Schedules and feeding history can be managed in the PETLIBRO app",
+          "Supports both 2.4GHz and 5GHz Wi-Fi",
+          "Battery backup continues scheduled meals when normal power is unavailable"
+        ],
+        "cons": [
+          "Dry food only, with a listed 2–15mm kibble range",
+          "Portions are measured by volume and can vary in weight with kibble shape and density",
+          "Wi-Fi and some controls are disabled while operating only on backup batteries"
+        ],
+        "specs": {
+          "ASIN": "B0BYD73PHN",
+          "Model family": "PLAF103 Granary Smart Feeder",
+          "Official current PLAF103 capacity": "5L; confirm the Amazon ASIN capacity, single- or dual-bowl variant, color, and seller before checkout",
+          "Network": "2.4GHz and 5GHz Wi-Fi",
+          "Schedules": "Current spec lists up to 10; confirm the selected version and app rather than an older FAQ example",
+          "Portions": "1–50 portions per meal; about 20mL per portion",
+          "Allowed food": "Dry kibble, 2–15mm",
+          "Power": "5V adapter; 3 alkaline D batteries for backup"
+        },
+        "evidence": [
+          "Confirm the selected Amazon variation, capacity, bowl count, and PLAF103 model before checkout",
+          "Weigh several real dispenses with the pet's usual kibble instead of treating a volume portion as a fixed calorie amount",
+          "Test the saved schedule and battery switchover while someone is present and maintain a human care arrangement for any absence",
+          "Inspect the outlet, bowl, food level, and desiccant regularly even when app alerts are enabled"
+        ],
+        "editorialSections": [
+          {
+            "heading": "A note about this guide",
+            "body": "This document comparison uses the current PLAF103 page and model-specific instructions, not a hands-on reliability test. The historical ASIN and official configuration may differ in capacity or bowls; verify the selected model and supplied parts. The current specification lists up to ten meals, while an older FAQ example says six. Confirm the actual version and app support before depending on a required schedule rather than silently combining conflicting examples."
+          },
+          {
+            "heading": "Check 3L versus 5L before comparing price",
+            "body": "Granary names are reused across automatic, Wi-Fi, camera, single-bowl, and dual-bowl products. The linked ASIN has appeared as a Wi-Fi PLAF103 listing, while PETLIBRO's current official PLAF103 page describes a 5L configuration. Confirm capacity, color, bowl count, camera presence, and model number in the selected Amazon variation rather than relying on the family name alone."
+          },
+          {
+            "heading": "A portion is volume, not a nutrition promise",
+            "body": "PETLIBRO describes Granary portions in milliliters. The actual grams and calories change with kibble diameter, shape, freshness, and density. Start by weighing repeated dispenses of the exact food, then set the schedule around a veterinarian-approved daily amount. Recheck after changing food instead of assuming the old portion count still applies."
+          },
+          {
+            "heading": "What happens during a power or network outage",
+            "body": "The PLAF103 V3.0 manual and support describe three alkaline D batteries for emergency operation: saved meals continue while Wi-Fi, playback and reset controls are disabled. Test the intended schedule, clock and recovery with someone present; no indefinite runtime or normal remote app access is established. Keep human checks for food received and eaten, water, litter and wellbeing even during a short absence. Do not transfer this battery mode to One RFID or Granary 2 revisions."
+          },
+          {
+            "heading": "Cleaning and jam prevention are part of reliability",
+            "body": "Use supported dry food in the listed 2–15mm range. Power off for care. The manual separates removable washable parts from the powered feeder base, which uses a soft dry cloth; do not rinse or wet-wipe the electronics. Only its stainless-steel bowl is listed as dishwasher-safe. Dry washed parts fully before reassembly. Low-food or blockage alerts are signals, not proof that a meal reached the bowl or was eaten."
+          },
+          {
+            "heading": "When to compare Granary 2",
+            "body": "Granary 2 adds weighing; camera and access features depend on its separate model. Compare those functions only for an actual need. They are not upgrades contained in this PLAF103 ASIN, and the older model is not declared discontinued merely because the new series exists."
+          },
+          {
+            "heading": "Who should skip it",
+            "body": "Skip this feeder for wet food, very large or irregular kibble, pets that need individual access control, or a household that cannot tolerate app and Wi-Fi setup. A simple non-connected feeder may be better when remote schedule changes and feeding history would go unused."
+          }
+        ],
+        "alternatives": [
+          "Choose a non-Wi-Fi feeder when a local schedule is enough and app setup would add friction.",
+          "Choose an access-controlled or RFID feeder when one pet steals another pet's food.",
+          "Use a slow-feed bowl when eating speed, rather than meal timing, is the main problem."
+        ],
+        "sources": [
+          {
+            "name": "PETLIBRO Granary 2 series",
+            "url": "https://petlibro.com/products/granary-2-series",
+            "note": "Separate newer weighing and model-specific camera/access options; do not transfer their features or power mode to PLAF103."
+          },
+          {
+            "name": "PETLIBRO Granary Smart Feeder product page",
+            "url": "https://petlibro.com/products/petlibro-5g-wifi-automatic-pet-feeder",
+            "note": "Official current PLAF103 capacity, bowl variants, Wi-Fi, schedule, portion, kibble, power, and box-content information."
+          },
+          {
+            "name": "PETLIBRO Granary WiFi PLAF103 support",
+            "url": "https://petlibro.com/pages/how-the-granary-wifi-feeder-works",
+            "note": "Exact kibble, desiccant, power-supply, battery-mode, schedule, and connectivity limitations."
+          },
+          {
+            "name": "PETLIBRO Granary PLAF103 cleaning",
+            "url": "https://petlibro.com/pages/how-do-i-disassemble-and-clean-the-granary-smart-feeder-af103-plaf103",
+            "note": "Exact removable washable parts, powered-base restriction, drying, and reassembly guidance."
+          },
+          {
+            "name": "PETLIBRO Granary PLAF103 user manual",
+            "url": "https://cdn.shopify.com/s/files/1/0252/5197/1119/files/PETLIBRO_Granary_WIFI_Feeder_PLAF103_USER_MANUAL_7e70ddbd-4395-4885-bfd2-fdfdb143874b.pdf?v=1691135055",
+            "note": "Exact official PLAF103 operating and care instructions."
+          },
+          {
+            "name": "PETLIBRO portion-size guidance",
+            "url": "https://petlibro.com/pages/how-much-is-in-one-feeding-portion-plaf001-002-101-102-plaf003-004-plaf005-006-103-203-plaf008-plaf107-plaf108-plaf301",
+            "note": "Official explanation that feeder portions are volumetric and vary with the food."
+          }
+        ],
+        "offers": [
+          {
+            "merchant": "Amazon US",
+            "url": "https://www.amazon.com/dp/B0BYD73PHN?tag=madapets-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+            "label": "Check price on Amazon",
+            "priceNote": "Confirm ASIN B0BYD73PHN, PLAF103, capacity, single- or dual-bowl variant, color, included splitter or tray, seller, live price, and availability."
+          }
+        ]
+      },
+      "beforeSha256": "509f813ccb73f367290671aac71821335044a05734fde49ef46c58cf64c9d628",
+      "afterSha256": "612a56d5d8645c7aa009fa499002edbad2009358c89139a1f3475758e475dd0d"
+    },
+    {
+      "key": "pet:petlibro-one-rfid-smart-feeder",
+      "kind": "product",
+      "before": {
+        "site": "pet",
+        "slug": "petlibro-one-rfid-smart-feeder",
+        "asin": "B0FJMFYPNH",
+        "seoTitle": "PETLIBRO One RFID Feeder Guide: Collar Tag, Portions & Multi-Cat Fit",
+        "updatedAt": "July 30, 2026",
+        "evidenceMode": "official-spec",
+        "researchNote": "We have not tested this feeder ourselves. This guide uses PETLIBRO's current PLAF301 product page, support material, cleaning instructions, portion guidance, and manual; the exact Amazon color, pack quantity, included tag and reader mat, and seller still require a checkout check.",
+        "name": "PETLIBRO One RFID Smart Feeder",
+        "brand": "PETLIBRO",
+        "category": "feeding",
+        "image": "/images/affiliate/pet-smart-feeder-realistic.webp",
+        "summary": "A model-specific guide to PETLIBRO's PLAF301 access-controlled feeder, including its dedicated collar tag, one-tag limit, dry-food range, meal schedules, reader mat, Wi-Fi, and backup-power behavior.",
+        "verdict": "The One RFID is the stronger PETLIBRO choice when one pet steals another pet's dry food or needs a separate diet. The less expensive Granary is easier to justify when scheduled portions—not access control—are the real problem.",
+        "whyItMatters": "This feeder recognizes PETLIBRO's dedicated collar tag rather than an implanted microchip. Each feeder binds to one tag, so a multi-pet plan may require one unit per protected pet and enough floor space to separate the readers.",
+        "bestFor": "Protecting one pet's scheduled dry-food meals in a multi-pet home",
+        "priceBand": "$$",
+        "rating": 4.2,
+        "scores": [
+          {
+            "label": "Access control",
+            "value": 9
+          },
+          {
+            "label": "Schedule control",
+            "value": 8
+          },
+          {
+            "label": "Cleaning simplicity",
+            "value": 6
+          }
+        ],
+        "pros": [
+          "Dedicated RFID collar tag controls access to the covered bowl",
+          "Up to ten scheduled meals or snacks with feeding logs",
+          "Supports 2.4GHz and 5GHz Wi-Fi with emergency battery backup"
+        ],
+        "cons": [
+          "It does not read implanted microchips or third-party tags",
+          "One feeder binds to one collar tag, which raises multi-pet cost",
+          "Dry food only; the reader mat and moving lid add cleaning and placement work"
+        ],
+        "specs": {
+          "ASIN": "B0FJMFYPNH",
+          "Official model family": "PLAF301 One RFID Smart Feeder",
+          "Capacity": "3L / about 13 cups",
+          "Pet recognition": "Dedicated PETLIBRO RFID collar tag; not an implanted microchip",
+          "Meals": "Up to 10 scheduled meals or snacks per day",
+          "Kibble": "Dry food, 2–15mm",
+          "Portions": "Approximately 20mL per portion by volume; no fixed gram value",
+          "Network": "2.4GHz and 5GHz Wi-Fi",
+          "Power": "Corded; 3 alkaline D batteries for emergency backup",
+          "Dimensions": "442 x 196 x 320mm",
+          "Collar tag": "23 x 23 x 14.18mm; 4.2g; splashproof, not submersible",
+          "Identifier limit": "One feeder binds to one dedicated PETLIBRO collar tag; implanted microchips and third-party tags are unsupported",
+          "Reader requirement": "The PETLIBRO RFID reader mat is required for recognition"
+        },
+        "evidence": [
+          "Confirm ASIN B0FJMFYPNH, color, pack quantity, seller, and included collar tag",
+          "Use it only with the dedicated tag and reader mat; PETLIBRO says other tags and implanted microchips are unsupported",
+          "Allow room for the mat and lid, and separate multiple units according to PETLIBRO's placement guidance",
+          "Weigh several real portions with the exact kibble instead of treating a volume setting as a fixed calorie amount"
+        ],
+        "editorialSections": [
+          {
+            "heading": "One tag per feeder is the central limitation",
+            "body": "The One RFID does not identify every pet in the house and route several diets through one bowl. PETLIBRO says one feeder syncs with one dedicated collar tag. In a two-pet home, that can still protect one prescription or weight-control diet, but protecting two separate diets may require two feeders."
+          },
+          {
+            "heading": "It is RFID, but not a microchip feeder",
+            "body": "The included reader mat detects PETLIBRO's collar tag and opens the lid for the bound pet. Buyers specifically searching for an implanted-microchip feeder should not treat the word RFID as proof of microchip compatibility."
+          },
+          {
+            "heading": "Battery power is a backup mode",
+            "body": "PETLIBRO lists three D batteries as emergency backup. Scheduled meals can continue, while Wi-Fi and some controls are disabled to preserve power. Test the saved schedule before relying on the feeder during an outage or trip."
+          },
+          {
+            "heading": "Who should skip it",
+            "body": "Skip it for wet food, implanted-microchip access, very large pets, or a household that only needs timed portions. A conventional automatic feeder costs less and has fewer moving access-control parts."
+          }
+        ],
+        "alternatives": [
+          "Choose PETLIBRO Granary when timed dry-food portions are enough.",
+          "Choose an implanted-microchip feeder when a collar tag is unsuitable.",
+          "Use supervised feeding when a pet may chew, lose, or resist the tag."
+        ],
+        "compareSlugs": [
+          "petlibro-granary-automatic-cat-feeder"
+        ],
+        "sources": [
+          {
+            "name": "PETLIBRO One RFID Smart Feeder",
+            "url": "https://petlibro.com/products/one-rfid-pet-feeder",
+            "note": "Official model, tag, schedule, capacity, kibble, power, network, placement, and box-content information."
+          },
+          {
+            "name": "PETLIBRO One RFID PLAF301 support",
+            "url": "https://petlibro.com/pages/how-the-one-rfid-pet-feeder-works-plaf301",
+            "note": "Exact tag, reader, placement, food, power, network, and battery-mode limitations."
+          },
+          {
+            "name": "PETLIBRO One RFID PLAF301 cleaning",
+            "url": "https://petlibro.com/pages/how-do-i-disassemble-and-clean-the-one-rfid-pet-feeder-af301-plaf301",
+            "note": "Exact powered-base, collar-tag, RFID-reader, drying, and reassembly restrictions."
+          },
+          {
+            "name": "PETLIBRO One RFID PLAF301 user manual",
+            "url": "https://cdn.shopify.com/s/files/1/0252/5197/1119/files/Petlibro-AF301-3L-_US_DE_IT_FR_ES.pdf?v=1774007057",
+            "note": "Current official multilingual PLAF301 operating manual."
+          },
+          {
+            "name": "PETLIBRO portion-size guidance",
+            "url": "https://petlibro.com/pages/how-much-is-in-one-feeding-portion-plaf001-002-101-102-plaf003-004-plaf005-006-103-203-plaf008-plaf107-plaf108-plaf301",
+            "note": "Official explanation that PLAF301 portions are approximately 20mL by volume and do not have a fixed gram weight."
+          }
+        ],
+        "offers": []
+      },
+      "after": {
+        "site": "pet",
+        "slug": "petlibro-one-rfid-smart-feeder",
+        "purchaseCheck": "The exact purchase remains paused. Match the dedicated collar tag and reader, food and portion results, and received revision; current battery-mode documents conflict.",
+        "asin": "B0FJMFYPNH",
+        "seoTitle": "PETLIBRO One RFID Feeder Guide: Collar Tag, Portions & Multi-Cat Fit",
+        "updatedAt": "October 26, 2026",
+        "evidenceMode": "official-spec",
+        "researchNote": "Manufacturer PLAF301 product/portion documents and the complete English portion of manual V0005 reviewed October 26, 2026. No physical access, dispensing, battery or cleaning test. Historical ASIN purchase remains paused. Product/support and current manual differ on battery Wi-Fi and dimensions; the received revision is not assumed resolved.",
+        "name": "PETLIBRO One RFID Smart Feeder",
+        "brand": "PETLIBRO",
+        "category": "feeding",
+        "image": "/images/affiliate/pet-smart-feeder-realistic.webp",
+        "summary": "A PLAF301 collar-tag access reference with its exact retailer purchase still paused. Check the dedicated reader and tag, actual dry-food portions and received revision; current battery-mode documents conflict.",
+        "verdict": "Compare One RFID only for a real selective-access need after the intended pet, dedicated tag/reader and food checks pass. The historical ASIN purchase remains paused, and backup connectivity needs revision-specific confirmation. Keep an effective current routine when access hardware is unnecessary.",
+        "whyItMatters": "This feeder recognizes PETLIBRO's dedicated collar tag rather than an implanted microchip. Each feeder binds to one tag, so a multi-pet plan may require one unit per protected pet and enough floor space to separate the readers.",
+        "bestFor": "Protecting one pet's scheduled dry-food meals in a multi-pet home",
+        "priceBand": "$$",
+        "rating": 0,
+        "scores": [],
+        "pros": [
+          "Dedicated RFID collar tag controls access to the covered bowl",
+          "Up to ten scheduled meals or snacks with feeding logs",
+          "Normal-power dual-band Wi-Fi and a documented emergency-power mode"
+        ],
+        "cons": [
+          "It does not read implanted microchips or third-party tags",
+          "One feeder binds to one collar tag, which raises multi-pet cost",
+          "Dry food only; the reader mat and moving lid add cleaning and placement work",
+          "Historical purchase paused; battery Wi-Fi and exact dimensions need revision matching"
+        ],
+        "specs": {
+          "ASIN": "B0FJMFYPNH",
+          "Official model family": "PLAF301 One RFID Smart Feeder",
+          "Capacity": "3L / about 13 cups",
+          "Pet recognition": "Dedicated PETLIBRO RFID collar tag; not an implanted microchip",
+          "Meals": "Up to 10 scheduled meals or snacks per day",
+          "Kibble": "Dry food, 2–15mm",
+          "Portions": "Approximately 20mL per portion by volume; no fixed gram value",
+          "Network": "2.4GHz and 5GHz Wi-Fi",
+          "Power": "Corded; 3 alkaline D batteries for emergency backup",
+          "Dimensions": "Product page lists 442mm length; V0005 manual lists 449mm. Match the received revision and full installed footprint",
+          "Battery connectivity": "Unresolved by revision: V0005 retains Wi-Fi; product/support describes Wi-Fi disabled",
+          "Collar tag": "23 x 23 x 14.18mm; 4.2g; splashproof, not submersible",
+          "Identifier limit": "One feeder binds to one dedicated PETLIBRO collar tag; implanted microchips and third-party tags are unsupported",
+          "Reader requirement": "The PETLIBRO RFID reader mat is required for recognition"
+        },
+        "evidence": [
+          "Confirm ASIN B0FJMFYPNH, color, pack quantity, seller, and included collar tag",
+          "Use it only with the dedicated tag and reader mat; PETLIBRO says other tags and implanted microchips are unsupported",
+          "Allow room for the mat and lid, and separate multiple units according to PETLIBRO's placement guidance",
+          "Weigh several real portions with the exact kibble instead of treating a volume setting as a fixed calorie amount"
+        ],
+        "editorialSections": [
+          {
+            "heading": "One tag per feeder is the central limitation",
+            "body": "PETLIBRO describes one dedicated collar tag per feeder, not several diets routed through one bowl. Observe the intended pet using the lid and check competing pets' access; the feature description is not a tested guarantee that no food can be stolen. Follow veterinary instructions for any prescribed diet rather than treating a tagged lid as proof the correct meal was eaten."
+          },
+          {
+            "heading": "It is RFID, but not a microchip feeder",
+            "body": "The included reader mat detects PETLIBRO's collar tag and opens the lid for the bound pet. Buyers specifically searching for an implanted-microchip feeder should not treat the word RFID as proof of microchip compatibility."
+          },
+          {
+            "heading": "Battery power is a backup mode",
+            "body": "The V0005 manual says battery mode retains RFID recognition, Wi-Fi and feeding while disabling other functions. The product/support material instead describes Wi-Fi disabled. Do not publish either as a universal rule for every PLAF301 or the historical ASIN. Match the received revision, applicable instructions and actual outage behavior before depending on remote visibility. Three alkaline D batteries are an emergency arrangement, not a substitute for power planning or human checks."
+          },
+          {
+            "heading": "Reader, lid and cleaning checks are separate",
+            "body": "The manual shows the reader on a flat surface away from metal, with the body properly seated and lid pivot locked. The reader is not waterproof. Power off before care and follow the received revision's component instructions; the manual permits only the stainless-steel bowl in a dishwasher. Keep electronics out of wash water and let cleaned parts dry. Actual portion weights, access and meals still need observation even when the app records an event."
+          },
+          {
+            "heading": "Newer access options do not change this identity",
+            "body": "Granary 2 X is a separate newer access comparison. It does not change PLAF301 into another product or restore this paused retailer path. Confirm its own instructions, configuration and terms if considering it."
+          },
+          {
+            "heading": "Who should skip it",
+            "body": "Skip for wet food, implanted-microchip access or an unsuitable tag, lid or reader arrangement. Scheduling alone does not require selective access hardware. Pause when the exact model, battery path or required care remains unknown, and retain a suitable existing or supervised routine. Arrange human checks of food received and eaten, water, litter and wellbeing during any absence."
+          }
+        ],
+        "alternatives": [
+          "Choose PETLIBRO Granary when timed dry-food portions are enough.",
+          "Choose an implanted-microchip feeder when a collar tag is unsuitable.",
+          "Use supervised feeding when a pet may chew, lose, or resist the tag."
+        ],
+        "compareSlugs": [
+          "petlibro-granary-automatic-cat-feeder"
+        ],
+        "sources": [
+          {
+            "name": "PETLIBRO Granary 2 series",
+            "url": "https://petlibro.com/products/granary-2-series",
+            "note": "Separate newer access comparison; no automatic identity or feature transfer."
+          },
+          {
+            "name": "PETLIBRO One RFID Smart Feeder",
+            "url": "https://petlibro.com/products/one-rfid-pet-feeder",
+            "note": "Official model, tag, schedule, capacity, kibble, power, network, placement, and box-content information."
+          },
+          {
+            "name": "PETLIBRO One RFID PLAF301 support",
+            "url": "https://petlibro.com/pages/how-the-one-rfid-pet-feeder-works-plaf301",
+            "note": "Exact tag, reader, placement, food, power, network, and battery-mode limitations."
+          },
+          {
+            "name": "PETLIBRO One RFID PLAF301 cleaning",
+            "url": "https://petlibro.com/pages/how-do-i-disassemble-and-clean-the-one-rfid-pet-feeder-af301-plaf301",
+            "note": "Exact powered-base, collar-tag, RFID-reader, drying, and reassembly restrictions."
+          },
+          {
+            "name": "PETLIBRO One RFID PLAF301 user manual",
+            "url": "https://cdn.shopify.com/s/files/1/0252/5197/1119/files/Petlibro-AF301-3L-_US_DE_IT_FR_ES.pdf?v=1774007057",
+            "note": "V0005 English instructions and diagrams read in full. Battery Wi-Fi and dimensions differ from product/support wording, so received-revision applicability needs confirmation."
+          },
+          {
+            "name": "PETLIBRO portion-size guidance",
+            "url": "https://petlibro.com/pages/how-much-is-in-one-feeding-portion-plaf001-002-101-102-plaf003-004-plaf005-006-103-203-plaf008-plaf107-plaf108-plaf301",
+            "note": "Official explanation that PLAF301 portions are approximately 20mL by volume and do not have a fixed gram weight."
+          }
+        ],
+        "offers": []
+      },
+      "beforeSha256": "3fce27f878684538237ed401d5797347fba2c08adf8d8333dc8da92efd4c43b7",
+      "afterSha256": "5b63183b2855b308a2afd1144459704b56ca83e1bcd0c1958ff4709cfc529c92"
+    },
+    {
+      "key": "baby:best-travel-strollers",
+      "kind": "roundup",
+      "before": {
+        "site": "baby",
+        "slug": "best-travel-strollers",
+        "updatedAt": "June 21, 2026",
+        "title": "Travel Strollers for Everyday Errands and Flights",
+        "dek": "The best travel stroller is easy to fold, light enough to carry, and still comfortable enough for real naps.",
+        "category": "travel",
+        "intent": "Pick a stroller that solves storage and travel friction without giving up daily usability.",
+        "intro": "Travel strollers are not just airport gear. They often become the stroller kept in the car, hallway, or grandparent's house. Fold size matters, but so do recline, wheel feel, basket access, and whether the stroller is pleasant enough for ordinary errands.",
+        "decisionGuide": [
+          {
+            "label": "Small car or apartment",
+            "detail": "Prioritize folded dimensions and a carry-friendly frame."
+          },
+          {
+            "label": "Budget second stroller",
+            "detail": "A simpler lightweight stroller may be enough for errands and backup use."
+          },
+          {
+            "label": "Frequent flights",
+            "detail": "Check airline rules and folded size before assuming cabin-bin fit."
+          },
+          {
+            "label": "Daily rough sidewalks",
+            "detail": "A full-size stroller may be less frustrating than an ultra-light travel model."
+          }
+        ],
+        "methodology": [
+          "Compare folded size against real storage needs",
+          "Check age and weight limits",
+          "Separate travel convenience from daily comfort"
+        ],
+        "productSlugs": [
+          "baby-jogger-city-tour-2-stroller",
+          "summer-3dlite-convenience-stroller"
+        ],
+        "faqs": [
+          {
+            "question": "Do travel strollers fit airplane bins?",
+            "answer": "Some do, but airline rules vary. Check folded dimensions against the carrier before travel."
+          },
+          {
+            "question": "Can a travel stroller replace a full-size stroller?",
+            "answer": "It can for urban families, but storage basket size and rough-surface comfort are common trade-offs."
+          },
+          {
+            "question": "Should I buy the lightest stroller?",
+            "answer": "Not automatically. The lightest option can give up recline, shade, basket space, or wheel comfort."
+          }
+        ]
+      },
+      "after": {
+        "site": "baby",
+        "slug": "best-travel-strollers",
+        "updatedAt": "October 26, 2026",
+        "title": "Travel Strollers: Compare Fold, Child Fit and Loading",
+        "dek": "Compare City Tour 2 and Summer 3Dlite as model references, then verify the selected version, child's instructions, complete fold and real loading routine.",
+        "category": "travel",
+        "intent": "Solve an actual storage or carrying problem while retaining the child's suitability and a workable daily routine.",
+        "quickAnswer": "Compare the complete folded stroller with both the storage opening and usable space, then check the child's exact seat instructions and the caregiver's lift. City Tour 2 and Summer 3Dlite are model references to verify, not tested comfort winners or guaranteed cabin bags. Keep the existing suitable stroller if it already fits; pause for unknown child suitability or an unconfirmed selected version.",
+        "purchaseCheck": "The first listing is the historical City Tour 2 Eco Black/belly-bar reference. Confirm the selected version, included parts, child suitability and actual loading path before choosing it. A family-name fold figure does not establish that bundle's car or airline fit; keeping a suitable existing stroller is a valid result.",
+        "intro": "Start with the problem the current stroller fails to solve: the trunk opening, a lift, apartment storage or a particular trip. Baby Jogger's current collection lists City Tour 2 Eco, but that does not verify every retailer package. Summer 3Dlite needs its own model instructions and measurements. This comparison has not tested either stroller's fold, wheel behavior, ride comfort or airline acceptance, and it does not rank one as universally more comfortable or better value.",
+        "decisionGuide": [
+          {
+            "label": "Small opening or storage space",
+            "detail": "Measure the exact complete fold, narrow opening, loading movement, hatch and remaining luggage room. A carton size or trunk volume is insufficient."
+          },
+          {
+            "label": "Child and daily route",
+            "detail": "Confirm the exact seat and accessory instructions, restraint, limits and daily handling. Recline alone is not newborn approval or a tested comfort result."
+          },
+          {
+            "label": "Flight",
+            "detail": "Check the operating carrier, cabin/gate/counter rules and a permitted fallback for the actual trip. No cabin-friendly label guarantees bin space."
+          },
+          {
+            "label": "Second stroller",
+            "detail": "Compare the full cost with a specific unsolved need. Skip a second purchase when the existing suitable stroller already does the job."
+          }
+        ],
+        "sources": [
+          {
+            "name": "Baby Jogger City Tour 2 specifications",
+            "url": "https://help.babyjogger.com/s/article/CITY-TOUR-2-SPECIFICATIONS",
+            "note": "Folded dimensions and shipping box are separate; match the exact version before applying the model-family numbers."
+          },
+          {
+            "name": "Baby Jogger City Tour 2 collection",
+            "url": "https://www.babyjogger.com/strollers/shop-all-strollers/compact-and-lightweight/city-tour-2/",
+            "note": "Current collection lists City Tour 2 Eco, without establishing a selected Amazon package or a like-for-like successor."
+          },
+          {
+            "name": "American Airlines child-travel guidance",
+            "url": "https://www.aa.com/web/i18n/travel-info/special-assistance/traveling-children.html",
+            "note": "Current stroller check-in and gate-check example; do not transfer it to another carrier."
+          },
+          {
+            "name": "CPSC stroller restraint alert",
+            "url": "https://www.cpsc.gov/safety-education/safety-guides/kids-and-babies/infants-strollers-must-be-properly-secured-all-times",
+            "note": "Harness and supervision including in a reclined seat, not individual model or recall clearance."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "Compare the actual package, not the family name",
+            "body": "Record the selected model, regional version, color, bag and parts supplied or left attached during the documented fold. City Tour 2 support lists a 21.6 × 16.9 × 6.8 inch fold separately from carton dimensions; that is a model-table example, not an established measurement of every Eco or retailer bundle. A current manufacturer family page and an older ASIN reference do not resolve the received configuration. Obtain the selected Summer 3Dlite's own complete measurements rather than inferring them from its lightweight label."
+          },
+          {
+            "heading": "Resolve loading and suitability before price",
+            "body": "Measure the narrow opening and usable storage with the seats and luggage in their real positions. Check the loading motion and hatch, and resolve a tight result with an actual fit check. With the child safely out and supervised, follow the fold/latch/carry instructions and check the adult's lift. Read the exact seat's age, developmental, height and weight limits and approved accessory combinations. Use the harness and supervision; a belly bar or recline does not replace them."
+          },
+          {
+            "heading": "Keep daily handling and flights as separate checks",
+            "body": "Check brakes, canopy, basket access and handling on the intended routes without assuming that a frame category predicts ride comfort. For flights, confirm the operating carrier's current baggage and stroller rules and where checked gear is returned. Car fit is not cabin acceptance, and a listed compact fold does not reserve overhead space. Keep a permitted fallback for the trip."
+          },
+          {
+            "heading": "Keep, pause or compare another configuration",
+            "body": "Keep a suitable existing stroller when it passes the actual routine. Pause a purchase if the child's suitability, regional instructions, package identity or loading result is unknown. Compare another documented configuration only for the need that remains unresolved. There is no physical comfort, suspension, maneuvering or durability ranking in this document comparison."
+          }
+        ],
+        "methodology": [
+          "Baby Jogger model-family documents, airline guidance and CPSC restraint alert reviewed October 26, 2026; no hands-on stroller comparison.",
+          "No current retailer stock, price, supplied-part or return observation is established by this documentation review.",
+          "Apply each model's own current instructions; do not transfer dimensions, child limits or accessory approvals between versions."
+        ],
+        "productSlugs": [
+          "baby-jogger-city-tour-2-stroller",
+          "summer-3dlite-convenience-stroller"
+        ],
+        "faqs": [
+          {
+            "question": "Does a small fold guarantee airplane-bin fit?",
+            "answer": "No. Check the operating carrier's current policy and the complete selected package, including its bag and attached parts. Cabin acceptance and actual space are separate from fitting a car trunk, so plan a permitted gate- or counter-check fallback."
+          },
+          {
+            "question": "Has City Tour 2 been discontinued?",
+            "answer": "The current Baby Jogger collection lists City Tour 2 Eco. The original City Tour is identified separately as a predecessor, and an expired product URL alone is not discontinuation proof. Confirm the exact retailer version; this review does not establish a like-for-like successor for the historical ASIN."
+          },
+          {
+            "question": "Should I buy the lightest or a second stroller?",
+            "answer": "Only if it solves an actual need while meeting the child's instructions and the adult's loading and daily routine. A low listed weight does not prove an easy lift or comfortable ride. Keep the existing suitable stroller when it already meets those requirements."
+          }
+        ]
+      },
+      "beforeSha256": "3192efc4ea7adb6d6e1b60670cbf1867d571d5ffc5340d22e3ae5102e3049b79",
+      "afterSha256": "1cdf8e3160936fb49df7dc8c1a742f798b7246cfe748ae239b93f38880bac395"
+    },
+    {
+      "key": "baby:best-baby-monitors-for-apartments",
+      "kind": "roundup",
+      "before": {
+        "site": "baby",
+        "slug": "best-baby-monitors-for-apartments",
+        "updatedAt": "June 21, 2026",
+        "title": "Baby Monitors for Apartments",
+        "dek": "Small spaces still need clear night video, manageable alerts, and a connection style that fits your comfort level.",
+        "category": "sleep",
+        "intent": "Choose a monitor that gives useful reassurance without unnecessary app noise.",
+        "intro": "Apartment baby monitors do not need the biggest feature list. They need clear night visibility, a connection method you trust, and controls that are easy when you are tired. Local parent-unit monitors and smart Wi-Fi monitors solve different problems, so start with your comfort level before comparing specs.",
+        "decisionGuide": [
+          {
+            "label": "Want less phone dependence",
+            "detail": "Choose a dedicated parent-unit monitor for overnight use."
+          },
+          {
+            "label": "Want remote app access",
+            "detail": "A smart Wi-Fi monitor makes more sense if caregivers check in away from home."
+          },
+          {
+            "label": "Shared walls",
+            "detail": "Prioritize clear alerts and volume control rather than overly sensitive notifications."
+          },
+          {
+            "label": "Privacy concern",
+            "detail": "Compare local monitoring, account requirements, and storage settings before buying."
+          }
+        ],
+        "methodology": [
+          "Compare local versus Wi-Fi connection trade-offs",
+          "Check night video and alert clarity",
+          "Review mounting, privacy, and subscription details"
+        ],
+        "productSlugs": [
+          "infant-optics-dxr-8-pro",
+          "nanit-pro-smart-baby-monitor"
+        ],
+        "faqs": [
+          {
+            "question": "Are Wi-Fi monitors better?",
+            "answer": "Wi-Fi models are convenient outside the home, but local monitors can be simpler overnight."
+          },
+          {
+            "question": "Should I buy breathing analytics?",
+            "answer": "Treat analytics as optional reassurance, not a replacement for safe sleep guidance or medical advice."
+          },
+          {
+            "question": "Do apartments need long-range monitors?",
+            "answer": "Usually less than larger houses, but walls, interference, and where you sleep still matter."
+          }
+        ]
+      },
+      "after": {
+        "site": "baby",
+        "slug": "best-baby-monitors-for-apartments",
+        "updatedAt": "October 26, 2026",
+        "title": "Baby Monitors for Apartments: Parent Unit or Wi-Fi?",
+        "dek": "Compare local parent-unit and Nanit app workflows by actual room coverage, subscription features, account access and safe cord placement.",
+        "category": "sleep",
+        "intent": "Match the monitoring workflow to the real rooms and caregivers, then verify the exact features and safe placement.",
+        "quickAnswer": "Compare a dedicated parent unit when the job is checking from elsewhere at home, and a Wi-Fi account when remote caregiver access is necessary. For Nanit, core live view, background audio and alerts remain available without Insights, while history and analytics depend on the plan. Test the actual rooms and notification path; apartment size, a range claim or breathing analytics does not establish safety or reliable coverage.",
+        "purchaseCheck": "The first listing is the DXR-8 PRO parent-unit reference. Before choosing it, confirm the exact bundle, safe placement and coverage from the rooms you actually use. If those checks are unresolved, pause; keep an existing suitable monitor when it already meets the need. Nanit is a separate app-and-account comparison below.",
+        "intro": "A small apartment can still have a weak signal or an awkward camera location. Start with where caregivers need to see or hear the child, which device receives alerts, and what happens during an outage. The linked models illustrate two workflows; this comparison has not tested their range, night images, alert delivery or medical performance. A monitor supports caregiving and does not replace supervision, safe sleep practices or medical advice.",
+        "decisionGuide": [
+          {
+            "label": "Checking elsewhere at home",
+            "detail": "Compare the parent-unit workflow against actual room coverage, charging, screen and sound controls. A published range is not a room-by-room test."
+          },
+          {
+            "label": "Remote caregivers",
+            "detail": "Compare Nanit's exact camera/mount bundle, necessary app access and named users. Confirm phone settings and the feature's network requirements."
+          },
+          {
+            "label": "Subscription costs",
+            "detail": "Separate core viewing from event history, continuous video history and analytics. Check the selected trial, renewal date, billing period and account quote."
+          },
+          {
+            "label": "Placement and privacy",
+            "detail": "Keep cords at least 3 feet from every part of the sleep environment and out of reach. For Nanit, use required MFA and review caregiver access; no monitor is assumed risk-free."
+          }
+        ],
+        "sources": [
+          {
+            "name": "Nanit Insights plan FAQ",
+            "url": "https://www.nanit.com/products/insights-plan",
+            "note": "Core live view, background audio and alerts without Insights; verify current account-specific plan terms."
+          },
+          {
+            "name": "Nanit Insights feature comparison",
+            "url": "https://support.nanit.com/en_us/what-is-the-difference-between-the-different-nanit-insights-plans-SJylmn0Kgg",
+            "note": "Separates event/video history and other entitlements. The support table is dated 2025, not a current renewal quote."
+          },
+          {
+            "name": "Nanit Breathing Motion during an outage",
+            "url": "https://support.nanit.com/en_us/will-the-monitoring-work-if-my-internet-connectionwi-fi-is-down.-HyCAhAFxe",
+            "note": "Feature-specific local-network and camera-power conditions, not a promise that every video/cloud function works offline."
+          },
+          {
+            "name": "Nanit privacy and security",
+            "url": "https://www.nanit.com/pages/privacy-security",
+            "note": "Required MFA and user permissions; manufacturer statements are not an independent security audit."
+          },
+          {
+            "name": "CPSC baby monitor cord warning",
+            "url": "https://www.cpsc.gov/s3fs-public/5066.pdf",
+            "note": "Cords at least 3 feet from any part of the sleep environment and out of reach; no monitor inside or on the edge of a crib."
+          },
+          {
+            "name": "Infant Optics DXR-8 PRO",
+            "url": "https://www.infantoptics.com/product/dxr-8-pro",
+            "note": "Current single-view parent-unit model reference; actual coverage still needs checking."
+          },
+          {
+            "name": "Infant Optics DXR-8 PRO SS",
+            "url": "https://www.infantoptics.com/product/dxr-8-pro-ss",
+            "note": "Separate split-screen and simultaneous dual-audio model. Those features are not transferred to the linked non-SS ASIN."
+          },
+          {
+            "name": "Nanit current monitor configurations",
+            "url": "https://www.nanit.com/products/smart-baby-monitor",
+            "note": "Current camera/mount and optional display choices, not proof of the historical Essentials package contents."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "Check the real monitoring path",
+            "body": "List the rooms, closed doors and caregiver locations used overnight and during the day. Confirm the selected model's instructions, power and mount, then test sound, images, alerts, charging and reconnection in those locations while someone is present. Remote access, phone permissions and background audio are separate checks. Neither apartment floor area nor a manufacturer range figure proves coverage through the actual walls and interference."
+          },
+          {
+            "heading": "Do not mix the current model and bundle choices",
+            "body": "Infant Optics currently lists both DXR-8 PRO and DXR-8 PRO SS. The SS adds a split-screen and simultaneous dual-audio option for two rooms; the linked non-SS reference is not that model. Nanit's current store also separates camera-only and camera-plus-display configurations. An extra connected screen does not make a Wi-Fi system the same as a local radio monitor, and it is not assumed to be included with the historical Essentials bundle. Compare those differences only when the actual caregiving workflow needs them; a newer option alone does not require replacing a suitable monitor."
+          },
+          {
+            "heading": "Price the features you will keep",
+            "body": "Nanit's FAQ retains core live view, background audio and alerts without Insights. Event history, continuous video history, analytics and caregiver entitlements must be checked individually against the selected plan. Its older support comparison is useful for those distinctions, but it is not a current universal renewal price. Record the actual trial end, billing period, renewal quote and cancellation route before paying for history you may not need."
+          },
+          {
+            "heading": "Check security and outages by feature",
+            "body": "Nanit requires multi-factor authentication. Use named caregivers, review permissions and remove access that is no longer needed; do not treat those controls as a guarantee against every security problem. The manufacturer's outage article concerns Breathing Motion with a powered camera and particular local-network conditions. It does not establish that every video, phone alert, cloud recording or remote feature continues during an internet or power outage."
+          },
+          {
+            "heading": "Plan a safe location and a no-buy outcome",
+            "body": "CPSC says monitor cords must remain at least 3 feet from any part of the crib, bassinet, play yard or other safe sleep environment and out of reach. Do not place a monitor inside or on the edge of the crib. Follow the exact mount instructions and recheck as the child grows. Analytics do not establish a diagnosis or make an unsafe sleep setup safe. Keep a suitable existing monitor when it already provides the needed workflow; pause when safe placement, coverage or required features cannot be confirmed."
+          }
+        ],
+        "methodology": [
+          "Manufacturer plan, privacy and feature-specific outage documents and the CPSC cord warning reviewed October 26, 2026.",
+          "Documentation comparison only; no physical range, night-image, alert, security or medical-performance test.",
+          "Linked retailer bundle identities are historical references. Recheck the exact selected hardware, mount, trial and seller separately."
+        ],
+        "productSlugs": [
+          "infant-optics-dxr-8-pro",
+          "nanit-pro-smart-baby-monitor"
+        ],
+        "faqs": [
+          {
+            "question": "Is a Wi-Fi monitor automatically better in an apartment?",
+            "answer": "No. Choose the workflow you need: a dedicated parent unit at home or account-based access for remote caregivers. Test the selected device in the actual rooms and verify power, notifications and outage behavior; apartment size alone does not decide coverage."
+          },
+          {
+            "question": "Does Nanit require Insights for live viewing?",
+            "answer": "Nanit's current FAQ says core live view, background audio and alerts remain without Insights. History, analytics and other entitlements require a feature-by-feature plan check. Confirm the trial and current renewal quote rather than treating an older support-table price as your bill."
+          },
+          {
+            "question": "Should breathing analytics decide the purchase?",
+            "answer": "Treat them as an optional feature with its own instructions and limitations, not proof of health, a diagnostic result or a substitute for safe sleep and caregiving. Discuss medical concerns with the child's clinician."
+          },
+          {
+            "question": "Where can the camera cord go?",
+            "answer": "CPSC requires at least 3 feet between cords and any part of the sleep environment, with cords out of reach. Never place the monitor inside or on the edge of the crib, and follow the selected mount's instructions."
+          }
+        ]
+      },
+      "beforeSha256": "097576a4b1ab8680e5d4b89edc1b557f0d82901539a6e472969cc2a203eb6a2b",
+      "afterSha256": "e91f6f9d4411fa679e50e7354a6ee24f217b02ab08a94e1c5ca04f556e5a50cf"
+    },
+    {
+      "key": "pet:best-automatic-cat-feeders",
+      "kind": "roundup",
+      "before": {
+        "site": "pet",
+        "slug": "best-automatic-cat-feeders",
+        "updatedAt": "June 21, 2026",
+        "title": "Automatic Cat Feeders for Consistent Meals",
+        "dek": "Scheduled feeders should solve meal timing without creating cleaning problems, food jams, or a new routine your pet can defeat.",
+        "category": "feeding",
+        "intent": "Choose a feeder that keeps meal timing steady without creating cleaning or jamming problems.",
+        "intro": "Automatic feeders are useful when the household schedule is inconsistent, but they are not all-purpose pet sitters. Start with food type, portion range, cleaning access, and whether the hopper can survive a curious cat. Smart features are nice only after the feeding path is reliable.",
+        "decisionGuide": [
+          {
+            "label": "Dry-food routine",
+            "detail": "Choose a feeder with clear portion controls and a hopper that seals well."
+          },
+          {
+            "label": "Pet eats too fast",
+            "detail": "A slow feeder may solve the problem better than a scheduled feeder."
+          },
+          {
+            "label": "Short trips",
+            "detail": "Prioritize power backup, food capacity, and a simple schedule you can verify before leaving."
+          },
+          {
+            "label": "Multiple pets",
+            "detail": "Check whether one pet can steal meals before assuming a single feeder is enough."
+          }
+        ],
+        "methodology": [
+          "Check dry-food compatibility before app features",
+          "Compare hopper size against real feeding schedule",
+          "Prioritize cleaning access around the chute and bowl"
+        ],
+        "productSlugs": [
+          "petlibro-one-rfid-smart-feeder",
+          "petlibro-granary-automatic-cat-feeder"
+        ],
+        "faqs": [
+          {
+            "question": "Are automatic feeders safe for wet food?",
+            "answer": "Most are designed for dry kibble. Wet-food feeders need cooling packs and shorter holding times."
+          },
+          {
+            "question": "What matters most for cats on a diet?",
+            "answer": "Portion repeatability and a tamper-resistant lid matter more than camera or voice features."
+          },
+          {
+            "question": "Should I still have someone check on my pet?",
+            "answer": "Yes for longer trips. A feeder can support routine, but it does not replace water checks, litter care, and general pet safety."
+          }
+        ]
+      },
+      "after": {
+        "site": "pet",
+        "slug": "best-automatic-cat-feeders",
+        "updatedAt": "October 26, 2026",
+        "title": "Automatic Cat Feeders: Scheduled Meals or RFID Access?",
+        "dek": "Compare Granary meal scheduling with One RFID food access, then check dry-food size, actual portion weight, emergency power and daily care.",
+        "category": "feeding",
+        "intent": "Separate a meal-timing need from access control and confirm the actual food and care routine before buying.",
+        "quickAnswer": "Start with Granary PLAF103 when the job is scheduling compatible dry food and selective access is unnecessary. Compare One RFID PLAF301 when access for one pet matters and its dedicated collar tag and reader are suitable. Neither model identifies an implanted microchip, turns a volume setting into a fixed gram allowance or replaces daily human care. Keep the current routine if it already works.",
+        "purchaseCheck": "The first listing is the Granary reference for scheduled dry meals, not RFID access. Pause until the selected model, food size, repeated portion weights and care plan are confirmed. Choose no new feeder when the existing routine meets the need; an app success message does not prove the pet ate.",
+        "intro": "A late meal and one pet stealing another's food are different problems. Granary's scheduling and One RFID's tagged access should be compared against those jobs rather than treated as a universal ranking. The linked product identities are historical retailer references; check the selected model, supplied parts, seller and returns again. This comparison uses manufacturer documentation and has not measured jamming, access success or portion repeatability.",
+        "decisionGuide": [
+          {
+            "label": "Scheduling only",
+            "detail": "Check Granary PLAF103 with compatible dry food and an individually established feeding plan. Weigh repeated actual dispenses before relying on the setting."
+          },
+          {
+            "label": "Selective access",
+            "detail": "Check One RFID PLAF301's dedicated collar tag and reader with the intended pet. It is not an implanted-microchip reader; other pets' access must be observed."
+          },
+          {
+            "label": "Wet food or a special diet",
+            "detail": "These dry-food models are not substitutes for a documented wet-food system or veterinary feeding instructions. Pause when the food or dietary requirement is unresolved."
+          },
+          {
+            "label": "Away from home",
+            "detail": "Arrange human checks for food received and eaten, water, litter and wellbeing. Verify the exact revision's backup functions rather than assuming normal remote visibility."
+          }
+        ],
+        "sources": [
+          {
+            "name": "PETLIBRO Granary Wi-Fi feeder instructions",
+            "url": "https://petlibro.com/pages/how-the-granary-wifi-feeder-works",
+            "note": "PLAF103 dry-food size and emergency-power restrictions; not an independent reliability test."
+          },
+          {
+            "name": "PETLIBRO portion explanation",
+            "url": "https://petlibro.com/pages/how-much-is-in-one-feeding-portion-plaf001-002-101-102-plaf003-004-plaf005-006-103-203-plaf008-plaf107-plaf108-plaf301",
+            "note": "Portion volume is not a fixed food weight or calorie allowance."
+          },
+          {
+            "name": "PETLIBRO One RFID specifications and FAQ",
+            "url": "https://petlibro.com/products/one-rfid-pet-feeder",
+            "note": "PLAF301 uses its own collar tag and reader, not an implanted microchip. Match the supplied model and backup restrictions."
+          },
+          {
+            "name": "PETLIBRO One RFID V0005 manual",
+            "url": "https://cdn.shopify.com/s/files/1/0252/5197/1119/files/Petlibro-AF301-3L-_US_DE_IT_FR_ES.pdf?v=1774007057",
+            "note": "English battery mode retains Wi-Fi, unlike older product/support wording. Match the received revision before depending on a function."
+          },
+          {
+            "name": "PETLIBRO Granary 2 series",
+            "url": "https://petlibro.com/products/granary-2-series",
+            "note": "Newer weighing and model-specific access options are separate comparisons. Do not transfer their features or battery mode to PLAF103 or PLAF301."
+          },
+          {
+            "name": "PETLIBRO Granary disassembly and cleaning",
+            "url": "https://petlibro.com/pages/how-do-i-disassemble-and-clean-the-granary-smart-feeder-af103-plaf103",
+            "note": "Separate washable removable parts from the powered base; full drying before reassembly."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "Match the food and measure the delivered portion",
+            "body": "The cited PLAF103 and PLAF301 documentation specifies dry food in the 2–15 mm size range. Match the actual shape and texture as well as size, and do not add wet, moist or otherwise unsupported food. A numbered portion represents volume, so different foods can produce different weights. Use the feeding allowance appropriate to the individual pet, weigh repeated dispenses of the actual food and recheck after a food change. This comparison does not prescribe a gram or calorie target."
+          },
+          {
+            "heading": "Test access separately from timing",
+            "body": "One RFID PLAF301 relies on its dedicated collar tag and reader; it does not read an implanted identification chip or arbitrary third-party tags. Observe the intended pet learning access and check whether another pet can reach or steal the meal. Granary scheduling alone does not provide this selective access. A completed app event is not proof that food reached the bowl or that the intended pet consumed it."
+          },
+          {
+            "heading": "Compare a newer model for the feature you need",
+            "body": "PETLIBRO now lists Granary 2 models with weighing, while camera and access features vary across the series. Those are separate models from PLAF103 and One RFID PLAF301. The links here remain those older identities; no newer feature or purchase is silently substituted."
+          },
+          {
+            "heading": "Keep power recovery and care in the plan",
+            "body": "PLAF103's manual disables Wi-Fi and some controls in emergency alkaline-battery operation while retaining saved meals. One RFID needs a separate revision check: its V0005 manual retains Wi-Fi, but product/support wording says otherwise. Leave the received unit's behavior unresolved until its instructions and an actual recovery check agree. Do not infer indefinite battery life or remote visibility. Human care must still cover meals, water, litter and wellbeing even on a short absence."
+          },
+          {
+            "heading": "Make cleaning practical before committing",
+            "body": "Check the chute, bowl, hopper, removable parts and complete drying routine. Granary's instructions distinguish washable components from its powered base, which must not be rinsed or wet-wiped. Follow the selected model's own cleaning instructions rather than transferring a dishwasher or immersion claim from another feeder. Keep the existing feeding arrangement when it already provides suitable meals and care; pause for unresolved food fit, access or portion evidence."
+          }
+        ],
+        "methodology": [
+          "Manufacturer instructions and model/portion tables reviewed October 26, 2026; no physical dispense, jam, tamper or access test.",
+          "Compare meal scheduling and selective access as separate needs; no single model is required for every household.",
+          "Retailer identities are historical references. Live seller, stock, included tag/reader and returns must be confirmed separately."
+        ],
+        "productSlugs": [
+          "petlibro-granary-automatic-cat-feeder",
+          "petlibro-one-rfid-smart-feeder"
+        ],
+        "faqs": [
+          {
+            "question": "Can these two feeders dispense wet food?",
+            "answer": "No wet-food use is established here: the cited Granary PLAF103 and One RFID PLAF301 documentation specifies dry food. A separate wet-food design needs its own food, cooling, holding-time and cleaning instructions; do not assume all such designs use the same cooling method."
+          },
+          {
+            "question": "Does one portion mean the same number of grams?",
+            "answer": "No. The manufacturer's setting describes volume, and weight varies with the actual food. Establish the pet's feeding plan separately, weigh repeated dispenses and recheck after a food change. Do not infer calories or a dietary prescription from the portion count."
+          },
+          {
+            "question": "Does RFID mean it reads my pet's microchip?",
+            "answer": "No. One RFID PLAF301 uses its dedicated collar tag and reader. Verify that the supplied parts and the intended pet's use work for the access problem; Granary is the scheduling reference here."
+          },
+          {
+            "question": "Should someone still check on my pet during a short trip?",
+            "answer": "Yes. Arrange human care to confirm meals are received and eaten and to check water, litter and wellbeing. A feeder, camera, app log or emergency battery does not establish that these needs have been met."
+          }
+        ]
+      },
+      "beforeSha256": "57b55409bbcd77f8d951f1cb95f58bd8f4d97f354f2e802fe603190f37f20cd9",
+      "afterSha256": "93239631a7a5903351332ddc9690a2275ce44b72d083ba443851c4d51e3da61a"
     }
   ],
   "guides": 6,
-  "sections": 36,
-  "tables": 6,
-  "relatedProductNotes": 2,
-  "unchangedNeighborProducts": 9,
+  "guideSections": 37,
+  "guideTables": 6,
+  "relatedProductNotes": 8,
+  "relatedRoundups": 3,
   "knownInternalGuideLinksPresent": true,
   "checks": {
-    "exactModelGuides": 7,
-    "mutationGuardCases": 105,
-    "taskLinkDefaultsSuppressed": 4,
-    "typecheck": "passed after eight local page changes",
-    "scopedLint": "passed",
-    "diffs": "no trailing-whitespace errors"
+    "at": "2026-10-26T02:16:41.739Z",
+    "status": "passed",
+    "typecheck": {
+      "exitCode": 0,
+      "incremental": false
+    },
+    "scopedEslint": {
+      "exitCode": 0
+    },
+    "guidePurchase": {
+      "exitCode": 0,
+      "exactModels": 7,
+      "identityGuardCases": 105,
+      "taskLinkDefaultSuppression": 4
+    },
+    "blockedOfferDates": {
+      "exitCode": 0,
+      "cases": 4,
+      "datedHoldUnchanged": true,
+      "blockedOffersRemainSuppressed": true
+    },
+    "diffWhitespace": {
+      "exitCode": 0
+    },
+    "mainSearchExport": {
+      "exitCode": 0,
+      "totalPages": 1140
+    },
+    "scope": "Code/data checks only. Not every-page HTML, purchase or display acceptance."
   },
   "remaining": [
-    "Search snippet decisions and actual query evidence limits.",
-    "Remaining source/model boundaries and relevant roundup consistency.",
-    "New packaged build and every-page HTTP, purchase identity and dual-width visual acceptance.",
-    "All remaining work stays local until final combined release."
+    "Summer exact ASIN/model/manual applicability",
+    "Nanit historical Essentials bundle identity/current offer",
+    "One RFID received revision and conflicting battery Wi-Fi/dimension documents"
   ],
   "deployed": false,
-  "wholeTaskComplete": false
+  "wholeTaskComplete": false,
+  "acceptedAt": "2026-10-26T07:28:34.331223+00:00",
+  "acceptanceEvidence": "source04-local-acceptance.json"
 }

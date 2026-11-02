@@ -5,6 +5,7 @@ import { AffiliateButton } from "@/components/AffiliateButton";
 import { AmazonListingFreshness } from "@/components/AmazonCreatorsListing";
 import { JsonLd } from "@/components/JsonLd";
 import { Disclosure } from "@/components/LayoutParts";
+import { ProductSidebar } from "@/components/ProductSidebar";
 import { BaseMarketEditionLinks } from "@/components/MarketExperience";
 import { SearchOpportunityBacklinks, SearchOpportunityBlock } from "@/components/SearchOpportunityBlock";
 import { findProduct, siteGuides, siteProducts, siteRoundups } from "@/lib/content";
@@ -12,10 +13,17 @@ import { reviewCommerceProduct } from "@/lib/commerce-paths";
 import { buyerFacingBody, buyerFacingHeading, buyerFacingSummary } from "@/lib/conversion-copy";
 import { findAmazonOfferBlock } from "@/lib/amazon-offer-blocks";
 import { productEvidencePresentation } from "@/lib/evidence";
+import { editorialCategoryImageCaption, editorialImageAlt, isEditorialCategoryImage, editorialImageForDisplay } from "@/lib/editorial-image";
 import { effectiveContentUpdatedAt, findSearchOpportunity, reviewedSearchDescription, searchOpportunityMetaDescription } from "@/lib/search-opportunities";
 import { breadcrumbSchema, pageMetadata, productNotesSchema, productPageTitle } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 import type { Product } from "@/lib/types";
+
+function comparisonListingLabel(product: Product) {
+  const asin = (product.asin ?? product.specs.ASIN)?.trim();
+  if (asin && /^[A-Z0-9]{10}$/i.test(asin)) return `ASIN ${asin}`;
+  return product.specs["Retailer listing anchor"] ?? `Category reference: ${product.category}`;
+}
 
 function siteContext(siteKey: string) {
   if (siteKey === "pet") return "pet-care routine";
@@ -81,7 +89,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
   const effectiveProduct = effectiveUpdatedAt === product.updatedAt ? product : { ...product, updatedAt: effectiveUpdatedAt };
   const displayName = product.amazonTitle ?? product.name;
   const pageTitle = productPageTitle(product);
-  const displayImage = product.amazonImage ?? product.image;
+  const displayImage = editorialImageForDisplay(product.amazonImage ?? product.image);
   const editorialDiagram = displayImage.endsWith(".svg") && product.imageAlt?.startsWith("Editorial ");
   const asin = product.asin ?? product.specs.ASIN;
   const compatibilityChecks = product.evidence.slice(0, 5);
@@ -107,7 +115,6 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
     .filter(([key, value]) => key !== "Link status" && Boolean(value))
     .slice(0, 8);
   const comparisonRows = [product, ...comparisonProducts].slice(0, 4);
-  const hasSpecificSkipSection = product.editorialSections?.some((section) => section.heading.toLowerCase().includes("who should skip"));
   const purchaseChecks = beforeYouBuyChecks(site.key);
 
   return (
@@ -140,7 +147,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                 </div>
                 {commerceProduct && commerceOffer ? (
                   <div className="mt-4 rounded-md border border-[var(--border)] bg-white p-4" aria-label="First-screen retailer option" data-first-viewport-commerce="true">
-                    <p className="text-xs font-bold uppercase text-[var(--muted)]">{commerceIsAlternative ? "Different product · verified alternative" : "Current buying option"}</p>
+                    <p className="text-xs font-bold uppercase text-[var(--muted)]">{commerceIsAlternative ? "Different product · separate buying option" : "Current buying option"}</p>
                     <p className="mt-2 font-bold">{commerceProduct.amazonTitle ?? commerceProduct.name}</p>
                     {commerceIsAlternative ? <p className="mt-1 text-sm leading-5 text-[var(--muted)]">The exact reviewed listing is paused; this button is for the named alternative above.</p> : null}
                     {commerceProduct.purchaseCheck ? <p className="mt-2 text-sm leading-6 text-[var(--muted)]" data-review-purchase-check="true">{commerceProduct.purchaseCheck}</p> : null}
@@ -180,10 +187,21 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                     data-commerce-paused={!commerceOffer ? "true" : undefined}
                   >
                     <p className="font-bold">Amazon purchase link paused</p>
-                    <p className="mt-1">
-                      {offerBlock.reason} Observed on {offerBlock.checkedAt}: {offerBlock.observedListing}. We will restore a
-                      purchase button only after the exact product and attribution path are verified again.
+                    <p className="mt-1" data-review-purchase-check={product.purchaseCheck ? "true" : undefined}>
+                      {product.purchaseCheck ?? offerBlock.reason}
                     </p>
+                    <p className="mt-2 text-xs">
+                      Reviewed {offerBlock.checkedAt}.
+                      {!product.purchaseCheck ? ` Recorded reference: ${offerBlock.observedListing}.` : null}
+                    </p>
+                  </div>
+                ) : !commerceOffer && product.offers.length === 0 && product.purchaseCheck ? (
+                  <div
+                    className="mt-5 rounded-md border border-amber-300 bg-amber-50 p-4 text-sm leading-6 text-amber-950"
+                    data-commerce-paused="true"
+                  >
+                    <p className="font-bold">Purchase link paused</p>
+                    <p className="mt-1" data-review-purchase-check="true">{product.purchaseCheck}</p>
                   </div>
                 ) : null}
                 {commerceOffer ? (
@@ -211,11 +229,13 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
               </div>
               <div>
                 <div className={`relative w-full overflow-hidden rounded-md bg-[var(--surface-muted)] ${editorialDiagram ? "aspect-[18/11]" : "aspect-[4/3]"}`}>
-                  <Image className={editorialDiagram ? "object-contain" : "object-cover"} src={displayImage} alt={product.imageAlt ?? displayName} fill priority sizes={editorialDiagram ? "(min-width: 1024px) 700px, 100vw" : "(min-width: 768px) 300px, 100vw"} />
+                  <Image className={editorialDiagram ? "object-contain" : "object-cover"} src={displayImage} alt={editorialImageAlt(displayImage, product.imageAlt ?? displayName)} fill priority sizes={editorialDiagram ? "(min-width: 1024px) 700px, 100vw" : "(min-width: 768px) 300px, 100vw"} />
                 </div>
                 {editorialDiagram ? (
                   <p className="mt-2 text-xs leading-5 text-[var(--muted)]">Editorial decision diagram; not a product photograph. <a className="font-semibold underline underline-offset-2" href={displayImage} target="_blank" rel="noopener noreferrer">Open full diagram</a></p>
-                ) : displayImage.includes("-realistic.webp") || product.imageAlt?.startsWith("Editorial ") ? (
+                ) : isEditorialCategoryImage(displayImage) ? (
+                  <p className="mt-2 text-xs leading-5 text-[var(--muted)]">{editorialCategoryImageCaption}</p>
+                ) : product.imageAlt?.startsWith("Editorial ") ? (
                   <p className="mt-2 text-xs leading-5 text-[var(--muted)]">
                     Editorial image for visual context; the linked listing may have a different product appearance or configuration.
                   </p>
@@ -366,14 +386,6 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                   <li key={con}>{con}</li>
                 ))}
               </ul>
-              {!hasSpecificSkipSection ? (
-                <>
-                  <h2>Who should skip it</h2>
-                  <p>
-                    Skip it if the trade-offs above touch your main use case. The better buy is usually the product whose size, setup, accessories, and return path match your situation.
-                  </p>
-                </>
-              ) : null}
               {product.alternatives?.length ? (
                 <>
                   <h2>Also compare</h2>
@@ -395,7 +407,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                           <th className="px-4 py-3" scope="col">Best for</th>
                           <th className="px-4 py-3" scope="col">Check first</th>
                           <th className="px-4 py-3" scope="col">Price band</th>
-                          <th className="px-4 py-3" scope="col">Exact listing</th>
+                          <th className="px-4 py-3" scope="col">Listing / reference</th>
                         </tr>
                       </thead>
                       <tbody className="divide-y divide-[var(--border)]">
@@ -410,7 +422,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                             <td className="px-4 py-4 text-[var(--muted)]">{item.cons[0]}</td>
                             <td className="px-4 py-4 font-bold">{item.priceBand}</td>
                             <td className="px-4 py-4 text-[var(--muted)]">
-                              {item.asin ? `ASIN ${item.asin}` : item.specs["Retailer listing anchor"] ?? item.category}
+                              {comparisonListingLabel(item)}
                             </td>
                           </tr>
                         ))}
@@ -483,16 +495,16 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
               ) : null}
             </div>
           </article>
-          <aside className="min-w-0 space-y-5 lg:sticky lg:top-24 lg:self-start">
+          <ProductSidebar>
             <Disclosure site={site} />
-            <div className="panel p-5" id="buying-options">
+            <div className="panel p-5" id="buying-options" data-sticky-commerce-suppress={product.offers.length > 0 || commerceOffer ? "" : undefined}>
               <h2 className="text-xl font-bold">Buying options</h2>
               <div className="mt-4 space-y-3">
                 {product.offers.length === 0 && !commerceOffer ? (
                   <p className="text-sm leading-6 text-[var(--muted)]">
-                    {offerBlock
+                    {product.purchaseCheck ?? (offerBlock
                       ? "No purchase button is shown while the exact Amazon product identity or availability is unresolved."
-                      : "Buying links are being updated."}
+                      : "Buying links are being updated.")}
                   </p>
                 ) : null}
                 {product.offers.map((offer) => (
@@ -507,7 +519,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                 ))}
                 {product.offers.length === 0 && commerceProduct && commerceOffer ? (
                   <div className="rounded-md border border-[var(--border)] p-3">
-                    <p className="text-xs font-bold uppercase text-[var(--muted)]">Verified alternative—not the product discussed above</p>
+                    <p className="text-xs font-bold uppercase text-[var(--muted)]">Different product · separate buying option</p>
                     <p className="mt-1 font-bold">{commerceProduct.amazonTitle ?? commerceProduct.name}</p>
                     <p className="mt-1 text-sm text-[var(--muted)]">{commerceOffer.priceNote}</p>
                     {commerceProduct.purchaseCheck ? <p className="mt-2 text-sm leading-6 text-[var(--muted)]" data-review-purchase-check="true">{commerceProduct.purchaseCheck}</p> : null}
@@ -540,7 +552,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                   ))}
               </dl>
             </div>
-          </aside>
+          </ProductSidebar>
         </div>
       </div>
     </main>

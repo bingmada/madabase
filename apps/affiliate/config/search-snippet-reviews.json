@@ -34,7 +34,9 @@
     "description": "Keep Xfinity's gateway, bridge it to your router, or replace the modem? Compare routing, extender and hotspot limits before buying hardware."
   },
   "network:guide:pass-through-ethernet-crimping-tools-buying-guide": {
-    "description": "Match Klein VDV226-110 to the correct Pass-Thru plugs, cable and blade. Use the connector matrix, check kit contents, and test each termination."
+    "description": "Choose the Klein VDV226-110 only as part of a matching cable, connector and test workflow.",
+    "answer": "Buy the crimper and modular plugs as a verified system. Pass-through describes conductors extending beyond the plug for visual ordering and flush trimming; it does not guarantee compatibility across brands, gauges, solid or stranded cable, shielding, or large-diameter Cat6A. Permanent in-wall cable is often better terminated on jacks or patch panels.",
+    "referenceDate": "November 1, 2026"
   },
   "smarthome:guide:aqara-hub-m3-home-assistant-matter-guide": {
     "description": "Connect Aqara M3 to Home Assistant through Matter. Check bridge roles, IPv6, mDNS and Thread, and whether an existing hub already does the job."
@@ -165,9 +167,9 @@
     "referenceDate": "October 26, 2026"
   },
   "pet:product:petlibro-one-rfid-smart-feeder": {
-    "description": "One RFID purchase remains paused. Verify its dedicated tag and reader, actual portions and revision-specific battery Wi-Fi before relying on it.",
-    "answer": "Compare One RFID only for a real selective-access need after the intended pet, dedicated tag/reader and food checks pass. The historical ASIN purchase remains paused, and backup connectivity needs revision-specific confirmation. Keep an effective current routine when access hardware is unnecessary.",
-    "referenceDate": "October 26, 2026"
+    "description": "A PLAF301W collar-tag feeder for a real selective-access and scheduled dry-food need. The original ASIN has a current new offer; battery-mode Wi-Fi and received-revision details still need confirmation.",
+    "answer": "Compare One RFID PLAF301W for normal corded use when one dedicated collar tag and reader fit the intended pet and actual dry-food portions work. The historical ASIN has a current new offer. Battery-mode Wi-Fi remains unresolved by revision; do not depend on remote visibility during an outage. Keep an effective current routine when selective-access hardware is unnecessary.",
+    "referenceDate": "November 1, 2026"
   },
   "pet:guide:pet-camera-without-too-many-subscriptions": {
     "description": "Separate camera activation, free live view, local-card recording and cloud plans. Compare the billed term and keep post-cancellation access unknown when unclear.",
@@ -182,7 +184,7 @@
   "pet:guide:dog-bed-for-small-apartment-guide": {
     "description": "Measure usable sleeping area and the full dog-bed footprint. Check each layer’s care and keep a suitable bed; a hair roller is a separate cleanup tool.",
     "answer": "Measure the dog’s ordinary sleeping shape and the bed’s usable inner area, then tape out its full outer footprint and access route. Bolsters can take space away from the sleeping surface. Confirm the exact size and which layers may be washed; keep a suitable existing bed if replacement only adds bulk. A hair roller cleans fabric and does not substitute for a bed.",
-    "referenceDate": "October 26, 2026"
+    "referenceDate": "October 31, 2026"
   },
   "pet:guide:pet-camera-privacy-and-placement-guide": {
     "description": "Check pet-camera view, account sharing, authentication, recording states and cable placement. Model-specific privacy controls do not prove complete security.",
@@ -200,9 +202,9 @@
     "referenceDate": "October 26, 2026"
   },
   "pet:product:neakasa-p1-pro-pet-grooming-vacuum": {
-    "description": "Check P1 Pro coat fit, pet response and filter drying. Manufacturer noise values do not predict acceptance; keep other kit specifications separate.",
+    "description": "A corded P1 Pro grooming-kit reference with separate brushing, deshedding, clipping and cleanup tools. Individual pet acceptance and exact filter care matter more than accessory count.",
     "answer": "Consider P1 Pro only when the pet accepts the sound and airflow, the chosen tool suits its coat and the household can clean and fully dry the filters. It is not a universal mat-removal or shaving solution, and a manufacturer acoustic figure does not establish quietness for the individual animal.",
-    "referenceDate": "October 26, 2026"
+    "referenceDate": "November 1, 2026"
   },
   "pet:product:furbo-360-dog-camera": {
     "description": "Is Furbo free? Standalone basic features differ from the linked paid-activation 360 Dog offer. Check ongoing terms; post-cancellation access is unresolved.",
@@ -230,19 +232,19 @@
     "referenceDate": "October 26, 2026"
   },
   "pet:roundup:best-pet-cameras-for-apartments": {
-    "description": "Compare basic pet check-ins with treat interaction. Keep Wyze’s identity hold and distinguish paid-activation Furbo from Standalone and newer camera models.",
-    "answer": "Use a basic check-in or local-recording workflow when interaction is unnecessary; compare Furbo only when treat interaction and its applicable plan are useful. The historical Wyze ASIN remains paused for identity drift. The linked Furbo is paid-activation hardware, not confirmed subscription-free equipment. Keep a suitable existing camera when neither adds value.",
-    "referenceDate": "October 26, 2026"
+    "description": "Compare the matched Wyze Cam Pan v3 White 1-pack with Furbo 360 paid activation, recording tasks, minimum term and setup requirements.",
+    "answer": "Choose Wyze Cam Pan v3 for ordinary room check-ins or supported local-card recording when its 2.4 GHz setup and account requirements fit. Choose Furbo 360 only when treat interaction justifies paid activation and the selected minimum term. The Wyze link is now the matched White 1-pack B0B9TWY11Q; Furbo B0BWN22T25 is not a subscription-free camera. Keep a suitable existing camera when neither adds value.",
+    "referenceDate": "October 31, 2026"
   },
   "pet:roundup:best-dog-beds-and-comfort-upgrades": {
-    "description": "Separate dog-bed fit from surface-hair cleanup. PetFusion remains held; ChomChom Black Classic does not replace a bed, cover washing or deep cleaning.",
-    "answer": "Choose a bed for usable sleeping area, room access and exact layer care. Choose a hair-removal tool only for compatible fabric cleanup. PetFusion’s historical purchase remains paused because its exact SKU and care are unresolved; ChomChom Black Classic does not replace a bed, washing or deep cleaning. Keep suitable existing equipment when replacement adds no value.",
-    "referenceDate": "October 26, 2026"
+    "description": "Compare PetFusion Large Brown bed fit and layer care with Black Classic surface-hair cleanup. Corrected Amazon links serve two different tasks.",
+    "answer": "Choose PetFusion Large Brown when its usable sleeping area, entry and room footprint fit the dog and the exact layer care is acceptable. Choose ChomChom Black Classic only for a separate compatible-fabric hair-removal task. The bed link now points to B017J9KPGS/PF-IBL2; a roller still cannot replace a bed, washing or deep cleaning. Keep suitable existing equipment when replacement adds no value.",
+    "referenceDate": "October 31, 2026"
   },
   "pet:roundup:furbo-360-vs-wyze-cam-pan-v3-for-pets": {
-    "description": "Compare Furbo’s paid-activation contract with Pan v3 recording tasks. Keep the held Wyze identity, cancellation unknowns and newer models separate.",
-    "answer": "Compare Furbo when treat interaction and an acceptable ongoing contract are part of the task. Compare the documented Pan v3 workflow when ordinary check-ins or local-card recordings matter instead. The historical Wyze ASIN is held for a different observed camera identity, and the linked Furbo is paid-activation hardware; neither is a verified free-use substitute for the other.",
-    "referenceDate": "October 26, 2026"
+    "description": "Compare Furbo 360 paid activation with the matched Wyze Pan v3 White 1-pack, local-card storage, setup and ongoing terms.",
+    "answer": "Choose Wyze Cam Pan v3 for ordinary room check-ins or supported local-card recording when its 2.4 GHz setup and account requirements fit. Choose Furbo 360 only when treat interaction justifies paid activation and the selected minimum term. The Wyze link is now the matched White 1-pack B0B9TWY11Q; Furbo B0BWN22T25 is not a subscription-free camera. Keep a suitable existing camera when neither adds value.",
+    "referenceDate": "October 31, 2026"
   },
   "pet:guide:pet-gps-tracker-subscription-cost-coverage-guide": {
     "description": "Compare pet GPS tracker subscription totals, renewal and actual coverage. Check DOG 6 collar fit and keep a practical recovery plan when no tracker fits.",
@@ -255,18 +257,954 @@
     "referenceDate": "October 26, 2026"
   },
   "pet:product:tractive-dog-6-gps-tracker": {
-    "description": "Check DOG 6 subscription totals, route coverage and battery conditions. Separate XL models and keep exact hardware, seller and return checks explicit.",
-    "answer": "Consider DOG 6 only when the exact received model fits the dog and collar, the full subscription term is affordable, and a permitted evaluation can confirm useful updates on the required routes. Keep physical containment and an ordinary recovery plan. We have not verified this historical ASIN’s current offer or exact radio revision.",
-    "referenceDate": "October 27, 2026"
+    "description": "A collar-mounted GPS and cellular tracker with a required paid plan. Its value depends on actual route coverage, collar fit, charging and a response plan; a country-support claim is not a route test.",
+    "answer": "Compare DOG 6 Black when the model fits the dog and collar, the full US subscription term is affordable and a permitted evaluation can confirm useful updates on the required routes. A current new Amazon.com offer was observed. Exact radio revision, route performance and battery endurance remain untested; keep physical containment and an ordinary recovery plan.",
+    "referenceDate": "November 1, 2026"
   },
   "pet:product:neakasa-m1-plus-self-cleaning-litter-box": {
-    "description": "Check M1 Plus dimensions, cat fit and received version. Current Plus details and the linked older M1 manual differ; confirm space and accessories before buying.",
+    "description": "An open-top automatic-litter-box reference. The current M1 Plus page and its linked older M1 manual differ, so the received version and applicable instructions matter more than a generic M1 label.",
     "answer": "Consider an M1 Plus only after confirming the exact received version, cat eligibility, stable space, applicable manual and the litter/liner package. Open-top construction is not proof that every large cat fits or that cleaning is risk free. Keep a suitable conventional box when acceptance or documentation is unresolved.",
-    "referenceDate": "October 27, 2026"
+    "referenceDate": "November 1, 2026"
   },
   "pet:product:petkit-puramax-2-self-cleaning-litter-box": {
-    "description": "Check PuraMax 2 cat age and weight limits, exact manual, sifter and spray bundle. Kitten Mode does not override overall eligibility; keep a backup box.",
+    "description": "An enclosed automatic-litter-box reference whose reviewed PURA MAX 2 manual sets overall cat eligibility and distinguishes basic from premium accessories. Kitten Mode is not a workaround for an ineligible cat.",
     "answer": "Consider the exact PuraMax 2 only after the cat meets the applicable age and weight guidance, accepts the machine, and the owner can maintain sensor space, correct litter and cleaning. The reviewed manual recommends against use below six months or 1.5 kg. Keep a suitable conventional box during growth, transition or any unresolved condition.",
-    "referenceDate": "October 27, 2026"
+    "referenceDate": "November 1, 2026"
+  },
+  "homeoffice:guide:mechanical-office-keyboards-buying-guide": {
+    "title": "Mechanical Keyboards for Office Work: Height, Noise and Layout",
+    "description": "Choose an office keyboard by layout, height, switch sound and software. Compare standard-height mechanical, low-profile mechanical and scissor-switch designs.",
+    "reviewedAt": "2026-10-28",
+    "batch": "BODY-01",
+    "queryEvidence": "body01-gsc-exact-page-queries.json",
+    "rationale": "Page-specific answer and primary-source boundary correction. Missing or zero query rows are not evidence of search demand or CTR uplift.",
+    "answer": "A mechanical keyboard can also be low profile: mechanism and height are separate choices. Choose the layout you need, then compare the actual front height, switch feel and sound at your desk. A standard-height board suits people who value its switch and keycap options; a low-profile mechanical or scissor-switch board may fit a shallow desk better. Keep your current keyboard if layout, comfort and calls already work well.",
+    "referenceDate": "October 28, 2026"
+  },
+  "homeoffice:guide:wireless-number-pads-buying-guide": {
+    "title": "Wireless Number Pads: Connection, Mac/Windows and Key Layout",
+    "description": "Choose a number pad by its exact keys, Mac or Windows behavior and connection. Separate a USB receiver from Bluetooth and keep a no-purchase option.",
+    "reviewedAt": "2026-10-28",
+    "batch": "BODY-01",
+    "queryEvidence": "body01-gsc-exact-page-queries.json",
+    "rationale": "Page-specific answer and primary-source boundary correction. Missing or zero query rows are not evidence of search demand or CTR uplift.",
+    "answer": "Buy a separate number pad when frequent numeric entry needs a movable ten-key cluster or a compact keyboard keeps the mouse closer. Check the exact keys and application behavior on every required OS. Bluetooth, a 2.4 GHz receiver and USB wired mode are different capabilities; one does not imply the others. Test an on-screen pad or the existing full-size keyboard first if number entry is occasional.",
+    "referenceDate": "October 28, 2026"
+  },
+  "homeoffice:guide:business-usb-c-monitors-vs-alternatives": {
+    "description": "Dell P2425HE offers a documented USB-C upstream video and up-to-90W path. Check host support and seller terms; P2426H downstream USB-C is different.",
+    "referenceDate": "2026-11-01"
+  },
+  "homeoffice:guide:dual-screen-portable-monitors-vs-alternatives": {
+    "title": "Dual Portable Monitors vs One Screen: Connections and Desk Fit",
+    "description": "Compare two portable panels with one screen by independent video paths, driver needs, support, power and packed weight. Keep exact model limits separate.",
+    "reviewedAt": "2026-10-28",
+    "batch": "BODY-01",
+    "queryEvidence": "body01-gsc-exact-page-queries.json",
+    "rationale": "Page-specific answer and primary-source boundary correction. Missing or zero query rows are not evidence of search demand or CTR uplift.",
+    "answer": "Choose two portable panels only when the extra independent workspace is useful enough to justify the total weight, power and setup. Start with the exact laptop and connection design: native video, MST and driver-based USB graphics have different limits. Choose one portable screen when it supplies enough extra workspace; use a conventional desk display when the equipment rarely moves.",
+    "referenceDate": "October 28, 2026"
+  },
+  "homeoffice:guide:dual-monitor-kvm-switches-vs-alternatives": {
+    "title": "Dual-Monitor KVM vs USB Switch: Map Both Computers First",
+    "description": "Map both computers, two displays and USB devices before choosing a KVM. Compare manual monitor inputs and check connector direction and EDID.",
+    "reviewedAt": "2026-10-28",
+    "batch": "BODY-01",
+    "queryEvidence": "body01-gsc-exact-page-queries.json",
+    "rationale": "Page-specific answer and primary-source boundary correction. Missing or zero query rows are not evidence of search demand or CTR uplift.",
+    "answer": "Use a dual-monitor KVM when both computers provide the required two display paths and frequent switching justifies the cables and compatibility checks. A USB switch plus the monitors' own inputs is enough when manual video switching is acceptable. Match each input and output direction, target display mode and USB device; two sockets alone do not prove two independent pictures or stable EDID.",
+    "referenceDate": "October 28, 2026"
+  },
+  "homeoffice:guide:desktop-label-printers-buying-guide": {
+    "description": "Choose between Rollo X1040 4×6 shipping labels, narrow-label printers and existing sheet labels; match device, media and software before buying.",
+    "referenceDate": "2026-11-01"
+  },
+  "homeoffice:guide:low-profile-keyboards-vs-alternatives": {
+    "description": "Compare low-profile scissor and mechanical keyboards by front height, layout, sound, connection and replacement parts. Keep the current board when it fits.",
+    "answer": "Low profile describes height, not the key mechanism. Choose scissor keys for familiar short travel or low-profile mechanical keys for a particular switch feel, then check the actual front height, layout, sound and connection. A thin case alone does not establish comfort or silence. Keep a correctly positioned standard-height keyboard when it already meets the job.",
+    "referenceDate": "October 28, 2026",
+    "batch": "BODY-01-related"
+  },
+  "homeoffice:guide:office-paper-shredders-vs-alternatives": {
+    "description": "Compare a paper shredder with a shredding service by volume, security requirements, feed limits and total effort. See when to keep the current route.",
+    "answer": "Choose a shredder for a manageable recurring paper workload when its documented security level, feed rules, run/cool cycle and safe placement fit the job. Consider a service for accumulated boxes, infrequent clear-outs or a documented destruction process the office cannot provide. Price collection, storage and staff time as well as the machine. The recorded Locksworth 110-sheet listing is currently unavailable in the US; its purchase shortcut is paused.",
+    "referenceDate": "October 28, 2026",
+    "batch": "BODY-02",
+    "queryEvidence": "body02-gsc-exact-page-queries.json; exact page Sep28-Oct25, zero impressions/clicks and no query rows. Accuracy/intent improvement, no CTR-lift claim."
+  },
+  "homeoffice:guide:desktop-laminators-buying-guide": {
+    "description": "Match pouch size, film thickness and heat limits. Check the exact Amazon Basics 9-inch model, cold-process alternatives and reasons to keep a simpler option.",
+    "answer": "Choose a laminator only after the document, pouch and supported process match. The recorded Amazon Basics 9-inch B09RBHPLB7 is a thermal model with 3 mil and 5 mil settings and a manual release lever; its instructions exclude cold lamination and self-adhesive pouches. Use a sleeve, suitable cold process or service when heat, size or occasional use makes a machine unnecessary. Confirm the exact selected size and current offer before buying.",
+    "referenceDate": "October 28, 2026",
+    "batch": "BODY-02",
+    "queryEvidence": "body02-gsc-exact-page-queries.json; exact page Sep28-Oct25, zero impressions/clicks and no query rows. Accuracy/intent improvement, no CTR-lift claim."
+  },
+  "network:guide:indoor-wifi-access-points-vs-alternatives": {
+    "description": "Compare a wired AP, wireless mesh and mesh with Ethernet backhaul. Check power, management, clients and the exact EAP650 revision before buying.",
+    "answer": "Choose wired access points when Ethernet reaches useful radio positions and you can support their power and management. Choose wireless mesh when cabling is impractical and each node has a reliable upstream radio link. A mesh kit with Ethernet backhaul is a third valid route. Compare these connection paths first: the word mesh alone does not establish capacity, roaming or compatibility with an existing system.",
+    "referenceDate": "October 28, 2026",
+    "batch": "BODY-02",
+    "queryEvidence": "body02-gsc-exact-page-queries.json: exactSep28-Oct25 zeroimpressions/clicks and noqueries. Accuracy/intent repair only."
+  },
+  "network:guide:outdoor-wifi-access-points-vs-alternatives": {
+    "description": "Keep indoor equipment indoors. Compare outdoor Wi-Fi and a building bridge by exposure, power, upstream connection and real client coverage.",
+    "answer": "Keep an indoor AP indoors when it already covers the required outdoor area. For exposed installation, choose equipment whose exact environmental, mounting, cable-entry and power instructions fit the site; an overhang does not turn an indoor-only AP into an outdoor model. A remote building needing its own network link may require a bridge and a local AP rather than one broad-coverage outdoor radio.",
+    "referenceDate": "October 28, 2026",
+    "batch": "BODY-02",
+    "queryEvidence": "body02-gsc-exact-page-queries.json: exactSep28-Oct25 zeroimpressions/clicks and noqueries. Accuracy/intent repair only."
+  },
+  "network:guide:point-to-point-wireless-bridges-vs-alternatives": {
+    "description": "Compare a wireless bridge with fiber or Ethernet by clearance, complete installation and capacity. Check EAP211 hardware versions before choosing PoE.",
+    "answer": "A wireless bridge can suit a clear, serviceable path when cabling is impractical. A planned fiber or Ethernet route can suit a permanent link when installation and electrical requirements are resolved. Compare the complete endpoints, remote-side network and recovery work. Check the exact bridge revision: EAP211 V1 and the current V3 do not have identical PoE support, and the historical Amazon ASIN does not establish the version received.",
+    "referenceDate": "October 28, 2026",
+    "batch": "BODY-02",
+    "queryEvidence": "body02-gsc-exact-page-queries.json: exactSep28-Oct25 zeroimpressions/clicks and noqueries. Accuracy/intent repair only."
+  },
+  "network:guide:wifi-range-extenders-vs-alternatives": {
+    "description": "Compare an extender, compatible mesh and wired AP by upstream signal, placement and workload. See why the unclear historical repeater link is paused.",
+    "answer": "An extender can help one weak area when it has a reliable connection back to the router. Use a compatible mesh design for coordinated multi-node coverage, or a wired AP when Ethernet reaches the needed area. Keep the existing setup if repositioning solves the problem. The historical Aodcaopul ASIN's current title and used-only offer no longer support a clear model recommendation, so its purchase link is paused.",
+    "referenceDate": "October 28, 2026",
+    "batch": "BODY-02",
+    "queryEvidence": "body02-gsc-exact-page-queries.json: exactSep28-Oct25 zeroimpressions/clicks and noqueries. Accuracy/intent repair only."
+  },
+  "network:guide:usb-wifi-adapters-buying-guide": {
+    "description": "Choose USB Wi-Fi, PCIe or Ethernet by exact OS support, driver, port and antenna position. Keep Archer T2U Plus separate from newer Wi-Fi adapters.",
+    "answer": "Choose USB Wi-Fi when a supported adapter adds the needed wireless connection without opening the computer. Compare a PCIe card for a suitable desktop, and Ethernet when a cable route meets the job. Check the exact OS, hardware revision and driver first. The historical Archer T2U Plus is a Wi-Fi 5 USB 2.0 family; current download availability does not establish support for a modern Mac or give it a newer adapter's features.",
+    "referenceDate": "October 28, 2026",
+    "batch": "BODY-02",
+    "queryEvidence": "body02-gsc-exact-page-queries.json: exactSep28-Oct25 zeroimpressions/clicks and noqueries. Accuracy/intent repair only."
+  },
+  "network:guide:moca-network-adapters-vs-alternatives": {
+    "description": "MoCA or another route? Check private coax, endpoint count and DOCSIS 3.1/4.0 filter limits before buying a MA2500D adapter or pair.",
+    "answer": "Consider MoCA when the rooms share usable private coax and both ends can join a compatible MoCA LAN. Keep Ethernet when a cable already reaches the room; compare mesh or a tested powerline link when coax is unusable. MA2500D is a bridge with a 2.5 GbE port, not a modem, router or Wi-Fi access point. For DOCSIS 3.1/4.0 service, establish the provider-approved frequency and wiring plan before adding a MoCA filter.",
+    "referenceDate": "October 29, 2026"
+  },
+  "network:guide:powerline-network-adapters-vs-alternatives": {
+    "description": "Compare powerline with Ethernet, MoCA and mesh using actual outlets. Check TPL-406E2K AV500 speed and revision limits before an outlet trial.",
+    "answer": "Try powerline when a cable route and usable coax are impractical, the intended outlets can support a link and the return conditions allow a meaningful trial. TPL-406E2K is an AV500 kit; the reviewed V2 instructions describe 10/100 Ethernet behavior, so AV500 does not mean a 500 Mbps wired port. Keep Ethernet, usable MoCA or adequate Wi-Fi when it already serves the room. Actual performance on your outlet pair remains unknown until tested.",
+    "referenceDate": "October 29, 2026"
+  },
+  "network:guide:sfp-plus-network-switches-vs-alternatives": {
+    "description": "SFP+ or copper 10 GbE? Count fast endpoints, check optics/DACs and distinguish NICGIGA S25-0802 mixed 2.5 GbE ports from managed or PoE models.",
+    "answer": "Choose SFP+ when the devices and cable path can use compatible optics or a DAC; choose copper 10 GbE when the actual endpoints and cabling require RJ45 at that speed. The selected NICGIGA S25-0802 has eight 2.5 GbE RJ45 ports and two 10G SFP+ slots. It is an unmanaged mixed-port switch, not ten copper 10 GbE ports or a managed PoE switch. Keep Gigabit when it already meets the workload.",
+    "referenceDate": "October 29, 2026"
+  },
+  "network:guide:ethernet-network-interface-cards-vs-alternatives": {
+    "description": "PCIe or USB Ethernet? Check the real slot, controller, OS driver and link speed. Tenext 1 Gb is not a 2.5 Gb card and its listing excludes BSD.",
+    "answer": "Choose PCIe when a desktop has a suitable free slot, physical clearance, the right bracket and a driver supported by its exact operating system. Use a compatible USB adapter when opening the machine is impractical, or keep a working built-in port. Form factor alone does not prove better speed or reliability. The selected Tenext B007MWYCG2 is 1 Gb Ethernet, and its current listing explicitly excludes BSD; exact controller and received-board support still need confirmation.",
+    "referenceDate": "October 29, 2026"
+  },
+  "network:guide:usb-c-ethernet-adapters-vs-alternatives": {
+    "description": "USB-C Ethernet dongle or dock? Check host data support, controller and OS. The selected UGREEN adapter is 1 Gb; charging and 2.5 Gb are separate jobs.",
+    "answer": "Choose a standalone USB-C Ethernet adapter when a compatible data port and supported driver can provide the single wired connection you need. Choose a dock when its additional ports, charging or display functions solve a separate requirement, and keep a working built-in port when it is adequate. The selected UGREEN B082K62S48 is a 1 Gb adapter, not a 2.5 Gb model or a charger. Its received controller and exact OS support must still be matched.",
+    "referenceDate": "October 29, 2026"
+  },
+  "network:guide:poe-injectors-vs-alternatives": {
+    "description": "Injector or PoE switch? Check standard, endpoint power and data speed. POE160S is Gigabit af/at; 30 W at the source is not 30 W at the device.",
+    "answer": "Use an injector when an existing data connection needs compatible PoE power for a particular device; use a PoE switch when its port count, shared budget and management suit the whole installation. Keep an adequate local supply or existing PoE port. POE160S is a Gigabit IEEE 802.3af/at injector with up to 30 W at the source, not 30 W guaranteed at the endpoint, passive PoE, 802.3bt or a 2.5 GbE link.",
+    "referenceDate": "October 29, 2026"
+  },
+  "network:guide:poe-extenders-vs-alternatives": {
+    "description": "PoE extender, remote switch or fiber? Account for every power loss and endpoint. VIMIN Indoor is 1-in/2-out; its exact output budget still needs proof.",
+    "answer": "Use a PoE extender only when the exact source, cable segments, repeater and endpoint power limits form a documented compatible path. A remote powered switch may be easier when local power exists; fiber is a different data route and still needs power at the far end. The selected VIMIN Indoor 3-Port option means one input and two outputs. Its exact remaining power budget is unresolved here, so do not assume two 30 W endpoints or an outdoor rating.",
+    "referenceDate": "October 29, 2026"
+  },
+  "network:guide:fiber-media-converters-vs-alternatives": {
+    "description": "Converter pair or SFP switches? Match fiber, modules and power at both ends. The selected H!Fiber dual-LC kit is Gigabit, not BiDi or 10 GbE.",
+    "answer": "Use media converters when existing copper-only devices need a compatible optical link and separate powered boxes make sense. Use supported SFP ports on switches when they already provide the required conversion. The selected H!Fiber B09P8DN3HJ is a two-item Gigabit single-mode dual-LC 1310 nm kit, not BiDi or 10 GbE. Its 1.25G/s optical signaling label does not make the copper port faster than 1 Gb Ethernet. Confirm the exact modules and power at both ends.",
+    "referenceDate": "October 29, 2026"
+  },
+  "network:guide:network-attached-storage-vs-alternatives": {
+    "description": "NAS, USB drive or cloud? Match shared storage and recovery needs. RAID is not an independent backup; the recorded Yxk purchase remains paused.",
+    "answer": "Choose a NAS when several devices need managed local storage and someone can maintain it. A USB drive can suit direct backup for one computer; cloud storage may suit remote access or an offsite copy when its limits fit. A NAS or RAID array alone does not establish a recoverable backup. The recorded Yxk Zero1 ASIN B0H6PB35VV still returns Page Not Found, so its purchase route remains paused and no replacement is automatically recommended.",
+    "referenceDate": "October 29, 2026"
+  },
+  "network:guide:home-network-racks-vs-alternatives": {
+    "description": "Rack or shelf? Check usable depth, rear cable access, loaded swing and actual wall support. Sokqovt 9U load/mounting documentation is still unresolved.",
+    "answer": "Choose a rack when the equipment needs its mounting format and the full installed dimensions, weight and service access fit. A suitable shelf or existing supported mount may be simpler for a small router and switch. 19-inch width and 9U height do not establish depth, wall capacity or loaded swing-arm support. The selected Sokqovt rack's exact load rating and matching wall-mount instructions are unresolved here; pause until those are confirmed.",
+    "referenceDate": "October 29, 2026"
+  },
+  "pet:guide:microchip-pet-doors-vs-alternatives": {
+    "description": "Compare selective entry with a manual flap or supervised access. Check each pet’s chip, the actual opening and the installation before making a permanent cut.",
+    "answer": "The selected SureFlap Microchip Pet Door controls entry only: any animal can leave through it. It accepts a compatible implanted chip or an RFID collar tag, so these are two identification routes on the same door. Choose a different documented system if individual pets need different exit permissions. Keep a manual flap or supervised access when it already meets the need. Exact opening width and the received version remain unconfirmed for this listing; resolve them before buying for fit or cutting a door.",
+    "referenceDate": "October 29, 2026"
+  },
+  "pet:guide:robot-vacuums-for-pet-hair-buying-guide": {
+    "description": "Check floors, hair wrap, bin care and navigation before choosing the Tikom G8000 Max. Compare a basic robot with room mapping, self-emptying or keeping your vacuum.",
+    "answer": "Consider G8000 Max for routine loose hair on cleared, suitable floors when you accept emptying the bin and cleaning brushes yourself. Its gyroscope navigation and live cleaning path do not provide selective-room cleaning; automatic recharge is not self-emptying. The advertised 5000 Pa and up-to-150-minute quiet-mode runtime do not establish pet-hair pickup in your home. Keep a working vacuum if floor preparation, waste risk, carpets or maintenance would cancel the convenience.",
+    "referenceDate": "October 29, 2026"
+  },
+  "pet:guide:large-dog-water-fountains-vs-alternatives": {
+    "description": "Compare the 15 L SIBAYS FS76 with a plain bowl or gravity dispenser. Moving water helps only if pets use it and you can maintain the pump, filters and drinking surface.",
+    "answer": "Keep a clean bowl when it already provides suitable access to fresh water. Consider a large fountain when you want circulating water and can take apart and clean its pump, filters and drinking surface. The selected SIBAYS FS76 has 15 L nominal capacity, but that is not permission to leave water or pets unattended for days. A gravity dispenser reduces refilling without a powered pump, yet still needs regular checks and cleaning. Keep a separate fresh-water bowl available with either arrangement.",
+    "referenceDate": "October 29, 2026"
+  },
+  "pet:guide:deshedding-brushes-vs-alternatives": {
+    "description": "Compare the SleekEZ Original 5 inch with an appropriate brush, comb or undercoat tool. Loose shedding, tangles, painful skin and furniture hair need different responses.",
+    "answer": "Choose for the pet’s coat and the job, not the amount of fur a product photo shows. The selected SleekEZ Original 5 inch is intended to collect loose hair; its manufacturer says it is not for detangling or removing mats. Keep an existing brush or comb when it works comfortably. Ask a groomer about tools for a dense undercoat or unfamiliar coat type. Stop for pain, irritated skin or mats that will not brush out gently; a stronger tool or vacuum attachment is not the next step.",
+    "referenceDate": "October 29, 2026"
+  },
+  "smarthome:guide:smart-displays-buying-guide": {
+    "description": "Choose a screen for a specific visual task. Check the Echo Show 5 third-generation bundle, service costs, camera privacy and whether you need the stand’s USB-C output.",
+    "answer": "Choose a smart display when a visible timer, compatible camera view, photo display or supported video call is useful where the screen will sit. Keep a speaker for voice-only tasks, or a tablet when app choice and a larger portable screen matter more. The selected Echo Show 5 third-generation Charcoal bundle includes a separate adjustable stand with USB-C charging output. It is not a battery-powered display or a generic USB-C monitor. Confirm the exact camera, services, account and viewing distance before spending.",
+    "referenceDate": "October 29, 2026"
+  },
+  "baby:guide:infant-bath-tubs-safety-and-skip-guide": {
+    "description": "Check the exact tub instructions, child stage and permitted surface before buying. A thermometer or floating cushion cannot replace continuous hands-on adult supervision.",
+    "answer": "Use only a tub whose exact instructions establish the child stage, support, permitted surface, water limit and locking setup. Keep an adult within arm’s reach throughout bathing and take the child with you if you must leave. A floating cushion, thermometer or broad 0–36 month listing is not a safety guarantee. The selected Tavlshero pink tub’s matching manufacturer instructions and support limits remain unconfirmed, so its purchase recommendation is paused.",
+    "referenceDate": "October 29, 2026"
+  },
+  "baby:guide:nursery-glider-chairs-safety-and-skip-guide": {
+    "description": "Compare DaVinci Olive M11687CM for adult feeding-chair fit and motion clearance. Keep infant sleep separate and the undocumented Chistronger option paused.",
+    "referenceDate": "2026-11-01"
+  },
+  "baby:guide:double-strollers-compatibility-and-fit-guide": {
+    "description": "Check each child, the whole load, narrow doorways and the actual folded space. Match the Urban Glide 3 Double revision and infant accessories before treating it as a fit.",
+    "answer": "Check each child’s permitted configuration and limits separately, then the stroller’s total load, your narrowest usable doorway and the real folded storage space. An infant car seat or bassinet needs explicit approval for the exact double frame, adapter and seating arrangement. The selected Urban Glide 3 Double listing is the magnetic-buckle version; its exact received revision and running permission remain unresolved. Its shopping recommendation is paused until the required documentation is matched. Keep an adequate existing stroller if the second seat is rarely needed.",
+    "referenceDate": "October 29, 2026"
+  },
+  "pet:guide:dog-ramps-vs-alternatives": {
+    "description": "Choose around your dog’s movement, the landing height and usable floor space. A weight rating alone cannot establish fit, grip or a suitable slope.",
+    "answer": "A ramp provides a continuous incline; pet stairs require separate steps and often occupy less floor space beside furniture. Measure the rise, available run and landing, then consider what your dog can comfortably use. New pain, weakness or difficulty climbing calls for veterinary advice before a product trial. Keeping a comfortable resting place at floor level may avoid the purchase. The selected HerCcreta listing has conflicting load and variant information, so its buying link is paused pending matching instructions.",
+    "referenceDate": "October 29, 2026"
+  },
+  "pet:guide:aquarium-canister-filters-buying-guide": {
+    "description": "Compare Fluval 307 tank fit, separate pump and filter flow, service clearance and the unresolved regional voltage in the current US listing.",
+    "referenceDate": "October 31, 2026"
+  },
+  "pet:guide:aquarium-air-pumps-buying-guide": {
+    "description": "Match Tetra Whisper 60 Non-UL to tank depth, two air outlets and accessories. Check dry placement, backflow protection and serviceable parts.",
+    "referenceDate": "October 31, 2026"
+  },
+  "pet:guide:aquarium-heaters-buying-guide": {
+    "description": "Check EHEIM Jager 150 W model 3616, vertical clearance, regional voltage, immersion marks and thermometer checks before choosing a heater.",
+    "referenceDate": "October 31, 2026"
+  },
+  "pet:guide:reptile-thermostat-controllers-buying-guide": {
+    "description": "Check Exo Terra PT2461 heat-source compatibility, 300 W load, fixed probe and regional voltage. Keep lighting schedules and monitoring separate.",
+    "referenceDate": "October 31, 2026"
+  },
+  "pet:guide:airline-dog-crates-buying-guide": {
+    "description": "Measure SportPet Large usable interior and confirm the operating airline’s rules. Check nine bolts, door pins and removable wheels before travel.",
+    "referenceDate": "October 31, 2026"
+  },
+  "pet:guide:cat-grooming-gloves-buying-guide": {
+    "description": "Check HandsOn Grey Medium hand fit, gentle loose-hair grooming and care. The maker’s hand-wash instruction differs from the retailer’s wording.",
+    "referenceDate": "October 31, 2026"
+  },
+  "pet:guide:aquarium-led-lights-buying-guide": {
+    "description": "Consider COVOART 15-inch RGB for decoration, with exact wet/dry component limits. Plant-growth output and reef suitability are unverified.",
+    "referenceDate": "October 31, 2026"
+  },
+  "pet:guide:portable-dog-water-bottles-buying-guide": {
+    "description": "Compare the unavailable blue MalsiPree bottle with a separate Black 12 oz option. Confirm capacity, package, water supply and cleaning limits.",
+    "referenceDate": "October 31, 2026"
+  },
+  "pet:guide:dog-bath-sprayers-buying-guide": {
+    "description": "Compare the unavailable WHALUNA wand with Aquapaw Pro Large. Check the different hand-worn design, actual fittings, hose reach and rinse control.",
+    "referenceDate": "October 31, 2026"
+  },
+  "pet:guide:dog-raincoats-buying-guide": {
+    "description": "Check the Spark Paws Mustard Yellow 3XL raincoat against your dog’s measurements, movement and leash access before choosing full-body coverage.",
+    "referenceDate": "2026-11-01"
+  },
+  "pet:guide:elevated-dog-bowls-buying-guide": {
+    "description": "Compare the Neater Feeder Large’s 8/11-inch bowl rim with its taller splash guard, footprint and cleanup needs before adding an elevated stand.",
+    "referenceDate": "2026-11-01"
+  },
+  "pet:guide:gravity-pet-waterers-buying-guide": {
+    "description": "Check the Petmate half-gallon Waterer + Filters kit, three-filter contents and daily cleaning needs before replacing a simple drinking bowl.",
+    "referenceDate": "2026-11-01"
+  },
+  "pet:guide:no-pull-dog-harnesses-buying-guide": {
+    "description": "Resolve the Freedom Rose XL harness’s 32–38 versus 32–36-inch sizing conflict, check strap fit and note that the double-connection leash is separate.",
+    "referenceDate": "2026-11-01"
+  },
+  "pet:guide:stainless-steel-pet-fountains-buying-guide": {
+    "description": "Check the Neareal 3.2 L fountain’s HY-F1/HY001 manual mismatch, included filters, pump access and care requirements before choosing the kit.",
+    "referenceDate": "2026-11-01"
+  },
+  "pet:guide:cat-litter-enclosures-buying-guide": {
+    "description": "Check the Halitaa White litter cabinet’s usable tray compartment, doorway and removal clearance; exterior dimensions do not establish a comfortable fit.",
+    "referenceDate": "2026-11-01"
+  },
+  "pet:guide:cat-window-perches-buying-guide": {
+    "description": "Check the unheated K&H Kitty Sill’s 2-inch sill requirement, support legs, fastening surface and 24-hour adhesive wait before choosing this perch.",
+    "referenceDate": "2026-11-01"
+  },
+  "pet:guide:cat-wall-shelves-buying-guide": {
+    "description": "Confirm the TRIXIE 49924 set’s four pieces, conflicting dimensions, wall construction and separately needed anchors before planning a climbing route.",
+    "referenceDate": "2026-11-01"
+  },
+  "pet:guide:cat-exercise-wheels-buying-guide": {
+    "description": "Check the Homegroove XL wheel’s unresolved running diameter, track width, assembly and room clearance before relying on its 46-inch title.",
+    "referenceDate": "2026-11-01"
+  },
+  "pet:guide:cat-play-tunnels-buying-guide": {
+    "description": "Resolve the Potaroma spiral tunnel’s 7.8/9.8-inch opening conflict and check dangling toys, seams and spring wire before choosing it for your cat.",
+    "referenceDate": "2026-11-01"
+  },
+  "pet:guide:pet-monitoring-cameras-buying-guide": {
+    "description": "Check the ZUMIMALL BF-BK07’s app, recording costs and laser-off setting before choosing a pet camera; no treat-dispenser function has been verified.",
+    "referenceDate": "2026-11-01"
+  },
+  "pet:guide:wireless-dog-doorbells-buying-guide": {
+    "description": "Check the Mighty Paw Smart Bell two-activator kit, receiver power and conflicting battery metadata, then plan a consistent response to the dog’s cue.",
+    "referenceDate": "2026-11-01"
+  },
+  "pet:guide:pet-food-storage-containers-buying-guide": {
+    "description": "Check actual new-seller options for the Gray Vittles Vault Junior, confirm useful capacity and keep original food identification when storing dry kibble.",
+    "referenceDate": "2026-11-01"
+  },
+  "pet:guide:hard-sided-pet-carriers-buying-guide": {
+    "description": "Check interior fit, the conflicting height label and all six bolts on the Amazon Basics 23-inch top-load carrier before choosing it for your pet.",
+    "referenceDate": "2026-11-01"
+  },
+  "pet:guide:quick-dry-dog-towels-buying-guide": {
+    "description": "Compare the Bone Dry Blue 41 × 23.5-inch flat towel’s coverage and care with towels you own; no timed drying result or wearable closure is assumed.",
+    "referenceDate": "2026-11-01"
+  },
+  "baby:guide:toddler-straw-cups-buying-guide": {
+    "description": "Check the XPECIAL Beige 360 ml straw cup’s handling, lid and straw cleaning before choosing a larger cup for supervised drinking practice.",
+    "referenceDate": "2026-11-01"
+  },
+  "baby:guide:toddler-training-utensils-buying-guide": {
+    "description": "Compare the YIVEKO Dinosaur fork-and-spoon set’s short grip, metal heads and removable connections before using it for supervised self-feeding.",
+    "referenceDate": "2026-11-01"
+  },
+  "pet:guide:dog-backpacks-buying-guide": {
+    "description": "Check the OneTigris MAMMOTH Pink Large pack’s neck and chest fit, empty-pack comfort and balanced load before using its side pouches.",
+    "referenceDate": "2026-11-01"
+  },
+  "pet:guide:dog-bicycle-baskets-buying-guide": {
+    "description": "Check the K&H Large front bike basket’s head-tube support, cable clearance, two internal leads and 20 lb maker limit before planning a ride.",
+    "referenceDate": "2026-11-01"
+  },
+  "pet:guide:dog-bike-trailers-buying-guide": {
+    "description": "Check the Burley Tail Wagon 947108’s pet limits, axle adapters and closed-mesh instructions; this bike-only trailer forbids an internal pet leash.",
+    "referenceDate": "2026-11-01"
+  },
+  "pet:guide:hands-free-dog-leashes-buying-guide": {
+    "description": "Compare the VavoPaw Black/Blue waist leash’s belt adjustment, elastic extension and reachable handle before choosing a hands-free walking setup.",
+    "referenceDate": "2026-11-01"
+  },
+  "pet:guide:pet-stairs-buying-guide": {
+    "description": "Match the Pet Gear Easy Step II Wheat 9710WT’s 13-inch height, tread layout and complete panel assembly to the pet and furniture landing.",
+    "referenceDate": "2026-11-01"
+  },
+  "pet:guide:reflective-dog-harnesses-buying-guide": {
+    "description": "Confirm the harness size in the Ruffwear Front Range Blue Pool/Reef Fish bundle, then check girth fit, leash contents and reflective-trim limits.",
+    "referenceDate": "2026-11-01"
+  },
+  "pet:guide:cat-litter-disposal-systems-buying-guide": {
+    "description": "Check the Litter Genie XL+ pail’s real height, exact refill compatibility and unresolved 24/28-foot package length before choosing or restocking it.",
+    "referenceDate": "2026-11-01"
+  },
+  "pet:guide:ceramic-pet-fountains-buying-guide": {
+    "description": "Verify the PetSafe Creekside 60 oz bundle’s extra carbon/foam filters and separate pump-cleaning requirements before planning fountain upkeep.",
+    "referenceDate": "2026-11-01"
+  },
+  "pet:guide:collapsible-travel-pet-bowls-buying-guide": {
+    "description": "Check the SLSON Small Blue/Green two-bowl set’s 12 fl oz serving size, soft-plastic construction, folding seams and bowl-carrying clips.",
+    "referenceDate": "2026-11-01"
+  },
+  "pet:guide:covered-self-cleaning-litter-boxes-buying-guide": {
+    "description": "Check the FEELNEEDY S20-A’s minimum cat limits, firm level floor, usable entry and moving-part procedures before choosing an enclosed automatic box.",
+    "referenceDate": "2026-11-01"
+  },
+  "pet:guide:dog-boots-buying-guide": {
+    "description": "Measure all weight-bearing paws before choosing the Ruffwear Grip Trex Black 2.25-inch pair, a separate option from the failed Green M listing.",
+    "referenceDate": "2026-11-01"
+  },
+  "pet:guide:dog-cooling-bandanas-buying-guide": {
+    "description": "Check the Cool on Track X-Large bandana’s quantity, neck fit, wet-before-bending instructions and humidity limits before relying on evaporative fabric.",
+    "referenceDate": "2026-11-01"
+  },
+  "pet:guide:dog-paw-washers-buying-guide": {
+    "description": "Check the KUEIOX Grey electric paw washer’s opening, supplied charging limits and removable-pad care before choosing powered paw cleaning.",
+    "referenceDate": "2026-11-01"
+  },
+  "baby:guide:adjustable-high-chairs-buying-guide": {
+    "description": "Compare high-chair readiness, KUB JBG005’s unresolved limits and the separate Chicco Zest Capri folding option. Match the child and feeding mode.",
+    "answer": "Choose for upright feeding readiness, complete restraint and stable fit before comparing convenience features. KUB JBG005 remains paused because its recorded 33/50 lb limits conflict. Chicco Zest Capri is a separately identified folding option when a simple seat meets the task; it does not reproduce KUB’s seven height settings or recline.",
+    "referenceDate": "November 1, 2026"
+  },
+  "baby:guide:adjustable-high-chairs-vs-alternatives": {
+    "description": "Compare a freestanding high chair, chair-mounted booster and hook-on seat. Chicco Zest Capri is a separate simple folding option, not KUB JBG005.",
+    "answer": "A freestanding high chair needs a stable locked frame and proper child restraint. A booster also needs an approved compatible host chair and attachment; a hook-on seat needs a suitable table and its own locking system. None is universally simpler or suitable by age alone, and the tray does not replace restraint.",
+    "referenceDate": "November 1, 2026"
+  },
+  "baby:guide:adjustable-high-chairs-compatibility-and-fit-guide": {
+    "description": "Check child and table fit before choosing a high chair. KUB JBG005 stays paused; Chicco Zest feeding and older-child stool limits are different.",
+    "answer": "KUB JBG005’s exact fit remains unresolved; its recorded 33/50 lb conflict has not been cleared. For the separate Chicco Zest Capri option, first match upright readiness, restraint fit, the received instructions and a stable floor arrangement. The Zest manual’s high-chair boundary is 40 lb / 36 months; the advertised 60 lb is not a feeding-mode allowance.",
+    "referenceDate": "November 1, 2026"
+  },
+  "baby:guide:adjustable-high-chairs-ownership-cost-and-maintenance": {
+    "description": "Compare high-chair tray, harness and lock care. Chicco Zest’s original guide excludes a dishwasher cycle for its tray; KUB care remains unresolved.",
+    "answer": "Compare the separate tray, seat and harness care instructions and access to matching parts. KUB JBG005 care remains unverified here. The separate Chicco Zest option has specific wipe-clean directions: its linked original manual says the tray is not dishwasher safe. Easy to wipe does not mean every part can be machine washed.",
+    "referenceDate": "November 1, 2026"
+  },
+  "baby:guide:adjustable-high-chairs-setup-and-daily-workflow": {
+    "description": "Prepare an empty, locked high chair and fit the complete restraint before meals. Keep Chicco Zest and KUB JBG005 instructions separate.",
+    "answer": "Use the exact original instructions to open and lock the empty frame, set permitted adjustments and fit the child’s complete restraint before feeding. Keep the child safely upright and supervised; the tray is not a harness. Remove the child before folding or unapproved adjustment. Do not invent those operating steps for KUB JBG005 while its manual and limits remain unresolved.",
+    "referenceDate": "November 1, 2026"
+  },
+  "baby:guide:adjustable-high-chairs-safety-and-skip-guide": {
+    "description": "Stop for uncertain readiness, missing straps or failed locks. KUB limits remain unresolved; Chicco Zest’s later stool rating is not a feeding allowance.",
+    "answer": "Stop for uncertain child readiness, unsafe posture, missing or altered restraints, failed locks, tipping or rolling, damage or an applicable notice. A reclined chair is not an infant sleep product. For selected KUB JBG005, unresolved 33/50 lb limits and missing matching original instructions keep direct purchase paused; a retail maximum alone cannot qualify use.",
+    "referenceDate": "November 1, 2026"
+  },
+  "homeoffice:guide:usb-document-cameras-buying-guide": {
+    "description": "Match the original IPEVO V4K to the page area, working space and receiving app.",
+    "answer": "Start with the page or object and the receiving app. The original IPEVO V4K reference is CDVU-08IP: an 8 MP USB 2.0 UVC camera with a stated 13.46 × 10.04-inch maximum shooting area. Its 3264 × 2448 maximum image resolution and up-to-30-fps Full HD mode are different limits. Confirm the actual framing, focus and app path; V4K ULTRA and PRO 120 specifications do not transfer.",
+    "referenceDate": "November 1, 2026"
+  },
+  "homeoffice:guide:ergonomic-kneeling-chairs-buying-guide": {
+    "description": "Compare DRAGONN as an alternate seat after checking adjustment, entry and comfortable pressure.",
+    "answer": "Treat the DRAGONN DN-CH-K01B as an optional alternate seat. Its manufacturer lists a 250 lb limit and a 21–31-inch adjustment range, but those figures do not establish individual fit or comfort. The original manual warns that prolonged use can restrict circulation to the legs. Check the complete seat, shin-pad, desk and entry geometry, retain a suitable conventional chair, and skip a purchase when pressure or safe transitions remain a problem.",
+    "referenceDate": "November 1, 2026"
+  },
+  "baby:guide:baby-food-storage-containers-buying-guide": {
+    "description": "Compare the separate Teal OXO glass set for portions and storage; heating needs its own instructions.",
+    "answer": "Choose containers for one real portioning, storage and transport routine. The old Pink OXO listing is unavailable. The separate Teal four-container 4-ounce glass set is an option when glass is allowed and its portions and lids fit; it is not a blanket approval for heating, oven use or abrupt temperature changes. Keep suitable existing food-safe containers when they already meet the need.",
+    "referenceDate": "November 1, 2026"
+  },
+  "baby:guide:baby-bouncers-buying-guide": {
+    "description": "Match infant stage and restraint fit; later chair limits do not extend bouncer use.",
+    "answer": "For awake supervised infant use, compare the exact US Bliss article and received instructions with the child’s stage and restraint fit. This Sand Gray Woven Classic Quilt listing is 006217US. The reviewed US infant mode begins at 8 lb and stops when the baby tries to sit or reaches 20 lb, whichever comes first. The advertised 29 lb later-chair maximum does not extend infant use; later chair-entry wording remains unresolved here. Never buy a bouncer for sleep.",
+    "referenceDate": "November 1, 2026"
+  },
+  "baby:guide:baby-play-gyms-buying-guide": {
+    "description": "Match the gym and maracas to their separate age grades and supervised floor-play routine.",
+    "answer": "The selected Fisher-Price Deluxe Kick & Play Piano Gym with maracas is GDD08, now matched to its official instructions. Compare it for supervised floor play when the assembled footprint and cleaning routine fit. The manual grades the gym 0–36 months and maracas 3 months and up; those are separate limits. A suitable mat and a few age-appropriate toys may already be enough. This is not a sleep product.",
+    "referenceDate": "November 1, 2026"
+  },
+  "pet:guide:collapsible-wire-dog-crates-buying-guide": {
+    "description": "Choose the exact crate size around the individual dog and a gradual home-use routine.",
+    "answer": "Measure the individual dog standing, turning and lying naturally, then confirm usable interior space. The Amazon Basics B09G48LHVX reference is the 36-inch double-door style with divider, tray and handle. Its original cover identifies this ASIN and lists a 70 lb load limit for the 36-inch model; that is not a promise that every 70 lb dog fits. Check the actual latch, tray-retention hook and room clearance. Keep a suitable existing rest area when confinement adds no useful benefit.",
+    "referenceDate": "November 1, 2026"
+  },
+  "pet:guide:cat-trees-and-towers-buying-guide": {
+    "description": "The 54-inch Yaheetech tree remains paused; a separate low platform serves a smaller task.",
+    "answer": "Choose the cat’s resting and scratching task first. The 54-inch Yaheetech tree remains paused because its coverless assembly scan and conflicting capacity figures do not establish the exact model. The separately identified 18.5-inch Amazon Basics platform is a lower single-perch option with a matching manual; it cannot replace two condos, high climbing space or a multi-cat layout. Measure the actual perch fit before buying.",
+    "referenceDate": "November 1, 2026"
+  },
+  "pet:guide:pet-strollers-buying-guide": {
+    "description": "Compare the complete Green Clover stroller only after its usable cabin and instructions fit the pet.",
+    "answer": "Measure the pet and route before choosing a stroller. The old Boysenberry listing is unavailable and its cabin figures remain conflicted. The separate Green Clover complete NO-ZIP stroller has a current new offer, but its exact part and supplied revision were not exposed. Compare it only if the seller can confirm usable cabin, entry and matching instructions; no old Boysenberry dimensions or load limit are transferred. Keep an adequate carrier or current stroller when it already works.",
+    "referenceDate": "November 1, 2026"
+  },
+  "network:guide:ethernet-keystone-jacks-buying-guide": {
+    "description": "Match the Cable Matters 25-pack to the actual cable and termination space before punching down.",
+    "answer": "Match a keystone to the installed cable category, conductor construction, gauge, shielding and plate opening. The Cable Matters reference page describes 23/24 AWG UTP Cat6 jacks; verify the exact 25-pack and included stand rather than assuming the 10-pack page proves every offer. Leave the purchase unresolved if the received jack instructions do not accept the installed cable.",
+    "referenceDate": "November 1, 2026"
+  },
+  "network:guide:structured-media-enclosures-buying-guide": {
+    "description": "Lay out connected equipment, power and service clearance before choosing the exact enclosure kit.",
+    "answer": "Lay out the connected devices, cables, power and service access before choosing an enclosure. The Legrand ENP3050NA reference is the 30-inch enclosure with hinged door and trim, not the door-only or enclosure-only kit. Its instructions require an indoor, low-humidity installation in a non-fire-rated wall and professional electrical or low-voltage installation. Leave the purchase unresolved if the wall or power arrangement is unknown.",
+    "referenceDate": "November 1, 2026"
+  },
+  "smarthome:guide:smart-smoke-co-alarms-buying-guide": {
+    "description": "Compare the US hardwired SC5 with a qualified installer around required coverage and exact compatibility.",
+    "answer": "Choose alarms around the required household coverage, power and exact interconnect system. The US hardwired First Alert SC5 is SMCO600NV-AC; its current instructions and named compatibility list are now available. Compare it with a qualified installer after the existing models, continuous power, supplied revision and approved interconnection are matched. App convenience does not replace local detection. Do not delay required alarm coverage while choosing smart features.",
+    "referenceDate": "November 1, 2026"
+  },
+  "smarthome:guide:smart-hose-faucet-timers-buying-guide": {
+    "description": "Check the starter kit, water pressure, fittings and indoor hub path before adding remote schedules.",
+    "answer": "Check the exact faucet threads, cold-water pressure, valve clearance and indoor hub route before buying. The Rachio reference needs two AA batteries and a Wi-Fi Hub using 2.4 GHz; the valve talks to the hub by Bluetooth. Confirm the one-valve-plus-hub kit and matching instructions. Rain skip and flow-presence alerts do not measure soil moisture or establish real-time water-volume monitoring.",
+    "referenceDate": "November 1, 2026"
+  },
+  "smarthome:guide:smart-dehumidifiers-buying-guide": {
+    "description": "Match the 20-pint non-pump Cube to moisture conditions, placement and a workable condensate path.",
+    "answer": "Size for the moisture load and drainage route first. The MAD20S1QWT reference is the 20-pint Midea Cube without a built-in pump; it needs a suitable bucket or gravity drain, not the pump lift advertised for other Cube models. Confirm the exact label, revision and matching instructions before buying. Its room-size marketing and a historical certification record do not establish current performance or suitability for a wet room.",
+    "referenceDate": "November 1, 2026"
+  },
+  "homeoffice:guide:desktop-teleprompters-buying-guide": {
+    "description": "Check the original 20WAD9901 kit against the camera, supported host and total mount load.",
+    "answer": "Choose a prompter by readable eyeline, camera/lens clearance, total support load and the actual host. The original 9-inch Elgato Prompter listing is model 20WAD9901, matching its quick-start guide. Current requirements are Windows 11 64-bit or macOS 13.3 and later; Android 11 and later supports display use only. Confirm the current feature-specific requirements rather than assuming every computer supports Camera Hub or Voice Sync. A tablet or notes beside the lens may already be enough.",
+    "referenceDate": "November 1, 2026"
+  },
+  "network:guide:wall-plate-access-points-buying-guide": {
+    "description": "Match the EAP235-Wall to the wall box, wired uplink and downstream PoE load; the listing has an EAP225 accessory-field conflict.",
+    "referenceDate": "2026-11-01"
+  },
+  "network:guide:waterproof-rj45-couplers-buying-guide": {
+    "description": "The LEENUE five pack is a passive Cat6 joint; confirm cable and plug fit, sealing instructions and the full Ethernet link budget.",
+    "referenceDate": "2026-11-01"
+  },
+  "network:guide:optical-time-domain-reflectometers-buying-guide": {
+    "description": "The selected MOT-51 is a 1310/1550 nm single-mode OTDR; its power-meter wavelengths do not make it a multimode or live-fiber tester.",
+    "referenceDate": "2026-11-01"
+  },
+  "smarthome:guide:smart-aroma-diffusers-buying-guide": {
+    "description": "Pura Home 4 is a separately selected fragrance-vial system; compare its refills, outlet and app needs with keeping the room fragrance-free.",
+    "referenceDate": "2026-11-01"
+  },
+  "smarthome:guide:smart-bathroom-exhaust-fans-buying-guide": {
+    "description": "The current ROJOSAN listing says Remote Control Only; choose it for confirmed fan, light and audio needs, with installation reviewed separately.",
+    "referenceDate": "2026-11-01"
+  },
+  "smarthome:guide:smart-countertop-composters-buying-guide": {
+    "description": "Compare the Ouaken Black 4 L processor’s drying and grinding routine with composting or collection; plan where the output goes first.",
+    "referenceDate": "2026-11-01"
+  },
+  "smarthome:guide:smart-floor-lamps-buying-guide": {
+    "description": "The Arsoma 66.8-inch lamp lists Giant Home Bluetooth control and physical buttons; verify beam placement, stability and the exact power supply.",
+    "referenceDate": "2026-11-01"
+  },
+  "smarthome:guide:smart-floor-vents-buying-guide": {
+    "description": "Flair’s White 6x10 vent needs a compatible system, hub and room-temperature input; diagnose uneven airflow before closing registers.",
+    "referenceDate": "2026-11-01"
+  },
+  "smarthome:guide:smart-indoor-gardens-buying-guide": {
+    "description": "The DRYADES White 16-pod kit lists a 24 W adjustable light and excludes seeds; plan crop spacing, nutrients, cleaning and replacement parts.",
+    "referenceDate": "2026-11-01"
+  },
+  "smarthome:guide:smart-ir-rf-remotes-buying-guide": {
+    "description": "This RM4 Pro link lists fixed-code 433 MHz RF, IR and 2.4 GHz Wi-Fi; do not assume 315 MHz, Bluetooth or rolling-code support.",
+    "referenceDate": "2026-11-01"
+  },
+  "smarthome:guide:smart-landscape-spotlights-buying-guide": {
+    "description": "The AurNyvaMay two pack is a solar/USB decorative spotlight selection; check shade, charge routine and local control before planning night coverage.",
+    "referenceDate": "2026-11-01"
+  },
+  "smarthome:guide:smart-lever-locks-buying-guide": {
+    "description": "The KUCACCI Z2 link has conflicting app and lock-type fields; confirm door preparation, recovery and the exact app before choosing it.",
+    "referenceDate": "2026-11-01"
+  },
+  "smarthome:guide:smart-pathway-lights-buying-guide": {
+    "description": "The selected APPECK four pack is wired, with Smart Life and 2.4 GHz Wi-Fi claims; confirm the power kit and every exposed connection.",
+    "referenceDate": "2026-11-01"
+  },
+  "smarthome:guide:smart-peephole-cameras-buying-guide": {
+    "description": "The Cawhum camera lists a 4.3-inch indoor screen and UBOX app; confirm door geometry, permitted mounting and actual storage costs.",
+    "referenceDate": "2026-11-01"
+  },
+  "smarthome:guide:smart-pool-thermometers-buying-guide": {
+    "description": "The Inkbird 2026-P05R-NEW listing has conflicting radio and battery fields; verify the actual sensor and receiver before expecting app access.",
+    "referenceDate": "2026-11-01"
+  },
+  "baby:guide:high-chair-floor-mats-buying-guide": {
+    "description": "Compare the Eli with Love 30-pack of disposable floor sheets with a washable mat, using actual coverage, cleanup effort and replacement cost.",
+    "referenceDate": "2026-11-01"
+  },
+  "baby:guide:nursery-blackout-curtains-buying-guide": {
+    "description": "Check the GICDSU two-panel 42 × 63-inch nursery curtains for rod fit, edge gaps, light-blocking limits and reachable window cords.",
+    "referenceDate": "2026-11-01"
+  },
+  "baby:guide:nursing-covers-buying-guide": {
+    "description": "Check the Meetjoy Blush nursing cover for face visibility and warmth during attended feeds; stretch fabric does not prove cooling or safe sleep use.",
+    "referenceDate": "2026-11-01"
+  },
+  "baby:guide:nursing-pillows-buying-guide": {
+    "description": "Check My Brest Friend Deluxe Soft Rose for caregiver waist fit, seated feeding and separate cover/foam care; the pillow is never an infant sleep surface.",
+    "referenceDate": "2026-11-01"
+  },
+  "baby:guide:portable-changing-mats-buying-guide": {
+    "description": "Compare the PILLANI Grey portable changing pad’s open size, pocket access and hand-cleaning routine before replacing a usable travel mat.",
+    "referenceDate": "2026-11-01"
+  },
+  "baby:guide:potty-training-seats-buying-guide": {
+    "description": "Measure toilet shape and height before choosing the SKYROKU Whitegray potty ladder; check all assembled supports rather than relying on universal-fit claims.",
+    "referenceDate": "2026-11-01"
+  },
+  "baby:guide:powder-formula-dispensers-buying-guide": {
+    "description": "Check the LADISO two-stack four-compartment selection for actual contents and dry portion capacity; keep the original formula scoop and mixing instructions.",
+    "referenceDate": "2026-11-01"
+  },
+  "baby:guide:reusable-baby-food-pouches-buying-guide": {
+    "description": "Check Hippypotamus reusable pouches for pack and capacity conflicts, bottom-zip cleaning, cap handling and seated feeding before choosing twelve bags.",
+    "referenceDate": "2026-11-01"
+  },
+  "baby:guide:silicone-feeding-placemats-buying-guide": {
+    "description": "Measure the BIGSPINACH Sage Green cat placemat’s full outline against the high-chair tray and compare its cleaning needs with using the tray directly.",
+    "referenceDate": "2026-11-01"
+  },
+  "baby:guide:stroller-cup-holders-buying-guide": {
+    "description": "Check BUNDLEPRO Black two-pack holders against stroller accessory rules, clamp and bottle fit, folding clearance and cool closed-drink use.",
+    "referenceDate": "2026-11-01"
+  },
+  "baby:guide:stroller-footmuffs-buying-guide": {
+    "description": "Check the different 7AM PlushPOD Black Plush 0–18M selection for stroller permission, harness routing, child space and warmth checks before buying.",
+    "referenceDate": "2026-11-01"
+  },
+  "baby:guide:stroller-rain-covers-buying-guide": {
+    "description": "Check the Hrzeem Clear rain cover’s stroller fit, open vents, quick access and conflicting PVC/EVA material descriptions before choosing it.",
+    "referenceDate": "2026-11-01"
+  },
+  "baby:guide:suction-toddler-bowls-buying-guide": {
+    "description": "Compare the Happy Munchkins Beige HM-001 feeding set with replacing one bowl; check the piece count, actual suction fit and wood-versus-silicone care.",
+    "referenceDate": "2026-11-01"
+  },
+  "baby:guide:toddler-snack-containers-buying-guide": {
+    "description": "Check Dilovely Rose Lilac two-pack snack cups for hand access, actual lids and seated use; petal openings do not prove sealed transport.",
+    "referenceDate": "2026-11-01"
+  },
+  "baby:guide:toddler-step-stools-buying-guide": {
+    "description": "Measure the COOSEYA Gray Xtl-8870 step stool’s height and footprint against the actual sink task, and confirm the two-pack contents and stable placement.",
+    "referenceDate": "2026-11-01"
+  },
+  "pet:product:levoit-vital-200s-p-air-purifier": {
+    "description": "A research-based Levoit Vital 200S-P guide for pet homes, separating the 250 CFM official specification and washable pre-filter from attributed particle, noise, pet-hair, and ownership observations.",
+    "answer": "Vital 200S-P is a strong medium-room candidate when airborne pet hair loads the washable pre-filter, schedules are useful, and the 388-square-foot 4.8-ACH rating fits the closed room. Skip it for a large open plan, a household expecting it to remove settled hair, or a buyer who cannot accept recurring main-filter cost and source-level odor cleaning.",
+    "referenceDate": "November 1, 2026"
+  },
+  "pet:product:coway-airmega-mighty2-air-purifier": {
+    "description": "A pet-home guide to the new-generation Mighty2, including Coway-listed particle CADR, carbon media, ACH-based room sizing, pre-filter care, sensor modes, and comparison with Levoit and Winix.",
+    "answer": "Compare Mighty2 AP-1512N for a medium closed room when its air-change target, fan sound, placement and Max2 replacement cost fit. Its 1,800-square-foot headline is a one-air-change-per-hour figure. The exact manual directs dry pre-filter cleaning despite washable product-page wording; keep a suitable existing purifier if it already handles the room.",
+    "referenceDate": "November 1, 2026"
+  },
+  "pet:product:winix-5510-air-purifier": {
+    "description": "A Winix 5510 comparison for room fit, separate pre-filter care, replacement carbon/HEPA filters and optional app control.",
+    "answer": "Compare the exact 5510 when its room target, sound and replacement Filter Q cost fit. Its pre-filter can be rinsed as instructed; the original manual says the carbon and HEPA filters must not be washed. Keep an adequate current purifier and source-cleaning routine if they already work.",
+    "referenceDate": "November 1, 2026"
+  },
+  "pet:product:surefeed-microchip-pet-feeder": {
+    "description": "An indoor selective-access feeder that opens for a registered implanted microchip or included SureFlap RFID collar tag, helping protect wet or dry food in multi-pet homes without requiring an app or hub.",
+    "answer": "SureFeed solves a real problem when one pet steals food or a specific pet needs a separate diet. It does not weigh meals, dispense schedules, monitor intake, or guarantee that a timid pet will accept the moving lid without gradual training.",
+    "referenceDate": "November 1, 2026"
+  },
+  "homeoffice:guide:webcam-key-lights-buying-guide": {
+    "description": "Check SWDPORT PB004 two-panel lights for the selected No arm support package, desk clearance, USB power needs and actual camera exposure.",
+    "referenceDate": "2026-11-01"
+  },
+  "baby:guide:baby-bath-thermometers-buying-guide": {
+    "description": "Check the DoliWish Off White otter thermometer’s accuracy limits, alerts and battery compartment before using it as an additional adult bath-water check.",
+    "referenceDate": "2026-11-01"
+  },
+  "baby:guide:baby-wipe-dispensers-buying-guide": {
+    "description": "Measure your wipe refill against the wenvastree White dispenser’s stated internal limit and compare its lid, cleaning and quantity with the original packet.",
+    "referenceDate": "2026-11-01"
+  },
+  "baby:guide:bath-toy-organizers-buying-guide": {
+    "description": "Check the Austion White saddle organizer against tub rim width, both compartment clearances and drainage; it is storage rather than a child-support handle.",
+    "referenceDate": "2026-11-01"
+  },
+  "baby:guide:bathtub-spout-covers-buying-guide": {
+    "description": "Check the Azure whale spout cover’s internal fit, diverter access and drying needs; a padded sleeve cannot regulate bath-water temperature.",
+    "referenceDate": "2026-11-01"
+  },
+  "baby:guide:breast-milk-storage-bags-buying-guide": {
+    "description": "Check Dr. Brown’s 50-count 6 oz disposable milk bags for current model, seals, portion labels, freezer space and no-microwave thawing instructions.",
+    "referenceDate": "2026-11-01"
+  },
+  "baby:guide:childproof-corner-guards-buying-guide": {
+    "description": "Check PlusOxsteel Transparent T-12P corner guards for real corner coverage, adhesive retention and conflicting material claims before buying twelve pads.",
+    "referenceDate": "2026-11-01"
+  },
+  "baby:guide:childproof-door-knob-covers-buying-guide": {
+    "description": "Check the selected 1 PC round-knob cover for internal clearance, secure seams and quick adult opening, especially on routes needed in an emergency.",
+    "referenceDate": "2026-11-01"
+  },
+  "baby:guide:childproof-outlet-covers-buying-guide": {
+    "description": "Check Wappa Baby White 50-pack outlet caps for actual receptacle fit, firm retention and storage of removed pieces; caps do not repair damaged sockets.",
+    "referenceDate": "2026-11-01"
+  },
+  "baby:guide:childproof-refrigerator-locks-buying-guide": {
+    "description": "Check QYESWHSR Gray QY-003-1 refrigerator locks for latch reach, adhesive cure, normal door sealing and adult access before fitting a five-pack.",
+    "referenceDate": "2026-11-01"
+  },
+  "baby:guide:childproof-stove-knob-covers-buying-guide": {
+    "description": "Measure stove knob diameter, projection, spacing and off-access before choosing covers; the Huggful five-pack’s exact purchase link remains paused.",
+    "referenceDate": "2026-11-01"
+  },
+  "baby:guide:childproof-toilet-locks-buying-guide": {
+    "description": "Distinguish a toilet flush-lever lock from a lid lock: check the selected one-pack’s control fit and adhesive, without assuming it blocks access to bowl water.",
+    "referenceDate": "2026-11-01"
+  },
+  "baby:guide:crib-mobiles-buying-guide": {
+    "description": "Separate out-of-reach crib mobiles from supervised play arches, check permitted mounting and removal limits, and keep the failed original link paused.",
+    "referenceDate": "2026-11-01"
+  },
+  "baby:guide:formula-mixing-pitchers-buying-guide": {
+    "description": "Match the Black Dr. Brown’s pitcher to its supplied manual: the retail-linked 32 oz ring design differs from the current 36 oz guide and part-care limits.",
+    "referenceDate": "2026-11-01"
+  },
+  "baby:guide:furniture-anchor-kits-buying-guide": {
+    "description": "Check Booda Brand Black HJFDK01 furniture restraints for structural furniture points, wall-specific fixings and sets per item; 400 lb is not an installed guarantee.",
+    "referenceDate": "2026-11-01"
+  },
+  "smarthome:guide:smart-radiator-valves-buying-guide": {
+    "description": "Use the SENCKIT Zigbee head only on a confirmed compatible radiator valve; a Tuya hub and working boiler control are separate requirements.",
+    "referenceDate": "2026-11-01"
+  },
+  "smarthome:guide:smart-recessed-lights-buying-guide": {
+    "description": "The selected SikSog Black 24-pack is a separate ASIN; check BRmesh control, cutout and electrical installation before replacing conventional lights.",
+    "referenceDate": "2026-11-01"
+  },
+  "smarthome:guide:smart-sous-vide-cookers-buying-guide": {
+    "description": "Choose the CharMeter circulator for a confirmed vessel and supervised setup; app presets do not establish safe time and temperature for every food.",
+    "referenceDate": "2026-11-01"
+  },
+  "smarthome:guide:smart-space-heaters-buying-guide": {
+    "description": "The DAYETTE SH002 is a conditional supplemental-heating option; verify its exact label and instructions and keep use attended, dry and clear of combustibles.",
+    "referenceDate": "2026-11-01"
+  },
+  "smarthome:guide:smart-sump-pump-monitors-buying-guide": {
+    "description": "PF03 monitors pump electrical behavior and can interrupt power; keep independent water detection, backup and a response plan.",
+    "referenceDate": "2026-11-01"
+  },
+  "smarthome:guide:smart-table-lamps-buying-guide": {
+    "description": "The selected Hifree T21 offers touch and Smart Life control; compare its light and replacement needs with keeping a conventional lamp.",
+    "referenceDate": "2026-11-01"
+  },
+  "smarthome:guide:smart-under-cabinet-lights-buying-guide": {
+    "description": "Map six 12-inch bars, cables and the supplied power unit before buying; the selected kit conflicts with a ten-strip components field.",
+    "referenceDate": "2026-11-01"
+  },
+  "smarthome:guide:smart-wall-control-panels-buying-guide": {
+    "description": "The separate SONOFF NSPanel offers two physical channels and eWeLink scenes; it is not a drop-in Brilliant replacement or NSPanel Pro.",
+    "referenceDate": "2026-11-01"
+  },
+  "smarthome:guide:smart-coffee-makers-buying-guide": {
+    "description": "The White K-Supreme SMART is a single-cup pod brewer; app convenience still requires a prepared mug, water and compatible pod.",
+    "referenceDate": "2026-11-01"
+  },
+  "smarthome:guide:smart-glass-break-sensors-buying-guide": {
+    "description": "The separately selected Ring sensor needs Amazon Sidewalk coverage or a compatible Ring Alarm base station; contacts detect a different event.",
+    "referenceDate": "2026-11-01"
+  },
+  "smarthome:guide:smart-propane-tank-monitors-buying-guide": {
+    "description": "Match the exact Mopeka Pro Check to the tank and region; a Bluetooth level estimate is not a leak alarm, shutoff or universal large-tank fit.",
+    "referenceDate": "2026-11-01"
+  },
+  "smarthome:guide:smart-slow-cookers-buying-guide": {
+    "description": "The separate CPSCVC60LL-S is a local programmable 120 V selection; it does not inherit Alexa control from the paused 220 V-conflicted listing.",
+    "referenceDate": "2026-11-01"
+  },
+  "smarthome:guide:smart-vibration-sensors-buying-guide": {
+    "description": "The original Aqara vibration sensor needs a compatible Aqara hub; vibration, tilt and drop events do not prove acoustic glass-break detection.",
+    "referenceDate": "2026-11-01"
+  },
+  "homeoffice:guide:acoustic-desk-dividers-buying-guide": {
+    "description": "The Dark Gray four-pack creates a visual screen; no independent acoustic rating establishes speech privacy or a soundproof desk.",
+    "referenceDate": "2026-11-01"
+  },
+  "homeoffice:guide:active-sitting-stools-buying-guide": {
+    "description": "The separately selected Engage CHR474 is for short active-sitting sessions; its manufacturer recommends lumbar-supported seating for longer periods.",
+    "referenceDate": "2026-11-01"
+  },
+  "homeoffice:guide:monitor-light-bars-buying-guide": {
+    "description": "Match the selected Quntis Pro Gray light bar to its exact clip, monitor shape and webcam clearance before relying on family fit or optical claims.",
+    "referenceDate": "2026-11-01"
+  },
+  "homeoffice:guide:monitor-privacy-screens-buying-guide": {
+    "description": "Measure visible width and height before choosing Magicmoon 24-inch 16:9 privacy filters, and match adhesive or slide-tab mounting to the bezel.",
+    "referenceDate": "2026-11-01"
+  },
+  "homeoffice:guide:mouse-wrist-rests-buying-guide": {
+    "description": "Check Carpio 2.0 Right Large White against the maker size chart, mouse height and palm contact; comfort marketing does not establish medical treatment.",
+    "referenceDate": "2026-11-01"
+  },
+  "homeoffice:guide:office-lumbar-cushions-buying-guide": {
+    "description": "Check QUTOOL Black Standard lumbar support for strap reach, remaining seat depth and conflicting cover-care instructions before adding thick foam.",
+    "referenceDate": "2026-11-01"
+  },
+  "homeoffice:guide:office-printer-stands-buying-guide": {
+    "description": "Measure printer feet, open trays and service clearance against the GYIIYUO Light Brown stand, and verify supports and load before using a 24-inch top.",
+    "referenceDate": "2026-11-01"
+  },
+  "homeoffice:guide:office-saddle-stools-buying-guide": {
+    "description": "Check the FIRAVOE Light Grey saddle stool’s actual 18–26-inch seat range, base footprint, caster behavior and need for back support before changing seats.",
+    "referenceDate": "2026-11-01"
+  },
+  "homeoffice:guide:office-seat-cushions-buying-guide": {
+    "description": "Check the Everlasting Comfort Black Large cushion’s footprint and added seat height against foot support, desk clearance and cover-versus-core care.",
+    "referenceDate": "2026-11-01"
+  },
+  "homeoffice:guide:overhead-book-scanners-buying-guide": {
+    "description": "Check VIISAN S48 Duo workspace, exact OS downloads and software-generated 600 dpi limits before choosing A2 overhead scanning for bound material.",
+    "referenceDate": "2026-11-01"
+  },
+  "homeoffice:guide:portable-photo-printers-buying-guide": {
+    "description": "Check the Nelko PP01 White inkjet printer’s cartridge costs,52 ×90 mm paper versus 45 ×60 mm image area, phone app and exact starter contents.",
+    "referenceDate": "2026-11-01"
+  },
+  "homeoffice:guide:ptz-conference-cameras-buying-guide": {
+    "description": "Check TONGVEO TV2-NV-20H room framing, USB/HDMI input path, separate audio and tracking revision before buying a 20× PTZ camera.",
+    "referenceDate": "2026-11-01"
+  },
+  "homeoffice:guide:receipt-scanners-buying-guide": {
+    "description": "Compare Epson RR-60 single-sheet USB receipt scanning with your workload, and confirm OS downloads, software license and exact accounting export needs.",
+    "referenceDate": "2026-11-01"
+  },
+  "homeoffice:guide:rolling-file-cabinets-buying-guide": {
+    "description": "Check the Sbanmao Black Large Letter file cart for hanging-folder fit, full under-desk access and caster parking; locking wheels do not secure documents.",
+    "referenceDate": "2026-11-01"
+  },
+  "homeoffice:guide:under-desk-foot-hammocks-buying-guide": {
+    "description": "Check the iMissiu Black desk hammock’s clamp access, desktop thickness, span and seated foot position before replacing a stable floor footrest.",
+    "referenceDate": "2026-11-01"
+  },
+  "homeoffice:guide:under-desk-pedal-exercisers-buying-guide": {
+    "description": "Measure the full knee path before choosing the Putnen Orange 5761 powered pedals and confirm exact power, stopping controls and seated operating limits.",
+    "referenceDate": "2026-11-01"
+  },
+  "homeoffice:guide:vesa-monitor-adapters-buying-guide": {
+    "description": "Check the suptek 17–27-inch non-VESA adapter’s edge geometry,8 kg limit, screen thickness, ports and combined arm load before clamping a monitor.",
+    "referenceDate": "2026-11-01"
+  },
+  "homeoffice:guide:compact-color-inkjet-printers-buying-guide": {
+    "description": "The White TS6520 combines automatic two-sided printing with a flatbed scanner; compare cartridge use and scanning volume before choosing it over laser.",
+    "referenceDate": "2026-11-01"
+  },
+  "homeoffice:guide:conference-speakerphones-buying-guide": {
+    "description": "M0 Plus adds shared USB/Bluetooth audio; an eight-person claim needs a real room check, and expansion requires a separate compatible daisy-chain setup.",
+    "referenceDate": "2026-11-01"
+  },
+  "homeoffice:guide:desk-cable-grommets-buying-guide": {
+    "description": "The selected Black-M pack has eight nominal 50 mm grommets; match the actual hole, flange, desk construction and cable plugs before cutting.",
+    "referenceDate": "2026-11-01"
+  },
+  "homeoffice:guide:desk-cable-sleeves-buying-guide": {
+    "description": "Four 24 × 4-inch zipper sleeves hide a cable run; the flat width is not a four-inch cable diameter or an electrical protection rating.",
+    "referenceDate": "2026-11-01"
+  },
+  "homeoffice:guide:desk-pegboard-organizers-buying-guide": {
+    "description": "The selected PP-DK24B uses four panels and two desk clamps; verify edge construction, clearance and exact load limits before hanging equipment.",
+    "referenceDate": "2026-11-01"
+  },
+  "homeoffice:guide:desktop-computer-speakers-buying-guide": {
+    "description": "ST800 is a wired digital-audio soundbar, not a conference microphone; check the host USB connection and space under the monitor.",
+    "referenceDate": "2026-11-01"
+  },
+  "homeoffice:guide:desktop-file-organizers-buying-guide": {
+    "description": "The Black DFO3+4 combines four trays, three upright pockets and a drawer; reconcile the assembly conflict and keep confidential papers elsewhere.",
+    "referenceDate": "2026-11-01"
+  },
+  "homeoffice:guide:desktop-ring-lights-buying-guide": {
+    "description": "R06 is a solid round LED panel rather than an open-center ring; the two-pack needs space for two stands and suitable power for each light.",
+    "referenceDate": "2026-11-01"
+  },
+  "homeoffice:guide:desktop-shelf-systems-buying-guide": {
+    "description": "The 44-inch PEGZONE shelf asks for at least 47.3 in of desktop width and 0.59–2 in thickness; confirm the desk can carry the whole assembly.",
+    "referenceDate": "2026-11-01"
+  },
+  "homeoffice:guide:floor-cable-covers-buying-guide": {
+    "description": "The Beige six-foot CC-3 has a small cable channel; cover the full crossing and check doors, mobility access and floor stability.",
+    "referenceDate": "2026-11-01"
+  },
+  "homeoffice:guide:four-k-webcams-buying-guide": {
+    "description": "The selected EasyCam 502 advertises 4K 30 and 1080p 60; app limits, lighting and USB bandwidth decide what the remote caller actually receives.",
+    "referenceDate": "2026-11-01"
+  },
+  "homeoffice:guide:ink-tank-printers-buying-guide": {
+    "description": "The separately selected G3270 Black replaces an unavailable HP 5101 purchase path; it has refillable tanks and flatbed scanning, with single-sided print handling.",
+    "referenceDate": "2026-11-01"
+  },
+  "homeoffice:guide:keyboard-wrist-rests-buying-guide": {
+    "description": "The Black Large set is 0.83 in high; compare it with keyboard height and neutral hand position, without treating padding as a pain treatment.",
+    "referenceDate": "2026-11-01"
+  },
+  "homeoffice:guide:laptop-cooling-pads-buying-guide": {
+    "description": "The HV-F2056 adds three USB-powered fans and two height settings; it cannot repair blocked vents, a failed internal fan or every thermal limit.",
+    "referenceDate": "2026-11-01"
+  },
+  "homeoffice:guide:laptop-privacy-screens-buying-guide": {
+    "description": "Match the exact MacBook model number and screen shape; a side-view filter does not block someone directly behind you or secure the data itself.",
+    "referenceDate": "2026-11-01"
+  },
+  "network:product:ugreen-revodok-usb-c-gigabit-ethernet-hub": {
+    "description": "UGREEN 15598 is a six-in-one Ethernet hub with 4K30 HDMI; confirm the actual host and resolve its 85W / 95W charging-output conflict.",
+    "referenceDate": "2026-11-01"
+  },
+  "network:product:monoprice-slimrun-cat6a-ethernet-patch-cable": {
+    "description": "The exact SlimRun 15158 selection is Blue 5 ft in a ten-pack; compare patch length, 30AWG bundle limits and PoE requirements.",
+    "referenceDate": "2026-11-01"
+  },
+  "homeoffice:guide:desktop-audio-interfaces-buying-guide": {
+    "description": "Compare Scarlett Solo 4th Gen for one microphone plus one instrument, supported OS and proper monitoring. The Kmise manual/driver mapping stays unresolved.",
+    "referenceDate": "2026-11-01"
+  },
+  "homeoffice:guide:desktop-power-centers-buying-guide": {
+    "description": "Compare Anker 351 A9192 as a conventional US power strip, with 20W solo USB-C and 15W shared USB. It is a different format from the paused TenTrend clamp.",
+    "referenceDate": "2026-11-01"
+  },
+  "baby:guide:jogging-strollers-buying-guide": {
+    "description": "Compare BOB Flex 3.0 Single for an appropriate jogging routine: check child readiness, total load, wheel lock and its own instructions; INFANS remains paused.",
+    "referenceDate": "2026-11-01"
+  },
+  "baby:guide:stroller-wagons-buying-guide": {
+    "description": "Compare Baby Trend WG01D94B for supervised walking with children who sit unaided. Check per-seat and total limits; EVER ADVANCED revisions remain unresolved.",
+    "referenceDate": "2026-11-01"
+  },
+  "baby:guide:travel-cribs-playards-buying-guide": {
+    "description": "Compare Chicco Alfa Lite Dove with its 2023+ pad, buckle and stopping rules. The old Lotus retail link is unavailable; keep a suitable existing sleep space.",
+    "referenceDate": "2026-11-01"
+  },
+  "network:product:arris-surfboard-s33-cable-modem": {
+    "description": "A multi-gig cable-modem buying guide for the S33, including DOCSIS 3.1, its 2.5GbE plus 1GbE port layout, ISP approval risk, and why a separate router is still required.",
+    "answer": "S33 is the disciplined modem upgrade when a cable plan can exceed gigabit and the router WAN port can actually use 2.5GbE. It is not a Wi-Fi upgrade by itself.",
+    "referenceDate": "November 1, 2026"
+  },
+  "network:product:motorola-mb8611-cable-modem": {
+    "description": "A modem-only buying guide for MB8611, including the 2.5GbE Ethernet port, DOCSIS 3.1 support, ISP approval checks, and when it is a better value than renting a gateway.",
+    "answer": "Consider MB8611 when the ISP currently approves it for your exact cable tier and you already have a suitable router. Compare the complete delivered cost and support path with S33 and CODA56; a 2.5GbE port alone does not qualify an upload upgrade.",
+    "referenceDate": "November 1, 2026"
+  },
+  "network:product:hitron-coda56-cable-modem": {
+    "description": "A value-focused CODA56 guide covering DOCSIS 3.1, its 2.5GbE port, no-router/no-Wi-Fi design, ISP compatibility, and why it belongs on a shortlist with S33 and MB8611.",
+    "answer": "Compare CODA56 when the ISP approves it for the required cable tier and upload profile. Choose by the delivered price, support and space fit; keep an existing approved modem if it already meets the plan.",
+    "referenceDate": "November 1, 2026"
+  },
+  "network:product:trendnet-teg-s350-2-5g-switch": {
+    "description": "A compact 2.5GbE switch guide for desks, router shelves, and small NAS corners where five multi-gig ports are enough.",
+    "answer": "TEG-S350 is the smaller multi-gig switch to buy when a five-port fanless box solves the exact network shelf. Move to the eight-port TEG-S380 if the setup is already full.",
+    "referenceDate": "November 1, 2026"
+  },
+  "network:product:tp-link-ue302c-2-5g-usb-c-ethernet-adapter": {
+    "description": "A 2.5GbE USB-C adapter guide for laptops, iPads, compact desktops, and NAS troubleshooting where the built-in Ethernet port is missing or capped at gigabit.",
+    "answer": "UE302C is a practical adapter when the laptop or tablet has a fast enough USB-C port and the rest of the network path can negotiate 2.5GbE.",
+    "referenceDate": "November 1, 2026"
+  },
+  "network:product:sabrent-nt-25ga-2-5g-usb-c-ethernet-adapter": {
+    "description": "A compact 2.5GbE adapter guide for buyers comparing chipset notes, Wake-on-LAN support, aluminum body design, and multi-OS use.",
+    "answer": "NT-25GA is the adapter to compare when a buyer wants a branded 2.5GbE USB-C dongle with clear model identity and more technical listing detail than generic adapters.",
+    "referenceDate": "November 1, 2026"
+  },
+  "network:product:screenbeam-ecb7250k02-moca-2-5-adapter-kit": {
+    "description": "A MoCA 2.5 starter-kit guide for homes with coax already in the walls, covering adapter count, splitters, cable modem coexistence, point-of-entry filters, and when Ethernet is still better.",
+    "answer": "Consider the matched ECB7250K02 pair for a fixed coax backhaul after the coax map and provider coexistence are confirmed. Stop for an unknown topology or unconfirmed mixed adapters; use Ethernet where a practical run already solves the task.",
+    "referenceDate": "November 1, 2026"
+  },
+  "network:product:tp-link-tl-sg105-m2-2-5g-switch": {
+    "description": "A version-aware guide to the fanless TL-SG105-M2, covering its five 100M/1G/2.5G ports, 25Gbps switching capacity, 12.11W listed maximum draw, port budget, and unmanaged limits.",
+    "answer": "TL-SG105-M2 is the best starting point when five silent multi-gig ports are enough for a router, NAS, desktop, access point, and one spare path. Start with eight ports if those five roles are already spoken for, and choose managed hardware when VLANs or per-port visibility are required.",
+    "referenceDate": "November 1, 2026"
+  },
+  "network:product:netgear-ms305-2-5g-switch": {
+    "description": "A compact-switch guide to MS305, with five 100M/1G/2.5G ports, fanless metal construction, 9.24W listed maximum draw, 9,720-byte jumbo frames, mounting kit, and warranty-region checks.",
+    "answer": "MS305 is the compact five-port choice when a smaller metal enclosure, included mounting hardware, and NETGEAR's support path matter more than the lowest checkout price. It has the same five-port limit as its rivals and no managed controls.",
+    "referenceDate": "November 1, 2026"
+  },
+  "network:product:apc-back-ups-router-modem-bundle": {
+    "description": "A model-specific guide to the APC BE850G2 for an ONT, modem, router, switch, or small NAS, with six battery-backed outlets, three surge-only outlets, USB charging, replacement-battery planning, and runtime caveats.",
+    "answer": "BE850G2 is the strongest fit in this group when the network shelf includes several power bricks or a small NAS and 450W of output headroom is useful. Choose a smaller unit for a low-draw ONT and router, and do not infer hours of runtime from the 850VA label.",
+    "referenceDate": "November 1, 2026"
+  },
+  "network:product:apc-be600m1-router-ups": {
+    "description": "A compact 600VA/330W UPS guide for an ONT, modem, router, and one small switch, with five battery-backed outlets, two surge-only outlets, one USB port, and a replaceable-battery path.",
+    "answer": "BE600M1 is the practical default for a modest network chain when 330W is ample and seven outlets fit the power bricks. It is a poor choice when a workstation, large NAS, or long runtime target is being hidden inside a 'router UPS' budget.",
+    "referenceDate": "November 1, 2026"
+  },
+  "network:product:cyberpower-sl700u-router-ups": {
+    "description": "A slim 700VA/370W standby UPS with five battery-backed outlets, three surge-only outlets, two USB-A charging ports, wall-mount capability, and a non-user-replaceable battery tradeoff.",
+    "answer": "SL700U is the placement-first choice when a flatter chassis or wall mounting solves a real shelf problem. Its official nine-minute half-load runtime is not a router-runtime promise, and its non-user-replaceable battery makes long-term ownership less attractive than serviceable APC options.",
+    "referenceDate": "November 1, 2026"
+  },
+  "network:product:tp-link-tl-sg1005p-poe-switch": {
+    "description": "A compact PoE+ switch guide for powering a few cameras, one access point, or a small smart-home wiring corner without buying managed features.",
+    "answer": "TL-SG1005P is the clean starter PoE switch when four powered ports and a 65W budget are enough. It is not the right pick when VLANs, port monitoring, or more than four PoE devices are planned.",
+    "referenceDate": "November 1, 2026"
+  },
+  "network:product:tp-link-tl-sg108pe-poe-switch": {
+    "description": "An Easy Smart PoE switch guide for buyers who need four powered ports plus VLAN, QoS, IGMP, and basic traffic visibility on a small home network.",
+    "answer": "TL-SG108PE is the better TP-Link pick when PoE and basic management matter together. It is less compelling if the buyer only needs unmanaged power or needs PoE on all eight ports.",
+    "referenceDate": "November 1, 2026"
+  },
+  "network:product:netgear-gs308epp-poe-switch": {
+    "description": "A higher-budget 8-port PoE+ switch guide for buyers who want every port powered, a 123W budget, and small-business style management in a desktop or wall-mount box.",
+    "answer": "GS308EPP is the stronger eight-device PoE choice when the buyer wants PoE+ on every port and enough budget for multiple cameras or APs.",
+    "referenceDate": "November 1, 2026"
   }
 }

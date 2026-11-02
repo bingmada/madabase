@@ -7,8 +7,8 @@ export const networkAccessoryExpansionProducts: Product[] = [
     site: "network",
     slug: "arris-surfboard-s33-cable-modem",
     asin: "B08FMSC5WZ",
-    seoTitle: "ARRIS SURFboard S33 Guide: 2.5GbE Cable Modem Buying Notes",
-    updatedAt,
+    seoTitle: "ARRIS S33: ISP Approval & 2.5GbE",
+    "updatedAt": "November 1, 2026",
     name: "ARRIS SURFboard S33 DOCSIS 3.1 Cable Modem",
     brand: "ARRIS",
     category: "wired",
@@ -18,12 +18,8 @@ export const networkAccessoryExpansionProducts: Product[] = [
     whyItMatters: "Many router or mesh upgrades are wasted when the rented gateway, modem Ethernet port, or ISP approval list is the real bottleneck. A standalone modem also separates modem replacement from Wi-Fi replacement.",
     bestFor: "Cable internet users moving from rental gear to a standalone 2.5GbE modem",
     priceBand: "$$",
-    rating: 4.6,
-    scores: [
-      { label: "Multi-gig readiness", value: 9 },
-      { label: "Router flexibility", value: 8 },
-      { label: "ISP approval risk", value: 6 },
-    ],
+    rating: 0,
+    scores: [],
     pros: ["DOCSIS 3.1 cable modem with a 2.5GbE Ethernet port", "Separate 1GbE port can be useful in specific ISP-supported configurations", "Works as a clean modem-only upgrade before choosing Wi-Fi separately"],
     cons: ["No router or Wi-Fi functions", "ISP approval and provisioned speed tiers control real use", "Buyers must confirm S33 versus newer or ISP-specific SURFboard models"],
     specs: {
@@ -41,39 +37,75 @@ export const networkAccessoryExpansionProducts: Product[] = [
       "Do not buy it for fiber internet, DSL, or a plan where the ISP requires voice modem features",
     ],
     editorialSections: [
-      { heading: "The 2.5GbE port is the buying reason", body: "S33 is most relevant when the cable plan can push beyond 1Gbps and the router WAN side can accept that speed. If the router still has gigabit-only WAN, the modem upgrade may be hard to feel." },
-      { heading: "Modem-only means more flexibility", body: "A standalone modem lets the household choose a separate router, mesh system, or firewall. It also means there is no built-in Wi-Fi, so the network budget needs to include that second box." },
-      { heading: "Who should skip it", body: "Skip it for fiber internet, ISP voice service, or a basic cable plan where a cheaper DOCSIS 3.1 modem already covers the provisioned speed." },
-    ],
+  {
+    "heading": "The 2.5GbE port is the buying reason",
+    "body": "S33 is most relevant when the cable plan can push beyond 1Gbps and the router WAN side can accept that speed. If the router still has gigabit-only WAN, the modem upgrade may be hard to feel."
+  },
+  {
+    "heading": "Modem-only means more flexibility",
+    "body": "A standalone modem lets the household choose a separate router, mesh system, or firewall. It also means there is no built-in Wi-Fi, so the network budget needs to include that second box."
+  },
+  {
+    "heading": "Who should skip it",
+    "body": "Skip it for fiber internet, ISP voice service, or a basic cable plan where a cheaper DOCSIS 3.1 modem already covers the provisioned speed."
+  },
+  {
+    "heading": "S33 and S34 serve different approval questions",
+    "body": "ARRIS still documents S33 and separately lists S34 with Next Generation Upload Optimized support. A newer model does not make every S33 obsolete, but a 2.5GbE socket alone does not establish eligibility for an enhanced-upload tier. Ask the provider about the exact plan before choosing either. The second 1GbE socket is not an extra routed LAN port or a promise of two public IP addresses; do not add the sockets into a 3.5Gbps connection."
+  },
+  {
+    "heading": "Before choosing the offered unit",
+    "body": "Choose S33 only after the ISP confirms this exact model, address, speed tier and upload profile, and the router has a suitable WAN port. Keep an approved modem that already meets the plan. Recheck the selected New offer, seller and return terms; no Wi-Fi or telephone service is included."
+  }
+],
     alternatives: ["Choose Motorola MB8611 for a similar modem-only 2.5GbE path.", "Choose Hitron CODA56 when price and ISP upload support are the main shopping criteria."],
     compareSlugs: ["motorola-mb8611-cable-modem", "hitron-coda56-cable-modem"],
     sources: [
-      { name: "ARRIS SURFboard S33", url: "https://www.surfboard.com/products/cable-modems/s33/", note: "Official modem family, port, and setup information." },
-      { name: "Amazon listing for ASIN B08FMSC5WZ", url: "https://www.amazon.com/dp/B08FMSC5WZ", note: "Exact linked Amazon listing; confirm seller, model, and ISP compatibility." },
-    ],
-    offers: [{ merchant: "Amazon US", url: "https://www.amazon.com/dp/B08FMSC5WZ?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check S33 price on Amazon", priceNote: "Confirm ASIN B08FMSC5WZ, modem-only model, seller, and ISP approval." }],
+  {
+    "name": "ARRIS SURFboard S33",
+    "url": "https://www.surfboard.com/products/cable-modems/s33/",
+    "note": "Official modem family, port, and setup information."
+  },
+  {
+    "name": "Amazon listing for ASIN B08FMSC5WZ",
+    "url": "https://www.amazon.com/dp/B08FMSC5WZ",
+    "note": "Exact linked Amazon listing; confirm seller, model, and ISP compatibility."
+  },
+  {
+    "name": "ARRIS SURFboard S34 comparison",
+    "url": "https://www.surfboard.com/products/cable-modems/s34/",
+    "note": "Current manufacturer range comparison; not evidence that S33 is discontinued or that either model is approved at a particular address."
+  }
+],
+    offers: [
+  {
+    "merchant": "Amazon US",
+    "url": "https://www.amazon.com/dp/B08FMSC5WZ?tag=madanetwork-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+    "label": "Check S33 price on Amazon",
+    "priceNote": "Confirm ASIN B08FMSC5WZ, modem-only model, seller, and ISP approval."
+  }
+],
+
+    "purchaseCheck": "Choose S33 only with ISP approval for this address, plan and upload profile, plus a suitable router WAN port. No Wi-Fi or voice. Keep a sufficient approved modem. Recheck the selected New seller and terms.",
+    "researchNote": "This is a document-based buying guide; we have not bench-tested this model or inspected a delivered unit. The November 1, 2026 US retail observation is for ZIP 10001 and the exact ASIN. It is not a delivery, warranty, physical-revision or performance guarantee.",
   },
   {
     site: "network",
     slug: "motorola-mb8611-cable-modem",
     asin: "B08DDFKXKC",
-    seoTitle: "Motorola MB8611 Guide: DOCSIS 3.1, 2.5GbE & ISP Fit",
-    updatedAt,
+    seoTitle: "Motorola MB8611: ISP & Router Fit",
+    "updatedAt": "November 1, 2026",
     name: "Motorola MB8611 DOCSIS 3.1 Cable Modem",
     brand: "Motorola",
     category: "wired",
     image: "/images/affiliate/network-cable-modem-realistic.webp",
     summary: "A modem-only buying guide for MB8611, including the 2.5GbE Ethernet port, DOCSIS 3.1 support, ISP approval checks, and when it is a better value than renting a gateway.",
-    verdict: "MB8611 is a strong standalone modem choice for cable users who want a 2.5GbE handoff to their own router. It is not the right box when the household needs ISP voice or an all-in-one Wi-Fi gateway.",
+    verdict: "Consider MB8611 when the ISP currently approves it for your exact cable tier and you already have a suitable router. Compare the complete delivered cost and support path with S33 and CODA56; a 2.5GbE port alone does not qualify an upload upgrade.",
     whyItMatters: "A 2.5GbE modem can unlock speed that a gigabit modem port would cap, but only if the router, plan, and ISP provisioning line up.",
     bestFor: "Standalone 2.5GbE modem handoff to an owned router",
     priceBand: "$$",
-    rating: 4.5,
-    scores: [
-      { label: "Modem-only clarity", value: 9 },
-      { label: "Multi-gig handoff", value: 9 },
-      { label: "All-in-one convenience", value: 3 },
-    ],
+    rating: 0,
+    scores: [],
     pros: ["DOCSIS 3.1 modem with a 2.5GbE Ethernet port", "Pairs with the buyer's own router or mesh system", "Good comparison point against ARRIS S33 and Hitron CODA56"],
     cons: ["No Wi-Fi, routing, or voice port", "ISP compatibility must be checked before purchase", "Real speed depends on router WAN and provisioned cable tier"],
     specs: {
@@ -91,39 +123,70 @@ export const networkAccessoryExpansionProducts: Product[] = [
       "Avoid it when voice service or ISP-managed Wi-Fi is required",
     ],
     editorialSections: [
-      { heading: "Compare it as a modem, not a router", body: "MB8611 is only the cable modem portion of the network. It makes the most sense when the household already has, or plans to buy, a better router or mesh system." },
-      { heading: "The bottleneck moves downstream", body: "After the modem can hand off 2.5GbE, the router WAN, LAN switch, Ethernet cables, and clients become the next places to check." },
-      { heading: "Who should skip it", body: "Skip MB8611 when the ISP plan is comfortably below gigabit, when the provider requires an eMTA voice modem, or when an all-in-one managed gateway is preferred." },
-    ],
+  {
+    "heading": "Compare it as a modem, not a router",
+    "body": "MB8611 is only the cable modem portion of the network. It makes the most sense when the household already has, or plans to buy, a better router or mesh system."
+  },
+  {
+    "heading": "The bottleneck moves downstream",
+    "body": "After the modem can hand off 2.5GbE, the router WAN, LAN switch, Ethernet cables, and clients become the next places to check."
+  },
+  {
+    "heading": "Who should skip it",
+    "body": "Skip MB8611 when the ISP plan is comfortably below gigabit, when the provider requires an eMTA voice modem, or when an all-in-one managed gateway is preferred."
+  },
+  {
+    "heading": "Documentation is available, but approval is still current-plan specific",
+    "body": "The official help page retains the MB8611 Quick Start downloads even though its FAQ body says disabled; the older product-page URL did not load in this review. Neither observation proves an end-of-life date. The guide describes a single 2.5GbE handoff and a separately powered router, with no Wi-Fi or telephone function. Its older certification and warranty wording is not current ISP approval or a promise that a particular third-party seller qualifies for coverage."
+  },
+  {
+    "heading": "Before choosing the offered unit",
+    "body": "Choose MB8611 only with current ISP approval for the address, plan and upload profile, plus a separate router. Keep an approved modem that already meets the plan. Check the selected New seller, shipping charge, current support and warranty eligibility; this is not a voice gateway."
+  }
+],
     alternatives: ["Compare ARRIS S33 for a compact SURFboard alternative.", "Compare Hitron CODA56 when lower price or enhanced-upload support is the main goal."],
     compareSlugs: ["arris-surfboard-s33-cable-modem", "hitron-coda56-cable-modem"],
     sources: [
-      { name: "Motorola MB8611", url: "https://motorolanetwork.com/products/mb8611", note: "Official modem page; availability may vary by region." },
-      { name: "Amazon listing for ASIN B08DDFKXKC", url: "https://www.amazon.com/dp/B08DDFKXKC", note: "Exact linked Amazon listing; confirm seller and model." },
-    ],
-    offers: [{ merchant: "Amazon US", url: "https://www.amazon.com/dp/B08DDFKXKC?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check MB8611 price on Amazon", priceNote: "Confirm ASIN B08DDFKXKC, modem-only model, ISP approval, and seller." }],
+  {
+    "name": "Amazon listing for ASIN B08DDFKXKC",
+    "url": "https://www.amazon.com/dp/B08DDFKXKC",
+    "note": "Exact linked Amazon listing; confirm seller and model."
+  },
+  {
+    "name": "Motorola MB8611 official product guides",
+    "url": "https://help.motorolanetwork.com/kb/mb8611/motorola-mb8611-overview",
+    "note": "Official help page and linked 12-page Quick Start text reviewed; legacy product URL was inaccessible. No lifecycle or current warranty conclusion inferred from that failure."
+  }
+],
+    offers: [
+  {
+    "merchant": "Amazon US",
+    "url": "https://www.amazon.com/dp/B08DDFKXKC?tag=madanetwork-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+    "label": "Check MB8611 price on Amazon",
+    "priceNote": "Confirm ASIN B08DDFKXKC, modem-only model, ISP approval, and seller."
+  }
+],
+
+    "purchaseCheck": "Choose only with current ISP approval for this address, tier and upload profile, and a separate router. No Wi-Fi or voice. Keep a sufficient approved modem; check the New seller, shipping, support and warranty.",
+    "researchNote": "This is a document-based buying guide; we have not bench-tested this model or inspected a delivered unit. The November 1, 2026 US retail observation is for ZIP 10001 and the exact ASIN. It is not a delivery, warranty, physical-revision or performance guarantee.",
   },
   {
     site: "network",
     slug: "hitron-coda56-cable-modem",
     asin: "B0BKZ4DHNL",
-    seoTitle: "Hitron CODA56 Guide: Budget 2.5GbE DOCSIS 3.1 Modem",
-    updatedAt,
+    seoTitle: "Hitron CODA56: ISP & Router Fit",
+    "updatedAt": "November 1, 2026",
     name: "Hitron CODA56 DOCSIS 3.1 Cable Modem",
     brand: "Hitron",
     category: "wired",
     image: "/images/affiliate/network-cable-modem-realistic.webp",
     summary: "A value-focused CODA56 guide covering DOCSIS 3.1, its 2.5GbE port, no-router/no-Wi-Fi design, ISP compatibility, and why it belongs on a shortlist with S33 and MB8611.",
-    verdict: "CODA56 is the value candidate when a household wants a modem-only 2.5GbE cable upgrade without paying for router features it will not use.",
+    verdict: "Compare CODA56 when the ISP approves it for the required cable tier and upload profile. Choose by the delivered price, support and space fit; keep an existing approved modem if it already meets the plan.",
     whyItMatters: "The cable modem market is full of old gigabit-limited boxes and all-in-one gateways. CODA56 is a cleaner fit when the buyer wants only the modem layer and will choose routing separately.",
     bestFor: "Budget 2.5GbE DOCSIS 3.1 modem replacement",
     priceBand: "$$",
-    rating: 4.4,
-    scores: [
-      { label: "Value", value: 9 },
-      { label: "2.5GbE handoff", value: 8 },
-      { label: "Brand familiarity", value: 5 },
-    ],
+    rating: 0,
+    scores: [],
     pros: ["DOCSIS 3.1 modem with a 2.5GbE Ethernet port", "Modem-only setup avoids paying for unused Wi-Fi", "Strong value comparison against S33 and MB8611"],
     cons: ["No Wi-Fi, router, or voice features", "ISP approval and firmware support matter", "One Ethernet handoff means the router must do the rest"],
     specs: {
@@ -141,24 +204,59 @@ export const networkAccessoryExpansionProducts: Product[] = [
       "Do not buy it for fiber service or ISP voice service",
     ],
     editorialSections: [
-      { heading: "The value case is simple", body: "CODA56 deserves attention when the buyer wants DOCSIS 3.1 and a 2.5GbE handoff without paying for a combined gateway." },
-      { heading: "Approval list first, checkout second", body: "Cable providers can limit which modems work on which tiers. Verify support by provider, plan, and region before assuming a retail modem will provision correctly." },
-      { heading: "Who should skip it", body: "Skip it if the household wants built-in Wi-Fi, voice telephone service, or provider-managed troubleshooting more than ownership savings." },
-    ],
+  {
+    "heading": "The value case is simple",
+    "body": "CODA56 deserves attention when the buyer wants DOCSIS 3.1 and a 2.5GbE handoff without paying for a combined gateway."
+  },
+  {
+    "heading": "Approval list first, checkout second",
+    "body": "Cable providers can limit which modems work on which tiers. Verify support by provider, plan, and region before assuming a retail modem will provision correctly."
+  },
+  {
+    "heading": "Who should skip it",
+    "body": "Skip it if the household wants built-in Wi-Fi, voice telephone service, or provider-managed troubleshooting more than ownership savings."
+  },
+  {
+    "heading": "A provider logo is not address-level approval",
+    "body": "Hitron documents a DOCSIS 3.1 modem with one 2.5GbE handoff and no Wi-Fi, routing or voice service. Eligibility for the desired upload profile still belongs to the provider. The official dimensions and the selected Amazon listing disagree, so measure the available space and request the delivered revision dimensions instead of assuming either footprint. The observed seller was Hitron Americas with Amazon shipping; the listing warranty selection is not a universal warranty promise."
+  },
+  {
+    "heading": "Before choosing the offered unit",
+    "body": "Choose CODA56 only after the provider confirms this exact modem for your address, plan and upload profile, with a separate compatible router. Keep existing approved hardware if it meets the target. Confirm selected condition, seller, warranty and actual chassis dimensions before checkout."
+  }
+],
     alternatives: ["Choose ARRIS S33 if the SURFboard ecosystem is preferred.", "Choose Motorola MB8611 if that model is easier to support with the buyer's ISP."],
     compareSlugs: ["arris-surfboard-s33-cable-modem", "motorola-mb8611-cable-modem"],
     sources: [
-      { name: "Hitron CODA56", url: "https://us.hitrontech.com/products/consumers/coda56/", note: "Official modem page and feature overview." },
-      { name: "Amazon listing for ASIN B0BKZ4DHNL", url: "https://www.amazon.com/dp/B0BKZ4DHNL", note: "Exact linked Amazon listing; confirm seller, modem-only design, and ISP support." },
-    ],
-    offers: [{ merchant: "Amazon US", url: "https://www.amazon.com/dp/B0BKZ4DHNL?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check CODA56 price on Amazon", priceNote: "Confirm ASIN B0BKZ4DHNL, modem-only design, ISP approval, and seller." }],
+  {
+    "name": "Hitron CODA56",
+    "url": "https://us.hitrontech.com/products/consumers/coda56/",
+    "note": "Official modem page and feature overview."
+  },
+  {
+    "name": "Amazon listing for ASIN B0BKZ4DHNL",
+    "url": "https://www.amazon.com/dp/B0BKZ4DHNL",
+    "note": "Exact linked Amazon listing; confirm seller, modem-only design, and ISP support."
+  }
+],
+    offers: [
+  {
+    "merchant": "Amazon US",
+    "url": "https://www.amazon.com/dp/B0BKZ4DHNL?tag=madanetwork-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+    "label": "Check CODA56 price on Amazon",
+    "priceNote": "Confirm ASIN B0BKZ4DHNL, modem-only design, ISP approval, and seller."
+  }
+],
+
+    "purchaseCheck": "Choose only after ISP approval for the address, plan and upload profile, with a separate router. Keep sufficient approved hardware. Confirm condition, seller, warranty and dimensions: the official and retailer footprints disagree.",
+    "researchNote": "This is a document-based buying guide; we have not bench-tested this model or inspected a delivered unit. The November 1, 2026 US retail observation is for ZIP 10001 and the exact ASIN. It is not a delivery, warranty, physical-revision or performance guarantee.",
   },
   {
     site: "network",
     slug: "trendnet-teg-s350-2-5g-switch",
     asin: "B08XWK4HNT",
-    seoTitle: "TRENDnet TEG-S350 Guide: 5-Port 2.5G Switch Buying Notes",
-    updatedAt,
+    seoTitle: "TEG-S350 2.5G Switch",
+    "updatedAt": "November 1, 2026",
     name: "TRENDnet TEG-S350 5-Port 2.5G Switch",
     brand: "TRENDnet",
     category: "wired",
@@ -168,12 +266,8 @@ export const networkAccessoryExpansionProducts: Product[] = [
     whyItMatters: "A five-port 2.5G switch can be the cleanest upgrade when only the router, NAS, desktop, access point, and one spare port need multi-gig Ethernet.",
     bestFor: "Compact five-port 2.5GbE expansion",
     priceBand: "$$",
-    rating: 4.5,
-    scores: [
-      { label: "Compact fit", value: 9 },
-      { label: "Multi-gig value", value: 8 },
-      { label: "Growth room", value: 5 },
-    ],
+    rating: 0,
+    scores: [],
     pros: ["Five 2.5GBASE-T ports in a compact switch", "Fanless unmanaged design", "Good desk or small router-shelf fit"],
     cons: ["Only five ports, so one router plus one NAS plus two clients leaves little spare room", "No VLAN or managed features", "No 10GbE uplink"],
     specs: {
@@ -191,24 +285,69 @@ export const networkAccessoryExpansionProducts: Product[] = [
       "Choose a managed switch if VLANs or traffic visibility are required",
     ],
     editorialSections: [
-      { heading: "Five ports is the point", body: "TEG-S350 is not trying to be a full network rack. It is for a compact multi-gig corner where the port count is known." },
-      { heading: "TEG-S350 versus TEG-S380", body: "The eight-port TEG-S380 gives more growth room. The five-port TEG-S350 is easier to justify when space, cost, and power simplicity matter." },
-      { heading: "Who should skip it", body: "Skip it for VLAN work, PoE cameras or access points, or any setup likely to exceed five wired devices soon." },
-    ],
+  {
+    "heading": "Five ports is the point",
+    "body": "TEG-S350 is not trying to be a full network rack. It is for a compact multi-gig corner where the port count is known."
+  },
+  {
+    "heading": "TEG-S350 versus TEG-S380",
+    "body": "The eight-port TEG-S380 gives more growth room. The five-port TEG-S350 is easier to justify when space, cost, and power simplicity matter."
+  },
+  {
+    "heading": "Who should skip it",
+    "body": "Skip it for VLAN work, PoE cameras or access points, or any setup likely to exceed five wired devices soon."
+  },
+  {
+    "heading": "Follow the hardware revision, not just the model name",
+    "body": "TRENDnet marks v1.0R as replaced by v1.xR, and v1.xR as replaced by V2. The current V2 page still describes a five-port fanless unmanaged 2.5G switch, so the whole TEG-S350 model is not shown as discontinued. The Amazon offer did not identify its hardware revision. V2 marketing mentions 100Mbps compatibility while its interface table lists 1G/2.5G; confirm any required legacy-device rate with TRENDnet. VLAN tag passthrough is not configurable VLAN segmentation."
+  },
+  {
+    "heading": "Before choosing the offered unit",
+    "body": "Choose the five-port TEG-S350 only for a simple 2.5GbE network with room for the upstream connection. Ask for the hardware label: TRENDnet now documents V2, while older revisions have replacement notices. Confirm support, power adapter and any legacy-device link rate for the actual unit; choose managed or PoE hardware when required."
+  }
+],
     alternatives: ["Choose TRENDnet TEG-S380 for eight 2.5GbE ports.", "Choose TP-Link TL-SG108 if gigabit is enough."],
     compareSlugs: ["tp-link-tl-sg105-m2-2-5g-switch", "netgear-ms305-2-5g-switch", "trendnet-teg-s380-2-5g-switch"],
     sources: [
-      { name: "TRENDnet TEG-S350", url: "https://www.trendnet.com/products/2-5g-switch/5-port-unmanaged-2-5g-switch-TEG-S350", note: "Official port count, switching capacity, fanless, and unmanaged design details." },
-      { name: "Amazon listing for ASIN B08XWK4HNT", url: "https://www.amazon.com/dp/B08XWK4HNT", note: "Exact linked Amazon listing; confirm model and seller." },
-    ],
-    offers: [{ merchant: "Amazon US", url: "https://www.amazon.com/dp/B08XWK4HNT?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check TEG-S350 price on Amazon", priceNote: "Confirm ASIN B08XWK4HNT, five-port TEG-S350 model, and seller." }],
+  {
+    "name": "TRENDnet TEG-S350",
+    "url": "https://www.trendnet.com/products/2-5g-switch/5-port-unmanaged-2-5g-switch-TEG-S350",
+    "note": "Official port count, switching capacity, fanless, and unmanaged design details."
+  },
+  {
+    "name": "Amazon listing for ASIN B08XWK4HNT",
+    "url": "https://www.amazon.com/dp/B08XWK4HNT",
+    "note": "Exact linked Amazon listing; confirm model and seller."
+  },
+  {
+    "name": "TRENDnet TEG-S350 v1.xR replacement notice",
+    "url": "https://www.trendnet.com/products/2-5g-switch/5-port-unmanaged-2-5g-switch-TEG-S350-v1.1",
+    "note": "Revision-specific notice points to V2; it does not identify the revision supplied under an Amazon ASIN."
+  },
+  {
+    "name": "TRENDnet TEG-S350 V2",
+    "url": "https://www.trendnet.com/products/2-5g-switch/5-port-unmanaged-2-5g-switch-TEG-S350_v2",
+    "note": "Current revision features and specification table reviewed; legacy-link-rate inconsistency retained as a confirmation requirement."
+  }
+],
+    offers: [
+  {
+    "merchant": "Amazon US",
+    "url": "https://www.amazon.com/dp/B08XWK4HNT?tag=madanetwork-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+    "label": "Check TEG-S350 price on Amazon",
+    "priceNote": "Confirm ASIN B08XWK4HNT, five-port TEG-S350 model, and seller."
+  }
+],
+
+    "purchaseCheck": "Choose for a simple 2.5GbE network with four device ports after the uplink. Confirm the supplied revision, support and adapter: older versions were replaced by V2. Verify required legacy-device rates. Keep sufficient gear; choose other hardware for PoE or managed VLANs.",
+    "researchNote": "This is a document-based buying guide; we have not bench-tested this model or inspected a delivered unit. The November 1, 2026 US retail observation is for ZIP 10001 and the exact ASIN. It is not a delivery, warranty, physical-revision or performance guarantee.",
   },
   {
     site: "network",
     slug: "tp-link-ue302c-2-5g-usb-c-ethernet-adapter",
     asin: "B0DSCDGD4G",
-    seoTitle: "TP-Link UE302C Guide: 2.5G USB-C Ethernet Adapter",
-    updatedAt,
+    seoTitle: "TP-Link UE302C: USB & OS Fit",
+    "updatedAt": "November 1, 2026",
     name: "TP-Link UE302C 2.5G USB-C Ethernet Adapter",
     brand: "TP-Link",
     category: "wired",
@@ -218,12 +357,8 @@ export const networkAccessoryExpansionProducts: Product[] = [
     whyItMatters: "USB-C adapters are often blamed for slow speeds when the real limit is the cable, switch, router port, USB mode, driver, or computer power policy.",
     bestFor: "Adding 2.5GbE to USB-C laptops and tablets",
     priceBand: "$",
-    rating: 4.4,
-    scores: [
-      { label: "Laptop fit", value: 9 },
-      { label: "2.5GbE value", value: 8 },
-      { label: "Driver risk", value: 6 },
-    ],
+    rating: 0,
+    scores: [],
     pros: ["2.5GbE RJ45 adapter in a small USB-C format", "Useful for laptops without Ethernet", "Good test tool for diagnosing a multi-gig path"],
     cons: ["Requires a compatible USB-C host and 2.5GbE switch or router path", "Operating-system driver behavior can vary", "Does not fix a cable, switch, or ISP bottleneck"],
     specs: {
@@ -240,24 +375,59 @@ export const networkAccessoryExpansionProducts: Product[] = [
       "Use OS link-speed reporting before blaming an internet speed test",
     ],
     editorialSections: [
-      { heading: "Adapters are path tools", body: "A 2.5G adapter is only useful when both the host and the network side support the speed. Use it to test the local path, not just public speed tests." },
-      { heading: "Driver and heat checks matter", body: "Small adapters can run warm and may rely on OS driver support. Confirm the intended computer and OS before buying several for a team." },
-      { heading: "Who should skip it", body: "Skip it when the laptop only needs occasional gigabit Ethernet or when the switch/router side remains gigabit-only." },
-    ],
+  {
+    "heading": "Adapters are path tools",
+    "body": "A 2.5G adapter is only useful when both the host and the network side support the speed. Use it to test the local path, not just public speed tests."
+  },
+  {
+    "heading": "Driver and heat checks matter",
+    "body": "Small adapters can run warm and may rely on OS driver support. Confirm the intended computer and OS before buying several for a team."
+  },
+  {
+    "heading": "Who should skip it",
+    "body": "Skip it when the laptop only needs occasional gigabit Ethernet or when the switch/router side remains gigabit-only."
+  },
+  {
+    "heading": "Check USB bandwidth and the OS footnotes",
+    "body": "TP-Link specifies a USB 3.0 Type-C input and Cat5e or better cable for peak performance. Its plug-and-play list includes version thresholds such as macOS 10.15, Linux/Chrome OS kernel 5.13 and iPadOS 13.3, and warns that an OS update may require a driver update. That is not a guarantee for every USB-C tablet or managed work laptop. A slower hub, USB 2.0 host or gigabit switch remains a bottleneck."
+  },
+  {
+    "heading": "Before choosing the offered unit",
+    "body": "Choose UE302C when the host provides USB 3.0 or faster data and the full wired path supports 2.5GbE. Check the exact OS version and current driver before buying; a USB-C connector alone is insufficient. Keep reliable gigabit Ethernet if it already clears the workload."
+  }
+],
     alternatives: ["Compare Sabrent NT-25GA if chipset, Wake-on-LAN, or OS notes matter.", "Use a full USB-C dock when display, charging, and USB-A are also required."],
     compareSlugs: ["sabrent-nt-25ga-2-5g-usb-c-ethernet-adapter", "ugreen-revodok-usb-c-gigabit-ethernet-hub"],
     sources: [
-      { name: "TP-Link UE302C", url: "https://www.tp-link.com/us/home-networking/usb-adapter/ue302c/", note: "Official adapter page and compatibility details." },
-      { name: "Amazon listing for ASIN B0DSCDGD4G", url: "https://www.amazon.com/dp/B0DSCDGD4G", note: "Exact linked Amazon listing; confirm model and seller." },
-    ],
-    offers: [{ merchant: "Amazon US", url: "https://www.amazon.com/dp/B0DSCDGD4G?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check UE302C price on Amazon", priceNote: "Confirm ASIN B0DSCDGD4G, UE302C model, host compatibility, and seller." }],
+  {
+    "name": "TP-Link UE302C",
+    "url": "https://www.tp-link.com/us/home-networking/usb-adapter/ue302c/",
+    "note": "Official adapter page and compatibility details."
+  },
+  {
+    "name": "Amazon listing for ASIN B0DSCDGD4G",
+    "url": "https://www.amazon.com/dp/B0DSCDGD4G",
+    "note": "Exact linked Amazon listing; confirm model and seller."
+  }
+],
+    offers: [
+  {
+    "merchant": "Amazon US",
+    "url": "https://www.amazon.com/dp/B0DSCDGD4G?tag=madanetwork-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+    "label": "Check UE302C price on Amazon",
+    "priceNote": "Confirm ASIN B0DSCDGD4G, UE302C model, host compatibility, and seller."
+  }
+],
+
+    "purchaseCheck": "Choose with USB 3.0 or faster host data, a supported OS/driver and a complete 2.5GbE path. USB-C shape alone is insufficient. Keep reliable gigabit if sufficient; recheck the exact model, seller and return terms.",
+    "researchNote": "This is a document-based buying guide; we have not bench-tested this model or inspected a delivered unit. The November 1, 2026 US retail observation is for ZIP 10001 and the exact ASIN. It is not a delivery, warranty, physical-revision or performance guarantee.",
   },
   {
     site: "network",
     slug: "sabrent-nt-25ga-2-5g-usb-c-ethernet-adapter",
     asin: "B0CXBRNSC4",
-    seoTitle: "Sabrent NT-25GA Guide: 2.5GbE USB-C Adapter Buying Notes",
-    updatedAt,
+    seoTitle: "Sabrent NT-25GA: USB & OS Fit",
+    "updatedAt": "November 1, 2026",
     name: "Sabrent NT-25GA USB-C 2.5GbE Ethernet Adapter",
     brand: "Sabrent",
     category: "wired",
@@ -267,12 +437,8 @@ export const networkAccessoryExpansionProducts: Product[] = [
     whyItMatters: "The difference between a useful 2.5G adapter and a frustrating dongle is often host compatibility, driver behavior, and whether the rest of the Ethernet path can actually exceed gigabit.",
     bestFor: "2.5GbE laptop adapter with clear model and chipset notes",
     priceBand: "$",
-    rating: 4.4,
-    scores: [
-      { label: "Model clarity", value: 8 },
-      { label: "Multi-OS fit", value: 8 },
-      { label: "Dock replacement", value: 3 },
-    ],
+    rating: 0,
+    scores: [],
     pros: ["2.5GbE USB-C to RJ45 adapter", "Compact aluminum adapter format", "Useful alternative to generic marketplace dongles"],
     cons: ["Still depends on host USB and OS support", "No display, charging, or hub features", "Cannot exceed the slowest router, switch, cable, or client in the path"],
     specs: {
@@ -289,39 +455,70 @@ export const networkAccessoryExpansionProducts: Product[] = [
       "Choose a dock instead if the desk also needs display and charging ports",
     ],
     editorialSections: [
-      { heading: "Compare adapter details, not just speed claims", body: "When two adapters both claim 2.5GbE, model clarity, chipset notes, OS support, heat, and return path become the deciding factors." },
-      { heading: "A dongle is not a dock", body: "NT-25GA solves Ethernet only. A desk that also needs HDMI, charging, card readers, or USB-A should be planned as a dock workflow." },
-      { heading: "Who should skip it", body: "Skip it for gigabit-only networks, managed office fleets without driver testing, or laptops that already have a reliable multi-gig Ethernet path." },
-    ],
+  {
+    "heading": "Compare adapter details, not just speed claims",
+    "body": "When two adapters both claim 2.5GbE, model clarity, chipset notes, OS support, heat, and return path become the deciding factors."
+  },
+  {
+    "heading": "A dongle is not a dock",
+    "body": "NT-25GA solves Ethernet only. A desk that also needs HDMI, charging, card readers, or USB-A should be planned as a dock workflow."
+  },
+  {
+    "heading": "Who should skip it",
+    "body": "Skip it for gigabit-only networks, managed office fleets without driver testing, or laptops that already have a reliable multi-gig Ethernet path."
+  },
+  {
+    "heading": "Use the NT-25GA requirements, not a generic USB-C promise",
+    "body": "Sabrent specifies USB 3.0 at 5Gbps or better, Cat5e or better wiring and a compatible operating system. Drivers are offered for Windows, macOS and Linux; managed-device restrictions and exact OS releases still need checking. UEFI PXE support also requires a compatible host. The product page’s two-year extended-warranty registration condition belongs to this model; a general site banner about longer coverage should not replace it. The observed seller was Store4PC with Amazon shipping."
+  },
+  {
+    "heading": "Before choosing the offered unit",
+    "body": "Choose NT-25GA only when a USB 3.0 or faster host, supported OS/driver and 2.5GbE network path are confirmed. Check seller and return terms; Sabrent describes registration within 90 days for its two-year extended warranty. Keep an existing stable Ethernet path when it meets the task."
+  }
+],
     alternatives: ["Compare TP-Link UE302C for a TP-Link-branded adapter.", "Use a USB-C dock when Ethernet is only one missing port."],
     compareSlugs: ["tp-link-ue302c-2-5g-usb-c-ethernet-adapter", "ugreen-revodok-usb-c-gigabit-ethernet-hub"],
     sources: [
-      { name: "Sabrent NT-25GA", url: "https://sabrent.com/products/nt-25ga", note: "Official product page and model information." },
-      { name: "Amazon listing for ASIN B0CXBRNSC4", url: "https://www.amazon.com/dp/B0CXBRNSC4", note: "Exact linked Amazon listing; confirm model, seller, and compatibility." },
-    ],
-    offers: [{ merchant: "Amazon US", url: "https://www.amazon.com/dp/B0CXBRNSC4?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check NT-25GA price on Amazon", priceNote: "Confirm ASIN B0CXBRNSC4, NT-25GA model, OS support, and seller." }],
+  {
+    "name": "Sabrent NT-25GA",
+    "url": "https://sabrent.com/products/nt-25ga",
+    "note": "Official product page and model information."
+  },
+  {
+    "name": "Amazon listing for ASIN B0CXBRNSC4",
+    "url": "https://www.amazon.com/dp/B0CXBRNSC4",
+    "note": "Exact linked Amazon listing; confirm model, seller, and compatibility."
+  }
+],
+    offers: [
+  {
+    "merchant": "Amazon US",
+    "url": "https://www.amazon.com/dp/B0CXBRNSC4?tag=madanetwork-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+    "label": "Check NT-25GA price on Amazon",
+    "priceNote": "Confirm ASIN B0CXBRNSC4, NT-25GA model, OS support, and seller."
+  }
+],
+
+    "purchaseCheck": "Choose with USB 3.0 or faster data, a supported OS/driver and a 2.5GbE path. Keep sufficient Ethernet. Check seller/returns and Sabrent warranty eligibility, including its 90-day registration condition for two-year extended coverage.",
+    "researchNote": "This is a document-based buying guide; we have not bench-tested this model or inspected a delivered unit. The November 1, 2026 US retail observation is for ZIP 10001 and the exact ASIN. It is not a delivery, warranty, physical-revision or performance guarantee.",
   },
   {
     site: "network",
     slug: "screenbeam-ecb7250k02-moca-2-5-adapter-kit",
     asin: "B08ML1TSXC",
-    seoTitle: "ScreenBeam ECB7250K02 Guide: MoCA 2.5 Over Coax Starter Kit",
-    updatedAt,
+    seoTitle: "ScreenBeam ECB7250K02 Kit",
+    "updatedAt": "November 1, 2026",
     name: "ScreenBeam ECB7250K02 MoCA 2.5 Starter Kit",
     brand: "ScreenBeam",
     category: "wired",
     image: "/images/affiliate/network-moca-kit-realistic.webp",
     summary: "A MoCA 2.5 starter-kit guide for homes with coax already in the walls, covering adapter count, splitters, cable modem coexistence, point-of-entry filters, and when Ethernet is still better.",
-    verdict: "ECB7250K02 is worth comparing when coax already reaches the rooms that need stable wired backhaul and running Ethernet is impractical.",
+    verdict: "Consider the matched ECB7250K02 pair for a fixed coax backhaul after the coax map and provider coexistence are confirmed. Stop for an unknown topology or unconfirmed mixed adapters; use Ethernet where a practical run already solves the task.",
     whyItMatters: "MoCA can turn existing coax into a wired path, but coax topology, splitters, modem service, and filters decide whether it behaves like a clean Ethernet substitute.",
     bestFor: "Stable room-to-room wired backhaul over existing coax",
     priceBand: "$$",
-    rating: 4.4,
-    scores: [
-      { label: "No-new-cable value", value: 9 },
-      { label: "Setup risk", value: 6 },
-      { label: "Backhaul stability", value: 8 },
-    ],
+    rating: 0,
+    scores: [],
     pros: ["Uses existing coax where Ethernet is not available", "Starter-kit format includes two endpoints", "Good fit for mesh backhaul, TV rooms, and fixed desks"],
     cons: ["Coax splitters and topology can break expectations", "May require a point-of-entry filter and MoCA-rated splitters", "Not relevant for homes without usable coax runs"],
     specs: {
@@ -338,16 +535,62 @@ export const networkAccessoryExpansionProducts: Product[] = [
       "Use direct Ethernet instead when a clean cable run is practical",
     ],
     editorialSections: [
-      { heading: "MoCA is topology-sensitive", body: "The product can be excellent in one home and frustrating in another because splitters, amplifiers, coax condition, and provider equipment all affect the path." },
-      { heading: "Use it for fixed paths", body: "MoCA makes the most sense for mesh-node backhaul, a TV room, a desk, or a gaming console where Wi-Fi is unstable and new Ethernet is inconvenient." },
-      { heading: "Who should skip it", body: "Skip it if the coax map is unknown, the provider equipment conflicts with MoCA, or a short Ethernet run would solve the same problem with fewer variables." },
-    ],
+  {
+    "heading": "MoCA is topology-sensitive",
+    "body": "The product can be excellent in one home and frustrating in another because splitters, amplifiers, coax condition, and provider equipment all affect the path."
+  },
+  {
+    "heading": "Use it for fixed paths",
+    "body": "MoCA makes the most sense for mesh-node backhaul, a TV room, a desk, or a gaming console where Wi-Fi is unstable and new Ethernet is inconvenient."
+  },
+  {
+    "heading": "Who should skip it",
+    "body": "Skip it if the coax map is unknown, the provider equipment conflicts with MoCA, or a short Ethernet run would solve the same problem with fewer variables."
+  },
+  {
+    "heading": "A matched pair avoids an unresolved mixing assumption",
+    "body": "ScreenBeam describes standard MoCA backward compatibility, but the selected Amazon kit warns against mixing ECB6200, ECB6250 and non-ScreenBeam adapters. Treat a mixed installation as unconfirmed until ScreenBeam checks the supplied revisions. The official kit guide shows two endpoints and distinguishes the service-entry filter from a possible modem-side filter; it also warns about DOCSIS 3.1 interference. Satellite and AT&T/U-verse coax systems are excluded. Ask the provider about the frequency plan before adding filters; two filters are not a universal prescription."
+  },
+  {
+    "heading": "Before choosing the offered unit",
+    "body": "Choose the matched ECB7250K02 two-adapter kit only after mapping the coax and clearing provider, splitter and DOCSIS coexistence requirements. Do not assume it can join ECB6200, ECB6250 or another brand: the current retailer warning conflicts with the general official compatibility claim. Keep working Ethernet or coax hardware when it meets the task."
+  }
+],
     alternatives: ["Run Ethernet when the path is practical.", "Use wired mesh backhaul over Ethernet when ports are already available.", "Use a 2.5GbE switch when the room already has Ethernet."],
     compareSlugs: ["trendnet-teg-s350-2-5g-switch", "tp-link-deco-be63-wifi-7-mesh"],
     sources: [
-      { name: "Amazon listing for ASIN B08ML1TSXC", url: "https://www.amazon.com/dp/B08ML1TSXC", note: "Exact linked Amazon listing; confirm model, kit quantity, and included adapters." },
-    ],
-    offers: [{ merchant: "Amazon US", url: "https://www.amazon.com/dp/B08ML1TSXC?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl", label: "Check ECB7250K02 price on Amazon", priceNote: "Confirm ASIN B08ML1TSXC, two-adapter starter kit, seller, and included accessories." }],
+  {
+    "name": "Amazon listing for ASIN B08ML1TSXC",
+    "url": "https://www.amazon.com/dp/B08ML1TSXC",
+    "note": "Exact linked Amazon listing; confirm model, kit quantity, and included adapters."
+  },
+  {
+    "name": "ScreenBeam ECB7250 official product and firmware page",
+    "url": "https://www.screenbeam.com/products/screenbeam-ecb7250/",
+    "note": "Official interfaces, backwards-compatibility claim, non-compatible systems, DOCSIS overlap and firmware history. This conflicts with the selected retailer warning about mixed adapters."
+  },
+  {
+    "name": "ScreenBeam ECB7250 two-adapter kit Quick Start",
+    "url": "https://www.screenbeam.com/wp-content/uploads/2025/04/ecb7250_kit_ncs_quick_start_guide_v1.4-screenbeam.pdf",
+    "note": "Three-page kit guide: two units/cables/adapters/splitters, service-entry and modem filter distinction. Not the single-unit package list."
+  },
+  {
+    "name": "ScreenBeam ECB7250 user guide",
+    "url": "https://www.screenbeam.com/wp-content/uploads/2025/04/ecb7250_ncs_user_manual-screenbeam.pdf",
+    "note": "15-page single-adapter guide text read, including MPS/encryption, indoor operation and supplied power adapter. No firmware installed or unit tested."
+  }
+],
+    offers: [
+  {
+    "merchant": "Amazon US",
+    "url": "https://www.amazon.com/dp/B08ML1TSXC?tag=madanetwork-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+    "label": "Check ECB7250K02 price on Amazon",
+    "priceNote": "Confirm ASIN B08ML1TSXC, two-adapter starter kit, seller, and included accessories."
+  }
+],
+
+    "purchaseCheck": "Choose the matched pair only after confirming coax, splitters and provider/DOCSIS coexistence. Do not mix ECB6200/6250 or other brands without ScreenBeam confirmation. Keep a sufficient wired path. Recheck the exact two-unit kit, condition and seller.",
+    "researchNote": "This is a document-based guide, not an in-home speed or interoperability test. The November 1, 2026 US listing was the ECB7250K02 starter kit. The official 15-page single-adapter user-guide text and three-page kit Quick Start were read; the kit is the source for package quantity. The retailer/official mixed-adapter conflict remains unresolved. Physical revision, encryption setup, coax splitters, service-entry isolation and provider frequency plan must match the installation.",
   },
 ];
 

@@ -14,6 +14,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const roundups = siteRoundups(site.key).filter((item) => !item.sitemapExcluded);
   const guides = siteGuides(site.key).filter((item) => !item.sitemapExcluded);
   const tools = siteTools(site.key).filter((item) => !item.sitemapExcluded);
+  const categoryLastModified = new Map<string, Date>();
+  for (const item of [...guides, ...products, ...roundups, ...tools]) {
+    const updated = contentDate(item.updatedAt)?.date;
+    const previous = categoryLastModified.get(item.category);
+    if (updated && (!previous || updated > previous)) categoryLastModified.set(item.category, updated);
+  }
   const urls: Array<{
     path: string;
     changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"];
@@ -29,21 +35,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       path: `/categories/${category.slug}`,
       changeFrequency: "weekly" as const,
       priority: 0.75,
-      ...(guides.some((guide) => guide.category === category.slug && guide.familySlug)
-        ? {
-            lastModified: new Date(
-              guides.some((guide) => guide.category === category.slug && guide.updatedAt === "October 6, 2026")
-                || products.some((product) => product.category === category.slug && product.updatedAt === "October 6, 2026")
-                ? "2026-10-06T00:00:00Z"
-                : guides.some((guide) => guide.category === category.slug && guide.updatedAt === "September 11, 2026")
-                || products.some((product) => product.category === category.slug && product.updatedAt === "September 11, 2026")
-                  ? "2026-09-11T00:00:00Z"
-                  : guides.some((guide) => guide.category === category.slug && guide.updatedAt === "September 8, 2026")
-                    ? "2026-09-08T00:00:00Z"
-                    : "2026-08-23T00:00:00Z",
-            ),
-          }
-        : {}),
+      ...(categoryLastModified.has(category.slug) ? { lastModified: categoryLastModified.get(category.slug) } : {}),
     })),
     ...roundups.map((item) => {
       const updated = contentDate(effectiveContentUpdatedAt(item.updatedAt, searchOpportunityUpdatedAt(site.key, "roundup", item.slug)));

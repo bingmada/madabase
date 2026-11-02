@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { CSSProperties } from "react";
 import { notFound } from "next/navigation";
 import { AffiliateButtonGroup } from "@/components/AffiliateButton";
 import { JsonLd } from "@/components/JsonLd";
@@ -162,7 +163,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
   const answer = roundup.quickAnswer ?? quickAnswer(roundup.title, roundup.intent, picks);
   const advice = getRoundupAdvice(site.key, roundup.category);
   const sources = officialSourceLinks(picks, roundup.sources);
-  const evidencePresentation = roundupEvidencePresentation(picks);
+  const evidencePresentation = roundupEvidencePresentation();
 
   return (
     <main className="section">
@@ -205,9 +206,9 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
             >
               <div>
                 <p className="text-xs font-bold uppercase text-[var(--muted)]">{commercePathPaused ? "Exact retailer links paused" : "Current retailer option"}</p>
-                <h2 className="mt-2 text-lg font-bold sm:text-xl">{topPick?.amazonTitle ?? topPick?.name ?? commerceProduct?.amazonTitle ?? commerceProduct?.name}</h2>
+                <h2 className="mt-2 text-lg font-bold sm:text-xl">{commerceProduct?.amazonTitle ?? commerceProduct?.name ?? topPick?.amazonTitle ?? topPick?.name}</h2>
                 {commerceIsAlternative ? (
-                  <p className="mt-2 text-sm leading-5 text-[var(--muted)]">Different product: the first pick has no verified retailer path; this button is for {commerceProduct?.name}.</p>
+                  <p className="mt-2 text-sm leading-5 text-[var(--muted)]">Different product: the first pick’s purchase link is paused; this button is for {commerceProduct?.name}.</p>
                 ) : commercePathPaused ? (
                   <p className="mt-2 text-sm leading-5 text-[var(--muted)]">The named product links are paused while their exact listings are rechecked. No unrelated product is substituted.</p>
                 ) : topPick ? (
@@ -217,7 +218,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
               </div>
               <div className="flex flex-wrap items-start gap-2">
                 {commerceProduct ? <AffiliateButtonGroup site={site.key} product={commerceProduct} position={commerceIsAlternative ? "roundup-first-viewport-verified-alternative" : "roundup-first-viewport-primary"} limit={1} firstViewport /> : null}
-                {topPick ? <Link className="button-secondary" href={`/reviews/${topPick.slug}`}>Product guide</Link> : null}
+                {topPick ? <Link className="button-secondary" href={`/reviews/${topPick.slug}`}>{commerceIsAlternative ? "Original first-pick guide" : "Product guide"}</Link> : null}
               </div>
             </div>
           ) : null}
@@ -274,7 +275,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
                         {roundup.purchaseFlow === "task-links" && product.purchaseCheck ? (
                           <p className="text-sm leading-6 text-[var(--muted)] md:col-span-2 md:col-start-2" data-roundup-model-purchase-check="true">{product.purchaseCheck}</p>
                         ) : null}
-                        <div className={`flex flex-wrap items-start gap-2 md:justify-end ${roundup.purchaseFlow === "task-links" ? "md:col-start-3" : ""}`}>
+                        <div className={`flex flex-wrap items-start gap-2 md:justify-end ${roundup.purchaseFlow === "task-links" ? "md:col-start-3" : ""}`} data-sticky-commerce-suppress="">
                           <Link className="button-secondary" href={`/reviews/${product.slug}`}>
                             Notes
                           </Link>
@@ -293,21 +294,25 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
                   Match the exact model, bundle, seller, coupon, and return window before choosing between the picks.
                 </p>
                 <p className="mt-2 text-xs leading-5 text-[var(--muted)] sm:hidden">Swipe across the table to compare details; the product name stays in view.</p>
-                <div className="mt-4 overflow-x-auto rounded-md border border-[var(--border)]" role="region" aria-label="Compare the current options" tabIndex={0}>
-                  <table className="w-full min-w-[820px] text-left text-sm">
+                <div className="guide-decision-scroll mt-4 overflow-x-auto rounded-md border border-[var(--border)]" style={{ scrollSnapType: "x mandatory", scrollPaddingLeft: "7rem" }} role="region" aria-label="Compare the current options" tabIndex={0}>
+                  <table className="guide-decision-table w-full text-left text-sm" style={{ "--guide-value-columns": 4 } as CSSProperties}>
+                    <colgroup>
+                      <col className="guide-decision-label-column" />
+                      {Array.from({ length: 4 }, (_, index) => <col className="guide-decision-value-column" key={index} />)}
+                    </colgroup>
                     <thead className="bg-[var(--surface-muted)] text-xs uppercase text-[var(--muted)]">
                       <tr>
-                        <th className="sticky left-0 z-20 min-w-[160px] bg-[var(--surface-muted)] px-4 py-3" scope="col">Pick</th>
-                        <th className="px-4 py-3" scope="col">Key fit details</th>
-                        <th className="px-4 py-3" scope="col">Exact listing</th>
-                        <th className="px-4 py-3" scope="col">What can change</th>
-                        <th className="px-4 py-3" scope="col">Updated</th>
+                        <th className="sticky left-0 z-20 bg-[var(--surface-muted)] px-4 py-3" scope="col">Pick</th>
+                        <th className="snap-start px-4 py-3" scope="col">Key fit details</th>
+                        <th className="snap-start px-4 py-3" scope="col">Exact listing</th>
+                        <th className="snap-start px-4 py-3" scope="col">What can change</th>
+                        <th className="snap-start px-4 py-3" scope="col">Updated</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-[var(--border)] bg-white">
                       {picks.map((product) => (
                         <tr key={product.slug}>
-                          <th className="sticky left-0 z-10 min-w-[160px] bg-white px-4 py-4 font-bold" scope="row">
+                          <th className="sticky left-0 z-10 bg-white px-4 py-4 font-bold" scope="row">
                             <Link className="hover:text-[var(--brand-strong)] hover:underline" href={`/reviews/${product.slug}`}>
                               {product.amazonTitle ?? product.name}
                             </Link>
@@ -346,14 +351,18 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
               <section className="panel scroll-mt-24 p-5" id="roundup-comparison">
                 <p className="eyebrow">Side-by-side checks</p>
                 <h2 className="mt-3 text-xl font-bold">{roundup.comparisonTable.title}</h2>
-                {roundup.purchaseFlow === "task-links" ? <p className="mt-3 text-sm text-[var(--muted)]">Scroll across to compare models; the check name stays in view.</p> : null}
-                <div className={`mt-5 overflow-x-auto rounded-md border border-[var(--border)] bg-white ${roundup.purchaseFlow === "task-links" ? "[container-type:inline-size]" : ""}`} role="region" aria-label={roundup.comparisonTable.title} tabIndex={0}>
-                  <table className={`text-left text-sm ${roundup.purchaseFlow === "task-links" && roundup.comparisonTable.columns.length === 2 ? "w-[calc(200cqw-7rem)] table-fixed md:w-full md:table-auto" : `w-full ${roundup.comparisonTable.columns.length <= 2 ? "min-w-[600px]" : "min-w-[920px]"}`}`}>
+                <p className="mt-3 text-sm text-[var(--muted)] sm:hidden">Scroll across to compare models; the check name stays in view.</p>
+                <div className="guide-decision-scroll mt-5 overflow-x-auto rounded-md border border-[var(--border)] bg-white" style={{ scrollSnapType: "x mandatory", scrollPaddingLeft: "7rem" }} role="region" aria-label={roundup.comparisonTable.title} tabIndex={0}>
+                  <table className="guide-decision-table w-full text-left text-sm" style={{ "--guide-value-columns": roundup.comparisonTable.columns.length } as CSSProperties}>
+                    <colgroup>
+                      <col className="guide-decision-label-column" />
+                      {roundup.comparisonTable.columns.map((column) => <col className="guide-decision-value-column" key={column} />)}
+                    </colgroup>
                     <thead className="bg-[var(--surface-muted)] text-xs uppercase text-[var(--muted)]">
                       <tr>
                         <th className={`px-4 py-3 ${roundup.purchaseFlow === "task-links" ? "sticky left-0 z-10 w-28 bg-[var(--surface-muted)] md:w-auto" : ""}`} scope="col">Check</th>
                         {roundup.comparisonTable.columns.map((column) => (
-                          <th className="px-4 py-3" scope="col" key={column}>{column}</th>
+                          <th className="snap-start px-4 py-3" scope="col" key={column}>{column}</th>
                         ))}
                       </tr>
                     </thead>
@@ -372,7 +381,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
                   </table>
                 </div>
                 {roundup.purchaseFlow === "task-links" ? (
-                  <div className="mt-5 grid gap-3 sm:grid-cols-2" aria-label="Exact models from this comparison" data-comparison-model-actions="true">
+                  <div className="mt-5 grid gap-3 sm:grid-cols-2" aria-label="Exact models from this comparison" data-comparison-model-actions="true" data-sticky-commerce-suppress="">
                     {picks.map((product) => (
                       <div className="min-w-0 rounded-md border border-[var(--border)] bg-white p-4" key={product.slug}>
                         <h3 className="font-bold">{product.amazonTitle ?? product.name}</h3>
@@ -384,10 +393,10 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
                   </div>
                 ) : null}
                 {site.key === "baby" && ["babybjorn-harmony-vs-ergobaby-omni-breeze", "dr-browns-vs-baby-brezza-sterilizer-dryer"].includes(roundup.slug) ? <>
-                  <div className="mt-5 grid gap-3 sm:grid-cols-2" aria-label="Exact models from this comparison" data-comparison-model-actions="true">
+                  <div className="mt-5 grid gap-3 sm:grid-cols-2" aria-label="Exact models from this comparison" data-comparison-model-actions="true" data-sticky-commerce-suppress="">
                     {picks.slice(0,2).map(product => <div className="min-w-0 rounded-md border border-[var(--border)] bg-white p-4" key={product.slug}>
                       <h3 className="font-bold">{product.name}</h3>
-                      <p className="my-3 text-sm leading-6 text-[var(--muted)]">{product.slug === "babybjorn-carrier-harmony" ? "Compare for front-access fastening after checking the child's size, allowed position and fit on each caregiver. Confirm Silver 3D Mesh and the exact return terms." : product.slug === "ergobaby-omni-breeze-carrier" ? "Compare when hip carry or the higher overall range has a job. This is Omni Breeze in Onyx Black; use its own position instructions." : product.slug === "dr-browns-all-in-one-sterilizer-dryer" ? "Compare when the six-bottle layout fits your actual washed parts. Confirm AC177/AC377, the selected bundle and voltage." : "Compare Advanced when its larger modular layout fits your actual washed parts. Confirm Sterilizer Dryer Advanced, colour and voltage; Washer Pro is a different appliance."}</p>
+                      <p className="my-3 text-sm leading-6 text-[var(--muted)]">{product.slug === "babybjorn-carrier-harmony" ? "Compare for front-access fastening after checking the child's size, allowed position and fit on each caregiver. Confirm Silver 3D Mesh and the exact return terms." : product.slug === "ergobaby-omni-breeze-carrier" ? "Compare when hip carry or the higher overall range has a job. This is Omni Breeze in Onyx Black; use its own position instructions." : product.slug === "dr-browns-all-in-one-sterilizer-dryer" ? "Compare when the six-bottle layout fits your washed parts. This ASIN's manual names AC177; match the base and US power. Plan a direct wall outlet, and pause if you need an extension cord or the supplied instructions differ." : "Compare Advanced when its larger modular layout fits your actual washed parts. Confirm Sterilizer Dryer Advanced, colour and voltage; Washer Pro is a different appliance."}</p>
                       {product.offers.length ? <AffiliateButtonGroup site={site.key} product={product} position="roundup-comparison-exact-model" limit={1} sticky={false} /> : <p className="text-sm font-bold">Exact retailer option paused</p>}
                       <Link className="mt-3 block text-sm font-bold underline" href={`/reviews/${product.slug}`}>Check the model details</Link>
                     </div>)}
@@ -402,6 +411,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
                 <p className="mt-3 leading-7 text-[var(--muted)]">{buyerFacingBody(section.body)}</p>
               </section>
             ))}
+            {!(roundup.sections?.length || roundup.decisionGuide?.length) ? (
             <section className="panel p-5">
               <h2 className="text-xl font-bold">How to choose without overbuying</h2>
               <div className="mt-4 grid gap-5 md:grid-cols-2">
@@ -425,6 +435,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
                 </div>
               </div>
             </section>
+            ) : null}
             {relatedGuides.length ? (
               <section className="panel p-5">
                 <h2 className="text-xl font-bold">Related setup and buying guides</h2>

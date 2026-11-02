@@ -22,15 +22,9 @@ export function productEvidencePresentation(product: Product) {
   return { label, mode, note, summary };
 }
 
-export function roundupEvidencePresentation(products: Product[]) {
-  const hasIndependentTests = products.some((product) => product.evidenceMode === "research-synthesis" && product.externalTests?.length);
-
+export function roundupEvidencePresentation() {
   return {
-    label: hasIndependentTests
-      ? "Research-based comparison · not hands-on"
-      : "Official-spec comparison · not hands-on",
-    summary: hasIndependentTests
-      ? "The shortlist combines current manufacturer documentation, exact-listing checks, and attributed independent tests. Different test setups are not merged into a synthetic score."
-      : "The shortlist compares current manufacturer documentation, exact models, fit, compatibility, ownership costs, and checkout risks. It is not a hands-on ranking.",
+    label: "Source-based comparison · not hands-on",
+    summary: "Use the cited sources and model-specific checks below to compare fit, compatibility and ownership. Confirm the selected retailer offer separately; this is not a hands-on ranking.",
   };
 }
