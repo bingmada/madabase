@@ -1,21 +1,26 @@
 import Link from "next/link";
 import { AffiliateButton } from "./AffiliateButton";
 import { findProduct } from "@/lib/content";
+import { findCommerceProduct } from "@/lib/commerce-paths";
 import { merchant13OptionForGuide } from "@/lib/merchant13-task-options";
 import { amazonAsinAffiliateUrl } from "@/lib/affiliate-tracking";
 import { amazonFamilyProductIdentity, findAmazonFamilyProduct } from "@/lib/amazon-family-products";
 import type { MarketKey, SiteKey } from "@/lib/types";
+import { AmazonUsListingNotice } from "./AmazonUsListingNotice";
 
 export function Merchant13TaskOption({ site, slug, market }: { site: SiteKey; slug: string; market?: MarketKey }) {
   const option = merchant13OptionForGuide(site, slug);
   if (option) {
-    const { product, keep } = option;
+    const { keep } = option;
+    const product = findCommerceProduct(site, option.product.slug);
+    if (!product?.offers.length || product.asin !== option.product.asin) return null;
     return <aside className="mt-6 min-w-0 rounded-md border border-[var(--border)] bg-white p-5" aria-label={`Separate option: ${product.name}`} data-guide-task-alternative={product.asin}>
       <p className="eyebrow">Another option for this task</p>
       <h2 className="mt-2 text-xl font-bold">{product.name}</h2>
       <p className="mt-3 text-sm leading-6">{product.summary} {product.verdict}</p>
       <p className="mt-3 text-sm leading-6 text-[var(--muted)]">{product.cons[0]}</p>
       <p className="mt-3 text-sm font-semibold leading-6">{product.specs["Return check"]}</p>
+      <AmazonUsListingNotice market={market} />
       <div className="mt-4"><AffiliateButton site={site} product={product} offer={product.offers[0]} market={market} modelLabel={product.name} position="guide-task-matched-alternative" resolveCreatorsListing={false} /></div>
       <p className="mt-3 text-sm leading-6 text-[var(--muted)]">{keep}</p>
       <details className="mt-4 text-sm leading-6"><summary>Sources and selected listing</summary><ul className="mt-2 space-y-3">{product.sources?.map(source => <li className="break-words" key={source.url}><a className="font-semibold underline" href={source.url} target="_blank" rel="noopener noreferrer">{source.name}</a>{source.note ? <p>{source.note}</p> : null}</li>)}</ul></details>
@@ -38,6 +43,7 @@ export function Merchant13TaskOption({ site, slug, market }: { site: SiteKey; sl
       <h2 className="mt-2 text-xl font-bold">{differentFormat.model}</h2>
       <p className="mt-3 text-sm leading-6">{differentFormat.body}</p>
       <a className="mt-3 inline-block font-semibold underline" href={`/guides/${differentFormat.guide}`}>Read this model’s fit, original instructions and stopping checks</a>
+      <AmazonUsListingNotice market={market} />
       <div className="mt-4"><AffiliateButton site={site} product={identity} offer={offer} market={market} modelLabel={differentFormat.model} position="guide-task-matched-alternative" resolveCreatorsListing={false} /></div>
       <p className="mt-3 text-sm leading-6 text-[var(--muted)]">{differentFormat.keep}</p>
     </aside>;
@@ -50,6 +56,7 @@ export function Merchant13TaskOption({ site, slug, market }: { site: SiteKey; sl
     <h2 className="mt-2 text-xl font-bold">Baby Tula Lite — Slate, a structured carrier</h2>
     <p className="mt-3 text-sm leading-6">This is a different packable structured carrier, not a hip-seat attachment or the unavailable PlateauELK. Compare it only if front inward carry at 12–30 lb fits the child and caregiver, including knee-to-knee support without overextension. Back carry begins at 18 lb and also needs stable head, neck and torso control and seated readiness. It has no newborn, outward-facing or infant-insert option.</p>
     <p className="mt-3 text-sm leading-6 text-[var(--muted)]">If supported hip-seat carrying is the requirement, Lite does not establish that result. Match its supplied manual and physical fit. On November 1 the Slate offer was $89 from BabyTula, shipped by Amazon, with expanded free 90-day returns; selected New condition was not explicit in this refresh. Recheck live terms.</p>
+    <AmazonUsListingNotice market={market} />
     <div className="mt-4"><AffiliateButton site={site} product={tula} offer={tula.offers[0]} market={market} modelLabel="Baby Tula Lite Slate — separate structured carrier" position="guide-task-matched-alternative" resolveCreatorsListing={false} /></div>
     <p className="mt-3 text-sm leading-6 text-[var(--muted)]">Keep a suitable existing carrier or supported carrying routine. An unknown fit, undersized baby or required hip-seat mode is a reason to stop.</p>
     <Link className="mt-3 inline-block font-semibold underline" href="/reviews/baby-tula-lite-carrier">Read the Lite position, manual and fit checks</Link>

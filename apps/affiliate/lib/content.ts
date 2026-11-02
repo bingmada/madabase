@@ -8,6 +8,7 @@ import { applyIndexingRepair } from "./indexing-repair-content";
 import { applyLowClickRepair } from "./low-click-repairs";
 import { applyOctoberSearchRecovery } from "./october-search-recovery-content";
 import { applyFocusedGuideRecovery, applyFocusedProductRecovery, applyFocusedRoundupRecovery } from "./focused-content-recovery";
+import { applyReviewedProductContent } from "./reviewed-product-content";
 import { refreshCommerceGuide, refreshCommerceProduct, refreshCommerceRoundup } from "./commerce-refresh";
 import {
   applyPortfolioSearchRecoveryGuide,
@@ -4392,5 +4393,5 @@ export function findTool(site: SiteKey, slug: string) {
 
 export function applyAmazonOverride(product: Product): Product {
   const override = amazonProductOverrides[product.slug];
-  return applySiteAffiliateTracking(override ? { ...product, ...override } : product);
+  return applySiteAffiliateTracking(applyReviewedProductContent(override ? { ...product, ...override } : product));
 }

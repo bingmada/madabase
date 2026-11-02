@@ -93,6 +93,8 @@ export type Roundup = Publishable & {
   purchaseCheck?: string;
   /** Different tasks require choosing a model from the comparison before buying. */
   purchaseFlow?: "task-links";
+  /** Explicitly named, separately reviewed options; original comparison identities stay intact. */
+  purchaseAlternatives?: string[];
   intro?: string;
   sources?: Array<{ name: string; url: string; note?: string }>;
   sections?: Array<{ heading: string; body: string }>;

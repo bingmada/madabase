@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "at": "2026-11-02T21:07:11.683Z",
+  "status": "passed_local_pending_one_production_release",
+  "baselineSource": "9d0cff4648d2b4acbcb09bca8173b79872641b03",
+  "artifact": {
+    "buildId": "rbiK2NwB-_XkMAcLInI7B",
+    "sha256": "294c48671ee1820f16bc6b1483eeaf515d6a4aeb45b42064acf37e8291a54ea9",
+    "bytes": 59498058,
+    "distDir": ".next-release",
+    "archivePath": "apps/affiliate/.release/affiliate-runtime.tgz"
+  },
+  "originalHeldProductsReviewed": 59,
+  "originalHoldsRetained": 59,
+  "originalHoldsCleared": 0,
+  "originalGapPagesWithExactAmazonPaths": 100,
+  "relatedPageRegressions": 108,
+  "cohortPages": 208,
+  "html": {
+    "actualCases": 1040,
+    "passed": 1040,
+    "failed": 0,
+    "receipt": "html-current/runs/2026-11-02T20-58-35-402Z/results.json",
+    "sha256": "9c0ad3968d126f912b64bcefc92a2f8734c668a70b4621a8efd330d1a3c6120c"
+  },
+  "wholeSite": {
+    "actualUrls": 5320,
+    "passed": 5320,
+    "failed": 0,
+    "receipt": "full-site-local-accepted.json",
+    "sha256": "337044fb1b2a79c51bc03a76bafc2f702181df5f17d511006f5e8859285cac90"
+  },
+  "native": {
+    "actualViewsBound": 416,
+    "currentReleaseViews": 2,
+    "unchangedContractReuse": 414,
+    "receipt": "final-native-contracts.json",
+    "sha256": "05f541145d4bff0923c153e880199a1b15a444a8d7534908f8feb0e59e1df432",
+    "scope": "Each page has actual desktop and phone UI evidence, complete current HTML/source checks and explicit unchanged whole-main/client-code/CSS bindings. View-specific visual scope is preserved; not every paragraph was pixel re-read."
+  },
+  "publicAmazonIdentities": 55,
+  "exactGuideRoutes": 122,
+  "newPrivateProfiles": 17,
+  "thinReviewPagesPublished": 0,
+  "merchantQualificationsAdded": 0,
+  "clickQa": {
+    "identities": 55,
+    "calls": 56,
+    "persistedFalse": 56,
+    "heldRejected": 5,
+    "productionDatabaseAccess": false
+  },
+  "rawHeldAmazonHrefs": 0,
+  "rawAnchorsChecked": 4978,
+  "sourceMatrix": {
+    "path": "final-case-dispositions/case-matrix-59-final-source.json",
+    "sha256": "43da1d4fe586d6952a8eb74812090ccd6a2c952e574d623f181e93b85587e4a4",
+    "historicalSnapshotsRemainLabelled": true,
+    "final025Override": [
+      "final-dryer-copy-followup/root-apply-receipt.json",
+      "final-dryer-copy-followup/root-route-copy-apply-receipt.json",
+      "native-accepted/visual-dryer-copy.json",
+      "runs/2026-11-02T20-58-35-402Z/results.json"
+    ]
+  },
+  "visualReports": [
+    {
+      "path": "native-final/visual-final-pet-001-013.json",
+      "sha256": "7682ee5839df12bb9aff5004ba30f659b18801149e81b405e6f345eb06ba8687",
+      "status": "final_native_ui_scope_pass"
+    },
+    {
+      "path": "native-final/visual-final-smart-014-025.json",
+      "sha256": "5f6df7519d0f40ea63f25aa69b2ddbd97b253a45348ad60dc508bf71f631a6c0",
+      "status": "requested_final_native_ui_scope_passed_editorial025_remains_open"
+    },
+    {
+      "path": "native-final/visual-final-smart-026-037.json",
+      "sha256": "5c7f1618461376933459465d95f79b9b1809076ca13e982f13415e3d93a97bbf",
+      "status": "bounded_final_ui_review_passed"
+    },
+    {
+      "path": "native-final/visual-final-pet-038-053.json",
+      "sha256": "0a61a5f286a9975f3a2530a1bd2591fb8b721da05cad9a0a66249d15aa5ba5e0",
+      "status": "native_ui_scope_pass_with_bounded_R1_source_reuse"
+    },
+    {
+      "path": "native-final/visual-final-smart-054-064.json",
+      "sha256": "be8f1fab49ad2fb75c68ba562e87a8803288c426bd408136d126833ed9826d6f",
+      "status": "bounded_final_ui_review_passed_with_separate_copy_observation"
+    },
+    {
+      "path": "native-release/visual-release-pet-065-082.json",
+      "sha256": "6f7dcf0865b82d9607809d10ae8faee0f2deb9473e82683672a62166003f4de2",
+      "status": "formal_R1_local_standalone_native_UI_scope_pass"
+    },
+    {
+      "path": "native-release/visual-release-pet-083-088.json",
+      "sha256": "3c65a83a1885df35cb0ced159f9b69e8e015ff26023db6c8575fe204a0af0bb8",
+      "status": "bounded_native_UI_pass_via_unchanged_R1_contract_and_CSS_reuse"
+    },
+    {
+      "path": "native-release-v2/visual-089-100.json",
+      "sha256": "8bf94f1f88f808fbc3eb190a560800b42b70e1e344d4bb53522af3e0ffb7768f",
+      "status": "bounded_pixel_review_complete_no_blocking_issue"
+    },
+    {
+      "path": "native-release-v3/visual-101-112.json",
+      "sha256": "f47e17059ec37b4366e65d494342e2bf1e42a5945103d643613bfaa9ec7595eb",
+      "status": "bounded_v3_pixel_review_complete_with_known_v4_text_followup"
+    },
+    {
+      "path": "native-release-v3/visual-113-124.json",
+      "sha256": "c629367343087592786a1a3112d1e9d9fb4735cc48c4ce3ba8e54a1446fba868",
+      "status": "main_UI_pass_with_one_narrow_pending"
+    },
+    {
+      "path": "native-release-v3/visual-125-139.json",
+      "sha256": "ddf25065a9ebc1081c7a0ae9cccd6ca371b1e5b9aa6c448008b3ae69cfb70ad3",
+      "status": "passed_bounded_native_ui"
+    },
+    {
+      "path": "native-release-v3/visual-146-160.json",
+      "sha256": "d97bc0b187cafb6e3be4c9019e3797aa13cd35139c6d7207225f82f918ebd890",
+      "status": "pass_in_reviewed_UI_scope"
+    },
+    {
+      "path": "native-release-v3/visual-161-178.json",
+      "sha256": "1030f48cc77194c8af8d7228a0d0aa0b6f7f33f6a844af723e613313851c1c31",
+      "status": "bounded_existing_inline_pixel_review_complete"
+    },
+    {
+      "path": "native-release-v3/visual-179-193.json",
+      "sha256": "e458d60f0280cacdec6c53a0cdd2ad5cffd3a93037579570790c8daf0df4b4f7",
+      "status": "passed_bounded_native_ui"
+    },
+    {
+      "path": "native-release-v3/visual-194-208.json",
+      "sha256": "47c5f6e7f0ec3e381fddb88a901af73902de845b1bc059288093fa49f195eebd",
+      "status": "pass_in_reviewed_UI_scope"
+    },
+    {
+      "path": "native-release-v4/visual-final-polish.json",
+      "sha256": "ca83e8cbd210cac30e7065124662888944aed285ac859f502588fa2e267210ac",
+      "status": "final_bounded_polish_pixels_reviewed_known_followups_closed"
+    },
+    {
+      "path": "native-release-v4/visual-final-early-followups.json",
+      "sha256": "120b9b728c1e7611411fd70bad47495cb5c5480571b34bc5e35bed92a56914e7",
+      "status": "passed_bounded_changed_regions"
+    },
+    {
+      "path": "native-release-v5/visual-location-copy.json",
+      "sha256": "b58a47da82dc8bba28d5863135a4cdeae39f9f8cb5a4ed5137ef2fde07d45d8b",
+      "status": "passed_bounded_location_copy"
+    },
+    {
+      "path": "native-accepted/visual-dryer-copy.json",
+      "sha256": "b8725e7e10002d7b36a636bbb92f1978c962d59b14c1c117f9b211f74d6b8bc6",
+      "status": "passed_bounded_dryer_copy"
+    },
+    {
+      "path": "native-final-markets-v5/visual-markets-v5.json",
+      "sha256": "fb5ccab737f8cee6cbf79f4e232dad580210a8a20321e9733a379ba524ff92e2",
+      "status": "pass_in_targeted_UI_scope"
+    }
+  ],
+  "closedFollowups": [
+    "18 explicit comparison source notes",
+    "025/044/050 question alignment",
+    "058 held-first-pick default answer",
+    "104 single-pack note",
+    "121 narrow source text overflow",
+    "Lyric6 reader-facing source note",
+    "128–133 source text overflow",
+    "192/193 direction wording",
+    "025 duplicate warning and spacing",
+    "CA legacy US offer/return scope"
+  ],
+  "excludedEvidence": [
+    "native-release-v2 captures101–139: wrong viewport and table-left reset; never accepted"
+  ],
+  "remainingFactBoundaries": "Original document/version/pack/received-unit uncertainties remain explicit or held. Separate alternatives are conditional task options, not certified equivalents; no future stock or performance guarantee.",
+  "releaseMethod": "Build/package locally; Git push fixed revision; server Git fetch/checkout and archive extraction only; no server build, dependency install or database mutation.",
+  "mainRuntimeUnchanged": true,
+  "productionChanged": false
+}

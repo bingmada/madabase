@@ -6,6 +6,7 @@ import { useAmazonCreatorsListing } from "./AmazonCreatorsListing";
 import { useStickyCommerceDock } from "./useStickyCommerceDock";
 import { trackClarityAffiliateClick } from "./ClarityAnalytics";
 import { isQaVisit } from "../../../shared/analytics-traffic";
+import { commerceDockModelLabel } from "@/lib/commerce-dock-labels";
 import type { AffiliateOffer, AmazonMarketKey, MarketKey, Product, SiteKey } from "@/lib/types";
 
 type AffiliateProductIdentity = Pick<Product, "slug" | "name" | "amazonTitle" | "asin" | "specs">;
@@ -53,6 +54,10 @@ export function AffiliateButton({
     : `Check current price & availability at ${merchantName}`;
   const purchaseLink = useRef<HTMLAnchorElement>(null);
   const showStickyDock = useStickyCommerceDock({ enabled: sticky, buttonRef: purchaseLink, startId: stickyStartId, scopeKey: `${site}:${product.slug}:${amazonMarket}:${position}` });
+  const dockFullLabel = modelLabel ?? creatorsListing?.title ?? product.amazonTitle ?? product.name;
+  const dockVisibleLabel = !creatorsListing || creatorsListing.asin.trim().toUpperCase() === expectedAsin
+    ? commerceDockModelLabel(site, product) ?? dockFullLabel
+    : dockFullLabel;
 
   function trackClick(clickPosition = position) {
     if (isQaVisit()) return;
@@ -122,7 +127,7 @@ export function AffiliateButton({
       </div> : primaryButton}
       {showStickyDock ? (
         <a
-          aria-label={`Purchase option for ${modelLabel ?? creatorsListing?.title ?? product.amazonTitle ?? product.name}`}
+          aria-label={`Purchase option for ${dockFullLabel}`}
           className="fixed inset-x-3 z-40 rounded-lg border border-[var(--border)] bg-white/95 p-2.5 shadow-[0_10px_35px_rgba(15,23,42,0.24)] backdrop-blur transition hover:border-[var(--brand)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand)] lg:inset-x-auto lg:right-6 lg:w-[22rem] lg:max-w-[calc(100vw-3rem)]"
           data-affiliate-link-source={
             creatorsListing ? "amazon-creators-api" : isAmazon ? "verified-amazon-fallback" : "authorized-offer"
@@ -140,8 +145,8 @@ export function AffiliateButton({
         >
           <div className="flex min-w-0 items-center gap-3">
             <div className="min-w-0 flex-1">
-              <p className="truncate text-xs font-bold text-[var(--text)]">
-                {modelLabel ?? creatorsListing?.title ?? product.amazonTitle ?? product.name}
+              <p className="line-clamp-2 break-words text-xs font-bold text-[var(--text)]" title={dockFullLabel}>
+                {dockVisibleLabel}
               </p>
               <p className="mt-0.5 text-[11px] leading-4 text-[var(--muted)]">Current price &amp; availability · purchase link</p>
             </div>

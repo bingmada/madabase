@@ -1,0 +1,2294 @@
+{
+  "schemaVersion": 1,
+  "affiliateChecks": [
+    {
+      "key": "roundup:baby:babybjorn-harmony-vs-ergobaby-omni-breeze",
+      "host": "baby.madabase.com",
+      "path": "/best/babybjorn-harmony-vs-ergobaby-omni-breeze",
+      "canonical": "https://baby.madabase.com/best/babybjorn-harmony-vs-ergobaby-omni-breeze",
+      "markers": [
+        "BabyBjörn Harmony vs. Ergobaby Omni Breeze",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0BQCPHV9J"
+      ]
+    },
+    {
+      "key": "roundup:baby:babybjorn-mini-vs-ergobaby-omni-breeze",
+      "host": "baby.madabase.com",
+      "path": "/best/babybjorn-mini-vs-ergobaby-omni-breeze",
+      "canonical": "https://baby.madabase.com/best/babybjorn-mini-vs-ergobaby-omni-breeze",
+      "markers": [
+        "BabyBjörn Mini vs. Ergobaby Omni Breeze",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0BQCPHV9J"
+      ]
+    },
+    {
+      "key": "roundup:baby:babybjorn-mini-vs-harmony",
+      "host": "baby.madabase.com",
+      "path": "/best/babybjorn-mini-vs-harmony",
+      "canonical": "https://baby.madabase.com/best/babybjorn-mini-vs-harmony",
+      "markers": [
+        "BabyBjörn Mini vs. Harmony",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0BQCPHV9J"
+      ]
+    },
+    {
+      "key": "roundup:baby:momcozy-purehug-vs-ergobaby-omni-breeze",
+      "host": "baby.madabase.com",
+      "path": "/best/momcozy-purehug-vs-ergobaby-omni-breeze",
+      "canonical": "https://baby.madabase.com/best/momcozy-purehug-vs-ergobaby-omni-breeze",
+      "markers": [
+        "Momcozy PureHug vs. Ergobaby Omni Breeze",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0BQCPHV9J"
+      ]
+    },
+    {
+      "key": "guide:pet:soft-sided-pet-carriers-ownership-cost-and-maintenance",
+      "host": "pets.madabase.com",
+      "path": "/guides/soft-sided-pet-carriers-ownership-cost-and-maintenance",
+      "canonical": "https://pets.madabase.com/guides/soft-sided-pet-carriers-ownership-cost-and-maintenance",
+      "markers": [
+        "Soft Pet Carrier Care: Bed, Mesh, Zips & Replacement",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B000FLETX8"
+      ]
+    },
+    {
+      "key": "guide:pet:soft-sided-pet-carriers-setup-and-daily-workflow",
+      "host": "pets.madabase.com",
+      "path": "/guides/soft-sided-pet-carriers-setup-and-daily-workflow",
+      "canonical": "https://pets.madabase.com/guides/soft-sided-pet-carriers-setup-and-daily-workflow",
+      "markers": [
+        "Pet Carrier Setup: Calm Entry, Secure Closures & Travel Checks",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B000FLETX8"
+      ]
+    },
+    {
+      "key": "guide:pet:vehicle-pet-restraints-ownership-cost-and-maintenance",
+      "host": "pets.madabase.com",
+      "path": "/guides/vehicle-pet-restraints-ownership-cost-and-maintenance",
+      "canonical": "https://pets.madabase.com/guides/vehicle-pet-restraints-ownership-cost-and-maintenance",
+      "markers": [
+        "Dog Car Restraint Care: Webbing, Hardware & Crash Replacement",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B08JQQF9YX"
+      ]
+    },
+    {
+      "key": "guide:pet:vehicle-pet-restraints-setup-and-daily-workflow",
+      "host": "pets.madabase.com",
+      "path": "/guides/vehicle-pet-restraints-setup-and-daily-workflow",
+      "canonical": "https://pets.madabase.com/guides/vehicle-pet-restraints-setup-and-daily-workflow",
+      "markers": [
+        "Dog Car Restraint Setup: Parked Fit & Pre-Trip Checks",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B08JQQF9YX"
+      ]
+    },
+    {
+      "key": "guide:pet:wet-food-automatic-feeders-ownership-cost-and-maintenance",
+      "host": "pets.madabase.com",
+      "path": "/guides/wet-food-automatic-feeders-ownership-cost-and-maintenance",
+      "canonical": "https://pets.madabase.com/guides/wet-food-automatic-feeders-ownership-cost-and-maintenance",
+      "markers": [
+        "Wet-Food Feeder Care: Trays, Ice Packs, Batteries & Food",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0GRHQGDCB"
+      ]
+    },
+    {
+      "key": "guide:pet:wet-food-automatic-feeders-setup-and-daily-workflow",
+      "host": "pets.madabase.com",
+      "path": "/guides/wet-food-automatic-feeders-setup-and-daily-workflow",
+      "canonical": "https://pets.madabase.com/guides/wet-food-automatic-feeders-setup-and-daily-workflow",
+      "markers": [
+        "Wet-Food Feeder Routine: Prepare, Schedule, Check & Clean",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0GRHQGDCB"
+      ]
+    },
+    {
+      "key": "guide:pet:smart-bird-feeders-ownership-cost-and-maintenance",
+      "host": "pets.madabase.com",
+      "path": "/guides/smart-bird-feeders-ownership-cost-and-maintenance",
+      "canonical": "https://pets.madabase.com/guides/smart-bird-feeders-ownership-cost-and-maintenance",
+      "markers": [
+        "Smart Bird Feeder Costs: Plans, Cleaning, Power & Parts",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0B56BFH7P"
+      ]
+    },
+    {
+      "key": "guide:pet:smart-bird-feeders-setup-and-daily-workflow",
+      "host": "pets.madabase.com",
+      "path": "/guides/smart-bird-feeders-setup-and-daily-workflow",
+      "canonical": "https://pets.madabase.com/guides/smart-bird-feeders-setup-and-daily-workflow",
+      "markers": [
+        "Smart Bird Feeder Setup: Verify the Camera Before Mounting",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0B56BFH7P"
+      ]
+    },
+    {
+      "key": "guide:pet:motorized-smart-pet-doors-buying-guide",
+      "host": "pets.madabase.com",
+      "path": "/guides/motorized-smart-pet-doors-buying-guide",
+      "canonical": "https://pets.madabase.com/guides/motorized-smart-pet-doors-buying-guide",
+      "markers": [
+        "Smart Pet Door Guide: Unlocking, Powered Opening & Fit",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B000WJ0IGA"
+      ]
+    },
+    {
+      "key": "guide:pet:motorized-smart-pet-doors-vs-alternatives",
+      "host": "pets.madabase.com",
+      "path": "/guides/motorized-smart-pet-doors-vs-alternatives",
+      "canonical": "https://pets.madabase.com/guides/motorized-smart-pet-doors-vs-alternatives",
+      "markers": [
+        "Electronic Pet Door vs Powered Panel vs Plain Flap",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B000WJ0IGA"
+      ]
+    },
+    {
+      "key": "guide:pet:motorized-smart-pet-doors-compatibility-and-fit-guide",
+      "host": "pets.madabase.com",
+      "path": "/guides/motorized-smart-pet-doors-compatibility-and-fit-guide",
+      "canonical": "https://pets.madabase.com/guides/motorized-smart-pet-doors-compatibility-and-fit-guide",
+      "markers": [
+        "Smart Pet Door Fit: Clear Opening, Wall & Access Route",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B000WJ0IGA"
+      ]
+    },
+    {
+      "key": "guide:pet:motorized-smart-pet-doors-ownership-cost-and-maintenance",
+      "host": "pets.madabase.com",
+      "path": "/guides/motorized-smart-pet-doors-ownership-cost-and-maintenance",
+      "canonical": "https://pets.madabase.com/guides/motorized-smart-pet-doors-ownership-cost-and-maintenance",
+      "markers": [
+        "Smart Pet Door Costs: Installation, Keys, Batteries & Care",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B000WJ0IGA"
+      ]
+    },
+    {
+      "key": "guide:pet:motorized-smart-pet-doors-setup-and-daily-workflow",
+      "host": "pets.madabase.com",
+      "path": "/guides/motorized-smart-pet-doors-setup-and-daily-workflow",
+      "canonical": "https://pets.madabase.com/guides/motorized-smart-pet-doors-setup-and-daily-workflow",
+      "markers": [
+        "Smart Pet Door Setup: Verify the Mechanism Before Training",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B000WJ0IGA"
+      ]
+    },
+    {
+      "key": "guide:pet:pet-nail-grinders-buying-guide",
+      "host": "pets.madabase.com",
+      "path": "/guides/pet-nail-grinders-buying-guide",
+      "canonical": "https://pets.madabase.com/guides/pet-nail-grinders-buying-guide",
+      "markers": [
+        "Pet Nail Grinder Buying Guide: Comfort, Quick & Model Fit",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0DJ3JR93D"
+      ]
+    },
+    {
+      "key": "guide:pet:pet-nail-grinders-vs-alternatives",
+      "host": "pets.madabase.com",
+      "path": "/guides/pet-nail-grinders-vs-alternatives",
+      "canonical": "https://pets.madabase.com/guides/pet-nail-grinders-vs-alternatives",
+      "markers": [
+        "Pet Nail Grinder vs Clippers vs File: Which Fits?",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0DJ3JR93D"
+      ]
+    },
+    {
+      "key": "guide:pet:pet-nail-grinders-compatibility-and-fit-guide",
+      "host": "pets.madabase.com",
+      "path": "/guides/pet-nail-grinders-compatibility-and-fit-guide",
+      "canonical": "https://pets.madabase.com/guides/pet-nail-grinders-compatibility-and-fit-guide",
+      "markers": [
+        "Nail Grinder Fit: Revision, Guard, Bit & Nail Visibility",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0DJ3JR93D"
+      ]
+    },
+    {
+      "key": "guide:pet:pet-nail-grinders-ownership-cost-and-maintenance",
+      "host": "pets.madabase.com",
+      "path": "/guides/pet-nail-grinders-ownership-cost-and-maintenance",
+      "canonical": "https://pets.madabase.com/guides/pet-nail-grinders-ownership-cost-and-maintenance",
+      "markers": [
+        "Pet Nail Grinder Care: Bits, Dust, Charging & Wear",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0DJ3JR93D"
+      ]
+    },
+    {
+      "key": "guide:pet:pet-nail-grinders-setup-and-daily-workflow",
+      "host": "pets.madabase.com",
+      "path": "/guides/pet-nail-grinders-setup-and-daily-workflow",
+      "canonical": "https://pets.madabase.com/guides/pet-nail-grinders-setup-and-daily-workflow",
+      "markers": [
+        "Pet Nail Grinder Introduction: Calm Handling & When to Stop",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0DJ3JR93D"
+      ]
+    },
+    {
+      "key": "guide:pet:pet-dryers-buying-guide",
+      "host": "pets.madabase.com",
+      "path": "/guides/pet-dryers-buying-guide",
+      "canonical": "https://pets.madabase.com/guides/pet-dryers-buying-guide",
+      "markers": [
+        "Pet Dryer Buying Guide: Airflow, Heat & Exact Instructions",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B00JV33WJ8"
+      ]
+    },
+    {
+      "key": "guide:pet:pet-dryers-vs-alternatives",
+      "host": "pets.madabase.com",
+      "path": "/guides/pet-dryers-vs-alternatives",
+      "canonical": "https://pets.madabase.com/guides/pet-dryers-vs-alternatives",
+      "markers": [
+        "Pet Dryer vs Towels vs Groomer: Compare the Whole Routine",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B00JV33WJ8"
+      ]
+    },
+    {
+      "key": "guide:pet:pet-dryers-compatibility-and-fit-guide",
+      "host": "pets.madabase.com",
+      "path": "/guides/pet-dryers-compatibility-and-fit-guide",
+      "canonical": "https://pets.madabase.com/guides/pet-dryers-compatibility-and-fit-guide",
+      "markers": [
+        "Pet Dryer Fit: Exact Power, Controls, Hose & Coat",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B00JV33WJ8"
+      ]
+    },
+    {
+      "key": "guide:pet:pet-dryers-ownership-cost-and-maintenance",
+      "host": "pets.madabase.com",
+      "path": "/guides/pet-dryers-ownership-cost-and-maintenance",
+      "canonical": "https://pets.madabase.com/guides/pet-dryers-ownership-cost-and-maintenance",
+      "markers": [
+        "Pet Dryer Care: Air Inlet, Hose, Parts & Service Limits",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B00JV33WJ8"
+      ]
+    },
+    {
+      "key": "guide:pet:pet-dryers-setup-and-daily-workflow",
+      "host": "pets.madabase.com",
+      "path": "/guides/pet-dryers-setup-and-daily-workflow",
+      "canonical": "https://pets.madabase.com/guides/pet-dryers-setup-and-daily-workflow",
+      "markers": [
+        "Pet Dryer Setup: Original Instructions & Supervised Use",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B00JV33WJ8"
+      ]
+    },
+    {
+      "key": "guide:pet:open-top-self-cleaning-litter-boxes-buying-guide",
+      "host": "pets.madabase.com",
+      "path": "/guides/open-top-self-cleaning-litter-boxes-buying-guide",
+      "canonical": "https://pets.madabase.com/guides/open-top-self-cleaning-litter-boxes-buying-guide",
+      "markers": [
+        "Open-Top Automatic Litter Box Guide: Sensors, Fit & Care",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0CSKBWBF6"
+      ]
+    },
+    {
+      "key": "guide:pet:open-top-self-cleaning-litter-boxes-vs-alternatives",
+      "host": "pets.madabase.com",
+      "path": "/guides/open-top-self-cleaning-litter-boxes-vs-alternatives",
+      "canonical": "https://pets.madabase.com/guides/open-top-self-cleaning-litter-boxes-vs-alternatives",
+      "markers": [
+        "Open-Top vs Enclosed Automatic vs Manual Litter Box",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0CSKBWBF6"
+      ]
+    },
+    {
+      "key": "guide:pet:open-top-self-cleaning-litter-boxes-compatibility-and-fit-guide",
+      "host": "pets.madabase.com",
+      "path": "/guides/open-top-self-cleaning-litter-boxes-compatibility-and-fit-guide",
+      "canonical": "https://pets.madabase.com/guides/open-top-self-cleaning-litter-boxes-compatibility-and-fit-guide",
+      "markers": [
+        "Automatic Litter Box Fit: Cat Limits, Litter & Placement",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0CSKBWBF6"
+      ]
+    },
+    {
+      "key": "guide:pet:open-top-self-cleaning-litter-boxes-ownership-cost-and-maintenance",
+      "host": "pets.madabase.com",
+      "path": "/guides/open-top-self-cleaning-litter-boxes-ownership-cost-and-maintenance",
+      "canonical": "https://pets.madabase.com/guides/open-top-self-cleaning-litter-boxes-ownership-cost-and-maintenance",
+      "markers": [
+        "Automatic Litter Box Care: Waste, Sensors & Washable Parts",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0CSKBWBF6"
+      ]
+    },
+    {
+      "key": "guide:pet:open-top-self-cleaning-litter-boxes-setup-and-daily-workflow",
+      "host": "pets.madabase.com",
+      "path": "/guides/open-top-self-cleaning-litter-boxes-setup-and-daily-workflow",
+      "canonical": "https://pets.madabase.com/guides/open-top-self-cleaning-litter-boxes-setup-and-daily-workflow",
+      "markers": [
+        "Automatic Litter Box Setup: Original Limits & Gradual Use",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0CSKBWBF6"
+      ]
+    },
+    {
+      "key": "guide:pet:treat-dispensing-pet-cameras-buying-guide",
+      "host": "pets.madabase.com",
+      "path": "/guides/treat-dispensing-pet-cameras-buying-guide",
+      "canonical": "https://pets.madabase.com/guides/treat-dispensing-pet-cameras-buying-guide",
+      "markers": [
+        "Treat Camera Buying Guide: Tossing, Mobility & Plan Terms",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0BWN22T25"
+      ]
+    },
+    {
+      "key": "guide:pet:treat-dispensing-pet-cameras-vs-alternatives",
+      "host": "pets.madabase.com",
+      "path": "/guides/treat-dispensing-pet-cameras-vs-alternatives",
+      "canonical": "https://pets.madabase.com/guides/treat-dispensing-pet-cameras-vs-alternatives",
+      "markers": [
+        "Treat Camera vs Pan Camera vs Mobile Pet Robot",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0BWN22T25"
+      ]
+    },
+    {
+      "key": "guide:pet:treat-dispensing-pet-cameras-compatibility-and-fit-guide",
+      "host": "pets.madabase.com",
+      "path": "/guides/treat-dispensing-pet-cameras-compatibility-and-fit-guide",
+      "canonical": "https://pets.madabase.com/guides/treat-dispensing-pet-cameras-compatibility-and-fit-guide",
+      "markers": [
+        "Pet Camera Fit: App, Wi-Fi, Treats, Placement & Privacy",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0BWN22T25"
+      ]
+    },
+    {
+      "key": "guide:pet:treat-dispensing-pet-cameras-ownership-cost-and-maintenance",
+      "host": "pets.madabase.com",
+      "path": "/guides/treat-dispensing-pet-cameras-ownership-cost-and-maintenance",
+      "canonical": "https://pets.madabase.com/guides/treat-dispensing-pet-cameras-ownership-cost-and-maintenance",
+      "markers": [
+        "Treat Camera Costs: Plans, Food, Cleaning & Charging",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0BWN22T25"
+      ]
+    },
+    {
+      "key": "guide:pet:treat-dispensing-pet-cameras-setup-and-daily-workflow",
+      "host": "pets.madabase.com",
+      "path": "/guides/treat-dispensing-pet-cameras-setup-and-daily-workflow",
+      "canonical": "https://pets.madabase.com/guides/treat-dispensing-pet-cameras-setup-and-daily-workflow",
+      "markers": [
+        "Treat Camera Setup: Live View First, Optional Food Second",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0BWN22T25"
+      ]
+    },
+    {
+      "key": "guide:pet:automatic-ball-launchers-buying-guide",
+      "host": "pets.madabase.com",
+      "path": "/guides/automatic-ball-launchers-buying-guide",
+      "canonical": "https://pets.madabase.com/guides/automatic-ball-launchers-buying-guide",
+      "markers": [
+        "Automatic Dog Ball Launchers: Ball Fit, Space & Supervision",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B072J4KCVP"
+      ]
+    },
+    {
+      "key": "guide:pet:aquarium-water-monitors-setup-and-daily-workflow",
+      "host": "pets.madabase.com",
+      "path": "/guides/aquarium-water-monitors-setup-and-daily-workflow",
+      "canonical": "https://pets.madabase.com/guides/aquarium-water-monitors-setup-and-daily-workflow",
+      "markers": [
+        "Aquarium Water Monitor Setup: Sensors, Calibration & Alerts",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B000255NCI"
+      ]
+    },
+    {
+      "key": "guide:pet:dog-ramps-vs-alternatives",
+      "host": "pets.madabase.com",
+      "path": "/guides/dog-ramps-vs-alternatives",
+      "canonical": "https://pets.madabase.com/guides/dog-ramps-vs-alternatives",
+      "markers": [
+        "Dog Ramp vs Pet Stairs: Measure the Rise, Run and Fit",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B000RUJEUU"
+      ]
+    },
+    {
+      "key": "guide:pet:cooling-pet-beds-setup-and-daily-workflow",
+      "host": "pets.madabase.com",
+      "path": "/guides/cooling-pet-beds-setup-and-daily-workflow",
+      "canonical": "https://pets.madabase.com/guides/cooling-pet-beds-setup-and-daily-workflow",
+      "markers": [
+        "Cooling Pet Bed Guide: Fabric, Fit, Washing & Heat Limits",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B07PJ7WSQD"
+      ]
+    },
+    {
+      "key": "guide:pet:soft-sided-pet-carriers-buying-guide",
+      "host": "pets.madabase.com",
+      "path": "/guides/soft-sided-pet-carriers-buying-guide",
+      "canonical": "https://pets.madabase.com/guides/soft-sided-pet-carriers-buying-guide",
+      "markers": [
+        "Soft-Sided Pet Carrier Buying Guide: Fit Before Airline Labels",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B000FLETX8"
+      ]
+    },
+    {
+      "key": "guide:pet:soft-sided-pet-carriers-vs-alternatives",
+      "host": "pets.madabase.com",
+      "path": "/guides/soft-sided-pet-carriers-vs-alternatives",
+      "canonical": "https://pets.madabase.com/guides/soft-sided-pet-carriers-vs-alternatives",
+      "markers": [
+        "Soft Carrier vs Hard Crate: Cabin Fit & Car Travel Differ",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B000FLETX8"
+      ]
+    },
+    {
+      "key": "guide:pet:soft-sided-pet-carriers-compatibility-and-fit-guide",
+      "host": "pets.madabase.com",
+      "path": "/guides/soft-sided-pet-carriers-compatibility-and-fit-guide",
+      "canonical": "https://pets.madabase.com/guides/soft-sided-pet-carriers-compatibility-and-fit-guide",
+      "markers": [
+        "Pet Carrier Fit: Inside Space, Weight & Under-Seat Limits",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B000FLETX8"
+      ]
+    },
+    {
+      "key": "guide:pet:vehicle-pet-restraints-buying-guide",
+      "host": "pets.madabase.com",
+      "path": "/guides/vehicle-pet-restraints-buying-guide",
+      "canonical": "https://pets.madabase.com/guides/vehicle-pet-restraints-buying-guide",
+      "markers": [
+        "Dog Car Restraint Buying Guide: Harness, Tether or Crate?",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B08JQQF9YX"
+      ]
+    },
+    {
+      "key": "guide:pet:vehicle-pet-restraints-vs-alternatives",
+      "host": "pets.madabase.com",
+      "path": "/guides/vehicle-pet-restraints-vs-alternatives",
+      "canonical": "https://pets.madabase.com/guides/vehicle-pet-restraints-vs-alternatives",
+      "markers": [
+        "Dog Car Harness vs Tether vs Crate: Compare Exact Systems",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B08JQQF9YX"
+      ]
+    },
+    {
+      "key": "guide:pet:vehicle-pet-restraints-compatibility-and-fit-guide",
+      "host": "pets.madabase.com",
+      "path": "/guides/vehicle-pet-restraints-compatibility-and-fit-guide",
+      "canonical": "https://pets.madabase.com/guides/vehicle-pet-restraints-compatibility-and-fit-guide",
+      "markers": [
+        "Dog Car Restraint Fit: Body Size, Belt Path & Vehicle Anchors",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B08JQQF9YX"
+      ]
+    },
+    {
+      "key": "guide:pet:wet-food-automatic-feeders-buying-guide",
+      "host": "pets.madabase.com",
+      "path": "/guides/wet-food-automatic-feeders-buying-guide",
+      "canonical": "https://pets.madabase.com/guides/wet-food-automatic-feeders-buying-guide",
+      "markers": [
+        "Wet-Food Feeder Guide: Cooling, Meal Timing & Care",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0GRHQGDCB"
+      ]
+    },
+    {
+      "key": "guide:pet:wet-food-automatic-feeders-vs-alternatives",
+      "host": "pets.madabase.com",
+      "path": "/guides/wet-food-automatic-feeders-vs-alternatives",
+      "canonical": "https://pets.madabase.com/guides/wet-food-automatic-feeders-vs-alternatives",
+      "markers": [
+        "Ice-Pack vs Refrigerated Wet-Food Feeder vs Manual Meals",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0GRHQGDCB"
+      ]
+    },
+    {
+      "key": "guide:pet:wet-food-automatic-feeders-compatibility-and-fit-guide",
+      "host": "pets.madabase.com",
+      "path": "/guides/wet-food-automatic-feeders-compatibility-and-fit-guide",
+      "canonical": "https://pets.madabase.com/guides/wet-food-automatic-feeders-compatibility-and-fit-guide",
+      "markers": [
+        "Wet-Food Feeder Fit: Diet, Tray, Cooling & Clock",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0GRHQGDCB"
+      ]
+    },
+    {
+      "key": "guide:pet:smart-bird-feeders-buying-guide",
+      "host": "pets.madabase.com",
+      "path": "/guides/smart-bird-feeders-buying-guide",
+      "canonical": "https://pets.madabase.com/guides/smart-bird-feeders-buying-guide",
+      "markers": [
+        "Smart Bird Feeder Buying Guide: Camera, Plans & Bird Care",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0B56BFH7P"
+      ]
+    },
+    {
+      "key": "guide:pet:smart-bird-feeders-vs-alternatives",
+      "host": "pets.madabase.com",
+      "path": "/guides/smart-bird-feeders-vs-alternatives",
+      "canonical": "https://pets.madabase.com/guides/smart-bird-feeders-vs-alternatives",
+      "markers": [
+        "Camera Bird Feeder vs Regular Feeder vs Separate Camera",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0B56BFH7P"
+      ]
+    },
+    {
+      "key": "guide:pet:smart-bird-feeders-compatibility-and-fit-guide",
+      "host": "pets.madabase.com",
+      "path": "/guides/smart-bird-feeders-compatibility-and-fit-guide",
+      "canonical": "https://pets.madabase.com/guides/smart-bird-feeders-compatibility-and-fit-guide",
+      "markers": [
+        "Smart Bird Feeder Fit: Mount, Wi-Fi, Solar & Cleaning Access",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0B56BFH7P"
+      ]
+    },
+    {
+      "key": "product:network:asus-zenwifi-bt6-wifi-7-mesh",
+      "host": "network.madabase.com",
+      "path": "/reviews/asus-zenwifi-bt6-wifi-7-mesh",
+      "canonical": "https://network.madabase.com/reviews/asus-zenwifi-bt6-wifi-7-mesh",
+      "markers": [
+        "ASUS ZenWiFi BT6 Guide: Wi-Fi 7 Mesh vs. Deco BE63",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0CN8QLS4K"
+      ]
+    },
+    {
+      "key": "guide:network:wifi-range-extenders-vs-alternatives",
+      "host": "network.madabase.com",
+      "path": "/guides/wifi-range-extenders-vs-alternatives",
+      "canonical": "https://network.madabase.com/guides/wifi-range-extenders-vs-alternatives",
+      "markers": [
+        "Wi-Fi Extender vs Mesh vs Wired AP: Fix the Right Link",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0CN8QLS4K"
+      ]
+    },
+    {
+      "key": "guide:network:usb-c-ethernet-adapters-vs-alternatives",
+      "host": "network.madabase.com",
+      "path": "/guides/usb-c-ethernet-adapters-vs-alternatives",
+      "canonical": "https://network.madabase.com/guides/usb-c-ethernet-adapters-vs-alternatives",
+      "markers": [
+        "USB-C Ethernet Adapter vs Dock: Check the Host and Network Path",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0DSCDGD4G"
+      ]
+    },
+    {
+      "key": "guide:network:vpn-gateways-buying-guide",
+      "host": "network.madabase.com",
+      "path": "/guides/vpn-gateways-buying-guide",
+      "canonical": "https://network.madabase.com/guides/vpn-gateways-buying-guide",
+      "markers": [
+        "VPN Gateway Buying Guide: Protocols, Routing & Support",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0BPSGJN7T"
+      ]
+    },
+    {
+      "key": "roundup:network:asus-zenwifi-bt6-vs-deco-be63",
+      "host": "network.madabase.com",
+      "path": "/best/asus-zenwifi-bt6-vs-deco-be63",
+      "canonical": "https://network.madabase.com/best/asus-zenwifi-bt6-vs-deco-be63",
+      "markers": [
+        "ASUS BT6 2-Pack vs Deco BE63 3-Pack: Ports, Nodes and Support",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0CN8QLS4K"
+      ]
+    },
+    {
+      "key": "guide:smarthome:indoor-air-quality-monitors-ownership-cost-and-maintenance",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/indoor-air-quality-monitors-ownership-cost-and-maintenance",
+      "canonical": "https://smarthome.madabase.com/guides/indoor-air-quality-monitors-ownership-cost-and-maintenance",
+      "markers": [
+        "Air Monitor Ownership: Calibration, History & Sensor Aging",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B07YY7BH2W"
+      ]
+    },
+    {
+      "key": "guide:smarthome:indoor-air-quality-monitors-setup-and-daily-workflow",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/indoor-air-quality-monitors-setup-and-daily-workflow",
+      "canonical": "https://smarthome.madabase.com/guides/indoor-air-quality-monitors-setup-and-daily-workflow",
+      "markers": [
+        "Air Monitor Setup: Document Channels, Observe & Recheck",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B07YY7BH2W"
+      ]
+    },
+    {
+      "key": "guide:smarthome:indoor-security-cameras-ownership-cost-and-maintenance",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/indoor-security-cameras-ownership-cost-and-maintenance",
+      "canonical": "https://smarthome.madabase.com/guides/indoor-security-cameras-ownership-cost-and-maintenance",
+      "markers": [
+        "Indoor Camera Costs: Cards, Cloud Retention & Account Access",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B09Y8TLP25"
+      ]
+    },
+    {
+      "key": "guide:smarthome:indoor-security-cameras-setup-and-daily-workflow",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/indoor-security-cameras-setup-and-daily-workflow",
+      "canonical": "https://smarthome.madabase.com/guides/indoor-security-cameras-setup-and-daily-workflow",
+      "markers": [
+        "Indoor Camera Setup: Useful View, Saved Clip & Privacy Check",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B09Y8TLP25"
+      ]
+    },
+    {
+      "key": "guide:smarthome:smart-light-strips-ownership-cost-and-maintenance",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-light-strips-ownership-cost-and-maintenance",
+      "canonical": "https://smarthome.madabase.com/guides/smart-light-strips-ownership-cost-and-maintenance",
+      "markers": [
+        "LED Strip Ownership: Drivers, Adhesive & Repair Costs",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0B2KY8X4M"
+      ]
+    },
+    {
+      "key": "guide:smarthome:smart-light-strips-setup-and-daily-workflow",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-light-strips-setup-and-daily-workflow",
+      "canonical": "https://smarthome.madabase.com/guides/smart-light-strips-setup-and-daily-workflow",
+      "markers": [
+        "LED Strip Setup: Dry Fit, Uncoil & Test Before Mounting",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0B2KY8X4M"
+      ]
+    },
+    {
+      "key": "guide:smarthome:smart-irrigation-controllers-ownership-cost-and-maintenance",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-irrigation-controllers-ownership-cost-and-maintenance",
+      "canonical": "https://smarthome.madabase.com/guides/smart-irrigation-controllers-ownership-cost-and-maintenance",
+      "markers": [
+        "Smart Irrigation Upkeep: Batteries, Filters & Seasonal Care",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B004INGS8S"
+      ]
+    },
+    {
+      "key": "guide:smarthome:smart-irrigation-controllers-setup-and-daily-workflow",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-irrigation-controllers-setup-and-daily-workflow",
+      "canonical": "https://smarthome.madabase.com/guides/smart-irrigation-controllers-setup-and-daily-workflow",
+      "markers": [
+        "Smart Irrigation Setup: Verify Outlets, Stops & Weather Delay",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B004INGS8S"
+      ]
+    },
+    {
+      "key": "product:smarthome:govee-wifi-water-leak-detector-3-pack",
+      "host": "smarthome.madabase.com",
+      "path": "/reviews/govee-wifi-water-leak-detector-3-pack",
+      "canonical": "https://smarthome.madabase.com/reviews/govee-wifi-water-leak-detector-3-pack",
+      "markers": [
+        "Govee WiFi Water Leak Detector 3 Pack Guide",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0DFCMJH5L"
+      ]
+    },
+    {
+      "key": "product:smarthome:yolink-x3-bulldog-valve-controller",
+      "host": "smarthome.madabase.com",
+      "path": "/reviews/yolink-x3-bulldog-valve-controller",
+      "canonical": "https://smarthome.madabase.com/reviews/yolink-x3-bulldog-valve-controller",
+      "markers": [
+        "YoLink X3 Bulldog Guide: Valve Fit, D2D & Kit Contents",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0DB8KS8Q3"
+      ]
+    },
+    {
+      "key": "guide:smarthome:smart-blind-motors-buying-guide",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-blind-motors-buying-guide",
+      "canonical": "https://smarthome.madabase.com/guides/smart-blind-motors-buying-guide",
+      "markers": [
+        "Smart Blind Motors: Tubular Lift or Blind Tilt?",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0BMLFZ4CP"
+      ]
+    },
+    {
+      "key": "guide:smarthome:smart-blind-motors-vs-alternatives",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-blind-motors-vs-alternatives",
+      "canonical": "https://smarthome.madabase.com/guides/smart-blind-motors-vs-alternatives",
+      "markers": [
+        "Tubular Blind Motor vs Chain Drive vs Complete Shade",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0BMLFZ4CP"
+      ]
+    },
+    {
+      "key": "guide:smarthome:smart-blind-motors-compatibility-and-fit-guide",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-blind-motors-compatibility-and-fit-guide",
+      "canonical": "https://smarthome.madabase.com/guides/smart-blind-motors-compatibility-and-fit-guide",
+      "markers": [
+        "Blind Tilt Fit: Wand, Space & the Tubular-Motor Boundary",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0BMLFZ4CP"
+      ]
+    },
+    {
+      "key": "guide:smarthome:smart-blind-motors-ownership-cost-and-maintenance",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-blind-motors-ownership-cost-and-maintenance",
+      "canonical": "https://smarthome.madabase.com/guides/smart-blind-motors-ownership-cost-and-maintenance",
+      "markers": [
+        "Blind Motor Ownership: Charging, Drive Wear & Fallback",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0BMLFZ4CP"
+      ]
+    },
+    {
+      "key": "guide:smarthome:smart-blind-motors-setup-and-daily-workflow",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-blind-motors-setup-and-daily-workflow",
+      "canonical": "https://smarthome.madabase.com/guides/smart-blind-motors-setup-and-daily-workflow",
+      "markers": [
+        "Blind Motor Setup: Document Fit Before Programming",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0BMLFZ4CP"
+      ]
+    },
+    {
+      "key": "guide:smarthome:whole-home-energy-monitors-buying-guide",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/whole-home-energy-monitors-buying-guide",
+      "canonical": "https://smarthome.madabase.com/guides/whole-home-energy-monitors-buying-guide",
+      "markers": [
+        "Whole-Home Energy Monitors: Circuits, Solar & Data Access",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0C79PNK84"
+      ]
+    },
+    {
+      "key": "guide:smarthome:whole-home-energy-monitors-vs-alternatives",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/whole-home-energy-monitors-vs-alternatives",
+      "canonical": "https://smarthome.madabase.com/guides/whole-home-energy-monitors-vs-alternatives",
+      "markers": [
+        "Panel Energy Monitor vs Plug Meter vs Utility Data",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0C79PNK84"
+      ]
+    },
+    {
+      "key": "guide:smarthome:whole-home-energy-monitors-compatibility-and-fit-guide",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/whole-home-energy-monitors-compatibility-and-fit-guide",
+      "canonical": "https://smarthome.madabase.com/guides/whole-home-energy-monitors-compatibility-and-fit-guide",
+      "markers": [
+        "Emporia Vue 3 Fit: Service, CTs, Panel Space & Cloud",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0C79PNK84"
+      ]
+    },
+    {
+      "key": "guide:smarthome:whole-home-energy-monitors-ownership-cost-and-maintenance",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/whole-home-energy-monitors-ownership-cost-and-maintenance",
+      "canonical": "https://smarthome.madabase.com/guides/whole-home-energy-monitors-ownership-cost-and-maintenance",
+      "markers": [
+        "Energy Monitor Costs: Installation, History & Useful Savings",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0C79PNK84"
+      ]
+    },
+    {
+      "key": "guide:smarthome:whole-home-energy-monitors-setup-and-daily-workflow",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/whole-home-energy-monitors-setup-and-daily-workflow",
+      "canonical": "https://smarthome.madabase.com/guides/whole-home-energy-monitors-setup-and-daily-workflow",
+      "markers": [
+        "Energy Monitor Workflow: Map Circuits & Interpret Solar Totals",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0C79PNK84"
+      ]
+    },
+    {
+      "key": "guide:smarthome:smart-water-shutoff-valves-buying-guide",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-water-shutoff-valves-buying-guide",
+      "canonical": "https://smarthome.madabase.com/guides/smart-water-shutoff-valves-buying-guide",
+      "markers": [
+        "Smart Water Shutoff: Retrofit Actuator or Inline Valve?",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0DB8KS8Q3"
+      ]
+    },
+    {
+      "key": "guide:smarthome:smart-water-shutoff-valves-vs-alternatives",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-water-shutoff-valves-vs-alternatives",
+      "canonical": "https://smarthome.madabase.com/guides/smart-water-shutoff-valves-vs-alternatives",
+      "markers": [
+        "Water Leak Alarm vs Smart Shutoff: Detection or Action?",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0DB8KS8Q3"
+      ]
+    },
+    {
+      "key": "guide:smarthome:smart-water-shutoff-valves-compatibility-and-fit-guide",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-water-shutoff-valves-compatibility-and-fit-guide",
+      "canonical": "https://smarthome.madabase.com/guides/smart-water-shutoff-valves-compatibility-and-fit-guide",
+      "markers": [
+        "Water Shutoff Fit: Handle Geometry, Power & Manual Recovery",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0DB8KS8Q3"
+      ]
+    },
+    {
+      "key": "guide:smarthome:smart-water-shutoff-valves-ownership-cost-and-maintenance",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-water-shutoff-valves-ownership-cost-and-maintenance",
+      "canonical": "https://smarthome.madabase.com/guides/smart-water-shutoff-valves-ownership-cost-and-maintenance",
+      "markers": [
+        "Smart Shutoff Maintenance: Valve Condition, Sensors & Recovery",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0DB8KS8Q3"
+      ]
+    },
+    {
+      "key": "guide:smarthome:smart-water-shutoff-valves-setup-and-daily-workflow",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-water-shutoff-valves-setup-and-daily-workflow",
+      "canonical": "https://smarthome.madabase.com/guides/smart-water-shutoff-valves-setup-and-daily-workflow",
+      "markers": [
+        "Water Shutoff Workflow: Confirm Fit, Then Verify the Response",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0DB8KS8Q3"
+      ]
+    },
+    {
+      "key": "guide:smarthome:smart-dimmer-switches-buying-guide",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-dimmer-switches-buying-guide",
+      "canonical": "https://smarthome.madabase.com/guides/smart-dimmer-switches-buying-guide",
+      "markers": [
+        "Smart Dimmer Buying Guide: S515D Paired-Kit Fit",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0DKGXY4DL"
+      ]
+    },
+    {
+      "key": "guide:smarthome:smart-dimmer-switches-vs-alternatives",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-dimmer-switches-vs-alternatives",
+      "canonical": "https://smarthome.madabase.com/guides/smart-dimmer-switches-vs-alternatives",
+      "markers": [
+        "Smart Dimmer vs Smart Bulbs: Circuit Dimming or Color?",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0DKGXY4DL"
+      ]
+    },
+    {
+      "key": "guide:smarthome:smart-dimmer-switches-compatibility-and-fit-guide",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-dimmer-switches-compatibility-and-fit-guide",
+      "canonical": "https://smarthome.madabase.com/guides/smart-dimmer-switches-compatibility-and-fit-guide",
+      "markers": [
+        "S515D US Fit: Neutral, Compatible Lighting & Boxes",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0DKGXY4DL"
+      ]
+    },
+    {
+      "key": "guide:smarthome:smart-dimmer-switches-ownership-cost-and-maintenance",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-dimmer-switches-ownership-cost-and-maintenance",
+      "canonical": "https://smarthome.madabase.com/guides/smart-dimmer-switches-ownership-cost-and-maintenance",
+      "markers": [
+        "Smart Dimmer Ownership: Lamps, Calibration & Recovery",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0DKGXY4DL"
+      ]
+    },
+    {
+      "key": "guide:smarthome:smart-dimmer-switches-setup-and-daily-workflow",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-dimmer-switches-setup-and-daily-workflow",
+      "canonical": "https://smarthome.madabase.com/guides/smart-dimmer-switches-setup-and-daily-workflow",
+      "markers": [
+        "S515D Setup: Paired Controls, Dimming & Daily Use",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0DKGXY4DL"
+      ]
+    },
+    {
+      "key": "guide:smarthome:smart-wall-switches-buying-guide",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-wall-switches-buying-guide",
+      "canonical": "https://smarthome.madabase.com/guides/smart-wall-switches-buying-guide",
+      "markers": [
+        "Smart Wall Switch Buying Guide: Wiring, Loads & Fit",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0CBNX6Q51"
+      ]
+    },
+    {
+      "key": "guide:smarthome:smart-wall-switches-vs-alternatives",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-wall-switches-vs-alternatives",
+      "canonical": "https://smarthome.madabase.com/guides/smart-wall-switches-vs-alternatives",
+      "markers": [
+        "Smart Switch vs Bulbs or Plug: Circuit or Lamp Control?",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0CBNX6Q51"
+      ]
+    },
+    {
+      "key": "guide:smarthome:smart-wall-switches-compatibility-and-fit-guide",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-wall-switches-compatibility-and-fit-guide",
+      "canonical": "https://smarthome.madabase.com/guides/smart-wall-switches-compatibility-and-fit-guide",
+      "markers": [
+        "Smart Switch Compatibility: Neutral, 3-Way & Load Limits",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0CBNX6Q51"
+      ]
+    },
+    {
+      "key": "guide:smarthome:smart-wall-switches-ownership-cost-and-maintenance",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-wall-switches-ownership-cost-and-maintenance",
+      "canonical": "https://smarthome.madabase.com/guides/smart-wall-switches-ownership-cost-and-maintenance",
+      "markers": [
+        "Smart Switch Ownership: Service, Outages & Replacement",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0CBNX6Q51"
+      ]
+    },
+    {
+      "key": "guide:smarthome:smart-wall-switches-setup-and-daily-workflow",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-wall-switches-setup-and-daily-workflow",
+      "canonical": "https://smarthome.madabase.com/guides/smart-wall-switches-setup-and-daily-workflow",
+      "markers": [
+        "Smart Switch Setup: Professional Install & Daily Control",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0CBNX6Q51"
+      ]
+    },
+    {
+      "key": "guide:smarthome:robot-vacuums-buying-guide",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/robot-vacuums-buying-guide",
+      "canonical": "https://smarthome.madabase.com/guides/robot-vacuums-buying-guide",
+      "markers": [
+        "Robot Vacuum Buying Guide: Floor Routes, Pickup & Real Upkeep",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0DGR1VDTB"
+      ]
+    },
+    {
+      "key": "guide:smarthome:robot-vacuums-vs-alternatives",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/robot-vacuums-vs-alternatives",
+      "canonical": "https://smarthome.madabase.com/guides/robot-vacuums-vs-alternatives",
+      "markers": [
+        "Robot Vacuum vs Cordless Vacuum: Compare the Whole Routine",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0DGR1VDTB"
+      ]
+    },
+    {
+      "key": "guide:smarthome:robot-vacuums-compatibility-and-fit-guide",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/robot-vacuums-compatibility-and-fit-guide",
+      "canonical": "https://smarthome.madabase.com/guides/robot-vacuums-compatibility-and-fit-guide",
+      "markers": [
+        "Robot Vacuum Fit: Thresholds, Dock Space & Hazard Limits",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0DGR1VDTB"
+      ]
+    },
+    {
+      "key": "guide:smarthome:robot-vacuums-ownership-cost-and-maintenance",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/robot-vacuums-ownership-cost-and-maintenance",
+      "canonical": "https://smarthome.madabase.com/guides/robot-vacuums-ownership-cost-and-maintenance",
+      "markers": [
+        "Robot Vacuum Upkeep: Bags, Brushes, Sensors & Rescue Time",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0DGR1VDTB"
+      ]
+    },
+    {
+      "key": "guide:smarthome:robot-vacuums-setup-and-daily-workflow",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/robot-vacuums-setup-and-daily-workflow",
+      "canonical": "https://smarthome.madabase.com/guides/robot-vacuums-setup-and-daily-workflow",
+      "markers": [
+        "Robot Vacuum Setup: Clear Hazards, Observe Routes & Check Pickup",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0DGR1VDTB"
+      ]
+    },
+    {
+      "key": "guide:smarthome:outdoor-security-cameras-buying-guide",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/outdoor-security-cameras-buying-guide",
+      "canonical": "https://smarthome.madabase.com/guides/outdoor-security-cameras-buying-guide",
+      "markers": [
+        "Outdoor Cameras: Battery Events, Coverage & Recording Fit",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0CH45HPZT"
+      ]
+    },
+    {
+      "key": "guide:smarthome:outdoor-security-cameras-vs-alternatives",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/outdoor-security-cameras-vs-alternatives",
+      "canonical": "https://smarthome.madabase.com/guides/outdoor-security-cameras-vs-alternatives",
+      "markers": [
+        "Outdoor Camera vs Video Doorbell: View or Visitor Interaction?",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0CH45HPZT"
+      ]
+    },
+    {
+      "key": "guide:smarthome:outdoor-security-cameras-compatibility-and-fit-guide",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/outdoor-security-cameras-compatibility-and-fit-guide",
+      "canonical": "https://smarthome.madabase.com/guides/outdoor-security-cameras-compatibility-and-fit-guide",
+      "markers": [
+        "C120 Fit: Plug-In Power, Wi-Fi, Storage & Version",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0CH45HPZT"
+      ]
+    },
+    {
+      "key": "guide:smarthome:outdoor-security-cameras-ownership-cost-and-maintenance",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/outdoor-security-cameras-ownership-cost-and-maintenance",
+      "canonical": "https://smarthome.madabase.com/guides/outdoor-security-cameras-ownership-cost-and-maintenance",
+      "markers": [
+        "Outdoor Camera Upkeep: Charging, Clips & Account Access",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0CH45HPZT"
+      ]
+    },
+    {
+      "key": "guide:smarthome:outdoor-security-cameras-setup-and-daily-workflow",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/outdoor-security-cameras-setup-and-daily-workflow",
+      "canonical": "https://smarthome.madabase.com/guides/outdoor-security-cameras-setup-and-daily-workflow",
+      "markers": [
+        "C120 Setup: Plug-In Power, Recording & Firmware",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0CH45HPZT"
+      ]
+    },
+    {
+      "key": "guide:smarthome:in-wall-smart-relays-buying-guide",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/in-wall-smart-relays-buying-guide",
+      "canonical": "https://smarthome.madabase.com/guides/in-wall-smart-relays-buying-guide",
+      "markers": [
+        "In-Wall Smart Relay Buying Guide: Wiring, Load, Protocol, and Local Control",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0C2B8SP3W"
+      ]
+    },
+    {
+      "key": "guide:smarthome:indoor-air-quality-monitors-buying-guide",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/indoor-air-quality-monitors-buying-guide",
+      "canonical": "https://smarthome.madabase.com/guides/indoor-air-quality-monitors-buying-guide",
+      "markers": [
+        "Indoor Air Quality Monitors: Choose Sensors, Not a 16-in-1 Label",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B07YY7BH2W"
+      ]
+    },
+    {
+      "key": "guide:smarthome:indoor-air-quality-monitors-vs-alternatives",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/indoor-air-quality-monitors-vs-alternatives",
+      "canonical": "https://smarthome.madabase.com/guides/indoor-air-quality-monitors-vs-alternatives",
+      "markers": [
+        "Air Quality Monitor vs CO2 Monitor: Match the Question",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B07YY7BH2W"
+      ]
+    },
+    {
+      "key": "guide:smarthome:indoor-air-quality-monitors-compatibility-and-fit-guide",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/indoor-air-quality-monitors-compatibility-and-fit-guide",
+      "canonical": "https://smarthome.madabase.com/guides/indoor-air-quality-monitors-compatibility-and-fit-guide",
+      "markers": [
+        "Air Monitor Fit: Sensor Evidence, Placement & Data Access",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B07YY7BH2W"
+      ]
+    },
+    {
+      "key": "guide:smarthome:indoor-security-cameras-buying-guide",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/indoor-security-cameras-buying-guide",
+      "canonical": "https://smarthome.madabase.com/guides/indoor-security-cameras-buying-guide",
+      "markers": [
+        "Indoor Security Cameras: View, Recording & Privacy Costs",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B09Y8TLP25"
+      ]
+    },
+    {
+      "key": "guide:smarthome:indoor-security-cameras-vs-alternatives",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/indoor-security-cameras-vs-alternatives",
+      "canonical": "https://smarthome.madabase.com/guides/indoor-security-cameras-vs-alternatives",
+      "markers": [
+        "Indoor Camera vs Contact Sensor: Visual Check or Door State?",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B09Y8TLP25"
+      ]
+    },
+    {
+      "key": "guide:smarthome:indoor-security-cameras-compatibility-and-fit-guide",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/indoor-security-cameras-compatibility-and-fit-guide",
+      "canonical": "https://smarthome.madabase.com/guides/indoor-security-cameras-compatibility-and-fit-guide",
+      "markers": [
+        "C210 Fit: Indoor Power, Wi-Fi, Storage & Privacy",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B09Y8TLP25"
+      ]
+    },
+    {
+      "key": "guide:smarthome:smart-light-strips-buying-guide",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-light-strips-buying-guide",
+      "canonical": "https://smarthome.madabase.com/guides/smart-light-strips-buying-guide",
+      "markers": [
+        "Light Strip Buying Guide: Length, Control & Power Fit",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0B2KY8X4M"
+      ]
+    },
+    {
+      "key": "guide:smarthome:smart-light-strips-vs-alternatives",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-light-strips-vs-alternatives",
+      "canonical": "https://smarthome.madabase.com/guides/smart-light-strips-vs-alternatives",
+      "markers": [
+        "LED Strip vs Light Bar or Smart Bulb: Which Fits?",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0B2KY8X4M"
+      ]
+    },
+    {
+      "key": "guide:smarthome:smart-light-strips-compatibility-and-fit-guide",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-light-strips-compatibility-and-fit-guide",
+      "canonical": "https://smarthome.madabase.com/guides/smart-light-strips-compatibility-and-fit-guide",
+      "markers": [
+        "L930-5 Fit: Supplied Power, Cuts & Network",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0B2KY8X4M"
+      ]
+    },
+    {
+      "key": "guide:smarthome:smart-irrigation-controllers-buying-guide",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-irrigation-controllers-buying-guide",
+      "canonical": "https://smarthome.madabase.com/guides/smart-irrigation-controllers-buying-guide",
+      "markers": [
+        "Smart Irrigation Controllers: Hose Timer or Wired Zones?",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B004INGS8S"
+      ]
+    },
+    {
+      "key": "guide:smarthome:smart-irrigation-controllers-vs-alternatives",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-irrigation-controllers-vs-alternatives",
+      "canonical": "https://smarthome.madabase.com/guides/smart-irrigation-controllers-vs-alternatives",
+      "markers": [
+        "Smart Hose Timer vs Wired Sprinkler Controller",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B004INGS8S"
+      ]
+    },
+    {
+      "key": "guide:smarthome:smart-irrigation-controllers-compatibility-and-fit-guide",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/smart-irrigation-controllers-compatibility-and-fit-guide",
+      "canonical": "https://smarthome.madabase.com/guides/smart-irrigation-controllers-compatibility-and-fit-guide",
+      "markers": [
+        "Orbit 62061 Fit: Faucet, Pressure & Cold-Water Limits",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B004INGS8S"
+      ]
+    },
+    {
+      "key": "guide:smarthome:diy-smart-alarm-kits-buying-guide",
+      "host": "smarthome.madabase.com",
+      "path": "/guides/diy-smart-alarm-kits-buying-guide",
+      "canonical": "https://smarthome.madabase.com/guides/diy-smart-alarm-kits-buying-guide",
+      "markers": [
+        "DIY Smart Alarm Kits: Coverage, Backup & Who Responds",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B07ZDTXJ93"
+      ]
+    },
+    {
+      "key": "guide:homeoffice:48-vs-55-inch-desk-guide",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/48-vs-55-inch-desk-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/48-vs-55-inch-desk-guide",
+      "markers": [
+        "48-Inch vs. 55-Inch Desk for a Home Office",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0B41YH9B6"
+      ]
+    },
+    {
+      "key": "guide:homeoffice:small-home-office-setup-guide",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/small-home-office-setup-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/small-home-office-setup-guide",
+      "markers": [
+        "Small Home Office Setup: Fit the Desk, Screen and Chair First",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0B41YH9B6"
+      ]
+    },
+    {
+      "key": "guide:homeoffice:standing-desk-height-chart-guide",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/standing-desk-height-chart-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/standing-desk-height-chart-guide",
+      "markers": [
+        "Correct Standing Desk Height: Elbow Check and Setup Guide",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0B41YH9B6"
+      ]
+    },
+    {
+      "key": "guide:homeoffice:office-paper-shredders-vs-alternatives",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/office-paper-shredders-vs-alternatives",
+      "canonical": "https://homeoffice.madabase.com/guides/office-paper-shredders-vs-alternatives",
+      "markers": [
+        "Paper Shredder vs Shredding Service: Volume, Security and Effort",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B00SY7XDP0"
+      ]
+    },
+    {
+      "key": "product:homeoffice:flexispot-e7-mini-standing-desk",
+      "host": "homeoffice.madabase.com",
+      "path": "/reviews/flexispot-e7-mini-standing-desk",
+      "canonical": "https://homeoffice.madabase.com/reviews/flexispot-e7-mini-standing-desk",
+      "markers": [
+        "FlexiSpot E7 Mini Guide: Dimensions, Height & Small-Desk Fit",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0B41YH9B6"
+      ]
+    },
+    {
+      "key": "product:homeoffice:uplift-v3-standing-desk",
+      "host": "homeoffice.madabase.com",
+      "path": "/reviews/uplift-v3-standing-desk",
+      "canonical": "https://homeoffice.madabase.com/reviews/uplift-v3-standing-desk",
+      "markers": [
+        "UPLIFT V3 Standing Desk: Size, Height & Fit Guide",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0B41YH9B6"
+      ]
+    },
+    {
+      "key": "product:homeoffice:branch-ergonomic-chair",
+      "host": "homeoffice.madabase.com",
+      "path": "/reviews/branch-ergonomic-chair",
+      "canonical": "https://homeoffice.madabase.com/reviews/branch-ergonomic-chair",
+      "markers": [
+        "Branch Ergonomic Chair Guide: Warranty, Fit & Returns",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B06Y3PGPR2"
+      ]
+    },
+    {
+      "key": "product:homeoffice:hon-ignition-2-0-chair",
+      "host": "homeoffice.madabase.com",
+      "path": "/reviews/hon-ignition-2-0-chair",
+      "canonical": "https://homeoffice.madabase.com/reviews/hon-ignition-2-0-chair",
+      "markers": [
+        "HON Ignition 2.0 Guide: Warranty, Fit & Controls",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B06Y3PGPR2"
+      ]
+    },
+    {
+      "key": "product:homeoffice:ergear-48x24-electric-standing-desk",
+      "host": "homeoffice.madabase.com",
+      "path": "/reviews/ergear-48x24-electric-standing-desk",
+      "canonical": "https://homeoffice.madabase.com/reviews/ergear-48x24-electric-standing-desk",
+      "markers": [
+        "ErGear 48×24 Electric Standing Desk Guide: Is It Good for Small Spaces?",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0B41YH9B6"
+      ]
+    },
+    {
+      "key": "product:homeoffice:satechi-dual-vertical-laptop-stand",
+      "host": "homeoffice.madabase.com",
+      "path": "/reviews/satechi-dual-vertical-laptop-stand",
+      "canonical": "https://homeoffice.madabase.com/reviews/satechi-dual-vertical-laptop-stand",
+      "markers": [
+        "Satechi Dual Vertical Laptop Stand Guide: Will Both Slots Fit?",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B078W3QSZY"
+      ]
+    },
+    {
+      "key": "guide:baby:baby-travel-systems-buying-guide",
+      "host": "baby.madabase.com",
+      "path": "/guides/baby-travel-systems-buying-guide",
+      "canonical": "https://baby.madabase.com/guides/baby-travel-systems-buying-guide",
+      "markers": [
+        "Travel System Guide: Car Fit, Stroller Modes & Bundle Identity",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B08VPVLF95"
+      ]
+    },
+    {
+      "key": "guide:baby:baby-travel-systems-vs-alternatives",
+      "host": "baby.madabase.com",
+      "path": "/guides/baby-travel-systems-vs-alternatives",
+      "canonical": "https://baby.madabase.com/guides/baby-travel-systems-vs-alternatives",
+      "markers": [
+        "Travel System vs Separate Stroller: Transfers, Fit & Reuse",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B08VPVLF95"
+      ]
+    },
+    {
+      "key": "guide:baby:baby-travel-systems-compatibility-and-fit-guide",
+      "host": "baby.madabase.com",
+      "path": "/guides/baby-travel-systems-compatibility-and-fit-guide",
+      "canonical": "https://baby.madabase.com/guides/baby-travel-systems-compatibility-and-fit-guide",
+      "markers": [
+        "Pramette Travel System Fit: Seat, Base, Modes & Vehicle",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B08VPVLF95"
+      ]
+    },
+    {
+      "key": "guide:baby:baby-travel-systems-ownership-cost-and-maintenance",
+      "host": "baby.madabase.com",
+      "path": "/guides/baby-travel-systems-ownership-cost-and-maintenance",
+      "canonical": "https://baby.madabase.com/guides/baby-travel-systems-ownership-cost-and-maintenance",
+      "markers": [
+        "Travel System Costs: Bases, Seat Care & Stroller Parts",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B08VPVLF95"
+      ]
+    },
+    {
+      "key": "guide:baby:baby-travel-systems-setup-and-daily-workflow",
+      "host": "baby.madabase.com",
+      "path": "/guides/baby-travel-systems-setup-and-daily-workflow",
+      "canonical": "https://baby.madabase.com/guides/baby-travel-systems-setup-and-daily-workflow",
+      "markers": [
+        "Pramette Daily Use: Identify, Attach, Harness & Fold",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B08VPVLF95"
+      ]
+    },
+    {
+      "key": "guide:baby:baby-travel-systems-safety-and-skip-guide",
+      "host": "baby.madabase.com",
+      "path": "/guides/baby-travel-systems-safety-and-skip-guide",
+      "canonical": "https://baby.madabase.com/guides/baby-travel-systems-safety-and-skip-guide",
+      "markers": [
+        "Travel System Stop Guide: Bundle Conflict, Sleep & Attachments",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B08VPVLF95"
+      ]
+    },
+    {
+      "key": "guide:baby:hip-seat-carriers-buying-guide",
+      "host": "baby.madabase.com",
+      "path": "/guides/hip-seat-carriers-buying-guide",
+      "canonical": "https://baby.madabase.com/guides/hip-seat-carriers-buying-guide",
+      "markers": [
+        "Hip Seat Carrier Guide: Support, Mode & Child Readiness",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B07R4C4VFX"
+      ]
+    },
+    {
+      "key": "guide:baby:hip-seat-carriers-vs-alternatives",
+      "host": "baby.madabase.com",
+      "path": "/guides/hip-seat-carriers-vs-alternatives",
+      "canonical": "https://baby.madabase.com/guides/hip-seat-carriers-vs-alternatives",
+      "markers": [
+        "Hip Seat vs Wrap vs Carrier: Retention & Everyday Use",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B07R4C4VFX"
+      ]
+    },
+    {
+      "key": "guide:baby:hip-seat-carriers-compatibility-and-fit-guide",
+      "host": "baby.madabase.com",
+      "path": "/guides/hip-seat-carriers-compatibility-and-fit-guide",
+      "canonical": "https://baby.madabase.com/guides/hip-seat-carriers-compatibility-and-fit-guide",
+      "markers": [
+        "Hip Seat Fit: Exact Mode, Child Support & Waist Belt",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B07R4C4VFX"
+      ]
+    },
+    {
+      "key": "guide:baby:hip-seat-carriers-ownership-cost-and-maintenance",
+      "host": "baby.madabase.com",
+      "path": "/guides/hip-seat-carriers-ownership-cost-and-maintenance",
+      "canonical": "https://baby.madabase.com/guides/hip-seat-carriers-ownership-cost-and-maintenance",
+      "markers": [
+        "Hip Seat Care: Belts, Fasteners, Cleaning & Support",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B07R4C4VFX"
+      ]
+    },
+    {
+      "key": "guide:baby:hip-seat-carriers-setup-and-daily-workflow",
+      "host": "baby.madabase.com",
+      "path": "/guides/hip-seat-carriers-setup-and-daily-workflow",
+      "canonical": "https://baby.madabase.com/guides/hip-seat-carriers-setup-and-daily-workflow",
+      "markers": [
+        "Hip Seat Daily Use: Instructions, Support & Handoffs",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B07R4C4VFX"
+      ]
+    },
+    {
+      "key": "guide:baby:hip-seat-carriers-safety-and-skip-guide",
+      "host": "baby.madabase.com",
+      "path": "/guides/hip-seat-carriers-safety-and-skip-guide",
+      "canonical": "https://baby.madabase.com/guides/hip-seat-carriers-safety-and-skip-guide",
+      "markers": [
+        "Hip Seat Stop Guide: Missing Manual, Support & Retention",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B07R4C4VFX"
+      ]
+    },
+    {
+      "key": "guide:baby:bedside-bassinets-buying-guide",
+      "host": "baby.madabase.com",
+      "path": "/guides/bedside-bassinets-buying-guide",
+      "canonical": "https://baby.madabase.com/guides/bedside-bassinets-buying-guide",
+      "markers": [
+        "Bedside Bassinet Guide: Sleep Surface, Bed Fit & Instructions",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0FBGY1QXD"
+      ]
+    },
+    {
+      "key": "guide:baby:bedside-bassinets-vs-alternatives",
+      "host": "baby.madabase.com",
+      "path": "/guides/bedside-bassinets-vs-alternatives",
+      "canonical": "https://baby.madabase.com/guides/bedside-bassinets-vs-alternatives",
+      "markers": [
+        "Bedside Sleeper vs Bassinet vs Crib: Room Sharing & Fit",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0FBGY1QXD"
+      ]
+    },
+    {
+      "key": "guide:baby:bedside-bassinets-compatibility-and-fit-guide",
+      "host": "baby.madabase.com",
+      "path": "/guides/bedside-bassinets-compatibility-and-fit-guide",
+      "canonical": "https://baby.madabase.com/guides/bedside-bassinets-compatibility-and-fit-guide",
+      "markers": [
+        "Semphis C968 Bedside Fit: Bed, Attachment & Mattress",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0FBGY1QXD"
+      ]
+    },
+    {
+      "key": "guide:baby:bedside-bassinets-ownership-cost-and-maintenance",
+      "host": "baby.madabase.com",
+      "path": "/guides/bedside-bassinets-ownership-cost-and-maintenance",
+      "canonical": "https://baby.madabase.com/guides/bedside-bassinets-ownership-cost-and-maintenance",
+      "markers": [
+        "Bedside Bassinet Care: Mattress, Fabric, Parts & Next Stage",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0FBGY1QXD"
+      ]
+    },
+    {
+      "key": "guide:baby:bedside-bassinets-setup-and-daily-workflow",
+      "host": "baby.madabase.com",
+      "path": "/guides/bedside-bassinets-setup-and-daily-workflow",
+      "canonical": "https://baby.madabase.com/guides/bedside-bassinets-setup-and-daily-workflow",
+      "markers": [
+        "Bedside Bassinet Setup: Instructions, Level Surface & Bed Fit",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0FBGY1QXD"
+      ]
+    },
+    {
+      "key": "guide:baby:bedside-bassinets-safety-and-skip-guide",
+      "host": "baby.madabase.com",
+      "path": "/guides/bedside-bassinets-safety-and-skip-guide",
+      "canonical": "https://baby.madabase.com/guides/bedside-bassinets-safety-and-skip-guide",
+      "markers": [
+        "Bedside Bassinet Stop Guide: Gaps, Incline, Damage & Growth",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0FBGY1QXD"
+      ]
+    },
+    {
+      "key": "guide:baby:childproof-stove-knob-covers-buying-guide",
+      "host": "baby.madabase.com",
+      "path": "/guides/childproof-stove-knob-covers-buying-guide",
+      "canonical": "https://baby.madabase.com/guides/childproof-stove-knob-covers-buying-guide",
+      "markers": [
+        "Stove knob covers: measure the controls and retain quick access",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B00068O22S"
+      ]
+    },
+    {
+      "key": "guide:baby:crib-mobiles-buying-guide",
+      "host": "baby.madabase.com",
+      "path": "/guides/crib-mobiles-buying-guide",
+      "canonical": "https://baby.madabase.com/guides/crib-mobiles-buying-guide",
+      "markers": [
+        "Crib mobile or play arch: keep attachment and reach separate",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0H8ZKN4CY"
+      ]
+    },
+    {
+      "key": "product:baby:babybjorn-carrier-harmony",
+      "host": "baby.madabase.com",
+      "path": "/reviews/babybjorn-carrier-harmony",
+      "canonical": "https://baby.madabase.com/reviews/babybjorn-carrier-harmony",
+      "markers": [
+        "BabyBjörn Carrier Harmony Guide: Fit, Mesh & Positions",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0BQCPHV9J"
+      ]
+    },
+    {
+      "key": "product:baby:babybjorn-carrier-mini-3d-mesh",
+      "host": "baby.madabase.com",
+      "path": "/reviews/babybjorn-carrier-mini-3d-mesh",
+      "canonical": "https://baby.madabase.com/reviews/babybjorn-carrier-mini-3d-mesh",
+      "markers": [
+        "BabyBjörn Carrier Mini Guide: Newborn Fit vs. Harmony",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0BQCPHV9J"
+      ]
+    },
+    {
+      "key": "product:baby:momcozy-purehug-baby-carrier",
+      "host": "baby.madabase.com",
+      "path": "/reviews/momcozy-purehug-baby-carrier",
+      "canonical": "https://baby.madabase.com/reviews/momcozy-purehug-baby-carrier",
+      "markers": [
+        "Momcozy PureHug Guide: 3-Month Fit & Carry Limits",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0BQCPHV9J"
+      ]
+    },
+    {
+      "key": "product:baby:ergobaby-omni-breeze-carrier",
+      "host": "baby.madabase.com",
+      "path": "/reviews/ergobaby-omni-breeze-carrier",
+      "canonical": "https://baby.madabase.com/reviews/ergobaby-omni-breeze-carrier",
+      "markers": [
+        "Ergobaby Omni Breeze Guide: Newborn Fit, Weight Limit & Positions",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0BQCPHV9J"
+      ]
+    },
+    {
+      "key": "product:baby:nanit-pro-smart-baby-monitor",
+      "host": "baby.madabase.com",
+      "path": "/reviews/nanit-pro-smart-baby-monitor",
+      "canonical": "https://baby.madabase.com/reviews/nanit-pro-smart-baby-monitor",
+      "markers": [
+        "Nanit Essentials Monitor Guide: Floor Stand, Plan & Bundle",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0FTSL4FXJ"
+      ]
+    },
+    {
+      "key": "guide:baby:infant-bath-tubs-safety-and-skip-guide",
+      "host": "baby.madabase.com",
+      "path": "/guides/infant-bath-tubs-safety-and-skip-guide",
+      "canonical": "https://baby.madabase.com/guides/infant-bath-tubs-safety-and-skip-guide",
+      "markers": [
+        "Infant Bath Tub Safety: Child Stage, Support and When to Stop",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0DJDQMHFT"
+      ]
+    },
+    {
+      "key": "guide:homeoffice:desktop-power-centers-buying-guide",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/desktop-power-centers-buying-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/desktop-power-centers-buying-guide",
+      "markers": [
+        "Desktop Power Center Buying Guide: Ratings, USB & Fit",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B09SG2Q23M"
+      ]
+    },
+    {
+      "key": "guide:homeoffice:desktop-power-centers-vs-alternatives",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/desktop-power-centers-vs-alternatives",
+      "canonical": "https://homeoffice.madabase.com/guides/desktop-power-centers-vs-alternatives",
+      "markers": [
+        "Desktop Power Center vs Under-Desk Strip & USB Charger",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B09SG2Q23M"
+      ]
+    },
+    {
+      "key": "guide:homeoffice:desktop-power-centers-compatibility-and-fit-guide",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/desktop-power-centers-compatibility-and-fit-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/desktop-power-centers-compatibility-and-fit-guide",
+      "markers": [
+        "Desk Power Fit: Clamp, Plug Ratings & Shared USB Output",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B09SG2Q23M"
+      ]
+    },
+    {
+      "key": "guide:homeoffice:desktop-power-centers-ownership-cost-and-maintenance",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/desktop-power-centers-ownership-cost-and-maintenance",
+      "canonical": "https://homeoffice.madabase.com/guides/desktop-power-centers-ownership-cost-and-maintenance",
+      "markers": [
+        "Desktop Power Care: Cords, USB Limits & Replacement",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B09SG2Q23M"
+      ]
+    },
+    {
+      "key": "guide:homeoffice:desktop-power-centers-setup-and-daily-workflow",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/desktop-power-centers-setup-and-daily-workflow",
+      "canonical": "https://homeoffice.madabase.com/guides/desktop-power-centers-setup-and-daily-workflow",
+      "markers": [
+        "Set Up Desk Power: Mount Unplugged & Check Cord Travel",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B09SG2Q23M"
+      ]
+    },
+    {
+      "key": "guide:baby:jogging-strollers-buying-guide",
+      "host": "baby.madabase.com",
+      "path": "/guides/jogging-strollers-buying-guide",
+      "canonical": "https://baby.madabase.com/guides/jogging-strollers-buying-guide",
+      "markers": [
+        "Jogging Stroller Guide: Running Approval, Child Fit & Controls",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0829PMJ8D"
+      ]
+    },
+    {
+      "key": "guide:baby:jogging-strollers-vs-alternatives",
+      "host": "baby.madabase.com",
+      "path": "/guides/jogging-strollers-vs-alternatives",
+      "canonical": "https://baby.madabase.com/guides/jogging-strollers-vs-alternatives",
+      "markers": [
+        "Jogging vs All-Terrain Stroller: Permission Before Wheel Size",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0829PMJ8D"
+      ]
+    },
+    {
+      "key": "guide:baby:jogging-strollers-compatibility-and-fit-guide",
+      "host": "baby.madabase.com",
+      "path": "/guides/jogging-strollers-compatibility-and-fit-guide",
+      "canonical": "https://baby.madabase.com/guides/jogging-strollers-compatibility-and-fit-guide",
+      "markers": [
+        "INFANS Jogger Fit: Manual, Child, Wheels & Storage",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0829PMJ8D"
+      ]
+    },
+    {
+      "key": "guide:baby:jogging-strollers-ownership-cost-and-maintenance",
+      "host": "baby.madabase.com",
+      "path": "/guides/jogging-strollers-ownership-cost-and-maintenance",
+      "canonical": "https://baby.madabase.com/guides/jogging-strollers-ownership-cost-and-maintenance",
+      "markers": [
+        "Jogging Stroller Upkeep: Tyres, Wheel Checks & Support",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0829PMJ8D"
+      ]
+    },
+    {
+      "key": "guide:baby:jogging-strollers-setup-and-daily-workflow",
+      "host": "baby.madabase.com",
+      "path": "/guides/jogging-strollers-setup-and-daily-workflow",
+      "canonical": "https://baby.madabase.com/guides/jogging-strollers-setup-and-daily-workflow",
+      "markers": [
+        "Jogging Stroller Setup: Documentation Before a Running Trip",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0829PMJ8D"
+      ]
+    },
+    {
+      "key": "guide:baby:jogging-strollers-safety-and-skip-guide",
+      "host": "baby.madabase.com",
+      "path": "/guides/jogging-strollers-safety-and-skip-guide",
+      "canonical": "https://baby.madabase.com/guides/jogging-strollers-safety-and-skip-guide",
+      "markers": [
+        "Jogging Stroller Stop Guide: Missing Manual, Readiness & Wheels",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0829PMJ8D"
+      ]
+    },
+    {
+      "key": "guide:baby:stroller-wagons-buying-guide",
+      "host": "baby.madabase.com",
+      "path": "/guides/stroller-wagons-buying-guide",
+      "canonical": "https://baby.madabase.com/guides/stroller-wagons-buying-guide",
+      "markers": [
+        "Stroller Wagon Guide: Child Limits, Revision & Real Handling",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B09HJTBQJF"
+      ]
+    },
+    {
+      "key": "guide:baby:stroller-wagons-vs-alternatives",
+      "host": "baby.madabase.com",
+      "path": "/guides/stroller-wagons-vs-alternatives",
+      "canonical": "https://baby.madabase.com/guides/stroller-wagons-vs-alternatives",
+      "markers": [
+        "Stroller Wagon vs Double Stroller: Seats, Route & Lift",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B09HJTBQJF"
+      ]
+    },
+    {
+      "key": "guide:baby:stroller-wagons-compatibility-and-fit-guide",
+      "host": "baby.madabase.com",
+      "path": "/guides/stroller-wagons-compatibility-and-fit-guide",
+      "canonical": "https://baby.madabase.com/guides/stroller-wagons-compatibility-and-fit-guide",
+      "markers": [
+        "EVER ADVANCED Wagon Fit: Conflicting Manuals & Passenger Limits",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B09HJTBQJF"
+      ]
+    },
+    {
+      "key": "guide:baby:stroller-wagons-ownership-cost-and-maintenance",
+      "host": "baby.madabase.com",
+      "path": "/guides/stroller-wagons-ownership-cost-and-maintenance",
+      "canonical": "https://baby.madabase.com/guides/stroller-wagons-ownership-cost-and-maintenance",
+      "markers": [
+        "Stroller Wagon Upkeep: Fabric, Harness, Wheels & Parts",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B09HJTBQJF"
+      ]
+    },
+    {
+      "key": "guide:baby:stroller-wagons-setup-and-daily-workflow",
+      "host": "baby.madabase.com",
+      "path": "/guides/stroller-wagons-setup-and-daily-workflow",
+      "canonical": "https://baby.madabase.com/guides/stroller-wagons-setup-and-daily-workflow",
+      "markers": [
+        "Stroller Wagon Daily Use: Revision, Loading, Harness & Fold",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B09HJTBQJF"
+      ]
+    },
+    {
+      "key": "guide:baby:stroller-wagons-safety-and-skip-guide",
+      "host": "baby.madabase.com",
+      "path": "/guides/stroller-wagons-safety-and-skip-guide",
+      "canonical": "https://baby.madabase.com/guides/stroller-wagons-safety-and-skip-guide",
+      "markers": [
+        "Stroller Wagon Stop Guide: Age Conflict, Harness & Brakes",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B09HJTBQJF"
+      ]
+    },
+    {
+      "key": "guide:baby:crib-mattresses-buying-guide",
+      "host": "baby.madabase.com",
+      "path": "/guides/crib-mattresses-buying-guide",
+      "canonical": "https://baby.madabase.com/guides/crib-mattresses-buying-guide",
+      "markers": [
+        "Crib Mattress Guide: Firmness, Fit & Infant-Side Labels",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B010S7VZI0"
+      ]
+    },
+    {
+      "key": "guide:baby:crib-mattresses-vs-alternatives",
+      "host": "baby.madabase.com",
+      "path": "/guides/crib-mattresses-vs-alternatives",
+      "canonical": "https://baby.madabase.com/guides/crib-mattresses-vs-alternatives",
+      "markers": [
+        "Crib Mattress Choices: Foam, Innerspring & Dual-Sided",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B010S7VZI0"
+      ]
+    },
+    {
+      "key": "guide:baby:crib-mattresses-compatibility-and-fit-guide",
+      "host": "baby.madabase.com",
+      "path": "/guides/crib-mattresses-compatibility-and-fit-guide",
+      "canonical": "https://baby.madabase.com/guides/crib-mattresses-compatibility-and-fit-guide",
+      "markers": [
+        "Crib Mattress Fit: Frame, Thickness, Gaps & Side Labels",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B010S7VZI0"
+      ]
+    },
+    {
+      "key": "guide:baby:crib-mattresses-ownership-cost-and-maintenance",
+      "host": "baby.madabase.com",
+      "path": "/guides/crib-mattresses-ownership-cost-and-maintenance",
+      "canonical": "https://baby.madabase.com/guides/crib-mattresses-ownership-cost-and-maintenance",
+      "markers": [
+        "Crib Mattress Care: Covers, Moisture, Damage & Replacement",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B010S7VZI0"
+      ]
+    },
+    {
+      "key": "guide:baby:crib-mattresses-setup-and-daily-workflow",
+      "host": "baby.madabase.com",
+      "path": "/guides/crib-mattresses-setup-and-daily-workflow",
+      "canonical": "https://baby.madabase.com/guides/crib-mattresses-setup-and-daily-workflow",
+      "markers": [
+        "Crib Mattress Setup: Identity, Fit, Side & Bare Sleep",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B010S7VZI0"
+      ]
+    },
+    {
+      "key": "guide:baby:crib-mattresses-safety-and-skip-guide",
+      "host": "baby.madabase.com",
+      "path": "/guides/crib-mattresses-safety-and-skip-guide",
+      "canonical": "https://baby.madabase.com/guides/crib-mattresses-safety-and-skip-guide",
+      "markers": [
+        "Crib Mattress Stop Guide: Softness, Gaps, Damage & Unknowns",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B010S7VZI0"
+      ]
+    },
+    {
+      "key": "guide:baby:baby-food-makers-buying-guide",
+      "host": "baby.madabase.com",
+      "path": "/guides/baby-food-makers-buying-guide",
+      "canonical": "https://baby.madabase.com/guides/baby-food-makers-buying-guide",
+      "markers": [
+        "Baby Food Maker Guide: Steam, Blend, Clean or Keep Your Tools",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0BTFR9NZ4"
+      ]
+    },
+    {
+      "key": "guide:baby:baby-food-makers-vs-alternatives",
+      "host": "baby.madabase.com",
+      "path": "/guides/baby-food-makers-vs-alternatives",
+      "canonical": "https://baby.madabase.com/guides/baby-food-makers-vs-alternatives",
+      "markers": [
+        "Baby Food Maker vs Blender or Fork: Which Saves Work?",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0BTFR9NZ4"
+      ]
+    },
+    {
+      "key": "guide:baby:baby-food-makers-compatibility-and-fit-guide",
+      "host": "baby.madabase.com",
+      "path": "/guides/baby-food-makers-compatibility-and-fit-guide",
+      "canonical": "https://baby.madabase.com/guides/baby-food-makers-compatibility-and-fit-guide",
+      "markers": [
+        "GROWNSY Food Maker Fit: Model, Power, Batch & Parts",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0BTFR9NZ4"
+      ]
+    },
+    {
+      "key": "guide:baby:baby-food-makers-ownership-cost-and-maintenance",
+      "host": "baby.madabase.com",
+      "path": "/guides/baby-food-makers-ownership-cost-and-maintenance",
+      "canonical": "https://baby.madabase.com/guides/baby-food-makers-ownership-cost-and-maintenance",
+      "markers": [
+        "Baby Food Maker Care: Blades, Seals, Scale & Replacement",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0BTFR9NZ4"
+      ]
+    },
+    {
+      "key": "guide:baby:baby-food-makers-setup-and-daily-workflow",
+      "host": "baby.madabase.com",
+      "path": "/guides/baby-food-makers-setup-and-daily-workflow",
+      "canonical": "https://baby.madabase.com/guides/baby-food-makers-setup-and-daily-workflow",
+      "markers": [
+        "Baby Food Maker Routine: Prepare, Cook, Cool, Portion & Clean",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0BTFR9NZ4"
+      ]
+    },
+    {
+      "key": "guide:baby:baby-food-makers-safety-and-skip-guide",
+      "host": "baby.madabase.com",
+      "path": "/guides/baby-food-makers-safety-and-skip-guide",
+      "canonical": "https://baby.madabase.com/guides/baby-food-makers-safety-and-skip-guide",
+      "markers": [
+        "Baby Food Maker Stop Guide: Steam, Blades, Damage & Food",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0BTFR9NZ4"
+      ]
+    },
+    {
+      "key": "guide:baby:changing-pads-buying-guide",
+      "host": "baby.madabase.com",
+      "path": "/guides/changing-pads-buying-guide",
+      "canonical": "https://baby.madabase.com/guides/changing-pads-buying-guide",
+      "markers": [
+        "Changing Pad Guide: Surface Fit, Attachment & Cleanup",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B07Z18K282"
+      ]
+    },
+    {
+      "key": "guide:baby:changing-pads-vs-alternatives",
+      "host": "baby.madabase.com",
+      "path": "/guides/changing-pads-vs-alternatives",
+      "canonical": "https://baby.madabase.com/guides/changing-pads-vs-alternatives",
+      "markers": [
+        "Wipe-Clean Pad vs Covered Pad vs Portable Changing Mat",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B07Z18K282"
+      ]
+    },
+    {
+      "key": "guide:baby:changing-pads-compatibility-and-fit-guide",
+      "host": "baby.madabase.com",
+      "path": "/guides/changing-pads-compatibility-and-fit-guide",
+      "canonical": "https://baby.madabase.com/guides/changing-pads-compatibility-and-fit-guide",
+      "markers": [
+        "Skip Hop Sage Pad Fit: 16-Inch Size, Furniture & Attachment",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B07Z18K282"
+      ]
+    },
+    {
+      "key": "guide:baby:changing-pads-ownership-cost-and-maintenance",
+      "host": "baby.madabase.com",
+      "path": "/guides/changing-pads-ownership-cost-and-maintenance",
+      "canonical": "https://baby.madabase.com/guides/changing-pads-ownership-cost-and-maintenance",
+      "markers": [
+        "Changing Pad Care: Surface, Belt, Adhesives & Replacement",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B07Z18K282"
+      ]
+    },
+    {
+      "key": "guide:baby:changing-pads-setup-and-daily-workflow",
+      "host": "baby.madabase.com",
+      "path": "/guides/changing-pads-setup-and-daily-workflow",
+      "canonical": "https://baby.madabase.com/guides/changing-pads-setup-and-daily-workflow",
+      "markers": [
+        "Diaper Change Setup: Supplies, Hand-On Care & Cleanup",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B07Z18K282"
+      ]
+    },
+    {
+      "key": "guide:baby:changing-pads-safety-and-skip-guide",
+      "host": "baby.madabase.com",
+      "path": "/guides/changing-pads-safety-and-skip-guide",
+      "canonical": "https://baby.madabase.com/guides/changing-pads-safety-and-skip-guide",
+      "markers": [
+        "Changing Pad Stop Guide: Falls, Sleep, Damage & Unknown Fit",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B07Z18K282"
+      ]
+    },
+    {
+      "key": "product:baby:summer-3dlite-convenience-stroller",
+      "host": "baby.madabase.com",
+      "path": "/reviews/summer-3dlite-convenience-stroller",
+      "canonical": "https://baby.madabase.com/reviews/summer-3dlite-convenience-stroller",
+      "markers": [
+        "Summer 3Dlite: Model, Child Fit and Fold Checks",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0CN79NZ8J"
+      ]
+    },
+    {
+      "key": "guide:baby:travel-stroller-for-small-car-guide",
+      "host": "baby.madabase.com",
+      "path": "/guides/travel-stroller-for-small-car-guide",
+      "canonical": "https://baby.madabase.com/guides/travel-stroller-for-small-car-guide",
+      "markers": [
+        "Travel Strollers for Small Cars: Fold, Loading and Child Fit",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0CN79NZ8J"
+      ]
+    },
+    {
+      "key": "roundup:baby:best-travel-strollers",
+      "host": "baby.madabase.com",
+      "path": "/best/best-travel-strollers",
+      "canonical": "https://baby.madabase.com/best/best-travel-strollers",
+      "markers": [
+        "Travel Strollers: Compare Fold, Child Fit and Loading",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0CN79NZ8J"
+      ]
+    },
+    {
+      "key": "guide:homeoffice:business-usb-c-monitors-vs-alternatives",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/business-usb-c-monitors-vs-alternatives",
+      "canonical": "https://homeoffice.madabase.com/guides/business-usb-c-monitors-vs-alternatives",
+      "markers": [
+        "USB-C Hub Monitor Checks: Video Input, Charging and Ports",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0D5RH4SS1"
+      ]
+    },
+    {
+      "key": "guide:baby:nursery-glider-chairs-safety-and-skip-guide",
+      "host": "baby.madabase.com",
+      "path": "/guides/nursery-glider-chairs-safety-and-skip-guide",
+      "canonical": "https://baby.madabase.com/guides/nursery-glider-chairs-safety-and-skip-guide",
+      "markers": [
+        "Nursery Glider and Rocker Safety: Fit, Motion and When to Skip",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0192SZGNQ"
+      ]
+    },
+    {
+      "key": "guide:homeoffice:desktop-label-printers-buying-guide",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/desktop-label-printers-buying-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/desktop-label-printers-buying-guide",
+      "markers": [
+        "Desktop Label Printers: 4×6 Shipping vs Small Office Labels",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B09VF4Z2WQ"
+      ]
+    },
+    {
+      "key": "guide:homeoffice:desktop-audio-interfaces-buying-guide",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/desktop-audio-interfaces-buying-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/desktop-audio-interfaces-buying-guide",
+      "markers": [
+        "Desktop Audio Interfaces: Inputs, Monitoring & Driver Checks",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0C5JSHP7M"
+      ]
+    },
+    {
+      "key": "guide:homeoffice:desktop-audio-interfaces-vs-alternatives",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/desktop-audio-interfaces-vs-alternatives",
+      "canonical": "https://homeoffice.madabase.com/guides/desktop-audio-interfaces-vs-alternatives",
+      "markers": [
+        "Audio Interface vs USB Microphone: Inputs, Routing & Cost",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0C5JSHP7M"
+      ]
+    },
+    {
+      "key": "guide:homeoffice:desktop-audio-interfaces-compatibility-and-fit-guide",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/desktop-audio-interfaces-compatibility-and-fit-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/desktop-audio-interfaces-compatibility-and-fit-guide",
+      "markers": [
+        "Audio Interface Compatibility: Source, Driver & Monitoring",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0C5JSHP7M"
+      ]
+    },
+    {
+      "key": "guide:homeoffice:desktop-audio-interfaces-ownership-cost-and-maintenance",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/desktop-audio-interfaces-ownership-cost-and-maintenance",
+      "canonical": "https://homeoffice.madabase.com/guides/desktop-audio-interfaces-ownership-cost-and-maintenance",
+      "markers": [
+        "Audio Interface Costs: Drivers, Cables & Recovery",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0C5JSHP7M"
+      ]
+    },
+    {
+      "key": "guide:homeoffice:desktop-audio-interfaces-setup-and-daily-workflow",
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/desktop-audio-interfaces-setup-and-daily-workflow",
+      "canonical": "https://homeoffice.madabase.com/guides/desktop-audio-interfaces-setup-and-daily-workflow",
+      "markers": [
+        "Audio Interface Setup: One Input, Gain & Monitoring",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0C5JSHP7M"
+      ]
+    },
+    {
+      "key": "guide:baby:travel-cribs-playards-buying-guide",
+      "host": "baby.madabase.com",
+      "path": "/guides/travel-cribs-playards-buying-guide",
+      "canonical": "https://baby.madabase.com/guides/travel-cribs-playards-buying-guide",
+      "markers": [
+        "Travel Crib Guide: Lotus Pad, Child Limits & Packed Size",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0D79FRB52"
+      ]
+    },
+    {
+      "key": "guide:baby:travel-cribs-playards-vs-alternatives",
+      "host": "baby.madabase.com",
+      "path": "/guides/travel-cribs-playards-vs-alternatives",
+      "canonical": "https://baby.madabase.com/guides/travel-cribs-playards-vs-alternatives",
+      "markers": [
+        "Travel Crib vs Full-Size Crib vs Bassinet: Which Job Fits?",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0D79FRB52"
+      ]
+    },
+    {
+      "key": "guide:baby:travel-cribs-playards-compatibility-and-fit-guide",
+      "host": "baby.madabase.com",
+      "path": "/guides/travel-cribs-playards-compatibility-and-fit-guide",
+      "canonical": "https://baby.madabase.com/guides/travel-cribs-playards-compatibility-and-fit-guide",
+      "markers": [
+        "Guava Lotus Fit: Child Height, Pad Clips, Sheet & Room",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0D79FRB52"
+      ]
+    },
+    {
+      "key": "guide:baby:travel-cribs-playards-ownership-cost-and-maintenance",
+      "host": "baby.madabase.com",
+      "path": "/guides/travel-cribs-playards-ownership-cost-and-maintenance",
+      "canonical": "https://baby.madabase.com/guides/travel-cribs-playards-ownership-cost-and-maintenance",
+      "markers": [
+        "Lotus Crib Care: Cover, Sheets, Pad Clips & Replacement",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0D79FRB52"
+      ]
+    },
+    {
+      "key": "guide:baby:travel-cribs-playards-setup-and-daily-workflow",
+      "host": "baby.madabase.com",
+      "path": "/guides/travel-cribs-playards-setup-and-daily-workflow",
+      "canonical": "https://baby.madabase.com/guides/travel-cribs-playards-setup-and-daily-workflow",
+      "markers": [
+        "Lotus Travel Crib Setup: Locks, Pad Clips, Sheet & Packing",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0D79FRB52"
+      ]
+    },
+    {
+      "key": "guide:baby:travel-cribs-playards-safety-and-skip-guide",
+      "host": "baby.madabase.com",
+      "path": "/guides/travel-cribs-playards-safety-and-skip-guide",
+      "canonical": "https://baby.madabase.com/guides/travel-cribs-playards-safety-and-skip-guide",
+      "markers": [
+        "Travel Crib Stop Guide: Climbing, Pad Changes & Broken Locks",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0D79FRB52"
+      ]
+    },
+    {
+      "key": "roundup:homeoffice:best-standing-desks-for-small-spaces",
+      "host": "homeoffice.madabase.com",
+      "path": "/best/best-standing-desks-for-small-spaces",
+      "canonical": "https://homeoffice.madabase.com/best/best-standing-desks-for-small-spaces",
+      "markers": [
+        "Standing Desk for Small Spaces: 3 Compact Picks",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0FH4RDV1Q"
+      ]
+    },
+    {
+      "key": "roundup:homeoffice:best-ergonomic-chairs-under-500",
+      "host": "homeoffice.madabase.com",
+      "path": "/best/best-ergonomic-chairs-under-500",
+      "canonical": "https://homeoffice.madabase.com/best/best-ergonomic-chairs-under-500",
+      "markers": [
+        "Ergonomic Chairs Under $500",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B06Y3PGPR2"
+      ]
+    },
+    {
+      "key": "roundup:homeoffice:ergear-48x24-vs-flexispot-e7-mini",
+      "host": "homeoffice.madabase.com",
+      "path": "/best/ergear-48x24-vs-flexispot-e7-mini",
+      "canonical": "https://homeoffice.madabase.com/best/ergear-48x24-vs-flexispot-e7-mini",
+      "markers": [
+        "FlexiSpot E7 Mini vs ErGear 48×24: Fixed or Rolling Desk?",
+        "data-commerce-release=\"rbiK2NwB-_XkMAcLInI7B\"",
+        "/dp/B0FH4RDV1Q"
+      ]
+    }
+  ],
+  "scope": "All208 accepted-scope US content pages; Main runtime unchanged."
+}

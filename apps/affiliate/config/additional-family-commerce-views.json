@@ -1,0 +1,87 @@
+[
+  {
+    "site": "smarthome",
+    "slug": "family-robot-mops-b0dgr1vdtb",
+    "asin": "B0DGR1VDTB",
+    "name": "MOVA P10 Pro Ultra — original US model",
+    "brand": "MOVA",
+    "category": "automation",
+    "updatedAt": "November 2, 2026",
+    "publicationStatus": "draft",
+    "sitemapExcluded": true,
+    "discoveryExcluded": true,
+    "evidenceMode": "official-spec",
+    "image": "",
+    "rating": 0,
+    "scores": [],
+    "priceBand": "$$",
+    "summary": "A separately identified vacuum/mop combo with wash/dry base when floor, rug, dock, privacy and ordinary wet-part care all fit.",
+    "verdict": "Select original P10 Pro Ultra B0DGR1VDTB, part RLM83HE, UPC 850067619260. The November 2 listing did not display the base model: match the received RCME0307 pairing and grounded 120 V / 60 Hz label to the original US manual. That manual names MOVAhome and 2.4 GHz Wi-Fi; use the genuine app with the received regional/model instructions and supported firmware. Check supported region, dock/tank access, floor moisture permission and rug exclusions. Keep physical stair barriers and ordinary wet-part care.",
+    "bestFor": "A separately identified vacuum/mop combo with wash/dry base when floor, rug, dock, privacy and ordinary wet-part care all fit.",
+    "pros": [
+      "Manufacturer identifies the exact model and a relevant supported use"
+    ],
+    "cons": [
+      "Not a verified Bagotte successor; its robot, base and instructions are separate",
+      "A 10.5 mm mop-lift claim does not guarantee dry rugs; marginal thresholds stay unresolved",
+      "Cameras/microphones, account and wet-component service add requirements"
+    ],
+    "specs": {
+      "ASIN": "B0DGR1VDTB",
+      "Selection": "Retail P10 Pro Ultra / part RLM83HE / UPC 850067619260; base model not displayed in the listing",
+      "Power": "Original US manual: grounded 120 V / 60 Hz; verify actual received labels and US/Canada suitability",
+      "Dock": "Over 1.5 m front and 5 cm each side plus practical tank-service space",
+      "Care": "Approved solution; no hot water in clean tank; used-water care after each use",
+      "Required received check": "Original US manual pairs RLM83HE with RCME0307 base; check the supplied base label and regional instructions"
+    },
+    "evidence": [
+      "Manufacturer specifications and model-specific instructions inform these purchase conditions. We have not installed, measured or security-tested this product. Recheck the exact selected model, package and current seller terms."
+    ],
+    "purchaseCheck": "Select original P10 Pro Ultra B0DGR1VDTB, part RLM83HE, UPC 850067619260. The November 2 listing did not display the base model: match the received RCME0307 pairing and grounded 120 V / 60 Hz label to the original US manual. That manual names MOVAhome and 2.4 GHz Wi-Fi; use the genuine app with the received regional/model instructions and supported firmware. Check supported region, dock/tank access, floor moisture permission and rug exclusions. Keep physical stair barriers and ordinary wet-part care.",
+    "sources": [
+      {
+        "name": "MOVA P10 Pro Ultra original US manual",
+        "url": "https://cdn.shopify.com/s/files/1/0712/8245/8860/files/R2491C.pdf?v=1745983128",
+        "note": "Original MOVA P10 Pro Ultra RLM83HE robot and RCME0307 US base: grounded 120 V / 60 Hz, 2.4 GHz, dock clearance, floor preparation, approved solution and ordinary wet-part maintenance. Not P10 Gen2, MOBIUS or Bagotte instructions."
+      },
+      {
+        "name": "MOVA P10 Pro Ultra current specifications and footnotes",
+        "url": "https://us.mova.tech/products/p10-pro-ultra-robot-vacuum",
+        "note": "Original model and carpet-lift/threshold lab qualifications. The same page contains conflicting wash-temperature copy, so no exact delivered wash temperature or disinfection claim is made."
+      },
+      {
+        "name": "MOVA P10 Pro Ultra Gen2 current model",
+        "url": "https://us.mova.tech/products/mova-p10-pro-ultra-gen2-robot-vacuum",
+        "note": "A separately documented newer generation. Its higher advertised suction and dock-wash specification are not transferred to the original model or treated as measured floor-cleaning gains."
+      },
+      {
+        "name": "MOVA MOBIUS 60 current model",
+        "url": "https://us.mova.tech/products/mova-mobius-60-robot-vacuum",
+        "note": "Separate current model with a different mop-changing/base architecture. Retailer newer-model label is not proof of original-model EOL or suitability for every floor."
+      },
+      {
+        "name": "MOVA official original and newer manual index",
+        "url": "https://us.mova.tech/pages/user-manuals",
+        "note": "Separate original P10 Pro Ultra, Gen2 and MOBIUS manuals. They are not interchangeable procedures."
+      },
+      {
+        "name": "MOVA support: US model region restriction",
+        "url": "https://us.forum.mova-tech.com/forum.php?back=index&mobile=no&mod=viewthread&pa=34&tid=1897",
+        "note": "Manufacturer support states US-version devices are intended for US/Canada and can encounter region restrictions elsewhere. This is not a promise of an unlock or a workaround."
+      },
+      {
+        "name": "Original P10 Pro Ultra exact retail selection, November 2, 2026",
+        "url": "https://www.amazon.com/dp/B0DGR1VDTB",
+        "note": "US10001 listing identified P10 Pro Ultra, part RLM83HE and UPC 850067619260, with a New Amazon.com offer and expanded holiday returns. The listing did not show the base model; RCME0307 remains a received-label and original-US-manual pairing check."
+      }
+    ],
+    "offers": [
+      {
+        "merchant": "Amazon US",
+        "url": "https://www.amazon.com/dp/B0DGR1VDTB?tag=madasmart-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+        "label": "Check this exact ASIN on Amazon",
+        "priceNote": "Confirm the exact variant before checkout."
+      }
+    ]
+  }
+]

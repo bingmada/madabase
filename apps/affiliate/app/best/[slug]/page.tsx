@@ -13,14 +13,9 @@ import { roundupEvidencePresentation } from "@/lib/evidence";
 import { effectiveContentUpdatedAt, findSearchOpportunity, reviewedSearchDescription, searchOpportunityMetaDescription } from "@/lib/search-opportunities";
 import { breadcrumbSchema, faqPageSchema, pageMetadata, roundupArticleSchema, roundupProductListSchema } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
-import type { Product, Roundup, SiteKey } from "@/lib/types";
-
-function quickAnswer(roundupTitle: string, intent: string, picks: Array<ReturnType<typeof findProduct>>) {
-  const firstPick = picks.find(Boolean);
-  if (!firstPick) return intent;
-
-  return `Start with ${firstPick.name} if your main need is ${firstPick.bestFor.toLowerCase()}. Compare the trade-offs before buying, especially ${firstPick.cons[0].toLowerCase()}.`;
-}
+import type { SiteKey } from "@/lib/types";
+import { defaultRoundupQuickAnswer } from "@/lib/roundup-quick-answer";
+import { roundupSourceLinks } from "@/lib/roundup-source-links";
 
 const roundupAdvice: Record<SiteKey, Record<string, { spendMore: string; spendLess: string; compare: string[] }>> = {
   pet: {
@@ -123,14 +118,6 @@ function getRoundupAdvice(siteKey: SiteKey, category: string) {
   };
 }
 
-function officialSourceLinks(products: Product[], roundupSources: Roundup["sources"] = []) {
-  return Array.from(
-    new Map(
-      [...roundupSources, ...products.flatMap((product) => product.sources ?? [])]
-        .map((source) => [source.url, source]),
-    ).values(),
-  ).slice(0, 8);
-}
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const site = await getCurrentSite();
@@ -160,9 +147,10 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
   const relatedGuides = siteGuides(site.key)
     .filter((guide) => guide.relatedRoundups.includes(roundup.slug))
     .slice(0, 6);
-  const answer = roundup.quickAnswer ?? quickAnswer(roundup.title, roundup.intent, picks);
+  const answer = roundup.quickAnswer ?? defaultRoundupQuickAnswer(roundup.intent, picks);
   const advice = getRoundupAdvice(site.key, roundup.category);
-  const sources = officialSourceLinks(picks, roundup.sources);
+  const preservePageEvidence = Boolean(roundup.purchaseAlternatives?.length);
+  const sources = roundupSourceLinks(picks, roundup.sources, preservePageEvidence);
   const evidencePresentation = roundupEvidencePresentation();
 
   return (
@@ -472,9 +460,16 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
               {sources.length ? (
                 <div className="mt-5 grid gap-3 sm:grid-cols-2">
                   {sources.map((source) => (
-                    <a className="rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-3 text-sm font-semibold text-[var(--brand-strong)] hover:underline" href={source.url} key={source.url} rel="noopener noreferrer" target="_blank">
-                      {source.name}
-                    </a>
+                    preservePageEvidence ? (
+                      <div className="rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-3 text-sm break-words" key={source.url}>
+                        <a className="font-semibold text-[var(--brand-strong)] hover:underline" href={source.url} rel="noopener noreferrer" target="_blank">{source.name}</a>
+                        {source.note ? <p className="mt-1 leading-6 text-[var(--muted)]">{source.note}</p> : null}
+                      </div>
+                    ) : (
+                      <a className="rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-3 text-sm font-semibold text-[var(--brand-strong)] hover:underline" href={source.url} key={source.url} rel="noopener noreferrer" target="_blank">
+                        {source.name}
+                      </a>
+                    )
                   ))}
                 </div>
               ) : null}

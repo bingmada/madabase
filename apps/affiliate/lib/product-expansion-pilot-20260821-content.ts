@@ -219,7 +219,7 @@ export const productExpansionPilot20260821Products: Product[] = [
         merchant: "Amazon US",
         url: amazonUrl("B0C2B8SP3W"),
         label: "Check Tapo S505D price on Amazon",
-        priceNote: "Confirm ASIN B0C2B8SP3W, S505D, one-pack or two-pack, seller, wiring version, delivery, and returns.",
+        priceNote: "Confirm ASIN B0C2B8SP3W, US S505D Dimmer / 1-Pack, seller, wiring version, delivery, and returns.",
       },
     ],
 

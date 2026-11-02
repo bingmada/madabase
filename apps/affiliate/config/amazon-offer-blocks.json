@@ -926,6 +926,16 @@
       "pageUpdatedAt": "November 1, 2026",
       "observedListing": "No featured offer. One New two-pack from Midnight Raven Systems,shipped by that seller,Nov17–23 delivery; complete returns/warranty eligibility not verified.",
       "reason": "The observed New third-party offer does not yet establish a complete return and ownership path. Exact shortcut paused; not a finding of no stock,EOL or misconduct. Compare the actual ASUS port layout and separately documented alternatives."
+    },
+    {
+      "site": "baby",
+      "slug": "skiphop-moby-grey-235060-separate-option",
+      "asin": "B07FK7BG98",
+      "status": "unavailable",
+      "checkedAt": "2026-11-02",
+      "observedListing": "MOBY Grey Tub, 235060, UPC816523025075; Currently unavailable in US10001",
+      "reason": "The exact Grey 235060 offer is currently unavailable. This does not establish discontinuation. Wave B0DJDQMHFT is a separately named four-stage tub with its own original instructions.",
+      "pageUpdatedAt": "November 2, 2026"
     }
   ]
 }

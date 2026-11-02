@@ -1,0 +1,644 @@
+{
+  "pet:sleepypod-clickit-sport-csx-black-medium-alternative": {
+    "updatedAt": "November 2, 2026",
+    "specs": {
+      "ASIN": "B08JQQF9YX",
+      "Selection": "Jet Black, M, retailer model CSX-BLK-M; Clickit Sport",
+      "Return check": "Selected Veterinary Preferred offer: return shipping fees may apply; not eligible for free return. Confirm fit and current seller terms before purchase."
+    },
+    "sources": [
+      {
+        "name": "Sleepypod current Sport product and sizing",
+        "url": "https://sleepypod.com/products/sport-bundle",
+        "note": "Current maker page uses Sport Plus naming; verify the selected CSX-BLK-M offer instead of transferring its bundle contents."
+      },
+      {
+        "name": "Clickit Sport printed belt-routing instructions",
+        "url": "https://cdn.shopify.com/s/files/1/0583/1485/0340/files/Sleepypod_Clickit_Sport_Instructions_2024_1.pdf?v=1783003719",
+        "note": "Both physical pages and diagrams read: fit, adjustment, both belt loops, avoid locking the belt and crash replacement. Match supplied revision."
+      },
+      {
+        "name": "Center for Pet Safety certified product directory",
+        "url": "https://centerforpetsafety.org/cps-certified/page/2/",
+        "note": "Names Clickit Sport; not a certification of this physical sample, seller or individual dog/vehicle fit."
+      },
+      {
+        "name": "Selected Amazon B08JQQF9YX offer",
+        "url": "https://www.amazon.com/dp/B08JQQF9YX",
+        "note": "November2,2026 US10001: selected Jet Black Medium B08JQQF9YX,109.24 sold/shipped by Veterinary Preferred,November9 delivery. Expanded eligible holiday returns until January31,2027; shipping fees may apply and this offer is not eligible for free return. Selected New condition was not explicitly shown."
+      }
+    ],
+    "evidence": [
+      "Exact selected new US offer and expanded return terms observed for US 10001 on October 31, 2026; recheck live terms.",
+      "November2,2026 US10001: selected Jet Black Medium B08JQQF9YX,109.24 sold/shipped by Veterinary Preferred,November9 delivery. Expanded eligible holiday returns until January31,2027; shipping fees may apply and this offer is not eligible for free return. Selected New condition was not explicitly shown."
+    ]
+  },
+  "network:asus-zenwifi-bt6-wifi-7-mesh": {
+    "summary": "A documented comparison of the ASUS ZenWiFi BT6 two-pack with the separate Deco BE63 three-pack, keeping the port layout, system software, node count and buying terms specific to each model.",
+    "verdict": "The original BT6 purchase path remains unresolved until its exact seller, returns and warranty eligibility are clear. Compare Deco BE63 B0CN8QLS4K as a separate three-pack only when the layout and backhaul need it; three Deco nodes are not the same purchase as two ASUS nodes.",
+    "purchaseCheck": "BT6 B0DHWBW4MZ remains the ASUS two-pack with one 2.5 GbE WAN and three Gigabit LAN ports per unit. A separate Deco BE63 B0CN8QLS4K three-pack can be considered for its own topology and software requirements. Confirm node quantity, regional hardware, supplied power, current condition, seller and ownership terms; keep a working system when it meets the task.",
+    "evidence": [
+      "Confirm ASIN B0DHWBW4MZ, the BT6 model, and the selected pack quantity",
+      "Official US specifications list one 2.5GbE WAN port and three 1GbE LAN ports",
+      "Map WAN, primary-node LAN, and satellite-backhaul ports before checkout",
+      "Compare security, parental-control, and routing features against the current firmware",
+      "Separate alternative: Deco BE63 / Deco 7 Pro BE10000 three-pack, B0CN8QLS4K; do not transfer its four 2.5 GbE ports to BT6"
+    ],
+    "sources": [
+      {
+        "name": "ASUS ZenWiFi BT6 US technical specifications",
+        "url": "https://www.asus.com/us/networking-iot-servers/whole-home-mesh-systems/asus-zenwifi/asus-zenwifi-bt6/techspec/",
+        "note": "Official radio, operating-mode, port, power, package, routing, security, and firmware-dependent feature specifications."
+      },
+      {
+        "name": "TP-Link Deco BE63 product specifications",
+        "url": "https://www.tp-link.com/us/deco-mesh-wifi/product-family/deco-be63/",
+        "note": "Official radio, port, operating-mode, Wi-Fi 7, and backhaul specifications."
+      },
+      {
+        "name": "TP-Link Ethernet Backhaul FAQ",
+        "url": "https://www.tp-link.com/us/support/faq/1794/",
+        "note": "Official setup order, topology, mixed-backhaul, and switch guidance."
+      },
+      {
+        "name": "TP-Link Deco BE63 hardware-version support",
+        "url": "https://www.tp-link.com/us/support/download/deco-be63/",
+        "note": "Official regional hardware-version selector, currently exposing V1.60, V2.60, and V3.60 branches."
+      },
+      {
+        "name": "Amazon: exact TP-Link Deco BE63 / Deco 7 Pro BE10000, three pack",
+        "url": "https://www.amazon.com/dp/B0CN8QLS4K",
+        "note": "November 1, 2026: selected US / New York 10001 offer and named configuration observed. Return label observed; expanded eligibility and exceptions were not established. Recheck condition, seller, contents and live terms; no received-unit or performance test."
+      }
+    ],
+    "editorialSections": [
+      {
+        "heading": "Count the selected systems before comparing value",
+        "body": "The original ASUS BT6 B0DHWBW4MZ is a two-pack. The separately linked Deco BE63 B0CN8QLS4K is a three-pack. Compare the full package, useful node locations, power units and ownership terms. A third unit is not automatically necessary or evidence of better coverage in this home; keep a satisfactory existing system or choose fewer nodes when that is sufficient."
+      },
+      {
+        "heading": "Keep the two port layouts separate",
+        "body": "ASUS US specifications list one 2.5 GbE WAN and three Gigabit LAN ports per BT6 unit. Using its fast port for WAN does not leave a second multi-gig LAN port. The registered US BE63 research describes four auto-sensing 2.5 GbE WAN/LAN ports per unit. Those are BE63 facts, not a BT6 upgrade. Draw modem, main-node LAN, switch and satellite-backhaul connections before comparing them."
+      },
+      {
+        "heading": "Choose the software and backhaul plan you can maintain",
+        "body": "BT6 uses ASUS administration and AiMesh; BE63 uses its own Deco system. Do not assume a Deco node joins BT6 wirelessly or transfers ASUS features to a different platform. Check current regional firmware, router/AP mode, setup account requirements and paid versus included features for the chosen system. Use the matching manufacturer backhaul instructions rather than treating a shared Wi-Fi generation as interoperability proof."
+      },
+      {
+        "heading": "What remains unresolved for the original BT6",
+        "body": "The November 1 observation for ASUS BT6 B0DHWBW4MZ had no featured offer and one New third-party listing without a confirmed return/warranty path. That does not settle today’s terms. Compare the separate Deco BE63 B0CN8QLS4K three-pack under its own current buying conditions; it is not an ASUS variant or proof that the BT6 offer has changed."
+      }
+    ],
+    "purchaseAlternatives": [
+      "tp-link-deco-be63-wifi-7-mesh"
+    ],
+    "updatedAt": "November 2, 2026"
+  },
+  "smarthome:govee-wifi-water-leak-detector-3-pack": {
+    "purchaseCheck": "The original Govee B07J9HZ5VN link remains paused. The separate X-Sense SWS0A41 option is four SWS0A sensors plus one SBS50 base, not four standalone sirens. Verify flat probe locations, a dry powered base, audible response and phone delivery; it does not support Home Assistant or itself close a valve.",
+    "updatedAt": "November 2, 2026",
+    "summary": "Reference for the H5040/H5054 three-pack whose exact offer remains paused. For a new four-point alarm system, compare the separately identified X-Sense SWS0A41 and SBS50 base under its own alert-path limits.",
+    "verdict": "Keep suitable working Govee protection. If a new four-sensor kit is needed, compare X-Sense SWS0A41 B0DFCMJH5L: its sensors flash while its separate SBS50 base sounds; phone notifications additionally need powered base, 2.4 GHz Wi-Fi, internet and permissions. It is not a Govee refill or automatic water shutoff.",
+    "editorialSections": [
+      {
+        "heading": "The gateway is the value trick",
+        "body": "The current retailer-linked H5040/H5054 original separates the local detector alarm from the Wi-Fi gateway/app-email path, and identifies a 433 MHz sensor-to-gateway link. Gateway power, 2.4 GHz network and remote service are separate dependencies. A local sound is not proof of remote delivery or flood prevention; other Govee models need their own matching instructions."
+      },
+      {
+        "heading": "Use location names, not generic labels",
+        "body": "Rename sensors as Water heater pan, Washer left side, Kitchen sink, or Sump pump. In a real leak, generic Sensor 1 labels waste time."
+      },
+      {
+        "heading": "Who should skip it",
+        "body": "Skip it if the home already has an Aqara, Home Assistant, or long-range YoLink plan and wants leak detection inside that ecosystem."
+      },
+      {
+        "heading": "A separate four-point option: X-Sense SWS0A41",
+        "body": "The four SWS0A sensors and SBS50 base are a different system from Govee H5040/H5054. The sensors flash; the base supplies the audible alarm. Compare the actual likely wet spots, base audibility, radio reach and phone path separately. Use the X-Sense original for sensor placement, permitted testing, mute behavior and batteries; none of those instructions transfers to Govee. Keep a response plan and accessible manual water stop."
+      }
+    ],
+    "alternatives": [
+      "X-Sense SWS0A41: four sensors plus a separate audible SBS50 base; no Home Assistant or automatic shutoff.",
+      "Aqara and YoLink are distinct hub/automation routes whose components and documented behavior must match."
+    ],
+    "sources": [
+      {
+        "name": "Govee original linked from this exact US retail page",
+        "url": "https://m.media-amazon.com/images/I/C1Rdxyw6x6L.pdf",
+        "note": "Govee H5040/H5054 family identification, component controls, 433 MHz sensor/gateway link and battery/pack information. Other Govee generations require their own instructions."
+      },
+      {
+        "name": "X-Sense SWS0A41 product page",
+        "url": "https://www.x-sense.com/products/x-sense-sws0a41-wireless-wifi-water-leak-detector-kit",
+        "note": "Exact official model, four-sensor and SBS50 base-station kit identity, detection layout, alarm, app, and installation information."
+      },
+      {
+        "name": "SWS0A41 manufacturer original instructions",
+        "url": "https://cdn.shopify.com/s/files/1/0115/9223/7122/files/Manual_SWS0A41_20241025.pdf?v=1729822663",
+        "note": "SWS0A41 instructions distinguish the SWS0A detectors and SBS50 audible base, flat placement, alarm/mute, drying and specified batteries."
+      }
+    ],
+    "purchaseAlternatives": [
+      "x-sense-sws0a41-water-leak-detector-kit"
+    ],
+    "researchNote": "Manufacturer information identifies the Govee H5040 gateway and H5054 detector family. We have not installed or tested its local alarms, remote alerts, radio range or reliability. The separate X-Sense option has different detectors and an audible base."
+  },
+  "smarthome:yolink-x3-bulldog-valve-controller": {
+    "updatedAt": "November 2, 2026",
+    "summary": "A manufacturer-documented X3 controller and Bulldog actuator reference with unresolved exact Amazon kit and controller-rating differences. For a compatible dry indoor valve, compare the separate Aqara T1 route only if its mechanical and hub limits fit.",
+    "verdict": "Choose the X3/Bulldog only after its exact retail kit and applicable revision are established. Aqara T1 B0DB8KS8Q3 is a separate indoor retrofit option, requiring its own healthy valve, clamp/handle fit, four AA cells and compatible Aqara hub; it does not inherit YoLink D2D, range or weather resistance.",
+    "editorialSections": [
+      {
+        "heading": "Keep the exact kit identity visible",
+        "body": "The current official range names a YS5001S controller with a Bulldog Valve Robot. Kit-only and a separate hub-plus-four-sensors configuration have different contents. No exact Amazon listing is verified here; the historical unrelated shower-valve ASIN remains excluded. Use the manufacturer reference to verify the exact kit and supplied documents before choosing a seller."
+      },
+      {
+        "heading": "The bracket fits the valve body, not any nearby pipe",
+        "body": "The linked original says the existing ball valve must move smoothly and close fully. It secures the bracket to a suitable non-round part of the valve body, with the motor and valve shafts aligned. An actuator cannot repair a seized, leaking or mechanically unsuitable valve. Have an appropriate professional assess the valve and installation; retain clutch and manual access."
+      },
+      {
+        "heading": "Separate local D2D from app access",
+        "body": "Configured compatible Control-D2D pairs can act without a hub or internet while the sensor and controller remain powered and within radio range. Pairing is separate from app automations and must reflect the intended closed-valve response. Follow the exact guide and verify real closure; this comparison did not pair a sensor or operate a valve."
+      },
+      {
+        "heading": "Resolve the supplied environmental rating",
+        "body": "The current product page calls the controller IP67, while its linked YS5001(S)-UC guide’s controller table says IP65. The actuator is separately listed IP65. Do not blend those into a system waterproof claim. The original forbids immersion and asks for overhead cover or an enclosure outdoors; confirm the actual revision and conditions before any exposed placement."
+      },
+      {
+        "heading": "Maintain the exact battery and the response plan",
+        "body": "The original specifies its matching battery assembly and handling procedure, rather than an arbitrary loose replacement cell. Keep the supplied instructions and a supervised test schedule, inspect mounting and cable connections, and preserve the manual shutoff. A reported valve state alone is not proof that water has stopped."
+      },
+      {
+        "heading": "Keep a suitable simpler route",
+        "body": "Keep an adequate manual or existing supported shutoff routine when it meets the task. Aqara T1 is a different indoor actuator with its own hub and valve-fit requirements; an inline monitor such as Flo is a separate plumbing installation. Neither is a drop-in substitute for this system."
+      },
+      {
+        "heading": "A separate dry-indoor option: Aqara T1",
+        "body": "Aqara T1 is an indoor battery retrofit actuator using an Aqara Zigbee hub, with Matter access through a compatible bridge. It is not a long-range YoLink Control-D2D system and has no water-ingress protection. Have the actual valve condition, permitted handle/pipe size, clamp, sweep and clearance checked under T1’s instructions. A monthly supervised check and accessible manual fallback still matter; a closed icon does not prove stopped flow."
+      }
+    ],
+    "sources": [
+      {
+        "name": "YoLink X3 Valve Controller & Bulldog Valve Robot",
+        "url": "https://shop.yosmart.com/products/ys5001-bdog",
+        "note": "Official current merchant, exact kit contents, hub requirement, controller, actuator, radio, power, warranty, and installation details."
+      },
+      {
+        "name": "Current X3 Bulldog maker kit",
+        "url": "https://shop.yosmart.com/products/yolink-x3-valve-controller-bulldog-kit",
+        "note": "Current YS5001S kit contents, hub exclusion, valve condition, separate controller/actuator ratings and configured D2D context."
+      },
+      {
+        "name": "Maker-linked X3 Bulldog original guide",
+        "url": "https://www.yosmart.com/help/docs/products/YS5001BDOG-UC/YS5001BDOG-UC_instruction.pdf",
+        "note": "YoLink X3/Bulldog valve-body mounting, configured local pairing, matching battery assembly and warnings. The guide’s controller IP65 table differs from the current webpage IP67 claim; match the supplied revision before weather exposure."
+      },
+      {
+        "name": "Aqara Valve Controller T1 product page",
+        "url": "https://us.aqara.com/products/aqara-valve-controller-t1",
+        "note": "Official valve sizes, handle compatibility, battery, torque, Zigbee, hub, Matter-over-bridge, and use conditions."
+      },
+      {
+        "name": "Aqara Valve Controller T1 announcement",
+        "url": "https://www.aqara.com/en/?p=94712",
+        "note": "Official retrofit, automation, hub, battery-life assumption, and ecosystem context."
+      },
+      {
+        "name": "T1 exact manufacturer specifications",
+        "url": "https://www.aqara.com/us/product/valve-controller-t1-specs/",
+        "note": "VC-X01E/VC-X01D, maximum torque, pipe/handle range and four AA cells. Actual supplied clamp and complete valve condition still govern fit."
+      }
+    ],
+    "purchaseCheck": "The original YoLink kit has no verified exact Amazon path. Separately compare Aqara Valve Controller T1 VC-X01E only for a sound supported quarter-turn lever/butterfly valve, matching size/sweep/clamp/clearance and dry indoor location. Resolve stiff, leaking, shared or fire-suppression supplies professionally. Include the supported Aqara hub and intended sensor/automation; preserve manual shutoff.",
+    "purchaseAlternatives": [
+      "aqara-valve-controller-t1"
+    ],
+    "researchNote": "YoLink manufacturer information describes the X3 controller and Bulldog actuator; its exact Amazon kit and controller weather-rating difference remain unresolved. We have not installed or tested it. The separate Aqara T1 option uses its own indoor valve-fit, hub and power requirements."
+  },
+  "smarthome:ring-alarm-five-piece-second-gen-alternative": {
+    "purchaseCheck": "Match Ring Alarm 5-Piece Kit / Device Only, B07ZDTXJ93: base station, keypad, one contact sensor, one motion detector and range extender. Count the actual openings and sensors needed. Digital notifications, app features and remote arming/disarming require a compatible paid Ring plan. Professional monitoring additionally needs the appropriate enrollment, plan and local eligibility; it is not included automatically with Device Only.",
+    "cons": [
+      "Digital notifications, app features and remote arming/disarming require a compatible paid Ring plan. Professional monitoring additionally needs the appropriate enrollment, plan and local eligibility; it is not included automatically with Device Only.",
+      "A five-piece starter is not equivalent coverage to the original PGST 24-piece package; keep required smoke/CO alarms separate."
+    ],
+    "sources": [
+      {
+        "name": "Ring Alarm five-piece kit and service conditions",
+        "url": "https://ring.com/products/security-system-alarm-5",
+        "note": "Current official kit contents and paid remote-control, backup and monitoring conditions read. Fees, plan names and local availability must be checked at purchase."
+      },
+      {
+        "name": "Ring selected Device Only kit and paid app conditions, November 2, 2026",
+        "url": "https://www.amazon.com/dp/B07ZDTXJ93",
+        "note": "US10001 selected 5-Piece Kit / Device Only and New Amazon.com offer with expanded holiday returns. Digital notifications, app features and remote arming/disarming require a compatible paid Ring plan. Professional monitoring additionally needs the appropriate enrollment, plan and local eligibility; it is not included automatically with Device Only. Confirm current plan and local terms."
+      }
+    ]
+  },
+  "baby:babybjorn-carrier-harmony": {
+    "rating": 0,
+    "scores": [],
+    "summary": "Harmony 3D Mesh guidance for front buckles, position-specific limits and a newborn-instruction conflict that needs exact-version confirmation. Its exact purchase remains paused; Omni Breeze Onyx Blooms is a separately named choice with its own fit and position conditions.",
+    "updatedAt": "November 2, 2026"
+  },
+  "baby:babybjorn-carrier-mini-3d-mesh": {
+    "rating": 0,
+    "scores": [],
+    "summary": "Mini 3D Mesh guidance covering newborn minimums, front-only carrying and a current sales-page versus manual upper-limit difference. Its exact purchase remains paused; Omni Breeze Onyx Blooms is a separately named choice with its own fit and position conditions.",
+    "updatedAt": "November 2, 2026"
+  },
+  "baby:momcozy-purehug-baby-carrier": {
+    "rating": 0,
+    "scores": [],
+    "summary": "PureHug Black guidance covering the three-month starting condition, exact fabric/model checks and unresolved 44/45 lb and carry-mode wording in current manufacturer information. Its exact purchase remains paused; Omni Breeze Onyx Blooms is a separately named choice with its own fit and position conditions.",
+    "updatedAt": "November 2, 2026"
+  },
+  "baby:ergobaby-omni-breeze-carrier": {
+    "rating": 0,
+    "scores": [],
+    "bestFor": "A structured carrying task with a documented eligible position and individual fit",
+    "summary": "An Omni Breeze Onyx Black reference with its exact purchase paused. The separately named Onyx Blooms option has its own ASIN and selection checks; no fit, cooling or comfort winner is established.",
+    "specs": {
+      "ASIN": "B0931ZY7DK",
+      "Product type": "Structured baby carrier",
+      "Linked variant": "Omni Breeze, Onyx Black",
+      "Listed overall range": "7–45lb / 3.2–20.4kg; minimum height 20in / 50.8cm",
+      "Front inward": "At least 7 lb AND 20 in, with the instructed seat/head support and actual fit",
+      "Front outward": "Manual: 14–about 30lb and strong, consistent head/neck control; confirm all fit checks",
+      "Hip and back": "Manual: 17.2–45lb; retain unassisted-sitting and head-control checks; confirm exact instructions",
+      "Material": "SoftFlex mesh",
+      "Infant insert": "Not required within the listed newborn limits",
+      "Common searches answered": "Ergobaby Omni Breeze review, newborn fit, weight limit, and carry positions",
+      "Link status": "Original Onyx Black B0931ZY7DK remains paused as unavailable; separately selected Onyx Blooms B0BQCPHV9J is not the original offer."
+    },
+    "updatedAt": "November 2, 2026"
+  },
+  "baby:nanit-pro-smart-baby-monitor": {
+    "evidence": [
+      "Historical Essentials B0FMZ3H8SB remains paused. The separate Camera & Floor Stand selection B0FTSL4FXJ has UPC 810108757115; its November 2 retail model field does not confirm NB303N. Match the actual received camera, stand and complete parts to their applicable instructions.",
+      "Check the trial length and which Nanit Insights features require a paid plan afterward",
+      "Measure floor space, plan safe cord routing, and compare Wi-Fi privacy comfort against local monitors"
+    ],
+    "updatedAt": "November 2, 2026",
+    "editorialSections": [
+      {
+        "heading": "The historical bundle is not the current store selection",
+        "body": "The old Nanit Pro URL redirects to a current monitor page that separates mount and camera-only/camera-plus-display choices. It does not identify the supplied parts of historical Essentials ASIN B0FMZ3H8SB. Do not assume an added display or the Sound + Light Machine is included with a different selection. A connected display also does not turn an account-based Wi-Fi system into a local radio monitor."
+      },
+      {
+        "heading": "Separate core viewing, paid history and the renewal quote",
+        "body": "Nanit retains core live view, background audio and alerts without Insights. Event clips, continuous video history, analytics and caregiver entitlements need their own plan check. The older support comparison is not the actual current renewal bill. Record the selected configuration, trial end, billing period and renewal quote before paying for a feature; keep core viewing alone when it meets the task."
+      },
+      {
+        "heading": "Check the actual account and outage path",
+        "body": "Nanit requires multi-factor authentication. Use named caregivers, review their permissions and remove obsolete access. Its Breathing Motion outage article describes particular camera-power and local-network states, not a guarantee that all video, saved footage and remote alerts work offline. No security or clinical guarantee follows from these manufacturer descriptions."
+      },
+      {
+        "heading": "Keep placement and purchase holds separate",
+        "body": "Follow the exact mount instructions. Keep cords at least 3 feet from every part of the sleep environment and out of reach, and never place a monitor inside or on the crib edge. Monitoring does not replace direct care or safe sleep practices. The historical Essentials purchase remains paused; the separately named camera-and-floor-stand offer has its own identity and buying checks."
+      },
+      {
+        "heading": "A current camera-and-floor-stand option",
+        "body": "The separate selected Amazon option is B0FTSL4FXJ, Camera & Floor Stand, UPC 810108757115. The November 2, 2026 model field uses that package description and does not establish NB303N or a particular camera regulatory revision. This does not by itself show that the item is incorrect. It is not the old Essentials bundle, the stand accessory alone or the eight-inch-display package. Confirm the actual received camera and stand labels, complete parts, power adapter and applicable base instructions. The currently linked squared-base guide covers height adjustment, covered-cord routing and optional wall security only for a matching stand; do not apply it to a different base. Account setup, network access and any renewing Insights plan remain separate decisions. Keep a suitable existing monitor when its viewing and caregiver workflow already meet the need."
+      }
+    ]
+  },
+  "homeoffice:flexispot-e7-mini-standing-desk": {
+    "updatedAt": "November 2, 2026",
+    "purchaseAlternatives": [
+      "ergear-egesd5b-black-fixed-foot-desk-retailer-alternative"
+    ],
+    "summary": "FlexiSpot E7 Mini dimensions, height range, load rating, presets, and the fit checks that matter in a bedroom, closet office, or narrow workstation. The original model has no verified Amazon purchase here; EGESD5B Black is a separately named fixed-foot option only when its own 47.2 × 23.6-inch footprint and 28.3–46.5-inch adjustment meet the task.",
+    "purchaseCheck": "The original B0F9X3FDYY identifies a HUANUO desk, not E7 Mini, so the original purchase remains paused. The separate fixed-foot EGESD5B Black has a 47.2 × 23.6-inch top and documented 28.3–46.5-inch adjustment. Skip it if the Mini’s narrower top or lower position is essential. Confirm its controller: the listing says four presets, while the manual shows three stored heights.",
+    "editorialSections": [
+      {
+        "heading": "What this FlexiSpot E7 Mini guide is based on",
+        "body": "This is a manufacturer-documentation guide, not a physical stability or noise test. The historical Amazon ASIN identifies a different HUANUO desk and remains paused. Use the exact FlexiSpot top/frame information as a reference; the separately named ErGear option has its own dimensions,controller and limits."
+      },
+      {
+        "heading": "The Mini is a different footprint, not just a shorter E7",
+        "body": "FlexiSpot's current page disagrees with itself: its comparison shows 31.5–40-inch desktop widths, its specification table shows 31.5–45 inches, and its selector includes 32×24 and 42×24-inch tops. Check the chosen top and frame together; do not treat 40 inches as a verified maximum or transfer standard E7 specifications to the Mini."
+      },
+      {
+        "heading": "Measure the complete room, not only the desktop",
+        "body": "Tape the proposed desktop footprint on the floor or wall, then add chair pullout, door swing, closet access, baseboard clearance, and a usable walking path. Also locate the outlet. A narrow desk that fits the wall can still fail if the chair blocks the room or power cables stretch during height changes."
+      },
+      {
+        "heading": "Read 22.8–48.4 inches as frame height",
+        "body": "FlexiSpot lists the E7 Mini's height range without the desktop. Add the thickness of the top to estimate the real keyboard surface, then compare that result with relaxed seated and standing elbow height. This is especially important for shorter users, because a thick top can make the lowest working position higher than expected."
+      },
+      {
+        "heading": "A 352-pound rating does not create usable surface area",
+        "body": "The listed capacity provides generous headroom, but a compact top remains a compact top. A laptop plus one monitor is the natural layout. Two large displays, speakers, a printer, and a dock can overwhelm the surface even when their combined weight is far below the frame rating."
+      },
+      {
+        "heading": "Plan the monitor arm and cables together",
+        "body": "A monitor arm can recover valuable depth, but its clamp needs a flat underside area that does not conflict with frame rails or the cable tray. Route power and display cables with enough slack for the full lift range, test both memory positions, and make sure no connector carries tension at maximum height."
+      },
+      {
+        "heading": "Who should skip the E7 Mini",
+        "body": "Choose a larger standing desk if you need two large monitors without arms, deep document space, a printer, substantial speakers, or several under-desk accessories. If you rarely change posture, a simple fixed compact desk may also provide more surface value with less mechanical complexity."
+      },
+      {
+        "heading": "A separately named stationary option, with different limits",
+        "body": "The separate ErGear EGESD5B Black can suit a stationary workstation if its actual 47.2 × 23.6-inch top and documented 28.3–46.5-inch adjustment meet both working positions. It has fixed feet and does not preserve the Mini’s narrow desktop choices or lower frame setting. Skip it when the measured space or seated height needs those Mini features. The listing advertises four presets while the manual shows three stored heights; confirm the supplied controller."
+      }
+    ],
+    "sources": [
+      {
+        "name": "FlexiSpot E7 Mini product page",
+        "url": "https://www.flexispot.com/small-standing-desk-e7-mini",
+        "note": "Official desktop range, frame height, load capacity, frame design, presets, compact-use cases, cable tray, and warranty information."
+      },
+      {
+        "name": "ErGear EGESD5B Rev06 assembly and controller manual",
+        "url": "https://m.media-amazon.com/images/I/C1l2n7xoGPL.pdf",
+        "note": "ErGear Rev06 includes EGESD5B. Assembly drawings show fixed feet and a split top; three stored heights differ from the current four-preset listing claim. Match the supplied controller."
+      },
+      {
+        "name": "Amazon ErGear EGESD5B Black B0B41YH9B6",
+        "url": "https://www.amazon.com/dp/B0B41YH9B6",
+        "note": "Black nominal 48×24 selection, EGESD5B model, regular-price offer and expanded returns observed October 31, 2026 for US 10001. Recheck actual dimensions, supplied controller and condition."
+      }
+    ],
+    "evidence": [
+      "The historical Amazon reference B0F9X3FDYY now names a HUANUO 32×19-inch desk, not a FlexiSpot E7 Mini; that link stays paused. Use FlexiSpot's exact Mini top/frame dimensions as a reference and confirm the selected configuration. The maker's 31.5–40 and 31.5–45-inch desktop tables disagree; capacity does not establish room fit or raised stability.",
+      "Measure desktop width and depth together with wall clearance, chair pullout, closet access, and the room's walking path.",
+      "Add the actual desktop thickness to the frame height when checking seated and standing keyboard position.",
+      "Check monitor-arm clamp depth against the frame rails and cable tray before choosing accessories.",
+      "Confirm current retailer return and warranty terms because an Amazon offer may differ from a direct-brand purchase."
+    ]
+  },
+  "homeoffice:uplift-v3-standing-desk": {
+    "updatedAt": "November 2, 2026",
+    "purchaseAlternatives": [
+      "ergear-egesd5b-black-fixed-foot-desk-retailer-alternative"
+    ],
+    "summary": "UPLIFT V3 frame dimensions, desktop range, height, capacity, cable management, and the trade-offs versus a compact standing desk. The original model has no verified Amazon purchase here; EGESD5B Black is a separately named fixed-foot option only when its own 47.2 × 23.6-inch footprint and 28.3–46.5-inch adjustment meet the task.",
+    "purchaseCheck": "UPLIFT V3 remains a configurable reference without a verified Amazon offer here. The separate fixed-foot EGESD5B Black has a 47.2 × 23.6-inch top and documented 28.3–46.5-inch adjustment. Skip it when the required surface, lower position or configuration exceeds those limits; UPLIFT’s load and warranty do not transfer. Confirm its controller: the listing says four presets, while the manual shows three stored heights.",
+    "editorialSections": [
+      {
+        "heading": "This is the larger-workstation alternative",
+        "body": "UPLIFT lists the V3 frame for desktops from 42 to 80 inches wide. That makes it much more suitable than the E7 Mini for two monitors, speakers, documents, and a larger docking setup, but it also rules it out for some closet offices and very narrow bedroom walls."
+      },
+      {
+        "heading": "Read the height with the selected desktop",
+        "body": "The current configurator describes 22.6–48.7 inches. Verify the chosen desktop and its thickness before comparing the finished surface with relaxed seated and standing elbow height. The older bare-frame range is not being treated as a fresh measurement."
+      },
+      {
+        "heading": "UPLIFT V3 versus FlexiSpot E7 Mini",
+        "body": "Compare the exact E7 Mini top with the exact V3 configuration. FlexiSpot currently offers compact 32×24 and 42×24-inch options, so 42 inches alone does not distinguish the models. Choose by usable depth, minimum surface height, frame clearance, and the equipment that must fit."
+      },
+      {
+        "heading": "Who should skip it",
+        "body": "Skip the V3 when the room cannot preserve chair pullout and walking space around a 42-inch-or-larger top. A fixed desk may also be better when height adjustment will rarely be used, while a compact frame is the cleaner choice for a closet office."
+      },
+      {
+        "heading": "Check stability with the actual layout",
+        "body": "Monitor-arm reach, desktop material, floor level and a raised frame all affect movement. A load rating is not a wobble test. Keep heavy equipment within the exact configured desk instructions and preserve cable slack through the full lift range."
+      },
+      {
+        "heading": "A separately named stationary option, with different limits",
+        "body": "ErGear EGESD5B Black is a separate stationary option when a 47.2 × 23.6-inch top and documented 28.3–46.5-inch adjustment meet the equipment and both working positions. Its fixed feet and supplied configuration do not inherit UPLIFT’s desktop choices, load rating or warranty. Keep the UPLIFT configuration decision separate if a larger surface or lower position is necessary. The listing advertises four presets while the manual shows three stored heights; confirm the supplied controller."
+      }
+    ],
+    "sources": [
+      {
+        "name": "UPLIFT V3 Standing Desk",
+        "url": "https://www.upliftdesk.com/2-leg-standing-desk/",
+        "note": "Official frame dimensions, supported desktop range, height, capacity, speed, noise, cable management, certifications, and warranty information."
+      },
+      {
+        "name": "ErGear EGESD5B Rev06 assembly and controller manual",
+        "url": "https://m.media-amazon.com/images/I/C1l2n7xoGPL.pdf",
+        "note": "ErGear Rev06 includes EGESD5B. Assembly drawings show fixed feet and a split top; three stored heights differ from the current four-preset listing claim. Match the supplied controller."
+      },
+      {
+        "name": "Amazon ErGear EGESD5B Black B0B41YH9B6",
+        "url": "https://www.amazon.com/dp/B0B41YH9B6",
+        "note": "Black nominal 48×24 selection, EGESD5B model, regular-price offer and expanded returns observed October 31, 2026 for US 10001. Recheck actual dimensions, supplied controller and condition."
+      }
+    ]
+  },
+  "homeoffice:branch-ergonomic-chair": {
+    "updatedAt": "November 2, 2026",
+    "purchaseAlternatives": [
+      "hon-ignition-2-0-chair"
+    ],
+    "summary": "Branch lists seven years for Ergonomic Chair components and three for fabric. Compare fit, authorized-seller proof and the $40 direct-purchase chair return fee before ordering. The old Branch Amazon link remains paused; HON Ignition2.0 Black is a separately named chair to compare by its actual model,seat material,dimensions,included controls and seller terms.",
+    "purchaseCheck": "The former Branch ASIN B0GWGK4JFK still returns Page Not Found; the original Amazon link stays paused. Ergonomic Chair, Lite and Pro are different models. Measure seat and arm fit, confirm seller warranty eligibility and keep packaging. Branch's direct 30-day policy deducts $40 per chair; that is not the Amazon seller's return policy. The selected Black HON Ignition2.0 B06Y3PGPR2 has conflicting metadata: ModelHONI2MM2AMC10BT, PartHONI2M2AMLC10TK and two listed UPCs195540834045/888206730743. Confirm the actual supplied model,seat material,seat dimensions and included controls before choosing. Older I2M2 seat,dimension and care instructions do not establish the MM2 configuration; follow the received model/material instructions. The family control sheet does not promise every illustrated control.",
+    "editorialSections": [
+      {
+        "heading": "Fit before features",
+        "body": "Branch lists eight adjustment points and a suggested 5'2\"–6'2\" user range, but body proportions vary. Set seat depth so the front edge does not press behind the knees and keep shoulders relaxed at the armrests."
+      },
+      {
+        "heading": "What the mid-range price buys",
+        "body": "The chair adds adjustable seat depth, lumbar support, tilt, height, tension, and removable 3D arms without entering premium contract-chair pricing. That is meaningful only if those ranges fit the user."
+      },
+      {
+        "heading": "Seven years for chair components, three for fabric",
+        "body": "Branch's current policy lists seven years for Ergonomic Chair parts and components and three years for fabric. Normal wear is excluded. Branch's policy says direct purchases do not need activation, while purchases from an authorized third party such as Amazon need registration or proof of purchase. Coverage is for the original customer in the continental United States or Canada and is not transferable, so keep the order record and confirm the seller is authorized."
+      },
+      {
+        "heading": "A 30-day return is not a free chair trial",
+        "body": "Branch's direct-purchase policy requires a like-new product in its original packaging within 30 days and currently deducts $40 per chair for return shipping. An Amazon purchase follows the live listing's seller and return terms instead. Check the applicable path before assembly and keep every insert until fit is proven."
+      },
+      {
+        "heading": "A separately named HON chair when the controls and fit qualify",
+        "body": "The selected Black HON Ignition2.0 B06Y3PGPR2 has conflicting metadata: ModelHONI2MM2AMC10BT, PartHONI2M2AMLC10TK and two listed UPCs195540834045/888206730743. Confirm the actual supplied model,seat material,seat dimensions and included controls before choosing. Older I2M2 seat,dimension and care instructions do not establish the MM2 configuration; follow the received model/material instructions. The family control sheet does not promise every illustrated control. It does not inherit Branch’s seven-year components/three-year fabric terms or direct-store return fee. Keep a chair that supports the required seated position; uncertain fit or missing controls is a reason to choose another configuration."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Branch Ergonomic Chair",
+        "url": "https://www.branchfurniture.com/products/ergonomic-chair",
+        "note": "Official adjustment points, user range, certification, capacity, and current product warranty."
+      },
+      {
+        "name": "Branch warranty policy",
+        "url": "https://www.branchfurniture.com/pages/warranty",
+        "note": "Official coverage window, purchase-channel, proof-of-purchase, registration, geography, transfer, and exclusion terms."
+      },
+      {
+        "name": "Branch returns policy",
+        "url": "https://www.branchfurniture.com/pages/returns",
+        "note": "Official direct-purchase return window, packaging condition, chair return fee, damage reporting, and exclusion terms."
+      },
+      {
+        "name": "HON Ignition 2.0 functionality guide",
+        "url": "https://www.hon.com/sites/hon.com/files/ignition-2-task-seating-functionality-guide.pdf",
+        "note": "Official control, adjustment, lumbar, and fit-function reference for the Ignition 2.0 family."
+      },
+      {
+        "name": "HON warranty",
+        "url": "https://www.hon.com/warranty",
+        "note": "Official warranty scope, component terms, exclusions, geography, and dealer-service path."
+      },
+      {
+        "name": "Exact US Amazon selection B06Y3PGPR2",
+        "url": "https://www.amazon.com/dp/B06Y3PGPR2",
+        "note": "November 1, 2026, US 10001: exact selection, New offer and named seller observed. Visible return label recorded; detailed eligibility and exceptions were not fully expanded for this selection. Recheck condition, package and live terms."
+      },
+      {
+        "name": "HON supplied functionality sheet",
+        "url": "https://m.media-amazon.com/images/I/91OoavuyZWL.pdf",
+        "note": "One-page control guide read; explicitly says the chair may not include all illustrated features. Not an exact retail configuration or comfort test."
+      }
+    ]
+  },
+  "homeoffice:hon-ignition-2-0-chair": {
+    "purchaseCheck": "The selected Black HON Ignition2.0 B06Y3PGPR2 has conflicting metadata: ModelHONI2MM2AMC10BT, PartHONI2M2AMLC10TK and two listed UPCs195540834045/888206730743. Confirm the actual supplied model,seat material,seat dimensions and included controls before choosing. Older I2M2 seat,dimension and care instructions do not establish the MM2 configuration; follow the received model/material instructions. The family control sheet does not promise every illustrated control. Verify seat glide,lumbar,arms,tilt,desk fit and seller warranty/return eligibility. Keep proof of purchase and the actual product label.",
+    "editorialSections": [
+      {
+        "heading": "Lifetime coverage has shorter component terms",
+        "body": "HON lists lifetime coverage for eligible defects, with specific limits: seating controls, pneumatic cylinders and 4-Way Stretch Mesh are covered for 12 years, and seating textiles for five. Ordinary wear is excluded. Identify the exact material and component before assuming a lifetime term applies to it."
+      },
+      {
+        "heading": "This is a configuration guide, not a comfort test",
+        "body": "HON's Ignition 2.0 family includes multiple control and option combinations. The official functionality guide explains possible adjustments, while the linked Amazon ASIN identifies the version being sold. Confirm that the selected listing includes the seat-depth, arm, lumbar, and tilt controls required before comparing price."
+      },
+      {
+        "heading": "Fit the seat before judging the back",
+        "body": "Follow the received chair’s instructions and use only the controls actually included. Set height so the feet are supported. If the confirmed configuration includes seat-depth adjustment, set it so the front edge does not press behind the knees. Adjust lumbar support and arms only if those controls are included, after the seat is stable; otherwise extra controls can mask a poor base fit."
+      },
+      {
+        "heading": "Keep the seller and serial label visible",
+        "body": "HON routes warranty service through its dealer path and uses the product label to identify model and production details. Confirm the Amazon seller's warranty path, keep proof of purchase, and do not remove the underside serial label."
+      }
+    ],
+    "updatedAt": "November 2, 2026"
+  },
+  "homeoffice:ergear-48x24-electric-standing-desk": {
+    "rating": 0,
+    "summary": "The original ErGear48×24 wheeled listing remains paused after dated unavailable observations. This guide keeps its mobility and room-fit checks separate from the named EGESD5B Black fixed-foot option for readers who do not need the desk to roll.",
+    "bestFor": "An original wheeled-desk reference; compare the separate fixed-foot option only for stationary use",
+    "pros": [
+      "A compact workstation checklist separates room fit, seated height and cable travel",
+      "A named fixed-foot alternative can be compared when mobility is unnecessary"
+    ],
+    "editorialSections": [
+      {
+        "heading": "The wheels change desk height and stability",
+        "body": "Casters add height and another mechanical connection below the frame. If mobility is essential, confirm the exact rolling configuration, usable keyboard height and caster instructions. The original wheeled ASIN is unavailable in the current US check; the fixed-foot option named below is not a rolling substitute."
+      },
+      {
+        "heading": "Twenty-four inches of depth needs a screen plan",
+        "body": "A stock monitor stand can consume much of a shallow top. Measure the actual work surface and viewing position. A compatible arm also needs an appropriate underside, clamp clearance and permitted load distribution; a whole-desk load rating does not establish monitor-arm compatibility."
+      },
+      {
+        "heading": "Original listing and current buying option are separate",
+        "body": "The original B0B6JJKSNM page still describes a Black 48×24-inch desk with wheels but showed Currently unavailable for US10001 on October 31. That is an availability observation, not discontinuation evidence. The independent B0B41YH9B6 option is ErGear EGESD5B Black with fixed leveling feet. Its nominal 48×24 selection lists a 47.2×23.6-inch top. Confirm the actual dimensions rather than transferring the old wheeled desk’s measurements."
+      },
+      {
+        "heading": "A fixed-foot option when the desk stays in one place",
+        "body": "For a workstation that will stay in one place, compare ErGear EGESD5B Black with fixed leveling feet. Its nominal 48 × 24-inch selection lists an actual 47.2 × 23.6-inch top and a documented 28.3–46.5-inch adjustment range. Check both working heights and the room footprint before buying. It does not roll, so skip it when wheels are essential. The listing advertises four presets while the manual shows three stored heights; confirm the supplied controller."
+      },
+      {
+        "heading": "Keep, wait or buy for the actual room",
+        "body": "Keep a desk that already supports the needed working positions. Wait for a documented mobile option if rolling is required. If choosing EGESD5B, check the supplied adapter and instructions, safe cable travel and current condition/seller/returns. October 31’s selected regular offer had Amazon fulfillment and an expanded free 30-day return option; the separate Prime price required eligibility. Neither observation guarantees a received configuration or future availability."
+      }
+    ],
+    "updatedAt": "November 2, 2026"
+  },
+  "homeoffice:satechi-dual-vertical-laptop-stand": {
+    "rating": 0,
+    "scores": [],
+    "updatedAt": "November 2, 2026"
+  },
+  "baby:nanit-camera-floor-stand-nb303n-retailer-alternative": {
+    "specs": {
+      "ASIN": "B0FTSL4FXJ",
+      "Selection": "Camera & Floor Stand; Pro edition",
+      "UPC": "810108757115",
+      "Current retail model field": "November 2, 2026 selected listing: Camera & Floor Stand; UPC 810108757115. The current field does not confirm NB303N; match the received camera and stand labels and their applicable instructions."
+    },
+    "purchaseCheck": "Camera + floor stand B0FTSL4FXJ, UPC 810108757115; the November 2 retail model field says Camera & Floor Stand and does not confirm NB303N. Match the received camera and stand labels to the applicable supplied instructions. No eight-inch display or Sound + Light is assumed. Confirm condition, complete parts, cord clearance, app/Wi-Fi setup and renewing plan terms."
+  },
+  "baby:bob-revolution-flex30-u221947-separate-option": {
+    "verdict": "Confirm the complete Single Graphite Black U221947 stroller kit and all parts required by its supplied serial-matched guide. The listing’s components field names a canopy and is not a complete packing list. Consider it when a jogging route and the child’s readiness justify this larger stroller. BOB recommends jogging only over eight months, with individual pediatric guidance. Match the supplied serial-specific guide, secure wheels, lock the front wheel in jog mode, use the upright seat, fitted harness and wrist strap, and inspect tire pressure before use. Never jog with an infant car seat attached.",
+    "purchaseCheck": "Confirm the complete Single Graphite Black U221947 stroller kit and all parts required by its supplied serial-matched guide. The listing’s components field names a canopy and is not a complete packing list. Consider it when a jogging route and the child’s readiness justify this larger stroller. BOB recommends jogging only over eight months, with individual pediatric guidance. Match the supplied serial-specific guide, secure wheels, lock the front wheel in jog mode, use the upright seat, fitted harness and wrist strap, and inspect tire pressure before use. Never jog with an infant car seat attached.",
+    "specs": {
+      "ASIN": "B0829PMJ8D",
+      "Selected configuration": "BOB Revolution Flex 3.0 — Single Graphite Black U221947",
+      "Return check": "November 2, 2026 US10001: the selected offer was sold and shipped by CapitalKidz, not Amazon.com. Expanded policy showed eligible November 1–December 31, 2026 purchases returnable until January 31, 2027, with at least one free return method. Current order eligibility and exceptions apply."
+    }
+  },
+  "baby:babytrend-wg01d94b-separate-option": {
+    "verdict": "Confirm the complete Liberty Midnight WG01D94B wagon kit and all parts required by its supplied WG01XXXB instructions. The listing gives model WG01D94B and part FETEGT32; match the received label. Its components field names a canopy and is not a complete packing list. Consider it for supervised walking with children at least six months old who can sit upright unassisted. Each seat is limited to 55 lb and the complete wagon including accessories to 110 lb. Follow the matching WG01XXXB assembly, secure both wheel sets and frame locks, fit each harness, and set both rear brakes when stationary. Never run or jog with it.",
+    "purchaseCheck": "Confirm the complete Liberty Midnight WG01D94B wagon kit and all parts required by its supplied WG01XXXB instructions. The listing gives model WG01D94B and part FETEGT32; match the received label. Its components field names a canopy and is not a complete packing list. Consider it for supervised walking with children at least six months old who can sit upright unassisted. Each seat is limited to 55 lb and the complete wagon including accessories to 110 lb. Follow the matching WG01XXXB assembly, secure both wheel sets and frame locks, fit each harness, and set both rear brakes when stationary. Never run or jog with it.",
+    "specs": {
+      "ASIN": "B09HJTBQJF",
+      "Selected configuration": "Baby Trend Expedition 2-in-1 — Liberty Midnight WG01D94B",
+      "Return check": "November 2, 2026 US 10001: the selected Amazon.com offer showed eligible November 1–December 31, 2026 purchases returnable until January 31, 2027, with at least one free return method. Current order eligibility and exceptions apply.",
+      "Retail field conflict": "November 2, 2026 selected listing: Model WG01D94B, Part FETEGT32, UPC 090014033187. Confirm the complete wagon and applicable supplied instructions; the canopy entry does not establish accessory-only contents or a full packing list."
+    }
+  },
+  "baby:skiphop-moby-grey-235060-separate-option": {
+    "updatedAt": "November 2, 2026",
+    "summary": "A historical MOBY Grey 235060 reference whose checked US offer is currently unavailable. Wave is a separate model with different stages and attachments.",
+    "verdict": "Keep a suitable documented bathing arrangement. Do not rely on an older MOBY price or return observation as an active offer, or use Wave instructions to set up MOBY.",
+    "cons": [
+      "The exact Grey 235060 offer was unavailable in the November 2 US10001 check. No restock, discontinuation or support-end conclusion follows; Wave and the Blue MOBY selection are separate identities."
+    ],
+    "specs": {
+      "ASIN": "B07FK7BG98",
+      "Selection": "MOBY Grey Tub, model/part 235060, UPC816523025075",
+      "Return check": "No current orderable Grey 235060 offer was established; the older 90-day observation is not a current return entitlement."
+    },
+    "evidence": [
+      "November 2, 2026 US10001: Grey 235060, UPC816523025075, B07FK7BG98 showed Currently unavailable.",
+      "MOBY’s own stage/clip instructions and supplied model revision need to match; Wave’s four-stage instructions do not establish MOBY setup."
+    ],
+    "purchaseCheck": "The checked MOBY Grey offer is unavailable. Do not buy a Blue variation or Wave as though it were the same selected item; independently match any future offer and supplied instructions.",
+    "sources": [
+      {
+        "name": "Original MOBY stage and sling instructions attached to the selected listing",
+        "url": "https://m.media-amazon.com/images/I/71Y3iZJQxIL.pdf",
+        "note": "Complete one physical page, 235465.02, text and all diagrams read. The warning box restricts use to an adult tub and excludes sinks; follow that stricter warning rather than the broader flat-surface sentence. Supplied grey-model revision remains to match."
+      },
+      {
+        "name": "Skip Hop current product-instruction library",
+        "url": "https://www.carters.com/cs-instructions",
+        "note": "Lists MOBY 3-Stage Tub. Its current 235060-02 original was not fully verified in this review; the selected retailer's original is separately identified."
+      }
+    ]
+  },
+  "baby:chicco-lullago-anywhere-lyric-separate-option": {
+    "sources": [
+      {
+        "name": "Chicco exact LullaGo Anywhere Lyric06079061710070",
+        "url": "https://www.chiccousa.com/shop-our-products/on-sale/lullago-anywhere-bassinet---lyric/06079061710070.html",
+        "note": "Current exact manufacturer item identifies Lyric06079061710070 as LullaGo Anywhere, separately from LE/SE, and links its Product Manual. Usage and care sections checked; no certification or received-unit clearance inferred."
+      },
+      {
+        "name": "Lyric maker-linked LullaGo Anywhere original instructions",
+        "url": "https://www.chiccousa.com/on/demandware.static/-/Sites-chicco_catalog/default/dw5fcf7f05/images/products/Manuals/lullago/Chicco-LullaGo-Anywhere-Instruction-Manual.pdf",
+        "note": "IS0186E_01, September 2019. English text on PDF pages 1–7 and the assembly/disassembly diagrams describe the closed-side, freestanding LullaGo Anywhere setup. Stop use when the baby reaches 20 lb or begins pushing up on hands and knees, whichever comes first. Keep the sides intact; no adult-bed attachment mode. Match the supplied instructions and complete original parts."
+      },
+      {
+        "name": "Amazon selected LullaGo Anywhere Lyric",
+        "url": "https://www.amazon.com/dp/B0FBGY1QXD",
+        "note": "November 2, 2026, US 10001: independent direct page identifies Lyric, model/part 06079061710070, UPC 049796613957 and one unit; Buy New shipped and sold by Amazon.com. Expanded holiday summary: eligible November 1–December 31, 2026 purchases returnable until January 31, 2027, with at least one free method. Current policy and eligibility apply; Amazon Resale is a separate Used offer."
+      }
+    ]
+  },
+  "homeoffice:fellowes-60cs-4606001-single-separate-option": {
+    "sources": [
+      {
+        "name": "Fellowes60Cs North American original instructions",
+        "url": "https://assets.fellowes.com/manuals/60Cs_406853_RevE_3L_NA_052517_SinglePages.pdf",
+        "note": "Part406853 RevE,2017: English physical2–3 text and all diagrams visually reviewed; cover/rear identifier text checked. 10-sheet manual feed,6min run/20min cool and recommended100sheets/day. Not a110-sheet auto-feed model."
+      },
+      {
+        "name": "Fellowes US60Cs4606001 specification sheet",
+        "url": "https://apps.fellowes.com/promos/dealers/shredders/sellsheets/household/2019_Shredder_60Cs.pdf",
+        "note": "One-page US sheet text read: model4606001, P-4,4×40mm,10sheet manual feed and6on/20off. Historical manufacturer sheet, not current retail stock or received-unit certification."
+      },
+      {
+        "name": "Amazon selected60Cs4606001 single unit",
+        "url": "https://www.amazon.com/dp/B00SY7XDP0",
+        "note": "November 2, 2026, US 10001: model 4606001, UPC 043859642830, one unit; Buy New Fast and Precise by Staples self-shipped. Expanded holiday return eligible through January 31, 2027; shipping fee may apply, not free. Used offer and model CRC46062 two-unit listing are separate."
+      }
+    ]
+  }
+}

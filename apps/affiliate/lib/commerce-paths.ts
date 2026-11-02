@@ -1,11 +1,14 @@
 import { merchant14TaskOptions } from "./merchant14-task-options";
 import { findProduct, findRoundup, siteProducts } from "./content";
-import { amazonAsinAffiliateUrl } from "./affiliate-tracking";
+import { amazonAsinAffiliateUrl, applySiteAffiliateTracking } from "./affiliate-tracking";
 import type { Guide, Product, Roundup, SiteKey, Tool } from "./types";
 import { findAmazonFamilyProduct } from "./amazon-family-products";
 import { merchant20TaskAlternatives } from "./merchant20-alternatives";
 import { merchant21Alternatives } from "./merchant21-alternatives";
 import { merchant13TaskOptions } from "./merchant13-task-options";
+import { additionalCommerceProducts } from "./additional-commerce-products";
+import { applyReviewedProductContent } from "./reviewed-product-content";
+import { additionalFamilyCommerceView } from "./additional-family-commerce-views";
 
 const okinRollingDeskAlternative: Product = {
   site: "homeoffice",
@@ -116,7 +119,7 @@ const nanitCameraFloorStandAlternative: Product = {
   evidence: ["Exact Camera & Floor Stand selection, NB303N and UPC 810108757115 observed on Amazon October 30, 2026", "Current official squared-base instructions read separately; supplied base, kit and camera regulatory revision are not certified from the listing"],
   purchaseCheck: "Camera + floor stand B0FTSL4FXJ; no eight-inch display or Sound + Light assumed. Confirm selected condition, supplied stand instructions, cord clearance, app/Wi-Fi setup and renewing plan terms.",
   sources: [{ name: "Nanit current camera and mount choices", url: "https://www.nanit.com/products/smart-baby-monitor", note: "Current camera-only versus display and floor-stand versus wall-mount choices; hardware and plan terms are separate." }, { name: "Nanit squared-base floor-stand instructions", url: "https://cdn.shopify.com/s/files/1/1354/7173/files/Floor-Stand-With-Square-Based-User-Guide.pdf?v=1680283334", note: "Official currently linked guide: complete English physical pages 1–26 and setup diagrams 4–23 read. Applies to squared-base Pro stands; confirm supplied version. It does not certify the received kit or safe placement in every nursery." }, { name: "Amazon camera and floor stand B0FTSL4FXJ", url: "https://www.amazon.com/dp/B0FTSL4FXJ", note: "Exact NB303N package, Amazon.com offer and expanded free 90-day refund/replacement observed October 30, 2026 for US 10001. Recheck condition, contents, delivery and returns." }],
-  offers: [{ merchant: "Amazon US", url: amazonAsinAffiliateUrl("baby", "B0FTSL4FXJ"), label: "Check Nanit camera + floor stand on Amazon", priceNote: "Confirm B0FTSL4FXJ, Camera & Floor Stand NB303N, selected condition and current seller terms. Display, sound machine and paid-plan renewal are separate checks." }],
+  offers: [{ merchant: "Amazon US", url: amazonAsinAffiliateUrl("baby", "B0FTSL4FXJ"), label: "Check Nanit camera + floor stand on Amazon", priceNote: "Confirm B0FTSL4FXJ, Camera & Floor Stand, UPC 810108757115 and the actual received model and complete parts. Current retail details do not establish NB303N. Check condition, supplied stand instructions and current seller terms; display, sound machine and renewing plans are separate." }],
 };
 
 const ergearFixedDeskAlternative: Product = {
@@ -308,12 +311,14 @@ const babybjornSmartPottyAlternative: Product = {
 // These are intentionally excluded from editorial discovery, but their offers
 // are rendered as explicitly labelled alternatives on selected pages.
 export function explicitCommerceAlternatives() {
-  return [okinRollingDeskAlternative, omotonDualStandAlternative, nanitCameraFloorStandAlternative, ergearFixedDeskAlternative, omniBreezeBloomsAlternative, babybjornSmartPottyAlternative, ...merchant20TaskAlternatives.map(({ product }) => product), ...merchant21Alternatives.map(({ product }) => product), ...merchant13TaskOptions.map(({ product }) => product), ...merchant14TaskOptions.map(({ product }) => product)];
+  return [okinRollingDeskAlternative, omotonDualStandAlternative, nanitCameraFloorStandAlternative, ergearFixedDeskAlternative, omniBreezeBloomsAlternative, babybjornSmartPottyAlternative, ...merchant20TaskAlternatives.map(({ product }) => product), ...merchant21Alternatives.map(({ product }) => product), ...merchant13TaskOptions.map(({ product }) => product), ...merchant14TaskOptions.map(({ product }) => product), ...additionalCommerceProducts]
+    .map((product) => applySiteAffiliateTracking(applyReviewedProductContent(product)));
 }
 
 export function findCommerceProduct(site: SiteKey, slug: string) {
   return findProduct(site, slug)
-    ?? explicitCommerceAlternatives().find((product) => product.site === site && product.slug === slug);
+    ?? explicitCommerceAlternatives().find((product) => product.site === site && product.slug === slug)
+    ?? additionalFamilyCommerceView(site, slug);
 }
 
 function explicitGuideAlternative(site: SiteKey, guide: Guide) {
@@ -394,7 +399,14 @@ export function reviewCommerceProduct(site: SiteKey, product: Product) {
 
 export function roundupCommerceProduct(site: SiteKey, roundup: Roundup) {
   if (roundup.purchaseFlow === "task-links") return;
-  return firstPurchasable(roundup.productSlugs.map((slug) => findProduct(site, slug)))
+  const comparisonProducts = roundup.productSlugs.map((slug) => findProduct(site, slug));
+  if (roundup.purchaseAlternatives !== undefined) {
+    return firstPurchasable([
+      ...comparisonProducts,
+      ...roundup.purchaseAlternatives.map((slug) => findCommerceProduct(site, slug)),
+    ]);
+  }
+  return firstPurchasable(comparisonProducts)
     ?? explicitRoundupAlternative(site, roundup);
 }
 

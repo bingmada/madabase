@@ -1,0 +1,387 @@
+[
+  {
+    "site": "baby",
+    "productSlug": "ergobaby-omni-breeze-onyx-blooms-retailer-alternative",
+    "asin": "B0BQCPHV9J",
+    "name": "Ergobaby Omni Breeze — Onyx Blooms",
+    "label": "Omni Breeze Onyx Blooms"
+  },
+  {
+    "site": "pet",
+    "productSlug": "sherpa-original-deluxe-55231-black-medium-alternative",
+    "asin": "B000FLETX8",
+    "name": "Sherpa Original Deluxe — Black Medium 55231",
+    "label": "55231 Black M · Sherpa"
+  },
+  {
+    "site": "pet",
+    "productSlug": "sleepypod-clickit-sport-csx-black-medium-alternative",
+    "asin": "B08JQQF9YX",
+    "name": "Sleepypod Clickit Sport — Jet Black M",
+    "label": "CSX-BLK-M · Sleepypod"
+  },
+  {
+    "site": "pet",
+    "productSlug": "petlibro-polar-plaf109-black-2026-alternative",
+    "asin": "B0GRHQGDCB",
+    "name": "PETLIBRO Polar PLAF109 — Black, 2026 version",
+    "label": "PLAF109 Black 2026"
+  },
+  {
+    "site": "pet",
+    "productSlug": "birdfy-feeder1-solar-retailer-alternative",
+    "asin": "B0B56BFH7P",
+    "name": "NETVUE by Birdfy Feeder 1 — Solar",
+    "label": "Feeder 1 Solar · Birdfy"
+  },
+  {
+    "site": "pet",
+    "productSlug": "petsafe-electronic-large-ppa11-10709-alternative",
+    "asin": "B000WJ0IGA",
+    "name": "PetSafe Electronic Pet Door — Large PPA11-10709",
+    "label": "10709 Large · PetSafe"
+  },
+  {
+    "site": "pet",
+    "productSlug": "dremel-pawcontrol-7760-pet-alternative",
+    "asin": "B0DJ3JR93D",
+    "name": "Dremel PawControl 7760-PET",
+    "label": "7760-PET · Dremel"
+  },
+  {
+    "site": "pet",
+    "productSlug": "flying-pig-flying-one-purple-fp1pr-alternative",
+    "asin": "B00JV33WJ8",
+    "name": "Flying Pig Flying One — Purple FP1PR",
+    "label": "FP1PR · Flying Pig"
+  },
+  {
+    "site": "pet",
+    "productSlug": "neakasa-m1-plus-self-cleaning-litter-box",
+    "asin": "B0CSKBWBF6",
+    "name": "Neakasa M1 Plus Self-Cleaning Litter Box",
+    "label": "M1 Plus · Neakasa"
+  },
+  {
+    "site": "pet",
+    "productSlug": "furbo-360-dog-camera",
+    "asin": "B0BWN22T25",
+    "name": "Furbo 360 Dog Camera",
+    "label": "360 Dog + plan · Furbo"
+  },
+  {
+    "site": "pet",
+    "productSlug": "petsafe-automatic-ball-launcher-zty00-15968-alternative",
+    "asin": "B072J4KCVP",
+    "name": "PetSafe Automatic Ball Launcher — ZTY00-15968",
+    "label": "ZTY00-15968 · PetSafe"
+  },
+  {
+    "site": "pet",
+    "productSlug": "api-freshwater-master-kit-34-single-alternative",
+    "asin": "B000255NCI",
+    "name": "API Freshwater Master Test Kit — Single model 34",
+    "label": "34 Freshwater · API"
+  },
+  {
+    "site": "pet",
+    "productSlug": "petsafe-solvit-standard-telescoping-62305-alternative",
+    "asin": "B000RUJEUU",
+    "name": "PetSafe/Solvit Standard Telescoping Ramp — 62305",
+    "label": "62305 Standard · PetSafe"
+  },
+  {
+    "site": "pet",
+    "productSlug": "kh-original-pet-cot-medium-chocolate-100539741-alternative",
+    "asin": "B07PJ7WSQD",
+    "name": "K&H Original Pet Cot — Medium Chocolate 100539741",
+    "label": "100539741 M · K&H"
+  },
+  {
+    "site": "network",
+    "productSlug": "tp-link-deco-be63-wifi-7-mesh",
+    "asin": "B0CN8QLS4K",
+    "name": "TP-Link Deco BE63 Wi-Fi 7 Mesh System",
+    "label": "BE63 3-pack · Deco"
+  },
+  {
+    "site": "network",
+    "productSlug": "tp-link-ue302c-2-5g-usb-c-ethernet-adapter",
+    "asin": "B0DSCDGD4G",
+    "name": "TP-Link UE302C 2.5G USB-C Ethernet Adapter",
+    "label": "UE302C 2.5G · TP-Link"
+  },
+  {
+    "site": "network",
+    "productSlug": "glinet-beryl-ax-travel-router",
+    "asin": "B0BPSGJN7T",
+    "name": "GL.iNet GL-MT3000 Beryl AX Travel Router",
+    "label": "GL-MT3000 · Beryl AX"
+  },
+  {
+    "site": "smarthome",
+    "productSlug": "aranet4-home-co2-retailer-alternative",
+    "asin": "B07YY7BH2W",
+    "name": "Aranet4 HOME",
+    "label": "Aranet4 HOME"
+  },
+  {
+    "site": "smarthome",
+    "productSlug": "tapo-c210-single-camera-retailer-alternative",
+    "asin": "B09Y8TLP25",
+    "name": "Tapo C210 — single indoor camera",
+    "label": "C210 1 camera · Tapo"
+  },
+  {
+    "site": "smarthome",
+    "productSlug": "tapo-l930-5-rgbw-light-strip-alternative",
+    "asin": "B0B2KY8X4M",
+    "name": "Tapo L930-5 — 16.4 ft RGBIC + White LEDs",
+    "label": "L930-5 16.4ft · Tapo"
+  },
+  {
+    "site": "smarthome",
+    "productSlug": "orbit-62061-single-outlet-dial-timer-alternative",
+    "asin": "B004INGS8S",
+    "name": "Orbit 62061 — one-outlet dial timer",
+    "label": "62061 1-outlet · Orbit"
+  },
+  {
+    "site": "smarthome",
+    "productSlug": "x-sense-sws0a41-water-leak-detector-kit",
+    "asin": "B0DFCMJH5L",
+    "name": "X-Sense SWS0A41 Wi-Fi Water Leak Detector Kit",
+    "label": "SWS0A41 4+base · X-Sense"
+  },
+  {
+    "site": "smarthome",
+    "productSlug": "aqara-valve-controller-t1",
+    "asin": "B0DB8KS8Q3",
+    "name": "Aqara Valve Controller T1",
+    "label": "VC-X01E T1 · Aqara"
+  },
+  {
+    "site": "smarthome",
+    "productSlug": "switchbot-blind-tilt",
+    "asin": "B0BMLFZ4CP",
+    "name": "SwitchBot Blind Tilt",
+    "label": "Blind Tilt + solar"
+  },
+  {
+    "site": "smarthome",
+    "productSlug": "emporia-vue-3-home-energy-monitor",
+    "asin": "B0C79PNK84",
+    "name": "Emporia Vue 3 Home Energy Monitor",
+    "label": "EMV3A-2P-16 · Vue 3"
+  },
+  {
+    "site": "smarthome",
+    "productSlug": "tapo-s515d-us-main-satellite-kit-alternative",
+    "asin": "B0DKGXY4DL",
+    "name": "Tapo S515D KIT — US main + satellite",
+    "label": "S515D US KIT · Tapo"
+  },
+  {
+    "site": "smarthome",
+    "productSlug": "tapo-s505-two-pack-onoff-alternative",
+    "asin": "B0CBNX6Q51",
+    "name": "Tapo S505 — two single-pole switches",
+    "label": "S505 2-pack · Tapo"
+  },
+  {
+    "site": "smarthome",
+    "productSlug": "family-robot-mops-b0dgr1vdtb",
+    "asin": "B0DGR1VDTB",
+    "name": "MOVA P10 Pro Ultra — original US model",
+    "label": "P10 Pro Ultra orig. US"
+  },
+  {
+    "site": "smarthome",
+    "productSlug": "tapo-c120-single-outdoor-plug-in-alternative",
+    "asin": "B0CH45HPZT",
+    "name": "Tapo C120 — one plug-in camera",
+    "label": "C120 1 camera · Tapo"
+  },
+  {
+    "site": "smarthome",
+    "productSlug": "tapo-s505d-matter-smart-dimmer",
+    "asin": "B0C2B8SP3W",
+    "name": "Tapo S505D Matter Smart Dimmer Switch",
+    "label": "S505D 1-pack · Tapo"
+  },
+  {
+    "site": "smarthome",
+    "productSlug": "ring-alarm-five-piece-second-gen-alternative",
+    "asin": "B07ZDTXJ93",
+    "name": "Ring Alarm — 5-piece, 2nd Gen",
+    "label": "2nd Gen 5pc · Ring Alarm"
+  },
+  {
+    "site": "homeoffice",
+    "productSlug": "ergear-egesd5b-black-fixed-foot-desk-retailer-alternative",
+    "asin": "B0B41YH9B6",
+    "name": "ErGear EGESD5B Black desk (fixed feet)",
+    "label": "EGESD5B fixed · ErGear"
+  },
+  {
+    "site": "homeoffice",
+    "productSlug": "fellowes-60cs-4606001-single-separate-option",
+    "asin": "B00SY7XDP0",
+    "name": "Fellowes Powershred 60Cs — 4606001, single Black unit",
+    "label": "60Cs 4606001 · Fellowes"
+  },
+  {
+    "site": "homeoffice",
+    "productSlug": "hon-ignition-2-0-chair",
+    "asin": "B06Y3PGPR2",
+    "name": "HON Ignition 2.0 Ergonomic Chair",
+    "label": "Ignition 2.0 Black · HON"
+  },
+  {
+    "site": "homeoffice",
+    "productSlug": "omoton-black-dual-vertical-stand-retailer-alternative",
+    "asin": "B078W3QSZY",
+    "name": "OMOTON Black dual-slot stand",
+    "label": "Black dual-slot · OMOTON"
+  },
+  {
+    "site": "baby",
+    "productSlug": "chicco-bravo-trio-camden-keyfit30-separate-option",
+    "asin": "B08VPVLF95",
+    "name": "Chicco Bravo Trio — Camden 00079632920070 with KeyFit 30 + base",
+    "label": "Camden Trio + KeyFit 30"
+  },
+  {
+    "site": "baby",
+    "productSlug": "tushbaby-original-grey-separate-option",
+    "asin": "B07R4C4VFX",
+    "name": "Tushbaby Original hip seat — Grey",
+    "label": "Original Grey · Tushbaby"
+  },
+  {
+    "site": "baby",
+    "productSlug": "chicco-lullago-anywhere-lyric-separate-option",
+    "asin": "B0FBGY1QXD",
+    "name": "Chicco LullaGo Anywhere — Lyric 06079061710070",
+    "label": "Lyric · LullaGo Anywhere"
+  },
+  {
+    "site": "baby",
+    "productSlug": "safety1st-clear-view-48409-five-pack-separate-option",
+    "asin": "B00068O22S",
+    "name": "Safety 1st Clear View stove knob covers — 48409 five-pack",
+    "label": "48409 5pk · Safety 1st"
+  },
+  {
+    "site": "baby",
+    "productSlug": "tinylove-into-the-farm-to205ntf-mobile-separate-option",
+    "asin": "B0H8ZKN4CY",
+    "name": "Tiny Love 3-in-1 Take Along Mobile — Into the Farm TO205NTF",
+    "label": "TO205NTF · Tiny Love"
+  },
+  {
+    "site": "baby",
+    "productSlug": "nanit-camera-floor-stand-nb303n-retailer-alternative",
+    "asin": "B0FTSL4FXJ",
+    "name": "Nanit camera + floor stand (no display)",
+    "label": "Camera+FloorStand Nanit"
+  },
+  {
+    "site": "baby",
+    "productSlug": "skiphop-wave-4in1-white-blue-separate-option",
+    "asin": "B0DJDQMHFT",
+    "name": "Skip Hop Wave 4-in-1 Baby Bath Tub — White/Blue",
+    "label": "Wave 4-in-1 · Skip Hop"
+  },
+  {
+    "site": "homeoffice",
+    "productSlug": "anker-a9192-separate-option",
+    "asin": "B09SG2Q23M",
+    "name": "Anker 351 A9192 — Black 5 ft power strip",
+    "label": "A9192 Black 5ft · Anker"
+  },
+  {
+    "site": "baby",
+    "productSlug": "bob-revolution-flex30-u221947-separate-option",
+    "asin": "B0829PMJ8D",
+    "name": "BOB Revolution Flex 3.0 — Single Graphite Black U221947",
+    "label": "Flex 3.0 Single · BOB"
+  },
+  {
+    "site": "baby",
+    "productSlug": "babytrend-wg01d94b-separate-option",
+    "asin": "B09HJTBQJF",
+    "name": "Baby Trend Expedition 2-in-1 — Liberty Midnight WG01D94B",
+    "label": "WG01D94B · Baby Trend"
+  },
+  {
+    "site": "baby",
+    "productSlug": "graco-06710-400-separate-option",
+    "asin": "B010S7VZI0",
+    "name": "Graco Premium Foam Crib & Toddler Mattress — 06710-400",
+    "label": "06710-400 · Graco"
+  },
+  {
+    "site": "baby",
+    "productSlug": "nutribullet-nby50200-steam-blend-separate-option",
+    "asin": "B0BTFR9NZ4",
+    "name": "nutribullet Baby Steam + Blend — White/Blue NBY50200",
+    "label": "NBY50200 White/Blue"
+  },
+  {
+    "site": "baby",
+    "productSlug": "graco-06810-500-separate-option",
+    "asin": "B07Z18K282",
+    "name": "Graco Premium Contoured Changing Pad — 06810-500",
+    "label": "06810-500 · Graco"
+  },
+  {
+    "site": "baby",
+    "productSlug": "baby-jogger-city-tour-2-stroller",
+    "asin": "B0CN79NZ8J",
+    "name": "Baby Jogger City Tour 2 Stroller",
+    "label": "City Tour 2 Eco Black"
+  },
+  {
+    "site": "homeoffice",
+    "productSlug": "dell-p2425he-separate-option",
+    "asin": "B0D5RH4SS1",
+    "name": "Dell P2425HE — 23.8-inch FHD USB-C hub monitor",
+    "label": "P2425HE 23.8in · Dell"
+  },
+  {
+    "site": "baby",
+    "productSlug": "davinci-olive-m11687cm-separate-option",
+    "asin": "B0192SZGNQ",
+    "name": "DaVinci Olive glider and ottoman — Cream M11687CM",
+    "label": "M11687CM Cream · Olive"
+  },
+  {
+    "site": "homeoffice",
+    "productSlug": "rollo-x1040-separate-option",
+    "asin": "B09VF4Z2WQ",
+    "name": "Rollo Wireless — White X1040 4×6 label printer",
+    "label": "X1040 White · Rollo"
+  },
+  {
+    "site": "homeoffice",
+    "productSlug": "focusrite-solo4-separate-option",
+    "asin": "B0C5JSHP7M",
+    "name": "Focusrite Scarlett Solo 4th Gen — AMS-SCARLETT-SOLO-4G",
+    "label": "Solo 4th Gen · Focusrite"
+  },
+  {
+    "site": "baby",
+    "productSlug": "chicco-alfalite-dove-separate-option",
+    "asin": "B0D79FRB52",
+    "name": "Chicco Alfa Lite — Dove/Beige 00079656010070",
+    "label": "Alfa Lite Dove · Chicco"
+  },
+  {
+    "site": "homeoffice",
+    "productSlug": "okin-36x24-electric-standing-desk-with-wheels-retailer-alternative",
+    "asin": "B0FH4RDV1Q",
+    "name": "Okin 36×24 Electric Standing Desk with Wheels",
+    "label": "36×24 Wheels · Okin"
+  }
+]

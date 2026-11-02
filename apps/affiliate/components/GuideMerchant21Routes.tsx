@@ -3,6 +3,8 @@ import { AffiliateButton } from "./AffiliateButton";
 import { findGuide, findProduct } from "@/lib/content";
 import { merchant21Alternatives, merchant21FamilyForGuide } from "@/lib/merchant21-alternatives";
 import type { MarketKey, SiteKey } from "@/lib/types";
+import { additionalGuidePurchaseOption } from "@/lib/additional-guide-purchase-options";
+import { findCommerceProduct } from "@/lib/commerce-paths";
 
 const comparisons = [
   { family: "outdoor-security-cameras", kind: "guide", slug: "floodlight-security-cameras-buying-guide", title: "For one solar-lit event view: compare Reolink FL10B", body: "This is a separate solar floodlight camera when one serviceable position, suitable sunlight and motion-event recording meet the job. It is not the GMK four-pack, PoE or continuous recording. Review its charging, mounting and storage conditions before choosing that different format." },
@@ -13,10 +15,13 @@ const comparisons = [
 
 export function GuideMerchant21Routes({ site, slug, market }: { site: SiteKey; slug: string; market?: MarketKey }) {
   if (site !== "smarthome") return null;
+  if (additionalGuidePurchaseOption(site, slug)) return null;
   const family = merchant21FamilyForGuide(slug);
   const alternative = merchant21Alternatives.find(row => row.family === family);
   if (alternative) {
-    const { product, keep } = alternative;
+    const { keep } = alternative;
+    const product = findCommerceProduct(site, alternative.product.slug);
+    if (!product?.offers.length || product.asin !== alternative.product.asin) return null;
     return <aside className="mt-6 min-w-0 rounded-md border border-[var(--border)] bg-white p-5" aria-label={`Separate option: ${product.name}`} data-merchant21-route={product.asin}>
       <p className="eyebrow">Another option for this task</p>
       <h2 className="mt-2 text-xl font-bold">{product.name}</h2>

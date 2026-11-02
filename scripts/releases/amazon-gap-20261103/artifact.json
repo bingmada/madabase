@@ -1,0 +1,13 @@
+{
+  "builtLocally": true,
+  "serverBuildAllowed": false,
+  "artifacts": {
+    "affiliate": {
+      "buildId": "rbiK2NwB-_XkMAcLInI7B",
+      "sha256": "294c48671ee1820f16bc6b1483eeaf515d6a4aeb45b42064acf37e8291a54ea9",
+      "bytes": 59498058,
+      "distDir": ".next-release",
+      "archivePath": "apps/affiliate/.release/affiliate-runtime.tgz"
+    }
+  }
+}
