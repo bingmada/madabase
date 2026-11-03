@@ -1,4 +1,5 @@
 import type { Guide, Product, Roundup, SiteKey, Tool } from "./types";
+import { withConciseReaderCopy } from "./reader-copy";
 import { applySeoQualityImprovements } from "./seo-quality-improvements";
 import { applyReviewedGuideContent } from "./reviewed-guide-content";
 import { applyReviewedRoundupContent } from "./reviewed-roundup-content";
@@ -4346,7 +4347,7 @@ export function siteProducts(site: SiteKey) {
 }
 
 export function siteRoundups(site: SiteKey) {
-  return roundups.filter((roundup) => roundup.site === site && isContentVisible(roundup));
+  return roundups.filter((roundup) => roundup.site === site && isContentVisible(roundup)).map(withConciseReaderCopy);
 }
 
 export function siteGuides(site: SiteKey) {
@@ -4361,17 +4362,17 @@ export function siteGuides(site: SiteKey) {
             && isContentVisible(item),
         ),
       )
-    : guide);
+    : guide).map(withConciseReaderCopy);
 }
 
 export function siteGuideFamily(site: SiteKey, familySlug: string) {
   return guides.filter(
     (guide) => guide.site === site && guide.familySlug === familySlug && isContentVisible(guide),
-  );
+  ).map(withConciseReaderCopy);
 }
 
 export function siteTools(site: SiteKey) {
-  return tools.filter((tool) => tool.site === site && isContentVisible(tool));
+  return tools.filter((tool) => tool.site === site && isContentVisible(tool)).map(withConciseReaderCopy);
 }
 
 export function findProduct(site: SiteKey, slug: string) {
@@ -4380,18 +4381,18 @@ export function findProduct(site: SiteKey, slug: string) {
 }
 
 export function findRoundup(site: SiteKey, slug: string) {
-  return roundups.find((roundup) => roundup.site === site && roundup.slug === slug && isContentVisible(roundup));
+  return withConciseReaderCopy(roundups.find((roundup) => roundup.site === site && roundup.slug === slug && isContentVisible(roundup)));
 }
 
 export function findGuide(site: SiteKey, slug: string) {
-  return guides.find((guide) => guide.site === site && guide.slug === slug && isContentVisible(guide));
+  return withConciseReaderCopy(guides.find((guide) => guide.site === site && guide.slug === slug && isContentVisible(guide)));
 }
 
 export function findTool(site: SiteKey, slug: string) {
-  return tools.find((tool) => tool.site === site && tool.slug === slug && isContentVisible(tool));
+  return withConciseReaderCopy(tools.find((tool) => tool.site === site && tool.slug === slug && isContentVisible(tool)));
 }
 
 export function applyAmazonOverride(product: Product): Product {
   const override = amazonProductOverrides[product.slug];
-  return applySiteAffiliateTracking(applyReviewedProductContent(override ? { ...product, ...override } : product));
+  return withConciseReaderCopy(applySiteAffiliateTracking(applyReviewedProductContent(override ? { ...product, ...override } : product)));
 }

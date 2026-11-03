@@ -1,21 +1,23 @@
+import { conciseOfferNote } from "@/lib/reader-copy";
 import Link from "next/link";
 import type { CSSProperties } from "react";
 import { notFound } from "next/navigation";
 import { AffiliateButtonGroup } from "@/components/AffiliateButton";
 import { JsonLd } from "@/components/JsonLd";
-import { Disclosure, ProductCard } from "@/components/LayoutParts";
+import { ProductCard } from "@/components/LayoutParts";
 import { BaseMarketEditionLinks } from "@/components/MarketExperience";
 import { SearchOpportunityBacklinks, SearchOpportunityBlock } from "@/components/SearchOpportunityBlock";
 import { findProduct, findRoundup, siteGuides } from "@/lib/content";
 import { roundupCommerceProduct } from "@/lib/commerce-paths";
 import { buyerFacingBody, buyerFacingHeading, buyerFacingSummary } from "@/lib/conversion-copy";
-import { roundupEvidencePresentation } from "@/lib/evidence";
 import { effectiveContentUpdatedAt, findSearchOpportunity, reviewedSearchDescription, searchOpportunityMetaDescription } from "@/lib/search-opportunities";
 import { breadcrumbSchema, faqPageSchema, pageMetadata, roundupArticleSchema, roundupProductListSchema } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 import type { SiteKey } from "@/lib/types";
 import { defaultRoundupQuickAnswer } from "@/lib/roundup-quick-answer";
 import { roundupSourceLinks } from "@/lib/roundup-source-links";
+import { ComparisonStart } from "@/components/ComparisonStart";
+import { DecisionWorkedExamples } from "@/components/DecisionWorkedExamples";
 
 const roundupAdvice: Record<SiteKey, Record<string, { spendMore: string; spendLess: string; compare: string[] }>> = {
   pet: {
@@ -151,7 +153,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
   const advice = getRoundupAdvice(site.key, roundup.category);
   const preservePageEvidence = Boolean(roundup.purchaseAlternatives?.length);
   const sources = roundupSourceLinks(picks, roundup.sources, preservePageEvidence);
-  const evidencePresentation = roundupEvidencePresentation();
+  const decisionFirst = roundup.decisionFirst === true;
 
   return (
     <main className="section">
@@ -175,10 +177,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
             <p className="eyebrow">{roundup.category}</p>
           )}
           <h1 className="mt-3 text-3xl font-black leading-tight sm:text-4xl">{roundup.title}</h1>
-          <div className="mt-4 rounded-md border border-[var(--brand)] bg-[var(--brand-soft)] px-4 py-3" data-evidence-boundary="true">
-            <p className="text-xs font-bold uppercase text-[var(--brand-strong)]">{evidencePresentation.label}</p>
-            <p className="mt-1 text-sm font-semibold leading-6 text-[var(--text)]">{evidencePresentation.summary}</p>
-          </div>
+          {decisionFirst ? <ComparisonStart site={site} roundup={effectiveRoundup} picks={picks} /> : <>
           {roundup.purchaseFlow === "task-links" ? (
             <div className="mt-4 rounded-md border border-[var(--border)] bg-white p-4 sm:p-5" data-roundup-task-choice="true">
               <p className="text-xs font-bold uppercase text-[var(--muted)]">Choose the task first</p>
@@ -200,7 +199,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
                 ) : commercePathPaused ? (
                   <p className="mt-2 text-sm leading-5 text-[var(--muted)]">The named product links are paused while their exact listings are rechecked. No unrelated product is substituted.</p>
                 ) : topPick ? (
-                  <p className="mt-2 text-sm leading-5 text-[var(--muted)]">Best for {topPick.bestFor.toLowerCase()}. Open the listing to compare the live price, availability, delivery, seller, and returns.</p>
+                  <p className="mt-2 text-sm leading-5 text-[var(--muted)]">Best for {topPick.bestFor.toLowerCase()}.</p>
                 ) : null}
                 {roundup.purchaseCheck ? <p className="mt-3 text-sm leading-6" data-roundup-purchase-check="true">{roundup.purchaseCheck}</p> : null}
               </div>
@@ -225,11 +224,11 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
           {searchOpportunity ? <SearchOpportunityBlock opportunity={searchOpportunity} /> : null}
           <SearchOpportunityBacklinks site={site.key} kind="roundup" slug={slug} />
           <BaseMarketEditionLinks site={site} basePath={`/best/${slug}`} />
+          </>}
         </div>
         <div className="mt-8 grid min-w-0 gap-5 lg:grid-cols-[minmax(0,1fr)_320px]">
           <div className="min-w-0 space-y-5">
-            <Disclosure site={site} />
-            {picks.length ? (
+            {!decisionFirst && picks.length ? (
               <section className="panel scroll-mt-6 overflow-hidden" id="quick-comparison">
                 <div className="border-b border-[var(--border)] p-5">
                   <h2 className="text-xl font-bold">Quick comparison</h2>
@@ -275,7 +274,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
                 </div>
               </section>
             ) : null}
-            {picks.length ? (
+            {!decisionFirst && picks.length ? (
               <section className="panel p-5">
                 <h2 className="text-xl font-bold">Compare the current options</h2>
                 <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
@@ -313,7 +312,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
                               .join(" · ") || product.bestFor}
                           </td>
                           <td className="px-4 py-4 text-[var(--muted)]">{product.asin ? `ASIN ${product.asin}` : product.specs.ASIN ?? "Confirm live listing"}</td>
-                          <td className="px-4 py-4 text-[var(--muted)]">{product.offers[0]?.priceNote ?? product.evidence[0] ?? "Confirm seller, bundle, and return path"}</td>
+                          <td className="px-4 py-4 text-[var(--muted)]">{conciseOfferNote(product.offers[0]?.priceNote) || product.purchaseCheck || product.evidence[0] || product.bestFor}</td>
                           <td className="px-4 py-4 text-[var(--muted)]">{product.updatedAt ?? "Pending"}</td>
                         </tr>
                       ))}
@@ -322,7 +321,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
                 </div>
               </section>
             ) : null}
-            {roundup.decisionGuide?.length ? (
+            {!decisionFirst && roundup.decisionGuide?.length ? (
               <section className="panel p-5">
                 <h2 className="text-xl font-bold">Quick picks by situation</h2>
                 <div className="mt-4 grid gap-3 sm:grid-cols-2">
@@ -335,7 +334,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
                 </div>
               </section>
             ) : null}
-            {roundup.comparisonTable ? (
+            {!decisionFirst && roundup.comparisonTable ? (
               <section className="panel scroll-mt-24 p-5" id="roundup-comparison">
                 <p className="eyebrow">Side-by-side checks</p>
                 <h2 className="mt-3 text-xl font-bold">{roundup.comparisonTable.title}</h2>
@@ -393,6 +392,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
                 </> : null}
               </section>
             ) : null}
+            <DecisionWorkedExamples site={site.key} slug={slug} />
             {roundup.sections?.map((section) => (
               <section className="panel p-5" key={section.heading}>
                 <h2 className="text-xl font-bold">{buyerFacingHeading(section.heading)}</h2>
@@ -452,7 +452,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
                 ))}
               </div>
             </section>
-            <section className="panel p-5">
+            <section className="panel scroll-mt-24 p-5" id={decisionFirst ? "comparison-sources" : undefined}>
               <h2 className="text-xl font-bold">Sources and methodology</h2>
               <ul className="mt-4 space-y-2 text-sm leading-6 text-[var(--muted)]">
                 {roundup.methodology.map((item) => <li key={item}>{item}</li>)}
@@ -474,6 +474,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
                 </div>
               ) : null}
             </section>
+            {decisionFirst ? <><SearchOpportunityBacklinks site={site.key} kind="roundup" slug={slug} />{searchOpportunity ? <SearchOpportunityBlock opportunity={searchOpportunity} linksOnly /> : null}<BaseMarketEditionLinks site={site} basePath={`/best/${slug}`} /></> : null}
           </div>
           <aside className="space-y-5 lg:sticky lg:top-24 lg:self-start">
             <div className="panel p-5">

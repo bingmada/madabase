@@ -8,6 +8,7 @@ import type { SiteConfig } from "@/lib/sites";
 import type { Product, Roundup } from "@/lib/types";
 import { TaskNavigation } from "./TaskNavigation";
 import { NavigationDisclosure } from "./NavigationDisclosure";
+import { PageCommissionDisclosure } from "./PageCommissionDisclosure";
 import { SearchForm } from "../../shared/SearchControls";
 
 export function SiteChrome({ site, children }: { site: SiteConfig; children: React.ReactNode }) {
@@ -109,7 +110,7 @@ export function SiteChrome({ site, children }: { site: SiteConfig; children: Rea
               </Link>
             </nav>
           </div>
-          <p className="mt-2 max-w-3xl">{site.disclosure}</p>
+          <PageCommissionDisclosure>{site.disclosure}</PageCommissionDisclosure>
           <nav className="mt-5 flex flex-wrap gap-x-4 gap-y-2 text-xs font-semibold uppercase tracking-[0.12em]" aria-label="Madabase network">
             <a className="hover:text-[var(--brand-strong)]" href="https://madabase.com">Madabase research</a>
             <a className="hover:text-[var(--brand-strong)]" href="https://pets.madabase.com">Pet gear</a>
@@ -252,17 +253,6 @@ export function RoundupCard({ roundup }: { roundup: Roundup }) {
         <ArrowRight aria-hidden="true" size={16} />
       </span>
     </Link>
-  );
-}
-
-export function Disclosure({ site }: { site: SiteConfig }) {
-  return (
-    <div className="rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-4 text-sm leading-6 text-[var(--muted)]">
-      <strong className="text-[var(--text)]">How links work:</strong> {site.disclosure}
-      <p className="mt-2">
-        Prices, availability, shipping, coupons, and seller details can change. Always confirm the current product listing and return policy before buying.
-      </p>
-    </div>
   );
 }
 

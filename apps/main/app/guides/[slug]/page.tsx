@@ -57,7 +57,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
               <p className="eyebrow">{guide.category}</p>
               <h1>{guide.title}</h1>
               <p className="article-dek">{guide.dek}</p>
-              <p className="article-meta">Updated {guide.updatedAt} · {guide.readingTime} · Research synthesis</p>
+              <p className="article-meta">Updated {guide.updatedAt} · {guide.readingTime}</p>
             </div>
             <div className="article-image">
               <Image alt="" fill priority sizes="(max-width: 900px) 100vw, 44vw" src={guide.image} />
@@ -102,10 +102,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
                 <span>{item.label}</span><ArrowRight size={16} aria-hidden="true" />
               </TrackedLink>
             ))}
-            <div className="research-note">
-              <strong>Evidence note</strong>
-              <p>This guide synthesizes official documentation and the focused research maintained across Madabase publications. It does not claim hands-on testing.</p>
-            </div>
+
           </aside>
         </div>
       </article>

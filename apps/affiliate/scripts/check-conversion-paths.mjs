@@ -286,7 +286,20 @@ async function inspectPage(publicUrl) {
       && Boolean(markedCommerceDecision(html, "data-roundup-task-choice"))
       && html.includes('href="#quick-comparison"')
       && affiliateAnchors.length > 0 && affiliateAnchors.every(registeredAnchor);
-    const firstEvidenceBoundaryIndex = html.indexOf('data-evidence-boundary="true"');
+    const decisionFirstRoundup = pageKind(url.pathname) === "roundup"
+      && findRoundup(site, slug)?.decisionFirst === true;
+    const decisionFirstBlock = decisionFirstRoundup
+      ? markedCommerceDecision(html, "data-decision-first-comparison") : undefined;
+    const decisionModels = decisionFirstBlock ? html.indexOf('id="comparison-models"') : -1;
+    const decisionTable = decisionFirstBlock ? html.indexOf('id="roundup-comparison"') : -1;
+    const qualifiedComparison = Boolean(decisionFirstBlock
+      && html.indexOf('id="comparison-verdict"') > html.indexOf("</h1>")
+      && decisionTable > html.indexOf('id="comparison-verdict"')
+      && decisionModels > decisionTable
+      && (firstCommerceIndex < 0 || firstCommerceIndex > decisionTable)
+      && html.includes('id="comparison-sources"')
+      && !html.includes('data-first-viewport-commerce="true"')
+      && affiliateAnchors.every(registeredAnchor));
     const commercePaused = html.includes('data-commerce-paused="true"');
     const informationalCalculator = site === "baby"
       && /^\/(?:en-gb\/|en-ca\/|de-de\/|nl-nl\/)?tools\/diaper-usage-calculator\/?$/.test(url.pathname);
@@ -323,10 +336,10 @@ async function inspectPage(publicUrl) {
       // A merchant-integrity pause is an explicit safe state, not a missing
       // conversion path. The page must label it instead of substituting an
       // unrelated product merely to satisfy the CTA audit.
-      if (!commercePaused && !informationalCalculator && !qualifiedTaskPaths && !plannerHandoff && !categoryDiscovery) errors.push("missing sponsored Amazon/CJ CTA or qualified task handoff");
+      if (!commercePaused && !informationalCalculator && !qualifiedTaskPaths && !plannerHandoff && !categoryDiscovery && !qualifiedComparison) errors.push("missing sponsored Amazon/CJ CTA or qualified task handoff");
     } else {
       if (informationalCalculator) errors.push("unrelated commerce CTA on diaper quantity calculator");
-      if (!qualifiedGuideDecision && !qualifiedAlternative && !qualifiedTaskPaths && !contextualModelReference && !plannerHandoff && !roundupChoice) {
+      if (!qualifiedGuideDecision && !qualifiedAlternative && !qualifiedTaskPaths && !contextualModelReference && !plannerHandoff && !roundupChoice && !qualifiedComparison) {
         if (!firstViewportAnchors.length) errors.push("missing designated first-viewport affiliate CTA");
         if (!firstViewportAnchors.some((anchor) => anchor.ctaIntent === "price-availability")) {
           errors.push("first-viewport CTA does not state the price-and-availability intent");
@@ -335,14 +348,8 @@ async function inspectPage(publicUrl) {
           errors.push("first-viewport CTA does not enable the responsive sticky commerce path");
         }
         if (pageKind(url.pathname) === "category" && firstViewportAnchors.some((anchor) => anchor.stickyCommerce)) errors.push("category discovery must not float one product over other task choices");
-        if (!firstDecisionBlock.includes("purchase link")) {
-          errors.push("first decision block is missing a concise purchase-link label near the CTA");
-        }
-        if (["review", "roundup"].includes(pageKind(url.pathname)) && !(
-          firstEvidenceBoundaryIndex > firstH1CloseIndex
-          && firstEvidenceBoundaryIndex < firstCommerceIndex
-        )) {
-          errors.push("product or roundup evidence boundary must appear between the H1 and first commerce path");
+        if (!firstDecision?.html.includes('data-commission-slot="true"')) {
+          errors.push("first decision block is missing the page disclosure slot below the CTA");
         }
         if (firstDecisionFriction.length) {
           errors.push(`first decision block contains conversion-friction copy: ${firstDecisionFriction.join(", ")}`);
@@ -354,6 +361,7 @@ async function inspectPage(publicUrl) {
       if (requirePreImageCta && !beforeFirstImage) errors.push("first affiliate CTA appears after the first page image");
     }
     if (taskDecision && !qualifiedTaskPaths) errors.push("task guide needs a named internal next step and keep/unknown conditions");
+    if (decisionFirstRoundup && !qualifiedComparison) errors.push("decision-first comparison needs its verdict, differences, exact model paths and sources in order");
     for (const anchor of affiliateAnchors) {
       if (!registeredAnchor(anchor)) errors.push(`unregistered or mismatched CTA identity/destination: ${anchor.href}`);
       if (!anchor.rel.includes("sponsored") || !anchor.rel.includes("nofollow")) {
@@ -378,7 +386,7 @@ async function inspectPage(publicUrl) {
       amazonCtas: amazonAnchors.length,
       cjCtas: cjAnchors.length,
       firstViewportCtas: firstViewportAnchors.length,
-      conversionLayout: categoryDiscovery ? "category-discovery" : qualifiedTaskPaths ? "qualified-task-handoff" : qualifiedGuideDecision ? "qualified-guide-decision" : qualifiedAlternative ? "explicit-task-alternative" : plannerHandoff ? "interactive-requirements-planner" : contextualModelReference ? "contextual-model-reference" : roundupChoice ? "explicit-roundup-model-choice" : "first-viewport-or-paused",
+      conversionLayout: qualifiedComparison ? "decision-first-comparison" : categoryDiscovery ? "category-discovery" : qualifiedTaskPaths ? "qualified-task-handoff" : qualifiedGuideDecision ? "qualified-guide-decision" : qualifiedAlternative ? "explicit-task-alternative" : plannerHandoff ? "interactive-requirements-planner" : contextualModelReference ? "contextual-model-reference" : roundupChoice ? "explicit-roundup-model-choice" : "first-viewport-or-paused",
       ctaBeforeFirstImage: beforeFirstImage,
       commercePaused,
       errors: [...new Set(errors)],

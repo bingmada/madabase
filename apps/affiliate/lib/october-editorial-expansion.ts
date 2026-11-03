@@ -11,7 +11,7 @@ export const editorialExpansionGuides: Guide[] = [
     title: "CalDigit TS4 vs TS5 vs TS5 Plus: Upgrade or Keep Your Dock?",
     dek: "Compare the three CalDigit generations by host connection, charging, Ethernet and display wiring, with a separate decision for keeping a working TS4.",
     updatedAt: date, decisionLayout: true, image: "/images/affiliate/hero-homeoffice-realistic.webp",
-    imageAlt: "Editorial home office scene, not a hands-on test of these docks",
+    imageAlt: "Editorial home office scene",
     searchQuestion: "Should I keep TS4, buy TS5, or pay for TS5 Plus?",
     quickAnswer: "Keep a working TS4 when its displays, 98W charging and 2.5GbE already meet your requirements. Compare TS5 for a new Thunderbolt 5 desk that needs up to 140W and 2.5GbE; compare TS5 Plus when a complete 10GbE path or its additional ports has a real job. The host and monitor modes must still qualify.",
     comparisonTable: { title: "The differences that change the desk plan", columns: ["TS4", "TS5", "TS5 Plus"], rows: [

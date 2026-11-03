@@ -24,7 +24,7 @@ export function GET() {
     "## Selected current research",
     ...researchItems.map((item) => `- ${item.title}: ${item.href}`),
     "",
-    "Madabase pages identify official-spec, research-synthesis, and hands-on evidence separately. Research-synthesis pages do not claim first-hand use.",
+    "Madabase links manufacturer documentation and attributed independent research, preserving the named model, setup and conditions.",
   ];
 
   return new Response(lines.join("\n"), { headers: { "Content-Type": "text/plain; charset=utf-8" } });

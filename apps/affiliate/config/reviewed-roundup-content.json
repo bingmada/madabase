@@ -1057,6 +1057,108 @@
     "updatedAt": "November 2, 2026"
   },
   "homeoffice:ergear-48x24-vs-flexispot-e7-mini": {
-    "updatedAt": "November 2, 2026"
+    "updatedAt": "November 3, 2026",
+    "decisionFirst": true,
+    "title": "ErGear 48×24 vs FlexiSpot E7 Mini: Fit & Model Checks",
+    "seoTitle": "ErGear 48x24 vs FlexiSpot E7 Mini: Fit & Model Checks",
+    "dek": "Compare the original wheeled ErGear reference with an exact FlexiSpot E7 Mini configuration by desktop size, working height and the need to move. Both original Amazon links remain paused.",
+    "quickAnswer": "The original ErGear reference is a wheeled 48×24-inch design; E7 Mini is a compact fixed-workstation direction whose selected frame and top must be checked together. Choose by the actual footprint, seated and standing heights, and whether the desk must roll. Neither a larger load rating nor the brand establishes raised stability or monitor-clamp suitability. Both original Amazon links remain paused; the model guides identify separately named options.",
+    "intro": "",
+    "sections": [
+      {
+        "heading": "Decide whether the desk really needs to roll",
+        "body": "The original wheeled ErGear listing is a reference with its exact purchase paused. If a desk must move between rooms or clear a shared space, include caster height, brakes, floor transitions and cable disconnection in the plan. A separately named fixed-foot ErGear option does not meet that mobility requirement."
+      },
+      {
+        "heading": "Measure the selected E7 Mini top and frame together",
+        "body": "The reviewed E7 Mini product page gives conflicting applicable-top width ranges, 31.5–40 and 31.5–45 inches. Confirm the exact chosen top, frame height range and assembly instructions with FlexiSpot. Do not approve a heavy monitor arm from an overall desk load rating or infer better raised stability without a test of the assembled configuration."
+      },
+      {
+        "heading": "Keep the original references separate from current shopping options",
+        "body": "The historical E7 Mini Amazon reference now identifies a different-brand HUANUO desk, so it remains paused. The original wheeled ErGear offer is also paused. The model guides separately describe EGESD5B Black when its fixed feet and actual 47.2 × 23.6-inch top fit; it is neither an E7 Mini nor the original wheeled desk. Read that option’s own manual, height, controller and seller conditions."
+      },
+      {
+        "heading": "Check depth before buying either width",
+        "body": "Draw the actual desk outline, monitor stands, keyboard and mouse area. Check viewing distance, rear clamp space, the chair path and moving cables separately. Keep an existing desk when rearrangement solves the problem. Use the 48-versus-55-inch guide for geometric examples; those examples do not certify a particular desk or clamp."
+      }
+    ],
+    "decisionGuide": [
+      {
+        "label": "The workstation must move",
+        "detail": "Check the original wheeled design’s actual height, floor route and caster instructions. A fixed-foot alternative is a different task choice."
+      },
+      {
+        "label": "The workstation stays in one place",
+        "detail": "Compare the selected frame and top by actual footprint and both working heights. Raised stability and clamp suitability still need their own checks."
+      },
+      {
+        "label": "The exact model or top is unclear",
+        "detail": "Pause the purchase. A similar title, larger capacity or different-brand Amazon page does not establish the requested configuration."
+      }
+    ],
+    "comparisonTable": {
+      "title": "Compare the documented task, not an assumed performance winner",
+      "columns": [
+        "Original ErGear wheeled reference",
+        "FlexiSpot E7 Mini configuration"
+      ],
+      "rows": [
+        {
+          "label": "Main task",
+          "values": [
+            "A 48×24-inch wheeled workspace reference",
+            "Compact fixed workstation; match the exact frame and top"
+          ]
+        },
+        {
+          "label": "Check before choosing",
+          "values": [
+            "Caster contribution to working height, floor route, brakes and cable travel",
+            "Chosen top dimensions, actual seated/standing range and conflicting applicable-top tables"
+          ]
+        },
+        {
+          "label": "Original Amazon link",
+          "values": [
+            "Paused: original selected offer unavailable",
+            "Paused: historical reference now identifies a different-brand desk"
+          ]
+        },
+        {
+          "label": "What is not established",
+          "values": [
+            "Raised stability, clamp approval or suitability of another fixed-foot model",
+            "Stronger frame or heavy-monitor superiority without assembled-configuration evidence"
+          ]
+        }
+      ]
+    },
+    "methodology": [
+      "Reviewed model and exact-offer evidence from the November 2 product remediation is retained; no stock check date has been advanced.",
+      "Removed unsupported comparative stiffness and heavy-monitor claims; no physical load, movement or stability test was performed.",
+      "Current separately named alternatives are evaluated in their own model guides."
+    ],
+    "faqs": [
+      {
+        "question": "Does a higher desk load rating mean it is better for a monitor arm?",
+        "answer": "No. The arm’s attachment, desktop construction, underside clearance, monitor geometry and assembled stability require their own evidence."
+      },
+      {
+        "question": "Can I buy either original desk from the links here?",
+        "answer": "The original Amazon links remain paused. Read the model guides for separately named options and confirm that the option meets the actual fixed or rolling task."
+      }
+    ]
+  },
+  "homeoffice:logitech-litra-glow-vs-elgato-key-light-neo": {
+    "decisionFirst": true,
+    "updatedAt": "November 3, 2026",
+    "quickAnswer": "Choose Litra Glow for compact, close-range video calls and G HUB controls. Choose Key Light Neo when more output is useful and its mount fits, after budgeting for the required power source. Compare the power-dependent figures below before paying for the maximum-output setup.",
+    "methodology": [
+      "Official-spec comparison checked October 13, 2026; no hands-on brightness or camera test",
+      "Power modes checked against Elgato's brightness support article",
+      "Mount and control claims checked against manufacturer documentation",
+      "Suggested buyer checks are procedures, not measured product scores",
+      "November 3, 2026: original power-mode and Litra Glow specification pages rechecked; connection examples are documentary comparisons, not measured camera results."
+    ]
   }
 }

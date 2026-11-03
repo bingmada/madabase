@@ -81,6 +81,8 @@ export type AffiliateOffer = {
 };
 
 export type Roundup = Publishable & {
+  /** Lead an individually reviewed comparison with its verdict and evidence. */
+  decisionFirst?: boolean;
   slug: string;
   site: SiteKey;
   seoTitle?: string;

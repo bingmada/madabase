@@ -2,6 +2,7 @@ import Image from "next/image";
 import { editorialImageAlt, isEditorialCategoryImage, editorialCategoryImageCaption, editorialImageForDisplay } from "@/lib/editorial-image";
 import type { CSSProperties } from "react";
 import { DecisionReference } from "@/components/DecisionReference";
+import { DecisionWorkedExamples } from "@/components/DecisionWorkedExamples";
 import { GuideTaskAlternative } from "@/components/GuideTaskAlternative";
 import { GuideTaskPaths } from "@/components/GuideTaskPaths";
 import { taskGuidePaths } from "@/lib/task-guide-paths";
@@ -386,6 +387,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
           </section>
         ) : null}
         <GuideDecisionTable table={guide.comparisonTable} />
+        <DecisionWorkedExamples site={site.key} slug={slug} />
         <GuideTaskPaths site={site.key} slug={guide.slug} />
         {guide.decisionPurchase && !plannerTopic && !taskOnly && decisionPurchaseIdentity && decisionPurchaseOffer ? (
           <aside className="mt-4 rounded-md border border-[var(--border)] bg-white p-5" aria-label={`Next step for ${guide.decisionPurchase.model}`} data-guide-decision-purchase="true">
@@ -520,7 +522,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
               </div>
             </dl>
             <p className="mt-4 max-w-3xl text-sm leading-6 text-[var(--muted)]">
-              This exact direct-brand option lets you compare the current bundle, price, stock, shipping threshold, return eligibility, and support path with the Amazon listing above. We may earn a CJ commission from an eligible Bc Babycare purchase; the reader pays no added fee.
+              This exact direct-brand option lets you compare the current bundle, price, stock, shipping threshold, return eligibility, and support path with the Amazon listing above.
             </p>
             <div className="mt-5 flex flex-wrap gap-3">
               {cjFamilyProduct ? <Link className="button-secondary" href={`/reviews/${cjFamilyProduct.slug}`}>Review the exact product</Link> : null}

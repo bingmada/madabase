@@ -793,27 +793,26 @@ if (
 }
 if (
   !reviewFirstScreenSource.includes("<AffiliateButton")
-  || !reviewFirstScreenSource.includes('data-evidence-boundary="true"')
   || !reviewFirstScreenSource.includes('data-first-viewport-commerce="true"')
   || !reviewFirstScreenSource.includes('position={commerceIsAlternative ? "review-first-viewport-verified-alternative" : "review-first-viewport"}')
   || !reviewFirstScreenSource.includes("firstViewport")
 ) {
   errors.push("Product template must show the designated sponsored CTA in a first-viewport container before the product image");
 }
-if (
-  reviewFirstScreenSource.indexOf('data-evidence-boundary="true"')
-  > reviewFirstScreenSource.indexOf('data-first-viewport-commerce="true"')
-) {
-  errors.push("Product evidence boundary must appear before the first sponsored CTA");
+if (reviewFirstScreenSource.includes('data-evidence-boundary="true"')) {
+  errors.push("Product first screen must lead with the buying decision rather than a process notice");
 }
-
 const roundupTemplateSource = fs.readFileSync(path.join(workspaceDir, "app", "best", "[slug]", "page.tsx"), "utf8");
-if (
-  !roundupTemplateSource.includes('data-evidence-boundary="true"')
-  || roundupTemplateSource.indexOf('data-evidence-boundary="true"')
-    > roundupTemplateSource.indexOf('data-first-viewport-commerce="true"')
-) {
-  errors.push("Roundup evidence boundary must appear before the first sponsored CTA");
+if (roundupTemplateSource.includes('data-evidence-boundary="true"')) {
+  errors.push("Roundup first screen must lead with the comparison rather than a process notice");
+}
+const chromeSource = fs.readFileSync(path.join(workspaceDir, "components", "LayoutParts.tsx"), "utf8");
+const disclosureSource = fs.readFileSync(path.join(workspaceDir, "components", "PageCommissionDisclosure.tsx"), "utf8");
+if ((chromeSource.match(/<PageCommissionDisclosure>/g) ?? []).length !== 1
+  || !disclosureSource.includes('data-page-commission-disclosure="true"')
+  || !disclosureSource.includes('createPortal(disclosure, slot)')
+  || !disclosureSource.includes('[data-commission-slot]')) {
+  errors.push("One page-level commission disclosure must move below the first available purchase button, with a footer fallback");
 }
 
 const claritySource = fs.readFileSync(path.join(workspaceDir, "components", "ClarityAnalytics.tsx"), "utf8");
@@ -1003,11 +1002,8 @@ if (marketExperienceSource.includes('"@type": "Product"')) {
 if (!marketExperienceSource.includes('url: absoluteUrl(site, `/reviews/${product.slug}`)')) {
   errors.push("Country-edition Article subjects must link their Thing entity to the canonical evidence page");
 }
-if (
-  !marketExperienceSource.includes("marketEvidenceBoundary")
-  || !marketExperienceSource.includes('data-evidence-boundary="true"')
-) {
-  errors.push("Localized product and comparison pages must disclose their evidence boundary before commerce");
+if (marketExperienceSource.includes('data-evidence-boundary="true"')) {
+  errors.push("Country editions must omit the generic research-process badge");
 }
 
 const counts = entries.reduce((result, entry) => {

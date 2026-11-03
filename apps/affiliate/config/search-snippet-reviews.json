@@ -805,8 +805,9 @@
     "referenceDate": "2026-11-01"
   },
   "baby:guide:potty-training-seats-buying-guide": {
-    "description": "Measure toilet shape and height before choosing the SKYROKU Whitegray potty ladder; check all assembled supports rather than relying on universal-fit claims.",
-    "referenceDate": "2026-11-01"
+    "description": "Compare a floor potty, toilet-seat reducer with foot support, and ladder seat by support, toilet fit, space and cleaning. Keep SKYROKU model limits separate.",
+    "referenceDate": "November 3, 2026",
+    "rationale": "Restore the broader equipment-format question while preserving exact SKYROKU limits; no CTR improvement asserted."
   },
   "baby:guide:powder-formula-dispensers-buying-guide": {
     "description": "Check the LADISO two-stack four-compartment selection for actual contents and dry portion capacity; keep the original formula scoop and mixing instructions.",
@@ -1206,5 +1207,17 @@
     "description": "A higher-budget 8-port PoE+ switch guide for buyers who want every port powered, a 123W budget, and small-business style management in a desktop or wall-mount box.",
     "answer": "GS308EPP is the stronger eight-device PoE choice when the buyer wants PoE+ on every port and enough budget for multiple cameras or APs.",
     "referenceDate": "November 1, 2026"
+  },
+  "homeoffice:roundup:ergear-48x24-vs-flexispot-e7-mini": {
+    "description": "Compare the original wheeled ErGear reference with an exact FlexiSpot E7 Mini configuration by desktop size, working height and the need to move. Both original Amazon links remain paused.",
+    "answer": "The original ErGear reference is a wheeled 48×24-inch design; E7 Mini is a compact fixed-workstation direction whose selected frame and top must be checked together. Choose by the actual footprint, seated and standing heights, and whether the desk must roll. Neither a larger load rating nor the brand establishes raised stability or monitor-clamp suitability. Both original Amazon links remain paused; the model guides identify separately named options.",
+    "referenceDate": "November 3, 2026",
+    "rationale": "Align the related-answer record with the reviewed comparison and its limitations; no observed ranking or CTR benefit claimed."
+  },
+  "homeoffice:roundup:logitech-litra-glow-vs-elgato-key-light-neo": {
+    "description": "Compare Litra Glow and Key Light Neo by power-dependent output, mounting and the complete video-call setup. Manufacturer specifications; no hands-on test.",
+    "answer": "Choose Litra Glow for compact, close-range video calls and G HUB controls. Choose Key Light Neo when more output is useful and its mount fits, after budgeting for the required power source. Compare the power-dependent figures below before paying for the maximum-output setup.",
+    "referenceDate": "November 3, 2026",
+    "rationale": "Align the related-answer record with the reviewed comparison and its limitations; no observed ranking or CTR benefit claimed."
   }
 }

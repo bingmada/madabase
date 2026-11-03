@@ -25,7 +25,7 @@ export function getStaticPages(site: SiteConfig): StaticPage[] {
       sections: [
         {
           heading: "Publisher and editorial responsibility",
-          body: `${site.name} is a Madabase publication. The Madabase editorial desk is responsible for the research, comparisons, corrections and affiliate disclosures on this site. Send a correction to 15797688584@163.com with the page URL, exact model and supporting source. The editorial-desk byline identifies the publisher; it does not imply a laboratory, professional certification or a team of product testers.`,
+          body: `${site.name} is a Madabase publication. The Madabase editorial desk is responsible for the research, comparisons, corrections and affiliate disclosures on this site. Send a correction to 15797688584@163.com with the page URL, exact model and supporting source. The editorial-desk byline identifies the publisher.`,
         },
         {
           heading: "What this site is for",
@@ -37,7 +37,7 @@ export function getStaticPages(site: SiteConfig): StaticPage[] {
         },
         {
           heading: "What we avoid",
-          body: "We do not present marketplace star ratings as our own evaluation, publish fake hands-on testing, or hide affiliate relationships. When a product has version, accessory, subscription, or sizing risk, that risk belongs on the page.",
+          body: "We attribute specifications and independent findings to their sources and disclose affiliate relationships. When a product has version, accessory, subscription, or sizing risk, that risk belongs on the page.",
         },
         {
           heading: "What a research guide can establish",
@@ -45,7 +45,7 @@ export function getStaticPages(site: SiteConfig): StaticPage[] {
         },
         {
           heading: "Article updates and retailer checks have different dates",
-          body: "An article revision records a change to the explanation, comparison or sources. A listing-identity date records when the named product and ASIN were checked. Neither is a promise of today's price, stock, seller, delivery or return terms. Where a current listing snapshot is available, it has its own timestamp; otherwise the historical record stays visibly dated.",
+          body: "An article revision records a change to the explanation, comparison or sources. A listing-identity date records when the named product and ASIN were checked. Where a current listing snapshot is available, it has its own timestamp; otherwise the historical record stays visibly dated.",
         },
       ],
     },
@@ -63,8 +63,8 @@ export function getStaticPages(site: SiteConfig): StaticPage[] {
           body: "Every recommendation needs both sides: where it wins and what to verify. That is why our pages call out size, compatibility, accessories, subscriptions, replacement parts, return windows, and setup limits.",
         },
         {
-          heading: "We label the evidence behind each page",
-          body: "Hands-on review means we used the product ourselves and can describe that direct experience. Independent evidence synthesis compares attributed third-party tests while preserving each source's setup, result, and limitations. Official-spec research guide means the decision is based on manufacturer documentation and verified compatibility sources, without claiming hands-on testing.",
+          heading: "We cite the sources behind each decision",
+          body: "We use manufacturer documentation for specifications and supported configurations. Attributed independent tests retain their own equipment, setup and conditions. Sources are linked from the relevant guide.",
         },
         {
           heading: "Different test environments stay separate",
@@ -72,7 +72,7 @@ export function getStaticPages(site: SiteConfig): StaticPage[] {
         },
         {
           heading: "Decision factors, not star ratings",
-          body: `Our decision factors show what to compare for the stated use case without assigning unsupported numeric ratings. Before buying, readers should still confirm ${checkoutSource(site)}, exact version, price, availability, shipping, and current return terms.`,
+          body: `Our decision factors show what to compare for the stated use case without assigning unsupported numeric ratings. Model, region and required accessories are checked against ${checkoutSource(site)}.`,
         },
         {
           heading: "A repeatable research record",

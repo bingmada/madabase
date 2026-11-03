@@ -4,7 +4,7 @@ import { miniPcProfiles } from "@/lib/tiny-models";
 export function TinyModelDetails() {
   return <section aria-label="Tiny model evidence and limits">
     <h2>Model-specific upgrade references</h2>
-    <p>Select the full model and generation. These are official-spec references, not tested builds. A machine type identifies a product range; the serial-specific As-Built list and supported substitutes still decide a particular machine’s parts.</p>
+    <p>Select the full model and generation. A machine type identifies a product range; the serial-specific As-Built list and supported substitutes still decide a particular machine’s parts.</p>
     <p><a href="#tiny-fru-check">Resolve the parts for your machine before shopping →</a></p>
     <div className="discovery-grid">{miniPcProfiles.map((model) => <article className="discovery-card" id={`tiny-model-${model.id}`} style={{scrollMarginTop:110}} key={model.id}>
       <h3>{model.name}</h3>

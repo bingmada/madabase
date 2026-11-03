@@ -1,3 +1,4 @@
+import { conciseOfferNote } from "@/lib/reader-copy";
 import { findCommerceProduct } from "@/lib/commerce-paths";
 import { additionalGuidePurchaseOption } from "@/lib/additional-guide-purchase-options";
 import type { MarketKey, SiteKey } from "@/lib/types";
@@ -32,7 +33,7 @@ export function AdditionalGuidePurchaseOption({ site, slug, market }: {
     <div className="mt-4"><AffiliateButton site={site} product={product} offer={offer}
       market={market} modelLabel={product.name} position="guide-additional-exact-option"
       resolveCreatorsListing={false} sticky /></div>
-    <p className="mt-2 text-xs leading-5 text-[var(--muted)]">{offer.priceNote}</p>
+    {conciseOfferNote(offer.priceNote) ? <p className="mt-2 text-xs leading-5 text-[var(--muted)]">{conciseOfferNote(offer.priceNote)}</p> : null}
     <p className="mt-3 text-sm leading-6 text-[var(--muted)]">{option.keep}</p>
     <details className="mt-4 text-sm leading-6"><summary>Sources and selected listing</summary>
       <ul className="mt-2 space-y-3">{product.sources?.map((source) => <li className="break-words" key={source.url}>

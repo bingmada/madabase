@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { withConciseReaderCopy } from "@/lib/reader-copy";
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, Globe2, MapPin, ShieldCheck } from "lucide-react";
 import { AffiliateButton, AffiliateButtonGroup } from "./AffiliateButton";
@@ -76,29 +77,6 @@ function marketRouteLabel(
     },
   } as const;
   return labels[market.key][route];
-}
-
-function marketEvidenceBoundary(
-  market: MarketProfile,
-  route: LocalizedMarketPage["route"],
-) {
-  if (route !== "reviews" && route !== "best") return undefined;
-  const comparison = route === "best";
-  const copy = {
-    gb: comparison
-      ? { label: "Research-based comparison · not hands-on", summary: "This comparison uses current manufacturer documentation, exact-model checks, and attributed sources; it does not claim first-hand testing." }
-      : { label: "Source-based product guide · not hands-on", summary: "Use the named sources and their model limits below. Retailer observations and manufacturer instructions answer different questions; no first-hand test is claimed." },
-    ca: comparison
-      ? { label: "Research-based comparison · not hands-on", summary: "This comparison uses current manufacturer documentation, exact-model checks, and attributed sources; it does not claim first-hand testing." }
-      : { label: "Source-based product guide · not hands-on", summary: "Use the named sources and their model limits below. Retailer observations and manufacturer instructions answer different questions; no first-hand test is claimed." },
-    de: comparison
-      ? { label: "Quellenbasierter Vergleich · kein Praxistest", summary: "Der Vergleich nutzt aktuelle Herstellerunterlagen, genaue Modellprüfungen und zugeordnete Quellen; eigene Produkttests werden nicht behauptet." }
-      : { label: "Quellenbasierter Produktleitfaden · kein Praxistest", summary: "Beachten Sie die benannten Quellen und Modellgrenzen unten. Händlerbeobachtungen und Herstelleranleitungen beantworten unterschiedliche Fragen; ein eigener Praxistest wird nicht behauptet." },
-    nl: comparison
-      ? { label: "Vergelijking op basis van bronnen · niet zelf getest", summary: "Deze vergelijking gebruikt actuele fabrikantdocumentatie, controles van het exacte model en herleidbare bronnen; er wordt geen eigen praktijktest geclaimd." }
-      : { label: "Productgids op basis van bronnen · niet zelf getest", summary: "Lees de genoemde bronnen en modelgrenzen hieronder. Winkelwaarnemingen en fabrikantaanwijzingen beantwoorden verschillende vragen; er wordt geen eigen praktijktest geclaimd." },
-  } as const;
-  return copy[market.key];
 }
 
 export function MarketEditionNav({
@@ -332,13 +310,14 @@ export function LocalizedMarketContent({
   site,
   market,
   page,
-  variant,
+  variant: sourceVariant,
 }: {
   site: SiteConfig;
   market: MarketProfile;
   page: LocalizedMarketPage;
   variant: LocalizedMarketVariant;
 }) {
+  const variant = withConciseReaderCopy(sourceVariant);
   const product = page.primaryProductSlug
     ? findProduct(site.key, page.primaryProductSlug)
     : undefined;
@@ -401,7 +380,6 @@ export function LocalizedMarketContent({
     displayName,
     product?.asin ?? product?.specs.ASIN,
   );
-  const evidenceBoundary = marketEvidenceBoundary(market, page.route);
 
   return (
     <main className="section" lang={market.languageTag}>
@@ -446,12 +424,6 @@ export function LocalizedMarketContent({
           <article className="min-w-0">
             <p className="eyebrow">{market.labels.edition} · {site.name}</p>
             <h1 className="mt-3 text-4xl font-black leading-tight">{variant.title}</h1>
-            {evidenceBoundary ? (
-              <section className="mt-4 rounded-md border border-[var(--brand)] bg-[var(--brand-soft)] px-4 py-3" data-evidence-boundary="true">
-                <p className="text-xs font-bold uppercase text-[var(--brand-strong)]">{evidenceBoundary.label}</p>
-                <p className="mt-1 text-sm font-semibold leading-6 text-[var(--text)]">{evidenceBoundary.summary}</p>
-              </section>
-            ) : null}
             {commercePausedReason ? (
               <section className="mt-4 rounded-md border border-[var(--border)] bg-white p-4" aria-label="Exact retailer link paused" data-first-viewport-commerce="true" data-commerce-paused="true">
                 <p className="eyebrow">Exact retailer link paused</p>
@@ -471,7 +443,6 @@ export function LocalizedMarketContent({
                   ) : marketProduct ? (
                     <AffiliateButtonGroup site={site.key} product={marketProduct} market={market.key} position={`market-${market.key}-first-viewport`} limit={1} firstViewport sticky={page.route !== "categories"} />
                   ) : null}
-                  {page.route === "categories" ? <p className="mt-2 text-xs leading-5 text-[var(--muted)]">Current price &amp; availability · purchase link</p> : null}
                 </div>
               </section>
             ) : null}

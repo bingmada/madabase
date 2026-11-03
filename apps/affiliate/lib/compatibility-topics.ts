@@ -14,7 +14,7 @@ export const compatibilityTopics: Topic[] = [
     ],
     faqs: [
       { question: "Will a more expensive Thunderbolt dock bypass a base M1/M2 Air's display limit?", answer: "No. A conventional native Thunderbolt dock cannot add a native display stream that the host does not supply. A DisplayLink route is different technology and requires its own hardware, software and use-case checks." },
-      { question: "Does a conditional match mean Madabase tested my combination?", answer: "No. It means the entered requirements fit the documented route subject to the named conditions. We have not physically tested these combinations. A missing mode, adapter or permission remains unresolved." },
+      { question: "What does a conditional match mean?", answer: "The entered requirements fit the documented route, subject to the named conditions. A missing mode, adapter or permission remains unresolved." },
       { question: "Why is a dock with 100W input not charging at 100W?", answer: "Input power and power delivered to the host are separate ratings. A pass-through dock uses some power itself. Check the exact host-output rating, source charger, cable and laptop negotiation." },
     ],
     links: [

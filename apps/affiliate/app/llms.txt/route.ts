@@ -47,7 +47,7 @@ export async function GET() {
     "",
     "This site publishes practical buying notes, comparison guides, and decision checklists. It focuses on use-case fit, compatibility checks, product trade-offs, and affiliate disclosure.",
     "",
-    "Affiliate disclosure: As an Amazon Associate, this site may earn from qualifying purchases. Prices, availability, seller details, and product versions should be confirmed on the retailer page before buying.",
+    "Affiliate disclosure: As an Amazon Associate, this site may earn from qualifying purchases.",
     "",
     ...([]),
     ...(linesFor("Product evidence pages", products, "/reviews")),

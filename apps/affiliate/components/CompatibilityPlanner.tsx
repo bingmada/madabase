@@ -52,7 +52,7 @@ function Result({ result, purchaseOptions }: { result: CompatibilityResult; purc
     {copyFallback ? <label className="checklist-copy">Select and copy your checklist<textarea readOnly value={copyFallback} rows={8} /></label> : null}
     {!result.noBuy && result.parts?.length ? <PartsBudget key={JSON.stringify(result.parts)} parts={result.parts} allowComponents={result.status === "conditional" && result.sources.includes("lenovo-parts")} onWorksheetChange={setWorksheet} /> : null}
     {result.href ? <p className="mt-5"><a href={result.href} onClick={() => discoveryEvent("compatibility_detail_click", result.status)}>{result.hrefLabel ?? "Read the exact model and alternatives"} →</a></p> : null}
-    <p className="evidence-note mt-4">Official-spec planning · sources checked {evidenceCheckedAt} · no hands-on test or installation certification</p><ul className="evidence-note">{evidenceSources(result.sources).map((source) => <li key={source.id}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.title}</a> — {source.locator}</li>)}</ul>
+    <p className="evidence-note mt-4">Sources checked {evidenceCheckedAt}</p><ul className="evidence-note">{evidenceSources(result.sources).map((source) => <li key={source.id}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.title}</a> — {source.locator}</li>)}</ul>
   </section>;
 }
 export type PlannerTopic = "docks" | "monitor-arms" | "mini-pcs" | "ethernet";

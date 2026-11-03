@@ -59,19 +59,13 @@ export function TrackedCommerceLink({
     </a>
   );
 
-  const informedButton = primaryButton;
-
-  if (!sticky) return informedButton;
-
   return (
     <>
-      {firstViewport ? <div className="inline-flex max-w-full flex-col items-start gap-1.5">
-        {informedButton}
-        <p className="max-w-md text-xs leading-5 text-[var(--muted)]">
-          Current price &amp; availability · purchase link
-        </p>
-      </div> : informedButton}
-      {showStickyDock ? (
+      <div className="inline-flex max-w-full flex-col items-start align-top">
+        {primaryButton}
+        <div data-commission-slot="true" />
+      </div>
+      {sticky && showStickyDock ? (
         <a
           aria-label={`Purchase option for ${productName}`}
           className="fixed inset-x-3 z-40 rounded-lg border border-[var(--border)] bg-white/95 p-2.5 shadow-[0_10px_35px_rgba(15,23,42,0.24)] backdrop-blur transition hover:border-[var(--brand)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand)] lg:inset-x-auto lg:right-6 lg:w-[22rem] lg:max-w-[calc(100vw-3rem)]"
@@ -89,7 +83,7 @@ export function TrackedCommerceLink({
           <div className="flex min-w-0 items-center gap-3">
             <div className="min-w-0 flex-1">
               <p className="truncate text-xs font-bold text-[var(--text)]">{productName}</p>
-              <p className="mt-0.5 text-[11px] leading-4 text-[var(--muted)]">{"Current price & availability · purchase link"}</p>
+              <p className="mt-0.5 text-xs leading-5 text-[var(--muted)]">Current price &amp; availability</p>
             </div>
             <span className="button-primary shrink-0 px-3 py-2 text-xs">
               Check price

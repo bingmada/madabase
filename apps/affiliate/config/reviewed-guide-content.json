@@ -106429,5 +106429,382 @@
         "imageAlt": "Original editorial scene with unbranded pet cleaning, litter, grooming, and camera equipment"
       }
     }
+  },
+  "homeoffice:search-followup-20261103:portable": {
+    "sources": [
+      {
+        "name": "Apple: Connect displays to your Mac",
+        "url": "https://support.apple.com/en-us/102555",
+        "note": "Native external-display count and supported modes are host-specific; it does not validate USB graphics drivers."
+      },
+      {
+        "name": "InnoView dual portable monitor catalog example",
+        "url": "https://www.designinnoview.com/products/innoview-15-6-portable-dual-monitor",
+        "note": "A current manufacturer catalog example, not a confirmed manual or exact-ASIN mapping for B0FNRNK72C. Similar screen size and folding angle do not prove identical hardware."
+      },
+      {
+        "name": "Exact US ASIN B0FNRNK72C — November 1 observation",
+        "url": "https://www.amazon.com/dp/B0FNRNK72C",
+        "note": "November 1, 2026, US ZIP 10001: exact ASIN/model fields and primary purchasable offer with named seller/fulfillment observed. Prime-only prices, optional subscriptions and imported offers are separate terms. Visible return labels were recorded; detailed exceptions were not all expanded. Current retail observation is separate from previous manufacturer/manual work; no received-unit or performance test."
+      }
+    ],
+    "pages": {
+      "dual-screen-portable-monitors-vs-alternatives": {
+        "title": "Dual Portable Monitors vs One Screen: Connections and Desk Fit",
+        "dek": "Choose a freestanding dual portable monitor, a laptop-mounted screen extender, or one conventional monitor by host display limits, cable count, travel weight, desk depth, and the way the screens are supported.",
+        "updatedAt": "November 3, 2026",
+        "image": "/images/affiliate/category-homeoffice-desks-editorial-v2.webp",
+        "imageAlt": "Original editorial scene with an unbranded standing desk, power, mat, and cable-management equipment",
+        "searchQuestion": "Are two portable screens worth carrying instead of one?",
+        "quickAnswer": "Choose two portable panels only when the extra independent workspace is useful enough to justify the total weight, power and setup. Start with the exact laptop and connection design: native video, MST and driver-based USB graphics have different limits. Choose one portable screen when it supplies enough extra workspace; use a conventional desk display when the equipment rarely moves.",
+        "editorialMethod": [
+          "Manufacturer and host-document decision worksheet. No hands-on brightness, hinge-load, travel-weight or driver-reliability test is claimed.",
+          "The exact manual and received hardware must match the retailer variant. A visually similar monitor is not evidence of the same USB graphics design.",
+          "November 3, 2026: connection-decision examples added and Apple host guidance rechecked. The November 1 retailer observation retains its original date and limits."
+        ],
+        "communityEvidence": [],
+        "governance": {
+          "decision": "rewrite",
+          "independentDemand": "Are two portable screens worth carrying instead of one?",
+          "distinctFrom": "One authored hub includes the useful fit, setup, cost and alternative decisions from redirected siblings.",
+          "benchmark": "Full effective page and primary-document review; exact model and unknown capabilities separated; rendered and purchase paths still require local acceptance."
+        },
+        "sections": [
+          {
+            "heading": "Separate native video from driver-based USB graphics",
+            "body": "Native video is limited by the exact host GPU, ports, display count and requested modes. Some dual-panel designs instead use USB graphics software; those need their own OS support and permissions. Neither design is established by the USB-C socket alone. Confirm which route produces each independent desktop before purchase, especially on a managed work laptop."
+          },
+          {
+            "heading": "Match the confirmed INVPM009 listing to its own instructions",
+            "body": "The November 1 exact-ASIN observation identifies B0FNRNK72C as INVPM009. It describes a 30W power supply and different Windows, Mac and HDMI display modes, summarized below. That resolves the recorded retailer model identity; it does not establish the exact supplied manual, software publisher or every host combination. Keep the older manufacturer catalog example separate and obtain the matching instructions before installing a driver."
+          },
+          {
+            "heading": "Draw one cable and power path per panel",
+            "body": "For each screen, write the source port, cable, adapter, power source, target resolution, and refresh rate. Confirm whether one USB-C connection carries video and sufficient power or whether a second cable is required. A tidy product photo is not evidence that the exact laptop will drive both panels from one port."
+          },
+          {
+            "heading": "Separate screen support from portability",
+            "body": "A freestanding stacked unit puts weight on its own stand but needs desk depth and a stable surface. A lid-mounted extender reduces stand clutter but transfers load and leverage to the laptop. Test hinge movement, vent clearance, webcam clearance, cable strain, and the ability to type without screen movement before the return window closes."
+          },
+          {
+            "heading": "Run a real pack-and-work trial",
+            "body": "Pack the displays, stand, power supply, adapters, and protective case, then set up at the smallest surface you actually use. Check total carried weight, setup time, screen stability, sleep-and-wake recovery, and whether the laptop can still be positioned comfortably. If the equipment stays on one desk, compare a normal monitor before paying a portability premium."
+          },
+          {
+            "heading": "Try one screen before carrying two",
+            "body": "If the extra job is one reference document, a call window or a spreadsheet, one portable panel may be enough. Compare the complete packed setup and the smallest desk you actually use. A conventional fixed monitor is the practical alternative when travel is rare. Use the linked USB-C video-path guide to distinguish a native connection from a driver-based single-screen alternative."
+          },
+          {
+            "heading": "Check INVPM009’s actual connection modes",
+            "body": "The selected current listing identifies INVPM009 with a 30W adapter, full-function USB-C signal lead and separate power lead. Windows extension is advertised without a driver over the appropriate USB-C path; Mac independent extension requires the model’s Mac Extend driver feature. HDMI is described as duplicate/split-screen only on either system. These are retailer-described modes, not a tested workaround for every Mac chip or a license to install an unverified driver."
+          }
+        ],
+        "comparisonTable": {
+          "title": "How much portable workspace do you actually need?",
+          "columns": [
+            "One portable screen",
+            "Freestanding dual panels",
+            "Laptop-mounted extender"
+          ],
+          "rows": [
+            {
+              "label": "Support",
+              "values": [
+                "Separate lightweight stand or cover",
+                "Its own stand; needs a stable footprint",
+                "Laptop lid and hinge take the assembly load"
+              ]
+            },
+            {
+              "label": "Connection proof",
+              "values": [
+                "One supported video path plus sufficient power",
+                "Document two independent images, not just duplicated panels",
+                "Check each panel path as well as the exact laptop fit"
+              ]
+            },
+            {
+              "label": "Pack list",
+              "values": [
+                "Screen, stand, cable, protection and any power supply",
+                "Both panels, larger support, all cables, charger and case",
+                "Extender, support feet if supplied, cables and laptop protection"
+              ]
+            },
+            {
+              "label": "Best reason to choose",
+              "values": [
+                "One reference window or travel workspace is enough",
+                "Two independent work areas justify the complete travel load",
+                "Verified physical fit saves enough setup space"
+              ]
+            },
+            {
+              "label": "Skip when",
+              "values": [
+                "The laptop display alone already meets the task",
+                "The second panel duplicates the first or exceeds the usable desk",
+                "The lid flexes, controls or vents are obstructed, or support is uncertain"
+              ]
+            }
+          ]
+        },
+        "relatedRoundups": [],
+        "relatedProducts": [],
+        "relatedGuides": [
+          "portable-monitor-usb-c-dp-alt-mode-displaylink-guide",
+          "macbook-dual-monitor-dock-chip-compatibility-guide",
+          "usb-c-dock-vs-monitor-hub-guide"
+        ],
+        "decisionLayout": true,
+        "curatedFamilyHub": true,
+        "relatedGuidePolicy": "explicit",
+        "decisionPurchase": {
+          "asin": "B0FNRNK72C",
+          "model": "InnoView INVPM009 dual 15.6-inch monitor",
+          "qualifies": "Consider B0FNRNK72C when two portable panels solve a real task, the host has the required full-function USB-C video path, and the supplied 30W power setup is practical. Verify the exact operating-system display mode before ordering.",
+          "stop": "The current listing says HDMI provides duplicate or split-screen output, not two independent extended screens. Mac independent extension needs the model’s driver path; confirm publisher, OS support and employer permission first. Do not treat USB-C shape or the word dual as proof.",
+          "keep": "Keep one portable or existing desktop screen if it provides enough workspace. Compare total carried weight, cables, adapter, seller and returns; no driver, motion or battery test is claimed."
+        }
+      }
+    }
+  },
+  "network:search-followup-20261103:deco": {
+    "sources": [
+      {
+        "name": "TP-Link Deco BE63",
+        "url": "https://www.tp-link.com/us/deco-mesh-wifi/product-family/deco-be63/",
+        "note": "Official BE63 radio, port, and backhaul specifications."
+      },
+      {
+        "name": "TP-Link Deco BE67",
+        "url": "https://www.tp-link.com/us/deco-mesh-wifi/product-family/deco-be67/",
+        "note": "Official BE67 wireless and Ethernet specifications."
+      },
+      {
+        "name": "TP-Link Deco BE67 support",
+        "url": "https://www.tp-link.com/us/support/download/deco-be67/",
+        "note": "Official regional hardware-version and firmware guidance."
+      },
+      {
+        "name": "TP-Link Deco BE85",
+        "url": "https://www.tp-link.com/us/deco-mesh-wifi/product-family/deco-be85/",
+        "note": "Official BE85 10GbE, SFP+, wireless, and backhaul specifications."
+      }
+    ],
+    "pages": {
+      "deco-be63-vs-be67-vs-be85-buying-guide": {
+        "title": "Deco BE63 vs BE67 vs BE85: Which Should You Buy?",
+        "dek": "Compare Deco BE63, BE67, and BE85 by 2.5GbE and 10GbE ports, Wi-Fi class, pack size, wired backhaul, hardware version, and the network you actually have.",
+        "updatedAt": "November 3, 2026",
+        "quickAnswer": "Choose Deco BE63 for the best-value 2.5GbE mesh in most homes. Step up to BE67 only when a defined 10GbE WAN, LAN, NAS, or wired-backhaul path will be used; choose BE85 when its additional radio and premium 10GbE or SFP+ capacity solve a measured large-home or local-network bottleneck. Match equal pack sizes and hardware versions before comparing price.",
+        "relatedProducts": [
+          "tp-link-deco-be63-wifi-7-mesh",
+          "tp-link-deco-be67-wifi-7-mesh",
+          "tp-link-deco-be85-wifi-7-mesh"
+        ],
+        "relatedRoundups": [
+          "best-mesh-wifi-for-apartments-and-homes",
+          "tp-link-deco-be67-vs-be63",
+          "deco-be85-vs-be67"
+        ],
+        "sections": [
+          {
+            "heading": "Start with the wired path",
+            "body": "BE63 is usually the disciplined choice when a 2.5Gbps modem, switch, office, or wired backhaul path is the real upgrade. BE67 and BE85 make more sense only when 10GbE hardware, a fast NAS, a multi-gig desktop, or a planned network shelf can use the extra ports."
+          },
+          {
+            "heading": "Do not buy aggregate speed without clients",
+            "body": "The higher Wi-Fi class on a box is not a single-device speed promise. Phones, laptops, adapters, distance, channel conditions, and backhaul decide what a client can actually use. A BE63 placed well can beat a more expensive kit placed poorly."
+          },
+          {
+            "heading": "Two-pack versus three-pack is a layout question",
+            "body": "Use a two-pack when the router and one satellite can cover the important rooms with a strong upstream link. Use a three-pack when floors, long hallways, or masonry create separate zones. Avoid placing a wireless node inside the dead zone just because the pack includes one."
+          },
+          {
+            "heading": "When BE67 is the better step-up",
+            "body": "Choose BE67 over BE63 when 10GbE ports are part of the plan, you are comparing equal pack sizes, and the home has enough Wi-Fi 7 or wired demand to justify the price difference. If everything downstream is still 1GbE or 2.5GbE, the upgrade may be hard to feel."
+          },
+          {
+            "heading": "When BE85 is not overkill",
+            "body": "BE85 belongs in a premium network plan: 10GbE or SFP+ infrastructure, heavy local transfers, a large home, and users willing to tune placement and cabling. For ordinary web, streaming, calls, and gaming, the money is often better spent on Ethernet runs, a switch, or better node placement."
+          },
+          {
+            "heading": "Check the exact hardware version before comparing firmware",
+            "body": "Regional model pages and support downloads can expose different hardware revisions and release timing. Match the label on the selected kit to the correct regional support page before treating a firmware feature, rollback path, or troubleshooting step as universal across BE63, BE67, and BE85."
+          }
+        ],
+        "searchQuestion": "Should you buy Deco BE63, BE67, or BE85 for a Wi-Fi 7 mesh?",
+        "governance": {
+          "decision": "keep",
+          "independentDemand": "A three-model Deco Wi-Fi 7 decision based on wired ports, backhaul, pack size, clients, and the network that already exists.",
+          "distinctFrom": "The individual reviews verify one model, the pack-size guide chooses node count, and the backhaul guide plans cabling; this page alone chooses between BE63, BE67, and BE85.",
+          "benchmark": "Preserve the click-bearing URL and first-screen answer while making the current US hardware and port differences scannable from official TP-Link specifications."
+        },
+        "comparisonTable": {
+          "title": "Current US Deco BE63, BE67, and BE85 wired-path check",
+          "columns": [
+            "Deco BE63",
+            "Deco BE67",
+            "Deco BE85"
+          ],
+          "rows": [
+            {
+              "label": "Ethernet per unit",
+              "values": [
+                "4× 2.5Gbps WAN/LAN",
+                "1× 10Gbps, 1× 2.5Gbps, and 1× 1Gbps WAN/LAN",
+                "1× 10Gbps, 1× 10Gbps SFP+/RJ45 combo, and 2× 2.5Gbps WAN/LAN"
+              ]
+            },
+            {
+              "label": "Best reason to step up",
+              "values": [
+                "Several useful 2.5GbE paths without paying for unused 10GbE",
+                "One defined 10GbE WAN, NAS, workstation, or backhaul path",
+                "Two 10GbE-class paths, SFP+ flexibility, and a premium local-network plan"
+              ]
+            },
+            {
+              "label": "Do not assume",
+              "values": [
+                "The BE10000 class is one-client throughput",
+                "Every port is 10Gbps or that one 10Gbps port remains LAN after WAN is assigned",
+                "SFP+ replaces the need to map the ONT, switch, NAS, clients, and cables"
+              ]
+            }
+          ]
+        },
+        "editorialMethod": [
+          "Current US model pages and support records were checked on October 6, 2026. This is a specification-led network-planning guide, not a hands-on throughput or coverage test.",
+          "November 3, 2026: three transparent network-path calculations added. Hypothetical link rates and line-rate ceilings are not speed-test results; current retailer evidence dates are unchanged."
+        ],
+        "relatedGuides": [
+          "deco-be63-ethernet-backhaul-setup",
+          "deco-be63-be67-two-pack-vs-three-pack",
+          "deco-wifi-7-single-unit-vs-two-pack",
+          "mesh-wifi-node-placement-guide",
+          "is-wifi-7-worth-it-for-1gbps-internet"
+        ]
+      }
+    }
+  },
+  "baby:search-followup-20261103:potty-formats": {
+    "sources": [
+      {
+        "name": "Nationwide Children’s: Potty chairs and seats",
+        "url": "https://www.nationwidechildrens.org/family-resources-education/health-wellness-and-safety-resources/helping-hands/toilet-training",
+        "note": "Potty Chairs and Seats section checked November 3, 2026: floor-level foot support and toilet-seat footstool guidance. This does not approve an individual product or child’s fit."
+      },
+      {
+        "name": "SKYROKU assembly sheet",
+        "url": "https://m.media-amazon.com/images/I/C1NP8R2XIcL.pdf",
+        "note": "Entire single physical page visually read, steps 1–14. It is an assembly diagram, not a load-test or complete care manual."
+      },
+      {
+        "name": "Amazon: SKYROKU Whitegray two-step potty seat",
+        "url": "https://www.amazon.com/dp/B0CQZS53HL",
+        "note": "Selected US variant and offer observed November 1, 2026, for New York 10001. Seller SKYROKU Direct; Amazon fulfillment. Check current condition, price and terms. No received-unit test."
+      }
+    ],
+    "pages": {
+      "potty-training-seats-buying-guide": {
+        "title": "Potty Training Seat vs Chair vs Ladder: Fit & Setup Guide",
+        "dek": "Choose a floor potty, toilet-seat reducer with foot support, or ladder seat by the child’s usable support, toilet fit, bathroom space and adult-help routine. The SKYROKU example has separate model-specific limits.",
+        "updatedAt": "November 3, 2026",
+        "image": "/images/affiliate/breadth-baby-potty-training-seats.webp",
+        "imageAlt": "Editorial buying worksheet for potty training seats showing fit, compatibility, ownership checks, and the simpler alternative",
+        "searchQuestion": "Should you choose a potty chair, a toilet seat or a ladder seat?",
+        "quickAnswer": "Choose a floor potty when a low, independently positioned seat and feet on the floor suit the routine. Choose a toilet-seat reducer with suitable foot support when the existing toilet fits and adult help is practical. A ladder seat combines access steps and a reducer, but needs its own toilet, floor and assembly checks; extra steps do not establish a better fit. Keep a stable setup that already works.",
+        "governance": {
+          "decision": "rewrite",
+          "independentDemand": "Will the SKYROKU Whitegray ladder fit this toilet?",
+          "distinctFrom": "The named variant, a concrete household task and a usable existing-equipment option.",
+          "benchmark": "Exact identity, useful comparison, explicit uncertainty and conditional purchase."
+        },
+        "comparisonTable": {
+          "title": "Compare three potty-training setups",
+          "columns": [
+            "Floor potty chair",
+            "Reducer + foot support",
+            "Ladder seat"
+          ],
+          "rows": [
+            {
+              "label": "Main benefit",
+              "values": [
+                "Low seat; independent bathroom placement",
+                "Uses the existing toilet with a smaller separate insert",
+                "Combines toilet access steps and seat reducer"
+              ]
+            },
+            {
+              "label": "Support to check",
+              "values": [
+                "Feet reach the floor; seat remains stable",
+                "Reducer fits securely; foot support is suitable",
+                "Seat and floor contacts bear evenly; joints and height match instructions"
+              ]
+            },
+            {
+              "label": "Everyday work",
+              "values": [
+                "Emptying and manufacturer-directed cleaning",
+                "Fitting/removing the insert and positioning the support",
+                "Assembly checks, folding/storage and clearing the toilet for others"
+              ]
+            },
+            {
+              "label": "Choose another format when",
+              "values": [
+                "No practical place to empty, clean or store it",
+                "Seat fit or supported access cannot be made secure",
+                "Toilet shape/height, floor contact, assembly or supervision conditions fail"
+              ]
+            }
+          ]
+        },
+        "editorialMethod": [
+          "The exact selected retail identity and offer were observed on November 1, 2026, in the US delivery session. Offers and terms may change.",
+          "Sources distinguish retailer descriptions, applicable manufacturer instructions and general guidance. No physical fit, material, installation or performance test was performed.",
+          "November 3, 2026: equipment-format comparison added using Nationwide Children’s potty-chair and seat guidance. SKYROKU assembly and retail observations keep their original scope and dates; no child-use or load test."
+        ],
+        "communityEvidence": [],
+        "sections": [
+          {
+            "heading": "Choose the format before a particular brand",
+            "body": "A floor potty can sit where the child can reach it and needs a place to empty and clean it after use. A reducer uses the existing toilet but still needs a secure fit and foot support. A ladder adds a larger assembled object that must bear correctly on the toilet and floor, and be moved or stored for other bathroom users. Tape out the footprint and check the whole routine before paying for extra pieces."
+          },
+          {
+            "heading": "Check feet, access and adult help",
+            "body": "Nationwide Children’s describes a floor potty low enough for feet to rest firmly on the floor, or a toilet seat with a footstool when support is not attached. Use that as a format-selection check, alongside the exact product instructions. Practise approach, turning, sitting and standing with adult help; stop if the seat, step or floor contacts shift. Product choice does not set a universal training age or replace individualized advice."
+          },
+          {
+            "heading": "Measure the toilet and floor together",
+            "body": "B0CQZS53HL identifies BEAR-POTTY-MULTI, Whitegray. Check the exact placement against the received instructions and make sure both floor feet and seat supports bear evenly. Do not infer assembled dimensions from the thin 0.99-inch metadata field or assume a 99% universal-fit claim applies."
+          },
+          {
+            "heading": "Assemble and adjust before the child climbs",
+            "body": "The single-page picture guide shows the lower pedal and triangular legs, upper legs and pedal, seat connections, screw tightening, cushion fasteners and height adjustment. Complete those steps with an adult, check every connection and look for rocking on the dry level floor. Recheck after adjustments; stop if the seat or feet shift."
+          },
+          {
+            "heading": "Compare with a simpler setup",
+            "body": "A stable reducer plus suitable separate foot support may already work. Match toilet learning to the child’s readiness and provide close adult help climbing, turning and sitting. The 200-plus-pound/adult language is retailer marketing, not a verified working load; this review does not qualify adult use or unattended climbing."
+          }
+        ],
+        "relatedGuides": [],
+        "relatedRoundups": [],
+        "decisionLayout": true,
+        "curatedFamilyHub": true,
+        "relatedGuidePolicy": "explicit",
+        "decisionPurchase": {
+          "asin": "B0CQZS53HL",
+          "model": "SKYROKU Whitegray two-step potty seat",
+          "qualifies": "The toilet meets the confirmed fit requirements and the assembled seat and feet remain stable during supervised use.",
+          "stop": "Do not buy if the toilet is square or outside the stated range, connections rock, or adult-load approval is essential.",
+          "keep": "Keep a stable reducer and appropriately fitted foot support when the current setup works."
+        }
+      }
+    }
   }
 }

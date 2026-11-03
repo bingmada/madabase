@@ -78,7 +78,7 @@ export function planMiniPc(input: { model: string; task: string; pcie: string; h
     }
   } else if (input.task === "ram") {
     const layout = memoryLayout(input.ramGb,input.modules,model.validatedRamGb,model.memoryGeneration);
-    reasons.push(`${model.name}: ${model.memory}. The cited Lenovo specification documents ${model.validatedRamGb}GB; this is not a hands-on test of your modules or a proven absolute hardware ceiling.`);
+    reasons.push(`${model.name}: ${model.memory}. The cited Lenovo specification documents ${model.validatedRamGb}GB; that documented configuration does not establish an absolute hardware ceiling.`);
     checklist.push(...layout.steps,`Match ${model.memorySpec} and the exact CPU/BIOS. Read existing labels; capacity alone does not prove an electrical match. DDR4 and DDR5 are not interchangeable.`);
     if (layout.count === null) { status = "unknown"; reasons.push("Inspect both current slot labels and choose a target within this model’s documented module layout. Unsupported capacities and uninspected modules do not receive a component offer."); }
     if (!Number.isFinite(input.ramGb) || input.ramGb <= 0 || input.ramGb > model.validatedRamGb) { status = "unknown"; reasons.push("A target beyond this profile’s documented capacity needs exact modules, CPU/BIOS and separately attributed evidence; it remains unverified here."); }

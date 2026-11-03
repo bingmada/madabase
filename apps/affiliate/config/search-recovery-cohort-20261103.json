@@ -1,0 +1,60 @@
+{
+  "createdAt": "2026-11-03",
+  "baselineRelease": "0a7166a8d68158c149589455c801ec58e48fadc3",
+  "metricPeriod": {
+    "start": "2026-09-06",
+    "end": "2026-10-03",
+    "currentStart": "2026-10-04",
+    "currentEnd": "2026-10-31"
+  },
+  "pages": [
+    {
+      "url": "https://homeoffice.madabase.com/best/logitech-litra-glow-vs-elgato-key-light-neo",
+      "site": "homeoffice"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-vs-alternatives",
+      "site": "homeoffice"
+    },
+    {
+      "url": "https://network.madabase.com/guides/deco-be63-vs-be67-vs-be85-buying-guide",
+      "site": "network"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/48-vs-55-inch-desk-guide",
+      "site": "homeoffice"
+    },
+    {
+      "url": "https://baby.madabase.com/guides/ergobaby-omni-breeze-positions-by-age",
+      "site": "baby"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/monitor-arm-clamp-reinforcement-guide",
+      "site": "homeoffice"
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/momcozy-mw05-portable-milk-warmer",
+      "site": "baby"
+    },
+    {
+      "url": "https://baby.madabase.com/reviews/ubbi-steel-diaper-pail",
+      "site": "baby"
+    },
+    {
+      "url": "https://baby.madabase.com/best/momcozy-purehug-vs-ergobaby-omni-breeze",
+      "site": "baby"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/best/ergear-48x24-vs-flexispot-e7-mini",
+      "site": "homeoffice"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/reviews/jabra-speak2-40-usb-speakerphone",
+      "site": "homeoffice"
+    },
+    {
+      "url": "https://baby.madabase.com/guides/potty-training-seats-buying-guide",
+      "site": "baby"
+    }
+  ]
+}

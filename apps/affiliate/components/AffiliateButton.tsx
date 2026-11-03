@@ -115,17 +115,13 @@ export function AffiliateButton({
     </a>
   );
 
-  if (!sticky) return primaryButton;
-
   return (
     <>
-      {firstViewport ? <div className="inline-flex max-w-full flex-col items-start gap-1.5">
+      <div className="inline-flex max-w-full flex-col items-start align-top">
         {primaryButton}
-        <p className="max-w-md text-xs leading-5 text-[var(--muted)]">
-          Current price &amp; availability · purchase link
-        </p>
-      </div> : primaryButton}
-      {showStickyDock ? (
+        <div data-commission-slot="true" />
+      </div>
+      {sticky && showStickyDock ? (
         <a
           aria-label={`Purchase option for ${dockFullLabel}`}
           className="fixed inset-x-3 z-40 rounded-lg border border-[var(--border)] bg-white/95 p-2.5 shadow-[0_10px_35px_rgba(15,23,42,0.24)] backdrop-blur transition hover:border-[var(--brand)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand)] lg:inset-x-auto lg:right-6 lg:w-[22rem] lg:max-w-[calc(100vw-3rem)]"
@@ -148,7 +144,7 @@ export function AffiliateButton({
               <p className="line-clamp-2 break-words text-xs font-bold text-[var(--text)]" title={dockFullLabel}>
                 {dockVisibleLabel}
               </p>
-              <p className="mt-0.5 text-[11px] leading-4 text-[var(--muted)]">Current price &amp; availability · purchase link</p>
+              <p className="mt-0.5 text-xs leading-5 text-[var(--muted)]">Current price &amp; availability</p>
             </div>
             <span className="button-primary shrink-0 px-3 py-2 text-xs">
               {isAmazon ? "Amazon price" : "Check price"}
