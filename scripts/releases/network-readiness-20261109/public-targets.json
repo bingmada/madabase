@@ -1,0 +1,4984 @@
+[
+  {
+    "path": "/reviews/tp-link-deco-be63-wifi-7-mesh",
+    "kind": "product",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/reviews/amazon-eero-6-mesh-wifi-system",
+    "kind": "product",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/reviews/netgear-orbi-970-wifi-7-mesh",
+    "kind": "product",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/reviews/tp-link-be400-wifi-7-router",
+    "kind": "product",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/reviews/asus-rt-be86u-wifi-7-gaming-router",
+    "kind": "product",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/reviews/glinet-beryl-ax-travel-router",
+    "kind": "product",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/reviews/tp-link-tl-sg108-gigabit-switch",
+    "kind": "product",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/reviews/netgear-gs308e-gigabit-switch",
+    "kind": "product",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/reviews/jadaol-cat6-flat-ethernet-cable",
+    "kind": "product",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/reviews/monoprice-slimrun-cat6a-ethernet-patch-cable",
+    "kind": "product",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/reviews/ugreen-revodok-usb-c-gigabit-ethernet-hub",
+    "kind": "product",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/reviews/arris-surfboard-s33-cable-modem",
+    "kind": "product",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/reviews/motorola-mb8611-cable-modem",
+    "kind": "product",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/reviews/hitron-coda56-cable-modem",
+    "kind": "product",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/reviews/trendnet-teg-s350-2-5g-switch",
+    "kind": "product",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/reviews/tp-link-ue302c-2-5g-usb-c-ethernet-adapter",
+    "kind": "product",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/reviews/sabrent-nt-25ga-2-5g-usb-c-ethernet-adapter",
+    "kind": "product",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/reviews/screenbeam-ecb7250k02-moca-2-5-adapter-kit",
+    "kind": "product",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/reviews/tp-link-tl-sg105-m2-2-5g-switch",
+    "kind": "product",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/reviews/netgear-ms305-2-5g-switch",
+    "kind": "product",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/reviews/apc-back-ups-router-modem-bundle",
+    "kind": "product",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/reviews/apc-be600m1-router-ups",
+    "kind": "product",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/reviews/cyberpower-sl700u-router-ups",
+    "kind": "product",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/reviews/tp-link-tl-sg1005p-poe-switch",
+    "kind": "product",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/reviews/tp-link-tl-sg108pe-poe-switch",
+    "kind": "product",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/reviews/netgear-gs308epp-poe-switch",
+    "kind": "product",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/reviews/reolink-rla-ps1-poe-switch",
+    "kind": "product",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/reviews/tp-link-deco-be67-wifi-7-mesh",
+    "kind": "product",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/reviews/tp-link-deco-be25-wifi-7-mesh",
+    "kind": "product",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/reviews/tp-link-deco-be85-wifi-7-mesh",
+    "kind": "product",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/reviews/asus-zenwifi-bt6-wifi-7-mesh",
+    "kind": "product",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/reviews/trendnet-teg-s380-2-5g-switch",
+    "kind": "product",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/reviews/trendnet-teg-s750-10gbe-switch",
+    "kind": "product",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/best/best-mesh-wifi-for-apartments-and-homes",
+    "kind": "comparison",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/best/best-wifi-7-routers-for-home-networks",
+    "kind": "comparison",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/best/best-wired-networking-upgrades",
+    "kind": "comparison",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/best/deco-be25-vs-be67",
+    "kind": "comparison",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/best/best-mesh-wifi-for-2-5gbps-internet",
+    "kind": "comparison",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/best/best-cable-modems-for-xfinity-spectrum-cox",
+    "kind": "comparison",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/best/arris-s33-vs-motorola-mb8611-vs-hitron-coda56",
+    "kind": "comparison",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/best/best-2-5g-home-network-upgrades",
+    "kind": "comparison",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/best/tp-link-ue302c-vs-sabrent-nt-25ga",
+    "kind": "comparison",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/best/best-fanless-2-5gbe-switches-home-nas-mesh",
+    "kind": "comparison",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/best/tl-sg105-m2-vs-ms305-vs-teg-s350",
+    "kind": "comparison",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/best/best-ups-for-router-and-modem",
+    "kind": "comparison",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/best/best-poe-switches-for-home-cameras-and-access-points",
+    "kind": "comparison",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/best/tp-link-tl-sg1005p-vs-tl-sg108pe-vs-netgear-gs308epp",
+    "kind": "comparison",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/best/tp-link-deco-be67-vs-be63",
+    "kind": "comparison",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/best/deco-be25-vs-be63",
+    "kind": "comparison",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/best/deco-be85-vs-be67",
+    "kind": "comparison",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/best/asus-zenwifi-bt6-vs-deco-be63",
+    "kind": "comparison",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/best/netgear-gs308e-vs-tp-link-tl-sg108",
+    "kind": "comparison",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/best/best-deco-wifi-7-mesh-for-wired-backhaul",
+    "kind": "comparison",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/deco-be63-vs-be67-vs-be85-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/wifi-7-vs-wifi-6-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/mesh-wifi-node-placement-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/router-placement-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/ethernet-cable-category-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/home-ethernet-switch-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/usb-c-ethernet-adapter-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/travel-router-vpn-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/is-wifi-7-worth-it-for-1gbps-internet",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/2-5gbe-vs-10gbe-mesh-backhaul-checklist",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/2-5gbe-home-network-upgrade-checklist",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/mesh-wifi-vs-single-router-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/ethernet-stuck-at-100-mbps-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/netgear-gs908e-review",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/wired-vs-wireless-mesh-backhaul-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/deco-be63-ethernet-backhaul-setup",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/deco-be63-multigig-ports-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/wifi-7-device-compatibility-checklist",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/cable-modem-2-5g-port-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/moca-2-5-vs-ethernet-run-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/modem-router-combo-vs-separate-modem-router-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/2-5g-vs-10g-switch-for-home-nas-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/poe-switch-for-home-cameras-and-access-points-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/moca-splitter-filter-checklist",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/xfinity-gateway-bridge-mode-vs-own-router-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/5-port-vs-8-port-2-5gbe-switch",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/2-5gbe-switch-port-budget-for-nas-mesh",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/router-ups-runtime-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/poe-switch-power-budget-calculator-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/poe-vs-poe-plus-for-cameras-access-points",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/managed-vs-unmanaged-poe-switch-home-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/deco-be67-10gbe-network-checklist",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/deco-be63-be67-two-pack-vs-three-pack",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/is-deco-be67-worth-it-for-gigabit-internet",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/deco-mesh-connection-drops-troubleshooting",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/wifi-7-mesh-budget-midrange-premium-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/when-to-upgrade-to-2-5gbe-switch",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/deco-be63-be67-wired-backhaul-port-checklist",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/deco-wifi-7-model-number-buyer-checklist",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/deco-wifi-7-single-unit-vs-two-pack",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/indoor-wifi-access-points-vs-alternatives",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/outdoor-wifi-access-points-vs-alternatives",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/point-to-point-wireless-bridges-vs-alternatives",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/wifi-range-extenders-vs-alternatives",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/usb-wifi-adapters-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/pcie-wifi-adapters-vs-alternatives",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/moca-network-adapters-vs-alternatives",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/powerline-network-adapters-vs-alternatives",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/ten-gigabit-ethernet-switches-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/ten-gigabit-ethernet-switches-vs-alternatives",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/ten-gigabit-ethernet-switches-compatibility-and-fit-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/ten-gigabit-ethernet-switches-ownership-cost-and-maintenance",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/sfp-plus-network-switches-vs-alternatives",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/ethernet-network-interface-cards-vs-alternatives",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/usb-c-ethernet-adapters-vs-alternatives",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/poe-injectors-vs-alternatives",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/poe-splitters-vs-alternatives",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/poe-extenders-vs-alternatives",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/sfp-plus-transceivers-compatibility-and-fit-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/direct-attach-copper-cables-vs-alternatives",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/fiber-media-converters-vs-alternatives",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/network-attached-storage-vs-alternatives",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/hardware-firewall-appliances-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/hardware-firewall-appliances-vs-alternatives",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/hardware-firewall-appliances-compatibility-and-fit-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/hardware-firewall-appliances-ownership-cost-and-maintenance",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/vpn-gateways-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/dual-wan-routers-compatibility-and-fit-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/five-g-home-internet-gateways-compatibility-and-fit-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/mobile-hotspots-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/home-network-racks-vs-alternatives",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/ethernet-patch-panels-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/ethernet-cable-testers-compatibility-and-fit-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/multigig-poe-switches-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/rackmount-power-distribution-units-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/network-cable-toner-probes-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/ethernet-keystone-jacks-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/structured-media-enclosures-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/pass-through-ethernet-crimping-tools-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/ethernet-surge-protectors-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/rj45-modular-plugs-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/network-punch-down-tools-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/rack-cable-management-panels-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/usb-print-servers-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/poe-network-video-recorders-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/bulk-ethernet-cable-reels-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/cloud-managed-access-points-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/coax-cable-testers-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/coax-compression-tools-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/ethernet-inline-couplers-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/ethernet-network-taps-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/fiber-cleaning-kits-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/fiber-optic-patch-cables-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/fiber-optic-power-meters-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/fiber-visual-fault-locators-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/industrial-ethernet-switches-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/kvm-over-ip-extenders-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/managed-2-5gbe-switches-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/mini-ups-for-routers-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/network-rack-cooling-fans-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/network-rack-shelves-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/preterminated-fiber-runs-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/rack-blanking-panels-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/rackmount-network-ups-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/serial-device-servers-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/sfp28-network-switches-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/sfp28-transceivers-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/wall-plate-access-points-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/waterproof-rj45-couplers-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/optical-time-domain-reflectometers-buying-guide",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/guides/home-network-smart-home-outage-plan",
+    "kind": "guide",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/tools/wifi-coverage-estimator",
+    "kind": "tool",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/tools/mesh-node-and-backhaul-planner",
+    "kind": "tool",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/",
+    "kind": "navigation",
+    "requiresContinuation": false
+  },
+  {
+    "path": "/categories/wifi",
+    "kind": "navigation",
+    "requiresContinuation": false
+  },
+  {
+    "path": "/categories/wired",
+    "kind": "navigation",
+    "requiresContinuation": false
+  },
+  {
+    "path": "/categories/backup",
+    "kind": "navigation",
+    "requiresContinuation": false
+  },
+  {
+    "path": "/compatibility",
+    "kind": "navigation",
+    "requiresContinuation": false
+  },
+  {
+    "path": "/compatibility/ethernet",
+    "kind": "navigation",
+    "requiresContinuation": true
+  },
+  {
+    "path": "/about",
+    "kind": "navigation",
+    "requiresContinuation": false
+  },
+  {
+    "path": "/methodology",
+    "kind": "navigation",
+    "requiresContinuation": false
+  },
+  {
+    "path": "/editorial-policy",
+    "kind": "navigation",
+    "requiresContinuation": false
+  },
+  {
+    "path": "/affiliate-disclosure",
+    "kind": "navigation",
+    "requiresContinuation": false
+  },
+  {
+    "path": "/privacy",
+    "kind": "navigation",
+    "requiresContinuation": false
+  },
+  {
+    "path": "/contact",
+    "kind": "navigation",
+    "requiresContinuation": false
+  },
+  {
+    "path": "/search",
+    "kind": "navigation",
+    "requiresContinuation": false
+  },
+  {
+    "path": "/search?topic=mesh",
+    "kind": "navigation",
+    "requiresContinuation": false
+  },
+  {
+    "path": "/search?q=BE63",
+    "kind": "navigation",
+    "requiresContinuation": false
+  },
+  {
+    "path": "/search?journey=fiber",
+    "kind": "navigation",
+    "requiresContinuation": false
+  },
+  {
+    "path": "/en-gb",
+    "kind": "regional-home"
+  },
+  {
+    "path": "/en-gb/reviews/tp-link-deco-be63-wifi-7-mesh",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/reviews/amazon-eero-6-mesh-wifi-system",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/reviews/netgear-orbi-970-wifi-7-mesh",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/reviews/tp-link-be400-wifi-7-router",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/reviews/asus-rt-be86u-wifi-7-gaming-router",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/reviews/glinet-beryl-ax-travel-router",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/reviews/tp-link-tl-sg108-gigabit-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/reviews/netgear-gs308e-gigabit-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/reviews/jadaol-cat6-flat-ethernet-cable",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/reviews/monoprice-slimrun-cat6a-ethernet-patch-cable",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/reviews/ugreen-revodok-usb-c-gigabit-ethernet-hub",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/reviews/arris-surfboard-s33-cable-modem",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/reviews/motorola-mb8611-cable-modem",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/reviews/hitron-coda56-cable-modem",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/reviews/trendnet-teg-s350-2-5g-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/reviews/tp-link-ue302c-2-5g-usb-c-ethernet-adapter",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/reviews/sabrent-nt-25ga-2-5g-usb-c-ethernet-adapter",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/reviews/screenbeam-ecb7250k02-moca-2-5-adapter-kit",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/reviews/tp-link-tl-sg105-m2-2-5g-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/reviews/netgear-ms305-2-5g-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/reviews/apc-back-ups-router-modem-bundle",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/reviews/apc-be600m1-router-ups",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/reviews/cyberpower-sl700u-router-ups",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/reviews/tp-link-tl-sg1005p-poe-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/reviews/tp-link-tl-sg108pe-poe-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/reviews/netgear-gs308epp-poe-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/reviews/reolink-rla-ps1-poe-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/reviews/tp-link-deco-be67-wifi-7-mesh",
+    "kind": "regional-reviews",
+    "indexable": true,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/reviews/tp-link-deco-be25-wifi-7-mesh",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/reviews/tp-link-deco-be85-wifi-7-mesh",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/reviews/asus-zenwifi-bt6-wifi-7-mesh",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/reviews/trendnet-teg-s380-2-5g-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/reviews/trendnet-teg-s750-10gbe-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/best/best-mesh-wifi-for-apartments-and-homes",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/best/best-wifi-7-routers-for-home-networks",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/best/best-wired-networking-upgrades",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/best/deco-be25-vs-be67",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/best/best-mesh-wifi-for-2-5gbps-internet",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/best/best-cable-modems-for-xfinity-spectrum-cox",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/best/arris-s33-vs-motorola-mb8611-vs-hitron-coda56",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/best/best-2-5g-home-network-upgrades",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/best/tp-link-ue302c-vs-sabrent-nt-25ga",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/best/best-fanless-2-5gbe-switches-home-nas-mesh",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/best/tl-sg105-m2-vs-ms305-vs-teg-s350",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/best/best-ups-for-router-and-modem",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/best/best-poe-switches-for-home-cameras-and-access-points",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/best/tp-link-tl-sg1005p-vs-tl-sg108pe-vs-netgear-gs308epp",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/best/tp-link-deco-be67-vs-be63",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/best/deco-be25-vs-be63",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/best/deco-be85-vs-be67",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/best/asus-zenwifi-bt6-vs-deco-be63",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/best/netgear-gs308e-vs-tp-link-tl-sg108",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/best/best-deco-wifi-7-mesh-for-wired-backhaul",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/deco-be63-vs-be67-vs-be85-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/wifi-7-vs-wifi-6-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/mesh-wifi-node-placement-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/router-placement-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/ethernet-cable-category-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/home-ethernet-switch-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/usb-c-ethernet-adapter-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/travel-router-vpn-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/is-wifi-7-worth-it-for-1gbps-internet",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/2-5gbe-vs-10gbe-mesh-backhaul-checklist",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/2-5gbe-home-network-upgrade-checklist",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/mesh-wifi-vs-single-router-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/ethernet-stuck-at-100-mbps-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/netgear-gs908e-review",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/wired-vs-wireless-mesh-backhaul-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/deco-be63-ethernet-backhaul-setup",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/deco-be63-multigig-ports-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/wifi-7-device-compatibility-checklist",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/cable-modem-2-5g-port-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/moca-2-5-vs-ethernet-run-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/modem-router-combo-vs-separate-modem-router-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/2-5g-vs-10g-switch-for-home-nas-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/poe-switch-for-home-cameras-and-access-points-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/moca-splitter-filter-checklist",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/xfinity-gateway-bridge-mode-vs-own-router-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/5-port-vs-8-port-2-5gbe-switch",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/2-5gbe-switch-port-budget-for-nas-mesh",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/router-ups-runtime-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/poe-switch-power-budget-calculator-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/poe-vs-poe-plus-for-cameras-access-points",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/managed-vs-unmanaged-poe-switch-home-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/deco-be67-10gbe-network-checklist",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/deco-be63-be67-two-pack-vs-three-pack",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/is-deco-be67-worth-it-for-gigabit-internet",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/deco-mesh-connection-drops-troubleshooting",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/wifi-7-mesh-budget-midrange-premium-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/when-to-upgrade-to-2-5gbe-switch",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/deco-be63-be67-wired-backhaul-port-checklist",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/deco-wifi-7-model-number-buyer-checklist",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/deco-wifi-7-single-unit-vs-two-pack",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/indoor-wifi-access-points-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/outdoor-wifi-access-points-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/point-to-point-wireless-bridges-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/wifi-range-extenders-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/usb-wifi-adapters-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/pcie-wifi-adapters-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/moca-network-adapters-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/powerline-network-adapters-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/ten-gigabit-ethernet-switches-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/ten-gigabit-ethernet-switches-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/ten-gigabit-ethernet-switches-compatibility-and-fit-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/ten-gigabit-ethernet-switches-ownership-cost-and-maintenance",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/sfp-plus-network-switches-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/ethernet-network-interface-cards-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/usb-c-ethernet-adapters-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/poe-injectors-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/poe-splitters-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/poe-extenders-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/sfp-plus-transceivers-compatibility-and-fit-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/direct-attach-copper-cables-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/fiber-media-converters-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/network-attached-storage-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/hardware-firewall-appliances-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/hardware-firewall-appliances-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/hardware-firewall-appliances-compatibility-and-fit-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/hardware-firewall-appliances-ownership-cost-and-maintenance",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/vpn-gateways-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/dual-wan-routers-compatibility-and-fit-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/five-g-home-internet-gateways-compatibility-and-fit-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/mobile-hotspots-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/home-network-racks-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/ethernet-patch-panels-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/ethernet-cable-testers-compatibility-and-fit-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/multigig-poe-switches-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/rackmount-power-distribution-units-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/network-cable-toner-probes-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/ethernet-keystone-jacks-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/structured-media-enclosures-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/pass-through-ethernet-crimping-tools-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/ethernet-surge-protectors-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/rj45-modular-plugs-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/network-punch-down-tools-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/rack-cable-management-panels-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/usb-print-servers-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/poe-network-video-recorders-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/bulk-ethernet-cable-reels-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/cloud-managed-access-points-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/coax-cable-testers-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/coax-compression-tools-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/ethernet-inline-couplers-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/ethernet-network-taps-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/fiber-cleaning-kits-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/fiber-optic-patch-cables-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/fiber-optic-power-meters-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/fiber-visual-fault-locators-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/industrial-ethernet-switches-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/kvm-over-ip-extenders-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/managed-2-5gbe-switches-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/mini-ups-for-routers-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/network-rack-cooling-fans-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/network-rack-shelves-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/preterminated-fiber-runs-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/rack-blanking-panels-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/rackmount-network-ups-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/serial-device-servers-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/sfp28-network-switches-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/sfp28-transceivers-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/wall-plate-access-points-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/waterproof-rj45-couplers-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/optical-time-domain-reflectometers-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/guides/home-network-smart-home-outage-plan",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/tools/wifi-coverage-estimator",
+    "kind": "regional-tools",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/tools/mesh-node-and-backhaul-planner",
+    "kind": "regional-tools",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-gb/categories/wifi",
+    "kind": "regional-categories",
+    "indexable": false,
+    "requiresContinuation": false
+  },
+  {
+    "path": "/en-gb/categories/wired",
+    "kind": "regional-categories",
+    "indexable": false,
+    "requiresContinuation": false
+  },
+  {
+    "path": "/en-gb/categories/backup",
+    "kind": "regional-categories",
+    "indexable": false,
+    "requiresContinuation": false
+  },
+  {
+    "path": "/en-ca",
+    "kind": "regional-home"
+  },
+  {
+    "path": "/en-ca/reviews/tp-link-deco-be63-wifi-7-mesh",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/reviews/amazon-eero-6-mesh-wifi-system",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/reviews/netgear-orbi-970-wifi-7-mesh",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/reviews/tp-link-be400-wifi-7-router",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/reviews/asus-rt-be86u-wifi-7-gaming-router",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/reviews/glinet-beryl-ax-travel-router",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/reviews/tp-link-tl-sg108-gigabit-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/reviews/netgear-gs308e-gigabit-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/reviews/jadaol-cat6-flat-ethernet-cable",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/reviews/monoprice-slimrun-cat6a-ethernet-patch-cable",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/reviews/ugreen-revodok-usb-c-gigabit-ethernet-hub",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/reviews/arris-surfboard-s33-cable-modem",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/reviews/motorola-mb8611-cable-modem",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/reviews/hitron-coda56-cable-modem",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/reviews/trendnet-teg-s350-2-5g-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/reviews/tp-link-ue302c-2-5g-usb-c-ethernet-adapter",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/reviews/sabrent-nt-25ga-2-5g-usb-c-ethernet-adapter",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/reviews/screenbeam-ecb7250k02-moca-2-5-adapter-kit",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/reviews/tp-link-tl-sg105-m2-2-5g-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/reviews/netgear-ms305-2-5g-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/reviews/apc-back-ups-router-modem-bundle",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/reviews/apc-be600m1-router-ups",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/reviews/cyberpower-sl700u-router-ups",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/reviews/tp-link-tl-sg1005p-poe-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/reviews/tp-link-tl-sg108pe-poe-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/reviews/netgear-gs308epp-poe-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/reviews/reolink-rla-ps1-poe-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/reviews/tp-link-deco-be67-wifi-7-mesh",
+    "kind": "regional-reviews",
+    "indexable": true,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/reviews/tp-link-deco-be25-wifi-7-mesh",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/reviews/tp-link-deco-be85-wifi-7-mesh",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/reviews/asus-zenwifi-bt6-wifi-7-mesh",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/reviews/trendnet-teg-s380-2-5g-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/reviews/trendnet-teg-s750-10gbe-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/best/best-mesh-wifi-for-apartments-and-homes",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/best/best-wifi-7-routers-for-home-networks",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/best/best-wired-networking-upgrades",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/best/deco-be25-vs-be67",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/best/best-mesh-wifi-for-2-5gbps-internet",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/best/best-cable-modems-for-xfinity-spectrum-cox",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/best/arris-s33-vs-motorola-mb8611-vs-hitron-coda56",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/best/best-2-5g-home-network-upgrades",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/best/tp-link-ue302c-vs-sabrent-nt-25ga",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/best/best-fanless-2-5gbe-switches-home-nas-mesh",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/best/tl-sg105-m2-vs-ms305-vs-teg-s350",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/best/best-ups-for-router-and-modem",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/best/best-poe-switches-for-home-cameras-and-access-points",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/best/tp-link-tl-sg1005p-vs-tl-sg108pe-vs-netgear-gs308epp",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/best/tp-link-deco-be67-vs-be63",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/best/deco-be25-vs-be63",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/best/deco-be85-vs-be67",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/best/asus-zenwifi-bt6-vs-deco-be63",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/best/netgear-gs308e-vs-tp-link-tl-sg108",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/best/best-deco-wifi-7-mesh-for-wired-backhaul",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/deco-be63-vs-be67-vs-be85-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/wifi-7-vs-wifi-6-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/mesh-wifi-node-placement-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/router-placement-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/ethernet-cable-category-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/home-ethernet-switch-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/usb-c-ethernet-adapter-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/travel-router-vpn-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/is-wifi-7-worth-it-for-1gbps-internet",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/2-5gbe-vs-10gbe-mesh-backhaul-checklist",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/2-5gbe-home-network-upgrade-checklist",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/mesh-wifi-vs-single-router-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/ethernet-stuck-at-100-mbps-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/netgear-gs908e-review",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/wired-vs-wireless-mesh-backhaul-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/deco-be63-ethernet-backhaul-setup",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/deco-be63-multigig-ports-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/wifi-7-device-compatibility-checklist",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/cable-modem-2-5g-port-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/moca-2-5-vs-ethernet-run-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/modem-router-combo-vs-separate-modem-router-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/2-5g-vs-10g-switch-for-home-nas-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/poe-switch-for-home-cameras-and-access-points-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/moca-splitter-filter-checklist",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/xfinity-gateway-bridge-mode-vs-own-router-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/5-port-vs-8-port-2-5gbe-switch",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/2-5gbe-switch-port-budget-for-nas-mesh",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/router-ups-runtime-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/poe-switch-power-budget-calculator-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/poe-vs-poe-plus-for-cameras-access-points",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/managed-vs-unmanaged-poe-switch-home-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/deco-be67-10gbe-network-checklist",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/deco-be63-be67-two-pack-vs-three-pack",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/is-deco-be67-worth-it-for-gigabit-internet",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/deco-mesh-connection-drops-troubleshooting",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/wifi-7-mesh-budget-midrange-premium-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/when-to-upgrade-to-2-5gbe-switch",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/deco-be63-be67-wired-backhaul-port-checklist",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/deco-wifi-7-model-number-buyer-checklist",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/deco-wifi-7-single-unit-vs-two-pack",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/indoor-wifi-access-points-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/outdoor-wifi-access-points-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/point-to-point-wireless-bridges-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/wifi-range-extenders-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/usb-wifi-adapters-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/pcie-wifi-adapters-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/moca-network-adapters-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/powerline-network-adapters-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/ten-gigabit-ethernet-switches-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/ten-gigabit-ethernet-switches-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/ten-gigabit-ethernet-switches-compatibility-and-fit-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/ten-gigabit-ethernet-switches-ownership-cost-and-maintenance",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/sfp-plus-network-switches-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/ethernet-network-interface-cards-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/usb-c-ethernet-adapters-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/poe-injectors-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/poe-splitters-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/poe-extenders-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/sfp-plus-transceivers-compatibility-and-fit-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/direct-attach-copper-cables-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/fiber-media-converters-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/network-attached-storage-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/hardware-firewall-appliances-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/hardware-firewall-appliances-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/hardware-firewall-appliances-compatibility-and-fit-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/hardware-firewall-appliances-ownership-cost-and-maintenance",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/vpn-gateways-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/dual-wan-routers-compatibility-and-fit-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/five-g-home-internet-gateways-compatibility-and-fit-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/mobile-hotspots-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/home-network-racks-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/ethernet-patch-panels-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/ethernet-cable-testers-compatibility-and-fit-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/multigig-poe-switches-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/rackmount-power-distribution-units-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/network-cable-toner-probes-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/ethernet-keystone-jacks-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/structured-media-enclosures-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/pass-through-ethernet-crimping-tools-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/ethernet-surge-protectors-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/rj45-modular-plugs-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/network-punch-down-tools-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/rack-cable-management-panels-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/usb-print-servers-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/poe-network-video-recorders-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/bulk-ethernet-cable-reels-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/cloud-managed-access-points-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/coax-cable-testers-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/coax-compression-tools-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/ethernet-inline-couplers-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/ethernet-network-taps-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/fiber-cleaning-kits-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/fiber-optic-patch-cables-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/fiber-optic-power-meters-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/fiber-visual-fault-locators-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/industrial-ethernet-switches-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/kvm-over-ip-extenders-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/managed-2-5gbe-switches-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/mini-ups-for-routers-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/network-rack-cooling-fans-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/network-rack-shelves-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/preterminated-fiber-runs-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/rack-blanking-panels-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/rackmount-network-ups-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/serial-device-servers-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/sfp28-network-switches-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/sfp28-transceivers-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/wall-plate-access-points-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/waterproof-rj45-couplers-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/optical-time-domain-reflectometers-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/guides/home-network-smart-home-outage-plan",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/tools/wifi-coverage-estimator",
+    "kind": "regional-tools",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/tools/mesh-node-and-backhaul-planner",
+    "kind": "regional-tools",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/en-ca/categories/wifi",
+    "kind": "regional-categories",
+    "indexable": false,
+    "requiresContinuation": false
+  },
+  {
+    "path": "/en-ca/categories/wired",
+    "kind": "regional-categories",
+    "indexable": false,
+    "requiresContinuation": false
+  },
+  {
+    "path": "/en-ca/categories/backup",
+    "kind": "regional-categories",
+    "indexable": false,
+    "requiresContinuation": false
+  },
+  {
+    "path": "/de-de",
+    "kind": "regional-home"
+  },
+  {
+    "path": "/de-de/reviews/tp-link-deco-be63-wifi-7-mesh",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/reviews/amazon-eero-6-mesh-wifi-system",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/reviews/netgear-orbi-970-wifi-7-mesh",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/reviews/tp-link-be400-wifi-7-router",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/reviews/asus-rt-be86u-wifi-7-gaming-router",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/reviews/glinet-beryl-ax-travel-router",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/reviews/tp-link-tl-sg108-gigabit-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/reviews/netgear-gs308e-gigabit-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/reviews/jadaol-cat6-flat-ethernet-cable",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/reviews/monoprice-slimrun-cat6a-ethernet-patch-cable",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/reviews/ugreen-revodok-usb-c-gigabit-ethernet-hub",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/reviews/arris-surfboard-s33-cable-modem",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/reviews/motorola-mb8611-cable-modem",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/reviews/hitron-coda56-cable-modem",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/reviews/trendnet-teg-s350-2-5g-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/reviews/tp-link-ue302c-2-5g-usb-c-ethernet-adapter",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/reviews/sabrent-nt-25ga-2-5g-usb-c-ethernet-adapter",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/reviews/screenbeam-ecb7250k02-moca-2-5-adapter-kit",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/reviews/tp-link-tl-sg105-m2-2-5g-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/reviews/netgear-ms305-2-5g-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/reviews/apc-back-ups-router-modem-bundle",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/reviews/apc-be600m1-router-ups",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/reviews/cyberpower-sl700u-router-ups",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/reviews/tp-link-tl-sg1005p-poe-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/reviews/tp-link-tl-sg108pe-poe-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/reviews/netgear-gs308epp-poe-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/reviews/reolink-rla-ps1-poe-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/reviews/tp-link-deco-be67-wifi-7-mesh",
+    "kind": "regional-reviews",
+    "indexable": true,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/reviews/tp-link-deco-be25-wifi-7-mesh",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/reviews/tp-link-deco-be85-wifi-7-mesh",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/reviews/asus-zenwifi-bt6-wifi-7-mesh",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/reviews/trendnet-teg-s380-2-5g-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/reviews/trendnet-teg-s750-10gbe-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/best/best-mesh-wifi-for-apartments-and-homes",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/best/best-wifi-7-routers-for-home-networks",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/best/best-wired-networking-upgrades",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/best/deco-be25-vs-be67",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/best/best-mesh-wifi-for-2-5gbps-internet",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/best/best-cable-modems-for-xfinity-spectrum-cox",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/best/arris-s33-vs-motorola-mb8611-vs-hitron-coda56",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/best/best-2-5g-home-network-upgrades",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/best/tp-link-ue302c-vs-sabrent-nt-25ga",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/best/best-fanless-2-5gbe-switches-home-nas-mesh",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/best/tl-sg105-m2-vs-ms305-vs-teg-s350",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/best/best-ups-for-router-and-modem",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/best/best-poe-switches-for-home-cameras-and-access-points",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/best/tp-link-tl-sg1005p-vs-tl-sg108pe-vs-netgear-gs308epp",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/best/tp-link-deco-be67-vs-be63",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/best/deco-be25-vs-be63",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/best/deco-be85-vs-be67",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/best/asus-zenwifi-bt6-vs-deco-be63",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/best/netgear-gs308e-vs-tp-link-tl-sg108",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/best/best-deco-wifi-7-mesh-for-wired-backhaul",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/deco-be63-vs-be67-vs-be85-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/wifi-7-vs-wifi-6-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/mesh-wifi-node-placement-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/router-placement-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/ethernet-cable-category-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/home-ethernet-switch-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/usb-c-ethernet-adapter-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/travel-router-vpn-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/is-wifi-7-worth-it-for-1gbps-internet",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/2-5gbe-vs-10gbe-mesh-backhaul-checklist",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/2-5gbe-home-network-upgrade-checklist",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/mesh-wifi-vs-single-router-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/ethernet-stuck-at-100-mbps-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/netgear-gs908e-review",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/wired-vs-wireless-mesh-backhaul-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/deco-be63-ethernet-backhaul-setup",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/deco-be63-multigig-ports-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/wifi-7-device-compatibility-checklist",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/cable-modem-2-5g-port-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/moca-2-5-vs-ethernet-run-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/modem-router-combo-vs-separate-modem-router-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/2-5g-vs-10g-switch-for-home-nas-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/poe-switch-for-home-cameras-and-access-points-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/moca-splitter-filter-checklist",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/xfinity-gateway-bridge-mode-vs-own-router-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/5-port-vs-8-port-2-5gbe-switch",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/2-5gbe-switch-port-budget-for-nas-mesh",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/router-ups-runtime-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/poe-switch-power-budget-calculator-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/poe-vs-poe-plus-for-cameras-access-points",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/managed-vs-unmanaged-poe-switch-home-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/deco-be67-10gbe-network-checklist",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/deco-be63-be67-two-pack-vs-three-pack",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/is-deco-be67-worth-it-for-gigabit-internet",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/deco-mesh-connection-drops-troubleshooting",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/wifi-7-mesh-budget-midrange-premium-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/when-to-upgrade-to-2-5gbe-switch",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/deco-be63-be67-wired-backhaul-port-checklist",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/deco-wifi-7-model-number-buyer-checklist",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/deco-wifi-7-single-unit-vs-two-pack",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/indoor-wifi-access-points-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/outdoor-wifi-access-points-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/point-to-point-wireless-bridges-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/wifi-range-extenders-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/usb-wifi-adapters-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/pcie-wifi-adapters-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/moca-network-adapters-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/powerline-network-adapters-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/ten-gigabit-ethernet-switches-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/ten-gigabit-ethernet-switches-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/ten-gigabit-ethernet-switches-compatibility-and-fit-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/ten-gigabit-ethernet-switches-ownership-cost-and-maintenance",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/sfp-plus-network-switches-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/ethernet-network-interface-cards-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/usb-c-ethernet-adapters-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/poe-injectors-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/poe-splitters-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/poe-extenders-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/sfp-plus-transceivers-compatibility-and-fit-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/direct-attach-copper-cables-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/fiber-media-converters-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/network-attached-storage-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/hardware-firewall-appliances-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/hardware-firewall-appliances-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/hardware-firewall-appliances-compatibility-and-fit-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/hardware-firewall-appliances-ownership-cost-and-maintenance",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/vpn-gateways-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/dual-wan-routers-compatibility-and-fit-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/five-g-home-internet-gateways-compatibility-and-fit-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/mobile-hotspots-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/home-network-racks-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/ethernet-patch-panels-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/ethernet-cable-testers-compatibility-and-fit-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/multigig-poe-switches-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/rackmount-power-distribution-units-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/network-cable-toner-probes-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/ethernet-keystone-jacks-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/structured-media-enclosures-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/pass-through-ethernet-crimping-tools-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/ethernet-surge-protectors-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/rj45-modular-plugs-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/network-punch-down-tools-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/rack-cable-management-panels-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/usb-print-servers-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/poe-network-video-recorders-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/bulk-ethernet-cable-reels-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/cloud-managed-access-points-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/coax-cable-testers-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/coax-compression-tools-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/ethernet-inline-couplers-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/ethernet-network-taps-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/fiber-cleaning-kits-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/fiber-optic-patch-cables-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/fiber-optic-power-meters-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/fiber-visual-fault-locators-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/industrial-ethernet-switches-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/kvm-over-ip-extenders-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/managed-2-5gbe-switches-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/mini-ups-for-routers-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/network-rack-cooling-fans-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/network-rack-shelves-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/preterminated-fiber-runs-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/rack-blanking-panels-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/rackmount-network-ups-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/serial-device-servers-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/sfp28-network-switches-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/sfp28-transceivers-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/wall-plate-access-points-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/waterproof-rj45-couplers-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/optical-time-domain-reflectometers-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/guides/home-network-smart-home-outage-plan",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/tools/wifi-coverage-estimator",
+    "kind": "regional-tools",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/tools/mesh-node-and-backhaul-planner",
+    "kind": "regional-tools",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/de-de/categories/wifi",
+    "kind": "regional-categories",
+    "indexable": false,
+    "requiresContinuation": false
+  },
+  {
+    "path": "/de-de/categories/wired",
+    "kind": "regional-categories",
+    "indexable": false,
+    "requiresContinuation": false
+  },
+  {
+    "path": "/de-de/categories/backup",
+    "kind": "regional-categories",
+    "indexable": false,
+    "requiresContinuation": false
+  },
+  {
+    "path": "/nl-nl",
+    "kind": "regional-home"
+  },
+  {
+    "path": "/nl-nl/reviews/tp-link-deco-be63-wifi-7-mesh",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/reviews/amazon-eero-6-mesh-wifi-system",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/reviews/netgear-orbi-970-wifi-7-mesh",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/reviews/tp-link-be400-wifi-7-router",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/reviews/asus-rt-be86u-wifi-7-gaming-router",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/reviews/glinet-beryl-ax-travel-router",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/reviews/tp-link-tl-sg108-gigabit-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/reviews/netgear-gs308e-gigabit-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/reviews/jadaol-cat6-flat-ethernet-cable",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/reviews/monoprice-slimrun-cat6a-ethernet-patch-cable",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/reviews/ugreen-revodok-usb-c-gigabit-ethernet-hub",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/reviews/arris-surfboard-s33-cable-modem",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/reviews/motorola-mb8611-cable-modem",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/reviews/hitron-coda56-cable-modem",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/reviews/trendnet-teg-s350-2-5g-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/reviews/tp-link-ue302c-2-5g-usb-c-ethernet-adapter",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/reviews/sabrent-nt-25ga-2-5g-usb-c-ethernet-adapter",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/reviews/screenbeam-ecb7250k02-moca-2-5-adapter-kit",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/reviews/tp-link-tl-sg105-m2-2-5g-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/reviews/netgear-ms305-2-5g-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/reviews/apc-back-ups-router-modem-bundle",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/reviews/apc-be600m1-router-ups",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/reviews/cyberpower-sl700u-router-ups",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/reviews/tp-link-tl-sg1005p-poe-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/reviews/tp-link-tl-sg108pe-poe-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/reviews/netgear-gs308epp-poe-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/reviews/reolink-rla-ps1-poe-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/reviews/tp-link-deco-be67-wifi-7-mesh",
+    "kind": "regional-reviews",
+    "indexable": true,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/reviews/tp-link-deco-be25-wifi-7-mesh",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/reviews/tp-link-deco-be85-wifi-7-mesh",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/reviews/asus-zenwifi-bt6-wifi-7-mesh",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/reviews/trendnet-teg-s380-2-5g-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/reviews/trendnet-teg-s750-10gbe-switch",
+    "kind": "regional-reviews",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/best/best-mesh-wifi-for-apartments-and-homes",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/best/best-wifi-7-routers-for-home-networks",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/best/best-wired-networking-upgrades",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/best/deco-be25-vs-be67",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/best/best-mesh-wifi-for-2-5gbps-internet",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/best/best-cable-modems-for-xfinity-spectrum-cox",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/best/arris-s33-vs-motorola-mb8611-vs-hitron-coda56",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/best/best-2-5g-home-network-upgrades",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/best/tp-link-ue302c-vs-sabrent-nt-25ga",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/best/best-fanless-2-5gbe-switches-home-nas-mesh",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/best/tl-sg105-m2-vs-ms305-vs-teg-s350",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/best/best-ups-for-router-and-modem",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/best/best-poe-switches-for-home-cameras-and-access-points",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/best/tp-link-tl-sg1005p-vs-tl-sg108pe-vs-netgear-gs308epp",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/best/tp-link-deco-be67-vs-be63",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/best/deco-be25-vs-be63",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/best/deco-be85-vs-be67",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/best/asus-zenwifi-bt6-vs-deco-be63",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/best/netgear-gs308e-vs-tp-link-tl-sg108",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/best/best-deco-wifi-7-mesh-for-wired-backhaul",
+    "kind": "regional-best",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/deco-be63-vs-be67-vs-be85-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/wifi-7-vs-wifi-6-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/mesh-wifi-node-placement-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/router-placement-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/ethernet-cable-category-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/home-ethernet-switch-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/usb-c-ethernet-adapter-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/travel-router-vpn-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/is-wifi-7-worth-it-for-1gbps-internet",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/2-5gbe-vs-10gbe-mesh-backhaul-checklist",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/2-5gbe-home-network-upgrade-checklist",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/mesh-wifi-vs-single-router-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/ethernet-stuck-at-100-mbps-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/netgear-gs908e-review",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/wired-vs-wireless-mesh-backhaul-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/deco-be63-ethernet-backhaul-setup",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/deco-be63-multigig-ports-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/wifi-7-device-compatibility-checklist",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/cable-modem-2-5g-port-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/moca-2-5-vs-ethernet-run-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/modem-router-combo-vs-separate-modem-router-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/2-5g-vs-10g-switch-for-home-nas-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/poe-switch-for-home-cameras-and-access-points-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/moca-splitter-filter-checklist",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/xfinity-gateway-bridge-mode-vs-own-router-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/5-port-vs-8-port-2-5gbe-switch",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/2-5gbe-switch-port-budget-for-nas-mesh",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/router-ups-runtime-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/poe-switch-power-budget-calculator-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/poe-vs-poe-plus-for-cameras-access-points",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/managed-vs-unmanaged-poe-switch-home-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/deco-be67-10gbe-network-checklist",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/deco-be63-be67-two-pack-vs-three-pack",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/is-deco-be67-worth-it-for-gigabit-internet",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/deco-mesh-connection-drops-troubleshooting",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/wifi-7-mesh-budget-midrange-premium-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/when-to-upgrade-to-2-5gbe-switch",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/deco-be63-be67-wired-backhaul-port-checklist",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/deco-wifi-7-model-number-buyer-checklist",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/deco-wifi-7-single-unit-vs-two-pack",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/indoor-wifi-access-points-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/outdoor-wifi-access-points-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/point-to-point-wireless-bridges-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/wifi-range-extenders-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/usb-wifi-adapters-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/pcie-wifi-adapters-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/moca-network-adapters-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/powerline-network-adapters-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/ten-gigabit-ethernet-switches-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/ten-gigabit-ethernet-switches-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/ten-gigabit-ethernet-switches-compatibility-and-fit-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/ten-gigabit-ethernet-switches-ownership-cost-and-maintenance",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/sfp-plus-network-switches-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/ethernet-network-interface-cards-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/usb-c-ethernet-adapters-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/poe-injectors-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/poe-splitters-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/poe-extenders-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/sfp-plus-transceivers-compatibility-and-fit-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/direct-attach-copper-cables-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/fiber-media-converters-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/network-attached-storage-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/hardware-firewall-appliances-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/hardware-firewall-appliances-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/hardware-firewall-appliances-compatibility-and-fit-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/hardware-firewall-appliances-ownership-cost-and-maintenance",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/vpn-gateways-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/dual-wan-routers-compatibility-and-fit-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/five-g-home-internet-gateways-compatibility-and-fit-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/mobile-hotspots-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/home-network-racks-vs-alternatives",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/ethernet-patch-panels-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/ethernet-cable-testers-compatibility-and-fit-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/multigig-poe-switches-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/rackmount-power-distribution-units-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/network-cable-toner-probes-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/ethernet-keystone-jacks-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/structured-media-enclosures-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/pass-through-ethernet-crimping-tools-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/ethernet-surge-protectors-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/rj45-modular-plugs-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/network-punch-down-tools-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/rack-cable-management-panels-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/usb-print-servers-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/poe-network-video-recorders-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/bulk-ethernet-cable-reels-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/cloud-managed-access-points-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/coax-cable-testers-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/coax-compression-tools-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/ethernet-inline-couplers-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/ethernet-network-taps-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/fiber-cleaning-kits-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/fiber-optic-patch-cables-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/fiber-optic-power-meters-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/fiber-visual-fault-locators-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/industrial-ethernet-switches-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/kvm-over-ip-extenders-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/managed-2-5gbe-switches-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/mini-ups-for-routers-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/network-rack-cooling-fans-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/network-rack-shelves-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/preterminated-fiber-runs-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/rack-blanking-panels-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/rackmount-network-ups-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/serial-device-servers-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/sfp28-network-switches-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/sfp28-transceivers-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/wall-plate-access-points-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/waterproof-rj45-couplers-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/optical-time-domain-reflectometers-buying-guide",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/guides/home-network-smart-home-outage-plan",
+    "kind": "regional-guides",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/tools/wifi-coverage-estimator",
+    "kind": "regional-tools",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/tools/mesh-node-and-backhaul-planner",
+    "kind": "regional-tools",
+    "indexable": false,
+    "requiresContinuation": true
+  },
+  {
+    "path": "/nl-nl/categories/wifi",
+    "kind": "regional-categories",
+    "indexable": false,
+    "requiresContinuation": false
+  },
+  {
+    "path": "/nl-nl/categories/wired",
+    "kind": "regional-categories",
+    "indexable": false,
+    "requiresContinuation": false
+  },
+  {
+    "path": "/nl-nl/categories/backup",
+    "kind": "regional-categories",
+    "indexable": false,
+    "requiresContinuation": false
+  }
+]

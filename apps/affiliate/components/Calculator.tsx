@@ -11,6 +11,7 @@ export function CalculatorTool({ tool }: { tool: Tool }) {
   const networkKind = tool.site === "network" && (tool.kind === "mesh" || tool.kind === "wifi") ? tool.kind : undefined;
   const [values, setValues] = useState<CalculatorValues>(() => networkKind ? {primary:"",secondary:"",keyboard:""} : calculatorDefaults(tool.kind));
   const [example, setExample] = useState(!networkKind);
+  const [ready, setReady] = useState(!networkKind);
   const [copyStatus, setCopyStatus] = useState("");
   const [manualCopy, setManualCopy] = useState(false);
   const result = useMemo(() => evaluateCalculator(tool.kind, values), [values, tool.kind]);
@@ -19,6 +20,7 @@ export function CalculatorTool({ tool }: { tool: Tool }) {
     if (!networkKind) return;
     const draft = readNetworkDraft(networkKind);
     if (draft) setValues({primary:draft.values.primary??"",secondary:draft.values.secondary??"",keyboard:draft.values.keyboard??""});
+    setReady(true);
   },[networkKind]);
 
   function update(next: CalculatorValues, isExample = false) {
@@ -52,11 +54,12 @@ export function CalculatorTool({ tool }: { tool: Tool }) {
       </div>
       <p className="mt-4 text-sm leading-6 text-[var(--muted)]" id={`${id}-instructions`}>{example ? "Example inputs are loaded. Replace every value with your own before using this result." : networkKind ? "Enter the values for your home. Blank means unknown; complete both fields to see a starting layout to test." : "Check every field, including any remaining example values. Blank means unknown; invalid inputs do not produce a plan."}</p>
       {networkKind ? <p className="mt-2 text-xs leading-6 text-[var(--muted)]">Your entered draft stays in this browser tab for up to 24 hours so you can return after reading another page. Clear inputs to remove it. Example values are not saved as your plan.</p> : null}
+      {!ready ? <p className="mt-3 text-sm" role="status">Loading the planner and any saved inputs…</p> : null}
       {tool.kind === "desk" ? <p className="mt-3 text-sm leading-6 text-[var(--muted)]">With shoulders relaxed and forearms roughly level, measure floor to elbow while seated with feet supported, then while standing in your usual shoes and on your usual mat. Measure keyboard thickness from its support surface to the typing keys.</p> : null}
       <div className="mt-5 grid gap-4 sm:grid-cols-2">
         {calculatorFields(tool.kind).map((field) => <div key={field.key}>
           <label className="block text-sm font-semibold text-[var(--muted)]" htmlFor={`${id}-${field.key}`}>{field.label}</label>
-          <input id={`${id}-${field.key}`} className="mt-2 w-full rounded-md border border-[var(--border)] px-3 py-2" type="number" step={field.integer ? "1" : "any"} min={field.min} value={values[field.key]} aria-invalid={Boolean(result.errors[field.key])} aria-describedby={`${id}-instructions${result.errors[field.key] ? ` ${id}-${field.key}-error` : ""}`} onChange={(event) => update({ ...values, [field.key]: event.target.value })} />
+          <input id={`${id}-${field.key}`} className="mt-2 w-full rounded-md border border-[var(--border)] px-3 py-2 disabled:cursor-wait disabled:opacity-50" disabled={!ready} type="number" step={field.integer ? "1" : "any"} min={field.min} value={values[field.key]} aria-invalid={Boolean(result.errors[field.key])} aria-describedby={`${id}-instructions${result.errors[field.key] ? ` ${id}-${field.key}-error` : ""}`} onChange={(event) => update({ ...values, [field.key]: event.target.value })} />
           {result.errors[field.key] ? <p className="mt-2 text-sm text-red-800" id={`${id}-${field.key}-error`}>{result.errors[field.key]}</p> : null}
         </div>)}
       </div>
@@ -65,9 +68,9 @@ export function CalculatorTool({ tool }: { tool: Tool }) {
         <ul className="mt-3 space-y-2 text-sm text-[var(--text)]">{result.lines.map((line) => <li key={line}>{line}</li>)}</ul>
       </div>
       <div className="mt-5 flex flex-wrap gap-3">
-        <button className="button-secondary disabled:cursor-not-allowed disabled:opacity-50" type="button" disabled={result.status !== "ready"} onClick={() => void copyPlan()}><Copy aria-hidden="true" size={16} />Copy plan</button>
-        <button className="button-secondary" type="button" onClick={() => update(calculatorDefaults(tool.kind), true)}><RotateCcw aria-hidden="true" size={16} />Load example</button>
-        <button className="button-secondary" type="button" onClick={() => update({ primary: "", secondary: "", keyboard: "" })}>Clear inputs</button>
+        <button className="button-secondary disabled:cursor-not-allowed disabled:opacity-50" type="button" disabled={!ready || result.status !== "ready"} onClick={() => void copyPlan()}><Copy aria-hidden="true" size={16} />Copy plan</button>
+        <button className="button-secondary" type="button" disabled={!ready} onClick={() => update(calculatorDefaults(tool.kind), true)}><RotateCcw aria-hidden="true" size={16} />Load example</button>
+        <button className="button-secondary" type="button" disabled={!ready} onClick={() => update({ primary: "", secondary: "", keyboard: "" })}>Clear inputs</button>
       </div>
       <p className="mt-3 text-sm" role="status">{copyStatus}</p>
       {manualCopy ? <label className="mt-3 block text-sm font-semibold">Plan for manual copy<textarea className="mt-2 min-h-48 w-full rounded-md border border-[var(--border)] p-3 font-normal" readOnly value={plan} onFocus={(event) => event.currentTarget.select()} /></label> : null}

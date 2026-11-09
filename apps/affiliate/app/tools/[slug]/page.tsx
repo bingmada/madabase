@@ -54,7 +54,7 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
         <BaseMarketEditionLinks site={site} basePath={`/tools/${slug}`} />
         <div id="tool-commerce-start" aria-hidden="true" className="h-px" />
         <div className="mt-8">
-          <CalculatorTool tool={tool} />
+          <CalculatorTool key={site.key === "network" ? tool.slug : undefined} tool={tool} />
         </div>
         {commerceProduct && site.key !== "network" ? (
           <section className="mt-4 rounded-md border border-[var(--border)] bg-white p-4 sm:mt-5 sm:p-5" aria-label="Related retailer reference" data-tool-retailer-reference="true">

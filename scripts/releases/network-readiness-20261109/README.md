@@ -1,0 +1,5 @@
+Follow-up to the owner-authorized Network redesign. Production first-visit testing exposed editable calculator fields before hydration/state restoration completed. Network tools now remain disabled until ready, and each Network tool remounts by its own slug. No model facts, merchant identities, index cohort or other publication content changed.
+
+Affiliate is rebuilt locally with Node 20. Main reuses its accepted search-snapshot runtime. Pin archive hashes and BUILD_ID, commit/push and fetch the fixed revision through the same Aliyun Workbench. Run deploy.py prepare --revision SHA, then activate; capacity gates and the independent rollback watchdog remain enabled. No server build, dependency install, database mutation or retired-service restart.
+
+After activation, run verify-public.py on the server to check all 862 actual public URLs over the Cloudflare edge. This avoids the local verifier's observed TLS/connection failures. Responses must match the specified release BUILD_ID; the resulting JSON records any retries and errors. It does not prove crawling, ranking or conversion growth.
