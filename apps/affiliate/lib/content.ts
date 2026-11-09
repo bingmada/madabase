@@ -1,5 +1,8 @@
 import type { Guide, Product, Roundup, SiteKey, Tool } from "./types";
 import { withConciseReaderCopy } from "./reader-copy";
+import { cache } from "react";
+import { reviewedNetworkComparison } from "./network-comparisons";
+import { networkPagePlan } from "./network-journeys";
 import { applySeoQualityImprovements } from "./seo-quality-improvements";
 import { applyReviewedGuideContent } from "./reviewed-guide-content";
 import { applyReviewedRoundupContent } from "./reviewed-roundup-content";
@@ -4326,7 +4329,7 @@ for (let index = 0; index < products.length; index += 1) {
 }
 
 for (let index = 0; index < roundups.length; index += 1) {
-  roundups[index] = applyReviewedRoundupContent(refreshCommerceRoundup(applyFocusedRoundupRecovery(roundups[index])));
+  roundups[index] = reviewedNetworkComparison(applyReviewedRoundupContent(refreshCommerceRoundup(applyFocusedRoundupRecovery(roundups[index]))));
 }
 
 for (let index = 0; index < guides.length; index += 1) {
@@ -4334,6 +4337,8 @@ for (let index = 0; index < guides.length; index += 1) {
     applyOctoberSearchRecovery(applyLowClickRepair(applyIndexingRepair(guides[index]))),
   )));
   guides[index] = applyReviewedGuideContent(applySeoQualityImprovements(addEditorialExpansionLinks({ ...repaired, sources: repaired.sources?.filter((source) => !isBlockedAmazonSource(repaired.site, source.url)) })));
+  const answer = guides[index].site === "network" ? networkPagePlan(`/guides/${guides[index].slug}`)?.answer : undefined;
+  if (answer) guides[index] = {...guides[index],quickAnswer:answer,updatedAt:"November 7, 2026"};
 }
 
 const includeDrafts = process.env.AFFILIATE_INCLUDE_DRAFTS === "1";
@@ -4347,7 +4352,7 @@ export function siteProducts(site: SiteKey) {
 }
 
 export function siteRoundups(site: SiteKey) {
-  return roundups.filter((roundup) => roundup.site === site && isContentVisible(roundup)).map(withConciseReaderCopy);
+  return roundups.filter((roundup) => roundup.site === site && isContentVisible(roundup)).map(item => withConciseReaderCopy(item));
 }
 
 export function siteGuides(site: SiteKey) {
@@ -4362,17 +4367,17 @@ export function siteGuides(site: SiteKey) {
             && isContentVisible(item),
         ),
       )
-    : guide).map(withConciseReaderCopy);
+    : guide).map(item => withConciseReaderCopy(item));
 }
 
 export function siteGuideFamily(site: SiteKey, familySlug: string) {
   return guides.filter(
     (guide) => guide.site === site && guide.familySlug === familySlug && isContentVisible(guide),
-  ).map(withConciseReaderCopy);
+  ).map(item => withConciseReaderCopy(item));
 }
 
 export function siteTools(site: SiteKey) {
-  return tools.filter((tool) => tool.site === site && isContentVisible(tool)).map(withConciseReaderCopy);
+  return tools.filter((tool) => tool.site === site && isContentVisible(tool)).map(item => withConciseReaderCopy(item));
 }
 
 export function findProduct(site: SiteKey, slug: string) {
@@ -4393,6 +4398,10 @@ export function findTool(site: SiteKey, slug: string) {
 }
 
 export function applyAmazonOverride(product: Product): Product {
+  return cachedAmazonOverride(product);
+}
+
+const cachedAmazonOverride = cache((product: Product): Product => {
   const override = amazonProductOverrides[product.slug];
   return withConciseReaderCopy(applySiteAffiliateTracking(applyReviewedProductContent(override ? { ...product, ...override } : product)));
-}
+});

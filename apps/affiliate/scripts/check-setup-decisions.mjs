@@ -30,10 +30,11 @@ task("64GB is required: does the historical 32GB table validate it?","Unknown; a
 task("Same-switch 2.5GbE NAS and PC, 1Gbps WAN: must I replace the router?","2.5Gbps local link target passes; keep equipment",()=>{const r=networkDecision(n);assert.equal(r.status,"supported");assert.match(r.title,/2.5Gbps/);assert.ok(r.noBuy);});
 task("NAS traffic crosses a 1GbE router LAN port: does a 2.5GbE switch fix it?","Conflict; router LAN remains in path",()=>{const r=networkDecision({...n,path:"router-transit"});assert.equal(r.status,"incompatible");assert.match(r.title,/^1Gbps/);});
 task("2.5GbE LAN with 1GbE router WAN: can I get 2.5Gbps internet?","WAN/plan limit; NAS rate is irrelevant to this flow",()=>{const r=networkDecision({...n,path:"internet"});assert.equal(r.status,"incompatible");assert.match(r.reasons.join(" "),/WAN/);});
+task("Internet path uses only the local PC adapter in its parts list","No remote endpoint purchase; human-readable path and internet-specific keep guidance",()=>{const r=networkDecision({...n,path:"internet",routerLan:2.5,routerWan:2.5,internet:2.5});assert.equal(r.status,"supported");assert.equal(r.parts.find(x=>x.id==="endpoints").quantity,"One for the PC if missing");assert.match(r.context,/PC to internet/);assert.match(r.noBuy,/provider performance/);assert.doesNotMatch(r.reasons.join(" "),/count the NAS within device total/);});
 task("Five devices plus one uplink on a five-port switch: does it fit?","Reject one missing port",()=>{const r=networkDecision({...n,devices:5});assert.equal(r.status,"incompatible");assert.match(r.reasons.join(" "),/1 missing/);});
 task("Dedicated 2.5GbE PC-NAS cable with an old 1GbE switch elsewhere: buy a switch?","Direct flow passes; no switch needed",()=>{const r=networkDecision({...n,path:"direct",switchRate:1});assert.equal(r.status,"supported");assert.match(r.parts.find(x=>x.id==="switch").quantity,/^0/);});
 task("All proposed devices say 2.5GbE, but cabling has not been inspected: is it supported?","Unknown until actual cable/link check",()=>assert.equal(networkDecision({...n,cable:"unknown"}).status,"unknown"));
-assert.equal(cases.length,20);
+assert.equal(cases.length,21);
 assert.equal(planMiniPc({...p,task:"ram",ramGb:32,modules:[-1,0]}).status,"unknown");
 assert.equal(planMiniPc({...p,task:"ram",ramGb:12,modules:[4,4]}).status,"unknown");
 assert.equal(costSummary([{owned:false,cost:""},{owned:true,cost:"99"}]).total,null);

@@ -1160,5 +1160,122 @@
       "Suggested buyer checks are procedures, not measured product scores",
       "November 3, 2026: original power-mode and Litra Glow specification pages rechecked; connection examples are documentary comparisons, not measured camera results."
     ]
+  },
+  "network:deco-be25-vs-be63": {
+    "decisionFirst": true,
+    "updatedAt": "November 6, 2026",
+    "quickAnswer": "Choose BE25 when wired backhaul, two 2.5GbE ports per node and dual-band coverage meet the job. Choose BE63 when its 6GHz radio or four 2.5GbE ports per node solve a specific wireless-backhaul or wired-device problem. Keep an existing system that already works. The linked US selections differ in node count: BE25 is a two-pack and BE63 is a three-pack, so compare equal pack sizes before comparing price.",
+    "comparisonTable": {
+      "title": "BE25 or BE63: match the network before the listing",
+      "columns": [
+        "Deco BE25",
+        "Deco BE63"
+      ],
+      "rows": [
+        {
+          "label": "Wireless bands",
+          "values": [
+            "Dual-band; no 6GHz radio",
+            "Tri-band, including 6GHz; benefit depends on clients and a viable relay path"
+          ]
+        },
+        {
+          "label": "Ports per node",
+          "values": [
+            "Two 2.5GbE WAN/LAN ports; assign WAN and backhaul first",
+            "Four 2.5GbE WAN/LAN ports; assign WAN and backhaul first"
+          ]
+        },
+        {
+          "label": "Wired backhaul",
+          "values": [
+            "Use existing Ethernet when the full cable and switch path supports the required speed",
+            "More ports can connect wired devices without another switch; the slowest link still limits throughput"
+          ]
+        },
+        {
+          "label": "When to spend more",
+          "values": [
+            "Choose when coverage and the available ports already meet the job",
+            "Choose for a defined 6GHz or wired-port need, not the aggregate Wi-Fi class alone"
+          ]
+        },
+        {
+          "label": "Exact linked US pack",
+          "values": [
+            "B0DKVDMPT9 selects a two-pack",
+            "B0CN8QLS4K selects a three-pack; this is not an equal-pack price comparison"
+          ]
+        },
+        {
+          "label": "Outside the US",
+          "values": [
+            "Confirm regional model, supported bands, power supply and pack count",
+            "A redirected listing does not establish the same hardware, package or warranty"
+          ]
+        }
+      ]
+    }
+  },
+  "network:best-mesh-wifi-for-2-5gbps-internet": {
+    "decisionFirst": true,
+    "updatedAt": "November 6, 2026",
+    "quickAnswer": "For a 2.5Gbps plan, start with the modem or ONT, the main node WAN, backhaul and the client that needs that speed. BE25 is the simpler wired-backhaul option; BE63 adds 6GHz and more 2.5GbE ports. Consider BE67 or BE85 only for a defined 10GbE or higher-capacity local path. Keep a system that already meets the job, and compare the same regional model and node count before price.",
+    "comparisonTable": {
+      "title": "Four mesh choices by the path you need",
+      "columns": [
+        "Deco BE25",
+        "Deco BE63",
+        "Deco BE67",
+        "Deco BE85"
+      ],
+      "rows": [
+        {
+          "label": "Start here when",
+          "values": [
+            "Ethernet backhaul and dual-band coverage cover the home",
+            "6GHz or several 2.5GbE wired connections solve a specific need",
+            "A defined 10GbE connection or wireless-capacity requirement justifies the upgrade",
+            "The planned local network can use multiple high-capacity paths"
+          ]
+        },
+        {
+          "label": "Port assignment",
+          "values": [
+            "Two 2.5GbE ports per unit; count what remains after WAN/backhaul",
+            "Four 2.5GbE ports per unit; count what remains after WAN/backhaul",
+            "Mixed 10GbE, 2.5GbE and 1GbE ports; draw the actual path",
+            "Confirm the 10GbE/SFP+ and lower-speed port jobs for the exact revision"
+          ]
+        },
+        {
+          "label": "A faster label does not fix",
+          "values": [
+            "Poor node placement or a gigabit switch in the path",
+            "Unsupported clients or a weak wireless relay",
+            "A gigabit endpoint, switch or backhaul link",
+            "An internet plan or endpoints that cannot use the extra capacity"
+          ]
+        },
+        {
+          "label": "Selected US pack",
+          "values": [
+            "Two-pack; B0DKVDMPT9",
+            "Three-pack; B0CN8QLS4K",
+            "Two-pack; B0FQYQRZQX",
+            "Two-pack; B0C4W1L4B3"
+          ]
+        },
+        {
+          "label": "Before comparing price",
+          "values": [
+            "Same node count, region and required cables",
+            "Normalize the three-pack against the node count you actually need",
+            "Include any required switch, adapter or cable",
+            "Include the complete local path; do not buy unused 10GbE capacity"
+          ]
+        }
+      ]
+    }
   }
 }

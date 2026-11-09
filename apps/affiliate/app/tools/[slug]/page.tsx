@@ -9,6 +9,7 @@ import { toolCommerceProduct } from "@/lib/commerce-paths";
 import { breadcrumbSchema, faqPageSchema, pageMetadata, toolSchema } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 import { buyerFacingBody } from "@/lib/conversion-copy";
+import { NetworkPageLead, NetworkContinuation } from "@/components/NetworkJourney";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const site = await getCurrentSite();
@@ -38,6 +39,7 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
       <JsonLd data={toolSchema(site, tool)} />
       {tool.faqs?.length ? <JsonLd data={faqPageSchema(tool.faqs)} /> : null}
       <div className="shell max-w-4xl">
+        {site.key === "network" ? <NetworkPageLead path={`/tools/${slug}`} /> : null}
         <div className="flex flex-wrap items-center gap-3">
           <p className="eyebrow">Calculator</p>
           {category ? (
@@ -54,7 +56,7 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
         <div className="mt-8">
           <CalculatorTool tool={tool} />
         </div>
-        {commerceProduct ? (
+        {commerceProduct && site.key !== "network" ? (
           <section className="mt-4 rounded-md border border-[var(--border)] bg-white p-4 sm:mt-5 sm:p-5" aria-label="Related retailer reference" data-tool-retailer-reference="true">
             <p className="eyebrow">Related retailer option</p>
             <div className="mt-3 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
@@ -91,7 +93,7 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
             </div>
           </section>
         ) : null}
-        <div className="mt-8 grid gap-4 sm:grid-cols-2">
+        {site.key === "network" ? <NetworkContinuation path={`/tools/${slug}`} /> : <div className="mt-8 grid gap-4 sm:grid-cols-2">
           {tool.relatedRoundups.map((slug) => {
             const roundup = findRoundup(site.key, slug);
             return roundup ? (
@@ -102,7 +104,7 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
               </Link>
             ) : null;
           })}
-        </div>
+        </div>}
       </div>
     </main>
   );

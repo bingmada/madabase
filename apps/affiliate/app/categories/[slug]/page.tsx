@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { NetworkCategory } from "@/components/NetworkHome";
 import { CategoryBrowser } from "@/components/CategoryBrowser";
 import { siteSearchIndex } from "@/lib/site-search";
 import { notFound } from "next/navigation";
@@ -149,6 +150,7 @@ export default async function CategoryPage({
   const { slug } = await params;
   const category = site.categories.find((item) => item.slug === slug);
   if (!category) notFound();
+  if (site.key === "network") return <NetworkCategory site={site} slug={slug} />;
   const allCategoryGuides = prioritizeBySearchDemand(
     site.key,
     siteGuides(site.key).filter((item) => item.category === slug && !item.discoveryExcluded),
@@ -191,7 +193,7 @@ export default async function CategoryPage({
       <div className="shell">
         <p className="eyebrow">Category</p>
         <h1 className="mt-3 text-4xl font-black">{category.name}</h1>
-        {commerceProduct && site.key !== "homeoffice" && site.key !== "network" ? (
+        {commerceProduct && site.key !== "homeoffice" ? (
           <section className="mt-4 flex flex-col gap-3 rounded-md border border-[var(--border)] bg-white p-4 sm:mt-5 sm:flex-row sm:items-center sm:justify-between sm:p-5" aria-label="First-screen category retailer starting point" data-first-viewport-commerce="true">
             <div>
               <p className="eyebrow">Current retailer option</p>

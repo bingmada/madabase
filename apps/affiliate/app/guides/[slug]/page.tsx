@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { networkEditorialNote } from "@/lib/network-journeys";
+import { NetworkContinuation, NetworkPageLead } from "@/components/NetworkJourney";
 import { editorialImageAlt, isEditorialCategoryImage, editorialCategoryImageCaption, editorialImageForDisplay } from "@/lib/editorial-image";
 import type { CSSProperties } from "react";
 import { DecisionReference } from "@/components/DecisionReference";
@@ -349,6 +351,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         />
       ) : null}
       <div className="shell max-w-4xl">
+        {site.key === "network" ? <NetworkPageLead path={`/guides/${slug}`} /> : null}
         {category ? (
           <Link className="eyebrow hover:underline" href={`/categories/${category.slug}`}>
             {category.name}
@@ -374,6 +377,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
           <UpgradePurchaseOption guide={guide.slug} />
           <div id="guide-reference-content" />
         </> : null}
+        {site.key === "network" ? <GuideDecisionTable table={guide.comparisonTable} /> : null}
         {buyingChoices.length ? (
           <section className="mt-6 grid gap-3 sm:grid-cols-3" aria-label="Choose the exact Deco model and pack">
             {buyingChoices.map((choice) => (
@@ -386,9 +390,9 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             ))}
           </section>
         ) : null}
-        <GuideDecisionTable table={guide.comparisonTable} />
+        {site.key !== "network" ? <GuideDecisionTable table={guide.comparisonTable} /> : null}
         <DecisionWorkedExamples site={site.key} slug={slug} />
-        <GuideTaskPaths site={site.key} slug={guide.slug} />
+        {site.key !== "network" ? <GuideTaskPaths site={site.key} slug={guide.slug} /> : null}
         {guide.decisionPurchase && !plannerTopic && !taskOnly && decisionPurchaseIdentity && decisionPurchaseOffer ? (
           <aside className="mt-4 rounded-md border border-[var(--border)] bg-white p-5" aria-label={`Next step for ${guide.decisionPurchase.model}`} data-guide-decision-purchase="true">
             <h2 className="text-lg font-bold">When {guide.decisionPurchase.model} fits</h2>
@@ -398,7 +402,6 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             <p className="mt-2 text-sm leading-6 text-[var(--muted)]">{guide.decisionPurchase.keep}</p>
           </aside>
         ) : null}
-        {requiresTopologyChoice ? <section className="mt-5 rounded-md border border-[var(--border)] bg-white p-5" aria-label="Next step for your Xfinity topology" data-guide-task-paths="true"><h2 className="text-xl font-bold">Choose the route that matches your plan</h2><ul className="mt-3 list-disc space-y-3 pl-5 text-sm leading-6"><li>Gateway or existing router already meets the job: keep it; no purchase is required.</li><li>Keep the gateway as a modem and add routing or Wi-Fi: <Link className="font-bold underline" href="/guides/deco-be63-vs-be67-vs-be85-buying-guide">compare router and mesh ports, backhaul and pack size</Link>.</li><li>Replace the modem only after service approval: <Link className="font-bold underline" href="/best/best-cable-modems-for-xfinity-spectrum-cox">review the exact modem candidates and provider conditions</Link>. A comparison entry does not approve it for your address or voice plan.</li><li>Gateway model, service requirements or network role unclear: resolve those first with Xfinity and the device documentation.</li></ul></section> : null}
         <DecisionReference site={site.key} slug={guide.slug} />
         <GuideTaskAlternative site={site.key} slug={guide.slug} />
         <GuideMerchant21Routes site={site.key} slug={guide.slug} />
@@ -420,7 +423,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             </section>
           ))}
         </article>
-        {!plannerTopic && !requiresTopologyChoice && !taskOnly && (amazonFamilyBlock || (!amazonFamilyProduct && !cjFamilyAffiliateOffer && (topProduct || topRoundup || commerceProduct))) ? (
+        {site.key !== "network" && !plannerTopic && !requiresTopologyChoice && !taskOnly && (amazonFamilyBlock || (!amazonFamilyProduct && !cjFamilyAffiliateOffer && (topProduct || topRoundup || commerceProduct))) ? (
           <section
             className="mt-4 rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-4 sm:mt-5 sm:p-5"
             aria-label="Retailer options after the guide"
@@ -472,8 +475,8 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             </p>
           </section>
         ) : null}
-        {(site.key === "homeoffice" || site.key === "network") && !["desktop-teleprompters-buying-guide", "fido-hardware-security-keys-buying-guide"].includes(guide.slug) ? <aside className="discovery-card mt-8"><h2>Continue with this decision</h2><p><Link href={discoveryTopic === "other" ? "/search" : `/search?topic=${discoveryTopic}`}>Browse the model references and comparisons</Link></p>{plannerTopic ? <p><Link href={`/compatibility/${plannerTopic}`}>Check compatibility, missing parts and sources</Link></p> : null}</aside> : null}
-        {amazonFamilyProduct && amazonFamilyIdentity && amazonFamilyOffer ? (
+        {site.key === "homeoffice" && !["desktop-teleprompters-buying-guide", "fido-hardware-security-keys-buying-guide"].includes(guide.slug) ? <aside className="discovery-card mt-8"><h2>Continue with this decision</h2><p><Link href={discoveryTopic === "other" ? "/search" : `/search?topic=${discoveryTopic}`}>Browse the model references and comparisons</Link></p>{plannerTopic ? <p><Link href={`/compatibility/${plannerTopic}`}>Check compatibility, missing parts and sources</Link></p> : null}</aside> : null}
+        {site.key !== "network" && amazonFamilyProduct && amazonFamilyIdentity && amazonFamilyOffer ? (
           <section className="mt-10 rounded-md border border-[var(--border)] bg-white p-5" aria-labelledby="amazon-family-listing" data-guide-family-purchase-reference="true">
             <p className="eyebrow">Amazon listing reference</p>
             <h2 className="mt-3 scroll-mt-24 text-2xl font-bold" id="amazon-family-listing">Check this exact product</h2>
@@ -578,11 +581,11 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             <p className="eyebrow">Research notes</p>
             <h2 className="mt-3 scroll-mt-24 text-2xl font-bold" id="editorial-method">How we evaluated these choices</h2>
             <ol className="mt-4 space-y-3 text-sm leading-6 text-[var(--muted)]">
-              {guide.editorialMethod.map((item, index) => <li key={item}><span className="mr-2 font-bold text-[var(--text)]">{index + 1}.</span>{item}</li>)}
+              {guide.editorialMethod.map((item, index) => <li key={item}><span className="mr-2 font-bold text-[var(--text)]">{index + 1}.</span>{site.key === "network" ? networkEditorialNote(item) : item}</li>)}
             </ol>
           </section>
         ) : null}
-        {familyGuides.length > 1 ? (
+        {site.key !== "network" && familyGuides.length > 1 ? (
           <nav className="mt-8 rounded-md border border-[var(--border)] bg-white p-5" data-family-topic-cluster="true" aria-labelledby="family-topic-cluster-heading">
             <p className="eyebrow">Decision guide series</p>
             <h2 className="mt-3 text-2xl font-bold" id="family-topic-cluster-heading">
@@ -619,9 +622,9 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             </ul>
           </nav>
         ) : null}
-        <SearchOpportunityBacklinks site={site.key} kind="guide" slug={slug} />
+        {site.key !== "network" ? <SearchOpportunityBacklinks site={site.key} kind="guide" slug={slug} /> : null}
         {commerceProduct ? <AmazonListingFreshness site={site.key} productSlug={commerceProduct.slug} /> : null}
-        {guide.image && !guide.familySlug && !guide.decisionLayout ? (
+        {site.key !== "network" && guide.image && !guide.familySlug && !guide.decisionLayout ? (
           <figure className="mt-8">
             <div className="relative aspect-[16/9] w-full overflow-hidden rounded-md bg-[var(--surface-muted)]">
               <Image
@@ -640,8 +643,8 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             ) : null}
           </figure>
         ) : null}
-        {searchOpportunity ? <SearchOpportunityBlock opportunity={searchOpportunity} linksOnly /> : null}
-        <div className="mt-10 grid gap-4 sm:grid-cols-2">
+        {site.key !== "network" && searchOpportunity ? <SearchOpportunityBlock opportunity={searchOpportunity} linksOnly /> : null}
+        {site.key === "network" ? <NetworkContinuation path={`/guides/${slug}`} /> : <div className="mt-10 grid gap-4 sm:grid-cols-2">
           {(guide.relatedTools ?? []).map((toolSlug) => {
             const tool = findTool(site.key, toolSlug);
             return tool ? <Link className="panel p-5" href={`/tools/${tool.slug}`} key={tool.slug}>
@@ -677,7 +680,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
               </Link>
             ) : null;
           })}
-        </div>
+        </div>}
         {null}
         <BaseMarketEditionLinks site={site} basePath={`/guides/${slug}`} />
         {null}

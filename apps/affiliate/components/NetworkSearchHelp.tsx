@@ -1,0 +1,7 @@
+import Link from "next/link";
+const paths:Record<string,[string,string,string][]>={
+  mesh:[["Coverage problem","/guides/router-placement-guide","Compare practical router positions before choosing more nodes."],["Choose mesh and its pack","/guides/mesh-wifi-vs-single-router-guide","Establish the layout and backhaul before comparing models."]],
+  nas:[["Find the slow link","/compatibility/ethernet","Map the exact traffic path and the ports it needs."],["Repair an unexpected 100Mbps link","/guides/ethernet-stuck-at-100-mbps-guide","Use a known-good cable to isolate the failing segment."]],
+  backup:[["Identify the failed layer","/guides/home-network-smart-home-outage-plan","Separate provider loss, router failure and power loss."],["Plan battery runtime","/guides/router-ups-runtime-guide","Measure the complete essential load and protected outlets."]],
+};
+export function NetworkSearchHelp({topic}:{topic:string}){return <section className="network-search-help"><h2 className="text-xl font-bold">{paths[topic]?"Start with a decision, or search the references below.":"Choose a task, or search an exact model."}</h2><div className="network-next-grid mt-5">{(paths[topic]??[["Wi-Fi, mesh and access points","/categories/wifi","Start with the room, node or supported wireless-client requirement."],["Wired networks and installation","/categories/wired","Find the link, power, cable or mounting task you need to complete."]]).map(([label,href,body])=><article key={href}><Link href={href}>{label} →</Link><p>{body}</p></article>)}</div></section>;}

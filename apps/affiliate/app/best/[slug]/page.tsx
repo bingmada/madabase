@@ -18,6 +18,7 @@ import { defaultRoundupQuickAnswer } from "@/lib/roundup-quick-answer";
 import { roundupSourceLinks } from "@/lib/roundup-source-links";
 import { ComparisonStart } from "@/components/ComparisonStart";
 import { DecisionWorkedExamples } from "@/components/DecisionWorkedExamples";
+import { NetworkComparison } from "@/components/NetworkContent";
 
 const roundupAdvice: Record<SiteKey, Record<string, { spendMore: string; spendLess: string; compare: string[] }>> = {
   pet: {
@@ -135,6 +136,7 @@ export default async function RoundupPage({ params }: { params: Promise<{ slug: 
   const { slug } = await params;
   const roundup = findRoundup(site.key, slug);
   if (!roundup) notFound();
+  if (site.key === "network") return <NetworkComparison site={site} roundup={roundup} />;
   const searchOpportunity = findSearchOpportunity(site.key, "roundup", slug);
   const effectiveUpdatedAt = effectiveContentUpdatedAt(roundup.updatedAt, searchOpportunity?.updatedAt);
   const effectiveRoundup = effectiveUpdatedAt === roundup.updatedAt ? roundup : { ...roundup, updatedAt: effectiveUpdatedAt };

@@ -50384,7 +50384,7 @@
     "pages": {
       "cloud-managed-access-points-buying-guide": {
         "title": "Cloud-Managed Access Points: Licences, Control and Offline Use",
-        "dek": "Check license term, retained features after expiry, remote logs, controller choice, tenant transfer and Internet-outage behavior can determine ownership cost.",
+        "dek": "Check licence terms, features retained after expiry, remote logs, controller choice, account transfer and internet-outage behavior before choosing a managed access point.",
         "quickAnswer": "Choose a managed access point by client radios, coverage, wired uplink, power and how you will operate its controller. The EAP773 name spans hardware revisions. Confirm the selected regional version before applying its radio rates or PoE requirements; the observed 7 Pro X selection excludes a DC adapter. A controller’s availability and feature set are separate from the access point’s headline wireless speed.",
         "sections": [
           {
@@ -50618,7 +50618,7 @@
     "pages": {
       "coax-compression-tools-buying-guide": {
         "title": "Coax Compression Tools: Match the Cable and Connector",
-        "dek": "Check match RG59/RG6/RG6Q/RG11, F/BNC/RCA connector series, compression stroke and plunger, prep dimensions, confined access and a post-termination signal test.",
+        "dek": "Match the compression tool to the cable, connector series, preparation dimensions and available working space. Check the finished connection with the appropriate signal test.",
         "quickAnswer": "Match the cable, connector series, preparation dimensions and compression tool as one termination system. An adjustable tool’s RG list does not mean its bundled connectors suit every listed cable. For the HIIJA TK-00 reference, confirm the selected kit and connector part numbers before ordering; no weather seal or RF performance has been tested here. A factory-terminated lead may solve a small repair with fewer unknowns.",
         "sections": [
           {
@@ -50735,7 +50735,7 @@
     "pages": {
       "ethernet-inline-couplers-buying-guide": {
         "title": "Ethernet Couplers: Cable Category, Shielding and Placement",
-        "dek": "A serviceable extension purchase governed by cable category, shield path, PoE current, link speed, jack retention and whole-channel length; one uninterrupted correctly sized cable remains the benchmark.",
+        "dek": "Use a coupler only when the complete Ethernet channel still meets its length, speed, shielding and PoE requirements. Compare one correctly sized cable before adding another joint.",
         "quickAnswer": "An inline Ethernet coupler joins two plugs; it does not regenerate the signal or restart the total channel-length allowance. Check the application, complete cable path, added connection, shielding and PoE requirements. The Jadaol black three-pack is a possible passive join for a suitable task, not a verified 10 Gb/s or high-power PoE upgrade. One correctly sized uninterrupted cable is often the cleaner solution.",
         "sections": [
           {
@@ -50852,7 +50852,7 @@
     "pages": {
       "ethernet-network-taps-buying-guide": {
         "title": "Ethernet Network TAPs: Link Speed, Capture and Power Checks",
-        "dek": "Copper/fiber, link speed, passive/active behavior, fail-open path, breakout versus aggregation, monitor capacity and SPAN alternative decide suitability.",
+        "dek": "Choose a network TAP by link media and speed, failure behavior, monitor-port capacity and the traffic you need to capture. Compare a supported switch mirror port before adding hardware.",
         "quickAnswer": "Choose an inline network TAP only when you need its observation point and can accept the operational work of inserting and powering it. The Dualcomm ETAP-2003 reference is a USB-powered 10/100/1000Base-T device. Its monitor-port behavior differs from ETAP-2003R, and neither the product name nor a capture image proves zero loss, higher-speed support or unpowered fail-open behavior. Switch mirroring may already be sufficient.",
         "sections": [
           {
@@ -55800,7 +55800,7 @@
     "pages": {
       "fiber-optic-patch-cables-buying-guide": {
         "title": "Fiber Patch Cables: Connector, Polish and Fiber-Type Checks",
-        "dek": "Exact link matching requires OS2/OM3/OM4, connector at each end, UPC versus APC, simplex/duplex, polarity, transceiver wavelength, reach, jacket and bend protection; color alone is insufficient.",
+        "dek": "Match the fiber, connectors, polish, polarity and supported optics at both ends. Check the route and bend limits; jacket color alone does not establish compatibility.",
         "searchQuestion": "How do I choose fiber optic patch cables, and when is direct-attach copper for short compatible links the better solution?",
         "relatedGuides": [
           "bulk-ethernet-cable-reels-buying-guide",
@@ -56248,7 +56248,7 @@
     "pages": {
       "kvm-over-ip-extenders-buying-guide": {
         "title": "KVM over IP: Video, USB, Latency and Network Requirements",
-        "dek": "Check Distinguish remote BIOS console from low-latency desk extension and verify video input, resolution/frame rate, keyboard/mouse emulation, USB media, security, updates and network latency.",
+        "dek": "Choose a remote BIOS console or a desk extender by the actual task. Check video format, keyboard and mouse support, USB media, security updates and network latency.",
         "searchQuestion": "How do I choose kvm over ip extenders, and when is remote desktop software or direct local KVM cabling the better solution?",
         "relatedGuides": [
           "bulk-ethernet-cable-reels-buying-guide",
@@ -56470,7 +56470,7 @@
     "pages": {
       "mini-ups-for-routers-buying-guide": {
         "title": "Mini Router UPS: Voltage, Polarity, Connectors and Runtime",
-        "dek": "Check exact voltage, connector diameter, polarity, current headroom, pass-through behavior, watt-hours, protected device count and battery replacement matter more than advertised mAh.",
+        "dek": "Match the exact voltage, connector, polarity and current of every connected device. Compare usable energy, pass-through behavior and battery replacement before choosing a mini UPS.",
         "searchQuestion": "How do I choose mini ups units for routers, and when is a conventional AC UPS or modem battery option the better solution?",
         "relatedGuides": [
           "rackmount-network-ups-buying-guide",
@@ -56806,7 +56806,7 @@
     "pages": {
       "preterminated-fiber-runs-buying-guide": {
         "title": "Preterminated Fiber: Pulling Route, Connectors and Spare Length",
-        "dek": "Independent install purchase covering exact route length plus slack, indoor/outdoor rating, fiber count, connectors and polarity, conduit fill, pulling eye, maximum pull and bend limits, and testing before and after pulling.",
+        "dek": "Plan the complete fiber route, service slack, connectors and pulling method before ordering. Check jacket rating, conduit clearance and the cable maker’s pull and bend limits.",
         "searchQuestion": "How do I choose preterminated fiber cable runs, and when is field termination by a qualified fiber installer the better solution?",
         "relatedGuides": [
           "bulk-ethernet-cable-reels-buying-guide",
@@ -57028,7 +57028,7 @@
     "pages": {
       "rackmount-network-ups-buying-guide": {
         "title": "Rackmount UPS: Depth, Rails, Outlets and Load-Based Runtime",
-        "dek": "Distinct from the existing desktop UPS guide through rack depth, 1U/2U rails, weight placement, outlet and plug type, topology, network card, replaceable batteries and runtime at measured rack load.",
+        "dek": "Match the UPS to rack depth, mounting rails, supported weight, plugs and the measured network load. Compare battery replacement and runtime for the complete powered chain.",
         "searchQuestion": "How do I choose rackmount ups units for network gear, and when is tower UPS units or DC backup sized to the actual load the better solution?",
         "relatedGuides": [
           "mini-ups-for-routers-buying-guide",
@@ -57145,7 +57145,7 @@
     "pages": {
       "serial-device-servers-buying-guide": {
         "title": "Serial Device Servers: RS-232/422/485 and Software Fit",
-        "dek": "Exact interface decision covering RS-232/422/485, port count and connector, isolation, baud and framing, virtual COM versus raw TCP, security, power, DIN mounting and legacy software support.",
+        "dek": "Match the exact serial interface, connector, baud rate and framing to the existing device and software. Check network mode, isolation, security and recovery before adding a device server.",
         "searchQuestion": "How do I choose serial device servers, and when is a local USB serial adapter or controller replacement the better solution?",
         "relatedGuides": [
           "bulk-ethernet-cable-reels-buying-guide",
@@ -57262,7 +57262,7 @@
     "pages": {
       "sfp28-network-switches-buying-guide": {
         "title": "SFP28 Switches: 25GbE Links, Optics, Uplinks and Noise",
-        "dek": "Port count, 10/25G fallback, QSFP28 uplinks, switching versus routed performance, fan noise and optics budget define the decision.",
+        "dek": "Count the required 10G and 25G links, check supported optics and uplinks, and compare switching or routing requirements. Include fan noise, power and the complete optics budget.",
         "searchQuestion": "How do I choose sfp28 network switches, and when is 10GbE SFP+ switching or direct-attach point links the better solution?",
         "relatedGuides": [
           "bulk-ethernet-cable-reels-buying-guide",
@@ -57375,7 +57375,7 @@
     "pages": {
       "sfp28-transceivers-buying-guide": {
         "title": "SFP28 Transceivers: Fiber, Reach, FEC and Host Compatibility",
-        "dek": "Exact compatibility purchase covering SR/LR/BiDi, wavelength, fiber type, connector, reach, FEC, host coding, temperature and whether a qualified DAC is simpler for the link.",
+        "dek": "Match both host support lists, fiber type, wavelength, connectors, reach and FEC requirements. Compare a qualified DAC when it meets the same short-link task.",
         "searchQuestion": "How do I choose sfp28 transceivers, and when is vendor-qualified direct-attach cables the better solution?",
         "relatedGuides": [
           "bulk-ethernet-cable-reels-buying-guide",

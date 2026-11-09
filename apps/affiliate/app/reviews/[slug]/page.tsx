@@ -18,6 +18,7 @@ import { effectiveContentUpdatedAt, findSearchOpportunity, reviewedSearchDescrip
 import { breadcrumbSchema, pageMetadata, productNotesSchema, productPageTitle } from "@/lib/seo";
 import { getCurrentSite } from "@/lib/sites";
 import type { Product } from "@/lib/types";
+import { NetworkReview } from "@/components/NetworkContent";
 
 function comparisonListingLabel(product: Product) {
   const asin = (product.asin ?? product.specs.ASIN)?.trim();
@@ -83,6 +84,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
   const { slug } = await params;
   const product = findProduct(site.key, slug);
   if (!product) notFound();
+  if (site.key === "network") return <NetworkReview site={site} product={product} />;
   const offerBlock = findAmazonOfferBlock(product);
   const searchOpportunity = findSearchOpportunity(site.key, "product", slug);
   const effectiveUpdatedAt = effectiveContentUpdatedAt(product.updatedAt, searchOpportunity?.updatedAt);

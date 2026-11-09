@@ -48,9 +48,11 @@ export function AffiliateButton({
     ? creatorsListingCandidate
     : null;
   const href = creatorsListing?.detailPageUrl ?? offer.url;
+  const networkUsListing = site === "network" && isAmazon && /^https:\/\/(?:www\.)?amazon\.com\//i.test(href);
+  const amazonLabel = networkUsListing ? "Amazon US" : "Amazon";
   const merchantName = offer.merchant.replace(/\s+via\s+CJ$/i, "");
   const visibleLabel = isAmazon
-    ? modelLabel ? `Check ${modelLabel} on Amazon` : "Check current price & availability on Amazon"
+    ? modelLabel ? `Check ${modelLabel} on ${amazonLabel}` : `Check current price & availability on ${amazonLabel}`
     : `Check current price & availability at ${merchantName}`;
   const purchaseLink = useRef<HTMLAnchorElement>(null);
   const showStickyDock = useStickyCommerceDock({ enabled: sticky, buttonRef: purchaseLink, startId: stickyStartId, scopeKey: `${site}:${product.slug}:${amazonMarket}:${position}` });
@@ -120,6 +122,7 @@ export function AffiliateButton({
       <div className="inline-flex max-w-full flex-col items-start align-top">
         {primaryButton}
         <div data-commission-slot="true" />
+        {networkUsListing ? <p className="mt-2 max-w-lg text-xs leading-5 text-[var(--muted)]" data-storefront-scope="us">US listing. Outside the US, confirm the destination, regional model and pack before buying.</p> : null}
       </div>
       {sticky && showStickyDock ? (
         <a
@@ -147,7 +150,7 @@ export function AffiliateButton({
               <p className="mt-0.5 text-xs leading-5 text-[var(--muted)]">Current price &amp; availability</p>
             </div>
             <span className="button-primary shrink-0 px-3 py-2 text-xs">
-              {isAmazon ? "Amazon price" : "Check price"}
+              {isAmazon ? `${amazonLabel} price` : "Check price"}
               <ExternalLink aria-hidden="true" size={14} />
             </span>
           </div>

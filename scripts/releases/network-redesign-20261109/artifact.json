@@ -1,0 +1,20 @@
+{
+  "builtLocally": true,
+  "serverBuildAllowed": false,
+  "artifacts": {
+    "main": {
+      "buildId": "qXCjYvg7_L8cIN_wqfrmG",
+      "sha256": "7764c2394f01ac6fb68bf820c911ee7bfce8350e79640072396053b92a898413",
+      "bytes": 25927085,
+      "distDir": ".next-release",
+      "archivePath": "apps/main/.release/main-runtime.tgz"
+    },
+    "affiliate": {
+      "buildId": "UPXI1qZ_gxIqTB_Y7HhrQ",
+      "sha256": "86fbd2f2c815502d2741c8c65a174034fa05fa9e510838eb23801a94695ab607",
+      "bytes": 59568406,
+      "distDir": ".next-release",
+      "archivePath": "apps/affiliate/.release/affiliate-runtime.tgz"
+    }
+  }
+}

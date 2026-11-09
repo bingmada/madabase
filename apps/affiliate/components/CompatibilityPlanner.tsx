@@ -2,7 +2,9 @@
 import { TinyFruResolver } from "./TinyFruResolver";
 import { compareDocks, dockParts, networkDecision } from "@/lib/setup-decisions";
 import { PartsBudget, type PartsWorksheet } from "./PartsBudget";
-import { useEffect, useState, type FormEvent } from "react";
+import { useEffect, useRef, useState, type FormEvent } from "react";
+import { readNetworkDraft, saveNetworkDraft, clearNetworkDraft } from "./NetworkPlanState";
+import type { NetworkDraft } from "@/lib/network-plan-state";
 import { checkArm, checkDock, planMiniPc, type CompatibilityResult, type DockInput } from "@/lib/compatibility-engine";
 import { armProfiles, dockProfiles, evidenceCheckedAt, evidenceSources, macProfiles, miniPcProfiles, monitorProfiles } from "@/lib/compatibility-data";
 import { discoveryEvent } from "../../shared/SearchControls";
@@ -59,7 +61,15 @@ export type PlannerTopic = "docks" | "monitor-arms" | "mini-pcs" | "ethernet";
 export function CompatibilityPlanner({ topic, initialModel = "", purchaseOptions = [] }: { topic: PlannerTopic; initialModel?: string; purchaseOptions?: readonly CompatibilityPurchaseOption[] }) {
   const [result, setResult] = useState<CompatibilityResult | null>(null);
   const [ready,setReady] = useState(false);
-  useEffect(() => { setReady(true); },[]);
+  const formRef = useRef<HTMLFormElement>(null);
+  const restoreDraft = useRef<NetworkDraft|null>(null);
+  useEffect(() => {
+    if (topic === "ethernet") {
+      restoreDraft.current = readNetworkDraft("ethernet");
+      if (restoreDraft.current?.values.path) setNetworkPath(restoreDraft.current.values.path);
+    }
+    setReady(true);
+  },[topic]);
   const [comparison, setComparison] = useState<ReturnType<typeof compareDocks> | null>(null);
   const [dockRequest,setDockRequest] = useState<DockInput | null>(null);
   const [monitorId, setMonitorId] = useState("custom");
@@ -70,6 +80,15 @@ export function CompatibilityPlanner({ topic, initialModel = "", purchaseOptions
   const [selectedMac,setSelectedMac] = useState("");
   const [selectedLid,setSelectedLid] = useState("");
   const [networkPath,setNetworkPath] = useState("same-switch");
+  useEffect(() => {
+    const draft=restoreDraft.current;
+    if(!ready||!draft||networkPath!==(draft.values.path??"same-switch"))return;
+    for(const [name,value] of Object.entries(draft.values)) {
+      const field=formRef.current?.elements.namedItem(name);
+      if(field instanceof HTMLInputElement||field instanceof HTMLSelectElement)field.value=value;
+    }
+    restoreDraft.current=null;
+  },[ready,networkPath]);
   const monitor = monitorProfiles.find((item) => item.id === monitorId);
   useEffect(() => {
     if (!result && !comparison) return;
@@ -103,13 +122,22 @@ export function CompatibilityPlanner({ topic, initialModel = "", purchaseOptions
     setResult({...checkDock(input),parts:dockParts(input),noBuy:comparison.noBuy});
     discoveryEvent("compatibility_detail_click",`dock-checklist:${id}`);
   }
-  const title = { docks: "Check a MacBook and dock", "monitor-arms": "Check the monitor, arm and desk", "mini-pcs": "Build the upgrade checklist", ethernet: "Map your PC-to-NAS path" }[topic];
+  const title = { docks: "Check a MacBook and dock", "monitor-arms": "Check the monitor, arm and desk", "mini-pcs": "Build the upgrade checklist", ethernet: "Map one Ethernet traffic path" }[topic];
   const rates = [["0.1", "100Mbps"], ["1", "1Gbps"], ["2.5", "2.5Gbps"], ["5", "5Gbps"], ["10", "10Gbps"]] as const;
   return <section className="compat-panel" id="compatibility-checker" aria-label={title}>
     <p className="eyebrow">Your equipment, your constraints</p><h2>{title}</h2><p>Start with the exact equipment and the job you need. Changing an answer clears the previous result.</p>
     <details className="guide-toc"><summary>Where to find the details before starting</summary>{topic === "mini-pcs" ? <p>Read the Tiny model and machine type from the chassis label. For RAM, inspect both module labels rather than dividing total memory by two; follow the exact maintenance manual with power disconnected. For storage, check free capacity, occupied storage sockets, carrier/cable and retaining clip. Enter a serial only on Lenovo Parts Lookup, never here.</p> : topic === "docks" ? <p>On the Mac, open Apple menu → About This Mac and read the complete chip name, including Pro or Max. Check the monitor’s actual input and requested resolution/refresh rate. Read the host-output wattage separately from charger input power. If company policy controls software, confirm DisplayLink permission before ordering.</p> : topic === "monitor-arms" ? <p>Use the monitor maker’s weight without stand, adding carried accessories. Read VESA spacing and screw requirements from its manual. Measure the actual clamp stack and underside; get the desk maker’s approval for that attachment location. Model presets are references, not a complete-device database.</p> : <p>Choose one physical traffic path. Record negotiated port rates, not just package claims; for a built-in NIC use its rate in both PC and NIC fields. For a USB adapter, include its host-link ceiling. Count only actual wired switch devices and uplinks. WAN and NAS inputs appear only when that path uses them.</p>}</details>
     {!ready ? <p role="status">Loading the planner… The model reference below is available now.</p> : null}
-    <form onSubmit={calculate} onChange={() => { setResult(null); setComparison(null); setDockRequest(null); }}>
+    <form ref={formRef} onSubmit={calculate} onChange={(event) => {
+      setResult(null); setComparison(null); setDockRequest(null);
+      if(topic === "ethernet") {
+        restoreDraft.current=null;
+        const values=Object.fromEntries([...new FormData(event.currentTarget)].map(([name,value])=>[name,String(value)]));
+        const selected=values.path??"same-switch";
+        const permitted=selected==="direct"?["path","target","pc","adapter","nas","cable"]:selected==="internet"?["path","target","pc","adapter","switchRate","routerLan","routerWan","internet","cable","devices","ports","uplinks"]:selected==="router-transit"?["path","target","pc","adapter","switchRate","nas","routerLan","cable","devices","ports","uplinks"]:["path","target","pc","adapter","switchRate","nas","cable","devices","ports","uplinks"];
+        saveNetworkDraft("ethernet",Object.fromEntries(Object.entries(values).filter(([name])=>permitted.includes(name))));
+      }
+    }}>
       <fieldset className="compat-form" disabled={!ready}><legend className="sr-only">Equipment and task details</legend>
       {topic === "docks" ? <>
         <Choice name="mac" label="MacBook model / chip" onChange={setSelectedMac} options={macProfiles.map((item) => [item.id, item.name])} />
@@ -162,7 +190,7 @@ export function CompatibilityPlanner({ topic, initialModel = "", purchaseOptions
         <Choice name="cable" label="Cable path and negotiated rates verified?" options={yesNo} initial="unknown" />
         {networkPath !== "direct" ? <><NumberField name="devices" label="Devices wired to this switch (including NAS when present)" max={96} /><NumberField name="uplinks" label="Upstream links from this switch" max={8} /><NumberField name="ports" label="Total switch ports" max={128} /></> : null}
       </>}
-      <div className="compat-wide"><button type="submit">Check my setup</button><p className="evidence-note mt-3">No account needed. Answers stay in this page; analytics records completion and result type, not your raw inputs.</p></div>
+      <div className="compat-wide"><button type="submit">Check my setup</button>{topic === "ethernet" ? <button className="ml-3" type="button" onClick={()=>{clearNetworkDraft("ethernet");restoreDraft.current=null;formRef.current?.reset();setNetworkPath("same-switch");setResult(null);}}>Clear saved answers</button> : null}<p className="evidence-note mt-3">{topic === "ethernet" ? "Your draft stays in this browser tab for up to 24 hours. Recheck restored answers and submit again; a saved draft is not a verified result. Analytics records completion and result type, not raw inputs." : "No account needed. Answers stay in this page; analytics records completion and result type, not your raw inputs."}</p></div>
       </fieldset>
     </form>
     {result ? <Result key={JSON.stringify(result)} result={result} purchaseOptions={purchaseOptions} /> : null}

@@ -2510,7 +2510,8 @@
     "title": "Mesh Wi-Fi Node Placement Guide: Fix Dead Zones Without Overbuying",
     "summary": "Place mesh nodes so they solve coverage instead of repeating a weak signal or tempting you into an unnecessary extra pack.",
     "href": "https://network.madabase.com/guides/mesh-wifi-node-placement-guide",
-    "category": "wifi"
+    "category": "wifi",
+    "searchText": "Place a wireless node before the dead zone, where it still receives a useful upstream signal. Test that backhaul and the client in the target room separately. Move or wire an existing node before buying another; an extra weak relay can leave the original problem unresolved."
   },
   {
     "site": "network",
@@ -2518,7 +2519,8 @@
     "title": "Router Placement Guide Before Buying Mesh Wi-Fi",
     "summary": "Choose a router location for apartments and small homes before buying another mesh node, extender, or flagship router.",
     "href": "https://network.madabase.com/guides/router-placement-guide",
-    "category": "wifi"
+    "category": "wifi",
+    "searchText": "Compare practical central, open router positions using the same client and workload. Keep the router when that solves the weak room. If wired service is also slow, diagnose that path first; mesh only becomes a candidate when a repeatable coverage problem remains."
   },
   {
     "site": "network",
@@ -2562,7 +2564,8 @@
     "title": "Is Wi-Fi 7 Worth It for 1Gbps Internet? A Buyer Checklist",
     "summary": "Separate coverage, client density, 6GHz, wired backhaul, local transfers, and future plans before paying for a Wi-Fi 7 mesh upgrade.",
     "href": "https://network.madabase.com/guides/is-wifi-7-worth-it-for-1gbps-internet",
-    "category": "wifi"
+    "category": "wifi",
+    "searchText": "A 1Gbps internet plan alone does not justify replacing a reliable router. Consider an upgrade for an identified coverage, backhaul, client or local-transfer requirement, and verify the complete path. Keep the existing system when normal work already runs well."
   },
   {
     "site": "network",
@@ -2570,7 +2573,8 @@
     "title": "2.5GbE vs 10GbE Mesh Backhaul: Which Port Speed Do You Need?",
     "summary": "Choose a mesh backhaul speed from node distance, WAN, switches, NAS traffic, cable runs, and the number of devices sharing each link.",
     "href": "https://network.madabase.com/guides/2-5gbe-vs-10gbe-mesh-backhaul-checklist",
-    "category": "wifi"
+    "category": "wifi",
+    "searchText": "Use 2.5GbE when it meets the shared satellite workload and connected endpoints. Pay for 10GbE only for a defined path with suitable equipment at both ends. Check the port's assigned WAN or LAN job; faster Ethernet does not repair a weak wireless relay."
   },
   {
     "site": "network",
@@ -2578,7 +2582,8 @@
     "title": "2.5GbE Home Network Upgrade Checklist: Router, Switch, NAS and Cables",
     "summary": "Audit every link from the ISP handoff to the mesh nodes, switch, NAS, desktop, adapter, and cable before paying for multi-gig hardware.",
     "href": "https://network.madabase.com/guides/2-5gbe-home-network-upgrade-checklist",
-    "category": "wifi"
+    "category": "wifi",
+    "searchText": "Map the modem or ONT, WAN, LAN, switch, backhaul and client before buying. A multi-gig plan or mesh label cannot remove a slower link. Keep adequate parts and replace only the segment whose change serves the required internet or local-transfer task."
   },
   {
     "site": "network",
@@ -2586,7 +2591,8 @@
     "title": "Mesh Wi-Fi vs Single Router: Which Should You Buy for Your Home?",
     "summary": "Choose between one well-placed router and multi-node mesh by checking layout, dead zones, wired ports, and backhaul first.",
     "href": "https://network.madabase.com/guides/mesh-wifi-vs-single-router-guide",
-    "category": "wifi"
+    "category": "wifi",
+    "searchText": "Keep one well-placed router when it serves the important rooms. Compare mesh for repeatable gaps caused by the layout, with a strong wireless or supported Ethernet path to each node. Floor area and the Wi-Fi generation alone do not establish how many units to buy."
   },
   {
     "site": "network",
@@ -2594,7 +2600,8 @@
     "title": "Ethernet Stuck at 100 Mbps? Fix Cable, Port or Adapter",
     "summary": "Use the negotiated link speed to isolate a bad cable, 100 Mbps port, wall jack, dock, adapter, or auto-negotiation fault before buying new network gear.",
     "href": "https://network.madabase.com/guides/ethernet-stuck-at-100-mbps-guide",
-    "category": "wired"
+    "category": "wired",
+    "searchText": "Read the negotiated Ethernet rate before using an internet speed test. Compare a short known-good cable and confirmed port, then add the adapter, switch and wall run one at a time. Replace the component isolated by that test; a new router does not repair a failed cable pair."
   },
   {
     "site": "network",
@@ -2602,7 +2609,8 @@
     "title": "NETGEAR GS908E Guide: Smart Managed Plus or Old Gigabit Switch?",
     "summary": "Check GS908E's eight gigabit ports, smart management, cable routing, hardware region, and whether GS308E or 2.5GbE is the better buy.",
     "href": "https://network.madabase.com/guides/netgear-gs908e-review",
-    "category": "wired"
+    "category": "wired",
+    "searchText": "GS908E is an eight-port Gigabit Smart Managed Plus switch, not a multi-gig upgrade. Compare its exact revision, support and useful management features with simpler Gigabit or faster documented hardware. Keep it when it has sufficient ports and meets the task."
   },
   {
     "site": "network",
@@ -2610,7 +2618,8 @@
     "title": "Wired vs Wireless Mesh Backhaul: When Ethernet Between Nodes Is Worth It",
     "summary": "Decide whether Ethernet between mesh nodes is worth the installation effort by checking room layout, ports, switch placement, and node signal.",
     "href": "https://network.madabase.com/guides/wired-vs-wireless-mesh-backhaul-guide",
-    "category": "wifi"
+    "category": "wifi",
+    "searchText": "Use supported Ethernet backhaul when a practical cable route removes a difficult node-to-node radio path. Wireless backhaul can suit a rental or finished home when the upstream link is strong. Keep a stable layout; confirm the exact system's ports and topology before changing it."
   },
   {
     "site": "network",
@@ -2618,7 +2627,8 @@
     "title": "Deco BE63 Ethernet Backhaul: 2.5Gbps Switch Setup",
     "summary": "Keep Deco BE63 backhaul at 2.5Gbps by checking every port, switch, wall jack, cable, topology, and loop before blaming Wi-Fi 7.",
     "href": "https://network.madabase.com/guides/deco-be63-ethernet-backhaul-setup",
-    "category": "wifi"
+    "category": "wifi",
+    "searchText": "Add all Deco nodes to the same network before wiring them. In router mode, connect satellites directly to the main Deco's LAN side or through a downstream switch, avoiding loops. Test one satellite first and check every negotiated link; a slower switch or cable limits that branch."
   },
   {
     "site": "network",
@@ -2626,7 +2636,8 @@
     "title": "Deco BE63 2.5GbE Ports Explained: WAN, LAN, Switches and Backhaul",
     "summary": "Plan the four auto-sensing ports around a multi-gig internet connection, wired backhaul, office devices, and the real bottleneck in the path.",
     "href": "https://network.madabase.com/guides/deco-be63-multigig-ports-guide",
-    "category": "wired"
+    "category": "wired",
+    "searchText": "The documented US BE63 has four 2.5Gbps WAN/LAN ports per node. Count the WAN and each backhaul connection before calling a socket spare. The client, switch and cable still control their own links; aggregate Wi-Fi rates are not one device's throughput."
   },
   {
     "site": "network",
@@ -2634,7 +2645,8 @@
     "title": "Wi-Fi 7 Device Compatibility Checklist",
     "summary": "Check client radios, 6GHz support, MLO, channel width, security, ports, and backhaul before paying for a Wi-Fi 7 upgrade.",
     "href": "https://network.madabase.com/guides/wifi-7-device-compatibility-checklist",
-    "category": "wifi"
+    "category": "wifi",
+    "searchText": "Check the exact client radio, OS, driver, permitted bands and corresponding router mode. An older client does not become Wi-Fi 7 by joining a newer router, and 6GHz support alone does not establish MLO. Pause a feature-led purchase while either end is unknown."
   },
   {
     "site": "network",
@@ -2642,7 +2654,8 @@
     "title": "Cable Modem 2.5GbE Port Buying Guide",
     "summary": "Before buying ARRIS S33, Motorola MB8611, or Hitron CODA56, check ISP approval, voice support, router WAN speed, and whether the plan can exceed gigabit.",
     "href": "https://network.madabase.com/guides/cable-modem-2-5g-port-buying-guide",
-    "category": "wired"
+    "category": "wired",
+    "searchText": "Start with the provider's approval for the exact address, tier, upload profile and voice service. A 2.5GbE handoff still needs a suitable router WAN port. DOCSIS modems do not replace fiber ONTs or supply Wi-Fi by themselves."
   },
   {
     "site": "network",
@@ -2659,7 +2672,8 @@
     "title": "Modem Router Combo vs Separate Modem and Router",
     "summary": "Decide whether to keep an ISP gateway, buy a modem-only box, or split modem and Wi-Fi before spending on a mesh system.",
     "href": "https://network.madabase.com/guides/modem-router-combo-vs-separate-modem-router-guide",
-    "category": "wired"
+    "category": "wired",
+    "searchText": "Keep an adequate provider gateway when its service and Wi-Fi fit. Separate modem and router roles when independent placement or routing adds a useful capability. Bridge mode can retain the gateway's modem role, but voice, support and plan dependencies must be checked first."
   },
   {
     "site": "network",
@@ -2667,7 +2681,8 @@
     "title": "2.5G vs 10G Switch for a Home NAS",
     "summary": "Most homes should fix the 2.5GbE path first; 10G makes sense when the NAS, desktop, cabling, noise, and budget all support it.",
     "href": "https://network.madabase.com/guides/2-5g-vs-10g-switch-for-home-nas-guide",
-    "category": "wired"
+    "category": "wired",
+    "searchText": "Choose 2.5GbE when it clears the actual NAS workload with less installation cost. Consider selected 10GbE links only when clients, storage and media can use them. Internet speed and local-copy speed are different requirements; a switch cannot accelerate a slower drive or endpoint."
   },
   {
     "site": "network",
@@ -2684,7 +2699,8 @@
     "title": "MoCA Splitter and Filter Checklist",
     "summary": "Check the connected coax path, documented splitter compatibility, amplifier layout and provider-approved filter placement before replacing parts.",
     "href": "https://network.madabase.com/guides/moca-splitter-filter-checklist",
-    "category": "wired"
+    "category": "wired",
+    "searchText": "Map the private coax path and match splitters, amplifiers and isolation to the provider and adapter instructions. A generic filter can interrupt the intended link or conflict with service frequencies. Here point of entry is distinct from Power over Ethernet; resolve unknown shared coax before changing it."
   },
   {
     "site": "network",
@@ -2701,7 +2717,8 @@
     "title": "5-Port vs 8-Port 2.5GbE Switch: Count the Uplink First",
     "summary": "Choose five or eight multi-gig ports by counting the router uplink, NAS, desktops, Wi-Fi 7 access points, mesh nodes, docks, media devices, and spare capacity.",
     "href": "https://network.madabase.com/guides/5-port-vs-8-port-2-5gbe-switch",
-    "category": "wired"
+    "category": "wired",
+    "searchText": "Count the router or upstream connection within the switch's total. A five-port switch normally leaves four downstream sockets; choose eight when the actual devices and deliberate spare capacity require them. Keep enough suitable existing ports rather than adding unused speed."
   },
   {
     "site": "network",
@@ -2709,7 +2726,8 @@
     "title": "2.5GbE Switch for NAS and Wi-Fi 7 Mesh: Port Budget Checklist",
     "summary": "Map the modem or ONT, router, switch, NAS, workstation, Wi-Fi 7 access point, mesh backhaul, adapters, and slower side devices before buying.",
     "href": "https://network.madabase.com/guides/2-5gbe-switch-port-budget-for-nas-mesh",
-    "category": "wired"
+    "category": "wired",
+    "searchText": "Draw the NAS, clients, wired nodes and upstream cable before choosing a switch. Count each physical connection once and separate local traffic from the internet path. Buy enough useful ports, while retaining slow-device connections that already meet their job."
   },
   {
     "site": "network",
@@ -2717,7 +2735,8 @@
     "title": "Router UPS Runtime: Size Backup Power for Modem, ONT and Mesh",
     "summary": "Measure the complete network load, separate protected from surge-only outlets, and estimate runtime without turning VA or half-load figures into false promises.",
     "href": "https://network.madabase.com/guides/router-ups-runtime-guide",
-    "category": "backup"
+    "category": "backup",
+    "searchText": "Measure the watts of the modem or ONT, router and any essential switch or node. Use runtime data at a comparable load, allow for battery age and count battery-backed sockets. VA is a capacity rating, not minutes, and provider equipment outside the home may still lose service."
   },
   {
     "site": "network",
@@ -2752,7 +2771,8 @@
     "title": "Deco BE67 10GbE Network Checklist",
     "summary": "Verify the WAN, switch, NAS, client adapters, backhaul, and cables required to make the BE67 upgrade meaningful.",
     "href": "https://network.madabase.com/guides/deco-be67-10gbe-network-checklist",
-    "category": "wifi"
+    "category": "wifi",
+    "searchText": "Give BE67's single 10GbE port one explicit job. Using it for WAN does not leave a second 10GbE LAN port; the other ports have their own rates. Confirm the modem, switch, backhaul and destination before paying for a faster path."
   },
   {
     "site": "network",
@@ -2760,7 +2780,8 @@
     "title": "Deco BE63 2-Pack vs 3-Pack: Which Pack Do You Need?",
     "summary": "Start with two Deco nodes when one satellite covers the measured weak zone; buy three only for a separate floor or wing with a strong wireless or Ethernet path.",
     "href": "https://network.madabase.com/guides/deco-be63-be67-two-pack-vs-three-pack",
-    "category": "wifi"
+    "category": "wifi",
+    "searchText": "Test the smallest layout that can serve the required zones. A third node earns its place only when it serves a separate remaining area with a useful upstream link. Keep node count separate from model choice, and normalize pack size, region and revision before comparing price."
   },
   {
     "site": "network",
@@ -2768,7 +2789,8 @@
     "title": "Is Deco BE67 Worth It? 1Gbps vs 2.5Gbps vs 10GbE",
     "summary": "Decide whether Deco BE67 is worth the upgrade by separating WAN speed, local transfers, wireless backhaul, client support, and the actual 10GbE path.",
     "href": "https://network.madabase.com/guides/is-deco-be67-worth-it-for-gigabit-internet",
-    "category": "wifi"
+    "category": "wifi",
+    "searchText": "Gigabit internet alone does not require BE67's 10GbE port. A specific local-transfer or backhaul requirement can change the answer, but it needs a complete device and port plan. Keep adequate equipment rather than paying for an undated future upgrade."
   },
   {
     "site": "network",
@@ -2776,7 +2798,8 @@
     "title": "Deco Mesh Connection Drops: A Troubleshooting Checklist",
     "summary": "Separate ISP, modem, main-node, backhaul, roaming, cable, and client problems before resetting the whole network.",
     "href": "https://network.madabase.com/guides/deco-mesh-connection-drops-troubleshooting",
-    "category": "wifi"
+    "category": "wifi",
+    "searchText": "Record whether the client, satellite, local LAN, DNS or whole internet connection drops. Test a wired baseline and simplify one backhaul branch at a time. Keep a short change log; choose replacement equipment only after identifying the part that fails the required task."
   },
   {
     "site": "network",
@@ -2784,7 +2807,8 @@
     "title": "Wi-Fi 7 Mesh Buying Guide: Budget BE25 vs Midrange BE63 vs Premium BE85",
     "summary": "Compare BE25, BE63, BE67, BE85, and ASUS BT6 by bands, backhaul, ports, client support, and actual network bottlenecks.",
     "href": "https://network.madabase.com/guides/wifi-7-mesh-budget-midrange-premium-guide",
-    "category": "wifi"
+    "category": "wifi",
+    "searchText": "Choose the least costly model whose radios, ports and node count meet the actual layout. BE25 trades away 6GHz; BE63 adds that band and more 2.5GbE ports. Compare BE67 or BE85 for a defined faster path, then include software and subscription requirements in the decision."
   },
   {
     "site": "network",
@@ -2792,7 +2816,8 @@
     "title": "When Is a 2.5GbE Switch Worth It?",
     "summary": "Map internet, NAS, desktop, access-point, adapter, cable, and uplink speeds before replacing a working gigabit switch.",
     "href": "https://network.madabase.com/guides/when-to-upgrade-to-2-5gbe-switch",
-    "category": "wired"
+    "category": "wired",
+    "searchText": "Upgrade when a real local or internet task is limited by the existing switch and the rest of the path can exceed Gigabit. Keep Gigabit when it already serves the workload. Trace endpoint, adapter, uplink and storage limits before selecting another switch."
   },
   {
     "site": "network",
@@ -2800,7 +2825,8 @@
     "title": "Deco BE63 & BE67 Wired Backhaul Port Checklist",
     "summary": "Assign WAN, wired backhaul, NAS, switch, desktop, and spare capacity before choosing four equal 2.5GbE ports or a mixed 10GbE layout.",
     "href": "https://network.madabase.com/guides/deco-be63-be67-wired-backhaul-port-checklist",
-    "category": "wifi"
+    "category": "wifi",
+    "searchText": "Assign WAN, backhaul, switch and client connections at every node. A wired satellite spends a port at both ends of its path, and a WAN-assigned fast port is not also a spare LAN link. Leave a practical troubleshooting connection and verify the rate of each branch."
   },
   {
     "site": "network",
@@ -2808,7 +2834,8 @@
     "title": "Deco Wi-Fi 7 Model Number Checklist: BE25, BE63 & BE67",
     "summary": "Prevent the most expensive Deco buying mistake: comparing the wrong radio class, regional model, pack count, ASIN, or hardware-version listing.",
     "href": "https://network.madabase.com/guides/deco-wifi-7-model-number-buyer-checklist",
-    "category": "wifi"
+    "category": "wifi",
+    "searchText": "Match the complete model, country edition, hardware revision and node quantity. Similar shells and shortened titles do not establish the same radios or ports. Use the received label's regional firmware documentation and resolve a package mismatch before installation."
   },
   {
     "site": "network",
@@ -2816,7 +2843,8 @@
     "title": "One Deco Wi-Fi 7 Unit vs. a Two-Pack: Which Should You Buy?",
     "summary": "Choose node count by floor plan, wall loss, wired backhaul, router location, dead zones, and the cost of adding a mismatched extra unit later.",
     "href": "https://network.madabase.com/guides/deco-wifi-7-single-unit-vs-two-pack",
-    "category": "wifi"
+    "category": "wifi",
+    "searchText": "One unit suits a layout that one useful central radio can cover. Add a second for a repeatable remaining zone only when its upstream radio or Ethernet path works. Test placement before increasing node count; advertised square footage cannot describe the home's actual barriers."
   },
   {
     "site": "network",
@@ -3282,7 +3310,7 @@
     "site": "network",
     "kind": "guide",
     "title": "Cloud-Managed Access Points: Licences, Control and Offline Use",
-    "summary": "Check license term, retained features after expiry, remote logs, controller choice, tenant transfer and Internet-outage behavior can determine ownership cost.",
+    "summary": "Check licence terms, features retained after expiry, remote logs, controller choice, account transfer and internet-outage behavior before choosing a managed access point.",
     "href": "https://network.madabase.com/guides/cloud-managed-access-points-buying-guide",
     "category": "wifi",
     "familySlug": "cloud-managed-access-points",
@@ -3302,7 +3330,7 @@
     "site": "network",
     "kind": "guide",
     "title": "Coax Compression Tools: Match the Cable and Connector",
-    "summary": "Check match RG59/RG6/RG6Q/RG11, F/BNC/RCA connector series, compression stroke and plunger, prep dimensions, confined access and a post-termination signal test.",
+    "summary": "Match the compression tool to the cable, connector series, preparation dimensions and available working space. Check the finished connection with the appropriate signal test.",
     "href": "https://network.madabase.com/guides/coax-compression-tools-buying-guide",
     "category": "wired",
     "familySlug": "coax-compression-tools",
@@ -3312,7 +3340,7 @@
     "site": "network",
     "kind": "guide",
     "title": "Ethernet Couplers: Cable Category, Shielding and Placement",
-    "summary": "A serviceable extension purchase governed by cable category, shield path, PoE current, link speed, jack retention and whole-channel length; one uninterrupted correctly sized cable remains the benchmark.",
+    "summary": "Use a coupler only when the complete Ethernet channel still meets its length, speed, shielding and PoE requirements. Compare one correctly sized cable before adding another joint.",
     "href": "https://network.madabase.com/guides/ethernet-inline-couplers-buying-guide",
     "category": "wired",
     "familySlug": "ethernet-inline-couplers",
@@ -3322,7 +3350,7 @@
     "site": "network",
     "kind": "guide",
     "title": "Ethernet Network TAPs: Link Speed, Capture and Power Checks",
-    "summary": "Copper/fiber, link speed, passive/active behavior, fail-open path, breakout versus aggregation, monitor capacity and SPAN alternative decide suitability.",
+    "summary": "Choose a network TAP by link media and speed, failure behavior, monitor-port capacity and the traffic you need to capture. Compare a supported switch mirror port before adding hardware.",
     "href": "https://network.madabase.com/guides/ethernet-network-taps-buying-guide",
     "category": "wired",
     "familySlug": "ethernet-network-taps",
@@ -3342,7 +3370,7 @@
     "site": "network",
     "kind": "guide",
     "title": "Fiber Patch Cables: Connector, Polish and Fiber-Type Checks",
-    "summary": "Exact link matching requires OS2/OM3/OM4, connector at each end, UPC versus APC, simplex/duplex, polarity, transceiver wavelength, reach, jacket and bend protection; color alone is insufficient.",
+    "summary": "Match the fiber, connectors, polish, polarity and supported optics at both ends. Check the route and bend limits; jacket color alone does not establish compatibility.",
     "href": "https://network.madabase.com/guides/fiber-optic-patch-cables-buying-guide",
     "category": "wired",
     "familySlug": "fiber-optic-patch-cables",
@@ -3382,7 +3410,7 @@
     "site": "network",
     "kind": "guide",
     "title": "KVM over IP: Video, USB, Latency and Network Requirements",
-    "summary": "Check Distinguish remote BIOS console from low-latency desk extension and verify video input, resolution/frame rate, keyboard/mouse emulation, USB media, security, updates and network latency.",
+    "summary": "Choose a remote BIOS console or a desk extender by the actual task. Check video format, keyboard and mouse support, USB media, security updates and network latency.",
     "href": "https://network.madabase.com/guides/kvm-over-ip-extenders-buying-guide",
     "category": "wired",
     "familySlug": "kvm-over-ip-extenders",
@@ -3402,7 +3430,7 @@
     "site": "network",
     "kind": "guide",
     "title": "Mini Router UPS: Voltage, Polarity, Connectors and Runtime",
-    "summary": "Check exact voltage, connector diameter, polarity, current headroom, pass-through behavior, watt-hours, protected device count and battery replacement matter more than advertised mAh.",
+    "summary": "Match the exact voltage, connector, polarity and current of every connected device. Compare usable energy, pass-through behavior and battery replacement before choosing a mini UPS.",
     "href": "https://network.madabase.com/guides/mini-ups-for-routers-buying-guide",
     "category": "backup",
     "familySlug": "mini-ups-for-routers",
@@ -3432,7 +3460,7 @@
     "site": "network",
     "kind": "guide",
     "title": "Preterminated Fiber: Pulling Route, Connectors and Spare Length",
-    "summary": "Independent install purchase covering exact route length plus slack, indoor/outdoor rating, fiber count, connectors and polarity, conduit fill, pulling eye, maximum pull and bend limits, and testing before and after pulling.",
+    "summary": "Plan the complete fiber route, service slack, connectors and pulling method before ordering. Check jacket rating, conduit clearance and the cable maker’s pull and bend limits.",
     "href": "https://network.madabase.com/guides/preterminated-fiber-runs-buying-guide",
     "category": "wired",
     "familySlug": "preterminated-fiber-runs",
@@ -3452,7 +3480,7 @@
     "site": "network",
     "kind": "guide",
     "title": "Rackmount UPS: Depth, Rails, Outlets and Load-Based Runtime",
-    "summary": "Distinct from the existing desktop UPS guide through rack depth, 1U/2U rails, weight placement, outlet and plug type, topology, network card, replaceable batteries and runtime at measured rack load.",
+    "summary": "Match the UPS to rack depth, mounting rails, supported weight, plugs and the measured network load. Compare battery replacement and runtime for the complete powered chain.",
     "href": "https://network.madabase.com/guides/rackmount-network-ups-buying-guide",
     "category": "backup",
     "familySlug": "rackmount-network-ups",
@@ -3462,7 +3490,7 @@
     "site": "network",
     "kind": "guide",
     "title": "Serial Device Servers: RS-232/422/485 and Software Fit",
-    "summary": "Exact interface decision covering RS-232/422/485, port count and connector, isolation, baud and framing, virtual COM versus raw TCP, security, power, DIN mounting and legacy software support.",
+    "summary": "Match the exact serial interface, connector, baud rate and framing to the existing device and software. Check network mode, isolation, security and recovery before adding a device server.",
     "href": "https://network.madabase.com/guides/serial-device-servers-buying-guide",
     "category": "wired",
     "familySlug": "serial-device-servers",
@@ -3472,7 +3500,7 @@
     "site": "network",
     "kind": "guide",
     "title": "SFP28 Switches: 25GbE Links, Optics, Uplinks and Noise",
-    "summary": "Port count, 10/25G fallback, QSFP28 uplinks, switching versus routed performance, fan noise and optics budget define the decision.",
+    "summary": "Count the required 10G and 25G links, check supported optics and uplinks, and compare switching or routing requirements. Include fan noise, power and the complete optics budget.",
     "href": "https://network.madabase.com/guides/sfp28-network-switches-buying-guide",
     "category": "wired",
     "familySlug": "sfp28-network-switches",
@@ -3482,7 +3510,7 @@
     "site": "network",
     "kind": "guide",
     "title": "SFP28 Transceivers: Fiber, Reach, FEC and Host Compatibility",
-    "summary": "Exact compatibility purchase covering SR/LR/BiDi, wavelength, fiber type, connector, reach, FEC, host coding, temperature and whether a qualified DAC is simpler for the link.",
+    "summary": "Match both host support lists, fiber type, wavelength, connectors, reach and FEC requirements. Compare a qualified DAC when it meets the same short-link task.",
     "href": "https://network.madabase.com/guides/sfp28-transceivers-buying-guide",
     "category": "wired",
     "familySlug": "sfp28-transceivers",
@@ -3947,7 +3975,7 @@
     "site": "network",
     "kind": "comparison",
     "title": "Mesh Wi-Fi for Apartments and Multi-Floor Homes",
-    "summary": "Compare Deco BE25, BE63, BE67, BE85, eero, Orbi, and travel-router edge cases by pack size, wired backhaul, port speed, and layout risk.",
+    "summary": "Compare Deco, ASUS, eero and Orbi home mesh systems by useful node count, exact pack size, backhaul, port speed and layout limits.",
     "href": "https://network.madabase.com/best/best-mesh-wifi-for-apartments-and-homes",
     "category": "wifi"
   },

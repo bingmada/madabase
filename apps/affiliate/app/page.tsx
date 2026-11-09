@@ -8,6 +8,7 @@ import { siteSearchDemandHomepagePriorities } from "@/lib/search-demand-prioriti
 import { getCurrentSite } from "@/lib/sites";
 import type { SiteKey } from "@/lib/types";
 import { DiscoveryHome } from "@/components/DiscoveryHome";
+import { NetworkHome } from "@/components/NetworkHome";
 
 const homeCopy: Record<SiteKey, { eyebrow: string; heading: string; body: string }> = {
   pet: {
@@ -63,6 +64,7 @@ export async function generateMetadata() {
 
 export default async function HomePage() {
   const site = await getCurrentSite();
+  if (site.key === "network") return <NetworkHome site={site} />;
   const roundups = siteRoundups(site.key).filter((item) => !item.discoveryExcluded);
   const products = siteProducts(site.key).filter((item) => !item.discoveryExcluded);
   const linkedProducts = products.filter((product) => product.offers.length > 0);

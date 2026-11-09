@@ -1,0 +1,973 @@
+{
+  "product": [
+    {
+      "slug": "tp-link-deco-be63-wifi-7-mesh",
+      "offers": "36879492df5787e2625df2643277f6272b85fd93c1e76431eb0bad9698b961eb",
+      "asin": "3e0d32e147132392214263ec11c74428da70d65fa76291ac644ed6aac1e862df",
+      "specs": "ef566c83bb124977d3b4be98fe50ff320041020da585bc1afd6184f8e3885d14",
+      "discoveryExcluded": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "amazon-eero-6-mesh-wifi-system",
+      "offers": "016bb7496a376757d38e20b28836287fc2da1f3edbc004d418ad8daaec4dbdca",
+      "asin": "7e3cf86b4f961329c3b12925e7d6fc46674ae2cb587954da8c38842273c80f0b",
+      "specs": "4b1ab0f6caecf8329f2bc24570007157cc139377edb24650ff566edf28aff8b4",
+      "discoveryExcluded": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "netgear-orbi-970-wifi-7-mesh",
+      "offers": "b6812b37f657a2e2f9ea6177016ed66a51e619ceaa9d787f3a18005795d2242b",
+      "asin": "b47ed88281e47ade344f8cff96d546a52485bb6ef9a8d75d9b49a43663d66bd1",
+      "specs": "677eb4584e44e414616db60ab8f55bb9b758faa24cbbd9e24edda0140def9c5b",
+      "discoveryExcluded": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "tp-link-be400-wifi-7-router",
+      "offers": "cd3d7187ff547d17e7c90fe102eab78ae934fe66e97a8562ae4745d10c47f56d",
+      "asin": "ed7b274c1c10ac2e1cf58dfcfcdfe79f51dab3cf7f94ae1cbedebb58df1a234e",
+      "specs": "5a02f843f3b9e47a9fcce99a652cb3c87381660ad6afc29fefb1a6c1c95362fd",
+      "discoveryExcluded": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "asus-rt-be86u-wifi-7-gaming-router",
+      "offers": "4422634e402c698ca782321961929ed72b2e9a979250fbd12db28eb912bdd8d3",
+      "asin": "6c7004d03d7d6172234e576e84aebacd1b294308445443c81ac1176a37d2c058",
+      "specs": "f869c720077096db27cfc8aad3e454534316f2b5e22e90bdf84c1d8de292af9a",
+      "discoveryExcluded": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "glinet-beryl-ax-travel-router",
+      "offers": "d45072bc370ea5bea96f96bc5630392929cd32591fdfdc9f48475a71bfd5b958",
+      "asin": "160326f7ee3dfdacee9f0eb60f7a74b1c1b8f341ccbadf0257bbe1a374e4343e",
+      "specs": "ea23157185a2193fff20be30616e2e80f6bb163362974ef78ef1ff103eb8c447",
+      "discoveryExcluded": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "tp-link-tl-sg108-gigabit-switch",
+      "offers": "09976cf636ba01f3111b83bd4d663258191e1d7930bc2b03e0192a492d490623",
+      "asin": "258dc8cc0ad3bcd771170ef986db6154fd201632b369531569effa66e36ec4be",
+      "specs": "195e810c0f720aa7fe8a29d343c95cb4b2c973529409d942b8916a05a90caffa",
+      "discoveryExcluded": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "netgear-gs308e-gigabit-switch",
+      "offers": "16012386b430f00f2898aacdd6afef4c7978f5224da61e26c9a683b8392d2f48",
+      "asin": "ece22437aef6cd7c1ba925de96473d6ef09e3cbc777073b7c92a5475dcccf505",
+      "specs": "cd61dbff53cc878345f16465add38c111967475301781a7826c71f1d46a4cd85",
+      "discoveryExcluded": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "jadaol-cat6-flat-ethernet-cable",
+      "offers": "29b35860fa18433a3dd22171fa02120da17ff3ea4f6edac640829b7718b93979",
+      "asin": "e38e37fc9c86d952a2609983c1380075680810f5d91b472c9097960e76e4513c",
+      "specs": "d6871692a1526046ccd0973134ab334df04b338daa2e1ade7d44b9da1c315fe2",
+      "discoveryExcluded": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "monoprice-slimrun-cat6a-ethernet-patch-cable",
+      "offers": "91aa1e38854c75c9f80820f7c0ca32556238c9ecfca5adfa7991ecfaf6a01795",
+      "asin": "b8ae1ee09ab6ca8b6f5ec9104876b03cff4b75aaee41b5e6a071b95b9ecacd8d",
+      "specs": "483e52df51cd7459e25e599b199bc7447d58d1611211d6577e6b6bd268868fb6",
+      "discoveryExcluded": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "ugreen-revodok-usb-c-gigabit-ethernet-hub",
+      "offers": "2f815d288c9cfd79e2c5b5faca80e71982f9a6f1ae7e682a9e8ab96f94d80926",
+      "asin": "4ad60f23ceec1e1a6af52be74409581a86cb4972a46afcc114625b1a187a24a8",
+      "specs": "3a7104f04e0e8e16604e1eeba815de7b7a28689812602c5cabcc170f82ca0be9",
+      "discoveryExcluded": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "arris-surfboard-s33-cable-modem",
+      "offers": "0d2587486903dcea8128915ada99e43a10afe8d6fe4ad6c421e4afcb49b7cbf1",
+      "asin": "99c9f87293b2c50c241c6a11401fda6013354eb2b706255800e9cb65d207b0cb",
+      "specs": "35254dad740e658d1b233f9efa1355ce17d5b2a833b66f8ce172f07abda33b65",
+      "discoveryExcluded": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "motorola-mb8611-cable-modem",
+      "offers": "fcaebacbc7cf52e5900f620e10906d86e8d846c7151af9aae4d1027a838e123c",
+      "asin": "a7d45d04875edc85c0b5916a8e5ae80c05ffec48995f66e9a9c3321b3c08c0c1",
+      "specs": "f475bef3598e9753ead06d34aa849b8dfbfbef9ade6d72a4068397a389236fc3",
+      "discoveryExcluded": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "hitron-coda56-cable-modem",
+      "offers": "c2e50edd1a2c92cd93600451537c06b20c21dd949f48c879a69abd62b7bf7493",
+      "asin": "e30fe2bc7ab8e417e020bc0574085ba8b43c380378851c3bf122af1c86c34f5e",
+      "specs": "bff0caaec6e58a4fc588eafe238abc1a2c16d809d147a79337923340198fdfbc",
+      "discoveryExcluded": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "trendnet-teg-s350-2-5g-switch",
+      "offers": "29701a16f190d3a3394bb83c9621f17a0391ff62b2cb03760808f6dfb9a80b47",
+      "asin": "d50bf546d49fc612a1036645db35d981804e546836455f6f6770fa092893b129",
+      "specs": "fc00edffc8bf69db9e5f9ea1ff0f0c80bb2fb63d9a18abc3ffee532f3f9776ae",
+      "discoveryExcluded": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "tp-link-ue302c-2-5g-usb-c-ethernet-adapter",
+      "offers": "466bf9aca426095cbaa4bec8f65e5c2ecfc28fc4747f160859bf227bf1085d4d",
+      "asin": "e0973df5c11276c55d09d3323579ba318112a0ff540aa5d0042f2ecd015078e9",
+      "specs": "fc818c35aecf96f0b3db64f7cea4206c42efe0dd13c75cd01b64a86d93b1572d",
+      "discoveryExcluded": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "sabrent-nt-25ga-2-5g-usb-c-ethernet-adapter",
+      "offers": "2465f6e829b33bc5a81dcace17ffdeab2f39a4fbde0f5e2356c63b09b7fab966",
+      "asin": "a4612435a1d3c80a1438e326a63f8e9f96cdad837617c49cb72cbeb6a213ba6c",
+      "specs": "678ea61322816aed901dd83938cc8a69318a4bbe8faa79500a2735cb9afa8e9d",
+      "discoveryExcluded": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "screenbeam-ecb7250k02-moca-2-5-adapter-kit",
+      "offers": "631083764c220c7f299052ab8d6e8f607750df8fbfba6b794e1d7bb14f53a20c",
+      "asin": "1f88ccad010110b6538540b086b147874d041fbfdeedb977d6f23426caf95e77",
+      "specs": "c19f2a8f5e1641ee2c8a84da549a6f197b009387fddabd77b1ffb9d04b968024",
+      "discoveryExcluded": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "tp-link-tl-sg105-m2-2-5g-switch",
+      "offers": "4caf956cbb6c5a32d7c2290c9dfe42e89c3b8b725aea6f965ddf75efe4363c4d",
+      "asin": "c95496137e327e1e124a115d1ccbc57b2c5297d1c82a167cd09a1e109b67c047",
+      "specs": "9431d73af4df47f1d85986804a81ff845795f5febea873ff9d176743711e2fdd",
+      "discoveryExcluded": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "netgear-ms305-2-5g-switch",
+      "offers": "d695c6c424f28ca24fccc0d5e48a7877caa2ecffe042c21e6b42410d7c2a3458",
+      "asin": "c77731fb4ad92967ed498e4bf3f4b37ee1982051409bce19a1a7f0e1c6cb7ec3",
+      "specs": "cdc96aba2345e3e6f7e0cac9bf45a34163b3cce03cf73be2c23966a44081484a",
+      "discoveryExcluded": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "apc-back-ups-router-modem-bundle",
+      "offers": "7a88a22f5b83e6d3eddce06901bf698691e7f51b2b11b0aac05706354a2215e5",
+      "asin": "3fb9c3b0a39a4305d85e1668fb6850c30279cdaf098e6edf3ea9bfc2b8becadf",
+      "specs": "7fe6fdcfdca33b17c1f2ea214a32232f76e0818e63fbe741cbd19c1d151f822f",
+      "discoveryExcluded": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "apc-be600m1-router-ups",
+      "offers": "a42fe1d51163f4bc2177a1bb0d83f5e19796d117ebac0ac48f1bbc41788ff6f0",
+      "asin": "940ff28657f4e7a291396f223902552ebefd7db8472db00714796b4fa2aacb49",
+      "specs": "9701dd025b4aa11d74ee1508fa987d9e25c018f053f952ca9b33b6a3a254557a",
+      "discoveryExcluded": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "cyberpower-sl700u-router-ups",
+      "offers": "218a0f62c35888f4740eca22e23d0093bdae06d44edcbaae3292588d5e7202e8",
+      "asin": "adcb2c19b26962193223fb6c536938b52087e133bb17ece67dce9d9124f3212b",
+      "specs": "4b44df614ee4560ba8f5bc5b3a9bdc3b57c9c86337cff3db5bd28f275f4d5b66",
+      "discoveryExcluded": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "tp-link-tl-sg1005p-poe-switch",
+      "offers": "4efb92867579bda5a20352e5ac1f4691f740469e85353e4b2a85ec74d7df71bd",
+      "asin": "592afe113ff7c50a2a3ab2f5d212999d0d6a1ceda259037048dfc911948d53db",
+      "specs": "f608d600d4cb56fbb45785d3e6c7268e97d49f2a0f59e8511000c15881df2707",
+      "discoveryExcluded": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "tp-link-tl-sg108pe-poe-switch",
+      "offers": "a55d888ef1c5e97407c9751d5e6576fd4b3455ac6e507286ada80816961e6995",
+      "asin": "b84f44298adf020d69c9005228743f01c72abd8e7731cf5de748c3bce2ce9a44",
+      "specs": "13b84f49b646f3f2f14afe66472b9d4072d34a0c209c4daee2ce4c3b6e05e973",
+      "discoveryExcluded": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "netgear-gs308epp-poe-switch",
+      "offers": "52aebb8a55077306a6707599928119acb719b02d26009118ada3b46efcdb7cb2",
+      "asin": "f90f3f2e2b44468b8f817720ec1a1b3a333cd56acb9c966619e0e04406650473",
+      "specs": "5986d040c1cfc4ed155ff05bf3b1ec212b73c7c35428842e9f6a9f762c52d058",
+      "discoveryExcluded": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "reolink-rla-ps1-poe-switch",
+      "offers": "8eef0bfdf40ee4f1bf0b4d2fe38ac68f6f0214acbe51a44c1bd2a43750a993ac",
+      "asin": "5a67a39911ba88bb710460e30b0fc3081d39d5d924ecef03761e3ae09a661014",
+      "specs": "d5cd9466bb02097eb795ad660de6561891d462086b44c7082dd06488cc71b309",
+      "discoveryExcluded": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "tp-link-deco-be67-wifi-7-mesh",
+      "offers": "123e0d4d838edfce09012afe65c8356baee98351e590b2e685e5793a2a70e8ac",
+      "asin": "44622dcba628d8bf5d980280c48c79beb1a75437128b7c162d6374e76c6e88d5",
+      "specs": "8d2f7c29af55daacf5b26fc48641030a258499dc64cd30db30ece56cb1c6ff63",
+      "discoveryExcluded": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "tp-link-deco-be25-wifi-7-mesh",
+      "offers": "27d5b8e4bb1097dd7195440bc77c27149b505f600230687df43f9651a977ca4f",
+      "asin": "04309b768c05fcc1fbf19c86b3a00294fc9f0f7af922da987819fb1826046c1c",
+      "specs": "8af177373059da21909bbec62104b88c58fea28fde652d6426e3e6c7168a3f78",
+      "discoveryExcluded": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "tp-link-deco-be85-wifi-7-mesh",
+      "offers": "9bce273ddea694833d69a2517e8b42aabb7be2ed62292fee5e466fc9843dd9f1",
+      "asin": "e46baba3f04961eb0bc027d0254835085de6f3b50468eaaaf65d2832dd7363aa",
+      "specs": "8f5226969764d45dea27f1dbd767036092805a8fc614b3e5c5b90448a096de45",
+      "discoveryExcluded": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "asus-zenwifi-bt6-wifi-7-mesh",
+      "offers": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "asin": "1c95d53d72797b12238dd0e9bf0a887ac34a94d022c66d1e71ed8ad17abe29b6",
+      "specs": "6909bdf5eeb6f443de18bc94f1511244087f0c2ff72758a145dd7eb54a166c81",
+      "discoveryExcluded": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "trendnet-teg-s380-2-5g-switch",
+      "offers": "91c3d91285309c7dc73eab5c9d4a1b6df41cd5020a2ba2927a02d4db404ce27c",
+      "asin": "821a0ace1865b17e351dfa80974091f46b479bb2031e71df148b95b4a5ca33b9",
+      "specs": "0b27caa6a3400ed2efa0661aaff998a51c6ffe341d8f5810826ebc6546cf3873",
+      "discoveryExcluded": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "trendnet-teg-s750-10gbe-switch",
+      "offers": "c074be0c0f806b31f89442e94dfc5e4830c4e8e727b17060a2885e6803ee7a51",
+      "asin": "0c0990640192d99da4548d60f569dd857afd6c40b3a669af4932c4a9751674f2",
+      "specs": "a6a9c0bdd1bcd0c139a74465cc21f3c28f1dcccfc0c2f738ddead6eb8433d46b",
+      "discoveryExcluded": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    }
+  ],
+  "comparison": [
+    {
+      "slug": "best-mesh-wifi-for-apartments-and-homes"
+    },
+    {
+      "slug": "best-wifi-7-routers-for-home-networks"
+    },
+    {
+      "slug": "best-wired-networking-upgrades"
+    },
+    {
+      "slug": "deco-be25-vs-be67"
+    },
+    {
+      "slug": "best-mesh-wifi-for-2-5gbps-internet"
+    },
+    {
+      "slug": "best-cable-modems-for-xfinity-spectrum-cox"
+    },
+    {
+      "slug": "arris-s33-vs-motorola-mb8611-vs-hitron-coda56"
+    },
+    {
+      "slug": "best-2-5g-home-network-upgrades"
+    },
+    {
+      "slug": "tp-link-ue302c-vs-sabrent-nt-25ga"
+    },
+    {
+      "slug": "best-fanless-2-5gbe-switches-home-nas-mesh"
+    },
+    {
+      "slug": "tl-sg105-m2-vs-ms305-vs-teg-s350"
+    },
+    {
+      "slug": "best-ups-for-router-and-modem"
+    },
+    {
+      "slug": "best-poe-switches-for-home-cameras-and-access-points"
+    },
+    {
+      "slug": "tp-link-tl-sg1005p-vs-tl-sg108pe-vs-netgear-gs308epp"
+    },
+    {
+      "slug": "tp-link-deco-be67-vs-be63"
+    },
+    {
+      "slug": "deco-be25-vs-be63"
+    },
+    {
+      "slug": "deco-be85-vs-be67"
+    },
+    {
+      "slug": "asus-zenwifi-bt6-vs-deco-be63"
+    },
+    {
+      "slug": "netgear-gs308e-vs-tp-link-tl-sg108"
+    },
+    {
+      "slug": "best-deco-wifi-7-mesh-for-wired-backhaul"
+    }
+  ],
+  "guide": [
+    {
+      "slug": "deco-be63-vs-be67-vs-be85-buying-guide",
+      "sections": "a8ce04f16040911c381663ff438277c1b844a12d0e313b1f4f988da40bfad144",
+      "comparisonTable": "b3b78e38c10eda8ed21b41c26eee532fd09a6bc98f5e8ddf9c8e31d36e0752f6",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "wifi-7-vs-wifi-6-guide",
+      "sections": "d2f006ead858d714340a98cb5bade6e5064f7816e30f49e8fa8c9048676757a6",
+      "comparisonTable": "cde3ada208885987d964f21b7ee33658380edad9eeb2dd0858a571c32389b490",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "mesh-wifi-node-placement-guide",
+      "sections": "dabef69c6a97b9dd260defa0687d20ff323051ebee4e468d7d466f483debf2f9",
+      "comparisonTable": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "router-placement-guide",
+      "sections": "36e7d290b7cb8fd2d6ed7d7dec3943c1b063661a2a532c518e296d787cecbaa8",
+      "comparisonTable": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "ethernet-cable-category-guide",
+      "sections": "ba9b102a93ed21de04dc66afd8c600b2c74c9e9ddc4289091072baf21c0dad78",
+      "comparisonTable": "6968530cddcf4606ddd06c56922b94f1597e812cf578fcfc76958172e3769da8",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "home-ethernet-switch-guide",
+      "sections": "2cdb3cf0086b4ae1928ae2955b75d9402c5ca9d1886bda792f77bdd9bcadc5c9",
+      "comparisonTable": "2fd38fa915a848e153871bf50b97791951add657da5d381da5e1790ff99717ce",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "usb-c-ethernet-adapter-guide",
+      "sections": "420f68da7e720ea9a8cc47924e67155ff1fda46cdb2c95bcbb4968767062a512",
+      "comparisonTable": "83df57e8172e8c72cbcbdfcb277d414ee67e3e340929065951677b5641a1ef57",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "travel-router-vpn-guide",
+      "sections": "d1f469a80d6f3b02ea4323c48c32d622dc9264f223c56d9b49bf1ac93da56ea9",
+      "comparisonTable": "2f5fbdbdce10d2aff3311b3ba1cba2149d632fede8b763335e33e25a0cc4f724",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "is-wifi-7-worth-it-for-1gbps-internet",
+      "sections": "eec2433e8d6de5fcf4b62b44dc5e7008d91cfdb26a942cd1142e7de7bb7df1a2",
+      "comparisonTable": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "2-5gbe-vs-10gbe-mesh-backhaul-checklist",
+      "sections": "3e31cba30883d95c5e612cee3ed87006f73a19014d381149ff88c4599aed84e6",
+      "comparisonTable": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "2-5gbe-home-network-upgrade-checklist",
+      "sections": "4838a7f79cd217c9aafdd7bd724241eb3278148d2e14b733284188f118606d17",
+      "comparisonTable": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "mesh-wifi-vs-single-router-guide",
+      "sections": "bc14a458d67666ed98dbc7ad73dc00ad6cd0a2c5b1a6b44cf97ddbe6ce098890",
+      "comparisonTable": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "ethernet-stuck-at-100-mbps-guide",
+      "sections": "a37b86554634c195b5250597d2838b75287cd27d9df7b2424f2a6f8f549d6995",
+      "comparisonTable": "5bdb475d85fa27112566b10b7d9339b4e009b14fe174b8b540181192028944bd",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "netgear-gs908e-review",
+      "sections": "f5289cbe21f24b11a132298467655971bbb3829c8668c98446e5537f69ec88d7",
+      "comparisonTable": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "wired-vs-wireless-mesh-backhaul-guide",
+      "sections": "2d9131fa8475c757c4990dca090a9f71004da40c9730912239af2f566ba31ac4",
+      "comparisonTable": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "deco-be63-ethernet-backhaul-setup",
+      "sections": "52558dcd4d609efbb139bcd3a58564078e3bfa6139f09f88bb5b25191756f48d",
+      "comparisonTable": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "deco-be63-multigig-ports-guide",
+      "sections": "b52f5cb8b795d17be763e084417601f4ce4e397c2d2dc2a538808fe1e89d000d",
+      "comparisonTable": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "wifi-7-device-compatibility-checklist",
+      "sections": "961fdac3a1a9b7150deb4092426b915b4c1fa8b9b690c6a481b31bc06dd3cfcc",
+      "comparisonTable": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "cable-modem-2-5g-port-buying-guide",
+      "sections": "ab6674cb53d4a07919f86d62b218adf74e7c810f00005f954c12eaff5ab76adf",
+      "comparisonTable": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "moca-2-5-vs-ethernet-run-guide",
+      "sections": "f558071284c40dfa980a99d034b77f72128ffe24cb89f883c8804c528cb81801",
+      "comparisonTable": "ec47bc6e899a217fb818205c5479be962b21b7a70ffcec6b68e600665ba31608",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "modem-router-combo-vs-separate-modem-router-guide",
+      "sections": "e35fac24f7cff86d4bb069bb67e85565a45b989e20f940258474619ed40ff360",
+      "comparisonTable": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "2-5g-vs-10g-switch-for-home-nas-guide",
+      "sections": "dadb4b7495df6a80247cfb7a9ed70ef716559036ab8f4cf22145472db40ea951",
+      "comparisonTable": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "poe-switch-for-home-cameras-and-access-points-guide",
+      "sections": "27883ffc3ff45d205cd8dcf3330748accd3be94f046ac08cbdafb705b390905a",
+      "comparisonTable": "263765da02b79ddd796b4707264829a21cd9c787af841452cff359dde9324228",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "moca-splitter-filter-checklist",
+      "sections": "c0e97e385c4f0ee8c51ca689c88dd4612c879607a1e218e8b742ada79dde016c",
+      "comparisonTable": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "xfinity-gateway-bridge-mode-vs-own-router-guide",
+      "sections": "9134a4aca72cfc27510087bdeccb8a456adde6c67d23159a153af7ed5dac0f1e",
+      "comparisonTable": "cd92dd146c0922f988daa2ef6ade844a616d5e8f8fe34289102f6ecb8314a717",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "5-port-vs-8-port-2-5gbe-switch",
+      "sections": "69d1127acf324ece60a718fbfb0c8f60200a49b0016355804cb6f627b2aec0d7",
+      "comparisonTable": "30508979b9f65bce63a1f8fe2a37767a7a4becf13e4cf88c3be6c9c34c41de0b",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "2-5gbe-switch-port-budget-for-nas-mesh",
+      "sections": "aec1fe712a419e69c15453ce74cdc3a797976889fa53573835b6199966407b99",
+      "comparisonTable": "07287fa584e1579bb9a32824e03748b51da87ebb30eb70f5c454f83ae70e6f13",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "router-ups-runtime-guide",
+      "sections": "29cee00c43801c01ac5bd13a4af2d65817533b122355cf02520755bb63a64128",
+      "comparisonTable": "42d9ba433cce1b9936975673e0d2e0adbcb39ae1ca3b034ffd82bea9e7d1f224",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "poe-switch-power-budget-calculator-guide",
+      "sections": "92490b71f6f5303238fb12ca020f9006a66ee3e26158e685aa53065b503a7a71",
+      "comparisonTable": "e20999f7c8cc3541e12b2c5e8300c0d46f9c5bdc5831c31e3b0804d95fb93590",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "poe-vs-poe-plus-for-cameras-access-points",
+      "sections": "3e3642e8547e5040049fe08c670f1718227837f8f54fe4c5e238848e410b7b89",
+      "comparisonTable": "c21fd44d0919bc4e3383d23b9f2ef2846a349b9644320fb22663abaf09a949e6",
+      "decisionPurchase": "cad9859c3cff63a51fb706b010de8941ee2d53e85ebd29058a00e67cbe89c572"
+    },
+    {
+      "slug": "managed-vs-unmanaged-poe-switch-home-guide",
+      "sections": "f9eed9982ae5e5640d34052e131c54445eab45bbb3f20b307a9e56c1a13a82dc",
+      "comparisonTable": "1593ed7c28e322435cdecb376b79463ae4e0300a6786b2a3d9b0dd8c86594521",
+      "decisionPurchase": "0445efad64c6d1eb52c8716b98fc29a6d17f8e5498449a266b6143fd10141961"
+    },
+    {
+      "slug": "deco-be67-10gbe-network-checklist",
+      "sections": "08c7a05df75f58bd70adf100a051a622202db9b7b7ecab95bb7a3a435c3639d3",
+      "comparisonTable": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "deco-be63-be67-two-pack-vs-three-pack",
+      "sections": "63bd75e793000c591f3b50361e03b65672e44cdc9ed041b90d0828aca6a7c56b",
+      "comparisonTable": "8165f4da7364a360bf62fa4388326f95ae9710d5638b51a4d04d6343ff3b7bca",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "is-deco-be67-worth-it-for-gigabit-internet",
+      "sections": "d810563ddc28bc485b355ffe922884cbe82e43cfa424319e8f45d15bb051261d",
+      "comparisonTable": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "deco-mesh-connection-drops-troubleshooting",
+      "sections": "cf121a4ba6e62498967d5229af4aeedb8c5f4346fd111dca44785cb0944c5201",
+      "comparisonTable": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "wifi-7-mesh-budget-midrange-premium-guide",
+      "sections": "7d86a680ae82e9e09b7a6842696795097e16b6010e91d44e1170a4ad21bc43e3",
+      "comparisonTable": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "when-to-upgrade-to-2-5gbe-switch",
+      "sections": "c8d1df31caa4eafb65511257901f489a1f3d5075b838b9693cac22bdcf556fd9",
+      "comparisonTable": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "deco-be63-be67-wired-backhaul-port-checklist",
+      "sections": "07198f645324b59f710ea3c370633fb9ff6cf01ecdc6612eff082f13c1476b79",
+      "comparisonTable": "cfb270cd8adc149e809ffd0734b4f5cb6925a95978d37edd59c29d038882f14a",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "deco-wifi-7-model-number-buyer-checklist",
+      "sections": "643363414ccfb79146c49ed5f0c85a62e90de8648af7bc4eae37419f2f4bea3f",
+      "comparisonTable": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "deco-wifi-7-single-unit-vs-two-pack",
+      "sections": "e2480e89ef2cab59bd5ec71519f2dc7611eb8ddca1f6aed3b01d36318e23ec55",
+      "comparisonTable": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "indoor-wifi-access-points-vs-alternatives",
+      "sections": "b9667526b47b60a8805479d5b349e00065bc8ebed4e6e7edce96752848ff038e",
+      "comparisonTable": "e87abf33c5791bac42d91155eea2cc09b6fa4c1cf4c1984031ef8de173aba2d3",
+      "decisionPurchase": "69a7227b5581fde26e4fabc2655b92d5602840b1e01a0c5da74f860408b6b579"
+    },
+    {
+      "slug": "outdoor-wifi-access-points-vs-alternatives",
+      "sections": "a148259909a655c24ce8ccda3abb74150bad6ea519ce5b01af568e10d6cf63ed",
+      "comparisonTable": "a34d1f6e06a6f7757209abe2e761fe3557d80a37eef8ee2d64466fec42be2274",
+      "decisionPurchase": "60e0ee55fab1dc6a44b36bfeba145a44b0c8d62dcaa965a524de551e35657337"
+    },
+    {
+      "slug": "point-to-point-wireless-bridges-vs-alternatives",
+      "sections": "bd1545f4d4b2568829eb71d7866b7e941ca6f6ad8417c4c79287d9d696d30bb7",
+      "comparisonTable": "45195e4820e720ad87c31065994b56f0167fa10c88ab4a9c0178fee7486bb51e",
+      "decisionPurchase": "368206848d9a39aa27d928984d1311a35e853b791deb1217242a12b8b0b3b71b"
+    },
+    {
+      "slug": "wifi-range-extenders-vs-alternatives",
+      "sections": "720fd215cb989e9de90c063322c4fbb5d6eb6e502f332db295b22739f950d6c4",
+      "comparisonTable": "99626cfb25c2e63e460f6b223925a7d5ccd2ba0cf62a682ea61099937f4d375d",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "usb-wifi-adapters-buying-guide",
+      "sections": "31a6c876d604d9b660798878e0b81d9c24749d8a41cf48f256e69b684f89e10d",
+      "comparisonTable": "64ca334fe09a033ef77719f8c9ca366707ce10696332fc7df489d6b926eeffe7",
+      "decisionPurchase": "d9458884a6e5e082bcee358a42adfb297b9a35b0f6d10b3a8e43a460fc1c89a3"
+    },
+    {
+      "slug": "pcie-wifi-adapters-vs-alternatives",
+      "sections": "0321f9b9de8930c8ee3efbeadea20dfa0bb4f72eef8b56f952ad387af9888778",
+      "comparisonTable": "59e60557f5b5c4a531a81a3740e5c7ec0bf4116d04143ccd13dc1de34e6bcd76",
+      "decisionPurchase": "ad46515126d71954970aa46f67182c4b9b73c619b2d667f4b0194e85ebea3b74"
+    },
+    {
+      "slug": "moca-network-adapters-vs-alternatives",
+      "sections": "88c5f5c593bc7c528bc95b677410c70f4d53e085883ee217013e00d8053c19cb",
+      "comparisonTable": "553b2ba382b24c1602e0f80b4df96a310d36e16ed7a87b2778dd3b8c9e695da1",
+      "decisionPurchase": "7c25bdfda636166e15cbc163c75e37e6adc05f6e57035f1b21717128ce94629f"
+    },
+    {
+      "slug": "powerline-network-adapters-vs-alternatives",
+      "sections": "15638915fdcab2819a8333aa9387b449ab9719dfd0f05a55b0aab5c028407aef",
+      "comparisonTable": "974b39951d12fd877282bf5aad1433b8a55171c8e5b909696f400c406d560e5f",
+      "decisionPurchase": "01a927c225e2bdc0f6b23da4e2892398e1556e7b30b0f37eeccfc8c2c78fc697"
+    },
+    {
+      "slug": "ten-gigabit-ethernet-switches-buying-guide",
+      "sections": "82b2d71146816346bce53b3a214cf0160891d5f7843819b998d5dd2346669e7a",
+      "comparisonTable": "0e5cfaf7914943cc380c081f0ecde9643a22a529bbb10e9669aab9abbecca6dd",
+      "decisionPurchase": "3d3421228278e2d2ba0aacabb56195ba78d8d99b577bb1daa49545bba17c1aff"
+    },
+    {
+      "slug": "ten-gigabit-ethernet-switches-vs-alternatives",
+      "sections": "1e907d7034a2cd508bc9490a138df995fd68923b51142cb73cae3432837d6767",
+      "comparisonTable": "0269a0669e2152a23393faf2d11dd90271402927055951856be0c14e67cf0dbc",
+      "decisionPurchase": "3d3421228278e2d2ba0aacabb56195ba78d8d99b577bb1daa49545bba17c1aff"
+    },
+    {
+      "slug": "ten-gigabit-ethernet-switches-compatibility-and-fit-guide",
+      "sections": "5c41f4daab5db97c83004ab03b04c811c20eea0915c75b56641c5ae1f14d5025",
+      "comparisonTable": "c129dcec86d78048539feced51a0678314d83e6b07545e3454d6725f19d404f1",
+      "decisionPurchase": "3d3421228278e2d2ba0aacabb56195ba78d8d99b577bb1daa49545bba17c1aff"
+    },
+    {
+      "slug": "ten-gigabit-ethernet-switches-ownership-cost-and-maintenance",
+      "sections": "9d2203984f744265e7ab6f5d0ff4a6f9c1bb8e327dca13d93e21970e054b43cb",
+      "comparisonTable": "67a836e6ae9b196b7a86ae7a17ee85c4249e687ec6866f04f5ab7d67edf05771",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "sfp-plus-network-switches-vs-alternatives",
+      "sections": "9c99071288bd375722268c5282d8b5ebb843ecb6b42a0860a199ebee5f720025",
+      "comparisonTable": "4d5bb3f40f4cc77e6a9d287817e78a19be328999ebd71a37c4c7f1dbdbb9c2bb",
+      "decisionPurchase": "4c485b1eccc6586df3ab17e0c0ed9d529625955c367092a145f9d5f243296513"
+    },
+    {
+      "slug": "ethernet-network-interface-cards-vs-alternatives",
+      "sections": "071a3b8a871eb73586602b0f5b4effc34ca5584681e72c711db9a21a237e4912",
+      "comparisonTable": "71a4201790ed25e83a8ce0f9c23885c862a8677e573de38750934b992f7cd8c4",
+      "decisionPurchase": "00f096e055de03ee4d5e61fdb33aba6666d4b92a047a3a0e972e4f97d08e7f96"
+    },
+    {
+      "slug": "usb-c-ethernet-adapters-vs-alternatives",
+      "sections": "bfea7602c774f36ae2d2b9161f46ac49fc45d3a57ec41533678cd46c9b3b7d38",
+      "comparisonTable": "c769a985f1691b6202ea01f83d3a25f37943acf045dd858d79b8e8627360ec52",
+      "decisionPurchase": "9201d449bd598acba95797e0c05db4c4e35f58fc59c48be06f1e4a25e8351307"
+    },
+    {
+      "slug": "poe-injectors-vs-alternatives",
+      "sections": "b0417e716b977b428df075def9a85d7df6ebf5712c18629ac86d6cedd2433fdb",
+      "comparisonTable": "6540b4bf7a75525a53dbd2af97bcd8ba1858e50bbc55b9357ac84763bed2f720",
+      "decisionPurchase": "998598ef8fcb8f57d858a6f7570588cdbae00ef37ccffdccbb4a55ecc831abd1"
+    },
+    {
+      "slug": "poe-splitters-vs-alternatives",
+      "sections": "34e4b6d364d323fece221b78741946f81ffae3d589aa5b759ea68f864cb95a1d",
+      "comparisonTable": "f739f476f4cb5aeab9c94888fbbf8f55d29ddbef6a45c02720d45dab16dd0a99",
+      "decisionPurchase": "0cec3aa8aafc55fb5d6f20224df01066b348349a5c79dded2dbad002b2caa126"
+    },
+    {
+      "slug": "poe-extenders-vs-alternatives",
+      "sections": "a54ab5d4c5a722bc26add2a7016da5c3f60829af6e5ad996e0607831c4c747da",
+      "comparisonTable": "1074721648156b7cf0064af1fff095dd55aa08de452687d992100ff377b5908c",
+      "decisionPurchase": "5f8a330b8aae4ca267779e4e316adc06ab400917d4e18892dd1281715232f8b4"
+    },
+    {
+      "slug": "sfp-plus-transceivers-compatibility-and-fit-guide",
+      "sections": "b2608554825acb027256fe65fc076befa44b295c59bc63b7da87a314f862e425",
+      "comparisonTable": "9936fc677f35fb24d3920e998f345e3806d845251cf5818f7dee40e624402c58",
+      "decisionPurchase": "6d47063ef3ccb39490e70fea715fd873817314811de65449d6fdf0b701e6c6c1"
+    },
+    {
+      "slug": "direct-attach-copper-cables-vs-alternatives",
+      "sections": "102c81e3ae250fb87a94e9ede67fb50b4b7f34ae67b91781e159ab417d1878cc",
+      "comparisonTable": "19918d7568415dfe0d189b1732cd0a88292fda9d38ae0765cb4e649394f02bdd",
+      "decisionPurchase": "191965a7bdd4a73aca103ed411c2e0edab7c64482afbc22210ba2161afbcc614"
+    },
+    {
+      "slug": "fiber-media-converters-vs-alternatives",
+      "sections": "16b7416a813fb61db63b9fbf36847038660b4def8cdc63cc8d84e13be9225271",
+      "comparisonTable": "185e87806800d8a0097df516262353bcf5bf6f26da143e8ad5e1275e90920a03",
+      "decisionPurchase": "45200328faa9881eeb10c7f477db54cd3282bf1a02f51cf4b6f8c0a015bd39ae"
+    },
+    {
+      "slug": "network-attached-storage-vs-alternatives",
+      "sections": "2b466f510e711b85cdf71d9b0feb9cf10c41979931d24f5d1cb4492d3f49e2e0",
+      "comparisonTable": "f5237ddc6b19e0929973a64ef4943bdf58ccf271412274a09e1dc479a2d09681",
+      "decisionPurchase": "22b0c1902307bae0ec16ab090fc06d72388f0f6818f8b9bddddeeea490fa6de1"
+    },
+    {
+      "slug": "hardware-firewall-appliances-buying-guide",
+      "sections": "247d9de3fe82c6d3d2d59ef8820969d3a0e0cd69a8ea887dc87de733ba33a86e",
+      "comparisonTable": "3ea89dbe52701cf1d488ba364c50c3a38785555d11c9e5b85d4e40be6ee5410c",
+      "decisionPurchase": "3ffd7744b45c88dcada3fd0cdc99f7bba72d25c6d3f4b30175ed6a57a3ca3d12"
+    },
+    {
+      "slug": "hardware-firewall-appliances-vs-alternatives",
+      "sections": "dce46dbc240e059d758933098ed6f0522883cf1dd7c17bc18448618fbfb29492",
+      "comparisonTable": "97ee3355056329070261be56ea00ee460a046ed0ed4dbc8c6aa240a209dbcfd0",
+      "decisionPurchase": "3ffd7744b45c88dcada3fd0cdc99f7bba72d25c6d3f4b30175ed6a57a3ca3d12"
+    },
+    {
+      "slug": "hardware-firewall-appliances-compatibility-and-fit-guide",
+      "sections": "ec7bb50ceb845258aea7a934aa2523fbc923adf360c6a19cc3f3d6de9df455f8",
+      "comparisonTable": "dfc559526544266d325440f79b7c4e6b4a1f87ad8e804cdb2bc40de4a55e2412",
+      "decisionPurchase": "3ffd7744b45c88dcada3fd0cdc99f7bba72d25c6d3f4b30175ed6a57a3ca3d12"
+    },
+    {
+      "slug": "hardware-firewall-appliances-ownership-cost-and-maintenance",
+      "sections": "38ca636c9819d8ff00cfd2e438d048ed3a11da99747a9cf9212bc4d4a333c689",
+      "comparisonTable": "3a8d10b8fe55b119911d3dc494d27f78890d329c7bd6b0e05d09ca35818c4998",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "vpn-gateways-buying-guide",
+      "sections": "931864956eba834adb4136be2cf7dc753a8babb9341fe0fa727949a460d9152a",
+      "comparisonTable": "0897a479566516e0132d7cb2b02b8d97b11227cf60b24b34552e966e582e182b",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "dual-wan-routers-compatibility-and-fit-guide",
+      "sections": "633dfbd0e1ee44cbea080365d695e31eec1c962d9948e5787fb3b4a15eff99e1",
+      "comparisonTable": "a8537871406f185216a12e1ea30debffe85800203440989154c21f600d6e3aa8",
+      "decisionPurchase": "5b37da96448b114f4641c9f5538761cc14f3c39d5605258c19af3f930b6849dd"
+    },
+    {
+      "slug": "five-g-home-internet-gateways-compatibility-and-fit-guide",
+      "sections": "366e665cbb254146b31142ab05148425760d2e3050bdd1173bd890d905a97403",
+      "comparisonTable": "2f3a0c81248da8b0f70e051e1e0e92bd3c284cc5c618a3bf14f63a141fa81eee",
+      "decisionPurchase": "c7731caa883c2f38a2a75696220f75e621bcc4192902a689ceffea3961ba14fb"
+    },
+    {
+      "slug": "mobile-hotspots-buying-guide",
+      "sections": "1e7b3a69fec1b001888a8fbce843ccf52b306a9583a7ead5aee1465837464ebe",
+      "comparisonTable": "eaf993604e9aab163b2d5085f7b75b0ba5c8d352aa133669be148f0ea7fd66f1",
+      "decisionPurchase": "4249cbb9fd5ee4384af3cc70f97d5aac99ead290a2bccdd592c434740f0341c2"
+    },
+    {
+      "slug": "home-network-racks-vs-alternatives",
+      "sections": "5b0febfba5e1caea111284c6df6f2df6167979fa9b666beee1ea94b62dbeee4e",
+      "comparisonTable": "61e629b409082da1c7cf4336b5ecc57f767db290500fbd7d4da53e9ff7ce00bb",
+      "decisionPurchase": "ab9d321474edc6c54e9be35d9877521c762efb2a3bbb0f6840d7076a4df22eea"
+    },
+    {
+      "slug": "ethernet-patch-panels-buying-guide",
+      "sections": "e3829c218679761fb39ae74d83e7c4386557af00d6afaff00aeecd7604fac277",
+      "comparisonTable": "3b4cc2329038838784cf058e751ef0e123bda8e2c331c783ade030b8ac9ce297",
+      "decisionPurchase": "317471594cc0530734fdfc2e9d7ccbf95f07d364675231e32db940054f5349e3"
+    },
+    {
+      "slug": "ethernet-cable-testers-compatibility-and-fit-guide",
+      "sections": "e7ac9942f124468203b188986096cc9e82ffff3b179227fa042ad71cba1d3f73",
+      "comparisonTable": "d624fd1fdcf53353d2ac8dc3d83de2eb62cae386314e637d6deec6053a85abb1",
+      "decisionPurchase": "9b9ab13aa6e5aaf832d25e718d085f0292a90113aea8495e6865cacd5ab454a3"
+    },
+    {
+      "slug": "multigig-poe-switches-buying-guide",
+      "sections": "294969da4fede7009c1aa21a9b21adc89d1e8b9824b06b23c3dc80770efddc30",
+      "comparisonTable": "32e0bace6e075a4a5d38dbc94cd24f9a15da04f5df07142dae61ecc15da2ebfb",
+      "decisionPurchase": "764cd70742635c8daa6a67ab70186c33ac17ed5697ba4646eaf05a88fd92b972"
+    },
+    {
+      "slug": "rackmount-power-distribution-units-buying-guide",
+      "sections": "e817742c957dffc145a78b2403b7bce1145b983e995da9feabb4d0916da7a966",
+      "comparisonTable": "88822241653123b5af37bd6ad40f8562459bd8d59fe870acd994e53015dabbc4",
+      "decisionPurchase": "f3bed48da9835e743cb8dd1b1523a202bca85f3a1df4c31c12ae575793ed95d4"
+    },
+    {
+      "slug": "network-cable-toner-probes-buying-guide",
+      "sections": "43419b91e1c63190e34b45ebbae801f60400b0f8cd29f978854affe96f3bcccd",
+      "comparisonTable": "8d09d707237f6a261eec2081d5ee74b9a03be3935bda482397c7cb1ce05ce0fb",
+      "decisionPurchase": "035e2e026512f1db7d7f7c2fbaf9969878d01b0aef4b9a8b3a89067ddc704371"
+    },
+    {
+      "slug": "ethernet-keystone-jacks-buying-guide",
+      "sections": "216341951b06b31fa01749682ff21428b8f8fc7dfcfe4244d32b4d1e0ca31c66",
+      "comparisonTable": "9b8c26a0851299020a2a32d2c4d23d40e7352e6a7c29e4601084cf9c7a171894",
+      "decisionPurchase": "d0607c7d955f3d20f13a11f7f06b9cd01e8a02b9e062ac77f181de21b57f688f"
+    },
+    {
+      "slug": "structured-media-enclosures-buying-guide",
+      "sections": "0f203b45481cdcc56f4612521324199e44920eb9c0ef81ed4b0617c713ed4550",
+      "comparisonTable": "35596a93d6a3f1bde4079aa43105f9fab6af63a0444b36581bae8f35deb12893",
+      "decisionPurchase": "7536f9ae7a8463e7f6f670a6891108cb3f940d7e325c01153ba12afb809d5ef2"
+    },
+    {
+      "slug": "pass-through-ethernet-crimping-tools-buying-guide",
+      "sections": "640b4dd48cb2433a37c1021c92b7b08793ffcad71c1c3a11dbbd384494b4d0bf",
+      "comparisonTable": "2c0d7bb7a528859e0e2dcf32855d417ed1d87639466bc29f4def1311639bc3cf",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    },
+    {
+      "slug": "ethernet-surge-protectors-buying-guide",
+      "sections": "246355bc6ced966d838fd13497b578a77b172c7910eae00cee3c6c8a9807c127",
+      "comparisonTable": "7eaedef531c698eab2cca70aacfcbdd06b19dadd8b5c3cd3620b3ea3294ab0b1",
+      "decisionPurchase": "aa20c3ac67ba0b5d42bf44eee4b9af01d0ec3ecd0987d05507425c99b1f335ba"
+    },
+    {
+      "slug": "rj45-modular-plugs-buying-guide",
+      "sections": "110659f654f10b0913a0b2c76bd520cf84e4f83ad960d213af5c2b79f88fa213",
+      "comparisonTable": "391a1a9ba1513140f4dcafb8a0a7803c1e2e2e9409b1a641fc0a8f1e7e136671",
+      "decisionPurchase": "85e5679c381c96264ad9bbcf2eb82041fec60494e1097bfac1e6a0c4e16160f1"
+    },
+    {
+      "slug": "network-punch-down-tools-buying-guide",
+      "sections": "367afc53574e44b3d4e1e9148b929e7c1212f219075fa2f8b90ad8811e82121e",
+      "comparisonTable": "e281d326164f8b0ebe1dd84a252adacc83dc9f766a04659420f8b96adf7eef55",
+      "decisionPurchase": "906f5c3b1f9da9c3f0fd489ef2302c0b6c5628eaf276c431be22c8fd930e737b"
+    },
+    {
+      "slug": "rack-cable-management-panels-buying-guide",
+      "sections": "785244536468f11bbb0748f8bf97a2906203bc18c856f4f7de48c1cfb5501aed",
+      "comparisonTable": "f54e4b4378c653801764bac2324880644b538e0c378341604f13334dcec185d3",
+      "decisionPurchase": "912907390c55e8f813408715d82151da4ec15ee169ce3c73933ec8f1b66029f4"
+    },
+    {
+      "slug": "usb-print-servers-buying-guide",
+      "sections": "a16928c3951eaa5fa41875d02a1a215c25581fe6dc40d8cf106d81af22ea662f",
+      "comparisonTable": "d9c5ee27a93587dfde6c7edfe992fb3f4c59c3324646c79026bafdebd56a1250",
+      "decisionPurchase": "a0befd724953886a1c2b73306295cd81bae51d8aee44929d0ec2e89e027c89a9"
+    },
+    {
+      "slug": "poe-network-video-recorders-buying-guide",
+      "sections": "524711a982ad7efe3c7de9607bb4f77f752a9299ff11d9f820a2b36ec0f52343",
+      "comparisonTable": "aaafcfa349ba627a88de6471f118590f9196ccd5a4ca195732f1e64fac19b7cf",
+      "decisionPurchase": "577443e26a555813981b6e4d184377283ad9079cd08e00fc9a1c70e5c046fd15"
+    },
+    {
+      "slug": "bulk-ethernet-cable-reels-buying-guide",
+      "sections": "83c773d965d8d4ceae8d0ccfcda181370cd549cb8aca7c708862c21ec7870887",
+      "comparisonTable": "e0a70f54ab22a4d321a159b2e7c57ab825ec365c32655d13d337978a2eca83e4",
+      "decisionPurchase": "ca6e6cfb89382df268e1328595b29de2c62016b17a3d7ca55582a5532bca4767"
+    },
+    {
+      "slug": "cloud-managed-access-points-buying-guide",
+      "sections": "04e2c792af2d030024fc97ba69775faeed72896a45db82df3228a13869196ee2",
+      "comparisonTable": "85040f97a0b1e8de464776cc72ac6d2b03a4aa09e007bbace48daf726c541fce",
+      "decisionPurchase": "07e7acffb2d40601243bb6fd31194cdefae53cff6c0e08888b6ecbec703e4936"
+    },
+    {
+      "slug": "coax-cable-testers-buying-guide",
+      "sections": "62b4370d4fc90a36faabffc5e3bce0d2dce86ff0b3c87b468a7977d887f77c63",
+      "comparisonTable": "65a8b25222077f78c838958c4dbd3e61b4d9f7d1d545903de3e0e5b35dc3a4ab",
+      "decisionPurchase": "8b9ef265fb0e5c5b52626a0ae9ad18573eb7be9e22783966b27ff36d66b615e5"
+    },
+    {
+      "slug": "coax-compression-tools-buying-guide",
+      "sections": "afabd42cbbd66ad55811af2433f667328c374ecc1f2e674c48c5ebf27451c223",
+      "comparisonTable": "d6e7a00ccdb27515021d00261aed6b45b946870b17788faf340a984ace741d4e",
+      "decisionPurchase": "b182053be60aa2f3242de844788345445b9e9953b0784c5ff91e963afa62a09c"
+    },
+    {
+      "slug": "ethernet-inline-couplers-buying-guide",
+      "sections": "d5b148f9736319e3ac1f35f6679fc77f8694853194de64b9bf9ad29be109cabb",
+      "comparisonTable": "4fbbcaf1b7f951ef49bd33777a5c63f1c9c8ed8203d26168e65e3af7a3cd9e2e",
+      "decisionPurchase": "feb084864fa30c9bf5bfb1df11972538710df45335b1e0e8ec7cd99f07fd16a7"
+    },
+    {
+      "slug": "ethernet-network-taps-buying-guide",
+      "sections": "e31bac9662ba6171e06633e4516479416a576395cd872f4557ab685b3bc98741",
+      "comparisonTable": "729e883a475fc366d94c8ef111f96ae7636957719f310b73fe0dc9db9391c013",
+      "decisionPurchase": "6c9fdeb0d29ededfebb89958dfe30b59aa90b55c5dc4e7ee000c0d2799844892"
+    },
+    {
+      "slug": "fiber-cleaning-kits-buying-guide",
+      "sections": "6754af9a07cf9e5e5589b9908dea8c7e1b92ca0dcb8ab7f0f68bf9976411701e",
+      "comparisonTable": "143c3752edbb4ac5e1d71cc82f4db1147346505494f5c4afbaff5d6dc7a99924",
+      "decisionPurchase": "64a0e2f3c11c56687679261ad87fe3848404a7419b7ace655e47788f7457ac02"
+    },
+    {
+      "slug": "fiber-optic-patch-cables-buying-guide",
+      "sections": "fad1e8de31aba7145d0b49849900f0dc2723a522df31630b9cd1692633b4e39f",
+      "comparisonTable": "f5c08344d0880ac593721d4f7d90acdfae1c2bc0a61ca87a8eaf520c1017670e",
+      "decisionPurchase": "65a86fd23e0fe36409fb636ee988fa262a0a66be00af2850a271194cd9e4c1da"
+    },
+    {
+      "slug": "fiber-optic-power-meters-buying-guide",
+      "sections": "134126dfa2efa6ff05d70e9d1e94c74d0b24352af1f796a26eaba8d12b296f8a",
+      "comparisonTable": "07c0c1359a32ea201f846e099ec67c50179fe9a202fbda9ba5339ee2aca51ace",
+      "decisionPurchase": "af3a37b52efc369f1ec98184b3284b67949c3095762f1a1012963c08d8c32f3e"
+    },
+    {
+      "slug": "fiber-visual-fault-locators-buying-guide",
+      "sections": "a3f276b76b85249c5d2a5331fc4ec5af430db66724a4e5495c5181302af91495",
+      "comparisonTable": "27f30b91025bcfab67b95c6eee0c3b3c3398726189ef1cfc08005bd9184a0ef1",
+      "decisionPurchase": "838c720b454dd0c6871cd9c765db0aa43a7e75d0af292d4275bf868b521559be"
+    },
+    {
+      "slug": "industrial-ethernet-switches-buying-guide",
+      "sections": "3150088b1f71262cc7a750c36f2e97acb1957a6dd391b3755d09c4ca11be6786",
+      "comparisonTable": "1aabd8222329c6f6d4ac6010e0d7e5ce11e065c1d69832b1a1e7b18f333e6445",
+      "decisionPurchase": "ed4cf631f92aebdbe28be83b0158b3adbf2c9b1777d9678e319d1b1292fc74a3"
+    },
+    {
+      "slug": "kvm-over-ip-extenders-buying-guide",
+      "sections": "ce3e74593fe98246d3476fe05e270034827cffae2cfc16ae919a1ca048689acf",
+      "comparisonTable": "1ec59424de61ffe6575de3408706701c29249c9a032912be0a99b8ed83fee1b9",
+      "decisionPurchase": "1135b12ede4449aa1c13e5f55bda36d0a0f214043027ff3de16c6d74f516f852"
+    },
+    {
+      "slug": "managed-2-5gbe-switches-buying-guide",
+      "sections": "e23ed5613145f10ffc4dadb399d3185a8629bb431fa647986423325ba3bc7e07",
+      "comparisonTable": "5f1fad3dfb97c96b2f25c6b2879e4f650a91af9b6e7a7e1d30c004989a7e6fe8",
+      "decisionPurchase": "e53ff371d032be713532fe794e0655cdeeb68946c5a3d89fe2ee945fd8191341"
+    },
+    {
+      "slug": "mini-ups-for-routers-buying-guide",
+      "sections": "29ce5de5166c5373ca5140bedfab416ea6f933c65659f2a0a3d220b2e6817006",
+      "comparisonTable": "6ea84ba2b4dfbc20b1fa555eb6a16aaed635852bb3f3932d4864bfb97c919f96",
+      "decisionPurchase": "73b96c532747e17350862a75bca01f95198069b8dfdef940bb82b131d6931393"
+    },
+    {
+      "slug": "network-rack-cooling-fans-buying-guide",
+      "sections": "9bae344df66ef463a20dd17b0c7285b5bcb68bb770a7bf6fbd54dd947927a4b8",
+      "comparisonTable": "47a419e76aa2068209f17601c974cd9303949b56ffda17a3a0f0971d4b7e7b23",
+      "decisionPurchase": "3fb98b4a84bcd03ade403ed76817daeacbb308adba24137ee92127c0d37a2b82"
+    },
+    {
+      "slug": "network-rack-shelves-buying-guide",
+      "sections": "55f0e10a17dd08eb63a4ea20cd5002b6002f99d33a7e1acf83953faeb587a8be",
+      "comparisonTable": "16427ea64ab986707ebafab4b97292bb0030b4dbb0082440b0bc33072fcd5332",
+      "decisionPurchase": "95e405fef6d63e0a7f211ff3e62cbb6bc8c10db7c1e4813feeb28e8ac46e4684"
+    },
+    {
+      "slug": "preterminated-fiber-runs-buying-guide",
+      "sections": "3f7faa3cd013e35cd4b9bca9ee2a71f5f25b5d2fd26fe088672b9a3e545e5a92",
+      "comparisonTable": "41779d517e0a6781f8c06426ee6f62f97ae4bc1df6599a3f5597309ae29928ad",
+      "decisionPurchase": "b1dc047b949cfc9602de5a04c7cb2008d4b7ea4d68fe2fbcaf86bf71db9aefe0"
+    },
+    {
+      "slug": "rack-blanking-panels-buying-guide",
+      "sections": "07299d9a3f66637404c92c71e023054d960660489e843cf698e9bc8236d73262",
+      "comparisonTable": "86351b83025dc7bcc0e0da3468ab8aca24654c6e234bb3f1e50d27001e0e6f63",
+      "decisionPurchase": "5774a012c591c4a2fc7bd213c0e9292cf495932f46a8a928bcb1fa9c7c1569d9"
+    },
+    {
+      "slug": "rackmount-network-ups-buying-guide",
+      "sections": "bdce3aa072ede5b09a19b3f7698a7ef6e8ac0f1b3332806d4d6bdae7c573d841",
+      "comparisonTable": "1a68152a97ded66f313c916ddbf1d60367e5e82a93e60045e87d15a758a8f74a",
+      "decisionPurchase": "6e8ef4d6f7c011f035a3c2d8938223f0cde3a05c8cfa980326dbeb5fc6b4d83f"
+    },
+    {
+      "slug": "serial-device-servers-buying-guide",
+      "sections": "5e0f99d784083566691cbf91dfb4e91adaa6141b4a206d3073643e36f18f4bcf",
+      "comparisonTable": "bcab061d8d530917d369fb08052c925bb3cf30020e11277f7aabeb598250898f",
+      "decisionPurchase": "a977182a125f213598b7c662911c1cfe2a52ccee011a953dff5d4eb013a02341"
+    },
+    {
+      "slug": "sfp28-network-switches-buying-guide",
+      "sections": "294e9a9198e3b9070ada87d1682b39d0e500c37b5331e7e1a38180fe2b7645cd",
+      "comparisonTable": "4762f46a023cc5fa01ff247e41f0c17da44ee1831292360a5ab3e536a530b5a2",
+      "decisionPurchase": "e30bf47cfaeb9d4add1c497253290c41835f923013d7b991d2fd451d41688857"
+    },
+    {
+      "slug": "sfp28-transceivers-buying-guide",
+      "sections": "4adeb1bec8c9810272b3da0c2d594e75c534c4958168666aa6a90c44a1ee8664",
+      "comparisonTable": "a43922ed6cc3bf4ffc77c1e45e2308303b96973767c5a13cb842af9436c41f14",
+      "decisionPurchase": "06b0d5f2c8dab53c09e61604244bfd48cd5be8fb5c87b5a1f50d82b78c2620cf"
+    },
+    {
+      "slug": "wall-plate-access-points-buying-guide",
+      "sections": "fd82145a5cea305613748d0655e1f987c417a7e0849f982612b75b0d18ff1d17",
+      "comparisonTable": "e15a796349bf243a22cb55fec6547f6ab04c8db9915313a5e41bcbc877eb9702",
+      "decisionPurchase": "4b3b9f9e931455698e828b665f6e61214cffcd6ae26e46b5456531217eb4996e"
+    },
+    {
+      "slug": "waterproof-rj45-couplers-buying-guide",
+      "sections": "de53dfce128ce0ac766b89e3bc10cc2f4be64cd3a75e7a41cd87552a52aeafd0",
+      "comparisonTable": "0cbd9456e00c79595a2933ddeaa906d5def2c310849c33b55354c52c9f55df80",
+      "decisionPurchase": "425f0309a2e3b1ca474e4d30ce1c156eb4d1af66f8e0212a436478d6ab0df975"
+    },
+    {
+      "slug": "optical-time-domain-reflectometers-buying-guide",
+      "sections": "5a056c01566ec53b566ed897c1eef1ee7a73102b011235762051e3a80211b9fd",
+      "comparisonTable": "cf34e7ca2a7d52a88ac1739729c9844946e1b179577dec5762d3f314846f63c8",
+      "decisionPurchase": "dc8a7cecebf9e01ecc7d6bbee9620785be387f27fcc0d491b41470eec38ef204"
+    },
+    {
+      "slug": "home-network-smart-home-outage-plan",
+      "sections": "ae2112c25e7d6613816693b0ad64448fe68b1f7cdb0f8929c386054662f7518c",
+      "comparisonTable": "2a3c7a49e37cbb0ce09073ea150858e81b5601d73d3e25e14e2e22b1163f27f7",
+      "decisionPurchase": "eb045d78d273107348b0300c01d29b7552d622abbc6faf81b3ec55359aa9950c"
+    }
+  ],
+  "tool": [
+    {
+      "slug": "wifi-coverage-estimator"
+    },
+    {
+      "slug": "mesh-node-and-backhaul-planner"
+    }
+  ]
+}

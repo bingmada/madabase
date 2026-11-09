@@ -1,3 +1,5 @@
+import { cache } from "react";
+
 // Keep the evidence record in the source catalog. Reader copy omits repeated
 // process notices; model limits and attributed specifications remain intact.
 export function conciseReaderCopy(value: string, processNote = false) {
@@ -41,7 +43,10 @@ const copyFields = new Set(["body", "summary", "verdict", "dek", "intro", "quick
 const copyLists = new Set(["editorialMethod", "methodology", "pros", "cons", "evidence"]);
 const preservedFields = new Set(["externalTests", "specs", "offers", "decisionPurchase", "governance", "communityEvidence"]);
 
-export function withConciseReaderCopy<T>(value: T): T {
+// React resets this memoization for each server request. Repeated catalogue
+// lookups can reuse the same transformation without retaining stale offers
+// or mutable content between requests.
+export const withConciseReaderCopy = cache(function withConciseReaderCopy<T>(value: T): T {
   function visit(item: unknown, field = ""): unknown {
     if (preservedFields.has(field)) return item;
     if (typeof item === "string") return copyFields.has(field) || copyLists.has(field)
@@ -54,7 +59,7 @@ export function withConciseReaderCopy<T>(value: T): T {
     return Object.fromEntries(Object.entries(item).map(([key, child]) => [key, visit(child, key)]));
   }
   return visit(value) as T;
-}
+});
 
 export function conciseOfferNote(value = "") {
   if (/^(?:Exact named selection; compare current condition, seller, delivered total and return eligibility\. No live price or stock guarantee\.|Confirm the exact model and package, current condition, seller, delivered total and return terms; read the model-specific fit check above\.|Check live price and availability on Amazon\.|Confirm ASIN [A-Z0-9]{10}, seller, live price, and availability\.)$/.test(value)) return "";

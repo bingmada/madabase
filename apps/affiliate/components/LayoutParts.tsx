@@ -10,8 +10,10 @@ import { TaskNavigation } from "./TaskNavigation";
 import { NavigationDisclosure } from "./NavigationDisclosure";
 import { PageCommissionDisclosure } from "./PageCommissionDisclosure";
 import { SearchForm } from "../../shared/SearchControls";
+import { NetworkChrome } from "./NetworkChrome";
 
 export function SiteChrome({ site, children }: { site: SiteConfig; children: React.ReactNode }) {
+  if (site.key === "network") return <NetworkChrome site={site}>{children}</NetworkChrome>;
   return (
     <body
       style={
@@ -31,7 +33,7 @@ export function SiteChrome({ site, children }: { site: SiteConfig; children: Rea
           </Link>
           <nav className="hidden min-w-0 flex-nowrap items-center justify-end gap-x-3 whitespace-nowrap text-xs font-semibold lg:flex lg:gap-x-4 lg:text-sm" aria-label="Primary navigation">
             <Link className="font-black hover:underline" href="/search">Search</Link>
-            {site.key === "homeoffice" || site.key === "network" ? <Link className="hover:underline" href="/compatibility">Compatibility</Link> : null}
+            {site.key === "homeoffice" ? <Link className="hover:underline" href="/compatibility">Compatibility</Link> : null}
             <Link className="hidden hover:text-[var(--brand-strong)] sm:inline" href="/">
               Home
             </Link>
@@ -61,7 +63,7 @@ export function SiteChrome({ site, children }: { site: SiteConfig; children: Rea
             <div className="panel absolute right-0 top-full z-50 mt-2 max-h-[calc(100dvh-6rem)] w-56 overflow-y-auto p-2 shadow-[var(--shadow)]">
               <nav className="grid gap-1 text-sm font-semibold" aria-label="Mobile navigation">
                 <Link className="rounded-md px-3 py-2 font-black" href="/search">Search the library</Link>
-                {site.key === "homeoffice" || site.key === "network" ? <Link className="rounded-md px-3 py-2" href="/compatibility">Compatibility & upgrades</Link> : null}
+                {site.key === "homeoffice" ? <Link className="rounded-md px-3 py-2" href="/compatibility">Compatibility & upgrades</Link> : null}
                 <Link className="rounded-md px-3 py-2 hover:bg-[var(--surface-muted)]" href="/">Home</Link>
                 {null}
                 {null}

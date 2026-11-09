@@ -1,0 +1,672 @@
+{
+  "mainChecks": [
+    {
+      "host": "madabase.com",
+      "path": "/",
+      "canonical": "https://madabase.com",
+      "markers": [
+        "Madabase"
+      ]
+    },
+    {
+      "host": "madabase.com",
+      "path": "/research",
+      "canonical": "https://madabase.com/research",
+      "markers": [
+        "Madabase"
+      ]
+    },
+    {
+      "host": "madabase.com",
+      "path": "/research?madabase-qa=1",
+      "canonical": "https://madabase.com/research",
+      "markers": [
+        "Madabase"
+      ]
+    },
+    {
+      "host": "madabase.com",
+      "path": "/methodology",
+      "canonical": "https://madabase.com/methodology",
+      "markers": [
+        "Madabase"
+      ]
+    },
+    {
+      "host": "madabase.com",
+      "path": "/about",
+      "canonical": "https://madabase.com/about",
+      "markers": [
+        "Madabase"
+      ]
+    },
+    {
+      "host": "madabase.com",
+      "path": "/editorial-policy",
+      "canonical": "https://madabase.com/editorial-policy",
+      "markers": [
+        "Madabase"
+      ]
+    },
+    {
+      "host": "madabase.com",
+      "path": "/affiliate-disclosure",
+      "canonical": "https://madabase.com/affiliate-disclosure",
+      "markers": [
+        "Madabase"
+      ]
+    }
+  ],
+  "affiliateChecks": [
+    {
+      "host": "smarthome.madabase.com",
+      "path": "/reviews/aqara-door-and-window-sensor-p2",
+      "canonical": "https://smarthome.madabase.com/reviews/aqara-door-and-window-sensor-p2",
+      "markers": [
+        "Aqara P2 Guide: Thread Controller, Magnet Gap & Battery"
+      ]
+    },
+    {
+      "host": "smarthome.madabase.com",
+      "path": "/guides/apple-home-key-smart-lock-buying-guide",
+      "canonical": "https://smarthome.madabase.com/guides/apple-home-key-smart-lock-buying-guide",
+      "markers": [
+        "Apple Home Key Smart Lock Buying Guide"
+      ]
+    },
+    {
+      "host": "smarthome.madabase.com",
+      "path": "/best/aqara-fp300-vs-fp2",
+      "canonical": "https://smarthome.madabase.com/best/aqara-fp300-vs-fp2",
+      "markers": [
+        "Aqara FP300 vs. FP2: Battery Sensor or Zoned Room Map?"
+      ]
+    },
+    {
+      "host": "smarthome.madabase.com",
+      "path": "/categories/access",
+      "canonical": "https://smarthome.madabase.com/categories/access",
+      "markers": [
+        "Smart access"
+      ]
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/reviews/amazon-basics-monitor-arm",
+      "canonical": "https://homeoffice.madabase.com/reviews/amazon-basics-monitor-arm",
+      "markers": [
+        "Amazon Basics Gas-Spring Monitor Arm Guide: 27-Inch Fit Checks"
+      ]
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/48-vs-55-inch-desk-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/48-vs-55-inch-desk-guide",
+      "markers": [
+        "Madabase"
+      ]
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/best/best-dual-monitor-docks-mac-windows",
+      "canonical": "https://homeoffice.madabase.com/best/best-dual-monitor-docks-mac-windows",
+      "markers": [
+        "Dual-Monitor Docks for Mac and Windows"
+      ]
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/categories/desks",
+      "canonical": "https://homeoffice.madabase.com/categories/desks",
+      "markers": [
+        "Desks"
+      ]
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/reviews/baby-brezza-smart-bottle-warmer",
+      "canonical": "https://baby.madabase.com/reviews/baby-brezza-smart-bottle-warmer",
+      "markers": [
+        "Baby Brezza Smart Bottle Warmer Guide & SCF358 Comparison"
+      ]
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/guides/adjustable-high-chairs-buying-guide",
+      "canonical": "https://baby.madabase.com/guides/adjustable-high-chairs-buying-guide",
+      "markers": [
+        "High Chair Buying Guide: KUB Hold & Chicco Zest Alternative"
+      ]
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/best/babybjorn-harmony-vs-ergobaby-omni-breeze",
+      "canonical": "https://baby.madabase.com/best/babybjorn-harmony-vs-ergobaby-omni-breeze",
+      "markers": [
+        "BabyBjörn Harmony vs. Ergobaby Omni Breeze"
+      ]
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/categories/feeding",
+      "canonical": "https://baby.madabase.com/categories/feeding",
+      "markers": [
+        "Feeding"
+      ]
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/reviews/catit-flower-cat-water-fountain",
+      "canonical": "https://pets.madabase.com/reviews/catit-flower-cat-water-fountain",
+      "markers": [
+        "Catit Flower Fountain Guide: 3L Capacity, Filters & Cleaning"
+      ]
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/guides/air-purifier-pet-hair-dander-odor-guide",
+      "canonical": "https://pets.madabase.com/guides/air-purifier-pet-hair-dander-odor-guide",
+      "markers": [
+        "Air Purifier Guide for Pet Hair, Dander and Odor"
+      ]
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/best/best-automatic-cat-feeders",
+      "canonical": "https://pets.madabase.com/best/best-automatic-cat-feeders",
+      "markers": [
+        "Automatic Cat Feeders: Scheduled Meals or RFID Access?"
+      ]
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/categories/comfort",
+      "canonical": "https://pets.madabase.com/categories/comfort",
+      "markers": [
+        "Comfort"
+      ]
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/tools/diaper-usage-calculator",
+      "canonical": "https://baby.madabase.com/tools/diaper-usage-calculator",
+      "markers": [
+        "Diaper Usage Calculator by Age and Days"
+      ]
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/thinkcentre-m920q-upgrade-compatibility-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/thinkcentre-m920q-upgrade-compatibility-guide",
+      "markers": [
+        "ThinkCentre M920q Tiny: RAM, SSD and PCIe Upgrade Checks"
+      ]
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/thinkcentre-m920x-upgrade-compatibility-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/thinkcentre-m920x-upgrade-compatibility-guide",
+      "markers": [
+        "ThinkCentre M920x Tiny: RAM, SSD and PCIe Upgrade Checks"
+      ]
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/tools/desk-height-calculator",
+      "canonical": "https://homeoffice.madabase.com/tools/desk-height-calculator",
+      "markers": [
+        "Desk Height Calculator for Sitting and Standing"
+      ]
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/tools/pet-feeding-calculator",
+      "canonical": "https://pets.madabase.com/tools/pet-feeding-calculator",
+      "markers": [
+        "Pet Feeding Schedule Calculator by Meals and Calories"
+      ]
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/tools/pet-room-air-change-calculator",
+      "canonical": "https://pets.madabase.com/tools/pet-room-air-change-calculator",
+      "markers": [
+        "Pet Room Air-Change and CADR Calculator"
+      ]
+    },
+    {
+      "host": "smarthome.madabase.com",
+      "path": "/tools/matter-thread-compatibility-checker",
+      "canonical": "https://smarthome.madabase.com/tools/matter-thread-compatibility-checker",
+      "markers": [
+        "Matter and Thread Border Router Compatibility Checker"
+      ]
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/de-de/guides/thinkcentre-m920q-upgrade-compatibility-guide",
+      "canonical": "https://homeoffice.madabase.com/de-de/guides/thinkcentre-m920q-upgrade-compatibility-guide",
+      "markers": [
+        "Check this exact ThinkCentre before choosing parts",
+        "Open this model’s setup checker (English)"
+      ]
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/reviews/grownsy-bottle-sterilizer-dryer",
+      "canonical": "https://baby.madabase.com/reviews/grownsy-bottle-sterilizer-dryer",
+      "markers": [
+        "Catalog identity record"
+      ]
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/desktop-audio-interfaces-buying-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/desktop-audio-interfaces-buying-guide",
+      "markers": [
+        "Kmise MI8423-KUS USB audio interface"
+      ]
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/desktop-audio-interfaces-compatibility-and-fit-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/desktop-audio-interfaces-compatibility-and-fit-guide",
+      "markers": [
+        "Kmise MI8423-KUS USB audio interface"
+      ]
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/desktop-audio-interfaces-ownership-cost-and-maintenance",
+      "canonical": "https://homeoffice.madabase.com/guides/desktop-audio-interfaces-ownership-cost-and-maintenance",
+      "markers": [
+        "Kmise MI8423-KUS USB audio interface"
+      ]
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/desktop-audio-interfaces-setup-and-daily-workflow",
+      "canonical": "https://homeoffice.madabase.com/guides/desktop-audio-interfaces-setup-and-daily-workflow",
+      "markers": [
+        "Kmise MI8423-KUS USB audio interface"
+      ]
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/desktop-audio-interfaces-vs-alternatives",
+      "canonical": "https://homeoffice.madabase.com/guides/desktop-audio-interfaces-vs-alternatives",
+      "markers": [
+        "Kmise MI8423-KUS USB audio interface"
+      ]
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/best/logitech-litra-glow-vs-elgato-key-light-neo",
+      "canonical": "https://homeoffice.madabase.com/best/logitech-litra-glow-vs-elgato-key-light-neo",
+      "markers": [
+        "The decision",
+        "data-decision-first-comparison",
+        "lighting-power",
+        "Check each model"
+      ]
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/dual-screen-portable-monitors-vs-alternatives",
+      "canonical": "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-vs-alternatives",
+      "markers": [
+        "portable-display-paths",
+        "INVPM009 with HDMI only"
+      ]
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/guides/ergobaby-omni-breeze-positions-by-age",
+      "canonical": "https://baby.madabase.com/guides/ergobaby-omni-breeze-positions-by-age",
+      "markers": [
+        "Madabase"
+      ]
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/monitor-arm-clamp-reinforcement-guide",
+      "canonical": "https://homeoffice.madabase.com/guides/monitor-arm-clamp-reinforcement-guide",
+      "markers": [
+        "Madabase"
+      ]
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/reviews/momcozy-mw05-portable-milk-warmer",
+      "canonical": "https://baby.madabase.com/reviews/momcozy-mw05-portable-milk-warmer",
+      "markers": [
+        "Madabase"
+      ]
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/reviews/ubbi-steel-diaper-pail",
+      "canonical": "https://baby.madabase.com/reviews/ubbi-steel-diaper-pail",
+      "markers": [
+        "Madabase"
+      ]
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/best/momcozy-purehug-vs-ergobaby-omni-breeze",
+      "canonical": "https://baby.madabase.com/best/momcozy-purehug-vs-ergobaby-omni-breeze",
+      "markers": [
+        "Madabase"
+      ]
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/best/ergear-48x24-vs-flexispot-e7-mini",
+      "canonical": "https://homeoffice.madabase.com/best/ergear-48x24-vs-flexispot-e7-mini",
+      "markers": [
+        "The decision",
+        "data-decision-first-comparison",
+        "Fit & Model Checks",
+        "original retailer link remains paused"
+      ]
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/reviews/jabra-speak2-40-usb-speakerphone",
+      "canonical": "https://homeoffice.madabase.com/reviews/jabra-speak2-40-usb-speakerphone",
+      "markers": [
+        "Madabase"
+      ]
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/guides/potty-training-seats-buying-guide",
+      "canonical": "https://baby.madabase.com/guides/potty-training-seats-buying-guide",
+      "markers": [
+        "Potty Training Seat vs Chair vs Ladder",
+        "Nationwide"
+      ]
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/en-gb/reviews/logitech-litra-glow",
+      "canonical": "https://homeoffice.madabase.com/en-gb/reviews/logitech-litra-glow",
+      "markers": [
+        "data-page-commission-disclosure=\"true\"",
+        "Logitech Litra Glow"
+      ]
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/en-ca/reviews/logitech-litra-glow",
+      "canonical": "https://homeoffice.madabase.com/en-ca/reviews/logitech-litra-glow",
+      "markers": [
+        "data-page-commission-disclosure=\"true\"",
+        "Logitech Litra Glow"
+      ]
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/de-de/reviews/logitech-litra-glow",
+      "canonical": "https://homeoffice.madabase.com/de-de/reviews/logitech-litra-glow",
+      "markers": [
+        "data-page-commission-disclosure=\"true\"",
+        "Logitech Litra Glow"
+      ]
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/nl-nl/reviews/logitech-litra-glow",
+      "canonical": "https://homeoffice.madabase.com/nl-nl/reviews/logitech-litra-glow",
+      "markers": [
+        "data-page-commission-disclosure=\"true\"",
+        "Logitech Litra Glow"
+      ]
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/compatibility/docks",
+      "canonical": "https://homeoffice.madabase.com/compatibility/docks",
+      "markers": [
+        "data-page-commission-disclosure=\"true\""
+      ]
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/compatibility/monitor-arms",
+      "canonical": "https://homeoffice.madabase.com/compatibility/monitor-arms",
+      "markers": [
+        "data-page-commission-disclosure=\"true\""
+      ]
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/",
+      "canonical": "https://network.madabase.com",
+      "markers": [
+        "network-site",
+        "network-main",
+        "Signalwise"
+      ]
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/categories/wifi",
+      "canonical": "https://network.madabase.com/categories/wifi",
+      "markers": [
+        "network-site",
+        "network-main",
+        "Signalwise"
+      ]
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/categories/wired",
+      "canonical": "https://network.madabase.com/categories/wired",
+      "markers": [
+        "network-site",
+        "network-main",
+        "Signalwise"
+      ]
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/categories/backup",
+      "canonical": "https://network.madabase.com/categories/backup",
+      "markers": [
+        "network-site",
+        "network-main",
+        "Signalwise"
+      ]
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/compatibility",
+      "canonical": "https://network.madabase.com/compatibility",
+      "markers": [
+        "network-site",
+        "network-main",
+        "Signalwise"
+      ]
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/compatibility/ethernet",
+      "canonical": "https://network.madabase.com/compatibility/ethernet",
+      "markers": [
+        "network-site",
+        "network-main",
+        "Signalwise",
+        "data-network-continuation"
+      ]
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/tools/mesh-node-and-backhaul-planner",
+      "canonical": "https://network.madabase.com/tools/mesh-node-and-backhaul-planner",
+      "markers": [
+        "network-site",
+        "network-main",
+        "Signalwise",
+        "data-network-continuation"
+      ]
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/tools/wifi-coverage-estimator",
+      "canonical": "https://network.madabase.com/tools/wifi-coverage-estimator",
+      "markers": [
+        "network-site",
+        "network-main",
+        "Signalwise",
+        "data-network-continuation"
+      ]
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/best/best-mesh-wifi-for-apartments-and-homes",
+      "canonical": "https://network.madabase.com/best/best-mesh-wifi-for-apartments-and-homes",
+      "markers": [
+        "network-site",
+        "network-main",
+        "Signalwise",
+        "data-network-continuation"
+      ]
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/best/deco-be25-vs-be63",
+      "canonical": "https://network.madabase.com/best/deco-be25-vs-be63",
+      "markers": [
+        "network-site",
+        "network-main",
+        "Signalwise",
+        "data-network-continuation"
+      ]
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/best/asus-zenwifi-bt6-vs-deco-be63",
+      "canonical": "https://network.madabase.com/best/asus-zenwifi-bt6-vs-deco-be63",
+      "markers": [
+        "network-site",
+        "network-main",
+        "Signalwise",
+        "data-network-continuation"
+      ]
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/guides/router-placement-guide",
+      "canonical": "https://network.madabase.com/guides/router-placement-guide",
+      "markers": [
+        "network-site",
+        "network-main",
+        "Signalwise",
+        "data-network-continuation"
+      ]
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/guides/travel-router-vpn-guide",
+      "canonical": "https://network.madabase.com/guides/travel-router-vpn-guide",
+      "markers": [
+        "network-site",
+        "network-main",
+        "Signalwise",
+        "data-network-continuation"
+      ]
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/guides/usb-c-ethernet-adapters-vs-alternatives",
+      "canonical": "https://network.madabase.com/guides/usb-c-ethernet-adapters-vs-alternatives",
+      "markers": [
+        "network-site",
+        "network-main",
+        "Signalwise",
+        "data-network-continuation"
+      ]
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/guides/poe-switch-for-home-cameras-and-access-points-guide",
+      "canonical": "https://network.madabase.com/guides/poe-switch-for-home-cameras-and-access-points-guide",
+      "markers": [
+        "network-site",
+        "network-main",
+        "Signalwise",
+        "data-network-continuation"
+      ]
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/reviews/tp-link-deco-be67-wifi-7-mesh",
+      "canonical": "https://network.madabase.com/reviews/tp-link-deco-be67-wifi-7-mesh",
+      "markers": [
+        "network-site",
+        "network-main",
+        "Signalwise",
+        "data-network-continuation"
+      ]
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/en-gb/reviews/tp-link-deco-be67-wifi-7-mesh",
+      "canonical": "https://network.madabase.com/en-gb/reviews/tp-link-deco-be67-wifi-7-mesh",
+      "markers": [
+        "network-site",
+        "network-main",
+        "Signalwise",
+        "data-network-continuation"
+      ]
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/de-de/reviews/tp-link-deco-be67-wifi-7-mesh",
+      "canonical": "https://network.madabase.com/de-de/reviews/tp-link-deco-be67-wifi-7-mesh",
+      "markers": [
+        "network-site",
+        "network-main",
+        "Signalwise",
+        "data-network-continuation"
+      ]
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/guides/home-network-racks-vs-alternatives",
+      "canonical": "https://network.madabase.com/guides/home-network-racks-vs-alternatives",
+      "markers": [
+        "network-site",
+        "data-network-continuation"
+      ]
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/guides/fiber-optic-power-meters-buying-guide",
+      "canonical": "https://network.madabase.com/guides/fiber-optic-power-meters-buying-guide",
+      "markers": [
+        "network-site",
+        "data-network-continuation"
+      ]
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/best/best-ups-for-router-and-modem",
+      "canonical": "https://network.madabase.com/best/best-ups-for-router-and-modem",
+      "markers": [
+        "network-site",
+        "data-network-continuation"
+      ]
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/en-gb/guides/xfinity-gateway-bridge-mode-vs-own-router-guide",
+      "canonical": "https://network.madabase.com/en-gb/guides/xfinity-gateway-bridge-mode-vs-own-router-guide",
+      "markers": [
+        "network-site",
+        "data-network-continuation"
+      ]
+    }
+  ]
+}

@@ -1,8 +1,11 @@
 import Image from "next/image";
+import { NetworkRegionalContent } from "./NetworkRegional";
+import { NetworkHome } from "./NetworkHome";
 import { withConciseReaderCopy } from "@/lib/reader-copy";
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, Globe2, MapPin, ShieldCheck } from "lucide-react";
 import { AffiliateButton, AffiliateButtonGroup } from "./AffiliateButton";
+import { ComparisonStart } from "./ComparisonStart";
 import { AmazonListingFreshness } from "./AmazonCreatorsListing";
 import { JsonLd } from "./JsonLd";
 import { GuideTaskPaths } from "./GuideTaskPaths";
@@ -24,7 +27,7 @@ import {
 import { marketKeys, marketPath, markets, type MarketProfile } from "@/lib/markets";
 import { absoluteUrl } from "@/lib/seo";
 import type { SiteConfig } from "@/lib/sites";
-import { findProduct } from "@/lib/content";
+import { findProduct, findRoundup } from "@/lib/content";
 import { amazonAsinAffiliateUrl } from "@/lib/affiliate-tracking";
 import { findCommerceProduct } from "@/lib/commerce-paths";
 import { findAmazonOfferBlock, isBlockedAmazonSource } from "@/lib/amazon-offer-blocks";
@@ -119,6 +122,7 @@ export function MarketEditionNav({
 }
 
 export function MarketHome({ site, market }: { site: SiteConfig; market: MarketProfile }) {
+  if (site.key === "network") return <NetworkHome site={site} market={market} />;
   const copy = marketHomeCopy[market.key][site.key];
   if (!copy) return null;
   const indexablePages = indexableLocalizedMarketPagesForSite(site.key, market.key);
@@ -318,6 +322,43 @@ export function LocalizedMarketContent({
   variant: LocalizedMarketVariant;
 }) {
   const variant = withConciseReaderCopy(sourceVariant);
+  const networkContent = site.key === "network" ? <NetworkRegionalContent site={site} market={market} page={page} variant={variant} /> : null;
+  if (networkContent) return networkContent;
+  const networkComparison = site.key === "network" && page.route === "best"
+    && ["deco-be25-vs-be63", "best-mesh-wifi-for-2-5gbps-internet"].includes(page.slug)
+    ? findRoundup(site.key, page.slug) : undefined;
+  if (networkComparison) {
+    const picks = networkComparison.productSlugs.flatMap(slug => {
+      const product = findProduct(site.key, slug);
+      return product ? [product] : [];
+    });
+    return <main className="section" lang="en" data-network-regional-comparison="true">
+      <JsonLd data={{
+        "@context": "https://schema.org", "@type": "Article",
+        headline: networkComparison.title,
+        description: networkComparison.dek,
+        url: absoluteUrl(site, localizedMarketPath(market, page)),
+        inLanguage: "en", dateModified: dateModified(networkComparison.updatedAt ?? page.updatedAt),
+        author: { "@type": "Organization", name: `${site.name} editorial desk`, url: absoluteUrl(site, "/about") },
+        citation: (page.sourceLinks ?? []).filter(source => !isBlockedAmazonSource(site.key, source.url)).map(source => source.url),
+      }} />
+      <div className="shell max-w-5xl">
+        <p className="eyebrow">{market.labels.edition} · {site.name}</p>
+        <h1 className="mt-3 text-3xl font-black leading-tight sm:text-4xl">{networkComparison.title}</h1>
+        <p className="mt-4 rounded-md border border-[var(--border)] bg-white p-4 text-sm leading-6" data-regional-model-scope="true">The comparison below uses US model and pack references. For {market.countryName}, confirm the regional model, wireless bands, power supply and node count. Amazon may redirect a US link; that does not verify an equivalent local product, warranty or offer.</p>
+        <ComparisonStart site={site} roundup={networkComparison} picks={picks} market={market.key} />
+        <section className="panel mt-6 p-5" id="comparison-sources">
+          <h2 className="text-xl font-bold">Sources and next checks</h2>
+          <p className="mt-3 text-sm leading-6">Keep a working system when coverage and the required ports already meet the job.</p>
+          <Link className="mt-3 block font-bold underline" href="/tools/mesh-node-and-backhaul-planner">Plan node placement and backhaul (English)</Link>
+          <Link className="mt-3 block font-bold underline" href={basePathForMarketPage(page)}>Read the full US comparison and its sources</Link>
+          <ul className="mt-4 space-y-2 text-sm">{(page.sourceLinks ?? []).filter(source => !isBlockedAmazonSource(site.key, source.url)).map(source => <li key={source.url}><a className="underline" href={source.url} target="_blank" rel="noopener noreferrer">{source.name}</a></li>)}</ul>
+        </section>
+        <MarketEditionNav site={site} currentMarket={market} basePath={basePathForMarketPage(page)} />
+      </div>
+    </main>;
+  }
+  const usProviderGuide = site.key === "network" && page.route === "guides" && page.slug === "xfinity-gateway-bridge-mode-vs-own-router-guide";
   const product = page.primaryProductSlug
     ? findProduct(site.key, page.primaryProductSlug)
     : undefined;
@@ -375,14 +416,14 @@ export function LocalizedMarketContent({
   const localizedPath = localizedMarketPath(market, page);
   const pageUrl = absoluteUrl(site, localizedPath);
   const sourceLinks = page.sourceLinks ?? product?.sources ?? [];
-  const facts = marketFactRows(
+  const facts = usProviderGuide ? [["Service", "Xfinity in the United States"], ["Scope", "Provider approval and plan terms are specific to the actual service address"]] : marketFactRows(
     market,
     displayName,
     product?.asin ?? product?.specs.ASIN,
   );
 
   return (
-    <main className="section" lang={market.languageTag}>
+    <main className="section" lang={usProviderGuide ? "en" : market.languageTag}>
       <JsonLd
         data={{
           "@context": "https://schema.org",
@@ -449,7 +490,7 @@ export function LocalizedMarketContent({
             <p className="mt-5 text-lg leading-8 text-[var(--muted)]">{variant.dek}</p>
             <p className="mt-4 text-sm font-semibold text-[var(--muted)]">{market.labels.updated} {page.updatedAt}</p>
             <section className="mt-8 rounded-md border border-[var(--brand)] bg-[var(--brand-soft)] p-6">
-              <p className="eyebrow">{variant.answerLanguage === "en" ? (market.key === "de" ? "Fachentscheidung aus der englischen Recherche" : "Inhoudelijk advies uit het Engelse onderzoek") : market.labels.quickAnswer}</p>
+              <p className="eyebrow">{usProviderGuide ? "Decision for US service" : variant.answerLanguage === "en" ? (market.key === "de" ? "Fachentscheidung aus der englischen Recherche" : "Inhoudelijk advies uit het Engelse onderzoek") : market.labels.quickAnswer}</p>
               <p className="mt-3 text-lg font-bold leading-8" lang={variant.answerLanguage}>{variant.quickAnswer}</p>
               {commerceProduct ? (
                 <AmazonListingFreshness
@@ -493,8 +534,8 @@ export function LocalizedMarketContent({
               ))}
             </div>
             <section className="panel mt-9 p-6">
-              <h2 className="text-2xl font-bold">{market.labels.buyerChecks}</h2>
-              <p className="mt-3 leading-7 text-[var(--muted)]">{market.labels.buyerChecksIntro}</p>
+              <h2 className="text-2xl font-bold">{usProviderGuide ? "Check the actual service before buying" : market.labels.buyerChecks}</h2>
+              <p className="mt-3 leading-7 text-[var(--muted)]">{usProviderGuide ? "Xfinity device approval concerns US service. A different provider needs its own instructions and approved-device checks." : market.labels.buyerChecksIntro}</p>
               <ul className="mt-5 grid gap-3 sm:grid-cols-2">
                 {variant.checkoutChecks.map((check) => (
                   <li className="rounded-md border border-[var(--border)] bg-[var(--surface-muted)] p-4 text-sm font-semibold leading-6" key={check}>
@@ -505,7 +546,7 @@ export function LocalizedMarketContent({
             </section>
             <section className="panel mt-9 p-6">
               <h2 className="text-2xl font-bold">{market.labels.evidence}</h2>
-              <p className="mt-3 leading-7 text-[var(--muted)]">{market.labels.evidenceIntro}</p>
+              <p className="mt-3 leading-7 text-[var(--muted)]">{usProviderGuide ? "The source below documents Xfinity gateway behaviour. It does not verify another provider or recommend a local modem." : market.labels.evidenceIntro}</p>
               <dl className="mt-5 divide-y divide-[var(--border)]">
                 {facts.map(([label, value]) => (
                   <div className="grid gap-2 py-3 text-sm sm:grid-cols-[160px_1fr]" key={label}>
@@ -530,7 +571,7 @@ export function LocalizedMarketContent({
               ) : null}
             </section>
             <section className="panel mt-9 p-6">
-              <h2 className="text-2xl font-bold">{market.labels.related}</h2>
+              <h2 className="text-2xl font-bold">{usProviderGuide ? "US research and planning references" : market.labels.related}</h2>
               <div className="mt-5 grid gap-3 sm:grid-cols-2">
                 {page.relatedPaths.map((related) => {
                   const relatedMarketPath = localizedMarketPathForBasePath(
@@ -562,9 +603,9 @@ export function LocalizedMarketContent({
             </div> : null}
             {displayImage && isEditorialCategoryImage(displayImage) ? <p className="mt-2 text-xs leading-5 text-[var(--muted)]">{editorialCategoryImageCaption}</p> : null}
             {editorialDiagram ? <p className="mt-2 text-xs leading-5 text-[var(--muted)]">Editorial decision diagram; not a product photograph.</p> : null}
-            <div className="panel mt-5 p-5 text-sm leading-6 text-[var(--muted)]">
+            {!usProviderGuide ? <div className="panel mt-5 p-5 text-sm leading-6 text-[var(--muted)]">
               <strong className="text-[var(--text)]">{market.amazonStore}:</strong> {market.labels.oneLink}
-            </div>
+            </div> : null}
           </aside>
         </div>
       </div>

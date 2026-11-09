@@ -1,24 +1,35 @@
 "use client";
 
 import { Calculator, Copy, RotateCcw } from "lucide-react";
-import { useId, useMemo, useState } from "react";
+import { useEffect, useId, useMemo, useState } from "react";
 import type { Tool } from "@/lib/types";
 import { calculatorDefaults, calculatorFields, evaluateCalculator, type CalculatorValues } from "@/lib/calculator-plans";
+import { readNetworkDraft, saveNetworkDraft, clearNetworkDraft } from "./NetworkPlanState";
 
 export function CalculatorTool({ tool }: { tool: Tool }) {
   const id = useId();
-  const [values, setValues] = useState(() => calculatorDefaults(tool.kind));
-  const [example, setExample] = useState(true);
+  const networkKind = tool.site === "network" && (tool.kind === "mesh" || tool.kind === "wifi") ? tool.kind : undefined;
+  const [values, setValues] = useState<CalculatorValues>(() => networkKind ? {primary:"",secondary:"",keyboard:""} : calculatorDefaults(tool.kind));
+  const [example, setExample] = useState(!networkKind);
   const [copyStatus, setCopyStatus] = useState("");
   const [manualCopy, setManualCopy] = useState(false);
   const result = useMemo(() => evaluateCalculator(tool.kind, values), [values, tool.kind]);
   const plan = [tool.title, "Inputs shown — verify every value, including any remaining example values, before making a decision.", ...calculatorFields(tool.kind).map((field) => `${field.label}: ${values[field.key]}`), result.title, ...result.lines].join("\n");
+  useEffect(() => {
+    if (!networkKind) return;
+    const draft = readNetworkDraft(networkKind);
+    if (draft) setValues({primary:draft.values.primary??"",secondary:draft.values.secondary??"",keyboard:draft.values.keyboard??""});
+  },[networkKind]);
 
   function update(next: CalculatorValues, isExample = false) {
     setValues(next);
     setExample(isExample);
     setCopyStatus("");
     setManualCopy(false);
+    if (networkKind) {
+      if (isExample || !next.primary && !next.secondary) clearNetworkDraft(networkKind);
+      else saveNetworkDraft(networkKind,next);
+    }
   }
 
   async function copyPlan() {
@@ -37,9 +48,10 @@ export function CalculatorTool({ tool }: { tool: Tool }) {
     <div className="panel p-5 sm:p-6" data-sticky-commerce-suppress data-clarity-mask="true">
       <div className="flex items-center gap-2">
         <Calculator aria-hidden="true" size={20} />
-        <h2 className="text-xl font-bold">{tool.title}</h2>
+        <h2 className="text-xl font-bold">{networkKind ? "Enter your home measurements" : tool.title}</h2>
       </div>
-      <p className="mt-4 text-sm leading-6 text-[var(--muted)]" id={`${id}-instructions`}>{example ? "Example inputs are loaded. Replace every value with your own before using this result." : "Check every field, including any remaining example values. Blank means unknown; invalid inputs do not produce a plan."}</p>
+      <p className="mt-4 text-sm leading-6 text-[var(--muted)]" id={`${id}-instructions`}>{example ? "Example inputs are loaded. Replace every value with your own before using this result." : networkKind ? "Enter the values for your home. Blank means unknown; complete both fields to see a starting layout to test." : "Check every field, including any remaining example values. Blank means unknown; invalid inputs do not produce a plan."}</p>
+      {networkKind ? <p className="mt-2 text-xs leading-6 text-[var(--muted)]">Your entered draft stays in this browser tab for up to 24 hours so you can return after reading another page. Clear inputs to remove it. Example values are not saved as your plan.</p> : null}
       {tool.kind === "desk" ? <p className="mt-3 text-sm leading-6 text-[var(--muted)]">With shoulders relaxed and forearms roughly level, measure floor to elbow while seated with feet supported, then while standing in your usual shoes and on your usual mat. Measure keyboard thickness from its support surface to the typing keys.</p> : null}
       <div className="mt-5 grid gap-4 sm:grid-cols-2">
         {calculatorFields(tool.kind).map((field) => <div key={field.key}>

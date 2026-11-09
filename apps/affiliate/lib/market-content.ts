@@ -502,6 +502,20 @@ function automaticVariant(page: MarketPageDescriptor, market: MarketProfile): Lo
   const sourceDecision = page.sourceDecision ?? `Use the original research to decide whether ${sourceTitle} fits the actual household need.`;
   const sourceRisk = page.sourceRisk ?? "Confirm the exact model, configuration and return path before checkout.";
 
+  if (page.site === "network" && page.route === "guides" && page.slug === "xfinity-gateway-bridge-mode-vs-own-router-guide") {
+    return {
+      title: "Xfinity Bridge Mode: US Service Only",
+      dek: "This guide concerns Xfinity service in the United States. Its device approvals, gateway features and plan terms do not establish compatibility with a provider in another country.",
+      quickAnswer: sourceDecision,
+      answerLanguage: "en",
+      sections: [
+        { heading: "Check the service country before choosing equipment", body: `Reading from ${market.countryName} does not make this a local modem recommendation. For a different provider, use that provider's current gateway instructions and exact approved-device list. Keep working equipment when no change is needed.` },
+        { heading: "For an Xfinity connection in the United States", body: "Use the original guide's topology checks before buying. Bridge mode retains the gateway as a modem and connects one separate router; replacing the modem also requires approval for the exact address, speed tier and voice service." },
+      ],
+      checkoutChecks: ["Actual service provider and country", "Gateway and router roles", "Exact provider-approved model, speed tier and voice support", "Whether existing equipment already meets the need"],
+    };
+  }
+
   if (market.key === "de") {
     return {
       title: `${sourceTitle}: Kaufberatung für Deutschland`,
@@ -668,6 +682,7 @@ function automaticPagesForSite(siteKey: SiteKey): LocalizedMarketPage[] {
     }),
     ...guides.map((guide) => {
       const ownPath = `/guides/${guide.slug}`;
+      const usProviderGuide = siteKey === "network" && guide.slug === "xfinity-gateway-bridge-mode-vs-own-router-guide";
       const taskPaths = taskGuidePaths(siteKey, guide.slug);
       const primaryProduct = guide.relatedProducts
         ?.map((slug) => findProduct(siteKey, slug))
@@ -679,8 +694,8 @@ function automaticPagesForSite(siteKey: SiteKey): LocalizedMarketPage[] {
         site: siteKey,
         route: "guides" as const,
         slug: guide.slug,
-        primaryProductSlug: primaryProduct?.slug,
-        commerceProductSlug: familyProduct ? undefined : guideCommerceProduct(siteKey, guide)?.slug,
+        primaryProductSlug: usProviderGuide ? undefined : primaryProduct?.slug,
+        commerceProductSlug: usProviderGuide || familyProduct ? undefined : guideCommerceProduct(siteKey, guide)?.slug,
         commerceFamilyAsin: familyProduct?.offerBlock ? undefined : familyProduct?.asin,
         commerceFamilyProductSlug: familyProduct ? `family-${familyProduct.familySlug}-${familyProduct.asin.toLowerCase()}` : undefined,
         commerceFamilyTitle: familyProduct?.title,
@@ -700,7 +715,7 @@ function automaticPagesForSite(siteKey: SiteKey): LocalizedMarketPage[] {
           : undefined,
         imageAlt: guide.imageAlt,
         sourceLinks: guide.sources ?? primaryProduct?.sources ?? [],
-        updatedAt: guide.updatedAt ?? "July 27, 2026",
+        updatedAt: usProviderGuide ? "November 6, 2026" : guide.updatedAt ?? "July 27, 2026",
         relatedPaths: uniqueRelatedPaths(taskPaths ? taskPaths.choices.map((choice) => ({label:choice.label,path:choice.href})) : [
           ...site.categories.filter((item) => item.slug === guide.category).map((item) => ({ label: item.name, path: `/categories/${item.slug}` })),
           ...(guide.relatedProducts ?? []).map((slug) => {

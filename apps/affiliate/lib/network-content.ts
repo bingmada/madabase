@@ -918,7 +918,7 @@ export const networkRoundups: Roundup[] = [
     slug: "best-mesh-wifi-for-apartments-and-homes",
     updatedAt: "June 25, 2026",
     title: "Mesh Wi-Fi for Apartments and Multi-Floor Homes",
-    dek: "Compare Deco BE25, BE63, BE67, BE85, eero, Orbi, and travel-router edge cases by pack size, wired backhaul, port speed, and layout risk.",
+    dek: "Compare Deco, ASUS, eero and Orbi home mesh systems by useful node count, exact pack size, backhaul, port speed and layout limits.",
     category: "wifi",
     intent: "Choose mesh Wi-Fi that fixes coverage without overbuying speed, nodes, or premium ports you cannot use.",
     intro: "Mesh Wi-Fi is most useful when one router cannot cover the home cleanly. Start with node placement, wired backhaul, and internet plan speed before comparing the biggest number on the box.",

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { headers } from "next/headers";
 import "./globals.css";
+import "./network.css";
 import "../../shared/discovery.css";
 import { SiteChrome } from "@/components/LayoutParts";
 import { ClarityAnalytics } from "@/components/ClarityAnalytics";
@@ -19,6 +20,7 @@ export async function generateMetadata(): Promise<Metadata> {
       template: `%s | ${site.name}`,
     },
     description: site.description,
+    ...(site.key === "network" ? { icons: { icon: "/network-mark.svg" } } : {}),
     ...(site.previewNoIndex
       ? {
           robots: {
