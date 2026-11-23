@@ -1,0 +1,74 @@
+{
+  "revision": "1e279224bf0060c3d3d012a0c19c88208598e88c",
+  "status": "origin-verified",
+  "unchangedMain": {
+    "workingDirectory": "/srv/madabase-main/releases/network-readiness-20261109-ec9b2bcc9e42a9ab0a6030bc2821f52b6cebe2a8",
+    "pid": "598627"
+  },
+  "apps": {
+    "affiliate": {
+      "old": "/srv/madabase-affiliate/releases/network-readiness-20261109-ec9b2bcc9e42a9ab0a6030bc2821f52b6cebe2a8",
+      "new": "/srv/madabase-affiliate/releases/amazon-account-20261123-1e279224bf0060c3d3d012a0c19c88208598e88c",
+      "sha256": "e693d1a0b9a114b14d1ea4541c6a29d237dcfedcfdeadccdc66ebfc545851274",
+      "retainedAssets": 190,
+      "currentSymlink": {
+        "path": "/srv/madabase-affiliate/current",
+        "previousTarget": "/srv/madabase-affiliate/releases/network-readiness-20261109-ec9b2bcc9e42a9ab0a6030bc2821f52b6cebe2a8"
+      }
+    }
+  },
+  "startedAt": 1795435541.2685697,
+  "forecast": {
+    "capacity": {
+      "passed": false,
+      "availableMiB": 187.08203125,
+      "sliceHeadroomMiB": "unlimited",
+      "requiredMiB": 704,
+      "candidateMiB": 512,
+      "reserveMiB": 192,
+      "pressureAvg10": 0,
+      "reasons": [
+        "Insufficient MemAvailable; swap does not count as candidate capacity."
+      ]
+    },
+    "reclaimedAnonymousMiB": 806.22265625,
+    "projectedMiB": 993.3046875,
+    "requiredMiB": 768
+  },
+  "testPaused": false,
+  "testRestored": false,
+  "retiredServicesLeftStopped": true,
+  "mainRestartAuthorized": true,
+  "gates": {
+    "main": {
+      "passed": true,
+      "availableMiB": 998.62890625,
+      "sliceHeadroomMiB": "unlimited",
+      "requiredMiB": 704,
+      "candidateMiB": 512,
+      "reserveMiB": 192,
+      "pressureAvg10": 0,
+      "reasons": []
+    },
+    "affiliate": {
+      "passed": true,
+      "availableMiB": 914.95703125,
+      "sliceHeadroomMiB": "unlimited",
+      "requiredMiB": 704,
+      "candidateMiB": 512,
+      "reserveMiB": 192,
+      "pressureAvg10": 0,
+      "reasons": []
+    }
+  },
+  "verification": {
+    "affiliate": {
+      "criticalPages": 75,
+      "hostSitemaps": 5,
+      "buildId": "5Vf8z-P7gRr0YnuHlTYg_"
+    }
+  },
+  "mainRestoredAt": 1795435542.22394,
+  "completedAt": 1795435551.866164,
+  "currentPointersVerified": true
+}

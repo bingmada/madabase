@@ -1,0 +1,51 @@
+{
+  "observedOn": "2026-11-23",
+  "google": [
+    {
+      "url": "https://homeoffice.madabase.com/guides/monitor-arm-clamp-reinforcement-guide",
+      "liveTest": "available_to_Google",
+      "fetch": "Successful",
+      "crawlAllowed": true,
+      "indexingAllowed": true,
+      "declaredCanonical": "https://homeoffice.madabase.com/guides/monitor-arm-clamp-reinforcement-guide",
+      "testedAtAsiaShanghai": "2026-11-23 20:00:09",
+      "indexingRequest": "priority_crawl_queue_receipt_received",
+      "indexStatus": "not_confirmed_indexed",
+      "liveEvidence": "apps/affiliate/reports/search-impact-2026-11-23/gsc-clamp-live.txt",
+      "requestEvidence": "apps/affiliate/reports/search-impact-2026-11-23/gsc-clamp-indexing-request.txt"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-vs-alternatives",
+      "liveTest": "available_to_Google",
+      "fetch": "Successful",
+      "crawlAllowed": true,
+      "indexingAllowed": true,
+      "declaredCanonical": "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-vs-alternatives",
+      "testedAtAsiaShanghai": "2026-11-23 20:08:18",
+      "indexingRequest": "priority_crawl_queue_receipt_received",
+      "indexStatus": "not_confirmed_indexed",
+      "liveEvidence": "apps/affiliate/reports/search-impact-2026-11-23/gsc-dual-live.txt",
+      "requestEvidence": "apps/affiliate/reports/search-impact-2026-11-23/gsc-dual-indexing-request.txt"
+    },
+    {
+      "url": "https://baby.madabase.com/guides/potty-training-seats-buying-guide",
+      "liveTest": "available_to_Google",
+      "fetch": "Successful",
+      "crawlAllowed": true,
+      "indexingAllowed": true,
+      "declaredCanonical": "https://baby.madabase.com/guides/potty-training-seats-buying-guide",
+      "testedAtAsiaShanghai": "2026-11-23 20:11:22",
+      "indexingRequest": "priority_crawl_queue_receipt_received",
+      "indexStatus": "not_confirmed_indexed",
+      "liveEvidence": "apps/affiliate/reports/search-impact-2026-11-23/gsc-potty-live.txt",
+      "requestEvidence": "apps/affiliate/reports/search-impact-2026-11-23/gsc-potty-indexing-request.txt"
+    }
+  ],
+  "indexNow": {
+    "urls": 2,
+    "host": "network.madabase.com",
+    "status": 200,
+    "receipt": "indexnow-receipt.txt"
+  },
+  "limit": "Submission and a passing live test do not establish indexing, ranking or traffic recovery."
+}

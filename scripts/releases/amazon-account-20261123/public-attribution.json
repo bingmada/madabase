@@ -1,0 +1,21 @@
+{
+  "mode": "public",
+  "buildId": "5Vf8z-P7gRr0YnuHlTYg_",
+  "checked": 5320,
+  "failed": 0,
+  "amazonLinks": 5686,
+  "bySite": {
+    "baby": 1145,
+    "homeoffice": 1170,
+    "network": 845,
+    "pet": 940,
+    "smarthome": 1220
+  },
+  "cacheStatuses": {
+    "MISS": 5312,
+    "HIT": 8
+  },
+  "targetsSha256": "d19e9fd63a1c2b381597ebbeef2896be23dcd1c585b7232eac5f1a36d9ac541b",
+  "scope": "Rendered attribution, exact merchant ASIN, retained purchase links and release identity; no merchant clicks, product availability or account approval checks.",
+  "failures": []
+}

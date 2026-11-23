@@ -1,0 +1,58 @@
+{
+  "mode": "public",
+  "buildId": "5Vf8z-P7gRr0YnuHlTYg_",
+  "checked": 5,
+  "failed": 0,
+  "results": [
+    {
+      "url": "https://network.madabase.com/reviews/tp-link-deco-be67-wifi-7-mesh",
+      "title": "TP-Link Deco BE67 Guide: 10GbE, Ports & Who Should Buy It",
+      "description": [
+        "Compare Deco BE67's 10GbE port and wired backhaul with BE63 and BE85. Check internet speed, wired devices and mesh layout before choosing."
+      ],
+      "mainTextSha256": "a078c0bbffafe25480431cb6dd062a1da7b761676bcfdcdccacc7633467fbbb8",
+      "sitemapLastmod": "2026-11-23T00:00:00.000Z",
+      "errors": []
+    },
+    {
+      "url": "https://network.madabase.com/best/tp-link-deco-be67-vs-be63",
+      "title": "Deco BE67 vs BE63: 10GbE or Four 2.5GbE Ports?",
+      "description": [
+        "Deco BE63 has four 2.5GbE ports per node; BE67 adds one 10GbE port. Compare port counts, wired backhaul and which fits your network."
+      ],
+      "mainTextSha256": "19d5a50b2a4ca5c9a11579ce60df7575483d323b708f5145ab87db41220439c8",
+      "sitemapLastmod": "2026-11-23T00:00:00.000Z",
+      "errors": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/dual-screen-portable-monitors-vs-alternatives",
+      "title": "Dual Portable Monitors vs One Screen: Connections and Desk Fit",
+      "description": [
+        "Compare two portable panels with one screen by independent video paths, driver needs, support, power and packed weight. Keep exact model limits separate."
+      ],
+      "mainTextSha256": "f7d01d53f31b240a7bd723fa187d11cf72298a1dff97250e4826d22c1a1dd005",
+      "sitemapLastmod": "2026-11-03T00:00:00.000Z",
+      "errors": []
+    },
+    {
+      "url": "https://homeoffice.madabase.com/guides/monitor-arm-clamp-reinforcement-guide",
+      "title": "Monitor Arm Clamp Reinforcement Guide",
+      "description": [
+        "A reinforcement plate can spread clamp contact over a larger area on a suitable desktop. It does not certify glass, repair a hollow core, or increase an arm's load rating. Verify the desktop manufacturer's mounting permission, the arm's clamp dimensions, and the complete thickness of the top plus plates before buying."
+      ],
+      "mainTextSha256": "75b3748a38f2531a96b9a1780c025f127e6bc3bf9d8dcc3d93f732a1b219c8d0",
+      "sitemapLastmod": "2026-10-13T00:00:00.000Z",
+      "errors": []
+    },
+    {
+      "url": "https://baby.madabase.com/guides/potty-training-seats-buying-guide",
+      "title": "Potty Training Seat vs Chair vs Ladder: Fit & Setup Guide",
+      "description": [
+        "Compare a floor potty, toilet-seat reducer with foot support, and ladder seat by support, toilet fit, space and cleaning. Keep SKYROKU model limits separate."
+      ],
+      "mainTextSha256": "06b5bf0f798238cc3204bee7b07bad82e13f3f8e4208b09bc8cfc8562417ef17",
+      "sitemapLastmod": "2026-11-03T00:00:00.000Z",
+      "errors": []
+    }
+  ]
+}

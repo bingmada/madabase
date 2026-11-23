@@ -1,0 +1,118 @@
+{
+  "checked": 14,
+  "failed": 5,
+  "results": [
+    {
+      "url": "https://network.madabase.com/best/tp-link-deco-be67-vs-be63",
+      "iteration": 1,
+      "status": 200,
+      "cache": "HIT",
+      "buildIdPresent": true,
+      "age": "375"
+    },
+    {
+      "url": "https://network.madabase.com/reviews/tp-link-deco-be67-wifi-7-mesh",
+      "iteration": 1,
+      "status": 200,
+      "cache": "MISS",
+      "buildIdPresent": true,
+      "age": null
+    },
+    {
+      "url": "https://baby.madabase.com/",
+      "iteration": 1,
+      "status": 200,
+      "cache": "UPDATING",
+      "buildIdPresent": false,
+      "age": "47929"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/",
+      "iteration": 1,
+      "status": 200,
+      "cache": "UPDATING",
+      "buildIdPresent": false,
+      "age": "29000"
+    },
+    {
+      "url": "https://network.madabase.com/",
+      "iteration": 1,
+      "status": 200,
+      "cache": "UPDATING",
+      "buildIdPresent": false,
+      "age": "43892"
+    },
+    {
+      "url": "https://pets.madabase.com/",
+      "iteration": 1,
+      "status": 200,
+      "cache": "MISS",
+      "buildIdPresent": true,
+      "age": null
+    },
+    {
+      "url": "https://smarthome.madabase.com/",
+      "iteration": 1,
+      "status": 200,
+      "cache": "HIT",
+      "buildIdPresent": false,
+      "age": "2402"
+    },
+    {
+      "url": "https://network.madabase.com/best/tp-link-deco-be67-vs-be63",
+      "iteration": 2,
+      "status": 200,
+      "cache": "HIT",
+      "buildIdPresent": true,
+      "age": "389"
+    },
+    {
+      "url": "https://network.madabase.com/reviews/tp-link-deco-be67-wifi-7-mesh",
+      "iteration": 2,
+      "status": 200,
+      "cache": "HIT",
+      "buildIdPresent": true,
+      "age": "13"
+    },
+    {
+      "url": "https://baby.madabase.com/",
+      "iteration": 2,
+      "status": 200,
+      "cache": "HIT",
+      "buildIdPresent": true,
+      "age": "13"
+    },
+    {
+      "url": "https://homeoffice.madabase.com/",
+      "iteration": 2,
+      "status": 200,
+      "cache": "HIT",
+      "buildIdPresent": true,
+      "age": "13"
+    },
+    {
+      "url": "https://network.madabase.com/",
+      "iteration": 2,
+      "status": 200,
+      "cache": "HIT",
+      "buildIdPresent": true,
+      "age": "14"
+    },
+    {
+      "url": "https://pets.madabase.com/",
+      "iteration": 2,
+      "status": 200,
+      "cache": "HIT",
+      "buildIdPresent": true,
+      "age": "15"
+    },
+    {
+      "url": "https://smarthome.madabase.com/",
+      "iteration": 2,
+      "status": 200,
+      "cache": "HIT",
+      "buildIdPresent": false,
+      "age": "2417"
+    }
+  ]
+}

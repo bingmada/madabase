@@ -1,5 +1,5 @@
 {
-  "status": "local_validated_pending_publication",
+  "status": "published_and_publicly_verified",
   "sourceBaseline": "ec9b2bcc9e42a9ab0a6030bc2821f52b6cebe2a8",
   "buildId": "5Vf8z-P7gRr0YnuHlTYg_",
   "account": {
@@ -26,13 +26,12 @@
     "visiblePageBodiesUnchanged": 5
   },
   "scope": [
-    "Affiliate runtime only",
+    "Affiliate runtime update across five active affiliate sites",
     "US Amazon links and US fallback links on international editions",
     "No merchant clicks or API sync",
-    "Main service and unrelated dirty work excluded"
+    "Owner-approved restart of original Main process; unrelated dirty work excluded"
   ],
   "generalConversionAudit": "The broad checker also reports layout-policy findings outside this attribution migration; these are not counted as passed. Eight real legacy-tag guide paths found by that checker were fixed and the focused 5320-page attribution verification passed.",
-  "productionRevisionUnchanged": "ec9b2bcc9e42a9ab0a6030bc2821f52b6cebe2a8",
   "preparedMigrationRevision": "44f38fa795bfc39e678ecaf2b573ebff7fdc5a9c",
   "reviewEvidence": "apps/affiliate/reports/search-impact-2026-11-23/assessment.json",
   "ownerRequestedHoldOn": "2026-11-23",
@@ -43,5 +42,37 @@
     "unindexedGuidesRetained": 3,
     "sitemapDatesChangedOnlyForMetadataPages": true
   },
-  "mainMaintenanceApproval": "not_granted_do_not_use_allow_main_restart"
+  "mainMaintenanceApproval": "explicit_owner_approval_received_2026-11-23",
+  "productionRevision": "1e279224bf0060c3d3d012a0c19c88208598e88c",
+  "preparedPublicationRevision": "1e279224bf0060c3d3d012a0c19c88208598e88c",
+  "mainMaintenanceOutcome": "Original Main runtime restarted and active; Main code, unit and working directory unchanged.",
+  "publicValidation": {
+    "scopedSeoPages": 5,
+    "scopedSeoFailures": 0,
+    "renderedPages": 5320,
+    "amazonLinks": 5686,
+    "wrongTagsAsinsOrStaleBuilds": 0,
+    "cacheValidationRequests": 14,
+    "cacheFailures": 0,
+    "repeatRequestsAllHitNewBuild": true,
+    "googleLiveTests": 3,
+    "googleRecrawlReceipts": 3,
+    "indexNowUrls": 2,
+    "indexNowStatus": 200
+  },
+  "cacheException": {
+    "prefix": "smarthome.madabase.com/",
+    "explicitOwnerApprovalReceived": true,
+    "outcome": "purge_success_and_plain_homepage_new_build_then_HIT"
+  },
+  "originPublishedAtAsiaShanghai": "2026-11-23T20:05:51.866164+08:00",
+  "evidence": [
+    "origin-receipt.json",
+    "final-health.json",
+    "public-attribution.json",
+    "public-seo-pages.json",
+    "cache-validation.json",
+    "search-submission-receipt.json",
+    "publication-receipt.md"
+  ]
 }
