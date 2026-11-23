@@ -40,6 +40,7 @@ def main():
         request = urllib.request.Request(request_url, headers={
             "Host": source.netloc, "X-Forwarded-Host": source.netloc,
             "X-Forwarded-Proto": "https", "User-Agent": "Madabase attribution QA/1.0",
+            "Accept": "text/html,application/xhtml+xml",
         })
         for attempt in range(2):
             try:

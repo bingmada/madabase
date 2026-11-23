@@ -2,6 +2,7 @@ import { siteGuides, siteProducts, siteRoundups } from "./content";
 import { focusedSearchAnswer } from "./focused-content-recovery";
 import { reviewedGuideContent } from "./reviewed-guide-content";
 import snippetReviews from "../config/search-snippet-reviews.json";
+import { effectiveContentUpdatedAt } from "./content-updated-at";
 import { portfolioRankingOpportunities, portfolioRankingRefreshAt } from "./portfolio-ranking-opportunities";
 import type { SiteKey } from "./types";
 
@@ -15,6 +16,7 @@ export type SearchOpportunity = {
   answer: string;
   updatedAt: string;
   metaDescription?: string;
+  metadataUpdatedAt?: string;
   preferredPaths?: string[];
 };
 
@@ -38,6 +40,8 @@ export const searchOpportunities: SearchOpportunity[] = [
     kind: "product",
     slug: "tp-link-deco-be67-wifi-7-mesh",
     query: "Is Deco BE67 worth buying instead of BE63 or BE85?",
+    metaDescription: "Compare Deco BE67's 10GbE port and wired backhaul with BE63 and BE85. Check internet speed, wired devices and mesh layout before choosing.",
+    metadataUpdatedAt: "November 23, 2026",
     answer: "Choose BE67 when a 10GbE WAN/LAN path and faster wired backhaul will be used now. BE63 is usually the better value for a 2.5GbE home, while BE85 makes sense only when its extra radio and port capacity solve a measured bottleneck.",
     updatedAt,
     preferredPaths: ["/guides/deco-be63-vs-be67-vs-be85-buying-guide", "/best/deco-be25-vs-be67"],
@@ -65,6 +69,8 @@ export const searchOpportunities: SearchOpportunity[] = [
     kind: "roundup",
     slug: "tp-link-deco-be67-vs-be63",
     query: "Deco BE63 or BE67: which Ethernet ports are more useful?",
+    metaDescription: "Deco BE63 has four 2.5GbE ports per node; BE67 adds one 10GbE port. Compare port counts, wired backhaul and which fits your network.",
+    metadataUpdatedAt: "November 23, 2026",
     answer: "Choose BE63 for several 2.5GbE devices because every node has four 2.5GbE ports. Choose BE67 when one 10GbE connection per node serves a real WAN, NAS, workstation, switch, or backhaul path; its other ports are one 2.5GbE and one 1GbE, so it is not a universal port-count upgrade.",
     updatedAt: decoClusterUpdatedAt,
     preferredPaths: ["/reviews/tp-link-deco-be63-wifi-7-mesh", "/reviews/tp-link-deco-be67-wifi-7-mesh", "/guides/deco-be67-10gbe-network-checklist"],
@@ -958,7 +964,10 @@ export function reviewedSearchDescription(site: SiteKey, kind: SearchOpportunity
 }
 
 export function searchOpportunityUpdatedAt(site: SiteKey, kind: SearchOpportunityKind, slug: string) {
-  return findSearchOpportunity(site, kind, slug) ? portfolioRankingRefreshAt : undefined;
+  const opportunity = findSearchOpportunity(site, kind, slug);
+  // Metadata edits update the sitemap without presenting unchanged article
+  // content or merchant evidence as newly reviewed.
+  return opportunity ? effectiveContentUpdatedAt(portfolioRankingRefreshAt, opportunity.metadataUpdatedAt) : undefined;
 }
 
 export function searchOpportunityMetaDescription(opportunity?: SearchOpportunity, fallback?: string) {

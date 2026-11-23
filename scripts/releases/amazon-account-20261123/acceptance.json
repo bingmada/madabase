@@ -1,7 +1,7 @@
 {
-  "status": "local_validation_passed_pending_release",
+  "status": "local_validated_pending_publication",
   "sourceBaseline": "ec9b2bcc9e42a9ab0a6030bc2821f52b6cebe2a8",
-  "buildId": "qjeTxD5phcSsM0xBhmS58",
+  "buildId": "5Vf8z-P7gRr0YnuHlTYg_",
   "account": {
     "storeId": "madabase-20",
     "trackingIdsVerifiedInAssociatesCentral": true,
@@ -16,12 +16,14 @@
     "wrongTagsOrAsins": 0,
     "oldSnapshotsRejected": true,
     "oldEnvironmentOverridesIgnored": true,
-    "deploymentFailureTests": 18,
+    "deploymentFailureTests": 23,
     "build": "passed",
     "lint": {
       "errors": 0,
       "existingWarnings": 10
-    }
+    },
+    "scopedSeoPages": 5,
+    "visiblePageBodiesUnchanged": 5
   },
   "scope": [
     "Affiliate runtime only",
@@ -29,5 +31,17 @@
     "No merchant clicks or API sync",
     "Main service and unrelated dirty work excluded"
   ],
-  "generalConversionAudit": "The broad checker also reports layout-policy findings outside this attribution migration; these are not counted as passed. Eight real legacy-tag guide paths found by that checker were fixed and the focused 5320-page attribution verification passed."
+  "generalConversionAudit": "The broad checker also reports layout-policy findings outside this attribution migration; these are not counted as passed. Eight real legacy-tag guide paths found by that checker were fixed and the focused 5320-page attribution verification passed.",
+  "productionRevisionUnchanged": "ec9b2bcc9e42a9ab0a6030bc2821f52b6cebe2a8",
+  "preparedMigrationRevision": "44f38fa795bfc39e678ecaf2b573ebff7fdc5a9c",
+  "reviewEvidence": "apps/affiliate/reports/search-impact-2026-11-23/assessment.json",
+  "ownerRequestedHoldOn": "2026-11-23",
+  "ownerResumedPublicationOn": "2026-11-23",
+  "seoFollowup": {
+    "metadataPages": 2,
+    "bodyAnswersPreserved": 118,
+    "unindexedGuidesRetained": 3,
+    "sitemapDatesChangedOnlyForMetadataPages": true
+  },
+  "mainMaintenanceApproval": "not_granted_do_not_use_allow_main_restart"
 }

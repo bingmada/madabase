@@ -161,6 +161,11 @@ def recover_locked():
  except Exception as error:errors.append(str(error))
  try:run(['systemctl','daemon-reload'])
  except Exception as error:errors.append(str(error))
+ if record.get('mainRestartAuthorized'):
+  try:
+   if prop('main','WorkingDirectory')!=record['unchangedMain']['workingDirectory']:raise RuntimeError('Main directory drift during recovery')
+   run(['systemctl','start',unit('main')]);ready('main')
+  except Exception as error:errors.append(str(error))
  for app in ['affiliate']:
   try:run(['systemctl','start',unit(app)]);ready(app)
   except Exception as error:errors.append(str(error))
@@ -178,30 +183,36 @@ def rollback():
    record['status']='manual-rollback-requested';save('transaction.json',record)
   recover_locked()
 
-def activate():
+def activate(allow_main_restart=False):
  with (STATE/'activation.lock').open('a') as lock:
   fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
   record=load('transaction.json')
   if record['status']!='prepared':raise RuntimeError('Expected prepared transaction')
   if load('retirement-infra.json')['status']!='retired_origin_verified':raise RuntimeError('Retired proxy/services gate not passed')
-  apps=['affiliate']
+  apps=['main','affiliate'] if allow_main_restart else ['affiliate']
   for retired in ['test','tools','wellness']:
    if prop(retired,'ActiveState')=='active':raise RuntimeError('Retired service still active '+retired)
   for app in ['affiliate']:
    if prop(app,'WorkingDirectory')!=record['apps'][app]['old']:raise RuntimeError('Production changed after prepare')
+  if prop('main','WorkingDirectory')!=record['unchangedMain']['workingDirectory'] or prop('main','MainPID')!=record['unchangedMain']['pid']:raise RuntimeError('Main baseline changed after prepare')
   measured=forecast(apps)
   run(['systemd-run','--unit='+WATCHDOG,'--on-active=240s','--timer-property=AccuracySec=1s','--property=RuntimeMaxSec=90','--property=MemoryMax=128M','--property=MemorySwapMax=0','--property=Restart=no','/usr/bin/python3',str(Path(__file__).resolve()),'recover'])
   def interrupted(signum,frame):raise RuntimeError('Release interrupted')
   signal.signal(signal.SIGTERM,interrupted);signal.signal(signal.SIGINT,interrupted)
   try:
-   record.update(status='switching',startedAt=time.time(),forecast=measured,testPaused=False,testRestored=False,retiredServicesLeftStopped=True);save('transaction.json',record)
-   for app in apps:run(['systemctl','stop',unit(app)])
+   record.update(status='switching',startedAt=time.time(),forecast=measured,testPaused=False,testRestored=False,retiredServicesLeftStopped=True,mainRestartAuthorized=allow_main_restart);save('transaction.json',record)
+   for app in (['affiliate','main'] if allow_main_restart else ['affiliate']):run(['systemctl','stop',unit(app)])
    record['gates']={};record['verification']={}
+   if allow_main_restart:
+    record['gates']['main']=gate();save('transaction.json',record)
+    run(['systemctl','start',unit('main')]);ready('main')
+    record['mainRestoredAt']=time.time();save('transaction.json',record)
    for app in ['affiliate']:
     record['gates'][app]=gate();save('transaction.json',record)
     install(app,'after');run(['systemctl','daemon-reload']);run(['systemctl','start',unit(app)]);ready(app)
     record['verification'][app]=verify(app);save('transaction.json',record)
-   if prop('main','WorkingDirectory')!=record['unchangedMain']['workingDirectory'] or prop('main','MainPID')!=record['unchangedMain']['pid']:raise RuntimeError('Unrelated Main service changed')
+   if prop('main','WorkingDirectory')!=record['unchangedMain']['workingDirectory'] or (not allow_main_restart and prop('main','MainPID')!=record['unchangedMain']['pid']):raise RuntimeError('Unrelated Main service changed')
+   if allow_main_restart and prop('main','ActiveState')!='active':raise RuntimeError('Main was not restored')
    switch_current_pointers(record)
    record.update(status='origin-verified',completedAt=time.time(),currentPointersVerified=True);save('transaction.json',record);print(json.dumps(record),flush=True)
   except BaseException:
@@ -209,8 +220,8 @@ def activate():
   finally:
    if load('transaction.json')['status'] in ['origin-verified','rolled-back']:subprocess.run(['systemctl','stop',WATCHDOG+'.timer'],capture_output=True,timeout=10)
 if __name__=='__main__':
- parser=argparse.ArgumentParser();parser.add_argument('action',choices=['prepare','activate','recover','rollback']);parser.add_argument('--revision');args=parser.parse_args()
+ parser=argparse.ArgumentParser();parser.add_argument('action',choices=['prepare','activate','recover','rollback']);parser.add_argument('--revision');parser.add_argument('--allow-main-restart',action='store_true',help='Use only with owner approval for this release maintenance window. Main code and unit are unchanged.');args=parser.parse_args()
  if args.action=='prepare':prepare(args.revision)
- elif args.action=='activate':activate()
+ elif args.action=='activate':activate(args.allow_main_restart)
  elif args.action=='rollback':rollback()
  else:recover()

@@ -651,6 +651,22 @@
       "markers": [
         "tag=madabasepets-20"
       ]
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/reviews/tp-link-deco-be67-wifi-7-mesh",
+      "canonical": "https://network.madabase.com/reviews/tp-link-deco-be67-wifi-7-mesh",
+      "markers": [
+        "Compare Deco BE67's 10GbE port and wired backhaul with BE63 and BE85. Check internet speed, wired devices and mesh layout before choosing."
+      ]
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/best/tp-link-deco-be67-vs-be63",
+      "canonical": "https://network.madabase.com/best/tp-link-deco-be67-vs-be63",
+      "markers": [
+        "Deco BE63 has four 2.5GbE ports per node; BE67 adds one 10GbE port. Compare port counts, wired backhaul and which fits your network."
+      ]
     }
   ]
 }

@@ -75,6 +75,31 @@ class ReleaseFailureTests(unittest.TestCase):
   release.activate()
   self.assertFalse(any('madabase-main.service' in c for c in self.commands))
   self.assertEqual(self.paths['main'],'old-main')
+ def test_explicit_main_maintenance_keeps_original_code_and_unit(self):
+  release.activate(allow_main_restart=True)
+  self.assertTrue(self.record()['mainRestartAuthorized'])
+  self.assertEqual(self.paths['main'],'old-main')
+  self.assertNotIn('main',self.installed)
+  release.forecast.assert_called_once_with(['main','affiliate'])
+  self.assertIn(['systemctl','stop','madabase-main.service'],self.commands)
+  self.assertIn(['systemctl','start','madabase-main.service'],self.commands)
+ def test_maintenance_forecast_failure_still_stops_nothing(self):
+  release.forecast.side_effect=RuntimeError('insufficient forecast')
+  with self.assertRaises(RuntimeError):release.activate(allow_main_restart=True)
+  self.assertFalse(self.commands)
+ def test_maintenance_gate_failure_restores_main_and_affiliate(self):
+  release.gate.side_effect=RuntimeError('actual capacity')
+  with self.assertRaises(RuntimeError):release.activate(allow_main_restart=True)
+  self.assertRestored()
+  self.assertIn('madabase-main.service',self.started)
+ def test_maintenance_restores_main_before_starting_candidate(self):
+  release.activate(allow_main_restart=True)
+  self.assertLess(self.started.index('madabase-main.service'),self.started.index('madabase-affiliate.service'))
+ def test_maintenance_acceptance_failure_recovers_both(self):
+  release.verify.side_effect=RuntimeError('acceptance failure')
+  with self.assertRaises(RuntimeError):release.activate(allow_main_restart=True)
+  self.assertRestored()
+  self.assertIn('madabase-main.service',self.started)
  def test_late_watchdog_leaves_verified_release_running(self):
   release.activate();before=list(self.commands)
   release.recover()
