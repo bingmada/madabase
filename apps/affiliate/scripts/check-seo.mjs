@@ -5,6 +5,8 @@ import ts from "typescript";
 import { amazonFamilyTitleMeetsPolicy } from "./amazon-family-semantic-policy.mjs";
 import { loadAffiliateTypescript } from "./lib/load-affiliate-typescript.mjs";
 
+const { storeId } = JSON.parse(fs.readFileSync(new URL("../config/amazon-associates.json", import.meta.url), "utf8"));
+
 const workspaceDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const libDir = path.join(workspaceDir, "lib");
 const publicDir = path.join(workspaceDir, "public");
@@ -117,7 +119,7 @@ function productFactoryOfferUrls(props) {
   const affiliateUrl = stringValue(props.get("affiliateUrl"));
   const asin = stringValue(props.get("asin"));
   if (affiliateUrl?.startsWith("https://")) return [affiliateUrl];
-  if (asin) return [`https://www.amazon.com/dp/${asin}?tag=bingmada-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl`];
+  if (asin) return [`https://www.amazon.com/dp/${asin}?tag=${storeId}&linkCode=ll2&language=en_US&ref_=as_li_ss_tl`];
   return [];
 }
 

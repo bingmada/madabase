@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import fs from "node:fs";
+const { trackingIds } = JSON.parse(fs.readFileSync(new URL("../config/amazon-associates.json", import.meta.url), "utf8"));
 import { loadAffiliateTypescript as load } from "./lib/load-affiliate-typescript.mjs";
 const {miniPcProfiles}=load("../../lib/tiny-models.ts");
 const {compatibilitySources}=load("../../lib/compatibility-data.ts");
@@ -48,7 +49,7 @@ check("M70q Gen2 search resolves its own generation",()=>assert.equal(searchCont
 check("No new article canonical is created by the model expansion",()=>{assert.equal(upgradeGuides.length,3);assert.equal(miniPcProfiles.length,8);});
 check("All catalog observations belong to the named model/manual and known roles",()=>{for(const row of fruObservations){const m=miniPcProfiles.find(x=>x.id===row.model);assert.ok(m.machineTypes.includes(row.machineType));assert.ok(new URL(row.url).hostname==="pcsupport.lenovo.com");assert.ok(["sata-cable","carrier","riser","retainer"].includes(row.role));}});
 check("Every documented profile resolves specification and maintenance evidence",()=>{for(const m of miniPcProfiles)for(const id of [m.id,`${m.id}-hmm`])assert.ok(compatibilitySources.some(s=>s.id===id));});
-check("Exact kit tracking, wrong-site and unapproved-merchant guards",()=>{const url=new URL(componentAffiliateOffer(kit).url);assert.equal(url.pathname,"/dp/B0F2DYGPDQ");assert.equal(url.searchParams.get("tag"),"madaoffice-20");const active=Date.now()>=Date.parse(kit.verifiedAt)&&Date.now()<Date.parse(kit.expiresAt);assert.equal(isPublishedCommerceClick("homeoffice",kit.slug,"Amazon US"),active);assert.equal(isPublishedCommerceClick("network",kit.slug,"Amazon US"),false);assert.equal(isPublishedCommerceClick("homeoffice",kit.slug,"eBay"),false);});
+check("Exact kit tracking, wrong-site and unapproved-merchant guards",()=>{const url=new URL(componentAffiliateOffer(kit).url);assert.equal(url.pathname,"/dp/B0F2DYGPDQ");assert.equal(url.searchParams.get("tag"),trackingIds.homeoffice);const active=Date.now()>=Date.parse(kit.verifiedAt)&&Date.now()<Date.parse(kit.expiresAt);assert.equal(isPublishedCommerceClick("homeoffice",kit.slug,"Amazon US"),active);assert.equal(isPublishedCommerceClick("network",kit.slug,"Amazon US"),false);assert.equal(isPublishedCommerceClick("homeoffice",kit.slug,"eBay"),false);});
 const output={passed:true,cases:rows.length,rows,catalogObservations:fruObservations.length,machineTypes:[...new Set(fruObservations.map(x=>x.machineType))]};
 fs.writeFileSync(new URL("../reports/tiny-parts-2026-10-19/decision-cases.json",import.meta.url),JSON.stringify(output,null,2)+"\n");
 console.log(JSON.stringify(output,null,2));

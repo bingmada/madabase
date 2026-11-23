@@ -1,5 +1,6 @@
 import { getAffiliatePrisma, hasDatabaseUrl } from "./db";
 import type { AmazonMarketKey, SiteKey } from "./types";
+import { isCurrentAmazonListingUrl } from "./affiliate-tracking";
 
 export type FreshAmazonCreatorsListing = {
   asin: string;
@@ -31,21 +32,6 @@ const marketplaceHosts: Record<AmazonMarketKey, string> = {
   nl: "www.amazon.nl",
 };
 
-function validVendedUrl(value: string | null, market: AmazonMarketKey): value is string {
-  if (!value) return false;
-  try {
-    const url = new URL(value);
-    const expectedHost = marketplaceHosts[market];
-    return (
-      url.protocol === "https:"
-      && (url.hostname === expectedHost || url.hostname === expectedHost.replace(/^www\./, ""))
-      && Boolean(url.searchParams.get("tag"))
-    );
-  } catch {
-    return false;
-  }
-}
-
 export async function getFreshAmazonCreatorsListing(
   site: SiteKey,
   productSlug: string,
@@ -72,7 +58,7 @@ export async function getFreshAmazonCreatorsListing(
     const row = rows[0];
     if (!row || row.market !== market || row.marketplace !== marketplaceHosts[market]) return null;
     const detailPageUrl = row.detailPageUrl;
-    if (!validVendedUrl(detailPageUrl, market)) return null;
+    if (!isCurrentAmazonListingUrl(detailPageUrl, market, site)) return null;
 
     return {
       asin: row.asin,

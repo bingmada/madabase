@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import { loadAffiliateTypescript } from "./lib/load-affiliate-typescript.mjs";
+const { amazonTrackingIds: trackingIds } = loadAffiliateTypescript("../../lib/affiliate-tracking.ts");
 const { compareDocks, dockParts, networkDecision } = loadAffiliateTypescript("../../lib/setup-decisions.ts");
 const { checkDock, checkArm, planMiniPc } = loadAffiliateTypescript("../../lib/compatibility-engine.ts");
 const { miniPcParts, costSummary } = loadAffiliateTypescript("../../lib/upgrade-parts.ts");
@@ -60,7 +61,7 @@ for(const model of ["m720q","m920q","m920x"])for(const task of ["ram","sata","nv
 for(const offer of upgradeComponentOffers) {
   assert.equal(activeComponentOffers(Date.parse(offer.expiresAt)).some(x=>x.asin===offer.asin),false);
   const url = new URL(componentAffiliateOffer(offer).url);
-  assert.equal(url.pathname,`/dp/${offer.asin}`);assert.equal(url.searchParams.get("tag"),"madaoffice-20");
+  assert.equal(url.pathname,`/dp/${offer.asin}`);assert.equal(url.searchParams.get("tag"),trackingIds.homeoffice);
   if(activeComponentOffers().some(x=>x.asin===offer.asin)){assert.equal(isPublishedCommerceClick("homeoffice",offer.slug,"Amazon US"),true);assert.equal(isPublishedCommerceClick("network",offer.slug,"Amazon US"),false);}
 }
 console.log(JSON.stringify({passed:true,userDecisionCases:cases,partsEvidence:"All required rows resolve to a named source",componentOffers:upgradeComponentOffers.map(x=>({asin:x.asin,exactIdentityAndExpiry:true})),costUnknownsAndTaskClassification:true},null,2));

@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import fs from "node:fs";
+const { trackingIds } = JSON.parse(fs.readFileSync(new URL("../config/amazon-associates.json", import.meta.url), "utf8"));
 import { loadAffiliateTypescript } from "./lib/load-affiliate-typescript.mjs";
 const { checkDock, checkArm, planMiniPc, planEthernet } = loadAffiliateTypescript("../../lib/compatibility-engine.ts");
 const { compatibilitySources, dockProfiles, macProfiles, miniPcProfiles } = loadAffiliateTypescript("../../lib/compatibility-data.ts");
@@ -115,7 +116,7 @@ assert.equal(activeUpgradeOffers(Date.parse(verifiedOffer.verifiedAt)).length, 1
 assert.equal(activeUpgradeOffers(Date.parse(verifiedOffer.expiresAt)).length, 0, "Expired manually verified offers must close");
 const offerUrl = new URL(upgradeAffiliateOffer(verifiedOffer).url);
 assert.equal(offerUrl.pathname, `/dp/${verifiedOffer.asin}`);
-assert.equal(offerUrl.searchParams.get("tag"), "madaoffice-20");
+assert.equal(offerUrl.searchParams.get("tag"), trackingIds.homeoffice);
 if (activeUpgradeOffers().length) {
   assert.equal(isPublishedCommerceClick("homeoffice", verifiedOffer.slug, "Amazon US"), true);
   assert.equal(isPublishedCommerceClick("network", verifiedOffer.slug, "Amazon US"), false);

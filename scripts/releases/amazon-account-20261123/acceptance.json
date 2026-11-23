@@ -1,0 +1,33 @@
+{
+  "status": "local_validation_passed_pending_release",
+  "sourceBaseline": "ec9b2bcc9e42a9ab0a6030bc2821f52b6cebe2a8",
+  "buildId": "qjeTxD5phcSsM0xBhmS58",
+  "account": {
+    "storeId": "madabase-20",
+    "trackingIdsVerifiedInAssociatesCentral": true,
+    "finalProgramReview": "pending_sales_and_Amazon_review",
+    "oldAccountCommissions": "separate_support_case_unresolved"
+  },
+  "validation": {
+    "uniqueAmazonAsins": 455,
+    "publishedAmazonOffers": 458,
+    "renderedPages": 5320,
+    "renderedAmazonLinks": 5686,
+    "wrongTagsOrAsins": 0,
+    "oldSnapshotsRejected": true,
+    "oldEnvironmentOverridesIgnored": true,
+    "deploymentFailureTests": 18,
+    "build": "passed",
+    "lint": {
+      "errors": 0,
+      "existingWarnings": 10
+    }
+  },
+  "scope": [
+    "Affiliate runtime only",
+    "US Amazon links and US fallback links on international editions",
+    "No merchant clicks or API sync",
+    "Main service and unrelated dirty work excluded"
+  ],
+  "generalConversionAudit": "The broad checker also reports layout-policy findings outside this attribution migration; these are not counted as passed. Eight real legacy-tag guide paths found by that checker were fixed and the focused 5320-page attribution verification passed."
+}

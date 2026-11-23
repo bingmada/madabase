@@ -1,0 +1,10 @@
+{
+  "storeId": "madabase-20",
+  "trackingIds": {
+    "network": "madabasenet-20",
+    "smarthome": "madabasesmart-20",
+    "homeoffice": "madabaseoffice-20",
+    "baby": "madabasebaby-20",
+    "pet": "madabasepets-20"
+  }
+}

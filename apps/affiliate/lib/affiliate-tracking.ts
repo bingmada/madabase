@@ -1,15 +1,27 @@
-import type { AffiliateOffer, Product, SiteKey } from "./types";
+import type { AffiliateOffer, AmazonMarketKey, Product, SiteKey } from "./types";
 import { findAmazonOfferBlock } from "./amazon-offer-blocks";
 import { findAuthorizedCjProductOffer } from "./cj-offers";
 import { effectiveContentUpdatedAt } from "./content-updated-at";
+import amazonAssociates from "../config/amazon-associates.json";
 
-export const amazonTrackingIds: Partial<Record<SiteKey, string>> = {
-  network: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_NETWORK ?? "madanetwork-20",
-  smarthome: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_SMARTHOME ?? "madasmart-20",
-  homeoffice: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_HOMEOFFICE ?? "madaoffice-20",
-  baby: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_BABY ?? "madababy-20",
-  pet: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_PET ?? "madapets-20",
-};
+// These public IDs are registered under the current Associates account. Keep
+// attribution independent of stale build/server environment from the old account.
+export const amazonTrackingIds: Partial<Record<SiteKey, string>> = amazonAssociates.trackingIds;
+
+export function isCurrentAmazonListingUrl(value: string | null, market: AmazonMarketKey, site: SiteKey): value is string {
+  // Only US IDs have been registered for this account. Reject former-account
+  // snapshots rather than altering an API-vended URL after hydration.
+  const trackingId = market === "us" ? amazonTrackingIds[site] : undefined;
+  if (!value || !trackingId) return false;
+  try {
+    const url = new URL(value);
+    return url.protocol === "https:"
+      && (url.hostname === "www.amazon.com" || url.hostname === "amazon.com")
+      && url.searchParams.get("tag") === trackingId;
+  } catch {
+    return false;
+  }
+}
 
 export function amazonAsinAffiliateUrl(site: SiteKey, asin: string) {
   const normalizedAsin = asin.trim().toUpperCase();

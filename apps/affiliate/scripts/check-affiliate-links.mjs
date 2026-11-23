@@ -9,14 +9,9 @@ const amazonOfferBlockStatuses = ["identity-drift", "unavailable", "documentatio
 
 const root = path.resolve(new URL("../../..", import.meta.url).pathname);
 const offerBlockPath = path.join(root, "apps/affiliate/config/amazon-offer-blocks.json");
-const partnerTag = process.env.AMAZON_AFFILIATE_TAG ?? "bingmada-20";
-const siteTrackingIds = {
-  network: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_NETWORK ?? "madanetwork-20",
-  smarthome: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_SMARTHOME ?? "madasmart-20",
-  homeoffice: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_HOMEOFFICE ?? "madaoffice-20",
-  baby: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_BABY ?? "madababy-20",
-  pet: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_PET ?? "madapets-20",
-};
+const { storeId: partnerTag, trackingIds: siteTrackingIds } = JSON.parse(
+  fs.readFileSync(new URL("../config/amazon-associates.json", import.meta.url), "utf8"),
+);
 const inventoryOnly = process.argv.includes("--inventory");
 const siteArgument = process.argv.find((argument) =>
   argument.startsWith("--site="),
@@ -98,23 +93,8 @@ function expectedTag(record) {
 }
 
 function runtimeAffiliateUrl(record) {
-  const source = new URL(record.url);
-  const tag = expectedTag(record);
-
-  if (isAmazonHost(source.hostname)) {
-    source.searchParams.set("tag", tag);
-    return source.toString();
-  }
-
-  if (source.hostname === "amzn.to" && record.expectedAsin) {
-    const direct = new URL(`/dp/${record.expectedAsin}`, "https://www.amazon.com");
-    direct.searchParams.set("tag", tag);
-    direct.searchParams.set("linkCode", "ll2");
-    direct.searchParams.set("language", "en_US");
-    direct.searchParams.set("ref_", "as_li_ss_tl");
-    return direct.toString();
-  }
-
+  // The inventory already comes from the published runtime. Do not repair its
+  // attribution here: that would hide an old-account link in the actual pages.
   return record.url;
 }
 
@@ -278,7 +258,7 @@ async function main() {
     failed: failed.length,
     validationScope: "url-structure-and-attribution",
     liveProductChecks: { verified: 0, notChecked: results.length },
-    note: "This automated check simulates runtime site-tag rewriting, validates short-link resolution, Amazon destination, the expected site tracking ID, and known ASINs. Live product availability and Associates exclusion status still require a signed-in Amazon/SiteStripe check.",
+    note: "This automated check validates the published runtime URLs, short-link resolution, Amazon destination, the current account site tracking ID, and known ASINs. Live product availability and Associates exclusion status still require a signed-in Amazon/SiteStripe check.",
     results,
   };
 

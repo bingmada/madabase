@@ -37,13 +37,9 @@ const siteHosts = {
   baby: "baby.madabase.com",
   pet: "pets.madabase.com",
 };
-const siteTrackingIds = {
-  network: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_NETWORK ?? "madanetwork-20",
-  smarthome: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_SMARTHOME ?? "madasmart-20",
-  homeoffice: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_HOMEOFFICE ?? "madaoffice-20",
-  baby: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_BABY ?? "madababy-20",
-  pet: process.env.NEXT_PUBLIC_AMAZON_TRACKING_ID_PET ?? "madapets-20",
-};
+const { trackingIds: siteTrackingIds } = JSON.parse(
+  fs.readFileSync(new URL("../config/amazon-associates.json", import.meta.url), "utf8"),
+);
 const requestedSites = siteArgument
   ? siteArgument.slice("--site=".length).split(",").flatMap((site) => site === "amazon" ? Object.keys(siteHosts) : site)
   : Object.keys(siteHosts);

@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import fs from "node:fs";
+const { trackingIds } = JSON.parse(fs.readFileSync(new URL("../config/amazon-associates.json", import.meta.url), "utf8"));
 
 const origin = process.env.REPAIR_CHECK_ORIGIN ?? "http://127.0.0.1:3121";
 const cases = [
@@ -25,15 +26,15 @@ for (const [site, path, text] of cases) {
   const hrefs = [...html.matchAll(/<a\b[^>]*href="([^"]+)"/g)].map(match => match[1].replaceAll("&amp;", "&"));
   let merchantRepair = true;
   if (path === "/reviews/branch-ergonomic-chair" || path === "/reviews/hon-ignition-2-0-chair") {
-    merchantRepair = hrefs.some(href => href.includes("/dp/B06Y3PGPR2") && href.includes("tag=madaoffice-20"))
+    merchantRepair = hrefs.some(href => href.includes("/dp/B06Y3PGPR2") && href.includes(`tag=${trackingIds.homeoffice}`))
       && hrefs.every(href => !href.includes("B07GNDDNMW") && !href.includes("B0GWGK4JFK") && !href.includes("amzn.to/4eWkGpe"));
     if (path === "/reviews/branch-ergonomic-chair") merchantRepair &&= html.includes("Different product") && html.includes("verified alternative");
   }
   if (path === "/reviews/anker-675-usb-c-docking-station") {
-    merchantRepair = hrefs.some(href => href.includes("/dp/B0BNZ4D72B") && href.includes("tag=madaoffice-20"));
+    merchantRepair = hrefs.some(href => href.includes("/dp/B0BNZ4D72B") && href.includes(`tag=${trackingIds.homeoffice}`));
   }
   if (path === "/reviews/grownsy-bottle-sterilizer-dryer") {
-    merchantRepair = hrefs.some(href => href.includes("/dp/B09HH7HSGV") && href.includes("tag=madababy-20"));
+    merchantRepair = hrefs.some(href => href.includes("/dp/B09HH7HSGV") && href.includes(`tag=${trackingIds.baby}`));
   }
   let qaGuardDelivered = false;
   for (const match of html.matchAll(/<script[^>]+src="([^\"]+)"/g)) {

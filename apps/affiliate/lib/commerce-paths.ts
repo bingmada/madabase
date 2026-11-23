@@ -322,15 +322,15 @@ export function findCommerceProduct(site: SiteKey, slug: string) {
 }
 
 function explicitGuideAlternative(site: SiteKey, guide: Guide) {
-  if (site === "baby" && ["ergobaby-omni-breeze-positions-by-age","ergobaby-omni-breeze-newborn-fit-checklist","ergobaby-omni-breeze-cleaning-guide","babybjorn-harmony-newborn-fit-checklist","baby-carrier-hot-weather-and-caregiver-fit-guide","newborn-carrier-vs-all-stage-carrier-guide","ergobaby-omni-breeze-forward-facing-age-guide","ergobaby-omni-breeze-vs-babybjorn-harmony-by-age"].includes(guide.slug)) return omniBreezeBloomsAlternative;
+  if (site === "baby" && ["ergobaby-omni-breeze-positions-by-age","ergobaby-omni-breeze-newborn-fit-checklist","ergobaby-omni-breeze-cleaning-guide","babybjorn-harmony-newborn-fit-checklist","baby-carrier-hot-weather-and-caregiver-fit-guide","newborn-carrier-vs-all-stage-carrier-guide","ergobaby-omni-breeze-forward-facing-age-guide","ergobaby-omni-breeze-vs-babybjorn-harmony-by-age"].includes(guide.slug)) return findCommerceProduct(site, omniBreezeBloomsAlternative.slug);
   if (site === "homeoffice" && guide.slug === "standing-desk-casters-stability-guide") {
-    return okinRollingDeskAlternative;
+    return findCommerceProduct(site, okinRollingDeskAlternative.slug);
   }
 }
 
 function explicitReviewAlternative(site: SiteKey, product: Product) {
   if (site === "homeoffice" && product.slug === "ergear-48x24-electric-standing-desk") {
-    return okinRollingDeskAlternative;
+    return findCommerceProduct(site, okinRollingDeskAlternative.slug);
   }
 }
 
@@ -339,7 +339,7 @@ function explicitRoundupAlternative(site: SiteKey, roundup: Roundup) {
     site === "homeoffice"
     && ["ergear-48x24-vs-flexispot-e7-mini", "best-standing-desks-for-small-spaces"].includes(roundup.slug)
   ) {
-    return okinRollingDeskAlternative;
+    return findCommerceProduct(site, okinRollingDeskAlternative.slug);
   }
 }
 
