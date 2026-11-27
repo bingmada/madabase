@@ -1,0 +1,638 @@
+{
+  "mode": "origin",
+  "buildId": "DJr2k013lGz0UB_T-GVbB",
+  "checked": 90,
+  "failed": 0,
+  "failures": [],
+  "results": [
+    {
+      "host": "smarthome.madabase.com",
+      "path": "/reviews/aqara-door-and-window-sensor-p2",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "smarthome.madabase.com",
+      "path": "/guides/apple-home-key-smart-lock-buying-guide",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "smarthome.madabase.com",
+      "path": "/best/aqara-fp300-vs-fp2",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "smarthome.madabase.com",
+      "path": "/categories/access",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/reviews/amazon-basics-monitor-arm",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/48-vs-55-inch-desk-guide",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/best/best-dual-monitor-docks-mac-windows",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/categories/desks",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/reviews/baby-brezza-smart-bottle-warmer",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/guides/adjustable-high-chairs-buying-guide",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/best/babybjorn-harmony-vs-ergobaby-omni-breeze",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/categories/feeding",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/reviews/catit-flower-cat-water-fountain",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/guides/air-purifier-pet-hair-dander-odor-guide",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/best/best-automatic-cat-feeders",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/categories/comfort",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/tools/diaper-usage-calculator",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/thinkcentre-m920q-upgrade-compatibility-guide",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/thinkcentre-m920x-upgrade-compatibility-guide",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/tools/desk-height-calculator",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/tools/pet-feeding-calculator",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/tools/pet-room-air-change-calculator",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "smarthome.madabase.com",
+      "path": "/tools/matter-thread-compatibility-checker",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/de-de/guides/thinkcentre-m920q-upgrade-compatibility-guide",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/reviews/grownsy-bottle-sterilizer-dryer",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/desktop-audio-interfaces-buying-guide",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/desktop-audio-interfaces-compatibility-and-fit-guide",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/desktop-audio-interfaces-ownership-cost-and-maintenance",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/desktop-audio-interfaces-setup-and-daily-workflow",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/desktop-audio-interfaces-vs-alternatives",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/best/logitech-litra-glow-vs-elgato-key-light-neo",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/dual-screen-portable-monitors-vs-alternatives",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/guides/ergobaby-omni-breeze-positions-by-age",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/guides/monitor-arm-clamp-reinforcement-guide",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/reviews/momcozy-mw05-portable-milk-warmer",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/reviews/ubbi-steel-diaper-pail",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/best/momcozy-purehug-vs-ergobaby-omni-breeze",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/best/ergear-48x24-vs-flexispot-e7-mini",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/reviews/jabra-speak2-40-usb-speakerphone",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/guides/potty-training-seats-buying-guide",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/en-gb/reviews/logitech-litra-glow",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/en-ca/reviews/logitech-litra-glow",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/de-de/reviews/logitech-litra-glow",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/nl-nl/reviews/logitech-litra-glow",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/compatibility/docks",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/compatibility/monitor-arms",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/categories/wifi",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/categories/wired",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/categories/backup",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/compatibility",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/compatibility/ethernet",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/tools/mesh-node-and-backhaul-planner",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/tools/wifi-coverage-estimator",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/best/best-mesh-wifi-for-apartments-and-homes",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/best/deco-be25-vs-be63",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/best/asus-zenwifi-bt6-vs-deco-be63",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/guides/router-placement-guide",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/guides/travel-router-vpn-guide",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/guides/usb-c-ethernet-adapters-vs-alternatives",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/guides/poe-switch-for-home-cameras-and-access-points-guide",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/reviews/tp-link-deco-be67-wifi-7-mesh",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/en-gb/reviews/tp-link-deco-be67-wifi-7-mesh",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/de-de/reviews/tp-link-deco-be67-wifi-7-mesh",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/guides/home-network-racks-vs-alternatives",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/guides/fiber-optic-power-meters-buying-guide",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/best/best-ups-for-router-and-modem",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/en-gb/guides/xfinity-gateway-bridge-mode-vs-own-router-guide",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/reviews/amazon-eero-6-mesh-wifi-system",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "smarthome.madabase.com",
+      "path": "/reviews/aqara-door-and-window-sensor-p2",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/reviews/amazon-basics-monitor-arm",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/reviews/baby-brezza-smart-bottle-warmer",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/reviews/catit-flower-cat-water-fountain",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/reviews/tp-link-deco-be67-wifi-7-mesh",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/best/tp-link-deco-be67-vs-be63",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/reviews/momcozy-deepclean-d8-bottle-washer",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/best/momcozy-deepclean-d8-vs-kleanpal-pro",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/reviews/momcozy-kleanpal-pro-baby-bottle-washer",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/sitemap.xml",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "network.madabase.com",
+      "path": "/sitemap.xml",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "smarthome.madabase.com",
+      "path": "/",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "smarthome.madabase.com",
+      "path": "/sitemap.xml",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "homeoffice.madabase.com",
+      "path": "/sitemap.xml",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "pets.madabase.com",
+      "path": "/sitemap.xml",
+      "status": 200,
+      "cache": null,
+      "errors": []
+    },
+    {
+      "host": "baby.madabase.com",
+      "path": "/images/affiliate/momcozy-d8-load-decision.svg",
+      "status": 200,
+      "errors": []
+    }
+  ]
+}

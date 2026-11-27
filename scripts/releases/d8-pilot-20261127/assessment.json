@@ -317,11 +317,22 @@
       "lastCrawl": "2026-11-04 12:51:18 PM",
       "canonical": "self",
       "causalLimit": "This crawl predates Nov 23 publication; no claim of a new post-release crawl."
+    },
+    "networkBackhaulGuide": {
+      "status": "indexed",
+      "lastCrawl": "2026-11-16 8:32:12 PM",
+      "canonical": "self"
+    },
+    "aqaraHomeAssistantGuide": {
+      "status": "crawled currently not indexed",
+      "lastCrawl": "2026-08-25 9:50:44 PM",
+      "storedCanonical": "None in the old crawl snapshot",
+      "limitation": "Old crawl does not establish a defect in the current live canonical; no canonical rewrite based on this snapshot."
     }
   },
   "publication": {
     "authorizedOn": "2026-11-27",
-    "status": "preparing",
+    "status": "ready_after_local_validation",
     "productionBaseline": "1e279224bf0060c3d3d012a0c19c88208598e88c",
     "mainCodeChange": false,
     "unrelatedDirtyFilesExcluded": true

@@ -21,3 +21,7 @@ The controller is the previously tested Affiliate-only release controller with i
 Purge only the exact changed Baby HTML paths and sitemap listed in `purge-prefixes.txt`, plus the exact Baby homepage in `purge-urls.txt`. New URLs need no purge. If a homepage needs a root-prefix purge, obtain the scope exception instead of widening the purge silently. Verify plain canonical URLs and a repeat cache response.
 
 After publication, request indexing for the two new URLs and changed guide, retaining successful receipts separately from actual indexing. Finish with the actual production commit/build, checks and any limitation; do not label local acceptance as publication.
+
+## Local acceptance
+
+The clean production archive passed all 90 scoped requests (79 critical pages, five homepages, five sitemaps and the diagram), with zero failures. Production-mode desktop/mobile checks passed; the 390px page has no whole-page overflow and the comparison table scrolls in its own container. 23 mocked failure/recovery scenarios passed. The runtime contains no environment files. These are preparation results; production activation and public cache acceptance are recorded separately.

@@ -1,0 +1,44 @@
+{
+  "status": "ready_to_publish",
+  "sourceRevision": "b048da597ba7eab5ecbb1368c315155ec7ad43ec",
+  "artifact": {
+    "buildId": "DJr2k013lGz0UB_T-GVbB",
+    "sha256": "8a9c83af42d928835485443a1d3d939903946a269d40f6ff2811ab12949576df",
+    "bytes": 59575587,
+    "distDir": ".next-release",
+    "archivePath": "apps/affiliate/.release/affiliate-runtime.tgz"
+  },
+  "build": "Node 20 clean archived source production build passed",
+  "checks": {
+    "changedFileLint": "passed",
+    "typecheck": "passed",
+    "rollbackScenarios": 23,
+    "renderedRequests": 90,
+    "renderedFailures": 0,
+    "productionCandidateMobile": {
+      "comparisonContainers": [
+        {
+          "scrollWidth": 570,
+          "width": 341
+        }
+      ],
+      "h1": "Momcozy DeepClean D8 vs. KleanPal Pro",
+      "purchaseURLs": [
+        "https://www.amazon.com/dp/B0H6Q2G76Z?tag=madabasebaby-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl",
+        "https://www.amazon.com/dp/B0CWLHKQNT?tag=madabasebaby-20&linkCode=ll2&language=en_US&ref_=as_li_ss_tl"
+      ],
+      "viewport": 390,
+      "width": 375
+    },
+    "environmentFilesInArchive": 0
+  },
+  "scope": [
+    "one new D8 US product",
+    "one model comparison",
+    "existing washer guide links and drain distinction",
+    "KleanPal unsupported rating removal and D8 comparison link"
+  ],
+  "mainChange": false,
+  "unrelatedWorkingTreeChangesIncluded": false,
+  "publicationVerified": false
+}

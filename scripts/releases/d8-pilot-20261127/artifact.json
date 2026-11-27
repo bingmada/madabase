@@ -1,1 +1,15 @@
-{"builtLocally":true,"serverBuildAllowed":false,"artifacts":{"affiliate":{"buildId":"pending","sha256":"pending","bytes":0,"distDir":".next-release","archivePath":"apps/affiliate/.release/affiliate-runtime.tgz"}}}
+{
+  "builtLocally": true,
+  "serverBuildAllowed": false,
+  "sourceRevision": "b048da597ba7eab5ecbb1368c315155ec7ad43ec",
+  "buildLog": "/private/tmp/madabase-d8-build-20261127/build.log",
+  "artifacts": {
+    "affiliate": {
+      "buildId": "DJr2k013lGz0UB_T-GVbB",
+      "sha256": "8a9c83af42d928835485443a1d3d939903946a269d40f6ff2811ab12949576df",
+      "bytes": 59575587,
+      "distDir": ".next-release",
+      "archivePath": "apps/affiliate/.release/affiliate-runtime.tgz"
+    }
+  }
+}
