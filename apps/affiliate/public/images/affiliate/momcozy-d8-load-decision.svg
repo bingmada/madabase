@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 660" role="img" aria-labelledby="title desc">
+  <title id="title">Choose a complete D8 load</title>
+  <desc id="desc">An editorial decision diagram. Choose one bottle or pump configuration, match every detached part to its permitted position, and plan a suitable drain route. This is not a product photograph or a rack loading instruction.</desc>
+  <rect width="1080" height="660" rx="28" fill="#f1f6f3"/>
+  <g font-family="Arial, sans-serif" fill="#173d32">
+    <text x="60" y="72" font-size="20" font-weight="700" letter-spacing="2">MOMCOZY D8 · LOAD DECISION</text>
+    <text x="60" y="132" font-size="42" font-weight="700">Choose one complete load</text>
+    <text x="60" y="177" font-size="23">Bottle count alone does not settle the fit.</text>
+    <rect x="60" y="225" width="440" height="160" rx="20" fill="white" stroke="#aecabc" stroke-width="2"/>
+    <text x="90" y="268" font-size="28" font-weight="700">Bottle configuration</text>
+    <text x="90" y="309" font-size="23">Check bottles + nipples + rings</text>
+    <text x="90" y="346" font-size="21">Up to 8 bottles in the maker's layout</text>
+    <text x="523" y="316" font-size="25" font-weight="700">OR</text>
+    <rect x="580" y="225" width="440" height="160" rx="20" fill="white" stroke="#aecabc" stroke-width="2"/>
+    <text x="610" y="268" font-size="28" font-weight="700">Pump configuration</text>
+    <text x="610" y="309" font-size="23">Check the exact pump-part set</text>
+    <text x="610" y="346" font-size="21">Use its permitted loading pattern</text>
+    <path d="M280 397v34h520v-34M540 431v31" fill="none" stroke="#4d7966" stroke-width="4"/>
+    <rect x="160" y="466" width="760" height="100" rx="18" fill="#173d32"/>
+    <text x="540" y="506" text-anchor="middle" fill="white" font-size="26" font-weight="700">All parts fit + suitable drain route</text>
+    <text x="540" y="544" text-anchor="middle" fill="white" font-size="22">Then compare the complete daily routine.</text>
+    <text x="60" y="611" font-size="19">Editorial diagram · not a product photo or an operating instruction</text>
+  </g>
+</svg>

@@ -1,0 +1,427 @@
+{
+  "observedOn": "2026-11-24",
+  "scope": "US Google Web Search estimates; not authenticated Google Keyword Planner output",
+  "provider": "KWS Trends",
+  "providerReportUpdatedAt": "2026-10-26",
+  "source": "https://www.kwstrends.com/keywords/us/bottle-washer",
+  "methodology": "https://www.kwstrends.com/methodology",
+  "values": [
+    {
+      "query": "bottle washer",
+      "estimatedMonthlySearches": 16000
+    },
+    {
+      "query": "momcozy bottle washer",
+      "estimatedMonthlySearches": 45000
+    },
+    {
+      "query": "baby brezza bottle washer",
+      "estimatedMonthlySearches": 22000
+    },
+    {
+      "query": "baby brezza bottle washer pro",
+      "estimatedMonthlySearches": 15000
+    },
+    {
+      "query": "baby bottle washer",
+      "estimatedMonthlySearches": 9900
+    },
+    {
+      "query": "momcozy kleanpal pro bottle washer",
+      "estimatedMonthlySearches": 4900
+    },
+    {
+      "query": "papablic bottle washer",
+      "estimatedMonthlySearches": 4400
+    },
+    {
+      "query": "eufy bottle washer",
+      "estimatedMonthlySearches": 1900
+    },
+    {
+      "query": "best bottle washer",
+      "estimatedMonthlySearches": 1300
+    },
+    {
+      "query": "baby brezza vs momcozy bottle washer",
+      "estimatedMonthlySearches": 1000
+    }
+  ],
+  "independentProviderCheck": {
+    "query": "baby bottle washer",
+    "provider": "Treendly",
+    "estimatedMonthlySearches": 7100,
+    "underlyingPeriod": "not disclosed on inspected page",
+    "source": "https://treendly.com/trend/baby-bottle-washer"
+  },
+  "limits": [
+    "Provider estimates are directional and may disagree; no independent calibration performed.",
+    "Overlapping variants and brand terms must not be summed.",
+    "Exact D8, ProWash360 and comparison monthly volumes not established.",
+    "No usable public Google monthly volume found for the selected Deco/Aqara queries; Amazon weekly searches were excluded.",
+    "No sales or conversion projection is established by search volume."
+  ],
+  "serpSamples": [
+    {
+      "query": "aqara hub m3 home assistant",
+      "observedOn": "2026-11-24",
+      "countryParameter": "US",
+      "language": "en",
+      "personalization": "off",
+      "surface": "Google Web filter",
+      "location": "Los Angeles, California from IP",
+      "results": [
+        {
+          "rank": 1,
+          "title": "Aqara M3 Hub is complete nonsense for Home Assistant ...",
+          "url": "https://www.reddit.com/r/Aqara/comments/1f62mfg/aqara_m3_hub_is_complete_nonsense_for_home/"
+        },
+        {
+          "rank": 2,
+          "title": "Aqara M3 Hub - Hardware",
+          "url": "https://community.home-assistant.io/t/aqara-m3-hub/730085"
+        },
+        {
+          "rank": 3,
+          "title": "How to add Aqara M3 into Home Assistant? - Hardware",
+          "url": "https://community.home-assistant.io/t/how-to-add-aqara-m3-into-home-assistant/876343"
+        },
+        {
+          "rank": 4,
+          "title": "How is the Aqara M3 Hub working with Home Assistant a ...",
+          "url": "https://www.youtube.com/watch?v=-0yv5m6TCo8"
+        },
+        {
+          "rank": 5,
+          "title": "Aqara",
+          "url": "https://www.home-assistant.io/integrations/aqara/"
+        },
+        {
+          "rank": 6,
+          "title": "Aqara M3 Hub - Adding device and usable entities",
+          "url": "https://community.home-assistant.io/t/aqara-m3-hub-adding-device-and-usable-entities/805007"
+        },
+        {
+          "rank": 7,
+          "title": "Aqara, Matter and Home Assistant - Share your setup and ...",
+          "url": "https://forum.aqara.com/t/aqara-matter-and-home-assistant-share-your-setup-and-experience/299420"
+        },
+        {
+          "rank": 8,
+          "title": "How does M3 hub compare to Home Assistant?",
+          "url": "https://www.facebook.com/groups/267249817311678/posts/1924836041553039/"
+        },
+        {
+          "rank": 9,
+          "title": "Home Assistant Discovering Aqara M3 Hub",
+          "url": "https://forum.aqara.com/t/home-assistant-discovering-aqara-m3-hub/357931"
+        },
+        {
+          "rank": 10,
+          "title": "Aqara M3 Hub with Matter and Thread: Real Home Assistant ...",
+          "url": "https://chrishansen.tech/posts/Aqara-M3-Hub/"
+        }
+      ]
+    },
+    {
+      "query": "bottle washer",
+      "observedOn": "2026-11-24",
+      "countryParameter": "US",
+      "language": "en",
+      "personalization": "off",
+      "surface": "Google Web filter",
+      "location": "Los Angeles, California from IP",
+      "results": [
+        {
+          "rank": 1,
+          "title": "Baby Bottle Washer",
+          "url": "https://www.amazon.com/baby-bottle-washer/s?k=baby+bottle+washer"
+        },
+        {
+          "rank": 2,
+          "title": "Papablic SafeguardPlus™ Baby Bottle Washer System ...",
+          "url": "https://papablic.com/products/papablic-safeguardplus-baby-bottle-washer-system?srsltid=AYCX9vI1YTs3DU6VsZ_6jTrUMikRuTLI25811Tq5vTyO5He3WEIEEKr4"
+        },
+        {
+          "rank": 3,
+          "title": "Bottle washers - worth the splurge? : r/Buyingforbaby",
+          "url": "https://www.reddit.com/r/Buyingforbaby/comments/1i4guq3/bottle_washers_worth_the_splurge/"
+        },
+        {
+          "rank": 4,
+          "title": "Baby Bottle Washers – Wash, Sterilize & Dry",
+          "url": "https://babybrezza.com/collections/baby-bottle-washers?srsltid=AYCX9vJKC6aT6CQN3aqKp7unpBYnhxIq4KoqCv2_43JD0OPvjbAY4msK"
+        },
+        {
+          "rank": 5,
+          "title": "Bottle Washers & Sterilizers",
+          "url": "https://www.babylist.com/store/bottle-washers-sterilizers"
+        },
+        {
+          "rank": 6,
+          "title": "Best Baby Bottle Washer? I Tested 3 So You Don't Have To!",
+          "url": "https://www.youtube.com/watch?v=2yT178EF0LU"
+        },
+        {
+          "rank": 7,
+          "title": "Momcozy Feeding Bottle Washer, Sterilizer and Dryer",
+          "url": "https://momcozy.com/collections/bottle-washers"
+        },
+        {
+          "rank": 8,
+          "title": "What are pros and cons of hose bottle washers for baby ...",
+          "url": "https://www.facebook.com/groups/newbornbabymothercaretipsguides/posts/2607742796373500/"
+        },
+        {
+          "rank": 9,
+          "title": "You Can Pay Over $300 for a Countertop Bottle Washer. ...",
+          "url": "https://www.nytimes.com/wirecutter/reviews/advice-baby-bottle-washers/"
+        },
+        {
+          "rank": 10,
+          "title": "Baby Bottle Washer, Sterilizer & Dryer Collection",
+          "url": "https://grownsy.com/collections/baby-bottle-washer?srsltid=AYCX9vLdibzrc9YceVsYULgIiRHwpxD8-eo-iN90XVaFHqJSSQRydhmK"
+        }
+      ]
+    },
+    {
+      "query": "bottle washer without drain hose",
+      "observedOn": "2026-11-24",
+      "countryParameter": "US",
+      "language": "en",
+      "personalization": "off",
+      "surface": "Google Web filter",
+      "location": "Los Angeles, California from IP",
+      "results": [
+        {
+          "rank": 1,
+          "title": "Bottle washers with no drain hose : r/Buyingforbaby",
+          "url": "https://www.reddit.com/r/Buyingforbaby/comments/1uj6eb1/bottle_washers_with_no_drain_hose/"
+        },
+        {
+          "rank": 2,
+          "title": "Momcozy KleanPal Pro Baby Bottle Washer and Sterilizer",
+          "url": "https://momcozy.com/products/momcozy-kleanpal-pro-baby-bottle-washer"
+        },
+        {
+          "rank": 3,
+          "title": "Bottle Washer Pro",
+          "url": "https://babybrezza.com/products/bottle-washer-pro?srsltid=AYCX9vKizzZxItkDkKYVSCCTuTFTPm57Oud11b9wvBG--wLdZvKLYg9u"
+        },
+        {
+          "rank": 4,
+          "title": "The Best Bottle Washers of 2026, Tested by a Mom of 3",
+          "url": "https://www.babylist.com/hello-baby/best-bottle-washers"
+        },
+        {
+          "rank": 5,
+          "title": "Bottle Washer Pro - All In One Washer, Sterilizer, Dryer",
+          "url": "https://babybrezza.me/products/bottle-washer-pro%C2%AE?srsltid=AYCX9vK9iVFIyKWu_Yv9yvA6KlCDsV-xz4PQeMCfh3vd9Cif7D0GuhzC"
+        },
+        {
+          "rank": 6,
+          "title": "How to Drain The Momcozy Bottle Washer without Hose",
+          "url": "https://www.tiktok.com/discover/how-to-drain-the-momcozy-bottle-washer-without-hose"
+        },
+        {
+          "rank": 7,
+          "title": "Can you guys tell me what bottle washer dryer and ...",
+          "url": "https://www.facebook.com/groups/newbornbabymothercaretipsguides/posts/2165170837297367/"
+        },
+        {
+          "rank": 8,
+          "title": "Baby Brezza Baby Bottle Washer Pro - Clinically Proven ...",
+          "url": "https://www.amazon.com/Baby-Brezza-Bottle-Washer-Pro-Sterilizer-Dryer-White/dp/B0CKRWC8ZN"
+        },
+        {
+          "rank": 9,
+          "title": "Manual Baby Bottle Washers",
+          "url": "https://mcbradyengineering.com/feeds/blog/manual-bottle-washer"
+        },
+        {
+          "rank": 10,
+          "title": "Can Glass Baby Bottles Go in a Bottle Washer? We Tested",
+          "url": "https://ronini.com/blogs/news/glass-baby-bottles-bottle-washer?srsltid=AYCX9vIWV91_QQE2Ew870U67Zsw3nfdcVgoDKs442rwnkxlyJFHsBRtZ"
+        }
+      ]
+    },
+    {
+      "query": "deco be63 vs be67",
+      "observedOn": "2026-11-24",
+      "countryParameter": "US",
+      "language": "en",
+      "personalization": "off",
+      "surface": "Google Web filter",
+      "location": "Los Angeles, California from IP",
+      "results": [
+        {
+          "rank": 1,
+          "title": "TP-Link Deco 7 Pro BE63 vs Deco 7 Pro BE67 - Router",
+          "url": "https://www.rtings.com/router/tools/compare/tp-link-deco-7-pro-be63-vs-tp-link-deco-7-pro-be67/51771/139699"
+        },
+        {
+          "rank": 2,
+          "title": "Compare TP-Link BE63 vs TP-Link BE67",
+          "url": "https://www.bhphotovideo.com/c/compare/TP-Link_Deco+BE63_vs_TP-Link_BE67/BHitems/1797740-REG_1922959-REG"
+        },
+        {
+          "rank": 3,
+          "title": "I Tested TP-Link's BE63 vs BE67… Here's Which Wi-Fi ...",
+          "url": "https://www.youtube.com/shorts/zRYWIC6Lnas"
+        },
+        {
+          "rank": 4,
+          "title": "Which Deco Wifi7 Unit to Upgrade from Nest Wifi Pro to",
+          "url": "https://www.reddit.com/r/TpLink/comments/1mujbh5/suggestions_which_deco_wifi7_unit_to_upgrade_from/"
+        },
+        {
+          "rank": 5,
+          "title": "Compare Product: Deco BE63 (3-pack) vs Deco BE65 Pro (3 ...",
+          "url": "https://www.tp-link.com/us/compare/?typeId=5757&productIds=73573,80105"
+        },
+        {
+          "rank": 6,
+          "title": "BE63 vs BE67 — Which Wi-Fi 7 Mesh System Is Right for ...",
+          "url": "https://www.instagram.com/reel/DfaBcK8osBC/"
+        },
+        {
+          "rank": 7,
+          "title": "TP-Link Deco BE63 vs BE67 ⚡ Which Wi-Fi 7 Mesh System ...",
+          "url": "https://www.youtube.com/shorts/EbiMdz28lYI"
+        },
+        {
+          "rank": 8,
+          "title": "TP-Link Deco 7 Pro BE14000 (a.k.a Deco BE67 or ...",
+          "url": "https://dongknows.com/tp-link-deco-7-pro-be14000-deco-be67-be68-review/"
+        },
+        {
+          "rank": 9,
+          "title": "TP-Link Deco BE63 vs BE67: Wi-Fi 7 Mesh Speeds & Ports ...",
+          "url": "https://www.facebook.com/61583927664436/videos/better-wi-fi-smoother-connections-and-seamless-streaming-stay-connected-without-/1154906390870119/"
+        },
+        {
+          "rank": 10,
+          "title": "Deco BE63 vs. Deco BE67 📶 I put both Wi‑Fi 7 mesh ...",
+          "url": "https://www.instagram.com/reel/Df7SGQcgYPY/"
+        }
+      ]
+    },
+    {
+      "query": "momcozy deepclean vs kleanpal pro",
+      "observedOn": "2026-11-24",
+      "countryParameter": "US",
+      "language": "en",
+      "personalization": "off",
+      "surface": "Google Web filter",
+      "location": "Los Angeles, California from IP",
+      "results": [
+        {
+          "rank": 1,
+          "title": "KleanPal Pro vs. Momcozy D8: Which Bottle Washer Is ...",
+          "url": "https://www.babylist.com/hello-baby/momcozy-kleanpal-pro-vs-deepclean-d8-bottle-washer"
+        },
+        {
+          "rank": 2,
+          "title": "Momcozy KleanPal Pro vs D8 DeepClean: Which One Is ...",
+          "url": "https://www.youtube.com/watch?v=bLkZNL6_38E"
+        },
+        {
+          "rank": 3,
+          "title": "MomCozy classic KleanPal bottle washer or the newer ...",
+          "url": "https://www.reddit.com/r/Buyingforbaby/comments/1s4khgn/momcozy_classic_kleanpal_bottle_washer_or_the/"
+        },
+        {
+          "rank": 4,
+          "title": "DeepClean D8 vs. KleanPal Pro | Which One Is Right for ...",
+          "url": "https://www.youtube.com/watch?v=6BQaQLfvwdU"
+        },
+        {
+          "rank": 5,
+          "title": "If a bottle washer is on your baby registry, here's how the ...",
+          "url": "https://www.instagram.com/reel/Db9kFGMNM3n/?hl=en"
+        },
+        {
+          "rank": 6,
+          "title": "Momcozy Bottle Washer Comparison",
+          "url": "https://www.youtube.com/watch?v=bO5j_o39AeY"
+        },
+        {
+          "rank": 7,
+          "title": "The highly requested comparison of the Momcozy ...",
+          "url": "https://www.facebook.com/helebell511/videos/the-highly-requested-comparison-of-the-momcozy-deepclean-d8-new-washer-vs-the-cl/2142292513328398/"
+        },
+        {
+          "rank": 8,
+          "title": "Momcozy KleanPal Pro vs Momcozy D8: Which Bottle ...",
+          "url": "https://www.frommom2mom.com/blog-pages/momcozy-d8-vs-kleanpal-pro-which-bottle-washer-is-right-for-you"
+        },
+        {
+          "rank": 9,
+          "title": "Which Momcozy bottle washer is best for you? (KleanPal ...",
+          "url": "https://www.amazon.com/live/video/069f55a673774418a2bb86afc2bb1aef?ref_=dp_vse_rvc_4"
+        },
+        {
+          "rank": 10,
+          "title": "Momcozy KleanPal Pro vs. DeepClean D8 bottle washer ...",
+          "url": "https://www.tiktok.com/@hisamantharose/video/7683633838131645727"
+        }
+      ]
+    }
+  ],
+  "manuals": [
+    {
+      "source": "https://cozy-static.cozyinnov.com/public/970040/C00000001/iot/product/6aed7bece4b0c41ba3e1480a.pdf",
+      "sha256": "d9e560695c67bd5a537599a9b2c1dcf0efd7f4735de39eb96040ece0fa090c48",
+      "scope": "European 220–240 V English support PDF. Not used as US instructions."
+    },
+    {
+      "source": "https://cdn.shopify.com/s/files/1/1465/2384/files/BRZ0261_ProWash360_IM_US_260930.pdf?v=1790788351",
+      "sha256": "86f0cb99ad62bbc8d9118b4ab7cb4ebca9ae0d39f4207e8e000217b2bec74a28",
+      "scope": "US ProWash360 instructions; verified hose-to-sink layout and distinct six/eight-bottle arrangements."
+    }
+  ],
+  "retailerObservation": {
+    "observedAt": "2026-11-24",
+    "url": "https://www.amazon.com/dp/B0H6Q2G76Z",
+    "zip": "10001",
+    "title": "Momcozy DeepClean D8 Bottle Washer, Sterilizer & Dryer",
+    "condition": "not separately established in captured buy box; recheck before checkout",
+    "availability": "In Stock",
+    "shipsFrom": "Amazon",
+    "soldBy": "Smartlin",
+    "voltage": "120V 60Hz in listing feature bullet",
+    "notes": "No order placed. No US PDF guide exposed in inspected links. Do not transfer European PDF measurements/timings."
+  },
+  "implementation": {
+    "newProducts": 1,
+    "newPages": [
+      "/reviews/momcozy-deepclean-d8-bottle-washer",
+      "/best/momcozy-deepclean-d8-vs-kleanpal-pro"
+    ],
+    "updatedTaskGuide": "/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
+    "deployment": "not_deployed",
+    "existingProductsNotDuplicated": [
+      "Baby Brezza Bottle Washer Pro B0DDLGJG5J",
+      "Deco BE25/BE63/BE67/BE85",
+      "Aqara Hub M3"
+    ]
+  },
+  "validation": {
+    "eslint": "passed for changed TS files",
+    "typescript": "tsc --noEmit --incremental false passed",
+    "runtime": "ASIN unique; current Baby attribution; resolved comparison and hub links; no unsupported score",
+    "browser": {
+      "desktopViewport": 1920,
+      "mobileViewport": "390x844",
+      "canonical": "new product and comparison self-canonical on baby.madabase.com",
+      "wholePageHorizontalOverflow": false,
+      "comparisonTable": "contained horizontal scroll",
+      "productImages": "loaded after lazy-image viewport approach",
+      "oldTankWasherPurchasePath": "preserved B0DDLGJG5J with madabasebaby-20"
+    },
+    "productionBuild": "not run",
+    "deployment": "not_deployed",
+    "localPreview": "http://127.0.0.1:3127/reviews/momcozy-deepclean-d8-bottle-washer",
+    "regionalSitemapEntriesForPilot": 0
+  }
+}

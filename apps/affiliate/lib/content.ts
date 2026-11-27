@@ -103,6 +103,7 @@ import { broadProductPilot2Guides } from "./broad-product-pilot-2-content";
 import { broadProductPilot3Guides } from "./broad-product-pilot-3-content";
 import { breadthDraft120PlusGuides } from "./breadth-draft-120-plus-content";
 import { productExpansionPilot20260821Products } from "./product-expansion-pilot-20260821-content";
+import { addBottleWasherPilotLinks, bottleWasherPilotProducts, bottleWasherPilotRoundups } from "./bottle-washer-pilot-content";
 
 export const products: Product[] = [
   {
@@ -1921,6 +1922,7 @@ export const products: Product[] = [
       }
     ],
     name: "Momcozy KleanPal Pro Baby Bottle Washer, Sterilizer & Dryer",
+    compareSlugs: ["momcozy-deepclean-d8-bottle-washer"],
     brand: "Momcozy",
     category: "feeding",
     image: "/images/affiliate/baby-momcozy-kleanpal-pro-baby-bottle-washer.webp",
@@ -1929,12 +1931,8 @@ export const products: Product[] = [
     whyItMatters: "Bottle cleanup is not one step. Washing, sterilizing, drying, and storing clean parts all compete for time and counter space, so an all-in-one machine should be judged by the routine it replaces.",
     bestFor: "Bottle-heavy homes that want washing plus sterilizing and drying",
     priceBand: "$$$",
-    rating: 4.4,
-    scores: [
-      { label: "Hands-off cleaning", value: 9 },
-      { label: "Routine fit", value: 8 },
-      { label: "Counter footprint", value: 5 },
-    ],
+    rating: 0,
+    scores: [],
     pros: [
       "Combines washing with separately selected steam/drying functions",
       "Original BS03 diagrams provide specific bottle and pump-part loading patterns",
@@ -4315,6 +4313,8 @@ roundups.push(...august2026ExpansionRoundups);
 products.push(...secondRoundAugust2026Products);
 guides.push(...secondRoundAugust2026Guides);
 products.push(...productExpansionPilot20260821Products);
+products.push(...bottleWasherPilotProducts);
+roundups.push(...bottleWasherPilotRoundups);
 roundups.push(...aggressivePortfolioRoundups);
 guides.push(...aggressivePortfolioGuides);
 guides.push(...quadrupleExpansionGuides);
@@ -4336,7 +4336,7 @@ for (let index = 0; index < guides.length; index += 1) {
   const repaired = refreshCommerceGuide(applyFocusedGuideRecovery(applyPortfolioSearchRecoveryGuide(
     applyOctoberSearchRecovery(applyLowClickRepair(applyIndexingRepair(guides[index]))),
   )));
-  guides[index] = applyReviewedGuideContent(applySeoQualityImprovements(addEditorialExpansionLinks({ ...repaired, sources: repaired.sources?.filter((source) => !isBlockedAmazonSource(repaired.site, source.url)) })));
+  guides[index] = addBottleWasherPilotLinks(applyReviewedGuideContent(applySeoQualityImprovements(addEditorialExpansionLinks({ ...repaired, sources: repaired.sources?.filter((source) => !isBlockedAmazonSource(repaired.site, source.url)) }))));
   const answer = guides[index].site === "network" ? networkPagePlan(`/guides/${guides[index].slug}`)?.answer : undefined;
   if (answer) guides[index] = {...guides[index],quickAnswer:answer,updatedAt:"November 7, 2026"};
 }

@@ -1,0 +1,329 @@
+{
+  "observedOn": "2026-11-27",
+  "bing": {
+    "current": [
+      "2026-11-19",
+      "2026-11-25"
+    ],
+    "previous": [
+      "2026-11-12",
+      "2026-11-18"
+    ],
+    "sourceRows": 88,
+    "activeRows": 80,
+    "totals": {
+      "new_impressions": 344,
+      "old_impressions": 271,
+      "new_clicks": 4,
+      "old_clicks": 11
+    },
+    "byHost": {
+      "network.madabase.com": {
+        "new_impressions": 225,
+        "old_impressions": 142,
+        "new_clicks": 2,
+        "old_clicks": 4
+      },
+      "smarthome.madabase.com": {
+        "new_impressions": 79,
+        "old_impressions": 76,
+        "new_clicks": 2,
+        "old_clicks": 4
+      },
+      "baby.madabase.com": {
+        "new_impressions": 15,
+        "old_impressions": 25,
+        "new_clicks": 0,
+        "old_clicks": 1
+      },
+      "homeoffice.madabase.com": {
+        "new_impressions": 25,
+        "old_impressions": 25,
+        "new_clicks": 0,
+        "old_clicks": 2
+      },
+      "pets.madabase.com": {
+        "new_impressions": 0,
+        "old_impressions": 2,
+        "new_clicks": 0,
+        "old_clicks": 0
+      },
+      "madabase.com": {
+        "new_impressions": 0,
+        "old_impressions": 1,
+        "new_clicks": 0,
+        "old_clicks": 0
+      }
+    },
+    "selectedRows": [
+      [
+        "https://smarthome.madabase.com/guides/aqara-hub-m3-home-assistant-matter-guide",
+        "46",
+        "23",
+        "23",
+        "0",
+        "1",
+        "-1",
+        "0.00%",
+        "4.35%",
+        "-4.35%",
+        "3.85",
+        "3.96",
+        "-0.11"
+      ],
+      [
+        "https://network.madabase.com/guides/deco-be63-ethernet-backhaul-setup",
+        "20",
+        "8",
+        "12",
+        "0",
+        "0",
+        "0",
+        "0.00%",
+        "0.00%",
+        "0.00%",
+        "7.25",
+        "7.63",
+        "-0.37"
+      ],
+      [
+        "https://network.madabase.com/guides/deco-be63-vs-be67-vs-be85-buying-guide",
+        "5",
+        "2",
+        "3",
+        "0",
+        "1",
+        "-1",
+        "0.00%",
+        "50.00%",
+        "-50.00%",
+        "4.80",
+        "4.00",
+        "0.80"
+      ],
+      [
+        "https://network.madabase.com/reviews/tp-link-deco-be63-wifi-7-mesh",
+        "5",
+        "1",
+        "4",
+        "0",
+        "0",
+        "0",
+        "0.00%",
+        "0.00%",
+        "0.00%",
+        "8.00",
+        "8.00",
+        "0.00"
+      ],
+      [
+        "https://network.madabase.com/guides/deco-be63-multigig-ports-guide",
+        "1",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0.00%",
+        "0.00%",
+        "0.00%",
+        "3.00",
+        "6.00",
+        "-3.00"
+      ],
+      [
+        "https://smarthome.madabase.com/guides/aqara-hub-m3-vs-m2",
+        "1",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0.00%",
+        "0.00%",
+        "0.00%",
+        "10.00",
+        "10.00",
+        "0.00"
+      ],
+      [
+        "https://network.madabase.com/de-de/reviews/tp-link-deco-be67-wifi-7-mesh",
+        "1",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0.00%",
+        "0.00%",
+        "0.00%",
+        "8.00",
+        "8.00",
+        "0.00"
+      ],
+      [
+        "https://network.madabase.com/guides/deco-be63-be67-wired-backhaul-port-checklist",
+        "1",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0.00%",
+        "0.00%",
+        "0.00%",
+        "4.00",
+        "4.00",
+        "0.00"
+      ],
+      [
+        "https://baby.madabase.com/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
+        "0",
+        "4",
+        "-4",
+        "0",
+        "1",
+        "-1",
+        "0.00%",
+        "25.00%",
+        "-25.00%",
+        "0.00",
+        "5.50",
+        "-5.50"
+      ],
+      [
+        "https://baby.madabase.com/reviews/momcozy-purehug-baby-carrier",
+        "0",
+        "1",
+        "-1",
+        "0",
+        "0",
+        "0",
+        "0.00%",
+        "0.00%",
+        "0.00%",
+        "0.00",
+        "1.00",
+        "-1.00"
+      ],
+      [
+        "https://baby.madabase.com/reviews/momcozy-kleanpal-pro-baby-bottle-washer",
+        "0",
+        "1",
+        "-1",
+        "0",
+        "0",
+        "0",
+        "0.00%",
+        "0.00%",
+        "0.00%",
+        "0.00",
+        "8.00",
+        "-8.00"
+      ],
+      [
+        "https://baby.madabase.com/reviews/momcozy-mw05-portable-milk-warmer",
+        "0",
+        "1",
+        "-1",
+        "0",
+        "0",
+        "0",
+        "0.00%",
+        "0.00%",
+        "0.00%",
+        "0.00",
+        "10.00",
+        "-10.00"
+      ]
+    ]
+  },
+  "google": {
+    "current": [
+      "2026-11-18",
+      "2026-11-24"
+    ],
+    "previous": [
+      "2026-11-11",
+      "2026-11-17"
+    ],
+    "activeRows": 93,
+    "totals": {
+      "new_impressions": 94,
+      "old_impressions": 91,
+      "new_clicks": 0,
+      "old_clicks": 0
+    },
+    "selectedRows": [
+      [
+        "https://baby.madabase.com/reviews/momcozy-purehug-baby-carrier",
+        "0",
+        "0",
+        "0",
+        "2",
+        "0",
+        "2",
+        "0%",
+        "0%",
+        "0%",
+        "19",
+        "0",
+        "19"
+      ],
+      [
+        "https://network.madabase.com/reviews/tp-link-deco-be63-wifi-7-mesh",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "-1",
+        "0%",
+        "0%",
+        "0%",
+        "0",
+        "39",
+        "-39"
+      ],
+      [
+        "https://smarthome.madabase.com/reviews/aqara-hub-m3",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "-1",
+        "0%",
+        "0%",
+        "0%",
+        "0",
+        "72",
+        "-72"
+      ]
+    ]
+  },
+  "decision": "Publish one D8 US product page, one D8/KleanPal comparison and the existing guide update together; no further catalog expansion or redesign.",
+  "indexing": {
+    "scope": "same 1145 submitted URLs",
+    "previousAsOf": "2026-11-16",
+    "previousIndexed": 598,
+    "currentAsOf": "2026-11-23",
+    "currentIndexed": 601,
+    "currentNotIndexed": 544,
+    "currentCrawledNotIndexed": 424,
+    "currentDiscoveredNotIndexed": 98,
+    "babyGuide": {
+      "status": "URL is on Google; page indexed",
+      "lastCrawl": "2026-11-04 12:51:18 PM",
+      "canonical": "self",
+      "causalLimit": "This crawl predates Nov 23 publication; no claim of a new post-release crawl."
+    }
+  },
+  "publication": {
+    "authorizedOn": "2026-11-27",
+    "status": "preparing",
+    "productionBaseline": "1e279224bf0060c3d3d012a0c19c88208598e88c",
+    "mainCodeChange": false,
+    "unrelatedDirtyFilesExcluded": true
+  }
+}
