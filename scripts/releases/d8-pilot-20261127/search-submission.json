@@ -1,0 +1,24 @@
+{
+  "observedAt": "2026-11-27T03:06:41.908902+00:00",
+  "urls": [
+    "https://baby.madabase.com/reviews/momcozy-deepclean-d8-bottle-washer",
+    "https://baby.madabase.com/best/momcozy-deepclean-d8-vs-kleanpal-pro",
+    "https://baby.madabase.com/guides/bottle-washer-vs-sterilizer-vs-dryer-guide"
+  ],
+  "google": {
+    "accepted": 3,
+    "message": "Indexing requested. URL was added to a priority crawl queue.",
+    "priorIndexState": {
+      "newProduct": "unknown to Google",
+      "newComparison": "unknown to Google",
+      "existingGuide": "indexed"
+    },
+    "actualPostReleaseIndexingVerified": false
+  },
+  "indexNow": {
+    "submitted": 3,
+    "httpStatus": 200,
+    "receipt": "indexnow-receipt.txt"
+  },
+  "limitation": "Submission acceptance is not proof of indexing, ranking, traffic or sales."
+}

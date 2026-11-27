@@ -1,0 +1,157 @@
+{
+  "host": "baby.madabase.com",
+  "plainCanonicalUrls": true,
+  "results": [
+    {
+      "path": "/reviews/momcozy-deepclean-d8-bottle-washer",
+      "responses": [
+        {
+          "status": 200,
+          "cache": "DYNAMIC",
+          "age": null,
+          "newBuild": true,
+          "d8Present": true
+        },
+        {
+          "status": 200,
+          "cache": "DYNAMIC",
+          "age": null,
+          "newBuild": true,
+          "d8Present": true
+        }
+      ]
+    },
+    {
+      "path": "/best/momcozy-deepclean-d8-vs-kleanpal-pro",
+      "responses": [
+        {
+          "status": 200,
+          "cache": "DYNAMIC",
+          "age": null,
+          "newBuild": true,
+          "d8Present": true
+        },
+        {
+          "status": 200,
+          "cache": "DYNAMIC",
+          "age": null,
+          "newBuild": true,
+          "d8Present": true
+        }
+      ]
+    },
+    {
+      "path": "/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
+      "responses": [
+        {
+          "status": 200,
+          "cache": "DYNAMIC",
+          "age": null,
+          "newBuild": true,
+          "d8Present": true
+        },
+        {
+          "status": 200,
+          "cache": "DYNAMIC",
+          "age": null,
+          "newBuild": true,
+          "d8Present": true
+        }
+      ]
+    },
+    {
+      "path": "/reviews/momcozy-kleanpal-pro-baby-bottle-washer",
+      "responses": [
+        {
+          "status": 200,
+          "cache": "DYNAMIC",
+          "age": null,
+          "newBuild": true,
+          "d8Present": true
+        },
+        {
+          "status": 200,
+          "cache": "DYNAMIC",
+          "age": null,
+          "newBuild": true,
+          "d8Present": true
+        }
+      ]
+    },
+    {
+      "path": "/categories/feeding",
+      "responses": [
+        {
+          "status": 200,
+          "cache": "DYNAMIC",
+          "age": null,
+          "newBuild": true,
+          "d8Present": true
+        },
+        {
+          "status": 200,
+          "cache": "DYNAMIC",
+          "age": null,
+          "newBuild": true,
+          "d8Present": true
+        }
+      ]
+    },
+    {
+      "path": "/sitemap.xml",
+      "responses": [
+        {
+          "status": 200,
+          "cache": "DYNAMIC",
+          "age": null,
+          "newBuild": false,
+          "d8Present": true
+        },
+        {
+          "status": 200,
+          "cache": "DYNAMIC",
+          "age": null,
+          "newBuild": false,
+          "d8Present": true
+        }
+      ]
+    },
+    {
+      "path": "/",
+      "responses": [
+        {
+          "status": 200,
+          "cache": "DYNAMIC",
+          "age": null,
+          "newBuild": true,
+          "d8Present": true
+        },
+        {
+          "status": 200,
+          "cache": "DYNAMIC",
+          "age": null,
+          "newBuild": true,
+          "d8Present": true
+        }
+      ]
+    }
+  ],
+  "observedAt": "2026-11-27T03:06:41.908902+00:00",
+  "passed": true,
+  "purge": {
+    "provider": "Cloudflare",
+    "prefixes": [
+      "baby.madabase.com/guides/bottle-washer-vs-sterilizer-vs-dryer-guide",
+      "baby.madabase.com/reviews/momcozy-kleanpal-pro-baby-bottle-washer",
+      "baby.madabase.com/categories/feeding",
+      "baby.madabase.com/sitemap.xml"
+    ],
+    "urls": [
+      "https://baby.madabase.com/"
+    ],
+    "receiptsAccepted": 2,
+    "wholeZonePurge": false,
+    "rootPrefixPurge": false
+  },
+  "note": "Two plain canonical reads per path. All returned DYNAMIC with current content; no cache HIT claimed. XML does not embed the Next build ID."
+}

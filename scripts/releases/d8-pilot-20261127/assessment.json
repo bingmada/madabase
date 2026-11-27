@@ -332,9 +332,14 @@
   },
   "publication": {
     "authorizedOn": "2026-11-27",
-    "status": "ready_after_local_validation",
+    "status": "published_verified",
     "productionBaseline": "1e279224bf0060c3d3d012a0c19c88208598e88c",
     "mainCodeChange": false,
-    "unrelatedDirtyFilesExcluded": true
+    "unrelatedDirtyFilesExcluded": true,
+    "revision": "9c3ada2c4fa378a14ac4139a4d13a54a9e03b9f7",
+    "buildId": "DJr2k013lGz0UB_T-GVbB",
+    "verifiedAt": "2026-11-27T03:06:41.908902+00:00",
+    "searchSubmissionsAccepted": true,
+    "postReleaseEffectsVerified": false
   }
 }

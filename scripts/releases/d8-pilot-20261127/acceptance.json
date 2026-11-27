@@ -1,5 +1,5 @@
 {
-  "status": "ready_to_publish",
+  "status": "published_verified",
   "sourceRevision": "b048da597ba7eab5ecbb1368c315155ec7ad43ec",
   "artifact": {
     "buildId": "DJr2k013lGz0UB_T-GVbB",
@@ -40,5 +40,27 @@
   ],
   "mainChange": false,
   "unrelatedWorkingTreeChangesIncluded": false,
-  "publicationVerified": false
+  "publicationVerified": true,
+  "verifiedAt": "2026-11-27T03:06:41.908902+00:00",
+  "productionRevision": "9c3ada2c4fa378a14ac4139a4d13a54a9e03b9f7",
+  "publicChecks": {
+    "checked": 90,
+    "failed": 0
+  },
+  "originChecks": {
+    "affiliate": {
+      "criticalPages": 79,
+      "hostSitemaps": 5,
+      "buildId": "DJr2k013lGz0UB_T-GVbB"
+    }
+  },
+  "mainUnchanged": true,
+  "receipts": [
+    "origin-receipt.json",
+    "public-acceptance.json",
+    "cache-acceptance.json",
+    "final-health.json",
+    "public-browser-acceptance.json",
+    "search-submission.json"
+  ]
 }

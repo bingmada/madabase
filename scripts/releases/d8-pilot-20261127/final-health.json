@@ -1,0 +1,24 @@
+{
+  "services": {
+    "main": {
+      "ActiveState": "active",
+      "MainPID": "721580",
+      "WorkingDirectory": "/srv/madabase-main/releases/network-readiness-20261109-ec9b2bcc9e42a9ab0a6030bc2821f52b6cebe2a8"
+    },
+    "affiliate": {
+      "ActiveState": "active",
+      "MainPID": "762633",
+      "WorkingDirectory": "/srv/madabase-affiliate/releases/d8-pilot-20261127-9c3ada2c4fa378a14ac4139a4d13a54a9e03b9f7"
+    }
+  },
+  "retiredStates": {
+    "test": "inactive",
+    "tools": "inactive",
+    "wellness": "inactive"
+  },
+  "current": "/srv/madabase-affiliate/releases/d8-pilot-20261127-9c3ada2c4fa378a14ac4139a4d13a54a9e03b9f7",
+  "watchdog": "inactive",
+  "mainHttpStatus": 200,
+  "mainUnchanged": true,
+  "passed": true
+}

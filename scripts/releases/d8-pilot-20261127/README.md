@@ -25,3 +25,15 @@ After publication, request indexing for the two new URLs and changed guide, reta
 ## Local acceptance
 
 The clean production archive passed all 90 scoped requests (79 critical pages, five homepages, five sitemaps and the diagram), with zero failures. Production-mode desktop/mobile checks passed; the 390px page has no whole-page overflow and the comparison table scrolls in its own container. 23 mocked failure/recovery scenarios passed. The runtime contains no environment files. These are preparation results; production activation and public cache acceptance are recorded separately.
+
+## Verified publication
+
+Published November 27, 2026. Runtime source: `b048da597ba7eab5ecbb1368c315155ec7ad43ec`; production controller/metadata revision: `9c3ada2c4fa378a14ac4139a4d13a54a9e03b9f7`; build ID: `DJr2k013lGz0UB_T-GVbB`. The uploaded 59,575,587-byte archive matched SHA256 `8a9c83af42d928835485443a1d3d939903946a269d40f6ff2811ab12949576df` on the server. The later receipt commit records acceptance without changing that runtime.
+
+Default Affiliate-only activation passed the forecast and actual capacity gates, 79 origin critical-page checks and five host sitemap checks. Main stayed active with its original PID `721580` and directory. The prior Affiliate release remains available for rollback; the independent recovery timer is inactive after success, and retired services remain inactive. See `origin-receipt.json` and `final-health.json`.
+
+Public acceptance passed all 90 scoped requests with zero failures, independently from the server and the workstation. Two subsequent plain canonical reads of each of seven affected paths returned HTTP 200 and current content. Cloudflare returned `DYNAMIC`, so no cache HIT is claimed. Only the four listed Baby prefixes and exact Baby homepage URL were purged; no root-prefix or whole-zone purge was used. See `public-acceptance.json` and `cache-acceptance.json`.
+
+The published comparison also passed desktop and 390px mobile inspection: self canonical, 375px document width, and a 570px table scrolling within its 343px container. Public visual checks used `madabase-qa=release-20261127`; canonical/cache checks used plain URLs. The temporary viewport was reset and Amazon delivery location was visibly restored to China after the US listing review. See `public-browser-acceptance.json`.
+
+Google accepted indexing requests for both new pages and the updated guide. IndexNow accepted exactly those three URLs with HTTP 200. The new URLs were unknown to Google before submission; the existing guide was already indexed. These receipts do not establish post-release indexing, rankings, traffic or sales. Reassess once Google has a post-release crawl and comparable complete reporting periods are available; there is no evidence yet supporting another catalog expansion or redesign. See `search-submission.json` and `indexnow-receipt.txt`.
